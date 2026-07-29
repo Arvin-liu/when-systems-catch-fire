@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Arvin-liu/when-systems-catch-fire/schemas/governance/human-result.schema.json",
+  "title": "Human-readable result ledger record",
+  "type": "object",
+  "required": ["result_id", "title", "date", "originating_iteration", "question", "method_or_evidence_class", "result_summary", "maturity_and_evidence", "change_record", "limitations", "source", "final_disposition", "claim_ceiling", "record_sha256"],
+  "properties": {
+    "result_id": {"type": "string", "pattern": "^HR-[0-9A-F]{16}$"},
+    "title": {"type": "string", "minLength": 1},
+    "date": {"type": "string", "minLength": 1},
+    "originating_iteration": {"type": "string", "minLength": 1},
+    "question": {"type": "string", "minLength": 1},
+    "method_or_evidence_class": {"type": "string", "minLength": 1},
+    "result_summary": {"type": "string", "minLength": 1},
+    "maturity_and_evidence": {"type": "string", "minLength": 1},
+    "change_record": {"type": "string", "minLength": 1},
+    "limitations": {"type": "string", "minLength": 1},
+    "source": {"type": "string", "minLength": 1},
+    "final_disposition": {"const": "HUMAN_INDEX_ONLY"},
+    "claim_ceiling": {"type": "string", "minLength": 1},
+    "record_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  },
+  "additionalProperties": true
+}

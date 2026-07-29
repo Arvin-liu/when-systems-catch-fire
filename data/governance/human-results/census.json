@@ -1,0 +1,16 @@
+{
+  "all_sources_have_human_record": true,
+  "category_distribution": {
+    "ARCHITECTURE_AND_MODEL": 12,
+    "ARTICLE_OR_PUBLICATION": 6,
+    "EXTERNAL_RESEARCH": 24,
+    "FOUNDATION_AND_ADJUDICATION": 71,
+    "ITERATION_AND_AUDIT": 22,
+    "OTHER_REPOSITORY_RESULT": 31
+  },
+  "claim_ceiling": "Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.",
+  "human_records": 166,
+  "schema_version": "1.0.0",
+  "snapshot_date": "2026-07-29",
+  "source_documents": 166
+}

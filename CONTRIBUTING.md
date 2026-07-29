@@ -1,5 +1,24 @@
 # 贡献指南
 
+## 知识资产双输出门禁
+
+任何新增或修改的结论、函数、断言、机制、研究报告、审计结果或项目状态，都必须同时提交：
+
+- 可机器验证的 Claim Delta、影响分析和证据谱系变化；
+- 普通读者能理解的人类结果，写明问题、方法/证据类别、结论、成熟度与 claim ceiling、变化、局限、来源和处置。
+
+提交前运行：
+
+```bash
+python3 tools/governance/build_human_results.py
+python3 tools/governance/run_self_correction.py
+python3 tools/governance/build_human_results.py --check
+python3 tools/governance/run_self_correction.py --check
+python3 tools/governance/validate_human_visibility.py
+```
+
+缺少任一层、链接断裂、重要内容默认折叠、结论回弹、量词膨胀或把单一模型失败推广为普遍不可能都会阻断 CI。历史材料不得删除或重写；应通过 supersession、撤回、降级、隔离或修订保留变化链。
+
 ## 许可门禁
 
 本项目当前采用分层许可。根 [LICENSE](./LICENSE) 与 [LICENSES/README.md](./LICENSES/README.md) 是当前分发版本的许可作用域权威。

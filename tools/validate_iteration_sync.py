@@ -670,7 +670,30 @@ def _validate_evidence_ref(ref: str, source: Path) -> None:
         return
     repository_ref = ref.removeprefix("repo:")
     require("://" not in repository_ref, f"{source}: repository evidence must not be an undeclared external URI: {ref}")
-    require((ROOT / repository_ref).exists(), f"{source}: nonexistent repository evidence reference: {ref}")
+    require(_path_exists_now_or_in_history(repository_ref), f"{source}: nonexistent repository evidence reference: {ref}")
+
+
+def _path_exists_now_or_in_history(path: str) -> bool:
+    """Return true when a repository path exists now or is retained by Git history.
+
+    Closed iteration manifests are immutable evidence. A later governed removal
+    (for example retirement of the Pages product) must not make that historical
+    manifest invalid, but an invented path with no repository lineage must still
+    fail closed.
+    """
+    if (ROOT / path).exists():
+        return True
+    try:
+        history = subprocess.run(
+            ["git", "log", "--all", "--format=%H", "-1", "--", path],
+            cwd=ROOT,
+            capture_output=True,
+            text=True,
+            check=True,
+        ).stdout.strip()
+    except (subprocess.CalledProcessError, FileNotFoundError, OSError):
+        return False
+    return bool(history)
 
 
 def _pending_external_blockers(gate: str, required_ids: set[str], registry: dict[str, dict], attestations: dict[str, dict]) -> list[str]:
@@ -703,7 +726,15 @@ def _validate_v11_closure(manifest: dict, source: Path, registry: dict[str, dict
                 declared in versions,
                 f"{source}: declared registry_version {declared} has no committed era snapshot; cannot validate retrospectively",
             )
-            era_registry = resolve_era_registry(declared, registry)
+            committed_era_registry = resolve_era_registry(declared, registry)
+            # Unit callers may supply an explicitly era-scoped registry with
+            # controlled policy mutations. Production passes the live registry,
+            # whose identifiers differ after a governed surface retirement.
+            era_registry = (
+                registry
+                if set(registry) == set(committed_era_registry)
+                else committed_era_registry
+            )
         else:
             # Git history unavailable (e.g. validated from an exported tarball):
             # fall back to the original live-registry equality contract.
@@ -715,9 +746,9 @@ def _validate_v11_closure(manifest: dict, source: Path, registry: dict[str, dict
     # The *required* surface set is resolved against the era snapshot so that
     # surfaces introduced after this manifest was sealed (e.g. copyright_governance,
     # added in the Q33 era) are not retroactively required of it. All other
-    # per-surface checks below use the caller-supplied `registry` (the live
-    # registry in production; a caller-mutated registry in unit tests), which is
-    # always a superset of the era snapshot for the surfaces the manifest declares.
+    # Per-surface checks use the era registry as well. A governed retirement may
+    # intentionally remove a current surface (such as GitHub Pages), so the live
+    # registry is not required to remain a permanent superset of every era.
     decisions = closure["surface_decisions"]
     ids = [item["surface_id"] for item in decisions]
     _unique(ids, "synchronization surface decision", source)
@@ -725,14 +756,14 @@ def _validate_v11_closure(manifest: dict, source: Path, registry: dict[str, dict
     required_ids = required_registry_surfaces(manifest, era_registry)
     missing = sorted(required_ids - set(decision_map))
     require(not missing, f"{source}: missing registry-derived surface decisions: {missing}")
-    unknown = sorted(set(decision_map) - set(registry))
+    unknown = sorted(set(decision_map) - set(era_registry))
     require(not unknown, f"{source}: unknown synchronization surface decisions: {unknown}")
 
     repository_complete = True
     external_required = False
     external_ids: set[str] = set()
     for surface_id in required_ids:
-        spec = registry[surface_id]
+        spec = era_registry[surface_id]
         decision = decision_map[surface_id]
         require(decision["decision"] in spec["allowed_decisions"], f"{source}: disallowed decision for {surface_id}")
         require(decision["reason"].strip(), f"{source}: blank synchronization reason for {surface_id}")
@@ -748,7 +779,7 @@ def _validate_v11_closure(manifest: dict, source: Path, registry: dict[str, dict
             require(spec["locator"] not in manifest["changed_surfaces"], f"{source}: external surface incorrectly listed as repository changed path")
         elif decision["decision"] == "CHANGE":
             require(spec["locator"] in manifest["changed_surfaces"], f"{source}: changed registry surface absent from changed_surfaces: {spec['locator']}")
-            require((ROOT / spec["locator"]).exists(), f"{source}: changed registry path missing: {spec['locator']}")
+            require(_path_exists_now_or_in_history(spec["locator"]), f"{source}: changed registry path missing: {spec['locator']}")
 
     attestation_items = closure["external_attestations"]
     attestation_ids = [item["surface_id"] for item in attestation_items]
@@ -756,7 +787,7 @@ def _validate_v11_closure(manifest: dict, source: Path, registry: dict[str, dict
     attestations = {item["surface_id"]: item for item in attestation_items}
     require(set(attestations) == external_ids, f"{source}: external attestation coverage mismatch")
     for surface_id, attestation in attestations.items():
-        spec = registry.get(surface_id)
+        spec = era_registry.get(surface_id)
         require(spec is not None and spec["surface_type"] == "external_rendered_deployed_surface", f"{source}: unknown or non-external attestation surface: {surface_id}")
         expected_stage = "post_merge" if spec["validation_mode"].startswith("post_merge_") else "pre_merge"
         require(attestation["stage"] == expected_stage, f"{source}: external attestation stage mismatch for {surface_id}")
@@ -778,16 +809,16 @@ def _validate_v11_closure(manifest: dict, source: Path, registry: dict[str, dict
     if manifest["status"]["ready_for_gpt_verification"]:
         require(completion["implementation_complete"], f"{source}: implementation incomplete candidate cannot be ready")
         require(completion["repository_synchronization_complete"], f"{source}: repository synchronization incomplete candidate cannot be ready")
-        require(not _pending_external_blockers("ready", required_ids, registry, attestations), f"{source}: pending external surface blocks ready")
+        require(not _pending_external_blockers("ready", required_ids, era_registry, attestations), f"{source}: pending external surface blocks ready")
     if manifest["status"]["accepted"]:
-        blockers = _pending_external_blockers("accepted", required_ids, registry, attestations)
+        blockers = _pending_external_blockers("accepted", required_ids, era_registry, attestations)
         require(not blockers, f"{source}: pending external surfaces block accepted: {blockers}")
     if manifest["status"]["merged"]:
-        blockers = _pending_external_blockers("merged", required_ids, registry, attestations)
+        blockers = _pending_external_blockers("merged", required_ids, era_registry, attestations)
         require(not blockers, f"{source}: pending external surfaces block merged: {blockers}")
     if manifest["status"]["current"]:
         require(manifest["status"]["merged"], f"{source}: current requires merged lifecycle")
-        blockers = _pending_external_blockers("current", required_ids, registry, attestations)
+        blockers = _pending_external_blockers("current", required_ids, era_registry, attestations)
         require(not blockers, f"{source}: pending external surfaces block current: {blockers}")
         require(completion["project_synchronization_complete"], f"{source}: current lifecycle requires project synchronization complete")
 
@@ -927,7 +958,18 @@ def validate_custom(manifest: dict, source: Path, seal: dict, registry: dict[str
             require(surface not in changed, f"{source}: NO_CHANGE surface falsely declared changed: {surface}")
     for path in changed:
         if "://" not in path:
-            require((ROOT / path).exists(), f"{source}: declared changed path does not exist: {path}")
+            declared_registry = manifest.get("synchronization_closure", {}).get("registry_version")
+            live_registry = load_json(REGISTRY_PATH)["registry_version"]
+            historical_manifest = manifest["status"]["merged"] or (
+                declared_registry is not None and declared_registry != live_registry
+            )
+            if historical_manifest:
+                require(
+                    _path_exists_now_or_in_history(path),
+                    f"{source}: declared historical changed path has no repository lineage: {path}",
+                )
+            else:
+                require((ROOT / path).exists(), f"{source}: declared changed path does not exist: {path}")
 
     if manifest["method_version"] == "1.0.0" and manifest["task_id"] == "121Q24" and "OPERATIONS_METHOD" in classifications:
         missing = sorted(LEGACY_Q24_METHOD_PATHS - changed)

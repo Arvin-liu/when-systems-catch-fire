@@ -1,137 +1,62 @@
-# 项目现状 / Current Project State
+# 点火项目现状
 
-> Scope: describes the current repository baseline after PR #57 and the 121Q25D whole-project synchronization closeout entered `main` on 2026-07-16. This versioned page names the accepted lifecycle boundary without embedding the future commit that contains the page itself; exact live HEAD and CI remain external attestations and must be re-fetched. The description may become outdated after later evidence, failures, capabilities, or governance changes.
+更新时间：2026-07-29。当前状态包含任务 98—100 的断言/函数治理成果，以及任务 101 的人类可读知识表面与持续自我纠错引擎。
 
-## How This Page Should Be Read
+## 当前形态
 
-点火不是先被固定定义、再照着定义制造出来的项目。它从问题、阅读、碰撞、函数化、反例、执行、验证、外部反馈和持续修正中涌现。这里描述的是当前提交下已经长成的状态，不是永久本质、终局类型或不可改变的项目身份。
+点火是一个仓库原生、版本化、证据可追溯、对象有类型、推断可检查、结论可降级的跨领域研究与行动基础设施原型。这个描述只绑定当前提交，不是永久项目身份。
 
-In short: this is a versioned current-state description, not a fixed essence, and future gap discovery -> structural correction -> re-validation may change it.
+现行组织包括 L0—L6 架构、Foundation registries、Function OS 候选、MCF、PSD、ARN、效果与机制平面、注意力/分布/压缩控制、地图集、迭代与同步系统、生命共同体价值宪章、Charter System R1、之元写作法和现实反馈入口。
 
-Iteration Method `1.4.0 — Continuous Stage Snapshot Publication` is now Current (promoted by controlled sync R1-20260726; 1.3.0 is Historical). Its registry and README/Pages projection publish only auditable summaries and explicit boundaries; they do not merge candidate payloads, alter the formal capability registry, establish Accepted/Current/Activated for the R5-A candidate, or authorize practical use. The first R5-A record is `PUBLISHED_SNAPSHOT` (promoted from `PR_VISIBLE` by the same controlled sync; its snapshot record merged to Main via PR #134) and still not Accepted/Current/Activated. The R5-A charter PR #130 itself remains OPEN/DRAFT and unaccepted as a whole. (Resolved: the R5-A stage-snapshot record's `source.pull_request` now cites PR #134, where the consolidated responsibility-actor repair stack actually merged to Main — governed correction completed in controlled sync R1-20260726.)
+## 当前已实现能力
 
-PR #134 (continuous stage snapshot publication) and PR #135 (responsibility-actor gate-narrow repair R1+R2) were merged into Main: PR #135 exact head `c13da78` was accepted and merged into PR #134's source branch (head `48f87616`) at R3, and PR #134 was merged into Main (merge commit `f9abf90e`) at the R2 main closeout. The consolidated responsibility-actor repair stack replaces authoritative free-text identity with ACTIVE registry-resolved `actor_ref` values and a two-surface gate. Method 1.4.0 was promoted to Current by controlled sync R1-20260726 (1.3.0 is now Historical); the snapshot record merge to Main (via PR #134) is the `snapshot_record_merged_to_main` event, and `agent_claims_published_to_main` remains false.
+- 保存来源、命题、形式对象、论证、证据、证明义务、反例、验证和迁移历史。
+- 对当前重算后的 5,708 个历史函数资产建立 identity card、M/E 双轴、义务、依赖、处置与 quarantine。
+- 对当前重算后的 17,259 个非函数断言建立类别、来源、证据谱系、十三道门禁、依赖、M/E、处置与公开表述上限。
+- 自动发现本轮知识资产变化并生成 Claim Delta、影响分析、证据谱系变化、审计发现和整改计划。
+- 检测证明/实证义务、跨域越界、量词膨胀、循环论证、类比冒充同构、单模型失败推出普遍不可能和撤回结论回弹。
+- 检查机器记录与人类结果成对存在、README 两次点击可达、重要内容不被默认折叠、当前状态不残留退役阅读面。
+- 通过 Git 历史、supersession lineage 与追加式历史记录保留撤回、降级、隔离和修订过程。
 
-Current state must be inferred from actual repository artifacts: architecture files, foundation registries, tests, CI, open PRs, validation reports, unresolved queues, licensing state, and known gaps. It must not be backfilled from aspiration or branding.
+## 当前人类阅读面
 
-Claim Governance and Historical Function Census R1 is now part of the Foundation surface. It adds ten function-identity classes, independent M0—M7 mathematical-maturity and E0—E7 external-evidence axes, ten audit gates, a deterministic all-tracked-text census and a resumable review queue. The snapshot registers 2,033 deduplicated candidates (622 existing formal objects, 139 undefined explicit IDs and 1,272 implicit named candidates), but only 12 task-98 records are newly human-adjudicated; 2,021 remain queued. Automatic extraction is never authoritative. The preserved legacy tables remain source evidence rather than current claim authority.
+GitHub 仓库 Markdown 是唯一持续维护的人类阅读层：
 
-Historical Function Asset Deep Adjudication and Registry Closure R1 now layers task 99 on that historical task-98 snapshot. Scanner v2 adds executable declarations and searchable formula candidates; every current discovery has one twelve-class primary identity, source anchors, M/E ratings, obligations, dependencies, ten gates and one final disposition. Missing semantics are closed by explicit quarantine rather than an inferred pass. Exact live counts and distributions are generated in `data/foundation/function-assets/closure-summary.json`; registry closure does not mean that open proofs, empirical tests or external reviews are complete.
+- [README](../README.md)
+- [人类阅读总入口](../HUMAN-READING.md)
+- [RESULTS](../RESULTS/README.md)
+- [当前结果](../RESULTS/LATEST.md)
+- [纠正与撤回](../RESULTS/CORRECTIONS.md)
+- [开放问题](../RESULTS/OPEN-QUESTIONS.md)
+- [裁决总结](../RESULTS/ADJUDICATION-SUMMARY.md)
+- [研究与文章](../RESULTS/RESEARCH-AND-ARTICLES.md)
 
-Corpus-wide Non-function Claim Adjudication and Evidence-lineage Closure R1 extends that governance to claim-like assets outside the function registry. Reproducible discovery maps theorem, law, mechanism, causal, impossibility, cross-domain, prediction, empirical, ontological, interpretive, normative and repository-status candidates to stable records with thirteen gates, evidence lineage, dependencies, M/E maturity, replication status, disposition and public wording ceiling. Exact counts remain generated in `data/foundation/nonfunction-claims/closure-summary.json`. Closure includes explicit quarantine and does not establish truth, proof, novelty, peer review or external replication.
+此前独立部署的阅读站已退出产品与同步面，独有系统图迁移到 [仓库内 SVG](./generated/ignition-system-map.svg)。历史部署证据仍留在 Git 与旧报告，不再构成当前完成门禁。
 
-The first correction set covers T2, D127, D182—D190 and D260 plus every direct reverse consumer. It records D127/D260 legacy-note identity conflicts, withdraws the claim that physics grand unification has been proved impossible, rejects any precise gate-derived unification point, and limits the current physics status to: the Ignition multiplicative gate model does not unify the four interactions, while the physical unification problem remains open.
+## 当前治理结论
 
-121Q12 adds a current operation overlay for two narrow gaps: choosing a next action when goals are unstable, and constraining interpretation after an action produces results. This is a current capability addition, not a fixed project positioning.
+- registry closure 表示每项有处置或明确 quarantine，不表示全部命题成立。
+- 数学成熟度和外部证据成熟度独立；任何一轴不能替代另一轴。
+- 自动提取、分类、依赖计算和 CI 只提供仓库范围证据，不裁决外部现实。
+- 当前门控乘积模型没有统一四种基本相互作用；物理统一问题保持开放。
+- 点火没有证明“大一统普遍不可能”。模型失败、哥德尔类比、跨域相似或旧编号不能充当普遍 no-go theorem。
+- 系统图和传播闭包是导航/仓库关系，不是现实因果、严格同构或项目完备性证明。
+- 生命共同体价值宪章是规范边界，不是事实、数学或授权证据。
 
-121Q13 adds a stacked current control overlay for attention, distribution, and compression. It records whether repeated loops add information, treats AI/human outputs as conditioned samples rather than answers, separates action collapse from truth collapse, and audits whether new terminology is real compression or only labeling. This remains a current capability addition, not a new theory layer.
+## 当前限制与开放义务
 
-121Q14 adds a current atlas overlay. It projects existing registries, matrices, architecture surfaces, validation workflows, sustainability documents, and operation flows into versioned maps for declared observers and decision questions. These maps are navigation and resource-decision views, not a new source of truth or a fixed project identity.
+- 函数资产中 3,982 项仍 quarantine/pending；非函数断言中 5,546 项仍 quarantine/pending。
+- 大量资产仍缺精确定义、类型、量纲、证明、反例、外部来源、数据或复现。
+- MCF、PSD、ARN、Function OS 与现实使用效用尚需独立证据和失败条件。
+- 四力统一、量子引力、暗物质、暗能量、宇宙常数和测量问题没有被本项目解决。
+- 自动审计是启发式门禁；它可以发现风险和阻断已知回弹，但不能替代专家裁决、同行评审或实验。
 
-121Q15 records Q12-Q14 as a continuous cumulative release candidate chain pending main merge. This sentence describes the current release state of the chain; it does not turn the overlays into a fixed project identity or permanent total map.
+## 当前操作法
 
-Q21R, Q22 and Q23 add current architecture/operation assets for Multiscale Causal Fabric, Probabilistic System Dynamics and Adaptive Relational Network after their accepted chain entered `main`. These are modeling and projection capabilities with validators and reports; they are not new truth layers and do not prove ontology, causality, value or internal learning mechanisms.
+Iteration Method `1.4.0` 仍是当前仓库操作法。任务 101 在其基础上增加强制双输出：任何新增或修改知识资产必须同时有机器可验证记录和人类可读结果；任一层缺失、断链、过期或隐藏时，CI 失败。
 
-121Q24D closed 121Q24 as a current repository operation capability after PR #56 was independently accepted, merged and verified. It provides the canonical iteration method and synchronization validator for future state-changing work; using it does not prove truth, value, causality, completeness or correctness.
+候选、Ready、Accepted、Merged、Current 和 Closed 仍是不同状态。普通合并、main 验证、远端 CI 与全新克隆复验都必须分别记录；仓库没有需要继续维护的独立阅读站生产门。
 
-121Q25 and Q25C are now current after PR #57 was independently accepted, merged and externally verified. Human front doors expose MCF, PSD, ARN and the iteration method, while method 1.1.0 derives whole-project propagation from the synchronization registry and separates implementation, repository, external and project completion. Q25B remains superseded candidate history; the method is an operation discipline, not a truth layer or proof of substantive correctness.
+## 更新规则
 
-121Q32 has been independently accepted (R4: 12/12 families, 18/18 cases), merged and closed out as Current (Q32T). At the Q32T historical closeout, iteration method 1.2.0 and system map 0.2.0 became Current; Q32I later superseded them. Method 1.1.0 and map 0.1.0 are retained as historical versions. It adds canonical project components, a typed declared propagation topology, deterministic fixpoint closure, component/surface decisions, map delta and residue binding; it also derives the materialized map from registries plus a layout overlay. Declared closure is not scientific causal identification or proof that the registries exhaust the project.
-
-Q32I is Closed/Current after third independent exact-head acceptance, PR #62 ordinary merge, final-main validation, production Pages deployment and live verification. Iteration method 1.3.0 and system-map projection 0.3.0 were closed out as Current by Q32I and are now Historical (superseded by 0.4.0); method 1.2.0 and map 0.2.0 are Historical, while 1.1.0/0.1.0 are earlier Historical. It separates authority type, execution capability and validation capability, gives manual/external profiles no local validator subprocess, binds every local validator to a complete component-appropriate command, performs unified fail-closed preflight before apply side effects, and verifies complete supported repository restoration before reporting rollback as restored. Q34—Q40 remain not started; Q33 launch material was prepared in 1111 and is now closed out as Current via the I2 lifecycle closeout. Cache is not authority, selective execution is a repository materialization mechanism rather than real-world causal identification, and critical authority changes still force a full rebuild.
-
-121Q28T closed Zhiyuan Writing Method `0.3.0` as a merged L6 public-expression and provenance-gated feedback capability; 121Q31T retains it as historical after 0.4.0 became Current. Its correspondence to L0-L6, Q12-Q14, MCF, PSD, ARN, iteration and Charter remains a structurally auditable homology candidate, not identity, neuroscience, formal proof or causality. Public work may return confusion, counterexamples or missing subjects as candidate sources/gaps only after provenance capture; praise and attention are not truth evidence. This capability adds no architecture or truth layer.
-
-121Q30T closes the first repository-native showcase chain as a current presentation/provenance interface for that capability: human and machine indexes connect a bounded case-source record, Q26 point-fire analysis, the accepted Q29R publication text and method 0.3.0. It adds no truth layer; the source note containing third-party course material is not republished, and one accepted work does not establish universal method effectiveness.
-
-121Q31T closes Zhiyuan Writing Method `0.4.0` and the spec-generated clickable system map as current L6 and navigation interfaces. Writing material is typed as external input or provenance-bound ignition increment; increments may be reused as L6 writing material but are not independent external evidence. `0.3.0` remains historical and the first accepted work keeps its actual `0.3.0` generation binding. The map is a navigation/deployment interface, not L7, a causal graph, strict isomorphism or proof of project completeness.
-
-121Q33 has been independently accepted, merged (PR #63, merge commit cf321f9) and closed out as Current via the I2 lifecycle closeout: the 7 copyright risk and rights governance components are now current, and external attestation (F12 receipt in 1111, commit 3fbf40c9) binds exact HEAD 9290c83f, the three historical CI runs (foundation-validation, function-os-ci, pages) and the Pages artifact dual digest. The closeout is a candidate submitted for conclusion review and does not independently assert main-branch production Current status; it remains subject to Q33_I2_CLOSEOUT_CANDIDATE_READY_FOR_CONCLUSION_REVIEW.
-
-Charter System R1 (宪章系统 R1) has been closed out as Accepted/Current on `main` via four ordinary merges (PR #137 exact-head acceptance → PR #138 Current synchronization → PR #139 front-door/registry/versioning sync → PR #140 VERSIONING provenance narrow repair; main now `9a2e47b3`). It is a governance system that turns the life-community value charter's normative boundaries into machine-checkable, auditable governance components and a registry (`docs/governance/charter-system-r1.md`, `charter-system-registry.json`). Its lifecycle is `accepted=true, current=true, activated=false, publication_status=UNPUBLISHED`: the governance machinery exists and is Current, but no capability, runtime or executor has been activated by it, and no snapshot has been published. The prior governance-chain closeout had left the homepage/`project-current-state` surfaces stale (README still named method `1.3.0` as Current after `1.4.0` became Current); that causal-propagation gap is closed by the homepage current-state repair (R1-20260727). `README.md` and `docs/project-current-state.md` are now required causal-propagation surfaces: an iteration that changes project form, a Current capability/method, governance, a boundary, an entry or the externally-comprehensible state must synchronize them or record a validator-enforced `NonImpactProof`, and a stale front door blocks `ITERATION_CLOSED`.
-
-The registry-derived interactive system map `0.4.0` is now Current (homepage/usage/charter-system-map sync closeout R1-20260727; PR #143 exact-head `77fc5f95777a3b7d2c5fd2f269541f35d45c4f34` independently accepted and merged into `main` via ordinary merge). It carries the Charter System R1 governance node with `activated=false` / `publication_status=UNPUBLISHED`; `0.3.0` and `0.2.0` are Historical, `0.1.0` earlier Historical. The map is a navigation/deployment interface, not L7, a causal graph or proof of completeness; this promotion activates no capability, runtime or executor and publishes no snapshot.
-
-## Current Shape
-
-At this version, the repository is an evidence-traceable, object-typed, inference-checkable and audit-graded mechanism discovery and modelling system for cross-domain material. That sentence is a current-state description, not a fixed essence. It can change if future work changes the actual assets, evidence rules, execution layer, or governance boundaries.
-
-Current organizing surfaces include:
-
-- seven-layer architecture from source/evidence to interpretation/publication;
-- foundation registries for objects, claims, arguments, sources, evidence, mappings, proofs, validations and migrations;
-- function-asset claim governance, deterministic full-repository discovery, twelve-class identity cards, independent M/E axes, obligation/dependency ledgers and explicit quarantine closure;
-- legacy function and case tables preserved as source and compatibility views;
-- Function OS candidate implementation and CI-tested execution capabilities;
-- life-community value charter as the highest normative boundary;
-- layered licensing rules for sustainability and commercial reciprocity;
-- open Draft PRs and release-candidate reports that record what is not yet merged.
-
-## Current Capabilities
-
-The project currently can:
-
-- preserve historical material while separating source, claim, evidence, proof and publication layers;
-- expose gaps, pending claims, weak evidence, missing fields and counterexamples without forcing convergence;
-- run Foundation validation and Function OS CI for the currently implemented surfaces;
-- reproduce the tracked-text/function-declaration census and identity-card registry, validate authoritative corrections, and preserve undecidable proof or empirical work as explicit quarantine;
-- keep claims downgradeable and evidence-dependent;
-- document external feedback as input to “gap discovery -> structural correction -> re-validation”;
-- distinguish normative boundaries from factual proof and implementation capability;
-- maintain a source-available/commercial-reciprocal licensing model while preserving old MIT rights for older versions.
-- select a bounded Minimum State-Changing Action when targets, metrics, or paths are unstable;
-- record M0 mechanism sketches and M1 mechanism adjudications with claim ceilings, alternative mechanisms, and downgrade conditions;
-- separate stance-blind review inputs and calibration sources so positive conclusions remain bound to criteria rather than proponent expectation.
-- detect no-information-gain loops, attractor loops, and rumination risk;
-- record SampleEnvelope, HypothesisDistribution, DecisionCollapseRecord, and NarrativeProvenanceLedger;
-- apply Action / Claim / Scale thresholds separately;
-- run ChunkAudit before treating a new concept or high-frequency term as canonical architecture language.
-- generate versioned map projections with AtlasSpec, MapSpec, MapNode, MapEdge, MapProjection, MapDiff, EvolutionRecord, SourcingDecision, and UnmappedResidue;
-- distinguish matrix, registry, graph, and map authority;
-- show maintainer sustainability, epistemic architecture, and agent delivery landscapes without treating map position as proof.
-- build bounded Multiscale Causal Fabric projections that separate causal reachability, relation classes, light-cone/horizon metaphors, entropy/irreversibility records and unmapped residue;
-- represent probabilistic system dynamics with explicit system context, state space, transition law, stochastic semantics, interventions, trajectories, coupling, calibration and rare-event boundaries;
-- produce Adaptive Relational Network projections, temporal paths, high-order relation records, perturbation/reconfiguration timelines, embedding evidence summaries and NetworkDiff records without treating network metrics as truth, value or causality.
-
-## Current Limits
-
-The project currently must not claim:
-
-- to be a finished unified mathematical theory;
-- to be a physical theory or a replacement for external science;
-- to be a universal prover;
-- to have completed all content proofs merely because architecture migration or CI passes;
-- to have resolved every pending claim, source gap, third-party rights issue or governance question;
-- to have a fixed final identity that later evidence cannot change.
-- that a numbered formula, an automatic identity label or an internal passing test establishes external truth;
-- that the current gate model has unified the four interactions or proved grand unification universally impossible;
-- that effectual action or mechanism adjudication is a universal method, a new truth layer, or proof of causality.
-- that repeated AI samples are independent fact evidence;
-- that choosing an action proves a mechanism true;
-- that a new term is a theory upgrade merely because it compresses language.
-- that any map is a permanent total map;
-- that visual proximity, dependency, or evolution stage proves fact, isomorphism, or causality.
-- that causal-fabric reachability is actual causation;
-- that high probability, posterior probability, Markov structure, stationarity, ergodicity, linearity or Gaussian assumptions are automatic;
-- that network adjacency, similarity, centrality, community detection, retrieval, self-report or behavior change proves truth, value, causality or internal learning mechanisms;
-- that Q24 method compliance proves any substantive claim true.
-- that Zhiyuan Writing Method reproduces the maintainer's full creativity, defines universal aesthetic quality, or raises any lower-layer claim because a story is compelling.
-
-A current inability is also not a permanent impossibility. It only means the present artifacts do not support that claim at this commit.
-
-## Normative Boundaries Are Not Positioning
-
-The life-community value charter does not define what 点火 must finally become. It defines boundaries that any future growth must respect: evidence discipline, harm visibility, maintainer sustainability, anti-capture, reversibility where possible, and respect for subjects who bear costs.
-
-Architecture is the current organization of work. Function OS is a current execution capability. Licensing is the current resource and reciprocity rule. None of these is a timeless “project positioning.”
-
-## Update Rule
-
-When future work changes what the repository can do, what it cannot do, what it has verified, what it has downgraded, or what remains pending, this page should be revised. The stable habit is not a fixed answer to “what is 点火?” but a way of facing change:
-
-- evidence remains traceable;
-- gaps remain exposable;
-- conclusions remain downgradeable;
-- errors remain correctable;
-- history is not overwritten;
-- value boundaries remain auditable.
+未来工作只要改变能力、状态、结论、纠正、开放问题、证据或公开表述，就必须同步 README、`HUMAN-READING.md`、相应 `RESULTS/` 页面、机器 Delta/impact/lineage 和历史记录。历史证据不删除，Git 历史不改写。

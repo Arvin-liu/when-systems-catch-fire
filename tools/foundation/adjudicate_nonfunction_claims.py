@@ -27,28 +27,27 @@ INDEX = ROOT / "docs/foundation/nonfunction-claim-adjudication-index.md"
 PUBLIC_SURFACES = {
     "README.md", "FOUNDATION.md", "ITERATION.md", "CONTRIBUTING.md", "SUMMARY.md",
     "AI-START-HERE.md", "AI-HANDOFF.md", "AGENTS.md", "llms.txt",
-    "docs/project-current-state.md", "docs/foundation/README.md",
+    "HUMAN-READING.md", "docs/project-current-state.md", "docs/foundation/README.md",
+    "RESULTS/README.md", "RESULTS/LATEST.md", "RESULTS/CORRECTIONS.md",
+    "RESULTS/OPEN-QUESTIONS.md", "RESULTS/ADJUDICATION-SUMMARY.md",
+    "RESULTS/RESEARCH-AND-ARTICLES.md",
 }
-_pages_workflow = ROOT / ".github/workflows/pages.yml"
-if _pages_workflow.is_file():
-    PUBLIC_SURFACES.update(
-        match.group(1) for match in re.finditer(
-            r"(?m)^\s*cp\s+([^\s]+)\s+site/[^\s]+\s*$",
-            _pages_workflow.read_text(encoding="utf-8"),
-        )
-        if not match.group(1).startswith("pages/")
-    )
-
 TEXT_SUFFIXES = {".md", ".txt", ".rst", ".json", ".jsonl", ".csv", ".yml", ".yaml", ".toml", ".py", ".sage", ".lean", ".js", ".jsx", ".ts", ".tsx", ".sh", ".html"}
 SELF_EXCLUDES = {
     "docs/foundation/nonfunction-claim-adjudication-index.md",
     "reports/foundation-architecture/100-nonfunction-claim-evidence-lineage-closure.md",
     "schemas/foundation/nonfunction-claim.schema.json",
     "data/foundation/schemas/nonfunction-claim.schema.json",
+    "RESULTS/CHRONOLOGY.md",
+    "RESULTS/CLAIM-DELTA.md",
+    "RESULTS/IMPACT-ANALYSIS.md",
+    "RESULTS/EVIDENCE-LINEAGE.md",
+    "RESULTS/SELF-CORRECTION-AUDIT.md",
 }
 MACHINE_EXCLUDE_PREFIXES = (
     "data/foundation/nonfunction-claims/",
     "data/foundation/function-assets/",
+    "data/governance/",
 )
 EXPLICIT_IMPORTS = {
     "data/foundation/claims/claims.jsonl",

@@ -109,12 +109,12 @@ class PhaseD2EndToEndAcceptance(unittest.TestCase):
             "changed_dimensions": ["deployment_rendering"],
             "change_classifications": ["INTERFACE_CHANGE"],
         })
-        self.assertEqual(document["q32_affected_component_closure"], ["pages_pipeline", "system_map_layout", "system_map_projection"])
+        self.assertEqual(document["q32_affected_component_closure"], ["human_knowledge_surfaces", "system_map_layout", "system_map_projection"])
         decisions = {item["component_id"]: item for item in document["component_decisions"]}
         self.assertEqual(decisions["system_map_projection"]["decision"], "REBUILD")
-        self.assertEqual(decisions["pages_pipeline"]["decision"], "REVALIDATE")
+        self.assertEqual(decisions["human_knowledge_surfaces"]["decision"], "REVALIDATE")
         self.assertEqual(decisions["foundation"]["decision"], "NO_CHANGE_WITH_PROOF")
-        self.assertIn("external.pages_homepage", document["affected_synchronization_surfaces"])
+        self.assertIn("human.results", document["affected_synchronization_surfaces"])
 
     def test_d2_02_rights_publication_rule_change(self):
         document = self.assert_valid_live_plan({

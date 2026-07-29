@@ -58,7 +58,7 @@
 
 `1.3.0` 降为 Historical，Q32I 为 Closed。选择性物化只在完整 profile、authority、plan 与指纹身份一致时选择性物化。Authority 类型、execution capability 与 validation capability 必须分别声明；apply 必须先通过统一预检，rollback（回滚）必须证明整仓字节／类型／symlink／mode 恢复，否则进入 unrecovered 与 recovery package。NonImpactProof 只证明声明关系范围内的非影响；cache 不是真相源；meta-authority 变更强制 full rebuild。Q33 启动包已准备，但 Q33 与 Q34—Q40 均尚未启动。
 - `implementation_complete` 不等于 `project_synchronization_complete`。生产首页部署和实时读取必须分别验证，不能由仓库状态替代。
-- 生命周期门禁按 registry 中每个表面的 `blocks` 计算。只阻塞 `current/closed` 的 post-merge Pages 不阻塞 pre-merge Accepted；但未从 main 部署并实时读取前，绝不能声称 Current/Closed。
+- 生命周期门禁按 registry 中每个表面的 `blocks` 计算。任务 101 后，人类阅读层以仓库 Markdown、确定性生成结果、exact-head CI、main 复验和全新克隆为门；任何未来新增外部表面仍必须单独登记和证明，不能由本地验证代替。
 - 正向评价词必须绑定对象、判据、版本、证据和边界。
 - AI 输出不能作为唯一校准源；仓库工件、外部来源、CI、现实反馈、人类判断与独立审查要分开记录。
 

@@ -2,12 +2,12 @@
   "policy_version": "2.1.0",
   "purpose": "Execution capability and validation capability are independent. Automatic execution is allowed only for explicit deterministic producers; local validation is allowed only for complete, component-appropriate commands. Manual and external validation never receive a local validator argv.",
   "component_policies": {
-    "pages_pipeline": {
+    "human_knowledge_surfaces": {
       "execution_capability": "validation_only",
       "validation_capability": "local_validation_only",
-      "authoritative_inputs": [".github/workflows/pages.yml", "pages/", "tests/test_pages_deploy_gate.py", "tests/test_tracked_symlink_gate.py"],
+      "authoritative_inputs": ["HUMAN-READING.md", "RESULTS/", "data/governance/human-results/", "data/governance/self-correction/", "tools/governance/", "tests/test_human_visibility_gate.py", "tests/test_self_correction_engine.py"],
       "generated_outputs": [],
-      "validator_argv": ["python3", "-m", "unittest", "tests.test_pages_deploy_gate", "tests.test_tracked_symlink_gate"]
+      "validator_argv": ["python3", "tools/governance/validate_human_visibility.py"]
     },
     "propagation_calculator": {
       "execution_capability": "validation_only",
@@ -20,7 +20,7 @@
       "execution_capability": "automatic",
       "validation_capability": "local_automatic_validation",
       "authoritative_inputs": ["data/operations/project-components.json", "data/operations/change-propagation-topology.json", "data/architecture/interactive-system-map-layout.json"],
-      "generated_outputs": ["data/architecture/interactive-system-map.json", "pages/generated/ignition-system-map.svg"],
+      "generated_outputs": ["data/architecture/interactive-system-map.json", "docs/generated/ignition-system-map.svg"],
       "producer_argv": ["python3", "tools/generate_interactive_system_map.py"],
       "validator_argv": ["python3", "tools/generate_interactive_system_map.py", "--check"]
     },

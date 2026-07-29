@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Arvin-liu/when-systems-catch-fire/schemas/governance/claim-delta.schema.json",
+  "title": "Claim Delta",
+  "type": "object",
+  "required": ["delta_id", "path", "status", "before_sha256", "after_sha256", "linked_claim_ids", "human_result_required", "source_base_commit", "claim_ceiling", "record_sha256"],
+  "properties": {
+    "delta_id": {"type": "string", "pattern": "^CD-[0-9A-F]{16}$"},
+    "path": {"type": "string", "minLength": 1},
+    "status": {"enum": ["ADDED", "MODIFIED", "DELETED"]},
+    "before_sha256": {"type": ["string", "null"]},
+    "after_sha256": {"type": ["string", "null"]},
+    "linked_claim_ids": {"type": "array", "items": {"type": "string"}},
+    "human_result_required": {"const": true},
+    "source_base_commit": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+    "claim_ceiling": {"type": "string", "minLength": 1},
+    "record_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  },
+  "additionalProperties": false
+}

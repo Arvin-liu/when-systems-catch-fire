@@ -1,0 +1,45 @@
+# 点火人类阅读总入口
+
+本页是普通读者的 canonical 导航。它与机器注册表并行，但不要求读者先理解 JSON、JSONL、schema 或 CI。任何机器记录都必须能从本页或 `RESULTS/` 找到人类可读对应物；人类摘要不得改变原记录的成熟度和断言上限。
+
+## 十分钟了解当前状态
+
+1. 读 [当前结果](./RESULTS/LATEST.md)，先看仓库现在能支持什么。
+2. 读 [纠正与撤回](./RESULTS/CORRECTIONS.md)，避免继承已经撤回的强结论。
+3. 读 [开放问题](./RESULTS/OPEN-QUESTIONS.md)，区分完成的治理工作与尚未完成的科学、数学和实证工作。
+4. 需要细节时，再进入 [裁决总结](./RESULTS/ADJUDICATION-SUMMARY.md)、[研究与文章](./RESULTS/RESEARCH-AND-ARTICLES.md) 或 [全部结果台账](./RESULTS/CHRONOLOGY.md)。
+
+## 按目的阅读
+
+|你的目的|先读|继续读|
+|---|---|---|
+|判断点火是什么、当前做到哪里|[当前结果](./RESULTS/LATEST.md)|[项目现状](./docs/project-current-state.md)、[架构](./ARCHITECTURE.md)|
+|查看历史错误怎样修正|[纠正与撤回](./RESULTS/CORRECTIONS.md)|[历史纠正日志](./docs/foundation/historical-correction-log.md)|
+|查看函数、断言资产裁决|[裁决总结](./RESULTS/ADJUDICATION-SUMMARY.md)|[函数深度裁决](./docs/foundation/historical-function-deep-adjudication-20260729.md)、[非函数断言索引](./docs/foundation/nonfunction-claim-adjudication-index.md)|
+|查看物理复算与边界|[物理资产纠偏](./docs/foundation/physics-asset-correction-20260729.md)|[开放问题](./RESULTS/OPEN-QUESTIONS.md)|
+|阅读研究、文章和迭代成果|[研究与文章](./RESULTS/RESEARCH-AND-ARTICLES.md)|[按时间台账](./RESULTS/CHRONOLOGY.md)|
+|贡献新知识资产|[贡献指南](./CONTRIBUTING.md)|[未来断言准入协议](./docs/foundation/future-claim-admission-protocol.md)、[自纠错引擎](./docs/governance/self-correction-engine.md)|
+|让 AI 协助阅读|[AI 助手使用参考](./docs/ai-assistant-usage-reference.md)|[AI 冷启动](./AI-START-HERE.md)、[AI 交接](./AI-HANDOFF.md)|
+
+## 结果记录怎样读
+
+每项人类可读结果至少说明：
+
+- 研究问题或变更问题；
+- 方法或证据类别；
+- 当前结论和它的最大表述边界；
+- 数学成熟度与外部证据成熟度，或说明为何不适用；
+- 相比上一版本发生了什么变化；
+- 局限、开放义务和最终处置；
+- 原始来源和机器记录入口。
+
+自动生成的历史条目只是导航和保真摘要，不是新的裁决。发生冲突时，以原始来源、现行治理资产和明确状态字段为准。
+
+## 当前权威层次
+
+1. Git 当前 `main` 的正式资产、schema、测试和状态字段；
+2. 任务 98—100 的现行函数与非函数裁决；
+3. 本轮生成的人类结果与 Claim Delta 投影；
+4. 历史报告、旧表和旧措辞，仅作为来源与变更证据。
+
+独立 GitHub Pages 阅读站已退出维护，不再是权威或同步面。仓库 Markdown 与其中的相对链接是唯一持续维护的人类阅读层。

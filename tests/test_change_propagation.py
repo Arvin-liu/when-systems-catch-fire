@@ -15,6 +15,7 @@ from tools.operations.compute_change_propagation import (
     compute,
     detect_tracked_symlink_escapes,
 )
+from tools.validate_iteration_sync import _era_aware_recompute
 
 
 def _git(repo: Path, *args: str) -> str:
@@ -68,7 +69,7 @@ class ChangePropagationTests(unittest.TestCase):
         # Validate the Q32-era request against its own era surface registry, not the
         # live one (which adds the post-era `copyright_governance` surface the
         # historical request never carried a decision for).
-        closure, _ = compute(copy.deepcopy(BASE_REQUEST), era_ref=Q32_ERA_REF)
+        closure, _ = _era_aware_recompute(copy.deepcopy(BASE_REQUEST), Q32_ERA_REF)
         self.assertTrue(closure["closure_complete"])
         self.assertIn("iteration", closure["resolved_components"])
         self.assertIn("human.readme", closure["registry_derived_surfaces"])
@@ -106,9 +107,9 @@ class ChangePropagationTests(unittest.TestCase):
 
     def test_d_pages_change_requires_deployment_surfaces_not_foundation_docs(self):
         request = self.request(
-            changed_paths=[".github/workflows/pages.yml"],
+            changed_paths=["HUMAN-READING.md"],
             explicit_seed_components=[],
-            state_transition_subjects=["Pages generation chain"],
+            state_transition_subjects=["human-readable knowledge surfaces"],
             changed_dimensions=["deployment_rendering"],
             change_classifications=["INTERFACE_CHANGE"],
             system_map_decision={"item_id": "interactive_system_map", "decision": "NO_CHANGE_WITH_REASON", "reason": "The hosting chain changes without a component, target, status or visible relation change."},
@@ -116,12 +117,37 @@ class ChangePropagationTests(unittest.TestCase):
         request["surface_decisions"].append({
             "item_id": "machine.stage_snapshots",
             "decision": "NO_CHANGE_WITH_REASON",
-            "reason": "A generic Pages pipeline change must assess but does not alter the stage snapshot registry.",
+            "reason": "A human-surface change must assess but does not alter the stage snapshot registry.",
         })
+        request["component_decisions"] = [
+            item for item in request["component_decisions"]
+            if item["item_id"] != "pages_pipeline"
+        ]
+        request["component_decisions"].append({
+            "item_id": "human_knowledge_surfaces",
+            "decision": "CHANGE",
+            "reason": "The repository-native human reading layer changes.",
+        })
+        request["surface_decisions"] = [
+            item for item in request["surface_decisions"]
+            if item["item_id"] not in {"human.pages_source", "external.pages_homepage"}
+        ]
+        request["surface_decisions"].extend([
+            {
+                "item_id": "human.reading",
+                "decision": "CHANGE",
+                "reason": "The repository-native human reading guide changes.",
+            },
+            {
+                "item_id": "human.results",
+                "decision": "CHANGE",
+                "reason": "The repository-native human result index changes.",
+            },
+        ])
         closure, _ = compute(request, baseline_map=CURRENT_PROJECTION)
         self.assertTrue(closure["closure_complete"])
-        self.assertIn("pages_pipeline", closure["resolved_components"])
-        self.assertIn("external.pages_homepage", closure["registry_derived_surfaces"])
+        self.assertIn("human_knowledge_surfaces", closure["resolved_components"])
+        self.assertIn("human.results", closure["registry_derived_surfaces"])
         self.assertNotIn("foundation", closure["resolved_components"])
 
     def test_e_historical_typo_allows_machine_checked_map_no_change(self):
@@ -147,7 +173,7 @@ class ChangePropagationTests(unittest.TestCase):
         topology = copy.deepcopy(TOPOLOGY_DOC)
         cycle = copy.deepcopy(topology["relations"][-2])
         # The historical test fixture injected a cycle between two map-HIDDEN
-        # components (pages_pipeline / project_component_registry). build_projection
+        # components (human_knowledge_surfaces / project_component_registry). build_projection
         # correctly fails closed on a map-visible relation that references a hidden
         # component, so that injection never reached cycle detection. Repoint the
         # injected cycle to two map-VISIBLE, resolved components (sync <-> iteration)
@@ -655,7 +681,7 @@ class ChangePropagationTests(unittest.TestCase):
         seed_paths = set(request["changed_paths"])
         covered = seed_paths | generated_outputs
         # Simulate an attacker removing a path from changed_paths
-        fake_seeds = seed_paths - {"tests/test_pages_deploy_gate.py"}
+        fake_seeds = seed_paths - {"tests/test_change_propagation.py"}
         fake_covered = fake_seeds | generated_outputs
         base = request["base_identity"]
         result = _sp.run(
@@ -666,7 +692,7 @@ class ChangePropagationTests(unittest.TestCase):
         gaps = diff_files - fake_covered
         # The gap must be non-empty (the removed path should show up)
         self.assertTrue(len(gaps) > 0, "removing a seed should create a coverage gap")
-        self.assertIn("tests/test_pages_deploy_gate.py", gaps)
+        self.assertIn("tests/test_change_propagation.py", gaps)
 
 
     # ── F6: generated-output authority adversarial tests ─────────────────────
@@ -990,7 +1016,7 @@ class ChangePropagationTests(unittest.TestCase):
         diff_set = set(diff_files)
         critical_assets = [
             "data/operations/generated-output-authority.json",
-            "tests/test_pages_deploy_gate.py",
+            "tests/test_human_visibility_gate.py",
             "tools/operations/validate_generated_output_authority.py",
         ]
         for asset in critical_assets:

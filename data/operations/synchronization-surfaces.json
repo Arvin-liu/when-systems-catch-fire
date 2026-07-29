@@ -1,5 +1,5 @@
 {
-  "registry_version": "1.3.0",
+  "registry_version": "1.4.0",
   "purpose": "Canonical synchronization topology and obligations only; not a substantive project truth store.",
   "surfaces": [
     {
@@ -40,27 +40,69 @@
       ]
     },
     {
-      "surface_id": "human.pages_source",
-      "surface_type": "repository_derived_surface",
-      "locator": ".github/workflows/pages.yml",
+      "surface_id": "human.reading",
+      "surface_type": "repository_source",
+      "locator": "HUMAN-READING.md",
       "roles": [
-        "deployment",
-        "human_front_door"
+        "human_front_door",
+        "human_guide"
+      ],
+      "authority": "canonical",
+      "derived_from": [],
+      "trigger_dimensions": [
+        "capability",
+        "identity",
+        "usage",
+        "lifecycle_current_state",
+        "governance",
+        "deployment_rendering",
+        "operations_method"
+      ],
+      "trigger_classifications": [
+        "CAPABILITY_ADDITION",
+        "INTERFACE_CHANGE",
+        "GOVERNANCE_CHANGE",
+        "RELEASE_OR_CURRENT_STATE_SYNC",
+        "OPERATIONS_METHOD"
+      ],
+      "allowed_decisions": [
+        "CHANGE",
+        "NO_CHANGE_WITH_REASON",
+        "NOT_APPLICABLE"
+      ],
+      "validation_mode": "repository_semantic_validation",
+      "blocks": [
+        "ready",
+        "current",
+        "closed"
+      ]
+    },
+    {
+      "surface_id": "human.results",
+      "surface_type": "repository_derived_surface",
+      "locator": "RESULTS/README.md",
+      "roles": [
+        "human_result",
+        "machine_human_counterpart"
       ],
       "authority": "derived",
       "derived_from": [
-        "human.readme"
+        "human.readme",
+        "human.reading"
       ],
       "trigger_dimensions": [
         "capability",
         "identity",
         "usage",
         "lifecycle_current_state",
-        "deployment_rendering",
+        "governance",
         "operations_method"
       ],
       "trigger_classifications": [
+        "CAPABILITY_ADDITION",
         "INTERFACE_CHANGE",
+        "EVIDENCE_UPDATE",
+        "GOVERNANCE_CHANGE",
         "RELEASE_OR_CURRENT_STATE_SYNC",
         "OPERATIONS_METHOD"
       ],
@@ -72,43 +114,6 @@
       "validation_mode": "repository_build_validation",
       "blocks": [
         "ready",
-        "current",
-        "closed"
-      ]
-    },
-    {
-      "surface_id": "external.pages_homepage",
-      "surface_type": "external_rendered_deployed_surface",
-      "locator": "https://arvin-liu.github.io/when-systems-catch-fire/",
-      "roles": [
-        "deployment",
-        "human_front_door"
-      ],
-      "authority": "external",
-      "derived_from": [
-        "human.readme",
-        "human.pages_source"
-      ],
-      "trigger_dimensions": [
-        "capability",
-        "identity",
-        "usage",
-        "lifecycle_current_state",
-        "deployment_rendering",
-        "operations_method"
-      ],
-      "trigger_classifications": [
-        "INTERFACE_CHANGE",
-        "RELEASE_OR_CURRENT_STATE_SYNC",
-        "OPERATIONS_METHOD"
-      ],
-      "allowed_decisions": [
-        "CHANGE",
-        "NO_CHANGE_WITH_REASON",
-        "NOT_APPLICABLE"
-      ],
-      "validation_mode": "post_merge_external_render_attestation",
-      "blocks": [
         "current",
         "closed"
       ]

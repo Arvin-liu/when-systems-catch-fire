@@ -165,8 +165,11 @@ def build(destination: Path) -> dict:
     explicit_ids: set[str] = set()
 
     for relative in files:
+        source = ROOT / relative
+        if not source.is_file():
+            continue
         try:
-            lines = (ROOT / relative).read_text(encoding="utf-8").splitlines()
+            lines = source.read_text(encoding="utf-8").splitlines()
         except UnicodeDecodeError:
             continue
         per_id: dict[str, list[int]] = defaultdict(list)

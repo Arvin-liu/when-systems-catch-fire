@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0.0",
+  "task_id": "IGNITION-HUMAN-READABLE-KNOWLEDGE-SURFACES-AND-SELF-CORRECTION-ENGINE-R1-20260729",
+  "source_base_commit": "428ad50cf4438f027d5b8992d6e362d76037a3bd",
+  "evaluated_at": "2026-07-29",
+  "knowledge_prefixes": [
+    "README.md",
+    "HUMAN-READING.md",
+    "RESULTS/",
+    "docs/",
+    "reports/",
+    "FOUNDATION.md",
+    "ARCHITECTURE.md",
+    "ITERATION.md",
+    "SUMMARY.md",
+    "AI-START-HERE.md",
+    "AI-HANDOFF.md",
+    "CONTRIBUTING.md",
+    "llms.txt"
+  ],
+  "generated_exclusions": [
+    "RESULTS/CHRONOLOGY.md",
+    "RESULTS/CLAIM-DELTA.md",
+    "RESULTS/IMPACT-ANALYSIS.md",
+    "RESULTS/EVIDENCE-LINEAGE.md",
+    "RESULTS/SELF-CORRECTION-AUDIT.md",
+    "docs/generated/",
+    "data/governance/",
+    "data/foundation/nonfunction-claims/",
+    "data/foundation/function-assets/"
+  ],
+  "public_human_surfaces": [
+    "README.md",
+    "HUMAN-READING.md",
+    "RESULTS/LATEST.md",
+    "RESULTS/CORRECTIONS.md",
+    "RESULTS/OPEN-QUESTIONS.md",
+    "RESULTS/ADJUDICATION-SUMMARY.md",
+    "RESULTS/RESEARCH-AND-ARTICLES.md",
+    "docs/project-current-state.md",
+    "SUMMARY.md"
+  ]
+}

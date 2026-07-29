@@ -1,6 +1,6 @@
 # Incremental Execution and Selective Materialization
 
-Status: `121Q32I / method 1.3.0 Current and Closed`. Method 1.2.0 and system map 0.2.0 are Historical; method 1.1.0 and map 0.1.0 are earlier Historical. Q32I passed third independent exact-head review, PR #62 ordinary merge, final-main validation, production Pages deploy and live verification.
+Historical status: `121Q32I / method 1.3.0 Closed`, now superseded by Current 1.4.0. Method 1.2.0 and system map 0.2.0 are Historical; method 1.1.0 and map 0.1.0 are earlier Historical. Q32I passed the exact-head, ordinary-merge and external checks required by its historical contract; task 101 later retired the separate deployed reading surface without deleting that evidence.
 
 ## Purpose and authority
 

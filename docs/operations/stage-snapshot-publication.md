@@ -32,7 +32,7 @@ Status: `Ignition Iteration Method 1.4.0 — Continuous Stage Snapshot Publicati
 2. `schemas/operations/stage-snapshot-registry.schema.json` 与 `stage-snapshot-request.schema.json` 的 `actor_ref` 集合由该注册表确定性生成；
 3. `data/operations/stage-snapshots.json` 是阶段快照唯一仓库权威；
 4. `tools/operations/stage_snapshot_contract.py` 做 schema、actor reference 解析、语义、隐私、关系、远端 identity/HEAD 和投影检查；
-5. 阶段快照只确定性生成并校验 `docs/generated/recent-stage-results.md`（专用页面）；不再向 README 插入「正在炼化」模块或 STAGE-SNAPSHOTS 标记。Pages 首页继续从 README 构建，但不含阶段快照块；
+5. 阶段快照只确定性生成并校验 `docs/generated/recent-stage-results.md`（专用页面）；不再向 README 插入「正在炼化」模块或 STAGE-SNAPSHOTS 标记。人类阅读层通过仓库 Markdown 直接链接该页面；
 6. PR body 与 1111 回执保存 exact-final-HEAD、GitHub Actions run ID 和外部审查结论。
 
 `docs/generated/recent-stage-results.md` 是阶段快照的唯一展示投影，不能成为第二份人工状态源。`--check` 重新渲染该专用页并逐字比较；registry 变化但该专用页未同步时失败。README 首页不含阶段快照块，由 `validate_human_front_door.py` 单独保证「正在炼化 不在 README」。
@@ -100,6 +100,6 @@ CI 的仓库内门使用确定性 schema、语义和投影检查；独立验收�
 
 ## 7. 兼容、迁移与退出
 
-1.3.0 的能力生命周期、typed propagation、增量执行和生产 Pages 门保持原样。没有快照记录的旧任务仍合法；只有希望进入展示层的真实阶段成果才使用新接口。
+1.3.0 的能力生命周期、typed propagation 与增量执行保持历史兼容。没有快照记录的旧任务仍合法；只有希望进入展示层的真实阶段成果才使用新接口。独立部署阅读面已经退役，当前展示义务由仓库 Markdown 与人类可见性 CI 承担。
 
 若 1.4.0 候选被拒绝，删除新 schema、registry、validator、投影和 workflow 步骤即可回到 1.3.0；不需要回滚任何候选能力，因为本制度从未把候选载荷注册或激活为正式能力。

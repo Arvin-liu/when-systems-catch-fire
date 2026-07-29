@@ -72,15 +72,15 @@
       "reason": "historical_reports and iteration_manifest_contract share reports/operations/ for historical ops and 121Q32 reports."
     },
     {
-      "authority_source": ".github/workflows/pages.yml",
+      "authority_source": "HUMAN-READING.md",
       "component_ids": [
-        "pages_pipeline",
+        "human_knowledge_surfaces",
         "system_map_projection"
       ],
       "path_patterns": [
-        "pages/generated/ignition-system-map.svg"
+        "docs/generated/ignition-system-map.svg"
       ],
-      "reason": "pages_pipeline owns pages/ for the deployment chain; system_map_projection owns the generated SVG under pages/generated/."
+      "reason": "human_knowledge_surfaces owns readable repository navigation while system_map_projection owns the generated SVG under docs/generated/."
     },
     {
       "authority_source": "FOUNDATION.md",
@@ -94,6 +94,7 @@
         "copyright_governance_publication_gate_validator",
         "copyright_governance_history_remediation",
         "copyright_governance_tests",
+        "human_knowledge_surfaces",
         "licensing"
       ],
       "path_patterns": [
@@ -491,7 +492,7 @@
       "canonical_target": "docs/operations/stage-snapshot-publication.md",
       "component_id": "stage_snapshot_publication",
       "component_type": "operation_control",
-      "description": "把阶段成果的可审计摘要、精确来源、显式状态和证据入口确定性投影到 README 与 Pages，而不提升能力生命周期。",
+      "description": "把阶段成果的可审计摘要、精确来源、显式状态和证据入口确定性投影到仓库 Markdown，而不提升能力生命周期。",
       "label": "阶段成果持续快照",
       "layer_or_overlay": "overlay",
       "lifecycle": {
@@ -792,26 +793,30 @@
     },
     {
       "authority": "canonical",
-      "canonical_target": ".github/workflows/pages.yml",
-      "component_id": "pages_pipeline",
+      "canonical_target": "HUMAN-READING.md",
+      "component_id": "human_knowledge_surfaces",
       "component_type": "repository_infrastructure",
-      "description": "由人工维护的 workflow 和 Pages 部署边界；本地仅验证，不伪装为自动构件物化。",
-      "label": "Pages 双表面发布链",
+      "description": "机器记录与人类结果成对生成、两步可达、无默认隐藏并通过 CI 保持同步。",
+      "label": "人类可读知识表面",
       "layer_or_overlay": "infrastructure",
       "lifecycle": {
-        "source": ".github/workflows/pages.yml",
+        "source": "HUMAN-READING.md",
         "status": "current"
       },
       "map_projection": {
-        "no_change_reason": "README 节点和完整图入口已经承担双表面导航；发布 workflow 不增加读者概念节点。",
+        "no_change_reason": "README 节点已经代表 HUMAN-READING 与 RESULTS 导航；不增加重复可见节点。",
         "represented_by": "readme",
         "visible": false
       },
       "path_patterns": [
-        ".github/workflows/pages.yml",
-        "pages/",
-        "tests/test_pages_deploy_gate.py",
-        "tests/test_tracked_symlink_gate.py"
+        "HUMAN-READING.md",
+        "RESULTS/",
+        "data/governance/human-results/",
+        "data/governance/self-correction/",
+        "docs/generated/ignition-system-map.svg",
+        "tools/governance/",
+        "tests/test_human_visibility_gate.py",
+        "tests/test_self_correction_engine.py"
       ]
     },
     {
@@ -1246,7 +1251,7 @@
       },
       "path_patterns": [
         "data/architecture/interactive-system-map.json",
-        "pages/generated/ignition-system-map.svg",
+        "docs/generated/ignition-system-map.svg",
         "tools/generate_interactive_system_map.py",
         "tools/validate_human_front_door.py",
         "tests/test_human_front_door.py",
