@@ -1,5 +1,5 @@
 {
-  "snapshot_id": "IGNITION-20260729-098",
+  "snapshot_id": "IGNITION-20260729-099",
   "counts": {
     "formal_objects": 622,
     "formal_cases": 806,
@@ -26,18 +26,29 @@
       "PROVISIONAL": 1
     },
     "function_asset_census": {
-      "tracked_text_files_scanned": 2875,
+      "tracked_text_files_scanned": 2889,
       "registered_assets": 622,
-      "explicit_undefined_ids": 139,
-      "implicit_named_assets": 1272,
-      "deduplicated_assets": 2033,
-      "source_occurrence_records": 25112,
-      "source_mentions": 59191,
-      "duplicate_mentions": 57158,
+      "explicit_undefined_ids": 140,
+      "implicit_named_assets": 4870,
+      "deduplicated_assets": 5632,
+      "source_occurrence_records": 28750,
+      "source_mentions": 62836,
+      "duplicate_mentions": 57204,
       "dependency_edges": 1923,
       "assets_with_dependencies": 541,
       "human_adjudicated_task98": 12,
-      "queued_for_human_review": 2021
+      "queued_for_human_review": 5620
+    },
+    "function_asset_deep_adjudication": {
+      "canonical_identity_cards": 5632,
+      "adjudication_ledger_records": 5632,
+      "explicit_quarantine_or_pending": 3872,
+      "counterexample_records": 12,
+      "dependency_edges": 1923,
+      "public_strong_claim_candidates": 584,
+      "semantic_rebound_candidates": 10,
+      "blocked_semantic_rebounds": 0,
+      "registry_closed": true
     }
   },
   "registries": [
@@ -70,6 +81,15 @@
     "data/foundation/function-assets/audit-queue.jsonl",
     "data/foundation/function-assets/corrections.jsonl",
     "data/foundation/function-assets/dependency-actions.jsonl",
-    "data/foundation/function-assets/claim-ledger.jsonl"
+    "data/foundation/function-assets/claim-ledger.jsonl",
+    "data/foundation/function-assets/identity-cards.jsonl",
+    "data/foundation/function-assets/adjudication-ledger.jsonl",
+    "data/foundation/function-assets/proof-empirical-obligations.jsonl",
+    "data/foundation/function-assets/counterexample-registry.jsonl",
+    "data/foundation/function-assets/unresolved-quarantine.jsonl",
+    "data/foundation/function-assets/dependency-closure.jsonl",
+    "data/foundation/function-assets/public-claim-lineage.jsonl",
+    "data/foundation/function-assets/semantic-rebound-report.jsonl",
+    "data/foundation/function-assets/withdrawn-historical-claims.jsonl"
   ]
 }

@@ -1,0 +1,22 @@
+{
+  "alias_rule": "Exact normalized-title matches are reported as alias candidates and require evidence before identity merge.",
+  "candidate_classes": [
+    "explicit stable identifiers",
+    "named headings and name/title fields",
+    "Python/Lean/JavaScript function declarations",
+    "standalone function-like mathematical expressions"
+  ],
+  "coverage_assertions": {
+    "every_card_has_source_anchor": true,
+    "every_discovery_has_card": true
+  },
+  "deduplication_rule": "Explicit IDs merge by normalized stable ID. Implicit candidates use path plus normalized declaration text; equal titles are alias candidates, not auto-merged because equal names need not denote equal objects.",
+  "first_appearance_rule": "Earliest path occurrence in the locked source commit ancestry; no unproved rename inference.",
+  "known_limitations": [
+    "Formula images without searchable text cannot be semantically recovered.",
+    "Regex discovery can over-include headings and code helpers; such records are explicitly quarantined instead of silently discarded.",
+    "Semantic rebound similarity is a candidate generator plus fail-closed lexical families, not an automatic proof of semantic equivalence."
+  ],
+  "scanner_snapshot": "function-census-v2-20260729",
+  "tracked_text_files_scanned": 2889
+}

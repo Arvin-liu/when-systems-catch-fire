@@ -1,0 +1,48 @@
+{
+  "checks": [
+    {
+      "check": "D182 derivative",
+      "pass": true,
+      "result": "-1/(r*log(r)**2)"
+    },
+    {
+      "check": "D182 infinity limit",
+      "pass": true,
+      "result": "0"
+    },
+    {
+      "check": "D182 pole at one",
+      "pass": true,
+      "result": "0"
+    },
+    {
+      "check": "D183 merge-order counterexample",
+      "pass": true,
+      "phi_after": 9.4912215810299,
+      "phi_before": 0.8685889638065035
+    },
+    {
+      "check": "D260 derivative",
+      "pass": true,
+      "result": "(p - 1)**(-2)"
+    },
+    {
+      "check": "D260 fixed-seed monotonic property",
+      "pass": true,
+      "sample_count": 200
+    },
+    {
+      "carrier": "Z/6Z",
+      "check": "T2 converse zero-divisor counterexample",
+      "pass": true
+    }
+  ],
+  "checks_passed": 7,
+  "checks_total": 7,
+  "python": "3.14.6",
+  "random_seed": 990729,
+  "scope": "Scoped mathematical properties and counterexamples only; no external physics claim is tested.",
+  "status": "PASS",
+  "sympy": "1.14.0",
+  "tool": "SymPy and Python standard library"
+}
