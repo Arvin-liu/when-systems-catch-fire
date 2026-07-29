@@ -331,9 +331,13 @@ class IterationSyncTests(unittest.TestCase):
         return registry, q25_path, q25, q25_seal, q25b_path, q25b, q25b_seal
 
     def q25c_document(self, *, current=False):
-        registry = validate_registry(load_json(REGISTRY_PATH))
+        live_registry = validate_registry(load_json(REGISTRY_PATH))
         path = ROOT / "data/operations/iterations/121Q25C.json"
         manifest = load_json(path)
+        registry = resolve_era_registry(
+            manifest["synchronization_closure"]["registry_version"],
+            live_registry,
+        )
         seal = load_json(infer_seal_path(manifest))
         if not current:
             manifest["branch_pr"].update({"draft": True, "merged": False})
@@ -558,7 +562,7 @@ class IterationSyncTests(unittest.TestCase):
         # otherwise validates against the git-committed 1.0.0 snapshot, which
         # cannot see a surface injected only into the live in-memory registry.
         era_registry = resolve_era_registry("1.0.0", registry)
-        second = copy.deepcopy(registry["external.pages_homepage"])
+        second = copy.deepcopy(era_registry["external.pages_homepage"])
         second["surface_id"] = "external.second"
         second["locator"] = "https://example.invalid/second"
         era_registry[second["surface_id"]] = second

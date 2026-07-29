@@ -13,9 +13,9 @@
 
 PR #56 / 121Q24 已在验收后合并：迭代操作法与同步验证契约是当前仓库操作能力。它约束状态改变任务怎样记录 gap、claim ceiling、同步矩阵、验证和回执，但不证明任何结论的真理、价值、因果、完整性或正确性。
 
-PR #57 / Q25C 已在独立验收、普通合并、生产 Pages 部署与实时读取后成为当前方法 1.1.0：它增加同步表面注册表、传播闭包，以及实现完成、仓库同步完成、外部同步与项目整体完成的分层。
+PR #57 / Q25C 曾按当时合同完成独立验收、普通合并与外部表面核验并形成历史方法 1.1.0：它增加同步表面注册表、传播闭包，以及实现完成、仓库同步完成、外部同步与项目整体完成的分层。
 
-Q25B 已因生命周期死锁降为 superseded non-ready 历史候选；Q25C 是 PR #57 中被接受并进入当前状态的方法增量。Q25C 允许 post-merge-only Pages pending 时进行 pre-merge Accepted/Merged，同时仍要求逐表面 attestation 才能进入 Current/Closed。
+Q25B 已因生命周期死锁降为 superseded non-ready 历史候选；Q25C 是 PR #57 中被接受的方法增量。它确立的逐表面 `blocks` 原则继续有效；任务 101 已把旧独立阅读站从当前表面注册表移除。
 
 121Q28 的 `0.1.0` 因肉身硬门槛被拒绝；121Q28R `0.2.0` 修复入口但未完成 whole-project integration；121Q28S `0.3.0` 完成同源认知、全项目对应与双向反馈候选。121Q28T 将 accepted exact HEAD 以 merge commit 合入并完成 Current/Closed 收口。`之元写作法 / Zhiyuan Writing Method` `0.3.0` 现为当前 L6 公共表达与 provenance-gated feedback 能力。这不改变七层架构、Foundation 或迭代操作法版本。
 
@@ -23,9 +23,9 @@ Q25B 已因生命周期死锁降为 superseded non-ready 历史候选；Q25C 是
 
 121Q31T 将之元写作法 `0.4.0` 与 spec 驱动的完整可点击系统图收口为 Current：素材来源分为外部输入与点火增量输出，后者可复用但不是独立外部证据。`0.3.0` 保留为历史已合并版本，Q29R 与第一条成果继续绑定真实生成版本 `0.3.0`。系统图版本独立为 `0.1.0` Current；它不改变七层架构、Foundation、迭代操作法 1.1.0 或历史成果的方法版本。
 
-Q32I closed iteration method `1.3.0` and registry-derived system map `0.3.0` as Current after third independent exact-head acceptance, ordinary merge of PR #62, final-main validation, production Pages deployment and live verification. Method `1.2.0` and map `0.2.0` are Historical; `1.1.0` and map `0.1.0` are earlier Historical. The Current contract separates authority and execution capability, adds unified apply preflight and complete repository rollback verification without adding L7, a truth layer or causal identification. Q33 launch material is prepared externally; Q33 and Q34-Q40 are not started.
+Q32I closed iteration method `1.3.0` and registry-derived system map `0.3.0` after third independent exact-head acceptance, ordinary merge of PR #62, final-main validation and the external checks required at that time. Method `1.3.0`, `1.2.0` and maps `0.3.0`, `0.2.0` are Historical; `1.1.0` and map `0.1.0` are earlier Historical. The contract separated authority and execution capability, added unified apply preflight and complete repository rollback verification without adding L7, a truth layer or causal identification.
 
-Iteration method `1.4.0 — Continuous Stage Snapshot Publication` is a Draft Candidate governed by Current 1.3.0. It adds a separate publication-status axis and a machine registry for public stage summaries. A snapshot record and homepage projection may eventually enter Main without merging the candidate payload or raising Accepted/Current/Activated; the candidate itself cannot use this rule to self-merge or self-declare Current.
+Iteration method `1.4.0 — Continuous Stage Snapshot Publication` is Current. It adds a separate publication-status axis and a machine registry for public stage summaries; snapshot visibility never raises Accepted/Current/Activated. Task 101 adds machine/human dual outputs, repository-native result surfaces and self-correction CI, while retiring the former independent deployed reader from current and future completion gates.
 
 Charter System R1（`docs/governance/charter-system-r1.md`，元治理层）经独立 exact-head acceptance（PR #137 head `669c9f8c` → merge commit `0e7c032`）收口为 Current（non-Activated），并经 front-door / 系统注册表 / VERSIONING 三表面同步（PR #139 → `09bf6400`，方法 `IGNITION-CHARTER-SYSTEM-R1-CURRENT-FRONT-DOOR-REGISTRY-AND-VERSIONING-SYNCHRONIZATION-R1-20260726`）完成 Current 收口的逐表面 attestation。它保持 `activated=false`、`publication_status=UNPUBLISHED`：Current 不等于 Activated，亦不构成任何已发布快照（满足 `PUBLISHED_SNAPSHOT != ACCEPTED/CURRENT/ACTIVATED`）。本同步不改变价值宪章、七层架构、Foundation 或迭代操作法版本。
 

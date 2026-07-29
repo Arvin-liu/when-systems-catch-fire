@@ -53,7 +53,7 @@ The calculator then:
 
 Historical 0.3.0 and 0.2.0 replaced the materialized map JSON as hand-maintained authority; Current 0.4.0 retains the chain:
 
-`project-components.json + change-propagation-topology.json + interactive-system-map-layout.json → generate_interactive_system_map.py → interactive-system-map.json + SVG + README/Pages`
+`project-components.json + change-propagation-topology.json + interactive-system-map-layout.json → generate_interactive_system_map.py → interactive-system-map.json + repository SVG + README/Markdown navigation`
 
 Layout remains an editorial overlay. Node identity, canonical target, lifecycle status and visible relation metadata come from the registries. Generator `--check` fails when the projection or SVG is stale, when a visible component is missing, or when a hidden new component lacks a declared representation and no-change reason.
 

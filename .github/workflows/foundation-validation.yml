@@ -6,13 +6,16 @@ on:
       - 'requirements-foundation.txt'
       - 'formal/lean/**'
       - 'tools/foundation/**'
+      - 'tools/governance/**'
       - 'tests/foundation/**'
+      - 'tests/fixtures/self-correction/**'
       - 'data/foundation/**'
       - 'data/foundation-architecture/**'
       - 'data/math-foundation/**'
       - 'data/pending_claims.json'
       - 'views/**'
       - 'schemas/foundation/**'
+      - 'schemas/governance/**'
       - 'schemas/operations/**'
       - 'schemas/architecture/**'
       - 'reports/foundation-architecture/**'
@@ -29,7 +32,8 @@ on:
       - 'tests/test_iteration_sync.py'
       - 'tools/validate_human_front_door.py'
       - 'tests/test_human_front_door.py'
-      - 'tests/test_pages_deploy_gate.py'
+      - 'tests/test_human_visibility_gate.py'
+      - 'tests/test_self_correction_engine.py'
       - 'tests/test_stage_snapshot_publication.py'
       - 'tests/stage_snapshot_responsibility_actor_cases.json'
       - 'tools/operations/stage_snapshot_contract.py'
@@ -38,7 +42,9 @@ on:
       - 'data/operations/stage-snapshots.json'
       - 'docs/generated/recent-stage-results.md'
       - 'docs/operations/stage-snapshot-publication.md'
-      - '.github/workflows/pages.yml'
+      - 'HUMAN-READING.md'
+      - 'RESULTS/**'
+      - 'data/governance/**'
       - 'docs/ai-assistant-usage-reference.md'
       - 'ITERATION.md'
       - 'README.md'
@@ -56,13 +62,16 @@ on:
       - 'requirements-foundation.txt'
       - 'formal/lean/**'
       - 'tools/foundation/**'
+      - 'tools/governance/**'
       - 'tests/foundation/**'
+      - 'tests/fixtures/self-correction/**'
       - 'data/foundation/**'
       - 'data/foundation-architecture/**'
       - 'data/math-foundation/**'
       - 'data/pending_claims.json'
       - 'views/**'
       - 'schemas/foundation/**'
+      - 'schemas/governance/**'
       - 'schemas/operations/**'
       - 'schemas/architecture/**'
       - 'reports/foundation-architecture/**'
@@ -79,7 +88,8 @@ on:
       - 'tests/test_iteration_sync.py'
       - 'tools/validate_human_front_door.py'
       - 'tests/test_human_front_door.py'
-      - 'tests/test_pages_deploy_gate.py'
+      - 'tests/test_human_visibility_gate.py'
+      - 'tests/test_self_correction_engine.py'
       - 'tests/test_stage_snapshot_publication.py'
       - 'tests/stage_snapshot_responsibility_actor_cases.json'
       - 'tools/operations/stage_snapshot_contract.py'
@@ -88,7 +98,9 @@ on:
       - 'data/operations/stage-snapshots.json'
       - 'docs/generated/recent-stage-results.md'
       - 'docs/operations/stage-snapshot-publication.md'
-      - '.github/workflows/pages.yml'
+      - 'HUMAN-READING.md'
+      - 'RESULTS/**'
+      - 'data/governance/**'
       - 'docs/ai-assistant-usage-reference.md'
       - 'ITERATION.md'
       - 'README.md'
@@ -133,6 +145,11 @@ jobs:
       - run: python3 tools/foundation/run_function_asset_math_checks.py --check
       - run: python3 tools/foundation/adjudicate_nonfunction_claims.py --check
       - run: python3 tools/foundation/validate_nonfunction_claim_closure.py
+      - name: Validate human result census and self-correction products
+        run: |
+          python3 tools/governance/build_human_results.py --check
+          python3 tools/governance/run_self_correction.py --check
+          python3 tools/governance/validate_human_visibility.py
       - run: python3 tools/foundation/verify_core_claims.py --check
       - run: python3 tools/foundation/verify_079.py --check
       - run: python3 tools/foundation/validate_080_adjudications.py
@@ -194,7 +211,7 @@ jobs:
       - run: python3 -m unittest tests.test_iteration_sync -v
       - run: python3 -m unittest tests.test_human_front_door -v
       - run: python3 -m unittest tests.test_change_propagation -v
-      - run: python3 -m unittest tests.test_pages_deploy_gate -v
+      - run: python3 -m unittest tests.test_human_visibility_gate tests.test_self_correction_engine -v
       - run: python3 -m unittest tests.test_stage_snapshot_publication -v
       - run: python3 -m unittest tests.test_era_resolver_generalization tests.test_generated_output_authority -v
       - run: python3 -m unittest tests.test_phase_e_candidate -v

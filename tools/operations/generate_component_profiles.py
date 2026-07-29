@@ -18,7 +18,7 @@ LOCAL_VALIDATOR_CONTRACTS = {
     "no_l7": [("python3", "tools/validate_human_front_door.py")],
     "no_totality_proof": [("python3", "tools/validate_human_front_door.py")],
     "no_truth_upgrade": [("python3", "tools/validate_human_front_door.py")],
-    "pages_pipeline": [("python3", "-m", "unittest", "tests.test_pages_deploy_gate", "tests.test_tracked_symlink_gate")],
+    "human_knowledge_surfaces": [("python3", "tools/governance/validate_human_visibility.py")],
     "propagation_calculator": [("python3", "-m", "unittest", "tests.test_change_propagation", "tests.test_diff_coverage_gate")],
     "system_map": [("python3", "tools/generate_interactive_system_map.py", "--check")],
     "system_map_projection": [("python3", "tools/generate_interactive_system_map.py", "--check")],

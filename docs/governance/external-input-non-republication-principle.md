@@ -43,7 +43,7 @@
 
 ## 与出版门禁的关系
 
-本原则由 `tools/governance/fail_closed_publication_gate.py` 强制执行。门禁决策为 `BLOCK` 的材料不得进入任何公开表面（README、Pages、文档）。门禁决策为 `CONDITIONAL_PASS` 的材料仅允许引用和简短摘录，不得包含原文。
+本原则由 `tools/governance/fail_closed_publication_gate.py` 强制执行。门禁决策为 `BLOCK` 的材料不得进入任何公开表面（README、`HUMAN-READING.md`、`RESULTS/` 或其他文档）。门禁决策为 `CONDITIONAL_PASS` 的材料仅允许引用和简短摘录，不得包含原文。
 
 ## 历史整改
 

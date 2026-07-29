@@ -1,12 +1,14 @@
 # Changelog
 
-- Q32I method 1.3.0 and registry-derived system map 0.3.0 are Current/Closed after third independent exact-head acceptance, ordinary merge of PR #62, final-main validation, production Pages deployment and live verification. Method 1.2.0/map 0.2.0 are Historical; 1.1.0/0.1.0 are earlier Historical. The repository-scoped execution contract does not prove real-world causality, truth, value or completeness; Q33 is closed out as Current via the I2 lifecycle closeout (PR #63 merged, external attestation recorded in 1111), and Q34—Q40 remain not started.
+- Historical Q32I closeout: method 1.3.0 and registry-derived system map 0.3.0 completed the exact-head, merge and external checks required by that contract. They are now Historical under Current method 1.4.0/map 0.4.0. Task 101 retired the former separate deployed reading surface while preserving its old evidence.
 
 - Historical candidate entry: Q32I proposed iteration method 1.3.0 and system-map projection 0.3.0 as OPEN Draft candidates. The repaired candidate separates authority from execution capability, limits automatic profiles to real deterministic producers, adds a unified zero-write apply preflight, and restores the complete supported repository byte/type/symlink/mode state on rollback. Production profile, rollback, and preflight probes are now regressions. At that candidate commit, method 1.2.0 and map 0.2.0 remained Current and review was pending; the newer closeout entry above supersedes that lifecycle state.
 
 - 121Q31T closes Zhiyuan Writing Method 0.4.0 and the JSON-generated, tested, clickable whole-system SVG interface as Current. The typed external-input / ignition-increment pool preserves source and claim boundaries; 0.3.0 remains historical, Q29R remains bound to 0.3.0, and neither interface adds L7, a truth layer, or a completeness claim.
 
 ## Unreleased
+
+- 2026-07-29: Human-readable Knowledge Surfaces and Self-Correction Engine R1 retires the independent deployed reader and migrates its system-map content into repository Markdown/SVG. README, `HUMAN-READING.md` and `RESULTS/` expose current conclusions, corrections, open questions, research/article outcomes and function/nonfunction adjudication directly. A deterministic 165-source historical result ledger, Claim Delta, impact analysis, evidence-lineage delta, ten audit rules, remediation plan, append-only history and machine/human counterpart gate now run in Foundation CI. Automated checks remain repository governance and do not adjudicate external truth.
 
 - 2026-07-29: Historical Function Asset Deep Adjudication and Registry Closure R1 expands the task-98 scanner to executable declarations and searchable formula candidates, assigns every discovery one twelve-class canonical identity card, records M/E maturity, proof/empirical obligations, counterexamples, direct/transitive dependencies and one final disposition, and closes unresolved semantics through explicit quarantine. Public strong claims receive lineage records and renamed-conclusion rebound checks. Closure is repository governance, not completion of all proofs, external experiments or peer review.
 

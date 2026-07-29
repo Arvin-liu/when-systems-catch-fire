@@ -60,10 +60,10 @@
       "residue": []
     },
     {
-      "relation_id": "incremental_builds_pages",
+      "relation_id": "incremental_builds_human_results",
       "source": "incremental_execution",
-      "target": "pages_pipeline",
-      "label": "候选物化进入 Draft artifact",
+      "target": "human_knowledge_surfaces",
+      "label": "候选物化必须同步机器与人类结果",
       "relation_class": "publishes",
       "relation_domain": "repository_dependency",
       "trigger_dimensions": [
@@ -1085,10 +1085,10 @@
       "residue": []
     },
     {
-      "relation_id": "pages_depends_readme",
+      "relation_id": "human_results_depend_on_readme",
       "source": "readme",
-      "target": "pages_pipeline",
-      "relation_class": "deployment_depends_on",
+      "target": "human_knowledge_surfaces",
+      "relation_class": "publishes",
       "relation_domain": "repository_dependency",
       "trigger_dimensions": [
         "deployment_rendering",
@@ -1102,16 +1102,16 @@
       "required_evaluation": true,
       "creates_sync_obligation": true,
       "map_visible": false,
-      "label": "README-derived Pages",
-      "declaration_source": ".github/workflows/pages.yml",
-      "claim_ceiling": "deployment dependency only",
+      "label": "README 与人类结果同步",
+      "declaration_source": "HUMAN-READING.md",
+      "claim_ceiling": "repository navigation and readability dependency only",
       "residue": []
     },
     {
-      "relation_id": "projection_publishes_pages",
+      "relation_id": "projection_publishes_repository_svg",
       "source": "system_map_projection",
-      "target": "pages_pipeline",
-      "relation_class": "deployment_depends_on",
+      "target": "human_knowledge_surfaces",
+      "relation_class": "publishes",
       "relation_domain": "repository_dependency",
       "trigger_dimensions": [
         "deployment_rendering",
@@ -1127,9 +1127,9 @@
       "required_evaluation": true,
       "creates_sync_obligation": true,
       "map_visible": false,
-      "label": "Pages 构建",
-      "declaration_source": ".github/workflows/pages.yml",
-      "claim_ceiling": "deployment dependency only",
+      "label": "仓库 SVG 人类入口",
+      "declaration_source": "docs/architecture/interactive-system-map.md",
+      "claim_ceiling": "repository navigation projection only",
       "residue": []
     },
     {
@@ -1277,7 +1277,7 @@
     {
       "relation_id": "copyright_gov_to_publication_chain",
       "source": "copyright_governance_publication_gate_validator",
-      "target": "pages_pipeline",
+      "target": "human_knowledge_surfaces",
       "relation_class": "validates",
       "relation_domain": "repository_dependency",
       "trigger_dimensions": [
@@ -1290,7 +1290,7 @@
       "required_evaluation": true,
       "creates_sync_obligation": true,
       "map_visible": false,
-      "label": "Publication gate validates pages pipeline output",
+      "label": "Publication gate validates human-readable output",
       "declaration_source": "121Q33-request",
       "claim_ceiling": "Publication gate is a repository-level fail-closed check; does not prove external legality",
       "residue": []
@@ -1493,9 +1493,9 @@
       "residue": []
     },
     {
-      "relation_id": "stage_snapshot_builds_pages",
+      "relation_id": "stage_snapshot_builds_human_results",
       "source": "stage_snapshot_publication",
-      "target": "pages_pipeline",
+      "target": "human_knowledge_surfaces",
       "relation_class": "publishes",
       "relation_domain": "repository_dependency",
       "trigger_dimensions": [
@@ -1511,9 +1511,9 @@
       "required_evaluation": true,
       "creates_sync_obligation": true,
       "map_visible": false,
-      "label": "README 派生 Pages",
+      "label": "阶段快照同步人类结果",
       "declaration_source": "docs/operations/stage-snapshot-publication.md",
-      "claim_ceiling": "candidate Pages artifact only before merge; production deploy remains main-only",
+      "claim_ceiling": "repository human-readable candidate summary only; no lifecycle promotion",
       "residue": []
     },
     {
@@ -1607,12 +1607,12 @@
     {
       "component_ids": [
         "system_map_projection",
-        "pages_pipeline"
+        "human_knowledge_surfaces"
       ],
       "path_patterns": [
-        "pages/generated/"
+        "docs/generated/ignition-system-map.svg"
       ],
-      "rationale": "Generated Pages artifacts are both a deployment output and a system-map projection product."
+      "rationale": "The generated repository SVG is both a human-readable navigation asset and a system-map projection product."
     },
     {
       "component_ids": [

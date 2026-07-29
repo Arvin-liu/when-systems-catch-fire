@@ -79,6 +79,14 @@ class DiffCoverageGateTests(unittest.TestCase):
             cls.live_repo_files = {p for p in live_tree.stdout.strip().split(chr(10)) if p}
         else:
             cls.live_repo_files = set()
+        cls.era_repo_files = set()
+        if cls.era_ref:
+            era_tree = subprocess.run(
+                ["git", "ls-tree", "-r", "--name-only", cls.era_ref],
+                capture_output=True, text=True, cwd=str(ROOT),
+            )
+            if era_tree.returncode == 0:
+                cls.era_repo_files = {p for p in era_tree.stdout.strip().split(chr(10)) if p}
 
     def test_all_diff_paths_covered(self):
         if not self.git_available:
@@ -104,7 +112,11 @@ class DiffCoverageGateTests(unittest.TestCase):
         # post-date the era snapshot). Era-correctness of *coverage* is enforced by
         # test_all_diff_paths_covered (era-bounded diff); this test only guards against declaring
         # paths that do not exist in the repo at all.
-        extra = sorted((seeds | generated) - self.live_repo_files)
+        # Frozen requests may legitimately name files later retired from the
+        # current tree. They must exist in either the current tree or the sealed
+        # era tree; this preserves history without requiring obsolete products
+        # such as Pages to remain maintained forever.
+        extra = sorted((seeds | generated) - (self.live_repo_files | self.era_repo_files))
         self.assertEqual(extra, [], f"Declared paths not in repo: {extra}")
 
     def test_seed_generated_disjoint(self):
@@ -117,8 +129,8 @@ class DiffCoverageGateTests(unittest.TestCase):
         for path in self.request["changed_paths"]:
             if "://" not in path:
                 self.assertTrue(
-                    (ROOT / path).exists(),
-                    f"Declared seed path does not exist: {path}",
+                    (ROOT / path).exists() or path in self.era_repo_files,
+                    f"Declared seed path exists neither now nor in its sealed era: {path}",
                 )
 
     def test_every_generated_output_exists_in_repo(self):

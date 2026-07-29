@@ -10,11 +10,11 @@ Earlier Historical: `1.1.0` (synchronization registry closure; superseded by 1.2
 
 Q32I lifecycle: Accepted, Merged by PR #62, Current and Closed. Q33 launch packet ready externally; Q33 and Q34—Q40 not started.
 
-1.4.0 lifecycle: Current. Its snapshot record (`data/operations/stage-snapshots.json` and its deterministic README/Pages projection) entered Main via the PR #134 merge (R3 exact-head acceptance of the repair stack + R2 main closeout, merge commit `f9abf90e`) and the method was promoted to Current by controlled sync R1-20260726; the R5-A snapshot is `PUBLISHED_SNAPSHOT` but still not Accepted/Current/Activated. The `PUBLISHED_SNAPSHOT` transition was executed by that same controlled sync.
+1.4.0 lifecycle: Current. Its snapshot record (`data/operations/stage-snapshots.json` and deterministic repository Markdown projection) entered Main via the PR #134 merge (R3 exact-head acceptance of the repair stack + R2 main closeout, merge commit `f9abf90e`) and the method was promoted to Current by controlled sync R1-20260726; the R5-A snapshot is `PUBLISHED_SNAPSHOT` but still not Accepted/Current/Activated. The `PUBLISHED_SNAPSHOT` transition was executed by that same controlled sync.
 
 Status: canonical operation method. This method governs how 点火 changes itself. It is not a truth layer, proof system, value charter, causal model or substitute for external evidence.
 
-Current lifecycle: method 1.3.0 entered `main` through Q32I third independent exact-head acceptance, PR #62 ordinary merge, final-main validation, production Pages deploy and live closeout. Method 1.2.0 remains Historical.
+Historical lifecycle evidence: method 1.3.0 entered `main` through Q32I third independent exact-head acceptance, PR #62 ordinary merge and the external checks required at that historical time. Method 1.2.0 remains Historical. Task 101 retires the separate deployed reading surface from current and future gates without deleting its historical evidence.
 
 ## 0. Read This Boundary First
 
@@ -118,9 +118,9 @@ Not every registered surface must change. Every applicable surface must receive 
 
 Every method 1.1.0 iteration declares state-transition subjects, prior/proposed states, changed dimensions, source references and a claim boundary. Required assessments are derived from the synchronization registry and follow its declared dependency/derivation relations until the closure has no missing decision.
 
-Human-visible entrances are first-class project surfaces. Capability, identity, current-state, usage, handoff or deployment changes must assess `README.md`, the GitHub Pages source/workflow and rendered homepage, `docs/project-current-state.md`, `SUMMARY.md`, `docs/USAGE.md`, `docs/ai-assistant-usage-reference.md`, `CHANGELOG.md`, `docs/VERSIONING.md`, `AI-START-HERE.md`, `AI-HANDOFF.md`, `llms.txt` and relevant operation templates whenever the registry triggers them.
+Human-visible entrances are first-class project surfaces. Capability, identity, current-state, usage, handoff or rendering changes must assess `README.md`, `HUMAN-READING.md`, the relevant `RESULTS/` pages, `docs/project-current-state.md`, `SUMMARY.md`, `docs/USAGE.md`, `docs/ai-assistant-usage-reference.md`, `CHANGELOG.md`, `docs/VERSIONING.md`, `AI-START-HERE.md`, `AI-HANDOFF.md`, `llms.txt` and relevant operation templates whenever the registry triggers them.
 
-Derived and external surfaces remain distinct from repository sources. GitHub Pages is derived from `README.md` through `.github/workflows/pages.yml`, but its built artifact and production rendering require their own evidence. A local validator may require an external policy; it must always report that live external truth was not locally verified.
+Derived and external surfaces remain distinct from repository sources. Current human result projections are repository files generated from declared machine sources and checked for freshness; external systems, if a future task introduces one, require a separate registry entry and evidence. Local validation never proves an undeclared live external state.
 
 ### 5.3 Completion Levels
 
@@ -135,7 +135,7 @@ Implementation completion alone cannot make a task ready, accepted, merged, curr
 - `Ready for GPT verification` requires implementation complete, repository synchronization complete, exact candidate-head CI/build evidence, an inspectable derived artifact where required, Draft lifecycle, and no unresolved `ready` blocker.
 - `Accepted` requires independent acceptance of that exact Ready HEAD after fresh PR/HEAD/review/CI/build re-fetch, plus satisfaction of every triggered `accepted` blocker. A `post_merge_external_render_attestation` surface that blocks only `current`/`closed` does not block acceptance.
 - `Merged` requires the accepted exact HEAD to enter `main`, ancestry verification, and every triggered `merged` blocker. Merged is not automatically Current.
-- `Current` and `Closed` require merged lifecycle, truthful post-merge repository closeout, no unresolved residue, and individual attestation of every triggered external surface whose `blocks` includes the evaluated gate. For Pages this means a main-sourced deployment and live rendered-homepage fetch.
+- `Current` and `Closed` require merged lifecycle, truthful post-merge repository closeout, no unresolved residue, and individual attestation of every triggered external surface whose `blocks` includes the evaluated gate. Task 101 declares no separate deployed reading surface; repository Markdown freshness and clean-clone execution are the current reading-layer gates.
 
 Each triggered external surface has its own `external_attestations` entry with stage, status, authority and evidence-reference policy. One global boolean cannot substitute for missing or pending surface records. Repository-local validation always leaves live-state verification false. Exact deployment/run identifiers remain in the mutable PR body and independent 1111 receipt.
 
@@ -143,7 +143,7 @@ Each triggered external surface has its own `external_attestations` entry with s
 
 ### 5.4 Front-Door Synchronization Is a Required Propagation Surface (not memory-dependent)
 
-`README.md`, `docs/project-current-state.md` and the rendered Pages homepage are first-class project surfaces, not optional polish. Whenever an iteration changes project form, a Current capability, the Current method, governance, a core boundary, a primary entry, or the externally-comprehensible state, these front doors MUST enter the propagation closure as `CHANGE` (or a validator-enforced `NO_CHANGE_WITH_REASON` / `NonImpactProof`). They must not rely on Agent memory or human diligence.
+`README.md`, `HUMAN-READING.md`, `RESULTS/` and `docs/project-current-state.md` are first-class project surfaces, not optional polish. Whenever an iteration changes project form, a Current capability, the Current method, governance, a core boundary, a primary entry, or the externally-comprehensible state, these front doors MUST enter the propagation closure as `CHANGE` (or a validator-enforced `NO_CHANGE_WITH_REASON` / `NonImpactProof`). They must not rely on Agent memory or human diligence.
 
 Hard invariants:
 
@@ -198,7 +198,7 @@ Run the narrowest relevant ladder first, then expand:
 
 No failed lower rung can be repaired by a higher-rung narrative.
 
-For Draft Pages work, build and inspect the exact-head artifact without deploying the unmerged branch to the production homepage. Production Pages deployment and live fetch are post-merge external synchronization obligations.
+For Draft knowledge-surface work, build and inspect the exact-head machine and human artifacts. After merge, rerun them from current `main` and a clean clone; a repository-local pass still does not prove external substantive claims.
 
 ## 10. State Machine
 
@@ -279,7 +279,7 @@ A 1.2.0 manifest binds the request and four generated products, seed paths and c
 
 Backward compatibility is explicit: historical 1.0.0 manifests remain valid, 1.1.0 manifests retain synchronization closure semantics, and only 1.2.0 manifests require the new `propagation_closure` binding.
 
-## 15. Method 1.3.0 Current: Incremental Execution
+## 15. Method 1.3.0 Historical: Incremental Execution
 
 Q32I added a repository-only execution layer on top of Historical 1.2.0. It converts a validated propagation plan into structured component decisions, complete NonImpactProof objects, profile-registered argv execution, identity-bound local cache decisions, unified validation, rollback and recovery materials. Authority classification is independent of local execution capability; apply is authorized only after the unified fail-closed preflight, and rollback success requires exact repository byte/type/symlink/mode restoration. The authoritative contract is `docs/architecture/incremental-execution.md`.
 
@@ -297,7 +297,7 @@ The publication states are `UNPUBLISHED`, `PR_VISIBLE`, `PUBLISHED_SNAPSHOT`, `S
 
 The authority chain is:
 
-`stage snapshot request → independent remote/evidence check → stage-snapshot registry → fail-closed validator → deterministic README/Pages projection → exact-head CI and external receipt`
+`stage snapshot request → independent remote/evidence check → stage-snapshot registry → fail-closed validator → deterministic repository Markdown projection → exact-head CI and external receipt`
 
 The lightweight gate validates the snapshot claim and publication boundary, not the underlying candidate capability. It rejects identity drift, missing evidence, duplicate IDs, removed limitations, capability registration, privacy/secret exposure, disguised rejection, stale projections, broken succession and responsibility transfer. Final responsibility is a positive, reference-based contract: accountable fields contain only an `actor_ref` resolved to an ACTIVE `PERSON`/`ORGANIZATION` in the controlled actor registry, whose entry supplies stable identity and accountability/contact evidence. Both public Schemas derive their allowed references from that registry and runtime resolves the same source; either-surface disagreement blocks. Execution agents and workflows are separate technical records and can never substitute for final responsibility. Responsibility changes require a new snapshot revision and superseding responsibility record. Revision, supersession and withdrawal preserve history.
 
