@@ -681,7 +681,7 @@ class ChangePropagationTests(unittest.TestCase):
         seed_paths = set(request["changed_paths"])
         covered = seed_paths | generated_outputs
         # Simulate an attacker removing a path from changed_paths
-        fake_seeds = seed_paths - {"tests/test_pages_deploy_gate.py"}
+        fake_seeds = seed_paths - {"tests/test_change_propagation.py"}
         fake_covered = fake_seeds | generated_outputs
         base = request["base_identity"]
         result = _sp.run(
@@ -692,7 +692,7 @@ class ChangePropagationTests(unittest.TestCase):
         gaps = diff_files - fake_covered
         # The gap must be non-empty (the removed path should show up)
         self.assertTrue(len(gaps) > 0, "removing a seed should create a coverage gap")
-        self.assertIn("tests/test_pages_deploy_gate.py", gaps)
+        self.assertIn("tests/test_change_propagation.py", gaps)
 
 
     # ── F6: generated-output authority adversarial tests ─────────────────────
@@ -1016,7 +1016,7 @@ class ChangePropagationTests(unittest.TestCase):
         diff_set = set(diff_files)
         critical_assets = [
             "data/operations/generated-output-authority.json",
-            "tests/test_pages_deploy_gate.py",
+            "tests/test_human_visibility_gate.py",
             "tools/operations/validate_generated_output_authority.py",
         ]
         for asset in critical_assets:
