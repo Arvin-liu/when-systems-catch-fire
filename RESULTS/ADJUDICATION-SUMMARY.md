@@ -6,10 +6,10 @@
 
 ## 函数资产
 
-任务 102 纳入新语料并排除知识体验生成投影回灌后重算，当前登记 **5,662** 个 canonical identity card，主要分布如下：
+任务 102 纳入新语料并排除知识体验生成投影回灌后重算，当前登记 **5,663** 个 canonical identity card，主要分布如下：
 
 - `UNRESOLVED_IDENTITY`：3,273；
-- `ALGORITHM_OR_WORKFLOW`：1,849；
+- `ALGORITHM_OR_WORKFLOW`：1,850；
 - `RELATION_OR_CONSTRAINT`：227；
 - `CONJECTURE_OR_RESEARCH_CANDIDATE`：122；
 - `PARAMETRIC_MATHEMATICAL_MODEL` 与 `SCORING_OR_INDEX_FUNCTION`：各 72；
@@ -21,18 +21,18 @@
 
 ## 非函数断言
 
-任务 102 对新增源语料重新运行任务 100 生成器并排除生成投影，当前登记 **17,331** 个 canonical claim。主要类别包括：
+任务 102 对新增源语料重新运行任务 100 生成器并排除生成投影，当前登记 **17,333** 个 canonical claim。主要类别包括：
 
-- 未解析断言 5,421；
-- 数学/定理型 2,726；
+- 未解析断言 5,423；
+- 数学/定理型 2,727；
 - 跨域对应 2,178；
 - 机制/因果 2,100；
 - 经验/文献 1,950；
 - 本体/形而上 836；
-- 不可能性/普遍断言 700；
+- 不可能性/普遍断言 699；
 - 解释框架 474；其余为描述、规律、规范和预测类。
 
-处置上，6,474 项 `HISTORICAL_ONLY`，2,518 项 `QUARANTINED_AMBIGUOUS`，另有 3,054 项等待证明、文献或经验检验。5 项无支持强结论保持撤回；活动中的结论回弹为 0。闭合语义仍只是“有处置或 quarantine”。
+处置上，6,474 项 `HISTORICAL_ONLY`，2,520 项 `QUARANTINED_AMBIGUOUS`，另有 3,054 项等待证明、文献或经验检验。5 项无支持强结论保持撤回；活动中的结论回弹为 0。闭合语义仍只是“有处置或 quarantine”。
 
 具体入口：[claim registry](../data/foundation/nonfunction-claims/claim-registry.jsonl) · [依赖图](../data/foundation/nonfunction-claims/dependency-graph.jsonl) · [证据谱系](../data/foundation/nonfunction-claims/evidence-lineage.jsonl) · [推断风险](../data/foundation/nonfunction-claims/inference-risk-report.jsonl) · [回弹报告](../data/foundation/nonfunction-claims/conclusion-rebound-report.jsonl) · [人类索引](../docs/foundation/nonfunction-claim-adjudication-index.md)
 

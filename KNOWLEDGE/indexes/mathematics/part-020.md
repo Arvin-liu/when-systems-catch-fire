@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [用途：验证“学科理论核卡片”模板是否可用于后续学科深跑。](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-0a3ba19869e38587 / 用途：验证“学科理论核卡片”模板是否可用于后续学科深跑。
+  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
+  - 依赖：—；被引用：—
 - [电弱统一规范破缺函数](../../ASSET-CARDS.md#asset-d187)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：D187 / 电弱统一规范破缺函数
@@ -2499,8 +2504,3 @@
   - 可搜索名称：NFC-30c04fc697f447f7 / 统一函数总表/0347-D311-僵尸态函数.md
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：D311；被引用：—
-- [统一函数总表/0348-D312-正反馈噪声放大函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-56e140c0d417731d / 统一函数总表/0348-D312-正反馈噪声放大函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D312；被引用：—

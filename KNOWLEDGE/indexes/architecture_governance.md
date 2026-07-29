@@ -14,7 +14,7 @@
 - [第 008 片](./architecture_governance/part-008.md)：3501—4000；manifest\["synchronization_closure"\]\["live_external_surfaces_verified"\] = True → return \[t for t in self._store.values() if t\['artifact_id'\] == artifact_id\]
 - [第 009 片](./architecture_governance/part-009.md)：4001—4500；return artifact → UNIVERSAL_TERM = re.compile(r"(所有\|任何\|普遍\|必然\|唯一\|完全\|不可能\|all\\b\|any\\b\|universal\|necessarily\|unique\|impossible)", re.I)
 - [第 010 片](./architecture_governance/part-010.md)：4501—5000；Unknown paths, unresolved residue, missing profiles or changes to registry, topology, profile policy, generator, planner → \| 教育学 \| 理论合理性、与已知教育学知识不冲突、可证伪性 \| 教育实验验证、长期追踪验证、个体评估验证、多个独立研究验证 \| L1-L2 \| 理论合理性未验证、教育实验不足、缺乏长期追踪、缺乏个体评估、个体教育建议证据不足 \| 中 \|
-- [第 011 片](./architecture_governance/part-011.md)：5001—5500；\| 数据计划 \| `docs/machine_readable_data_plan.md` \| P1 机器可读化设计说明 \| → 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0058-C-58-恒大.md`
-- [第 012 片](./architecture_governance/part-012.md)：5501—6000；原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0059-C-59-谷歌20%时间.md` → 四种基本力统一；
-- [第 013 片](./architecture_governance/part-013.md)：6001—6500；四阶段严格串行验证 — 不能跳过Stage2直接到Stage3-rcross=0时D84三条路径失效 → 社会科学界通过实证研究、理论分析、比较研究等方法研究社会信任形成问题。主流观点认为社会信任是由制度、文化、互动等多重因素共同塑造。
-- [第 014 片](./architecture_governance/part-014.md)：6501—6882；社会科学：数据不足或冲突、解释争议很大、缺乏统计显著性检验、缺乏反事实识别 → ：晋级门槛 + 初版验证器。machine_eligible=0/12，但验证器字段与 Schema 不一致。
+- [第 011 片](./architecture_governance/part-011.md)：5001—5500；\| 数据计划 \| `docs/machine_readable_data_plan.md` \| P1 机器可读化设计说明 \| → 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0057-C-57-WeWork.md`
+- [第 012 片](./architecture_governance/part-012.md)：5501—6000；原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0058-C-58-恒大.md` → 四种基本力统一
+- [第 013 片](./architecture_governance/part-013.md)：6001—6500；四种基本力统一； → 社会科学界的同行审查
+- [第 014 片](./architecture_governance/part-014.md)：6501—6883；社会科学界通过实证研究、理论分析、比较研究等方法研究社会信任形成问题。主流观点认为社会信任是由制度、文化、互动等多重因素共同塑造。 → ：晋级门槛 + 初版验证器。machine_eligible=0/12，但验证器字段与 Schema 不一致。

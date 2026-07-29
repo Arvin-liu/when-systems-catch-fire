@@ -599,14 +599,14 @@
   - 可搜索名称：NFC-51e1d76eaac1f525 / 对 THEOREM、AXIOM、ISOMORPHISM、CAUSAL 或 PROVED 逐项检查声明理论、形式命题、映射或 SCM、证明工件、外部证据、适用范围和可重放反例。门禁不通过时降级并保留 legacy wording。
   - 来源：`docs/AI-PROMPT-TEMPLATES.md`
   - 依赖：—；被引用：—
-- [对任务 102 排除生成投影回灌后重算的 5,662 个历史函数资产建立 identity card、M/E 双轴、义务、依赖、处置与 quarantine。](../../ASSET-CARDS.md#asset-nfc-76c11db607881c11)
+- [对任务 102 排除生成投影回灌后重算的 5,663 个历史函数资产建立 identity card、M/E 双轴、义务、依赖、处置与 quarantine。](../../ASSET-CARDS.md#asset-nfc-85688f0030875f4e)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-76c11db607881c11 / 对任务 102 排除生成投影回灌后重算的 5,662 个历史函数资产建立 identity card、M/E 双轴、义务、依赖、处置与 quarantine。 / - 对任务 102 排除生成投影回灌后重算的 5,662 个历史函数资产建立 identity card、M/E 双轴、义务、依赖、处置与 quarantine。
+  - 可搜索名称：NFC-85688f0030875f4e / 对任务 102 排除生成投影回灌后重算的 5,663 个历史函数资产建立 identity card、M/E 双轴、义务、依赖、处置与 quarantine。 / - 对任务 102 排除生成投影回灌后重算的 5,663 个历史函数资产建立 identity card、M/E 双轴、义务、依赖、处置与 quarantine。
   - 来源：`docs/project-current-state.md`
   - 依赖：—；被引用：—
-- [对同次重算的 17,331 个非函数断言建立类别、来源、证据谱系、十三道门禁、依赖、M/E、处置与公开表述上限。](../../../docs/project-current-state.md)
+- [对同次重算的 17,333 个非函数断言建立类别、来源、证据谱系、十三道门禁、依赖、M/E、处置与公开表述上限。](../../../docs/project-current-state.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-20d8bac45233b33f / 对同次重算的 17,331 个非函数断言建立类别、来源、证据谱系、十三道门禁、依赖、M/E、处置与公开表述上限。
+  - 可搜索名称：NFC-7fc16f0495aabb8c / 对同次重算的 17,333 个非函数断言建立类别、来源、证据谱系、十三道门禁、依赖、M/E、处置与公开表述上限。
   - 来源：`docs/project-current-state.md`
   - 依赖：—；被引用：—
 - [对已被数学界证明的定理，应区分"外部已证明"和"点火框架只是重新解释其结构"](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
@@ -1554,9 +1554,9 @@
   - 可搜索名称：NFC-6736ca2d0a2ace37 / 救援函数表：`/Users/zhiyuan/Agent 工作区/Codespace-Rescue/Unified-Case-Table/统一函数总表_Codespace救援.md`
   - 来源：`outputs/audit/codespace-rescue-two-tables-diff-audit-20260708.md`
   - 依赖：—；被引用：—
-- [数学/定理型 2,726；](../../../RESULTS/ADJUDICATION-SUMMARY.md)
+- [数学/定理型 2,727；](../../../RESULTS/ADJUDICATION-SUMMARY.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-64460637f4b49fd0 / 数学/定理型 2,726；
+  - 可搜索名称：NFC-80fb82f907412eff / 数学/定理型 2,727；
   - 来源：`RESULTS/ADJUDICATION-SUMMARY.md`
   - 依赖：—；被引用：—
 - [数学上未完成证明](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)

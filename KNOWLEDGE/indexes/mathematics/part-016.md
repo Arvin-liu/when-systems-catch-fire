@@ -774,9 +774,9 @@
   - 可搜索名称：NFC-4bffdeb0ab79df8e / 任务 100：把治理扩展到全语料非函数断言，闭合证据谱系并阻断结构性回弹。
   - 来源：`RESULTS/LATEST.md`
   - 依赖：—；被引用：—
-- [任务 102 纳入新语料并排除生成投影回灌后，历史函数资产注册表登记了 **5,662** 个 canonical identity card；其中 **3,887** 个仍处于显式 quarantine 或 pending。登记闭合只表示](../../../README.md)
+- [任务 102 纳入新语料并排除生成投影回灌后，历史函数资产注册表登记了 **5,663** 个 canonical identity card；其中 **3,887** 个仍处于显式 quarantine 或 pending。登记闭合只表示](../../../README.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-1ffb24d05c740c37 / 任务 102 纳入新语料并排除生成投影回灌后，历史函数资产注册表登记了 **5,662** 个 canonical identity card；其中 **3,887** 个仍处于显式 quarantine 或 pending。登记闭合只表示
+  - 可搜索名称：NFC-c589dcc7e65e264f / 任务 102 纳入新语料并排除生成投影回灌后，历史函数资产注册表登记了 **5,663** 个 canonical identity card；其中 **3,887** 个仍处于显式 quarantine 或 pending。登记闭合只表示
   - 来源：`README.md`
   - 依赖：—；被引用：—
 - [任务 98 对 formal main 的全部 Git 跟踪文本源执行了确定性扫描。扫描范围包含函数与案例表、Foundation、theory kernels、投影矩阵、元函数、执行器、README/SUMMARY/USAGE、代码以及](../../../docs/foundation/historical-function-census.md)

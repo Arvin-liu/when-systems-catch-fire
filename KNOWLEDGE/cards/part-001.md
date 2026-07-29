@@ -304,6 +304,26 @@
 - **主题：** `ARCHITECTURE_GOVERNANCE`
 - **可搜索名称：** `NFC-156313cd333787a2`, `知识体验层的人类结果、搜索与 Claim Delta 投影；`, `3. 知识体验层的人类结果、搜索与 Claim Delta 投影；`
 
+<a id="asset-nfc-187e985133669a56"></a>
+## 任务 102 纳入新语料并排除知识体验生成投影回灌后重算，当前登记 **5,663** 个 canonical identity card，主要分布如下：
+
+- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-187e985133669a56` · [RESULTS/ADJUDICATION-SUMMARY.md](../../RESULTS/ADJUDICATION-SUMMARY.md)
+- **为什么产生：** Expose a materially public CROSS_DOMAIN_CORRESPONDENCE and its correction or evidence boundary.
+- **当前状态：** `RETAINED_AS_STRUCTURAL_METAPHOR`
+- **当前结果：** 任务 102 纳入新语料并排除知识体验生成投影回灌后重算，当前登记 **5,663** 个 canonical identity card，主要分布如下：
+- **双成熟度：** 数学 `M0`；外部证据 `E0`
+- **假设与表述上限：** Analogy or structural metaphor only; no homomorphism, isomorphism or causal identity is established.
+- **未建立：** Do not present registry presence, internal tests, AI agreement or formal appearance as proof, external validation, novelty, peer review or replication.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `RESULTS/ADJUDICATION-SUMMARY.md`
+- **演化历史：** Lineage: NO_NAMED_LINEAGE；Lineage status: CURRENT_SCOPED_RECORD；Reviewer state: SOURCE_TEXT_RULE_ADJUDICATED
+- **最近变化：** Task 100 disposition: RETAINED_AS_STRUCTURAL_METAPHOR
+- **下一步：** No open obligation was recorded.
+- **主题：** `ARCHITECTURE_GOVERNANCE`
+- **可搜索名称：** `NFC-187e985133669a56`, `任务 102 纳入新语料并排除知识体验生成投影回灌后重算，当前登记 **5,663** 个 canonical identity card，主要分布如下：`, `任务 102 纳入新语料并排除知识体验生成投影回灌后重算，当前登记 **5,663** 个 canonical identity card，主要分布如下：`
+
 <a id="asset-nfc-1e10227f1b51e4d0"></a>
 ## Q14 Ignition Atlas maps are versioned derived projections, not a permanent total map and not a second canonical truth so
 
@@ -324,13 +344,13 @@
 - **主题：** `SYSTEMS`
 - **可搜索名称：** `NFC-1e10227f1b51e4d0`, `Q14 Ignition Atlas maps are versioned derived projections, not a permanent total map and not a second canonical truth so`, `- 121Q14 Ignition Atlas maps are versioned derived projections, not a permanent total map and not a second canonical truth source.`
 
-<a id="asset-nfc-20cb8544a0816438"></a>
-## 任务 102 对新增源语料重新运行任务 100 生成器并排除生成投影，当前登记 **17,331** 个 canonical claim。主要类别包括：
+<a id="asset-nfc-2843222a849fe77e"></a>
+## 任务 102 对新增源语料重新运行任务 100 生成器并排除生成投影，当前登记 **17,333** 个 canonical claim。主要类别包括：
 
-- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-20cb8544a0816438` · [RESULTS/ADJUDICATION-SUMMARY.md](../../RESULTS/ADJUDICATION-SUMMARY.md)
+- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-2843222a849fe77e` · [RESULTS/ADJUDICATION-SUMMARY.md](../../RESULTS/ADJUDICATION-SUMMARY.md)
 - **为什么产生：** Expose a materially public CROSS_DOMAIN_CORRESPONDENCE and its correction or evidence boundary.
 - **当前状态：** `RETAINED_AS_STRUCTURAL_METAPHOR`
-- **当前结果：** 任务 102 对新增源语料重新运行任务 100 生成器并排除生成投影，当前登记 **17,331** 个 canonical claim。主要类别包括：
+- **当前结果：** 任务 102 对新增源语料重新运行任务 100 生成器并排除生成投影，当前登记 **17,333** 个 canonical claim。主要类别包括：
 - **双成熟度：** 数学 `M0`；外部证据 `E0`
 - **假设与表述上限：** Analogy or structural metaphor only; no homomorphism, isomorphism or causal identity is established.
 - **未建立：** Do not present registry presence, internal tests, AI agreement or formal appearance as proof, external validation, novelty, peer review or replication.
@@ -342,7 +362,7 @@
 - **最近变化：** Task 100 disposition: RETAINED_AS_STRUCTURAL_METAPHOR
 - **下一步：** No open obligation was recorded.
 - **主题：** `ARCHITECTURE_GOVERNANCE`
-- **可搜索名称：** `NFC-20cb8544a0816438`, `任务 102 对新增源语料重新运行任务 100 生成器并排除生成投影，当前登记 **17,331** 个 canonical claim。主要类别包括：`, `任务 102 对新增源语料重新运行任务 100 生成器并排除生成投影，当前登记 **17,331** 个 canonical claim。主要类别包括：`
+- **可搜索名称：** `NFC-2843222a849fe77e`, `任务 102 对新增源语料重新运行任务 100 生成器并排除生成投影，当前登记 **17,333** 个 canonical claim。主要类别包括：`, `任务 102 对新增源语料重新运行任务 100 生成器并排除生成投影，当前登记 **17,333** 个 canonical claim。主要类别包括：`
 
 <a id="asset-nfc-2b7304f480da70c2"></a>
 ## Iteration method 1.3.0 and system map 0.2.0, 0.3.0 are Historical; method 1.2.0 and map 0.1.0 are earlier Historical, no
@@ -544,26 +564,6 @@
 - **主题：** `MATHEMATICS`, `PHYSICS`, `ARCHITECTURE_GOVERNANCE`
 - **可搜索名称：** `NFC-61546854af53780b`, `点火没有证明“大一统普遍不可能”。模型失败、哥德尔类比、跨域相似或旧编号不能充当普遍 no-go theorem。`, `- 点火没有证明“大一统普遍不可能”。模型失败、哥德尔类比、跨域相似或旧编号不能充当普遍 no-go theorem。`
 
-<a id="asset-nfc-6b0731b0699f3552"></a>
-## 不可能性/普遍断言 700；
-
-- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-6b0731b0699f3552` · [RESULTS/ADJUDICATION-SUMMARY.md](../../RESULTS/ADJUDICATION-SUMMARY.md)
-- **为什么产生：** Expose a materially public IMPOSSIBILITY_OR_UNIVERSAL_CLAIM and its correction or evidence boundary.
-- **当前状态：** `QUARANTINED_AMBIGUOUS`
-- **当前结果：** - 不可能性/普遍断言 700；
-- **双成熟度：** 数学 `M0`；外部证据 `E0`
-- **假设与表述上限：** Unresolved historical or current claim candidate; it cannot appear as current knowledge.
-- **未建立：** Do not present registry presence, internal tests, AI agreement or formal appearance as proof, external validation, novelty, peer review or replication.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `RESULTS/ADJUDICATION-SUMMARY.md`
-- **演化历史：** Lineage: NO_NAMED_LINEAGE；Lineage status: CURRENT_SCOPED_RECORD；Reviewer state: EXPLICITLY_QUARANTINED
-- **最近变化：** Task 100 disposition: QUARANTINED_AMBIGUOUS
-- **下一步：** State typed definitions, assumptions and quantifiers; provide a checkable proof or delimit the statement as conjectural.；Search for countermodels inside and outside the declared model class.
-- **主题：** `ARCHITECTURE_GOVERNANCE`
-- **可搜索名称：** `NFC-6b0731b0699f3552`, `不可能性/普遍断言 700；`, `- 不可能性/普遍断言 700；`
-
 <a id="asset-nfc-6ca935ca1a4f2a8e"></a>
 ## 撤回、降级或隔离的结论，即使换标题、换编号、改成“结构性定理”或藏入摘要，也继续受原 supersession lineage 与 claim ceiling 约束。CI 检查大一统不可能性、单模型失败推出普遍不可能、类比冒充同构、量词膨胀
 
@@ -624,26 +624,6 @@
 - **主题：** `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`
 - **可搜索名称：** `NFC-71e297ca6132aac6`, `函数类资产交接必须保留十二类主身份、M0—M7、E0—E7、十门结果、六层裁决、claim ceiling、证明/实证义务、依赖影响和最终处置。task 99 identity card 优先于自动 census；quarantine 不等`, `函数类资产交接必须保留十二类主身份、M0—M7、E0—E7、十门结果、六层裁决、claim ceiling、证明/实证义务、依赖影响和最终处置。task 99 identity card 优先于自动 census；quarantine 不等于验证。T2、D127、D182—D190、D260 仍以 task 98 correction overlay 为最高专项权威；旧表保留原文。任何“大一统已被证明不可能”或“点火已统一四力”的结论均为撤回/禁止状态。`
 
-<a id="asset-nfc-76c11db607881c11"></a>
-## 对任务 102 排除生成投影回灌后重算的 5,662 个历史函数资产建立 identity card、M/E 双轴、义务、依赖、处置与 quarantine。
-
-- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-76c11db607881c11` · [docs/project-current-state.md](../../docs/project-current-state.md)
-- **为什么产生：** Expose a materially public CROSS_DOMAIN_CORRESPONDENCE and its correction or evidence boundary.
-- **当前状态：** `RETAINED_AS_STRUCTURAL_METAPHOR`
-- **当前结果：** - 对任务 102 排除生成投影回灌后重算的 5,662 个历史函数资产建立 identity card、M/E 双轴、义务、依赖、处置与 quarantine。
-- **双成熟度：** 数学 `M0`；外部证据 `E0`
-- **假设与表述上限：** Analogy or structural metaphor only; no homomorphism, isomorphism or causal identity is established.
-- **未建立：** Do not present registry presence, internal tests, AI agreement or formal appearance as proof, external validation, novelty, peer review or replication.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `docs/project-current-state.md`
-- **演化历史：** Lineage: NO_NAMED_LINEAGE；Lineage status: CURRENT_SCOPED_RECORD；Reviewer state: SOURCE_TEXT_RULE_ADJUDICATED
-- **最近变化：** Task 100 disposition: RETAINED_AS_STRUCTURAL_METAPHOR
-- **下一步：** No open obligation was recorded.
-- **主题：** `MATHEMATICS`
-- **可搜索名称：** `NFC-76c11db607881c11`, `对任务 102 排除生成投影回灌后重算的 5,662 个历史函数资产建立 identity card、M/E 双轴、义务、依赖、处置与 quarantine。`, `- 对任务 102 排除生成投影回灌后重算的 5,662 个历史函数资产建立 identity card、M/E 双轴、义务、依赖、处置与 quarantine。`
-
 <a id="asset-nfc-777640d03f719f40"></a>
 ## 原始命题: 引力的B型门控不是偶然属性，是Φ极小点存在的必要条件。若引力为A型，Φ单调递减，大统一在数学上不可能。T33从"冲突"升级为"必要张力"。 **扩展注释 / Extended Annotation**
 
@@ -684,6 +664,26 @@
 - **主题：** `MATHEMATICS`, `PHYSICS`, `ARCHITECTURE_GOVERNANCE`
 - **可搜索名称：** `NFC-7ba5ae6b5efe40a7`, `点火现有乘法门控模型不能完成数学和物理上充分的四种相互作用统一。四力统一问题本身保持开放。项目没有证明“大一统普遍不可能”，也没有给出物理统一点。`, `点火现有乘法门控模型不能完成数学和物理上充分的四种相互作用统一。四力统一问题本身保持开放。项目没有证明“大一统普遍不可能”，也没有给出物理统一点。`
 
+<a id="asset-nfc-7d491e8a66bfebe6"></a>
+## 不可能性/普遍断言 699；
+
+- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-7d491e8a66bfebe6` · [RESULTS/ADJUDICATION-SUMMARY.md](../../RESULTS/ADJUDICATION-SUMMARY.md)
+- **为什么产生：** Expose a materially public IMPOSSIBILITY_OR_UNIVERSAL_CLAIM and its correction or evidence boundary.
+- **当前状态：** `QUARANTINED_AMBIGUOUS`
+- **当前结果：** - 不可能性/普遍断言 699；
+- **双成熟度：** 数学 `M0`；外部证据 `E0`
+- **假设与表述上限：** Unresolved historical or current claim candidate; it cannot appear as current knowledge.
+- **未建立：** Do not present registry presence, internal tests, AI agreement or formal appearance as proof, external validation, novelty, peer review or replication.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `RESULTS/ADJUDICATION-SUMMARY.md`
+- **演化历史：** Lineage: NO_NAMED_LINEAGE；Lineage status: CURRENT_SCOPED_RECORD；Reviewer state: EXPLICITLY_QUARANTINED
+- **最近变化：** Task 100 disposition: QUARANTINED_AMBIGUOUS
+- **下一步：** State typed definitions, assumptions and quantifiers; provide a checkable proof or delimit the statement as conjectural.；Search for countermodels inside and outside the declared model class.
+- **主题：** `ARCHITECTURE_GOVERNANCE`
+- **可搜索名称：** `NFC-7d491e8a66bfebe6`, `不可能性/普遍断言 699；`, `- 不可能性/普遍断言 699；`
+
 <a id="asset-nfc-7f34ff08b3193964"></a>
 ## 关于“物理大一统不可能”
 
@@ -723,6 +723,26 @@
 - **下一步：** State typed definitions, assumptions and quantifiers; provide a checkable proof or delimit the statement as conjectural.；Search for countermodels inside and outside the declared model class.
 - **主题：** `PHYSICS`, `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`
 - **可搜索名称：** `NFC-82ebe95def5bfab1`, `当前物理边界不变：点火现有门控乘积模型没有统一四种基本相互作用；物理统一问题保持开放。当前模型失败既不证明普遍不可能，也不证明其他路线成功。`, `当前物理边界不变：点火现有门控乘积模型没有统一四种基本相互作用；物理统一问题保持开放。当前模型失败既不证明普遍不可能，也不证明其他路线成功。`
+
+<a id="asset-nfc-85688f0030875f4e"></a>
+## 对任务 102 排除生成投影回灌后重算的 5,663 个历史函数资产建立 identity card、M/E 双轴、义务、依赖、处置与 quarantine。
+
+- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-85688f0030875f4e` · [docs/project-current-state.md](../../docs/project-current-state.md)
+- **为什么产生：** Expose a materially public CROSS_DOMAIN_CORRESPONDENCE and its correction or evidence boundary.
+- **当前状态：** `RETAINED_AS_STRUCTURAL_METAPHOR`
+- **当前结果：** - 对任务 102 排除生成投影回灌后重算的 5,663 个历史函数资产建立 identity card、M/E 双轴、义务、依赖、处置与 quarantine。
+- **双成熟度：** 数学 `M0`；外部证据 `E0`
+- **假设与表述上限：** Analogy or structural metaphor only; no homomorphism, isomorphism or causal identity is established.
+- **未建立：** Do not present registry presence, internal tests, AI agreement or formal appearance as proof, external validation, novelty, peer review or replication.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `docs/project-current-state.md`
+- **演化历史：** Lineage: NO_NAMED_LINEAGE；Lineage status: CURRENT_SCOPED_RECORD；Reviewer state: SOURCE_TEXT_RULE_ADJUDICATED
+- **最近变化：** Task 100 disposition: RETAINED_AS_STRUCTURAL_METAPHOR
+- **下一步：** No open obligation was recorded.
+- **主题：** `MATHEMATICS`
+- **可搜索名称：** `NFC-85688f0030875f4e`, `对任务 102 排除生成投影回灌后重算的 5,663 个历史函数资产建立 identity card、M/E 双轴、义务、依赖、处置与 quarantine。`, `- 对任务 102 排除生成投影回灌后重算的 5,663 个历史函数资产建立 identity card、M/E 双轴、义务、依赖、处置与 quarantine。`
 
 <a id="asset-nfc-921e43a466f461f8"></a>
 ## 非函数型资产交接必须保留 task 100 的规范 ID、原子文本、十三门、证据与复现状态、依赖和下游影响、M/E、处置、公开上限及 supersession lineage。自动发现只生成待裁决记录；一个模型失败不能推出普遍不可能，类比不
@@ -823,26 +843,6 @@
 - **下一步：** State typed definitions, assumptions and quantifiers; provide a checkable proof or delimit the statement as conjectural.；Search for countermodels inside and outside the declared model class.
 - **主题：** `PHYSICS`, `ARCHITECTURE_GOVERNANCE`
 - **可搜索名称：** `NFC-9d5698768267468e`, `撤回把单一门控乘积模型失败推广成“所有大一统理论不可能”的越界结论。`, `- 撤回把单一门控乘积模型失败推广成“所有大一统理论不可能”的越界结论。`
-
-<a id="asset-nfc-a40ec98de633d661"></a>
-## 任务 102 纳入新语料并排除知识体验生成投影回灌后重算，当前登记 **5,662** 个 canonical identity card，主要分布如下：
-
-- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-a40ec98de633d661` · [RESULTS/ADJUDICATION-SUMMARY.md](../../RESULTS/ADJUDICATION-SUMMARY.md)
-- **为什么产生：** Expose a materially public CROSS_DOMAIN_CORRESPONDENCE and its correction or evidence boundary.
-- **当前状态：** `RETAINED_AS_STRUCTURAL_METAPHOR`
-- **当前结果：** 任务 102 纳入新语料并排除知识体验生成投影回灌后重算，当前登记 **5,662** 个 canonical identity card，主要分布如下：
-- **双成熟度：** 数学 `M0`；外部证据 `E0`
-- **假设与表述上限：** Analogy or structural metaphor only; no homomorphism, isomorphism or causal identity is established.
-- **未建立：** Do not present registry presence, internal tests, AI agreement or formal appearance as proof, external validation, novelty, peer review or replication.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `RESULTS/ADJUDICATION-SUMMARY.md`
-- **演化历史：** Lineage: NO_NAMED_LINEAGE；Lineage status: CURRENT_SCOPED_RECORD；Reviewer state: SOURCE_TEXT_RULE_ADJUDICATED
-- **最近变化：** Task 100 disposition: RETAINED_AS_STRUCTURAL_METAPHOR
-- **下一步：** No open obligation was recorded.
-- **主题：** `ARCHITECTURE_GOVERNANCE`
-- **可搜索名称：** `NFC-a40ec98de633d661`, `任务 102 纳入新语料并排除知识体验生成投影回灌后重算，当前登记 **5,662** 个 canonical identity card，主要分布如下：`, `任务 102 纳入新语料并排除知识体验生成投影回灌后重算，当前登记 **5,662** 个 canonical identity card，主要分布如下：`
 
 <a id="asset-nfc-a5870d6c2e430817"></a>
 ## 机器对应物位于 `data/governance/human-results/` 与 `data/governance/self-correction/`。CI 同时检查两层；缺任一层即失败。
