@@ -1,0 +1,22 @@
+{
+  "run_id": "IGNITION-EVIDENCE-PILOT-R1-CROSSREF-DOI-VERIFICATION-RUN-1",
+  "pilot_id": "IGNITION-EVIDENCE-PILOT-R1-CROSSREF-DOI-VERIFICATION",
+  "preregistration_ref": "PREREG-103-R1-CROSSREF",
+  "preregistration_commit": "a4d13a69acea9bcc1480d7dd383929d46813c2f5",
+  "preregistration_commit_timestamp": "2026-07-30T10:25:30Z",
+  "results_generated_at_utc": "2026-07-30T10:53:30Z",
+  "environment": {
+    "python_version": "3.13.12 (managed)",
+    "os": "darwin",
+    "network_access": "live Crossref REST API (api.crossref.org)"
+  },
+  "commands": [
+    "python evidence-program/tools/run_crossref_verification.py --registry data/external-research/104-source-registry.jsonl --out evidence-program/runs/IGNITION-EVIDENCE-PILOT-R1-CROSSREF-DOI-VERIFICATION/source-manifest.jsonl"
+  ],
+  "seeds": {},
+  "deviations_ref": "evidence-program/runs/IGNITION-EVIDENCE-PILOT-R1-CROSSREF-DOI-VERIFICATION/deviation-log.json",
+  "reproduction": {
+    "from_clean_environment": true,
+    "command": "python evidence-program/tools/run_crossref_verification.py --registry data/external-research/104-source-registry.jsonl --out evidence-program/runs/IGNITION-EVIDENCE-PILOT-R1-CROSSREF-DOI-VERIFICATION/source-manifest.jsonl"
+  }
+}

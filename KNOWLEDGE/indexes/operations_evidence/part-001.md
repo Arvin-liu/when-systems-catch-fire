@@ -544,6 +544,11 @@
   - 可搜索名称：IMPLICIT-E9A70803D287F393 / "title": "Parsel: Algorithmic Reasoning with Language Models by Composing Decompositions", / IMPLICIT-E9A70803D287F393 / IMPLICIT-51CD077E25A00B4C
   - 来源：`data/external-research/121-fulltext-resolver/121q2/family-synthesis/F10.json`
   - 依赖：—；被引用：—
+- ["title": "Preregistration",](../../../evidence-program/schemas/preregistration.schema.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-5C526314D0289B3D / "title": "Preregistration", / IMPLICIT-5C526314D0289B3D
+  - 来源：`evidence-program/schemas/preregistration.schema.json`
+  - 依赖：—；被引用：—
 - ["title": "Program-as-Weights: A Programming Paradigm for Fuzzy Functions"](../../../data/external-research/121-fulltext-resolver/121q3/function-os/nodes/N2.json)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-0F7C8707CE708ABF / "title": "Program-as-Weights: A Programming Paradigm for Fuzzy Functions" / IMPLICIT-0F7C8707CE708ABF / IMPLICIT-249E2B5018F2FF97
@@ -659,6 +664,11 @@
   - 可搜索名称：IMPLICIT-C4BDF7F07F1F612D / # 080 Highest Model Escalation Summary / IMPLICIT-C4BDF7F07F1F612D
   - 来源：`reports/foundation-architecture/080-highest-model-escalation-summary-20260713.md`
   - 依赖：—；被引用：—
+- [# 1) Preregistration is already committed (see run-manifest.preregistration_commit).](../../../evidence-program/README.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-84F508E0DED2DC60 / # 1) Preregistration is already committed (see run-manifest.preregistration_commit). / IMPLICIT-84F508E0DED2DC60
+  - 来源：`evidence-program/README.md`
+  - 依赖：—；被引用：—
 - [# 121Q25C Lifecycle-Gate Deadlock Repair](../../../reports/operations/121Q25C-lifecycle-gate-deadlock-repair.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-C9E140D5FFE455EC / # 121Q25C Lifecycle-Gate Deadlock Repair / IMPLICIT-C9E140D5FFE455EC
@@ -688,6 +698,11 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-B057A1CC26CE8F3E / # 17. 对抗审查、反模型与证伪条件 / IMPLICIT-B057A1CC26CE8F3E
   - 来源：`reports/publication/jin-rise-point-fire-analysis.md`
+  - 依赖：—；被引用：—
+- [# 3) Validate the whole program (schema + preregistration-before-result + post-hoc + provenance + leakage):](../../../evidence-program/README.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-99CC901579B0030D / # 3) Validate the whole program (schema + preregistration-before-result + post-hoc + provenance + leakage): / IMPLICIT-99CC901579B0030D
+  - 来源：`evidence-program/README.md`
   - 依赖：—；被引用：—
 - [# === CHECK 14: No Ψ₀ modification (via baseline hash check) ===](../../../data/external-research/106-105-correction/106-validator.py)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -813,6 +828,11 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-A763F2DD75CCBD77 / # point-fire project integration from audit through CI / IMPLICIT-A763F2DD75CCBD77
   - 来源：`data/architecture/adaptive-relational-network/examples/point-fire-project-integration.md`
+  - 依赖：—；被引用：—
+- [# Preregistration Protocol — Crossref DOI Re-verification Pilot (Task 103 §5)](../../../evidence-program/preregistration/IGNITION-EVIDENCE-PILOT-R1-CROSSREF-DOI-VERIFICATION.protocol.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-2C13C5F548AA4EAD / # Preregistration Protocol — Crossref DOI Re-verification Pilot (Task 103 §5) / IMPLICIT-2C13C5F548AA4EAD
+  - 来源：`evidence-program/preregistration/IGNITION-EVIDENCE-PILOT-R1-CROSSREF-DOI-VERIFICATION.protocol.md`
   - 依赖：—；被引用：—
 - [# sub(10,4)=6 (feed add output as 'a')](../../../function-os-candidate/v0.2/tests/test_n8_real_router.py)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -1024,10 +1044,20 @@
   - 可搜索名称：IMPLICIT-CEDEC19AE7163327 / ## Integration / IMPLICIT-CEDEC19AE7163327 / IMPLICIT-13C29E3F1FC992A9
   - 来源：`docs/architecture/adaptive-relational-network.md`
   - 依赖：—；被引用：—
+- [## Invariants enforced](../../../evidence-program/README.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-BCBE357E97409E58 / ## Invariants enforced / IMPLICIT-BCBE357E97409E58
+  - 来源：`evidence-program/README.md`
+  - 依赖：—；被引用：—
 - [## IterationDelta](../../../docs/architecture/attention-attractor-control-plane.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-060E51A174AB0B7A / ## IterationDelta / IMPLICIT-060E51A174AB0B7A
   - 来源：`docs/architecture/attention-attractor-control-plane.md`
+  - 依赖：—；被引用：—
+- [## Metrics](../../../evidence-program/preregistration/IGNITION-EVIDENCE-PILOT-R1-CROSSREF-DOI-VERIFICATION.protocol.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-64F26D3379EFC8AB / ## Metrics / IMPLICIT-64F26D3379EFC8AB
+  - 来源：`evidence-program/preregistration/IGNITION-EVIDENCE-PILOT-R1-CROSSREF-DOI-VERIFICATION.protocol.md`
   - 依赖：—；被引用：—
 - [## Model Identity](../../../data/external-research/121-fulltext-resolver/121q6/pr41-body.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -1074,10 +1104,20 @@
   - 可搜索名称：IMPLICIT-B36F4909EBF73B97 / ## Required Follow-up Before Effective Migration / IMPLICIT-B36F4909EBF73B97
   - 来源：`docs/governance/licensing-rights-inventory.md`
   - 依赖：—；被引用：—
+- [## Scoring method (documented; numeric score is NOT truth — §4)](../../../evidence-program/registry/candidate-portfolio.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-C8B93BDA2287AD7C / ## Scoring method (documented; numeric score is NOT truth — §4) / IMPLICIT-C8B93BDA2287AD7C
+  - 来源：`evidence-program/registry/candidate-portfolio.md`
+  - 依赖：—；被引用：—
 - [## Selection Formula](../../../docs/architecture/effectual-action-plane.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-26F224B452C029F2 / ## Selection Formula / IMPLICIT-26F224B452C029F2
   - 来源：`docs/architecture/effectual-action-plane.md`
+  - 依赖：—；被引用：—
+- [## Selection rationale](../../../evidence-program/registry/candidate-portfolio.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-83CED574F01B7483 / ## Selection rationale / IMPLICIT-83CED574F01B7483
+  - 来源：`evidence-program/registry/candidate-portfolio.md`
   - 依赖：—；被引用：—
 - [## Semantic gates](../../../reports/operations/121Q28-embodied-cognitive-leap-writing-method-audit.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -2463,44 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-D9033A9D73164EF3 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0061})=1\]. / IMPLICIT-D9033A9D73164EF3
   - 来源：`统一案例总表/0061-C-61-Theranos.md`
-  - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0062})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0062-C-62-%E5%AE%8B%E6%9C%9D.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-AFA6352BB29A5198 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0062})=1\]. / IMPLICIT-AFA6352BB29A5198
-  - 来源：`统一案例总表/0062-C-62-宋朝.md`
-  - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0063})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0063-C-63-%E6%98%8E%E6%9C%9D%E8%A6%86%E7%81%AD.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-B1245DFFDCBF43AE / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0063})=1\]. / IMPLICIT-B1245DFFDCBF43AE
-  - 来源：`统一案例总表/0063-C-63-明朝覆灭.md`
-  - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0064})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0064-C-64-%E9%98%BF%E5%85%B9%E7%89%B9%E5%85%8B.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-8D17ACA5248F6771 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0064})=1\]. / IMPLICIT-8D17ACA5248F6771
-  - 来源：`统一案例总表/0064-C-64-阿兹特克.md`
-  - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0065})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0065-C-65-%E5%8D%B0%E5%8A%A0.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-BDEE09D088B92EC6 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0065})=1\]. / IMPLICIT-BDEE09D088B92EC6
-  - 来源：`统一案例总表/0065-C-65-印加.md`
-  - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0066})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0066-C-66-%E5%8D%B0%E5%BA%A6%E7%A7%8D%E5%A7%93%E5%88%B6%E5%BA%A6.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-5DDE89DB6A9ADBF9 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0066})=1\]. / IMPLICIT-5DDE89DB6A9ADBF9
-  - 来源：`统一案例总表/0066-C-66-印度种姓制度.md`
-  - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0067})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0067-C-67-%E9%9D%9E%E6%B4%B2%E7%8F%AD%E5%9B%BE%E6%96%87%E6%98%8E.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-953CF320AD88EB07 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0067})=1\]. / IMPLICIT-953CF320AD88EB07
-  - 来源：`统一案例总表/0067-C-67-非洲班图文明.md`
-  - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0068})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0068-C-68-%E5%BC%A0%E5%B1%85%E6%AD%A3%E6%94%B9%E9%9D%A9%E2%98%85.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-320302E4351054BB / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0068})=1\]. / IMPLICIT-320302E4351054BB
-  - 来源：`统一案例总表/0068-C-68-张居正改革★.md`
-  - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0069})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0069-C-69-%E7%A6%8F%E8%80%80%E7%BE%8E%E5%9B%BD%E5%B7%A5%E5%8E%82%E2%98%85.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-016AC7BD6CAA9354 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0069})=1\]. / IMPLICIT-016AC7BD6CAA9354
-  - 来源：`统一案例总表/0069-C-69-福耀美国工厂★.md`
   - 依赖：—；被引用：—

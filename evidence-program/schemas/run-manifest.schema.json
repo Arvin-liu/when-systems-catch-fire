@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://arvin-liu.github.io/when-systems-catch-fire/evidence-program/schemas/run-manifest.schema.json",
+  "title": "Experiment / Run Manifest",
+  "description": "Record of one executed pilot run (Task 103 §7).",
+  "type": "object",
+  "required": [
+    "run_id", "pilot_id", "preregistration_ref", "preregistration_commit", "preregistration_commit_timestamp",
+    "results_generated_at_utc", "environment", "commands", "seeds", "deviations_ref", "reproduction"
+  ],
+  "properties": {
+    "run_id": {"type": "string"},
+    "pilot_id": {"type": "string"},
+    "preregistration_ref": {"type": "string"},
+    "preregistration_commit": {"type": "string", "description": "MUST be an ancestor of the commit containing this run-manifest."},
+    "preregistration_commit_timestamp": {"type": "string"},
+    "results_generated_at_utc": {"type": "string", "description": "MUST be after preregistration_commit_timestamp."},
+    "environment": {
+      "type": "object",
+      "properties": {
+        "python_version": {"type": "string"},
+        "os": {"type": "string"},
+        "network_access": {"type": "string"}
+      }
+    },
+    "commands": {"type": "array", "items": {"type": "string"}},
+    "seeds": {"type": "object"},
+    "deviations_ref": {"type": "string"},
+    "reproduction": {
+      "type": "object",
+      "required": ["from_clean_environment", "command"],
+      "properties": {
+        "from_clean_environment": {"type": "boolean"},
+        "command": {"type": "string"}
+      }
+    }
+  }
+}

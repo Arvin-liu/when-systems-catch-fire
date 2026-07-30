@@ -1,0 +1,111 @@
+# 架构、治理与自我纠错：检索索引
+
+引导问题：知识资产怎样被登记、裁决、修订、隔离并保持机器与人类表面一致？
+
+此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
+
+- [验证过程：** 植物智能的每个根尖根据局部养分信息调整生长方向，森林整体优化资源分配。根尖感知局部养分信息，调整生长方向，无数根尖的局部调整使得森林整体涌现出资源分配最优策略。](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-a970458a48524eb3 / 验证过程：** 植物智能的每个根尖根据局部养分信息调整生长方向，森林整体优化资源分配。根尖感知局部养分信息，调整生长方向，无数根尖的局部调整使得森林整体涌现出资源分配最优策略。
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [验证过程：** 植物智能的每个细胞/节点遵循简单的感知-判定-响应循环。根尖感知土壤养分信息，判定养分浓度，响应调整生长方向。无数个根尖的局部交互，使得森林整体涌现出智能行为，如资源分配最优策略、菌根网络协作等。](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-193b64cda64415cc / 验证过程：** 植物智能的每个细胞/节点遵循简单的感知-判定-响应循环。根尖感知土壤养分信息，判定养分浓度，响应调整生长方向。无数个根尖的局部交互，使得森林整体涌现出智能行为，如资源分配最优策略、菌根网络协作等。
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [验证过程：** 社会制度达到纳什均衡，单方面改变制度会降低社会效率。每个个体根据社会制度调整行为策略，最终达到纳什均衡，单个个体单方面改变制度不会提高社会效率。](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-d508fba43c6d1e21 / 验证过程：** 社会制度达到纳什均衡，单方面改变制度会降低社会效率。每个个体根据社会制度调整行为策略，最终达到纳什均衡，单个个体单方面改变制度不会提高社会效率。
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [验证过程：** 蚁群的觅食路径达到纳什均衡，单只蚂蚁改变路径不会提高效率。每只蚂蚁根据信息素浓度调整路径选择，最终达到纳什均衡，单只蚂蚁单方面改变路径不会提高效率。](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-1724c85352d3d2f9 / 验证过程：** 蚁群的觅食路径达到纳什均衡，单只蚂蚁改变路径不会提高效率。每只蚂蚁根据信息素浓度调整路径选择，最终达到纳什均衡，单只蚂蚁单方面改变路径不会提高效率。
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [验证过程：** 蚁群社会的每只蚂蚁根据局部路径信息调整行进方向，蚁群整体涌现出觅食最优路径。蚂蚁感知局部路径信息，调整行进方向，无数蚂蚁的局部调整使得蚁群整体涌现出觅食最优路径。](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-d971abf04454c243 / 验证过程：** 蚁群社会的每只蚂蚁根据局部路径信息调整行进方向，蚁群整体涌现出觅食最优路径。蚂蚁感知局部路径信息，调整行进方向，无数蚂蚁的局部调整使得蚁群整体涌现出觅食最优路径。
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [验证过程：** 蚁群社会的每只蚂蚁遵循简单的信息素规则。蚂蚁感知信息素浓度，判定路径优劣，响应调整行进方向。无数只蚂蚁的局部交互，使得蚁群整体涌现出觅食最优路径。](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-1f6d41b6e38a3860 / 验证过程：** 蚁群社会的每只蚂蚁遵循简单的信息素规则。蚂蚁感知信息素浓度，判定路径优劣，响应调整行进方向。无数只蚂蚁的局部交互，使得蚁群整体涌现出觅食最优路径。
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [验证过程：** 蚁群社会的蚂蚁感知信息素环境、调整路径策略、循环递归优化觅食效率。蚂蚁感知信息素浓度，调整行进方向，循环递归优化觅食效率。](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-68cdee6ad30f654b / 验证过程：** 蚁群社会的蚂蚁感知信息素环境、调整路径策略、循环递归优化觅食效率。蚂蚁感知信息素浓度，调整行进方向，循环递归优化觅食效率。
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [验证通过：23/23。12 个元协议的规范性审核阶段整体结束；后续进入项目使用与事实验证，不再为 V2、V3 重复完整语义审核。](../../../outputs/audit/meta-protocol-normative-review-publication-audit-20260711.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-dfd3bc9719f2f3c7 / 验证通过：23/23。12 个元协议的规范性审核阶段整体结束；后续进入项目使用与事实验证，不再为 V2、V3 重复完整语义审核。
+  - 来源：`outputs/audit/meta-protocol-normative-review-publication-audit-20260711.md`
+  - 依赖：—；被引用：—
+- [验证（第七部分）](../../../outputs/audit/two-tables-entry-format-audit-20260709.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-d57c91a05028ba9c / 验证（第七部分）
+  - 来源：`outputs/audit/two-tables-entry-format-audit-20260709.md`
+  - 依赖：—；被引用：—
+- [验证（第六部分）](../../../outputs/audit/two-tables-entry-template-finalization-audit-20260709.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-640563d5a86c797b / 验证（第六部分）
+  - 来源：`outputs/audit/two-tables-entry-template-finalization-audit-20260709.md`
+  - 依赖：—；被引用：—
+- [验证：写入 统一案例总表/ + INDEX 追加行](../../../docs/getnote-collision-workflow-final-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-ce406d05d941da90 / 验证：写入 统一案例总表/ + INDEX 追加行
+  - 来源：`docs/getnote-collision-workflow-final-20260708.md`
+  - 依赖：—；被引用：—
+- [高层删除证据边界、差异或受损主体：拒绝出版并恢复低层。](../../../docs/publication/zhiyuan-writing-method.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-f1600941d6beda26 / 高层删除证据边界、差异或受损主体：拒绝出版并恢复低层。
+  - 来源：`docs/publication/zhiyuan-writing-method.md`
+  - 依赖：—；被引用：—
+- [高风险领域的失败判断必须遵守证据制度库和断言等级](../../../outputs/getbrain/failure-typology-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-57e764140acdff21 / 高风险领域的失败判断必须遵守证据制度库和断言等级
+  - 来源：`outputs/getbrain/failure-typology-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [黄色协议（事实度量 pending，不阻塞其他）：V2、V3](../../../docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-dd1737994625f371 / 黄色协议（事实度量 pending，不阻塞其他）：V2、V3
+  - 来源：`docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md`
+  - 依赖：—；被引用：—
+- [黄色协议：V2、V3（仅事实度量 pending，不阻塞其他协议）](../../../docs/governance/meta-protocol-reviews/README.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-91fad25852e1bbf3 / 黄色协议：V2、V3（仅事实度量 pending，不阻塞其他协议）
+  - 来源：`docs/governance/meta-protocol-reviews/README.md`
+  - 依赖：—；被引用：—
+- [黎曼猜想](../../../data/foundation/claims/claims.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：CLAIM-PEND-001 / 黎曼猜想
+  - 来源：`data/foundation/claims/claims.jsonl`
+  - 依赖：—；被引用：—
+- [默里实验·低自尊伴侣互动](../../../data/foundation/evidence/evidence.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-994066bcd014ef84 / 默里实验·低自尊伴侣互动
+  - 来源：`data/foundation/evidence/evidence.jsonl`
+  - 依赖：—；被引用：—
+- [（不复制完整敏感路径；仅保留必要片段以说明其类型为 macOS 用户目录下的 App 容器缓存路径。）](../../../outputs/audit/d583-portable-source-reference-audit-20260711.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-f4e8c258d044facb / （不复制完整敏感路径；仅保留必要片段以说明其类型为 macOS 用户目录下的 App 容器缓存路径。）
+  - 来源：`outputs/audit/d583-portable-source-reference-audit-20260711.md`
+  - 依赖：—；被引用：—
+- [（来自 evidence_regimes：允许的 claim level、pending 条件）](../../../templates/collision/output-template.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-68f117ff04128b66 / （来自 evidence_regimes：允许的 claim level、pending 条件）
+  - 来源：`templates/collision/output-template.md`
+  - 依赖：—；被引用：—
+- [（证据不足、需外部验证、待人工复核）](../../../templates/collision/backfill-plan-template.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-71e554b546ab1bd0 / （证据不足、需外部验证、待人工复核）
+  - 来源：`templates/collision/backfill-plan-template.md`
+  - 依赖：—；被引用：—
+- [：晋级门槛 + 初版验证器。machine_eligible=0/12，但验证器字段与 Schema 不一致。](../../../tools/build_reports.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-272b92aa5efedaa7 / ：晋级门槛 + 初版验证器。machine_eligible=0/12，但验证器字段与 Schema 不一致。
+  - 来源：`tools/build_reports.py`
+  - 依赖：—；被引用：—
