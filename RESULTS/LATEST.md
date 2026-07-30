@@ -36,10 +36,12 @@
 
 - **试点：** 用公共 Crossref REST API 独立复验 `data/external-research/104-source-registry.jsonl`
   中 117 条 `crossref_verified: true` 来源的 DOI（解析、标题、年份、撤稿、重复）。
-- **结果：SUPPORTED_WITHIN_SCOPE** — 117/117 解析、117/117 标题匹配、112/117 年份匹配、0 撤稿、
-  1 条注册表内部重复 DOI（卫生问题，非外部证据失败）。
-- **处置：** 确认 `evidence_tier_104 = METADATA_VERIFIED` 不变；需 5 条年份回填与 1 条 DOI 去重
-  （同层级数据修正，非降级）。
+- **结果：SUPPORTED_WITHIN_SCOPE** — 117/117 解析、117/117 标题匹配、117/117 年份匹配、0 撤稿；
+  1 条注册表内部重复 DOI，判定为**有意的跨 gap 引用**（同一论文支撑两个不同 gap，已标
+  `is_duplicate_doi:true`），非外部证据失败，已保留并移交 104 数据负责人。
+- **处置：** 确认 `evidence_tier_104 = METADATA_VERIFIED` 不变；RUN-1 发现的 5 条 `crossref_year` 缺口
+  已**回填/修正并复跑验证**（year_match = 117/117）；重复 DOI 判定为有意跨 gap 引用，已保留
+  （未物理删除——GAP002-08 被 104 外部研究生态多处引用）并移交 104 数据负责人（同层级数据修正，非降级）。
 - **预注册先于结果：** 协议提交于 `a4d13a69…`，早于任何 Crossref 查询；Evidence Program 校验器
   强制“预注册祖先于结果提交、无事后阈值替换、来源溯源完整、无未登记指标”。
 - 完整机器与人工产物：`evidence-program/` 与

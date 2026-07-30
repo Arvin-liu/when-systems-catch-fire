@@ -71,9 +71,9 @@ Iteration Method `1.4.0` 仍是当前仓库操作法。任务 101 增加机器/�
 任务 103 建立了最小可用 Evidence Program 并完成首个预注册、可证伪验证试点，使重要断言开始接受外部现实检验：
 
 - **最小基建：** `evidence-program/`（候选组合 schema、预注册 schema、来源溯源 manifest、运行 manifest、结果裁定 schema、偏差日志 schema、E 轴转移 schema + 确定性校验器 + CI 门）。每个字段/校验器都被真实试点或回归固件触发。
-- **首个试点：** 用公共 Crossref REST API 独立复验 `data/external-research/104-source-registry.jsonl` 中 117 条 `crossref_verified: true` 来源的 DOI。结果 **SUPPORTED_WITHIN_SCOPE**（117/117 解析、117/117 标题匹配、112/117 年份匹配、0 撤稿、1 条注册表内部重复 DOI）。
+- **首个试点：** 用公共 Crossref REST API 独立复验 `data/external-research/104-source-registry.jsonl` 中 117 条 `crossref_verified: true` 来源的 DOI。结果 **SUPPORTED_WITHIN_SCOPE**（117/117 解析、117/117 标题匹配、117/117 年份匹配、0 撤稿；1 条注册表内部重复 DOI 判定为有意跨 gap 引用，已保留并移交 104 数据负责人）。
 - **预注册先于结果：** 协议提交于 `a4d13a69…`，早于任何 Crossref 查询；校验器强制“预注册提交是结果提交的祖先、无事后阈值替换、来源溯源完整、无未登记指标”。
-- **处置：** 确认 `evidence_tier_104 = METADATA_VERIFIED` 不变；5 条年份回填与 1 条 DOI 去重为同层级数据修正。备用试点（OpenAlex 跨源、案例表历史锚点）与下一试点（Function OS v0.2 正确性）已排入开放问题。
+- **处置：** 确认 `evidence_tier_104 = METADATA_VERIFIED` 不变；RUN-1 发现的 5 条 `crossref_year` 缺口已回填/修正并复跑验证（year_match=117/117），重复 DOI 判定为有意跨 gap 引用已保留（移交 104 数据负责人）——均为同层级数据修正，非降级。备用试点（OpenAlex 跨源、案例表历史锚点）与下一试点（Function OS v0.2 正确性）已排入开放问题。
 
 ## 更新规则
 

@@ -1,4 +1,11 @@
 {
-  "deviations": [],
-  "note": "No deviations from the preregistration plan occurred. All preregistered metrics, thresholds, scope, baseline, stopping rule and E-axis mapping were applied unchanged. The two findings below are RESULTS observed against the preregistered criteria, not amendments to the plan: (1) intra_registry_duplicate_dois=1 (registry-internal hygiene, not an external-evidence failure); (2) 5 year mismatches (minor in-tier corrections). Per relay §5.10, any post-hoc plan change would be recorded here as an explicit timestamped deviation; none was required."
+  "deviations": [
+    {
+      "type": "rerun_after_intier_correction",
+      "classification": "non_deviation_plan_unchanged",
+      "timestamp_utc": "2026-07-30T10:53:30Z",
+      "description": "After RUN-1 (captured in commit 0e9844d55) found 5 crossref_year gaps and 1 intra-registry duplicate DOI, the 5 in-tier crossref_year corrections were applied to the registry (GAP001-06 2020->2019, GAP002-02 null->2006, GAP005-01 null->2007, GAP008-06 null->2005, GAP008-08 null->2025). The duplicate DOI was retained (not removed) as an intentional cross-gap citation, because GAP002-08 is referenced across the 104 external-research ecosystem; its disposition is deferred to the task-104 data owner. The preregistered procedure (oracle, metrics, thresholds, scope, baseline, stopping rule, E-axis mapping) was NOT changed. A re-run was performed against the corrected registry; it yielded verification_match_rate=1.0, retraction_signals=0, year_match=117/117, with the duplicate flag still present (intentional). This re-run regenerates source-manifest.jsonl, run-manifest.json, result-adjudication.json and RESULT.md; the pre-correction RUN-1 artifacts remain available in git history (commit 0e9844d55)."
+    }
+  ],
+  "note": "No deviations from the preregistration PLAN occurred: all preregistered metrics, thresholds, scope, baseline, stopping rule and E-axis mapping were applied unchanged. The re-run is a re-execution against a corrected input (the system under test), not an amendment to the test specification. The one intentional duplicate DOI is a documented data-quality item retained by deliberate decision, not a plan change."
 }

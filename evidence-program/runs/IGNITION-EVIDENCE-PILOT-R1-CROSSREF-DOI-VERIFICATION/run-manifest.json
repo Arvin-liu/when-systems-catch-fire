@@ -4,7 +4,7 @@
   "preregistration_ref": "PREREG-103-R1-CROSSREF",
   "preregistration_commit": "a4d13a69acea9bcc1480d7dd383929d46813c2f5",
   "preregistration_commit_timestamp": "2026-07-30T10:25:30Z",
-  "results_generated_at_utc": "2026-07-30T10:39:37Z",
+  "results_generated_at_utc": "2026-07-30T10:53:30Z",
   "environment": {
     "python_version": "3.13.12 (managed)",
     "os": "darwin",
