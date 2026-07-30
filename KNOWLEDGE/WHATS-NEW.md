@@ -13,6 +13,267 @@
 - **来源：** [HUMAN-READING.md](../HUMAN-READING.md) · [README.md](../KNOWLEDGE/README.md) · [knowledge-experience-layer.md](../docs/governance/knowledge-experience-layer.md)
 - **替代/撤回：** `FILE_AND_REGISTRY_FIRST_DISCOVERY`
 
+<a id="change-src-hr-fb9a21e0eb12989e"></a>
+### 2026-07-30 · 121Q2V Verification Repair Report
+
+- **类型：** `RESEARCH_OR_SOURCE_REVIEW`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Generated: 2026-07-14T17:22:03Z Parent HEAD at report generation: a4b0a90826d97d17d7751953d24a5901d090debb Note: Final HEAD will be confirmed after Step 008 commit/push.
+- **来源：** [121Q2V-verification-repair-report.md](../reports/external-research/121Q2V-verification-repair-report.md)
+- **资产卡：** [HR-FB9A21E0EB12989E](./ASSET-CARDS.md#asset-hr-fb9a21e0eb12989e)
+
+<a id="change-src-hr-f9fe7eee273643e9"></a>
+### 2026-07-30 · 121Q12 Effectual-Mechanism Dual-Loop Report
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `CANDIDATE_OR_PENDING_SOURCE`
+- **变化：** Status: READYFORGPTVERIFICATION
+- **来源：** [121Q12-effectual-mechanism-dual-loop.md](../reports/architecture/121Q12-effectual-mechanism-dual-loop.md)
+- **资产卡：** [HR-F9FE7EEE273643E9](./ASSET-CARDS.md#asset-hr-f9fe7eee273643e9)
+
+<a id="change-src-hr-f664e539ab663124"></a>
+### 2026-07-30 · Ignition Atlas
+
+- **类型：** `MODEL_OR_ARCHITECTURE`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** Status: 121Q14MAPPROJECTIONOVERLAY
+- **来源：** [ignition-atlas.md](../docs/architecture/ignition-atlas.md)
+- **资产卡：** [HR-F664E539AB663124](./ASSET-CARDS.md#asset-hr-f664e539ab663124)
+
+<a id="change-src-hr-f58d1b491fb96c27"></a>
+### 2026-07-30 · Licensing Model Candidate
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `CANDIDATE_OR_PENDING_SOURCE`
+- **变化：** Status: candidate decision record. This is not legal advice and does not change the root LICENSE.
+- **来源：** [licensing-model-candidate.md](../docs/governance/licensing-model-candidate.md)
+- **资产卡：** [HR-F58D1B491FB96C27](./ASSET-CARDS.md#asset-hr-f58d1b491fb96c27)
+
+<a id="change-src-hr-f29753586c28f9ec"></a>
+### 2026-07-30 · Governance License Scope
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** SPDX-License-Identifier: CC-BY-SA-4.0 OR CC-BY-NC-SA-4.0
+- **来源：** [README.md](../docs/governance/README.md)
+- **资产卡：** [HR-F29753586C28F9EC](./ASSET-CARDS.md#asset-hr-f29753586c28f9ec)
+
+<a id="change-src-hr-ef6e1d0860ae3fef"></a>
+### 2026-07-30 · 事实 Pending 总表（外部治理记录）
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** 本表整理 12 个元协议的事实缺口。这些缺口是“事实验证待补”，不是价值冲突，也不否定已经完成的规范性判断（全部为 CONDITIONALACCEPTANCE）。规范性审核阶段到此整体结束；后续进入项目使用与事实验证，不再逐协议重复审核。
+- **来源：** [factual-pending-register.md](../docs/governance/meta-protocol-reviews/factual-pending-register.md)
+- **资产卡：** [HR-EF6E1D0860AE3FEF](./ASSET-CARDS.md#asset-hr-ef6e1d0860ae3fef)
+
+<a id="change-src-hr-ebd5091c3be06f0a"></a>
+### 2026-07-30 · 121Q23C/121Q23D/121Q23E Operational ARN Real-History Validation
+
+- **类型：** `AUDIT_OR_ADJUDICATION`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Status: REALHISTORYOPERATIONALPROOFREGENERATEDWITHPATHSTATEANDREFERENCECONTRACT
+- **来源：** [121Q23C-operational-arn-real-history-validation.md](../reports/architecture/121Q23C-operational-arn-real-history-validation.md)
+- **资产卡：** [HR-EBD5091C3BE06F0A](./ASSET-CARDS.md#asset-hr-ebd5091c3be06f0a)
+
+<a id="change-src-hr-ebcda7ca000d3bac"></a>
+### 2026-07-30 · 121Q2R Final Report
+
+- **类型：** `RESEARCH_OR_SOURCE_REVIEW`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Generated: 2026-07-14T17:04:01Z
+- **来源：** [121Q2R-final-report.md](../reports/external-research/121Q2R-final-report.md)
+- **资产卡：** [HR-EBCDA7CA000D3BAC](./ASSET-CARDS.md#asset-hr-ebcda7ca000d3bac)
+
+<a id="change-src-hr-e5c82087cc19191e"></a>
+### 2026-07-30 · 121Q14 Baseline And Latent Map Audit
+
+- **类型：** `AUDIT_OR_ADJUDICATION`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** 121Q14 starts from 121Q13 Draft PR 48 head 5297fe6c4c3aa36519b2e0a4d751be43dee09441.
+- **来源：** [121Q14-baseline-latent-map-audit.md](../reports/atlas/121Q14-baseline-latent-map-audit.md)
+- **资产卡：** [HR-E5C82087CC19191E](./ASSET-CARDS.md#asset-hr-e5c82087cc19191e)
+
+<a id="change-src-hr-e5b132f83f5707d0"></a>
+### 2026-07-30 · 121Q21R Multiscale Causal Fabric Validation
+
+- **类型：** `AUDIT_OR_ADJUDICATION`
+- **状态：** `CANDIDATE_OR_PENDING_SOURCE`
+- **变化：** Status: READYASMULTISCALECAUSALFABRICCANDIDATE
+- **来源：** [121Q21R-multiscale-causal-fabric-validation.md](../reports/architecture/121Q21R-multiscale-causal-fabric-validation.md)
+- **资产卡：** [HR-E5B132F83F5707D0](./ASSET-CARDS.md#asset-hr-e5b132f83f5707d0)
+
+<a id="change-src-hr-e46a02fee84ab9b4"></a>
+### 2026-07-30 · 121Q14 Dynamic Atlas Report
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `CANDIDATE_OR_PENDING_SOURCE`
+- **变化：** Status: READYASDYNAMICATLASCANDIDATE
+- **来源：** [121Q14-dynamic-atlas.md](../reports/atlas/121Q14-dynamic-atlas.md)
+- **资产卡：** [HR-E46A02FEE84AB9B4](./ASSET-CARDS.md#asset-hr-e46a02fee84ab9b4)
+
+<a id="change-src-hr-e31b1dff732ad215"></a>
+### 2026-07-30 · 120 — Function OS Architecture Candidate Report
+
+- **类型：** `RESEARCH_OR_SOURCE_REVIEW`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Date: 2026-07-13 Executor: QClaw (qclaw/pool-glm-5.2-night, reasoning: high)
+- **来源：** [120-function-os-architecture-candidate-report.md](../reports/external-research/120-function-os-architecture-candidate-report.md)
+- **资产卡：** [HR-E31B1DFF732AD215](./ASSET-CARDS.md#asset-hr-e31b1dff732ad215)
+
+<a id="change-src-hr-e1d441f85e9b4b63"></a>
+### 2026-07-30 · 085: Architecture Structure Freeze Report
+
+- **类型：** `FOUNDATION_OR_GOVERNANCE`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** ARCHITECTURESTRUCTUREFROZENCLAIMTRUTHPROVISIONAL
+- **来源：** [085-architecture-structure-freeze.md](../reports/foundation-architecture/085-architecture-structure-freeze.md)
+- **资产卡：** [HR-E1D441F85E9B4B63](./ASSET-CARDS.md#asset-hr-e1d441f85e9b4b63)
+
+<a id="change-src-hr-e14552c4c0658b5a"></a>
+### 2026-07-30 · 083 Escalation Routing Report
+
+- **类型：** `FOUNDATION_OR_GOVERNANCE`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Date: 2026-07-13 Task: IGNITION-20260709-083
+- **来源：** [083-escalation-routing-report.md](../reports/foundation-architecture/083-escalation-routing-report.md)
+- **资产卡：** [HR-E14552C4C0658B5A](./ASSET-CARDS.md#asset-hr-e14552c4c0658b5a)
+
+<a id="change-src-hr-de57c4f1ec87eada"></a>
+### 2026-07-30 · 121Q28R 之元写作法 0.2.0 修订审计
+
+- **类型：** `AUDIT_OR_ADJUDICATION`
+- **状态：** `CANDIDATE_OR_PENDING_SOURCE`
+- **变化：** Status: READYFORGPTVERIFICATIONCANDIDATEONLY
+- **来源：** [121Q28R-cognitive-level-leap-writing-method-audit.md](../reports/operations/121Q28R-cognitive-level-leap-writing-method-audit.md)
+- **资产卡：** [HR-DE57C4F1EC87EADA](./ASSET-CARDS.md#asset-hr-de57c4f1ec87eada)
+
+<a id="change-src-hr-dc0c745159dd31db"></a>
+### 2026-07-30 · 比刀剑更持久的，是共享观念
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** --- kind: "story" seq: 1 id: "S1" title: "比刀剑更持久的，是共享观念" source: "/Users/zhiyuan/Library/Containers/com.biji.getNotes/Data/Library/Caches/比刀剑更持久的，是共享观念-2026年07月06日-来自【Get 笔记】.md" derivedfrom: "/Users/zhiyuan/Library/Containers/com.biji.getNotes/Data/Library/Caches/欧亚大陆的枢纽×Ψ₀元函数验证报告 2026年7月6日0306-…
+- **来源：** [0001-S1-比刀剑更持久的，是共享观念.md](../%E6%96%B0%E6%95%85%E4%BA%8B/0001-S1-%E6%AF%94%E5%88%80%E5%89%91%E6%9B%B4%E6%8C%81%E4%B9%85%E7%9A%84%EF%BC%8C%E6%98%AF%E5%85%B1%E4%BA%AB%E8%A7%82%E5%BF%B5.md)
+- **资产卡：** [HR-DC0C745159DD31DB](./ASSET-CARDS.md#asset-hr-dc0c745159dd31db)
+
+<a id="change-src-hr-daf1cb45ccd7b5b6"></a>
+### 2026-07-30 · 点火仓库原生系统图
+
+- **类型：** `MODEL_OR_ARCHITECTURE`
+- **状态：** `HISTORICAL_OR_SUPERSEDED_SOURCE`
+- **变化：** 状态：0.4.0 Current registry-derived navigation projection；0.3.0、0.2.0 为 Historical。
+- **来源：** [interactive-system-map.md](../docs/architecture/interactive-system-map.md)
+- **资产卡：** [HR-DAF1CB45CCD7B5B6](./ASSET-CARDS.md#asset-hr-daf1cb45ccd7b5b6)
+
+<a id="change-src-hr-da202c53b7387f68"></a>
+### 2026-07-30 · 类型化变更传播闭包 / Typed Change-Propagation Closure
+
+- **类型：** `MODEL_OR_ARCHITECTURE`
+- **状态：** `HISTORICAL_OR_SUPERSEDED_SOURCE`
+- **变化：** Status: 121Q32THISTORICAL. Iteration method 1.3.0 and interactive system map 0.3.0 are Historical after the 0727 homepage/usage/charter-system-map sync closeout made system map 0.4.0 Current; method 1.2.0 and map 0.2.0 are Historical, map 0.1.0 earlier Historical. Q32I retains this typed-propagat…
+- **来源：** [typed-change-propagation.md](../docs/architecture/typed-change-propagation.md)
+- **资产卡：** [HR-DA202C53B7387F68](./ASSET-CARDS.md#asset-hr-da202c53b7387f68)
+
+<a id="change-src-hr-d821031f6e382fd7"></a>
+### 2026-07-30 · 121Q9 Final Release Candidate
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `CANDIDATE_OR_PENDING_SOURCE`
+- **变化：** Status: COMPLETEPENDINGGPTVERIFICATION. Do not merge until explicitly approved.
+- **来源：** [121Q9-final-release-candidate.md](../reports/release/121Q9-final-release-candidate.md)
+- **资产卡：** [HR-D821031F6E382FD7](./ASSET-CARDS.md#asset-hr-d821031f6e382fd7)
+
+<a id="change-src-hr-d77d1e13245bc9a4"></a>
+### 2026-07-30 · 九轴状态系统
+
+- **类型：** `FOUNDATION_OR_GOVERNANCE`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** workflow、semantic、formal、logic、proof、evidence、scope、provenance、migration 是相互独立的枚举轴。schema 与验证器禁止将 CLOSED、CONVERGED、MULTICASE、MACHINECHECKEDPROOF 等单轴状态传播成其他轴的成功。
+- **来源：** [status-system.md](../docs/foundation/status-system.md)
+- **资产卡：** [HR-D77D1E13245BC9A4](./ASSET-CARDS.md#asset-hr-d77d1e13245bc9a4)
+
+<a id="change-src-hr-d660dc784cc90282"></a>
+### 2026-07-30 · Incremental Execution and Selective Materialization
+
+- **类型：** `MODEL_OR_ARCHITECTURE`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** Historical status: 121Q32I / method 1.3.0 Closed, now superseded by Current 1.4.0. Method 1.2.0 and system map 0.2.0 are Historical; method 1.1.0 and map 0.1.0 are earlier Historical. Q32I passed the exact-head, ordinary-merge and external checks required by its historical contract; task 101 late…
+- **来源：** [incremental-execution.md](../docs/architecture/incremental-execution.md)
+- **资产卡：** [HR-D660DC784CC90282](./ASSET-CARDS.md#asset-hr-d660dc784cc90282)
+
+<a id="change-src-hr-d3835bd97f147a42"></a>
+### 2026-07-30 · V3 规范性审核 - 创新性协议 (Innovation Protocol)
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** 价值：增加生命共同体的适应能力、问题解决能力与未来选择空间，是应对不确定性的关键。条件：仅当可检验、可逆优先、风险隔离、可停止、有失败反馈时才有价值。伤害：当以“创新”为由制造不可控、不可逆、外部化风险时，会伤害共同体。不可缺少的约束：可逆优先、小规模试验、风险隔离、可停止、失败反馈、禁止不可控外部风险。
+- **来源：** [V3.md](../docs/governance/meta-protocol-reviews/protocols/V3.md)
+- **资产卡：** [HR-D3835BD97F147A42](./ASSET-CARDS.md#asset-hr-d3835bd97f147a42)
+
+<a id="change-src-hr-d328ae24912155e2"></a>
+### 2026-07-30 · 之元写作法成果
+
+- **类型：** `ARTICLE_OR_PUBLICATION`
+- **状态：** `HISTORICAL_COMPLETION_RECORD`
+- **变化：** 本索引是 121Q30T 收口后的当前成果入口，收录由之元写作法 0.3.0生成、具备可追溯来源链和点火分析链、并已进入相应审查状态的公共表达成果。
+- **来源：** [zhiyuan-writing-showcase.md](../docs/publication/zhiyuan-writing-showcase.md)
+- **资产卡：** [HR-D328AE24912155E2](./ASSET-CARDS.md#asset-hr-d328ae24912155e2)
+
+<a id="change-src-hr-d27de59030e9f44a"></a>
+### 2026-07-30 · Compression Integrity Gate
+
+- **类型：** `MODEL_OR_ARCHITECTURE`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** Status: 121Q13CONTROLOVERLAY
+- **来源：** [compression-integrity-gate.md](../docs/architecture/compression-integrity-gate.md)
+- **资产卡：** [HR-D27DE59030E9F44A](./ASSET-CARDS.md#asset-hr-d27de59030e9f44a)
+
+<a id="change-src-hr-d1de2bd2a70dc6c1"></a>
+### 2026-07-30 · Adaptive Relational Network / 自适应关系网络
+
+- **类型：** `MODEL_OR_ARCHITECTURE`
+- **状态：** `CANDIDATE_OR_PENDING_SOURCE`
+- **变化：** Status: candidate derived representation.
+- **来源：** [adaptive-relational-network.md](../docs/architecture/adaptive-relational-network.md)
+- **资产卡：** [HR-D1DE2BD2A70DC6C1](./ASSET-CARDS.md#asset-hr-d1de2bd2a70dc6c1)
+
+<a id="change-src-hr-d0d9de18fd9e9bde"></a>
+### 2026-07-30 · 085: 084 Truth Status Correction
+
+- **类型：** `CORRECTION_OR_WITHDRAWAL`
+- **状态：** `CURRENT_CORRECTION_RECORD`
+- **变化：** 本文件纠正 084 报告中对生成机制和命题真值的不准确描述。所有纠正基于 084-max-decisions.jsonl 的机器可读真值重算，不修改 084 原始文件。
+- **来源：** [085-084-truth-status-correction.md](../reports/foundation-architecture/085-084-truth-status-correction.md)
+- **资产卡：** [HR-D0D9DE18FD9E9BDE](./ASSET-CARDS.md#asset-hr-d0d9de18fd9e9bde)
+
+<a id="change-src-hr-cdbd2a8dabea0396"></a>
+### 2026-07-30 · Canonical Protocol Validation Results
+
+- **类型：** `AUDIT_OR_ADJUDICATION`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** generatedat: 2026-07-10T20:50:00+08:00 ｜ count: 12
+- **来源：** [protocol-canonical-validation-results.md](../outputs/protocol-canonical-validation-results.md)
+- **资产卡：** [HR-CDBD2A8DABEA0396](./ASSET-CARDS.md#asset-hr-cdbd2a8dabea0396)
+
+<a id="change-src-hr-c936ceda8bbc6085"></a>
+### 2026-07-30 · Licensing Rights Inventory
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `CANDIDATE_OR_PENDING_SOURCE`
+- **变化：** Status: candidate audit for IGNITION-20260715-121Q8. This document is not legal advice and does not change the effective repository license.
+- **来源：** [licensing-rights-inventory.md](../docs/governance/licensing-rights-inventory.md)
+- **资产卡：** [HR-C936CEDA8BBC6085](./ASSET-CARDS.md#asset-hr-c936ceda8bbc6085)
+
+<a id="change-src-hr-c7aaddf58550aae5"></a>
+### 2026-07-30 · 120 — Function Paradigm Atlas Report
+
+- **类型：** `RESEARCH_OR_SOURCE_REVIEW`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Date: 2026-07-13 Executor: QClaw (qclaw/pool-glm-5.2-night, reasoning: high) Branch: records/ignition-120-function-paradigm-atlas-20260713
+- **来源：** [120-function-paradigm-atlas-report.md](../reports/external-research/120-function-paradigm-atlas-report.md)
+- **资产卡：** [HR-C7AADDF58550AAE5](./ASSET-CARDS.md#asset-hr-c7aaddf58550aae5)
+
 <a id="change-src-hr-c629630ad15b68cb"></a>
 ### 2026-07-30 · 任务 102 知识体验层缺口与覆盖审计
 
@@ -22,6 +283,195 @@
 - **来源：** [102-knowledge-experience-audit.md](../reports/operations/102-knowledge-experience-audit.md)
 - **资产卡：** [HR-C629630AD15B68CB](./ASSET-CARDS.md#asset-hr-c629630ad15b68cb)
 
+<a id="change-src-hr-c5a76b2115839837"></a>
+### 2026-07-30 · 121Q23 Relational Network Gap Audit
+
+- **类型：** `AUDIT_OR_ADJUDICATION`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Status: PARTIALRELATIONALASSETSWITHOUTADAPTIVERELATIONALNETWORK
+- **来源：** [121Q23-relational-network-gap-audit.md](../reports/architecture/121Q23-relational-network-gap-audit.md)
+- **资产卡：** [HR-C5A76B2115839837](./ASSET-CARDS.md#asset-hr-c5a76b2115839837)
+
+<a id="change-src-hr-c322de3c7799a555"></a>
+### 2026-07-30 · Distribution And Decision Collapse Control Plane
+
+- **类型：** `MODEL_OR_ARCHITECTURE`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** Status: 121Q13CONTROLOVERLAY
+- **来源：** [distribution-collapse-control-plane.md](../docs/architecture/distribution-collapse-control-plane.md)
+- **资产卡：** [HR-C322DE3C7799A555](./ASSET-CARDS.md#asset-hr-c322de3c7799a555)
+
+<a id="change-src-hr-c32095e69516906c"></a>
+### 2026-07-30 · V2 规范性审核 - 效率性协议 (Efficiency Protocol)
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** 选择产出/投入效率最大（单位资源产出最高）的行动。
+- **来源：** [V2.md](../docs/governance/meta-protocol-reviews/protocols/V2.md)
+- **资产卡：** [HR-C32095E69516906C](./ASSET-CARDS.md#asset-hr-c32095e69516906c)
+
+<a id="change-src-hr-c190ac76ad5f8440"></a>
+### 2026-07-30 · 121Q3 Night Final Report
+
+- **类型：** `RESEARCH_OR_SOURCE_REVIEW`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Steps 004-007, 010-018, 021-023 were executed as batched commits (11 commits for 25 steps). This deviates from the 'one commit per step' requirement. Amend/rebase is prohibited, so this cannot be retroactively fixed. All 25 step-ledger entries are present and correct.
+- **来源：** [121Q3-night-final-report.md](../reports/external-research/121Q3-night-final-report.md)
+- **资产卡：** [HR-C190AC76AD5F8440](./ASSET-CARDS.md#asset-hr-c190ac76ad5f8440)
+
+<a id="change-src-hr-c0e9f4990481c808"></a>
+### 2026-07-30 · 121Q21R Causal Asset Audit
+
+- **类型：** `AUDIT_OR_ADJUDICATION`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Status: PARTIALCOMPONENTSWITHOUTUNIFIEDMULTISCALEFABRIC
+- **来源：** [121Q21R-causal-asset-audit.md](../reports/architecture/121Q21R-causal-asset-audit.md)
+- **资产卡：** [HR-C0E9F4990481C808](./ASSET-CARDS.md#asset-hr-c0e9f4990481c808)
+
+<a id="change-src-hr-c0254716ff47346d"></a>
+### 2026-07-30 · 得到大脑输出索引
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** 本目录用于收录得到大脑在点火项目推进中的结构性输出。
+- **来源：** [README.md](../outputs/getbrain/README.md)
+- **资产卡：** [HR-C0254716FF47346D](./ASSET-CARDS.md#asset-hr-c0254716ff47346d)
+
+<a id="change-src-hr-c023e21ce9a8a6d4"></a>
+### 2026-07-30 · Probabilistic System Dynamics / 概率—系统动力学
+
+- **类型：** `MODEL_OR_ARCHITECTURE`
+- **状态：** `CANDIDATE_OR_PENDING_SOURCE`
+- **变化：** Status: candidate derived operational extension to MCF.
+- **来源：** [probabilistic-system-dynamics.md](../docs/architecture/probabilistic-system-dynamics.md)
+- **资产卡：** [HR-C023E21CE9A8A6D4](./ASSET-CARDS.md#asset-hr-c023e21ce9a8a6d4)
+
+<a id="change-src-hr-b543950ddea47bd7"></a>
+### 2026-07-30 · 121Q32I typed change-propagation impact report
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** 原文件保存该项结果的完整问题、过程与边界。
+- **来源：** [121Q32I-change-propagation-impact.md](../reports/operations/121Q32I-change-propagation-impact.md)
+- **资产卡：** [HR-B543950DDEA47BD7](./ASSET-CARDS.md#asset-hr-b543950ddea47bd7)
+
+<a id="change-src-hr-b3910e7a27e481ac"></a>
+### 2026-07-30 · 生命共同体价值宪章
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** 本宪章是点火项目的规范性价值前提，用于约束元协议、函数、案例和理论生成结果的价值方向。它不构成经验性证据，不替代数学证明、实验验证、案例核验、外部学科审查或治理批准。
+- **来源：** [life-community-value-charter.md](../docs/governance/life-community-value-charter.md)
+- **资产卡：** [HR-B3910E7A27E481AC](./ASSET-CARDS.md#asset-hr-b3910e7a27e481ac)
+
+<a id="change-src-hr-b1aad6dbbdf235c8"></a>
+### 2026-07-30 · 121Q24 Current-State Reconciliation
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `HISTORICAL_COMPLETION_RECORD`
+- **变化：** Status: AUDITCOMPLETESYNCREQUIRED
+- **来源：** [121Q24-current-state-reconciliation.md](../reports/operations/121Q24-current-state-reconciliation.md)
+- **资产卡：** [HR-B1AAD6DBBDF235C8](./ASSET-CARDS.md#asset-hr-b1aad6dbbdf235c8)
+
+<a id="change-src-hr-aefff65e1fe80eef"></a>
+### 2026-07-30 · 起始案例来源链｜公元1115年：金朝崛起为什么这么快？
+
+- **类型：** `ARTICLE_OR_PUBLICATION`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** 原始材料包含第三方课程内容，本仓库只公开来源记录、哈希、分析边界和派生成果，不复制或公开原始全文。SHA-256 用于确认后续分析所对应的输入版本，不表示原文中的历史断言已经核验。
+- **来源：** [jin-rise-case-source.md](../docs/publication/cases/jin-rise-case-source.md)
+- **资产卡：** [HR-AEFFF65E1FE80EEF](./ASSET-CARDS.md#asset-hr-aefff65e1fe80eef)
+
+<a id="change-src-hr-ae709c73eb8cce73"></a>
+### 2026-07-30 · S3 规范性审核 - 层级协议 (Hierarchy Protocol)
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** 价值：责任清晰、应急协调、专业分工与大规模复杂任务，是有效组织的工具。条件：仅当权力可问责、层级可撤销、决策可复核且底层有申诉与退出机制时才有价值。伤害：当层级不可问责、不可撤销、把服从当价值或剥夺底层权利时，会伤害共同体。不可缺少的约束：权力可问责、层级可撤销、决策可复核、申诉与退出、服从非价值。
+- **来源：** [S3.md](../docs/governance/meta-protocol-reviews/protocols/S3.md)
+- **资产卡：** [HR-AE709C73EB8CCE73](./ASSET-CARDS.md#asset-hr-ae709c73eb8cce73)
+
+<a id="change-src-hr-addcb11c670ad242"></a>
+### 2026-07-30 · 全语料非函数型断言裁决索引
+
+- **类型：** `AUDIT_OR_ADJUDICATION`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** 机器完整表：data/foundation/nonfunction-claims/。未来断言入口：docs/foundation/future-claim-admission-protocol.md。
+- **来源：** [nonfunction-claim-adjudication-index.md](../docs/foundation/nonfunction-claim-adjudication-index.md)
+- **资产卡：** [HR-ADDCB11C670AD242](./ASSET-CARDS.md#asset-hr-addcb11c670ad242)
+
+<a id="change-src-hr-ad59534793e1d1d7"></a>
+### 2026-07-30 · 新故事索引表（2026年07月06日03时06分，故事总数 1）
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** 原文件保存该项结果的完整问题、过程与边界。
+- **来源：** [INDEX.md](../%E6%96%B0%E6%95%85%E4%BA%8B/INDEX.md)
+- **资产卡：** [HR-AD59534793E1D1D7](./ASSET-CARDS.md#asset-hr-ad59534793e1d1d7)
+
+<a id="change-src-hr-ac9e178219fcc8d0"></a>
+### 2026-07-30 · IGNITION-084 Max Adjudication Report
+
+- **类型：** `AUDIT_OR_ADJUDICATION`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** P4 裁决要点：绝大多数 P4 声明未同时提供两个明确结构、双射、被保持运算和双向验证，因此无法保留"严格同构"标签。
+- **来源：** [084-max-adjudication-report.md](../reports/foundation-architecture/084-max-adjudication-report.md)
+- **资产卡：** [HR-AC9E178219FCC8D0](./ASSET-CARDS.md#asset-hr-ac9e178219fcc8d0)
+
+<a id="change-src-hr-aafe3d04b9390110"></a>
+### 2026-07-30 · 121Q32 类型化变更传播与自更新系统图审计
+
+- **类型：** `AUDIT_OR_ADJUDICATION`
+- **状态：** `CANDIDATE_OR_PENDING_SOURCE`
+- **变化：** Status: READYFORGPTVERIFICATIONCANDIDATEONLY
+- **来源：** [121Q32-typed-change-propagation-and-self-updating-system-map-audit.md](../reports/operations/121Q32-typed-change-propagation-and-self-updating-system-map-audit.md)
+- **资产卡：** [HR-AAFE3D04B9390110](./ASSET-CARDS.md#asset-hr-aafe3d04b9390110)
+
+<a id="change-src-hr-aab6acea79423520"></a>
+### 2026-07-30 · 120 — Source Quality and Template Risk Audit
+
+- **类型：** `RESEARCH_OR_SOURCE_REVIEW`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Date: 2026-07-13 Executor: QClaw (qclaw/pool-glm-5.2-night, reasoning: high)
+- **来源：** [120-source-quality-and-template-risk-audit.md](../reports/external-research/120-source-quality-and-template-risk-audit.md)
+- **资产卡：** [HR-AAB6ACEA79423520](./ASSET-CARDS.md#asset-hr-aab6acea79423520)
+
+<a id="change-src-hr-a932eb17267d9709"></a>
+### 2026-07-30 · 之元写作法
+
+- **类型：** `ARTICLE_OR_PUBLICATION`
+- **状态：** `CURRENT_SCOPED_SOURCE`
+- **变化：** English: Zhiyuan Writing Method
+- **来源：** [zhiyuan-writing-method.md](../docs/publication/zhiyuan-writing-method.md)
+- **资产卡：** [HR-A932EB17267D9709](./ASSET-CARDS.md#asset-hr-a932eb17267d9709)
+
+<a id="change-src-hr-a5759af803aebc01"></a>
+### 2026-07-30 · 数学地基规则
+
+- **类型：** `FOUNDATION_OR_GOVERNANCE`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** 特别规则：A 只表示声明理论内的假设/公理；T 只有链接可检查证明工件时才是 THEOREM。legacy ID 永久保留，但 legacy 标签不支配新类型。
+- **来源：** [README.md](../docs/foundation/mathematics/README.md)
+- **资产卡：** [HR-A5759AF803AEBC01](./ASSET-CARDS.md#asset-hr-a5759af803aebc01)
+
+<a id="change-src-hr-a53421dea2f6cdca"></a>
+### 2026-07-30 · 099 Function Asset Registry Closure
+
+- **类型：** `FOUNDATION_OR_GOVERNANCE`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Task 99 reuses the task-98 governance layer and expands discovery to executable declarations and searchable formula candidates. The result is a one-record-per-discovery identity-card registry, an obligation ledger, dependency closure, counterexample registry, public-claim lineage and explicit qua…
+- **来源：** [099-function-asset-registry-closure.md](../reports/foundation-architecture/099-function-asset-registry-closure.md)
+- **资产卡：** [HR-A53421DEA2F6CDCA](./ASSET-CARDS.md#asset-hr-a53421dea2f6cdca)
+
+<a id="change-src-hr-a492aafc18415614"></a>
+### 2026-07-30 · 121Q28T｜之元写作法 0.3.0 Current 收口
+
+- **类型：** `AUDIT_OR_ADJUDICATION`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** PR 58 在合并前重新满足全部精确门禁：HEAD 为 19a013719a8e98319004c3b7ad9d0d4b29405351，review 4714216621 接受该精确 HEAD，Foundation、Function OS 与 Pages 三条精确 HEAD CI 成功，PR 可合并且无漂移。随后使用普通 merge commit 合并，merge commit 为 83f15484385d256ea22e443cf2938717cfdd58a0；accepted HEAD 已验证为 main 祖先。
+- **来源：** [121Q28T-zhiyuan-writing-method-merge-current-closeout-audit.md](../reports/operations/121Q28T-zhiyuan-writing-method-merge-current-closeout-audit.md)
+- **资产卡：** [HR-A492AAFC18415614](./ASSET-CARDS.md#asset-hr-a492aafc18415614)
+
 <a id="change-src-hr-9fe0a1492c44c9b3"></a>
 ### 2026-07-30 · 知识体验入口与探索层
 
@@ -30,6 +480,834 @@
 - **变化：** 状态：任务 102 候选，只有普通合并、main 精确验证和全新克隆复验后才成为 Current 仓库能力。
 - **来源：** [knowledge-experience-layer.md](../docs/governance/knowledge-experience-layer.md)
 - **资产卡：** [HR-9FE0A1492C44C9B3](./ASSET-CARDS.md#asset-hr-9fe0a1492c44c9b3)
+
+<a id="change-src-hr-9e4e9fae33d82afe"></a>
+### 2026-07-30 · 121Q2W Final Consistency Seal Report
+
+- **类型：** `RESEARCH_OR_SOURCE_REVIEW`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** 原文件保存该项结果的完整问题、过程与边界。
+- **来源：** [121Q2W-final-consistency-seal-report.md](../reports/external-research/121Q2W-final-consistency-seal-report.md)
+- **资产卡：** [HR-9E4E9FAE33D82AFE](./ASSET-CARDS.md#asset-hr-9e4e9fae33d82afe)
+
+<a id="change-src-hr-9e39d8c09bf33c74"></a>
+### 2026-07-30 · 121Q9 Cumulative Baseline
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `CANDIDATE_OR_PENDING_SOURCE`
+- **变化：** Status: Step 000 baseline for cumulative release candidate.
+- **来源：** [121Q9-cumulative-baseline.md](../reports/release/121Q9-cumulative-baseline.md)
+- **资产卡：** [HR-9E39D8C09BF33C74](./ASSET-CARDS.md#asset-hr-9e39d8c09bf33c74)
+
+<a id="change-src-hr-9ce0dfb3a119bc53"></a>
+### 2026-07-30 · S1 规范性审核 - 封闭边界协议 (Closed-Boundary Protocol)
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** 系统在封闭或强边界内演化，外部输入/退出/迁移受限。
+- **来源：** [S1.md](../docs/governance/meta-protocol-reviews/protocols/S1.md)
+- **资产卡：** [HR-9CE0DFB3A119BC53](./ASSET-CARDS.md#asset-hr-9ce0dfb3a119bc53)
+
+<a id="change-src-hr-9be719cb6ef0fd88"></a>
+### 2026-07-30 · Attention And Attractor Control Plane
+
+- **类型：** `MODEL_OR_ARCHITECTURE`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** Status: 121Q13CONTROLOVERLAY
+- **来源：** [attention-attractor-control-plane.md](../docs/architecture/attention-attractor-control-plane.md)
+- **资产卡：** [HR-9BE719CB6EF0FD88](./ASSET-CARDS.md#asset-hr-9be719cb6ef0fd88)
+
+<a id="change-src-hr-9a37e04e46e43cf2"></a>
+### 2026-07-30 · 121Q4 Final Report: Function OS v0.1 Symbolic Reference Implementation
+
+- **类型：** `RESEARCH_OR_SOURCE_REVIEW`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Generated: 2026-07-15T03:50:00Z Branch: records/ignition-121q4-v4pro-symbolic-function-os-reference-20260715 Status: CANDIDATE COMPLETE (Steps 000-024, consistency-sealed)
+- **来源：** [121Q4-final-report.md](../reports/external-research/121Q4-final-report.md)
+- **资产卡：** [HR-9A37E04E46E43CF2](./ASSET-CARDS.md#asset-hr-9a37e04e46e43cf2)
+
+<a id="change-src-hr-996ef89e3a670484"></a>
+### 2026-07-30 · 函数资产注册表迁移 R2
+
+- **类型：** `FOUNDATION_OR_GOVERNANCE`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** 任务 98 的 census.jsonl 是自动发现候选，十类标签只用于排队。任务 99 增加十二类 canonical identity card 和最终处置层。权威顺序变为：任务 98 人工纠偏 overlay → 既有 Foundation 来源文本审定 → 任务 99 可执行源码裁决或显式 quarantine → 自动 census → legacy 原文。
+- **来源：** [function-asset-registry-migration-r2.md](../docs/foundation/function-asset-registry-migration-r2.md)
+- **资产卡：** [HR-996EF89E3A670484](./ASSET-CARDS.md#asset-hr-996ef89e3a670484)
+
+<a id="change-src-hr-990891f8efa72ff7"></a>
+### 2026-07-30 · Task 98 dependency impact
+
+- **类型：** `FOUNDATION_OR_GOVERNANCE`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** The generated graph contains 1,923 declared consumer - dependency edges across 541 assets with dependencies. This report binds the first correction set to both its outgoing declarations and all direct reverse consumers.
+- **来源：** [098-dependency-impact.md](../reports/foundation-architecture/098-dependency-impact.md)
+- **资产卡：** [HR-990891F8EFA72FF7](./ASSET-CARDS.md#asset-hr-990891f8efa72ff7)
+
+<a id="change-src-hr-98aee959a458b641"></a>
+### 2026-07-30 · 104 补丁证据就绪报告
+
+- **类型：** `RESEARCH_OR_SOURCE_REVIEW`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** 088-B 产出了 14 个架构补丁：8 个 NEWOBJECTTYPEINTERFACE（HIGH 缺口）和 6 个 ENHANCEKEEP（MEDIUM 缺口）。088-FINAL-REPORT 将 8 个 HIGH 标记为 INJECTEDVERIFIED，6 个 MEDIUM 标记为 ENHANCEWITHEXTERNALSOURCES。
+- **来源：** [104-gap-patch-evidence-readiness.md](../reports/external-research/104-gap-patch-evidence-readiness.md)
+- **资产卡：** [HR-98AEE959A458B641](./ASSET-CARDS.md#asset-hr-98aee959a458b641)
+
+<a id="change-src-hr-95f4d0b3d4dd2b7d"></a>
+### 2026-07-30 · 逻辑地基规则
+
+- **类型：** `FOUNDATION_OR_GOVERNANCE`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** 非纯数学对象的最小结构为 Premises + Declared Inference Rules - Conclusion。无法形成演绎时保留 DEFEASIBLESUPPORT、HIDDENPREMISE 或 PENDING。
+- **来源：** [README.md](../docs/foundation/logic/README.md)
+- **资产卡：** [HR-95F4D0B3D4DD2B7D](./ASSET-CARDS.md#asset-hr-95f4d0b3d4dd2b7d)
+
+<a id="change-src-hr-9516507750851228"></a>
+### 2026-07-30 · IGNITION-106: GAP-001 接口就绪度评估
+
+- **类型：** `RESEARCH_OR_SOURCE_REVIEW`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** PROVISIONALINTERFACERECOMMENDATIONPENDINGCONSTITUTIONALREVIEW
+- **来源：** [106-gap001-interface-readiness.md](../reports/external-research/106-gap001-interface-readiness.md)
+- **资产卡：** [HR-9516507750851228](./ASSET-CARDS.md#asset-hr-9516507750851228)
+
+<a id="change-src-hr-933d6ba7d34f8014"></a>
+### 2026-07-30 · 121C01: First Batch GLM-5.2 Max Semantic Review Report
+
+- **类型：** `RESEARCH_OR_SOURCE_REVIEW`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Task: IGNITION-20260709-121C01 Reviewer: qclaw/pool-glm-5.2 (reasoning: high) Note: Task specified max reasoning; subagent environment supports high only. Main session supports max. Date: 2026-07-14 Baseline: 66c6efdf673dc486fbf10373edbcf2eab67a528c (121B HEAD) Status: 121C01MAXSEMANTICBATCHCOMPL…
+- **来源：** [121c01-max-semantic-review-batch-01.md](../reports/external-research/121c01-max-semantic-review-batch-01.md)
+- **资产卡：** [HR-933D6BA7D34F8014](./ASSET-CARDS.md#asset-hr-933d6ba7d34f8014)
+
+<a id="change-src-hr-92fc8f7bd633607c"></a>
+### 2026-07-30 · 公共断言上限指南
+
+- **类型：** `FOUNDATION_OR_GOVERNANCE`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** 公共断言边界治理覆盖定理、定律、证明、必然、唯一、完全、统一、已解决或不可能等强词；它们必须进入 public-claim-lineage.jsonl。该登记只提供可追溯性，不使断言成立。
+- **来源：** [public-claim-ceiling-guidance.md](../docs/foundation/public-claim-ceiling-guidance.md)
+- **资产卡：** [HR-92FC8F7BD633607C](./ASSET-CARDS.md#asset-hr-92fc8f7bd633607c)
+
+<a id="change-src-hr-91f57f34641602bd"></a>
+### 2026-07-30 · Task 98 remote truth and gap lock
+
+- **类型：** `FOUNDATION_OR_GOVERNANCE`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Gap: the existing Foundation separated formal object types and status axes, but did not provide the requested ten-class function identity, independent mathematical/external evidence axes, ten claim-governance gates, a whole-history deterministic census, an anti-rebound withdrawal ledger or author…
+- **来源：** [098-remote-truth-and-gap.md](../reports/foundation-architecture/098-remote-truth-and-gap.md)
+- **资产卡：** [HR-91F57F34641602BD](./ASSET-CARDS.md#asset-hr-91f57f34641602bd)
+
+<a id="change-src-hr-8f6026df1ef643fe"></a>
+### 2026-07-30 · E1 规范性审核 - 线性演化协议 (Linear-Evolution Protocol)
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** 价值：在局部、低耦合、关系稳定、可预测范围内，线性近似是简洁有效的建模与规划工具。条件：仅当系统满足低耦合、关系稳定、可预测，且设反馈与偏差检测时才有价值。伤害：当把复杂生命系统强行简化为直线、忽略临界点时会伤害共同体（误判崩溃）。不可缺少的约束：限定适用域、设反馈点、偏差检测、非线性退出条件、禁止过度简化。
+- **来源：** [E1.md](../docs/governance/meta-protocol-reviews/protocols/E1.md)
+- **资产卡：** [HR-8F6026DF1EF643FE](./ASSET-CARDS.md#asset-hr-8f6026df1ef643fe)
+
+<a id="change-src-hr-8f3c2449dfb9208b"></a>
+### 2026-07-30 · 121Q25C Lifecycle-Gate Deadlock Repair
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Q25B correctly separated completion states but incorrectly required projectsynchronizationcomplete for Accepted. Because Pages can be deployed from main only after merge, this made acceptance and merge mutually unreachable.
+- **来源：** [121Q25C-lifecycle-gate-deadlock-repair.md](../reports/operations/121Q25C-lifecycle-gate-deadlock-repair.md)
+- **资产卡：** [HR-8F3C2449DFB9208B](./ASSET-CARDS.md#asset-hr-8f3c2449dfb9208b)
+
+<a id="change-src-hr-8e4b48d6273130f9"></a>
+### 2026-07-30 · 阶段成果持续快照与分层发布制度
+
+- **类型：** `ARTICLE_OR_PUBLICATION`
+- **状态：** `HISTORICAL_OR_SUPERSEDED_SOURCE`
+- **变化：** Status: Ignition Iteration Method 1.4.0 — Continuous Stage Snapshot Publication（已升为 Current；1.3.0 转为 Historical）。
+- **来源：** [stage-snapshot-publication.md](../docs/operations/stage-snapshot-publication.md)
+- **资产卡：** [HR-8E4B48D6273130F9](./ASSET-CARDS.md#asset-hr-8e4b48d6273130f9)
+
+<a id="change-src-hr-8d592a920b9edd0e"></a>
+### 2026-07-30 · 12 元协议规范性审核（外部治理记录）
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** 原定义： 选择使系统延续时间最大（或延续概率最高）的行动。
+- **来源：** [12-meta-protocol-normative-review.md](../docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md)
+- **资产卡：** [HR-8D592A920B9EDD0E](./ASSET-CARDS.md#asset-hr-8d592a920b9edd0e)
+
+<a id="change-src-hr-8c7e1c2721f6e7fd"></a>
+### 2026-07-30 · map-agent-delivery-operations
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Observer: maintainer coordinating AI execution, validation, PR review, and command-bus receipt
+- **来源：** [map-agent-delivery-operations.md](../reports/atlas/maps/map-agent-delivery-operations.md)
+- **资产卡：** [HR-8C7E1C2721F6E7FD](./ASSET-CARDS.md#asset-hr-8c7e1c2721f6e7fd)
+
+<a id="change-src-hr-8b3081462a058d1a"></a>
+### 2026-07-30 · Effectual Action Plane
+
+- **类型：** `MODEL_OR_ARCHITECTURE`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** Status: 121Q12OPERATIONOVERLAY
+- **来源：** [effectual-action-plane.md](../docs/architecture/effectual-action-plane.md)
+- **资产卡：** [HR-8B3081462A058D1A](./ASSET-CARDS.md#asset-hr-8b3081462a058d1a)
+
+<a id="change-src-hr-8538af7205a1c2d1"></a>
+### 2026-07-30 · 历史函数后续证明与实证路线图
+
+- **类型：** `AUDIT_OR_ADJUDICATION`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** 任务 99 已完成第一轮全量身份卡与处置闭合。未定义、未证明或未建立现实映射的资产不再留在无状态队列，而是逐项进入 unresolved-quarantine.jsonl，并带 resumekey、失败/未决 gate、证明义务、实证义务和依赖影响。
+- **来源：** [function-audit-roadmap.md](../docs/foundation/function-audit-roadmap.md)
+- **资产卡：** [HR-8538AF7205A1C2D1](./ASSET-CARDS.md#asset-hr-8538af7205a1c2d1)
+
+<a id="change-src-hr-851dd1b125828bfd"></a>
+### 2026-07-30 · 083 GLM High Repair Summary
+
+- **类型：** `FOUNDATION_OR_GOVERNANCE`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Date: 2026-07-13 Task: IGNITION-20260709-083 Executor: QClaw GLM-5.2 (pool-glm-5.2) Reasoning Level: high Branch: records/ignition-083-glm-high-repair-and-max-queue-20260713 Base: f0862cc0a827a94e930b78a269c8fdc8a5c5c019 (081 head)
+- **来源：** [083-glm-high-repair-summary.md](../reports/foundation-architecture/083-glm-high-repair-summary.md)
+- **资产卡：** [HR-851DD1B125828BFD](./ASSET-CARDS.md#asset-hr-851dd1b125828bfd)
+
+<a id="change-src-hr-833d1c5e553562bc"></a>
+### 2026-07-30 · 121Q5 Final Report — Canonical Function OS v0.2
+
+- **类型：** `RESEARCH_OR_SOURCE_REVIEW`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Status: CANDIDATE — 46/46 tests PASS Pipeline: N1→N2→N3→N4→N5→N6→N7→N9 (N8 composition) Branch: records/ignition-121q5-v4pro-canonical-function-os-v02-20260715 PR: 40 (OPEN/DRAFT)
+- **来源：** [121Q5-final-report.md](../reports/external-research/121Q5-final-report.md)
+- **资产卡：** [HR-833D1C5E553562BC](./ASSET-CARDS.md#asset-hr-833d1c5e553562bc)
+
+<a id="change-src-hr-821405558993dacd"></a>
+### 2026-07-30 · 121Q23 Adaptive Relational Network Validation
+
+- **类型：** `AUDIT_OR_ADJUDICATION`
+- **状态：** `CANDIDATE_OR_PENDING_SOURCE`
+- **变化：** Status: 121Q23GREADYFORGPTFINALACCEPTANCEASOPERATIONALARNCANDIDATE
+- **来源：** [121Q23-adaptive-relational-network-validation.md](../reports/architecture/121Q23-adaptive-relational-network-validation.md)
+- **资产卡：** [HR-821405558993DACD](./ASSET-CARDS.md#asset-hr-821405558993dacd)
+
+<a id="change-src-hr-7b29778a2b189cd1"></a>
+### 2026-07-30 · IGNITION-106: 105 证据纠错报告
+
+- **类型：** `CORRECTION_OR_WITHDRAWAL`
+- **状态：** `CURRENT_CORRECTION_RECORD`
+- **变化：** 保留: 6条 | 降级: 2条 (S10 PDF编码失败, S13 AEA需JS) CONFIRMED: 6条 | UNRESOLVED: 2条
+- **来源：** [106-105-evidence-correction-report.md](../reports/external-research/106-105-evidence-correction-report.md)
+- **资产卡：** [HR-7B29778A2B189CD1](./ASSET-CARDS.md#asset-hr-7b29778a2b189cd1)
+
+<a id="change-src-hr-7b285d9f5fad1e01"></a>
+### 2026-07-30 · 历史纠偏日志
+
+- **类型：** `CORRECTION_OR_WITHDRAWAL`
+- **状态：** `CURRENT_CORRECTION_RECORD`
+- **变化：** 本日志追加记录强断言如何被撤回、分拆或降级；它不删除原始证据。
+- **来源：** [historical-correction-log.md](../docs/foundation/historical-correction-log.md)
+- **资产卡：** [HR-7B285D9F5FAD1E01](./ASSET-CARDS.md#asset-hr-7b285d9f5fad1e01)
+
+<a id="change-src-hr-771c575b7e09f8bd"></a>
+### 2026-07-30 · 121Q32I Phase D integrated validation closeout
+
+- **类型：** `AUDIT_OR_ADJUDICATION`
+- **状态：** `CANDIDATE_OR_PENDING_SOURCE`
+- **变化：** Status: PHASEDVALIDATIONCLOSEDCANDIDATEONLY
+- **来源：** [121Q32I-phase-d-validation-closeout.md](../reports/operations/121Q32I-phase-d-validation-closeout.md)
+- **资产卡：** [HR-771C575B7E09F8BD](./ASSET-CARDS.md#asset-hr-771c575b7e09f8bd)
+
+<a id="change-src-hr-771c2981fcc20396"></a>
+### 2026-07-30 · 121Q13 Attention, Distribution, And Compression Report
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `CANDIDATE_OR_PENDING_SOURCE`
+- **变化：** Status: READYASATTENTIONDISTRIBUTIONCONTROLCANDIDATE
+- **来源：** [121Q13-attention-distribution-compression.md](../reports/architecture/121Q13-attention-distribution-compression.md)
+- **资产卡：** [HR-771C2981FCC20396](./ASSET-CARDS.md#asset-hr-771c2981fcc20396)
+
+<a id="change-src-hr-75b56a91c97f20be"></a>
+### 2026-07-30 · Future non-function claim admission protocol
+
+- **类型：** `FOUNDATION_OR_GOVERNANCE`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** This protocol is the mandatory entry path for a new theorem, law, principle, mechanism, causal judgment, impossibility result, cross-domain correspondence, prediction, empirical assertion, ontology claim, interpretation rule or public summary. It extends the task 98–99 function-asset governance;…
+- **来源：** [future-claim-admission-protocol.md](../docs/foundation/future-claim-admission-protocol.md)
+- **资产卡：** [HR-75B56A91C97F20BE](./ASSET-CARDS.md#asset-hr-75b56a91c97f20be)
+
+<a id="change-src-hr-7491533b5a81fa71"></a>
+### 2026-07-30 · 历史函数资产全量登记
+
+- **类型：** `FOUNDATION_OR_GOVERNANCE`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** 任务 98 对 formal main 的全部 Git 跟踪文本源执行了确定性扫描。扫描范围包含函数与案例表、Foundation、theory kernels、投影矩阵、元函数、执行器、README/SUMMARY/USAGE、代码以及 JSON/YAML/CSV/Markdown 中的显式编号和隐式命名资产。
+- **来源：** [historical-function-census.md](../docs/foundation/historical-function-census.md)
+- **资产卡：** [HR-7491533B5A81FA71](./ASSET-CARDS.md#asset-hr-7491533b5a81fa71)
+
+<a id="change-src-hr-7178d1b582275868"></a>
+### 2026-07-30 · 121Q30｜首页架构与之元写作法成果展示审计
+
+- **类型：** `AUDIT_OR_ADJUDICATION`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** 本轮把成果展示实现为 L6 内部的可追溯仓库接口，而不是手工链接表或新架构层。README 只保留一套常态项目现状，并按“项目现状 → 之元写作法成果 → 生命共同体价值宪章 → 使用指南”组织；详细能力和完整 AI 提示词均默认折叠。
+- **来源：** [121Q30-homepage-architecture-and-zhiyuan-writing-showcase-audit.md](../reports/operations/121Q30-homepage-architecture-and-zhiyuan-writing-showcase-audit.md)
+- **资产卡：** [HR-7178D1B582275868](./ASSET-CARDS.md#asset-hr-7178d1b582275868)
+
+<a id="change-src-hr-715f3951a2b86789"></a>
+### 2026-07-30 · Charter System R1 — Architecture (Accepted / Current, on main, non-Activated)
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `CURRENT_SCOPED_SOURCE`
+- **变化：** Status: CURRENT (Accepted, non-Activated). Merged to main (merge commit 0e7c032, 2026-07-26) and promoted to Accepted/Current via independent exact-head acceptance + post-merge synchronization. Does not modify any existing charter or governance document's normative content (G2).
+- **来源：** [charter-system-r1.md](../docs/governance/charter-system-r1.md)
+- **资产卡：** [HR-715F3951A2B86789](./ASSET-CARDS.md#asset-hr-715f3951a2b86789)
+
+<a id="change-src-hr-70403729fef8b50e"></a>
+### 2026-07-30 · Non-Sycophancy Output Protocol
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** Status: 121Q12OPERATIONOVERLAY
+- **来源：** [non-sycophancy-output-protocol.md](../docs/governance/non-sycophancy-output-protocol.md)
+- **资产卡：** [HR-70403729FEF8B50E](./ASSET-CARDS.md#asset-hr-70403729fef8b50e)
+
+<a id="change-src-hr-69ae0aeb92225add"></a>
+### 2026-07-30 · 088 阶段1：087 计数与分母审计
+
+- **类型：** `AUDIT_OR_ADJUDICATION`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** 087-v1-1-overlay.md 全程使用分母 143（如 143/143、124/143、123/143 等共9处），但 087 全部数据文件权威学科总数为 250，且投影矩阵中 NOTAPPLICABLE=0（无学科被排除）。143 在 087 任何数据文件中均无对应子集来源，属旧口径错误残留。
+- **来源：** [088-087-count-and-denominator-audit.md](../reports/foundation-architecture/088-087-count-and-denominator-audit.md)
+- **资产卡：** [HR-69AE0AEB92225ADD](./ASSET-CARDS.md#asset-hr-69ae0aeb92225add)
+
+<a id="change-src-hr-67cc7f2c07c67bd9"></a>
+### 2026-07-30 · 121Q30T｜首页与之元写作法成果展示合并收口审计
+
+- **类型：** `AUDIT_OR_ADJUDICATION`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** PR 59 的 accepted HEAD fb550c50dc5ebc385dcebb3b9aa8c768458c6d8c 经 review 4715686225 接受，并以 merge commit 0dfebc661668555a2636f9f59267fd7905368dca 合入 main。合并前重新核验了 PR HEAD/base/mergeability、三条精确 HEAD CI、Q29R 正文 SHA-256 与受限来源边界；accepted HEAD 是 merge commit 和 post-merge main 的祖先。
+- **来源：** [121Q30T-homepage-showcase-merge-current-closeout-audit.md](../reports/operations/121Q30T-homepage-showcase-merge-current-closeout-audit.md)
+- **资产卡：** [HR-67CC7F2C07C67BD9](./ASSET-CARDS.md#asset-hr-67cc7f2c07c67bd9)
+
+<a id="change-src-hr-677152f467e106d4"></a>
+### 2026-07-30 · 强断言门禁
+
+- **类型：** `FOUNDATION_OR_GOVERNANCE`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** THEOREM、AXIOM、ISOMORPHISM、CAUSAL、PROVED 属于受控术语。缺少所需定义、理论、双射、结构保持、干预语义、识别证据或证明工件时必须降级，并记录 unresolved blocker。验证工具只能判断已声明约束是否满足，不输出“理论是真的”。
+- **来源：** [strong-claim-gates.md](../docs/foundation/strong-claim-gates.md)
+- **资产卡：** [HR-677152F467E106D4](./ASSET-CARDS.md#asset-hr-677152f467e106d4)
+
+<a id="change-src-hr-6750bcffe399a4fb"></a>
+### 2026-07-30 · 121Q2R Canonical Reconciliation Report
+
+- **类型：** `RESEARCH_OR_SOURCE_REVIEW`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Date: 2026-07-14T16:53:33Z
+- **来源：** [121Q2R-canonical-reconciliation.md](../reports/external-research/121Q2R-canonical-reconciliation.md)
+- **资产卡：** [HR-6750BCFFE399A4FB](./ASSET-CARDS.md#asset-hr-6750bcffe399a4fb)
+
+<a id="change-src-hr-6585a5fc88149fff"></a>
+### 2026-07-30 · V1 规范性审核 - 延续性协议 (Continuity Protocol)
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** 选择使系统延续时间最大（或延续概率最高）的行动。
+- **来源：** [V1.md](../docs/governance/meta-protocol-reviews/protocols/V1.md)
+- **资产卡：** [HR-6585A5FC88149FFF](./ASSET-CARDS.md#asset-hr-6585a5fc88149fff)
+
+<a id="change-src-hr-654ae58eec903c53"></a>
+### 2026-07-30 · E3 规范性审核 - 循环演化协议 (Cyclic-Evolution Protocol)
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** 价值：生态循环、资源再生、学习迭代、修复与周期性恢复，是再生能力的重要载体。条件：仅当循环是良性、真正再生而非路径依赖或表面重复时才有价值。伤害：当循环退化为恶性循环、路径依赖或锁定有害结构时会伤害共同体。不可缺少的约束：区分良性/恶性、识别路径依赖、支持真正再生、恶性循环须可停止。
+- **来源：** [E3.md](../docs/governance/meta-protocol-reviews/protocols/E3.md)
+- **资产卡：** [HR-654AE58EEC903C53](./ASSET-CARDS.md#asset-hr-654ae58eec903c53)
+
+<a id="change-src-hr-62de12643e577ef4"></a>
+### 2026-07-30 · 084 Architecture Truth Freeze Readiness Assessment
+
+- **类型：** `FOUNDATION_OR_GOVERNANCE`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** 状态: MAXADJUDICATIONCOMPLETEARCHITECTURETRUTHFREEZECANDIDATE
+- **来源：** [084-architecture-truth-freeze-readiness.md](../reports/foundation-architecture/084-architecture-truth-freeze-readiness.md)
+- **资产卡：** [HR-62DE12643E577EF4](./ASSET-CARDS.md#asset-hr-62de12643e577ef4)
+
+<a id="change-src-hr-5e32e96b5ac7b371"></a>
+### 2026-07-30 · 121Q16 Sustainability Signal Pilot
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** READYASSUSTAINABILITYSIGNALINTERFACECANDIDATE.
+- **来源：** [121Q16-sustainability-signal-pilot.md](../reports/reality/121Q16-sustainability-signal-pilot.md)
+- **资产卡：** [HR-5E32E96B5AC7B371](./ASSET-CARDS.md#asset-hr-5e32e96b5ac7b371)
+
+<a id="change-src-hr-5de7359175082aca"></a>
+### 2026-07-30 · 082 Independent Acceptance Audit Report
+
+- **类型：** `AUDIT_OR_ADJUDICATION`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Date: 2026-07-13 Task: IGNITION-20260709-082 Executor: QClaw GLM-5.2 (pool-glm-5.2) Reasoning Level: high
+- **来源：** [082-independent-acceptance-audit.md](../reports/foundation-architecture/082-independent-acceptance-audit.md)
+- **资产卡：** [HR-5DE7359175082ACA](./ASSET-CARDS.md#asset-hr-5de7359175082aca)
+
+<a id="change-src-hr-5b54a4719d10bbc2"></a>
+### 2026-07-30 · 121Q8 Final Report
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `CANDIDATE_OR_PENDING_SOURCE`
+- **变化：** Status: complete pending GPT verification. PR remains OPEN / DRAFT / UNMERGED.
+- **来源：** [121Q8-final-report.md](../reports/governance/121Q8-final-report.md)
+- **资产卡：** [HR-5B54A4719D10BBC2](./ASSET-CARDS.md#asset-hr-5b54a4719d10bbc2)
+
+<a id="change-src-hr-5a6642209467ff3a"></a>
+### 2026-07-30 · IGNITION-ITERATION-METHOD-1.4-CONTINUOUS-STAGE-SNAPSHOT-PUBLICATION-R1-20260726 typed change-propagation impact report
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** 原文件保存该项结果的完整问题、过程与边界。
+- **来源：** [IGNITION-ITERATION-METHOD-1.4-change-propagation-impact.md](../reports/operations/IGNITION-ITERATION-METHOD-1.4-change-propagation-impact.md)
+- **资产卡：** [HR-5A6642209467FF3A](./ASSET-CARDS.md#asset-hr-5a6642209467ff3a)
+
+<a id="change-src-hr-590a8629163938ec"></a>
+### 2026-07-30 · 083 Quality Window Report
+
+- **类型：** `FOUNDATION_OR_GOVERNANCE`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Date: 2026-07-13 Task: IGNITION-20260709-083
+- **来源：** [083-quality-window-report.md](../reports/foundation-architecture/083-quality-window-report.md)
+- **资产卡：** [HR-590A8629163938EC](./ASSET-CARDS.md#asset-hr-590a8629163938ec)
+
+<a id="change-src-hr-57b4f559431d6912"></a>
+### 2026-07-30 · 121Q32 typed change-propagation impact report
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** 原文件保存该项结果的完整问题、过程与边界。
+- **来源：** [121Q32-change-propagation-impact.md](../reports/operations/121Q32-change-propagation-impact.md)
+- **资产卡：** [HR-57B4F559431D6912](./ASSET-CARDS.md#asset-hr-57b4f559431d6912)
+
+<a id="change-src-hr-552359b3880c984a"></a>
+### 2026-07-30 · Legal Full-Text Resolver Report — IGNITION-121
+
+- **类型：** `RESEARCH_OR_SOURCE_REVIEW`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** IGNITION-121 built a reusable, legal full-text resolver for ignition external-research tasks. The resolver operates on a defined protocol that uses only legitimate open-access channels and records every resolution attempt, hash, and failure.
+- **来源：** [121-legal-fulltext-resolver-report.md](../reports/external-research/121-legal-fulltext-resolver-report.md)
+- **资产卡：** [HR-552359B3880C984A](./ASSET-CARDS.md#asset-hr-552359b3880c984a)
+
+<a id="change-src-hr-54b0858dd7fe1388"></a>
+### 2026-07-30 · 1. 标题与机器可读前言
+
+- **类型：** `ARTICLE_OR_PUBLICATION`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** --- title: "IGNITION-20260716-121Q26：金朝崛起为什么这么快——点火分析" taskid: "IGNITION-20260716-121Q26" artifactstatus: "candidaterepositorypublicationanalysis" claimceiling: "mechanismplausible / causalidentificationpending / externalhistoricalverificationrequired" methodversion: "1.1.0" projectmain: "b396c13…
+- **来源：** [jin-rise-point-fire-analysis.md](../reports/publication/jin-rise-point-fire-analysis.md)
+- **资产卡：** [HR-54B0858DD7FE1388](./ASSET-CARDS.md#asset-hr-54b0858dd7fe1388)
+
+<a id="change-src-hr-53d09798ed596327"></a>
+### 2026-07-30 · E4 规范性审核 - 收敛演化协议 (Convergent-Evolution Protocol)
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** 价值：向安全吸引子、合作稳定、风险降低与系统协调收敛，是降低冲突与风险的正向工具。条件：仅当收敛不强制同质化、保留多样性与未来选择空间时才有价值。伤害：当强制同质化、过早收敛、单一占据全部空间时会伤害共同体（锁死未来）。不可缺少的约束：禁止强制同质化、保留多样性、避免过早收敛、保留未来选择空间。
+- **来源：** [E4.md](../docs/governance/meta-protocol-reviews/protocols/E4.md)
+- **资产卡：** [HR-53D09798ED596327](./ASSET-CARDS.md#asset-hr-53d09798ed596327)
+
+<a id="change-src-hr-537499c7917fee41"></a>
+### 2026-07-30 · S2 规范性审核 - 开放边界协议 (Open-Boundary Protocol)
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** 系统允许外部输入、退出、迁移或扩展，边界可渗透。
+- **来源：** [S2.md](../docs/governance/meta-protocol-reviews/protocols/S2.md)
+- **资产卡：** [HR-537499C7917FEE41](./ASSET-CARDS.md#asset-hr-537499c7917fee41)
+
+<a id="change-src-hr-52173a553c421e11"></a>
+### 2026-07-30 · 跨协议一致性红队（外部治理记录）
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** 否。V4 修订定义明确写入"V4 不是绝对压倒一切的价值，须受宪章原则 4（整体不可无限压倒个体）约束"，并在硬约束中列为第 6 条。PASS。
+- **来源：** [cross-protocol-red-team.md](../docs/governance/meta-protocol-reviews/cross-protocol-red-team.md)
+- **资产卡：** [HR-52173A553C421E11](./ASSET-CARDS.md#asset-hr-52173a553c421e11)
+
+<a id="change-src-hr-4f3c4ff4a7ab0e3a"></a>
+### 2026-07-30 · Current Main vs 1.4 Candidate Homepage Comparison
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Task: IGNITION-ITERATION-METHOD-1.4-CONTINUOUS-STAGE-SNAPSHOT-PUBLICATION-R1-20260726
+- **来源：** [IGNITION-ITERATION-METHOD-1.4-homepage-comparison.md](../reports/operations/IGNITION-ITERATION-METHOD-1.4-homepage-comparison.md)
+- **资产卡：** [HR-4F3C4FF4A7AB0E3A](./ASSET-CARDS.md#asset-hr-4f3c4ff4a7ab0e3a)
+
+<a id="change-src-hr-4910d221a74d1112"></a>
+### 2026-07-30 · E2 规范性审核 - 非线性演化协议 (Nonlinear-Evolution Protocol)
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** 价值：承认临界点、放大、涌现与不确定性，是对复杂系统的诚实描述，支撑预防原则。条件：仅当配套预防原则、沙盒、风险上限、可逆操作与实时反馈时才有价值。伤害：当以“不可预测”为由放弃约束、制造不可逆风险时会伤害共同体。不可缺少的约束：预防原则、沙盒、风险上限、可逆操作、实时反馈、区分良性/恶性涌现。
+- **来源：** [E2.md](../docs/governance/meta-protocol-reviews/protocols/E2.md)
+- **资产卡：** [HR-4910D221A74D1112](./ASSET-CARDS.md#asset-hr-4910d221a74d1112)
+
+<a id="change-src-hr-48973e3aa76b6fae"></a>
+### 2026-07-30 · 121Q22 Probability and System Dynamics Gap Audit
+
+- **类型：** `AUDIT_OR_ADJUDICATION`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Status: LOCALPROBABILITYANDSYSTEMCOMPONENTSWITHOUTUNIFIEDEXECUTABLEPSDSEMANTICS
+- **来源：** [121Q22-probability-system-gap-audit.md](../reports/architecture/121Q22-probability-system-gap-audit.md)
+- **资产卡：** [HR-48973E3AA76B6FAE](./ASSET-CARDS.md#asset-hr-48973e3aa76b6fae)
+
+<a id="change-src-hr-47da75ea2c43ef63"></a>
+### 2026-07-30 · Function-Paradigm Full-Text Review Report — IGNITION-121
+
+- **类型：** `RESEARCH_OR_SOURCE_REVIEW`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** This report documents the 121 full-text review of 30 core papers selected from the 84 sources in IGNITION-120. The review focused on identifying source-specific support and non-support for ignition's Function OS model and the six GAPs GAP-015 to GAP-020.
+- **来源：** [121-function-paradigm-fulltext-review-report.md](../reports/external-research/121-function-paradigm-fulltext-review-report.md)
+- **资产卡：** [HR-47DA75EA2C43EF63](./ASSET-CARDS.md#asset-hr-47da75ea2c43ef63)
+
+<a id="change-src-hr-47abfc6ad84da18c"></a>
+### 2026-07-30 · map-maintainer-sustainability-economics
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Observer: maintainer deciding what to keep, rent, automate, standardize, or fund
+- **来源：** [map-maintainer-sustainability-economics.md](../reports/atlas/maps/map-maintainer-sustainability-economics.md)
+- **资产卡：** [HR-47ABFC6AD84DA18C](./ASSET-CARDS.md#asset-hr-47abfc6ad84da18c)
+
+<a id="change-src-hr-45480c716d721c81"></a>
+### 2026-07-30 · 121Q25B Whole-Project Synchronization Contract
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `HISTORICAL_OR_SUPERSEDED_SOURCE`
+- **变化：** Status: superseded non-ready method 1.1.0 Draft candidate on PR 57. Q25C preserves this history and repairs its lifecycle deadlock.
+- **来源：** [121Q25B-whole-project-synchronization-contract.md](../reports/operations/121Q25B-whole-project-synchronization-contract.md)
+- **资产卡：** [HR-45480C716D721C81](./ASSET-CARDS.md#asset-hr-45480c716d721c81)
+
+<a id="change-src-hr-44a1c398c470bbf4"></a>
+### 2026-07-30 · 121Q28S 之元写作法 0.3.0 全项目整合审计
+
+- **类型：** `AUDIT_OR_ADJUDICATION`
+- **状态：** `CANDIDATE_OR_PENDING_SOURCE`
+- **变化：** Status: READYFORGPTVERIFICATIONCANDIDATEONLY
+- **来源：** [121Q28S-zhiyuan-writing-method-whole-project-integration-audit.md](../reports/operations/121Q28S-zhiyuan-writing-method-whole-project-integration-audit.md)
+- **资产卡：** [HR-44A1C398C470BBF4](./ASSET-CARDS.md#asset-hr-44a1c398c470bbf4)
+
+<a id="change-src-hr-4419fea9529c829c"></a>
+### 2026-07-30 · 121Q31T｜交互系统总图与双来源写作素材池合并收口审计
+
+- **类型：** `AUDIT_OR_ADJUDICATION`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** PR 60 的 accepted HEAD b01429144f78305ead32455873e79a11661f04e1 经 review 4718884255 接受，并以 merge commit ed30d3c30966ce28b54652f2ece27bc1bde02658 合入 main。合并前重新核验了 PR HEAD、base、mergeability、精确 HEAD CI、Q29R 哈希、9 组／41 节点／35 边、L0—L6、全部 target 与证据边界；accepted HEAD 是 merge commit 和 post-merge main 的祖先。
+- **来源：** [121Q31T-interactive-system-map-and-writing-pool-merge-current-closeout-audit.md](../reports/operations/121Q31T-interactive-system-map-and-writing-pool-merge-current-closeout-audit.md)
+- **资产卡：** [HR-4419FEA9529C829C](./ASSET-CARDS.md#asset-hr-4419fea9529c829c)
+
+<a id="change-src-hr-43bf10109af2485e"></a>
+### 2026-07-30 · External Input Non-Republication Principle
+
+- **类型：** `ARTICLE_OR_PUBLICATION`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** 本原则适用于所有从项目外部获得的材料，包括但不限于：
+- **来源：** [external-input-non-republication-principle.md](../docs/governance/external-input-non-republication-principle.md)
+- **资产卡：** [HR-43BF10109AF2485E](./ASSET-CARDS.md#asset-hr-43bf10109af2485e)
+
+<a id="change-src-hr-4172fa0da3a40b1e"></a>
+### 2026-07-30 · 断言治理与函数身份规范
+
+- **类型：** `FOUNDATION_OR_GOVERNANCE`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** 本规范是 Foundation 的现行认识论边界。它管理项目如何命名、计算、测试、展示和撤回断言；它不把治理规则本身伪装成外部科学结论。
+- **来源：** [claim-governance-and-function-identity.md](../docs/foundation/claim-governance-and-function-identity.md)
+- **资产卡：** [HR-4172FA0DA3A40B1E](./ASSET-CARDS.md#asset-hr-4172fa0da3a40b1e)
+
+<a id="change-src-hr-4021615f6416219a"></a>
+### 2026-07-30 · 121Q10 Emergent Current State and License Text Finalization
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `CANDIDATE_OR_PENDING_SOURCE`
+- **变化：** Status: READYFORFINALRELEASEDECISION pending final remote CI observation on this head.
+- **来源：** [121Q10-emergent-state-license-finalization.md](../reports/release/121Q10-emergent-state-license-finalization.md)
+- **资产卡：** [HR-4021615F6416219A](./ASSET-CARDS.md#asset-hr-4021615f6416219a)
+
+<a id="change-src-hr-3da265b74da19421"></a>
+### 2026-07-30 · 函数资产作者指南
+
+- **类型：** `FOUNDATION_OR_GOVERNANCE`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** 提交任何名为函数、模型、定理、公式、律或判定器的资产时：
+- **来源：** [function-asset-authoring-guide.md](../docs/foundation/function-asset-authoring-guide.md)
+- **资产卡：** [HR-3DA265B74DA19421](./ASSET-CARDS.md#asset-hr-3da265b74da19421)
+
+<a id="change-src-hr-3d02f20fb6692a0c"></a>
+### 2026-07-30 · 121Q31｜完整可点击系统图与双来源写作素材池审计
+
+- **类型：** `AUDIT_OR_ADJUDICATION`
+- **状态：** `CANDIDATE_OR_PENDING_SOURCE`
+- **变化：** Status: READYFORGPTVERIFICATIONCANDIDATEONLY
+- **来源：** [121Q31-interactive-system-map-and-writing-source-pool-audit.md](../reports/operations/121Q31-interactive-system-map-and-writing-source-pool-audit.md)
+- **资产卡：** [HR-3D02F20FB6692A0C](./ASSET-CARDS.md#asset-hr-3d02f20fb6692a0c)
+
+<a id="change-src-hr-3b5e72d7f1cdfb5b"></a>
+### 2026-07-30 · 之元写作法：内部范例与反例
+
+- **类型：** `ARTICLE_OR_PUBLICATION`
+- **状态：** `CURRENT_SCOPED_SOURCE`
+- **变化：** Version: 0.3.0 Status: CURRENTINTERNALEXAMPLES
+- **来源：** [zhiyuan-writing-examples.md](../docs/publication/zhiyuan-writing-examples.md)
+- **资产卡：** [HR-3B5E72D7F1CDFB5B](./ASSET-CARDS.md#asset-hr-3b5e72d7f1cdfb5b)
+
+<a id="change-src-hr-3785d4850d94b77e"></a>
+### 2026-07-30 · Task 100 — corpus-wide non-function claim adjudication and evidence-lineage closure
+
+- **类型：** `FOUNDATION_OR_GOVERNANCE`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** The task-100 registry gives each reproducibly discovered non-function claim candidate one canonical record, source lineage, thirteen audit results, independent M/E maturity, dependency resolution, evidence status, disposition and public wording ceiling. Closure is accounting closure by dispositio…
+- **来源：** [100-nonfunction-claim-evidence-lineage-closure.md](../reports/foundation-architecture/100-nonfunction-claim-evidence-lineage-closure.md)
+- **资产卡：** [HR-3785D4850D94B77E](./ASSET-CARDS.md#asset-hr-3785d4850d94b77e)
+
+<a id="change-src-hr-369f261001c4ece1"></a>
+### 2026-07-30 · 121Q25 Human Front-Door Audit
+
+- **类型：** `AUDIT_OR_ADJUDICATION`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Starting main: 7fc4b309720ea1b4e9c4b47477c2f423860d53df.
+- **来源：** [121Q25-front-door-audit.md](../reports/operations/121Q25-front-door-audit.md)
+- **资产卡：** [HR-369F261001C4ECE1](./ASSET-CARDS.md#asset-hr-369f261001c4ece1)
+
+<a id="change-src-hr-3611a9bf0615b4e7"></a>
+### 2026-07-30 · Foundation documentation
+
+- **类型：** `FOUNDATION_OR_GOVERNANCE`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** 076 将“来源、命题、对象、论证、证明、验证、出版”拆开管理。先读根目录 FOUNDATION.md，再按数学、逻辑、注册表、状态、门禁和迁移文档工作。旧 L0-L5 声明等级如仍在历史文档出现，只是 legacy assertion grade，不等于本架构七层。
+- **来源：** [README.md](../docs/foundation/README.md)
+- **资产卡：** [HR-3611A9BF0615B4E7](./ASSET-CARDS.md#asset-hr-3611a9bf0615b4e7)
+
+<a id="change-src-hr-3069e59a51d869c3"></a>
+### 2026-07-30 · 121Q28 肉身锚定的心智层级跃迁写作法审计
+
+- **类型：** `AUDIT_OR_ADJUDICATION`
+- **状态：** `CANDIDATE_OR_PENDING_SOURCE`
+- **变化：** Status: READYFORGPTVERIFICATIONCANDIDATEONLY
+- **来源：** [121Q28-embodied-cognitive-leap-writing-method-audit.md](../reports/operations/121Q28-embodied-cognitive-leap-writing-method-audit.md)
+- **资产卡：** [HR-3069E59A51D869C3](./ASSET-CARDS.md#asset-hr-3069e59a51d869c3)
+
+<a id="change-src-hr-2df668dbdc482ed7"></a>
+### 2026-07-30 · 注册表契约
+
+- **类型：** `FOUNDATION_OR_GOVERNANCE`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** 稳定实体去重键为 assetkind、normalizednamespace、normalizedid；文件表示键为 entitykey、path、gitblobsha。所有引用使用 entitykey。对象与命题分离；命题与论证分离；案例只进入 evidence；proof artifact 与 validation record 不混用。
+- **来源：** [registry-contract.md](../docs/foundation/registry-contract.md)
+- **资产卡：** [HR-2DF668DBDC482ED7](./ASSET-CARDS.md#asset-hr-2df668dbdc482ed7)
+
+<a id="change-src-hr-2dd772b06269e251"></a>
+### 2026-07-30 · Architecture Structure Freeze v1
+
+- **类型：** `FOUNDATION_OR_GOVERNANCE`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** ARCHITECTURESTRUCTUREFROZENCLAIMTRUTHPROVISIONAL
+- **来源：** [architecture-structure-freeze-v1.md](../docs/foundation/architecture-structure-freeze-v1.md)
+- **资产卡：** [HR-2DD772B06269E251](./ASSET-CARDS.md#asset-hr-2dd772b06269e251)
+
+<a id="change-src-hr-2cf0c16a60d1a3af"></a>
+### 2026-07-30 · 104 来源质量审计
+
+- **类型：** `RESEARCH_OR_SOURCE_REVIEW`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** 问题：大小写不一致（ARTICLE vs journalarticle vs journal-article），需标准化。
+- **来源：** [104-source-quality-audit.md](../reports/external-research/104-source-quality-audit.md)
+- **资产卡：** [HR-2CF0C16A60D1A3AF](./ASSET-CARDS.md#asset-hr-2cf0c16a60d1a3af)
+
+<a id="change-src-hr-2ad47297310f2b9a"></a>
+### 2026-07-30 · 121Q16 Action Selection
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Status: ACTIONTHRESHOLDMET
+- **来源：** [121Q16-action-selection.md](../reports/reality/121Q16-action-selection.md)
+- **资产卡：** [HR-2AD47297310F2B9A](./ASSET-CARDS.md#asset-hr-2ad47297310f2b9a)
+
+<a id="change-src-hr-25db71123fa1cbc7"></a>
+### 2026-07-30 · 元协议规范性审核（外部治理记录）
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** 本目录为外部治理记录，不修改 canonical 协议状态、不替代事实验证、不替代独立人类复核、不替代治理批准、不宣布协议正式晋级。V2、V3 保留为黄色协议（事实度量 pending），不在本任务中自行发明全成本公式或可逆性指数并冒充已验证标准。
+- **来源：** [README.md](../docs/governance/meta-protocol-reviews/README.md)
+- **资产卡：** [HR-25DB71123FA1CBC7](./ASSET-CARDS.md#asset-hr-25db71123fa1cbc7)
+
+<a id="change-src-hr-25ccad6cef81cbea"></a>
+### 2026-07-30 · 当一支军队开始相信自己的背影
+
+- **类型：** `ARTICLE_OR_PUBLICATION`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** 他可能只是看见前方的旗变了方向，几匹马逆着队列奔来。也许那是传令，也许主将正在调动一支小队，也许真正的战斗还远没有分出胜负。但他站得太低，看不见全局；箭矢和马蹄也不会给他时间核实。他后退一步，想为自己留下半息余地。
+- **来源：** [when-an-army-believes-its-own-back.md](../docs/publication/works/when-an-army-believes-its-own-back.md)
+- **资产卡：** [HR-25CCAD6CEF81CBEA](./ASSET-CARDS.md#asset-hr-25ccad6cef81cbea)
+
+<a id="change-src-hr-259784cecbb2dc49"></a>
+### 2026-07-30 · 121Q13 Baseline And Overlap Audit
+
+- **类型：** `AUDIT_OR_ADJUDICATION`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** 121Q13 starts from 121Q12 Draft PR 47 head 338cfff999e26dce623c6c55d810587db4a668ba.
+- **来源：** [121Q13-baseline-overlap-audit.md](../reports/architecture/121Q13-baseline-overlap-audit.md)
+- **资产卡：** [HR-259784CECBB2DC49](./ASSET-CARDS.md#asset-hr-259784cecbb2dc49)
+
+<a id="change-src-hr-215773989a96f879"></a>
+### 2026-07-30 · 121A Night Recovery Report
+
+- **类型：** `RESEARCH_OR_SOURCE_REVIEW`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** IGNITION-121A was executed by QClaw (model: qclaw/pool-glm-5.2-night, reasoning: high) on 2026-07-14 to recover Kimi-K2.7's partial 121 work, audit all outputs, repair format issues, and form a clean checkpoint for resumption.
+- **来源：** [121A-night-recovery-report.md](../reports/external-research/121A-night-recovery-report.md)
+- **资产卡：** [HR-215773989A96F879](./ASSET-CARDS.md#asset-hr-215773989a96f879)
+
+<a id="change-src-hr-1fc7367092e0045c"></a>
+### 2026-07-30 · Task 98 claim-governance implementation record
+
+- **类型：** `FOUNDATION_OR_GOVERNANCE`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** The Foundation distinguished formal types and nine statuses, but it had no authoritative ten-class function-identity overlay, no independent M/E axes, no ten-gate claim-governance framework, no whole-history stable census, and no anti-rebound correction record for the exposed physics assets.
+- **来源：** [098-claim-governance-implementation.md](../reports/foundation-architecture/098-claim-governance-implementation.md)
+- **资产卡：** [HR-1FC7367092E0045C](./ASSET-CARDS.md#asset-hr-1fc7367092e0045c)
+
+<a id="change-src-hr-1faefff9c300160f"></a>
+### 2026-07-30 · S4 规范性审核 - 网络协议 (Network Protocol)
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** 价值：分布式协作、多中心治理、冗余、知识共享与局部失效隔离，提升系统韧性。条件：仅当责任可追溯、无隐形中心垄断、且局部失效可隔离时才有价值。伤害：当责任消失、隐形中心垄断、信息传染或网络效应锁定时，会伤害共同体。不可缺少的约束：责任可追溯、防止隐形中心、反锁定、局部失效隔离、多中心。
+- **来源：** [S4.md](../docs/governance/meta-protocol-reviews/protocols/S4.md)
+- **资产卡：** [HR-1FAEFFF9C300160F](./ASSET-CARDS.md#asset-hr-1faefff9c300160f)
+
+<a id="change-src-hr-1ee77928279485fa"></a>
+### 2026-07-30 · Multiscale Causal Fabric / 多尺度因果织体
+
+- **类型：** `MODEL_OR_ARCHITECTURE`
+- **状态：** `CANDIDATE_OR_PENDING_SOURCE`
+- **变化：** Status: candidate derived representation.
+- **来源：** [multiscale-causal-fabric.md](../docs/architecture/multiscale-causal-fabric.md)
+- **资产卡：** [HR-1EE77928279485FA](./ASSET-CARDS.md#asset-hr-1ee77928279485fa)
+
+<a id="change-src-hr-1d52767df2986dd5"></a>
+### 2026-07-30 · 121Q25D current closeout
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** PR 57 merged the independently accepted Q25C exact candidate through an ordinary merge commit. The first main-sourced Foundation, Function OS and Pages runs succeeded, production Pages deployed from main, and a cache-bypassed live fetch exposed MCF, PSD, ARN, the iteration method, direct architec…
+- **来源：** [121Q25D-current-closeout.md](../reports/operations/121Q25D-current-closeout.md)
+- **资产卡：** [HR-1D52767DF2986DD5](./ASSET-CARDS.md#asset-hr-1d52767df2986dd5)
+
+<a id="change-src-hr-1c89ea0a4c2a0aa1"></a>
+### 2026-07-30 · map-epistemic-architecture
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Observer: maintainer and reviewer deciding how claims can move toward publication
+- **来源：** [map-epistemic-architecture.md](../reports/atlas/maps/map-epistemic-architecture.md)
+- **资产卡：** [HR-1C89EA0A4C2A0AA1](./ASSET-CARDS.md#asset-hr-1c89ea0a4c2a0aa1)
+
+<a id="change-src-hr-1c6a8f5e8b981082"></a>
+### 2026-07-30 · 121B Fulltext Batch Report
+
+- **类型：** `RESEARCH_OR_SOURCE_REVIEW`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** 121B successfully published the 121A local checkpoint to a clean remote branch, completed batch legal fulltext resolution for all 84 sources, and generated the 121C semantic review queue. Of 84 sources, 79 were successfully downloaded (74 original + 5 retry), 5 remain failed with explicit failure…
+- **来源：** [121b-fulltext-batch-report.md](../reports/external-research/121b-fulltext-batch-report.md)
+- **资产卡：** [HR-1C6A8F5E8B981082](./ASSET-CARDS.md#asset-hr-1c6a8f5e8b981082)
+
+<a id="change-src-hr-1c328f9ffe6aee1f"></a>
+### 2026-07-30 · V4 规范性审核 - 可持续性协议 (Sustainability Protocol)
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** 价值：在多时间尺度上维持再生能力、承载能力、多样性与代际公平，是共同体长期繁荣的硬边界。条件：仅当它指向再生与公平，而非维持有害现状时才有价值。伤害：当它被用作保护有害系统、压制必要改革或牺牲主体尊严的借口时，会伤害共同体。不可缺少的约束：再生优先于存量维持、不得保护有害系统、代际公平、多样性、不得无限压倒个体。
+- **来源：** [V4.md](../docs/governance/meta-protocol-reviews/protocols/V4.md)
+- **资产卡：** [HR-1C328F9FFE6AEE1F](./ASSET-CARDS.md#asset-hr-1c328f9ffe6aee1f)
+
+<a id="change-src-hr-1437a5c9924f3c9e"></a>
+### 2026-07-30 · IGNITION-121Q6C 执行结果
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** 执行者：QClaw（Hy3） 状态：121Q6C 完成（Step 000–007）
+- **来源：** [IGNITION-121Q6C-result.md](../agent-results/IGNITION-121Q6C-result.md)
+- **资产卡：** [HR-1437A5C9924F3C9E](./ASSET-CARDS.md#asset-hr-1437a5c9924f3c9e)
+
+<a id="change-src-hr-1255e91e43370b8e"></a>
+### 2026-07-30 · 085: Backlog Prioritization
+
+- **类型：** `FOUNDATION_OR_GOVERNANCE`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** 文件: data/foundation/work-queues/085-proof-priority-queue.jsonl
+- **来源：** [085-backlog-prioritization.md](../reports/foundation-architecture/085-backlog-prioritization.md)
+- **资产卡：** [HR-1255E91E43370B8E](./ASSET-CARDS.md#asset-hr-1255e91e43370b8e)
+
+<a id="change-src-hr-0ef7472961a343e5"></a>
+### 2026-07-30 · Mechanism Adjudication Plane
+
+- **类型：** `AUDIT_OR_ADJUDICATION`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** Status: 121Q12OPERATIONOVERLAY
+- **来源：** [mechanism-adjudication-plane.md](../docs/architecture/mechanism-adjudication-plane.md)
+- **资产卡：** [HR-0EF7472961A343E5](./ASSET-CARDS.md#asset-hr-0ef7472961a343e5)
+
+<a id="change-src-hr-0ef2189bb50603b7"></a>
+### 2026-07-30 · 121Q22 Probabilistic System Dynamics Validation
+
+- **类型：** `AUDIT_OR_ADJUDICATION`
+- **状态：** `CANDIDATE_OR_PENDING_SOURCE`
+- **变化：** Status: 121Q22READYASPROBABILISTICSYSTEMDYNAMICSCANDIDATE
+- **来源：** [121Q22-probabilistic-system-dynamics-validation.md](../reports/architecture/121Q22-probabilistic-system-dynamics-validation.md)
+- **资产卡：** [HR-0EF2189BB50603B7](./ASSET-CARDS.md#asset-hr-0ef2189bb50603b7)
+
+<a id="change-src-hr-0a190293ca8a50ae"></a>
+### 2026-07-30 · 迁移与回滚
+
+- **类型：** `FOUNDATION_OR_GOVERNANCE`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** 迁移读取 075 head 的 legacy 文件，按稳定 ID 去重并生成新注册表及兼容视图。它不修改旧表、不删除候选、不重编号。回滚只移除 data/foundation/、schemas/foundation/、views/ 及关联生成报告；原始表和历史报告仍可审计。
+- **来源：** [migration.md](../docs/foundation/migration.md)
+- **资产卡：** [HR-0A190293CA8A50AE](./ASSET-CARDS.md#asset-hr-0a190293ca8a50ae)
+
+<a id="change-src-hr-081b7e1fafaa5756"></a>
+### 2026-07-30 · 104 双 088 归并与外部证据层定版报告
+
+- **类型：** `RESEARCH_OR_SOURCE_REVIEW`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** PARTIALEXTERNALEVIDENCELAYERWITHEXPLICITBLOCKERS
+- **来源：** [104-dual-088-reconciliation.md](../reports/external-research/104-dual-088-reconciliation.md)
+- **资产卡：** [HR-081B7E1FAFAA5756](./ASSET-CARDS.md#asset-hr-081b7e1fafaa5756)
+
+<a id="change-src-hr-07eaa526c5114401"></a>
+### 2026-07-30 · 持续自我纠错引擎
+
+- **类型：** `CORRECTION_OR_WITHDRAWAL`
+- **状态：** `CURRENT_CORRECTION_RECORD`
+- **变化：** 本引擎把任务 98—100 的断言治理、函数注册表与证据谱系接到每次知识资产变化上。它自动建立“变化 → 关联断言 → 依赖影响 → 证据链 → 风险规则 → 整改计划 → 人类结果”，但不把自动检测当成数学证明、专家裁决或外部真理。
+- **来源：** [self-correction-engine.md](../docs/governance/self-correction-engine.md)
+- **资产卡：** [HR-07EAA526C5114401](./ASSET-CARDS.md#asset-hr-07eaa526c5114401)
+
+<a id="change-src-hr-04e3c04b5c9de706"></a>
+### 2026-07-30 · 101 人类可读知识表面与持续自我纠错引擎
+
+- **类型：** `CORRECTION_OR_WITHDRAWAL`
+- **状态：** `CURRENT_CORRECTION_RECORD`
+- **变化：** 状态：IMPLEMENTEDAWAITINGEXACTHEADREVIEWANDORDINARYMERGE
+- **来源：** [101-human-readable-surfaces-self-correction-closeout.md](../reports/foundation-architecture/101-human-readable-surfaces-self-correction-closeout.md)
+- **资产卡：** [HR-04E3C04B5C9DE706](./ASSET-CARDS.md#asset-hr-04e3c04b5c9de706)
+
+<a id="change-src-hr-0450dd379222f5ba"></a>
+### 2026-07-30 · 121Q9 Global Validation
+
+- **类型：** `AUDIT_OR_ADJUDICATION`
+- **状态：** `CANDIDATE_OR_PENDING_SOURCE`
+- **变化：** Status: PASS locally for cumulative release candidate Step 003.
+- **来源：** [121Q9-global-validation.md](../reports/release/121Q9-global-validation.md)
+- **资产卡：** [HR-0450DD379222F5BA](./ASSET-CARDS.md#asset-hr-0450dd379222f5ba)
 
 <a id="change-chg-101"></a>
 ### 2026-07-29 · 仓库 Markdown 人类阅读层与持续自我纠错引擎
@@ -66,123 +1344,6 @@
 - **来源：** [physics-asset-correction-20260729.md](../docs/foundation/physics-asset-correction-20260729.md) · [CORRECTIONS.md](../RESULTS/CORRECTIONS.md)
 - **替代/撤回：** `PHYSICS_UNIFICATION_NOGO`, `FOUR_FORCE_UNIFICATION_CLAIM`
 
-<a id="change-src-hr-addcb11c670ad242"></a>
-### 2026-07-29 · 全语料非函数型断言裁决索引
-
-- **类型：** `AUDIT_OR_ADJUDICATION`
-- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
-- **变化：** 机器完整表：data/foundation/nonfunction-claims/。未来断言入口：docs/foundation/future-claim-admission-protocol.md。
-- **来源：** [nonfunction-claim-adjudication-index.md](../docs/foundation/nonfunction-claim-adjudication-index.md)
-- **资产卡：** [HR-ADDCB11C670AD242](./ASSET-CARDS.md#asset-hr-addcb11c670ad242)
-
-<a id="change-src-hr-a53421dea2f6cdca"></a>
-### 2026-07-29 · 099 Function Asset Registry Closure
-
-- **类型：** `FOUNDATION_OR_GOVERNANCE`
-- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **变化：** Task 99 reuses the task-98 governance layer and expands discovery to executable declarations and searchable formula candidates. The result is a one-record-per-discovery identity-card registry, an obligation ledger, dependency closure, counterexample registry, public-claim lineage and explicit qua…
-- **来源：** [099-function-asset-registry-closure.md](../reports/foundation-architecture/099-function-asset-registry-closure.md)
-- **资产卡：** [HR-A53421DEA2F6CDCA](./ASSET-CARDS.md#asset-hr-a53421dea2f6cdca)
-
-<a id="change-src-hr-996ef89e3a670484"></a>
-### 2026-07-29 · 函数资产注册表迁移 R2
-
-- **类型：** `FOUNDATION_OR_GOVERNANCE`
-- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
-- **变化：** 任务 98 的 census.jsonl 是自动发现候选，十类标签只用于排队。任务 99 增加十二类 canonical identity card 和最终处置层。权威顺序变为：任务 98 人工纠偏 overlay → 既有 Foundation 来源文本审定 → 任务 99 可执行源码裁决或显式 quarantine → 自动 census → legacy 原文。
-- **来源：** [function-asset-registry-migration-r2.md](../docs/foundation/function-asset-registry-migration-r2.md)
-- **资产卡：** [HR-996EF89E3A670484](./ASSET-CARDS.md#asset-hr-996ef89e3a670484)
-
-<a id="change-src-hr-990891f8efa72ff7"></a>
-### 2026-07-29 · Task 98 dependency impact
-
-- **类型：** `FOUNDATION_OR_GOVERNANCE`
-- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **变化：** The generated graph contains 1,923 declared consumer - dependency edges across 541 assets with dependencies. This report binds the first correction set to both its outgoing declarations and all direct reverse consumers.
-- **来源：** [098-dependency-impact.md](../reports/foundation-architecture/098-dependency-impact.md)
-- **资产卡：** [HR-990891F8EFA72FF7](./ASSET-CARDS.md#asset-hr-990891f8efa72ff7)
-
-<a id="change-src-hr-92fc8f7bd633607c"></a>
-### 2026-07-29 · 公共断言上限指南
-
-- **类型：** `FOUNDATION_OR_GOVERNANCE`
-- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
-- **变化：** 公共断言边界治理覆盖定理、定律、证明、必然、唯一、完全、统一、已解决或不可能等强词；它们必须进入 public-claim-lineage.jsonl。该登记只提供可追溯性，不使断言成立。
-- **来源：** [public-claim-ceiling-guidance.md](../docs/foundation/public-claim-ceiling-guidance.md)
-- **资产卡：** [HR-92FC8F7BD633607C](./ASSET-CARDS.md#asset-hr-92fc8f7bd633607c)
-
-<a id="change-src-hr-91f57f34641602bd"></a>
-### 2026-07-29 · Task 98 remote truth and gap lock
-
-- **类型：** `FOUNDATION_OR_GOVERNANCE`
-- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **变化：** Gap: the existing Foundation separated formal object types and status axes, but did not provide the requested ten-class function identity, independent mathematical/external evidence axes, ten claim-governance gates, a whole-history deterministic census, an anti-rebound withdrawal ledger or author…
-- **来源：** [098-remote-truth-and-gap.md](../reports/foundation-architecture/098-remote-truth-and-gap.md)
-- **资产卡：** [HR-91F57F34641602BD](./ASSET-CARDS.md#asset-hr-91f57f34641602bd)
-
-<a id="change-src-hr-8538af7205a1c2d1"></a>
-### 2026-07-29 · 历史函数后续证明与实证路线图
-
-- **类型：** `AUDIT_OR_ADJUDICATION`
-- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
-- **变化：** 任务 99 已完成第一轮全量身份卡与处置闭合。未定义、未证明或未建立现实映射的资产不再留在无状态队列，而是逐项进入 unresolved-quarantine.jsonl，并带 resumekey、失败/未决 gate、证明义务、实证义务和依赖影响。
-- **来源：** [function-audit-roadmap.md](../docs/foundation/function-audit-roadmap.md)
-- **资产卡：** [HR-8538AF7205A1C2D1](./ASSET-CARDS.md#asset-hr-8538af7205a1c2d1)
-
-<a id="change-src-hr-7b285d9f5fad1e01"></a>
-### 2026-07-29 · 历史纠偏日志
-
-- **类型：** `CORRECTION_OR_WITHDRAWAL`
-- **状态：** `CURRENT_CORRECTION_RECORD`
-- **变化：** 本日志追加记录强断言如何被撤回、分拆或降级；它不删除原始证据。
-- **来源：** [historical-correction-log.md](../docs/foundation/historical-correction-log.md)
-- **资产卡：** [HR-7B285D9F5FAD1E01](./ASSET-CARDS.md#asset-hr-7b285d9f5fad1e01)
-
-<a id="change-src-hr-75b56a91c97f20be"></a>
-### 2026-07-29 · Future non-function claim admission protocol
-
-- **类型：** `FOUNDATION_OR_GOVERNANCE`
-- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
-- **变化：** This protocol is the mandatory entry path for a new theorem, law, principle, mechanism, causal judgment, impossibility result, cross-domain correspondence, prediction, empirical assertion, ontology claim, interpretation rule or public summary. It extends the task 98–99 function-asset governance;…
-- **来源：** [future-claim-admission-protocol.md](../docs/foundation/future-claim-admission-protocol.md)
-- **资产卡：** [HR-75B56A91C97F20BE](./ASSET-CARDS.md#asset-hr-75b56a91c97f20be)
-
-<a id="change-src-hr-7491533b5a81fa71"></a>
-### 2026-07-29 · 历史函数资产全量登记
-
-- **类型：** `FOUNDATION_OR_GOVERNANCE`
-- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
-- **变化：** 任务 98 对 formal main 的全部 Git 跟踪文本源执行了确定性扫描。扫描范围包含函数与案例表、Foundation、theory kernels、投影矩阵、元函数、执行器、README/SUMMARY/USAGE、代码以及 JSON/YAML/CSV/Markdown 中的显式编号和隐式命名资产。
-- **来源：** [historical-function-census.md](../docs/foundation/historical-function-census.md)
-- **资产卡：** [HR-7491533B5A81FA71](./ASSET-CARDS.md#asset-hr-7491533b5a81fa71)
-
-<a id="change-src-hr-4172fa0da3a40b1e"></a>
-### 2026-07-29 · 断言治理与函数身份规范
-
-- **类型：** `FOUNDATION_OR_GOVERNANCE`
-- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
-- **变化：** 本规范是 Foundation 的现行认识论边界。它管理项目如何命名、计算、测试、展示和撤回断言；它不把治理规则本身伪装成外部科学结论。
-- **来源：** [claim-governance-and-function-identity.md](../docs/foundation/claim-governance-and-function-identity.md)
-- **资产卡：** [HR-4172FA0DA3A40B1E](./ASSET-CARDS.md#asset-hr-4172fa0da3a40b1e)
-
-<a id="change-src-hr-3da265b74da19421"></a>
-### 2026-07-29 · 函数资产作者指南
-
-- **类型：** `FOUNDATION_OR_GOVERNANCE`
-- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
-- **变化：** 提交任何名为函数、模型、定理、公式、律或判定器的资产时：
-- **来源：** [function-asset-authoring-guide.md](../docs/foundation/function-asset-authoring-guide.md)
-- **资产卡：** [HR-3DA265B74DA19421](./ASSET-CARDS.md#asset-hr-3da265b74da19421)
-
-<a id="change-src-hr-3785d4850d94b77e"></a>
-### 2026-07-29 · Task 100 — corpus-wide non-function claim adjudication and evidence-lineage closure
-
-- **类型：** `FOUNDATION_OR_GOVERNANCE`
-- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **变化：** The task-100 registry gives each reproducibly discovered non-function claim candidate one canonical record, source lineage, thirteen audit results, independent M/E maturity, dependency resolution, evidence status, disposition and public wording ceiling. Closure is accounting closure by dispositio…
-- **来源：** [100-nonfunction-claim-evidence-lineage-closure.md](../reports/foundation-architecture/100-nonfunction-claim-evidence-lineage-closure.md)
-- **资产卡：** [HR-3785D4850D94B77E](./ASSET-CARDS.md#asset-hr-3785d4850d94b77e)
-
 <a id="change-src-hr-2bf3c3a1ac552110"></a>
 ### 2026-07-29 · 历史函数资产深度裁决与注册表闭合 R1
 
@@ -201,33 +1362,6 @@
 - **来源：** [physics-asset-correction-20260729.md](../docs/foundation/physics-asset-correction-20260729.md)
 - **资产卡：** [HR-279683B750652AC6](./ASSET-CARDS.md#asset-hr-279683b750652ac6)
 
-<a id="change-src-hr-1fc7367092e0045c"></a>
-### 2026-07-29 · Task 98 claim-governance implementation record
-
-- **类型：** `FOUNDATION_OR_GOVERNANCE`
-- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **变化：** The Foundation distinguished formal types and nine statuses, but it had no authoritative ten-class function-identity overlay, no independent M/E axes, no ten-gate claim-governance framework, no whole-history stable census, and no anti-rebound correction record for the exposed physics assets.
-- **来源：** [098-claim-governance-implementation.md](../reports/foundation-architecture/098-claim-governance-implementation.md)
-- **资产卡：** [HR-1FC7367092E0045C](./ASSET-CARDS.md#asset-hr-1fc7367092e0045c)
-
-<a id="change-src-hr-07eaa526c5114401"></a>
-### 2026-07-29 · 持续自我纠错引擎
-
-- **类型：** `CORRECTION_OR_WITHDRAWAL`
-- **状态：** `CURRENT_CORRECTION_RECORD`
-- **变化：** 本引擎把任务 98—100 的断言治理、函数注册表与证据谱系接到每次知识资产变化上。它自动建立“变化 → 关联断言 → 依赖影响 → 证据链 → 风险规则 → 整改计划 → 人类结果”，但不把自动检测当成数学证明、专家裁决或外部真理。
-- **来源：** [self-correction-engine.md](../docs/governance/self-correction-engine.md)
-- **资产卡：** [HR-07EAA526C5114401](./ASSET-CARDS.md#asset-hr-07eaa526c5114401)
-
-<a id="change-src-hr-04e3c04b5c9de706"></a>
-### 2026-07-29 · 101 人类可读知识表面与持续自我纠错引擎
-
-- **类型：** `CORRECTION_OR_WITHDRAWAL`
-- **状态：** `CURRENT_CORRECTION_RECORD`
-- **变化：** 状态：IMPLEMENTEDAWAITINGEXACTHEADREVIEWANDORDINARYMERGE
-- **来源：** [101-human-readable-surfaces-self-correction-closeout.md](../reports/foundation-architecture/101-human-readable-surfaces-self-correction-closeout.md)
-- **资产卡：** [HR-04E3C04B5C9DE706](./ASSET-CARDS.md#asset-hr-04e3c04b5c9de706)
-
 <a id="change-src-hr-bda837b6080acf95"></a>
 ### 2026-07-26 · IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-GATE-NARROW-REPAIR-R1-20260726 typed change-propagation impact report
 
@@ -236,33 +1370,6 @@
 - **变化：** 原文件保存该项结果的完整问题、过程与边界。
 - **来源：** [IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-GATE-NARROW-REPAIR-R1-20260726-change-propagation-impact.md](../reports/operations/IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-GATE-NARROW-REPAIR-R1-20260726-change-propagation-impact.md)
 - **资产卡：** [HR-BDA837B6080ACF95](./ASSET-CARDS.md#asset-hr-bda837b6080acf95)
-
-<a id="change-src-hr-8e4b48d6273130f9"></a>
-### 2026-07-26 · 阶段成果持续快照与分层发布制度
-
-- **类型：** `ARTICLE_OR_PUBLICATION`
-- **状态：** `HISTORICAL_OR_SUPERSEDED_SOURCE`
-- **变化：** Status: Ignition Iteration Method 1.4.0 — Continuous Stage Snapshot Publication（已升为 Current；1.3.0 转为 Historical）。
-- **来源：** [stage-snapshot-publication.md](../docs/operations/stage-snapshot-publication.md)
-- **资产卡：** [HR-8E4B48D6273130F9](./ASSET-CARDS.md#asset-hr-8e4b48d6273130f9)
-
-<a id="change-src-hr-715f3951a2b86789"></a>
-### 2026-07-26 · Charter System R1 — Architecture (Accepted / Current, on main, non-Activated)
-
-- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
-- **状态：** `CURRENT_SCOPED_SOURCE`
-- **变化：** Status: CURRENT (Accepted, non-Activated). Merged to main (merge commit 0e7c032, 2026-07-26) and promoted to Accepted/Current via independent exact-head acceptance + post-merge synchronization. Does not modify any existing charter or governance document's normative content (G2).
-- **来源：** [charter-system-r1.md](../docs/governance/charter-system-r1.md)
-- **资产卡：** [HR-715F3951A2B86789](./ASSET-CARDS.md#asset-hr-715f3951a2b86789)
-
-<a id="change-src-hr-4f3c4ff4a7ab0e3a"></a>
-### 2026-07-26 · Current Main vs 1.4 Candidate Homepage Comparison
-
-- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
-- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **变化：** Task: IGNITION-ITERATION-METHOD-1.4-CONTINUOUS-STAGE-SNAPSHOT-PUBLICATION-R1-20260726
-- **来源：** [IGNITION-ITERATION-METHOD-1.4-homepage-comparison.md](../reports/operations/IGNITION-ITERATION-METHOD-1.4-homepage-comparison.md)
-- **资产卡：** [HR-4F3C4FF4A7AB0E3A](./ASSET-CARDS.md#asset-hr-4f3c4ff4a7ab0e3a)
 
 <a id="change-src-hr-3c8e2580116a3cd7"></a>
 ### 2026-07-26 · IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-NORMALIZED-SCHEMA-AND-AUTOMATION-VARIANT-NARROW-REPAIR-R2-20260726 typed change-propagation impact report
@@ -273,699 +1380,6 @@
 - **来源：** [IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-NORMALIZED-SCHEMA-AND-AUTOMATION-VARIANT-NARROW-REPAIR-R2-20260726-change-propagation-impact.md](../reports/operations/IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-NORMALIZED-SCHEMA-AND-AUTOMATION-VARIANT-NARROW-REPAIR-R2-20260726-change-propagation-impact.md)
 - **资产卡：** [HR-3C8E2580116A3CD7](./ASSET-CARDS.md#asset-hr-3c8e2580116a3cd7)
 
-<a id="change-src-hr-43bf10109af2485e"></a>
-### 2026-07-19 · External Input Non-Republication Principle
-
-- **类型：** `ARTICLE_OR_PUBLICATION`
-- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
-- **变化：** 本原则适用于所有从项目外部获得的材料，包括但不限于：
-- **来源：** [external-input-non-republication-principle.md](../docs/governance/external-input-non-republication-principle.md)
-- **资产卡：** [HR-43BF10109AF2485E](./ASSET-CARDS.md#asset-hr-43bf10109af2485e)
-
-<a id="change-src-hr-d660dc784cc90282"></a>
-### 2026-07-18 · Incremental Execution and Selective Materialization
-
-- **类型：** `MODEL_OR_ARCHITECTURE`
-- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
-- **变化：** Historical status: 121Q32I / method 1.3.0 Closed, now superseded by Current 1.4.0. Method 1.2.0 and system map 0.2.0 are Historical; method 1.1.0 and map 0.1.0 are earlier Historical. Q32I passed the exact-head, ordinary-merge and external checks required by its historical contract; task 101 late…
-- **来源：** [incremental-execution.md](../docs/architecture/incremental-execution.md)
-- **资产卡：** [HR-D660DC784CC90282](./ASSET-CARDS.md#asset-hr-d660dc784cc90282)
-
-<a id="change-src-hr-771c575b7e09f8bd"></a>
-### 2026-07-18 · 121Q32I Phase D integrated validation closeout
-
-- **类型：** `AUDIT_OR_ADJUDICATION`
-- **状态：** `CANDIDATE_OR_PENDING_SOURCE`
-- **变化：** Status: PHASEDVALIDATIONCLOSEDCANDIDATEONLY
-- **来源：** [121Q32I-phase-d-validation-closeout.md](../reports/operations/121Q32I-phase-d-validation-closeout.md)
-- **资产卡：** [HR-771C575B7E09F8BD](./ASSET-CARDS.md#asset-hr-771c575b7e09f8bd)
-
-<a id="change-src-hr-daf1cb45ccd7b5b6"></a>
-### 2026-07-17 · 点火仓库原生系统图
-
-- **类型：** `MODEL_OR_ARCHITECTURE`
-- **状态：** `HISTORICAL_OR_SUPERSEDED_SOURCE`
-- **变化：** 状态：0.4.0 Current registry-derived navigation projection；0.3.0、0.2.0 为 Historical。
-- **来源：** [interactive-system-map.md](../docs/architecture/interactive-system-map.md)
-- **资产卡：** [HR-DAF1CB45CCD7B5B6](./ASSET-CARDS.md#asset-hr-daf1cb45ccd7b5b6)
-
-<a id="change-src-hr-da202c53b7387f68"></a>
-### 2026-07-17 · 类型化变更传播闭包 / Typed Change-Propagation Closure
-
-- **类型：** `MODEL_OR_ARCHITECTURE`
-- **状态：** `HISTORICAL_OR_SUPERSEDED_SOURCE`
-- **变化：** Status: 121Q32THISTORICAL. Iteration method 1.3.0 and interactive system map 0.3.0 are Historical after the 0727 homepage/usage/charter-system-map sync closeout made system map 0.4.0 Current; method 1.2.0 and map 0.2.0 are Historical, map 0.1.0 earlier Historical. Q32I retains this typed-propagat…
-- **来源：** [typed-change-propagation.md](../docs/architecture/typed-change-propagation.md)
-- **资产卡：** [HR-DA202C53B7387F68](./ASSET-CARDS.md#asset-hr-da202c53b7387f68)
-
-<a id="change-src-hr-cdbd2a8dabea0396"></a>
-### 2026-07-17 · Canonical Protocol Validation Results
-
-- **类型：** `AUDIT_OR_ADJUDICATION`
-- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **变化：** generatedat: 2026-07-10T20:50:00+08:00 ｜ count: 12
-- **来源：** [protocol-canonical-validation-results.md](../outputs/protocol-canonical-validation-results.md)
-- **资产卡：** [HR-CDBD2A8DABEA0396](./ASSET-CARDS.md#asset-hr-cdbd2a8dabea0396)
-
-<a id="change-src-hr-b543950ddea47bd7"></a>
-### 2026-07-17 · 121Q32I typed change-propagation impact report
-
-- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
-- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **变化：** 原文件保存该项结果的完整问题、过程与边界。
-- **来源：** [121Q32I-change-propagation-impact.md](../reports/operations/121Q32I-change-propagation-impact.md)
-- **资产卡：** [HR-B543950DDEA47BD7](./ASSET-CARDS.md#asset-hr-b543950ddea47bd7)
-
-<a id="change-src-hr-aafe3d04b9390110"></a>
-### 2026-07-17 · 121Q32 类型化变更传播与自更新系统图审计
-
-- **类型：** `AUDIT_OR_ADJUDICATION`
-- **状态：** `CANDIDATE_OR_PENDING_SOURCE`
-- **变化：** Status: READYFORGPTVERIFICATIONCANDIDATEONLY
-- **来源：** [121Q32-typed-change-propagation-and-self-updating-system-map-audit.md](../reports/operations/121Q32-typed-change-propagation-and-self-updating-system-map-audit.md)
-- **资产卡：** [HR-AAFE3D04B9390110](./ASSET-CARDS.md#asset-hr-aafe3d04b9390110)
-
-<a id="change-src-hr-67cc7f2c07c67bd9"></a>
-### 2026-07-17 · 121Q30T｜首页与之元写作法成果展示合并收口审计
-
-- **类型：** `AUDIT_OR_ADJUDICATION`
-- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **变化：** PR 59 的 accepted HEAD fb550c50dc5ebc385dcebb3b9aa8c768458c6d8c 经 review 4715686225 接受，并以 merge commit 0dfebc661668555a2636f9f59267fd7905368dca 合入 main。合并前重新核验了 PR HEAD/base/mergeability、三条精确 HEAD CI、Q29R 正文 SHA-256 与受限来源边界；accepted HEAD 是 merge commit 和 post-merge main 的祖先。
-- **来源：** [121Q30T-homepage-showcase-merge-current-closeout-audit.md](../reports/operations/121Q30T-homepage-showcase-merge-current-closeout-audit.md)
-- **资产卡：** [HR-67CC7F2C07C67BD9](./ASSET-CARDS.md#asset-hr-67cc7f2c07c67bd9)
-
-<a id="change-src-hr-5a6642209467ff3a"></a>
-### 2026-07-17 · IGNITION-ITERATION-METHOD-1.4-CONTINUOUS-STAGE-SNAPSHOT-PUBLICATION-R1-20260726 typed change-propagation impact report
-
-- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
-- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **变化：** 原文件保存该项结果的完整问题、过程与边界。
-- **来源：** [IGNITION-ITERATION-METHOD-1.4-change-propagation-impact.md](../reports/operations/IGNITION-ITERATION-METHOD-1.4-change-propagation-impact.md)
-- **资产卡：** [HR-5A6642209467FF3A](./ASSET-CARDS.md#asset-hr-5a6642209467ff3a)
-
-<a id="change-src-hr-57b4f559431d6912"></a>
-### 2026-07-17 · 121Q32 typed change-propagation impact report
-
-- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
-- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **变化：** 原文件保存该项结果的完整问题、过程与边界。
-- **来源：** [121Q32-change-propagation-impact.md](../reports/operations/121Q32-change-propagation-impact.md)
-- **资产卡：** [HR-57B4F559431D6912](./ASSET-CARDS.md#asset-hr-57b4f559431d6912)
-
-<a id="change-src-hr-4419fea9529c829c"></a>
-### 2026-07-17 · 121Q31T｜交互系统总图与双来源写作素材池合并收口审计
-
-- **类型：** `AUDIT_OR_ADJUDICATION`
-- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **变化：** PR 60 的 accepted HEAD b01429144f78305ead32455873e79a11661f04e1 经 review 4718884255 接受，并以 merge commit ed30d3c30966ce28b54652f2ece27bc1bde02658 合入 main。合并前重新核验了 PR HEAD、base、mergeability、精确 HEAD CI、Q29R 哈希、9 组／41 节点／35 边、L0—L6、全部 target 与证据边界；accepted HEAD 是 merge commit 和 post-merge main 的祖先。
-- **来源：** [121Q31T-interactive-system-map-and-writing-pool-merge-current-closeout-audit.md](../reports/operations/121Q31T-interactive-system-map-and-writing-pool-merge-current-closeout-audit.md)
-- **资产卡：** [HR-4419FEA9529C829C](./ASSET-CARDS.md#asset-hr-4419fea9529c829c)
-
-<a id="change-src-hr-3d02f20fb6692a0c"></a>
-### 2026-07-17 · 121Q31｜完整可点击系统图与双来源写作素材池审计
-
-- **类型：** `AUDIT_OR_ADJUDICATION`
-- **状态：** `CANDIDATE_OR_PENDING_SOURCE`
-- **变化：** Status: READYFORGPTVERIFICATIONCANDIDATEONLY
-- **来源：** [121Q31-interactive-system-map-and-writing-source-pool-audit.md](../reports/operations/121Q31-interactive-system-map-and-writing-source-pool-audit.md)
-- **资产卡：** [HR-3D02F20FB6692A0C](./ASSET-CARDS.md#asset-hr-3d02f20fb6692a0c)
-
-<a id="change-src-hr-ebd5091c3be06f0a"></a>
-### 2026-07-16 · 121Q23C/121Q23D/121Q23E Operational ARN Real-History Validation
-
-- **类型：** `AUDIT_OR_ADJUDICATION`
-- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **变化：** Status: REALHISTORYOPERATIONALPROOFREGENERATEDWITHPATHSTATEANDREFERENCECONTRACT
-- **来源：** [121Q23C-operational-arn-real-history-validation.md](../reports/architecture/121Q23C-operational-arn-real-history-validation.md)
-- **资产卡：** [HR-EBD5091C3BE06F0A](./ASSET-CARDS.md#asset-hr-ebd5091c3be06f0a)
-
-<a id="change-src-hr-e5b132f83f5707d0"></a>
-### 2026-07-16 · 121Q21R Multiscale Causal Fabric Validation
-
-- **类型：** `AUDIT_OR_ADJUDICATION`
-- **状态：** `CANDIDATE_OR_PENDING_SOURCE`
-- **变化：** Status: READYASMULTISCALECAUSALFABRICCANDIDATE
-- **来源：** [121Q21R-multiscale-causal-fabric-validation.md](../reports/architecture/121Q21R-multiscale-causal-fabric-validation.md)
-- **资产卡：** [HR-E5B132F83F5707D0](./ASSET-CARDS.md#asset-hr-e5b132f83f5707d0)
-
-<a id="change-src-hr-de57c4f1ec87eada"></a>
-### 2026-07-16 · 121Q28R 之元写作法 0.2.0 修订审计
-
-- **类型：** `AUDIT_OR_ADJUDICATION`
-- **状态：** `CANDIDATE_OR_PENDING_SOURCE`
-- **变化：** Status: READYFORGPTVERIFICATIONCANDIDATEONLY
-- **来源：** [121Q28R-cognitive-level-leap-writing-method-audit.md](../reports/operations/121Q28R-cognitive-level-leap-writing-method-audit.md)
-- **资产卡：** [HR-DE57C4F1EC87EADA](./ASSET-CARDS.md#asset-hr-de57c4f1ec87eada)
-
-<a id="change-src-hr-d328ae24912155e2"></a>
-### 2026-07-16 · 之元写作法成果
-
-- **类型：** `ARTICLE_OR_PUBLICATION`
-- **状态：** `HISTORICAL_COMPLETION_RECORD`
-- **变化：** 本索引是 121Q30T 收口后的当前成果入口，收录由之元写作法 0.3.0生成、具备可追溯来源链和点火分析链、并已进入相应审查状态的公共表达成果。
-- **来源：** [zhiyuan-writing-showcase.md](../docs/publication/zhiyuan-writing-showcase.md)
-- **资产卡：** [HR-D328AE24912155E2](./ASSET-CARDS.md#asset-hr-d328ae24912155e2)
-
-<a id="change-src-hr-d1de2bd2a70dc6c1"></a>
-### 2026-07-16 · Adaptive Relational Network / 自适应关系网络
-
-- **类型：** `MODEL_OR_ARCHITECTURE`
-- **状态：** `CANDIDATE_OR_PENDING_SOURCE`
-- **变化：** Status: candidate derived representation.
-- **来源：** [adaptive-relational-network.md](../docs/architecture/adaptive-relational-network.md)
-- **资产卡：** [HR-D1DE2BD2A70DC6C1](./ASSET-CARDS.md#asset-hr-d1de2bd2a70dc6c1)
-
-<a id="change-src-hr-c5a76b2115839837"></a>
-### 2026-07-16 · 121Q23 Relational Network Gap Audit
-
-- **类型：** `AUDIT_OR_ADJUDICATION`
-- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **变化：** Status: PARTIALRELATIONALASSETSWITHOUTADAPTIVERELATIONALNETWORK
-- **来源：** [121Q23-relational-network-gap-audit.md](../reports/architecture/121Q23-relational-network-gap-audit.md)
-- **资产卡：** [HR-C5A76B2115839837](./ASSET-CARDS.md#asset-hr-c5a76b2115839837)
-
-<a id="change-src-hr-c0e9f4990481c808"></a>
-### 2026-07-16 · 121Q21R Causal Asset Audit
-
-- **类型：** `AUDIT_OR_ADJUDICATION`
-- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **变化：** Status: PARTIALCOMPONENTSWITHOUTUNIFIEDMULTISCALEFABRIC
-- **来源：** [121Q21R-causal-asset-audit.md](../reports/architecture/121Q21R-causal-asset-audit.md)
-- **资产卡：** [HR-C0E9F4990481C808](./ASSET-CARDS.md#asset-hr-c0e9f4990481c808)
-
-<a id="change-src-hr-c023e21ce9a8a6d4"></a>
-### 2026-07-16 · Probabilistic System Dynamics / 概率—系统动力学
-
-- **类型：** `MODEL_OR_ARCHITECTURE`
-- **状态：** `CANDIDATE_OR_PENDING_SOURCE`
-- **变化：** Status: candidate derived operational extension to MCF.
-- **来源：** [probabilistic-system-dynamics.md](../docs/architecture/probabilistic-system-dynamics.md)
-- **资产卡：** [HR-C023E21CE9A8A6D4](./ASSET-CARDS.md#asset-hr-c023e21ce9a8a6d4)
-
-<a id="change-src-hr-b1aad6dbbdf235c8"></a>
-### 2026-07-16 · 121Q24 Current-State Reconciliation
-
-- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
-- **状态：** `HISTORICAL_COMPLETION_RECORD`
-- **变化：** Status: AUDITCOMPLETESYNCREQUIRED
-- **来源：** [121Q24-current-state-reconciliation.md](../reports/operations/121Q24-current-state-reconciliation.md)
-- **资产卡：** [HR-B1AAD6DBBDF235C8](./ASSET-CARDS.md#asset-hr-b1aad6dbbdf235c8)
-
-<a id="change-src-hr-aefff65e1fe80eef"></a>
-### 2026-07-16 · 起始案例来源链｜公元1115年：金朝崛起为什么这么快？
-
-- **类型：** `ARTICLE_OR_PUBLICATION`
-- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **变化：** 原始材料包含第三方课程内容，本仓库只公开来源记录、哈希、分析边界和派生成果，不复制或公开原始全文。SHA-256 用于确认后续分析所对应的输入版本，不表示原文中的历史断言已经核验。
-- **来源：** [jin-rise-case-source.md](../docs/publication/cases/jin-rise-case-source.md)
-- **资产卡：** [HR-AEFFF65E1FE80EEF](./ASSET-CARDS.md#asset-hr-aefff65e1fe80eef)
-
-<a id="change-src-hr-a932eb17267d9709"></a>
-### 2026-07-16 · 之元写作法
-
-- **类型：** `ARTICLE_OR_PUBLICATION`
-- **状态：** `CURRENT_SCOPED_SOURCE`
-- **变化：** English: Zhiyuan Writing Method
-- **来源：** [zhiyuan-writing-method.md](../docs/publication/zhiyuan-writing-method.md)
-- **资产卡：** [HR-A932EB17267D9709](./ASSET-CARDS.md#asset-hr-a932eb17267d9709)
-
-<a id="change-src-hr-a492aafc18415614"></a>
-### 2026-07-16 · 121Q28T｜之元写作法 0.3.0 Current 收口
-
-- **类型：** `AUDIT_OR_ADJUDICATION`
-- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **变化：** PR 58 在合并前重新满足全部精确门禁：HEAD 为 19a013719a8e98319004c3b7ad9d0d4b29405351，review 4714216621 接受该精确 HEAD，Foundation、Function OS 与 Pages 三条精确 HEAD CI 成功，PR 可合并且无漂移。随后使用普通 merge commit 合并，merge commit 为 83f15484385d256ea22e443cf2938717cfdd58a0；accepted HEAD 已验证为 main 祖先。
-- **来源：** [121Q28T-zhiyuan-writing-method-merge-current-closeout-audit.md](../reports/operations/121Q28T-zhiyuan-writing-method-merge-current-closeout-audit.md)
-- **资产卡：** [HR-A492AAFC18415614](./ASSET-CARDS.md#asset-hr-a492aafc18415614)
-
-<a id="change-src-hr-8f3c2449dfb9208b"></a>
-### 2026-07-16 · 121Q25C Lifecycle-Gate Deadlock Repair
-
-- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
-- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **变化：** Q25B correctly separated completion states but incorrectly required projectsynchronizationcomplete for Accepted. Because Pages can be deployed from main only after merge, this made acceptance and merge mutually unreachable.
-- **来源：** [121Q25C-lifecycle-gate-deadlock-repair.md](../reports/operations/121Q25C-lifecycle-gate-deadlock-repair.md)
-- **资产卡：** [HR-8F3C2449DFB9208B](./ASSET-CARDS.md#asset-hr-8f3c2449dfb9208b)
-
-<a id="change-src-hr-821405558993dacd"></a>
-### 2026-07-16 · 121Q23 Adaptive Relational Network Validation
-
-- **类型：** `AUDIT_OR_ADJUDICATION`
-- **状态：** `CANDIDATE_OR_PENDING_SOURCE`
-- **变化：** Status: 121Q23GREADYFORGPTFINALACCEPTANCEASOPERATIONALARNCANDIDATE
-- **来源：** [121Q23-adaptive-relational-network-validation.md](../reports/architecture/121Q23-adaptive-relational-network-validation.md)
-- **资产卡：** [HR-821405558993DACD](./ASSET-CARDS.md#asset-hr-821405558993dacd)
-
-<a id="change-src-hr-7178d1b582275868"></a>
-### 2026-07-16 · 121Q30｜首页架构与之元写作法成果展示审计
-
-- **类型：** `AUDIT_OR_ADJUDICATION`
-- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **变化：** 本轮把成果展示实现为 L6 内部的可追溯仓库接口，而不是手工链接表或新架构层。README 只保留一套常态项目现状，并按“项目现状 → 之元写作法成果 → 生命共同体价值宪章 → 使用指南”组织；详细能力和完整 AI 提示词均默认折叠。
-- **来源：** [121Q30-homepage-architecture-and-zhiyuan-writing-showcase-audit.md](../reports/operations/121Q30-homepage-architecture-and-zhiyuan-writing-showcase-audit.md)
-- **资产卡：** [HR-7178D1B582275868](./ASSET-CARDS.md#asset-hr-7178d1b582275868)
-
-<a id="change-src-hr-54b0858dd7fe1388"></a>
-### 2026-07-16 · 1. 标题与机器可读前言
-
-- **类型：** `ARTICLE_OR_PUBLICATION`
-- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **变化：** --- title: "IGNITION-20260716-121Q26：金朝崛起为什么这么快——点火分析" taskid: "IGNITION-20260716-121Q26" artifactstatus: "candidaterepositorypublicationanalysis" claimceiling: "mechanismplausible / causalidentificationpending / externalhistoricalverificationrequired" methodversion: "1.1.0" projectmain: "b396c13…
-- **来源：** [jin-rise-point-fire-analysis.md](../reports/publication/jin-rise-point-fire-analysis.md)
-- **资产卡：** [HR-54B0858DD7FE1388](./ASSET-CARDS.md#asset-hr-54b0858dd7fe1388)
-
-<a id="change-src-hr-48973e3aa76b6fae"></a>
-### 2026-07-16 · 121Q22 Probability and System Dynamics Gap Audit
-
-- **类型：** `AUDIT_OR_ADJUDICATION`
-- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **变化：** Status: LOCALPROBABILITYANDSYSTEMCOMPONENTSWITHOUTUNIFIEDEXECUTABLEPSDSEMANTICS
-- **来源：** [121Q22-probability-system-gap-audit.md](../reports/architecture/121Q22-probability-system-gap-audit.md)
-- **资产卡：** [HR-48973E3AA76B6FAE](./ASSET-CARDS.md#asset-hr-48973e3aa76b6fae)
-
-<a id="change-src-hr-45480c716d721c81"></a>
-### 2026-07-16 · 121Q25B Whole-Project Synchronization Contract
-
-- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
-- **状态：** `HISTORICAL_OR_SUPERSEDED_SOURCE`
-- **变化：** Status: superseded non-ready method 1.1.0 Draft candidate on PR 57. Q25C preserves this history and repairs its lifecycle deadlock.
-- **来源：** [121Q25B-whole-project-synchronization-contract.md](../reports/operations/121Q25B-whole-project-synchronization-contract.md)
-- **资产卡：** [HR-45480C716D721C81](./ASSET-CARDS.md#asset-hr-45480c716d721c81)
-
-<a id="change-src-hr-44a1c398c470bbf4"></a>
-### 2026-07-16 · 121Q28S 之元写作法 0.3.0 全项目整合审计
-
-- **类型：** `AUDIT_OR_ADJUDICATION`
-- **状态：** `CANDIDATE_OR_PENDING_SOURCE`
-- **变化：** Status: READYFORGPTVERIFICATIONCANDIDATEONLY
-- **来源：** [121Q28S-zhiyuan-writing-method-whole-project-integration-audit.md](../reports/operations/121Q28S-zhiyuan-writing-method-whole-project-integration-audit.md)
-- **资产卡：** [HR-44A1C398C470BBF4](./ASSET-CARDS.md#asset-hr-44a1c398c470bbf4)
-
-<a id="change-src-hr-3b5e72d7f1cdfb5b"></a>
-### 2026-07-16 · 之元写作法：内部范例与反例
-
-- **类型：** `ARTICLE_OR_PUBLICATION`
-- **状态：** `CURRENT_SCOPED_SOURCE`
-- **变化：** Version: 0.3.0 Status: CURRENTINTERNALEXAMPLES
-- **来源：** [zhiyuan-writing-examples.md](../docs/publication/zhiyuan-writing-examples.md)
-- **资产卡：** [HR-3B5E72D7F1CDFB5B](./ASSET-CARDS.md#asset-hr-3b5e72d7f1cdfb5b)
-
-<a id="change-src-hr-369f261001c4ece1"></a>
-### 2026-07-16 · 121Q25 Human Front-Door Audit
-
-- **类型：** `AUDIT_OR_ADJUDICATION`
-- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **变化：** Starting main: 7fc4b309720ea1b4e9c4b47477c2f423860d53df.
-- **来源：** [121Q25-front-door-audit.md](../reports/operations/121Q25-front-door-audit.md)
-- **资产卡：** [HR-369F261001C4ECE1](./ASSET-CARDS.md#asset-hr-369f261001c4ece1)
-
-<a id="change-src-hr-3069e59a51d869c3"></a>
-### 2026-07-16 · 121Q28 肉身锚定的心智层级跃迁写作法审计
-
-- **类型：** `AUDIT_OR_ADJUDICATION`
-- **状态：** `CANDIDATE_OR_PENDING_SOURCE`
-- **变化：** Status: READYFORGPTVERIFICATIONCANDIDATEONLY
-- **来源：** [121Q28-embodied-cognitive-leap-writing-method-audit.md](../reports/operations/121Q28-embodied-cognitive-leap-writing-method-audit.md)
-- **资产卡：** [HR-3069E59A51D869C3](./ASSET-CARDS.md#asset-hr-3069e59a51d869c3)
-
-<a id="change-src-hr-25ccad6cef81cbea"></a>
-### 2026-07-16 · 当一支军队开始相信自己的背影
-
-- **类型：** `ARTICLE_OR_PUBLICATION`
-- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **变化：** 他可能只是看见前方的旗变了方向，几匹马逆着队列奔来。也许那是传令，也许主将正在调动一支小队，也许真正的战斗还远没有分出胜负。但他站得太低，看不见全局；箭矢和马蹄也不会给他时间核实。他后退一步，想为自己留下半息余地。
-- **来源：** [when-an-army-believes-its-own-back.md](../docs/publication/works/when-an-army-believes-its-own-back.md)
-- **资产卡：** [HR-25CCAD6CEF81CBEA](./ASSET-CARDS.md#asset-hr-25ccad6cef81cbea)
-
-<a id="change-src-hr-1ee77928279485fa"></a>
-### 2026-07-16 · Multiscale Causal Fabric / 多尺度因果织体
-
-- **类型：** `MODEL_OR_ARCHITECTURE`
-- **状态：** `CANDIDATE_OR_PENDING_SOURCE`
-- **变化：** Status: candidate derived representation.
-- **来源：** [multiscale-causal-fabric.md](../docs/architecture/multiscale-causal-fabric.md)
-- **资产卡：** [HR-1EE77928279485FA](./ASSET-CARDS.md#asset-hr-1ee77928279485fa)
-
-<a id="change-src-hr-1d52767df2986dd5"></a>
-### 2026-07-16 · 121Q25D current closeout
-
-- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
-- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **变化：** PR 57 merged the independently accepted Q25C exact candidate through an ordinary merge commit. The first main-sourced Foundation, Function OS and Pages runs succeeded, production Pages deployed from main, and a cache-bypassed live fetch exposed MCF, PSD, ARN, the iteration method, direct architec…
-- **来源：** [121Q25D-current-closeout.md](../reports/operations/121Q25D-current-closeout.md)
-- **资产卡：** [HR-1D52767DF2986DD5](./ASSET-CARDS.md#asset-hr-1d52767df2986dd5)
-
-<a id="change-src-hr-0ef2189bb50603b7"></a>
-### 2026-07-16 · 121Q22 Probabilistic System Dynamics Validation
-
-- **类型：** `AUDIT_OR_ADJUDICATION`
-- **状态：** `CANDIDATE_OR_PENDING_SOURCE`
-- **变化：** Status: 121Q22READYASPROBABILISTICSYSTEMDYNAMICSCANDIDATE
-- **来源：** [121Q22-probabilistic-system-dynamics-validation.md](../reports/architecture/121Q22-probabilistic-system-dynamics-validation.md)
-- **资产卡：** [HR-0EF2189BB50603B7](./ASSET-CARDS.md#asset-hr-0ef2189bb50603b7)
-
-<a id="change-src-hr-fb9a21e0eb12989e"></a>
-### 2026-07-15 · 121Q2V Verification Repair Report
-
-- **类型：** `RESEARCH_OR_SOURCE_REVIEW`
-- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **变化：** Generated: 2026-07-14T17:22:03Z Parent HEAD at report generation: a4b0a90826d97d17d7751953d24a5901d090debb Note: Final HEAD will be confirmed after Step 008 commit/push.
-- **来源：** [121Q2V-verification-repair-report.md](../reports/external-research/121Q2V-verification-repair-report.md)
-- **资产卡：** [HR-FB9A21E0EB12989E](./ASSET-CARDS.md#asset-hr-fb9a21e0eb12989e)
-
-<a id="change-src-hr-f9fe7eee273643e9"></a>
-### 2026-07-15 · 121Q12 Effectual-Mechanism Dual-Loop Report
-
-- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
-- **状态：** `CANDIDATE_OR_PENDING_SOURCE`
-- **变化：** Status: READYFORGPTVERIFICATION
-- **来源：** [121Q12-effectual-mechanism-dual-loop.md](../reports/architecture/121Q12-effectual-mechanism-dual-loop.md)
-- **资产卡：** [HR-F9FE7EEE273643E9](./ASSET-CARDS.md#asset-hr-f9fe7eee273643e9)
-
-<a id="change-src-hr-f664e539ab663124"></a>
-### 2026-07-15 · Ignition Atlas
-
-- **类型：** `MODEL_OR_ARCHITECTURE`
-- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
-- **变化：** Status: 121Q14MAPPROJECTIONOVERLAY
-- **来源：** [ignition-atlas.md](../docs/architecture/ignition-atlas.md)
-- **资产卡：** [HR-F664E539AB663124](./ASSET-CARDS.md#asset-hr-f664e539ab663124)
-
-<a id="change-src-hr-f58d1b491fb96c27"></a>
-### 2026-07-15 · Licensing Model Candidate
-
-- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
-- **状态：** `CANDIDATE_OR_PENDING_SOURCE`
-- **变化：** Status: candidate decision record. This is not legal advice and does not change the root LICENSE.
-- **来源：** [licensing-model-candidate.md](../docs/governance/licensing-model-candidate.md)
-- **资产卡：** [HR-F58D1B491FB96C27](./ASSET-CARDS.md#asset-hr-f58d1b491fb96c27)
-
-<a id="change-src-hr-f29753586c28f9ec"></a>
-### 2026-07-15 · Governance License Scope
-
-- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
-- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
-- **变化：** SPDX-License-Identifier: CC-BY-SA-4.0 OR CC-BY-NC-SA-4.0
-- **来源：** [README.md](../docs/governance/README.md)
-- **资产卡：** [HR-F29753586C28F9EC](./ASSET-CARDS.md#asset-hr-f29753586c28f9ec)
-
-<a id="change-src-hr-ebcda7ca000d3bac"></a>
-### 2026-07-15 · 121Q2R Final Report
-
-- **类型：** `RESEARCH_OR_SOURCE_REVIEW`
-- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **变化：** Generated: 2026-07-14T17:04:01Z
-- **来源：** [121Q2R-final-report.md](../reports/external-research/121Q2R-final-report.md)
-- **资产卡：** [HR-EBCDA7CA000D3BAC](./ASSET-CARDS.md#asset-hr-ebcda7ca000d3bac)
-
-<a id="change-src-hr-e5c82087cc19191e"></a>
-### 2026-07-15 · 121Q14 Baseline And Latent Map Audit
-
-- **类型：** `AUDIT_OR_ADJUDICATION`
-- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **变化：** 121Q14 starts from 121Q13 Draft PR 48 head 5297fe6c4c3aa36519b2e0a4d751be43dee09441.
-- **来源：** [121Q14-baseline-latent-map-audit.md](../reports/atlas/121Q14-baseline-latent-map-audit.md)
-- **资产卡：** [HR-E5C82087CC19191E](./ASSET-CARDS.md#asset-hr-e5c82087cc19191e)
-
-<a id="change-src-hr-e46a02fee84ab9b4"></a>
-### 2026-07-15 · 121Q14 Dynamic Atlas Report
-
-- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
-- **状态：** `CANDIDATE_OR_PENDING_SOURCE`
-- **变化：** Status: READYASDYNAMICATLASCANDIDATE
-- **来源：** [121Q14-dynamic-atlas.md](../reports/atlas/121Q14-dynamic-atlas.md)
-- **资产卡：** [HR-E46A02FEE84AB9B4](./ASSET-CARDS.md#asset-hr-e46a02fee84ab9b4)
-
-<a id="change-src-hr-d821031f6e382fd7"></a>
-### 2026-07-15 · 121Q9 Final Release Candidate
-
-- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
-- **状态：** `CANDIDATE_OR_PENDING_SOURCE`
-- **变化：** Status: COMPLETEPENDINGGPTVERIFICATION. Do not merge until explicitly approved.
-- **来源：** [121Q9-final-release-candidate.md](../reports/release/121Q9-final-release-candidate.md)
-- **资产卡：** [HR-D821031F6E382FD7](./ASSET-CARDS.md#asset-hr-d821031f6e382fd7)
-
-<a id="change-src-hr-d27de59030e9f44a"></a>
-### 2026-07-15 · Compression Integrity Gate
-
-- **类型：** `MODEL_OR_ARCHITECTURE`
-- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
-- **变化：** Status: 121Q13CONTROLOVERLAY
-- **来源：** [compression-integrity-gate.md](../docs/architecture/compression-integrity-gate.md)
-- **资产卡：** [HR-D27DE59030E9F44A](./ASSET-CARDS.md#asset-hr-d27de59030e9f44a)
-
-<a id="change-src-hr-c936ceda8bbc6085"></a>
-### 2026-07-15 · Licensing Rights Inventory
-
-- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
-- **状态：** `CANDIDATE_OR_PENDING_SOURCE`
-- **变化：** Status: candidate audit for IGNITION-20260715-121Q8. This document is not legal advice and does not change the effective repository license.
-- **来源：** [licensing-rights-inventory.md](../docs/governance/licensing-rights-inventory.md)
-- **资产卡：** [HR-C936CEDA8BBC6085](./ASSET-CARDS.md#asset-hr-c936ceda8bbc6085)
-
-<a id="change-src-hr-c322de3c7799a555"></a>
-### 2026-07-15 · Distribution And Decision Collapse Control Plane
-
-- **类型：** `MODEL_OR_ARCHITECTURE`
-- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
-- **变化：** Status: 121Q13CONTROLOVERLAY
-- **来源：** [distribution-collapse-control-plane.md](../docs/architecture/distribution-collapse-control-plane.md)
-- **资产卡：** [HR-C322DE3C7799A555](./ASSET-CARDS.md#asset-hr-c322de3c7799a555)
-
-<a id="change-src-hr-c190ac76ad5f8440"></a>
-### 2026-07-15 · 121Q3 Night Final Report
-
-- **类型：** `RESEARCH_OR_SOURCE_REVIEW`
-- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **变化：** Steps 004-007, 010-018, 021-023 were executed as batched commits (11 commits for 25 steps). This deviates from the 'one commit per step' requirement. Amend/rebase is prohibited, so this cannot be retroactively fixed. All 25 step-ledger entries are present and correct.
-- **来源：** [121Q3-night-final-report.md](../reports/external-research/121Q3-night-final-report.md)
-- **资产卡：** [HR-C190AC76AD5F8440](./ASSET-CARDS.md#asset-hr-c190ac76ad5f8440)
-
-<a id="change-src-hr-9e4e9fae33d82afe"></a>
-### 2026-07-15 · 121Q2W Final Consistency Seal Report
-
-- **类型：** `RESEARCH_OR_SOURCE_REVIEW`
-- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **变化：** 原文件保存该项结果的完整问题、过程与边界。
-- **来源：** [121Q2W-final-consistency-seal-report.md](../reports/external-research/121Q2W-final-consistency-seal-report.md)
-- **资产卡：** [HR-9E4E9FAE33D82AFE](./ASSET-CARDS.md#asset-hr-9e4e9fae33d82afe)
-
-<a id="change-src-hr-9e39d8c09bf33c74"></a>
-### 2026-07-15 · 121Q9 Cumulative Baseline
-
-- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
-- **状态：** `CANDIDATE_OR_PENDING_SOURCE`
-- **变化：** Status: Step 000 baseline for cumulative release candidate.
-- **来源：** [121Q9-cumulative-baseline.md](../reports/release/121Q9-cumulative-baseline.md)
-- **资产卡：** [HR-9E39D8C09BF33C74](./ASSET-CARDS.md#asset-hr-9e39d8c09bf33c74)
-
-<a id="change-src-hr-9be719cb6ef0fd88"></a>
-### 2026-07-15 · Attention And Attractor Control Plane
-
-- **类型：** `MODEL_OR_ARCHITECTURE`
-- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
-- **变化：** Status: 121Q13CONTROLOVERLAY
-- **来源：** [attention-attractor-control-plane.md](../docs/architecture/attention-attractor-control-plane.md)
-- **资产卡：** [HR-9BE719CB6EF0FD88](./ASSET-CARDS.md#asset-hr-9be719cb6ef0fd88)
-
-<a id="change-src-hr-9a37e04e46e43cf2"></a>
-### 2026-07-15 · 121Q4 Final Report: Function OS v0.1 Symbolic Reference Implementation
-
-- **类型：** `RESEARCH_OR_SOURCE_REVIEW`
-- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **变化：** Generated: 2026-07-15T03:50:00Z Branch: records/ignition-121q4-v4pro-symbolic-function-os-reference-20260715 Status: CANDIDATE COMPLETE (Steps 000-024, consistency-sealed)
-- **来源：** [121Q4-final-report.md](../reports/external-research/121Q4-final-report.md)
-- **资产卡：** [HR-9A37E04E46E43CF2](./ASSET-CARDS.md#asset-hr-9a37e04e46e43cf2)
-
-<a id="change-src-hr-8c7e1c2721f6e7fd"></a>
-### 2026-07-15 · map-agent-delivery-operations
-
-- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
-- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **变化：** Observer: maintainer coordinating AI execution, validation, PR review, and command-bus receipt
-- **来源：** [map-agent-delivery-operations.md](../reports/atlas/maps/map-agent-delivery-operations.md)
-- **资产卡：** [HR-8C7E1C2721F6E7FD](./ASSET-CARDS.md#asset-hr-8c7e1c2721f6e7fd)
-
-<a id="change-src-hr-8b3081462a058d1a"></a>
-### 2026-07-15 · Effectual Action Plane
-
-- **类型：** `MODEL_OR_ARCHITECTURE`
-- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
-- **变化：** Status: 121Q12OPERATIONOVERLAY
-- **来源：** [effectual-action-plane.md](../docs/architecture/effectual-action-plane.md)
-- **资产卡：** [HR-8B3081462A058D1A](./ASSET-CARDS.md#asset-hr-8b3081462a058d1a)
-
-<a id="change-src-hr-833d1c5e553562bc"></a>
-### 2026-07-15 · 121Q5 Final Report — Canonical Function OS v0.2
-
-- **类型：** `RESEARCH_OR_SOURCE_REVIEW`
-- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **变化：** Status: CANDIDATE — 46/46 tests PASS Pipeline: N1→N2→N3→N4→N5→N6→N7→N9 (N8 composition) Branch: records/ignition-121q5-v4pro-canonical-function-os-v02-20260715 PR: 40 (OPEN/DRAFT)
-- **来源：** [121Q5-final-report.md](../reports/external-research/121Q5-final-report.md)
-- **资产卡：** [HR-833D1C5E553562BC](./ASSET-CARDS.md#asset-hr-833d1c5e553562bc)
-
-<a id="change-src-hr-771c2981fcc20396"></a>
-### 2026-07-15 · 121Q13 Attention, Distribution, And Compression Report
-
-- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
-- **状态：** `CANDIDATE_OR_PENDING_SOURCE`
-- **变化：** Status: READYASATTENTIONDISTRIBUTIONCONTROLCANDIDATE
-- **来源：** [121Q13-attention-distribution-compression.md](../reports/architecture/121Q13-attention-distribution-compression.md)
-- **资产卡：** [HR-771C2981FCC20396](./ASSET-CARDS.md#asset-hr-771c2981fcc20396)
-
-<a id="change-src-hr-70403729fef8b50e"></a>
-### 2026-07-15 · Non-Sycophancy Output Protocol
-
-- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
-- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
-- **变化：** Status: 121Q12OPERATIONOVERLAY
-- **来源：** [non-sycophancy-output-protocol.md](../docs/governance/non-sycophancy-output-protocol.md)
-- **资产卡：** [HR-70403729FEF8B50E](./ASSET-CARDS.md#asset-hr-70403729fef8b50e)
-
-<a id="change-src-hr-6750bcffe399a4fb"></a>
-### 2026-07-15 · 121Q2R Canonical Reconciliation Report
-
-- **类型：** `RESEARCH_OR_SOURCE_REVIEW`
-- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **变化：** Date: 2026-07-14T16:53:33Z
-- **来源：** [121Q2R-canonical-reconciliation.md](../reports/external-research/121Q2R-canonical-reconciliation.md)
-- **资产卡：** [HR-6750BCFFE399A4FB](./ASSET-CARDS.md#asset-hr-6750bcffe399a4fb)
-
-<a id="change-src-hr-5e32e96b5ac7b371"></a>
-### 2026-07-15 · 121Q16 Sustainability Signal Pilot
-
-- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
-- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **变化：** READYASSUSTAINABILITYSIGNALINTERFACECANDIDATE.
-- **来源：** [121Q16-sustainability-signal-pilot.md](../reports/reality/121Q16-sustainability-signal-pilot.md)
-- **资产卡：** [HR-5E32E96B5AC7B371](./ASSET-CARDS.md#asset-hr-5e32e96b5ac7b371)
-
-<a id="change-src-hr-5b54a4719d10bbc2"></a>
-### 2026-07-15 · 121Q8 Final Report
-
-- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
-- **状态：** `CANDIDATE_OR_PENDING_SOURCE`
-- **变化：** Status: complete pending GPT verification. PR remains OPEN / DRAFT / UNMERGED.
-- **来源：** [121Q8-final-report.md](../reports/governance/121Q8-final-report.md)
-- **资产卡：** [HR-5B54A4719D10BBC2](./ASSET-CARDS.md#asset-hr-5b54a4719d10bbc2)
-
-<a id="change-src-hr-47abfc6ad84da18c"></a>
-### 2026-07-15 · map-maintainer-sustainability-economics
-
-- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
-- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **变化：** Observer: maintainer deciding what to keep, rent, automate, standardize, or fund
-- **来源：** [map-maintainer-sustainability-economics.md](../reports/atlas/maps/map-maintainer-sustainability-economics.md)
-- **资产卡：** [HR-47ABFC6AD84DA18C](./ASSET-CARDS.md#asset-hr-47abfc6ad84da18c)
-
-<a id="change-src-hr-4021615f6416219a"></a>
-### 2026-07-15 · 121Q10 Emergent Current State and License Text Finalization
-
-- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
-- **状态：** `CANDIDATE_OR_PENDING_SOURCE`
-- **变化：** Status: READYFORFINALRELEASEDECISION pending final remote CI observation on this head.
-- **来源：** [121Q10-emergent-state-license-finalization.md](../reports/release/121Q10-emergent-state-license-finalization.md)
-- **资产卡：** [HR-4021615F6416219A](./ASSET-CARDS.md#asset-hr-4021615f6416219a)
-
-<a id="change-src-hr-2ad47297310f2b9a"></a>
-### 2026-07-15 · 121Q16 Action Selection
-
-- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
-- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **变化：** Status: ACTIONTHRESHOLDMET
-- **来源：** [121Q16-action-selection.md](../reports/reality/121Q16-action-selection.md)
-- **资产卡：** [HR-2AD47297310F2B9A](./ASSET-CARDS.md#asset-hr-2ad47297310f2b9a)
-
-<a id="change-src-hr-259784cecbb2dc49"></a>
-### 2026-07-15 · 121Q13 Baseline And Overlap Audit
-
-- **类型：** `AUDIT_OR_ADJUDICATION`
-- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **变化：** 121Q13 starts from 121Q12 Draft PR 47 head 338cfff999e26dce623c6c55d810587db4a668ba.
-- **来源：** [121Q13-baseline-overlap-audit.md](../reports/architecture/121Q13-baseline-overlap-audit.md)
-- **资产卡：** [HR-259784CECBB2DC49](./ASSET-CARDS.md#asset-hr-259784cecbb2dc49)
-
-<a id="change-src-hr-1c89ea0a4c2a0aa1"></a>
-### 2026-07-15 · map-epistemic-architecture
-
-- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
-- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **变化：** Observer: maintainer and reviewer deciding how claims can move toward publication
-- **来源：** [map-epistemic-architecture.md](../reports/atlas/maps/map-epistemic-architecture.md)
-- **资产卡：** [HR-1C89EA0A4C2A0AA1](./ASSET-CARDS.md#asset-hr-1c89ea0a4c2a0aa1)
-
-<a id="change-src-hr-1437a5c9924f3c9e"></a>
-### 2026-07-15 · IGNITION-121Q6C 执行结果
-
-- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
-- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **变化：** 执行者：QClaw（Hy3） 状态：121Q6C 完成（Step 000–007）
-- **来源：** [IGNITION-121Q6C-result.md](../agent-results/IGNITION-121Q6C-result.md)
-- **资产卡：** [HR-1437A5C9924F3C9E](./ASSET-CARDS.md#asset-hr-1437a5c9924f3c9e)
-
-<a id="change-src-hr-0ef7472961a343e5"></a>
-### 2026-07-15 · Mechanism Adjudication Plane
-
-- **类型：** `AUDIT_OR_ADJUDICATION`
-- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
-- **变化：** Status: 121Q12OPERATIONOVERLAY
-- **来源：** [mechanism-adjudication-plane.md](../docs/architecture/mechanism-adjudication-plane.md)
-- **资产卡：** [HR-0EF7472961A343E5](./ASSET-CARDS.md#asset-hr-0ef7472961a343e5)
-
-<a id="change-src-hr-0450dd379222f5ba"></a>
-### 2026-07-15 · 121Q9 Global Validation
-
-- **类型：** `AUDIT_OR_ADJUDICATION`
-- **状态：** `CANDIDATE_OR_PENDING_SOURCE`
-- **变化：** Status: PASS locally for cumulative release candidate Step 003.
-- **来源：** [121Q9-global-validation.md](../reports/release/121Q9-global-validation.md)
-- **资产卡：** [HR-0450DD379222F5BA](./ASSET-CARDS.md#asset-hr-0450dd379222f5ba)
-
-<a id="change-src-hr-933d6ba7d34f8014"></a>
-### 2026-07-14 · 121C01: First Batch GLM-5.2 Max Semantic Review Report
-
-- **类型：** `RESEARCH_OR_SOURCE_REVIEW`
-- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **变化：** Task: IGNITION-20260709-121C01 Reviewer: qclaw/pool-glm-5.2 (reasoning: high) Note: Task specified max reasoning; subagent environment supports high only. Main session supports max. Date: 2026-07-14 Baseline: 66c6efdf673dc486fbf10373edbcf2eab67a528c (121B HEAD) Status: 121C01MAXSEMANTICBATCHCOMPL…
-- **来源：** [121c01-max-semantic-review-batch-01.md](../reports/external-research/121c01-max-semantic-review-batch-01.md)
-- **资产卡：** [HR-933D6BA7D34F8014](./ASSET-CARDS.md#asset-hr-933d6ba7d34f8014)
-
-<a id="change-src-hr-552359b3880c984a"></a>
-### 2026-07-14 · Legal Full-Text Resolver Report — IGNITION-121
-
-- **类型：** `RESEARCH_OR_SOURCE_REVIEW`
-- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **变化：** IGNITION-121 built a reusable, legal full-text resolver for ignition external-research tasks. The resolver operates on a defined protocol that uses only legitimate open-access channels and records every resolution attempt, hash, and failure.
-- **来源：** [121-legal-fulltext-resolver-report.md](../reports/external-research/121-legal-fulltext-resolver-report.md)
-- **资产卡：** [HR-552359B3880C984A](./ASSET-CARDS.md#asset-hr-552359b3880c984a)
-
-<a id="change-src-hr-47da75ea2c43ef63"></a>
-### 2026-07-14 · Function-Paradigm Full-Text Review Report — IGNITION-121
-
-- **类型：** `RESEARCH_OR_SOURCE_REVIEW`
-- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **变化：** This report documents the 121 full-text review of 30 core papers selected from the 84 sources in IGNITION-120. The review focused on identifying source-specific support and non-support for ignition's Function OS model and the six GAPs GAP-015 to GAP-020.
-- **来源：** [121-function-paradigm-fulltext-review-report.md](../reports/external-research/121-function-paradigm-fulltext-review-report.md)
-- **资产卡：** [HR-47DA75EA2C43EF63](./ASSET-CARDS.md#asset-hr-47da75ea2c43ef63)
-
-<a id="change-src-hr-215773989a96f879"></a>
-### 2026-07-14 · 121A Night Recovery Report
-
-- **类型：** `RESEARCH_OR_SOURCE_REVIEW`
-- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **变化：** IGNITION-121A was executed by QClaw (model: qclaw/pool-glm-5.2-night, reasoning: high) on 2026-07-14 to recover Kimi-K2.7's partial 121 work, audit all outputs, repair format issues, and form a clean checkpoint for resumption.
-- **来源：** [121A-night-recovery-report.md](../reports/external-research/121A-night-recovery-report.md)
-- **资产卡：** [HR-215773989A96F879](./ASSET-CARDS.md#asset-hr-215773989a96f879)
-
-<a id="change-src-hr-1c6a8f5e8b981082"></a>
-### 2026-07-14 · 121B Fulltext Batch Report
-
-- **类型：** `RESEARCH_OR_SOURCE_REVIEW`
-- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **变化：** 121B successfully published the 121A local checkpoint to a clean remote branch, completed batch legal fulltext resolution for all 84 sources, and generated the 121C semantic review queue. Of 84 sources, 79 were successfully downloaded (74 original + 5 retry), 5 remain failed with explicit failure…
-- **来源：** [121b-fulltext-batch-report.md](../reports/external-research/121b-fulltext-batch-report.md)
-- **资产卡：** [HR-1C6A8F5E8B981082](./ASSET-CARDS.md#asset-hr-1c6a8f5e8b981082)
-
 <a id="change-src-hr-e4827916294ebf56"></a>
 ### 2026-07-13 · T2 proof-equivalence audit
 
@@ -974,60 +1388,6 @@
 - **变化：** The source says “任一因子=0→乘积=0” and applies it to the point-fire framework product. It does not declare Nat, restrict the product to two factors, or type all factors into one algebraic carrier.
 - **来源：** [T2-proof-equivalence-audit-20260713.md](../reports/foundation-architecture/T2-proof-equivalence-audit-20260713.md)
 - **资产卡：** [HR-E4827916294EBF56](./ASSET-CARDS.md#asset-hr-e4827916294ebf56)
-
-<a id="change-src-hr-e31b1dff732ad215"></a>
-### 2026-07-13 · 120 — Function OS Architecture Candidate Report
-
-- **类型：** `RESEARCH_OR_SOURCE_REVIEW`
-- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **变化：** Date: 2026-07-13 Executor: QClaw (qclaw/pool-glm-5.2-night, reasoning: high)
-- **来源：** [120-function-os-architecture-candidate-report.md](../reports/external-research/120-function-os-architecture-candidate-report.md)
-- **资产卡：** [HR-E31B1DFF732AD215](./ASSET-CARDS.md#asset-hr-e31b1dff732ad215)
-
-<a id="change-src-hr-e1d441f85e9b4b63"></a>
-### 2026-07-13 · 085: Architecture Structure Freeze Report
-
-- **类型：** `FOUNDATION_OR_GOVERNANCE`
-- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **变化：** ARCHITECTURESTRUCTUREFROZENCLAIMTRUTHPROVISIONAL
-- **来源：** [085-architecture-structure-freeze.md](../reports/foundation-architecture/085-architecture-structure-freeze.md)
-- **资产卡：** [HR-E1D441F85E9B4B63](./ASSET-CARDS.md#asset-hr-e1d441f85e9b4b63)
-
-<a id="change-src-hr-e14552c4c0658b5a"></a>
-### 2026-07-13 · 083 Escalation Routing Report
-
-- **类型：** `FOUNDATION_OR_GOVERNANCE`
-- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **变化：** Date: 2026-07-13 Task: IGNITION-20260709-083
-- **来源：** [083-escalation-routing-report.md](../reports/foundation-architecture/083-escalation-routing-report.md)
-- **资产卡：** [HR-E14552C4C0658B5A](./ASSET-CARDS.md#asset-hr-e14552c4c0658b5a)
-
-<a id="change-src-hr-d77d1e13245bc9a4"></a>
-### 2026-07-13 · 九轴状态系统
-
-- **类型：** `FOUNDATION_OR_GOVERNANCE`
-- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
-- **变化：** workflow、semantic、formal、logic、proof、evidence、scope、provenance、migration 是相互独立的枚举轴。schema 与验证器禁止将 CLOSED、CONVERGED、MULTICASE、MACHINECHECKEDPROOF 等单轴状态传播成其他轴的成功。
-- **来源：** [status-system.md](../docs/foundation/status-system.md)
-- **资产卡：** [HR-D77D1E13245BC9A4](./ASSET-CARDS.md#asset-hr-d77d1e13245bc9a4)
-
-<a id="change-src-hr-d0d9de18fd9e9bde"></a>
-### 2026-07-13 · 085: 084 Truth Status Correction
-
-- **类型：** `CORRECTION_OR_WITHDRAWAL`
-- **状态：** `CURRENT_CORRECTION_RECORD`
-- **变化：** 本文件纠正 084 报告中对生成机制和命题真值的不准确描述。所有纠正基于 084-max-decisions.jsonl 的机器可读真值重算，不修改 084 原始文件。
-- **来源：** [085-084-truth-status-correction.md](../reports/foundation-architecture/085-084-truth-status-correction.md)
-- **资产卡：** [HR-D0D9DE18FD9E9BDE](./ASSET-CARDS.md#asset-hr-d0d9de18fd9e9bde)
-
-<a id="change-src-hr-c7aaddf58550aae5"></a>
-### 2026-07-13 · 120 — Function Paradigm Atlas Report
-
-- **类型：** `RESEARCH_OR_SOURCE_REVIEW`
-- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **变化：** Date: 2026-07-13 Executor: QClaw (qclaw/pool-glm-5.2-night, reasoning: high) Branch: records/ignition-120-function-paradigm-atlas-20260713
-- **来源：** [120-function-paradigm-atlas-report.md](../reports/external-research/120-function-paradigm-atlas-report.md)
-- **资产卡：** [HR-C7AADDF58550AAE5](./ASSET-CARDS.md#asset-hr-c7aaddf58550aae5)
 
 <a id="change-src-hr-adeed1d734c70a83"></a>
 ### 2026-07-13 · D598 final adjudication
@@ -1038,33 +1398,6 @@
 - **来源：** [D598-final-adjudication-20260713.md](../reports/foundation-architecture/D598-final-adjudication-20260713.md)
 - **资产卡：** [HR-ADEED1D734C70A83](./ASSET-CARDS.md#asset-hr-adeed1d734c70a83)
 
-<a id="change-src-hr-ac9e178219fcc8d0"></a>
-### 2026-07-13 · IGNITION-084 Max Adjudication Report
-
-- **类型：** `AUDIT_OR_ADJUDICATION`
-- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **变化：** P4 裁决要点：绝大多数 P4 声明未同时提供两个明确结构、双射、被保持运算和双向验证，因此无法保留"严格同构"标签。
-- **来源：** [084-max-adjudication-report.md](../reports/foundation-architecture/084-max-adjudication-report.md)
-- **资产卡：** [HR-AC9E178219FCC8D0](./ASSET-CARDS.md#asset-hr-ac9e178219fcc8d0)
-
-<a id="change-src-hr-aab6acea79423520"></a>
-### 2026-07-13 · 120 — Source Quality and Template Risk Audit
-
-- **类型：** `RESEARCH_OR_SOURCE_REVIEW`
-- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **变化：** Date: 2026-07-13 Executor: QClaw (qclaw/pool-glm-5.2-night, reasoning: high)
-- **来源：** [120-source-quality-and-template-risk-audit.md](../reports/external-research/120-source-quality-and-template-risk-audit.md)
-- **资产卡：** [HR-AAB6ACEA79423520](./ASSET-CARDS.md#asset-hr-aab6acea79423520)
-
-<a id="change-src-hr-a5759af803aebc01"></a>
-### 2026-07-13 · 数学地基规则
-
-- **类型：** `FOUNDATION_OR_GOVERNANCE`
-- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
-- **变化：** 特别规则：A 只表示声明理论内的假设/公理；T 只有链接可检查证明工件时才是 THEOREM。legacy ID 永久保留，但 legacy 标签不支配新类型。
-- **来源：** [README.md](../docs/foundation/mathematics/README.md)
-- **资产卡：** [HR-A5759AF803AEBC01](./ASSET-CARDS.md#asset-hr-a5759af803aebc01)
-
 <a id="change-src-hr-9fad496317a3b73c"></a>
 ### 2026-07-13 · Semantic adjudication verification
 
@@ -1073,33 +1406,6 @@
 - **变化：** 079 independently read and reviewed the complete legacy bodies for registry objects Y1, T2, T16, D220 and D598. It also reviewed the complete root source for the nine internal components C, M, Iiso, Lmeta, Gdelta, Pmeta, J+, J- and MF-0000.
 - **来源：** [semantic-adjudication-verification-20260713.md](../reports/foundation-architecture/semantic-adjudication-verification-20260713.md)
 - **资产卡：** [HR-9FAD496317A3B73C](./ASSET-CARDS.md#asset-hr-9fad496317a3b73c)
-
-<a id="change-src-hr-98aee959a458b641"></a>
-### 2026-07-13 · 104 补丁证据就绪报告
-
-- **类型：** `RESEARCH_OR_SOURCE_REVIEW`
-- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **变化：** 088-B 产出了 14 个架构补丁：8 个 NEWOBJECTTYPEINTERFACE（HIGH 缺口）和 6 个 ENHANCEKEEP（MEDIUM 缺口）。088-FINAL-REPORT 将 8 个 HIGH 标记为 INJECTEDVERIFIED，6 个 MEDIUM 标记为 ENHANCEWITHEXTERNALSOURCES。
-- **来源：** [104-gap-patch-evidence-readiness.md](../reports/external-research/104-gap-patch-evidence-readiness.md)
-- **资产卡：** [HR-98AEE959A458B641](./ASSET-CARDS.md#asset-hr-98aee959a458b641)
-
-<a id="change-src-hr-95f4d0b3d4dd2b7d"></a>
-### 2026-07-13 · 逻辑地基规则
-
-- **类型：** `FOUNDATION_OR_GOVERNANCE`
-- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
-- **变化：** 非纯数学对象的最小结构为 Premises + Declared Inference Rules - Conclusion。无法形成演绎时保留 DEFEASIBLESUPPORT、HIDDENPREMISE 或 PENDING。
-- **来源：** [README.md](../docs/foundation/logic/README.md)
-- **资产卡：** [HR-95F4D0B3D4DD2B7D](./ASSET-CARDS.md#asset-hr-95f4d0b3d4dd2b7d)
-
-<a id="change-src-hr-9516507750851228"></a>
-### 2026-07-13 · IGNITION-106: GAP-001 接口就绪度评估
-
-- **类型：** `RESEARCH_OR_SOURCE_REVIEW`
-- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **变化：** PROVISIONALINTERFACERECOMMENDATIONPENDINGCONSTITUTIONALREVIEW
-- **来源：** [106-gap001-interface-readiness.md](../reports/external-research/106-gap001-interface-readiness.md)
-- **资产卡：** [HR-9516507750851228](./ASSET-CARDS.md#asset-hr-9516507750851228)
 
 <a id="change-src-hr-8abef15d00fa6899"></a>
 ### 2026-07-13 · D220 countermodel-equivalence audit
@@ -1119,24 +1425,6 @@
 - **来源：** [080-full-semantic-adjudication-report-20260713.md](../reports/foundation-architecture/080-full-semantic-adjudication-report-20260713.md)
 - **资产卡：** [HR-86AD7C707A8B70D8](./ASSET-CARDS.md#asset-hr-86ad7c707a8b70d8)
 
-<a id="change-src-hr-851dd1b125828bfd"></a>
-### 2026-07-13 · 083 GLM High Repair Summary
-
-- **类型：** `FOUNDATION_OR_GOVERNANCE`
-- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **变化：** Date: 2026-07-13 Task: IGNITION-20260709-083 Executor: QClaw GLM-5.2 (pool-glm-5.2) Reasoning Level: high Branch: records/ignition-083-glm-high-repair-and-max-queue-20260713 Base: f0862cc0a827a94e930b78a269c8fdc8a5c5c019 (081 head)
-- **来源：** [083-glm-high-repair-summary.md](../reports/foundation-architecture/083-glm-high-repair-summary.md)
-- **资产卡：** [HR-851DD1B125828BFD](./ASSET-CARDS.md#asset-hr-851dd1b125828bfd)
-
-<a id="change-src-hr-7b29778a2b189cd1"></a>
-### 2026-07-13 · IGNITION-106: 105 证据纠错报告
-
-- **类型：** `CORRECTION_OR_WITHDRAWAL`
-- **状态：** `CURRENT_CORRECTION_RECORD`
-- **变化：** 保留: 6条 | 降级: 2条 (S10 PDF编码失败, S13 AEA需JS) CONFIRMED: 6条 | UNRESOLVED: 2条
-- **来源：** [106-105-evidence-correction-report.md](../reports/external-research/106-105-evidence-correction-report.md)
-- **资产卡：** [HR-7B29778A2B189CD1](./ASSET-CARDS.md#asset-hr-7b29778a2b189cd1)
-
 <a id="change-src-hr-7a5aa67ff65f918e"></a>
 ### 2026-07-13 · Core proof and countermodel report
 
@@ -1155,51 +1443,6 @@
 - **来源：** [078-truth-audit-20260713.md](../reports/foundation-architecture/078-truth-audit-20260713.md)
 - **资产卡：** [HR-70146813777BCDB5](./ASSET-CARDS.md#asset-hr-70146813777bcdb5)
 
-<a id="change-src-hr-69ae0aeb92225add"></a>
-### 2026-07-13 · 088 阶段1：087 计数与分母审计
-
-- **类型：** `AUDIT_OR_ADJUDICATION`
-- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **变化：** 087-v1-1-overlay.md 全程使用分母 143（如 143/143、124/143、123/143 等共9处），但 087 全部数据文件权威学科总数为 250，且投影矩阵中 NOTAPPLICABLE=0（无学科被排除）。143 在 087 任何数据文件中均无对应子集来源，属旧口径错误残留。
-- **来源：** [088-087-count-and-denominator-audit.md](../reports/foundation-architecture/088-087-count-and-denominator-audit.md)
-- **资产卡：** [HR-69AE0AEB92225ADD](./ASSET-CARDS.md#asset-hr-69ae0aeb92225add)
-
-<a id="change-src-hr-677152f467e106d4"></a>
-### 2026-07-13 · 强断言门禁
-
-- **类型：** `FOUNDATION_OR_GOVERNANCE`
-- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
-- **变化：** THEOREM、AXIOM、ISOMORPHISM、CAUSAL、PROVED 属于受控术语。缺少所需定义、理论、双射、结构保持、干预语义、识别证据或证明工件时必须降级，并记录 unresolved blocker。验证工具只能判断已声明约束是否满足，不输出“理论是真的”。
-- **来源：** [strong-claim-gates.md](../docs/foundation/strong-claim-gates.md)
-- **资产卡：** [HR-677152F467E106D4](./ASSET-CARDS.md#asset-hr-677152f467e106d4)
-
-<a id="change-src-hr-62de12643e577ef4"></a>
-### 2026-07-13 · 084 Architecture Truth Freeze Readiness Assessment
-
-- **类型：** `FOUNDATION_OR_GOVERNANCE`
-- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **变化：** 状态: MAXADJUDICATIONCOMPLETEARCHITECTURETRUTHFREEZECANDIDATE
-- **来源：** [084-architecture-truth-freeze-readiness.md](../reports/foundation-architecture/084-architecture-truth-freeze-readiness.md)
-- **资产卡：** [HR-62DE12643E577EF4](./ASSET-CARDS.md#asset-hr-62de12643e577ef4)
-
-<a id="change-src-hr-5de7359175082aca"></a>
-### 2026-07-13 · 082 Independent Acceptance Audit Report
-
-- **类型：** `AUDIT_OR_ADJUDICATION`
-- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **变化：** Date: 2026-07-13 Task: IGNITION-20260709-082 Executor: QClaw GLM-5.2 (pool-glm-5.2) Reasoning Level: high
-- **来源：** [082-independent-acceptance-audit.md](../reports/foundation-architecture/082-independent-acceptance-audit.md)
-- **资产卡：** [HR-5DE7359175082ACA](./ASSET-CARDS.md#asset-hr-5de7359175082aca)
-
-<a id="change-src-hr-590a8629163938ec"></a>
-### 2026-07-13 · 083 Quality Window Report
-
-- **类型：** `FOUNDATION_OR_GOVERNANCE`
-- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **变化：** Date: 2026-07-13 Task: IGNITION-20260709-083
-- **来源：** [083-quality-window-report.md](../reports/foundation-architecture/083-quality-window-report.md)
-- **资产卡：** [HR-590A8629163938EC](./ASSET-CARDS.md#asset-hr-590a8629163938ec)
-
 <a id="change-src-hr-52a1b14648bb866b"></a>
 ### 2026-07-13 · Remaining content work queue
 
@@ -1217,42 +1460,6 @@
 - **变化：** Complete machine-readable list: data/foundation/adjudications/core-kernel.jsonl.
 - **来源：** [core-kernel-adjudication-20260713.md](../reports/foundation-architecture/core-kernel-adjudication-20260713.md)
 - **资产卡：** [HR-48569BCF01C7F27F](./ASSET-CARDS.md#asset-hr-48569bcf01c7f27f)
-
-<a id="change-src-hr-3611a9bf0615b4e7"></a>
-### 2026-07-13 · Foundation documentation
-
-- **类型：** `FOUNDATION_OR_GOVERNANCE`
-- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
-- **变化：** 076 将“来源、命题、对象、论证、证明、验证、出版”拆开管理。先读根目录 FOUNDATION.md，再按数学、逻辑、注册表、状态、门禁和迁移文档工作。旧 L0-L5 声明等级如仍在历史文档出现，只是 legacy assertion grade，不等于本架构七层。
-- **来源：** [README.md](../docs/foundation/README.md)
-- **资产卡：** [HR-3611A9BF0615B4E7](./ASSET-CARDS.md#asset-hr-3611a9bf0615b4e7)
-
-<a id="change-src-hr-2df668dbdc482ed7"></a>
-### 2026-07-13 · 注册表契约
-
-- **类型：** `FOUNDATION_OR_GOVERNANCE`
-- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
-- **变化：** 稳定实体去重键为 assetkind、normalizednamespace、normalizedid；文件表示键为 entitykey、path、gitblobsha。所有引用使用 entitykey。对象与命题分离；命题与论证分离；案例只进入 evidence；proof artifact 与 validation record 不混用。
-- **来源：** [registry-contract.md](../docs/foundation/registry-contract.md)
-- **资产卡：** [HR-2DF668DBDC482ED7](./ASSET-CARDS.md#asset-hr-2df668dbdc482ed7)
-
-<a id="change-src-hr-2dd772b06269e251"></a>
-### 2026-07-13 · Architecture Structure Freeze v1
-
-- **类型：** `FOUNDATION_OR_GOVERNANCE`
-- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
-- **变化：** ARCHITECTURESTRUCTUREFROZENCLAIMTRUTHPROVISIONAL
-- **来源：** [architecture-structure-freeze-v1.md](../docs/foundation/architecture-structure-freeze-v1.md)
-- **资产卡：** [HR-2DD772B06269E251](./ASSET-CARDS.md#asset-hr-2dd772b06269e251)
-
-<a id="change-src-hr-2cf0c16a60d1a3af"></a>
-### 2026-07-13 · 104 来源质量审计
-
-- **类型：** `RESEARCH_OR_SOURCE_REVIEW`
-- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **变化：** 问题：大小写不一致（ARTICLE vs journalarticle vs journal-article），需标准化。
-- **来源：** [104-source-quality-audit.md](../reports/external-research/104-source-quality-audit.md)
-- **资产卡：** [HR-2CF0C16A60D1A3AF](./ASSET-CARDS.md#asset-hr-2cf0c16a60d1a3af)
 
 <a id="change-src-hr-23602e485d46c33b"></a>
 ### 2026-07-13 · 080 Highest Model Escalation Summary
@@ -1281,15 +1488,6 @@
 - **来源：** [T16-counterexample-equivalence-audit-20260713.md](../reports/foundation-architecture/T16-counterexample-equivalence-audit-20260713.md)
 - **资产卡：** [HR-191C775BCE185353](./ASSET-CARDS.md#asset-hr-191c775bce185353)
 
-<a id="change-src-hr-1255e91e43370b8e"></a>
-### 2026-07-13 · 085: Backlog Prioritization
-
-- **类型：** `FOUNDATION_OR_GOVERNANCE`
-- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **变化：** 文件: data/foundation/work-queues/085-proof-priority-queue.jsonl
-- **来源：** [085-backlog-prioritization.md](../reports/foundation-architecture/085-backlog-prioritization.md)
-- **资产卡：** [HR-1255E91E43370B8E](./ASSET-CARDS.md#asset-hr-1255e91e43370b8e)
-
 <a id="change-src-hr-0dcc5422ea65d2e4"></a>
 ### 2026-07-13 · 076 adversarial acceptance audit
 
@@ -1299,15 +1497,6 @@
 - **来源：** [076-adversarial-acceptance-audit-20260713.md](../reports/foundation-architecture/076-adversarial-acceptance-audit-20260713.md)
 - **资产卡：** [HR-0DCC5422EA65D2E4](./ASSET-CARDS.md#asset-hr-0dcc5422ea65d2e4)
 
-<a id="change-src-hr-0a190293ca8a50ae"></a>
-### 2026-07-13 · 迁移与回滚
-
-- **类型：** `FOUNDATION_OR_GOVERNANCE`
-- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
-- **变化：** 迁移读取 075 head 的 legacy 文件，按稳定 ID 去重并生成新注册表及兼容视图。它不修改旧表、不删除候选、不重编号。回滚只移除 data/foundation/、schemas/foundation/、views/ 及关联生成报告；原始表和历史报告仍可审计。
-- **来源：** [migration.md](../docs/foundation/migration.md)
-- **资产卡：** [HR-0A190293CA8A50AE](./ASSET-CARDS.md#asset-hr-0a190293ca8a50ae)
-
 <a id="change-src-hr-08f0792e76d0f0cb"></a>
 ### 2026-07-13 · Core strong-claim audit
 
@@ -1316,15 +1505,6 @@
 - **变化：** 原文件保存该项结果的完整问题、过程与边界。
 - **来源：** [core-strong-claim-audit-20260713.md](../reports/foundation-architecture/core-strong-claim-audit-20260713.md)
 - **资产卡：** [HR-08F0792E76D0F0CB](./ASSET-CARDS.md#asset-hr-08f0792e76d0f0cb)
-
-<a id="change-src-hr-081b7e1fafaa5756"></a>
-### 2026-07-13 · 104 双 088 归并与外部证据层定版报告
-
-- **类型：** `RESEARCH_OR_SOURCE_REVIEW`
-- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **变化：** PARTIALEXTERNALEVIDENCELAYERWITHEXPLICITBLOCKERS
-- **来源：** [104-dual-088-reconciliation.md](../reports/external-research/104-dual-088-reconciliation.md)
-- **资产卡：** [HR-081B7E1FAFAA5756](./ASSET-CARDS.md#asset-hr-081b7e1fafaa5756)
 
 <a id="change-src-hr-e815f8ad25cfc77e"></a>
 ### 2026-07-12 · IGNITION 059 next collision roadmap
@@ -1623,33 +1803,6 @@
 - **来源：** [life-community-value-audit.md](../outputs/collisions/20260711-disobedience-subjectivity/life-community-value-audit.md)
 - **资产卡：** [HR-F8C21CD0CD6A1F34](./ASSET-CARDS.md#asset-hr-f8c21cd0cd6a1f34)
 
-<a id="change-src-hr-ef6e1d0860ae3fef"></a>
-### 2026-07-11 · 事实 Pending 总表（外部治理记录）
-
-- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
-- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
-- **变化：** 本表整理 12 个元协议的事实缺口。这些缺口是“事实验证待补”，不是价值冲突，也不否定已经完成的规范性判断（全部为 CONDITIONALACCEPTANCE）。规范性审核阶段到此整体结束；后续进入项目使用与事实验证，不再逐协议重复审核。
-- **来源：** [factual-pending-register.md](../docs/governance/meta-protocol-reviews/factual-pending-register.md)
-- **资产卡：** [HR-EF6E1D0860AE3FEF](./ASSET-CARDS.md#asset-hr-ef6e1d0860ae3fef)
-
-<a id="change-src-hr-d3835bd97f147a42"></a>
-### 2026-07-11 · V3 规范性审核 - 创新性协议 (Innovation Protocol)
-
-- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
-- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
-- **变化：** 价值：增加生命共同体的适应能力、问题解决能力与未来选择空间，是应对不确定性的关键。条件：仅当可检验、可逆优先、风险隔离、可停止、有失败反馈时才有价值。伤害：当以“创新”为由制造不可控、不可逆、外部化风险时，会伤害共同体。不可缺少的约束：可逆优先、小规模试验、风险隔离、可停止、失败反馈、禁止不可控外部风险。
-- **来源：** [V3.md](../docs/governance/meta-protocol-reviews/protocols/V3.md)
-- **资产卡：** [HR-D3835BD97F147A42](./ASSET-CARDS.md#asset-hr-d3835bd97f147a42)
-
-<a id="change-src-hr-c32095e69516906c"></a>
-### 2026-07-11 · V2 规范性审核 - 效率性协议 (Efficiency Protocol)
-
-- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
-- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
-- **变化：** 选择产出/投入效率最大（单位资源产出最高）的行动。
-- **来源：** [V2.md](../docs/governance/meta-protocol-reviews/protocols/V2.md)
-- **资产卡：** [HR-C32095E69516906C](./ASSET-CARDS.md#asset-hr-c32095e69516906c)
-
 <a id="change-src-hr-bcc48ae7649ea4fe"></a>
 ### 2026-07-11 · 材料分层图（source-layer-map）
 
@@ -1677,24 +1830,6 @@
 - **来源：** [d583-portable-source-reference-audit-20260711.md](../outputs/audit/d583-portable-source-reference-audit-20260711.md)
 - **资产卡：** [HR-B72BF8B27748C5E3](./ASSET-CARDS.md#asset-hr-b72bf8b27748c5e3)
 
-<a id="change-src-hr-b3910e7a27e481ac"></a>
-### 2026-07-11 · 生命共同体价值宪章
-
-- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
-- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
-- **变化：** 本宪章是点火项目的规范性价值前提，用于约束元协议、函数、案例和理论生成结果的价值方向。它不构成经验性证据，不替代数学证明、实验验证、案例核验、外部学科审查或治理批准。
-- **来源：** [life-community-value-charter.md](../docs/governance/life-community-value-charter.md)
-- **资产卡：** [HR-B3910E7A27E481AC](./ASSET-CARDS.md#asset-hr-b3910e7a27e481ac)
-
-<a id="change-src-hr-ae709c73eb8cce73"></a>
-### 2026-07-11 · S3 规范性审核 - 层级协议 (Hierarchy Protocol)
-
-- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
-- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
-- **变化：** 价值：责任清晰、应急协调、专业分工与大规模复杂任务，是有效组织的工具。条件：仅当权力可问责、层级可撤销、决策可复核且底层有申诉与退出机制时才有价值。伤害：当层级不可问责、不可撤销、把服从当价值或剥夺底层权利时，会伤害共同体。不可缺少的约束：权力可问责、层级可撤销、决策可复核、申诉与退出、服从非价值。
-- **来源：** [S3.md](../docs/governance/meta-protocol-reviews/protocols/S3.md)
-- **资产卡：** [HR-AE709C73EB8CCE73](./ASSET-CARDS.md#asset-hr-ae709c73eb8cce73)
-
 <a id="change-src-hr-a7b229336e1604ab"></a>
 ### 2026-07-11 · 审计：生命共同体价值宪章 README 入口
 
@@ -1703,33 +1838,6 @@
 - **变化：** 验证全部通过（15/15）。文档已就绪，待提交、推送并创建 PR，不自动合并。
 - **来源：** [life-community-value-charter-readme-audit-20260711.md](../outputs/audit/life-community-value-charter-readme-audit-20260711.md)
 - **资产卡：** [HR-A7B229336E1604AB](./ASSET-CARDS.md#asset-hr-a7b229336e1604ab)
-
-<a id="change-src-hr-9ce0dfb3a119bc53"></a>
-### 2026-07-11 · S1 规范性审核 - 封闭边界协议 (Closed-Boundary Protocol)
-
-- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
-- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
-- **变化：** 系统在封闭或强边界内演化，外部输入/退出/迁移受限。
-- **来源：** [S1.md](../docs/governance/meta-protocol-reviews/protocols/S1.md)
-- **资产卡：** [HR-9CE0DFB3A119BC53](./ASSET-CARDS.md#asset-hr-9ce0dfb3a119bc53)
-
-<a id="change-src-hr-8f6026df1ef643fe"></a>
-### 2026-07-11 · E1 规范性审核 - 线性演化协议 (Linear-Evolution Protocol)
-
-- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
-- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
-- **变化：** 价值：在局部、低耦合、关系稳定、可预测范围内，线性近似是简洁有效的建模与规划工具。条件：仅当系统满足低耦合、关系稳定、可预测，且设反馈与偏差检测时才有价值。伤害：当把复杂生命系统强行简化为直线、忽略临界点时会伤害共同体（误判崩溃）。不可缺少的约束：限定适用域、设反馈点、偏差检测、非线性退出条件、禁止过度简化。
-- **来源：** [E1.md](../docs/governance/meta-protocol-reviews/protocols/E1.md)
-- **资产卡：** [HR-8F6026DF1EF643FE](./ASSET-CARDS.md#asset-hr-8f6026df1ef643fe)
-
-<a id="change-src-hr-8d592a920b9edd0e"></a>
-### 2026-07-11 · 12 元协议规范性审核（外部治理记录）
-
-- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
-- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
-- **变化：** 原定义： 选择使系统延续时间最大（或延续概率最高）的行动。
-- **来源：** [12-meta-protocol-normative-review.md](../docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md)
-- **资产卡：** [HR-8D592A920B9EDD0E](./ASSET-CARDS.md#asset-hr-8d592a920b9edd0e)
 
 <a id="change-src-hr-8079a8712f2b03bc"></a>
 ### 2026-07-11 · Ψ₀ 判定矩阵（psi0-decision-matrix）
@@ -1749,24 +1857,6 @@
 - **来源：** [validation-report.md](../outputs/collisions/20260711-disobedience-subjectivity/validation-report.md)
 - **资产卡：** [HR-799941EDE8CA07CB](./ASSET-CARDS.md#asset-hr-799941ede8ca07cb)
 
-<a id="change-src-hr-6585a5fc88149fff"></a>
-### 2026-07-11 · V1 规范性审核 - 延续性协议 (Continuity Protocol)
-
-- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
-- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
-- **变化：** 选择使系统延续时间最大（或延续概率最高）的行动。
-- **来源：** [V1.md](../docs/governance/meta-protocol-reviews/protocols/V1.md)
-- **资产卡：** [HR-6585A5FC88149FFF](./ASSET-CARDS.md#asset-hr-6585a5fc88149fff)
-
-<a id="change-src-hr-654ae58eec903c53"></a>
-### 2026-07-11 · E3 规范性审核 - 循环演化协议 (Cyclic-Evolution Protocol)
-
-- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
-- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
-- **变化：** 价值：生态循环、资源再生、学习迭代、修复与周期性恢复，是再生能力的重要载体。条件：仅当循环是良性、真正再生而非路径依赖或表面重复时才有价值。伤害：当循环退化为恶性循环、路径依赖或锁定有害结构时会伤害共同体。不可缺少的约束：区分良性/恶性、识别路径依赖、支持真正再生、恶性循环须可停止。
-- **来源：** [E3.md](../docs/governance/meta-protocol-reviews/protocols/E3.md)
-- **资产卡：** [HR-654AE58EEC903C53](./ASSET-CARDS.md#asset-hr-654ae58eec903c53)
-
 <a id="change-src-hr-628b84a2327f5c52"></a>
 ### 2026-07-11 · 碰撞证据链：不听话的人 × 点火两张表（20260711）
 
@@ -1776,33 +1866,6 @@
 - **来源：** [README.md](../outputs/collisions/20260711-disobedience-subjectivity/README.md)
 - **资产卡：** [HR-628B84A2327F5C52](./ASSET-CARDS.md#asset-hr-628b84a2327f5c52)
 
-<a id="change-src-hr-53d09798ed596327"></a>
-### 2026-07-11 · E4 规范性审核 - 收敛演化协议 (Convergent-Evolution Protocol)
-
-- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
-- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
-- **变化：** 价值：向安全吸引子、合作稳定、风险降低与系统协调收敛，是降低冲突与风险的正向工具。条件：仅当收敛不强制同质化、保留多样性与未来选择空间时才有价值。伤害：当强制同质化、过早收敛、单一占据全部空间时会伤害共同体（锁死未来）。不可缺少的约束：禁止强制同质化、保留多样性、避免过早收敛、保留未来选择空间。
-- **来源：** [E4.md](../docs/governance/meta-protocol-reviews/protocols/E4.md)
-- **资产卡：** [HR-53D09798ED596327](./ASSET-CARDS.md#asset-hr-53d09798ed596327)
-
-<a id="change-src-hr-537499c7917fee41"></a>
-### 2026-07-11 · S2 规范性审核 - 开放边界协议 (Open-Boundary Protocol)
-
-- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
-- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
-- **变化：** 系统允许外部输入、退出、迁移或扩展，边界可渗透。
-- **来源：** [S2.md](../docs/governance/meta-protocol-reviews/protocols/S2.md)
-- **资产卡：** [HR-537499C7917FEE41](./ASSET-CARDS.md#asset-hr-537499c7917fee41)
-
-<a id="change-src-hr-52173a553c421e11"></a>
-### 2026-07-11 · 跨协议一致性红队（外部治理记录）
-
-- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
-- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
-- **变化：** 否。V4 修订定义明确写入"V4 不是绝对压倒一切的价值，须受宪章原则 4（整体不可无限压倒个体）约束"，并在硬约束中列为第 6 条。PASS。
-- **来源：** [cross-protocol-red-team.md](../docs/governance/meta-protocol-reviews/cross-protocol-red-team.md)
-- **资产卡：** [HR-52173A553C421E11](./ASSET-CARDS.md#asset-hr-52173a553c421e11)
-
 <a id="change-src-hr-4e500eb8be311cb7"></a>
 ### 2026-07-11 · 机制抽取（mechanism-extraction）
 
@@ -1811,15 +1874,6 @@
 - **变化：** 原文件保存该项结果的完整问题、过程与边界。
 - **来源：** [mechanism-extraction.md](../outputs/collisions/20260711-disobedience-subjectivity/mechanism-extraction.md)
 - **资产卡：** [HR-4E500EB8BE311CB7](./ASSET-CARDS.md#asset-hr-4e500eb8be311cb7)
-
-<a id="change-src-hr-4910d221a74d1112"></a>
-### 2026-07-11 · E2 规范性审核 - 非线性演化协议 (Nonlinear-Evolution Protocol)
-
-- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
-- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
-- **变化：** 价值：承认临界点、放大、涌现与不确定性，是对复杂系统的诚实描述，支撑预防原则。条件：仅当配套预防原则、沙盒、风险上限、可逆操作与实时反馈时才有价值。伤害：当以“不可预测”为由放弃约束、制造不可逆风险时会伤害共同体。不可缺少的约束：预防原则、沙盒、风险上限、可逆操作、实时反馈、区分良性/恶性涌现。
-- **来源：** [E2.md](../docs/governance/meta-protocol-reviews/protocols/E2.md)
-- **资产卡：** [HR-4910D221A74D1112](./ASSET-CARDS.md#asset-hr-4910d221a74d1112)
 
 <a id="change-src-hr-46d4e1a9e463a4a0"></a>
 ### 2026-07-11 · 候选决策摘要（candidate-decision-summary）
@@ -1839,15 +1893,6 @@
 - **来源：** [meta-protocol-normative-review-publication-audit-20260711.md](../outputs/audit/meta-protocol-normative-review-publication-audit-20260711.md)
 - **资产卡：** [HR-460EF60E3CF27DCA](./ASSET-CARDS.md#asset-hr-460ef60e3cf27dca)
 
-<a id="change-src-hr-25db71123fa1cbc7"></a>
-### 2026-07-11 · 元协议规范性审核（外部治理记录）
-
-- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
-- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
-- **变化：** 本目录为外部治理记录，不修改 canonical 协议状态、不替代事实验证、不替代独立人类复核、不替代治理批准、不宣布协议正式晋级。V2、V3 保留为黄色协议（事实度量 pending），不在本任务中自行发明全成本公式或可逆性指数并冒充已验证标准。
-- **来源：** [README.md](../docs/governance/meta-protocol-reviews/README.md)
-- **资产卡：** [HR-25DB71123FA1CBC7](./ASSET-CARDS.md#asset-hr-25db71123fa1cbc7)
-
 <a id="change-src-hr-241b716d50942efc"></a>
 ### 2026-07-11 · 12 元协议投影（12-meta-protocol-projection）
 
@@ -1856,24 +1901,6 @@
 - **变化：** 原文件保存该项结果的完整问题、过程与边界。
 - **来源：** [12-meta-protocol-projection.md](../outputs/collisions/20260711-disobedience-subjectivity/12-meta-protocol-projection.md)
 - **资产卡：** [HR-241B716D50942EFC](./ASSET-CARDS.md#asset-hr-241b716d50942efc)
-
-<a id="change-src-hr-1faefff9c300160f"></a>
-### 2026-07-11 · S4 规范性审核 - 网络协议 (Network Protocol)
-
-- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
-- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
-- **变化：** 价值：分布式协作、多中心治理、冗余、知识共享与局部失效隔离，提升系统韧性。条件：仅当责任可追溯、无隐形中心垄断、且局部失效可隔离时才有价值。伤害：当责任消失、隐形中心垄断、信息传染或网络效应锁定时，会伤害共同体。不可缺少的约束：责任可追溯、防止隐形中心、反锁定、局部失效隔离、多中心。
-- **来源：** [S4.md](../docs/governance/meta-protocol-reviews/protocols/S4.md)
-- **资产卡：** [HR-1FAEFFF9C300160F](./ASSET-CARDS.md#asset-hr-1faefff9c300160f)
-
-<a id="change-src-hr-1c328f9ffe6aee1f"></a>
-### 2026-07-11 · V4 规范性审核 - 可持续性协议 (Sustainability Protocol)
-
-- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
-- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
-- **变化：** 价值：在多时间尺度上维持再生能力、承载能力、多样性与代际公平，是共同体长期繁荣的硬边界。条件：仅当它指向再生与公平，而非维持有害现状时才有价值。伤害：当它被用作保护有害系统、压制必要改革或牺牲主体尊严的借口时，会伤害共同体。不可缺少的约束：再生优先于存量维持、不得保护有害系统、代际公平、多样性、不得无限压倒个体。
-- **来源：** [V4.md](../docs/governance/meta-protocol-reviews/protocols/V4.md)
-- **资产卡：** [HR-1C328F9FFE6AEE1F](./ASSET-CARDS.md#asset-hr-1c328f9ffe6aee1f)
 
 <a id="change-src-hr-052d55fd7ec8bacd"></a>
 ### 2026-07-11 · 独立复核主报告：脱不花×李丹阳长谈碰撞（IGNITION-20260709-056 第二视角）
@@ -2316,15 +2343,6 @@
 - **来源：** [v0.2-function-dependency-graph-20260706.md](../outputs/getbrain/v0.2-function-dependency-graph-20260706.md)
 - **资产卡：** [HR-DE9BF5C4104738D3](./ASSET-CARDS.md#asset-hr-de9bf5c4104738d3)
 
-<a id="change-src-hr-dc0c745159dd31db"></a>
-### 2026-07-06 · 比刀剑更持久的，是共享观念
-
-- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
-- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **变化：** --- kind: "story" seq: 1 id: "S1" title: "比刀剑更持久的，是共享观念" source: "/Users/zhiyuan/Library/Containers/com.biji.getNotes/Data/Library/Caches/比刀剑更持久的，是共享观念-2026年07月06日-来自【Get 笔记】.md" derivedfrom: "/Users/zhiyuan/Library/Containers/com.biji.getNotes/Data/Library/Caches/欧亚大陆的枢纽×Ψ₀元函数验证报告 2026年7月6日0306-…
-- **来源：** [0001-S1-比刀剑更持久的，是共享观念.md](../%E6%96%B0%E6%95%85%E4%BA%8B/0001-S1-%E6%AF%94%E5%88%80%E5%89%91%E6%9B%B4%E6%8C%81%E4%B9%85%E7%9A%84%EF%BC%8C%E6%98%AF%E5%85%B1%E4%BA%AB%E8%A7%82%E5%BF%B5.md)
-- **资产卡：** [HR-DC0C745159DD31DB](./ASSET-CARDS.md#asset-hr-dc0c745159dd31db)
-
 <a id="change-src-hr-d6bbd09179294577"></a>
 ### 2026-07-06 · 失败类型学初稿
 
@@ -2334,15 +2352,6 @@
 - **来源：** [failure-typology-draft-20260706.md](../outputs/getbrain/failure-typology-draft-20260706.md)
 - **资产卡：** [HR-D6BBD09179294577](./ASSET-CARDS.md#asset-hr-d6bbd09179294577)
 
-<a id="change-src-hr-c0254716ff47346d"></a>
-### 2026-07-06 · 得到大脑输出索引
-
-- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
-- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **变化：** 本目录用于收录得到大脑在点火项目推进中的结构性输出。
-- **来源：** [README.md](../outputs/getbrain/README.md)
-- **资产卡：** [HR-C0254716FF47346D](./ASSET-CARDS.md#asset-hr-c0254716ff47346d)
-
 <a id="change-src-hr-b16fc8b1ad9d6b20"></a>
 ### 2026-07-06 · v0.2 结构缺漏审计
 
@@ -2351,15 +2360,6 @@
 - **变化：** 本审计用于识别点火框架当前仍需补齐的结构性缺口，并为后续任务 C-H 提供排序依据。
 - **来源：** [v0.2-structural-gap-audit-20260706.md](../outputs/getbrain/v0.2-structural-gap-audit-20260706.md)
 - **资产卡：** [HR-B16FC8B1AD9D6B20](./ASSET-CARDS.md#asset-hr-b16fc8b1ad9d6b20)
-
-<a id="change-src-hr-ad59534793e1d1d7"></a>
-### 2026-07-06 · 新故事索引表（2026年07月06日03时06分，故事总数 1）
-
-- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
-- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **变化：** 原文件保存该项结果的完整问题、过程与边界。
-- **来源：** [INDEX.md](../%E6%96%B0%E6%95%85%E4%BA%8B/INDEX.md)
-- **资产卡：** [HR-AD59534793E1D1D7](./ASSET-CARDS.md#asset-hr-ad59534793e1d1d7)
 
 <a id="change-src-hr-a8550987d2a41dab"></a>
 ### 2026-07-06 · 经典问题 benchmark 卡片：黎曼猜想

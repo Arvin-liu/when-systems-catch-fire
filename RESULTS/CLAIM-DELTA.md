@@ -222,6 +222,6 @@
 
 - 状态：`ADDED`
 - Delta：`CD-C629630AD15B68CB`
-- 关联断言：['NFC-765b3dcd3e88193a', 'NFC-838e5a8192a995d6', 'NFC-adb4f9a7f174bb4c']
+- 关联断言：['NFC-765b3dcd3e88193a', 'NFC-838e5a8192a995d6', 'NFC-f5447061d147f065']
 - 人类结果义务：`True`
 - 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
