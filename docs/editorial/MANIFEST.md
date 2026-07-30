@@ -83,6 +83,21 @@
 
 ---
 
+## 006 — 把结果写成可读作品，而不越过来源、证据与许可边界
+
+- **类别**：编辑 / 出版纪律（editorial-publication，规模化首篇）
+- **对应簇**：C007（WRITING_PUBLICATION 主导，n=16）
+- **中心问题**：研究结果如何形成可阅读作品，同时不越过来源、证据与许可边界？
+- **为什么是一篇文章而非索引条目**：本任务本身就在生产这类作品，"我们怎样写而不撒谎"是读者最该理解的方法论；它不是某个断言的索引，而是把双来源素材池、非重发原则、1/5/完整阅读分层、五类职责收口与一项隔离警示连成一条编辑纪律叙事。
+- **源资产集**：`nfc-97dbfc72d7ef8b40`（之元写作法 0.4.0 双来源素材池，RETAINED_AS_STRUCTURAL_METAPHOR）、`nfc-517a9b6de3674e2a`（五类职责收口，ACCEPTED_AS_DEFINITION）、`nfc-3d9ffb2206406fcc`（统一卡片与 1/5/完整阅读分层，ACCEPTED_AS_DEFINITION）、`nfc-6122e6f96efe210e`（iteration method 1.4.0 持续阶段快照发布，**QUARANTINED_AMBIGUOUS**）、`hr-43bf10109af2485e`（External Input Non-Republication Principle，CURRENT_REPOSITORY_DOCUMENT）、`hr-3b5e72d7f1cdfb5b`（之元写作法内部范例与反例 v0.3.0，CURRENT_SCOPED_SOURCE）、`hr-25ccad6cef81cbea`（已发布作品《当一支军队开始相信自己的背影》，作为人类可读成品样例）、`hr-3069e59a51d869c3`/`hr-44a1c398c470bbf4`/`hr-3d02f20fb6692a0c`/`hr-4419fea9529c829c`（121Q28/121Q28S/121Q31/121Q31T 写作法与系统图收口审计，CANDIDATE_OR_PENDING_SOURCE，仅作流程史，不升级为结论）。
+- **内部关系模型**：以"可读 ≠ 可声称"为潜题，串联双来源池（external_input 与 ignition_increment 的边界）、非重发原则、阅读分层、五类职责、0.4.0 与 0.3.0 的当前/历史区分，最后以 QUARANTINED 的 1.4.0 为例收束"快照可见性 ≠ 已接受/已 Current/已激活"。
+- **范围与主张上限**：描述项目既有编辑方法与边界；不声称方法普遍有效（nfc-517a9b 明示不得从一项接受作品推出普遍有效）；不升级任何 CANDIDATE 审计为结论；隔离项不进入"当前知识"。
+- **当前 / 历史 / 开放区分**：当前=0.4.0 双来源池与五类职责收口；历史=0.3.0 已合并版本与旧同步契约 121Q25B（HISTORICAL_OR_SUPERSEDED）；开放=外部同步与受限原始材料公开边界仍待界定。
+- **目标读者与目的**：阅读本任务产出的任何人；理解这些文章为何能读、又为何刻意不把"通过/快照/registry 存在"写成"已被证明"。
+- **叙事大纲**：可读作品的诱惑 → 双来源池把"外部输入"与"点火增量"分开 → 非重发原则守住许可边界 → 1/5/完整三层让不同读者各取所需 → 五类职责防止 README 投影被当权威 → 隔离的 1.4.0 提醒"可见 ≠ 已接受" → 回照开头：我们写，但写有边界。
+
+---
+
 ## 试点覆盖对照（§5.3 五类）
 
 | §5.3 要求 | 对应文章 |
@@ -92,9 +107,15 @@
 | one evidence or validation article | 003 |
 | one cross-domain article whose mapping limits are central | 004 |
 | one article explaining a major open problem without pretending to solve it | 005 |
+| （规模化）编辑/出版纪律（直接服务本任务可读性与 §6 阅读架构） | 006 |
+
+> 试点集（001–005）已覆盖 §5.3 五类；006 为规模化首篇，价值高、与五篇重叠低、源资产多为 ACCEPTED_AS_DEFINITION / CURRENT 文档，属"最大可辩护首版"范围内。
 
 ## 待规模化与编辑 backlog（高价值簇优先，#426）
 
-- 高价值候选：`C002`（COGNITION, n=17）、`C003`（MATHEMATICS 精确对象, n=4）、`C007`（WRITING_PUBLICATION, n=16）。
+- **已纳入首版（规模化）：** `C007`（WRITING_PUBLICATION, n=16）→ 文章 006。理由：直接关于项目自身编辑纪律（之元写作法 0.4.0 双来源池、非重发原则、阅读分层、五类职责），与 001–005 重叠低，源资产以 ACCEPTED_AS_DEFINITION / CURRENT_REPOSITORY_DOCUMENT 为主，可辩护；且天然支撑 §6 人类阅读架构。
+- **暂置 backlog（已评估，显式不纳入首版）：**
+  - `C002`（COGNITION, n=17）：其已裁决核心（V1 延续性协议、V2 效率协议、12 元协议、Attention/Attractor 控制面）与 C001 共用同一批 CURRENT 治理文档，重叠高；其真正独特内容（违抗/主体性原语 D595–D604、121Q13 注意力/压缩）多为 `CANDIDATE_OR_PENDING_SOURCE`（`READYFORGPTVERIFICATIONCANDIDATEONLY`），104 不得升级，且 §12 禁止把语义相似当实质关系。待 104 之后、由 GPT 验证或编辑先界定连贯问题再决定是否成篇。
+  - `C003`（MATHEMATICS 精确对象, n=4）：规模过小，可并入后续数学主题文章，不单独成篇。
 - 参考集合（仅按主题/研究问题聚合，需编辑先界定连贯问题，暂不成本文）：`C008`(46)、`C009`(2)、`C010`(61)、`C011`(73)、`C012`(4)、`C013`(38)、`C014`(11)。
 - 原则：剩余簇进入显式 backlog，不以低质生成散文填满；每篇新文章须先有 §5.1 大纲与 §5.2 写作法应用记录。

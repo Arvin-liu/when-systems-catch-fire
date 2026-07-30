@@ -9,5 +9,6 @@
 | 003-from-candidate-to-current-evidence-chain.md | "evidence-validation" | 29 | 0.00 | 7 | 0 | Y | Y | PASS | — |
 | 004-gated-model-bounded-projection-open-unification.md | "cross-domain" | 35 | 0.23 | 6 | 0 | Y | Y | PASS | — |
 | 005-description-is-not-proof-systems-representations.md | "open-problem" | 27 | 0.07 | 5 | 0 | Y | Y | PASS | — |
+| 006-readable-works-with-boundaries.md | "editorial-publication" | 32 | 0.09 | 7 | 0 | Y | Y | PASS | — |
 
-SUMMARY: 5 files, 5 PASS, 0 WARN
+SUMMARY: 6 files, 6 PASS, 0 WARN
