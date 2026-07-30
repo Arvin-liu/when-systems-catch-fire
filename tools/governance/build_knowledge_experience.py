@@ -22,6 +22,7 @@ FUNCTION_CARDS = ROOT / "data/foundation/function-assets/identity-cards.jsonl"
 CLAIM_REGISTRY = ROOT / "data/foundation/nonfunction-claims/claim-registry.jsonl"
 OUT = ROOT / "data/governance/knowledge-experience"
 HUMAN = ROOT / "KNOWLEDGE"
+FIRST_SEEN_PATH = OUT / "source-first-seen.json"
 CARD_SHARD_SIZE = 50
 
 
@@ -75,18 +76,55 @@ def first_existing_source(anchors: list[dict]) -> str | None:
     return None
 
 
-def source_date(path: str, fallback: str, snapshot: str) -> str:
-    if re.fullmatch(r"20\d{2}-\d{2}-\d{2}", fallback or ""):
+def require_full_history() -> None:
+    """Formal generation requires a full clone; a shallow clone cannot guarantee
+    complete inputs and previously produced different (snapshot) dates. Refuse."""
+    if (ROOT / ".git").is_dir():
+        proc = subprocess.run(
+            ["git", "rev-parse", "--is-shallow-repository"],
+            cwd=ROOT,
+            text=True,
+            capture_output=True,
+            check=False,
+        )
+        if proc.stdout.strip() == "true":
+            raise SystemExit(
+                "REFUSE: build_knowledge_experience.py requires a FULL clone. "
+                "A shallow clone cannot guarantee complete inputs. Run `git fetch --unshallow`."
+            )
+
+
+def load_first_seen() -> dict[str, str]:
+    """Load the governed first-appearance map. This is the single source of truth
+    for ``source_date`` and removes the runtime git-history dependence (task 102)."""
+    if not FIRST_SEEN_PATH.is_file():
+        return {}
+    data = json.loads(FIRST_SEEN_PATH.read_text(encoding="utf-8"))
+    return data.get("entries", {})
+
+
+FIRST_SEEN_MAP = load_first_seen()
+
+
+def source_date(path: str, fallback: str) -> str:
+    """Return the first-appearance date for a source.
+
+    Precedence:
+      1. A valid ledger ``date`` (already governed data) — unchanged behavior.
+      2. The governed ``source-first-seen.json`` map (no git, clone-independent).
+      3. Otherwise FAIL HARD. We never fall back to the snapshot date, because on a
+         shallow clone that produced wrong (non-reproducible) dates.
+    """
+    if re.fullmatch(r"20\d{2}-\d{2}-\d{2}", (fallback or "").strip()):
         return fallback
-    proc = subprocess.run(
-        ["git", "log", "--follow", "--diff-filter=A", "--format=%ad", "--date=short", "--", path],
-        cwd=ROOT,
-        text=True,
-        capture_output=True,
-        check=False,
+    if path in FIRST_SEEN_MAP:
+        return FIRST_SEEN_MAP[path]
+    raise RuntimeError(
+        f"first-seen date for source {path!r} is not registered in "
+        f"{FIRST_SEEN_PATH.relative_to(ROOT)} and no valid ledger date is present. "
+        "Regenerate that governed file from a FULL clone "
+        "(tools/governance/gen_source_first_seen.py) before generating."
     )
-    dates = [line.strip() for line in proc.stdout.splitlines() if re.fullmatch(r"20\d{2}-\d{2}-\d{2}", line.strip())]
-    return dates[-1] if dates else snapshot
 
 
 def source_fragments(path: str) -> list[str]:
@@ -249,7 +287,7 @@ def build(config: dict) -> dict:
         source = row["source"]
         text = (ROOT / source).read_text(encoding="utf-8", errors="replace")
         fragments = source_fragments(source)
-        date = source_date(source, row["date"], config["snapshot_date"])
+        date = source_date(source, row["date"])
         result_dates[row["result_id"]] = date
         subjects = subjects_for(" ".join((source, row["title"], row["result_summary"])), config)
         mentioned = compact_list(re.findall(r"(?<![A-Z0-9])(?:T\d+|D\d+|NFC-[0-9a-f]{16})(?![A-Z0-9])", text), 40)
@@ -703,7 +741,7 @@ def output_map(data: dict, config: dict) -> dict[Path, str]:
     manifest = {
         "schema_version": "1.0.0",
         "snapshot_date": config["snapshot_date"],
-        "source_inputs": {str(path.relative_to(ROOT)): digest_file(str(path.relative_to(ROOT))) for path in (CONFIG_PATH, RESULT_LEDGER, FUNCTION_CARDS, CLAIM_REGISTRY)},
+        "source_inputs": {str(path.relative_to(ROOT)): digest_file(str(path.relative_to(ROOT))) for path in (CONFIG_PATH, RESULT_LEDGER, FUNCTION_CARDS, CLAIM_REGISTRY, FIRST_SEEN_PATH)},
         "generated_outputs": hashes,
         "counts": {"cards": len(data["cards"]), "card_shards": len(card_chunks), "changes": len(data["changes"]), "layered_readings": len(data["layers"]), "search_records": len(data["search"]), "aliases": len(data["aliases"]), "subject_indexes": subject_index_count},
         "machine_human_pairs": [{"machine": "data/governance/knowledge-experience/changes.jsonl", "human": "KNOWLEDGE/WHATS-NEW.md"}, {"machine": "data/governance/knowledge-experience/asset-cards.jsonl", "human": "KNOWLEDGE/ASSET-CARDS.md"}, {"machine": "data/governance/knowledge-experience/layered-reading.jsonl", "human": "KNOWLEDGE/READING-LAYERS.md"}, {"machine": "data/governance/knowledge-experience/search-index.jsonl", "human": "KNOWLEDGE/SEARCH.md"}, {"machine": "data/governance/knowledge-experience/alias-index.jsonl", "human": "KNOWLEDGE/EVOLUTION.md"}, {"machine": "data/governance/knowledge-experience/coverage.json", "human": "KNOWLEDGE/COVERAGE.md"}],
@@ -733,6 +771,7 @@ def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--check", action="store_true")
     args = parser.parse_args()
+    require_full_history()
     config = json.loads(CONFIG_PATH.read_text(encoding="utf-8"))
     data = build(config)
     validate_data(data, config)

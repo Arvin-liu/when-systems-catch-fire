@@ -46,6 +46,11 @@ SELF_EXCLUDES = {
     "RESULTS/IMPACT-ANALYSIS.md",
     "RESULTS/EVIDENCE-LINEAGE.md",
     "RESULTS/SELF-CORRECTION-AUDIT.md",
+    # Task 102 (knowledge-experience clone-independence) generation tooling: these are
+    # code, not knowledge-content claim sources; exclude so discovery stays accountable
+    # without spawning claims from docstrings/comments.
+    "tools/governance/gen_source_first_seen.py",
+    "tools/governance/check_knowledge_experience_determinism.py",
 }
 MACHINE_EXCLUDE_PREFIXES = (
     "data/foundation/nonfunction-claims/",

@@ -343,10 +343,29 @@ def build() -> tuple[dict[Path, str], dict]:
     return products, summary
 
 
+def require_full_history() -> None:
+    """Self-correction diffs the working tree against ``source_base_commit``; a
+    shallow clone cannot reach that ancestor, so it must refuse formal generation."""
+    if (ROOT / ".git").is_dir():
+        proc = subprocess.run(
+            ["git", "rev-parse", "--is-shallow-repository"],
+            cwd=ROOT,
+            text=True,
+            capture_output=True,
+            check=False,
+        )
+        if proc.stdout.strip() == "true":
+            raise SystemExit(
+                "REFUSE: run_self_correction.py requires a FULL clone to diff against "
+                "source_base_commit. Run `git fetch --unshallow`."
+            )
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--check", action="store_true")
     args = parser.parse_args()
+    require_full_history()
     products, summary = build()
     if args.check:
         drift = [str(path.relative_to(ROOT)) for path, content in products.items() if not path.is_file() or path.read_text(encoding="utf-8") != content]

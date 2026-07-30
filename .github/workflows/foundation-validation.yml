@@ -156,6 +156,8 @@ jobs:
           python3 tools/governance/build_knowledge_experience.py --check
           python3 tools/governance/validate_human_visibility.py
           python3 tools/governance/validate_knowledge_experience.py
+      - name: Regression — knowledge-experience clone-independence (task 102)
+        run: python3 tools/governance/check_knowledge_experience_determinism.py
       - run: python3 tools/foundation/verify_core_claims.py --check
       - run: python3 tools/foundation/verify_079.py --check
       - run: python3 tools/foundation/validate_080_adjudications.py

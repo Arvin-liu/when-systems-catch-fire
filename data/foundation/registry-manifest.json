@@ -26,23 +26,23 @@
       "PROVISIONAL": 1
     },
     "function_asset_census": {
-      "tracked_text_files_scanned": 2905,
+      "tracked_text_files_scanned": 2907,
       "registered_assets": 622,
       "explicit_undefined_ids": 139,
-      "implicit_named_assets": 4902,
-      "deduplicated_assets": 5663,
-      "source_occurrence_records": 28808,
-      "source_mentions": 62884,
+      "implicit_named_assets": 4916,
+      "deduplicated_assets": 5677,
+      "source_occurrence_records": 28822,
+      "source_mentions": 62898,
       "duplicate_mentions": 57221,
       "dependency_edges": 1923,
       "assets_with_dependencies": 541,
       "human_adjudicated_task98": 12,
-      "queued_for_human_review": 5651
+      "queued_for_human_review": 5665
     },
     "function_asset_deep_adjudication": {
-      "canonical_identity_cards": 5663,
-      "adjudication_ledger_records": 5663,
-      "explicit_quarantine_or_pending": 3887,
+      "canonical_identity_cards": 5677,
+      "adjudication_ledger_records": 5677,
+      "explicit_quarantine_or_pending": 3890,
       "counterexample_records": 12,
       "dependency_edges": 1923,
       "public_strong_claim_candidates": 649,
@@ -51,11 +51,11 @@
       "registry_closed": true
     },
     "nonfunction_claim_evidence_lineage": {
-      "tracked_files_accounted": 3065,
-      "candidate_fragments": 30620,
-      "canonical_claims": 17333,
+      "tracked_files_accounted": 3068,
+      "candidate_fragments": 30622,
+      "canonical_claims": 17335,
       "existing_claims_mapped": 678,
-      "explicit_quarantine_or_pending": 5581,
+      "explicit_quarantine_or_pending": 5582,
       "dependency_edges": 5804,
       "explicitly_unresolved_dependency_edges": 87,
       "public_surface_records": 343,
