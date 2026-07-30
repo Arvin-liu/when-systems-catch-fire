@@ -47,6 +47,8 @@ MULTI_CASE is not a theorem.
 MIGRATED means only that migration coverage exists.
 
 Key paths:
+- KNOWLEDGE/README.md : no-path human entry for What's New, subject map, search, asset cards, layered reading, evolution and coverage
+- data/governance/knowledge-experience/manifest.json : deterministic machine/human pairing, input/output hashes and coverage counts for the knowledge experience
 - docs/project-current-state.md : versioned current-state description, not fixed positioning
 - ITERATION.md : canonical operation method for future repository changes
 - README.md : human front door
@@ -89,6 +91,7 @@ Red lines for agents:
 - Multiscale Causal Fabric, Probabilistic System Dynamics, and Adaptive Relational Network are current modeling/projection capabilities, not new truth layers.
 - Causal reachability is not actual causation; high probability is not strong causality; network adjacency, similarity, centrality, community, retrieval, self-report, or behavior change is not truth, value, causality, or internal learning proof.
 - Future state-changing work must follow ITERATION.md: recover remote truth, prove the gap, set a claim ceiling, synchronize front-door/current-state surfaces, validate exact final HEAD, and write receipts.
+- Meaningful knowledge changes must regenerate the task-102 What's New, subject map, asset cards, reading layers, aliases/supersession, full search and bidirectional dependency projections; these discovery surfaces never override canonical registries or evidence maturity.
 - For the current 0.4.0 method, type writing material as external_input or ignition_increment and preserve source backlinks, version, claim ceiling and residue. Derived project output is reusable writing material but not independent evidence. Keep cognitive-level movement, unmapped differences, real/Charter costs and information-gain stopping; never turn the system map into a fixed article outline.
 
 Validation before commit:

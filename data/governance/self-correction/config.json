@@ -6,6 +6,7 @@
   "knowledge_prefixes": [
     "README.md",
     "HUMAN-READING.md",
+    "KNOWLEDGE/",
     "RESULTS/",
     "docs/",
     "reports/",
@@ -25,6 +26,7 @@
     "RESULTS/EVIDENCE-LINEAGE.md",
     "RESULTS/SELF-CORRECTION-AUDIT.md",
     "docs/generated/",
+    "KNOWLEDGE/",
     "data/governance/",
     "data/foundation/nonfunction-claims/",
     "data/foundation/function-assets/"
@@ -32,6 +34,14 @@
   "public_human_surfaces": [
     "README.md",
     "HUMAN-READING.md",
+    "KNOWLEDGE/README.md",
+    "KNOWLEDGE/WHATS-NEW.md",
+    "KNOWLEDGE/MAP.md",
+    "KNOWLEDGE/ASSET-CARDS.md",
+    "KNOWLEDGE/READING-LAYERS.md",
+    "KNOWLEDGE/SEARCH.md",
+    "KNOWLEDGE/EVOLUTION.md",
+    "KNOWLEDGE/COVERAGE.md",
     "RESULTS/LATEST.md",
     "RESULTS/CORRECTIONS.md",
     "RESULTS/OPEN-QUESTIONS.md",

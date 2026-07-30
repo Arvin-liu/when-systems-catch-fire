@@ -1102,9 +1102,9 @@
       "required_evaluation": true,
       "creates_sync_obligation": true,
       "map_visible": false,
-      "label": "README 与人类结果同步",
-      "declaration_source": "HUMAN-READING.md",
-      "claim_ceiling": "repository navigation and readability dependency only",
+      "label": "README、结果与知识体验入口同步",
+      "declaration_source": "docs/governance/knowledge-experience-layer.md",
+      "claim_ceiling": "repository navigation, exploration and readability dependency only",
       "residue": []
     },
     {

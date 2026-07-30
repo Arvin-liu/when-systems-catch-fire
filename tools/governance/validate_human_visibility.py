@@ -14,6 +14,14 @@ CONFIG = json.loads((ROOT / "data/governance/human-results/config.json").read_te
 CORE = [
     "README.md",
     "HUMAN-READING.md",
+    "KNOWLEDGE/README.md",
+    "KNOWLEDGE/WHATS-NEW.md",
+    "KNOWLEDGE/MAP.md",
+    "KNOWLEDGE/ASSET-CARDS.md",
+    "KNOWLEDGE/READING-LAYERS.md",
+    "KNOWLEDGE/SEARCH.md",
+    "KNOWLEDGE/EVOLUTION.md",
+    "KNOWLEDGE/COVERAGE.md",
     "RESULTS/README.md",
     "RESULTS/LATEST.md",
     "RESULTS/CORRECTIONS.md",
@@ -33,6 +41,14 @@ CRITICAL_DESTINATIONS = {
     "RESULTS/ADJUDICATION-SUMMARY.md",
     "RESULTS/RESEARCH-AND-ARTICLES.md",
     "RESULTS/CHRONOLOGY.md",
+    "KNOWLEDGE/README.md",
+    "KNOWLEDGE/WHATS-NEW.md",
+    "KNOWLEDGE/MAP.md",
+    "KNOWLEDGE/ASSET-CARDS.md",
+    "KNOWLEDGE/READING-LAYERS.md",
+    "KNOWLEDGE/SEARCH.md",
+    "KNOWLEDGE/EVOLUTION.md",
+    "KNOWLEDGE/COVERAGE.md",
     "data/foundation/function-assets/closure-summary.json",
     "data/foundation/nonfunction-claims/closure-summary.json",
 }
@@ -126,8 +142,9 @@ def validate() -> dict:
     for heading in ("当前结论", "已完成的纠正", "仍然开放的问题", "研究、复算与文章结果", "函数与断言裁决结果", "持续自我纠错"):
         if f"## {heading}" not in readme:
             errors.append(f"README lacks visible section: {heading}")
-    if "任务 101" not in (ROOT / "docs/project-current-state.md").read_text(encoding="utf-8"):
-        errors.append("project current state does not mention task 101")
+    current_state = (ROOT / "docs/project-current-state.md").read_text(encoding="utf-8")
+    if "任务 101" not in current_state or "任务 102" not in current_state:
+        errors.append("project current state does not preserve task 101 and task 102 state")
     if errors:
         raise AssertionError("\n".join(errors))
     return {"human_surfaces": len(CORE), "machine_human_pairs": len(CONFIG["machine_human_pairs"]), "two_click_destinations": len(CRITICAL_DESTINATIONS)}

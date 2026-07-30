@@ -34,6 +34,9 @@ PUBLIC_SURFACES = {
 }
 TEXT_SUFFIXES = {".md", ".txt", ".rst", ".json", ".jsonl", ".csv", ".yml", ".yaml", ".toml", ".py", ".sage", ".lean", ".js", ".jsx", ".ts", ".tsx", ".sh", ".html"}
 SELF_EXCLUDES = {
+    "data/foundation/project-state.json",
+    "data/foundation/registry-manifest.json",
+    "data/foundation/migration-summary.json",
     "docs/foundation/nonfunction-claim-adjudication-index.md",
     "reports/foundation-architecture/100-nonfunction-claim-evidence-lineage-closure.md",
     "schemas/foundation/nonfunction-claim.schema.json",
@@ -43,11 +46,17 @@ SELF_EXCLUDES = {
     "RESULTS/IMPACT-ANALYSIS.md",
     "RESULTS/EVIDENCE-LINEAGE.md",
     "RESULTS/SELF-CORRECTION-AUDIT.md",
+    # Task 102 (knowledge-experience clone-independence) generation tooling: these are
+    # code, not knowledge-content claim sources; exclude so discovery stays accountable
+    # without spawning claims from docstrings/comments.
+    "tools/governance/gen_source_first_seen.py",
+    "tools/governance/check_knowledge_experience_determinism.py",
 }
 MACHINE_EXCLUDE_PREFIXES = (
     "data/foundation/nonfunction-claims/",
     "data/foundation/function-assets/",
     "data/governance/",
+    "KNOWLEDGE/",
 )
 EXPLICIT_IMPORTS = {
     "data/foundation/claims/claims.jsonl",

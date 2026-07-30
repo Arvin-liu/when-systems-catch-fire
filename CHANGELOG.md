@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-07-30 — Knowledge experience entry and exploration layer (task 102)
+
+- Added a no-path `KNOWLEDGE/` entry with typed What's New, research-question map, uniform asset cards, 1/5/full reading, historical aliases and coverage audit.
+- Added deterministic machine indexes and manifest covering every recovered result source plus all function and non-function claim registry records.
+- Added sharded GitHub-renderable subject search, source/anchor/reverse-dependency validation, future-change declarations and fail-closed CI tests.
+- Preserved repository Markdown as the only maintained reading surface; GitHub Pages remains retired.
+
 - Historical Q32I closeout: method 1.3.0 and registry-derived system map 0.3.0 completed the exact-head, merge and external checks required by that contract. They are now Historical under Current method 1.4.0/map 0.4.0. Task 101 retired the former separate deployed reading surface while preserving its old evidence.
 
 - Historical candidate entry: Q32I proposed iteration method 1.3.0 and system-map projection 0.3.0 as OPEN Draft candidates. The repaired candidate separates authority from execution capability, limits automatic profiles to real deterministic producers, adds a unified zero-write apply preflight, and restores the complete supported repository byte/type/symlink/mode state on rollback. Production profile, rollback, and preflight probes are now regressions. At that candidate commit, method 1.2.0 and map 0.2.0 remained Current and review was pending; the newer closeout entry above supersedes that lifecycle state.

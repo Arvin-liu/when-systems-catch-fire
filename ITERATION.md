@@ -118,7 +118,7 @@ Not every registered surface must change. Every applicable surface must receive 
 
 Every method 1.1.0 iteration declares state-transition subjects, prior/proposed states, changed dimensions, source references and a claim boundary. Required assessments are derived from the synchronization registry and follow its declared dependency/derivation relations until the closure has no missing decision.
 
-Human-visible entrances are first-class project surfaces. Capability, identity, current-state, usage, handoff or rendering changes must assess `README.md`, `HUMAN-READING.md`, the relevant `RESULTS/` pages, `docs/project-current-state.md`, `SUMMARY.md`, `docs/USAGE.md`, `docs/ai-assistant-usage-reference.md`, `CHANGELOG.md`, `docs/VERSIONING.md`, `AI-START-HERE.md`, `AI-HANDOFF.md`, `llms.txt` and relevant operation templates whenever the registry triggers them.
+Human-visible entrances are first-class project surfaces. Capability, identity, current-state, usage, handoff or rendering changes must assess `README.md`, `HUMAN-READING.md`, `KNOWLEDGE/`, the relevant `RESULTS/` pages, `docs/project-current-state.md`, `SUMMARY.md`, `docs/USAGE.md`, `docs/ai-assistant-usage-reference.md`, `CHANGELOG.md`, `docs/VERSIONING.md`, `AI-START-HERE.md`, `AI-HANDOFF.md`, `llms.txt` and relevant operation templates whenever the registry triggers them.
 
 Derived and external surfaces remain distinct from repository sources. Current human result projections are repository files generated from declared machine sources and checked for freshness; external systems, if a future task introduces one, require a separate registry entry and evidence. Local validation never proves an undeclared live external state.
 
@@ -143,7 +143,7 @@ Each triggered external surface has its own `external_attestations` entry with s
 
 ### 5.4 Front-Door Synchronization Is a Required Propagation Surface (not memory-dependent)
 
-`README.md`, `HUMAN-READING.md`, `RESULTS/` and `docs/project-current-state.md` are first-class project surfaces, not optional polish. Whenever an iteration changes project form, a Current capability, the Current method, governance, a core boundary, a primary entry, or the externally-comprehensible state, these front doors MUST enter the propagation closure as `CHANGE` (or a validator-enforced `NO_CHANGE_WITH_REASON` / `NonImpactProof`). They must not rely on Agent memory or human diligence.
+`README.md`, `HUMAN-READING.md`, `KNOWLEDGE/`, `RESULTS/` and `docs/project-current-state.md` are first-class project surfaces, not optional polish. Whenever an iteration changes project form, a Current capability, the Current method, governance, a core boundary, a primary entry, or the externally-comprehensible state, these front doors MUST enter the propagation closure as `CHANGE` (or a validator-enforced `NO_CHANGE_WITH_REASON` / `NonImpactProof`). They must not rely on Agent memory or human diligence.
 
 Hard invariants:
 
@@ -153,6 +153,10 @@ Hard invariants:
 - if project form changed but `README.md` / `docs/project-current-state.md` still project the superseded state, the iteration MUST NOT be judged `CLOSED`.
 
 The front-door staleness check is fail-closed: `tools/validate_human_front_door.py` enforces the current method version, the Charter System R1 boundary and homepage/project-current-state consistency; it rejects a stale homepage even when every other surface is green. A change that legitimately does not touch a front door must present an explicit `NonImpactProof` (see `data/operations/front-door-nonimpact-proofs.json`); silent omission is not allowed. A governance-chain closeout (for example Charter System R1) does not by itself make the homepage current — that is a separate required surface.
+
+### 5.5 Knowledge Experience Delta
+
+Any meaningful new or changed conclusion, correction, article, experiment, audit or knowledge asset must declare its human destination, typed What's New entry, subject-map node, asset-card state, applicable layered reading, canonical title and aliases, supersession/current replacement, source, dependencies and reverse dependencies. `tools/governance/build_knowledge_experience.py` produces the paired machine/human projection and manifest; `validate_knowledge_experience.py` fails closed on missing/stale sources, broken links or anchors, orphan cards, missing long-form layers, incomplete search coverage, rebound aliases, hidden content and retired Pages residues. These checks establish repository synchronization only, not substantive truth.
 
 ## 6. Branch And Commit Discipline
 
@@ -198,7 +202,7 @@ Run the narrowest relevant ladder first, then expand:
 
 No failed lower rung can be repaired by a higher-rung narrative.
 
-For Draft knowledge-surface work, build and inspect the exact-head machine and human artifacts. After merge, rerun them from current `main` and a clean clone; a repository-local pass still does not prove external substantive claims.
+For Draft knowledge-surface work, build and inspect the exact-head machine and human artifacts, including the knowledge-experience manifest, full search coverage and rendered Markdown shards. After merge, rerun them from current `main` and a clean clone; a repository-local pass still does not prove external substantive claims.
 
 ## 10. State Machine
 

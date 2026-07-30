@@ -119,6 +119,50 @@
       ]
     },
     {
+      "surface_id": "human.knowledge_experience",
+      "surface_type": "repository_derived_surface",
+      "locator": "KNOWLEDGE/README.md",
+      "roles": [
+        "human_front_door",
+        "human_exploration",
+        "machine_human_counterpart"
+      ],
+      "authority": "derived",
+      "derived_from": [
+        "human.readme",
+        "human.reading",
+        "human.results"
+      ],
+      "trigger_dimensions": [
+        "capability",
+        "identity",
+        "usage",
+        "lifecycle_current_state",
+        "governance",
+        "deployment_rendering",
+        "operations_method"
+      ],
+      "trigger_classifications": [
+        "CAPABILITY_ADDITION",
+        "INTERFACE_CHANGE",
+        "EVIDENCE_UPDATE",
+        "GOVERNANCE_CHANGE",
+        "RELEASE_OR_CURRENT_STATE_SYNC",
+        "OPERATIONS_METHOD"
+      ],
+      "allowed_decisions": [
+        "CHANGE",
+        "NO_CHANGE_WITH_REASON",
+        "NOT_APPLICABLE"
+      ],
+      "validation_mode": "repository_build_and_semantic_validation",
+      "blocks": [
+        "ready",
+        "current",
+        "closed"
+      ]
+    },
+    {
       "surface_id": "human.current_state",
       "surface_type": "repository_source",
       "locator": "docs/project-current-state.md",

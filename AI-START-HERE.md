@@ -4,15 +4,16 @@
 
 ## 读取顺序
 
-1. README.md：人类入口、价值边界与双前门。
-2. docs/project-current-state.md：版本化、可演化、非终局的当前状态。
-3. ITERATION.md：点火迭代操作法；状态改变任务必须先恢复远端真相、确认缺口和 claim ceiling。
-4. ARCHITECTURE.md：现行七层架构权威；121Q12 双环是跨层操作 overlay，不是新真值层。
-5. FOUNDATION.md：数学与逻辑双地基。
-6. llms.txt：机器可读边界。
-7. AI-HANDOFF.md：当前权威、兼容和任务交接。
-8. data/foundation/project-state.json 与 registry-manifest.json：机器状态。
-9. 当前任务命令与相关 source/schema。
+1. README.md：人类入口、价值边界与当前结论。
+2. KNOWLEDGE/README.md：无需预知路径的最新变化、主题地图、搜索、资产卡与分层阅读入口。
+3. docs/project-current-state.md：版本化、可演化、非终局的当前状态。
+4. ITERATION.md：点火迭代操作法；状态改变任务必须先恢复远端真相、确认缺口和 claim ceiling。
+5. ARCHITECTURE.md：现行七层架构权威；121Q12 双环是跨层操作 overlay，不是新真值层。
+6. FOUNDATION.md：数学与逻辑双地基。
+7. llms.txt：机器可读边界。
+8. AI-HANDOFF.md：当前权威、兼容和任务交接。
+9. data/foundation/project-state.json 与 registry-manifest.json：机器状态。
+10. 当前任务命令与相关 source/schema。
 
 若任务涉及函数、模型、定理、公式、律、跨域类比或现实强断言，在读取 Foundation 后立即读取 `docs/foundation/claim-governance-and-function-identity.md`、`data/foundation/function-assets/corrections.jsonl`、对应 `identity-cards.jsonl` 记录及其 quarantine/obligation 状态。M 与 E 不得互推，自动 census 不能覆盖专项纠偏；task 99 的 registry closure 也不能被解释为全部证明或外部验证完成。
 
@@ -29,6 +30,8 @@
 若任务涉及当前展示的之元写作法成果，还要读取 `docs/publication/zhiyuan-writing-showcase.md` 与 `data/publication/zhiyuan-writing-showcase.json`，并沿每项记录回到作品、案例来源链、点火分析和方法版本。首页只投影最近三项，不是完整清单或真值权威。
 
 若任务需要全项目导航，读取 `docs/architecture/interactive-system-map.md`、`data/architecture/interactive-system-map.json` 与生成 SVG。图是当前导航接口，不是 L7、事实证明或永久唯一总地图。
+
+若任务涉及新增或修改知识，读取 `docs/governance/knowledge-experience-layer.md` 与 `data/governance/knowledge-experience/manifest.json`。人类摘要、主题归类、搜索命中、别名和依赖只用于发现与回链；不得替代来源、registry、M/E、supersession 或 claim ceiling。
 
 ## 不得混淆
 

@@ -1,0 +1,189 @@
+{
+  "schema_version": "1.0.0",
+  "snapshot_date": "2026-07-30",
+  "claim_ceiling": "Repository navigation, source-faithful summary and governance projection only; no truth, proof, evidence, maturity or lifecycle upgrade.",
+  "featured_function_ids": [
+    "T2",
+    "D127",
+    "D182",
+    "D183",
+    "D184",
+    "D185",
+    "D186",
+    "D187",
+    "D188",
+    "D189",
+    "D190",
+    "D260"
+  ],
+  "material_claim_classes": [
+    "IMPOSSIBILITY_OR_UNIVERSAL_CLAIM",
+    "CROSS_DOMAIN_CORRESPONDENCE",
+    "CAUSAL_JUDGMENT",
+    "PREDICTION",
+    "THEOREM_OR_FORMAL_CLAIM",
+    "EMPIRICAL_ASSERTION"
+  ],
+  "featured_claim_lineages": [
+    "PHYSICS_UNIFICATION_NOGO"
+  ],
+  "auxiliary_timeline_patterns": [
+    "night-progress",
+    "resume-instructions",
+    "handoff",
+    "preflight",
+    "source-map",
+    "queue-readiness",
+    "baseline-audit",
+    "source-snapshot",
+    "expanded-notes",
+    "new-cases.md",
+    "new-functions.md",
+    "notes.md",
+    "rejected.md",
+    "backfill-plan.md"
+  ],
+  "subjects": [
+    {
+      "id": "MATHEMATICS",
+      "label": "数学与形式化",
+      "question": "对象、运算、定义域、证明和反例究竟完成到哪一步？",
+      "keywords": ["数学", "math", "proof", "theorem", "公式", "函数", "algebra", "logic", "formal", "counterexample", "T2", "D182", "D183", "D184", "D185", "D186", "D187", "D188", "D189", "D190", "D260"]
+    },
+    {
+      "id": "PHYSICS",
+      "label": "物理与统一问题",
+      "question": "门控模型能支持什么有界物理投影，哪些统一与观测义务仍未完成？",
+      "keywords": ["物理", "physics", "四力", "大一统", "引力", "量子", "暗物质", "暗能量", "宇宙常数", "relativity", "gravity", "unification"]
+    },
+    {
+      "id": "SYSTEMS",
+      "label": "系统论与机制建模",
+      "question": "跨尺度表示、概率动力学和关系网络能描述什么，不能证明什么？",
+      "keywords": ["system", "系统", "mechanism", "机制", "causal", "因果", "multiscale", "MCF", "PSD", "ARN", "network", "atlas", "复杂"]
+    },
+    {
+      "id": "COGNITION",
+      "label": "认知、Agent 与行动",
+      "question": "认知类比、行动选择和现实反馈怎样保留边界与失败条件？",
+      "keywords": ["认知", "cognition", "agent", "大脑", "意识", "attention", "decision", "行动", "feedback", "路径积分"]
+    },
+    {
+      "id": "ARCHITECTURE_GOVERNANCE",
+      "label": "架构、治理与自我纠错",
+      "question": "知识资产怎样被登记、裁决、修订、隔离并保持机器与人类表面一致？",
+      "keywords": ["architecture", "架构", "governance", "治理", "claim", "断言", "adjudication", "裁决", "registry", "evidence", "纠正", "correction", "foundation", "license", "charter"]
+    },
+    {
+      "id": "WRITING_PUBLICATION",
+      "label": "文章、写作与公共表达",
+      "question": "研究结果如何形成可阅读作品，同时不越过来源、证据和许可边界？",
+      "keywords": ["publication", "writing", "文章", "写作", "作品", "story", "金朝", "public"]
+    },
+    {
+      "id": "OPERATIONS_EVIDENCE",
+      "label": "迭代、验证与证据工程",
+      "question": "候选、验证、合并和 Current 怎样分离并留下可复算证据？",
+      "keywords": ["iteration", "operation", "audit", "validation", "release", "merge", "snapshot", "迭代", "审计", "验证", "迁移", "CI"]
+    }
+  ],
+  "declared_changes": [
+    {
+      "change_id": "CHG-102",
+      "date": "2026-07-30",
+      "change_type": "KNOWLEDGE_EXPERIENCE",
+      "title": "统一知识入口、主题地图、分层阅读和全局检索",
+      "summary": "建立无需预知路径或资产编号的仓库原生探索层，并把变化、资产卡、摘要、别名、谱系和覆盖率纳入确定性 CI。",
+      "status": "CURRENT_WHEN_PRESENT_ON_VERIFIED_MAIN",
+      "sources": ["HUMAN-READING.md", "KNOWLEDGE/README.md", "docs/governance/knowledge-experience-layer.md"],
+      "supersedes": ["FILE_AND_REGISTRY_FIRST_DISCOVERY"]
+    },
+    {
+      "change_id": "CHG-101",
+      "date": "2026-07-29",
+      "change_type": "HUMAN_SURFACE_AND_GOVERNANCE",
+      "title": "仓库 Markdown 人类阅读层与持续自我纠错引擎",
+      "summary": "退役独立 Pages 阅读面，恢复历史结果台账，并把 Claim Delta、影响分析、证据谱系与人类结果配对接入 CI。",
+      "status": "CURRENT",
+      "sources": ["HUMAN-READING.md", "docs/governance/self-correction-engine.md"],
+      "supersedes": ["SEPARATE_PAGES_READING_SURFACE"]
+    },
+    {
+      "change_id": "CHG-100",
+      "date": "2026-07-29",
+      "change_type": "CLAIM_ADJUDICATION",
+      "title": "全语料非函数断言裁决与证据谱系闭合",
+      "summary": "把定理、规律、机制、因果、不可能性、跨域对应、预测和经验断言接入十三门、依赖、谱系和公开上限。",
+      "status": "CURRENT_WITH_OPEN_OBLIGATIONS",
+      "sources": ["reports/foundation-architecture/100-nonfunction-claim-evidence-lineage-closure.md"],
+      "supersedes": []
+    },
+    {
+      "change_id": "CHG-099",
+      "date": "2026-07-29",
+      "change_type": "FUNCTION_ADJUDICATION",
+      "title": "历史函数资产深度裁决与注册表闭合",
+      "summary": "为每个发现项建立 canonical identity card、M/E 双轴、义务、依赖、处置和 quarantine；登记闭合不等于内容验证。",
+      "status": "CURRENT_WITH_OPEN_OBLIGATIONS",
+      "sources": ["docs/foundation/historical-function-deep-adjudication-20260729.md"],
+      "supersedes": ["LEGACY_TABLE_AS_CURRENT_AUTHORITY"]
+    },
+    {
+      "change_id": "CHG-098",
+      "date": "2026-07-29",
+      "change_type": "CORRECTION_AND_WITHDRAWAL",
+      "title": "物理资产身份纠偏与越界结论撤回",
+      "summary": "纠正 T2、D127、D182—D190、D260 的身份和表述，撤回“点火统一四力”及“大一统已被证明不可能”等越界结论。",
+      "status": "CURRENT_CORRECTION",
+      "sources": ["docs/foundation/physics-asset-correction-20260729.md", "RESULTS/CORRECTIONS.md"],
+      "supersedes": ["PHYSICS_UNIFICATION_NOGO", "FOUR_FORCE_UNIFICATION_CLAIM"]
+    }
+  ],
+  "required_historical_aliases": [
+    {
+      "alias": "物理学大一统不可能定理",
+      "status": "WITHDRAWN_STRONG_CLAIM",
+      "replacement": "单一门控乘积模型失败不推出所有统一路线不可能；物理统一仍是开放问题。",
+      "destination": "RESULTS/CORRECTIONS.md",
+      "lineage_key": "PHYSICS_UNIFICATION_NOGO"
+    },
+    {
+      "alias": "大一统已被证明不可能",
+      "status": "PROHIBITED_REBOUND_ALIAS",
+      "replacement": "本项目没有这样的普遍 no-go theorem。",
+      "destination": "RESULTS/CORRECTIONS.md",
+      "lineage_key": "PHYSICS_UNIFICATION_NOGO"
+    },
+    {
+      "alias": "点火已经统一四力",
+      "status": "WITHDRAWN_STRONG_CLAIM",
+      "replacement": "当前门控乘积模型没有统一四种基本相互作用。",
+      "destination": "docs/foundation/physics-asset-correction-20260729.md",
+      "lineage_key": "FOUR_FORCE_UNIFICATION_CLAIM"
+    },
+    {
+      "alias": "D127 乘法归零律",
+      "status": "IDENTITY_CORRECTED",
+      "replacement": "乘法归零律的 canonical ID 是 T2；D127 是认知路径积分类比。",
+      "destination": "RESULTS/CORRECTIONS.md",
+      "lineage_key": "FUNCTION_IDENTITY_D127_T2"
+    },
+    {
+      "alias": "D260 大一统不可能命题",
+      "status": "IDENTITY_CORRECTED",
+      "replacement": "正式 D260 是 p/(1-p) 偏差敏感度评分。",
+      "destination": "RESULTS/CORRECTIONS.md",
+      "lineage_key": "FUNCTION_IDENTITY_D260"
+    }
+  ],
+  "canonical_human_pages": [
+    "KNOWLEDGE/README.md",
+    "KNOWLEDGE/WHATS-NEW.md",
+    "KNOWLEDGE/MAP.md",
+    "KNOWLEDGE/ASSET-CARDS.md",
+    "KNOWLEDGE/READING-LAYERS.md",
+    "KNOWLEDGE/SEARCH.md",
+    "KNOWLEDGE/EVOLUTION.md",
+    "KNOWLEDGE/COVERAGE.md"
+  ]
+}

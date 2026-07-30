@@ -7,6 +7,7 @@
 ## 权威链
 
 - 当前状态：docs/project-current-state.md（版本化现状，不是固定定位）
+- 统一知识入口：KNOWLEDGE/README.md；机器配对与 freshness：data/governance/knowledge-experience/manifest.json
 
 - 架构：ARCHITECTURE.md
 - 双地基：FOUNDATION.md
@@ -24,6 +25,8 @@
 ## 交接规则
 
 新 Agent 必须先读取 `docs/project-current-state.md` 与 `ITERATION.md`，再重新核验远端、分支、HEAD、开放 PR 和验证结果，不得把聊天记忆当权威。统计必须写出去重键、范围、单位和生成脚本。缺字段、缺来源、不可形式化、反模型和真实 counterexample 分别记录。
+
+新增或修改知识资产时，必须把 Claim Delta/impact/lineage 与任务 102 的 What's New、主题、资产卡、分层阅读、别名/supersession、来源、依赖和反向依赖一起重算。`KNOWLEDGE/` 是生成的人类探索层，不是新的真值权威；机器-only 也不等于删除或否定。
 
 当前架构状态只能是 ARCHITECTURE_COMPLETE_PENDING_CONTENT_PROOFS；不得改写成全量数学证明完成。
 

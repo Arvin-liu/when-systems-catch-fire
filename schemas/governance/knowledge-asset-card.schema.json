@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Arvin-liu/when-systems-catch-fire/schemas/governance/knowledge-asset-card.schema.json",
+  "title": "Human knowledge asset card",
+  "type": "object",
+  "required": ["asset_id", "asset_kind", "title", "canonical_source", "source_sha256", "why_created", "current_status", "result", "mathematical_maturity", "external_evidence_maturity", "assumptions_and_ceiling", "not_established", "dependencies", "reverse_dependencies", "related_assets", "origin_and_evidence", "history", "latest_change", "next_obligations", "subjects", "aliases", "human_anchor", "record_sha256"],
+  "properties": {
+    "asset_id": {"type": "string", "minLength": 1},
+    "asset_kind": {"enum": ["RESULT_OR_ARTICLE", "FUNCTION_ASSET", "NONFUNCTION_CLAIM"]},
+    "title": {"type": "string", "minLength": 1},
+    "canonical_source": {"type": "string", "minLength": 1},
+    "source_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "why_created": {"type": "string", "minLength": 1},
+    "current_status": {"type": "string", "minLength": 1},
+    "result": {"type": "string", "minLength": 1},
+    "mathematical_maturity": {"type": "string", "minLength": 1},
+    "external_evidence_maturity": {"type": "string", "minLength": 1},
+    "assumptions_and_ceiling": {"type": "string", "minLength": 1},
+    "not_established": {"type": "string", "minLength": 1},
+    "dependencies": {"type": "array", "items": {"type": "string"}},
+    "reverse_dependencies": {"type": "array", "items": {"type": "string"}},
+    "related_assets": {"type": "array", "items": {"type": "string"}},
+    "origin_and_evidence": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+    "history": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+    "latest_change": {"type": "string", "minLength": 1},
+    "next_obligations": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+    "subjects": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+    "aliases": {"type": "array", "items": {"type": "string"}},
+    "human_anchor": {"type": "string", "pattern": "^asset-[a-z0-9-]+$"},
+    "record_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  },
+  "additionalProperties": false
+}
