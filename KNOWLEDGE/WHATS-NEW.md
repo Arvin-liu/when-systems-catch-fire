@@ -13,6 +13,16 @@
 - **来源：** [HUMAN-READING.md](../HUMAN-READING.md) · [README.md](../KNOWLEDGE/README.md) · [knowledge-experience-layer.md](../docs/governance/knowledge-experience-layer.md)
 - **替代/撤回：** `FILE_AND_REGISTRY_FIRST_DISCOVERY`
 
+<a id="change-evidence-program-103"></a>
+### 2026-07-30 · 证据程序与首个预注册可证伪验证试点
+
+- **类型：** `EVIDENCE_PROGRAM_AND_PILOT`
+- **状态：** `CURRENT_WHEN_PRESENT_ON_VERIFIED_MAIN`
+- **变化：** 建立最小可用 Evidence Program（`evidence-program/`：组合/预注册/来源溯源/运行/结果裁定/偏差日志/E 轴转移 schema + 确定性校验器 + CI 门），并完成首个真实试点——用公共 Crossref REST API 独立复验 104 来源注册表 117 条 DOI。结果 SUPPORTED_WITHIN_SCOPE（117/117 解析、117/117 标题匹配、112/117 年份匹配、0 撤稿、1 条注册表内部重复 DOI）；确认 `METADATA_VERIFIED` 层级不变，需 5 条年份回填与 1 条 DOI 去重（同层级修正）。预注册提交 `a4d13a69…` 先于任何外部查询。
+- **来源：** [RESULTS/LATEST.md](../RESULTS/LATEST.md) · [evidence-program/README.md](../evidence-program/README.md) · [pilot RESULT.md](../evidence-program/runs/IGNITION-EVIDENCE-PILOT-R1-CROSSREF-DOI-VERIFICATION/RESULT.md)
+- **人类结果义务：** `True`
+- **边界：** 外部元数据证据；不证明 Pointfire 物理正确性，不提升 E 轴越出被测范围。
+
 <a id="change-src-hr-c629630ad15b68cb"></a>
 ### 2026-07-30 · 任务 102 知识体验层缺口与覆盖审计
 

@@ -226,7 +226,13 @@ def main(argv=None):
                "thresholds differ between preregistration and result" if canon(used) != canon(pre) else "identical")
         # leakage: observed metrics must be subset of preregistered metrics
         pre_metrics = set(prereg.get("metrics", {}).get("secondary_metrics", []))
-        pre_metrics.add(prereg.get("metrics", {}).get("primary_metric", ""))
+        primary = prereg.get("metrics", {}).get("primary_metric", "") or ""
+        m = re.match(r"^\s*([A-Za-z_][A-Za-z0-9_]*)\s*=", primary)
+        if m:
+            pre_metrics.add(m.group(1))
+        else:
+            # fall back to the literal primary_metric string as a key
+            pre_metrics.add(primary)
         obs_metrics = set(result_inst.get("metrics_observed", {}).keys())
         leaked = obs_metrics - pre_metrics
         record("leakage:no-unregistered-metrics", not leaked,

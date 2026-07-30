@@ -22,6 +22,7 @@ Usage:
 import argparse
 import hashlib
 import json
+import os
 import re
 import sys
 import time
@@ -51,8 +52,13 @@ def norm(s):
 def extract_year(msg):
     for key in ("published", "published-print", "issued", "created"):
         v = msg.get(key)
-        if isinstance(v, dict) and v.get("date-parts") and v["date-parts"][0]:
-            return int(v["date-parts"][0][0])
+        if isinstance(v, dict) and isinstance(v.get("date-parts"), list) and v["date-parts"]:
+            dp = v["date-parts"][0]
+            if dp and dp[0] is not None:
+                try:
+                    return int(dp[0])
+                except (TypeError, ValueError):
+                    pass
     return None
 
 
@@ -181,6 +187,7 @@ def main():
             "intra_registry_duplicate": dup,
             "notes": "",
         })
+        out_rows.append(row)
         summary["resolved_ok"] += 1
         if claimed:
             summary["verified_records"] += 1
@@ -204,9 +211,13 @@ def main():
     summary["year_match_rate"] = round(summary["year_match"] / claimed_n, 4) if claimed_n else None
 
     os.makedirs(os.path.dirname(args.out), exist_ok=True)
+    sys.stderr.write(f"DEBUG out_rows={len(out_rows)} out={args.out}\n")
     with open(args.out, "w", encoding="utf-8") as fh:
         for row in out_rows:
             fh.write(json.dumps(row, ensure_ascii=False) + "\n")
+        fh.flush()
+        os.fsync(fh.fileno())
+    sys.stderr.write(f"DEBUG wrote size={os.path.getsize(args.out)}\n")
 
     print(json.dumps(summary, ensure_ascii=False, indent=2))
     return summary
