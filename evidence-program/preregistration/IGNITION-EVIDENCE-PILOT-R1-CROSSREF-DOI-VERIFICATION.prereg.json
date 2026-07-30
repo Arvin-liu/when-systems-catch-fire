@@ -50,6 +50,6 @@
     "on_contradicted": "Downgrade failing entries; add a known-limitation note on external-source atlas reliability; propagate to dependent public surfaces.",
     "on_invalid": "Retain E0-equivalent; record the blocked acquisition as a known limitation, not a failure of the claim."
   },
-  "committed_at_utc": "PENDING_C1_TIMESTAMP",
-  "committed_commit": "PENDING_C1_SHA"
+  "committed_at_utc": "2026-07-30T10:25:30Z",
+  "committed_commit": "a4d13a69acea9bcc1480d7dd383929d46813c2f5"
 }
