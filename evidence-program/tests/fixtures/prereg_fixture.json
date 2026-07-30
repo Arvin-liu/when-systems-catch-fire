@@ -1,0 +1,22 @@
+{
+  "preregistration_id": "FIX-PREREG",
+  "pilot_id": "FIX-PILOT",
+  "claim": "fixture claim",
+  "null_or_comparison": "fixture null",
+  "scope": "fixture scope",
+  "exclusions": "fixture exclusions",
+  "dataset": {"source_path": "x", "record_count": 3, "doi_field": "doi", "identifier_format": "https://doi.org/<doi>"},
+  "source_acquisition": {"oracle": "X", "endpoint_template": "https://x/{d}", "user_agent": "ua", "licence": "CC0", "retrieval_window_utc": "t", "redistribution_allowed": true},
+  "baseline": "fixture baseline",
+  "metrics": {"primary_metric": "m", "secondary_metrics": ["a", "b"]},
+  "uncertainty": "fixture",
+  "success_conditions": {"rate_min": 0.95, "bad_max": 0},
+  "partial_support_conditions": {"rate_range": [0.8, 0.95]},
+  "null_conditions": {"description": "n"},
+  "contradiction_conditions": {"description": "c"},
+  "invalid_test_conditions": {"description": "i"},
+  "stopping_rule": "fixture",
+  "e_axis_mapping": {"on_supported": "s", "on_partial": "p", "on_null": "nl", "on_contradicted": "co", "on_invalid": "iv"},
+  "committed_at_utc": "2026-07-30T00:00:00Z",
+  "committed_commit": "FIXSHA"
+}

@@ -1,0 +1,55 @@
+{
+  "preregistration_id": "PREREG-103-R1-CROSSREF",
+  "pilot_id": "IGNITION-EVIDENCE-PILOT-R1-CROSSREF-DOI-VERIFICATION",
+  "claim": "Every record in data/external-research/104-source-registry.jsonl that asserts crossref_verified:true corresponds to a DOI that (a) resolves via the public Crossref REST API (HTTP 200), (b) returns a title matching the registry's recorded crossref_title, (c) returns a publication year matching the registry's recorded crossref_year, and (d) is not flagged as retracted or detected as a duplicate.",
+  "null_or_comparison": "Null/comparison proposition: the registry's own crossref_verified:true assertion is the baseline; the external Crossref record is the independent comparator. A record is 'verified' only if resolution + title-match + year-match + no-retraction + no-duplicate all hold.",
+  "scope": "All 117 records in 104-source-registry.jsonl. Primary metric computed over the subset asserting crossref_verified:true (expected = all 117).",
+  "exclusions": "No content/claim assessment of the articles; no assessment of Pointfire physics correctness; DOIs that cannot be parsed from the registry are reported as PARSE_FAILED, not silently dropped.",
+  "dataset": {
+    "source_path": "data/external-research/104-source-registry.jsonl",
+    "record_count": 117,
+    "doi_field": "doi",
+    "identifier_format": "https://doi.org/<bare-doi>"
+  },
+  "source_acquisition": {
+    "oracle": "Crossref REST API (https://api.crossref.org/works/{doi})",
+    "endpoint_template": "https://api.crossref.org/works/{bare_doi}",
+    "user_agent": "PointfireEvidencePilot/1.0 (mailto:49422864+Arvin-liu@users.noreply.github.com)",
+    "licence": "Crossref metadata is released under CC0 (public-domain dedication); raw redistribution permitted by Crossref terms.",
+    "retrieval_window_utc": "2026-07-30T10:21:36Z..run-end",
+    "redistribution_allowed": true
+  },
+  "baseline": "The registry's own recorded crossref_verified:true, crossref_title and crossref_year fields (the repository's prior metadata claim).",
+  "metrics": {
+    "primary_metric": "verification_match_rate = (#records with resolution AND title_match AND year_match AND no retraction AND no duplicate) / (#records asserting crossref_verified:true)",
+    "secondary_metrics": ["resolution_rate", "title_match_rate", "year_match_rate", "retraction_signal_count", "intra_registry_duplicate_doi_count", "resolution_failure_count"]
+  },
+  "uncertainty": "Finite population N=117 (census, not a sample) so no sampling uncertainty. Measurement uncertainty arises only from title normalization (case/punctuation/whitespace); reported as exact counts and rates. A sensitivity check reports match counts under both strict-normalized equality and loose-containment matching.",
+  "success_conditions": {
+    "verification_match_rate_min": 0.95,
+    "retraction_signals_max": 0,
+    "intra_registry_duplicate_dois_max": 0
+  },
+  "partial_support_conditions": {
+    "verification_match_rate_range": [0.80, 0.95]
+  },
+  "null_conditions": {
+    "description": "verification_match_rate < 0.80 but failures are attributable to title-normalization ambiguity or network degradation rather than concrete metadata errors, OR resolution_rate < 0.90 preventing a valid census."
+  },
+  "contradiction_conditions": {
+    "description": "verification_match_rate < 0.80 with concrete title/year mismatches indicating the METADATA_VERIFIED tier is not warranted for failing entries."
+  },
+  "invalid_test_conditions": {
+    "description": "Crossref entirely unreachable, persistent HTTP 429/403 policy block, or script error preventing any valid query => TEST_INVALID_OR_ABORTED; results are NOT fabricated or substituted."
+  },
+  "stopping_rule": "All 117 DOIs are attempted. On HTTP 429, bounded exponential backoff retry (max 4 attempts). Persistent block or total network failure => abort and record TEST_INVALID_OR_ABORTED. No early stop on favourable interim counts.",
+  "e_axis_mapping": {
+    "on_supported": "Confirm evidence_tier_104=METADATA_VERIFIED for passing entries; no promotion beyond scope; record a positive provenance note.",
+    "on_partial": "Downgrade failing entries to METADATA_UNCONFIRMED (tier lowered); retain METADATA_VERIFIED for passing entries; record a known-limitation note.",
+    "on_null": "Retain E0-equivalent (no promotion); record as a known limitation.",
+    "on_contradicted": "Downgrade failing entries; add a known-limitation note on external-source atlas reliability; propagate to dependent public surfaces.",
+    "on_invalid": "Retain E0-equivalent; record the blocked acquisition as a known limitation, not a failure of the claim."
+  },
+  "committed_at_utc": "PENDING_C1_TIMESTAMP",
+  "committed_commit": "PENDING_C1_SHA"
+}
