@@ -18,7 +18,7 @@
 - **被引用/反向依赖：** 无已登记反向依赖
 - **相关文章/资产：** 无已登记关联
 - **来源与证据：** `docs/architecture/compression-integrity-gate.md`, `REPOSITORY_HISTORY_SOURCE`
-- **演化历史：** 2026-07-30: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **演化历史：** 2026-07-15: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
 - **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `ARCHITECTURE_GOVERNANCE`
@@ -58,7 +58,7 @@
 - **被引用/反向依赖：** 无已登记反向依赖
 - **相关文章/资产：** 无已登记关联
 - **来源与证据：** `docs/publication/zhiyuan-writing-showcase.md`, `REPOSITORY_HISTORY_SOURCE`
-- **演化历史：** 2026-07-30: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **演化历史：** 2026-07-16: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
 - **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `WRITING_PUBLICATION`
@@ -78,7 +78,7 @@
 - **被引用/反向依赖：** 无已登记反向依赖
 - **相关文章/资产：** 无已登记关联
 - **来源与证据：** `docs/governance/meta-protocol-reviews/protocols/V3.md`, `REPOSITORY_HISTORY_SOURCE`
-- **演化历史：** 2026-07-30: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **演化历史：** 2026-07-11: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
 - **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `ARCHITECTURE_GOVERNANCE`
@@ -138,7 +138,7 @@
 - **被引用/反向依赖：** 无已登记反向依赖
 - **相关文章/资产：** 无已登记关联
 - **来源与证据：** `docs/architecture/incremental-execution.md`, `REPOSITORY_HISTORY_SOURCE`
-- **演化历史：** 2026-07-30: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **演化历史：** 2026-07-18: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
 - **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
@@ -178,7 +178,7 @@
 - **被引用/反向依赖：** 无已登记反向依赖
 - **相关文章/资产：** 无已登记关联
 - **来源与证据：** `docs/foundation/status-system.md`, `REPOSITORY_HISTORY_SOURCE`
-- **演化历史：** 2026-07-30: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **演化历史：** 2026-07-13: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
 - **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `MATHEMATICS`, `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
@@ -198,7 +198,7 @@
 - **被引用/反向依赖：** 无已登记反向依赖
 - **相关文章/资产：** 无已登记关联
 - **来源与证据：** `reports/release/121Q9-final-release-candidate.md`, `121Q9-FINAL-RELEASE-CANDIDATE`
-- **演化历史：** 2026-07-30: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **演化历史：** 2026-07-15: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
 - **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `OPERATIONS_EVIDENCE`
@@ -238,7 +238,7 @@
 - **被引用/反向依赖：** 无已登记反向依赖
 - **相关文章/资产：** 无已登记关联
 - **来源与证据：** `docs/architecture/typed-change-propagation.md`, `REPOSITORY_HISTORY_SOURCE`
-- **演化历史：** 2026-07-30: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **演化历史：** 2026-07-17: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
 - **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
@@ -258,7 +258,7 @@
 - **被引用/反向依赖：** 无已登记反向依赖
 - **相关文章/资产：** 无已登记关联
 - **来源与证据：** `docs/architecture/interactive-system-map.md`, `REPOSITORY_HISTORY_SOURCE`
-- **演化历史：** 2026-07-30: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **演化历史：** 2026-07-17: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
 - **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`
@@ -278,7 +278,7 @@
 - **被引用/反向依赖：** 无已登记反向依赖
 - **相关文章/资产：** `D585`, `D586`, `D587`, `D588`, `D589`
 - **来源与证据：** `新故事/0001-S1-比刀剑更持久的，是共享观念.md`, `0001-S1`
-- **演化历史：** 2026-07-30: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **演化历史：** 2026-07-06: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
 - **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `MATHEMATICS`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
@@ -298,7 +298,7 @@
 - **被引用/反向依赖：** 无已登记反向依赖
 - **相关文章/资产：** 无已登记关联
 - **来源与证据：** `reports/operations/121Q28R-cognitive-level-leap-writing-method-audit.md`, `121Q28R-COGNITIVE-LEVEL-LEAP-WRITING-METHOD-AUDIT`
-- **演化历史：** 2026-07-30: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **演化历史：** 2026-07-16: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
 - **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
@@ -338,7 +338,7 @@
 - **被引用/反向依赖：** 无已登记反向依赖
 - **相关文章/资产：** 无已登记关联
 - **来源与证据：** `reports/foundation-architecture/083-escalation-routing-report.md`, `083-ESCALATION-ROUTING-REPORT`
-- **演化历史：** 2026-07-30: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **演化历史：** 2026-07-13: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
 - **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `ARCHITECTURE_GOVERNANCE`
@@ -358,7 +358,7 @@
 - **被引用/反向依赖：** 无已登记反向依赖
 - **相关文章/资产：** `T4`, `T18`
 - **来源与证据：** `reports/foundation-architecture/085-architecture-structure-freeze.md`, `085-ARCHITECTURE-STRUCTURE-FREEZE`
-- **演化历史：** 2026-07-30: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **演化历史：** 2026-07-13: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
 - **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `ARCHITECTURE_GOVERNANCE`
@@ -378,7 +378,7 @@
 - **被引用/反向依赖：** 无已登记反向依赖
 - **相关文章/资产：** 无已登记关联
 - **来源与证据：** `reports/external-research/120-function-os-architecture-candidate-report.md`, `120-FUNCTION-OS-ARCHITECTURE-CANDIDATE-REPORT`
-- **演化历史：** 2026-07-30: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **演化历史：** 2026-07-13: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
 - **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `ARCHITECTURE_GOVERNANCE`
@@ -398,7 +398,7 @@
 - **被引用/反向依赖：** 无已登记反向依赖
 - **相关文章/资产：** 无已登记关联
 - **来源与证据：** `reports/atlas/121Q14-dynamic-atlas.md`, `121Q14-DYNAMIC-ATLAS`
-- **演化历史：** 2026-07-30: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **演化历史：** 2026-07-15: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
 - **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `SYSTEMS`
@@ -438,7 +438,7 @@
 - **被引用/反向依赖：** 无已登记反向依赖
 - **相关文章/资产：** 无已登记关联
 - **来源与证据：** `reports/architecture/121Q21R-multiscale-causal-fabric-validation.md`, `121Q21R-MULTISCALE-CAUSAL-FABRIC-VALIDATION`
-- **演化历史：** 2026-07-30: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **演化历史：** 2026-07-16: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
 - **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
@@ -458,7 +458,7 @@
 - **被引用/反向依赖：** 无已登记反向依赖
 - **相关文章/资产：** 无已登记关联
 - **来源与证据：** `reports/atlas/121Q14-baseline-latent-map-audit.md`, `121Q14-BASELINE-LATENT-MAP-AUDIT`
-- **演化历史：** 2026-07-30: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **演化历史：** 2026-07-15: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
 - **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `SYSTEMS`, `OPERATIONS_EVIDENCE`
@@ -558,7 +558,7 @@
 - **被引用/反向依赖：** 无已登记反向依赖
 - **相关文章/资产：** 无已登记关联
 - **来源与证据：** `reports/external-research/121Q2R-final-report.md`, `121Q2R-FINAL-REPORT`
-- **演化历史：** 2026-07-30: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **演化历史：** 2026-07-15: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
 - **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `OPERATIONS_EVIDENCE`
@@ -578,7 +578,7 @@
 - **被引用/反向依赖：** 无已登记反向依赖
 - **相关文章/资产：** 无已登记关联
 - **来源与证据：** `reports/architecture/121Q23C-operational-arn-real-history-validation.md`, `121Q23C-OPERATIONAL-ARN-REAL-HISTORY-VALIDATION`
-- **演化历史：** 2026-07-30: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **演化历史：** 2026-07-16: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
 - **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `MATHEMATICS`, `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
@@ -598,7 +598,7 @@
 - **被引用/反向依赖：** 无已登记反向依赖
 - **相关文章/资产：** 无已登记关联
 - **来源与证据：** `docs/governance/meta-protocol-reviews/factual-pending-register.md`, `REPOSITORY_HISTORY_SOURCE`
-- **演化历史：** 2026-07-30: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **演化历史：** 2026-07-11: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
 - **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
@@ -618,7 +618,7 @@
 - **被引用/反向依赖：** 无已登记反向依赖
 - **相关文章/资产：** 无已登记关联
 - **来源与证据：** `docs/governance/README.md`, `REPOSITORY_HISTORY_SOURCE`
-- **演化历史：** 2026-07-30: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **演化历史：** 2026-07-15: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
 - **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `ARCHITECTURE_GOVERNANCE`
@@ -638,7 +638,7 @@
 - **被引用/反向依赖：** 无已登记反向依赖
 - **相关文章/资产：** 无已登记关联
 - **来源与证据：** `docs/governance/licensing-model-candidate.md`, `REPOSITORY_HISTORY_SOURCE`
-- **演化历史：** 2026-07-30: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **演化历史：** 2026-07-15: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
 - **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `COGNITION`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
@@ -658,7 +658,7 @@
 - **被引用/反向依赖：** 无已登记反向依赖
 - **相关文章/资产：** 无已登记关联
 - **来源与证据：** `docs/architecture/ignition-atlas.md`, `REPOSITORY_HISTORY_SOURCE`
-- **演化历史：** 2026-07-30: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **演化历史：** 2026-07-15: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
 - **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`
@@ -718,7 +718,7 @@
 - **被引用/反向依赖：** 无已登记反向依赖
 - **相关文章/资产：** 无已登记关联
 - **来源与证据：** `reports/architecture/121Q12-effectual-mechanism-dual-loop.md`, `121Q12-EFFECTUAL-MECHANISM-DUAL-LOOP`
-- **演化历史：** 2026-07-30: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **演化历史：** 2026-07-15: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
 - **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`
@@ -738,7 +738,7 @@
 - **被引用/反向依赖：** 无已登记反向依赖
 - **相关文章/资产：** 无已登记关联
 - **来源与证据：** `reports/external-research/121Q2V-verification-repair-report.md`, `121Q2V-VERIFICATION-REPAIR-REPORT`
-- **演化历史：** 2026-07-30: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **演化历史：** 2026-07-15: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
 - **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `OPERATIONS_EVIDENCE`
