@@ -1664,9 +1664,9 @@
   - 可搜索名称：CLAIM-PEND-030 / 任何诊断、治疗、用药、心理健康建议
   - 来源：`data/foundation/claims/claims.jsonl`
   - 依赖：—；被引用：—
-- [任务 101 的人类层已经提供 README、`HUMAN-READING.md`、`RESULTS/` 和 166 条历史结果记录，但仍存在五个可复现缺口：没有按知识变化组织的时间线；没有按研究问题组织的知识地图；没有统一资产卡；没有长文](../../../reports/operations/102-knowledge-experience-audit.md)
+- [任务 101 的人类层（2026-07 历史快照，非当前总数）已经提供 README、`HUMAN-READING.md`、`RESULTS/` 与当时约 166 条历史结果记录，但仍存在五个可复现缺口：没有按知识变化组织的时间线；没有按研](../../../reports/operations/102-knowledge-experience-audit.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-adb4f9a7f174bb4c / 任务 101 的人类层已经提供 README、`HUMAN-READING.md`、`RESULTS/` 和 166 条历史结果记录，但仍存在五个可复现缺口：没有按知识变化组织的时间线；没有按研究问题组织的知识地图；没有统一资产卡；没有长文
+  - 可搜索名称：NFC-adb4f9a7f174bb4c / 任务 101 的人类层（2026-07 历史快照，非当前总数）已经提供 README、`HUMAN-READING.md`、`RESULTS/` 与当时约 166 条历史结果记录，但仍存在五个可复现缺口：没有按知识变化组织的时间线；没有按研
   - 来源：`reports/operations/102-knowledge-experience-audit.md`
   - 依赖：—；被引用：—
 - [任务 102 对新增源语料重新运行任务 100 生成器并排除生成投影，当前登记 **17,333** 个 canonical claim。主要类别包括：](../../ASSET-CARDS.md#asset-nfc-2843222a849fe77e)
