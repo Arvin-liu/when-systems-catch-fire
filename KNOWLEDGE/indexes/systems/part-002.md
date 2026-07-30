@@ -6,6 +6,16 @@
 
 - [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：M17 / data/external-research/088-external-source-atlas-medium.jsonl / M17 / M01
+  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
+  - 依赖：—；被引用：—
+- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：M18 / data/external-research/088-external-source-atlas-medium.jsonl / M18 / M01
+  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
+  - 依赖：—；被引用：—
+- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：M19 / data/external-research/088-external-source-atlas-medium.jsonl / M19 / M01
   - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
   - 依赖：—；被引用：—
@@ -859,6 +869,11 @@
   - 可搜索名称：NFC-791eb0ecfdd6abdd / external ref IDs that collide with local network/state/projection refs are rejected;
   - 来源：`reports/architecture/121Q23-adaptive-relational-network-validation.md`
   - 依赖：—；被引用：—
+- [externally). **Physical removal was deliberately NOT performed** because `GAP002-08` is referenced](../../../evidence-program/runs/IGNITION-EVIDENCE-PILOT-R1-CROSSREF-DOI-VERIFICATION/RESULT.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-0484ce60d0256e8a / externally). **Physical removal was deliberately NOT performed** because `GAP002-08` is referenced
+  - 来源：`evidence-program/runs/IGNITION-EVIDENCE-PILOT-R1-CROSSREF-DOI-VERIFICATION/RESULT.md`
+  - 依赖：—；被引用：—
 - [f"## 允许的审核决定\\n- approve / needs_revision / reject（仅人工可签署）\\n\\n"](../../../tools/build_deliverables.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-48668db306557e1d / f"## 允许的审核决定\\n- approve / needs_revision / reject（仅人工可签署）\\n\\n"
@@ -973,6 +988,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-be3f869b20be0fc1 / Fail-closed publication gate validator enforcing source-rights, material classification, and non-republication principle
   - 来源：`data/architecture/interactive-system-map.json`
+  - 依赖：—；被引用：—
+- [Failure handling:** network/non-200 outcomes are recorded explicitly and never](../../../evidence-program/preregistration/IGNITION-EVIDENCE-PILOT-R1-CROSSREF-DOI-VERIFICATION.protocol.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-333289d0f1e12e77 / Failure handling:** network/non-200 outcomes are recorded explicitly and never
+  - 来源：`evidence-program/preregistration/IGNITION-EVIDENCE-PILOT-R1-CROSSREF-DOI-VERIFICATION.protocol.md`
   - 依赖：—；被引用：—
 - [failure=\["alternative mechanisms explain the same examples", "the product form is not uniquely justified"\],](../../../tools/foundation/build_080_queue.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -1328,6 +1348,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-33717b76c0c55d0d / Historical status: `121Q32I / method 1.3.0 Closed`, now superseded by Current 1.4.0. Method 1.2.0 and system map 0.2.0 a
   - 来源：`docs/architecture/incremental-execution.md`
+  - 依赖：—；被引用：—
+- [Historical-anchor existence only; not a claim about causal interpretation.](../../../evidence-program/registry/candidate-portfolio.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-0a0432cf85fcf55a / Historical-anchor existence only; not a claim about causal interpretation.
+  - 来源：`evidence-program/registry/candidate-portfolio.jsonl`
   - 依赖：—；被引用：—
 - [human_knowledge_surfaces owns readable repository navigation while system_map_projection owns the generated SVG under do](../../../data/operations/project-components.json)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
@@ -2034,6 +2059,11 @@
   - 可搜索名称：NFC-dd7e8fb851ffdeef / NC-002 经全表查重（无等价案例）与 Ψ₀ 六维判定，判定为**真新增教育评价机制个案**，已以 C-0809 入表并完成最小索引追加与 D597/D173 对应闭环。后续建议做 C-0809 索引可见性验证。
   - 来源：`outputs/audit/nc-002-performed-fake-class-backfill-audit-20260708.md`
   - 依赖：D173, D597；被引用：—
+- [Network/non-200 outcomes are recorded explicitly (acquisition_status) and NEVER](../../../evidence-program/tools/run_crossref_verification.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-22c0126e08206e31 / Network/non-200 outcomes are recorded explicitly (acquisition_status) and NEVER
+  - 来源：`evidence-program/tools/run_crossref_verification.py`
+  - 依赖：—；被引用：—
 - [network\["diffs"\]\[0\]\["external_refs"\]\[1\]\["ref_type"\] = "external_projection"](../../../tests/test_adaptive_relational_network_validation_contract.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-4407a6fb900d4ab3 / network\["diffs"\]\[0\]\["external_refs"\]\[1\]\["ref_type"\] = "external_projection"
@@ -2474,33 +2504,3 @@
   - 可搜索名称：NFC-ddbc223d40053ae4 / Object D250 defines a mechanism_model within the point-fire framework. Core: 中文：验证自我模型相变需要满足三个标准： **标准1：行为变化标准** Δ_behav
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D250；被引用：—
-- [Object D251 defines a mechanism_model within the point-fire framework. Core: 中文：时空维度d的稳定性取决于该维度下所有门控面的否决概率是否低于容斥阈值p*。d=4](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-534b7ce92b18637f / Object D251 defines a mechanism_model within the point-fire framework. Core: 中文：时空维度d的稳定性取决于该维度下所有门控面的否决概率是否低于容斥阈值p*。d=4
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D251；被引用：—
-- [Object D252 defines a mechanism_model within the point-fire framework. Core: 中文：阶层固化的否决强度不仅随各门槛否决概率pᵢ线性增长（容斥一阶），还随交叉项pᵢp](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-76d90ce30d3e7b9b / Object D252 defines a mechanism_model within the point-fire framework. Core: 中文：阶层固化的否决强度不仅随各门槛否决概率pᵢ线性增长（容斥一阶），还随交叉项pᵢp
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D147, D252；被引用：—
-- [Object D253 defines a mechanism_model within the point-fire framework. Core: 中文：生物体的最优信息维度d_opt使否决概率总和最小且所有pᵢ<p*。d<d_opt](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-4abe3d3993da6857 / Object D253 defines a mechanism_model within the point-fire framework. Core: 中文：生物体的最优信息维度d_opt使否决概率总和最小且所有pᵢ<p*。d<d_opt
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D253；被引用：—
-- [Object D254 defines a mechanism_model within the point-fire framework. Core: 中文：系统稳定性分三个阶段：(1) d≈d_opt时极小点平坦度主导，pᵢ<<p*，耦](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-8bb39ef1d9262f76 / Object D254 defines a mechanism_model within the point-fire framework. Core: 中文：系统稳定性分三个阶段：(1) d≈d_opt时极小点平坦度主导，pᵢ<<p*，耦
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D254；被引用：—
-- [Object D256 defines a mechanism_model within the point-fire framework. Core: 中文：D254阶段2的宽度Δp≈p*(1-1/√n)，n为门控面数量。n越大阶段2越宽](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-078cabc40eee1396 / Object D256 defines a mechanism_model within the point-fire framework. Core: 中文：D254阶段2的宽度Δp≈p*(1-1/√n)，n为门控面数量。n越大阶段2越宽
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D25, D254, D256；被引用：—
-- [Object D258 defines a mechanism_model within the point-fire framework. Core: 中文：g_eff下降导致p*下降（因为耦合减弱→容斥更早接管），p*下降导致更早进入容](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-0010dc88926c1b40 / Object D258 defines a mechanism_model within the point-fire framework. Core: 中文：g_eff下降导致p*下降（因为耦合减弱→容斥更早接管），p*下降导致更早进入容
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D258；被引用：—

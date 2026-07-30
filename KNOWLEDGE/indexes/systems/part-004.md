@@ -4,6 +4,41 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [with self.assertRaisesRegex(ValueError, r"(substantive_causal_candidate\|informational_only\|False was expected)"):](../../../tests/test_change_propagation.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-edb7431d9916825d / with self.assertRaisesRegex(ValueError, r"(substantive_causal_candidate\|informational_only\|False was expected)"):
+  - 来源：`tests/test_change_propagation.py`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 信息门非对称退化 is adjudicated as STATE_TRANSITION: 信息门非对称退化，效率由低意识方决定。. This is a model-inter](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D146 / Within the source-defined scope, 信息门非对称退化 is adjudicated as STATE_TRANSITION: 信息门非对称退化，效率由低意识方决定。. This is a model-inter
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 退出权信号衰减 is adjudicated as STATE_TRANSITION: 退出权信号随时间衰减，衰减率λ由遮蔽决定。. This is a model-inte](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D3 / Within the source-defined scope, 退出权信号衰减 is adjudicated as STATE_TRANSITION: 退出权信号随时间衰减，衰减率λ由遮蔽决定。. This is a model-inte
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [without network access. Run: python -m pytest evidence-program/tests/ -q](../../../evidence-program/tests/test_evidence_program.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-4576791fb4cdf802 / without network access. Run: python -m pytest evidence-program/tests/ -q
+  - 来源：`evidence-program/tests/test_evidence_program.py`
+  - 依赖：—；被引用：—
+- [words such as emergence, convergence, meta-protocol, structure, or mechanism become stopping labels.](../../../docs/architecture/attention-attractor-control-plane.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-34fbe60ce8b0da6c / words such as emergence, convergence, meta-protocol, structure, or mechanism become stopping labels.
+  - 来源：`docs/architecture/attention-attractor-control-plane.md`
+  - 依赖：—；被引用：—
+- [Xing et al. 2024 *Causal inference in medical domain* — `10.1007/s10489-024-05338-9`](../../../data/external-research/088-FINAL-REPORT.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-69ba657d30c47c40 / Xing et al. 2024 *Causal inference in medical domain* — `10.1007/s10489-024-05338-9`
+  - 来源：`data/external-research/088-FINAL-REPORT.md`
+  - 依赖：—；被引用：—
+- [Yukawa层级验证 — 8维系统-最弱维度ε7=0.05→y7=8.2(对C_exit极度敏感),最强维度ε1=0.9→y1=0.3。y7](../../../data/foundation/evidence/evidence.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-1589c4a17d2405ae / Yukawa层级验证 — 8维系统-最弱维度ε7=0.05→y7=8.2(对C_exit极度敏感),最强维度ε1=0.9→y1=0.3。y7
+  - 来源：`data/foundation/evidence/evidence.jsonl`
+  - 依赖：—；被引用：—
 - [{"layer_id": "evidence", "label": "Evidence", "boundary_rule": "validation and evidence status", "model_choice": True},](../../../tools/adaptive_relational_network/projector.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-8e50c01d9e38bd78 / {"layer_id": "evidence", "label": "Evidence", "boundary_rule": "validation and evidence status", "model_choice": True},
@@ -519,6 +554,11 @@
   - 可搜索名称：NFC-625955eef6aade11 / \| C(x,y) \| 新因果链：职称硬门槛（市赛二等奖）+ 副高排队至 45 岁 → 以「多锻炼」名义推参赛 → 可拒绝性趋零 → 结构裹挟 > 主观意愿。具象呈现 D595 绩效绑定裹挟机制。 \|
   - 来源：`outputs/audit/nc-001-title-barrier-backfill-audit-20260708.md`
   - 依赖：D595；被引用：—
+- [\| C-05 \| Multiscale causal fabric edge-case \| DEFERRED \| 0.50 \| Internal-consistency only (not external evidence, §3.5).](../../../evidence-program/registry/candidate-portfolio.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-f2fd5d5daa5ead5f / \| C-05 \| Multiscale causal fabric edge-case \| DEFERRED \| 0.50 \| Internal-consistency only (not external evidence, §3.5).
+  - 来源：`evidence-program/registry/candidate-portfolio.md`
+  - 依赖：—；被引用：—
 - [\| C-0807 \| 双机制具象 \| 入案例表 \| 无同构案例 \| 个案非普遍 \| 单篇 pending \| 入案例表 \|](../../../outputs/audit/teacher-competition-small-batch-backfill-audit-20260708.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-11aabfa71e2f103f / \| C-0807 \| 双机制具象 \| 入案例表 \| 无同构案例 \| 个案非普遍 \| 单篇 pending \| 入案例表 \|
@@ -968,6 +1008,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-b9cc7ec031af2fd4 / \| 领域 \| 材料 \| 主机制命中 \| 同构锚点 \|
   - 来源：`outputs/collisions/20260708-cross-domain-smoke-test/cross-domain-synthesis.md`
+  - 依赖：—；被引用：—
+- [\|OQ-103-3：OpenAlex 跨源一致性\|同一 117 条 DOI 是否也在 OpenAlex 一致解析。\|OpenAlex 跨源交叉验证（备用试点 1）。\|两源系统性冲突时记录 oracle 差异，不自动判定。\|](../../../RESULTS/OPEN-QUESTIONS.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-793061460d0f3da0 / \|OQ-103-3：OpenAlex 跨源一致性\|同一 117 条 DOI 是否也在 OpenAlex 一致解析。\|OpenAlex 跨源交叉验证（备用试点 1）。\|两源系统性冲突时记录 oracle 差异，不自动判定。\|
+  - 来源：`RESULTS/OPEN-QUESTIONS.md`
   - 依赖：—；被引用：—
 - [\|“图上有边/可达”被读成现实因果\|阻断\|系统图与传播图表示声明过的仓库关系；实质因果必须另走 MCF 和证据门禁。\|\[系统图说明\](../docs/architecture/interactive-system-map.md)\|](../../../RESULTS/CORRECTIONS.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
@@ -2458,49 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-6061568d9108686b / 因果链：有积蓄 → 拒绝不合理要求底气↑ → 人生选择权↑
   - 来源：`docs/getbrain-book-collision-guide-20260708.md`
-  - 依赖：—；被引用：—
-- [因此本报告总体上限为：`mechanism_plausible / causal_identification_pending / external_historical_verification_required`。下一项最小状态改变行动](../../../reports/publication/jin-rise-point-fire-analysis.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-4cc13b8001829706 / 因此本报告总体上限为：`mechanism_plausible / causal_identification_pending / external_historical_verification_required`。下一项最小状态改变行动
-  - 来源：`reports/publication/jin-rise-point-fire-analysis.md`
-  - 依赖：—；被引用：—
-- [国家形成的具体因果判定：**pending**（需要史料考证和解释共同体共识）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-f4a5874180534f9e / 国家形成的具体因果判定：**pending**（需要史料考证和解释共同体共识）
-  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [在局部、低耦合、关系稳定、可预测范围内，假设状态沿可预测路径演化的建模与行动方式；须设反馈点、偏差检测与非线性退出条件，禁止把复杂生命系统强行简化为直线模型。](../../../docs/governance/meta-protocol-reviews/protocols/E1.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-a721d9a9e4dc641f / 在局部、低耦合、关系稳定、可预测范围内，假设状态沿可预测路径演化的建模与行动方式；须设反馈点、偏差检测与非线性退出条件，禁止把复杂生命系统强行简化为直线模型。
-  - 来源：`docs/governance/meta-protocol-reviews/protocols/E1.md`
-  - 依赖：—；被引用：—
-- [在现有CausalStructure和BootstrapConvergence对象上添加 intervention_control_status, identification_method, sensitivity_analysis_re](../../../data/external-research/105-intervention-control/105-interface-options-analysis.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-59bb4e75c0b20d5d / 在现有CausalStructure和BootstrapConvergence对象上添加 intervention_control_status, identification_method, sensitivity_analysis_re
-  - 来源：`data/external-research/105-intervention-control/105-interface-options-analysis.json`
-  - 依赖：—；被引用：—
-- [在耦合强、关系不稳、不可预测处误用会导致错误决策（滥用风险）。](../../../docs/governance/meta-protocol-reviews/protocols/E1.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-b4ed42771cc82e97 / 在耦合强、关系不稳、不可预测处误用会导致错误决策（滥用风险）。
-  - 来源：`docs/governance/meta-protocol-reviews/protocols/E1.md`
-  - 依赖：—；被引用：—
-- [地理决定论与点火框架P_meta元协议的碰撞。地理环境作为初始条件（V₁延续性协议），通过资源分布影响技术发展路径，验证了元协议组合对文明演化的决定性作用。](../../../data/foundation/arguments/arguments.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：CLAIM-BC-20260709-003 / 地理决定论与点火框架P_meta元协议的碰撞。地理环境作为初始条件（V₁延续性协议），通过资源分布影响技术发展路径，验证了元协议组合对文明演化的决定性作用。
-  - 来源：`data/foundation/arguments/arguments.jsonl`
-  - 依赖：—；被引用：—
-- [城中村改造的门槛碾压逆效应——改造抬高Λ导致原居民被碾压](../../../data/foundation/evidence/evidence.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-396883fd8589c7fa / 城中村改造的门槛碾压逆效应——改造抬高Λ导致原居民被碾压
-  - 来源：`data/foundation/evidence/evidence.jsonl`
-  - 依赖：—；被引用：—
-- [塔纳的街头，是金帐汗国的贸易枢纽。这里的商人来自威尼斯、热那亚、佛罗伦萨，他们可以自由进出，税收合理，安全有保障。这种低退出成本和高进入便利，让塔纳成为欧亚大陆的贸易中心。奇夫兰的刺杀，触动了金帐汗国的共享机制。商人可以自由进出的前提，是尊](../../../%E6%96%B0%E6%95%85%E4%BA%8B/0001-S1-%E6%AF%94%E5%88%80%E5%89%91%E6%9B%B4%E6%8C%81%E4%B9%85%E7%9A%84%EF%BC%8C%E6%98%AF%E5%85%B1%E4%BA%AB%E8%A7%82%E5%BF%B5.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-cabca412b0b7aa52 / 塔纳的街头，是金帐汗国的贸易枢纽。这里的商人来自威尼斯、热那亚、佛罗伦萨，他们可以自由进出，税收合理，安全有保障。这种低退出成本和高进入便利，让塔纳成为欧亚大陆的贸易中心。奇夫兰的刺杀，触动了金帐汗国的共享机制。商人可以自由进出的前提，是尊
-  - 来源：`新故事/0001-S1-比刀剑更持久的，是共享观念.md`
-  - 依赖：—；被引用：—
-- [声明：ARN 记录异质、时序、适应关系；邻接、中心性与网络变化不是真值或因果，因果主张委托给 MCF。](../../../reports/publication/jin-rise-point-fire-analysis.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-feff13018b6f712b / 声明：ARN 记录异质、时序、适应关系；邻接、中心性与网络变化不是真值或因果，因果主张委托给 MCF。
-  - 来源：`reports/publication/jin-rise-point-fire-analysis.md`
   - 依赖：—；被引用：—

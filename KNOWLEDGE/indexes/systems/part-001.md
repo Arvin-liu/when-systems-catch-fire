@@ -1334,6 +1334,11 @@
   - 可搜索名称：NFC-7b1ab63aecbf4b2a / `EmbeddingEvidenceRecord`: independent evidence axes for external availability, retrieval, linkage, conflict exposure, j
   - 来源：`docs/architecture/adaptive-relational-network.md`
   - 依赖：—；被引用：—
+- [`evidence_tier_104: METADATA_VERIFIED` rating of the external-source atlas. A](../../../evidence-program/registry/candidate-portfolio.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-16695fbd043341d1 / `evidence_tier_104: METADATA_VERIFIED` rating of the external-source atlas. A
+  - 来源：`evidence-program/registry/candidate-portfolio.md`
+  - 依赖：—；被引用：—
 - [`experimentally_identified_causal`](../../../docs/architecture/multiscale-causal-fabric.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-47b201ff5377fb11 / `experimentally_identified_causal`
@@ -1638,6 +1643,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-0ee6eb585e5415fa / After projection hash: `d2de2410b48824fb68ff72634719eb12813514f8b0f3404c353abbc748177ae2`
   - 来源：`reports/architecture/121Q23C-operational-arn-real-history-validation.md`
+  - 依赖：—；被引用：—
+- [After RUN-1 (captured in commit 0e9844d55) found 5 crossref_year gaps and 1 intra-registry duplicate DOI, the 5 in-tier](../../../evidence-program/runs/IGNITION-EVIDENCE-PILOT-R1-CROSSREF-DOI-VERIFICATION/deviation-log.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-57404675f3498599 / After RUN-1 (captured in commit 0e9844d55) found 5 crossref_year gaps and 1 intra-registry duplicate DOI, the 5 in-tier
+  - 来源：`evidence-program/runs/IGNITION-EVIDENCE-PILOT-R1-CROSSREF-DOI-VERIFICATION/deviation-log.json`
   - 依赖：—；被引用：—
 - [after\["transition_law"\]\["transition_kernel"\] = \[\[0.6, 0.4\], \[0.2, 0.8\]\]](../../../tests/test_probabilistic_system_dynamics.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
@@ -2492,15 +2502,5 @@
 - [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：M16 / data/external-research/088-external-source-atlas-medium.jsonl / M16 / M01
-  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
-  - 依赖：—；被引用：—
-- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：M17 / data/external-research/088-external-source-atlas-medium.jsonl / M17 / M01
-  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
-  - 依赖：—；被引用：—
-- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：M18 / data/external-research/088-external-source-atlas-medium.jsonl / M18 / M01
   - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
   - 依赖：—；被引用：—

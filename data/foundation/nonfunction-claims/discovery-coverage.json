@@ -8,12 +8,12 @@
   "candidate_fragments": 30748,
   "canonical_claims": 17454,
   "coverage_status_counts": {
-    "EXCLUDED_GENERATED_OR_FUNCTION_ASSET_REGISTRY": 158,
+    "EXCLUDED_GENERATED_OR_FUNCTION_ASSET_REGISTRY": 159,
     "EXCLUDED_NON_TEXT_SUFFIX": 7,
     "EXCLUDED_NON_UTF8_OR_UNREADABLE": 1,
     "EXPLICIT_CANONICAL_IMPORT": 1,
     "SCANNED_NO_CANDIDATE": 597,
     "SCANNED_REGISTERED": 2329
   },
-  "tracked_files": 3093
+  "tracked_files": 3094
 }

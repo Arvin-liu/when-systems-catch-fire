@@ -46,7 +46,7 @@
 
 - 状态：`MODIFIED`
 - Delta：`CD-B335630551682C19`
-- 关联断言：['NFC-0ee1d8c90f074750', 'NFC-1f0685bc15f29af4', 'NFC-2ab1348adf845550', 'NFC-2b570a9840855f50', 'NFC-2ed766c306600ce2', 'NFC-2f6931fff5a6554c', 'NFC-36f21247372dcffc', 'NFC-39545eedb71a2283', 'NFC-39be5fc0bacb6433', 'NFC-3c841b1210f8e63e', 'NFC-483cf4eb6793ae8d', 'NFC-4af21e662f6efa6c', 'NFC-51f85a6892787610', 'NFC-52c00c5675d39993', 'NFC-64a90a3ed5764ba2', 'NFC-6dab70d0b856a685', 'NFC-6f6f4770c8fc6186', 'NFC-7a43a2a14a334e1d', 'NFC-842e74ac13c6dadd', 'NFC-8d181b7e07b2764f']（仅显示前 20 项）
+- 关联断言：['NFC-013364a9f5fe0b48', 'NFC-0ee1d8c90f074750', 'NFC-1f0685bc15f29af4', 'NFC-2ab1348adf845550', 'NFC-2b570a9840855f50', 'NFC-2ed766c306600ce2', 'NFC-2f6931fff5a6554c', 'NFC-36f21247372dcffc', 'NFC-39545eedb71a2283', 'NFC-39be5fc0bacb6433', 'NFC-3c841b1210f8e63e', 'NFC-483cf4eb6793ae8d', 'NFC-4af21e662f6efa6c', 'NFC-51f85a6892787610', 'NFC-52c00c5675d39993', 'NFC-64a90a3ed5764ba2', 'NFC-6dab70d0b856a685', 'NFC-6f6f4770c8fc6186', 'NFC-7a43a2a14a334e1d', 'NFC-842e74ac13c6dadd']（仅显示前 20 项）
 - 人类结果义务：`True`
 - 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
 
@@ -70,7 +70,7 @@
 
 - 状态：`ADDED`
 - Delta：`CD-5A5163509582639A`
-- 关联断言：['NFC-0e0cffa5c2d19c78', 'NFC-1a292a4f646c160c', 'NFC-2317bfa11d8dac26', 'NFC-4bffdeb0ab79df8e', 'NFC-602e70118fb27e6b', 'NFC-68ed24272bc49f3c', 'NFC-76157c66b5e136b6', 'NFC-8c620dc82e215d28', 'NFC-9ed664b32264373f', 'NFC-a2d384e9a80f8f64', 'NFC-a8acc6747c78baf6', 'NFC-cf4e002e73ebf320', 'NFC-e353a84fc52b654f', 'NFC-e5a7838fe60f15ed', 'NFC-f8da3d74121cb41c', 'NFC-f9d717e4dd965a15', 'NFC-ffa78acc808beedc']
+- 关联断言：['NFC-040ae203ddf1ff4d', 'NFC-0e0cffa5c2d19c78', 'NFC-1a292a4f646c160c', 'NFC-2317bfa11d8dac26', 'NFC-2a02b1b55e7a2ac6', 'NFC-391f80f6063292f1', 'NFC-4b5388413f74775a', 'NFC-4bffdeb0ab79df8e', 'NFC-522277bf0a74860d', 'NFC-602e70118fb27e6b', 'NFC-68ed24272bc49f3c', 'NFC-76157c66b5e136b6', 'NFC-7941455b11850a2c', 'NFC-8c620dc82e215d28', 'NFC-9ed664b32264373f', 'NFC-a2d384e9a80f8f64', 'NFC-a8acc6747c78baf6', 'NFC-cf4e002e73ebf320', 'NFC-d7dfce5872f18b1c', 'NFC-db32299e8d4d50a7']（仅显示前 20 项）
 - 人类结果义务：`True`
 - 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
 
@@ -78,7 +78,7 @@
 
 - 状态：`ADDED`
 - Delta：`CD-AB3742B7019F31BD`
-- 关联断言：['NFC-2168bc63e11554b1', 'NFC-2cb94ca844ddaf45', 'NFC-323a64db7ae9a0a8', 'NFC-53ef4ecd679b7e31', 'NFC-6a56c8649443d4aa', 'NFC-72fcba87b73b641a', 'NFC-850ad71b7466f040', 'NFC-95cd1ce6288685f9', 'NFC-b6ca18a49dd1bc13', 'NFC-df3de0a01d0a2d5e']
+- 关联断言：['NFC-1c4f8822fe798963', 'NFC-2168bc63e11554b1', 'NFC-2cb94ca844ddaf45', 'NFC-323a64db7ae9a0a8', 'NFC-397634d58ba54397', 'NFC-4a890abf400eb7bb', 'NFC-53ef4ecd679b7e31', 'NFC-6a56c8649443d4aa', 'NFC-72fcba87b73b641a', 'NFC-793061460d0f3da0', 'NFC-850ad71b7466f040', 'NFC-85656120ce36a9e9', 'NFC-95cd1ce6288685f9', 'NFC-b6ca18a49dd1bc13', 'NFC-df3de0a01d0a2d5e']
 - 人类结果义务：`True`
 - 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
 
@@ -198,7 +198,7 @@
 
 - 状态：`MODIFIED`
 - Delta：`CD-6B16F258C4E8A97C`
-- 关联断言：['NFC-0ccc961fd77152ee', 'NFC-1330c1ed70ef4700', 'NFC-315caf45c12c67d1', 'NFC-3cf6603637c608ed', 'NFC-3d9ffb2206406fcc', 'NFC-61546854af53780b', 'NFC-69f3c2fe5c51c1af', 'NFC-6eee7a7479aed282', 'NFC-7fc16f0495aabb8c', 'NFC-85688f0030875f4e', 'NFC-8c6af1bfef409d7b', 'NFC-9913125dad661abe', 'NFC-9a08737959f9be2c', 'NFC-a5c7dc019cd5e82b', 'NFC-bf8cfcffece93dc9', 'NFC-c01ce2d26a16a546', 'NFC-c9ffc25c2ee99243', 'NFC-d084d30ac883f924', 'NFC-d6a1d6968770624a', 'NFC-e8195123f8886671']（仅显示前 20 项）
+- 关联断言：['NFC-0ccc961fd77152ee', 'NFC-1330c1ed70ef4700', 'NFC-2836cdb19c21deb6', 'NFC-29c02d082b610df0', 'NFC-315caf45c12c67d1', 'NFC-3cf6603637c608ed', 'NFC-3d9ffb2206406fcc', 'NFC-61546854af53780b', 'NFC-69f3c2fe5c51c1af', 'NFC-6eee7a7479aed282', 'NFC-7fc16f0495aabb8c', 'NFC-85688f0030875f4e', 'NFC-867f3dee8b8cd78b', 'NFC-8c6af1bfef409d7b', 'NFC-9913125dad661abe', 'NFC-9a08737959f9be2c', 'NFC-a5c7dc019cd5e82b', 'NFC-bf8cfcffece93dc9', 'NFC-c01ce2d26a16a546', 'NFC-c6471b9eb5ac5875']（仅显示前 20 项）
 - 人类结果义务：`True`
 - 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
 

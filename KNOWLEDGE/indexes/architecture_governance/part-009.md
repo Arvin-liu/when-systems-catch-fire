@@ -4,6 +4,456 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [require(authority.get("component_registry") == "data/operations/project-components.json", "map projection has wrong component authority")](../../../tools/generate_interactive_system_map.py)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-E5132945B00CE096 / require(authority.get("component_registry") == "data/operations/project-components.json", "map projection has wrong component authority") / IMPLICIT-E5132945B00CE096
+  - 来源：`tools/generate_interactive_system_map.py`
+  - 依赖：—；被引用：—
+- [require(binding\["closure_complete"\] and not binding\["unresolved_residue"\], f"{source}: unresolved propagation residue bl](../../../tools/validate_iteration_sync.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-ccb8d51a850a96e8 / require(binding\["closure_complete"\] and not binding\["unresolved_residue"\], f"{source}: unresolved propagation residue bl
+  - 来源：`tools/validate_iteration_sync.py`
+  - 依赖：—；被引用：—
+- [require(binding\["resolved_components"\] == recomputed\["resolved_components"\], f"{source}: resolved component closure mism](../../../tools/validate_iteration_sync.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-7e71f868d2fb23e0 / require(binding\["resolved_components"\] == recomputed\["resolved_components"\], f"{source}: resolved component closure mism
+  - 来源：`tools/validate_iteration_sync.py`
+  - 依赖：—；被引用：—
+- [require(binding\["unresolved_residue"\] == recomputed\["residue"\], f"{source}: unresolved propagation residue mismatch")](../../../tools/validate_iteration_sync.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-99898efb33f4690b / require(binding\["unresolved_residue"\] == recomputed\["residue"\], f"{source}: unresolved propagation residue mismatch")
+  - 来源：`tools/validate_iteration_sync.py`
+  - 依赖：—；被引用：—
+- [require(branch_pr.get("pr_number") == 62 and branch_pr.get("draft") is False and branch_pr.get("merged") is True, "E_PHA](../../../tools/operations/validate_phase_e_candidate.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-ff1597e2020638a4 / require(branch_pr.get("pr_number") == 62 and branch_pr.get("draft") is False and branch_pr.get("merged") is True, "E_PHA
+  - 来源：`tools/operations/validate_phase_e_candidate.py`
+  - 依赖：—；被引用：—
+- [require(branch_pr.get("pr_number") == 62 and branch_pr.get("draft") is False and branch_pr.get("merged") is True, "E_PHASE_E_MERGE", "Current lifecycle lacks merged PR #62 evidence")](../../../tools/operations/validate_phase_e_candidate.py)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-3A01B7C6E7BC3264 / require(branch_pr.get("pr_number") == 62 and branch_pr.get("draft") is False and branch_pr.get("merged") is True, "E_PHASE_E_MERGE", "Current lifecycle lacks merged PR #62 evidence") / IMPLICIT-3A01B7C6E7BC3264
+  - 来源：`tools/operations/validate_phase_e_candidate.py`
+  - 依赖：—；被引用：—
+- [require(closure\["closure_complete"\], "propagation closure has unresolved residue")](../../../tools/operations/compute_change_propagation.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-3dcfc93c86886450 / require(closure\["closure_complete"\], "propagation closure has unresolved residue")
+  - 来源：`tools/operations/compute_change_propagation.py`
+  - 依赖：—；被引用：—
+- [require(closure\["live_external_surfaces_verified"\] is False, f"{source}: local validator cannot claim live rendered veri](../../../tools/validate_iteration_sync.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-e757ae0fa601909b / require(closure\["live_external_surfaces_verified"\] is False, f"{source}: local validator cannot claim live rendered veri
+  - 来源：`tools/validate_iteration_sync.py`
+  - 依赖：—；被引用：—
+- [require(completion\["repository_synchronization_complete"\] == (repository_complete and not closure\["unresolved_residue"\])](../../../tools/validate_iteration_sync.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-035cd4a3a7929c41 / require(completion\["repository_synchronization_complete"\] == (repository_complete and not closure\["unresolved_residue"\])
+  - 来源：`tools/validate_iteration_sync.py`
+  - 依赖：—；被引用：—
+- [require(dd\["github_artifact_archive_digest"\] != dd\["pages_payload_tar_digest"\],](../../../tools/validate_iteration_sync.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-558939fc4d384397 / require(dd\["github_artifact_archive_digest"\] != dd\["pages_payload_tar_digest"\],
+  - 来源：`tools/validate_iteration_sync.py`
+  - 依赖：—；被引用：—
+- [require(evidence\["relay_exact_head"\] == att\["relay_head"\], f"{sid}: 1111 receipt HEAD drift from attestation")](../../../tools/operations/stage_snapshot_contract.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-054b25b5abc00dc3 / require(evidence\["relay_exact_head"\] == att\["relay_head"\], f"{sid}: 1111 receipt HEAD drift from attestation")
+  - 来源：`tools/operations/stage_snapshot_contract.py`
+  - 依赖：—；被引用：—
+- [require(evidence\["relay_pull_request_url"\] == f"https://github.com/{evidence\['relay_repository'\]}/pull/{evidence\['relay_](../../../tools/operations/stage_snapshot_contract.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-3065da37e5dc95d5 / require(evidence\["relay_pull_request_url"\] == f"https://github.com/{evidence\['relay_repository'\]}/pull/{evidence\['relay_
+  - 来源：`tools/operations/stage_snapshot_contract.py`
+  - 依赖：—；被引用：—
+- [require(evidence\["relay_pull_request_url"\] in evidence\["entries"\], f"{sid}: 1111 receipt entry missing")](../../../tools/operations/stage_snapshot_contract.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-add222c0e2717425 / require(evidence\["relay_pull_request_url"\] in evidence\["entries"\], f"{sid}: 1111 receipt entry missing")
+  - 来源：`tools/operations/stage_snapshot_contract.py`
+  - 依赖：—；被引用：—
+- [require(hde.get("subject_head"), f"{source}: historical_digest_evidence missing subject_head")](../../../tools/validate_iteration_sync.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-3cef9dc3f7ec5ba4 / require(hde.get("subject_head"), f"{source}: historical_digest_evidence missing subject_head")
+  - 来源：`tools/validate_iteration_sync.py`
+  - 依赖：—；被引用：—
+- [require(hde.get("subject_run_ids"), f"{source}: historical_digest_evidence missing subject_run_ids")](../../../tools/validate_iteration_sync.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a4ab86c0b1dbfbe3 / require(hde.get("subject_run_ids"), f"{source}: historical_digest_evidence missing subject_run_ids")
+  - 来源：`tools/validate_iteration_sync.py`
+  - 依赖：—；被引用：—
+- [require(head_binding\["embedded_exact_current_head"\] is False, f"{source}: repository artifact cannot claim embedded exac](../../../tools/validate_iteration_sync.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-47917b54f115e156 / require(head_binding\["embedded_exact_current_head"\] is False, f"{source}: repository artifact cannot claim embedded exac
+  - 来源：`tools/validate_iteration_sync.py`
+  - 依赖：—；被引用：—
+- [require(item.get("evidence_scope") == "historical_subject_head_only", f"{source}: stale CI evidence mislabeled as curren](../../../tools/validate_iteration_sync.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-99c3fd6be0e5356d / require(item.get("evidence_scope") == "historical_subject_head_only", f"{source}: stale CI evidence mislabeled as curren
+  - 来源：`tools/validate_iteration_sync.py`
+  - 依赖：—；被引用：—
+- [require(item.get("evidence_scope") == "historical_subject_head_only", f"{source}: stale CI evidence mislabeled as current-final evidence")](../../../tools/validate_iteration_sync.py)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-F01DC5E2AC5DD8E1 / require(item.get("evidence_scope") == "historical_subject_head_only", f"{source}: stale CI evidence mislabeled as current-final evidence") / IMPLICIT-F01DC5E2AC5DD8E1
+  - 来源：`tools/validate_iteration_sync.py`
+  - 依赖：—；被引用：—
+- [require(item\["status"\].upper() not in UNRESOLVED_STATUSES, f"{source}: unresolved validation status for {item\['name'\]}")](../../../tools/validate_iteration_sync.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-17b7eae22cc28cc3 / require(item\["status"\].upper() not in UNRESOLVED_STATUSES, f"{source}: unresolved validation status for {item\['name'\]}")
+  - 来源：`tools/validate_iteration_sync.py`
+  - 依赖：—；被引用：—
+- [require(len(history_ids) == len(set(history_ids)), "duplicate actor history record ID across registry")](../../../tools/operations/stage_snapshot_contract.py)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-159BDBEC1A7C8757 / require(len(history_ids) == len(set(history_ids)), "duplicate actor history record ID across registry") / IMPLICIT-159BDBEC1A7C8757
+  - 来源：`tools/operations/stage_snapshot_contract.py`
+  - 依赖：—；被引用：—
+- [require(not actual_plan.get("unresolved_residue"), "E_PHASE_E_PLAN_RESIDUE", "planner has unresolved residue")](../../../tools/operations/validate_phase_e_candidate.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-e2688cb873e181ab / require(not actual_plan.get("unresolved_residue"), "E_PHASE_E_PLAN_RESIDUE", "planner has unresolved residue")
+  - 来源：`tools/operations/validate_phase_e_candidate.py`
+  - 依赖：—；被引用：—
+- [require(not denom\["verified_exposure_events"\], "candidate plan must not prefill exposure events")](../../../tools/validate_sustainability_signal_interface.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-c33df98acd483ee9 / require(not denom\["verified_exposure_events"\], "candidate plan must not prefill exposure events")
+  - 来源：`tools/validate_sustainability_signal_interface.py`
+  - 依赖：—；被引用：—
+- [require(phase_b.get("claim_ceiling") == manifest\["claim_ceiling"\], f"{source}: seal claim ceiling mismatch")](../../../tools/validate_iteration_sync.py)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-7404F311059C3A51 / require(phase_b.get("claim_ceiling") == manifest\["claim_ceiling"\], f"{source}: seal claim ceiling mismatch") / IMPLICIT-7404F311059C3A51
+  - 来源：`tools/validate_iteration_sync.py`
+  - 依赖：—；被引用：—
+- [require(re.match(r"^external:(pr_body\|1111_receipt\|live_refetch\|github_actions):\\S+$", ref) is not None, f"{source}: inv](../../../tools/validate_iteration_sync.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-bea04d1760968851 / require(re.match(r"^external:(pr_body\|1111_receipt\|live_refetch\|github_actions):\\S+$", ref) is not None, f"{source}: inv
+  - 来源：`tools/validate_iteration_sync.py`
+  - 依赖：—；被引用：—
+- [require(real == root_resolved or root_resolved in real.parents,](../../../tools/operations/compute_change_propagation.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-9649844c35604e82 / require(real == root_resolved or root_resolved in real.parents,
+  - 来源：`tools/operations/compute_change_propagation.py`
+  - 依赖：—；被引用：—
+- [require(ref.startswith("external:"), f"{source}: external attestation evidence must use declared external reference form](../../../tools/validate_iteration_sync.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-147f6d6eda59109e / require(ref.startswith("external:"), f"{source}: external attestation evidence must use declared external reference form
+  - 来源：`tools/validate_iteration_sync.py`
+  - 依赖：—；被引用：—
+- [require(relay_fact is not None, f"{sid}: 1111 receipt PR does not exist in remote facts")](../../../tools/operations/stage_snapshot_contract.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-374131157c8a621e / require(relay_fact is not None, f"{sid}: 1111 receipt PR does not exist in remote facts")
+  - 来源：`tools/operations/stage_snapshot_contract.py`
+  - 依赖：—；被引用：—
+- [require(relay_fact\["head"\] == evidence\["relay_exact_head"\], f"{sid}: live 1111 receipt HEAD drift")](../../../tools/operations/stage_snapshot_contract.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-2e04c62a90356ae8 / require(relay_fact\["head"\] == evidence\["relay_exact_head"\], f"{sid}: live 1111 receipt HEAD drift")
+  - 来源：`tools/operations/stage_snapshot_contract.py`
+  - 依赖：—；被引用：—
+- [require(relay_fact\["state"\] == att\["relay_pr_state"\] and relay_fact\["draft"\] == att\["relay_pr_draft"\], f"{sid}: live 111](../../../tools/operations/stage_snapshot_contract.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-3d61eae367aa3f0f / require(relay_fact\["state"\] == att\["relay_pr_state"\] and relay_fact\["draft"\] == att\["relay_pr_draft"\], f"{sid}: live 111
+  - 来源：`tools/operations/stage_snapshot_contract.py`
+  - 依赖：—；被引用：—
+- [require(result.returncode == 0, f"remote PR cannot be resolved: {repository}#{pr}: {result.stderr.strip()}")](../../../tools/operations/stage_snapshot_contract.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-2a0bf312824cddc7 / require(result.returncode == 0, f"remote PR cannot be resolved: {repository}#{pr}: {result.stderr.strip()}")
+  - 来源：`tools/operations/stage_snapshot_contract.py`
+  - 依赖：—；被引用：—
+- [require(run_ids.get("foundation"), f"{source}: historical_digest_evidence missing foundation run")](../../../tools/validate_iteration_sync.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-5a48dc2012f200c7 / require(run_ids.get("foundation"), f"{source}: historical_digest_evidence missing foundation run")
+  - 来源：`tools/validate_iteration_sync.py`
+  - 依赖：—；被引用：—
+- [require(run_ids.get("function_os"), f"{source}: historical_digest_evidence missing function_os run")](../../../tools/validate_iteration_sync.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a31bb304f47dd59e / require(run_ids.get("function_os"), f"{source}: historical_digest_evidence missing function_os run")
+  - 来源：`tools/validate_iteration_sync.py`
+  - 依赖：—；被引用：—
+- [require(run_ids.get("pages"), f"{source}: historical_digest_evidence missing pages run")](../../../tools/validate_iteration_sync.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-c925c093a901a6ff / require(run_ids.get("pages"), f"{source}: historical_digest_evidence missing pages run")
+  - 来源：`tools/validate_iteration_sync.py`
+  - 依赖：—；被引用：—
+- [require(seal.get("synchronization_registry", {}).get("path") == manifest\["synchronization_closure"\]\["registry_path"\], f"{source}: seal synchronization registry mismatch")](../../../tools/validate_iteration_sync.py)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-E724BA588EBA04BB / require(seal.get("synchronization_registry", {}).get("path") == manifest\["synchronization_closure"\]\["registry_path"\], f"{source}: seal synchronization registry mismatch") / IMPLICIT-E724BA588EBA04BB
+  - 来源：`tools/validate_iteration_sync.py`
+  - 依赖：—；被引用：—
+- [require(set(external_policy\["required_workflows"\]) == {"foundation-validation", "function-os-ci"}, f"{source}: exact-head policy must require both remote workflows")](../../../tools/validate_iteration_sync.py)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-0B9E6CFFF2A516AB / require(set(external_policy\["required_workflows"\]) == {"foundation-validation", "function-os-ci"}, f"{source}: exact-head policy must require both remote workflows") / IMPLICIT-0B9E6CFFF2A516AB
+  - 来源：`tools/validate_iteration_sync.py`
+  - 依赖：—；被引用：—
+- [require(set(registry\["axis_invariants"\]) == INVARIANTS, "stage/publication orthogonality invariants are incomplete")](../../../tools/operations/stage_snapshot_contract.py)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-C3FE53577C279E97 / require(set(registry\["axis_invariants"\]) == INVARIANTS, "stage/publication orthogonality invariants are incomplete") / IMPLICIT-C3FE53577C279E97
+  - 来源：`tools/operations/stage_snapshot_contract.py`
+  - 依赖：—；被引用：—
+- [require(source_fact is not None, f"{sid}: source PR does not exist in remote facts")](../../../tools/operations/stage_snapshot_contract.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-4c5938760c97e9ba / require(source_fact is not None, f"{sid}: source PR does not exist in remote facts")
+  - 来源：`tools/operations/stage_snapshot_contract.py`
+  - 依赖：—；被引用：—
+- [require(source_fact\["branch"\] == source\["branch"\], f"{sid}: live source branch mismatch")](../../../tools/operations/stage_snapshot_contract.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-fc5aa111a4bcb7d8 / require(source_fact\["branch"\] == source\["branch"\], f"{sid}: live source branch mismatch")
+  - 来源：`tools/operations/stage_snapshot_contract.py`
+  - 依赖：—；被引用：—
+- [require(source_fact\["head"\] == source\["exact_head"\], f"{sid}: live source HEAD drift")](../../../tools/operations/stage_snapshot_contract.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-c29cfe0385e706e2 / require(source_fact\["head"\] == source\["exact_head"\], f"{sid}: live source HEAD drift")
+  - 来源：`tools/operations/stage_snapshot_contract.py`
+  - 依赖：—；被引用：—
+- [require(source_fact\["state"\] == att\["source_pr_state"\] and source_fact\["draft"\] == att\["source_pr_draft"\], f"{sid}: live](../../../tools/operations/stage_snapshot_contract.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-011bfa9931b522a4 / require(source_fact\["state"\] == att\["source_pr_state"\] and source_fact\["draft"\] == att\["source_pr_draft"\], f"{sid}: live
+  - 来源：`tools/operations/stage_snapshot_contract.py`
+  - 依赖：—；被引用：—
+- [require(value in text, f"{surface_id}: missing version fact {value}")](../../../tools/validate_human_front_door.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-e5a97c8771d99c3e / require(value in text, f"{surface_id}: missing version fact {value}")
+  - 来源：`tools/validate_human_front_door.py`
+  - 依赖：—；被引用：—
+- [required = \['function_id', 'revision', 'spec_hash', 'artifact_hash',](../../../function-os-candidate/v0.1/function_os/n9_registry_store.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-e17ec69d48954da4 / required = \['function_id', 'revision', 'spec_hash', 'artifact_hash',
+  - 来源：`function-os-candidate/v0.1/function_os/n9_registry_store.py`
+  - 依赖：—；被引用：—
+- [required = \['function_id', 'spec_hash', 'artifact_hash', 'compiler_version',](../../../function-os-candidate/v0.1/function_os/n9_registry_updater.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-8b1c7e52a6a95a7f / required = \['function_id', 'spec_hash', 'artifact_hash', 'compiler_version',
+  - 来源：`function-os-candidate/v0.1/function_os/n9_registry_updater.py`
+  - 依赖：—；被引用：—
+- [required_components = sorted(resolved)](../../../tools/operations/compute_change_propagation.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-2412c2cb84af8013 / required_components = sorted(resolved)
+  - 来源：`tools/operations/compute_change_propagation.py`
+  - 依赖：—；被引用：—
+- [res = self._validate(artifact=bad)](../../../function-os-candidate/v0.2/tests/test_n7_robust.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-cc587c3992d6f8fb / res = self._validate(artifact=bad)
+  - 来源：`function-os-candidate/v0.2/tests/test_n7_robust.py`
+  - 依赖：—；被引用：—
+- [res_with_ev = self.val.validate(self.spec, self.rep, self.artifact, self.trace,](../../../function-os-candidate/v0.2/tests/test_n7_robust.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-c63699ba0a030118 / res_with_ev = self.val.validate(self.spec, self.rep, self.artifact, self.trace,
+  - 来源：`function-os-candidate/v0.2/tests/test_n7_robust.py`
+  - 依赖：—；被引用：—
+- [Reserve pilots & next evidence priorities](../../../evidence-program/runs/IGNITION-EVIDENCE-PILOT-R1-CROSSREF-DOI-VERIFICATION/RESULT.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-f12f5ac91917ca1e / Reserve pilots & next evidence priorities
+  - 来源：`evidence-program/runs/IGNITION-EVIDENCE-PILOT-R1-CROSSREF-DOI-VERIFICATION/RESULT.md`
+  - 依赖：—；被引用：—
+- [residue = plan.get("unresolved_residue", \[\])](../../../tools/operations/validate_incremental_execution.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-d6973d6999d45153 / residue = plan.get("unresolved_residue", \[\])
+  - 来源：`tools/operations/validate_incremental_execution.py`
+  - 依赖：—；被引用：—
+- [residue.append({"type": "explicit_seed_evidence_invalid_path", "component_id": seed_id,](../../../tools/operations/compute_change_propagation.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-d0662581bc831372 / residue.append({"type": "explicit_seed_evidence_invalid_path", "component_id": seed_id,
+  - 来源：`tools/operations/compute_change_propagation.py`
+  - 依赖：—；被引用：—
+- [residue.append({"type": "explicit_seed_evidence_outside_repo", "component_id": seed_id,](../../../tools/operations/compute_change_propagation.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-814d880997cfca05 / residue.append({"type": "explicit_seed_evidence_outside_repo", "component_id": seed_id,
+  - 来源：`tools/operations/compute_change_propagation.py`
+  - 依赖：—；被引用：—
+- [resolve_actor({"actor_ref": "org:missing/unresolved"}, "mutation probe")](../../../tools/operations/run_stage_snapshot_responsibility_cases.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-f14c2be4a15a9b30 / resolve_actor({"actor_ref": "org:missing/unresolved"}, "mutation probe")
+  - 来源：`tools/operations/run_stage_snapshot_responsibility_cases.py`
+  - 依赖：—；被引用：—
+- [resolved = ((ROOT / path).parent / target).resolve()](../../../tools/governance/validate_human_visibility.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-6f8bd12d7ba35556 / resolved = ((ROOT / path).parent / target).resolve()
+  - 来源：`tools/governance/validate_human_visibility.py`
+  - 依赖：—；被引用：—
+- [resolved = (root / raw).resolve()](../../../tools/operations/run_incremental_execution.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-cdcd9b0989c0ebac / resolved = (root / raw).resolve()
+  - 来源：`tools/operations/run_incremental_execution.py`
+  - 依赖：—；被引用：—
+- [resolved = (source.parent / target).resolve()](../../../tools/governance/validate_knowledge_experience.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-7f252eaad37569ef / resolved = (source.parent / target).resolve()
+  - 来源：`tools/governance/validate_knowledge_experience.py`
+  - 依赖：—；被引用：—
+- [resolved = (sym_dir / target).resolve()](../../../tools/operations/compute_change_propagation.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-5d3c0995bd6cb328 / resolved = (sym_dir / target).resolve()
+  - 来源：`tools/operations/compute_change_propagation.py`
+  - 依赖：—；被引用：—
+- [resolved = \[r for r in registry if r.get("resolution_status") in ("FULLTEXT_REVIEWED", "RESOLVED_EXTRACTED")\]](../../../data/external-research/121-fulltext-resolver/121-validator.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-240b4f7fef172d50 / resolved = \[r for r in registry if r.get("resolution_status") in ("FULLTEXT_REVIEWED", "RESOLVED_EXTRACTED")\]
+  - 来源：`data/external-research/121-fulltext-resolver/121-validator.py`
+  - 依赖：—；被引用：—
+- [resolved = path.resolve()](../../../tools/operations/run_incremental_execution.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-8ad1abd45b1e19af / resolved = path.resolve()
+  - 来源：`tools/operations/run_incremental_execution.py`
+  - 依赖：—；被引用：—
+- [resolved = resolve_link(current, target)](../../../tools/governance/validate_knowledge_experience.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-3c20f127f3c8c5d8 / resolved = resolve_link(current, target)
+  - 来源：`tools/governance/validate_knowledge_experience.py`
+  - 依赖：—；被引用：—
+- [resolved = set(seed_components)](../../../tools/operations/compute_change_propagation.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-c5aafb8971710a83 / resolved = set(seed_components)
+  - 来源：`tools/operations/compute_change_propagation.py`
+  - 依赖：—；被引用：—
+- [Resolved canonical components:](../../../templates/operations/task-command-template.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-5db4ff32ca70cae4 / Resolved canonical components:
+  - 来源：`templates/operations/task-command-template.md`
+  - 依赖：—；被引用：—
+- [Resolved components and typed path IDs:](../../../templates/operations/execution-result-template.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-531b249f1b75f72e / Resolved components and typed path IDs:
+  - 来源：`templates/operations/execution-result-template.md`
+  - 依赖：—；被引用：—
+- [Resolved components: `12`](../../../reports/operations/IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-GATE-NARROW-REPAIR-R1-20260726-change-propagation-impact.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-e5532e078cf44409 / Resolved components: `12`
+  - 来源：`reports/operations/IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-GATE-NARROW-REPAIR-R1-20260726-change-propagation-impact.md`
+  - 依赖：—；被引用：—
+- [Resolved components: `16`](../../../reports/operations/IGNITION-ITERATION-METHOD-1.4-change-propagation-impact.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-1feb5fda086a38af / Resolved components: `16`
+  - 来源：`reports/operations/IGNITION-ITERATION-METHOD-1.4-change-propagation-impact.md`
+  - 依赖：—；被引用：—
+- [Resolved components: `19`](../../../data/operations/propagation/121Q32-impact-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-bb1e1919f10652b8 / Resolved components: `19`
+  - 来源：`data/operations/propagation/121Q32-impact-report.md`
+  - 依赖：—；被引用：—
+- [Resolved components: `27`](../../../data/operations/propagation/121Q33-impact-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-b6cb606c136e50cd / Resolved components: `27`
+  - 来源：`data/operations/propagation/121Q33-impact-report.md`
+  - 依赖：—；被引用：—
+- [Resolved function for N5 execution](../../../function-os-candidate/v0.2/schemas/n3-compiler-schema.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-08ed8d3d5e319714 / Resolved function for N5 execution
+  - 来源：`function-os-candidate/v0.2/schemas/n3-compiler-schema.json`
+  - 依赖：—；被引用：—
+- [resolved, typed_paths, iterations, cycle_residue = traverse_fixpoint(seed_components, topology_doc, dimensions, classifi](../../../tools/operations/compute_change_propagation.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-7a07f4279b6dc621 / resolved, typed_paths, iterations, cycle_residue = traverse_fixpoint(seed_components, topology_doc, dimensions, classifi
+  - 来源：`tools/operations/compute_change_propagation.py`
+  - 依赖：—；被引用：—
+- [resolved.add(relation\["target"\])](../../../tools/operations/compute_change_propagation.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-99c8fce12d591f42 / resolved.add(relation\["target"\])
+  - 来源：`tools/operations/compute_change_propagation.py`
+  - 依赖：—；被引用：—
+- [resolved.relative_to(ROOT.resolve())](../../../tools/governance/validate_knowledge_experience.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-9c616ae893ad350a / resolved.relative_to(ROOT.resolve())
+  - 来源：`tools/governance/validate_knowledge_experience.py`
+  - 依赖：—；被引用：—
+- [resolved.update(hits)](../../../tools/operations/compute_change_propagation.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-af5f5398c39970d2 / resolved.update(hits)
+  - 来源：`tools/operations/compute_change_propagation.py`
+  - 依赖：—；被引用：—
+- [resolved: set\[str\] = set()](../../../tools/operations/compute_change_propagation.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-3a4e9ea687d725c5 / resolved: set\[str\] = set()
+  - 来源：`tools/operations/compute_change_propagation.py`
+  - 依赖：—；被引用：—
+- [result = interp.execute(artifact, {'x': -1, 'y': 7})](../../../function-os-candidate/v0.2/tests/test_integration_full_chain.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-c8fac79c1fa2f55d / result = interp.execute(artifact, {'x': -1, 'y': 7})
+  - 来源：`function-os-candidate/v0.2/tests/test_integration_full_chain.py`
+  - 依赖：—；被引用：—
+- [result = interp.execute(artifact, {'x': 3, 'y': 7})](../../../function-os-candidate/v0.2/tests/test_integration_full_chain.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-791015eec848ffa4 / result = interp.execute(artifact, {'x': 3, 'y': 7})
+  - 来源：`function-os-candidate/v0.2/tests/test_integration_full_chain.py`
+  - 依赖：—；被引用：—
+- [result = self.verifier.verify(artifact)](../../../function-os-candidate/v0.2/tests/test_n1_through_n4.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-855c8e70355b5ff7 / result = self.verifier.verify(artifact)
+  - 来源：`function-os-candidate/v0.2/tests/test_n1_through_n4.py`
+  - 依赖：—；被引用：—
+- [result = validate_registry(registry, facts)](../../../tools/operations/stage_snapshot_contract.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-baaf9ab298ea706c / result = validate_registry(registry, facts)
+  - 来源：`tools/operations/stage_snapshot_contract.py`
+  - 依赖：—；被引用：—
+- [result\["cross_domain_isomorphism_gate"\] = "FAIL"](../../../tools/foundation/validate_claim_governance.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-236482936692603b / result\["cross_domain_isomorphism_gate"\] = "FAIL"
+  - 来源：`tools/foundation/validate_claim_governance.py`
+  - 依赖：—；被引用：—
+- [result\["internal_test_truth_gate"\] = "FAIL"](../../../tools/foundation/validate_claim_governance.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-1e8cc5589fb3dd23 / result\["internal_test_truth_gate"\] = "FAIL"
+  - 来源：`tools/foundation/validate_claim_governance.py`
+  - 依赖：—；被引用：—
+- [result\["universal_quantifier_gate"\] = "REQUIRES_HUMAN_REVIEW"](../../../tools/foundation/validate_claim_governance.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-b9357662d131eba4 / result\["universal_quantifier_gate"\] = "REQUIRES_HUMAN_REVIEW"
+  - 来源：`tools/foundation/validate_claim_governance.py`
+  - 依赖：—；被引用：—
+- [results = validate(source_pack, coverage_matrix, evidence_cards,](../../../data/external-research/106-105-correction/106-validator.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-61271b82072193b8 / results = validate(source_pack, coverage_matrix, evidence_cards,
+  - 来源：`data/external-research/106-105-correction/106-validator.py`
+  - 依赖：—；被引用：—
+- [results.append({"check": "artifact_id_format", "status": "FAIL",](../../../function-os-candidate/v0.1/function_os/n4_artifact_packager.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-4ba83947eb97a759 / results.append({"check": "artifact_id_format", "status": "FAIL",
+  - 来源：`function-os-candidate/v0.1/function_os/n4_artifact_packager.py`
+  - 依赖：—；被引用：—
+- [results.append({"check": "artifact_id_format", "status": "PASS"})](../../../function-os-candidate/v0.1/function_os/n4_artifact_packager.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-65ed4eb60ce79f2f / results.append({"check": "artifact_id_format", "status": "PASS"})
+  - 来源：`function-os-candidate/v0.1/function_os/n4_artifact_packager.py`
+  - 依赖：—；被引用：—
+- [results\["checks"\].append(f"evidence cards: {len(evidence)}")](../../../data/external-research/121-fulltext-resolver/121-validator.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-25b1f8f4fa33388d / results\["checks"\].append(f"evidence cards: {len(evidence)}")
+  - 来源：`data/external-research/121-fulltext-resolver/121-validator.py`
+  - 依赖：—；被引用：—
+- [results\["checks"\].append(f"evidence sha256 ok: {c\['source_id'\]}")](../../../data/external-research/121-fulltext-resolver/121-validator.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-5ec85e132486f4c5 / results\["checks"\].append(f"evidence sha256 ok: {c\['source_id'\]}")
+  - 来源：`data/external-research/121-fulltext-resolver/121-validator.py`
+  - 依赖：—；被引用：—
+- [results\["checks"\].append(f"resolved entries: {len(resolved)}")](../../../data/external-research/121-fulltext-resolver/121-validator.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-5325062f45b8718f / results\["checks"\].append(f"resolved entries: {len(resolved)}")
+  - 来源：`data/external-research/121-fulltext-resolver/121-validator.py`
+  - 依赖：—；被引用：—
+- [results\["checks"\]\["all_dois_verified"\] = {](../../../data/external-research/105-intervention-control/105-evidence-validator.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-6b84a34772c9028d / results\["checks"\]\["all_dois_verified"\] = {
+  - 来源：`data/external-research/105-intervention-control/105-evidence-validator.py`
+  - 依赖：—；被引用：—
+- [results\["checks"\]\["evidence_tier_distribution"\] = {](../../../data/external-research/105-intervention-control/105-evidence-validator.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-06d98105f14f11e2 / results\["checks"\]\["evidence_tier_distribution"\] = {
+  - 来源：`data/external-research/105-intervention-control/105-evidence-validator.py`
+  - 依赖：—；被引用：—
+- [results\["errors"\].append("evidence cards empty or missing")](../../../data/external-research/121-fulltext-resolver/121-validator.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-cdeb99cfe96034f7 / results\["errors"\].append("evidence cards empty or missing")
+  - 来源：`data/external-research/121-fulltext-resolver/121-validator.py`
+  - 依赖：—；被引用：—
+- [results\["errors"\].append(f"evidence cache missing: {c\['source_id'\]}")](../../../data/external-research/121-fulltext-resolver/121-validator.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-f273329d2cf585d2 / results\["errors"\].append(f"evidence cache missing: {c\['source_id'\]}")
+  - 来源：`data/external-research/121-fulltext-resolver/121-validator.py`
+  - 依赖：—；被引用：—
+- [results\["errors"\].append(f"evidence card not FULLTEXT_REVIEWED: {c\['source_id'\]}")](../../../data/external-research/121-fulltext-resolver/121-validator.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-c1297df4c30d7c32 / results\["errors"\].append(f"evidence card not FULLTEXT_REVIEWED: {c\['source_id'\]}")
+  - 来源：`data/external-research/121-fulltext-resolver/121-validator.py`
+  - 依赖：—；被引用：—
+- [results\["errors"\].append(f"evidence sha256 mismatch: {c\['source_id'\]}")](../../../data/external-research/121-fulltext-resolver/121-validator.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-533eec076904bf10 / results\["errors"\].append(f"evidence sha256 mismatch: {c\['source_id'\]}")
+  - 来源：`data/external-research/121-fulltext-resolver/121-validator.py`
+  - 依赖：—；被引用：—
 - [resume rule: process only `PENDING` or `IN_PROGRESS_STALE`; never overwrite an unchanged accepted review](../../../reports/foundation-architecture/080-resume-instructions-20260713.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-564b3b1d26e60848 / resume rule: process only `PENDING` or `IN_PROGRESS_STALE`; never overwrite an unchanged accepted review
@@ -249,6 +699,16 @@
   - 可搜索名称：NFC-82ce527e73551d79 / rows.append({"entity_key":f"evidence:{x\['id'\]}","id":x\["id"\],"case_id":x\["id"\],"asset_kind":"candidate_case","title":x.g
   - 来源：`tools/foundation/migrate_legacy.py`
   - 依赖：—；被引用：—
+- [run: python -m pytest evidence-program/tests/ -q](../../../.github/workflows/evidence-program-validation.yml)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-22c7fec7422b2cb5 / run: python -m pytest evidence-program/tests/ -q
+  - 来源：`.github/workflows/evidence-program-validation.yml`
+  - 依赖：—；被引用：—
+- [run: python evidence-program/tools/validate_evidence_program.py --root evidence-program](../../../.github/workflows/evidence-program-validation.yml)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-c7d44ba537f6405e / run: python evidence-program/tools/validate_evidence_program.py --root evidence-program
+  - 来源：`.github/workflows/evidence-program-validation.yml`
+  - 依赖：—；被引用：—
 - [s.create({"function_id": "FN-20260715-0001", "revision": 1, "spec_hash": sh, "artifact_hash": ah, "compiler_version": "0](../../../function-os-candidate/v0.1/tests/test_n9_registry.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-a9835210376a6125 / s.create({"function_id": "FN-20260715-0001", "revision": 1, "spec_hash": sh, "artifact_hash": ah, "compiler_version": "0
@@ -429,6 +889,11 @@
   - 可搜索名称：NFC-4b6b46a0409843be / scope="MF-0000 internal suboperator only; not an external truth predicate",
   - 来源：`tools/foundation/build_080_queue.py`
   - 依赖：—；被引用：—
+- [Scoring method (documented; numeric score is NOT truth — §4)](../../../evidence-program/registry/candidate-portfolio.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a3103ffbcde03e60 / Scoring method (documented; numeric score is NOT truth — §4)
+  - 来源：`evidence-program/registry/candidate-portfolio.md`
+  - 依赖：—；被引用：—
 - [seal were validated. It matches the `--era-ref` used by CI's Foundation](../../../tests/test_change_propagation.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-20b4ec0f16f99766 / seal were validated. It matches the `--era-ref` used by CI's Foundation
@@ -503,6 +968,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-ca1c324c87d5a054 / self-contained max adjudication packages have been prepared for 084 processing. Each package contains all necessary info
   - 来源：`reports/foundation-architecture/083-max-queue-readiness.md`
+  - 依赖：—；被引用：—
+- [Self-contained: standard library only. Validates every Evidence Program](../../../evidence-program/tools/validate_evidence_program.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-cc87d6f453a4a9b4 / Self-contained: standard library only. Validates every Evidence Program
+  - 来源：`evidence-program/tools/validate_evidence_program.py`
   - 依赖：—；被引用：—
 - [self.artifact = self.pack.package(self.comp.compile(spec, rep), spec, rep)](../../../function-os-candidate/v0.2/tests/test_n6_robust.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
@@ -889,6 +1359,11 @@
   - 可搜索名称：NFC-439cb7cc6df9b861 / Source and merged checkpoints are concrete artifacts, while immutable paper-run hashes, environments, mask seeds and eva
   - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
   - 依赖：—；被引用：—
+- [source records, each asserting `crossref_verified: true` with a recorded title and year. The claim had](../../../evidence-program/runs/IGNITION-EVIDENCE-PILOT-R1-CROSSREF-DOI-VERIFICATION/RESULT.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-95079c98115c0f5c / source records, each asserting `crossref_verified: true` with a recorded title and year. The claim had
+  - 来源：`evidence-program/runs/IGNITION-EVIDENCE-PILOT-R1-CROSSREF-DOI-VERIFICATION/RESULT.md`
+  - 依赖：—；被引用：—
 - [Source text is not independently pinned (OFFICIAL_TEXT_NOT_VERIFIED /](../../../tools/governance/fail_closed_publication_gate.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-7e3e05d901c7d6a7 / Source text is not independently pinned (OFFICIAL_TEXT_NOT_VERIFIED /
@@ -1119,6 +1594,26 @@
   - 可搜索名称：NFC-74e8f82f9a5de742 / Successful F7 checking yields ordinary F# interfaces and code with static contract evidence, though immutable packaging
   - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
   - 依赖：—；被引用：—
+- [summary\["claimed_verified_records"\] = claimed_n](../../../evidence-program/tools/run_crossref_verification.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-c156c9ba1bd342ee / summary\["claimed_verified_records"\] = claimed_n
+  - 来源：`evidence-program/tools/run_crossref_verification.py`
+  - 依赖：—；被引用：—
+- [summary\["resolution_rate"\] = round(summary\["resolved_ok"\] / len(records), 4)](../../../evidence-program/tools/run_crossref_verification.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-c881632ea9a38c3b / summary\["resolution_rate"\] = round(summary\["resolved_ok"\] / len(records), 4)
+  - 来源：`evidence-program/tools/run_crossref_verification.py`
+  - 依赖：—；被引用：—
+- [summary\["resolved_ok"\] += 1](../../../evidence-program/tools/run_crossref_verification.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-8544a380109775cb / summary\["resolved_ok"\] += 1
+  - 来源：`evidence-program/tools/run_crossref_verification.py`
+  - 依赖：—；被引用：—
+- [summary\["verified_records"\] += 1](../../../evidence-program/tools/run_crossref_verification.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-dd63f27ed277cda4 / summary\["verified_records"\] += 1
+  - 来源：`evidence-program/tools/run_crossref_verification.py`
+  - 依赖：—；被引用：—
 - [Sun et al. corrected exact arXiv v2/NeurIPS AI for Science perspective, all-11-page visual/source review plus source-bin](../../../data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-569baa8d79b8caf1 / Sun et al. corrected exact arXiv v2/NeurIPS AI for Science perspective, all-11-page visual/source review plus source-bin
@@ -1138,6 +1633,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-8222ec5c48bd7f3d / Support is welcome only when it preserves the project's evidence boundaries, criticism channels, and governance independ
   - 来源：`SUPPORT.md`
+  - 依赖：—；被引用：—
+- [Supported** → confirm `METADATA_VERIFIED` for passing entries; positive provenance note.](../../../evidence-program/preregistration/IGNITION-EVIDENCE-PILOT-R1-CROSSREF-DOI-VERIFICATION.protocol.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-b14c226afa52c78d / Supported** → confirm `METADATA_VERIFIED` for passing entries; positive provenance note.
+  - 来源：`evidence-program/preregistration/IGNITION-EVIDENCE-PILOT-R1-CROSSREF-DOI-VERIFICATION.protocol.md`
   - 依赖：—；被引用：—
 - [Surfaces resolved to the Q32 era so the only residue is the genuine cycle.](../../../tests/test_change_propagation.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -1193,6 +1693,11 @@
   - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
   - 可搜索名称：Task 100 — corpus-wide non-function claim adjudication and evidence-lineage closure / 100-nonfunction-claim-evidence-lineage-closure
   - 来源：`reports/foundation-architecture/100-nonfunction-claim-evidence-lineage-closure.md`
+  - 依赖：—；被引用：—
+- [Task 103 证据试点产生的开放问题](../../../RESULTS/OPEN-QUESTIONS.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-4a890abf400eb7bb / Task 103 证据试点产生的开放问题
+  - 来源：`RESULTS/OPEN-QUESTIONS.md`
   - 依赖：—；被引用：—
 - [Task 97 evidence head: `01e18b382259509c5680cd126e82c61a7e861ff3` (78/78 manifest entries replayed)](../../../reports/foundation-architecture/098-claim-governance-implementation.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
@@ -1273,6 +1778,11 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：D9999 / tests/foundation/fixtures/function_asset_discovery_v2.txt / D9999
   - 来源：`tests/foundation/fixtures/function_asset_discovery_v2.txt`
+  - 依赖：—；被引用：—
+- [tests/test_evidence_program.py # regression fixtures exercising every schema + integrity check](../../../evidence-program/README.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-90f4598ab0dec3cc / tests/test_evidence_program.py # regression fixtures exercising every schema + integrity check
+  - 来源：`evidence-program/README.md`
   - 依赖：—；被引用：—
 - [That input shows recursive redefinition of time, geography, photography and goodbye; a manifest topic of stopping public](../../../reports/operations/121Q28R-cognitive-level-leap-writing-method-audit.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
@@ -1368,6 +1878,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-c262003c5f21812b / The current architecture is strong at separating truth-related layers and execution surfaces. It still lacks two cross-l
   - 来源：`reports/architecture/121Q12-baseline-audit.md`
+  - 依赖：—；被引用：—
+- [the deviation log with a timestamp — it never overwrites this plan (§5.10).](../../../evidence-program/preregistration/IGNITION-EVIDENCE-PILOT-R1-CROSSREF-DOI-VERIFICATION.protocol.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-3b6a459f3935eebc / the deviation log with a timestamp — it never overwrites this plan (§5.10).
+  - 来源：`evidence-program/preregistration/IGNITION-EVIDENCE-PILOT-R1-CROSSREF-DOI-VERIFICATION.protocol.md`
   - 依赖：—；被引用：—
 - [The displayed implication chain does not entail that Omega=1 is impossible unless an additional physical-existence premi](../../../data/foundation/adjudications/core-kernel.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
@@ -1578,6 +2093,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-da998873679354c8 / The publication states are `UNPUBLISHED`, `PR_VISIBLE`, `PUBLISHED_SNAPSHOT`, `SUPERSEDED_SNAPSHOT`, `WITHDRAWN_SNAPSHOT
   - 来源：`ITERATION.md`
+  - 依赖：—；被引用：—
+- [The registry's own `crossref_verified: true`, `crossref_title`, `crossref_year`](../../../evidence-program/preregistration/IGNITION-EVIDENCE-PILOT-R1-CROSSREF-DOI-VERIFICATION.protocol.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-60c8e4b003dc6024 / The registry's own `crossref_verified: true`, `crossref_title`, `crossref_year`
+  - 来源：`evidence-program/preregistration/IGNITION-EVIDENCE-PILOT-R1-CROSSREF-DOI-VERIFICATION.protocol.md`
   - 依赖：—；被引用：—
 - [The repair makes no completion, universal or capability claim.](../../../data/operations/propagation/IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-GATE-NARROW-REPAIR-R1-20260726-closure.json)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -1983,524 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-ffc3776d7ad7d416 / title: "乘法临界漂移验证 — 改善0.3→0.5（+67%）乘积+67%，改善0.8→1.0（+25%）乘积+25%，改善最接近零的因子效果更大 / 乘法临界漂移验证 - 改善0.3 -> 0.5(+67%)乘积+67%, 改善0.
   - 来源：`统一案例总表/0332-C-332-乘法临界漂移验证 — 改善0.3→0.5(+67%)乘积+67%,改善0.8→1.0(+25%)乘积+25%,改善最接近零的因子效果更大.md`
-  - 依赖：—；被引用：—
-- [title: "代际逃逸死锁验证"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0577-C-582-%E4%BB%A3%E9%99%85%E9%80%83%E9%80%B8%E6%AD%BB%E9%94%81%E9%AA%8C%E8%AF%81.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-db1f6451b20136c9 / title: "代际逃逸死锁验证"
-  - 来源：`统一案例总表/0577-C-582-代际逃逸死锁验证.md`
-  - 依赖：—；被引用：—
-- [title: "仲裁模型升级自举循环验证"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0600-C-605-%E4%BB%B2%E8%A3%81%E6%A8%A1%E5%9E%8B%E5%8D%87%E7%BA%A7%E8%87%AA%E4%B8%BE%E5%BE%AA%E7%8E%AF%E9%AA%8C%E8%AF%81.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-81226052d444e26a / title: "仲裁模型升级自举循环验证"
-  - 来源：`统一案例总表/0600-C-605-仲裁模型升级自举循环验证.md`
-  - 依赖：—；被引用：—
-- [title: "仲裁模型最弱维度锁死验证"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0595-C-600-%E4%BB%B2%E8%A3%81%E6%A8%A1%E5%9E%8B%E6%9C%80%E5%BC%B1%E7%BB%B4%E5%BA%A6%E9%94%81%E6%AD%BB%E9%AA%8C%E8%AF%81.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-edbe762c39125790 / title: "仲裁模型最弱维度锁死验证"
-  - 来源：`统一案例总表/0595-C-600-仲裁模型最弱维度锁死验证.md`
-  - 依赖：—；被引用：—
-- [title: "仲裁策略验证"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0602-C-607-%E4%BB%B2%E8%A3%81%E7%AD%96%E7%95%A5%E9%AA%8C%E8%AF%81.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-e767672106e4d31d / title: "仲裁策略验证"
-  - 来源：`统一案例总表/0602-C-607-仲裁策略验证.md`
-  - 依赖：—；被引用：—
-- [title: "信息自聚合场验证"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0587-C-592-%E4%BF%A1%E6%81%AF%E8%87%AA%E8%81%9A%E5%90%88%E5%9C%BA%E9%AA%8C%E8%AF%81.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-6c194088d304035b / title: "信息自聚合场验证"
-  - 来源：`统一案例总表/0587-C-592-信息自聚合场验证.md`
-  - 依赖：—；被引用：—
-- [title: "修复=降Γ验证 — 两种修复：降门槛（ΔθC=-0.3→内生Γ降0.4）vs 减遮蔽（ΔH=-0.3→环境Γ降0.3）。联合修复Γ降0.7，A_Fisher恢复速度是单一路径的2.3倍 / 修复=降Γ验证 - 两种修复: 降](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0490-C-492-%E4%BF%AE%E5%A4%8D%3D%E9%99%8D%CE%93%E9%AA%8C%E8%AF%81%20%E2%80%94%20%E4%B8%A4%E7%A7%8D%E4%BF%AE%E5%A4%8D-%E9%99%8D%E9%97%A8%E6%A7%9B%28%CE%94%CE%B8C%3D-0.3%E2%86%92%E5%86%85%E7%94%9F%CE%93%E9%99%8D0.4%29vs%20%E5%87%8F%E9%81%AE%E8%94%BD%28%CE%94H%3D-0.3%E2%86%92%E7%8E%AF%E5%A2%83%CE%93%E9%99%8D0.3%29%E3%80%82%E8%81%94%E5%90%88%E4%BF%AE%E5%A4%8D%CE%93%E9%99%8D0.7%2C.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-570f97e0e462e615 / title: "修复=降Γ验证 — 两种修复：降门槛（ΔθC=-0.3→内生Γ降0.4）vs 减遮蔽（ΔH=-0.3→环境Γ降0.3）。联合修复Γ降0.7，A_Fisher恢复速度是单一路径的2.3倍 / 修复=降Γ验证 - 两种修复: 降
-  - 来源：`统一案例总表/0490-C-492-修复=降Γ验证 — 两种修复-降门槛(ΔθC=-0.3→内生Γ降0.4)vs 减遮蔽(ΔH=-0.3→环境Γ降0.3)。联合修复Γ降0.7,.md`
-  - 依赖：—；被引用：—
-- [title: "倒U型统一验证 — D123/D142/D133/D135/D139五个最优值都是f₁(↑)×f₂(↓)的极值点 / 倒U型统一验证 - D123/D142/D133/D135/D139五个最优值都是f₁(↑) x f₂(↓](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0336-C-337-%E5%80%92U%E5%9E%8B%E7%BB%9F%E4%B8%80%E9%AA%8C%E8%AF%81%20%E2%80%94%20D123.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-079d3d9e299abe17 / title: "倒U型统一验证 — D123/D142/D133/D135/D139五个最优值都是f₁(↑)×f₂(↓)的极值点 / 倒U型统一验证 - D123/D142/D133/D135/D139五个最优值都是f₁(↑) x f₂(↓
-  - 来源：`统一案例总表/0336-C-337-倒U型统一验证 — D123.md`
-  - 依赖：D123, D133, D135, D139；被引用：—
-- [title: "候选者空间验证"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0610-C-615-%E5%80%99%E9%80%89%E8%80%85%E7%A9%BA%E9%97%B4%E9%AA%8C%E8%AF%81.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-d6b100b61746f4c0 / title: "候选者空间验证"
-  - 来源：`统一案例总表/0610-C-615-候选者空间验证.md`
-  - 依赖：—；被引用：—
-- [title: "免疫-感染阈值验证"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0585-C-590-%E5%85%8D%E7%96%AB-%E6%84%9F%E6%9F%93%E9%98%88%E5%80%BC%E9%AA%8C%E8%AF%81.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-22cb255161f29835 / title: "免疫-感染阈值验证"
-  - 来源：`统一案例总表/0585-C-590-免疫-感染阈值验证.md`
-  - 依赖：—；被引用：—
-- [title: "公众号碰撞 × 点火框架验证"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0656-C-661-%E5%85%AC%E4%BC%97%E5%8F%B7%E7%A2%B0%E6%92%9E%20%C3%97%20%E7%82%B9%E7%81%AB%E6%A1%86%E6%9E%B6%E9%AA%8C%E8%AF%81.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-864aa9b9a1a51c85 / title: "公众号碰撞 × 点火框架验证"
-  - 来源：`统一案例总表/0656-C-661-公众号碰撞 × 点火框架验证.md`
-  - 依赖：—；被引用：—
-- [title: "内源输出再输入污染验证"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0581-C-586-%E5%86%85%E6%BA%90%E8%BE%93%E5%87%BA%E5%86%8D%E8%BE%93%E5%85%A5%E6%B1%A1%E6%9F%93%E9%AA%8C%E8%AF%81.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-fdf6ec672bf0bd5f / title: "内源输出再输入污染验证"
-  - 来源：`统一案例总表/0581-C-586-内源输出再输入污染验证.md`
-  - 依赖：—；被引用：—
-- [title: "刘怡国际参考笔记碰撞验证"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0661-C-666-%E5%88%98%E6%80%A1%E5%9B%BD%E9%99%85%E5%8F%82%E8%80%83%E7%AC%94%E8%AE%B0%E7%A2%B0%E6%92%9E%E9%AA%8C%E8%AF%81.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-c009dd369ffd2374 / title: "刘怡国际参考笔记碰撞验证"
-  - 来源：`统一案例总表/0661-C-666-刘怡国际参考笔记碰撞验证.md`
-  - 依赖：—；被引用：—
-- [title: "单体模型到模型网络相变验证"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0593-C-598-%E5%8D%95%E4%BD%93%E6%A8%A1%E5%9E%8B%E5%88%B0%E6%A8%A1%E5%9E%8B%E7%BD%91%E7%BB%9C%E7%9B%B8%E5%8F%98%E9%AA%8C%E8%AF%81.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-8f51d4234e79b432 / title: "单体模型到模型网络相变验证"
-  - 来源：`统一案例总表/0593-C-598-单体模型到模型网络相变验证.md`
-  - 依赖：—；被引用：—
-- [title: "厕所空间验证"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0612-C-617-%E5%8E%95%E6%89%80%E7%A9%BA%E9%97%B4%E9%AA%8C%E8%AF%81.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-38ef8ac5470d663c / title: "厕所空间验证"
-  - 来源：`统一案例总表/0612-C-617-厕所空间验证.md`
-  - 依赖：—；被引用：—
-- [title: "同质组合与异质组合权衡验证"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0603-C-608-%E5%90%8C%E8%B4%A8%E7%BB%84%E5%90%88%E4%B8%8E%E5%BC%82%E8%B4%A8%E7%BB%84%E5%90%88%E6%9D%83%E8%A1%A1%E9%AA%8C%E8%AF%81.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-ce13e115fad93b42 / title: "同质组合与异质组合权衡验证"
-  - 来源：`统一案例总表/0603-C-608-同质组合与异质组合权衡验证.md`
-  - 依赖：—；被引用：—
-- [title: "吴军财富规划笔记碰撞验证"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0662-C-667-%E5%90%B4%E5%86%9B%E8%B4%A2%E5%AF%8C%E8%A7%84%E5%88%92%E7%AC%94%E8%AE%B0%E7%A2%B0%E6%92%9E%E9%AA%8C%E8%AF%81.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-99600560b9895245 / title: "吴军财富规划笔记碰撞验证"
-  - 来源：`统一案例总表/0662-C-667-吴军财富规划笔记碰撞验证.md`
-  - 依赖：—；被引用：—
-- [title: "四卡点统一根源"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0231-C-231-%E5%9B%9B%E5%8D%A1%E7%82%B9%E7%BB%9F%E4%B8%80%E6%A0%B9%E6%BA%90.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-3dbd447810046fbe / title: "四卡点统一根源"
-  - 来源：`统一案例总表/0231-C-231-四卡点统一根源.md`
-  - 依赖：—；被引用：—
-- [title: "四方向联合碰撞验证"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0657-C-662-%E5%9B%9B%E6%96%B9%E5%90%91%E8%81%94%E5%90%88%E7%A2%B0%E6%92%9E%E9%AA%8C%E8%AF%81.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-72884acc1466c4c4 / title: "四方向联合碰撞验证"
-  - 来源：`统一案例总表/0657-C-662-四方向联合碰撞验证.md`
-  - 依赖：—；被引用：—
-- [title: "四阶段严格串行验证 — 不能跳过Stage2直接到Stage3：rcross=0时D84三条路径失效 / 四阶段严格串行验证 - 不能跳过Stage2直接到Stage3: rcross=0时D84三条路径失效"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0307-C-307-%E5%9B%9B%E9%98%B6%E6%AE%B5%E4%B8%A5%E6%A0%BC%E4%B8%B2%E8%A1%8C%E9%AA%8C%E8%AF%81%20%E2%80%94%20%E4%B8%8D%E8%83%BD%E8%B7%B3%E8%BF%87Stage2%E7%9B%B4%E6%8E%A5%E5%88%B0Stage3-rcross%3D0%E6%97%B6D84%E4%B8%89%E6%9D%A1%E8%B7%AF%E5%BE%84%E5%A4%B1%E6%95%88.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-f3253a7598ae9926 / title: "四阶段严格串行验证 — 不能跳过Stage2直接到Stage3：rcross=0时D84三条路径失效 / 四阶段严格串行验证 - 不能跳过Stage2直接到Stage3: rcross=0时D84三条路径失效"
-  - 来源：`统一案例总表/0307-C-307-四阶段严格串行验证 — 不能跳过Stage2直接到Stage3-rcross=0时D84三条路径失效.md`
-  - 依赖：D84；被引用：—
-- [title: "多模型并行/仲裁三域熵统一验证"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0596-C-601-%E5%A4%9A%E6%A8%A1%E5%9E%8B%E5%B9%B6%E8%A1%8C.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-48dd5af6206c4605 / title: "多模型并行/仲裁三域熵统一验证"
-  - 来源：`统一案例总表/0596-C-601-多模型并行.md`
-  - 依赖：—；被引用：—
-- [title: "大数据的泛化相变——μ_data越过Λ_generalization的瞬间泛化能力质变 / 大数据的泛化相变 - - μ_data越过Λ_generalization的瞬间泛化能力质变"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0392-C-393-%E5%A4%A7%E6%95%B0%E6%8D%AE%E7%9A%84%E6%B3%9B%E5%8C%96%E7%9B%B8%E5%8F%98%E2%80%94%E2%80%94%CE%BC_data%E8%B6%8A%E8%BF%87%CE%9B_generalization%E7%9A%84%E7%9E%AC%E9%97%B4%E6%B3%9B%E5%8C%96%E8%83%BD%E5%8A%9B%E8%B4%A8%E5%8F%98.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-0a859de32e7cf69f / title: "大数据的泛化相变——μ_data越过Λ_generalization的瞬间泛化能力质变 / 大数据的泛化相变 - - μ_data越过Λ_generalization的瞬间泛化能力质变"
-  - 来源：`统一案例总表/0392-C-393-大数据的泛化相变——μ_data越过Λ_generalization的瞬间泛化能力质变.md`
-  - 依赖：—；被引用：—
-- [title: "学校教育新剧变笔记碰撞验证"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0664-C-669-%E5%AD%A6%E6%A0%A1%E6%95%99%E8%82%B2%E6%96%B0%E5%89%A7%E5%8F%98%E7%AC%94%E8%AE%B0%E7%A2%B0%E6%92%9E%E9%AA%8C%E8%AF%81.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-c7cd012c64d68d3b / title: "学校教育新剧变笔记碰撞验证"
-  - 来源：`统一案例总表/0664-C-669-学校教育新剧变笔记碰撞验证.md`
-  - 依赖：—；被引用：—
-- [title: "宋莹芳美育笔记碰撞验证"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0663-C-668-%E5%AE%8B%E8%8E%B9%E8%8A%B3%E7%BE%8E%E8%82%B2%E7%AC%94%E8%AE%B0%E7%A2%B0%E6%92%9E%E9%AA%8C%E8%AF%81.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-5958156183331486 / title: "宋莹芳美育笔记碰撞验证"
-  - 来源：`统一案例总表/0663-C-668-宋莹芳美育笔记碰撞验证.md`
-  - 依赖：—；被引用：—
-- [title: "定投=门锁交替律执行（验证D47+D49）"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0167-C-167-%E5%AE%9A%E6%8A%95%3D%E9%97%A8%E9%94%81%E4%BA%A4%E6%9B%BF%E5%BE%8B%E6%89%A7%E8%A1%8C%28%E9%AA%8C%E8%AF%81D47%2BD49%29.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-d3fb1f21f28e79ee / title: "定投=门锁交替律执行（验证D47+D49）"
-  - 来源：`统一案例总表/0167-C-167-定投=门锁交替律执行(验证D47+D49).md`
-  - 依赖：D47, D49；被引用：—
-- [title: "定投P_sustain全局最大值（验证D34） / 定投P_sustain全局最大值(验证D34)"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0163-C-163-%E5%AE%9A%E6%8A%95P_sustain%E5%85%A8%E5%B1%80%E6%9C%80%E5%A4%A7%E5%80%BC%28%E9%AA%8C%E8%AF%81D34%29.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-2815fdb9ce5b52f3 / title: "定投P_sustain全局最大值（验证D34） / 定投P_sustain全局最大值(验证D34)"
-  - 来源：`统一案例总表/0163-C-163-定投P_sustain全局最大值(验证D34).md`
-  - 依赖：D34；被引用：—
-- [title: "定投的结构保守性 — 每月5000，W=10万时f=5%，W=100万时f=0.5%，自动递减永远保守 / 定投的结构保守性 - 每月5000, W=10万时f=5%, W=100万时f=0.5%, 自动递减永远保守"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0329-C-329-%E5%AE%9A%E6%8A%95%E7%9A%84%E7%BB%93%E6%9E%84%E4%BF%9D%E5%AE%88%E6%80%A7%20%E2%80%94%20%E6%AF%8F%E6%9C%885000%2CW%3D10%E4%B8%87%E6%97%B6f%3D5%25%2CW%3D100%E4%B8%87%E6%97%B6f%3D0.5%25%2C%E8%87%AA%E5%8A%A8%E9%80%92%E5%87%8F%E6%B0%B8%E8%BF%9C%E4%BF%9D%E5%AE%88.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-419192e4d06656a8 / title: "定投的结构保守性 — 每月5000，W=10万时f=5%，W=100万时f=0.5%，自动递减永远保守 / 定投的结构保守性 - 每月5000, W=10万时f=5%, W=100万时f=0.5%, 自动递减永远保守"
-  - 来源：`统一案例总表/0329-C-329-定投的结构保守性 — 每月5000,W=10万时f=5%,W=100万时f=0.5%,自动递减永远保守.md`
-  - 依赖：—；被引用：—
-- [title: "密码学碰撞验证案例"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0658-C-663-%E5%AF%86%E7%A0%81%E5%AD%A6%E7%A2%B0%E6%92%9E%E9%AA%8C%E8%AF%81%E6%A1%88%E4%BE%8B.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-3b54e7569bad8c12 / title: "密码学碰撞验证案例"
-  - 来源：`统一案例总表/0658-C-663-密码学碰撞验证案例.md`
-  - 依赖：—；被引用：—
-- [title: "导数连续性×双向动力学验证"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0669-C-674-%E5%AF%BC%E6%95%B0%E8%BF%9E%E7%BB%AD%E6%80%A7%C3%97%E5%8F%8C%E5%90%91%E5%8A%A8%E5%8A%9B%E5%AD%A6%E9%AA%8C%E8%AF%81.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-3618ec3f773d8596 / title: "导数连续性×双向动力学验证"
-  - 来源：`统一案例总表/0669-C-674-导数连续性×双向动力学验证.md`
-  - 依赖：—；被引用：—
-- [title: "小群体资源不易感验证"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0580-C-585-%E5%B0%8F%E7%BE%A4%E4%BD%93%E8%B5%84%E6%BA%90%E4%B8%8D%E6%98%93%E6%84%9F%E9%AA%8C%E8%AF%81.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-036771d26009407c / title: "小群体资源不易感验证"
-  - 来源：`统一案例总表/0580-C-585-小群体资源不易感验证.md`
-  - 依赖：—；被引用：—
-- [title: "小资金恐惧锁定向下螺旋（验证D67）"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0166-C-166-%E5%B0%8F%E8%B5%84%E9%87%91%E6%81%90%E6%83%A7%E9%94%81%E5%AE%9A%E5%90%91%E4%B8%8B%E8%9E%BA%E6%97%8B%28%E9%AA%8C%E8%AF%81D67%29.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-535a743ce27af1a6 / title: "小资金恐惧锁定向下螺旋（验证D67）"
-  - 来源：`统一案例总表/0166-C-166-小资金恐惧锁定向下螺旋(验证D67).md`
-  - 依赖：D67；被引用：—
-- [title: "工具箱空间验证"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0608-C-613-%E5%B7%A5%E5%85%B7%E7%AE%B1%E7%A9%BA%E9%97%B4%E9%AA%8C%E8%AF%81.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-a6cfaf4bd7afa6aa / title: "工具箱空间验证"
-  - 来源：`统一案例总表/0608-C-613-工具箱空间验证.md`
-  - 依赖：—；被引用：—
-- [title: "巴菲特模式的投资域验证 — 定投=巴菲特模式精确执行，三效率乘积最大"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0330-C-330-%E5%B7%B4%E8%8F%B2%E7%89%B9%E6%A8%A1%E5%BC%8F%E7%9A%84%E6%8A%95%E8%B5%84%E5%9F%9F%E9%AA%8C%E8%AF%81%20%E2%80%94%20%E5%AE%9A%E6%8A%95%3D%E5%B7%B4%E8%8F%B2%E7%89%B9%E6%A8%A1%E5%BC%8F%E7%B2%BE%E7%A1%AE%E6%89%A7%E8%A1%8C%2C%E4%B8%89%E6%95%88%E7%8E%87%E4%B9%98%E7%A7%AF%E6%9C%80%E5%A4%A7.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-bbfb6279df2ad272 / title: "巴菲特模式的投资域验证 — 定投=巴菲特模式精确执行，三效率乘积最大"
-  - 来源：`统一案例总表/0330-C-330-巴菲特模式的投资域验证 — 定投=巴菲特模式精确执行,三效率乘积最大.md`
-  - 依赖：—；被引用：—
-- [title: "平台社会极化"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0800-C-0805-%E5%B9%B3%E5%8F%B0%E7%A4%BE%E4%BC%9A%E6%9E%81%E5%8C%96.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-6533075ec6586d05 / title: "平台社会极化"
-  - 来源：`统一案例总表/0800-C-0805-平台社会极化.md`
-  - 依赖：—；被引用：—
-- [title: "度规扰动传播验证 — 组织文化变革：新CEO上任→H从0.8→0.3（遮蔽降低）→经济维度1周内感知→社交维度3周→心理维度8周。传播延迟与d_F/v_max一致 / 度规扰动传播验证 - 组织文化变革: 新CEO上任 ->](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0510-C-515-%E5%BA%A6%E8%A7%84%E6%89%B0%E5%8A%A8%E4%BC%A0%E6%92%AD%E9%AA%8C%E8%AF%81%20%E2%80%94%20%E7%BB%84%E7%BB%87%E6%96%87%E5%8C%96%E5%8F%98%E9%9D%A9-%E6%96%B0CEO%E4%B8%8A%E4%BB%BB%E2%86%92H%E4%BB%8E0.8%E2%86%920.3%28%E9%81%AE%E8%94%BD%E9%99%8D%E4%BD%8E%29%E2%86%92%E7%BB%8F%E6%B5%8E%E7%BB%B4%E5%BA%A61%E5%91%A8%E5%86%85%E6%84%9F%E7%9F%A5%E2%86%92%E7%A4%BE%E4%BA%A4%E7%BB%B4%E5%BA%A63%E5%91%A8%E2%86%92%E5%BF%83%E7%90%86%E7%BB%B4%E5%BA%A68%E5%91%A8%E3%80%82%E4%BC%A0%E6%92%AD%E5%BB%B6%E8%BF%9F%E4%B8%8E.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-d3d3d4733b199a27 / title: "度规扰动传播验证 — 组织文化变革：新CEO上任→H从0.8→0.3（遮蔽降低）→经济维度1周内感知→社交维度3周→心理维度8周。传播延迟与d_F/v_max一致 / 度规扰动传播验证 - 组织文化变革: 新CEO上任 ->
-  - 来源：`统一案例总表/0510-C-515-度规扰动传播验证 — 组织文化变革-新CEO上任→H从0.8→0.3(遮蔽降低)→经济维度1周内感知→社交维度3周→心理维度8周。传播延迟与.md`
-  - 依赖：—；被引用：—
-- [title: "德国社会市场经济"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0024-C-24-%E5%BE%B7%E5%9B%BD%E7%A4%BE%E4%BC%9A%E5%B8%82%E5%9C%BA%E7%BB%8F%E6%B5%8E.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-0ef9b40bed5b7c22 / title: "德国社会市场经济"
-  - 来源：`统一案例总表/0024-C-24-德国社会市场经济.md`
-  - 依赖：—；被引用：—
-- [title: "心率累积耗损验证"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0583-C-588-%E5%BF%83%E7%8E%87%E7%B4%AF%E7%A7%AF%E8%80%97%E6%8D%9F%E9%AA%8C%E8%AF%81.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-cfe4a6e05bbeec27 / title: "心率累积耗损验证"
-  - 来源：`统一案例总表/0583-C-588-心率累积耗损验证.md`
-  - 依赖：—；被引用：—
-- [title: "成本-性能空间拓扑优化验证"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0598-C-603-%E6%88%90%E6%9C%AC-%E6%80%A7%E8%83%BD%E7%A9%BA%E9%97%B4%E6%8B%93%E6%89%91%E4%BC%98%E5%8C%96%E9%AA%8C%E8%AF%81.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-67593b811afd8a75 / title: "成本-性能空间拓扑优化验证"
-  - 来源：`统一案例总表/0598-C-603-成本-性能空间拓扑优化验证.md`
-  - 依赖：—；被引用：—
-- [title: "投资组合空间验证"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0607-C-612-%E6%8A%95%E8%B5%84%E7%BB%84%E5%90%88%E7%A9%BA%E9%97%B4%E9%AA%8C%E8%AF%81.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-608ea2a17acb1da4 / title: "投资组合空间验证"
-  - 来源：`统一案例总表/0607-C-612-投资组合空间验证.md`
-  - 依赖：—；被引用：—
-- [title: "早产5年空间验证"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0615-C-620-%E6%97%A9%E4%BA%A75%E5%B9%B4%E7%A9%BA%E9%97%B4%E9%AA%8C%E8%AF%81.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-4af6498f1f950011 / title: "早产5年空间验证"
-  - 来源：`统一案例总表/0615-C-620-早产5年空间验证.md`
-  - 依赖：—；被引用：—
-- [title: "梦境离线生成整合验证"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0589-C-594-%E6%A2%A6%E5%A2%83%E7%A6%BB%E7%BA%BF%E7%94%9F%E6%88%90%E6%95%B4%E5%90%88%E9%AA%8C%E8%AF%81.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-3adad58260ed074f / title: "梦境离线生成整合验证"
-  - 来源：`统一案例总表/0589-C-594-梦境离线生成整合验证.md`
-  - 依赖：—；被引用：—
-- [title: "模型异质性共享度倒U验证"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0592-C-597-%E6%A8%A1%E5%9E%8B%E5%BC%82%E8%B4%A8%E6%80%A7%E5%85%B1%E4%BA%AB%E5%BA%A6%E5%80%92U%E9%AA%8C%E8%AF%81.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-81012f358fc34ad5 / title: "模型异质性共享度倒U验证"
-  - 来源：`统一案例总表/0592-C-597-模型异质性共享度倒U验证.md`
-  - 依赖：—；被引用：—
-- [title: "涨落-耗散验证 — β=2.5时⟨δG²/G²⟩=0.6×2.5/10×0.5/0.25=0.3（30%波动），β=0.18时波动≈2.2%。刀刃期产出波动是非刀刃期的14倍——一个负涨落就可能穿越门控边界 / 涨落-耗散验](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0455-C-456-%E6%B6%A8%E8%90%BD-%E8%80%97%E6%95%A3%E9%AA%8C%E8%AF%81%20%E2%80%94%20%CE%B2%3D2.5%E6%97%B6%E2%9F%A8%CE%B4G2.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-2e341034d59f4cfe / title: "涨落-耗散验证 — β=2.5时⟨δG²/G²⟩=0.6×2.5/10×0.5/0.25=0.3（30%波动），β=0.18时波动≈2.2%。刀刃期产出波动是非刀刃期的14倍——一个负涨落就可能穿越门控边界 / 涨落-耗散验
-  - 来源：`统一案例总表/0455-C-456-涨落-耗散验证 — β=2.5时⟨δG2.md`
-  - 依赖：—；被引用：—
-- [title: "炒股带宽溢出全领域衰减（验证D63跨域溢出）"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0165-C-165-%E7%82%92%E8%82%A1%E5%B8%A6%E5%AE%BD%E6%BA%A2%E5%87%BA%E5%85%A8%E9%A2%86%E5%9F%9F%E8%A1%B0%E5%87%8F%28%E9%AA%8C%E8%AF%81D63%E8%B7%A8%E5%9F%9F%E6%BA%A2%E5%87%BA%29.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-3227799939079d01 / title: "炒股带宽溢出全领域衰减（验证D63跨域溢出）"
-  - 来源：`统一案例总表/0165-C-165-炒股带宽溢出全领域衰减(验证D63跨域溢出).md`
-  - 依赖：D63；被引用：—
-- [title: "皮屑屏障-微生态失配验证"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0584-C-589-%E7%9A%AE%E5%B1%91%E5%B1%8F%E9%9A%9C-%E5%BE%AE%E7%94%9F%E6%80%81%E5%A4%B1%E9%85%8D%E9%AA%8C%E8%AF%81.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-4279f8609e6ff774 / title: "皮屑屏障-微生态失配验证"
-  - 来源：`统一案例总表/0584-C-589-皮屑屏障-微生态失配验证.md`
-  - 依赖：—；被引用：—
-- [title: "目的地空间验证"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0609-C-614-%E7%9B%AE%E7%9A%84%E5%9C%B0%E7%A9%BA%E9%97%B4%E9%AA%8C%E8%AF%81.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-3e208c5510da2bc6 / title: "目的地空间验证"
-  - 来源：`统一案例总表/0609-C-614-目的地空间验证.md`
-  - 依赖：—；被引用：—
-- [title: "睡眠修复窗口验证"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0582-C-587-%E7%9D%A1%E7%9C%A0%E4%BF%AE%E5%A4%8D%E7%AA%97%E5%8F%A3%E9%AA%8C%E8%AF%81.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-d9a6dc2f60f8bd4a / title: "睡眠修复窗口验证"
-  - 来源：`统一案例总表/0582-C-587-睡眠修复窗口验证.md`
-  - 依赖：—；被引用：—
-- [title: "睡眠清除门控验证"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0575-C-580-%E7%9D%A1%E7%9C%A0%E6%B8%85%E9%99%A4%E9%97%A8%E6%8E%A7%E9%AA%8C%E8%AF%81.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-012376f26a0d20a6 / title: "睡眠清除门控验证"
-  - 来源：`统一案例总表/0575-C-580-睡眠清除门控验证.md`
-  - 依赖：—；被引用：—
-- [title: "短视频奖励压缩验证"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0588-C-593-%E7%9F%AD%E8%A7%86%E9%A2%91%E5%A5%96%E5%8A%B1%E5%8E%8B%E7%BC%A9%E9%AA%8C%E8%AF%81.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-81763535aa5708bb / title: "短视频奖励压缩验证"
-  - 来源：`统一案例总表/0588-C-593-短视频奖励压缩验证.md`
-  - 依赖：—；被引用：—
-- [title: "神经自举唤醒验证"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0586-C-591-%E7%A5%9E%E7%BB%8F%E8%87%AA%E4%B8%BE%E5%94%A4%E9%86%92%E9%AA%8C%E8%AF%81.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-5936b6000ffc2929 / title: "神经自举唤醒验证"
-  - 来源：`统一案例总表/0586-C-591-神经自举唤醒验证.md`
-  - 依赖：—；被引用：—
-- [title: "秦统一"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0003-C-3-%E7%A7%A6%E7%BB%9F%E4%B8%80.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-3ba4acfe5d2dbeec / title: "秦统一"
-  - 来源：`统一案例总表/0003-C-3-秦统一.md`
-  - 依赖：—；被引用：—
-- [title: "笔记格式实验的语义点火"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0711-C-0716-%E7%AC%94%E8%AE%B0%E6%A0%BC%E5%BC%8F%E5%AE%9E%E9%AA%8C%E7%9A%84%E8%AF%AD%E4%B9%89%E7%82%B9%E7%81%AB.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-fa1c2b397ad93c4f / title: "笔记格式实验的语义点火"
-  - 来源：`统一案例总表/0711-C-0716-笔记格式实验的语义点火.md`
-  - 依赖：—；被引用：—
-- [title: "符号AI卡在1/ln — if-then规则=二值门控，σ→0，ι→0，无智能 / 符号AI卡在1/ln - if-then规则=二值门控, σ -> 0, ι -> 0, 无智能"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0472-C-473-%E7%AC%A6%E5%8F%B7AI%E5%8D%A1%E5%9C%A81.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-f421df87ef004b31 / title: "符号AI卡在1/ln — if-then规则=二值门控，σ→0，ι→0，无智能 / 符号AI卡在1/ln - if-then规则=二值门控, σ -> 0, ι -> 0, 无智能"
-  - 来源：`统一案例总表/0472-C-473-符号AI卡在1.md`
-  - 依赖：—；被引用：—
-- [title: "等效原理 — m_i=m_g精确到O((μ/M_Planck)²)，强场失效 / 等效原理 - m_i=m_g精确到O((μ/M_Planck)²), 强场失效"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0531-C-536-%E7%AD%89%E6%95%88%E5%8E%9F%E7%90%86%20%E2%80%94%20m_i%3Dm_g%E7%B2%BE%E7%A1%AE%E5%88%B0O%28%28%CE%BC.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-480e53fc4b79115b / title: "等效原理 — m_i=m_g精确到O((μ/M_Planck)²)，强场失效 / 等效原理 - m_i=m_g精确到O((μ/M_Planck)²), 强场失效"
-  - 来源：`统一案例总表/0531-C-536-等效原理 — m_i=m_g精确到O((μ.md`
-  - 依赖：—；被引用：—
-- [title: "米尼兹统一埃及"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0016-C-16-%E7%B1%B3%E5%B0%BC%E5%85%B9%E7%BB%9F%E4%B8%80%E5%9F%83%E5%8F%8A.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-3c8274cb9269790a / title: "米尼兹统一埃及"
-  - 来源：`统一案例总表/0016-C-16-米尼兹统一埃及.md`
-  - 依赖：—；被引用：—
-- [title: "类II→类I跃迁的D124对接 — 单次P≈0.00075极低，但全球N×T快速增长→Pinevitable→1 / 类II -> 类I跃迁的D124对接 - 单次P≈0.00075极低, 但全球N x T快速增长 -> P](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0309-C-309-%E7%B1%BBII%E2%86%92%E7%B1%BBI%E8%B7%83%E8%BF%81%E7%9A%84D124%E5%AF%B9%E6%8E%A5%20%E2%80%94%20%E5%8D%95%E6%AC%A1P%E2%89%880.00075%E6%9E%81%E4%BD%8E%2C%E4%BD%86%E5%85%A8%E7%90%83N%C3%97T%E5%BF%AB%E9%80%9F%E5%A2%9E%E9%95%BF%E2%86%92Pinevitable%E2%86%921.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-796b7ab0b528feeb / title: "类II→类I跃迁的D124对接 — 单次P≈0.00075极低，但全球N×T快速增长→Pinevitable→1 / 类II -> 类I跃迁的D124对接 - 单次P≈0.00075极低, 但全球N x T快速增长 -> P
-  - 来源：`统一案例总表/0309-C-309-类II→类I跃迁的D124对接 — 单次P≈0.00075极低,但全球N×T快速增长→Pinevitable→1.md`
-  - 依赖：D124；被引用：—
-- [title: "繁衍空间验证"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0613-C-618-%E7%B9%81%E8%A1%8D%E7%A9%BA%E9%97%B4%E9%AA%8C%E8%AF%81.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-98bc04a15d797e0b / title: "繁衍空间验证"
-  - 来源：`统一案例总表/0613-C-618-繁衍空间验证.md`
-  - 依赖：—；被引用：—
-- [title: "经验法则证伪 — 经验说\\"先确保生存再追求增长\\"，但D112说防守强度在接近门槛时反而增大——不是\\"先防守完再进攻\\"，而是\\"防守强度随接近门槛先增后减，进攻是防守衰减的自然结果\\""](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0435-C-436-%E7%BB%8F%E9%AA%8C%E6%B3%95%E5%88%99%E8%AF%81%E4%BC%AA%20%E2%80%94%20%E7%BB%8F%E9%AA%8C%E8%AF%B4-%E5%85%88%E7%A1%AE%E4%BF%9D%E7%94%9F%E5%AD%98%E5%86%8D%E8%BF%BD%E6%B1%82%E5%A2%9E%E9%95%BF-%2C%E4%BD%86D112%E8%AF%B4%E9%98%B2%E5%AE%88%E5%BC%BA%E5%BA%A6%E5%9C%A8%E6%8E%A5%E8%BF%91%E9%97%A8%E6%A7%9B%E6%97%B6%E5%8F%8D%E8%80%8C%E5%A2%9E%E5%A4%A7%E2%80%94%E2%80%94%E4%B8%8D%E6%98%AF-%E5%85%88%E9%98%B2%E5%AE%88%E5%AE%8C%E5%86%8D%E8%BF%9B%E6%94%BB-%2C%E8%80%8C%E6%98%AF-%E9%98%B2%E5%AE%88%E5%BC%BA%E5%BA%A6%E9%9A%8F%E6%8E%A5%E8%BF%91%E9%97%A8.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-e6c2361adf85ff16 / title: "经验法则证伪 — 经验说\\"先确保生存再追求增长\\"，但D112说防守强度在接近门槛时反而增大——不是\\"先防守完再进攻\\"，而是\\"防守强度随接近门槛先增后减，进攻是防守衰减的自然结果\\""
-  - 来源：`统一案例总表/0435-C-436-经验法则证伪 — 经验说-先确保生存再追求增长-,但D112说防守强度在接近门槛时反而增大——不是-先防守完再进攻-,而是-防守强度随接近门.md`
-  - 依赖：D112；被引用：—
-- [title: "缓存倒U型验证 / cache inverted-U curve验证"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0263-C-263-%E7%BC%93%E5%AD%98%E5%80%92U%E5%9E%8B%E9%AA%8C%E8%AF%81.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-fec421fc2ade3010 / title: "缓存倒U型验证 / cache inverted-U curve验证"
-  - 来源：`统一案例总表/0263-C-263-缓存倒U型验证.md`
-  - 依赖：—；被引用：—
-- [title: "罗振宇AI创作笔记碰撞验证"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0660-C-665-%E7%BD%97%E6%8C%AF%E5%AE%87AI%E5%88%9B%E4%BD%9C%E7%AC%94%E8%AE%B0%E7%A2%B0%E6%92%9E%E9%AA%8C%E8%AF%81.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-1d0b52db0f518914 / title: "罗振宇AI创作笔记碰撞验证"
-  - 来源：`统一案例总表/0660-C-665-罗振宇AI创作笔记碰撞验证.md`
-  - 依赖：—；被引用：—
-- [title: "罗森塔尔\\"潜力生\\"标签实验"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0152-C-152-%E7%BD%97%E6%A3%AE%E5%A1%94%E5%B0%94-%E6%BD%9C%E5%8A%9B%E7%94%9F-%E6%A0%87%E7%AD%BE%E5%AE%9E%E9%AA%8C.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-29815476af1216c8 / title: "罗森塔尔\\"潜力生\\"标签实验"
-  - 来源：`统一案例总表/0152-C-152-罗森塔尔-潜力生-标签实验.md`
-  - 依赖：—；被引用：—
-- [title: "置信度级联二级退出权验证"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0601-C-606-%E7%BD%AE%E4%BF%A1%E5%BA%A6%E7%BA%A7%E8%81%94%E4%BA%8C%E7%BA%A7%E9%80%80%E5%87%BA%E6%9D%83%E9%AA%8C%E8%AF%81.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-e2741748798fa049 / title: "置信度级联二级退出权验证"
-  - 来源：`统一案例总表/0601-C-606-置信度级联二级退出权验证.md`
-  - 依赖：—；被引用：—
-- [title: "自举循环的结构保守性 — B(n)越大ΔB/B越小但永远为正，不会爆炸也不会归零"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0335-C-336-%E8%87%AA%E4%B8%BE%E5%BE%AA%E7%8E%AF%E7%9A%84%E7%BB%93%E6%9E%84%E4%BF%9D%E5%AE%88%E6%80%A7%20%E2%80%94%20B%28n%29%E8%B6%8A%E5%A4%A7%CE%94B.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-b25c977f557dc8a7 / title: "自举循环的结构保守性 — B(n)越大ΔB/B越小但永远为正，不会爆炸也不会归零"
-  - 来源：`统一案例总表/0335-C-336-自举循环的结构保守性 — B(n)越大ΔB.md`
-  - 依赖：—；被引用：—
-- [title: "菜品空间验证"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0611-C-616-%E8%8F%9C%E5%93%81%E7%A9%BA%E9%97%B4%E9%AA%8C%E8%AF%81.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-db672625726f9ce3 / title: "菜品空间验证"
-  - 来源：`统一案例总表/0611-C-616-菜品空间验证.md`
-  - 依赖：—；被引用：—
-- [title: "营养课的饮食实验点火"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0709-C-0714-%E8%90%A5%E5%85%BB%E8%AF%BE%E7%9A%84%E9%A5%AE%E9%A3%9F%E5%AE%9E%E9%AA%8C%E7%82%B9%E7%81%AB.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-f5bed658b94b57df / title: "营养课的饮食实验点火"
-  - 来源：`统一案例总表/0709-C-0714-营养课的饮食实验点火.md`
-  - 依赖：—；被引用：—
-- [title: "规范破缺验证 — 创业团队：3人团队（所有εᵢ>>θC）→S₃完全对称，角色可互换。加入投资人后（C_exit↑→ε_econ↓）→S₃破缺到S₂，经济维度被锁定失去置换自由度。残存U(1)=创意维度仍可自由重组"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0513-C-518-%E8%A7%84%E8%8C%83%E7%A0%B4%E7%BC%BA%E9%AA%8C%E8%AF%81%20%E2%80%94%20%E5%88%9B%E4%B8%9A%E5%9B%A2%E9%98%9F-3%E4%BA%BA%E5%9B%A2%E9%98%9F%28%E6%89%80%E6%9C%89%CE%B5i-%CE%B8C%29%E2%86%92S3%E5%AE%8C%E5%85%A8%E5%AF%B9%E7%A7%B0%2C%E8%A7%92%E8%89%B2%E5%8F%AF%E4%BA%92%E6%8D%A2%E3%80%82%E5%8A%A0%E5%85%A5%E6%8A%95%E8%B5%84%E4%BA%BA%E5%90%8E%28C_exit%E2%86%91%E2%86%92%CE%B5_econ%E2%86%93%29%E2%86%92S3%E7%A0%B4%E7%BC%BA%E5%88%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-a4c555af13544e53 / title: "规范破缺验证 — 创业团队：3人团队（所有εᵢ>>θC）→S₃完全对称，角色可互换。加入投资人后（C_exit↑→ε_econ↓）→S₃破缺到S₂，经济维度被锁定失去置换自由度。残存U(1)=创意维度仍可自由重组"
-  - 来源：`统一案例总表/0513-C-518-规范破缺验证 — 创业团队-3人团队(所有εi-θC)→S3完全对称,角色可互换。加入投资人后(C_exit↑→ε_econ↓)→S3破缺到.md`
-  - 依赖：—；被引用：—
-- [title: "证据制度库初稿生成"](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-3f4ef4cc5d0534e9 / title: "证据制度库初稿生成"
-  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [title: "词汇空间验证"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0606-C-611-%E8%AF%8D%E6%B1%87%E7%A9%BA%E9%97%B4%E9%AA%8C%E8%AF%81.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-c5b37e12b5b1c7a0 / title: "词汇空间验证"
-  - 来源：`统一案例总表/0606-C-611-词汇空间验证.md`
-  - 依赖：—；被引用：—
-- [title: "负期望回本陷阱验证"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0579-C-584-%E8%B4%9F%E6%9C%9F%E6%9C%9B%E5%9B%9E%E6%9C%AC%E9%99%B7%E9%98%B1%E9%AA%8C%E8%AF%81.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-4df235c43c231fe3 / title: "负期望回本陷阱验证"
-  - 来源：`统一案例总表/0579-C-584-负期望回本陷阱验证.md`
-  - 依赖：—；被引用：—
-- [title: "财商乘数四因子结构（验证D65财富域）"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0169-C-169-%E8%B4%A2%E5%95%86%E4%B9%98%E6%95%B0%E5%9B%9B%E5%9B%A0%E5%AD%90%E7%BB%93%E6%9E%84%28%E9%AA%8C%E8%AF%81D65%E8%B4%A2%E5%AF%8C%E5%9F%9F%29.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-948d249718acf967 / title: "财商乘数四因子结构（验证D65财富域）"
-  - 来源：`统一案例总表/0169-C-169-财商乘数四因子结构(验证D65财富域).md`
-  - 依赖：D65；被引用：—
-- [title: "费勇瓶颈突破笔记碰撞验证"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0659-C-664-%E8%B4%B9%E5%8B%87%E7%93%B6%E9%A2%88%E7%AA%81%E7%A0%B4%E7%AC%94%E8%AE%B0%E7%A2%B0%E6%92%9E%E9%AA%8C%E8%AF%81.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-de7ee4337dfb01ac / title: "费勇瓶颈突破笔记碰撞验证"
-  - 来源：`统一案例总表/0659-C-664-费勇瓶颈突破笔记碰撞验证.md`
-  - 依赖：—；被引用：—
-- [title: "跑动耦合验证 — 投资决策：秒级观测（μ_cog=1秒）→ε_eff≈0.1（噪声主导，看不出差异）；日级观测→ε_eff≈0.5；年级观测→ε_eff≈0.9（趋势清晰，维度分化明显）。短时间\\"所有策略看起来一样\\"=未](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0517-C-522-%E8%B7%91%E5%8A%A8%E8%80%A6%E5%90%88%E9%AA%8C%E8%AF%81%20%E2%80%94%20%E6%8A%95%E8%B5%84%E5%86%B3%E7%AD%96-%E7%A7%92%E7%BA%A7%E8%A7%82%E6%B5%8B%28%CE%BC_cog%3D1%E7%A7%92%29%E2%86%92%CE%B5_eff%E2%89%880.1%28%E5%99%AA%E5%A3%B0%E4%B8%BB%E5%AF%BC%2C%E7%9C%8B%E4%B8%8D%E5%87%BA%E5%B7%AE%E5%BC%82%29%3B%E6%97%A5%E7%BA%A7%E8%A7%82%E6%B5%8B%E2%86%92%CE%B5_eff%E2%89%880.5%3B%E5%B9%B4%E7%BA%A7%E8%A7%82%E6%B5%8B.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-54381a399c517e20 / title: "跑动耦合验证 — 投资决策：秒级观测（μ_cog=1秒）→ε_eff≈0.1（噪声主导，看不出差异）；日级观测→ε_eff≈0.5；年级观测→ε_eff≈0.9（趋势清晰，维度分化明显）。短时间\\"所有策略看起来一样\\"=未
-  - 来源：`统一案例总表/0517-C-522-跑动耦合验证 — 投资决策-秒级观测(μ_cog=1秒)→ε_eff≈0.1(噪声主导,看不出差异);日级观测→ε_eff≈0.5;年级观测.md`
-  - 依赖：—；被引用：—
-- [title: "跑步训练σ_opt=√e收敛验证"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0604-C-609-%E8%B7%91%E6%AD%A5%E8%AE%AD%E7%BB%83%CF%83_opt%3D%E2%88%9Ae%E6%94%B6%E6%95%9B%E9%AA%8C%E8%AF%81.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-3778360b1359062c / title: "跑步训练σ_opt=√e收敛验证"
-  - 来源：`统一案例总表/0604-C-609-跑步训练σ_opt=√e收敛验证.md`
-  - 依赖：—；被引用：—
-- [title: "路径依赖分化验证"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0578-C-583-%E8%B7%AF%E5%BE%84%E4%BE%9D%E8%B5%96%E5%88%86%E5%8C%96%E9%AA%8C%E8%AF%81.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-9073b459c03a5200 / title: "路径依赖分化验证"
-  - 来源：`统一案例总表/0578-C-583-路径依赖分化验证.md`
-  - 依赖：—；被引用：—
-- [title: "退出隧穿验证 — 朝鲜脱北者：C_exit≈∞（地理+政治+身份三维锁定），经典P_exit≈0，但实际发生。隧穿路径：边境信息泄漏（降低势垒宽度）+贿赂守卫（局部降低C_exit）+外部接应（提供ε_eff脉冲）"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0480-C-482-%E9%80%80%E5%87%BA%E9%9A%A7%E7%A9%BF%E9%AA%8C%E8%AF%81%20%E2%80%94%20%E6%9C%9D%E9%B2%9C%E8%84%B1%E5%8C%97%E8%80%85-C_exit%E2%89%88%E2%88%9E%28%E5%9C%B0%E7%90%86%2B%E6%94%BF%E6%B2%BB%2B%E8%BA%AB%E4%BB%BD%E4%B8%89%E7%BB%B4%E9%94%81%E5%AE%9A%29%2C%E7%BB%8F%E5%85%B8P_exit%E2%89%880%2C%E4%BD%86%E5%AE%9E%E9%99%85%E5%8F%91%E7%94%9F%E3%80%82%E9%9A%A7%E7%A9%BF%E8%B7%AF%E5%BE%84-%E8%BE%B9%E5%A2%83%E4%BF%A1%E6%81%AF%E6%B3%84%E6%BC%8F%28%E9%99%8D%E4%BD%8E%E5%8A%BF.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-d685d34a39b1a0fd / title: "退出隧穿验证 — 朝鲜脱北者：C_exit≈∞（地理+政治+身份三维锁定），经典P_exit≈0，但实际发生。隧穿路径：边境信息泄漏（降低势垒宽度）+贿赂守卫（局部降低C_exit）+外部接应（提供ε_eff脉冲）"
-  - 来源：`统一案例总表/0480-C-482-退出隧穿验证 — 朝鲜脱北者-C_exit≈∞(地理+政治+身份三维锁定),经典P_exit≈0,但实际发生。隧穿路径-边境信息泄漏(降低势.md`
-  - 依赖：—；被引用：—
-- [title: "退相干验证 — 新员工入职6个月：r_cross从0.8→0.3→0.1（轨道逐步关闭），H从0.2→0.6→0.9（组织规范遮蔽增强），τ_decoherence从50→8→1.5（退相干加速）。6个月后只剩单轨=完全退相](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0483-C-485-%E9%80%80%E7%9B%B8%E5%B9%B2%E9%AA%8C%E8%AF%81%20%E2%80%94%20%E6%96%B0%E5%91%98%E5%B7%A5%E5%85%A5%E8%81%8C6%E4%B8%AA%E6%9C%88-r_cross%E4%BB%8E0.8%E2%86%920.3%E2%86%920.1%28%E8%BD%A8%E9%81%93%E9%80%90%E6%AD%A5%E5%85%B3%E9%97%AD%29%2CH%E4%BB%8E0.2%E2%86%920.6%E2%86%920.9%28%E7%BB%84%E7%BB%87%E8%A7%84%E8%8C%83%E9%81%AE%E8%94%BD%E5%A2%9E%E5%BC%BA%29%2C%CF%84.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-9537dfc9cdf86863 / title: "退相干验证 — 新员工入职6个月：r_cross从0.8→0.3→0.1（轨道逐步关闭），H从0.2→0.6→0.9（组织规范遮蔽增强），τ_decoherence从50→8→1.5（退相干加速）。6个月后只剩单轨=完全退相
-  - 来源：`统一案例总表/0483-C-485-退相干验证 — 新员工入职6个月-r_cross从0.8→0.3→0.1(轨道逐步关闭),H从0.2→0.6→0.9(组织规范遮蔽增强),τ.md`
-  - 依赖：—；被引用：—
-- [title: "遮蔽-补偿-成本三角在AI训练中 — 训练数据同质化→需要异质性补偿→成本高→三角锁死"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0338-C-339-%E9%81%AE%E8%94%BD-%E8%A1%A5%E5%81%BF-%E6%88%90%E6%9C%AC%E4%B8%89%E8%A7%92%E5%9C%A8AI%E8%AE%AD%E7%BB%83%E4%B8%AD%20%E2%80%94%20%E8%AE%AD%E7%BB%83%E6%95%B0%E6%8D%AE%E5%90%8C%E8%B4%A8%E5%8C%96%E2%86%92%E9%9C%80%E8%A6%81%E5%BC%82%E8%B4%A8%E6%80%A7%E8%A1%A5%E5%81%BF%E2%86%92%E6%88%90%E6%9C%AC%E9%AB%98%E2%86%92%E4%B8%89%E8%A7%92%E9%94%81%E6%AD%BB.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-a634535def7beaae / title: "遮蔽-补偿-成本三角在AI训练中 — 训练数据同质化→需要异质性补偿→成本高→三角锁死"
-  - 来源：`统一案例总表/0338-C-339-遮蔽-补偿-成本三角在AI训练中 — 训练数据同质化→需要异质性补偿→成本高→三角锁死.md`
-  - 依赖：—；被引用：—
-- [title: "遮蔽=退相干环境 — 组织信息透明度实验：H=0.1时τ_decoherence=50年，H=0.5时τ=10年，H=0.9时τ=1年。遮蔽每增0.1，退相干时间缩短约40% / obscuration=退相干环境 - 组织](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0487-C-489-%E9%81%AE%E8%94%BD%3D%E9%80%80%E7%9B%B8%E5%B9%B2%E7%8E%AF%E5%A2%83%20%E2%80%94%20%E7%BB%84%E7%BB%87%E4%BF%A1%E6%81%AF%E9%80%8F%E6%98%8E%E5%BA%A6%E5%AE%9E%E9%AA%8C-H%3D0.1%E6%97%B6%CF%84_decoherence%3D50%E5%B9%B4%2CH%3D0.5%E6%97%B6%CF%84%3D10%E5%B9%B4%2CH%3D0.9%E6%97%B6%CF%84%3D1%E5%B9%B4%E3%80%82%E9%81%AE%E8%94%BD.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-882960411a8454ff / title: "遮蔽=退相干环境 — 组织信息透明度实验：H=0.1时τ_decoherence=50年，H=0.5时τ=10年，H=0.9时τ=1年。遮蔽每增0.1，退相干时间缩短约40% / obscuration=退相干环境 - 组织
-  - 来源：`统一案例总表/0487-C-489-遮蔽=退相干环境 — 组织信息透明度实验-H=0.1时τ_decoherence=50年,H=0.5时τ=10年,H=0.9时τ=1年。遮蔽.md`
-  - 依赖：—；被引用：—
-- [title: "链接笔记统一归集管理"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0717-C-0722-%E9%93%BE%E6%8E%A5%E7%AC%94%E8%AE%B0%E7%BB%9F%E4%B8%80%E5%BD%92%E9%9B%86%E7%AE%A1%E7%90%86.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-a3c45e253cc5b2fd / title: "链接笔记统一归集管理"
-  - 来源：`统一案例总表/0717-C-0722-链接笔记统一归集管理.md`
-  - 依赖：—；被引用：—
-- [title: "非对称耦合验证 — 提高Bsemantic不提高Fintent，但提高εaware同时提高Fintent和ηShannon，方向不对称 / 非对称耦合验证 - 提高Bsemantic不提高Fintent, 但提高εaware](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0304-C-304-%E9%9D%9E%E5%AF%B9%E7%A7%B0%E8%80%A6%E5%90%88%E9%AA%8C%E8%AF%81%20%E2%80%94%20%E6%8F%90%E9%AB%98Bsemantic%E4%B8%8D%E6%8F%90%E9%AB%98Fintent%2C%E4%BD%86%E6%8F%90%E9%AB%98%CE%B5aware%E5%90%8C%E6%97%B6%E6%8F%90%E9%AB%98Fintent%E5%92%8C%CE%B7Shannon%2C%E6%96%B9%E5%90%91%E4%B8%8D%E5%AF%B9%E7%A7%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-f088bd01727ff561 / title: "非对称耦合验证 — 提高Bsemantic不提高Fintent，但提高εaware同时提高Fintent和ηShannon，方向不对称 / 非对称耦合验证 - 提高Bsemantic不提高Fintent, 但提高εaware
-  - 来源：`统一案例总表/0304-C-304-非对称耦合验证 — 提高Bsemantic不提高Fintent,但提高εaware同时提高Fintent和ηShannon,方向不对称.md`
-  - 依赖：—；被引用：—
-- [title: "验证报告故事版写作指南"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0721-C-0726-%E9%AA%8C%E8%AF%81%E6%8A%A5%E5%91%8A%E6%95%85%E4%BA%8B%E7%89%88%E5%86%99%E4%BD%9C%E6%8C%87%E5%8D%97.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-f3144c0faa9289b2 / title: "验证报告故事版写作指南"
-  - 来源：`统一案例总表/0721-C-0726-验证报告故事版写作指南.md`
-  - 依赖：—；被引用：—
-- [title: "默里实验·低自尊伴侣互动"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0151-C-151-%E9%BB%98%E9%87%8C%E5%AE%9E%E9%AA%8C%C2%B7%E4%BD%8E%E8%87%AA%E5%B0%8A%E4%BC%B4%E4%BE%A3%E4%BA%92%E5%8A%A8.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-22521bbc5f9da434 / title: "默里实验·低自尊伴侣互动"
-  - 来源：`统一案例总表/0151-C-151-默里实验·低自尊伴侣互动.md`
-  - 依赖：—；被引用：—
-- [title: Φ元统一律内部构件完整构成版 2026年07月06日12时32分](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-e4f33193f74b6975 / title: Φ元统一律内部构件完整构成版 2026年07月06日12时32分
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [TO THE EXTENT PERMITTED BY APPLICABLE LAW, THE LICENSED WORK IS PROVIDED ON](../../../LICENSES/active/BUSL-1.1.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-7c5be5a79200ada0 / TO THE EXTENT PERMITTED BY APPLICABLE LAW, THE LICENSED WORK IS PROVIDED ON
-  - 来源：`LICENSES/active/BUSL-1.1.md`
-  - 依赖：—；被引用：—
-- [To the extent possible, the Licensor waives any right to collect royalties from You for the exercise of the Licensed Rig](../../../LICENSES/active/CC-BY-SA-4.0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-1c8da7a1cec151be / To the extent possible, the Licensor waives any right to collect royalties from You for the exercise of the Licensed Rig
-  - 来源：`LICENSES/active/CC-BY-SA-4.0.md`
-  - 依赖：—；被引用：—
-- [To the extent possible, the Licensor waives any right to collect royalties from You for the exercise of the Licensed Rig](../../../LICENSES/active/CC-BY-NC-SA-4.0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-7609fe0f4831ca82 / To the extent possible, the Licensor waives any right to collect royalties from You for the exercise of the Licensed Rig
-  - 来源：`LICENSES/active/CC-BY-NC-SA-4.0.md`
-  - 依赖：—；被引用：—
-- [Tools and model hubs are named, but artifact identity, provenance, compatibility, health, rollback, supersession and ret](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：NFC-9951161d50139338 / Tools and model hubs are named, but artifact identity, provenance, compatibility, health, rollback, supersession and ret
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
-  - 依赖：—；被引用：—
-- [total_success_verified = original_verified + landing_fix + retry_success](../../../data/external-research/121b-fulltext-batch/121b-validator.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-cec5d18294b80dda / total_success_verified = original_verified + landing_fix + retry_success
-  - 来源：`data/external-research/121b-fulltext-batch/121b-validator.py`
-  - 依赖：—；被引用：—
-- [trace: dict = None, evidence: list = None) -> dict:](../../../function-os-candidate/v0.2/function_os/n7_validator.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-c51de1ea67829197 / trace: dict = None, evidence: list = None) -> dict:
-  - 来源：`function-os-candidate/v0.2/function_os/n7_validator.py`
-  - 依赖：—；被引用：—
-- [Train/development metrics, task benchmarks, ablations, and disclosed emulator failures provide direct finite behavioral-](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-ec894c9f27223b85 / Train/development metrics, task benchmarks, ablations, and disclosed emulator failures provide direct finite behavioral-
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
-  - 依赖：—；被引用：—
-- [Trained controller parameters would be an executable artifact, but no paper checkpoint, code package or immutable run re](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-c167111c5b82cf03 / Trained controller parameters would be an executable artifact, but no paper checkpoint, code package or immutable run re
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
-  - 依赖：—；被引用：—
-- [Training and approximation procedures construct artifacts, but no symbolic or semantics-preserving compiler is defined.](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-2fd2c4a4b0962700 / Training and approximation procedures construct artifacts, but no symbolic or semantics-preserving compiler is defined.
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
-  - 依赖：—；被引用：—
-- [Training, indexing, routing and merge stages are described, but no implementation is linked and key backbone and evaluat](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-727bc46632113d39 / Training, indexing, routing and merge stages are described, but no implementation is linked and key backbone and evaluat
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
-  - 依赖：—；被引用：—
-- [Training-set candidate selection plus GLUE/FID/ablation analyses validate bounded predictive objectives, not semantic eq](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-3f40741b1e73be2d / Training-set candidate selection plus GLUE/FID/ablation analyses validate bounded predictive objectives, not semantic eq
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
-  - 依赖：—；被引用：—
-- [treat AI sampling as fact evidence;](../../../reports/architecture/121Q13-baseline-overlap-audit.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-d6ad1acfa8575b27 / treat AI sampling as fact evidence;
-  - 来源：`reports/architecture/121Q13-baseline-overlap-audit.md`
-  - 依赖：—；被引用：—
-- [treat CI success as theory truth.](../../../reports/architecture/121Q13-baseline-overlap-audit.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-0ed9a048744dd72b / treat CI success as theory truth.
-  - 来源：`reports/architecture/121Q13-baseline-overlap-audit.md`
-  - 依赖：—；被引用：—
-- [treat same-model repetition as independent evidence;](../../../reports/architecture/121Q13-baseline-overlap-audit.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-b0d938feab58701d / treat same-model repetition as independent evidence;
-  - 来源：`reports/architecture/121Q13-baseline-overlap-audit.md`
-  - 依赖：—；被引用：—
-- [Tree composition covers nested control flow but not runtime routing, selection, fallback, or multi-artifact conflict res](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-d13e53c3ff4ae38e / Tree composition covers nested control flow but not runtime routing, selection, fallback, or multi-artifact conflict res
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
-  - 依赖：—；被引用：—
-- [Trial variability is reported empirically, but the function/runtime architecture has no probabilistic or stochastic sema](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-68934ef2e0825a7c / Trial variability is reported empirically, but the function/runtime architecture has no probabilistic or stochastic sema
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
-  - 依赖：—；被引用：—
-- [truth audit](../../../reports/foundation-architecture/075-truth-audit-20260712.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-9088141e486b516d / truth audit
-  - 来源：`reports/foundation-architecture/075-truth-audit-20260712.md`
-  - 依赖：—；被引用：—
-- [truth audit](../../../reports/foundation-architecture/078-truth-audit-20260713.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-b996a22882ea43d5 / truth audit
-  - 来源：`reports/foundation-architecture/078-truth-audit-20260713.md`
-  - 依赖：—；被引用：—
-- [truth-layer gate: PASS — method remains inside L6 and cannot raise L0-L5 status.](../../../reports/operations/121Q28-embodied-cognitive-leap-writing-method-audit.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-29fdb2fec4c0a052 / truth-layer gate: PASS — method remains inside L6 and cannot raise L0-L5 status.
-  - 来源：`reports/operations/121Q28-embodied-cognitive-leap-writing-method-audit.md`
-  - 依赖：—；被引用：—
-- [Two behavioral datasets and strong bounded fits offer empirical evidence, but small in-sample studies and missing model/](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-f4baeaf64c28abd2 / Two behavioral datasets and strong bounded fits offer empirical evidence, but small in-sample studies and missing model/
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
-  - 依赖：—；被引用：—
-- [Two conflicting digest fields (dual_digest vs pages_artifacts)](../../../tests/test_seal_freshness.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-06c2877c2919e7df / Two conflicting digest fields (dual_digest vs pages_artifacts)
-  - 来源：`tests/test_seal_freshness.py`
-  - 依赖：—；被引用：—
-- [Two publication experiments report moderate Pyro overhead relative to handwritten PyTorch VAE updates and DMM test ELBOs](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-ba972c544bd4e72c / Two publication experiments report moderate Pyro overhead relative to handwritten PyTorch VAE updates and DMM test ELBOs
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
   - 依赖：—；被引用：—

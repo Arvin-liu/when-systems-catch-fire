@@ -304,6 +304,16 @@
   - 可搜索名称：NFC-e27d13a117c036d6 / def test_physics_correction_is_visible(self):
   - 来源：`tests/test_human_front_door.py`
   - 依赖：—；被引用：—
+- [Deferred grand-physics (C-06).** Per §3.9, no unification/quantum-gravity claim](../../../evidence-program/registry/candidate-portfolio.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-6a562294f0adf8e1 / Deferred grand-physics (C-06).** Per §3.9, no unification/quantum-gravity claim
+  - 来源：`evidence-program/registry/candidate-portfolio.md`
+  - 依赖：—；被引用：—
+- [Did not change:** no E-axis promotion beyond scope (§8.5); no claim about Pointfire physics](../../../evidence-program/runs/IGNITION-EVIDENCE-PILOT-R1-CROSSREF-DOI-VERIFICATION/RESULT.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-d513a5f532b37aa8 / Did not change:** no E-axis promotion beyond scope (§8.5); no claim about Pointfire physics
+  - 来源：`evidence-program/runs/IGNITION-EVIDENCE-PILOT-R1-CROSSREF-DOI-VERIFICATION/RESULT.md`
+  - 依赖：—；被引用：—
 - [English: Case description: multiplicative critical-drift unification](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0088-C-88-%E4%B9%98%E6%B3%95%E4%B8%B4%E7%95%8C%E6%BC%82%E7%A7%BB%E7%BB%9F%E4%B8%80.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-210acb14c884c6a1 / English: Case description: multiplicative critical-drift unification
@@ -319,6 +329,11 @@
   - 可搜索名称：IMPLICIT-37EFF6D269D6CDDA / English: ∂Φ/∂N_gate\|physics   0 (society: differentiation), unified under Φ=zero-temperature free energy optimization. / IMPLICIT-37EFF6D269D6CDDA
   - 来源：`统一函数总表/0514-D516-跨域对称性破缺推论.md`
   - 依赖：—；被引用：—
+- [Excluded:** no assessment of article *content* or of Pointfire physics correctness;](../../../evidence-program/preregistration/IGNITION-EVIDENCE-PILOT-R1-CROSSREF-DOI-VERIFICATION.protocol.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-34c63ad310e248ed / Excluded:** no assessment of article *content* or of Pointfire physics correctness;
+  - 来源：`evidence-program/preregistration/IGNITION-EVIDENCE-PILOT-R1-CROSSREF-DOI-VERIFICATION.protocol.md`
+  - 依赖：—；被引用：—
 - [EXTERNAL_TERM = re.compile(r"(物理\|医学\|金融\|法律\|现实\|经验\|实验\|数据\|physical\|medical\|financial\|legal\|real-world\|empirical\|experiment\|d](../../../tools/foundation/adjudicate_function_assets.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-c625f4ed61fb52e9 / EXTERNAL_TERM = re.compile(r"(物理\|医学\|金融\|法律\|现实\|经验\|实验\|数据\|physical\|medical\|financial\|legal\|real-world\|empirical\|experiment\|d
@@ -328,6 +343,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-f9111409424f25d3 / family_match = lineage == "PHYSICS_UNIFICATION_NOGO" or bool(explicit_rebound.search(stripped))
   - 来源：`tools/foundation/adjudicate_function_assets.py`
+  - 依赖：—；被引用：—
+- [grand-physics claim chosen for narrative) using a genuine external oracle.](../../../evidence-program/runs/IGNITION-EVIDENCE-PILOT-R1-CROSSREF-DOI-VERIFICATION/RESULT.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-bdfad1a30d08ca55 / grand-physics claim chosen for narrative) using a genuine external oracle.
+  - 来源：`evidence-program/runs/IGNITION-EVIDENCE-PILOT-R1-CROSSREF-DOI-VERIFICATION/RESULT.md`
   - 依赖：—；被引用：—
 - [if not UNIFICATION_NOGO.search(text):](../../../tools/foundation/adjudicate_nonfunction_claims.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -504,6 +524,11 @@
   - 可搜索名称：NFC-33610ef5bc2eb561 / r"实证\|证据\|实验\|数据\|文献\|本体\|形而上\|意识\|物理\|社会\|生命\|智能\|真理\|事实\|大一统\|统一)",
   - 来源：`tools/foundation/adjudicate_nonfunction_claims.py`
   - 依赖：—；被引用：—
+- [Registry external-source metadata integrity only; not a claim about Pointfire physics correctness.](../../../evidence-program/registry/candidate-portfolio.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-56a46590471b502d / Registry external-source metadata integrity only; not a claim about Pointfire physics correctness.
+  - 来源：`evidence-program/registry/candidate-portfolio.jsonl`
+  - 依赖：—；被引用：—
 - [Rejected the prior card after proving its arXiv:2407.18295 identifier is an unrelated 40-page general-relativity paper a](../../../data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-552ad551594d7db3 / Rejected the prior card after proving its arXiv:2407.18295 identifier is an unrelated 40-page general-relativity paper a
@@ -568,6 +593,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-1c5cff1f3aa9f498 / The survey distinguishes static parameter unification from structural preservation: averaging and task-vector methods ma
   - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [This is a **bounded metadata-integrity claim**, not a physics claim. It is allowed by](../../../evidence-program/preregistration/IGNITION-EVIDENCE-PILOT-R1-CROSSREF-DOI-VERIFICATION.protocol.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-4fad751a9f00fc21 / This is a **bounded metadata-integrity claim**, not a physics claim. It is allowed by
+  - 来源：`evidence-program/preregistration/IGNITION-EVIDENCE-PILOT-R1-CROSSREF-DOI-VERIFICATION.protocol.md`
   - 依赖：—；被引用：—
 - [title: "信息门效率统一 / information-gate efficiency unification"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0022-T12-%E4%BF%A1%E6%81%AF%E9%97%A8%E6%95%88%E7%8E%87%E7%BB%9F%E4%B8%80.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -779,6 +809,11 @@
   - 可搜索名称：NFC-b8ea543df1cc9953 / \| BC-20260709-014 \| 《娱乐至死》 \| 媒介环境与点火框架门控面压缩的同构性。娱乐化媒介压缩认知维度，降低ε_eff，验证了认知引力波的传播机制。 \| pending \| ε_eff \| 《娱乐至死》最终收敛报告 2026
   - 来源：`docs/meta-protocols/book-validation-22-cases-20260709.md`
   - 依赖：—；被引用：—
+- [\| C-06 \| Four-force unification / quantum gravity \| DEFERRED \| 0.12 \| §3.9: not chosen for narrative; no bounded feasibl](../../../evidence-program/registry/candidate-portfolio.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-15fd4b39d548b43a / \| C-06 \| Four-force unification / quantum gravity \| DEFERRED \| 0.12 \| §3.9: not chosen for narrative; no bounded feasibl
+  - 来源：`evidence-program/registry/candidate-portfolio.md`
+  - 依赖：—；被引用：—
 - [\| D127 \| DOWNGRADE \| 历史路径积分类比 \| 可计算路径积分、跨域同构、物理等价 \|](../../../docs/foundation/physics-asset-correction-20260729.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-076f9a738199bc4e / \| D127 \| DOWNGRADE \| 历史路径积分类比 \| 可计算路径积分、跨域同构、物理等价 \|
@@ -833,6 +868,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-9ed664b32264373f / \|门控乘积模型是否统一四力？\|没有。现有模型缺少共同物理载体、量纲一致作用量、规范结构、可重整化/有效场论边界与实验预测。\|模型反例与定义义务；不推出其他统一路线失败。\|\[物理资产纠偏\](../docs/foundation/physics
   - 来源：`RESULTS/LATEST.md`
+  - 依赖：—；被引用：—
+- [§3.9 (no grand-physics claim chosen for narrative). A real external oracle (Crossref)](../../../evidence-program/preregistration/IGNITION-EVIDENCE-PILOT-R1-CROSSREF-DOI-VERIFICATION.protocol.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-1e3bdb57a65f542e / §3.9 (no grand-physics claim chosen for narrative). A real external oracle (Crossref)
+  - 来源：`evidence-program/preregistration/IGNITION-EVIDENCE-PILOT-R1-CROSSREF-DOI-VERIFICATION.protocol.md`
   - 依赖：—；被引用：—
 - [Φ在不同域中展现统一结构：物理Φ=零温自由能、社会Φ=权力熵、认知Φ=认知势能。三域统一形式：Φ = -Σᵢ sᵢ/ln²(μ/Λᵢ) + C(退化项)。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0049-T39-%CE%A6%E8%B7%A8%E5%9F%9F%E7%BB%9F%E4%B8%80%E5%AE%9A%E7%90%86%28D224%E5%8D%87%E7%BA%A7%29.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -1718,4 +1758,9 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-3050d0677419215a / 首批物理资产纠偏（2026-07-29）
   - 来源：`docs/foundation/physics-asset-correction-20260729.md`
+  - 依赖：—；被引用：—
+- [（未物理删除——GAP002-08 被 104 外部研究生态多处引用）并移交 104 数据负责人（同层级数据修正，非降级）。](../../../RESULTS/LATEST.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-391f80f6063292f1 / （未物理删除——GAP002-08 被 104 外部研究生态多处引用）并移交 104 数据负责人（同层级数据修正，非降级）。
+  - 来源：`RESULTS/LATEST.md`
   - 依赖：—；被引用：—

@@ -1189,6 +1189,11 @@
   - 可搜索名称：NFC-07cf7d18e996b259 / Use this form for review evidence, reproducibility checks, red-team feedback, or gap reports. A negative finding is welc
   - 来源：`.github/ISSUE_TEMPLATE/independent-review.yml`
   - 依赖：—；被引用：—
+- [USER_AGENT = "PointfireEvidencePilot/1.0 (mailto:49422864+Arvin-liu@users.noreply.github.com)"](../../../evidence-program/tools/run_crossref_verification.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-d598613a606e8198 / USER_AGENT = "PointfireEvidencePilot/1.0 (mailto:49422864+Arvin-liu@users.noreply.github.com)"
+  - 来源：`evidence-program/tools/run_crossref_verification.py`
+  - 依赖：—；被引用：—
 - [V2 规范性审核 - 效率性协议 (Efficiency Protocol)](../../ASSET-CARDS.md#asset-hr-c32095e69516906c)
   - 类型/状态：`RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
   - 可搜索名称：V2 规范性审核 - 效率性协议 (Efficiency Protocol) / V2

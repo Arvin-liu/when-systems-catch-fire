@@ -34,7 +34,7 @@
 
 **引导问题：** 门控模型能支持什么有界物理投影，哪些统一与观测义务仍未完成？
 
-当前检索覆盖 1119 项，重点卡片 26 项。 [打开本主题完整索引](./indexes/physics.md)
+当前检索覆盖 1128 项，重点卡片 26 项。 [打开本主题完整索引](./indexes/physics.md)
 
 - [相对论门槛函数](./ASSET-CARDS.md#asset-d185) — `KEEP_AS_STRUCTURAL_METAPHOR`；Identity: STRUCTURAL_METAPHOR. Definition scope: UNSPECIFIED_IN_SOURCE → scalar-like score with unspecified units.
 - [量子力学门槛聚集函数](./ASSET-CARDS.md#asset-d186) — `KEEP_AS_STRUCTURAL_METAPHOR`；Identity: STRUCTURAL_METAPHOR. Definition scope: UNSPECIFIED_IN_SOURCE → scalar-like score with unspecified units.
@@ -61,7 +61,7 @@
 
 **引导问题：** 跨尺度表示、概率动力学和关系网络能描述什么，不能证明什么？
 
-当前检索覆盖 4233 项，重点卡片 73 项。 [打开本主题完整索引](./indexes/systems.md)
+当前检索覆盖 4242 项，重点卡片 73 项。 [打开本主题完整索引](./indexes/systems.md)
 
 - [Q14 Ignition Atlas maps are versioned derived projections, not a permanent total map and not a second canonical truth so](./ASSET-CARDS.md#asset-nfc-1e10227f1b51e4d0) — `RETAINED_AS_STRUCTURAL_METAPHOR`；- 121Q14 Ignition Atlas maps are versioned derived projections, not a permanent total map and not a second canonical truth source.
 - [Iteration method 1.3.0 and system map 0.2.0, 0.3.0 are Historical; method 1.2.0 and map 0.1.0 are earlier Historical, no](./ASSET-CARDS.md#asset-nfc-2b7304f480da70c2) — `ACCEPTED_AS_DEFINITION`；Iteration method 1.3.0 and system map 0.2.0, 0.3.0 are Historical; method 1.2.0 and map 0.1.0 are earlier Historical, not Current. Treat implementatio
@@ -88,7 +88,7 @@
 
 **引导问题：** 认知类比、行动选择和现实反馈怎样保留边界与失败条件？
 
-当前检索覆盖 1834 项，重点卡片 22 项。 [打开本主题完整索引](./indexes/cognition.md)
+当前检索覆盖 1835 项，重点卡片 22 项。 [打开本主题完整索引](./indexes/cognition.md)
 
 - [认知路径积分函数](./ASSET-CARDS.md#asset-d127) — `KEEP_AS_STRUCTURAL_METAPHOR`；Identity: STRUCTURAL_METAPHOR. Definition scope: UNSPECIFIED_IN_SOURCE → structured inference or procedure.
 - [IGNITION-121Q6C 执行结果](./ASSET-CARDS.md#asset-hr-1437a5c9924f3c9e) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`；执行者：QClaw（Hy3） 状态：121Q6C 完成（Step 000–007）
@@ -115,7 +115,7 @@
 
 **引导问题：** 知识资产怎样被登记、裁决、修订、隔离并保持机器与人类表面一致？
 
-当前检索覆盖 17567 项，重点卡片 181 项。 [打开本主题完整索引](./indexes/architecture_governance.md)
+当前检索覆盖 17712 项，重点卡片 181 项。 [打开本主题完整索引](./indexes/architecture_governance.md)
 
 - [哥德尔不完备性、霍奇猜想类比、不同能标、不同函数族，以及点火当前模型的失败，都不是大一统不可能的桥接定理。](./ASSET-CARDS.md#asset-nfc-00b4be17fb8dc706) — `ACCEPTED_AS_DEFINITION`；哥德尔不完备性、霍奇猜想类比、不同能标、不同函数族，以及点火当前模型的失败，都不是大一统不可能的桥接定理。
 - [历史笔记把 D260 与大一统不可能命题相连；formal main 中 D260 实际为 `p/(1-p)` 偏差敏感度评分。物理断言和评分函数分别处理。](./ASSET-CARDS.md#asset-nfc-0b7defaef4efab24) — `ACCEPTED_AS_DEFINITION`；- 历史笔记把 D260 与大一统不可能命题相连；formal main 中 D260 实际为 `p/(1-p)` 偏差敏感度评分。物理断言和评分函数分别处理。
@@ -142,7 +142,7 @@
 
 **引导问题：** 研究结果如何形成可阅读作品，同时不越过来源、证据和许可边界？
 
-当前检索覆盖 1040 项，重点卡片 41 项。 [打开本主题完整索引](./indexes/writing_publication.md)
+当前检索覆盖 1042 项，重点卡片 41 项。 [打开本主题完整索引](./indexes/writing_publication.md)
 
 - [为全部恢复的结果/文章来源生成统一卡片和 1 分钟、5 分钟、完整阅读，并为全部函数/断言 registry 建立可回链来源、状态、依赖、反向依赖和历史的分片搜索索引。](./ASSET-CARDS.md#asset-nfc-3d9ffb2206406fcc) — `ACCEPTED_AS_DEFINITION`；- 为全部恢复的结果/文章来源生成统一卡片和 1 分钟、5 分钟、完整阅读，并为全部函数/断言 registry 建立可回链来源、状态、依赖、反向依赖和历史的分片搜索索引。
 - [Q30T 已将之元写作法成果的五类职责收口为当前接口：人类总索引、机器 registry、正式作品、案例来源链和点火分析。交接时不得把 README 最近三项投影当作完整权威，不得公开受限原始材料，也不得从一项接受作品推出方法普遍有效。](./ASSET-CARDS.md#asset-nfc-517a9b6de3674e2a) — `ACCEPTED_AS_DEFINITION`；121Q30T 已将之元写作法成果的五类职责收口为当前接口：人类总索引、机器 registry、正式作品、案例来源链和点火分析。交接时不得把 README 最近三项投影当作完整权威，不得公开受限原始材料，也不得从一项接受作品推出方法普遍有效。
@@ -169,7 +169,7 @@
 
 **引导问题：** 候选、验证、合并和 Current 怎样分离并留下可复算证据？
 
-当前检索覆盖 11498 项，重点卡片 211 项。 [打开本主题完整索引](./indexes/operations_evidence.md)
+当前检索覆盖 11563 项，重点卡片 211 项。 [打开本主题完整索引](./indexes/operations_evidence.md)
 
 - [门控面合并统一函数](./ASSET-CARDS.md#asset-d183) — `REWRITE_AND_RETEST`；Identity: RELATION_OR_CONSTRAINT. Definition scope: Positive scale ratios excluding one, plus an independently defined merge map → relation over sourc
 - [相对论门槛函数](./ASSET-CARDS.md#asset-d185) — `KEEP_AS_STRUCTURAL_METAPHOR`；Identity: STRUCTURAL_METAPHOR. Definition scope: UNSPECIFIED_IN_SOURCE → scalar-like score with unspecified units.

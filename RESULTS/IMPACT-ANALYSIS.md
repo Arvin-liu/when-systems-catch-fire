@@ -9,11 +9,11 @@
 |`CONTRIBUTING.md`|16|0|否|
 |`HUMAN-READING.md`|9|0|否|
 |`ITERATION.md`|73|0|否|
-|`README.md`|34|0|否|
+|`README.md`|35|0|否|
 |`RESULTS/ADJUDICATION-SUMMARY.md`|19|0|否|
 |`RESULTS/CORRECTIONS.md`|8|0|否|
-|`RESULTS/LATEST.md`|17|0|否|
-|`RESULTS/OPEN-QUESTIONS.md`|10|0|否|
+|`RESULTS/LATEST.md`|28|0|否|
+|`RESULTS/OPEN-QUESTIONS.md`|15|0|否|
 |`RESULTS/README.md`|5|0|否|
 |`RESULTS/RESEARCH-AND-ARTICLES.md`|8|0|否|
 |`SUMMARY.md`|8|0|否|
@@ -28,7 +28,7 @@
 |`docs/governance/knowledge-experience-layer.md`|11|0|否|
 |`docs/governance/self-correction-engine.md`|11|0|否|
 |`docs/operations/stage-snapshot-publication.md`|21|0|否|
-|`docs/project-current-state.md`|25|0|否|
+|`docs/project-current-state.md`|30|0|否|
 |`llms.txt`|45|0|否|
 |`reports/foundation-architecture/101-human-readable-surfaces-self-correction-closeout.md`|11|0|否|
 |`reports/operations/102-knowledge-experience-audit.md`|3|0|否|
