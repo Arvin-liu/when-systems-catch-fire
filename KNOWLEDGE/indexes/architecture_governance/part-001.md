@@ -134,6 +134,11 @@
   - 可搜索名称：NFC-6a9f2a9d1221c3c6 / """Integration: a VERIFIED category's pinned real digest is enforced end-to-end
   - 来源：`tests/test_source_rights_gate_enum_consistency.py`
   - 依赖：—；被引用：—
+- ["""Load the governed first-appearance map. This is the single source of truth](../../../tools/governance/build_knowledge_experience.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-99dd6b8def410267 / """Load the governed first-appearance map. This is the single source of truth
+  - 来源：`tools/governance/build_knowledge_experience.py`
+  - 依赖：—；被引用：—
 - ["""Manifest resolved_components stale -> must fail."""](../../../tests/test_seal_freshness.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-106bd87d259d2042 / """Manifest resolved_components stale -> must fail."""
@@ -2499,8 +2504,3 @@
   - 可搜索名称：NFC-1c8e60c292d6b230 / \[#321｜AI安装路径的串行约束 — 不能并行装三个模块，串行安装每一步是下一步的必要条件\](docs/zh/cases/items/C-0321.md)
   - 来源：`统一案例总表/0321-C-321-AI安装路径的串行约束 — 不能并行装三个模块,串行安装每一步是下一步的必要条件.md`
   - 依赖：—；被引用：—
-- [\[#436｜经验法则证伪 — 经验说"先确保生存再追求增长"，但D112说防守强度在接近门槛时反而增大——不是"先防守完再进攻"，而是"防守强度随接近门槛先增后减，进攻是防守衰减的自然结果"\](docs/zh/cases/items/C-0](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0435-C-436-%E7%BB%8F%E9%AA%8C%E6%B3%95%E5%88%99%E8%AF%81%E4%BC%AA%20%E2%80%94%20%E7%BB%8F%E9%AA%8C%E8%AF%B4-%E5%85%88%E7%A1%AE%E4%BF%9D%E7%94%9F%E5%AD%98%E5%86%8D%E8%BF%BD%E6%B1%82%E5%A2%9E%E9%95%BF-%2C%E4%BD%86D112%E8%AF%B4%E9%98%B2%E5%AE%88%E5%BC%BA%E5%BA%A6%E5%9C%A8%E6%8E%A5%E8%BF%91%E9%97%A8%E6%A7%9B%E6%97%B6%E5%8F%8D%E8%80%8C%E5%A2%9E%E5%A4%A7%E2%80%94%E2%80%94%E4%B8%8D%E6%98%AF-%E5%85%88%E9%98%B2%E5%AE%88%E5%AE%8C%E5%86%8D%E8%BF%9B%E6%94%BB-%2C%E8%80%8C%E6%98%AF-%E9%98%B2%E5%AE%88%E5%BC%BA%E5%BA%A6%E9%9A%8F%E6%8E%A5%E8%BF%91%E9%97%A8.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-a3860164bf051041 / \[#436｜经验法则证伪 — 经验说"先确保生存再追求增长"，但D112说防守强度在接近门槛时反而增大——不是"先防守完再进攻"，而是"防守强度随接近门槛先增后减，进攻是防守衰减的自然结果"\](docs/zh/cases/items/C-0
-  - 来源：`统一案例总表/0435-C-436-经验法则证伪 — 经验说-先确保生存再追求增长-,但D112说防守强度在接近门槛时反而增大——不是-先防守完再进攻-,而是-防守强度随接近门.md`
-  - 依赖：D112；被引用：—

@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [outputs/getbrain/v0.2-function-dependency-graph-20260706.md](../../../outputs/getbrain/v0.2-function-dependency-graph-20260706.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：T80 / outputs/getbrain/v0.2-function-dependency-graph-20260706.md / T80 / D570
+  - 来源：`outputs/getbrain/v0.2-function-dependency-graph-20260706.md`
+  - 依赖：—；被引用：—
+- [outputs/getbrain/v0.2-function-dependency-graph-20260706.md](../../../outputs/getbrain/v0.2-function-dependency-graph-20260706.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：T81 / outputs/getbrain/v0.2-function-dependency-graph-20260706.md / T81 / D570
+  - 来源：`outputs/getbrain/v0.2-function-dependency-graph-20260706.md`
+  - 依赖：—；被引用：—
+- [O₁(x,y) := D177(参数空间同构)**](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-018252cbca715f7b / O₁(x,y) := D177(参数空间同构)**
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：D177；被引用：—
 - [O₁₀(x,y) := D179-energy(能量尺度同构)**](../../../docs/phi_meta_law.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-d190df70147d8208 / O₁₀(x,y) := D179-energy(能量尺度同构)**
@@ -2488,19 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-ac1b0cfc608b2e76 / 中文：反向投影覆盖 English: Rule-based English rendering pending human review.
   - 来源：`统一案例总表/0103-C-103-反向投影覆盖.md`
-  - 依赖：—；被引用：—
-- [中文：大统一GUT是电磁力、弱核力、强核力在高能μ>μ_GUT时的门控面合并。μ μ_GUT时合并为Λ_GUT,Φ = 1/ln(μ/Λ_GUT)。统一度Ω_after > Ω_before。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0225-D189-%E5%A4%A7%E7%BB%9F%E4%B8%80%E9%97%A8%E6%A7%9B%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-0C399FB7B821BEB2 / 中文：大统一GUT是电磁力、弱核力、强核力在高能μ>μ_GUT时的门控面合并。μ μ_GUT时合并为Λ_GUT,Φ = 1/ln(μ/Λ_GUT)。统一度Ω_after > Ω_before。 / IMPLICIT-0C399FB7B821BEB2
-  - 来源：`统一函数总表/0225-D189-大统一门槛函数.md`
-  - 依赖：—；被引用：—
-- [中文：定投×贷款×学习——可选集扩张的三种同构形态](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0182-C-182-%E5%AE%9A%E6%8A%95%C3%97%E8%B4%B7%E6%AC%BE%C3%97%E5%AD%A6%E4%B9%A0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-03b743c6b4a29aae / 中文：定投×贷款×学习——可选集扩张的三种同构形态
-  - 来源：`统一案例总表/0182-C-182-定投×贷款×学习.md`
-  - 依赖：—；被引用：—
-- [中文：定投×贷款×学习——可选集扩张的三种同构形态 English: Rule-based English rendering pending human r…](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0182-C-182-%E5%AE%9A%E6%8A%95%C3%97%E8%B4%B7%E6%AC%BE%C3%97%E5%AD%A6%E4%B9%A0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-07f224ec1d4be949 / 中文：定投×贷款×学习——可选集扩张的三种同构形态 English: Rule-based English rendering pending human r…
-  - 来源：`统一案例总表/0182-C-182-定投×贷款×学习.md`
   - 依赖：—；被引用：—

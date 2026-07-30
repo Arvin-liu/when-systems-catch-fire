@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [处理异质、时序与自适应关系，并把因果主张交回 MCF。](../../../data/architecture/interactive-system-map.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-00eeb962677af392 / 处理异质、时序与自适应关系，并把因果主张交回 MCF。
+  - 来源：`data/architecture/interactive-system-map.json`
+  - 依赖：—；被引用：—
 - [外部证据 pending：E1–E6 全部 pending。](../../../outputs/collisions/20260711-disobedience-subjectivity/mechanism-extraction.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-f0e635d3cbf45f83 / 外部证据 pending：E1–E6 全部 pending。
@@ -2497,10 +2502,5 @@
 - [验证过程：** 植物智能的每个根尖直接从菌根网络调取养分并决策，无需中央处理器。根尖感知局部土壤信息，自主决定生长方向，无需将信息传递给中央节点。](../../../docs/phi_meta_law.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-0e9538ce06159e4a / 验证过程：** 植物智能的每个根尖直接从菌根网络调取养分并决策，无需中央处理器。根尖感知局部土壤信息，自主决定生长方向，无需将信息传递给中央节点。
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证过程：** 蚁群社会的每只蚂蚁根据局部信息素信息自主决定路径，无需中央控制。蚂蚁感知局部信息素浓度，自主决定行进方向，无需将信息传递给中央节点。](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-7f5621b39450c18d / 验证过程：** 蚁群社会的每只蚂蚁根据局部信息素信息自主决定路径，无需中央控制。蚂蚁感知局部信息素浓度，自主决定行进方向，无需将信息传递给中央节点。
   - 来源：`docs/phi_meta_law.md`
   - 依赖：—；被引用：—

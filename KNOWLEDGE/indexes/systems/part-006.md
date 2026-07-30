@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [验证过程：** 蚁群社会的每只蚂蚁根据局部信息素信息自主决定路径，无需中央控制。蚂蚁感知局部信息素浓度，自主决定行进方向，无需将信息传递给中央节点。](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-7f5621b39450c18d / 验证过程：** 蚁群社会的每只蚂蚁根据局部信息素信息自主决定路径，无需中央控制。蚂蚁感知局部信息素浓度，自主决定行进方向，无需将信息传递给中央节点。
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
 - [高温超导 — 多门控面共振,Tc远高于单机制预言](../../../data/foundation/evidence/evidence.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-84fa20d79871a8b7 / 高温超导 — 多门控面共振,Tc远高于单机制预言

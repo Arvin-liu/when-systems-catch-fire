@@ -4,6 +4,66 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [resume rule: process only `PENDING` or `IN_PROGRESS_STALE`; never overwrite an unchanged accepted review](../../../reports/foundation-architecture/080-resume-instructions-20260713.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-564b3b1d26e60848 / resume rule: process only `PENDING` or `IN_PROGRESS_STALE`; never overwrite an unchanged accepted review
+  - 来源：`reports/foundation-architecture/080-resume-instructions-20260713.md`
+  - 依赖：—；被引用：—
+- [Retention, interference, calibration, OOD and efficiency signals are identified, while evidence uncertainty, provenance,](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-f57c8085ad8cc369 / Retention, interference, calibration, OOD and efficiency signals are identified, while evidence uncertainty, provenance,
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [return "CROSS_DOMAIN_CORRESPONDENCE"](../../../tools/foundation/adjudicate_nonfunction_claims.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-60b68c162c14b261 / return "CROSS_DOMAIN_CORRESPONDENCE"
+  - 来源：`tools/foundation/adjudicate_nonfunction_claims.py`
+  - 依赖：—；被引用：—
+- [return "EMPIRICAL_OR_LITERATURE_CLAIM"](../../../tools/foundation/adjudicate_nonfunction_claims.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-1ecde25e8d37435a / return "EMPIRICAL_OR_LITERATURE_CLAIM"
+  - 来源：`tools/foundation/adjudicate_nonfunction_claims.py`
+  - 依赖：—；被引用：—
+- [return "IMPOSSIBILITY_OR_UNIVERSAL_CLAIM"](../../../tools/foundation/adjudicate_nonfunction_claims.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-54c4da1b2929e4fd / return "IMPOSSIBILITY_OR_UNIVERSAL_CLAIM"
+  - 来源：`tools/foundation/adjudicate_nonfunction_claims.py`
+  - 依赖：—；被引用：—
+- [return "LAW_OR_PRINCIPLE_CLAIM"](../../../tools/foundation/adjudicate_nonfunction_claims.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-984d61cd6d5c1d7b / return "LAW_OR_PRINCIPLE_CLAIM"
+  - 来源：`tools/foundation/adjudicate_nonfunction_claims.py`
+  - 依赖：—；被引用：—
+- [return "METRIC", "EMPIRICAL_ASSOCIATION"](../../../tools/foundation/adjudicate_core.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-45464f472a2715e1 / return "METRIC", "EMPIRICAL_ASSOCIATION"
+  - 来源：`tools/foundation/adjudicate_core.py`
+  - 依赖：—；被引用：—
+- [return "PREDICTION_OR_FORECAST"](../../../tools/foundation/adjudicate_nonfunction_claims.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-f217cbed67fbeec2 / return "PREDICTION_OR_FORECAST"
+  - 来源：`tools/foundation/adjudicate_nonfunction_claims.py`
+  - 依赖：—；被引用：—
+- [return "PROBABILISTIC_MODEL", "EMPIRICAL_ASSOCIATION"](../../../tools/foundation/adjudicate_core.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-b412450c9ba787e9 / return "PROBABILISTIC_MODEL", "EMPIRICAL_ASSOCIATION"
+  - 来源：`tools/foundation/adjudicate_core.py`
+  - 依赖：—；被引用：—
+- [return "RELATION", "STRUCTURAL_ANALOGY"](../../../tools/foundation/adjudicate_core.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-cf948ed5a316512c / return "RELATION", "STRUCTURAL_ANALOGY"
+  - 来源：`tools/foundation/adjudicate_core.py`
+  - 依赖：—；被引用：—
+- [return "UNRESOLVED_CLAIM"](../../../tools/foundation/adjudicate_nonfunction_claims.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-202aa9e8b2445a95 / return "UNRESOLVED_CLAIM"
+  - 来源：`tools/foundation/adjudicate_nonfunction_claims.py`
+  - 依赖：—；被引用：—
+- [return \[t for t in self._store.values() if t\['artifact_id'\] == artifact_id\]](../../../function-os-candidate/v0.2/function_os/n6_execution_trace.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-9803ba62234f13d8 / return \[t for t in self._store.values() if t\['artifact_id'\] == artifact_id\]
+  - 来源：`function-os-candidate/v0.2/function_os/n6_execution_trace.py`
+  - 依赖：—；被引用：—
 - [return artifact](../../../function-os-candidate/v0.2/function_os/n4_artifact_packager.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-ee7f1d7cb1f81388 / return artifact
@@ -2443,64 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-ba972c544bd4e72c / Two publication experiments report moderate Pyro overhead relative to handwritten PyTorch VAE updates and DMM test ELBOs
   - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
-  - 依赖：—；被引用：—
-- [Type lists, runtime evidence contexts, operations, handlers and continuations are explicit carriers.](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-a63b193b17017bac / Type lists, runtime evidence contexts, operations, handlers and continuations are explicit carriers.
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
-  - 依赖：—；被引用：—
-- [Typed layer and encoder/decoder composition are explicit, while cross-artifact routing and conflict policies are absent.](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-740f0cbb861c2737 / Typed layer and encoder/decoder composition are explicit, while cross-artifact routing and conflict policies are absent.
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
-  - 依赖：—；被引用：—
-- [Under a precise FinStochSurj-graded distributive Markov functor and a factorization of the convex-image interpretation,](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-57ca5aa8398adabc / Under a precise FinStochSurj-graded distributive Markov functor and a factorization of the convex-image interpretation,
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
-  - 依赖：—；被引用：—
-- [Under activation, bounded-data, Hölder source, effective-dimension, width, sample, early-stopping, and near-initializati](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-c904886159ee9e27 / Under activation, bounded-data, Hölder source, effective-dimension, width, sample, early-stopping, and near-initializati
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
-  - 依赖：—；被引用：—
-- [Under compact-domain, compact input-family, continuity, and universal-approximator assumptions, the generalized branch/t](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-a6c1338a465a51fb / Under compact-domain, compact input-family, continuity, and universal-approximator assumptions, the generalized branch/t
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
-  - 依赖：—；被引用：—
-- [Under explicit Banach-space, compactness, continuity, activation, and norm assumptions, the paper establishes universal-](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-347bc0281f2927de / Under explicit Banach-space, compactness, continuity, activation, and norm assumptions, the paper establishes universal-
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
-  - 依赖：—；被引用：—
-- [UNESCO 四位学科理论投影、点火缺口识别与架构 v1.1 缺口补齐](../../../data/discipline-projection/087-execution-report.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-3b9c92a02ec16e6d / UNESCO 四位学科理论投影、点火缺口识别与架构 v1.1 缺口补齐
-  - 来源：`data/discipline-projection/087-execution-report.md`
-  - 依赖：—；被引用：—
-- [universal = bool(UNIVERSAL.search(text))](../../../tools/foundation/adjudicate_nonfunction_claims.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-5af9d574fb996940 / universal = bool(UNIVERSAL.search(text))
-  - 来源：`tools/foundation/adjudicate_nonfunction_claims.py`
-  - 依赖：—；被引用：—
-- [universal = bool(UNIVERSAL_TERM.search(text))](../../../tools/foundation/adjudicate_function_assets.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-cb8c2469a8eafad4 / universal = bool(UNIVERSAL_TERM.search(text))
-  - 来源：`tools/foundation/adjudicate_function_assets.py`
-  - 依赖：—；被引用：—
-- [UNIVERSAL = re.compile(r"(?:all\|every\|always\|never\|universal\|impossible\|inevitable\|任何\|全部\|所有\|永远\|从不\|普遍\|不可能\|必然)", re.IGNORE](../../../tools/foundation/adjudicate_nonfunction_claims.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-c2dab86be2413a4d / UNIVERSAL = re.compile(r"(?:all\|every\|always\|never\|universal\|impossible\|inevitable\|任何\|全部\|所有\|永远\|从不\|普遍\|不可能\|必然)", re.IGNORE
-  - 来源：`tools/foundation/adjudicate_nonfunction_claims.py`
-  - 依赖：—；被引用：—
-- [Universal approximation establishes existence for broad operator classes with unrestricted model size, data, and optimiz](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-06cdaca4d02202d0 / Universal approximation establishes existence for broad operator classes with unrestricted model size, data, and optimiz
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
-  - 依赖：—；被引用：—
-- [UNIVERSAL_TERM = re.compile(r"(所有\|任何\|普遍\|必然\|唯一\|完全\|不可能\|all\\b\|any\\b\|universal\|necessarily\|unique\|impossible)", re.I)](../../../tools/foundation/adjudicate_function_assets.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-40dc18e37eb9a488 / UNIVERSAL_TERM = re.compile(r"(所有\|任何\|普遍\|必然\|唯一\|完全\|不可能\|all\\b\|any\\b\|universal\|necessarily\|unique\|impossible)", re.I)
-  - 来源：`tools/foundation/adjudicate_function_assets.py`
   - 依赖：—；被引用：—

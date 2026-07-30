@@ -4,6 +4,66 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [def test_regression_gate_cases(self):](../../../tests/foundation/test_nonfunction_claim_closure.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-1A270E502FF0C8C4 / def test_regression_gate_cases(self): / IMPLICIT-1A270E502FF0C8C4
+  - 来源：`tests/foundation/test_nonfunction_claim_closure.py`
+  - 依赖：—；被引用：—
+- [def test_remote_identity_and_exact_head_binding(self):](../../../tests/test_stage_snapshot_publication.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-C18938F7FFC349E1 / def test_remote_identity_and_exact_head_binding(self): / IMPLICIT-C18938F7FFC349E1
+  - 来源：`tests/test_stage_snapshot_publication.py`
+  - 依赖：—；被引用：—
+- [def test_renderer_outputs_are_projection_limited():](../../../tests/test_adaptive_relational_network_operational.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-7E73954FFEAA718B / def test_renderer_outputs_are_projection_limited(): / IMPLICIT-7E73954FFEAA718B
+  - 来源：`tests/test_adaptive_relational_network_operational.py`
+  - 依赖：—；被引用：—
+- [def test_renderer_summary_contains_claim_ceiling():](../../../tests/test_adaptive_relational_network.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-BED4AB766E9EC408 / def test_renderer_summary_contains_claim_ceiling(): / IMPLICIT-BED4AB766E9EC408
+  - 来源：`tests/test_adaptive_relational_network.py`
+  - 依赖：—；被引用：—
+- [def test_repository_front_doors_validate(self):](../../../tests/test_human_front_door.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-9DB2C32B3FCB7496 / def test_repository_front_doors_validate(self): / IMPLICIT-9DB2C32B3FCB7496
+  - 来源：`tests/test_human_front_door.py`
+  - 依赖：—；被引用：—
+- [def test_representation_hash_mismatch_fails(self):](../../../function-os-candidate/v0.2/tests/test_n7_robust.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-319048F6A8117394 / def test_representation_hash_mismatch_fails(self): / IMPLICIT-319048F6A8117394
+  - 来源：`function-os-candidate/v0.2/tests/test_n7_robust.py`
+  - 依赖：—；被引用：—
+- [def test_representation_type_rejected(self):](../../../function-os-candidate/v0.2/tests/test_n2_robust.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-6AF4B0280D74DD85 / def test_representation_type_rejected(self): / IMPLICIT-6AF4B0280D74DD85
+  - 来源：`function-os-candidate/v0.2/tests/test_n2_robust.py`
+  - 依赖：—；被引用：—
+- [def test_representation_type_unsupported(self):](../../../function-os-candidate/v0.2/tests/test_n3_robust.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-56127351C487B44B / def test_representation_type_unsupported(self): / IMPLICIT-56127351C487B44B
+  - 来源：`function-os-candidate/v0.2/tests/test_n3_robust.py`
+  - 依赖：—；被引用：—
+- [def test_request_schema_positive_and_negative_instances(self):](../../../tests/test_stage_snapshot_publication.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-F9192CB3CCE071C0 / def test_request_schema_positive_and_negative_instances(self): / IMPLICIT-F9192CB3CCE071C0
+  - 来源：`tests/test_stage_snapshot_publication.py`
+  - 依赖：—；被引用：—
+- [def test_resolve_for_request_reads_task_id(self):](../../../tests/test_era_resolver_generalization.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-0917526F0BAB03D1 / def test_resolve_for_request_reads_task_id(self): / IMPLICIT-0917526F0BAB03D1
+  - 来源：`tests/test_era_resolver_generalization.py`
+  - 依赖：—；被引用：—
+- [def test_resolver_reproduces_ci_era_ref(self):](../../../tests/test_era_resolver_generalization.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-4B6E40AFF56B9AD1 / def test_resolver_reproduces_ci_era_ref(self): / IMPLICIT-4B6E40AFF56B9AD1
+  - 来源：`tests/test_era_resolver_generalization.py`
+  - 依赖：—；被引用：—
+- [def test_retired_deployed_reader_is_absent(self):](../../../tests/test_human_front_door.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-3CDD8353FB682633 / def test_retired_deployed_reader_is_absent(self): / IMPLICIT-3CDD8353FB682633
+  - 来源：`tests/test_human_front_door.py`
+  - 依赖：—；被引用：—
 - [def test_reversed_relation_and_activation_intervals_are_rejected():](../../../tests/test_adaptive_relational_network_validation_contract.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-B3D84C4BF411A96D / def test_reversed_relation_and_activation_intervals_are_rejected(): / IMPLICIT-B3D84C4BF411A96D
@@ -2443,64 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-66a500d116f9846f / f"**统一断言上限：** {config\['claim_ceiling'\]}",
   - 来源：`tools/governance/build_human_results.py`
-  - 依赖：—；被引用：—
-- [f"**证据：** \[正式 PR\]({source\['pull_request_url'\]}) / \[1111 回执 PR #{evidence\['relay_pull_request'\]}\]({evidence\['relay_pull_r](../../../tools/operations/stage_snapshot_contract.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-a8882e2904f0ee42 / f"**证据：** \[正式 PR\]({source\['pull_request_url'\]}) / \[1111 回执 PR #{evidence\['relay_pull_request'\]}\]({evidence\['relay_pull_r
-  - 来源：`tools/operations/stage_snapshot_contract.py`
-  - 依赖：—；被引用：—
-- [f"- **成熟度与证据：** {row\['maturity_and_evidence'\]}",](../../../tools/governance/build_human_results.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-a4f4630bd56e9159 / f"- **成熟度与证据：** {row\['maturity_and_evidence'\]}",
-  - 来源：`tools/governance/build_human_results.py`
-  - 依赖：—；被引用：—
-- [f"- **方法/证据类别：** {row\['method_or_evidence_class'\]}",](../../../tools/governance/build_human_results.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-9c7d41ae65d33103 / f"- **方法/证据类别：** {row\['method_or_evidence_class'\]}",
-  - 来源：`tools/governance/build_human_results.py`
-  - 依赖：—；被引用：—
-- [f"- G22 边界/反例证据：缺失（源 boundaries 仅为理论说明，非可检验反例）。需本机笔记/案例表材料。\\n"](../../../tools/build_deliverables.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-cd00af52a84ab88c / f"- G22 边界/反例证据：缺失（源 boundaries 仅为理论说明，非可检验反例）。需本机笔记/案例表材料。\\n"
-  - 来源：`tools/build_deliverables.py`
-  - 依赖：—；被引用：—
-- [f"- Resolved components: `{len(closure\['resolved_components'\])}`",](../../../tools/operations/compute_change_propagation.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-e6b078c4d85f7376 / f"- Resolved components: `{len(closure\['resolved_components'\])}`",
-  - 来源：`tools/operations/compute_change_propagation.py`
-  - 依赖：—；被引用：—
-- [f"- rows with explicit coverage evidence in this pass: {summary\['touched_rows'\]}",](../../../tools/build_unesco_coverage.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-ac739eb51b2ec3e4 / f"- rows with explicit coverage evidence in this pass: {summary\['touched_rows'\]}",
-  - 来源：`tools/build_unesco_coverage.py`
-  - 依赖：—；被引用：—
-- [f"- 机器数据：data/meta-protocols/meta-protocols.json#/protocols/{int(pid\[1:\])-1}\\n\\n"](../../../tools/build_deliverables.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-eee48d13e4fee7ba / f"- 机器数据：data/meta-protocols/meta-protocols.json#/protocols/{int(pid\[1:\])-1}\\n\\n"
-  - 来源：`tools/build_deliverables.py`
-  - 依赖：—；被引用：—
-- [f"boundary_evidence(结构化)。\\n\\n"](../../../tools/build_deliverables.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-cacb916092627a37 / f"boundary_evidence(结构化)。\\n\\n"
-  - 来源：`tools/build_deliverables.py`
-  - 依赖：—；被引用：—
-- [f"cannot claim provenance_verified for source-rights entry '{entry_id}': "](../../../tools/governance/fail_closed_publication_gate.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-4580a57a00d5a8df / f"cannot claim provenance_verified for source-rights entry '{entry_id}': "
-  - 来源：`tools/governance/fail_closed_publication_gate.py`
-  - 依赖：—；被引用：—
-- [f"category {cat} is VERIFIED but has no pinned content_digest_sha256 (F8 violation)",](../../../tests/test_source_rights_gate_enum_consistency.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-f60bee0a4c574d57 / f"category {cat} is VERIFIED but has no pinned content_digest_sha256 (F8 violation)",
-  - 来源：`tests/test_source_rights_gate_enum_consistency.py`
-  - 依赖：—；被引用：—
-- [f"entry '{entry_id}' (source text tampered or unverified)"](../../../tools/governance/fail_closed_publication_gate.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-469a20ec5b0a7f73 / f"entry '{entry_id}' (source text tampered or unverified)"
-  - 来源：`tools/governance/fail_closed_publication_gate.py`
-  - 依赖：—；被引用：—
-- [f"error should cite provenance_verified: {r}")](../../../tests/test_publication_provenance_attack.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-15883b97f97c01c0 / f"error should cite provenance_verified: {r}")
-  - 来源：`tests/test_publication_provenance_attack.py`
   - 依赖：—；被引用：—

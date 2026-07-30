@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [\[#436｜经验法则证伪 — 经验说"先确保生存再追求增长"，但D112说防守强度在接近门槛时反而增大——不是"先防守完再进攻"，而是"防守强度随接近门槛先增后减，进攻是防守衰减的自然结果"\](docs/zh/cases/items/C-0](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0435-C-436-%E7%BB%8F%E9%AA%8C%E6%B3%95%E5%88%99%E8%AF%81%E4%BC%AA%20%E2%80%94%20%E7%BB%8F%E9%AA%8C%E8%AF%B4-%E5%85%88%E7%A1%AE%E4%BF%9D%E7%94%9F%E5%AD%98%E5%86%8D%E8%BF%BD%E6%B1%82%E5%A2%9E%E9%95%BF-%2C%E4%BD%86D112%E8%AF%B4%E9%98%B2%E5%AE%88%E5%BC%BA%E5%BA%A6%E5%9C%A8%E6%8E%A5%E8%BF%91%E9%97%A8%E6%A7%9B%E6%97%B6%E5%8F%8D%E8%80%8C%E5%A2%9E%E5%A4%A7%E2%80%94%E2%80%94%E4%B8%8D%E6%98%AF-%E5%85%88%E9%98%B2%E5%AE%88%E5%AE%8C%E5%86%8D%E8%BF%9B%E6%94%BB-%2C%E8%80%8C%E6%98%AF-%E9%98%B2%E5%AE%88%E5%BC%BA%E5%BA%A6%E9%9A%8F%E6%8E%A5%E8%BF%91%E9%97%A8.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-a3860164bf051041 / \[#436｜经验法则证伪 — 经验说"先确保生存再追求增长"，但D112说防守强度在接近门槛时反而增大——不是"先防守完再进攻"，而是"防守强度随接近门槛先增后减，进攻是防守衰减的自然结果"\](docs/zh/cases/items/C-0
+  - 来源：`统一案例总表/0435-C-436-经验法则证伪 — 经验说-先确保生存再追求增长-,但D112说防守强度在接近门槛时反而增大——不是-先防守完再进攻-,而是-防守强度随接近门.md`
+  - 依赖：D112；被引用：—
 - [\[#474｜神经网络进入exp\[-ln²\] — 连续表征=高斯门控，σ≈σ_opt，ι>0，有智能 / 神经网络进入exp\[-ln²\] - 连续表征=高斯门控, σ≈σ_opt, ι>0, 有智能\](docs/zh/cases/items/](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0472-C-473-%E7%AC%A6%E5%8F%B7AI%E5%8D%A1%E5%9C%A81.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-9c69b1ffad302ab7 / \[#474｜神经网络进入exp\[-ln²\] — 连续表征=高斯门控，σ≈σ_opt，ι>0，有智能 / 神经网络进入exp\[-ln²\] - 连续表征=高斯门控, σ≈σ_opt, ι>0, 有智能\](docs/zh/cases/items/
@@ -2499,8 +2504,3 @@
   - 可搜索名称：NFC-75bf1f21b60040ec / D126三效率归零验证
   - 来源：`data/foundation/evidence/evidence.jsonl`
   - 依赖：D126；被引用：—
-- [D127+D123深层同构](../../../data/foundation/evidence/evidence.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-22f38283a28e704e / D127+D123深层同构
-  - 来源：`data/foundation/evidence/evidence.jsonl`
-  - 依赖：D123, D127；被引用：—

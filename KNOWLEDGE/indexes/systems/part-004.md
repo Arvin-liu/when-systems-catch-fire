@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [{"layer_id": "evidence", "label": "Evidence", "boundary_rule": "validation and evidence status", "model_choice": True},](../../../tools/adaptive_relational_network/projector.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-8e50c01d9e38bd78 / {"layer_id": "evidence", "label": "Evidence", "boundary_rule": "validation and evidence status", "model_choice": True},
+  - 来源：`tools/adaptive_relational_network/projector.py`
+  - 依赖：—；被引用：—
 - [{"network_id": network_ids, "state_id": state_ids, "projection_id": projection_ids},](../../../tools/adaptive_relational_network/validator.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-d803a2bb86d6d484 / {"network_id": network_ids, "state_id": state_ids, "projection_id": projection_ids},
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-feff13018b6f712b / 声明：ARN 记录异质、时序、适应关系；邻接、中心性与网络变化不是真值或因果，因果主张委托给 MCF。
   - 来源：`reports/publication/jin-rise-point-fire-analysis.md`
-  - 依赖：—；被引用：—
-- [处理异质、时序与自适应关系，并把因果主张交回 MCF。](../../../data/architecture/interactive-system-map.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-00eeb962677af392 / 处理异质、时序与自适应关系，并把因果主张交回 MCF。
-  - 来源：`data/architecture/interactive-system-map.json`
   - 依赖：—；被引用：—

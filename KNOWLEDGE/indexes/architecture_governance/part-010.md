@@ -4,6 +4,66 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Type lists, runtime evidence contexts, operations, handlers and continuations are explicit carriers.](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-a63b193b17017bac / Type lists, runtime evidence contexts, operations, handlers and continuations are explicit carriers.
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [Typed layer and encoder/decoder composition are explicit, while cross-artifact routing and conflict policies are absent.](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-740f0cbb861c2737 / Typed layer and encoder/decoder composition are explicit, while cross-artifact routing and conflict policies are absent.
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [Under a precise FinStochSurj-graded distributive Markov functor and a factorization of the convex-image interpretation,](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-57ca5aa8398adabc / Under a precise FinStochSurj-graded distributive Markov functor and a factorization of the convex-image interpretation,
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [Under activation, bounded-data, Hölder source, effective-dimension, width, sample, early-stopping, and near-initializati](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-c904886159ee9e27 / Under activation, bounded-data, Hölder source, effective-dimension, width, sample, early-stopping, and near-initializati
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [Under compact-domain, compact input-family, continuity, and universal-approximator assumptions, the generalized branch/t](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-a6c1338a465a51fb / Under compact-domain, compact input-family, continuity, and universal-approximator assumptions, the generalized branch/t
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [Under explicit Banach-space, compactness, continuity, activation, and norm assumptions, the paper establishes universal-](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-347bc0281f2927de / Under explicit Banach-space, compactness, continuity, activation, and norm assumptions, the paper establishes universal-
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [UNESCO 四位学科理论投影、点火缺口识别与架构 v1.1 缺口补齐](../../../data/discipline-projection/087-execution-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-3b9c92a02ec16e6d / UNESCO 四位学科理论投影、点火缺口识别与架构 v1.1 缺口补齐
+  - 来源：`data/discipline-projection/087-execution-report.md`
+  - 依赖：—；被引用：—
+- [universal = bool(UNIVERSAL.search(text))](../../../tools/foundation/adjudicate_nonfunction_claims.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-5af9d574fb996940 / universal = bool(UNIVERSAL.search(text))
+  - 来源：`tools/foundation/adjudicate_nonfunction_claims.py`
+  - 依赖：—；被引用：—
+- [universal = bool(UNIVERSAL_TERM.search(text))](../../../tools/foundation/adjudicate_function_assets.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-cb8c2469a8eafad4 / universal = bool(UNIVERSAL_TERM.search(text))
+  - 来源：`tools/foundation/adjudicate_function_assets.py`
+  - 依赖：—；被引用：—
+- [UNIVERSAL = re.compile(r"(?:all\|every\|always\|never\|universal\|impossible\|inevitable\|任何\|全部\|所有\|永远\|从不\|普遍\|不可能\|必然)", re.IGNORE](../../../tools/foundation/adjudicate_nonfunction_claims.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-c2dab86be2413a4d / UNIVERSAL = re.compile(r"(?:all\|every\|always\|never\|universal\|impossible\|inevitable\|任何\|全部\|所有\|永远\|从不\|普遍\|不可能\|必然)", re.IGNORE
+  - 来源：`tools/foundation/adjudicate_nonfunction_claims.py`
+  - 依赖：—；被引用：—
+- [Universal approximation establishes existence for broad operator classes with unrestricted model size, data, and optimiz](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-06cdaca4d02202d0 / Universal approximation establishes existence for broad operator classes with unrestricted model size, data, and optimiz
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [UNIVERSAL_TERM = re.compile(r"(所有\|任何\|普遍\|必然\|唯一\|完全\|不可能\|all\\b\|any\\b\|universal\|necessarily\|unique\|impossible)", re.I)](../../../tools/foundation/adjudicate_function_assets.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-40dc18e37eb9a488 / UNIVERSAL_TERM = re.compile(r"(所有\|任何\|普遍\|必然\|唯一\|完全\|不可能\|all\\b\|any\\b\|universal\|necessarily\|unique\|impossible)", re.I)
+  - 来源：`tools/foundation/adjudicate_function_assets.py`
+  - 依赖：—；被引用：—
 - [Unknown paths, unresolved residue, missing profiles or changes to registry, topology, profile policy, generator, planner](../../../docs/architecture/incremental-execution.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-1598524b306633a4 / Unknown paths, unresolved residue, missing profiles or changes to registry, topology, profile policy, generator, planner
@@ -2443,64 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-ee746938324709c8 / \| UNRESOLVED_HIGH_RISK \| 11 \| 5.4% \|
   - 来源：`reports/foundation-architecture/082-independent-acceptance-audit.md`
-  - 依赖：—；被引用：—
-- [\| Ψ₀ unmodified \| ✅ Verified (SHA256 match) \|](../../../reports/external-research/120-source-quality-and-template-risk-audit.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-7e2bfdd84b08fbda / \| Ψ₀ unmodified \| ✅ Verified (SHA256 match) \|
-  - 来源：`reports/external-research/120-source-quality-and-template-risk-audit.md`
-  - 依赖：—；被引用：—
-- [\| Ψ₀, 085 freeze assets, old tables, historical evidence cards \| `NO_CHANGE_WITH_REASON` \| Explicit frozen boundaries. \|](../../../reports/operations/121Q24-current-state-reconciliation.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-17e09b0424014a3f / \| Ψ₀, 085 freeze assets, old tables, historical evidence cards \| `NO_CHANGE_WITH_REASON` \| Explicit frozen boundaries. \|
-  - 来源：`reports/operations/121Q24-current-state-reconciliation.md`
-  - 依赖：—；被引用：—
-- [\| 事实 pending \| 完整保留 \|](../../../outputs/audit/meta-protocol-normative-review-publication-audit-20260711.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-6586548244d3e90e / \| 事实 pending \| 完整保留 \|
-  - 来源：`outputs/audit/meta-protocol-normative-review-publication-audit-20260711.md`
-  - 依赖：—；被引用：—
-- [\| 低层保存 \| L0-L5 回链、历史保存、Charter Gate \| 高层仍保存来源、差异和主体 \| 抽象不能取消事实与伤害 \|](../../../docs/publication/zhiyuan-writing-method.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-d64a656ae442e99b / \| 低层保存 \| L0-L5 回链、历史保存、Charter Gate \| 高层仍保存来源、差异和主体 \| 抽象不能取消事实与伤害 \|
-  - 来源：`docs/publication/zhiyuan-writing-method.md`
-  - 依赖：—；被引用：—
-- [\| 信息增益停止 \| Q13 IterationDelta、吸引子控制、压缩完整性门 \| 无新增认识时停止循环 \| 停止不等于真理收敛 \|](../../../docs/publication/zhiyuan-writing-method.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-faa20a6c32aed346 / \| 信息增益停止 \| Q13 IterationDelta、吸引子控制、压缩完整性门 \| 无新增认识时停止循环 \| 停止不等于真理收敛 \|
-  - 来源：`docs/publication/zhiyuan-writing-method.md`
-  - 依赖：—；被引用：—
-- [\| 医学 \| 理论合理性、与已知医学知识不冲突、可证伪性 \| 临床试验验证、医学指南推荐、风险收益评估、多个独立研究验证 \| L1-L2 \| 理论合理性未验证、临床证据不足、缺乏临床试验、缺乏医学指南推荐、风险收益评估未完成 \| 高 \|](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-f50178416536a14d / \| 医学 \| 理论合理性、与已知医学知识不冲突、可证伪性 \| 临床试验验证、医学指南推荐、风险收益评估、多个独立研究验证 \| L1-L2 \| 理论合理性未验证、临床证据不足、缺乏临床试验、缺乏医学指南推荐、风险收益评估未完成 \| 高 \|
-  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [\| 协议 \| 原定义 \| 修订定义 \| 规范性结论 \| 主要风险数 \| 硬约束数 \| 停止条件数 \| 事实pending数 \| 独立审核 \| 治理状态 \| canonical \|](../../../docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-fcd8ba93e86c1d5a / \| 协议 \| 原定义 \| 修订定义 \| 规范性结论 \| 主要风险数 \| 硬约束数 \| 停止条件数 \| 事实pending数 \| 独立审核 \| 治理状态 \| canonical \|
-  - 来源：`docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md`
-  - 依赖：—；被引用：—
-- [\| 历史学 \| 史料可靠、史料互证、逻辑自洽、反事实讨论 \| 史料链完整、解释共同体共识、跨学科验证、可重复验证 \| L1-L3 \| 史料不足或冲突、解释争议很大、缺乏史料互证、解释未形成共识 \| 中 \|](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-68e86d5e93ad3e14 / \| 历史学 \| 史料可靠、史料互证、逻辑自洽、反事实讨论 \| 史料链完整、解释共同体共识、跨学科验证、可重复验证 \| L1-L3 \| 史料不足或冲突、解释争议很大、缺乏史料互证、解释未形成共识 \| 中 \|
-  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [\| 学科证据制度误配 \| 学科标准套错 \| 证据制度库 \| 重新匹配学科 \|](../../../outputs/getbrain/failure-typology-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-351d9acc02a75dbc / \| 学科证据制度误配 \| 学科标准套错 \| 证据制度库 \| 重新匹配学科 \|
-  - 来源：`outputs/getbrain/failure-typology-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [\| 实证科学统一 \| 可重复实验或观测验证 \| 不可直接声称（pending） \|](../../../outputs/getbrain/project-position-update-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-95b5534eb52b8642 / \| 实证科学统一 \| 可重复实验或观测验证 \| 不可直接声称（pending） \|
-  - 来源：`outputs/getbrain/project-position-update-20260706.md`
-  - 依赖：—；被引用：—
-- [\| 工程学 \| 理论可行性、设计合理性、成本可控 \| 测试验证、仿真验证、制造验证、安全验证 \| L1-L3 \| 理论可行性未验证、设计合理性未验证、成本不可控、测试仿真制造未完成 \| 中 \|](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-79d599e5d1cbe4e6 / \| 工程学 \| 理论可行性、设计合理性、成本可控 \| 测试验证、仿真验证、制造验证、安全验证 \| L1-L3 \| 理论可行性未验证、设计合理性未验证、成本不可控、测试仿真制造未完成 \| 中 \|
-  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [\| 教育学 \| 理论合理性、与已知教育学知识不冲突、可证伪性 \| 教育实验验证、长期追踪验证、个体评估验证、多个独立研究验证 \| L1-L2 \| 理论合理性未验证、教育实验不足、缺乏长期追踪、缺乏个体评估、个体教育建议证据不足 \| 中 \|](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-fae7cf9e8bdca787 / \| 教育学 \| 理论合理性、与已知教育学知识不冲突、可证伪性 \| 教育实验验证、长期追踪验证、个体评估验证、多个独立研究验证 \| L1-L2 \| 理论合理性未验证、教育实验不足、缺乏长期追踪、缺乏个体评估、个体教育建议证据不足 \| 中 \|
-  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
   - 依赖：—；被引用：—

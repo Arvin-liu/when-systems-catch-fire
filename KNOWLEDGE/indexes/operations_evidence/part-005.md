@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [中文：大统一GUT是电磁力、弱核力、强核力在高能μ>μ_GUT时的门控面合并。μ μ_GUT时合并为Λ_GUT,Φ = 1/ln(μ/Λ_GUT)。统一度Ω_after > Ω_before。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0225-D189-%E5%A4%A7%E7%BB%9F%E4%B8%80%E9%97%A8%E6%A7%9B%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-0C399FB7B821BEB2 / 中文：大统一GUT是电磁力、弱核力、强核力在高能μ>μ_GUT时的门控面合并。μ μ_GUT时合并为Λ_GUT,Φ = 1/ln(μ/Λ_GUT)。统一度Ω_after > Ω_before。 / IMPLICIT-0C399FB7B821BEB2
+  - 来源：`统一函数总表/0225-D189-大统一门槛函数.md`
+  - 依赖：—；被引用：—
+- [中文：定投×贷款×学习——可选集扩张的三种同构形态](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0182-C-182-%E5%AE%9A%E6%8A%95%C3%97%E8%B4%B7%E6%AC%BE%C3%97%E5%AD%A6%E4%B9%A0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-03b743c6b4a29aae / 中文：定投×贷款×学习——可选集扩张的三种同构形态
+  - 来源：`统一案例总表/0182-C-182-定投×贷款×学习.md`
+  - 依赖：—；被引用：—
+- [中文：定投×贷款×学习——可选集扩张的三种同构形态 English: Rule-based English rendering pending human r…](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0182-C-182-%E5%AE%9A%E6%8A%95%C3%97%E8%B4%B7%E6%AC%BE%C3%97%E5%AD%A6%E4%B9%A0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-07f224ec1d4be949 / 中文：定投×贷款×学习——可选集扩张的三种同构形态 English: Rule-based English rendering pending human r…
+  - 来源：`统一案例总表/0182-C-182-定投×贷款×学习.md`
+  - 依赖：—；被引用：—
 - [中文：拓扑选择 = argmax{P_collapse, P_sustain} P_collapse = 1 - Πᵢ(1-fᵢ_risk)（风险规避模式） P_sustain = Πⱼfⱼ_cap（能力扩展模式） 选择判据： · 当min(fⱼ_cap) < θ_floor → P_sustain→0 → 选择F_collapse（二选一）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0114-D65-%E4%B9%98%E6%B3%95%E6%8B%93%E6%89%91%E9%80%89%E6%8B%A9%E5%87%BD%E6%95%B0.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-DBB9759D53F37174 / 中文：拓扑选择 = argmax{P_collapse, P_sustain} P_collapse = 1 - Πᵢ(1-fᵢ_risk)（风险规避模式） P_sustain = Πⱼfⱼ_cap（能力扩展模式） 选择判据： · 当min(fⱼ_cap) < θ_floor → P_sustain→0 → 选择F_collapse（二选一） / IMPLICIT-DBB9759D53F37174

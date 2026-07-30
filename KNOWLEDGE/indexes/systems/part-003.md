@@ -499,6 +499,11 @@
   - 可搜索名称：NFC-bc50a3c368b95083 / OrcaRouter智能分流机制验证
   - 来源：`data/foundation/evidence/evidence.jsonl`
   - 依赖：—；被引用：—
+- [Otherwise FAIL HARD. We never fall back to the snapshot date, because on a](../../../tools/governance/build_knowledge_experience.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-d2da9f4d655f2599 / Otherwise FAIL HARD. We never fall back to the snapshot date, because on a
+  - 来源：`tools/governance/build_knowledge_experience.py`
+  - 依赖：—；被引用：—
 - [outputs/audit 与 outputs/collisions 下历史审计/快照文本中的执行位置路径（文档说明类，反映历史执行环境，是否清理待 GPT 决定）。](../../../outputs/audit/d583-portable-source-reference-audit-20260711.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-dd011b533af4a5e0 / outputs/audit 与 outputs/collisions 下历史审计/快照文本中的执行位置路径（文档说明类，反映历史执行环境，是否清理待 GPT 决定）。
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-1589c4a17d2405ae / Yukawa层级验证 — 8维系统-最弱维度ε7=0.05→y7=8.2(对C_exit极度敏感),最强维度ε1=0.9→y1=0.3。y7
   - 来源：`data/foundation/evidence/evidence.jsonl`
-  - 依赖：—；被引用：—
-- [{"layer_id": "evidence", "label": "Evidence", "boundary_rule": "validation and evidence status", "model_choice": True},](../../../tools/adaptive_relational_network/projector.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-8e50c01d9e38bd78 / {"layer_id": "evidence", "label": "Evidence", "boundary_rule": "validation and evidence status", "model_choice": True},
-  - 来源：`tools/adaptive_relational_network/projector.py`
   - 依赖：—；被引用：—

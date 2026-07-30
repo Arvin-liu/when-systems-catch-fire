@@ -2014,6 +2014,21 @@
   - 可搜索名称：IMPLICIT-60C9E5E7C42A2E60 / if paw.get("semantic_review_status") == "FULLTEXT_FETCH_AND_EXTRACTION_VERIFIED_PENDING_SEMANTIC_REVIEW": / IMPLICIT-60C9E5E7C42A2E60
   - 来源：`data/external-research/121A-night-recovery/121A-validator.py`
   - 依赖：—；被引用：—
+- [if proc.stdout.strip() == "true":](../../../tools/governance/gen_source_first_seen.py)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-0747D0CFDB578A5C / if proc.stdout.strip() == "true": / IMPLICIT-0747D0CFDB578A5C / IMPLICIT-5E128A42B3929BBA
+  - 来源：`tools/governance/gen_source_first_seen.py`
+  - 依赖：—；被引用：—
+- [if proc.stdout.strip() == "true":](../../../tools/governance/build_knowledge_experience.py)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-5E128A42B3929BBA / if proc.stdout.strip() == "true": / IMPLICIT-5E128A42B3929BBA / IMPLICIT-0747D0CFDB578A5C
+  - 来源：`tools/governance/build_knowledge_experience.py`
+  - 依赖：—；被引用：—
+- [if proc.stdout.strip() == "true":](../../../tools/governance/run_self_correction.py)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-E6807742B7671CBB / if proc.stdout.strip() == "true": / IMPLICIT-E6807742B7671CBB / IMPLICIT-0747D0CFDB578A5C
+  - 来源：`tools/governance/run_self_correction.py`
+  - 依赖：—；被引用：—
 - [if prov.get("verification_status") == "VERIFIED":](../../../tests/test_publication_gate_fail_closed.py)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-368568104E279F91 / if prov.get("verification_status") == "VERIFIED": / IMPLICIT-368568104E279F91
@@ -2489,18 +2504,3 @@
   - 可搜索名称：T71 / outputs/getbrain/v0.2-function-dependency-graph-20260706.md / T71 / D570
   - 来源：`outputs/getbrain/v0.2-function-dependency-graph-20260706.md`
   - 依赖：—；被引用：—
-- [outputs/getbrain/v0.2-function-dependency-graph-20260706.md](../../../outputs/getbrain/v0.2-function-dependency-graph-20260706.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：T80 / outputs/getbrain/v0.2-function-dependency-graph-20260706.md / T80 / D570
-  - 来源：`outputs/getbrain/v0.2-function-dependency-graph-20260706.md`
-  - 依赖：—；被引用：—
-- [outputs/getbrain/v0.2-function-dependency-graph-20260706.md](../../../outputs/getbrain/v0.2-function-dependency-graph-20260706.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：T81 / outputs/getbrain/v0.2-function-dependency-graph-20260706.md / T81 / D570
-  - 来源：`outputs/getbrain/v0.2-function-dependency-graph-20260706.md`
-  - 依赖：—；被引用：—
-- [O₁(x,y) := D177(参数空间同构)**](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-018252cbca715f7b / O₁(x,y) := D177(参数空间同构)**
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：D177；被引用：—

@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [D127+D123深层同构](../../../data/foundation/evidence/evidence.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-22f38283a28e704e / D127+D123深层同构
+  - 来源：`data/foundation/evidence/evidence.jsonl`
+  - 依赖：D123, D127；被引用：—
 - [D135修正的工程含义 — CAI和EAI应使用部分不同的训练数据,降低G来提高ηgate](../../../data/foundation/evidence/evidence.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-eb7e0fb9589f5461 / D135修正的工程含义 — CAI和EAI应使用部分不同的训练数据,降低G来提高ηgate
@@ -2284,6 +2289,11 @@
   - 可搜索名称：IMPLICIT-6D587CB1851691AC / def fail(msg): / IMPLICIT-6D587CB1851691AC
   - 来源：`tools/validate_get_brain_latest_status.py`
   - 依赖：—；被引用：—
+- [def fail(msg: str) -> int:](../../../tools/governance/check_knowledge_experience_determinism.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-A84FEAD5AE8782FA / def fail(msg: str) -> int: / IMPLICIT-A84FEAD5AE8782FA
+  - 来源：`tools/governance/check_knowledge_experience_determinism.py`
+  - 依赖：—；被引用：—
 - [def fail(msg: str) -> None:](../../../tools/operations/validate_generated_output_authority.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-13056EE5137E212C / def fail(msg: str) -> None: / IMPLICIT-13056EE5137E212C
@@ -2373,6 +2383,11 @@
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-B0FEAA897F6BF4FB / def first_existing_source(anchors: list\[dict\]) -> str \| None: / IMPLICIT-B0FEAA897F6BF4FB
   - 来源：`tools/governance/build_knowledge_experience.py`
+  - 依赖：—；被引用：—
+- [def first_seen(path: str) -> str \| None:](../../../tools/governance/gen_source_first_seen.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-D2D07BD214F0F9E2 / def first_seen(path: str) -> str \| None: / IMPLICIT-D2D07BD214F0F9E2
+  - 来源：`tools/governance/gen_source_first_seen.py`
   - 依赖：—；被引用：—
 - [def first_sentence(text: str, max_len: int = 300) -> str:](../../../scripts/external-research/121_generate_evidence_cards.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
@@ -2488,19 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-CE5D38B5714E6535 / def git_output(args: list\[str\]) -> str: / IMPLICIT-CE5D38B5714E6535
   - 来源：`tools/math_foundation_audit.py`
-  - 依赖：—；被引用：—
-- [def has_errors(self) -> bool:](../../../function-os-candidate/v0.1/function_os/n5_compile_feedback.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-E618DED2AB45684A / def has_errors(self) -> bool: / IMPLICIT-E618DED2AB45684A
-  - 来源：`function-os-candidate/v0.1/function_os/n5_compile_feedback.py`
-  - 依赖：—；被引用：—
-- [def history(self, function_id: str) -> dict:](../../../function-os-candidate/v0.1/function_os/n9_registry_store.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-7864F1225A7CE7E3 / def history(self, function_id: str) -> dict: / IMPLICIT-7864F1225A7CE7E3
-  - 来源：`function-os-candidate/v0.1/function_os/n9_registry_store.py`
-  - 依赖：—；被引用：—
-- [def history(self, function_id: str) -> list:](../../../function-os-candidate/v0.2/function_os/n9_registry.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-C40E10E0A0A9A613 / def history(self, function_id: str) -> list: / IMPLICIT-C40E10E0A0A9A613
-  - 来源：`function-os-candidate/v0.2/function_os/n9_registry.py`
   - 依赖：—；被引用：—
