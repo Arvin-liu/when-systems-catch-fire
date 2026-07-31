@@ -4,6 +4,86 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [validate_mechanism_map(pilot\["m1"\], source, "M1_POST_ACTION_ADJUDICATION")](../../../tools/validate_effectual_mechanism_overlay.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-a927769d25b0ddfa / validate_mechanism_map(pilot\["m1"\], source, "M1_POST_ACTION_ADJUDICATION")
+  - 来源：`tools/validate_effectual_mechanism_overlay.py`
+  - 依赖：—；被引用：—
+- [Validated repository-declared dependency planning, execution, validation and selective materialization only; no real-wor](../../../reports/operations/121Q32I-completion-seal.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-738bf926591f9c31 / Validated repository-declared dependency planning, execution, validation and selective materialization only; no real-wor
+  - 来源：`reports/operations/121Q32I-completion-seal.json`
+  - 依赖：—；被引用：—
+- [value conflict becomes Charter vocabulary without mechanism analysis;](../../../docs/architecture/attention-attractor-control-plane.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-873504a63f00e8c4 / value conflict becomes Charter vocabulary without mechanism analysis;
+  - 来源：`docs/architecture/attention-attractor-control-plane.md`
+  - 依赖：—；被引用：—
+- [Value judgment remains necessary, but it is recorded separately from the factual and mechanism chain.](../../../docs/architecture/mechanism-adjudication-plane.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-b5cc5516c32696ee / Value judgment remains necessary, but it is recorded separately from the factual and mechanism chain.
+  - 来源：`docs/architecture/mechanism-adjudication-plane.md`
+  - 依赖：—；被引用：—
+- [Verification report: local full chain (adjudicate/migrate/validate_foundation/verify_core_claims/verify_079/unittest) PA](../../../data/ops/121q7/121q7-step-ledger.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-c479983909831553 / Verification report: local full chain (adjudicate/migrate/validate_foundation/verify_core_claims/verify_079/unittest) PA
+  - 来源：`data/ops/121q7/121q7-step-ledger.jsonl`
+  - 依赖：—；被引用：—
+- [Violence and Social Orders: A Conceptual Framework for Interpreting Recorded Human History](../../../data/external-research/088-external-source-atlas-v2.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-6d3c4690c01f63b1 / Violence and Social Orders: A Conceptual Framework for Interpreting Recorded Human History
+  - 来源：`data/external-research/088-external-source-atlas-v2.jsonl`
+  - 依赖：—；被引用：—
+- [visible = {key for key, item in components.items() if item\["map_projection"\]\["visible"\]}](../../../tools/generate_interactive_system_map.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-5bd96cb4a64386a9 / visible = {key for key, item in components.items() if item\["map_projection"\]\["visible"\]}
+  - 来源：`tools/generate_interactive_system_map.py`
+  - 依赖：—；被引用：—
+- [warnings.append("T18 evidence_status not corrected in overlay")](../../../tools/foundation/verify_085_architecture_freeze.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-436102ca1181b4c2 / warnings.append("T18 evidence_status not corrected in overlay")
+  - 来源：`tools/foundation/verify_085_architecture_freeze.py`
+  - 依赖：T18；被引用：—
+- [warnings.append(f"CHECK_5: {sid} ANCHOR_VERIFIED but no section anchors (page_count only: {page_count})")](../../../data/external-research/121b-fulltext-batch/121b-validator.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-5b46714b832e41fc / warnings.append(f"CHECK_5: {sid} ANCHOR_VERIFIED but no section anchors (page_count only: {page_count})")
+  - 来源：`data/external-research/121b-fulltext-batch/121b-validator.py`
+  - 依赖：—；被引用：—
+- [what mechanism explanation and claim ceiling are warranted after observation.](../../../reports/architecture/121Q13-baseline-overlap-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-fa4b54d3bd20f556 / what mechanism explanation and claim ceiling are warranted after observation.
+  - 来源：`reports/architecture/121Q13-baseline-overlap-audit.md`
+  - 依赖：—；被引用：—
+- [what the paper supports (specific mechanism, model, dataset)](../../../reports/external-research/121-function-paradigm-fulltext-review-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-e904ae255618f532 / what the paper supports (specific mechanism, model, dataset)
+  - 来源：`reports/external-research/121-function-paradigm-fulltext-review-report.md`
+  - 依赖：—；被引用：—
+- [which alternative mechanisms remain plausible;](../../../docs/architecture/mechanism-adjudication-plane.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-d65125954c7a36a6 / which alternative mechanisms remain plausible;
+  - 来源：`docs/architecture/mechanism-adjudication-plane.md`
+  - 依赖：—；被引用：—
+- [which conclusion cannot be upgraded to a mechanism claim;](../../../docs/architecture/mechanism-adjudication-plane.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-0c40e0a10399f53d / which conclusion cannot be upgraded to a mechanism claim;
+  - 来源：`docs/architecture/mechanism-adjudication-plane.md`
+  - 依赖：—；被引用：—
+- [which tests could distinguish those mechanisms.](../../../docs/architecture/mechanism-adjudication-plane.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-b73bc18036b722e5 / which tests could distinguish those mechanisms.
+  - 来源：`docs/architecture/mechanism-adjudication-plane.md`
+  - 依赖：—；被引用：—
+- [whitespace-only strings no longer satisfy required provenance, alternatives, residue, evidence, claim ceiling, attractor](../../../reports/architecture/121Q23-adaptive-relational-network-validation.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-29c2efa305e7c4ab / whitespace-only strings no longer satisfy required provenance, alternatives, residue, evidence, claim ceiling, attractor
+  - 来源：`reports/architecture/121Q23-adaptive-relational-network-validation.md`
+  - 依赖：—；被引用：—
+- [with self.assertRaisesRegex(ValueError, r"(cannot auto-propagate\|informational_only\|substantive_causal_candidate)"):](../../../tests/test_change_propagation.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-fe902d4cbd9f59d9 / with self.assertRaisesRegex(ValueError, r"(cannot auto-propagate\|informational_only\|substantive_causal_candidate)"):
+  - 来源：`tests/test_change_propagation.py`
+  - 依赖：—；被引用：—
 - [with self.assertRaisesRegex(ValueError, r"(substantive_causal_candidate\|informational_only\|False was expected)"):](../../../tests/test_change_propagation.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-edb7431d9916825d / with self.assertRaisesRegex(ValueError, r"(substantive_causal_candidate\|informational_only\|False was expected)"):
@@ -174,107 +254,107 @@
   - 可搜索名称：NFC-eff7bbec25b2da11 / \| \[C-284\]( ) \| \[最弱因子决定生存域\]( ) \| 暂无内容 / No content \|
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：—；被引用：—
-- [\| \[C-315\]( ) \| \[异地恋断裂 — μ翻转导致dcritical从2000km缩到50km，不是](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/INDEX.md)
+- [\| \[C-315\]( ) \| \[异地恋断裂 — μ翻转导致dcritical从2000km缩到50km，不是](../../../统一案例总表/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-ac875e0653a09a26 / \| \[C-315\]( ) \| \[异地恋断裂 — μ翻转导致dcritical从2000km缩到50km，不是
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D77, D78；被引用：—
-- [\| \[C-353\]( ) \| \[协作中\\\\"说清楚\\\\"优于\\\\"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/INDEX.md)
+- [\| \[C-353\]( ) \| \[协作中\\\\"说清楚\\\\"优于\\\\"](../../../统一案例总表/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-825ca92f69ffb98a / \| \[C-353\]( ) \| \[协作中\\\\"说清楚\\\\"优于\\\\"
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D92；被引用：—
-- [\| \[C-385\]( ) \| \[癌症的Φ极小点极深——癌细胞Λ极低导致Φ极小点比正常细胞更深，更稳定\](<./0384-C-385-癌症的](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/INDEX.md)
+- [\| \[C-385\]( ) \| \[癌症的Φ极小点极深——癌细胞Λ极低导致Φ极小点比正常细胞更深，更稳定\](../../../统一案例总表/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-ec9c00fa6700b643 / \| \[C-385\]( ) \| \[癌症的Φ极小点极深——癌细胞Λ极低导致Φ极小点比正常细胞更深，更稳定\](<./0384-C-385-癌症的
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D164；被引用：—
-- [\| \[C-414\]( ) \| \[器官排斥的门槛翻转——异质组织降低Λ_immune导致自身免疫\](<./0413-C-414-器官排斥的门槛翻转](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/INDEX.md)
+- [\| \[C-414\]( ) \| \[器官排斥的门槛翻转——异质组织降低Λ_immune导致自身免疫\](../../../统一案例总表/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-6ccae284d9ff6c50 / \| \[C-414\]( ) \| \[器官排斥的门槛翻转——异质组织降低Λ_immune导致自身免疫\](<./0413-C-414-器官排斥的门槛翻转
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D160；被引用：—
-- [\| \[C-422\]( ) \| \[城中村改造的门槛碾压逆效应——改造抬高Λ导致原居民被碾压\](<./0421-C-422-城中村改造的门槛碾压逆效应——](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/INDEX.md)
+- [\| \[C-422\]( ) \| \[城中村改造的门槛碾压逆效应——改造抬高Λ导致原居民被碾压\](../../../统一案例总表/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-87b37c9a0cbe0281 / \| \[C-422\]( ) \| \[城中村改造的门槛碾压逆效应——改造抬高Λ导致原居民被碾压\](<./0421-C-422-城中村改造的门槛碾压逆效应——
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D162；被引用：—
-- [\| \[C-450\]( ) \| \[S轨迹确定性预测 — 3维系统θC=](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/INDEX.md)
+- [\| \[C-450\]( ) \| \[S轨迹确定性预测 — 3维系统θC=](../../../统一案例总表/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-0ea202d1c7ca1d7b / \| \[C-450\]( ) \| \[S轨迹确定性预测 — 3维系统θC=
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D115；被引用：—
-- [\| \[C-457\]( ) \| \[乘法系统Shannon熵反常 — 3维乘法系统](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/INDEX.md)
+- [\| \[C-457\]( ) \| \[乘法系统Shannon熵反常 — 3维乘法系统](../../../统一案例总表/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-e7aad552402a815d / \| \[C-457\]( ) \| \[乘法系统Shannon熵反常 — 3维乘法系统
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D117；被引用：—
-- [\| \[C-459\]( ) \| \[加法退化验证 — 同一系统改为加法G=∑fᵢ，Fisher距离有限，A_](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/INDEX.md)
+- [\| \[C-459\]( ) \| \[加法退化验证 — 同一系统改为加法G=∑fᵢ，Fisher距离有限，A_](../../../统一案例总表/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-f5eaf018932f2ea5 / \| \[C-459\]( ) \| \[加法退化验证 — 同一系统改为加法G=∑fᵢ，Fisher距离有限，A_
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D117；被引用：—
-- [\| \[C-462\]( ) \| \[变分唯一性验证 — 3维sigmoid乘法](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/INDEX.md)
+- [\| \[C-462\]( ) \| \[变分唯一性验证 — 3维sigmoid乘法](../../../统一案例总表/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-fc56bc397e19d33f / \| \[C-462\]( ) \| \[变分唯一性验证 — 3维sigmoid乘法
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D111, D118；被引用：—
-- [\| \[C-465\]( ) \| \[恢复力验证 — 从D111偏离10%投入，S_ignition增](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/INDEX.md)
+- [\| \[C-465\]( ) \| \[恢复力验证 — 从D111偏离10%投入，S_ignition增](../../../统一案例总表/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-fc21a91661755964 / \| \[C-465\]( ) \| \[恢复力验证 — 从D111偏离10%投入，S_ignition增
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D111, D118；被引用：—
-- [\| \[C-484\]( ) \| \[乘法纠缠验证 — 8维乘法系统S_](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/INDEX.md)
+- [\| \[C-484\]( ) \| \[乘法纠缠验证 — 8维乘法系统S_](../../../统一案例总表/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-de44e09aab3c0911 / \| \[C-484\]( ) \| \[乘法纠缠验证 — 8维乘法系统S_
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D120, D126；被引用：—
-- [\| \[C-488\]( ) \| \[退相干-退化统一验证 — 8维乘法系统：纯Fisher退化（H=0）时Γ=0.3/年，纯退相干](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/INDEX.md)
+- [\| \[C-488\]( ) \| \[退相干-退化统一验证 — 8维乘法系统：纯Fisher退化（H=0）时Γ=0.3/年，纯退相干](../../../统一案例总表/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-54756b66e1aa6297 / \| \[C-488\]( ) \| \[退相干-退化统一验证 — 8维乘法系统：纯Fisher退化（H=0）时Γ=0.3/年，纯退相干
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D128；被引用：—
-- [\| \[C-491\]( ) \| \[加法系统无退相干 — 同维度加法系统：d_F有上界3.2，Γ_unified上界=3.](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/INDEX.md)
+- [\| \[C-491\]( ) \| \[加法系统无退相干 — 同维度加法系统：d_F有上界3.2，Γ_unified上界=3.](../../../统一案例总表/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-cb97b9c392229cec / \| \[C-491\]( ) \| \[加法系统无退相干 — 同维度加法系统：d_F有上界3.2，Γ_unified上界=3.
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D128；被引用：—
-- [\| \[C-507\]( ) \| \[测地线偏离验证 — 组织退化传染：](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/INDEX.md)
+- [\| \[C-507\]( ) \| \[测地线偏离验证 — 组织退化传染：](../../../统一案例总表/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-0340c2134615b13b / \| \[C-507\]( ) \| \[测地线偏离验证 — 组织退化传染：
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D136；被引用：—
-- [\| \[C-508\]( ) \| \[β-曲率关系验证 — 5维系统：ε=(0.8,0.6,0.4,0.2,0.1)→](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/INDEX.md)
+- [\| \[C-508\]( ) \| \[β-曲率关系验证 — 5维系统：ε=(0.8,0.6,0.4,0.2,0.1)→](../../../统一案例总表/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-8bd1b5e675aa7d30 / \| \[C-508\]( ) \| \[β-曲率关系验证 — 5维系统：ε=(0.8,0.6,0.4,0.2,0.1)→
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D139；被引用：—
-- [\| \[C-509\]( ) \| \[测地线=最优策略验证 — 3维si](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/INDEX.md)
+- [\| \[C-509\]( ) \| \[测地线=最优策略验证 — 3维si](../../../统一案例总表/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-a2cb220471c39e55 / \| \[C-509\]( ) \| \[测地线=最优策略验证 — 3维si
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D111, D139；被引用：—
-- [\| \[C-512\]( ) \| \[最弱维度=曲率奇点验证 — 8维系统中第7维ε₇=0.05（最弱）：该方向](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/INDEX.md)
+- [\| \[C-512\]( ) \| \[最弱维度=曲率奇点验证 — 8维系统中第7维ε₇=0.05（最弱）：该方向](../../../统一案例总表/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-9761635d7806e05c / \| \[C-512\]( ) \| \[最弱维度=曲率奇点验证 — 8维系统中第7维ε₇=0.05（最弱）：该方向
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D111, D139, D87；被引用：—
-- [\| \[C-513\]( ) \| \[测地线唯一性验证 — 3维系统10](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/INDEX.md)
+- [\| \[C-513\]( ) \| \[测地线唯一性验证 — 3维系统10](../../../统一案例总表/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-06c45a1d8caff77d / \| \[C-513\]( ) \| \[测地线唯一性验证 — 3维系统10
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D111, D140；被引用：—
-- [\| \[C-514\]( ) \| \[最弱维度=曲率奇点统一验证 — 8](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/INDEX.md)
+- [\| \[C-514\]( ) \| \[最弱维度=曲率奇点统一验证 — 8](../../../统一案例总表/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-a34dc87854376098 / \| \[C-514\]( ) \| \[最弱维度=曲率奇点统一验证 — 8
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D141；被引用：—
-- [\| \[C-521\]( ) \| \[Yukawa层级验证 — 8维系统](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/INDEX.md)
+- [\| \[C-521\]( ) \| \[Yukawa层级验证 — 8维系统](../../../统一案例总表/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-35bdae6c3f841720 / \| \[C-521\]( ) \| \[Yukawa层级验证 — 8维系统
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D148；被引用：—
-- [\| \[C-542\]( ) \| \[高温超导 — 多门控面共振，Tc远高于单机制预言\](<./0537-C-542-高温超导 — 多门控面共振,Tc远高于单机制预](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/INDEX.md)
+- [\| \[C-542\]( ) \| \[高温超导 — 多门控面共振，Tc远高于单机制预言\](../../../统一案例总表/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-4bb759a50a08a40a / \| \[C-542\]( ) \| \[高温超导 — 多门控面共振，Tc远高于单机制预言\](<./0537-C-542-高温超导 — 多门控面共振,Tc远高于单机制预
   - 来源：`统一案例总表/INDEX.md`
@@ -1014,9 +1094,9 @@
   - 可搜索名称：NFC-793061460d0f3da0 / \|OQ-103-3：OpenAlex 跨源一致性\|同一 117 条 DOI 是否也在 OpenAlex 一致解析。\|OpenAlex 跨源交叉验证（备用试点 1）。\|两源系统性冲突时记录 oracle 差异，不自动判定。\|
   - 来源：`RESULTS/OPEN-QUESTIONS.md`
   - 依赖：—；被引用：—
-- [\|“图上有边/可达”被读成现实因果\|阻断\|系统图与传播图表示声明过的仓库关系；实质因果必须另走 MCF 和证据门禁。\|\[系统图说明\](../docs/architecture/interactive-system-map.md)\|](../../../RESULTS/CORRECTIONS.md)
+- [\|“图上有边/可达”被读成现实因果\|阻断\|系统图与传播图表示声明过的仓库关系；实质因果必须另走 MCF 和证据门禁。\|\[系统图说明\](../../../docs/architecture/interactive-system-map.md)\|](../../../RESULTS/CORRECTIONS.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-4d0ddd50880ee307 / \|“图上有边/可达”被读成现实因果\|阻断\|系统图与传播图表示声明过的仓库关系；实质因果必须另走 MCF 和证据门禁。\|\[系统图说明\](../docs/architecture/interactive-system-map.md)\|
+  - 可搜索名称：NFC-4d0ddd50880ee307 / \|“图上有边/可达”被读成现实因果\|阻断\|系统图与传播图表示声明过的仓库关系；实质因果必须另走 MCF 和证据门禁。\|\[系统图说明\](../../../docs/architecture/interactive-system-map.md)\|
   - 来源：`RESULTS/CORRECTIONS.md`
   - 依赖：—；被引用：—
 - [β-曲率关系验证 — 5维系统-ε=(0.8,0.6,0.4,0.2,0.1)→β_max=γ](../../../data/foundation/evidence/evidence.jsonl)
@@ -1389,7 +1469,7 @@
   - 可搜索名称：NFC-ca54190bd4384e7c / 中文：最弱维度=曲率奇点验证 — 8维系统中第7维ε₇=0.05（最弱）：该方向Fisher度规g₇₇=1/0.05²=400，是其他方向的10-100倍。曲率在ε₇方向发散→β由ε₇决定→D111策略在ε₇方向的级联修正最强。与D87乘法
   - 来源：`统一案例总表/0507-C-512-最弱维度=曲率奇点验证 — 8维系统中第7维ε7=0.05(最弱)-该方向Fisher度规g77=1.md`
   - 依赖：D111, D139, D87；被引用：—
-- [中文：案例说明："We家族"认同被验证但协作系统未建](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0057-C-57-WeWork.md)
+- [中文：案例说明："We家族"认同被验证但协作系统未建](../../../统一案例总表/0057-C-57-WeWork.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-9dc550e4c7b6e506 / 中文：案例说明："We家族"认同被验证但协作系统未建
   - 来源：`统一案例总表/0057-C-57-WeWork.md`
@@ -1759,35 +1839,15 @@
   - 可搜索名称：NFC-bb70f5f57d120218 / 依赖关系不是机制因果。
   - 来源：`ARCHITECTURE.md`
   - 依赖：—；被引用：—
-- [保存已完成迭代证据；局部勘误不自动改变当前能力或系统图。](../../../data/operations/project-components.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-aa5a339326c0312c / 保存已完成迭代证据；局部勘误不自动改变当前能力或系统图。
-  - 来源：`data/operations/project-components.json`
-  - 依赖：—；被引用：—
 - [保存来源事实、版本、范围与证据边界。](../../../data/architecture/interactive-system-map.json)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-cdca5d834202bdf4 / 保存来源事实、版本、范围与证据边界。
   - 来源：`data/architecture/interactive-system-map.json`
   - 依赖：—；被引用：—
-- [保持现实因果候选、仓库依赖与治理同步权限分离，新增增量执行的仓库派生关系。](../../../data/operations/project-components.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-a39bdeb54e18f443 / 保持现实因果候选、仓库依赖与治理同步权限分离，新增增量执行的仓库派生关系。
-  - 来源：`data/operations/project-components.json`
-  - 依赖：—；被引用：—
 - [信息传染的阻断机制有效性待实证](../../../docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-20ea0eb75fb848e9 / 信息传染的阻断机制有效性待实证
   - 来源：`docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md`
-  - 依赖：—；被引用：—
-- [信息性基础数据边界，标记系统图不对基础数据主张独立真理。](../../../data/operations/project-components.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-c2c2585a0cadb683 / 信息性基础数据边界，标记系统图不对基础数据主张独立真理。
-  - 来源：`data/operations/project-components.json`
-  - 依赖：—；被引用：—
-- [信息性系统图边界，不对基础数据主张独立真理或当前状态完整性。](../../../data/operations/project-components.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-ec65f10bc02ea1f5 / 信息性系统图边界，不对基础数据主张独立真理或当前状态完整性。
-  - 来源：`data/operations/project-components.json`
   - 依赖：—；被引用：—
 - [修订记录进入**宪章修订谱系**（与 §6 Fork 谱系同构为可审计树）。](../../../docs/governance/charter-system-r1.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
@@ -2443,64 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-b73f9830ce6fd452 / 因果命题（如：某个因素导致某个社会现象）
   - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [因果命题（如：某个政策导致某个经济结果）](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-643eda7c3a68d3f2 / 因果命题（如：某个政策导致某个经济结果）
-  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [因果结构判定 C；](../../../outputs/getbrain/project-position-update-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-a0940c13e9447a71 / 因果结构判定 C；
-  - 来源：`outputs/getbrain/project-position-update-20260706.md`
-  - 依赖：—；被引用：—
-- [因果识别与运输性深挖](../../../data/external-research/104-deep-dive-queue-105plus.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-2ff465d2d0bca776 / 因果识别与运输性深挖
-  - 来源：`data/external-research/104-deep-dive-queue-105plus.jsonl`
-  - 依赖：—；被引用：—
-- [因果重排分析：L2](../../../outputs/getbrain/classic-problems-benchmark-supplement-20260707.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-d66e5768e8e2017e / 因果重排分析：L2
-  - 来源：`outputs/getbrain/classic-problems-benchmark-supplement-20260707.md`
-  - 依赖：—；被引用：—
-- [因果链](../../../outputs/audit/two-tables-entry-format-audit-20260709.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-b054b23fa93bbb9e / 因果链
-  - 来源：`outputs/audit/two-tables-entry-format-audit-20260709.md`
-  - 依赖：—；被引用：—
-- [因果链** — cause → effect → temporal_order → counterfactual 四要素或机制步骤](../../../docs/two-tables-entry-writing-standard-20260709.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-5544d0608927f949 / 因果链** — cause → effect → temporal_order → counterfactual 四要素或机制步骤
-  - 来源：`docs/two-tables-entry-writing-standard-20260709.md`
-  - 依赖：—；被引用：—
-- [因果链** — 触发 → 机制 → 结果](../../../docs/two-tables-entry-writing-standard-20260709.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-0f7246bdf5320f11 / 因果链** — 触发 → 机制 → 结果
-  - 来源：`docs/two-tables-entry-writing-standard-20260709.md`
-  - 依赖：—；被引用：—
-- [因果链**：A 导致 B 导致 C（cause → effect）](../../../docs/getbrain-book-collision-guide-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-2e335eff60a1457e / 因果链**：A 导致 B 导致 C（cause → effect）
-  - 来源：`docs/getbrain-book-collision-guide-20260708.md`
-  - 依赖：—；被引用：—
-- [因果链分析：L2](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-416d86601ff77292 / 因果链分析：L2
-  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [因果链条过于整齐；](../../../outputs/getbrain/failure-typology-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-bd6a16fc6df376e2 / 因果链条过于整齐；
-  - 来源：`outputs/getbrain/failure-typology-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [因果链须含时间顺序与反事实判断（"若没有 X，则不会 Y"）。](../../../docs/two-tables-entry-writing-standard-20260709.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-710c37582256869b / 因果链须含时间顺序与反事实判断（"若没有 X，则不会 Y"）。
-  - 来源：`docs/two-tables-entry-writing-standard-20260709.md`
-  - 依赖：—；被引用：—
-- [因果链：有积蓄 → 拒绝不合理要求底气↑ → 人生选择权↑](../../../docs/getbrain-book-collision-guide-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-6061568d9108686b / 因果链：有积蓄 → 拒绝不合理要求底气↑ → 人生选择权↑
-  - 来源：`docs/getbrain-book-collision-guide-20260708.md`
   - 依赖：—；被引用：—

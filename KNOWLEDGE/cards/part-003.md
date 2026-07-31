@@ -4,6 +4,66 @@
 
 [返回资产卡总索引](../ASSET-CARDS.md)
 
+<a id="asset-hr-2ad47297310f2b9a"></a>
+## 121Q16 Action Selection
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-2AD47297310F2B9A` · [reports/reality/121Q16-action-selection.md](../../reports/reality/121Q16-action-selection.md)
+- **为什么产生：** 此来源记录了什么：121Q16 Action Selection？
+- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **当前结果：** Status: ACTIONTHRESHOLDMET
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `reports/reality/121Q16-action-selection.md`, `121Q16-ACTION-SELECTION`
+- **演化历史：** 2026-07-15: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `121Q16 Action Selection`, `121Q16-action-selection`
+
+<a id="asset-hr-2bf3c3a1ac552110"></a>
+## 历史函数资产深度裁决与注册表闭合 R1
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-2BF3C3A1AC552110` · [docs/foundation/historical-function-deep-adjudication-20260729.md](../../docs/foundation/historical-function-deep-adjudication-20260729.md)
+- **为什么产生：** 此来源记录了什么：历史函数资产深度裁决与注册表闭合 R1？
+- **当前状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **当前结果：** 本轮把任务 98 的候选 census 推进为第一轮全量、逐项、可重放的注册表闭合。闭合的严格含义是：每个发现项都有唯一 canonical card、一个主身份、M/E 双轴、来源行锚、证明与实证义务、依赖、十门结果、claim ceiling 和一种最终处置；缺少定义或证据的项进入显式 quarantine。闭合不等于所有资产已被证明、验证或外部复现。
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** `T2`, `D182`, `D183`, `D260`
+- **来源与证据：** `docs/foundation/historical-function-deep-adjudication-20260729.md`, `REPOSITORY_HISTORY_SOURCE`
+- **演化历史：** 2026-07-29: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `历史函数资产深度裁决与注册表闭合 R1`, `historical-function-deep-adjudication-20260729`
+
+<a id="asset-hr-2cf0c16a60d1a3af"></a>
+## 104 来源质量审计
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-2CF0C16A60D1A3AF` · [reports/external-research/104-source-quality-audit.md](../../reports/external-research/104-source-quality-audit.md)
+- **为什么产生：** 此来源记录了什么：104 来源质量审计？
+- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **当前结果：** 问题：大小写不一致（ARTICLE vs journalarticle vs journal-article），需标准化。
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `reports/external-research/104-source-quality-audit.md`, `104-SOURCE-QUALITY-AUDIT`
+- **演化历史：** 2026-07-13: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `104 来源质量审计`, `104-source-quality-audit`
+
 <a id="asset-hr-2dd772b06269e251"></a>
 ## Architecture Structure Freeze v1
 
@@ -943,63 +1003,3 @@
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `S2 规范性审核 - 开放边界协议 (Open-Boundary Protocol)`, `S2`
-
-<a id="asset-hr-53d09798ed596327"></a>
-## E4 规范性审核 - 收敛演化协议 (Convergent-Evolution Protocol)
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-53D09798ED596327` · [docs/governance/meta-protocol-reviews/protocols/E4.md](../../docs/governance/meta-protocol-reviews/protocols/E4.md)
-- **为什么产生：** 此来源记录了什么：E4 规范性审核 - 收敛演化协议 (Convergent-Evolution Protocol)？
-- **当前状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
-- **当前结果：** 价值：向安全吸引子、合作稳定、风险降低与系统协调收敛，是降低冲突与风险的正向工具。条件：仅当收敛不强制同质化、保留多样性与未来选择空间时才有价值。伤害：当强制同质化、过早收敛、单一占据全部空间时会伤害共同体（锁死未来）。不可缺少的约束：禁止强制同质化、保留多样性、避免过早收敛、保留未来选择空间。
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `docs/governance/meta-protocol-reviews/protocols/E4.md`, `REPOSITORY_HISTORY_SOURCE`
-- **演化历史：** 2026-07-11: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`
-- **可搜索名称：** `E4 规范性审核 - 收敛演化协议 (Convergent-Evolution Protocol)`, `E4`
-
-<a id="asset-hr-54b0858dd7fe1388"></a>
-## 1. 标题与机器可读前言
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-54B0858DD7FE1388` · [reports/publication/jin-rise-point-fire-analysis.md](../../reports/publication/jin-rise-point-fire-analysis.md)
-- **为什么产生：** 此来源记录了什么：1. 标题与机器可读前言？
-- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **当前结果：** --- title: "IGNITION-20260716-121Q26：金朝崛起为什么这么快——点火分析" taskid: "IGNITION-20260716-121Q26" artifactstatus: "candidaterepositorypublicationanalysis" claimceiling: "mechanismplausible / causalidentificationpending / externalhistoricalverificationrequired" methodversion: "1.1.0" projectmain: "b396c13…
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** `D01`
-- **来源与证据：** `reports/publication/jin-rise-point-fire-analysis.md`, `REPOSITORY_HISTORY_SOURCE`
-- **演化历史：** 2026-07-16: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`
-- **可搜索名称：** `1. 标题与机器可读前言`, `jin-rise-point-fire-analysis`
-
-<a id="asset-hr-552359b3880c984a"></a>
-## Legal Full-Text Resolver Report — IGNITION-121
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-552359B3880C984A` · [reports/external-research/121-legal-fulltext-resolver-report.md](../../reports/external-research/121-legal-fulltext-resolver-report.md)
-- **为什么产生：** 此来源记录了什么：Legal Full-Text Resolver Report — IGNITION-121？
-- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **当前结果：** IGNITION-121 built a reusable, legal full-text resolver for ignition external-research tasks. The resolver operates on a defined protocol that uses only legitimate open-access channels and records every resolution attempt, hash, and failure.
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `reports/external-research/121-legal-fulltext-resolver-report.md`, `121-LEGAL-FULLTEXT-RESOLVER-REPORT`
-- **演化历史：** 2026-07-14: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `Legal Full-Text Resolver Report — IGNITION-121`, `121-legal-fulltext-resolver-report`

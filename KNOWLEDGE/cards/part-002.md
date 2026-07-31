@@ -4,6 +4,46 @@
 
 [返回资产卡总索引](../ASSET-CARDS.md)
 
+<a id="asset-nfc-c349fbdc470b50ab"></a>
+## Meaningful knowledge changes must regenerate the task-102 What's New, subject map, asset cards, reading layers, aliases/
+
+- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-c349fbdc470b50ab` · [llms.txt](../../llms.txt)
+- **为什么产生：** Expose a materially public CROSS_DOMAIN_CORRESPONDENCE and its correction or evidence boundary.
+- **当前状态：** `RETAINED_AS_STRUCTURAL_METAPHOR`
+- **当前结果：** - Meaningful knowledge changes must regenerate the task-102 What's New, subject map, asset cards, reading layers, aliases/supersession, full search and bidirectional dependency projections; these discovery surfaces never override canonical registries or evidence maturity.
+- **双成熟度：** 数学 `M0`；外部证据 `E0`
+- **假设与表述上限：** Analogy or structural metaphor only; no homomorphism, isomorphism or causal identity is established.
+- **未建立：** Do not present registry presence, internal tests, AI agreement or formal appearance as proof, external validation, novelty, peer review or replication.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `llms.txt`
+- **演化历史：** Lineage: NO_NAMED_LINEAGE；Lineage status: CURRENT_SCOPED_RECORD；Reviewer state: SOURCE_TEXT_RULE_ADJUDICATED
+- **最近变化：** Task 100 disposition: RETAINED_AS_STRUCTURAL_METAPHOR
+- **下一步：** No open obligation was recorded.
+- **主题：** `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `NFC-c349fbdc470b50ab`, `Meaningful knowledge changes must regenerate the task-102 What's New, subject map, asset cards, reading layers, aliases/`, `- Meaningful knowledge changes must regenerate the task-102 What's New, subject map, asset cards, reading layers, aliases/supersession, full search and bidirectional dependency projections; these discovery surfaces never override canonical registries or evidence maturity.`
+
+<a id="asset-nfc-d12a007686070f3d"></a>
+## Claim ceiling: this task may establish repository governance, inventory and corrections to the current Ignition model. I
+
+- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-d12a007686070f3d` · [reports/foundation-architecture/098-remote-truth-and-gap.md](../../reports/foundation-architecture/098-remote-truth-and-gap.md)
+- **为什么产生：** Expose a materially public IMPOSSIBILITY_OR_UNIVERSAL_CLAIM and its correction or evidence boundary.
+- **当前状态：** `WITHDRAWN_UNSUPPORTED`
+- **当前结果：** Claim ceiling: this task may establish repository governance, inventory and corrections to the current Ignition model. It cannot establish a new physics theory, solve four-force unification, validate the physics clouds, or prove grand unification possible or impossible.
+- **双成熟度：** 数学 `M0`；外部证据 `E1`
+- **假设与表述上限：** Withdrawn unsupported conclusion retained for lineage only; aliases and renamed structural forms are prohibited.
+- **未建立：** Do not present registry presence, internal tests, AI agreement or formal appearance as proof, external validation, novelty, peer review or replication.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `reports/foundation-architecture/098-remote-truth-and-gap.md`
+- **演化历史：** Lineage: PHYSICS_UNIFICATION_NOGO；Lineage status: WITHDRAWN_NO_REBOUND；Reviewer state: SOURCE_TEXT_RULE_ADJUDICATED
+- **最近变化：** Task 100 disposition: WITHDRAWN_UNSUPPORTED
+- **下一步：** State typed definitions, assumptions and quantifiers; provide a checkable proof or delimit the statement as conjectural.；Search for countermodels inside and outside the declared model class.
+- **主题：** `ARCHITECTURE_GOVERNANCE`
+- **可搜索名称：** `NFC-d12a007686070f3d`, `Claim ceiling: this task may establish repository governance, inventory and corrections to the current Ignition model. I`, `Claim ceiling: this task may establish repository governance, inventory and corrections to the current Ignition model. It cannot establish a new physics theory, solve four-force unification, validate the physics clouds, or prove grand unification possible or impossible.`
+
 <a id="asset-nfc-d30b79cb6b607ade"></a>
 ## 撤回“已经证明物理大一统不可能”，禁止通过“结构性定理”“框架判定”或内部定义回弹。
 
@@ -23,6 +63,26 @@
 - **下一步：** State typed definitions, assumptions and quantifiers; provide a checkable proof or delimit the statement as conjectural.；Search for countermodels inside and outside the declared model class.
 - **主题：** `PHYSICS`, `ARCHITECTURE_GOVERNANCE`
 - **可搜索名称：** `NFC-d30b79cb6b607ade`, `撤回“已经证明物理大一统不可能”，禁止通过“结构性定理”“框架判定”或内部定义回弹。`, `- 撤回“已经证明物理大一统不可能”，禁止通过“结构性定理”“框架判定”或内部定义回弹。`
+
+<a id="asset-nfc-ea55d13b7ba7aeff"></a>
+## [任务 106 合并后真相传播与当前真相调和](../../ITERATION.md)（规范化 ledger / 9 维 impact 引擎 / current-truth 投影 / fail-closed 验证器）。
+
+- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-ea55d13b7ba7aeff` · [RESULTS/RESEARCH-AND-ARTICLES.md](../../RESULTS/RESEARCH-AND-ARTICLES.md)
+- **为什么产生：** Expose a materially public CROSS_DOMAIN_CORRESPONDENCE and its correction or evidence boundary.
+- **当前状态：** `RETAINED_AS_STRUCTURAL_METAPHOR`
+- **当前结果：** - [任务 106 合并后真相传播与当前真相调和](../../ITERATION.md)（规范化 ledger / 9 维 impact 引擎 / current-truth 投影 / fail-closed 验证器）。
+- **双成熟度：** 数学 `M0`；外部证据 `E0`
+- **假设与表述上限：** Analogy or structural metaphor only; no homomorphism, isomorphism or causal identity is established.
+- **未建立：** Do not present registry presence, internal tests, AI agreement or formal appearance as proof, external validation, novelty, peer review or replication.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `RESULTS/RESEARCH-AND-ARTICLES.md`
+- **演化历史：** Lineage: NO_NAMED_LINEAGE；Lineage status: CURRENT_SCOPED_RECORD；Reviewer state: SOURCE_TEXT_RULE_ADJUDICATED
+- **最近变化：** Task 100 disposition: RETAINED_AS_STRUCTURAL_METAPHOR
+- **下一步：** No open obligation was recorded.
+- **主题：** `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `NFC-ea55d13b7ba7aeff`, `[任务 106 合并后真相传播与当前真相调和](../../ITERATION.md)（规范化 ledger / 9 维 impact 引擎 / current-truth 投影 / fail-closed 验证器）。`, `- [任务 106 合并后真相传播与当前真相调和](../../ITERATION.md)（规范化 ledger / 9 维 impact 引擎 / current-truth 投影 / fail-closed 验证器）。`
 
 <a id="asset-nfc-f31cd02c40b70cc7"></a>
 ## 跨域对应 2,178；
@@ -943,63 +1003,3 @@
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `MATHEMATICS`, `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `NC-002 表演化假课与量化指标消解温度回填审计`, `nc-002-performed-fake-class-backfill-audit-20260708`
-
-<a id="asset-hr-2ad47297310f2b9a"></a>
-## 121Q16 Action Selection
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-2AD47297310F2B9A` · [reports/reality/121Q16-action-selection.md](../../reports/reality/121Q16-action-selection.md)
-- **为什么产生：** 此来源记录了什么：121Q16 Action Selection？
-- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **当前结果：** Status: ACTIONTHRESHOLDMET
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `reports/reality/121Q16-action-selection.md`, `121Q16-ACTION-SELECTION`
-- **演化历史：** 2026-07-15: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `121Q16 Action Selection`, `121Q16-action-selection`
-
-<a id="asset-hr-2bf3c3a1ac552110"></a>
-## 历史函数资产深度裁决与注册表闭合 R1
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-2BF3C3A1AC552110` · [docs/foundation/historical-function-deep-adjudication-20260729.md](../../docs/foundation/historical-function-deep-adjudication-20260729.md)
-- **为什么产生：** 此来源记录了什么：历史函数资产深度裁决与注册表闭合 R1？
-- **当前状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
-- **当前结果：** 本轮把任务 98 的候选 census 推进为第一轮全量、逐项、可重放的注册表闭合。闭合的严格含义是：每个发现项都有唯一 canonical card、一个主身份、M/E 双轴、来源行锚、证明与实证义务、依赖、十门结果、claim ceiling 和一种最终处置；缺少定义或证据的项进入显式 quarantine。闭合不等于所有资产已被证明、验证或外部复现。
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** `T2`, `D182`, `D183`, `D260`
-- **来源与证据：** `docs/foundation/historical-function-deep-adjudication-20260729.md`, `REPOSITORY_HISTORY_SOURCE`
-- **演化历史：** 2026-07-29: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `历史函数资产深度裁决与注册表闭合 R1`, `historical-function-deep-adjudication-20260729`
-
-<a id="asset-hr-2cf0c16a60d1a3af"></a>
-## 104 来源质量审计
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-2CF0C16A60D1A3AF` · [reports/external-research/104-source-quality-audit.md](../../reports/external-research/104-source-quality-audit.md)
-- **为什么产生：** 此来源记录了什么：104 来源质量审计？
-- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **当前结果：** 问题：大小写不一致（ARTICLE vs journalarticle vs journal-article），需标准化。
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `reports/external-research/104-source-quality-audit.md`, `104-SOURCE-QUALITY-AUDIT`
-- **演化历史：** 2026-07-13: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `104 来源质量审计`, `104-source-quality-audit`

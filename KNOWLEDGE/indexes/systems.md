@@ -4,9 +4,9 @@
 
 索引按固定 500 条分片，避免单页过大而无法在 GitHub 渲染。分片连续覆盖本主题主归属资产，未按重要性删减。
 
-- [第 001 片](./systems/part-001.md)：1—500；"""Build deterministic Ignition Atlas projections from repository artifacts.""" → data/external-research/088-external-source-atlas-medium.jsonl
-- [第 002 片](./systems/part-002.md)：501—1000；data/external-research/088-external-source-atlas-medium.jsonl → Object D250 defines a mechanism_model within the point-fire framework. Core: 中文：验证自我模型相变需要满足三个标准： **标准1：行为变化标准** Δ_behav
-- [第 003 片](./systems/part-003.md)：1001—1500；Object D251 defines a mechanism_model within the point-fire framework. Core: 中文：时空维度d的稳定性取决于该维度下所有门控面的否决概率是否低于容斥阈值p*。d=4 → with self.assertRaisesRegex(ValueError, r"(cannot auto-propagate\|informational_only\|substantive_causal_candidate)"):
-- [第 004 片](./systems/part-004.md)：1501—2000；with self.assertRaisesRegex(ValueError, r"(substantive_causal_candidate\|informational_only\|False was expected)"): → 因果链：有积蓄 → 拒绝不合理要求底气↑ → 人生选择权↑
-- [第 005 片](./systems/part-005.md)：2001—2500；因此本报告总体上限为：`mechanism_plausible / causal_identification_pending / external_historical_verification_required`。下一项最小状态改变行动 → 验证过程：** 复杂系统的系统状态达到纳什均衡，单方面改变状态会降低稳定性。每个组件根据系统状态调整交互行为，最终达到纳什均衡，单个组件单方面改变状态会降低稳定性。
-- [第 006 片](./systems/part-006.md)：2501—2512；验证过程：** 市场机制的L1层（交易）→ L2层（价格信号）→ L3层（市场秩序）。市场从交易层涌现出价格信号层，再从价格信号层涌现出市场秩序层。 → 黑死病是加速器。它加速了共享机制的失效。人口锐减，税收减少，汗无法再通过共享收入维持别克们的忠诚。别克们开始各自为政，汗的权威成了空壳。这是内部的共享机制崩溃了。
+- [第 001 片](./systems/part-001.md)：1—500；"""Build deterministic Ignition Atlas projections from repository artifacts.""" → D598 系统性钝化索引可见性验证
+- [第 002 片](./systems/part-002.md)：501—1000；D598's complete legacy body was recovered and read. It describes prolonged high pressure, low refusal capacity, weak rep → Object D234 defines a mechanism_model within the point-fire framework. Core: 中文：有效信息 = 带宽 × 分辨率 的组合： I_eff(σ) = H(σ) × I
+- [第 003 片](./systems/part-003.md)：1001—1500；Object D235 defines a mechanism_model within the point-fire framework. Core: 中文：D231三统一定律的Fisher修正： 原三统一：dS/dt≥0 ⟺ dΦ/dt → validate_mechanism_map(pilot\["m0"\], source, "M0_PRE_ACTION_SKETCH")
+- [第 004 片](./systems/part-004.md)：1501—2000；validate_mechanism_map(pilot\["m1"\], source, "M1_POST_ACTION_ADJUDICATION") → 因果命题（如：某个因素导致某个社会现象）
+- [第 005 片](./systems/part-005.md)：2001—2500；因果命题（如：某个政策导致某个经济结果） → 验证结论：**召回层有效，置信度判定需机制级二次层；结构抽取不足是瓶颈**
+- [第 006 片](./systems/part-006.md)：2501—2523；验证过程：** ChatGPT的每个神经元根据局部输入信息自主决定激活状态，无需中央控制。神经元感知局部输入信号，自主决定激活状态，无需将信息传递给中央节点。 → 黑死病是加速器。它加速了共享机制的失效。人口锐减，税收减少，汗无法再通过共享收入维持别克们的忠诚。别克们开始各自为政，汗的权威成了空壳。这是内部的共享机制崩溃了。

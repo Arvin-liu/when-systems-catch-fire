@@ -3102,6 +3102,28 @@ Lean 4, SymPy and Z3 were not available locally. A deterministic Python normaliz
 
 [reports/foundation-architecture/math-proof-backend-report-20260712.md](../reports/foundation-architecture/math-proof-backend-report-20260712.md)
 
+<a id="reading-hr-7cb77f69452eaaf6"></a>
+## Task 107 — Foundation Drift Repair: Incident Report
+
+**状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · **主题：** `MATHEMATICS`, `SYSTEMS`, `COGNITION`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+
+### 1 分钟
+
+Task: IGNITION-FOUNDATION-DRIFT-REPAIR-UNIVERSAL-DISCOVERY-PREFLIGHT-AND-PROPAGATION-CI-PROOF-R1-20260731 Executor: WorkBuddy Formal repo: Arvin-liu/when-systems-catch-fire Branch: agent/foundation-drift-repair-universal-preflight-propagation-ci-proof-r1-20260731 Predecessor: Task 106 (IGNITIONCO… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+
+### 5 分钟
+
+- 来源要点（导航摘录，不得视为当前断言）：主题：Task 107 — Foundation Drift Repair: Incident Report
+- 来源要点（导航摘录，不得视为当前断言）：Task: IGNITION-FOUNDATION-DRIFT-REPAIR-UNIVERSAL-DISCOVERY-PREFLIGHT-AND-PROPAGATION-CI-PROOF-R1-20260731 Executor: WorkBuddy Formal repo: Arvin-liu/when-systems-catch-fire Branch: agent/foundation-drift-repair-universal-preflight-propagation-ci-proof-r1-20260731 Predecessor: Task 106 (IGNITIONCONTINUOUSITERATIONPROPAGATIONCLOSEDCURRENTTRUTHRECONCILEDANDMERG…
+- 来源要点（导航摘录，不得视为当前断言）：主题：1. What actually broke
+- 来源要点（导航摘录，不得视为当前断言）：Task 106 merged (PR #162) but its remote foundation-validation workflow failed before reaching the new propagation-reconciliation step. The failure was not introduced by task 106 — it was latent drift already sitting in main. Task 106's receipt listed four failure modes:
+- 来源要点（导航摘录，不得视为当前断言）：generator:deterministic DEEPADJUDICATIONOUTOFDATE
+- 来源要点（导航摘录，不得视为当前断言）：generator:deterministic NONFUNCTIONCLAIMOUTPUTDRIFT
+
+### 完整阅读
+
+[docs/foundation/task-107-incident-report.md](../docs/foundation/task-107-incident-report.md)
+
 <a id="reading-hr-7d4413587f58d270"></a>
 ## 扩展注释 · P1 接入烟雾测试
 
@@ -4453,7 +4475,7 @@ P4 裁决要点：绝大多数 P4 声明未同时提供两个明确结构、双�
 
 ### 完整阅读
 
-[新故事/INDEX.md](../%E6%96%B0%E6%95%85%E4%BA%8B/INDEX.md)
+[新故事/INDEX.md](../统一案例总表/INDEX.md)
 
 <a id="reading-hr-addcb11c670ad242"></a>
 ## 全语料非函数型断言裁决索引

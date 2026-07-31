@@ -499,11 +499,6 @@
   - 可搜索名称：NFC-fc267d6095e63f0d / 只凭单篇报道推导普遍教育规律；
   - 来源：`outputs/collisions/20260708-teacher-competition/collision-report.md`
   - 依赖：—；被引用：—
-- [只在验证通过且结论边界明确时进入 N9 registry。](../../../function-os-candidate/v0.2/README.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-da467fa570061df5 / 只在验证通过且结论边界明确时进入 N9 registry。
-  - 来源：`function-os-candidate/v0.2/README.md`
-  - 依赖：—；被引用：—
 - [只建立 schema，不生成实际数据。](../../../docs/machine_readable_data_plan.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-dfeb8a2bd7d079bc / 只建立 schema，不生成实际数据。
@@ -558,11 +553,6 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-db38ebda18875c2a / 后续扩展到更多学科前，应先完成证据制度库；
   - 来源：`docs/discipline_kernel_pilot.md`
-  - 依赖：—；被引用：—
-- [后续更新必须生成 revision；发现规格错误、现实定义错误或验证失败时，必要时 rollback。](../../../function-os-candidate/v0.2/README.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-d43c986430970f8f / 后续更新必须生成 revision；发现规格错误、现实定义错误或验证失败时，必要时 rollback。
-  - 来源：`function-os-candidate/v0.2/README.md`
   - 依赖：—；被引用：—
 - [后续每个学科深跑前，应先建立或引用对应证据制度卡片。](../../../docs/evidence_regime_library.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
@@ -829,9 +819,9 @@
   - 可搜索名称：NFC-947286106d7f206a / 如果数据支持，记录“为什么支持”。
   - 来源：`docs/data_integration.md`
   - 依赖：—；被引用：—
-- [如果是强主张，请同时标注断言等级，并说明它属于结构性推论、候选解释，还是已经过外部验证的命题。参阅 \[断言等级说明\](./docs/claim_levels.md)。](../../../CONTRIBUTING.md)
+- [如果是强主张，请同时标注断言等级，并说明它属于结构性推论、候选解释，还是已经过外部验证的命题。参阅 \[断言等级说明\](../../../docs/claim_levels.md)。](../../../CONTRIBUTING.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：NFC-f53b2e7022227437 / 如果是强主张，请同时标注断言等级，并说明它属于结构性推论、候选解释，还是已经过外部验证的命题。参阅 \[断言等级说明\](./docs/claim_levels.md)。
+  - 可搜索名称：NFC-f53b2e7022227437 / 如果是强主张，请同时标注断言等级，并说明它属于结构性推论、候选解释，还是已经过外部验证的命题。参阅 \[断言等级说明\](../../../docs/claim_levels.md)。
   - 来源：`CONTRIBUTING.md`
   - 依赖：—；被引用：—
 - [如果材料不能明确说明证据来源、证据制度、断言等级，则默认 pending。](../../../docs/publication_risk_checklist.md)
@@ -1309,9 +1299,9 @@
   - 可搜索名称：NFC-98987570e463f164 / 当前快照：2026-07-30，任务 102 知识体验入口与探索层。分支提交在普通合并和 `main` 复验前仍是 Candidate；历史版本和关闭证据保留在 Git、CHANGELOG 与原报告中。
   - 来源：`SUMMARY.md`
   - 依赖：—；被引用：—
-- [当前成果从\[人类索引\](./publication/zhiyuan-writing-showcase.md)与 `data/publication/zhiyuan-writing-showcase.json` 读取。AI 不得只抓取作品标题](../../../docs/ai-assistant-usage-reference.md)
+- [当前成果从\[人类索引\](../../../docs/publication/zhiyuan-writing-showcase.md)与 `data/publication/zhiyuan-writing-showcase.json` 读取。AI 不得只抓取作品标题](../../../docs/ai-assistant-usage-reference.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-d2634f91fb542991 / 当前成果从\[人类索引\](./publication/zhiyuan-writing-showcase.md)与 `data/publication/zhiyuan-writing-showcase.json` 读取。AI 不得只抓取作品标题
+  - 可搜索名称：NFC-d2634f91fb542991 / 当前成果从\[人类索引\](../../../docs/publication/zhiyuan-writing-showcase.md)与 `data/publication/zhiyuan-writing-showcase.json` 读取。AI 不得只抓取作品标题
   - 来源：`docs/ai-assistant-usage-reference.md`
   - 依赖：—；被引用：—
 - [当前自我纠错链会自动发现知识资产变化，生成 Claim Delta、影响分析、证据谱系变化、审计发现和整改计划；它检测仓库规则，不宣称自动判断外部真理。](../../../RESULTS/LATEST.md)
@@ -1479,6 +1469,11 @@
   - 可搜索名称：NFC-fa5b2571d0732c95 / 所有规划数据集都有 JSON；
   - 来源：`docs/machine_readable_data_plan.md`
   - 依赖：—；被引用：—
+- [所需的 **公开表面更新** 或 **已验证的无影响决策**。](../../../ITERATION.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-2a08f1aca9a9b56f / 所需的 **公开表面更新** 或 **已验证的无影响决策**。
+  - 来源：`ITERATION.md`
+  - 依赖：—；被引用：—
 - [执行器：QClaw](../../../data/discipline-projection/087-execution-report.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-370508d261417ffe / 执行器：QClaw
@@ -1598,11 +1593,6 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-058486d77cc43ae8 / 把结构推论直接写成外部验证完成的结论。
   - 来源：`data/failure_typology.csv`
-  - 依赖：—；被引用：—
-- [把自己的输出当外部事实证据；](../../../function-os-candidate/v0.2/README.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-2fa34fb87100a3bc / 把自己的输出当外部事实证据；
-  - 来源：`function-os-candidate/v0.2/README.md`
   - 依赖：—；被引用：—
 - [把解释力写成预测力](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
@@ -1869,9 +1859,9 @@
   - 可搜索名称：NFC-31d67cb62a263e72 / 文件路径：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
   - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
   - 依赖：—；被引用：—
-- [文件：\[evidence-regime-library-draft-20260706.md\](evidence-regime-library-draft-20260706.md)](../../../outputs/getbrain/README.md)
+- [文件：\[evidence-regime-library-draft-20260706.md\](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)](../../../outputs/getbrain/README.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-2cbd5826f0ae4a7e / 文件：\[evidence-regime-library-draft-20260706.md\](evidence-regime-library-draft-20260706.md)
+  - 可搜索名称：NFC-2cbd5826f0ae4a7e / 文件：\[evidence-regime-library-draft-20260706.md\](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
   - 来源：`outputs/getbrain/README.md`
   - 依赖：—；被引用：—
 - [文学作品为什么能跨时代有效](../../../data/foundation/claims/claims.jsonl)
@@ -2103,6 +2093,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-4d661b8f171430f2 / 显式编号按稳定 ID 去重；隐式候选按“来源路径 + 归一化标题文本”的 SHA-256 前缀赋予稳定 ID。同一资产在不同页面出现时保留所有来源，不重复创建权威对象。引用不冒充定义；历史源、别名和冲突保留在来源证据中。
   - 来源：`docs/foundation/historical-function-census.md`
+  - 依赖：—；被引用：—
+- [普通合并之后，终端 ledger 状态与合并后证据须定稿，但不得改写已审稿件的语义 lineage。](../../../ITERATION.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-4f267b5bf2a2d9aa / 普通合并之后，终端 ledger 状态与合并后证据须定稿，但不得改写已审稿件的语义 lineage。
+  - 来源：`ITERATION.md`
   - 依赖：—；被引用：—
 - [普通读者能理解的人类结果，写明问题、方法/证据类别、结论、成熟度与 claim ceiling、变化、局限、来源和处置。](../../../CONTRIBUTING.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
@@ -2369,11 +2364,6 @@
   - 可搜索名称：NFC-a5870d6c2e430817 / 机器对应物位于 `data/governance/human-results/` 与 `data/governance/self-correction/`。CI 同时检查两层；缺任一层即失败。 / 机器对应物位于 `data/governance/human-results/` 与 `data/governance/self-correction/`。CI 同时检查两层；缺任一层即失败。
   - 来源：`RESULTS/README.md`
   - 依赖：—；被引用：—
-- [机器记录与人类结果成对生成，并通过统一入口、What's New、主题地图、资产卡、分层阅读、全量搜索、别名与双向依赖在两步内可达。](../../../data/operations/project-components.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-07baea4c34b8b2d6 / 机器记录与人类结果成对生成，并通过统一入口、What's New、主题地图、资产卡、分层阅读、全量搜索、别名与双向依赖在两步内可达。
-  - 来源：`data/operations/project-components.json`
-  - 依赖：—；被引用：—
 - [李清淼参评「市名师培养对象」的硬门槛为市赛二等奖以上；学校评副高普遍排队到 45 岁之后。青年教师以「多锻炼」为由被推上赛场，难以拒绝参赛。](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0803-C-0808-%E8%81%8C%E7%A7%B0%E7%A1%AC%E9%97%A8%E6%A7%9B%E8%A3%B9%E6%8C%9F%E9%9D%92%E5%B9%B4%E6%95%99%E5%B8%88.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-663a3d80253c5967 / 李清淼参评「市名师培养对象」的硬门槛为市赛二等奖以上；学校评副高普遍排队到 45 岁之后。青年教师以「多锻炼」为由被推上赛场，难以拒绝参赛。
@@ -2503,4 +2493,14 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-a95659711a465d73 / 查阅证据制度库；
   - 来源：`outputs/getbrain/failure-typology-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [标准化的文献 dict 或 None](../../../scripts/external-research/openalex_client.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-0c8e98b787fd265c / 标准化的文献 dict 或 None
+  - 来源：`scripts/external-research/openalex_client.py`
+  - 依赖：—；被引用：—
+- [标注 pending** — 写明证据等级；](../../../docs/two-tables-entry-writing-standard-20260709.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-e2c7038d8d07a391 / 标注 pending** — 写明证据等级；
+  - 来源：`docs/two-tables-entry-writing-standard-20260709.md`
   - 依赖：—；被引用：—

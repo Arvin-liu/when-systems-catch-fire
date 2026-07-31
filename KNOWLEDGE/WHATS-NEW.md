@@ -4,6 +4,15 @@
 
 ## 2026
 
+<a id="change-src-hr-7cb77f69452eaaf6"></a>
+### 2026-07-31 · Task 107 — Foundation Drift Repair: Incident Report
+
+- **类型：** `FOUNDATION_OR_GOVERNANCE`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** Task: IGNITION-FOUNDATION-DRIFT-REPAIR-UNIVERSAL-DISCOVERY-PREFLIGHT-AND-PROPAGATION-CI-PROOF-R1-20260731 Executor: WorkBuddy Formal repo: Arvin-liu/when-systems-catch-fire Branch: agent/foundation-drift-repair-universal-preflight-propagation-ci-proof-r1-20260731 Predecessor: Task 106 (IGNITIONCO…
+- **来源：** [task-107-incident-report.md](../docs/foundation/task-107-incident-report.md)
+- **资产卡：** [HR-7CB77F69452EAAF6](./ASSET-CARDS.md#asset-hr-7cb77f69452eaaf6)
+
 <a id="change-chg-102"></a>
 ### 2026-07-30 · 统一知识入口、主题地图、分层阅读和全局检索
 
@@ -2358,7 +2367,7 @@
 - **类型：** `ITERATION_OR_REPOSITORY_RESULT`
 - **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
 - **变化：** 原文件保存该项结果的完整问题、过程与边界。
-- **来源：** [INDEX.md](../%E6%96%B0%E6%95%85%E4%BA%8B/INDEX.md)
+- **来源：** [INDEX.md](../统一案例总表/INDEX.md)
 - **资产卡：** [HR-AD59534793E1D1D7](./ASSET-CARDS.md#asset-hr-ad59534793e1d1d7)
 
 <a id="change-src-hr-a8550987d2a41dab"></a>
@@ -2387,19 +2396,3 @@
 - **变化：** --- title: "证据制度库初稿生成" author: "之元" date: "2026-07-07" ---
 - **来源：** [evidence-regime-library-draft-20260706.md](../outputs/getbrain/evidence-regime-library-draft-20260706.md)
 - **资产卡：** [HR-448288B011711AEF](./ASSET-CARDS.md#asset-hr-448288b011711aef)
-
-<a id="change-chg-105"></a>
-### 2026-07-31 · 任务 105：Function OS v0.2 有界能力基准
-
-- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
-- **状态：** `CURRENT`
-- **变化：** 先预注册再对抗验证；原始目标 PARTIALLY_SUPPORTED_WITH_IDENTIFIED_FAILURES（25 个 false_reject，源自 N2 嵌套相等提取缺陷），修复后目标 SUPPORTED_WITHIN_BOUNDED_DOMAIN。证据上限限定于有界域，不声称完整沙箱化、生产就绪或普遍正确。
-- **来源：** [文章 007](../docs/editorial/articles/007-bounded-trust-function-os-v02-capability-benchmark.md) · [当前结果](../RESULTS/LATEST.md)
-
-<a id="change-chg-104"></a>
-### 2026-07-30 · 任务 104：编辑叙事层与语料关系分析
-
-- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
-- **状态：** `CURRENT`
-- **变化：** 六篇编辑文章 + 语料关系图，作为叙事层与机器注册表、人类结果层刻意分离；首页系统图 NO_MAP_IMPACT。
-- **来源：** [编辑入口](../docs/editorial/README.md)

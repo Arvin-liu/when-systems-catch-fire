@@ -4,6 +4,236 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0016})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0016-C-16-%E7%B1%B3%E5%B0%BC%E5%85%B9%E7%BB%9F%E4%B8%80%E5%9F%83%E5%8F%8A.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-234B18F7BA18DA67 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0016})=1\]. / IMPLICIT-234B18F7BA18DA67
+  - 来源：`统一案例总表/0016-C-16-米尼兹统一埃及.md`
+  - 依赖：—；被引用：—
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0017})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0017-C-17-%E5%90%9B%E5%A3%AB%E5%9D%A6%E4%B8%81%E5%9F%BA%E7%9D%A3%E6%95%99%E5%8C%96.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-A0D0705B05B16A7C / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0017})=1\]. / IMPLICIT-A0D0705B05B16A7C
+  - 来源：`统一案例总表/0017-C-17-君士坦丁基督教化.md`
+  - 依赖：—；被引用：—
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0018})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0018-C-18-%E7%AC%88%E5%A4%9A%E7%8E%8B%E6%9C%9D.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-DE867F334E2A8852 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0018})=1\]. / IMPLICIT-DE867F334E2A8852
+  - 来源：`统一案例总表/0018-C-18-笈多王朝.md`
+  - 依赖：—；被引用：—
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0019})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0019-C-19-%E6%96%B0%E4%B8%AD%E5%9B%BD%E6%88%90%E7%AB%8B.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-B91AE9F2C25968AB / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0019})=1\]. / IMPLICIT-B91AE9F2C25968AB
+  - 来源：`统一案例总表/0019-C-19-新中国成立.md`
+  - 依赖：—；被引用：—
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0020})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0020-C-20-%E6%94%B9%E9%9D%A9%E5%BC%80%E6%94%BE.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-03AD26BBF231445B / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0020})=1\]. / IMPLICIT-03AD26BBF231445B
+  - 来源：`统一案例总表/0020-C-20-改革开放.md`
+  - 依赖：—；被引用：—
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0021})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0021-C-21-%E6%97%A5%E6%9C%AC%E5%A4%A7%E5%8C%96%E6%94%B9%E6%96%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-324B4C9FF5C55AD7 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0021})=1\]. / IMPLICIT-324B4C9FF5C55AD7
+  - 来源：`统一案例总表/0021-C-21-日本大化改新.md`
+  - 依赖：—；被引用：—
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0022})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0022-C-22-%E6%97%A5%E6%9C%AC%E6%98%8E%E6%B2%BB%E7%BB%B4%E6%96%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-858662FEC69FEED1 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0022})=1\]. / IMPLICIT-858662FEC69FEED1
+  - 来源：`统一案例总表/0022-C-22-日本明治维新.md`
+  - 依赖：—；被引用：—
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0023})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0023-C-23-%E6%96%B0%E5%8A%A0%E5%9D%A1%E5%BB%BA%E5%9B%BD.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-0C1BB674A5250C7F / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0023})=1\]. / IMPLICIT-0C1BB674A5250C7F
+  - 来源：`统一案例总表/0023-C-23-新加坡建国.md`
+  - 依赖：—；被引用：—
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0024})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0024-C-24-%E5%BE%B7%E5%9B%BD%E7%A4%BE%E4%BC%9A%E5%B8%82%E5%9C%BA%E7%BB%8F%E6%B5%8E.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-D97472F413E8E9AD / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0024})=1\]. / IMPLICIT-D97472F413E8E9AD
+  - 来源：`统一案例总表/0024-C-24-德国社会市场经济.md`
+  - 依赖：—；被引用：—
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0025})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0025-C-25-%E6%B3%95%E5%9B%BD%E5%A4%A7%E9%9D%A9%E5%91%BD.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-722F143FEBE6A36D / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0025})=1\]. / IMPLICIT-722F143FEBE6A36D
+  - 来源：`统一案例总表/0025-C-25-法国大革命.md`
+  - 依赖：—；被引用：—
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0026})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0026-C-26-%E6%88%88%E5%B0%94%E5%B7%B4%E4%B9%94%E5%A4%AB%E6%94%B9%E9%9D%A9.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-6D37D589E02F3F57 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0026})=1\]. / IMPLICIT-6D37D589E02F3F57
+  - 来源：`统一案例总表/0026-C-26-戈尔巴乔夫改革.md`
+  - 依赖：—；被引用：—
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0027})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0027-C-27-%E6%88%8A%E6%88%8C%E5%8F%98%E6%B3%95.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-817B64651E35BF5B / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0027})=1\]. / IMPLICIT-817B64651E35BF5B
+  - 来源：`统一案例总表/0027-C-27-戊戌变法.md`
+  - 依赖：—；被引用：—
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0028})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0028-C-28-%E4%BF%84%E7%BD%97%E6%96%AF%E4%BC%91%E5%85%8B%E7%96%97%E6%B3%95.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-DB8CF9658C41ED3E / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0028})=1\]. / IMPLICIT-DB8CF9658C41ED3E
+  - 来源：`统一案例总表/0028-C-28-俄罗斯休克疗法.md`
+  - 依赖：—；被引用：—
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0029})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0029-C-29-%E6%97%A5%E6%9C%AC%E6%88%98%E5%90%8E%E6%94%B9%E9%9D%A9.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-D546DC20B0D7CEA4 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0029})=1\]. / IMPLICIT-D546DC20B0D7CEA4
+  - 来源：`统一案例总表/0029-C-29-日本战后改革.md`
+  - 依赖：—；被引用：—
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0030})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0030-C-30-%E5%BD%BC%E5%BE%97%E5%A4%A7%E5%B8%9D%E8%A5%BF%E5%8C%96.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-D0A273BAC03EFDDC / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0030})=1\]. / IMPLICIT-D0A273BAC03EFDDC
+  - 来源：`统一案例总表/0030-C-30-彼得大帝西化.md`
+  - 依赖：—；被引用：—
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0031})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0031-C-31-%E6%B5%B7%E5%B0%94%C2%B7%E5%A1%9E%E6%8B%89%E8%A5%BF.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-35A3B1D227303853 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0031})=1\]. / IMPLICIT-35A3B1D227303853
+  - 来源：`统一案例总表/0031-C-31-海尔·塞拉西.md`
+  - 依赖：—；被引用：—
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0032})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0032-C-32-%E9%9B%85%E5%85%B8%E6%B0%91%E4%B8%BB%E6%94%B9%E9%9D%A9.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-75C8C0EBF98EF3A7 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0032})=1\]. / IMPLICIT-75C8C0EBF98EF3A7
+  - 来源：`统一案例总表/0032-C-32-雅典民主改革.md`
+  - 依赖：—；被引用：—
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0033})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0033-C-33-%E5%B8%8C%E6%8B%89%E5%85%8B%E7%95%A5%E6%94%B9%E9%9D%A9.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-09D0213A02771B32 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0033})=1\]. / IMPLICIT-09D0213A02771B32
+  - 来源：`统一案例总表/0033-C-33-希拉克略改革.md`
+  - 依赖：—；被引用：—
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0034})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0034-C-34-%E8%8B%B1%E5%9B%BD%E5%A4%A7%E5%AE%AA%E7%AB%A0%E2%86%92%E5%85%89%E8%8D%A3%E9%9D%A9%E5%91%BD.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-25C0C1E276D5C267 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0034})=1\]. / IMPLICIT-25C0C1E276D5C267
+  - 来源：`统一案例总表/0034-C-34-英国大宪章→光荣革命.md`
+  - 依赖：—；被引用：—
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0035})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0035-C-35-%E7%BD%97%E6%96%AF%E7%A6%8F%E6%96%B0%E6%94%BF.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-64106D1B5EE9E570 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0035})=1\]. / IMPLICIT-64106D1B5EE9E570
+  - 来源：`统一案例总表/0035-C-35-罗斯福新政.md`
+  - 依赖：—；被引用：—
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0036})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0036-C-36-%E4%B8%AD%E5%9B%BD%E5%9C%9F%E5%9C%B0%E6%94%B9%E9%9D%A9.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-BC495A58531F15C3 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0036})=1\]. / IMPLICIT-BC495A58531F15C3
+  - 来源：`统一案例总表/0036-C-36-中国土地改革.md`
+  - 依赖：—；被引用：—
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0037})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0037-C-37-%E9%9F%A9%E5%9B%BD%E6%96%B0%E6%9D%91%E8%BF%90%E5%8A%A8.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-F753D4C5497B5338 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0037})=1\]. / IMPLICIT-F753D4C5497B5338
+  - 来源：`统一案例总表/0037-C-37-韩国新村运动.md`
+  - 依赖：—；被引用：—
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0038})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0038-C-38-%E5%8C%97%E6%AC%A7%E7%A6%8F%E5%88%A9%E5%9B%BD%E5%AE%B6.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-32DA88BE241346AE / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0038})=1\]. / IMPLICIT-32DA88BE241346AE
+  - 来源：`统一案例总表/0038-C-38-北欧福利国家.md`
+  - 依赖：—；被引用：—
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0039})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0039-C-39-%E7%BE%8E%E5%9B%BD%E7%A6%81%E9%85%92%E4%BB%A4.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-F6C6BC8C16B739DF / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0039})=1\]. / IMPLICIT-F6C6BC8C16B739DF
+  - 来源：`统一案例总表/0039-C-39-美国禁酒令.md`
+  - 依赖：—；被引用：—
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0040})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0040-C-40-%E4%B8%AD%E5%9B%BD%E8%AE%A1%E5%88%92%E7%94%9F%E8%82%B2.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-234874FA25B7AD1F / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0040})=1\]. / IMPLICIT-234874FA25B7AD1F
+  - 来源：`统一案例总表/0040-C-40-中国计划生育.md`
+  - 依赖：—；被引用：—
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0041})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0041-C-41-%E8%8B%B1%E5%9B%BDNHS.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-6D3E29AE7BD9C03C / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0041})=1\]. / IMPLICIT-6D3E29AE7BD9C03C
+  - 来源：`统一案例总表/0041-C-41-英国NHS.md`
+  - 依赖：—；被引用：—
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0042})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0042-C-42-%E6%B4%8B%E5%8A%A1%E8%BF%90%E5%8A%A8.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-8216420A31C8B04E / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0042})=1\]. / IMPLICIT-8216420A31C8B04E
+  - 来源：`统一案例总表/0042-C-42-洋务运动.md`
+  - 依赖：—；被引用：—
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0043})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0043-C-43-%E5%9D%A6%E5%BF%97%E9%BA%A6%E7%89%B9%E6%94%B9%E9%9D%A9.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-A6B5683AD1E85259 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0043})=1\]. / IMPLICIT-A6B5683AD1E85259
+  - 来源：`统一案例总表/0043-C-43-坦志麦特改革.md`
+  - 依赖：—；被引用：—
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0044})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0044-C-44-%E4%BA%9A%E5%8E%86%E5%B1%B1%E5%A4%A7%E4%BA%8C%E4%B8%96%E5%BA%9F%E5%A5%B4.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-6E7C25D83DD2CFEC / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0044})=1\]. / IMPLICIT-6E7C25D83DD2CFEC
+  - 来源：`统一案例总表/0044-C-44-亚历山大二世废奴.md`
+  - 依赖：—；被引用：—
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0045})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0045-C-45-%E5%8D%97%E9%9D%9E%E8%BD%AC%E5%9E%8B.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-002A36F0DFF2B2AE / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0045})=1\]. / IMPLICIT-002A36F0DFF2B2AE
+  - 来源：`统一案例总表/0045-C-45-南非转型.md`
+  - 依赖：—；被引用：—
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0046})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0046-C-46-%E6%AC%A7%E7%9B%9F.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-53135DEFE2E503AB / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0046})=1\]. / IMPLICIT-53135DEFE2E503AB
+  - 来源：`统一案例总表/0046-C-46-欧盟.md`
+  - 依赖：—；被引用：—
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0047})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0047-C-47-%E5%BA%87%E9%9A%86%E4%B8%BB%E4%B9%89.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-8BBAEB21F54FB1A8 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0047})=1\]. / IMPLICIT-8BBAEB21F54FB1A8
+  - 来源：`统一案例总表/0047-C-47-庇隆主义.md`
+  - 依赖：—；被引用：—
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0048})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0048-C-48-%E7%8E%8B%E5%AE%89%E7%9F%B3%E5%8F%98%E6%B3%95.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-FABAC4E16F273E07 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0048})=1\]. / IMPLICIT-FABAC4E16F273E07
+  - 来源：`统一案例总表/0048-C-48-王安石变法.md`
+  - 依赖：—；被引用：—
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0049})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0049-C-49-%E5%87%AF%E6%9C%AB%E5%B0%94%E6%94%B9%E9%9D%A9.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-D43BACB6D5E6CD15 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0049})=1\]. / IMPLICIT-D43BACB6D5E6CD15
+  - 来源：`统一案例总表/0049-C-49-凯末尔改革.md`
+  - 依赖：—；被引用：—
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0050})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0050-C-50-%E5%8D%8E%E4%B8%BA%E5%91%98%E5%B7%A5%E6%8C%81%E8%82%A1.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-D05F7C49AAEE4B65 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0050})=1\]. / IMPLICIT-D05F7C49AAEE4B65
+  - 来源：`统一案例总表/0050-C-50-华为员工持股.md`
+  - 依赖：—；被引用：—
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0051})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0051-C-51-%E4%B8%B0%E7%94%B0%E7%94%9F%E4%BA%A7%E6%96%B9%E5%BC%8F.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-0D5A35939FD2DCDA / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0051})=1\]. / IMPLICIT-0D5A35939FD2DCDA
+  - 来源：`统一案例总表/0051-C-51-丰田生产方式.md`
+  - 依赖：—；被引用：—
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0052})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0052-C-52-%E5%A5%88%E9%A3%9E%E6%96%87%E5%8C%96.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-737C131DEE826BA8 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0052})=1\]. / IMPLICIT-737C131DEE826BA8
+  - 来源：`统一案例总表/0052-C-52-奈飞文化.md`
+  - 依赖：—；被引用：—
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0053})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0053-C-53-%E6%99%A8%E6%98%9F%E8%87%AA%E7%AE%A1%E7%90%86.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-03D34CCA2C29B1C9 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0053})=1\]. / IMPLICIT-03D34CCA2C29B1C9
+  - 来源：`统一案例总表/0053-C-53-晨星自管理.md`
+  - 依赖：—；被引用：—
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0054})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0054-C-54-%E5%BE%AE%E8%BD%AF%E6%96%87%E5%8C%96%E8%BD%AC%E5%9E%8B.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-A6B41704E0D2FDF7 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0054})=1\]. / IMPLICIT-A6B41704E0D2FDF7
+  - 来源：`统一案例总表/0054-C-54-微软文化转型.md`
+  - 依赖：—；被引用：—
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0055})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0055-C-55-%E8%8B%B9%E6%9E%9C1997%E5%9B%9E%E5%BD%92.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-D493412752F3ED29 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0055})=1\]. / IMPLICIT-D493412752F3ED29
+  - 来源：`统一案例总表/0055-C-55-苹果1997回归.md`
+  - 依赖：—；被引用：—
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0056})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0056-C-56-AOL%2B%E6%97%B6%E4%BB%A3%E5%8D%8E%E7%BA%B3.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-F0647315EA03A14E / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0056})=1\]. / IMPLICIT-F0647315EA03A14E
+  - 来源：`统一案例总表/0056-C-56-AOL+时代华纳.md`
+  - 依赖：—；被引用：—
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0057})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0057-C-57-WeWork.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-7C54CDA0BC237FAF / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0057})=1\]. / IMPLICIT-7C54CDA0BC237FAF
+  - 来源：`统一案例总表/0057-C-57-WeWork.md`
+  - 依赖：—；被引用：—
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0058})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0058-C-58-%E6%81%92%E5%A4%A7.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-C771946160C91AAB / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0058})=1\]. / IMPLICIT-C771946160C91AAB
+  - 来源：`统一案例总表/0058-C-58-恒大.md`
+  - 依赖：—；被引用：—
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0059})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0059-C-59-%E8%B0%B7%E6%AD%8C20%25%E6%97%B6%E9%97%B4.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-4FA3B9B0C487B03C / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0059})=1\]. / IMPLICIT-4FA3B9B0C487B03C
+  - 来源：`统一案例总表/0059-C-59-谷歌20%时间.md`
+  - 依赖：—；被引用：—
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0060})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0060-C-60-%E5%AE%89%E7%84%B6.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-83692E4C4A0EE6C0 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0060})=1\]. / IMPLICIT-83692E4C4A0EE6C0
+  - 来源：`统一案例总表/0060-C-60-安然.md`
+  - 依赖：—；被引用：—
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0061})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0061-C-61-Theranos.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-D9033A9D73164EF3 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0061})=1\]. / IMPLICIT-D9033A9D73164EF3
+  - 来源：`统一案例总表/0061-C-61-Theranos.md`
+  - 依赖：—；被引用：—
 - [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0062})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0062-C-62-%E5%AE%8B%E6%9C%9D.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-AFA6352BB29A5198 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0062})=1\]. / IMPLICIT-AFA6352BB29A5198
@@ -2273,234 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-6FBDB0339DF9BB98 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0515})=1\]. / IMPLICIT-6FBDB0339DF9BB98
   - 来源：`统一案例总表/0510-C-515-度规扰动传播验证 — 组织文化变革-新CEO上任→H从0.8→0.3(遮蔽降低)→经济维度1周内感知→社交维度3周→心理维度8周。传播延迟与.md`
-  - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0516})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0511-C-516-%E4%B8%89%E9%98%B6%E6%AE%B5%E6%9B%B2%E7%8E%87%E7%A9%BF%E8%B6%8A%E9%AA%8C%E8%AF%81%20%E2%80%94%20%E5%88%9B%E4%B8%9A%E5%85%AC%E5%8F%B85%E5%B9%B4%E8%BD%A8%E8%BF%B9-%CE%B2%E4%BB%8E0.2%E2%86%923.8%E2%86%920.3%2CR_cog%E4%BB%8E0.01%E2%86%920.45%E2%86%920.02%2C%E4%B8%A4%E8%80%85%E5%AE%8C%E5%85%A8%E5%90%8C%E6%AD%A5%E3%80%82%E9%98%B6%E6%AE%B52%E5%B3%B0%E5%80%BC%E5%A4%84%E7%AD%96.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-FFDC812355883E1F / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0516})=1\]. / IMPLICIT-FFDC812355883E1F
-  - 来源：`统一案例总表/0511-C-516-三阶段曲率穿越验证 — 创业公司5年轨迹-β从0.2→3.8→0.3,R_cog从0.01→0.45→0.02,两者完全同步。阶段2峰值处策.md`
-  - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0517})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0512-C-517-%E8%AE%A4%E7%9F%A5%E5%BC%95%E5%8A%9B%E6%B3%A2%E9%AA%8C%E8%AF%81%20%E2%80%94%202008%E9%87%91%E8%9E%8D%E5%8D%B1%E6%9C%BA-%E9%87%91%E8%9E%8D%E7%BB%B4%E5%BA%A6%CE%B5_fin%E7%AA%81%E7%84%B6%E4%B8%8B%E9%99%8D%E2%86%92Fisher%E5%BA%A6%E8%A7%84%E8%B7%B3%E5%8F%98%E2%86%921%E4%B8%AA%E6%9C%88%E5%90%8E%E5%AE%9E%E4%BD%93%E7%BB%8F%E6%B5%8E%E6%84%9F%E7%9F%A5%E2%86%923%E4%B8%AA%E6%9C%88%E5%90%8E%E5%B0%B1%E4%B8%9A%E5%B8%82%E5%9C%BA%E5%8F%97%E5%BD%B1%E5%93%8D%E2%86%926%E4%B8%AA%E6%9C%88.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-A6EAD0976076B0B2 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0517})=1\]. / IMPLICIT-A6EAD0976076B0B2
-  - 来源：`统一案例总表/0512-C-517-认知引力波验证 — 2008金融危机-金融维度ε_fin突然下降→Fisher度规跳变→1个月后实体经济感知→3个月后就业市场受影响→6个月.md`
-  - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0518})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0513-C-518-%E8%A7%84%E8%8C%83%E7%A0%B4%E7%BC%BA%E9%AA%8C%E8%AF%81%20%E2%80%94%20%E5%88%9B%E4%B8%9A%E5%9B%A2%E9%98%9F-3%E4%BA%BA%E5%9B%A2%E9%98%9F%28%E6%89%80%E6%9C%89%CE%B5i-%CE%B8C%29%E2%86%92S3%E5%AE%8C%E5%85%A8%E5%AF%B9%E7%A7%B0%2C%E8%A7%92%E8%89%B2%E5%8F%AF%E4%BA%92%E6%8D%A2%E3%80%82%E5%8A%A0%E5%85%A5%E6%8A%95%E8%B5%84%E4%BA%BA%E5%90%8E%28C_exit%E2%86%91%E2%86%92%CE%B5_econ%E2%86%93%29%E2%86%92S3%E7%A0%B4%E7%BC%BA%E5%88%B0.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-FD0D783E49C08B05 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0518})=1\]. / IMPLICIT-FD0D783E49C08B05
-  - 来源：`统一案例总表/0513-C-518-规范破缺验证 — 创业团队-3人团队(所有εi-θC)→S3完全对称,角色可互换。加入投资人后(C_exit↑→ε_econ↓)→S3破缺到.md`
-  - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0519})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0514-C-519-Higgs%E7%9B%B8%E5%8F%98%E9%AA%8C%E8%AF%81%20%E2%80%94%20%E8%81%8C%E4%B8%9A%E9%80%89%E6%8B%A9-%CE%BC2%3D0.8%28%E5%86%85%E5%9C%A8%E9%A9%B1%E5%8A%A8%E5%8A%9B%29%2C%CE%A3C_exit%E4%BB%8E0.2%E2%86%920.6%E2%86%920.9%E2%86%921.0%E2%86%921.2-v_eff%E4%BB%8E0.58%E2%86%92.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-20B9960694FA3B1A / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0519})=1\]. / IMPLICIT-20B9960694FA3B1A
-  - 来源：`统一案例总表/0514-C-519-Higgs相变验证 — 职业选择-μ2=0.8(内在驱动力),ΣC_exit从0.2→0.6→0.9→1.0→1.2-v_eff从0.58→.md`
-  - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0520})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0515-C-520-Weinberg%E8%A7%92%E9%AA%8C%E8%AF%81%20%E2%80%94%20%E4%B8%89%E4%B8%AA%E7%BB%B4%E5%BA%A6-%E5%BF%83%E7%90%86%CE%B1%3D5%E2%86%92%CE%B8_cog%3D81%C2%B0%E2%86%92%E7%BA%AF%E9%97%A8%E6%8E%A7%28-%E6%83%B3%E9%80%9A-%E6%98%AF%E8%B4%A8%E5%8F%98%29%3B%E6%8A%80%E8%83%BD%CE%B1%3D1%E2%86%92%CE%B8_cog%3D45%C2%B0%E2%86%92%E6%B7%B7%E5%90%88%3B%E7%BB%8F%E6%B5%8E%CE%B1.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-0C891351B2333BBA / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0520})=1\]. / IMPLICIT-0C891351B2333BBA
-  - 来源：`统一案例总表/0515-C-520-Weinberg角验证 — 三个维度-心理α=5→θ_cog=81°→纯门控(-想通-是质变);技能α=1→θ_cog=45°→混合;经济α.md`
-  - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0521})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0516-C-521-Yukawa%E5%B1%82%E7%BA%A7%E9%AA%8C%E8%AF%81%20%E2%80%94%208%E7%BB%B4%E7%B3%BB%E7%BB%9F-%E6%9C%80%E5%BC%B1%E7%BB%B4%E5%BA%A6%CE%B57%3D0.05%E2%86%92y7%3D8.2%28%E5%AF%B9C_exit%E6%9E%81%E5%BA%A6%E6%95%8F%E6%84%9F%29%2C%E6%9C%80%E5%BC%BA%E7%BB%B4%E5%BA%A6%CE%B51%3D0.9%E2%86%92y1%3D0.3%E3%80%82y7.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-5EA15F5D6AAB4CC9 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0521})=1\]. / IMPLICIT-5EA15F5D6AAB4CC9
-  - 来源：`统一案例总表/0516-C-521-Yukawa层级验证 — 8维系统-最弱维度ε7=0.05→y7=8.2(对C_exit极度敏感),最强维度ε1=0.9→y1=0.3。y7.md`
-  - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0522})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0517-C-522-%E8%B7%91%E5%8A%A8%E8%80%A6%E5%90%88%E9%AA%8C%E8%AF%81%20%E2%80%94%20%E6%8A%95%E8%B5%84%E5%86%B3%E7%AD%96-%E7%A7%92%E7%BA%A7%E8%A7%82%E6%B5%8B%28%CE%BC_cog%3D1%E7%A7%92%29%E2%86%92%CE%B5_eff%E2%89%880.1%28%E5%99%AA%E5%A3%B0%E4%B8%BB%E5%AF%BC%2C%E7%9C%8B%E4%B8%8D%E5%87%BA%E5%B7%AE%E5%BC%82%29%3B%E6%97%A5%E7%BA%A7%E8%A7%82%E6%B5%8B%E2%86%92%CE%B5_eff%E2%89%880.5%3B%E5%B9%B4%E7%BA%A7%E8%A7%82%E6%B5%8B.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-052234B5ADB273BB / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0522})=1\]. / IMPLICIT-052234B5ADB273BB
-  - 来源：`统一案例总表/0517-C-522-跑动耦合验证 — 投资决策-秒级观测(μ_cog=1秒)→ε_eff≈0.1(噪声主导,看不出差异);日级观测→ε_eff≈0.5;年级观测.md`
-  - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0523})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0518-C-523-%E4%B8%8D%E7%A1%AE%E5%AE%9A%E6%80%A7%E5%8E%9F%E7%90%86%20%E2%80%94%20Fisher%E4%BF%A1%E6%81%AF%E5%BA%A6%E8%A7%84%E7%9A%84%E5%87%A0%E4%BD%95%E5%BF%85%E7%84%B6%2C%E7%AE%97%E7%AC%A6%E4%B8%8D%E5%AF%B9%E6%98%93%E6%98%AF%E5%BA%A6%E8%A7%84%E9%9D%9E%E5%AF%B9%E8%A7%92%E7%9A%84%E4%BB%A3%E6%95%B0%E8%A1%A8%E7%8E%B0.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-C6CE6753FBD7EF03 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0523})=1\]. / IMPLICIT-C6CE6753FBD7EF03
-  - 来源：`统一案例总表/0518-C-523-不确定性原理 — Fisher信息度规的几何必然,算符不对易是度规非对角的代数表现.md`
-  - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0524})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0519-C-524-%E9%87%8F%E5%AD%90%E9%9A%A7%E7%A9%BF%20%E2%80%94%20%E5%AD%98%E6%B4%BB%E5%8C%BA%E6%8B%93%E6%89%91%E8%BF%9E%E9%80%9A%2C%E4%BD%8E%E5%AD%98%E6%B4%BB%E2%89%A0%E6%AD%BB%E4%BA%A1%2CB%28%E5%8A%BF%E5%9E%92%E5%86%85%29-0.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-649265048FD43E77 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0524})=1\]. / IMPLICIT-649265048FD43E77
-  - 来源：`统一案例总表/0519-C-524-量子隧穿 — 存活区拓扑连通,低存活≠死亡,B(势垒内)-0.md`
-  - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0525})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0520-C-525-%E5%AE%8F%E8%A7%82%E9%80%80%E7%9B%B8%E5%B9%B2%20%E2%80%94%20N_env%E4%BB%8E1%E5%88%B01023%E4%BD%BF%CE%93%E5%8F%9820%2B%E9%87%8F%E7%BA%A7.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-5824F97C8F99E7C6 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0525})=1\]. / IMPLICIT-5824F97C8F99E7C6
-  - 来源：`统一案例总表/0520-C-525-宏观退相干 — N_env从1到1023使Γ变20+量级.md`
-  - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0526})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0521-C-526-%E9%87%8F%E5%AD%90%E8%AE%A1%E7%AE%97%E4%BC%98%E8%B6%8A%E6%80%A7%20%E2%80%94%202n%E7%BB%B4%E5%AD%98%E6%B4%BB%E5%8C%BA%E6%90%9C%E7%B4%A2%2B2n%E7%BB%B4%E9%97%A8%E6%8E%A7%E9%A3%8E%E9%99%A9%2C%E5%90%8C%E4%B8%80%E7%BB%93%E6%9E%84%E4%B8%A4%E9%9D%A2.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-626057E7DF0FC23C / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0526})=1\]. / IMPLICIT-626057E7DF0FC23C
-  - 来源：`统一案例总表/0521-C-526-量子计算优越性 — 2n维存活区搜索+2n维门控风险,同一结构两面.md`
-  - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0527})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0522-C-527-EPR%E6%82%96%E8%AE%BA%20%E2%80%94%20%E5%B1%80%E5%9F%9F%E6%80%A7%E5%92%8C%E5%AE%9E%E5%9C%A8%E6%80%A7%E6%98%AF%E8%BF%9E%E7%BB%AD%E5%9B%A0%E5%AD%90%E4%B8%8D%E6%98%AF%E5%B8%83%E5%B0%94%E9%87%8F%2CB%3D%CE%B5_loc%C3%97%CE%B5_real%E2%89%880.9.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-F87AA045BBFDAEC8 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0527})=1\]. / IMPLICIT-F87AA045BBFDAEC8
-  - 来源：`统一案例总表/0522-C-527-EPR悖论 — 局域性和实在性是连续因子不是布尔量,B=ε_loc×ε_real≈0.9.md`
-  - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0528})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0523-C-528-%E6%97%B6%E9%97%B4%E7%AE%AD%E5%A4%B4%20%E2%80%94%20d%CE%A6.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-DCE49AF8C575F26C / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0528})=1\]. / IMPLICIT-DCE49AF8C575F26C
-  - 来源：`统一案例总表/0523-C-528-时间箭头 — dΦ.md`
-  - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0529})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0524-C-529-%E9%BA%A6%E5%85%8B%E6%96%AF%E9%9F%A6%E5%A6%96%20%E2%80%94%20%E4%BF%A1%E6%81%AF%E6%93%8D%E4%BD%9C%E6%80%BB%CE%A6%E5%8F%98%E5%8C%96%E2%89%A50%2CLandauer%E6%98%AF%E7%89%B9%E4%BE%8B.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-FDF178CC6CB37CE5 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0529})=1\]. / IMPLICIT-FDF178CC6CB37CE5
-  - 来源：`统一案例总表/0524-C-529-麦克斯韦妖 — 信息操作总Φ变化≥0,Landauer是特例.md`
-  - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0530})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0525-C-530-%E8%B4%9F%E6%B8%A9%E5%BA%A6%20%E2%80%94%20%CE%B5-1%3D-%E8%B6%85%E5%AD%98%E6%B4%BB-%E6%80%81%2C%E5%BC%9B%E8%B1%AB%E9%87%8A%E6%94%BE%E8%83%BD%E9%87%8F.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-06417617AAC7CF4C / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0530})=1\]. / IMPLICIT-06417617AAC7CF4C
-  - 来源：`统一案例总表/0525-C-530-负温度 — ε-1=-超存活-态,弛豫释放能量.md`
-  - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0531})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0526-C-531-%E7%9B%B8%E5%8F%98%E5%88%86%E7%B1%BB%20%E2%80%94%20%E8%BF%9E%E7%BB%AD%3D%E7%A9%BF%E8%B6%8A%E8%B6%85%E5%B9%B3%E9%9D%A2%2C%E4%B8%80%E7%BA%A7%3D%E4%B8%A4%E5%AD%98%E6%B4%BB%E5%8C%BA%E8%B7%B3%E5%8F%98.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-22BE948F1BAC4BA2 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0531})=1\]. / IMPLICIT-22BE948F1BAC4BA2
-  - 来源：`统一案例总表/0526-C-531-相变分类 — 连续=穿越超平面,一级=两存活区跳变.md`
-  - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0532})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0527-C-532-%E4%BF%A1%E6%81%AF%E7%86%B5vs%E7%83%AD%E5%8A%9B%E5%AD%A6%E7%86%B5%20%E2%80%94%20S_thermo%3D%CE%A6%E5%9C%A8%E7%B2%97%E7%B2%92%E5%8C%96%E4%B8%8B%E7%9A%84%E6%8A%95%E5%BD%B1.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-66D2F7491FAE009F / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0532})=1\]. / IMPLICIT-66D2F7491FAE009F
-  - 来源：`统一案例总表/0527-C-532-信息熵vs热力学熵 — S_thermo=Φ在粗粒化下的投影.md`
-  - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0533})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0528-C-533-%E9%BB%91%E6%B4%9E%E7%83%AD%E5%8A%9B%E5%AD%A6%20%E2%80%94%20S_BH%3DN_dof%C3%97%E2%9F%A8%CE%A6%28%E8%A7%86%E7%95%8C%29%E2%9F%A9%2C%E9%9D%A2%E7%A7%AF%E5%BE%8B%C3%97%E5%AF%B9%E6%95%B0%E5%BE%8B.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-9E1DFD1644619DEA / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0533})=1\]. / IMPLICIT-9E1DFD1644619DEA
-  - 来源：`统一案例总表/0528-C-533-黑洞热力学 — S_BH=N_dof×⟨Φ(视界)⟩,面积律×对数律.md`
-  - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0534})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0529-C-534-%E7%AC%AC%E4%B8%89%E5%AE%9A%E5%BE%8B%20%E2%80%94%20%CE%A6%E4%B8%8D%E8%83%BD%E7%B2%BE%E7%A1%AE%E4%B8%BA%E9%9B%B6%3D%CE%BC%E6%9C%89%E9%87%8F%E5%AD%90%E4%B8%8B%E7%95%8C%2C%E7%8E%BB%E7%92%83%3D%E5%A4%9A%E5%B1%80%E9%83%A8%CE%A6%E6%9E%81%E5%B0%8F.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-FF6B8E0E3FD8EFD7 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0534})=1\]. / IMPLICIT-FF6B8E0E3FD8EFD7
-  - 来源：`统一案例总表/0529-C-534-第三定律 — Φ不能精确为零=μ有量子下界,玻璃=多局部Φ极小.md`
-  - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0535})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0530-C-535-%E5%85%89%E9%80%9F%E4%B8%8A%E9%99%90%20%E2%80%94%20c%3DFisher%E9%80%9F%E5%BA%A6%E5%9C%A8%CE%B5%3D1%E6%97%B6%E7%9A%84%E5%80%BC%2C%E6%89%80%E6%9C%89%E5%9C%BA%CE%B5%E2%89%A41.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-76F4ABE3DC5193B5 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0535})=1\]. / IMPLICIT-76F4ABE3DC5193B5
-  - 来源：`统一案例总表/0530-C-535-光速上限 — c=Fisher速度在ε=1时的值,所有场ε≤1.md`
-  - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0536})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0531-C-536-%E7%AD%89%E6%95%88%E5%8E%9F%E7%90%86%20%E2%80%94%20m_i%3Dm_g%E7%B2%BE%E7%A1%AE%E5%88%B0O%28%28%CE%BC.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-A4074B1FDC2E3AB7 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0536})=1\]. / IMPLICIT-A4074B1FDC2E3AB7
-  - 来源：`统一案例总表/0531-C-536-等效原理 — m_i=m_g精确到O((μ.md`
-  - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0537})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0532-C-537-%E5%8F%8C%E7%94%9F%E5%AD%90%E4%BD%AF%E8%B0%AC%20%E2%80%94%20%E5%9B%BA%E6%9C%89%E6%97%B6%E2%88%9Dexp%28-%E2%88%AB%CE%A6dt%29%2C%E5%8A%A0%E9%80%9F%E5%A2%9E%CE%A6%E5%87%8F%E5%9B%BA%E6%9C%89%E6%97%B6.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-3424038EF0D52A08 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0537})=1\]. / IMPLICIT-3424038EF0D52A08
-  - 来源：`统一案例总表/0532-C-537-双生子佯谬 — 固有时∝exp(-∫Φdt),加速增Φ减固有时.md`
-  - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0538})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0533-C-538-%E5%BC%95%E5%8A%9B%E6%97%B6%E9%97%B4%E5%87%8F%E6%85%A2%20%E2%80%94%20-%CE%A6%28r%29%3DGM.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-5EAEA1420A0DA082 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0538})=1\]. / IMPLICIT-5EAEA1420A0DA082
-  - 来源：`统一案例总表/0533-C-538-引力时间减慢 — -Φ(r)=GM.md`
-  - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0539})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0534-C-539-E%3Dmc2%20%E2%80%94%20mc2%3D%E4%BF%A1%E6%81%AF%E5%AE%B9%E9%87%8F%C3%97%E4%BF%A1%E6%81%AF%E9%80%9F%E5%BA%A62.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-F42D35A1050B481C / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0539})=1\]. / IMPLICIT-F42D35A1050B481C
-  - 来源：`统一案例总表/0534-C-539-E=mc2 — mc2=信息容量×信息速度2.md`
-  - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0540})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0535-C-540-%E9%BB%91%E6%B4%9E%E6%97%A0%E6%AF%9B%20%E2%80%94%204%E7%BB%B4%E6%97%B6%E7%A9%BA3%E6%96%B9%E5%90%91%CE%B5-0%2C%E5%BE%84%E5%90%91%E8%A2%AB%E9%97%A8%E6%8E%A7%E5%90%A6%E5%86%B3.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-0FEB2C37B56F90CE / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0540})=1\]. / IMPLICIT-0FEB2C37B56F90CE
-  - 来源：`统一案例总表/0535-C-540-黑洞无毛 — 4维时空3方向ε-0,径向被门控否决.md`
-  - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0541})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0536-C-541-%E5%AE%87%E5%AE%99%E5%8A%A0%E9%80%9F%E8%86%A8%E8%83%80%20%E2%80%94%20%CE%A6%E8%BF%9C%E5%B0%BE%E5%8C%BAd2%CE%A6.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-BBD279CFBE0E67F6 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0541})=1\]. / IMPLICIT-BBD279CFBE0E67F6
-  - 来源：`统一案例总表/0536-C-541-宇宙加速膨胀 — Φ远尾区d2Φ.md`
-  - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0542})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0537-C-542-%E9%AB%98%E6%B8%A9%E8%B6%85%E5%AF%BC%20%E2%80%94%20%E5%A4%9A%E9%97%A8%E6%8E%A7%E9%9D%A2%E5%85%B1%E6%8C%AF%2CTc%E8%BF%9C%E9%AB%98%E4%BA%8E%E5%8D%95%E6%9C%BA%E5%88%B6%E9%A2%84%E8%A8%80.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-F63225B1252A220B / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0542})=1\]. / IMPLICIT-F63225B1252A220B
-  - 来源：`统一案例总表/0537-C-542-高温超导 — 多门控面共振,Tc远高于单机制预言.md`
-  - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0543})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0538-C-543-%E9%87%8F%E5%AD%90%E9%9C%8D%E5%B0%94%E6%95%88%E5%BA%94%20%E2%80%94%20%E4%B9%98%E6%B3%95%E9%97%A8%E6%8E%A7%E7%A6%BB%E6%95%A3%E8%B1%A1%E9%99%90%E2%86%92%E9%87%8F%E5%AD%90%E5%8C%96%2C%E5%88%86%E6%95%B0%3D%E5%A4%8D%E5%90%88%E7%B2%92%E5%AD%90%E4%B9%98%E6%B3%95%E9%97%A8%E6%8E%A7.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-44638F5C49B23D81 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0543})=1\]. / IMPLICIT-44638F5C49B23D81
-  - 来源：`统一案例总表/0538-C-543-量子霍尔效应 — 乘法门控离散象限→量子化,分数=复合粒子乘法门控.md`
-  - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0544})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0539-C-544-%E6%8B%93%E6%89%91%E7%BB%9D%E7%BC%98%E4%BD%93%20%E2%80%94%20%E4%BD%93%E6%80%813D%E9%97%A8%E6%8E%A7%E5%90%A6%E5%86%B3%2C%E8%A1%A8%E9%9D%A2%3D2D%E9%97%A8%E6%8E%A7%E8%BE%B9%E7%95%8C.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-6F64A4E1CBF1A1D7 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0544})=1\]. / IMPLICIT-6F64A4E1CBF1A1D7
-  - 来源：`统一案例总表/0539-C-544-拓扑绝缘体 — 体态3D门控否决,表面=2D门控边界.md`
-  - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0545})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0540-C-545-%E5%AE%89%E5%BE%B7%E6%A3%AE%E5%B1%80%E5%9F%9F%E5%8C%96%20%E2%80%94%20%E7%BB%B4%E5%BA%A6%E4%BE%9D%E8%B5%96%3D%E8%B7%AF%E5%BE%84%E6%95%B0vs%E6%9C%80%E5%BC%B1%E9%97%A8%E5%90%A6%E5%86%B3.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-DB3DD2B56774C013 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0545})=1\]. / IMPLICIT-DB3DD2B56774C013
-  - 来源：`统一案例总表/0540-C-545-安德森局域化 — 维度依赖=路径数vs最弱门否决.md`
-  - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0546})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0541-C-546-BEC%20%E2%80%94%20N%E4%B8%AA%E7%8B%AC%E7%AB%8B%E5%9B%A0%E5%AD%90%E2%86%921%E4%B8%AA%E5%85%B1%E4%BA%AB%E5%9B%A0%E5%AD%90%2C%E9%97%A8%E6%8E%A7%E9%A3%8E%E9%99%A9%E6%B6%88%E9%99%A4.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-70C80CD51E6198CA / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0546})=1\]. / IMPLICIT-70C80CD51E6198CA
-  - 来源：`统一案例总表/0541-C-546-BEC — N个独立因子→1个共享因子,门控风险消除.md`
-  - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0547})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0542-C-547-%E9%87%8D%E8%B4%B9%E7%B1%B3%E5%AD%90%20%E2%80%94%20Kondo%E5%88%80%E5%88%83%E6%80%81%2C%CE%B5%E6%9E%81%E4%BD%8E%E2%86%921.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-8447A4CB486654AF / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0547})=1\]. / IMPLICIT-8447A4CB486654AF
-  - 来源：`统一案例总表/0542-C-547-重费米子 — Kondo刀刃态,ε极低→1.md`
-  - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0548})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0543-C-548-%E8%87%AA%E6%97%8B%E6%B6%B2%E4%BD%93%20%E2%80%94%20%E9%97%A8%E6%8E%A7%E9%9D%A2%E5%AF%B9%E7%A7%B0%E6%80%A7%E7%AE%80%E5%B9%B6%2C%E6%97%A0%E6%B3%95%E9%80%89%E6%8B%A9%E8%BF%9B%E5%85%A5%E5%93%AA%E4%B8%AA%E8%B1%A1%E9%99%90.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-91D7A052664A7B66 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0548})=1\]. / IMPLICIT-91D7A052664A7B66
-  - 来源：`统一案例总表/0543-C-548-自旋液体 — 门控面对称性简并,无法选择进入哪个象限.md`
-  - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0549})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0544-C-549-%E6%9A%97%E7%89%A9%E8%B4%A8%E6%96%B9%E5%90%91%20%E2%80%94%20%CE%A6%E5%AF%B9%E7%89%9B%E9%A1%BF%E5%BC%95%E5%8A%9B%E4%BF%AE%E6%AD%A3%2Csigmoid%E6%98%A0%E5%B0%84%E5%8F%AF%E8%83%BD%E4%BF%AE%E6%AD%A3%E9%87%8F%E7%BA%A7.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-D99E0F642E7A7937 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0549})=1\]. / IMPLICIT-D99E0F642E7A7937
-  - 来源：`统一案例总表/0544-C-549-暗物质方向 — Φ对牛顿引力修正,sigmoid映射可能修正量级.md`
-  - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0550})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0545-C-550-%E6%9A%97%E8%83%BD%E9%87%8F%20%E2%80%94%20%CF%81_%CE%9B%E2%88%9D1.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-10AF26842E0C734C / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0550})=1\]. / IMPLICIT-10AF26842E0C734C
-  - 来源：`统一案例总表/0545-C-550-暗能量 — ρ_Λ∝1.md`
-  - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0551})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0546-C-551-%E6%81%92%E6%98%9F%E8%B4%A8%E9%87%8F%E4%B8%8B%E9%99%90%20%E2%80%94%20%E8%81%9A%E5%8F%98%E9%97%A8%E6%8E%A7%E9%9D%A2%3DGamow%E5%B3%B0%3D%E9%9A%A7%E7%A9%BF%C3%97%E7%83%AD%E5%88%86%E5%B8%83%E4%B9%98%E7%A7%AF%E6%9E%81%E5%A4%A7.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-55A5A41556929EEF / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0551})=1\]. / IMPLICIT-55A5A41556929EEF
-  - 来源：`统一案例总表/0546-C-551-恒星质量下限 — 聚变门控面=Gamow峰=隧穿×热分布乘积极大.md`
-  - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0552})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0547-C-552-%E9%BB%91%E6%B4%9E%E4%BF%A1%E6%81%AF%28%E5%A4%A9%E6%96%87%E8%A7%86%E8%A7%92%29%20%E2%80%94%20%E4%BF%A1%E6%81%AF%E6%8C%89%E8%B4%A8%E9%87%8F%E5%88%86%E7%BA%A7%E4%BF%9D%E7%95%99%2C%E5%A4%A7%E9%BB%91%E6%B4%9E~98%25.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-FE912A9D1D9A46B2 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0552})=1\]. / IMPLICIT-FE912A9D1D9A46B2
-  - 来源：`统一案例总表/0547-C-552-黑洞信息(天文视角) — 信息按质量分级保留,大黑洞~98%.md`
-  - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0553})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0548-C-553-CMB%E5%90%84%E5%90%91%E5%BC%82%E6%80%A7%E6%96%B9%E5%90%91%20%E2%80%94%20%CE%A6%E9%A2%84%E8%A8%80~10%E2%88%928%2C%E6%AF%94%E8%A7%82%E6%B5%8B10%E2%88%925%E5%B0%8F3%E9%87%8F%E7%BA%A7.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-0AB6465C1D257739 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0553})=1\]. / IMPLICIT-0AB6465C1D257739
-  - 来源：`统一案例总表/0548-C-553-CMB各向异性方向 — Φ预言~10−8,比观测10−5小3量级.md`
-  - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0554})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0549-C-554-%E4%B8%BA%E4%BB%80%E4%B9%883%2B1%E7%BB%B4%20%E2%80%94%20d-%3D-1.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-2DD0154642E5004C / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0554})=1\]. / IMPLICIT-2DD0154642E5004C
-  - 来源：`统一案例总表/0549-C-554-为什么3+1维 — d-=-1.md`
-  - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0555})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0550-C-555-%E8%B4%B9%E7%B1%B3%E6%82%96%E8%AE%BA%20%E2%80%94%20%E4%B9%98%E6%B3%95%E9%97%A8%E6%8E%A7%E4%BD%BF%E8%B7%A8%E6%98%9F%E7%B3%BB%E6%96%87%E6%98%8EB%3D%E2%9F%A8%CE%B5%E2%9F%A9%5EN%E2%86%920.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-E9C92355D1FD4468 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0555})=1\]. / IMPLICIT-E9C92355D1FD4468
-  - 来源：`统一案例总表/0550-C-555-费米悖论 — 乘法门控使跨星系文明B=⟨ε⟩^N→0.md`
-  - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0556})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0551-C-556-%E8%A1%B0%E8%80%81%20%E2%80%94%20%CE%A6%E7%BA%BF%E6%80%A7%E5%A2%9E%E9%95%BF%E2%86%92B%E6%8C%87%E6%95%B0%E8%A1%B0%E5%87%8F%E2%86%92Gompertz%E5%AE%9A%E5%BE%8B.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-C6D09532AC83BA12 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0556})=1\]. / IMPLICIT-C6D09532AC83BA12
-  - 来源：`统一案例总表/0551-C-556-衰老 — Φ线性增长→B指数衰减→Gompertz定律.md`
-  - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0557})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0552-C-557-%E7%99%8C%E7%97%87%20%E2%80%94%20%CE%B5%E7%A9%BF%E8%B6%8A%E9%97%A8%E6%8E%A7%E9%9D%A2%2C%E5%8F%91%E7%97%85%E7%8E%87%E2%88%9Dexp%28%CE%A6t%29%E6%8C%87%E6%95%B0%E5%A2%9E%E9%95%BF.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-8C6C70BDD2D63796 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0557})=1\]. / IMPLICIT-8C6C70BDD2D63796
-  - 来源：`统一案例总表/0552-C-557-癌症 — ε穿越门控面,发病率∝exp(Φt)指数增长.md`
-  - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0558})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0553-C-558-%E6%9C%89%E6%80%A7%E7%94%9F%E6%AE%96%20%E2%80%94%20%E4%BF%A1%E6%81%AF%E6%B3%A8%E5%85%A5%E5%85%81%E8%AE%B8d%CE%A6.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-760F4EAD7FCDB691 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0558})=1\]. / IMPLICIT-760F4EAD7FCDB691
-  - 来源：`统一案例总表/0553-C-558-有性生殖 — 信息注入允许dΦ.md`
-  - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0559})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0554-C-559-%E5%A4%A7%E7%81%AD%E7%BB%9D%20%E2%80%94%20%E5%A4%9A%E9%97%A8%E6%8E%A7%E5%85%B1%E6%8C%AF%2B%E7%BA%A7%E8%81%94%2C%E5%91%A8%E6%9C%9F%E6%80%A7%E2%88%9D%CE%A6%E5%88%B0%E4%B8%B4%E7%95%8C%E5%80%BC%E6%97%B6%E9%97%B4.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-7368A67E6FD37780 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0559})=1\]. / IMPLICIT-7368A67E6FD37780
-  - 来源：`统一案例总表/0554-C-559-大灭绝 — 多门控共振+级联,周期性∝Φ到临界值时间.md`
-  - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0560})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0555-C-560-%E6%B0%B4%E7%9A%84%E7%89%B9%E6%AE%8A%E6%80%A7%20%E2%80%94%20%E6%B6%B2%E6%80%81%E8%8C%83%E5%9B%B4%E5%AE%BD%E2%86%92%CE%A6%E5%9C%A8%E5%AE%BD%E6%B8%A9%E5%8C%BA%E6%9E%81%E5%B0%8F.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-E27A8A8E662766CA / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0560})=1\]. / IMPLICIT-E27A8A8E662766CA
-  - 来源：`统一案例总表/0555-C-560-水的特殊性 — 液态范围宽→Φ在宽温区极小.md`
-  - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0561})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0556-C-561-%E5%9E%83%E5%9C%BEDNA%20%E2%80%94%20%CE%A6%E7%BC%93%E5%86%B2%E5%99%A8%2C90%25%E2%89%88%E6%9C%80%E4%BC%98%E7%BC%93%E5%86%B2%E6%AF%94.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-04D15E6C52A1D365 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0561})=1\]. / IMPLICIT-04D15E6C52A1D365
-  - 来源：`统一案例总表/0556-C-561-垃圾DNA — Φ缓冲器,90%≈最优缓冲比.md`
   - 依赖：—；被引用：—

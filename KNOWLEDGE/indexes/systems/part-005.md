@@ -4,6 +4,66 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [因果命题（如：某个政策导致某个经济结果）](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-643eda7c3a68d3f2 / 因果命题（如：某个政策导致某个经济结果）
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [因果结构判定 C；](../../../outputs/getbrain/project-position-update-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-a0940c13e9447a71 / 因果结构判定 C；
+  - 来源：`outputs/getbrain/project-position-update-20260706.md`
+  - 依赖：—；被引用：—
+- [因果识别与运输性深挖](../../../data/external-research/104-deep-dive-queue-105plus.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-2ff465d2d0bca776 / 因果识别与运输性深挖
+  - 来源：`data/external-research/104-deep-dive-queue-105plus.jsonl`
+  - 依赖：—；被引用：—
+- [因果重排分析：L2](../../../outputs/getbrain/classic-problems-benchmark-supplement-20260707.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-d66e5768e8e2017e / 因果重排分析：L2
+  - 来源：`outputs/getbrain/classic-problems-benchmark-supplement-20260707.md`
+  - 依赖：—；被引用：—
+- [因果链](../../../outputs/audit/two-tables-entry-format-audit-20260709.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-b054b23fa93bbb9e / 因果链
+  - 来源：`outputs/audit/two-tables-entry-format-audit-20260709.md`
+  - 依赖：—；被引用：—
+- [因果链** — cause → effect → temporal_order → counterfactual 四要素或机制步骤](../../../docs/two-tables-entry-writing-standard-20260709.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-5544d0608927f949 / 因果链** — cause → effect → temporal_order → counterfactual 四要素或机制步骤
+  - 来源：`docs/two-tables-entry-writing-standard-20260709.md`
+  - 依赖：—；被引用：—
+- [因果链** — 触发 → 机制 → 结果](../../../docs/two-tables-entry-writing-standard-20260709.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-0f7246bdf5320f11 / 因果链** — 触发 → 机制 → 结果
+  - 来源：`docs/two-tables-entry-writing-standard-20260709.md`
+  - 依赖：—；被引用：—
+- [因果链**：A 导致 B 导致 C（cause → effect）](../../../docs/getbrain-book-collision-guide-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-2e335eff60a1457e / 因果链**：A 导致 B 导致 C（cause → effect）
+  - 来源：`docs/getbrain-book-collision-guide-20260708.md`
+  - 依赖：—；被引用：—
+- [因果链分析：L2](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-416d86601ff77292 / 因果链分析：L2
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [因果链条过于整齐；](../../../outputs/getbrain/failure-typology-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-bd6a16fc6df376e2 / 因果链条过于整齐；
+  - 来源：`outputs/getbrain/failure-typology-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [因果链须含时间顺序与反事实判断（"若没有 X，则不会 Y"）。](../../../docs/two-tables-entry-writing-standard-20260709.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-710c37582256869b / 因果链须含时间顺序与反事实判断（"若没有 X，则不会 Y"）。
+  - 来源：`docs/two-tables-entry-writing-standard-20260709.md`
+  - 依赖：—；被引用：—
+- [因果链：有积蓄 → 拒绝不合理要求底气↑ → 人生选择权↑](../../../docs/getbrain-book-collision-guide-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-6061568d9108686b / 因果链：有积蓄 → 拒绝不合理要求底气↑ → 人生选择权↑
+  - 来源：`docs/getbrain-book-collision-guide-20260708.md`
+  - 依赖：—；被引用：—
 - [因此本报告总体上限为：`mechanism_plausible / causal_identification_pending / external_historical_verification_required`。下一项最小状态改变行动](../../../reports/publication/jin-rise-point-fire-analysis.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-4cc13b8001829706 / 因此本报告总体上限为：`mechanism_plausible / causal_identification_pending / external_historical_verification_required`。下一项最小状态改变行动
@@ -573,11 +633,6 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-6d846271bd671a1c / 把相关性写成因果性
   - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [把种子、路径、决定、map impact、residue 和 closure hash 绑定进每轮 manifest。](../../../data/operations/project-components.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-e2b5ab506a0b06ab / 把种子、路径、决定、map impact、residue 和 closure hash 绑定进每轮 manifest。
-  - 来源：`data/operations/project-components.json`
   - 依赖：—；被引用：—
 - [把结构相似当成机制相同。](../../../outputs/getbrain/failure-typology-draft-20260706.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
@@ -1384,9 +1439,9 @@
   - 可搜索名称：NFC-34c7d19e046dab86 / 核心规则：**每个被合并的能力、被接受的方法、被批准的治理决定，必须记录其作出时所依宪章版本（`charter_version_at_decision`）**。
   - 来源：`docs/governance/charter-system-r1.md`
   - 依赖：—；被引用：—
-- [此前独立部署的阅读站已退出产品与同步面，独有系统图迁移到 \[仓库内 SVG\](./generated/ignition-system-map.svg)。历史部署证据仍留在 Git 与旧报告，不再构成当前完成门禁。](../../../docs/project-current-state.md)
+- [此前独立部署的阅读站已退出产品与同步面，独有系统图迁移到 \[仓库内 SVG\](../../../docs/generated/ignition-system-map.svg)。历史部署证据仍留在 Git 与旧报告，不再构成当前完成门禁。](../../../docs/project-current-state.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-d6a1d6968770624a / 此前独立部署的阅读站已退出产品与同步面，独有系统图迁移到 \[仓库内 SVG\](./generated/ignition-system-map.svg)。历史部署证据仍留在 Git 与旧报告，不再构成当前完成门禁。
+  - 可搜索名称：NFC-d6a1d6968770624a / 此前独立部署的阅读站已退出产品与同步面，独有系统图迁移到 \[仓库内 SVG\](../../../docs/generated/ignition-system-map.svg)。历史部署证据仍留在 Git 与旧报告，不再构成当前完成门禁。
   - 来源：`docs/project-current-state.md`
   - 依赖：—；被引用：—
 - [此规则把"决策"与"当时有效的宪章"钉死，避免宪章修订后的规范性漂移，也避免把新规范 retroactively 强加于历史成果（呼应 `VERSIONING.md`：一项作品被接受不能自动提升方法版本或历史因果状态）。](../../../docs/governance/charter-system-r1.md)
@@ -2344,9 +2399,9 @@
   - 可搜索名称：NFC-2affe63614c4f69f / 集体行动的具体因果判定：**pending**（需要调查、统计、田野、实验和反事实识别）
   - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
   - 依赖：—；被引用：—
-- [需要从整体结构定位入口时，打开\[完整可点击系统图\](./architecture/interactive-system-map.md)。图只用于导航；视觉邻近、连线和 cluster 不自动表示因果、同构、真值或新增架构层。](../../../docs/USAGE.md)
+- [需要从整体结构定位入口时，打开\[完整可点击系统图\](../../../docs/architecture/interactive-system-map.md)。图只用于导航；视觉邻近、连线和 cluster 不自动表示因果、同构、真值或新增架构层。](../../../docs/USAGE.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-8eaebaae362143b5 / 需要从整体结构定位入口时，打开\[完整可点击系统图\](./architecture/interactive-system-map.md)。图只用于导航；视觉邻近、连线和 cluster 不自动表示因果、同构、真值或新增架构层。
+  - 可搜索名称：NFC-8eaebaae362143b5 / 需要从整体结构定位入口时，打开\[完整可点击系统图\](../../../docs/architecture/interactive-system-map.md)。图只用于导航；视觉邻近、连线和 cluster 不自动表示因果、同构、真值或新增架构层。
   - 来源：`docs/USAGE.md`
   - 依赖：—；被引用：—
 - [项目的目标不是把世界统一进一个理论，而是把跨域好奇、天马行空的联想、复杂问题的直觉和多领域材料，放进一个更可检查、更克制、更能承认 pending 的工作流程里。](../../../docs/author_motivation_and_boundary_note.md)
@@ -2448,59 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-cd4cb8fb78a2a558 / 验证结论：**召回层有效，置信度判定需机制级二次层；结构抽取不足是瓶颈**
   - 来源：`outputs/audit/agent-collision-phase-closeout-20260708.md`
-  - 依赖：—；被引用：—
-- [验证过程：** ChatGPT的每个神经元根据局部输入信息自主决定激活状态，无需中央控制。神经元感知局部输入信号，自主决定激活状态，无需将信息传递给中央节点。](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-55e70877daa24a40 / 验证过程：** ChatGPT的每个神经元根据局部输入信息自主决定激活状态，无需中央控制。神经元感知局部输入信号，自主决定激活状态，无需将信息传递给中央节点。
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证过程：** 人类社会的每个个体遵循简单的行为契约。个体感知社会信息，判定行为后果，响应调整行为策略。无数个体的局部交互，使得社会整体涌现出复杂秩序，如法律、文化、制度等。](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-826f4c85a5084dde / 验证过程：** 人类社会的每个个体遵循简单的行为契约。个体感知社会信息，判定行为后果，响应调整行为策略。无数个体的局部交互，使得社会整体涌现出复杂秩序，如法律、文化、制度等。
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证过程：** 博弈论的每个参与者根据局部信息自主决定策略，无需中央控制。参与者感知局部博弈信息，自主决定策略选择，无需将信息传递给中央节点。](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-2cc83cd00a7796ec / 验证过程：** 博弈论的每个参与者根据局部信息自主决定策略，无需中央控制。参与者感知局部博弈信息，自主决定策略选择，无需将信息传递给中央节点。
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证过程：** 博弈论的每个参与者通过局部策略调整，系统整体涌现出纳什均衡。参与者感知局部博弈信息，调整策略选择，无数参与者的局部调整使得系统整体涌现出纳什均衡。](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-d1c92261f01b061d / 验证过程：** 博弈论的每个参与者通过局部策略调整，系统整体涌现出纳什均衡。参与者感知局部博弈信息，调整策略选择，无数参与者的局部调整使得系统整体涌现出纳什均衡。
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证过程：** 博弈论的每个参与者遵循简单的策略规则。参与者感知博弈信息，判定策略优劣，响应调整策略选择。无数参与者的局部交互，使得系统整体涌现出纳什均衡。](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-dd3bacb1b20356e7 / 验证过程：** 博弈论的每个参与者遵循简单的策略规则。参与者感知博弈信息，判定策略优劣，响应调整策略选择。无数参与者的局部交互，使得系统整体涌现出纳什均衡。
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证过程：** 复杂系统的L1层（组件）→ L2层（子系统）→ L3层（系统）。复杂系统从组件层涌现出子系统层，再从子系统层涌现出系统层。](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-97e5a1218d24cd42 / 验证过程：** 复杂系统的L1层（组件）→ L2层（子系统）→ L3层（系统）。复杂系统从组件层涌现出子系统层，再从子系统层涌现出系统层。
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证过程：** 复杂系统的每个组件通过局部行为调整，系统整体涌现出复杂秩序。组件感知局部状态信息，调整交互行为，无数组件的局部调整使得系统整体涌现出复杂秩序。](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-bdfe9b6aa71e2b6f / 验证过程：** 复杂系统的每个组件通过局部行为调整，系统整体涌现出复杂秩序。组件感知局部状态信息，调整交互行为，无数组件的局部调整使得系统整体涌现出复杂秩序。
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证过程：** 复杂系统的每个组件遵循简单的交互规则。组件感知系统状态，判定交互方式，响应调整交互行为。无数组件的局部交互，使得系统整体涌现出层级结构。](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-b90ce3b1cf868c14 / 验证过程：** 复杂系统的每个组件遵循简单的交互规则。组件感知系统状态，判定交互方式，响应调整交互行为。无数组件的局部交互，使得系统整体涌现出层级结构。
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证过程：** 复杂系统的每个节点根据局部状态信息自主决定行为，无需中央控制。节点感知局部状态信息，自主决定行为，无需将信息传递给中央节点。](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-70d20f1df816ab6f / 验证过程：** 复杂系统的每个节点根据局部状态信息自主决定行为，无需中央控制。节点感知局部状态信息，自主决定行为，无需将信息传递给中央节点。
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证过程：** 复杂系统的系统感知外部环境、调整内部结构、循环递归优化系统性能。系统感知外部信息，调整内部结构，循环递归优化系统性能。](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-6060aca841735cb9 / 验证过程：** 复杂系统的系统感知外部环境、调整内部结构、循环递归优化系统性能。系统感知外部信息，调整内部结构，循环递归优化系统性能。
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证过程：** 复杂系统的系统状态达到纳什均衡，单方面改变状态会降低稳定性。每个组件根据系统状态调整交互行为，最终达到纳什均衡，单个组件单方面改变状态会降低稳定性。](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-5eddcfcea78bff32 / 验证过程：** 复杂系统的系统状态达到纳什均衡，单方面改变状态会降低稳定性。每个组件根据系统状态调整交互行为，最终达到纳什均衡，单个组件单方面改变状态会降低稳定性。
-  - 来源：`docs/phi_meta_law.md`
   - 依赖：—；被引用：—

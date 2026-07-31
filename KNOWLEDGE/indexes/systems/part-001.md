@@ -269,6 +269,11 @@
   - 可搜索名称：NFC-8a48341e4ab90ab8 / "evidence_reference": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/134",
   - 来源：`tools/operations/run_stage_snapshot_responsibility_cases.py`
   - 依赖：—；被引用：—
+- ["Function OS v0.2 benchmark/evidence is not represented in mapped node "](../../../tools/propagation/system_map_audit.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-26e9f6bcfc825ec8 / "Function OS v0.2 benchmark/evidence is not represented in mapped node "
+  - 来源：`tools/propagation/system_map_audit.py`
+  - 依赖：—；被引用：—
 - ["generation_method": "Deterministic projection from declared architecture sections and known overlay files.",](../../../tools/build_ignition_atlas.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-724ff36469cf469a / "generation_method": "Deterministic projection from declared architecture sections and known overlay files.",
@@ -313,6 +318,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-d57536ce17685145 / "Legal Entity" shall mean the union of the acting entity and all other entities that control, are controlled by, or are
   - 来源：`LICENSES/active/APACHE-2.0.md`
+  - 依赖：—；被引用：—
+- ["map_includes_function_os_evidence": includes_evidence,](../../../tools/propagation/system_map_audit.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-47aaad1a457abb2d / "map_includes_function_os_evidence": includes_evidence,
+  - 来源：`tools/propagation/system_map_audit.py`
   - 依赖：—；被引用：—
 - ["MECHANISM_MODEL": "mechanism description",](../../../tools/foundation/adjudicate_core.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
@@ -639,6 +649,51 @@
   - 可搜索名称：NFC-67e0c7d16e22c3c5 / "T8": mechanism_spec(
   - 来源：`tools/foundation/build_080_queue.py`
   - 依赖：T8；被引用：—
+- ["that a fail-closed propagation mechanism now exists"),](../../../tools/propagation/generate_editorial_manifest.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-86c6227f8200744d / "that a fail-closed propagation mechanism now exists"),
+  - 来源：`tools/propagation/generate_editorial_manifest.py`
+  - 依赖：—；被引用：—
+- ["title": "120 — Function Paradigm Atlas Report",](../../../analysis/corpus-relation/article_cluster_candidates.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-392BEDBDDC49D70B / "title": "120 — Function Paradigm Atlas Report", / IMPLICIT-392BEDBDDC49D70B / IMPLICIT-C6FE6A85AE52A788
+  - 来源：`analysis/corpus-relation/article_cluster_candidates.json`
+  - 依赖：—；被引用：—
+- ["title": "120 — Function Paradigm Atlas Report",](../../../analysis/corpus-relation/corpus_relation_graph.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-C6FE6A85AE52A788 / "title": "120 — Function Paradigm Atlas Report", / IMPLICIT-C6FE6A85AE52A788 / IMPLICIT-392BEDBDDC49D70B
+  - 来源：`analysis/corpus-relation/corpus_relation_graph.json`
+  - 依赖：—；被引用：—
+- ["title": "121Q22 Probability and System Dynamics Gap Audit",](../../../analysis/corpus-relation/corpus_relation_graph.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-C3FC1AA07C451129 / "title": "121Q22 Probability and System Dynamics Gap Audit", / IMPLICIT-C3FC1AA07C451129 / IMPLICIT-C996A7BA90CD3B37
+  - 来源：`analysis/corpus-relation/corpus_relation_graph.json`
+  - 依赖：—；被引用：—
+- ["title": "121Q22 Probability and System Dynamics Gap Audit",](../../../analysis/corpus-relation/article_cluster_candidates.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-C996A7BA90CD3B37 / "title": "121Q22 Probability and System Dynamics Gap Audit", / IMPLICIT-C996A7BA90CD3B37 / IMPLICIT-C3FC1AA07C451129
+  - 来源：`analysis/corpus-relation/article_cluster_candidates.json`
+  - 依赖：—；被引用：—
+- ["title": "121Q22 Probability and Systems Source Map",](../../../analysis/corpus-relation/article_cluster_candidates.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-215C7A5F87C4D96E / "title": "121Q22 Probability and Systems Source Map", / IMPLICIT-215C7A5F87C4D96E / IMPLICIT-421C3724FF3F17B0
+  - 来源：`analysis/corpus-relation/article_cluster_candidates.json`
+  - 依赖：—；被引用：—
+- ["title": "121Q22 Probability and Systems Source Map",](../../../analysis/corpus-relation/corpus_relation_graph.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-421C3724FF3F17B0 / "title": "121Q22 Probability and Systems Source Map", / IMPLICIT-421C3724FF3F17B0 / IMPLICIT-215C7A5F87C4D96E
+  - 来源：`analysis/corpus-relation/corpus_relation_graph.json`
+  - 依赖：—；被引用：—
+- ["title": "121Q23C/121Q23D/121Q23E Operational ARN Real-History Validation",](../../../analysis/corpus-relation/corpus_relation_graph.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-509B7773526BD3C2 / "title": "121Q23C/121Q23D/121Q23E Operational ARN Real-History Validation", / IMPLICIT-509B7773526BD3C2 / IMPLICIT-A8FCA784EA9D3F67
+  - 来源：`analysis/corpus-relation/corpus_relation_graph.json`
+  - 依赖：—；被引用：—
+- ["title": "121Q23C/121Q23D/121Q23E Operational ARN Real-History Validation",](../../../analysis/corpus-relation/article_cluster_candidates.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-A8FCA784EA9D3F67 / "title": "121Q23C/121Q23D/121Q23E Operational ARN Real-History Validation", / IMPLICIT-A8FCA784EA9D3F67 / IMPLICIT-509B7773526BD3C2
+  - 来源：`analysis/corpus-relation/article_cluster_candidates.json`
+  - 依赖：—；被引用：—
 - ["title": "A Survey of Weight Space Learning: Understanding, Representation, and Generation"](../../../data/external-research/121-fulltext-resolver/121q3/function-os/nodes/N2.json)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-6500A6FC08EF7D01 / "title": "A Survey of Weight Space Learning: Understanding, Representation, and Generation" / IMPLICIT-6500A6FC08EF7D01 / IMPLICIT-ADFEB31843640B84
@@ -658,6 +713,16 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-610B84EA029BD6F1 / "title": "A Systematic Study of In-the-Wild Model Merging for Large Language Models", / IMPLICIT-610B84EA029BD6F1
   - 来源：`data/external-research/121-fulltext-resolver/121cx/evidence-cards-extreme/S120-042.json`
+  - 依赖：—；被引用：—
+- ["title": "Iteration method 1.3.0 and system map 0.2.0, 0.3.0 are Historical; method 1.2.0 and map 0.1.0 are earlier Historical, no",](../../../analysis/corpus-relation/article_cluster_candidates.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-081F574E4836E7F0 / "title": "Iteration method 1.3.0 and system map 0.2.0, 0.3.0 are Historical; method 1.2.0 and map 0.1.0 are earlier Historical, no", / IMPLICIT-081F574E4836E7F0 / IMPLICIT-4AC1BDA160B844B2
+  - 来源：`analysis/corpus-relation/article_cluster_candidates.json`
+  - 依赖：—；被引用：—
+- ["title": "Iteration method 1.3.0 and system map 0.2.0, 0.3.0 are Historical; method 1.2.0 and map 0.1.0 are earlier Historical, no",](../../../analysis/corpus-relation/corpus_relation_graph.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-4AC1BDA160B844B2 / "title": "Iteration method 1.3.0 and system map 0.2.0, 0.3.0 are Historical; method 1.2.0 and map 0.1.0 are earlier Historical, no", / IMPLICIT-4AC1BDA160B844B2 / IMPLICIT-081F574E4836E7F0
+  - 来源：`analysis/corpus-relation/corpus_relation_graph.json`
   - 依赖：—；被引用：—
 - ["title": "Learning to Reason via Program Generation, Emulation, and Search"](../../../data/external-research/121-fulltext-resolver/121q3/function-os/nodes/N6.json)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -733,6 +798,16 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-DB88D5614433D3B1 / "title": "Operator Learning: Algorithms and Analysis", / IMPLICIT-DB88D5614433D3B1 / IMPLICIT-96595B183B9E38EA
   - 来源：`data/external-research/121-fulltext-resolver/121cx/evidence-cards-extreme/S120-027.json`
+  - 依赖：—；被引用：—
+- ["title": "Probabilistic System Dynamics / 概率—系统动力学",](../../../analysis/corpus-relation/article_cluster_candidates.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-39E4EAA0D6BB81ED / "title": "Probabilistic System Dynamics / 概率—系统动力学", / IMPLICIT-39E4EAA0D6BB81ED / IMPLICIT-92E4191E97053486
+  - 来源：`analysis/corpus-relation/article_cluster_candidates.json`
+  - 依赖：—；被引用：—
+- ["title": "Probabilistic System Dynamics / 概率—系统动力学",](../../../analysis/corpus-relation/corpus_relation_graph.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-92E4191E97053486 / "title": "Probabilistic System Dynamics / 概率—系统动力学", / IMPLICIT-92E4191E97053486 / IMPLICIT-39E4EAA0D6BB81ED
+  - 来源：`analysis/corpus-relation/corpus_relation_graph.json`
   - 依赖：—；被引用：—
 - ["to_ref": network\["projections"\]\[0\]\["projection_id"\],](../../../tests/test_adaptive_relational_network_validation_contract.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
@@ -914,10 +989,30 @@
   - 可搜索名称：IMPLICIT-FDACD9849736DF99 / # 金朝崛起为什么这么快：从凝聚力叙事到跨尺度机制候选 / IMPLICIT-FDACD9849736DF99
   - 来源：`reports/publication/jin-rise-point-fire-analysis.md`
   - 依赖：—；被引用：—
+- [## nfc-2b7304f480da70c2 — Iteration method 1.3.0 and system map 0.2.0, 0.3.0 are Historical; method 1.2.0 and map 0.1.0 are earlier Historical, no](../../../analysis/corpus-relation/cluster_source_briefs/C004.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-090B7B9E9650BA15 / ## nfc-2b7304f480da70c2 — Iteration method 1.3.0 and system map 0.2.0, 0.3.0 are Historical; method 1.2.0 and map 0.1.0 are earlier Historical, no / IMPLICIT-090B7B9E9650BA15 / IMPLICIT-2545793608FF2828
+  - 来源：`analysis/corpus-relation/cluster_source_briefs/C004.md`
+  - 依赖：—；被引用：—
+- [## nfc-2b7304f480da70c2 — Iteration method 1.3.0 and system map 0.2.0, 0.3.0 are Historical; method 1.2.0 and map 0.1.0 are earlier Historical, no](../../../analysis/corpus-relation/cluster_source_briefs/C006.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-2545793608FF2828 / ## nfc-2b7304f480da70c2 — Iteration method 1.3.0 and system map 0.2.0, 0.3.0 are Historical; method 1.2.0 and map 0.1.0 are earlier Historical, no / IMPLICIT-2545793608FF2828 / IMPLICIT-090B7B9E9650BA15
+  - 来源：`analysis/corpus-relation/cluster_source_briefs/C006.md`
+  - 依赖：—；被引用：—
+- [## nfc-2b7304f480da70c2 — Iteration method 1.3.0 and system map 0.2.0, 0.3.0 are Historical; method 1.2.0 and map 0.1.0 are earlier Historical, no](../../../analysis/corpus-relation/cluster_source_briefs/C001.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-B8982A1C5A2AD9EC / ## nfc-2b7304f480da70c2 — Iteration method 1.3.0 and system map 0.2.0, 0.3.0 are Historical; method 1.2.0 and map 0.1.0 are earlier Historical, no / IMPLICIT-B8982A1C5A2AD9EC / IMPLICIT-090B7B9E9650BA15
+  - 来源：`analysis/corpus-relation/cluster_source_briefs/C001.md`
+  - 依赖：—；被引用：—
 - [## Residue That Should Not Be Forced Into a Network](../../../reports/architecture/121Q21R-causal-asset-audit.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-3B45D64DB0C604F9 / ## Residue That Should Not Be Forced Into a Network / IMPLICIT-3B45D64DB0C604F9
   - 来源：`reports/architecture/121Q21R-causal-asset-audit.md`
+  - 依赖：—；被引用：—
+- [## 表示能力不是因果证明](../../../docs/editorial/articles/005-description-is-not-proof-systems-representations.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-A6B36E4D56B8760B / ## 表示能力不是因果证明 / IMPLICIT-A6B36E4D56B8760B
+  - 来源：`docs/editorial/articles/005-description-is-not-proof-systems-representations.md`
   - 依赖：—；被引用：—
 - [### 12. 把历史叙事误写成因果定律](../../../outputs/getbrain/failure-typology-draft-20260706.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -988,6 +1083,16 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-A3FC5DACBEFD9A5F / ### \[#542｜高温超导 — 多门控面共振，Tc远高于单机制预言\](docs/zh/cases/items/C-0542.md) / IMPLICIT-A3FC5DACBEFD9A5F
   - 来源：`统一案例总表/0537-C-542-高温超导 — 多门控面共振,Tc远高于单机制预言.md`
+  - 依赖：—；被引用：—
+- ['ARCHITECTURE_GOVERNANCE': '架构、治理与自我纠错机制如何保证仓库主张不被悄悄升级？',](../../../tools/build_corpus_relation_graph.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-ac82f086cf5fbc0a / 'ARCHITECTURE_GOVERNANCE': '架构、治理与自我纠错机制如何保证仓库主张不被悄悄升级？',
+  - 来源：`tools/build_corpus_relation_graph.py`
+  - 依赖：—；被引用：—
+- ['SYSTEMS': '系统论与机制建模在何处提供了可检验的机制，而非仅命名？',](../../../tools/build_corpus_relation_graph.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-9421b38934d00f52 / 'SYSTEMS': '系统论与机制建模在何处提供了可检验的机制，而非仅命名？',
+  - 来源：`tools/build_corpus_relation_graph.py`
   - 依赖：—；被引用：—
 - ['可渗透'无上限，易变成无限开放导致病原/污染/风险无控扩散（歧义/适用边界）。](../../../docs/governance/meta-protocol-reviews/protocols/S2.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
@@ -1214,19 +1319,19 @@
   - 可搜索名称：NFC-4f9bd97005ed276f / \[#353｜协作中"说清楚"优于"听懂" — 技术负责人用BH沟通Pdecode≈0.3但ηfidelity=1后续纠错≈0，改用BL沟通Pdecode≈0.8但ηfidelity≈0.4导致3次返工 / 协作中"说清楚"优于"听懂" -
   - 来源：`统一案例总表/0352-C-353-协作中-说清楚-优于-听懂- — 技术负责人用BH沟通Pdecode≈0.3但ηfidelity=1后续纠错≈0,改用BL沟通Pdecode.md`
   - 依赖：—；被引用：—
-- [\[docs/architecture/mechanism-adjudication-plane.md\](docs/architecture/mechanism-adjudication-plane.md)](../../../ARCHITECTURE.md)
+- [\[docs/architecture/mechanism-adjudication-plane.md\](../../../docs/architecture/mechanism-adjudication-plane.md)](../../../ARCHITECTURE.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-de6701c71b50dc92 / \[docs/architecture/mechanism-adjudication-plane.md\](docs/architecture/mechanism-adjudication-plane.md)
+  - 可搜索名称：NFC-de6701c71b50dc92 / \[docs/architecture/mechanism-adjudication-plane.md\](../../../docs/architecture/mechanism-adjudication-plane.md)
   - 来源：`ARCHITECTURE.md`
   - 依赖：—；被引用：—
-- [\[MCF\](./docs/architecture/multiscale-causal-fabric.md)](../../../SUMMARY.md)
+- [\[MCF\](../../../docs/architecture/multiscale-causal-fabric.md)](../../../SUMMARY.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-c7316446498dc629 / \[MCF\](./docs/architecture/multiscale-causal-fabric.md)
+  - 可搜索名称：NFC-c7316446498dc629 / \[MCF\](../../../docs/architecture/multiscale-causal-fabric.md)
   - 来源：`SUMMARY.md`
   - 依赖：—；被引用：—
-- [\[MCF\](./docs/architecture/multiscale-causal-fabric.md) · \[PSD\](./docs/architecture/probabilistic-system-dynamics.md) · \[](../../../README.md)
+- [\[MCF\](../../../docs/architecture/multiscale-causal-fabric.md) · \[PSD\](../../../docs/architecture/probabilistic-system-dynamics.md) · \[](../../../README.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-7a43a2a14a334e1d / \[MCF\](./docs/architecture/multiscale-causal-fabric.md) · \[PSD\](./docs/architecture/probabilistic-system-dynamics.md) · \[
+  - 可搜索名称：NFC-7a43a2a14a334e1d / \[MCF\](../../../docs/architecture/multiscale-causal-fabric.md) · \[PSD\](../../../docs/architecture/probabilistic-system-dynamics.md) · \[
   - 来源：`README.md`
   - 依赖：—；被引用：—
 - [\[Q26 点火分析\](../../../reports/publication/jin-rise-point-fire-analysis.md)：把单因叙事拆成有竞争解释和证据上限的机制候选。](../../../docs/publication/cases/jin-rise-case-source.md)
@@ -1234,14 +1339,14 @@
   - 可搜索名称：NFC-8b9e914789c250ba / \[Q26 点火分析\](../../../reports/publication/jin-rise-point-fire-analysis.md)：把单因叙事拆成有竞争解释和证据上限的机制候选。
   - 来源：`docs/publication/cases/jin-rise-case-source.md`
   - 依赖：—；被引用：—
-- [\[机器可读投影\](../../data/architecture/interactive-system-map.json)](../../../docs/architecture/interactive-system-map.md)
+- [\[机器可读投影\](../../../data/architecture/interactive-system-map.json)](../../../docs/architecture/interactive-system-map.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-4f9ef989426a16e1 / \[机器可读投影\](../../data/architecture/interactive-system-map.json)
+  - 可搜索名称：NFC-4f9ef989426a16e1 / \[机器可读投影\](../../../data/architecture/interactive-system-map.json)
   - 来源：`docs/architecture/interactive-system-map.md`
   - 依赖：—；被引用：—
-- [\[证据机制\](./docs/evidence_regime_library.md)](../../../README.md)
+- [\[证据机制\](../../../docs/evidence_regime_library.md)](../../../README.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-2b570a9840855f50 / \[证据机制\](./docs/evidence_regime_library.md)
+  - 可搜索名称：NFC-2b570a9840855f50 / \[证据机制\](../../../docs/evidence_regime_library.md)
   - 来源：`README.md`
   - 依赖：—；被引用：—
 - [_check_refs(nid, f"response {response.get('response_id')} evidence", \[response.get("evidence_ref")\], evidence_ids, error](../../../tools/adaptive_relational_network/validator.py)
@@ -1319,11 +1424,6 @@
   - 可搜索名称：NFC-fe5a12c3505fb1b8 / `CausalState`：`JIN-MCF-S01` 基层亲邻高重叠；`S02` 辽东北治理/动员脆弱；`S03` 金可用集中兵力；`S04` 辽指挥与信息失序；`S05` 金的招募/资源/合法性增强。
   - 来源：`reports/publication/jin-rise-point-fire-analysis.md`
   - 依赖：—；被引用：—
-- [`copyright_governance_jurisdiction_registry --projects / repository_dependency--> system_map_projection` — Repository-le](../../../data/operations/propagation/121Q33-impact-report.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-132a5a829171e1a5 / `copyright_governance_jurisdiction_registry --projects / repository_dependency--> system_map_projection` — Repository-le
-  - 来源：`data/operations/propagation/121Q33-impact-report.md`
-  - 依赖：—；被引用：—
 - [`diff.py` compares nodes, relations, attributes, hyper-relations, temporal activations, integration responses, embedding](../../../docs/architecture/adaptive-relational-network.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-0bf7edb9d825261f / `diff.py` compares nodes, relations, attributes, hyper-relations, temporal activations, integration responses, embedding
@@ -1344,25 +1444,25 @@
   - 可搜索名称：NFC-47b201ff5377fb11 / `experimentally_identified_causal`
   - 来源：`docs/architecture/multiscale-causal-fabric.md`
   - 依赖：—；被引用：—
-- [`incremental_execution --generates / repository_dependency--> iteration` — declared repository materialization relation](../../../data/operations/propagation/121Q32I-report.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+- [`incremental_execution --generates / repository_dependency--> iteration` — declared repository materialization relation](../../../reports/operations/121Q32I-change-propagation-impact.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-b922630dbb357073 / `incremental_execution --generates / repository_dependency--> iteration` — declared repository materialization relation
-  - 来源：`data/operations/propagation/121Q32I-report.json`
+  - 来源：`reports/operations/121Q32I-change-propagation-impact.md`
   - 依赖：—；被引用：—
-- [`incremental_execution --projects / repository_dependency--> system_map_projection` — declared repository materializatio](../../../data/operations/propagation/121Q32I-report.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+- [`incremental_execution --projects / repository_dependency--> system_map_projection` — declared repository materializatio](../../../reports/operations/121Q32I-change-propagation-impact.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-28b3a443fc3da44c / `incremental_execution --projects / repository_dependency--> system_map_projection` — declared repository materializatio
-  - 来源：`data/operations/propagation/121Q32I-report.json`
+  - 来源：`reports/operations/121Q32I-change-propagation-impact.md`
   - 依赖：—；被引用：—
-- [`incremental_execution --publishes / repository_dependency--> pages_pipeline` — declared repository materialization rela](../../../data/operations/propagation/121Q32I-report.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+- [`incremental_execution --publishes / repository_dependency--> pages_pipeline` — declared repository materialization rela](../../../reports/operations/121Q32I-change-propagation-impact.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-d7a42c4d5f6d88ed / `incremental_execution --publishes / repository_dependency--> pages_pipeline` — declared repository materialization rela
-  - 来源：`data/operations/propagation/121Q32I-report.json`
+  - 来源：`reports/operations/121Q32I-change-propagation-impact.md`
   - 依赖：—；被引用：—
-- [`incremental_execution --synchronization_requires / synchronization_obligation--> sync` — declared repository materializ](../../../data/operations/propagation/121Q32I-report.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+- [`incremental_execution --synchronization_requires / synchronization_obligation--> sync` — declared repository materializ](../../../reports/operations/121Q32I-change-propagation-impact.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-dff2ebd1f8833c68 / `incremental_execution --synchronization_requires / synchronization_obligation--> sync` — declared repository materializ
-  - 来源：`data/operations/propagation/121Q32I-report.json`
+  - 来源：`reports/operations/121Q32I-change-propagation-impact.md`
   - 依赖：—；被引用：—
 - [`ITERATION.md` and its three operation templates are not triggered because classification excludes `OPERATIONS_METHOD`.](../../../reports/operations/121Q28-embodied-cognitive-leap-writing-method-audit.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
@@ -1429,10 +1529,10 @@
   - 可搜索名称：NFC-07c9c836220cebb3 / `project-components.json + change-propagation-topology.json + interactive-system-map-layout.json → generate_interactive_
   - 来源：`reports/operations/121Q32-typed-change-propagation-and-self-updating-system-map-audit.md`
   - 依赖：—；被引用：—
-- [`project_component_registry --generates / repository_dependency--> system_map_projection` — deterministic repository der](../../../data/operations/propagation/121Q32-impact-report.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+- [`project_component_registry --generates / repository_dependency--> system_map_projection` — deterministic repository der](../../../reports/operations/121Q32-change-propagation-impact.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-02b6834a14e0e915 / `project_component_registry --generates / repository_dependency--> system_map_projection` — deterministic repository der
-  - 来源：`data/operations/propagation/121Q32-impact-report.md`
+  - 来源：`reports/operations/121Q32-change-propagation-impact.md`
   - 依赖：—；被引用：—
 - [`projection-episode`: source-list -> state-projected; delay=repository order only; oscillation=not assessed; claim=proje](../../../data/architecture/adaptive-relational-network/real-history/after-timeline.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -1444,10 +1544,10 @@
   - 可搜索名称：NFC-56df233408ad2e91 / `projector.py` builds derived ARN projections only from explicitly declared repository source paths and commits.
   - 来源：`docs/architecture/adaptive-relational-network.md`
   - 依赖：—；被引用：—
-- [`propagation_topology --generates / repository_dependency--> system_map_projection` — deterministic repository derivatio](../../../data/operations/propagation/121Q32-impact-report.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+- [`propagation_topology --generates / repository_dependency--> system_map_projection` — deterministic repository derivatio](../../../reports/operations/121Q32-change-propagation-impact.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-103eafc2e66fe253 / `propagation_topology --generates / repository_dependency--> system_map_projection` — deterministic repository derivatio
-  - 来源：`data/operations/propagation/121Q32-impact-report.md`
+  - 来源：`reports/operations/121Q32-change-propagation-impact.md`
   - 依赖：—；被引用：—
 - [`renderer.py` renders JSON and Markdown projections by layer, time window and relation class.](../../../docs/architecture/adaptive-relational-network.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
@@ -1474,15 +1574,15 @@
   - 可搜索名称：NFC-f2eae3bf1d427bfe / `substantive_causal_candidate` represents a bounded MCF-style hypothesis about real or theoretical objects. It is always
   - 来源：`docs/architecture/typed-change-propagation.md`
   - 依赖：—；被引用：—
-- [`system_map_layout --generates / repository_dependency--> system_map_projection` — display derivation only](../../../data/operations/propagation/121Q32-impact-report.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+- [`system_map_layout --generates / repository_dependency--> system_map_projection` — display derivation only](../../../reports/operations/121Q32-change-propagation-impact.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-b9c33f86224a13a0 / `system_map_layout --generates / repository_dependency--> system_map_projection` — display derivation only
-  - 来源：`data/operations/propagation/121Q32-impact-report.md`
+  - 来源：`reports/operations/121Q32-change-propagation-impact.md`
   - 依赖：—；被引用：—
-- [`system_map_projection --deployment_depends_on / repository_dependency--> pages_pipeline` — deployment dependency only](../../../data/operations/propagation/121Q32-impact-report.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+- [`system_map_projection --deployment_depends_on / repository_dependency--> pages_pipeline` — deployment dependency only](../../../reports/operations/121Q32-change-propagation-impact.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-02f8fc65c04cfa53 / `system_map_projection --deployment_depends_on / repository_dependency--> pages_pipeline` — deployment dependency only
-  - 来源：`data/operations/propagation/121Q32-impact-report.md`
+  - 来源：`reports/operations/121Q32-change-propagation-impact.md`
   - 依赖：—；被引用：—
 - [`TemporalActivation.target_ref` is limited to `node_id` and `relation_id`. Layers, states, perturbations, embedding evid](../../../docs/architecture/adaptive-relational-network.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -2109,11 +2209,6 @@
   - 可搜索名称：NFC-438a68c6d211cc99 / Causal inference to scope environmental impact assessment of renewable energy projects
   - 来源：`data/external-research/106-105-correction/106-corrected-source-pack.jsonl`
   - 依赖：—；被引用：—
-- [causal review candidate delegation only](../../../data/operations/change-propagation-topology.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-e236cd50a858ec8b / causal review candidate delegation only
-  - 来源：`data/operations/change-propagation-topology.json`
-  - 依赖：—；被引用：—
 - [CAUSAL 必须有结构因果模型、干预语义与识别依据；否则是机制假说。](../../../FOUNDATION.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-a21481e5bba1112e / CAUSAL 必须有结构因果模型、干预语义与识别依据；否则是机制假说。
@@ -2238,6 +2333,11 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-968D76B8F129A479 / check(f"warning reconciliation has 7 entries", len(warnings) == 7) / IMPLICIT-968D76B8F129A479
   - 来源：`data/external-research/121-fulltext-resolver/121c01/121c01-validator.py`
+  - 依赖：—；被引用：—
+- [CI time becomes the mechanism by which correctness regressions hide.](../../../docs/foundation/task-107-incident-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-c423811090b52ee5 / CI time becomes the mechanism by which correctness regressions hide.
+  - 来源：`docs/foundation/task-107-incident-report.md`
   - 依赖：—；被引用：—
 - [ci_compute -->\|evidence_flow\| foundation_validators](../../../reports/atlas/maps/map-maintainer-sustainability-economics.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
@@ -2404,103 +2504,3 @@
   - 可搜索名称：NFC-8dee280ba8b232e1 / D598 系统性钝化索引可见性验证
   - 来源：`outputs/audit/d598-index-visibility-check-20260708.md`
   - 依赖：D598；被引用：—
-- [D598's complete legacy body was recovered and read. It describes prolonged high pressure, low refusal capacity, weak rep](../../../reports/foundation-architecture/D598-final-adjudication-20260713.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-cd8822eecdb329b1 / D598's complete legacy body was recovered and read. It describes prolonged high pressure, low refusal capacity, weak rep
-  - 来源：`reports/foundation-architecture/D598-final-adjudication-20260713.md`
-  - 依赖：D598；被引用：—
-- [D598｜系统性钝化](../../../data/foundation/claims/claims.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：CLAIM-D598 / D598｜系统性钝化
-  - 来源：`data/foundation/claims/claims.jsonl`
-  - 依赖：D598；被引用：—
-- [D599 编号、标题、机制式可召回（grep 全局命中）；](../../../outputs/audit/cross-domain-candidate-function-closeout-audit-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-4f1f0654f56c5125 / D599 编号、标题、机制式可召回（grep 全局命中）；
-  - 来源：`outputs/audit/cross-domain-candidate-function-closeout-audit-20260708.md`
-  - 依赖：D599；被引用：—
-- [D601 的上游形成机制](../../../outputs/research/role-identity-collision-batches-20260712.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-763fd616a8219b41 / D601 的上游形成机制
-  - 来源：`outputs/research/role-identity-collision-batches-20260712.md`
-  - 依赖：D601；被引用：—
-- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：M01 / data/external-research/088-external-source-atlas-medium.jsonl / M01 / M02
-  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
-  - 依赖：—；被引用：—
-- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：M02 / data/external-research/088-external-source-atlas-medium.jsonl / M02 / M01
-  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
-  - 依赖：—；被引用：—
-- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：M03 / data/external-research/088-external-source-atlas-medium.jsonl / M03 / M01
-  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
-  - 依赖：—；被引用：—
-- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：M04 / data/external-research/088-external-source-atlas-medium.jsonl / M04 / M01
-  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
-  - 依赖：—；被引用：—
-- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：M05 / data/external-research/088-external-source-atlas-medium.jsonl / M05 / M01
-  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
-  - 依赖：—；被引用：—
-- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：M06 / data/external-research/088-external-source-atlas-medium.jsonl / M06 / M01
-  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
-  - 依赖：—；被引用：—
-- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：M07 / data/external-research/088-external-source-atlas-medium.jsonl / M07 / M01
-  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
-  - 依赖：—；被引用：—
-- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：M08 / data/external-research/088-external-source-atlas-medium.jsonl / M08 / M01
-  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
-  - 依赖：—；被引用：—
-- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：M09 / data/external-research/088-external-source-atlas-medium.jsonl / M09 / M01
-  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
-  - 依赖：—；被引用：—
-- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：M10 / data/external-research/088-external-source-atlas-medium.jsonl / M10 / M01
-  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
-  - 依赖：—；被引用：—
-- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：M11 / data/external-research/088-external-source-atlas-medium.jsonl / M11 / M01
-  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
-  - 依赖：—；被引用：—
-- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：M12 / data/external-research/088-external-source-atlas-medium.jsonl / M12 / M01
-  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
-  - 依赖：—；被引用：—
-- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：M13 / data/external-research/088-external-source-atlas-medium.jsonl / M13 / M01
-  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
-  - 依赖：—；被引用：—
-- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：M14 / data/external-research/088-external-source-atlas-medium.jsonl / M14 / M01
-  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
-  - 依赖：—；被引用：—
-- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：M15 / data/external-research/088-external-source-atlas-medium.jsonl / M15 / M01
-  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
-  - 依赖：—；被引用：—
-- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：M16 / data/external-research/088-external-source-atlas-medium.jsonl / M16 / M01
-  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
-  - 依赖：—；被引用：—
