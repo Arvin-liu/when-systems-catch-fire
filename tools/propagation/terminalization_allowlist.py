@@ -14,6 +14,7 @@ rejected.
 from __future__ import annotations
 
 import re
+import sys
 from typing import Dict, List, Tuple
 
 # Allowlisted path patterns for the terminalization PR. Anything else is a
