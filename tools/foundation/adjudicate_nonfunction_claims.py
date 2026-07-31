@@ -58,6 +58,18 @@ MACHINE_EXCLUDE_PREFIXES = (
     "data/governance/",
     "KNOWLEDGE/",
 )
+# Task 107 (R1 20260731) generator-input boundary: these prefixes are governed
+# records, narrative/reference surfaces, benchmark candidate data/code or analysis
+# output. They are NOT authoritative claim sources and must never be scanned for
+# claim-like fragments (anti-backflow, contract §3.1/§3.2). They remain accounted
+# for in source-discovery.jsonl (listed with an EXCLUDED status + reason) so the
+# every-repository-path-accounted gate stays closed without fabricating claims.
+NON_AUTHORITATIVE_PREFIXES = (
+    "docs/editorial/",
+    "function-os-candidate/",
+    "analysis/",
+    "data/operations/",
+)
 EXPLICIT_IMPORTS = {
     "data/foundation/claims/claims.jsonl",
 }
@@ -183,6 +195,8 @@ def text_fragments(path: str) -> tuple[list[dict], str]:
         return fragments, "EXPLICIT_CANONICAL_IMPORT"
     if path in SELF_EXCLUDES or path.startswith(MACHINE_EXCLUDE_PREFIXES):
         return fragments, "EXCLUDED_GENERATED_OR_FUNCTION_ASSET_REGISTRY"
+    if path.startswith(NON_AUTHORITATIVE_PREFIXES):
+        return fragments, "EXCLUDED_NON_AUTHORITATIVE_RECORD"
     if suffix not in TEXT_SUFFIXES:
         return fragments, "EXCLUDED_NON_TEXT_SUFFIX"
     if suffix == ".jsonl":
