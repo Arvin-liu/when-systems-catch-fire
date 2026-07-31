@@ -4,11 +4,6 @@
 
 | 文件 | 类别 | 正文行 | 列表比 | 标题数 | ID主导段 | 附录 | 源链接 | 结论 | 标记 |
 |---|---|---|---|---|---|---|---|---|---|
-| 001-withdrawn-gravity-how-strong-claims-do-not-rebound.md | "correction-evolution" | 38 | 0.21 | 7 | 0 | Y | Y | PASS | — |
-| 002-two-surfaces-one-truth-registry-and-human-layer.md | "architecture-system" | 33 | 0.12 | 7 | 0 | Y | Y | PASS | — |
-| 003-from-candidate-to-current-evidence-chain.md | "evidence-validation" | 29 | 0.00 | 7 | 0 | Y | Y | PASS | — |
-| 004-gated-model-bounded-projection-open-unification.md | "cross-domain" | 35 | 0.23 | 6 | 0 | Y | Y | PASS | — |
-| 005-description-is-not-proof-systems-representations.md | "open-problem" | 27 | 0.07 | 5 | 0 | Y | Y | PASS | — |
-| 006-readable-works-with-boundaries.md | "editorial-publication" | 32 | 0.09 | 7 | 0 | Y | Y | PASS | — |
+| 007-bounded-trust-function-os-v02-capability-benchmark.md | "evidence-validation" | 37 | 0.22 | 6 | 0 | Y | Y | PASS | — |
 
-SUMMARY: 6 files, 6 PASS, 0 WARN
+SUMMARY: 1 files, 1 PASS, 0 WARN

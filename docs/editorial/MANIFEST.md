@@ -98,6 +98,21 @@
 
 ---
 
+## 007 — 边界之内的可信：Function OS v0.2 能力基准告诉我们什么，以及它诚实停在哪里
+
+- **类别**：证据 / 验证（evidence-validation）
+- **对应簇**：C004（OPERATIONS_EVIDENCE 主导，n=15）
+- **中心问题**：一个自称"有界符号函数流水线"的系统，当你真的去测它时，"有界"到底意味着什么？
+- **为什么是一篇文章而非索引条目**：任务 105 的核心张力不是"过了多少"，而是"原始目标里那个真实的实现缺陷，有没有被诚实地分别封存、分别报告"；需要把预注册先于结果、原始/修复双轨、失败闭合硬底线、确定性复现连成一条叙事，而不是通过清单。
+- **源资产集**：任务 105 产物——`function-os-candidate/v0.2/benchmark/PREREGISTRATION.md`（预注册，提交 `5d664686`）、`RESULTS.json` 原始目标（提交 `aa803277`，OVERALL=PARTIALLY，A1=0.9372）、`RESULTS.json` 修复后（提交 `46471183`，OVERALL=SUPPORTED，A1=1.0）、N2 缺陷与有界修复（提交 `1314ba80`，`function_os/n2_representation.py` 的 `_extract_expressions`）、回归测试（`tests/test_n2_robust.py` 的 TestN2NestedEqualityRegression）、独立 oracle（`oracle/reference.py`）。
+- **内部关系模型**：以"有界 vs 万能"为张力，串联失败闭合底线（false_accept=0、registry_contamination=0、mutation_detection=1.0）、原始/修复分别封存、预注册祖先约束（harness `ancestry_ok` 强制）、确定性语料与 replay=1.0。
+- **范围与主张上限**：描述 Function OS v0.2 **自己声明过**的有界能力；不声称沙箱安全、生产就绪或通用证明；不新建裁决、证明或实证；不提高任何 claim ceiling。
+- **当前 / 历史 / 开放区分**：当前=修复后全部 7 主张 SUPPORTED；历史=原始目标 PARTIALLY（25 个嵌套相等案例 RUNTIME_ERROR，原样封存未删改）；开放=通用证明系统、完备安全沙箱、外部真理机仍超出有界主张，未测也未声称。
+- **目标读者与目的**：关心"AI 生成系统的能力如何被诚实基准"的读者；建立对预注册、分别封存、失败闭合与复现纪律的直觉。
+- **叙事大纲**：名字许诺有界 vs 实际身份 → 为何是治理问题 → 原始目标哪几条边界内成立 → 那 25 个真实缺陷与失败闭合底线 → 有界修复与分别报告 → 仍然有界不宣布万能 → 回照开头。
+
+---
+
 ## 试点覆盖对照（§5.3 五类）
 
 | §5.3 要求 | 对应文章 |

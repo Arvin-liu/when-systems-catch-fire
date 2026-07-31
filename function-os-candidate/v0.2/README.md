@@ -102,6 +102,14 @@ cd function-os-candidate/v0.2
 python -m pytest tests
 ```
 
+## 基准与已知缺陷（任务 105）
+
+Function OS v0.2 在 `16f64004` 上接受了任务 105 的预注册对抗基准（479 个确定性案例、3 层、7 项主张）。结论原样封存于 `function-os-candidate/v0.2/benchmark/`，并以编辑文章 `docs/editorial/articles/007-*` 叙述：
+
+- **失败闭合边界、契约执行、制品/迹完整性、注册表修订与回滚、有界顺序组合**：原始目标即全部 `SUPPORTED`，无失败闭合（`false_accept_rate = 0.0`，`registry_contamination_count = 0`，`mutation_detection_rate = 1.0`）。
+- **语义保真（A1）**：原始目标 `0.9372`（阈值 `0.99`）——缺口来自一个**真实的实现缺陷**：`N2RepresentationEncoder._extract_expressions` 对嵌套相等后条件（如 `result == (x == y)`）用 `split('==')`（全拆分）取到不完整右端，导致 25 个案例执行期 `RUNTIME_ERROR`。该缺陷已被**有界修复**（`split('==', 1)`，提交 `1314ba80`）并加回归测试；修复后 A1 = `1.0`，整体 `SUPPORTED_WITHIN_BOUNDED_DOMAIN`。原始失败结果作为独立提交 `aa803277` 原样留存，未删改、未掩盖。
+- **处置边界**：本次基准只测 v0.2 **自己声明过**的有界能力。它**不改变**本页"限制是什么 / 边界是什么"——v0.2 仍是候选参考实现，不是完整安全沙箱、不是生产就绪、不是通用证明系统、不是外部真理机。发现并被修复的是一个实现缺陷，不是能力主张缺陷。
+
 ## 文档入口
 
 - [现行架构](../../ARCHITECTURE.md) — 说明 Function OS 在点火七层架构与操作 overlay 中的位置。

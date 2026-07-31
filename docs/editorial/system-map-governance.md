@@ -46,3 +46,15 @@
 ## 5. 叙事层「活系统图」的确定性
 
 §4 语料关系图 `analysis/corpus-relation/corpus_relation_graph.json` 与 `article_cluster_candidates.json` 由 `tools/build_corpus_relation_graph.py` 确定性生成（stdlib-only、无网络、`sort_keys=True`、节点/边按 key 排序）。本地复算后 `git status` 干净，证明字节级可复现；其变更由 §4 工具自身保证与受治理卡语料一致。它即为叙事/语料层的「活系统图」，与首页架构图各司其职、互不耦合。
+
+## 6. 任务 105 的系统图影响分类（NO_MAP_IMPACT）
+
+任务 105 在本仓库新增/修改的均为**基准证据层与编辑叙事层**产物，以及一个 Function OS 内部实现缺陷的有界修复：
+
+- `function-os-candidate/v0.2/benchmark/*`（预注册、语料、oracle、RESULTS、PREREGISTRATION）——基准证据层；
+- `docs/editorial/articles/007-*`、`docs/editorial/MANIFEST.md`、`docs/editorial/README.md`——编辑叙事层（类比 104 的 NO_MAP_IMPACT 产出，不向首页系统图新增编辑/叙事节点）；
+- `function-os-candidate/v0.2/function_os/n2_representation.py`（N2 嵌套相等提取缺陷的有界修复，`split('==')` → `split('==',1)`）与回归测试——Function OS 现有 N2 构件的**内部实现变更**，未新增/移除节点身份，未改动 `project-components.json` 的 `canonical target` 或 `map_projection`，未改动 `change-propagation-topology.json` / `interactive-system-map-layout.json`，也未改动生成器。
+
+以上均未触碰系统图三个受治理源与生成器，因此首页系统图对其**无影响（NO_MAP_IMPACT）**：105 不触发系统图重生成，也不改变首页地图的节点/边。
+
+**渲染复核证据**：在当前任务分支 HEAD 运行 `python3 tools/generate_interactive_system_map.py --check`，输出 `SYSTEM_MAP_DERIVED_OK nodes=49 edges=44`，退出码 0——证明当前提交的系统图为干净派生、非陈旧、非手工编辑，与 104 结论一致。
