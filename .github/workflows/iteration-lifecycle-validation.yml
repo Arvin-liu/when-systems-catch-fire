@@ -16,10 +16,16 @@ jobs:
   lifecycle-validation:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout (full history)
+      # Task 108 (contract §13): FRESH FULL CLONE must expose annotated terminal
+      # tags for tag-resolution. fetch-depth: 0 alone does NOT fetch tags, so
+      # fetch-tags must be set explicitly (the derived-lifecycle-view and
+      # lifecycle resolver read terminal tags for 104-108; without them the
+      # "clean working-tree after generation" gate fails a false-negative).
+      - name: Checkout (full history + tags)
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          fetch-tags: true
 
       - name: Set up Python
         uses: actions/setup-python@v5
