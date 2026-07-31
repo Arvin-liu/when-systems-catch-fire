@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [def setUp(self):](../../../function-os-candidate/v0.2/tests/test_n3_robust.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-7440FE9314D9C2BE / def setUp(self): / IMPLICIT-7440FE9314D9C2BE / IMPLICIT-13559FC49E4C7AEF
+  - 来源：`function-os-candidate/v0.2/tests/test_n3_robust.py`
+  - 依赖：—；被引用：—
+- [def setUp(self):](../../../function-os-candidate/v0.2/tests/test_n1_robust.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-7C16CEB171457CD9 / def setUp(self): / IMPLICIT-7C16CEB171457CD9 / IMPLICIT-13559FC49E4C7AEF
+  - 来源：`function-os-candidate/v0.2/tests/test_n1_robust.py`
+  - 依赖：—；被引用：—
 - [def setUp(self):](../../../tests/test_incremental_execution_validator.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-8DD208EB164612A0 / def setUp(self): / IMPLICIT-8DD208EB164612A0 / IMPLICIT-13559FC49E4C7AEF
@@ -2493,14 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-60653E6718FB3820 / def test_manifest_seal_merge_commit_disagreement_is_rejected(self): / IMPLICIT-60653E6718FB3820
   - 来源：`tests/test_iteration_sync.py`
-  - 依赖：—；被引用：—
-- [def test_manual_policy_cannot_smuggle_local_validator(self):](../../../tests/test_component_profiles.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-0A584A7D476FE594 / def test_manual_policy_cannot_smuggle_local_validator(self): / IMPLICIT-0A584A7D476FE594
-  - 来源：`tests/test_component_profiles.py`
-  - 依赖：—；被引用：—
-- [def test_material_classification():](../../../tests/test_q33_governance_infrastructure.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-30848433E9C4200F / def test_material_classification(): / IMPLICIT-30848433E9C4200F
-  - 来源：`tests/test_q33_governance_infrastructure.py`
   - 依赖：—；被引用：—

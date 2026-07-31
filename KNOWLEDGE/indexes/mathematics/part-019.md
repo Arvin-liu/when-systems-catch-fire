@@ -4,6 +4,131 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [数学表达 / Expression: `F_{D301}(x) := M2的漂移速率dμ/dt=-(Σᵢ αᵢ/(1-pᵢ)²)/(d²Φ/dμ²)。分母是Φ曲率——平坦区（物理大统一d²Φ/dμ²≈0）漂移极快，尖锐区漂移极慢。平坦=稳定](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0337-D301-%E6%9E%81%E5%B0%8F%E7%82%B9%E6%BC%82%E7%A7%BB%E9%80%9F%E7%8E%87%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-40e9133fd75a88fb / 数学表达 / Expression: `F_{D301}(x) := M2的漂移速率dμ/dt=-(Σᵢ αᵢ/(1-pᵢ)²)/(d²Φ/dμ²)。分母是Φ曲率——平坦区（物理大统一d²Φ/dμ²≈0）漂移极快，尖锐区漂移极慢。平坦=稳定
+  - 来源：`统一函数总表/0337-D301-极小点漂移速率函数.md`
+  - 依赖：D292, D301；被引用：—
+- [数学表达 / Expression: `F_{D304}(x) := M5的容斥主导不只约束α，还约束弱混合角θ_W：sin²θ_W≈0.23必须使弱力否决概率p_weak<p*。θ_W过大→弱力否决概率超p*→电弱统一尺度极小点消失→d=](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0340-D304-%E5%BC%B1%E6%B7%B7%E5%90%88%E8%A7%92-%E5%AE%B9%E6%96%A5%E7%BA%A6%E6%9D%9F%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-6084fc958d78f4ef / 数学表达 / Expression: `F_{D304}(x) := M5的容斥主导不只约束α，还约束弱混合角θ_W：sin²θ_W≈0.23必须使弱力否决概率p_weak<p*。θ_W过大→弱力否决概率超p*→电弱统一尺度极小点消失→d=
+  - 来源：`统一函数总表/0340-D304-弱混合角-容斥约束函数.md`
+  - 依赖：D283, D297, D304；被引用：—
+- [数学表达 / Expression: `F_{D307}(x) := M8的σ_opt≈1.65来自独立性-充分性权衡：门控面独立性要求σ 1（过分散→耦合弱→缓冲不足）。精确解：σ_opt](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0343-D307-%CF%83_opt%E5%BE%AE%E8%A7%82%E8%B5%B7%E6%BA%90%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-18ec2c346cf13e3c / 数学表达 / Expression: `F_{D307}(x) := M8的σ_opt≈1.65来自独立性-充分性权衡：门控面独立性要求σ 1（过分散→耦合弱→缓冲不足）。精确解：σ_opt
+  - 来源：`统一函数总表/0343-D307-σ_opt微观起源函数.md`
+  - 依赖：D307；被引用：—
+- [数学表达 / Expression: `F_{D308}(x) := M9的阶段过渡存在滞后：从阶段2退回阶段1的条件（缓冲恢复）比从阶段1进入阶段2的条件（缓冲消耗）更严格。滞后量Δh∝\|d³Φ/dμ³\|——三阶导数越大滞后越大。物理相变](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0344-D308-%E9%98%B6%E6%AE%B5%E8%BF%87%E6%B8%A1%E6%BB%9E%E5%90%8E%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-c4511bff2608d5dc / 数学表达 / Expression: `F_{D308}(x) := M9的阶段过渡存在滞后：从阶段2退回阶段1的条件（缓冲恢复）比从阶段1进入阶段2的条件（缓冲消耗）更严格。滞后量Δh∝\|d³Φ/dμ³\|——三阶导数越大滞后越大。物理相变
+  - 来源：`统一函数总表/0344-D308-阶段过渡滞后函数.md`
+  - 依赖：D308；被引用：—
+- [数学表达 / Expression: `F_{D311}(x) := M12的g_eff极小但不为零时（0<g_eff<<g_critical），系统处于"僵尸态"：耦合名义上存在但实际无效，缓冲名义上存在但无法使用。数学特征：P_surv](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0347-D311-%E5%83%B5%E5%B0%B8%E6%80%81%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-963276bf109c8de3 / 数学表达 / Expression: `F_{D311}(x) := M12的g_eff极小但不为零时（0<g_eff<<g_critical），系统处于"僵尸态"：耦合名义上存在但实际无效，缓冲名义上存在但无法使用。数学特征：P_surv
+  - 来源：`统一函数总表/0347-D311-僵尸态函数.md`
+  - 依赖：D309, D311；被引用：—
+- [数学表达 / Expression: `F_{D312}(x) := M13的正反馈回路放大噪声：δp_max经过k轮反馈后放大为δp_max·K^k，K为反馈增益(D274)。K>1时噪声指数放大→系统对初始条件极度敏感→蝴蝶效应。K<1](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0348-D312-%E6%AD%A3%E5%8F%8D%E9%A6%88%E5%99%AA%E5%A3%B0%E6%94%BE%E5%A4%A7%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-50c55e3be7d12b0c / 数学表达 / Expression: `F_{D312}(x) := M13的正反馈回路放大噪声：δp_max经过k轮反馈后放大为δp_max·K^k，K为反馈增益(D274)。K>1时噪声指数放大→系统对初始条件极度敏感→蝴蝶效应。K<1
+  - 来源：`统一函数总表/0348-D312-正反馈噪声放大函数.md`
+  - 依赖：D274, D295, D312；被引用：—
+- [数学表达 / Expression: `F_{D313}(x) := M14的良性-恶性共存(D299)能持续的条件：良性子循环的反馈增益K_benign必须大于恶性子循环的容斥加速因子α_exclusion。K_benign<α_excl](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0349-D313-%E5%85%B1%E5%AD%98%E7%A8%B3%E6%80%81%E6%9D%A1%E4%BB%B6%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-952bc1056009bab1 / 数学表达 / Expression: `F_{D313}(x) := M14的良性-恶性共存(D299)能持续的条件：良性子循环的反馈增益K_benign必须大于恶性子循环的容斥加速因子α_exclusion。K_benign<α_excl
+  - 来源：`统一函数总表/0349-D313-共存稳态条件函数.md`
+  - 依赖：D274, D299, D313；被引用：—
+- [数学表达 / Expression: `F_{D314}(x) := M1的ΔΦ通过P_survival=e^{-Φ}传导。ΔΦ 1时P变化≈e^{-ΔΦ}（指数区），0.1<ΔΦ<1为过渡区。非线性阈](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0350-D314-%CE%94%CE%A6-P%E4%BC%A0%E5%AF%BC%E9%9D%9E%E7%BA%BF%E6%80%A7%E9%98%88%E5%80%BC%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-f1977dde997a1753 / 数学表达 / Expression: `F_{D314}(x) := M1的ΔΦ通过P_survival=e^{-Φ}传导。ΔΦ 1时P变化≈e^{-ΔΦ}（指数区），0.1<ΔΦ<1为过渡区。非线性阈
+  - 来源：`统一函数总表/0350-D314-ΔΦ-P传导非线性阈值函数.md`
+  - 依赖：D158, D260, D296, D314；被引用：—
+- [数学表达 / Expression: `F_{D315}(x) := M2的Φ(μ)在多个门控面参数差异大时可出现多个极小点。竞争规则：全局极小点由min(Φ(μ_k))决定，但系统可能被困在局部极小点（亚稳态）。逃逸条件：热涨落或外部驱动](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0351-D315-%E5%A4%9A%E6%9E%81%E5%B0%8F%E7%82%B9%E7%AB%9E%E4%BA%89%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-1bb9f64d151884da / 数学表达 / Expression: `F_{D315}(x) := M2的Φ(μ)在多个门控面参数差异大时可出现多个极小点。竞争规则：全局极小点由min(Φ(μ_k))决定，但系统可能被困在局部极小点（亚稳态）。逃逸条件：热涨落或外部驱动
+  - 来源：`统一函数总表/0351-D315-多极小点竞争函数.md`
+  - 依赖：D315；被引用：—
+- [数学表达 / Expression: `F_{D316}(x) := M3的dΦ/dt=Σᵢ αᵢ/(1-pᵢ) + Σᵢⱼ d(pᵢpⱼ)/dt。早期pᵢ小时容斥项占比≈0，中后期容斥项占比∝(Σpᵢ)²急剧上升。转折点在Σpᵢ≈0.5—](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0352-D316-%E5%AE%B9%E6%96%A5%E6%97%B6%E9%97%B4%E6%9D%83%E9%87%8D%E6%BC%94%E5%8C%96%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-bf09fe1ede65b8df / 数学表达 / Expression: `F_{D316}(x) := M3的dΦ/dt=Σᵢ αᵢ/(1-pᵢ) + Σᵢⱼ d(pᵢpⱼ)/dt。早期pᵢ小时容斥项占比≈0，中后期容斥项占比∝(Σpᵢ)²急剧上升。转折点在Σpᵢ≈0.5—
+  - 来源：`统一函数总表/0352-D316-容斥时间权重演化函数.md`
+  - 依赖：D316；被引用：—
+- [数学表达 / Expression: `F_{D318}(x) := M5的容斥从可忽略变主导的临界尺度μ_c由max(pᵢ(μ))=p*决定。μ μ_c时容斥主导（量子引力区）。μ_c对应量子引力能标](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0354-D318-%E5%AE%B9%E6%96%A5%E4%B8%BB%E5%AF%BC%E5%B0%BA%E5%BA%A6%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-b64f3f9148951d99 / 数学表达 / Expression: `F_{D318}(x) := M5的容斥从可忽略变主导的临界尺度μ_c由max(pᵢ(μ))=p*决定。μ μ_c时容斥主导（量子引力区）。μ_c对应量子引力能标
+  - 来源：`统一函数总表/0354-D318-容斥主导尺度函数.md`
+  - 依赖：D293, D318；被引用：—
+- [数学表达 / Expression: `F_{D320}(x) := M7的容斥加速度a_excl∝n²·σ²·ḡ在不同域的标度：物理n小σ小→a_excl小，生物n大σ中→a_excl中，社会n大σ大→a_excl大。a_excl(社会)](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0356-D320-%E5%AE%B9%E6%96%A5%E5%8A%A0%E9%80%9F%E8%B7%A8%E5%9F%9F%E6%A0%87%E5%BA%A6%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-3632aee4b7ed36b1 / 数学表达 / Expression: `F_{D320}(x) := M7的容斥加速度a_excl∝n²·σ²·ḡ在不同域的标度：物理n小σ小→a_excl小，生物n大σ中→a_excl中，社会n大σ大→a_excl大。a_excl(社会)
+  - 来源：`统一函数总表/0356-D320-容斥加速跨域标度函数.md`
+  - 依赖：D320；被引用：—
+- [数学表达 / Expression: `F_{D321}(x) := M8的d_opt漂移时σ_opt跟着动：d_opt右移（学习升级）时σ_opt先升后降——初期新门控面增加分散度，后期门控面成熟降低分散度。σ_opt响应滞后于d_opt](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0357-D321-d_opt-%CF%83_opt%E8%81%94%E5%90%88%E6%BC%94%E5%8C%96%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-4dfad282163a3ed7 / 数学表达 / Expression: `F_{D321}(x) := M8的d_opt漂移时σ_opt跟着动：d_opt右移（学习升级）时σ_opt先升后降——初期新门控面增加分散度，后期门控面成熟降低分散度。σ_opt响应滞后于d_opt
+  - 来源：`统一函数总表/0357-D321-d_opt-σ_opt联合演化函数.md`
+  - 依赖：D321；被引用：—
+- [数学表达 / Expression: `F_{D324}(x) := M11的w₂∝(√n-1)/(n·ḡ)。n→∞时w₂→0——门控面越多缓冲期越短。但ḡ∝√n以上增长可补偿。社会系统"改革窗口"是否关闭取决于ḡ增长能否跟上n。`](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0360-D324-%E9%98%B6%E6%AE%B52%E5%AE%BD%E5%BA%A6%E6%A0%87%E5%BA%A6%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-cc3ca09d9ebd014f / 数学表达 / Expression: `F_{D324}(x) := M11的w₂∝(√n-1)/(n·ḡ)。n→∞时w₂→0——门控面越多缓冲期越短。但ḡ∝√n以上增长可补偿。社会系统"改革窗口"是否关闭取决于ḡ增长能否跟上n。`
+  - 来源：`统一函数总表/0360-D324-阶段2宽度标度函数.md`
+  - 依赖：D324；被引用：—
+- [数学表达 / Expression: `F_{D325}(x) := M12的僵尸态中自发涨落δg_eff∝√(kT_eff/n)。涨落踢出僵尸态的概率∝e^{-n(g_critical-g_eff)²/kT_eff}——n越大概率越小。小](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0361-D325-%E5%83%B5%E5%B0%B8%E6%80%81%E8%87%AA%E4%BF%AE%E5%A4%8D%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-4f2904734c6174c4 / 数学表达 / Expression: `F_{D325}(x) := M12的僵尸态中自发涨落δg_eff∝√(kT_eff/n)。涨落踢出僵尸态的概率∝e^{-n(g_critical-g_eff)²/kT_eff}——n越大概率越小。小
+  - 来源：`统一函数总表/0361-D325-僵尸态自修复函数.md`
+  - 依赖：D325；被引用：—
+- [数学表达 / Expression: `F_{D326}(x) := M13的正反馈K^k饱和来自p_max的物理下界p_min>0。K^k有效值=K^k/(1+(K^k-1)·p_min/p_max)，K^k·p_min≈p_max时饱和](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0362-D326-%E6%AD%A3%E5%8F%8D%E9%A6%88%E9%A5%B1%E5%92%8C%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-b8815b38abe32682 / 数学表达 / Expression: `F_{D326}(x) := M13的正反馈K^k饱和来自p_max的物理下界p_min>0。K^k有效值=K^k/(1+(K^k-1)·p_min/p_max)，K^k·p_min≈p_max时饱和
+  - 来源：`统一函数总表/0362-D326-正反馈饱和函数.md`
+  - 依赖：D242, D312, D326；被引用：—
+- [数学表达 / Expression: `F_{D327}(x) := M14的K_benign≈α_exclusion时良性恶性周期震荡：良性增长→p_max↓→容斥减弱→恶性增长→p_max↑→良性被压→恶性受限→良性再增长。震荡周期T_](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0363-D327-%E5%85%B1%E5%AD%98%E9%9C%87%E8%8D%A1%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-dfdbc002d439fc65 / 数学表达 / Expression: `F_{D327}(x) := M14的K_benign≈α_exclusion时良性恶性周期震荡：良性增长→p_max↓→容斥减弱→恶性增长→p_max↑→良性被压→恶性受限→良性再增长。震荡周期T_
+  - 来源：`统一函数总表/0363-D327-共存震荡函数.md`
+  - 依赖：D327；被引用：—
+- [数学表达 / Expression: `F_{D328}(x) := M1的不同门控面ΔΦᵢ差异大时，总ΔΦ由最大ΔΦ主导：ΔΦ_total≈max(ΔΦᵢ)·(1+ln(Σe^{ΔΦᵢ}/max(ΔΦᵢ)))。极端异质性下ΔΦ_total](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0364-D328-%CE%94%CE%A6%E7%A9%BA%E9%97%B4%E5%BC%82%E8%B4%A8%E6%80%A7%E5%8F%A0%E5%8A%A0%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-302a6fcc00539a5d / 数学表达 / Expression: `F_{D328}(x) := M1的不同门控面ΔΦᵢ差异大时，总ΔΦ由最大ΔΦ主导：ΔΦ_total≈max(ΔΦᵢ)·(1+ln(Σe^{ΔΦᵢ}/max(ΔΦᵢ)))。极端异质性下ΔΦ_total
+  - 来源：`统一函数总表/0364-D328-ΔΦ空间异质性叠加函数.md`
+  - 依赖：D280, D328；被引用：—
+- [数学表达 / Expression: `F_{D329}(x) := M2的两个极小点在门槛参数变化时可以合并。合并条件：Φ(μ_saddle)-Φ(μ₁)<δΦ_thermal。合并后系统从双稳态变为单稳态——失去"退路"。合并方向：浅极](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0365-D329-%E6%9E%81%E5%B0%8F%E7%82%B9%E5%90%88%E5%B9%B6%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-82f5f84ec3e0c9dc / 数学表达 / Expression: `F_{D329}(x) := M2的两个极小点在门槛参数变化时可以合并。合并条件：Φ(μ_saddle)-Φ(μ₁)<δΦ_thermal。合并后系统从双稳态变为单稳态——失去"退路"。合并方向：浅极
+  - 来源：`统一函数总表/0365-D329-极小点合并函数.md`
+  - 依赖：D315, D329；被引用：—
+- [数学表达 / Expression: `F_{D331}(x) := M4的p*在有限n时有统计涨落δp*/p*∝1/√n。n小时涨落大→容斥-耦合竞争结果随机；n大时涨落小→结果确定但更难改变。小系统的竞争结果高度随机，大系统更可预测但更](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0367-D331-p-%E6%B6%A8%E8%90%BD%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-842d6dbd9a6732e5 / 数学表达 / Expression: `F_{D331}(x) := M4的p*在有限n时有统计涨落δp*/p*∝1/√n。n小时涨落大→容斥-耦合竞争结果随机；n大时涨落小→结果确定但更难改变。小系统的竞争结果高度随机，大系统更可预测但更
+  - 来源：`统一函数总表/0367-D331-p-涨落函数.md`
+  - 依赖：D331；被引用：—
+- [数学表达 / Expression: `F_{D333}(x) := M6的d_eff在4附近振荡时阻尼γ∝Σαᵢ/(1-pᵢ)²。γ>0衰减→d=4稳定吸引子；γ >0（强阻尼），社会系统γ≈0](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0369-D333-%E7%BB%B4%E5%BA%A6%E5%9B%9E%E5%A4%8D%E9%98%BB%E5%B0%BC%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-49fad7cccb670cfa / 数学表达 / Expression: `F_{D333}(x) := M6的d_eff在4附近振荡时阻尼γ∝Σαᵢ/(1-pᵢ)²。γ>0衰减→d=4稳定吸引子；γ >0（强阻尼），社会系统γ≈0
+  - 来源：`统一函数总表/0369-D333-维度回复阻尼函数.md`
+  - 依赖：D333；被引用：—
+- [数学表达 / Expression: `F_{D335}(x) := M8的(d_opt,σ_opt)平衡点在σ σ_opt时不稳定——过分散的系统无法自发回到最优配置。σ>σ_opt的恢复需要外部干预（D306）。社](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0371-D335-d_opt-%CF%83_opt%E5%B9%B3%E8%A1%A1%E7%A8%B3%E5%AE%9A%E6%80%A7%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-bf6f3e7c280a6047 / 数学表达 / Expression: `F_{D335}(x) := M8的(d_opt,σ_opt)平衡点在σ σ_opt时不稳定——过分散的系统无法自发回到最优配置。σ>σ_opt的恢复需要外部干预（D306）。社
+  - 来源：`统一函数总表/0371-D335-d_opt-σ_opt平衡稳定性函数.md`
+  - 依赖：D306, D335；被引用：—
+- [数学表达 / Expression: `F_{D338}(x) := M11的w₂随T_eff升高而展宽：w₂(T)∝w₂(0)·(1+kT_eff/Φ_min)。高温使阶段边界模糊→缓冲期延长，但缓冲质量降低→更宽但更薄的缓冲。社会"流动](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0374-D338-%E9%98%B6%E6%AE%B52%E5%AE%BD%E5%BA%A6-%E6%B8%A9%E5%BA%A6%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-92bbd50ccc132d52 / 数学表达 / Expression: `F_{D338}(x) := M11的w₂随T_eff升高而展宽：w₂(T)∝w₂(0)·(1+kT_eff/Φ_min)。高温使阶段边界模糊→缓冲期延长，但缓冲质量降低→更宽但更薄的缓冲。社会"流动
+  - 来源：`统一函数总表/0374-D338-阶段2宽度-温度函数.md`
+  - 依赖：D338；被引用：—
+- [数学表达 / Expression: `F_{D349}(x) := M8的σ>σ_opt时系统进入"维度饥渴"状态——需要更多维度补偿分散度但d不能无限增长。维度饥渴的结局：要么外部增加d（学习/改革），要么内部崩溃（Φ持续增长）。社会分](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0385-D349-%E8%BF%87%E5%88%86%E6%95%A3%E7%9B%B8%E5%9B%BE%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-95aba4a3404ea0df / 数学表达 / Expression: `F_{D349}(x) := M8的σ>σ_opt时系统进入"维度饥渴"状态——需要更多维度补偿分散度但d不能无限增长。维度饥渴的结局：要么外部增加d（学习/改革），要么内部崩溃（Φ持续增长）。社会分
+  - 来源：`统一函数总表/0385-D349-过分散相图函数.md`
+  - 依赖：D349；被引用：—
+- [数学表达 / Expression: `F_{D352}(x) := M11的w₂决定共振频率ω_resonance∝1/w₂。窄缓冲区→高频共振。w₂缩窄（D324 n增大）使系统从"怕低频共振"变成"怕高频共振"——复杂系统的脆弱频率随](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0388-D352-%E9%98%B6%E6%AE%B52%E5%AE%BD%E5%BA%A6-%E5%85%B1%E6%8C%AF%E9%A2%91%E7%8E%87%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-207c37679681e5cf / 数学表达 / Expression: `F_{D352}(x) := M11的w₂决定共振频率ω_resonance∝1/w₂。窄缓冲区→高频共振。w₂缩窄（D324 n增大）使系统从"怕低频共振"变成"怕高频共振"——复杂系统的脆弱频率随
+  - 来源：`统一函数总表/0388-D352-阶段2宽度-共振频率函数.md`
+  - 依赖：D324, D352；被引用：—
 - [数学表达 / Expression: `F_{D355}(x) := M14的共存震荡中随机偏移δK∝√(kT_eff)·T_osc。偏移累积为随机游走，最终方向由累积符号决定。预期决定时间T_decision∝(ΔK/δK)²·T_osc](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0391-D355-%E5%85%B1%E5%AD%98%E9%9C%87%E8%8D%A1%E5%88%86%E6%94%AF%E5%87%BD%E6%95%B0.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-875dc591b59a486c / 数学表达 / Expression: `F_{D355}(x) := M14的共存震荡中随机偏移δK∝√(kT_eff)·T_osc。偏移累积为随机游走，最终方向由累积符号决定。预期决定时间T_decision∝(ΔK/δK)²·T_osc
@@ -2376,128 +2501,3 @@
   - 可搜索名称：NFC-5225c16c987c1783 / 物理与数学复算
   - 来源：`RESULTS/RESEARCH-AND-ARTICLES.md`
   - 依赖：—；被引用：—
-- [物理大一统不可能（降级为"关于绝对完备统一的结构性边界推论"，非物理学 no-go theorem）](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-99b2db3b4f817379 / 物理大一统不可能（降级为"关于绝对完备统一的结构性边界推论"，非物理学 no-go theorem）
-  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
-  - 依赖：—；被引用：—
-- [物理大统一本质函数](../../../data/foundation/formal-objects/objects.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-e1dac47f1c645ceb / 物理大统一本质函数
-  - 来源：`data/foundation/formal-objects/objects.jsonl`
-  - 依赖：—；被引用：—
-- [物理大统一本质函数](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0036-T26-%E7%89%A9%E7%90%86%E5%A4%A7%E7%BB%9F%E4%B8%80%E6%9C%AC%E8%B4%A8%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：T26 / 物理大统一本质函数 / T26
-  - 来源：`统一函数总表/0036-T26-物理大统一本质函数.md`
-  - 依赖：D183；被引用：D516, NFC-257b92ef12121e43, NFC-5c5af5ca069ece7e, NFC-6db9aebf81929d8f
-- [物理大统一本质函数 / physical grand-unification essential function](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-eb2243844374ece8 / 物理大统一本质函数 / physical grand-unification essential function
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：—；被引用：—
-- [物理大统一路径](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0172-D134-%E7%89%A9%E7%90%86%E5%A4%A7%E7%BB%9F%E4%B8%80%E8%B7%AF%E5%BE%84.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：D134 / 物理大统一路径 / D134 / D135
-  - 来源：`统一函数总表/0172-D134-物理大统一路径.md`
-  - 依赖：D180, D91；被引用：NFC-1dcc09ced861a454, NFC-20fcfc980d0e6f5d, NFC-3111481fbf8aab45, NFC-4366047ac3481912
-- [物理大统一路径](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0173-D135-%E7%89%A9%E7%90%86%E5%A4%A7%E7%BB%9F%E4%B8%80%E8%B7%AF%E5%BE%84.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：D135 / 物理大统一路径 / D135 / D134
-  - 来源：`统一函数总表/0173-D135-物理大统一路径.md`
-  - 依赖：D123, D133, D142, D180；被引用：D123, D133, D139, D142
-- [物理大统一路径](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0174-D136-%E7%89%A9%E7%90%86%E5%A4%A7%E7%BB%9F%E4%B8%80%E8%B7%AF%E5%BE%84.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：D136 / 物理大统一路径 / D136 / D134
-  - 来源：`统一函数总表/0174-D136-物理大统一路径.md`
-  - 依赖：D180, D91；被引用：NFC-0340c2134615b13b, NFC-17156519f8b3921a, NFC-2f3e01628364ae4c, NFC-5569354b3fa1aac9
-- [物理大统一路径](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0175-D137-%E7%89%A9%E7%90%86%E5%A4%A7%E7%BB%9F%E4%B8%80%E8%B7%AF%E5%BE%84.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：D137 / 物理大统一路径 / D137 / D134
-  - 来源：`统一函数总表/0175-D137-物理大统一路径.md`
-  - 依赖：D180, D91；被引用：NFC-006430426308f743, NFC-0eab8d1125cf1435, NFC-1c85fa7518efe5a8, NFC-215ab9c84dd6b6c3
-- [物理大统一路径碰撞（22条），验证了门槛碾压在物理学、热力学、社会学等跨域场景的普适性。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0206-D169-%E9%97%A8%E6%A7%9B%E7%A2%BE%E5%8E%8B%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-e7751b32a5b0e91f / 物理大统一路径碰撞（22条），验证了门槛碾压在物理学、热力学、社会学等跨域场景的普适性。
-  - 来源：`统一函数总表/0206-D169-门槛碾压函数.md`
-  - 依赖：—；被引用：—
-- [物理大统一路径（22条）→物理大统一推导、电弱理论碰撞等。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0172-D134-%E7%89%A9%E7%90%86%E5%A4%A7%E7%BB%9F%E4%B8%80%E8%B7%AF%E5%BE%84.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-19c3bfaa48520e17 / 物理大统一路径（22条）→物理大统一推导、电弱理论碰撞等。
-  - 来源：`统一函数总表/0172-D134-物理大统一路径.md`
-  - 依赖：—；被引用：—
-- [物理大统一路径（22条），验证了熵增门槛碾压在热力学系统中的适用性。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0220-D184-%E7%86%B5%E5%A2%9E%E9%97%A8%E6%A7%9B%E7%A2%BE%E5%8E%8B%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-bc95639854f63708 / 物理大统一路径（22条），验证了熵增门槛碾压在热力学系统中的适用性。
-  - 来源：`统一函数总表/0220-D184-熵增门槛碾压函数.md`
-  - 依赖：—；被引用：—
-- [物理大统一路径（22条），验证了相对论门槛在物理系统中的适用性。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0221-D185-%E7%9B%B8%E5%AF%B9%E8%AE%BA%E9%97%A8%E6%A7%9B%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-92154c9df4d8129c / 物理大统一路径（22条），验证了相对论门槛在物理系统中的适用性。
-  - 来源：`统一函数总表/0221-D185-相对论门槛函数.md`
-  - 依赖：—；被引用：—
-- [物理大统一路径（22条），验证了经典确定性在物理系统中的适用性。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0218-D182-%E7%BB%8F%E5%85%B8%E7%A1%AE%E5%AE%9A%E6%80%A7%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-20f191a9e23a9fad / 物理大统一路径（22条），验证了经典确定性在物理系统中的适用性。
-  - 来源：`统一函数总表/0218-D182-经典确定性函数.md`
-  - 依赖：—；被引用：—
-- [物理大统一路径（22条），验证了量子力学门槛聚集在物理系统中的适用性。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0222-D186-%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6%E9%97%A8%E6%A7%9B%E8%81%9A%E9%9B%86%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-ca65865b10af7a1c / 物理大统一路径（22条），验证了量子力学门槛聚集在物理系统中的适用性。
-  - 来源：`统一函数总表/0222-D186-量子力学门槛聚集函数.md`
-  - 依赖：—；被引用：—
-- [物理大统一路径（22条），验证了门控面合并在物理统一中的普适性。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0219-D183-%E9%97%A8%E6%8E%A7%E9%9D%A2%E5%90%88%E5%B9%B6%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-2fbadcb9aed2d148 / 物理大统一路径（22条），验证了门控面合并在物理统一中的普适性。
-  - 来源：`统一函数总表/0219-D183-门控面合并统一函数.md`
-  - 依赖：—；被引用：—
-- [物理大统一路径，物理大统一推导、电弱理论碰撞等。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0172-D134-%E7%89%A9%E7%90%86%E5%A4%A7%E7%BB%9F%E4%B8%80%E8%B7%AF%E5%BE%84.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-f78e6b2ac3f6832a / 物理大统一路径，物理大统一推导、电弱理论碰撞等。
-  - 来源：`统一函数总表/0172-D134-物理大统一路径.md`
-  - 依赖：—；被引用：—
-- [物理大统一路径，物理大统一推导、电弱理论碰撞等。 **扩展注释 / Extended Annotation**](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-42a7c1ed8c97bc8f / 物理大统一路径，物理大统一推导、电弱理论碰撞等。 **扩展注释 / Extended Annotation**
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：—；被引用：—
-- [物理存在受三重时间约束： 约束1（逻辑约束·\[D220\](docs/zh/functions/items/D220.md)）：Ω<1是物理存在的必要条件，Ω→1=无物理 约束2（热力学约束·\[D222\](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-166daaaed06561f3 / 物理存在受三重时间约束： 约束1（逻辑约束·\[D220\](docs/zh/functions/items/D220.md)）：Ω<1是物理存在的必要条件，Ω→1=无物理 约束2（热力学约束·\[D222\](docs/zh/functions/
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D220, D222, D224；被引用：—
-- [物理存在必要条件](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0254-D218-%E7%89%A9%E7%90%86%E5%AD%98%E5%9C%A8%E5%BF%85%E8%A6%81%E6%9D%A1%E4%BB%B6.md)
-  - 类型/状态：`FUNCTION_ASSET` · `DOWNGRADE_TO_CONJECTURE`
-  - 可搜索名称：D218 / 物理存在必要条件 / D218
-  - 来源：`统一函数总表/0254-D218-物理存在必要条件.md`
-  - 依赖：D181, D211, D220, D270；被引用：NFC-407be5719f714c64, NFC-5075336c78e3a8ee, NFC-5612cc05e1b012b6, NFC-5b3c397277814027
-- [物理存在必要条件](../../../data/foundation/formal-objects/objects.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-35f37763f9cc67f3 / 物理存在必要条件
-  - 来源：`data/foundation/formal-objects/objects.jsonl`
-  - 依赖：—；被引用：—
-- [物理存在的Ω范围是(0,1)，但不是所有Ω值都等价。 Ω太小（接近0）：Φ很大→约束太多→系统僵化→接近死锁 Ω太大（接近1）：Φ很小→约束太少→系统贫瘠→接近无物理 Ω的最优区间由两个边界条件决定： 下界：Ω > Ω_min = e^{-](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0255-D219-%CE%A9%E6%9C%80%E4%BC%98%E5%8C%BA%E9%97%B4%E5%AE%9A%E7%90%86.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-9328d3fd75453646 / 物理存在的Ω范围是(0,1)，但不是所有Ω值都等价。 Ω太小（接近0）：Φ很大→约束太多→系统僵化→接近死锁 Ω太大（接近1）：Φ很小→约束太少→系统贫瘠→接近无物理 Ω的最优区间由两个边界条件决定： 下界：Ω > Ω_min = e^{-
-  - 来源：`统一函数总表/0255-D219-Ω最优区间定理.md`
-  - 依赖：D161；被引用：—
-- [物理存在的Ω范围是(0,1)，但不是所有Ω值都等价。 Ω太小（接近0）：Φ很大→约束太多→系统僵化→接近死锁 Ω太大（接近1）：Φ很小→约束太少→系统贫瘠→接近无物理 Ω的最优区间由两个边界条件决定： 下界：Ω > Ω_min = e^{-](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-971fb625487a27b8 / 物理存在的Ω范围是(0,1)，但不是所有Ω值都等价。 Ω太小（接近0）：Φ很大→约束太多→系统僵化→接近死锁 Ω太大（接近1）：Φ很小→约束太少→系统贫瘠→接近无物理 Ω的最优区间由两个边界条件决定： 下界：Ω > Ω_min = e^{-
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D161；被引用：—
-- [物理存在的三重时间约束](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0262-D226-%E7%89%A9%E7%90%86%E5%AD%98%E5%9C%A8%E7%9A%84%E4%B8%89%E9%87%8D%E6%97%B6%E9%97%B4%E7%BA%A6%E6%9D%9F.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：D226 / 物理存在的三重时间约束 / D226
-  - 来源：`统一函数总表/0262-D226-物理存在的三重时间约束.md`
-  - 依赖：D181, D211, D220, D222；被引用：NFC-06f95846b3dd4dc6, NFC-274e170c85ab5e08, NFC-76da6b4d39bd45c8, NFC-789d0f1c3510ce9a
-- [物理存在的三重时间约束](../../../data/foundation/formal-objects/objects.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-cffb5489237364df / 物理存在的三重时间约束
-  - 来源：`data/foundation/formal-objects/objects.jsonl`
-  - 依赖：—；被引用：—
-- [物理存在的四重时间约束： 约束1（逻辑·\[D220\](docs/zh/functions/items/D220.md)）：Ω<1是物理存在的必要条件 约束2（热力学·\[D222\](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-143add052c5ac28e / 物理存在的四重时间约束： 约束1（逻辑·\[D220\](docs/zh/functions/items/D220.md)）：Ω<1是物理存在的必要条件 约束2（热力学·\[D222\](docs/zh/functions/items/D222.m
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D220, D222, D224, D227；被引用：—

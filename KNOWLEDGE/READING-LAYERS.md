@@ -477,6 +477,28 @@ The title and recovered annotation assert that two oppositely monotone functions
 
 [reports/foundation-architecture/T16-counterexample-equivalence-audit-20260713.md](../reports/foundation-architecture/T16-counterexample-equivalence-audit-20260713.md)
 
+<a id="reading-hr-1bf6463b42d7824f"></a>
+## 生命周期审计 · 任务 108（双相迭代终态化与自闭合当前真相 R1）
+
+**状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · **主题：** `OPERATIONS_EVIDENCE`
+
+### 1 分钟
+
+data/operations/merged-iteration-ledger.jsonl 在 main 上呈现： 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+
+### 5 分钟
+
+- 来源要点（导航摘录，不得视为当前断言）：主题：生命周期审计 · 任务 108（双相迭代终态化与自闭合当前真相 R1）
+- 来源要点（导航摘录，不得视为当前断言）：审计对象：data/operations/lifecycle-events.jsonl、data/operations/derived-lifecycle-view.json、data/operations/current-truth-projection.json、tools/propagation/lifecycleevents.py、tagvalidator.py、terminalizationallowlist.py、terminalizationgenerator.py、schemas/operations/lifecycle-event.schema.json
+- 来源要点（导航摘录，不得视为当前断言）：生成方式：tools/propagation/derivedlifecycleview.py（确定性，可重放）
+- 来源要点（导航摘录，不得视为当前断言）：审计时间基准：origin/main = 77352d27bc997ff9418de017f622f0c72dd634e3（任务 107 普通合并）
+- 来源要点（导航摘录，不得视为当前断言）：主题：1. 基线矛盾（任务 108 之前）
+- 来源要点（导航摘录，不得视为当前断言）：data/operations/merged-iteration-ledger.jsonl 在 main 上呈现：
+
+### 完整阅读
+
+[reports/operations/lifecycle-audit-108.md](../reports/operations/lifecycle-audit-108.md)
+
 <a id="reading-hr-1c328f9ffe6aee1f"></a>
 ## V4 规范性审核 - 可持续性协议 (Sustainability Protocol)
 
@@ -5950,6 +5972,28 @@ SPDX-License-Identifier: CC-BY-SA-4.0 OR CC-BY-NC-SA-4.0 边界：This is a cons
 ### 完整阅读
 
 [docs/governance/README.md](../docs/governance/README.md)
+
+<a id="reading-hr-f3d97a665e74558a"></a>
+## 迭代生命周期模型（事件溯源 · 任务 108 引入）
+
+**状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · **主题：** `OPERATIONS_EVIDENCE`
+
+### 1 分钟
+
+本目录与 data/operations/ 下的生命周期文件定义了点火仓库的迭代终态模型。 它在任务 108 中取代"一行可变终态记录"的循环模型，改为追加式、事件溯源的不可变事件 + 不可伪造标注终端 tag。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+
+### 5 分钟
+
+- 来源要点（导航摘录，不得视为当前断言）：主题：迭代生命周期模型（事件溯源 · 任务 108 引入）
+- 来源要点（导航摘录，不得视为当前断言）：本目录与 data/operations/ 下的生命周期文件定义了点火仓库的迭代终态模型。 它在任务 108 中取代"一行可变终态记录"的循环模型，改为追加式、事件溯源的不可变事件 + 不可伪造标注终端 tag。
+- 来源要点（导航摘录，不得视为当前断言）：data/operations/lifecycle-events.jsonl — 追加式生命周期事件（候选 / 终端化投影 / 兼容终态）。只追加，不删除、不改写历史行。
+- 来源要点（导航摘录，不得视为当前断言）：data/operations/derived-lifecycle-view.json — 从事件 + 终端 tag 推导出的当前真相视图（确定性生成）。
+- 来源要点（导航摘录，不得视为当前断言）：data/operations/current-truth-projection.json — 对外当前真相投影，仅从 TERMINALSUCCESS 推导。
+- 来源要点（导航摘录，不得视为当前断言）：tools/propagation/lifecycleevents.py — 事件加载、schema 校验、Git 历史校验、失败闭合解析器。
+
+### 完整阅读
+
+[docs/operations/lifecycle-readme.md](../docs/operations/lifecycle-readme.md)
 
 <a id="reading-hr-f58d1b491fb96c27"></a>
 ## Licensing Model Candidate

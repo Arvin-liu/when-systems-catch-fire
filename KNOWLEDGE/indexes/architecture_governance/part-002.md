@@ -1399,6 +1399,11 @@
   - 可搜索名称：NFC-71bd1ff112bba6ff / before = set(resolved)
   - 来源：`tools/operations/compute_change_propagation.py`
   - 依赖：—；被引用：—
+- [before its terminal tag) is NOT silently presented as current truth.](../../../tools/propagation/current_truth_projection.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a8fb2a0179eb0d0e / before its terminal tag) is NOT silently presented as current truth.
+  - 来源：`tools/propagation/current_truth_projection.py`
+  - 依赖：—；被引用：—
 - [Behavior analysis illustrates potential benefits and unresolved problems involving noisy/rare data, interpretable tempor](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
   - 可搜索名称：NFC-245f7f541e1fef91 / Behavior analysis illustrates potential benefits and unresolved problems involving noisy/rare data, interpretable tempor
@@ -2499,8 +2504,3 @@
   - 可搜索名称：MF0003 / data/foundation/adjudications/080-source-text-adjudications.jsonl / MF0003 / MF0000
   - 来源：`data/foundation/adjudications/080-source-text-adjudications.jsonl`
   - 依赖：—；被引用：MF3, Y1
-- [data/foundation/adjudications/080-source-text-adjudications.jsonl](../../../data/foundation/adjudications/080-source-text-adjudications.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：MF0004 / data/foundation/adjudications/080-source-text-adjudications.jsonl / MF0004 / MF0000
-  - 来源：`data/foundation/adjudications/080-source-text-adjudications.jsonl`
-  - 依赖：—；被引用：MF4, Y1

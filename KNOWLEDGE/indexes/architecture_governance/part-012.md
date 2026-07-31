@@ -4,6 +4,36 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [候选者空间验证](../../../data/foundation/evidence/evidence.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-9ced8a756abaf990 / 候选者空间验证
+  - 来源：`data/foundation/evidence/evidence.jsonl`
+  - 依赖：—；被引用：—
+- [候选首先分成对象、命题、论证、来源与证据。book candidate 保留 BC 临时 ID，不分配 C ID。pending claim 保留 PEND ID；多种文件表示按同一 ID 合并，不重复计数。](../../../docs/USAGE.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-f593ad13ec195ad7 / 候选首先分成对象、命题、论证、来源与证据。book candidate 保留 BC 临时 ID，不分配 C ID。pending claim 保留 PEND ID；多种文件表示按同一 ID 合并，不重复计数。
+  - 来源：`docs/USAGE.md`
+  - 依赖：—；被引用：—
+- [储户来到银行，也许不是因为他掌握了资产负债表，而是因为门口已经有人排队。对单个人来说，先取走自己的钱可能是谨慎；对后面的人来说，前面人的谨慎却是银行危险的现场证据。提款减少可用流动性，银行于是更难应付提款，最初未经证实的担心开始改变它所担心](../../../docs/publication/works/when-an-army-believes-its-own-back.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-dfadf32c498c2521 / 储户来到银行，也许不是因为他掌握了资产负债表，而是因为门口已经有人排队。对单个人来说，先取走自己的钱可能是谨慎；对后面的人来说，前面人的谨慎却是银行危险的现场证据。提款减少可用流动性，银行于是更难应付提款，最初未经证实的担心开始改变它所担心
+  - 来源：`docs/publication/works/when-an-army-believes-its-own-back.md`
+  - 依赖：—；被引用：—
+- [允许 claim level：无外部证据时 ≤ L3，普遍性结论须 pending。](../../../outputs/collisions/20260708-teacher-competition/collision-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-197d5124746351f3 / 允许 claim level：无外部证据时 ≤ L3，普遍性结论须 pending。
+  - 来源：`outputs/collisions/20260708-teacher-competition/collision-report.md`
+  - 依赖：—；被引用：—
+- [元协议投影（历史制度的元协议）](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-1826823f8b38bbf2 / 元协议投影（历史制度的元协议）
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [元协议规范性审核发布审计 — IGNITION-20260709-043](../../ASSET-CARDS.md#asset-hr-460ef60e3cf27dca)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：元协议规范性审核发布审计 — IGNITION-20260709-043 / meta-protocol-normative-review-publication-audit-20260711
+  - 来源：`outputs/audit/meta-protocol-normative-review-publication-audit-20260711.md`
+  - 依赖：—；被引用：—
 - [先从\[统一知识入口\](../../README.md)按最近变化、主题、搜索或阅读时长找到对象，再读 \[README.md\](../../README.md)、\[ARCHITECTURE.md\](../../../docs/USAGE.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-8cd1ac7ea28b4ed9 / 先从\[统一知识入口\](../../README.md)按最近变化、主题、搜索或阅读时长找到对象，再读 \[README.md\](../../README.md)、\[ARCHITECTURE.md\](../../../docs/getbrain-handoff-20260708.md)
@@ -2467,34 +2497,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-5c633d6db663bd25 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0565-C-570-市场改革悖论.md`
   - 来源：`统一案例总表/0565-C-570-市场改革悖论.md`
-  - 依赖：—；被引用：—
-- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0566-C-571-物种大灭绝.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0566-C-571-%E7%89%A9%E7%A7%8D%E5%A4%A7%E7%81%AD%E7%BB%9D.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-fd83b25f72081d05 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0566-C-571-物种大灭绝.md`
-  - 来源：`统一案例总表/0566-C-571-物种大灭绝.md`
-  - 依赖：—；被引用：—
-- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0567-C-572-诺基亚缓慢退化.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0567-C-572-%E8%AF%BA%E5%9F%BA%E4%BA%9A%E7%BC%93%E6%85%A2%E9%80%80%E5%8C%96.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-9abdddab04cacde0 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0567-C-572-诺基亚缓慢退化.md`
-  - 来源：`统一案例总表/0567-C-572-诺基亚缓慢退化.md`
-  - 依赖：—；被引用：—
-- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0568-C-573-精细结构常数稳定性.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0568-C-573-%E7%B2%BE%E7%BB%86%E7%BB%93%E6%9E%84%E5%B8%B8%E6%95%B0%E7%A8%B3%E5%AE%9A%E6%80%A7.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-dd1877058d2a6183 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0568-C-573-精细结构常数稳定性.md`
-  - 来源：`统一案例总表/0568-C-573-精细结构常数稳定性.md`
-  - 依赖：—；被引用：—
-- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0569-C-574-企业定期重组.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0569-C-574-%E4%BC%81%E4%B8%9A%E5%AE%9A%E6%9C%9F%E9%87%8D%E7%BB%84.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-38a514a7bdd42b59 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0569-C-574-企业定期重组.md`
-  - 来源：`统一案例总表/0569-C-574-企业定期重组.md`
-  - 依赖：—；被引用：—
-- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0571-C-576-科学范式革命.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0571-C-576-%E7%A7%91%E5%AD%A6%E8%8C%83%E5%BC%8F%E9%9D%A9%E5%91%BD.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-d504b4999b2cafca / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0571-C-576-科学范式革命.md`
-  - 来源：`统一案例总表/0571-C-576-科学范式革命.md`
-  - 依赖：—；被引用：—
-- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0572-C-577-改革开放节奏.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0572-C-577-%E6%94%B9%E9%9D%A9%E5%BC%80%E6%94%BE%E8%8A%82%E5%A5%8F.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-6fce0f145c761b09 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0572-C-577-改革开放节奏.md`
-  - 来源：`统一案例总表/0572-C-577-改革开放节奏.md`
   - 依赖：—；被引用：—

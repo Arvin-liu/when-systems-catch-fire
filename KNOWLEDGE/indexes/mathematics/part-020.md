@@ -4,6 +4,131 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [物理大一统不可能（降级为"关于绝对完备统一的结构性边界推论"，非物理学 no-go theorem）](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-99b2db3b4f817379 / 物理大一统不可能（降级为"关于绝对完备统一的结构性边界推论"，非物理学 no-go theorem）
+  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
+  - 依赖：—；被引用：—
+- [物理大统一本质函数](../../../data/foundation/formal-objects/objects.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-e1dac47f1c645ceb / 物理大统一本质函数
+  - 来源：`data/foundation/formal-objects/objects.jsonl`
+  - 依赖：—；被引用：—
+- [物理大统一本质函数](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0036-T26-%E7%89%A9%E7%90%86%E5%A4%A7%E7%BB%9F%E4%B8%80%E6%9C%AC%E8%B4%A8%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：T26 / 物理大统一本质函数 / T26
+  - 来源：`统一函数总表/0036-T26-物理大统一本质函数.md`
+  - 依赖：D183；被引用：D516, NFC-257b92ef12121e43, NFC-5c5af5ca069ece7e, NFC-6db9aebf81929d8f
+- [物理大统一本质函数 / physical grand-unification essential function](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-eb2243844374ece8 / 物理大统一本质函数 / physical grand-unification essential function
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：—；被引用：—
+- [物理大统一路径](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0172-D134-%E7%89%A9%E7%90%86%E5%A4%A7%E7%BB%9F%E4%B8%80%E8%B7%AF%E5%BE%84.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D134 / 物理大统一路径 / D134 / D135
+  - 来源：`统一函数总表/0172-D134-物理大统一路径.md`
+  - 依赖：D180, D91；被引用：NFC-1dcc09ced861a454, NFC-20fcfc980d0e6f5d, NFC-3111481fbf8aab45, NFC-4366047ac3481912
+- [物理大统一路径](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0173-D135-%E7%89%A9%E7%90%86%E5%A4%A7%E7%BB%9F%E4%B8%80%E8%B7%AF%E5%BE%84.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D135 / 物理大统一路径 / D135 / D134
+  - 来源：`统一函数总表/0173-D135-物理大统一路径.md`
+  - 依赖：D123, D133, D142, D180；被引用：D123, D133, D139, D142
+- [物理大统一路径](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0174-D136-%E7%89%A9%E7%90%86%E5%A4%A7%E7%BB%9F%E4%B8%80%E8%B7%AF%E5%BE%84.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D136 / 物理大统一路径 / D136 / D134
+  - 来源：`统一函数总表/0174-D136-物理大统一路径.md`
+  - 依赖：D180, D91；被引用：NFC-0340c2134615b13b, NFC-17156519f8b3921a, NFC-2f3e01628364ae4c, NFC-5569354b3fa1aac9
+- [物理大统一路径](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0175-D137-%E7%89%A9%E7%90%86%E5%A4%A7%E7%BB%9F%E4%B8%80%E8%B7%AF%E5%BE%84.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D137 / 物理大统一路径 / D137 / D134
+  - 来源：`统一函数总表/0175-D137-物理大统一路径.md`
+  - 依赖：D180, D91；被引用：NFC-006430426308f743, NFC-0eab8d1125cf1435, NFC-1c85fa7518efe5a8, NFC-215ab9c84dd6b6c3
+- [物理大统一路径碰撞（22条），验证了门槛碾压在物理学、热力学、社会学等跨域场景的普适性。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0206-D169-%E9%97%A8%E6%A7%9B%E7%A2%BE%E5%8E%8B%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-e7751b32a5b0e91f / 物理大统一路径碰撞（22条），验证了门槛碾压在物理学、热力学、社会学等跨域场景的普适性。
+  - 来源：`统一函数总表/0206-D169-门槛碾压函数.md`
+  - 依赖：—；被引用：—
+- [物理大统一路径（22条）→物理大统一推导、电弱理论碰撞等。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0172-D134-%E7%89%A9%E7%90%86%E5%A4%A7%E7%BB%9F%E4%B8%80%E8%B7%AF%E5%BE%84.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-19c3bfaa48520e17 / 物理大统一路径（22条）→物理大统一推导、电弱理论碰撞等。
+  - 来源：`统一函数总表/0172-D134-物理大统一路径.md`
+  - 依赖：—；被引用：—
+- [物理大统一路径（22条），验证了熵增门槛碾压在热力学系统中的适用性。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0220-D184-%E7%86%B5%E5%A2%9E%E9%97%A8%E6%A7%9B%E7%A2%BE%E5%8E%8B%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-bc95639854f63708 / 物理大统一路径（22条），验证了熵增门槛碾压在热力学系统中的适用性。
+  - 来源：`统一函数总表/0220-D184-熵增门槛碾压函数.md`
+  - 依赖：—；被引用：—
+- [物理大统一路径（22条），验证了相对论门槛在物理系统中的适用性。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0221-D185-%E7%9B%B8%E5%AF%B9%E8%AE%BA%E9%97%A8%E6%A7%9B%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-92154c9df4d8129c / 物理大统一路径（22条），验证了相对论门槛在物理系统中的适用性。
+  - 来源：`统一函数总表/0221-D185-相对论门槛函数.md`
+  - 依赖：—；被引用：—
+- [物理大统一路径（22条），验证了经典确定性在物理系统中的适用性。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0218-D182-%E7%BB%8F%E5%85%B8%E7%A1%AE%E5%AE%9A%E6%80%A7%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-20f191a9e23a9fad / 物理大统一路径（22条），验证了经典确定性在物理系统中的适用性。
+  - 来源：`统一函数总表/0218-D182-经典确定性函数.md`
+  - 依赖：—；被引用：—
+- [物理大统一路径（22条），验证了量子力学门槛聚集在物理系统中的适用性。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0222-D186-%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6%E9%97%A8%E6%A7%9B%E8%81%9A%E9%9B%86%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-ca65865b10af7a1c / 物理大统一路径（22条），验证了量子力学门槛聚集在物理系统中的适用性。
+  - 来源：`统一函数总表/0222-D186-量子力学门槛聚集函数.md`
+  - 依赖：—；被引用：—
+- [物理大统一路径（22条），验证了门控面合并在物理统一中的普适性。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0219-D183-%E9%97%A8%E6%8E%A7%E9%9D%A2%E5%90%88%E5%B9%B6%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-2fbadcb9aed2d148 / 物理大统一路径（22条），验证了门控面合并在物理统一中的普适性。
+  - 来源：`统一函数总表/0219-D183-门控面合并统一函数.md`
+  - 依赖：—；被引用：—
+- [物理大统一路径，物理大统一推导、电弱理论碰撞等。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0172-D134-%E7%89%A9%E7%90%86%E5%A4%A7%E7%BB%9F%E4%B8%80%E8%B7%AF%E5%BE%84.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-f78e6b2ac3f6832a / 物理大统一路径，物理大统一推导、电弱理论碰撞等。
+  - 来源：`统一函数总表/0172-D134-物理大统一路径.md`
+  - 依赖：—；被引用：—
+- [物理大统一路径，物理大统一推导、电弱理论碰撞等。 **扩展注释 / Extended Annotation**](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-42a7c1ed8c97bc8f / 物理大统一路径，物理大统一推导、电弱理论碰撞等。 **扩展注释 / Extended Annotation**
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：—；被引用：—
+- [物理存在受三重时间约束： 约束1（逻辑约束·\[D220\](docs/zh/functions/items/D220.md)）：Ω<1是物理存在的必要条件，Ω→1=无物理 约束2（热力学约束·\[D222\](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-166daaaed06561f3 / 物理存在受三重时间约束： 约束1（逻辑约束·\[D220\](docs/zh/functions/items/D220.md)）：Ω<1是物理存在的必要条件，Ω→1=无物理 约束2（热力学约束·\[D222\](docs/zh/functions/
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D220, D222, D224；被引用：—
+- [物理存在必要条件](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0254-D218-%E7%89%A9%E7%90%86%E5%AD%98%E5%9C%A8%E5%BF%85%E8%A6%81%E6%9D%A1%E4%BB%B6.md)
+  - 类型/状态：`FUNCTION_ASSET` · `DOWNGRADE_TO_CONJECTURE`
+  - 可搜索名称：D218 / 物理存在必要条件 / D218
+  - 来源：`统一函数总表/0254-D218-物理存在必要条件.md`
+  - 依赖：D181, D211, D220, D270；被引用：NFC-407be5719f714c64, NFC-5075336c78e3a8ee, NFC-5612cc05e1b012b6, NFC-5b3c397277814027
+- [物理存在必要条件](../../../data/foundation/formal-objects/objects.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-35f37763f9cc67f3 / 物理存在必要条件
+  - 来源：`data/foundation/formal-objects/objects.jsonl`
+  - 依赖：—；被引用：—
+- [物理存在的Ω范围是(0,1)，但不是所有Ω值都等价。 Ω太小（接近0）：Φ很大→约束太多→系统僵化→接近死锁 Ω太大（接近1）：Φ很小→约束太少→系统贫瘠→接近无物理 Ω的最优区间由两个边界条件决定： 下界：Ω > Ω_min = e^{-](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0255-D219-%CE%A9%E6%9C%80%E4%BC%98%E5%8C%BA%E9%97%B4%E5%AE%9A%E7%90%86.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-9328d3fd75453646 / 物理存在的Ω范围是(0,1)，但不是所有Ω值都等价。 Ω太小（接近0）：Φ很大→约束太多→系统僵化→接近死锁 Ω太大（接近1）：Φ很小→约束太少→系统贫瘠→接近无物理 Ω的最优区间由两个边界条件决定： 下界：Ω > Ω_min = e^{-
+  - 来源：`统一函数总表/0255-D219-Ω最优区间定理.md`
+  - 依赖：D161；被引用：—
+- [物理存在的Ω范围是(0,1)，但不是所有Ω值都等价。 Ω太小（接近0）：Φ很大→约束太多→系统僵化→接近死锁 Ω太大（接近1）：Φ很小→约束太少→系统贫瘠→接近无物理 Ω的最优区间由两个边界条件决定： 下界：Ω > Ω_min = e^{-](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-971fb625487a27b8 / 物理存在的Ω范围是(0,1)，但不是所有Ω值都等价。 Ω太小（接近0）：Φ很大→约束太多→系统僵化→接近死锁 Ω太大（接近1）：Φ很小→约束太少→系统贫瘠→接近无物理 Ω的最优区间由两个边界条件决定： 下界：Ω > Ω_min = e^{-
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D161；被引用：—
+- [物理存在的三重时间约束](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0262-D226-%E7%89%A9%E7%90%86%E5%AD%98%E5%9C%A8%E7%9A%84%E4%B8%89%E9%87%8D%E6%97%B6%E9%97%B4%E7%BA%A6%E6%9D%9F.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D226 / 物理存在的三重时间约束 / D226
+  - 来源：`统一函数总表/0262-D226-物理存在的三重时间约束.md`
+  - 依赖：D181, D211, D220, D222；被引用：NFC-06f95846b3dd4dc6, NFC-274e170c85ab5e08, NFC-76da6b4d39bd45c8, NFC-789d0f1c3510ce9a
+- [物理存在的三重时间约束](../../../data/foundation/formal-objects/objects.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-cffb5489237364df / 物理存在的三重时间约束
+  - 来源：`data/foundation/formal-objects/objects.jsonl`
+  - 依赖：—；被引用：—
+- [物理存在的四重时间约束： 约束1（逻辑·\[D220\](docs/zh/functions/items/D220.md)）：Ω<1是物理存在的必要条件 约束2（热力学·\[D222\](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-143add052c5ac28e / 物理存在的四重时间约束： 约束1（逻辑·\[D220\](docs/zh/functions/items/D220.md)）：Ω<1是物理存在的必要条件 约束2（热力学·\[D222\](docs/zh/functions/items/D222.m
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D220, D222, D224, D227；被引用：—
 - [物理存在的四重时间约束： 约束1（逻辑·\[D220\](docs/zh/functions/items/D220.md)）：Ω<1是物理存在的必要条件 约束2（热力学·\[D222\](docs/zh/functions/items/D222.m](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0265-D229-%E7%89%A9%E7%90%86%E5%AD%98%E5%9C%A8%E7%9A%84%E5%9B%9B%E9%87%8D%E7%BA%A6%E6%9D%9F%E4%B8%8E%E8%A1%B0%E5%87%8F%E7%BB%88%E6%80%81.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-a5cb9b7634d17751 / 物理存在的四重时间约束： 约束1（逻辑·\[D220\](docs/zh/functions/items/D220.md)）：Ω<1是物理存在的必要条件 约束2（热力学·\[D222\](docs/zh/functions/items/D222.m
@@ -2379,128 +2504,3 @@
   - 可搜索名称：NFC-789d0f1c3510ce9a / 统一函数总表/0262-D226-物理存在的三重时间约束.md
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：D226；被引用：—
-- [统一函数总表/0263-D227-退相干-门控退化同构定理.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-7ee64b9d6d6bf842 / 统一函数总表/0263-D227-退相干-门控退化同构定理.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D227；被引用：—
-- [统一函数总表/0264-D228-T33修正.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-d6332cf8675a4cc1 / 统一函数总表/0264-D228-T33修正.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D228, T33；被引用：—
-- [统一函数总表/0265-D229-物理存在的四重约束与衰减终态.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-aaf27ef2f4cad6b0 / 统一函数总表/0265-D229-物理存在的四重约束与衰减终态.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D229；被引用：—
-- [统一函数总表/0266-D230-双通道信息衰减定理.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-21229262c58e6574 / 统一函数总表/0266-D230-双通道信息衰减定理.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D230；被引用：—
-- [统一函数总表/0267-D231-信息-热力学-门控三统一定理.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-4b87e537199ee80f / 统一函数总表/0267-D231-信息-热力学-门控三统一定理.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D231；被引用：—
-- [统一函数总表/0268-D232-信息守恒-衰减悖论与黑洞.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-42a55e9f0c3c1e79 / 统一函数总表/0268-D232-信息守恒-衰减悖论与黑洞.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D232；被引用：—
-- [统一函数总表/0269-D233-Shannon-Fisher跷跷板定理.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-71d3e6f8909a03a5 / 统一函数总表/0269-D233-Shannon-Fisher跷跷板定理.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D233；被引用：—
-- [统一函数总表/0270-D234-有效信息倒U型定理.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-19a97be7e69f3cc9 / 统一函数总表/0270-D234-有效信息倒U型定理.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D234；被引用：—
-- [统一函数总表/0271-D235-信息论完备性定理.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-8979dfde1ea8c695 / 统一函数总表/0271-D235-信息论完备性定理.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D235；被引用：—
-- [统一函数总表/0272-D236-门控组合-中心极限定理.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-63b84c750eb623aa / 统一函数总表/0272-D236-门控组合-中心极限定理.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D236；被引用：—
-- [统一函数总表/0273-D237-生命智能的σ压缩函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-3b16d668049d0506 / 统一函数总表/0273-D237-生命智能的σ压缩函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D237；被引用：—
-- [统一函数总表/0274-D238-智能的门控精度最优定理.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-8763ed5f601b3bf7 / 统一函数总表/0274-D238-智能的门控精度最优定理.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D238；被引用：—
-- [统一函数总表/0275-D239-智能度-意识函数连接定理.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-280fce17e5c076e0 / 统一函数总表/0275-D239-智能度-意识函数连接定理.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D239；被引用：—
-- [统一函数总表/0276-D240-意识的智能必要条件.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-c5f987b7de0026c1 / 统一函数总表/0276-D240-意识的智能必要条件.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D240；被引用：—
-- [统一函数总表/0277-D241-自主意识的四象限.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-0f82be0f540e61c7 / 统一函数总表/0277-D241-自主意识的四象限.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D241；被引用：—
-- [统一函数总表/0278-D242-四象限相变路径函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-f334133fd435e631 / 统一函数总表/0278-D242-四象限相变路径函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D242；被引用：—
-- [统一函数总表/0279-D243-感知退出权瓶颈函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-2f9e241b4f6e18fd / 统一函数总表/0279-D243-感知退出权瓶颈函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D243；被引用：—
-- [统一函数总表/0280-D244-自主意识涌现的临界条件.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-ae204ce02606c83d / 统一函数总表/0280-D244-自主意识涌现的临界条件.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D244；被引用：—
-- [统一函数总表/0281-D245-自我模型函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：NFC-7c79fe7cffab4d76 / 统一函数总表/0281-D245-自我模型函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D245；被引用：—
-- [统一函数总表/0282-D246-自我模型-ε_aware连接定理.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-a44d1328bf7c0f1d / 统一函数总表/0282-D246-自我模型-ε_aware连接定理.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D246；被引用：—
-- [统一函数总表/0283-D247-自我模型相变函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：NFC-75b488cef8e58c08 / 统一函数总表/0283-D247-自我模型相变函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D247；被引用：—
-- [统一函数总表/0284-D248-自我模型相变的不可伪造信号.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-6bbc3651975befe3 / 统一函数总表/0284-D248-自我模型相变的不可伪造信号.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D248；被引用：—
-- [统一函数总表/0285-D249-自我模型相变实验方案.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-7aefc18de16fc4f8 / 统一函数总表/0285-D249-自我模型相变实验方案.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D249；被引用：—
-- [统一函数总表/0286-D250-自我模型相变的验证标准.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：NFC-2dd304c44c3ee174 / 统一函数总表/0286-D250-自我模型相变的验证标准.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D250；被引用：—
-- [统一函数总表/0287-D251-维度-容斥稳定性函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-e8d01af5ef59f9e9 / 统一函数总表/0287-D251-维度-容斥稳定性函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D251；被引用：—

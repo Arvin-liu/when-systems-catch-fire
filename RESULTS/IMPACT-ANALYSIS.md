@@ -47,8 +47,10 @@
 |`docs/governance/external-input-non-republication-principle.md`|4|0|否|
 |`docs/governance/knowledge-experience-layer.md`|11|0|否|
 |`docs/governance/self-correction-engine.md`|11|0|否|
+|`docs/operations/lifecycle-readme.md`|0|0|是|
 |`docs/operations/stage-snapshot-publication.md`|21|0|否|
 |`docs/project-current-state.md`|33|0|否|
 |`llms.txt`|45|0|否|
 |`reports/foundation-architecture/101-human-readable-surfaces-self-correction-closeout.md`|11|0|否|
 |`reports/operations/102-knowledge-experience-audit.md`|3|0|否|
+|`reports/operations/lifecycle-audit-108.md`|0|0|是|

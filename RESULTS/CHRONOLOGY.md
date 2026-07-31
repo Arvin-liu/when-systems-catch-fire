@@ -1,6 +1,6 @@
 # 历史结果台账
 
-本台账从 285 份现存研究、文章、架构、Foundation 与迭代文档确定性恢复。它只提供保真导航，不改变原来源的证据权限。
+本台账从 287 份现存研究、文章、架构、Foundation 与迭代文档确定性恢复。它只提供保真导航，不改变原来源的证据权限。
 
 **统一断言上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
 
@@ -1496,6 +1496,19 @@
 
 ## ITERATION_AND_AUDIT
 
+### [生命周期审计 · 任务 108（双相迭代终态化与自闭合当前真相 R1）](../reports/operations/lifecycle-audit-108.md)
+
+- **结果 ID：** `HR-1BF6463B42D7824F`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：生命周期审计 · 任务 108（双相迭代终态化与自闭合当前真相 R1）？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** data/operations/merged-iteration-ledger.jsonl 在 main 上呈现：
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
 ### [Current Main vs 1.4 Candidate Homepage Comparison](../reports/operations/IGNITION-ITERATION-METHOD-1.4-homepage-comparison.md)
 
 - **结果 ID：** `HR-4F3C4FF4A7AB0E3A`
@@ -1764,6 +1777,19 @@
 - **问题：** 此来源记录了什么：阶段成果持续快照与分层发布制度？
 - **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
 - **来源摘要：** Status: Ignition Iteration Method 1.4.0 — Continuous Stage Snapshot Publication（已升为 Current；1.3.0 转为 Historical）。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [迭代生命周期模型（事件溯源 · 任务 108 引入）](../docs/operations/lifecycle-readme.md)
+
+- **结果 ID：** `HR-F3D97A665E74558A`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：迭代生命周期模型（事件溯源 · 任务 108 引入）？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 本目录与 data/operations/ 下的生命周期文件定义了点火仓库的迭代终态模型。 它在任务 108 中取代"一行可变终态记录"的循环模型，改为追加式、事件溯源的不可变事件 + 不可伪造标注终端 tag。
 - **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
 - **变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.

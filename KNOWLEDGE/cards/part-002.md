@@ -604,6 +604,26 @@
 - **主题：** `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `T16 counterexample-equivalence audit`, `T16-counterexample-equivalence-audit-20260713`
 
+<a id="asset-hr-1bf6463b42d7824f"></a>
+## 生命周期审计 · 任务 108（双相迭代终态化与自闭合当前真相 R1）
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-1BF6463B42D7824F` · [reports/operations/lifecycle-audit-108.md](../../reports/operations/lifecycle-audit-108.md)
+- **为什么产生：** 此来源记录了什么：生命周期审计 · 任务 108（双相迭代终态化与自闭合当前真相 R1）？
+- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **当前结果：** data/operations/merged-iteration-ledger.jsonl 在 main 上呈现：
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `reports/operations/lifecycle-audit-108.md`, `REPOSITORY_HISTORY_SOURCE`
+- **演化历史：** 2026-08-01: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `生命周期审计 · 任务 108（双相迭代终态化与自闭合当前真相 R1）`, `lifecycle-audit-108`
+
 <a id="asset-hr-1c328f9ffe6aee1f"></a>
 ## V4 规范性审核 - 可持续性协议 (Sustainability Protocol)
 
@@ -983,23 +1003,3 @@
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `Count reconciliation`, `count-reconciliation-20260712`
-
-<a id="asset-hr-29d94a1a94170774"></a>
-## NC-002 表演化假课与量化指标消解温度回填审计
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-29D94A1A94170774` · [outputs/audit/nc-002-performed-fake-class-backfill-audit-20260708.md](../../outputs/audit/nc-002-performed-fake-class-backfill-audit-20260708.md)
-- **为什么产生：** 此来源记录了什么：NC-002 表演化假课与量化指标消解温度回填审计？
-- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **当前结果：** 理由：案例表无等价条目；对应函数 D597 已入表、NF-003 已重定向 D173；复核明确「建议入表」；Ψ₀ 六维均通过。
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** `D597`, `D173`
-- **来源与证据：** `outputs/audit/nc-002-performed-fake-class-backfill-audit-20260708.md`, `REPOSITORY_HISTORY_SOURCE`
-- **演化历史：** 2026-07-08: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `MATHEMATICS`, `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `NC-002 表演化假课与量化指标消解温度回填审计`, `nc-002-performed-fake-class-backfill-audit-20260708`

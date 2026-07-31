@@ -4,6 +4,71 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Case 层是已验证实例（C 编号，current 至 C-809 级），由函数层支撑。](../../../docs/protocols/protocol-architecture.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-eb4d95b43ec98128 / Case 层是已验证实例（C 编号，current 至 C-809 级），由函数层支撑。
+  - 来源：`docs/protocols/protocol-architecture.md`
+  - 依赖：—；被引用：—
+- [CASE_DIR = ROOT / "统一案例总表"](../../../tools/math_foundation_audit.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-cb9ebe92e99c89a8 / CASE_DIR = ROOT / "统一案例总表"
+  - 来源：`tools/math_foundation_audit.py`
+  - 依赖：—；被引用：—
+- [cases.append((authority, "E_PROOF_AUTHORITY_BINDING"))](../../../tests/test_incremental_execution.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-7bb84794723434f7 / cases.append((authority, "E_PROOF_AUTHORITY_BINDING"))
+  - 来源：`tests/test_incremental_execution.py`
+  - 依赖：—；被引用：—
+- [cases.append((component, "E_PROOF_COMPONENT_BINDING"))](../../../tests/test_incremental_execution.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-b537795638d9b678 / cases.append((component, "E_PROOF_COMPONENT_BINDING"))
+  - 来源：`tests/test_incremental_execution.py`
+  - 依赖：—；被引用：—
+- [cases.append((missing, "E_PROOF_REQUIRED"))](../../../tests/test_incremental_execution.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-1dabd8b832a52429 / cases.append((missing, "E_PROOF_REQUIRED"))
+  - 来源：`tests/test_incremental_execution.py`
+  - 依赖：—；被引用：—
+- [cases.append((plan_hash, "E_PROOF_PLAN_HASH_BINDING"))](../../../tests/test_incremental_execution.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-7c7a3c47242dc666 / cases.append((plan_hash, "E_PROOF_PLAN_HASH_BINDING"))
+  - 来源：`tests/test_incremental_execution.py`
+  - 依赖：—；被引用：—
+- [Categorical/Bernoulli training choices are formal stochastic mechanisms, but no calibrated uncertainty, probabilistic fu](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-b75b2c8d5d38aca0 / Categorical/Bernoulli training choices are formal stochastic mechanisms, but no calibrated uncertainty, probabilistic fu
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [Causal reachability is not actual causation; high probability is not strong causality; network adjacency, similarity, ce](../../../llms.txt)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-5fff1f05b5b59177 / Causal reachability is not actual causation; high probability is not strong causality; network adjacency, similarity, ce
+  - 来源：`llms.txt`
+  - 依赖：—；被引用：—
+- [CAUSAL_MODEL](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-e3b81c5a11db4c91 / CAUSAL_MODEL
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：—；被引用：—
+- [causal_topology := ∫_{Ω} cause × effect × temporal_order × counterfactual dΩ（因果拓扑积分）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0001-%CE%A8%E2%82%80%E5%85%83%E5%87%BD%E6%95%B0%E5%AE%8C%E6%95%B4%E6%95%B0%E5%AD%A6%E5%AE%9A%E4%B9%89.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-dcc24f4272e4e811 / causal_topology := ∫_{Ω} cause × effect × temporal_order × counterfactual dΩ（因果拓扑积分）
+  - 来源：`统一函数总表/0001-Ψ₀元函数完整数学定义.md`
+  - 依赖：—；被引用：—
+- [cause := P(y\|x) - P(y)（因果强度）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0001-%CE%A8%E2%82%80%E5%85%83%E5%87%BD%E6%95%B0%E5%AE%8C%E6%95%B4%E6%95%B0%E5%AD%A6%E5%AE%9A%E4%B9%89.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-4a6389d7e184c76c / cause := P(y\|x) - P(y)（因果强度）
+  - 来源：`统一函数总表/0001-Ψ₀元函数完整数学定义.md`
+  - 依赖：—；被引用：—
+- [changed = \[item for item in document\["component_decisions"\] if item\["decision"\] != "NO_CHANGE_WITH_PROOF"\]](../../../tests/test_incremental_execution.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-230d95fd66808062 / changed = \[item for item in document\["component_decisions"\] if item\["decision"\] != "NO_CHANGE_WITH_PROOF"\]
+  - 来源：`tests/test_incremental_execution.py`
+  - 依赖：—；被引用：—
+- [Charter Gate records beneficiaries, risk bearers, silent subjects, irreversibility, and rollback duties, but it is a nor](../../../reports/architecture/121Q21R-causal-asset-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-c655f792abaa399a / Charter Gate records beneficiaries, risk bearers, silent subjects, irreversibility, and rollback duties, but it is a nor
+  - 来源：`reports/architecture/121Q21R-causal-asset-audit.md`
+  - 依赖：—；被引用：—
 - [CHARTER_SYSTEM_R1_CANDIDATE** — 建立"宪章系统 R1"：作为**元治理层**，规定单个宪章（含《生命共同体价值宪章》）如何被提议、版本化、批准、与决策绑定、并跨 Fork 继承责任。本文件即该系统本身，状态为](../../../docs/governance/charter-system-r1.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-f7b47e430abc8ca1 / CHARTER_SYSTEM_R1_CANDIDATE** — 建立"宪章系统 R1"：作为**元治理层**，规定单个宪章（含《生命共同体价值宪章》）如何被提议、版本化、批准、与决策绑定、并跨 Fork 继承责任。本文件即该系统本身，状态为
@@ -1788,6 +1853,11 @@
   - 可搜索名称：NFC-dadbb9f3ad4ad6c2 / DeepONet: Learning nonlinear operators for identifying differential equations based on the universal approximation theor
   - 来源：`data/external-research/120-function-paradigm-atlas/120-function-paradigm-cards.jsonl`
   - 依赖：—；被引用：—
+- [def _fold_lifecycle_terminal(repo_root: str, proj: Dict\[str, Any\]) -> None:](../../../tools/propagation/current_truth_projection.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-e2bea608b9136943 / def _fold_lifecycle_terminal(repo_root: str, proj: Dict\[str, Any\]) -> None:
+  - 来源：`tools/propagation/current_truth_projection.py`
+  - 依赖：—；被引用：—
 - [def _validate_lifecycle(manifest: dict, source: Path) -> None:](../../../tools/validate_iteration_sync.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
   - 可搜索名称：NFC-51cc5483ae96f2bf / def _validate_lifecycle(manifest: dict, source: Path) -> None:
@@ -2153,6 +2223,11 @@
   - 可搜索名称：NFC-b59825cc5bd04797 / docs/governance/life-community-value-charter.md
   - 来源：`docs/ai-assistant-usage-reference.md`
   - 依赖：—；被引用：—
+- [docs/operations/lifecycle-readme.md is iteration-lifecycle accounting prose, not a](../../../tools/foundation/adjudicate_function_assets.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-004a9db79d8d46e7 / docs/operations/lifecycle-readme.md is iteration-lifecycle accounting prose, not a
+  - 来源：`tools/foundation/adjudicate_function_assets.py`
+  - 依赖：—；被引用：—
 - [DOI, issue/pages and a corrected PDF hash support document provenance, while the original receipt was misclassified and](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-0d50927af458afaf / DOI, issue/pages and a corrected PDF hash support document provenance, while the original receipt was misclassified and
@@ -2422,79 +2497,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-62246fd1eac9db71 / errors.append(f"{rid}: high probability causal proof overclaim")
   - 来源：`tools/probabilistic_system_dynamics/validator.py`
-  - 依赖：—；被引用：—
-- [errors.append(f"{rid}: light cone reachability written as proof")](../../../tools/causal_fabric/validator.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-2db1a450f43b27db / errors.append(f"{rid}: light cone reachability written as proof")
-  - 来源：`tools/causal_fabric/validator.py`
-  - 依赖：—；被引用：—
-- [errors.append(f"{source}: draft PR must not have accepted/merged/current lifecycle")](../../../tools/validate_external_attestation.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-16718ecfe85eeec3 / errors.append(f"{source}: draft PR must not have accepted/merged/current lifecycle")
-  - 来源：`tools/validate_external_attestation.py`
-  - 依赖：—；被引用：—
-- [escalation records from 081 were re-classified in 083 using stricter criteria based on claim_type, proof_status, and log](../../../reports/foundation-architecture/083-escalation-routing-report.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-9e75ef33d74379f6 / escalation records from 081 were re-classified in 083 using stricter criteria based on claim_type, proof_status, and log
-  - 来源：`reports/foundation-architecture/083-escalation-routing-report.md`
-  - 依赖：—；被引用：—
-- [Europe PMC/PMC for life sciences](../../../docs/external-research/legal-fulltext-resolution-protocol.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-29069ecd3d5eb3f8 / Europe PMC/PMC for life sciences
-  - 来源：`docs/external-research/legal-fulltext-resolution-protocol.md`
-  - 依赖：—；被引用：—
-- [Every deduplicated formal object has an object, claim, argument, source, mapping and open proof-obligation record. Every](../../../reports/foundation-architecture/full-migration-coverage-20260712.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-9691015832440d75 / Every deduplicated formal object has an object, claim, argument, source, mapping and open proof-obligation record. Every
-  - 来源：`reports/foundation-architecture/full-migration-coverage-20260712.md`
-  - 依赖：—；被引用：—
-- [Evidence: protocol index, machine data, document title.](../../../inputs/020/formal-protocol-promotion-standard.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-5f5c5b7a16f19d53 / Evidence: protocol index, machine data, document title.
-  - 来源：`inputs/020/formal-protocol-promotion-standard.md`
-  - 依赖：—；被引用：—
-- [evidence_obligation = "Not applicable for P1 (proof-type claim)."](../../../tools/foundation/process_084_batch.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-429a06b145f87f04 / evidence_obligation = "Not applicable for P1 (proof-type claim)."
-  - 来源：`tools/foundation/process_084_batch.py`
-  - 依赖：P1；被引用：—
-- [evidence_path: str](../../../inputs/020/validate_formal_protocol.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-97f64e7242aa56ba / evidence_path: str
-  - 来源：`inputs/020/validate_formal_protocol.py`
-  - 依赖：—；被引用：—
-- [evidence_regimes 覆盖领域：数学/物理学/历史学/社会科学/经济学/工程学/医学/法学等。](../../../outputs/collisions/20260708-smoke-test/collision-report.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-b44831be9df63693 / evidence_regimes 覆盖领域：数学/物理学/历史学/社会科学/经济学/工程学/医学/法学等。
-  - 来源：`outputs/collisions/20260708-smoke-test/collision-report.md`
-  - 依赖：—；被引用：—
-- [Exact arXiv v3, DOI and CC BY version-of-record identity/hash/size plus all-19-preprint-page and all-29-publisher-page v](../../../data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-82b153cb2b814702 / Exact arXiv v3, DOI and CC BY version-of-record identity/hash/size plus all-19-preprint-page and all-29-publisher-page v
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl`
-  - 依赖：—；被引用：—
-- [Exact arXiv v4 hash/size/API and official ICLR venue verification, all-29-page visual/full-text review and complete auth](../../../data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-10a9c4f4117d92ae / Exact arXiv v4 hash/size/API and official ICLR venue verification, all-29-page visual/full-text review and complete auth
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl`
-  - 依赖：—；被引用：—
-- [Exact canonical JMLR hash/size, all-97-page visual/full-text/theorem-appendix and paper-linked repository/history audit](../../../data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-083d507e3aaa99b1 / Exact canonical JMLR hash/size, all-97-page visual/full-text/theorem-appendix and paper-linked repository/history audit
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl`
-  - 依赖：—；被引用：—
-- [Exact frozen arXiv v2 hash/size, official journal metadata, all-24-page visual/full-text and official repository/history](../../../data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-ccb6c7b01fcda772 / Exact frozen arXiv v2 hash/size, official journal metadata, all-24-page visual/full-text and official repository/history
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl`
-  - 依赖：—；被引用：—
-- [Exact frozen arXiv:2402.12045 hash/size/all-8-page audit proved an unrelated DARTWARS quantum-amplifier paper and receiv](../../../data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-ef8d291285631441 / Exact frozen arXiv:2402.12045 hash/size/all-8-page audit proved an unrelated DARTWARS quantum-amplifier paper and receiv
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl`
-  - 依赖：—；被引用：—
-- [Exact registered conference hash/size, arXiv metadata, all-18-page visual/full-text and complete official code/history/p](../../../data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-ffb15c9926652272 / Exact registered conference hash/size, arXiv metadata, all-18-page visual/full-text and complete official code/history/p
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl`
   - 依赖：—；被引用：—

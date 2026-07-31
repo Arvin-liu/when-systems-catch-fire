@@ -4,6 +4,36 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [\| E3 \| 仅有内部样例、合成数据或玩具实验 \|](../../../docs/foundation/claim-governance-and-function-identity.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-14993c1d89b8ef78 / \| E3 \| 仅有内部样例、合成数据或玩具实验 \|
+  - 来源：`docs/foundation/claim-governance-and-function-identity.md`
+  - 依赖：—；被引用：—
+- [\| E4 \| 完成真实数据初步测试 \|](../../../docs/foundation/claim-governance-and-function-identity.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-492848b6d7bd0eb6 / \| E4 \| 完成真实数据初步测试 \|
+  - 来源：`docs/foundation/claim-governance-and-function-identity.md`
+  - 依赖：—；被引用：—
+- [\| E5 \| 独立数据或独立团队复现 \|](../../../docs/foundation/claim-governance-and-function-identity.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-35944a087452462f / \| E5 \| 独立数据或独立团队复现 \|
+  - 来源：`docs/foundation/claim-governance-and-function-identity.md`
+  - 依赖：—；被引用：—
+- [\| Empirical priority \| 56 \| 15.9% \|](../../../reports/foundation-architecture/085-backlog-prioritization.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-09a41786850de35e / \| Empirical priority \| 56 \| 15.9% \|
+  - 来源：`reports/foundation-architecture/085-backlog-prioritization.md`
+  - 依赖：—；被引用：—
+- [\| EMPIRICALLY_VALIDATED \| 必须有外部来源或实验记录 \|](../../../docs/foundation/architecture-structure-freeze-v1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-0f691ce96b1a769d / \| EMPIRICALLY_VALIDATED \| 必须有外部来源或实验记录 \|
+  - 来源：`docs/foundation/architecture-structure-freeze-v1.md`
+  - 依赖：—；被引用：—
+- [\| Evidence card files \| 30 \|](../../../reports/external-research/121A-night-recovery-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-c51d2d01d9e00bf7 / \| Evidence card files \| 30 \|
+  - 来源：`reports/external-research/121A-night-recovery-report.md`
+  - 依赖：—；被引用：—
 - [\| Evidence cards (30) \| COMPLETE \| 30 cards, 10 source families, all legal OA \|](../../../reports/external-research/121A-night-recovery-report.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-7797c269ef4b5307 / \| Evidence cards (30) \| COMPLETE \| 30 cards, 10 source families, all legal OA \|
@@ -2467,34 +2497,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-f08de395998a0dc7 / 候选、Ready、Accepted、Merged、Current 和 Closed 仍是不同状态。普通合并、main 验证、远端 CI 与全新克隆复验都必须分别记录；仓库没有需要继续维护的独立阅读站生产门。
   - 来源：`docs/project-current-state.md`
-  - 依赖：—；被引用：—
-- [候选者空间验证](../../../data/foundation/evidence/evidence.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-9ced8a756abaf990 / 候选者空间验证
-  - 来源：`data/foundation/evidence/evidence.jsonl`
-  - 依赖：—；被引用：—
-- [候选首先分成对象、命题、论证、来源与证据。book candidate 保留 BC 临时 ID，不分配 C ID。pending claim 保留 PEND ID；多种文件表示按同一 ID 合并，不重复计数。](../../../docs/USAGE.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-f593ad13ec195ad7 / 候选首先分成对象、命题、论证、来源与证据。book candidate 保留 BC 临时 ID，不分配 C ID。pending claim 保留 PEND ID；多种文件表示按同一 ID 合并，不重复计数。
-  - 来源：`docs/USAGE.md`
-  - 依赖：—；被引用：—
-- [储户来到银行，也许不是因为他掌握了资产负债表，而是因为门口已经有人排队。对单个人来说，先取走自己的钱可能是谨慎；对后面的人来说，前面人的谨慎却是银行危险的现场证据。提款减少可用流动性，银行于是更难应付提款，最初未经证实的担心开始改变它所担心](../../../docs/publication/works/when-an-army-believes-its-own-back.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-dfadf32c498c2521 / 储户来到银行，也许不是因为他掌握了资产负债表，而是因为门口已经有人排队。对单个人来说，先取走自己的钱可能是谨慎；对后面的人来说，前面人的谨慎却是银行危险的现场证据。提款减少可用流动性，银行于是更难应付提款，最初未经证实的担心开始改变它所担心
-  - 来源：`docs/publication/works/when-an-army-believes-its-own-back.md`
-  - 依赖：—；被引用：—
-- [允许 claim level：无外部证据时 ≤ L3，普遍性结论须 pending。](../../../outputs/collisions/20260708-teacher-competition/collision-report.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-197d5124746351f3 / 允许 claim level：无外部证据时 ≤ L3，普遍性结论须 pending。
-  - 来源：`outputs/collisions/20260708-teacher-competition/collision-report.md`
-  - 依赖：—；被引用：—
-- [元协议投影（历史制度的元协议）](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-1826823f8b38bbf2 / 元协议投影（历史制度的元协议）
-  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [元协议规范性审核发布审计 — IGNITION-20260709-043](../../ASSET-CARDS.md#asset-hr-460ef60e3cf27dca)
-  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-  - 可搜索名称：元协议规范性审核发布审计 — IGNITION-20260709-043 / meta-protocol-normative-review-publication-audit-20260711
-  - 来源：`outputs/audit/meta-protocol-normative-review-publication-audit-20260711.md`
   - 依赖：—；被引用：—

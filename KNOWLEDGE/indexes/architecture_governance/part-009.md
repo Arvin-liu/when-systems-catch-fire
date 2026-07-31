@@ -4,6 +4,31 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [r"结构性.{0,12}不可能\|框架层?.{0,12}已解决\|结构性.{0,12}统一)", re.I](../../../tools/foundation/adjudicate_function_assets.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-c3216a521d4284e1 / r"结构性.{0,12}不可能\|框架层?.{0,12}已解决\|结构性.{0,12}统一)", re.I
+  - 来源：`tools/foundation/adjudicate_function_assets.py`
+  - 依赖：—；被引用：—
+- [raise AssertionError(f"stale source projection: {row.get('asset_id') or row.get('search_id')}")](../../../tools/governance/validate_knowledge_experience.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-e654f51f237c5b18 / raise AssertionError(f"stale source projection: {row.get('asset_id') or row.get('search_id')}")
+  - 来源：`tools/governance/validate_knowledge_experience.py`
+  - 依赖：—；被引用：—
+- [raise ValidationError(f"{row\['id'\]} bad max_claim_level_without_external_evidence")](../../../tools/validate_data.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-3e174f3fff639880 / raise ValidationError(f"{row\['id'\]} bad max_claim_level_without_external_evidence")
+  - 来源：`tools/validate_data.py`
+  - 依赖：—；被引用：—
+- [raise ValidationError(f"{row\['id'\]} missing evidence_required")](../../../tools/validate_data.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-6c3e2cdc4e3bcc18 / raise ValidationError(f"{row\['id'\]} missing evidence_required")
+  - 来源：`tools/validate_data.py`
+  - 依赖：—；被引用：—
+- [rationale = ('仅由中枢(主题/研究问题)边连接、单一主题、无卡间依赖/证据/纠正结构，'](../../../tools/build_corpus_relation_graph.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-7b6ff1dea56fc7c8 / rationale = ('仅由中枢(主题/研究问题)边连接、单一主题、无卡间依赖/证据/纠正结构，'
+  - 来源：`tools/build_corpus_relation_graph.py`
+  - 依赖：—；被引用：—
 - [rationale="The title and recovered annotation use the universal modal term 必然, so the conservative testable reading is a](../../../tools/foundation/verify_079.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-28c839b8ad4fe67a / rationale="The title and recovered annotation use the universal modal term 必然, so the conservative testable reading is a
@@ -2478,29 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-a4a7bbf772e0e4ac / title: "万维钢AI学习笔记碰撞验证"
   - 来源：`统一案例总表/0671-C-676-万维钢AI学习笔记碰撞验证.md`
-  - 依赖：—；被引用：—
-- [title: "三域熵统一"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0223-C-223-%E4%B8%89%E5%9F%9F%E7%86%B5%E7%BB%9F%E4%B8%80.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-e73fb58782dc6b67 / title: "三域熵统一"
-  - 来源：`统一案例总表/0223-C-223-三域熵统一.md`
-  - 依赖：—；被引用：—
-- [title: "三阶段=曲率穿越验证 — 创业者路径：阶段1（资源充足ε>>θC）→R_cog≈0→贪心策略有效；阶段2（资金紧张ε≈θC）→R_cog最大→必须做级联防御；阶段3（盈利后ε>>θC）→R_cog→0→回到贪心。β轨迹与曲率](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0505-C-510-%E4%B8%89%E9%98%B6%E6%AE%B5%3D%E6%9B%B2%E7%8E%87%E7%A9%BF%E8%B6%8A%E9%AA%8C%E8%AF%81%20%E2%80%94%20%E5%88%9B%E4%B8%9A%E8%80%85%E8%B7%AF%E5%BE%84-%E9%98%B6%E6%AE%B51%28%E8%B5%84%E6%BA%90%E5%85%85%E8%B6%B3%CE%B5-%CE%B8C%29%E2%86%92R_cog%E2%89%880%E2%86%92%E8%B4%AA%E5%BF%83%E7%AD%96%E7%95%A5%E6%9C%89%E6%95%88%3B%E9%98%B6%E6%AE%B52%28%E8%B5%84%E9%87%91%E7%B4%A7%E5%BC%A0%CE%B5%E2%89%88%CE%B8C%29%E2%86%92R_cog%E6%9C%80%E5%A4%A7%E2%86%92.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-6600133f13c23af1 / title: "三阶段=曲率穿越验证 — 创业者路径：阶段1（资源充足ε>>θC）→R_cog≈0→贪心策略有效；阶段2（资金紧张ε≈θC）→R_cog最大→必须做级联防御；阶段3（盈利后ε>>θC）→R_cog→0→回到贪心。β轨迹与曲率
-  - 来源：`统一案例总表/0505-C-510-三阶段=曲率穿越验证 — 创业者路径-阶段1(资源充足ε-θC)→R_cog≈0→贪心策略有效;阶段2(资金紧张ε≈θC)→R_cog最大→.md`
-  - 依赖：—；被引用：—
-- [title: "三阶段操作协议验证 — 职业转型：探索期(β小)→转型期(β大,精准投入)→拓展期(β小,激进)"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0441-C-442-%E4%B8%89%E9%98%B6%E6%AE%B5%E6%93%8D%E4%BD%9C%E5%8D%8F%E8%AE%AE%E9%AA%8C%E8%AF%81%20%E2%80%94%20%E8%81%8C%E4%B8%9A%E8%BD%AC%E5%9E%8B-%E6%8E%A2%E7%B4%A2%E6%9C%9F%28%CE%B2%E5%B0%8F%29%E2%86%92%E8%BD%AC%E5%9E%8B%E6%9C%9F%28%CE%B2%E5%A4%A7%2C%E7%B2%BE%E5%87%86%E6%8A%95%E5%85%A5%29%E2%86%92%E6%8B%93%E5%B1%95%E6%9C%9F%28%CE%B2%E5%B0%8F%2C%E6%BF%80%E8%BF%9B%29.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-ef2946eeac87f4e3 / title: "三阶段操作协议验证 — 职业转型：探索期(β小)→转型期(β大,精准投入)→拓展期(β小,激进)"
-  - 来源：`统一案例总表/0441-C-442-三阶段操作协议验证 — 职业转型-探索期(β小)→转型期(β大,精准投入)→拓展期(β小,激进).md`
-  - 依赖：—；被引用：—
-- [title: "三阶段曲率穿越验证 — 创业公司5年轨迹：β从0.2→3.8→0.3，R_cog从0.01→0.45→0.02，两者完全同步。阶段2峰值处策略从贪心切换到级联防御，β和R_cog同时取最大值 / 三阶段曲率穿越验证 - 创业](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0511-C-516-%E4%B8%89%E9%98%B6%E6%AE%B5%E6%9B%B2%E7%8E%87%E7%A9%BF%E8%B6%8A%E9%AA%8C%E8%AF%81%20%E2%80%94%20%E5%88%9B%E4%B8%9A%E5%85%AC%E5%8F%B85%E5%B9%B4%E8%BD%A8%E8%BF%B9-%CE%B2%E4%BB%8E0.2%E2%86%923.8%E2%86%920.3%2CR_cog%E4%BB%8E0.01%E2%86%920.45%E2%86%920.02%2C%E4%B8%A4%E8%80%85%E5%AE%8C%E5%85%A8%E5%90%8C%E6%AD%A5%E3%80%82%E9%98%B6%E6%AE%B52%E5%B3%B0%E5%80%BC%E5%A4%84%E7%AD%96.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-490ebb515c9f4664 / title: "三阶段曲率穿越验证 — 创业公司5年轨迹：β从0.2→3.8→0.3，R_cog从0.01→0.45→0.02，两者完全同步。阶段2峰值处策略从贪心切换到级联防御，β和R_cog同时取最大值 / 三阶段曲率穿越验证 - 创业
-  - 来源：`统一案例总表/0511-C-516-三阶段曲率穿越验证 — 创业公司5年轨迹-β从0.2→3.8→0.3,R_cog从0.01→0.45→0.02,两者完全同步。阶段2峰值处策.md`
-  - 依赖：—；被引用：—
-- [title: "上下文饱和重置验证"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0574-C-579-%E4%B8%8A%E4%B8%8B%E6%96%87%E9%A5%B1%E5%92%8C%E9%87%8D%E7%BD%AE%E9%AA%8C%E8%AF%81.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-e2c5469ccddf5c83 / title: "上下文饱和重置验证"
-  - 来源：`统一案例总表/0574-C-579-上下文饱和重置验证.md`
   - 依赖：—；被引用：—

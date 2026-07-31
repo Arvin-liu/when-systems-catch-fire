@@ -4,6 +4,26 @@
 
 [返回资产卡总索引](../ASSET-CARDS.md)
 
+<a id="asset-hr-537499c7917fee41"></a>
+## S2 规范性审核 - 开放边界协议 (Open-Boundary Protocol)
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-537499C7917FEE41` · [docs/governance/meta-protocol-reviews/protocols/S2.md](../../docs/governance/meta-protocol-reviews/protocols/S2.md)
+- **为什么产生：** 此来源记录了什么：S2 规范性审核 - 开放边界协议 (Open-Boundary Protocol)？
+- **当前状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **当前结果：** 系统允许外部输入、退出、迁移或扩展，边界可渗透。
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `docs/governance/meta-protocol-reviews/protocols/S2.md`, `REPOSITORY_HISTORY_SOURCE`
+- **演化历史：** 2026-07-11: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `S2 规范性审核 - 开放边界协议 (Open-Boundary Protocol)`, `S2`
+
 <a id="asset-hr-53d09798ed596327"></a>
 ## E4 规范性审核 - 收敛演化协议 (Convergent-Evolution Protocol)
 
@@ -983,23 +1003,3 @@
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`
 - **可搜索名称：** `Core proof and countermodel report`, `core-proof-and-countermodel-report-20260713`
-
-<a id="asset-hr-7b285d9f5fad1e01"></a>
-## 历史纠偏日志
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-7B285D9F5FAD1E01` · [docs/foundation/historical-correction-log.md](../../docs/foundation/historical-correction-log.md)
-- **为什么产生：** 此来源记录了什么：历史纠偏日志？
-- **当前状态：** `CURRENT_CORRECTION_RECORD`
-- **当前结果：** 本日志追加记录强断言如何被撤回、分拆或降级；它不删除原始证据。
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** `D127`, `T2`, `D182`, `D190`, `D188`, `D260`, `T26`, `D123`, `D516`, `D517`, `D185`
-- **来源与证据：** `docs/foundation/historical-correction-log.md`, `REPOSITORY_HISTORY_SOURCE`
-- **演化历史：** 2026-07-29: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `ARCHITECTURE_GOVERNANCE`
-- **可搜索名称：** `历史纠偏日志`, `historical-correction-log`

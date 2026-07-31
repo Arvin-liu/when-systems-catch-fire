@@ -4,6 +4,36 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [某实验团队使用自动高通量筛选平台，每天产生数十万条化合物活性读数。为加快出成果，团队把「显著 p 值数量」作为成员考核与项目续资助的核心指标。运行两年后观察到：](../../../inputs/collisions/20260708-cross-domain-smoke-test/science.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-078b0092ac5012f9 / 某实验团队使用自动高通量筛选平台，每天产生数十万条化合物活性读数。为加快出成果，团队把「显著 p 值数量」作为成员考核与项目续资助的核心指标。运行两年后观察到：
+  - 来源：`inputs/collisions/20260708-cross-domain-smoke-test/science.md`
+  - 依赖：—；被引用：—
+- [某种艺术形式必然优于另一种艺术形式：`pending`（需要形式分析、历史语境分析、解释共同体共识）](../../../outputs/getbrain/classic-problems-benchmark-supplement-20260707.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-9c2597c389666ff2 / 某种艺术形式必然优于另一种艺术形式：`pending`（需要形式分析、历史语境分析、解释共同体共识）
+  - 来源：`outputs/getbrain/classic-problems-benchmark-supplement-20260707.md`
+  - 依赖：—；被引用：—
+- [某领域规律被跨域复制；](../../../outputs/getbrain/failure-typology-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-683304dbddb9780f / 某领域规律被跨域复制；
+  - 来源：`outputs/getbrain/failure-typology-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [查阅证据制度库；](../../../outputs/getbrain/failure-typology-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-a95659711a465d73 / 查阅证据制度库；
+  - 来源：`outputs/getbrain/failure-typology-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [标准化的文献 dict 或 None](../../../scripts/external-research/openalex_client.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-0c8e98b787fd265c / 标准化的文献 dict 或 None
+  - 来源：`scripts/external-research/openalex_client.py`
+  - 依赖：—；被引用：—
+- [标注 pending** — 写明证据等级；](../../../docs/two-tables-entry-writing-standard-20260709.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-e2c7038d8d07a391 / 标注 pending** — 写明证据等级；
+  - 来源：`docs/two-tables-entry-writing-standard-20260709.md`
+  - 依赖：—；被引用：—
 - [标注证据不足（缺字段显式标"缺失"/"pending"）。](../../../docs/two-tables-entry-writing-standard-20260709.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-7a758edd247ec41e / 标注证据不足（缺字段显式标"缺失"/"pending"）。
@@ -2472,35 +2502,5 @@
 - [验证过程：** 市场价格达到纳什均衡，单个交易者改变策略不会增加收益。每个交易者根据价格信息调整交易行为，最终达到纳什均衡，单个交易者单方面改变策略不会增加收益。](../../../docs/phi_meta_law.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-6ce812aa6a40df59 / 验证过程：** 市场价格达到纳什均衡，单个交易者改变策略不会增加收益。每个交易者根据价格信息调整交易行为，最终达到纳什均衡，单个交易者单方面改变策略不会增加收益。
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证过程：** 开源开发的L1层（代码）→ L2层（协议）→ L3层（社区文化）。开源开发从代码层涌现出协议层，再从协议层涌现出社区文化层。](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-45637e7820edb998 / 验证过程：** 开源开发的L1层（代码）→ L2层（协议）→ L3层（社区文化）。开源开发从代码层涌现出协议层，再从协议层涌现出社区文化层。
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证过程：** 开源开发的每个开发者通过局部代码调整，社区整体涌现出高质量软件。开发者感知局部代码信息，调整代码贡献，无数开发者的局部调整使得社区整体涌现出高质量软件。](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-089b3627232fb5ba / 验证过程：** 开源开发的每个开发者通过局部代码调整，社区整体涌现出高质量软件。开发者感知局部代码信息，调整代码贡献，无数开发者的局部调整使得社区整体涌现出高质量软件。
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证过程：** 开源开发的社区感知需求环境、调整代码结构、循环递归优化软件质量。社区感知需求信息，调整代码结构，循环递归优化软件质量。](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-2466afa39989b60c / 验证过程：** 开源开发的社区感知需求环境、调整代码结构、循环递归优化软件质量。社区感知需求信息，调整代码结构，循环递归优化软件质量。
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证过程：** 开源开发的社区规范达到纳什均衡，单方面改变规范会降低协作效率。每个开发者根据社区规范调整贡献行为，最终达到纳什均衡，单个开发者单方面改变规范不会提高协作效率。](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-4d2f8b03dfd0b379 / 验证过程：** 开源开发的社区规范达到纳什均衡，单方面改变规范会降低协作效率。每个开发者根据社区规范调整贡献行为，最终达到纳什均衡，单个开发者单方面改变规范不会提高协作效率。
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证过程：** 森林中每棵树的资源分配策略达到纳什均衡，单方面改变策略会降低收益。每棵树根据森林资源状况调整资源分配策略，最终达到纳什均衡，单棵树单方面改变策略不会提高收益。](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-4d4fde9d8a17ff6a / 验证过程：** 森林中每棵树的资源分配策略达到纳什均衡，单方面改变策略会降低收益。每棵树根据森林资源状况调整资源分配策略，最终达到纳什均衡，单棵树单方面改变策略不会提高收益。
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证过程：** 植物智能的植物感知土壤环境、调整根系结构、循环递归优化养分吸收。植物感知土壤养分信息，调整根系生长方向，循环递归优化养分吸收效率。](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-687087d1ffe315ee / 验证过程：** 植物智能的植物感知土壤环境、调整根系结构、循环递归优化养分吸收。植物感知土壤养分信息，调整根系生长方向，循环递归优化养分吸收效率。
   - 来源：`docs/phi_meta_law.md`
   - 依赖：—；被引用：—

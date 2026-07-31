@@ -19,6 +19,11 @@
   - 可搜索名称：NFC-6b77dab6d428fb48 / """Fail-closed validation and deterministic projection for stage snapshots."""
   - 来源：`tools/operations/stage_snapshot_contract.py`
   - 依赖：—；被引用：—
+- ["""Fold terminal tasks from the event-sourced lifecycle into the projection.](../../../tools/propagation/current_truth_projection.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-4aaa3d34ec7d237a / """Fold terminal tasks from the event-sourced lifecycle into the projection.
+  - 来源：`tools/propagation/current_truth_projection.py`
+  - 依赖：—；被引用：—
 - ["## 覆盖项（对应 §14 的 28 项要求）\\n"](../../../tools/build_reports.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-1642e6374cea059f / "## 覆盖项（对应 §14 的 28 项要求）\\n"
@@ -2498,9 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-559AA4BA5F43B8E6 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0014})=1\]. / IMPLICIT-559AA4BA5F43B8E6
   - 来源：`统一案例总表/0014-C-14-柏林墙倒塌.md`
-  - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0015})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0015-C-15-%E4%B9%8C%E9%B2%81%E5%8D%A1%E5%90%89%E7%BA%B3%E6%94%B9%E9%9D%A9.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-A4C855D59711CC74 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0015})=1\]. / IMPLICIT-A4C855D59711CC74
-  - 来源：`统一案例总表/0015-C-15-乌鲁卡吉纳改革.md`
   - 依赖：—；被引用：—
