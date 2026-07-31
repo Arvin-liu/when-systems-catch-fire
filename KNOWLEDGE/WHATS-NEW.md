@@ -4,6 +4,24 @@
 
 ## 2026
 
+<a id="change-src-hr-f3d97a665e74558a"></a>
+### 2026-08-01 · 迭代生命周期模型（事件溯源 · 任务 108 引入）
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** 本目录与 data/operations/ 下的生命周期文件定义了点火仓库的迭代终态模型。 它在任务 108 中取代"一行可变终态记录"的循环模型，改为追加式、事件溯源的不可变事件 + 不可伪造标注终端 tag。
+- **来源：** [lifecycle-readme.md](../docs/operations/lifecycle-readme.md)
+- **资产卡：** [HR-F3D97A665E74558A](./ASSET-CARDS.md#asset-hr-f3d97a665e74558a)
+
+<a id="change-src-hr-1bf6463b42d7824f"></a>
+### 2026-08-01 · 生命周期审计 · 任务 108（双相迭代终态化与自闭合当前真相 R1）
+
+- **类型：** `AUDIT_OR_ADJUDICATION`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** data/operations/merged-iteration-ledger.jsonl 在 main 上呈现：
+- **来源：** [lifecycle-audit-108.md](../reports/operations/lifecycle-audit-108.md)
+- **资产卡：** [HR-1BF6463B42D7824F](./ASSET-CARDS.md#asset-hr-1bf6463b42d7824f)
+
 <a id="change-src-hr-7cb77f69452eaaf6"></a>
 ### 2026-07-31 · Task 107 — Foundation Drift Repair: Incident Report
 

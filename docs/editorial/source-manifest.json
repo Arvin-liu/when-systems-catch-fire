@@ -153,26 +153,32 @@
       ]
     },
     "008-merged-but-stale-public-truth": {
-      "current_claim_ceiling": "explanatory only; no new scientific/mathematical/empirical conclusion; asserts only that a fail-closed propagation mechanism now exists",
+      "current_claim_ceiling": "explanatory only; no new scientific/mathematical/empirical conclusion; explains task 106 fail-closed propagation AND task 108 event-sourced two-phase lifecycle + annotated terminal tag that removes the circular single-row terminality",
       "editorial_status": "REVIEWED_CURRENT",
       "file": "docs/editorial/articles/008-merged-but-stale-public-truth.md",
-      "last_reviewed_commit": "task-106-exact-head",
+      "last_reviewed_commit": "task-108-content-merge",
       "materiality_rules": [
         "any change to a listed source path requires re-review before currency",
         "changing only an unrelated source does not force staleness"
       ],
-      "review_evidence": "article 008 reviewed against task-106 exact head at ordinary merge; explains post-merge current-truth lag without new claims",
+      "review_evidence": "article 008 marked STALE_REVIEW_REQUIRED on task-108 content branch, revised through authoritative Zhiyuan Writing Method to explain circular one-row model + candidate->terminalization-projection->annotated-tag chain, real reading review completed, restored to REVIEWED_CURRENT (task 108, contract §10)",
       "source_hashes": {
+        "data/operations/lifecycle-events.jsonl": "f270c67e31104ad8ca91d6a05873436c322e42f749c358e37e14d63b5fa30447",
         "data/operations/merged-iteration-ledger.jsonl": "cbd51a5f9540a92942964c908ada28a259fba762fd7af29ab919f229dd9cacd7",
-        "tools/propagation/validate_reconciliation.py": "b83e9ffef9add4d74673b9aa6b53b98ac5e0ffb123fa70ab1519bece89d42bce"
+        "tools/propagation/lifecycle_events.py": "42c0a572a3d78741ae71b575afe456a3888d89c97ffb6fa11748c5237fd4e250",
+        "tools/propagation/tag_validator.py": "852ebba5f83e6764ac3a9aaddd2e77a6bb085a947df1a1821b55d0d5dac413cd"
       },
       "source_ids": [
+        "lifecycle-events.jsonl",
         "merged-iteration-ledger.jsonl",
-        "validate_reconciliation.py"
+        "lifecycle_events.py",
+        "tag_validator.py"
       ],
       "source_paths": [
+        "data/operations/lifecycle-events.jsonl",
         "data/operations/merged-iteration-ledger.jsonl",
-        "tools/propagation/validate_reconciliation.py"
+        "tools/propagation/lifecycle_events.py",
+        "tools/propagation/tag_validator.py"
       ]
     }
   },

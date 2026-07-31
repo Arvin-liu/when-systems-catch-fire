@@ -1,6 +1,6 @@
 # Claim Delta
 
-本轮识别 48 个新增、删除或修改的知识资产。关联断言来自现行 claim registry；无关联项必须人工确认是否需要新增登记。
+本轮识别 50 个新增、删除或修改的知识资产。关联断言来自现行 claim registry；无关联项必须人工确认是否需要新增登记。
 
 ## `AI-HANDOFF.md`
 
@@ -346,6 +346,14 @@
 - 人类结果义务：`True`
 - 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
 
+## `docs/operations/lifecycle-readme.md`
+
+- 状态：`ADDED`
+- Delta：`CD-F3D97A665E74558A`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
 ## `docs/operations/stage-snapshot-publication.md`
 
 - 状态：`MODIFIED`
@@ -383,5 +391,13 @@
 - 状态：`ADDED`
 - Delta：`CD-C629630AD15B68CB`
 - 关联断言：['NFC-765b3dcd3e88193a', 'NFC-838e5a8192a995d6', 'NFC-f5447061d147f065']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/operations/lifecycle-audit-108.md`
+
+- 状态：`ADDED`
+- Delta：`CD-1BF6463B42D7824F`
+- 关联断言：['NONE_DISCOVERED']
 - 人类结果义务：`True`
 - 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.

@@ -1,0 +1,49 @@
+{
+  "current_accepted_iteration": 105,
+  "derived_from": "lifecycle-events.jsonl + annotated terminal tags",
+  "errors": {},
+  "non_terminal_tasks": [
+    106,
+    107,
+    108
+  ],
+  "resolved": {
+    "104": "TERMINAL_SUCCESS",
+    "105": "TERMINAL_SUCCESS",
+    "106": "CONTENT_MERGED_AWAITING_TERMINALIZATION",
+    "107": "CONTENT_MERGED_AWAITING_TERMINALIZATION",
+    "108": "READY_FOR_CONTENT_MERGE"
+  },
+  "schema_version": "1.0.0",
+  "task_summary": [
+    {
+      "resolved_state": "TERMINAL_SUCCESS",
+      "task_id": "IGNITION-NARRATIVE-SYNTHESIS-AND-LIVE-SYSTEM-MAP-R1-20260730",
+      "task_number": 104
+    },
+    {
+      "resolved_state": "TERMINAL_SUCCESS",
+      "task_id": "IGNITION-FUNCTION-OS-CORE-CAPABILITY-BENCHMARK-ADVERSARIAL-VALIDATION-R1-20260730",
+      "task_number": 105
+    },
+    {
+      "resolved_state": "CONTENT_MERGED_AWAITING_TERMINALIZATION",
+      "task_id": "IGNITION-CONTINUOUS-ITERATION-PROPAGATION-CLOSURE-AND-CURRENT-TRUTH-RECONCILIATION-R1-20260731",
+      "task_number": 106
+    },
+    {
+      "resolved_state": "CONTENT_MERGED_AWAITING_TERMINALIZATION",
+      "task_id": "IGNITION-FOUNDATION-DRIFT-REPAIR-UNIVERSAL-DISCOVERY-PREFLIGHT-AND-PROPAGATION-CI-PROOF-R1-20260731",
+      "task_number": 107
+    },
+    {
+      "resolved_state": "READY_FOR_CONTENT_MERGE",
+      "task_id": "IGNITION-TWO-PHASE-ITERATION-TERMINALIZATION-AND-SELF-CLOSING-CURRENT-TRUTH-R1-20260801",
+      "task_number": 108
+    }
+  ],
+  "terminal_tasks": [
+    104,
+    105
+  ]
+}

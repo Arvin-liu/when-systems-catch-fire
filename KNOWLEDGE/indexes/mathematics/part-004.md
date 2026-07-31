@@ -4,6 +4,66 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [\[C-0787｜和孩子聊热点事件\](../../../统一案例总表/0782-C-0787-和孩子聊热点事件.md)（原笔记编号：C584-3）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0594-D584-%E7%94%B5%E5%AD%90%E8%8A%82%E9%A3%9F.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-d5c3b8caefac5383 / \[C-0787｜和孩子聊热点事件\](../../../统一案例总表/0782-C-0787-和孩子聊热点事件.md)（原笔记编号：C584-3）
+  - 来源：`统一函数总表/0594-D584-电子节食.md`
+  - 依赖：—；被引用：—
+- [\[C-0788｜博士期间换十个选题\](../../../统一案例总表/0783-C-0788-博士期间换十个选题.md)（原笔记编号：C584-4）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0594-D584-%E7%94%B5%E5%AD%90%E8%8A%82%E9%A3%9F.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-d30e43ca82782035 / \[C-0788｜博士期间换十个选题\](../../../统一案例总表/0783-C-0788-博士期间换十个选题.md)（原笔记编号：C584-4）
+  - 来源：`统一函数总表/0594-D584-电子节食.md`
+  - 依赖：—；被引用：—
+- [\[C-0789｜双周访谈打破信息茧房\](../../../统一案例总表/0784-C-0789-双周访谈打破信息茧房.md)（原笔记编号：C585-1）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0595-D585-%E8%AE%A4%E7%9F%A5%E5%A4%8D%E6%9D%82%E5%BA%A6%E6%94%B6%E6%95%9B.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-08d8bd17cced6d81 / \[C-0789｜双周访谈打破信息茧房\](../../../统一案例总表/0784-C-0789-双周访谈打破信息茧房.md)（原笔记编号：C585-1）
+  - 来源：`统一函数总表/0595-D585-认知复杂度收敛.md`
+  - 依赖：—；被引用：—
+- [\[C-0790｜快闪阅读反算法\](../../../统一案例总表/0785-C-0790-快闪阅读反算法.md)（原笔记编号：C585-2）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0595-D585-%E8%AE%A4%E7%9F%A5%E5%A4%8D%E6%9D%82%E5%BA%A6%E6%94%B6%E6%95%9B.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-89109599e5ab60bd / \[C-0790｜快闪阅读反算法\](../../../统一案例总表/0785-C-0790-快闪阅读反算法.md)（原笔记编号：C585-2）
+  - 来源：`统一函数总表/0595-D585-认知复杂度收敛.md`
+  - 依赖：—；被引用：—
+- [\[C-0791｜逛书店发现惊喜\](../../../统一案例总表/0786-C-0791-逛书店发现惊喜.md)（原笔记编号：C585-3）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0595-D585-%E8%AE%A4%E7%9F%A5%E5%A4%8D%E6%9D%82%E5%BA%A6%E6%94%B6%E6%95%9B.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-1995042cef2bf7ca / \[C-0791｜逛书店发现惊喜\](../../../统一案例总表/0786-C-0791-逛书店发现惊喜.md)（原笔记编号：C585-3）
+  - 来源：`统一函数总表/0595-D585-认知复杂度收敛.md`
+  - 依赖：—；被引用：—
+- [\[C-0792｜青蒿素从《肘后备急方》提炼\](../../../统一案例总表/0787-C-0792-青蒿素从《肘后备急方》提炼.md)（原笔记编号：C585-4）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0595-D585-%E8%AE%A4%E7%9F%A5%E5%A4%8D%E6%9D%82%E5%BA%A6%E6%94%B6%E6%95%9B.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-0f84d627ded9a5c2 / \[C-0792｜青蒿素从《肘后备急方》提炼\](../../../统一案例总表/0787-C-0792-青蒿素从《肘后备急方》提炼.md)（原笔记编号：C585-4）
+  - 来源：`统一函数总表/0595-D585-认知复杂度收敛.md`
+  - 依赖：—；被引用：—
+- [\[C-0793｜《写作是门手艺》段落控制≤10行\](../../../统一案例总表/0788-C-0793-《写作是门手艺》段落控制≤10行.md)（原笔记编号：C586-1）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0596-D586-%E7%8B%AC%E7%89%B9%E8%B5%9B%E9%81%93%E9%80%89%E6%8B%A9.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-419886640a1590e8 / \[C-0793｜《写作是门手艺》段落控制≤10行\](../../../统一案例总表/0788-C-0793-《写作是门手艺》段落控制≤10行.md)（原笔记编号：C586-1）
+  - 来源：`统一函数总表/0596-D586-独特赛道选择.md`
+  - 依赖：—；被引用：—
+- [\[C-0794｜马伯庸建议蹲下来看最下面一排书\](../../../统一案例总表/0789-C-0794-马伯庸建议蹲下来看最下面一排书.md)（原笔记编号：C586-2）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0596-D586-%E7%8B%AC%E7%89%B9%E8%B5%9B%E9%81%93%E9%80%89%E6%8B%A9.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-e2e37f6bafe56f38 / \[C-0794｜马伯庸建议蹲下来看最下面一排书\](../../../统一案例总表/0789-C-0794-马伯庸建议蹲下来看最下面一排书.md)（原笔记编号：C586-2）
+  - 来源：`统一函数总表/0596-D586-独特赛道选择.md`
+  - 依赖：—；被引用：—
+- [\[C-0795｜准备《长谈》花一个月\](../../../统一案例总表/0790-C-0795-准备《长谈》花一个月.md)（原笔记编号：C586-3）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0596-D586-%E7%8B%AC%E7%89%B9%E8%B5%9B%E9%81%93%E9%80%89%E6%8B%A9.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-e40a30e1d2a001df / \[C-0795｜准备《长谈》花一个月\](../../../统一案例总表/0790-C-0795-准备《长谈》花一个月.md)（原笔记编号：C586-3）
+  - 来源：`统一函数总表/0596-D586-独特赛道选择.md`
+  - 依赖：—；被引用：—
+- [\[C-0796｜亲子共读一本书\](../../../统一案例总表/0791-C-0796-亲子共读一本书.md)（原笔记编号：C586-4）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0596-D586-%E7%8B%AC%E7%89%B9%E8%B5%9B%E9%81%93%E9%80%89%E6%8B%A9.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-413fe3a9e1120b6a / \[C-0796｜亲子共读一本书\](../../../统一案例总表/0791-C-0796-亲子共读一本书.md)（原笔记编号：C586-4）
+  - 来源：`统一函数总表/0596-D586-独特赛道选择.md`
+  - 依赖：—；被引用：—
+- [\[C-0797｜哥德尔不完备性与形式系统边界\](../../../统一案例总表/0792-C-0797-哥德尔不完备性与形式系统边界.md)](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0597-D587-%E5%AD%A6%E7%A7%91%E7%90%86%E8%AE%BA%E6%A0%B8%E6%8A%BD%E5%8F%96%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-2ebee8e0ac9d6027 / \[C-0797｜哥德尔不完备性与形式系统边界\](../../../统一案例总表/0792-C-0797-哥德尔不完备性与形式系统边界.md)
+  - 来源：`统一函数总表/0597-D587-学科理论核抽取函数.md`
+  - 依赖：—；被引用：—
+- [\[C-0798｜物理大统一与能标门控\](../../../统一案例总表/0793-C-0798-物理大统一与能标门控.md)](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0597-D587-%E5%AD%A6%E7%A7%91%E7%90%86%E8%AE%BA%E6%A0%B8%E6%8A%BD%E5%8F%96%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-6e87f096f9c27b3e / \[C-0798｜物理大统一与能标门控\](../../../统一案例总表/0793-C-0798-物理大统一与能标门控.md)
+  - 来源：`统一函数总表/0597-D587-学科理论核抽取函数.md`
+  - 依赖：—；被引用：—
 - [\[C-0799｜生命起源与自组织\](../../../统一案例总表/0794-C-0799-生命起源与自组织.md)](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0597-D587-%E5%AD%A6%E7%A7%91%E7%90%86%E8%AE%BA%E6%A0%B8%E6%8A%BD%E5%8F%96%E5%87%BD%E6%95%B0.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-0374a3bed5856f12 / \[C-0799｜生命起源与自组织\](../../../统一案例总表/0794-C-0799-生命起源与自组织.md)
@@ -953,6 +1013,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-c4543070b8b0f40a / \\"突破\\"这个现象在不同领域有共同的数学机制\\n\\n---\\n\\n## 下一步计划\\n\\n### 立即行动\\n\\n1.
   - 来源：`统一案例总表/0673-C-0678-孪生素数问题转换.md`
+  - 依赖：—；被引用：—
+- [_fold_lifecycle_terminal(repo_root, proj)](../../../tools/propagation/current_truth_projection.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-beecb07408e274f8 / _fold_lifecycle_terminal(repo_root, proj)
+  - 来源：`tools/propagation/current_truth_projection.py`
   - 依赖：—；被引用：—
 - [_validate_lifecycle(manifest, source)](../../../tools/validate_iteration_sync.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
@@ -2438,69 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-25e7d361b52c6084 / Case 层** 是已验证的现实/跨域案例（C 编号），由函数层实例化支撑。
   - 来源：`docs/protocols/protocol-architecture.md`
-  - 依赖：—；被引用：—
-- [Case 层是已验证实例（C 编号，current 至 C-809 级），由函数层支撑。](../../../docs/protocols/protocol-architecture.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-eb4d95b43ec98128 / Case 层是已验证实例（C 编号，current 至 C-809 级），由函数层支撑。
-  - 来源：`docs/protocols/protocol-architecture.md`
-  - 依赖：—；被引用：—
-- [CASE_DIR = ROOT / "统一案例总表"](../../../tools/math_foundation_audit.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-cb9ebe92e99c89a8 / CASE_DIR = ROOT / "统一案例总表"
-  - 来源：`tools/math_foundation_audit.py`
-  - 依赖：—；被引用：—
-- [cases.append((authority, "E_PROOF_AUTHORITY_BINDING"))](../../../tests/test_incremental_execution.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-7bb84794723434f7 / cases.append((authority, "E_PROOF_AUTHORITY_BINDING"))
-  - 来源：`tests/test_incremental_execution.py`
-  - 依赖：—；被引用：—
-- [cases.append((component, "E_PROOF_COMPONENT_BINDING"))](../../../tests/test_incremental_execution.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-b537795638d9b678 / cases.append((component, "E_PROOF_COMPONENT_BINDING"))
-  - 来源：`tests/test_incremental_execution.py`
-  - 依赖：—；被引用：—
-- [cases.append((missing, "E_PROOF_REQUIRED"))](../../../tests/test_incremental_execution.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-1dabd8b832a52429 / cases.append((missing, "E_PROOF_REQUIRED"))
-  - 来源：`tests/test_incremental_execution.py`
-  - 依赖：—；被引用：—
-- [cases.append((plan_hash, "E_PROOF_PLAN_HASH_BINDING"))](../../../tests/test_incremental_execution.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-7c7a3c47242dc666 / cases.append((plan_hash, "E_PROOF_PLAN_HASH_BINDING"))
-  - 来源：`tests/test_incremental_execution.py`
-  - 依赖：—；被引用：—
-- [Categorical/Bernoulli training choices are formal stochastic mechanisms, but no calibrated uncertainty, probabilistic fu](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-b75b2c8d5d38aca0 / Categorical/Bernoulli training choices are formal stochastic mechanisms, but no calibrated uncertainty, probabilistic fu
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
-  - 依赖：—；被引用：—
-- [Causal reachability is not actual causation; high probability is not strong causality; network adjacency, similarity, ce](../../../llms.txt)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-5fff1f05b5b59177 / Causal reachability is not actual causation; high probability is not strong causality; network adjacency, similarity, ce
-  - 来源：`llms.txt`
-  - 依赖：—；被引用：—
-- [CAUSAL_MODEL](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-e3b81c5a11db4c91 / CAUSAL_MODEL
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：—；被引用：—
-- [causal_topology := ∫_{Ω} cause × effect × temporal_order × counterfactual dΩ（因果拓扑积分）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0001-%CE%A8%E2%82%80%E5%85%83%E5%87%BD%E6%95%B0%E5%AE%8C%E6%95%B4%E6%95%B0%E5%AD%A6%E5%AE%9A%E4%B9%89.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-dcc24f4272e4e811 / causal_topology := ∫_{Ω} cause × effect × temporal_order × counterfactual dΩ（因果拓扑积分）
-  - 来源：`统一函数总表/0001-Ψ₀元函数完整数学定义.md`
-  - 依赖：—；被引用：—
-- [cause := P(y\|x) - P(y)（因果强度）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0001-%CE%A8%E2%82%80%E5%85%83%E5%87%BD%E6%95%B0%E5%AE%8C%E6%95%B4%E6%95%B0%E5%AD%A6%E5%AE%9A%E4%B9%89.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-4a6389d7e184c76c / cause := P(y\|x) - P(y)（因果强度）
-  - 来源：`统一函数总表/0001-Ψ₀元函数完整数学定义.md`
-  - 依赖：—；被引用：—
-- [changed = \[item for item in document\["component_decisions"\] if item\["decision"\] != "NO_CHANGE_WITH_PROOF"\]](../../../tests/test_incremental_execution.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-230d95fd66808062 / changed = \[item for item in document\["component_decisions"\] if item\["decision"\] != "NO_CHANGE_WITH_PROOF"\]
-  - 来源：`tests/test_incremental_execution.py`
-  - 依赖：—；被引用：—
-- [Charter Gate records beneficiaries, risk bearers, silent subjects, irreversibility, and rollback duties, but it is a nor](../../../reports/architecture/121Q21R-causal-asset-audit.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-c655f792abaa399a / Charter Gate records beneficiaries, risk bearers, silent subjects, irreversibility, and rollback duties, but it is a nor
-  - 来源：`reports/architecture/121Q21R-causal-asset-audit.md`
   - 依赖：—；被引用：—

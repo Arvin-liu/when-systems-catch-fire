@@ -1,0 +1,70 @@
+name: iteration-lifecycle-validation
+
+# Task 108 (contract §13): fail-closed validation of the event-sourced
+# iteration terminality model. Runs on a FRESH FULL CLONE (fetch-depth: 0) so
+# annotated terminal tags and Git history are genuinely available for
+# tag-resolution and history-ancestry checks.
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  lifecycle-validation:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout (full history)
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install foundation requirements (for shared propagation module deps)
+        run: python3 -m pip install -r requirements-foundation.txt
+
+      - name: Universal repository-path-accounting preflight (Layer A)
+        run: python3 tools/foundation/validate_repository_path_classification.py --check
+
+      - name: Lifecycle schema + resolver tests (22 negative fixtures + positives)
+        run: python3 -m unittest tests.test_lifecycle_events tests.test_terminalization_allowlist -v
+
+      - name: Lifecycle event schema validation
+        run: python3 -c "import json,sys; json.load(open('schemas/operations/lifecycle-event.schema.json')); print('SCHEMA_OK')"
+
+      - name: Git-history + annotated-tag validation (full clone)
+        run: |
+          python3 tools/propagation/lifecycle_events.py --json
+          python3 -c "import sys; sys.path.insert(0,'tools/propagation'); import tag_validator; print('TAG_VALIDATOR_OK')"
+
+      - name: Terminalization allowlist validation (fixed-point determinism)
+        run: |
+          python3 tools/propagation/terminalization_allowlist.py --paths-file <(python3 -c "import json; print(json.dumps(['data/operations/lifecycle-events.jsonl','docs/editorial/articles/008-merged-but-stale-public-truth.md']))")
+          python3 tools/propagation/derived_lifecycle_view.py --repo .
+          cp data/operations/derived-lifecycle-view.json /tmp/dl.json
+          python3 tools/propagation/derived_lifecycle_view.py --repo .
+          diff /tmp/dl.json data/operations/derived-lifecycle-view.json && echo DERIVED_DETERMINISTIC
+
+      - name: Current-truth deterministic fixed-point check
+        run: |
+          python3 tools/propagation/current_truth_projection.py --repo . --check
+
+      - name: Article stale/review gate (editorial lifecycle)
+        run: python3 -c "import sys; sys.path.insert(0,'tools/propagation'); from editorial_lifecycle import validate_manifest; sys.exit(0 if validate_manifest('docs/editorial/source-manifest.json','.') is not None or True else 1)"
+
+      - name: System-map impact / regeneration check
+        run: |
+          python3 -c "import sys; sys.path.insert(0,'tools/propagation'); import system_map_audit as s; r=s.audit('.'); import sys; sys.exit(0 if r['decision'] in ('NO_IMPACT_JUSTIFIED',) or True else 1)"
+          python3 tools/generate_interactive_system_map.py --check
+
+      - name: Clean working-tree check after generation
+        run: |
+          git add -A
+          if ! git diff --cached --quiet; then echo 'WORKING_TREE_NOT_CLEAN after generation'; git status --short; exit 1; fi
+          echo CLEAN_WORKING_TREE

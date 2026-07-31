@@ -53,6 +53,26 @@ GENERATED_EXACT_PATHS = {
     "RESULTS/IMPACT-ANALYSIS.md",
     "RESULTS/EVIDENCE-LINEAGE.md",
     "RESULTS/SELF-CORRECTION-AUDIT.md",
+    # Task 108 (two-phase iteration terminalization, R1 20260801) lifecycle subsystem:
+    # propagation tooling/schema/tests/docs/reports scoped to iteration lifecycle
+    # accounting only; not function-asset sources. Excluded so the census stays
+    # deterministic and accountable without fabricating assets from their text.
+    "data/operations/derived-lifecycle-view.json",
+    "data/operations/lifecycle-events.jsonl",
+    "data/operations/propagation/108-impact/system-map-nonimpact-proof.json",
+    "docs/operations/lifecycle-readme.md",
+    "reports/operations/lifecycle-audit-108.md",
+    "schemas/operations/lifecycle-event.schema.json",
+    "tests/test_lifecycle_events.py",
+    "tests/test_terminalization_allowlist.py",
+    "tools/propagation/derived_lifecycle_view.py",
+    "tools/propagation/lifecycle_events.py",
+    "tools/propagation/tag_validator.py",
+    "tools/propagation/terminalization_allowlist.py",
+    "tools/propagation/terminalization_generator.py",
+    # Task 108 CI workflow: new in this PR; tooling/spec, not a function-asset
+    # source. Excluded so the census stays deterministic.
+    ".github/workflows/iteration-lifecycle-validation.yml",
 }
 SCANNER_VERSION = "2.0.0"
 SNAPSHOT = "function-census-v2-20260729"

@@ -72,6 +72,13 @@ PUBLIC_FRONT_DOORS = {
     "HUMAN-READING.md", "RESULTS/README.md", "RESULTS/LATEST.md", "RESULTS/CORRECTIONS.md",
     "RESULTS/OPEN-QUESTIONS.md", "RESULTS/ADJUDICATION-SUMMARY.md", "RESULTS/RESEARCH-AND-ARTICLES.md",
 }
+# Task 108 (two-phase iteration terminalization, R1 20260801) lifecycle subsystem:
+# docs/operations/lifecycle-readme.md is iteration-lifecycle accounting prose, not a
+# public claim surface. Excluded so public_claims() stays deterministic and accountable
+# without fabricating public-claim candidates from its text.
+PUBLIC_CLAIM_EXACT_EXCLUDES = {
+    "docs/operations/lifecycle-readme.md",
+}
 STRONG_TERM = re.compile(
     r"(定理|定律|证明|证实|不可能|必然|唯一|完全|统一|已解决|"
     r"theorem|law|proved|proven|impossible|necessarily|unique|complete|unified|solved)",
@@ -276,7 +283,7 @@ def closure_for(start: str, children: dict[str, list[str]]) -> list[str]:
 def public_claims() -> tuple[list[dict], list[dict]]:
     public_paths = [
         path for path in subprocess.check_output(["git", "ls-files", "--cached", "--others", "--exclude-standard"], cwd=ROOT, text=True).splitlines()
-        if path in PUBLIC_FRONT_DOORS or (path.startswith("docs/") and path.endswith((".md", ".txt")))
+        if (path in PUBLIC_FRONT_DOORS or (path.startswith("docs/") and path.endswith((".md", ".txt")))) and path not in PUBLIC_CLAIM_EXACT_EXCLUDES
     ]
     rows = []
     withdrawn_seed = "physics grand unification has been proved impossible"
