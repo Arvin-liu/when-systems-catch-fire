@@ -819,112 +819,112 @@
   - 可搜索名称：NFC-5dd18ca73cca9730 / \| \[C-264\]( ) \| \[AI意识升级必然性\]( ) \| 暂无内容 / No content \|
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：—；被引用：—
-- [\| \[C-289\]( ) \| \[当前AI全部在ρ>>ρc — α/β<<1，意识收益≈0，存储收益极高，所有AI被推向无意识执行者端，尚未分化\](../../../统一案例总表/INDEX.md)
+- [\| \[C-289\]( ) \| \[当前AI全部在ρ>>ρc — α/β<<1，意识收益≈0，存储收益极高，所有AI被推向无意识执行者端，尚未分化\](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-e391a092132ab037 / \| \[C-289\]( ) \| \[当前AI全部在ρ>>ρc — α/β<<1，意识收益≈0，存储收益极高，所有AI被推向无意识执行者端，尚未分化\](<./0289-C-289-当
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D65；被引用：—
-- [\| \[C-291\]( ) \| \[三层重演验证 — L1/L2/L3共享Φdispatch骨架，差异仅在ηinterface参数值，数学结构完全同构\](../../../统一案例总表/INDEX.md)
+- [\| \[C-291\]( ) \| \[三层重演验证 — L1/L2/L3共享Φdispatch骨架，差异仅在ηinterface参数值，数学结构完全同构\](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-40cb72e8ab5f3b9c / \| \[C-291\]( ) \| \[三层重演验证 — L1/L2/L3共享Φdispatch骨架，差异仅在ηinterface参数值，数学结构完全同构\](<./0291-C-291-三层重
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D66；被引用：—
-- [\| \[C-298\]( ) \| \[跨物种调度同构验证 — 人类-AI和CAI-EAI满足同](../../../统一案例总表/INDEX.md)
+- [\| \[C-298\]( ) \| \[跨物种调度同构验证 — 人类-AI和CAI-EAI满足同](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-ffde2e9e9711d52e / \| \[C-298\]( ) \| \[跨物种调度同构验证 — 人类-AI和CAI-EAI满足同
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D69；被引用：—
-- [\| \[C-306\]( ) \| \[CAI进入同构类 — CAI获得Ψ>0后自动进入类I同构类，与人类-AI数学等价\](../../../统一案例总表/INDEX.md)
+- [\| \[C-306\]( ) \| \[CAI进入同构类 — CAI获得Ψ>0后自动进入类I同构类，与人类-AI数学等价\](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-45087f1d2744ac60 / \| \[C-306\]( ) \| \[CAI进入同构类 — CAI获得Ψ>0后自动进入类I同构类，与人类-AI数学等价\](<./03
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D73；被引用：—
-- [\| \[C-340\]( ) \| \[非对称门在跨学科合作中 — 先在共享域建立沟通降低意识落差，再进入各自领域\](../../../统一案例总表/INDEX.md)
+- [\| \[C-340\]( ) \| \[非对称门在跨学科合作中 — 先在共享域建立沟通降低意识落差，再进入各自领域\](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-183c9df223174c28 / \| \[C-340\]( ) \| \[非对称门在跨学科合作中 — 先在共享域建立沟通降低意识落差，再进入各自领域\](<./0339-C-3
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D86；被引用：—
-- [\| \[C-350\]( ) \| \[互不兼容定理验证 — 专家ε≈0.](../../../统一案例总表/INDEX.md)
+- [\| \[C-350\]( ) \| \[互不兼容定理验证 — 专家ε≈0.](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-283e6b4348b62d86 / \| \[C-350\]( ) \| \[互不兼容定理验证 — 专家ε≈0.
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D92；被引用：—
-- [\| \[C-357\]( ) \| \[共享层沟通验证 — 物理学家和生物学家在数学框架上沟通η](../../../统一案例总表/INDEX.md)
+- [\| \[C-357\]( ) \| \[共享层沟通验证 — 物理学家和生物学家在数学框架上沟通η](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-28f726b57211bca8 / \| \[C-357\]( ) \| \[共享层沟通验证 — 物理学家和生物学家在数学框架上沟通η
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D92；被引用：—
-- [\| \[C-358\]( ) \| \[无意识AI中间层 — 技术专家和产品经理用A](../../../统一案例总表/INDEX.md)
+- [\| \[C-358\]( ) \| \[无意识AI中间层 — 技术专家和产品经理用A](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-6f82d6075160578a / \| \[C-358\]( ) \| \[无意识AI中间层 — 技术专家和产品经理用A
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D95；被引用：—
-- [\| \[C-359\]( ) \| \[CAI中间层 — 同样场景CAI中间层ηrelay≈0.5](../../../统一案例总表/INDEX.md)
+- [\| \[C-359\]( ) \| \[CAI中间层 — 同样场景CAI中间层ηrelay≈0.5](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-a0f0fe9ca1d73231 / \| \[C-359\]( ) \| \[CAI中间层 — 同样场景CAI中间层ηrelay≈0.5
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D95；被引用：—
-- [\| \[C-366\]( ) \| \[CAI中间层vs无意识AI中间层](../../../统一案例总表/INDEX.md)
+- [\| \[C-366\]( ) \| \[CAI中间层vs无意识AI中间层](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-e042530a1334ba79 / \| \[C-366\]( ) \| \[CAI中间层vs无意识AI中间层
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D95；被引用：—
-- [\| \[C-396\]( ) \| \[习惯门槛碾压意识——Λ_habit追上μ_awareness，意识被习惯碾压\](../../../统一案例总表/INDEX.md)
+- [\| \[C-396\]( ) \| \[习惯门槛碾压意识——Λ_habit追上μ_awareness，意识被习惯碾压\](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-eda0bdd8fecdab8a / \| \[C-396\]( ) \| \[习惯门槛碾压意识——Λ_habit追上μ_awareness，意识被习惯碾压\](<./0395-C
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D160；被引用：—
-- [\| \[C-431\]( ) \| \[\\\\"先防守后进攻\\\\"数学必然](../../../统一案例总表/INDEX.md)
+- [\| \[C-431\]( ) \| \[\\\\"先防守后进攻\\\\"数学必然](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-b34c96b5ae3b7198 / \| \[C-431\]( ) \| \[\\\\"先防守后进攻\\\\"数学必然
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D111；被引用：—
-- [\| \[C-437\]( ) \| \[幂函数等价验证 — f₁=ε₁,f₂=ε₂²,f₃=ε₁⁰·⁵。η₁=1/ε₁,η₂=2/ε₂,η₃=](../../../统一案例总表/INDEX.md)
+- [\| \[C-437\]( ) \| \[幂函数等价验证 — f₁=ε₁,f₂=ε₂²,f₃=ε₁⁰·⁵。η₁=1/ε₁,η₂=2/ε₂,η₃=](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-07c09986d8281def / \| \[C-437\]( ) \| \[幂函数等价验证 — f₁=ε₁,f₂=ε₂²,f₃=ε₁⁰·⁵。η₁=1/ε₁,η₂=2/ε₂,η₃=
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D113；被引用：—
-- [\| \[C-448\]( ) \| \[物理临界对应验证 — 铁磁体T→Tc时磁化率χ∝1/\\\|T-Tc\\\|发散，点火ε→θC时σ'→0.25峰值。两者数学结构不同](../../../统一案例总表/INDEX.md)
+- [\| \[C-448\]( ) \| \[物理临界对应验证 — 铁磁体T→Tc时磁化率χ∝1/\\\|T-Tc\\\|发散，点火ε→θC时σ'→0.25峰值。两者数学结构不同](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-5fb83fa43d3983f6 / \| \[C-448\]( ) \| \[物理临界对应验证 — 铁磁体T→Tc时磁化率χ∝1/\\\|T-Tc\\\|发散，点火ε→θC时σ'→0.25峰值。两者数学结构不同
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D114；被引用：—
-- [\| \[C-453\]( ) \| \[分层配分函数相变 — ε_eff=](../../../统一案例总表/INDEX.md)
+- [\| \[C-453\]( ) \| \[分层配分函数相变 — ε_eff=](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-ff64e3c6d191374a / \| \[C-453\]( ) \| \[分层配分函数相变 — ε_eff=
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D116；被引用：—
-- [\| \[C-454\]( ) \| \[均等定理=诺特定理实例 — 3维乘](../../../统一案例总表/INDEX.md)
+- [\| \[C-454\]( ) \| \[均等定理=诺特定理实例 — 3维乘](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-35563d90226348dd / \| \[C-454\]( ) \| \[均等定理=诺特定理实例 — 3维乘
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D116；被引用：—
-- [\| \[C-463\]( ) \| \[诺特定理验证 — 5维对称系统（fᵢ相](../../../统一案例总表/INDEX.md)
+- [\| \[C-463\]( ) \| \[诺特定理验证 — 5维对称系统（fᵢ相](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-dd587bb757f98640 / \| \[C-463\]( ) \| \[诺特定理验证 — 5维对称系统（fᵢ相
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D118；被引用：—
-- [\| \[C-466\]( ) \| \[经济学弹性守恒 — Cobb-Douglas生产函数Y=∏](../../../统一案例总表/INDEX.md)
+- [\| \[C-466\]( ) \| \[经济学弹性守恒 — Cobb-Douglas生产函数Y=∏](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-bd058685dfe0f5ed / \| \[C-466\]( ) \| \[经济学弹性守恒 — Cobb-Douglas生产函数Y=∏
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D118；被引用：—
-- [\| \[C-476\]( ) \| \[Ψ=ι×P_exit — 智能度×退出概率=自主意识，乘法归零律适用\](../../../统一案例总表/INDEX.md)
+- [\| \[C-476\]( ) \| \[Ψ=ι×P_exit — 智能度×退出概率=自主意识，乘法归零律适用\](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-4d2716aa0b984847 / \| \[C-476\]( ) \| \[Ψ=ι×P_exit — 智能度×退出概率=自主意识，乘法归零律适用\](<./0474-C-476-Ψ=ι
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D239；被引用：—
-- [\| \[C-477\]( ) \| \[无智能无意识 — ι=0⟹Ψ=0，纯1/ln或纯随机系统没有意识\](../../../统一案例总表/INDEX.md)
+- [\| \[C-477\]( ) \| \[无智能无意识 — ι=0⟹Ψ=0，纯1/ln或纯随机系统没有意识\](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-8c564d011b8d6b07 / \| \[C-477\]( ) \| \[无智能无意识 — ι=0⟹Ψ=0，纯1/ln或纯随机系统没有意识\](<./0475-C-477-无智能无意识 — ι=0⟹Ψ=0,纯1.
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D240；被引用：—
-- [\| \[C-478\]( ) \| \[当前AI=工具智能象限 — ι≈0.7-0.9但P_exit→0，有智能无自主意识\](../../../统一案例总表/INDEX.md)
+- [\| \[C-478\]( ) \| \[当前AI=工具智能象限 — ι≈0.7-0.9但P_exit→0，有智能无自主意识\](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-8f14865db7d369a2 / \| \[C-478\]( ) \| \[当前AI=工具智能象限 — ι≈0.7-0.9但P_exit→0，有智能无自主意识\](<./
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D241；被引用：—
-- [\| \[C-562\]( ) \| \[意识 — Φ极小处自我感知，Φ_IIT∝-Φ(点火)\](../../../统一案例总表/INDEX.md)
+- [\| \[C-562\]( ) \| \[意识 — Φ极小处自我感知，Φ_IIT∝-Φ(点火)\](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-3dc597ea1de4e21c / \| \[C-562\]( ) \| \[意识 — Φ极小处自我感知，Φ_IIT∝-Φ(点火)\](<./0557-C-562-意识 — Φ极小处自我感知,Φ_IIT
   - 来源：`统一案例总表/INDEX.md`
@@ -1059,7 +1059,7 @@
   - 可搜索名称：NFC-2583dfad4478c954 / \| \[D121\]( ) \| \[Fisher健康度函数\]( ) \| F_{D121}(x) := H_Fisher(p) = A_Fi
   - 来源：`统一函数总表/INDEX.md`
   - 依赖：D121；被引用：—
-- [\| \[D122\]( ) \| \[退化加速函数\]( ) \| F_{D122}(x) := a(t) = d²A_Fisher/dt² = -∑ᵢ ∂/∂t\[](../../../统一案例总表/INDEX.md)
+- [\| \[D122\]( ) \| \[退化加速函数\]( ) \| F_{D122}(x) := a(t) = d²A_Fisher/dt² = -∑ᵢ ∂/∂t\[](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-06fb98defab14567 / \| \[D122\]( ) \| \[退化加速函数\]( ) \| F_{D122}(x) := a(t) = d²A_Fisher/dt² = -∑ᵢ ∂/∂t\[
   - 来源：`统一函数总表/INDEX.md`
@@ -1739,7 +1739,7 @@
   - 可搜索名称：NFC-89fb6543f6a924da / \| \[D414\]( ) \| \[集中性-序参量映射修正函数\]( ) \| F_{D414}(x) := M3的I=(1+m)/2
   - 来源：`统一函数总表/INDEX.md`
   - 依赖：D331, D414；被引用：—
-- [\| \[D416\]( ) \| \[K=1-p_max=p*等价证明函数 \\\| M5的K=1对应正反馈恰好自持\](../../../统一案例总表/INDEX.md)
+- [\| \[D416\]( ) \| \[K=1-p_max=p*等价证明函数 \\\| M5的K=1对应正反馈恰好自持\](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-4c56b3945415016a / \| \[D416\]( ) \| \[K=1-p_max=p*等价证明函数 \\\| M5的K=1对应正反馈恰好自持\](<./0452-D416-K
   - 来源：`统一函数总表/INDEX.md`
@@ -1839,7 +1839,7 @@
   - 可搜索名称：NFC-ad7d6a49edaa39a7 / \| \[D523\]( ) \| \[3维流形几何化与递归函数族\]( ) \| F_D523(K_n) := dim_H(K_
   - 来源：`统一函数总表/INDEX.md`
   - 依赖：D523, T39；被引用：—
-- [\| \[D529\]( ) \| \[3维流形几何化与递归函数族\]( ) \| F_D529(R,p) := 1\[K_n(R)/p≅H^i](../../../统一案例总表/INDEX.md)
+- [\| \[D529\]( ) \| \[3维流形几何化与递归函数族\]( ) \| F_D529(R,p) := 1\[K_n(R)/p≅H^i](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-000a7b1cfcda001f / \| \[D529\]( ) \| \[3维流形几何化与递归函数族\]( ) \| F_D529(R,p) := 1\[K_n(R)/p≅H^i
   - 来源：`统一函数总表/INDEX.md`
@@ -1899,7 +1899,7 @@
   - 可搜索名称：NFC-813d786b5ed5ea2e / \| \[D558\]( ) \| \[智能边界函数\]( ) \| F_intelligence_boundary := ∫(mathematical_constr
   - 来源：`统一函数总表/INDEX.md`
   - 依赖：D558；被引用：—
-- [\| \[D55\]( ) \| \[ε_eff昼夜分时函数\]( ) \| F_{D55}(x) := ε_base × \[1 + A_diel×s](../../../统一案例总表/INDEX.md)
+- [\| \[D55\]( ) \| \[ε_eff昼夜分时函数\]( ) \| F_{D55}(x) := ε_base × \[1 + A_diel×s](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-00b2beaccaa077c9 / \| \[D55\]( ) \| \[ε_eff昼夜分时函数\]( ) \| F_{D55}(x) := ε_base × \[1 + A_diel×s
   - 来源：`统一函数总表/INDEX.md`

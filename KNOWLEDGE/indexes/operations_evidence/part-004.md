@@ -2184,32 +2184,32 @@
   - 可搜索名称：NFC-ebedf05f8ba3c9ac / \| \[C-278\]( ) \| \[D124与D126时间尺度同构\]( ) \| 暂无内容 / No content
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D124, D126；被引用：—
-- [\| \[C-301\]( ) \| \[Bsemantic最优值 — εa](../../../统一案例总表/INDEX.md)
+- [\| \[C-301\]( ) \| \[Bsemantic最优值 — εa](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-f1f8bd4a53e8bd88 / \| \[C-301\]( ) \| \[Bsemantic最优值 — εa
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D62, D71；被引用：—
-- [\| \[C-322\]( ) \| \[D137与D141的粒度对应 — D137说\\\\"阶段2是最大瓶](../../../统一案例总表/INDEX.md)
+- [\| \[C-322\]( ) \| \[D137与D141的粒度对应 — D137说\\\\"阶段2是最大瓶](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-fb830556147a4aeb / \| \[C-322\]( ) \| \[D137与D141的粒度对应 — D137说\\\\"阶段2是最大瓶
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D137, D141, D79；被引用：—
-- [\| \[C-404\]( ) \| \[改革窗口与革命同构——A型崩溃与B型松弛的共振窗口\](../../../统一案例总表/INDEX.md)
+- [\| \[C-404\]( ) \| \[改革窗口与革命同构——A型崩溃与B型松弛的共振窗口\](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-b5590a6291223b81 / \| \[C-404\]( ) \| \[改革窗口与革命同构——A型崩溃与B型松弛的共振窗口\](<./0403-C-404-改革窗口与革命同构——A型崩溃与B型松弛的
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D164；被引用：—
-- [\| \[C-429\]( ) \| \[教育公平的阶层投影——自然门槛碾压+人为门槛碾压在教育维度的叠加\](../../../统一案例总表/INDEX.md)
+- [\| \[C-429\]( ) \| \[教育公平的阶层投影——自然门槛碾压+人为门槛碾压在教育维度的叠加\](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-bd9b8b41c6754f84 / \| \[C-429\]( ) \| \[教育公平的阶层投影——自然门槛碾压+人为门槛碾压在教育维度的叠加\](<./0428-C-429-教育公平的阶层
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D159, D162；被引用：—
-- [\| \[C-532\]( ) \| \[信息熵vs热力学熵 — S_thermo=Φ在粗粒化下的投影\](../../../统一案例总表/INDEX.md)
+- [\| \[C-532\]( ) \| \[信息熵vs热力学熵 — S_thermo=Φ在粗粒化下的投影\](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-8cd5609973e3ab4d / \| \[C-532\]( ) \| \[信息熵vs热力学熵 — S_thermo=Φ在粗粒化下的投影\](<./0527-C-532-信息熵vs热力学熵 —
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D158；被引用：—
-- [\| \[C-553\]( ) \| \[CMB各向异性方向 — Φ预言~10⁻⁸，比观测10⁻⁵小3量级\](../../../统一案例总表/INDEX.md)
+- [\| \[C-553\]( ) \| \[CMB各向异性方向 — Φ预言~10⁻⁸，比观测10⁻⁵小3量级\](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-ab03024159309b1c / \| \[C-553\]( ) \| \[CMB各向异性方向 — Φ预言~10⁻⁸，比观测10⁻⁵小3量级\](<./0548-C-553-CMB各向异性
   - 来源：`统一案例总表/INDEX.md`
@@ -2264,7 +2264,7 @@
   - 可搜索名称：IMPLICIT-CC19D41E7C100B27 / \| \[C-651\]( ) \| \[退出权空间案例31\]( ) \| Ω=1（所有选项相同）→σ=0→P_exit=0。所有选项无差异时方差为零退出权归零。 \| / IMPLICIT-CC19D41E7C100B27
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：—；被引用：—
-- [\| \[C-656\]( ) \| \[Science Earth × 点火框架碰撞验证\](../../../统一案例总表/INDEX.md)
+- [\| \[C-656\]( ) \| \[Science Earth × 点火框架碰撞验证\](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-e005f24972a5e6ff / \| \[C-656\]( ) \| \[Science Earth × 点火框架碰撞验证\](<./0651-C-656-Science Earth × 点火框架碰撞验
   - 来源：`统一案例总表/INDEX.md`

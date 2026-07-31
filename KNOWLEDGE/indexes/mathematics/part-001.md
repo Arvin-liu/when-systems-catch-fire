@@ -1574,7 +1574,7 @@
   - 可搜索名称：IMPLICIT-AF7FDFA925CD05A8 / # 新增函数候选 · 赛课机制下的教师生存困境 / IMPLICIT-AF7FDFA925CD05A8
   - 来源：`outputs/collisions/20260708-teacher-competition/new-functions.md`
   - 依赖：—；被引用：—
-- [# 统一函数索引表（2026年07月09日00时30分，函数总数 617，收敛 6 条）](../../../统一案例总表/INDEX.md)
+- [# 统一函数索引表（2026年07月09日00时30分，函数总数 617，收敛 6 条）](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-7282DE1962865265 / # 统一函数索引表（2026年07月09日00时30分，函数总数 617，收敛 6 条） / IMPLICIT-7282DE1962865265
   - 来源：`统一函数总表/INDEX.md`

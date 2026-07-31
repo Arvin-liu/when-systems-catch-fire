@@ -327,7 +327,7 @@
 <a id="asset-hr-ad59534793e1d1d7"></a>
 ## 新故事索引表（2026年07月06日03时06分，故事总数 1）
 
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-AD59534793E1D1D7` · [新故事/INDEX.md](../../统一案例总表/INDEX.md)
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-AD59534793E1D1D7` · [新故事/INDEX.md](../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
 - **为什么产生：** 此来源记录了什么：新故事索引表（2026年07月06日03时06分，故事总数 1）？
 - **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
 - **当前结果：** 原文件保存该项结果的完整问题、过程与边界。

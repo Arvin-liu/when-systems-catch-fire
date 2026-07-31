@@ -854,9 +854,9 @@
   - 可搜索名称：NFC-7fa4a68f38405d0a / 普通摘要会把“凝聚力 + 局部集中 + 滚雪球”压成答案。本报告新增：S0—S4 防止同源双计；L0—L6 防止叙事越权；14 个受控命题及各自 ceiling；前提、隐含前提、替代解释和 `NOT_ASSESSED`；逐箭头的跨尺度机制与
   - 来源：`reports/publication/jin-rise-point-fire-analysis.md`
   - 依赖：—；被引用：—
-- [普通读者和 AI 不必猜文件路径：先从\[统一知识入口\](../../../README.md)选择最新变化、主题地图、搜索或分层阅读。搜索索引覆盖完整函数/断言 registry，但机器命中、自动摘要和主题标签都只是导航；必须继续核](../../../docs/ai-assistant-usage-reference.md)
+- [普通读者和 AI 不必猜文件路径：先从\[统一知识入口\](../../../.pytest_cache/README.md)选择最新变化、主题地图、搜索或分层阅读。搜索索引覆盖完整函数/断言 registry，但机器命中、自动摘要和主题标签都只是导航；必须继续核](../../../docs/ai-assistant-usage-reference.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-afc54bb019912eed / 普通读者和 AI 不必猜文件路径：先从\[统一知识入口\](../../../README.md)选择最新变化、主题地图、搜索或分层阅读。搜索索引覆盖完整函数/断言 registry，但机器命中、自动摘要和主题标签都只是导航；必须继续核
+  - 可搜索名称：NFC-afc54bb019912eed / 普通读者和 AI 不必猜文件路径：先从\[统一知识入口\](../../../.pytest_cache/README.md)选择最新变化、主题地图、搜索或分层阅读。搜索索引覆盖完整函数/断言 registry，但机器命中、自动摘要和主题标签都只是导航；必须继续核
   - 来源：`docs/ai-assistant-usage-reference.md`
   - 依赖：—；被引用：—
 - [智慧干预效力函数](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0109-D60-%E6%99%BA%E6%85%A7%E5%B9%B2%E9%A2%84%E6%95%88%E5%8A%9B%E5%87%BD%E6%95%B0.md)

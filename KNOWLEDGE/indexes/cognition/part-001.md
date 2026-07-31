@@ -1239,7 +1239,7 @@
   - 可搜索名称：NFC-21111537a0e408c4 / \| \[C-0782\]( ) \| \[马伯庸建议蹲下来看最下面一排书\]( ) \| 该案例对应 D583《认知肌肉
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D583；被引用：—
-- [\| \[C-175\]( ) \| \[电力级联失效×认知平方衰减×AI共震——跨域同构\](../../../统一案例总表/INDEX.md)
+- [\| \[C-175\]( ) \| \[电力级联失效×认知平方衰减×AI共震——跨域同构\](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-aa795b84897a37e2 / \| \[C-175\]( ) \| \[电力级联失效×认知平方衰减×AI共震——跨域同构\](<./0175-C-175-电力级联失效×认知平方衰减×AI共震——跨域同
   - 来源：`统一案例总表/INDEX.md`
@@ -1274,42 +1274,42 @@
   - 可搜索名称：NFC-515e5932c78e8389 / \| \[C-231\]( ) \| \[四卡点统一根源\]( ) \| 四卡点统一根源——同一个认知结构的四个投影 \|
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：—；被引用：—
-- [\| \[C-445\]( ) \| \[三阶段操作协议验证 — 个人职业转](../../../统一案例总表/INDEX.md)
+- [\| \[C-445\]( ) \| \[三阶段操作协议验证 — 个人职业转](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-5e90e40d50dfff5d / \| \[C-445\]( ) \| \[三阶段操作协议验证 — 个人职业转
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D114；被引用：—
-- [\| \[C-481\]( ) \| \[认知叠加验证 — 专家vs通才：专](../../../统一案例总表/INDEX.md)
+- [\| \[C-481\]( ) \| \[认知叠加验证 — 专家vs通才：专](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-4394a59fb2fdae3c / \| \[C-481\]( ) \| \[认知叠加验证 — 专家vs通才：专
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D125；被引用：—
-- [\| \[C-486\]( ) \| \[路径积分验证 — 创业决策：ℏ_e](../../../统一案例总表/INDEX.md)
+- [\| \[C-486\]( ) \| \[路径积分验证 — 创业决策：ℏ_e](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-af5bfc2b7bd7c6cc / \| \[C-486\]( ) \| \[路径积分验证 — 创业决策：ℏ_e
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D118, D127；被引用：—
-- [\| \[C-502\]( ) \| \[认知时间膨胀验证 — 危机决策实验](../../../统一案例总表/INDEX.md)
+- [\| \[C-502\]( ) \| \[认知时间膨胀验证 — 危机决策实验](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-4366047ac3481912 / \| \[C-502\]( ) \| \[认知时间膨胀验证 — 危机决策实验
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D134；被引用：—
-- [\| \[C-503\]( ) \| \[认知等效原理验证 — 组织诊断：观](../../../统一案例总表/INDEX.md)
+- [\| \[C-503\]( ) \| \[认知等效原理验证 — 组织诊断：观](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-ffa76bdc634f20ba / \| \[C-503\]( ) \| \[认知等效原理验证 — 组织诊断：观
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D135；被引用：—
-- [\| \[C-504\]( ) \| \[认知空间曲率验证 — 社会比较：均](../../../统一案例总表/INDEX.md)
+- [\| \[C-504\]( ) \| \[认知空间曲率验证 — 社会比较：均](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-93aea52f4347e1b5 / \| \[C-504\]( ) \| \[认知空间曲率验证 — 社会比较：均
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D136；被引用：—
-- [\| \[C-505\]( ) \| \[认知光锥验证 — 职业锁定：3维锁](../../../统一案例总表/INDEX.md)
+- [\| \[C-505\]( ) \| \[认知光锥验证 — 职业锁定：3维锁](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-23bc8c4b5de2f606 / \| \[C-505\]( ) \| \[认知光锥验证 — 职业锁定：3维锁
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D137；被引用：—
-- [\| \[C-506\]( ) \| \[认知黑洞验证 — 家暴受害者：4维锁定（经济/社交/心理/地理）→∏(1-σ)≈0.001→z_cog≈999→信号红移99.9%](../../../统一案例总表/INDEX.md)
+- [\| \[C-506\]( ) \| \[认知黑洞验证 — 家暴受害者：4维锁定（经济/社交/心理/地理）→∏(1-σ)≈0.001→z_cog≈999→信号红移99.9%](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-2de902047907b052 / \| \[C-506\]( ) \| \[认知黑洞验证 — 家暴受害者：4维锁定（经济/社交/心理/地理）→∏(1-σ)≈0.001→z_cog≈999→信号红移99.9%
   - 来源：`统一案例总表/INDEX.md`

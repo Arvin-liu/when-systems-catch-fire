@@ -2367,7 +2367,7 @@
 - **类型：** `ITERATION_OR_REPOSITORY_RESULT`
 - **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
 - **变化：** 原文件保存该项结果的完整问题、过程与边界。
-- **来源：** [INDEX.md](../统一案例总表/INDEX.md)
+- **来源：** [INDEX.md](../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
 - **资产卡：** [HR-AD59534793E1D1D7](./ASSET-CARDS.md#asset-hr-ad59534793e1d1d7)
 
 <a id="change-src-hr-a8550987d2a41dab"></a>

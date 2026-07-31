@@ -1219,9 +1219,9 @@
   - 可搜索名称：新故事索引表（2026年07月06日03时06分，故事总数 1） / INDEX
   - 来源：`新故事/INDEX.md`
   - 依赖：—；被引用：—
-- [无需预知路径的 canonical 入口已经迁移到\[点火知识入口\](../../../README.md)。本页保留十分钟阅读路线；它与机器注册表并行，但不要求读者先理解 JSON、JSONL、schema 或 CI。任何机器记录都必](../../../HUMAN-READING.md)
+- [无需预知路径的 canonical 入口已经迁移到\[点火知识入口\](../../../.pytest_cache/README.md)。本页保留十分钟阅读路线；它与机器注册表并行，但不要求读者先理解 JSON、JSONL、schema 或 CI。任何机器记录都必](../../../HUMAN-READING.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-1884493a96704d23 / 无需预知路径的 canonical 入口已经迁移到\[点火知识入口\](../../../README.md)。本页保留十分钟阅读路线；它与机器注册表并行，但不要求读者先理解 JSON、JSONL、schema 或 CI。任何机器记录都必
+  - 可搜索名称：NFC-1884493a96704d23 / 无需预知路径的 canonical 入口已经迁移到\[点火知识入口\](../../../.pytest_cache/README.md)。本页保留十分钟阅读路线；它与机器注册表并行，但不要求读者先理解 JSON、JSONL、schema 或 CI。任何机器记录都必
   - 来源：`HUMAN-READING.md`
   - 依赖：—；被引用：—
 - [旧条目每周维护时逐步补齐**：在碰撞/维护触及时，顺手补齐"边界条件/适用条件/反例/对应案例/版本记录"等缺失字段，不主动大面积重排。](../../../outputs/audit/two-tables-entry-format-audit-20260709.md)

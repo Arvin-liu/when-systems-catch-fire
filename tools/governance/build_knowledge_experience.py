@@ -817,10 +817,17 @@ _relink_already_ok = lambda tgt, bd, R: (
     if _relink_path_safe(tgt) else False
 )
 
-_relink_basename_candidate = lambda tgt, R: next(
-    (p.relative_to(R).as_posix() for p in R.rglob(tgt.rstrip("/").split("/")[-1]) if p.is_file()),
-    None,
-)
+_relink_basename_candidate = lambda tgt, R: (
+    # Sort candidates so the chosen relink target is deterministic across
+    # filesystems (rglob order is OS-dependent: macOS vs Linux). Picking the
+    # first match produced macOS/Linux divergence in CI (KNOWLEDGE_EXPERIENCE_OUTPUT_DRIFT).
+    sorted(
+        p.relative_to(R).as_posix()
+        for p in R.rglob(tgt.rstrip("/").split("/")[-1])
+        if p.is_file()
+    )
+    or [None]
+)[0]
 
 relink_in_file = lambda content, product_path: _RELINK_RE.sub(
     lambda m, bd=product_path.parent, R=ROOT: (

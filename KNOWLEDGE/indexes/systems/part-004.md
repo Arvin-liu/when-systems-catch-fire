@@ -254,107 +254,107 @@
   - 可搜索名称：NFC-eff7bbec25b2da11 / \| \[C-284\]( ) \| \[最弱因子决定生存域\]( ) \| 暂无内容 / No content \|
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：—；被引用：—
-- [\| \[C-315\]( ) \| \[异地恋断裂 — μ翻转导致dcritical从2000km缩到50km，不是](../../../统一案例总表/INDEX.md)
+- [\| \[C-315\]( ) \| \[异地恋断裂 — μ翻转导致dcritical从2000km缩到50km，不是](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-ac875e0653a09a26 / \| \[C-315\]( ) \| \[异地恋断裂 — μ翻转导致dcritical从2000km缩到50km，不是
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D77, D78；被引用：—
-- [\| \[C-353\]( ) \| \[协作中\\\\"说清楚\\\\"优于\\\\"](../../../统一案例总表/INDEX.md)
+- [\| \[C-353\]( ) \| \[协作中\\\\"说清楚\\\\"优于\\\\"](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-825ca92f69ffb98a / \| \[C-353\]( ) \| \[协作中\\\\"说清楚\\\\"优于\\\\"
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D92；被引用：—
-- [\| \[C-385\]( ) \| \[癌症的Φ极小点极深——癌细胞Λ极低导致Φ极小点比正常细胞更深，更稳定\](../../../统一案例总表/INDEX.md)
+- [\| \[C-385\]( ) \| \[癌症的Φ极小点极深——癌细胞Λ极低导致Φ极小点比正常细胞更深，更稳定\](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-ec9c00fa6700b643 / \| \[C-385\]( ) \| \[癌症的Φ极小点极深——癌细胞Λ极低导致Φ极小点比正常细胞更深，更稳定\](<./0384-C-385-癌症的
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D164；被引用：—
-- [\| \[C-414\]( ) \| \[器官排斥的门槛翻转——异质组织降低Λ_immune导致自身免疫\](../../../统一案例总表/INDEX.md)
+- [\| \[C-414\]( ) \| \[器官排斥的门槛翻转——异质组织降低Λ_immune导致自身免疫\](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-6ccae284d9ff6c50 / \| \[C-414\]( ) \| \[器官排斥的门槛翻转——异质组织降低Λ_immune导致自身免疫\](<./0413-C-414-器官排斥的门槛翻转
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D160；被引用：—
-- [\| \[C-422\]( ) \| \[城中村改造的门槛碾压逆效应——改造抬高Λ导致原居民被碾压\](../../../统一案例总表/INDEX.md)
+- [\| \[C-422\]( ) \| \[城中村改造的门槛碾压逆效应——改造抬高Λ导致原居民被碾压\](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-87b37c9a0cbe0281 / \| \[C-422\]( ) \| \[城中村改造的门槛碾压逆效应——改造抬高Λ导致原居民被碾压\](<./0421-C-422-城中村改造的门槛碾压逆效应——
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D162；被引用：—
-- [\| \[C-450\]( ) \| \[S轨迹确定性预测 — 3维系统θC=](../../../统一案例总表/INDEX.md)
+- [\| \[C-450\]( ) \| \[S轨迹确定性预测 — 3维系统θC=](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-0ea202d1c7ca1d7b / \| \[C-450\]( ) \| \[S轨迹确定性预测 — 3维系统θC=
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D115；被引用：—
-- [\| \[C-457\]( ) \| \[乘法系统Shannon熵反常 — 3维乘法系统](../../../统一案例总表/INDEX.md)
+- [\| \[C-457\]( ) \| \[乘法系统Shannon熵反常 — 3维乘法系统](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-e7aad552402a815d / \| \[C-457\]( ) \| \[乘法系统Shannon熵反常 — 3维乘法系统
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D117；被引用：—
-- [\| \[C-459\]( ) \| \[加法退化验证 — 同一系统改为加法G=∑fᵢ，Fisher距离有限，A_](../../../统一案例总表/INDEX.md)
+- [\| \[C-459\]( ) \| \[加法退化验证 — 同一系统改为加法G=∑fᵢ，Fisher距离有限，A_](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-f5eaf018932f2ea5 / \| \[C-459\]( ) \| \[加法退化验证 — 同一系统改为加法G=∑fᵢ，Fisher距离有限，A_
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D117；被引用：—
-- [\| \[C-462\]( ) \| \[变分唯一性验证 — 3维sigmoid乘法](../../../统一案例总表/INDEX.md)
+- [\| \[C-462\]( ) \| \[变分唯一性验证 — 3维sigmoid乘法](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-fc56bc397e19d33f / \| \[C-462\]( ) \| \[变分唯一性验证 — 3维sigmoid乘法
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D111, D118；被引用：—
-- [\| \[C-465\]( ) \| \[恢复力验证 — 从D111偏离10%投入，S_ignition增](../../../统一案例总表/INDEX.md)
+- [\| \[C-465\]( ) \| \[恢复力验证 — 从D111偏离10%投入，S_ignition增](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-fc21a91661755964 / \| \[C-465\]( ) \| \[恢复力验证 — 从D111偏离10%投入，S_ignition增
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D111, D118；被引用：—
-- [\| \[C-484\]( ) \| \[乘法纠缠验证 — 8维乘法系统S_](../../../统一案例总表/INDEX.md)
+- [\| \[C-484\]( ) \| \[乘法纠缠验证 — 8维乘法系统S_](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-de44e09aab3c0911 / \| \[C-484\]( ) \| \[乘法纠缠验证 — 8维乘法系统S_
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D120, D126；被引用：—
-- [\| \[C-488\]( ) \| \[退相干-退化统一验证 — 8维乘法系统：纯Fisher退化（H=0）时Γ=0.3/年，纯退相干](../../../统一案例总表/INDEX.md)
+- [\| \[C-488\]( ) \| \[退相干-退化统一验证 — 8维乘法系统：纯Fisher退化（H=0）时Γ=0.3/年，纯退相干](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-54756b66e1aa6297 / \| \[C-488\]( ) \| \[退相干-退化统一验证 — 8维乘法系统：纯Fisher退化（H=0）时Γ=0.3/年，纯退相干
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D128；被引用：—
-- [\| \[C-491\]( ) \| \[加法系统无退相干 — 同维度加法系统：d_F有上界3.2，Γ_unified上界=3.](../../../统一案例总表/INDEX.md)
+- [\| \[C-491\]( ) \| \[加法系统无退相干 — 同维度加法系统：d_F有上界3.2，Γ_unified上界=3.](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-cb97b9c392229cec / \| \[C-491\]( ) \| \[加法系统无退相干 — 同维度加法系统：d_F有上界3.2，Γ_unified上界=3.
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D128；被引用：—
-- [\| \[C-507\]( ) \| \[测地线偏离验证 — 组织退化传染：](../../../统一案例总表/INDEX.md)
+- [\| \[C-507\]( ) \| \[测地线偏离验证 — 组织退化传染：](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-0340c2134615b13b / \| \[C-507\]( ) \| \[测地线偏离验证 — 组织退化传染：
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D136；被引用：—
-- [\| \[C-508\]( ) \| \[β-曲率关系验证 — 5维系统：ε=(0.8,0.6,0.4,0.2,0.1)→](../../../统一案例总表/INDEX.md)
+- [\| \[C-508\]( ) \| \[β-曲率关系验证 — 5维系统：ε=(0.8,0.6,0.4,0.2,0.1)→](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-8bd1b5e675aa7d30 / \| \[C-508\]( ) \| \[β-曲率关系验证 — 5维系统：ε=(0.8,0.6,0.4,0.2,0.1)→
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D139；被引用：—
-- [\| \[C-509\]( ) \| \[测地线=最优策略验证 — 3维si](../../../统一案例总表/INDEX.md)
+- [\| \[C-509\]( ) \| \[测地线=最优策略验证 — 3维si](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-a2cb220471c39e55 / \| \[C-509\]( ) \| \[测地线=最优策略验证 — 3维si
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D111, D139；被引用：—
-- [\| \[C-512\]( ) \| \[最弱维度=曲率奇点验证 — 8维系统中第7维ε₇=0.05（最弱）：该方向](../../../统一案例总表/INDEX.md)
+- [\| \[C-512\]( ) \| \[最弱维度=曲率奇点验证 — 8维系统中第7维ε₇=0.05（最弱）：该方向](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-9761635d7806e05c / \| \[C-512\]( ) \| \[最弱维度=曲率奇点验证 — 8维系统中第7维ε₇=0.05（最弱）：该方向
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D111, D139, D87；被引用：—
-- [\| \[C-513\]( ) \| \[测地线唯一性验证 — 3维系统10](../../../统一案例总表/INDEX.md)
+- [\| \[C-513\]( ) \| \[测地线唯一性验证 — 3维系统10](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-06c45a1d8caff77d / \| \[C-513\]( ) \| \[测地线唯一性验证 — 3维系统10
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D111, D140；被引用：—
-- [\| \[C-514\]( ) \| \[最弱维度=曲率奇点统一验证 — 8](../../../统一案例总表/INDEX.md)
+- [\| \[C-514\]( ) \| \[最弱维度=曲率奇点统一验证 — 8](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-a34dc87854376098 / \| \[C-514\]( ) \| \[最弱维度=曲率奇点统一验证 — 8
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D141；被引用：—
-- [\| \[C-521\]( ) \| \[Yukawa层级验证 — 8维系统](../../../统一案例总表/INDEX.md)
+- [\| \[C-521\]( ) \| \[Yukawa层级验证 — 8维系统](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-35bdae6c3f841720 / \| \[C-521\]( ) \| \[Yukawa层级验证 — 8维系统
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D148；被引用：—
-- [\| \[C-542\]( ) \| \[高温超导 — 多门控面共振，Tc远高于单机制预言\](../../../统一案例总表/INDEX.md)
+- [\| \[C-542\]( ) \| \[高温超导 — 多门控面共振，Tc远高于单机制预言\](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-4bb759a50a08a40a / \| \[C-542\]( ) \| \[高温超导 — 多门控面共振，Tc远高于单机制预言\](<./0537-C-542-高温超导 — 多门控面共振,Tc远高于单机制预
   - 来源：`统一案例总表/INDEX.md`

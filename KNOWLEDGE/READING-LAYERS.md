@@ -4475,7 +4475,7 @@ P4 裁决要点：绝大多数 P4 声明未同时提供两个明确结构、双�
 
 ### 完整阅读
 
-[新故事/INDEX.md](../统一案例总表/INDEX.md)
+[新故事/INDEX.md](../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
 
 <a id="reading-hr-addcb11c670ad242"></a>
 ## 全语料非函数型断言裁决索引

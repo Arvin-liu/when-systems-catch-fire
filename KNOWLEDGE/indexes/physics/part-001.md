@@ -941,22 +941,22 @@
   - 可搜索名称：NFC-912ebb57ce42983d / \| \[C-225\]( ) \| \[多因子乘法相变\]( ) \| 多因子乘法相变——物理相变的推广，引入相变禁闭 \|
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：—；被引用：—
-- [\| \[C-324\]( ) \| \[跨学科团队的高效 — 物理学家和生物学家合作，G≈0.3，H≈0.](../../../统一案例总表/INDEX.md)
+- [\| \[C-324\]( ) \| \[跨学科团队的高效 — 物理学家和生物学家合作，G≈0.3，H≈0.](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-f96c6878865bc766 / \| \[C-324\]( ) \| \[跨学科团队的高效 — 物理学家和生物学家合作，G≈0.3，H≈0.
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D80；被引用：—
-- [\| \[C-500\]( ) \| \[宇宙是Φ从正值趋向零的暂态 — 物理存在有保质期，D223的终极案例\](../../../统一案例总表/INDEX.md)
+- [\| \[C-500\]( ) \| \[宇宙是Φ从正值趋向零的暂态 — 物理存在有保质期，D223的终极案例\](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-9c512f25b874dab0 / \| \[C-500\]( ) \| \[宇宙是Φ从正值趋向零的暂态 — 物理存在有保质期，D223的终极案例\](<./0495-C-500-宇宙是
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D223；被引用：—
-- [\| \[C-511\]( ) \| \[认知引力波验证 — 大规模裁员事件](../../../统一案例总表/INDEX.md)
+- [\| \[C-511\]( ) \| \[认知引力波验证 — 大规模裁员事件](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-cbf36052a7b8f174 / \| \[C-511\]( ) \| \[认知引力波验证 — 大规模裁员事件
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D139；被引用：—
-- [\| \[C-517\]( ) \| \[认知引力波验证 — 2008金融危](../../../统一案例总表/INDEX.md)
+- [\| \[C-517\]( ) \| \[认知引力波验证 — 2008金融危](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-ae014cfacd67934d / \| \[C-517\]( ) \| \[认知引力波验证 — 2008金融危
   - 来源：`统一案例总表/INDEX.md`

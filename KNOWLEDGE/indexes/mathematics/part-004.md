@@ -924,9 +924,9 @@
   - 可搜索名称：NFC-af9fda048635c78c / \[知识地图\](../../MAP.md)：按数学、物理、系统、认知、治理、写作和证据问题探索。
   - 来源：`tools/governance/build_knowledge_experience.py`
   - 依赖：—；被引用：—
-- [\[统一函数总表历史入口\](../../../统一案例总表/INDEX.md) 与 \[统一案例总表历史入口\](../../../统一案例总表/INDEX.md)：只用于历史追溯，不是现行裁决权威。](../../../README.md)
+- [\[统一函数总表历史入口\](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md) 与 \[统一案例总表历史入口\](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)：只用于历史追溯，不是现行裁决权威。](../../../README.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-39545eedb71a2283 / \[统一函数总表历史入口\](../../../统一案例总表/INDEX.md) 与 \[统一案例总表历史入口\](../../../统一案例总表/INDEX.md)：只用于历史追溯，不是现行裁决权威。
+  - 可搜索名称：NFC-39545eedb71a2283 / \[统一函数总表历史入口\](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md) 与 \[统一案例总表历史入口\](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)：只用于历史追溯，不是现行裁决权威。
   - 来源：`README.md`
   - 依赖：—；被引用：—
 - [\[统一案例总表索引\]()](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0008-A7-%E9%80%80%E5%87%BA%E6%9D%83%E4%BF%A1%E5%8F%B7.md)
@@ -934,9 +934,9 @@
   - 可搜索名称：NFC-9c5468c6f6f37cfa / \[统一案例总表索引\]()
   - 来源：`统一函数总表/0008-A7-退出权信号.md`
   - 依赖：—；被引用：—
-- [\[非函数断言 closure summary\](../../../data/foundation/nonfunction-claims/closure-summary.json)：定理、规律、机制、因果、不可能性、跨域对应、预测、经验与解释性断言的当前计](../../../README.md)
+- [\[非函数断言 closure summary\](../../../data/foundation/function-assets/closure-summary.json)：定理、规律、机制、因果、不可能性、跨域对应、预测、经验与解释性断言的当前计](../../../README.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-842e74ac13c6dadd / \[非函数断言 closure summary\](../../../data/foundation/nonfunction-claims/closure-summary.json)：定理、规律、机制、因果、不可能性、跨域对应、预测、经验与解释性断言的当前计
+  - 可搜索名称：NFC-842e74ac13c6dadd / \[非函数断言 closure summary\](../../../data/foundation/function-assets/closure-summary.json)：定理、规律、机制、因果、不可能性、跨域对应、预测、经验与解释性断言的当前计
   - 来源：`README.md`
   - 依赖：—；被引用：—
 - [\[非函数断言与证据谱系闭合\](../../../reports/foundation-architecture/100-nonfunction-claim-evidence-lineage-closure.md)](../../../README.md)

@@ -279,9 +279,9 @@
   - 可搜索名称：NFC-a19e01be5f6ca897 / \[查看可追溯的之元写作法成果\](../../../docs/publication/zhiyuan-writing-showcase.md)。成果索引是方法应用与来源链入口，不是文学质量验证器。
   - 来源：`docs/publication/zhiyuan-writing-method.md`
   - 依赖：—；被引用：—
-- [\[查看带来源和边界的当前结果\](../../../RESULTS/LATEST.md) · \[证据程序与首个可证伪验证试点\](../../../README.md)](../../../README.md)
+- [\[查看带来源和边界的当前结果\](../../../RESULTS/LATEST.md) · \[证据程序与首个可证伪验证试点\](../../../.pytest_cache/README.md)](../../../README.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-013364a9f5fe0b48 / \[查看带来源和边界的当前结果\](../../../RESULTS/LATEST.md) · \[证据程序与首个可证伪验证试点\](../../../README.md)
+  - 可搜索名称：NFC-013364a9f5fe0b48 / \[查看带来源和边界的当前结果\](../../../RESULTS/LATEST.md) · \[证据程序与首个可证伪验证试点\](../../../.pytest_cache/README.md)
   - 来源：`README.md`
   - 依赖：—；被引用：—
 - [\[查看开放问题、所需证据与停止条件\](../../../RESULTS/OPEN-QUESTIONS.md)](../../../README.md)
@@ -299,14 +299,14 @@
   - 可搜索名称：NFC-8095e8bf6872d562 / \[点火迭代操作法\](../../../ITERATION.md)：状态变化、传播、验证、审查、合并与回执规则。
   - 来源：`SUMMARY.md`
   - 依赖：—；被引用：—
-- [\[统一知识入口\](../../../README.md)](../../../SUMMARY.md)
+- [\[统一知识入口\](../../../.pytest_cache/README.md)](../../../SUMMARY.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-ef2d898362d5ccd4 / \[统一知识入口\](../../../README.md)
+  - 可搜索名称：NFC-ef2d898362d5ccd4 / \[统一知识入口\](../../../.pytest_cache/README.md)
   - 来源：`SUMMARY.md`
   - 依赖：—；被引用：—
-- [\[统一知识入口\](../../../README.md)：不需要知道文件路径或资产编号](../../../README.md)
+- [\[统一知识入口\](../../../.pytest_cache/README.md)：不需要知道文件路径或资产编号](../../../README.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-4af21e662f6efa6c / \[统一知识入口\](../../../README.md)：不需要知道文件路径或资产编号
+  - 可搜索名称：NFC-4af21e662f6efa6c / \[统一知识入口\](../../../.pytest_cache/README.md)：不需要知道文件路径或资产编号
   - 来源：`README.md`
   - 依赖：—；被引用：—
 - [\[统一资产卡\](../../ASSET-CARDS.md)](../../../docs/project-current-state.md)
@@ -319,7 +319,7 @@
   - 可搜索名称：NFC-392408b93b5f6615 / \[统一资产卡\](../../ASSET-CARDS.md) 说明为什么产生、当前状态、M/E、依赖、最近变化与下一步。
   - 来源：`tools/governance/build_knowledge_experience.py`
   - 依赖：—；被引用：—
-- [\[自我纠错引擎说明\](../../../docs/governance/self-correction-engine.md) · \[本轮 Claim Delta\](../../../RESULTS/CLAIM-DELTA.md) · \[影响分析\](../../../README.md)
+- [\[自我纠错引擎说明\](../../../docs/governance/self-correction-engine.md) · \[本轮 Claim Delta\](../../../RESULTS/CLAIM-DELTA.md) · \[影响分析\](../../../.pytest_cache/README.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-8d93b27d3a791b0a / \[自我纠错引擎说明\](../../../docs/governance/self-correction-engine.md) · \[本轮 Claim Delta\](../../../RESULTS/CLAIM-DELTA.md) · \[影响分析\](./RESULTS/
   - 来源：`README.md`

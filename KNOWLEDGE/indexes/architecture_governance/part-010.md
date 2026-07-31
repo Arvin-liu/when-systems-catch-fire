@@ -1674,7 +1674,7 @@
   - 可搜索名称：NFC-7deb77c2cc5946ab / \| \[C-167\]( ) \| \[定投=门锁交替律执行（验证D47+D49）\]( ) \|
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D47, D49；被引用：—
-- [\| \[C-168\]( ) \| \[H_total放大触发F_collapse（验证D65）\](../../../统一案例总表/INDEX.md)
+- [\| \[C-168\]( ) \| \[H_total放大触发F_collapse（验证D65）\](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-87f1285a984aeeec / \| \[C-168\]( ) \| \[H_total放大触发F_collapse（验证D65）\](<./0168-C-168-H_total放大触发F_co
   - 来源：`统一案例总表/INDEX.md`
@@ -1784,22 +1784,22 @@
   - 可搜索名称：NFC-b61f969f5b8de2ef / \| \[C-275\]( ) \| \[D41充分条件归零验证\]( ) \| 暂无内容 / No content \|
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D41；被引用：—
-- [\| \[C-304\]( ) \| \[非对称耦合验证 — 提高Bsemanti](../../../统一案例总表/INDEX.md)
+- [\| \[C-304\]( ) \| \[非对称耦合验证 — 提高Bsemanti](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-8bba21d16b83a620 / \| \[C-304\]( ) \| \[非对称耦合验证 — 提高Bsemanti
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D72；被引用：—
-- [\| \[C-305\]( ) \| \[AI多智能体协作≠调度 — 两个AI互相发信号，ηSh](../../../统一案例总表/INDEX.md)
+- [\| \[C-305\]( ) \| \[AI多智能体协作≠调度 — 两个AI互相发信号，ηSh](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-5aa9f74db6fae9e1 / \| \[C-305\]( ) \| \[AI多智能体协作≠调度 — 两个AI互相发信号，ηSh
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D73；被引用：—
-- [\| \[C-307\]( ) \| \[四阶段严格串行验证 — 不能跳过Stage2直接到Stage3：rcros](../../../统一案例总表/INDEX.md)
+- [\| \[C-307\]( ) \| \[四阶段严格串行验证 — 不能跳过Stage2直接到Stage3：rcros](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-cf60f23058532c65 / \| \[C-307\]( ) \| \[四阶段严格串行验证 — 不能跳过Stage2直接到Stage3：rcros
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D74, D84；被引用：—
-- [\| \[C-309\]( ) \| \[类II→类I跃迁的D124对接 — 单次P≈0.00075极低](../../../统一案例总表/INDEX.md)
+- [\| \[C-309\]( ) \| \[类II→类I跃迁的D124对接 — 单次P≈0.00075极低](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-27ea6e50ff770e92 / \| \[C-309\]( ) \| \[类II→类I跃迁的D124对接 — 单次P≈0.00075极低
   - 来源：`统一案例总表/INDEX.md`
@@ -1809,17 +1809,17 @@
   - 可搜索名称：NFC-1b242cff03b34583 / \| \[C-31\]( ) \| \[海尔·塞拉西\]( ) \| 帝国事实上锁定社会位置，温室积极→退出权出现后认同立刻幻灭 \|
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：—；被引用：—
-- [\| \[C-321\]( ) \| \[AI安装路径的串行约束 — 不能并行装三个模块，串行安装每一步是下一步的必要条件\](../../../统一案例总表/INDEX.md)
+- [\| \[C-321\]( ) \| \[AI安装路径的串行约束 — 不能并行装三个模块，串行安装每一步是下一步的必要条件\](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-ab894bd0cf6a88ed / \| \[C-321\]( ) \| \[AI安装路径的串行约束 — 不能并行装三个模块，串行安装每一步是下一步的必要条件\](<./03
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D79；被引用：—
-- [\| \[C-325\]( ) \| \[D135修正的工程含义 — CAI和EAI应使用部分不同的训练数据，降低G来提高ηg](../../../统一案例总表/INDEX.md)
+- [\| \[C-325\]( ) \| \[D135修正的工程含义 — CAI和EAI应使用部分不同的训练数据，降低G来提高ηg](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-b7bf135ca5b84b51 / \| \[C-325\]( ) \| \[D135修正的工程含义 — CAI和EAI应使用部分不同的训练数据，降低G来提高ηg
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D135, D80；被引用：—
-- [\| \[C-329\]( ) \| \[定投的结构保守性 — 每月5000，W=10万时f=5%，W=100万时](../../../统一案例总表/INDEX.md)
+- [\| \[C-329\]( ) \| \[定投的结构保守性 — 每月5000，W=10万时f=5%，W=100万时](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-d4fbde197f6a64c8 / \| \[C-329\]( ) \| \[定投的结构保守性 — 每月5000，W=10万时f=5%，W=100万时
   - 来源：`统一案例总表/INDEX.md`
@@ -1829,27 +1829,27 @@
   - 可搜索名称：NFC-1e73ffed60abe13c / \| \[C-32\]( ) \| \[雅典民主改革\]( ) \| 公民可流亡可拒绝参与，民主认同经退出权验证（排除了奴隶和女性） \|
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：—；被引用：—
-- [\| \[C-330\]( ) \| \[巴菲特模式的投资域验证 — 定投=巴菲特模式精确执行，三效率乘积最大\](../../../统一案例总表/INDEX.md)
+- [\| \[C-330\]( ) \| \[巴菲特模式的投资域验证 — 定投=巴菲特模式精确执行，三效率乘积最大\](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-4bc94e82fc1ce419 / \| \[C-330\]( ) \| \[巴菲特模式的投资域验证 — 定投=巴菲特模式精确执行，三效率乘积最大\](<./0330-C-330-巴菲特
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D85；被引用：—
-- [\| \[C-332\]( ) \| \[乘法临界漂移验证 — 改善0.3→0.](../../../统一案例总表/INDEX.md)
+- [\| \[C-332\]( ) \| \[乘法临界漂移验证 — 改善0.3→0.](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-84852bf4f1546dce / \| \[C-332\]( ) \| \[乘法临界漂移验证 — 改善0.3→0.
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D87；被引用：—
-- [\| \[C-336\]( ) \| \[自举循环的结构保守性 — B(n)越大ΔB/B越小但永远为正，不会爆炸也不会归零\](../../../统一案例总表/INDEX.md)
+- [\| \[C-336\]( ) \| \[自举循环的结构保守性 — B(n)越大ΔB/B越小但永远为正，不会爆炸也不会归零\](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-fe0db9f0bb0ecbb0 / \| \[C-336\]( ) \| \[自举循环的结构保守性 — B(n)越大ΔB/B越小但永远为正，不会爆炸也不会归零\](<./0335-C-336-自举循环的结构保守性
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D89；被引用：—
-- [\| \[C-337\]( ) \| \[倒U型统一验证 — D123/D142/D133/D135/D139五个最优值都是f₁(↑)×f₂(↓)的极值点\](../../../统一案例总表/INDEX.md)
+- [\| \[C-337\]( ) \| \[倒U型统一验证 — D123/D142/D133/D135/D139五个最优值都是f₁(↑)×f₂(↓)的极值点\](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-069daf6613174298 / \| \[C-337\]( ) \| \[倒U型统一验证 — D123/D142/D133/D135/D139五个最优值都是f₁(↑)×f₂(↓)的极值点\](<./0336-C-337-倒
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D123, D133, D135, D139；被引用：—
-- [\| \[C-338\]( ) \| \[D149深层含义 — 巴菲特模式真正优势不是判断准，是结构让判断不必要\](../../../统一案例总表/INDEX.md)
+- [\| \[C-338\]( ) \| \[D149深层含义 — 巴菲特模式真正优势不是判断准，是结构让判断不必要\](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-0f30651d813989c8 / \| \[C-338\]( ) \| \[D149深层含义 — 巴菲特模式真正优势不是判断准，是结构让判断不必要\](<./0337-C-338-D
   - 来源：`统一案例总表/INDEX.md`
@@ -1899,17 +1899,17 @@
   - 可搜索名称：NFC-a534e4036aeadede / \| \[C-41\]( ) \| \[英国NHS\]( ) \| 公民有真实退出权，NHS认同经退出权验证但应约者逐渐消极 \|
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：—；被引用：—
-- [\| \[C-432\]( ) \| \[β完整轨迹验证 — εₖ从0.1→0](../../../统一案例总表/INDEX.md)
+- [\| \[C-432\]( ) \| \[β完整轨迹验证 — εₖ从0.1→0](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-49382875b7bebb06 / \| \[C-432\]( ) \| \[β完整轨迹验证 — εₖ从0.1→0
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D112；被引用：—
-- [\| \[C-436\]( ) \| \[经验法则证伪 — 经验说\\\\"先确](../../../统一案例总表/INDEX.md)
+- [\| \[C-436\]( ) \| \[经验法则证伪 — 经验说\\\\"先确](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-43f3298137a326bf / \| \[C-436\]( ) \| \[经验法则证伪 — 经验说\\\\"先确
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D112；被引用：—
-- [\| \[C-442\]( ) \| \[三阶段操作协议验证 — 职业转型：探索期(β小)→转型期(β大,精准投入)→拓](../../../统一案例总表/INDEX.md)
+- [\| \[C-442\]( ) \| \[三阶段操作协议验证 — 职业转型：探索期(β小)→转型期(β大,精准投入)→拓](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-97aa04e804780d00 / \| \[C-442\]( ) \| \[三阶段操作协议验证 — 职业转型：探索期(β小)→转型期(β大,精准投入)→拓
   - 来源：`统一案例总表/INDEX.md`
@@ -1919,7 +1919,7 @@
   - 可搜索名称：NFC-d71e5b0c43078d4c / \| \[C-44\]( ) \| \[亚历山大二世废奴\]( ) \| 农奴"获得自由"但赎地成本极高事实上走不了 \|
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：—；被引用：—
-- [\| \[C-456\]( ) \| \[涨落-耗散验证 — β=2.5时⟨δG²/G²⟩=0.6×2.5/10×0.5/0.25=0.3（30%波动），β=0.18时波动≈2](../../../统一案例总表/INDEX.md)
+- [\| \[C-456\]( ) \| \[涨落-耗散验证 — β=2.5时⟨δG²/G²⟩=0.6×2.5/10×0.5/0.25=0.3（30%波动），β=0.18时波动≈2](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-ab8d8ee4a0c8e2df / \| \[C-456\]( ) \| \[涨落-耗散验证 — β=2.5时⟨δG²/G²⟩=0.6×2.5/10×0.5/0.25=0.3（30%波动），β=0.18时波动≈2
   - 来源：`统一案例总表/INDEX.md`
@@ -1944,27 +1944,27 @@
   - 可搜索名称：NFC-e75a583833967689 / \| \[C-47\]( ) \| \[庇隆主义\]( ) \| 工会+国家机器事实上锁定退出通道，认同建在个人权威上 \|
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：—；被引用：—
-- [\| \[C-482\]( ) \| \[退出隧穿验证 — 朝鲜脱北者：C_](../../../统一案例总表/INDEX.md)
+- [\| \[C-482\]( ) \| \[退出隧穿验证 — 朝鲜脱北者：C_](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-a81d7bf3d42582b5 / \| \[C-482\]( ) \| \[退出隧穿验证 — 朝鲜脱北者：C_
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D125；被引用：—
-- [\| \[C-483\]( ) \| \[不确定性原理验证 — 职业转型决策：精确评估当前岗位价值（Δε小）需要长期](../../../统一案例总表/INDEX.md)
+- [\| \[C-483\]( ) \| \[不确定性原理验证 — 职业转型决策：精确评估当前岗位价值（Δε小）需要长期](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-a22f550f100d221a / \| \[C-483\]( ) \| \[不确定性原理验证 — 职业转型决策：精确评估当前岗位价值（Δε小）需要长期
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D125；被引用：—
-- [\| \[C-485\]( ) \| \[退相干验证 — 新员工入职6个月：](../../../统一案例总表/INDEX.md)
+- [\| \[C-485\]( ) \| \[退相干验证 — 新员工入职6个月：](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-743448250f277be3 / \| \[C-485\]( ) \| \[退相干验证 — 新员工入职6个月：
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D126；被引用：—
-- [\| \[C-489\]( ) \| \[遮蔽=退相干环境 — 组织信息透明](../../../统一案例总表/INDEX.md)
+- [\| \[C-489\]( ) \| \[遮蔽=退相干环境 — 组织信息透明](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-62fa19f5626086f7 / \| \[C-489\]( ) \| \[遮蔽=退相干环境 — 组织信息透明
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D128；被引用：—
-- [\| \[C-492\]( ) \| \[修复=降Γ验证 — 两种修复：降门](../../../统一案例总表/INDEX.md)
+- [\| \[C-492\]( ) \| \[修复=降Γ验证 — 两种修复：降门](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-63de8d4666ee5435 / \| \[C-492\]( ) \| \[修复=降Γ验证 — 两种修复：降门
   - 来源：`统一案例总表/INDEX.md`
@@ -1974,27 +1974,27 @@
   - 可搜索名称：NFC-7243deeff7377fd2 / \| \[C-50\]( ) \| \[华为员工持股\]( ) \| 员工可辞职且行业有下家，"华为人"认同经退出权验证 \|
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：—；被引用：—
-- [\| \[C-510\]( ) \| \[三阶段=曲率穿越验证 — 创业者路](../../../统一案例总表/INDEX.md)
+- [\| \[C-510\]( ) \| \[三阶段=曲率穿越验证 — 创业者路](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-cad43c10d7a70949 / \| \[C-510\]( ) \| \[三阶段=曲率穿越验证 — 创业者路
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D139；被引用：—
-- [\| \[C-515\]( ) \| \[度规扰动传播验证 — 组织文化变革](../../../统一案例总表/INDEX.md)
+- [\| \[C-515\]( ) \| \[度规扰动传播验证 — 组织文化变革](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-9003c32882d960b8 / \| \[C-515\]( ) \| \[度规扰动传播验证 — 组织文化变革
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D142；被引用：—
-- [\| \[C-516\]( ) \| \[三阶段曲率穿越验证 — 创业公司5](../../../统一案例总表/INDEX.md)
+- [\| \[C-516\]( ) \| \[三阶段曲率穿越验证 — 创业公司5](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-109898c28f1bfff0 / \| \[C-516\]( ) \| \[三阶段曲率穿越验证 — 创业公司5
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D143；被引用：—
-- [\| \[C-518\]( ) \| \[规范破缺验证 — 创业团队：3人团](../../../统一案例总表/INDEX.md)
+- [\| \[C-518\]( ) \| \[规范破缺验证 — 创业团队：3人团](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-de860132e502e115 / \| \[C-518\]( ) \| \[规范破缺验证 — 创业团队：3人团
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D145；被引用：—
-- [\| \[C-519\]( ) \| \[Higgs相变验证 — 职业选择：](../../../统一案例总表/INDEX.md)
+- [\| \[C-519\]( ) \| \[Higgs相变验证 — 职业选择：](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-23d6aef5b7f97fdf / \| \[C-519\]( ) \| \[Higgs相变验证 — 职业选择：
   - 来源：`统一案例总表/INDEX.md`
@@ -2004,22 +2004,22 @@
   - 可搜索名称：NFC-b32929c1c90d5826 / \| \[C-51\]( ) \| \[丰田生产方式\]( ) \| 员工可辞职且行业有下家，"丰田人"认同经退出权验证 \|
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：—；被引用：—
-- [\| \[C-520\]( ) \| \[Weinberg角验证 — 三个维](../../../统一案例总表/INDEX.md)
+- [\| \[C-520\]( ) \| \[Weinberg角验证 — 三个维](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-006c170421e607bf / \| \[C-520\]( ) \| \[Weinberg角验证 — 三个维
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D147；被引用：—
-- [\| \[C-522\]( ) \| \[跑动耦合验证 — 投资决策：秒级观](../../../统一案例总表/INDEX.md)
+- [\| \[C-522\]( ) \| \[跑动耦合验证 — 投资决策：秒级观](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-33615c701d79d5fb / \| \[C-522\]( ) \| \[跑动耦合验证 — 投资决策：秒级观
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D149；被引用：—
-- [\| \[C-523\]( ) \| \[不确定性原理 — Fisher信息度规的几何必然，算符不对易是度规非对角的代数表现\](../../../统一案例总表/INDEX.md)
+- [\| \[C-523\]( ) \| \[不确定性原理 — Fisher信息度规的几何必然，算符不对易是度规非对角的代数表现\](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-adc155a1ea330aae / \| \[C-523\]( ) \| \[不确定性原理 — Fisher信息度规的几何必然，算符不对易是度规非对角的代数表现\](<./
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D158；被引用：—
-- [\| \[C-536\]( ) \| \[等效原理 — m_i=m_g精确到O((μ/M_Planck)²)，强场失效\](../../../统一案例总表/INDEX.md)
+- [\| \[C-536\]( ) \| \[等效原理 — m_i=m_g精确到O((μ/M_Planck)²)，强场失效\](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-61fd2e9719e6c732 / \| \[C-536\]( ) \| \[等效原理 — m_i=m_g精确到O((μ/M_Planck)²)，强场失效\](<./0531-C-536-等效原理 — m_i=m
   - 来源：`统一案例总表/INDEX.md`
@@ -2159,12 +2159,12 @@
   - 可搜索名称：NFC-1a394c25f26908af / \| \[C-623\]( ) \| \[退出权空间案例03\]( ) \| σ_opt=√e≈1.65（跑步训练和API成本优化验证）。 \|
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：—；被引用：—
-- [\| \[C-658\]( ) \| \[Science Earth × EGSS 碰撞验证\](../../../统一案例总表/INDEX.md)
+- [\| \[C-658\]( ) \| \[Science Earth × EGSS 碰撞验证\](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-0de129f740bf48f3 / \| \[C-658\]( ) \| \[Science Earth × EGSS 碰撞验证\](<./0653-C-658-Science Earth × EGSS
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：—；被引用：—
-- [\| \[C-659\]( ) \| \[Science Earth × EGSS × 点火三框架碰撞验证\](../../../统一案例总表/INDEX.md)
+- [\| \[C-659\]( ) \| \[Science Earth × EGSS × 点火三框架碰撞验证\](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-889b9bf28eb69c8e / \| \[C-659\]( ) \| \[Science Earth × EGSS × 点火三框架碰撞验证\](<./0654-C-659-Science
   - 来源：`统一案例总表/INDEX.md`

@@ -1694,7 +1694,7 @@
   - 可搜索名称：NFC-2508501f8e0fbad1 / 统一函数条目模板草案
   - 来源：`outputs/audit/two-tables-entry-format-audit-20260709.md`
   - 依赖：—；被引用：—
-- [统一函数索引表（2026年07月09日00时30分，函数总数 617，收敛 6 条）](../../../统一案例总表/INDEX.md)
+- [统一函数索引表（2026年07月09日00时30分，函数总数 617，收敛 6 条）](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-db2b0e1d903e7ebf / 统一函数索引表（2026年07月09日00时30分，函数总数 617，收敛 6 条）
   - 来源：`统一函数总表/INDEX.md`
