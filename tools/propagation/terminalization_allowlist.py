@@ -41,6 +41,12 @@ ALLOWED_PATTERNS = [
     r"^data/operations/terminal-evidence-core\.json$",
     r"^docs/operations/lifecycle-readme\.md$",
     r"^ITERATION\.md$",
+    # Contract §17 (task 108): the terminalization-PR CI itself is part of the
+    # terminalization scope. Allowlist edits to this workflow when they are
+    # limited to realizing the stated FRESH-FULL-CLONE intent (e.g. fetch-tags
+    # so annotated terminal tags for 104-108 are resolvable). Scope expansion of
+    # the workflow beyond terminalization validation remains forbidden.
+    r"^.github/workflows/iteration-lifecycle-validation\.yml$",
 ]
 
 # Paths that are EXPLICITLY forbidden in a terminalization PR (semantic scope).

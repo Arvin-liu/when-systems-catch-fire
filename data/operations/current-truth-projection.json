@@ -1,8 +1,6 @@
 {
   "_derived_from_terminal_only": true,
-  "_non_terminal_tasks_excluded": [
-    106
-  ],
+  "_non_terminal_tasks_excluded": [],
   "article_review_states": {
     "001": "REVIEWED_CURRENT",
     "002": "REVIEWED_CURRENT",
@@ -12,7 +10,7 @@
     "006": "REVIEWED_CURRENT",
     "007": "REVIEWED_CURRENT"
   },
-  "current_accepted_iteration": 105,
+  "current_accepted_iteration": 107,
   "current_capability_evidence": [
     {
       "ids": [
@@ -28,7 +26,7 @@
       "task": 105
     }
   ],
-  "current_project_status_commit": "9b5b4b9bfb243fe4cc52f7b163a9613ee6628321",
+  "current_project_status_commit": "77352d27bc997ff9418de017f622f0c72dd634e3",
   "current_project_status_date": "2026-07-31",
   "map_state_and_impact": [
     {
@@ -56,6 +54,22 @@
       "task_id": "IGNITION-FUNCTION-OS-CORE-CAPABILITY-BENCHMARK-ADVERSARIAL-VALIDATION-R1-20260730",
       "task_number": 105,
       "terminal_state": "IGNITION_FUNCTION_OS_CORE_CAPABILITY_PREREGISTERED_BENCHMARKED_ADVERSARIALLY_VALIDATED_PROPAGATED_AND_MERGED"
+    },
+    {
+      "classification": "folded from event-sourced lifecycle (TERMINAL_SUCCESS); retroactive reconciliation by task 108",
+      "exact_head": "974c0531badd83d94673e9a3abb040a0855fcee1",
+      "merge_commit": "af988422030069b8fee1df7ec75670e0541a55ab",
+      "task_id": "IGNITION-CONTINUOUS-ITERATION-PROPAGATION-CLOSURE-AND-CURRENT-TRUTH-RECONCILIATION-R1-20260731",
+      "task_number": 106,
+      "terminal_state": "TERMINAL_SUCCESS"
+    },
+    {
+      "classification": "folded from event-sourced lifecycle (TERMINAL_SUCCESS); retroactive reconciliation by task 108",
+      "exact_head": "43011f37961137221843da97145845e2ff558e78",
+      "merge_commit": "77352d27bc997ff9418de017f622f0c72dd634e3",
+      "task_id": "IGNITION-FOUNDATION-DRIFT-REPAIR-UNIVERSAL-DISCOVERY-PREFLIGHT-AND-PROPAGATION-CI-PROOF-R1-20260731",
+      "task_number": 107,
+      "terminal_state": "TERMINAL_SUCCESS"
     }
   ],
   "resolved_questions": [
