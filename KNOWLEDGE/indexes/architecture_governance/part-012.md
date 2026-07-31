@@ -4,9 +4,9 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
-- [先从\[统一知识入口\](../../../.pytest_cache/README.md)按最近变化、主题、搜索或阅读时长找到对象，再读 \[README.md\](../../../.pytest_cache/README.md)、\[ARCHITECTURE.md\](../../../docs/USAGE.md)
+- [先从\[统一知识入口\](../../README.md)按最近变化、主题、搜索或阅读时长找到对象，再读 \[README.md\](../../README.md)、\[ARCHITECTURE.md\](../../../docs/USAGE.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-8cd1ac7ea28b4ed9 / 先从\[统一知识入口\](../../../.pytest_cache/README.md)按最近变化、主题、搜索或阅读时长找到对象，再读 \[README.md\](../../../.pytest_cache/README.md)、\[ARCHITECTURE.md\](../../../docs/getbrain-handoff-20260708.md)
+  - 可搜索名称：NFC-8cd1ac7ea28b4ed9 / 先从\[统一知识入口\](../../README.md)按最近变化、主题、搜索或阅读时长找到对象，再读 \[README.md\](../../README.md)、\[ARCHITECTURE.md\](../../../docs/getbrain-handoff-20260708.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-74d2a9a472b3c047 / 先把机器数据接入流程打通，形成「输入 P1 数据 → 输出结构化增量」的标准管线，再大规模跑 UNESCO（候选 1）或得到笔记（候选 3）会更稳；
   - 来源：`docs/getbrain-handoff-20260708.md`

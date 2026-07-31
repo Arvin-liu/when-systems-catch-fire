@@ -1209,9 +1209,9 @@
   - 可搜索名称：NFC-310aa6caf348c6c6 / 不是自动生成最终结论**：P1 数据只提供索引、提醒、约束与分流信号。
   - 来源：`docs/p1-machine-data-collision-workflow-20260708.md`
   - 依赖：P1；被引用：—
-- [不知道结果文件名时，从\[统一知识入口\](../../../.pytest_cache/README.md)、\[最新变化\](../../WHATS-NEW.md)、\[知识地图\](../../MAP.md)或\[搜索\](../../../.pytest_cache/README.md)
+- [不知道结果文件名时，从\[统一知识入口\](../../README.md)、\[最新变化\](../../WHATS-NEW.md)、\[知识地图\](../../MAP.md)或\[搜索\](../../README.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-04038e8562ef7cd1 / 不知道结果文件名时，从\[统一知识入口\](../../../.pytest_cache/README.md)、\[最新变化\](../../WHATS-NEW.md)、\[知识地图\](../../MAP.md)或\[搜索\](../../../data/foundation/evidence/evidence.jsonl)
+  - 可搜索名称：NFC-04038e8562ef7cd1 / 不知道结果文件名时，从\[统一知识入口\](../../README.md)、\[最新变化\](../../WHATS-NEW.md)、\[知识地图\](../../MAP.md)或\[搜索\](../../../data/foundation/evidence/evidence.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-fd437e45b1fccf18 / 不确定性原理 — Fisher信息度规的几何必然,算符不对易是度规非对角的代数表现
   - 来源：`data/foundation/evidence/evidence.jsonl`
@@ -2136,9 +2136,9 @@
   - 可搜索名称：NFC-0f899fc3f051d0d6 / 仍有阻断：** R5-A 已发布阶段快照的精确头 48f87616 经独立 exact-head 验收（与实时 PR #134 一致）；但 R5-A 候选（宪章 PR #130）仍 OPEN / DRAFT，其整体精确头验收仍待账号所有者独
   - 来源：`docs/generated/recent-stage-results.md`
   - 依赖：—；被引用：—
-- [从\[统一知识入口\](../../../.pytest_cache/README.md)选择“最近变化”“按主题探索”“搜索”或“分层阅读”。](../../../HUMAN-READING.md)
+- [从\[统一知识入口\](../../README.md)选择“最近变化”“按主题探索”“搜索”或“分层阅读”。](../../../HUMAN-READING.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-787118f94b93a366 / 从\[统一知识入口\](../../../.pytest_cache/README.md)选择“最近变化”“按主题探索”“搜索”或“分层阅读”。
+  - 可搜索名称：NFC-787118f94b93a366 / 从\[统一知识入口\](../../README.md)选择“最近变化”“按主题探索”“搜索”或“分层阅读”。
   - 来源：`HUMAN-READING.md`
   - 依赖：—；被引用：—
 - [从统一入口按时间、研究问题、自然语言词、旧称和阅读时长探索知识，不要求读者预知目录或资产编号。](../../../docs/project-current-state.md)
@@ -2171,9 +2171,9 @@
   - 可搜索名称：NFC-6e00a09db27a0bc4 / 从这条案例看，更像是在验证 D71 对“纯外驱如何转成可持续内驱”的窗口判定能力。
   - 来源：`统一案例总表/0174-C-174-忆秦娥纯拉力上位(外驱转自驱窗口).md`
   - 依赖：D71；被引用：—
-- [从这里开始：** \[统一知识入口\](../../../.pytest_cache/README.md) · \[最新变化\](../../WHATS-NEW.md) · \[知识地图\](../../MAP.md) · \[搜索与交叉引用\](../../../.pytest_cache/README.md)
+- [从这里开始：** \[统一知识入口\](../../README.md) · \[最新变化\](../../WHATS-NEW.md) · \[知识地图\](../../MAP.md) · \[搜索与交叉引用\](../../README.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-36f21247372dcffc / 从这里开始：** \[统一知识入口\](../../../.pytest_cache/README.md) · \[最新变化\](../../WHATS-NEW.md) · \[知识地图\](../../MAP.md) · \[搜索与交叉引用\](../../../.pytest_cache/README.md)
+  - 可搜索名称：NFC-36f21247372dcffc / 从这里开始：** \[统一知识入口\](../../README.md) · \[最新变化\](../../WHATS-NEW.md) · \[知识地图\](../../MAP.md) · \[搜索与交叉引用\](../../README.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-6dab70d0b856a685 / 仓库中的文章运行、外部研究、复算、审计和迭代报告不再只埋在目录或旧表中。`RESULTS/` 提供按主题和时间组织的人类入口，并保留每项结果的原始来源、问题、方法或证据类别、结论、成熟度、变化、局限与最终处置。
   - 来源：`README.md`

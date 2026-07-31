@@ -15,6 +15,6 @@
 - [第 009 片](./architecture_governance/part-009.md)：4001—4500；rationale="The title and recovered annotation use the universal modal term 必然, so the conservative testable reading is a → title: "上下文饱和重置验证"
 - [第 010 片](./architecture_governance/part-010.md)：4501—5000；title: "不确定性原理 — Fisher信息度规的几何必然，算符不对易是度规非对角的代数表现" → \| Evidence card files \| 30 \|
 - [第 011 片](./architecture_governance/part-011.md)：5001—5500；\| Evidence cards (30) \| COMPLETE \| 30 cards, 10 source families, all legal OA \| → 元协议规范性审核发布审计 — IGNITION-20260709-043
-- [第 012 片](./architecture_governance/part-012.md)：5501—6000；先从\[统一知识入口\](../../.pytest_cache/README.md)按最近变化、主题、搜索或阅读时长找到对象，再读 \[README.md\](../README.md)、\[ARCHITECTURE.md\](architecture_governance/part-013.md)：6001—6500；原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0574-C-579-上下文饱和重置验证.md` → 标注 pending** — 写明证据等级；
+- [第 012 片](./architecture_governance/part-012.md)：5501—6000；先从\[统一知识入口\](../README.md)按最近变化、主题、搜索或阅读时长找到对象，再读 \[README.md\](../README.md)、\[ARCHITECTURE.md\](architecture_governance/part-013.md)：6001—6500；原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0574-C-579-上下文饱和重置验证.md` → 标注 pending** — 写明证据等级；
 - [第 014 片](./architecture_governance/part-014.md)：6501—7000；标注证据不足（缺字段显式标"缺失"/"pending"）。 → 验证过程：** 植物智能的植物感知土壤环境、调整根系结构、循环递归优化养分吸收。植物感知土壤养分信息，调整根系生长方向，循环递归优化养分吸收效率。
 - [第 015 片](./architecture_governance/part-015.md)：7001—7021；验证过程：** 植物智能的每个根尖根据局部养分信息调整生长方向，森林整体优化资源分配。根尖感知局部养分信息，调整生长方向，无数根尖的局部调整使得森林整体涌现出资源分配最优策略。 → ：晋级门槛 + 初版验证器。machine_eligible=0/12，但验证器字段与 Schema 不一致。

@@ -807,6 +807,9 @@ import os
 # (which would otherwise break the foundation deterministic census checks).
 _RELINK_RE = re.compile(r"\[([^\]]*)\]\(([^)]+)\)")
 
+# Directories whose files must never be chosen as a relink target.
+_RELINK_EXCLUDE_DIRS = (".pytest_cache", ".git", "node_modules", "__pycache__", "build", "dist", ".lake", "site")
+
 _relink_skip = lambda raw: raw.startswith(("http://", "https://", "mailto:")) or not raw.partition("#")[0]
 
 _relink_path_safe = lambda tgt: len(tgt) <= 255 and "\n" not in tgt and "\r" not in tgt
@@ -817,17 +820,26 @@ _relink_already_ok = lambda tgt, bd, R: (
     if _relink_path_safe(tgt) else False
 )
 
+# Choose the best same-basename file for a broken link target. Resolution is
+# relative to the embedding file's directory (matching validate_knowledge_experience.py).
+# Selection is deterministic and OS-independent: prefer a candidate whose repo-relative
+# path ENDS WITH the link's intended path (e.g. `../KNOWLEDGE/README.md` -> `KNOWLEDGE/README.md`),
+# else the alphabetically-first candidate; cache/build dirs are excluded. This removes the
+# prior macOS/Linux rglob-order divergence (KNOWLEDGE_EXPERIENCE_OUTPUT_DRIFT).
 _relink_basename_candidate = lambda tgt, R: (
-    # Sort candidates so the chosen relink target is deterministic across
-    # filesystems (rglob order is OS-dependent: macOS vs Linux). Picking the
-    # first match produced macOS/Linux divergence in CI (KNOWLEDGE_EXPERIENCE_OUTPUT_DRIFT).
-    sorted(
-        p.relative_to(R).as_posix()
-        for p in R.rglob(tgt.rstrip("/").split("/")[-1])
-        if p.is_file()
+    (lambda base, intended, cands: (
+        None if not cands else (
+            sorted([c for c in cands if c.endswith(intended)])[0]
+            if intended and any(c.endswith(intended) for c in cands)
+            else sorted(cands)[0]
+        )
+    ))(
+        tgt.rstrip("/").split("/")[-1],
+        "/".join(p for p in tgt.split("/") if p not in ("", ".", "..")),
+        [p.relative_to(R).as_posix() for p in R.rglob(tgt.rstrip("/").split("/")[-1])
+         if p.is_file() and not any(part in _RELINK_EXCLUDE_DIRS for part in p.parts)],
     )
-    or [None]
-)[0]
+)
 
 relink_in_file = lambda content, product_path: _RELINK_RE.sub(
     lambda m, bd=product_path.parent, R=ROOT: (
