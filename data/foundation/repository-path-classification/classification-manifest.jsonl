@@ -5,6 +5,7 @@
 {"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": ".github/workflows/foundation-validation.yml"}
 {"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": ".github/workflows/function-os-ci.yml"}
 {"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": ".github/workflows/q33-governance-validation.yml"}
+{"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": ".github/workflows/repository-path-accounting-preflight.yml"}
 {"category": "REPOSITORY_GOVERNANCE_DOC", "matched_rule": "REPOSITORY_GOVERNANCE_DOC", "path": ".gitignore"}
 {"category": "REPOSITORY_GOVERNANCE_DOC", "matched_rule": "REPOSITORY_GOVERNANCE_DOC", "path": "ACKNOWLEDGEMENTS.md"}
 {"category": "REPOSITORY_GOVERNANCE_DOC", "matched_rule": "REPOSITORY_GOVERNANCE_DOC", "path": "AGENTS.md"}
@@ -753,6 +754,8 @@
 {"category": "GOVERNED_MACHINE_RECORD", "matched_rule": "GOVERNED_MACHINE_RECORD", "path": "data/foundation/schemas/source.schema.json"}
 {"category": "GOVERNED_MACHINE_RECORD", "matched_rule": "GOVERNED_MACHINE_RECORD", "path": "data/foundation/schemas/validation-record.schema.json"}
 {"category": "GOVERNED_MACHINE_RECORD", "matched_rule": "GOVERNED_MACHINE_RECORD", "path": "data/foundation/sources/sources.jsonl"}
+{"category": "GOVERNED_MACHINE_RECORD", "matched_rule": "GOVERNED_MACHINE_RECORD", "path": "data/foundation/task-107-baseline-discrepancy.json"}
+{"category": "GOVERNED_MACHINE_RECORD", "matched_rule": "GOVERNED_MACHINE_RECORD", "path": "data/foundation/task-107-path-classification-register.jsonl"}
 {"category": "GOVERNED_MACHINE_RECORD", "matched_rule": "GOVERNED_MACHINE_RECORD", "path": "data/foundation/toolchain-status.json"}
 {"category": "GOVERNED_MACHINE_RECORD", "matched_rule": "GOVERNED_MACHINE_RECORD", "path": "data/foundation/unresolved-obligations.json"}
 {"category": "GOVERNED_MACHINE_RECORD", "matched_rule": "GOVERNED_MACHINE_RECORD", "path": "data/foundation/unresolved-obligations.jsonl"}
@@ -1566,10 +1569,15 @@
 {"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "tests/foundation/fixtures/function_asset_identity_task99.jsonl"}
 {"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "tests/foundation/fixtures/function_identity_examples.jsonl"}
 {"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "tests/foundation/fixtures/nonfunction_claim_gate_cases.jsonl"}
+{"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "tests/foundation/fixtures/repository-path-classification/bad-authoritative-mislabel.manifest.jsonl"}
+{"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "tests/foundation/fixtures/repository-path-classification/bad-duplicate.manifest.jsonl"}
 {"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "tests/foundation/test_claim_governance.py"}
 {"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "tests/foundation/test_foundation.py"}
 {"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "tests/foundation/test_function_asset_closure.py"}
+{"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "tests/foundation/test_generator_reconciliation_staleness.py"}
 {"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "tests/foundation/test_nonfunction_claim_closure.py"}
+{"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "tests/foundation/test_repository_path_classification.py"}
+{"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "tests/foundation/test_trigger_coverage.py"}
 {"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "tests/stage_snapshot_responsibility_actor_cases.json"}
 {"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "tests/test_adaptive_relational_network.py"}
 {"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "tests/test_adaptive_relational_network_operational.py"}

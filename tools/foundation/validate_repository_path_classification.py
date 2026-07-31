@@ -190,20 +190,32 @@ def _schema_valid_row(row: dict, schema: dict | None) -> tuple[bool, str]:
     return True, ""
 
 
-def check() -> int:
+def check(live: dict[str, tuple[str, str]] | None = None,
+          manifest: dict[str, tuple[str, str]] | None = None) -> int:
     """Re-run the engine on the live tree and compare against the committed manifest.
+
+    ``live`` / ``manifest`` may be injected for testing; when omitted they are read
+    from the live Git tree and the committed manifest file respectively.
 
     Fail-closed: any of the following is a non-zero exit.
       * an UNRESOLVED (unclassified) path exists;
-      * a path is duplicated in the manifest;
+      * a path is duplicated in the manifest (file-level);
       * the live path set != the manifest path set (new / removed / renamed path);
       * a path's category changed vs the manifest;
-      * the anti-backflow invariant is violated (authoritative path not in allowlist);
+      * the anti-backflow invariant is violated (authoritative path not in allowlist,
+        either live or in the committed manifest);
       * a manifest row fails schema/semantic validation.
     """
     checks: list[tuple[str, bool, str]] = []
-    live = live_classification()
-    manifest = read_manifest()
+    if live is None:
+        live = live_classification()
+    if manifest is None:
+        manifest = read_manifest()
+        manifest_raw_lines = None
+        if MANIFEST.is_file():
+            manifest_raw_lines = [l for l in MANIFEST.read_text(encoding="utf-8").splitlines() if l.strip()]
+    else:
+        manifest_raw_lines = None
     schema = load_schema()
 
     def chk(name: str, ok: bool, detail: str = "") -> None:
@@ -217,8 +229,11 @@ def check() -> int:
     chk("classification:no-unresolved", not unresolved,
         f"count={len(unresolved)}" + ("" if not unresolved else f" example={unresolved[0]}"))
 
-    # C2: manifest has no duplicate paths.
-    dup = [p for p, n in Counter(manifest_paths).items() if n > 1]
+    # C2: manifest has no duplicate paths (file-level detection).
+    if manifest_raw_lines is not None:
+        dup = [p for p, n in Counter(json.loads(l)["path"] for l in manifest_raw_lines).items() if n > 1]
+    else:
+        dup = []
     chk("classification:no-duplicate", not dup, f"count={len(dup)}")
 
     # C3: manifest path set == live Git tree (no stale, no missing).
@@ -238,14 +253,14 @@ def check() -> int:
     chk("manifest:category-stable", not changed,
         f"changed={len(changed)}" + ("" if not changed else f" example={changed[0]}"))
 
-    # C5: anti-backflow invariant -- authoritative only from the allowlist.
+    # C5: anti-backflow invariant -- authoritative only from the allowlist (live).
     backflow = [
         p for p, (c, _) in live.items()
         if c == "AUTHORITATIVE_CLAIM_INPUT" and not p.startswith(AUTHORITATIVE_PREFIXES)
     ]
     chk("anti-backflow:authoritative-only-from-allowlist", not backflow,
         f"violations={len(backflow)}" + ("" if not backflow else f" example={backflow[0]}"))
-    # Defensive: none of the non-authoritative categories may be authoritative.
+    # Defensive: none of the non-authoritative categories may sit under the allowlist.
     mislabeled = [
         p for p, (c, _) in live.items()
         if c in NON_AUTHORITATIVE_CATEGORIES and p.startswith(AUTHORITATIVE_PREFIXES)
@@ -253,15 +268,31 @@ def check() -> int:
     chk("anti-backflow:allowlist-not-mislabeled", not mislabeled,
         f"count={len(mislabeled)}")
 
+    # C5b: anti-backflow invariant -- the committed manifest must not claim
+    # authoritative for any path outside the allowlist (e.g. editorial mislabeled).
+    manifest_backflow = [
+        p for p, (c, _) in manifest.items()
+        if c == "AUTHORITATIVE_CLAIM_INPUT" and not p.startswith(AUTHORITATIVE_PREFIXES)
+    ]
+    chk("anti-backflow:manifest-authoritative-allowlist", not manifest_backflow,
+        f"violations={len(manifest_backflow)}" + ("" if not manifest_backflow else f" example={manifest_backflow[0]}"))
+
     # C6: schema / semantic validation of every manifest row.
-    if manifest:
+    if manifest_raw_lines is not None:
         bad = 0
         first_bad = ""
-        for line in MANIFEST.read_text(encoding="utf-8").splitlines():
-            line = line.strip()
-            if not line:
-                continue
+        for line in manifest_raw_lines:
             ok, why = _schema_valid_row(json.loads(line), schema)
+            if not ok:
+                bad += 1
+                if not first_bad:
+                    first_bad = why
+        chk("schema:manifest-rows-valid", bad == 0, f"invalid={bad}" + ("" if not bad else f" {first_bad}"))
+    elif manifest:
+        bad = 0
+        first_bad = ""
+        for p, (c, r) in manifest.items():
+            ok, why = _schema_valid_row({"path": p, "category": c, "matched_rule": r}, schema)
             if not ok:
                 bad += 1
                 if not first_bad:

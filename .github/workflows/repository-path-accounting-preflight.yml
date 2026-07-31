@@ -1,0 +1,37 @@
+name: repository-path-accounting-preflight
+# Task 107 Layer A — universal repository-accounting preflight.
+#
+# This is the FAST, stdlib-first gate. It MUST run on every pull request and every
+# push to main (no narrow `paths:` filter) so that adding, deleting or renaming any
+# Git-tracked path can never again silently bypass the path-accounting check. It does
+# NOT re-run the heavy Foundation generation chain.
+#
+# Contract Task 107 §4 Layer A. The heavy validation lives in foundation-validation.yml
+# (Layer B); its trigger was broadened in the same task so authoritative-input changes
+# can no longer hide (§3.4).
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+concurrency:
+  group: repository-path-accounting-preflight-${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+permissions:
+  contents: read
+jobs:
+  preflight:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Universal repository-path-accounting preflight (--check)
+        run: python3 tools/foundation/validate_repository_path_classification.py --check
+      - name: Preflight negative fixtures + trigger-coverage tests
+        run: |
+          python3 -m unittest tests.foundation.test_repository_path_classification -v
+          python3 -m unittest tests.foundation.test_trigger_coverage -v
