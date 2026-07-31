@@ -23,6 +23,19 @@ evidence-program/
   tests/test_evidence_program.py  # regression fixtures exercising every schema + integrity check
 ```
 
+## Pilot portfolio state
+
+The first pilot (Crossref DOI verification, task 103) is `SUPPORTED_WITHIN_SCOPE` and
+closed. The next pilot — **Function OS v0.2 correctness (candidate C-4)** — was
+executed by task 105: preregistered, then adversarially validated on a curated
+baseline. Original-target verdict `PARTIALLY_SUPPORTED_WITH_IDENTIFIED_FAILURES`
+(25 false_reject from an N2 nested-equality defect); repaired-target verdict
+`SUPPORTED_WITHIN_BOUNDED_DOMAIN`. It is recorded as a completed bounded pilot;
+the evidence ceiling is bounded-domain only — no claim of complete sandboxing,
+production readiness, or universal correctness. Remaining narrower questions
+(broader expression coverage, hostile-environment security, production
+reliability, real-world utility) are tracked as OQ-103-6 in `RESULTS/OPEN-QUESTIONS.md`.
+
 ## Reproduce the first pilot
 
 ```bash

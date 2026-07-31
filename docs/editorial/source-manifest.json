@@ -1,0 +1,181 @@
+{
+  "articles": {
+    "001-withdrawn-gravity-how-strong-claims-do-not-rebound": {
+      "current_claim_ceiling": "only what ignition's own assets support; no four-force unification / quantum gravity",
+      "editorial_status": "REVIEWED_CURRENT",
+      "file": "docs/editorial/articles/001-withdrawn-gravity-how-strong-claims-do-not-rebound.md",
+      "last_reviewed_commit": "16f64004",
+      "materiality_rules": [
+        "any change to a listed source path requires re-review before currency",
+        "changing only an unrelated source does not force staleness"
+      ],
+      "review_evidence": "task 104 reviewed against PR #160 merge 16f64004; claim ceiling unchanged",
+      "source_hashes": {
+        "RESULTS/CORRECTIONS.md": "54f93a25f7bd309a6d1a5ef27a27e1ca55314796993f67e5d88e1269cac56772",
+        "docs/foundation/historical-correction-log.md": "9d7d84b3f8857cf8505f6a5bc26e34a3a90068fd97b4ffe176f38a7dc1111938"
+      },
+      "source_ids": [
+        "CORRECTIONS.md",
+        "historical-correction-log.md"
+      ],
+      "source_paths": [
+        "RESULTS/CORRECTIONS.md",
+        "docs/foundation/historical-correction-log.md"
+      ]
+    },
+    "002-two-surfaces-one-truth-registry-and-human-layer": {
+      "current_claim_ceiling": "alignment is accounting closure, not proof closure",
+      "editorial_status": "REVIEWED_CURRENT",
+      "file": "docs/editorial/articles/002-two-surfaces-one-truth-registry-and-human-layer.md",
+      "last_reviewed_commit": "16f64004",
+      "materiality_rules": [
+        "any change to a listed source path requires re-review before currency",
+        "changing only an unrelated source does not force staleness"
+      ],
+      "review_evidence": "task 104 reviewed against PR #160 merge 16f64004",
+      "source_hashes": {
+        "HUMAN-READING.md": "ae554d4146af3ad9932ca17369be5ddc6f381010d7ac6c2987ec90873a1a38fb",
+        "RESULTS/ADJUDICATION-SUMMARY.md": "4384654afc6f7d2a00fa33c1b1f0b9bdc21cfab63c24d99c0ef1a635861f873e"
+      },
+      "source_ids": [
+        "ADJUDICATION-SUMMARY.md",
+        "HUMAN-READING.md"
+      ],
+      "source_paths": [
+        "RESULTS/ADJUDICATION-SUMMARY.md",
+        "HUMAN-READING.md"
+      ]
+    },
+    "003-from-candidate-to-current-evidence-chain": {
+      "current_claim_ceiling": "candidate/validated/merged/Current are distinct; 'passed' is not 'proven'",
+      "editorial_status": "REVIEWED_CURRENT",
+      "file": "docs/editorial/articles/003-from-candidate-to-current-evidence-chain.md",
+      "last_reviewed_commit": "16f64004",
+      "materiality_rules": [
+        "any change to a listed source path requires re-review before currency",
+        "changing only an unrelated source does not force staleness"
+      ],
+      "review_evidence": "task 104 reviewed against PR #160 merge 16f64004",
+      "source_hashes": {
+        "docs/operations/stage-snapshot-publication.md": "a373b6c3b1d8d99e02a362c405fae81cb26a046d4321c861747c800f1d06a4e4"
+      },
+      "source_ids": [
+        "stage-snapshot-publication.md"
+      ],
+      "source_paths": [
+        "docs/operations/stage-snapshot-publication.md"
+      ]
+    },
+    "004-gated-model-bounded-projection-open-unification": {
+      "current_claim_ceiling": "gated model does not unify forces and does not prove impossibility",
+      "editorial_status": "REVIEWED_CURRENT",
+      "file": "docs/editorial/articles/004-gated-model-bounded-projection-open-unification.md",
+      "last_reviewed_commit": "16f64004",
+      "materiality_rules": [
+        "any change to a listed source path requires re-review before currency",
+        "changing only an unrelated source does not force staleness"
+      ],
+      "review_evidence": "task 104 reviewed against PR #160 merge 16f64004",
+      "source_hashes": {
+        "README.md": "39c80e4d680204f1c215a83ff30206607cedee139308afc9249fef5fdcd9a181",
+        "docs/physics_boundary.md": "dca51feaa53e66045b1a7a93251438241302d90c80f722dca308577d524163d9"
+      },
+      "source_ids": [
+        "physics_boundary.md",
+        "README.md"
+      ],
+      "source_paths": [
+        "docs/physics_boundary.md",
+        "README.md"
+      ]
+    },
+    "005-description-is-not-proof-systems-representations": {
+      "current_claim_ceiling": "representation capacity is not causal or empirical proof",
+      "editorial_status": "REVIEWED_CURRENT",
+      "file": "docs/editorial/articles/005-description-is-not-proof-systems-representations.md",
+      "last_reviewed_commit": "16f64004",
+      "materiality_rules": [
+        "any change to a listed source path requires re-review before currency",
+        "changing only an unrelated source does not force staleness"
+      ],
+      "review_evidence": "task 104 reviewed against PR #160 merge 16f64004",
+      "source_hashes": {
+        "docs/architecture/multiscale-causal-fabric.md": "acfba398a0e03f5748d38759f6cb9e5380441decd2ea9dd7632b53a2c70dca06"
+      },
+      "source_ids": [
+        "multiscale-causal-fabric.md"
+      ],
+      "source_paths": [
+        "docs/architecture/multiscale-causal-fabric.md"
+      ]
+    },
+    "006-readable-works-with-boundaries": {
+      "current_claim_ceiling": "articles organize narrative; registry remains authority",
+      "editorial_status": "REVIEWED_CURRENT",
+      "file": "docs/editorial/articles/006-readable-works-with-boundaries.md",
+      "last_reviewed_commit": "16f64004",
+      "materiality_rules": [
+        "any change to a listed source path requires re-review before currency",
+        "changing only an unrelated source does not force staleness"
+      ],
+      "review_evidence": "task 104 reviewed against PR #160 merge 16f64004",
+      "source_hashes": {
+        "docs/publication/zhiyuan-writing-method.md": "e2658f450eff12e5bb582c9c7b9e56eceaf935a8ea790365402e22cb38697aaf"
+      },
+      "source_ids": [
+        "zhiyuan-writing-method.md"
+      ],
+      "source_paths": [
+        "docs/publication/zhiyuan-writing-method.md"
+      ]
+    },
+    "007-bounded-trust-function-os-v02-capability-benchmark": {
+      "current_claim_ceiling": "original-target PARTIALLY_SUPPORTED_WITH_IDENTIFIED_FAILURES; repaired-target SUPPORTED_WITHIN_BOUNDED_DOMAIN; no claim of complete sandboxing, production readiness or universal correctness",
+      "editorial_status": "REVIEWED_CURRENT",
+      "file": "docs/editorial/articles/007-bounded-trust-function-os-v02-capability-benchmark.md",
+      "last_reviewed_commit": "9d7d5ab512ffe3fd109a60ebd3d9d246b3a42d19",
+      "materiality_rules": [
+        "any change to a listed source path requires re-review before currency",
+        "changing only an unrelated source does not force staleness"
+      ],
+      "review_evidence": "article 007 reviewed against task-105 exact head 9d7d5ab5; original and repaired verdicts kept distinct; bounded N2 defect repaired",
+      "source_hashes": {
+        "function-os-candidate/v0.2/README.md": "ab80c23b895b66ff490ac81c6c687948e928743ba5c648f6acf36029d8b861c1",
+        "function-os-candidate/v0.2/benchmark/30_EXECUTION_LOG.md": "daf2a58a64d5bc86abb47bdb3d60683bea57e45fb13f1150da609ec8c484212f"
+      },
+      "source_ids": [
+        "README.md",
+        "30_EXECUTION_LOG.md"
+      ],
+      "source_paths": [
+        "function-os-candidate/v0.2/README.md",
+        "function-os-candidate/v0.2/benchmark/30_EXECUTION_LOG.md"
+      ]
+    },
+    "008-merged-but-stale-public-truth": {
+      "current_claim_ceiling": "explanatory only; no new scientific/mathematical/empirical conclusion; asserts only that a fail-closed propagation mechanism now exists",
+      "editorial_status": "REVIEWED_CURRENT",
+      "file": "docs/editorial/articles/008-merged-but-stale-public-truth.md",
+      "last_reviewed_commit": "task-106-exact-head",
+      "materiality_rules": [
+        "any change to a listed source path requires re-review before currency",
+        "changing only an unrelated source does not force staleness"
+      ],
+      "review_evidence": "article 008 reviewed against task-106 exact head at ordinary merge; explains post-merge current-truth lag without new claims",
+      "source_hashes": {
+        "data/operations/merged-iteration-ledger.jsonl": "cbd51a5f9540a92942964c908ada28a259fba762fd7af29ab919f229dd9cacd7",
+        "tools/propagation/validate_reconciliation.py": "b83e9ffef9add4d74673b9aa6b53b98ac5e0ffb123fa70ab1519bece89d42bce"
+      },
+      "source_ids": [
+        "merged-iteration-ledger.jsonl",
+        "validate_reconciliation.py"
+      ],
+      "source_paths": [
+        "data/operations/merged-iteration-ledger.jsonl",
+        "tools/propagation/validate_reconciliation.py"
+      ]
+    }
+  },
+  "generated_by": "tools/propagation/generate_editorial_manifest.py",
+  "schema_version": "1.0.0"
+}
