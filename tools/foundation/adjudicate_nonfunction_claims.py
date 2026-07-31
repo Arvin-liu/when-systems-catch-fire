@@ -51,6 +51,29 @@ SELF_EXCLUDES = {
     # without spawning claims from docstrings/comments.
     "tools/governance/gen_source_first_seen.py",
     "tools/governance/check_knowledge_experience_determinism.py",
+    # Task 108 (two-phase iteration terminalization, R1 20260801) lifecycle subsystem:
+    # these are propagation tooling/schema/tests/docs/reports scoped to iteration
+    # lifecycle accounting only. They are NOT authoritative claim sources; exclude so
+    # discovery/governance stay accountable without fabricating claims from their text.
+    "data/operations/derived-lifecycle-view.json",
+    "data/operations/lifecycle-events.jsonl",
+    "data/operations/propagation/108-impact/system-map-nonimpact-proof.json",
+    "docs/operations/lifecycle-readme.md",
+    "reports/operations/lifecycle-audit-108.md",
+    "schemas/operations/lifecycle-event.schema.json",
+    "tests/test_lifecycle_events.py",
+    "tests/test_terminalization_allowlist.py",
+    "tools/propagation/derived_lifecycle_view.py",
+    "tools/propagation/lifecycle_events.py",
+    "tools/propagation/tag_validator.py",
+    "tools/propagation/terminalization_allowlist.py",
+    "tools/propagation/terminalization_generator.py",
+    # Task 108 CI workflow: new in this PR; tooling/spec, not an authoritative
+    # claim source. Excluded so discovery stays accountable without spawning
+    # claims from workflow YAML. (Pre-existing scanned files such as the
+    # foundation generators or current_truth_projection.py remain scanned; their
+    # edits regenerate deterministic foundation outputs per the task-107 pattern.)
+    ".github/workflows/iteration-lifecycle-validation.yml",
 }
 MACHINE_EXCLUDE_PREFIXES = (
     "data/foundation/nonfunction-claims/",
