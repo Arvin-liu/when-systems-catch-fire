@@ -1,32 +1,32 @@
 {
-  "adjudication_ledger_records": 6056,
+  "adjudication_ledger_records": 6097,
   "blocked_semantic_rebounds": 0,
-  "canonical_identity_cards": 6056,
+  "canonical_identity_cards": 6097,
   "claim_ceiling": "Repository-scoped classification, executable checks and explicit quarantine closure; no external truth, peer review, empirical replication or universal proof is inferred.",
   "closure_definition": "Every discovery has one canonical card, one primary identity, two maturity values, one final disposition and an evidence or quarantine path.",
   "counterexample_records": 12,
   "dependency_edges": 1923,
   "dependency_nodes_with_dangling_parents": 0,
-  "discovered_assets": 6056,
+  "discovered_assets": 6097,
   "disposition_distribution": {
     "DOWNGRADE_TO_CONJECTURE": 44,
     "DOWNGRADE_TO_PENDING": 77,
-    "KEEP_AS_ALGORITHM": 1926,
+    "KEEP_AS_ALGORITHM": 1962,
     "KEEP_AS_ESTABLISHED_MATH": 1,
     "KEEP_AS_STRUCTURAL_METAPHOR": 4,
     "KEEP_AS_TESTED_INDEX_OR_CLASSIFIER": 1,
     "KEEP_AS_TOY_MODEL": 2,
-    "QUARANTINE_UNTIL_DEFINED": 3999,
+    "QUARANTINE_UNTIL_DEFINED": 4004,
     "REJECT_AS_INVALID": 1,
     "REWRITE_AND_RETEST": 1
   },
-  "explicit_quarantine_or_pending": 4121,
+  "explicit_quarantine_or_pending": 4126,
   "external_evidence_distribution": {
-    "E0": 6051,
+    "E0": 6092,
     "E1": 5
   },
   "identity_distribution": {
-    "ALGORITHM_OR_WORKFLOW": 2009,
+    "ALGORITHM_OR_WORKFLOW": 2045,
     "CONJECTURE_OR_RESEARCH_CANDIDATE": 122,
     "GATE_OR_CLASSIFIER": 18,
     "HEURISTIC": 24,
@@ -35,12 +35,12 @@
     "RELATION_OR_CONSTRAINT": 227,
     "SCORING_OR_INDEX_FUNCTION": 72,
     "STRUCTURAL_METAPHOR": 4,
-    "UNRESOLVED_IDENTITY": 3507
+    "UNRESOLVED_IDENTITY": 3512
   },
   "mathematical_maturity_distribution": {
-    "M0": 3509,
-    "M1": 1857,
-    "M2": 685,
+    "M0": 3514,
+    "M1": 1879,
+    "M2": 699,
     "M3": 1,
     "M4": 3,
     "M6": 1
@@ -49,8 +49,8 @@
   "registry_closed": true,
   "reviewer_state_distribution": {
     "TASK98_HUMAN_ADJUDICATION_RECONFIRMED": 12,
-    "TASK99_MACHINE_TRIAGED_EXPLICIT_QUARANTINE": 3508,
-    "TASK99_REPOSITORY_EVIDENCE_ADJUDICATED": 2536
+    "TASK99_MACHINE_TRIAGED_EXPLICIT_QUARANTINE": 3513,
+    "TASK99_REPOSITORY_EVIDENCE_ADJUDICATED": 2572
   },
   "schema_version": "2.0.0",
   "semantic_rebound_candidates": 24,
