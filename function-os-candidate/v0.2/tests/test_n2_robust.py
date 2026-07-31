@@ -89,5 +89,48 @@ class TestN2ValidatorNegative(unittest.TestCase):
         self.assertEqual(self.val.validate(rep, spec), [])
 
 
+class TestN2NestedEqualityRegression(unittest.TestCase):
+    """Regression for task-105 finding: postconditions with nested '==' such as
+    'result == (x == y)' were split on every '==' (global split), yielding an
+    unbalanced RHS like '(x ' and a downstream "'(' was never closed" runtime
+    error. The fix splits on the FIRST '==' only."""
+
+    NESTED_EQ_SPEC = (
+        '{"function_id":"FN-20260730-0156","spec_version":"1.0.0","name":"eq",'
+        '"domain":"symbolic","inputs":{"x":"integer","y":"integer"},'
+        '"outputs":{"result":"boolean"},"preconditions":[],'
+        '"postconditions":[{"expression":"result == (x == y)",'
+        '"message":"eq semantics"}],"effects_declared":["pure"],'
+        '"created_at":"2026-07-30T00:00:00Z"}'
+    )
+
+    def setUp(self):
+        self.parser = N1FunctionSpecParser()
+        self.enc = N2RepresentationEncoder()
+
+    def test_nested_equality_extraction(self):
+        spec = self.parser.parse(self.NESTED_EQ_SPEC)
+        exprs = self.enc._extract_expressions(spec)
+        self.assertEqual(exprs['result'], '(x == y)')
+
+    def test_nested_equality_executes(self):
+        from function_os.n3_compiler import N3SymbolicCompiler
+        from function_os.n4_artifact_packager import N4ArtifactPackager
+        from function_os.n5_interpreter import N5Interpreter
+
+        spec = self.parser.parse(self.NESTED_EQ_SPEC)
+        rep = self.enc.encode(spec)
+        compiled = N3SymbolicCompiler().compile(spec, rep)
+        art = N4ArtifactPackager().package(compiled, spec, rep)
+
+        res_eq = N5Interpreter().execute(art, {"x": 2, "y": 2})
+        self.assertEqual(res_eq['status'], 'OK')
+        self.assertEqual(res_eq['outputs']['result'], True)
+
+        res_ne = N5Interpreter().execute(art, {"x": 2, "y": 3})
+        self.assertEqual(res_ne['status'], 'OK')
+        self.assertEqual(res_ne['outputs']['result'], False)
+
+
 if __name__ == '__main__':
     unittest.main()
