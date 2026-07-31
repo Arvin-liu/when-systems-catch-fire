@@ -25,9 +25,11 @@ on:
       - 'data/architecture/**'
       - 'tools/operations/**'
       - 'tools/generate_interactive_system_map.py'
+      - 'tools/propagation/**'
       - 'tests/test_change_propagation.py'
       - 'tests/test_era_resolver_generalization.py'
       - 'tests/test_generated_output_authority.py'
+      - 'tests/test_propagation_reconciliation.py'
       - 'tools/validate_iteration_sync.py'
       - 'tests/test_iteration_sync.py'
       - 'tools/validate_human_front_door.py'
@@ -51,6 +53,7 @@ on:
       - 'ITERATION.md'
       - 'README.md'
       - 'docs/project-current-state.md'
+      - 'docs/editorial/**'
       - 'AI-HANDOFF.md'
       - 'AGENTS.md'
       - 'AI-START-HERE.md'
@@ -83,9 +86,11 @@ on:
       - 'data/architecture/**'
       - 'tools/operations/**'
       - 'tools/generate_interactive_system_map.py'
+      - 'tools/propagation/**'
       - 'tests/test_change_propagation.py'
       - 'tests/test_era_resolver_generalization.py'
       - 'tests/test_generated_output_authority.py'
+      - 'tests/test_propagation_reconciliation.py'
       - 'tools/validate_iteration_sync.py'
       - 'tests/test_iteration_sync.py'
       - 'tools/validate_human_front_door.py'
@@ -109,6 +114,7 @@ on:
       - 'ITERATION.md'
       - 'README.md'
       - 'docs/project-current-state.md'
+      - 'docs/editorial/**'
       - 'AI-HANDOFF.md'
       - 'AGENTS.md'
       - 'AI-START-HERE.md'
@@ -233,3 +239,7 @@ jobs:
       - run: python3 -m unittest tests.test_era_resolver_generalization tests.test_generated_output_authority -v
       - run: python3 -m unittest tests.test_phase_e_candidate -v
       - run: python3 -m unittest tests.test_production_execution_authority -v
+      - name: "Task 106 — fail-closed propagation reconciliation"
+        run: |
+          python3 -m unittest tests.test_propagation_reconciliation -v
+          python3 tools/propagation/validate_reconciliation.py --check

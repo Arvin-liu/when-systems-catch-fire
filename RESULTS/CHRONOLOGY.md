@@ -3707,3 +3707,9 @@
 - **变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - **处置：** `HUMAN_INDEX_ONLY`
+
+## 任务 104—105（编辑叙事层与 Function OS 有界基准）· 2026-07-30 / 2026-07-31
+
+- 任务 104（PR #160，已合并）：编辑文章层（六篇）+ 语料关系分析；首页系统图 NO_MAP_IMPACT（未改动三个受治理源与生成器）。
+- 任务 105（PR #161，精确 head 9d7d5ab512ffe3fd109a60ebd3d9d246b3a42d19，普通合并 9b5b4b9bfb243fe4cc52f7b163a9613ee6628321）：Function OS v0.2 有界能力基准；先预注册再对抗验证；原始目标 PARTIALLY_SUPPORTED_WITH_IDENTIFIED_FAILURES（25 个 false_reject，源自 N2 嵌套相等提取缺陷），修复后目标 SUPPORTED_WITHIN_BOUNDED_DOMAIN；有界 N2 缺陷修复并复跑通过。
+- 任务 106（本迭代）：合并后真相传播基础设施——规范 merged-iteration ledger、9 维 impact 引擎、current-truth 投影、fail-closed 验证器、编辑文章 stale/review 生命周期、系统图 impact 审计；将任务 104/105 调和进当前公开真相，使后续合并的当前真相可确定性传播并在矛盾时 fail closed。

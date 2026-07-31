@@ -1,0 +1,114 @@
+{
+  "dimensions": {
+    "CURRENT_PUBLIC_WORDING_IMPACT": {
+      "baseline_sha256": {
+        "HUMAN-READING.md": "ae554d4146af3ad9932ca17369be5ddc6f381010d7ac6c2987ec90873a1a38fb",
+        "README.md": "39c80e4d680204f1c215a83ff30206607cedee139308afc9249fef5fdcd9a181",
+        "RESULTS/LATEST.md": "17844d1bc35de20836a9468760690d851d6d429594a407051bfb10d5de60e6c9",
+        "docs/project-current-state.md": "8023ca0a4712311c2c9414e41d9c397f907dce3b0ea88fdb2248379e8737591d"
+      },
+      "declared": "NO_IMPACT_JUSTIFIED",
+      "governed_sources": [
+        "README.md",
+        "RESULTS/LATEST.md",
+        "docs/project-current-state.md",
+        "HUMAN-READING.md"
+      ]
+    },
+    "EDITORIAL_ARTICLE_IMPACT": {
+      "baseline_sha256": {
+        "docs/editorial/articles/007-bounded-trust-function-os-v02-capability-benchmark.md": "cfb25e465b572bf954bc8987838e76071412581cc195a6c7a50d37b4929687e0",
+        "docs/editorial/source-manifest.json": "2ec63b197fa4bf0b7f673e7c0d46ec284109729b4b22074359c8f7d1cf2dfa0b"
+      },
+      "declared": "NO_IMPACT_JUSTIFIED",
+      "governed_sources": [
+        "docs/editorial/articles/007-bounded-trust-function-os-v02-capability-benchmark.md",
+        "docs/editorial/source-manifest.json"
+      ]
+    },
+    "EVIDENCE_PROGRAM_IMPACT": {
+      "baseline_sha256": {
+        "evidence-program/README.md": "4507ab0cf416f13298d14780b4029c51bcd9338bb3211dd9a691ea33f2aa2012",
+        "evidence-program/registry/candidate-portfolio.jsonl": "5cf1bdc7a7b35a32ad9d32bf2176c886c561c205f20c8617b6402902716b5cbd"
+      },
+      "declared": "NO_IMPACT_JUSTIFIED",
+      "governed_sources": [
+        "evidence-program/README.md",
+        "evidence-program/registry/candidate-portfolio.jsonl"
+      ]
+    },
+    "MACHINE_RECORD_IMPACT": {
+      "baseline_sha256": {
+        "RESULTS/CLAIM-DELTA.md": "1077e97dda1a743cf3bb946fc11634b6c28b9302d5d49fcbda18d89323dff86e",
+        "RESULTS/EVIDENCE-LINEAGE.md": "647b396503f96e1d4f7b1f472724dff85317a68302a3561cef6e66f6091439ca",
+        "RESULTS/IMPACT-ANALYSIS.md": "1d6cd655241ad0116e9749a4deaf92cadc5f33bb371951cff54441567f5d42cf",
+        "RESULTS/SELF-CORRECTION-AUDIT.md": "8161719a83a46a3adcc39fa22ea3cd75bd63548ff3103f7f58d3ae0c65076c2a"
+      },
+      "declared": "NO_IMPACT_JUSTIFIED",
+      "governed_sources": [
+        "RESULTS/CLAIM-DELTA.md",
+        "RESULTS/IMPACT-ANALYSIS.md",
+        "RESULTS/EVIDENCE-LINEAGE.md",
+        "RESULTS/SELF-CORRECTION-AUDIT.md"
+      ]
+    },
+    "MATURITY_OR_DISPOSITION_IMPACT": {
+      "baseline_sha256": {
+        "RESULTS/ADJUDICATION-SUMMARY.md": "4384654afc6f7d2a00fa33c1b1f0b9bdc21cfab63c24d99c0ef1a635861f873e",
+        "function-os-candidate/v0.2/schemas/README.md": "869425950358c6ffbd05bb39ad76e65204491c25cbab47e41f150da18a23e862"
+      },
+      "declared": "NO_IMPACT_JUSTIFIED",
+      "governed_sources": [
+        "RESULTS/ADJUDICATION-SUMMARY.md",
+        "function-os-candidate/v0.2/schemas/README.md"
+      ]
+    },
+    "OPEN_QUESTION_IMPACT": {
+      "baseline_sha256": {
+        "RESULTS/OPEN-QUESTIONS.md": "1088e4c05fdd6fedb030eb1540cb6f2e526cc2a02931f8a3b4b363013a54863e"
+      },
+      "declared": "NO_IMPACT_JUSTIFIED",
+      "governed_sources": [
+        "RESULTS/OPEN-QUESTIONS.md"
+      ]
+    },
+    "PROJECT_STATE_IMPACT": {
+      "baseline_sha256": {
+        "ITERATION.md": "8379b7616dd9161dec19f0aa1c991f5b3bd5956447a638f5c4d08e4e3bebfba4",
+        "docs/project-current-state.md": "8023ca0a4712311c2c9414e41d9c397f907dce3b0ea88fdb2248379e8737591d"
+      },
+      "declared": "NO_IMPACT_JUSTIFIED",
+      "governed_sources": [
+        "docs/project-current-state.md",
+        "ITERATION.md"
+      ]
+    },
+    "REFERENCE_SURFACE_IMPACT": {
+      "baseline_sha256": {
+        "docs/architecture/interactive-system-map.md": "3a6f56bb83713d0883cd5d2d14daf5628d1ccfb0b103e7ebffe244d37e08a216",
+        "function-os-candidate/v0.2/README.md": "ab80c23b895b66ff490ac81c6c687948e928743ba5c648f6acf36029d8b861c1"
+      },
+      "declared": "NO_IMPACT_JUSTIFIED",
+      "governed_sources": [
+        "function-os-candidate/v0.2/README.md",
+        "docs/architecture/interactive-system-map.md"
+      ]
+    },
+    "SYSTEM_MAP_IMPACT": {
+      "baseline_sha256": {
+        "data/architecture/interactive-system-map-layout.json": "29fe4b1ed7e7d93a8703c5f5d53f097449d4b8c791e4660eb6830fe97f01af18",
+        "data/operations/change-propagation-topology.json": "3d8e90746ba92be9ec9d2eb84733034d092825b60bd4d0d5a3978a8988d8059a",
+        "data/operations/project-components.json": "8cf1c869cc5df0d7138c1043a1242cdff37c77bcfa3a6e12628efe95b7023a9a",
+        "tools/generate_interactive_system_map.py": "0c70dfde5f60e0947551047a2c5d3510ce871abdd323ee986720d546bffc07f8"
+      },
+      "declared": "NO_IMPACT_JUSTIFIED",
+      "governed_sources": [
+        "data/operations/project-components.json",
+        "data/operations/change-propagation-topology.json",
+        "data/architecture/interactive-system-map-layout.json",
+        "tools/generate_interactive_system_map.py"
+      ]
+    }
+  },
+  "task_number": 104
+}

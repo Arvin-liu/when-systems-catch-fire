@@ -47,6 +47,17 @@
 - 完整机器与人工产物：`evidence-program/` 与
   `evidence-program/runs/IGNITION-EVIDENCE-PILOT-R1-CROSSREF-DOI-VERIFICATION/RESULT.md`。
 
+## 任务 104 与 105（编辑叙事层与 Function OS 有界基准）
+
+|问题|当前结果|成熟度/证据边界|来源|处置|
+|---|---|---|---|---|
+|编辑文章层与语料关系分析（任务 104）|六篇编辑文章 + 语料关系图，作为叙事层与注册表分离；首页系统图 NO_MAP_IMPACT。|叙事结论，不替代注册表裁决。|[编辑入口](../docs/editorial/README.md)|PROPAGATED_AND_MERGED|
+|Function OS v0.2 核心能力基准（任务 105）|原始目标 `PARTIALLY_SUPPORTED_WITH_IDENTIFIED_FAILURES`；修复后目标 `SUPPORTED_WITHIN_BOUNDED_DOMAIN`（有界 N2 缺陷修复）。|有界域内；不声称完整沙箱化、生产就绪或普遍正确。|[文章 007](../docs/editorial/articles/007-bounded-trust-function-os-v02-capability-benchmark.md)|BOUNDED_BENCHMARK_COMPLETED|
+
+- 任务 105 先预注册再运行，保留全部原始负面证据；25 个 false_reject 来自 N2 嵌套相等提取缺陷，修复后复跑通过。
+- 原始与修复判定保持区分，不合并为单一结论。
+- 任务 104 的编辑产出未改动系统图三个受治理源与生成器，故首页系统图对其无影响（NO_MAP_IMPACT）。
+
 ## 不能从这些结果推出
 
 - 不能推出点火已经成为被同行评审或实验复现的统一科学理论。

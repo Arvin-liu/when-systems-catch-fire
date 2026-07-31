@@ -1,0 +1,111 @@
+{
+  "_derived_from_terminal_only": true,
+  "_non_terminal_tasks_excluded": [
+    106
+  ],
+  "article_review_states": {
+    "001": "REVIEWED_CURRENT",
+    "002": "REVIEWED_CURRENT",
+    "003": "REVIEWED_CURRENT",
+    "004": "REVIEWED_CURRENT",
+    "005": "REVIEWED_CURRENT",
+    "006": "REVIEWED_CURRENT",
+    "007": "REVIEWED_CURRENT"
+  },
+  "current_accepted_iteration": 105,
+  "current_capability_evidence": [
+    {
+      "ids": [
+        "editorial-layer",
+        "corpus-relation-graph"
+      ],
+      "task": 104
+    },
+    {
+      "ids": [
+        "function-os-v0.2"
+      ],
+      "task": 105
+    }
+  ],
+  "current_project_status_commit": "9b5b4b9bfb243fe4cc52f7b163a9613ee6628321",
+  "current_project_status_date": "2026-07-31",
+  "map_state_and_impact": [
+    {
+      "task": 104,
+      "verdict": "NO_MAP_IMPACT"
+    },
+    {
+      "task": 105,
+      "verdict": "NO_MAP_IMPACT"
+    }
+  ],
+  "recently_merged_results": [
+    {
+      "classification": "editorial article layer (six articles) + corpus relation analysis; live-system-map classified NO_MAP_IMPACT",
+      "exact_head": "see merge^2 of 16f64004",
+      "merge_commit": "16f640045b3dc9d411f015a51e45de07299d31fc",
+      "task_id": "IGNITION-NARRATIVE-SYNTHESIS-AND-LIVE-SYSTEM-MAP-R1-20260730",
+      "task_number": 104,
+      "terminal_state": "IGNITION_NARRATIVE_SYNTHESIS_EDITORIAL_LAYER_AND_RELATION_ANALYSIS_PROPAGATED_AND_MERGED"
+    },
+    {
+      "classification": "Function OS v0.2 bounded capability benchmark: original-target verdict PARTIALLY_SUPPORTED_WITH_IDENTIFIED_FAILURES (25 false_reject from N2 bug); repaired-target verdict SUPPORTED_WITHIN_BOUNDED_DOMAIN; bounded N2 nested-equality defect repaired",
+      "exact_head": "9d7d5ab512ffe3fd109a60ebd3d9d246b3a42d19",
+      "merge_commit": "9b5b4b9bfb243fe4cc52f7b163a9613ee6628321",
+      "task_id": "IGNITION-FUNCTION-OS-CORE-CAPABILITY-BENCHMARK-ADVERSARIAL-VALIDATION-R1-20260730",
+      "task_number": 105,
+      "terminal_state": "IGNITION_FUNCTION_OS_CORE_CAPABILITY_PREREGISTERED_BENCHMARKED_ADVERSARIALLY_VALIDATED_PROPAGATED_AND_MERGED"
+    }
+  ],
+  "resolved_questions": [
+    "OQ-103-5: Function OS v0.2 correctness benchmark executed (bounded)",
+    "OQ-103-5: Function OS v0.2 correctness benchmark executed (bounded)"
+  ],
+  "unresolved_propagation_obligations": [
+    {
+      "surface": "docs/editorial/*",
+      "task": 104
+    },
+    {
+      "surface": "analysis/corpus-relation/*",
+      "task": 104
+    },
+    {
+      "surface": "docs/editorial/source-manifest.json (added by 106)",
+      "task": 104
+    },
+    {
+      "surface": "function-os-candidate/v0.2/README.md",
+      "task": 105
+    },
+    {
+      "surface": "docs/editorial/articles/007-bounded-trust-function-os-v02-capability-benchmark.md",
+      "task": 105
+    },
+    {
+      "surface": "README.md",
+      "task": 105
+    },
+    {
+      "surface": "RESULTS/LATEST.md",
+      "task": 105
+    },
+    {
+      "surface": "RESULTS/OPEN-QUESTIONS.md",
+      "task": 105
+    },
+    {
+      "surface": "docs/project-current-state.md",
+      "task": 105
+    },
+    {
+      "surface": "KNOWLEDGE/WHATS-NEW.md",
+      "task": 105
+    },
+    {
+      "surface": "evidence-program/README.md",
+      "task": 105
+    }
+  ]
+}

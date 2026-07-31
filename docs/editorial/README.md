@@ -54,6 +54,7 @@
 | `005-description-is-not-proof-systems-representations.md` | 重大开放问题（不假装解决） | 描述不等于证明：能说什么，不能说什么 |
 | `006-readable-works-with-boundaries.md` | 编辑 / 出版纪律 | 把结果写成可读作品，而不越过边界 |
 | `007-bounded-trust-function-os-v02-capability-benchmark.md` | 证据 / 验证 | 边界之内的可信：Function OS v0.2 能力基准告诉我们什么，以及它诚实停在哪里 |
+| `008-merged-but-stale-public-truth.md` | 架构 / 治理 | 已合并，却活在过去：公开当前真相为何会滞后 |
 
 ---
 

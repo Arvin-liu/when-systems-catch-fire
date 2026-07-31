@@ -15,11 +15,16 @@
 - [之元写作法](../docs/publication/zhiyuan-writing-method.md)：把受 provenance 与 claim ceiling 约束的材料投影到公共语言层；派生产物不是新的独立证据。
 - [《当一支军队开始相信自己的背影》](../docs/publication/works/when-an-army-believes-its-own-back.md)：从历史案例出发的成稿。
 - [成果链](../docs/publication/zhiyuan-writing-showcase.md)：起始案例、点火分析、成稿与方法说明的可追溯入口。
+- [《边界之内的可信：Function OS v0.2 能力基准》](../docs/editorial/articles/007-bounded-trust-function-os-v02-capability-benchmark.md)：任务 105 基准与有界结论（原始/修复判定区分）。
+- [《已合并，却活在过去：公开当前真相为何会滞后》](../docs/editorial/articles/008-merged-but-stale-public-truth.md)：任务 106 的解释性文章。
 
 ## 架构与迭代研究
 
 - [MCF](../docs/architecture/multiscale-causal-fabric.md)、[PSD](../docs/architecture/probabilistic-system-dynamics.md)、[ARN](../docs/architecture/adaptive-relational-network.md)：分别组织因果类型、概率动态与关系网络投影；表示能力不升级为现实因果证明。
 - [点火迭代操作法](../ITERATION.md)：从远端事实、最小缺口、传播闭包、验证、审查、合并到回执的操作合同。
+- [任务 104 编辑叙事层与语料关系分析](../docs/editorial/README.md)（PR #160，已合并，NO_MAP_IMPACT）。
+- [任务 105 Function OS v0.2 有界基准](../docs/editorial/articles/007-bounded-trust-function-os-v02-capability-benchmark.md)（PR #161，已合并）。
+- [任务 106 合并后真相传播与当前真相调和](../ITERATION.md)（规范化 ledger / 9 维 impact 引擎 / current-truth 投影 / fail-closed 验证器）。
 - [历史结果台账](./CHRONOLOGY.md)：覆盖仓库现存研究、审计和迭代报告，每项保留来源与边界。
 
 ## 阅读边界

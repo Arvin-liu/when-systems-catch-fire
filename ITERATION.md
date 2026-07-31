@@ -306,3 +306,18 @@ The authority chain is:
 The lightweight gate validates the snapshot claim and publication boundary, not the underlying candidate capability. It rejects identity drift, missing evidence, duplicate IDs, removed limitations, capability registration, privacy/secret exposure, disguised rejection, stale projections, broken succession and responsibility transfer. Final responsibility is a positive, reference-based contract: accountable fields contain only an `actor_ref` resolved to an ACTIVE `PERSON`/`ORGANIZATION` in the controlled actor registry, whose entry supplies stable identity and accountability/contact evidence. Both public Schemas derive their allowed references from that registry and runtime resolves the same source; either-surface disagreement blocks. Execution agents and workflows are separate technical records and can never substitute for final responsibility. Responsibility changes require a new snapshot revision and superseding responsibility record. Revision, supersession and withdrawal preserve history.
 
 The normative candidate contract is `docs/operations/stage-snapshot-publication.md`. This section, its schemas, tools, tests, templates and front-door projection are governed under iteration method 1.4.0 (now Current; 1.3.0 is Historical). They cannot use 1.4.0 to self-accept or self-merge; 1.4.0 became Current only after independent exact-head acceptance, ordinary merge, final-main validation and required production synchronization (controlled sync R1-20260726).
+
+## 合并后真相传播要求（任务 106 引入）
+
+自任务 106 起，任何后续任务在达到 Ready 之前，必须随交付物提供以下传播闭合证据；缺任一项，fail-closed 验证器会在普通 PR 的 CI 中判红：
+
+1. 一条 **iteration-ledger 候选记录**（`data/operations/merged-iteration-ledger.jsonl`，追加式，含控制提交、PR 号、base、exact reviewed head、普通合并提交、终端态与证据字段）。
+2. **精确远端证据绑定**：预注册祖先、原始结果保留、有界修复、修复后结果、exact-head 复核、所需 CI、干净克隆回执。
+3. **九维 impact 计算结果**（机器推导，声明与推导一致），`NO_IMPACT_JUSTIFIED` 必须命名受治理源集合并证明哈希未变。
+4. 所需的 **公开表面更新** 或 **已验证的无影响决策**。
+5. **编辑文章 stale/review 闭合**：若材料源变化，文章须离开 CURRENT 直至附审稿证据。
+6. **系统图 impact 闭合**：受治理源变化须触发重生成，未变化须留机器可验证的 NO_MAP_IMPACT 证明。
+7. **current-truth 投影无矛盾**，且两次连续生成字节一致（确定性定点）。
+8. **干净克隆可复现计划**。
+
+普通合并之后，终端 ledger 状态与合并后证据须定稿，但不得改写已审稿件的语义 lineage。

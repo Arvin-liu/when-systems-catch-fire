@@ -1,6 +1,6 @@
 # 点火项目现状
 
-更新时间：2026-07-30。当前状态包含任务 98—100 的断言/函数治理成果、任务 101 的人类可读知识表面与持续自我纠错引擎，以及任务 102 的统一知识入口与探索层。任务 102 分支在普通合并、`main` 验证和全新克隆复验前仍是 Candidate；这些条件满足后，本段描述其仓库 Current 接口。
+更新时间：2026-07-31。当前状态包含任务 98—103 的断言/函数治理、证据程序与人类可读知识表面，任务 104 的编辑叙事层与语料关系分析，以及任务 105 的 Function OS v0.2 有界能力基准。任务 104（PR #160）与任务 105（PR #161）均已普通合并、`main` 验证与全新克隆复验，本段描述其仓库 Current 接口。
 
 ## 当前形态
 
@@ -74,6 +74,15 @@ Iteration Method `1.4.0` 仍是当前仓库操作法。任务 101 增加机器/�
 - **首个试点：** 用公共 Crossref REST API 独立复验 `data/external-research/104-source-registry.jsonl` 中 117 条 `crossref_verified: true` 来源的 DOI。结果 **SUPPORTED_WITHIN_SCOPE**（117/117 解析、117/117 标题匹配、117/117 年份匹配、0 撤稿；1 条注册表内部重复 DOI 判定为有意跨 gap 引用，已保留并移交 104 数据负责人）。
 - **预注册先于结果：** 协议提交于 `a4d13a69…`，早于任何 Crossref 查询；校验器强制“预注册提交是结果提交的祖先、无事后阈值替换、来源溯源完整、无未登记指标”。
 - **处置：** 确认 `evidence_tier_104 = METADATA_VERIFIED` 不变；RUN-1 发现的 5 条 `crossref_year` 缺口已回填/修正并复跑验证（year_match=117/117），重复 DOI 判定为有意跨 gap 引用已保留（移交 104 数据负责人）——均为同层级数据修正，非降级。备用试点（OpenAlex 跨源、案例表历史锚点）与下一试点（Function OS v0.2 正确性）已排入开放问题。
+
+## 任务 104—105（编辑叙事层与 Function OS 有界基准）
+
+任务 104（PR #160，已合并）建立编辑文章层与语料关系分析；任务 105（PR #161，已合并，精确 head `9d7d5ab512ffe3fd109a60ebd3d9d246b3a42d19`，普通合并 `9b5b4b9bfb243fe4cc52f7b163a9613ee6628321`）执行 Function OS v0.2 核心能力基准、对抗验证与传播。二者均已合并且人类可读对应物齐备，本段描述其 Current 接口。
+
+- 任务 104：六篇编辑文章 + 语料关系图，作为叙事层刻意与机器注册表、人类结果层分离；本身对首页系统图为 **NO_MAP_IMPACT**（未改动 `project-components.json` / `change-propagation-topology.json` / `interactive-system-map-layout.json` 与生成器）。
+- 任务 105：Function OS v0.2 基准——**原始目标** `PARTIALLY_SUPPORTED_WITH_IDENTIFIED_FAILURES`（25 个 false_reject，源自 N2 嵌套相等提取缺陷），**修复后目标** `SUPPORTED_WITHIN_BOUNDED_DOMAIN`；有界 N2 缺陷已修复并复跑通过。
+- 证据上限：有界域内可信；**不声称**完整沙箱化、生产就绪或普遍正确。原始与修复判定保持区分，不合并为单一结论。
+- 任务 106（本迭代）建立了合并后真相传播基础设施：规范化 merged-iteration ledger、9 维 impact 引擎、确定性 current-truth 投影、fail-closed 验证器、编辑文章 stale/review 生命周期与系统图 impact 审计，使后续合并的当前真相可确定性传播并在矛盾时 fail closed。
 
 ## 更新规则
 

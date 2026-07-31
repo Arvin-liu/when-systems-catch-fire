@@ -84,6 +84,17 @@
 
 ![点火系统图](./docs/generated/ignition-system-map.svg)
 
+## 任务 104 与 105：编辑叙事层与 Function OS 有界基准
+
+任务 104（PR #160，已合并）建立了编辑文章层与语料关系分析；任务 105（PR #161，已合并，精确 head `9d7d5ab512ffe3fd109a60ebd3d9d246b3a42d19`，普通合并 `9b5b4b9bfb243fe4cc52f7b163a9613ee6628321`）执行了 Function OS v0.2 核心能力基准、对抗验证与传播。
+
+- 任务 104 编辑叙事层：`docs/editorial/articles/`（六篇文章）+ 语料关系图，本身对首页系统图为 **NO_MAP_IMPACT**。
+- 任务 105 Function OS v0.2 基准：**原始目标**判定 `PARTIALLY_SUPPORTED_WITH_IDENTIFIED_FAILURES`（25 个 false_reject，源自 N2 嵌套相等提取缺陷）；**修复后目标**判定 `SUPPORTED_WITHIN_BOUNDED_DOMAIN`（有界修复 `split('==')`→`split('==',1)`）。
+- 证据上限：有界域内可信；**不声称**完整沙箱化、生产就绪或普遍正确。
+- 原始目标仍标记为部分支持；只有修复后的精确 head 获得有利的有界判定，二者保持区分，不合并为单一讨好结论。
+
+[任务 105 文章：边界之内的可信](./docs/editorial/articles/007-bounded-trust-function-os-v02-capability-benchmark.md) · [当前结果](./RESULTS/LATEST.md)
+
 ## 项目内容入口
 
 ### 第一次阅读与使用

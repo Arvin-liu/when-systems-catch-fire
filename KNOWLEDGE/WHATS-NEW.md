@@ -2387,3 +2387,19 @@
 - **变化：** --- title: "证据制度库初稿生成" author: "之元" date: "2026-07-07" ---
 - **来源：** [evidence-regime-library-draft-20260706.md](../outputs/getbrain/evidence-regime-library-draft-20260706.md)
 - **资产卡：** [HR-448288B011711AEF](./ASSET-CARDS.md#asset-hr-448288b011711aef)
+
+<a id="change-chg-105"></a>
+### 2026-07-31 · 任务 105：Function OS v0.2 有界能力基准
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `CURRENT`
+- **变化：** 先预注册再对抗验证；原始目标 PARTIALLY_SUPPORTED_WITH_IDENTIFIED_FAILURES（25 个 false_reject，源自 N2 嵌套相等提取缺陷），修复后目标 SUPPORTED_WITHIN_BOUNDED_DOMAIN。证据上限限定于有界域，不声称完整沙箱化、生产就绪或普遍正确。
+- **来源：** [文章 007](../docs/editorial/articles/007-bounded-trust-function-os-v02-capability-benchmark.md) · [当前结果](../RESULTS/LATEST.md)
+
+<a id="change-chg-104"></a>
+### 2026-07-30 · 任务 104：编辑叙事层与语料关系分析
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `CURRENT`
+- **变化：** 六篇编辑文章 + 语料关系图，作为叙事层与机器注册表、人类结果层刻意分离；首页系统图 NO_MAP_IMPACT。
+- **来源：** [编辑入口](../docs/editorial/README.md)
