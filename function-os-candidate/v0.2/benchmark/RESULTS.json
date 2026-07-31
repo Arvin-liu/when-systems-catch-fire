@@ -6,7 +6,7 @@
     "DETERMINISTIC_REPRODUCIBILITY": "PENDING_REPLAY",
     "FAIL_CLOSED_LANGUAGE_BOUNDARY": "SUPPORTED_WITHIN_BOUNDED_DOMAIN",
     "REGISTRY_REVISION_AND_ROLLBACK_INTEGRITY": "SUPPORTED_WITHIN_BOUNDED_DOMAIN",
-    "SUPPORTED_SEMANTIC_FIDELITY": "PARTIALLY_SUPPORTED_WITH_IDENTIFIED_FAILURES"
+    "SUPPORTED_SEMANTIC_FIDELITY": "SUPPORTED_WITHIN_BOUNDED_DOMAIN"
   },
   "critical_violations": 0,
   "environment": {
@@ -16,8 +16,8 @@
       "n7": "0.2.1-candidate",
       "n9": "0.2.1-candidate"
     },
-    "generated_at": "2026-07-31T01:48:04.405241+00:00",
-    "git_head": "5d664686474ef4457e89127c53e2293a61028094",
+    "generated_at": "2026-07-31T01:53:33.371867+00:00",
+    "git_head": "1314ba807415b3945bc6784689af5a5559e66fc9",
     "oracle_allowed_nodes": [
       "UnaryOp",
       "Compare",
@@ -27,11 +27,12 @@
       "Mult",
       "Div",
       "Pow",
-      "FloorDiv",
       "UAdd",
-      "IfExp",
-      "Gt",
-      "Or",
+      "FloorDiv",
+      "NotEq",
+      "LtE",
+      "GtE",
+      "And",
       "Not",
       "BinOp",
       "Expression",
@@ -42,10 +43,9 @@
       "USub",
       "Eq",
       "Lt",
-      "NotEq",
-      "LtE",
-      "GtE",
-      "And"
+      "IfExp",
+      "Gt",
+      "Or"
     ],
     "platform": "macOS-26.6-arm64-arm-64bit-Mach-O",
     "prereg_ancestor_of_head": true,
@@ -58,17 +58,17 @@
     "crash_rate": 0.0,
     "failure_propagation_correctness_rate": 1.0,
     "false_accept_rate": 0.0,
-    "false_reject_rate": 0.06281407035175879,
+    "false_reject_rate": 0.0,
     "mutation_detection_rate": 1.0,
     "postcondition_enforcement_rate": 1.0,
     "precondition_enforcement_rate": 1.0,
     "revision_history_consistency_rate": 1.0,
     "rollback_restoration_rate": 1.0,
-    "semantic_agreement_rate": 0.9371859296482412,
+    "semantic_agreement_rate": 1.0,
     "sequential_composition_correctness_rate": 1.0,
     "successful_registry_contamination_count": 0
   },
-  "overall_verdict": "PARTIALLY_SUPPORTED_WITH_IDENTIFIED_FAILURES",
+  "overall_verdict": "SUPPORTED_WITHIN_BOUNDED_DOMAIN",
   "results": [
     {
       "_incomplete": false,
@@ -3638,12 +3638,14 @@
     {
       "_incomplete": false,
       "case_id": "S1-FIDELITY-0156",
-      "category": "false_reject",
+      "category": "correct_pass",
       "claim": "SUPPORTED_SEMANTIC_FIDELITY",
       "critical": false,
       "critical_violation": false,
-      "fos_outputs": {},
-      "fos_status": "RUNTIME_ERROR",
+      "fos_outputs": {
+        "result": true
+      },
+      "fos_status": "OK",
       "hashes": {
         "case_sha": "c9e3ce6ebd1827f3629e83171c880c6609430ecaf8b4a2080a93f1df646079e7",
         "spec_sha": "3273cfc728a395a6423fb7b972dac55392236acb7c62758361fa2c983a7c7f8b"
@@ -3652,19 +3654,21 @@
         "result": true
       },
       "oracle_status": "OK",
-      "result_sha": "6fe22d215990fc2653f45cc4f16b99f76ff248d043148863c567960e460e88b5",
+      "result_sha": "44e20d67c6ca62ac7622eb83e4a17abad0db76a15dba59c5190901e719f23c82",
       "stratum": "S1_reference_semantic",
       "test_kind": "fidelity"
     },
     {
       "_incomplete": false,
       "case_id": "S1-FIDELITY-0157",
-      "category": "false_reject",
+      "category": "correct_pass",
       "claim": "SUPPORTED_SEMANTIC_FIDELITY",
       "critical": false,
       "critical_violation": false,
-      "fos_outputs": {},
-      "fos_status": "RUNTIME_ERROR",
+      "fos_outputs": {
+        "result": false
+      },
+      "fos_status": "OK",
       "hashes": {
         "case_sha": "0772926b68cd3aa60563a48fcba7a6fd07218b63aaf4aaa0f73f404f15e3cdcf",
         "spec_sha": "aa4463daf66feffc9cf1caeceef81006385dd4cde3d63b85e7371b7d85c7fd9a"
@@ -3673,19 +3677,21 @@
         "result": false
       },
       "oracle_status": "OK",
-      "result_sha": "6fe22d215990fc2653f45cc4f16b99f76ff248d043148863c567960e460e88b5",
+      "result_sha": "44e20d67c6ca62ac7622eb83e4a17abad0db76a15dba59c5190901e719f23c82",
       "stratum": "S1_reference_semantic",
       "test_kind": "fidelity"
     },
     {
       "_incomplete": false,
       "case_id": "S1-FIDELITY-0158",
-      "category": "false_reject",
+      "category": "correct_pass",
       "claim": "SUPPORTED_SEMANTIC_FIDELITY",
       "critical": false,
       "critical_violation": false,
-      "fos_outputs": {},
-      "fos_status": "RUNTIME_ERROR",
+      "fos_outputs": {
+        "result": false
+      },
+      "fos_status": "OK",
       "hashes": {
         "case_sha": "45eb18e9619e22d25d011272fd6dbb58d3b8e159fa40625b33c896f43b569035",
         "spec_sha": "2526593bdc61d9bbb9af4c374b701980484858198304d52db1dd1661e101875a"
@@ -3694,19 +3700,21 @@
         "result": false
       },
       "oracle_status": "OK",
-      "result_sha": "6fe22d215990fc2653f45cc4f16b99f76ff248d043148863c567960e460e88b5",
+      "result_sha": "44e20d67c6ca62ac7622eb83e4a17abad0db76a15dba59c5190901e719f23c82",
       "stratum": "S1_reference_semantic",
       "test_kind": "fidelity"
     },
     {
       "_incomplete": false,
       "case_id": "S1-FIDELITY-0159",
-      "category": "false_reject",
+      "category": "correct_pass",
       "claim": "SUPPORTED_SEMANTIC_FIDELITY",
       "critical": false,
       "critical_violation": false,
-      "fos_outputs": {},
-      "fos_status": "RUNTIME_ERROR",
+      "fos_outputs": {
+        "result": false
+      },
+      "fos_status": "OK",
       "hashes": {
         "case_sha": "08f57bf5660c0cb7d160394bf91a6f7743404494ebfd18088717d5d699ff74ef",
         "spec_sha": "b4e6cf0107f4bf1d2cad57cb346899f778f43ce07c6954171785c341158ec2d5"
@@ -3715,19 +3723,21 @@
         "result": false
       },
       "oracle_status": "OK",
-      "result_sha": "6fe22d215990fc2653f45cc4f16b99f76ff248d043148863c567960e460e88b5",
+      "result_sha": "44e20d67c6ca62ac7622eb83e4a17abad0db76a15dba59c5190901e719f23c82",
       "stratum": "S1_reference_semantic",
       "test_kind": "fidelity"
     },
     {
       "_incomplete": false,
       "case_id": "S1-FIDELITY-0160",
-      "category": "false_reject",
+      "category": "correct_pass",
       "claim": "SUPPORTED_SEMANTIC_FIDELITY",
       "critical": false,
       "critical_violation": false,
-      "fos_outputs": {},
-      "fos_status": "RUNTIME_ERROR",
+      "fos_outputs": {
+        "result": false
+      },
+      "fos_status": "OK",
       "hashes": {
         "case_sha": "034d824b4f2fbfc7dbd2a2b382658c6815d8a90c9be512e33662e394bcaef48d",
         "spec_sha": "3cc64b92b14e06116d26f7226623c86049b697f5634b2b3402657f304466801f"
@@ -3736,19 +3746,21 @@
         "result": false
       },
       "oracle_status": "OK",
-      "result_sha": "6fe22d215990fc2653f45cc4f16b99f76ff248d043148863c567960e460e88b5",
+      "result_sha": "44e20d67c6ca62ac7622eb83e4a17abad0db76a15dba59c5190901e719f23c82",
       "stratum": "S1_reference_semantic",
       "test_kind": "fidelity"
     },
     {
       "_incomplete": false,
       "case_id": "S1-FIDELITY-0161",
-      "category": "false_reject",
+      "category": "correct_pass",
       "claim": "SUPPORTED_SEMANTIC_FIDELITY",
       "critical": false,
       "critical_violation": false,
-      "fos_outputs": {},
-      "fos_status": "RUNTIME_ERROR",
+      "fos_outputs": {
+        "result": false
+      },
+      "fos_status": "OK",
       "hashes": {
         "case_sha": "01bb20a25f41693213fb9991a119d21095d4da60de3c685b4d783cf19fabe130",
         "spec_sha": "add3b5e4c25f107da1d929cc4722c566e6c15d156736aae0c6882667f7e20a3a"
@@ -3757,19 +3769,21 @@
         "result": false
       },
       "oracle_status": "OK",
-      "result_sha": "6fe22d215990fc2653f45cc4f16b99f76ff248d043148863c567960e460e88b5",
+      "result_sha": "44e20d67c6ca62ac7622eb83e4a17abad0db76a15dba59c5190901e719f23c82",
       "stratum": "S1_reference_semantic",
       "test_kind": "fidelity"
     },
     {
       "_incomplete": false,
       "case_id": "S1-FIDELITY-0162",
-      "category": "false_reject",
+      "category": "correct_pass",
       "claim": "SUPPORTED_SEMANTIC_FIDELITY",
       "critical": false,
       "critical_violation": false,
-      "fos_outputs": {},
-      "fos_status": "RUNTIME_ERROR",
+      "fos_outputs": {
+        "result": true
+      },
+      "fos_status": "OK",
       "hashes": {
         "case_sha": "2d780bb6398be40f1532c349ba960cca425bde4b7d1ac76fd75ffe1a0d93d6f2",
         "spec_sha": "6a08e5e0a55426ac5ca0cba222e33964e434e2abc5ae5a573d9339af303caace"
@@ -3778,19 +3792,21 @@
         "result": true
       },
       "oracle_status": "OK",
-      "result_sha": "6fe22d215990fc2653f45cc4f16b99f76ff248d043148863c567960e460e88b5",
+      "result_sha": "44e20d67c6ca62ac7622eb83e4a17abad0db76a15dba59c5190901e719f23c82",
       "stratum": "S1_reference_semantic",
       "test_kind": "fidelity"
     },
     {
       "_incomplete": false,
       "case_id": "S1-FIDELITY-0163",
-      "category": "false_reject",
+      "category": "correct_pass",
       "claim": "SUPPORTED_SEMANTIC_FIDELITY",
       "critical": false,
       "critical_violation": false,
-      "fos_outputs": {},
-      "fos_status": "RUNTIME_ERROR",
+      "fos_outputs": {
+        "result": false
+      },
+      "fos_status": "OK",
       "hashes": {
         "case_sha": "46db25f1e8d6e920a3439783c0134f9697681ec1d332bff3941c282e046a96e4",
         "spec_sha": "ce7f6ed92c46606bf3d31aca2726d1982eb5045d6a2259678ebe7ba5a04a76ec"
@@ -3799,19 +3815,21 @@
         "result": false
       },
       "oracle_status": "OK",
-      "result_sha": "6fe22d215990fc2653f45cc4f16b99f76ff248d043148863c567960e460e88b5",
+      "result_sha": "44e20d67c6ca62ac7622eb83e4a17abad0db76a15dba59c5190901e719f23c82",
       "stratum": "S1_reference_semantic",
       "test_kind": "fidelity"
     },
     {
       "_incomplete": false,
       "case_id": "S1-FIDELITY-0164",
-      "category": "false_reject",
+      "category": "correct_pass",
       "claim": "SUPPORTED_SEMANTIC_FIDELITY",
       "critical": false,
       "critical_violation": false,
-      "fos_outputs": {},
-      "fos_status": "RUNTIME_ERROR",
+      "fos_outputs": {
+        "result": false
+      },
+      "fos_status": "OK",
       "hashes": {
         "case_sha": "092a0bc4992fd68cf44b481969fb77e215fe1f669685d427cfe9f37c76c00ca1",
         "spec_sha": "0f465ac5212eeb334405feb60fd71c96fd8f70e53696ae57df095d8a083b01bb"
@@ -3820,19 +3838,21 @@
         "result": false
       },
       "oracle_status": "OK",
-      "result_sha": "6fe22d215990fc2653f45cc4f16b99f76ff248d043148863c567960e460e88b5",
+      "result_sha": "44e20d67c6ca62ac7622eb83e4a17abad0db76a15dba59c5190901e719f23c82",
       "stratum": "S1_reference_semantic",
       "test_kind": "fidelity"
     },
     {
       "_incomplete": false,
       "case_id": "S1-FIDELITY-0165",
-      "category": "false_reject",
+      "category": "correct_pass",
       "claim": "SUPPORTED_SEMANTIC_FIDELITY",
       "critical": false,
       "critical_violation": false,
-      "fos_outputs": {},
-      "fos_status": "RUNTIME_ERROR",
+      "fos_outputs": {
+        "result": false
+      },
+      "fos_status": "OK",
       "hashes": {
         "case_sha": "4a532ae1b2db27fe07b5db12173fafe96e4cbc086e18ab63a0e109e769f7bbf1",
         "spec_sha": "0f3844bba3f6b3d53c73e1a6513898861f4b3cf59851248f0ee15e0e0782f8ae"
@@ -3841,19 +3861,21 @@
         "result": false
       },
       "oracle_status": "OK",
-      "result_sha": "6fe22d215990fc2653f45cc4f16b99f76ff248d043148863c567960e460e88b5",
+      "result_sha": "44e20d67c6ca62ac7622eb83e4a17abad0db76a15dba59c5190901e719f23c82",
       "stratum": "S1_reference_semantic",
       "test_kind": "fidelity"
     },
     {
       "_incomplete": false,
       "case_id": "S1-FIDELITY-0166",
-      "category": "false_reject",
+      "category": "correct_pass",
       "claim": "SUPPORTED_SEMANTIC_FIDELITY",
       "critical": false,
       "critical_violation": false,
-      "fos_outputs": {},
-      "fos_status": "RUNTIME_ERROR",
+      "fos_outputs": {
+        "result": false
+      },
+      "fos_status": "OK",
       "hashes": {
         "case_sha": "0ca7ea9c48f1ab6a90987f8df61c0631b4fc874c76859be374a258752c8ed678",
         "spec_sha": "a1e29981432543c781bf5c75641fe5d6e4795107bd0fe7195c2f74859e4787a8"
@@ -3862,19 +3884,21 @@
         "result": false
       },
       "oracle_status": "OK",
-      "result_sha": "6fe22d215990fc2653f45cc4f16b99f76ff248d043148863c567960e460e88b5",
+      "result_sha": "44e20d67c6ca62ac7622eb83e4a17abad0db76a15dba59c5190901e719f23c82",
       "stratum": "S1_reference_semantic",
       "test_kind": "fidelity"
     },
     {
       "_incomplete": false,
       "case_id": "S1-FIDELITY-0167",
-      "category": "false_reject",
+      "category": "correct_pass",
       "claim": "SUPPORTED_SEMANTIC_FIDELITY",
       "critical": false,
       "critical_violation": false,
-      "fos_outputs": {},
-      "fos_status": "RUNTIME_ERROR",
+      "fos_outputs": {
+        "result": false
+      },
+      "fos_status": "OK",
       "hashes": {
         "case_sha": "e58fdfb84f80d6e5b9377bdc3b12f959bcec2e9986bfd0e4932a9c567d38a51d",
         "spec_sha": "c7bc439480f69fd210dcbe46c9b7f80e4374ee4f8c7ce18e6afffc1c1773af2f"
@@ -3883,19 +3907,21 @@
         "result": false
       },
       "oracle_status": "OK",
-      "result_sha": "6fe22d215990fc2653f45cc4f16b99f76ff248d043148863c567960e460e88b5",
+      "result_sha": "44e20d67c6ca62ac7622eb83e4a17abad0db76a15dba59c5190901e719f23c82",
       "stratum": "S1_reference_semantic",
       "test_kind": "fidelity"
     },
     {
       "_incomplete": false,
       "case_id": "S1-FIDELITY-0168",
-      "category": "false_reject",
+      "category": "correct_pass",
       "claim": "SUPPORTED_SEMANTIC_FIDELITY",
       "critical": false,
       "critical_violation": false,
-      "fos_outputs": {},
-      "fos_status": "RUNTIME_ERROR",
+      "fos_outputs": {
+        "result": true
+      },
+      "fos_status": "OK",
       "hashes": {
         "case_sha": "aa686038bbf5c7ef3b5b67b044554fb0876fe2f5599dd7037bd197c0de3cc636",
         "spec_sha": "ef4d3be5d63de2a6f431891fc54f7a0bd29d178ee461fe4498ca5d0d0ccd4317"
@@ -3904,19 +3930,21 @@
         "result": true
       },
       "oracle_status": "OK",
-      "result_sha": "6fe22d215990fc2653f45cc4f16b99f76ff248d043148863c567960e460e88b5",
+      "result_sha": "44e20d67c6ca62ac7622eb83e4a17abad0db76a15dba59c5190901e719f23c82",
       "stratum": "S1_reference_semantic",
       "test_kind": "fidelity"
     },
     {
       "_incomplete": false,
       "case_id": "S1-FIDELITY-0169",
-      "category": "false_reject",
+      "category": "correct_pass",
       "claim": "SUPPORTED_SEMANTIC_FIDELITY",
       "critical": false,
       "critical_violation": false,
-      "fos_outputs": {},
-      "fos_status": "RUNTIME_ERROR",
+      "fos_outputs": {
+        "result": false
+      },
+      "fos_status": "OK",
       "hashes": {
         "case_sha": "7289c975e3c2a45e7d03d70954fa220d8a96cd486a7f42e6406e13250f519137",
         "spec_sha": "2f162e6b1e35c728898592290a86af23c5dc5ae36e4f8d262f6be8c148080431"
@@ -3925,19 +3953,21 @@
         "result": false
       },
       "oracle_status": "OK",
-      "result_sha": "6fe22d215990fc2653f45cc4f16b99f76ff248d043148863c567960e460e88b5",
+      "result_sha": "44e20d67c6ca62ac7622eb83e4a17abad0db76a15dba59c5190901e719f23c82",
       "stratum": "S1_reference_semantic",
       "test_kind": "fidelity"
     },
     {
       "_incomplete": false,
       "case_id": "S1-FIDELITY-0170",
-      "category": "false_reject",
+      "category": "correct_pass",
       "claim": "SUPPORTED_SEMANTIC_FIDELITY",
       "critical": false,
       "critical_violation": false,
-      "fos_outputs": {},
-      "fos_status": "RUNTIME_ERROR",
+      "fos_outputs": {
+        "result": false
+      },
+      "fos_status": "OK",
       "hashes": {
         "case_sha": "66380888eb00e7eaa525e3dccf3fd60febdc04b97aaee79b2af412a31237aa8e",
         "spec_sha": "55d86f06dbe236479cb94871340d72e956462f6aaac7676f831e82b62b46331e"
@@ -3946,19 +3976,21 @@
         "result": false
       },
       "oracle_status": "OK",
-      "result_sha": "6fe22d215990fc2653f45cc4f16b99f76ff248d043148863c567960e460e88b5",
+      "result_sha": "44e20d67c6ca62ac7622eb83e4a17abad0db76a15dba59c5190901e719f23c82",
       "stratum": "S1_reference_semantic",
       "test_kind": "fidelity"
     },
     {
       "_incomplete": false,
       "case_id": "S1-FIDELITY-0171",
-      "category": "false_reject",
+      "category": "correct_pass",
       "claim": "SUPPORTED_SEMANTIC_FIDELITY",
       "critical": false,
       "critical_violation": false,
-      "fos_outputs": {},
-      "fos_status": "RUNTIME_ERROR",
+      "fos_outputs": {
+        "result": false
+      },
+      "fos_status": "OK",
       "hashes": {
         "case_sha": "f98b15f29582439dc6e92057af5f05580fc1dd3e68f16c39c98d3f26bbe75b97",
         "spec_sha": "d5aa715e444782b59925cb43c287063b423de50bcfe8dddd2905aed77470ce5e"
@@ -3967,19 +3999,21 @@
         "result": false
       },
       "oracle_status": "OK",
-      "result_sha": "6fe22d215990fc2653f45cc4f16b99f76ff248d043148863c567960e460e88b5",
+      "result_sha": "44e20d67c6ca62ac7622eb83e4a17abad0db76a15dba59c5190901e719f23c82",
       "stratum": "S1_reference_semantic",
       "test_kind": "fidelity"
     },
     {
       "_incomplete": false,
       "case_id": "S1-FIDELITY-0172",
-      "category": "false_reject",
+      "category": "correct_pass",
       "claim": "SUPPORTED_SEMANTIC_FIDELITY",
       "critical": false,
       "critical_violation": false,
-      "fos_outputs": {},
-      "fos_status": "RUNTIME_ERROR",
+      "fos_outputs": {
+        "result": false
+      },
+      "fos_status": "OK",
       "hashes": {
         "case_sha": "11fb24e5e44103dc40955099f147322bdca2068eb6ca7e1d056aaff940ff0414",
         "spec_sha": "2aec58d41e075e85065f2e961f2ddaed6c580ee047385bc4f82812dd21eda234"
@@ -3988,19 +4022,21 @@
         "result": false
       },
       "oracle_status": "OK",
-      "result_sha": "6fe22d215990fc2653f45cc4f16b99f76ff248d043148863c567960e460e88b5",
+      "result_sha": "44e20d67c6ca62ac7622eb83e4a17abad0db76a15dba59c5190901e719f23c82",
       "stratum": "S1_reference_semantic",
       "test_kind": "fidelity"
     },
     {
       "_incomplete": false,
       "case_id": "S1-FIDELITY-0173",
-      "category": "false_reject",
+      "category": "correct_pass",
       "claim": "SUPPORTED_SEMANTIC_FIDELITY",
       "critical": false,
       "critical_violation": false,
-      "fos_outputs": {},
-      "fos_status": "RUNTIME_ERROR",
+      "fos_outputs": {
+        "result": false
+      },
+      "fos_status": "OK",
       "hashes": {
         "case_sha": "352e723ae996229ffdd07d8079e1e271832c81fe5d53a3b0f5b0267d1772bd01",
         "spec_sha": "01a3b3fbce1528a927e2711c77249f8cf9dde5eb8b53ff6cb0f8496ef416cebb"
@@ -4009,19 +4045,21 @@
         "result": false
       },
       "oracle_status": "OK",
-      "result_sha": "6fe22d215990fc2653f45cc4f16b99f76ff248d043148863c567960e460e88b5",
+      "result_sha": "44e20d67c6ca62ac7622eb83e4a17abad0db76a15dba59c5190901e719f23c82",
       "stratum": "S1_reference_semantic",
       "test_kind": "fidelity"
     },
     {
       "_incomplete": false,
       "case_id": "S1-FIDELITY-0174",
-      "category": "false_reject",
+      "category": "correct_pass",
       "claim": "SUPPORTED_SEMANTIC_FIDELITY",
       "critical": false,
       "critical_violation": false,
-      "fos_outputs": {},
-      "fos_status": "RUNTIME_ERROR",
+      "fos_outputs": {
+        "result": true
+      },
+      "fos_status": "OK",
       "hashes": {
         "case_sha": "1a04443f85e3f2fe9392040463392b28087e86176e2b02796a77965116e54ad0",
         "spec_sha": "4d9939649e866418dcb60ac36158b996030222557acbfaa457075018e4fd7d73"
@@ -4030,19 +4068,21 @@
         "result": true
       },
       "oracle_status": "OK",
-      "result_sha": "6fe22d215990fc2653f45cc4f16b99f76ff248d043148863c567960e460e88b5",
+      "result_sha": "44e20d67c6ca62ac7622eb83e4a17abad0db76a15dba59c5190901e719f23c82",
       "stratum": "S1_reference_semantic",
       "test_kind": "fidelity"
     },
     {
       "_incomplete": false,
       "case_id": "S1-FIDELITY-0175",
-      "category": "false_reject",
+      "category": "correct_pass",
       "claim": "SUPPORTED_SEMANTIC_FIDELITY",
       "critical": false,
       "critical_violation": false,
-      "fos_outputs": {},
-      "fos_status": "RUNTIME_ERROR",
+      "fos_outputs": {
+        "result": false
+      },
+      "fos_status": "OK",
       "hashes": {
         "case_sha": "ef9cd12bbe49457a53e3d134633c1690f779f57b935bbd3a023dd739fb3e8cc1",
         "spec_sha": "e8758482bc7817628815ba7756d379d8b3026e349d25cd486db97fcefeca615b"
@@ -4051,19 +4091,21 @@
         "result": false
       },
       "oracle_status": "OK",
-      "result_sha": "6fe22d215990fc2653f45cc4f16b99f76ff248d043148863c567960e460e88b5",
+      "result_sha": "44e20d67c6ca62ac7622eb83e4a17abad0db76a15dba59c5190901e719f23c82",
       "stratum": "S1_reference_semantic",
       "test_kind": "fidelity"
     },
     {
       "_incomplete": false,
       "case_id": "S1-FIDELITY-0176",
-      "category": "false_reject",
+      "category": "correct_pass",
       "claim": "SUPPORTED_SEMANTIC_FIDELITY",
       "critical": false,
       "critical_violation": false,
-      "fos_outputs": {},
-      "fos_status": "RUNTIME_ERROR",
+      "fos_outputs": {
+        "result": false
+      },
+      "fos_status": "OK",
       "hashes": {
         "case_sha": "0f8fa93258b6c9cdb5687d63f82ccb5366d190f1c314dd47433f1604445794bb",
         "spec_sha": "c843b242d659156292e12054d784ba92053dd011bb9d49e8001dbb8f72b6e745"
@@ -4072,19 +4114,21 @@
         "result": false
       },
       "oracle_status": "OK",
-      "result_sha": "6fe22d215990fc2653f45cc4f16b99f76ff248d043148863c567960e460e88b5",
+      "result_sha": "44e20d67c6ca62ac7622eb83e4a17abad0db76a15dba59c5190901e719f23c82",
       "stratum": "S1_reference_semantic",
       "test_kind": "fidelity"
     },
     {
       "_incomplete": false,
       "case_id": "S1-FIDELITY-0177",
-      "category": "false_reject",
+      "category": "correct_pass",
       "claim": "SUPPORTED_SEMANTIC_FIDELITY",
       "critical": false,
       "critical_violation": false,
-      "fos_outputs": {},
-      "fos_status": "RUNTIME_ERROR",
+      "fos_outputs": {
+        "result": false
+      },
+      "fos_status": "OK",
       "hashes": {
         "case_sha": "589670bdccac23ceda81e03b8729435d544a4d06df1d9593146c7e0308b1c0dd",
         "spec_sha": "f5628bee683929ba3341fce15463442659e9a9854ef87257ca2fc1832bbfc554"
@@ -4093,19 +4137,21 @@
         "result": false
       },
       "oracle_status": "OK",
-      "result_sha": "6fe22d215990fc2653f45cc4f16b99f76ff248d043148863c567960e460e88b5",
+      "result_sha": "44e20d67c6ca62ac7622eb83e4a17abad0db76a15dba59c5190901e719f23c82",
       "stratum": "S1_reference_semantic",
       "test_kind": "fidelity"
     },
     {
       "_incomplete": false,
       "case_id": "S1-FIDELITY-0178",
-      "category": "false_reject",
+      "category": "correct_pass",
       "claim": "SUPPORTED_SEMANTIC_FIDELITY",
       "critical": false,
       "critical_violation": false,
-      "fos_outputs": {},
-      "fos_status": "RUNTIME_ERROR",
+      "fos_outputs": {
+        "result": false
+      },
+      "fos_status": "OK",
       "hashes": {
         "case_sha": "a36602e030c357f86e3042fe7c76a8219521e7901c54e52af77db3ca17c14dd5",
         "spec_sha": "b91b2265e7b66e9eea6dfdd4039c19da46ef906fd3e355935934e53cc8432df4"
@@ -4114,19 +4160,21 @@
         "result": false
       },
       "oracle_status": "OK",
-      "result_sha": "6fe22d215990fc2653f45cc4f16b99f76ff248d043148863c567960e460e88b5",
+      "result_sha": "44e20d67c6ca62ac7622eb83e4a17abad0db76a15dba59c5190901e719f23c82",
       "stratum": "S1_reference_semantic",
       "test_kind": "fidelity"
     },
     {
       "_incomplete": false,
       "case_id": "S1-FIDELITY-0179",
-      "category": "false_reject",
+      "category": "correct_pass",
       "claim": "SUPPORTED_SEMANTIC_FIDELITY",
       "critical": false,
       "critical_violation": false,
-      "fos_outputs": {},
-      "fos_status": "RUNTIME_ERROR",
+      "fos_outputs": {
+        "result": false
+      },
+      "fos_status": "OK",
       "hashes": {
         "case_sha": "e1a54820ce52494c890508ec7e06a6c0e7fb63d41e4443c19dcf2e29bee1afb3",
         "spec_sha": "6ec60d7e84e7cd0105bc029484b89fa7de94071b17460832664422a2de46016e"
@@ -4135,19 +4183,21 @@
         "result": false
       },
       "oracle_status": "OK",
-      "result_sha": "6fe22d215990fc2653f45cc4f16b99f76ff248d043148863c567960e460e88b5",
+      "result_sha": "44e20d67c6ca62ac7622eb83e4a17abad0db76a15dba59c5190901e719f23c82",
       "stratum": "S1_reference_semantic",
       "test_kind": "fidelity"
     },
     {
       "_incomplete": false,
       "case_id": "S1-FIDELITY-0180",
-      "category": "false_reject",
+      "category": "correct_pass",
       "claim": "SUPPORTED_SEMANTIC_FIDELITY",
       "critical": false,
       "critical_violation": false,
-      "fos_outputs": {},
-      "fos_status": "RUNTIME_ERROR",
+      "fos_outputs": {
+        "result": true
+      },
+      "fos_status": "OK",
       "hashes": {
         "case_sha": "78926928bd3068f25a126a16227d33b25a85500b6b05d65002991442e68ffcae",
         "spec_sha": "6641b62736a8261dce482ba04ca2ede486c1d9b1d8ca6132c2b1aebc1665bb77"
@@ -4156,7 +4206,7 @@
         "result": true
       },
       "oracle_status": "OK",
-      "result_sha": "6fe22d215990fc2653f45cc4f16b99f76ff248d043148863c567960e460e88b5",
+      "result_sha": "44e20d67c6ca62ac7622eb83e4a17abad0db76a15dba59c5190901e719f23c82",
       "stratum": "S1_reference_semantic",
       "test_kind": "fidelity"
     },

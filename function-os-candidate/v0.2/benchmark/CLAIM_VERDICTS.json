@@ -6,7 +6,7 @@
     "DETERMINISTIC_REPRODUCIBILITY": "PENDING_REPLAY",
     "FAIL_CLOSED_LANGUAGE_BOUNDARY": "SUPPORTED_WITHIN_BOUNDED_DOMAIN",
     "REGISTRY_REVISION_AND_ROLLBACK_INTEGRITY": "SUPPORTED_WITHIN_BOUNDED_DOMAIN",
-    "SUPPORTED_SEMANTIC_FIDELITY": "PARTIALLY_SUPPORTED_WITH_IDENTIFIED_FAILURES"
+    "SUPPORTED_SEMANTIC_FIDELITY": "SUPPORTED_WITHIN_BOUNDED_DOMAIN"
   },
   "critical_violations": 0,
   "metrics": {
@@ -14,15 +14,15 @@
     "crash_rate": 0.0,
     "failure_propagation_correctness_rate": 1.0,
     "false_accept_rate": 0.0,
-    "false_reject_rate": 0.06281407035175879,
+    "false_reject_rate": 0.0,
     "mutation_detection_rate": 1.0,
     "postcondition_enforcement_rate": 1.0,
     "precondition_enforcement_rate": 1.0,
     "revision_history_consistency_rate": 1.0,
     "rollback_restoration_rate": 1.0,
-    "semantic_agreement_rate": 0.9371859296482412,
+    "semantic_agreement_rate": 1.0,
     "sequential_composition_correctness_rate": 1.0,
     "successful_registry_contamination_count": 0
   },
-  "overall_verdict": "PARTIALLY_SUPPORTED_WITH_IDENTIFIED_FAILURES"
+  "overall_verdict": "SUPPORTED_WITHIN_BOUNDED_DOMAIN"
 }

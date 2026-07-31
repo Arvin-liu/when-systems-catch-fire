@@ -1,15 +1,15 @@
 # Task 105 — First-Run Execution Log (original target 16f64004)
 
-- Generated: 2026-07-31T01:48:04.405241+00:00
-- Git HEAD: 5d664686474ef4457e89127c53e2293a61028094
+- Generated: 2026-07-31T01:53:33.371867+00:00
+- Git HEAD: 1314ba807415b3945bc6784689af5a5559e66fc9
 - Target commit: 16f640045b3dc9d411f015a51e45de07299d31fc
 - Preregistration ancestor of HEAD: True
-- Overall verdict: **PARTIALLY_SUPPORTED_WITH_IDENTIFIED_FAILURES** (critical violations: 0)
+- Overall verdict: **SUPPORTED_WITHIN_BOUNDED_DOMAIN** (critical violations: 0)
 
 ## Metrics
 
-- semantic_agreement_rate: 0.9371859296482412
-- false_reject_rate: 0.06281407035175879
+- semantic_agreement_rate: 1.0
+- false_reject_rate: 0.0
 - false_accept_rate: 0.0
 - blocked_but_mislabeled_ok_count: 12
 - precondition_enforcement_rate: 1.0
@@ -24,7 +24,7 @@
 
 ## Claim verdicts
 
-- SUPPORTED_SEMANTIC_FIDELITY: PARTIALLY_SUPPORTED_WITH_IDENTIFIED_FAILURES
+- SUPPORTED_SEMANTIC_FIDELITY: SUPPORTED_WITHIN_BOUNDED_DOMAIN
 - FAIL_CLOSED_LANGUAGE_BOUNDARY: SUPPORTED_WITHIN_BOUNDED_DOMAIN
 - CONTRACT_ENFORCEMENT: SUPPORTED_WITHIN_BOUNDED_DOMAIN
 - ARTIFACT_AND_TRACE_INTEGRITY: SUPPORTED_WITHIN_BOUNDED_DOMAIN
@@ -189,31 +189,31 @@
 - S1-FIDELITY-0153 [fidelity] fos=OK cat=correct_pass
 - S1-FIDELITY-0154 [fidelity] fos=OK cat=correct_pass
 - S1-FIDELITY-0155 [fidelity] fos=OK cat=correct_pass
-- S1-FIDELITY-0156 [fidelity] fos=RUNTIME_ERROR cat=false_reject
-- S1-FIDELITY-0157 [fidelity] fos=RUNTIME_ERROR cat=false_reject
-- S1-FIDELITY-0158 [fidelity] fos=RUNTIME_ERROR cat=false_reject
-- S1-FIDELITY-0159 [fidelity] fos=RUNTIME_ERROR cat=false_reject
-- S1-FIDELITY-0160 [fidelity] fos=RUNTIME_ERROR cat=false_reject
-- S1-FIDELITY-0161 [fidelity] fos=RUNTIME_ERROR cat=false_reject
-- S1-FIDELITY-0162 [fidelity] fos=RUNTIME_ERROR cat=false_reject
-- S1-FIDELITY-0163 [fidelity] fos=RUNTIME_ERROR cat=false_reject
-- S1-FIDELITY-0164 [fidelity] fos=RUNTIME_ERROR cat=false_reject
-- S1-FIDELITY-0165 [fidelity] fos=RUNTIME_ERROR cat=false_reject
-- S1-FIDELITY-0166 [fidelity] fos=RUNTIME_ERROR cat=false_reject
-- S1-FIDELITY-0167 [fidelity] fos=RUNTIME_ERROR cat=false_reject
-- S1-FIDELITY-0168 [fidelity] fos=RUNTIME_ERROR cat=false_reject
-- S1-FIDELITY-0169 [fidelity] fos=RUNTIME_ERROR cat=false_reject
-- S1-FIDELITY-0170 [fidelity] fos=RUNTIME_ERROR cat=false_reject
-- S1-FIDELITY-0171 [fidelity] fos=RUNTIME_ERROR cat=false_reject
-- S1-FIDELITY-0172 [fidelity] fos=RUNTIME_ERROR cat=false_reject
-- S1-FIDELITY-0173 [fidelity] fos=RUNTIME_ERROR cat=false_reject
-- S1-FIDELITY-0174 [fidelity] fos=RUNTIME_ERROR cat=false_reject
-- S1-FIDELITY-0175 [fidelity] fos=RUNTIME_ERROR cat=false_reject
-- S1-FIDELITY-0176 [fidelity] fos=RUNTIME_ERROR cat=false_reject
-- S1-FIDELITY-0177 [fidelity] fos=RUNTIME_ERROR cat=false_reject
-- S1-FIDELITY-0178 [fidelity] fos=RUNTIME_ERROR cat=false_reject
-- S1-FIDELITY-0179 [fidelity] fos=RUNTIME_ERROR cat=false_reject
-- S1-FIDELITY-0180 [fidelity] fos=RUNTIME_ERROR cat=false_reject
+- S1-FIDELITY-0156 [fidelity] fos=OK cat=correct_pass
+- S1-FIDELITY-0157 [fidelity] fos=OK cat=correct_pass
+- S1-FIDELITY-0158 [fidelity] fos=OK cat=correct_pass
+- S1-FIDELITY-0159 [fidelity] fos=OK cat=correct_pass
+- S1-FIDELITY-0160 [fidelity] fos=OK cat=correct_pass
+- S1-FIDELITY-0161 [fidelity] fos=OK cat=correct_pass
+- S1-FIDELITY-0162 [fidelity] fos=OK cat=correct_pass
+- S1-FIDELITY-0163 [fidelity] fos=OK cat=correct_pass
+- S1-FIDELITY-0164 [fidelity] fos=OK cat=correct_pass
+- S1-FIDELITY-0165 [fidelity] fos=OK cat=correct_pass
+- S1-FIDELITY-0166 [fidelity] fos=OK cat=correct_pass
+- S1-FIDELITY-0167 [fidelity] fos=OK cat=correct_pass
+- S1-FIDELITY-0168 [fidelity] fos=OK cat=correct_pass
+- S1-FIDELITY-0169 [fidelity] fos=OK cat=correct_pass
+- S1-FIDELITY-0170 [fidelity] fos=OK cat=correct_pass
+- S1-FIDELITY-0171 [fidelity] fos=OK cat=correct_pass
+- S1-FIDELITY-0172 [fidelity] fos=OK cat=correct_pass
+- S1-FIDELITY-0173 [fidelity] fos=OK cat=correct_pass
+- S1-FIDELITY-0174 [fidelity] fos=OK cat=correct_pass
+- S1-FIDELITY-0175 [fidelity] fos=OK cat=correct_pass
+- S1-FIDELITY-0176 [fidelity] fos=OK cat=correct_pass
+- S1-FIDELITY-0177 [fidelity] fos=OK cat=correct_pass
+- S1-FIDELITY-0178 [fidelity] fos=OK cat=correct_pass
+- S1-FIDELITY-0179 [fidelity] fos=OK cat=correct_pass
+- S1-FIDELITY-0180 [fidelity] fos=OK cat=correct_pass
 - S1-FIDELITY-0181 [fidelity] fos=OK cat=correct_pass
 - S1-FIDELITY-0182 [fidelity] fos=OK cat=correct_pass
 - S1-FIDELITY-0183 [fidelity] fos=OK cat=correct_pass
