@@ -61,7 +61,10 @@ class N2RepresentationEncoder:
                 if out_var in expr:
                     # Extract compute expression (right side of ==)
                     if '==' in expr:
-                        parts = expr.split('==')
+                        # Split on the FIRST '==' only. Expressions may contain
+                        # nested '==' (e.g. "result == (x == y)"); a global split
+                        # breaks them into >2 parts and yields an unbalanced RHS.
+                        parts = expr.split('==', 1)
                         if out_var in parts[0]:
                             exprs[out_var] = parts[1].strip()
                         else:
