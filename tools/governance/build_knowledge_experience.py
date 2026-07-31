@@ -807,7 +807,7 @@ import os
 # (which would otherwise break the foundation deterministic census checks).
 _RELINK_RE = re.compile(r"\[([^\]]*)\]\(([^)]+)\)")
 
-# Directories whose files must never be chosen as a relink target.
+# Directories whose files are not eligible as a relink target.
 _RELINK_EXCLUDE_DIRS = (".pytest_cache", ".git", "node_modules", "__pycache__", "build", "dist", ".lake", "site")
 
 _relink_skip = lambda raw: raw.startswith(("http://", "https://", "mailto:")) or not raw.partition("#")[0]
