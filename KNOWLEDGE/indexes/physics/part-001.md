@@ -39,6 +39,81 @@
   - 可搜索名称：NFC-083f11b422523698 / "omega phi_zero no_constraints no_physics physical_exists"
   - 来源：`tools/foundation/verify_core_claims.py`
   - 依赖：—；被引用：—
+- ["only what ignition's own assets support; no four-force unification / quantum gravity"),](../../../tools/propagation/generate_editorial_manifest.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a69913f02003956d / "only what ignition's own assets support; no four-force unification / quantum gravity"),
+  - 来源：`tools/propagation/generate_editorial_manifest.py`
+  - 依赖：—；被引用：—
+- ["title": "不能推出四力统一或物理学大一统不可能。",](../../../analysis/corpus-relation/article_cluster_candidates.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-854C9E7C0AD01410 / "title": "不能推出四力统一或物理学大一统不可能。", / IMPLICIT-854C9E7C0AD01410 / IMPLICIT-E78E97D3E4F9D62D
+  - 来源：`analysis/corpus-relation/article_cluster_candidates.json`
+  - 依赖：—；被引用：—
+- ["title": "不能推出四力统一或物理学大一统不可能。",](../../../analysis/corpus-relation/corpus_relation_graph.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-E78E97D3E4F9D62D / "title": "不能推出四力统一或物理学大一统不可能。", / IMPLICIT-E78E97D3E4F9D62D / IMPLICIT-854C9E7C0AD01410
+  - 来源：`analysis/corpus-relation/corpus_relation_graph.json`
+  - 依赖：—；被引用：—
+- ["title": "四力统一、量子引力、暗物质、暗能量、宇宙常数与测量问题等物理问题，点火模型目前只能提供哪些有界投影，哪些桥接义务尚未满足？",](../../../analysis/corpus-relation/corpus_relation_graph.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-6DE6F5513C783859 / "title": "四力统一、量子引力、暗物质、暗能量、宇宙常数与测量问题等物理问题，点火模型目前只能提供哪些有界投影，哪些桥接义务尚未满足？", / IMPLICIT-6DE6F5513C783859 / IMPLICIT-936E0469A8EAB139
+  - 来源：`analysis/corpus-relation/corpus_relation_graph.json`
+  - 依赖：—；被引用：—
+- ["title": "四力统一、量子引力、暗物质、暗能量、宇宙常数与测量问题等物理问题，点火模型目前只能提供哪些有界投影，哪些桥接义务尚未满足？",](../../../analysis/corpus-relation/article_cluster_candidates.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-936E0469A8EAB139 / "title": "四力统一、量子引力、暗物质、暗能量、宇宙常数与测量问题等物理问题，点火模型目前只能提供哪些有界投影，哪些桥接义务尚未满足？", / IMPLICIT-936E0469A8EAB139 / IMPLICIT-6DE6F5513C783859
+  - 来源：`analysis/corpus-relation/article_cluster_candidates.json`
+  - 依赖：—；被引用：—
+- ["title": "当前物理边界不变：点火现有门控乘积模型没有统一四种基本相互作用；物理统一问题保持开放。当前模型失败既不证明普遍不可能，也不证明其他路线成功。",](../../../analysis/corpus-relation/corpus_relation_graph.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-00E894CA5C4CF12B / "title": "当前物理边界不变：点火现有门控乘积模型没有统一四种基本相互作用；物理统一问题保持开放。当前模型失败既不证明普遍不可能，也不证明其他路线成功。", / IMPLICIT-00E894CA5C4CF12B / IMPLICIT-13F202A4726E3C70
+  - 来源：`analysis/corpus-relation/corpus_relation_graph.json`
+  - 依赖：—；被引用：—
+- ["title": "当前物理边界不变：点火现有门控乘积模型没有统一四种基本相互作用；物理统一问题保持开放。当前模型失败既不证明普遍不可能，也不证明其他路线成功。",](../../../analysis/corpus-relation/article_cluster_candidates.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-13F202A4726E3C70 / "title": "当前物理边界不变：点火现有门控乘积模型没有统一四种基本相互作用；物理统一问题保持开放。当前模型失败既不证明普遍不可能，也不证明其他路线成功。", / IMPLICIT-13F202A4726E3C70 / IMPLICIT-00E894CA5C4CF12B
+  - 来源：`analysis/corpus-relation/article_cluster_candidates.json`
+  - 依赖：—；被引用：—
+- ["title": "当前门控乘积模型没有完成四种基本相互作用统一；四力统一、量子引力和物理学大一统仍是开放研究问题。点火未证明“大一统普遍不可能”。",](../../../analysis/corpus-relation/corpus_relation_graph.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-23A3566BD73B37B3 / "title": "当前门控乘积模型没有完成四种基本相互作用统一；四力统一、量子引力和物理学大一统仍是开放研究问题。点火未证明“大一统普遍不可能”。", / IMPLICIT-23A3566BD73B37B3 / IMPLICIT-C463779F871D124D
+  - 来源：`analysis/corpus-relation/corpus_relation_graph.json`
+  - 依赖：—；被引用：—
+- ["title": "当前门控乘积模型没有完成四种基本相互作用统一；四力统一、量子引力和物理学大一统仍是开放研究问题。点火未证明“大一统普遍不可能”。",](../../../analysis/corpus-relation/article_cluster_candidates.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-C463779F871D124D / "title": "当前门控乘积模型没有完成四种基本相互作用统一；四力统一、量子引力和物理学大一统仍是开放研究问题。点火未证明“大一统普遍不可能”。", / IMPLICIT-C463779F871D124D / IMPLICIT-23A3566BD73B37B3
+  - 来源：`analysis/corpus-relation/article_cluster_candidates.json`
+  - 依赖：—；被引用：—
+- ["title": "撤回“已经证明物理大一统不可能”，禁止通过“结构性定理”“框架判定”或内部定义回弹。",](../../../analysis/corpus-relation/corpus_relation_graph.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-917E123E8F644E50 / "title": "撤回“已经证明物理大一统不可能”，禁止通过“结构性定理”“框架判定”或内部定义回弹。", / IMPLICIT-917E123E8F644E50 / IMPLICIT-9B5AA6B20E74D3FE
+  - 来源：`analysis/corpus-relation/corpus_relation_graph.json`
+  - 依赖：—；被引用：—
+- ["title": "撤回“已经证明物理大一统不可能”，禁止通过“结构性定理”“框架判定”或内部定义回弹。",](../../../analysis/corpus-relation/article_cluster_candidates.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-9B5AA6B20E74D3FE / "title": "撤回“已经证明物理大一统不可能”，禁止通过“结构性定理”“框架判定”或内部定义回弹。", / IMPLICIT-9B5AA6B20E74D3FE / IMPLICIT-917E123E8F644E50
+  - 来源：`analysis/corpus-relation/article_cluster_candidates.json`
+  - 依赖：—；被引用：—
+- ["title": "撤回、降级或隔离的结论，即使换标题、换编号、改成“结构性定理”或藏入摘要，也继续受原 supersession lineage 与 claim ceiling 约束。CI 检查大一统不可能性、单模型失败推出普遍不可能、类比冒充同构、量词膨胀",](../../../analysis/corpus-relation/article_cluster_candidates.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-DCEC59F219B64B50 / "title": "撤回、降级或隔离的结论，即使换标题、换编号、改成“结构性定理”或藏入摘要，也继续受原 supersession lineage 与 claim ceiling 约束。CI 检查大一统不可能性、单模型失败推出普遍不可能、类比冒充同构、量词膨胀", / IMPLICIT-DCEC59F219B64B50 / IMPLICIT-F59F1C92447000A6
+  - 来源：`analysis/corpus-relation/article_cluster_candidates.json`
+  - 依赖：—；被引用：—
+- ["title": "撤回、降级或隔离的结论，即使换标题、换编号、改成“结构性定理”或藏入摘要，也继续受原 supersession lineage 与 claim ceiling 约束。CI 检查大一统不可能性、单模型失败推出普遍不可能、类比冒充同构、量词膨胀",](../../../analysis/corpus-relation/corpus_relation_graph.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-F59F1C92447000A6 / "title": "撤回、降级或隔离的结论，即使换标题、换编号、改成“结构性定理”或藏入摘要，也继续受原 supersession lineage 与 claim ceiling 约束。CI 检查大一统不可能性、单模型失败推出普遍不可能、类比冒充同构、量词膨胀", / IMPLICIT-F59F1C92447000A6 / IMPLICIT-DCEC59F219B64B50
+  - 来源：`analysis/corpus-relation/corpus_relation_graph.json`
+  - 依赖：—；被引用：—
+- ["title": "撤回把单一门控乘积模型失败推广成“所有大一统理论不可能”的越界结论。",](../../../analysis/corpus-relation/corpus_relation_graph.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-59F3513E4050D3D2 / "title": "撤回把单一门控乘积模型失败推广成“所有大一统理论不可能”的越界结论。", / IMPLICIT-59F3513E4050D3D2 / IMPLICIT-BD66539E03689268
+  - 来源：`analysis/corpus-relation/corpus_relation_graph.json`
+  - 依赖：—；被引用：—
+- ["title": "撤回把单一门控乘积模型失败推广成“所有大一统理论不可能”的越界结论。",](../../../analysis/corpus-relation/article_cluster_candidates.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-BD66539E03689268 / "title": "撤回把单一门控乘积模型失败推广成“所有大一统理论不可能”的越界结论。", / IMPLICIT-BD66539E03689268 / IMPLICIT-59F3513E4050D3D2
+  - 来源：`analysis/corpus-relation/article_cluster_candidates.json`
+  - 依赖：—；被引用：—
 - ["title": "暗物质 / 暗能量本质",](../../../data/classic_problems_benchmark.json)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-B3BC971B634FD126 / "title": "暗物质 / 暗能量本质", / IMPLICIT-B3BC971B634FD126 / IMPLICIT-CF3146531CD51105
@@ -84,6 +159,11 @@
   - 可搜索名称：IMPLICIT-F48705713DCD062B / # C-0798｜物理大统一与能标门控 / IMPLICIT-F48705713DCD062B
   - 来源：`统一案例总表/0793-C-0798-物理大统一与能标门控.md`
   - 依赖：—；被引用：—
+- [# 撤回的引力：一个知识库如何不让强断言悄悄回弹](../../../docs/editorial/articles/001-withdrawn-gravity-how-strong-claims-do-not-rebound.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-31D9251345D26235 / # 撤回的引力：一个知识库如何不让强断言悄悄回弹 / IMPLICIT-31D9251345D26235
+  - 来源：`docs/editorial/articles/001-withdrawn-gravity-how-strong-claims-do-not-rebound.md`
+  - 依赖：—；被引用：—
 - [# 经典问题 benchmark 卡片：暗物质 / 暗能量本质](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-A3FAF88D37437841 / # 经典问题 benchmark 卡片：暗物质 / 暗能量本质 / IMPLICIT-A3FAF88D37437841
@@ -93,6 +173,61 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-2801F901396073BA / # 经典问题 benchmark 卡片：量子引力 / IMPLICIT-2801F901396073BA
   - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [# 门控模型能走到哪里：一次有边界的物理投影，与未完成的统一](../../../docs/editorial/articles/004-gated-model-bounded-projection-open-unification.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-3828A3C49EC34F59 / # 门控模型能走到哪里：一次有边界的物理投影，与未完成的统一 / IMPLICIT-3828A3C49EC34F59
+  - 来源：`docs/editorial/articles/004-gated-model-bounded-projection-open-unification.md`
+  - 依赖：—；被引用：—
+- [## 001 — 撤回的引力：一个知识库如何不让强断言悄悄回弹](../../../docs/editorial/MANIFEST.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-8ADD8F84337B3EA8 / ## 001 — 撤回的引力：一个知识库如何不让强断言悄悄回弹 / IMPLICIT-8ADD8F84337B3EA8
+  - 来源：`docs/editorial/MANIFEST.md`
+  - 依赖：—；被引用：—
+- [## 004 — 门控模型能走到哪里：一次有边界的物理投影，与未完成的统一](../../../docs/editorial/MANIFEST.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-2F1CB7BC8135C30A / ## 004 — 门控模型能走到哪里：一次有边界的物理投影，与未完成的统一 / IMPLICIT-2F1CB7BC8135C30A
+  - 来源：`docs/editorial/MANIFEST.md`
+  - 依赖：—；被引用：—
+- [## nfc-51f85a6892787610 — 当前门控乘积模型没有完成四种基本相互作用统一；四力统一、量子引力和物理学大一统仍是开放研究问题。点火未证明“大一统普遍不可能”。](../../../analysis/corpus-relation/cluster_source_briefs/C001.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-1049FE9E2CC4EE34 / ## nfc-51f85a6892787610 — 当前门控乘积模型没有完成四种基本相互作用统一；四力统一、量子引力和物理学大一统仍是开放研究问题。点火未证明“大一统普遍不可能”。 / IMPLICIT-1049FE9E2CC4EE34 / IMPLICIT-6E2D14CA841B5E11
+  - 来源：`analysis/corpus-relation/cluster_source_briefs/C001.md`
+  - 依赖：—；被引用：—
+- [## nfc-51f85a6892787610 — 当前门控乘积模型没有完成四种基本相互作用统一；四力统一、量子引力和物理学大一统仍是开放研究问题。点火未证明“大一统普遍不可能”。](../../../analysis/corpus-relation/cluster_source_briefs/C005.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-6E2D14CA841B5E11 / ## nfc-51f85a6892787610 — 当前门控乘积模型没有完成四种基本相互作用统一；四力统一、量子引力和物理学大一统仍是开放研究问题。点火未证明“大一统普遍不可能”。 / IMPLICIT-6E2D14CA841B5E11 / IMPLICIT-1049FE9E2CC4EE34
+  - 来源：`analysis/corpus-relation/cluster_source_briefs/C005.md`
+  - 依赖：—；被引用：—
+- [## nfc-6ca935ca1a4f2a8e — 撤回、降级或隔离的结论，即使换标题、换编号、改成“结构性定理”或藏入摘要，也继续受原 supersession lineage 与 claim ceiling 约束。CI 检查大一统不可能性、单模型失败推出普遍不可能、类比冒充同构、量词膨胀](../../../analysis/corpus-relation/cluster_source_briefs/C005.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-209403FDFDFDB09E / ## nfc-6ca935ca1a4f2a8e — 撤回、降级或隔离的结论，即使换标题、换编号、改成“结构性定理”或藏入摘要，也继续受原 supersession lineage 与 claim ceiling 约束。CI 检查大一统不可能性、单模型失败推出普遍不可能、类比冒充同构、量词膨胀 / IMPLICIT-209403FDFDFDB09E / IMPLICIT-AA75646794C71C9E
+  - 来源：`analysis/corpus-relation/cluster_source_briefs/C005.md`
+  - 依赖：—；被引用：—
+- [## nfc-6ca935ca1a4f2a8e — 撤回、降级或隔离的结论，即使换标题、换编号、改成“结构性定理”或藏入摘要，也继续受原 supersession lineage 与 claim ceiling 约束。CI 检查大一统不可能性、单模型失败推出普遍不可能、类比冒充同构、量词膨胀](../../../analysis/corpus-relation/cluster_source_briefs/C001.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-AA75646794C71C9E / ## nfc-6ca935ca1a4f2a8e — 撤回、降级或隔离的结论，即使换标题、换编号、改成“结构性定理”或藏入摘要，也继续受原 supersession lineage 与 claim ceiling 约束。CI 检查大一统不可能性、单模型失败推出普遍不可能、类比冒充同构、量词膨胀 / IMPLICIT-AA75646794C71C9E / IMPLICIT-209403FDFDFDB09E
+  - 来源：`analysis/corpus-relation/cluster_source_briefs/C001.md`
+  - 依赖：—；被引用：—
+- [## nfc-6ca935ca1a4f2a8e — 撤回、降级或隔离的结论，即使换标题、换编号、改成“结构性定理”或藏入摘要，也继续受原 supersession lineage 与 claim ceiling 约束。CI 检查大一统不可能性、单模型失败推出普遍不可能、类比冒充同构、量词膨胀](../../../analysis/corpus-relation/cluster_source_briefs/C004.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-F262512851CAA78F / ## nfc-6ca935ca1a4f2a8e — 撤回、降级或隔离的结论，即使换标题、换编号、改成“结构性定理”或藏入摘要，也继续受原 supersession lineage 与 claim ceiling 约束。CI 检查大一统不可能性、单模型失败推出普遍不可能、类比冒充同构、量词膨胀 / IMPLICIT-F262512851CAA78F / IMPLICIT-209403FDFDFDB09E
+  - 来源：`analysis/corpus-relation/cluster_source_briefs/C004.md`
+  - 依赖：—；被引用：—
+- [## nfc-82ebe95def5bfab1 — 当前物理边界不变：点火现有门控乘积模型没有统一四种基本相互作用；物理统一问题保持开放。当前模型失败既不证明普遍不可能，也不证明其他路线成功。](../../../analysis/corpus-relation/cluster_source_briefs/C007.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-0894DB8D8B947121 / ## nfc-82ebe95def5bfab1 — 当前物理边界不变：点火现有门控乘积模型没有统一四种基本相互作用；物理统一问题保持开放。当前模型失败既不证明普遍不可能，也不证明其他路线成功。 / IMPLICIT-0894DB8D8B947121 / IMPLICIT-1AAF6F9DF4325422
+  - 来源：`analysis/corpus-relation/cluster_source_briefs/C007.md`
+  - 依赖：—；被引用：—
+- [## nfc-82ebe95def5bfab1 — 当前物理边界不变：点火现有门控乘积模型没有统一四种基本相互作用；物理统一问题保持开放。当前模型失败既不证明普遍不可能，也不证明其他路线成功。](../../../analysis/corpus-relation/cluster_source_briefs/C005.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-1AAF6F9DF4325422 / ## nfc-82ebe95def5bfab1 — 当前物理边界不变：点火现有门控乘积模型没有统一四种基本相互作用；物理统一问题保持开放。当前模型失败既不证明普遍不可能，也不证明其他路线成功。 / IMPLICIT-1AAF6F9DF4325422 / IMPLICIT-0894DB8D8B947121
+  - 来源：`analysis/corpus-relation/cluster_source_briefs/C005.md`
+  - 依赖：—；被引用：—
+- [## nfc-9d5698768267468e — 撤回把单一门控乘积模型失败推广成“所有大一统理论不可能”的越界结论。](../../../analysis/corpus-relation/cluster_source_briefs/C005.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-70D75899A8B6B1E6 / ## nfc-9d5698768267468e — 撤回把单一门控乘积模型失败推广成“所有大一统理论不可能”的越界结论。 / IMPLICIT-70D75899A8B6B1E6
+  - 来源：`analysis/corpus-relation/cluster_source_briefs/C005.md`
   - 依赖：—；被引用：—
 - [## 心智引力中心](../../../templates/publication/zhiyuan-writing-spec.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -184,6 +319,16 @@
   - 可搜索名称：IMPLICIT-5155C728DF2EA41D / #401 Φ=零温自由能→物理大统一路径。 / IMPLICIT-5155C728DF2EA41D
   - 来源：`统一函数总表/0027-T17-Φ=零温自由能 - Φ与统计力学零温自由能精确等价.md`
   - 依赖：—；被引用：—
+- ['PHYSICS': '门控模型能支持什么有界物理投影，哪些统一与观测义务仍未完成？',](../../../tools/build_corpus_relation_graph.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-8554492c02cd4533 / 'PHYSICS': '门控模型能支持什么有界物理投影，哪些统一与观测义务仍未完成？',
+  - 来源：`tools/build_corpus_relation_graph.py`
+  - 依赖：—；被引用：—
+- [("docs/editorial/articles/004-gated-model-bounded-projection-open-unification.md",](../../../tools/propagation/generate_editorial_manifest.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-cfa6ca4f0659740f / ("docs/editorial/articles/004-gated-model-bounded-projection-open-unification.md",
+  - 来源：`tools/propagation/generate_editorial_manifest.py`
+  - 依赖：—；被引用：—
 - [**原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0533-C-538-引力时间减慢 — -Φ(r)=GM.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0533-C-538-%E5%BC%95%E5%8A%9B%E6%97%B6%E9%97%B4%E5%87%8F%E6%85%A2%20%E2%80%94%20-%CE%A6%28r%29%3DGM.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-E13BE77AA80BC8D0 / **原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0533-C-538-引力时间减慢 — -Φ(r)=GM.md` / IMPLICIT-E13BE77AA80BC8D0
@@ -204,6 +349,11 @@
   - 可搜索名称：IMPLICIT-EF9236CCAD42EC15 / - 原始命题: 假设完全统一Ω=1可达，推导矛盾： Ω=1 ⟹ Φ=0 ⟹ 所有门控贡献为零 ⟹ 没有约束 ⟹ 没有物理 但"完全统一"的预设是物理存在——如果物理不存在，统一也无意义。 因此：完全统一 ⟹ 物理不存在 ⟹ 统一本身无意义 ⟹ 矛盾 **完全统一(Ω=1)与物理存在互斥。** 更精确的表述： **扩展注释 / Extended Annotation** / IMPLICIT-EF9236CCAD42EC15
   - 来源：`reports/math-foundation/pilot-formal-audit-20260712.md`
   - 依赖：—；被引用：—
+- [\["docs/physics_boundary.md", "README.md"\],](../../../tools/propagation/generate_editorial_manifest.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-9d59a0649b36c20b / \["docs/physics_boundary.md", "README.md"\],
+  - 来源：`tools/propagation/generate_editorial_manifest.py`
+  - 依赖：—；被引用：—
 - [\["存在命题（如：希格斯玻色子存在）", "因果命题（如：引力导致时空弯曲）", "机制命题（如：四种基本力的统一机制）", "预测命题（如：引力波存在）", "理论命题（如：标准模型）"\]](../../../data/evidence_regimes.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-af3514e8fee4bf78 / \["存在命题（如：希格斯玻色子存在）", "因果命题（如：引力导致时空弯曲）", "机制命题（如：四种基本力的统一机制）", "预测命题（如：引力波存在）", "理论命题（如：标准模型）"\]
@@ -219,24 +369,24 @@
   - 可搜索名称：NFC-01310cdbd47cbf9b / \[历史撤回断言\]“已经证明物理大一统不可能”；
   - 来源：`outputs/getbrain/project-position-update-20260706.md`
   - 依赖：—；被引用：—
-- [\[物理资产纠偏与复算边界\](./docs/foundation/physics-asset-correction-20260729.md)](../../../README.md)
+- [\[物理资产纠偏与复算边界\](../../../docs/foundation/physics-asset-correction-20260729.md)](../../../README.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-b583ad2c2f88c7ed / \[物理资产纠偏与复算边界\](./docs/foundation/physics-asset-correction-20260729.md)
+  - 可搜索名称：NFC-b583ad2c2f88c7ed / \[物理资产纠偏与复算边界\](../../../docs/foundation/physics-asset-correction-20260729.md)
   - 来源：`README.md`
   - 依赖：—；被引用：—
-- [\[首批物理资产纠偏\](../docs/foundation/physics-asset-correction-20260729.md)：重算门控乘积、四力统一和大一统不可能性推断的定义、量纲、奇点、桥接义务与反例；结论是现有模型未统一四力，](../../../RESULTS/RESEARCH-AND-ARTICLES.md)
+- [\[首批物理资产纠偏\](../../../docs/foundation/physics-asset-correction-20260729.md)：重算门控乘积、四力统一和大一统不可能性推断的定义、量纲、奇点、桥接义务与反例；结论是现有模型未统一四力，](../../../RESULTS/RESEARCH-AND-ARTICLES.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-f08a82ac32193994 / \[首批物理资产纠偏\](../docs/foundation/physics-asset-correction-20260729.md)：重算门控乘积、四力统一和大一统不可能性推断的定义、量纲、奇点、桥接义务与反例；结论是现有模型未统一四力，
+  - 可搜索名称：NFC-f08a82ac32193994 / \[首批物理资产纠偏\](../../../docs/foundation/physics-asset-correction-20260729.md)：重算门控乘积、四力统一和大一统不可能性推断的定义、量纲、奇点、桥接义务与反例；结论是现有模型未统一四力，
   - 来源：`RESULTS/RESEARCH-AND-ARTICLES.md`
   - 依赖：—；被引用：—
-- [\[首批物理资产纠偏\](./physics-asset-correction-20260729.md)](../../../docs/foundation/README.md)
+- [\[首批物理资产纠偏\](../../../docs/foundation/physics-asset-correction-20260729.md)](../../../docs/foundation/README.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-f719e94e74d37d2c / \[首批物理资产纠偏\](./physics-asset-correction-20260729.md)
+  - 可搜索名称：NFC-f719e94e74d37d2c / \[首批物理资产纠偏\](../../../docs/foundation/physics-asset-correction-20260729.md)
   - 来源：`docs/foundation/README.md`
   - 依赖：—；被引用：—
-- [\[首批物理资产纠偏\](docs/foundation/physics-asset-correction-20260729.md)](../../../FOUNDATION.md)
+- [\[首批物理资产纠偏\](../../../docs/foundation/physics-asset-correction-20260729.md)](../../../FOUNDATION.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-0d2291c359aab590 / \[首批物理资产纠偏\](docs/foundation/physics-asset-correction-20260729.md)
+  - 可搜索名称：NFC-0d2291c359aab590 / \[首批物理资产纠偏\](../../../docs/foundation/physics-asset-correction-20260729.md)
   - 来源：`FOUNDATION.md`
   - 依赖：—；被引用：—
 - [`终不相见`保存物理限制，没有用诗性共在抹平距离；](../../../docs/publication/zhiyuan-writing-examples.md)
@@ -293,6 +443,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-ebf42925ed9672f1 / dangerous = \[line for line in historical.splitlines() if "已经证明物理大一统不可能" in line\]
   - 来源：`tools/foundation/validate_claim_governance.py`
+  - 依赖：—；被引用：—
+- [def _manifest(self, entry_overrides, base_article="001-withdrawn-gravity-how-strong-claims-do-not-rebound"):](../../../tests/test_propagation_reconciliation.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-8A9C47161485BC80 / def _manifest(self, entry_overrides, base_article="001-withdrawn-gravity-how-strong-claims-do-not-rebound"): / IMPLICIT-8A9C47161485BC80
+  - 来源：`tests/test_propagation_reconciliation.py`
   - 依赖：—；被引用：—
 - [def test_physics_correction_is_visible(self):](../../../tests/test_human_front_door.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
@@ -454,7 +609,7 @@
   - 可搜索名称：NFC-9eedafee03691c62 / Object D225 defines a mechanism_model within the point-fire framework. Core: 中文：引力的B型门控不是偶然属性，是Φ极小点存在的必要条件。若引力为A型，Φ单调递减，
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D225, T33；被引用：—
-- [Object D226 defines a mechanism_model within the point-fire framework. Core: 中文：物理存在受三重时间约束： 约束1（逻辑约束·\[D220\](docs/zh/fun](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+- [Object D226 defines a mechanism_model within the point-fire framework. Core: 中文：物理存在受三重时间约束： 约束1（逻辑约束·\[D220\](../../../data/foundation/adjudications/084-max-decisions.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-06f95846b3dd4dc6 / Object D226 defines a mechanism_model within the point-fire framework. Core: 中文：物理存在受三重时间约束： 约束1（逻辑约束·\[D220\](docs/zh/fun
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
@@ -464,12 +619,9 @@
   - 可搜索名称：NFC-ee6d0bc70616ce33 / Object D227 defines a mechanism_model within the point-fire framework. Core: 中文：量子退相干：ρ_off(t) = ρ_off(0) × e^{-Γt}，Γ为退相
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D1, D198, D227；被引用：—
-- [Object D229 defines a mechanism_model within the point-fire framework. Core: 中文：物理存在的四重时间约束： 约束1（逻辑·\[D220\](docs/zh/funct](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+- [Object D229 defines a mechanism_model within the point-fire framework. Core: 中文：物理存在的四重时间约束： 约束1（逻辑·\[D220\](../../../data/foundation/adjudications/084-max-decisions.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-6d8b3149b2cca900 / Object D229 defines a mechanism_model within the point-fire framework. Core: 中文：物理存在的四重时间约束： 约束1（逻辑·\[D220\](docs/zh/funct
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D220, D222, D229；被引用：—
-- [Object D232 defines a mechanism_model within the point-fire framework. Core: 中文：量子力学要求信息守恒（么正演化）：封闭系统的I不变 D230说宇宙的I单调递减：](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 可搜索名称：NFC-6d8b3149b2cca900 / Object D229 defines a mechanism_model within the point-fire framework. Core: 中文：物理存在的四重时间约束： 约束1（逻辑·\[D220\](../../../data/foundation/adjudications/084-max-decisions.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-d04c5e3adc2ed9e9 / Object D232 defines a mechanism_model within the point-fire framework. Core: 中文：量子力学要求信息守恒（么正演化）：封闭系统的I不变 D230说宇宙的I单调递减：
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
@@ -624,6 +776,11 @@
   - 可搜索名称：IMPLICIT-20836EF66C639290 / title: "引力时间减慢 — **Φ(r)=GM/(rc²)**=归一化引力势 / 引力时间减慢 - **Φ(r)=GM/(rc²)**=归一化引力势" / IMPLICIT-20836EF66C639290
   - 来源：`统一案例总表/0533-C-538-引力时间减慢 — -Φ(r)=GM.md`
   - 依赖：—；被引用：—
+- [title: "撤回的引力：一个知识库如何不让强断言悄悄回弹"](../../../docs/editorial/articles/001-withdrawn-gravity-how-strong-claims-do-not-rebound.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-0766E3BE0DF8CCFE / title: "撤回的引力：一个知识库如何不让强断言悄悄回弹" / IMPLICIT-0766E3BE0DF8CCFE
+  - 来源：`docs/editorial/articles/001-withdrawn-gravity-how-strong-claims-do-not-rebound.md`
+  - 依赖：—；被引用：—
 - [title: "暗物质方向 — Φ对牛顿引力修正，sigmoid映射可能修正量级"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0544-C-549-%E6%9A%97%E7%89%A9%E8%B4%A8%E6%96%B9%E5%90%91%20%E2%80%94%20%CE%A6%E5%AF%B9%E7%89%9B%E9%A1%BF%E5%BC%95%E5%8A%9B%E4%BF%AE%E6%AD%A3%2Csigmoid%E6%98%A0%E5%B0%84%E5%8F%AF%E8%83%BD%E4%BF%AE%E6%AD%A3%E9%87%8F%E7%BA%A7.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-AEF7CEDF67FC5620 / title: "暗物质方向 — Φ对牛顿引力修正，sigmoid映射可能修正量级" / IMPLICIT-AEF7CEDF67FC5620
@@ -699,6 +856,11 @@
   - 可搜索名称：IMPLICIT-937A780526C6DDCC / title: "量子霍尔效应 — 乘法门控离散象限→量子化，分数=复合粒子乘法门控" / IMPLICIT-937A780526C6DDCC
   - 来源：`统一案例总表/0538-C-543-量子霍尔效应 — 乘法门控离散象限→量子化,分数=复合粒子乘法门控.md`
   - 依赖：—；被引用：—
+- [title: "门控模型能走到哪里：一次有边界的物理投影，与未完成的统一"](../../../docs/editorial/articles/004-gated-model-bounded-projection-open-unification.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-91D9B0F629EAA52C / title: "门控模型能走到哪里：一次有边界的物理投影，与未完成的统一" / IMPLICIT-91D9B0F629EAA52C
+  - 来源：`docs/editorial/articles/004-gated-model-bounded-projection-open-unification.md`
+  - 依赖：—；被引用：—
 - [UNIFICATION_NOGO = re.compile(r"(?:grand unification\|unification\|大一统\|统一).{0,80}(?:proved impossible\|impossible\|不可能\|不可行)\|](../../../tools/foundation/adjudicate_nonfunction_claims.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-3d05d6e90a337daa / UNIFICATION_NOGO = re.compile(r"(?:grand unification\|unification\|大一统\|统一).{0,80}(?:proved impossible\|impossible\|不可能\|不可行)\|
@@ -739,7 +901,7 @@
   - 可搜索名称：CLAIM-D137 / Within the source-defined scope, 物理大统一路径 is adjudicated as ARGUMENT_SCHEMA: 物理大统一路径，物理大统一推导、电弱理论碰撞等。. This is a model-in
   - 来源：`data/foundation/adjudications/core-kernel.jsonl`
   - 依赖：—；被引用：—
-- [Within the source-defined scope, 物理存在的四重约束与衰减终态 is adjudicated as STATE_TRANSITION: 物理存在的四重时间约束： 约束1（逻辑·\[D220\](docs/zh/f](../../../data/foundation/adjudications/core-kernel.jsonl)
+- [Within the source-defined scope, 物理存在的四重约束与衰减终态 is adjudicated as STATE_TRANSITION: 物理存在的四重时间约束： 约束1（逻辑·\[D220\](../../../data/foundation/adjudications/core-kernel.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
   - 可搜索名称：CLAIM-D229 / Within the source-defined scope, 物理存在的四重约束与衰减终态 is adjudicated as STATE_TRANSITION: 物理存在的四重时间约束： 约束1（逻辑·\[D220\](docs/zh/f
   - 来源：`data/foundation/adjudications/core-kernel.jsonl`
@@ -748,6 +910,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-f45d0667886ae342 / z3.Implies(no_constraints, no_physics),
   - 来源：`tools/foundation/verify_core_claims.py`
+  - 依赖：—；被引用：—
+- [{"category": "AUTHORITATIVE_CLAIM_INPUT", "matched_rule": "AUTHORITATIVE_CLAIM_INPUT", "path": "统一案例总表/0533-C-538-引力时间减慢 — -Φ(r)=GM.md"}](../../../data/foundation/repository-path-classification/classification-manifest.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-5EA8573576692FB5 / {"category": "AUTHORITATIVE_CLAIM_INPUT", "matched_rule": "AUTHORITATIVE_CLAIM_INPUT", "path": "统一案例总表/0533-C-538-引力时间减慢 — -Φ(r)=GM.md"} / IMPLICIT-5EA8573576692FB5
+  - 来源：`data/foundation/repository-path-classification/classification-manifest.jsonl`
   - 依赖：—；被引用：—
 - [{"id":"C0538","registry_ref":"evidence:C0538","source":"统一案例总表/0533-C-538-引力时间减慢 — -Φ(r)=GM.md","title":"538-引力时间减慢 — -Φ(r)=GM"}](../../../views/legacy-cases.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -774,22 +941,22 @@
   - 可搜索名称：NFC-912ebb57ce42983d / \| \[C-225\]( ) \| \[多因子乘法相变\]( ) \| 多因子乘法相变——物理相变的推广，引入相变禁闭 \|
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：—；被引用：—
-- [\| \[C-324\]( ) \| \[跨学科团队的高效 — 物理学家和生物学家合作，G≈0.3，H≈0.](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/INDEX.md)
+- [\| \[C-324\]( ) \| \[跨学科团队的高效 — 物理学家和生物学家合作，G≈0.3，H≈0.](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-f96c6878865bc766 / \| \[C-324\]( ) \| \[跨学科团队的高效 — 物理学家和生物学家合作，G≈0.3，H≈0.
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D80；被引用：—
-- [\| \[C-500\]( ) \| \[宇宙是Φ从正值趋向零的暂态 — 物理存在有保质期，D223的终极案例\](<./0495-C-500-宇宙是](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/INDEX.md)
+- [\| \[C-500\]( ) \| \[宇宙是Φ从正值趋向零的暂态 — 物理存在有保质期，D223的终极案例\](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-9c512f25b874dab0 / \| \[C-500\]( ) \| \[宇宙是Φ从正值趋向零的暂态 — 物理存在有保质期，D223的终极案例\](<./0495-C-500-宇宙是
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D223；被引用：—
-- [\| \[C-511\]( ) \| \[认知引力波验证 — 大规模裁员事件](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/INDEX.md)
+- [\| \[C-511\]( ) \| \[认知引力波验证 — 大规模裁员事件](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-cbf36052a7b8f174 / \| \[C-511\]( ) \| \[认知引力波验证 — 大规模裁员事件
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D139；被引用：—
-- [\| \[C-517\]( ) \| \[认知引力波验证 — 2008金融危](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/INDEX.md)
+- [\| \[C-517\]( ) \| \[认知引力波验证 — 2008金融危](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-ae014cfacd67934d / \| \[C-517\]( ) \| \[认知引力波验证 — 2008金融危
   - 来源：`统一案例总表/INDEX.md`
@@ -839,9 +1006,9 @@
   - 可搜索名称：NFC-697d107b9be82090 / \| 物理机制统一 \| 标准模型 / 量子场论 / 引力意义上的统一理论 \| 不可直接声称（pending） \|
   - 来源：`outputs/getbrain/project-position-update-20260706.md`
   - 依赖：—；被引用：—
-- [\|“点火证明了物理学大一统不可能”\|撤回\|当前门控乘积模型未完成统一；其他路线仍开放。\|\[物理资产纠偏\](../docs/foundation/physics-asset-correction-20260729.md)\|](../../../RESULTS/CORRECTIONS.md)
+- [\|“点火证明了物理学大一统不可能”\|撤回\|当前门控乘积模型未完成统一；其他路线仍开放。\|\[物理资产纠偏\](../../../docs/foundation/physics-asset-correction-20260729.md)\|](../../../RESULTS/CORRECTIONS.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-0a0517ec0dba5a39 / \|“点火证明了物理学大一统不可能”\|撤回\|当前门控乘积模型未完成统一；其他路线仍开放。\|\[物理资产纠偏\](../docs/foundation/physics-asset-correction-20260729.md)\|
+  - 可搜索名称：NFC-0a0517ec0dba5a39 / \|“点火证明了物理学大一统不可能”\|撤回\|当前门控乘积模型未完成统一；其他路线仍开放。\|\[物理资产纠偏\](../../../docs/foundation/physics-asset-correction-20260729.md)\|
   - 来源：`RESULTS/CORRECTIONS.md`
   - 依赖：—；被引用：—
 - [\|四种基本相互作用统一\|现有门控乘积缺共同作用量、量纲和规范结构，也没有新预测。\|明确的场、对称性、作用量、低能极限、量子一致性与可检验预测。\|若模型不能保持已验证极限或不能给出可区分预测，保持 toy model/撤回物理统一主张。\|](../../../RESULTS/OPEN-QUESTIONS.md)
@@ -849,22 +1016,19 @@
   - 可搜索名称：NFC-6a56c8649443d4aa / \|四种基本相互作用统一\|现有门控乘积缺共同作用量、量纲和规范结构，也没有新预测。\|明确的场、对称性、作用量、低能极限、量子一致性与可检验预测。\|若模型不能保持已验证极限或不能给出可区分预测，保持 toy model/撤回物理统一主张。\|
   - 来源：`RESULTS/OPEN-QUESTIONS.md`
   - 依赖：—；被引用：—
-- [\|把模型中一个门为零理解为世界、状态空间或全部物理信息消失\|重写\|在声明过的载体与运算中，零元可使相应乘积读出退化；这不自动消灭其他状态或可观测量。\|\[物理资产纠偏\](../docs/foundation/physics-asset-cor](../../../RESULTS/CORRECTIONS.md)
+- [\|把模型中一个门为零理解为世界、状态空间或全部物理信息消失\|重写\|在声明过的载体与运算中，零元可使相应乘积读出退化；这不自动消灭其他状态或可观测量。\|\[物理资产纠偏\](../../../RESULTS/CORRECTIONS.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-6e38dfbb7e512b73 / \|把模型中一个门为零理解为世界、状态空间或全部物理信息消失\|重写\|在声明过的载体与运算中，零元可使相应乘积读出退化；这不自动消灭其他状态或可观测量。\|\[物理资产纠偏\](../docs/foundation/physics-asset-cor
-  - 来源：`RESULTS/CORRECTIONS.md`
-  - 依赖：—；被引用：—
-- [\|暗物质\|门控投影没有独立解释星系/宇宙学多数据集。\|多尺度数据、基线模型、参数识别、预注册预测与独立复现。\|不能优于或区分现有模型时保持启发式。\|](../../../RESULTS/OPEN-QUESTIONS.md)
+  - 可搜索名称：NFC-6e38dfbb7e512b73 / \|把模型中一个门为零理解为世界、状态空间或全部物理信息消失\|重写\|在声明过的载体与运算中，零元可使相应乘积读出退化；这不自动消灭其他状态或可观测量。\|\[物理资产纠偏\](../../../RESULTS/OPEN-QUESTIONS.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-2cb94ca844ddaf45 / \|暗物质\|门控投影没有独立解释星系/宇宙学多数据集。\|多尺度数据、基线模型、参数识别、预注册预测与独立复现。\|不能优于或区分现有模型时保持启发式。\|
   - 来源：`RESULTS/OPEN-QUESTIONS.md`
   - 依赖：—；被引用：—
-- [\|查看物理复算与边界\|\[物理资产纠偏\](./docs/foundation/physics-asset-correction-20260729.md)\|\[开放问题\](./RESULTS/OPEN-QUESTIONS.md)\|](../../../HUMAN-READING.md)
+- [\|查看物理复算与边界\|\[物理资产纠偏\](../../../docs/foundation/physics-asset-correction-20260729.md)\|\[开放问题\](../../../RESULTS/OPEN-QUESTIONS.md)\|](../../../HUMAN-READING.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-cd72a272da557b9d / \|查看物理复算与边界\|\[物理资产纠偏\](./docs/foundation/physics-asset-correction-20260729.md)\|\[开放问题\](./RESULTS/OPEN-QUESTIONS.md)\|
+  - 可搜索名称：NFC-cd72a272da557b9d / \|查看物理复算与边界\|\[物理资产纠偏\](../../../docs/foundation/physics-asset-correction-20260729.md)\|\[开放问题\](../../../RESULTS/OPEN-QUESTIONS.md)\|
   - 来源：`HUMAN-READING.md`
   - 依赖：—；被引用：—
-- [\|门控乘积模型是否统一四力？\|没有。现有模型缺少共同物理载体、量纲一致作用量、规范结构、可重整化/有效场论边界与实验预测。\|模型反例与定义义务；不推出其他统一路线失败。\|\[物理资产纠偏\](../docs/foundation/physics](../../../RESULTS/LATEST.md)
+- [\|门控乘积模型是否统一四力？\|没有。现有模型缺少共同物理载体、量纲一致作用量、规范结构、可重整化/有效场论边界与实验预测。\|模型反例与定义义务；不推出其他统一路线失败。\|\[物理资产纠偏\](../../../RESULTS/LATEST.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-9ed664b32264373f / \|门控乘积模型是否统一四力？\|没有。现有模型缺少共同物理载体、量纲一致作用量、规范结构、可重整化/有效场论边界与实验预测。\|模型反例与定义义务；不推出其他统一路线失败。\|\[物理资产纠偏\](../docs/foundation/physics
   - 来源：`RESULTS/LATEST.md`

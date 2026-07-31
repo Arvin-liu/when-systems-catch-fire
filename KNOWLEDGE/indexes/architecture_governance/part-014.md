@@ -4,16 +4,6 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
-- [标准化的文献 dict 或 None](../../../scripts/external-research/openalex_client.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-0c8e98b787fd265c / 标准化的文献 dict 或 None
-  - 来源：`scripts/external-research/openalex_client.py`
-  - 依赖：—；被引用：—
-- [标注 pending** — 写明证据等级；](../../../docs/two-tables-entry-writing-standard-20260709.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-e2c7038d8d07a391 / 标注 pending** — 写明证据等级；
-  - 来源：`docs/two-tables-entry-writing-standard-20260709.md`
-  - 依赖：—；被引用：—
 - [标注证据不足（缺字段显式标"缺失"/"pending"）。](../../../docs/two-tables-entry-writing-standard-20260709.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-7a758edd247ec41e / 标注证据不足（缺字段显式标"缺失"/"pending"）。
@@ -474,11 +464,6 @@
   - 可搜索名称：NFC-d9b13c02b9386591 / 用 Python notebook 或脚本清洗、对齐和检查数据。
   - 来源：`docs/data_integration.md`
   - 依赖：—；被引用：—
-- [用“完成”替代规格、工件、输入、输出、trace 和验证记录。](../../../function-os-candidate/v0.2/README.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-84f3b5ad06bb05e9 / 用“完成”替代规格、工件、输入、输出、trace 和验证记录。
-  - 来源：`function-os-candidate/v0.2/README.md`
-  - 依赖：—；被引用：—
 - [用一个具体动作、物件、称呼或提问开场。开场必须已经出现在证据层里，而不是为了好看新编的细节。](../../../docs/narrative-story-template.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-b46b8dabb828435f / 用一个具体动作、物件、称呼或提问开场。开场必须已经出现在证据层里，而不是为了好看新编的细节。
@@ -508,11 +493,6 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-cd0453d0b6ff9124 / 田野实验验证
   - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [由 component registry、topology 与 layout overlay 确定性派生；0.4.0 当前投影延续 0.3.0、0.2.0 Historical 权威链。](../../../data/operations/project-components.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-782f39df01f16fb6 / 由 component registry、topology 与 layout overlay 确定性派生；0.4.0 当前投影延续 0.3.0、0.2.0 Historical 权威链。
-  - 来源：`data/operations/project-components.json`
   - 依赖：—；被引用：—
 - [的 "INJECTED_VERIFIED" 状态暗示论文内容已验证支持补丁。实际上：](../../../reports/external-research/104-gap-patch-evidence-readiness.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
@@ -759,6 +739,11 @@
   - 可搜索名称：NFC-c85fae3aad888ff0 / 类比冒充同构：是否缺对象、映射、双射/同态与结构保持；
   - 来源：`docs/governance/self-correction-engine.md`
   - 依赖：—；被引用：—
+- [精确远端证据绑定**：预注册祖先、原始结果保留、有界修复、修复后结果、exact-head 复核、所需 CI、干净克隆回执。](../../../ITERATION.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-5641c8a894a3122e / 精确远端证据绑定**：预注册祖先、原始结果保留、有界修复、修复后结果、exact-head 复核、所需 CI、干净克隆回执。
+  - 来源：`ITERATION.md`
+  - 依赖：—；被引用：—
 - [索引可见性验证**：文件存在、INDEX 可见、语义可召回、来源回指、审计闭环](../../../docs/getnote-collision-workflow-final-20260708.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-7f3b3273b93e2d8f / 索引可见性验证**：文件存在、INDEX 可见、语义可召回、来源回指、审计闭环
@@ -934,7 +919,7 @@
   - 可搜索名称：NFC-75400fee3cff50a0 / 统一案例条目模板草案
   - 来源：`outputs/audit/two-tables-entry-format-audit-20260709.md`
   - 依赖：—；被引用：—
-- [统一案例索引表（2026年07月09日00时30分，案例总数 804，收敛 11 条）](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/INDEX.md)
+- [统一案例索引表（2026年07月09日00时30分，案例总数 804，收敛 11 条）](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-16e5d15d9d3b9bfd / 统一案例索引表（2026年07月09日00时30分，案例总数 804，收敛 11 条）
   - 来源：`统一案例总表/INDEX.md`
@@ -949,14 +934,14 @@
   - 可搜索名称：NFC-223b7e4099242da4 / 统一知识入口：KNOWLEDGE/README.md；机器配对与 freshness：data/governance/knowledge-experience/manifest.json
   - 来源：`AI-HANDOFF.md`
   - 依赖：—；被引用：—
-- [统一矩阵入口、12 个协议入口、跨协议红队、事实 pending 总表与宪章入口见本目录 \[README.md\](./README.md)。](../../../docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md)
+- [统一矩阵入口、12 个协议入口、跨协议红队、事实 pending 总表与宪章入口见本目录 \[README.md\](../../README.md)。](../../../docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-1626db3de1e59e39 / 统一矩阵入口、12 个协议入口、跨协议红队、事实 pending 总表与宪章入口见本目录 \[README.md\](./README.md)。
+  - 可搜索名称：NFC-1626db3de1e59e39 / 统一矩阵入口、12 个协议入口、跨协议红队、事实 pending 总表与宪章入口见本目录 \[README.md\](../../README.md)。
   - 来源：`docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md`
   - 依赖：—；被引用：—
-- [统一矩阵：\[12-meta-protocol-normative-review.md\](./12-meta-protocol-normative-review.md)](../../../docs/governance/meta-protocol-reviews/README.md)
+- [统一矩阵：\[12-meta-protocol-normative-review.md\](../../../docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md)](../../../docs/governance/meta-protocol-reviews/README.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-8c661cb492130d09 / 统一矩阵：\[12-meta-protocol-normative-review.md\](./12-meta-protocol-normative-review.md)
+  - 可搜索名称：NFC-8c661cb492130d09 / 统一矩阵：\[12-meta-protocol-normative-review.md\](../../../docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md)
   - 来源：`docs/governance/meta-protocol-reviews/README.md`
   - 依赖：—；被引用：—
 - [统一禁止表达](../../../docs/pending_claims_register.md)
@@ -983,6 +968,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-bd737d61bee6b653 / 缓解：所有普遍判断 REVISE + pending。
   - 来源：`outputs/collisions/20260708-teacher-competition/collision-report.md`
+  - 依赖：—；被引用：—
+- [编辑文章 stale/review 闭合**：若材料源变化，文章须离开 CURRENT 直至附审稿证据。](../../../ITERATION.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-a6e52b9d77c31dc2 / 编辑文章 stale/review 闭合**：若材料源变化，文章须离开 CURRENT 直至附审稿证据。
+  - 来源：`ITERATION.md`
   - 依赖：—；被引用：—
 - [缺乏反事实推断](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
@@ -1058,6 +1048,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-25d5bb85845bf5f3 / 脱不花长期只依赖劳动所得，说明现实财务场景中不存在一套可以永远最优的固定算法。
   - 来源：`统一案例总表/0736-C-0741-脱不花财务决策.md`
+  - 依赖：—；被引用：—
+- [自任务 106 起，任何后续任务在达到 Ready 之前，必须随交付物提供以下传播闭合证据；缺任一项，fail-closed 验证器会在普通 PR 的 CI 中判红：](../../../ITERATION.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-95bdf730e5f927e6 / 自任务 106 起，任何后续任务在达到 Ready 之前，必须随交付物提供以下传播闭合证据；缺任一项，fail-closed 验证器会在普通 PR 的 CI 中判红：
+  - 来源：`ITERATION.md`
   - 依赖：—；被引用：—
 - [自动分类、计数和测试属于仓库证据，不能把资产直接升级成外部真理。](../../../RESULTS/ADJUDICATION-SUMMARY.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -1263,6 +1258,16 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-39be5fc0bacb6433 / 证据、反例与治理
   - 来源：`README.md`
+  - 依赖：—；被引用：—
+- [证据上限：有界域内可信；**不声称**完整沙箱化、生产就绪或普遍正确。](../../../README.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-8ca3b9250e928b49 / 证据上限：有界域内可信；**不声称**完整沙箱化、生产就绪或普遍正确。
+  - 来源：`README.md`
+  - 依赖：—；被引用：—
+- [证据上限：有界域内可信；**不声称**完整沙箱化、生产就绪或普遍正确。原始与修复判定保持区分，不合并为单一结论。](../../../docs/project-current-state.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-1d87af37b95f3a71 / 证据上限：有界域内可信；**不声称**完整沙箱化、生产就绪或普遍正确。原始与修复判定保持区分，不合并为单一结论。
+  - 来源：`docs/project-current-state.md`
   - 依赖：—；被引用：—
 - [证据不足原因：仅自然科学高通量 p 值考核场景强出现（1/3 领域），社会学/历史学弱相关；跨域证据不足。](../../../outputs/audit/cross-domain-candidate-function-small-batch-backfill-audit-20260708.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -1848,11 +1853,6 @@
   - 类型/状态：`RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
   - 可搜索名称：迁移与回滚 / migration
   - 来源：`docs/foundation/migration.md`
-  - 依赖：—；被引用：—
-- [运行 N1-N7，查看规格、artifact、执行结果、trace 和验证报告。](../../../function-os-candidate/v0.2/README.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-7276d4254dfd327b / 运行 N1-N7，查看规格、artifact、执行结果、trace 和验证报告。
-  - 来源：`function-os-candidate/v0.2/README.md`
   - 依赖：—；被引用：—
 - [运行或要求运行 `python3 tools/validate_data.py`，确认 P1 数据有效。](../../../docs/getbrain-operation-guide-20260708.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`

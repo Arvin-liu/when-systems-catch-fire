@@ -1,0 +1,36 @@
+{
+  "nonfunction_claims": {
+    "count_before": 17220,
+    "count_after": 17235,
+    "added": 15,
+    "removed": 0,
+    "disposition_or_axis_changed_existing": 0,
+    "new_claim_disposition_distribution": {
+      "PENDING_EMPIRICAL_TEST": 2,
+      "QUARANTINED_AMBIGUOUS": 3,
+      "PENDING_PROOF": 5,
+      "ACCEPTED_AS_DEFINITION": 5
+    },
+    "new_claim_maturity_distribution": {
+      "M0": 8,
+      "M1": 7
+    },
+    "new_claim_external_evidence_distribution": {
+      "E0": 15
+    },
+    "all_new_claims_low_maturity": true,
+    "any_new_claim_promoted_to_established_or_proved": false,
+    "removed_sample": []
+  },
+  "function_assets": {
+    "count_before": 6097,
+    "count_after": 6098,
+    "added": 1,
+    "removed": 0,
+    "disposition_or_axis_changed_existing": 0,
+    "new_asset_disposition_distribution": {
+      "QUARANTINE_UNTIL_DEFINED": 1
+    }
+  },
+  "verdict": "SEMANTIC_SAFE_DRIFT_CLOSURE_ONLY"
+}

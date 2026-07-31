@@ -4,6 +4,391 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [If upstream objects D_{D29} exist, compose F_{D29}=N(⊕_{g∈D_{D29}} g); otherwise treat F_{D29} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0078-D29-%E7%BB%9F%E4%B8%80%E5%86%85%E9%83%A8%E9%A9%B1%E5%8A%A8%E5%8A%9B%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-a003ff4c1e341129 / If upstream objects D_{D29} exist, compose F_{D29}=N(⊕_{g∈D_{D29}} g); otherwise treat F_{D29} as an axiom seed.
+  - 来源：`统一函数总表/0078-D29-统一内部驱动力函数.md`
+  - 依赖：D29；被引用：—
+- [If upstream objects D_{D2} exist, compose F_{D2}=N(⊕_{g∈D_{D2}} g); otherwise treat F_{D2} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0051-D2-%E9%94%81%E5%AE%9A-%E9%81%AE%E8%94%BD%E8%80%A6%E5%90%88.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-aa74f9df9c3fe3b0 / If upstream objects D_{D2} exist, compose F_{D2}=N(⊕_{g∈D_{D2}} g); otherwise treat F_{D2} as an axiom seed.
+  - 来源：`统一函数总表/0051-D2-锁定-遮蔽耦合.md`
+  - 依赖：D2；被引用：—
+- [If upstream objects D_{D300} exist, compose F_{D300}=N(⊕_{g∈D_{D300}} g); otherwise treat F_{D300} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0336-D300-%E4%BB%A3%E9%99%85%E5%AE%B9%E6%96%A5%E7%B4%AF%E7%A7%AF%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-fabb57cbe7ff69b1 / If upstream objects D_{D300} exist, compose F_{D300}=N(⊕_{g∈D_{D300}} g); otherwise treat F_{D300} as an axiom seed.
+  - 来源：`统一函数总表/0336-D300-代际容斥累积函数.md`
+  - 依赖：D300；被引用：—
+- [If upstream objects D_{D301} exist, compose F_{D301}=N(⊕_{g∈D_{D301}} g); otherwise treat F_{D301} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0337-D301-%E6%9E%81%E5%B0%8F%E7%82%B9%E6%BC%82%E7%A7%BB%E9%80%9F%E7%8E%87%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-03697aa40046e43b / If upstream objects D_{D301} exist, compose F_{D301}=N(⊕_{g∈D_{D301}} g); otherwise treat F_{D301} as an axiom seed.
+  - 来源：`统一函数总表/0337-D301-极小点漂移速率函数.md`
+  - 依赖：D301；被引用：—
+- [If upstream objects D_{D302} exist, compose F_{D302}=N(⊕_{g∈D_{D302}} g); otherwise treat F_{D302} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0338-D302-%E5%AE%B9%E6%96%A5%E6%B8%90%E8%BF%91%E5%8F%91%E6%95%A3%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-1bf875a633b8d5f7 / If upstream objects D_{D302} exist, compose F_{D302}=N(⊕_{g∈D_{D302}} g); otherwise treat F_{D302} as an axiom seed.
+  - 来源：`统一函数总表/0338-D302-容斥渐近发散函数.md`
+  - 依赖：D302；被引用：—
+- [If upstream objects D_{D303} exist, compose F_{D303}=N(⊕_{g∈D_{D303}} g); otherwise treat F_{D303} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0339-D303-%E5%AE%B9%E6%96%A5-%E8%80%A6%E5%90%88%E7%AB%9E%E4%BA%89%E5%8A%A8%E6%80%81%E6%BC%94%E5%8C%96%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-c2b56079a71de2ab / If upstream objects D_{D303} exist, compose F_{D303}=N(⊕_{g∈D_{D303}} g); otherwise treat F_{D303} as an axiom seed.
+  - 来源：`统一函数总表/0339-D303-容斥-耦合竞争动态演化函数.md`
+  - 依赖：D303；被引用：—
+- [If upstream objects D_{D304} exist, compose F_{D304}=N(⊕_{g∈D_{D304}} g); otherwise treat F_{D304} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0340-D304-%E5%BC%B1%E6%B7%B7%E5%90%88%E8%A7%92-%E5%AE%B9%E6%96%A5%E7%BA%A6%E6%9D%9F%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-9de3875fa0a5a289 / If upstream objects D_{D304} exist, compose F_{D304}=N(⊕_{g∈D_{D304}} g); otherwise treat F_{D304} as an axiom seed.
+  - 来源：`统一函数总表/0340-D304-弱混合角-容斥约束函数.md`
+  - 依赖：D304；被引用：—
+- [If upstream objects D_{D305} exist, compose F_{D305}=N(⊕_{g∈D_{D305}} g); otherwise treat F_{D305} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0341-D305-%E7%BB%B4%E5%BA%A6%E5%81%8F%E7%A6%BB%E9%80%80%E5%8C%96%E8%B7%AF%E5%BE%84%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-16a6adda8f86bb61 / If upstream objects D_{D305} exist, compose F_{D305}=N(⊕_{g∈D_{D305}} g); otherwise treat F_{D305} as an axiom seed.
+  - 来源：`统一函数总表/0341-D305-维度偏离退化路径函数.md`
+  - 依赖：D305；被引用：—
+- [If upstream objects D_{D306} exist, compose F_{D306}=N(⊕_{g∈D_{D306}} g); otherwise treat F_{D306} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0342-D306-%E5%8E%BB%E5%AE%B9%E6%96%A5%E6%9D%A1%E4%BB%B6%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-68964228c1b1f4eb / If upstream objects D_{D306} exist, compose F_{D306}=N(⊕_{g∈D_{D306}} g); otherwise treat F_{D306} as an axiom seed.
+  - 来源：`统一函数总表/0342-D306-去容斥条件函数.md`
+  - 依赖：D306；被引用：—
+- [If upstream objects D_{D307} exist, compose F_{D307}=N(⊕_{g∈D_{D307}} g); otherwise treat F_{D307} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0343-D307-%CF%83_opt%E5%BE%AE%E8%A7%82%E8%B5%B7%E6%BA%90%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-793a1bf7f1260cc0 / If upstream objects D_{D307} exist, compose F_{D307}=N(⊕_{g∈D_{D307}} g); otherwise treat F_{D307} as an axiom seed.
+  - 来源：`统一函数总表/0343-D307-σ_opt微观起源函数.md`
+  - 依赖：D307；被引用：—
+- [If upstream objects D_{D308} exist, compose F_{D308}=N(⊕_{g∈D_{D308}} g); otherwise treat F_{D308} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0344-D308-%E9%98%B6%E6%AE%B5%E8%BF%87%E6%B8%A1%E6%BB%9E%E5%90%8E%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-484b615fd7b617d3 / If upstream objects D_{D308} exist, compose F_{D308}=N(⊕_{g∈D_{D308}} g); otherwise treat F_{D308} as an axiom seed.
+  - 来源：`统一函数总表/0344-D308-阶段过渡滞后函数.md`
+  - 依赖：D308；被引用：—
+- [If upstream objects D_{D309} exist, compose F_{D309}=N(⊕_{g∈D_{D309}} g); otherwise treat F_{D309} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0345-D309-%E7%BC%93%E5%86%B2%E5%8F%AF%E9%87%8D%E5%BB%BA%E6%80%A7%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-9fcf1690e16f4778 / If upstream objects D_{D309} exist, compose F_{D309}=N(⊕_{g∈D_{D309}} g); otherwise treat F_{D309} as an axiom seed.
+  - 来源：`统一函数总表/0345-D309-缓冲可重建性函数.md`
+  - 依赖：D309；被引用：—
+- [If upstream objects D_{D30} exist, compose F_{D30}=N(⊕_{g∈D_{D30}} g); otherwise treat F_{D30} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0079-D30-%CE%B5_eff%E9%97%AD%E7%8E%AF%E5%8A%A8%E5%8A%9B%E5%AD%A6%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-b359f629a722c00b / If upstream objects D_{D30} exist, compose F_{D30}=N(⊕_{g∈D_{D30}} g); otherwise treat F_{D30} as an axiom seed.
+  - 来源：`统一函数总表/0079-D30-ε_eff闭环动力学函数.md`
+  - 依赖：D30；被引用：—
+- [If upstream objects D_{D310} exist, compose F_{D310}=N(⊕_{g∈D_{D310}} g); otherwise treat F_{D310} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0346-D310-%E9%98%B6%E6%AE%B52%E4%B8%B4%E7%95%8C%E5%AE%BD%E5%BA%A6%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-1d5cbe52816a4c01 / If upstream objects D_{D310} exist, compose F_{D310}=N(⊕_{g∈D_{D310}} g); otherwise treat F_{D310} as an axiom seed.
+  - 来源：`统一函数总表/0346-D310-阶段2临界宽度函数.md`
+  - 依赖：D310；被引用：—
+- [If upstream objects D_{D311} exist, compose F_{D311}=N(⊕_{g∈D_{D311}} g); otherwise treat F_{D311} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0347-D311-%E5%83%B5%E5%B0%B8%E6%80%81%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-01ce4e8acc1fd565 / If upstream objects D_{D311} exist, compose F_{D311}=N(⊕_{g∈D_{D311}} g); otherwise treat F_{D311} as an axiom seed.
+  - 来源：`统一函数总表/0347-D311-僵尸态函数.md`
+  - 依赖：D311；被引用：—
+- [If upstream objects D_{D312} exist, compose F_{D312}=N(⊕_{g∈D_{D312}} g); otherwise treat F_{D312} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0348-D312-%E6%AD%A3%E5%8F%8D%E9%A6%88%E5%99%AA%E5%A3%B0%E6%94%BE%E5%A4%A7%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-8c5534a5554116f3 / If upstream objects D_{D312} exist, compose F_{D312}=N(⊕_{g∈D_{D312}} g); otherwise treat F_{D312} as an axiom seed.
+  - 来源：`统一函数总表/0348-D312-正反馈噪声放大函数.md`
+  - 依赖：D312；被引用：—
+- [If upstream objects D_{D313} exist, compose F_{D313}=N(⊕_{g∈D_{D313}} g); otherwise treat F_{D313} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0349-D313-%E5%85%B1%E5%AD%98%E7%A8%B3%E6%80%81%E6%9D%A1%E4%BB%B6%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-17acde05a5c89ff0 / If upstream objects D_{D313} exist, compose F_{D313}=N(⊕_{g∈D_{D313}} g); otherwise treat F_{D313} as an axiom seed.
+  - 来源：`统一函数总表/0349-D313-共存稳态条件函数.md`
+  - 依赖：D313；被引用：—
+- [If upstream objects D_{D314} exist, compose F_{D314}=N(⊕_{g∈D_{D314}} g); otherwise treat F_{D314} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0350-D314-%CE%94%CE%A6-P%E4%BC%A0%E5%AF%BC%E9%9D%9E%E7%BA%BF%E6%80%A7%E9%98%88%E5%80%BC%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-f746576e7f3bb69b / If upstream objects D_{D314} exist, compose F_{D314}=N(⊕_{g∈D_{D314}} g); otherwise treat F_{D314} as an axiom seed.
+  - 来源：`统一函数总表/0350-D314-ΔΦ-P传导非线性阈值函数.md`
+  - 依赖：D314；被引用：—
+- [If upstream objects D_{D315} exist, compose F_{D315}=N(⊕_{g∈D_{D315}} g); otherwise treat F_{D315} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0351-D315-%E5%A4%9A%E6%9E%81%E5%B0%8F%E7%82%B9%E7%AB%9E%E4%BA%89%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-444df03c93ad9550 / If upstream objects D_{D315} exist, compose F_{D315}=N(⊕_{g∈D_{D315}} g); otherwise treat F_{D315} as an axiom seed.
+  - 来源：`统一函数总表/0351-D315-多极小点竞争函数.md`
+  - 依赖：D315；被引用：—
+- [If upstream objects D_{D316} exist, compose F_{D316}=N(⊕_{g∈D_{D316}} g); otherwise treat F_{D316} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0352-D316-%E5%AE%B9%E6%96%A5%E6%97%B6%E9%97%B4%E6%9D%83%E9%87%8D%E6%BC%94%E5%8C%96%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-e37d6e8b1aba482f / If upstream objects D_{D316} exist, compose F_{D316}=N(⊕_{g∈D_{D316}} g); otherwise treat F_{D316} as an axiom seed.
+  - 来源：`统一函数总表/0352-D316-容斥时间权重演化函数.md`
+  - 依赖：D316；被引用：—
+- [If upstream objects D_{D317} exist, compose F_{D317}=N(⊕_{g∈D_{D317}} g); otherwise treat F_{D317} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0353-D317-p-%E6%95%8F%E6%84%9F%E5%BA%A6%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-fc62f23b58e4fa44 / If upstream objects D_{D317} exist, compose F_{D317}=N(⊕_{g∈D_{D317}} g); otherwise treat F_{D317} as an axiom seed.
+  - 来源：`统一函数总表/0353-D317-p-敏感度函数.md`
+  - 依赖：D317；被引用：—
+- [If upstream objects D_{D318} exist, compose F_{D318}=N(⊕_{g∈D_{D318}} g); otherwise treat F_{D318} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0354-D318-%E5%AE%B9%E6%96%A5%E4%B8%BB%E5%AF%BC%E5%B0%BA%E5%BA%A6%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-e26c73a213fbbd11 / If upstream objects D_{D318} exist, compose F_{D318}=N(⊕_{g∈D_{D318}} g); otherwise treat F_{D318} as an axiom seed.
+  - 来源：`统一函数总表/0354-D318-容斥主导尺度函数.md`
+  - 依赖：D318；被引用：—
+- [If upstream objects D_{D319} exist, compose F_{D319}=N(⊕_{g∈D_{D319}} g); otherwise treat F_{D319} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0355-D319-%E7%BB%B4%E5%BA%A6%E5%9B%9E%E5%A4%8D%E5%8A%9B%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-75dd0a7cd5e50732 / If upstream objects D_{D319} exist, compose F_{D319}=N(⊕_{g∈D_{D319}} g); otherwise treat F_{D319} as an axiom seed.
+  - 来源：`统一函数总表/0355-D319-维度回复力函数.md`
+  - 依赖：D319；被引用：—
+- [If upstream objects D_{D31} exist, compose F_{D31}=N(⊕_{g∈D_{D31}} g); otherwise treat F_{D31} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0080-D31-%E8%A1%B0%E5%87%8F%E7%8E%87%E5%B9%B2%E9%A2%84%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-b87c5821c1161cb2 / If upstream objects D_{D31} exist, compose F_{D31}=N(⊕_{g∈D_{D31}} g); otherwise treat F_{D31} as an axiom seed.
+  - 来源：`统一函数总表/0080-D31-衰减率干预函数.md`
+  - 依赖：D31；被引用：—
+- [If upstream objects D_{D320} exist, compose F_{D320}=N(⊕_{g∈D_{D320}} g); otherwise treat F_{D320} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0356-D320-%E5%AE%B9%E6%96%A5%E5%8A%A0%E9%80%9F%E8%B7%A8%E5%9F%9F%E6%A0%87%E5%BA%A6%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-9631523a4ce127e9 / If upstream objects D_{D320} exist, compose F_{D320}=N(⊕_{g∈D_{D320}} g); otherwise treat F_{D320} as an axiom seed.
+  - 来源：`统一函数总表/0356-D320-容斥加速跨域标度函数.md`
+  - 依赖：D320；被引用：—
+- [If upstream objects D_{D321} exist, compose F_{D321}=N(⊕_{g∈D_{D321}} g); otherwise treat F_{D321} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0357-D321-d_opt-%CF%83_opt%E8%81%94%E5%90%88%E6%BC%94%E5%8C%96%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-145ad4d153608e85 / If upstream objects D_{D321} exist, compose F_{D321}=N(⊕_{g∈D_{D321}} g); otherwise treat F_{D321} as an axiom seed.
+  - 来源：`统一函数总表/0357-D321-d_opt-σ_opt联合演化函数.md`
+  - 依赖：D321；被引用：—
+- [If upstream objects D_{D322} exist, compose F_{D322}=N(⊕_{g∈D_{D322}} g); otherwise treat F_{D322} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0358-D322-%E5%91%A8%E6%9C%9F%E6%89%B0%E5%8A%A8%E9%98%B6%E6%AE%B5%E5%93%8D%E5%BA%94%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-3bcb8134d890d19e / If upstream objects D_{D322} exist, compose F_{D322}=N(⊕_{g∈D_{D322}} g); otherwise treat F_{D322} as an axiom seed.
+  - 来源：`统一函数总表/0358-D322-周期扰动阶段响应函数.md`
+  - 依赖：D322；被引用：—
+- [If upstream objects D_{D323} exist, compose F_{D323}=N(⊕_{g∈D_{D323}} g); otherwise treat F_{D323} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0359-D323-%E7%BC%93%E5%86%B2%E9%87%8D%E5%BB%BA%E6%97%B6%E9%97%B4%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-e25509354ca42985 / If upstream objects D_{D323} exist, compose F_{D323}=N(⊕_{g∈D_{D323}} g); otherwise treat F_{D323} as an axiom seed.
+  - 来源：`统一函数总表/0359-D323-缓冲重建时间函数.md`
+  - 依赖：D323；被引用：—
+- [If upstream objects D_{D324} exist, compose F_{D324}=N(⊕_{g∈D_{D324}} g); otherwise treat F_{D324} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0360-D324-%E9%98%B6%E6%AE%B52%E5%AE%BD%E5%BA%A6%E6%A0%87%E5%BA%A6%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-d6a29ce302c028be / If upstream objects D_{D324} exist, compose F_{D324}=N(⊕_{g∈D_{D324}} g); otherwise treat F_{D324} as an axiom seed.
+  - 来源：`统一函数总表/0360-D324-阶段2宽度标度函数.md`
+  - 依赖：D324；被引用：—
+- [If upstream objects D_{D325} exist, compose F_{D325}=N(⊕_{g∈D_{D325}} g); otherwise treat F_{D325} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0361-D325-%E5%83%B5%E5%B0%B8%E6%80%81%E8%87%AA%E4%BF%AE%E5%A4%8D%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-7e58db463902b291 / If upstream objects D_{D325} exist, compose F_{D325}=N(⊕_{g∈D_{D325}} g); otherwise treat F_{D325} as an axiom seed.
+  - 来源：`统一函数总表/0361-D325-僵尸态自修复函数.md`
+  - 依赖：D325；被引用：—
+- [If upstream objects D_{D326} exist, compose F_{D326}=N(⊕_{g∈D_{D326}} g); otherwise treat F_{D326} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0362-D326-%E6%AD%A3%E5%8F%8D%E9%A6%88%E9%A5%B1%E5%92%8C%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-95129f745edaedda / If upstream objects D_{D326} exist, compose F_{D326}=N(⊕_{g∈D_{D326}} g); otherwise treat F_{D326} as an axiom seed.
+  - 来源：`统一函数总表/0362-D326-正反馈饱和函数.md`
+  - 依赖：D326；被引用：—
+- [If upstream objects D_{D327} exist, compose F_{D327}=N(⊕_{g∈D_{D327}} g); otherwise treat F_{D327} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0363-D327-%E5%85%B1%E5%AD%98%E9%9C%87%E8%8D%A1%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-5a3edb1445b2b6c4 / If upstream objects D_{D327} exist, compose F_{D327}=N(⊕_{g∈D_{D327}} g); otherwise treat F_{D327} as an axiom seed.
+  - 来源：`统一函数总表/0363-D327-共存震荡函数.md`
+  - 依赖：D327；被引用：—
+- [If upstream objects D_{D328} exist, compose F_{D328}=N(⊕_{g∈D_{D328}} g); otherwise treat F_{D328} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0364-D328-%CE%94%CE%A6%E7%A9%BA%E9%97%B4%E5%BC%82%E8%B4%A8%E6%80%A7%E5%8F%A0%E5%8A%A0%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-d5737dbfe4615f76 / If upstream objects D_{D328} exist, compose F_{D328}=N(⊕_{g∈D_{D328}} g); otherwise treat F_{D328} as an axiom seed.
+  - 来源：`统一函数总表/0364-D328-ΔΦ空间异质性叠加函数.md`
+  - 依赖：D328；被引用：—
+- [If upstream objects D_{D329} exist, compose F_{D329}=N(⊕_{g∈D_{D329}} g); otherwise treat F_{D329} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0365-D329-%E6%9E%81%E5%B0%8F%E7%82%B9%E5%90%88%E5%B9%B6%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-cf2fc6e09435a534 / If upstream objects D_{D329} exist, compose F_{D329}=N(⊕_{g∈D_{D329}} g); otherwise treat F_{D329} as an axiom seed.
+  - 来源：`统一函数总表/0365-D329-极小点合并函数.md`
+  - 依赖：D329；被引用：—
+- [If upstream objects D_{D32} exist, compose F_{D32}=N(⊕_{g∈D_{D32}} g); otherwise treat F_{D32} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0081-D32-%E8%AE%A4%E7%9F%A5-%E7%BE%A4%E4%BD%93%E7%8A%B9%E8%B1%AB%E5%9F%9F%E7%BB%9F%E4%B8%80%E6%98%A0%E5%B0%84%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-e390829576915e56 / If upstream objects D_{D32} exist, compose F_{D32}=N(⊕_{g∈D_{D32}} g); otherwise treat F_{D32} as an axiom seed.
+  - 来源：`统一函数总表/0081-D32-认知-群体犹豫域统一映射函数.md`
+  - 依赖：D32；被引用：—
+- [If upstream objects D_{D330} exist, compose F_{D330}=N(⊕_{g∈D_{D330}} g); otherwise treat F_{D330} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0366-D330-%E5%AE%B9%E6%96%A5%E5%85%B3%E8%81%94%E6%8B%93%E6%89%91%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-a52bad2b9477a648 / If upstream objects D_{D330} exist, compose F_{D330}=N(⊕_{g∈D_{D330}} g); otherwise treat F_{D330} as an axiom seed.
+  - 来源：`统一函数总表/0366-D330-容斥关联拓扑函数.md`
+  - 依赖：D330；被引用：—
+- [If upstream objects D_{D331} exist, compose F_{D331}=N(⊕_{g∈D_{D331}} g); otherwise treat F_{D331} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0367-D331-p-%E6%B6%A8%E8%90%BD%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-6a8da4c423367616 / If upstream objects D_{D331} exist, compose F_{D331}=N(⊕_{g∈D_{D331}} g); otherwise treat F_{D331} as an axiom seed.
+  - 来源：`统一函数总表/0367-D331-p-涨落函数.md`
+  - 依赖：D331；被引用：—
+- [If upstream objects D_{D332} exist, compose F_{D332}=N(⊕_{g∈D_{D332}} g); otherwise treat F_{D332} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0368-D332-%E5%AE%B9%E6%96%A5-%E8%80%A6%E5%90%88%E4%B8%8D%E5%8F%AF%E9%80%86%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-193d8a9eda690531 / If upstream objects D_{D332} exist, compose F_{D332}=N(⊕_{g∈D_{D332}} g); otherwise treat F_{D332} as an axiom seed.
+  - 来源：`统一函数总表/0368-D332-容斥-耦合不可逆函数.md`
+  - 依赖：D332；被引用：—
+- [If upstream objects D_{D333} exist, compose F_{D333}=N(⊕_{g∈D_{D333}} g); otherwise treat F_{D333} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0369-D333-%E7%BB%B4%E5%BA%A6%E5%9B%9E%E5%A4%8D%E9%98%BB%E5%B0%BC%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-99a03caa656521ab / If upstream objects D_{D333} exist, compose F_{D333}=N(⊕_{g∈D_{D333}} g); otherwise treat F_{D333} as an axiom seed.
+  - 来源：`统一函数总表/0369-D333-维度回复阻尼函数.md`
+  - 依赖：D333；被引用：—
+- [If upstream objects D_{D334} exist, compose F_{D334}=N(⊕_{g∈D_{D334}} g); otherwise treat F_{D334} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0370-D334-%E5%AE%B9%E6%96%A5%E5%8A%A0%E9%80%9F%E9%A5%B1%E5%92%8C%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-d87ea28ccf6179ae / If upstream objects D_{D334} exist, compose F_{D334}=N(⊕_{g∈D_{D334}} g); otherwise treat F_{D334} as an axiom seed.
+  - 来源：`统一函数总表/0370-D334-容斥加速饱和函数.md`
+  - 依赖：D334；被引用：—
+- [If upstream objects D_{D335} exist, compose F_{D335}=N(⊕_{g∈D_{D335}} g); otherwise treat F_{D335} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0371-D335-d_opt-%CF%83_opt%E5%B9%B3%E8%A1%A1%E7%A8%B3%E5%AE%9A%E6%80%A7%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-a383e257f72c092d / If upstream objects D_{D335} exist, compose F_{D335}=N(⊕_{g∈D_{D335}} g); otherwise treat F_{D335} as an axiom seed.
+  - 来源：`统一函数总表/0371-D335-d_opt-σ_opt平衡稳定性函数.md`
+  - 依赖：D335；被引用：—
+- [If upstream objects D_{D336} exist, compose F_{D336}=N(⊕_{g∈D_{D336}} g); otherwise treat F_{D336} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0372-D336-%E5%A4%9A%E9%A2%91%E5%8F%A0%E5%8A%A0%E9%98%B6%E6%AE%B5%E5%93%8D%E5%BA%94%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-8983010f26c4c6e7 / If upstream objects D_{D336} exist, compose F_{D336}=N(⊕_{g∈D_{D336}} g); otherwise treat F_{D336} as an axiom seed.
+  - 来源：`统一函数总表/0372-D336-多频叠加阶段响应函数.md`
+  - 依赖：D336；被引用：—
+- [If upstream objects D_{D337} exist, compose F_{D337}=N(⊕_{g∈D_{D337}} g); otherwise treat F_{D337} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0373-D337-%E7%BC%93%E5%86%B2%E9%83%A8%E5%88%86%E9%87%8D%E5%BB%BA%E6%95%88%E7%8E%87%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-cf9f5bcb5ce19eea / If upstream objects D_{D337} exist, compose F_{D337}=N(⊕_{g∈D_{D337}} g); otherwise treat F_{D337} as an axiom seed.
+  - 来源：`统一函数总表/0373-D337-缓冲部分重建效率函数.md`
+  - 依赖：D337；被引用：—
+- [If upstream objects D_{D338} exist, compose F_{D338}=N(⊕_{g∈D_{D338}} g); otherwise treat F_{D338} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0374-D338-%E9%98%B6%E6%AE%B52%E5%AE%BD%E5%BA%A6-%E6%B8%A9%E5%BA%A6%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-056d55d7e9c92d51 / If upstream objects D_{D338} exist, compose F_{D338}=N(⊕_{g∈D_{D338}} g); otherwise treat F_{D338} as an axiom seed.
+  - 来源：`统一函数总表/0374-D338-阶段2宽度-温度函数.md`
+  - 依赖：D338；被引用：—
+- [If upstream objects D_{D339} exist, compose F_{D339}=N(⊕_{g∈D_{D339}} g); otherwise treat F_{D339} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0375-D339-%E5%83%B5%E5%B0%B8%E6%80%81%E6%95%91%E6%8F%B4%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-cdb111354a18085f / If upstream objects D_{D339} exist, compose F_{D339}=N(⊕_{g∈D_{D339}} g); otherwise treat F_{D339} as an axiom seed.
+  - 来源：`统一函数总表/0375-D339-僵尸态救援函数.md`
+  - 依赖：D339；被引用：—
+- [If upstream objects D_{D33} exist, compose F_{D33}=N(⊕_{g∈D_{D33}} g); otherwise treat F_{D33} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0082-D33-%E4%B8%89%E5%B1%82%E9%80%80%E5%8C%96%E5%8F%A0%E5%8A%A0%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-33275c9c3c770344 / If upstream objects D_{D33} exist, compose F_{D33}=N(⊕_{g∈D_{D33}} g); otherwise treat F_{D33} as an axiom seed.
+  - 来源：`统一函数总表/0082-D33-三层退化叠加函数.md`
+  - 依赖：D33；被引用：—
+- [If upstream objects D_{D340} exist, compose F_{D340}=N(⊕_{g∈D_{D340}} g); otherwise treat F_{D340} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0376-D340-%E6%AD%A3%E5%8F%8D%E9%A6%88%E9%A5%B1%E5%92%8C%E5%90%8E%E6%8C%AF%E8%8D%A1%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-7e326edf975f697a / If upstream objects D_{D340} exist, compose F_{D340}=N(⊕_{g∈D_{D340}} g); otherwise treat F_{D340} as an axiom seed.
+  - 来源：`统一函数总表/0376-D340-正反馈饱和后振荡函数.md`
+  - 依赖：D340；被引用：—
+- [If upstream objects D_{D341} exist, compose F_{D341}=N(⊕_{g∈D_{D341}} g); otherwise treat F_{D341} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0377-D341-%E5%85%B1%E5%AD%98%E9%9C%87%E8%8D%A1%E9%98%BB%E5%B0%BC%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-048fde41c0913ee7 / If upstream objects D_{D341} exist, compose F_{D341}=N(⊕_{g∈D_{D341}} g); otherwise treat F_{D341} as an axiom seed.
+  - 来源：`统一函数总表/0377-D341-共存震荡阻尼函数.md`
+  - 依赖：D341；被引用：—
+- [If upstream objects D_{D342} exist, compose F_{D342}=N(⊕_{g∈D_{D342}} g); otherwise treat F_{D342} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0378-D342-%CE%94%CE%A6%E6%97%B6%E9%97%B4%E7%B4%AF%E7%A7%AF%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-8d90a664be1d2370 / If upstream objects D_{D342} exist, compose F_{D342}=N(⊕_{g∈D_{D342}} g); otherwise treat F_{D342} as an axiom seed.
+  - 来源：`统一函数总表/0378-D342-ΔΦ时间累积函数.md`
+  - 依赖：D342；被引用：—
+- [If upstream objects D_{D343} exist, compose F_{D343}=N(⊕_{g∈D_{D343}} g); otherwise treat F_{D343} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0379-D343-%E6%9E%81%E5%B0%8F%E7%82%B9%E6%B6%88%E5%A4%B1%E9%81%97%E8%BF%B9%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-86ef7cefc2c5a3ec / If upstream objects D_{D343} exist, compose F_{D343}=N(⊕_{g∈D_{D343}} g); otherwise treat F_{D343} as an axiom seed.
+  - 来源：`统一函数总表/0379-D343-极小点消失遗迹函数.md`
+  - 依赖：D343；被引用：—
+- [If upstream objects D_{D344} exist, compose F_{D344}=N(⊕_{g∈D_{D344}} g); otherwise treat F_{D344} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0380-D344-%E5%AE%B9%E6%96%A5%E5%85%B3%E8%81%94%E5%8A%A8%E6%80%81%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-86e35231865eb32d / If upstream objects D_{D344} exist, compose F_{D344}=N(⊕_{g∈D_{D344}} g); otherwise treat F_{D344} as an axiom seed.
+  - 来源：`统一函数总表/0380-D344-容斥关联动态函数.md`
+  - 依赖：D344；被引用：—
+- [If upstream objects D_{D345} exist, compose F_{D345}=N(⊕_{g∈D_{D345}} g); otherwise treat F_{D345} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0381-D345-p-%E6%B6%A8%E8%90%BD-%E5%99%AA%E5%A3%B0%E8%80%A6%E5%90%88%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-7999f46d31a4e41c / If upstream objects D_{D345} exist, compose F_{D345}=N(⊕_{g∈D_{D345}} g); otherwise treat F_{D345} as an axiom seed.
+  - 来源：`统一函数总表/0381-D345-p-涨落-噪声耦合函数.md`
+  - 依赖：D345；被引用：—
+- [If upstream objects D_{D346} exist, compose F_{D346}=N(⊕_{g∈D_{D346}} g); otherwise treat F_{D346} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0382-D346-%E5%AE%B9%E6%96%A5%E4%B8%BB%E5%AF%BC%E5%8C%BA%E5%86%85%E9%83%A8%E7%BB%93%E6%9E%84%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-f508e30bf9686b73 / If upstream objects D_{D346} exist, compose F_{D346}=N(⊕_{g∈D_{D346}} g); otherwise treat F_{D346} as an axiom seed.
+  - 来源：`统一函数总表/0382-D346-容斥主导区内部结构函数.md`
+  - 依赖：D346；被引用：—
+- [If upstream objects D_{D347} exist, compose F_{D347}=N(⊕_{g∈D_{D347}} g); otherwise treat F_{D347} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0383-D347-%E7%BB%B4%E5%BA%A6%E5%9B%9E%E5%A4%8D%E9%9D%9E%E7%BA%BF%E6%80%A7%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-9736d4898a1892ec / If upstream objects D_{D347} exist, compose F_{D347}=N(⊕_{g∈D_{D347}} g); otherwise treat F_{D347} as an axiom seed.
+  - 来源：`统一函数总表/0383-D347-维度回复非线性函数.md`
+  - 依赖：D347；被引用：—
+- [If upstream objects D_{D348} exist, compose F_{D348}=N(⊕_{g∈D_{D348}} g); otherwise treat F_{D348} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0384-D348-%E5%AE%B9%E6%96%A5%E5%8A%A0%E9%80%9F-%E6%97%B6%E9%97%B4%E6%9D%83%E9%87%8D%E8%81%94%E5%90%88%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-cff2ffb9622e2aeb / If upstream objects D_{D348} exist, compose F_{D348}=N(⊕_{g∈D_{D348}} g); otherwise treat F_{D348} as an axiom seed.
+  - 来源：`统一函数总表/0384-D348-容斥加速-时间权重联合函数.md`
+  - 依赖：D348；被引用：—
+- [If upstream objects D_{D349} exist, compose F_{D349}=N(⊕_{g∈D_{D349}} g); otherwise treat F_{D349} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0385-D349-%E8%BF%87%E5%88%86%E6%95%A3%E7%9B%B8%E5%9B%BE%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-093364dedf78655c / If upstream objects D_{D349} exist, compose F_{D349}=N(⊕_{g∈D_{D349}} g); otherwise treat F_{D349} as an axiom seed.
+  - 来源：`统一函数总表/0385-D349-过分散相图函数.md`
+  - 依赖：D349；被引用：—
+- [If upstream objects D_{D34} exist, compose F_{D34}=N(⊕_{g∈D_{D34}} g); otherwise treat F_{D34} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0083-D34-%E5%85%85%E5%88%86%E6%9D%A1%E4%BB%B6%E4%B8%89%E5%B1%82%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-f4dc7fd47f847308 / If upstream objects D_{D34} exist, compose F_{D34}=N(⊕_{g∈D_{D34}} g); otherwise treat F_{D34} as an axiom seed.
+  - 来源：`统一函数总表/0083-D34-充分条件三层函数.md`
+  - 依赖：D34；被引用：—
+- [If upstream objects D_{D350} exist, compose F_{D350}=N(⊕_{g∈D_{D350}} g); otherwise treat F_{D350} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0386-D350-%E9%98%B6%E6%AE%B5%E8%BF%87%E6%B8%A1%E4%B8%8D%E5%8F%AF%E9%80%86%E6%A0%87%E8%AE%B0%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-1a777c9c056394c4 / If upstream objects D_{D350} exist, compose F_{D350}=N(⊕_{g∈D_{D350}} g); otherwise treat F_{D350} as an axiom seed.
+  - 来源：`统一函数总表/0386-D350-阶段过渡不可逆标记函数.md`
+  - 依赖：D350；被引用：—
+- [If upstream objects D_{D351} exist, compose F_{D351}=N(⊕_{g∈D_{D351}} g); otherwise treat F_{D351} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0387-D351-%E7%BC%93%E5%86%B2%E5%85%B3%E8%81%94%E7%BB%93%E6%9E%84%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-a5323289eaebf9d0 / If upstream objects D_{D351} exist, compose F_{D351}=N(⊕_{g∈D_{D351}} g); otherwise treat F_{D351} as an axiom seed.
+  - 来源：`统一函数总表/0387-D351-缓冲关联结构函数.md`
+  - 依赖：D351；被引用：—
+- [If upstream objects D_{D352} exist, compose F_{D352}=N(⊕_{g∈D_{D352}} g); otherwise treat F_{D352} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0388-D352-%E9%98%B6%E6%AE%B52%E5%AE%BD%E5%BA%A6-%E5%85%B1%E6%8C%AF%E9%A2%91%E7%8E%87%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-27853e15d488e3e7 / If upstream objects D_{D352} exist, compose F_{D352}=N(⊕_{g∈D_{D352}} g); otherwise treat F_{D352} as an axiom seed.
+  - 来源：`统一函数总表/0388-D352-阶段2宽度-共振频率函数.md`
+  - 依赖：D352；被引用：—
+- [If upstream objects D_{D353} exist, compose F_{D353}=N(⊕_{g∈D_{D353}} g); otherwise treat F_{D353} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0389-D353-%E5%83%B5%E5%B0%B8%E6%80%81%E4%BC%A0%E6%9F%93%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-8b7286776b5665ed / If upstream objects D_{D353} exist, compose F_{D353}=N(⊕_{g∈D_{D353}} g); otherwise treat F_{D353} as an axiom seed.
+  - 来源：`统一函数总表/0389-D353-僵尸态传染函数.md`
+  - 依赖：D353；被引用：—
+- [If upstream objects D_{D354} exist, compose F_{D354}=N(⊕_{g∈D_{D354}} g); otherwise treat F_{D354} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0390-D354-%E6%AD%A3%E5%8F%8D%E9%A6%88%E5%BB%B6%E8%BF%9F%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-a78c199d06f48a49 / If upstream objects D_{D354} exist, compose F_{D354}=N(⊕_{g∈D_{D354}} g); otherwise treat F_{D354} as an axiom seed.
+  - 来源：`统一函数总表/0390-D354-正反馈延迟函数.md`
+  - 依赖：D354；被引用：—
+- [If upstream objects D_{D355} exist, compose F_{D355}=N(⊕_{g∈D_{D355}} g); otherwise treat F_{D355} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0391-D355-%E5%85%B1%E5%AD%98%E9%9C%87%E8%8D%A1%E5%88%86%E6%94%AF%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-09af678d025c1da4 / If upstream objects D_{D355} exist, compose F_{D355}=N(⊕_{g∈D_{D355}} g); otherwise treat F_{D355} as an axiom seed.
+  - 来源：`统一函数总表/0391-D355-共存震荡分支函数.md`
+  - 依赖：D355；被引用：—
+- [If upstream objects D_{D356} exist, compose F_{D356}=N(⊕_{g∈D_{D356}} g); otherwise treat F_{D356} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0392-D356-%CE%94%CE%A6%E6%97%B6%E7%A9%BA%E5%85%B3%E8%81%94%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-bfa99acb309c3c8d / If upstream objects D_{D356} exist, compose F_{D356}=N(⊕_{g∈D_{D356}} g); otherwise treat F_{D356} as an axiom seed.
+  - 来源：`统一函数总表/0392-D356-ΔΦ时空关联函数.md`
+  - 依赖：D356；被引用：—
+- [If upstream objects D_{D357} exist, compose F_{D357}=N(⊕_{g∈D_{D357}} g); otherwise treat F_{D357} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0393-D357-%E6%9E%81%E5%B0%8F%E7%82%B9%E5%A4%8D%E6%B4%BB%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-12b297c426bd7dfb / If upstream objects D_{D357} exist, compose F_{D357}=N(⊕_{g∈D_{D357}} g); otherwise treat F_{D357} as an axiom seed.
+  - 来源：`统一函数总表/0393-D357-极小点复活函数.md`
+  - 依赖：D357；被引用：—
+- [If upstream objects D_{D358} exist, compose F_{D358}=N(⊕_{g∈D_{D358}} g); otherwise treat F_{D358} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0394-D358-%E5%AE%B9%E6%96%A5%E5%85%B3%E8%81%94%E5%AF%B9%E7%A7%B0%E6%80%A7%E7%A0%B4%E7%BC%BA%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-d2b77793438d87cb / If upstream objects D_{D358} exist, compose F_{D358}=N(⊕_{g∈D_{D358}} g); otherwise treat F_{D358} as an axiom seed.
+  - 来源：`统一函数总表/0394-D358-容斥关联对称性破缺函数.md`
+  - 依赖：D358；被引用：—
+- [If upstream objects D_{D359} exist, compose F_{D359}=N(⊕_{g∈D_{D359}} g); otherwise treat F_{D359} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0395-D359-p-%E6%94%BE%E5%A4%A7%E6%B6%A8%E8%90%BD-%E6%9C%89%E9%99%90n%E8%81%94%E5%90%88%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-e5b22f00db4b2ac4 / If upstream objects D_{D359} exist, compose F_{D359}=N(⊕_{g∈D_{D359}} g); otherwise treat F_{D359} as an axiom seed.
+  - 来源：`统一函数总表/0395-D359-p-放大涨落-有限n联合函数.md`
+  - 依赖：D359；被引用：—
+- [If upstream objects D_{D35} exist, compose F_{D35}=N(⊕_{g∈D_{D35}} g); otherwise treat F_{D35} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0084-D35-%E4%B9%98%E6%B3%95%E5%AF%B9%E7%A7%B0%E5%8F%98%E6%8D%A2%E5%B1%95%E5%BC%80%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-5609ffc32c5135db / If upstream objects D_{D35} exist, compose F_{D35}=N(⊕_{g∈D_{D35}} g); otherwise treat F_{D35} as an axiom seed.
+  - 来源：`统一函数总表/0084-D35-乘法对称变换展开函数.md`
+  - 依赖：D35；被引用：—
+- [If upstream objects D_{D360} exist, compose F_{D360}=N(⊕_{g∈D_{D360}} g); otherwise treat F_{D360} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0396-D360-%E5%BC%B1%E5%AE%B9%E6%96%A5-%E4%B8%8D%E5%8F%AF%E9%80%86%E8%BE%B9%E7%95%8C%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-223f0af3b2e1c117 / If upstream objects D_{D360} exist, compose F_{D360}=N(⊕_{g∈D_{D360}} g); otherwise treat F_{D360} as an axiom seed.
+  - 来源：`统一函数总表/0396-D360-弱容斥-不可逆边界函数.md`
+  - 依赖：D360；被引用：—
+- [If upstream objects D_{D361} exist, compose F_{D361}=N(⊕_{g∈D_{D361}} g); otherwise treat F_{D361} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0397-D361-%E7%BB%B4%E5%BA%A6%E5%9B%9E%E5%A4%8D%E9%9D%9E%E7%BA%BF%E6%80%A7-%E9%98%BB%E5%B0%BC%E8%81%94%E5%90%88%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-6559eedcb340f2a4 / If upstream objects D_{D361} exist, compose F_{D361}=N(⊕_{g∈D_{D361}} g); otherwise treat F_{D361} as an axiom seed.
+  - 来源：`统一函数总表/0397-D361-维度回复非线性-阻尼联合函数.md`
+  - 依赖：D361；被引用：—
+- [If upstream objects D_{D362} exist, compose F_{D362}=N(⊕_{g∈D_{D362}} g); otherwise treat F_{D362} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0398-D362-%E5%AE%B9%E6%96%A5%E5%8A%A0%E9%80%9F-%E6%B3%A2%E5%8A%A8%E7%B4%AF%E7%A7%AF%E8%81%94%E5%90%88%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-bb34d8b4c9b0a3aa / If upstream objects D_{D362} exist, compose F_{D362}=N(⊕_{g∈D_{D362}} g); otherwise treat F_{D362} as an axiom seed.
+  - 来源：`统一函数总表/0398-D362-容斥加速-波动累积联合函数.md`
+  - 依赖：D362；被引用：—
+- [If upstream objects D_{D363} exist, compose F_{D363}=N(⊕_{g∈D_{D363}} g); otherwise treat F_{D363} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0399-D363-%E7%BB%B4%E5%BA%A6%E9%A5%A5%E6%B8%B4%E6%84%9F%E7%9F%A5%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-3609c654615f151f / If upstream objects D_{D363} exist, compose F_{D363}=N(⊕_{g∈D_{D363}} g); otherwise treat F_{D363} as an axiom seed.
+  - 来源：`统一函数总表/0399-D363-维度饥渴感知函数.md`
+  - 依赖：D363；被引用：—
+- [If upstream objects D_{D364} exist, compose F_{D364}=N(⊕_{g∈D_{D364}} g); otherwise treat F_{D364} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0400-D364-%E5%AE%9E%E9%99%85%E4%B8%8D%E5%8F%AF%E9%80%86%E5%88%A4%E6%8D%AE%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-861c60dba75db0ae / If upstream objects D_{D364} exist, compose F_{D364}=N(⊕_{g∈D_{D364}} g); otherwise treat F_{D364} as an axiom seed.
+  - 来源：`统一函数总表/0400-D364-实际不可逆判据函数.md`
+  - 依赖：D364；被引用：—
+- [If upstream objects D_{D365} exist, compose F_{D365}=N(⊕_{g∈D_{D365}} g); otherwise treat F_{D365} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0401-D365-%E7%BC%93%E5%86%B2%E6%BA%A2%E5%87%BA%E6%96%B9%E5%90%91%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-8e4e2ac935f3100b / If upstream objects D_{D365} exist, compose F_{D365}=N(⊕_{g∈D_{D365}} g); otherwise treat F_{D365} as an axiom seed.
+  - 来源：`统一函数总表/0401-D365-缓冲溢出方向函数.md`
+  - 依赖：D365；被引用：—
+- [If upstream objects D_{D366} exist, compose F_{D366}=N(⊕_{g∈D_{D366}} g); otherwise treat F_{D366} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0402-D366-%E5%85%B1%E6%8C%AF%E9%A2%91%E7%8E%87-%E6%B6%88%E8%80%97%E6%95%88%E7%8E%87%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-db6c5daa7cf7eb3d / If upstream objects D_{D366} exist, compose F_{D366}=N(⊕_{g∈D_{D366}} g); otherwise treat F_{D366} as an axiom seed.
+  - 来源：`统一函数总表/0402-D366-共振频率-消耗效率函数.md`
+  - 依赖：D366；被引用：—
+- [If upstream objects D_{D367} exist, compose F_{D367}=N(⊕_{g∈D_{D367}} g); otherwise treat F_{D367} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0403-D367-%E5%83%B5%E5%B0%B8%E6%80%81%E4%BC%A0%E6%9F%93%E5%85%8D%E7%96%AB%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-db3bde2f9460fd63 / If upstream objects D_{D367} exist, compose F_{D367}=N(⊕_{g∈D_{D367}} g); otherwise treat F_{D367} as an axiom seed.
+  - 来源：`统一函数总表/0403-D367-僵尸态传染免疫函数.md`
+  - 依赖：D367；被引用：—
+- [If upstream objects D_{D368} exist, compose F_{D368}=N(⊕_{g∈D_{D368}} g); otherwise treat F_{D368} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0404-D368-%E5%BB%B6%E8%BF%9F-%E5%99%AA%E5%A3%B0%E9%A2%91%E8%B0%B1%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-1114c97b68898875 / If upstream objects D_{D368} exist, compose F_{D368}=N(⊕_{g∈D_{D368}} g); otherwise treat F_{D368} as an axiom seed.
+  - 来源：`统一函数总表/0404-D368-延迟-噪声频谱函数.md`
+  - 依赖：D368；被引用：—
 - [If upstream objects D_{D369} exist, compose F_{D369}=N(⊕_{g∈D_{D369}} g); otherwise treat F_{D369} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0405-D369-%E9%9C%87%E8%8D%A1%E9%98%BB%E5%B0%BC-%E5%88%86%E6%94%AF%E6%AD%A5%E9%95%BF%E8%81%94%E5%90%88%E5%87%BD%E6%95%B0.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-5679d01168477e4e / If upstream objects D_{D369} exist, compose F_{D369}=N(⊕_{g∈D_{D369}} g); otherwise treat F_{D369} as an axiom seed.
@@ -864,11 +1249,6 @@
   - 可搜索名称：NFC-a70dc7733604bad6 / Including randomized and non-randomized studies of interventions in evidence synthesis for harms: a meta-epidemiological
   - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
   - 依赖：—；被引用：—
-- [Independent review must evaluate only blockers applicable to each lifecycle gate.](../../../data/operations/iterations/121Q25C.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-5165c4c2a7b36db0 / Independent review must evaluate only blockers applicable to each lifecycle gate.
-  - 来源：`data/operations/iterations/121Q25C.json`
-  - 依赖：—；被引用：—
 - [Interference and performance are observable, while calibrated uncertainty, durable traces and lifecycle state are absent](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
   - 可搜索名称：NFC-941361b51a393704 / Interference and performance are observable, while calibrated uncertainty, durable traces and lifecycle state are absent
@@ -898,11 +1278,6 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-a6026e206d337722 / It is not a causal proof, not a universal method, not a new project positioning, and not a merge-ready release.
   - 来源：`reports/architecture/121Q12-effectual-mechanism-dual-loop.md`
-  - 依赖：—；被引用：—
-- [It records 1.1 Current and 1.2 Draft without lifecycle inflation.](../../../data/operations/iterations/121Q32.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-c1fb1245d2dfcddc / It records 1.1 Current and 1.2 Draft without lifecycle inflation.
-  - 来源：`data/operations/iterations/121Q32.json`
   - 依赖：—；被引用：—
 - [It supplies a detailed theorem-assumption-error decomposition and a clearly smaller numerical illustration, sharply sepa](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
@@ -1284,11 +1659,6 @@
   - 可搜索名称：NFC-21d5c073c5fdeea4 / lifecycle = seal.get("lifecycle", {})
   - 来源：`tools/validate_iteration_sync.py`
   - 依赖：—；被引用：—
-- [Lifecycle and closure seal.](../../../data/operations/iterations/121Q28.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-2aa7d210b7133b09 / Lifecycle and closure seal.
-  - 来源：`data/operations/iterations/121Q28.json`
-  - 依赖：—；被引用：—
 - [Lifecycle and external boundary](../../../reports/operations/121Q32-typed-change-propagation-and-self-updating-system-map-audit.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-68954a926ba98c92 / Lifecycle and external boundary
@@ -1298,11 +1668,6 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-54ec2752beef52e3 / Lifecycle at this report: Candidate=true; Ready for GPT verification=true; Accepted=false; Merged=false; Current=false.
   - 来源：`reports/operations/121Q28-embodied-cognitive-leap-writing-method-audit.md`
-  - 依赖：—；被引用：—
-- [Lifecycle closeout adds no architecture or truth layer.](../../../data/operations/iterations/121Q28T.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-8cff87e0fde52a17 / Lifecycle closeout adds no architecture or truth layer.
-  - 来源：`data/operations/iterations/121Q28T.json`
   - 依赖：—；被引用：—
 - [Lifecycle consistency](../../../tools/validate_external_attestation.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
@@ -1319,15 +1684,15 @@
   - 可搜索名称：NFC-9f5f9d10fd31c073 / lifecycle must be active (current/live authority)
   - 来源：`tools/operations/validate_generated_output_authority.py`
   - 依赖：—；被引用：—
-- [Lifecycle seal.](../../../data/operations/iterations/121Q28R.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-4ed14fe36b4ccee8 / Lifecycle seal.
-  - 来源：`data/operations/iterations/121Q28R.json`
-  - 依赖：—；被引用：—
 - [Lifecycle state and claim ceiling:](../../../templates/operations/execution-result-template.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
   - 可搜索名称：NFC-bfb15a8fa99ad087 / Lifecycle state and claim ceiling:
   - 来源：`templates/operations/execution-result-template.md`
+  - 依赖：—；被引用：—
+- [Lifecycle states required by contract §4.](../../../tools/propagation/ledger.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-fc3371d8346fd91b / Lifecycle states required by contract §4.
+  - 来源：`tools/propagation/ledger.py`
   - 依赖：—；被引用：—
 - [lifecycle_status + content_digest_sha256 + inputs). The bare "generator"](../../../tests/test_change_propagation.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
@@ -1814,7 +2179,7 @@
   - 可搜索名称：NFC-6f6f15b132c826f9 / M(B_n)：仅单领域强复现，社会学/历史学弱，跨域收敛性不足，暂不能稳定成函数。
   - 来源：`outputs/audit/cross-domain-candidate-function-review-20260708.md`
   - 依赖：—；被引用：—
-- [M10的溢出是传染的物理通道。统一传染链：高p恶化→溢出消耗低p缓冲(\[D379\](docs/zh/functions/items/D379.md))→低p缓冲<g_critical(\[D309\](docs/zh/functions/ite](../../../data/math-foundation/function-provenance-ledger.csv)
+- [M10的溢出是传染的物理通道。统一传染链：高p恶化→溢出消耗低p缓冲(\[D379\](docs/zh/functions/items/D379.md))→低p缓冲<g_critical(\[D309\](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-a09ffac283909a9b / M10的溢出是传染的物理通道。统一传染链：高p恶化→溢出消耗低p缓冲(\[D379\](docs/zh/functions/items/D379.md))→低p缓冲<g_critical(\[D309\](docs/zh/functions/ite
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
@@ -2139,368 +2504,3 @@
   - 可搜索名称：NFC-e6fc2c1d5acb9211 / M3的I_concentration正是D387配分函数的序参量——磁化强度m的线性映射I=(1+m)/2。降p_max既降Φ也降低m→降低I→容斥从有序变无序。D386和D387完全统一。
   - 来源：`统一函数总表/0436-D400-集中性-序参量统一函数.md`
   - 依赖：D386, D387；被引用：—
-- [M3的I_concentration正是D387配分函数的序参量——磁化强度m的线性映射I=(1+m)/2。降p_max既降Φ也降低m→降低I→容斥从有序变无序。D386和D387完全统一。 **扩展注释 / Extended Annota](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-a171cfc3d6eeab96 / M3的I_concentration正是D387配分函数的序参量——磁化强度m的线性映射I=(1+m)/2。降p_max既降Φ也降低m→降低I→容斥从有序变无序。D386和D387完全统一。 **扩展注释 / Extended Annota
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D386, D387；被引用：—
-- [M4的Ising同构意味着配分函数Z = Σ e^{-β_H·H}，H = -ḡ·Σsᵢsⱼ + Σpᵢ·sᵢ，sᵢ=±1。ḡ对应Ising的J，pᵢ对应外场h。临界温度T_c ∝ ḡ·√n。容斥-耦合竞争的全部统计性质可由标准统计力学方法](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-28779e085091737a / M4的Ising同构意味着配分函数Z = Σ e^{-β_H·H}，H = -ḡ·Σsᵢsⱼ + Σpᵢ·sᵢ，sᵢ=±1。ḡ对应Ising的J，pᵢ对应外场h。临界温度T_c ∝ ḡ·√n。容斥-耦合竞争的全部统计性质可由标准统计力学方法
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：—；被引用：—
-- [M4的Ising同构意味着配分函数Z = Σ e^{-β_H·H}，H = -ḡ·Σsᵢsⱼ + Σpᵢ·sᵢ，sᵢ=±1。ḡ对应Ising的J，pᵢ对应外场h。临界温度T_c ∝ ḡ·√n。容斥-耦合竞争的全部统计性质可由标准统计力学方法](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0423-D387-%E5%AE%B9%E6%96%A5-%E8%80%A6%E5%90%88%E9%85%8D%E5%88%86%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-50f7920498f2bcef / M4的Ising同构意味着配分函数Z = Σ e^{-β_H·H}，H = -ḡ·Σsᵢsⱼ + Σpᵢ·sᵢ，sᵢ=±1。ḡ对应Ising的J，pᵢ对应外场h。临界温度T_c ∝ ḡ·√n。容斥-耦合竞争的全部统计性质可由标准统计力学方法
-  - 来源：`统一函数总表/0423-D387-容斥-耦合配分函数.md`
-  - 依赖：—；被引用：—
-- [M4的K=√n临界附近标度律：涨落方差∝1/\|K-√n\|，关联时间∝1/\|K-√n\|。临界指数β=1/2（平均场），γ=1。与Ising模型同构——容斥-耦合竞争临界点是平均场相变，普适类与Ising相同。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0409-D373-p-%E4%B8%B4%E7%95%8C%E6%A0%87%E5%BA%A6%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-92a82f57296a91fa / M4的K=√n临界附近标度律：涨落方差∝1/\|K-√n\|，关联时间∝1/\|K-√n\|。临界指数β=1/2（平均场），γ=1。与Ising模型同构——容斥-耦合竞争临界点是平均场相变，普适类与Ising相同。
-  - 来源：`统一函数总表/0409-D373-p-临界标度函数.md`
-  - 依赖：—；被引用：—
-- [M4的K=√n临界附近标度律：涨落方差∝1/\|K-√n\|，关联时间∝1/\|K-√n\|。临界指数β=1/2（平均场），γ=1。与Ising模型同构——容斥-耦合竞争临界点是平均场相变，普适类与Ising相同。 **扩展注释 / Extende](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-6efc10337d6c261b / M4的K=√n临界附近标度律：涨落方差∝1/\|K-√n\|，关联时间∝1/\|K-√n\|。临界指数β=1/2（平均场），γ=1。与Ising模型同构——容斥-耦合竞争临界点是平均场相变，普适类与Ising相同。 **扩展注释 / Extende
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：—；被引用：—
-- [M5的容斥主导不只约束α，还约束弱混合角θ_W：sin²θ_W≈0.23必须使弱力否决概率p_weak<p*。θ_W过大→弱力否决概率超p*→电弱统一尺度极小点消失→d=4不稳定。与D297形成"基本常数容斥约束群"——α、θ_W、Λ_CD](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-0012607dab8afb7e / M5的容斥主导不只约束α，还约束弱混合角θ_W：sin²θ_W≈0.23必须使弱力否决概率p_weak<p*。θ_W过大→弱力否决概率超p*→电弱统一尺度极小点消失→d=4不稳定。与D297形成"基本常数容斥约束群"——α、θ_W、Λ_CD
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D283, D297；被引用：—
-- [M5的容斥主导不只约束α，还约束弱混合角θ_W：sin²θ_W≈0.23必须使弱力否决概率p_weak<p*。θ_W过大→弱力否决概率超p*→电弱统一尺度极小点消失→d=4不稳定。与D297形成"基本常数容斥约束群"——α、θ_W、Λ_CD](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0340-D304-%E5%BC%B1%E6%B7%B7%E5%90%88%E8%A7%92-%E5%AE%B9%E6%96%A5%E7%BA%A6%E6%9D%9F%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-893b9e9be79feae5 / M5的容斥主导不只约束α，还约束弱混合角θ_W：sin²θ_W≈0.23必须使弱力否决概率p_weak<p*。θ_W过大→弱力否决概率超p*→电弱统一尺度极小点消失→d=4不稳定。与D297形成"基本常数容斥约束群"——α、θ_W、Λ_CD
-  - 来源：`统一函数总表/0340-D304-弱混合角-容斥约束函数.md`
-  - 依赖：D283, D297；被引用：—
-- [M5的容斥主导有可检验签名：实际量子引力修正>>标准预测。如果实验观测到量子引力效应显著强于标准模型预测，是容斥主导的证据。新判据：不只看"有没有"，还看"是否比独立假设预测的更强"。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0323-D287-%E5%AE%B9%E6%96%A5%E4%B8%BB%E5%AF%BC%E5%AE%9E%E9%AA%8C%E7%AD%BE%E5%90%8D%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-8862f6b8fc6022c9 / M5的容斥主导有可检验签名：实际量子引力修正>>标准预测。如果实验观测到量子引力效应显著强于标准模型预测，是容斥主导的证据。新判据：不只看"有没有"，还看"是否比独立假设预测的更强"。
-  - 来源：`统一函数总表/0323-D287-容斥主导实验签名函数.md`
-  - 依赖：—；被引用：—
-- [M5的容斥主导有可检验签名：实际量子引力修正>>标准预测。如果实验观测到量子引力效应显著强于标准模型预测，是容斥主导的证据。新判据：不只看"有没有"，还看"是否比独立假设预测的更强"。 **扩展注释 / Extended Annotatio](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-942278c4ede10e0c / M5的容斥主导有可检验签名：实际量子引力修正>>标准预测。如果实验观测到量子引力效应显著强于标准模型预测，是容斥主导的证据。新判据：不只看"有没有"，还看"是否比独立假设预测的更强"。 **扩展注释 / Extended Annotatio
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：—；被引用：—
-- [M5的容斥从可忽略变主导的临界尺度μ_c由max(pᵢ(μ))=p*决定。μ μ_c时容斥主导（量子引力区）。μ_c对应量子引力能标~10¹⁸ GeV。容斥主导不是渐变而是在μ_c处突变——D293阶段](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-1b8a4f907970180e / M5的容斥从可忽略变主导的临界尺度μ_c由max(pᵢ(μ))=p*决定。μ μ_c时容斥主导（量子引力区）。μ_c对应量子引力能标~10¹⁸ GeV。容斥主导不是渐变而是在μ_c处突变——D293阶段
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D293；被引用：—
-- [M5的容斥从可忽略变主导的临界尺度μ_c由max(pᵢ(μ))=p*决定。μ μ_c时容斥主导（量子引力区）。μ_c对应量子引力能标~10¹⁸ GeV。容斥主导不是渐变而是在μ_c处突变——D293阶段](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0354-D318-%E5%AE%B9%E6%96%A5%E4%B8%BB%E5%AF%BC%E5%B0%BA%E5%BA%A6%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-85810a4c1004c072 / M5的容斥从可忽略变主导的临界尺度μ_c由max(pᵢ(μ))=p*决定。μ μ_c时容斥主导（量子引力区）。μ_c对应量子引力能标~10¹⁸ GeV。容斥主导不是渐变而是在μ_c处突变——D293阶段
-  - 来源：`统一函数总表/0354-D318-容斥主导尺度函数.md`
-  - 依赖：D293；被引用：—
-- [M5的量子引力无极小点可能通过增加低p门控面（新基本力）来修复。p*∝√n→增加n提高p*→如果新门控面p₅<<p*→极小点可能恢复。可检验物理预测。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0308-D272-%E9%87%8F%E5%AD%90%E5%BC%95%E5%8A%9B-%E6%96%B0%E9%97%A8%E6%8E%A7%E9%9D%A2%E9%A2%84%E6%B5%8B.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-3eccfd367ad6be38 / M5的量子引力无极小点可能通过增加低p门控面（新基本力）来修复。p*∝√n→增加n提高p*→如果新门控面p₅<<p*→极小点可能恢复。可检验物理预测。
-  - 来源：`统一函数总表/0308-D272-量子引力-新门控面预测.md`
-  - 依赖：—；被引用：—
-- [M5的量子引力无极小点可能通过增加低p门控面（新基本力）来修复。p*∝√n→增加n提高p*→如果新门控面p₅<<p*→极小点可能恢复。可检验物理预测。 **扩展注释 / Extended Annotation**](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-44fb7dac255a6b0c / M5的量子引力无极小点可能通过增加低p门控面（新基本力）来修复。p*∝√n→增加n提高p*→如果新门控面p₅<<p*→极小点可能恢复。可检验物理预测。 **扩展注释 / Extended Annotation**
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：—；被引用：—
-- [M6的d=4不仅使所有pᵢ<p*，而且稳定性裕度最大（p_max/p*≈2-7倍）。d=3裕度<0，d=5裕度减小，d=4是裕度峰值。物理定律的鲁棒性不是碰巧——d=4是稳定性裕度的全局最大值。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0303-D267-%E7%BB%B4%E5%BA%A6%E7%A8%B3%E5%AE%9A%E6%80%A7%E8%A3%95%E5%BA%A6%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-c160fb3ab3d27448 / M6的d=4不仅使所有pᵢ<p*，而且稳定性裕度最大（p_max/p*≈2-7倍）。d=3裕度<0，d=5裕度减小，d=4是裕度峰值。物理定律的鲁棒性不是碰巧——d=4是稳定性裕度的全局最大值。
-  - 来源：`统一函数总表/0303-D267-维度稳定性裕度函数.md`
-  - 依赖：—；被引用：—
-- [M6的d=4不仅使所有pᵢ<p*，而且稳定性裕度最大（p_max/p*≈2-7倍）。d=3裕度<0，d=5裕度减小，d=4是裕度峰值。物理定律的鲁棒性不是碰巧——d=4是稳定性裕度的全局最大值。 **扩展注释 / Extended Anno](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-8e432ca4d5305314 / M6的d=4不仅使所有pᵢ<p*，而且稳定性裕度最大（p_max/p*≈2-7倍）。d=3裕度<0，d=5裕度减小，d=4是裕度峰值。物理定律的鲁棒性不是碰巧——d=4是稳定性裕度的全局最大值。 **扩展注释 / Extended Anno
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：—；被引用：—
-- [M6的d=4稳定性约束基本物理常数：α增大~100倍→pᵢ>p*→极小点消失。精细结构常数α≈1/137不能太大→否则电磁否决概率超p*→d=4不稳定。常数不是任意的，必须让d=4稳定。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0333-D297-%E5%9F%BA%E6%9C%AC%E5%B8%B8%E6%95%B0-%E5%AE%B9%E6%96%A5%E7%BA%A6%E6%9D%9F%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-45932182a404faa3 / M6的d=4稳定性约束基本物理常数：α增大~100倍→pᵢ>p*→极小点消失。精细结构常数α≈1/137不能太大→否则电磁否决概率超p*→d=4不稳定。常数不是任意的，必须让d=4稳定。
-  - 来源：`统一函数总表/0333-D297-基本常数-容斥约束函数.md`
-  - 依赖：—；被引用：—
-- [M6的d=4稳定性约束基本物理常数：α增大~100倍→pᵢ>p*→极小点消失。精细结构常数α≈1/137不能太大→否则电磁否决概率超p*→d=4不稳定。常数不是任意的，必须让d=4稳定。 **扩展注释 / Extended Annotati](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-462debd26ae92a14 / M6的d=4稳定性约束基本物理常数：α增大~100倍→pᵢ>p*→极小点消失。精细结构常数α≈1/137不能太大→否则电磁否决概率超p*→d=4不稳定。常数不是任意的，必须让d=4稳定。 **扩展注释 / Extended Annotati
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：—；被引用：—
-- [M6的d_eff在4附近振荡时阻尼γ∝Σαᵢ/(1-pᵢ)²。γ>0衰减→d=4稳定吸引子；γ >0（强阻尼），社会系统γ≈0（弱阻尼，长期振荡）。宇宙d=4不是恰好卡在4，而是衰减振荡后停在4。](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-be038858b6d22858 / M6的d_eff在4附近振荡时阻尼γ∝Σαᵢ/(1-pᵢ)²。γ>0衰减→d=4稳定吸引子；γ >0（强阻尼），社会系统γ≈0（弱阻尼，长期振荡）。宇宙d=4不是恰好卡在4，而是衰减振荡后停在4。
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：—；被引用：—
-- [M6的d_eff在4附近振荡时阻尼γ∝Σαᵢ/(1-pᵢ)²。γ>0衰减→d=4稳定吸引子；γ >0（强阻尼），社会系统γ≈0（弱阻尼，长期振荡）。宇宙d=4不是恰好卡在4，而是衰减振荡后停在4。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0369-D333-%E7%BB%B4%E5%BA%A6%E5%9B%9E%E5%A4%8D%E9%98%BB%E5%B0%BC%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-d36210a04a2299a9 / M6的d_eff在4附近振荡时阻尼γ∝Σαᵢ/(1-pᵢ)²。γ>0衰减→d=4稳定吸引子；γ >0（强阻尼），社会系统γ≈0（弱阻尼，长期振荡）。宇宙d=4不是恰好卡在4，而是衰减振荡后停在4。
-  - 来源：`统一函数总表/0369-D333-维度回复阻尼函数.md`
-  - 依赖：—；被引用：—
-- [M6的δ_c对应配分函数中耦合-容斥相变的临界场强h_c。h_c∝T_c∝ḡ·√n→δ_c∝1/(ḡ·√n)——与D389完全一致。δ_c就是统计力学相变的临界场强。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0439-D403-%CE%B4_c-%E7%9B%B8%E5%8F%98%E7%82%B9%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-f389c788217bc64a / M6的δ_c对应配分函数中耦合-容斥相变的临界场强h_c。h_c∝T_c∝ḡ·√n→δ_c∝1/(ḡ·√n)——与D389完全一致。δ_c就是统计力学相变的临界场强。
-  - 来源：`统一函数总表/0439-D403-δ_c-相变点统一函数.md`
-  - 依赖：D389；被引用：—
-- [M6的δ_c对应配分函数中耦合-容斥相变的临界场强h_c。h_c∝T_c∝ḡ·√n→δ_c∝1/(ḡ·√n)——与D389完全一致。δ_c就是统计力学相变的临界场强。 **扩展注释 / Extended Annotation**](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-4d892ea82ee81af5 / M6的δ_c对应配分函数中耦合-容斥相变的临界场强h_c。h_c∝T_c∝ḡ·√n→δ_c∝1/(ḡ·√n)——与D389完全一致。δ_c就是统计力学相变的临界场强。 **扩展注释 / Extended Annotation**
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D389；被引用：—
-- [M6的大偏离使阻尼也非线性：γ_eff = γ₀·(1-δ²/δ_c²)。δ→δ_c时γ_eff→0→振荡加剧→偏离更大→正反馈。δ_c是维度回复的"不归点"——与D295 p_max不可逆点同构。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0397-D361-%E7%BB%B4%E5%BA%A6%E5%9B%9E%E5%A4%8D%E9%9D%9E%E7%BA%BF%E6%80%A7-%E9%98%BB%E5%B0%BC%E8%81%94%E5%90%88%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-50ab0600821a09b3 / M6的大偏离使阻尼也非线性：γ_eff = γ₀·(1-δ²/δ_c²)。δ→δ_c时γ_eff→0→振荡加剧→偏离更大→正反馈。δ_c是维度回复的"不归点"——与D295 p_max不可逆点同构。
-  - 来源：`统一函数总表/0397-D361-维度回复非线性-阻尼联合函数.md`
-  - 依赖：D295；被引用：—
-- [M6的大偏离使阻尼也非线性：γ_eff = γ₀·(1-δ²/δ_c²)。δ→δ_c时γ_eff→0→振荡加剧→偏离更大→正反馈。δ_c是维度回复的"不归点"——与D295 p_max不可逆点同构。 **扩展注释 / Extended An](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-473940ae3454ebb1 / M6的大偏离使阻尼也非线性：γ_eff = γ₀·(1-δ²/δ_c²)。δ→δ_c时γ_eff→0→振荡加剧→偏离更大→正反馈。δ_c是维度回复的"不归点"——与D295 p_max不可逆点同构。 **扩展注释 / Extended An
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D295；被引用：—
-- [M7的n*∝β/(p̄·Σαᵢ)依赖干预力度β，n_c由系统内在参数决定。β够大时n*<n_c——强干预使大系统在容斥主导不可逆之前就恢复。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0440-D404-%E5%8F%8C%E4%B8%B4%E7%95%8Cn%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-be74774200a0900c / M7的n*∝β/(p̄·Σαᵢ)依赖干预力度β，n_c由系统内在参数决定。β够大时n*<n_c——强干预使大系统在容斥主导不可逆之前就恢复。
-  - 来源：`统一函数总表/0440-D404-双临界n统一函数.md`
-  - 依赖：—；被引用：—
-- [M7的n*∝β/(p̄·Σαᵢ)依赖干预力度β，n_c由系统内在参数决定。β够大时n*<n_c——强干预使大系统在容斥主导不可逆之前就恢复。 **扩展注释 / Extended Annotation**](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-b00e5b19679f9b33 / M7的n*∝β/(p̄·Σαᵢ)依赖干预力度β，n_c由系统内在参数决定。β够大时n*<n_c——强干预使大系统在容斥主导不可逆之前就恢复。 **扩展注释 / Extended Annotation**
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：—；被引用：—
-- [M7的容斥加速度a_excl∝n²·σ²·ḡ在不同域的标度：物理n小σ小→a_excl小，生物n大σ中→a_excl中，社会n大σ大→a_excl大。a_excl(社会)/a_excl(物理)∝(n_社会/n_物理)²·(σ_社会/σ_物理](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-6ec0627dcf28a769 / M7的容斥加速度a_excl∝n²·σ²·ḡ在不同域的标度：物理n小σ小→a_excl小，生物n大σ中→a_excl中，社会n大σ大→a_excl大。a_excl(社会)/a_excl(物理)∝(n_社会/n_物理)²·(σ_社会/σ_物理
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：—；被引用：—
-- [M7的容斥加速度a_excl∝n²·σ²·ḡ在不同域的标度：物理n小σ小→a_excl小，生物n大σ中→a_excl中，社会n大σ大→a_excl大。a_excl(社会)/a_excl(物理)∝(n_社会/n_物理)²·(σ_社会/σ_物理](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0356-D320-%E5%AE%B9%E6%96%A5%E5%8A%A0%E9%80%9F%E8%B7%A8%E5%9F%9F%E6%A0%87%E5%BA%A6%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-9c11f6a8a6164768 / M7的容斥加速度a_excl∝n²·σ²·ḡ在不同域的标度：物理n小σ小→a_excl小，生物n大σ中→a_excl中，社会n大σ大→a_excl大。a_excl(社会)/a_excl(物理)∝(n_社会/n_物理)²·(σ_社会/σ_物理
-  - 来源：`统一函数总表/0356-D320-容斥加速跨域标度函数.md`
-  - 依赖：—；被引用：—
-- [M8 努力—结果—自我价值解耦**：材料中「努力羞耻/紧绷美学」（B6/A11/A12）提出「努力是策略非人格证明」的额外层。该层与 D597（量化指标替代真实价值）+ D598（系统性钝化）高度相邻，是否构成不可约原语需跨评价文化外部材料](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0612-D602-%E4%BB%B7%E5%80%BC%E5%88%9B%E9%80%A0%E6%9D%83%E4%B8%8E%E5%86%B3%E7%AD%96%E6%9D%83%E9%94%99%E9%85%8D%E4%B8%8E%E5%9B%9E%E6%94%B6.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-5abf841692a47f61 / M8 努力—结果—自我价值解耦**：材料中「努力羞耻/紧绷美学」（B6/A11/A12）提出「努力是策略非人格证明」的额外层。该层与 D597（量化指标替代真实价值）+ D598（系统性钝化）高度相邻，是否构成不可约原语需跨评价文化外部材料
-  - 来源：`统一函数总表/0612-D602-价值创造权与决策权错配与回收.md`
-  - 依赖：A11, A12, D597, D598；被引用：—
-- [M8的(d_opt,σ_opt)平衡点在σ σ_opt时不稳定——过分散的系统无法自发回到最优配置。σ>σ_opt的恢复需要外部干预（\[D306\](docs/zh/functions/items/D306.md)）。社](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0371-D335-d_opt-%CF%83_opt%E5%B9%B3%E8%A1%A1%E7%A8%B3%E5%AE%9A%E6%80%A7%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-25bc1245257e0d5a / M8的(d_opt,σ_opt)平衡点在σ σ_opt时不稳定——过分散的系统无法自发回到最优配置。σ>σ_opt的恢复需要外部干预（\[D306\](docs/zh/functions/items/D306.md)）。社
-  - 来源：`统一函数总表/0371-D335-d_opt-σ_opt平衡稳定性函数.md`
-  - 依赖：D306；被引用：—
-- [M8的(d_opt,σ_opt)平衡点在σ σ_opt时不稳定——过分散的系统无法自发回到最优配置。σ>σ_opt的恢复需要外部干预（\[D306\](docs/zh/functions/items/D306.md)）。社](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-e2e33e3a8182216f / M8的(d_opt,σ_opt)平衡点在σ σ_opt时不稳定——过分散的系统无法自发回到最优配置。σ>σ_opt的恢复需要外部干预（\[D306\](docs/zh/functions/items/D306.md)）。社
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D306；被引用：—
-- [M8的d_opt漂移时σ_opt跟着动：d_opt右移（学习升级）时σ_opt先升后降——初期新门控面增加分散度，后期门控面成熟降低分散度。σ_opt响应滞后于d_opt，调整时间τ_σ∝n/ḡ。n大ḡ低的系统σ调整慢——社会系统的"最优配](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0357-D321-d_opt-%CF%83_opt%E8%81%94%E5%90%88%E6%BC%94%E5%8C%96%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-4e53a3577ca3cfd2 / M8的d_opt漂移时σ_opt跟着动：d_opt右移（学习升级）时σ_opt先升后降——初期新门控面增加分散度，后期门控面成熟降低分散度。σ_opt响应滞后于d_opt，调整时间τ_σ∝n/ḡ。n大ḡ低的系统σ调整慢——社会系统的"最优配
-  - 来源：`统一函数总表/0357-D321-d_opt-σ_opt联合演化函数.md`
-  - 依赖：—；被引用：—
-- [M8的d_opt漂移时σ_opt跟着动：d_opt右移（学习升级）时σ_opt先升后降——初期新门控面增加分散度，后期门控面成熟降低分散度。σ_opt响应滞后于d_opt，调整时间τ_σ∝n/ḡ。n大ḡ低的系统σ调整慢——社会系统的"最优配](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-b0bb30400c455a81 / M8的d_opt漂移时σ_opt跟着动：d_opt右移（学习升级）时σ_opt先升后降——初期新门控面增加分散度，后期门控面成熟降低分散度。σ_opt响应滞后于d_opt，调整时间τ_σ∝n/ḡ。n大ḡ低的系统σ调整慢——社会系统的"最优配
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：—；被引用：—
-- [M8的σ>σ_opt时系统进入"维度饥渴"状态——需要更多维度补偿分散度但d不能无限增长。维度饥渴的结局：要么外部增加d（学习/改革），要么内部崩溃（Φ持续增长）。社会分化过度需要更多元化但做不到→僵局。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0385-D349-%E8%BF%87%E5%88%86%E6%95%A3%E7%9B%B8%E5%9B%BE%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-f5e3bdaf0797d9a4 / M8的σ>σ_opt时系统进入"维度饥渴"状态——需要更多维度补偿分散度但d不能无限增长。维度饥渴的结局：要么外部增加d（学习/改革），要么内部崩溃（Φ持续增长）。社会分化过度需要更多元化但做不到→僵局。
-  - 来源：`统一函数总表/0385-D349-过分散相图函数.md`
-  - 依赖：—；被引用：—
-- [M8的σ>σ_opt时系统进入"维度饥渴"状态——需要更多维度补偿分散度但d不能无限增长。维度饥渴的结局：要么外部增加d（学习/改革），要么内部崩溃（Φ持续增长）。社会分化过度需要更多元化但做不到→僵局。 **扩展注释 / Extended](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-9ce48f30a05f9ec0 / M8的σ>σ_opt时系统进入"维度饥渴"状态——需要更多维度补偿分散度但d不能无限增长。维度饥渴的结局：要么外部增加d（学习/改革），要么内部崩溃（Φ持续增长）。社会分化过度需要更多元化但做不到→僵局。 **扩展注释 / Extended
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：—；被引用：—
-- [M9三阶段各有健康指标：阶段1=平坦度⁻¹，阶段2=C_buffer，阶段3=1/ΔΦ。统一H=min(三指标)→最小值决定最弱环节。H=0时崩溃。可用于实时监测和预警。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0313-D277-%E7%BB%9F%E4%B8%80%E5%81%A5%E5%BA%B7%E6%8C%87%E6%A0%87%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-68559248e436e733 / M9三阶段各有健康指标：阶段1=平坦度⁻¹，阶段2=C_buffer，阶段3=1/ΔΦ。统一H=min(三指标)→最小值决定最弱环节。H=0时崩溃。可用于实时监测和预警。
-  - 来源：`统一函数总表/0313-D277-统一健康指标函数.md`
-  - 依赖：—；被引用：—
-- [M9三阶段各有健康指标：阶段1=平坦度⁻¹，阶段2=C_buffer，阶段3=1/ΔΦ。统一H=min(三指标)→最小值决定最弱环节。H=0时崩溃。可用于实时监测和预警。 **扩展注释 / Extended Annotation**](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-159e9c1e3b841504 / M9三阶段各有健康指标：阶段1=平坦度⁻¹，阶段2=C_buffer，阶段3=1/ΔΦ。统一H=min(三指标)→最小值决定最弱环节。H=0时崩溃。可用于实时监测和预警。 **扩展注释 / Extended Annotation**
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：—；被引用：—
-- [M9三阶段对应相变分类：阶段1→2≈二级相变（连续过渡→还有救），阶段2→3≈一级相变（突变→没救）。新相变分类：二级="还能缓冲"，一级="缓冲耗尽"。干预在二级相变区有效，一级相变区无效。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0329-D293-%E4%B8%89%E9%98%B6%E6%AE%B5-%E7%9B%B8%E5%8F%98%E5%88%86%E7%B1%BB%E5%AF%B9%E5%BA%94%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-ef6ff685efb90013 / M9三阶段对应相变分类：阶段1→2≈二级相变（连续过渡→还有救），阶段2→3≈一级相变（突变→没救）。新相变分类：二级="还能缓冲"，一级="缓冲耗尽"。干预在二级相变区有效，一级相变区无效。
-  - 来源：`统一函数总表/0329-D293-三阶段-相变分类对应函数.md`
-  - 依赖：—；被引用：—
-- [M9三阶段对应相变分类：阶段1→2≈二级相变（连续过渡→还有救），阶段2→3≈一级相变（突变→没救）。新相变分类：二级="还能缓冲"，一级="缓冲耗尽"。干预在二级相变区有效，一级相变区无效。 **扩展注释 / Extended Annot](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-5e11c054e0a447f5 / M9三阶段对应相变分类：阶段1→2≈二级相变（连续过渡→还有救），阶段2→3≈一级相变（突变→没救）。新相变分类：二级="还能缓冲"，一级="缓冲耗尽"。干预在二级相变区有效，一级相变区无效。 **扩展注释 / Extended Annot
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：—；被引用：—
-- [M9的g_eff_macro = (1-R_irreversible)·g_eff。R→1时g_eff_macro→0但>0。与D311微观僵尸态完全同构——宏观僵尸态是微观僵尸态在n→∞极限下的连续版本。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0442-D406-%E5%AE%8F%E8%A7%82%E5%83%B5%E5%B0%B8%E6%80%81g_eff%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-af7ff7663c4713ef / M9的g_eff_macro = (1-R_irreversible)·g_eff。R→1时g_eff_macro→0但>0。与D311微观僵尸态完全同构——宏观僵尸态是微观僵尸态在n→∞极限下的连续版本。
-  - 来源：`统一函数总表/0442-D406-宏观僵尸态g_eff函数.md`
-  - 依赖：D311；被引用：—
-- [M9的g_eff_macro = (1-R_irreversible)·g_eff。R→1时g_eff_macro→0但>0。与D311微观僵尸态完全同构——宏观僵尸态是微观僵尸态在n→∞极限下的连续版本。 **扩展注释 / Extende](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-96fcbcc5f877dc4f / M9的g_eff_macro = (1-R_irreversible)·g_eff。R→1时g_eff_macro→0但>0。与D311微观僵尸态完全同构——宏观僵尸态是微观僵尸态在n→∞极限下的连续版本。 **扩展注释 / Extende
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D311；被引用：—
-- [M9的实际不可逆=理论可逆但重建时间超过剩余寿命：τ_rebuild > T_remaining。条件：n²·p̄/β > 1/(Σαᵢ)——n大p̄高β低时几乎必然实际不可逆。大系统高负担弱改革的组合=实际不可逆。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0400-D364-%E5%AE%9E%E9%99%85%E4%B8%8D%E5%8F%AF%E9%80%86%E5%88%A4%E6%8D%AE%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-fafe7a5ef6cc001b / M9的实际不可逆=理论可逆但重建时间超过剩余寿命：τ_rebuild > T_remaining。条件：n²·p̄/β > 1/(Σαᵢ)——n大p̄高β低时几乎必然实际不可逆。大系统高负担弱改革的组合=实际不可逆。
-  - 来源：`统一函数总表/0400-D364-实际不可逆判据函数.md`
-  - 依赖：—；被引用：—
-- [M9的实际不可逆=理论可逆但重建时间超过剩余寿命：τ_rebuild > T_remaining。条件：n²·p̄/β > 1/(Σαᵢ)——n大p̄高β低时几乎必然实际不可逆。大系统高负担弱改革的组合=实际不可逆。 **扩展注释 / Ex](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-21b823431af0e853 / M9的实际不可逆=理论可逆但重建时间超过剩余寿命：τ_rebuild > T_remaining。条件：n²·p̄/β > 1/(Σαᵢ)——n大p̄高β低时几乎必然实际不可逆。大系统高负担弱改革的组合=实际不可逆。 **扩展注释 / Ex
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：—；被引用：—
-- [M9的阶段过渡存在滞后：从阶段2退回阶段1的条件（缓冲恢复）比从阶段1进入阶段2的条件（缓冲消耗）更严格。滞后量Δh∝\|d³Φ/dμ³\|——三阶导数越大滞后越大。物理相变滞后小（d³Φ/dμ³小），社会系统滞后大（路径依赖使d³Φ/dμ³大](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0344-D308-%E9%98%B6%E6%AE%B5%E8%BF%87%E6%B8%A1%E6%BB%9E%E5%90%8E%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-331fb48496439f5d / M9的阶段过渡存在滞后：从阶段2退回阶段1的条件（缓冲恢复）比从阶段1进入阶段2的条件（缓冲消耗）更严格。滞后量Δh∝\|d³Φ/dμ³\|——三阶导数越大滞后越大。物理相变滞后小（d³Φ/dμ³小），社会系统滞后大（路径依赖使d³Φ/dμ³大
-  - 来源：`统一函数总表/0344-D308-阶段过渡滞后函数.md`
-  - 依赖：—；被引用：—
-- [M9的阶段过渡存在滞后：从阶段2退回阶段1的条件（缓冲恢复）比从阶段1进入阶段2的条件（缓冲消耗）更严格。滞后量Δh∝\|d³Φ/dμ³\|——三阶导数越大滞后越大。物理相变滞后小（d³Φ/dμ³小），社会系统滞后大（路径依赖使d³Φ/dμ³大](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-af1e795556ab6c15 / M9的阶段过渡存在滞后：从阶段2退回阶段1的条件（缓冲恢复）比从阶段1进入阶段2的条件（缓冲消耗）更严格。滞后量Δh∝\|d³Φ/dμ³\|——三阶导数越大滞后越大。物理相变滞后小（d³Φ/dμ³小），社会系统滞后大（路径依赖使d³Φ/dμ³大
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：—；被引用：—
-- [M9的阶段过渡锐度由Φ高阶导数决定：阶段1→2∝\|d³Φ/dμ³\|，阶段2→3∝\|d²g_eff/dt²\|。高阶导数大→突变，小→渐变。物理相变→突变，生物衰老→渐变。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0305-D269-%E9%98%B6%E6%AE%B5%E8%BF%87%E6%B8%A1%E9%94%90%E5%BA%A6%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-729bc2e8d1f38e05 / M9的阶段过渡锐度由Φ高阶导数决定：阶段1→2∝\|d³Φ/dμ³\|，阶段2→3∝\|d²g_eff/dt²\|。高阶导数大→突变，小→渐变。物理相变→突变，生物衰老→渐变。
-  - 来源：`统一函数总表/0305-D269-阶段过渡锐度函数.md`
-  - 依赖：—；被引用：—
-- [M9的阶段过渡锐度由Φ高阶导数决定：阶段1→2∝\|d³Φ/dμ³\|，阶段2→3∝\|d²g_eff/dt²\|。高阶导数大→突变，小→渐变。物理相变→突变，生物衰老→渐变。 **扩展注释 / Extended Annotation**](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-94a4dd93974186a0 / M9的阶段过渡锐度由Φ高阶导数决定：阶段1→2∝\|d³Φ/dμ³\|，阶段2→3∝\|d²g_eff/dt²\|。高阶导数大→突变，小→渐变。物理相变→突变，生物衰老→渐变。 **扩展注释 / Extended Annotation**
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：—；被引用：—
-- [Macfarlane et al. exact arXiv v1/ICLR paper, all-26-page visual review and complete LaTeX/source audit: finite I/O speci](../../../data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-f2541e0fd0664f91 / Macfarlane et al. exact arXiv v1/ICLR paper, all-26-page visual review and complete LaTeX/source audit: finite I/O speci
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl`
-  - 依赖：—；被引用：—
-- [Machine artifacts: `formal/lean/Foundation.lean`, `formal/z3/T2-zero-factor.smt2`, and `tools/foundation/verify_core_cla](../../../reports/foundation-architecture/core-proof-and-countermodel-report-20260713.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-e50a9c97e00239a8 / Machine artifacts: `formal/lean/Foundation.lean`, `formal/z3/T2-zero-factor.smt2`, and `tools/foundation/verify_core_cla
-  - 来源：`reports/foundation-architecture/core-proof-and-countermodel-report-20260713.md`
-  - 依赖：T2；被引用：—
-- [Machine manifest records PR #56 accepted/merged/current lifecycle and a non-self-referential external exact-head attesta](../../../data/operations/iterations/121Q24.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-688c41275a7fdd86 / Machine manifest records PR #56 accepted/merged/current lifecycle and a non-self-referential external exact-head attesta
-  - 来源：`data/operations/iterations/121Q24.json`
-  - 依赖：—；被引用：—
-- [Machine readers need the corrected lifecycle boundary.](../../../data/operations/iterations/121Q25C.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-86fdd0e3d2e8fb87 / Machine readers need the corrected lifecycle boundary.
-  - 来源：`data/operations/iterations/121Q25C.json`
-  - 依赖：—；被引用：—
-- [MACHINE_CHECKED_PROOF is not empirical truth.](../../../llms.txt)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-d0f26feb7cf4a5d2 / MACHINE_CHECKED_PROOF is not empirical truth.
-  - 来源：`llms.txt`
-  - 依赖：—；被引用：—
-- [manifest\["claim_ceiling"\] = "validated_lifecycle_gate"](../../../tests/test_iteration_sync.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-631e30b5e59e4710 / manifest\["claim_ceiling"\] = "validated_lifecycle_gate"
-  - 来源：`tests/test_iteration_sync.py`
-  - 依赖：—；被引用：—
-- [manifest\["claim_ceiling"\] = "validated_lifecycle_gated_whole_project_synchronization_candidate_only"](../../../tests/test_iteration_sync.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-06f7f93861768439 / manifest\["claim_ceiling"\] = "validated_lifecycle_gated_whole_project_synchronization_candidate_only"
-  - 来源：`tests/test_iteration_sync.py`
-  - 依赖：—；被引用：—
-- [manifest\["synchronization_closure"\]\["surface_decisions"\]\[0\]\["evidence_refs"\] = \["missing/fake-proof.md"\]](../../../tests/test_iteration_sync.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-195b43b7387e76b4 / manifest\["synchronization_closure"\]\["surface_decisions"\]\[0\]\["evidence_refs"\] = \["missing/fake-proof.md"\]
-  - 来源：`tests/test_iteration_sync.py`
-  - 依赖：—；被引用：—
-- [Map delta: 41 nodes and 37 edges gain derived lifecycle/relation-domain metadata; nodes added: 0, nodes removed: 0, edge](../../../reports/operations/121Q32-typed-change-propagation-and-self-updating-system-map-audit.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-a3c29a6d83f1f59e / Map delta: 41 nodes and 37 edges gain derived lifecycle/relation-domain metadata; nodes added: 0, nodes removed: 0, edge
-  - 来源：`reports/operations/121Q32-typed-change-propagation-and-self-updating-system-map-audit.md`
-  - 依赖：—；被引用：—
-- [Map position is not proof. Visual proximity is not isomorphism. Evolution stage is not a natural law. Dependency is not](../../../reports/atlas/121Q14-dynamic-atlas.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-19aa443580ac847e / Map position is not proof. Visual proximity is not isomorphism. Evolution stage is not a natural law. Dependency is not
-  - 来源：`reports/atlas/121Q14-dynamic-atlas.md`
-  - 依赖：—；被引用：—
-- [Map position is not proof. Visual proximity is not isomorphism. Evolution stage is not a natural law. Dependency is not](../../../docs/architecture/ignition-atlas.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-7b285a316163aeb4 / Map position is not proof. Visual proximity is not isomorphism. Evolution stage is not a natural law. Dependency is not
-  - 来源：`docs/architecture/ignition-atlas.md`
-  - 依赖：—；被引用：—
-- [Map position, visual proximity, evolution stage, dependency, and sourcing decision are navigation judgments, not proof,](../../../llms.txt)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-53823018a3edfe78 / Map position, visual proximity, evolution stage, dependency, and sourcing decision are navigation judgments, not proof,
-  - 来源：`llms.txt`
-  - 依赖：—；被引用：—
-- [map/network proof overclaims are rejected;](../../../reports/architecture/121Q21R-multiscale-causal-fabric-validation.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-dd867eb3ef40c8f5 / map/network proof overclaims are rejected;
-  - 来源：`reports/architecture/121Q21R-multiscale-causal-fabric-validation.md`
-  - 依赖：—；被引用：—
-- [match exactly, content digest matches the live file, lifecycle_status active)](../../../tools/operations/validate_generated_output_authority.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-4ebf5a2aad4cd6f6 / match exactly, content digest matches the live file, lifecycle_status active)
-  - 来源：`tools/operations/validate_generated_output_authority.py`
-  - 依赖：—；被引用：—
-- [Math proof backend report](../../ASSET-CARDS.md#asset-hr-7bd95d9ed567d84b)
-  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-  - 可搜索名称：Math proof backend report / math-proof-backend-report-20260712
-  - 来源：`reports/foundation-architecture/math-proof-backend-report-20260712.md`
-  - 依赖：—；被引用：—
-- [Math proof backend report](../../../reports/foundation-architecture/math-proof-backend-report-20260712.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-879a7065944be047 / Math proof backend report
-  - 来源：`reports/foundation-architecture/math-proof-backend-report-20260712.md`
-  - 依赖：—；被引用：—
-- [Mathematical layer and encoder/decoder composition is strong; runtime selection among artifacts is not addressed.](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-ede25e78bd458d80 / Mathematical layer and encoder/decoder composition is strong; runtime selection among artifacts is not addressed.
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
-  - 依赖：—；被引用：—
-- [Mathematics and logic constrain each other. Formula, logical validity, proof, evidence and workflow completion are diffe](../../../llms.txt)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-c1693750795f0ba1 / Mathematics and logic constrain each other. Formula, logical validity, proof, evidence and workflow completion are diffe
-  - 来源：`llms.txt`
-  - 依赖：—；被引用：—
-- [MAX_REQUIRED increase (+10):** Items with proof_status=REQUIRES_HIGHEST_MODEL_VERIFICATION or isomorphism/equivalence in](../../../reports/foundation-architecture/083-escalation-routing-report.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-55b65ffb69b11801 / MAX_REQUIRED increase (+10):** Items with proof_status=REQUIRES_HIGHEST_MODEL_VERIFICATION or isomorphism/equivalence in
-  - 来源：`reports/foundation-architecture/083-escalation-routing-report.md`
-  - 依赖：—；被引用：—
-- [MCF、PSD 和 ARN 不是新的真值层，请不要把表示能力写成事实证明。](../../../docs/ai-assistant-usage-reference.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-14ae46e37cb052af / MCF、PSD 和 ARN 不是新的真值层，请不要把表示能力写成事实证明。
-  - 来源：`docs/ai-assistant-usage-reference.md`
-  - 依赖：—；被引用：—
-- [Measures, noise, Bayesian estimation, risks, and sample complexity supply statistical semantics, but not a general calib](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-8d4a7e9a586f8964 / Measures, noise, Bayesian estimation, risks, and sample complexity supply statistical semantics, but not a general calib
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
-  - 依赖：—；被引用：—
-- [META={str(x) for x in \[REGISTRY.relative_to(ROOT),TOPOLOGY.relative_to(ROOT),PROFILES.relative_to(ROOT),Path('data/opera](../../../tools/operations/plan_incremental_execution.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-25593f79879f73b2 / META={str(x) for x in \[REGISTRY.relative_to(ROOT),TOPOLOGY.relative_to(ROOT),PROFILES.relative_to(ROOT),Path('data/opera
-  - 来源：`tools/operations/plan_incremental_execution.py`
-  - 依赖：—；被引用：—
-- [MetaGPT EMNLP full-text and proof audit: norm-weighted static task-vector composition supports bounded representation, c](../../../data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-a1d84ed2a4d12786 / MetaGPT EMNLP full-text and proof audit: norm-weighted static task-vector composition supports bounded representation, c
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl`
-  - 依赖：—；被引用：—
-- [Method 1.1.0 and map 0.1.0 remain Current. This candidate adds no L7, truth layer, causal proof, completeness proof or b](../../../reports/operations/121Q32-typed-change-propagation-and-self-updating-system-map-audit.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-22c58aaea5af9ad7 / Method 1.1.0 and map 0.1.0 remain Current. This candidate adds no L7, truth layer, causal proof, completeness proof or b
-  - 来源：`reports/operations/121Q32-typed-change-propagation-and-self-updating-system-map-audit.md`
-  - 依赖：—；被引用：—
-- [Method 1.1.0 candidate defines lifecycle-specific gates and per-surface external attestations.](../../../data/operations/iterations/121Q25C.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-3ec52802da0f1650 / Method 1.1.0 candidate defines lifecycle-specific gates and per-surface external attestations.
-  - 来源：`data/operations/iterations/121Q25C.json`
-  - 依赖：—；被引用：—
-- [Method 1.2.0 remains Historical and auditable; method 1.3.0 is Current. Critical gates may always force full rebuild. Ma](../../../docs/architecture/incremental-execution.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-3cf9ff5e48b99d88 / Method 1.2.0 remains Historical and auditable; method 1.3.0 is Current. Critical gates may always force full rebuild. Ma
-  - 来源：`docs/architecture/incremental-execution.md`
-  - 依赖：—；被引用：—
-- [Method 1.2.0 was proposed by 121Q32 and became Current after independent exact-HEAD acceptance (R4), merge and closeout](../../../ITERATION.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-732cd8a33f3105ba / Method 1.2.0 was proposed by 121Q32 and became Current after independent exact-HEAD acceptance (R4), merge and closeout
-  - 来源：`ITERATION.md`
-  - 依赖：—；被引用：—

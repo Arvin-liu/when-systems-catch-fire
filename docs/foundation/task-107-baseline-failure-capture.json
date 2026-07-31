@@ -1,0 +1,14 @@
+{
+  "commit": "af988422",
+  "tracked": 3150,
+  "listed": 3094,
+  "unaccounted_count": 56,
+  "unaccounted_categories": {
+    "EDITORIAL_ARTICLE": 24,
+    "RECEIPT_HISTORY_OPERATIONS": 7,
+    "CANDIDATE_NONAUTHORITATIVE_RECORD": 14,
+    "TEST_FIXTURE": 1,
+    "TOOL_OR_WORKFLOW": 10
+  },
+  "note": "listed subset tracked at af988422; exactly 56 unaccounted (git ls-tree -z + NFC)."
+}

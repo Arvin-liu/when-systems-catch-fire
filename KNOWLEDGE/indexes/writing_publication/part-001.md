@@ -4,10 +4,45 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- ["title": "Current: iteration method 1.4.0 (Continuous Stage Snapshot Publication). Read data/operations/stage-snapshots.json and d",](../../../analysis/corpus-relation/article_cluster_candidates.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-B6EAB69ADA37992F / "title": "Current: iteration method 1.4.0 (Continuous Stage Snapshot Publication). Read data/operations/stage-snapshots.json and d", / IMPLICIT-B6EAB69ADA37992F / IMPLICIT-C7AB78FAA93A6244
+  - 来源：`analysis/corpus-relation/article_cluster_candidates.json`
+  - 依赖：—；被引用：—
+- ["title": "Current: iteration method 1.4.0 (Continuous Stage Snapshot Publication). Read data/operations/stage-snapshots.json and d",](../../../analysis/corpus-relation/corpus_relation_graph.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-C7AB78FAA93A6244 / "title": "Current: iteration method 1.4.0 (Continuous Stage Snapshot Publication). Read data/operations/stage-snapshots.json and d", / IMPLICIT-C7AB78FAA93A6244 / IMPLICIT-B6EAB69ADA37992F
+  - 来源：`analysis/corpus-relation/corpus_relation_graph.json`
+  - 依赖：—；被引用：—
+- ["title": "IGNITION-ITERATION-METHOD-1.4-CONTINUOUS-STAGE-SNAPSHOT-PUBLICATION-R1-20260726 typed change-propagation impact report",](../../../analysis/corpus-relation/corpus_relation_graph.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-BC5F903CEB38AA1E / "title": "IGNITION-ITERATION-METHOD-1.4-CONTINUOUS-STAGE-SNAPSHOT-PUBLICATION-R1-20260726 typed change-propagation impact report", / IMPLICIT-BC5F903CEB38AA1E / IMPLICIT-C97E7BAF3411DC9C
+  - 来源：`analysis/corpus-relation/corpus_relation_graph.json`
+  - 依赖：—；被引用：—
+- ["title": "IGNITION-ITERATION-METHOD-1.4-CONTINUOUS-STAGE-SNAPSHOT-PUBLICATION-R1-20260726 typed change-propagation impact report",](../../../analysis/corpus-relation/article_cluster_candidates.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-C97E7BAF3411DC9C / "title": "IGNITION-ITERATION-METHOD-1.4-CONTINUOUS-STAGE-SNAPSHOT-PUBLICATION-R1-20260726 typed change-propagation impact report", / IMPLICIT-C97E7BAF3411DC9C / IMPLICIT-BC5F903CEB38AA1E
+  - 来源：`analysis/corpus-relation/article_cluster_candidates.json`
+  - 依赖：—；被引用：—
 - [# IGNITION-ITERATION-METHOD-1.4-CONTINUOUS-STAGE-SNAPSHOT-PUBLICATION-R1-20260726 typed change-propagation impact report](../../../reports/operations/IGNITION-ITERATION-METHOD-1.4-change-propagation-impact.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-88D7E6316D5F3876 / # IGNITION-ITERATION-METHOD-1.4-CONTINUOUS-STAGE-SNAPSHOT-PUBLICATION-R1-20260726 typed change-propagation impact report / IMPLICIT-88D7E6316D5F3876
   - 来源：`reports/operations/IGNITION-ITERATION-METHOD-1.4-change-propagation-impact.md`
+  - 依赖：—；被引用：—
+- [## nfc-6122e6f96efe210e — Current: iteration method 1.4.0 (Continuous Stage Snapshot Publication). Read data/operations/stage-snapshots.json and d](../../../analysis/corpus-relation/cluster_source_briefs/C007.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-8ACF034FD195F618 / ## nfc-6122e6f96efe210e — Current: iteration method 1.4.0 (Continuous Stage Snapshot Publication). Read data/operations/stage-snapshots.json and d / IMPLICIT-8ACF034FD195F618 / IMPLICIT-B9D9DF87E733D634
+  - 来源：`analysis/corpus-relation/cluster_source_briefs/C007.md`
+  - 依赖：—；被引用：—
+- [## nfc-6122e6f96efe210e — Current: iteration method 1.4.0 (Continuous Stage Snapshot Publication). Read data/operations/stage-snapshots.json and d](../../../analysis/corpus-relation/cluster_source_briefs/C001.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-B9D9DF87E733D634 / ## nfc-6122e6f96efe210e — Current: iteration method 1.4.0 (Continuous Stage Snapshot Publication). Read data/operations/stage-snapshots.json and d / IMPLICIT-B9D9DF87E733D634 / IMPLICIT-8ACF034FD195F618
+  - 来源：`analysis/corpus-relation/cluster_source_briefs/C001.md`
+  - 依赖：—；被引用：—
+- [## nfc-6122e6f96efe210e — Current: iteration method 1.4.0 (Continuous Stage Snapshot Publication). Read data/operations/stage-snapshots.json and d](../../../analysis/corpus-relation/cluster_source_briefs/C004.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-F5AEAA5901E518AE / ## nfc-6122e6f96efe210e — Current: iteration method 1.4.0 (Continuous Stage Snapshot Publication). Read data/operations/stage-snapshots.json and d / IMPLICIT-F5AEAA5901E518AE / IMPLICIT-8ACF034FD195F618
+  - 来源：`analysis/corpus-relation/cluster_source_briefs/C004.md`
   - 依赖：—；被引用：—
 - [121Q25B Whole-Project Synchronization Contract](../../ASSET-CARDS.md#asset-hr-45480c716d721c81)
   - 类型/状态：`RESULT_OR_ARTICLE` · `HISTORICAL_OR_SUPERSEDED_SOURCE`
@@ -64,11 +99,6 @@
   - 可搜索名称：NFC-3ee61ae38bde2672 / `永昭·虚遐` remains a bounded example of optional embodied anchoring, prospective loading, lower-level preservation, a doubl
   - 来源：`reports/operations/121Q28R-cognitive-level-leap-writing-method-audit.md`
   - 依赖：—；被引用：—
-- [Adds the deterministic Recent Stage Results projection.](../../../data/operations/propagation/IGNITION-ITERATION-METHOD-1.4-CONTINUOUS-STAGE-SNAPSHOT-PUBLICATION-R1-20260726-request.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-8702cc4364a715ce / Adds the deterministic Recent Stage Results projection.
-  - 来源：`data/operations/propagation/IGNITION-ITERATION-METHOD-1.4-CONTINUOUS-STAGE-SNAPSHOT-PUBLICATION-R1-20260726-request.json`
-  - 依赖：—；被引用：—
 - [Candidate: Ignition Iteration Method 1.4.0 adds fail-closed continuous stage snapshot publication. A schema-backed regis](../../../CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-a0940ee425760d97 / Candidate: Ignition Iteration Method 1.4.0 adds fail-closed continuous stage snapshot publication. A schema-backed regis
@@ -83,11 +113,6 @@
   - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
   - 可搜索名称：Current Main vs 1.4 Candidate Homepage Comparison / IGNITION-ITERATION-METHOD-1.4-homepage-comparison
   - 来源：`reports/operations/IGNITION-ITERATION-METHOD-1.4-homepage-comparison.md`
-  - 依赖：—；被引用：—
-- [Declares projection and synchronization obligations.](../../../data/operations/propagation/IGNITION-ITERATION-METHOD-1.4-CONTINUOUS-STAGE-SNAPSHOT-PUBLICATION-R1-20260726-request.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-87993f012127501f / Declares projection and synchronization obligations.
-  - 来源：`data/operations/propagation/IGNITION-ITERATION-METHOD-1.4-CONTINUOUS-STAGE-SNAPSHOT-PUBLICATION-R1-20260726-request.json`
   - 依赖：—；被引用：—
 - [Embodied anchoring is optional mode; cross-domain isomorphism is application type; high-dimensional compression is optio](../../../reports/operations/121Q28R-cognitive-level-leap-writing-method-audit.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
@@ -114,11 +139,6 @@
   - 可搜索名称：IMPLICIT-939E7A37795972AC / public = any(anchor.get("source_context") == "CURRENT_PUBLIC_SURFACE" for anchor in anchors) / IMPLICIT-939E7A37795972AC
   - 来源：`tools/governance/build_knowledge_experience.py`
   - 依赖：—；被引用：—
-- [public stage-summary projection only; no capability lifecycle promotion](../../../data/operations/change-propagation-topology.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-9a92b5f2c2e3c16f / public stage-summary projection only; no capability lifecycle promotion
-  - 来源：`data/operations/change-propagation-topology.json`
-  - 依赖：—；被引用：—
 - [Q27 的战场、麦克风、银行与电网共同暴露“扰动—耦合—正反馈—阈值—换态”的结构，并产生“冲击衰减／冲击放大”的新增解释。它是跨域同构叙事这一应用类型的有效基线。](../../../docs/publication/zhiyuan-writing-examples.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-4bf829b566abc1c0 / Q27 的战场、麦克风、银行与电网共同暴露“扰动—耦合—正反馈—阈值—换态”的结构，并产生“冲击衰减／冲击放大”的新增解释。它是跨域同构叙事这一应用类型的有效基线。
@@ -138,11 +158,6 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-1b8cd3ccf09d069e / render_projection,
   - 来源：`tests/test_stage_snapshot_publication.py`
-  - 依赖：—；被引用：—
-- [repaired mandatory embodiment but still modeled Zhiyuan Writing Method as an L6 add-on rather than a bounded public-expr](../../../data/operations/iterations/121Q28S.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-d1f2c3c78d7a91ab / repaired mandatory embodiment but still modeled Zhiyuan Writing Method as an L6 add-on rather than a bounded public-expr
-  - 来源：`data/operations/iterations/121Q28S.json`
   - 依赖：—；被引用：—
 - [reports/publication/jin-rise-point-fire-analysis.md](../../../reports/publication/jin-rise-point-fire-analysis.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -314,12 +329,9 @@
   - 可搜索名称：之元写作法 / zhiyuan-writing-method
   - 来源：`docs/publication/zhiyuan-writing-method.md`
   - 依赖：—；被引用：—
-- [之元写作法 \[`0.4.0`\](./publication/zhiyuan-writing-method.md) 是当前 L6 接口，\[后台规格\](../templates/publication/zhiyuan-writing-spec.](../../../docs/USAGE.md)
+- [之元写作法 \[`0.4.0`\](../../../docs/publication/zhiyuan-writing-method.md) 是当前 L6 接口，\[后台规格\](../../../docs/USAGE.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-cebb58b02acaa1d6 / 之元写作法 \[`0.4.0`\](./publication/zhiyuan-writing-method.md) 是当前 L6 接口，\[后台规格\](../templates/publication/zhiyuan-writing-spec.
-  - 来源：`docs/USAGE.md`
-  - 依赖：—；被引用：—
-- [之元写作法成果](../../ASSET-CARDS.md#asset-hr-d328ae24912155e2)
+  - 可搜索名称：NFC-cebb58b02acaa1d6 / 之元写作法 \[`0.4.0`\](../../../docs/publication/zhiyuan-writing-method.md) 是当前 L6 接口，\[后台规格\](../../ASSET-CARDS.md#asset-hr-d328ae24912155e2)
   - 类型/状态：`RESULT_OR_ARTICLE` · `HISTORICAL_COMPLETION_RECORD`
   - 可搜索名称：之元写作法成果 / zhiyuan-writing-showcase
   - 来源：`docs/publication/zhiyuan-writing-showcase.md`
@@ -328,6 +340,16 @@
   - 类型/状态：`RESULT_OR_ARTICLE` · `CURRENT_SCOPED_SOURCE`
   - 可搜索名称：之元写作法：内部范例与反例 / zhiyuan-writing-examples
   - 来源：`docs/publication/zhiyuan-writing-examples.md`
+  - 依赖：—；被引用：—
+- [任务 104（PR #160，已合并）建立编辑文章层与语料关系分析；任务 105（PR #161，已合并，精确 head `9d7d5ab512ffe3fd109a60ebd3d9d246b3a42d19`，普通合并 `9b5b4b9bfb](../../ASSET-CARDS.md#asset-nfc-19c3c3352a78b2aa)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-19c3c3352a78b2aa / 任务 104（PR #160，已合并）建立编辑文章层与语料关系分析；任务 105（PR #161，已合并，精确 head `9d7d5ab512ffe3fd109a60ebd3d9d246b3a42d19`，普通合并 `9b5b4b9bfb / 任务 104（PR #160，已合并）建立编辑文章层与语料关系分析；任务 105（PR #161，已合并，精确 head `9d7d5ab512ffe3fd109a60ebd3d9d246b3a42d19`，普通合并 `9b5b4b9bfb243fe4cc52f7b163a9613ee6628321`）执行 Function OS v0.2 核心能力基准、对抗验证与传播。二者均已合并且人类可读对应物齐备，本段描述其 Current 接口。
+  - 来源：`docs/project-current-state.md`
+  - 依赖：—；被引用：—
+- [任务 106（本迭代）建立了合并后真相传播基础设施：规范化 merged-iteration ledger、9 维 impact 引擎、确定性 current-truth 投影、fail-closed 验证器、编辑文章 stale/revi](../../ASSET-CARDS.md#asset-nfc-1ead70b9f991a2b8)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-1ead70b9f991a2b8 / 任务 106（本迭代）建立了合并后真相传播基础设施：规范化 merged-iteration ledger、9 维 impact 引擎、确定性 current-truth 投影、fail-closed 验证器、编辑文章 stale/revi / - 任务 106（本迭代）建立了合并后真相传播基础设施：规范化 merged-iteration ledger、9 维 impact 引擎、确定性 current-truth 投影、fail-closed 验证器、编辑文章 stale/review 生命周期与系统图 impact 审计，使后续合并的当前真相可确定性传播并在矛盾时 fail closed。
+  - 来源：`docs/project-current-state.md`
   - 依赖：—；被引用：—
 - [候选案例：修志数字化积分下考据深度被挤出（对应 D597 + NF-X1 + NF-X2）](../../../outputs/collisions/20260708-cross-domain-smoke-test/history/collision-report.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`

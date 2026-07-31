@@ -4,11 +4,6 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
-- [\| Evidence card files \| 30 \|](../../../reports/external-research/121A-night-recovery-report.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-c51d2d01d9e00bf7 / \| Evidence card files \| 30 \|
-  - 来源：`reports/external-research/121A-night-recovery-report.md`
-  - 依赖：—；被引用：—
 - [\| Evidence cards (30) \| COMPLETE \| 30 cards, 10 source families, all legal OA \|](../../../reports/external-research/121A-night-recovery-report.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-7797c269ef4b5307 / \| Evidence cards (30) \| COMPLETE \| 30 cards, 10 source families, all legal OA \|
@@ -334,11 +329,6 @@
   - 可搜索名称：NFC-0d948e4f4f5a9aeb / \| N3 \| D364/D423 身心不可逆 \| 不可逆判据存在 \| I_iso：跨域映射；C：补社会身心维度 \| **作为注释并入** \| 跨域映射，不独立 \|
   - 来源：`outputs/audit/teacher-competition-backfill-review-20260708.md`
   - 依赖：D364, D423；被引用：—
-- [\| N4 Artifact Manifest \| `schemas/n4-artifact-manifest-schema.json` \|](../../../function-os-candidate/v0.1/MANIFEST.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-23e69bf740edc3fa / \| N4 Artifact Manifest \| `schemas/n4-artifact-manifest-schema.json` \|
-  - 来源：`function-os-candidate/v0.1/MANIFEST.md`
-  - 依赖：—；被引用：—
 - [\| N4 Artifact \| MULTI_SOURCE_EVIDENCE \| S120-001, S120-009, S120-045, S120-039, S120-035, S120-030 \|](../../../reports/external-research/121c01-max-semantic-review-batch-01.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-7978682e6023c4a6 / \| N4 Artifact \| MULTI_SOURCE_EVIDENCE \| S120-001, S120-009, S120-045, S120-039, S120-035, S120-030 \|
@@ -348,16 +338,6 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-40eb9d42b0d8e14e / \| N4 \| Artifact Packager \| 133 \| 4 \| Manifest+content hash, tamper detection \|
   - 来源：`reports/external-research/121Q4-final-report.md`
-  - 依赖：—；被引用：—
-- [\| N4 \| Artifact Packager \| `n4_artifact_packager.py` \| ✅ \|](../../../function-os-candidate/v0.1/MANIFEST.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-2f7b65da6bc068bf / \| N4 \| Artifact Packager \| `n4_artifact_packager.py` \| ✅ \|
-  - 来源：`function-os-candidate/v0.1/MANIFEST.md`
-  - 依赖：—；被引用：—
-- [\| N4 \| Artifact Packager \| 生成带版本、内容哈希、规格哈希和表示哈希的 artifact。 \|](../../../function-os-candidate/v0.2/README.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-a803ff75e125c776 / \| N4 \| Artifact Packager \| 生成带版本、内容哈希、规格哈希和表示哈希的 artifact。 \|
-  - 来源：`function-os-candidate/v0.2/README.md`
   - 依赖：—；被引用：—
 - [\| N4 \| Artifact \| SUPPORTED_CANDIDATE \|](../../../reports/external-research/121Q3-night-final-report.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
@@ -784,6 +764,11 @@
   - 可搜索名称：NFC-cf5ec940349ff4a7 / \| 黄色协议 \| V2、V3（仅事实度量 pending） \|
   - 来源：`outputs/audit/meta-protocol-normative-review-publication-audit-20260711.md`
   - 依赖：—；被引用：—
+- [\|Function OS v0.2 核心能力基准（任务 105）\|原始目标 `PARTIALLY_SUPPORTED_WITH_IDENTIFIED_FAILURES`；修复后目标 `SUPPORTED_WITHIN_BOUNDED_DOM](../../../RESULTS/LATEST.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-91c1d39651c369b1 / \|Function OS v0.2 核心能力基准（任务 105）\|原始目标 `PARTIALLY_SUPPORTED_WITH_IDENTIFIED_FAILURES`；修复后目标 `SUPPORTED_WITHIN_BOUNDED_DOM
+  - 来源：`RESULTS/LATEST.md`
+  - 依赖：—；被引用：—
 - [\|OQ-103-1：回填/修正 `crossref_year` ✅已解决\|GAP001-06（2020→2019）、GAP002-02（→2006）、GAP005-01（→2007）、G008-06（→2005）、GAP008-08（→20](../../../RESULTS/OPEN-QUESTIONS.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-397634d58ba54397 / \|OQ-103-1：回填/修正 `crossref_year` ✅已解决\|GAP001-06（2020→2019）、GAP002-02（→2006）、GAP005-01（→2007）、G008-06（→2005）、GAP008-08（→20
@@ -797,6 +782,11 @@
 - [\|OQ-103-4：案例表历史锚点\|案例表引用的历史人名/事件是否对应真实 Wikipedia 条目。\|Wikipedia 验证（备用试点 2）。\|无法解析的锚点降级为“待核”而非断言。\|](../../../RESULTS/OPEN-QUESTIONS.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-85656120ce36a9e9 / \|OQ-103-4：案例表历史锚点\|案例表引用的历史人名/事件是否对应真实 Wikipedia 条目。\|Wikipedia 验证（备用试点 2）。\|无法解析的锚点降级为“待核”而非断言。\|
+  - 来源：`RESULTS/OPEN-QUESTIONS.md`
+  - 依赖：—；被引用：—
+- [\|OQ-103-5：Function OS v0.2 正确性（**已完成 · 有界**）\|候选算子是否在精选基线上复现参考数值。\|**已完成（有界 v0.2 基准）**：任务 105 先预注册、再对抗验证，在精选基线上复现参考数值；原始目标](../../../RESULTS/OPEN-QUESTIONS.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-c53931629cf8aa25 / \|OQ-103-5：Function OS v0.2 正确性（**已完成 · 有界**）\|候选算子是否在精选基线上复现参考数值。\|**已完成（有界 v0.2 基准）**：任务 105 先预注册、再对抗验证，在精选基线上复现参考数值；原始目标
   - 来源：`RESULTS/OPEN-QUESTIONS.md`
   - 依赖：—；被引用：—
 - [\|问题\|当前结果\|成熟度/证据边界\|来源\|处置\|](../../../RESULTS/LATEST.md)
@@ -1024,6 +1014,11 @@
   - 可搜索名称：NFC-9b9706d4988b252b / 一套证据制度模板；
   - 来源：`docs/roadmap_v0.2.md`
   - 依赖：—；被引用：—
+- [一条 **iteration-ledger 候选记录**（`data/operations/merged-iteration-ledger.jsonl`，追加式，含控制提交、PR 号、base、exact reviewed head、普通合](../../../ITERATION.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-20a518fb7b39b5ac / 一条 **iteration-ledger 候选记录**（`data/operations/merged-iteration-ledger.jsonl`，追加式，含控制提交、PR 号、base、exact reviewed head、普通合
+  - 来源：`ITERATION.md`
+  - 依赖：—；被引用：—
 - [一条笔记、一则新闻、一篇文章、一份案例、一段记忆、一次关系事件或其他现实材料。它们必须保存可用的作者、时间、渠道、版本、版权／隐私边界和事实核验状态；受限全文不得因为进入写作素材池而被重新公开。](../../../docs/publication/zhiyuan-writing-method.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-f85eb4f3f8cbaec6 / 一条笔记、一则新闻、一篇文章、一份案例、一段记忆、一次关系事件或其他现实材料。它们必须保存可用的作者、时间、渠道、版本、版权／隐私边界和事实核验状态；受限全文不得因为进入写作素材池而被重新公开。
@@ -1214,12 +1209,9 @@
   - 可搜索名称：NFC-310aa6caf348c6c6 / 不是自动生成最终结论**：P1 数据只提供索引、提醒、约束与分流信号。
   - 来源：`docs/p1-machine-data-collision-workflow-20260708.md`
   - 依赖：P1；被引用：—
-- [不知道结果文件名时，从\[统一知识入口\](../KNOWLEDGE/README.md)、\[最新变化\](../KNOWLEDGE/WHATS-NEW.md)、\[知识地图\](../KNOWLEDGE/MAP.md)或\[搜索\](../KNOWLE](../../../RESULTS/README.md)
+- [不知道结果文件名时，从\[统一知识入口\](../../README.md)、\[最新变化\](../../WHATS-NEW.md)、\[知识地图\](../../MAP.md)或\[搜索\](../../README.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-04038e8562ef7cd1 / 不知道结果文件名时，从\[统一知识入口\](../KNOWLEDGE/README.md)、\[最新变化\](../KNOWLEDGE/WHATS-NEW.md)、\[知识地图\](../KNOWLEDGE/MAP.md)或\[搜索\](../KNOWLE
-  - 来源：`RESULTS/README.md`
-  - 依赖：—；被引用：—
-- [不确定性原理 — Fisher信息度规的几何必然,算符不对易是度规非对角的代数表现](../../../data/foundation/evidence/evidence.jsonl)
+  - 可搜索名称：NFC-04038e8562ef7cd1 / 不知道结果文件名时，从\[统一知识入口\](../../README.md)、\[最新变化\](../../WHATS-NEW.md)、\[知识地图\](../../MAP.md)或\[搜索\](../../../data/foundation/evidence/evidence.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-fd437e45b1fccf18 / 不确定性原理 — Fisher信息度规的几何必然,算符不对易是度规非对角的代数表现
   - 来源：`data/foundation/evidence/evidence.jsonl`
@@ -1989,9 +1981,9 @@
   - 可搜索名称：NFC-b82238473d230f94 / 事实 Pending 总表（外部治理记录）
   - 来源：`docs/governance/meta-protocol-reviews/factual-pending-register.md`
   - 依赖：—；被引用：—
-- [事实 pending 总表：\[factual-pending-register.md\](./factual-pending-register.md)](../../../docs/governance/meta-protocol-reviews/README.md)
+- [事实 pending 总表：\[factual-pending-register.md\](../../../docs/governance/meta-protocol-reviews/factual-pending-register.md)](../../../docs/governance/meta-protocol-reviews/README.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-58d7d3be125c4081 / 事实 pending 总表：\[factual-pending-register.md\](./factual-pending-register.md)
+  - 可搜索名称：NFC-58d7d3be125c4081 / 事实 pending 总表：\[factual-pending-register.md\](../../../docs/governance/meta-protocol-reviews/factual-pending-register.md)
   - 来源：`docs/governance/meta-protocol-reviews/README.md`
   - 依赖：—；被引用：—
 - [事实 pending（3）：** - '再生能力/承载能力'的可操作跨域度量待外部学科验证](../../../docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md)
@@ -2109,11 +2101,6 @@
   - 可搜索名称：NFC-7fe0af733f1b7bc8 / 人工智能的道德地位依据其实际能力、主体性、利益与可受损性，而非仅依据“工具”标签。对不确定但可能具有感受或主体性的 AI，采用审慎保护原则。
   - 来源：`docs/governance/life-community-value-charter.md`
   - 依赖：—；被引用：—
-- [人工维护的计算器实现；本地 profile 只验证其合同，具体 closure 产物必须由带显式 request/output 的调用生成。](../../../data/operations/project-components.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-4fd39a3fe7b1201c / 人工维护的计算器实现；本地 profile 只验证其合同，具体 closure 产物必须由带显式 request/output 的调用生成。
-  - 来源：`data/operations/project-components.json`
-  - 依赖：—；被引用：—
 - [人类对应物：`RESULTS/CLAIM-DELTA.md`、`IMPACT-ANALYSIS.md`、`EVIDENCE-LINEAGE.md` 与 `SELF-CORRECTION-AUDIT.md`。](../../../docs/governance/self-correction-engine.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-715b4a207b34ed6b / 人类对应物：`RESULTS/CLAIM-DELTA.md`、`IMPACT-ANALYSIS.md`、`EVIDENCE-LINEAGE.md` 与 `SELF-CORRECTION-AUDIT.md`。
@@ -2149,9 +2136,9 @@
   - 可搜索名称：NFC-0f899fc3f051d0d6 / 仍有阻断：** R5-A 已发布阶段快照的精确头 48f87616 经独立 exact-head 验收（与实时 PR #134 一致）；但 R5-A 候选（宪章 PR #130）仍 OPEN / DRAFT，其整体精确头验收仍待账号所有者独
   - 来源：`docs/generated/recent-stage-results.md`
   - 依赖：—；被引用：—
-- [从\[统一知识入口\](./KNOWLEDGE/README.md)选择“最近变化”“按主题探索”“搜索”或“分层阅读”。](../../../HUMAN-READING.md)
+- [从\[统一知识入口\](../../README.md)选择“最近变化”“按主题探索”“搜索”或“分层阅读”。](../../../HUMAN-READING.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-787118f94b93a366 / 从\[统一知识入口\](./KNOWLEDGE/README.md)选择“最近变化”“按主题探索”“搜索”或“分层阅读”。
+  - 可搜索名称：NFC-787118f94b93a366 / 从\[统一知识入口\](../../README.md)选择“最近变化”“按主题探索”“搜索”或“分层阅读”。
   - 来源：`HUMAN-READING.md`
   - 依赖：—；被引用：—
 - [从统一入口按时间、研究问题、自然语言词、旧称和阅读时长探索知识，不要求读者预知目录或资产编号。](../../../docs/project-current-state.md)
@@ -2184,19 +2171,16 @@
   - 可搜索名称：NFC-6e00a09db27a0bc4 / 从这条案例看，更像是在验证 D71 对“纯外驱如何转成可持续内驱”的窗口判定能力。
   - 来源：`统一案例总表/0174-C-174-忆秦娥纯拉力上位(外驱转自驱窗口).md`
   - 依赖：D71；被引用：—
-- [从这里开始：** \[统一知识入口\](./KNOWLEDGE/README.md) · \[最新变化\](./KNOWLEDGE/WHATS-NEW.md) · \[知识地图\](./KNOWLEDGE/MAP.md) · \[搜索与交叉引用\](./K](../../../README.md)
+- [从这里开始：** \[统一知识入口\](../../README.md) · \[最新变化\](../../WHATS-NEW.md) · \[知识地图\](../../MAP.md) · \[搜索与交叉引用\](../../README.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-36f21247372dcffc / 从这里开始：** \[统一知识入口\](./KNOWLEDGE/README.md) · \[最新变化\](./KNOWLEDGE/WHATS-NEW.md) · \[知识地图\](./KNOWLEDGE/MAP.md) · \[搜索与交叉引用\](./K
-  - 来源：`README.md`
-  - 依赖：—；被引用：—
-- [仓库中的文章运行、外部研究、复算、审计和迭代报告不再只埋在目录或旧表中。`RESULTS/` 提供按主题和时间组织的人类入口，并保留每项结果的原始来源、问题、方法或证据类别、结论、成熟度、变化、局限与最终处置。](../../../README.md)
+  - 可搜索名称：NFC-36f21247372dcffc / 从这里开始：** \[统一知识入口\](../../README.md) · \[最新变化\](../../WHATS-NEW.md) · \[知识地图\](../../MAP.md) · \[搜索与交叉引用\](../../README.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-6dab70d0b856a685 / 仓库中的文章运行、外部研究、复算、审计和迭代报告不再只埋在目录或旧表中。`RESULTS/` 提供按主题和时间组织的人类入口，并保留每项结果的原始来源、问题、方法或证据类别、结论、成熟度、变化、局限与最终处置。
   - 来源：`README.md`
   - 依赖：—；被引用：—
-- [仓库的 `reports/external-research/` 保存按来源和主题形成的研究报告。它们是来源恢复、文献整理或研究候选，不自动成为现行事实。完整条目由 \[历史结果台账\](./CHRONOLOGY.md) 自动列出；原始入口为](../../../RESULTS/RESEARCH-AND-ARTICLES.md)
+- [仓库的 `reports/external-research/` 保存按来源和主题形成的研究报告。它们是来源恢复、文献整理或研究候选，不自动成为现行事实。完整条目由 \[历史结果台账\](../../../RESULTS/CHRONOLOGY.md) 自动列出；原始入口为](../../../RESULTS/RESEARCH-AND-ARTICLES.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-e01027f7658f337a / 仓库的 `reports/external-research/` 保存按来源和主题形成的研究报告。它们是来源恢复、文献整理或研究候选，不自动成为现行事实。完整条目由 \[历史结果台账\](./CHRONOLOGY.md) 自动列出；原始入口为
+  - 可搜索名称：NFC-e01027f7658f337a / 仓库的 `reports/external-research/` 保存按来源和主题形成的研究报告。它们是来源恢复、文献整理或研究候选，不自动成为现行事实。完整条目由 \[历史结果台账\](../../../RESULTS/CHRONOLOGY.md) 自动列出；原始入口为
   - 来源：`RESULTS/RESEARCH-AND-ARTICLES.md`
   - 依赖：—；被引用：—
 - [代际逃逸死锁验证](../../../data/foundation/evidence/evidence.jsonl)
@@ -2322,6 +2306,16 @@
 - [任务 103：建立最小可用 Evidence Program 并完成首个预注册、可证伪验证试点（见下）。](../../../RESULTS/LATEST.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-7941455b11850a2c / 任务 103：建立最小可用 Evidence Program 并完成首个预注册、可证伪验证试点（见下）。
+  - 来源：`RESULTS/LATEST.md`
+  - 依赖：—；被引用：—
+- [任务 104（PR #160，已合并）建立了编辑文章层与语料关系分析；任务 105（PR #161，已合并，精确 head `9d7d5ab512ffe3fd109a60ebd3d9d246b3a42d19`，普通合并 `9b5b4b9bf](../../../README.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-d10b385cd6e662ac / 任务 104（PR #160，已合并）建立了编辑文章层与语料关系分析；任务 105（PR #161，已合并，精确 head `9d7d5ab512ffe3fd109a60ebd3d9d246b3a42d19`，普通合并 `9b5b4b9bf
+  - 来源：`README.md`
+  - 依赖：—；被引用：—
+- [任务 105 先预注册再运行，保留全部原始负面证据；25 个 false_reject 来自 N2 嵌套相等提取缺陷，修复后复跑通过。](../../../RESULTS/LATEST.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-2abc13ac95cefd41 / 任务 105 先预注册再运行，保留全部原始负面证据；25 个 false_reject 来自 N2 嵌套相等提取缺陷，修复后复跑通过。
   - 来源：`RESULTS/LATEST.md`
   - 依赖：—；被引用：—
 - [任务 E 后续：证据制度库复核与扩展](../../../docs/v0.2_next_tasks.md)

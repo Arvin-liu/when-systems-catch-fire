@@ -4,6 +4,66 @@
 
 [返回资产卡总索引](../ASSET-CARDS.md)
 
+<a id="asset-hr-53d09798ed596327"></a>
+## E4 规范性审核 - 收敛演化协议 (Convergent-Evolution Protocol)
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-53D09798ED596327` · [docs/governance/meta-protocol-reviews/protocols/E4.md](../../docs/governance/meta-protocol-reviews/protocols/E4.md)
+- **为什么产生：** 此来源记录了什么：E4 规范性审核 - 收敛演化协议 (Convergent-Evolution Protocol)？
+- **当前状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **当前结果：** 价值：向安全吸引子、合作稳定、风险降低与系统协调收敛，是降低冲突与风险的正向工具。条件：仅当收敛不强制同质化、保留多样性与未来选择空间时才有价值。伤害：当强制同质化、过早收敛、单一占据全部空间时会伤害共同体（锁死未来）。不可缺少的约束：禁止强制同质化、保留多样性、避免过早收敛、保留未来选择空间。
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `docs/governance/meta-protocol-reviews/protocols/E4.md`, `REPOSITORY_HISTORY_SOURCE`
+- **演化历史：** 2026-07-11: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`
+- **可搜索名称：** `E4 规范性审核 - 收敛演化协议 (Convergent-Evolution Protocol)`, `E4`
+
+<a id="asset-hr-54b0858dd7fe1388"></a>
+## 1. 标题与机器可读前言
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-54B0858DD7FE1388` · [reports/publication/jin-rise-point-fire-analysis.md](../../reports/publication/jin-rise-point-fire-analysis.md)
+- **为什么产生：** 此来源记录了什么：1. 标题与机器可读前言？
+- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **当前结果：** --- title: "IGNITION-20260716-121Q26：金朝崛起为什么这么快——点火分析" taskid: "IGNITION-20260716-121Q26" artifactstatus: "candidaterepositorypublicationanalysis" claimceiling: "mechanismplausible / causalidentificationpending / externalhistoricalverificationrequired" methodversion: "1.1.0" projectmain: "b396c13…
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** `D01`
+- **来源与证据：** `reports/publication/jin-rise-point-fire-analysis.md`, `REPOSITORY_HISTORY_SOURCE`
+- **演化历史：** 2026-07-16: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`
+- **可搜索名称：** `1. 标题与机器可读前言`, `jin-rise-point-fire-analysis`
+
+<a id="asset-hr-552359b3880c984a"></a>
+## Legal Full-Text Resolver Report — IGNITION-121
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-552359B3880C984A` · [reports/external-research/121-legal-fulltext-resolver-report.md](../../reports/external-research/121-legal-fulltext-resolver-report.md)
+- **为什么产生：** 此来源记录了什么：Legal Full-Text Resolver Report — IGNITION-121？
+- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **当前结果：** IGNITION-121 built a reusable, legal full-text resolver for ignition external-research tasks. The resolver operates on a defined protocol that uses only legitimate open-access channels and records every resolution attempt, hash, and failure.
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `reports/external-research/121-legal-fulltext-resolver-report.md`, `121-LEGAL-FULLTEXT-RESOLVER-REPORT`
+- **演化历史：** 2026-07-14: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `Legal Full-Text Resolver Report — IGNITION-121`, `121-legal-fulltext-resolver-report`
+
 <a id="asset-hr-55909fc062be1ffa"></a>
 ## 赛课机制教师生存困境碰撞批次收口审计
 
@@ -943,63 +1003,3 @@
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `ARCHITECTURE_GOVERNANCE`
 - **可搜索名称：** `历史纠偏日志`, `historical-correction-log`
-
-<a id="asset-hr-7b29778a2b189cd1"></a>
-## IGNITION-106: 105 证据纠错报告
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-7B29778A2B189CD1` · [reports/external-research/106-105-evidence-correction-report.md](../../reports/external-research/106-105-evidence-correction-report.md)
-- **为什么产生：** 此来源记录了什么：IGNITION-106: 105 证据纠错报告？
-- **当前状态：** `CURRENT_CORRECTION_RECORD`
-- **当前结果：** 保留: 6条 | 降级: 2条 (S10 PDF编码失败, S13 AEA需JS) CONFIRMED: 6条 | UNRESOLVED: 2条
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `reports/external-research/106-105-evidence-correction-report.md`, `106-105-EVIDENCE-CORRECTION-REPORT`
-- **演化历史：** 2026-07-13: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `ARCHITECTURE_GOVERNANCE`
-- **可搜索名称：** `IGNITION-106: 105 证据纠错报告`, `106-105-evidence-correction-report`
-
-<a id="asset-hr-7b3bc86f58f00477"></a>
-## Unresolved obligations
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-7B3BC86F58F00477` · [reports/foundation-architecture/unresolved-obligations-20260712.md](../../reports/foundation-architecture/unresolved-obligations-20260712.md)
-- **为什么产生：** 此来源记录了什么：Unresolved obligations？
-- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **当前结果：** 622 item-level proof obligations remain open. Missing controlled semantics, types, boundaries, external evidence and proof artifacts must be repaired incrementally.
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `reports/foundation-architecture/unresolved-obligations-20260712.md`, `REPOSITORY_HISTORY_SOURCE`
-- **演化历史：** 2026-07-12: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`
-- **可搜索名称：** `Unresolved obligations`, `unresolved-obligations-20260712`
-
-<a id="asset-hr-7bd95d9ed567d84b"></a>
-## Math proof backend report
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-7BD95D9ED567D84B` · [reports/foundation-architecture/math-proof-backend-report-20260712.md](../../reports/foundation-architecture/math-proof-backend-report-20260712.md)
-- **为什么产生：** 此来源记录了什么：Math proof backend report？
-- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **当前结果：** Lean 4, SymPy and Z3 were not available locally. A deterministic Python normalization proof fixture, a rational counterexample and a correctly pending open conjecture exercise the architecture without claiming Lean success.
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `reports/foundation-architecture/math-proof-backend-report-20260712.md`, `REPOSITORY_HISTORY_SOURCE`
-- **演化历史：** 2026-07-12: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `Math proof backend report`, `math-proof-backend-report-20260712`

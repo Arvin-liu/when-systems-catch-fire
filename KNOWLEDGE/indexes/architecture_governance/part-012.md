@@ -4,12 +4,9 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
-- [先从\[统一知识入口\](../KNOWLEDGE/README.md)按最近变化、主题、搜索或阅读时长找到对象，再读 \[README.md\](../README.md)、\[ARCHITECTURE.md\](../ARCHITECTURE.md](../../../docs/USAGE.md)
+- [先从\[统一知识入口\](../../README.md)按最近变化、主题、搜索或阅读时长找到对象，再读 \[README.md\](../../README.md)、\[ARCHITECTURE.md\](../../../docs/USAGE.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-8cd1ac7ea28b4ed9 / 先从\[统一知识入口\](../KNOWLEDGE/README.md)按最近变化、主题、搜索或阅读时长找到对象，再读 \[README.md\](../README.md)、\[ARCHITECTURE.md\](../ARCHITECTURE.md
-  - 来源：`docs/USAGE.md`
-  - 依赖：—；被引用：—
-- [先把机器数据接入流程打通，形成「输入 P1 数据 → 输出结构化增量」的标准管线，再大规模跑 UNESCO（候选 1）或得到笔记（候选 3）会更稳；](../../../docs/getbrain-handoff-20260708.md)
+  - 可搜索名称：NFC-8cd1ac7ea28b4ed9 / 先从\[统一知识入口\](../../README.md)按最近变化、主题、搜索或阅读时长找到对象，再读 \[README.md\](../../README.md)、\[ARCHITECTURE.md\](../../../docs/getbrain-handoff-20260708.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-74d2a9a472b3c047 / 先把机器数据接入流程打通，形成「输入 P1 数据 → 输出结构化增量」的标准管线，再大规模跑 UNESCO（候选 1）或得到笔记（候选 3）会更稳；
   - 来源：`docs/getbrain-handoff-20260708.md`
@@ -164,12 +161,9 @@
   - 可搜索名称：NFC-a906cdf558db0af1 / 其余协议事实 pending（一并保留）
   - 来源：`docs/governance/meta-protocol-reviews/factual-pending-register.md`
   - 依赖：—；被引用：—
-- [具体入口：\[claim registry\](../data/foundation/nonfunction-claims/claim-registry.jsonl) · \[依赖图\](../data/foundation/nonfunction](../../../RESULTS/ADJUDICATION-SUMMARY.md)
+- [具体入口：\[claim registry\](../../../data/foundation/nonfunction-claims/claim-registry.jsonl) · \[依赖图\](../../../RESULTS/ADJUDICATION-SUMMARY.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-13ca1f980d5b6901 / 具体入口：\[claim registry\](../data/foundation/nonfunction-claims/claim-registry.jsonl) · \[依赖图\](../data/foundation/nonfunction
-  - 来源：`RESULTS/ADJUDICATION-SUMMARY.md`
-  - 依赖：—；被引用：—
-- [内源输出再输入污染验证](../../../data/foundation/evidence/evidence.jsonl)
+  - 可搜索名称：NFC-13ca1f980d5b6901 / 具体入口：\[claim registry\](../../../data/foundation/nonfunction-claims/claim-registry.jsonl) · \[依赖图\](../../../data/foundation/evidence/evidence.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-93b8cc4065d6105d / 内源输出再输入污染验证
   - 来源：`data/foundation/evidence/evidence.jsonl`
@@ -639,7 +633,7 @@
   - 可搜索名称：NFC-d1b57dd2300f609c / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0056-C-56-AOL+时代华纳.md`
   - 来源：`统一案例总表/0056-C-56-AOL+时代华纳.md`
   - 依赖：—；被引用：—
-- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0057-C-57-WeWork.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0057-C-57-WeWork.md)
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0057-C-57-WeWork.md`](../../../统一案例总表/0057-C-57-WeWork.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-d58537a914dbea4f / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0057-C-57-WeWork.md`
   - 来源：`统一案例总表/0057-C-57-WeWork.md`
@@ -659,7 +653,7 @@
   - 可搜索名称：NFC-051af7e01af812ff / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0060-C-60-安然.md`
   - 来源：`统一案例总表/0060-C-60-安然.md`
   - 依赖：—；被引用：—
-- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0061-C-61-Theranos.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0061-C-61-Theranos.md)
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0061-C-61-Theranos.md`](../../../统一案例总表/0061-C-61-Theranos.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-152975d5a637ce2b / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0061-C-61-Theranos.md`
   - 来源：`统一案例总表/0061-C-61-Theranos.md`
@@ -1194,7 +1188,7 @@
   - 可搜索名称：NFC-457a1c525e5795b0 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0202-C-202-反对AI者.md`
   - 来源：`统一案例总表/0202-C-202-反对AI者.md`
   - 依赖：—；被引用：—
-- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0205-C-205-A8.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0205-C-205-A8.md)
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0205-C-205-A8.md`](../../../统一案例总表/0205-C-205-A8.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-161d3f57156020e6 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0205-C-205-A8.md`
   - 来源：`统一案例总表/0205-C-205-A8.md`

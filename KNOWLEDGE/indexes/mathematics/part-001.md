@@ -14,6 +14,11 @@
   - 可搜索名称：NFC-718b4fa9018e5243 / """Canonical hash payload; proof bindings are normalized to avoid recursion."""
   - 来源：`tools/operations/validate_incremental_execution.py`
   - 依赖：—；被引用：—
+- ["""Editorial stale/review lifecycle (task 106, contract §8).](../../../tools/propagation/editorial_lifecycle.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-def1f559b0500fe0 / """Editorial stale/review lifecycle (task 106, contract §8).
+  - 来源：`tools/propagation/editorial_lifecycle.py`
+  - 依赖：—；被引用：—
 - ["""External attestation JSON proof validator.](../../../tools/validate_external_attestation.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-9eba629b0ae4e94a / """External attestation JSON proof validator.
@@ -93,6 +98,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-8c4ed6b251a93206 / "algebra_and_analysis": {"result": "PASS" if corr and mathematical_maturity in {"M4", "M6"} else "NOT_APPLICABLE" if not
   - 来源：`tools/foundation/adjudicate_function_assets.py`
+  - 依赖：—；被引用：—
+- ["alignment is accounting closure, not proof closure"),](../../../tools/propagation/generate_editorial_manifest.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-1151b804c1930f53 / "alignment is accounting closure, not proof closure"),
+  - 来源：`tools/propagation/generate_editorial_manifest.py`
   - 依赖：—；被引用：—
 - ["analogy_as_isomorphism": bool(re.search(r"类比.{0,12}(?:就是\|等于\|证明).{0,12}同构\|相似.{0,12}同构", compact)),](../../../tools/governance/run_self_correction.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
@@ -298,6 +308,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-2da11ec2ef4adb81 / "excluded_trigger_dimensions": \["identity"\], "proof_method": "registered fixture closure", "plan_hash": "pending",
   - 来源：`tests/test_incremental_execution_defensive_rejections.py`
+  - 依赖：—；被引用：—
+- ["explanatory only; no new scientific/mathematical/empirical conclusion; asserts only "](../../../tools/propagation/generate_editorial_manifest.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-02274e055cba6f4e / "explanatory only; no new scientific/mathematical/empirical conclusion; asserts only "
+  - 来源：`tools/propagation/generate_editorial_manifest.py`
   - 依赖：—；被引用：—
 - ["expression", "semantics", "sources", "proof_obligations", "validation_method",](../../../tools/math_foundation_audit.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
@@ -804,6 +819,11 @@
   - 可搜索名称：NFC-50f6eb55af561a6e / "proof_status":{"type":"string"},"evidence_status":{"type":"string"},"scope_status":{"type":"string"},"provenance_status
   - 来源：`tools/foundation/migrate_legacy.py`
   - 依赖：—；被引用：—
+- ["propagation", "106-impact", "system-map-nonimpact-proof.json",](../../../tools/propagation/system_map_audit.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-ea86e21ff8d4e34c / "propagation", "106-impact", "system-map-nonimpact-proof.json",
+  - 来源：`tools/propagation/system_map_audit.py`
+  - 依赖：—；被引用：—
 - ["PROVED_ORIGINAL_CLAIM_WITH_ARTIFACT",](../../../tools/foundation/validate_084_max_adjudication.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-fa81aaa3b5301eed / "PROVED_ORIGINAL_CLAIM_WITH_ARTIFACT",
@@ -828,6 +848,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-671d7f2046bbc5b3 / "reason": "; ".join(proof_obligations\[:4\]) or "Open bounded adjudication obligation",
   - 来源：`tools/foundation/adjudicate_function_assets.py`
+  - 依赖：—；被引用：—
+- ["representation capacity is not causal or empirical proof"),](../../../tools/propagation/generate_editorial_manifest.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-7d3d56a1eaf66e89 / "representation capacity is not causal or empirical proof"),
+  - 来源：`tools/propagation/generate_editorial_manifest.py`
   - 依赖：—；被引用：—
 - ["required": \["adjudication_id", "stable_id", "classification_status", "classification_basis", "classification_confidence](../../../tools/foundation/adjudicate_core.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
@@ -924,11 +949,6 @@
   - 可搜索名称：NFC-794c71bb768e87c4 / "supports_exact_claim": row\["final_disposition"\] in {"ACCEPTED_AS_DEFINITION", "ACCEPTED_AS_PROVED_MATHEMATICAL_RESULT"}
   - 来源：`tools/foundation/adjudicate_nonfunction_claims.py`
   - 依赖：—；被引用：—
-- ["synthetic_fixture_used_for_logic_proof": True,](../../../function-os-candidate/v0.2/tests/test_asset_import_e2e.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-84e7c8d0aa7405e2 / "synthetic_fixture_used_for_logic_proof": True,
-  - 来源：`function-os-candidate/v0.2/tests/test_asset_import_e2e.py`
-  - 依赖：—；被引用：—
 - ["T16": dict(path="统一函数总表/0026-T16-两个反向单调函数相乘必然生成倒U型.md", lines=(57, 66), object_type="FORMAL_PROPOSITION",](../../../tools/foundation/verify_079.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-65524f5b827d4593 / "T16": dict(path="统一函数总表/0026-T16-两个反向单调函数相乘必然生成倒U型.md", lines=(57, 66), object_type="FORMAL_PROPOSITION",
@@ -969,10 +989,330 @@
   - 可搜索名称：NFC-e84e7237c1e15809 / "This rendering is a derived view. It is not causal proof and does not replace Foundation.",
   - 来源：`tools/causal_fabric/renderer.py`
   - 依赖：—；被引用：—
+- ["title": "Core proof and countermodel report",](../../../analysis/corpus-relation/corpus_relation_graph.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-1A6919E6543A7092 / "title": "Core proof and countermodel report", / IMPLICIT-1A6919E6543A7092 / IMPLICIT-1EC4CFF48D305FB7
+  - 来源：`analysis/corpus-relation/corpus_relation_graph.json`
+  - 依赖：—；被引用：—
+- ["title": "Core proof and countermodel report",](../../../analysis/corpus-relation/article_cluster_candidates.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-1EC4CFF48D305FB7 / "title": "Core proof and countermodel report", / IMPLICIT-1EC4CFF48D305FB7 / IMPLICIT-1A6919E6543A7092
+  - 来源：`analysis/corpus-relation/article_cluster_candidates.json`
+  - 依赖：—；被引用：—
 - ["title": "Learning nonlinear operators via DeepONet based on the universal approximation theorem of operators",](../../../data/external-research/121-fulltext-resolver/121cx/evidence-cards-extreme/S120-029.json)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-367DFCE8C8B8CC00 / "title": "Learning nonlinear operators via DeepONet based on the universal approximation theorem of operators", / IMPLICIT-367DFCE8C8B8CC00
   - 来源：`data/external-research/121-fulltext-resolver/121cx/evidence-cards-extreme/S120-029.json`
+  - 依赖：—；被引用：—
+- ["title": "v0.2 函数依赖图初稿",](../../../analysis/corpus-relation/corpus_relation_graph.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-2F36ED52A8C62848 / "title": "v0.2 函数依赖图初稿", / IMPLICIT-2F36ED52A8C62848 / IMPLICIT-DC0F63E4FC9323EB
+  - 来源：`analysis/corpus-relation/corpus_relation_graph.json`
+  - 依赖：—；被引用：—
+- ["title": "v0.2 函数依赖图初稿",](../../../analysis/corpus-relation/article_cluster_candidates.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-DC0F63E4FC9323EB / "title": "v0.2 函数依赖图初稿", / IMPLICIT-DC0F63E4FC9323EB / IMPLICIT-2F36ED52A8C62848
+  - 来源：`analysis/corpus-relation/article_cluster_candidates.json`
+  - 依赖：—；被引用：—
+- ["title": "万有理论门槛函数",](../../../analysis/corpus-relation/article_cluster_candidates.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-33B3F0E68BEA7051 / "title": "万有理论门槛函数", / IMPLICIT-33B3F0E68BEA7051 / IMPLICIT-C936B741BF0B7EA8
+  - 来源：`analysis/corpus-relation/article_cluster_candidates.json`
+  - 依赖：—；被引用：—
+- ["title": "万有理论门槛函数",](../../../analysis/corpus-relation/corpus_relation_graph.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-F58F30B70BA2208D / "title": "万有理论门槛函数", / IMPLICIT-F58F30B70BA2208D / IMPLICIT-33B3F0E68BEA7051
+  - 来源：`analysis/corpus-relation/corpus_relation_graph.json`
+  - 依赖：—；被引用：—
+- ["title": "为全部恢复的结果/文章来源生成统一卡片和 1 分钟、5 分钟、完整阅读，并为全部函数/断言 registry 建立可回链来源、状态、依赖、反向依赖和历史的分片搜索索引。",](../../../analysis/corpus-relation/corpus_relation_graph.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-6863127D708BF3CC / "title": "为全部恢复的结果/文章来源生成统一卡片和 1 分钟、5 分钟、完整阅读，并为全部函数/断言 registry 建立可回链来源、状态、依赖、反向依赖和历史的分片搜索索引。", / IMPLICIT-6863127D708BF3CC / IMPLICIT-B61C724CFE1C709D
+  - 来源：`analysis/corpus-relation/corpus_relation_graph.json`
+  - 依赖：—；被引用：—
+- ["title": "为全部恢复的结果/文章来源生成统一卡片和 1 分钟、5 分钟、完整阅读，并为全部函数/断言 registry 建立可回链来源、状态、依赖、反向依赖和历史的分片搜索索引。",](../../../analysis/corpus-relation/article_cluster_candidates.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-B61C724CFE1C709D / "title": "为全部恢复的结果/文章来源生成统一卡片和 1 分钟、5 分钟、完整阅读，并为全部函数/断言 registry 建立可回链来源、状态、依赖、反向依赖和历史的分片搜索索引。", / IMPLICIT-B61C724CFE1C709D / IMPLICIT-6863127D708BF3CC
+  - 来源：`analysis/corpus-relation/article_cluster_candidates.json`
+  - 依赖：—；被引用：—
+- ["title": "偏差敏感度阈值函数",](../../../analysis/corpus-relation/article_cluster_candidates.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-6E624C84338B9B41 / "title": "偏差敏感度阈值函数", / IMPLICIT-6E624C84338B9B41 / IMPLICIT-6C873D048D8B56BB
+  - 来源：`analysis/corpus-relation/article_cluster_candidates.json`
+  - 依赖：—；被引用：—
+- ["title": "偏差敏感度阈值函数",](../../../analysis/corpus-relation/corpus_relation_graph.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-BB86B6719795F7C4 / "title": "偏差敏感度阈值函数", / IMPLICIT-BB86B6719795F7C4 / IMPLICIT-6C873D048D8B56BB
+  - 来源：`analysis/corpus-relation/corpus_relation_graph.json`
+  - 依赖：—；被引用：—
+- ["title": "全语料非函数型断言裁决索引",](../../../analysis/corpus-relation/corpus_relation_graph.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-B55013A0E5148E0E / "title": "全语料非函数型断言裁决索引", / IMPLICIT-B55013A0E5148E0E / IMPLICIT-FCCD25FBA4C2F1D9
+  - 来源：`analysis/corpus-relation/corpus_relation_graph.json`
+  - 依赖：—；被引用：—
+- ["title": "全语料非函数型断言裁决索引",](../../../analysis/corpus-relation/article_cluster_candidates.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-FCCD25FBA4C2F1D9 / "title": "全语料非函数型断言裁决索引", / IMPLICIT-FCCD25FBA4C2F1D9 / IMPLICIT-B55013A0E5148E0E
+  - 来源：`analysis/corpus-relation/article_cluster_candidates.json`
+  - 依赖：—；被引用：—
+- ["title": "公式化、可计算、内部自洽、AI 编号和单元测试通过都不等于外部真实；当前门控模型没有统一四力，也没有证明大一统普遍不可能。",](../../../analysis/corpus-relation/article_cluster_candidates.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-5077B44C7F375A6E / "title": "公式化、可计算、内部自洽、AI 编号和单元测试通过都不等于外部真实；当前门控模型没有统一四力，也没有证明大一统普遍不可能。", / IMPLICIT-5077B44C7F375A6E / IMPLICIT-6E73303D1FFEBDBC
+  - 来源：`analysis/corpus-relation/article_cluster_candidates.json`
+  - 依赖：—；被引用：—
+- ["title": "公式化、可计算、内部自洽、AI 编号和单元测试通过都不等于外部真实；当前门控模型没有统一四力，也没有证明大一统普遍不可能。",](../../../analysis/corpus-relation/corpus_relation_graph.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-6E73303D1FFEBDBC / "title": "公式化、可计算、内部自洽、AI 编号和单元测试通过都不等于外部真实；当前门控模型没有统一四力，也没有证明大一统普遍不可能。", / IMPLICIT-6E73303D1FFEBDBC / IMPLICIT-5077B44C7F375A6E
+  - 来源：`analysis/corpus-relation/corpus_relation_graph.json`
+  - 依赖：—；被引用：—
+- ["title": "函数资产作者指南",](../../../analysis/corpus-relation/corpus_relation_graph.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-4E24BF2775B8F675 / "title": "函数资产作者指南", / IMPLICIT-4E24BF2775B8F675 / IMPLICIT-58965A451F28012E
+  - 来源：`analysis/corpus-relation/corpus_relation_graph.json`
+  - 依赖：—；被引用：—
+- ["title": "函数资产作者指南",](../../../analysis/corpus-relation/article_cluster_candidates.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-58965A451F28012E / "title": "函数资产作者指南", / IMPLICIT-58965A451F28012E / IMPLICIT-4E24BF2775B8F675
+  - 来源：`analysis/corpus-relation/article_cluster_candidates.json`
+  - 依赖：—；被引用：—
+- ["title": "函数资产注册表迁移 R2",](../../../analysis/corpus-relation/corpus_relation_graph.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-441287CC8A372B6F / "title": "函数资产注册表迁移 R2", / IMPLICIT-441287CC8A372B6F / IMPLICIT-8C23806341FF2200
+  - 来源：`analysis/corpus-relation/corpus_relation_graph.json`
+  - 依赖：—；被引用：—
+- ["title": "函数资产注册表迁移 R2",](../../../analysis/corpus-relation/article_cluster_candidates.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-8C23806341FF2200 / "title": "函数资产注册表迁移 R2", / IMPLICIT-8C23806341FF2200 / IMPLICIT-441287CC8A372B6F
+  - 来源：`analysis/corpus-relation/article_cluster_candidates.json`
+  - 依赖：—；被引用：—
+- ["title": "历史函数后续证明与实证路线图",](../../../analysis/corpus-relation/article_cluster_candidates.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-E882E1D9162E3201 / "title": "历史函数后续证明与实证路线图", / IMPLICIT-E882E1D9162E3201 / IMPLICIT-F3F3BF3A1C4AD5F2
+  - 来源：`analysis/corpus-relation/article_cluster_candidates.json`
+  - 依赖：—；被引用：—
+- ["title": "历史函数后续证明与实证路线图",](../../../analysis/corpus-relation/corpus_relation_graph.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-F3F3BF3A1C4AD5F2 / "title": "历史函数后续证明与实证路线图", / IMPLICIT-F3F3BF3A1C4AD5F2 / IMPLICIT-E882E1D9162E3201
+  - 来源：`analysis/corpus-relation/corpus_relation_graph.json`
+  - 依赖：—；被引用：—
+- ["title": "历史函数资产全量登记",](../../../analysis/corpus-relation/corpus_relation_graph.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-8F2876243D7BBE1E / "title": "历史函数资产全量登记", / IMPLICIT-8F2876243D7BBE1E / IMPLICIT-AAF5690568894BF1
+  - 来源：`analysis/corpus-relation/corpus_relation_graph.json`
+  - 依赖：—；被引用：—
+- ["title": "历史函数资产全量登记",](../../../analysis/corpus-relation/article_cluster_candidates.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-AAF5690568894BF1 / "title": "历史函数资产全量登记", / IMPLICIT-AAF5690568894BF1 / IMPLICIT-8F2876243D7BBE1E
+  - 来源：`analysis/corpus-relation/article_cluster_candidates.json`
+  - 依赖：—；被引用：—
+- ["title": "历史函数资产深度裁决与注册表闭合 R1",](../../../analysis/corpus-relation/corpus_relation_graph.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-0FE430E408A4D4F2 / "title": "历史函数资产深度裁决与注册表闭合 R1", / IMPLICIT-0FE430E408A4D4F2 / IMPLICIT-7B70F795FCBD90DE
+  - 来源：`analysis/corpus-relation/corpus_relation_graph.json`
+  - 依赖：—；被引用：—
+- ["title": "历史函数资产深度裁决与注册表闭合 R1",](../../../analysis/corpus-relation/article_cluster_candidates.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-7B70F795FCBD90DE / "title": "历史函数资产深度裁决与注册表闭合 R1", / IMPLICIT-7B70F795FCBD90DE / IMPLICIT-0FE430E408A4D4F2
+  - 来源：`analysis/corpus-relation/article_cluster_candidates.json`
+  - 依赖：—；被引用：—
+- ["title": "哥德尔不完备性、霍奇猜想类比、不同能标、不同函数族，以及点火当前模型的失败，都不是大一统不可能的桥接定理。",](../../../analysis/corpus-relation/article_cluster_candidates.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-9DD437F7CA05404A / "title": "哥德尔不完备性、霍奇猜想类比、不同能标、不同函数族，以及点火当前模型的失败，都不是大一统不可能的桥接定理。", / IMPLICIT-9DD437F7CA05404A / IMPLICIT-F39D28DC9E85A240
+  - 来源：`analysis/corpus-relation/article_cluster_candidates.json`
+  - 依赖：—；被引用：—
+- ["title": "哥德尔不完备性、霍奇猜想类比、不同能标、不同函数族，以及点火当前模型的失败，都不是大一统不可能的桥接定理。",](../../../analysis/corpus-relation/corpus_relation_graph.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-F39D28DC9E85A240 / "title": "哥德尔不完备性、霍奇猜想类比、不同能标、不同函数族，以及点火当前模型的失败，都不是大一统不可能的桥接定理。", / IMPLICIT-F39D28DC9E85A240 / IMPLICIT-9DD437F7CA05404A
+  - 来源：`analysis/corpus-relation/corpus_relation_graph.json`
+  - 依赖：—；被引用：—
+- ["title": "大统一门槛函数",](../../../analysis/corpus-relation/article_cluster_candidates.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-7E289724C94B2215 / "title": "大统一门槛函数", / IMPLICIT-7E289724C94B2215 / IMPLICIT-9AEDC5D84E321B5B
+  - 来源：`analysis/corpus-relation/article_cluster_candidates.json`
+  - 依赖：—；被引用：—
+- ["title": "大统一门槛函数",](../../../analysis/corpus-relation/corpus_relation_graph.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-A13946E18521B96D / "title": "大统一门槛函数", / IMPLICIT-A13946E18521B96D / IMPLICIT-7E289724C94B2215
+  - 来源：`analysis/corpus-relation/corpus_relation_graph.json`
+  - 依赖：—；被引用：—
+- ["title": "对任务 102 排除生成投影回灌后重算的 5,663 个历史函数资产建立 identity card、M/E 双轴、义务、依赖、处置与 quarantine。",](../../../analysis/corpus-relation/corpus_relation_graph.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-349A2D45DAB65E0D / "title": "对任务 102 排除生成投影回灌后重算的 5,663 个历史函数资产建立 identity card、M/E 双轴、义务、依赖、处置与 quarantine。", / IMPLICIT-349A2D45DAB65E0D / IMPLICIT-7B6E50CC6F0BCC93
+  - 来源：`analysis/corpus-relation/corpus_relation_graph.json`
+  - 依赖：—；被引用：—
+- ["title": "对任务 102 排除生成投影回灌后重算的 5,663 个历史函数资产建立 identity card、M/E 双轴、义务、依赖、处置与 quarantine。",](../../../analysis/corpus-relation/article_cluster_candidates.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-7B6E50CC6F0BCC93 / "title": "对任务 102 排除生成投影回灌后重算的 5,663 个历史函数资产建立 identity card、M/E 双轴、义务、依赖、处置与 quarantine。", / IMPLICIT-7B6E50CC6F0BCC93 / IMPLICIT-349A2D45DAB65E0D
+  - 来源：`analysis/corpus-relation/article_cluster_candidates.json`
+  - 依赖：—；被引用：—
+- ["title": "强相互作用门控函数",](../../../analysis/corpus-relation/corpus_relation_graph.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-5676C0206291621F / "title": "强相互作用门控函数", / IMPLICIT-5676C0206291621F / IMPLICIT-AAD17273924DC20A
+  - 来源：`analysis/corpus-relation/corpus_relation_graph.json`
+  - 依赖：—；被引用：—
+- ["title": "强相互作用门控函数",](../../../analysis/corpus-relation/article_cluster_candidates.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-FC16E01FFE3F7849 / "title": "强相互作用门控函数", / IMPLICIT-FC16E01FFE3F7849 / IMPLICIT-5676C0206291621F
+  - 来源：`analysis/corpus-relation/article_cluster_candidates.json`
+  - 依赖：—；被引用：—
+- ["title": "断言治理与函数身份规范",](../../../analysis/corpus-relation/corpus_relation_graph.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-5141B6C5279A193B / "title": "断言治理与函数身份规范", / IMPLICIT-5141B6C5279A193B / IMPLICIT-92E564FD0BA63550
+  - 来源：`analysis/corpus-relation/corpus_relation_graph.json`
+  - 依赖：—；被引用：—
+- ["title": "断言治理与函数身份规范",](../../../analysis/corpus-relation/article_cluster_candidates.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-92E564FD0BA63550 / "title": "断言治理与函数身份规范", / IMPLICIT-92E564FD0BA63550 / IMPLICIT-5141B6C5279A193B
+  - 来源：`analysis/corpus-relation/article_cluster_candidates.json`
+  - 依赖：—；被引用：—
+- ["title": "新增函数候选 · 赛课机制下的教师生存困境",](../../../analysis/corpus-relation/corpus_relation_graph.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-441DE60524CFDE3C / "title": "新增函数候选 · 赛课机制下的教师生存困境", / IMPLICIT-441DE60524CFDE3C / IMPLICIT-D9331E45CFE417C4
+  - 来源：`analysis/corpus-relation/corpus_relation_graph.json`
+  - 依赖：—；被引用：—
+- ["title": "新增函数候选 · 赛课机制下的教师生存困境",](../../../analysis/corpus-relation/article_cluster_candidates.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-D9331E45CFE417C4 / "title": "新增函数候选 · 赛课机制下的教师生存困境", / IMPLICIT-D9331E45CFE417C4 / IMPLICIT-441DE60524CFDE3C
+  - 来源：`analysis/corpus-relation/article_cluster_candidates.json`
+  - 依赖：—；被引用：—
+- ["title": "点火没有证明“大一统普遍不可能”。模型失败、哥德尔类比、跨域相似或旧编号不能充当普遍 no-go theorem。",](../../../analysis/corpus-relation/article_cluster_candidates.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-1BFF457BEAB3940A / "title": "点火没有证明“大一统普遍不可能”。模型失败、哥德尔类比、跨域相似或旧编号不能充当普遍 no-go theorem。", / IMPLICIT-1BFF457BEAB3940A / IMPLICIT-5D2E4514DB081FFB
+  - 来源：`analysis/corpus-relation/article_cluster_candidates.json`
+  - 依赖：—；被引用：—
+- ["title": "点火没有证明“大一统普遍不可能”。模型失败、哥德尔类比、跨域相似或旧编号不能充当普遍 no-go theorem。",](../../../analysis/corpus-relation/corpus_relation_graph.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-5D2E4514DB081FFB / "title": "点火没有证明“大一统普遍不可能”。模型失败、哥德尔类比、跨域相似或旧编号不能充当普遍 no-go theorem。", / IMPLICIT-5D2E4514DB081FFB / IMPLICIT-1BFF457BEAB3940A
+  - 来源：`analysis/corpus-relation/corpus_relation_graph.json`
+  - 依赖：—；被引用：—
+- ["title": "点火现有乘法门控模型不能完成数学和物理上充分的四种相互作用统一。四力统一问题本身保持开放。项目没有证明“大一统普遍不可能”，也没有给出物理统一点。",](../../../analysis/corpus-relation/article_cluster_candidates.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-7AD3CE4E9D35A57A / "title": "点火现有乘法门控模型不能完成数学和物理上充分的四种相互作用统一。四力统一问题本身保持开放。项目没有证明“大一统普遍不可能”，也没有给出物理统一点。", / IMPLICIT-7AD3CE4E9D35A57A / IMPLICIT-850F61215DF6B742
+  - 来源：`analysis/corpus-relation/article_cluster_candidates.json`
+  - 依赖：—；被引用：—
+- ["title": "点火现有乘法门控模型不能完成数学和物理上充分的四种相互作用统一。四力统一问题本身保持开放。项目没有证明“大一统普遍不可能”，也没有给出物理统一点。",](../../../analysis/corpus-relation/corpus_relation_graph.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-850F61215DF6B742 / "title": "点火现有乘法门控模型不能完成数学和物理上充分的四种相互作用统一。四力统一问题本身保持开放。项目没有证明“大一统普遍不可能”，也没有给出物理统一点。", / IMPLICIT-850F61215DF6B742 / IMPLICIT-7AD3CE4E9D35A57A
+  - 来源：`analysis/corpus-relation/corpus_relation_graph.json`
+  - 依赖：—；被引用：—
+- ["title": "熵增门槛碾压函数",](../../../analysis/corpus-relation/corpus_relation_graph.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-63AB821E8E489960 / "title": "熵增门槛碾压函数", / IMPLICIT-63AB821E8E489960 / IMPLICIT-46CC3BDE55D77152
+  - 来源：`analysis/corpus-relation/corpus_relation_graph.json`
+  - 依赖：—；被引用：—
+- ["title": "熵增门槛碾压函数",](../../../analysis/corpus-relation/article_cluster_candidates.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-DD0579BCF8E439D2 / "title": "熵增门槛碾压函数", / IMPLICIT-DD0579BCF8E439D2 / IMPLICIT-46CC3BDE55D77152
+  - 来源：`analysis/corpus-relation/article_cluster_candidates.json`
+  - 依赖：—；被引用：—
+- ["title": "电弱统一规范破缺函数",](../../../analysis/corpus-relation/article_cluster_candidates.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-192293273AC6A10E / "title": "电弱统一规范破缺函数", / IMPLICIT-192293273AC6A10E / IMPLICIT-26DABA60C710E2E6
+  - 来源：`analysis/corpus-relation/article_cluster_candidates.json`
+  - 依赖：—；被引用：—
+- ["title": "电弱统一规范破缺函数",](../../../analysis/corpus-relation/corpus_relation_graph.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-26DABA60C710E2E6 / "title": "电弱统一规范破缺函数", / IMPLICIT-26DABA60C710E2E6 / IMPLICIT-192293273AC6A10E
+  - 来源：`analysis/corpus-relation/corpus_relation_graph.json`
+  - 依赖：—；被引用：—
+- ["title": "相对论门槛函数",](../../../analysis/corpus-relation/corpus_relation_graph.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-CE939BE90A3DEC1D / "title": "相对论门槛函数", / IMPLICIT-CE939BE90A3DEC1D / IMPLICIT-460AA6F3C1EF3D2E
+  - 来源：`analysis/corpus-relation/corpus_relation_graph.json`
+  - 依赖：—；被引用：—
+- ["title": "相对论门槛函数",](../../../analysis/corpus-relation/article_cluster_candidates.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-D2E943F7C8148C2E / "title": "相对论门槛函数", / IMPLICIT-D2E943F7C8148C2E / IMPLICIT-460AA6F3C1EF3D2E
+  - 来源：`analysis/corpus-relation/article_cluster_candidates.json`
+  - 依赖：—；被引用：—
+- ["title": "经典确定性函数",](../../../analysis/corpus-relation/article_cluster_candidates.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-54050DBB3CB4E918 / "title": "经典确定性函数", / IMPLICIT-54050DBB3CB4E918 / IMPLICIT-093F6C31C7C9037B
+  - 来源：`analysis/corpus-relation/article_cluster_candidates.json`
+  - 依赖：—；被引用：—
+- ["title": "经典确定性函数",](../../../analysis/corpus-relation/corpus_relation_graph.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-FD87F48A75095635 / "title": "经典确定性函数", / IMPLICIT-FD87F48A75095635 / IMPLICIT-093F6C31C7C9037B
+  - 来源：`analysis/corpus-relation/corpus_relation_graph.json`
+  - 依赖：—；被引用：—
+- ["title": "统一函数总表/ and 统一案例总表/ are immutable legacy sources and compatibility views. Never use their hand-written headers as curren",](../../../analysis/corpus-relation/article_cluster_candidates.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-1923B208C2EEEAB0 / "title": "统一函数总表/ and 统一案例总表/ are immutable legacy sources and compatibility views. Never use their hand-written headers as curren", / IMPLICIT-1923B208C2EEEAB0 / IMPLICIT-FC08F19DF94A445E
+  - 来源：`analysis/corpus-relation/article_cluster_candidates.json`
+  - 依赖：—；被引用：—
+- ["title": "统一函数总表/ and 统一案例总表/ are immutable legacy sources and compatibility views. Never use their hand-written headers as curren",](../../../analysis/corpus-relation/corpus_relation_graph.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-FC08F19DF94A445E / "title": "统一函数总表/ and 统一案例总表/ are immutable legacy sources and compatibility views. Never use their hand-written headers as curren", / IMPLICIT-FC08F19DF94A445E / IMPLICIT-1923B208C2EEEAB0
+  - 来源：`analysis/corpus-relation/corpus_relation_graph.json`
+  - 依赖：—；被引用：—
+- ["title": "认知路径积分函数",](../../../analysis/corpus-relation/corpus_relation_graph.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-61EC53984EAC2720 / "title": "认知路径积分函数", / IMPLICIT-61EC53984EAC2720 / IMPLICIT-7654694796DE8FB2
+  - 来源：`analysis/corpus-relation/corpus_relation_graph.json`
+  - 依赖：—；被引用：—
+- ["title": "认知路径积分函数",](../../../analysis/corpus-relation/article_cluster_candidates.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-7654694796DE8FB2 / "title": "认知路径积分函数", / IMPLICIT-7654694796DE8FB2 / IMPLICIT-61EC53984EAC2720
+  - 来源：`analysis/corpus-relation/article_cluster_candidates.json`
+  - 依赖：—；被引用：—
+- ["title": "跨域候选函数复核",](../../../analysis/corpus-relation/corpus_relation_graph.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-C3BA46CF593E857B / "title": "跨域候选函数复核", / IMPLICIT-C3BA46CF593E857B / IMPLICIT-E9F634430362F097
+  - 来源：`analysis/corpus-relation/corpus_relation_graph.json`
+  - 依赖：—；被引用：—
+- ["title": "跨域候选函数复核",](../../../analysis/corpus-relation/article_cluster_candidates.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-E9F634430362F097 / "title": "跨域候选函数复核", / IMPLICIT-E9F634430362F097 / IMPLICIT-C3BA46CF593E857B
+  - 来源：`analysis/corpus-relation/article_cluster_candidates.json`
+  - 依赖：—；被引用：—
+- ["title": "跨域候选函数小批量回填审计",](../../../analysis/corpus-relation/corpus_relation_graph.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-412797946557FEB2 / "title": "跨域候选函数小批量回填审计", / IMPLICIT-412797946557FEB2 / IMPLICIT-9A3164AB05E107AE
+  - 来源：`analysis/corpus-relation/corpus_relation_graph.json`
+  - 依赖：—；被引用：—
+- ["title": "跨域候选函数小批量回填审计",](../../../analysis/corpus-relation/article_cluster_candidates.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-9A3164AB05E107AE / "title": "跨域候选函数小批量回填审计", / IMPLICIT-9A3164AB05E107AE / IMPLICIT-412797946557FEB2
+  - 来源：`analysis/corpus-relation/article_cluster_candidates.json`
+  - 依赖：—；被引用：—
+- ["title": "跨域候选函数批次收口审计",](../../../analysis/corpus-relation/corpus_relation_graph.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-8CCDD18A82CC1558 / "title": "跨域候选函数批次收口审计", / IMPLICIT-8CCDD18A82CC1558 / IMPLICIT-F963A390E8E037BA
+  - 来源：`analysis/corpus-relation/corpus_relation_graph.json`
+  - 依赖：—；被引用：—
+- ["title": "跨域候选函数批次收口审计",](../../../analysis/corpus-relation/article_cluster_candidates.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-F963A390E8E037BA / "title": "跨域候选函数批次收口审计", / IMPLICIT-F963A390E8E037BA / IMPLICIT-8CCDD18A82CC1558
+  - 来源：`analysis/corpus-relation/article_cluster_candidates.json`
+  - 依赖：—；被引用：—
+- ["title": "量子力学门槛聚集函数",](../../../analysis/corpus-relation/corpus_relation_graph.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-1F7FDB820F19CF5D / "title": "量子力学门槛聚集函数", / IMPLICIT-1F7FDB820F19CF5D / IMPLICIT-1E2BF745D42620E2
+  - 来源：`analysis/corpus-relation/corpus_relation_graph.json`
+  - 依赖：—；被引用：—
+- ["title": "量子力学门槛聚集函数",](../../../analysis/corpus-relation/article_cluster_candidates.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-F8CFE314C57779B0 / "title": "量子力学门槛聚集函数", / IMPLICIT-F8CFE314C57779B0 / IMPLICIT-1E2BF745D42620E2
+  - 来源：`analysis/corpus-relation/article_cluster_candidates.json`
+  - 依赖：—；被引用：—
+- ["title": "门控面合并统一函数",](../../../analysis/corpus-relation/article_cluster_candidates.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-AD73DE418318FBB0 / "title": "门控面合并统一函数", / IMPLICIT-AD73DE418318FBB0 / IMPLICIT-C25FCCDC531BABA7
+  - 来源：`analysis/corpus-relation/article_cluster_candidates.json`
+  - 依赖：—；被引用：—
+- ["title": "门控面合并统一函数",](../../../analysis/corpus-relation/corpus_relation_graph.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-C25FCCDC531BABA7 / "title": "门控面合并统一函数", / IMPLICIT-C25FCCDC531BABA7 / IMPLICIT-AD73DE418318FBB0
+  - 来源：`analysis/corpus-relation/corpus_relation_graph.json`
+  - 依赖：—；被引用：—
+- ["title": "非函数型资产交接必须保留 task 100 的规范 ID、原子文本、十三门、证据与复现状态、依赖和下游影响、M/E、处置、公开上限及 supersession lineage。自动发现只生成待裁决记录；一个模型失败不能推出普遍不可能，类比不",](../../../analysis/corpus-relation/corpus_relation_graph.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-290B72F2FDD1805A / "title": "非函数型资产交接必须保留 task 100 的规范 ID、原子文本、十三门、证据与复现状态、依赖和下游影响、M/E、处置、公开上限及 supersession lineage。自动发现只生成待裁决记录；一个模型失败不能推出普遍不可能，类比不", / IMPLICIT-290B72F2FDD1805A / IMPLICIT-BBEA74C385827CA4
+  - 来源：`analysis/corpus-relation/corpus_relation_graph.json`
+  - 依赖：—；被引用：—
+- ["title": "非函数型资产交接必须保留 task 100 的规范 ID、原子文本、十三门、证据与复现状态、依赖和下游影响、M/E、处置、公开上限及 supersession lineage。自动发现只生成待裁决记录；一个模型失败不能推出普遍不可能，类比不",](../../../analysis/corpus-relation/article_cluster_candidates.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-BBEA74C385827CA4 / "title": "非函数型资产交接必须保留 task 100 的规范 ID、原子文本、十三门、证据与复现状态、依赖和下游影响、M/E、处置、公开上限及 supersession lineage。自动发现只生成待裁决记录；一个模型失败不能推出普遍不可能，类比不", / IMPLICIT-BBEA74C385827CA4 / IMPLICIT-290B72F2FDD1805A
+  - 来源：`analysis/corpus-relation/article_cluster_candidates.json`
   - 依赖：—；被引用：—
 - ["type_dimension_audit": "REQUIRES_HUMAN_REVIEW" if theorem or cross else "NOT_APPLICABLE",](../../../tools/foundation/adjudicate_nonfunction_claims.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
@@ -1234,7 +1574,7 @@
   - 可搜索名称：IMPLICIT-AF7FDFA925CD05A8 / # 新增函数候选 · 赛课机制下的教师生存困境 / IMPLICIT-AF7FDFA925CD05A8
   - 来源：`outputs/collisions/20260708-teacher-competition/new-functions.md`
   - 依赖：—；被引用：—
-- [# 统一函数索引表（2026年07月09日00时30分，函数总数 617，收敛 6 条）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+- [# 统一函数索引表（2026年07月09日00时30分，函数总数 617，收敛 6 条）](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-7282DE1962865265 / # 统一函数索引表（2026年07月09日00时30分，函数总数 617，收敛 6 条） / IMPLICIT-7282DE1962865265
   - 来源：`统一函数总表/INDEX.md`
@@ -1268,6 +1608,111 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-DB1632A39F4D405A / ## 9. 与已有函数关系 / IMPLICIT-DB1632A39F4D405A
   - 来源：`outputs/audit/two-tables-entry-format-audit-20260709.md`
+  - 依赖：—；被引用：—
+- [## d127 — 认知路径积分函数](../../../analysis/corpus-relation/cluster_source_briefs/C000.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-54E42E37590A9FA7 / ## d127 — 认知路径积分函数 / IMPLICIT-54E42E37590A9FA7
+  - 来源：`analysis/corpus-relation/cluster_source_briefs/C000.md`
+  - 依赖：—；被引用：—
+- [## d182 — 经典确定性函数](../../../analysis/corpus-relation/cluster_source_briefs/C000.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-38DF3963AE52E0E8 / ## d182 — 经典确定性函数 / IMPLICIT-38DF3963AE52E0E8
+  - 来源：`analysis/corpus-relation/cluster_source_briefs/C000.md`
+  - 依赖：—；被引用：—
+- [## d183 — 门控面合并统一函数](../../../analysis/corpus-relation/cluster_source_briefs/C000.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-68F3324C88312BD3 / ## d183 — 门控面合并统一函数 / IMPLICIT-68F3324C88312BD3
+  - 来源：`analysis/corpus-relation/cluster_source_briefs/C000.md`
+  - 依赖：—；被引用：—
+- [## d184 — 熵增门槛碾压函数](../../../analysis/corpus-relation/cluster_source_briefs/C000.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-B34FFC81084817A5 / ## d184 — 熵增门槛碾压函数 / IMPLICIT-B34FFC81084817A5
+  - 来源：`analysis/corpus-relation/cluster_source_briefs/C000.md`
+  - 依赖：—；被引用：—
+- [## d185 — 相对论门槛函数](../../../analysis/corpus-relation/cluster_source_briefs/C000.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-1B00C13FA4D457B7 / ## d185 — 相对论门槛函数 / IMPLICIT-1B00C13FA4D457B7
+  - 来源：`analysis/corpus-relation/cluster_source_briefs/C000.md`
+  - 依赖：—；被引用：—
+- [## d186 — 量子力学门槛聚集函数](../../../analysis/corpus-relation/cluster_source_briefs/C000.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-BAE069A7F5A21B23 / ## d186 — 量子力学门槛聚集函数 / IMPLICIT-BAE069A7F5A21B23
+  - 来源：`analysis/corpus-relation/cluster_source_briefs/C000.md`
+  - 依赖：—；被引用：—
+- [## d187 — 电弱统一规范破缺函数](../../../analysis/corpus-relation/cluster_source_briefs/C000.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-80CA33D4650E7DDE / ## d187 — 电弱统一规范破缺函数 / IMPLICIT-80CA33D4650E7DDE
+  - 来源：`analysis/corpus-relation/cluster_source_briefs/C000.md`
+  - 依赖：—；被引用：—
+- [## d188 — 强相互作用门控函数](../../../analysis/corpus-relation/cluster_source_briefs/C000.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-F892DBD963D4D0E8 / ## d188 — 强相互作用门控函数 / IMPLICIT-F892DBD963D4D0E8
+  - 来源：`analysis/corpus-relation/cluster_source_briefs/C000.md`
+  - 依赖：—；被引用：—
+- [## d189 — 大统一门槛函数](../../../analysis/corpus-relation/cluster_source_briefs/C000.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-9B57A51F8ADA431C / ## d189 — 大统一门槛函数 / IMPLICIT-9B57A51F8ADA431C
+  - 来源：`analysis/corpus-relation/cluster_source_briefs/C000.md`
+  - 依赖：—；被引用：—
+- [## d190 — 万有理论门槛函数](../../../analysis/corpus-relation/cluster_source_briefs/C000.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-4BF75E027D11A813 / ## d190 — 万有理论门槛函数 / IMPLICIT-4BF75E027D11A813
+  - 来源：`analysis/corpus-relation/cluster_source_briefs/C000.md`
+  - 依赖：—；被引用：—
+- [## d260 — 偏差敏感度阈值函数](../../../analysis/corpus-relation/cluster_source_briefs/C000.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-94BEA1FF86F1D6B7 / ## d260 — 偏差敏感度阈值函数 / IMPLICIT-94BEA1FF86F1D6B7
+  - 来源：`analysis/corpus-relation/cluster_source_briefs/C000.md`
+  - 依赖：—；被引用：—
+- [## hr-2bf3c3a1ac552110 — 历史函数资产深度裁决与注册表闭合 R1](../../../analysis/corpus-relation/cluster_source_briefs/C000.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-F970DB3660F2395D / ## hr-2bf3c3a1ac552110 — 历史函数资产深度裁决与注册表闭合 R1 / IMPLICIT-F970DB3660F2395D
+  - 来源：`analysis/corpus-relation/cluster_source_briefs/C000.md`
+  - 依赖：—；被引用：—
+- [## hr-7a5aa67ff65f918e — Core proof and countermodel report](../../../analysis/corpus-relation/cluster_source_briefs/C000.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-E25D92C642D6A3B2 / ## hr-7a5aa67ff65f918e — Core proof and countermodel report / IMPLICIT-E25D92C642D6A3B2
+  - 来源：`analysis/corpus-relation/cluster_source_briefs/C000.md`
+  - 依赖：—；被引用：—
+- [## nfc-00b4be17fb8dc706 — 哥德尔不完备性、霍奇猜想类比、不同能标、不同函数族，以及点火当前模型的失败，都不是大一统不可能的桥接定理。](../../../analysis/corpus-relation/cluster_source_briefs/C005.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-51495C393CA36D98 / ## nfc-00b4be17fb8dc706 — 哥德尔不完备性、霍奇猜想类比、不同能标、不同函数族，以及点火当前模型的失败，都不是大一统不可能的桥接定理。 / IMPLICIT-51495C393CA36D98 / IMPLICIT-E84097B9E41B8A35
+  - 来源：`analysis/corpus-relation/cluster_source_briefs/C005.md`
+  - 依赖：—；被引用：—
+- [## nfc-00b4be17fb8dc706 — 哥德尔不完备性、霍奇猜想类比、不同能标、不同函数族，以及点火当前模型的失败，都不是大一统不可能的桥接定理。](../../../analysis/corpus-relation/cluster_source_briefs/C001.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-E84097B9E41B8A35 / ## nfc-00b4be17fb8dc706 — 哥德尔不完备性、霍奇猜想类比、不同能标、不同函数族，以及点火当前模型的失败，都不是大一统不可能的桥接定理。 / IMPLICIT-E84097B9E41B8A35 / IMPLICIT-51495C393CA36D98
+  - 来源：`analysis/corpus-relation/cluster_source_briefs/C001.md`
+  - 依赖：—；被引用：—
+- [## nfc-390d533e6aa565c0 — 统一函数总表/ and 统一案例总表/ are immutable legacy sources and compatibility views. Never use their hand-written headers as curren](../../../analysis/corpus-relation/cluster_source_briefs/C001.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-F0C104CC21CA5C5D / ## nfc-390d533e6aa565c0 — 统一函数总表/ and 统一案例总表/ are immutable legacy sources and compatibility views. Never use their hand-written headers as curren / IMPLICIT-F0C104CC21CA5C5D
+  - 来源：`analysis/corpus-relation/cluster_source_briefs/C001.md`
+  - 依赖：—；被引用：—
+- [## nfc-3d9ffb2206406fcc — 为全部恢复的结果/文章来源生成统一卡片和 1 分钟、5 分钟、完整阅读，并为全部函数/断言 registry 建立可回链来源、状态、依赖、反向依赖和历史的分片搜索索引。](../../../analysis/corpus-relation/cluster_source_briefs/C001.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-65603E822888F1AC / ## nfc-3d9ffb2206406fcc — 为全部恢复的结果/文章来源生成统一卡片和 1 分钟、5 分钟、完整阅读，并为全部函数/断言 registry 建立可回链来源、状态、依赖、反向依赖和历史的分片搜索索引。 / IMPLICIT-65603E822888F1AC / IMPLICIT-C8814B697FC98DCF
+  - 来源：`analysis/corpus-relation/cluster_source_briefs/C001.md`
+  - 依赖：—；被引用：—
+- [## nfc-3d9ffb2206406fcc — 为全部恢复的结果/文章来源生成统一卡片和 1 分钟、5 分钟、完整阅读，并为全部函数/断言 registry 建立可回链来源、状态、依赖、反向依赖和历史的分片搜索索引。](../../../analysis/corpus-relation/cluster_source_briefs/C007.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-C8814B697FC98DCF / ## nfc-3d9ffb2206406fcc — 为全部恢复的结果/文章来源生成统一卡片和 1 分钟、5 分钟、完整阅读，并为全部函数/断言 registry 建立可回链来源、状态、依赖、反向依赖和历史的分片搜索索引。 / IMPLICIT-C8814B697FC98DCF / IMPLICIT-65603E822888F1AC
+  - 来源：`analysis/corpus-relation/cluster_source_briefs/C007.md`
+  - 依赖：—；被引用：—
+- [## nfc-61546854af53780b — 点火没有证明“大一统普遍不可能”。模型失败、哥德尔类比、跨域相似或旧编号不能充当普遍 no-go theorem。](../../../analysis/corpus-relation/cluster_source_briefs/C005.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-4EE390E4BA7AA26D / ## nfc-61546854af53780b — 点火没有证明“大一统普遍不可能”。模型失败、哥德尔类比、跨域相似或旧编号不能充当普遍 no-go theorem。 / IMPLICIT-4EE390E4BA7AA26D / IMPLICIT-BC08F76ACE7EA84D
+  - 来源：`analysis/corpus-relation/cluster_source_briefs/C005.md`
+  - 依赖：—；被引用：—
+- [## nfc-61546854af53780b — 点火没有证明“大一统普遍不可能”。模型失败、哥德尔类比、跨域相似或旧编号不能充当普遍 no-go theorem。](../../../analysis/corpus-relation/cluster_source_briefs/C001.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-BC08F76ACE7EA84D / ## nfc-61546854af53780b — 点火没有证明“大一统普遍不可能”。模型失败、哥德尔类比、跨域相似或旧编号不能充当普遍 no-go theorem。 / IMPLICIT-BC08F76ACE7EA84D / IMPLICIT-4EE390E4BA7AA26D
+  - 来源：`analysis/corpus-relation/cluster_source_briefs/C001.md`
+  - 依赖：—；被引用：—
+- [## nfc-7ba5ae6b5efe40a7 — 点火现有乘法门控模型不能完成数学和物理上充分的四种相互作用统一。四力统一问题本身保持开放。项目没有证明“大一统普遍不可能”，也没有给出物理统一点。](../../../analysis/corpus-relation/cluster_source_briefs/C005.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-11F63EC47268D283 / ## nfc-7ba5ae6b5efe40a7 — 点火现有乘法门控模型不能完成数学和物理上充分的四种相互作用统一。四力统一问题本身保持开放。项目没有证明“大一统普遍不可能”，也没有给出物理统一点。 / IMPLICIT-11F63EC47268D283
+  - 来源：`analysis/corpus-relation/cluster_source_briefs/C005.md`
   - 依赖：—；被引用：—
 - [## 一、Ψ₀ 元函数核心定义](../../../docs/phi_meta_law.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -2058,449 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-6169393ECEAA3942 / ## 关联函数族 / IMPLICIT-6169393ECEAA3942 / IMPLICIT-1D74E42E5436041A
   - 来源：`outputs/audit/two-tables-entry-format-audit-20260709.md`
-  - 依赖：—；被引用：—
-- [## 关联函数族](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0609-D599-%E5%88%B7%E5%88%86%E5%8D%9A%E5%BC%88.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-745FF0594148E2DE / ## 关联函数族 / IMPLICIT-745FF0594148E2DE / IMPLICIT-1D74E42E5436041A
-  - 来源：`统一函数总表/0609-D599-刷分博弈.md`
-  - 依赖：—；被引用：—
-- [## 关联函数族](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0607-D597-%E9%87%8F%E5%8C%96%E6%8C%87%E6%A0%87%E6%9B%BF%E4%BB%A3%E7%9C%9F%E5%AE%9E%E4%BB%B7%E5%80%BC.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-74CD2D78319F50EE / ## 关联函数族 / IMPLICIT-74CD2D78319F50EE / IMPLICIT-1D74E42E5436041A
-  - 来源：`统一函数总表/0607-D597-量化指标替代真实价值.md`
-  - 依赖：—；被引用：—
-- [## 关联函数族](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0605-D595-%E7%BB%A9%E6%95%88%E7%BB%91%E5%AE%9A%E8%A3%B9%E6%8C%9F.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-989676A51E81D49E / ## 关联函数族 / IMPLICIT-989676A51E81D49E / IMPLICIT-1D74E42E5436041A
-  - 来源：`统一函数总表/0605-D595-绩效绑定裹挟.md`
-  - 依赖：—；被引用：—
-- [## 内部子算子（Section 0 自举元函数结构件）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0001-%CE%A8%E2%82%80%E5%85%83%E5%87%BD%E6%95%B0%E5%AE%8C%E6%95%B4%E6%95%B0%E5%AD%A6%E5%AE%9A%E4%B9%89.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-EA20431FC0FA41BB / ## 内部子算子（Section 0 自举元函数结构件） / IMPLICIT-EA20431FC0FA41BB
-  - 来源：`统一函数总表/0001-Ψ₀元函数完整数学定义.md`
-  - 依赖：—；被引用：—
-- [## 函数与断言裁决结果](../../../README.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-59D7071BE794C5F5 / ## 函数与断言裁决结果 / IMPLICIT-59D7071BE794C5F5
-  - 来源：`README.md`
-  - 依赖：—；被引用：—
-- [## 函数候选复核](../../../outputs/audit/teacher-competition-backfill-review-20260708.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-7CB1093137EA1B81 / ## 函数候选复核 / IMPLICIT-7CB1093137EA1B81
-  - 来源：`outputs/audit/teacher-competition-backfill-review-20260708.md`
-  - 依赖：—；被引用：—
-- [## 函数内容](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0609-D599-%E5%88%B7%E5%88%86%E5%8D%9A%E5%BC%88.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-232CEEC2D88DC2E9 / ## 函数内容 / IMPLICIT-232CEEC2D88DC2E9 / IMPLICIT-2543B81D2FE967FE
-  - 来源：`统一函数总表/0609-D599-刷分博弈.md`
-  - 依赖：—；被引用：—
-- [## 函数内容](../../../outputs/audit/two-tables-entry-format-audit-20260709.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-2543B81D2FE967FE / ## 函数内容 / IMPLICIT-2543B81D2FE967FE / IMPLICIT-232CEEC2D88DC2E9
-  - 来源：`outputs/audit/two-tables-entry-format-audit-20260709.md`
-  - 依赖：—；被引用：—
-- [## 函数内容](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0605-D595-%E7%BB%A9%E6%95%88%E7%BB%91%E5%AE%9A%E8%A3%B9%E6%8C%9F.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-39259246A5B80510 / ## 函数内容 / IMPLICIT-39259246A5B80510 / IMPLICIT-232CEEC2D88DC2E9
-  - 来源：`统一函数总表/0605-D595-绩效绑定裹挟.md`
-  - 依赖：—；被引用：—
-- [## 函数内容](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0608-D598-%E7%B3%BB%E7%BB%9F%E6%80%A7%E9%92%9D%E5%8C%96.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-446590F4E8AEB4E3 / ## 函数内容 / IMPLICIT-446590F4E8AEB4E3 / IMPLICIT-232CEEC2D88DC2E9
-  - 来源：`统一函数总表/0608-D598-系统性钝化.md`
-  - 依赖：—；被引用：—
-- [## 函数内容](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0607-D597-%E9%87%8F%E5%8C%96%E6%8C%87%E6%A0%87%E6%9B%BF%E4%BB%A3%E7%9C%9F%E5%AE%9E%E4%BB%B7%E5%80%BC.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-D62EDD84479E2746 / ## 函数内容 / IMPLICIT-D62EDD84479E2746 / IMPLICIT-232CEEC2D88DC2E9
-  - 来源：`统一函数总表/0607-D597-量化指标替代真实价值.md`
-  - 依赖：—；被引用：—
-- [## 函数内容](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0606-D596-%E9%81%BF%E9%A3%8E%E6%B8%AF.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-F1F71F2CDC82CAD8 / ## 函数内容 / IMPLICIT-F1F71F2CDC82CAD8 / IMPLICIT-232CEEC2D88DC2E9
-  - 来源：`统一函数总表/0606-D596-避风港.md`
-  - 依赖：—；被引用：—
-- [## 函数名称](../../../docs/templates/function_dependency_review.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-0610014EE6A50C64 / ## 函数名称 / IMPLICIT-0610014EE6A50C64
-  - 来源：`docs/templates/function_dependency_review.md`
-  - 依赖：—；被引用：—
-- [## 函数条目写作标准](../../../docs/two-tables-entry-writing-standard-20260709.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-7B09BE9D4C976268 / ## 函数条目写作标准 / IMPLICIT-7B09BE9D4C976268
-  - 来源：`docs/two-tables-entry-writing-standard-20260709.md`
-  - 依赖：—；被引用：—
-- [## 函数编号](../../../docs/templates/function_dependency_review.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-855037AA07AE12E2 / ## 函数编号 / IMPLICIT-855037AA07AE12E2
-  - 来源：`docs/templates/function_dependency_review.md`
-  - 依赖：—；被引用：—
-- [## 函数表差异](../../../outputs/audit/codespace-rescue-two-tables-diff-audit-20260708.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-5C00B98FD6B9851D / ## 函数表差异 / IMPLICIT-5C00B98FD6B9851D
-  - 来源：`outputs/audit/codespace-rescue-two-tables-diff-audit-20260708.md`
-  - 依赖：—；被引用：—
-- [## 函数表收口状态](../../../outputs/audit/teacher-competition-batch-closeout-audit-20260708.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-6474BA6F19EB297C / ## 函数表收口状态 / IMPLICIT-6474BA6F19EB297C
-  - 来源：`outputs/audit/teacher-competition-batch-closeout-audit-20260708.md`
-  - 依赖：—；被引用：—
-- [## 函数资产](../../../RESULTS/ADJUDICATION-SUMMARY.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-59C107947762C89D / ## 函数资产 / IMPLICIT-59C107947762C89D
-  - 来源：`RESULTS/ADJUDICATION-SUMMARY.md`
-  - 依赖：—；被引用：—
-- [## 可作为现有函数/案例注释的内容](../../../outputs/collisions/20260708-teacher-competition/notes.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-17814EBEAEAC6F25 / ## 可作为现有函数/案例注释的内容 / IMPLICIT-17814EBEAEAC6F25
-  - 来源：`outputs/collisions/20260708-teacher-competition/notes.md`
-  - 依赖：—；被引用：—
-- [## 四、重复函数识别](../../../outputs/getbrain/v0.2-function-dependency-graph-20260706.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-681CF9CD4643533F / ## 四、重复函数识别 / IMPLICIT-681CF9CD4643533F
-  - 来源：`outputs/getbrain/v0.2-function-dependency-graph-20260706.md`
-  - 依赖：—；被引用：—
-- [## 如何提交案例 / 函数](../../../CONTRIBUTING.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-C86980BF506FAC70 / ## 如何提交案例 / 函数 / IMPLICIT-C86980BF506FAC70
-  - 来源：`CONTRIBUTING.md`
-  - 依赖：—；被引用：—
-- [## 对应函数](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0804-C-0809-%E8%A1%A8%E6%BC%94%E5%8C%96%E5%81%87%E8%AF%BE%E4%B8%8E%E9%87%8F%E5%8C%96%E6%8C%87%E6%A0%87%E6%B6%88%E8%A7%A3%E6%B8%A9%E5%BA%A6.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-00C4D2DCDFD1AB55 / ## 对应函数 / IMPLICIT-00C4D2DCDFD1AB55 / IMPLICIT-14F423ED22829447
-  - 来源：`统一案例总表/0804-C-0809-表演化假课与量化指标消解温度.md`
-  - 依赖：—；被引用：—
-- [## 对应函数](../../../outputs/audit/two-tables-entry-format-audit-20260709.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-14F423ED22829447 / ## 对应函数 / IMPLICIT-14F423ED22829447 / IMPLICIT-00C4D2DCDFD1AB55
-  - 来源：`outputs/audit/two-tables-entry-format-audit-20260709.md`
-  - 依赖：—；被引用：—
-- [## 对应函数](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0806-C-0811-%E8%A7%92%E8%89%B2%E8%A6%86%E7%9B%96%E4%B8%BB%E4%BD%93%E5%88%B0%E8%BA%AB%E4%BB%BD%E6%8F%90%E9%97%AE.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-1A9F5FBCF2DCBE4D / ## 对应函数 / IMPLICIT-1A9F5FBCF2DCBE4D / IMPLICIT-00C4D2DCDFD1AB55
-  - 来源：`统一案例总表/0806-C-0811-角色覆盖主体到身份提问.md`
-  - 依赖：—；被引用：—
-- [## 对应函数](../../../templates/two-tables/unified-case-entry-template.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-1F7D68FA35F3677D / ## 对应函数 / IMPLICIT-1F7D68FA35F3677D / IMPLICIT-00C4D2DCDFD1AB55
-  - 来源：`templates/two-tables/unified-case-entry-template.md`
-  - 依赖：—；被引用：—
-- [## 对应函数](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0802-C-0807-%E7%B3%BB%E7%BB%9F%E6%80%A7%E9%92%9D%E5%8C%96%E4%B8%8E%E6%95%99%E5%AE%A4%E9%81%BF%E9%A3%8E%E6%B8%AF.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-38145D6AC93428FF / ## 对应函数 / IMPLICIT-38145D6AC93428FF / IMPLICIT-00C4D2DCDFD1AB55
-  - 来源：`统一案例总表/0802-C-0807-系统性钝化与教室避风港.md`
-  - 依赖：—；被引用：—
-- [## 对应函数](../../../docs/templates/failure_typology_card.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-9812BF79BEB86A08 / ## 对应函数 / IMPLICIT-9812BF79BEB86A08 / IMPLICIT-00C4D2DCDFD1AB55
-  - 来源：`docs/templates/failure_typology_card.md`
-  - 依赖：—；被引用：—
-- [## 对应函数](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0803-C-0808-%E8%81%8C%E7%A7%B0%E7%A1%AC%E9%97%A8%E6%A7%9B%E8%A3%B9%E6%8C%9F%E9%9D%92%E5%B9%B4%E6%95%99%E5%B8%88.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-CAEFD554B69AFBEF / ## 对应函数 / IMPLICIT-CAEFD554B69AFBEF / IMPLICIT-00C4D2DCDFD1AB55
-  - 来源：`统一案例总表/0803-C-0808-职称硬门槛裹挟青年教师.md`
-  - 依赖：—；被引用：—
-- [## 对应函数](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0805-C-0810-%E4%BB%B7%E5%80%BC%E5%88%9B%E9%80%A0%E6%9D%83%E5%86%B3%E7%AD%96%E6%9D%83%E9%94%99%E9%85%8D%E4%B8%8E%E5%9B%9E%E6%94%B6.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-F7C1C659D8D15012 / ## 对应函数 / IMPLICIT-F7C1C659D8D15012 / IMPLICIT-00C4D2DCDFD1AB55
-  - 来源：`统一案例总表/0805-C-0810-价值创造权决策权错配与回收.md`
-  - 依赖：—；被引用：—
-- [## 抽取内容（来自救援函数表 Section 0 内部元算子表）](../../../outputs/audit/mf-0001-0005-rescue-review-20260708.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-4D4E19A1EA1D06AF / ## 抽取内容（来自救援函数表 Section 0 内部元算子表） / IMPLICIT-4D4E19A1EA1D06AF
-  - 来源：`outputs/audit/mf-0001-0005-rescue-review-20260708.md`
-  - 依赖：—；被引用：—
-- [## 新候选函数（跨域复现，待复核）](../../../outputs/audit/cross-domain-smoke-test-audit-20260708.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-57F1BC2B38ABFDF5 / ## 新候选函数（跨域复现，待复核） / IMPLICIT-57F1BC2B38ABFDF5
-  - 来源：`outputs/audit/cross-domain-smoke-test-audit-20260708.md`
-  - 依赖：—；被引用：—
-- [## 新增函数](../../../outputs/audit/teacher-competition-small-batch-backfill-audit-20260708.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-0045EBBE4CDE85DA / ## 新增函数 / IMPLICIT-0045EBBE4CDE85DA / IMPLICIT-77E5DAB49D44C7CF
-  - 来源：`outputs/audit/teacher-competition-small-batch-backfill-audit-20260708.md`
-  - 依赖：—；被引用：—
-- [## 新增函数](../../../outputs/collisions/20260708-smoke-test/collision-report.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-77E5DAB49D44C7CF / ## 新增函数 / IMPLICIT-77E5DAB49D44C7CF / IMPLICIT-0045EBBE4CDE85DA
-  - 来源：`outputs/collisions/20260708-smoke-test/collision-report.md`
-  - 依赖：—；被引用：—
-- [## 新增函数](../../../templates/collision/output-template.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-DDDF266712506B61 / ## 新增函数 / IMPLICIT-DDDF266712506B61 / IMPLICIT-0045EBBE4CDE85DA
-  - 来源：`templates/collision/output-template.md`
-  - 依赖：—；被引用：—
-- [## 新增函数候选](../../../outputs/collisions/20260708-smoke-test/backfill-plan.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-26BC394BB1158A1D / ## 新增函数候选 / IMPLICIT-26BC394BB1158A1D / IMPLICIT-9A1BAEBCCE398636
-  - 来源：`outputs/collisions/20260708-smoke-test/backfill-plan.md`
-  - 依赖：—；被引用：—
-- [## 新增函数候选](../../../templates/collision/backfill-plan-template.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-9A1BAEBCCE398636 / ## 新增函数候选 / IMPLICIT-9A1BAEBCCE398636 / IMPLICIT-26BC394BB1158A1D
-  - 来源：`templates/collision/backfill-plan-template.md`
-  - 依赖：—；被引用：—
-- [## 旧函数结构总结](../../../outputs/audit/two-tables-entry-format-audit-20260709.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-21F4E0218A4C2A33 / ## 旧函数结构总结 / IMPLICIT-21F4E0218A4C2A33
-  - 来源：`outputs/audit/two-tables-entry-format-audit-20260709.md`
-  - 依赖：—；被引用：—
-- [## 本次新增函数](../../../outputs/getbrain/v0.2-function-dependency-graph-20260706.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-40E66ED0619B62B9 / ## 本次新增函数 / IMPLICIT-40E66ED0619B62B9 / IMPLICIT-64E19C73A6129C00
-  - 来源：`outputs/getbrain/v0.2-function-dependency-graph-20260706.md`
-  - 依赖：—；被引用：—
-- [## 本次新增函数](../../../outputs/getbrain/failure-typology-draft-20260706.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-64E19C73A6129C00 / ## 本次新增函数 / IMPLICIT-64E19C73A6129C00 / IMPLICIT-40E66ED0619B62B9
-  - 来源：`outputs/getbrain/failure-typology-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [## 本次新增函数](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-98B1A6F9241DAB83 / ## 本次新增函数 / IMPLICIT-98B1A6F9241DAB83 / IMPLICIT-40E66ED0619B62B9
-  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [## 本次新增函数](../../../outputs/getbrain/classic-problems-benchmark-supplement-20260707.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-A6CF993D3EE0977F / ## 本次新增函数 / IMPLICIT-A6CF993D3EE0977F / IMPLICIT-40E66ED0619B62B9
-  - 来源：`outputs/getbrain/classic-problems-benchmark-supplement-20260707.md`
-  - 依赖：—；被引用：—
-- [## 本次新增函数](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-F28C690C56B906F3 / ## 本次新增函数 / IMPLICIT-F28C690C56B906F3 / IMPLICIT-40E66ED0619B62B9
-  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
-  - 依赖：—；被引用：—
-- [## 本次新增函数](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-FFFC52EFCDC1C186 / ## 本次新增函数 / IMPLICIT-FFFC52EFCDC1C186 / IMPLICIT-40E66ED0619B62B9
-  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [## 查重结果（全函数表 618 条）](../../../outputs/audit/cross-domain-candidate-function-review-20260708.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-ED819435C53B712B / ## 查重结果（全函数表 618 条） / IMPLICIT-ED819435C53B712B
-  - 来源：`outputs/audit/cross-domain-candidate-function-review-20260708.md`
-  - 依赖：—；被引用：—
-- [## 相关函数](../../../outputs/collisions/20260708-smoke-test/collision-report.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-2D6BA0459AC1C0DE / ## 相关函数 / IMPLICIT-2D6BA0459AC1C0DE / IMPLICIT-3C5CC2DFFAA88B55
-  - 来源：`outputs/collisions/20260708-smoke-test/collision-report.md`
-  - 依赖：—；被引用：—
-- [## 相关函数](../../../templates/collision/output-template.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-3C5CC2DFFAA88B55 / ## 相关函数 / IMPLICIT-3C5CC2DFFAA88B55 / IMPLICIT-2D6BA0459AC1C0DE
-  - 来源：`templates/collision/output-template.md`
-  - 依赖：—；被引用：—
-- [## 相关函数](../../../outputs/collisions/20260708-teacher-competition/collision-report.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-8BA3E44F1B5131F2 / ## 相关函数 / IMPLICIT-8BA3E44F1B5131F2 / IMPLICIT-2D6BA0459AC1C0DE
-  - 来源：`outputs/collisions/20260708-teacher-competition/collision-report.md`
-  - 依赖：—；被引用：—
-- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0780-C-0785-%E5%AE%A0%E7%89%A9%E9%A1%B9%E7%9B%AE%EF%BC%9A%E8%AE%B0%E5%BD%95%E5%AE%B6%E6%97%8F%E5%8F%B2%E3%80%81%E9%A3%9F%E7%89%A9%E3%80%81%E5%91%B3%E9%81%93.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-003191F281FA43ED / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-003191F281FA43ED / IMPLICIT-0277D22D2615B4E6
-  - 来源：`统一案例总表/0780-C-0785-宠物项目：记录家族史、食物、味道.md`
-  - 依赖：—；被引用：—
-- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0742-C-0747-%E5%AE%89%E7%84%B6%E5%85%AC%E5%8F%B8.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-0277D22D2615B4E6 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-0277D22D2615B4E6 / IMPLICIT-003191F281FA43ED
-  - 来源：`统一案例总表/0742-C-0747-安然公司.md`
-  - 依赖：—；被引用：—
-- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0787-C-0792-%E9%9D%92%E8%92%BF%E7%B4%A0%E4%BB%8E%E3%80%8A%E8%82%98%E5%90%8E%E5%A4%87%E6%80%A5%E6%96%B9%E3%80%8B%E6%8F%90%E7%82%BC.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-02880B1B5593DA50 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-02880B1B5593DA50 / IMPLICIT-003191F281FA43ED
-  - 来源：`统一案例总表/0787-C-0792-青蒿素从《肘后备急方》提炼.md`
-  - 依赖：—；被引用：—
-- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0795-C-0800-%E6%B0%94%E5%80%99%E7%B3%BB%E7%BB%9F%E9%98%88%E5%80%BC%E4%B8%8E%E5%9C%88%E5%B1%82%E8%80%A6%E5%90%88.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-02E0525482C9FBFE / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-02E0525482C9FBFE / IMPLICIT-003191F281FA43ED
-  - 来源：`统一案例总表/0795-C-0800-气候系统阈值与圈层耦合.md`
-  - 依赖：—；被引用：—
-- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0769-C-0774-%E5%86%99%E5%9C%B0%E6%96%B9%E5%81%8F%E6%96%B9%E3%80%81%E9%A3%9F%E7%89%A9%E3%80%81%E6%89%8B%E8%89%BA.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-0355C46530A74CAB / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-0355C46530A74CAB / IMPLICIT-003191F281FA43ED
-  - 来源：`统一案例总表/0769-C-0774-写地方偏方、食物、手艺.md`
-  - 依赖：—；被引用：—
-- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0777-C-0782-%E9%A9%AC%E4%BC%AF%E5%BA%B8%E5%BB%BA%E8%AE%AE%E8%B9%B2%E4%B8%8B%E6%9D%A5%E7%9C%8B%E6%9C%80%E4%B8%8B%E9%9D%A2%E4%B8%80%E6%8E%92%E4%B9%A6.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-05D8FB3DB77EEBEA / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-05D8FB3DB77EEBEA / IMPLICIT-003191F281FA43ED
-  - 来源：`统一案例总表/0777-C-0782-马伯庸建议蹲下来看最下面一排书.md`
-  - 依赖：—；被引用：—
-- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0690-C-0695-%E9%A5%AE%E9%A3%9F%E4%BF%9D%E5%AD%98%E4%B8%8E%E6%91%84%E5%85%A5%E5%81%8F%E5%B7%AE.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-0A690A20EA51B5A1 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-0A690A20EA51B5A1 / IMPLICIT-003191F281FA43ED
-  - 来源：`统一案例总表/0690-C-0695-饮食保存与摄入偏差.md`
-  - 依赖：—；被引用：—
-- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0723-C-0728-%E5%86%99%E4%BD%9C%E4%B8%8E%E7%9F%A5%E8%AF%86%E6%B2%89%E6%B7%80%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE%E8%A7%84%E5%88%92.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-0DDD970F10D20726 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-0DDD970F10D20726 / IMPLICIT-003191F281FA43ED
-  - 来源：`统一案例总表/0723-C-0728-写作与知识沉淀开源项目规划.md`
-  - 依赖：—；被引用：—
-- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0673-C-0678-%E5%AD%AA%E7%94%9F%E7%B4%A0%E6%95%B0%E9%97%AE%E9%A2%98%E8%BD%AC%E6%8D%A2.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-11A1B8507317C374 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-11A1B8507317C374 / IMPLICIT-003191F281FA43ED
-  - 来源：`统一案例总表/0673-C-0678-孪生素数问题转换.md`
-  - 依赖：—；被引用：—
-- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0772-C-0777-%E5%8F%8C%E5%91%A8%E8%AE%BF%E8%B0%88%E6%89%93%E7%A0%B4%E4%BF%A1%E6%81%AF%E8%8C%A7%E6%88%BF.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-11E5C60BA7FC43A7 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-11E5C60BA7FC43A7 / IMPLICIT-003191F281FA43ED
-  - 来源：`统一案例总表/0772-C-0777-双周访谈打破信息茧房.md`
-  - 依赖：—；被引用：—
-- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0771-C-0776-%E5%8D%9A%E5%A3%AB%E6%9C%9F%E9%97%B4%E6%8D%A2%E5%8D%81%E4%B8%AA%E9%80%89%E9%A2%98.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-139B919033141E78 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-139B919033141E78 / IMPLICIT-003191F281FA43ED
-  - 来源：`统一案例总表/0771-C-0776-博士期间换十个选题.md`
-  - 依赖：—；被引用：—
-- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0791-C-0796-%E4%BA%B2%E5%AD%90%E5%85%B1%E8%AF%BB%E4%B8%80%E6%9C%AC%E4%B9%A6.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-154E551763D4B0D1 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-154E551763D4B0D1 / IMPLICIT-003191F281FA43ED
-  - 来源：`统一案例总表/0791-C-0796-亲子共读一本书.md`
-  - 依赖：—；被引用：—
-- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0774-C-0779-%E9%80%9B%E4%B9%A6%E5%BA%97%E5%8F%91%E7%8E%B0%E6%83%8A%E5%96%9C.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-170A69C13E4B1FF2 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-170A69C13E4B1FF2 / IMPLICIT-003191F281FA43ED
-  - 来源：`统一案例总表/0774-C-0779-逛书店发现惊喜.md`
-  - 依赖：—；被引用：—
-- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0675-C-0680-Kakeya%E7%8C%9C%E6%83%B3.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-17B50A9E1993DE96 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-17B50A9E1993DE96 / IMPLICIT-003191F281FA43ED
-  - 来源：`统一案例总表/0675-C-0680-Kakeya猜想.md`
-  - 依赖：—；被引用：—
-- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0716-C-0721-%E7%AC%94%E8%AE%B0%E5%BF%85%E9%A1%BB%E5%B8%A6%E6%A0%87%E9%A2%98%E8%A7%84%E5%88%99.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-18FB3299803A8AA0 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-18FB3299803A8AA0 / IMPLICIT-003191F281FA43ED
-  - 来源：`统一案例总表/0716-C-0721-笔记必须带标题规则.md`
-  - 依赖：—；被引用：—
-- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0766-C-0771-%E5%87%86%E5%A4%87%E3%80%8A%E9%95%BF%E8%B0%88%E3%80%8B%E8%8A%B1%E4%B8%80%E4%B8%AA%E6%9C%88.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-19C6862B1C63FC85 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-19C6862B1C63FC85 / IMPLICIT-003191F281FA43ED
-  - 来源：`统一案例总表/0766-C-0771-准备《长谈》花一个月.md`
-  - 依赖：—；被引用：—
-- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0731-C-0736-%E7%BE%8E%E5%9B%BD%E7%A6%81%E9%85%92%E4%BB%A4.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-1BA447C1C4908B43 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-1BA447C1C4908B43 / IMPLICIT-003191F281FA43ED
-  - 来源：`统一案例总表/0731-C-0736-美国禁酒令.md`
-  - 依赖：—；被引用：—
-- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0762-C-0767-%E9%80%9B%E4%B9%A6%E5%BA%97%E5%8F%91%E7%8E%B0%E6%83%8A%E5%96%9C.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-1DF14CD51FF5495C / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-1DF14CD51FF5495C / IMPLICIT-003191F281FA43ED
-  - 来源：`统一案例总表/0762-C-0767-逛书店发现惊喜.md`
-  - 依赖：—；被引用：—
-- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0767-C-0772-%E4%BA%B2%E5%AD%90%E5%85%B1%E8%AF%BB%E4%B8%80%E6%9C%AC%E4%B9%A6.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-1F35A79F8B6C7027 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-1F35A79F8B6C7027 / IMPLICIT-003191F281FA43ED
-  - 来源：`统一案例总表/0767-C-0772-亲子共读一本书.md`
-  - 依赖：—；被引用：—
-- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0714-C-0719-%E6%8B%92%E7%BB%9D%E5%B0%8F%E6%A0%87%E9%A2%98%E6%A0%87%E6%B3%A8%E5%B1%82%E7%BA%A7.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-223BDAB10C4BD3DE / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-223BDAB10C4BD3DE / IMPLICIT-003191F281FA43ED
-  - 来源：`统一案例总表/0714-C-0719-拒绝小标题标注层级.md`
-  - 依赖：—；被引用：—
-- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0736-C-0741-%E8%84%B1%E4%B8%8D%E8%8A%B1%E8%B4%A2%E5%8A%A1%E5%86%B3%E7%AD%96.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-256C48A784CE713C / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-256C48A784CE713C / IMPLICIT-003191F281FA43ED
-  - 来源：`统一案例总表/0736-C-0741-脱不花财务决策.md`
-  - 依赖：—；被引用：—
-- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0793-C-0798-%E7%89%A9%E7%90%86%E5%A4%A7%E7%BB%9F%E4%B8%80%E4%B8%8E%E8%83%BD%E6%A0%87%E9%97%A8%E6%8E%A7.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-2885D53927F53B42 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-2885D53927F53B42 / IMPLICIT-003191F281FA43ED
-  - 来源：`统一案例总表/0793-C-0798-物理大统一与能标门控.md`
-  - 依赖：—；被引用：—
-- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0801-C-0806-AI%20%E4%BD%9C%E8%80%85%E6%80%A7%E4%B8%8E%E7%94%9F%E6%88%90%E8%89%BA%E6%9C%AF.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-2A133B79D1BD2263 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-2A133B79D1BD2263 / IMPLICIT-003191F281FA43ED
-  - 来源：`统一案例总表/0801-C-0806-AI 作者性与生成艺术.md`
-  - 依赖：—；被引用：—
-- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0692-C-0697-%E8%A5%BF%E5%AE%89%E5%8A%A0%E6%B2%B9%E7%AB%99%E4%BE%BF%E5%88%A9%E5%BA%97.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-2A524AB9F3D7F758 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-2A524AB9F3D7F758 / IMPLICIT-003191F281FA43ED
-  - 来源：`统一案例总表/0692-C-0697-西安加油站便利店.md`
-  - 依赖：—；被引用：—
-- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0724-C-0729-%E4%B8%A4%E5%BC%A0%E8%A1%A8%E7%9F%A5%E8%AF%86%E5%BA%93DOCX%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-2D777A00901C5F4F / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-2D777A00901C5F4F / IMPLICIT-003191F281FA43ED
-  - 来源：`统一案例总表/0724-C-0729-两张表知识库DOCX文件管理.md`
-  - 依赖：—；被引用：—
-- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0729-C-0734-%E4%BD%95%E5%88%9A%E4%B8%80%E9%92%88%E8%A7%81%E8%A1%80.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-2D885D680ACB26BF / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-2D885D680ACB26BF / IMPLICIT-003191F281FA43ED
-  - 来源：`统一案例总表/0729-C-0734-何刚一针见血.md`
-  - 依赖：—；被引用：—
-- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0757-C-0762-%E5%86%99%E5%9C%B0%E6%96%B9%E5%81%8F%E6%96%B9%E3%80%81%E9%A3%9F%E7%89%A9%E3%80%81%E6%89%8B%E8%89%BA.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-2EE9FF027C147874 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-2EE9FF027C147874 / IMPLICIT-003191F281FA43ED
-  - 来源：`统一案例总表/0757-C-0762-写地方偏方、食物、手艺.md`
-  - 依赖：—；被引用：—
-- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0713-C-0718-%E6%A1%88%E4%BE%8B%E8%A1%A8%E8%BF%B0%E6%9E%81%E7%AE%80%E5%8E%9F%E5%88%99.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-2F61A2FA7BC59857 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-2F61A2FA7BC59857 / IMPLICIT-003191F281FA43ED
-  - 来源：`统一案例总表/0713-C-0718-案例表述极简原则.md`
-  - 依赖：—；被引用：—
-- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0686-C-0691-%E5%BC%A0%E7%9B%8A%E5%94%90%E7%AA%81%E7%A0%B4%E5%8D%8A%E6%95%B0%E9%9A%9C%E7%A2%8D.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-3081FBFA239B54FF / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-3081FBFA239B54FF / IMPLICIT-003191F281FA43ED
-  - 来源：`统一案例总表/0686-C-0691-张益唐突破半数障碍.md`
-  - 依赖：—；被引用：—
-- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0792-C-0797-%E5%93%A5%E5%BE%B7%E5%B0%94%E4%B8%8D%E5%AE%8C%E5%A4%87%E6%80%A7%E4%B8%8E%E5%BD%A2%E5%BC%8F%E7%B3%BB%E7%BB%9F%E8%BE%B9%E7%95%8C.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-31B2312C3F8DD908 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-31B2312C3F8DD908 / IMPLICIT-003191F281FA43ED
-  - 来源：`统一案例总表/0792-C-0797-哥德尔不完备性与形式系统边界.md`
-  - 依赖：—；被引用：—
-- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0778-C-0783-%E5%87%86%E5%A4%87%E3%80%8A%E9%95%BF%E8%B0%88%E3%80%8B%E8%8A%B1%E4%B8%80%E4%B8%AA%E6%9C%88.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-34878497301B164B / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-34878497301B164B / IMPLICIT-003191F281FA43ED
-  - 来源：`统一案例总表/0778-C-0783-准备《长谈》花一个月.md`
-  - 依赖：—；被引用：—
-- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0752-C-0757-%E3%80%8A%E5%86%99%E4%BD%9C%E6%98%AF%E9%97%A8%E6%89%8B%E8%89%BA%E3%80%8B%E6%AE%B5%E8%90%BD%E6%8E%A7%E5%88%B6%E2%89%A410%E8%A1%8C.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-35814244B96C95B2 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-35814244B96C95B2 / IMPLICIT-003191F281FA43ED
-  - 来源：`统一案例总表/0752-C-0757-《写作是门手艺》段落控制≤10行.md`
-  - 依赖：—；被引用：—
-- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0727-C-0732-%E5%93%A5%E5%BE%B7%E5%B0%94%E4%B8%8D%E5%AE%8C%E5%A4%87%E6%80%A7%E5%8E%86%E5%8F%B2%E7%B3%BB%E7%BB%9F%E5%AE%9E%E4%BE%8B%E5%8C%96%E6%A1%88%E4%BE%8B.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-36335C1861170095 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-36335C1861170095 / IMPLICIT-003191F281FA43ED
-  - 来源：`统一案例总表/0727-C-0732-哥德尔不完备性历史系统实例化案例.md`
-  - 依赖：—；被引用：—
-- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0726-C-0731-%E6%AF%95%E5%8A%A0%E7%B4%A2%E7%AB%8B%E4%BD%93%E4%B8%BB%E4%B9%89%C3%97%E4%B8%AD%E5%9B%BD%E6%89%8B%E5%8D%B7%E6%B5%81%E5%8A%A8%E6%80%A7%E8%B7%A8%E5%9F%9F%E5%90%8C%E6%9E%84%E6%A1%88%E4%BE%8B.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-3735AA0FA25CDF6C / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-3735AA0FA25CDF6C / IMPLICIT-003191F281FA43ED
-  - 来源：`统一案例总表/0726-C-0731-毕加索立体主义×中国手卷流动性跨域同构案例.md`
-  - 依赖：—；被引用：—
-- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0681-C-0686-Quillen-Lichtenbaum%E7%8C%9C%E6%83%B3.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-37B3690A0A2DD03E / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-37B3690A0A2DD03E / IMPLICIT-003191F281FA43ED
-  - 来源：`统一案例总表/0681-C-0686-Quillen-Lichtenbaum猜想.md`
-  - 依赖：—；被引用：—
-- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0770-C-0775-%E5%92%8C%E5%AD%A9%E5%AD%90%E8%81%8A%E7%83%AD%E7%82%B9%E4%BA%8B%E4%BB%B6.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-3AFE97C4000EB396 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-3AFE97C4000EB396 / IMPLICIT-003191F281FA43ED
-  - 来源：`统一案例总表/0770-C-0775-和孩子聊热点事件.md`
-  - 依赖：—；被引用：—
-- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0738-C-0743-%E5%AE%89%E7%84%B6%E5%85%AC%E5%8F%B8.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-41259094302EC1EA / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-41259094302EC1EA / IMPLICIT-003191F281FA43ED
-  - 来源：`统一案例总表/0738-C-0743-安然公司.md`
-  - 依赖：—；被引用：—
-- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0737-C-0742-%E4%BD%95%E5%88%9A%E8%B4%A2%E5%8A%A1%E8%A7%82%E7%82%B9.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-4182F3950339B285 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-4182F3950339B285 / IMPLICIT-003191F281FA43ED
-  - 来源：`统一案例总表/0737-C-0742-何刚财务观点.md`
-  - 依赖：—；被引用：—
-- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0721-C-0726-%E9%AA%8C%E8%AF%81%E6%8A%A5%E5%91%8A%E6%95%85%E4%BA%8B%E7%89%88%E5%86%99%E4%BD%9C%E6%8C%87%E5%8D%97.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-427FA5258FC1B4EF / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-427FA5258FC1B4EF / IMPLICIT-003191F281FA43ED
-  - 来源：`统一案例总表/0721-C-0726-验证报告故事版写作指南.md`
-  - 依赖：—；被引用：—
-- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0800-C-0805-%E5%B9%B3%E5%8F%B0%E7%A4%BE%E4%BC%9A%E6%9E%81%E5%8C%96.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-42C01C16E60D8A62 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-42C01C16E60D8A62 / IMPLICIT-003191F281FA43ED
-  - 来源：`统一案例总表/0800-C-0805-平台社会极化.md`
-  - 依赖：—；被引用：—
-- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0784-C-0789-%E5%8F%8C%E5%91%A8%E8%AE%BF%E8%B0%88%E6%89%93%E7%A0%B4%E4%BF%A1%E6%81%AF%E8%8C%A7%E6%88%BF.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-459B9A6FD4471FAA / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-459B9A6FD4471FAA / IMPLICIT-003191F281FA43ED
-  - 来源：`统一案例总表/0784-C-0789-双周访谈打破信息茧房.md`
-  - 依赖：—；被引用：—
-- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0786-C-0791-%E9%80%9B%E4%B9%A6%E5%BA%97%E5%8F%91%E7%8E%B0%E6%83%8A%E5%96%9C.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-4AC353D81778DF42 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-4AC353D81778DF42 / IMPLICIT-003191F281FA43ED
-  - 来源：`统一案例总表/0786-C-0791-逛书店发现惊喜.md`
   - 依赖：—；被引用：—
