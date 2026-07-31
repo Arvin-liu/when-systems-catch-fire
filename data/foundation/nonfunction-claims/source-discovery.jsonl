@@ -754,8 +754,6 @@
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"SCANNED_NO_CANDIDATE","exclusion_reason":null,"path":"data/foundation/schemas/source.schema.json"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"SCANNED_NO_CANDIDATE","exclusion_reason":null,"path":"data/foundation/schemas/validation-record.schema.json"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"SCANNED_NO_CANDIDATE","exclusion_reason":null,"path":"data/foundation/sources/sources.jsonl"}
-{"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"SCANNED_NO_CANDIDATE","exclusion_reason":null,"path":"data/foundation/task-107-baseline-discrepancy.json"}
-{"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"SCANNED_NO_CANDIDATE","exclusion_reason":null,"path":"data/foundation/task-107-path-classification-register.jsonl"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"SCANNED_NO_CANDIDATE","exclusion_reason":null,"path":"data/foundation/toolchain-status.json"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"SCANNED_NO_CANDIDATE","exclusion_reason":null,"path":"data/foundation/unresolved-obligations.json"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"SCANNED_NO_CANDIDATE","exclusion_reason":null,"path":"data/foundation/unresolved-obligations.jsonl"}
@@ -977,6 +975,13 @@
 {"candidate_fragments":2,"canonical_claim_ids":["NFC-48e4dacd9169cf38","NFC-c5173c6d5a16f989"],"coverage_status":"SCANNED_REGISTERED","exclusion_reason":null,"path":"docs/foundation/registry-contract.md"}
 {"candidate_fragments":2,"canonical_claim_ids":["NFC-215a166b594ba984","NFC-7ae9b71197e9fe51"],"coverage_status":"SCANNED_REGISTERED","exclusion_reason":null,"path":"docs/foundation/status-system.md"}
 {"candidate_fragments":2,"canonical_claim_ids":["NFC-54a9e7160ed5bafb","NFC-7a5db94c95da626b"],"coverage_status":"SCANNED_REGISTERED","exclusion_reason":null,"path":"docs/foundation/strong-claim-gates.md"}
+{"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"SCANNED_NO_CANDIDATE","exclusion_reason":null,"path":"docs/foundation/task-107-baseline-discrepancy.json"}
+{"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"SCANNED_NO_CANDIDATE","exclusion_reason":null,"path":"docs/foundation/task-107-baseline-failure-capture.json"}
+{"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"SCANNED_NO_CANDIDATE","exclusion_reason":null,"path":"docs/foundation/task-107-generation-order-manifest.json"}
+{"candidate_fragments":15,"canonical_claim_ids":["NFC-0b49db1d5707dd6c","NFC-111ccfbf44f567c2","NFC-32099ff811b71c26","NFC-337b55cb63f246c6","NFC-77f5d4092c87fd2a","NFC-7e93adfa49ec8740","NFC-7fe7909134699953","NFC-85a7b6430641f130","NFC-88adf9e6dd896430","NFC-c423811090b52ee5","NFC-c8b04ce6f7eb36ae","NFC-cede0f3e188fa7df","NFC-e701c37347fff44d","NFC-f128f277ece32e72","NFC-fcb9a58736cb10ac"],"coverage_status":"SCANNED_REGISTERED","exclusion_reason":null,"path":"docs/foundation/task-107-incident-report.md"}
+{"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"SCANNED_NO_CANDIDATE","exclusion_reason":null,"path":"docs/foundation/task-107-path-classification-register.jsonl"}
+{"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"SCANNED_NO_CANDIDATE","exclusion_reason":null,"path":"docs/foundation/task-107-semantic-diff.json"}
+{"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"SCANNED_NO_CANDIDATE","exclusion_reason":null,"path":"docs/foundation/task-107-verification-ladder.json"}
 {"candidate_fragments":9,"canonical_claim_ids":["NFC-1e19b372b1628f69","NFC-349ba8a4c4d6c1f7","NFC-685f76269fb63832","NFC-848286e10dcccb2d","NFC-8d464575160ba242","NFC-bd8a5f1555b5bc98","NFC-ded713e9e8f9955a","NFC-df26543601b76f12","NFC-fe6f253c0e960db6"],"coverage_status":"SCANNED_REGISTERED","exclusion_reason":null,"path":"docs/function_dependency_map.md"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_NON_TEXT_SUFFIX","exclusion_reason":"EXCLUDED_NON_TEXT_SUFFIX","path":"docs/generated/ignition-system-map.svg"}
 {"candidate_fragments":3,"canonical_claim_ids":["NFC-0f899fc3f051d0d6","NFC-274bf6906898a5a5","NFC-549238981acf8748"],"coverage_status":"SCANNED_REGISTERED","exclusion_reason":null,"path":"docs/generated/recent-stage-results.md"}

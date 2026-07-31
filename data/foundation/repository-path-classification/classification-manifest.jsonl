@@ -754,8 +754,6 @@
 {"category": "GOVERNED_MACHINE_RECORD", "matched_rule": "GOVERNED_MACHINE_RECORD", "path": "data/foundation/schemas/source.schema.json"}
 {"category": "GOVERNED_MACHINE_RECORD", "matched_rule": "GOVERNED_MACHINE_RECORD", "path": "data/foundation/schemas/validation-record.schema.json"}
 {"category": "GOVERNED_MACHINE_RECORD", "matched_rule": "GOVERNED_MACHINE_RECORD", "path": "data/foundation/sources/sources.jsonl"}
-{"category": "GOVERNED_MACHINE_RECORD", "matched_rule": "GOVERNED_MACHINE_RECORD", "path": "data/foundation/task-107-baseline-discrepancy.json"}
-{"category": "GOVERNED_MACHINE_RECORD", "matched_rule": "GOVERNED_MACHINE_RECORD", "path": "data/foundation/task-107-path-classification-register.jsonl"}
 {"category": "GOVERNED_MACHINE_RECORD", "matched_rule": "GOVERNED_MACHINE_RECORD", "path": "data/foundation/toolchain-status.json"}
 {"category": "GOVERNED_MACHINE_RECORD", "matched_rule": "GOVERNED_MACHINE_RECORD", "path": "data/foundation/unresolved-obligations.json"}
 {"category": "GOVERNED_MACHINE_RECORD", "matched_rule": "GOVERNED_MACHINE_RECORD", "path": "data/foundation/unresolved-obligations.jsonl"}
@@ -977,6 +975,13 @@
 {"category": "EDITORIAL_ARTICLE", "matched_rule": "EDITORIAL_ARTICLE", "path": "docs/foundation/registry-contract.md"}
 {"category": "EDITORIAL_ARTICLE", "matched_rule": "EDITORIAL_ARTICLE", "path": "docs/foundation/status-system.md"}
 {"category": "EDITORIAL_ARTICLE", "matched_rule": "EDITORIAL_ARTICLE", "path": "docs/foundation/strong-claim-gates.md"}
+{"category": "EDITORIAL_ARTICLE", "matched_rule": "EDITORIAL_ARTICLE", "path": "docs/foundation/task-107-baseline-discrepancy.json"}
+{"category": "EDITORIAL_ARTICLE", "matched_rule": "EDITORIAL_ARTICLE", "path": "docs/foundation/task-107-baseline-failure-capture.json"}
+{"category": "EDITORIAL_ARTICLE", "matched_rule": "EDITORIAL_ARTICLE", "path": "docs/foundation/task-107-generation-order-manifest.json"}
+{"category": "EDITORIAL_ARTICLE", "matched_rule": "EDITORIAL_ARTICLE", "path": "docs/foundation/task-107-incident-report.md"}
+{"category": "EDITORIAL_ARTICLE", "matched_rule": "EDITORIAL_ARTICLE", "path": "docs/foundation/task-107-path-classification-register.jsonl"}
+{"category": "EDITORIAL_ARTICLE", "matched_rule": "EDITORIAL_ARTICLE", "path": "docs/foundation/task-107-semantic-diff.json"}
+{"category": "EDITORIAL_ARTICLE", "matched_rule": "EDITORIAL_ARTICLE", "path": "docs/foundation/task-107-verification-ladder.json"}
 {"category": "EDITORIAL_ARTICLE", "matched_rule": "EDITORIAL_ARTICLE", "path": "docs/function_dependency_map.md"}
 {"category": "EDITORIAL_ARTICLE", "matched_rule": "EDITORIAL_ARTICLE", "path": "docs/generated/ignition-system-map.svg"}
 {"category": "EDITORIAL_ARTICLE", "matched_rule": "EDITORIAL_ARTICLE", "path": "docs/generated/recent-stage-results.md"}
