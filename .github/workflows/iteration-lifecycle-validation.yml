@@ -30,7 +30,7 @@ jobs:
         run: python3 -m pip install -r requirements-foundation.txt
 
       - name: Universal repository-path-accounting preflight (Layer A)
-        run: python3 tools/governance/check_repository_path_accounting.py
+        run: python3 tools/foundation/validate_repository_path_classification.py --check
 
       - name: Lifecycle schema + resolver tests (22 negative fixtures + positives)
         run: python3 -m unittest tests.test_lifecycle_events tests.test_terminalization_allowlist -v
