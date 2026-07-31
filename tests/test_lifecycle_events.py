@@ -301,6 +301,40 @@ class TestPositiveFixtures(unittest.TestCase):
         problems = le.validate_event_schema(cand) + le.validate_event_schema(proj)
         self.assertEqual(problems, [])
 
+    def test_merged_candidate_resolves_terminal_success_with_verified_tag(self):
+        # A candidate committed AFTER its content merge
+        # (CONTENT_MERGED_AWAITING_TERMINALIZATION) plus a verified annotated
+        # terminal tag must resolve TERMINAL_SUCCESS. Guards the schema
+        # broadening so a legitimately merged candidate is not falsely rejected.
+        cand = _event(
+            lifecycle_state="CONTENT_MERGED_AWAITING_TERMINALIZATION",
+            formal_content_pr_number=10,
+            exact_reviewed_content_head="abc",
+        )
+        proj = {
+            "schema_version": "1.0.0", "event_type": "TERMINALIZATION_PROJECTION",
+            "record_type": "TERMINALIZATION_PROJECTION", "task_number": 999,
+            "task_id": "IGNITION-TEST-R1-2026", "control_commit": "deadbeef",
+            "lifecycle_state": "TERMINAL_SUCCESS",
+            "content_pr_number": 10, "content_merge_commit": "abc",
+            "terminal_tag_name": "ignition/iterations/999/terminal-r1",
+            "terminal_state": "TERMINAL_SUCCESS", "attestation_mode": "ORIGINAL_TERMINATION",
+        }
+        msg = (
+            "task_number: 999\ntask_id: IGNITION-TEST-R1-2026\n"
+            "terminal_state: TERMINAL_SUCCESS\ncore_receipt_sha256: abc\n"
+            "attestation_mode: ORIGINAL_TERMINATION\n"
+        )
+        with unittest.mock.patch.object(le, "ref_exists", return_value=True), \
+             unittest.mock.patch.object(le, "annotated_tag_object_sha", return_value="tagobjsha"), \
+             unittest.mock.patch.object(le, "tag_points_to", return_value=True), \
+             unittest.mock.patch.object(le, "tag_message", return_value=msg), \
+             unittest.mock.patch.object(le, "commit_exists", return_value=True), \
+             unittest.mock.patch.object(le, "is_ancestor", return_value=True):
+            r = le.resolve_task([cand, proj], 999, git_available=True)
+        self.assertEqual(r["resolved_state"], "TERMINAL_SUCCESS")
+        self.assertEqual(r["errors"], [])
+
 
 if __name__ == "__main__":
     unittest.main(verbosity=2)

@@ -1,20 +1,14 @@
 {
-  "current_accepted_iteration": 107,
+  "current_accepted_iteration": 108,
   "derived_from": "lifecycle-events.jsonl + annotated terminal tags",
-  "errors": {
-    "108": [
-      "task 108: ITERATION_CANDIDATE must be READY_FOR_CONTENT_MERGE"
-    ]
-  },
-  "non_terminal_tasks": [
-    108
-  ],
+  "errors": {},
+  "non_terminal_tasks": [],
   "resolved": {
     "104": "TERMINAL_SUCCESS",
     "105": "TERMINAL_SUCCESS",
     "106": "TERMINAL_SUCCESS",
     "107": "TERMINAL_SUCCESS",
-    "108": "CONTENT_MERGED_AWAITING_TERMINALIZATION"
+    "108": "TERMINAL_SUCCESS"
   },
   "schema_version": "1.0.0",
   "task_summary": [
@@ -39,7 +33,7 @@
       "task_number": 107
     },
     {
-      "resolved_state": "CONTENT_MERGED_AWAITING_TERMINALIZATION",
+      "resolved_state": "TERMINAL_SUCCESS",
       "task_id": "IGNITION-TWO-PHASE-ITERATION-TERMINALIZATION-AND-SELF-CLOSING-CURRENT-TRUTH-R1-20260801",
       "task_number": 108
     }
@@ -48,6 +42,7 @@
     104,
     105,
     106,
-    107
+    107,
+    108
   ]
 }

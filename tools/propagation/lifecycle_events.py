@@ -94,8 +94,18 @@ def validate_event_schema(event: Dict) -> List[str]:
     if et not in VALID_EVENT_TYPES:
         problems.append(f"task {tn}: invalid event_type {et!r}")
     if et == "ITERATION_CANDIDATE":
-        if event.get("lifecycle_state") != "READY_FOR_CONTENT_MERGE":
-            problems.append(f"task {tn}: ITERATION_CANDIDATE must be READY_FOR_CONTENT_MERGE")
+        # The candidate may be committed strictly BEFORE the content merge
+        # (READY_FOR_CONTENT_MERGE) or, once the content PR is ordinarily
+        # merged, may carry the immutable reviewed head and advance to
+        # CONTENT_MERGED_AWAITING_TERMINALIZATION. Both are valid candidate
+        # states; the difference is recorded, not invented future facts.
+        _cand_state = event.get("lifecycle_state")
+        if _cand_state not in ("READY_FOR_CONTENT_MERGE", "CONTENT_MERGED_AWAITING_TERMINALIZATION"):
+            problems.append(
+                f"task {tn}: ITERATION_CANDIDATE lifecycle_state must be "
+                f"READY_FOR_CONTENT_MERGE or CONTENT_MERGED_AWAITING_TERMINALIZATION "
+                f"(got {_cand_state!r})"
+            )
         # A candidate must NOT contain invented future merge commits.
         for forb in ("content_merge_commit", "terminalization_merge_commit",
                      "terminal_tag_object_sha", "terminal_tag_target", "core_receipt_sha256"):
@@ -298,12 +308,18 @@ def resolve_task(
     if projections and projections[0].get("terminal_tag_name"):
         resolved = "AWAITING_TERMINAL_TAG"
     if projections and projections[0].get("terminal_state") == "TERMINAL_SUCCESS":
-        resolved = "TERMINAL_SUCCESS" if not errors else "INVALID"
-
-    if errors:
-        # Prefer INVALID over a green state when any rule was violated.
-        if resolved == "TERMINAL_SUCCESS":
+        if errors:
+            # A violated rule (e.g. tag missing/lightweight/mismatch) must not
+            # be silently accepted as terminal success.
             resolved = "INVALID"
+        elif not git_available:
+            # Tag attestation cannot be verified without Git history/tags.
+            # Do NOT claim TERMINAL_SUCCESS offline; the tag must be verified
+            # from the repository (contract §7.10/§18). Fixture #20 depends on
+            # this: a projection alone (no Git) must not resolve TERMINAL_SUCCESS.
+            resolved = "AWAITING_TERMINAL_TAG"
+        else:
+            resolved = "TERMINAL_SUCCESS"
 
     return {
         "task_number": task_number,
