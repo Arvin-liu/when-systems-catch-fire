@@ -18,7 +18,7 @@
     "EDITORIAL_ARTICLE_IMPACT": {
       "baseline_sha256": {
         "docs/editorial/articles/007-bounded-trust-function-os-v02-capability-benchmark.md": "cfb25e465b572bf954bc8987838e76071412581cc195a6c7a50d37b4929687e0",
-        "docs/editorial/source-manifest.json": "2ec63b197fa4bf0b7f673e7c0d46ec284109729b4b22074359c8f7d1cf2dfa0b"
+        "docs/editorial/source-manifest.json": "c5d335d60599c87dd83e55e085d32a633f5008ce9adcd25994c8b482ef178709"
       },
       "declared": "NO_IMPACT_JUSTIFIED",
       "governed_sources": [

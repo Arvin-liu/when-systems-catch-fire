@@ -21,6 +21,16 @@ OUT_PATH = os.path.join(
     "current-truth-projection.json",
 )
 
+# Task 108 lifecycle events file (event-sourced terminality). When a task from
+# the lifecycle ledger has resolved TERMINAL_SUCCESS but is absent from the
+# legacy merged-iteration-ledger.jsonl (e.g. 107) or was historically only
+# PR_OPEN (e.g. 106), the projection folds in its terminal facts so current
+# public truth is complete and honest.
+LIFECYCLE_EVENTS_PATH = os.path.join(
+    os.path.dirname(__file__), "..", "..", "data", "operations",
+    "lifecycle-events.jsonl",
+)
+
 
 def _projections_from_terminal(records: List[Dict]) -> Dict[str, Any]:
     terminals = terminal_records(records)
@@ -77,6 +87,45 @@ def _projections_from_terminal(records: List[Dict]) -> Dict[str, Any]:
     }
 
 
+def _fold_lifecycle_terminal(repo_root: str, proj: Dict[str, Any]) -> None:
+    """Fold terminal tasks from the event-sourced lifecycle into the projection.
+
+    Only tasks whose lifecycle resolver reports TERMINAL_SUCCESS are folded in,
+    so an un-reconciled task (e.g. 106/107 before their retroactive tag, or 108
+    before its terminal tag) is NOT silently presented as current truth.
+    """
+    events_file = os.path.join(repo_root, "data/operations", "lifecycle-events.jsonl")
+    if not os.path.exists(events_file):
+        return
+    try:
+        import lifecycle_events as le  # noqa: F401  (tools/propagation on sys.path)
+    except Exception:
+        return
+    events = le.load_events(events_file)
+    view = le.derive_current_truth(events, "origin/main")
+    already = {r.get("task_number") for r in proj.get("recently_merged_results", [])}
+    for tn_str, state in view["resolved"].items():
+        tn = int(tn_str)
+        if state != "TERMINAL_SUCCESS" or tn in already:
+            continue
+        evs = [e for e in events if e.get("task_number") == tn]
+        task_id = next((e.get("task_id") for e in evs), None)
+        merge = next((e.get("content_merge_commit") or e.get("ordinary_merge_commit")
+                      for e in evs if e.get("event_type") in ("TERMINALIZATION_PROJECTION", "LEGACY_TERMINAL_SUCCESS")), None)
+        head = next((e.get("exact_reviewed_content_head") or e.get("exact_reviewed_head")
+                     for e in evs if e.get("event_type") in ("ITERATION_CANDIDATE", "LEGACY_TERMINAL_SUCCESS")), None)
+        terminal_state = next((e.get("terminal_state") for e in evs if e.get("terminal_state")), None)
+        proj["recently_merged_results"].append({
+            "task_number": tn,
+            "task_id": task_id,
+            "merge_commit": merge,
+            "exact_head": head,
+            "terminal_state": terminal_state,
+            "classification": "folded from event-sourced lifecycle (TERMINAL_SUCCESS); retroactive reconciliation by task 108",
+        })
+        proj["_non_terminal_tasks_excluded"] = [t for t in proj["_non_terminal_tasks_excluded"] if t != tn]
+
+
 def generate(repo_root: str, out_path: str = None) -> Dict[str, Any]:
     records = load_ledger(os.path.join(repo_root, "data", "operations", "merged-iteration-ledger.jsonl"))
     proj = _projections_from_terminal(records)
@@ -84,6 +133,14 @@ def generate(repo_root: str, out_path: str = None) -> Dict[str, Any]:
     non_terminal = [r for r in records if r.get("ledger_status") not in ("TERMINAL_SUCCESS", "TERMINAL_BLOCKED")]
     proj["_derived_from_terminal_only"] = True
     proj["_non_terminal_tasks_excluded"] = [r.get("task_number") for r in non_terminal]
+    # Fold terminal tasks reconciled via the event-sourced lifecycle (106/107
+    # after retroactive attestation). Guarded to TERMINAL_SUCCESS only.
+    _fold_lifecycle_terminal(repo_root, proj)
+    # Recompute the current accepted iteration from the (now complete) terminals.
+    terminals = sorted(proj["recently_merged_results"], key=lambda r: r.get("task_number", 0))
+    if terminals:
+        proj["current_accepted_iteration"] = terminals[-1].get("task_number")
+        proj["current_project_status_commit"] = terminals[-1].get("merge_commit")
     target = out_path or os.path.abspath(OUT_PATH)
     with open(target, "w", encoding="utf-8") as fh:
         json.dump(proj, fh, ensure_ascii=False, sort_keys=True, indent=2)
