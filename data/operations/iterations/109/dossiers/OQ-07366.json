@@ -1,12 +1,12 @@
 {
-  "canonical_id": "OQ-97382",
-  "title": "四种基本相互作用统一",
+  "canonical_id": "OQ-07366",
+  "title": "非函数断言补证",
   "class": "SCIENTIFIC_EVIDENCE",
   "is_meta": false,
   "current_status": "OPEN_QUESTION",
   "provenance": {
     "source_file": "RESULTS/OPEN-QUESTIONS.md",
-    "canonical_id": "OQ-97382"
+    "canonical_id": "OQ-07366"
   },
   "dependencies": [],
   "prerequisite_unresolved": false,
@@ -15,23 +15,23 @@
     "research-program"
   ],
   "evidence_needs": [
-    "明确的场、对称性、作用量、低能极限、量子一致性与可检验预测。"
+    "逐项文献、证明、数据、反例与复现。"
   ],
   "stop_conditions": [
-    "若模型不能保持已验证极限或不能给出可区分预测，保持 toy model/撤回物理统一主张。"
+    "无法限定量词、对象或证据范围时降级或撤回。"
   ],
   "claim_ceiling": "Open research question; not a promised roadmap item.",
   "authority": "REPO_OWNER",
-  "aggregate_score": 51.44,
+  "aggregate_score": 54.14,
   "factor_vector": {
-    "consequence_of_being_wrong": 0.8,
+    "consequence_of_being_wrong": 0.6,
     "dependency_centrality": 0.5,
-    "falsifiability": 0.2,
-    "data_oracle_availability": 0.2,
-    "expected_information_gain": 0.9,
-    "effort_evidence_cost": 0.15,
+    "falsifiability": 0.5,
+    "data_oracle_availability": 0.5,
+    "expected_information_gain": 0.6,
+    "effort_evidence_cost": 0.4,
     "reversibility_risk": 0.5,
-    "maturity_gap": 0.85,
+    "maturity_gap": 0.6,
     "owner_relevance": 0.7,
     "duplication_prior_failure": 0.6,
     "substantive_vs_meta": 0.92

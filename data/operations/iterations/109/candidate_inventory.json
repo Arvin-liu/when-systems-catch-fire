@@ -1,11 +1,11 @@
 [
   {
-    "canonical_id": "OQ-97382",
+    "canonical_id": "OQ-37929",
     "source": "RESULTS/OPEN-QUESTIONS.md",
     "title": "四种基本相互作用统一",
     "provenance": {
       "source_file": "RESULTS/OPEN-QUESTIONS.md",
-      "canonical_id": "OQ-97382"
+      "canonical_id": "OQ-37929"
     },
     "current_status": "OPEN_QUESTION",
     "dependencies": [],
@@ -56,12 +56,12 @@
     "blocked_reason": null
   },
   {
-    "canonical_id": "OQ-85917",
+    "canonical_id": "OQ-26772",
     "source": "RESULTS/OPEN-QUESTIONS.md",
     "title": "量子引力",
     "provenance": {
       "source_file": "RESULTS/OPEN-QUESTIONS.md",
-      "canonical_id": "OQ-85917"
+      "canonical_id": "OQ-26772"
     },
     "current_status": "OPEN_QUESTION",
     "dependencies": [],
@@ -112,12 +112,12 @@
     "blocked_reason": null
   },
   {
-    "canonical_id": "OQ-24270",
+    "canonical_id": "OQ-50371",
     "source": "RESULTS/OPEN-QUESTIONS.md",
     "title": "暗物质",
     "provenance": {
       "source_file": "RESULTS/OPEN-QUESTIONS.md",
-      "canonical_id": "OQ-24270"
+      "canonical_id": "OQ-50371"
     },
     "current_status": "OPEN_QUESTION",
     "dependencies": [],
@@ -168,12 +168,12 @@
     "blocked_reason": null
   },
   {
-    "canonical_id": "OQ-27316",
+    "canonical_id": "OQ-90163",
     "source": "RESULTS/OPEN-QUESTIONS.md",
     "title": "暗能量与宇宙常数",
     "provenance": {
       "source_file": "RESULTS/OPEN-QUESTIONS.md",
-      "canonical_id": "OQ-27316"
+      "canonical_id": "OQ-90163"
     },
     "current_status": "OPEN_QUESTION",
     "dependencies": [],
@@ -224,12 +224,12 @@
     "blocked_reason": null
   },
   {
-    "canonical_id": "OQ-18872",
+    "canonical_id": "OQ-24236",
     "source": "RESULTS/OPEN-QUESTIONS.md",
     "title": "量子测量",
     "provenance": {
       "source_file": "RESULTS/OPEN-QUESTIONS.md",
-      "canonical_id": "OQ-18872"
+      "canonical_id": "OQ-24236"
     },
     "current_status": "OPEN_QUESTION",
     "dependencies": [],
@@ -280,12 +280,12 @@
     "blocked_reason": null
   },
   {
-    "canonical_id": "OQ-09237",
+    "canonical_id": "OQ-63989",
     "source": "RESULTS/OPEN-QUESTIONS.md",
     "title": "函数资产深审",
     "provenance": {
       "source_file": "RESULTS/OPEN-QUESTIONS.md",
-      "canonical_id": "OQ-09237"
+      "canonical_id": "OQ-63989"
     },
     "current_status": "OPEN_QUESTION",
     "dependencies": [],
@@ -336,12 +336,12 @@
     "blocked_reason": null
   },
   {
-    "canonical_id": "OQ-52264",
+    "canonical_id": "OQ-07366",
     "source": "RESULTS/OPEN-QUESTIONS.md",
     "title": "非函数断言补证",
     "provenance": {
       "source_file": "RESULTS/OPEN-QUESTIONS.md",
-      "canonical_id": "OQ-52264"
+      "canonical_id": "OQ-07366"
     },
     "current_status": "OPEN_QUESTION",
     "dependencies": [],
@@ -392,12 +392,12 @@
     "blocked_reason": null
   },
   {
-    "canonical_id": "OQ-78468",
+    "canonical_id": "OQ-83412",
     "source": "RESULTS/OPEN-QUESTIONS.md",
     "title": "跨域映射",
     "provenance": {
       "source_file": "RESULTS/OPEN-QUESTIONS.md",
-      "canonical_id": "OQ-78468"
+      "canonical_id": "OQ-83412"
     },
     "current_status": "OPEN_QUESTION",
     "dependencies": [],
@@ -448,12 +448,12 @@
     "blocked_reason": null
   },
   {
-    "canonical_id": "OQ-26243",
+    "canonical_id": "OQ-68473",
     "source": "RESULTS/OPEN-QUESTIONS.md",
     "title": "现实反馈",
     "provenance": {
       "source_file": "RESULTS/OPEN-QUESTIONS.md",
-      "canonical_id": "OQ-26243"
+      "canonical_id": "OQ-68473"
     },
     "current_status": "OPEN_QUESTION",
     "dependencies": [],
@@ -504,12 +504,12 @@
     "blocked_reason": null
   },
   {
-    "canonical_id": "OQ-75042",
+    "canonical_id": "OQ-70521",
     "source": "RESULTS/OPEN-QUESTIONS.md",
     "title": "OQ-103-1：回填/修正 `crossref_year` ✅已解决",
     "provenance": {
       "source_file": "RESULTS/OPEN-QUESTIONS.md",
-      "canonical_id": "OQ-75042"
+      "canonical_id": "OQ-70521"
     },
     "current_status": "OPEN_QUESTION",
     "dependencies": [],
@@ -560,12 +560,12 @@
     "blocked_reason": null
   },
   {
-    "canonical_id": "OQ-60028",
+    "canonical_id": "OQ-06181",
     "source": "RESULTS/OPEN-QUESTIONS.md",
     "title": "OQ-103-2：注册表内部重复 DOI（已判定保留）",
     "provenance": {
       "source_file": "RESULTS/OPEN-QUESTIONS.md",
-      "canonical_id": "OQ-60028"
+      "canonical_id": "OQ-06181"
     },
     "current_status": "OPEN_QUESTION",
     "dependencies": [],
@@ -616,12 +616,12 @@
     "blocked_reason": null
   },
   {
-    "canonical_id": "OQ-15933",
+    "canonical_id": "OQ-14072",
     "source": "RESULTS/OPEN-QUESTIONS.md",
     "title": "OQ-103-3：OpenAlex 跨源一致性",
     "provenance": {
       "source_file": "RESULTS/OPEN-QUESTIONS.md",
-      "canonical_id": "OQ-15933"
+      "canonical_id": "OQ-14072"
     },
     "current_status": "OPEN_QUESTION",
     "dependencies": [],
@@ -672,12 +672,12 @@
     "blocked_reason": null
   },
   {
-    "canonical_id": "OQ-11573",
+    "canonical_id": "OQ-02724",
     "source": "RESULTS/OPEN-QUESTIONS.md",
     "title": "OQ-103-4：案例表历史锚点",
     "provenance": {
       "source_file": "RESULTS/OPEN-QUESTIONS.md",
-      "canonical_id": "OQ-11573"
+      "canonical_id": "OQ-02724"
     },
     "current_status": "OPEN_QUESTION",
     "dependencies": [],
@@ -728,12 +728,12 @@
     "blocked_reason": null
   },
   {
-    "canonical_id": "OQ-97709",
+    "canonical_id": "OQ-09468",
     "source": "RESULTS/OPEN-QUESTIONS.md",
     "title": "OQ-103-5：Function OS v0.2 正确性（**已完成 · 有界**）",
     "provenance": {
       "source_file": "RESULTS/OPEN-QUESTIONS.md",
-      "canonical_id": "OQ-97709"
+      "canonical_id": "OQ-09468"
     },
     "current_status": "OPEN_QUESTION",
     "dependencies": [],
@@ -784,12 +784,12 @@
     "blocked_reason": null
   },
   {
-    "canonical_id": "OQ-87667",
+    "canonical_id": "OQ-28307",
     "source": "RESULTS/OPEN-QUESTIONS.md",
     "title": "OQ-103-6：Function OS v0.2 之后的剩余问题",
     "provenance": {
       "source_file": "RESULTS/OPEN-QUESTIONS.md",
-      "canonical_id": "OQ-87667"
+      "canonical_id": "OQ-28307"
     },
     "current_status": "OPEN_QUESTION",
     "dependencies": [],

@@ -7,12 +7,13 @@ the FROZEN priority model (data/operations/iterations/109/priority_model.json),
 and emits deterministic ranked outputs. No generated output is fed back as an
 authoritative discovery input. All randomness avoided; tie-break is deterministic.
 """
+import hashlib
 import json
 import subprocess
 import sys
 from pathlib import Path
 
-REPO = Path("/Users/zhiyuan/WorkBuddy/Claw/arr-r2-formal")
+REPO = Path(__file__).resolve().parents[2]
 MODEL_PATH = REPO / "data/operations/iterations/109/priority_model.json"
 OUT = REPO / "data/operations/iterations/109"
 
@@ -69,7 +70,7 @@ def read_open_questions():
         if cells[0] in ("问题", "") or set(cells[0]) <= set("- "):
             continue
         q, gap, ev, stop = cells[0], cells[1], cells[2], cells[3]
-        c = blank_candidate(f"OQ-{hash(q)%100000:05d}", "RESULTS/OPEN-QUESTIONS.md", q)
+        c = blank_candidate(f"OQ-{int(hashlib.md5(q.encode('utf-8')).hexdigest(), 16) % 100000:05d}", "RESULTS/OPEN-QUESTIONS.md", q)
         c["current_status"] = "OPEN_QUESTION"
         c["factor_inputs"] = {
             "harm_if_wrong": 0.8 if "统一" in q or "量子引力" in q else 0.6,

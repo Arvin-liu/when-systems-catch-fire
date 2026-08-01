@@ -25,8 +25,8 @@
     },
     {
       "candidate": [
-        "OQ-97382",
-        "OQ-85917"
+        "OQ-37929",
+        "OQ-26772"
       ],
       "reason": "Four-force unification and quantum gravity are low-falsifiability (0.2), low data availability (0.2), high evidence cost (0.85). A grand untestable claim must not outrank a bounded falsifiable pilot merely due to rhetoric.",
       "not_selected_because": "low falsifiability + high cost + not-yet-executable"

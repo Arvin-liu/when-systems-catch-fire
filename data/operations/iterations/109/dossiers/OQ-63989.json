@@ -1,12 +1,12 @@
 {
-  "canonical_id": "OQ-97709",
-  "title": "OQ-103-5：Function OS v0.2 正确性（**已完成 · 有界**）",
+  "canonical_id": "OQ-63989",
+  "title": "函数资产深审",
   "class": "SCIENTIFIC_EVIDENCE",
   "is_meta": false,
   "current_status": "OPEN_QUESTION",
   "provenance": {
     "source_file": "RESULTS/OPEN-QUESTIONS.md",
-    "canonical_id": "OQ-97709"
+    "canonical_id": "OQ-63989"
   },
   "dependencies": [],
   "prerequisite_unresolved": false,
@@ -15,10 +15,10 @@
     "research-program"
   ],
   "evidence_needs": [
-    "**已完成（有界 v0.2 基准）**：任务 105 先预注册、再对抗验证，在精选基线上复现参考数值；原始目标判定 `PARTIALLY_SUPPORTED_WITH_IDENTIFIED_FAILURES`（25 个 false_reject，源自 N2 嵌套相等提取缺陷 `split('==')`→`split('==',1)`），有界修复后目标判定 `SUPPORTED_WITHIN_BOUNDED_DOMAIN`。证据上限限定于有界域。"
+    "按风险和依赖优先级补定义、类型、量纲、证明、反例或数据。"
   ],
   "stop_conditions": [
-    "不声称完整沙箱化、生产就绪或普遍正确；更宽表达式覆盖、敌对环境安全、生产可靠性与真实效用见 OQ-103-6。"
+    "无法识别对象或没有用途时长期隔离，不强行形式化。"
   ],
   "claim_ceiling": "Open research question; not a promised roadmap item.",
   "authority": "REPO_OWNER",

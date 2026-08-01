@@ -1,12 +1,12 @@
 {
-  "canonical_id": "OQ-24270",
-  "title": "暗物质",
+  "canonical_id": "OQ-83412",
+  "title": "跨域映射",
   "class": "SCIENTIFIC_EVIDENCE",
   "is_meta": false,
   "current_status": "OPEN_QUESTION",
   "provenance": {
     "source_file": "RESULTS/OPEN-QUESTIONS.md",
-    "canonical_id": "OQ-24270"
+    "canonical_id": "OQ-83412"
   },
   "dependencies": [],
   "prerequisite_unresolved": false,
@@ -15,10 +15,10 @@
     "research-program"
   ],
   "evidence_needs": [
-    "多尺度数据、基线模型、参数识别、预注册预测与独立复现。"
+    "对象集合、映射、双射/同态条件、保持结构与反例。"
   ],
   "stop_conditions": [
-    "不能优于或区分现有模型时保持启发式。"
+    "相似性不能稳定保持时不得称同构。"
   ],
   "claim_ceiling": "Open research question; not a promised roadmap item.",
   "authority": "REPO_OWNER",

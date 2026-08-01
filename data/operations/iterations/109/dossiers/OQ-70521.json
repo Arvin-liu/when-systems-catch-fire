@@ -1,12 +1,12 @@
 {
-  "canonical_id": "OQ-75042",
+  "canonical_id": "OQ-70521",
   "title": "OQ-103-1：回填/修正 `crossref_year` ✅已解决",
   "class": "SCIENTIFIC_EVIDENCE",
   "is_meta": false,
   "current_status": "OPEN_QUESTION",
   "provenance": {
     "source_file": "RESULTS/OPEN-QUESTIONS.md",
-    "canonical_id": "OQ-75042"
+    "canonical_id": "OQ-70521"
   },
   "dependencies": [],
   "prerequisite_unresolved": false,

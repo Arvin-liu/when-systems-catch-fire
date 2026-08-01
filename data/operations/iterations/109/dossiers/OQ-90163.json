@@ -1,12 +1,12 @@
 {
-  "canonical_id": "OQ-18872",
-  "title": "量子测量",
+  "canonical_id": "OQ-90163",
+  "title": "暗能量与宇宙常数",
   "class": "SCIENTIFIC_EVIDENCE",
   "is_meta": false,
   "current_status": "OPEN_QUESTION",
   "provenance": {
     "source_file": "RESULTS/OPEN-QUESTIONS.md",
-    "canonical_id": "OQ-18872"
+    "canonical_id": "OQ-90163"
   },
   "dependencies": [],
   "prerequisite_unresolved": false,
@@ -15,18 +15,18 @@
     "research-program"
   ],
   "evidence_needs": [
-    "完整状态空间、动力学、概率语义与可检验差异。"
+    "协变方程、稳定性、参数自然性、观测约束。"
   ],
   "stop_conditions": [
-    "仅把“门”类比为测量不提升为机制。"
+    "仅靠“门控抑制”叙述不构成解释。"
   ],
   "claim_ceiling": "Open research question; not a promised roadmap item.",
   "authority": "REPO_OWNER",
-  "aggregate_score": 49.34,
+  "aggregate_score": 54.14,
   "factor_vector": {
     "consequence_of_being_wrong": 0.6,
     "dependency_centrality": 0.5,
-    "falsifiability": 0.2,
+    "falsifiability": 0.5,
     "data_oracle_availability": 0.5,
     "expected_information_gain": 0.6,
     "effort_evidence_cost": 0.4,

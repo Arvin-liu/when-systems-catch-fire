@@ -1,12 +1,12 @@
 {
-  "canonical_id": "OQ-78468",
-  "title": "跨域映射",
+  "canonical_id": "OQ-68473",
+  "title": "现实反馈",
   "class": "SCIENTIFIC_EVIDENCE",
   "is_meta": false,
   "current_status": "OPEN_QUESTION",
   "provenance": {
     "source_file": "RESULTS/OPEN-QUESTIONS.md",
-    "canonical_id": "OQ-78468"
+    "canonical_id": "OQ-68473"
   },
   "dependencies": [],
   "prerequisite_unresolved": false,
@@ -15,10 +15,10 @@
     "research-program"
   ],
   "evidence_needs": [
-    "对象集合、映射、双射/同态条件、保持结构与反例。"
+    "真实使用协议、基线、失败记录、参与者风险与长期复现。"
   ],
   "stop_conditions": [
-    "相似性不能稳定保持时不得称同构。"
+    "没有外部可观察改进时只保留方法候选。"
   ],
   "claim_ceiling": "Open research question; not a promised roadmap item.",
   "authority": "REPO_OWNER",

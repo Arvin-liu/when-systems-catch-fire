@@ -1,12 +1,12 @@
 {
-  "canonical_id": "OQ-60028",
-  "title": "OQ-103-2：注册表内部重复 DOI（已判定保留）",
+  "canonical_id": "OQ-14072",
+  "title": "OQ-103-3：OpenAlex 跨源一致性",
   "class": "SCIENTIFIC_EVIDENCE",
   "is_meta": false,
   "current_status": "OPEN_QUESTION",
   "provenance": {
     "source_file": "RESULTS/OPEN-QUESTIONS.md",
-    "canonical_id": "OQ-60028"
+    "canonical_id": "OQ-14072"
   },
   "dependencies": [],
   "prerequisite_unresolved": false,
@@ -15,10 +15,10 @@
     "research-program"
   ],
   "evidence_needs": [
-    "保留不删除（GAP002-08 被 104 外部研究生态多处引用），移交 104 数据负责人处置；复跑 intra_registry_duplicate_dois = 1（结构重复但有意，非外部证据失败）。"
+    "OpenAlex 跨源交叉验证（备用试点 1）。"
   ],
   "stop_conditions": [
-    "若 104 负责人判定应合并，则合并来源条目。"
+    "两源系统性冲突时记录 oracle 差异，不自动判定。"
   ],
   "claim_ceiling": "Open research question; not a promised roadmap item.",
   "authority": "REPO_OWNER",

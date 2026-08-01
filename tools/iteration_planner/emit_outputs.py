@@ -3,7 +3,7 @@
 import json
 from pathlib import Path
 
-REPO = Path("/Users/zhiyuan/WorkBuddy/Claw/arr-r2-formal")
+REPO = Path(__file__).resolve().parents[2]
 OUT = REPO / "data/operations/iterations/109"
 
 inv = json.load(open(OUT / "candidate_inventory.json"))
