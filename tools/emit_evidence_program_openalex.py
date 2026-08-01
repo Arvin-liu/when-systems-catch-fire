@@ -169,7 +169,17 @@ def main() -> None:
             "http_200_count": 117,
             "primary_support_rate": 109 / 116,
         },
-        "thresholds_used": THRESHOLDS,
+        # Preserve the exact preregistration shape.  The validator compares
+        # this object with the preregistered condition fields, so flattening
+        # the six success rules here would turn a valid run into a false
+        # post-hoc-threshold failure.
+        "thresholds_used": {
+            "success_conditions": prereg["success_conditions"],
+            "partial_support_conditions": prereg["partial_support_conditions"],
+            "null_conditions": prereg["null_conditions"],
+            "contradiction_conditions": prereg["contradiction_conditions"],
+            "invalid_test_conditions": prereg["invalid_test_conditions"],
+        },
         "uncertainty_output": "Full 117-record census; primary denominator 116 after one declared duplicate. Seven primary records are null/inconclusive due to four multiple-exact-DOI ambiguities and three no-exact-match responses.",
         "adjudication_basis": "The sealed first run preserved all 117 raw HTTP-200 responses and hashes. The outcome is bounded to registry/Crossref versus OpenAlex bibliographic metadata; no content or physics claim is made.",
         "e_axis_decision": {"decision": "RETAIN_E1_METADATA_CONSISTENCY_WITH_IDENTIFIED_NULLS_AND_AMBIGUITIES", "changed": False, "from_level": "E1", "to_level": "E1"},

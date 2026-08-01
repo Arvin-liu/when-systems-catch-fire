@@ -35,12 +35,30 @@
   ],
   "run_id": "IGNITION-EVIDENCE-PILOT-R1-OPENALEX-DOI-REPLICATION-20260801",
   "thresholds_used": {
-    "contradicted": "canonical_id_match AND (title_ratio < 0.75 OR abs(year_delta) > 1 OR retraction mismatch)",
-    "duplicate_denominator": "is_duplicate_doi=true records remain visible but are excluded from primary rates",
-    "invalid": "HTTP/network acquisition failure after preregistered retries; never counted as support",
-    "null": "no unique exact normalized DOI match, missing required metadata, or unrecognized registry retraction status",
-    "partial": "canonical_id_match AND no hard contradiction AND (year_delta == 1 OR 0.75 <= title_ratio < 0.92)",
-    "supported": "canonical_id_match AND title_ratio >= 0.92 AND abs(year_delta) <= 1 AND retraction_match"
+    "contradiction_conditions": {
+      "class": "CONTRADICTED_WITHIN_SCOPE",
+      "rule": "canonical_id_match AND (title_ratio < 0.75 OR abs(year_delta) > 1 OR retraction mismatch)"
+    },
+    "invalid_test_conditions": {
+      "class": "TEST_INVALID_OR_ABORTED",
+      "rule": "HTTP/network acquisition failure after preregistered retries; never counted as support"
+    },
+    "null_conditions": {
+      "class": "NULL_OR_INCONCLUSIVE",
+      "rule": "no unique exact normalized DOI match, missing required metadata, or unrecognized registry retraction status"
+    },
+    "partial_support_conditions": {
+      "class": "PARTIALLY_SUPPORTED_WITH_IDENTIFIED_MISMATCHES",
+      "rule": "canonical_id_match AND no hard contradiction AND (year_delta == 1 OR 0.75 <= title_ratio < 0.92)"
+    },
+    "success_conditions": {
+      "contradicted": "canonical_id_match AND (title_ratio < 0.75 OR abs(year_delta) > 1 OR retraction mismatch)",
+      "duplicate_denominator": "is_duplicate_doi=true records remain visible but are excluded from primary rates",
+      "invalid": "HTTP/network acquisition failure after preregistered retries; never counted as support",
+      "null": "no unique exact normalized DOI match, missing required metadata, or unrecognized registry retraction status",
+      "partial": "canonical_id_match AND no hard contradiction AND (year_delta == 1 OR 0.75 <= title_ratio < 0.92)",
+      "supported": "canonical_id_match AND title_ratio >= 0.92 AND abs(year_delta) <= 1 AND retraction_match"
+    }
   },
   "uncertainty_output": "Full 117-record census; primary denominator 116 after one declared duplicate. Seven primary records are null/inconclusive due to four multiple-exact-DOI ambiguities and three no-exact-match responses."
 }

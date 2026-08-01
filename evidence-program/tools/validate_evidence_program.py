@@ -163,25 +163,45 @@ def main(argv=None):
     # 3. Preregistration
     pre_files = [f for f in os.listdir(os.path.join(root, "preregistration"))
                  if f.endswith(".prereg.json")] if os.path.isdir(os.path.join(root, "preregistration")) else []
-    prereg = None
+    prereg_by_key = {}
+    prereg_by_pilot = {}
     for f in pre_files:
         p = os.path.join(root, "preregistration", f)
         inst = load_json(p)
         validate_instance("preregistration", inst, f"prereg:{f}")
-        prereg = inst
+        # Resolve each result to its own preregistration below.  Relying on
+        # the last directory entry made this check filesystem-order dependent
+        # as soon as the Evidence Program contained two pilots.
+        prereg_by_key[f] = inst
+        prereg_by_key[os.path.join("evidence-program", "preregistration", f)] = inst
+        if inst.get("preregistration_id"):
+            prereg_by_key[inst["preregistration_id"]] = inst
+        if inst.get("pilot_id"):
+            prereg_by_pilot.setdefault(inst["pilot_id"], []).append(inst)
+
+    def resolve_preregistration(ref, pilot_id):
+        if ref:
+            if ref in prereg_by_key:
+                return prereg_by_key[ref]
+            basename = os.path.basename(ref)
+            if basename in prereg_by_key:
+                return prereg_by_key[basename]
+        candidates = prereg_by_pilot.get(pilot_id, []) if pilot_id else []
+        return candidates[0] if len(candidates) == 1 else None
 
     # 4. Preregistration-before-result ordering + post-hoc threshold check
     run_dir = os.path.join(root, "runs")
-    result_inst = None
-    run_inst = None
+    run_records = []
     if os.path.isdir(run_dir):
-        for d in os.listdir(run_dir):
+        for d in sorted(os.listdir(run_dir)):
             rd = os.path.join(run_dir, d)
             if not os.path.isdir(rd):
                 continue
             rm = os.path.join(rd, "run-manifest.json")
             ra = os.path.join(rd, "result-adjudication.json")
             sm = os.path.join(rd, "source-manifest.jsonl")
+            run_inst = None
+            result_inst = None
             if os.path.exists(rm):
                 run_inst = load_json(rm)
                 validate_instance("run-manifest", run_inst, f"run:{d}")
@@ -216,14 +236,24 @@ def main(argv=None):
                         record(f"source-provenance:{d}:{ln}:failure-explicit",
                                bool(row.get("acquisition_status")),
                                row.get("acquisition_status", "UNKNOWN"))
+            run_records.append((d, run_inst, result_inst))
 
     # 5. Post-hoc threshold / metric substitution check
-    if prereg and result_inst:
+    for d, run_inst, result_inst in run_records:
+        if not result_inst:
+            continue
+        ref = result_inst.get("preregistration_ref") or (run_inst or {}).get("preregistration_ref")
+        prereg = resolve_preregistration(ref, result_inst.get("pilot_id") or (run_inst or {}).get("pilot_id"))
+        if not prereg:
+            record(f"posthoc:{d}:preregistration-resolved", False,
+                   f"no unique preregistration for ref {ref!r}")
+            continue
         used = result_inst.get("thresholds_used", {})
         pre = {k: prereg.get(k) for k in ("success_conditions", "partial_support_conditions",
                                           "null_conditions", "contradiction_conditions", "invalid_test_conditions")}
-        record("posthoc:thresholds-unchanged", canon(used) == canon(pre),
-               "thresholds differ between preregistration and result" if canon(used) != canon(pre) else "identical")
+        same = canon(used) == canon(pre)
+        record(f"posthoc:{d}:thresholds-unchanged", same,
+               "thresholds differ between preregistration and result" if not same else "identical")
         # leakage: observed metrics must be subset of preregistered metrics
         pre_metrics = set(prereg.get("metrics", {}).get("secondary_metrics", []))
         primary = prereg.get("metrics", {}).get("primary_metric", "") or ""
@@ -235,7 +265,7 @@ def main(argv=None):
             pre_metrics.add(primary)
         obs_metrics = set(result_inst.get("metrics_observed", {}).keys())
         leaked = obs_metrics - pre_metrics
-        record("leakage:no-unregistered-metrics", not leaked,
+        record(f"leakage:{d}:no-unregistered-metrics", not leaked,
                f"unregistered metrics used: {leaked}" if leaked else "none")
 
     # 6. E-axis transition legality
