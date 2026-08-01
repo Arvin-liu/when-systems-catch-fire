@@ -1,0 +1,46 @@
+{
+  "adjudication_basis": "The sealed first run preserved all 117 raw HTTP-200 responses and hashes. The outcome is bounded to registry/Crossref versus OpenAlex bibliographic metadata; no content or physics claim is made.",
+  "e_axis_decision": {
+    "changed": false,
+    "decision": "RETAIN_E1_METADATA_CONSISTENCY_WITH_IDENTIFIED_NULLS_AND_AMBIGUITIES",
+    "from_level": "E1",
+    "to_level": "E1"
+  },
+  "human_readable_ref": "evidence-program/runs/IGNITION-EVIDENCE-PILOT-R1-OPENALEX-DOI-REPLICATION-20260801/RESULT.md",
+  "metrics_observed": {
+    "contradicted_count": 0,
+    "duplicate_count": 1,
+    "http_200_count": 117,
+    "invalid_count": 0,
+    "multiple_exact_doi_count": 4,
+    "no_exact_doi_count": 3,
+    "null_count": 7,
+    "partial_count": 8,
+    "population_records": 117,
+    "primary_denominator": 116,
+    "primary_support_rate": 0.9396551724137931,
+    "supported_count": 101,
+    "unique_exact_match_count": 110
+  },
+  "outcome": "PARTIALLY_SUPPORTED",
+  "pilot_id": "DOI-OPENALEX-CROSS-CHECK",
+  "preregistration_ref": "evidence-program/preregistration/ZZ-IGNITION-PLANNER-OPENALEX-20260801.prereg.json",
+  "propagated_surfaces": [
+    "data/operations/iterations/110/openalex/",
+    "evidence-program/runs/IGNITION-EVIDENCE-PILOT-R1-OPENALEX-DOI-REPLICATION-20260801/",
+    "evidence-program/registry/task-110-portfolio-state.json",
+    "RESULTS/OPEN-QUESTIONS.md",
+    "docs/project-current-state.md",
+    "docs/editorial/articles/009-system-completion-state-and-independent-replication.md"
+  ],
+  "run_id": "IGNITION-EVIDENCE-PILOT-R1-OPENALEX-DOI-REPLICATION-20260801",
+  "thresholds_used": {
+    "contradicted": "canonical_id_match AND (title_ratio < 0.75 OR abs(year_delta) > 1 OR retraction mismatch)",
+    "duplicate_denominator": "is_duplicate_doi=true records remain visible but are excluded from primary rates",
+    "invalid": "HTTP/network acquisition failure after preregistered retries; never counted as support",
+    "null": "no unique exact normalized DOI match, missing required metadata, or unrecognized registry retraction status",
+    "partial": "canonical_id_match AND no hard contradiction AND (year_delta == 1 OR 0.75 <= title_ratio < 0.92)",
+    "supported": "canonical_id_match AND title_ratio >= 0.92 AND abs(year_delta) <= 1 AND retraction_match"
+  },
+  "uncertainty_output": "Full 117-record census; primary denominator 116 after one declared duplicate. Seven primary records are null/inconclusive due to four multiple-exact-DOI ambiguities and three no-exact-match responses."
+}
