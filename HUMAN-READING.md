@@ -9,6 +9,8 @@
 3. 读 [纠正与撤回](./RESULTS/CORRECTIONS.md)，避免继承已经撤回的强结论。
 4. 读 [开放问题](./RESULTS/OPEN-QUESTIONS.md)，区分完成的治理工作与尚未完成的科学、数学和实证工作。
 
+5. 读 [任务 110 的独立复制结果](./evidence-program/runs/IGNITION-EVIDENCE-PILOT-R1-OPENALEX-DOI-REPLICATION-20260801/RESULT.md)，先确认 117 条完整返回、116 条主分母和 7 条 null，再读[完成状态与独立复制文章](./docs/editorial/articles/009-system-completion-state-and-independent-replication.md)。这里的“完成”是生命周期事实，不等于科学命题被证明。
+
 ## 按目的阅读
 
 |你的目的|先读|继续读|

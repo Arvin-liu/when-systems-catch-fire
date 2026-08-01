@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0.0",
+  "task_number": 110,
+  "historical_portfolio_sha256": "5cf1bdc7a7b35a32ad9d32bf2176c886c561c205f20c8617b6402902716b5cbd",
+  "frozen_task_109_weights_preserved": true,
+  "historical_source_preserved": "evidence-program/registry/candidate-portfolio.jsonl",
+  "state_overlay": [
+    {"candidate_id": "C-01", "claim_id": "SRC-REGISTRY-104-METADATA", "state": "COMPLETED_SUPPORTED", "active": false, "authority": "task 103 terminal Evidence Program run"},
+    {"candidate_id": "C-04", "claim_id": "FUNCTION-OS-V02-CORRECTNESS", "state": "COMPLETED_SUPPORTED", "active": false, "authority": "task 105 terminal benchmark result"},
+    {"candidate_id": "C-03", "claim_id": "DOI-OPENALEX-CROSS-CHECK", "state": "COMPLETED_PARTIAL", "active": false, "authority": "task 110 sealed OpenAlex first-run adjudication"}
+  ],
+  "corrected_active_queue": {
+    "top": "CF-apple_gravity_failure",
+    "reserves": ["CF-cross_domain_synergy_risk", "CF-technology_economic_growth_failure"],
+    "substantive_evidence_candidate": "C-03",
+    "substantive_evidence_candidate_state": "COMPLETED_PARTIAL"
+  },
+  "selection_rule": "Completed outcomes of any class remain visible in history and are not silently rescheduled. Reopening requires an explicit owner-authorized revised protocol and a new candidate identity or revision link.",
+  "no_task_111": true
+}

@@ -284,6 +284,26 @@
   - 可搜索名称：IMPLICIT-490B7CA4E6CC3665 / "title": "121Q5 Final Report — Canonical Function OS v0.2", / IMPLICIT-490B7CA4E6CC3665 / IMPLICIT-3F5DAE6F783DB582
   - 来源：`analysis/corpus-relation/article_cluster_candidates.json`
   - 依赖：—；被引用：—
+- ["title": "A bounded subset of Function OS v0.2 operators reproduces reference numeric outputs on a curated fixture.",](../../../data/operations/iterations/110/candidate_inventory.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-25229C4D1BD9BDE2 / "title": "A bounded subset of Function OS v0.2 operators reproduces reference numeric outputs on a curated fixture.", / IMPLICIT-25229C4D1BD9BDE2 / IMPLICIT-3798D8F9CC3D7D15
+  - 来源：`data/operations/iterations/110/candidate_inventory.json`
+  - 依赖：—；被引用：—
+- ["title": "A bounded subset of Function OS v0.2 operators reproduces reference numeric outputs on a curated fixture.",](../../../data/operations/iterations/109/candidate_inventory.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-3798D8F9CC3D7D15 / "title": "A bounded subset of Function OS v0.2 operators reproduces reference numeric outputs on a curated fixture.", / IMPLICIT-3798D8F9CC3D7D15 / IMPLICIT-25229C4D1BD9BDE2
+  - 来源：`data/operations/iterations/109/candidate_inventory.json`
+  - 依赖：—；被引用：—
+- ["title": "A bounded subset of Function OS v0.2 operators reproduces reference numeric outputs on a curated fixture.",](../../../data/operations/iterations/109/dossiers/C-04.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-9ED5F0BA1590B48F / "title": "A bounded subset of Function OS v0.2 operators reproduces reference numeric outputs on a curated fixture.", / IMPLICIT-9ED5F0BA1590B48F / IMPLICIT-25229C4D1BD9BDE2
+  - 来源：`data/operations/iterations/109/dossiers/C-04.json`
+  - 依赖：—；被引用：—
+- ["title": "A bounded subset of Function OS v0.2 operators reproduces reference numeric outputs on a curated fixture.",](../../../data/operations/iterations/110/completed_register.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-F9E089F948EDA776 / "title": "A bounded subset of Function OS v0.2 operators reproduces reference numeric outputs on a curated fixture.", / IMPLICIT-F9E089F948EDA776 / IMPLICIT-25229C4D1BD9BDE2
+  - 来源：`data/operations/iterations/110/completed_register.json`
+  - 依赖：—；被引用：—
 - ["title": "AI 泛化能力从何而来",](../../../data/storytelling_backlog.json)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-07E05004ADD40632 / "title": "AI 泛化能力从何而来", / IMPLICIT-07E05004ADD40632 / IMPLICIT-B33F79DBF3F44907
@@ -474,6 +494,21 @@
   - 可搜索名称：IMPLICIT-A96710997585ECF3 / "title": "Function-Paradigm Full-Text Review Report — IGNITION-121", / IMPLICIT-A96710997585ECF3 / IMPLICIT-21794112DBDECD5F
   - 来源：`analysis/corpus-relation/article_cluster_candidates.json`
   - 依赖：—；被引用：—
+- ["title": "GAP-ITERATION-DELTA",](../../../data/operations/iterations/109/candidate_inventory.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-6F590D81709F273B / "title": "GAP-ITERATION-DELTA", / IMPLICIT-6F590D81709F273B / IMPLICIT-70057D750C09DFF6
+  - 来源：`data/operations/iterations/109/candidate_inventory.json`
+  - 依赖：—；被引用：—
+- ["title": "GAP-ITERATION-DELTA",](../../../data/operations/iterations/110/candidate_inventory.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-70057D750C09DFF6 / "title": "GAP-ITERATION-DELTA", / IMPLICIT-70057D750C09DFF6 / IMPLICIT-6F590D81709F273B
+  - 来源：`data/operations/iterations/110/candidate_inventory.json`
+  - 依赖：—；被引用：—
+- ["title": "GAP-ITERATION-DELTA",](../../../data/operations/iterations/109/dossiers/GAP-ITERATION-DELTA.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-AA9EB10C1E98A089 / "title": "GAP-ITERATION-DELTA", / IMPLICIT-AA9EB10C1E98A089 / IMPLICIT-6F590D81709F273B
+  - 来源：`data/operations/iterations/109/dossiers/GAP-ITERATION-DELTA.json`
+  - 依赖：—；被引用：—
 - ["title": "Hy3 Function OS v0.2.1 Hardening & Reproducibility",](../../../data/external-research/121-fulltext-resolver/121q6/121q6-run-state.json)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-DCA7CE2BDC2742FC / "title": "Hy3 Function OS v0.2.1 Hardening & Reproducibility", / IMPLICIT-DCA7CE2BDC2742FC
@@ -654,10 +689,100 @@
   - 可搜索名称：IMPLICIT-E1F15011A468E11F / "title": "Neural Functional Transformers", / IMPLICIT-E1F15011A468E11F / IMPLICIT-61517E1AEFB05F7B
   - 来源：`data/external-research/121-fulltext-resolver/121q2/family-synthesis/F1.json`
   - 依赖：—；被引用：—
+- ["title": "No executable state-space and transition-law structure for deterministic, stochastic, or hybrid dynamics.",](../../../data/operations/iterations/109/dossiers/psd-gap-003.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-74D5E524D6AD5A22 / "title": "No executable state-space and transition-law structure for deterministic, stochastic, or hybrid dynamics.", / IMPLICIT-74D5E524D6AD5A22 / IMPLICIT-8F0BE6508F9D3A5F
+  - 来源：`data/operations/iterations/109/dossiers/psd-gap-003.json`
+  - 依赖：—；被引用：—
+- ["title": "No executable state-space and transition-law structure for deterministic, stochastic, or hybrid dynamics.",](../../../data/operations/iterations/110/candidate_inventory.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-8F0BE6508F9D3A5F / "title": "No executable state-space and transition-law structure for deterministic, stochastic, or hybrid dynamics.", / IMPLICIT-8F0BE6508F9D3A5F / IMPLICIT-74D5E524D6AD5A22
+  - 来源：`data/operations/iterations/110/candidate_inventory.json`
+  - 依赖：—；被引用：—
+- ["title": "No executable state-space and transition-law structure for deterministic, stochastic, or hybrid dynamics.",](../../../data/operations/iterations/109/candidate_inventory.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-A202246B8D3E3CC1 / "title": "No executable state-space and transition-law structure for deterministic, stochastic, or hybrid dynamics.", / IMPLICIT-A202246B8D3E3CC1 / IMPLICIT-74D5E524D6AD5A22
+  - 来源：`data/operations/iterations/109/candidate_inventory.json`
+  - 依赖：—；被引用：—
+- ["title": "No object distinguishes aleatoric probability, epistemic uncertainty, measurement error, sampling variation, subjective prior, posterior, an",](../../../data/operations/iterations/109/candidate_inventory.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-A83E324A95D93EDA / "title": "No object distinguishes aleatoric probability, epistemic uncertainty, measurement error, sampling variation, subjective prior, posterior, an", / IMPLICIT-A83E324A95D93EDA / IMPLICIT-ACA75E69C33CA9AD
+  - 来源：`data/operations/iterations/109/candidate_inventory.json`
+  - 依赖：—；被引用：—
+- ["title": "No object distinguishes aleatoric probability, epistemic uncertainty, measurement error, sampling variation, subjective prior, posterior, an",](../../../data/operations/iterations/109/dossiers/psd-gap-001.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-ACA75E69C33CA9AD / "title": "No object distinguishes aleatoric probability, epistemic uncertainty, measurement error, sampling variation, subjective prior, posterior, an", / IMPLICIT-ACA75E69C33CA9AD / IMPLICIT-A83E324A95D93EDA
+  - 来源：`data/operations/iterations/109/dossiers/psd-gap-001.json`
+  - 依赖：—；被引用：—
+- ["title": "No object distinguishes aleatoric probability, epistemic uncertainty, measurement error, sampling variation, subjective prior, posterior, an",](../../../data/operations/iterations/110/candidate_inventory.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-D9EC841D6396C2FF / "title": "No object distinguishes aleatoric probability, epistemic uncertainty, measurement error, sampling variation, subjective prior, posterior, an", / IMPLICIT-D9EC841D6396C2FF / IMPLICIT-A83E324A95D93EDA
+  - 来源：`data/operations/iterations/110/candidate_inventory.json`
+  - 依赖：—；被引用：—
+- ["title": "No representation of perturbation, integration response, rejection, local reconfiguration, oscillation, cascade or delayed transfer.",](../../../data/operations/iterations/109/candidate_inventory.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-3FA1315BB6E8221B / "title": "No representation of perturbation, integration response, rejection, local reconfiguration, oscillation, cascade or delayed transfer.", / IMPLICIT-3FA1315BB6E8221B / IMPLICIT-7F505C59A85AC592
+  - 来源：`data/operations/iterations/109/candidate_inventory.json`
+  - 依赖：—；被引用：—
+- ["title": "No representation of perturbation, integration response, rejection, local reconfiguration, oscillation, cascade or delayed transfer.",](../../../data/operations/iterations/109/dossiers/arn-gap-002.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-7F505C59A85AC592 / "title": "No representation of perturbation, integration response, rejection, local reconfiguration, oscillation, cascade or delayed transfer.", / IMPLICIT-7F505C59A85AC592 / IMPLICIT-3FA1315BB6E8221B
+  - 来源：`data/operations/iterations/109/dossiers/arn-gap-002.json`
+  - 依赖：—；被引用：—
+- ["title": "No representation of perturbation, integration response, rejection, local reconfiguration, oscillation, cascade or delayed transfer.",](../../../data/operations/iterations/110/candidate_inventory.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-866360AD4BFEA4FA / "title": "No representation of perturbation, integration response, rejection, local reconfiguration, oscillation, cascade or delayed transfer.", / IMPLICIT-866360AD4BFEA4FA / IMPLICIT-3FA1315BB6E8221B
+  - 来源：`data/operations/iterations/110/candidate_inventory.json`
+  - 依赖：—；被引用：—
+- ["title": "No schema-level separation of observational conditionals from intervention distributions.",](../../../data/operations/iterations/109/candidate_inventory.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-BAFBA7310E1CA5C5 / "title": "No schema-level separation of observational conditionals from intervention distributions.", / IMPLICIT-BAFBA7310E1CA5C5 / IMPLICIT-D9EC2F9355B407FD
+  - 来源：`data/operations/iterations/109/candidate_inventory.json`
+  - 依赖：—；被引用：—
+- ["title": "No schema-level separation of observational conditionals from intervention distributions.",](../../../data/operations/iterations/110/candidate_inventory.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-D9EC2F9355B407FD / "title": "No schema-level separation of observational conditionals from intervention distributions.", / IMPLICIT-D9EC2F9355B407FD / IMPLICIT-BAFBA7310E1CA5C5
+  - 来源：`data/operations/iterations/110/candidate_inventory.json`
+  - 依赖：—；被引用：—
+- ["title": "No schema-level separation of observational conditionals from intervention distributions.",](../../../data/operations/iterations/109/dossiers/psd-gap-004.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-F6AA8D4D4DEE002F / "title": "No schema-level separation of observational conditionals from intervention distributions.", / IMPLICIT-F6AA8D4D4DEE002F / IMPLICIT-BAFBA7310E1CA5C5
+  - 来源：`data/operations/iterations/109/dossiers/psd-gap-004.json`
+  - 依赖：—；被引用：—
 - ["title": "Optimal Convergence Rates for Neural Operators",](../../../data/external-research/121-fulltext-resolver/121cx/evidence-cards-extreme/S120-026.json)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-E70E96219B334BE8 / "title": "Optimal Convergence Rates for Neural Operators", / IMPLICIT-E70E96219B334BE8
   - 来源：`data/external-research/121-fulltext-resolver/121cx/evidence-cards-extreme/S120-026.json`
+  - 依赖：—；被引用：—
+- ["title": "OQ-103-5：Function OS v0.2 正确性（**已完成 · 有界**）",](../../../data/operations/iterations/110/candidate_inventory.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-47E7A57678D100DD / "title": "OQ-103-5：Function OS v0.2 正确性（**已完成 · 有界**）", / IMPLICIT-47E7A57678D100DD / IMPLICIT-763596DD2A87978A
+  - 来源：`data/operations/iterations/110/candidate_inventory.json`
+  - 依赖：—；被引用：—
+- ["title": "OQ-103-5：Function OS v0.2 正确性（**已完成 · 有界**）",](../../../data/operations/iterations/109/candidate_inventory.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-763596DD2A87978A / "title": "OQ-103-5：Function OS v0.2 正确性（**已完成 · 有界**）", / IMPLICIT-763596DD2A87978A / IMPLICIT-47E7A57678D100DD
+  - 来源：`data/operations/iterations/109/candidate_inventory.json`
+  - 依赖：—；被引用：—
+- ["title": "OQ-103-5：Function OS v0.2 正确性（**已完成 · 有界**）",](../../../data/operations/iterations/109/dossiers/OQ-09468.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-8D89384E2BC0A3EF / "title": "OQ-103-5：Function OS v0.2 正确性（**已完成 · 有界**）", / IMPLICIT-8D89384E2BC0A3EF / IMPLICIT-47E7A57678D100DD
+  - 来源：`data/operations/iterations/109/dossiers/OQ-09468.json`
+  - 依赖：—；被引用：—
+- ["title": "OQ-103-6：Function OS v0.2 之后的剩余问题",](../../../data/operations/iterations/109/candidate_inventory.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-32D70453D9AEBE42 / "title": "OQ-103-6：Function OS v0.2 之后的剩余问题", / IMPLICIT-32D70453D9AEBE42 / IMPLICIT-62217A0A72711D0D
+  - 来源：`data/operations/iterations/109/candidate_inventory.json`
+  - 依赖：—；被引用：—
+- ["title": "OQ-103-6：Function OS v0.2 之后的剩余问题",](../../../data/operations/iterations/110/candidate_inventory.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-62217A0A72711D0D / "title": "OQ-103-6：Function OS v0.2 之后的剩余问题", / IMPLICIT-62217A0A72711D0D / IMPLICIT-32D70453D9AEBE42
+  - 来源：`data/operations/iterations/110/candidate_inventory.json`
+  - 依赖：—；被引用：—
+- ["title": "OQ-103-6：Function OS v0.2 之后的剩余问题",](../../../data/operations/iterations/109/dossiers/OQ-28307.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-FB21F1164B34139A / "title": "OQ-103-6：Function OS v0.2 之后的剩余问题", / IMPLICIT-FB21F1164B34139A / IMPLICIT-32D70453D9AEBE42
+  - 来源：`data/operations/iterations/109/dossiers/OQ-28307.json`
   - 依赖：—；被引用：—
 - ["title": "Parsel: Algorithmic Reasoning with Language Models by Composing Decompositions"](../../../data/external-research/121-fulltext-resolver/121q3/function-os/nodes/N3.json)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -884,6 +1009,16 @@
   - 可搜索名称：IMPLICIT-5708CF3148EFF85C / # === CHECK 3: Fulltext reviewed threshold (after downgrades) === / IMPLICIT-5708CF3148EFF85C
   - 来源：`data/external-research/106-105-correction/106-validator.py`
   - 依赖：—；被引用：—
+- [# ============================ MUTATION TESTS (§6) ============================](../../../tests/iteration_planner/test_completion_reconciliation.py)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-C3E60CAE54072AD4 / # ============================ MUTATION TESTS (§6) ============================ / IMPLICIT-C3E60CAE54072AD4
+  - 来源：`tests/iteration_planner/test_completion_reconciliation.py`
+  - 依赖：—；被引用：—
+- [# ============================ NEGATIVE TESTS (§6) ============================](../../../tests/iteration_planner/test_completion_reconciliation.py)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-94757C7561FFFF99 / # ============================ NEGATIVE TESTS (§6) ============================ / IMPLICIT-94757C7561FFFF99
+  - 来源：`tests/iteration_planner/test_completion_reconciliation.py`
+  - 依赖：—；被引用：—
 - [# `len(profiles) == 52` (now 59 components; the count is not the contract — the bijection is).](../../../tests/test_production_execution_authority.py)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-7603AC928A7EB5C1 / # `len(profiles) == 52` (now 59 components; the count is not the contract — the bijection is). / IMPLICIT-7603AC928A7EB5C1
@@ -989,6 +1124,11 @@
   - 可搜索名称：IMPLICIT-FB0F0340DBD1AEDC / # Migration Plan / IMPLICIT-FB0F0340DBD1AEDC
   - 来源：`docs/math-foundation/07-migration-plan.md`
   - 依赖：—；被引用：—
+- [# Next Iteration Recommendation — Task 109](../../../data/operations/iterations/109/next_iteration_recommendation.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-06FE193A056CB70D / # Next Iteration Recommendation — Task 109 / IMPLICIT-06FE193A056CB70D
+  - 来源：`data/operations/iterations/109/next_iteration_recommendation.md`
+  - 依赖：—；被引用：—
 - [# point-fire project integration from audit through CI](../../../data/architecture/adaptive-relational-network/examples/point-fire-project-integration.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-A763F2DD75CCBD77 / # point-fire project integration from audit through CI / IMPLICIT-A763F2DD75CCBD77
@@ -998,6 +1138,11 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-2C13C5F548AA4EAD / # Preregistration Protocol — Crossref DOI Re-verification Pilot (Task 103 §5) / IMPLICIT-2C13C5F548AA4EAD
   - 来源：`evidence-program/preregistration/IGNITION-EVIDENCE-PILOT-R1-CROSSREF-DOI-VERIFICATION.protocol.md`
+  - 依赖：—；被引用：—
+- [# Preregistration — Task 110 OpenAlex Independent Replication Pilot (C-03)](../../../data/operations/iterations/110/openalex/PREREGISTRATION.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-2E8A2F551430F78D / # Preregistration — Task 110 OpenAlex Independent Replication Pilot (C-03) / IMPLICIT-2E8A2F551430F78D
+  - 来源：`data/operations/iterations/110/openalex/PREREGISTRATION.md`
   - 依赖：—；被引用：—
 - [# sub(10,4)=6 (feed add output as 'a')](../../../function-os-candidate/v0.2/tests/test_n8_real_router.py)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -1084,6 +1229,11 @@
   - 可搜索名称：IMPLICIT-5773A426CE2E3E51 / ## 13. Method Self-Iteration / IMPLICIT-5773A426CE2E3E51
   - 来源：`ITERATION.md`
   - 依赖：—；被引用：—
+- [## 13. Primary and secondary metrics](../../../data/operations/iterations/110/openalex/PREREGISTRATION.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-D5359C96305EE879 / ## 13. Primary and secondary metrics / IMPLICIT-D5359C96305EE879
+  - 来源：`data/operations/iterations/110/openalex/PREREGISTRATION.md`
+  - 依赖：—；被引用：—
 - [## 14. Boundary With Psi0 / Function Layer / Case Layer](../../../inputs/020/formal-protocol-promotion-standard.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-C232637CB90F59EC / ## 14. Boundary With Psi0 / Function Layer / Case Layer / IMPLICIT-C232637CB90F59EC
@@ -1133,6 +1283,11 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-27AC2D3036E1E5F9 / ## 5. Safety Considerations / IMPLICIT-27AC2D3036E1E5F9
   - 来源：`reports/external-research/120-function-os-architecture-candidate-report.md`
+  - 依赖：—；被引用：—
+- [## 6. Authentication / polite-pool configuration (no secrets)](../../../data/operations/iterations/110/openalex/PREREGISTRATION.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-7CBACE5598C4F1D6 / ## 6. Authentication / polite-pool configuration (no secrets) / IMPLICIT-7CBACE5598C4F1D6
+  - 来源：`data/operations/iterations/110/openalex/PREREGISTRATION.md`
   - 依赖：—；被引用：—
 - [## 6. Hard Gates](../../../inputs/020/formal-protocol-promotion-standard.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -1308,6 +1463,11 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-C11E9EDAA22D725B / ## Rationale for Reclassification / IMPLICIT-C11E9EDAA22D725B
   - 来源：`reports/foundation-architecture/083-escalation-routing-report.md`
+  - 依赖：—；被引用：—
+- [## Recommended next substantive iteration](../../../data/operations/iterations/109/next_iteration_recommendation.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-63FCCA823A5B9596 / ## Recommended next substantive iteration / IMPLICIT-63FCCA823A5B9596
+  - 来源：`data/operations/iterations/109/next_iteration_recommendation.md`
   - 依赖：—；被引用：—
 - [## Required Follow-up Before Effective Migration](../../../docs/governance/licensing-rights-inventory.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -2343,164 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-3F56695F8D84A027 / #163-#170 定投指数基金碰撞（8条）→定投凯利保守性、投资遮蔽跨域放大等。 / IMPLICIT-3F56695F8D84A027 / IMPLICIT-4A769ECA116CEB2A
   - 来源：`统一函数总表/0200-D163-定投凯利保守性.md`
-  - 依赖：—；被引用：—
-- [#163-#170 定投指数基金碰撞（8条）→定投凯利保守性、投资遮蔽跨域放大等。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0202-D165-%E5%AE%9A%E6%8A%95%E5%87%AF%E5%88%A9%E4%BF%9D%E5%AE%88%E6%80%A7.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-4A769ECA116CEB2A / #163-#170 定投指数基金碰撞（8条）→定投凯利保守性、投资遮蔽跨域放大等。 / IMPLICIT-4A769ECA116CEB2A / IMPLICIT-3F56695F8D84A027
-  - 来源：`统一函数总表/0202-D165-定投凯利保守性.md`
-  - 依赖：—；被引用：—
-- [#163-#170 定投指数基金碰撞（8条）→定投凯利保守性、投资遮蔽跨域放大等。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0182-D145-%E6%8A%95%E8%B5%84%E7%9B%B8%E5%85%B3%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-7260E63F7390A5D7 / #163-#170 定投指数基金碰撞（8条）→定投凯利保守性、投资遮蔽跨域放大等。 / IMPLICIT-7260E63F7390A5D7 / IMPLICIT-3F56695F8D84A027
-  - 来源：`统一函数总表/0182-D145-投资相关函数.md`
-  - 依赖：—；被引用：—
-- [#163-#170 定投指数基金碰撞（8条）→定投凯利保守性、投资遮蔽跨域放大等。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0204-D167-%E5%AE%9A%E6%8A%95%E5%87%AF%E5%88%A9%E4%BF%9D%E5%AE%88%E6%80%A7.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-9B39557502612904 / #163-#170 定投指数基金碰撞（8条）→定投凯利保守性、投资遮蔽跨域放大等。 / IMPLICIT-9B39557502612904 / IMPLICIT-3F56695F8D84A027
-  - 来源：`统一函数总表/0204-D167-定投凯利保守性.md`
-  - 依赖：—；被引用：—
-- [#163-#170 定投指数基金碰撞（8条）→定投凯利保守性、投资遮蔽跨域放大等。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0203-D166-%E5%AE%9A%E6%8A%95%E5%87%AF%E5%88%A9%E4%BF%9D%E5%AE%88%E6%80%A7.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-B248E4789A2A99DB / #163-#170 定投指数基金碰撞（8条）→定投凯利保守性、投资遮蔽跨域放大等。 / IMPLICIT-B248E4789A2A99DB / IMPLICIT-3F56695F8D84A027
-  - 来源：`统一函数总表/0203-D166-定投凯利保守性.md`
-  - 依赖：—；被引用：—
-- [#163-#170 定投指数基金碰撞（8条）→定投凯利保守性、投资遮蔽跨域放大等。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0205-D168-%E5%AE%9A%E6%8A%95%E5%87%AF%E5%88%A9%E4%BF%9D%E5%AE%88%E6%80%A7.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-BC915F284EDFD17C / #163-#170 定投指数基金碰撞（8条）→定投凯利保守性、投资遮蔽跨域放大等。 / IMPLICIT-BC915F284EDFD17C / IMPLICIT-3F56695F8D84A027
-  - 来源：`统一函数总表/0205-D168-定投凯利保守性.md`
-  - 依赖：—；被引用：—
-- [#163-#170 定投指数基金碰撞（8条）→定投凯利保守性、投资遮蔽跨域放大等。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0201-D164-%E5%AE%9A%E6%8A%95%E5%87%AF%E5%88%A9%E4%BF%9D%E5%AE%88%E6%80%A7.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-CF07144B6D689397 / #163-#170 定投指数基金碰撞（8条）→定投凯利保守性、投资遮蔽跨域放大等。 / IMPLICIT-CF07144B6D689397 / IMPLICIT-3F56695F8D84A027
-  - 来源：`统一函数总表/0201-D164-定投凯利保守性.md`
-  - 依赖：—；被引用：—
-- [#163-#170 定投指数基金碰撞（8条）→定投凯利保守性、投资遮蔽跨域放大等。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0197-D160-%E5%AE%9A%E6%8A%95%E5%87%AF%E5%88%A9%E4%BF%9D%E5%AE%88%E6%80%A7.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-DE662FAFD1F32C17 / #163-#170 定投指数基金碰撞（8条）→定投凯利保守性、投资遮蔽跨域放大等。 / IMPLICIT-DE662FAFD1F32C17 / IMPLICIT-3F56695F8D84A027
-  - 来源：`统一函数总表/0197-D160-定投凯利保守性.md`
-  - 依赖：—；被引用：—
-- [#163-#170 定投指数基金碰撞（8条）→定投凯利保守性、投资遮蔽跨域放大等。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0199-D162-%E5%AE%9A%E6%8A%95%E5%87%AF%E5%88%A9%E4%BF%9D%E5%AE%88%E6%80%A7%E9%AA%8C%E8%AF%81.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-EBA950E4940DBAA1 / #163-#170 定投指数基金碰撞（8条）→定投凯利保守性、投资遮蔽跨域放大等。 / IMPLICIT-EBA950E4940DBAA1 / IMPLICIT-3F56695F8D84A027
-  - 来源：`统一函数总表/0199-D162-定投凯利保守性验证.md`
-  - 依赖：—；被引用：—
-- [#163-#170 定投指数基金碰撞（8条），验证了定投在投资域的点火框架适用性。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0207-D170-%E5%AE%9A%E6%8A%95%E5%87%AF%E5%88%A9%E4%BF%9D%E5%AE%88%E6%80%A7%E9%AA%8C%E8%AF%81.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-28287DBBCD4CBC40 / #163-#170 定投指数基金碰撞（8条），验证了定投在投资域的点火框架适用性。 / IMPLICIT-28287DBBCD4CBC40
-  - 来源：`统一函数总表/0207-D170-定投凯利保守性验证.md`
-  - 依赖：—；被引用：—
-- [#90结构保守性元定理→设计结构让估计不必要 > 估计准确后保守执行。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0186-D149-%E7%BB%93%E6%9E%84%E4%BF%9D%E5%AE%88%E6%80%A7%E5%85%83%E5%AE%9A%E7%90%86.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-16196EEEA9D2AA76 / #90结构保守性元定理→设计结构让估计不必要 > 估计准确后保守执行。 / IMPLICIT-16196EEEA9D2AA76 / IMPLICIT-D988AF7804DC7D63
-  - 来源：`统一函数总表/0186-D149-结构保守性元定理.md`
-  - 依赖：—；被引用：—
-- [#90结构保守性元定理→设计结构让估计不必要 > 估计准确后保守执行。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0129-D90-%E7%BB%93%E6%9E%84%E4%BF%9D%E5%AE%88%E6%80%A7%E5%85%83%E5%AE%9A%E7%90%86.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-D988AF7804DC7D63 / #90结构保守性元定理→设计结构让估计不必要 > 估计准确后保守执行。 / IMPLICIT-D988AF7804DC7D63 / IMPLICIT-16196EEEA9D2AA76
-  - 来源：`统一函数总表/0129-D90-结构保守性元定理.md`
-  - 依赖：—；被引用：—
-- [#91倒U型统一生成定理→所有"最优在中间"是同一投影。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0026-T16-%E4%B8%A4%E4%B8%AA%E5%8F%8D%E5%90%91%E5%8D%95%E8%B0%83%E5%87%BD%E6%95%B0%E7%9B%B8%E4%B9%98%E5%BF%85%E7%84%B6%E7%94%9F%E6%88%90%E5%80%92U%E5%9E%8B.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-4A88C5C00FCEAC09 / #91倒U型统一生成定理→所有"最优在中间"是同一投影。 / IMPLICIT-4A88C5C00FCEAC09 / IMPLICIT-9C0A33A7E430BDB1
-  - 来源：`统一函数总表/0026-T16-两个反向单调函数相乘必然生成倒U型.md`
-  - 依赖：—；被引用：—
-- [#91倒U型统一生成定理→所有"最优在中间"是同一投影。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0130-D91-%E5%80%92U%E5%9E%8B%E7%BB%9F%E4%B8%80%E7%94%9F%E6%88%90%E5%AE%9A%E7%90%86.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-9C0A33A7E430BDB1 / #91倒U型统一生成定理→所有"最优在中间"是同一投影。 / IMPLICIT-9C0A33A7E430BDB1 / IMPLICIT-4A88C5C00FCEAC09
-  - 来源：`统一函数总表/0130-D91-倒U型统一生成定理.md`
-  - 依赖：—；被引用：—
-- [#91倒U型统一生成定理→所有"最优在中间"是同一投影。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0187-D150-%E5%80%92U%E5%9E%8B%E7%BB%9F%E4%B8%80%E7%94%9F%E6%88%90%E5%AE%9A%E7%90%86.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-EFFA7EDD53E8A39D / #91倒U型统一生成定理→所有"最优在中间"是同一投影。 / IMPLICIT-EFFA7EDD53E8A39D / IMPLICIT-4A88C5C00FCEAC09
-  - 来源：`统一函数总表/0187-D150-倒U型统一生成定理.md`
-  - 依赖：—；被引用：—
-- [("A12", drifted_projection),](../../../tools/operations/run_stage_snapshot_responsibility_cases.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-c7a0dd9800efb520 / ("A12", drifted_projection),
-  - 来源：`tools/operations/run_stage_snapshot_responsibility_cases.py`
-  - 依赖：A12；被引用：—
-- [("call_import", '__import__("os") == result', {"x": 5}),](../../../function-os-candidate/v0.2/benchmark/generate_corpus.py)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-952DD50D89FE89A1 / ("call_import", '__import__("os") == result', {"x": 5}), / IMPLICIT-952DD50D89FE89A1
-  - 来源：`function-os-candidate/v0.2/benchmark/generate_corpus.py`
-  - 依赖：—；被引用：—
-- [**原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0260-C-260-r_cross=0不导致Ψ=0.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0260-C-260-r_cross%3D0%E4%B8%8D%E5%AF%BC%E8%87%B4%CE%A8%3D0.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-6B4B73BB348B8189 / **原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0260-C-260-r_cross=0不导致Ψ=0.md` / IMPLICIT-6B4B73BB348B8189
-  - 来源：`统一案例总表/0260-C-260-r_cross=0不导致Ψ=0.md`
-  - 依赖：—；被引用：—
-- [**原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0386-C-387-病毒的门控面切换——寄生前σ=0寄生后σ=1,没有中间态.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0386-C-387-%E7%97%85%E6%AF%92%E7%9A%84%E9%97%A8%E6%8E%A7%E9%9D%A2%E5%88%87%E6%8D%A2%E2%80%94%E2%80%94%E5%AF%84%E7%94%9F%E5%89%8D%CF%83%3D0%E5%AF%84%E7%94%9F%E5%90%8E%CF%83%3D1%2C%E6%B2%A1%E6%9C%89%E4%B8%AD%E9%97%B4%E6%80%81.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-840D0E1D6F111397 / **原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0386-C-387-病毒的门控面切换——寄生前σ=0寄生后σ=1,没有中间态.md` / IMPLICIT-840D0E1D6F111397
-  - 来源：`统一案例总表/0386-C-387-病毒的门控面切换——寄生前σ=0寄生后σ=1,没有中间态.md`
-  - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0001})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0001-C-1-%E5%91%A8%E5%85%AC%E5%88%B6%E7%A4%BC.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-E4AA05215222AEFE / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0001})=1\]. / IMPLICIT-E4AA05215222AEFE
-  - 来源：`统一案例总表/0001-C-1-周公制礼.md`
-  - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0002})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0002-C-2-%E5%AD%94%E5%AD%90%E4%BD%9C%E6%98%A5%E7%A7%8B.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-9783477BA70AE648 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0002})=1\]. / IMPLICIT-9783477BA70AE648
-  - 来源：`统一案例总表/0002-C-2-孔子作春秋.md`
-  - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0003})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0003-C-3-%E7%A7%A6%E7%BB%9F%E4%B8%80.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-9C3811E39B60055C / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0003})=1\]. / IMPLICIT-9C3811E39B60055C
-  - 来源：`统一案例总表/0003-C-3-秦统一.md`
-  - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0004})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0004-C-4-%E5%AD%9D%E6%96%87%E5%B8%9D%E6%B1%89%E5%8C%96.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-07C1354D459A56C3 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0004})=1\]. / IMPLICIT-07C1354D459A56C3
-  - 来源：`统一案例总表/0004-C-4-孝文帝汉化.md`
-  - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0005})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0005-C-5-%E5%94%90%E6%9C%9D%E5%BC%80%E6%94%BE.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-4E20FB0E558E0EE3 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0005})=1\]. / IMPLICIT-4E20FB0E558E0EE3
-  - 来源：`统一案例总表/0005-C-5-唐朝开放.md`
-  - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0006})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0006-C-6-%E5%85%83%E6%9C%9D.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-BFDB2FA96E30283C / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0006})=1\]. / IMPLICIT-BFDB2FA96E30283C
-  - 来源：`统一案例总表/0006-C-6-元朝.md`
-  - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0007})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0007-C-7-%E6%B8%85%E6%9C%9D%E6%BB%A1%E6%B1%89%E4%B8%80%E4%BD%93.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-4EC75C901161F3F4 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0007})=1\]. / IMPLICIT-4EC75C901161F3F4
-  - 来源：`统一案例总表/0007-C-7-清朝满汉一体.md`
-  - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0008})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0008-C-8-%E7%A9%86%E7%BD%95%E9%BB%98%E5%BE%B7%E5%88%9B%E4%BC%8A%E6%96%AF%E5%85%B0.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-704D83A851D1694F / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0008})=1\]. / IMPLICIT-704D83A851D1694F
-  - 来源：`统一案例总表/0008-C-8-穆罕默德创伊斯兰.md`
-  - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0009})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0009-C-9-%E7%A9%86%E7%BD%95%E9%BB%98%E5%BE%B7%E5%88%9B%E4%BC%8A%E6%96%AF%E5%85%B0.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-3E278BFEC8990810 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0009})=1\]. / IMPLICIT-3E278BFEC8990810
-  - 来源：`统一案例总表/0009-C-9-穆罕默德创伊斯兰.md`
-  - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0010})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0010-C-10-%E9%98%BF%E8%82%B2%E7%8E%8B%E7%9A%88%E4%BE%9D.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-F7A69F23FCEA8C7A / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0010})=1\]. / IMPLICIT-F7A69F23FCEA8C7A
-  - 来源：`统一案例总表/0010-C-10-阿育王皈依.md`
-  - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0011})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0011-C-11-%E8%8B%B1%E5%9B%BD%E5%85%89%E8%8D%A3%E9%9D%A9%E5%91%BD.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-BD5FBE2BB5A93373 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0011})=1\]. / IMPLICIT-BD5FBE2BB5A93373
-  - 来源：`统一案例总表/0011-C-11-英国光荣革命.md`
-  - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0012})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0012-C-12-%E9%98%BF%E6%8B%94%E6%96%AF%E9%9D%A9%E5%91%BD.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-7ECE46296381F4DF / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0012})=1\]. / IMPLICIT-7ECE46296381F4DF
-  - 来源：`统一案例总表/0012-C-12-阿拔斯革命.md`
-  - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0013})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0013-C-13-%E8%92%99%E5%8F%A4%E5%B8%9D%E5%9B%BD.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-E63012725A7EC78C / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0013})=1\]. / IMPLICIT-E63012725A7EC78C
-  - 来源：`统一案例总表/0013-C-13-蒙古帝国.md`
-  - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0014})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0014-C-14-%E6%9F%8F%E6%9E%97%E5%A2%99%E5%80%92%E5%A1%8C.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-559AA4BA5F43B8E6 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0014})=1\]. / IMPLICIT-559AA4BA5F43B8E6
-  - 来源：`统一案例总表/0014-C-14-柏林墙倒塌.md`
   - 依赖：—；被引用：—

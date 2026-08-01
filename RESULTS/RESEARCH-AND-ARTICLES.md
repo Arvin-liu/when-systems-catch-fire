@@ -17,6 +17,7 @@
 - [成果链](../docs/publication/zhiyuan-writing-showcase.md)：起始案例、点火分析、成稿与方法说明的可追溯入口。
 - [《边界之内的可信：Function OS v0.2 能力基准》](../docs/editorial/articles/007-bounded-trust-function-os-v02-capability-benchmark.md)：任务 105 基准与有界结论（原始/修复判定区分）。
 - [《已合并，却活在过去：公开当前真相为何会滞后》](../docs/editorial/articles/008-merged-but-stale-public-truth.md)：任务 106 的解释性文章。
+- [《一个系统怎样知道某件事已经做过，而不是把同一项工作再次排到未来？》](../docs/editorial/articles/009-system-completion-state-and-independent-replication.md)：任务 110 的完成状态、独立 oracle 与元数据主张上限文章。
 
 ## 架构与迭代研究
 
@@ -26,6 +27,10 @@
 - [任务 105 Function OS v0.2 有界基准](../docs/editorial/articles/007-bounded-trust-function-os-v02-capability-benchmark.md)（PR #161，已合并）。
 - [任务 106 合并后真相传播与当前真相调和](../ITERATION.md)（规范化 ledger / 9 维 impact 引擎 / current-truth 投影 / fail-closed 验证器）。
 - [历史结果台账](./CHRONOLOGY.md)：覆盖仓库现存研究、审计和迭代报告，每项保留来源与边界。
+
+任务 110 的 OpenAlex 复制产物位于
+`evidence-program/runs/IGNITION-EVIDENCE-PILOT-R1-OPENALEX-DOI-REPLICATION-20260801/`；
+它只回答跨源书目元数据一致性，不替代论文内容、科学真理或物理理论的证据。
 
 ## 阅读边界
 

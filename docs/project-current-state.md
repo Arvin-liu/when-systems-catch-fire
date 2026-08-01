@@ -60,6 +60,19 @@ GitHub 仓库 Markdown 是唯一持续维护的人类阅读层：
 - 自动审计是启发式门禁；它可以发现风险和阻断已知回弹，但不能替代专家裁决、同行评审或实验。
 - 主题分类、重要性规则和自动摘要只建立导航；machine-only 不表示资产不重要、错误或已被删除。
 
+## Task 110 current-state addition
+
+任务 110 将 planner 的完成状态与 Evidence Program 生命周期连接起来：任务 109 的
+原始 C-01 推荐被保留为历史缺陷，C-01/task 103 与 C-04/task 105 被登记为已完成并从
+active queue 排除；同一冻结评分模型的 task-110 projection 保留 C-03 作为已执行的
+OpenAlex 独立元数据复制。首轮主分母为 116：101 supported、8 partial、7 null、0
+contradicted、0 invalid。
+
+当前结论的上限仍是跨源书目元数据一致性。OpenAlex 结果不验证论文内容、科学真理、
+Pointfire 物理、MCF、PSD、ARN、现实因果或任何成熟度/处置提升。生命周期事实由候选
+事件、内容合并、终端化投影、annotated tag 和全新克隆 resolver 分层确认；不以旧候选
+标签自动生成下一任务，也不创建任务 111。
+
 ## 当前操作法
 
 Iteration Method `1.4.0` 仍是当前仓库操作法。任务 101 增加机器/人类双输出；任务 102 进一步要求有意义的知识变化声明人类目的地、What's New、主题、资产卡、分层阅读（适用时）、别名/supersession、来源和双向依赖。缺失、断链、断锚、过期、隐藏、无来源摘要或回弹时，CI 失败。

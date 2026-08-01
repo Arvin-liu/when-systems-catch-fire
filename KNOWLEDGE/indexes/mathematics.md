@@ -5,23 +5,23 @@
 索引按固定 500 条分片，避免单页过大而无法在 GitHub 渲染。分片连续覆盖本主题主归属资产，未按重要性删减。
 
 - [第 001 片](./mathematics/part-001.md)：1—500；"""Build the IGNITION-20260709-075 math-foundation audit artifacts. → ## 关联函数 / Related Functions
-- [第 002 片](./mathematics/part-002.md)：501—1000；## 关联函数 / Related Functions → /Users/zhiyuan/我的笔记/统一函数总表/0316-D280-容斥干预两步策略函数.md
-- [第 003 片](./mathematics/part-003.md)：1001—1500；/Users/zhiyuan/我的笔记/统一函数总表/0317-D281-极小点漂移-鲁棒性耦合函数.md → \[C-0786｜写地方偏方、食物、手艺\](../../统一案例总表/0781-C-0786-写地方偏方、食物、手艺.md)（原笔记编号：C584-2）
-- [第 004 片](./mathematics/part-004.md)：1501—2000；\[C-0787｜和孩子聊热点事件\](../../统一案例总表/0782-C-0787-和孩子聊热点事件.md)（原笔记编号：C584-3） → Case 层** 是已验证的现实/跨域案例（C 编号），由函数层实例化支撑。
-- [第 005 片](./mathematics/part-005.md)：2001—2500；Case 层是已验证实例（C 编号，current 至 C-809 级），由函数层支撑。 → errors.append(f"{rid}: high probability causal proof overclaim")
-- [第 006 片](./mathematics/part-006.md)：2501—3000；errors.append(f"{rid}: light cone reachability written as proof") → If upstream objects D_{D283} exist, compose F_{D283}=N(⊕_{g∈D_{D283}} g); otherwise treat F_{D283} as an axiom seed.
-- [第 007 片](./mathematics/part-007.md)：3001—3500；If upstream objects D_{D284} exist, compose F_{D284}=N(⊕_{g∈D_{D284}} g); otherwise treat F_{D284} as an axiom seed. → M1的容斥交叉相关增强D342波动累积：交叉相关项Cov∝pᵢpⱼ使总方差增大→波动累积更严重。增强因子∝1+Σᵢ<ⱼpᵢpⱼ/ΣVar(ΔΦᵢ)。"坏消息成群来"不只预测恶化还放大"折腾有害"——双重打击。
-- [第 008 片](./mathematics/part-008.md)：3501—4000；M1的容斥交叉相关增强D342波动累积：交叉相关项Cov∝pᵢpⱼ使总方差增大→波动累积更严重。增强因子∝1+Σᵢ<ⱼpᵢpⱼ/ΣVar(ΔΦᵢ)。"坏消息成群来"不只预测恶化还放大"折腾有害"——双重打击。 **扩展注释 / Extend → rationale=f"The complete root source describes this component's role and supports {typ}; missing types and proof prevent
-- [第 009 片](./mathematics/part-009.md)：4001—4500；re-classified in 083 based on claim_type=DEFINITION, proof_status=NOT_APPLICABLE_DEFINITION → title: "公理化体系×三层函数结构验证"
-- [第 010 片](./mathematics/part-010.md)：4501—5000；title: "公理化体系×三层函数结构验证" → Validation and lifecycle
-- [第 011 片](./mathematics/part-011.md)：5001—5500；Validation and lifecycle boundary → Within the source-defined scope, 过渡期窗口衰减函数(新发现) is adjudicated as STATE_TRANSITION: 书籍碰撞函数，书籍碰撞案例验证。. This is a model-in
-- [第 012 片](./mathematics/part-012.md)：5501—6000；Within the source-defined scope, 退出成本-遮蔽-时间三角约束函数 is adjudicated as METRIC: C_exit ↔ H ↔ T. This is a model-internal con → \| D507 \| 退出权空间总函数 \| C-20 改革开放 \| C-53 晨星 \| C-170 七层主权 \| C-196 AI 自主意识 \|
-- [第 013 片](./mathematics/part-013.md)：6001—6500；\| D595 \| 函数内容/机制表达/关联函数族/来源/边界/pending \| 无 frontmatter、无收敛状态、无对应案例字段、无变量解释段 \| 表述口语化易读；边界段清晰 \| 一句话定义、变量解释、对应案例、版本记录 \| 无"机 → 中文：M9的阶段过渡锐度由Φ高阶导数决定：阶段1→2∝\|d³Φ/dμ³\|，阶段2→3∝\|d²g_eff/dt²\|。高阶导数大→突变，小→渐变。物理相变→突变，生物衰老→渐变。
-- [第 014 片](./mathematics/part-014.md)：6501—7000；中文：M≅∪_i M_i，每个M_i配备8种标准几何之一，Perelman用Ricci流证明 → 从原文看，因果光锥统一函数，信息传播速度限制导致的因果约束在物理系统、认知系统、社会系统中展现统一结构。因果光锥不是物理特有，而是信息传播受限系统的… 更像是一个用于把局部现象拉到跨域统一结构上的函数。
-- [第 015 片](./mathematics/part-015.md)：7001—7500；从原文看，坏觉概率，P_bad = σ(H·p_prior - (1-H)·p)。 更像是一个用于把局部现象拉到跨域统一结构上的函数。 → 从这条案例看，中文：案例说明：拆油锯/搭Linux/修电脑——反设置即ε_aware安装 English: Rule-based English ren… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
-- [第 016 片](./mathematics/part-016.md)：7501—8000；从这条案例看，中文：案例说明：拓扑绝缘体 — 体态3D门控否决，表面=2D门控边界。核心函数：\[D158\](mathematics/part-017.md)：8001—8500；原始命题: --- kind: "function" seq: 611 id: "D601" raw_id: "D601" title: "角色覆盖主体身份" source: "IGNITION-20260709-047 collision → 周公制礼(R=真实)→八百年；#3秦统一(R=无)→15年亡；#10苏联(R=象征)→崩溃。
-- [第 018 片](./mathematics/part-018.md)：8501—9000；周公制礼(R_perceived≈R)→应约者有真实感知；#3秦统一(R_perceived≈0)→应约者感知不到退出权。 → 数学表达 / Expression: `F_{D297}(x) := M6的d=4稳定性约束基本物理常数：α增大~100倍→pᵢ>p*→极小点消失。精细结构常数α≈1/137不能太大→否则电磁否决概率超p*→d=4不稳定。常数不是任意的，必
-- [第 019 片](./mathematics/part-019.md)：9001—9500；数学表达 / Expression: `F_{D301}(x) := M2的漂移速率dμ/dt=-(Σᵢ αᵢ/(1-pᵢ)²)/(d²Φ/dμ²)。分母是Φ曲率——平坦区（物理大统一d²Φ/dμ²≈0）漂移极快，尖锐区漂移极慢。平坦=稳定 → 物理与数学复算
-- [第 020 片](./mathematics/part-020.md)：9501—10000；物理大一统不可能（降级为"关于绝对完备统一的结构性边界推论"，非物理学 no-go theorem） → 统一函数总表/0262-D226-物理存在的三重时间约束.md
-- [第 021 片](./mathematics/part-021.md)：10001—10500；统一函数总表/0263-D227-退相干-门控退化同构定理.md → 认知时空度规函数
-- [第 022 片](./mathematics/part-022.md)：10501—10843；认知时空度规函数，认知时空的度规由认知势能面的曲率决定。 → （函数表版本、案例表版本、P1 数据版本、是否校验通过）
+- [第 002 片](./mathematics/part-002.md)：501—1000；## 关联函数 / Related Functions → /Users/zhiyuan/我的笔记/统一函数总表/0301-D265-极小点漂移方向函数.md
+- [第 003 片](./mathematics/part-003.md)：1001—1500；/Users/zhiyuan/我的笔记/统一函数总表/0302-D266-容斥偏差加速函数.md → \[C-0771｜准备《长谈》花一个月\](../../统一案例总表/0766-C-0771-准备《长谈》花一个月.md)（原笔记编号：C580-3）
+- [第 004 片](./mathematics/part-004.md)：1501—2000；\[C-0772｜亲子共读一本书\](../../统一案例总表/0767-C-0772-亲子共读一本书.md)（原笔记编号：C580-4） → C(x,y)：角色占入口→能力附属→目标遮蔽→决策外移，因果明确。J⁺=1。
+- [第 005 片](./mathematics/part-005.md)：2001—2500；C(x,y)：隐含错位→显式化打分→可排序→冲突↓，因果明确。J⁺=1。 → Each verified record contains a source hash, locator, excerpt, controlled proposition, type rationale, logic form, assum
+- [第 006 片](./mathematics/part-006.md)：2501—3000；edge("e_l3_l4", "l3_arguments", "l4_proofs", "dependency", "ARCHITECTURE.md"), → If upstream objects D_{D244} exist, compose F_{D244}=N(⊕_{g∈D_{D244}} g); otherwise treat F_{D244} as an axiom seed.
+- [第 007 片](./mathematics/part-007.md)：3001—3500；If upstream objects D_{D245} exist, compose F_{D245}=N(⊕_{g∈D_{D245}} g); otherwise treat F_{D245} as an axiom seed. → Lowering, slot replacement, symbolic execution, branch interpolation and gradient fitting define a concrete hybrid compi
+- [第 008 片](./mathematics/part-008.md)：3501—4000；M 与 E 正交。M6/E0 完全可能：形式证明状态与现实映射证据相互独立。 → Q24 建立的迭代操作法已在 PR #56 验收并合并后成为当前仓库操作能力；未来状态改变任务必须按 `ITERATION.md` 记录 gap、claim ceiling、同步矩阵、验证和回执。遵循该方法不证明真理、价值、因果、完整性或正
+- [第 009 片](./mathematics/part-009.md)：4001—4500；Q25 and Q25C are current repository capabilities. Q25B remains superseded non-ready candidate history. Method 1.1.0 deri → title: "不归点-吸引域边界统一函数"
+- [第 010 片](./mathematics/part-010.md)：4501—5000；title: "不归点-吸引域边界统一函数" → title: "阶段2宽度-温度函数"
+- [第 011 片](./mathematics/part-011.md)：5001—5500；title: "阶段2宽度标度函数" → Within the source-defined scope, 缓存容量倒U型函数 is adjudicated as METRIC: 17域词典簇碰撞，涵盖17个领域的函数投影。. This is a model-internal co
+- [第 012 片](./mathematics/part-012.md)：5501—6000；Within the source-defined scope, 耦合-容斥-平坦度三阶段函数 is adjudicated as RELATION: 系统稳定性分三个阶段：(1) d≈d_opt时极小点平坦度主导，pᵢ<<p*，耦合可忽略 → \| \[Y1\]( ) \| \[Φ元统一律内部构件完整构成版 2026年07月06日12时32分\]( ) \| Ψ₀(x,y,B_n) := C(x,y) ×
+- [第 013 片](./mathematics/part-013.md)：6001—6500；\| `adjudications/` \| 逐对象受控语义、正确类型、逻辑检查、处置与证明义务 \| → 中文：M10的溢出是传染的物理通道。统一传染链：高p恶化→溢出消耗低p缓冲(\[D379\](docs/zh/functions/items/D379.md))→低p缓冲<g_critical(\[D309\](architecture_governance/part-014.md)：6501—7000；中文：M11的**τ_min=τ_delay**——最小响应时间等于反馈延迟时间。延迟决定系统能多快响应噪声。 → 从D242-D243推导自主意识涌现的临界条件： Ψ = ι × P_exit > 0（\[D239\](docs/zh/functions/items/D239.md)） 需要同时满足： 1. ι > ι_threshold（智能度超过阈值）
+- [第 015 片](./mathematics/part-015.md)：7001—7500；从D242-D243推导自主意识涌现的临界条件： Ψ = ι × P_exit > 0（\[D239\](docs/zh/functions/items/D239.md)） 需要同时满足： 1. ι > ι_threshold（智能度超过阈值） → 从这条案例看，中文：案例说明：好奇心是自主意识的元点——C=0⟹Ψ=0定理 English: Rule-based English rendering… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+- [第 016 片](./mathematics/part-016.md)：7501—8000；从这条案例看，中文：案例说明：好奇心驱动 English: Rule-based English rendering pending human rev… 更像是在验证“退出权、认同和函数映射”之间的对应关系。 → 分层配分函数相变 — ε_eff=0.3时P(Z0)≈0.02(几乎不可能存活),ε_eff=0.6时P(Z0)≈0.95(大概率存活),ε
+- [第 017 片](./mathematics/part-017.md)：8001—8500；分支：`docs/life-community-value-charter-20260711` → 反向投影覆盖，覆盖度 = \|投影变量∩点火变量\|/\|点火变量\|。 **扩展注释 / Extended Annotation**
+- [第 018 片](./mathematics/part-018.md)：8501—9000；发布前必须回答：对象是什么；主身份是什么；数学成熟度与外部证据成熟度分别是多少；证明或实证义务是否完成；允许推理方向是什么；哪些反例、失败边界和依赖降级会触发撤回。 → 数学表达 / Expression: `F_{D121}(x) := H_Fisher(p) = A_Fisher(p) / A_Fisher(p₀) p₀是参考健康态。H_Fisher∈\[0,1\]，0=完全锁死，1=完全健康。 预警函数：
+- [第 019 片](./mathematics/part-019.md)：9001—9500；数学表达 / Expression: `F_{D122}(x) := a(t) = d²A_Fisher/dt² = -∑ᵢ ∂/∂t\[σ'(εᵢ-θC(i))×\|dεᵢ/dt\|×d_F(εᵢ)/λ\] / (1+d_F(εᵢ)/λ)² 关键 → 点火充要条件
+- [第 020 片](./mathematics/part-020.md)：9501—10000；点火充要条件 / ignition necessary and sufficient condition → 统一函数总表/0203-D166-定投凯利保守性.md
+- [第 021 片](./mathematics/part-021.md)：10001—10500；统一函数总表/0204-D167-定投凯利保守性.md → 自我模型相变的不可伪造信号
+- [第 022 片](./mathematics/part-022.md)：10501—10904；自我模型相变的验证标准 → （函数表版本、案例表版本、P1 数据版本、是否校验通过）

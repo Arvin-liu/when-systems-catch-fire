@@ -59,3 +59,16 @@ python evidence-program/tools/validate_evidence_program.py --root evidence-progr
    `response_sha256`, `licence`, `retrieval_timestamp_utc`, `canonical_identifier`.
 4. **No leakage** — observed metrics must be a subset of preregistered metrics.
 5. **Failures are explicit** — non-`OK` acquisitions record a status, never silently dropped.
+
+## Task 110 independent replication
+
+Task 110 keeps the original candidate portfolio immutable and adds a state overlay
+at `registry/task-110-portfolio-state.json`. The completed C-01 Crossref obligation
+and completed C-04 bounded benchmark are historical and excluded from active
+scheduling; C-03 is now a completed partial OpenAlex pilot. The pilot's full 117-row
+source manifest, raw-response hashes, adjudication and bounded result are under
+`runs/IGNITION-EVIDENCE-PILOT-R1-OPENALEX-DOI-REPLICATION-20260801/`.
+
+The result is metadata-only: 101 supported, 8 partial, 7 null/inconclusive and no
+contradictions in the 116-record primary denominator. It does not validate paper
+content, scientific truth, Pointfire physics, MCF, PSD, ARN or maturity/disposition.

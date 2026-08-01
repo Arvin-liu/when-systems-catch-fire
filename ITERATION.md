@@ -321,3 +321,16 @@ The normative candidate contract is `docs/operations/stage-snapshot-publication.
 8. **干净克隆可复现计划**。
 
 普通合并之后，终端 ledger 状态与合并后证据须定稿，但不得改写已审稿件的语义 lineage。
+
+## Task 110：完成状态 reconciliation 与独立元数据复制
+
+任务 110 保留任务 109 的原始排序，新增基于 candidate/claim/run/task/lifecycle
+身份的完成状态 reconciliation。`C-01`（task 103）与 `C-04`（task 105）从 active
+queue 排除；完成的 partial/null/invalid 也必须留在历史中，只有明确 owner 授权的新
+协议才能 reopen。
+
+`C-03` 使用正式预注册的 117 条 DOI 人口和 OpenAlex Works API 完成首轮独立复制。结果
+为 116 条主分母中的 101 supported、8 partial、7 null/inconclusive、0 contradicted、
+0 invalid。这个结果只覆盖 registry/Crossref 与 OpenAlex 之间的书目元数据一致性，
+不覆盖论文内容或任何 Pointfire/MCF/PSD/ARN 物理主张。原始响应与哈希保留在 task-110
+run 目录，传播与终端化继续由事件溯源链闭合。

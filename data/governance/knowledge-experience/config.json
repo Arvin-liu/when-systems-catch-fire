@@ -89,6 +89,21 @@
   ],
   "declared_changes": [
     {
+      "change_id": "CHG-110",
+      "date": "2026-08-01",
+      "change_type": "ITERATION_OR_REPOSITORY_RESULT",
+      "title": "任务 110：已完成工作不再重复排队",
+      "summary": "保留任务 109 的 C-01 重复推荐缺陷并将 C-01/C-04 按权威完成证据移出 active queue；C-03 完成了独立 OpenAlex 书目元数据复制。117 条记录全部返回 HTTP 200，主分母 116 中 101 supported、8 partial、7 null、0 contradicted、0 invalid。",
+      "status": "CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS",
+      "sources": [
+        "README.md",
+        "evidence-program/runs/IGNITION-EVIDENCE-PILOT-R1-OPENALEX-DOI-REPLICATION-20260801/RESULT.md",
+        "docs/editorial/articles/009-system-completion-state-and-independent-replication.md",
+        "evidence-program/registry/task-110-portfolio-state.json"
+      ],
+      "supersedes": []
+    },
+    {
       "change_id": "CHG-102",
       "date": "2026-07-30",
       "change_type": "KNOWLEDGE_EXPERIENCE",

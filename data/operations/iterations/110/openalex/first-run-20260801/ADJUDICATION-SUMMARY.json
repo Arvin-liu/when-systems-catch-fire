@@ -1,0 +1,25 @@
+{
+  "adjudication_sha256": "9b10b6e7388bbc0638ce61767697274157a8cff07fa015e41291aa8116475104",
+  "claim_ceiling": "cross-source bibliographic metadata consistency only",
+  "class_counts_all_records": {
+    "NULL_OR_INCONCLUSIVE": 7,
+    "PARTIALLY_SUPPORTED_WITH_IDENTIFIED_MISMATCHES": 9,
+    "SUPPORTED_WITHIN_SCOPE": 101
+  },
+  "class_counts_primary_denominator": {
+    "NULL_OR_INCONCLUSIVE": 7,
+    "PARTIALLY_SUPPORTED_WITH_IDENTIFIED_MISMATCHES": 8,
+    "SUPPORTED_WITHIN_SCOPE": 101
+  },
+  "duplicate_records_excluded_from_primary_rate": 1,
+  "generated_at": "2026-08-01T07:23:06+00:00",
+  "population_records": 117,
+  "primary_denominator": 116,
+  "primary_hard_contradictions": 0,
+  "primary_invalid_or_aborted": 0,
+  "primary_null_or_inconclusive": 7,
+  "primary_supported_or_partial": 109,
+  "protocol": "task-110 OpenAlex preregistration; first sealed run; no correction or rerun",
+  "run_id": "first-run-20260801",
+  "source_manifest_sha256": "9d3ee207a01a463dae8a882d285a5c8f95aee2b63024e0b313169e112459c51c"
+}

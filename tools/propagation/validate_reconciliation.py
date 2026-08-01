@@ -194,7 +194,33 @@ def run_check(repo_root: str) -> List[str]:
         proj = json.load(fh)
     if not proj.get("_derived_from_terminal_only"):
         problems.append("current-truth projection not derived from terminal records only")
+    # The projection also folds tasks that are terminal in the append-only
+    # lifecycle ledger (for example 106-108), even when the legacy merged
+    # ledger still carries an historical PR_OPEN/candidate row.  Validate
+    # against that same event-sourced terminal truth; otherwise a legitimate
+    # lifecycle projection is incorrectly reported as citing a non-terminal
+    # task after task 108 introduced the two-phase model.
     terminal_tns = {r.get("task_number") for r in terminal_records(records)}
+    lifecycle_path = os.path.join(
+        repo_root, "data", "operations", "lifecycle-events.jsonl"
+    )
+    if os.path.exists(lifecycle_path):
+        try:
+            import lifecycle_events as le  # noqa: E402
+
+            lifecycle_view = le.derive_current_truth(
+                le.load_events(lifecycle_path), "origin/main"
+            )
+            terminal_tns.update(
+                int(task_number)
+                for task_number, state in lifecycle_view.get("resolved", {}).items()
+                if state == "TERMINAL_SUCCESS"
+            )
+        except Exception:
+            # The projection generator is fail-closed for malformed lifecycle
+            # events; retain the legacy set here so this validator still
+            # reports any resulting non-terminal projection entries.
+            pass
     for r in proj.get("recently_merged_results", []):
         if r.get("task_number") not in terminal_tns:
             problems.append(f"projection cites non-terminal task {r.get('task_number')}")

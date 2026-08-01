@@ -154,7 +154,7 @@
     },
     "008-merged-but-stale-public-truth": {
       "current_claim_ceiling": "explanatory only; no new scientific/mathematical/empirical conclusion; explains task 106 fail-closed propagation AND task 108 event-sourced two-phase lifecycle + annotated terminal tag that removes the circular single-row terminality",
-      "editorial_status": "REVIEWED_CURRENT",
+      "editorial_status": "STALE_REVIEW_REQUIRED",
       "file": "docs/editorial/articles/008-merged-but-stale-public-truth.md",
       "last_reviewed_commit": "task-108-content-merge",
       "materiality_rules": [
@@ -179,6 +179,38 @@
         "data/operations/merged-iteration-ledger.jsonl",
         "tools/propagation/lifecycle_events.py",
         "tools/propagation/tag_validator.py"
+      ]
+    },
+    "009-system-completion-state-and-independent-replication": {
+      "current_claim_ceiling": "explanatory only; task-110 completion-state reconciliation and OpenAlex cross-source bibliographic metadata result; no paper-content, scientific-truth, Pointfire, MCF, PSD, ARN, causal or maturity/disposition claim",
+      "editorial_status": "REVIEWED_CURRENT",
+      "file": "docs/editorial/articles/009-system-completion-state-and-independent-replication.md",
+      "last_reviewed_commit": "task-110-content-review-pending-merge",
+      "materiality_rules": [
+        "any change to a listed source path requires re-review before currency",
+        "changing only an unrelated source does not force staleness"
+      ],
+      "review_evidence": "Task-110 article reviewed against the frozen baseline defect, generic completion reconciliation, sealed OpenAlex first-run result, propagation record and Zhiyuan Writing Method; claim ceiling and null handling retained.",
+      "source_hashes": {
+        "data/operations/iterations/110/baseline-defect.md": "0999b91f75e9fee018302220998fe88e5aa19f3cbaf1b4b72996c1e9daeabc08",
+        "data/operations/iterations/110/completion-reconciliation.json": "c983e7f39ac4bb5983f82e42dedd2ee5c39950353657beb346b7f53617e3c246",
+        "data/operations/iterations/110/propagation.md": "fbcb40eaee47f6acfa6d67b365cd3203e5caf34d0f0c2b5330f6d31efe6fcdf5",
+        "docs/publication/zhiyuan-writing-method.md": "e2658f450eff12e5bb582c9c7b9e56eceaf935a8ea790365402e22cb38697aaf",
+        "evidence-program/runs/IGNITION-EVIDENCE-PILOT-R1-OPENALEX-DOI-REPLICATION-20260801/RESULT.md": "309c8d8cd396ad3e7c2d1f84f0def855c752e56d3166b41295743ff91a3c74f2"
+      },
+      "source_ids": [
+        "task-110-baseline-defect",
+        "task-110-completion-reconciliation",
+        "task-110-propagation",
+        "zhiyuan-writing-method.md",
+        "task-110-openalex-result"
+      ],
+      "source_paths": [
+        "data/operations/iterations/110/baseline-defect.md",
+        "data/operations/iterations/110/completion-reconciliation.json",
+        "data/operations/iterations/110/propagation.md",
+        "docs/publication/zhiyuan-writing-method.md",
+        "evidence-program/runs/IGNITION-EVIDENCE-PILOT-R1-OPENALEX-DOI-REPLICATION-20260801/RESULT.md"
       ]
     }
   },
