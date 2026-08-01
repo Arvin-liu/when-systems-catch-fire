@@ -4,6 +4,71 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [title: "三重死亡与执念逃避函数族"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0533-D536-%E6%B8%85%E9%86%92%E6%A2%A6-%E6%A2%A6%E5%A2%83%E7%9C%9F%E5%AE%9E%E6%84%9F%E6%8F%90%E5%8D%87%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-DFD418877E4A4F29 / title: "三重死亡与执念逃避函数族" / IMPLICIT-DFD418877E4A4F29 / IMPLICIT-14198B49A125D810
+  - 来源：`统一函数总表/0533-D536-清醒梦-梦境真实感提升函数.md`
+  - 依赖：—；被引用：—
+- [title: "三重死亡与执念逃避函数族"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0537-D540-%E6%89%A7%E5%BF%B5-%E9%80%83%E9%81%BF-%E9%80%83%E9%81%BF%E7%9A%84%E9%80%83%E9%81%BF%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-F781F257879860C8 / title: "三重死亡与执念逃避函数族" / IMPLICIT-F781F257879860C8 / IMPLICIT-14198B49A125D810
+  - 来源：`统一函数总表/0537-D540-执念-逃避-逃避的逃避函数.md`
+  - 依赖：—；被引用：—
+- [title: "三重死亡与执念逃避函数族"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0536-D539-%E6%9C%AA%E6%9D%A5%E8%A7%86%E8%A7%92-%E6%80%9D%E8%80%83%E7%BB%B4%E5%BA%A6%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-F800FDD17289C2AF / title: "三重死亡与执念逃避函数族" / IMPLICIT-F800FDD17289C2AF / IMPLICIT-14198B49A125D810
+  - 来源：`统一函数总表/0536-D539-未来视角-思考维度函数.md`
+  - 依赖：—；被引用：—
+- [title: "三阶段-相变分类对应函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0329-D293-%E4%B8%89%E9%98%B6%E6%AE%B5-%E7%9B%B8%E5%8F%98%E5%88%86%E7%B1%BB%E5%AF%B9%E5%BA%94%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-D09A568210AA7574 / title: "三阶段-相变分类对应函数" / IMPLICIT-D09A568210AA7574
+  - 来源：`统一函数总表/0329-D293-三阶段-相变分类对应函数.md`
+  - 依赖：—；被引用：—
+- [title: "三阶段-相变分类对应函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0329-D293-%E4%B8%89%E9%98%B6%E6%AE%B5-%E7%9B%B8%E5%8F%98%E5%88%86%E7%B1%BB%E5%AF%B9%E5%BA%94%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-9f7254f907bea197 / title: "三阶段-相变分类对应函数"
+  - 来源：`统一函数总表/0329-D293-三阶段-相变分类对应函数.md`
+  - 依赖：—；被引用：—
+- [title: "不可逆-缓冲消失同步函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0428-D392-%E4%B8%8D%E5%8F%AF%E9%80%86-%E7%BC%93%E5%86%B2%E6%B6%88%E5%A4%B1%E5%90%8C%E6%AD%A5%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-0F13574498EAA8C7 / title: "不可逆-缓冲消失同步函数" / IMPLICIT-0F13574498EAA8C7
+  - 来源：`统一函数总表/0428-D392-不可逆-缓冲消失同步函数.md`
+  - 依赖：—；被引用：—
+- [title: "不可逆体积参数归约函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0459-D423-%E4%B8%8D%E5%8F%AF%E9%80%86%E4%BD%93%E7%A7%AF%E5%8F%82%E6%95%B0%E5%BD%92%E7%BA%A6%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-B2B26E2232771E50 / title: "不可逆体积参数归约函数" / IMPLICIT-B2B26E2232771E50
+  - 来源：`统一函数总表/0459-D423-不可逆体积参数归约函数.md`
+  - 依赖：—；被引用：—
+- [title: "不可逆性判据函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0158-D120-%E4%B8%8D%E5%8F%AF%E9%80%86%E6%80%A7%E5%88%A4%E6%8D%AE%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-A2278F973C868DE1 / title: "不可逆性判据函数" / IMPLICIT-A2278F973C868DE1
+  - 来源：`统一函数总表/0158-D120-不可逆性判据函数.md`
+  - 依赖：—；被引用：—
+- [title: "不可逆相交-临界标度联合函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0438-D402-%E4%B8%8D%E5%8F%AF%E9%80%86%E7%9B%B8%E4%BA%A4-%E4%B8%B4%E7%95%8C%E6%A0%87%E5%BA%A6%E8%81%94%E5%90%88%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-BC4543C81D45396D / title: "不可逆相交-临界标度联合函数" / IMPLICIT-BC4543C81D45396D
+  - 来源：`统一函数总表/0438-D402-不可逆相交-临界标度联合函数.md`
+  - 依赖：—；被引用：—
+- [title: "不可逆空间函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0491-D493-%E4%B8%8D%E5%8F%AF%E9%80%86%E7%A9%BA%E9%97%B4%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-61A0CBDB65DB6C3E / title: "不可逆空间函数" / IMPLICIT-61A0CBDB65DB6C3E
+  - 来源：`统一函数总表/0491-D493-不可逆空间函数.md`
+  - 依赖：—；被引用：—
+- [title: "不可逆线完整分类函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0446-D410-%E4%B8%8D%E5%8F%AF%E9%80%86%E7%BA%BF%E5%AE%8C%E6%95%B4%E5%88%86%E7%B1%BB%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-600394BA212CA2EE / title: "不可逆线完整分类函数" / IMPLICIT-600394BA212CA2EE
+  - 来源：`统一函数总表/0446-D410-不可逆线完整分类函数.md`
+  - 依赖：—；被引用：—
+- [title: "不可逆线相交函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0424-D388-%E4%B8%8D%E5%8F%AF%E9%80%86%E7%BA%BF%E7%9B%B8%E4%BA%A4%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-25701B49BE7CBDEB / title: "不可逆线相交函数" / IMPLICIT-25701B49BE7CBDEB
+  - 来源：`统一函数总表/0424-D388-不可逆线相交函数.md`
+  - 依赖：—；被引用：—
+- [title: "不归点-吸引域边界统一函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0425-D389-%E4%B8%8D%E5%BD%92%E7%82%B9-%E5%90%B8%E5%BC%95%E5%9F%9F%E8%BE%B9%E7%95%8C%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-2255FC9709F8D82A / title: "不归点-吸引域边界统一函数" / IMPLICIT-2255FC9709F8D82A
+  - 来源：`统一函数总表/0425-D389-不归点-吸引域边界统一函数.md`
+  - 依赖：—；被引用：—
 - [title: "不归点-吸引域边界统一函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0425-D389-%E4%B8%8D%E5%BD%92%E7%82%B9-%E5%90%B8%E5%BC%95%E5%9F%9F%E8%BE%B9%E7%95%8C%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-54631c4bf2f6f1b1 / title: "不归点-吸引域边界统一函数"
@@ -2438,69 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-6da9561d3dec3204 / title: "门控函数稳定性必要条件 / necessary condition for gate-function stability"
   - 来源：`统一函数总表/0037-T27-门控函数稳定性必要条件.md`
-  - 依赖：—；被引用：—
-- [title: "门控函数进化三阶段 / three-stage evolution of gate functions"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0039-T29-%E9%97%A8%E6%8E%A7%E5%87%BD%E6%95%B0%E8%BF%9B%E5%8C%96%E4%B8%89%E9%98%B6%E6%AE%B5.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-53271C60C7F7C72C / title: "门控函数进化三阶段 / three-stage evolution of gate functions" / IMPLICIT-53271C60C7F7C72C
-  - 来源：`统一函数总表/0039-T29-门控函数进化三阶段.md`
-  - 依赖：—；被引用：—
-- [title: "门控组合-中心极限定理"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0272-D236-%E9%97%A8%E6%8E%A7%E7%BB%84%E5%90%88-%E4%B8%AD%E5%BF%83%E6%9E%81%E9%99%90%E5%AE%9A%E7%90%86.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-a2a1fe254568d1e6 / title: "门控组合-中心极限定理"
-  - 来源：`统一函数总表/0272-D236-门控组合-中心极限定理.md`
-  - 依赖：—；被引用：—
-- [title: "门控面共振统一函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0252-D216-%E9%97%A8%E6%8E%A7%E9%9D%A2%E5%85%B1%E6%8C%AF%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-7C0CEC50C6A2748F / title: "门控面共振统一函数" / IMPLICIT-7C0CEC50C6A2748F
-  - 来源：`统一函数总表/0252-D216-门控面共振统一函数.md`
-  - 依赖：—；被引用：—
-- [title: "门控面共振统一函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0252-D216-%E9%97%A8%E6%8E%A7%E9%9D%A2%E5%85%B1%E6%8C%AF%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-21507b1c259323a8 / title: "门控面共振统一函数"
-  - 来源：`统一函数总表/0252-D216-门控面共振统一函数.md`
-  - 依赖：—；被引用：—
-- [title: "门控面合并统一函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0219-D183-%E9%97%A8%E6%8E%A7%E9%9D%A2%E5%90%88%E5%B9%B6%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-CE0A798C7977B300 / title: "门控面合并统一函数" / IMPLICIT-CE0A798C7977B300 / IMPLICIT-AD73DE418318FBB0
-  - 来源：`统一函数总表/0219-D183-门控面合并统一函数.md`
-  - 依赖：—；被引用：—
-- [title: "门控面合并统一函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0219-D183-%E9%97%A8%E6%8E%A7%E9%9D%A2%E5%90%88%E5%B9%B6%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-c347525a226d939d / title: "门控面合并统一函数"
-  - 来源：`统一函数总表/0219-D183-门控面合并统一函数.md`
-  - 依赖：—；被引用：—
-- [title: "门槛碾压函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0206-D169-%E9%97%A8%E6%A7%9B%E7%A2%BE%E5%8E%8B%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-321A2E0841021CE2 / title: "门槛碾压函数" / IMPLICIT-321A2E0841021CE2
-  - 来源：`统一函数总表/0206-D169-门槛碾压函数.md`
-  - 依赖：—；被引用：—
-- [title: "门槛距离-耦合强度函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0293-D257-%E9%97%A8%E6%A7%9B%E8%B7%9D%E7%A6%BB-%E8%80%A6%E5%90%88%E5%BC%BA%E5%BA%A6%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-85401F07C8B09F27 / title: "门槛距离-耦合强度函数" / IMPLICIT-85401F07C8B09F27
-  - 来源：`统一函数总表/0293-D257-门槛距离-耦合强度函数.md`
-  - 依赖：—；被引用：—
-- [title: "门锁交替律函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0100-D51-%E9%97%A8%E9%94%81%E4%BA%A4%E6%9B%BF%E5%BE%8B%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-0C210DDAF1467900 / title: "门锁交替律函数" / IMPLICIT-0C210DDAF1467900
-  - 来源：`统一函数总表/0100-D51-门锁交替律函数.md`
-  - 依赖：—；被引用：—
-- [title: "防守-进攻相变函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0151-D112-%E9%98%B2%E5%AE%88-%E8%BF%9B%E6%94%BB%E7%9B%B8%E5%8F%98%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-5DBCE31779515D45 / title: "防守-进攻相变函数" / IMPLICIT-5DBCE31779515D45
-  - 来源：`统一函数总表/0151-D112-防守-进攻相变函数.md`
-  - 依赖：—；被引用：—
-- [title: "阶段2临界宽度函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0346-D310-%E9%98%B6%E6%AE%B52%E4%B8%B4%E7%95%8C%E5%AE%BD%E5%BA%A6%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-3018FAA86A687D77 / title: "阶段2临界宽度函数" / IMPLICIT-3018FAA86A687D77
-  - 来源：`统一函数总表/0346-D310-阶段2临界宽度函数.md`
-  - 依赖：—；被引用：—
-- [title: "阶段2宽度-共振频率函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0388-D352-%E9%98%B6%E6%AE%B52%E5%AE%BD%E5%BA%A6-%E5%85%B1%E6%8C%AF%E9%A2%91%E7%8E%87%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-FE2CB1E2D34647CC / title: "阶段2宽度-共振频率函数" / IMPLICIT-FE2CB1E2D34647CC
-  - 来源：`统一函数总表/0388-D352-阶段2宽度-共振频率函数.md`
-  - 依赖：—；被引用：—
-- [title: "阶段2宽度-温度函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0374-D338-%E9%98%B6%E6%AE%B52%E5%AE%BD%E5%BA%A6-%E6%B8%A9%E5%BA%A6%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-C1475D94ED37247C / title: "阶段2宽度-温度函数" / IMPLICIT-C1475D94ED37247C
-  - 来源：`统一函数总表/0374-D338-阶段2宽度-温度函数.md`
   - 依赖：—；被引用：—

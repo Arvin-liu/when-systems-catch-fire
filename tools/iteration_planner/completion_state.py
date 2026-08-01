@@ -52,6 +52,7 @@ UNKNOWN_STATE = "UNKNOWN_COMPLETION_STATE_REVIEW_REQUIRED"
 OUTCOME_TO_STATE = {
     "SUPPORTED_WITHIN_SCOPE": "COMPLETED_SUPPORTED",
     "SUPPORTED_WITHIN_BOUNDED_DOMAIN": "COMPLETED_SUPPORTED",
+    "PARTIALLY_SUPPORTED": "COMPLETED_PARTIAL",
     "PARTIALLY_SUPPORTED_WITH_IDENTIFIED_MISMATCHES": "COMPLETED_PARTIAL",
     "PARTIALLY_SUPPORTED_WITH_IDENTIFIED_FAILURES": "COMPLETED_PARTIAL",
     "CONTRADICTED_WITHIN_SCOPE": "COMPLETED_CONTRADICTED",
@@ -68,9 +69,16 @@ def _sha256(path: Path) -> str:
 
 
 def load_ledger():
-    if not LEDGER_PATH.exists():
+    configured = os.environ.get("COMPLETION_LEDGER_PATH")
+    if configured:
+        path = Path(configured)
+    else:
+        iteration = os.environ.get("ITERATION_OUT_DIR")
+        candidate = REPO / "data/operations/iterations" / iteration / "completion-reconciliation.json" if iteration else None
+        path = candidate if candidate and candidate.exists() else LEDGER_PATH
+    if not path.exists():
         return []
-    return json.loads(LEDGER_PATH.read_text())
+    return json.loads(path.read_text())
 
 
 def validate_entry(entry):

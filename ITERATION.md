@@ -334,3 +334,19 @@ queue 排除；完成的 partial/null/invalid 也必须留在历史中，只有�
 0 invalid。这个结果只覆盖 registry/Crossref 与 OpenAlex 之间的书目元数据一致性，
 不覆盖论文内容或任何 Pointfire/MCF/PSD/ARN 物理主张。原始响应与哈希保留在 task-110
 run 目录，传播与终端化继续由事件溯源链闭合。
+
+## Task 111：失败案例证据门禁与真实缺陷复现试点
+
+任务 111 先冻结 `case_failures/` 的三项原始分类，再分别审计外部证据、可执行 target、
+形式化和 reproduction。苹果案例的历史来源登记在 task-111 preregistration 之后；它们
+支持有边界的 memoir provenance，但不支持“苹果砸中 Newton”或“一个瞬间直接造成完整
+理论”等更强命题。当前仓库的 Function OS v0.1/v0.2 没有历史因果 target，因此苹果案例
+定为 `EVIDENCE_PARTIAL_OR_DISPUTED` / `EXECUTABLE_TARGET_ABSENT` /
+`FORMALIZATION_UNDERSPECIFIED` / `NO_REPRODUCTION_POSSIBLE_WITH_CURRENT_TARGET`。
+
+任务 111 的 evidence gate 只有在 repository executable、冻结 commit、精确输入/输出、
+raw trace、run、重复失败、oracle、claim ceiling、首次失败保留和 regression guard 全部
+存在时，才允许 `REPRODUCED_IMPLEMENTATION_DEFECT`。缺字段、LLM 输出、错误语义 target、
+目录位置或内部 PASS 都 fail closed。规划器不改冻结权重，只把三项没有证据资格的历史案例
+阻断在 task-111 投影之外，并通过 110 的权威 OpenAlex result 将 C-03 识别为已完成 partial；
+task-111 投影的下一候选是 `arn-gap-001`，不创建 task 112。

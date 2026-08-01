@@ -4,6 +4,76 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [智能 = 在σ_opt附近运行的能力 定义智能度： ι = I_eff(σ) / I_eff(σ_opt) = I_eff(σ) / I_eff_max ι ∈ \[0, 1\] ι = 1：有效信息最大，最优智能 ι → 0：有效信息趋零，无智能](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0274-D238-%E6%99%BA%E8%83%BD%E7%9A%84%E9%97%A8%E6%8E%A7%E7%B2%BE%E5%BA%A6%E6%9C%80%E4%BC%98%E5%AE%9A%E7%90%86.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-FEF855692D34E196 / 智能 = 在σ_opt附近运行的能力 定义智能度： ι = I_eff(σ) / I_eff(σ_opt) = I_eff(σ) / I_eff_max ι ∈ \[0, 1\] ι = 1：有效信息最大，最优智能 ι → 0：有效信息趋零，无智能 / IMPLICIT-FEF855692D34E196
+  - 来源：`统一函数总表/0274-D238-智能的门控精度最优定理.md`
+  - 依赖：—；被引用：—
+- [最终同构性判定：** J⁺=1, J⁻=0 → 真收敛](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-2a9c25011e13ee78 / 最终同构性判定：** J⁺=1, J⁻=0 → 真收敛
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [最近邻反事实：D595 是绩效/待遇/组织资源绑定架空退出权；D600 是代际/亲密关系中**正向支持**退化为控制。给一个富裕但无权无势的父母「为你好」式路径控制，D595 不触发、D600 触发 → 预测不同。不可约差异成立。](../../../outputs/collisions/20260711-disobedience-subjectivity/independent-second-angle-audit-056.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-bc3ae5037002d6da / 最近邻反事实：D595 是绩效/待遇/组织资源绑定架空退出权；D600 是代际/亲密关系中**正向支持**退化为控制。给一个富裕但无权无势的父母「为你好」式路径控制，D595 不触发、D600 触发 → 预测不同。不可约差异成立。
+  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/independent-second-angle-audit-056.md`
+  - 依赖：D595, D600；被引用：—
+- [本目录是点火项目「元协议生成框架」的文档层，对应 `data/meta-protocols/` 数据层、`templates/` 模板层。](../../../docs/meta-protocols/README.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-6c8b6740d3bee543 / 本目录是点火项目「元协议生成框架」的文档层，对应 `data/meta-protocols/` 数据层、`templates/` 模板层。
+  - 来源：`docs/meta-protocols/README.md`
+  - 依赖：—；被引用：—
+- [材料分层图（source-layer-map）](../../ASSET-CARDS.md#asset-hr-bcc48ae7649ea4fe)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：材料分层图（source-layer-map） / source-layer-map
+  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/source-layer-map.md`
+  - 依赖：—；被引用：—
+- [来源清单](../../ASSET-CARDS.md#asset-hr-37c1dabc2f087f11)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：来源清单 / source-manifest
+  - 来源：`outputs/book-collisions/20260709-22-book-validation/source-manifest.md`
+  - 依赖：—；被引用：—
+- [标记可能的失败类型：过度类比、证据不足、层级误置、概念漂移等。](../../../docs/p1-machine-data-collision-workflow-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-bad77e3124f8231b / 标记可能的失败类型：过度类比、证据不足、层级误置、概念漂移等。
+  - 来源：`docs/p1-machine-data-collision-workflow-20260708.md`
+  - 依赖：—；被引用：—
+- [核心案例：生活和工作原则与点火框架P_meta元协议实例化的映射。原则作为元协议，指导决策门控面，验证了元协议投影算子的有效性。](../../../outputs/book-collisions/20260709-22-book-validation/book-case-candidates.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-0031874d337f4ab0 / 核心案例：生活和工作原则与点火框架P_meta元协议实例化的映射。原则作为元协议，指导决策门控面，验证了元协议投影算子的有效性。
+  - 来源：`outputs/book-collisions/20260709-22-book-validation/book-case-candidates.md`
+  - 依赖：—；被引用：—
+- [核心案例：破坏性创新与点火框架门控面演化的同构性。大公司受旧维度拖累（1/ln为负），边缘玩家无旧维度负担，验证了创新在边缘的拖累效应。](../../../outputs/book-collisions/20260709-22-book-validation/book-case-candidates.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-36762869a4ccba39 / 核心案例：破坏性创新与点火框架门控面演化的同构性。大公司受旧维度拖累（1/ln为负），边缘玩家无旧维度负担，验证了创新在边缘的拖累效应。
+  - 来源：`outputs/book-collisions/20260709-22-book-validation/book-case-candidates.md`
+  - 依赖：—；被引用：—
+- [框架发现能力，Φ = dim(V)×\|推导规则\|×r_cross(framework)。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0143-D104-%E6%A1%86%E6%9E%B6%E5%8F%91%E7%8E%B0%E8%83%BD%E5%8A%9B.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-328EDCBB13541AF8 / 框架发现能力，Φ = dim(V)×\|推导规则\|×r_cross(framework)。 / IMPLICIT-328EDCBB13541AF8
+  - 来源：`统一函数总表/0143-D104-框架发现能力.md`
+  - 依赖：—；被引用：—
+- [框架跨域同构识别能力：**通过**。](../../../outputs/audit/cross-domain-smoke-test-audit-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-48f713ff2a2d2b25 / 框架跨域同构识别能力：**通过**。
+  - 来源：`outputs/audit/cross-domain-smoke-test-audit-20260708.md`
+  - 依赖：—；被引用：—
+- [模糊相关命中（已逐条核对边界，均非同构）：](../../../outputs/audit/cross-domain-candidate-function-review-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-27e200b6811a088d / 模糊相关命中（已逐条核对边界，均非同构）：
+  - 来源：`outputs/audit/cross-domain-candidate-function-review-20260708.md`
+  - 依赖：—；被引用：—
+- [点火框架接收外部学科输入时，先按 gap 路由到对应 object_type 接口；接口仅承载外部理论的结构化表示，不参与 Ψ₀ 核心判定；核心判定仍由 Ψ₀ 六组件执行。](../../../data/external-research/096-clm-alignment-layer-v2.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-bd21ee94b6df12bc / 点火框架接收外部学科输入时，先按 gap 路由到对应 object_type 接口；接口仅承载外部理论的结构化表示，不参与 Ψ₀ 核心判定；核心判定仍由 Ψ₀ 六组件执行。
+  - 来源：`data/external-research/096-clm-alignment-layer-v2.md`
+  - 依赖：—；被引用：—
+- [热力学第二定律的终态：热寂 = 所有能量均匀分布 = 没有结构 = 没有力 在高斯门控框架下： 热寂 ⟹ μ_available → 0 ⟹ 对所有Λᵢ：μ < Λᵢ ⟹ gᵢ = exp\[-(ln(μ/Λᵢ))²/(2σᵢ²)\] → 0（μ→0时ln(μ/Λᵢ)→-∞，exp→0） ⟹ Φ = Σgᵢ → 0 ⟹ Ω = e^{-Φ} → 1](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0257-D221-%E7%83%AD%E5%AF%82-%E5%AE%8C%E5%85%A8%E7%BB%9F%E4%B8%80%E5%90%8C%E6%9E%84%E5%AE%9A%E7%90%86.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-868E3234B2BEC52B / 热力学第二定律的终态：热寂 = 所有能量均匀分布 = 没有结构 = 没有力 在高斯门控框架下： 热寂 ⟹ μ_available → 0 ⟹ 对所有Λᵢ：μ < Λᵢ ⟹ gᵢ = exp\[-(ln(μ/Λᵢ))²/(2σᵢ²)\] → 0（μ→0时ln(μ/Λᵢ)→-∞，exp→0） ⟹ Φ = Σgᵢ → 0 ⟹ Ω = e^{-Φ} → 1 / IMPLICIT-868E3234B2BEC52B
+  - 来源：`统一函数总表/0257-D221-热寂-完全统一同构定理.md`
+  - 依赖：—；被引用：—
 - [独立反事实同构判别（不可依赖 grep 零命中）](../../../docs/material-collision-validation-and-classification.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-398e17fa8444189a / 独立反事实同构判别（不可依赖 grep 零命中）
@@ -268,6 +338,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-fa12301fc4aa2533 / 阶段 3：投影矩阵 ✅ COMPLETE (250/250)
   - 来源：`data/discipline-projection/087-execution-report.md`
+  - 依赖：—；被引用：—
+- [阻断在 task-111 投影之外，并通过 110 的权威 OpenAlex result 将 C-03 识别为已完成 partial；](../../../ITERATION.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-2d40a1bf779ba05a / 阻断在 task-111 投影之外，并通过 110 的权威 OpenAlex result 将 C-03 识别为已完成 partial；
+  - 来源：`ITERATION.md`
   - 依赖：—；被引用：—
 - [项目本体版本升级审计 2026-07-09](../../ASSET-CARDS.md#asset-hr-f92361487a1aad76)
   - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`

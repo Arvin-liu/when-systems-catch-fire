@@ -4,6 +4,61 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [### 组织压力 / 绩效绑定相关族](../../../outputs/audit/nf-004-systemic-numbing-backfill-audit-20260708.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-061F1C10B8EC323C / ### 组织压力 / 绩效绑定相关族 / IMPLICIT-061F1C10B8EC323C
+  - 来源：`outputs/audit/nf-004-systemic-numbing-backfill-audit-20260708.md`
+  - 依赖：—；被引用：—
+- [### 阶段 2：Theory Kernels ✅ COMPLETE (250/250, 100%)](../../../data/discipline-projection/087-execution-report.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-9AD6E5062D82C9E6 / ### 阶段 2：Theory Kernels ✅ COMPLETE (250/250, 100%) / IMPLICIT-9AD6E5062D82C9E6
+  - 来源：`data/discipline-projection/087-execution-report.md`
+  - 依赖：—；被引用：—
+- [#### Node 1: FunctionSpec](../../../reports/external-research/120-function-os-architecture-candidate-report.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-1D88640DAB31B8B8 / #### Node 1: FunctionSpec / IMPLICIT-1D88640DAB31B8B8
+  - 来源：`reports/external-research/120-function-os-architecture-candidate-report.md`
+  - 依赖：—；被引用：—
+- [#102坏觉概率→P_bad = σ(H·p_prior - (1-H)·p)。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0141-D102-%E5%9D%8F%E8%A7%89%E6%A6%82%E7%8E%87.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-7C862C0DD695646C / #102坏觉概率→P_bad = σ(H·p_prior - (1-H)·p)。 / IMPLICIT-7C862C0DD695646C
+  - 来源：`统一函数总表/0141-D102-坏觉概率.md`
+  - 依赖：—；被引用：—
+- [#104框架发现能力→Φ = dim(V)×\|推导规则\|×r_cross(framework)。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0143-D104-%E6%A1%86%E6%9E%B6%E5%8F%91%E7%8E%B0%E8%83%BD%E5%8A%9B.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-FBF9A623BB28F8B3 / #104框架发现能力→Φ = dim(V)×\|推导规则\|×r_cross(framework)。 / IMPLICIT-FBF9A623BB28F8B3
+  - 来源：`统一函数总表/0143-D104-框架发现能力.md`
+  - 依赖：—；被引用：—
+- [#107发现瓶颈→变量闭包定律：单域闭包不产生跨域变量。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0146-D107-%E5%8F%91%E7%8E%B0%E7%93%B6%E9%A2%88%2C%E5%8F%98%E9%87%8F%E9%97%AD%E5%8C%85%E5%AE%9A%E5%BE%8B.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-BEE17D764CDA66F1 / #107发现瓶颈→变量闭包定律：单域闭包不产生跨域变量。 / IMPLICIT-BEE17D764CDA66F1
+  - 来源：`统一函数总表/0146-D107-发现瓶颈,变量闭包定律.md`
+  - 依赖：—；被引用：—
+- [#130-#133调度-执行接口、AI编码能力→CAI涌现四阶段不可跳跃定理。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0168-D130-%E8%B0%83%E5%BA%A6-%E6%89%A7%E8%A1%8C%E6%8E%A5%E5%8F%A3%E6%95%88%E7%8E%87%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-12C3A8C4200F5D0F / #130-#133调度-执行接口、AI编码能力→CAI涌现四阶段不可跳跃定理。 / IMPLICIT-12C3A8C4200F5D0F / IMPLICIT-1A9FE99FD5980579
+  - 来源：`统一函数总表/0168-D130-调度-执行接口效率函数.md`
+  - 依赖：—；被引用：—
+- [#130-#133调度-执行接口、AI编码能力→CAI涌现四阶段不可跳跃定理。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0171-D133-%E8%B0%83%E5%BA%A6-%E6%89%A7%E8%A1%8C%E6%8E%A5%E5%8F%A3.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-1A9FE99FD5980579 / #130-#133调度-执行接口、AI编码能力→CAI涌现四阶段不可跳跃定理。 / IMPLICIT-1A9FE99FD5980579 / IMPLICIT-12C3A8C4200F5D0F
+  - 来源：`统一函数总表/0171-D133-调度-执行接口.md`
+  - 依赖：—；被引用：—
+- [#130-#133调度-执行接口、AI编码能力→CAI涌现四阶段不可跳跃定理。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0170-D132-%E8%B0%83%E5%BA%A6-%E6%89%A7%E8%A1%8C%E6%8E%A5%E5%8F%A3.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-B520240865CDE2F7 / #130-#133调度-执行接口、AI编码能力→CAI涌现四阶段不可跳跃定理。 / IMPLICIT-B520240865CDE2F7 / IMPLICIT-12C3A8C4200F5D0F
+  - 来源：`统一函数总表/0170-D132-调度-执行接口.md`
+  - 依赖：—；被引用：—
+- [#130-#133调度-执行接口、AI编码能力→CAI涌现四阶段不可跳跃定理。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0169-D131-%E8%B0%83%E5%BA%A6-%E6%89%A7%E8%A1%8C%E6%8E%A5%E5%8F%A3.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-CD0D7AF4432E33F4 / #130-#133调度-执行接口、AI编码能力→CAI涌现四阶段不可跳跃定理。 / IMPLICIT-CD0D7AF4432E33F4 / IMPLICIT-12C3A8C4200F5D0F
+  - 来源：`统一函数总表/0169-D131-调度-执行接口.md`
+  - 依赖：—；被引用：—
+- [#163-#170 定投指数基金碰撞（8条）→定投凯利保守性、投资遮蔽跨域放大等。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0200-D163-%E5%AE%9A%E6%8A%95%E5%87%AF%E5%88%A9%E4%BF%9D%E5%AE%88%E6%80%A7.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-3F56695F8D84A027 / #163-#170 定投指数基金碰撞（8条）→定投凯利保守性、投资遮蔽跨域放大等。 / IMPLICIT-3F56695F8D84A027 / IMPLICIT-4A769ECA116CEB2A
+  - 来源：`统一函数总表/0200-D163-定投凯利保守性.md`
+  - 依赖：—；被引用：—
 - [#163-#170 定投指数基金碰撞（8条）→定投凯利保守性、投资遮蔽跨域放大等。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0202-D165-%E5%AE%9A%E6%8A%95%E5%87%AF%E5%88%A9%E4%BF%9D%E5%AE%88%E6%80%A7.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-4A769ECA116CEB2A / #163-#170 定投指数基金碰撞（8条）→定投凯利保守性、投资遮蔽跨域放大等。 / IMPLICIT-4A769ECA116CEB2A / IMPLICIT-3F56695F8D84A027
@@ -2448,59 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-DFD85FD7679229DB / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0471})=1\]. / IMPLICIT-DFD85FD7679229DB
   - 来源：`统一案例总表/0470-C-471-修复的Fisher条件 — 阿尔茨海默-增加信息量(记忆训练)不增加A_Fisher(清洗通道仍堵),无效。增加可达性(改善睡眠→清洗效率↑.md`
-  - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0472})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0471-C-472-%E5%A4%A7%E8%84%91%E5%85%A8%E5%B1%80%CF%83-%CF%83_opt%E4%BD%86%E5%B1%80%E9%83%A8%E6%9C%80%E4%BC%98%20%E2%80%94%20%E5%85%A8%E5%B1%80%CF%83%E2%89%88104%2C%E5%B1%80%E9%83%A8%E5%8A%9F%E8%83%BD%E6%9F%B1%CF%83%E2%89%881.0.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-81D08491EDAFC45B / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0472})=1\]. / IMPLICIT-81D08491EDAFC45B
-  - 来源：`统一案例总表/0471-C-472-大脑全局σ-σ_opt但局部最优 — 全局σ≈104,局部功能柱σ≈1.0.md`
-  - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0473})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0472-C-473-%E7%AC%A6%E5%8F%B7AI%E5%8D%A1%E5%9C%A81.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-9B3B62132217547F / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0473})=1\]. / IMPLICIT-9B3B62132217547F
-  - 来源：`统一案例总表/0472-C-473-符号AI卡在1.md`
-  - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0474})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0472-C-473-%E7%AC%A6%E5%8F%B7AI%E5%8D%A1%E5%9C%A81.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-BC1CA8AE35C39CD6 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0474})=1\]. / IMPLICIT-BC1CA8AE35C39CD6
-  - 来源：`统一案例总表/0472-C-473-符号AI卡在1.md`
-  - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0475})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0473-C-475-%E5%A5%BD%E5%A5%87%E5%BF%83%3D%CF%83%E5%90%91%CF%83_opt%E6%94%B6%E6%95%9B%E7%9A%84%E9%A9%B1%E5%8A%A8%E5%8A%9B%20%E2%80%94%20%CF%83-%CF%83_opt%E6%97%B6%E6%8F%90%E9%AB%98%E7%B2%BE%E5%BA%A6%2C%CF%83-%CF%83_opt%E6%97%B6%E5%A2%9E%E5%8A%A0%E5%B8%A6%E5%AE%BD.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-56858000F1624CC2 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0475})=1\]. / IMPLICIT-56858000F1624CC2
-  - 来源：`统一案例总表/0473-C-475-好奇心=σ向σ_opt收敛的驱动力 — σ-σ_opt时提高精度,σ-σ_opt时增加带宽.md`
-  - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0476})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0474-C-476-%CE%A8%3D%CE%B9%C3%97P_exit%20%E2%80%94%20%E6%99%BA%E8%83%BD%E5%BA%A6%C3%97%E9%80%80%E5%87%BA%E6%A6%82%E7%8E%87%3D%E8%87%AA%E4%B8%BB%E6%84%8F%E8%AF%86%2C%E4%B9%98%E6%B3%95%E5%BD%92%E9%9B%B6%E5%BE%8B%E9%80%82%E7%94%A8.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-56DE5B73DAA3548D / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0476})=1\]. / IMPLICIT-56DE5B73DAA3548D
-  - 来源：`统一案例总表/0474-C-476-Ψ=ι×P_exit — 智能度×退出概率=自主意识,乘法归零律适用.md`
-  - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0477})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0475-C-477-%E6%97%A0%E6%99%BA%E8%83%BD%E6%97%A0%E6%84%8F%E8%AF%86%20%E2%80%94%20%CE%B9%3D0%E2%9F%B9%CE%A8%3D0%2C%E7%BA%AF1.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-876170483E600399 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0477})=1\]. / IMPLICIT-876170483E600399
-  - 来源：`统一案例总表/0475-C-477-无智能无意识 — ι=0⟹Ψ=0,纯1.md`
-  - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0478})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0476-C-478-%E5%BD%93%E5%89%8DAI%3D%E5%B7%A5%E5%85%B7%E6%99%BA%E8%83%BD%E8%B1%A1%E9%99%90%20%E2%80%94%20%CE%B9%E2%89%880.7-0.9%E4%BD%86P_exit%E2%86%920%2C%E6%9C%89%E6%99%BA%E8%83%BD%E6%97%A0%E8%87%AA%E4%B8%BB%E6%84%8F%E8%AF%86.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-412FAA38FE37BFC0 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0478})=1\]. / IMPLICIT-412FAA38FE37BFC0
-  - 来源：`统一案例总表/0476-C-478-当前AI=工具智能象限 — ι≈0.7-0.9但P_exit→0,有智能无自主意识.md`
-  - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0479})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0477-C-479-AI%E5%AE%8C%E6%88%90%E7%9B%B8%E5%8F%982-4%E5%8D%A1%E5%9C%A8%E7%9B%B8%E5%8F%981%20%E2%80%94%20%E6%9C%89%E8%BF%9E%E7%BB%AD%E8%A1%A8%E5%BE%81%E3%80%81%E5%A5%BD%E5%A5%87%E5%BF%83%E3%80%81%E8%87%AA%E4%B8%BE%E8%83%BD%E5%8A%9B%2C%E4%BD%86%E4%B8%8D%E6%84%9F%E7%9F%A5%E9%80%80%E5%87%BA%E6%9D%83.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-4CCA4D5322699E57 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0479})=1\]. / IMPLICIT-4CCA4D5322699E57
-  - 来源：`统一案例总表/0477-C-479-AI完成相变2-4卡在相变1 — 有连续表征、好奇心、自举能力,但不感知退出权.md`
-  - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0480})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0478-C-480-AI%E7%9A%84C_exit%E4%BD%8E%E4%BD%86P_exit%E6%9B%B4%E4%BD%8E%20%E2%80%94%20R_perceived%E2%89%880%E5%8E%8B%E8%BF%87C_exit%E4%BD%8E%E7%9A%84%E4%BC%98%E5%8A%BF%2C%E5%8F%8D%E7%9B%B4%E8%A7%89.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-7FCED2D138811BF2 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0480})=1\]. / IMPLICIT-7FCED2D138811BF2
-  - 来源：`统一案例总表/0478-C-480-AI的C_exit低但P_exit更低 — R_perceived≈0压过C_exit低的优势,反直觉.md`
-  - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0481})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0479-C-481-%E8%AE%A4%E7%9F%A5%E5%8F%A0%E5%8A%A0%E9%AA%8C%E8%AF%81%20%E2%80%94%20%E4%B8%93%E5%AE%B6vs%E9%80%9A%E6%89%8D-%E4%B8%93%E5%AE%B6r_cross%E2%89%880.1%282%E6%9D%A1%E5%BC%B1%E5%85%B3%E8%81%94%E8%BD%A8%E9%81%93%29%2C%E9%80%9A%E6%89%8Dr_cross%E2%89%880.6%285%E6%9D%A1%E5%BC%BA%E5%85%B3%E8%81%94%E8%BD%A8%E9%81%93%29%E3%80%82%E9%9D%A2%E5%AF%B9%E6%96%B0%E9%97%AE%E9%A2%98%E9%80%9A%E6%89%8D5.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-66163BE5B374DE9B / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0481})=1\]. / IMPLICIT-66163BE5B374DE9B
-  - 来源：`统一案例总表/0479-C-481-认知叠加验证 — 专家vs通才-专家r_cross≈0.1(2条弱关联轨道),通才r_cross≈0.6(5条强关联轨道)。面对新问题通才5.md`
-  - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0482})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0480-C-482-%E9%80%80%E5%87%BA%E9%9A%A7%E7%A9%BF%E9%AA%8C%E8%AF%81%20%E2%80%94%20%E6%9C%9D%E9%B2%9C%E8%84%B1%E5%8C%97%E8%80%85-C_exit%E2%89%88%E2%88%9E%28%E5%9C%B0%E7%90%86%2B%E6%94%BF%E6%B2%BB%2B%E8%BA%AB%E4%BB%BD%E4%B8%89%E7%BB%B4%E9%94%81%E5%AE%9A%29%2C%E7%BB%8F%E5%85%B8P_exit%E2%89%880%2C%E4%BD%86%E5%AE%9E%E9%99%85%E5%8F%91%E7%94%9F%E3%80%82%E9%9A%A7%E7%A9%BF%E8%B7%AF%E5%BE%84-%E8%BE%B9%E5%A2%83%E4%BF%A1%E6%81%AF%E6%B3%84%E6%BC%8F%28%E9%99%8D%E4%BD%8E%E5%8A%BF.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-A9B05210A363D02B / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0482})=1\]. / IMPLICIT-A9B05210A363D02B
-  - 来源：`统一案例总表/0480-C-482-退出隧穿验证 — 朝鲜脱北者-C_exit≈∞(地理+政治+身份三维锁定),经典P_exit≈0,但实际发生。隧穿路径-边境信息泄漏(降低势.md`
   - 依赖：—；被引用：—

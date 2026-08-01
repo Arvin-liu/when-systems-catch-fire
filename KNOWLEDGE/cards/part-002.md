@@ -4,6 +4,46 @@
 
 [返回资产卡总索引](../ASSET-CARDS.md)
 
+<a id="asset-nfc-b424983d09c9a88d"></a>
+## 方法 `1.3.0` 与系统图 `0.2.0`、`0.3.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0` 为更早 Historical。当前方法要求从构件 registry、类型化 topology 与 `d
+
+- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-b424983d09c9a88d` · [AI-HANDOFF.md](../../AI-HANDOFF.md)
+- **为什么产生：** Expose a materially public IMPOSSIBILITY_OR_UNIVERSAL_CLAIM and its correction or evidence boundary.
+- **当前状态：** `ACCEPTED_AS_DEFINITION`
+- **当前结果：** 方法 `1.3.0` 与系统图 `0.2.0`、`0.3.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0` 为更早 Historical。当前方法要求从构件 registry、类型化 topology 与 `data/operations/synchronization-surfaces.json` 计算全项目传播闭包。README、`HUMAN-READING.md`、`RESULTS/`、项目现状、人类 AI 指南、AI 冷启动、Agent 交接、机器入口和版本历史都是必须评估的项目表面。实现完成不能替代仓库同步完成；本地验证也不能声称任何未登记的实时外部状态已验证。
+- **双成熟度：** 数学 `M0`；外部证据 `E0`
+- **假设与表述上限：** May be stated only as a repository definition, policy, status record or explicitly scoped convention; it is not external truth.
+- **未建立：** Do not present registry presence, internal tests, AI agreement or formal appearance as proof, external validation, novelty, peer review or replication.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `AI-HANDOFF.md`
+- **演化历史：** Lineage: NO_NAMED_LINEAGE；Lineage status: CURRENT_SCOPED_RECORD；Reviewer state: SOURCE_TEXT_RULE_ADJUDICATED
+- **最近变化：** Task 100 disposition: ACCEPTED_AS_DEFINITION
+- **下一步：** State typed definitions, assumptions and quantifiers; provide a checkable proof or delimit the statement as conjectural.；Search for countermodels inside and outside the declared model class.
+- **主题：** `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`
+- **可搜索名称：** `NFC-b424983d09c9a88d`, `方法 `1.3.0` 与系统图 `0.2.0`、`0.3.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0` 为更早 Historical。当前方法要求从构件 registry、类型化 topology 与 `d`, `方法 `1.3.0` 与系统图 `0.2.0`、`0.3.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0` 为更早 Historical。当前方法要求从构件 registry、类型化 topology 与 `data/operations/synchronization-surfaces.json` 计算全项目传播闭包。README、`HUMAN-READING.md`、`RESULTS/`、项目现状、人类 AI 指南、AI 冷启动、Agent 交接、机器入口和版本历史都是必须评估的项目表面。实现完成不能替代仓库同步完成；本地验证也不能声称任何未登记的实时外部状态已验证。`
+
+<a id="asset-nfc-b84ff0d36d4df547"></a>
+## 响应哈希、adjudication、Evidence Program 投影和生命周期证据位于 task-110 机器记录。
+
+- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-b84ff0d36d4df547` · [RESULTS/LATEST.md](../../RESULTS/LATEST.md)
+- **为什么产生：** Expose a materially public CROSS_DOMAIN_CORRESPONDENCE and its correction or evidence boundary.
+- **当前状态：** `RETAINED_AS_STRUCTURAL_METAPHOR`
+- **当前结果：** 响应哈希、adjudication、Evidence Program 投影和生命周期证据位于 task-110 机器记录。
+- **双成熟度：** 数学 `M0`；外部证据 `E0`
+- **假设与表述上限：** Analogy or structural metaphor only; no homomorphism, isomorphism or causal identity is established.
+- **未建立：** Do not present registry presence, internal tests, AI agreement or formal appearance as proof, external validation, novelty, peer review or replication.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `RESULTS/LATEST.md`
+- **演化历史：** Lineage: NO_NAMED_LINEAGE；Lineage status: CURRENT_SCOPED_RECORD；Reviewer state: SOURCE_TEXT_RULE_ADJUDICATED
+- **最近变化：** Task 100 disposition: RETAINED_AS_STRUCTURAL_METAPHOR
+- **下一步：** No open obligation was recorded.
+- **主题：** `ARCHITECTURE_GOVERNANCE`
+- **可搜索名称：** `NFC-b84ff0d36d4df547`, `响应哈希、adjudication、Evidence Program 投影和生命周期证据位于 task-110 机器记录。`, `响应哈希、adjudication、Evidence Program 投影和生命周期证据位于 task-110 机器记录。`
+
 <a id="asset-nfc-bd6c757f496eff1d"></a>
 ## `RESULTS/` 把机器注册表、报告和历史资产投影为可直接阅读的结果。它不复制或提高证据权限；每个结论仍受来源、成熟度、处置和 claim ceiling 约束。
 
@@ -963,43 +1003,3 @@
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `WRITING_PUBLICATION`
 - **可搜索名称：** `当一支军队开始相信自己的背影`, `when-an-army-believes-its-own-back`
-
-<a id="asset-hr-25db71123fa1cbc7"></a>
-## 元协议规范性审核（外部治理记录）
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-25DB71123FA1CBC7` · [docs/governance/meta-protocol-reviews/README.md](../../docs/governance/meta-protocol-reviews/README.md)
-- **为什么产生：** 此来源记录了什么：元协议规范性审核（外部治理记录）？
-- **当前状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
-- **当前结果：** 本目录为外部治理记录，不修改 canonical 协议状态、不替代事实验证、不替代独立人类复核、不替代治理批准、不宣布协议正式晋级。V2、V3 保留为黄色协议（事实度量 pending），不在本任务中自行发明全成本公式或可逆性指数并冒充已验证标准。
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `docs/governance/meta-protocol-reviews/README.md`, `REPOSITORY_HISTORY_SOURCE`
-- **演化历史：** 2026-07-11: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `元协议规范性审核（外部治理记录）`, `README`
-
-<a id="asset-hr-2605b1957ccb9e09"></a>
-## 两张表版本同步维护审计（2026-07-09 00:30）
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-2605B1957CCB9E09` · [outputs/audit/two-tables-version-sync-audit-20260708.md](../../outputs/audit/two-tables-version-sync-audit-20260708.md)
-- **为什么产生：** 此来源记录了什么：两张表版本同步维护审计（2026-07-09 00:30）？
-- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **当前结果：** 符合任务「只有 README / 两张表入口文件 / INDEX·总览文件 / 审计文件 发生变化」的约束。
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** `D595`, `D599`, `D596`, `D597`, `D598`
-- **来源与证据：** `outputs/audit/two-tables-version-sync-audit-20260708.md`, `REPOSITORY_HISTORY_SOURCE`
-- **演化历史：** 2026-07-08: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `两张表版本同步维护审计（2026-07-09 00:30）`, `two-tables-version-sync-audit-20260708`

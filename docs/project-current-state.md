@@ -1,6 +1,6 @@
 # 点火项目现状
 
-更新时间：2026-07-31。当前状态包含任务 98—103 的断言/函数治理、证据程序与人类可读知识表面，任务 104 的编辑叙事层与语料关系分析，以及任务 105 的 Function OS v0.2 有界能力基准。任务 104（PR #160）与任务 105（PR #161）均已普通合并、`main` 验证与全新克隆复验，本段描述其仓库 Current 接口。
+更新时间：2026-08-01。当前状态包含任务 98—103 的断言/函数治理、证据程序与人类可读知识表面，任务 104 的编辑叙事层与语料关系分析，任务 105 的 Function OS v0.2 有界能力基准，任务 110 的完成状态与 OpenAlex 书目复制，以及任务 111 的失败案例证据门禁。任务 104（PR #160）、105（PR #161）和 110 均已普通合并、`main` 验证与全新克隆复验，本段描述其仓库 Current 接口。
 
 ## 当前形态
 
@@ -71,7 +71,22 @@ contradicted、0 invalid。
 当前结论的上限仍是跨源书目元数据一致性。OpenAlex 结果不验证论文内容、科学真理、
 Pointfire 物理、MCF、PSD、ARN、现实因果或任何成熟度/处置提升。生命周期事实由候选
 事件、内容合并、终端化投影、annotated tag 和全新克隆 resolver 分层确认；不以旧候选
-标签自动生成下一任务，也不创建任务 111。
+标签自动生成下一任务。
+
+## Task 111 current-state addition
+
+任务 111 对 `case_failures/` 的三项原始 `IMPLEMENTATION_DEFECT` 分类做证据门禁，而不把
+目录存在或“系统可能会输出”当作缺陷复现。苹果案例经 Stukeley、Conduitt 和 Newton
+Project 材料复核，外部证据仅为 `EVIDENCE_PARTIAL_OR_DISPUTED`；Function OS v0.1/v0.2
+没有该历史因果命题的可执行接口，故 target 为 `EXECUTABLE_TARGET_ABSENT`、形式化为
+`FORMALIZATION_UNDERSPECIFIED`、复现为 `NO_REPRODUCTION_POSSIBLE_WITH_CURRENT_TARGET`。
+
+任务 111 新增的 fail-closed gate 只接受绑定完整 repository executable commit、精确
+输入/输出、trace、run、重复失败、oracle、claim ceiling、保留首次失败和 regression
+guard 的 `REPRODUCED_IMPLEMENTATION_DEFECT`。三项历史案例仍可检索，但不再以已知缺陷
+进入 active queue；C-03 则按 task-110 的权威 OpenAlex result 保持 `COMPLETED_PARTIAL`
+并排除。该门禁提升记录资格与可复现性，不提升历史故事、点火物理或 Function OS 的外部
+真理等级，不创建 task 112。
 
 ## 当前操作法
 

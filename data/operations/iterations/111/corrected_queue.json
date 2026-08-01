@@ -1,0 +1,24 @@
+{
+  "recommended_next": "arn-gap-001",
+  "reserves": [
+    "arn-gap-002",
+    "arn-gap-003"
+  ],
+  "active_queue_top10": [
+    "arn-gap-001",
+    "arn-gap-002",
+    "arn-gap-003",
+    "mcf-gap-001",
+    "mcf-gap-002",
+    "psd-gap-001",
+    "psd-gap-002",
+    "psd-gap-003",
+    "psd-gap-004",
+    "C-02"
+  ],
+  "prior_recommendation_invalidated": {
+    "recommended_next": "C-01",
+    "state": "COMPLETED_SUPPORTED",
+    "invalidated": true
+  }
+}

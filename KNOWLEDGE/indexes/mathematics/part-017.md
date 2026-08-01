@@ -4,6 +4,81 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [函数条目模板（占位符版）：含 frontmatter(kind/seq/id/title/source/link) + 编号/一句话定义/机制表达/变量解释/因果链/适用条件/边界条件/反例/与已有函数关系/对应案例/来源回指/pendin](../../../outputs/audit/two-tables-entry-template-finalization-audit-20260709.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-c434b16c2bad4728 / 函数条目模板（占位符版）：含 frontmatter(kind/seq/id/title/source/link) + 编号/一句话定义/机制表达/变量解释/因果链/适用条件/边界条件/反例/与已有函数关系/对应案例/来源回指/pendin
+  - 来源：`outputs/audit/two-tables-entry-template-finalization-audit-20260709.md`
+  - 依赖：—；被引用：—
+- [函数类资产交接必须保留十二类主身份、M0—M7、E0—E7、十门结果、六层裁决、claim ceiling、证明/实证义务、依赖影响和最终处置。task 99 identity card 优先于自动 census；quarantine 不等](../../ASSET-CARDS.md#asset-nfc-71e297ca6132aac6)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-71e297ca6132aac6 / 函数类资产交接必须保留十二类主身份、M0—M7、E0—E7、十门结果、六层裁决、claim ceiling、证明/实证义务、依赖影响和最终处置。task 99 identity card 优先于自动 census；quarantine 不等 / 函数类资产交接必须保留十二类主身份、M0—M7、E0—E7、十门结果、六层裁决、claim ceiling、证明/实证义务、依赖影响和最终处置。task 99 identity card 优先于自动 census；quarantine 不等于验证。T2、D127、D182—D190、D260 仍以 task 98 correction overlay 为最高专项权威；旧表保留原文。任何“大一统已被证明不可能”或“点火已统一四力”的结论均为撤回/禁止状态。
+  - 来源：`AI-HANDOFF.md`
+  - 依赖：D127, D182, D190, D260；被引用：—
+- [函数范围默认全量**（即 `统一函数总表/` 全部条目）；除非任务明确限定某层/某类。](../../../docs/getbrain-operation-guide-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-49c86c70bd2aec05 / 函数范围默认全量**（即 `统一函数总表/` 全部条目）；除非任务明确限定某层/某类。
+  - 来源：`docs/getbrain-operation-guide-20260708.md`
+  - 依赖：—；被引用：—
+- [函数表目录 619 文件 − 1 INDEX = 618（其中 1 个 `0001-Ψ₀元统一律完整定义.md` 为旧版兼容重定向文件，legacy，不计入函数总数）](../../../outputs/audit/two-tables-version-sync-audit-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-0f01244586ab1f91 / 函数表目录 619 文件 − 1 INDEX = 618（其中 1 个 `0001-Ψ₀元统一律完整定义.md` 为旧版兼容重定向文件，legacy，不计入函数总数）
+  - 来源：`outputs/audit/two-tables-version-sync-audit-20260708.md`
+  - 依赖：—；被引用：—
+- [函数表目录：存在（`统一函数总表/`），本轮未读全量正文。](../../../outputs/collisions/20260708-smoke-test/collision-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-38bd926b98cb0832 / 函数表目录：存在（`统一函数总表/`），本轮未读全量正文。
+  - 来源：`outputs/collisions/20260708-smoke-test/collision-report.md`
+  - 依赖：—；被引用：—
+- [函数表：INDEX 引用 617 唯一文件 ↔ 目录 618 文件；缺编目仅剩 `0001-Ψ₀元统一律完整定义.md`（legacy 重定向，正确排除）；悬空引用 0](../../../outputs/audit/two-tables-version-sync-audit-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-056c8a30151fd02b / 函数表：INDEX 引用 617 唯一文件 ↔ 目录 618 文件；缺编目仅剩 `0001-Ψ₀元统一律完整定义.md`（legacy 重定向，正确排除）；悬空引用 0
+  - 来源：`outputs/audit/two-tables-version-sync-audit-20260708.md`
+  - 依赖：—；被引用：—
+- [函数资产作者指南](../../ASSET-CARDS.md#asset-hr-3da265b74da19421)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+  - 可搜索名称：函数资产作者指南 / function-asset-authoring-guide
+  - 来源：`docs/foundation/function-asset-authoring-guide.md`
+  - 依赖：—；被引用：—
+- [函数资产注册表迁移 R2](../../ASSET-CARDS.md#asset-hr-996ef89e3a670484)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+  - 可搜索名称：函数资产注册表迁移 R2 / function-asset-registry-migration-r2
+  - 来源：`docs/foundation/function-asset-registry-migration-r2.md`
+  - 依赖：—；被引用：—
+- [函数边界**机制查重**（触发条件 + 中间机制 + 结果形态，非关键词）](../../../docs/getnote-collision-workflow-final-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-881eb5c74df0f8d4 / 函数边界**机制查重**（触发条件 + 中间机制 + 结果形态，非关键词）
+  - 来源：`docs/getnote-collision-workflow-final-20260708.md`
+  - 依赖：—；被引用：—
+- [函数边界机制查重**：比较候选机制与已有函数的「触发条件 / 中间机制 / 结果形态」三者同构性](../../../docs/getnote-collision-workflow-final-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-8ee2e1d349d6092a / 函数边界机制查重**：比较候选机制与已有函数的「触发条件 / 中间机制 / 结果形态」三者同构性
+  - 来源：`docs/getnote-collision-workflow-final-20260708.md`
+  - 依赖：—；被引用：—
+- [函数预测和现实不一致的案例](../../../case_failures/README.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-b7cff513161dd4c3 / 函数预测和现实不一致的案例
+  - 来源：`case_failures/README.md`
+  - 依赖：—；被引用：—
+- [分层编码优于扁平化](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0191-D154-%E5%88%86%E5%B1%82%E7%BC%96%E7%A0%81%E4%BC%98%E4%BA%8E%E6%89%81%E5%B9%B3%E5%8C%96.md)
+  - 类型/状态：`FUNCTION_ASSET` · `DOWNGRADE_TO_PENDING`
+  - 可搜索名称：D154 / 分层编码优于扁平化 / D154
+  - 来源：`统一函数总表/0191-D154-分层编码优于扁平化.md`
+  - 依赖：D180, D91；被引用：NFC-0c9b45822b9adc52, NFC-27772a71343cf70a, NFC-a79ef2cc93be2746
+- [分层编码效率案例验证。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0191-D154-%E5%88%86%E5%B1%82%E7%BC%96%E7%A0%81%E4%BC%98%E4%BA%8E%E6%89%81%E5%B9%B3%E5%8C%96.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-171fbc98f1c5c3fb / 分层编码效率案例验证。
+  - 来源：`统一函数总表/0191-D154-分层编码优于扁平化.md`
+  - 依赖：—；被引用：—
+- [分层记账规则** — GLM review / rule-based gate / machine proof / external evidence / cross-model acceptance](../../../reports/foundation-architecture/085-architecture-structure-freeze.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-1e542863eea2c861 / 分层记账规则** — GLM review / rule-based gate / machine proof / external evidence / cross-model acceptance
+  - 来源：`reports/foundation-architecture/085-architecture-structure-freeze.md`
+  - 依赖：—；被引用：—
+- [分层配分函数相变 — ε_eff=0.3时P(Z0)≈0.02(几乎不可能存活),ε_eff=0.6时P(Z0)≈0.95(大概率存活),ε](../../../data/foundation/evidence/evidence.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-24dd24b87e80c0fa / 分层配分函数相变 — ε_eff=0.3时P(Z0)≈0.02(几乎不可能存活),ε_eff=0.6时P(Z0)≈0.95(大概率存活),ε
+  - 来源：`data/foundation/evidence/evidence.jsonl`
+  - 依赖：—；被引用：—
 - [分支：`docs/life-community-value-charter-20260711`](../../../outputs/audit/life-community-value-charter-readme-audit-20260711.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
   - 可搜索名称：NFC-756db6ce5ce5fa52 / 分支：`docs/life-community-value-charter-20260711`
@@ -2428,79 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-d30866c5a595bebf / 去重实体键为 `(asset_kind, normalized_namespace, normalized_id)`；表示层键为 `(entity_key, path, git_blob_sha)`。对象、命题、论证、来源、证据、映射、证明
   - 来源：`ARCHITECTURE.md`
-  - 依赖：—；被引用：—
-- [双临界n统一函数](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0440-D404-%E5%8F%8C%E4%B8%B4%E7%95%8Cn%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：D404 / 双临界n统一函数 / D404
-  - 来源：`统一函数总表/0440-D404-双临界n统一函数.md`
-  - 依赖：D361, D430, D431, D450；被引用：NFC-0040294f24faf1fe, NFC-104a1e37c31f6a15, NFC-135a5ef5d5d21821, NFC-42ac79aeab644ced
-- [双临界n统一函数](../../../data/foundation/formal-objects/objects.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-975bc8eb67a88ee4 / 双临界n统一函数
-  - 来源：`data/foundation/formal-objects/objects.jsonl`
-  - 依赖：—；被引用：—
-- [双切换同步函数](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0448-D412-%E5%8F%8C%E5%88%87%E6%8D%A2%E5%90%8C%E6%AD%A5%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：D412 / 双切换同步函数 / D412
-  - 来源：`统一函数总表/0448-D412-双切换同步函数.md`
-  - 依赖：D361, D430, D431, D450；被引用：CLAIM-D463, CLAIM-D465, NFC-0809ebb83c709ce2, NFC-089ab7720e8a899d
-- [双延迟-共振频率联合函数](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0427-D391-%E5%8F%8C%E5%BB%B6%E8%BF%9F-%E5%85%B1%E6%8C%AF%E9%A2%91%E7%8E%87%E8%81%94%E5%90%88%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：D391 / 双延迟-共振频率联合函数 / D391
-  - 来源：`统一函数总表/0427-D391-双延迟-共振频率联合函数.md`
-  - 依赖：D361, D430, D431, D450；被引用：NFC-7c2b16daf9bda2c4, NFC-a28de704bcfbed8e, NFC-bbe7131200eadd78, NFC-e042ce8b1ab8f5f9
-- [双稳态分岔，μ符号决定落在哪个稳态：μ 0→ε_opt。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0088-D39-%E7%BB%9F%E4%B8%80%E5%86%85%E9%83%A8%E9%A9%B1%E5%8A%A8%E5%8A%9B%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-4fad0ee6645eb875 / 双稳态分岔，μ符号决定落在哪个稳态：μ 0→ε_opt。
-  - 来源：`统一函数总表/0088-D39-统一内部驱动力函数.md`
-  - 依赖：—；被引用：—
-- [双稳态分岔，μ符号决定落在哪个稳态：μ 0→ε_opt。 **扩展注释 / Extended Annotation**](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-d212629b7c93da32 / 双稳态分岔，μ符号决定落在哪个稳态：μ 0→ε_opt。 **扩展注释 / Extended Annotation**
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：—；被引用：—
-- [双通道信息衰减定理](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0266-D230-%E5%8F%8C%E9%80%9A%E9%81%93%E4%BF%A1%E6%81%AF%E8%A1%B0%E5%87%8F%E5%AE%9A%E7%90%86.md)
-  - 类型/状态：`FUNCTION_ASSET` · `DOWNGRADE_TO_CONJECTURE`
-  - 可搜索名称：D230 / 双通道信息衰减定理 / D230
-  - 来源：`统一函数总表/0266-D230-双通道信息衰减定理.md`
-  - 依赖：D181, D197, D211, D220；被引用：D108, D231, D232, D512
-- [双通道信息衰减定理](../../../data/foundation/formal-objects/objects.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-b068cf4695724470 / 双通道信息衰减定理
-  - 来源：`data/foundation/formal-objects/objects.jsonl`
-  - 依赖：—；被引用：—
-- [双重打击-双重加速同构函数](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0420-D384-%E5%8F%8C%E9%87%8D%E6%89%93%E5%87%BB-%E5%8F%8C%E9%87%8D%E5%8A%A0%E9%80%9F%E5%90%8C%E6%9E%84%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：D384 / 双重打击-双重加速同构函数 / D384
-  - 来源：`统一函数总表/0420-D384-双重打击-双重加速同构函数.md`
-  - 依赖：D361, D430, D431, D450；被引用：CLAIM-D464, NFC-0f616050e710f5e6, NFC-16ef6e4352aaafa2, NFC-1a0d525e94e7b981
-- [双重打击-双重加速同构函数](../../../data/foundation/formal-objects/objects.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-5f3247868d6d1dbd / 双重打击-双重加速同构函数
-  - 来源：`data/foundation/formal-objects/objects.jsonl`
-  - 依赖：—；被引用：—
-- [反事实讨论（考虑其他可能性）](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-801c66314f59616e / 反事实讨论（考虑其他可能性）
-  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
-  - 依赖：—；被引用：—
-- [反向投影覆盖](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0142-D103-%E5%8F%8D%E5%90%91%E6%8A%95%E5%BD%B1%E8%A6%86%E7%9B%96.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：D103 / 反向投影覆盖 / D103
-  - 来源：`统一函数总表/0142-D103-反向投影覆盖.md`
-  - 依赖：D180, D91；被引用：NFC-07b3f8ea12f95c6f, NFC-2f7ea43660bdbd05, NFC-6ae12dde8af11ba6, NFC-c26d0b27883cf91d
-- [反向投影覆盖→覆盖度 = \|投影变量∩点火变量\|/\|点火变量\|。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0142-D103-%E5%8F%8D%E5%90%91%E6%8A%95%E5%BD%B1%E8%A6%86%E7%9B%96.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-64859dbf73668675 / 反向投影覆盖→覆盖度 = \|投影变量∩点火变量\|/\|点火变量\|。
-  - 来源：`统一函数总表/0142-D103-反向投影覆盖.md`
-  - 依赖：—；被引用：—
-- [反向投影覆盖，覆盖度 = \|投影变量∩点火变量\|/\|点火变量\|。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0142-D103-%E5%8F%8D%E5%90%91%E6%8A%95%E5%BD%B1%E8%A6%86%E7%9B%96.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-fa11cd77056df171 / 反向投影覆盖，覆盖度 = \|投影变量∩点火变量\|/\|点火变量\|。
-  - 来源：`统一函数总表/0142-D103-反向投影覆盖.md`
-  - 依赖：—；被引用：—
-- [反向投影覆盖，覆盖度 = \|投影变量∩点火变量\|/\|点火变量\|。 **扩展注释 / Extended Annotation**](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-f274ecc6206eb6b1 / 反向投影覆盖，覆盖度 = \|投影变量∩点火变量\|/\|点火变量\|。 **扩展注释 / Extended Annotation**
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：—；被引用：—

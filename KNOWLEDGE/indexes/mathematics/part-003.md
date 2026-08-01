@@ -4,6 +4,41 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [/Users/zhiyuan/我的笔记/统一函数总表/0296-D260-偏差敏感度阈值函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-edcfecc328e4b3cb / /Users/zhiyuan/我的笔记/统一函数总表/0296-D260-偏差敏感度阈值函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D260；被引用：—
+- [/Users/zhiyuan/我的笔记/统一函数总表/0297-D261-维度最优平衡函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-6e531ce6d686a20c / /Users/zhiyuan/我的笔记/统一函数总表/0297-D261-维度最优平衡函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D261；被引用：—
+- [/Users/zhiyuan/我的笔记/统一函数总表/0298-D262-缓冲容量峰值函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-72d23897a87fd29b / /Users/zhiyuan/我的笔记/统一函数总表/0298-D262-缓冲容量峰值函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D262；被引用：—
+- [/Users/zhiyuan/我的笔记/统一函数总表/0299-D263-正反馈时间常数函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-a2b788d2969e8c07 / /Users/zhiyuan/我的笔记/统一函数总表/0299-D263-正反馈时间常数函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D263；被引用：—
+- [/Users/zhiyuan/我的笔记/统一函数总表/0300-D264-良性循环启动阈值函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-092572044c5eefd3 / /Users/zhiyuan/我的笔记/统一函数总表/0300-D264-良性循环启动阈值函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D264；被引用：—
+- [/Users/zhiyuan/我的笔记/统一函数总表/0301-D265-极小点漂移方向函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-251607c4090e4e36 / /Users/zhiyuan/我的笔记/统一函数总表/0301-D265-极小点漂移方向函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D265；被引用：—
+- [/Users/zhiyuan/我的笔记/统一函数总表/0302-D266-容斥偏差加速函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-a4b78be1448a8a65 / /Users/zhiyuan/我的笔记/统一函数总表/0302-D266-容斥偏差加速函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D266；被引用：—
 - [/Users/zhiyuan/我的笔记/统一函数总表/0303-D267-维度稳定性裕度函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-39968306850df118 / /Users/zhiyuan/我的笔记/统一函数总表/0303-D267-维度稳定性裕度函数.md
@@ -2468,39 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-a83f69ffb5d14307 / \[C-0765｜双周访谈打破信息茧房\](../../../统一案例总表/0760-C-0765-双周访谈打破信息茧房.md)（原笔记编号：C579-1）
   - 来源：`统一函数总表/0589-D579-阅历赤字解决.md`
-  - 依赖：—；被引用：—
-- [\[C-0766｜快闪阅读反算法\](../../../统一案例总表/0761-C-0766-快闪阅读反算法.md)（原笔记编号：C579-2）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0589-D579-%E9%98%85%E5%8E%86%E8%B5%A4%E5%AD%97%E8%A7%A3%E5%86%B3.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-18e5dae91845fc52 / \[C-0766｜快闪阅读反算法\](../../../统一案例总表/0761-C-0766-快闪阅读反算法.md)（原笔记编号：C579-2）
-  - 来源：`统一函数总表/0589-D579-阅历赤字解决.md`
-  - 依赖：—；被引用：—
-- [\[C-0767｜逛书店发现惊喜\](../../../统一案例总表/0762-C-0767-逛书店发现惊喜.md)（原笔记编号：C579-3）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0589-D579-%E9%98%85%E5%8E%86%E8%B5%A4%E5%AD%97%E8%A7%A3%E5%86%B3.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-278c5c71d1566b73 / \[C-0767｜逛书店发现惊喜\](../../../统一案例总表/0762-C-0767-逛书店发现惊喜.md)（原笔记编号：C579-3）
-  - 来源：`统一函数总表/0589-D579-阅历赤字解决.md`
-  - 依赖：—；被引用：—
-- [\[C-0768｜青蒿素从《肘后备急方》提炼\](../../../统一案例总表/0763-C-0768-青蒿素从《肘后备急方》提炼.md)（原笔记编号：C579-4）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0589-D579-%E9%98%85%E5%8E%86%E8%B5%A4%E5%AD%97%E8%A7%A3%E5%86%B3.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-2c059eddfd599c6a / \[C-0768｜青蒿素从《肘后备急方》提炼\](../../../统一案例总表/0763-C-0768-青蒿素从《肘后备急方》提炼.md)（原笔记编号：C579-4）
-  - 来源：`统一函数总表/0589-D579-阅历赤字解决.md`
-  - 依赖：—；被引用：—
-- [\[C-0769｜《写作是门手艺》段落控制≤10行\](../../../统一案例总表/0764-C-0769-《写作是门手艺》段落控制≤10行.md)（原笔记编号：C580-1）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0590-D580-%E8%BE%B9%E7%BC%98%E9%9D%A9%E5%91%BD.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-3d9894d8b56f8b23 / \[C-0769｜《写作是门手艺》段落控制≤10行\](../../../统一案例总表/0764-C-0769-《写作是门手艺》段落控制≤10行.md)（原笔记编号：C580-1）
-  - 来源：`统一函数总表/0590-D580-边缘革命.md`
-  - 依赖：—；被引用：—
-- [\[C-0770｜马伯庸建议蹲下来看最下面一排书\](../../../统一案例总表/0765-C-0770-马伯庸建议蹲下来看最下面一排书.md)（原笔记编号：C580-2）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0590-D580-%E8%BE%B9%E7%BC%98%E9%9D%A9%E5%91%BD.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-908190b7695ab203 / \[C-0770｜马伯庸建议蹲下来看最下面一排书\](../../../统一案例总表/0765-C-0770-马伯庸建议蹲下来看最下面一排书.md)（原笔记编号：C580-2）
-  - 来源：`统一函数总表/0590-D580-边缘革命.md`
-  - 依赖：—；被引用：—
-- [\[C-0771｜准备《长谈》花一个月\](../../../统一案例总表/0766-C-0771-准备《长谈》花一个月.md)（原笔记编号：C580-3）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0590-D580-%E8%BE%B9%E7%BC%98%E9%9D%A9%E5%91%BD.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-1c43a509c48cfa90 / \[C-0771｜准备《长谈》花一个月\](../../../统一案例总表/0766-C-0771-准备《长谈》花一个月.md)（原笔记编号：C580-3）
-  - 来源：`统一函数总表/0590-D580-边缘革命.md`
-  - 依赖：—；被引用：—
-- [\[C-0772｜亲子共读一本书\](../../../统一案例总表/0767-C-0772-亲子共读一本书.md)（原笔记编号：C580-4）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0590-D580-%E8%BE%B9%E7%BC%98%E9%9D%A9%E5%91%BD.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-a6072f9501855d98 / \[C-0772｜亲子共读一本书\](../../../统一案例总表/0767-C-0772-亲子共读一本书.md)（原笔记编号：C580-4）
-  - 来源：`统一函数总表/0590-D580-边缘革命.md`
   - 依赖：—；被引用：—

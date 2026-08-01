@@ -4,6 +4,51 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [E(x) := ∫_{Ω} V(x) dΩ（能量函数）](../../../docs/phi_meta_law.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-8667EA55C34667CD / E(x) := ∫_{Ω} V(x) dΩ（能量函数） / IMPLICIT-8667EA55C34667CD / IMPLICIT-3F416B3E2B262344
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [e. Effective Technological Measures means those measures that, in the absence of proper authority, may not be circumvent](../../../LICENSES/active/CC-BY-NC-SA-4.0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-98f0b8fc79fbfcc5 / e. Effective Technological Measures means those measures that, in the absence of proper authority, may not be circumvent
+  - 来源：`LICENSES/active/CC-BY-NC-SA-4.0.md`
+  - 依赖：—；被引用：—
+- [E1–E6 全部标记 pending，未把个人成功当因果证明，未提交访谈原文。](../../../outputs/collisions/20260711-disobedience-subjectivity/candidate-decision-summary.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-1b5c9e401934df70 / E1–E6 全部标记 pending，未把个人成功当因果证明，未提交访谈原文。
+  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/candidate-decision-summary.md`
+  - 依赖：—；被引用：—
+- [E_{Q_0001}(x)=1 iff exists N: tau=N({Delta x_k}) and order(x_k,x_{k+1}) preserved。时间不是本体，而是信息状态序列的计数投影；若只有状态流 x(t)，则时间 t](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0469-D471-%E7%8A%B6%E6%80%81%E6%97%B6%E9%97%B4%E9%87%8D%E5%86%99%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-3339a2d3465e6b9f / E_{Q_0001}(x)=1 iff exists N: tau=N({Delta x_k}) and order(x_k,x_{k+1}) preserved。时间不是本体，而是信息状态序列的计数投影；若只有状态流 x(t)，则时间 t
+  - 来源：`统一函数总表/0469-D471-状态时间重写函数.md`
+  - 依赖：D342；被引用：—
+- [E_{Q_0001}(x)=1 iff exists N: tau=N({Delta x_k}) and order(x_k,x_{k+1}) preserved。时间不是本体，而是信息状态序列的计数投影；若只有状态流 x(t)，则时间 t](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-80af166a04d9b909 / E_{Q_0001}(x)=1 iff exists N: tau=N({Delta x_k}) and order(x_k,x_{k+1}) preserved。时间不是本体，而是信息状态序列的计数投影；若只有状态流 x(t)，则时间 t
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D342；被引用：—
+- [E_{Q_0003}=1 iff d*(O)=argmin_d\[L(M_d\|O)+Omega(d)\]。维度是模型对观测的最小充分坐标数，是解释工具的压缩参数；不能由此推出经验世界不存在，只能推出“宇宙本体=某一维度集合”不是必要前提。依赖](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-09a8d06fb8a4420e / E_{Q_0003}=1 iff d*(O)=argmin_d\[L(M_d\|O)+Omega(d)\]。维度是模型对观测的最小充分坐标数，是解释工具的压缩参数；不能由此推出经验世界不存在，只能推出“宇宙本体=某一维度集合”不是必要前提。依赖
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：A8, D237；被引用：—
+- [E_{Q_0003}=1 iff d*(O)=argmin_d\[L(M_d\|O)+Omega(d)\]。维度是模型对观测的最小充分坐标数，是解释工具的压缩参数；不能由此推出经验世界不存在，只能推出“宇宙本体=某一维度集合”不是必要前提。依赖](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0470-D472-%E7%BB%B4%E5%BA%A6%E5%9D%90%E6%A0%87%E5%8C%96%E8%BE%B9%E7%95%8C%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-8e4a313fba871a88 / E_{Q_0003}=1 iff d*(O)=argmin_d\[L(M_d\|O)+Omega(d)\]。维度是模型对观测的最小充分坐标数，是解释工具的压缩参数；不能由此推出经验世界不存在，只能推出“宇宙本体=某一维度集合”不是必要前提。依赖
+  - 来源：`统一函数总表/0470-D472-维度坐标化边界函数.md`
+  - 依赖：A8, D237；被引用：—
+- [Each row records a preserved relation and a prohibited inference. The writing movements are not the formal, evidence, mo](../../../reports/operations/121Q28S-zhiyuan-writing-method-whole-project-integration-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-651181ea3ea14fd3 / Each row records a preserved relation and a prohibited inference. The writing movements are not the formal, evidence, mo
+  - 来源：`reports/operations/121Q28S-zhiyuan-writing-method-whole-project-integration-audit.md`
+  - 依赖：—；被引用：—
+- [Each verified record contains a source hash, locator, excerpt, controlled proposition, type rationale, logic form, assum](../../../reports/foundation-architecture/semantic-adjudication-verification-20260713.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-eba4bff68e9417c1 / Each verified record contains a source hash, locator, excerpt, controlled proposition, type rationale, logic form, assum
+  - 来源：`reports/foundation-architecture/semantic-adjudication-verification-20260713.md`
+  - 依赖：—；被引用：—
 - [edge("e_l3_l4", "l3_arguments", "l4_proofs", "dependency", "ARCHITECTURE.md"),](../../../tools/build_ignition_atlas.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-a45fc19c053fd666 / edge("e_l3_l4", "l3_arguments", "l4_proofs", "dependency", "ARCHITECTURE.md"),
@@ -1259,6 +1304,11 @@
   - 可搜索名称：NFC-e6d0a569c36d5581 / ICFP Refinement Types for Haskell full technical-report review: the lazy-evaluation counterexample, Div/Wnf/Fin strata,
   - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl`
   - 依赖：—；被引用：—
+- [identifiers that older lifecycle records already cite.](../../../tools/propagation/generate_editorial_manifest.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-dac435c65f676a3b / identifiers that older lifecycle records already cite.
+  - 来源：`tools/propagation/generate_editorial_manifest.py`
+  - 依赖：—；被引用：—
 - [Identity lock: formal main identifies the multiplication-zero asset as T2, while D127 is the cognitive-path-integral ana](../../../reports/foundation-architecture/098-remote-truth-and-gap.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-d196cf8167ba2621 / Identity lock: formal main identifies the multiplication-zero asset as T2, while D127 is the cognitive-path-integral ana
@@ -2454,53 +2504,3 @@
   - 可搜索名称：NFC-c1a4db42a0bb5f70 / If upstream objects D_{D235} exist, compose F_{D235}=N(⊕_{g∈D_{D235}} g); otherwise treat F_{D235} as an axiom seed.
   - 来源：`统一函数总表/0271-D235-信息论完备性定理.md`
   - 依赖：D235；被引用：—
-- [If upstream objects D_{D236} exist, compose F_{D236}=N(⊕_{g∈D_{D236}} g); otherwise treat F_{D236} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0272-D236-%E9%97%A8%E6%8E%A7%E7%BB%84%E5%90%88-%E4%B8%AD%E5%BF%83%E6%9E%81%E9%99%90%E5%AE%9A%E7%90%86.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-e94db479234f54c4 / If upstream objects D_{D236} exist, compose F_{D236}=N(⊕_{g∈D_{D236}} g); otherwise treat F_{D236} as an axiom seed.
-  - 来源：`统一函数总表/0272-D236-门控组合-中心极限定理.md`
-  - 依赖：D236；被引用：—
-- [If upstream objects D_{D237} exist, compose F_{D237}=N(⊕_{g∈D_{D237}} g); otherwise treat F_{D237} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0273-D237-%E7%94%9F%E5%91%BD%E6%99%BA%E8%83%BD%E7%9A%84%CF%83%E5%8E%8B%E7%BC%A9%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-86b305b6f8fa43b5 / If upstream objects D_{D237} exist, compose F_{D237}=N(⊕_{g∈D_{D237}} g); otherwise treat F_{D237} as an axiom seed.
-  - 来源：`统一函数总表/0273-D237-生命智能的σ压缩函数.md`
-  - 依赖：D237；被引用：—
-- [If upstream objects D_{D238} exist, compose F_{D238}=N(⊕_{g∈D_{D238}} g); otherwise treat F_{D238} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0274-D238-%E6%99%BA%E8%83%BD%E7%9A%84%E9%97%A8%E6%8E%A7%E7%B2%BE%E5%BA%A6%E6%9C%80%E4%BC%98%E5%AE%9A%E7%90%86.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-2ea693f720e41958 / If upstream objects D_{D238} exist, compose F_{D238}=N(⊕_{g∈D_{D238}} g); otherwise treat F_{D238} as an axiom seed.
-  - 来源：`统一函数总表/0274-D238-智能的门控精度最优定理.md`
-  - 依赖：D238；被引用：—
-- [If upstream objects D_{D239} exist, compose F_{D239}=N(⊕_{g∈D_{D239}} g); otherwise treat F_{D239} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0275-D239-%E6%99%BA%E8%83%BD%E5%BA%A6-%E6%84%8F%E8%AF%86%E5%87%BD%E6%95%B0%E8%BF%9E%E6%8E%A5%E5%AE%9A%E7%90%86.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-a77a9111d73ed74b / If upstream objects D_{D239} exist, compose F_{D239}=N(⊕_{g∈D_{D239}} g); otherwise treat F_{D239} as an axiom seed.
-  - 来源：`统一函数总表/0275-D239-智能度-意识函数连接定理.md`
-  - 依赖：D239；被引用：—
-- [If upstream objects D_{D23} exist, compose F_{D23}=N(⊕_{g∈D_{D23}} g); otherwise treat F_{D23} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0072-D23-%E6%B3%95%E6%B2%BB%E5%BA%A6.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-2980e690778e38cf / If upstream objects D_{D23} exist, compose F_{D23}=N(⊕_{g∈D_{D23}} g); otherwise treat F_{D23} as an axiom seed.
-  - 来源：`统一函数总表/0072-D23-法治度.md`
-  - 依赖：D23；被引用：—
-- [If upstream objects D_{D240} exist, compose F_{D240}=N(⊕_{g∈D_{D240}} g); otherwise treat F_{D240} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0276-D240-%E6%84%8F%E8%AF%86%E7%9A%84%E6%99%BA%E8%83%BD%E5%BF%85%E8%A6%81%E6%9D%A1%E4%BB%B6.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-93652d99b069374c / If upstream objects D_{D240} exist, compose F_{D240}=N(⊕_{g∈D_{D240}} g); otherwise treat F_{D240} as an axiom seed.
-  - 来源：`统一函数总表/0276-D240-意识的智能必要条件.md`
-  - 依赖：D240；被引用：—
-- [If upstream objects D_{D241} exist, compose F_{D241}=N(⊕_{g∈D_{D241}} g); otherwise treat F_{D241} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0277-D241-%E8%87%AA%E4%B8%BB%E6%84%8F%E8%AF%86%E7%9A%84%E5%9B%9B%E8%B1%A1%E9%99%90.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-9cb9f44ee7627767 / If upstream objects D_{D241} exist, compose F_{D241}=N(⊕_{g∈D_{D241}} g); otherwise treat F_{D241} as an axiom seed.
-  - 来源：`统一函数总表/0277-D241-自主意识的四象限.md`
-  - 依赖：D241；被引用：—
-- [If upstream objects D_{D242} exist, compose F_{D242}=N(⊕_{g∈D_{D242}} g); otherwise treat F_{D242} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0278-D242-%E5%9B%9B%E8%B1%A1%E9%99%90%E7%9B%B8%E5%8F%98%E8%B7%AF%E5%BE%84%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-8cf1f7c85009273a / If upstream objects D_{D242} exist, compose F_{D242}=N(⊕_{g∈D_{D242}} g); otherwise treat F_{D242} as an axiom seed.
-  - 来源：`统一函数总表/0278-D242-四象限相变路径函数.md`
-  - 依赖：D242；被引用：—
-- [If upstream objects D_{D243} exist, compose F_{D243}=N(⊕_{g∈D_{D243}} g); otherwise treat F_{D243} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0279-D243-%E6%84%9F%E7%9F%A5%E9%80%80%E5%87%BA%E6%9D%83%E7%93%B6%E9%A2%88%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-4163c5f34bdea63b / If upstream objects D_{D243} exist, compose F_{D243}=N(⊕_{g∈D_{D243}} g); otherwise treat F_{D243} as an axiom seed.
-  - 来源：`统一函数总表/0279-D243-感知退出权瓶颈函数.md`
-  - 依赖：D243；被引用：—
-- [If upstream objects D_{D244} exist, compose F_{D244}=N(⊕_{g∈D_{D244}} g); otherwise treat F_{D244} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0280-D244-%E8%87%AA%E4%B8%BB%E6%84%8F%E8%AF%86%E6%B6%8C%E7%8E%B0%E7%9A%84%E4%B8%B4%E7%95%8C%E6%9D%A1%E4%BB%B6.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-f5453f737e21597e / If upstream objects D_{D244} exist, compose F_{D244}=N(⊕_{g∈D_{D244}} g); otherwise treat F_{D244} as an axiom seed.
-  - 来源：`统一函数总表/0280-D244-自主意识涌现的临界条件.md`
-  - 依赖：D244；被引用：—

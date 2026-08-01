@@ -11,6 +11,8 @@
 
 5. 读 [任务 110 的独立复制结果](./evidence-program/runs/IGNITION-EVIDENCE-PILOT-R1-OPENALEX-DOI-REPLICATION-20260801/RESULT.md)，先确认 117 条完整返回、116 条主分母和 7 条 null，再读[完成状态与独立复制文章](./docs/editorial/articles/009-system-completion-state-and-independent-replication.md)。这里的“完成”是生命周期事实，不等于科学命题被证明。
 
+6. 读 [任务 111 苹果案例证据档案](./data/operations/iterations/111/historical/EVIDENCE_DOSSIER.md) 和[文章 010](./docs/editorial/articles/010-failure-case-evidence-gate-and-apple-case-adjudication.md)，确认历史 provenance、可执行 target 和复现状态彼此分开；目录分类与“可能会输出”不能代替运行证据。
+
 ## 按目的阅读
 
 |你的目的|先读|继续读|

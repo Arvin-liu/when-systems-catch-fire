@@ -70,6 +70,24 @@
 Pointfire/MCF/PSD/ARN 正确或任何成熟度提升。完整的 preregistration、population、原始
 响应哈希、adjudication、Evidence Program 投影和生命周期证据位于 task-110 机器记录。
 
+## 任务 111（失败案例证据门禁与苹果案例裁定）
+
+任务 111 没有预设“牛顿苹果案例”已经证明系统存在缺陷。三个 `case_failures` 文件的
+原始 `IMPLEMENTATION_DEFECT` 分类被保留为历史基线，但 `Prediction` 中的“系统可能会
+输出”不是运行输出，也没有 target commit、精确输入、trace 或 oracle。
+
+对 Stukeley、Conduitt 和 Newton Project 的历史材料复核后，苹果叙事的外部证据状态为
+`EVIDENCE_PARTIAL_OR_DISPUTED`：材料支持一个有边界的 memoir provenance 记录，不足以
+证明苹果砸中 Newton、一个瞬间直接造成完整理论，或整则故事必然虚构。Function OS
+v0.1/v0.2 只有有界符号执行接口，不存在该历史因果命题的可执行 target；形式化为
+`FORMALIZATION_UNDERSPECIFIED`，复现为 `NO_REPRODUCTION_POSSIBLE_WITH_CURRENT_TARGET`。
+
+任务 111 建立了 fail-closed evidence gate：只有版本化 repository executable、冻结
+commit、精确输入/输出、原始 trace、可重复失败、oracle、claim ceiling、保留首次失败和
+regression guard 齐全，才允许 `REPRODUCED_IMPLEMENTATION_DEFECT`。因此本轮解决的是
+证据资格与队列误标问题，不是苹果历史、点火物理或 Function OS 外部真理问题。完整裁定
+见 [证据档案](../data/operations/iterations/111/historical/EVIDENCE_DOSSIER.md)、[target 审计](../data/operations/iterations/111/TARGET_AUDIT.md) 与[文章 010](../docs/editorial/articles/010-failure-case-evidence-gate-and-apple-case-adjudication.md)。
+
 ## 不能从这些结果推出
 
 - 不能推出点火已经成为被同行评审或实验复现的统一科学理论。

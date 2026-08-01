@@ -4,6 +4,14 @@
 
 ## 2026
 
+<a id="change-chg-111"></a>
+### 2026-08-01 · 任务 111：失败案例证据门禁与苹果案例 target 缺失裁定
+
+- **类型：** `EVIDENCE_GATE_AND_ADJUDICATION`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** 保留三个失败案例的原始分类作为历史基线，分离外部证据、可执行 target、形式化和复现；苹果历史材料仅支持有边界的 memoir provenance，当前没有可执行 target，因此不声称真实实现缺陷，并建立冻结 commit、精确输入输出、trace、oracle、首次失败和 regression guard 的 fail-closed 门禁。
+- **来源：** [README.md](../README.md) · [LATEST.md](../RESULTS/LATEST.md) · [OPEN-QUESTIONS.md](../RESULTS/OPEN-QUESTIONS.md) · [case-status.json](../data/operations/iterations/111/case-status.json) · [EVIDENCE_DOSSIER.md](../data/operations/iterations/111/historical/EVIDENCE_DOSSIER.md) · [TARGET_AUDIT.md](../data/operations/iterations/111/TARGET_AUDIT.md) · [010-failure-case-evidence-gate-and-apple-case-adjudication.md](../docs/editorial/articles/010-failure-case-evidence-gate-and-apple-case-adjudication.md)
+
 <a id="change-chg-110"></a>
 ### 2026-08-01 · 任务 110：已完成工作不再重复排队
 

@@ -4,6 +4,71 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [title: "门控函数进化三阶段 / three-stage evolution of gate functions"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0039-T29-%E9%97%A8%E6%8E%A7%E5%87%BD%E6%95%B0%E8%BF%9B%E5%8C%96%E4%B8%89%E9%98%B6%E6%AE%B5.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-53271C60C7F7C72C / title: "门控函数进化三阶段 / three-stage evolution of gate functions" / IMPLICIT-53271C60C7F7C72C
+  - 来源：`统一函数总表/0039-T29-门控函数进化三阶段.md`
+  - 依赖：—；被引用：—
+- [title: "门控组合-中心极限定理"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0272-D236-%E9%97%A8%E6%8E%A7%E7%BB%84%E5%90%88-%E4%B8%AD%E5%BF%83%E6%9E%81%E9%99%90%E5%AE%9A%E7%90%86.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-a2a1fe254568d1e6 / title: "门控组合-中心极限定理"
+  - 来源：`统一函数总表/0272-D236-门控组合-中心极限定理.md`
+  - 依赖：—；被引用：—
+- [title: "门控面共振统一函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0252-D216-%E9%97%A8%E6%8E%A7%E9%9D%A2%E5%85%B1%E6%8C%AF%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-7C0CEC50C6A2748F / title: "门控面共振统一函数" / IMPLICIT-7C0CEC50C6A2748F
+  - 来源：`统一函数总表/0252-D216-门控面共振统一函数.md`
+  - 依赖：—；被引用：—
+- [title: "门控面共振统一函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0252-D216-%E9%97%A8%E6%8E%A7%E9%9D%A2%E5%85%B1%E6%8C%AF%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-21507b1c259323a8 / title: "门控面共振统一函数"
+  - 来源：`统一函数总表/0252-D216-门控面共振统一函数.md`
+  - 依赖：—；被引用：—
+- [title: "门控面合并统一函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0219-D183-%E9%97%A8%E6%8E%A7%E9%9D%A2%E5%90%88%E5%B9%B6%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-CE0A798C7977B300 / title: "门控面合并统一函数" / IMPLICIT-CE0A798C7977B300 / IMPLICIT-AD73DE418318FBB0
+  - 来源：`统一函数总表/0219-D183-门控面合并统一函数.md`
+  - 依赖：—；被引用：—
+- [title: "门控面合并统一函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0219-D183-%E9%97%A8%E6%8E%A7%E9%9D%A2%E5%90%88%E5%B9%B6%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-c347525a226d939d / title: "门控面合并统一函数"
+  - 来源：`统一函数总表/0219-D183-门控面合并统一函数.md`
+  - 依赖：—；被引用：—
+- [title: "门槛碾压函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0206-D169-%E9%97%A8%E6%A7%9B%E7%A2%BE%E5%8E%8B%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-321A2E0841021CE2 / title: "门槛碾压函数" / IMPLICIT-321A2E0841021CE2
+  - 来源：`统一函数总表/0206-D169-门槛碾压函数.md`
+  - 依赖：—；被引用：—
+- [title: "门槛距离-耦合强度函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0293-D257-%E9%97%A8%E6%A7%9B%E8%B7%9D%E7%A6%BB-%E8%80%A6%E5%90%88%E5%BC%BA%E5%BA%A6%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-85401F07C8B09F27 / title: "门槛距离-耦合强度函数" / IMPLICIT-85401F07C8B09F27
+  - 来源：`统一函数总表/0293-D257-门槛距离-耦合强度函数.md`
+  - 依赖：—；被引用：—
+- [title: "门锁交替律函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0100-D51-%E9%97%A8%E9%94%81%E4%BA%A4%E6%9B%BF%E5%BE%8B%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-0C210DDAF1467900 / title: "门锁交替律函数" / IMPLICIT-0C210DDAF1467900
+  - 来源：`统一函数总表/0100-D51-门锁交替律函数.md`
+  - 依赖：—；被引用：—
+- [title: "防守-进攻相变函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0151-D112-%E9%98%B2%E5%AE%88-%E8%BF%9B%E6%94%BB%E7%9B%B8%E5%8F%98%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-5DBCE31779515D45 / title: "防守-进攻相变函数" / IMPLICIT-5DBCE31779515D45
+  - 来源：`统一函数总表/0151-D112-防守-进攻相变函数.md`
+  - 依赖：—；被引用：—
+- [title: "阶段2临界宽度函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0346-D310-%E9%98%B6%E6%AE%B52%E4%B8%B4%E7%95%8C%E5%AE%BD%E5%BA%A6%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-3018FAA86A687D77 / title: "阶段2临界宽度函数" / IMPLICIT-3018FAA86A687D77
+  - 来源：`统一函数总表/0346-D310-阶段2临界宽度函数.md`
+  - 依赖：—；被引用：—
+- [title: "阶段2宽度-共振频率函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0388-D352-%E9%98%B6%E6%AE%B52%E5%AE%BD%E5%BA%A6-%E5%85%B1%E6%8C%AF%E9%A2%91%E7%8E%87%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-FE2CB1E2D34647CC / title: "阶段2宽度-共振频率函数" / IMPLICIT-FE2CB1E2D34647CC
+  - 来源：`统一函数总表/0388-D352-阶段2宽度-共振频率函数.md`
+  - 依赖：—；被引用：—
+- [title: "阶段2宽度-温度函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0374-D338-%E9%98%B6%E6%AE%B52%E5%AE%BD%E5%BA%A6-%E6%B8%A9%E5%BA%A6%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-C1475D94ED37247C / title: "阶段2宽度-温度函数" / IMPLICIT-C1475D94ED37247C
+  - 来源：`统一函数总表/0374-D338-阶段2宽度-温度函数.md`
+  - 依赖：—；被引用：—
 - [title: "阶段2宽度标度函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0360-D324-%E9%98%B6%E6%AE%B52%E5%AE%BD%E5%BA%A6%E6%A0%87%E5%BA%A6%E5%87%BD%E6%95%B0.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-3EDC9D9609BBE811 / title: "阶段2宽度标度函数" / IMPLICIT-3EDC9D9609BBE811
@@ -2416,70 +2481,5 @@
 - [Within the source-defined scope, 维度最优平衡函数 is adjudicated as METRIC: d_opt由"新门控面降低p"（αᵢ 0）的平衡决定。dΦ/dd=0→Σ](../../../data/foundation/adjudications/core-kernel.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
   - 可搜索名称：CLAIM-D261 / Within the source-defined scope, 维度最优平衡函数 is adjudicated as METRIC: d_opt由"新门控面降低p"（αᵢ 0）的平衡决定。dΦ/dd=0→Σ
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 维度最优漂移函数 is adjudicated as STATE_TRANSITION: M8的d_opt随时间漂移：学习>衰老→d_opt右移（升级），学习<衰老→d_op](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D275 / Within the source-defined scope, 维度最优漂移函数 is adjudicated as STATE_TRANSITION: M8的d_opt随时间漂移：学习>衰老→d_opt右移（升级），学习<衰老→d_op
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 维度稳定性裕度函数 is adjudicated as METRIC: M6的d=4不仅使所有pᵢ<p*，而且稳定性裕度最大（p_max/p*≈2-7倍）。d=3裕度<0，d](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D267 / Within the source-defined scope, 维度稳定性裕度函数 is adjudicated as METRIC: M6的d=4不仅使所有pᵢ<p*，而且稳定性裕度最大（p_max/p*≈2-7倍）。d=3裕度<0，d
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 维度饥渴感知函数 is adjudicated as RELATION: M8的维度饥渴感知信号：超额Φ增长率Δ(dΦ/dt)∝(σ-σ_opt)²·ḡ。感知到饥渴到响应之间](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D363 / Within the source-defined scope, 维度饥渴感知函数 is adjudicated as RELATION: M8的维度饥渴感知信号：超额Φ增长率Δ(dΦ/dt)∝(σ-σ_opt)²·ḡ。感知到饥渴到响应之间
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 缓冲关联结构函数 is adjudicated as NATURAL_LANGUAGE_CANDIDATE: 原文把 D351 写成 `溢出系数 ∝ ḡ`，说明耦合越强，缓冲](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：CLAIM-D351 / Within the source-defined scope, 缓冲关联结构函数 is adjudicated as NATURAL_LANGUAGE_CANDIDATE: 原文把 D351 写成 `溢出系数 ∝ ḡ`，说明耦合越强，缓冲
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：D351；被引用：—
-- [Within the source-defined scope, 缓冲可重建性函数 is adjudicated as RELATION: M10的缓冲耗尽后可重建条件：g_eff>g_critical≈√(2ΔΦ/n)。g_eff低于此阈](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D309 / Within the source-defined scope, 缓冲可重建性函数 is adjudicated as RELATION: M10的缓冲耗尽后可重建条件：g_eff>g_critical≈√(2ΔΦ/n)。g_eff低于此阈
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：D295, D309；被引用：—
-- [Within the source-defined scope, 缓冲容量峰值函数 is adjudicated as METRIC: M10的C_buffer(t)先增后减：早期pᵢpⱼ增长主导→C_buffer↑，中期达峰值，晚期g_e](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D262 / Within the source-defined scope, 缓冲容量峰值函数 is adjudicated as METRIC: M10的C_buffer(t)先增后减：早期pᵢpⱼ增长主导→C_buffer↑，中期达峰值，晚期g_e
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 缓冲峰值余量函数 is adjudicated as RELATION: M10的C_max与p*比值∝n^{3/2}→n越大峰值余量越充裕。但衰减速度∝n²→余量消耗更快。](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D278 / Within the source-defined scope, 缓冲峰值余量函数 is adjudicated as RELATION: M10的C_max与p*比值∝n^{3/2}→n越大峰值余量越充裕。但衰减速度∝n²→余量消耗更快。
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 缓冲消耗速度函数 is adjudicated as METRIC: M10的缓冲消耗速度∝Δα·n²p̄²ḡ/2。三个加速因子：n大（复杂）、Δα大（极化）、p̄大（高风险](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D294 / Within the source-defined scope, 缓冲消耗速度函数 is adjudicated as METRIC: M10的缓冲消耗速度∝Δα·n²p̄²ḡ/2。三个加速因子：n大（复杂）、Δα大（极化）、p̄大（高风险
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 缓冲溢出方向函数 is adjudicated as RELATION: M10的缓冲消耗溢出方向不对称：高p→低p方向溢出强，反向弱∝1/p_max。核心部门出问题冲击全局](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D365 / Within the source-defined scope, 缓冲溢出方向函数 is adjudicated as RELATION: M10的缓冲消耗溢出方向不对称：高p→低p方向溢出强，反向弱∝1/p_max。核心部门出问题冲击全局
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 缓冲部分重建效率函数 is adjudicated as METRIC: M10的缓冲从C₁到C₂的效率η∝(C₂-C₁)/(C_max-C₁)·ḡ·β。离C_max越近每单](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D337 / Within the source-defined scope, 缓冲部分重建效率函数 is adjudicated as METRIC: M10的缓冲从C₁到C₂的效率η∝(C₂-C₁)/(C_max-C₁)·ḡ·β。离C_max越近每单
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 缓冲重建时间函数 is adjudicated as METRIC: M10的缓冲从零重建到C_max的时间τ_rebuild∝n/(ḡ·β)。τ_rebuild>>τ_de](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D323 / Within the source-defined scope, 缓冲重建时间函数 is adjudicated as METRIC: M10的缓冲从零重建到C_max的时间τ_rebuild∝n/(ḡ·β)。τ_rebuild>>τ_de
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 缓存倒U型 is adjudicated as OPTIMIZATION_PROBLEM: 缓存冲突概率在缓存大小为活跃节点数的1.4倍时取最大值。. This is a m](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-T10 / Within the source-defined scope, 缓存倒U型 is adjudicated as OPTIMIZATION_PROBLEM: 缓存冲突概率在缓存大小为活跃节点数的1.4倍时取最大值。. This is a m
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 缓存容量倒U型函数 is adjudicated as METRIC: 17域词典簇碰撞，涵盖17个领域的函数投影。. This is a model-internal co](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D123 / Within the source-defined scope, 缓存容量倒U型函数 is adjudicated as METRIC: 17域词典簇碰撞，涵盖17个领域的函数投影。. This is a model-internal co
   - 来源：`data/foundation/adjudications/core-kernel.jsonl`
   - 依赖：—；被引用：—

@@ -104,6 +104,24 @@
       "supersedes": []
     },
     {
+      "change_id": "CHG-111",
+      "date": "2026-08-01",
+      "change_type": "EVIDENCE_GATE_AND_ADJUDICATION",
+      "title": "任务 111：失败案例证据门禁与苹果案例 target 缺失裁定",
+      "summary": "保留三个失败案例的原始分类作为历史基线，分离外部证据、可执行 target、形式化和复现；苹果历史材料仅支持有边界的 memoir provenance，当前没有可执行 target，因此不声称真实实现缺陷，并建立冻结 commit、精确输入输出、trace、oracle、首次失败和 regression guard 的 fail-closed 门禁。",
+      "status": "CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS",
+      "sources": [
+        "README.md",
+        "RESULTS/LATEST.md",
+        "RESULTS/OPEN-QUESTIONS.md",
+        "data/operations/iterations/111/case-status.json",
+        "data/operations/iterations/111/historical/EVIDENCE_DOSSIER.md",
+        "data/operations/iterations/111/TARGET_AUDIT.md",
+        "docs/editorial/articles/010-failure-case-evidence-gate-and-apple-case-adjudication.md"
+      ],
+      "supersedes": []
+    },
+    {
       "change_id": "CHG-102",
       "date": "2026-07-30",
       "change_type": "KNOWLEDGE_EXPERIENCE",

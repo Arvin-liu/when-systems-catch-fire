@@ -4,6 +4,46 @@
 
 [返回资产卡总索引](../ASSET-CARDS.md)
 
+<a id="asset-hr-c5a76b2115839837"></a>
+## 121Q23 Relational Network Gap Audit
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-C5A76B2115839837` · [reports/architecture/121Q23-relational-network-gap-audit.md](../../reports/architecture/121Q23-relational-network-gap-audit.md)
+- **为什么产生：** 此来源记录了什么：121Q23 Relational Network Gap Audit？
+- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **当前结果：** Status: PARTIALRELATIONALASSETSWITHOUTADAPTIVERELATIONALNETWORK
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `reports/architecture/121Q23-relational-network-gap-audit.md`, `121Q23-RELATIONAL-NETWORK-GAP-AUDIT`
+- **演化历史：** 2026-07-16: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `121Q23 Relational Network Gap Audit`, `121Q23-relational-network-gap-audit`
+
+<a id="asset-hr-c629630ad15b68cb"></a>
+## 任务 102 知识体验层缺口与覆盖审计
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-C629630AD15B68CB` · [reports/operations/102-knowledge-experience-audit.md](../../reports/operations/102-knowledge-experience-audit.md)
+- **为什么产生：** 此来源记录了什么：任务 102 知识体验层缺口与覆盖审计？
+- **当前状态：** `CANDIDATE_OR_PENDING_SOURCE`
+- **当前结果：** 状态：候选实现审计；不自证 Accepted、Merged 或 Current。
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `reports/operations/102-knowledge-experience-audit.md`, `102-KNOWLEDGE-EXPERIENCE-AUDIT`
+- **演化历史：** 2026-07-30: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `任务 102 知识体验层缺口与覆盖审计`, `102-knowledge-experience-audit`
+
 <a id="asset-hr-c7aaddf58550aae5"></a>
 ## 120 — Function Paradigm Atlas Report
 

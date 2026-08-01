@@ -4,6 +4,51 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [CI time becomes the mechanism by which correctness regressions hide.](../../../docs/foundation/task-107-incident-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-c423811090b52ee5 / CI time becomes the mechanism by which correctness regressions hide.
+  - 来源：`docs/foundation/task-107-incident-report.md`
+  - 依赖：—；被引用：—
+- [ci_compute -->\|evidence_flow\| foundation_validators](../../../reports/atlas/maps/map-maintainer-sustainability-economics.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-77609c5593fcc285 / ci_compute -->\|evidence_flow\| foundation_validators
+  - 来源：`reports/atlas/maps/map-maintainer-sustainability-economics.md`
+  - 依赖：—；被引用：—
+- [Citation count is not evidence of correctness](../../../data/external-research/120-function-paradigm-atlas/120-forbidden-wording.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-5df19addf0cd1c16 / Citation count is not evidence of correctness
+  - 来源：`data/external-research/120-function-paradigm-atlas/120-forbidden-wording.jsonl`
+  - 依赖：—；被引用：—
+- [Cited expert networks, adapters, masks and checkpoints are deployable artifact forms, while this survey releases no gove](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-d508b2012e8a6e00 / Cited expert networks, adapters, masks and checkpoints are deployable artifact forms, while this survey releases no gove
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [Claim ceiling: deterministic ARN projection only](../../../data/architecture/adaptive-relational-network/real-history/after-layer-architecture.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-ebb0d8ee567d662b / Claim ceiling: deterministic ARN projection only
+  - 来源：`data/architecture/adaptive-relational-network/real-history/after-layer-architecture.md`
+  - 依赖：—；被引用：—
+- [Claim ceiling: deterministic repository planning, execution and recovery evidence under declared authorities only; no ca](../../../docs/architecture/incremental-execution.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-2c548018ea8e49ec / Claim ceiling: deterministic repository planning, execution and recovery evidence under declared authorities only; no ca
+  - 来源：`docs/architecture/incremental-execution.md`
+  - 依赖：—；被引用：—
+- [claim_ceiling: "mechanism_plausible / causal_identification_pending / external_historical_verification_required"](../../../reports/publication/jin-rise-point-fire-analysis.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-e12e385c3a4518d1 / claim_ceiling: "mechanism_plausible / causal_identification_pending / external_historical_verification_required"
+  - 来源：`reports/publication/jin-rise-point-fire-analysis.md`
+  - 依赖：—；被引用：—
+- [Claims that a mechanism is supported require discriminating evidence, alternative mechanism review, and a bounded claim](../../../docs/architecture/distribution-collapse-control-plane.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-ef0e3415b7f237cc / Claims that a mechanism is supported require discriminating evidence, alternative mechanism review, and a bounded claim
+  - 来源：`docs/architecture/distribution-collapse-control-plane.md`
+  - 依赖：—；被引用：—
+- [claim、argument、mechanism、map、gap、residue、模型投影、分析与反馈返回项。](../../../data/architecture/interactive-system-map.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-c9319fd8b3131647 / claim、argument、mechanism、map、gap、residue、模型投影、分析与反馈返回项。
+  - 来源：`data/architecture/interactive-system-map.json`
+  - 依赖：—；被引用：—
 - [Classical refinement verification conditions are unsound for lazy evaluation because they may assume refinements of free](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-a58fca21bc40492d / Classical refinement verification conditions are unsound for lazy evaluation because they may assume refinements of free
@@ -2456,48 +2501,3 @@
   - 可搜索名称：NFC-052b8a260c680bda / not empirical
   - 来源：`data/architecture/probabilistic-system-dynamics/examples/coarse-graining-emergence.json`
   - 依赖：—；被引用：—
-- [not empirical calibration](../../../data/architecture/probabilistic-system-dynamics/examples/deterministic-system.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-c544cf3b703ae8f0 / not empirical calibration
-  - 来源：`data/architecture/probabilistic-system-dynamics/examples/deterministic-system.json`
-  - 依赖：—；被引用：—
-- [Object D100 defines a mechanism_model within the point-fire framework. Core: 中文：P_track^AI = 1 + (ε_aware^AI θ_track)^+。](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-20bf18960e3c65fb / Object D100 defines a mechanism_model within the point-fire framework. Core: 中文：P_track^AI = 1 + (ε_aware^AI θ_track)^+。
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D100；被引用：—
-- [Object D123 defines a mechanism_model within the point-fire framework. Core: 中文：P_collision(WM) = P_slot × P_priority ×](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-8e4099c7e310d2d0 / Object D123 defines a mechanism_model within the point-fire framework. Core: 中文：P_collision(WM) = P_slot × P_priority ×
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D123；被引用：—
-- [Object D124 defines a mechanism_model within the point-fire framework. Core: 中文：τ_life = (1/α) × ln(I₀/M₀ + ∫₀^∞ e^{-βt}](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-31f53eb5fe3a9618 / Object D124 defines a mechanism_model within the point-fire framework. Core: 中文：τ_life = (1/α) × ln(I₀/M₀ + ∫₀^∞ e^{-βt}
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D124；被引用：—
-- [Object D126 defines a mechanism_model within the point-fire framework. Core: 中文：**Π_income = Π_cognition × η_select × η_](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-3350618fbe9122f8 / Object D126 defines a mechanism_model within the point-fire framework. Core: 中文：**Π_income = Π_cognition × η_select × η_
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：A6, D126；被引用：—
-- [Object D127 defines a mechanism_model within the point-fire framework. Core: 中文：A_ignition = ∫ e^{i·S_ignition/ℏ_eff} D\[](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-65c154f085e8bb2a / Object D127 defines a mechanism_model within the point-fire framework. Core: 中文：A_ignition = ∫ e^{i·S_ignition/ℏ_eff} D\[
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D118, D127；被引用：—
-- [Object D164 defines a mechanism_model within the point-fire framework. Core: 中文：定投天然具备结构保守性，是巴菲特模式的精确实现。. Annotation: 定投](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-bd731b992c9bc7f8 / Object D164 defines a mechanism_model within the point-fire framework. Core: 中文：定投天然具备结构保守性，是巴菲特模式的精确实现。. Annotation: 定投
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D164；被引用：—
-- [Object D169 defines a mechanism_model within the point-fire framework. Core: 中文：Λ(t) = Λ₀ × e^(σ×t)，μ(t) = μ₀ × e^(-γ×t)](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-69357d2165d32d90 / Object D169 defines a mechanism_model within the point-fire framework. Core: 中文：Λ(t) = Λ₀ × e^(σ×t)，μ(t) = μ₀ × e^(-γ×t)
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D169；被引用：—
-- [Object D176 defines a mechanism_model within the point-fire framework. Core: 中文：ρ同时驱动H_correlation(\[D66\](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-c9676ad62e88f428 / Object D176 defines a mechanism_model within the point-fire framework. Core: 中文：ρ同时驱动H_correlation(\[D66\](docs/zh/functio
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D176, D53, D66；被引用：—

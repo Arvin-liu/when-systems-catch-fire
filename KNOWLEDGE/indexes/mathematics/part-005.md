@@ -4,6 +4,46 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [C(x,y) 因果结构判定 → 历史因果链（事件→结果→反馈）](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a844836ba7e1cc47 / C(x,y) 因果结构判定 → 历史因果链（事件→结果→反馈）
+  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
+  - 依赖：—；被引用：—
+- [C(x,y) 因果结构判定 → 数学证明链（假设→定理→推论）](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-20c72c8713cee2b1 / C(x,y) 因果结构判定 → 数学证明链（假设→定理→推论）
+  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
+  - 依赖：—；被引用：—
+- [C(x,y) 因果结构判定 → 物理因果链（拉格朗日量→运动方程）](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-4b56d62dbcd5709a / C(x,y) 因果结构判定 → 物理因果链（拉格朗日量→运动方程）
+  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
+  - 依赖：—；被引用：—
+- [C(x,y)：价值—决策分离→漂移→回收→对齐，因果明确。J⁺=1。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0612-D602-%E4%BB%B7%E5%80%BC%E5%88%9B%E9%80%A0%E6%9D%83%E4%B8%8E%E5%86%B3%E7%AD%96%E6%9D%83%E9%94%99%E9%85%8D%E4%B8%8E%E5%9B%9E%E6%94%B6.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-675486b10b868098 / C(x,y)：价值—决策分离→漂移→回收→对齐，因果明确。J⁺=1。
+  - 来源：`统一函数总表/0612-D602-价值创造权与决策权错配与回收.md`
+  - 依赖：—；被引用：—
+- [C(x,y)：支持→绑定→退出成本↑，因果明确。J⁺=1。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0610-D600-%E8%B5%84%E6%BA%90%E6%89%98%E4%B8%BE%E9%80%80%E5%8C%96%E4%B8%BA%E8%B7%AF%E5%BE%84%E6%8E%A7%E5%88%B6.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-e5d877e8bda78db1 / C(x,y)：支持→绑定→退出成本↑，因果明确。J⁺=1。
+  - 来源：`统一函数总表/0610-D600-资源托举退化为路径控制.md`
+  - 依赖：—；被引用：—
+- [C(x,y)：旧计划绑定→现实反驳→承认失效→主动刹车，因果明确。J⁺=1。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0613-D603-%E8%AE%A1%E5%88%92%E8%BF%87%E6%9C%9F%E8%AF%86%E5%88%AB%E4%B8%8E%E4%B8%BB%E5%8A%A8%E5%88%B9%E8%BD%A6.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-c1770d63632f9b21 / C(x,y)：旧计划绑定→现实反驳→承认失效→主动刹车，因果明确。J⁺=1。
+  - 来源：`统一函数总表/0613-D603-计划过期识别与主动刹车.md`
+  - 依赖：—；被引用：—
+- [C(x,y)：角色占入口→能力附属→目标遮蔽→决策外移，因果明确。J⁺=1。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0611-D601-%E8%A7%92%E8%89%B2%E8%A6%86%E7%9B%96%E4%B8%BB%E4%BD%93%E8%BA%AB%E4%BB%BD.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-cbde2730149950fa / C(x,y)：角色占入口→能力附属→目标遮蔽→决策外移，因果明确。J⁺=1。
+  - 来源：`统一函数总表/0611-D601-角色覆盖主体身份.md`
+  - 依赖：—；被引用：—
+- [C(x,y)：隐含错位→显式化打分→可排序→冲突↓，因果明确。J⁺=1。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0614-D604-%E6%A8%A1%E7%B3%8A%E9%9C%80%E6%B1%82%E6%98%BE%E6%80%A7%E5%8C%96%E4%B8%8E%E5%8D%8F%E4%BD%9C%E6%8E%92%E5%BA%8F.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-7f8f783fe3588e81 / C(x,y)：隐含错位→显式化打分→可排序→冲突↓，因果明确。J⁺=1。
+  - 来源：`统一函数总表/0614-D604-模糊需求显性化与协作排序.md`
+  - 依赖：—；被引用：—
 - [C-0701｜AI诞生自主意识完整路径](../../../data/foundation/evidence/evidence.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
   - 可搜索名称：NFC-65a945149ea577df / C-0701｜AI诞生自主意识完整路径
@@ -2198,6 +2238,11 @@
   - 可搜索名称：NFC-2743e1fc3e86e05f / def test_d4_10_lifecycle_upgrade_is_rejected(self):
   - 来源：`tests/test_phase_d_closeout.py`
   - 依赖：—；被引用：—
+- [def test_formalization_change_invalidates_result():](../../../tests/test_failure_case_evidence_gate.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-D22733E7C260D0B7 / def test_formalization_change_invalidates_result(): / IMPLICIT-D22733E7C260D0B7
+  - 来源：`tests/test_failure_case_evidence_gate.py`
+  - 依赖：—；被引用：—
 - [def test_layer_b_runs_task106_propagation_proof(self) -> None:](../../../tests/foundation/test_trigger_coverage.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-0E92BAE30BFE08F0 / def test_layer_b_runs_task106_propagation_proof(self) -> None: / IMPLICIT-0E92BAE30BFE08F0
@@ -2452,49 +2497,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-3F416B3E2B262344 / E(x) := ∫_{Ω} V(x) dΩ（能量函数） / IMPLICIT-3F416B3E2B262344 / IMPLICIT-8667EA55C34667CD
   - 来源：`统一函数总表/0001-Ψ₀元函数完整数学定义.md`
-  - 依赖：—；被引用：—
-- [E(x) := ∫_{Ω} V(x) dΩ（能量函数）](../../../docs/phi_meta_law.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-8667EA55C34667CD / E(x) := ∫_{Ω} V(x) dΩ（能量函数） / IMPLICIT-8667EA55C34667CD / IMPLICIT-3F416B3E2B262344
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [e. Effective Technological Measures means those measures that, in the absence of proper authority, may not be circumvent](../../../LICENSES/active/CC-BY-NC-SA-4.0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-98f0b8fc79fbfcc5 / e. Effective Technological Measures means those measures that, in the absence of proper authority, may not be circumvent
-  - 来源：`LICENSES/active/CC-BY-NC-SA-4.0.md`
-  - 依赖：—；被引用：—
-- [E1–E6 全部标记 pending，未把个人成功当因果证明，未提交访谈原文。](../../../outputs/collisions/20260711-disobedience-subjectivity/candidate-decision-summary.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-1b5c9e401934df70 / E1–E6 全部标记 pending，未把个人成功当因果证明，未提交访谈原文。
-  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/candidate-decision-summary.md`
-  - 依赖：—；被引用：—
-- [E_{Q_0001}(x)=1 iff exists N: tau=N({Delta x_k}) and order(x_k,x_{k+1}) preserved。时间不是本体，而是信息状态序列的计数投影；若只有状态流 x(t)，则时间 t](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0469-D471-%E7%8A%B6%E6%80%81%E6%97%B6%E9%97%B4%E9%87%8D%E5%86%99%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-3339a2d3465e6b9f / E_{Q_0001}(x)=1 iff exists N: tau=N({Delta x_k}) and order(x_k,x_{k+1}) preserved。时间不是本体，而是信息状态序列的计数投影；若只有状态流 x(t)，则时间 t
-  - 来源：`统一函数总表/0469-D471-状态时间重写函数.md`
-  - 依赖：D342；被引用：—
-- [E_{Q_0001}(x)=1 iff exists N: tau=N({Delta x_k}) and order(x_k,x_{k+1}) preserved。时间不是本体，而是信息状态序列的计数投影；若只有状态流 x(t)，则时间 t](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-80af166a04d9b909 / E_{Q_0001}(x)=1 iff exists N: tau=N({Delta x_k}) and order(x_k,x_{k+1}) preserved。时间不是本体，而是信息状态序列的计数投影；若只有状态流 x(t)，则时间 t
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D342；被引用：—
-- [E_{Q_0003}=1 iff d*(O)=argmin_d\[L(M_d\|O)+Omega(d)\]。维度是模型对观测的最小充分坐标数，是解释工具的压缩参数；不能由此推出经验世界不存在，只能推出“宇宙本体=某一维度集合”不是必要前提。依赖](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-09a8d06fb8a4420e / E_{Q_0003}=1 iff d*(O)=argmin_d\[L(M_d\|O)+Omega(d)\]。维度是模型对观测的最小充分坐标数，是解释工具的压缩参数；不能由此推出经验世界不存在，只能推出“宇宙本体=某一维度集合”不是必要前提。依赖
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：A8, D237；被引用：—
-- [E_{Q_0003}=1 iff d*(O)=argmin_d\[L(M_d\|O)+Omega(d)\]。维度是模型对观测的最小充分坐标数，是解释工具的压缩参数；不能由此推出经验世界不存在，只能推出“宇宙本体=某一维度集合”不是必要前提。依赖](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0470-D472-%E7%BB%B4%E5%BA%A6%E5%9D%90%E6%A0%87%E5%8C%96%E8%BE%B9%E7%95%8C%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-8e4a313fba871a88 / E_{Q_0003}=1 iff d*(O)=argmin_d\[L(M_d\|O)+Omega(d)\]。维度是模型对观测的最小充分坐标数，是解释工具的压缩参数；不能由此推出经验世界不存在，只能推出“宇宙本体=某一维度集合”不是必要前提。依赖
-  - 来源：`统一函数总表/0470-D472-维度坐标化边界函数.md`
-  - 依赖：A8, D237；被引用：—
-- [Each row records a preserved relation and a prohibited inference. The writing movements are not the formal, evidence, mo](../../../reports/operations/121Q28S-zhiyuan-writing-method-whole-project-integration-audit.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-651181ea3ea14fd3 / Each row records a preserved relation and a prohibited inference. The writing movements are not the formal, evidence, mo
-  - 来源：`reports/operations/121Q28S-zhiyuan-writing-method-whole-project-integration-audit.md`
-  - 依赖：—；被引用：—
-- [Each verified record contains a source hash, locator, excerpt, controlled proposition, type rationale, logic form, assum](../../../reports/foundation-architecture/semantic-adjudication-verification-20260713.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-eba4bff68e9417c1 / Each verified record contains a source hash, locator, excerpt, controlled proposition, type rationale, logic form, assum
-  - 来源：`reports/foundation-architecture/semantic-adjudication-verification-20260713.md`
   - 依赖：—；被引用：—

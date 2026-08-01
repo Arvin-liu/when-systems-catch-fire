@@ -4,6 +4,71 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [title: "P_exit(t,L,C) 退出概率 / P_exit(t,L,C) exit probability"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0010-A9-P_exit%28t%2CL%2CC%29%20%E9%80%80%E5%87%BA%E6%A6%82%E7%8E%87.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-1840559EDF971BC9 / title: "P_exit(t,L,C) 退出概率 / P_exit(t,L,C) exit probability" / IMPLICIT-1840559EDF971BC9
+  - 来源：`统一函数总表/0010-A9-P_exit(t,L,C) 退出概率.md`
+  - 依赖：—；被引用：—
+- [title: "r_cross=0不导致Ψ=0"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0260-C-260-r_cross%3D0%E4%B8%8D%E5%AF%BC%E8%87%B4%CE%A8%3D0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-C9D721E38BAA2ACA / title: "r_cross=0不导致Ψ=0" / IMPLICIT-C9D721E38BAA2ACA
+  - 来源：`统一案例总表/0260-C-260-r_cross=0不导致Ψ=0.md`
+  - 依赖：—；被引用：—
+- [title: "r_cross优先性定理"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0154-D115-r_cross%E4%BC%98%E5%85%88%E6%80%A7%E5%AE%9A%E7%90%86.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-BF5F791B0C6D3351 / title: "r_cross优先性定理" / IMPLICIT-BF5F791B0C6D3351
+  - 来源：`统一函数总表/0154-D115-r_cross优先性定理.md`
+  - 依赖：—；被引用：—
+- [title: "Shannon-Fisher跷跷板定理"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0269-D233-Shannon-Fisher%E8%B7%B7%E8%B7%B7%E6%9D%BF%E5%AE%9A%E7%90%86.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-4631579D56B0CCA4 / title: "Shannon-Fisher跷跷板定理" / IMPLICIT-4631579D56B0CCA4
+  - 来源：`统一函数总表/0269-D233-Shannon-Fisher跷跷板定理.md`
+  - 依赖：—；被引用：—
+- [title: "Weinberg角验证 — 三个维度：心理α=5→θ_cog=81°→纯门控（\\"想通\\"是质变）；技能α=1→θ_cog=45°→混合；经济α=0.2→θ_cog=24°→偏参数（收入可渐变）。心理维度改善只能0→1，经济维度可渐变 / Weinberg角验证 - 三个维度: 心理α=5 -> θ_cog=81° -> 纯门控(\\"想通\\"是质变); 技能α=1 -> θ_cog=45° -> 混合; 经济α=0.2 -> θ_cog=24° -> 偏参数(](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0515-C-520-Weinberg%E8%A7%92%E9%AA%8C%E8%AF%81%20%E2%80%94%20%E4%B8%89%E4%B8%AA%E7%BB%B4%E5%BA%A6-%E5%BF%83%E7%90%86%CE%B1%3D5%E2%86%92%CE%B8_cog%3D81%C2%B0%E2%86%92%E7%BA%AF%E9%97%A8%E6%8E%A7%28-%E6%83%B3%E9%80%9A-%E6%98%AF%E8%B4%A8%E5%8F%98%29%3B%E6%8A%80%E8%83%BD%CE%B1%3D1%E2%86%92%CE%B8_cog%3D45%C2%B0%E2%86%92%E6%B7%B7%E5%90%88%3B%E7%BB%8F%E6%B5%8E%CE%B1.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-8FC396CED57EC5C1 / title: "Weinberg角验证 — 三个维度：心理α=5→θ_cog=81°→纯门控（\\"想通\\"是质变）；技能α=1→θ_cog=45°→混合；经济α=0.2→θ_cog=24°→偏参数（收入可渐变）。心理维度改善只能0→1，经济维度可渐变 / Weinberg角验证 - 三个维度: 心理α=5 -> θ_cog=81° -> 纯门控(\\"想通\\"是质变); 技能α=1 -> θ_cog=45° -> 混合; 经济α=0.2 -> θ_cog=24° -> 偏参数( / IMPLICIT-8FC396CED57EC5C1
+  - 来源：`统一案例总表/0515-C-520-Weinberg角验证 — 三个维度-心理α=5→θ_cog=81°→纯门控(-想通-是质变);技能α=1→θ_cog=45°→混合;经济α.md`
+  - 依赖：—；被引用：—
+- [title: "ε_eff闭环动力学"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0121-C-121-%CE%B5_eff%E9%97%AD%E7%8E%AF%E5%8A%A8%E5%8A%9B%E5%AD%A6.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-5ED81E3041D420A0 / title: "ε_eff闭环动力学" / IMPLICIT-5ED81E3041D420A0
+  - 来源：`统一案例总表/0121-C-121-ε_eff闭环动力学.md`
+  - 依赖：—；被引用：—
+- [title: "ε双向动力学 / epsilon bidirectional dynamics"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0013-T3-%CE%B5%E5%8F%8C%E5%90%91%E5%8A%A8%E5%8A%9B%E5%AD%A6.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-062218C871245A51 / title: "ε双向动力学 / epsilon bidirectional dynamics" / IMPLICIT-062218C871245A51
+  - 来源：`统一函数总表/0013-T3-ε双向动力学.md`
+  - 依赖：—；被引用：—
+- [title: "μ翻转时间计算 — BH/BL=5，C₀=0.1，γ=0.05，Cmax=2，P(biased)=0.2，tflip≈8.1个月 / μ翻转时间计算 - BH/BL=5, C₀=0.1, γ=0.05, Cmax=2, P(biased)=0.2, tflip≈8.1个月"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0362-C-363-%CE%BC%E7%BF%BB%E8%BD%AC%E6%97%B6%E9%97%B4%E8%AE%A1%E7%AE%97%20%E2%80%94%20BH.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-BBAA92F46CC8D506 / title: "μ翻转时间计算 — BH/BL=5，C₀=0.1，γ=0.05，Cmax=2，P(biased)=0.2，tflip≈8.1个月 / μ翻转时间计算 - BH/BL=5, C₀=0.1, γ=0.05, Cmax=2, P(biased)=0.2, tflip≈8.1个月" / IMPLICIT-BBAA92F46CC8D506
+  - 来源：`统一案例总表/0362-C-363-μ翻转时间计算 — BH.md`
+  - 依赖：—；被引用：—
+- [title: "Φ=零温自由能 \| Φ与统计力学零温自由能精确等价 / Phi = zero-temperature free energy \| Φ与统计力学零温自由能精确等价"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0027-T17-%CE%A6%3D%E9%9B%B6%E6%B8%A9%E8%87%AA%E7%94%B1%E8%83%BD%20-%20%CE%A6%E4%B8%8E%E7%BB%9F%E8%AE%A1%E5%8A%9B%E5%AD%A6%E9%9B%B6%E6%B8%A9%E8%87%AA%E7%94%B1%E8%83%BD%E7%B2%BE%E7%A1%AE%E7%AD%89%E4%BB%B7.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-72D5A3EF854B1B6A / title: "Φ=零温自由能 \| Φ与统计力学零温自由能精确等价 / Phi = zero-temperature free energy \| Φ与统计力学零温自由能精确等价" / IMPLICIT-72D5A3EF854B1B6A
+  - 来源：`统一函数总表/0027-T17-Φ=零温自由能 - Φ与统计力学零温自由能精确等价.md`
+  - 依赖：—；被引用：—
+- [title: "Ω最优区间定理"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0255-D219-%CE%A9%E6%9C%80%E4%BC%98%E5%8C%BA%E9%97%B4%E5%AE%9A%E7%90%86.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-EB4189288B258A1A / title: "Ω最优区间定理" / IMPLICIT-EB4189288B258A1A
+  - 来源：`统一函数总表/0255-D219-Ω最优区间定理.md`
+  - 依赖：—；被引用：—
+- [title: "乘法归零律 / multiplication zero law"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0012-T2-%E4%B9%98%E6%B3%95%E5%BD%92%E9%9B%B6%E5%BE%8B.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-76CE78879F200704 / title: "乘法归零律 / multiplication zero law" / IMPLICIT-76CE78879F200704
+  - 来源：`统一函数总表/0012-T2-乘法归零律.md`
+  - 依赖：—；被引用：—
+- [title: "仙人球模型"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0200-C-200-%E4%BB%99%E4%BA%BA%E7%90%83%E6%A8%A1%E5%9E%8B.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-D138E7B4BA0CDE90 / title: "仙人球模型" / IMPLICIT-D138E7B4BA0CDE90
+  - 来源：`统一案例总表/0200-C-200-仙人球模型.md`
+  - 依赖：—；被引用：—
+- [title: "仲裁模型升级自举循环验证"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0600-C-605-%E4%BB%B2%E8%A3%81%E6%A8%A1%E5%9E%8B%E5%8D%87%E7%BA%A7%E8%87%AA%E4%B8%BE%E5%BE%AA%E7%8E%AF%E9%AA%8C%E8%AF%81.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-6D6174A95D2E751B / title: "仲裁模型升级自举循环验证" / IMPLICIT-6D6174A95D2E751B
+  - 来源：`统一案例总表/0600-C-605-仲裁模型升级自举循环验证.md`
+  - 依赖：—；被引用：—
 - [title: "仲裁模型最弱维度锁死验证"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0595-C-600-%E4%BB%B2%E8%A3%81%E6%A8%A1%E5%9E%8B%E6%9C%80%E5%BC%B1%E7%BB%B4%E5%BA%A6%E9%94%81%E6%AD%BB%E9%AA%8C%E8%AF%81.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-40FB8D258F058614 / title: "仲裁模型最弱维度锁死验证" / IMPLICIT-40FB8D258F058614
@@ -2114,6 +2179,11 @@
   - 可搜索名称：NFC-9f7578b36a470a74 / 固定为以下五类，每一类用对应字段输出：
   - 来源：`docs/getbrain-operation-guide-20260708.md`
   - 依赖：—；被引用：—
+- [在 task-111 队列投影中保持可检索，但因证据前置条件未满足而不进入 active queue。](../../ASSET-CARDS.md#asset-nfc-8fe9b8761b7aa866)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-8fe9b8761b7aa866 / 在 task-111 队列投影中保持可检索，但因证据前置条件未满足而不进入 active queue。 / 在 task-111 队列投影中保持可检索，但因证据前置条件未满足而不进入 active queue。
+  - 来源：`README.md`
+  - 依赖：—；被引用：—
 - [在正式贡献者许可协议或书面贡献授权建立前，项目不接受会妨碍双重许可、商业许可或 BUSL 覆盖软件未来 AGPL 转换的外部代码贡献。DCO 式 sign-off 本身不被视为自动授予任意再许可权。贡献前请先讨论，并说明你有权按对应许可层提](../../../CONTRIBUTING.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-625cf3158fe2f1ec / 在正式贡献者许可协议或书面贡献授权建立前，项目不接受会妨碍双重许可、商业许可或 BUSL 覆盖软件未来 AGPL 转换的外部代码贡献。DCO 式 sign-off 本身不被视为自动授予任意再许可权。贡献前请先讨论，并说明你有权按对应许可层提
@@ -2433,74 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-00d0e4a98efdc828 / 是（适合作为跨域同构识别的样本）
   - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [智能 = 在σ_opt附近运行的能力 定义智能度： ι = I_eff(σ) / I_eff(σ_opt) = I_eff(σ) / I_eff_max ι ∈ \[0, 1\] ι = 1：有效信息最大，最优智能 ι → 0：有效信息趋零，无智能](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0274-D238-%E6%99%BA%E8%83%BD%E7%9A%84%E9%97%A8%E6%8E%A7%E7%B2%BE%E5%BA%A6%E6%9C%80%E4%BC%98%E5%AE%9A%E7%90%86.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-FEF855692D34E196 / 智能 = 在σ_opt附近运行的能力 定义智能度： ι = I_eff(σ) / I_eff(σ_opt) = I_eff(σ) / I_eff_max ι ∈ \[0, 1\] ι = 1：有效信息最大，最优智能 ι → 0：有效信息趋零，无智能 / IMPLICIT-FEF855692D34E196
-  - 来源：`统一函数总表/0274-D238-智能的门控精度最优定理.md`
-  - 依赖：—；被引用：—
-- [最终同构性判定：** J⁺=1, J⁻=0 → 真收敛](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-2a9c25011e13ee78 / 最终同构性判定：** J⁺=1, J⁻=0 → 真收敛
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [最近邻反事实：D595 是绩效/待遇/组织资源绑定架空退出权；D600 是代际/亲密关系中**正向支持**退化为控制。给一个富裕但无权无势的父母「为你好」式路径控制，D595 不触发、D600 触发 → 预测不同。不可约差异成立。](../../../outputs/collisions/20260711-disobedience-subjectivity/independent-second-angle-audit-056.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-bc3ae5037002d6da / 最近邻反事实：D595 是绩效/待遇/组织资源绑定架空退出权；D600 是代际/亲密关系中**正向支持**退化为控制。给一个富裕但无权无势的父母「为你好」式路径控制，D595 不触发、D600 触发 → 预测不同。不可约差异成立。
-  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/independent-second-angle-audit-056.md`
-  - 依赖：D595, D600；被引用：—
-- [本目录是点火项目「元协议生成框架」的文档层，对应 `data/meta-protocols/` 数据层、`templates/` 模板层。](../../../docs/meta-protocols/README.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-6c8b6740d3bee543 / 本目录是点火项目「元协议生成框架」的文档层，对应 `data/meta-protocols/` 数据层、`templates/` 模板层。
-  - 来源：`docs/meta-protocols/README.md`
-  - 依赖：—；被引用：—
-- [材料分层图（source-layer-map）](../../ASSET-CARDS.md#asset-hr-bcc48ae7649ea4fe)
-  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-  - 可搜索名称：材料分层图（source-layer-map） / source-layer-map
-  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/source-layer-map.md`
-  - 依赖：—；被引用：—
-- [来源清单](../../ASSET-CARDS.md#asset-hr-37c1dabc2f087f11)
-  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-  - 可搜索名称：来源清单 / source-manifest
-  - 来源：`outputs/book-collisions/20260709-22-book-validation/source-manifest.md`
-  - 依赖：—；被引用：—
-- [标记可能的失败类型：过度类比、证据不足、层级误置、概念漂移等。](../../../docs/p1-machine-data-collision-workflow-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-bad77e3124f8231b / 标记可能的失败类型：过度类比、证据不足、层级误置、概念漂移等。
-  - 来源：`docs/p1-machine-data-collision-workflow-20260708.md`
-  - 依赖：—；被引用：—
-- [核心案例：生活和工作原则与点火框架P_meta元协议实例化的映射。原则作为元协议，指导决策门控面，验证了元协议投影算子的有效性。](../../../outputs/book-collisions/20260709-22-book-validation/book-case-candidates.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-0031874d337f4ab0 / 核心案例：生活和工作原则与点火框架P_meta元协议实例化的映射。原则作为元协议，指导决策门控面，验证了元协议投影算子的有效性。
-  - 来源：`outputs/book-collisions/20260709-22-book-validation/book-case-candidates.md`
-  - 依赖：—；被引用：—
-- [核心案例：破坏性创新与点火框架门控面演化的同构性。大公司受旧维度拖累（1/ln为负），边缘玩家无旧维度负担，验证了创新在边缘的拖累效应。](../../../outputs/book-collisions/20260709-22-book-validation/book-case-candidates.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-36762869a4ccba39 / 核心案例：破坏性创新与点火框架门控面演化的同构性。大公司受旧维度拖累（1/ln为负），边缘玩家无旧维度负担，验证了创新在边缘的拖累效应。
-  - 来源：`outputs/book-collisions/20260709-22-book-validation/book-case-candidates.md`
-  - 依赖：—；被引用：—
-- [框架发现能力，Φ = dim(V)×\|推导规则\|×r_cross(framework)。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0143-D104-%E6%A1%86%E6%9E%B6%E5%8F%91%E7%8E%B0%E8%83%BD%E5%8A%9B.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-328EDCBB13541AF8 / 框架发现能力，Φ = dim(V)×\|推导规则\|×r_cross(framework)。 / IMPLICIT-328EDCBB13541AF8
-  - 来源：`统一函数总表/0143-D104-框架发现能力.md`
-  - 依赖：—；被引用：—
-- [框架跨域同构识别能力：**通过**。](../../../outputs/audit/cross-domain-smoke-test-audit-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-48f713ff2a2d2b25 / 框架跨域同构识别能力：**通过**。
-  - 来源：`outputs/audit/cross-domain-smoke-test-audit-20260708.md`
-  - 依赖：—；被引用：—
-- [模糊相关命中（已逐条核对边界，均非同构）：](../../../outputs/audit/cross-domain-candidate-function-review-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-27e200b6811a088d / 模糊相关命中（已逐条核对边界，均非同构）：
-  - 来源：`outputs/audit/cross-domain-candidate-function-review-20260708.md`
-  - 依赖：—；被引用：—
-- [点火框架接收外部学科输入时，先按 gap 路由到对应 object_type 接口；接口仅承载外部理论的结构化表示，不参与 Ψ₀ 核心判定；核心判定仍由 Ψ₀ 六组件执行。](../../../data/external-research/096-clm-alignment-layer-v2.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-bd21ee94b6df12bc / 点火框架接收外部学科输入时，先按 gap 路由到对应 object_type 接口；接口仅承载外部理论的结构化表示，不参与 Ψ₀ 核心判定；核心判定仍由 Ψ₀ 六组件执行。
-  - 来源：`data/external-research/096-clm-alignment-layer-v2.md`
-  - 依赖：—；被引用：—
-- [热力学第二定律的终态：热寂 = 所有能量均匀分布 = 没有结构 = 没有力 在高斯门控框架下： 热寂 ⟹ μ_available → 0 ⟹ 对所有Λᵢ：μ < Λᵢ ⟹ gᵢ = exp\[-(ln(μ/Λᵢ))²/(2σᵢ²)\] → 0（μ→0时ln(μ/Λᵢ)→-∞，exp→0） ⟹ Φ = Σgᵢ → 0 ⟹ Ω = e^{-Φ} → 1](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0257-D221-%E7%83%AD%E5%AF%82-%E5%AE%8C%E5%85%A8%E7%BB%9F%E4%B8%80%E5%90%8C%E6%9E%84%E5%AE%9A%E7%90%86.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-868E3234B2BEC52B / 热力学第二定律的终态：热寂 = 所有能量均匀分布 = 没有结构 = 没有力 在高斯门控框架下： 热寂 ⟹ μ_available → 0 ⟹ 对所有Λᵢ：μ < Λᵢ ⟹ gᵢ = exp\[-(ln(μ/Λᵢ))²/(2σᵢ²)\] → 0（μ→0时ln(μ/Λᵢ)→-∞，exp→0） ⟹ Φ = Σgᵢ → 0 ⟹ Ω = e^{-Φ} → 1 / IMPLICIT-868E3234B2BEC52B
-  - 来源：`统一函数总表/0257-D221-热寂-完全统一同构定理.md`
   - 依赖：—；被引用：—

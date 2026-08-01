@@ -38,3 +38,18 @@ PRIMARY/DEFERRED 就再次排队。`C-03` 的 OpenAlex 试点也已完成一次�
 原有 OQ-103-3 已从“待执行 OpenAlex 交叉验证”更新为“首轮已执行、边界内部分支持、
 仍需处理的歧义已登记”。后续若要重试，必须说明新的 oracle、协议、修正或 owner 授权，
 并建立新的候选 revision；不得把同一结果当作未发生。
+
+## Task 111：失败案例证据门禁与苹果案例状态
+
+任务 111 保留 `case_failures/examples/` 三个文件和 task-109/110 的原始
+`IMPLEMENTATION_DEFECT` 分类作为历史基线，但不把目录成员、`系统可能会输出` 或未引证的
+Outcome 当成运行结果。苹果案例的历史来源复核结果为 `EVIDENCE_PARTIAL_OR_DISPUTED`：
+Stukeley/Conduitt 的 memoir 记录支持一个有边界的苹果—gravitation 叙述来源，但不能
+证明苹果砸中 Newton、单一直接因果，或整则故事必然虚构。
+
+当前仓库没有苹果案例 runner、历史因果 oracle 或可绑定的 Function OS target；因此状态为
+`EXECUTABLE_TARGET_ABSENT`、`FORMALIZATION_UNDERSPECIFIED` 和
+`NO_REPRODUCTION_POSSIBLE_WITH_CURRENT_TARGET`。三个案例在 task-111 队列投影中继续可
+搜索，但因 evidence gate 前置条件未满足而阻断，不作为已复现实现缺陷推进。未来若要
+重新打开，必须提供新的问题/target/oracle/revision，并先单独预注册；缺少冻结 commit、
+精确输入输出、trace、run、oracle、首次失败或 regression guard 时，门禁保持 fail closed。

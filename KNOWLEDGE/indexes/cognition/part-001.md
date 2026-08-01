@@ -89,6 +89,11 @@
   - 可搜索名称：IMPLICIT-30FB7E55470D301D / ## 2. 得到大脑默认能力假设 / IMPLICIT-30FB7E55470D301D
   - 来源：`docs/getbrain-operation-guide-20260708.md`
   - 依赖：—；被引用：—
+- [## Gate decision](../../../data/operations/iterations/111/DECISION_PACKET.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-5BAAE3BCC2B8F83B / ## Gate decision / IMPLICIT-5BAAE3BCC2B8F83B
+  - 来源：`data/operations/iterations/111/DECISION_PACKET.md`
+  - 依赖：—；被引用：—
 - [## hr-8c7e1c2721f6e7fd — map-agent-delivery-operations](../../../analysis/corpus-relation/cluster_source_briefs/C002.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-FED36C2EA59428F1 / ## hr-8c7e1c2721f6e7fd — map-agent-delivery-operations / IMPLICIT-FED36C2EA59428F1

@@ -34,7 +34,7 @@
       ],
       "review_evidence": "task 104 reviewed against PR #160 merge 16f64004",
       "source_hashes": {
-        "HUMAN-READING.md": "ae554d4146af3ad9932ca17369be5ddc6f381010d7ac6c2987ec90873a1a38fb",
+        "HUMAN-READING.md": "dd53e97f15cccaa9c409162f21b10759d61ba862a03685faa632178564d4d158",
         "RESULTS/ADJUDICATION-SUMMARY.md": "4384654afc6f7d2a00fa33c1b1f0b9bdc21cfab63c24d99c0ef1a635861f873e"
       },
       "source_ids": [
@@ -77,7 +77,7 @@
       ],
       "review_evidence": "task 104 reviewed against PR #160 merge 16f64004",
       "source_hashes": {
-        "README.md": "39c80e4d680204f1c215a83ff30206607cedee139308afc9249fef5fdcd9a181",
+        "README.md": "bbcb42d32455fd850c1f9fff75eb9c7ec6da8368101b7fb63ef9deeb27267eb1",
         "docs/physics_boundary.md": "dca51feaa53e66045b1a7a93251438241302d90c80f722dca308577d524163d9"
       },
       "source_ids": [
@@ -153,7 +153,7 @@
       ]
     },
     "008-merged-but-stale-public-truth": {
-      "current_claim_ceiling": "explanatory only; no new scientific/mathematical/empirical conclusion; explains task 106 fail-closed propagation AND task 108 event-sourced two-phase lifecycle + annotated terminal tag that removes the circular single-row terminality",
+      "current_claim_ceiling": "explanatory only; no new scientific/mathematical/empirical conclusion; no current lifecycle claim until the material source change is reviewed",
       "editorial_status": "STALE_REVIEW_REQUIRED",
       "file": "docs/editorial/articles/008-merged-but-stale-public-truth.md",
       "last_reviewed_commit": "task-108-content-merge",
@@ -161,12 +161,12 @@
         "any change to a listed source path requires re-review before currency",
         "changing only an unrelated source does not force staleness"
       ],
-      "review_evidence": "article 008 marked STALE_REVIEW_REQUIRED on task-108 content branch, revised through authoritative Zhiyuan Writing Method to explain circular one-row model + candidate->terminalization-projection->annotated-tag chain, real reading review completed, restored to REVIEWED_CURRENT (task 108, contract §10)",
+      "review_evidence": "article 008 remains stale because the lifecycle event source changed in task 111; the article must be re-reviewed before it can assert current lifecycle details",
       "source_hashes": {
-        "data/operations/lifecycle-events.jsonl": "f270c67e31104ad8ca91d6a05873436c322e42f749c358e37e14d63b5fa30447",
+        "data/operations/lifecycle-events.jsonl": "9d27c31bb66633518bce956f0e688572599920ab63c3046724a5bb6895880a8b",
         "data/operations/merged-iteration-ledger.jsonl": "cbd51a5f9540a92942964c908ada28a259fba762fd7af29ab919f229dd9cacd7",
-        "tools/propagation/lifecycle_events.py": "42c0a572a3d78741ae71b575afe456a3888d89c97ffb6fa11748c5237fd4e250",
-        "tools/propagation/tag_validator.py": "852ebba5f83e6764ac3a9aaddd2e77a6bb085a947df1a1821b55d0d5dac413cd"
+        "tools/propagation/lifecycle_events.py": "5f391dfa7397f85081bb6f69c272cf5bb76f7b7d51f410300b8b208acecb83b5",
+        "tools/propagation/tag_validator.py": "d934ed3680aa0da2087d76a144fd9991f25d52db5fadc38b762b8b23113801fb"
       },
       "source_ids": [
         "lifecycle-events.jsonl",
@@ -190,7 +190,7 @@
         "any change to a listed source path requires re-review before currency",
         "changing only an unrelated source does not force staleness"
       ],
-      "review_evidence": "Task-110 article reviewed against the frozen baseline defect, generic completion reconciliation, sealed OpenAlex first-run result, propagation record and Zhiyuan Writing Method; claim ceiling and null handling retained.",
+      "review_evidence": "Task 110 article reviewed against the frozen baseline defect, generic completion reconciliation, sealed OpenAlex first-run result, propagation record and Zhiyuan Writing Method; claim ceiling and null handling retained.",
       "source_hashes": {
         "data/operations/iterations/110/baseline-defect.md": "0999b91f75e9fee018302220998fe88e5aa19f3cbaf1b4b72996c1e9daeabc08",
         "data/operations/iterations/110/completion-reconciliation.json": "c983e7f39ac4bb5983f82e42dedd2ee5c39950353657beb346b7f53617e3c246",
@@ -211,6 +211,38 @@
         "data/operations/iterations/110/propagation.md",
         "docs/publication/zhiyuan-writing-method.md",
         "evidence-program/runs/IGNITION-EVIDENCE-PILOT-R1-OPENALEX-DOI-REPLICATION-20260801/RESULT.md"
+      ]
+    },
+    "010-failure-case-evidence-gate-and-apple-case-adjudication": {
+      "current_claim_ceiling": "explanatory only; historical provenance and repository evidence-gate adjudication; no claim of a reproduced implementation defect, external truth, causality or maturity",
+      "editorial_status": "REVIEWED_CURRENT",
+      "file": "docs/editorial/articles/010-failure-case-evidence-gate-and-apple-case-adjudication.md",
+      "last_reviewed_commit": "task-111-content-review",
+      "materiality_rules": [
+        "any change to a listed source path requires re-review before currency",
+        "changing only an unrelated source does not force staleness"
+      ],
+      "review_evidence": "Task 111 article reviewed against the frozen historical source dossier, target audit, case-status record and executable gate tests; no real-defect claim is made.",
+      "source_hashes": {
+        "data/operations/iterations/111/TARGET_AUDIT.md": "61ac88f72f8eefb462ca130f6de0f5a0703cb56e6b0c6dfa808036d305fb153f",
+        "data/operations/iterations/111/case-status.json": "7781ec3d79ea8e28e9d20589b82fcd1b0ffe726c62603540148485702adbee20",
+        "data/operations/iterations/111/historical/EVIDENCE_DOSSIER.md": "f1830506e18395d3a71f5c1411eac41d438222d056bceb4bb189b77a5a0c5789",
+        "schemas/failure-case-evidence-gate.schema.json": "0a21b265d83076a421eb40927db7da954a6726c08b258a4769002cff731453bf",
+        "tools/failure_case_evidence_gate.py": "022b55a7d393dab082669395df913f62967a74c5bbac15e297ed174e6dad7274"
+      },
+      "source_ids": [
+        "EVIDENCE_DOSSIER.md",
+        "TARGET_AUDIT.md",
+        "case-status.json",
+        "failure-case-evidence-gate.schema.json",
+        "failure_case_evidence_gate.py"
+      ],
+      "source_paths": [
+        "data/operations/iterations/111/historical/EVIDENCE_DOSSIER.md",
+        "data/operations/iterations/111/TARGET_AUDIT.md",
+        "data/operations/iterations/111/case-status.json",
+        "schemas/failure-case-evidence-gate.schema.json",
+        "tools/failure_case_evidence_gate.py"
       ]
     }
   },

@@ -148,3 +148,14 @@
 首轮 117 条请求全部返回 HTTP 200；116 条主分母中 101 supported、8 partial、7
 null/inconclusive、0 contradicted、0 invalid。结果上限仅为跨源 metadata consistency，
 不代表论文内容、科学真理、Pointfire/MCF/PSD/ARN 或成熟度提升。见 [任务 110 结果](./evidence-program/runs/IGNITION-EVIDENCE-PILOT-R1-OPENALEX-DOI-REPLICATION-20260801/RESULT.md)、[完成状态记录](./data/operations/iterations/110/completion-reconciliation.json) 与[方法文章](./docs/editorial/articles/009-system-completion-state-and-independent-replication.md)。
+
+### Task 111：失败案例证据门禁与真实缺陷复现试点
+
+任务 111 先冻结三个失败案例的原始分类，再把 `external evidence`、`executable target`、
+`formalization` 和 `reproduction` 分开裁定。牛顿苹果案例的历史材料只支持有边界的 memoir
+provenance；当前仓库没有可执行的历史因果 target，因此不声称它是已复现实现缺陷。三案
+在 task-111 队列投影中保持可检索，但因证据前置条件未满足而不进入 active queue。
+
+新增的 fail-closed 门禁要求完整冻结 target commit、精确输入/输出、trace、run、oracle、
+首次失败和 regression guard；目录位置、`系统可能会输出`、LLM 输出或内部 Function OS
+`PASS` 都不能代替外部证据或现实因果。见 [苹果案例证据档案](./data/operations/iterations/111/historical/EVIDENCE_DOSSIER.md)、[target 审计](./data/operations/iterations/111/TARGET_AUDIT.md)、[task-111 状态](./data/operations/iterations/111/case-status.json) 与[方法文章](./docs/editorial/articles/010-failure-case-evidence-gate-and-apple-case-adjudication.md)。

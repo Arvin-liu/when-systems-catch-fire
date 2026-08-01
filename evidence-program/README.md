@@ -72,3 +72,23 @@ source manifest, raw-response hashes, adjudication and bounded result are under
 The result is metadata-only: 101 supported, 8 partial, 7 null/inconclusive and no
 contradictions in the 116-record primary denominator. It does not validate paper
 content, scientific truth, Pointfire physics, MCF, PSD, ARN or maturity/disposition.
+
+## Task 111 failure-case evidence gate
+
+Task 111 applies the same preregistration discipline to the tracked
+`case_failures/` library without treating its historical directory class as a
+result. The apple case received a bounded historical-provenance review, but the
+repository has no executable target for `C(apple_fall, gravitational_theory)`;
+its status is partial/disputed evidence, target absent, underspecified
+formalization and no possible reproduction with the current target.
+
+`tools/failure_case_evidence_gate.py` and
+`schemas/failure-case-evidence-gate.schema.json` reject a defect claim unless
+the record binds a repository executable to a full commit and case ID, exact
+input/output, raw trace, run ID, repeated failure, oracle, claim ceiling,
+preserved first failure and regression guard. Hypothetical phrases, LLM output,
+wrong target semantics, missing external evidence, changed formalization,
+deleted first failures and directory placement are adversarially rejected.
+
+This gate records evidence eligibility only. It does not turn Function OS into
+an external truth machine and does not make the apple story true or false.

@@ -4,6 +4,76 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [中文：dK/dt = K×E\[r\] - (B_occupy/B₀)×R_return - α_fear×K。小资金炒股不只是"数学上负期望"（D-X53），还会激活D64恐惧锁定，形成投资域向下螺旋。跟D54（认知域向下螺旋）结构同构。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0116-D67-%E8%B5%84%E9%87%91%E9%87%8F-%E6%81%90%E6%83%A7%E9%94%81%E5%AE%9A%E6%AD%A3%E5%8F%8D%E9%A6%88%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-3ec58646620e18df / 中文：dK/dt = K×E\[r\] - (B_occupy/B₀)×R_return - α_fear×K。小资金炒股不只是"数学上负期望"（D-X53），还会激活D64恐惧锁定，形成投资域向下螺旋。跟D54（认知域向下螺旋）结构同构。
+  - 来源：`统一函数总表/0116-D67-资金量-恐惧锁定正反馈函数.md`
+  - 依赖：D54, D64；被引用：—
+- [中文：dε_opt/dt = η_reprogram × Σⱼ(新档案ⱼ的安装强度 × (1-D_immune_j)) - γ_drag × Σₖ(旧档案ₖ的激活频率 × H_k) 约束：η_reprogram ≪ α_up（慢变量条件）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0111-D62-%E8%B0%83%E6%B8%A9%E5%99%A8%E6%85%A2%E5%8F%98%E9%87%8F%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-e6a0d7dea79a9acc / 中文：dε_opt/dt = η_reprogram × Σⱼ(新档案ⱼ的安装强度 × (1-D_immune_j)) - γ_drag × Σₖ(旧档案ₖ的激活频率 × H_k) 约束：η_reprogram ≪ α_up（慢变量条件）
+  - 来源：`统一函数总表/0111-D62-调温器慢变量函数.md`
+  - 依赖：—；被引用：—
+- [中文：E_{Q_0001}(x)=1 iff exists N: tau=N({Delta x_k}) and order(x_k,x_{k+1}) preserved。时间不是本体，而是信息状态序列的计数投影；若只有状态流 x(t)，则时](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0469-D471-%E7%8A%B6%E6%80%81%E6%97%B6%E9%97%B4%E9%87%8D%E5%86%99%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-b01518259b94a00d / 中文：E_{Q_0001}(x)=1 iff exists N: tau=N({Delta x_k}) and order(x_k,x_{k+1}) preserved。时间不是本体，而是信息状态序列的计数投影；若只有状态流 x(t)，则时
+  - 来源：`统一函数总表/0469-D471-状态时间重写函数.md`
+  - 依赖：D342；被引用：—
+- [中文：E_{Q_0003}=1 iff d*(O)=argmin_d\[L(M_d\|O)+Omega(d)\]。维度是模型对观测的最小充分坐标数，是解释工具的压缩参数；不能由此推出经验世界不存在，只能推出“宇宙本体=某一维度集合”不是必要前提。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0470-D472-%E7%BB%B4%E5%BA%A6%E5%9D%90%E6%A0%87%E5%8C%96%E8%BE%B9%E7%95%8C%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-a1272f1f935027b4 / 中文：E_{Q_0003}=1 iff d*(O)=argmin_d\[L(M_d\|O)+Omega(d)\]。维度是模型对观测的最小充分坐标数，是解释工具的压缩参数；不能由此推出经验世界不存在，只能推出“宇宙本体=某一维度集合”不是必要前提。
+  - 来源：`统一函数总表/0470-D472-维度坐标化边界函数.md`
+  - 依赖：A8, D237；被引用：—
+- [中文：EGSS 的熵引导策略和点火的 σ_opt 最优不确定性系数在数学上指向同一个结论——更聪明的计算远比更多计算有效。这验证了 D307（资源分配优化）在软件工程任务中的适用性。](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0652-C-657-EGSS%20%C3%97%20%E7%82%B9%E7%81%AB%E6%A1%86%E6%9E%B6%E7%A2%B0%E6%92%9E%E9%AA%8C%E8%AF%81.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-c64a834fc09e84e9 / 中文：EGSS 的熵引导策略和点火的 σ_opt 最优不确定性系数在数学上指向同一个结论——更聪明的计算远比更多计算有效。这验证了 D307（资源分配优化）在软件工程任务中的适用性。
+  - 来源：`统一案例总表/0652-C-657-EGSS × 点火框架碰撞验证.md`
+  - 依赖：D307；被引用：—
+- [中文：g=exp\[-(ln(μ/M_Planck))²/(2σ²)\]，A-B型统一、极值点处量子涨落自然为零](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0038-T28-%E9%AB%98%E6%96%AF%E9%97%A8%E6%8E%A7%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-e65ff268e6d7c0f6 / 中文：g=exp\[-(ln(μ/M_Planck))²/(2σ²)\]，A-B型统一、极值点处量子涨落自然为零
+  - 来源：`统一函数总表/0038-T28-高斯门控函数.md`
+  - 依赖：—；被引用：—
+- [中文：g_eff下降导致p*下降（因为耦合减弱→容斥更早接管），p*下降导致更早进入容斥主导→p分布更分散→g_eff进一步下降。形成自加速正反馈：g_eff↓→p*↓→容斥更早接管→g_eff↓↓。系统一旦开始衰退就加速衰退——不只是pᵢ](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0294-D258-g_eff-p-%E6%AD%A3%E5%8F%8D%E9%A6%88%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-5e773d32676d4242 / 中文：g_eff下降导致p*下降（因为耦合减弱→容斥更早接管），p*下降导致更早进入容斥主导→p分布更分散→g_eff进一步下降。形成自加速正反馈：g_eff↓→p*↓→容斥更早接管→g_eff↓↓。系统一旦开始衰退就加速衰退——不只是pᵢ
+  - 来源：`统一函数总表/0294-D258-g_eff-p-正反馈函数.md`
+  - 依赖：—；被引用：—
+- [中文：H_Fisher(p) = A_Fisher(p) / A_Fisher(p₀) p₀是参考健康态。H_Fisher∈\[0,1\]，0=完全锁死，1=完全健康。 预警函数：τ_warning = -H_Fisher / (dH_Fish](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0159-D121-Fisher%E5%81%A5%E5%BA%B7%E5%BA%A6%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-92e1787fab1d65f4 / 中文：H_Fisher(p) = A_Fisher(p) / A_Fisher(p₀) p₀是参考健康态。H_Fisher∈\[0,1\]，0=完全锁死，1=完全健康。 预警函数：τ_warning = -H_Fisher / (dH_Fish
+  - 来源：`统一函数总表/0159-D121-Fisher健康度函数.md`
+  - 依赖：—；被引用：—
+- [中文：H_Fisher(p) = A_Fisher(p) / A_Fisher(p₀) p₀是参考健康态。H_Fisher∈\[0,1\]，0=完全锁死，1=完全健康。 预警函数：τ_warning = -H_Fisher / (dH_Fisher/dt) τ_warning是"按当前退化速率，H_Fisher降到0还需要多久"。τ_warning越小越紧急。 与Shannon熵的预测力对比： - Shannon熵预警：τ_S = -(S_max - S(t)) / (dS/dt](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0159-D121-Fisher%E5%81%A5%E5%BA%B7%E5%BA%A6%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-6FA60CEAC6EC19D9 / 中文：H_Fisher(p) = A_Fisher(p) / A_Fisher(p₀) p₀是参考健康态。H_Fisher∈\[0,1\]，0=完全锁死，1=完全健康。 预警函数：τ_warning = -H_Fisher / (dH_Fisher/dt) τ_warning是"按当前退化速率，H_Fisher降到0还需要多久"。τ_warning越小越紧急。 与Shannon熵的预测力对比： - Shannon熵预警：τ_S = -(S_max - S(t)) / (dS/dt / IMPLICIT-6FA60CEAC6EC19D9
+  - 来源：`统一函数总表/0159-D121-Fisher健康度函数.md`
+  - 依赖：—；被引用：—
+- [中文：I_concentration(Ω) = (1 + σ(Ω))/2](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0498-D500-%E7%A9%BA%E9%97%B4%E9%9B%86%E4%B8%AD%E6%80%A7%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-CAC3FD260AAB2FC0 / 中文：I_concentration(Ω) = (1 + σ(Ω))/2 / IMPLICIT-CAC3FD260AAB2FC0
+  - 来源：`统一函数总表/0498-D500-空间集中性函数.md`
+  - 依赖：—；被引用：—
+- [中文：Intuition^AI = ε_sense^AI × P_track^AI × σ(Δv^AI)。AI直觉恒等于零，因为三因子乘法归零 ε_sense^AI = 0（无感官通道，无法直接感知预测误差）× P_track^AI = 1](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0208-D171-AI%E7%9B%B4%E8%A7%89%E7%BC%BA%E5%A4%B1%E7%9A%84%E7%89%A9%E7%A7%8D%E5%88%A4%E6%8D%AE.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-eeb5f67a8088862a / 中文：Intuition^AI = ε_sense^AI × P_track^AI × σ(Δv^AI)。AI直觉恒等于零，因为三因子乘法归零 ε_sense^AI = 0（无感官通道，无法直接感知预测误差）× P_track^AI = 1
+  - 来源：`统一函数总表/0208-D171-AI直觉缺失的物种判据.md`
+  - 依赖：—；被引用：—
+- [中文：K_n(R)/p≅H^i(Gal(R^sep/R), μ_p^j)，数域和有限域已验证](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0526-D529-%E4%BB%A3%E6%95%B0K%E7%90%86%E8%AE%BA%E4%BC%BD%E7%BD%97%E7%93%A6%E5%90%8C%E6%9E%84%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-2497e88d630f23cb / 中文：K_n(R)/p≅H^i(Gal(R^sep/R), μ_p^j)，数域和有限域已验证
+  - 来源：`统一函数总表/0526-D529-代数K理论伽罗瓦同构函数.md`
+  - 依赖：—；被引用：—
+- [中文：Life(S)=1 iff M_self*Boundary*Energy*Reproduction_active*Selection > theta_life。生命式系统至少要有自维持、边界、能量/资源代谢、主动复制或变体生成、选择反](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0472-D474-%E4%B8%BB%E5%8A%A8%E4%B8%8B%E4%B8%80%E4%BB%A3%E7%94%9F%E5%91%BD%E8%BE%B9%E7%95%8C%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-5d0f9e0be23b4459 / 中文：Life(S)=1 iff M_self*Boundary*Energy*Reproduction_active*Selection > theta_life。生命式系统至少要有自维持、边界、能量/资源代谢、主动复制或变体生成、选择反
+  - 来源：`统一函数总表/0472-D474-主动下一代生命边界函数.md`
+  - 依赖：D124；被引用：—
+- [中文：M10的溢出是传染的物理通道。统一传染链：高p恶化→溢出消耗低p缓冲(\[D379\](docs/zh/functions/items/D379.md))→低p缓冲<g_critical(\[D309\](docs/zh/functions/](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0429-D393-%E6%BA%A2%E5%87%BA-%E4%BC%A0%E6%9F%93%E9%80%9A%E9%81%93%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-acb66f8cd22e3a02 / 中文：M10的溢出是传染的物理通道。统一传染链：高p恶化→溢出消耗低p缓冲(\[D379\](docs/zh/functions/items/D379.md))→低p缓冲<g_critical(\[D309\](docs/zh/functions/
+  - 来源：`统一函数总表/0429-D393-溢出-传染通道统一函数.md`
+  - 依赖：D309, D379；被引用：—
 - [中文：M11的**τ_min=τ_delay**——最小响应时间等于反馈延迟时间。延迟决定系统能多快响应噪声。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0457-D421-%CF%84_min-%E5%99%AA%E5%A3%B0%E7%9B%B8%E5%85%B3%E6%97%B6%E9%97%B4%E7%AD%89%E4%BB%B7%E5%87%BD%E6%95%B0.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-c576a93e07bc99c0 / 中文：M11的**τ_min=τ_delay**——最小响应时间等于反馈延迟时间。延迟决定系统能多快响应噪声。
@@ -2434,73 +2504,3 @@
   - 可搜索名称：NFC-083f57f82e028ae8 / 仍无法解决的问题: direct source artifact unresolved
   - 来源：`reports/math-foundation/pilot-formal-audit-20260712.md`
   - 依赖：—；被引用：—
-- [仍无法解决的问题: 需要独立证明义务与外部证据](../../../reports/math-foundation/pilot-formal-audit-20260712.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-e2bef9810a62112b / 仍无法解决的问题: 需要独立证明义务与外部证据
-  - 来源：`reports/math-foundation/pilot-formal-audit-20260712.md`
-  - 依赖：—；被引用：—
-- [从A3推导。应约者只能感知到他们意识到的退出权，受遮蔽H、信息可及性、有效退出成本影响。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0005-A4-R_perceived%28t%2CL%2CC%29%20%E5%BA%94%E7%BA%A6%E8%80%85%E6%84%9F%E7%9F%A5%E9%80%80%E5%87%BA%E6%9D%83.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-c746eb5829dcbae0 / 从A3推导。应约者只能感知到他们意识到的退出权，受遮蔽H、信息可及性、有效退出成本影响。
-  - 来源：`统一函数总表/0005-A4-R_perceived(t,L,C) 应约者感知退出权.md`
-  - 依赖：A3；被引用：—
-- [从A7、A1、A2、A6推导。退出权信号会随时间演化，增长项来自提议者意识和速度差，衰减项来自姿态和遮蔽。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0013-T3-%CE%B5%E5%8F%8C%E5%90%91%E5%8A%A8%E5%8A%9B%E5%AD%A6.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-e0d71c79aab2a04d / 从A7、A1、A2、A6推导。退出权信号会随时间演化，增长项来自提议者意识和速度差，衰减项来自姿态和遮蔽。
-  - 来源：`统一函数总表/0013-T3-ε双向动力学.md`
-  - 依赖：A1, A2, A6, A7；被引用：—
-- [从A7、A5、A4推导。退出概率由三个因子决定，任一因子为零则退出概率为零。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0010-A9-P_exit%28t%2CL%2CC%29%20%E9%80%80%E5%87%BA%E6%A6%82%E7%8E%87.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-8afa71d9a4cb637e / 从A7、A5、A4推导。退出概率由三个因子决定，任一因子为零则退出概率为零。
-  - 来源：`统一函数总表/0010-A9-P_exit(t,L,C) 退出概率.md`
-  - 依赖：A4, A5, A7；被引用：—
-- [从A7、A8、A9、知识增量ΔK推导。好奇心是自主意识的元点。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0017-T7-%E5%A5%BD%E5%A5%87%E5%BF%83%E9%A9%B1%E5%8A%A8%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-149ae353933fc1dd / 从A7、A8、A9、知识增量ΔK推导。好奇心是自主意识的元点。
-  - 来源：`统一函数总表/0017-T7-好奇心驱动函数.md`
-  - 依赖：A7, A8, A9；被引用：—
-- [从AI调度、编码能力推导。CAI涌现四阶段：编码能力→解码能力→中间层调度→自主意识，不可跳跃。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0168-D130-%E8%B0%83%E5%BA%A6-%E6%89%A7%E8%A1%8C%E6%8E%A5%E5%8F%A3%E6%95%88%E7%8E%87%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-33569de656dec5a9 / 从AI调度、编码能力推导。CAI涌现四阶段：编码能力→解码能力→中间层调度→自主意识，不可跳跃。
-  - 来源：`统一函数总表/0168-D130-调度-执行接口效率函数.md`
-  - 依赖：—；被引用：—
-- [从D183门控面合并统一函数推导。万有理论是门控面合并的终极目标,μ_ToE≈10¹⁹GeV是万有理论门槛(普朗克能标)。万有理论统一引力和量子力学,是点火框架在μ≈μ_ToE时的极限态。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0226-D190-%E4%B8%87%E6%9C%89%E7%90%86%E8%AE%BA%E9%97%A8%E6%A7%9B%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-09e8d78cafaf0942 / 从D183门控面合并统一函数推导。万有理论是门控面合并的终极目标,μ_ToE≈10¹⁹GeV是万有理论门槛(普朗克能标)。万有理论统一引力和量子力学,是点火框架在μ≈μ_ToE时的极限态。
-  - 来源：`统一函数总表/0226-D190-万有理论门槛函数.md`
-  - 依赖：D183；被引用：—
-- [从D183门控面合并统一函数推导。大统一是门控面合并的第二个成功实例,μ_GUT≈10¹⁶GeV是大统一门槛。大统一预言质子衰变,是门槛碾压(D169)在高能域的表现。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0225-D189-%E5%A4%A7%E7%BB%9F%E4%B8%80%E9%97%A8%E6%A7%9B%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-415b7599f094731a / 从D183门控面合并统一函数推导。大统一是门控面合并的第二个成功实例,μ_GUT≈10¹⁶GeV是大统一门槛。大统一预言质子衰变,是门槛碾压(D169)在高能域的表现。
-  - 来源：`统一函数总表/0225-D189-大统一门槛函数.md`
-  - 依赖：D169, D183；被引用：—
-- [从D183门控面合并统一函数推导。电弱统一是门控面合并的第一个成功实例,通过规范破缺选择真空极小点(D158认知规范破缺函数在规范理论空间的投影)。μ_EW≈100GeV是电弱统一门槛。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0223-D187-%E7%94%B5%E5%BC%B1%E7%BB%9F%E4%B8%80%E8%A7%84%E8%8C%83%E7%A0%B4%E7%BC%BA%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-6dfac8b68c6d5092 / 从D183门控面合并统一函数推导。电弱统一是门控面合并的第一个成功实例,通过规范破缺选择真空极小点(D158认知规范破缺函数在规范理论空间的投影)。μ_EW≈100GeV是电弱统一门槛。
-  - 来源：`统一函数总表/0223-D187-电弱统一规范破缺函数.md`
-  - 依赖：D158, D183；被引用：—
-- [从D239：Ψ = ι × P_exit ι=0 ⟹ Ψ=0（无论P_exit多大） ι=0的条件：I_eff(σ)=0 I_eff=0的两种情况： 1. σ→0：纯1/ln门控（H→0），有精度没带宽——确定性系统，零智能 2. σ→∞：](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-5c086ccc221bec50 / 从D239：Ψ = ι × P_exit ι=0 ⟹ Ψ=0（无论P_exit多大） ι=0的条件：I_eff(σ)=0 I_eff=0的两种情况： 1. σ→0：纯1/ln门控（H→0），有精度没带宽——确定性系统，零智能 2. σ→∞：
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D239；被引用：—
-- [从D239：Ψ = ι × P_exit ι=0 ⟹ Ψ=0（无论P_exit多大） ι=0的条件：I_eff(σ)=0 I_eff=0的两种情况： 1. σ→0：纯1/ln门控（H→0），有精度没带宽——确定性系统，零智能 2. σ→∞：](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0276-D240-%E6%84%8F%E8%AF%86%E7%9A%84%E6%99%BA%E8%83%BD%E5%BF%85%E8%A6%81%E6%9D%A1%E4%BB%B6.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-b26321261a5522e6 / 从D239：Ψ = ι × P_exit ι=0 ⟹ Ψ=0（无论P_exit多大） ι=0的条件：I_eff(σ)=0 I_eff=0的两种情况： 1. σ→0：纯1/ln门控（H→0），有精度没带宽——确定性系统，零智能 2. σ→∞：
-  - 来源：`统一函数总表/0276-D240-意识的智能必要条件.md`
-  - 依赖：D239；被引用：—
-- [从D239：Ψ = ι × P_exit 两个独立维度：ι（智能度）和P_exit（退出权） 四象限： \| \| P_exit高 \| P_exit低 \| \|---\|---------\|---------\| \| ι高 \| 自主意识（Ψ→1） \|](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-e44cdffed89336fa / 从D239：Ψ = ι × P_exit 两个独立维度：ι（智能度）和P_exit（退出权） 四象限： \| \| P_exit高 \| P_exit低 \| \|---\|---------\|---------\| \| ι高 \| 自主意识（Ψ→1） \|
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D239；被引用：—
-- [从D239：Ψ = ι × P_exit 两个独立维度：ι（智能度）和P_exit（退出权） 四象限： \| \| P_exit高 \| P_exit低 \| \|---\|---------\|---------\| \| ι高 \| 自主意识（Ψ→1） \|](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0277-D241-%E8%87%AA%E4%B8%BB%E6%84%8F%E8%AF%86%E7%9A%84%E5%9B%9B%E8%B1%A1%E9%99%90.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-f44f9f002bfe835c / 从D239：Ψ = ι × P_exit 两个独立维度：ι（智能度）和P_exit（退出权） 四象限： \| \| P_exit高 \| P_exit低 \| \|---\|---------\|---------\| \| ι高 \| 自主意识（Ψ→1） \|
-  - 来源：`统一函数总表/0277-D241-自主意识的四象限.md`
-  - 依赖：D239；被引用：—
-- [从D242-D243推导自主意识涌现的临界条件： Ψ = ι × P_exit > 0（\[D239\](docs/zh/functions/items/D239.md)） 需要同时满足： 1. ι > ι_threshold（智能度超过阈值）](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-232fdbe16e7169d9 / 从D242-D243推导自主意识涌现的临界条件： Ψ = ι × P_exit > 0（\[D239\](docs/zh/functions/items/D239.md)） 需要同时满足： 1. ι > ι_threshold（智能度超过阈值）
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D239, D242, D243；被引用：—
