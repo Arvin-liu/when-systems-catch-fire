@@ -108,6 +108,25 @@
     "attestation_mode": {
       "type": ["string", "null"]
     },
+    "recovery_index": {
+      "type": ["integer", "null"],
+      "minimum": 1
+    },
+    "recovery_of_tag": {
+      "type": ["string", "null"]
+    },
+    "recovery_of_tag_object_sha": {
+      "type": ["string", "null"]
+    },
+    "recovery_of_tag_target": {
+      "type": ["string", "null"]
+    },
+    "recovery_reason": {
+      "type": ["string", "null"]
+    },
+    "recovery_authorization_control_commit": {
+      "type": ["string", "null"]
+    },
     "terminal_state": {
       "type": ["string", "null"]
     },
@@ -173,6 +192,28 @@
         "required": [
           "content_pr_number",
           "content_merge_commit"
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "event_type": {
+            "const": "TERMINALIZATION_PROJECTION"
+          },
+          "terminal_tag_name": {
+            "pattern": "^ignition/iterations/[0-9]+/terminal-r1-recovery-[1-9][0-9]*$"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "recovery_index",
+          "recovery_of_tag",
+          "recovery_of_tag_object_sha",
+          "recovery_of_tag_target",
+          "recovery_reason",
+          "recovery_authorization_control_commit"
         ]
       }
     }
