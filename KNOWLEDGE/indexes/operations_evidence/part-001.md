@@ -144,6 +144,16 @@
   - 可搜索名称：IMPLICIT-3E4C6FC3E67A8A19 / "name": "generator --check: build_function_asset_census.py", / IMPLICIT-3E4C6FC3E67A8A19
   - 来源：`docs/foundation/task-107-verification-ladder.json`
   - 依赖：—；被引用：—
+- ["name": "ignition/iterations/111/terminal-r1",](../../../data/operations/iterations/111/FINAL_STATE.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-337A835B503FB61D / "name": "ignition/iterations/111/terminal-r1", / IMPLICIT-337A835B503FB61D
+  - 来源：`data/operations/iterations/111/FINAL_STATE.json`
+  - 依赖：—；被引用：—
+- ["name": "ignition/iterations/111/terminal-r1-recovery-1",](../../../data/operations/iterations/111/FINAL_STATE.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-1ABD532BED4833FF / "name": "ignition/iterations/111/terminal-r1-recovery-1", / IMPLICIT-1ABD532BED4833FF
+  - 来源：`data/operations/iterations/111/FINAL_STATE.json`
+  - 依赖：—；被引用：—
 - ["name": "iteration sync",](../../../docs/foundation/task-107-verification-ladder.json)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-60CAA4F1246EF07E / "name": "iteration sync", / IMPLICIT-60CAA4F1246EF07E / IMPLICIT-F52986A0393736F2
@@ -2493,14 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-6B887CBD6FD75DC1 / ### MF-0005 自举收敛判定器 / IMPLICIT-6B887CBD6FD75DC1
   - 来源：`reports/math-foundation/pilot-formal-audit-20260712.md`
-  - 依赖：—；被引用：—
-- [### 案例表 INDEX.md](../../../outputs/audit/two-tables-version-sync-audit-20260708.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-004F80C40DD95D7E / ### 案例表 INDEX.md / IMPLICIT-004F80C40DD95D7E
-  - 来源：`outputs/audit/two-tables-version-sync-audit-20260708.md`
-  - 依赖：—；被引用：—
-- [### 组件6：P_meta — 元协议投影算子](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0001-%CE%A8%E2%82%80%E5%85%83%E7%BB%9F%E4%B8%80%E5%BE%8B%E5%AE%8C%E6%95%B4%E5%AE%9A%E4%B9%89.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-20CA15FBE7EB7539 / ### 组件6：P_meta — 元协议投影算子 / IMPLICIT-20CA15FBE7EB7539
-  - 来源：`统一函数总表/0001-Ψ₀元统一律完整定义.md`
   - 依赖：—；被引用：—
