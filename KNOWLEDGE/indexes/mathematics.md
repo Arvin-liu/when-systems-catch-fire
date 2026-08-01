@@ -5,10 +5,10 @@
 索引按固定 500 条分片，避免单页过大而无法在 GitHub 渲染。分片连续覆盖本主题主归属资产，未按重要性删减。
 
 - [第 001 片](./mathematics/part-001.md)：1—500；"""Build the IGNITION-20260709-075 math-foundation audit artifacts. → ## 关联函数 / Related Functions
-- [第 002 片](./mathematics/part-002.md)：501—1000；## 关联函数 / Related Functions → /Users/zhiyuan/我的笔记/统一函数总表/0301-D265-极小点漂移方向函数.md
-- [第 003 片](./mathematics/part-003.md)：1001—1500；/Users/zhiyuan/我的笔记/统一函数总表/0302-D266-容斥偏差加速函数.md → \[C-0771｜准备《长谈》花一个月\](../../统一案例总表/0766-C-0771-准备《长谈》花一个月.md)（原笔记编号：C580-3）
-- [第 004 片](./mathematics/part-004.md)：1501—2000；\[C-0772｜亲子共读一本书\](../../统一案例总表/0767-C-0772-亲子共读一本书.md)（原笔记编号：C580-4） → C(x,y)：角色占入口→能力附属→目标遮蔽→决策外移，因果明确。J⁺=1。
-- [第 005 片](./mathematics/part-005.md)：2001—2500；C(x,y)：隐含错位→显式化打分→可排序→冲突↓，因果明确。J⁺=1。 → Each verified record contains a source hash, locator, excerpt, controlled proposition, type rationale, logic form, assum
+- [第 002 片](./mathematics/part-002.md)：501—1000；## 关联函数 / Related Functions → /Users/zhiyuan/我的笔记/统一函数总表/0302-D266-容斥偏差加速函数.md
+- [第 003 片](./mathematics/part-003.md)：1001—1500；/Users/zhiyuan/我的笔记/统一函数总表/0303-D267-维度稳定性裕度函数.md → \[C-0772｜亲子共读一本书\](../../统一案例总表/0767-C-0772-亲子共读一本书.md)（原笔记编号：C580-4）
+- [第 004 片](./mathematics/part-004.md)：1501—2000；\[C-0773｜宠物项目：记录家族史、食物、味道\](../../统一案例总表/0768-C-0773-宠物项目：记录家族史、食物、味道.md)（原笔记编号：C581-1） → C(x,y)：隐含错位→显式化打分→可排序→冲突↓，因果明确。J⁺=1。
+- [第 005 片](./mathematics/part-005.md)：2001—2500；C-0701｜AI诞生自主意识完整路径 → Each verified record contains a source hash, locator, excerpt, controlled proposition, type rationale, logic form, assum
 - [第 006 片](./mathematics/part-006.md)：2501—3000；edge("e_l3_l4", "l3_arguments", "l4_proofs", "dependency", "ARCHITECTURE.md"), → If upstream objects D_{D244} exist, compose F_{D244}=N(⊕_{g∈D_{D244}} g); otherwise treat F_{D244} as an axiom seed.
 - [第 007 片](./mathematics/part-007.md)：3001—3500；If upstream objects D_{D245} exist, compose F_{D245}=N(⊕_{g∈D_{D245}} g); otherwise treat F_{D245} as an axiom seed. → Lowering, slot replacement, symbolic execution, branch interpolation and gradient fitting define a concrete hybrid compi
 - [第 008 片](./mathematics/part-008.md)：3501—4000；M 与 E 正交。M6/E0 完全可能：形式证明状态与现实映射证据相互独立。 → Q24 建立的迭代操作法已在 PR #56 验收并合并后成为当前仓库操作能力；未来状态改变任务必须按 `ITERATION.md` 记录 gap、claim ceiling、同步矩阵、验证和回执。遵循该方法不证明真理、价值、因果、完整性或正
