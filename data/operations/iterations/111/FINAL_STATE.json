@@ -93,6 +93,7 @@
     "binding_pr": {
       "pr_number": 177,
       "review_base_commit": "15b5f5eb66fc667bbbcbb38a4d89fc891beca490",
+      "metadata_seal_parent": "eb679d6181e3c8f5d20991184a641110ccea9688",
       "ordinary_merge_required": true
     }
   },
@@ -110,6 +111,46 @@
     "task_112_created_or_executed": false
   },
   "fresh_clone_verification": {
-    "status": "VERIFICATION_REQUIRED_BEFORE_ORDINARY_MERGE"
+    "status": "VERIFIED",
+    "verified_ref": "refs/heads/codex/task111-terminal-evidence-recovery-r1",
+    "verified_commit": "eb679d6181e3c8f5d20991184a641110ccea9688",
+    "clone_mode": "FULL_CLONE_WITH_TAGS",
+    "full_history": true,
+    "tags_fetched": true,
+    "original_tag": {
+      "object_sha": "91de7433db0cef4800bb64a59b703a6305bc30ce",
+      "target": "9b15d359c54694d851c38df6ab3c7ae42544a51b",
+      "annotated": true,
+      "authoritative": false,
+      "status": "INVALID_TERMINAL_ATTESTATION_PRESERVED"
+    },
+    "recovery_tag": {
+      "object_sha": "67c9dd380d0beed66808dc86134d7c9738984c0c",
+      "target": "9b15d359c54694d851c38df6ab3c7ae42544a51b",
+      "annotated": true,
+      "authoritative": true,
+      "status": "VALID_RECOVERY_TERMINAL_ATTESTATION"
+    },
+    "core_sha256": "c83da06b3663443224e9cd4f6d121b69ce92663382a5b4d86be527f8e61ef042",
+    "recovery_validator": "PASS",
+    "resolver_111": "TERMINAL_SUCCESS",
+    "current_accepted_iteration": 111,
+    "lifecycle_errors": {},
+    "foundation_validation": "63/63",
+    "function_asset_registry_closure": "46/46",
+    "nonfunction_claim_evidence_lineage_closure": "54/54",
+    "core_claim_replay": "5/5",
+    "task_079_truth_audit": "11/11",
+    "task_080_source_text_audit": "13/13",
+    "knowledge_experience_determinism": "PASS",
+    "propagation_reconciliation": "PASS",
+    "recovery_fixtures": "43/43",
+    "path_accounting": "9/9",
+    "planner_layer_a": "PASS",
+    "planner_layer_b_resolver": "PASS",
+    "evidence_program_validator": "499/499",
+    "evidence_program_pytest": "9 passed",
+    "task_112_present": false,
+    "working_tree_after_generation": "CLEAN"
   }
 }
