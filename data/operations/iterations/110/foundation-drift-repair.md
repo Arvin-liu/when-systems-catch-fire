@@ -29,13 +29,21 @@ The same deterministic generated-artifact failures reproduced there:
 They were not caused by OpenAlex results and did not change claim meaning, M/E or
 disposition.
 
-The authorized generator-only repair was:
+The authorized generator-only repair was first run before the final Evidence
+Program validator repair. When commit `462a493b` added the deterministic
+per-run threshold resolver and the exact preregistration-shaped result
+emitter, those tracked Python files legitimately entered the repository-scoped
+generator inputs. The Foundation checks therefore exposed one more generated
+artifact drift; it was repaired by rerunning the same generators, not by
+changing any claim or adjudication.
+
+The final generator-only repair order was:
 
 ```text
-python3 tools/foundation/migrate_legacy.py
 python3 tools/foundation/build_function_asset_census.py
 python3 tools/foundation/adjudicate_function_assets.py
 python3 tools/foundation/adjudicate_nonfunction_claims.py
+python3 tools/foundation/migrate_legacy.py
 ```
 
 After the final migration regeneration, the checks passed at a byte-stable fixed
@@ -43,5 +51,6 @@ point: `migrate_legacy.py --check`, `build_function_asset_census.py --check`,
 `adjudicate_function_assets.py --check`, `adjudicate_nonfunction_claims.py --check`,
 `validate_nonfunction_claim_closure.py`, and the full foundation validator
 `63/63 ALL_FOUNDATION_VALID`. The generated function census now accounts for the
-task-110 tracked surfaces (6,987 discovered records) as repository-scoped
+task-110 tracked surfaces (6,989 discovered records at the final validator
+head) as repository-scoped
 classification; this is not an external-truth or maturity promotion.
