@@ -1,0 +1,41 @@
+{
+  "canonical_id": "GAP-SAMPLE-DISTRIBUTION",
+  "title": "GAP-SAMPLE-DISTRIBUTION",
+  "class": "GOVERNANCE_OR_PROPAGATION_DEFECT",
+  "is_meta": true,
+  "current_status": "DECLARED_GAP",
+  "provenance": {
+    "source_file": "data/architecture/121q13-gap-matrix.json",
+    "canonical_id": "GAP-SAMPLE-DISTRIBUTION"
+  },
+  "dependencies": [],
+  "prerequisite_unresolved": false,
+  "affected_surfaces": [
+    "architecture",
+    "system-map"
+  ],
+  "evidence_needs": [
+    "governance layer decision"
+  ],
+  "stop_conditions": [
+    "no new layer without concrete unresolved failure"
+  ],
+  "claim_ceiling": null,
+  "authority": "REPO_OWNER",
+  "aggregate_score": 51.5,
+  "factor_vector": {
+    "consequence_of_being_wrong": 0.7,
+    "dependency_centrality": 0.5,
+    "falsifiability": 0.4,
+    "data_oracle_availability": 0.5,
+    "expected_information_gain": 0.5,
+    "effort_evidence_cost": 0.3,
+    "reversibility_risk": 0.6,
+    "maturity_gap": 0.7,
+    "owner_relevance": 0.6,
+    "duplication_prior_failure": 0.9,
+    "substantive_vs_meta": 0.2
+  },
+  "missing_fields": [],
+  "blocked_reason": null
+}

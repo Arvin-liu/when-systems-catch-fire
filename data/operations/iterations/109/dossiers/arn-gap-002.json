@@ -1,0 +1,40 @@
+{
+  "canonical_id": "arn-gap-002",
+  "title": "No representation of perturbation, integration response, rejection, local reconfiguration, oscillation, cascade or delayed transfer.",
+  "class": "MATHEMATICAL_FORMALIZATION",
+  "is_meta": false,
+  "current_status": "DECLARED_GAP",
+  "provenance": {
+    "source_file": "data/architecture/adaptive-relational-network/network-gap-ledger.json",
+    "canonical_id": "arn-gap-002"
+  },
+  "dependencies": [],
+  "prerequisite_unresolved": false,
+  "affected_surfaces": [
+    "architecture",
+    "system-map"
+  ],
+  "evidence_needs": [
+    "architectural representation",
+    "validator/diff tooling"
+  ],
+  "stop_conditions": [],
+  "claim_ceiling": "This gap ledger establishes a representation gap only; it does not prove that cognition, projects or society are literally networks.",
+  "authority": "REPO_OWNER",
+  "aggregate_score": 67.3,
+  "factor_vector": {
+    "consequence_of_being_wrong": 0.9,
+    "dependency_centrality": 0.8,
+    "falsifiability": 0.6,
+    "data_oracle_availability": 0.5,
+    "expected_information_gain": 0.7,
+    "effort_evidence_cost": 0.5,
+    "reversibility_risk": 0.6,
+    "maturity_gap": 0.7,
+    "owner_relevance": 0.6,
+    "duplication_prior_failure": 0.5,
+    "substantive_vs_meta": 0.7
+  },
+  "missing_fields": [],
+  "blocked_reason": null
+}

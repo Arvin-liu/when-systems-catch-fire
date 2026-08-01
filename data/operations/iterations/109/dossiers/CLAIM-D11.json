@@ -1,0 +1,41 @@
+{
+  "canonical_id": "CLAIM-D11",
+  "title": "nonfunction-claim CLAIM-D11",
+  "class": "GOVERNANCE_OR_PROPAGATION_DEFECT",
+  "is_meta": true,
+  "current_status": "PENDING_PROOF",
+  "provenance": {
+    "source_file": "data/foundation/nonfunction-claims/unresolved-quarantine.jsonl",
+    "canonical_id": "CLAIM-D11",
+    "resume_key": "task100:CLAIM-D11"
+  },
+  "dependencies": [],
+  "prerequisite_unresolved": false,
+  "affected_surfaces": [
+    "claims-registry",
+    "foundation"
+  ],
+  "evidence_needs": [
+    "Define the operational mapping from variables to external objects before making a reality claim.",
+    "Provide a falsifiable protocol, baseline, data provenance and independent replication appropriate to the claimed domain."
+  ],
+  "stop_conditions": [],
+  "claim_ceiling": "Quarantined; not an established claim.",
+  "authority": "REPO_OWNER",
+  "aggregate_score": 42.8,
+  "factor_vector": {
+    "consequence_of_being_wrong": 0.4,
+    "dependency_centrality": 0.4,
+    "falsifiability": 0.5,
+    "data_oracle_availability": 0.4,
+    "expected_information_gain": 0.4,
+    "effort_evidence_cost": 0.3,
+    "reversibility_risk": 0.6,
+    "maturity_gap": 0.6,
+    "owner_relevance": 0.5,
+    "duplication_prior_failure": 0.7,
+    "substantive_vs_meta": 0.2
+  },
+  "missing_fields": [],
+  "blocked_reason": null
+}

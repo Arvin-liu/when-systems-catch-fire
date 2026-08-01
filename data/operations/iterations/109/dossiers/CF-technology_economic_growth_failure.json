@@ -1,0 +1,40 @@
+{
+  "canonical_id": "CF-technology_economic_growth_failure",
+  "title": "技术创新一定带来经济增长吗？",
+  "class": "IMPLEMENTATION_DEFECT",
+  "is_meta": false,
+  "current_status": "KNOWN_DEFECT_CASE",
+  "provenance": {
+    "source_file": "case_failures/examples/technology_economic_growth_failure.md",
+    "canonical_id": "CF-technology_economic_growth_failure"
+  },
+  "dependencies": [],
+  "prerequisite_unresolved": false,
+  "affected_surfaces": [
+    "function-os",
+    "case-library"
+  ],
+  "evidence_needs": [
+    "regression guard",
+    "bounded-domain test"
+  ],
+  "stop_conditions": [],
+  "claim_ceiling": "Documented failure mode; not a claim of system correctness.",
+  "authority": "REPO_OWNER",
+  "aggregate_score": 67.9,
+  "factor_vector": {
+    "consequence_of_being_wrong": 0.7,
+    "dependency_centrality": 0.5,
+    "falsifiability": 0.8,
+    "data_oracle_availability": 0.8,
+    "expected_information_gain": 0.6,
+    "effort_evidence_cost": 0.6,
+    "reversibility_risk": 0.8,
+    "maturity_gap": 0.5,
+    "owner_relevance": 0.6,
+    "duplication_prior_failure": 0.6,
+    "substantive_vs_meta": 0.85
+  },
+  "missing_fields": [],
+  "blocked_reason": null
+}
