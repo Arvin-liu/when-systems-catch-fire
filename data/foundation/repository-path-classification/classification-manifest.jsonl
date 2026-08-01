@@ -829,6 +829,7 @@
 {"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "data/operations/generated-output-authority.json"}
 {"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "data/operations/generator-registry.json"}
 {"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "data/operations/iterations/108-FINAL_STATE.json"}
+{"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "data/operations/iterations/109/FINAL_STATE.json"}
 {"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "data/operations/iterations/109/article.md"}
 {"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "data/operations/iterations/109/blocked_register.json"}
 {"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "data/operations/iterations/109/candidate_inventory.json"}
