@@ -56,10 +56,10 @@
     },
     "nonfunction_claim_evidence_lineage": {
       "tracked_files_accounted": 3427,
-      "candidate_fragments": 30498,
-      "canonical_claims": 17491,
+      "candidate_fragments": 30511,
+      "canonical_claims": 17504,
       "existing_claims_mapped": 678,
-      "explicit_quarantine_or_pending": 5701,
+      "explicit_quarantine_or_pending": 5702,
       "dependency_edges": 5769,
       "explicitly_unresolved_dependency_edges": 52,
       "public_surface_records": 411,
