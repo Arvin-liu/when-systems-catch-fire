@@ -1,10 +1,8 @@
 {
-  "current_accepted_iteration": 110,
+  "current_accepted_iteration": 111,
   "derived_from": "lifecycle-events.jsonl + annotated terminal tags",
   "errors": {},
-  "non_terminal_tasks": [
-    111
-  ],
+  "non_terminal_tasks": [],
   "resolved": {
     "104": "TERMINAL_SUCCESS",
     "105": "TERMINAL_SUCCESS",
@@ -12,9 +10,25 @@
     "107": "TERMINAL_SUCCESS",
     "108": "TERMINAL_SUCCESS",
     "110": "TERMINAL_SUCCESS",
-    "111": "CONTENT_MERGED_AWAITING_TERMINALIZATION"
+    "111": "TERMINAL_SUCCESS"
   },
   "schema_version": "1.0.0",
+  "tag_audit": {
+    "111": {
+      "original": {
+        "name": "ignition/iterations/111/terminal-r1",
+        "object_sha": "91de7433db0cef4800bb64a59b703a6305bc30ce",
+        "status": "INVALID_TERMINAL_ATTESTATION_PRESERVED",
+        "target": "9b15d359c54694d851c38df6ab3c7ae42544a51b"
+      },
+      "selected_recovery": {
+        "name": "ignition/iterations/111/terminal-r1-recovery-1",
+        "object_sha": "67c9dd380d0beed66808dc86134d7c9738984c0c",
+        "status": "VALID_RECOVERY_TERMINAL_ATTESTATION",
+        "target": "9b15d359c54694d851c38df6ab3c7ae42544a51b"
+      }
+    }
+  },
   "task_summary": [
     {
       "resolved_state": "TERMINAL_SUCCESS",
@@ -47,7 +61,7 @@
       "task_number": 110
     },
     {
-      "resolved_state": "CONTENT_MERGED_AWAITING_TERMINALIZATION",
+      "resolved_state": "TERMINAL_SUCCESS",
       "task_id": "IGNITION-FAILURE-CASE-EVIDENCE-GATE-AND-REAL-DEFECT-REPRODUCTION-PILOT-R1-20260801",
       "task_number": 111
     }
@@ -58,6 +72,7 @@
     106,
     107,
     108,
-    110
+    110,
+    111
   ]
 }
