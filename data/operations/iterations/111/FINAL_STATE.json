@@ -90,7 +90,11 @@
     "content_pr_174": "GREEN",
     "terminalization_pr_175": "GREEN",
     "recovery_protocol_pr_176": "GREEN",
-    "binding_pr": "RECORDED_IN_RECEIPT_AFTER_ORDINARY_MERGE"
+    "binding_pr": {
+      "pr_number": 177,
+      "review_base_commit": "15b5f5eb66fc667bbbcbb38a4d89fc891beca490",
+      "ordinary_merge_required": true
+    }
   },
   "receipt": {
     "branch": "relay/receipts/ignition-failure-case-evidence-gate-real-defect-reproduction-pilot-r1-20260801",
@@ -106,6 +110,6 @@
     "task_112_created_or_executed": false
   },
   "fresh_clone_verification": {
-    "status": "PENDING_BINDING_PR_HEAD_VERIFICATION"
+    "status": "VERIFICATION_REQUIRED_BEFORE_ORDINARY_MERGE"
   }
 }
