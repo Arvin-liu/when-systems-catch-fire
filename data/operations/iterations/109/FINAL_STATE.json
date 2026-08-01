@@ -8,7 +8,7 @@
   "content_pr": 169,
   "content_head": "04989fe685e8166f98ce8ed6621dff42a1083dc4",
   "terminalization_pr": 170,
-  "terminalization_commit": null,
+  "terminalization_commit": "f2709b965f3b5ebf97c3ac2473a37b1467ed4ccb",
   "predecessor": {
     "task": 108,
     "verified_terminal_state": "TERMINAL_SUCCESS",
