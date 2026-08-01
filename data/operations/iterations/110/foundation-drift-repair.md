@@ -19,3 +19,29 @@
 - Immediate check: `python3 tools/foundation/adjudicate_nonfunction_claims.py --check` → `NONFUNCTION_CLAIM_GENERATION_DETERMINISTIC files=14`, exit `0`.
 - The generated output is kept separate from the sealed OpenAlex raw and first-run adjudication evidence.
 - No result-driven registry correction or OpenAlex rerun was performed.
+
+## Full Foundation workflow repair
+
+The complete `python3 tools/foundation/validate_foundation.py` was also run from
+a fresh `main@0bbd31a82406e1922509aa052885d214b6efff85` checkout before the repair.
+The same deterministic generated-artifact failures reproduced there:
+`migrate_legacy.py --check`, the function census, and deep function adjudication.
+They were not caused by OpenAlex results and did not change claim meaning, M/E or
+disposition.
+
+The authorized generator-only repair was:
+
+```text
+python3 tools/foundation/migrate_legacy.py
+python3 tools/foundation/build_function_asset_census.py
+python3 tools/foundation/adjudicate_function_assets.py
+python3 tools/foundation/adjudicate_nonfunction_claims.py
+```
+
+After the final migration regeneration, the checks passed at a byte-stable fixed
+point: `migrate_legacy.py --check`, `build_function_asset_census.py --check`,
+`adjudicate_function_assets.py --check`, `adjudicate_nonfunction_claims.py --check`,
+`validate_nonfunction_claim_closure.py`, and the full foundation validator
+`63/63 ALL_FOUNDATION_VALID`. The generated function census now accounts for the
+task-110 tracked surfaces (6,987 discovered records) as repository-scoped
+classification; this is not an external-truth or maturity promotion.
