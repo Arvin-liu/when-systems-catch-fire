@@ -94,6 +94,11 @@
   - 可搜索名称：IMPLICIT-716DA1D22B83DF70 / "title": "Pointfire unifies the four fundamental forces / quantum gravity.", / IMPLICIT-716DA1D22B83DF70 / IMPLICIT-1994A619ECD95A90
   - 来源：`data/operations/iterations/109/candidate_inventory.json`
   - 依赖：—；被引用：—
+- ["title": "Pointfire unifies the four fundamental forces / quantum gravity.",](../../../data/operations/iterations/111/candidate_inventory.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-7D8D6CD64B399261 / "title": "Pointfire unifies the four fundamental forces / quantum gravity.", / IMPLICIT-7D8D6CD64B399261 / IMPLICIT-1994A619ECD95A90
+  - 来源：`data/operations/iterations/111/candidate_inventory.json`
+  - 依赖：—；被引用：—
 - ["title": "不能推出四力统一或物理学大一统不可能。",](../../../analysis/corpus-relation/article_cluster_candidates.json)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-854C9E7C0AD01410 / "title": "不能推出四力统一或物理学大一统不可能。", / IMPLICIT-854C9E7C0AD01410 / IMPLICIT-E78E97D3E4F9D62D
@@ -184,10 +189,20 @@
   - 可搜索名称：IMPLICIT-506C419C9D31B2F1 / "title": "暗能量与宇宙常数", / IMPLICIT-506C419C9D31B2F1 / IMPLICIT-4C587CDA88C8A5EB
   - 来源：`data/operations/iterations/110/candidate_inventory.json`
   - 依赖：—；被引用：—
+- ["title": "暗能量与宇宙常数",](../../../data/operations/iterations/111/candidate_inventory.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-6CAEC5C3999546D1 / "title": "暗能量与宇宙常数", / IMPLICIT-6CAEC5C3999546D1 / IMPLICIT-4C587CDA88C8A5EB
+  - 来源：`data/operations/iterations/111/candidate_inventory.json`
+  - 依赖：—；被引用：—
 - ["title": "暗能量与宇宙常数",](../../../data/operations/iterations/109/dossiers/OQ-90163.json)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-9245464967B7311A / "title": "暗能量与宇宙常数", / IMPLICIT-9245464967B7311A / IMPLICIT-4C587CDA88C8A5EB
   - 来源：`data/operations/iterations/109/dossiers/OQ-90163.json`
+  - 依赖：—；被引用：—
+- ["title": "量子引力",](../../../data/operations/iterations/111/candidate_inventory.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-651069CCAE3D8159 / "title": "量子引力", / IMPLICIT-651069CCAE3D8159 / IMPLICIT-0D183A5B4C89E035
+  - 来源：`data/operations/iterations/111/candidate_inventory.json`
   - 依赖：—；被引用：—
 - ["title": "量子引力",](../../../data/classic_problems_benchmark.json)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -233,6 +248,11 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-F48705713DCD062B / # C-0798｜物理大统一与能标门控 / IMPLICIT-F48705713DCD062B
   - 来源：`统一案例总表/0793-C-0798-物理大统一与能标门控.md`
+  - 依赖：—；被引用：—
+- [# Task 111 — Apple/Gravity Historical Evidence Preregistration](../../../data/operations/iterations/111/historical/PREREGISTRATION.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-0F0470C08732464E / # Task 111 — Apple/Gravity Historical Evidence Preregistration / IMPLICIT-0F0470C08732464E
+  - 来源：`data/operations/iterations/111/historical/PREREGISTRATION.md`
   - 依赖：—；被引用：—
 - [# 撤回的引力：一个知识库如何不让强断言悄悄回弹](../../../docs/editorial/articles/001-withdrawn-gravity-how-strong-claims-do-not-rebound.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -1643,6 +1663,11 @@
   - 可搜索名称：NFC-de512a0d23568ef1 / 已经解决现代物理难题。
   - 来源：`outputs/getbrain/project-position-update-20260706.md`
   - 依赖：—；被引用：—
+- [并排除。该门禁提升记录资格与可复现性，不提升历史故事、点火物理或 Function OS 的外部](../../../docs/project-current-state.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-0b07c48990897300 / 并排除。该门禁提升记录资格与可复现性，不提升历史故事、点火物理或 Function OS 的外部
+  - 来源：`docs/project-current-state.md`
+  - 依赖：—；被引用：—
 - [序言中的无限概念已受事件视界和物理隔绝牵引，体现“在下一层中写当前层”；](../../../docs/publication/zhiyuan-writing-examples.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-7140e37a56fa3e8b / 序言中的无限概念已受事件视界和物理隔绝牵引，体现“在下一层中写当前层”；
@@ -1977,6 +2002,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-9cd34373426d83b6 / 证据制度卡片：物理学
   - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [证据资格与队列误标问题，不是苹果历史、点火物理或 Function OS 外部真理问题。完整裁定](../../../RESULTS/LATEST.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-b603544a5a56e0e6 / 证据资格与队列误标问题，不是苹果历史、点火物理或 Function OS 外部真理问题。完整裁定
+  - 来源：`RESULTS/LATEST.md`
   - 依赖：—；被引用：—
 - [该案例主要检验尺度桥接和同构投影是否能把理论与观测连起来。](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0793-C-0798-%E7%89%A9%E7%90%86%E5%A4%A7%E7%BB%9F%E4%B8%80%E4%B8%8E%E8%83%BD%E6%A0%87%E9%97%A8%E6%8E%A7.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`

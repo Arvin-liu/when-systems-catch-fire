@@ -4,6 +4,46 @@
 
 [返回资产卡总索引](../ASSET-CARDS.md)
 
+<a id="asset-hr-25db71123fa1cbc7"></a>
+## 元协议规范性审核（外部治理记录）
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-25DB71123FA1CBC7` · [docs/governance/meta-protocol-reviews/README.md](../../docs/governance/meta-protocol-reviews/README.md)
+- **为什么产生：** 此来源记录了什么：元协议规范性审核（外部治理记录）？
+- **当前状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **当前结果：** 本目录为外部治理记录，不修改 canonical 协议状态、不替代事实验证、不替代独立人类复核、不替代治理批准、不宣布协议正式晋级。V2、V3 保留为黄色协议（事实度量 pending），不在本任务中自行发明全成本公式或可逆性指数并冒充已验证标准。
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `docs/governance/meta-protocol-reviews/README.md`, `REPOSITORY_HISTORY_SOURCE`
+- **演化历史：** 2026-07-11: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `元协议规范性审核（外部治理记录）`, `README`
+
+<a id="asset-hr-2605b1957ccb9e09"></a>
+## 两张表版本同步维护审计（2026-07-09 00:30）
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-2605B1957CCB9E09` · [outputs/audit/two-tables-version-sync-audit-20260708.md](../../outputs/audit/two-tables-version-sync-audit-20260708.md)
+- **为什么产生：** 此来源记录了什么：两张表版本同步维护审计（2026-07-09 00:30）？
+- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **当前结果：** 符合任务「只有 README / 两张表入口文件 / INDEX·总览文件 / 审计文件 发生变化」的约束。
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** `D595`, `D599`, `D596`, `D597`, `D598`
+- **来源与证据：** `outputs/audit/two-tables-version-sync-audit-20260708.md`, `REPOSITORY_HISTORY_SOURCE`
+- **演化历史：** 2026-07-08: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `两张表版本同步维护审计（2026-07-09 00:30）`, `two-tables-version-sync-audit-20260708`
+
 <a id="asset-hr-279683b750652ac6"></a>
 ## 首批物理资产纠偏（2026-07-29）
 
@@ -963,43 +1003,3 @@
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `SYSTEMS`
 - **可搜索名称：** `机制抽取（mechanism-extraction）`, `mechanism-extraction`
-
-<a id="asset-hr-4f3c4ff4a7ab0e3a"></a>
-## Current Main vs 1.4 Candidate Homepage Comparison
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-4F3C4FF4A7AB0E3A` · [reports/operations/IGNITION-ITERATION-METHOD-1.4-homepage-comparison.md](../../reports/operations/IGNITION-ITERATION-METHOD-1.4-homepage-comparison.md)
-- **为什么产生：** 此来源记录了什么：Current Main vs 1.4 Candidate Homepage Comparison？
-- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **当前结果：** Task: IGNITION-ITERATION-METHOD-1.4-CONTINUOUS-STAGE-SNAPSHOT-PUBLICATION-R1-20260726
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `reports/operations/IGNITION-ITERATION-METHOD-1.4-homepage-comparison.md`, `REPOSITORY_HISTORY_SOURCE`
-- **演化历史：** 2026-07-26: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `Current Main vs 1.4 Candidate Homepage Comparison`, `IGNITION-ITERATION-METHOD-1.4-homepage-comparison`
-
-<a id="asset-hr-52173a553c421e11"></a>
-## 跨协议一致性红队（外部治理记录）
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-52173A553C421E11` · [docs/governance/meta-protocol-reviews/cross-protocol-red-team.md](../../docs/governance/meta-protocol-reviews/cross-protocol-red-team.md)
-- **为什么产生：** 此来源记录了什么：跨协议一致性红队（外部治理记录）？
-- **当前状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
-- **当前结果：** 否。V4 修订定义明确写入"V4 不是绝对压倒一切的价值，须受宪章原则 4（整体不可无限压倒个体）约束"，并在硬约束中列为第 6 条。PASS。
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `docs/governance/meta-protocol-reviews/cross-protocol-red-team.md`, `REPOSITORY_HISTORY_SOURCE`
-- **演化历史：** 2026-07-11: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `ARCHITECTURE_GOVERNANCE`
-- **可搜索名称：** `跨协议一致性红队（外部治理记录）`, `cross-protocol-red-team`

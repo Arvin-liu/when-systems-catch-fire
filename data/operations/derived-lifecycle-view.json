@@ -2,14 +2,17 @@
   "current_accepted_iteration": 110,
   "derived_from": "lifecycle-events.jsonl + annotated terminal tags",
   "errors": {},
-  "non_terminal_tasks": [],
+  "non_terminal_tasks": [
+    111
+  ],
   "resolved": {
     "104": "TERMINAL_SUCCESS",
     "105": "TERMINAL_SUCCESS",
     "106": "TERMINAL_SUCCESS",
     "107": "TERMINAL_SUCCESS",
     "108": "TERMINAL_SUCCESS",
-    "110": "TERMINAL_SUCCESS"
+    "110": "TERMINAL_SUCCESS",
+    "111": "READY_FOR_CONTENT_MERGE"
   },
   "schema_version": "1.0.0",
   "task_summary": [
@@ -42,6 +45,11 @@
       "resolved_state": "TERMINAL_SUCCESS",
       "task_id": "IGNITION-PLANNER-COMPLETION-STATE-RECONCILIATION-AND-OPENALEX-INDEPENDENT-REPLICATION-PILOT-R1-20260801",
       "task_number": 110
+    },
+    {
+      "resolved_state": "READY_FOR_CONTENT_MERGE",
+      "task_id": "IGNITION-FAILURE-CASE-EVIDENCE-GATE-AND-REAL-DEFECT-REPRODUCTION-PILOT-R1-20260801",
+      "task_number": 111
     }
   ],
   "terminal_tasks": [

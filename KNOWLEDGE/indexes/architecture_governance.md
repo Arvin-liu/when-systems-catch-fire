@@ -4,18 +4,18 @@
 
 索引按固定 500 条分片，避免单页过大而无法在 GitHub 渲染。分片连续覆盖本主题主归属资产，未按重要性删减。
 
-- [第 001 片](./architecture_governance/part-001.md)：1—500；"""121-validator.py — Validate 121 fulltext artifacts by actually reading files. → 'evidence': '相关文章/资产 field in ' + n\['file'\],
-- [第 002 片](./architecture_governance/part-002.md)：501—1000；'evidence': '被引用/反向依赖 field in ' + n\['file'\], → Claim ceiling: **Cross-source bibliographic metadata consistency only; no paper-content, scientific-truth, Pointfire-phy
-- [第 003 片](./architecture_governance/part-003.md)：1001—1500；Claim ceiling: `validated_human_front_door_sync_candidate_only`. This report verifies repository surfaces and records ex → def check_no_api_key_leak(path):
-- [第 004 片](./architecture_governance/part-004.md)：1501—2000；def check_open_question_resolved(text: str) -> List\[str\]: → def read_json(p: Path):
-- [第 005 片](./architecture_governance/part-005.md)：2001—2500；def read_json(path: Path) -> dict: → def test_every_example_has_human_readable_companion():
-- [第 006 片](./architecture_governance/part-006.md)：2501—3000；def test_every_generated_output_exists_in_repo(self): → def valid_seal():
-- [第 007 片](./architecture_governance/part-007.md)：3001—3500；def validate() -> dict: → g\["status"\] in \["EVIDENCE_ACCUMULATING", "POSSIBLE_FIELD_ENHANCEMENT",
-- [第 008 片](./architecture_governance/part-008.md)：3501—4000；G_δ**：是否存在证据不足或不可收敛 → ok(f"{item\['path'\]}: historical seal verified (digest match)")
-- [第 009 片](./architecture_governance/part-009.md)：4001—4500；ok(f"{item\['path'\]}: registered generator '{gid}' verified (digest match)") → self.assertTrue(any("restored to CURRENT without review_evidence" in p for p in problems))
-- [第 010 片](./architecture_governance/part-010.md)：4501—5000；self.assertTrue(any("subject_head" in e and "artifact_head_sha" in e for e in errors)) → Within the source-defined scope, 二次窗口判定 is adjudicated as PREDICATE: 二次窗口判定，恢复后的退出权信号必须在特定区间内。. This is a model-internal
-- [第 011 片](./architecture_governance/part-011.md)：5001—5500；Within the source-defined scope, 信息门非对称退化 is adjudicated as STATE_TRANSITION: 信息门非对称退化，η_gate^asym = G × (1-H) × min(ε^S → 不把机器可读化数据当成最终理论；
-- [第 012 片](./architecture_governance/part-012.md)：5501—6000；不接受内部编号引用作为经验证据 → 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0201-C-201-AI提问协议四模块——刺.md`
-- [第 013 片](./architecture_governance/part-013.md)：6001—6500；原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0202-C-202-反对AI者.md` → 已在：本 README、D600/D601/D602 的 `source` 字段（已引用 MD SHA）、C-0810/C-0811 的「证据来源」、PR 正文同步采用此口径；PDF SHA 保留为 transport hash，未删除、未
-- [第 014 片](./architecture_governance/part-014.md)：6501—7000；已经统一四种基本力； → 补丁证据就绪状态
-- [第 015 片](./architecture_governance/part-015.md)：7001—7289；补充差异、竞争解释和证据制度。 → ：晋级门槛 + 初版验证器。machine_eligible=0/12，但验证器字段与 Schema 不一致。
+- [第 001 片](./architecture_governance/part-001.md)：1—500；"""121-validator.py — Validate 121 fulltext artifacts by actually reading files. → # 120 — Function OS Architecture Candidate Report
+- [第 002 片](./architecture_governance/part-002.md)：501—1000；# 16. Charter Gate：负担、沉默与反浪漫化 → cAST and emitted Python are concrete artifacts, but artifact identity, signing, packaging, and version policy are absent
+- [第 003 片](./architecture_governance/part-003.md)：1001—1500；cAST explicitly composes sequences, conditions, and loops, but the paper does not address routing among independently ve → def build_escalation_record(oid: str, review_record: dict\[str, Any\]) -> dict\[str, Any\]:
+- [第 004 片](./architecture_governance/part-004.md)：1501—2000；def build_findings(config: dict) -> list\[dict\]: → def norm(s):
+- [第 005 片](./architecture_governance/part-005.md)：2001—2500；def norm_id(tok): → def test_d3_g5_02_self_referential_head_authority(self):
+- [第 006 片](./architecture_governance/part-006.md)：2501—3000；def test_d3_g5_03_unauthorized_scope_asset(self): → def test_tool_digest_tamper(self):
+- [第 007 片](./architecture_governance/part-007.md)：3001—3500；def test_trace_hash_deterministic(self): → facts\[_remote_key(evidence\["relay_repository"\], evidence\["relay_pull_request"\])\] = fetch_remote_fact(evidence\["relay_rep
+- [第 008 片](./architecture_governance/part-008.md)：3501—4000；facts\[_remote_key(source\["repository"\], source\["pull_request"\])\] = fetch_remote_fact(source\["repository"\], source\["pull_ → manifest\["propagation_closure"\]\["resolved_components"\] = \[
+- [第 009 片](./architecture_governance/part-009.md)：4001—4500；manifest\["synchronization_closure"\]\["external_attestations"\]\[0\].update({"status": "pending", "evidence_refs": \["external → return "UNRESOLVED_CLAIM"
+- [第 010 片](./architecture_governance/part-010.md)：4501—5000；return (UNRESOLVED, UNRESOLVED) → unresolved = sum(1 for _, (c, _) in live.items() if c == UNRESOLVED)
+- [第 011 片](./architecture_governance/part-011.md)：5001—5500；unresolved items; → \| 数据集 \| 计划文件 \| 来源文档 \| 状态 \|
+- [第 012 片](./architecture_governance/part-012.md)：5501—6000；\| 数据集 \| 说明 \| → 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0044-C-44-亚历山大二世废奴.md`
+- [第 013 片](./architecture_governance/part-013.md)：6001—6500；原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0045-C-45-南非转型.md` → 后续需要的证据或验证；
+- [第 014 片](./architecture_governance/part-014.md)：6501—7000；否。E1 限定低耦合可预测域并设非线性退出；E2 须配预防/沙盒/上限；E3 区分良/恶性循环；E4 防强制同质化与过早收敛。四者按情境互补，无任一被设为绝对优先。PASS。 → 睡眠清除门控验证
+- [第 015 片](./architecture_governance/part-015.md)：7001—7418；矛盾登记: 3条 (CONTRADICTION-001虚假覆盖, CONTRADICTION-002验证器假通过, CONTRADICTION-003 claim support膨胀) → ：晋级门槛 + 初版验证器。machine_eligible=0/12，但验证器字段与 Schema 不一致。

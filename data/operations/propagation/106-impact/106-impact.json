@@ -2,10 +2,10 @@
   "dimensions": {
     "CURRENT_PUBLIC_WORDING_IMPACT": {
       "baseline_sha256": {
-        "HUMAN-READING.md": "1296df3feb82d9af407c4b43b1f1f98109206f712db1ab8a1e53c8169b1eec8a",
-        "README.md": "857ba8c2a075fde8d9b06401d9b155ddc7714ea2dd9d99ef0e30fb780cf4c143",
-        "RESULTS/LATEST.md": "61a6d3840ef8988b31d0e1bf59c92bb3aebf537d142f21b45118354784c1b51f",
-        "docs/project-current-state.md": "299281447731e86f445ac0a511b6a6f4de5652e22342a38b03380be8bc39f73b"
+        "HUMAN-READING.md": "dd53e97f15cccaa9c409162f21b10759d61ba862a03685faa632178564d4d158",
+        "README.md": "bbcb42d32455fd850c1f9fff75eb9c7ec6da8368101b7fb63ef9deeb27267eb1",
+        "RESULTS/LATEST.md": "8c116862fc8de3d33e4c06a8c3b98690849ddb4d9515b3624fdb2f7645c69ff2",
+        "docs/project-current-state.md": "e44fd67dee10648c5cec743c0216d7678afbf1382b9856d3e5249c563581cdec"
       },
       "declared": "NO_IMPACT_JUSTIFIED",
       "governed_sources": [
@@ -18,7 +18,7 @@
     "EDITORIAL_ARTICLE_IMPACT": {
       "baseline_sha256": {
         "docs/editorial/articles/007-bounded-trust-function-os-v02-capability-benchmark.md": "cfb25e465b572bf954bc8987838e76071412581cc195a6c7a50d37b4929687e0",
-        "docs/editorial/source-manifest.json": "7ff2b6f959b7f5e406c477b3eda0703e4ddf12a0bd507b46b0f55209dfb2b3c4"
+        "docs/editorial/source-manifest.json": "5b9977927dc272ef0e238d9e8cf458b23458a3b5f7b4d15e3dd37f72dc538f1d"
       },
       "declared": "NO_IMPACT_JUSTIFIED",
       "governed_sources": [
@@ -28,7 +28,7 @@
     },
     "EVIDENCE_PROGRAM_IMPACT": {
       "baseline_sha256": {
-        "evidence-program/README.md": "a2ba2c4c843ed188d1f088c1f101337fded8381bc623eff9c17124a29e5aa3a9",
+        "evidence-program/README.md": "a5b5a530cff044fc38fda77cece47d0cd6354d331a103ad315b6c004c86cf3ae",
         "evidence-program/registry/candidate-portfolio.jsonl": "5cf1bdc7a7b35a32ad9d32bf2176c886c561c205f20c8617b6402902716b5cbd"
       },
       "declared": "NO_IMPACT_JUSTIFIED",
@@ -39,10 +39,10 @@
     },
     "MACHINE_RECORD_IMPACT": {
       "baseline_sha256": {
-        "RESULTS/CLAIM-DELTA.md": "1aae471297ee8e2895fdbc2ba2cabb0a2c7eac61da3fc7a1a3109747cf05e813",
-        "RESULTS/EVIDENCE-LINEAGE.md": "598bd5660f4a1b80474291d6cd3b64d9af9e8f98ec4cad704d8ab84d3f3907ba",
-        "RESULTS/IMPACT-ANALYSIS.md": "e0b9cfeaf994ea4f15e9d0fd3460564a81477f11608df11d1b16391988e6b36f",
-        "RESULTS/SELF-CORRECTION-AUDIT.md": "32f3a5557774ab0bd470e944f8971444198a603ae3453dd84aab0eea1097ce0d"
+        "RESULTS/CLAIM-DELTA.md": "14c8cd34782273eaf9c2673cc1d975555a2f9a36e7b6207cdb8ac7fb6571269e",
+        "RESULTS/EVIDENCE-LINEAGE.md": "cc39d251fc2663d076755a3edf474bd40067775d0dc710ba487e428d5fb7fb8b",
+        "RESULTS/IMPACT-ANALYSIS.md": "cc2236bed0b34ca9ccdd51a07bedf0d6b2443b9dc52a9dc1df218e4200e545f9",
+        "RESULTS/SELF-CORRECTION-AUDIT.md": "2b745d81ec87613235fc9fbe082c4b5582db2d053e50f294d2762736ca3a752f"
       },
       "declared": "NO_IMPACT_JUSTIFIED",
       "governed_sources": [
@@ -65,7 +65,7 @@
     },
     "OPEN_QUESTION_IMPACT": {
       "baseline_sha256": {
-        "RESULTS/OPEN-QUESTIONS.md": "82634ff7183aca1fefb23d9645769cfdf2b935634e93d6ce5bae7a261a8ec8ea"
+        "RESULTS/OPEN-QUESTIONS.md": "9446099def7135b9f6e6306ea93e9fd4b707cbf3d36d5c3ee4fbf47db773c1b3"
       },
       "declared": "NO_IMPACT_JUSTIFIED",
       "governed_sources": [
@@ -74,8 +74,8 @@
     },
     "PROJECT_STATE_IMPACT": {
       "baseline_sha256": {
-        "ITERATION.md": "90676449d1f6d2aa4f74538bc0cb7708e76bd6a649e3bed62acf557354966feb",
-        "docs/project-current-state.md": "299281447731e86f445ac0a511b6a6f4de5652e22342a38b03380be8bc39f73b"
+        "ITERATION.md": "5351952f2483fbd68b8484f8c2262de154155b2c3250378893bb8e277aaba8eb",
+        "docs/project-current-state.md": "e44fd67dee10648c5cec743c0216d7678afbf1382b9856d3e5249c563581cdec"
       },
       "declared": "NO_IMPACT_JUSTIFIED",
       "governed_sources": [

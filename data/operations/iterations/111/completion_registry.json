@@ -1,0 +1,405 @@
+{
+  "OQ-37929": {
+    "class": "SCIENTIFIC_EVIDENCE",
+    "lifecycle_state": "UNASSESSED",
+    "reconciliation_evidence": null
+  },
+  "OQ-26772": {
+    "class": "SCIENTIFIC_EVIDENCE",
+    "lifecycle_state": "UNASSESSED",
+    "reconciliation_evidence": null
+  },
+  "OQ-50371": {
+    "class": "SCIENTIFIC_EVIDENCE",
+    "lifecycle_state": "UNASSESSED",
+    "reconciliation_evidence": null
+  },
+  "OQ-90163": {
+    "class": "SCIENTIFIC_EVIDENCE",
+    "lifecycle_state": "UNASSESSED",
+    "reconciliation_evidence": null
+  },
+  "OQ-24236": {
+    "class": "SCIENTIFIC_EVIDENCE",
+    "lifecycle_state": "UNASSESSED",
+    "reconciliation_evidence": null
+  },
+  "OQ-63989": {
+    "class": "SCIENTIFIC_EVIDENCE",
+    "lifecycle_state": "UNASSESSED",
+    "reconciliation_evidence": null
+  },
+  "OQ-07366": {
+    "class": "SCIENTIFIC_EVIDENCE",
+    "lifecycle_state": "UNASSESSED",
+    "reconciliation_evidence": null
+  },
+  "OQ-83412": {
+    "class": "SCIENTIFIC_EVIDENCE",
+    "lifecycle_state": "UNASSESSED",
+    "reconciliation_evidence": null
+  },
+  "OQ-68473": {
+    "class": "SCIENTIFIC_EVIDENCE",
+    "lifecycle_state": "UNASSESSED",
+    "reconciliation_evidence": null
+  },
+  "OQ-70521": {
+    "class": "SCIENTIFIC_EVIDENCE",
+    "lifecycle_state": "UNASSESSED",
+    "reconciliation_evidence": null
+  },
+  "OQ-06181": {
+    "class": "SCIENTIFIC_EVIDENCE",
+    "lifecycle_state": "UNASSESSED",
+    "reconciliation_evidence": null
+  },
+  "OQ-08618": {
+    "class": "SCIENTIFIC_EVIDENCE",
+    "lifecycle_state": "UNASSESSED",
+    "reconciliation_evidence": null
+  },
+  "OQ-02724": {
+    "class": "SCIENTIFIC_EVIDENCE",
+    "lifecycle_state": "UNASSESSED",
+    "reconciliation_evidence": null
+  },
+  "OQ-09468": {
+    "class": "SCIENTIFIC_EVIDENCE",
+    "lifecycle_state": "UNASSESSED",
+    "reconciliation_evidence": null
+  },
+  "OQ-28307": {
+    "class": "SCIENTIFIC_EVIDENCE",
+    "lifecycle_state": "UNASSESSED",
+    "reconciliation_evidence": null
+  },
+  "C-01": {
+    "class": "CORE_CAPABILITY_VALIDATION",
+    "lifecycle_state": "COMPLETED_SUPPORTED",
+    "reconciliation_evidence": {
+      "candidate_id": "C-01",
+      "claim_id": "SRC-REGISTRY-104-METADATA",
+      "lifecycle_state": "COMPLETED_SUPPORTED",
+      "superseded_by": null,
+      "owner_alias": [],
+      "authority": {
+        "source": "evidence-program/runs/IGNITION-EVIDENCE-PILOT-R1-CROSSREF-DOI-VERIFICATION/result-adjudication.json",
+        "source_sha256": "083db73165182b4670b38a77e2b61528a25fe022d6c575bc7d9f00d6e98015ea",
+        "outcome_field": "outcome",
+        "observed_outcome": "SUPPORTED_WITHIN_SCOPE",
+        "preregistration_commit": "a4d13a69acea9bcc1480d7dd383929d46813c2f5",
+        "task": "103",
+        "note": "Inherited from the task-110 completion ledger; terminal and must not be rescheduled."
+      }
+    }
+  },
+  "C-02": {
+    "class": "CORE_CAPABILITY_VALIDATION",
+    "lifecycle_state": "UNASSESSED",
+    "reconciliation_evidence": null
+  },
+  "C-03": {
+    "class": "CORE_CAPABILITY_VALIDATION",
+    "lifecycle_state": "COMPLETED_PARTIAL",
+    "reconciliation_evidence": {
+      "candidate_id": "C-03",
+      "claim_id": "DOI-OPENALEX-CROSS-CHECK",
+      "lifecycle_state": "COMPLETED_PARTIAL",
+      "superseded_by": null,
+      "owner_alias": [],
+      "authority": {
+        "source": "evidence-program/runs/IGNITION-EVIDENCE-PILOT-R1-OPENALEX-DOI-REPLICATION-20260801/result-adjudication.json",
+        "source_sha256": "97f41dc0f94fa962ba24f9e7865c2050146069d71061869666611388bb8ae621",
+        "outcome_field": "outcome",
+        "observed_outcome": "PARTIALLY_SUPPORTED",
+        "preregistration_commit": "a830664c1add6a26b2b516a13769cdd71412eda2",
+        "run_id": "IGNITION-EVIDENCE-PILOT-R1-OPENALEX-DOI-REPLICATION-20260801",
+        "task": "110",
+        "claim_ceiling": "Cross-source bibliographic metadata consistency only; no paper-content or scientific-truth conclusion.",
+        "note": "Task 110 terminal evidence and linkage graph explicitly bind C-03 to the OpenAlex result. This bridge fixes the omitted ledger entry without editing the task-110 historical bytes."
+      }
+    }
+  },
+  "C-04": {
+    "class": "CORE_CAPABILITY_VALIDATION",
+    "lifecycle_state": "COMPLETED_SUPPORTED",
+    "reconciliation_evidence": {
+      "candidate_id": "C-04",
+      "claim_id": "FUNCTION-OS-V02-CORRECTNESS",
+      "lifecycle_state": "COMPLETED_SUPPORTED",
+      "superseded_by": null,
+      "owner_alias": [],
+      "authority": {
+        "source": "function-os-candidate/v0.2/benchmark/RESULTS.json",
+        "source_sha256": "806845a33b4ea04b41bde68e6133399fc84405ea973ec07f070a163726cbd869",
+        "outcome_field": "overall_verdict",
+        "observed_outcome": "SUPPORTED_WITHIN_BOUNDED_DOMAIN",
+        "preregistration_commit": "5d664686474ef4457e89127c53e2293a61028094",
+        "target_commit": "16f640045b3dc9d411f015a51e45de07299d31fc",
+        "task": "105",
+        "note": "Inherited from the task-110 completion ledger; bounded terminal result and must not be rescheduled."
+      }
+    }
+  },
+  "C-05": {
+    "class": "CORE_CAPABILITY_VALIDATION",
+    "lifecycle_state": "UNASSESSED",
+    "reconciliation_evidence": null
+  },
+  "C-06": {
+    "class": "CORE_CAPABILITY_VALIDATION",
+    "lifecycle_state": "UNASSESSED",
+    "reconciliation_evidence": null
+  },
+  "C-07": {
+    "class": "CORE_CAPABILITY_VALIDATION",
+    "lifecycle_state": "UNASSESSED",
+    "reconciliation_evidence": null
+  },
+  "GAP-ITERATION-DELTA": {
+    "class": "GOVERNANCE_OR_PROPAGATION_DEFECT",
+    "lifecycle_state": "UNASSESSED",
+    "reconciliation_evidence": null
+  },
+  "GAP-PROJECT-ATTRACTOR": {
+    "class": "GOVERNANCE_OR_PROPAGATION_DEFECT",
+    "lifecycle_state": "UNASSESSED",
+    "reconciliation_evidence": null
+  },
+  "GAP-SAMPLE-DISTRIBUTION": {
+    "class": "GOVERNANCE_OR_PROPAGATION_DEFECT",
+    "lifecycle_state": "UNASSESSED",
+    "reconciliation_evidence": null
+  },
+  "GAP-DECISION-COLLAPSE": {
+    "class": "GOVERNANCE_OR_PROPAGATION_DEFECT",
+    "lifecycle_state": "UNASSESSED",
+    "reconciliation_evidence": null
+  },
+  "GAP-NARRATIVE-PROVENANCE": {
+    "class": "GOVERNANCE_OR_PROPAGATION_DEFECT",
+    "lifecycle_state": "UNASSESSED",
+    "reconciliation_evidence": null
+  },
+  "GAP-CHUNK-INTEGRITY": {
+    "class": "GOVERNANCE_OR_PROPAGATION_DEFECT",
+    "lifecycle_state": "UNASSESSED",
+    "reconciliation_evidence": null
+  },
+  "mcf-gap-001": {
+    "class": "MATHEMATICAL_FORMALIZATION",
+    "lifecycle_state": "UNASSESSED",
+    "reconciliation_evidence": null
+  },
+  "mcf-gap-002": {
+    "class": "MATHEMATICAL_FORMALIZATION",
+    "lifecycle_state": "UNASSESSED",
+    "reconciliation_evidence": null
+  },
+  "mcf-gap-003": {
+    "class": "MATHEMATICAL_FORMALIZATION",
+    "lifecycle_state": "UNASSESSED",
+    "reconciliation_evidence": null
+  },
+  "mcf-gap-004": {
+    "class": "MATHEMATICAL_FORMALIZATION",
+    "lifecycle_state": "UNASSESSED",
+    "reconciliation_evidence": null
+  },
+  "mcf-gap-005": {
+    "class": "MATHEMATICAL_FORMALIZATION",
+    "lifecycle_state": "UNASSESSED",
+    "reconciliation_evidence": null
+  },
+  "arn-gap-001": {
+    "class": "MATHEMATICAL_FORMALIZATION",
+    "lifecycle_state": "UNASSESSED",
+    "reconciliation_evidence": null
+  },
+  "arn-gap-002": {
+    "class": "MATHEMATICAL_FORMALIZATION",
+    "lifecycle_state": "UNASSESSED",
+    "reconciliation_evidence": null
+  },
+  "arn-gap-003": {
+    "class": "MATHEMATICAL_FORMALIZATION",
+    "lifecycle_state": "UNASSESSED",
+    "reconciliation_evidence": null
+  },
+  "arn-gap-004": {
+    "class": "MATHEMATICAL_FORMALIZATION",
+    "lifecycle_state": "UNASSESSED",
+    "reconciliation_evidence": null
+  },
+  "arn-gap-005": {
+    "class": "MATHEMATICAL_FORMALIZATION",
+    "lifecycle_state": "UNASSESSED",
+    "reconciliation_evidence": null
+  },
+  "psd-gap-001": {
+    "class": "MATHEMATICAL_FORMALIZATION",
+    "lifecycle_state": "UNASSESSED",
+    "reconciliation_evidence": null
+  },
+  "psd-gap-002": {
+    "class": "MATHEMATICAL_FORMALIZATION",
+    "lifecycle_state": "UNASSESSED",
+    "reconciliation_evidence": null
+  },
+  "psd-gap-003": {
+    "class": "MATHEMATICAL_FORMALIZATION",
+    "lifecycle_state": "UNASSESSED",
+    "reconciliation_evidence": null
+  },
+  "psd-gap-004": {
+    "class": "MATHEMATICAL_FORMALIZATION",
+    "lifecycle_state": "UNASSESSED",
+    "reconciliation_evidence": null
+  },
+  "psd-gap-005": {
+    "class": "MATHEMATICAL_FORMALIZATION",
+    "lifecycle_state": "UNASSESSED",
+    "reconciliation_evidence": null
+  },
+  "psd-gap-006": {
+    "class": "MATHEMATICAL_FORMALIZATION",
+    "lifecycle_state": "UNASSESSED",
+    "reconciliation_evidence": null
+  },
+  "A0": {
+    "class": "GOVERNANCE_OR_PROPAGATION_DEFECT",
+    "lifecycle_state": "UNASSESSED",
+    "reconciliation_evidence": null
+  },
+  "A01": {
+    "class": "GOVERNANCE_OR_PROPAGATION_DEFECT",
+    "lifecycle_state": "UNASSESSED",
+    "reconciliation_evidence": null
+  },
+  "A02": {
+    "class": "GOVERNANCE_OR_PROPAGATION_DEFECT",
+    "lifecycle_state": "UNASSESSED",
+    "reconciliation_evidence": null
+  },
+  "A03": {
+    "class": "GOVERNANCE_OR_PROPAGATION_DEFECT",
+    "lifecycle_state": "UNASSESSED",
+    "reconciliation_evidence": null
+  },
+  "A04": {
+    "class": "GOVERNANCE_OR_PROPAGATION_DEFECT",
+    "lifecycle_state": "UNASSESSED",
+    "reconciliation_evidence": null
+  },
+  "A05": {
+    "class": "GOVERNANCE_OR_PROPAGATION_DEFECT",
+    "lifecycle_state": "UNASSESSED",
+    "reconciliation_evidence": null
+  },
+  "A06": {
+    "class": "GOVERNANCE_OR_PROPAGATION_DEFECT",
+    "lifecycle_state": "UNASSESSED",
+    "reconciliation_evidence": null
+  },
+  "A08": {
+    "class": "GOVERNANCE_OR_PROPAGATION_DEFECT",
+    "lifecycle_state": "UNASSESSED",
+    "reconciliation_evidence": null
+  },
+  "A09": {
+    "class": "GOVERNANCE_OR_PROPAGATION_DEFECT",
+    "lifecycle_state": "UNASSESSED",
+    "reconciliation_evidence": null
+  },
+  "A1": {
+    "class": "GOVERNANCE_OR_PROPAGATION_DEFECT",
+    "lifecycle_state": "UNASSESSED",
+    "reconciliation_evidence": null
+  },
+  "A10": {
+    "class": "GOVERNANCE_OR_PROPAGATION_DEFECT",
+    "lifecycle_state": "UNASSESSED",
+    "reconciliation_evidence": null
+  },
+  "A100": {
+    "class": "GOVERNANCE_OR_PROPAGATION_DEFECT",
+    "lifecycle_state": "UNASSESSED",
+    "reconciliation_evidence": null
+  },
+  "CLAIM-BC-20260709-003": {
+    "class": "GOVERNANCE_OR_PROPAGATION_DEFECT",
+    "lifecycle_state": "UNASSESSED",
+    "reconciliation_evidence": null
+  },
+  "CLAIM-BC-20260709-004": {
+    "class": "GOVERNANCE_OR_PROPAGATION_DEFECT",
+    "lifecycle_state": "UNASSESSED",
+    "reconciliation_evidence": null
+  },
+  "CLAIM-BC-20260709-006": {
+    "class": "GOVERNANCE_OR_PROPAGATION_DEFECT",
+    "lifecycle_state": "UNASSESSED",
+    "reconciliation_evidence": null
+  },
+  "CLAIM-BC-20260709-012": {
+    "class": "GOVERNANCE_OR_PROPAGATION_DEFECT",
+    "lifecycle_state": "UNASSESSED",
+    "reconciliation_evidence": null
+  },
+  "CLAIM-BC-20260709-013": {
+    "class": "GOVERNANCE_OR_PROPAGATION_DEFECT",
+    "lifecycle_state": "UNASSESSED",
+    "reconciliation_evidence": null
+  },
+  "CLAIM-BC-20260709-014": {
+    "class": "GOVERNANCE_OR_PROPAGATION_DEFECT",
+    "lifecycle_state": "UNASSESSED",
+    "reconciliation_evidence": null
+  },
+  "CLAIM-BC-20260709-015": {
+    "class": "GOVERNANCE_OR_PROPAGATION_DEFECT",
+    "lifecycle_state": "UNASSESSED",
+    "reconciliation_evidence": null
+  },
+  "CLAIM-BC-20260709-018": {
+    "class": "GOVERNANCE_OR_PROPAGATION_DEFECT",
+    "lifecycle_state": "UNASSESSED",
+    "reconciliation_evidence": null
+  },
+  "CLAIM-BC-20260709-019": {
+    "class": "GOVERNANCE_OR_PROPAGATION_DEFECT",
+    "lifecycle_state": "UNASSESSED",
+    "reconciliation_evidence": null
+  },
+  "CLAIM-BC-20260709-022": {
+    "class": "GOVERNANCE_OR_PROPAGATION_DEFECT",
+    "lifecycle_state": "UNASSESSED",
+    "reconciliation_evidence": null
+  },
+  "CLAIM-D107": {
+    "class": "GOVERNANCE_OR_PROPAGATION_DEFECT",
+    "lifecycle_state": "UNASSESSED",
+    "reconciliation_evidence": null
+  },
+  "CLAIM-D11": {
+    "class": "GOVERNANCE_OR_PROPAGATION_DEFECT",
+    "lifecycle_state": "UNASSESSED",
+    "reconciliation_evidence": null
+  },
+  "CF-apple_gravity_failure": {
+    "class": "IMPLEMENTATION_DEFECT",
+    "lifecycle_state": "UNASSESSED",
+    "reconciliation_evidence": null
+  },
+  "CF-cross_domain_synergy_risk": {
+    "class": "IMPLEMENTATION_DEFECT",
+    "lifecycle_state": "UNASSESSED",
+    "reconciliation_evidence": null
+  },
+  "CF-technology_economic_growth_failure": {
+    "class": "IMPLEMENTATION_DEFECT",
+    "lifecycle_state": "UNASSESSED",
+    "reconciliation_evidence": null
+  }
+}

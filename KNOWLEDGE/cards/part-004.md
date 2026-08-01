@@ -4,6 +4,46 @@
 
 [返回资产卡总索引](../ASSET-CARDS.md)
 
+<a id="asset-hr-4f3c4ff4a7ab0e3a"></a>
+## Current Main vs 1.4 Candidate Homepage Comparison
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-4F3C4FF4A7AB0E3A` · [reports/operations/IGNITION-ITERATION-METHOD-1.4-homepage-comparison.md](../../reports/operations/IGNITION-ITERATION-METHOD-1.4-homepage-comparison.md)
+- **为什么产生：** 此来源记录了什么：Current Main vs 1.4 Candidate Homepage Comparison？
+- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **当前结果：** Task: IGNITION-ITERATION-METHOD-1.4-CONTINUOUS-STAGE-SNAPSHOT-PUBLICATION-R1-20260726
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `reports/operations/IGNITION-ITERATION-METHOD-1.4-homepage-comparison.md`, `REPOSITORY_HISTORY_SOURCE`
+- **演化历史：** 2026-07-26: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `Current Main vs 1.4 Candidate Homepage Comparison`, `IGNITION-ITERATION-METHOD-1.4-homepage-comparison`
+
+<a id="asset-hr-52173a553c421e11"></a>
+## 跨协议一致性红队（外部治理记录）
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-52173A553C421E11` · [docs/governance/meta-protocol-reviews/cross-protocol-red-team.md](../../docs/governance/meta-protocol-reviews/cross-protocol-red-team.md)
+- **为什么产生：** 此来源记录了什么：跨协议一致性红队（外部治理记录）？
+- **当前状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **当前结果：** 否。V4 修订定义明确写入"V4 不是绝对压倒一切的价值，须受宪章原则 4（整体不可无限压倒个体）约束"，并在硬约束中列为第 6 条。PASS。
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `docs/governance/meta-protocol-reviews/cross-protocol-red-team.md`, `REPOSITORY_HISTORY_SOURCE`
+- **演化历史：** 2026-07-11: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `ARCHITECTURE_GOVERNANCE`
+- **可搜索名称：** `跨协议一致性红队（外部治理记录）`, `cross-protocol-red-team`
+
 <a id="asset-hr-52502d2b9c02b338"></a>
 ## 跨域 smoke test 审计
 
@@ -963,43 +1003,3 @@
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `COGNITION`, `ARCHITECTURE_GOVERNANCE`
 - **可搜索名称：** `121Q13 Attention, Distribution, And Compression Report`, `121Q13-attention-distribution-compression`
-
-<a id="asset-hr-771c575b7e09f8bd"></a>
-## 121Q32I Phase D integrated validation closeout
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-771C575B7E09F8BD` · [reports/operations/121Q32I-phase-d-validation-closeout.md](../../reports/operations/121Q32I-phase-d-validation-closeout.md)
-- **为什么产生：** 此来源记录了什么：121Q32I Phase D integrated validation closeout？
-- **当前状态：** `CANDIDATE_OR_PENDING_SOURCE`
-- **当前结果：** Status: PHASEDVALIDATIONCLOSEDCANDIDATEONLY
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** `D1`, `D2`, `D3`, `D4`
-- **来源与证据：** `reports/operations/121Q32I-phase-d-validation-closeout.md`, `121Q32I-PHASE-D-VALIDATION-CLOSEOUT`
-- **演化历史：** 2026-07-18: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `121Q32I Phase D integrated validation closeout`, `121Q32I-phase-d-validation-closeout`
-
-<a id="asset-hr-773e495bc5720013"></a>
-## Core system reclassification
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-773E495BC5720013` · [reports/foundation-architecture/core-system-reclassification-20260712.md](../../reports/foundation-architecture/core-system-reclassification-20260712.md)
-- **为什么产生：** 此来源记录了什么：Core system reclassification？
-- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **当前结果：** Y1 is a workflow orchestrator; JPLUS and JMINUS are internal evidence channels; the twelve protocols are heuristic or governance operators; the 64 combinations are a design space. None is a proof oracle.
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `reports/foundation-architecture/core-system-reclassification-20260712.md`, `REPOSITORY_HISTORY_SOURCE`
-- **演化历史：** 2026-07-12: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `MATHEMATICS`, `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`
-- **可搜索名称：** `Core system reclassification`, `core-system-reclassification-20260712`

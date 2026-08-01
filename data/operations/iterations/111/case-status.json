@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0.0",
+  "task_number": 111,
+  "task_id": "IGNITION-FAILURE-CASE-EVIDENCE-GATE-AND-REAL-DEFECT-REPRODUCTION-PILOT-R1-20260801",
+  "control_commit": "b0f4ebe660de10e09f88ee524e9947243c80e0cc",
+  "base_commit": "dddd5fec01abb69a61993c93104214425fca4791",
+  "formal_base_commit": "dddd5fec01abb69a61993c93104214425fca4791",
+  "historical_preregistration": "data/operations/iterations/111/historical/PREREGISTRATION.md",
+  "historical_evidence_dossier": "data/operations/iterations/111/historical/EVIDENCE_DOSSIER.md",
+  "target_audit": "data/operations/iterations/111/TARGET_AUDIT.md",
+  "cases": [
+    {
+      "schema_version": "1.0.0",
+      "case_id": "CF-apple_gravity_failure",
+      "source_path": "case_failures/examples/apple_gravity_failure.md",
+      "original_classification": "IMPLEMENTATION_DEFECT",
+      "original_status": "KNOWN_DEFECT_CASE",
+      "case_label": "NARRATIVE_HYPOTHESIS",
+      "status_dimensions": {
+        "external_evidence": "EVIDENCE_PARTIAL_OR_DISPUTED",
+        "executable_target": "EXECUTABLE_TARGET_ABSENT",
+        "formalization": "FORMALIZATION_UNDERSPECIFIED",
+        "reproduction": "NO_REPRODUCTION_POSSIBLE_WITH_CURRENT_TARGET"
+      },
+      "historical_evidence_refs": ["HIST-APPLE-01", "HIST-APPLE-02", "HIST-APPLE-03", "HIST-APPLE-04", "HIST-APPLE-05", "HIST-APPLE-06"],
+      "evidence_dossier": "data/operations/iterations/111/historical/EVIDENCE_DOSSIER.md",
+      "target_audit": "data/operations/iterations/111/TARGET_AUDIT.md",
+      "claim_ceiling": "Later memoir sources report an apple/gravity association; they do not establish the popular impact detail or a sole direct causal trigger for the completed theory.",
+      "reproduction": {
+        "run_started": false,
+        "reason": "No executable target, faithful formalization, exact governed input, output oracle or trace exists in the frozen repository.",
+        "result_inspected": false
+      }
+    },
+    {
+      "schema_version": "1.0.0",
+      "case_id": "CF-cross_domain_synergy_risk",
+      "source_path": "case_failures/examples/cross_domain_synergy_risk.md",
+      "original_classification": "IMPLEMENTATION_DEFECT",
+      "original_status": "KNOWN_DEFECT_CASE",
+      "case_label": "NARRATIVE_HYPOTHESIS",
+      "status_dimensions": {
+        "external_evidence": "EVIDENCE_NOT_REVIEWED",
+        "executable_target": "EXECUTABLE_TARGET_ABSENT",
+        "formalization": "FORMALIZATION_UNDERSPECIFIED",
+        "reproduction": "NO_REPRODUCTION_POSSIBLE_WITH_CURRENT_TARGET"
+      },
+      "historical_evidence_refs": [],
+      "evidence_dossier": null,
+      "target_audit": "data/operations/iterations/111/TARGET_AUDIT.md",
+      "claim_ceiling": "Narrative reserve only; no external conclusion or defect status is assigned.",
+      "reproduction": {
+        "run_started": false,
+        "reason": "Reserve case has no executable target or preregistered evidence study.",
+        "result_inspected": false
+      }
+    },
+    {
+      "schema_version": "1.0.0",
+      "case_id": "CF-technology_economic_growth_failure",
+      "source_path": "case_failures/examples/technology_economic_growth_failure.md",
+      "original_classification": "IMPLEMENTATION_DEFECT",
+      "original_status": "KNOWN_DEFECT_CASE",
+      "case_label": "NARRATIVE_HYPOTHESIS",
+      "status_dimensions": {
+        "external_evidence": "EVIDENCE_NOT_REVIEWED",
+        "executable_target": "EXECUTABLE_TARGET_ABSENT",
+        "formalization": "FORMALIZATION_UNDERSPECIFIED",
+        "reproduction": "NO_REPRODUCTION_POSSIBLE_WITH_CURRENT_TARGET"
+      },
+      "historical_evidence_refs": [],
+      "evidence_dossier": null,
+      "target_audit": "data/operations/iterations/111/TARGET_AUDIT.md",
+      "claim_ceiling": "Narrative reserve only; no external conclusion or defect status is assigned.",
+      "reproduction": {
+        "run_started": false,
+        "reason": "Reserve case has no executable target or preregistered evidence study.",
+        "result_inspected": false
+      }
+    }
+  ]
+}

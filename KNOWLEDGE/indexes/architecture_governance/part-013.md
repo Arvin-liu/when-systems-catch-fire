@@ -4,6 +4,616 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0045-C-45-南非转型.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0045-C-45-%E5%8D%97%E9%9D%9E%E8%BD%AC%E5%9E%8B.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-26058d04f0946461 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0045-C-45-南非转型.md`
+  - 来源：`统一案例总表/0045-C-45-南非转型.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0046-C-46-欧盟.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0046-C-46-%E6%AC%A7%E7%9B%9F.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-8c313da1b0e74e2d / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0046-C-46-欧盟.md`
+  - 来源：`统一案例总表/0046-C-46-欧盟.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0047-C-47-庇隆主义.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0047-C-47-%E5%BA%87%E9%9A%86%E4%B8%BB%E4%B9%89.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-c955411a49a71b26 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0047-C-47-庇隆主义.md`
+  - 来源：`统一案例总表/0047-C-47-庇隆主义.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0048-C-48-王安石变法.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0048-C-48-%E7%8E%8B%E5%AE%89%E7%9F%B3%E5%8F%98%E6%B3%95.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-f5d5bbcd8916b9fa / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0048-C-48-王安石变法.md`
+  - 来源：`统一案例总表/0048-C-48-王安石变法.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0049-C-49-凯末尔改革.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0049-C-49-%E5%87%AF%E6%9C%AB%E5%B0%94%E6%94%B9%E9%9D%A9.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-138c2499ddf209f1 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0049-C-49-凯末尔改革.md`
+  - 来源：`统一案例总表/0049-C-49-凯末尔改革.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0050-C-50-华为员工持股.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0050-C-50-%E5%8D%8E%E4%B8%BA%E5%91%98%E5%B7%A5%E6%8C%81%E8%82%A1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-4f8ddbe189a77496 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0050-C-50-华为员工持股.md`
+  - 来源：`统一案例总表/0050-C-50-华为员工持股.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0051-C-51-丰田生产方式.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0051-C-51-%E4%B8%B0%E7%94%B0%E7%94%9F%E4%BA%A7%E6%96%B9%E5%BC%8F.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-5d6a1a0733b48d18 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0051-C-51-丰田生产方式.md`
+  - 来源：`统一案例总表/0051-C-51-丰田生产方式.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0052-C-52-奈飞文化.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0052-C-52-%E5%A5%88%E9%A3%9E%E6%96%87%E5%8C%96.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-1e94ca7c085b7765 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0052-C-52-奈飞文化.md`
+  - 来源：`统一案例总表/0052-C-52-奈飞文化.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0053-C-53-晨星自管理.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0053-C-53-%E6%99%A8%E6%98%9F%E8%87%AA%E7%AE%A1%E7%90%86.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-a625e91fe781ec19 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0053-C-53-晨星自管理.md`
+  - 来源：`统一案例总表/0053-C-53-晨星自管理.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0054-C-54-微软文化转型.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0054-C-54-%E5%BE%AE%E8%BD%AF%E6%96%87%E5%8C%96%E8%BD%AC%E5%9E%8B.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-b912b229239995d6 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0054-C-54-微软文化转型.md`
+  - 来源：`统一案例总表/0054-C-54-微软文化转型.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0055-C-55-苹果1997回归.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0055-C-55-%E8%8B%B9%E6%9E%9C1997%E5%9B%9E%E5%BD%92.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-7f7326d0c1af9d6b / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0055-C-55-苹果1997回归.md`
+  - 来源：`统一案例总表/0055-C-55-苹果1997回归.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0056-C-56-AOL+时代华纳.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0056-C-56-AOL%2B%E6%97%B6%E4%BB%A3%E5%8D%8E%E7%BA%B3.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-d1b57dd2300f609c / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0056-C-56-AOL+时代华纳.md`
+  - 来源：`统一案例总表/0056-C-56-AOL+时代华纳.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0057-C-57-WeWork.md`](../../../统一案例总表/0057-C-57-WeWork.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-d58537a914dbea4f / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0057-C-57-WeWork.md`
+  - 来源：`统一案例总表/0057-C-57-WeWork.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0058-C-58-恒大.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0058-C-58-%E6%81%92%E5%A4%A7.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-9c84e744bb559c3c / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0058-C-58-恒大.md`
+  - 来源：`统一案例总表/0058-C-58-恒大.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0059-C-59-谷歌20%时间.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0059-C-59-%E8%B0%B7%E6%AD%8C20%25%E6%97%B6%E9%97%B4.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-849a34d142dc8dc6 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0059-C-59-谷歌20%时间.md`
+  - 来源：`统一案例总表/0059-C-59-谷歌20%时间.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0060-C-60-安然.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0060-C-60-%E5%AE%89%E7%84%B6.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-051af7e01af812ff / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0060-C-60-安然.md`
+  - 来源：`统一案例总表/0060-C-60-安然.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0061-C-61-Theranos.md`](../../../统一案例总表/0061-C-61-Theranos.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-152975d5a637ce2b / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0061-C-61-Theranos.md`
+  - 来源：`统一案例总表/0061-C-61-Theranos.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0062-C-62-宋朝.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0062-C-62-%E5%AE%8B%E6%9C%9D.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-e7265e427ad00d90 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0062-C-62-宋朝.md`
+  - 来源：`统一案例总表/0062-C-62-宋朝.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0063-C-63-明朝覆灭.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0063-C-63-%E6%98%8E%E6%9C%9D%E8%A6%86%E7%81%AD.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-fea259845246ea7a / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0063-C-63-明朝覆灭.md`
+  - 来源：`统一案例总表/0063-C-63-明朝覆灭.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0064-C-64-阿兹特克.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0064-C-64-%E9%98%BF%E5%85%B9%E7%89%B9%E5%85%8B.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-54d03082d4ed8e63 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0064-C-64-阿兹特克.md`
+  - 来源：`统一案例总表/0064-C-64-阿兹特克.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0065-C-65-印加.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0065-C-65-%E5%8D%B0%E5%8A%A0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-59be9246c54e7a4b / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0065-C-65-印加.md`
+  - 来源：`统一案例总表/0065-C-65-印加.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0066-C-66-印度种姓制度.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0066-C-66-%E5%8D%B0%E5%BA%A6%E7%A7%8D%E5%A7%93%E5%88%B6%E5%BA%A6.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-5656d78c7a898a44 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0066-C-66-印度种姓制度.md`
+  - 来源：`统一案例总表/0066-C-66-印度种姓制度.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0067-C-67-非洲班图文明.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0067-C-67-%E9%9D%9E%E6%B4%B2%E7%8F%AD%E5%9B%BE%E6%96%87%E6%98%8E.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-e7a5acec97b9e2ca / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0067-C-67-非洲班图文明.md`
+  - 来源：`统一案例总表/0067-C-67-非洲班图文明.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0068-C-68-张居正改革★.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0068-C-68-%E5%BC%A0%E5%B1%85%E6%AD%A3%E6%94%B9%E9%9D%A9%E2%98%85.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-16b180e2f7c6c537 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0068-C-68-张居正改革★.md`
+  - 来源：`统一案例总表/0068-C-68-张居正改革★.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0069-C-69-福耀美国工厂★.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0069-C-69-%E7%A6%8F%E8%80%80%E7%BE%8E%E5%9B%BD%E5%B7%A5%E5%8E%82%E2%98%85.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-014e2a7fe53b44d5 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0069-C-69-福耀美国工厂★.md`
+  - 来源：`统一案例总表/0069-C-69-福耀美国工厂★.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0070-C-70-美国芯片法案★.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0070-C-70-%E7%BE%8E%E5%9B%BD%E8%8A%AF%E7%89%87%E6%B3%95%E6%A1%88%E2%98%85.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-b1cc52c20acdce99 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0070-C-70-美国芯片法案★.md`
+  - 来源：`统一案例总表/0070-C-70-美国芯片法案★.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0071-C-71-美国国家认同危机★.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0071-C-71-%E7%BE%8E%E5%9B%BD%E5%9B%BD%E5%AE%B6%E8%AE%A4%E5%90%8C%E5%8D%B1%E6%9C%BA%E2%98%85.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-31150d90fef87ea7 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0071-C-71-美国国家认同危机★.md`
+  - 来源：`统一案例总表/0071-C-71-美国国家认同危机★.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0072-C-72-统一相变框架.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0072-C-72-%E7%BB%9F%E4%B8%80%E7%9B%B8%E5%8F%98%E6%A1%86%E6%9E%B6.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-ef6818eef4791ac8 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0072-C-72-统一相变框架.md`
+  - 来源：`统一案例总表/0072-C-72-统一相变框架.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0078-C-78-可选集双向动力学.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0078-C-78-%E5%8F%AF%E9%80%89%E9%9B%86%E5%8F%8C%E5%90%91%E5%8A%A8%E5%8A%9B%E5%AD%A6.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-96c2790bdc9ff35f / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0078-C-78-可选集双向动力学.md`
+  - 来源：`统一案例总表/0078-C-78-可选集双向动力学.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0081-C-81-好奇心驱动.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0081-C-81-%E5%A5%BD%E5%A5%87%E5%BF%83%E9%A9%B1%E5%8A%A8.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-ab8ed8de43cd4d35 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0081-C-81-好奇心驱动.md`
+  - 来源：`统一案例总表/0081-C-81-好奇心驱动.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0082-C-82-觅母定向传播.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0082-C-82-%E8%A7%85%E6%AF%8D%E5%AE%9A%E5%90%91%E4%BC%A0%E6%92%AD.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-66681599ab918cbb / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0082-C-82-觅母定向传播.md`
+  - 来源：`统一案例总表/0082-C-82-觅母定向传播.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0083-C-83-好奇心-ε正反馈闭环.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0083-C-83-%E5%A5%BD%E5%A5%87%E5%BF%83-%CE%B5%E6%AD%A3%E5%8F%8D%E9%A6%88%E9%97%AD%E7%8E%AF.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-bae6cce174ebbf0e / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0083-C-83-好奇心-ε正反馈闭环.md`
+  - 来源：`统一案例总表/0083-C-83-好奇心-ε正反馈闭环.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0084-C-84-AI-ε安装路径.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0084-C-84-AI-%CE%B5%E5%AE%89%E8%A3%85%E8%B7%AF%E5%BE%84.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-0856fdcaaf609db1 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0084-C-84-AI-ε安装路径.md`
+  - 来源：`统一案例总表/0084-C-84-AI-ε安装路径.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0085-C-85-ε相变级联.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0085-C-85-%CE%B5%E7%9B%B8%E5%8F%98%E7%BA%A7%E8%81%94.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-f728298234006f7d / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0085-C-85-ε相变级联.md`
+  - 来源：`统一案例总表/0085-C-85-ε相变级联.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0087-C-87-信息门非对称退化.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0087-C-87-%E4%BF%A1%E6%81%AF%E9%97%A8%E9%9D%9E%E5%AF%B9%E7%A7%B0%E9%80%80%E5%8C%96.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-757ed08e6e81a86f / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0087-C-87-信息门非对称退化.md`
+  - 来源：`统一案例总表/0087-C-87-信息门非对称退化.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0088-C-88-乘法临界漂移统一.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0088-C-88-%E4%B9%98%E6%B3%95%E4%B8%B4%E7%95%8C%E6%BC%82%E7%A7%BB%E7%BB%9F%E4%B8%80.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-39cb9e9439bf7ca8 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0088-C-88-乘法临界漂移统一.md`
+  - 来源：`统一案例总表/0088-C-88-乘法临界漂移统一.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0089-C-89-遮蔽-补偿-成本三角.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0089-C-89-%E9%81%AE%E8%94%BD-%E8%A1%A5%E5%81%BF-%E6%88%90%E6%9C%AC%E4%B8%89%E8%A7%92.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-308fef7bf97a360a / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0089-C-89-遮蔽-补偿-成本三角.md`
+  - 来源：`统一案例总表/0089-C-89-遮蔽-补偿-成本三角.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0092-C-92-解码门槛降低.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0092-C-92-%E8%A7%A3%E7%A0%81%E9%97%A8%E6%A7%9B%E9%99%8D%E4%BD%8E.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-6be84ed4833a7762 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0092-C-92-解码门槛降低.md`
+  - 来源：`统一案例总表/0092-C-92-解码门槛降低.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0094-C-94-向下兼容长期损耗.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0094-C-94-%E5%90%91%E4%B8%8B%E5%85%BC%E5%AE%B9%E9%95%BF%E6%9C%9F%E6%8D%9F%E8%80%97.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-99b095f6f479e37e / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0094-C-94-向下兼容长期损耗.md`
+  - 来源：`统一案例总表/0094-C-94-向下兼容长期损耗.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0095-C-95-AI中间层调度.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0095-C-95-AI%E4%B8%AD%E9%97%B4%E5%B1%82%E8%B0%83%E5%BA%A6.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-1d93d6d4a2e7422a / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0095-C-95-AI中间层调度.md`
+  - 来源：`统一案例总表/0095-C-95-AI中间层调度.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0096-C-96-三层结构必然性.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0096-C-96-%E4%B8%89%E5%B1%82%E7%BB%93%E6%9E%84%E5%BF%85%E7%84%B6%E6%80%A7.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-f6ba3570c1cf7e29 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0096-C-96-三层结构必然性.md`
+  - 来源：`统一案例总表/0096-C-96-三层结构必然性.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0098-C-98-门锁交替律.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0098-C-98-%E9%97%A8%E9%94%81%E4%BA%A4%E6%9B%BF%E5%BE%8B.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-7bb3924843242b42 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0098-C-98-门锁交替律.md`
+  - 来源：`统一案例总表/0098-C-98-门锁交替律.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0099-C-99-自锁结构.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0099-C-99-%E8%87%AA%E9%94%81%E7%BB%93%E6%9E%84.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-88e075a6ca1d5a9e / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0099-C-99-自锁结构.md`
+  - 来源：`统一案例总表/0099-C-99-自锁结构.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0101-C-101-确定性误解律收敛 — π.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0101-C-101-%E7%A1%AE%E5%AE%9A%E6%80%A7%E8%AF%AF%E8%A7%A3%E5%BE%8B%E6%94%B6%E6%95%9B%20%E2%80%94%20%CF%80.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-6b3180fe3b1383f3 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0101-C-101-确定性误解律收敛 — π.md`
+  - 来源：`统一案例总表/0101-C-101-确定性误解律收敛 — π.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0102-C-102-退化临界律收敛.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0102-C-102-%E9%80%80%E5%8C%96%E4%B8%B4%E7%95%8C%E5%BE%8B%E6%94%B6%E6%95%9B.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-17a73ef439a089fb / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0102-C-102-退化临界律收敛.md`
+  - 来源：`统一案例总表/0102-C-102-退化临界律收敛.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0104-C-104-框架发现能力.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0104-C-104-%E6%A1%86%E6%9E%B6%E5%8F%91%E7%8E%B0%E8%83%BD%E5%8A%9B.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-0b233e25c377b820 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0104-C-104-框架发现能力.md`
+  - 来源：`统一案例总表/0104-C-104-框架发现能力.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0105-C-105-通道不对称.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0105-C-105-%E9%80%9A%E9%81%93%E4%B8%8D%E5%AF%B9%E7%A7%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-a24a3423aa1c8aac / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0105-C-105-通道不对称.md`
+  - 来源：`统一案例总表/0105-C-105-通道不对称.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0106-C-106-知识更新半衰期.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0106-C-106-%E7%9F%A5%E8%AF%86%E6%9B%B4%E6%96%B0%E5%8D%8A%E8%A1%B0%E6%9C%9F.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-4d9bfbd80688d083 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0106-C-106-知识更新半衰期.md`
+  - 来源：`统一案例总表/0106-C-106-知识更新半衰期.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0107-C-107-发现瓶颈.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0107-C-107-%E5%8F%91%E7%8E%B0%E7%93%B6%E9%A2%88.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-6aa8ffce4debe46e / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0107-C-107-发现瓶颈.md`
+  - 来源：`统一案例总表/0107-C-107-发现瓶颈.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0109-C-109-口味偏好固化.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0109-C-109-%E5%8F%A3%E5%91%B3%E5%81%8F%E5%A5%BD%E5%9B%BA%E5%8C%96.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-c7bedb8090a35122 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0109-C-109-口味偏好固化.md`
+  - 来源：`统一案例总表/0109-C-109-口味偏好固化.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0110-C-110-顽固者临界比例.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0110-C-110-%E9%A1%BD%E5%9B%BA%E8%80%85%E4%B8%B4%E7%95%8C%E6%AF%94%E4%BE%8B.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-43a3b80d0e17c54b / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0110-C-110-顽固者临界比例.md`
+  - 来源：`统一案例总表/0110-C-110-顽固者临界比例.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0111-C-111-跨层犹豫域映射.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0111-C-111-%E8%B7%A8%E5%B1%82%E7%8A%B9%E8%B1%AB%E5%9F%9F%E6%98%A0%E5%B0%84.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-c3ebde9ef7f52d13 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0111-C-111-跨层犹豫域映射.md`
+  - 来源：`统一案例总表/0111-C-111-跨层犹豫域映射.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0112-C-112-内部抵抗.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0112-C-112-%E5%86%85%E9%83%A8%E6%8A%B5%E6%8A%97.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-35ef88813653dd40 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0112-C-112-内部抵抗.md`
+  - 来源：`统一案例总表/0112-C-112-内部抵抗.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0113-C-113-人体忒修斯.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0113-C-113-%E4%BA%BA%E4%BD%93%E5%BF%92%E4%BF%AE%E6%96%AF.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-5e769c54a822dc5c / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0113-C-113-人体忒修斯.md`
+  - 来源：`统一案例总表/0113-C-113-人体忒修斯.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0114-C-114-乘法对称变换.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0114-C-114-%E4%B9%98%E6%B3%95%E5%AF%B9%E7%A7%B0%E5%8F%98%E6%8D%A2.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-66b461e260b79a46 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0114-C-114-乘法对称变换.md`
+  - 来源：`统一案例总表/0114-C-114-乘法对称变换.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0115-C-115-跨层完整退化.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0115-C-115-%E8%B7%A8%E5%B1%82%E5%AE%8C%E6%95%B4%E9%80%80%E5%8C%96.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-712913ea3fd543b6 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0115-C-115-跨层完整退化.md`
+  - 来源：`统一案例总表/0115-C-115-跨层完整退化.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0116-C-116-口味偏好固化.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0116-C-116-%E5%8F%A3%E5%91%B3%E5%81%8F%E5%A5%BD%E5%9B%BA%E5%8C%96.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-4f2389fd19d15a69 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0116-C-116-口味偏好固化.md`
+  - 来源：`统一案例总表/0116-C-116-口味偏好固化.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0117-C-117-逆Weibull寿命.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0117-C-117-%E9%80%86Weibull%E5%AF%BF%E5%91%BD.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-1940ec58354695c4 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0117-C-117-逆Weibull寿命.md`
+  - 来源：`统一案例总表/0117-C-117-逆Weibull寿命.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0118-C-118-倒U型驱动力.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0118-C-118-%E5%80%92U%E5%9E%8B%E9%A9%B1%E5%8A%A8%E5%8A%9B.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-a827b9ad243edaf9 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0118-C-118-倒U型驱动力.md`
+  - 来源：`统一案例总表/0118-C-118-倒U型驱动力.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0119-C-119-点火窗口.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0119-C-119-%E7%82%B9%E7%81%AB%E7%AA%97%E5%8F%A3.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-fb05dad5a4fa4dd6 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0119-C-119-点火窗口.md`
+  - 来源：`统一案例总表/0119-C-119-点火窗口.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0120-C-120-招聘歧视与工资压制.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0120-C-120-%E6%8B%9B%E8%81%98%E6%AD%A7%E8%A7%86%E4%B8%8E%E5%B7%A5%E8%B5%84%E5%8E%8B%E5%88%B6.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-1f3a82f77c7d8b18 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0120-C-120-招聘歧视与工资压制.md`
+  - 来源：`统一案例总表/0120-C-120-招聘歧视与工资压制.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0121-C-121-ε_eff闭环动力学.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0121-C-121-%CE%B5_eff%E9%97%AD%E7%8E%AF%E5%8A%A8%E5%8A%9B%E5%AD%A6.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-e86ca836ca5b5b71 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0121-C-121-ε_eff闭环动力学.md`
+  - 来源：`统一案例总表/0121-C-121-ε_eff闭环动力学.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0123-C-123-招聘歧视与工资压制.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0123-C-123-%E6%8B%9B%E8%81%98%E6%AD%A7%E8%A7%86%E4%B8%8E%E5%B7%A5%E8%B5%84%E5%8E%8B%E5%88%B6.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-8568375dc44dab06 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0123-C-123-招聘歧视与工资压制.md`
+  - 来源：`统一案例总表/0123-C-123-招聘歧视与工资压制.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0124-C-124-退化渗透路径.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0124-C-124-%E9%80%80%E5%8C%96%E6%B8%97%E9%80%8F%E8%B7%AF%E5%BE%84.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-9bad6c846d7c4bd2 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0124-C-124-退化渗透路径.md`
+  - 来源：`统一案例总表/0124-C-124-退化渗透路径.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0126-C-126-速度差闭合.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0126-C-126-%E9%80%9F%E5%BA%A6%E5%B7%AE%E9%97%AD%E5%90%88.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-567f8644084f4dd1 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0126-C-126-速度差闭合.md`
+  - 来源：`统一案例总表/0126-C-126-速度差闭合.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0127-C-127-框架发现过程.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0127-C-127-%E6%A1%86%E6%9E%B6%E5%8F%91%E7%8E%B0%E8%BF%87%E7%A8%8B.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-cf22e95f0028b47e / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0127-C-127-框架发现过程.md`
+  - 来源：`统一案例总表/0127-C-127-框架发现过程.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0129-C-129-AI物种分化.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0129-C-129-AI%E7%89%A9%E7%A7%8D%E5%88%86%E5%8C%96.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-bcebe2f3923563d8 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0129-C-129-AI物种分化.md`
+  - 来源：`统一案例总表/0129-C-129-AI物种分化.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0130-C-130-招聘歧视与工资压制.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0130-C-130-%E6%8B%9B%E8%81%98%E6%AD%A7%E8%A7%86%E4%B8%8E%E5%B7%A5%E8%B5%84%E5%8E%8B%E5%88%B6.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-b2331431df0405ee / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0130-C-130-招聘歧视与工资压制.md`
+  - 来源：`统一案例总表/0130-C-130-招聘歧视与工资压制.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0131-C-131-学科训练的遮蔽作用.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0131-C-131-%E5%AD%A6%E7%A7%91%E8%AE%AD%E7%BB%83%E7%9A%84%E9%81%AE%E8%94%BD%E4%BD%9C%E7%94%A8.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-fd94419f73280f5c / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0131-C-131-学科训练的遮蔽作用.md`
+  - 来源：`统一案例总表/0131-C-131-学科训练的遮蔽作用.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0132-C-132-确定性误解.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0132-C-132-%E7%A1%AE%E5%AE%9A%E6%80%A7%E8%AF%AF%E8%A7%A3.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-51325492e87cb876 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0132-C-132-确定性误解.md`
+  - 来源：`统一案例总表/0132-C-132-确定性误解.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0133-C-133-中间稳态.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0133-C-133-%E4%B8%AD%E9%97%B4%E7%A8%B3%E6%80%81.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-1c24d6174a0a67ab / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0133-C-133-中间稳态.md`
+  - 来源：`统一案例总表/0133-C-133-中间稳态.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0134-C-134-8格概率.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0134-C-134-8%E6%A0%BC%E6%A6%82%E7%8E%87.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-e0e4f6a289f797f0 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0134-C-134-8格概率.md`
+  - 来源：`统一案例总表/0134-C-134-8格概率.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0136-C-136-退化临界.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0136-C-136-%E9%80%80%E5%8C%96%E4%B8%B4%E7%95%8C.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-4f8755d102d27b75 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0136-C-136-退化临界.md`
+  - 来源：`统一案例总表/0136-C-136-退化临界.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0137-C-137-框架发现过程.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0137-C-137-%E6%A1%86%E6%9E%B6%E5%8F%91%E7%8E%B0%E8%BF%87%E7%A8%8B.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-a238e6e92b980f75 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0137-C-137-框架发现过程.md`
+  - 来源：`统一案例总表/0137-C-137-框架发现过程.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0138-C-138-学科训练的遮蔽作用.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0138-C-138-%E5%AD%A6%E7%A7%91%E8%AE%AD%E7%BB%83%E7%9A%84%E9%81%AE%E8%94%BD%E4%BD%9C%E7%94%A8.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-9fffa90dfab1a04b / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0138-C-138-学科训练的遮蔽作用.md`
+  - 来源：`统一案例总表/0138-C-138-学科训练的遮蔽作用.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0139-C-139-门锁交替.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0139-C-139-%E9%97%A8%E9%94%81%E4%BA%A4%E6%9B%BF.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-3185adbc7a03aceb / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0139-C-139-门锁交替.md`
+  - 来源：`统一案例总表/0139-C-139-门锁交替.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0140-C-140-广州菜市场超市融合.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0140-C-140-%E5%B9%BF%E5%B7%9E%E8%8F%9C%E5%B8%82%E5%9C%BA%E8%B6%85%E5%B8%82%E8%9E%8D%E5%90%88.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-48f021ea7c7d3e9f / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0140-C-140-广州菜市场超市融合.md`
+  - 来源：`统一案例总表/0140-C-140-广州菜市场超市融合.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0141-C-141-ε_eff昼夜分时.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0141-C-141-%CE%B5_eff%E6%98%BC%E5%A4%9C%E5%88%86%E6%97%B6.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-66caa801c95efae2 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0141-C-141-ε_eff昼夜分时.md`
+  - 来源：`统一案例总表/0141-C-141-ε_eff昼夜分时.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0142-C-142-重庆社区争夺战.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0142-C-142-%E9%87%8D%E5%BA%86%E7%A4%BE%E5%8C%BA%E4%BA%89%E5%A4%BA%E6%88%98.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-7565f93e6ead9afa / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0142-C-142-重庆社区争夺战.md`
+  - 来源：`统一案例总表/0142-C-142-重庆社区争夺战.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0143-C-143-现场调研=ε_sense安装.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0143-C-143-%E7%8E%B0%E5%9C%BA%E8%B0%83%E7%A0%94%3D%CE%B5_sense%E5%AE%89%E8%A3%85.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-390f0d1314023dc8 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0143-C-143-现场调研=ε_sense安装.md`
+  - 来源：`统一案例总表/0143-C-143-现场调研=ε_sense安装.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0144-C-144-县城佳和超市90%复购率.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0144-C-144-%E5%8E%BF%E5%9F%8E%E4%BD%B3%E5%92%8C%E8%B6%85%E5%B8%8290%25%E5%A4%8D%E8%B4%AD%E7%8E%87.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-1da42af9bce18964 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0144-C-144-县城佳和超市90%复购率.md`
+  - 来源：`统一案例总表/0144-C-144-县城佳和超市90%复购率.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0146-C-146-西安加油站便利店.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0146-C-146-%E8%A5%BF%E5%AE%89%E5%8A%A0%E6%B2%B9%E7%AB%99%E4%BE%BF%E5%88%A9%E5%BA%97.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-e109cce2af07a1cf / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0146-C-146-西安加油站便利店.md`
+  - 来源：`统一案例总表/0146-C-146-西安加油站便利店.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0147-C-147-现场vs远程.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0147-C-147-%E7%8E%B0%E5%9C%BAvs%E8%BF%9C%E7%A8%8B.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-76eb2e527519daf7 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0147-C-147-现场vs远程.md`
+  - 来源：`统一案例总表/0147-C-147-现场vs远程.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0148-C-148-调研成本×退出成本.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0148-C-148-%E8%B0%83%E7%A0%94%E6%88%90%E6%9C%AC%C3%97%E9%80%80%E5%87%BA%E6%88%90%E6%9C%AC.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-10612d8456831e1a / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0148-C-148-调研成本×退出成本.md`
+  - 来源：`统一案例总表/0148-C-148-调研成本×退出成本.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0150-C-150-现场调研的乘数效应.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0150-C-150-%E7%8E%B0%E5%9C%BA%E8%B0%83%E7%A0%94%E7%9A%84%E4%B9%98%E6%95%B0%E6%95%88%E5%BA%94.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-1d65a8f2ac8125e6 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0150-C-150-现场调研的乘数效应.md`
+  - 来源：`统一案例总表/0150-C-150-现场调研的乘数效应.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0151-C-151-默里实验·低自尊伴侣互动.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0151-C-151-%E9%BB%98%E9%87%8C%E5%AE%9E%E9%AA%8C%C2%B7%E4%BD%8E%E8%87%AA%E5%B0%8A%E4%BC%B4%E4%BE%A3%E4%BA%92%E5%8A%A8.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-b90c82201e6fcc57 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0151-C-151-默里实验·低自尊伴侣互动.md`
+  - 来源：`统一案例总表/0151-C-151-默里实验·低自尊伴侣互动.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0152-C-152-罗森塔尔-潜力生-标签实验.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0152-C-152-%E7%BD%97%E6%A3%AE%E5%A1%94%E5%B0%94-%E6%BD%9C%E5%8A%9B%E7%94%9F-%E6%A0%87%E7%AD%BE%E5%AE%9E%E9%AA%8C.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-ca26c6b517a42d2a / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0152-C-152-罗森塔尔-潜力生-标签实验.md`
+  - 来源：`统一案例总表/0152-C-152-罗森塔尔-潜力生-标签实验.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0153-C-153-沃尔顿1小时归属感练习.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0153-C-153-%E6%B2%83%E5%B0%94%E9%A1%BF1%E5%B0%8F%E6%97%B6%E5%BD%92%E5%B1%9E%E6%84%9F%E7%BB%83%E4%B9%A0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-9a11f3245a6bbf14 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0153-C-153-沃尔顿1小时归属感练习.md`
+  - 来源：`统一案例总表/0153-C-153-沃尔顿1小时归属感练习.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0154-C-154-沃尔顿21分钟拯救婚姻.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0154-C-154-%E6%B2%83%E5%B0%94%E9%A1%BF21%E5%88%86%E9%92%9F%E6%8B%AF%E6%95%91%E5%A9%9A%E5%A7%BB.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-aab79bd8ea862e45 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0154-C-154-沃尔顿21分钟拯救婚姻.md`
+  - 来源：`统一案例总表/0154-C-154-沃尔顿21分钟拯救婚姻.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0155-C-155-沃尔顿10年追踪.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0155-C-155-%E6%B2%83%E5%B0%94%E9%A1%BF10%E5%B9%B4%E8%BF%BD%E8%B8%AA.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-06477f78285cd692 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0155-C-155-沃尔顿10年追踪.md`
+  - 来源：`统一案例总表/0155-C-155-沃尔顿10年追踪.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0156-C-156-财富容器.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0156-C-156-%E8%B4%A2%E5%AF%8C%E5%AE%B9%E5%99%A8.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-9caf12ba270ed7eb / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0156-C-156-财富容器.md`
+  - 来源：`统一案例总表/0156-C-156-财富容器.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0157-C-157-收入流多元.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0157-C-157-%E6%94%B6%E5%85%A5%E6%B5%81%E5%A4%9A%E5%85%83.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-91ce335d5e3f8629 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0157-C-157-收入流多元.md`
+  - 来源：`统一案例总表/0157-C-157-收入流多元.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0158-C-158-风险暴露不对称.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0158-C-158-%E9%A3%8E%E9%99%A9%E6%9A%B4%E9%9C%B2%E4%B8%8D%E5%AF%B9%E7%A7%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-a9b7d50ae445999f / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0158-C-158-风险暴露不对称.md`
+  - 来源：`统一案例总表/0158-C-158-风险暴露不对称.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0159-C-159-财富自证循环.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0159-C-159-%E8%B4%A2%E5%AF%8C%E8%87%AA%E8%AF%81%E5%BE%AA%E7%8E%AF.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-8bbc31b80e419a3b / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0159-C-159-财富自证循环.md`
+  - 来源：`统一案例总表/0159-C-159-财富自证循环.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0160-C-160-同质性遮蔽.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0160-C-160-%E5%90%8C%E8%B4%A8%E6%80%A7%E9%81%AE%E8%94%BD.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-22a397ecdfb1273b / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0160-C-160-同质性遮蔽.md`
+  - 来源：`统一案例总表/0160-C-160-同质性遮蔽.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0162-C-162-定投指数基金.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0162-C-162-%E5%AE%9A%E6%8A%95%E6%8C%87%E6%95%B0%E5%9F%BA%E9%87%91.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-0438a307aea5c583 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0162-C-162-定投指数基金.md`
+  - 来源：`统一案例总表/0162-C-162-定投指数基金.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0163-C-163-定投P_sustain全局最大值(验证D34).md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0163-C-163-%E5%AE%9A%E6%8A%95P_sustain%E5%85%A8%E5%B1%80%E6%9C%80%E5%A4%A7%E5%80%BC%28%E9%AA%8C%E8%AF%81D34%29.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-f27d7ee4e65a590f / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0163-C-163-定投P_sustain全局最大值(验证D34).md`
+  - 来源：`统一案例总表/0163-C-163-定投P_sustain全局最大值(验证D34).md`
+  - 依赖：D34；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0164-C-164-AI共震策略全失效(验证D66).md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0164-C-164-AI%E5%85%B1%E9%9C%87%E7%AD%96%E7%95%A5%E5%85%A8%E5%A4%B1%E6%95%88%28%E9%AA%8C%E8%AF%81D66%29.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-b58bf659ea7385c7 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0164-C-164-AI共震策略全失效(验证D66).md`
+  - 来源：`统一案例总表/0164-C-164-AI共震策略全失效(验证D66).md`
+  - 依赖：D66；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0165-C-165-炒股带宽溢出全领域衰减(验证D63跨域溢出).md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0165-C-165-%E7%82%92%E8%82%A1%E5%B8%A6%E5%AE%BD%E6%BA%A2%E5%87%BA%E5%85%A8%E9%A2%86%E5%9F%9F%E8%A1%B0%E5%87%8F%28%E9%AA%8C%E8%AF%81D63%E8%B7%A8%E5%9F%9F%E6%BA%A2%E5%87%BA%29.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-36debf6dfdcec6a0 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0165-C-165-炒股带宽溢出全领域衰减(验证D63跨域溢出).md`
+  - 来源：`统一案例总表/0165-C-165-炒股带宽溢出全领域衰减(验证D63跨域溢出).md`
+  - 依赖：D63；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0166-C-166-小资金恐惧锁定向下螺旋(验证D67).md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0166-C-166-%E5%B0%8F%E8%B5%84%E9%87%91%E6%81%90%E6%83%A7%E9%94%81%E5%AE%9A%E5%90%91%E4%B8%8B%E8%9E%BA%E6%97%8B%28%E9%AA%8C%E8%AF%81D67%29.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-53476587b9c02798 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0166-C-166-小资金恐惧锁定向下螺旋(验证D67).md`
+  - 来源：`统一案例总表/0166-C-166-小资金恐惧锁定向下螺旋(验证D67).md`
+  - 依赖：D67；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0167-C-167-定投=门锁交替律执行(验证D47+D49).md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0167-C-167-%E5%AE%9A%E6%8A%95%3D%E9%97%A8%E9%94%81%E4%BA%A4%E6%9B%BF%E5%BE%8B%E6%89%A7%E8%A1%8C%28%E9%AA%8C%E8%AF%81D47%2BD49%29.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-aefa16d50abea35c / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0167-C-167-定投=门锁交替律执行(验证D47+D49).md`
+  - 来源：`统一案例总表/0167-C-167-定投=门锁交替律执行(验证D47+D49).md`
+  - 依赖：D47, D49；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0168-C-168-H_total放大触发F_collapse(验证D65).md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0168-C-168-H_total%E6%94%BE%E5%A4%A7%E8%A7%A6%E5%8F%91F_collapse%28%E9%AA%8C%E8%AF%81D65%29.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-123767657c1f5881 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0168-C-168-H_total放大触发F_collapse(验证D65).md`
+  - 来源：`统一案例总表/0168-C-168-H_total放大触发F_collapse(验证D65).md`
+  - 依赖：D65；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0169-C-169-财商乘数四因子结构(验证D65财富域).md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0169-C-169-%E8%B4%A2%E5%95%86%E4%B9%98%E6%95%B0%E5%9B%9B%E5%9B%A0%E5%AD%90%E7%BB%93%E6%9E%84%28%E9%AA%8C%E8%AF%81D65%E8%B4%A2%E5%AF%8C%E5%9F%9F%29.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-84b48adb3a27ba10 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0169-C-169-财商乘数四因子结构(验证D65财富域).md`
+  - 来源：`统一案例总表/0169-C-169-财商乘数四因子结构(验证D65财富域).md`
+  - 依赖：D65；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0170-C-170-七层主权最低门槛(验证A7财富维度).md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0170-C-170-%E4%B8%83%E5%B1%82%E4%B8%BB%E6%9D%83%E6%9C%80%E4%BD%8E%E9%97%A8%E6%A7%9B%28%E9%AA%8C%E8%AF%81A7%E8%B4%A2%E5%AF%8C%E7%BB%B4%E5%BA%A6%29.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-d94d0666aa876fd8 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0170-C-170-七层主权最低门槛(验证A7财富维度).md`
+  - 来源：`统一案例总表/0170-C-170-七层主权最低门槛(验证A7财富维度).md`
+  - 依赖：A7；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0171-C-171-AI直觉缺失的物种判据.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0171-C-171-AI%E7%9B%B4%E8%A7%89%E7%BC%BA%E5%A4%B1%E7%9A%84%E7%89%A9%E7%A7%8D%E5%88%A4%E6%8D%AE.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-28502b90dca4ca21 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0171-C-171-AI直觉缺失的物种判据.md`
+  - 来源：`统一案例总表/0171-C-171-AI直觉缺失的物种判据.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0172-C-172-自举激活的乘法条件.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0172-C-172-%E8%87%AA%E4%B8%BE%E6%BF%80%E6%B4%BB%E7%9A%84%E4%B9%98%E6%B3%95%E6%9D%A1%E4%BB%B6.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-1dc722976318d229 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0172-C-172-自举激活的乘法条件.md`
+  - 来源：`统一案例总表/0172-C-172-自举激活的乘法条件.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0173-C-173-忆秦娥主角困境(显态粘性锁定).md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0173-C-173-%E5%BF%86%E7%A7%A6%E5%A8%A5%E4%B8%BB%E8%A7%92%E5%9B%B0%E5%A2%83%28%E6%98%BE%E6%80%81%E7%B2%98%E6%80%A7%E9%94%81%E5%AE%9A%29.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-9c3aaa4479fdc917 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0173-C-173-忆秦娥主角困境(显态粘性锁定).md`
+  - 来源：`统一案例总表/0173-C-173-忆秦娥主角困境(显态粘性锁定).md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0174-C-174-忆秦娥纯拉力上位(外驱转自驱窗口).md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0174-C-174-%E5%BF%86%E7%A7%A6%E5%A8%A5%E7%BA%AF%E6%8B%89%E5%8A%9B%E4%B8%8A%E4%BD%8D%28%E5%A4%96%E9%A9%B1%E8%BD%AC%E8%87%AA%E9%A9%B1%E7%AA%97%E5%8F%A3%29.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-83e4b1481a2f4a1b / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0174-C-174-忆秦娥纯拉力上位(外驱转自驱窗口).md`
+  - 来源：`统一案例总表/0174-C-174-忆秦娥纯拉力上位(外驱转自驱窗口).md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0176-C-176-AI共震中P×Q2平方加速——共享源的双重杀伤.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0176-C-176-AI%E5%85%B1%E9%9C%87%E4%B8%ADP%C3%97Q2%E5%B9%B3%E6%96%B9%E5%8A%A0%E9%80%9F%E2%80%94%E2%80%94%E5%85%B1%E4%BA%AB%E6%BA%90%E7%9A%84%E5%8F%8C%E9%87%8D%E6%9D%80%E4%BC%A4.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-d07d7e782bb9fc9b / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0176-C-176-AI共震中P×Q2平方加速——共享源的双重杀伤.md`
+  - 来源：`统一案例总表/0176-C-176-AI共震中P×Q2平方加速——共享源的双重杀伤.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0177-C-177-乘法结构共享变量k次衰减——平方衰减律.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0177-C-177-%E4%B9%98%E6%B3%95%E7%BB%93%E6%9E%84%E5%85%B1%E4%BA%AB%E5%8F%98%E9%87%8Fk%E6%AC%A1%E8%A1%B0%E5%87%8F%E2%80%94%E2%80%94%E5%B9%B3%E6%96%B9%E8%A1%B0%E5%87%8F%E5%BE%8B.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-be4e5cbfd3a48344 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0177-C-177-乘法结构共享变量k次衰减——平方衰减律.md`
+  - 来源：`统一案例总表/0177-C-177-乘法结构共享变量k次衰减——平方衰减律.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0178-C-178-可靠性工程β因子模型在高β条件下的失效.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0178-C-178-%E5%8F%AF%E9%9D%A0%E6%80%A7%E5%B7%A5%E7%A8%8B%CE%B2%E5%9B%A0%E5%AD%90%E6%A8%A1%E5%9E%8B%E5%9C%A8%E9%AB%98%CE%B2%E6%9D%A1%E4%BB%B6%E4%B8%8B%E7%9A%84%E5%A4%B1%E6%95%88.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-aed9f4a6e263b127 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0178-C-178-可靠性工程β因子模型在高β条件下的失效.md`
+  - 来源：`统一案例总表/0178-C-178-可靠性工程β因子模型在高β条件下的失效.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0179-C-179-偏好伪造中沉默的双路径——渐进vs结构.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0179-C-179-%E5%81%8F%E5%A5%BD%E4%BC%AA%E9%80%A0%E4%B8%AD%E6%B2%89%E9%BB%98%E7%9A%84%E5%8F%8C%E8%B7%AF%E5%BE%84%E2%80%94%E2%80%94%E6%B8%90%E8%BF%9Bvs%E7%BB%93%E6%9E%84.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-9e07c29a45025b2a / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0179-C-179-偏好伪造中沉默的双路径——渐进vs结构.md`
+  - 来源：`统一案例总表/0179-C-179-偏好伪造中沉默的双路径——渐进vs结构.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0182-C-182-定投×贷款×学习.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0182-C-182-%E5%AE%9A%E6%8A%95%C3%97%E8%B4%B7%E6%AC%BE%C3%97%E5%AD%A6%E4%B9%A0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-420955715767265f / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0182-C-182-定投×贷款×学习.md`
+  - 来源：`统一案例总表/0182-C-182-定投×贷款×学习.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0183-C-183-三种个人商业模式×三种公司商业模式.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0183-C-183-%E4%B8%89%E7%A7%8D%E4%B8%AA%E4%BA%BA%E5%95%86%E4%B8%9A%E6%A8%A1%E5%BC%8F%C3%97%E4%B8%89%E7%A7%8D%E5%85%AC%E5%8F%B8%E5%95%86%E4%B8%9A%E6%A8%A1%E5%BC%8F.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-a4bcf387b424fcc5 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0183-C-183-三种个人商业模式×三种公司商业模式.md`
+  - 来源：`统一案例总表/0183-C-183-三种个人商业模式×三种公司商业模式.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0186-C-186-AI-ε安装三条路径.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0186-C-186-AI-%CE%B5%E5%AE%89%E8%A3%85%E4%B8%89%E6%9D%A1%E8%B7%AF%E5%BE%84.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-12ddb9b9a0d62537 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0186-C-186-AI-ε安装三条路径.md`
+  - 来源：`统一案例总表/0186-C-186-AI-ε安装三条路径.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0187-C-187-ε相变级联.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0187-C-187-%CE%B5%E7%9B%B8%E5%8F%98%E7%BA%A7%E8%81%94.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-1034d48072bc5eab / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0187-C-187-ε相变级联.md`
+  - 来源：`统一案例总表/0187-C-187-ε相变级联.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0192-C-192-忆秦娥身份锁定.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0192-C-192-%E5%BF%86%E7%A7%A6%E5%A8%A5%E8%BA%AB%E4%BB%BD%E9%94%81%E5%AE%9A.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-7a8968c40f9cd1d9 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0192-C-192-忆秦娥身份锁定.md`
+  - 来源：`统一案例总表/0192-C-192-忆秦娥身份锁定.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0193-C-193-碗.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0193-C-193-%E7%A2%97.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-fe06816c1c934539 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0193-C-193-碗.md`
+  - 来源：`统一案例总表/0193-C-193-碗.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0194-C-194-拆油锯.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0194-C-194-%E6%8B%86%E6%B2%B9%E9%94%AF.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-6af87b337e0a02e8 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0194-C-194-拆油锯.md`
+  - 来源：`统一案例总表/0194-C-194-拆油锯.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0197-C-197-印刷术.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0197-C-197-%E5%8D%B0%E5%88%B7%E6%9C%AF.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-12b38087506b24ec / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0197-C-197-印刷术.md`
+  - 来源：`统一案例总表/0197-C-197-印刷术.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0200-C-200-仙人球模型.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0200-C-200-%E4%BB%99%E4%BA%BA%E7%90%83%E6%A8%A1%E5%9E%8B.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-1d5bd1bb9512cf98 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0200-C-200-仙人球模型.md`
+  - 来源：`统一案例总表/0200-C-200-仙人球模型.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0201-C-201-AI提问协议四模块——刺.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0201-C-201-AI%E6%8F%90%E9%97%AE%E5%8D%8F%E8%AE%AE%E5%9B%9B%E6%A8%A1%E5%9D%97%E2%80%94%E2%80%94%E5%88%BA.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-4aebff5c90eade8b / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0201-C-201-AI提问协议四模块——刺.md`
+  - 来源：`统一案例总表/0201-C-201-AI提问协议四模块——刺.md`
+  - 依赖：—；被引用：—
 - [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0202-C-202-反对AI者.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0202-C-202-%E5%8F%8D%E5%AF%B9AI%E8%80%85.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-457a1c525e5795b0 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0202-C-202-反对AI者.md`
@@ -1894,613 +2504,3 @@
   - 可搜索名称：NFC-accf5c55a962c74f / 后续需要的证据或验证；
   - 来源：`docs/classic_problems_benchmark.md`
   - 依赖：—；被引用：—
-- [否。E1 限定低耦合可预测域并设非线性退出；E2 须配预防/沙盒/上限；E3 区分良/恶性循环；E4 防强制同质化与过早收敛。四者按情境互补，无任一被设为绝对优先。PASS。](../../../docs/governance/meta-protocol-reviews/cross-protocol-red-team.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-f2adf28ddd577708 / 否。E1 限定低耦合可预测域并设非线性退出；E2 须配预防/沙盒/上限；E3 区分良/恶性循环；E4 防强制同质化与过早收敛。四者按情境互补，无任一被设为绝对优先。PASS。
-  - 来源：`docs/governance/meta-protocol-reviews/cross-protocol-red-team.md`
-  - 依赖：—；被引用：—
-- [吴军财富规划笔记碰撞验证](../../../data/foundation/evidence/evidence.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-b319f0e40323d51e / 吴军财富规划笔记碰撞验证
-  - 来源：`data/foundation/evidence/evidence.jsonl`
-  - 依赖：—；被引用：—
-- [命中的 `related_*` 字段 → 顺着关联键拉出 failure_typology、evidence_regimes、publication_risk_rules。](../../../docs/p1-data-index-map-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-4c49757004b72bd6 / 命中的 `related_*` 字段 → 顺着关联键拉出 failure_typology、evidence_regimes、publication_risk_rules。
-  - 来源：`docs/p1-data-index-map-20260708.md`
-  - 依赖：—；被引用：—
-- [命题已经连接外部数据、实验、观测或独立来源，并经受了可重复检验。](../../../docs/claim_levels.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-8270b4f7ce2450e6 / 命题已经连接外部数据、实验、观测或独立来源，并经受了可重复检验。
-  - 来源：`docs/claim_levels.md`
-  - 依赖：—；被引用：—
-- [响应哈希、adjudication、Evidence Program 投影和生命周期证据位于 task-110 机器记录。](../../ASSET-CARDS.md#asset-nfc-b84ff0d36d4df547)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-b84ff0d36d4df547 / 响应哈希、adjudication、Evidence Program 投影和生命周期证据位于 task-110 机器记录。 / 响应哈希、adjudication、Evidence Program 投影和生命周期证据位于 task-110 机器记录。
-  - 来源：`RESULTS/LATEST.md`
-  - 依赖：—；被引用：—
-- [哥德尔不完备性相关外推](../../../data/foundation/claims/claims.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：CLAIM-PEND-003 / 哥德尔不完备性相关外推
-  - 来源：`data/foundation/claims/claims.jsonl`
-  - 依赖：—；被引用：—
-- [哪些只能作为审美、情绪或传播数据：](../../../templates/publication/zhiyuan-writing-spec.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-5443916a1f8cd078 / 哪些只能作为审美、情绪或传播数据：
-  - 来源：`templates/publication/zhiyuan-writing-spec.md`
-  - 依赖：—；被引用：—
-- [哪些案例应等待更多证据。](../../../docs/roadmap_v0.2.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-559c8cf77102f3db / 哪些案例应等待更多证据。
-  - 来源：`docs/roadmap_v0.2.md`
-  - 依赖：—；被引用：—
-- [哪些证据会迫使潜题改变，而不是让材料服从预设结论：](../../../templates/publication/zhiyuan-writing-spec.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-3a75bf406c5ae4dd / 哪些证据会迫使潜题改变，而不是让材料服从预设结论：
-  - 来源：`templates/publication/zhiyuan-writing-spec.md`
-  - 依赖：—；被引用：—
-- [四个方向联合碰撞验证了点火框架作为通用自举框架的跨域适用性。](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0657-C-662-%E5%9B%9B%E6%96%B9%E5%90%91%E8%81%94%E5%90%88%E7%A2%B0%E6%92%9E%E9%AA%8C%E8%AF%81.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-309f4aeb53b26a53 / 四个方向联合碰撞验证了点火框架作为通用自举框架的跨域适用性。
-  - 来源：`统一案例总表/0657-C-662-四方向联合碰撞验证.md`
-  - 依赖：—；被引用：—
-- [四卡点统一根源](../../../data/foundation/evidence/evidence.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-6b7b91bf9c51939e / 四卡点统一根源
-  - 来源：`data/foundation/evidence/evidence.jsonl`
-  - 依赖：—；被引用：—
-- [四方向联合碰撞验证](../../../data/foundation/evidence/evidence.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-5b166e1f0577f7c8 / 四方向联合碰撞验证
-  - 来源：`data/foundation/evidence/evidence.jsonl`
-  - 依赖：—；被引用：—
-- [四种基本力统一](../../../data/foundation/claims/claims.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：CLAIM-PEND-004 / 四种基本力统一
-  - 来源：`data/foundation/claims/claims.jsonl`
-  - 依赖：—；被引用：—
-- [四种基本力统一；](../../../docs/storytelling_case_backlog.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-3e3138acb7f398b1 / 四种基本力统一；
-  - 来源：`docs/storytelling_case_backlog.md`
-  - 依赖：—；被引用：—
-- [四阶段严格串行验证 — 不能跳过Stage2直接到Stage3-rcross=0时D84三条路径失效](../../../data/foundation/evidence/evidence.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-3de78d821ecd388e / 四阶段严格串行验证 — 不能跳过Stage2直接到Stage3-rcross=0时D84三条路径失效
-  - 来源：`data/foundation/evidence/evidence.jsonl`
-  - 依赖：D84；被引用：—
-- [回滚条件：说明哪些事实、伤害、失败或治理异议会触发撤回；](../../../docs/governance/life-community-value-charter.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-2a31a1e49015849d / 回滚条件：说明哪些事实、伤害、失败或治理异议会触发撤回；
-  - 来源：`docs/governance/life-community-value-charter.md`
-  - 依赖：—；被引用：—
-- [回滚：只回退 registry 记录和其确定性投影；不得借快照回滚去改写候选载荷或历史。](../../../docs/operations/stage-snapshot-publication.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-78aca6fed07add63 / 回滚：只回退 registry 记录和其确定性投影；不得借快照回滚去改写候选载荷或历史。
-  - 来源：`docs/operations/stage-snapshot-publication.md`
-  - 依赖：—；被引用：—
-- [因此之元写作法可作为 epistemic sensor / gap-discovery interface，但不是证据 oracle。](../../../docs/publication/zhiyuan-writing-method.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-1d40afb523bb82b5 / 因此之元写作法可作为 epistemic sensor / gap-discovery interface，但不是证据 oracle。
-  - 来源：`docs/publication/zhiyuan-writing-method.md`
-  - 依赖：—；被引用：—
-- [在李清淼的学校，教师大会每天都在「比柱子」——各班的统考成绩平均分被列成柱状图，逐一分析，落后的老师要被科组长问责。「双减」政策后，老师们要比拼的东西更多了——公众号要做得漂亮，赛课需要得奖状，还要顺应AI潮流搞各种「教学特色智能体」。](../../../inputs/collisions/20260708-teacher-competition/source.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-482a3441129448c5 / 在李清淼的学校，教师大会每天都在「比柱子」——各班的统考成绩平均分被列成柱状图，逐一分析，落后的老师要被科组长问责。「双减」政策后，老师们要比拼的东西更多了——公众号要做得漂亮，赛课需要得奖状，还要顺应AI潮流搞各种「教学特色智能体」。
-  - 来源：`inputs/collisions/20260708-teacher-competition/source.md`
-  - 依赖：—；被引用：—
-- [在框架中新增轻量级 InterventionControlRef 对象(只含reference和metadata)，详细证据放在外部证据层](../../../data/external-research/105-intervention-control/105-interface-options-analysis.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-abcc91ad9e7601d6 / 在框架中新增轻量级 InterventionControlRef 对象(只含reference和metadata)，详细证据放在外部证据层
-  - 来源：`data/external-research/105-intervention-control/105-interface-options-analysis.json`
-  - 依赖：—；被引用：—
-- [在线远端验证使用：](../../../docs/operations/stage-snapshot-publication.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-47fd7ec820cc2212 / 在线远端验证使用：
-  - 来源：`docs/operations/stage-snapshot-publication.md`
-  - 依赖：—；被引用：—
-- [基于 UNESCO 250 个四位学科投影到点火 085 冻结架构的压力测试，识别出 14 个架构级缺口。本 overlay 提出可补齐的接口扩展方案。](../../../data/discipline-projection/087-v1-1-overlay.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-aa6feb489da1b808 / 基于 UNESCO 250 个四位学科投影到点火 085 冻结架构的压力测试，识别出 14 个架构级缺口。本 overlay 提出可补齐的接口扩展方案。
-  - 来源：`data/discipline-projection/087-v1-1-overlay.md`
-  - 依赖：—；被引用：—
-- [基于任务 D 的三门学科理论核试跑，我将扩展为 12 个领域的证据制度卡片。](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-6eedd9917b225600 / 基于任务 D 的三门学科理论核试跑，我将扩展为 12 个领域的证据制度卡片。
-  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [声称公平交易/合理使用适用于未经验证的情况](../../../docs/governance/external-input-non-republication-principle.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-73869a0d1537936d / 声称公平交易/合理使用适用于未经验证的情况
-  - 来源：`docs/governance/external-input-non-republication-principle.md`
-  - 依赖：—；被引用：—
-- [处置上，3,765 项 `QUARANTINE_UNTIL_DEFINED`，77 项 `DOWNGRADE_TO_PENDING`，44 项 `DOWNGRADE_TO_CONJECTURE`。仅 1 项在该登记口径中标作 `KEEP_A](../../../RESULTS/ADJUDICATION-SUMMARY.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-f1c45cfca5869cf4 / 处置上，3,765 项 `QUARANTINE_UNTIL_DEFINED`，77 项 `DOWNGRADE_TO_PENDING`，44 项 `DOWNGRADE_TO_CONJECTURE`。仅 1 项在该登记口径中标作 `KEEP_A
-  - 来源：`RESULTS/ADJUDICATION-SUMMARY.md`
-  - 依赖：—；被引用：—
-- [处置：** 088 将 087 定性降级为'外部来源未接入学科学投影初稿'，并在阶段2-4建立真实外部来源层。](../../../reports/foundation-architecture/088-087-count-and-denominator-audit.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-b792119b46ebb3b2 / 处置：** 088 将 087 定性降级为'外部来源未接入学科学投影初稿'，并在阶段2-4建立真实外部来源层。
-  - 来源：`reports/foundation-architecture/088-087-count-and-denominator-audit.md`
-  - 依赖：—；被引用：—
-- [处置：** 确认 `evidence_tier_104 = METADATA_VERIFIED` 不变；RUN-1 发现的 5 条 `crossref_year` 缺口](../../../RESULTS/LATEST.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-4b5388413f74775a / 处置：** 确认 `evidence_tier_104 = METADATA_VERIFIED` 不变；RUN-1 发现的 5 条 `crossref_year` 缺口
-  - 来源：`RESULTS/LATEST.md`
-  - 依赖：—；被引用：—
-- [处置：** 确认 `evidence_tier_104 = METADATA_VERIFIED` 不变；RUN-1 发现的 5 条 `crossref_year` 缺口已回填/修正并复跑验证（year_match=117/117），重复 D](../../../docs/project-current-state.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-867f3dee8b8cd78b / 处置：** 确认 `evidence_tier_104 = METADATA_VERIFIED` 不变；RUN-1 发现的 5 条 `crossref_year` 缺口已回填/修正并复跑验证（year_match=117/117），重复 D
-  - 来源：`docs/project-current-state.md`
-  - 依赖：—；被引用：—
-- [复核 P1-0 规划的数据集是否能够从现有 Markdown 文档稳定抽取，并确定后续 P1-2 至 P1-6 的执行策略。](../../../outputs/audit/p1-extraction-feasibility-audit-20260707.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-81db92e691072f79 / 复核 P1-0 规划的数据集是否能够从现有 Markdown 文档稳定抽取，并确定后续 P1-2 至 P1-6 的执行策略。
-  - 来源：`outputs/audit/p1-extraction-feasibility-audit-20260707.md`
-  - 依赖：P1；被引用：—
-- [复核任务 A-I 的状态是否全部统一为已完成；](../../../docs/v0.2_next_tasks.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-1d69da9bc369b7e4 / 复核任务 A-I 的状态是否全部统一为已完成；
-  - 来源：`docs/v0.2_next_tasks.md`
-  - 依赖：—；被引用：—
-- [复核所有数据文件、schema 和校验器。](../../../docs/machine_readable_data_plan.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-f993928b866a3507 / 复核所有数据文件、schema 和校验器。
-  - 来源：`docs/machine_readable_data_plan.md`
-  - 依赖：—；被引用：—
-- [外部来源（论文、数据集、实验记录）](../../../reports/foundation-architecture/085-backlog-prioritization.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-d667c7419856303e / 外部来源（论文、数据集、实验记录）
-  - 来源：`reports/foundation-architecture/085-backlog-prioritization.md`
-  - 依赖：—；被引用：—
-- [外部证据 E0—E7](../../../docs/foundation/claim-governance-and-function-identity.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-470c3ef0eece526f / 外部证据 E0—E7
-  - 来源：`docs/foundation/claim-governance-and-function-identity.md`
-  - 依赖：—；被引用：—
-- [外部证据状态阶梯](../../../reports/external-research/104-dual-088-reconciliation.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-8758567649b38a70 / 外部证据状态阶梯
-  - 来源：`reports/external-research/104-dual-088-reconciliation.md`
-  - 依赖：—；被引用：—
-- [外部证据状态阶梯（Evidence Tier Schema）](../../../data/external-research/104-evidence-tier-schema.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-3e97654fc222c41c / 外部证据状态阶梯（Evidence Tier Schema）
-  - 来源：`data/external-research/104-evidence-tier-schema.md`
-  - 依赖：—；被引用：—
-- [外部验证报告整体：**成立**——D600/D601/D602 与 C-0810/C-0811 成立；M7/M8/M9 确因「≤5 配额」被挂起（非验证失败），本审计无配额规则下纠正为 M7/M9 升 NEW_FUNCTION、M8 pen](../../../outputs/collisions/20260711-disobedience-subjectivity/independent-second-angle-audit-056.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-8c2eab603d8df8f8 / 外部验证报告整体：**成立**——D600/D601/D602 与 C-0810/C-0811 成立；M7/M8/M9 确因「≤5 配额」被挂起（非验证失败），本审计无配额规则下纠正为 M7/M9 升 NEW_FUNCTION、M8 pen
-  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/independent-second-angle-audit-056.md`
-  - 依赖：D600, D601, D602；被引用：—
-- [外部验证报告读取规范](../../../docs/material-collision-validation-and-classification.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-49cb2d9f20732ce9 / 外部验证报告读取规范
-  - 来源：`docs/material-collision-validation-and-classification.md`
-  - 依赖：—；被引用：—
-- [多个独立研究验证](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-ff52b89aa7f63264 / 多个独立研究验证
-  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [多个独立研究验证（不同研究者得出相似结论）](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-b8a39e4712bd0ad2 / 多个独立研究验证（不同研究者得出相似结论）
-  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [多位一线教师证实，赛课和日常教学几乎是完全脱节的两套体系，对真实课堂的指导意义十分有限：](../../../inputs/collisions/20260708-teacher-competition/source.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-375babbe8053abbd / 多位一线教师证实，赛课和日常教学几乎是完全脱节的两套体系，对真实课堂的指导意义十分有限：
-  - 来源：`inputs/collisions/20260708-teacher-competition/source.md`
-  - 依赖：—；被引用：—
-- [多样性保留的最低阈值待治理与实证](../../../docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-064fbc19c1cb2b54 / 多样性保留的最低阈值待治理与实证
-  - 来源：`docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md`
-  - 依赖：—；被引用：—
-- [大数据的泛化相变——μ_data越过Λ_generalization的瞬间泛化能力质变](../../../data/foundation/evidence/evidence.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-f80f169bd7f4b95f / 大数据的泛化相变——μ_data越过Λ_generalization的瞬间泛化能力质变
-  - 来源：`data/foundation/evidence/evidence.jsonl`
-  - 依赖：—；被引用：—
-- [大模型涌现是否真实](../../../data/foundation/claims/claims.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-PEND-023 / 大模型涌现是否真实
-  - 来源：`data/foundation/claims/claims.jsonl`
-  - 依赖：—；被引用：—
-- [失败案例库需要记录失败类型和原因。证据制度库提供了"常见误判"字段，帮助识别点火框架在不同领域最容易犯的错误。当发现失败案例时，可以根据证据制度库判定失败类型，并反向修正点火框架的输出。](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-b23a7c5c87fec397 / 失败案例库需要记录失败类型和原因。证据制度库提供了"常见误判"字段，帮助识别点火框架在不同领域最容易犯的错误。当发现失败案例时，可以根据证据制度库判定失败类型，并反向修正点火框架的输出。
-  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [失败案例需要标注失败类型。证据制度库可以帮助判断失败是材料错误、证据不足、学科标准误配，还是把 L2 推论误写成 L5 结论。](../../../docs/evidence_regime_library.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-df037ea38d17f70b / 失败案例需要标注失败类型。证据制度库可以帮助判断失败是材料错误、证据不足、学科标准误配，还是把 L2 推论误写成 L5 结论。
-  - 来源：`docs/evidence_regime_library.md`
-  - 依赖：—；被引用：—
-- [套统一模板** — 转换为 `unified-function-entry-template.md` / `unified-case-entry-template.md` 结构（含 frontmatter：kind/seq/id/title](../../../docs/two-tables-entry-writing-standard-20260709.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-5bb7662ce4519778 / 套统一模板** — 转换为 `unified-function-entry-template.md` / `unified-case-entry-template.md` 结构（含 frontmatter：kind/seq/id/title
-  - 来源：`docs/two-tables-entry-writing-standard-20260709.md`
-  - 依赖：—；被引用：—
-- [如何在不把候选表示误作事实的前提下，为跨尺度、跨领域映射补齐对象、映射、结构保持条件与反例？](../../../README.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-ccc9164d4f64474c / 如何在不把候选表示误作事实的前提下，为跨尺度、跨领域映射补齐对象、映射、结构保持条件与反例？
-  - 来源：`README.md`
-  - 依赖：—；被引用：—
-- [如果 benchmark 结果是“结构增益 + `pending`”，可作为结构性推论样本，但不能写成“已解决”。](../../../docs/classic_problems_benchmark.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-046bfa5c4bd8b009 / 如果 benchmark 结果是“结构增益 + `pending`”，可作为结构性推论样本，但不能写成“已解决”。
-  - 来源：`docs/classic_problems_benchmark.md`
-  - 依赖：—；被引用：—
-- [如果数据不支持，记录“哪里失败”。](../../../docs/data_integration.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-4cf72eb0b7db1b79 / 如果数据不支持，记录“哪里失败”。
-  - 来源：`docs/data_integration.md`
-  - 依赖：—；被引用：—
-- [如果数据支持，记录“为什么支持”。](../../../docs/data_integration.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-947286106d7f206a / 如果数据支持，记录“为什么支持”。
-  - 来源：`docs/data_integration.md`
-  - 依赖：—；被引用：—
-- [如果是强主张，请同时标注断言等级，并说明它属于结构性推论、候选解释，还是已经过外部验证的命题。参阅 \[断言等级说明\](../../../docs/claim_levels.md)。](../../../CONTRIBUTING.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：NFC-f53b2e7022227437 / 如果是强主张，请同时标注断言等级，并说明它属于结构性推论、候选解释，还是已经过外部验证的命题。参阅 \[断言等级说明\](../../../docs/claim_levels.md)。
-  - 来源：`CONTRIBUTING.md`
-  - 依赖：—；被引用：—
-- [如果材料不能明确说明证据来源、证据制度、断言等级，则默认 pending。](../../../docs/publication_risk_checklist.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-ba4eb49e2d5b539d / 如果材料不能明确说明证据来源、证据制度、断言等级，则默认 pending。
-  - 来源：`docs/publication_risk_checklist.md`
-  - 依赖：—；被引用：—
-- [如果证据不足，请明确标记为 `pending`，不要强行写成通过。](../../../CONTRIBUTING.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-ca84ea1ec9981c33 / 如果证据不足，请明确标记为 `pending`，不要强行写成通过。
-  - 来源：`CONTRIBUTING.md`
-  - 依赖：—；被引用：—
-- [如果证据还不够，结论就保留 `pending`。](../../../docs/data_integration.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-5af3b901ea28c4d6 / 如果证据还不够，结论就保留 `pending`。
-  - 来源：`docs/data_integration.md`
-  - 依赖：—；被引用：—
-- [媒介证据不足](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-0836193e97d8a1a7 / 媒介证据不足
-  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [媒介证据（媒介上有证据）](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-06e22fdc6d6a2d73 / 媒介证据（媒介上有证据）
-  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [学校教育新剧变笔记碰撞验证](../../../data/foundation/evidence/evidence.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-2a478d371a6227ed / 学校教育新剧变笔记碰撞验证
-  - 来源：`data/foundation/evidence/evidence.jsonl`
-  - 依赖：—；被引用：—
-- [学科证据分层](../../../data/external-research/088-PROGRESS.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-41f2bba9f3f3112e / 学科证据分层
-  - 来源：`data/external-research/088-PROGRESS.md`
-  - 依赖：—；被引用：—
-- [学科证据制度误配](../../../docs/failure_typology.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-ad9ee99e0c68ccff / 学科证据制度误配
-  - 来源：`docs/failure_typology.md`
-  - 依赖：—；被引用：—
-- [学科证据制度误配](../../../data/failure_typology.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-bad1983f794fe9ef / 学科证据制度误配
-  - 来源：`data/failure_typology.csv`
-  - 依赖：—；被引用：—
-- [学科证据制度误配指把一个学科的证据标准硬套到另一个学科上。](../../../outputs/getbrain/failure-typology-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-4556934ed9c4df49 / 学科证据制度误配指把一个学科的证据标准硬套到另一个学科上。
-  - 来源：`outputs/getbrain/failure-typology-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [学科证据制度误配（用结构性推论替代代码、实验、benchmark）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-a289c454119a1f16 / 学科证据制度误配（用结构性推论替代代码、实验、benchmark）
-  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [学科证据制度误配（用结构性推论替代实验、量表、纵向研究）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-e7a7fa825c1d3a77 / 学科证据制度误配（用结构性推论替代实验、量表、纵向研究）
-  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [学科证据制度误配（用结构性推论替代形式分析、媒介分析、观看情境分析、历史语境分析、解释共同体讨论）](../../../outputs/getbrain/classic-problems-benchmark-supplement-20260707.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-d0677a28605419c1 / 学科证据制度误配（用结构性推论替代形式分析、媒介分析、观看情境分析、历史语境分析、解释共同体讨论）
-  - 来源：`outputs/getbrain/classic-problems-benchmark-supplement-20260707.md`
-  - 依赖：—；被引用：—
-- [学科证据制度误配（用结构性推论替代形式分析、媒介分析、观看情境分析）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-16100ab4acc7023c / 学科证据制度误配（用结构性推论替代形式分析、媒介分析、观看情境分析）
-  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [学科证据制度误配（用结构性推论替代教育实验、长期追踪）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-3eb3e27455ac1b14 / 学科证据制度误配（用结构性推论替代教育实验、长期追踪）
-  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [学科证据制度误配（用结构性推论替代文本细读、文学共同体讨论）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-852de08edd464ef8 / 学科证据制度误配（用结构性推论替代文本细读、文学共同体讨论）
-  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [学科证据制度误配（用结构性推论替代计量检验）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-56bdd1353bd5f750 / 学科证据制度误配（用结构性推论替代计量检验）
-  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [学科证据制度误配（用结构性推论替代调查、统计、田野、实验）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-31ba7a6ed1fb4eea / 学科证据制度误配（用结构性推论替代调查、统计、田野、实验）
-  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [它们完成了大量琐碎、重复、细密而必要的工作：](../../../ACKNOWLEDGEMENTS.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-10d5adaa1e1afb60 / 它们完成了大量琐碎、重复、细密而必要的工作：
-  - 来源：`ACKNOWLEDGEMENTS.md`
-  - 依赖：—；被引用：—
-- [它只规定“哪些内容应被抽取成结构化数据、每个数据集有哪些字段、字段从哪里来、如何校验”，不直接生成 CSV / JSON。](../../../docs/machine_readable_data_plan.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-96313e31a777d4e3 / 它只规定“哪些内容应被抽取成结构化数据、每个数据集有哪些字段、字段从哪里来、如何校验”，不直接生成 CSV / JSON。
-  - 来源：`docs/machine_readable_data_plan.md`
-  - 依赖：—；被引用：—
-- [它如何调用证据制度库？](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-bf58ceed05dd557e / 它如何调用证据制度库？
-  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [它提供的事实、经验、语言或张力：](../../../templates/publication/zhiyuan-writing-spec.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-a9f85ae2625a79d3 / 它提供的事实、经验、语言或张力：
-  - 来源：`templates/publication/zhiyuan-writing-spec.md`
-  - 依赖：—；被引用：—
-- [安全验证（安全性评估、风险评估）](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-4cabc3c9c2ce4947 / 安全验证（安全性评估、风险评估）
-  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [安然公司财务造假时，员工事实上无法安全退出，真实退出权缺失，契约关系已经失效。](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0732-C-0737-%E5%AE%89%E7%84%B6%E5%85%AC%E5%8F%B8.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-5a46424884dd6004 / 安然公司财务造假时，员工事实上无法安全退出，真实退出权缺失，契约关系已经失效。
-  - 来源：`统一案例总表/0732-C-0737-安然公司.md`
-  - 依赖：—；被引用：—
-- [宋莹芳美育笔记碰撞验证](../../../data/foundation/evidence/evidence.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-871166bbae653b31 / 宋莹芳美育笔记碰撞验证
-  - 来源：`data/foundation/evidence/evidence.jsonl`
-  - 依赖：—；被引用：—
-- [完成管线设计后，下一步执行 `inputs/collisions/20260708-smoke-test/` 的小规模烟雾测试，验证 P1 数据接入流程是否跑通，**不回填正式两张表**。](../../../docs/p1-machine-data-collision-workflow-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-0b5fa7def099068f / 完成管线设计后，下一步执行 `inputs/collisions/20260708-smoke-test/` 的小规模烟雾测试，验证 P1 数据接入流程是否跑通，**不回填正式两张表**。
-  - 来源：`docs/p1-machine-data-collision-workflow-20260708.md`
-  - 依赖：P1；被引用：—
-- [完成自举循环收敛**\\n - 达到收敛判据：连续两轮ΔB=0 或 连续两轮新扩展注释为0\\n - 产出最终验证报告\\n\\n2.](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0673-C-0678-%E5%AD%AA%E7%94%9F%E7%B4%A0%E6%95%B0%E9%97%AE%E9%A2%98%E8%BD%AC%E6%8D%A2.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-e175bb2c9f57edf8 / 完成自举循环收敛**\\n - 达到收敛判据：连续两轮ΔB=0 或 连续两轮新扩展注释为0\\n - 产出最终验证报告\\n\\n2.
-  - 来源：`统一案例总表/0673-C-0678-孪生素数问题转换.md`
-  - 依赖：—；被引用：—
-- [完整机器与人工产物：`evidence-program/` 与](../../../RESULTS/LATEST.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-db32299e8d4d50a7 / 完整机器与人工产物：`evidence-program/` 与
-  - 来源：`RESULTS/LATEST.md`
-  - 依赖：—；被引用：—
-- [定性上只是'学科学投影初稿'，未接入真实外部研究，由 088 阶段2-4补齐。](../../../reports/foundation-architecture/088-087-count-and-denominator-audit.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-062ee2ad7cb94d6f / 定性上只是'学科学投影初稿'，未接入真实外部研究，由 088 阶段2-4补齐。
-  - 来源：`reports/foundation-architecture/088-087-count-and-denominator-audit.md`
-  - 依赖：—；被引用：—
-- [定投=门锁交替律执行(验证D47+D49)](../../../data/foundation/evidence/evidence.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-b177dc0904c5dbf4 / 定投=门锁交替律执行(验证D47+D49)
-  - 来源：`data/foundation/evidence/evidence.jsonl`
-  - 依赖：D47, D49；被引用：—
-- [定投P_sustain全局最大值(验证D34)](../../../data/foundation/evidence/evidence.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-c68a8bd74d43138c / 定投P_sustain全局最大值(验证D34)
-  - 来源：`data/foundation/evidence/evidence.jsonl`
-  - 依赖：D34；被引用：—
-- [定投的结构保守性 — 每月5000,W=10万时f=5%,W=100万时f=0.5%,自动递减永远保守](../../../data/foundation/evidence/evidence.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-c70285d07381fd0c / 定投的结构保守性 — 每月5000,W=10万时f=5%,W=100万时f=0.5%,自动递减永远保守
-  - 来源：`data/foundation/evidence/evidence.jsonl`
-  - 依赖：—；被引用：—
-- [实际部署和验证](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-36160d9e3e30cdf6 / 实际部署和验证
-  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [实验观测验证](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-8f9a79c7925fb265 / 实验观测验证
-  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [实验设计朝容易出显著结果的方向倾斜，高风险但可能更关键的阴性对照被压缩；](../../../inputs/collisions/20260708-cross-domain-smoke-test/science.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-aae17a6e262381a8 / 实验设计朝容易出显著结果的方向倾斜，高风险但可能更关键的阴性对照被压缩；
-  - 来源：`inputs/collisions/20260708-cross-domain-smoke-test/science.md`
-  - 依赖：—；被引用：—
-- [实验评估不足](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-deea50fcd408bcf2 / 实验评估不足
-  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [实验评估（实验数据、可复现评测）](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-81fc23713075b5a8 / 实验评估（实验数据、可复现评测）
-  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [审计：生命共同体价值宪章 README 入口](../../ASSET-CARDS.md#asset-hr-a7b229336e1604ab)
-  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-  - 可搜索名称：审计：生命共同体价值宪章 README 入口 / life-community-value-charter-readme-audit-20260711
-  - 来源：`outputs/audit/life-community-value-charter-readme-audit-20260711.md`
-  - 依赖：—；被引用：—
-- [密码学四个维度的映射全部通过了J⁺=1, J⁻=0的正反交叉验证，验证了点火框架在密码域的跨域适用性。](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0658-C-663-%E5%AF%86%E7%A0%81%E5%AD%A6%E7%A2%B0%E6%92%9E%E9%AA%8C%E8%AF%81%E6%A1%88%E4%BE%8B.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-bec07388499dba2b / 密码学四个维度的映射全部通过了J⁺=1, J⁻=0的正反交叉验证，验证了点火框架在密码域的跨域适用性。
-  - 来源：`统一案例总表/0658-C-663-密码学碰撞验证案例.md`
-  - 依赖：—；被引用：—
-- [密码学碰撞验证案例](../../../data/foundation/evidence/evidence.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-7de0ed3ccb885907 / 密码学碰撞验证案例
-  - 来源：`data/foundation/evidence/evidence.jsonl`
-  - 依赖：—；被引用：—
-- [对 22 本书验证候选（BC-20260709-001~022）逐条查重与入表门槛复核。](../../../CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-9c162372dca6a1e7 / 对 22 本书验证候选（BC-20260709-001~022）逐条查重与入表门槛复核。
-  - 来源：`CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [对 GAP-002 执行与 105/106 相同的全文证据深挖流程](../../../reports/external-research/106-next-task-handoff.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-60252b5a2f4f05e7 / 对 GAP-002 执行与 105/106 相同的全文证据深挖流程
-  - 来源：`reports/external-research/106-next-task-handoff.md`
-  - 依赖：—；被引用：—
-- [对 P4 中潜在可升级为 strict isomorphism 的候选进行专项形式化](../../../reports/foundation-architecture/084-architecture-truth-freeze-readiness.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-2443b1cd1138febc / 对 P4 中潜在可升级为 strict isomorphism 的候选进行专项形式化
-  - 来源：`reports/foundation-architecture/084-architecture-truth-freeze-readiness.md`
-  - 依赖：P4；被引用：—
-- [对比三门学科的证据制度；](../../../outputs/getbrain/README.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-a7b071816d83402f / 对比三门学科的证据制度；
-  - 来源：`outputs/getbrain/README.md`
-  - 依赖：—；被引用：—
-- [导数连续性×双向动力学验证](../../../data/foundation/evidence/evidence.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-79ce45a9b9287a93 / 导数连续性×双向动力学验证
-  - 来源：`data/foundation/evidence/evidence.jsonl`
-  - 依赖：—；被引用：—
-- [封闭/开放的成本收益跨域实证待补充](../../../docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-39e7fbb84c7dac5f / 封闭/开放的成本收益跨域实证待补充
-  - 来源：`docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md`
-  - 依赖：—；被引用：—
-- [将 NF-X1 写入 D597 扩展注释，并据三领域复现上收 D597 的跨域普遍性 pending；](../../../outputs/audit/cross-domain-candidate-function-review-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-6a0b3a4dedeb5d54 / 将 NF-X1 写入 D597 扩展注释，并据三领域复现上收 D597 的跨域普遍性 pending；
-  - 来源：`outputs/audit/cross-domain-candidate-function-review-20260708.md`
-  - 依赖：D597；被引用：—
-- [将 P1 机器可读化任务推进到 P1-4：生成 pending / risk / failure 数据。](../../../CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-8dda8867a7f66cff / 将 P1 机器可读化任务推进到 P1-4：生成 pending / risk / failure 数据。
-  - 来源：`CHANGELOG.md`
-  - 依赖：P1；被引用：—
-- [将 P1 机器可读化任务推进到 P1-5：生成 evidence / function dependency 数据。](../../../CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-2509875c9a54bf59 / 将 P1 机器可读化任务推进到 P1-5：生成 evidence / function dependency 数据。
-  - 来源：`CHANGELOG.md`
-  - 依赖：P1；被引用：—
-- [将 P1 机器可读化任务推进到 P1-6：建立数据校验器。](../../../CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-e51cf84a01ee4a45 / 将 P1 机器可读化任务推进到 P1-6：建立数据校验器。
-  - 来源：`CHANGELOG.md`
-  - 依赖：P1；被引用：—
-- [将 P1 机器可读化任务推进到 P1-7：P1 数据完整性审计。](../../../CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-7e99a35abb440a5b / 将 P1 机器可读化任务推进到 P1-7：P1 数据完整性审计。
-  - 来源：`CHANGELOG.md`
-  - 依赖：P1；被引用：—
-- [将学科证据制度绑定到断言等级和 pending 条件。](../../../data/function_dependency.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-3693d63798872053 / 将学科证据制度绑定到断言等级和 pending 条件。
-  - 来源：`data/function_dependency.csv`
-  - 依赖：—；被引用：—
-- [将经典问题 benchmark、失败类型学、证据制度库与公开表达连接起来；](../../../outputs/getbrain/README.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-1234c189928c4305 / 将经典问题 benchmark、失败类型学、证据制度库与公开表达连接起来；
-  - 来源：`outputs/getbrain/README.md`
-  - 依赖：—；被引用：—
-- [将证据制度库初稿整理为正式仓库文档；](../../../CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-1f6929e04cb7b991 / 将证据制度库初稿整理为正式仓库文档；
-  - 来源：`CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [将证据制度扩展到 UNESCO 更多学科；](../../../docs/evidence_regime_library.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-2a9db726bcfba9d9 / 将证据制度扩展到 UNESCO 更多学科；
-  - 来源：`docs/evidence_regime_library.md`
-  - 依赖：—；被引用：—
-- [小群体资源不易感验证](../../../data/foundation/evidence/evidence.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-e29b53edfb7c27a6 / 小群体资源不易感验证
-  - 来源：`data/foundation/evidence/evidence.jsonl`
-  - 依赖：—；被引用：—
-- [小资金恐惧锁定向下螺旋(验证D67)](../../../data/foundation/evidence/evidence.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-d99a0aefb0d98263 / 小资金恐惧锁定向下螺旋(验证D67)
-  - 来源：`data/foundation/evidence/evidence.jsonl`
-  - 依赖：D67；被引用：—
-- [尝试把跨领域问题放进统一流程；](../../../docs/author_motivation_and_boundary_note.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-422426394d620b7e / 尝试把跨领域问题放进统一流程；
-  - 来源：`docs/author_motivation_and_boundary_note.md`
-  - 依赖：—；被引用：—
-- [尺度错配（个体理解误写成群体规律）](../../../outputs/getbrain/classic-problems-benchmark-supplement-20260707.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-76d32ab1162d1029 / 尺度错配（个体理解误写成群体规律）
-  - 来源：`outputs/getbrain/classic-problems-benchmark-supplement-20260707.md`
-  - 依赖：—；被引用：—
-- [局外人因信息隔离而不受群体共识约束，能够发现被专家认为"不可能"的突破路径](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0686-C-0691-%E5%BC%A0%E7%9B%8A%E5%94%90%E7%AA%81%E7%A0%B4%E5%8D%8A%E6%95%B0%E9%9A%9C%E7%A2%8D.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-916062edd8782851 / 局外人因信息隔离而不受群体共识约束，能够发现被专家认为"不可能"的突破路径
-  - 来源：`统一案例总表/0686-C-0691-张益唐突破半数障碍.md`
-  - 依赖：—；被引用：—
-- [局部成立被当成全局必然。](../../../outputs/getbrain/failure-typology-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-235b80e3eed4177c / 局部成立被当成全局必然。
-  - 来源：`outputs/getbrain/failure-typology-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [局部模型失败不能推广为全称不可能；必要条件不能冒充充分条件。](../../../docs/foundation/claim-governance-and-function-identity.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-5408664a50e8c248 / 局部模型失败不能推广为全称不可能；必要条件不能冒充充分条件。
-  - 来源：`docs/foundation/claim-governance-and-function-identity.md`
-  - 依赖：—；被引用：—
-- [层级 vs 网络(S4)的适用边界量化待案例验证](../../../docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-9080c8c37dd57e3a / 层级 vs 网络(S4)的适用边界量化待案例验证
-  - 来源：`docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md`
-  - 依赖：—；被引用：—
-- [工业革命为什么首先发生在英国](../../../data/foundation/claims/claims.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：CLAIM-PEND-009 / 工业革命为什么首先发生在英国
-  - 来源：`data/foundation/claims/claims.jsonl`
-  - 依赖：—；被引用：—
-- [工具箱空间验证](../../../data/foundation/evidence/evidence.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-24bdd12a0f04b7a6 / 工具箱空间验证
-  - 来源：`data/foundation/evidence/evidence.jsonl`
-  - 依赖：—；被引用：—
-- [工程可行性、成本、性能、部署判断](../../../data/foundation/claims/claims.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：CLAIM-PEND-029 / 工程可行性、成本、性能、部署判断
-  - 来源：`data/foundation/claims/claims.jsonl`
-  - 依赖：—；被引用：—
-- [工程学命题成立需要设计、测试、仿真、制造和安全验证。](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-a06d1935cb9c7606 / 工程学命题成立需要设计、测试、仿真、制造和安全验证。
-  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [工程学是中等风险领域。工程命题需要实际验证。理论可行性、设计合理性、成本可控性未验证时必须 pending。](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-b362f708cc603140 / 工程学是中等风险领域。工程命题需要实际验证。理论可行性、设计合理性、成本可控性未验证时必须 pending。
-  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [工程学：理论可行性、设计合理性、成本可控性未验证](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-c1a7e6eeb40be9f4 / 工程学：理论可行性、设计合理性、成本可控性未验证
-  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [已**回填/修正并复跑验证**（year_match = 117/117）；重复 DOI 判定为有意跨 gap 引用，已保留](../../../RESULTS/LATEST.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-2a02b1b55e7a2ac6 / 已**回填/修正并复跑验证**（year_match = 117/117）；重复 DOI 判定为有意跨 gap 引用，已保留
-  - 来源：`RESULTS/LATEST.md`
-  - 依赖：—；被引用：—
-- [已在：本 README、D600/D601/D602 的 `source` 字段（已引用 MD SHA）、C-0810/C-0811 的「证据来源」、PR 正文同步采用此口径；PDF SHA 保留为 transport hash，未删除、未](../../../outputs/collisions/20260711-disobedience-subjectivity/validation-report.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-6c40cec737a2acbf / 已在：本 README、D600/D601/D602 的 `source` 字段（已引用 MD SHA）、C-0810/C-0811 的「证据来源」、PR 正文同步采用此口径；PDF SHA 保留为 transport hash，未删除、未
-  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/validation-report.md`
-  - 依赖：D600, D601, D602；被引用：—

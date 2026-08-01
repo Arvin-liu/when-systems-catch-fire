@@ -4,6 +4,61 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Purpose: avoid overstating evidence.](../../../inputs/020/formal-protocol-promotion-standard.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-ebbc0fcacc6aff97 / Purpose: avoid overstating evidence.
+  - 来源：`inputs/020/formal-protocol-promotion-standard.md`
+  - 依赖：—；被引用：—
+- [Purpose: keep lifecycle states unambiguous.](../../../inputs/020/formal-protocol-promotion-standard.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-5073f711e39eef84 / Purpose: keep lifecycle states unambiguous.
+  - 来源：`inputs/020/formal-protocol-promotion-standard.md`
+  - 依赖：—；被引用：—
+- [Purpose: separate internal inference from external proof.](../../../inputs/020/formal-protocol-promotion-standard.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-3d33b7f5f3c0611f / Purpose: separate internal inference from external proof.
+  - 来源：`inputs/020/formal-protocol-promotion-standard.md`
+  - 依赖：—；被引用：—
+- [Python APIs, configs, tensor carriers, and artifact files are concrete, but formal function semantics and shape/effect c](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-d67672c56b4883bb / Python APIs, configs, tensor carriers, and artifact files are concrete, but formal function semantics and shape/effect c
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [Q-0025 补充 \[D160\](docs/zh/functions/items/D160.md) 的强化学习统一案例：偏好、愉悦、选择和成瘾可写成同一奖励势函数的不同实例。](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0576-C-581-%E5%81%8F%E5%A5%BD-%E6%84%89%E6%82%A6%E5%85%B1%E5%90%8C%E5%8A%BF%E5%87%BD%E6%95%B0%E9%AA%8C%E8%AF%81.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-1f7b6ac6de829f13 / Q-0025 补充 \[D160\](docs/zh/functions/items/D160.md) 的强化学习统一案例：偏好、愉悦、选择和成瘾可写成同一奖励势函数的不同实例。
+  - 来源：`统一案例总表/0576-C-581-偏好-愉悦共同势函数验证.md`
+  - 依赖：D160；被引用：—
+- [Q-0032 将植物人醒不来抽象为唤醒-意识网络自举循环未闭合。](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0586-C-591-%E7%A5%9E%E7%BB%8F%E8%87%AA%E4%B8%BE%E5%94%A4%E9%86%92%E9%AA%8C%E8%AF%81.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-9753cd90736e873d / Q-0032 将植物人醒不来抽象为唤醒-意识网络自举循环未闭合。
+  - 来源：`统一案例总表/0586-C-591-神经自举唤醒验证.md`
+  - 依赖：—；被引用：—
+- [Q12 separates action and mechanism; Q13 controls distributions and attractors; Q14 prevents maps from becoming proof.](../../../reports/architecture/121Q22-probability-system-gap-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-c02deed87f087eef / Q12 separates action and mechanism; Q13 controls distributions and attractors; Q14 prevents maps from becoming proof.
+  - 来源：`reports/architecture/121Q22-probability-system-gap-audit.md`
+  - 依赖：—；被引用：—
+- [Q14 Atlas can project MCF views, but map position is not causal proof.](../../../docs/architecture/multiscale-causal-fabric.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-d6a25f6b733b080e / Q14 Atlas can project MCF views, but map position is not causal proof.
+  - 来源：`docs/architecture/multiscale-causal-fabric.md`
+  - 依赖：—；被引用：—
+- [Q14 can project PSD maps, but visual position and numbers are not proof.](../../../reports/architecture/121Q22-probabilistic-system-dynamics-validation.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-cf4d7f6d3794c1b9 / Q14 can project PSD maps, but visual position and numbers are not proof.
+  - 来源：`reports/architecture/121Q22-probabilistic-system-dynamics-validation.md`
+  - 依赖：—；被引用：—
+- [Q14: Atlas may project fabric views, but map position, edge presence, stage, visual proximity, and centrality are not pr](../../../reports/architecture/121Q21R-multiscale-causal-fabric-validation.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-2cb07bdebe9cccac / Q14: Atlas may project fabric views, but map position, edge presence, stage, visual proximity, and centrality are not pr
+  - 来源：`reports/architecture/121Q21R-multiscale-causal-fabric-validation.md`
+  - 依赖：—；被引用：—
+- [Q24 建立的迭代操作法已在 PR #56 验收并合并后成为当前仓库操作能力；未来状态改变任务必须按 `ITERATION.md` 记录 gap、claim ceiling、同步矩阵、验证和回执。遵循该方法不证明真理、价值、因果、完整性或正](../../../AI-HANDOFF.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-6d1897b5f5388c60 / Q24 建立的迭代操作法已在 PR #56 验收并合并后成为当前仓库操作能力；未来状态改变任务必须按 `ITERATION.md` 记录 gap、claim ceiling、同步矩阵、验证和回执。遵循该方法不证明真理、价值、因果、完整性或正
+  - 来源：`AI-HANDOFF.md`
+  - 依赖：—；被引用：—
 - [Q25 and Q25C are current repository capabilities. Q25B remains superseded non-ready candidate history. Method 1.1.0 deri](../../../reports/operations/121Q25D-current-closeout.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-66fe347795a4cc3a / Q25 and Q25C are current repository capabilities. Q25B remains superseded non-ready candidate history. Method 1.1.0 deri
@@ -316,6 +371,11 @@
   - 可搜索名称：NFC-908ab8d1dfb46de0 / Record mathematical maturity `M0`–`M7` and external-evidence maturity `E0`–`E7` independently. A proof does not raise E.
   - 来源：`docs/foundation/future-claim-admission-protocol.md`
   - 依赖：—；被引用：—
+- [record\["evidence_gate"\]\["formalization_frozen"\] = False](../../../tests/test_failure_case_evidence_gate.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-f119db3d6430cfa4 / record\["evidence_gate"\]\["formalization_frozen"\] = False
+  - 来源：`tests/test_failure_case_evidence_gate.py`
+  - 依赖：—；被引用：—
 - [Records origin event, spacetime scope, reachability semantics, horizon/boundary, coordinate/frame assumptions, and sourc](../../../docs/architecture/multiscale-causal-fabric.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-db1d7afa59aee930 / Records origin event, spacetime scope, reachability semantics, horizon/boundary, coordinate/frame assumptions, and sourc
@@ -485,6 +545,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-e4e8a94718735be6 / required = {"adjudication_method","source_body_actually_read","source_excerpt","source_line_range","controlled_propositi
   - 来源：`tools/foundation/verify_079.py`
+  - 依赖：—；被引用：—
+- [REQUIRED_DIMENSIONS = {"external_evidence", "executable_target", "formalization", "reproduction"}](../../../tools/failure_case_evidence_gate.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-44f92ff61396f297 / REQUIRED_DIMENSIONS = {"external_evidence", "executable_target", "formalization", "reproduction"}
+  - 来源：`tools/failure_case_evidence_gate.py`
   - 依赖：—；被引用：—
 - [required_proof_fields = {](../../../tools/operations/validate_incremental_execution.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
@@ -2435,69 +2500,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-D8F87E0415BEF356 / title: "三重死亡与执念逃避函数族" / IMPLICIT-D8F87E0415BEF356 / IMPLICIT-14198B49A125D810
   - 来源：`统一函数总表/0529-D532-区间素数存在性函数.md`
-  - 依赖：—；被引用：—
-- [title: "三重死亡与执念逃避函数族"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0533-D536-%E6%B8%85%E9%86%92%E6%A2%A6-%E6%A2%A6%E5%A2%83%E7%9C%9F%E5%AE%9E%E6%84%9F%E6%8F%90%E5%8D%87%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-DFD418877E4A4F29 / title: "三重死亡与执念逃避函数族" / IMPLICIT-DFD418877E4A4F29 / IMPLICIT-14198B49A125D810
-  - 来源：`统一函数总表/0533-D536-清醒梦-梦境真实感提升函数.md`
-  - 依赖：—；被引用：—
-- [title: "三重死亡与执念逃避函数族"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0537-D540-%E6%89%A7%E5%BF%B5-%E9%80%83%E9%81%BF-%E9%80%83%E9%81%BF%E7%9A%84%E9%80%83%E9%81%BF%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-F781F257879860C8 / title: "三重死亡与执念逃避函数族" / IMPLICIT-F781F257879860C8 / IMPLICIT-14198B49A125D810
-  - 来源：`统一函数总表/0537-D540-执念-逃避-逃避的逃避函数.md`
-  - 依赖：—；被引用：—
-- [title: "三重死亡与执念逃避函数族"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0536-D539-%E6%9C%AA%E6%9D%A5%E8%A7%86%E8%A7%92-%E6%80%9D%E8%80%83%E7%BB%B4%E5%BA%A6%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-F800FDD17289C2AF / title: "三重死亡与执念逃避函数族" / IMPLICIT-F800FDD17289C2AF / IMPLICIT-14198B49A125D810
-  - 来源：`统一函数总表/0536-D539-未来视角-思考维度函数.md`
-  - 依赖：—；被引用：—
-- [title: "三阶段-相变分类对应函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0329-D293-%E4%B8%89%E9%98%B6%E6%AE%B5-%E7%9B%B8%E5%8F%98%E5%88%86%E7%B1%BB%E5%AF%B9%E5%BA%94%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-D09A568210AA7574 / title: "三阶段-相变分类对应函数" / IMPLICIT-D09A568210AA7574
-  - 来源：`统一函数总表/0329-D293-三阶段-相变分类对应函数.md`
-  - 依赖：—；被引用：—
-- [title: "三阶段-相变分类对应函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0329-D293-%E4%B8%89%E9%98%B6%E6%AE%B5-%E7%9B%B8%E5%8F%98%E5%88%86%E7%B1%BB%E5%AF%B9%E5%BA%94%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-9f7254f907bea197 / title: "三阶段-相变分类对应函数"
-  - 来源：`统一函数总表/0329-D293-三阶段-相变分类对应函数.md`
-  - 依赖：—；被引用：—
-- [title: "不可逆-缓冲消失同步函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0428-D392-%E4%B8%8D%E5%8F%AF%E9%80%86-%E7%BC%93%E5%86%B2%E6%B6%88%E5%A4%B1%E5%90%8C%E6%AD%A5%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-0F13574498EAA8C7 / title: "不可逆-缓冲消失同步函数" / IMPLICIT-0F13574498EAA8C7
-  - 来源：`统一函数总表/0428-D392-不可逆-缓冲消失同步函数.md`
-  - 依赖：—；被引用：—
-- [title: "不可逆体积参数归约函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0459-D423-%E4%B8%8D%E5%8F%AF%E9%80%86%E4%BD%93%E7%A7%AF%E5%8F%82%E6%95%B0%E5%BD%92%E7%BA%A6%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-B2B26E2232771E50 / title: "不可逆体积参数归约函数" / IMPLICIT-B2B26E2232771E50
-  - 来源：`统一函数总表/0459-D423-不可逆体积参数归约函数.md`
-  - 依赖：—；被引用：—
-- [title: "不可逆性判据函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0158-D120-%E4%B8%8D%E5%8F%AF%E9%80%86%E6%80%A7%E5%88%A4%E6%8D%AE%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-A2278F973C868DE1 / title: "不可逆性判据函数" / IMPLICIT-A2278F973C868DE1
-  - 来源：`统一函数总表/0158-D120-不可逆性判据函数.md`
-  - 依赖：—；被引用：—
-- [title: "不可逆相交-临界标度联合函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0438-D402-%E4%B8%8D%E5%8F%AF%E9%80%86%E7%9B%B8%E4%BA%A4-%E4%B8%B4%E7%95%8C%E6%A0%87%E5%BA%A6%E8%81%94%E5%90%88%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-BC4543C81D45396D / title: "不可逆相交-临界标度联合函数" / IMPLICIT-BC4543C81D45396D
-  - 来源：`统一函数总表/0438-D402-不可逆相交-临界标度联合函数.md`
-  - 依赖：—；被引用：—
-- [title: "不可逆空间函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0491-D493-%E4%B8%8D%E5%8F%AF%E9%80%86%E7%A9%BA%E9%97%B4%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-61A0CBDB65DB6C3E / title: "不可逆空间函数" / IMPLICIT-61A0CBDB65DB6C3E
-  - 来源：`统一函数总表/0491-D493-不可逆空间函数.md`
-  - 依赖：—；被引用：—
-- [title: "不可逆线完整分类函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0446-D410-%E4%B8%8D%E5%8F%AF%E9%80%86%E7%BA%BF%E5%AE%8C%E6%95%B4%E5%88%86%E7%B1%BB%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-600394BA212CA2EE / title: "不可逆线完整分类函数" / IMPLICIT-600394BA212CA2EE
-  - 来源：`统一函数总表/0446-D410-不可逆线完整分类函数.md`
-  - 依赖：—；被引用：—
-- [title: "不可逆线相交函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0424-D388-%E4%B8%8D%E5%8F%AF%E9%80%86%E7%BA%BF%E7%9B%B8%E4%BA%A4%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-25701B49BE7CBDEB / title: "不可逆线相交函数" / IMPLICIT-25701B49BE7CBDEB
-  - 来源：`统一函数总表/0424-D388-不可逆线相交函数.md`
-  - 依赖：—；被引用：—
-- [title: "不归点-吸引域边界统一函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0425-D389-%E4%B8%8D%E5%BD%92%E7%82%B9-%E5%90%B8%E5%BC%95%E5%9F%9F%E8%BE%B9%E7%95%8C%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-2255FC9709F8D82A / title: "不归点-吸引域边界统一函数" / IMPLICIT-2255FC9709F8D82A
-  - 来源：`统一函数总表/0425-D389-不归点-吸引域边界统一函数.md`
   - 依赖：—；被引用：—

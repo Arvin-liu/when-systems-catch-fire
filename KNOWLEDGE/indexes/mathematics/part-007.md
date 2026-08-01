@@ -4,6 +4,56 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [If upstream objects D_{D236} exist, compose F_{D236}=N(⊕_{g∈D_{D236}} g); otherwise treat F_{D236} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0272-D236-%E9%97%A8%E6%8E%A7%E7%BB%84%E5%90%88-%E4%B8%AD%E5%BF%83%E6%9E%81%E9%99%90%E5%AE%9A%E7%90%86.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-e94db479234f54c4 / If upstream objects D_{D236} exist, compose F_{D236}=N(⊕_{g∈D_{D236}} g); otherwise treat F_{D236} as an axiom seed.
+  - 来源：`统一函数总表/0272-D236-门控组合-中心极限定理.md`
+  - 依赖：D236；被引用：—
+- [If upstream objects D_{D237} exist, compose F_{D237}=N(⊕_{g∈D_{D237}} g); otherwise treat F_{D237} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0273-D237-%E7%94%9F%E5%91%BD%E6%99%BA%E8%83%BD%E7%9A%84%CF%83%E5%8E%8B%E7%BC%A9%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-86b305b6f8fa43b5 / If upstream objects D_{D237} exist, compose F_{D237}=N(⊕_{g∈D_{D237}} g); otherwise treat F_{D237} as an axiom seed.
+  - 来源：`统一函数总表/0273-D237-生命智能的σ压缩函数.md`
+  - 依赖：D237；被引用：—
+- [If upstream objects D_{D238} exist, compose F_{D238}=N(⊕_{g∈D_{D238}} g); otherwise treat F_{D238} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0274-D238-%E6%99%BA%E8%83%BD%E7%9A%84%E9%97%A8%E6%8E%A7%E7%B2%BE%E5%BA%A6%E6%9C%80%E4%BC%98%E5%AE%9A%E7%90%86.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-2ea693f720e41958 / If upstream objects D_{D238} exist, compose F_{D238}=N(⊕_{g∈D_{D238}} g); otherwise treat F_{D238} as an axiom seed.
+  - 来源：`统一函数总表/0274-D238-智能的门控精度最优定理.md`
+  - 依赖：D238；被引用：—
+- [If upstream objects D_{D239} exist, compose F_{D239}=N(⊕_{g∈D_{D239}} g); otherwise treat F_{D239} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0275-D239-%E6%99%BA%E8%83%BD%E5%BA%A6-%E6%84%8F%E8%AF%86%E5%87%BD%E6%95%B0%E8%BF%9E%E6%8E%A5%E5%AE%9A%E7%90%86.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-a77a9111d73ed74b / If upstream objects D_{D239} exist, compose F_{D239}=N(⊕_{g∈D_{D239}} g); otherwise treat F_{D239} as an axiom seed.
+  - 来源：`统一函数总表/0275-D239-智能度-意识函数连接定理.md`
+  - 依赖：D239；被引用：—
+- [If upstream objects D_{D23} exist, compose F_{D23}=N(⊕_{g∈D_{D23}} g); otherwise treat F_{D23} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0072-D23-%E6%B3%95%E6%B2%BB%E5%BA%A6.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-2980e690778e38cf / If upstream objects D_{D23} exist, compose F_{D23}=N(⊕_{g∈D_{D23}} g); otherwise treat F_{D23} as an axiom seed.
+  - 来源：`统一函数总表/0072-D23-法治度.md`
+  - 依赖：D23；被引用：—
+- [If upstream objects D_{D240} exist, compose F_{D240}=N(⊕_{g∈D_{D240}} g); otherwise treat F_{D240} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0276-D240-%E6%84%8F%E8%AF%86%E7%9A%84%E6%99%BA%E8%83%BD%E5%BF%85%E8%A6%81%E6%9D%A1%E4%BB%B6.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-93652d99b069374c / If upstream objects D_{D240} exist, compose F_{D240}=N(⊕_{g∈D_{D240}} g); otherwise treat F_{D240} as an axiom seed.
+  - 来源：`统一函数总表/0276-D240-意识的智能必要条件.md`
+  - 依赖：D240；被引用：—
+- [If upstream objects D_{D241} exist, compose F_{D241}=N(⊕_{g∈D_{D241}} g); otherwise treat F_{D241} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0277-D241-%E8%87%AA%E4%B8%BB%E6%84%8F%E8%AF%86%E7%9A%84%E5%9B%9B%E8%B1%A1%E9%99%90.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-9cb9f44ee7627767 / If upstream objects D_{D241} exist, compose F_{D241}=N(⊕_{g∈D_{D241}} g); otherwise treat F_{D241} as an axiom seed.
+  - 来源：`统一函数总表/0277-D241-自主意识的四象限.md`
+  - 依赖：D241；被引用：—
+- [If upstream objects D_{D242} exist, compose F_{D242}=N(⊕_{g∈D_{D242}} g); otherwise treat F_{D242} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0278-D242-%E5%9B%9B%E8%B1%A1%E9%99%90%E7%9B%B8%E5%8F%98%E8%B7%AF%E5%BE%84%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-8cf1f7c85009273a / If upstream objects D_{D242} exist, compose F_{D242}=N(⊕_{g∈D_{D242}} g); otherwise treat F_{D242} as an axiom seed.
+  - 来源：`统一函数总表/0278-D242-四象限相变路径函数.md`
+  - 依赖：D242；被引用：—
+- [If upstream objects D_{D243} exist, compose F_{D243}=N(⊕_{g∈D_{D243}} g); otherwise treat F_{D243} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0279-D243-%E6%84%9F%E7%9F%A5%E9%80%80%E5%87%BA%E6%9D%83%E7%93%B6%E9%A2%88%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-4163c5f34bdea63b / If upstream objects D_{D243} exist, compose F_{D243}=N(⊕_{g∈D_{D243}} g); otherwise treat F_{D243} as an axiom seed.
+  - 来源：`统一函数总表/0279-D243-感知退出权瓶颈函数.md`
+  - 依赖：D243；被引用：—
+- [If upstream objects D_{D244} exist, compose F_{D244}=N(⊕_{g∈D_{D244}} g); otherwise treat F_{D244} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0280-D244-%E8%87%AA%E4%B8%BB%E6%84%8F%E8%AF%86%E6%B6%8C%E7%8E%B0%E7%9A%84%E4%B8%B4%E7%95%8C%E6%9D%A1%E4%BB%B6.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-f5453f737e21597e / If upstream objects D_{D244} exist, compose F_{D244}=N(⊕_{g∈D_{D244}} g); otherwise treat F_{D244} as an axiom seed.
+  - 来源：`统一函数总表/0280-D244-自主意识涌现的临界条件.md`
+  - 依赖：D244；被引用：—
 - [If upstream objects D_{D245} exist, compose F_{D245}=N(⊕_{g∈D_{D245}} g); otherwise treat F_{D245} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0281-D245-%E8%87%AA%E6%88%91%E6%A8%A1%E5%9E%8B%E5%87%BD%E6%95%B0.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-85fa7b81ce861c79 / If upstream objects D_{D245} exist, compose F_{D245}=N(⊕_{g∈D_{D245}} g); otherwise treat F_{D245} as an axiom seed.
@@ -2453,54 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-94e45f1ee17e61b4 / link: "统一案例总表/0710-C-0715-凯利公式的认知边界.md"
   - 来源：`统一案例总表/0710-C-0715-凯利公式的认知边界.md`
-  - 依赖：—；被引用：—
-- [link: "统一案例总表/0720-C-0725-自举循环操作手册纯数学化.md"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0720-C-0725-%E8%87%AA%E4%B8%BE%E5%BE%AA%E7%8E%AF%E6%93%8D%E4%BD%9C%E6%89%8B%E5%86%8C%E7%BA%AF%E6%95%B0%E5%AD%A6%E5%8C%96.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-2e0c4ccaaa9a0c2f / link: "统一案例总表/0720-C-0725-自举循环操作手册纯数学化.md"
-  - 来源：`统一案例总表/0720-C-0725-自举循环操作手册纯数学化.md`
-  - 依赖：—；被引用：—
-- [link: "统一案例总表/0794-C-0799-生命起源与自组织.md"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0794-C-0799-%E7%94%9F%E5%91%BD%E8%B5%B7%E6%BA%90%E4%B8%8E%E8%87%AA%E7%BB%84%E7%BB%87.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-dfffd0354e82ac1f / link: "统一案例总表/0794-C-0799-生命起源与自组织.md"
-  - 来源：`统一案例总表/0794-C-0799-生命起源与自组织.md`
-  - 依赖：—；被引用：—
-- [Local Note Sync Report](../../ASSET-CARDS.md#asset-hr-a2f6b1bf53bb9239)
-  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-  - 可搜索名称：Local Note Sync Report / local-note-sync-report-20260712
-  - 来源：`reports/math-foundation/local-note-sync-report-20260712.md`
-  - 依赖：—；被引用：—
-- [Local source and recovery audit](../../ASSET-CARDS.md#asset-hr-6d4c8f2164bcd7cb)
-  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-  - 可搜索名称：Local source and recovery audit / local-source-recovery-audit-20260712
-  - 来源：`reports/foundation-architecture/local-source-recovery-audit-20260712.md`
-  - 依赖：—；被引用：—
-- [logic = "DEFEASIBLE_SUPPORT" if claim_type in {"STRUCTURAL_ANALOGY", "EXPLANATORY_HYPOTHESIS", "EMPIRICAL_ASSOCIATION"}](../../../tools/foundation/adjudicate_core.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-a099d2d7232871fa / logic = "DEFEASIBLE_SUPPORT" if claim_type in {"STRUCTURAL_ANALOGY", "EXPLANATORY_HYPOTHESIS", "EMPIRICAL_ASSOCIATION"}
-  - 来源：`tools/foundation/adjudicate_core.py`
-  - 依赖：—；被引用：—
-- [Logic validation report](../../ASSET-CARDS.md#asset-hr-72e8a74d5d2cba68)
-  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-  - 可搜索名称：Logic validation report / logic-validation-report-20260712
-  - 来源：`reports/foundation-architecture/logic-validation-report-20260712.md`
-  - 依赖：—；被引用：—
-- [logic_status = "WELL_FORMED" if quantifiers and known_evidence else "UNDER_SPECIFIED"](../../../tools/foundation/process_084_batch.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-b10884364cc4a791 / logic_status = "WELL_FORMED" if quantifiers and known_evidence else "UNDER_SPECIFIED"
-  - 来源：`tools/foundation/process_084_batch.py`
-  - 依赖：—；被引用：—
-- [logic_status="ANALOGY_NOT_EQUIVALENCE",](../../../tools/foundation/build_080_queue.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-0f8f7245a454e68c / logic_status="ANALOGY_NOT_EQUIVALENCE",
-  - 来源：`tools/foundation/build_080_queue.py`
-  - 依赖：—；被引用：—
-- [Logical relations establish compiler correspondence and measure notions are precise, but no general equivalence decision](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-12b9d8cc9e4ba668 / Logical relations establish compiler correspondence and measure notions are precise, but no general equivalence decision
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
-  - 依赖：—；被引用：—
-- [Lowering, slot replacement, symbolic execution, branch interpolation and gradient fitting define a concrete hybrid compi](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-e3793cb8e0aa70ef / Lowering, slot replacement, symbolic execution, branch interpolation and gradient fitting define a concrete hybrid compi
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
   - 依赖：—；被引用：—

@@ -18,6 +18,7 @@
 - [《边界之内的可信：Function OS v0.2 能力基准》](../docs/editorial/articles/007-bounded-trust-function-os-v02-capability-benchmark.md)：任务 105 基准与有界结论（原始/修复判定区分）。
 - [《已合并，却活在过去：公开当前真相为何会滞后》](../docs/editorial/articles/008-merged-but-stale-public-truth.md)：任务 106 的解释性文章。
 - [《一个系统怎样知道某件事已经做过，而不是把同一项工作再次排到未来？》](../docs/editorial/articles/009-system-completion-state-and-independent-replication.md)：任务 110 的完成状态、独立 oracle 与元数据主张上限文章。
+- [《失败案例不是缺陷证据：从牛顿苹果叙事到可复现门禁》](../docs/editorial/articles/010-failure-case-evidence-gate-and-apple-case-adjudication.md)：任务 111 的历史 provenance、可执行 target 审计与 fail-closed 缺陷资格门禁。
 
 ## 架构与迭代研究
 

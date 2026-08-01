@@ -4,6 +4,81 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [双临界n统一函数](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0440-D404-%E5%8F%8C%E4%B8%B4%E7%95%8Cn%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D404 / 双临界n统一函数 / D404
+  - 来源：`统一函数总表/0440-D404-双临界n统一函数.md`
+  - 依赖：D361, D430, D431, D450；被引用：NFC-0040294f24faf1fe, NFC-104a1e37c31f6a15, NFC-135a5ef5d5d21821, NFC-42ac79aeab644ced
+- [双临界n统一函数](../../../data/foundation/formal-objects/objects.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-975bc8eb67a88ee4 / 双临界n统一函数
+  - 来源：`data/foundation/formal-objects/objects.jsonl`
+  - 依赖：—；被引用：—
+- [双切换同步函数](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0448-D412-%E5%8F%8C%E5%88%87%E6%8D%A2%E5%90%8C%E6%AD%A5%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D412 / 双切换同步函数 / D412
+  - 来源：`统一函数总表/0448-D412-双切换同步函数.md`
+  - 依赖：D361, D430, D431, D450；被引用：CLAIM-D463, CLAIM-D465, NFC-0809ebb83c709ce2, NFC-089ab7720e8a899d
+- [双延迟-共振频率联合函数](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0427-D391-%E5%8F%8C%E5%BB%B6%E8%BF%9F-%E5%85%B1%E6%8C%AF%E9%A2%91%E7%8E%87%E8%81%94%E5%90%88%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D391 / 双延迟-共振频率联合函数 / D391
+  - 来源：`统一函数总表/0427-D391-双延迟-共振频率联合函数.md`
+  - 依赖：D361, D430, D431, D450；被引用：NFC-7c2b16daf9bda2c4, NFC-a28de704bcfbed8e, NFC-bbe7131200eadd78, NFC-e042ce8b1ab8f5f9
+- [双稳态分岔，μ符号决定落在哪个稳态：μ 0→ε_opt。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0088-D39-%E7%BB%9F%E4%B8%80%E5%86%85%E9%83%A8%E9%A9%B1%E5%8A%A8%E5%8A%9B%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-4fad0ee6645eb875 / 双稳态分岔，μ符号决定落在哪个稳态：μ 0→ε_opt。
+  - 来源：`统一函数总表/0088-D39-统一内部驱动力函数.md`
+  - 依赖：—；被引用：—
+- [双稳态分岔，μ符号决定落在哪个稳态：μ 0→ε_opt。 **扩展注释 / Extended Annotation**](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-d212629b7c93da32 / 双稳态分岔，μ符号决定落在哪个稳态：μ 0→ε_opt。 **扩展注释 / Extended Annotation**
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：—；被引用：—
+- [双通道信息衰减定理](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0266-D230-%E5%8F%8C%E9%80%9A%E9%81%93%E4%BF%A1%E6%81%AF%E8%A1%B0%E5%87%8F%E5%AE%9A%E7%90%86.md)
+  - 类型/状态：`FUNCTION_ASSET` · `DOWNGRADE_TO_CONJECTURE`
+  - 可搜索名称：D230 / 双通道信息衰减定理 / D230
+  - 来源：`统一函数总表/0266-D230-双通道信息衰减定理.md`
+  - 依赖：D181, D197, D211, D220；被引用：D108, D231, D232, D512
+- [双通道信息衰减定理](../../../data/foundation/formal-objects/objects.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-b068cf4695724470 / 双通道信息衰减定理
+  - 来源：`data/foundation/formal-objects/objects.jsonl`
+  - 依赖：—；被引用：—
+- [双重打击-双重加速同构函数](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0420-D384-%E5%8F%8C%E9%87%8D%E6%89%93%E5%87%BB-%E5%8F%8C%E9%87%8D%E5%8A%A0%E9%80%9F%E5%90%8C%E6%9E%84%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D384 / 双重打击-双重加速同构函数 / D384
+  - 来源：`统一函数总表/0420-D384-双重打击-双重加速同构函数.md`
+  - 依赖：D361, D430, D431, D450；被引用：CLAIM-D464, NFC-0f616050e710f5e6, NFC-16ef6e4352aaafa2, NFC-1a0d525e94e7b981
+- [双重打击-双重加速同构函数](../../../data/foundation/formal-objects/objects.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-5f3247868d6d1dbd / 双重打击-双重加速同构函数
+  - 来源：`data/foundation/formal-objects/objects.jsonl`
+  - 依赖：—；被引用：—
+- [反事实讨论（考虑其他可能性）](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-801c66314f59616e / 反事实讨论（考虑其他可能性）
+  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
+  - 依赖：—；被引用：—
+- [反向投影覆盖](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0142-D103-%E5%8F%8D%E5%90%91%E6%8A%95%E5%BD%B1%E8%A6%86%E7%9B%96.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D103 / 反向投影覆盖 / D103
+  - 来源：`统一函数总表/0142-D103-反向投影覆盖.md`
+  - 依赖：D180, D91；被引用：NFC-07b3f8ea12f95c6f, NFC-2f7ea43660bdbd05, NFC-6ae12dde8af11ba6, NFC-c26d0b27883cf91d
+- [反向投影覆盖→覆盖度 = \|投影变量∩点火变量\|/\|点火变量\|。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0142-D103-%E5%8F%8D%E5%90%91%E6%8A%95%E5%BD%B1%E8%A6%86%E7%9B%96.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-64859dbf73668675 / 反向投影覆盖→覆盖度 = \|投影变量∩点火变量\|/\|点火变量\|。
+  - 来源：`统一函数总表/0142-D103-反向投影覆盖.md`
+  - 依赖：—；被引用：—
+- [反向投影覆盖，覆盖度 = \|投影变量∩点火变量\|/\|点火变量\|。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0142-D103-%E5%8F%8D%E5%90%91%E6%8A%95%E5%BD%B1%E8%A6%86%E7%9B%96.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-fa11cd77056df171 / 反向投影覆盖，覆盖度 = \|投影变量∩点火变量\|/\|点火变量\|。
+  - 来源：`统一函数总表/0142-D103-反向投影覆盖.md`
+  - 依赖：—；被引用：—
+- [反向投影覆盖，覆盖度 = \|投影变量∩点火变量\|/\|点火变量\|。 **扩展注释 / Extended Annotation**](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-f274ecc6206eb6b1 / 反向投影覆盖，覆盖度 = \|投影变量∩点火变量\|/\|点火变量\|。 **扩展注释 / Extended Annotation**
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：—；被引用：—
 - [发布前必须回答：对象是什么；主身份是什么；数学成熟度与外部证据成熟度分别是多少；证明或实证义务是否完成；允许推理方向是什么；哪些反例、失败边界和依赖降级会触发撤回。](../../../docs/foundation/public-claim-ceiling-guidance.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-b25d329013a89ca8 / 发布前必须回答：对象是什么；主身份是什么；数学成熟度与外部证据成熟度分别是多少；证明或实证义务是否完成；允许推理方向是什么；哪些反例、失败边界和依赖降级会触发撤回。
@@ -2426,78 +2501,3 @@
   - 可搜索名称：NFC-31fb9e5843f924a7 / 数学表达 / Expression: `F_plant_swarm := ∫(local_interaction × indirect_communication × emergent_intelligence) / distributed
   - 来源：`统一函数总表/0565-D550-植物群体函数.md`
   - 依赖：—；被引用：—
-- [数学表达 / Expression: `F_problem(d)=Mismatch(Model_d, Phenomenon_d, Evidence_d, Scale_d, Value_d)`](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0598-D588-%E7%BB%8F%E5%85%B8%E9%97%AE%E9%A2%98%E5%B7%AE%E5%88%86%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-d7ebcbd054a0301e / 数学表达 / Expression: `F_problem(d)=Mismatch(Model_d, Phenomenon_d, Evidence_d, Scale_d, Value_d)`
-  - 来源：`统一函数总表/0598-D588-经典问题差分函数.md`
-  - 依赖：—；被引用：—
-- [数学表达 / Expression: `F_scale_bridge=MicroMechanism × MesoStructure × MacroPattern × CrossScaleFeedback`](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0601-D591-%E5%B0%BA%E5%BA%A6%E6%A1%A5%E6%8E%A5%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-b068d6eb6c30d05c / 数学表达 / Expression: `F_scale_bridge=MicroMechanism × MesoStructure × MacroPattern × CrossScaleFeedback`
-  - 来源：`统一函数总表/0601-D591-尺度桥接函数.md`
-  - 依赖：—；被引用：—
-- [数学表达 / Expression: `F_swarm_intelligence := Σ(agent_i × local_rule × global_emergence) / interaction_topology`](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0558-D543-%E7%BE%A4%E4%BD%93%E6%99%BA%E8%83%BD%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-3e2a8bd5602ac591 / 数学表达 / Expression: `F_swarm_intelligence := Σ(agent_i × local_rule × global_emergence) / interaction_topology`
-  - 来源：`统一函数总表/0558-D543-群体智能函数.md`
-  - 依赖：—；被引用：—
-- [数学表达 / Expression: `F_{A3}(x) := R ∈ {真实,事实,心理,象征}`](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0004-A3-R%28t%2CL%2CC%29%20%E5%BA%94%E7%BA%A6%E8%80%85%E9%80%80%E5%87%BA%E6%9D%83.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-f2ed061f44322f88 / 数学表达 / Expression: `F_{A3}(x) := R ∈ {真实,事实,心理,象征}`
-  - 来源：`统一函数总表/0004-A3-R(t,L,C) 应约者退出权.md`
-  - 依赖：A3；被引用：—
-- [数学表达 / Expression: `F_{A5}(x) := 八维度（经济/社会/身份/信息/时间/地理/生态/身体）连续值。n_lock = Σᵢ step(C_exit(i) θ_C(i))。`](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0006-A5-%E5%BA%94%E7%BA%A6%E8%80%85%E9%80%80%E5%87%BA%E7%9A%84%E6%88%90%E6%9C%AC.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-79f3a3ec2ad00c82 / 数学表达 / Expression: `F_{A5}(x) := 八维度（经济/社会/身份/信息/时间/地理/生态/身体）连续值。n_lock = Σᵢ step(C_exit(i) θ_C(i))。`
-  - 来源：`统一函数总表/0006-A5-应约者退出的成本.md`
-  - 依赖：A5；被引用：—
-- [数学表达 / Expression: `F_{D103}(x) := 覆盖度 = \|投影变量∩点火变量\|/\|点火变量\|。`](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0142-D103-%E5%8F%8D%E5%90%91%E6%8A%95%E5%BD%B1%E8%A6%86%E7%9B%96.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-07b3f8ea12f95c6f / 数学表达 / Expression: `F_{D103}(x) := 覆盖度 = \|投影变量∩点火变量\|/\|点火变量\|。`
-  - 来源：`统一函数总表/0142-D103-反向投影覆盖.md`
-  - 依赖：D103；被引用：—
-- [数学表达 / Expression: `F_{D108}(x) := $$S_{unified}(domain) = k_{domain} \\cdot \\ln \\Omega_{effective}(domain)$$ - 物理域：$\\Ome](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0147-D108-%E4%B8%89%E5%9F%9F%E7%86%B5%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%28%E6%8E%A8%E8%AE%BA%E7%BA%A7%29.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-eb0bccc041d1bb90 / 数学表达 / Expression: `F_{D108}(x) := $$S_{unified}(domain) = k_{domain} \\cdot \\ln \\Omega_{effective}(domain)$$ - 物理域：$\\Ome
-  - 来源：`统一函数总表/0147-D108-三域熵统一函数(推论级).md`
-  - 依赖：D101, D108；被引用：—
-- [数学表达 / Expression: `F_{D109}(x) := 给定总资源R和初始状态ε，最优分配使所有因子终值相等：ε̄=(Σεᵢ+R)/n。贪心策略（先补最弱到次弱，再同时补到第三弱，...）是最优路径。脆弱度降低比=ε̄/min](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0148-D109-%E4%B9%98%E6%B3%95%E6%9C%80%E4%BC%98%E7%94%9F%E5%AD%98%E7%AD%96%E7%95%A5%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-0ff82990557b29bb / 数学表达 / Expression: `F_{D109}(x) := 给定总资源R和初始状态ε，最优分配使所有因子终值相等：ε̄=(Σεᵢ+R)/n。贪心策略（先补最弱到次弱，再同时补到第三弱，...）是最优路径。脆弱度降低比=ε̄/min
-  - 来源：`统一函数总表/0148-D109-乘法最优生存策略函数.md`
-  - 依赖：D102, D109；被引用：—
-- [数学表达 / Expression: `F_{D110}(x) := $$P_{transition} = \\sigma\\left(\\prod_{i=1}^{n} f_i - \\theta\\right)$$ - $f_i$：第i个驱动因子（](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0149-D110-%E5%A4%9A%E5%9B%A0%E5%AD%90%E4%B9%98%E6%B3%95%E7%9B%B8%E5%8F%98%E5%87%BD%E6%95%B0%28%E6%8E%A8%E8%AE%BA%E7%BA%A7%29.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-ca3912b196089794 / 数学表达 / Expression: `F_{D110}(x) := $$P_{transition} = \\sigma\\left(\\prod_{i=1}^{n} f_i - \\theta\\right)$$ - $f_i$：第i个驱动因子（
-  - 来源：`统一函数总表/0149-D110-多因子乘法相变函数(推论级).md`
-  - 依赖：D110；被引用：—
-- [数学表达 / Expression: `F_{D111}(x) := $$\\text{Noether}: G \\xrightarrow{\\text{对称}} \\text{Conservation} \\quad \\Longleftrighta](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0150-D111-%E5%AF%B9%E7%A7%B0-%E7%A0%B4%E7%BC%BA-%E5%AE%9A%E5%90%91%E5%AF%B9%E5%81%B6%E5%87%BD%E6%95%B0%28%E6%8E%A8%E8%AE%BA%E7%BA%A7%29.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-4b5b830fdadfc1e2 / 数学表达 / Expression: `F_{D111}(x) := $$\\text{Noether}: G \\xrightarrow{\\text{对称}} \\text{Conservation} \\quad \\Longleftrighta
-  - 来源：`统一函数总表/0150-D111-对称-破缺-定向对偶函数(推论级).md`
-  - 依赖：D111；被引用：—
-- [数学表达 / Expression: `F_{D115}(x) := r_cross = 0 ⟹ ε_aware = 0（通过D84三条安装路径全部依赖P_track>1） **证明：** 1. D84三条安装路径（预测编码回路、分轨并行、](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0154-D115-r_cross%E4%BC%98%E5%85%88%E6%80%A7%E5%AE%9A%E7%90%86.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-c4909a5913552b7c / 数学表达 / Expression: `F_{D115}(x) := r_cross = 0 ⟹ ε_aware = 0（通过D84三条安装路径全部依赖P_track>1） **证明：** 1. D84三条安装路径（预测编码回路、分轨并行、
-  - 来源：`统一函数总表/0154-D115-r_cross优先性定理.md`
-  - 依赖：D115, D84；被引用：—
-- [数学表达 / Expression: `F_{D116}(x) := Clos_bootstrap(V, R, n) = Clos_standard(V, R_n) ∪ ⋃_{k=0}^{n} f_reassemble(V_k, R_k)](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0154-D116-%E5%9B%A0%E6%9E%9C%E9%97%AD%E5%8C%85%E8%87%AA%E4%B8%BE%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-a55ebe7dbb3cbd44 / 数学表达 / Expression: `F_{D116}(x) := Clos_bootstrap(V, R, n) = Clos_standard(V, R_n) ∪ ⋃_{k=0}^{n} f_reassemble(V_k, R_k)
-  - 来源：`统一函数总表/0154-D116-因果闭包自举函数.md`
-  - 依赖：D116；被引用：—
-- [数学表达 / Expression: `F_{D118}(x) := S_ignition = ∫\[ln G - γ·P(cascade)\]dt，δS=0 → Δεᵢ*∝ηᵢ+β∑κᵢⱼηⱼ（D111是变分必然解）。均等定理=维度置换对称性](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0156-D118-%E6%9C%80%E5%B0%8F%E4%BD%9C%E7%94%A8%E9%87%8F-%E5%BC%B9%E6%80%A7%E7%BA%A7%E8%81%94%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-66491f8944af8703 / 数学表达 / Expression: `F_{D118}(x) := S_ignition = ∫\[ln G - γ·P(cascade)\]dt，δS=0 → Δεᵢ*∝ηᵢ+β∑κᵢⱼηⱼ（D111是变分必然解）。均等定理=维度置换对称性
-  - 来源：`统一函数总表/0156-D118-最小作用量-弹性级联统一函数.md`
-  - 依赖：D111, D118；被引用：—
-- [数学表达 / Expression: `F_{D119}(x) := dA_Fisher/dt = -∑ᵢ\[σ'(εᵢ-θC(i))×\|dεᵢ/dt\|×d_Fisher(εᵢ)/λ\]/(1+d_Fisher(εᵢ)/λ)² 乘法系统的退化统](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0157-D119-Fisher%E9%80%80%E5%8C%96%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-2e3a14060481803d / 数学表达 / Expression: `F_{D119}(x) := dA_Fisher/dt = -∑ᵢ\[σ'(εᵢ-θC(i))×\|dεᵢ/dt\|×d_Fisher(εᵢ)/λ\]/(1+d_Fisher(εᵢ)/λ)² 乘法系统的退化统
-  - 来源：`统一函数总表/0157-D119-Fisher退化统一函数.md`
-  - 依赖：D119；被引用：—
-- [数学表达 / Expression: `F_{D121}(x) := H_Fisher(p) = A_Fisher(p) / A_Fisher(p₀) p₀是参考健康态。H_Fisher∈\[0,1\]，0=完全锁死，1=完全健康。 预警函数：](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0159-D121-Fisher%E5%81%A5%E5%BA%B7%E5%BA%A6%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-5a5ab41e78d0b327 / 数学表达 / Expression: `F_{D121}(x) := H_Fisher(p) = A_Fisher(p) / A_Fisher(p₀) p₀是参考健康态。H_Fisher∈\[0,1\]，0=完全锁死，1=完全健康。 预警函数：
-  - 来源：`统一函数总表/0159-D121-Fisher健康度函数.md`
-  - 依赖：D121；被引用：—

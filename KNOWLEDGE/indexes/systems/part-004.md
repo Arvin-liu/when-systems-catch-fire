@@ -4,6 +4,61 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [title: "测地线偏离验证 — 组织退化传染：部门A退化（ε↓30%）→部门B（κ_AB=0.4）在3个月内跟随退化15%→部门C（κ_AC=0.1）几乎不受影响。κ_ij=-R_cog→部门间曲率决定传染速度 / 测地线偏离验证 -](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0502-C-507-%E6%B5%8B%E5%9C%B0%E7%BA%BF%E5%81%8F%E7%A6%BB%E9%AA%8C%E8%AF%81%20%E2%80%94%20%E7%BB%84%E7%BB%87%E9%80%80%E5%8C%96%E4%BC%A0%E6%9F%93-%E9%83%A8%E9%97%A8A%E9%80%80%E5%8C%96%28%CE%B5%E2%86%9330%25%29%E2%86%92%E9%83%A8%E9%97%A8B%28%CE%BA_AB%3D0.4%29%E5%9C%A83%E4%B8%AA%E6%9C%88%E5%86%85%E8%B7%9F%E9%9A%8F%E9%80%80%E5%8C%9615%25%E2%86%92%E9%83%A8%E9%97%A8C%28%CE%BA_AC%3D0.1%29%E5%87%A0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-41a335f0120b5da3 / title: "测地线偏离验证 — 组织退化传染：部门A退化（ε↓30%）→部门B（κ_AB=0.4）在3个月内跟随退化15%→部门C（κ_AC=0.1）几乎不受影响。κ_ij=-R_cog→部门间曲率决定传染速度 / 测地线偏离验证 -
+  - 来源：`统一案例总表/0502-C-507-测地线偏离验证 — 组织退化传染-部门A退化(ε↓30%)→部门B(κ_AB=0.4)在3个月内跟随退化15%→部门C(κ_AC=0.1)几.md`
+  - 依赖：—；被引用：—
+- [title: "测地线唯一性验证 — 3维系统10000次随机采样：D111的S_ignition全局最小，无第二极值点。二阶变分δ²S=0.34>0确认稳定。偏离D111 10%→S增大0.8%，梯度指向D111 / 测地线唯一性验证 -](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0508-C-513-%E6%B5%8B%E5%9C%B0%E7%BA%BF%E5%94%AF%E4%B8%80%E6%80%A7%E9%AA%8C%E8%AF%81%20%E2%80%94%203%E7%BB%B4%E7%B3%BB%E7%BB%9F10000%E6%AC%A1%E9%9A%8F%E6%9C%BA%E9%87%87%E6%A0%B7-D111%E7%9A%84S_ignition%E5%85%A8%E5%B1%80%E6%9C%80%E5%B0%8F%2C%E6%97%A0%E7%AC%AC%E4%BA%8C%E6%9E%81%E5%80%BC%E7%82%B9%E3%80%82%E4%BA%8C%E9%98%B6%E5%8F%98%E5%88%86%CE%B42S%3D0.34-0%E7%A1%AE%E8%AE%A4%E7%A8%B3.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-212bee76f6c2d2aa / title: "测地线唯一性验证 — 3维系统10000次随机采样：D111的S_ignition全局最小，无第二极值点。二阶变分δ²S=0.34>0确认稳定。偏离D111 10%→S增大0.8%，梯度指向D111 / 测地线唯一性验证 -
+  - 来源：`统一案例总表/0508-C-513-测地线唯一性验证 — 3维系统10000次随机采样-D111的S_ignition全局最小,无第二极值点。二阶变分δ2S=0.34-0确认稳.md`
+  - 依赖：D111；被引用：—
+- [title: "癌症的Φ极小点极深——癌细胞Λ极低导致Φ极小点比正常细胞更深，更稳定"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0384-C-385-%E7%99%8C%E7%97%87%E7%9A%84%CE%A6%E6%9E%81%E5%B0%8F%E7%82%B9%E6%9E%81%E6%B7%B1%E2%80%94%E2%80%94%E7%99%8C%E7%BB%86%E8%83%9E%CE%9B%E6%9E%81%E4%BD%8E%E5%AF%BC%E8%87%B4%CE%A6%E6%9E%81%E5%B0%8F%E7%82%B9%E6%AF%94%E6%AD%A3%E5%B8%B8%E7%BB%86%E8%83%9E%E6%9B%B4%E6%B7%B1%2C%E6%9B%B4%E7%A8%B3%E5%AE%9A.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-c37992f3d38d25db / title: "癌症的Φ极小点极深——癌细胞Λ极低导致Φ极小点比正常细胞更深，更稳定"
+  - 来源：`统一案例总表/0384-C-385-癌症的Φ极小点极深——癌细胞Λ极低导致Φ极小点比正常细胞更深,更稳定.md`
+  - 依赖：—；被引用：—
+- [title: "空降CEO失败机制"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0704-C-0709-%E7%A9%BA%E9%99%8DCEO%E5%A4%B1%E8%B4%A5%E6%9C%BA%E5%88%B6.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-5740a057c3b7d1ee / title: "空降CEO失败机制"
+  - 来源：`统一案例总表/0704-C-0709-空降CEO失败机制.md`
+  - 依赖：—；被引用：—
+- [title: "联邦制隔离拖累——多独立门控面分散风险，单一子系统拖累不影响全局"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0406-C-407-%E8%81%94%E9%82%A6%E5%88%B6%E9%9A%94%E7%A6%BB%E6%8B%96%E7%B4%AF%E2%80%94%E2%80%94%E5%A4%9A%E7%8B%AC%E7%AB%8B%E9%97%A8%E6%8E%A7%E9%9D%A2%E5%88%86%E6%95%A3%E9%A3%8E%E9%99%A9%2C%E5%8D%95%E4%B8%80%E5%AD%90%E7%B3%BB%E7%BB%9F%E6%8B%96%E7%B4%AF%E4%B8%8D%E5%BD%B1%E5%93%8D%E5%85%A8%E5%B1%80.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-5839DDCF90DC9F88 / title: "联邦制隔离拖累——多独立门控面分散风险，单一子系统拖累不影响全局" / IMPLICIT-5839DDCF90DC9F88
+  - 来源：`统一案例总表/0406-C-407-联邦制隔离拖累——多独立门控面分散风险,单一子系统拖累不影响全局.md`
+  - 依赖：—；被引用：—
+- [title: "诺特定理验证 — 5维对称系统（fᵢ相同），∑ηᵢ=5×0.25=1.25恒定。打破对称后（1维门槛提高），∑ηᵢ仍=1.25但分布不均 / 诺特定理验证 - 5维对称系统(fᵢ相同), ∑ηᵢ=5 x 0.25=1.25恒定. 打破对称后(1维门槛提高), ∑ηᵢ仍=1.25但分布不均"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0462-C-463-%E8%AF%BA%E7%89%B9%E5%AE%9A%E7%90%86%E9%AA%8C%E8%AF%81%20%E2%80%94%205%E7%BB%B4%E5%AF%B9%E7%A7%B0%E7%B3%BB%E7%BB%9F%28fi%E7%9B%B8%E5%90%8C%29%2C%E2%88%91%CE%B7i%3D5%C3%970.25%3D1.25%E6%81%92%E5%AE%9A%E3%80%82%E6%89%93%E7%A0%B4%E5%AF%B9%E7%A7%B0%E5%90%8E%281%E7%BB%B4%E9%97%A8%E6%A7%9B%E6%8F%90%E9%AB%98%29%2C%E2%88%91%CE%B7i%E4%BB%8D%3D1.25%E4%BD%86%E5%88%86%E5%B8%83%E4%B8%8D%E5%9D%87.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-4BC75A77A47A8493 / title: "诺特定理验证 — 5维对称系统（fᵢ相同），∑ηᵢ=5×0.25=1.25恒定。打破对称后（1维门槛提高），∑ηᵢ仍=1.25但分布不均 / 诺特定理验证 - 5维对称系统(fᵢ相同), ∑ηᵢ=5 x 0.25=1.25恒定. 打破对称后(1维门槛提高), ∑ηᵢ仍=1.25但分布不均" / IMPLICIT-4BC75A77A47A8493
+  - 来源：`统一案例总表/0462-C-463-诺特定理验证 — 5维对称系统(fi相同),∑ηi=5×0.25=1.25恒定。打破对称后(1维门槛提高),∑ηi仍=1.25但分布不均.md`
+  - 依赖：—；被引用：—
+- [title: "赛课机制下的教师生存困境：当讲台之上的人不堪重负，教育该如何安放"](../../../inputs/collisions/20260708-teacher-competition/source.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-3af653eabade89a5 / title: "赛课机制下的教师生存困境：当讲台之上的人不堪重负，教育该如何安放"
+  - 来源：`inputs/collisions/20260708-teacher-competition/source.md`
+  - 依赖：—；被引用：—
+- [title: "退出权剥夺导致决策结构退化——三支→二支"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0180-C-180-%E9%80%80%E5%87%BA%E6%9D%83%E5%89%A5%E5%A4%BA%E5%AF%BC%E8%87%B4%E5%86%B3%E7%AD%96%E7%BB%93%E6%9E%84%E9%80%80%E5%8C%96%E2%80%94%E2%80%94%E4%B8%89%E6%94%AF%E2%86%92%E4%BA%8C%E6%94%AF.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-5122d86143151bd6 / title: "退出权剥夺导致决策结构退化——三支→二支"
+  - 来源：`统一案例总表/0180-C-180-退出权剥夺导致决策结构退化——三支→二支.md`
+  - 依赖：—；被引用：—
+- [title: "退相干-退化统一验证 — 8维乘法系统：纯Fisher退化（H=0）时Γ=0.3/年，纯退相干（ε远离门槛）时Γ=0.2/年，两者叠加Γ=0.5/年。A_Fisher衰减速率与Γ_unified精确匹配 / 退相干-退化统一](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0486-C-488-%E9%80%80%E7%9B%B8%E5%B9%B2-%E9%80%80%E5%8C%96%E7%BB%9F%E4%B8%80%E9%AA%8C%E8%AF%81%20%E2%80%94%208%E7%BB%B4%E4%B9%98%E6%B3%95%E7%B3%BB%E7%BB%9F-%E7%BA%AFFisher%E9%80%80%E5%8C%96%28H%3D0%29%E6%97%B6%CE%93%3D0.3.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-123168ed4fc67d3b / title: "退相干-退化统一验证 — 8维乘法系统：纯Fisher退化（H=0）时Γ=0.3/年，纯退相干（ε远离门槛）时Γ=0.2/年，两者叠加Γ=0.5/年。A_Fisher衰减速率与Γ_unified精确匹配 / 退相干-退化统一
+  - 来源：`统一案例总表/0486-C-488-退相干-退化统一验证 — 8维乘法系统-纯Fisher退化(H=0)时Γ=0.3.md`
+  - 依赖：—；被引用：—
+- [title: "高温超导 — 多门控面共振，Tc远高于单机制预言"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0537-C-542-%E9%AB%98%E6%B8%A9%E8%B6%85%E5%AF%BC%20%E2%80%94%20%E5%A4%9A%E9%97%A8%E6%8E%A7%E9%9D%A2%E5%85%B1%E6%8C%AF%2CTc%E8%BF%9C%E9%AB%98%E4%BA%8E%E5%8D%95%E6%9C%BA%E5%88%B6%E9%A2%84%E8%A8%80.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-89301DF6135136E6 / title: "高温超导 — 多门控面共振，Tc远高于单机制预言" / IMPLICIT-89301DF6135136E6
+  - 来源：`统一案例总表/0537-C-542-高温超导 — 多门控面共振,Tc远高于单机制预言.md`
+  - 依赖：—；被引用：—
+- [title: "高温超导 — 多门控面共振，Tc远高于单机制预言"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0537-C-542-%E9%AB%98%E6%B8%A9%E8%B6%85%E5%AF%BC%20%E2%80%94%20%E5%A4%9A%E9%97%A8%E6%8E%A7%E9%9D%A2%E5%85%B1%E6%8C%AF%2CTc%E8%BF%9C%E9%AB%98%E4%BA%8E%E5%8D%95%E6%9C%BA%E5%88%B6%E9%A2%84%E8%A8%80.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-8b58ca50fb988581 / title: "高温超导 — 多门控面共振，Tc远高于单机制预言"
+  - 来源：`统一案例总表/0537-C-542-高温超导 — 多门控面共振,Tc远高于单机制预言.md`
+  - 依赖：—；被引用：—
 - [topology-continuous time-respecting graph path under ARN model rules, not causality](../../../data/architecture/adaptive-relational-network/real-history/after-projection.json)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-9469bf170051c983 / topology-continuous time-respecting graph path under ARN model rules, not causality
@@ -103,6 +158,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-83903856b22c42e2 / v0.1-public-prototype 完成了项目公开化入口、使用指南、边界声明、断言等级、反证机制、贡献指南和致谢。
   - 来源：`docs/roadmap_v0.2.md`
+  - 依赖：—；被引用：—
+- [v0.1/v0.2 只有有界符号执行接口，不存在该历史因果命题的可执行 target；形式化为](../../../RESULTS/LATEST.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-cfbd50bb42a60606 / v0.1/v0.2 只有有界符号执行接口，不存在该历史因果命题的可执行 target；形式化为
+  - 来源：`RESULTS/LATEST.md`
   - 依赖：—；被引用：—
 - [v0.2 的重点不是继续扩张理论，而是建立边界、证据制度、失败类型、benchmark 测试机制和故事化发布队列。](../../../docs/v0.2_summary.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -2266,6 +2326,11 @@
   - 可搜索名称：NFC-ab2c2dda6e989474 / 历史系统可以在内部逻辑上保持自洽，但无法预测外部冲击；当外部冲击导致原有价值体系归零时，系统呈现哥德尔不完备性式的历史实例化。
   - 来源：`统一案例总表/0727-C-0732-哥德尔不完备性历史系统实例化案例.md`
   - 依赖：—；被引用：—
+- [原始 `IMPLEMENTATION_DEFECT` 分类被保留为历史基线，但 `Prediction` 中的“系统可能会](../../../RESULTS/LATEST.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-98bc127007f94411 / 原始 `IMPLEMENTATION_DEFECT` 分类被保留为历史基线，但 `Prediction` 中的“系统可能会
+  - 来源：`RESULTS/LATEST.md`
+  - 依赖：—；被引用：—
 - [原始上传路径：`/Users/zhiyuan/Library/Containers/com.biji.getNotes/Data/Library/Caches/赛课机制下的教师生存困境：当讲台之上的人不堪重负，教育该如何安放-2026年07](../../../outputs/collisions/20260708-teacher-competition/source-snapshot.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-cb1a309b037eefef / 原始上传路径：`/Users/zhiyuan/Library/Containers/com.biji.getNotes/Data/Library/Caches/赛课机制下的教师生存困境：当讲台之上的人不堪重负，教育该如何安放-2026年07
@@ -2435,69 +2500,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-d784f3c0e7c0ae2f / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0469-C-470-退化加速正反馈 — 8维系统中第3维接近门槛时dA_Fisher.md`
   - 来源：`统一案例总表/0469-C-470-退化加速正反馈 — 8维系统中第3维接近门槛时dA_Fisher.md`
-  - 依赖：—；被引用：—
-- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0482-C-484-乘法纠缠验证 — 8维乘法系统S_vN=ln8=2.08,8维加法系统S_vN=0。混合系统α=0.3时S_vN=0.62。纠缠度](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0482-C-484-%E4%B9%98%E6%B3%95%E7%BA%A0%E7%BC%A0%E9%AA%8C%E8%AF%81%20%E2%80%94%208%E7%BB%B4%E4%B9%98%E6%B3%95%E7%B3%BB%E7%BB%9FS_vN%3Dln8%3D2.08%2C8%E7%BB%B4%E5%8A%A0%E6%B3%95%E7%B3%BB%E7%BB%9FS_vN%3D0%E3%80%82%E6%B7%B7%E5%90%88%E7%B3%BB%E7%BB%9F%CE%B1%3D0.3%E6%97%B6S_vN%3D0.62%E3%80%82%E7%BA%A0%E7%BC%A0%E5%BA%A6%E4%B8%8ED120.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-a62fb809cf40dbef / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0482-C-484-乘法纠缠验证 — 8维乘法系统S_vN=ln8=2.08,8维加法系统S_vN=0。混合系统α=0.3时S_vN=0.62。纠缠度
-  - 来源：`统一案例总表/0482-C-484-乘法纠缠验证 — 8维乘法系统S_vN=ln8=2.08,8维加法系统S_vN=0。混合系统α=0.3时S_vN=0.62。纠缠度与D120.md`
-  - 依赖：D120；被引用：—
-- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0486-C-488-退相干-退化统一验证 — 8维乘法系统-纯Fisher退化(H=0)时Γ=0.3.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0486-C-488-%E9%80%80%E7%9B%B8%E5%B9%B2-%E9%80%80%E5%8C%96%E7%BB%9F%E4%B8%80%E9%AA%8C%E8%AF%81%20%E2%80%94%208%E7%BB%B4%E4%B9%98%E6%B3%95%E7%B3%BB%E7%BB%9F-%E7%BA%AFFisher%E9%80%80%E5%8C%96%28H%3D0%29%E6%97%B6%CE%93%3D0.3.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-f4716c747daf0a22 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0486-C-488-退相干-退化统一验证 — 8维乘法系统-纯Fisher退化(H=0)时Γ=0.3.md`
-  - 来源：`统一案例总表/0486-C-488-退相干-退化统一验证 — 8维乘法系统-纯Fisher退化(H=0)时Γ=0.3.md`
-  - 依赖：—；被引用：—
-- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0489-C-491-加法系统无退相干 — 同维度加法系统-d_F有上界3.2,Γ_unified上界=3.2.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0489-C-491-%E5%8A%A0%E6%B3%95%E7%B3%BB%E7%BB%9F%E6%97%A0%E9%80%80%E7%9B%B8%E5%B9%B2%20%E2%80%94%20%E5%90%8C%E7%BB%B4%E5%BA%A6%E5%8A%A0%E6%B3%95%E7%B3%BB%E7%BB%9F-d_F%E6%9C%89%E4%B8%8A%E7%95%8C3.2%2C%CE%93_unified%E4%B8%8A%E7%95%8C%3D3.2.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-1357cb7bd8b22a63 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0489-C-491-加法系统无退相干 — 同维度加法系统-d_F有上界3.2,Γ_unified上界=3.2.md`
-  - 来源：`统一案例总表/0489-C-491-加法系统无退相干 — 同维度加法系统-d_F有上界3.2,Γ_unified上界=3.2.md`
-  - 依赖：—；被引用：—
-- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0503-C-508-β-曲率关系验证 — 5维系统-ε=(0.8,0.6,0.4,0.2,0.1)→β_max=γ.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0503-C-508-%CE%B2-%E6%9B%B2%E7%8E%87%E5%85%B3%E7%B3%BB%E9%AA%8C%E8%AF%81%20%E2%80%94%205%E7%BB%B4%E7%B3%BB%E7%BB%9F-%CE%B5%3D%280.8%2C0.6%2C0.4%2C0.2%2C0.1%29%E2%86%92%CE%B2_max%3D%CE%B3.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-8ee4998f7bf12a3e / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0503-C-508-β-曲率关系验证 — 5维系统-ε=(0.8,0.6,0.4,0.2,0.1)→β_max=γ.md`
-  - 来源：`统一案例总表/0503-C-508-β-曲率关系验证 — 5维系统-ε=(0.8,0.6,0.4,0.2,0.1)→β_max=γ.md`
-  - 依赖：—；被引用：—
-- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0504-C-509-测地线=最优策略验证 — 3维sigmoid乘法系统,1000次随机策略采样-D111策略的S_ignition全局最小,偏离D1](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0504-C-509-%E6%B5%8B%E5%9C%B0%E7%BA%BF%3D%E6%9C%80%E4%BC%98%E7%AD%96%E7%95%A5%E9%AA%8C%E8%AF%81%20%E2%80%94%203%E7%BB%B4sigmoid%E4%B9%98%E6%B3%95%E7%B3%BB%E7%BB%9F%2C1000%E6%AC%A1%E9%9A%8F%E6%9C%BA%E7%AD%96%E7%95%A5%E9%87%87%E6%A0%B7-D111%E7%AD%96%E7%95%A5%E7%9A%84S_ignition%E5%85%A8%E5%B1%80%E6%9C%80%E5%B0%8F%2C%E5%81%8F%E7%A6%BBD111%E7%9A%84%E7%AD%96%E7%95%A5.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-55636d96de1051e7 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0504-C-509-测地线=最优策略验证 — 3维sigmoid乘法系统,1000次随机策略采样-D111策略的S_ignition全局最小,偏离D1
-  - 来源：`统一案例总表/0504-C-509-测地线=最优策略验证 — 3维sigmoid乘法系统,1000次随机策略采样-D111策略的S_ignition全局最小,偏离D111的策略.md`
-  - 依赖：D111；被引用：—
-- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0507-C-512-最弱维度=曲率奇点验证 — 8维系统中第7维ε7=0.05(最弱)-该方向Fisher度规g77=1.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0507-C-512-%E6%9C%80%E5%BC%B1%E7%BB%B4%E5%BA%A6%3D%E6%9B%B2%E7%8E%87%E5%A5%87%E7%82%B9%E9%AA%8C%E8%AF%81%20%E2%80%94%208%E7%BB%B4%E7%B3%BB%E7%BB%9F%E4%B8%AD%E7%AC%AC7%E7%BB%B4%CE%B57%3D0.05%28%E6%9C%80%E5%BC%B1%29-%E8%AF%A5%E6%96%B9%E5%90%91Fisher%E5%BA%A6%E8%A7%84g77%3D1.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-04d449ea1abbadac / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0507-C-512-最弱维度=曲率奇点验证 — 8维系统中第7维ε7=0.05(最弱)-该方向Fisher度规g77=1.md`
-  - 来源：`统一案例总表/0507-C-512-最弱维度=曲率奇点验证 — 8维系统中第7维ε7=0.05(最弱)-该方向Fisher度规g77=1.md`
-  - 依赖：—；被引用：—
-- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0508-C-513-测地线唯一性验证 — 3维系统10000次随机采样-D111的S_ignition全局最小,无第二极值点。二阶变分δ2S=0.34](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0508-C-513-%E6%B5%8B%E5%9C%B0%E7%BA%BF%E5%94%AF%E4%B8%80%E6%80%A7%E9%AA%8C%E8%AF%81%20%E2%80%94%203%E7%BB%B4%E7%B3%BB%E7%BB%9F10000%E6%AC%A1%E9%9A%8F%E6%9C%BA%E9%87%87%E6%A0%B7-D111%E7%9A%84S_ignition%E5%85%A8%E5%B1%80%E6%9C%80%E5%B0%8F%2C%E6%97%A0%E7%AC%AC%E4%BA%8C%E6%9E%81%E5%80%BC%E7%82%B9%E3%80%82%E4%BA%8C%E9%98%B6%E5%8F%98%E5%88%86%CE%B42S%3D0.34-0%E7%A1%AE%E8%AE%A4%E7%A8%B3.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-af99a73679c2e066 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0508-C-513-测地线唯一性验证 — 3维系统10000次随机采样-D111的S_ignition全局最小,无第二极值点。二阶变分δ2S=0.34
-  - 来源：`统一案例总表/0508-C-513-测地线唯一性验证 — 3维系统10000次随机采样-D111的S_ignition全局最小,无第二极值点。二阶变分δ2S=0.34-0确认稳.md`
-  - 依赖：D111；被引用：—
-- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0509-C-514-最弱维度=曲率奇点统一验证 — 8维系统ε7=0.05-g77=400(度规最大),R_cog在ε7方向最大(曲率发散),β由ε7](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0509-C-514-%E6%9C%80%E5%BC%B1%E7%BB%B4%E5%BA%A6%3D%E6%9B%B2%E7%8E%87%E5%A5%87%E7%82%B9%E7%BB%9F%E4%B8%80%E9%AA%8C%E8%AF%81%20%E2%80%94%208%E7%BB%B4%E7%B3%BB%E7%BB%9F%CE%B57%3D0.05-g77%3D400%28%E5%BA%A6%E8%A7%84%E6%9C%80%E5%A4%A7%29%2CR_cog%E5%9C%A8%CE%B57%E6%96%B9%E5%90%91%E6%9C%80%E5%A4%A7%28%E6%9B%B2%E7%8E%87%E5%8F%91%E6%95%A3%29%2C%CE%B2%E7%94%B1%CE%B57%E5%86%B3%E5%AE%9A%28%E7%AD%96%E7%95%A5.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-40fb45c67891d2e0 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0509-C-514-最弱维度=曲率奇点统一验证 — 8维系统ε7=0.05-g77=400(度规最大),R_cog在ε7方向最大(曲率发散),β由ε7
-  - 来源：`统一案例总表/0509-C-514-最弱维度=曲率奇点统一验证 — 8维系统ε7=0.05-g77=400(度规最大),R_cog在ε7方向最大(曲率发散),β由ε7决定(策略.md`
-  - 依赖：—；被引用：—
-- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0516-C-521-Yukawa层级验证 — 8维系统-最弱维度ε7=0.05→y7=8.2(对C_exit极度敏感),最强维度ε1=0.9→y1=0](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0516-C-521-Yukawa%E5%B1%82%E7%BA%A7%E9%AA%8C%E8%AF%81%20%E2%80%94%208%E7%BB%B4%E7%B3%BB%E7%BB%9F-%E6%9C%80%E5%BC%B1%E7%BB%B4%E5%BA%A6%CE%B57%3D0.05%E2%86%92y7%3D8.2%28%E5%AF%B9C_exit%E6%9E%81%E5%BA%A6%E6%95%8F%E6%84%9F%29%2C%E6%9C%80%E5%BC%BA%E7%BB%B4%E5%BA%A6%CE%B51%3D0.9%E2%86%92y1%3D0.3%E3%80%82y7.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-5349472ae1ff7fcd / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0516-C-521-Yukawa层级验证 — 8维系统-最弱维度ε7=0.05→y7=8.2(对C_exit极度敏感),最强维度ε1=0.9→y1=0
-  - 来源：`统一案例总表/0516-C-521-Yukawa层级验证 — 8维系统-最弱维度ε7=0.05→y7=8.2(对C_exit极度敏感),最强维度ε1=0.9→y1=0.3。y7.md`
-  - 依赖：—；被引用：—
-- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0537-C-542-高温超导 — 多门控面共振,Tc远高于单机制预言.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0537-C-542-%E9%AB%98%E6%B8%A9%E8%B6%85%E5%AF%BC%20%E2%80%94%20%E5%A4%9A%E9%97%A8%E6%8E%A7%E9%9D%A2%E5%85%B1%E6%8C%AF%2CTc%E8%BF%9C%E9%AB%98%E4%BA%8E%E5%8D%95%E6%9C%BA%E5%88%B6%E9%A2%84%E8%A8%80.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-b29add64b7e376a9 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0537-C-542-高温超导 — 多门控面共振,Tc远高于单机制预言.md`
-  - 来源：`统一案例总表/0537-C-542-高温超导 — 多门控面共振,Tc远高于单机制预言.md`
-  - 依赖：—；被引用：—
-- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0570-C-575-免疫系统更新.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0570-C-575-%E5%85%8D%E7%96%AB%E7%B3%BB%E7%BB%9F%E6%9B%B4%E6%96%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-8f6b2741fe6cdfaf / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0570-C-575-免疫系统更新.md`
-  - 来源：`统一案例总表/0570-C-575-免疫系统更新.md`
-  - 依赖：—；被引用：—
-- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0591-C-596-OrcaRouter智能分流机制验证.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0591-C-596-OrcaRouter%E6%99%BA%E8%83%BD%E5%88%86%E6%B5%81%E6%9C%BA%E5%88%B6%E9%AA%8C%E8%AF%81.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-53bf4cba0a096898 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0591-C-596-OrcaRouter智能分流机制验证.md`
-  - 来源：`统一案例总表/0591-C-596-OrcaRouter智能分流机制验证.md`
-  - 依赖：—；被引用：—
-- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0594-C-599-仲裁机制让判断不必要验证.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0594-C-599-%E4%BB%B2%E8%A3%81%E6%9C%BA%E5%88%B6%E8%AE%A9%E5%88%A4%E6%96%AD%E4%B8%8D%E5%BF%85%E8%A6%81%E9%AA%8C%E8%AF%81.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-9f9c83ea33c58bf1 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0594-C-599-仲裁机制让判断不必要验证.md`
-  - 来源：`统一案例总表/0594-C-599-仲裁机制让判断不必要验证.md`
   - 依赖：—；被引用：—

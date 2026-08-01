@@ -21,14 +21,14 @@ MODEL_PATH = REPO / "data/operations/iterations/109/priority_model.json"
 
 
 def _resolve_out():
+    env = os.environ.get("ITERATION_OUT_DIR")
+    if env:
+        return REPO / "data/operations/iterations" / env
     # Task 110 §5: when a reconciliation ledger exists, reconciled planner outputs go to
     # that task's own iterations dir (e.g. 110), so the immutable task-109 historical
     # artifacts are never overwritten. Otherwise fall back to the original 109 dir.
     if CS.LEDGER_PATH.exists():
         return CS.LEDGER_PATH.parent
-    env = os.environ.get("ITERATION_OUT_DIR")
-    if env:
-        return REPO / "data/operations/iterations" / env
     return REPO / "data/operations/iterations/109"
 
 
@@ -244,9 +244,14 @@ def read_quarantine(sample_per_file=12):
 
 def read_case_failures():
     out = []
-    import os
-    base = "case_failures/examples"
-    txt = git_show("case_failures/README.md") or ""
+    evidence_status = {}
+    evidence_path = OUT / "case-status.json"
+    if evidence_path.exists():
+        try:
+            evidence_doc = json.loads(evidence_path.read_text(encoding="utf-8"))
+            evidence_status = {item.get("case_id"): item for item in evidence_doc.get("cases", [])}
+        except (OSError, TypeError, ValueError):
+            evidence_status = {}
     # enumerate example files via ls-tree
     r = subprocess.run(["git", "ls-tree", "-r", "--name-only", "origin/main", "case_failures/examples"],
                        cwd=str(REPO), capture_output=True, text=True)
@@ -269,6 +274,18 @@ def read_case_failures():
         c["claim_ceiling"] = "Documented failure mode; not a claim of system correctness."
         c["affected_surfaces"] = ["function-os", "case-library"]
         c["evidence_needs"] = ["regression guard", "bounded-domain test"]
+        # Task-local evidence adjudication is an optional, fail-closed overlay.
+        # Historical class membership remains intact, but a narrative or
+        # target-absent case cannot remain schedulable as a known defect.
+        adjudication = evidence_status.get(cid)
+        if adjudication:
+            c["current_status"] = adjudication.get("case_label", c["current_status"])
+            c["claim_ceiling"] = adjudication.get("claim_ceiling") or c["claim_ceiling"]
+            c["provenance"]["evidence_gate_status"] = adjudication.get("status_dimensions", {})
+            c["provenance"]["evidence_gate_record"] = str(evidence_path.relative_to(REPO))
+            c["evidence_needs"] = ["versioned executable target", "exact input/output", "trace", "oracle", "regression guard"]
+            if c["current_status"] != "REPRODUCED_IMPLEMENTATION_DEFECT":
+                c["prerequisite_unresolved"] = True
         out.append(c)
     return out
 

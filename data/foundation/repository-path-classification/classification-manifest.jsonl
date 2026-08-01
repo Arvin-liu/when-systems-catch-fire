@@ -1058,6 +1058,26 @@
 {"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "data/operations/iterations/110/queue_diff.md"}
 {"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "data/operations/iterations/110/ranked_queue.json"}
 {"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "data/operations/iterations/110/substantive_work_ratio.json"}
+{"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "data/operations/iterations/111/BASELINE_CLASSIFICATION.md"}
+{"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "data/operations/iterations/111/CONTROL_LOCK.json"}
+{"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "data/operations/iterations/111/DECISION_PACKET.md"}
+{"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "data/operations/iterations/111/STATUS_MODEL.json"}
+{"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "data/operations/iterations/111/TARGET_AUDIT.md"}
+{"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "data/operations/iterations/111/blocked_register.json"}
+{"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "data/operations/iterations/111/candidate_inventory.json"}
+{"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "data/operations/iterations/111/case-status.json"}
+{"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "data/operations/iterations/111/completed_register.json"}
+{"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "data/operations/iterations/111/completion-reconciliation.json"}
+{"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "data/operations/iterations/111/completion_registry.json"}
+{"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "data/operations/iterations/111/corrected_queue.json"}
+{"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "data/operations/iterations/111/dependency_graph.json"}
+{"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "data/operations/iterations/111/historical/EVIDENCE_DOSSIER.md"}
+{"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "data/operations/iterations/111/historical/PREREGISTRATION.md"}
+{"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "data/operations/iterations/111/historical/RESERVE-READINESS-CROSS-DOMAIN.md"}
+{"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "data/operations/iterations/111/historical/RESERVE-READINESS-TECHNOLOGY-ECONOMIC.md"}
+{"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "data/operations/iterations/111/historical/SOURCES.jsonl"}
+{"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "data/operations/iterations/111/ranked_queue.json"}
+{"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "data/operations/iterations/111/substantive_work_ratio.json"}
 {"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "data/operations/iterations/121Q24.json"}
 {"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "data/operations/iterations/121Q25.json"}
 {"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "data/operations/iterations/121Q25B.json"}
@@ -1085,6 +1105,8 @@
 {"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "data/operations/propagation/108-impact/system-map-nonimpact-proof.json"}
 {"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "data/operations/propagation/110-impact.json"}
 {"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "data/operations/propagation/110-impact/system-map-nonimpact-proof.json"}
+{"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "data/operations/propagation/111-impact.json"}
+{"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "data/operations/propagation/111-impact/system-map-nonimpact-proof.json"}
 {"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "data/operations/propagation/121Q32-closure.json"}
 {"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "data/operations/propagation/121Q32-impact-report.md"}
 {"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "data/operations/propagation/121Q32-map-delta.json"}
@@ -1187,6 +1209,7 @@
 {"category": "EDITORIAL_ARTICLE", "matched_rule": "EDITORIAL_ARTICLE", "path": "docs/editorial/articles/007-bounded-trust-function-os-v02-capability-benchmark.md"}
 {"category": "EDITORIAL_ARTICLE", "matched_rule": "EDITORIAL_ARTICLE", "path": "docs/editorial/articles/008-merged-but-stale-public-truth.md"}
 {"category": "EDITORIAL_ARTICLE", "matched_rule": "EDITORIAL_ARTICLE", "path": "docs/editorial/articles/009-system-completion-state-and-independent-replication.md"}
+{"category": "EDITORIAL_ARTICLE", "matched_rule": "EDITORIAL_ARTICLE", "path": "docs/editorial/articles/010-failure-case-evidence-gate-and-apple-case-adjudication.md"}
 {"category": "EDITORIAL_ARTICLE", "matched_rule": "EDITORIAL_ARTICLE", "path": "docs/editorial/source-manifest.json"}
 {"category": "EDITORIAL_ARTICLE", "matched_rule": "EDITORIAL_ARTICLE", "path": "docs/editorial/system-map-governance.md"}
 {"category": "EDITORIAL_ARTICLE", "matched_rule": "EDITORIAL_ARTICLE", "path": "docs/evidence_regime_library.md"}
@@ -1722,6 +1745,7 @@
 {"category": "SCHEMA", "matched_rule": "SCHEMA", "path": "schemas/architecture/sample-envelope.schema.json"}
 {"category": "SCHEMA", "matched_rule": "SCHEMA", "path": "schemas/atlas/atlas.schema.json"}
 {"category": "SCHEMA", "matched_rule": "SCHEMA", "path": "schemas/atlas/map-diff.schema.json"}
+{"category": "SCHEMA", "matched_rule": "SCHEMA", "path": "schemas/failure-case-evidence-gate.schema.json"}
 {"category": "SCHEMA", "matched_rule": "SCHEMA", "path": "schemas/foundation/adjudication.schema.json"}
 {"category": "SCHEMA", "matched_rule": "SCHEMA", "path": "schemas/foundation/argument.schema.json"}
 {"category": "SCHEMA", "matched_rule": "SCHEMA", "path": "schemas/foundation/claim.schema.json"}
@@ -1804,6 +1828,7 @@
 {"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "tests/fixtures/empty-result.json"}
 {"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "tests/fixtures/empty.json"}
 {"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "tests/fixtures/empty.md"}
+{"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "tests/fixtures/failure_case_evidence_gate/README.md"}
 {"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "tests/fixtures/fake-result.json"}
 {"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "tests/fixtures/fake.json"}
 {"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "tests/fixtures/fake.md"}
@@ -1844,6 +1869,7 @@
 {"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "tests/test_diff_coverage_gate.py"}
 {"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "tests/test_era_resolver_generalization.py"}
 {"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "tests/test_external_attestation.py"}
+{"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "tests/test_failure_case_evidence_gate.py"}
 {"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "tests/test_generated_output_authority.py"}
 {"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "tests/test_generated_output_authority_generic.py"}
 {"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "tests/test_generated_output_authority_negative.py"}
@@ -1901,6 +1927,7 @@
 {"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": "tools/emit_evidence_program_openalex.py"}
 {"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": "tools/extract_cluster_source_brief.py"}
 {"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": "tools/extract_validator_field_usage.py"}
+{"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": "tools/failure_case_evidence_gate.py"}
 {"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": "tools/foundation/adjudicate_core.py"}
 {"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": "tools/foundation/adjudicate_function_assets.py"}
 {"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": "tools/foundation/adjudicate_nonfunction_claims.py"}

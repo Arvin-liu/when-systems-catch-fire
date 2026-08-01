@@ -4,6 +4,56 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [link: "统一案例总表/0720-C-0725-自举循环操作手册纯数学化.md"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0720-C-0725-%E8%87%AA%E4%B8%BE%E5%BE%AA%E7%8E%AF%E6%93%8D%E4%BD%9C%E6%89%8B%E5%86%8C%E7%BA%AF%E6%95%B0%E5%AD%A6%E5%8C%96.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-2e0c4ccaaa9a0c2f / link: "统一案例总表/0720-C-0725-自举循环操作手册纯数学化.md"
+  - 来源：`统一案例总表/0720-C-0725-自举循环操作手册纯数学化.md`
+  - 依赖：—；被引用：—
+- [link: "统一案例总表/0794-C-0799-生命起源与自组织.md"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0794-C-0799-%E7%94%9F%E5%91%BD%E8%B5%B7%E6%BA%90%E4%B8%8E%E8%87%AA%E7%BB%84%E7%BB%87.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-dfffd0354e82ac1f / link: "统一案例总表/0794-C-0799-生命起源与自组织.md"
+  - 来源：`统一案例总表/0794-C-0799-生命起源与自组织.md`
+  - 依赖：—；被引用：—
+- [Local Note Sync Report](../../ASSET-CARDS.md#asset-hr-a2f6b1bf53bb9239)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：Local Note Sync Report / local-note-sync-report-20260712
+  - 来源：`reports/math-foundation/local-note-sync-report-20260712.md`
+  - 依赖：—；被引用：—
+- [Local source and recovery audit](../../ASSET-CARDS.md#asset-hr-6d4c8f2164bcd7cb)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：Local source and recovery audit / local-source-recovery-audit-20260712
+  - 来源：`reports/foundation-architecture/local-source-recovery-audit-20260712.md`
+  - 依赖：—；被引用：—
+- [logic = "DEFEASIBLE_SUPPORT" if claim_type in {"STRUCTURAL_ANALOGY", "EXPLANATORY_HYPOTHESIS", "EMPIRICAL_ASSOCIATION"}](../../../tools/foundation/adjudicate_core.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-a099d2d7232871fa / logic = "DEFEASIBLE_SUPPORT" if claim_type in {"STRUCTURAL_ANALOGY", "EXPLANATORY_HYPOTHESIS", "EMPIRICAL_ASSOCIATION"}
+  - 来源：`tools/foundation/adjudicate_core.py`
+  - 依赖：—；被引用：—
+- [Logic validation report](../../ASSET-CARDS.md#asset-hr-72e8a74d5d2cba68)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：Logic validation report / logic-validation-report-20260712
+  - 来源：`reports/foundation-architecture/logic-validation-report-20260712.md`
+  - 依赖：—；被引用：—
+- [logic_status = "WELL_FORMED" if quantifiers and known_evidence else "UNDER_SPECIFIED"](../../../tools/foundation/process_084_batch.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-b10884364cc4a791 / logic_status = "WELL_FORMED" if quantifiers and known_evidence else "UNDER_SPECIFIED"
+  - 来源：`tools/foundation/process_084_batch.py`
+  - 依赖：—；被引用：—
+- [logic_status="ANALOGY_NOT_EQUIVALENCE",](../../../tools/foundation/build_080_queue.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-0f8f7245a454e68c / logic_status="ANALOGY_NOT_EQUIVALENCE",
+  - 来源：`tools/foundation/build_080_queue.py`
+  - 依赖：—；被引用：—
+- [Logical relations establish compiler correspondence and measure notions are precise, but no general equivalence decision](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-12b9d8cc9e4ba668 / Logical relations establish compiler correspondence and measure notions are precise, but no general equivalence decision
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [Lowering, slot replacement, symbolic execution, branch interpolation and gradient fitting define a concrete hybrid compi](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-e3793cb8e0aa70ef / Lowering, slot replacement, symbolic execution, branch interpolation and gradient fitting define a concrete hybrid compi
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
 - [M 与 E 正交。M6/E0 完全可能：形式证明状态与现实映射证据相互独立。](../../../docs/foundation/claim-governance-and-function-identity.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-61600add7c22f062 / M 与 E 正交。M6/E0 完全可能：形式证明状态与现实映射证据相互独立。
@@ -1559,6 +1609,11 @@
   - 可搜索名称：NFC-4d8ebcd335f9a80a / out={name:{**base,"title":name.replace("-"," ").title()} for name in \["formal-object","claim","argument","evidence","sou
   - 来源：`tools/foundation/migrate_legacy.py`
   - 依赖：—；被引用：—
+- [output, wrong semantic target, no external evidence, changed formalization,](../../../tests/fixtures/failure_case_evidence_gate/README.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-0345dab2af05f3f1 / output, wrong semantic target, no external evidence, changed formalization,
+  - 来源：`tests/fixtures/failure_case_evidence_gate/README.md`
+  - 依赖：—；被引用：—
 - [O₂(x,y) := T245(对数同构)**](../../../docs/phi_meta_law.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-42c46e6d9e71880b / O₂(x,y) := T245(对数同构)**
@@ -2448,59 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-f7268ad6a0f5a094 / Publication and code provenance are available, but no artifact registry lifecycle or version-state machine is specified.
   - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
-  - 依赖：—；被引用：—
-- [Purpose: avoid overstating evidence.](../../../inputs/020/formal-protocol-promotion-standard.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-ebbc0fcacc6aff97 / Purpose: avoid overstating evidence.
-  - 来源：`inputs/020/formal-protocol-promotion-standard.md`
-  - 依赖：—；被引用：—
-- [Purpose: keep lifecycle states unambiguous.](../../../inputs/020/formal-protocol-promotion-standard.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-5073f711e39eef84 / Purpose: keep lifecycle states unambiguous.
-  - 来源：`inputs/020/formal-protocol-promotion-standard.md`
-  - 依赖：—；被引用：—
-- [Purpose: separate internal inference from external proof.](../../../inputs/020/formal-protocol-promotion-standard.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-3d33b7f5f3c0611f / Purpose: separate internal inference from external proof.
-  - 来源：`inputs/020/formal-protocol-promotion-standard.md`
-  - 依赖：—；被引用：—
-- [Python APIs, configs, tensor carriers, and artifact files are concrete, but formal function semantics and shape/effect c](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-d67672c56b4883bb / Python APIs, configs, tensor carriers, and artifact files are concrete, but formal function semantics and shape/effect c
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
-  - 依赖：—；被引用：—
-- [Q-0025 补充 \[D160\](docs/zh/functions/items/D160.md) 的强化学习统一案例：偏好、愉悦、选择和成瘾可写成同一奖励势函数的不同实例。](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0576-C-581-%E5%81%8F%E5%A5%BD-%E6%84%89%E6%82%A6%E5%85%B1%E5%90%8C%E5%8A%BF%E5%87%BD%E6%95%B0%E9%AA%8C%E8%AF%81.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-1f7b6ac6de829f13 / Q-0025 补充 \[D160\](docs/zh/functions/items/D160.md) 的强化学习统一案例：偏好、愉悦、选择和成瘾可写成同一奖励势函数的不同实例。
-  - 来源：`统一案例总表/0576-C-581-偏好-愉悦共同势函数验证.md`
-  - 依赖：D160；被引用：—
-- [Q-0032 将植物人醒不来抽象为唤醒-意识网络自举循环未闭合。](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0586-C-591-%E7%A5%9E%E7%BB%8F%E8%87%AA%E4%B8%BE%E5%94%A4%E9%86%92%E9%AA%8C%E8%AF%81.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-9753cd90736e873d / Q-0032 将植物人醒不来抽象为唤醒-意识网络自举循环未闭合。
-  - 来源：`统一案例总表/0586-C-591-神经自举唤醒验证.md`
-  - 依赖：—；被引用：—
-- [Q12 separates action and mechanism; Q13 controls distributions and attractors; Q14 prevents maps from becoming proof.](../../../reports/architecture/121Q22-probability-system-gap-audit.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-c02deed87f087eef / Q12 separates action and mechanism; Q13 controls distributions and attractors; Q14 prevents maps from becoming proof.
-  - 来源：`reports/architecture/121Q22-probability-system-gap-audit.md`
-  - 依赖：—；被引用：—
-- [Q14 Atlas can project MCF views, but map position is not causal proof.](../../../docs/architecture/multiscale-causal-fabric.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-d6a25f6b733b080e / Q14 Atlas can project MCF views, but map position is not causal proof.
-  - 来源：`docs/architecture/multiscale-causal-fabric.md`
-  - 依赖：—；被引用：—
-- [Q14 can project PSD maps, but visual position and numbers are not proof.](../../../reports/architecture/121Q22-probabilistic-system-dynamics-validation.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-cf4d7f6d3794c1b9 / Q14 can project PSD maps, but visual position and numbers are not proof.
-  - 来源：`reports/architecture/121Q22-probabilistic-system-dynamics-validation.md`
-  - 依赖：—；被引用：—
-- [Q14: Atlas may project fabric views, but map position, edge presence, stage, visual proximity, and centrality are not pr](../../../reports/architecture/121Q21R-multiscale-causal-fabric-validation.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-2cb07bdebe9cccac / Q14: Atlas may project fabric views, but map position, edge presence, stage, visual proximity, and centrality are not pr
-  - 来源：`reports/architecture/121Q21R-multiscale-causal-fabric-validation.md`
-  - 依赖：—；被引用：—
-- [Q24 建立的迭代操作法已在 PR #56 验收并合并后成为当前仓库操作能力；未来状态改变任务必须按 `ITERATION.md` 记录 gap、claim ceiling、同步矩阵、验证和回执。遵循该方法不证明真理、价值、因果、完整性或正](../../../AI-HANDOFF.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-6d1897b5f5388c60 / Q24 建立的迭代操作法已在 PR #56 验收并合并后成为当前仓库操作能力；未来状态改变任务必须按 `ITERATION.md` 记录 gap、claim ceiling、同步矩阵、验证和回执。遵循该方法不证明真理、价值、因果、完整性或正
-  - 来源：`AI-HANDOFF.md`
   - 依赖：—；被引用：—

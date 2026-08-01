@@ -334,9 +334,9 @@
   - 可搜索名称：NFC-2da11ec2ef4adb81 / "excluded_trigger_dimensions": \["identity"\], "proof_method": "registered fixture closure", "plan_hash": "pending",
   - 来源：`tests/test_incremental_execution_defensive_rejections.py`
   - 依赖：—；被引用：—
-- ["explanatory only; no new scientific/mathematical/empirical conclusion; asserts only "](../../../tools/propagation/generate_editorial_manifest.py)
+- ["explanatory only; no new scientific/mathematical/empirical conclusion; no current "](../../../tools/propagation/generate_editorial_manifest.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-02274e055cba6f4e / "explanatory only; no new scientific/mathematical/empirical conclusion; asserts only "
+  - 可搜索名称：NFC-f3c9dfdb4e678d0c / "explanatory only; no new scientific/mathematical/empirical conclusion; no current "
   - 来源：`tools/propagation/generate_editorial_manifest.py`
   - 依赖：—；被引用：—
 - ["expression", "semantics", "sources", "proof_obligations", "validation_method",](../../../tools/math_foundation_audit.py)
@@ -494,6 +494,11 @@
   - 可搜索名称：NFC-4c7daa7be9b48ef1 / "legacy_status":"UNPROVED_ARGUMENT_SCHEMA","artifact_status":"PREMISE_DEPENDENCE_MODEL_ONLY"},
   - 来源：`tools/foundation/verify_079.py`
   - 依赖：—；被引用：—
+- ["lifecycle claim until the material source change is reviewed"),](../../../tools/propagation/generate_editorial_manifest.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-6d293a38a048c074 / "lifecycle claim until the material source change is reviewed"),
+  - 来源：`tools/propagation/generate_editorial_manifest.py`
+  - 依赖：—；被引用：—
 - ["lifecycle", "phase_b",](../../../tools/validate_iteration_sync.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
   - 可搜索名称：NFC-4fcd62fa18192a5f / "lifecycle", "phase_b",
@@ -518,6 +523,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
   - 可搜索名称：NFC-d0bb4b14495fea9d / "lifecycle-events.jsonl",
   - 来源：`tools/propagation/current_truth_projection.py`
+  - 依赖：—；被引用：—
+- ["lifecycle_events.py",](../../../tools/propagation/generate_editorial_manifest.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-bfe207da1ecdf880 / "lifecycle_events.py",
+  - 来源：`tools/propagation/generate_editorial_manifest.py`
   - 依赖：—；被引用：—
 - ["lifecycle_state": "CANDIDATE",](../../../tools/operations/run_stage_snapshot_responsibility_cases.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
@@ -658,6 +668,11 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-D241E31E6C0A1B01 / "name": "门控函数族", / IMPLICIT-D241E31E6C0A1B01
   - 来源：`data/function_dependency.json`
+  - 依赖：—；被引用：—
+- ["NARRATIVE_HYPOTHESIS", "EVIDENCE_SUPPORTED_COUNTEREXAMPLE",](../../../tools/failure_case_evidence_gate.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-091085d39f7c9598 / "NARRATIVE_HYPOTHESIS", "EVIDENCE_SUPPORTED_COUNTEREXAMPLE",
+  - 来源：`tools/failure_case_evidence_gate.py`
   - 依赖：—；被引用：—
 - ["network_and_third_party", "lifecycle", "phase_e", "historical_f5_boundary",](../../../tools/operations/validate_phase_d_closeout.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -1039,6 +1054,11 @@
   - 可搜索名称：NFC-8ceea51a7ed793dc / "tests/test_lifecycle_events.py",
   - 来源：`tools/foundation/adjudicate_nonfunction_claims.py`
   - 依赖：—；被引用：—
+- ["the article must be re-reviewed before it can assert current lifecycle details",](../../../tools/propagation/generate_editorial_manifest.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-79f3401e305dd0eb / "the article must be re-reviewed before it can assert current lifecycle details",
+  - 来源：`tools/propagation/generate_editorial_manifest.py`
+  - 依赖：—；被引用：—
 - ["THEOREM_OR_MATHEMATICAL_CLAIM": "MATHEMATICAL",](../../../tools/foundation/adjudicate_nonfunction_claims.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-b09ff129ee50438a / "THEOREM_OR_MATHEMATICAL_CLAIM": "MATHEMATICAL",
@@ -1088,6 +1108,11 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-DD6B93B90CCB25D8 / "title": "No probability calibration record, rare-event tail record, or rule that high probability is not causal proof.", / IMPLICIT-DD6B93B90CCB25D8 / IMPLICIT-1759BA0502D2F340
   - 来源：`data/operations/iterations/110/candidate_inventory.json`
+  - 依赖：—；被引用：—
+- ["title": "No probability calibration record, rare-event tail record, or rule that high probability is not causal proof.",](../../../data/operations/iterations/111/candidate_inventory.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-DE698B67F6F2A646 / "title": "No probability calibration record, rare-event tail record, or rule that high probability is not causal proof.", / IMPLICIT-DE698B67F6F2A646 / IMPLICIT-1759BA0502D2F340
+  - 来源：`data/operations/iterations/111/candidate_inventory.json`
   - 依赖：—；被引用：—
 - ["title": "v0.2 函数依赖图初稿",](../../../analysis/corpus-relation/corpus_relation_graph.json)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -1178,6 +1203,11 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-3DD3FDA5BAC09E32 / "title": "函数资产深审", / IMPLICIT-3DD3FDA5BAC09E32 / IMPLICIT-2C2EB00590E8319F
   - 来源：`data/operations/iterations/109/candidate_inventory.json`
+  - 依赖：—；被引用：—
+- ["title": "函数资产深审",](../../../data/operations/iterations/111/candidate_inventory.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-760BD9357BA99E1B / "title": "函数资产深审", / IMPLICIT-760BD9357BA99E1B / IMPLICIT-2C2EB00590E8319F
+  - 来源：`data/operations/iterations/111/candidate_inventory.json`
   - 依赖：—；被引用：—
 - ["title": "函数资产深审",](../../../data/operations/iterations/110/candidate_inventory.json)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -1396,7 +1426,7 @@
   - 依赖：—；被引用：—
 - ["title": "量子引力",](../../../data/operations/iterations/109/candidate_inventory.json)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-0D183A5B4C89E035 / "title": "量子引力", / IMPLICIT-0D183A5B4C89E035 / IMPLICIT-7D5E859043317ECD
+  - 可搜索名称：IMPLICIT-0D183A5B4C89E035 / "title": "量子引力", / IMPLICIT-0D183A5B4C89E035 / IMPLICIT-651069CCAE3D8159
   - 来源：`data/operations/iterations/109/candidate_inventory.json`
   - 依赖：—；被引用：—
 - ["title": "门控面合并统一函数",](../../../analysis/corpus-relation/article_cluster_candidates.json)
@@ -1433,6 +1463,11 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-4470808232D9BC23 / "title": "非函数断言补证", / IMPLICIT-4470808232D9BC23 / IMPLICIT-082D1A504924985C
   - 来源：`data/operations/iterations/109/candidate_inventory.json`
+  - 依赖：—；被引用：—
+- ["title": "非函数断言补证",](../../../data/operations/iterations/111/candidate_inventory.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-6D6FF17770ABD95A / "title": "非函数断言补证", / IMPLICIT-6D6FF17770ABD95A / IMPLICIT-082D1A504924985C
+  - 来源：`data/operations/iterations/111/candidate_inventory.json`
   - 依赖：—；被引用：—
 - ["tools/propagation/derived_lifecycle_view.py",](../../../tools/foundation/adjudicate_nonfunction_claims.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
@@ -2468,39 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-C6868D93532A0674 / ## 关联函数 / Related Functions / IMPLICIT-C6868D93532A0674 / IMPLICIT-0026301F130FD562
   - 来源：`统一案例总表/0778-C-0783-准备《长谈》花一个月.md`
-  - 依赖：—；被引用：—
-- [## 关联函数 / Related Functions](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0699-C-0704-%E5%9B%A0%E6%9E%9C%E5%85%89%E9%94%A5%C3%97%E9%A9%AC%E6%8B%89%E6%9D%BE%C3%97%E9%AB%98%E5%B1%B1%E6%BB%91%E9%9B%AA.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-C6EAA8B9C39C23FC / ## 关联函数 / Related Functions / IMPLICIT-C6EAA8B9C39C23FC / IMPLICIT-0026301F130FD562
-  - 来源：`统一案例总表/0699-C-0704-因果光锥×马拉松×高山滑雪.md`
-  - 依赖：—；被引用：—
-- [## 关联函数 / Related Functions](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0747-C-0752-%E7%BE%8E%E5%9B%BD%E7%A6%81%E9%85%92%E4%BB%A4.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-C76FF31CC51F5CC3 / ## 关联函数 / Related Functions / IMPLICIT-C76FF31CC51F5CC3 / IMPLICIT-0026301F130FD562
-  - 来源：`统一案例总表/0747-C-0752-美国禁酒令.md`
-  - 依赖：—；被引用：—
-- [## 关联函数 / Related Functions](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0785-C-0790-%E5%BF%AB%E9%97%AA%E9%98%85%E8%AF%BB%E5%8F%8D%E7%AE%97%E6%B3%95.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-C7D38580AEA8D93E / ## 关联函数 / Related Functions / IMPLICIT-C7D38580AEA8D93E / IMPLICIT-0026301F130FD562
-  - 来源：`统一案例总表/0785-C-0790-快闪阅读反算法.md`
-  - 依赖：—；被引用：—
-- [## 关联函数 / Related Functions](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0801-C-0806-AI%20%E4%BD%9C%E8%80%85%E6%80%A7%E4%B8%8E%E7%94%9F%E6%88%90%E8%89%BA%E6%9C%AF.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-C9213096FE24DD2C / ## 关联函数 / Related Functions / IMPLICIT-C9213096FE24DD2C / IMPLICIT-0026301F130FD562
-  - 来源：`统一案例总表/0801-C-0806-AI 作者性与生成艺术.md`
-  - 依赖：—；被引用：—
-- [## 关联函数 / Related Functions](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0756-C-0761-%E5%AE%A0%E7%89%A9%E9%A1%B9%E7%9B%AE%EF%BC%9A%E8%AE%B0%E5%BD%95%E5%AE%B6%E6%97%8F%E5%8F%B2%E3%80%81%E9%A3%9F%E7%89%A9%E3%80%81%E5%91%B3%E9%81%93.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-CB76C30EAAE2A387 / ## 关联函数 / Related Functions / IMPLICIT-CB76C30EAAE2A387 / IMPLICIT-0026301F130FD562
-  - 来源：`统一案例总表/0756-C-0761-宠物项目：记录家族史、食物、味道.md`
-  - 依赖：—；被引用：—
-- [## 关联函数 / Related Functions](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0796-C-0801-%E6%8A%97%E8%8F%8C%E8%80%90%E8%8D%AF.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-CB849C62ED7CA1DC / ## 关联函数 / Related Functions / IMPLICIT-CB849C62ED7CA1DC / IMPLICIT-0026301F130FD562
-  - 来源：`统一案例总表/0796-C-0801-抗菌耐药.md`
-  - 依赖：—；被引用：—
-- [## 关联函数 / Related Functions](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0794-C-0799-%E7%94%9F%E5%91%BD%E8%B5%B7%E6%BA%90%E4%B8%8E%E8%87%AA%E7%BB%84%E7%BB%87.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-CCE6174152FADCC8 / ## 关联函数 / Related Functions / IMPLICIT-CCE6174152FADCC8 / IMPLICIT-0026301F130FD562
-  - 来源：`统一案例总表/0794-C-0799-生命起源与自组织.md`
   - 依赖：—；被引用：—

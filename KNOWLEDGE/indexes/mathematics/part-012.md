@@ -4,6 +4,71 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Within the source-defined scope, 维度最优漂移函数 is adjudicated as STATE_TRANSITION: M8的d_opt随时间漂移：学习>衰老→d_opt右移（升级），学习<衰老→d_op](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D275 / Within the source-defined scope, 维度最优漂移函数 is adjudicated as STATE_TRANSITION: M8的d_opt随时间漂移：学习>衰老→d_opt右移（升级），学习<衰老→d_op
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 维度稳定性裕度函数 is adjudicated as METRIC: M6的d=4不仅使所有pᵢ<p*，而且稳定性裕度最大（p_max/p*≈2-7倍）。d=3裕度<0，d](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D267 / Within the source-defined scope, 维度稳定性裕度函数 is adjudicated as METRIC: M6的d=4不仅使所有pᵢ<p*，而且稳定性裕度最大（p_max/p*≈2-7倍）。d=3裕度<0，d
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 维度饥渴感知函数 is adjudicated as RELATION: M8的维度饥渴感知信号：超额Φ增长率Δ(dΦ/dt)∝(σ-σ_opt)²·ḡ。感知到饥渴到响应之间](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D363 / Within the source-defined scope, 维度饥渴感知函数 is adjudicated as RELATION: M8的维度饥渴感知信号：超额Φ增长率Δ(dΦ/dt)∝(σ-σ_opt)²·ḡ。感知到饥渴到响应之间
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 缓冲关联结构函数 is adjudicated as NATURAL_LANGUAGE_CANDIDATE: 原文把 D351 写成 `溢出系数 ∝ ḡ`，说明耦合越强，缓冲](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：CLAIM-D351 / Within the source-defined scope, 缓冲关联结构函数 is adjudicated as NATURAL_LANGUAGE_CANDIDATE: 原文把 D351 写成 `溢出系数 ∝ ḡ`，说明耦合越强，缓冲
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：D351；被引用：—
+- [Within the source-defined scope, 缓冲可重建性函数 is adjudicated as RELATION: M10的缓冲耗尽后可重建条件：g_eff>g_critical≈√(2ΔΦ/n)。g_eff低于此阈](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D309 / Within the source-defined scope, 缓冲可重建性函数 is adjudicated as RELATION: M10的缓冲耗尽后可重建条件：g_eff>g_critical≈√(2ΔΦ/n)。g_eff低于此阈
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：D295, D309；被引用：—
+- [Within the source-defined scope, 缓冲容量峰值函数 is adjudicated as METRIC: M10的C_buffer(t)先增后减：早期pᵢpⱼ增长主导→C_buffer↑，中期达峰值，晚期g_e](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D262 / Within the source-defined scope, 缓冲容量峰值函数 is adjudicated as METRIC: M10的C_buffer(t)先增后减：早期pᵢpⱼ增长主导→C_buffer↑，中期达峰值，晚期g_e
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 缓冲峰值余量函数 is adjudicated as RELATION: M10的C_max与p*比值∝n^{3/2}→n越大峰值余量越充裕。但衰减速度∝n²→余量消耗更快。](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D278 / Within the source-defined scope, 缓冲峰值余量函数 is adjudicated as RELATION: M10的C_max与p*比值∝n^{3/2}→n越大峰值余量越充裕。但衰减速度∝n²→余量消耗更快。
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 缓冲消耗速度函数 is adjudicated as METRIC: M10的缓冲消耗速度∝Δα·n²p̄²ḡ/2。三个加速因子：n大（复杂）、Δα大（极化）、p̄大（高风险](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D294 / Within the source-defined scope, 缓冲消耗速度函数 is adjudicated as METRIC: M10的缓冲消耗速度∝Δα·n²p̄²ḡ/2。三个加速因子：n大（复杂）、Δα大（极化）、p̄大（高风险
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 缓冲溢出方向函数 is adjudicated as RELATION: M10的缓冲消耗溢出方向不对称：高p→低p方向溢出强，反向弱∝1/p_max。核心部门出问题冲击全局](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D365 / Within the source-defined scope, 缓冲溢出方向函数 is adjudicated as RELATION: M10的缓冲消耗溢出方向不对称：高p→低p方向溢出强，反向弱∝1/p_max。核心部门出问题冲击全局
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 缓冲部分重建效率函数 is adjudicated as METRIC: M10的缓冲从C₁到C₂的效率η∝(C₂-C₁)/(C_max-C₁)·ḡ·β。离C_max越近每单](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D337 / Within the source-defined scope, 缓冲部分重建效率函数 is adjudicated as METRIC: M10的缓冲从C₁到C₂的效率η∝(C₂-C₁)/(C_max-C₁)·ḡ·β。离C_max越近每单
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 缓冲重建时间函数 is adjudicated as METRIC: M10的缓冲从零重建到C_max的时间τ_rebuild∝n/(ḡ·β)。τ_rebuild>>τ_de](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D323 / Within the source-defined scope, 缓冲重建时间函数 is adjudicated as METRIC: M10的缓冲从零重建到C_max的时间τ_rebuild∝n/(ḡ·β)。τ_rebuild>>τ_de
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 缓存倒U型 is adjudicated as OPTIMIZATION_PROBLEM: 缓存冲突概率在缓存大小为活跃节点数的1.4倍时取最大值。. This is a m](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-T10 / Within the source-defined scope, 缓存倒U型 is adjudicated as OPTIMIZATION_PROBLEM: 缓存冲突概率在缓存大小为活跃节点数的1.4倍时取最大值。. This is a m
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 缓存容量倒U型函数 is adjudicated as METRIC: 17域词典簇碰撞，涵盖17个领域的函数投影。. This is a model-internal co](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D123 / Within the source-defined scope, 缓存容量倒U型函数 is adjudicated as METRIC: 17域词典簇碰撞，涵盖17个领域的函数投影。. This is a model-internal co
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
 - [Within the source-defined scope, 耦合-容斥-平坦度三阶段函数 is adjudicated as RELATION: 系统稳定性分三个阶段：(1) d≈d_opt时极小点平坦度主导，pᵢ<<p*，耦合可忽略](../../../data/foundation/adjudications/core-kernel.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
   - 可搜索名称：CLAIM-D254 / Within the source-defined scope, 耦合-容斥-平坦度三阶段函数 is adjudicated as RELATION: 系统稳定性分三个阶段：(1) d≈d_opt时极小点平坦度主导，pᵢ<<p*，耦合可忽略
@@ -698,6 +763,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-a5611f51d8d8159f / writer.writerow(\[row\["canonical_id"\], row\["claim_class"\], row\["assertion_type"\], row\["mathematical_maturity"\], row\["exte
   - 来源：`tools/foundation/adjudicate_nonfunction_claims.py`
+  - 依赖：—；被引用：—
+- [wrong target semantics, missing external evidence, changed formalization,](../../../evidence-program/README.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-25870463f0f500b8 / wrong target semantics, missing external evidence, changed formalization,
+  - 来源：`evidence-program/README.md`
   - 依赖：—；被引用：—
 - [Xiong et al. exact full arXiv v1 paper, all-page visual review and complete LaTeX/prompt source audit: SKILL.md contract](../../../data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
@@ -2434,73 +2504,3 @@
   - 可搜索名称：NFC-3f3a2a2e5f146be9 / \| \[T18\]( ) \| \[容斥-耦合竞争Ising同构\]( ) \| F_{T18}(x) := F_{T18}: X_{T
   - 来源：`统一函数总表/INDEX.md`
   - 依赖：T18；被引用：—
-- [\| \[T20\]( ) \| \[σ_opt=√e解析解\]( ) \| σ_opt = √e ≈ 1.649，是独立性-充分性权衡的解析解。σ_](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-89f78b3390206b7b / \| \[T20\]( ) \| \[σ_opt=√e解析解\]( ) \| σ_opt = √e ≈ 1.649，是独立性-充分性权衡的解析解。σ_
-  - 来源：`统一函数总表/INDEX.md`
-  - 依赖：T20；被引用：—
-- [\| \[T23\]( ) \| \[Φ跨域稳定性定理\]( ) \| F_{T23}(x) := Stability(Φ)=∃μ*:Φ(μ*)=min。D224](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-6a9090988372f031 / \| \[T23\]( ) \| \[Φ跨域稳定性定理\]( ) \| F_{T23}(x) := Stability(Φ)=∃μ*:Φ(μ*)=min。D224
-  - 来源：`统一函数总表/INDEX.md`
-  - 依赖：D224, T23；被引用：—
-- [\| \[T26\]( ) \| \[物理大统一本质函数\]( ) \| F_{T26}(x) := 门控面从多到少的级联合并，每次统一减少Φ项数、增大Ω \|](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-7d7cbbff551a5d20 / \| \[T26\]( ) \| \[物理大统一本质函数\]( ) \| F_{T26}(x) := 门控面从多到少的级联合并，每次统一减少Φ项数、增大Ω \|
-  - 来源：`统一函数总表/INDEX.md`
-  - 依赖：T26；被引用：—
-- [\| \[T27\]( ) \| \[门控函数稳定性必要条件\]( ) \| F_{T27}(x) := F_{T27}: X_{T27} -> Y_](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-3e0d307d91ff5cf5 / \| \[T27\]( ) \| \[门控函数稳定性必要条件\]( ) \| F_{T27}(x) := F_{T27}: X_{T27} -> Y_
-  - 来源：`统一函数总表/INDEX.md`
-  - 依赖：T27；被引用：—
-- [\| \[T28\]( ) \| \[高斯门控函数\]( ) \| F_{T28}(x) := g=exp\[-(ln(μ/M_Planck))²/(2σ²)\]，A-B型统](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-df7e290d9288497a / \| \[T28\]( ) \| \[高斯门控函数\]( ) \| F_{T28}(x) := g=exp\[-(ln(μ/M_Planck))²/(2σ²)\]，A-B型统
-  - 来源：`统一函数总表/INDEX.md`
-  - 依赖：T28；被引用：—
-- [\| \[T30\]( ) \| \[门控-路径积分同构与极小熵原理\]( ) \| F_{T30}(x) := 门控函数极值点展开=](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-a3e6275e738f3a57 / \| \[T30\]( ) \| \[门控-路径积分同构与极小熵原理\]( ) \| F_{T30}(x) := 门控函数极值点展开=
-  - 来源：`统一函数总表/INDEX.md`
-  - 依赖：T30；被引用：—
-- [\| \[T34\]( ) \| \[量子引力Φ框架函数\]( ) \| F_{T34}(x) := T34说Φ_QG在M_Planck附近无稳定极小点。D2](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-9dcb3f5817f9f013 / \| \[T34\]( ) \| \[量子引力Φ框架函数\]( ) \| F_{T34}(x) := T34说Φ_QG在M_Planck附近无稳定极小点。D2
-  - 来源：`统一函数总表/INDEX.md`
-  - 依赖：D225, T34；被引用：—
-- [\| \[T38\]( ) \| \[极值点-极小点分离定理\]( ) \| F_{T38}(x) := F_{T38}: X_{T38} -> Y_](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-30cbb6a9341fdbcc / \| \[T38\]( ) \| \[极值点-极小点分离定理\]( ) \| F_{T38}(x) := F_{T38}: X_{T38} -> Y_
-  - 来源：`统一函数总表/INDEX.md`
-  - 依赖：T38；被引用：—
-- [\| \[T39\]( ) \| \[Φ跨域统一定理（D224升级）\]( ) \| F_{T39}(Φ) := Φ_unified](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-fa5d0bd6fcc2a38f / \| \[T39\]( ) \| \[Φ跨域统一定理（D224升级）\]( ) \| F_{T39}(Φ) := Φ_unified
-  - 来源：`统一函数总表/INDEX.md`
-  - 依赖：D224, T39；被引用：—
-- [\| \[T41\]( ) \| \[艺术创作逻辑跨时空同构函数\]( ) \| I_iso_art(A,B) := Flow_Type(A)](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-76904f5d381f2318 / \| \[T41\]( ) \| \[艺术创作逻辑跨时空同构函数\]( ) \| I_iso_art(A,B) := Flow_Type(A)
-  - 来源：`统一函数总表/INDEX.md`
-  - 依赖：T41；被引用：—
-- [\| \[T46\]( ) \| \[元同构律跨文明验证函数\]( ) \| I_iso_meta(A,B) := Meta_Structure(A)](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-66b586b9fbb930df / \| \[T46\]( ) \| \[元同构律跨文明验证函数\]( ) \| I_iso_meta(A,B) := Meta_Structure(A)
-  - 来源：`统一函数总表/INDEX.md`
-  - 依赖：T46；被引用：—
-- [\| \[T55\]( ) \| \[植物意识函数\]( ) \| F_plant_consciousness := ∫(subjective_experience ×](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-03b4d27e66d16dd2 / \| \[T55\]( ) \| \[植物意识函数\]( ) \| F_plant_consciousness := ∫(subjective_experience ×
-  - 来源：`统一函数总表/INDEX.md`
-  - 依赖：T55；被引用：—
-- [\| \[T9\]( ) \| \[自主意识函数\]( ) \| F_{T9}(x) := Ψ_autonomy = ε_aware · dim · P_exit \|](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-fe2d9b348a7b731f / \| \[T9\]( ) \| \[自主意识函数\]( ) \| F_{T9}(x) := Ψ_autonomy = ε_aware · dim · P_exit \|
-  - 来源：`统一函数总表/INDEX.md`
-  - 依赖：T9；被引用：—
-- [\| \[Y1\]( ) \| \[Φ元统一律内部构件完整构成版 2026年07月06日12时32分\]( ) \| Ψ₀(x,y,B_n) := C(x,y) ×](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-96efd0dfd237114b / \| \[Y1\]( ) \| \[Φ元统一律内部构件完整构成版 2026年07月06日12时32分\]( ) \| Ψ₀(x,y,B_n) := C(x,y) ×
-  - 来源：`统一函数总表/INDEX.md`
-  - 依赖：Y1；被引用：—

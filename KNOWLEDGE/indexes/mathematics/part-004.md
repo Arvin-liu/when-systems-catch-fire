@@ -4,6 +4,41 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [\[C-0766｜快闪阅读反算法\](../../../统一案例总表/0761-C-0766-快闪阅读反算法.md)（原笔记编号：C579-2）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0589-D579-%E9%98%85%E5%8E%86%E8%B5%A4%E5%AD%97%E8%A7%A3%E5%86%B3.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-18e5dae91845fc52 / \[C-0766｜快闪阅读反算法\](../../../统一案例总表/0761-C-0766-快闪阅读反算法.md)（原笔记编号：C579-2）
+  - 来源：`统一函数总表/0589-D579-阅历赤字解决.md`
+  - 依赖：—；被引用：—
+- [\[C-0767｜逛书店发现惊喜\](../../../统一案例总表/0762-C-0767-逛书店发现惊喜.md)（原笔记编号：C579-3）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0589-D579-%E9%98%85%E5%8E%86%E8%B5%A4%E5%AD%97%E8%A7%A3%E5%86%B3.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-278c5c71d1566b73 / \[C-0767｜逛书店发现惊喜\](../../../统一案例总表/0762-C-0767-逛书店发现惊喜.md)（原笔记编号：C579-3）
+  - 来源：`统一函数总表/0589-D579-阅历赤字解决.md`
+  - 依赖：—；被引用：—
+- [\[C-0768｜青蒿素从《肘后备急方》提炼\](../../../统一案例总表/0763-C-0768-青蒿素从《肘后备急方》提炼.md)（原笔记编号：C579-4）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0589-D579-%E9%98%85%E5%8E%86%E8%B5%A4%E5%AD%97%E8%A7%A3%E5%86%B3.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-2c059eddfd599c6a / \[C-0768｜青蒿素从《肘后备急方》提炼\](../../../统一案例总表/0763-C-0768-青蒿素从《肘后备急方》提炼.md)（原笔记编号：C579-4）
+  - 来源：`统一函数总表/0589-D579-阅历赤字解决.md`
+  - 依赖：—；被引用：—
+- [\[C-0769｜《写作是门手艺》段落控制≤10行\](../../../统一案例总表/0764-C-0769-《写作是门手艺》段落控制≤10行.md)（原笔记编号：C580-1）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0590-D580-%E8%BE%B9%E7%BC%98%E9%9D%A9%E5%91%BD.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-3d9894d8b56f8b23 / \[C-0769｜《写作是门手艺》段落控制≤10行\](../../../统一案例总表/0764-C-0769-《写作是门手艺》段落控制≤10行.md)（原笔记编号：C580-1）
+  - 来源：`统一函数总表/0590-D580-边缘革命.md`
+  - 依赖：—；被引用：—
+- [\[C-0770｜马伯庸建议蹲下来看最下面一排书\](../../../统一案例总表/0765-C-0770-马伯庸建议蹲下来看最下面一排书.md)（原笔记编号：C580-2）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0590-D580-%E8%BE%B9%E7%BC%98%E9%9D%A9%E5%91%BD.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-908190b7695ab203 / \[C-0770｜马伯庸建议蹲下来看最下面一排书\](../../../统一案例总表/0765-C-0770-马伯庸建议蹲下来看最下面一排书.md)（原笔记编号：C580-2）
+  - 来源：`统一函数总表/0590-D580-边缘革命.md`
+  - 依赖：—；被引用：—
+- [\[C-0771｜准备《长谈》花一个月\](../../../统一案例总表/0766-C-0771-准备《长谈》花一个月.md)（原笔记编号：C580-3）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0590-D580-%E8%BE%B9%E7%BC%98%E9%9D%A9%E5%91%BD.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-1c43a509c48cfa90 / \[C-0771｜准备《长谈》花一个月\](../../../统一案例总表/0766-C-0771-准备《长谈》花一个月.md)（原笔记编号：C580-3）
+  - 来源：`统一函数总表/0590-D580-边缘革命.md`
+  - 依赖：—；被引用：—
+- [\[C-0772｜亲子共读一本书\](../../../统一案例总表/0767-C-0772-亲子共读一本书.md)（原笔记编号：C580-4）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0590-D580-%E8%BE%B9%E7%BC%98%E9%9D%A9%E5%91%BD.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-a6072f9501855d98 / \[C-0772｜亲子共读一本书\](../../../统一案例总表/0767-C-0772-亲子共读一本书.md)（原笔记编号：C580-4）
+  - 来源：`统一函数总表/0590-D580-边缘革命.md`
+  - 依赖：—；被引用：—
 - [\[C-0773｜宠物项目：记录家族史、食物、味道\](../../../统一案例总表/0768-C-0773-宠物项目：记录家族史、食物、味道.md)（原笔记编号：C581-1）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0591-D581-%E4%BF%A1%E6%81%AF%E8%8C%A7%E6%88%BF%E7%A0%B4%E8%A7%A3.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-b5116ca7b002d163 / \[C-0773｜宠物项目：记录家族史、食物、味道\](../../../统一案例总表/0768-C-0773-宠物项目：记录家族史、食物、味道.md)（原笔记编号：C581-1）
@@ -1083,6 +1118,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-c4543070b8b0f40a / \\"突破\\"这个现象在不同领域有共同的数学机制\\n\\n---\\n\\n## 下一步计划\\n\\n### 立即行动\\n\\n1.
   - 来源：`统一案例总表/0673-C-0678-孪生素数问题转换.md`
+  - 依赖：—；被引用：—
+- [_err(errors, "evidence_gate.formalization_frozen", "must be true before a result is accepted")](../../../tools/failure_case_evidence_gate.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-eb17e96a06272cbb / _err(errors, "evidence_gate.formalization_frozen", "must be true before a result is accepted")
+  - 来源：`tools/failure_case_evidence_gate.py`
   - 依赖：—；被引用：—
 - [_fold_lifecycle_terminal(repo_root, proj)](../../../tools/propagation/current_truth_projection.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
@@ -2463,44 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-0efd59aa2d4e4e1e / C(x,y) := ∫(cause × effect × temporal_order × counterfactual) / causal_topology
   - 来源：`统一函数总表/0001-Ψ₀元函数完整数学定义.md`
-  - 依赖：—；被引用：—
-- [C(x,y) 因果结构判定 → 历史因果链（事件→结果→反馈）](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-a844836ba7e1cc47 / C(x,y) 因果结构判定 → 历史因果链（事件→结果→反馈）
-  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
-  - 依赖：—；被引用：—
-- [C(x,y) 因果结构判定 → 数学证明链（假设→定理→推论）](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-20c72c8713cee2b1 / C(x,y) 因果结构判定 → 数学证明链（假设→定理→推论）
-  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
-  - 依赖：—；被引用：—
-- [C(x,y) 因果结构判定 → 物理因果链（拉格朗日量→运动方程）](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-4b56d62dbcd5709a / C(x,y) 因果结构判定 → 物理因果链（拉格朗日量→运动方程）
-  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
-  - 依赖：—；被引用：—
-- [C(x,y)：价值—决策分离→漂移→回收→对齐，因果明确。J⁺=1。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0612-D602-%E4%BB%B7%E5%80%BC%E5%88%9B%E9%80%A0%E6%9D%83%E4%B8%8E%E5%86%B3%E7%AD%96%E6%9D%83%E9%94%99%E9%85%8D%E4%B8%8E%E5%9B%9E%E6%94%B6.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-675486b10b868098 / C(x,y)：价值—决策分离→漂移→回收→对齐，因果明确。J⁺=1。
-  - 来源：`统一函数总表/0612-D602-价值创造权与决策权错配与回收.md`
-  - 依赖：—；被引用：—
-- [C(x,y)：支持→绑定→退出成本↑，因果明确。J⁺=1。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0610-D600-%E8%B5%84%E6%BA%90%E6%89%98%E4%B8%BE%E9%80%80%E5%8C%96%E4%B8%BA%E8%B7%AF%E5%BE%84%E6%8E%A7%E5%88%B6.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-e5d877e8bda78db1 / C(x,y)：支持→绑定→退出成本↑，因果明确。J⁺=1。
-  - 来源：`统一函数总表/0610-D600-资源托举退化为路径控制.md`
-  - 依赖：—；被引用：—
-- [C(x,y)：旧计划绑定→现实反驳→承认失效→主动刹车，因果明确。J⁺=1。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0613-D603-%E8%AE%A1%E5%88%92%E8%BF%87%E6%9C%9F%E8%AF%86%E5%88%AB%E4%B8%8E%E4%B8%BB%E5%8A%A8%E5%88%B9%E8%BD%A6.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-c1770d63632f9b21 / C(x,y)：旧计划绑定→现实反驳→承认失效→主动刹车，因果明确。J⁺=1。
-  - 来源：`统一函数总表/0613-D603-计划过期识别与主动刹车.md`
-  - 依赖：—；被引用：—
-- [C(x,y)：角色占入口→能力附属→目标遮蔽→决策外移，因果明确。J⁺=1。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0611-D601-%E8%A7%92%E8%89%B2%E8%A6%86%E7%9B%96%E4%B8%BB%E4%BD%93%E8%BA%AB%E4%BB%BD.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-cbde2730149950fa / C(x,y)：角色占入口→能力附属→目标遮蔽→决策外移，因果明确。J⁺=1。
-  - 来源：`统一函数总表/0611-D601-角色覆盖主体身份.md`
-  - 依赖：—；被引用：—
-- [C(x,y)：隐含错位→显式化打分→可排序→冲突↓，因果明确。J⁺=1。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0614-D604-%E6%A8%A1%E7%B3%8A%E9%9C%80%E6%B1%82%E6%98%BE%E6%80%A7%E5%8C%96%E4%B8%8E%E5%8D%8F%E4%BD%9C%E6%8E%92%E5%BA%8F.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-7f8f783fe3588e81 / C(x,y)：隐含错位→显式化打分→可排序→冲突↓，因果明确。J⁺=1。
-  - 来源：`统一函数总表/0614-D604-模糊需求显性化与协作排序.md`
   - 依赖：—；被引用：—

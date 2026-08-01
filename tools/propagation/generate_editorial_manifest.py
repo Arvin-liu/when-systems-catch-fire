@@ -71,14 +71,59 @@ ARTICLES = [
      "SUPPORTED_WITHIN_BOUNDED_DOMAIN; no claim of complete sandboxing, production readiness "
      "or universal correctness"),
     ("docs/editorial/articles/008-merged-but-stale-public-truth.md",
-     ["data/operations/merged-iteration-ledger.jsonl",
-      "tools/propagation/validate_reconciliation.py"],
-     "task-106-exact-head", "REVIEWED_CURRENT",
-     "article 008 reviewed against task-106 exact head at ordinary merge; explains "
-     "post-merge current-truth lag without new claims",
-     "explanatory only; no new scientific/mathematical/empirical conclusion; asserts only "
-     "that a fail-closed propagation mechanism now exists"),
+     ["data/operations/lifecycle-events.jsonl",
+      "data/operations/merged-iteration-ledger.jsonl",
+      "tools/propagation/lifecycle_events.py",
+      "tools/propagation/tag_validator.py"],
+     "task-108-content-merge", "STALE_REVIEW_REQUIRED",
+     "article 008 remains stale because the lifecycle event source changed in task 111; "
+     "the article must be re-reviewed before it can assert current lifecycle details",
+     "explanatory only; no new scientific/mathematical/empirical conclusion; no current "
+     "lifecycle claim until the material source change is reviewed"),
+    ("docs/editorial/articles/009-system-completion-state-and-independent-replication.md",
+     ["data/operations/iterations/110/baseline-defect.md",
+      "data/operations/iterations/110/completion-reconciliation.json",
+      "data/operations/iterations/110/propagation.md",
+      "docs/publication/zhiyuan-writing-method.md",
+      "evidence-program/runs/IGNITION-EVIDENCE-PILOT-R1-OPENALEX-DOI-REPLICATION-20260801/RESULT.md"],
+     "task-110-content-review-pending-merge", "REVIEWED_CURRENT",
+     "Task 110 article reviewed against the frozen baseline defect, generic completion "
+     "reconciliation, sealed OpenAlex first-run result, propagation record and Zhiyuan "
+     "Writing Method; claim ceiling and null handling retained.",
+     "explanatory only; task-110 completion-state reconciliation and OpenAlex cross-source "
+     "bibliographic metadata result; no paper-content, scientific-truth, Pointfire, MCF, "
+     "PSD, ARN, causal or maturity/disposition claim"),
+    ("docs/editorial/articles/010-failure-case-evidence-gate-and-apple-case-adjudication.md",
+     ["data/operations/iterations/111/historical/EVIDENCE_DOSSIER.md",
+      "data/operations/iterations/111/TARGET_AUDIT.md",
+      "data/operations/iterations/111/case-status.json",
+      "schemas/failure-case-evidence-gate.schema.json",
+      "tools/failure_case_evidence_gate.py"],
+     "task-111-content-review", "REVIEWED_CURRENT",
+     "Task 111 article reviewed against the frozen historical source dossier, target audit, "
+     "case-status record and executable gate tests; no real-defect claim is made.",
+     "explanatory only; historical provenance and repository evidence-gate adjudication; "
+     "no claim of a reproduced implementation defect, external truth, causality or maturity"),
 ]
+
+# Keep stable source identifiers for historical articles.  New entries may use
+# their source basenames, but regenerating the manifest must not silently rename
+# identifiers that older lifecycle records already cite.
+SOURCE_IDS = {
+    "docs/editorial/articles/008-merged-but-stale-public-truth.md": [
+        "lifecycle-events.jsonl",
+        "merged-iteration-ledger.jsonl",
+        "lifecycle_events.py",
+        "tag_validator.py",
+    ],
+    "docs/editorial/articles/009-system-completion-state-and-independent-replication.md": [
+        "task-110-baseline-defect",
+        "task-110-completion-reconciliation",
+        "task-110-propagation",
+        "zhiyuan-writing-method.md",
+        "task-110-openalex-result",
+    ],
+}
 
 
 def main() -> int:
@@ -87,7 +132,7 @@ def main() -> int:
         hashes = {s: _sha256(s) for s in sources}
         articles[os.path.basename(file).replace(".md", "")] = {
             "file": file,
-            "source_ids": [os.path.basename(s) for s in sources],
+            "source_ids": SOURCE_IDS.get(file, [os.path.basename(s) for s in sources]),
             "source_paths": sources,
             "source_hashes": hashes,
             "materiality_rules": [
