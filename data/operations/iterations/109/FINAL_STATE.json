@@ -1,0 +1,45 @@
+{
+  "task_number": 109,
+  "task_id": "IGNITION-AUTONOMOUS-ITERATION-PLANNER-AND-EVIDENCE-DRIVEN-BACKLOG-GOVERNANCE-R1-20260801",
+  "control_commit": "29bf25417074f71704ad347a42b9e722c2b278fa",
+  "success_token": "IGNITION_AUTONOMOUS_ITERATION_PLANNER_ESTABLISHED_EVIDENCE_DRIVEN_BACKLOG_GOVERNED_NEXT_SUBSTANTIVE_ITERATION_PROPOSED_109_TERMINALIZED",
+  "terminal_tag": "ignition/iterations/109/terminal-r1",
+  "content_pr": 169,
+  "content_head": "b1dbd7f8b5fb67ab328291026761785eef993bde",
+  "terminalization_pr": null,
+  "terminalization_commit": null,
+  "predecessor": {
+    "task": 108,
+    "verified_terminal_state": "TERMINAL_SUCCESS",
+    "verified_independently": true,
+    "success_token_match": "IGNITION_TWO_PHASE_ITERATION_TERMINALIZATION_ESTABLISHED_106_107_RECONCILED_108_SELF_CLOSED_AND_MERGED"
+  },
+  "recommended_next_iteration": "C-01",
+  "reserves": ["CF-apple_gravity_failure", "CF-cross_domain_synergy_risk"],
+  "auto_created_task_110": false,
+  "resolver_verification": {
+    "resolved_109": "TERMINAL_SUCCESS",
+    "errors": {},
+    "determinism": "PASS (planner output reproducible across two runs)",
+    "adversarial_tests": "12/12 PASS",
+    "substantive_work_ratio_top10": 1.0,
+    "predecessor_gate": "PASS (task 108 independently verified terminal from remote truth)"
+  },
+  "success_criteria": {
+    "1_predecessor_terminal": "PASS",
+    "2_real_backlog_no_feedback": "PASS (ingested real governed sources; generated output not fed back as discovery)",
+    "3_factors_fixed_before_ranking": "PASS (priority_model.json committed before ranking)",
+    "4_ranking_explainable_uncertainty_aware": "PASS (factor vectors + missing_fields recorded)",
+    "5_meta_work_cannot_dominate": "PASS (substantive ratio top-10 = 1.0 >= 0.70; meta gaps capped)",
+    "6_real_next_plus_two_reserves": "PASS (C-01 + 2 reserves; >=5 not-selected reasons)",
+    "7_no_task_110": "PASS (recommended_is_auto_task_110 = false)",
+    "8_surfaces_reconciled": "PASS (article + recommendation + backlog; NO_MAP_IMPACT for system-map; Foundation unchanged)",
+    "9_content_and_terminalization_merged": "PENDING_GPT_ORDINARY_MERGE (PR #169 content + terminalization PR opened; Agent must not self-merge per contract §2 / relay protocol §2; GPT total controller performs ordinary merges, then re-runs clean-clone resolver as final §12 gate)"
+  },
+  "merge_verification": {
+    "note": "Per relay protocol §2 (GPT total controller writes main; Agent writes receipts) and task-109 §2 hard boundary (no self-merge), the two ordinary merges are executed by the GPT total controller. The content PR (#169) and terminalization PR are opened and ready. The clean-clone resolver (tools/operations/iteration_resolver.py) is re-run by the controller after merge as the final terminal-state confirmation.",
+    "content_pr": 109,
+    "terminalization_pr": null
+  },
+  "agent_terminal_chat_line": "109 已执行完成，请 GPT 查证。"
+}
