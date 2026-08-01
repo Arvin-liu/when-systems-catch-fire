@@ -32,7 +32,6 @@ class TestAllowlist(unittest.TestCase):
         "schemas/operations/lifecycle-event.schema.json",
         "tests/test_lifecycle_events.py",
         "tests/test_terminalization_allowlist.py",
-        "tests/test_terminal_tag_recovery.py",
         "tests/fixtures/lifecycle/positive-1.json",
         "data/operations/terminal-evidence-core.json",
         "docs/operations/lifecycle-readme.md",

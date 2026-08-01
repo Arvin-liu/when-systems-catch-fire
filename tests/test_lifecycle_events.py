@@ -336,5 +336,176 @@ class TestPositiveFixtures(unittest.TestCase):
         self.assertEqual(r["errors"], [])
 
 
+class TestImmutableTerminalTagRecovery(unittest.TestCase):
+    """Task-111 recovery fixtures; the old tag is never repaired or moved."""
+
+    TASK = 111
+    TASK_ID = "IGNITION-FAILURE-CASE-EVIDENCE-GATE-AND-REAL-DEFECT-REPRODUCTION-PILOT-R1-20260801"
+    OLD_TAG = "ignition/iterations/111/terminal-r1"
+    RECOVERY_TAG = "ignition/iterations/111/terminal-r1-recovery-1"
+    RECOVERY_TAG_2 = "ignition/iterations/111/terminal-r1-recovery-2"
+    OLD_OBJECT = "91de7433db0cef4800bb64a59b703a6305bc30ce"
+    TARGET = "9b15d359c54694d851c38df6ab3c7ae42544a51b"
+    CONTROL = "8b0cb1fca95d0bd7cc690727dac6591f87808aba"
+    REASON = "MISSING_REQUIRED_MACHINE_BINDINGS_IN_IMMUTABLE_ORIGINAL_TAG_MESSAGE"
+    CORE_BYTES = b'{"schema_version":"recovery-test"}\n'
+    CORE_SHA = hashlib.sha256(CORE_BYTES).hexdigest()
+
+    @classmethod
+    def recovery_message(cls, core_sha=None):
+        core_sha = core_sha or cls.CORE_SHA
+        return (
+            f"task_number: {cls.TASK}\n"
+            f"task_id: {cls.TASK_ID}\n"
+            "terminal_state: TERMINAL_SUCCESS\n"
+            f"core_receipt_sha256: {core_sha}\n"
+            "attestation_mode: RECOVERY_AFTER_INVALID_TERMINAL_TAG\n"
+            f"recovery_of_tag: {cls.OLD_TAG}\n"
+            f"recovery_of_tag_object_sha: {cls.OLD_OBJECT}\n"
+            f"recovery_of_tag_target: {cls.TARGET}\n"
+            f"recovery_reason: {cls.REASON}\n"
+            f"recovery_authorization_control_commit: {cls.CONTROL}\n"
+        )
+
+    def setUp(self):
+        self.refs = {f"refs/tags/{self.OLD_TAG}", f"refs/tags/{self.RECOVERY_TAG}"}
+        self.objects = {self.OLD_TAG: self.OLD_OBJECT, self.RECOVERY_TAG: "recovery-object"}
+        self.targets = {self.OLD_TAG: self.TARGET, self.RECOVERY_TAG: self.TARGET}
+        self.messages = {
+            self.OLD_TAG: "111 terminal-r1: evidence-gated apple case adjudication and regression gate established\n",
+            self.RECOVERY_TAG: self.recovery_message(),
+        }
+        self.patches = unittest.mock.patch.multiple(
+            le,
+            ref_exists=unittest.mock.Mock(side_effect=lambda ref: ref in self.refs),
+            annotated_tag_object_sha=unittest.mock.Mock(side_effect=lambda tag: self.objects.get(tag)),
+            tag_points_to=unittest.mock.Mock(side_effect=lambda tag, target: self.targets.get(tag) == target),
+            tag_message=unittest.mock.Mock(side_effect=lambda tag: self.messages.get(tag)),
+            recovery_tag_names=unittest.mock.Mock(return_value=[self.RECOVERY_TAG]),
+            _git=unittest.mock.Mock(side_effect=self.fake_git),
+        )
+        self.patches.start()
+        self.addCleanup(self.patches.stop)
+
+    def fake_git(self, *args):
+        if args and args[0] == "rev-parse" and len(args) > 1:
+            tag = args[1].removesuffix("^{}")
+            return self.targets.get(tag)
+        return None
+
+    def validate(self, tag_name=None, **overrides):
+        values = {
+            "expected_task_number": self.TASK,
+            "expected_task_id": self.TASK_ID,
+            "expected_target": self.TARGET,
+            "expected_core_sha256": self.CORE_SHA,
+            "expected_attestation_mode": "RECOVERY_AFTER_INVALID_TERMINAL_TAG",
+            "recovery_of_tag": self.OLD_TAG,
+            "recovery_of_tag_object_sha": self.OLD_OBJECT,
+            "recovery_of_tag_target": self.TARGET,
+            "recovery_reason": self.REASON,
+            "recovery_authorization_control_commit": self.CONTROL,
+            "core_evidence_bytes": self.CORE_BYTES,
+        }
+        values.update(overrides)
+        return tv.validate_recovery_tag(tag_name or self.RECOVERY_TAG, **values)
+
+    def test_current_invalid_original_rejected_by_ordinary_validator(self):
+        problems = tv.validate_tag(
+            self.OLD_TAG,
+            expected_task_number=self.TASK,
+            expected_target=self.TARGET,
+            expected_core_sha256=tv.ORIGINAL_TAG_CORE_UNAVAILABLE,
+            expected_attestation_mode="ORIGINAL_TERMINATION",
+        )
+        self.assertEqual(
+            problems,
+            [
+                "terminal tag message missing required field task_number",
+                "terminal tag message missing required field task_id",
+                "terminal tag message missing required field terminal_state",
+                "terminal tag message missing required field core_receipt_sha256",
+                "terminal tag message missing required field attestation_mode",
+                "terminal tag message does not bind declared core_receipt_sha256",
+                "terminal tag message missing attestation_mode ORIGINAL_TERMINATION",
+            ],
+        )
+
+    def test_attempted_original_tag_movement_rejected(self):
+        self.targets[self.OLD_TAG] = "0" * 40
+        problems = self.validate()
+        self.assertTrue(any("original tag target mismatch" in p for p in problems))
+
+    def test_recovery_without_original_tag_rejected(self):
+        self.refs.remove(f"refs/tags/{self.OLD_TAG}")
+        problems = self.validate()
+        self.assertTrue(any("original tag" in p and "not present" in p for p in problems))
+
+    def test_wrong_original_object_sha_rejected(self):
+        problems = self.validate(recovery_of_tag_object_sha="1" * 40)
+        self.assertTrue(any("original tag object sha mismatch" in p for p in problems))
+
+    def test_wrong_original_target_rejected(self):
+        problems = self.validate(recovery_of_tag_target="2" * 40)
+        self.assertTrue(any("original tag target mismatch" in p for p in problems))
+
+    def test_wrong_recovery_index_rejected(self):
+        self.objects[self.RECOVERY_TAG_2] = "recovery-object-2"
+        self.targets[self.RECOVERY_TAG_2] = self.TARGET
+        self.messages[self.RECOVERY_TAG_2] = self.recovery_message()
+        self.refs.add(f"refs/tags/{self.RECOVERY_TAG_2}")
+        le.recovery_tag_names.return_value = [self.RECOVERY_TAG_2]
+        problems = self.validate(self.RECOVERY_TAG_2)
+        self.assertTrue(any("recovery tag index" in p for p in problems))
+
+    def test_missing_recovery_specific_field_rejected(self):
+        self.messages[self.RECOVERY_TAG] = self.recovery_message().replace(
+            f"recovery_reason: {self.REASON}\n", ""
+        )
+        problems = self.validate()
+        self.assertTrue(any("missing required field recovery_reason" in p for p in problems))
+
+    def test_recovery_tag_wrong_target_rejected(self):
+        self.targets[self.RECOVERY_TAG] = "3" * 40
+        problems = self.validate()
+        self.assertTrue(any("recovery tag does not point" in p for p in problems))
+
+    def test_recovery_tag_core_digest_mismatch_rejected(self):
+        problems = self.validate(expected_core_sha256="4" * 64)
+        self.assertTrue(any("core evidence digest mismatch" in p for p in problems))
+
+    def test_duplicate_conflicting_recovery_tags_rejected(self):
+        le.recovery_tag_names.return_value = [self.RECOVERY_TAG, self.RECOVERY_TAG_2]
+        problems = self.validate()
+        self.assertTrue(any("duplicate/conflicting recovery tags" in p for p in problems))
+
+    def test_lightweight_recovery_tag_rejected(self):
+        self.objects[self.RECOVERY_TAG] = None
+        problems = self.validate()
+        self.assertTrue(any("lightweight" in p for p in problems))
+
+    def test_exact_authorized_recovery_chain_passes(self):
+        self.assertEqual(self.validate(), [])
+
+    def test_old_tag_alone_never_resolves_terminal_success(self):
+        candidate = {
+            "task_number": self.TASK,
+            "event_type": "ITERATION_CANDIDATE",
+            "lifecycle_state": "CONTENT_MERGED_AWAITING_TERMINALIZATION",
+            "formal_content_pr_number": 174,
+            "exact_reviewed_content_head": "3c086e070998670aa88c7a9bb31481b27e17d59e",
+        }
+        projection = {
+            "task_number": self.TASK,
+            "event_type": "TERMINALIZATION_PROJECTION",
+            "content_pr_number": 174,
+            "content_merge_commit": self.TARGET,
+            "terminal_tag_name": self.OLD_TAG,
+            "terminal_state": "TERMINAL_SUCCESS",
+        }
+        result = le.resolve_task([candidate, projection], self.TASK, git_available=False)
+        self.assertNotEqual(result["resolved_state"], "TERMINAL_SUCCESS")
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)
