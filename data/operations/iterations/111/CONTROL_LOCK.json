@@ -1,0 +1,21 @@
+{
+  "task_number": 111,
+  "task_id": "IGNITION-FAILURE-CASE-EVIDENCE-GATE-AND-REAL-DEFECT-REPRODUCTION-PILOT-R1-20260801",
+  "control_branch": "relay/current",
+  "control_commit": "b0f4ebe660de10e09f88ee524e9947243c80e0cc",
+  "instruction_commit": "b0f4ebe660de10e09f88ee524e9947243c80e0cc",
+  "instruction_path": "relay/tasks/IGNITION-FAILURE-CASE-EVIDENCE-GATE-AND-REAL-DEFECT-REPRODUCTION-PILOT-R1-20260801.md",
+  "formal_repository": "Arvin-liu/when-systems-catch-fire",
+  "formal_base": "dddd5fec01abb69a61993c93104214425fca4791",
+  "formal_branch": "agent/ignition-failure-case-evidence-gate-real-defect-reproduction-r1-20260801",
+  "executor": "Codex",
+  "locked_at_local": "2026-08-01T22:32:42+08:00",
+  "control_file_digests_sha256": {
+    "relay/RELAY-PROTOCOL.md": "cab40034692800cbb51e27122fa3d61e4a46174cf00298d1605233ad6cf12e09",
+    "relay/CURRENT.md": "7bb45360159a514793c8c8f64fc85f7ca007f85ded05c2ee2584dfcb7bb6d695",
+    "relay/tasks/IGNITION-FAILURE-CASE-EVIDENCE-GATE-AND-REAL-DEFECT-REPRODUCTION-PILOT-R1-20260801.md": "ff418653d2d38e025fa21365d2f922f595b791f8206d39f37e72250dfccda2df",
+    "relay/tasks/111.md": "7b5c1fdbb479431730979591f3266dc94542889361d7440584726d717696d24e"
+  },
+  "status": "HISTORICAL_RESEARCH_PREREGISTERED_TARGET_AUDIT_PENDING",
+  "task_112_created_or_executed": false
+}
