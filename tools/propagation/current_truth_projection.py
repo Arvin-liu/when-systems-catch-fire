@@ -115,13 +115,16 @@ def _fold_lifecycle_terminal(repo_root: str, proj: Dict[str, Any]) -> None:
         head = next((e.get("exact_reviewed_content_head") or e.get("exact_reviewed_head")
                      for e in evs if e.get("event_type") in ("ITERATION_CANDIDATE", "LEGACY_TERMINAL_SUCCESS")), None)
         terminal_state = next((e.get("terminal_state") for e in evs if e.get("terminal_state")), None)
+        classification = "folded from event-sourced lifecycle (TERMINAL_SUCCESS)"
+        if tn in (106, 107):
+            classification += "; retroactive reconciliation by task 108"
         proj["recently_merged_results"].append({
             "task_number": tn,
             "task_id": task_id,
             "merge_commit": merge,
             "exact_head": head,
             "terminal_state": terminal_state,
-            "classification": "folded from event-sourced lifecycle (TERMINAL_SUCCESS); retroactive reconciliation by task 108",
+            "classification": classification,
         })
         proj["_non_terminal_tasks_excluded"] = [t for t in proj["_non_terminal_tasks_excluded"] if t != tn]
 
