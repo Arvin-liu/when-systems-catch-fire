@@ -5,23 +5,21 @@
 索引按固定 500 条分片，避免单页过大而无法在 GitHub 渲染。分片连续覆盖本主题主归属资产，未按重要性删减。
 
 - [第 001 片](./mathematics/part-001.md)：1—500；"""Build the IGNITION-20260709-075 math-foundation audit artifacts. → ## 关联函数 / Related Functions
-- [第 002 片](./mathematics/part-002.md)：501—1000；## 关联函数 / Related Functions → /Users/zhiyuan/我的笔记/统一函数总表/0316-D280-容斥干预两步策略函数.md
-- [第 003 片](./mathematics/part-003.md)：1001—1500；/Users/zhiyuan/我的笔记/统一函数总表/0317-D281-极小点漂移-鲁棒性耦合函数.md → \[C-0786｜写地方偏方、食物、手艺\](../../统一案例总表/0781-C-0786-写地方偏方、食物、手艺.md)（原笔记编号：C584-2）
-- [第 004 片](./mathematics/part-004.md)：1501—2000；\[C-0787｜和孩子聊热点事件\](../../统一案例总表/0782-C-0787-和孩子聊热点事件.md)（原笔记编号：C584-3） → Case 层** 是已验证的现实/跨域案例（C 编号），由函数层实例化支撑。
-- [第 005 片](./mathematics/part-005.md)：2001—2500；Case 层是已验证实例（C 编号，current 至 C-809 级），由函数层支撑。 → errors.append(f"{rid}: high probability causal proof overclaim")
-- [第 006 片](./mathematics/part-006.md)：2501—3000；errors.append(f"{rid}: light cone reachability written as proof") → If upstream objects D_{D283} exist, compose F_{D283}=N(⊕_{g∈D_{D283}} g); otherwise treat F_{D283} as an axiom seed.
-- [第 007 片](./mathematics/part-007.md)：3001—3500；If upstream objects D_{D284} exist, compose F_{D284}=N(⊕_{g∈D_{D284}} g); otherwise treat F_{D284} as an axiom seed. → M1的容斥交叉相关增强D342波动累积：交叉相关项Cov∝pᵢpⱼ使总方差增大→波动累积更严重。增强因子∝1+Σᵢ<ⱼpᵢpⱼ/ΣVar(ΔΦᵢ)。"坏消息成群来"不只预测恶化还放大"折腾有害"——双重打击。
-- [第 008 片](./mathematics/part-008.md)：3501—4000；M1的容斥交叉相关增强D342波动累积：交叉相关项Cov∝pᵢpⱼ使总方差增大→波动累积更严重。增强因子∝1+Σᵢ<ⱼpᵢpⱼ/ΣVar(ΔΦᵢ)。"坏消息成群来"不只预测恶化还放大"折腾有害"——双重打击。 **扩展注释 / Extend → rationale=f"The complete root source describes this component's role and supports {typ}; missing types and proof prevent
-- [第 009 片](./mathematics/part-009.md)：4001—4500；re-classified in 083 based on claim_type=DEFINITION, proof_status=NOT_APPLICABLE_DEFINITION → title: "公理化体系×三层函数结构验证"
-- [第 010 片](./mathematics/part-010.md)：4501—5000；title: "公理化体系×三层函数结构验证" → Validation and lifecycle
-- [第 011 片](./mathematics/part-011.md)：5001—5500；Validation and lifecycle boundary → Within the source-defined scope, 过渡期窗口衰减函数(新发现) is adjudicated as STATE_TRANSITION: 书籍碰撞函数，书籍碰撞案例验证。. This is a model-in
-- [第 012 片](./mathematics/part-012.md)：5501—6000；Within the source-defined scope, 退出成本-遮蔽-时间三角约束函数 is adjudicated as METRIC: C_exit ↔ H ↔ T. This is a model-internal con → \| D507 \| 退出权空间总函数 \| C-20 改革开放 \| C-53 晨星 \| C-170 七层主权 \| C-196 AI 自主意识 \|
-- [第 013 片](./mathematics/part-013.md)：6001—6500；\| D595 \| 函数内容/机制表达/关联函数族/来源/边界/pending \| 无 frontmatter、无收敛状态、无对应案例字段、无变量解释段 \| 表述口语化易读；边界段清晰 \| 一句话定义、变量解释、对应案例、版本记录 \| 无"机 → 中文：M9的阶段过渡锐度由Φ高阶导数决定：阶段1→2∝\|d³Φ/dμ³\|，阶段2→3∝\|d²g_eff/dt²\|。高阶导数大→突变，小→渐变。物理相变→突变，生物衰老→渐变。
-- [第 014 片](./mathematics/part-014.md)：6501—7000；中文：M≅∪_i M_i，每个M_i配备8种标准几何之一，Perelman用Ricci流证明 → 从原文看，因果光锥统一函数，信息传播速度限制导致的因果约束在物理系统、认知系统、社会系统中展现统一结构。因果光锥不是物理特有，而是信息传播受限系统的… 更像是一个用于把局部现象拉到跨域统一结构上的函数。
-- [第 015 片](./mathematics/part-015.md)：7001—7500；从原文看，坏觉概率，P_bad = σ(H·p_prior - (1-H)·p)。 更像是一个用于把局部现象拉到跨域统一结构上的函数。 → 从这条案例看，中文：案例说明：拆油锯/搭Linux/修电脑——反设置即ε_aware安装 English: Rule-based English ren… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
-- [第 016 片](./mathematics/part-016.md)：7501—8000；从这条案例看，中文：案例说明：拓扑绝缘体 — 体态3D门控否决，表面=2D门控边界。核心函数：\[D158\](mathematics/part-017.md)：8001—8500；原始命题: --- kind: "function" seq: 611 id: "D601" raw_id: "D601" title: "角色覆盖主体身份" source: "IGNITION-20260709-047 collision → 周公制礼(R=真实)→八百年；#3秦统一(R=无)→15年亡；#10苏联(R=象征)→崩溃。
-- [第 018 片](./mathematics/part-018.md)：8501—9000；周公制礼(R_perceived≈R)→应约者有真实感知；#3秦统一(R_perceived≈0)→应约者感知不到退出权。 → 数学表达 / Expression: `F_{D297}(x) := M6的d=4稳定性约束基本物理常数：α增大~100倍→pᵢ>p*→极小点消失。精细结构常数α≈1/137不能太大→否则电磁否决概率超p*→d=4不稳定。常数不是任意的，必
-- [第 019 片](./mathematics/part-019.md)：9001—9500；数学表达 / Expression: `F_{D301}(x) := M2的漂移速率dμ/dt=-(Σᵢ αᵢ/(1-pᵢ)²)/(d²Φ/dμ²)。分母是Φ曲率——平坦区（物理大统一d²Φ/dμ²≈0）漂移极快，尖锐区漂移极慢。平坦=稳定 → 物理与数学复算
-- [第 020 片](./mathematics/part-020.md)：9501—10000；物理大一统不可能（降级为"关于绝对完备统一的结构性边界推论"，非物理学 no-go theorem） → 统一函数总表/0262-D226-物理存在的三重时间约束.md
-- [第 021 片](./mathematics/part-021.md)：10001—10500；统一函数总表/0263-D227-退相干-门控退化同构定理.md → 认知时空度规函数
-- [第 022 片](./mathematics/part-022.md)：10501—10843；认知时空度规函数，认知时空的度规由认知势能面的曲率决定。 → （函数表版本、案例表版本、P1 数据版本、是否校验通过）
+- [第 002 片](./mathematics/part-002.md)：501—1000；## 关联函数 / Related Functions → /Users/zhiyuan/我的笔记/统一函数总表/0301-D265-极小点漂移方向函数.md
+- [第 003 片](./mathematics/part-003.md)：1001—1500；/Users/zhiyuan/我的笔记/统一函数总表/0302-D266-容斥偏差加速函数.md → \[C-0771｜准备《长谈》花一个月\](../../统一案例总表/0766-C-0771-准备《长谈》花一个月.md)（原笔记编号：C580-3）
+- [第 004 片](./mathematics/part-004.md)：1501—2000；\[C-0772｜亲子共读一本书\](../../统一案例总表/0767-C-0772-亲子共读一本书.md)（原笔记编号：C580-4） → C(x,y)：角色占入口→能力附属→目标遮蔽→决策外移，因果明确。J⁺=1。
+- [第 005 片](./mathematics/part-005.md)：2001—2500；C(x,y)：隐含错位→显式化打分→可排序→冲突↓，因果明确。J⁺=1。 → Each verified record contains a source hash, locator, excerpt, controlled proposition, type rationale, logic form, assum
+- [第 006 片](./mathematics/part-006.md)：2501—3000；edge("e_l3_l4", "l3_arguments", "l4_proofs", "dependency", "ARCHITECTURE.md"), → If upstream objects D_{D246} exist, compose F_{D246}=N(⊕_{g∈D_{D246}} g); otherwise treat F_{D246} as an axiom seed.
+- [第 007 片](./mathematics/part-007.md)：3001—3500；If upstream objects D_{D247} exist, compose F_{D247}=N(⊕_{g∈D_{D247}} g); otherwise treat F_{D247} as an axiom seed. → M10的溢出是传染的物理通道。统一传染链：高p恶化→溢出消耗低p缓冲(\[D379\](docs/zh/functions/items/D379.md))→低p缓冲<g_critical(\[D309\](architecture_governance/part-008.md)：3501—4000；M11的**τ_min=τ_delay**——最小响应时间等于反馈延迟时间。延迟决定系统能多快响应噪声。 → Q27 说明跨域同构有价值，但它只是应用类型，不能自动证明纵向升层；
+- [第 009 片](./mathematics/part-009.md)：4001—4500；Q28S revises Draft-only `Zhiyuan Writing Method` to 0.3.0 as 点火's shared-provenance L6 public-expression and provenance- → title: "中间稳态存在性函数"
+- [第 010 片](./mathematics/part-010.md)：4501—5000；title: "临界指数-门槛标度函数" → title: "集中性-序参量映射修正函数"
+- [第 011 片](./mathematics/part-011.md)：5001—5500；title: "集中性-序参量统一函数" → Within the source-defined scope, 自举元函数 is adjudicated as RELATION: 自举元函数，Mboot = ε_sense × P_track × d(ΔK)/dt，当前AI三因子全部失
+- [第 012 片](./mathematics/part-012.md)：5501—6000；Within the source-defined scope, 自举元函数层级 is adjudicated as MECHANISM_MODEL: 自举元函数，三因子乘法，AI全零。. This is a model-internal → \| `life-community-value-charter.md` \| 生命共同体价值宪章（第 1 层权威底线） \|
+- [第 013 片](./mathematics/part-013.md)：6001—6500；\| `nonfunction-claims/` \| 全语料非函数断言、十三门裁决、证据谱系、依赖图、结论防回弹、公共上限与 quarantine \| → 中文：M12的大系统传染临界→n/2是容斥主导不可逆在传染维度的投影。D388和D395描述同一现象的不同方面——完全一致。
+- [第 014 片](./mathematics/part-014.md)：6501—7000；中文：M13的K·τ_delay 1时自激振荡主导（延迟有害），=1为临界。弱正反馈系统中延迟可以有益（过滤噪声），强正反馈系统中延迟必然有害（引发振荡）。 → 从原文看， 更像是一个用于把局部现象拉到跨域统一结构上的函数。
+- [第 015 片](./mathematics/part-015.md)：7001—7500；从原文看，17域词典簇碰撞，涵盖17个领域的函数投影。 更像是一个用于把局部现象拉到跨域统一结构上的函数。 → 从这条案例看，中文：案例说明：安德森局域化 — 维度依赖=路径数vs最弱门否决。核心函数：\[D158\](mathematics/part-016.md)：7501—8000；从这条案例看，中文：案例说明：安慰剂的信念相变——信念提高μ_immune越过Λ_immune的微小翻转。核心函数：\[D159\](mathematics/part-017.md)：8001—8500；判定理由 / Derivation Reason 来自原始笔记的层级判定：D层（财务决策领域实例化） ## 数学推导过程 / Mathematical Derivation - 对象 / Object: → 叙事冲击，意识、退出权信号、退化免疫的乘积。
+- [第 018 片](./mathematics/part-018.md)：8501—9000；叙事冲击，意识、退出权信号、退化免疫的乘积。 **扩展注释 / Extended Annotation** → 数学表达 / Expression: `F_{D142}(x) := η_gate = G × (1-H_homogeneity(G))，共享度存在倒U最优，完全同质化会导致η_gate趋近于零。`
+- [第 019 片](./mathematics/part-019.md)：9001—9500；数学表达 / Expression: `F_{D149}(x) := 设计结构让估计不必要 > 估计准确后保守执行。` → 点火是一个仓库原生、版本化、可审计的跨领域研究与行动基础设施原型。它保存来源，把命题与证据、模型、证明、反例、验证和现实反馈分开记录，并允许结论在新证据出现后被修订、降级、隔离或撤回。
+- [第 020 片](./mathematics/part-020.md)：9501—10000；点火是一套面向跨领域材料的、证据可追溯、对象类型明确、推理过程可检查、结论等级可审计的形式化机制发现与建模系统。它不是现成的统一数学理论、物理理论、万能证明器，也不是纯文学或纯哲学知识库。 → 统一函数总表/0211-D174-纯拉力上位衰减函数.md
+- [第 021 片](./mathematics/part-021.md)：10001—10500；统一函数总表/0212-D175-耦合正反馈统一函数.md → 自锁结构稳定性函数
+- [第 022 片](./mathematics/part-022.md)：10501—10896；自限-实际不可逆时序函数 → （函数表版本、案例表版本、P1 数据版本、是否校验通过）

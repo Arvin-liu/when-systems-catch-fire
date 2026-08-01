@@ -24,6 +24,31 @@
   - 可搜索名称：NFC-0c685e65335a2486 / "conclusion_rebound": bool(re.search(r"(?:大一统\|四力统一).{0,24}(?:已被证明不可能\|普遍不可能\|不可能定理)", compact)),
   - 来源：`tools/governance/run_self_correction.py`
   - 依赖：—；被引用：—
+- ["data_availability": 0.2 if ("统一" in q or "量子引力" in q) else 0.5,](../../../tools/iteration_planner/planner.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-4714375786218bf7 / "data_availability": 0.2 if ("统一" in q or "量子引力" in q) else 0.5,
+  - 来源：`tools/iteration_planner/planner.py`
+  - 依赖：—；被引用：—
+- ["evidence_cost": 0.85 if ("统一" in q or "量子引力" in q) else 0.6,](../../../tools/iteration_planner/planner.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-f92d9119b8e125b3 / "evidence_cost": 0.85 if ("统一" in q or "量子引力" in q) else 0.6,
+  - 来源：`tools/iteration_planner/planner.py`
+  - 依赖：—；被引用：—
+- ["exclusions": "No paper-content validity, scientific truth, Pointfire physics, MCF, PSD, ARN, causal validity or maturit](../../../tools/emit_evidence_program_openalex.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-ac8eb8a7d55ebfdb / "exclusions": "No paper-content validity, scientific truth, Pointfire physics, MCF, PSD, ARN, causal validity or maturit
+  - 来源：`tools/emit_evidence_program_openalex.py`
+  - 依赖：—；被引用：—
+- ["falsifiability": 0.2 if ("统一" in q or "量子引力" in q or "量子测量" in q) else 0.5,](../../../tools/iteration_planner/planner.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-784df70214703b73 / "falsifiability": 0.2 if ("统一" in q or "量子引力" in q or "量子测量" in q) else 0.5,
+  - 来源：`tools/iteration_planner/planner.py`
+  - 依赖：—；被引用：—
+- ["harm_if_wrong": 0.8 if "统一" in q or "量子引力" in q else 0.6,](../../../tools/iteration_planner/planner.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-9b1f1d6b9404391b / "harm_if_wrong": 0.8 if "统一" in q or "量子引力" in q else 0.6,
+  - 来源：`tools/iteration_planner/planner.py`
+  - 依赖：—；被引用：—
 - ["lineage": "PHYSICS_UNIFICATION_NOGO" if "impossible" in row\["claim_text"\] else "WITHDRAWN_TASK98_CLAIM",](../../../tools/foundation/adjudicate_function_assets.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-e522219ce8fd2c9f / "lineage": "PHYSICS_UNIFICATION_NOGO" if "impossible" in row\["claim_text"\] else "WITHDRAWN_TASK98_CLAIM",
@@ -34,6 +59,11 @@
   - 可搜索名称：NFC-b80cee9c5ecf4e5f / "lineage_key": "PHYSICS_UNIFICATION_NOGO" if UNIFICATION_NOGO.search(text) else None,
   - 来源：`tools/foundation/adjudicate_nonfunction_claims.py`
   - 依赖：—；被引用：—
+- ["maturity_gap": 0.85 if ("统一" in q or "量子引力" in q) else 0.6,](../../../tools/iteration_planner/planner.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-d2bc04a1eab85bac / "maturity_gap": 0.85 if ("统一" in q or "量子引力" in q) else 0.6,
+  - 来源：`tools/iteration_planner/planner.py`
+  - 依赖：—；被引用：—
 - ["omega phi_zero no_constraints no_physics physical_exists"](../../../tools/foundation/verify_core_claims.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-083f11b422523698 / "omega phi_zero no_constraints no_physics physical_exists"
@@ -43,6 +73,26 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-a69913f02003956d / "only what ignition's own assets support; no four-force unification / quantum gravity"),
   - 来源：`tools/propagation/generate_editorial_manifest.py`
+  - 依赖：—；被引用：—
+- ["reason": "Four-force unification and quantum gravity are low-falsifiability (0.2), low data availability (0.2), high ev](../../../tools/iteration_planner/emit_outputs.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-25ffca19e429a983 / "reason": "Four-force unification and quantum gravity are low-falsifiability (0.2), low data availability (0.2), high ev
+  - 来源：`tools/iteration_planner/emit_outputs.py`
+  - 依赖：—；被引用：—
+- ["title": "Pointfire unifies the four fundamental forces / quantum gravity.",](../../../data/operations/iterations/109/dossiers/C-06.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-1994A619ECD95A90 / "title": "Pointfire unifies the four fundamental forces / quantum gravity.", / IMPLICIT-1994A619ECD95A90 / IMPLICIT-39B34231965B6619
+  - 来源：`data/operations/iterations/109/dossiers/C-06.json`
+  - 依赖：—；被引用：—
+- ["title": "Pointfire unifies the four fundamental forces / quantum gravity.",](../../../data/operations/iterations/110/candidate_inventory.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-39B34231965B6619 / "title": "Pointfire unifies the four fundamental forces / quantum gravity.", / IMPLICIT-39B34231965B6619 / IMPLICIT-1994A619ECD95A90
+  - 来源：`data/operations/iterations/110/candidate_inventory.json`
+  - 依赖：—；被引用：—
+- ["title": "Pointfire unifies the four fundamental forces / quantum gravity.",](../../../data/operations/iterations/109/candidate_inventory.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-716DA1D22B83DF70 / "title": "Pointfire unifies the four fundamental forces / quantum gravity.", / IMPLICIT-716DA1D22B83DF70 / IMPLICIT-1994A619ECD95A90
+  - 来源：`data/operations/iterations/109/candidate_inventory.json`
   - 依赖：—；被引用：—
 - ["title": "不能推出四力统一或物理学大一统不可能。",](../../../analysis/corpus-relation/article_cluster_candidates.json)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -124,15 +174,40 @@
   - 可搜索名称：IMPLICIT-CF3146531CD51105 / "title": "暗物质 / 暗能量本质", / IMPLICIT-CF3146531CD51105 / IMPLICIT-B3BC971B634FD126
   - 来源：`data/storytelling_backlog.json`
   - 依赖：—；被引用：—
+- ["title": "暗能量与宇宙常数",](../../../data/operations/iterations/109/candidate_inventory.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-4C587CDA88C8A5EB / "title": "暗能量与宇宙常数", / IMPLICIT-4C587CDA88C8A5EB / IMPLICIT-506C419C9D31B2F1
+  - 来源：`data/operations/iterations/109/candidate_inventory.json`
+  - 依赖：—；被引用：—
+- ["title": "暗能量与宇宙常数",](../../../data/operations/iterations/110/candidate_inventory.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-506C419C9D31B2F1 / "title": "暗能量与宇宙常数", / IMPLICIT-506C419C9D31B2F1 / IMPLICIT-4C587CDA88C8A5EB
+  - 来源：`data/operations/iterations/110/candidate_inventory.json`
+  - 依赖：—；被引用：—
+- ["title": "暗能量与宇宙常数",](../../../data/operations/iterations/109/dossiers/OQ-90163.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-9245464967B7311A / "title": "暗能量与宇宙常数", / IMPLICIT-9245464967B7311A / IMPLICIT-4C587CDA88C8A5EB
+  - 来源：`data/operations/iterations/109/dossiers/OQ-90163.json`
+  - 依赖：—；被引用：—
 - ["title": "量子引力",](../../../data/classic_problems_benchmark.json)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-7D5E859043317ECD / "title": "量子引力", / IMPLICIT-7D5E859043317ECD / IMPLICIT-B3432B3C3F016963
+  - 可搜索名称：IMPLICIT-7D5E859043317ECD / "title": "量子引力", / IMPLICIT-7D5E859043317ECD / IMPLICIT-0D183A5B4C89E035
   - 来源：`data/classic_problems_benchmark.json`
+  - 依赖：—；被引用：—
+- ["title": "量子引力",](../../../data/operations/iterations/110/candidate_inventory.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-AF4DFCA332C172A1 / "title": "量子引力", / IMPLICIT-AF4DFCA332C172A1 / IMPLICIT-0D183A5B4C89E035
+  - 来源：`data/operations/iterations/110/candidate_inventory.json`
   - 依赖：—；被引用：—
 - ["title": "量子引力",](../../../data/storytelling_backlog.json)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-B3432B3C3F016963 / "title": "量子引力", / IMPLICIT-B3432B3C3F016963 / IMPLICIT-7D5E859043317ECD
+  - 可搜索名称：IMPLICIT-B3432B3C3F016963 / "title": "量子引力", / IMPLICIT-B3432B3C3F016963 / IMPLICIT-0D183A5B4C89E035
   - 来源：`data/storytelling_backlog.json`
+  - 依赖：—；被引用：—
+- ["title": "量子引力",](../../../data/operations/iterations/109/dossiers/OQ-26772.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-F9517A9476A52C18 / "title": "量子引力", / IMPLICIT-F9517A9476A52C18 / IMPLICIT-0D183A5B4C89E035
+  - 来源：`data/operations/iterations/109/dossiers/OQ-26772.json`
   - 依赖：—；被引用：—
 - ["四种基本力统一问题未解决"（这是物理学界的共识，点火框架只是重述）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -399,6 +474,16 @@
   - 可搜索名称：NFC-c7f377e9e4691a62 / AI 将项目描述成野心、大一统、解释一切、终极框架或万能理论。
   - 来源：`data/publication_risk_rules.csv`
   - 依赖：—；被引用：—
+- [assert pilot\["aggregate_score"\] > physics\["aggregate_score"\]](../../../tests/iteration_planner/test_planner.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-009878a0d1eacb1c / assert pilot\["aggregate_score"\] > physics\["aggregate_score"\]
+  - 来源：`tests/iteration_planner/test_planner.py`
+  - 依赖：—；被引用：—
+- [assert sc(pilot) > sc(physics), "bounded falsifiable pilot must outrank grand untestable physics"](../../../tests/iteration_planner/test_planner.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-be0e7e6506d05983 / assert sc(pilot) > sc(physics), "bounded falsifiable pilot must outrank grand untestable physics"
+  - 来源：`tests/iteration_planner/test_planner.py`
+  - 依赖：—；被引用：—
 - [broken = \[row for row in self.aliases if row\["alias"\] != "大一统已被证明不可能"\]](../../../tests/test_knowledge_experience.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-49372cea91c9cb72 / broken = \[row for row in self.aliases if row\["alias"\] != "大一统已被证明不可能"\]
@@ -428,6 +513,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-5f0c6b23908690fd / Claim ceiling: repository governance and assessment of the current Ignition model only; no new external physics result
   - 来源：`reports/foundation-architecture/098-claim-governance-implementation.md`
+  - 依赖：—；被引用：—
+- [content, scientific truth, Pointfire physics, MCF, PSD, ARN or maturity/disposition.](../../../evidence-program/README.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-337d4d802bd7dd54 / content, scientific truth, Pointfire physics, MCF, PSD, ARN or maturity/disposition.
+  - 来源：`evidence-program/README.md`
   - 依赖：—；被引用：—
 - [controlled="Given the source chain Omega=1 implies Phi=0 implies no gates implies no constraints implies no physics, plu](../../../tools/foundation/verify_079.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -498,6 +588,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-f9111409424f25d3 / family_match = lineage == "PHYSICS_UNIFICATION_NOGO" or bool(explicit_rebound.search(stripped))
   - 来源：`tools/foundation/adjudicate_function_assets.py`
+  - 依赖：—；被引用：—
+- [grand physics unification](../../../tools/iteration_planner/emit_outputs.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-d7b781a70add14f4 / grand physics unification
+  - 来源：`tools/iteration_planner/emit_outputs.py`
   - 依赖：—；被引用：—
 - [grand-physics claim chosen for narrative) using a genuine external oracle.](../../../evidence-program/runs/IGNITION-EVIDENCE-PILOT-R1-CROSSREF-DOI-VERIFICATION/RESULT.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
@@ -661,6 +756,31 @@
   - 可搜索名称：NFC-d6935b5dd720d8a7 / Outcome**：历史证据表明苹果传说是后人虚构，苹果并不是直接因果触发，属于公众叙事而非科学事实。因此该命题的因果强度为低，应标记为 `false` 或 `pending`。
   - 来源：`case_failures/examples/apple_gravity_failure.md`
   - 依赖：—；被引用：—
+- [P.score(physics, m2); P.score(pilot, m2)](../../../tests/iteration_planner/test_planner.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-bee82ef76c50e8ea / P.score(physics, m2); P.score(pilot, m2)
+  - 来源：`tests/iteration_planner/test_planner.py`
+  - 依赖：—；被引用：—
+- [physics = mk("PHYS", base_fi({"falsifiability": 0.2, "data_availability": 0.2,](../../../tests/iteration_planner/test_planner.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-698e3f491636dd6d / physics = mk("PHYS", base_fi({"falsifiability": 0.2, "data_availability": 0.2,
+  - 来源：`tests/iteration_planner/test_planner.py`
+  - 依赖：—；被引用：—
+- [physics = mk("PHYS", base_fi({"falsifiability": 0.2, "data_availability": 0.2, "evidence_cost": 0.85,](../../../tests/iteration_planner/test_planner.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-c982eb9889bea440 / physics = mk("PHYS", base_fi({"falsifiability": 0.2, "data_availability": 0.2, "evidence_cost": 0.85,
+  - 来源：`tests/iteration_planner/test_planner.py`
+  - 依赖：—；被引用：—
+- [physics, quarantine adjudication, lower-ranked pilots, upstream-dependent architectural gaps).](../../../tools/iteration_planner/emit_outputs.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-3cd64430adc55557 / physics, quarantine adjudication, lower-ranked pilots, upstream-dependent architectural gaps).
+  - 来源：`tools/iteration_planner/emit_outputs.py`
+  - 依赖：—；被引用：—
+- [Pointfire 物理、MCF、PSD、ARN、现实因果或任何成熟度/处置提升。生命周期事实由候选](../../../docs/project-current-state.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-159fd6e483f5f322 / Pointfire 物理、MCF、PSD、ARN、现实因果或任何成熟度/处置提升。生命周期事实由候选
+  - 来源：`docs/project-current-state.md`
+  - 依赖：—；被引用：—
 - [Prediction**：系统可能会输出 `true`，认为苹果落地与牛顿提出引力理论存在直接因果链。](../../../case_failures/examples/apple_gravity_failure.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-9e9348a30a6e1dff / Prediction**：系统可能会输出 `true`，认为苹果落地与牛顿提出引力理论存在直接因果链。
@@ -711,6 +831,11 @@
   - 可搜索名称：NFC-4e4877f59104e4dd / self.assertRegex(self.readme, r"没有证明.{0,20}大一统普遍不可能\|撤回.{0,40}大一统")
   - 来源：`tests/test_human_front_door.py`
   - 依赖：—；被引用：—
+- [swap two weights; invariant (pilot > physics, meta < defect) must still hold](../../../tests/iteration_planner/test_planner.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-1dd6ac9d9f12f48b / swap two weights; invariant (pilot > physics, meta < defect) must still hold
+  - 来源：`tests/iteration_planner/test_planner.py`
+  - 依赖：—；被引用：—
 - [text = re.sub(r"(?:physical\|structural\|meta\|framework(?:-internal)?\|deep\|higher-order\|物理\|结构性\|元\|框架内\|深层\|高阶)", "", text)](../../../tools/foundation/adjudicate_nonfunction_claims.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
   - 可搜索名称：NFC-dcfc3908e71ca39e / text = re.sub(r"(?:physical\|structural\|meta\|framework(?:-internal)?\|deep\|higher-order\|物理\|结构性\|元\|框架内\|深层\|高阶)", "", text)
@@ -750,6 +875,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-4fad751a9f00fc21 / This is a **bounded metadata-integrity claim**, not a physics claim. It is allowed by
   - 来源：`evidence-program/preregistration/IGNITION-EVIDENCE-PILOT-R1-CROSSREF-DOI-VERIFICATION.protocol.md`
+  - 依赖：—；被引用：—
+- [This result does not validate paper contents, cited conclusions, scientific truth, Pointfire physics, MCF, PSD, ARN, cau](../../../evidence-program/runs/IGNITION-EVIDENCE-PILOT-R1-OPENALEX-DOI-REPLICATION-20260801/RESULT.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a948e66549e641a2 / This result does not validate paper contents, cited conclusions, scientific truth, Pointfire physics, MCF, PSD, ARN, cau
+  - 来源：`evidence-program/runs/IGNITION-EVIDENCE-PILOT-R1-OPENALEX-DOI-REPLICATION-20260801/RESULT.md`
   - 依赖：—；被引用：—
 - [title: "信息门效率统一 / information-gate efficiency unification"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0022-T12-%E4%BF%A1%E6%81%AF%E9%97%A8%E6%95%88%E7%8E%87%E7%BB%9F%E4%B8%80.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -1128,6 +1258,11 @@
   - 可搜索名称：NFC-ffa78acc808beedc / 不能推出四力统一或物理学大一统不可能。 / - 不能推出四力统一或物理学大一统不可能。
   - 来源：`RESULTS/LATEST.md`
   - 依赖：—；被引用：—
+- [不覆盖论文内容或任何 Pointfire/MCF/PSD/ARN 物理主张。原始响应与哈希保留在 task-110](../../../ITERATION.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-127fe66e293d8887 / 不覆盖论文内容或任何 Pointfire/MCF/PSD/ARN 物理主张。原始响应与哈希保留在 task-110
+  - 来源：`ITERATION.md`
+  - 依赖：—；被引用：—
 - [中文：Γ_unified(k) = d_F(εₖ)/λ + κ_env(k)·H(k) A_k(t) = A_k(0)·e^{-Γ_unified(k)·t} Fisher可达性坍塌和量子退相干是同一个过程——对不可达自由度做trace的信息损失——在不同几何中的投影。统一衰减率Γ_unified包含内生退化项（d_F/λ）和环境退相干项（κ_env·H）。遮蔽H是社会域的退相干环境。刀刃期=两项共振=Γ_unified峰值。修复=降低Γ_unified。加法系统Γ有上界→永](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0166-D128-%E9%80%80%E7%9B%B8%E5%B9%B2-%E9%80%80%E5%8C%96%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-A4D172245D460BC5 / 中文：Γ_unified(k) = d_F(εₖ)/λ + κ_env(k)·H(k) A_k(t) = A_k(0)·e^{-Γ_unified(k)·t} Fisher可达性坍塌和量子退相干是同一个过程——对不可达自由度做trace的信息损失——在不同几何中的投影。统一衰减率Γ_unified包含内生退化项（d_F/λ）和环境退相干项（κ_env·H）。遮蔽H是社会域的退相干环境。刀刃期=两项共振=Γ_unified峰值。修复=降低Γ_unified。加法系统Γ有上界→永 / IMPLICIT-A4D172245D460BC5
@@ -1447,6 +1582,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-2edf5f38a58ab610 / 学科证据制度误配（用结构性推论替代物理实验）
   - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [它只回答跨源书目元数据一致性，不替代论文内容、科学真理或物理理论的证据。](../../../RESULTS/RESEARCH-AND-ARTICLES.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-01b1099646ff389c / 它只回答跨源书目元数据一致性，不替代论文内容、科学真理或物理理论的证据。
+  - 来源：`RESULTS/RESEARCH-AND-ARTICLES.md`
   - 依赖：—；被引用：—
 - [它对应哪个学科问题；](../../../docs/physics_boundary.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`

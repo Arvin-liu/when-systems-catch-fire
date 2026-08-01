@@ -4,18 +4,13 @@
 
 ## 2026
 
-<a id="change-src-task-110-completion-state-openalex"></a>
-### 2026-08-01 · Task 110：已完成工作不再重复排队
+<a id="change-chg-110"></a>
+### 2026-08-01 · 任务 110：已完成工作不再重复排队
 
 - **类型：** `ITERATION_OR_REPOSITORY_RESULT`
 - **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
-- **变化：** 任务 109 的 `C-01` 推荐被保留为历史缺陷；C-01/task 103 与 C-04/task 105
-  依据治理身份登记为已完成并排除 active queue。C-03 执行了独立 OpenAlex 元数据复制。
-- **结果：** 117/117 HTTP 200；主分母 116 中 101 supported、8 partial、7 null、0
-  contradicted、0 invalid。完整原始响应与哈希已保存。
-- **边界：** 只涉及 registry/Crossref 与 OpenAlex 的书目元数据一致性，不验证论文内容、
-  科学真理、Pointfire/MCF/PSD/ARN 或成熟度/处置。
-- **来源：** [结果](../evidence-program/runs/IGNITION-EVIDENCE-PILOT-R1-OPENALEX-DOI-REPLICATION-20260801/RESULT.md) · [状态 overlay](../evidence-program/registry/task-110-portfolio-state.json) · [方法文章](../docs/editorial/articles/009-system-completion-state-and-independent-replication.md)
+- **变化：** 保留任务 109 的 C-01 重复推荐缺陷并将 C-01/C-04 按权威完成证据移出 active queue；C-03 完成了独立 OpenAlex 书目元数据复制。117 条记录全部返回 HTTP 200，主分母 116 中 101 supported、8 partial、7 null、0 contradicted、0 invalid。
+- **来源：** [README.md](../README.md) · [RESULT.md](../evidence-program/runs/IGNITION-EVIDENCE-PILOT-R1-OPENALEX-DOI-REPLICATION-20260801/RESULT.md) · [009-system-completion-state-and-independent-replication.md](../docs/editorial/articles/009-system-completion-state-and-independent-replication.md) · [task-110-portfolio-state.json](../evidence-program/registry/task-110-portfolio-state.json)
 
 <a id="change-src-hr-f3d97a665e74558a"></a>
 ### 2026-08-01 · 迭代生命周期模型（事件溯源 · 任务 108 引入）
