@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [已覆盖 1 条：M2→D598+D597（家庭轴补强证据）。](../../../outputs/collisions/20260711-disobedience-subjectivity/two-tables-full-collision-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-12e5b457821522e9 / 已覆盖 1 条：M2→D598+D597（家庭轴补强证据）。
+  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/two-tables-full-collision-report.md`
+  - 依赖：D597, D598；被引用：—
 - [已验证 / 跨域复现 / 单材料 pending / 证据不足 pending](../../../templates/two-tables/unified-function-entry-template.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-a41d765ea25bc49c / 已验证 / 跨域复现 / 单材料 pending / 证据不足 pending
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-17a9dca3e7559138 / 补充差异、竞争解释和证据制度。
   - 来源：`data/failure_typology.csv`
-  - 依赖：—；被引用：—
-- [补齐证据链；](../../../outputs/getbrain/failure-typology-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-b77f7ca349010738 / 补齐证据链；
-  - 来源：`outputs/getbrain/failure-typology-draft-20260706.md`
   - 依赖：—；被引用：—

@@ -999,7 +999,14 @@ def validate_manifest_bindings(documents: list[tuple[Path, dict]]) -> list[tuple
 
 
 def validate_all() -> dict:
-    paths = sorted(MANIFEST_DIR.glob("*.json"))
+    # Terminal closeout receipts use the same directory but are not iteration
+    # manifests.  Task 108's historical flat FINAL_STATE file predates the
+    # nested FINAL_STATE convention and must remain immutable evidence; do not
+    # feed it to the iteration-manifest schema validator.
+    paths = sorted(
+        path for path in MANIFEST_DIR.glob("*.json")
+        if not path.name.endswith("-FINAL_STATE.json")
+    )
     require(paths, "no iteration manifests found")
     registry = validate_registry(load_json(REGISTRY_PATH))
     documents = [(path, load_json(path)) for path in paths]

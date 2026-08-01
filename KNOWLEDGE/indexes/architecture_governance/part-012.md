@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [不是社会科学实证模型；](../../../docs/author_motivation_and_boundary_note.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-b8ef8d01ec0467ad / 不是社会科学实证模型；
+  - 来源：`docs/author_motivation_and_boundary_note.md`
+  - 依赖：—；被引用：—
 - [不是自动生成最终结论**：P1 数据只提供索引、提醒、约束与分流信号。](../../../docs/p1-machine-data-collision-workflow-20260708.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-310aa6caf348c6c6 / 不是自动生成最终结论**：P1 数据只提供索引、提醒、约束与分流信号。
@@ -2487,8 +2492,3 @@
   - 可搜索名称：NFC-457a1c525e5795b0 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0202-C-202-反对AI者.md`
   - 来源：`统一案例总表/0202-C-202-反对AI者.md`
   - 依赖：—；被引用：—
-- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0205-C-205-A8.md`](../../../统一案例总表/0205-C-205-A8.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-161d3f57156020e6 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0205-C-205-A8.md`
-  - 来源：`统一案例总表/0205-C-205-A8.md`
-  - 依赖：A8；被引用：—

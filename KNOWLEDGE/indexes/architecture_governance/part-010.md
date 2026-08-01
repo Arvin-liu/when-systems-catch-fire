@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [self.assertTrue(document\["unresolved_residue"\])](../../../tests/test_incremental_execution.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-8ef9829a52da5866 / self.assertTrue(document\["unresolved_residue"\])
+  - 来源：`tests/test_incremental_execution.py`
+  - 依赖：—；被引用：—
 - [self.assertTrue(j.get("territorial_law_scope", "").strip(),](../../../tests/test_jurisdiction_sovereignty_neutral.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-9f80d5e5554bb0e1 / self.assertTrue(j.get("territorial_law_scope", "").strip(),
@@ -2497,10 +2502,5 @@
 - [Within the source-defined scope, 信息门非对称退化 is adjudicated as STATE_TRANSITION: 信息门非对称退化，η_gate^asym = G × (1-H) × min(ε^S](../../../data/foundation/adjudications/core-kernel.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
   - 可搜索名称：CLAIM-D87 / Within the source-defined scope, 信息门非对称退化 is adjudicated as STATE_TRANSITION: 信息门非对称退化，η_gate^asym = G × (1-H) × min(ε^S
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 偏好伪造崩塌 is adjudicated as STATE_TRANSITION: 偏好伪造概率，遮蔽越高→偏好伪造概率越高→崩塌条件触发。. This is a mode](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D5 / Within the source-defined scope, 偏好伪造崩塌 is adjudicated as STATE_TRANSITION: 偏好伪造概率，遮蔽越高→偏好伪造概率越高→崩塌条件触发。. This is a mode
   - 来源：`data/foundation/adjudications/core-kernel.jsonl`
   - 依赖：—；被引用：—

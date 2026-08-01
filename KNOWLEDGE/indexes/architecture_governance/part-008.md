@@ -2306,6 +2306,11 @@
   - 可搜索名称：NFC-4ac0590e766a11f5 / Neighbors, task masses, weights and a case-study prediction are trace precursors without durable schema or provenance.
   - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
   - 依赖：—；被引用：—
+- [nested FINAL_STATE convention and must remain immutable evidence; do not](../../../tools/validate_iteration_sync.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-16b3cfcc42ed63d5 / nested FINAL_STATE convention and must remain immutable evidence; do not
+  - 来源：`tools/validate_iteration_sync.py`
+  - 依赖：—；被引用：—
 - [Neural operators parameterize nonlinear maps between function spaces using compositions of nonlocal integral operators,](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-761b03fcd07db01f / Neural operators parameterize nonlinear maps between function spaces using compositions of nonlocal integral operators,
@@ -2495,9 +2500,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-da7fe557626002fb / ok(f"{item\['path'\]}: registered generator '{gid}' verified (digest match)")
   - 来源：`tools/operations/validate_generated_output_authority.py`
-  - 依赖：—；被引用：—
-- [OLD2\[统一案例总表\] --> E\[evidence\]](../../../ARCHITECTURE.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-0315d563ee2d60dd / OLD2\[统一案例总表\] --> E\[evidence\]
-  - 来源：`ARCHITECTURE.md`
   - 依赖：—；被引用：—

@@ -2,7 +2,7 @@
   "active_conclusion_rebounds": 0,
   "assertion_type_distribution": {
     "DESCRIPTIVE": 350,
-    "EMPIRICAL": 4485,
+    "EMPIRICAL": 4486,
     "INTERPRETIVE": 2647,
     "MATHEMATICAL": 2746,
     "METAPHYSICAL": 850,
@@ -10,12 +10,12 @@
     "UNRESOLVED": 6240
   },
   "blocked_conclusion_rebounds": 5,
-  "candidate_fragments": 30497,
-  "canonical_claims": 17490,
+  "candidate_fragments": 30498,
+  "canonical_claims": 17491,
   "claim_class_distribution": {
     "CROSS_DOMAIN_CORRESPONDENCE": 2184,
     "DESCRIPTIVE_REPOSITORY_CLAIM": 350,
-    "EMPIRICAL_OR_LITERATURE_CLAIM": 2157,
+    "EMPIRICAL_OR_LITERATURE_CLAIM": 2158,
     "IMPOSSIBILITY_OR_UNIVERSAL_CLAIM": 734,
     "INTERPRETATION_OR_FRAMEWORK_CLAIM": 463,
     "LAW_OR_PRINCIPLE_CLAIM": 210,
@@ -30,7 +30,7 @@
   "conclusion_rebound_candidates": 83,
   "dependency_edges": 5769,
   "disposition_distribution": {
-    "ACCEPTED_AS_DEFINITION": 3431,
+    "ACCEPTED_AS_DEFINITION": 3432,
     "ACCEPTED_AS_PROVED_MATHEMATICAL_RESULT": 1,
     "HISTORICAL_ONLY": 6495,
     "PENDING_EMPIRICAL_TEST": 980,
@@ -49,11 +49,11 @@
   "explicit_quarantine_or_pending": 5701,
   "explicitly_unresolved_dependency_edges": 52,
   "external_evidence_distribution": {
-    "E0": 10989,
+    "E0": 10990,
     "E1": 6501
   },
   "mathematical_maturity_distribution": {
-    "M0": 14496,
+    "M0": 14497,
     "M1": 2989,
     "M3": 1,
     "M4": 3,

@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Within the source-defined scope, 偏好伪造崩塌 is adjudicated as STATE_TRANSITION: 偏好伪造概率，遮蔽越高→偏好伪造概率越高→崩塌条件触发。. This is a mode](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D5 / Within the source-defined scope, 偏好伪造崩塌 is adjudicated as STATE_TRANSITION: 偏好伪造概率，遮蔽越高→偏好伪造概率越高→崩塌条件触发。. This is a mode
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
 - [Within the source-defined scope, 分层编码优于扁平化 is adjudicated as NATURAL_LANGUAGE_CANDIDATE: 分层编码优于扁平化，中间层是信息保真中继。. This is](../../../data/foundation/adjudications/core-kernel.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：CLAIM-D154 / Within the source-defined scope, 分层编码优于扁平化 is adjudicated as NATURAL_LANGUAGE_CANDIDATE: 分层编码优于扁平化，中间层是信息保真中继。. This is
@@ -2492,9 +2497,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-f2b16f15253d987b / 不接受内部编号引用作为经验证据
   - 来源：`reports/foundation-architecture/085-backlog-prioritization.md`
-  - 依赖：—；被引用：—
-- [不是社会科学实证模型；](../../../docs/author_motivation_and_boundary_note.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-b8ef8d01ec0467ad / 不是社会科学实证模型；
-  - 来源：`docs/author_motivation_and_boundary_note.md`
   - 依赖：—；被引用：—

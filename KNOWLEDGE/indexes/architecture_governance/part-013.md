@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0205-C-205-A8.md`](../../../统一案例总表/0205-C-205-A8.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-161d3f57156020e6 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0205-C-205-A8.md`
+  - 来源：`统一案例总表/0205-C-205-A8.md`
+  - 依赖：A8；被引用：—
 - [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0210-C-210-人机分工.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0210-C-210-%E4%BA%BA%E6%9C%BA%E5%88%86%E5%B7%A5.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-11d343dbb465144e / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0210-C-210-人机分工.md`
@@ -2499,8 +2504,3 @@
   - 可搜索名称：NFC-6b5742412c89bfbf / 已经统一四种基本力；
   - 来源：`outputs/getbrain/project-position-update-20260706.md`
   - 依赖：—；被引用：—
-- [已覆盖 1 条：M2→D598+D597（家庭轴补强证据）。](../../../outputs/collisions/20260711-disobedience-subjectivity/two-tables-full-collision-report.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-12e5b457821522e9 / 已覆盖 1 条：M2→D598+D597（家庭轴补强证据）。
-  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/two-tables-full-collision-report.md`
-  - 依赖：D597, D598；被引用：—

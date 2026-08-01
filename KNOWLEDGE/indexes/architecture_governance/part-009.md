@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [OLD2\[统一案例总表\] --> E\[evidence\]](../../../ARCHITECTURE.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-0315d563ee2d60dd / OLD2\[统一案例总表\] --> E\[evidence\]
+  - 来源：`ARCHITECTURE.md`
+  - 依赖：—；被引用：—
 - [one internal positive example family and one baseline are insufficient for universal method claims;](../../../reports/operations/121Q28-embodied-cognitive-leap-writing-method-audit.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-3fc475d652039b19 / one internal positive example family and one baseline are insufficient for universal method claims;
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-3314c1f2849ec984 / self.assertTrue(any("subject_head" in e and "artifact_head_sha" in e for e in errors))
   - 来源：`tests/test_external_attestation.py`
-  - 依赖：—；被引用：—
-- [self.assertTrue(document\["unresolved_residue"\])](../../../tests/test_incremental_execution.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-8ef9829a52da5866 / self.assertTrue(document\["unresolved_residue"\])
-  - 来源：`tests/test_incremental_execution.py`
   - 依赖：—；被引用：—
