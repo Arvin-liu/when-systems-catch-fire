@@ -9,13 +9,30 @@ authoritative discovery input. All randomness avoided; tie-break is deterministi
 """
 import hashlib
 import json
+import os
 import subprocess
 import sys
 from pathlib import Path
 
+import completion_state as CS
+
 REPO = Path(__file__).resolve().parents[2]
 MODEL_PATH = REPO / "data/operations/iterations/109/priority_model.json"
-OUT = REPO / "data/operations/iterations/109"
+
+
+def _resolve_out():
+    # Task 110 §5: when a reconciliation ledger exists, reconciled planner outputs go to
+    # that task's own iterations dir (e.g. 110), so the immutable task-109 historical
+    # artifacts are never overwritten. Otherwise fall back to the original 109 dir.
+    if CS.LEDGER_PATH.exists():
+        return CS.LEDGER_PATH.parent
+    env = os.environ.get("ITERATION_OUT_DIR")
+    if env:
+        return REPO / "data/operations/iterations" / env
+    return REPO / "data/operations/iterations/109"
+
+
+OUT = _resolve_out()
 
 META_CLASSES = {"GOVERNANCE_OR_PROPAGATION_DEFECT", "MAINTENANCE_OR_DEPENDENCY", "OWNER_DECISION_REQUIRED"}
 SUBSTANTIVE_CLASSES = {"SCIENTIFIC_EVIDENCE", "MATHEMATICAL_FORMALIZATION",
@@ -336,6 +353,9 @@ def main():
         classify(c)
         score(c, model)
 
+    # --- Task 110 §5: generic completion-state reconciliation (no per-candidate hardcode) ---
+    candidates, historical_register, validation_report, prev_invalidated = CS.reconcile(candidates)
+
     # deterministic rank: blocked forced last; within group by (score desc, id asc)
     def sort_key(c):
         blk = 0 if c["blocked_reason"] is None else 1
@@ -351,8 +371,13 @@ def main():
                     "reason": c["blocked_reason"], "title": c["title"]}
                    for c in candidates if c["blocked_reason"]]
 
-    # recommended queue = non-blocked, top N
-    queue = [c for c in ranked if c["blocked_reason"] is None]
+    # recommended queue = non-blocked AND not in a terminal (or unknown-review) lifecycle
+    # state (§5.4: completed/superseded/withdrawn/do-not-schedule excluded; unknown
+    # completion states blocked from the top until reviewed).
+    queue = [c for c in ranked
+             if c["blocked_reason"] is None
+             and c.get("lifecycle_state") not in CS.LIFECYCLE_TERMINAL
+             and c.get("lifecycle_state") != CS.UNKNOWN_STATE]
     recommended = queue[0] if queue else None
     reserves = queue[1:3]
 
@@ -367,11 +392,17 @@ def main():
         "quarantine_totals": qtotals,
         "ranked": [{"canonical_id": c["canonical_id"], "class": c["class"],
                     "is_meta": c["is_meta"], "aggregate_score": c["aggregate_score"],
-                    "blocked_reason": c["blocked_reason"], "factor_vector": c["factor_vector"],
+                    "blocked_reason": c["blocked_reason"],
+                    "lifecycle_state": c.get("lifecycle_state"),
+                    "factor_vector": c["factor_vector"],
                     "missing_fields": c["missing_fields"]} for c in ranked],
         "recommended_next": recommended["canonical_id"] if recommended else None,
         "reserves": [c["canonical_id"] for c in reserves],
         "substantive_work_ratio_top10": ratio,
+        "prior_recommendation_invalidated": prev_invalidated,
+        "completion_validation_report": validation_report,
+        "lifecycle_terminal_excluded": [c["canonical_id"] for c in ranked
+                                        if c.get("lifecycle_state") in CS.LIFECYCLE_TERMINAL],
     }
     (OUT / "candidate_inventory.json").write_text(json.dumps(candidates, ensure_ascii=False, indent=2))
     (OUT / "ranked_queue.json").write_text(json.dumps(out, ensure_ascii=False, indent=2))
@@ -380,11 +411,26 @@ def main():
     (OUT / "substantive_work_ratio.json").write_text(json.dumps(
         {"top10_ratio": ratio, "threshold": 0.70, "meets_threshold": ratio >= 0.70,
          "top10_classes": {c["canonical_id"]: c["class"] for c in top10}}, ensure_ascii=False, indent=2))
+    # Task 110 §5 reconciliation artifacts
+    (OUT / "completion_registry.json").write_text(json.dumps(
+        {c["canonical_id"]: {"class": c["class"], "lifecycle_state": c.get("lifecycle_state"),
+                             "reconciliation_evidence": c.get("reconciliation_evidence")}
+         for c in candidates}, ensure_ascii=False, indent=2))
+    (OUT / "completed_register.json").write_text(json.dumps(historical_register, ensure_ascii=False, indent=2))
+    (OUT / "corrected_queue.json").write_text(json.dumps({
+        "recommended_next": recommended["canonical_id"] if recommended else None,
+        "reserves": [c["canonical_id"] for c in reserves],
+        "active_queue_top10": [c["canonical_id"] for c in queue[:10]],
+        "prior_recommendation_invalidated": prev_invalidated,
+    }, ensure_ascii=False, indent=2))
 
     print(f"candidates={len(candidates)} recommended={out['recommended_next']} "
           f"reserves={out['reserves']} sub_ratio_top10={ratio}")
+    if prev_invalidated:
+        print(f"  PRIOR-REC INVALIDATED: {prev_invalidated.get('recommended_next')} -> {prev_invalidated.get('state')}")
     for c in ranked[:8]:
-        print(f"  {c['aggregate_score']:6.2f}  {c['class']:32s} {c['canonical_id']}  blk={c['blocked_reason']}")
+        print(f"  {c['aggregate_score']:6.2f}  {c['class']:32s} {c['canonical_id']:30s} "
+              f"blk={c['blocked_reason']} life={c.get('lifecycle_state')}")
 
 
 if __name__ == "__main__":
