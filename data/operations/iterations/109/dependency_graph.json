@@ -1,0 +1,87 @@
+{
+  "OQ-97382": [],
+  "OQ-85917": [],
+  "OQ-24270": [],
+  "OQ-27316": [],
+  "OQ-18872": [],
+  "OQ-09237": [],
+  "OQ-52264": [],
+  "OQ-78468": [],
+  "OQ-26243": [],
+  "OQ-75042": [],
+  "OQ-60028": [],
+  "OQ-15933": [],
+  "OQ-11573": [],
+  "OQ-97709": [],
+  "OQ-87667": [],
+  "C-01": [
+    "SRC-REGISTRY-104-METADATA"
+  ],
+  "C-02": [
+    "CASE-TABLE-HISTORICAL-ANCHORS"
+  ],
+  "C-03": [
+    "DOI-OPENALEX-CROSS-CHECK"
+  ],
+  "C-04": [
+    "FUNCTION-OS-V02-CORRECTNESS"
+  ],
+  "C-05": [
+    "MULTISCALE-CAUSAL-FABRIC-EDGE"
+  ],
+  "C-06": [
+    "FOUR-FORCE-UNIFICATION"
+  ],
+  "C-07": [
+    "OPEN-QUESTIONS-REGISTRY-CLAIMS"
+  ],
+  "GAP-ITERATION-DELTA": [],
+  "GAP-PROJECT-ATTRACTOR": [],
+  "GAP-SAMPLE-DISTRIBUTION": [],
+  "GAP-DECISION-COLLAPSE": [],
+  "GAP-NARRATIVE-PROVENANCE": [],
+  "GAP-CHUNK-INTEGRITY": [],
+  "mcf-gap-001": [],
+  "mcf-gap-002": [],
+  "mcf-gap-003": [],
+  "mcf-gap-004": [],
+  "mcf-gap-005": [],
+  "arn-gap-001": [],
+  "arn-gap-002": [],
+  "arn-gap-003": [],
+  "arn-gap-004": [],
+  "arn-gap-005": [],
+  "psd-gap-001": [],
+  "psd-gap-002": [],
+  "psd-gap-003": [],
+  "psd-gap-004": [],
+  "psd-gap-005": [],
+  "psd-gap-006": [],
+  "A0": [],
+  "A01": [],
+  "A02": [],
+  "A03": [],
+  "A04": [],
+  "A05": [],
+  "A06": [],
+  "A08": [],
+  "A09": [],
+  "A1": [],
+  "A10": [],
+  "A100": [],
+  "CLAIM-BC-20260709-003": [],
+  "CLAIM-BC-20260709-004": [],
+  "CLAIM-BC-20260709-006": [],
+  "CLAIM-BC-20260709-012": [],
+  "CLAIM-BC-20260709-013": [],
+  "CLAIM-BC-20260709-014": [],
+  "CLAIM-BC-20260709-015": [],
+  "CLAIM-BC-20260709-018": [],
+  "CLAIM-BC-20260709-019": [],
+  "CLAIM-BC-20260709-022": [],
+  "CLAIM-D107": [],
+  "CLAIM-D11": [],
+  "CF-apple_gravity_failure": [],
+  "CF-cross_domain_synergy_risk": [],
+  "CF-technology_economic_growth_failure": []
+}

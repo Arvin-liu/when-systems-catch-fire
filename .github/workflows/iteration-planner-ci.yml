@@ -1,0 +1,32 @@
+name: iteration-planner-ci
+on:
+  push:
+    branches:
+      - agent/ignition-iteration-planner-evidence-driven-backlog-r1-20260801
+  pull_request:
+    branches:
+      - main
+jobs:
+  layer-a-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: Layer A — adversarial + mutation tests
+        run: python3 tests/iteration_planner/test_planner.py
+  layer-b-resolver:
+    runs-on: ubuntu-latest
+    needs: layer-a-tests
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: Layer B — clean-clone resolver (determinism + FINAL_STATE)
+        run: python3 tools/operations/iteration_resolver.py

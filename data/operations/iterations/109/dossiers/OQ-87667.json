@@ -1,0 +1,43 @@
+{
+  "canonical_id": "OQ-87667",
+  "title": "OQ-103-6：Function OS v0.2 之后的剩余问题",
+  "class": "SCIENTIFIC_EVIDENCE",
+  "is_meta": false,
+  "current_status": "OPEN_QUESTION",
+  "provenance": {
+    "source_file": "RESULTS/OPEN-QUESTIONS.md",
+    "canonical_id": "OQ-87667"
+  },
+  "dependencies": [],
+  "prerequisite_unresolved": false,
+  "affected_surfaces": [
+    "articles",
+    "research-program"
+  ],
+  "evidence_needs": [
+    "更宽表达式覆盖、敌对环境安全、生产可靠性、真实世界效用。"
+  ],
+  "stop_conditions": [
+    "无法在更宽域复现或证明时不扩大主张。"
+  ],
+  "claim_ceiling": "Open research question; not a promised roadmap item.",
+  "authority": "REPO_OWNER",
+  "aggregate_score": 54.14,
+  "factor_vector": {
+    "consequence_of_being_wrong": 0.6,
+    "dependency_centrality": 0.5,
+    "falsifiability": 0.5,
+    "data_oracle_availability": 0.5,
+    "expected_information_gain": 0.6,
+    "effort_evidence_cost": 0.4,
+    "reversibility_risk": 0.5,
+    "maturity_gap": 0.6,
+    "owner_relevance": 0.7,
+    "duplication_prior_failure": 0.6,
+    "substantive_vs_meta": 0.92
+  },
+  "missing_fields": [
+    "dependency_centrality"
+  ],
+  "blocked_reason": null
+}

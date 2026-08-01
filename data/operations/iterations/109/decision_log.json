@@ -1,0 +1,85 @@
+{
+  "recommended_next_iteration": "C-01",
+  "recommended_title": "The 117 source records that assert crossref_verified:true correspond to DOIs that resolve via the Crossref REST API with",
+  "recommended_class": "CORE_CAPABILITY_VALIDATION",
+  "recommended_score": 73.2,
+  "recommended_is_auto_task_110": false,
+  "reserves": [
+    "CF-apple_gravity_failure",
+    "CF-cross_domain_synergy_risk"
+  ],
+  "substantive_work_ratio_top10": 1.0,
+  "anti_meta_applied": true,
+  "reasons_not_selected": [
+    {
+      "candidate": [
+        "GAP-CHUNK-INTEGRITY",
+        "GAP-DECISION-COLLAPSE",
+        "GAP-ITERATION-DELTA",
+        "GAP-NARRATIVE-PROVENANCE",
+        "GAP-PROJECT-ATTRACTOR",
+        "GAP-SAMPLE-DISTRIBUTION"
+      ],
+      "reason": "Meta-governance gaps (iteration delta, narrative provenance, project attractor, decision collapse, sample distribution, chunk integrity) are capped by the anti-meta rule (substantive_vs_meta <= 0.20) and require a concrete unresolved failure not addressable by existing systems before becoming a next iteration. They would expand governance, not produce evidence.",
+      "not_selected_because": "anti-meta cap + no demonstrated concrete failure"
+    },
+    {
+      "candidate": [
+        "OQ-97382",
+        "OQ-85917"
+      ],
+      "reason": "Four-force unification and quantum gravity are low-falsifiability (0.2), low data availability (0.2), high evidence cost (0.85). A grand untestable claim must not outrank a bounded falsifiable pilot merely due to rhetoric.",
+      "not_selected_because": "low falsifiability + high cost + not-yet-executable"
+    },
+    {
+      "candidate": [
+        "A0",
+        "A01",
+        "A02",
+        "A03",
+        "A04",
+        "A05",
+        "A06",
+        "A08",
+        "A09",
+        "A1",
+        "A10",
+        "A100"
+      ],
+      "reason": "Quarantined function/nonfunction assets are governance adjudication work with high effort, missing data/oracle, and many blocked prerequisites. They are retained visibly but not promoted to the next substantive iteration.",
+      "not_selected_because": "high effort + missing evidence + pending gates"
+    },
+    {
+      "candidate": [
+        "C-02",
+        "C-04",
+        "C-07"
+      ],
+      "reason": "Strong reserve pilots, but scored below C-01 on dependency centrality / information gain / lower evidence cost. They remain recommended reserves for the following iterations.",
+      "not_selected_because": "lower aggregate score than C-01"
+    },
+    {
+      "candidate": [
+        "arn-gap-001",
+        "arn-gap-002",
+        "arn-gap-003",
+        "mcf-gap-001",
+        "mcf-gap-002",
+        "psd-gap-001",
+        "psd-gap-002",
+        "psd-gap-003",
+        "psd-gap-004",
+        "arn-gap-004",
+        "arn-gap-005",
+        "mcf-gap-003",
+        "mcf-gap-004",
+        "mcf-gap-005",
+        "psd-gap-005",
+        "psd-gap-006"
+      ],
+      "reason": "Architectural gaps are real and important, but several depend on upstream unified-object-set work (mcf-gap-001..004 block mcf-gap-005) and are mathematical-formalization work with medium evidence cost; they are staged after the bounded pilot.",
+      "not_selected_because": "dependency on upstream gaps + medium cost"
+    }
+  ],
+  "note": "The recommended item is a reviewed proposal only; it is NOT automatically created or executed as task 110. Final authority remains with the repository owner."
+}

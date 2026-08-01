@@ -1,0 +1,3932 @@
+[
+  {
+    "canonical_id": "OQ-97382",
+    "source": "RESULTS/OPEN-QUESTIONS.md",
+    "title": "四种基本相互作用统一",
+    "provenance": {
+      "source_file": "RESULTS/OPEN-QUESTIONS.md",
+      "canonical_id": "OQ-97382"
+    },
+    "current_status": "OPEN_QUESTION",
+    "dependencies": [],
+    "prerequisite_unresolved": false,
+    "affected_surfaces": [
+      "articles",
+      "research-program"
+    ],
+    "evidence_needs": [
+      "明确的场、对称性、作用量、低能极限、量子一致性与可检验预测。"
+    ],
+    "stop_conditions": [
+      "若模型不能保持已验证极限或不能给出可区分预测，保持 toy model/撤回物理统一主张。"
+    ],
+    "claim_ceiling": "Open research question; not a promised roadmap item.",
+    "authority": "REPO_OWNER",
+    "class": "SCIENTIFIC_EVIDENCE",
+    "is_meta": false,
+    "missing_fields": [
+      "dependency_centrality"
+    ],
+    "factor_inputs": {
+      "harm_if_wrong": 0.8,
+      "falsifiability": 0.2,
+      "data_availability": 0.2,
+      "expected_information_gain": 0.9,
+      "evidence_cost": 0.85,
+      "risk_inverted": 0.5,
+      "maturity_gap": 0.85,
+      "owner_relevance": 0.7,
+      "duplication_inverted": 0.6,
+      "substantive_score": 0.92
+    },
+    "factor_vector": {
+      "consequence_of_being_wrong": 0.8,
+      "dependency_centrality": 0.5,
+      "falsifiability": 0.2,
+      "data_oracle_availability": 0.2,
+      "expected_information_gain": 0.9,
+      "effort_evidence_cost": 0.15,
+      "reversibility_risk": 0.5,
+      "maturity_gap": 0.85,
+      "owner_relevance": 0.7,
+      "duplication_prior_failure": 0.6,
+      "substantive_vs_meta": 0.92
+    },
+    "aggregate_score": 51.44,
+    "blocked_reason": null
+  },
+  {
+    "canonical_id": "OQ-85917",
+    "source": "RESULTS/OPEN-QUESTIONS.md",
+    "title": "量子引力",
+    "provenance": {
+      "source_file": "RESULTS/OPEN-QUESTIONS.md",
+      "canonical_id": "OQ-85917"
+    },
+    "current_status": "OPEN_QUESTION",
+    "dependencies": [],
+    "prerequisite_unresolved": false,
+    "affected_surfaces": [
+      "articles",
+      "research-program"
+    ],
+    "evidence_needs": [
+      "明确理论对象、半经典极限、一致性条件与可观测检验。"
+    ],
+    "stop_conditions": [
+      "门函数投影若只重命名问题而无动力学与预测，不提升成熟度。"
+    ],
+    "claim_ceiling": "Open research question; not a promised roadmap item.",
+    "authority": "REPO_OWNER",
+    "class": "SCIENTIFIC_EVIDENCE",
+    "is_meta": false,
+    "missing_fields": [
+      "dependency_centrality"
+    ],
+    "factor_inputs": {
+      "harm_if_wrong": 0.8,
+      "falsifiability": 0.2,
+      "data_availability": 0.2,
+      "expected_information_gain": 0.6,
+      "evidence_cost": 0.85,
+      "risk_inverted": 0.5,
+      "maturity_gap": 0.85,
+      "owner_relevance": 0.7,
+      "duplication_inverted": 0.6,
+      "substantive_score": 0.92
+    },
+    "factor_vector": {
+      "consequence_of_being_wrong": 0.8,
+      "dependency_centrality": 0.5,
+      "falsifiability": 0.2,
+      "data_oracle_availability": 0.2,
+      "expected_information_gain": 0.6,
+      "effort_evidence_cost": 0.15,
+      "reversibility_risk": 0.5,
+      "maturity_gap": 0.85,
+      "owner_relevance": 0.7,
+      "duplication_prior_failure": 0.6,
+      "substantive_vs_meta": 0.92
+    },
+    "aggregate_score": 47.24,
+    "blocked_reason": null
+  },
+  {
+    "canonical_id": "OQ-24270",
+    "source": "RESULTS/OPEN-QUESTIONS.md",
+    "title": "暗物质",
+    "provenance": {
+      "source_file": "RESULTS/OPEN-QUESTIONS.md",
+      "canonical_id": "OQ-24270"
+    },
+    "current_status": "OPEN_QUESTION",
+    "dependencies": [],
+    "prerequisite_unresolved": false,
+    "affected_surfaces": [
+      "articles",
+      "research-program"
+    ],
+    "evidence_needs": [
+      "多尺度数据、基线模型、参数识别、预注册预测与独立复现。"
+    ],
+    "stop_conditions": [
+      "不能优于或区分现有模型时保持启发式。"
+    ],
+    "claim_ceiling": "Open research question; not a promised roadmap item.",
+    "authority": "REPO_OWNER",
+    "class": "SCIENTIFIC_EVIDENCE",
+    "is_meta": false,
+    "missing_fields": [
+      "dependency_centrality"
+    ],
+    "factor_inputs": {
+      "harm_if_wrong": 0.6,
+      "falsifiability": 0.5,
+      "data_availability": 0.5,
+      "expected_information_gain": 0.6,
+      "evidence_cost": 0.6,
+      "risk_inverted": 0.5,
+      "maturity_gap": 0.6,
+      "owner_relevance": 0.7,
+      "duplication_inverted": 0.6,
+      "substantive_score": 0.92
+    },
+    "factor_vector": {
+      "consequence_of_being_wrong": 0.6,
+      "dependency_centrality": 0.5,
+      "falsifiability": 0.5,
+      "data_oracle_availability": 0.5,
+      "expected_information_gain": 0.6,
+      "effort_evidence_cost": 0.4,
+      "reversibility_risk": 0.5,
+      "maturity_gap": 0.6,
+      "owner_relevance": 0.7,
+      "duplication_prior_failure": 0.6,
+      "substantive_vs_meta": 0.92
+    },
+    "aggregate_score": 54.14,
+    "blocked_reason": null
+  },
+  {
+    "canonical_id": "OQ-27316",
+    "source": "RESULTS/OPEN-QUESTIONS.md",
+    "title": "暗能量与宇宙常数",
+    "provenance": {
+      "source_file": "RESULTS/OPEN-QUESTIONS.md",
+      "canonical_id": "OQ-27316"
+    },
+    "current_status": "OPEN_QUESTION",
+    "dependencies": [],
+    "prerequisite_unresolved": false,
+    "affected_surfaces": [
+      "articles",
+      "research-program"
+    ],
+    "evidence_needs": [
+      "协变方程、稳定性、参数自然性、观测约束。"
+    ],
+    "stop_conditions": [
+      "仅靠“门控抑制”叙述不构成解释。"
+    ],
+    "claim_ceiling": "Open research question; not a promised roadmap item.",
+    "authority": "REPO_OWNER",
+    "class": "SCIENTIFIC_EVIDENCE",
+    "is_meta": false,
+    "missing_fields": [
+      "dependency_centrality"
+    ],
+    "factor_inputs": {
+      "harm_if_wrong": 0.6,
+      "falsifiability": 0.5,
+      "data_availability": 0.5,
+      "expected_information_gain": 0.6,
+      "evidence_cost": 0.6,
+      "risk_inverted": 0.5,
+      "maturity_gap": 0.6,
+      "owner_relevance": 0.7,
+      "duplication_inverted": 0.6,
+      "substantive_score": 0.92
+    },
+    "factor_vector": {
+      "consequence_of_being_wrong": 0.6,
+      "dependency_centrality": 0.5,
+      "falsifiability": 0.5,
+      "data_oracle_availability": 0.5,
+      "expected_information_gain": 0.6,
+      "effort_evidence_cost": 0.4,
+      "reversibility_risk": 0.5,
+      "maturity_gap": 0.6,
+      "owner_relevance": 0.7,
+      "duplication_prior_failure": 0.6,
+      "substantive_vs_meta": 0.92
+    },
+    "aggregate_score": 54.14,
+    "blocked_reason": null
+  },
+  {
+    "canonical_id": "OQ-18872",
+    "source": "RESULTS/OPEN-QUESTIONS.md",
+    "title": "量子测量",
+    "provenance": {
+      "source_file": "RESULTS/OPEN-QUESTIONS.md",
+      "canonical_id": "OQ-18872"
+    },
+    "current_status": "OPEN_QUESTION",
+    "dependencies": [],
+    "prerequisite_unresolved": false,
+    "affected_surfaces": [
+      "articles",
+      "research-program"
+    ],
+    "evidence_needs": [
+      "完整状态空间、动力学、概率语义与可检验差异。"
+    ],
+    "stop_conditions": [
+      "仅把“门”类比为测量不提升为机制。"
+    ],
+    "claim_ceiling": "Open research question; not a promised roadmap item.",
+    "authority": "REPO_OWNER",
+    "class": "SCIENTIFIC_EVIDENCE",
+    "is_meta": false,
+    "missing_fields": [
+      "dependency_centrality"
+    ],
+    "factor_inputs": {
+      "harm_if_wrong": 0.6,
+      "falsifiability": 0.2,
+      "data_availability": 0.5,
+      "expected_information_gain": 0.6,
+      "evidence_cost": 0.6,
+      "risk_inverted": 0.5,
+      "maturity_gap": 0.6,
+      "owner_relevance": 0.7,
+      "duplication_inverted": 0.6,
+      "substantive_score": 0.92
+    },
+    "factor_vector": {
+      "consequence_of_being_wrong": 0.6,
+      "dependency_centrality": 0.5,
+      "falsifiability": 0.2,
+      "data_oracle_availability": 0.5,
+      "expected_information_gain": 0.6,
+      "effort_evidence_cost": 0.4,
+      "reversibility_risk": 0.5,
+      "maturity_gap": 0.6,
+      "owner_relevance": 0.7,
+      "duplication_prior_failure": 0.6,
+      "substantive_vs_meta": 0.92
+    },
+    "aggregate_score": 49.34,
+    "blocked_reason": null
+  },
+  {
+    "canonical_id": "OQ-09237",
+    "source": "RESULTS/OPEN-QUESTIONS.md",
+    "title": "函数资产深审",
+    "provenance": {
+      "source_file": "RESULTS/OPEN-QUESTIONS.md",
+      "canonical_id": "OQ-09237"
+    },
+    "current_status": "OPEN_QUESTION",
+    "dependencies": [],
+    "prerequisite_unresolved": false,
+    "affected_surfaces": [
+      "articles",
+      "research-program"
+    ],
+    "evidence_needs": [
+      "按风险和依赖优先级补定义、类型、量纲、证明、反例或数据。"
+    ],
+    "stop_conditions": [
+      "无法识别对象或没有用途时长期隔离，不强行形式化。"
+    ],
+    "claim_ceiling": "Open research question; not a promised roadmap item.",
+    "authority": "REPO_OWNER",
+    "class": "SCIENTIFIC_EVIDENCE",
+    "is_meta": false,
+    "missing_fields": [
+      "dependency_centrality"
+    ],
+    "factor_inputs": {
+      "harm_if_wrong": 0.6,
+      "falsifiability": 0.5,
+      "data_availability": 0.5,
+      "expected_information_gain": 0.6,
+      "evidence_cost": 0.6,
+      "risk_inverted": 0.5,
+      "maturity_gap": 0.6,
+      "owner_relevance": 0.7,
+      "duplication_inverted": 0.6,
+      "substantive_score": 0.92
+    },
+    "factor_vector": {
+      "consequence_of_being_wrong": 0.6,
+      "dependency_centrality": 0.5,
+      "falsifiability": 0.5,
+      "data_oracle_availability": 0.5,
+      "expected_information_gain": 0.6,
+      "effort_evidence_cost": 0.4,
+      "reversibility_risk": 0.5,
+      "maturity_gap": 0.6,
+      "owner_relevance": 0.7,
+      "duplication_prior_failure": 0.6,
+      "substantive_vs_meta": 0.92
+    },
+    "aggregate_score": 54.14,
+    "blocked_reason": null
+  },
+  {
+    "canonical_id": "OQ-52264",
+    "source": "RESULTS/OPEN-QUESTIONS.md",
+    "title": "非函数断言补证",
+    "provenance": {
+      "source_file": "RESULTS/OPEN-QUESTIONS.md",
+      "canonical_id": "OQ-52264"
+    },
+    "current_status": "OPEN_QUESTION",
+    "dependencies": [],
+    "prerequisite_unresolved": false,
+    "affected_surfaces": [
+      "articles",
+      "research-program"
+    ],
+    "evidence_needs": [
+      "逐项文献、证明、数据、反例与复现。"
+    ],
+    "stop_conditions": [
+      "无法限定量词、对象或证据范围时降级或撤回。"
+    ],
+    "claim_ceiling": "Open research question; not a promised roadmap item.",
+    "authority": "REPO_OWNER",
+    "class": "SCIENTIFIC_EVIDENCE",
+    "is_meta": false,
+    "missing_fields": [
+      "dependency_centrality"
+    ],
+    "factor_inputs": {
+      "harm_if_wrong": 0.6,
+      "falsifiability": 0.5,
+      "data_availability": 0.5,
+      "expected_information_gain": 0.6,
+      "evidence_cost": 0.6,
+      "risk_inverted": 0.5,
+      "maturity_gap": 0.6,
+      "owner_relevance": 0.7,
+      "duplication_inverted": 0.6,
+      "substantive_score": 0.92
+    },
+    "factor_vector": {
+      "consequence_of_being_wrong": 0.6,
+      "dependency_centrality": 0.5,
+      "falsifiability": 0.5,
+      "data_oracle_availability": 0.5,
+      "expected_information_gain": 0.6,
+      "effort_evidence_cost": 0.4,
+      "reversibility_risk": 0.5,
+      "maturity_gap": 0.6,
+      "owner_relevance": 0.7,
+      "duplication_prior_failure": 0.6,
+      "substantive_vs_meta": 0.92
+    },
+    "aggregate_score": 54.14,
+    "blocked_reason": null
+  },
+  {
+    "canonical_id": "OQ-78468",
+    "source": "RESULTS/OPEN-QUESTIONS.md",
+    "title": "跨域映射",
+    "provenance": {
+      "source_file": "RESULTS/OPEN-QUESTIONS.md",
+      "canonical_id": "OQ-78468"
+    },
+    "current_status": "OPEN_QUESTION",
+    "dependencies": [],
+    "prerequisite_unresolved": false,
+    "affected_surfaces": [
+      "articles",
+      "research-program"
+    ],
+    "evidence_needs": [
+      "对象集合、映射、双射/同态条件、保持结构与反例。"
+    ],
+    "stop_conditions": [
+      "相似性不能稳定保持时不得称同构。"
+    ],
+    "claim_ceiling": "Open research question; not a promised roadmap item.",
+    "authority": "REPO_OWNER",
+    "class": "SCIENTIFIC_EVIDENCE",
+    "is_meta": false,
+    "missing_fields": [
+      "dependency_centrality"
+    ],
+    "factor_inputs": {
+      "harm_if_wrong": 0.6,
+      "falsifiability": 0.5,
+      "data_availability": 0.5,
+      "expected_information_gain": 0.6,
+      "evidence_cost": 0.6,
+      "risk_inverted": 0.5,
+      "maturity_gap": 0.6,
+      "owner_relevance": 0.7,
+      "duplication_inverted": 0.6,
+      "substantive_score": 0.92
+    },
+    "factor_vector": {
+      "consequence_of_being_wrong": 0.6,
+      "dependency_centrality": 0.5,
+      "falsifiability": 0.5,
+      "data_oracle_availability": 0.5,
+      "expected_information_gain": 0.6,
+      "effort_evidence_cost": 0.4,
+      "reversibility_risk": 0.5,
+      "maturity_gap": 0.6,
+      "owner_relevance": 0.7,
+      "duplication_prior_failure": 0.6,
+      "substantive_vs_meta": 0.92
+    },
+    "aggregate_score": 54.14,
+    "blocked_reason": null
+  },
+  {
+    "canonical_id": "OQ-26243",
+    "source": "RESULTS/OPEN-QUESTIONS.md",
+    "title": "现实反馈",
+    "provenance": {
+      "source_file": "RESULTS/OPEN-QUESTIONS.md",
+      "canonical_id": "OQ-26243"
+    },
+    "current_status": "OPEN_QUESTION",
+    "dependencies": [],
+    "prerequisite_unresolved": false,
+    "affected_surfaces": [
+      "articles",
+      "research-program"
+    ],
+    "evidence_needs": [
+      "真实使用协议、基线、失败记录、参与者风险与长期复现。"
+    ],
+    "stop_conditions": [
+      "没有外部可观察改进时只保留方法候选。"
+    ],
+    "claim_ceiling": "Open research question; not a promised roadmap item.",
+    "authority": "REPO_OWNER",
+    "class": "SCIENTIFIC_EVIDENCE",
+    "is_meta": false,
+    "missing_fields": [
+      "dependency_centrality"
+    ],
+    "factor_inputs": {
+      "harm_if_wrong": 0.6,
+      "falsifiability": 0.5,
+      "data_availability": 0.5,
+      "expected_information_gain": 0.6,
+      "evidence_cost": 0.6,
+      "risk_inverted": 0.5,
+      "maturity_gap": 0.6,
+      "owner_relevance": 0.7,
+      "duplication_inverted": 0.6,
+      "substantive_score": 0.92
+    },
+    "factor_vector": {
+      "consequence_of_being_wrong": 0.6,
+      "dependency_centrality": 0.5,
+      "falsifiability": 0.5,
+      "data_oracle_availability": 0.5,
+      "expected_information_gain": 0.6,
+      "effort_evidence_cost": 0.4,
+      "reversibility_risk": 0.5,
+      "maturity_gap": 0.6,
+      "owner_relevance": 0.7,
+      "duplication_prior_failure": 0.6,
+      "substantive_vs_meta": 0.92
+    },
+    "aggregate_score": 54.14,
+    "blocked_reason": null
+  },
+  {
+    "canonical_id": "OQ-75042",
+    "source": "RESULTS/OPEN-QUESTIONS.md",
+    "title": "OQ-103-1：回填/修正 `crossref_year` ✅已解决",
+    "provenance": {
+      "source_file": "RESULTS/OPEN-QUESTIONS.md",
+      "canonical_id": "OQ-75042"
+    },
+    "current_status": "OPEN_QUESTION",
+    "dependencies": [],
+    "prerequisite_unresolved": false,
+    "affected_surfaces": [
+      "articles",
+      "research-program"
+    ],
+    "evidence_needs": [
+      "已复跑 Crossref 试点并校验 year_match = 117/117（全部一致）。"
+    ],
+    "stop_conditions": [
+      "—"
+    ],
+    "claim_ceiling": "Open research question; not a promised roadmap item.",
+    "authority": "REPO_OWNER",
+    "class": "SCIENTIFIC_EVIDENCE",
+    "is_meta": false,
+    "missing_fields": [
+      "dependency_centrality"
+    ],
+    "factor_inputs": {
+      "harm_if_wrong": 0.6,
+      "falsifiability": 0.5,
+      "data_availability": 0.5,
+      "expected_information_gain": 0.6,
+      "evidence_cost": 0.6,
+      "risk_inverted": 0.5,
+      "maturity_gap": 0.6,
+      "owner_relevance": 0.7,
+      "duplication_inverted": 0.6,
+      "substantive_score": 0.92
+    },
+    "factor_vector": {
+      "consequence_of_being_wrong": 0.6,
+      "dependency_centrality": 0.5,
+      "falsifiability": 0.5,
+      "data_oracle_availability": 0.5,
+      "expected_information_gain": 0.6,
+      "effort_evidence_cost": 0.4,
+      "reversibility_risk": 0.5,
+      "maturity_gap": 0.6,
+      "owner_relevance": 0.7,
+      "duplication_prior_failure": 0.6,
+      "substantive_vs_meta": 0.92
+    },
+    "aggregate_score": 54.14,
+    "blocked_reason": null
+  },
+  {
+    "canonical_id": "OQ-60028",
+    "source": "RESULTS/OPEN-QUESTIONS.md",
+    "title": "OQ-103-2：注册表内部重复 DOI（已判定保留）",
+    "provenance": {
+      "source_file": "RESULTS/OPEN-QUESTIONS.md",
+      "canonical_id": "OQ-60028"
+    },
+    "current_status": "OPEN_QUESTION",
+    "dependencies": [],
+    "prerequisite_unresolved": false,
+    "affected_surfaces": [
+      "articles",
+      "research-program"
+    ],
+    "evidence_needs": [
+      "保留不删除（GAP002-08 被 104 外部研究生态多处引用），移交 104 数据负责人处置；复跑 intra_registry_duplicate_dois = 1（结构重复但有意，非外部证据失败）。"
+    ],
+    "stop_conditions": [
+      "若 104 负责人判定应合并，则合并来源条目。"
+    ],
+    "claim_ceiling": "Open research question; not a promised roadmap item.",
+    "authority": "REPO_OWNER",
+    "class": "SCIENTIFIC_EVIDENCE",
+    "is_meta": false,
+    "missing_fields": [
+      "dependency_centrality"
+    ],
+    "factor_inputs": {
+      "harm_if_wrong": 0.6,
+      "falsifiability": 0.5,
+      "data_availability": 0.5,
+      "expected_information_gain": 0.6,
+      "evidence_cost": 0.6,
+      "risk_inverted": 0.5,
+      "maturity_gap": 0.6,
+      "owner_relevance": 0.7,
+      "duplication_inverted": 0.6,
+      "substantive_score": 0.92
+    },
+    "factor_vector": {
+      "consequence_of_being_wrong": 0.6,
+      "dependency_centrality": 0.5,
+      "falsifiability": 0.5,
+      "data_oracle_availability": 0.5,
+      "expected_information_gain": 0.6,
+      "effort_evidence_cost": 0.4,
+      "reversibility_risk": 0.5,
+      "maturity_gap": 0.6,
+      "owner_relevance": 0.7,
+      "duplication_prior_failure": 0.6,
+      "substantive_vs_meta": 0.92
+    },
+    "aggregate_score": 54.14,
+    "blocked_reason": null
+  },
+  {
+    "canonical_id": "OQ-15933",
+    "source": "RESULTS/OPEN-QUESTIONS.md",
+    "title": "OQ-103-3：OpenAlex 跨源一致性",
+    "provenance": {
+      "source_file": "RESULTS/OPEN-QUESTIONS.md",
+      "canonical_id": "OQ-15933"
+    },
+    "current_status": "OPEN_QUESTION",
+    "dependencies": [],
+    "prerequisite_unresolved": false,
+    "affected_surfaces": [
+      "articles",
+      "research-program"
+    ],
+    "evidence_needs": [
+      "OpenAlex 跨源交叉验证（备用试点 1）。"
+    ],
+    "stop_conditions": [
+      "两源系统性冲突时记录 oracle 差异，不自动判定。"
+    ],
+    "claim_ceiling": "Open research question; not a promised roadmap item.",
+    "authority": "REPO_OWNER",
+    "class": "SCIENTIFIC_EVIDENCE",
+    "is_meta": false,
+    "missing_fields": [
+      "dependency_centrality"
+    ],
+    "factor_inputs": {
+      "harm_if_wrong": 0.6,
+      "falsifiability": 0.5,
+      "data_availability": 0.5,
+      "expected_information_gain": 0.6,
+      "evidence_cost": 0.6,
+      "risk_inverted": 0.5,
+      "maturity_gap": 0.6,
+      "owner_relevance": 0.7,
+      "duplication_inverted": 0.6,
+      "substantive_score": 0.92
+    },
+    "factor_vector": {
+      "consequence_of_being_wrong": 0.6,
+      "dependency_centrality": 0.5,
+      "falsifiability": 0.5,
+      "data_oracle_availability": 0.5,
+      "expected_information_gain": 0.6,
+      "effort_evidence_cost": 0.4,
+      "reversibility_risk": 0.5,
+      "maturity_gap": 0.6,
+      "owner_relevance": 0.7,
+      "duplication_prior_failure": 0.6,
+      "substantive_vs_meta": 0.92
+    },
+    "aggregate_score": 54.14,
+    "blocked_reason": null
+  },
+  {
+    "canonical_id": "OQ-11573",
+    "source": "RESULTS/OPEN-QUESTIONS.md",
+    "title": "OQ-103-4：案例表历史锚点",
+    "provenance": {
+      "source_file": "RESULTS/OPEN-QUESTIONS.md",
+      "canonical_id": "OQ-11573"
+    },
+    "current_status": "OPEN_QUESTION",
+    "dependencies": [],
+    "prerequisite_unresolved": false,
+    "affected_surfaces": [
+      "articles",
+      "research-program"
+    ],
+    "evidence_needs": [
+      "Wikipedia 验证（备用试点 2）。"
+    ],
+    "stop_conditions": [
+      "无法解析的锚点降级为“待核”而非断言。"
+    ],
+    "claim_ceiling": "Open research question; not a promised roadmap item.",
+    "authority": "REPO_OWNER",
+    "class": "SCIENTIFIC_EVIDENCE",
+    "is_meta": false,
+    "missing_fields": [
+      "dependency_centrality"
+    ],
+    "factor_inputs": {
+      "harm_if_wrong": 0.6,
+      "falsifiability": 0.5,
+      "data_availability": 0.5,
+      "expected_information_gain": 0.6,
+      "evidence_cost": 0.6,
+      "risk_inverted": 0.5,
+      "maturity_gap": 0.6,
+      "owner_relevance": 0.7,
+      "duplication_inverted": 0.6,
+      "substantive_score": 0.92
+    },
+    "factor_vector": {
+      "consequence_of_being_wrong": 0.6,
+      "dependency_centrality": 0.5,
+      "falsifiability": 0.5,
+      "data_oracle_availability": 0.5,
+      "expected_information_gain": 0.6,
+      "effort_evidence_cost": 0.4,
+      "reversibility_risk": 0.5,
+      "maturity_gap": 0.6,
+      "owner_relevance": 0.7,
+      "duplication_prior_failure": 0.6,
+      "substantive_vs_meta": 0.92
+    },
+    "aggregate_score": 54.14,
+    "blocked_reason": null
+  },
+  {
+    "canonical_id": "OQ-97709",
+    "source": "RESULTS/OPEN-QUESTIONS.md",
+    "title": "OQ-103-5：Function OS v0.2 正确性（**已完成 · 有界**）",
+    "provenance": {
+      "source_file": "RESULTS/OPEN-QUESTIONS.md",
+      "canonical_id": "OQ-97709"
+    },
+    "current_status": "OPEN_QUESTION",
+    "dependencies": [],
+    "prerequisite_unresolved": false,
+    "affected_surfaces": [
+      "articles",
+      "research-program"
+    ],
+    "evidence_needs": [
+      "**已完成（有界 v0.2 基准）**：任务 105 先预注册、再对抗验证，在精选基线上复现参考数值；原始目标判定 `PARTIALLY_SUPPORTED_WITH_IDENTIFIED_FAILURES`（25 个 false_reject，源自 N2 嵌套相等提取缺陷 `split('==')`→`split('==',1)`），有界修复后目标判定 `SUPPORTED_WITHIN_BOUNDED_DOMAIN`。证据上限限定于有界域。"
+    ],
+    "stop_conditions": [
+      "不声称完整沙箱化、生产就绪或普遍正确；更宽表达式覆盖、敌对环境安全、生产可靠性与真实效用见 OQ-103-6。"
+    ],
+    "claim_ceiling": "Open research question; not a promised roadmap item.",
+    "authority": "REPO_OWNER",
+    "class": "SCIENTIFIC_EVIDENCE",
+    "is_meta": false,
+    "missing_fields": [
+      "dependency_centrality"
+    ],
+    "factor_inputs": {
+      "harm_if_wrong": 0.6,
+      "falsifiability": 0.5,
+      "data_availability": 0.5,
+      "expected_information_gain": 0.6,
+      "evidence_cost": 0.6,
+      "risk_inverted": 0.5,
+      "maturity_gap": 0.6,
+      "owner_relevance": 0.7,
+      "duplication_inverted": 0.6,
+      "substantive_score": 0.92
+    },
+    "factor_vector": {
+      "consequence_of_being_wrong": 0.6,
+      "dependency_centrality": 0.5,
+      "falsifiability": 0.5,
+      "data_oracle_availability": 0.5,
+      "expected_information_gain": 0.6,
+      "effort_evidence_cost": 0.4,
+      "reversibility_risk": 0.5,
+      "maturity_gap": 0.6,
+      "owner_relevance": 0.7,
+      "duplication_prior_failure": 0.6,
+      "substantive_vs_meta": 0.92
+    },
+    "aggregate_score": 54.14,
+    "blocked_reason": null
+  },
+  {
+    "canonical_id": "OQ-87667",
+    "source": "RESULTS/OPEN-QUESTIONS.md",
+    "title": "OQ-103-6：Function OS v0.2 之后的剩余问题",
+    "provenance": {
+      "source_file": "RESULTS/OPEN-QUESTIONS.md",
+      "canonical_id": "OQ-87667"
+    },
+    "current_status": "OPEN_QUESTION",
+    "dependencies": [],
+    "prerequisite_unresolved": false,
+    "affected_surfaces": [
+      "articles",
+      "research-program"
+    ],
+    "evidence_needs": [
+      "更宽表达式覆盖、敌对环境安全、生产可靠性、真实世界效用。"
+    ],
+    "stop_conditions": [
+      "无法在更宽域复现或证明时不扩大主张。"
+    ],
+    "claim_ceiling": "Open research question; not a promised roadmap item.",
+    "authority": "REPO_OWNER",
+    "class": "SCIENTIFIC_EVIDENCE",
+    "is_meta": false,
+    "missing_fields": [
+      "dependency_centrality"
+    ],
+    "factor_inputs": {
+      "harm_if_wrong": 0.6,
+      "falsifiability": 0.5,
+      "data_availability": 0.5,
+      "expected_information_gain": 0.6,
+      "evidence_cost": 0.6,
+      "risk_inverted": 0.5,
+      "maturity_gap": 0.6,
+      "owner_relevance": 0.7,
+      "duplication_inverted": 0.6,
+      "substantive_score": 0.92
+    },
+    "factor_vector": {
+      "consequence_of_being_wrong": 0.6,
+      "dependency_centrality": 0.5,
+      "falsifiability": 0.5,
+      "data_oracle_availability": 0.5,
+      "expected_information_gain": 0.6,
+      "effort_evidence_cost": 0.4,
+      "reversibility_risk": 0.5,
+      "maturity_gap": 0.6,
+      "owner_relevance": 0.7,
+      "duplication_prior_failure": 0.6,
+      "substantive_vs_meta": 0.92
+    },
+    "aggregate_score": 54.14,
+    "blocked_reason": null
+  },
+  {
+    "canonical_id": "C-01",
+    "source": "evidence-program/registry/candidate-portfolio.jsonl",
+    "title": "The 117 source records that assert crossref_verified:true correspond to DOIs that resolve via the Crossref REST API with",
+    "provenance": {
+      "source_file": "evidence-program/registry/candidate-portfolio.jsonl",
+      "canonical_id": "C-01",
+      "upstream_source": "data/external-research/104-source-registry.jsonl",
+      "claim_id": "SRC-REGISTRY-104-METADATA"
+    },
+    "current_status": "PRIMARY",
+    "dependencies": [
+      "SRC-REGISTRY-104-METADATA"
+    ],
+    "prerequisite_unresolved": false,
+    "affected_surfaces": [
+      "evidence-program",
+      "claims-registry"
+    ],
+    "evidence_needs": [
+      "preregistration",
+      "independent replication",
+      "oracle/baseline"
+    ],
+    "stop_conditions": [],
+    "claim_ceiling": "Registry external-source metadata integrity only; not a claim about Pointfire physics correctness.",
+    "authority": "REPO_OWNER",
+    "class": "CORE_CAPABILITY_VALIDATION",
+    "is_meta": false,
+    "missing_fields": [],
+    "factor_inputs": {
+      "harm_if_wrong": 0.4,
+      "dependency_centrality": 0.5,
+      "falsifiability": 0.95,
+      "data_availability": 1.0,
+      "evidence_cost": 0.1,
+      "blast_radius": 0.5,
+      "expected_information_gain": 0.7,
+      "risk_inverted": 0.7,
+      "maturity_gap": 0.8,
+      "owner_relevance": 0.7,
+      "duplication_inverted": 0.6,
+      "substantive_score": 0.95
+    },
+    "factor_vector": {
+      "consequence_of_being_wrong": 0.4,
+      "dependency_centrality": 0.5,
+      "falsifiability": 0.95,
+      "data_oracle_availability": 1.0,
+      "expected_information_gain": 0.7,
+      "effort_evidence_cost": 0.9,
+      "reversibility_risk": 0.7,
+      "maturity_gap": 0.8,
+      "owner_relevance": 0.7,
+      "duplication_prior_failure": 0.6,
+      "substantive_vs_meta": 0.95
+    },
+    "aggregate_score": 73.2,
+    "blocked_reason": null
+  },
+  {
+    "canonical_id": "C-02",
+    "source": "evidence-program/registry/candidate-portfolio.jsonl",
+    "title": "Named historical events and figures cited as anchors in the case tables resolve to real, independently identifiable Wiki",
+    "provenance": {
+      "source_file": "evidence-program/registry/candidate-portfolio.jsonl",
+      "canonical_id": "C-02",
+      "upstream_source": "统一案例总表/",
+      "claim_id": "CASE-TABLE-HISTORICAL-ANCHORS"
+    },
+    "current_status": "RESERVE",
+    "dependencies": [
+      "CASE-TABLE-HISTORICAL-ANCHORS"
+    ],
+    "prerequisite_unresolved": false,
+    "affected_surfaces": [
+      "evidence-program",
+      "claims-registry"
+    ],
+    "evidence_needs": [
+      "preregistration",
+      "independent replication",
+      "oracle/baseline"
+    ],
+    "stop_conditions": [],
+    "claim_ceiling": "Historical-anchor existence only; not a claim about causal interpretation.",
+    "authority": "REPO_OWNER",
+    "class": "CORE_CAPABILITY_VALIDATION",
+    "is_meta": false,
+    "missing_fields": [],
+    "factor_inputs": {
+      "harm_if_wrong": 0.25,
+      "dependency_centrality": 0.3,
+      "falsifiability": 0.8,
+      "data_availability": 0.9,
+      "evidence_cost": 0.2,
+      "blast_radius": 0.3,
+      "expected_information_gain": 0.7,
+      "risk_inverted": 0.7,
+      "maturity_gap": 0.8,
+      "owner_relevance": 0.7,
+      "duplication_inverted": 0.6,
+      "substantive_score": 0.95
+    },
+    "factor_vector": {
+      "consequence_of_being_wrong": 0.25,
+      "dependency_centrality": 0.3,
+      "falsifiability": 0.8,
+      "data_oracle_availability": 0.9,
+      "expected_information_gain": 0.7,
+      "effort_evidence_cost": 0.8,
+      "reversibility_risk": 0.7,
+      "maturity_gap": 0.8,
+      "owner_relevance": 0.7,
+      "duplication_prior_failure": 0.6,
+      "substantive_vs_meta": 0.95
+    },
+    "aggregate_score": 63.3,
+    "blocked_reason": null
+  },
+  {
+    "canonical_id": "C-03",
+    "source": "evidence-program/registry/candidate-portfolio.jsonl",
+    "title": "The same 117 DOIs resolve in OpenAlex with title/year consistent with Crossref, providing a second independent oracle.",
+    "provenance": {
+      "source_file": "evidence-program/registry/candidate-portfolio.jsonl",
+      "canonical_id": "C-03",
+      "upstream_source": "data/external-research/104-source-registry.jsonl",
+      "claim_id": "DOI-OPENALEX-CROSS-CHECK"
+    },
+    "current_status": "RESERVE",
+    "dependencies": [
+      "DOI-OPENALEX-CROSS-CHECK"
+    ],
+    "prerequisite_unresolved": false,
+    "affected_surfaces": [
+      "evidence-program",
+      "claims-registry"
+    ],
+    "evidence_needs": [
+      "preregistration",
+      "independent replication",
+      "oracle/baseline"
+    ],
+    "stop_conditions": [],
+    "claim_ceiling": "Cross-source consistency of metadata; not a content-validity claim.",
+    "authority": "REPO_OWNER",
+    "class": "CORE_CAPABILITY_VALIDATION",
+    "is_meta": false,
+    "missing_fields": [],
+    "factor_inputs": {
+      "harm_if_wrong": 0.3,
+      "dependency_centrality": 0.4,
+      "falsifiability": 0.9,
+      "data_availability": 0.9,
+      "evidence_cost": 0.15,
+      "blast_radius": 0.35,
+      "expected_information_gain": 0.7,
+      "risk_inverted": 0.7,
+      "maturity_gap": 0.8,
+      "owner_relevance": 0.7,
+      "duplication_inverted": 0.6,
+      "substantive_score": 0.95
+    },
+    "factor_vector": {
+      "consequence_of_being_wrong": 0.3,
+      "dependency_centrality": 0.4,
+      "falsifiability": 0.9,
+      "data_oracle_availability": 0.9,
+      "expected_information_gain": 0.7,
+      "effort_evidence_cost": 0.85,
+      "reversibility_risk": 0.7,
+      "maturity_gap": 0.8,
+      "owner_relevance": 0.7,
+      "duplication_prior_failure": 0.6,
+      "substantive_vs_meta": 0.95
+    },
+    "aggregate_score": 67.5,
+    "blocked_reason": null
+  },
+  {
+    "canonical_id": "C-04",
+    "source": "evidence-program/registry/candidate-portfolio.jsonl",
+    "title": "A bounded subset of Function OS v0.2 operators reproduces reference numeric outputs on a curated fixture.",
+    "provenance": {
+      "source_file": "evidence-program/registry/candidate-portfolio.jsonl",
+      "canonical_id": "C-04",
+      "upstream_source": "function-os-candidate/v0.2/",
+      "claim_id": "FUNCTION-OS-V02-CORRECTNESS"
+    },
+    "current_status": "DEFERRED",
+    "dependencies": [
+      "FUNCTION-OS-V02-CORRECTNESS"
+    ],
+    "prerequisite_unresolved": false,
+    "affected_surfaces": [
+      "evidence-program",
+      "claims-registry"
+    ],
+    "evidence_needs": [
+      "preregistration",
+      "independent replication",
+      "oracle/baseline"
+    ],
+    "stop_conditions": [],
+    "claim_ceiling": "Implementation correctness on fixture only.",
+    "authority": "REPO_OWNER",
+    "class": "CORE_CAPABILITY_VALIDATION",
+    "is_meta": false,
+    "missing_fields": [],
+    "factor_inputs": {
+      "harm_if_wrong": 0.6,
+      "dependency_centrality": 0.7,
+      "falsifiability": 0.7,
+      "data_availability": 0.6,
+      "evidence_cost": 0.5,
+      "blast_radius": 0.7,
+      "expected_information_gain": 0.7,
+      "risk_inverted": 0.7,
+      "maturity_gap": 0.6,
+      "owner_relevance": 0.7,
+      "duplication_inverted": 0.6,
+      "substantive_score": 0.95
+    },
+    "factor_vector": {
+      "consequence_of_being_wrong": 0.6,
+      "dependency_centrality": 0.7,
+      "falsifiability": 0.7,
+      "data_oracle_availability": 0.6,
+      "expected_information_gain": 0.7,
+      "effort_evidence_cost": 0.5,
+      "reversibility_risk": 0.7,
+      "maturity_gap": 0.6,
+      "owner_relevance": 0.7,
+      "duplication_prior_failure": 0.6,
+      "substantive_vs_meta": 0.95
+    },
+    "aggregate_score": 64.8,
+    "blocked_reason": null
+  },
+  {
+    "canonical_id": "C-05",
+    "source": "evidence-program/registry/candidate-portfolio.jsonl",
+    "title": "The multiscale causal fabric satisfies a bounded edge-case identity on synthetic inputs.",
+    "provenance": {
+      "source_file": "evidence-program/registry/candidate-portfolio.jsonl",
+      "canonical_id": "C-05",
+      "upstream_source": "docs/architecture/multiscale-causal-fabric.md",
+      "claim_id": "MULTISCALE-CAUSAL-FABRIC-EDGE"
+    },
+    "current_status": "DEFERRED",
+    "dependencies": [
+      "MULTISCALE-CAUSAL-FABRIC-EDGE"
+    ],
+    "prerequisite_unresolved": false,
+    "affected_surfaces": [
+      "evidence-program",
+      "claims-registry"
+    ],
+    "evidence_needs": [
+      "preregistration",
+      "independent replication",
+      "oracle/baseline"
+    ],
+    "stop_conditions": [],
+    "claim_ceiling": "Internal consistency on synthetic data.",
+    "authority": "REPO_OWNER",
+    "class": "CORE_CAPABILITY_VALIDATION",
+    "is_meta": false,
+    "missing_fields": [],
+    "factor_inputs": {
+      "harm_if_wrong": 0.5,
+      "dependency_centrality": 0.6,
+      "falsifiability": 0.6,
+      "data_availability": 0.5,
+      "evidence_cost": 0.6,
+      "blast_radius": 0.6,
+      "expected_information_gain": 0.7,
+      "risk_inverted": 0.7,
+      "maturity_gap": 0.6,
+      "owner_relevance": 0.7,
+      "duplication_inverted": 0.6,
+      "substantive_score": 0.95
+    },
+    "factor_vector": {
+      "consequence_of_being_wrong": 0.5,
+      "dependency_centrality": 0.6,
+      "falsifiability": 0.6,
+      "data_oracle_availability": 0.5,
+      "expected_information_gain": 0.7,
+      "effort_evidence_cost": 0.4,
+      "reversibility_risk": 0.7,
+      "maturity_gap": 0.6,
+      "owner_relevance": 0.7,
+      "duplication_prior_failure": 0.6,
+      "substantive_vs_meta": 0.95
+    },
+    "aggregate_score": 57.8,
+    "blocked_reason": null
+  },
+  {
+    "canonical_id": "C-06",
+    "source": "evidence-program/registry/candidate-portfolio.jsonl",
+    "title": "Pointfire unifies the four fundamental forces / quantum gravity.",
+    "provenance": {
+      "source_file": "evidence-program/registry/candidate-portfolio.jsonl",
+      "canonical_id": "C-06",
+      "upstream_source": "uniform function tables / narrative docs",
+      "claim_id": "FOUR-FORCE-UNIFICATION"
+    },
+    "current_status": "DEFERRED",
+    "dependencies": [
+      "FOUR-FORCE-UNIFICATION"
+    ],
+    "prerequisite_unresolved": false,
+    "affected_surfaces": [
+      "evidence-program",
+      "claims-registry"
+    ],
+    "evidence_needs": [
+      "preregistration",
+      "independent replication",
+      "oracle/baseline"
+    ],
+    "stop_conditions": [],
+    "claim_ceiling": "NARRATIVE ONLY — explicitly not a verified claim in the corpus.",
+    "authority": "REPO_OWNER",
+    "class": "CORE_CAPABILITY_VALIDATION",
+    "is_meta": false,
+    "missing_fields": [],
+    "factor_inputs": {
+      "harm_if_wrong": 0.3,
+      "dependency_centrality": 0.2,
+      "falsifiability": 0.2,
+      "data_availability": 0.1,
+      "evidence_cost": 0.95,
+      "blast_radius": 0.2,
+      "expected_information_gain": 0.7,
+      "risk_inverted": 0.7,
+      "maturity_gap": 0.8,
+      "owner_relevance": 0.7,
+      "duplication_inverted": 0.6,
+      "substantive_score": 0.95
+    },
+    "factor_vector": {
+      "consequence_of_being_wrong": 0.3,
+      "dependency_centrality": 0.2,
+      "falsifiability": 0.2,
+      "data_oracle_availability": 0.1,
+      "expected_information_gain": 0.7,
+      "effort_evidence_cost": 0.05,
+      "reversibility_risk": 0.7,
+      "maturity_gap": 0.8,
+      "owner_relevance": 0.7,
+      "duplication_prior_failure": 0.6,
+      "substantive_vs_meta": 0.95
+    },
+    "aggregate_score": 34.7,
+    "blocked_reason": null
+  },
+  {
+    "canonical_id": "C-07",
+    "source": "evidence-program/registry/candidate-portfolio.jsonl",
+    "title": "Open-question registry claims can each be tied to an externally falsifiable test.",
+    "provenance": {
+      "source_file": "evidence-program/registry/candidate-portfolio.jsonl",
+      "canonical_id": "C-07",
+      "upstream_source": "RESULTS/OPEN-QUESTIONS.md (to be created)",
+      "claim_id": "OPEN-QUESTIONS-REGISTRY-CLAIMS"
+    },
+    "current_status": "DEFERRED",
+    "dependencies": [
+      "OPEN-QUESTIONS-REGISTRY-CLAIMS"
+    ],
+    "prerequisite_unresolved": false,
+    "affected_surfaces": [
+      "evidence-program",
+      "claims-registry"
+    ],
+    "evidence_needs": [
+      "preregistration",
+      "independent replication",
+      "oracle/baseline"
+    ],
+    "stop_conditions": [],
+    "claim_ceiling": "Registry governance.",
+    "authority": "REPO_OWNER",
+    "class": "CORE_CAPABILITY_VALIDATION",
+    "is_meta": false,
+    "missing_fields": [],
+    "factor_inputs": {
+      "harm_if_wrong": 0.3,
+      "dependency_centrality": 0.4,
+      "falsifiability": 0.5,
+      "data_availability": 0.4,
+      "evidence_cost": 0.4,
+      "blast_radius": 0.4,
+      "expected_information_gain": 0.7,
+      "risk_inverted": 0.7,
+      "maturity_gap": 0.8,
+      "owner_relevance": 0.7,
+      "duplication_inverted": 0.6,
+      "substantive_score": 0.95
+    },
+    "factor_vector": {
+      "consequence_of_being_wrong": 0.3,
+      "dependency_centrality": 0.4,
+      "falsifiability": 0.5,
+      "data_oracle_availability": 0.4,
+      "expected_information_gain": 0.7,
+      "effort_evidence_cost": 0.6,
+      "reversibility_risk": 0.7,
+      "maturity_gap": 0.8,
+      "owner_relevance": 0.7,
+      "duplication_prior_failure": 0.6,
+      "substantive_vs_meta": 0.95
+    },
+    "aggregate_score": 51.6,
+    "blocked_reason": null
+  },
+  {
+    "canonical_id": "GAP-ITERATION-DELTA",
+    "source": "data/architecture/121q13-gap-matrix.json",
+    "title": "GAP-ITERATION-DELTA",
+    "provenance": {
+      "source_file": "data/architecture/121q13-gap-matrix.json",
+      "canonical_id": "GAP-ITERATION-DELTA"
+    },
+    "current_status": "DECLARED_GAP",
+    "dependencies": [],
+    "prerequisite_unresolved": false,
+    "affected_surfaces": [
+      "architecture",
+      "system-map"
+    ],
+    "evidence_needs": [
+      "governance layer decision"
+    ],
+    "stop_conditions": [
+      "no new layer without concrete unresolved failure"
+    ],
+    "claim_ceiling": null,
+    "authority": "REPO_OWNER",
+    "class": "GOVERNANCE_OR_PROPAGATION_DEFECT",
+    "is_meta": true,
+    "missing_fields": [],
+    "factor_inputs": {
+      "harm_if_wrong": 0.7,
+      "dependency_centrality": 0.5,
+      "falsifiability": 0.4,
+      "data_availability": 0.5,
+      "expected_information_gain": 0.5,
+      "evidence_cost": 0.7,
+      "risk_inverted": 0.6,
+      "maturity_gap": 0.7,
+      "owner_relevance": 0.6,
+      "duplication_inverted": 0.9,
+      "substantive_score": 0.2
+    },
+    "factor_vector": {
+      "consequence_of_being_wrong": 0.7,
+      "dependency_centrality": 0.5,
+      "falsifiability": 0.4,
+      "data_oracle_availability": 0.5,
+      "expected_information_gain": 0.5,
+      "effort_evidence_cost": 0.3,
+      "reversibility_risk": 0.6,
+      "maturity_gap": 0.7,
+      "owner_relevance": 0.6,
+      "duplication_prior_failure": 0.9,
+      "substantive_vs_meta": 0.2
+    },
+    "aggregate_score": 51.5,
+    "blocked_reason": null
+  },
+  {
+    "canonical_id": "GAP-PROJECT-ATTRACTOR",
+    "source": "data/architecture/121q13-gap-matrix.json",
+    "title": "GAP-PROJECT-ATTRACTOR",
+    "provenance": {
+      "source_file": "data/architecture/121q13-gap-matrix.json",
+      "canonical_id": "GAP-PROJECT-ATTRACTOR"
+    },
+    "current_status": "DECLARED_GAP",
+    "dependencies": [],
+    "prerequisite_unresolved": false,
+    "affected_surfaces": [
+      "architecture",
+      "system-map"
+    ],
+    "evidence_needs": [
+      "governance layer decision"
+    ],
+    "stop_conditions": [
+      "no new layer without concrete unresolved failure"
+    ],
+    "claim_ceiling": null,
+    "authority": "REPO_OWNER",
+    "class": "GOVERNANCE_OR_PROPAGATION_DEFECT",
+    "is_meta": true,
+    "missing_fields": [],
+    "factor_inputs": {
+      "harm_if_wrong": 0.7,
+      "dependency_centrality": 0.5,
+      "falsifiability": 0.4,
+      "data_availability": 0.5,
+      "expected_information_gain": 0.5,
+      "evidence_cost": 0.7,
+      "risk_inverted": 0.6,
+      "maturity_gap": 0.7,
+      "owner_relevance": 0.6,
+      "duplication_inverted": 0.9,
+      "substantive_score": 0.2
+    },
+    "factor_vector": {
+      "consequence_of_being_wrong": 0.7,
+      "dependency_centrality": 0.5,
+      "falsifiability": 0.4,
+      "data_oracle_availability": 0.5,
+      "expected_information_gain": 0.5,
+      "effort_evidence_cost": 0.3,
+      "reversibility_risk": 0.6,
+      "maturity_gap": 0.7,
+      "owner_relevance": 0.6,
+      "duplication_prior_failure": 0.9,
+      "substantive_vs_meta": 0.2
+    },
+    "aggregate_score": 51.5,
+    "blocked_reason": null
+  },
+  {
+    "canonical_id": "GAP-SAMPLE-DISTRIBUTION",
+    "source": "data/architecture/121q13-gap-matrix.json",
+    "title": "GAP-SAMPLE-DISTRIBUTION",
+    "provenance": {
+      "source_file": "data/architecture/121q13-gap-matrix.json",
+      "canonical_id": "GAP-SAMPLE-DISTRIBUTION"
+    },
+    "current_status": "DECLARED_GAP",
+    "dependencies": [],
+    "prerequisite_unresolved": false,
+    "affected_surfaces": [
+      "architecture",
+      "system-map"
+    ],
+    "evidence_needs": [
+      "governance layer decision"
+    ],
+    "stop_conditions": [
+      "no new layer without concrete unresolved failure"
+    ],
+    "claim_ceiling": null,
+    "authority": "REPO_OWNER",
+    "class": "GOVERNANCE_OR_PROPAGATION_DEFECT",
+    "is_meta": true,
+    "missing_fields": [],
+    "factor_inputs": {
+      "harm_if_wrong": 0.7,
+      "dependency_centrality": 0.5,
+      "falsifiability": 0.4,
+      "data_availability": 0.5,
+      "expected_information_gain": 0.5,
+      "evidence_cost": 0.7,
+      "risk_inverted": 0.6,
+      "maturity_gap": 0.7,
+      "owner_relevance": 0.6,
+      "duplication_inverted": 0.9,
+      "substantive_score": 0.2
+    },
+    "factor_vector": {
+      "consequence_of_being_wrong": 0.7,
+      "dependency_centrality": 0.5,
+      "falsifiability": 0.4,
+      "data_oracle_availability": 0.5,
+      "expected_information_gain": 0.5,
+      "effort_evidence_cost": 0.3,
+      "reversibility_risk": 0.6,
+      "maturity_gap": 0.7,
+      "owner_relevance": 0.6,
+      "duplication_prior_failure": 0.9,
+      "substantive_vs_meta": 0.2
+    },
+    "aggregate_score": 51.5,
+    "blocked_reason": null
+  },
+  {
+    "canonical_id": "GAP-DECISION-COLLAPSE",
+    "source": "data/architecture/121q13-gap-matrix.json",
+    "title": "GAP-DECISION-COLLAPSE",
+    "provenance": {
+      "source_file": "data/architecture/121q13-gap-matrix.json",
+      "canonical_id": "GAP-DECISION-COLLAPSE"
+    },
+    "current_status": "DECLARED_GAP",
+    "dependencies": [],
+    "prerequisite_unresolved": false,
+    "affected_surfaces": [
+      "architecture",
+      "system-map"
+    ],
+    "evidence_needs": [
+      "governance layer decision"
+    ],
+    "stop_conditions": [
+      "no new layer without concrete unresolved failure"
+    ],
+    "claim_ceiling": null,
+    "authority": "REPO_OWNER",
+    "class": "GOVERNANCE_OR_PROPAGATION_DEFECT",
+    "is_meta": true,
+    "missing_fields": [],
+    "factor_inputs": {
+      "harm_if_wrong": 0.7,
+      "dependency_centrality": 0.5,
+      "falsifiability": 0.4,
+      "data_availability": 0.5,
+      "expected_information_gain": 0.5,
+      "evidence_cost": 0.7,
+      "risk_inverted": 0.6,
+      "maturity_gap": 0.7,
+      "owner_relevance": 0.6,
+      "duplication_inverted": 0.9,
+      "substantive_score": 0.2
+    },
+    "factor_vector": {
+      "consequence_of_being_wrong": 0.7,
+      "dependency_centrality": 0.5,
+      "falsifiability": 0.4,
+      "data_oracle_availability": 0.5,
+      "expected_information_gain": 0.5,
+      "effort_evidence_cost": 0.3,
+      "reversibility_risk": 0.6,
+      "maturity_gap": 0.7,
+      "owner_relevance": 0.6,
+      "duplication_prior_failure": 0.9,
+      "substantive_vs_meta": 0.2
+    },
+    "aggregate_score": 51.5,
+    "blocked_reason": null
+  },
+  {
+    "canonical_id": "GAP-NARRATIVE-PROVENANCE",
+    "source": "data/architecture/121q13-gap-matrix.json",
+    "title": "GAP-NARRATIVE-PROVENANCE",
+    "provenance": {
+      "source_file": "data/architecture/121q13-gap-matrix.json",
+      "canonical_id": "GAP-NARRATIVE-PROVENANCE"
+    },
+    "current_status": "DECLARED_GAP",
+    "dependencies": [],
+    "prerequisite_unresolved": false,
+    "affected_surfaces": [
+      "architecture",
+      "system-map"
+    ],
+    "evidence_needs": [
+      "governance layer decision"
+    ],
+    "stop_conditions": [
+      "no new layer without concrete unresolved failure"
+    ],
+    "claim_ceiling": null,
+    "authority": "REPO_OWNER",
+    "class": "GOVERNANCE_OR_PROPAGATION_DEFECT",
+    "is_meta": true,
+    "missing_fields": [],
+    "factor_inputs": {
+      "harm_if_wrong": 0.7,
+      "dependency_centrality": 0.5,
+      "falsifiability": 0.4,
+      "data_availability": 0.5,
+      "expected_information_gain": 0.5,
+      "evidence_cost": 0.7,
+      "risk_inverted": 0.6,
+      "maturity_gap": 0.7,
+      "owner_relevance": 0.6,
+      "duplication_inverted": 0.9,
+      "substantive_score": 0.2
+    },
+    "factor_vector": {
+      "consequence_of_being_wrong": 0.7,
+      "dependency_centrality": 0.5,
+      "falsifiability": 0.4,
+      "data_oracle_availability": 0.5,
+      "expected_information_gain": 0.5,
+      "effort_evidence_cost": 0.3,
+      "reversibility_risk": 0.6,
+      "maturity_gap": 0.7,
+      "owner_relevance": 0.6,
+      "duplication_prior_failure": 0.9,
+      "substantive_vs_meta": 0.2
+    },
+    "aggregate_score": 51.5,
+    "blocked_reason": null
+  },
+  {
+    "canonical_id": "GAP-CHUNK-INTEGRITY",
+    "source": "data/architecture/121q13-gap-matrix.json",
+    "title": "GAP-CHUNK-INTEGRITY",
+    "provenance": {
+      "source_file": "data/architecture/121q13-gap-matrix.json",
+      "canonical_id": "GAP-CHUNK-INTEGRITY"
+    },
+    "current_status": "DECLARED_GAP",
+    "dependencies": [],
+    "prerequisite_unresolved": false,
+    "affected_surfaces": [
+      "architecture",
+      "system-map"
+    ],
+    "evidence_needs": [
+      "governance layer decision"
+    ],
+    "stop_conditions": [
+      "no new layer without concrete unresolved failure"
+    ],
+    "claim_ceiling": null,
+    "authority": "REPO_OWNER",
+    "class": "GOVERNANCE_OR_PROPAGATION_DEFECT",
+    "is_meta": true,
+    "missing_fields": [],
+    "factor_inputs": {
+      "harm_if_wrong": 0.7,
+      "dependency_centrality": 0.5,
+      "falsifiability": 0.4,
+      "data_availability": 0.5,
+      "expected_information_gain": 0.5,
+      "evidence_cost": 0.7,
+      "risk_inverted": 0.6,
+      "maturity_gap": 0.7,
+      "owner_relevance": 0.6,
+      "duplication_inverted": 0.9,
+      "substantive_score": 0.2
+    },
+    "factor_vector": {
+      "consequence_of_being_wrong": 0.7,
+      "dependency_centrality": 0.5,
+      "falsifiability": 0.4,
+      "data_oracle_availability": 0.5,
+      "expected_information_gain": 0.5,
+      "effort_evidence_cost": 0.3,
+      "reversibility_risk": 0.6,
+      "maturity_gap": 0.7,
+      "owner_relevance": 0.6,
+      "duplication_prior_failure": 0.9,
+      "substantive_vs_meta": 0.2
+    },
+    "aggregate_score": 51.5,
+    "blocked_reason": null
+  },
+  {
+    "canonical_id": "mcf-gap-001",
+    "source": "data/architecture/causal-gap-ledger.json",
+    "title": "No unified machine-readable object set exists for events, states, relation classes, propagation channels, cones/horizons, feedback, entropy,",
+    "provenance": {
+      "source_file": "data/architecture/causal-gap-ledger.json",
+      "canonical_id": "mcf-gap-001"
+    },
+    "current_status": "DECLARED_GAP",
+    "dependencies": [],
+    "prerequisite_unresolved": false,
+    "affected_surfaces": [
+      "architecture",
+      "system-map"
+    ],
+    "evidence_needs": [
+      "architectural representation",
+      "validator/diff tooling"
+    ],
+    "stop_conditions": [],
+    "claim_ceiling": "This audit establishes an architectural representation gap only; it does not prove any new causal relation.",
+    "authority": "REPO_OWNER",
+    "class": "MATHEMATICAL_FORMALIZATION",
+    "is_meta": false,
+    "missing_fields": [],
+    "factor_inputs": {
+      "harm_if_wrong": 0.9,
+      "dependency_centrality": 0.8,
+      "falsifiability": 0.6,
+      "data_availability": 0.5,
+      "expected_information_gain": 0.7,
+      "evidence_cost": 0.5,
+      "risk_inverted": 0.6,
+      "maturity_gap": 0.7,
+      "owner_relevance": 0.6,
+      "duplication_inverted": 0.5,
+      "substantive_score": 0.7
+    },
+    "factor_vector": {
+      "consequence_of_being_wrong": 0.9,
+      "dependency_centrality": 0.8,
+      "falsifiability": 0.6,
+      "data_oracle_availability": 0.5,
+      "expected_information_gain": 0.7,
+      "effort_evidence_cost": 0.5,
+      "reversibility_risk": 0.6,
+      "maturity_gap": 0.7,
+      "owner_relevance": 0.6,
+      "duplication_prior_failure": 0.5,
+      "substantive_vs_meta": 0.7
+    },
+    "aggregate_score": 67.3,
+    "blocked_reason": null
+  },
+  {
+    "canonical_id": "mcf-gap-002",
+    "source": "data/architecture/causal-gap-ledger.json",
+    "title": "Existing assets do not provide explicit scale-domain and scale-translation fields from quantum/atomic through social, planetary, and cosmolo",
+    "provenance": {
+      "source_file": "data/architecture/causal-gap-ledger.json",
+      "canonical_id": "mcf-gap-002"
+    },
+    "current_status": "DECLARED_GAP",
+    "dependencies": [],
+    "prerequisite_unresolved": false,
+    "affected_surfaces": [
+      "architecture",
+      "system-map"
+    ],
+    "evidence_needs": [
+      "architectural representation",
+      "validator/diff tooling"
+    ],
+    "stop_conditions": [],
+    "claim_ceiling": "This audit establishes an architectural representation gap only; it does not prove any new causal relation.",
+    "authority": "REPO_OWNER",
+    "class": "MATHEMATICAL_FORMALIZATION",
+    "is_meta": false,
+    "missing_fields": [],
+    "factor_inputs": {
+      "harm_if_wrong": 0.9,
+      "dependency_centrality": 0.8,
+      "falsifiability": 0.6,
+      "data_availability": 0.5,
+      "expected_information_gain": 0.7,
+      "evidence_cost": 0.5,
+      "risk_inverted": 0.6,
+      "maturity_gap": 0.7,
+      "owner_relevance": 0.6,
+      "duplication_inverted": 0.5,
+      "substantive_score": 0.7
+    },
+    "factor_vector": {
+      "consequence_of_being_wrong": 0.9,
+      "dependency_centrality": 0.8,
+      "falsifiability": 0.6,
+      "data_oracle_availability": 0.5,
+      "expected_information_gain": 0.7,
+      "effort_evidence_cost": 0.5,
+      "reversibility_risk": 0.6,
+      "maturity_gap": 0.7,
+      "owner_relevance": 0.6,
+      "duplication_prior_failure": 0.5,
+      "substantive_vs_meta": 0.7
+    },
+    "aggregate_score": 67.3,
+    "blocked_reason": null
+  },
+  {
+    "canonical_id": "mcf-gap-003",
+    "source": "data/architecture/causal-gap-ledger.json",
+    "title": "Existing assets contain temporal windows, persistence, irreversibility, and feedback locally but not a shared representation for delay, deca",
+    "provenance": {
+      "source_file": "data/architecture/causal-gap-ledger.json",
+      "canonical_id": "mcf-gap-003"
+    },
+    "current_status": "DECLARED_GAP",
+    "dependencies": [],
+    "prerequisite_unresolved": false,
+    "affected_surfaces": [
+      "architecture",
+      "system-map"
+    ],
+    "evidence_needs": [
+      "architectural representation",
+      "validator/diff tooling"
+    ],
+    "stop_conditions": [],
+    "claim_ceiling": "This audit establishes an architectural representation gap only; it does not prove any new causal relation.",
+    "authority": "REPO_OWNER",
+    "class": "MATHEMATICAL_FORMALIZATION",
+    "is_meta": false,
+    "missing_fields": [],
+    "factor_inputs": {
+      "harm_if_wrong": 0.7,
+      "dependency_centrality": 0.5,
+      "falsifiability": 0.6,
+      "data_availability": 0.5,
+      "expected_information_gain": 0.7,
+      "evidence_cost": 0.5,
+      "risk_inverted": 0.6,
+      "maturity_gap": 0.7,
+      "owner_relevance": 0.6,
+      "duplication_inverted": 0.5,
+      "substantive_score": 0.7
+    },
+    "factor_vector": {
+      "consequence_of_being_wrong": 0.7,
+      "dependency_centrality": 0.5,
+      "falsifiability": 0.6,
+      "data_oracle_availability": 0.5,
+      "expected_information_gain": 0.7,
+      "effort_evidence_cost": 0.5,
+      "reversibility_risk": 0.6,
+      "maturity_gap": 0.7,
+      "owner_relevance": 0.6,
+      "duplication_prior_failure": 0.5,
+      "substantive_vs_meta": 0.7
+    },
+    "aggregate_score": 60.1,
+    "blocked_reason": null
+  },
+  {
+    "canonical_id": "mcf-gap-004",
+    "source": "data/architecture/causal-gap-ledger.json",
+    "title": "Foundation gates downgrade causal overclaims, but a derived fabric validator is needed to stop correlation, analogy, light-cone reachability",
+    "provenance": {
+      "source_file": "data/architecture/causal-gap-ledger.json",
+      "canonical_id": "mcf-gap-004"
+    },
+    "current_status": "DECLARED_GAP",
+    "dependencies": [],
+    "prerequisite_unresolved": false,
+    "affected_surfaces": [
+      "architecture",
+      "system-map"
+    ],
+    "evidence_needs": [
+      "architectural representation",
+      "validator/diff tooling"
+    ],
+    "stop_conditions": [],
+    "claim_ceiling": "This audit establishes an architectural representation gap only; it does not prove any new causal relation.",
+    "authority": "REPO_OWNER",
+    "class": "MATHEMATICAL_FORMALIZATION",
+    "is_meta": false,
+    "missing_fields": [],
+    "factor_inputs": {
+      "harm_if_wrong": 0.7,
+      "dependency_centrality": 0.5,
+      "falsifiability": 0.6,
+      "data_availability": 0.5,
+      "expected_information_gain": 0.7,
+      "evidence_cost": 0.5,
+      "risk_inverted": 0.6,
+      "maturity_gap": 0.7,
+      "owner_relevance": 0.6,
+      "duplication_inverted": 0.5,
+      "substantive_score": 0.7
+    },
+    "factor_vector": {
+      "consequence_of_being_wrong": 0.7,
+      "dependency_centrality": 0.5,
+      "falsifiability": 0.6,
+      "data_oracle_availability": 0.5,
+      "expected_information_gain": 0.7,
+      "effort_evidence_cost": 0.5,
+      "reversibility_risk": 0.6,
+      "maturity_gap": 0.7,
+      "owner_relevance": 0.6,
+      "duplication_prior_failure": 0.5,
+      "substantive_vs_meta": 0.7
+    },
+    "aggregate_score": 60.1,
+    "blocked_reason": null
+  },
+  {
+    "canonical_id": "mcf-gap-005",
+    "source": "data/architecture/causal-gap-ledger.json",
+    "title": "Function OS can execute specified analysis, but no MCF projector/renderer/validator/diff exists for deterministic use.",
+    "provenance": {
+      "source_file": "data/architecture/causal-gap-ledger.json",
+      "canonical_id": "mcf-gap-005"
+    },
+    "current_status": "DECLARED_GAP",
+    "dependencies": [],
+    "prerequisite_unresolved": false,
+    "affected_surfaces": [
+      "architecture",
+      "system-map"
+    ],
+    "evidence_needs": [
+      "architectural representation",
+      "validator/diff tooling"
+    ],
+    "stop_conditions": [],
+    "claim_ceiling": "This audit establishes an architectural representation gap only; it does not prove any new causal relation.",
+    "authority": "REPO_OWNER",
+    "class": "MATHEMATICAL_FORMALIZATION",
+    "is_meta": false,
+    "missing_fields": [],
+    "factor_inputs": {
+      "harm_if_wrong": 0.7,
+      "dependency_centrality": 0.5,
+      "falsifiability": 0.6,
+      "data_availability": 0.5,
+      "expected_information_gain": 0.7,
+      "evidence_cost": 0.5,
+      "risk_inverted": 0.6,
+      "maturity_gap": 0.7,
+      "owner_relevance": 0.6,
+      "duplication_inverted": 0.5,
+      "substantive_score": 0.7
+    },
+    "factor_vector": {
+      "consequence_of_being_wrong": 0.7,
+      "dependency_centrality": 0.5,
+      "falsifiability": 0.6,
+      "data_oracle_availability": 0.5,
+      "expected_information_gain": 0.7,
+      "effort_evidence_cost": 0.5,
+      "reversibility_risk": 0.6,
+      "maturity_gap": 0.7,
+      "owner_relevance": 0.6,
+      "duplication_prior_failure": 0.5,
+      "substantive_vs_meta": 0.7
+    },
+    "aggregate_score": 60.1,
+    "blocked_reason": null
+  },
+  {
+    "canonical_id": "arn-gap-001",
+    "source": "data/architecture/adaptive-relational-network/network-gap-ledger.json",
+    "title": "No shared ARN object model for heterogeneous non-causal relation classes, layers, temporal activation, high-order relations and residue.",
+    "provenance": {
+      "source_file": "data/architecture/adaptive-relational-network/network-gap-ledger.json",
+      "canonical_id": "arn-gap-001"
+    },
+    "current_status": "DECLARED_GAP",
+    "dependencies": [],
+    "prerequisite_unresolved": false,
+    "affected_surfaces": [
+      "architecture",
+      "system-map"
+    ],
+    "evidence_needs": [
+      "architectural representation",
+      "validator/diff tooling"
+    ],
+    "stop_conditions": [],
+    "claim_ceiling": "This gap ledger establishes a representation gap only; it does not prove that cognition, projects or society are literally networks.",
+    "authority": "REPO_OWNER",
+    "class": "MATHEMATICAL_FORMALIZATION",
+    "is_meta": false,
+    "missing_fields": [],
+    "factor_inputs": {
+      "harm_if_wrong": 0.9,
+      "dependency_centrality": 0.8,
+      "falsifiability": 0.6,
+      "data_availability": 0.5,
+      "expected_information_gain": 0.7,
+      "evidence_cost": 0.5,
+      "risk_inverted": 0.6,
+      "maturity_gap": 0.7,
+      "owner_relevance": 0.6,
+      "duplication_inverted": 0.5,
+      "substantive_score": 0.7
+    },
+    "factor_vector": {
+      "consequence_of_being_wrong": 0.9,
+      "dependency_centrality": 0.8,
+      "falsifiability": 0.6,
+      "data_oracle_availability": 0.5,
+      "expected_information_gain": 0.7,
+      "effort_evidence_cost": 0.5,
+      "reversibility_risk": 0.6,
+      "maturity_gap": 0.7,
+      "owner_relevance": 0.6,
+      "duplication_prior_failure": 0.5,
+      "substantive_vs_meta": 0.7
+    },
+    "aggregate_score": 67.3,
+    "blocked_reason": null
+  },
+  {
+    "canonical_id": "arn-gap-002",
+    "source": "data/architecture/adaptive-relational-network/network-gap-ledger.json",
+    "title": "No representation of perturbation, integration response, rejection, local reconfiguration, oscillation, cascade or delayed transfer.",
+    "provenance": {
+      "source_file": "data/architecture/adaptive-relational-network/network-gap-ledger.json",
+      "canonical_id": "arn-gap-002"
+    },
+    "current_status": "DECLARED_GAP",
+    "dependencies": [],
+    "prerequisite_unresolved": false,
+    "affected_surfaces": [
+      "architecture",
+      "system-map"
+    ],
+    "evidence_needs": [
+      "architectural representation",
+      "validator/diff tooling"
+    ],
+    "stop_conditions": [],
+    "claim_ceiling": "This gap ledger establishes a representation gap only; it does not prove that cognition, projects or society are literally networks.",
+    "authority": "REPO_OWNER",
+    "class": "MATHEMATICAL_FORMALIZATION",
+    "is_meta": false,
+    "missing_fields": [],
+    "factor_inputs": {
+      "harm_if_wrong": 0.9,
+      "dependency_centrality": 0.8,
+      "falsifiability": 0.6,
+      "data_availability": 0.5,
+      "expected_information_gain": 0.7,
+      "evidence_cost": 0.5,
+      "risk_inverted": 0.6,
+      "maturity_gap": 0.7,
+      "owner_relevance": 0.6,
+      "duplication_inverted": 0.5,
+      "substantive_score": 0.7
+    },
+    "factor_vector": {
+      "consequence_of_being_wrong": 0.9,
+      "dependency_centrality": 0.8,
+      "falsifiability": 0.6,
+      "data_oracle_availability": 0.5,
+      "expected_information_gain": 0.7,
+      "effort_evidence_cost": 0.5,
+      "reversibility_risk": 0.6,
+      "maturity_gap": 0.7,
+      "owner_relevance": 0.6,
+      "duplication_prior_failure": 0.5,
+      "substantive_vs_meta": 0.7
+    },
+    "aggregate_score": 67.3,
+    "blocked_reason": null
+  },
+  {
+    "canonical_id": "arn-gap-003",
+    "source": "data/architecture/adaptive-relational-network/network-gap-ledger.json",
+    "title": "No EmbeddingEvidenceRecord separates external availability, retrieval, relational linkage, judgment change, action change, transfer and dela",
+    "provenance": {
+      "source_file": "data/architecture/adaptive-relational-network/network-gap-ledger.json",
+      "canonical_id": "arn-gap-003"
+    },
+    "current_status": "DECLARED_GAP",
+    "dependencies": [],
+    "prerequisite_unresolved": false,
+    "affected_surfaces": [
+      "architecture",
+      "system-map"
+    ],
+    "evidence_needs": [
+      "architectural representation",
+      "validator/diff tooling"
+    ],
+    "stop_conditions": [],
+    "claim_ceiling": "This gap ledger establishes a representation gap only; it does not prove that cognition, projects or society are literally networks.",
+    "authority": "REPO_OWNER",
+    "class": "MATHEMATICAL_FORMALIZATION",
+    "is_meta": false,
+    "missing_fields": [],
+    "factor_inputs": {
+      "harm_if_wrong": 0.9,
+      "dependency_centrality": 0.8,
+      "falsifiability": 0.6,
+      "data_availability": 0.5,
+      "expected_information_gain": 0.7,
+      "evidence_cost": 0.5,
+      "risk_inverted": 0.6,
+      "maturity_gap": 0.7,
+      "owner_relevance": 0.6,
+      "duplication_inverted": 0.5,
+      "substantive_score": 0.7
+    },
+    "factor_vector": {
+      "consequence_of_being_wrong": 0.9,
+      "dependency_centrality": 0.8,
+      "falsifiability": 0.6,
+      "data_oracle_availability": 0.5,
+      "expected_information_gain": 0.7,
+      "effort_evidence_cost": 0.5,
+      "reversibility_risk": 0.6,
+      "maturity_gap": 0.7,
+      "owner_relevance": 0.6,
+      "duplication_prior_failure": 0.5,
+      "substantive_vs_meta": 0.7
+    },
+    "aggregate_score": 67.3,
+    "blocked_reason": null
+  },
+  {
+    "canonical_id": "arn-gap-004",
+    "source": "data/architecture/adaptive-relational-network/network-gap-ledger.json",
+    "title": "No deterministic projector, time-respecting path check, higher-order protection, network diff or ARN validator.",
+    "provenance": {
+      "source_file": "data/architecture/adaptive-relational-network/network-gap-ledger.json",
+      "canonical_id": "arn-gap-004"
+    },
+    "current_status": "DECLARED_GAP",
+    "dependencies": [],
+    "prerequisite_unresolved": false,
+    "affected_surfaces": [
+      "architecture",
+      "system-map"
+    ],
+    "evidence_needs": [
+      "architectural representation",
+      "validator/diff tooling"
+    ],
+    "stop_conditions": [],
+    "claim_ceiling": "This gap ledger establishes a representation gap only; it does not prove that cognition, projects or society are literally networks.",
+    "authority": "REPO_OWNER",
+    "class": "MATHEMATICAL_FORMALIZATION",
+    "is_meta": false,
+    "missing_fields": [],
+    "factor_inputs": {
+      "harm_if_wrong": 0.7,
+      "dependency_centrality": 0.5,
+      "falsifiability": 0.6,
+      "data_availability": 0.5,
+      "expected_information_gain": 0.7,
+      "evidence_cost": 0.5,
+      "risk_inverted": 0.6,
+      "maturity_gap": 0.7,
+      "owner_relevance": 0.6,
+      "duplication_inverted": 0.5,
+      "substantive_score": 0.7
+    },
+    "factor_vector": {
+      "consequence_of_being_wrong": 0.7,
+      "dependency_centrality": 0.5,
+      "falsifiability": 0.6,
+      "data_oracle_availability": 0.5,
+      "expected_information_gain": 0.7,
+      "effort_evidence_cost": 0.5,
+      "reversibility_risk": 0.6,
+      "maturity_gap": 0.7,
+      "owner_relevance": 0.6,
+      "duplication_prior_failure": 0.5,
+      "substantive_vs_meta": 0.7
+    },
+    "aggregate_score": 60.1,
+    "blocked_reason": null
+  },
+  {
+    "canonical_id": "arn-gap-005",
+    "source": "data/architecture/adaptive-relational-network/network-gap-ledger.json",
+    "title": "No single validator catches adjacency/similarity/centrality/community as truth/value/causality or retrieval/diffusion as integration.",
+    "provenance": {
+      "source_file": "data/architecture/adaptive-relational-network/network-gap-ledger.json",
+      "canonical_id": "arn-gap-005"
+    },
+    "current_status": "DECLARED_GAP",
+    "dependencies": [],
+    "prerequisite_unresolved": false,
+    "affected_surfaces": [
+      "architecture",
+      "system-map"
+    ],
+    "evidence_needs": [
+      "architectural representation",
+      "validator/diff tooling"
+    ],
+    "stop_conditions": [],
+    "claim_ceiling": "This gap ledger establishes a representation gap only; it does not prove that cognition, projects or society are literally networks.",
+    "authority": "REPO_OWNER",
+    "class": "MATHEMATICAL_FORMALIZATION",
+    "is_meta": false,
+    "missing_fields": [],
+    "factor_inputs": {
+      "harm_if_wrong": 0.7,
+      "dependency_centrality": 0.5,
+      "falsifiability": 0.6,
+      "data_availability": 0.5,
+      "expected_information_gain": 0.7,
+      "evidence_cost": 0.5,
+      "risk_inverted": 0.6,
+      "maturity_gap": 0.7,
+      "owner_relevance": 0.6,
+      "duplication_inverted": 0.5,
+      "substantive_score": 0.7
+    },
+    "factor_vector": {
+      "consequence_of_being_wrong": 0.7,
+      "dependency_centrality": 0.5,
+      "falsifiability": 0.6,
+      "data_oracle_availability": 0.5,
+      "expected_information_gain": 0.7,
+      "effort_evidence_cost": 0.5,
+      "reversibility_risk": 0.6,
+      "maturity_gap": 0.7,
+      "owner_relevance": 0.6,
+      "duplication_prior_failure": 0.5,
+      "substantive_vs_meta": 0.7
+    },
+    "aggregate_score": 60.1,
+    "blocked_reason": null
+  },
+  {
+    "canonical_id": "psd-gap-001",
+    "source": "data/architecture/probabilistic-system-dynamics/gap-ledger.json",
+    "title": "No object distinguishes aleatoric probability, epistemic uncertainty, measurement error, sampling variation, subjective prior, posterior, an",
+    "provenance": {
+      "source_file": "data/architecture/probabilistic-system-dynamics/gap-ledger.json",
+      "canonical_id": "psd-gap-001"
+    },
+    "current_status": "DECLARED_GAP",
+    "dependencies": [],
+    "prerequisite_unresolved": false,
+    "affected_surfaces": [
+      "architecture",
+      "system-map"
+    ],
+    "evidence_needs": [
+      "architectural representation",
+      "validator/diff tooling"
+    ],
+    "stop_conditions": [],
+    "claim_ceiling": "This ledger establishes a representation and execution gap only; it does not validate any new probabilistic or system-dynamic causal claim.",
+    "authority": "REPO_OWNER",
+    "class": "MATHEMATICAL_FORMALIZATION",
+    "is_meta": false,
+    "missing_fields": [],
+    "factor_inputs": {
+      "harm_if_wrong": 0.9,
+      "dependency_centrality": 0.8,
+      "falsifiability": 0.6,
+      "data_availability": 0.5,
+      "expected_information_gain": 0.7,
+      "evidence_cost": 0.5,
+      "risk_inverted": 0.6,
+      "maturity_gap": 0.7,
+      "owner_relevance": 0.6,
+      "duplication_inverted": 0.5,
+      "substantive_score": 0.7
+    },
+    "factor_vector": {
+      "consequence_of_being_wrong": 0.9,
+      "dependency_centrality": 0.8,
+      "falsifiability": 0.6,
+      "data_oracle_availability": 0.5,
+      "expected_information_gain": 0.7,
+      "effort_evidence_cost": 0.5,
+      "reversibility_risk": 0.6,
+      "maturity_gap": 0.7,
+      "owner_relevance": 0.6,
+      "duplication_prior_failure": 0.5,
+      "substantive_vs_meta": 0.7
+    },
+    "aggregate_score": 67.3,
+    "blocked_reason": null
+  },
+  {
+    "canonical_id": "psd-gap-002",
+    "source": "data/architecture/probabilistic-system-dynamics/gap-ledger.json",
+    "title": "No first-class system boundary, environment, input, output, exchange, nested-system, observer-frame, or purpose-of-model object.",
+    "provenance": {
+      "source_file": "data/architecture/probabilistic-system-dynamics/gap-ledger.json",
+      "canonical_id": "psd-gap-002"
+    },
+    "current_status": "DECLARED_GAP",
+    "dependencies": [],
+    "prerequisite_unresolved": false,
+    "affected_surfaces": [
+      "architecture",
+      "system-map"
+    ],
+    "evidence_needs": [
+      "architectural representation",
+      "validator/diff tooling"
+    ],
+    "stop_conditions": [],
+    "claim_ceiling": "This ledger establishes a representation and execution gap only; it does not validate any new probabilistic or system-dynamic causal claim.",
+    "authority": "REPO_OWNER",
+    "class": "MATHEMATICAL_FORMALIZATION",
+    "is_meta": false,
+    "missing_fields": [],
+    "factor_inputs": {
+      "harm_if_wrong": 0.9,
+      "dependency_centrality": 0.8,
+      "falsifiability": 0.6,
+      "data_availability": 0.5,
+      "expected_information_gain": 0.7,
+      "evidence_cost": 0.5,
+      "risk_inverted": 0.6,
+      "maturity_gap": 0.7,
+      "owner_relevance": 0.6,
+      "duplication_inverted": 0.5,
+      "substantive_score": 0.7
+    },
+    "factor_vector": {
+      "consequence_of_being_wrong": 0.9,
+      "dependency_centrality": 0.8,
+      "falsifiability": 0.6,
+      "data_oracle_availability": 0.5,
+      "expected_information_gain": 0.7,
+      "effort_evidence_cost": 0.5,
+      "reversibility_risk": 0.6,
+      "maturity_gap": 0.7,
+      "owner_relevance": 0.6,
+      "duplication_prior_failure": 0.5,
+      "substantive_vs_meta": 0.7
+    },
+    "aggregate_score": 67.3,
+    "blocked_reason": null
+  },
+  {
+    "canonical_id": "psd-gap-003",
+    "source": "data/architecture/probabilistic-system-dynamics/gap-ledger.json",
+    "title": "No executable state-space and transition-law structure for deterministic, stochastic, or hybrid dynamics.",
+    "provenance": {
+      "source_file": "data/architecture/probabilistic-system-dynamics/gap-ledger.json",
+      "canonical_id": "psd-gap-003"
+    },
+    "current_status": "DECLARED_GAP",
+    "dependencies": [],
+    "prerequisite_unresolved": false,
+    "affected_surfaces": [
+      "architecture",
+      "system-map"
+    ],
+    "evidence_needs": [
+      "architectural representation",
+      "validator/diff tooling"
+    ],
+    "stop_conditions": [],
+    "claim_ceiling": "This ledger establishes a representation and execution gap only; it does not validate any new probabilistic or system-dynamic causal claim.",
+    "authority": "REPO_OWNER",
+    "class": "MATHEMATICAL_FORMALIZATION",
+    "is_meta": false,
+    "missing_fields": [],
+    "factor_inputs": {
+      "harm_if_wrong": 0.9,
+      "dependency_centrality": 0.8,
+      "falsifiability": 0.6,
+      "data_availability": 0.5,
+      "expected_information_gain": 0.7,
+      "evidence_cost": 0.5,
+      "risk_inverted": 0.6,
+      "maturity_gap": 0.7,
+      "owner_relevance": 0.6,
+      "duplication_inverted": 0.5,
+      "substantive_score": 0.7
+    },
+    "factor_vector": {
+      "consequence_of_being_wrong": 0.9,
+      "dependency_centrality": 0.8,
+      "falsifiability": 0.6,
+      "data_oracle_availability": 0.5,
+      "expected_information_gain": 0.7,
+      "effort_evidence_cost": 0.5,
+      "reversibility_risk": 0.6,
+      "maturity_gap": 0.7,
+      "owner_relevance": 0.6,
+      "duplication_prior_failure": 0.5,
+      "substantive_vs_meta": 0.7
+    },
+    "aggregate_score": 67.3,
+    "blocked_reason": null
+  },
+  {
+    "canonical_id": "psd-gap-004",
+    "source": "data/architecture/probabilistic-system-dynamics/gap-ledger.json",
+    "title": "No schema-level separation of observational conditionals from intervention distributions.",
+    "provenance": {
+      "source_file": "data/architecture/probabilistic-system-dynamics/gap-ledger.json",
+      "canonical_id": "psd-gap-004"
+    },
+    "current_status": "DECLARED_GAP",
+    "dependencies": [],
+    "prerequisite_unresolved": false,
+    "affected_surfaces": [
+      "architecture",
+      "system-map"
+    ],
+    "evidence_needs": [
+      "architectural representation",
+      "validator/diff tooling"
+    ],
+    "stop_conditions": [],
+    "claim_ceiling": "This ledger establishes a representation and execution gap only; it does not validate any new probabilistic or system-dynamic causal claim.",
+    "authority": "REPO_OWNER",
+    "class": "MATHEMATICAL_FORMALIZATION",
+    "is_meta": false,
+    "missing_fields": [],
+    "factor_inputs": {
+      "harm_if_wrong": 0.9,
+      "dependency_centrality": 0.8,
+      "falsifiability": 0.6,
+      "data_availability": 0.5,
+      "expected_information_gain": 0.7,
+      "evidence_cost": 0.5,
+      "risk_inverted": 0.6,
+      "maturity_gap": 0.7,
+      "owner_relevance": 0.6,
+      "duplication_inverted": 0.5,
+      "substantive_score": 0.7
+    },
+    "factor_vector": {
+      "consequence_of_being_wrong": 0.9,
+      "dependency_centrality": 0.8,
+      "falsifiability": 0.6,
+      "data_oracle_availability": 0.5,
+      "expected_information_gain": 0.7,
+      "effort_evidence_cost": 0.5,
+      "reversibility_risk": 0.6,
+      "maturity_gap": 0.7,
+      "owner_relevance": 0.6,
+      "duplication_prior_failure": 0.5,
+      "substantive_vs_meta": 0.7
+    },
+    "aggregate_score": 67.3,
+    "blocked_reason": null
+  },
+  {
+    "canonical_id": "psd-gap-005",
+    "source": "data/architecture/probabilistic-system-dynamics/gap-ledger.json",
+    "title": "No probability calibration record, rare-event tail record, or rule that high probability is not causal proof.",
+    "provenance": {
+      "source_file": "data/architecture/probabilistic-system-dynamics/gap-ledger.json",
+      "canonical_id": "psd-gap-005"
+    },
+    "current_status": "DECLARED_GAP",
+    "dependencies": [],
+    "prerequisite_unresolved": false,
+    "affected_surfaces": [
+      "architecture",
+      "system-map"
+    ],
+    "evidence_needs": [
+      "architectural representation",
+      "validator/diff tooling"
+    ],
+    "stop_conditions": [],
+    "claim_ceiling": "This ledger establishes a representation and execution gap only; it does not validate any new probabilistic or system-dynamic causal claim.",
+    "authority": "REPO_OWNER",
+    "class": "MATHEMATICAL_FORMALIZATION",
+    "is_meta": false,
+    "missing_fields": [],
+    "factor_inputs": {
+      "harm_if_wrong": 0.7,
+      "dependency_centrality": 0.5,
+      "falsifiability": 0.6,
+      "data_availability": 0.5,
+      "expected_information_gain": 0.7,
+      "evidence_cost": 0.5,
+      "risk_inverted": 0.6,
+      "maturity_gap": 0.7,
+      "owner_relevance": 0.6,
+      "duplication_inverted": 0.5,
+      "substantive_score": 0.7
+    },
+    "factor_vector": {
+      "consequence_of_being_wrong": 0.7,
+      "dependency_centrality": 0.5,
+      "falsifiability": 0.6,
+      "data_oracle_availability": 0.5,
+      "expected_information_gain": 0.7,
+      "effort_evidence_cost": 0.5,
+      "reversibility_risk": 0.6,
+      "maturity_gap": 0.7,
+      "owner_relevance": 0.6,
+      "duplication_prior_failure": 0.5,
+      "substantive_vs_meta": 0.7
+    },
+    "aggregate_score": 60.1,
+    "blocked_reason": null
+  },
+  {
+    "canonical_id": "psd-gap-006",
+    "source": "data/architecture/probabilistic-system-dynamics/gap-ledger.json",
+    "title": "No guard against silently assuming Markov, stationarity, ergodicity, linearity, Gaussian noise, or closed-system boundaries.",
+    "provenance": {
+      "source_file": "data/architecture/probabilistic-system-dynamics/gap-ledger.json",
+      "canonical_id": "psd-gap-006"
+    },
+    "current_status": "DECLARED_GAP",
+    "dependencies": [],
+    "prerequisite_unresolved": false,
+    "affected_surfaces": [
+      "architecture",
+      "system-map"
+    ],
+    "evidence_needs": [
+      "architectural representation",
+      "validator/diff tooling"
+    ],
+    "stop_conditions": [],
+    "claim_ceiling": "This ledger establishes a representation and execution gap only; it does not validate any new probabilistic or system-dynamic causal claim.",
+    "authority": "REPO_OWNER",
+    "class": "MATHEMATICAL_FORMALIZATION",
+    "is_meta": false,
+    "missing_fields": [],
+    "factor_inputs": {
+      "harm_if_wrong": 0.7,
+      "dependency_centrality": 0.5,
+      "falsifiability": 0.6,
+      "data_availability": 0.5,
+      "expected_information_gain": 0.7,
+      "evidence_cost": 0.5,
+      "risk_inverted": 0.6,
+      "maturity_gap": 0.7,
+      "owner_relevance": 0.6,
+      "duplication_inverted": 0.5,
+      "substantive_score": 0.7
+    },
+    "factor_vector": {
+      "consequence_of_being_wrong": 0.7,
+      "dependency_centrality": 0.5,
+      "falsifiability": 0.6,
+      "data_oracle_availability": 0.5,
+      "expected_information_gain": 0.7,
+      "effort_evidence_cost": 0.5,
+      "reversibility_risk": 0.6,
+      "maturity_gap": 0.7,
+      "owner_relevance": 0.6,
+      "duplication_prior_failure": 0.5,
+      "substantive_vs_meta": 0.7
+    },
+    "aggregate_score": 60.1,
+    "blocked_reason": null
+  },
+  {
+    "canonical_id": "A0",
+    "source": "data/foundation/function-assets/unresolved-quarantine.jsonl",
+    "title": "function-asset A0",
+    "provenance": {
+      "source_file": "data/foundation/function-assets/unresolved-quarantine.jsonl",
+      "canonical_id": "A0",
+      "resume_key": "task99:A0"
+    },
+    "current_status": "QUARANTINE_UNTIL_DEFINED",
+    "dependencies": [],
+    "prerequisite_unresolved": false,
+    "affected_surfaces": [
+      "claims-registry",
+      "foundation"
+    ],
+    "evidence_needs": [
+      "Define the operational mapping from variables to external objects before making a reality claim.",
+      "Provide a falsifiable protocol, baseline, data provenance and independent replication appropriate to the claimed domain."
+    ],
+    "stop_conditions": [],
+    "claim_ceiling": "Quarantined; not an established claim.",
+    "authority": "REPO_OWNER",
+    "class": "GOVERNANCE_OR_PROPAGATION_DEFECT",
+    "is_meta": true,
+    "missing_fields": [],
+    "factor_inputs": {
+      "harm_if_wrong": 0.4,
+      "dependency_centrality": 0.4,
+      "falsifiability": 0.5,
+      "data_availability": 0.4,
+      "expected_information_gain": 0.4,
+      "evidence_cost": 0.7,
+      "risk_inverted": 0.6,
+      "maturity_gap": 0.6,
+      "owner_relevance": 0.5,
+      "duplication_inverted": 0.7,
+      "substantive_score": 0.5
+    },
+    "factor_vector": {
+      "consequence_of_being_wrong": 0.4,
+      "dependency_centrality": 0.4,
+      "falsifiability": 0.5,
+      "data_oracle_availability": 0.4,
+      "expected_information_gain": 0.4,
+      "effort_evidence_cost": 0.3,
+      "reversibility_risk": 0.6,
+      "maturity_gap": 0.6,
+      "owner_relevance": 0.5,
+      "duplication_prior_failure": 0.7,
+      "substantive_vs_meta": 0.2
+    },
+    "aggregate_score": 42.8,
+    "blocked_reason": null
+  },
+  {
+    "canonical_id": "A01",
+    "source": "data/foundation/function-assets/unresolved-quarantine.jsonl",
+    "title": "function-asset A01",
+    "provenance": {
+      "source_file": "data/foundation/function-assets/unresolved-quarantine.jsonl",
+      "canonical_id": "A01",
+      "resume_key": "task99:A01"
+    },
+    "current_status": "QUARANTINE_UNTIL_DEFINED",
+    "dependencies": [],
+    "prerequisite_unresolved": false,
+    "affected_surfaces": [
+      "claims-registry",
+      "foundation"
+    ],
+    "evidence_needs": [
+      "Define the operational mapping from variables to external objects before making a reality claim.",
+      "Provide a falsifiable protocol, baseline, data provenance and independent replication appropriate to the claimed domain."
+    ],
+    "stop_conditions": [],
+    "claim_ceiling": "Quarantined; not an established claim.",
+    "authority": "REPO_OWNER",
+    "class": "GOVERNANCE_OR_PROPAGATION_DEFECT",
+    "is_meta": true,
+    "missing_fields": [],
+    "factor_inputs": {
+      "harm_if_wrong": 0.4,
+      "dependency_centrality": 0.4,
+      "falsifiability": 0.5,
+      "data_availability": 0.4,
+      "expected_information_gain": 0.4,
+      "evidence_cost": 0.7,
+      "risk_inverted": 0.6,
+      "maturity_gap": 0.6,
+      "owner_relevance": 0.5,
+      "duplication_inverted": 0.7,
+      "substantive_score": 0.5
+    },
+    "factor_vector": {
+      "consequence_of_being_wrong": 0.4,
+      "dependency_centrality": 0.4,
+      "falsifiability": 0.5,
+      "data_oracle_availability": 0.4,
+      "expected_information_gain": 0.4,
+      "effort_evidence_cost": 0.3,
+      "reversibility_risk": 0.6,
+      "maturity_gap": 0.6,
+      "owner_relevance": 0.5,
+      "duplication_prior_failure": 0.7,
+      "substantive_vs_meta": 0.2
+    },
+    "aggregate_score": 42.8,
+    "blocked_reason": null
+  },
+  {
+    "canonical_id": "A02",
+    "source": "data/foundation/function-assets/unresolved-quarantine.jsonl",
+    "title": "function-asset A02",
+    "provenance": {
+      "source_file": "data/foundation/function-assets/unresolved-quarantine.jsonl",
+      "canonical_id": "A02",
+      "resume_key": "task99:A02"
+    },
+    "current_status": "QUARANTINE_UNTIL_DEFINED",
+    "dependencies": [],
+    "prerequisite_unresolved": false,
+    "affected_surfaces": [
+      "claims-registry",
+      "foundation"
+    ],
+    "evidence_needs": [
+      "Define the operational mapping from variables to external objects before making a reality claim.",
+      "Provide a falsifiable protocol, baseline, data provenance and independent replication appropriate to the claimed domain."
+    ],
+    "stop_conditions": [],
+    "claim_ceiling": "Quarantined; not an established claim.",
+    "authority": "REPO_OWNER",
+    "class": "GOVERNANCE_OR_PROPAGATION_DEFECT",
+    "is_meta": true,
+    "missing_fields": [],
+    "factor_inputs": {
+      "harm_if_wrong": 0.4,
+      "dependency_centrality": 0.4,
+      "falsifiability": 0.5,
+      "data_availability": 0.4,
+      "expected_information_gain": 0.4,
+      "evidence_cost": 0.7,
+      "risk_inverted": 0.6,
+      "maturity_gap": 0.6,
+      "owner_relevance": 0.5,
+      "duplication_inverted": 0.7,
+      "substantive_score": 0.5
+    },
+    "factor_vector": {
+      "consequence_of_being_wrong": 0.4,
+      "dependency_centrality": 0.4,
+      "falsifiability": 0.5,
+      "data_oracle_availability": 0.4,
+      "expected_information_gain": 0.4,
+      "effort_evidence_cost": 0.3,
+      "reversibility_risk": 0.6,
+      "maturity_gap": 0.6,
+      "owner_relevance": 0.5,
+      "duplication_prior_failure": 0.7,
+      "substantive_vs_meta": 0.2
+    },
+    "aggregate_score": 42.8,
+    "blocked_reason": null
+  },
+  {
+    "canonical_id": "A03",
+    "source": "data/foundation/function-assets/unresolved-quarantine.jsonl",
+    "title": "function-asset A03",
+    "provenance": {
+      "source_file": "data/foundation/function-assets/unresolved-quarantine.jsonl",
+      "canonical_id": "A03",
+      "resume_key": "task99:A03"
+    },
+    "current_status": "QUARANTINE_UNTIL_DEFINED",
+    "dependencies": [],
+    "prerequisite_unresolved": false,
+    "affected_surfaces": [
+      "claims-registry",
+      "foundation"
+    ],
+    "evidence_needs": [
+      "Define the operational mapping from variables to external objects before making a reality claim.",
+      "Provide a falsifiable protocol, baseline, data provenance and independent replication appropriate to the claimed domain."
+    ],
+    "stop_conditions": [],
+    "claim_ceiling": "Quarantined; not an established claim.",
+    "authority": "REPO_OWNER",
+    "class": "GOVERNANCE_OR_PROPAGATION_DEFECT",
+    "is_meta": true,
+    "missing_fields": [],
+    "factor_inputs": {
+      "harm_if_wrong": 0.4,
+      "dependency_centrality": 0.4,
+      "falsifiability": 0.5,
+      "data_availability": 0.4,
+      "expected_information_gain": 0.4,
+      "evidence_cost": 0.7,
+      "risk_inverted": 0.6,
+      "maturity_gap": 0.6,
+      "owner_relevance": 0.5,
+      "duplication_inverted": 0.7,
+      "substantive_score": 0.5
+    },
+    "factor_vector": {
+      "consequence_of_being_wrong": 0.4,
+      "dependency_centrality": 0.4,
+      "falsifiability": 0.5,
+      "data_oracle_availability": 0.4,
+      "expected_information_gain": 0.4,
+      "effort_evidence_cost": 0.3,
+      "reversibility_risk": 0.6,
+      "maturity_gap": 0.6,
+      "owner_relevance": 0.5,
+      "duplication_prior_failure": 0.7,
+      "substantive_vs_meta": 0.2
+    },
+    "aggregate_score": 42.8,
+    "blocked_reason": null
+  },
+  {
+    "canonical_id": "A04",
+    "source": "data/foundation/function-assets/unresolved-quarantine.jsonl",
+    "title": "function-asset A04",
+    "provenance": {
+      "source_file": "data/foundation/function-assets/unresolved-quarantine.jsonl",
+      "canonical_id": "A04",
+      "resume_key": "task99:A04"
+    },
+    "current_status": "QUARANTINE_UNTIL_DEFINED",
+    "dependencies": [],
+    "prerequisite_unresolved": false,
+    "affected_surfaces": [
+      "claims-registry",
+      "foundation"
+    ],
+    "evidence_needs": [
+      "Define the operational mapping from variables to external objects before making a reality claim.",
+      "Provide a falsifiable protocol, baseline, data provenance and independent replication appropriate to the claimed domain."
+    ],
+    "stop_conditions": [],
+    "claim_ceiling": "Quarantined; not an established claim.",
+    "authority": "REPO_OWNER",
+    "class": "GOVERNANCE_OR_PROPAGATION_DEFECT",
+    "is_meta": true,
+    "missing_fields": [],
+    "factor_inputs": {
+      "harm_if_wrong": 0.4,
+      "dependency_centrality": 0.4,
+      "falsifiability": 0.5,
+      "data_availability": 0.4,
+      "expected_information_gain": 0.4,
+      "evidence_cost": 0.7,
+      "risk_inverted": 0.6,
+      "maturity_gap": 0.6,
+      "owner_relevance": 0.5,
+      "duplication_inverted": 0.7,
+      "substantive_score": 0.5
+    },
+    "factor_vector": {
+      "consequence_of_being_wrong": 0.4,
+      "dependency_centrality": 0.4,
+      "falsifiability": 0.5,
+      "data_oracle_availability": 0.4,
+      "expected_information_gain": 0.4,
+      "effort_evidence_cost": 0.3,
+      "reversibility_risk": 0.6,
+      "maturity_gap": 0.6,
+      "owner_relevance": 0.5,
+      "duplication_prior_failure": 0.7,
+      "substantive_vs_meta": 0.2
+    },
+    "aggregate_score": 42.8,
+    "blocked_reason": null
+  },
+  {
+    "canonical_id": "A05",
+    "source": "data/foundation/function-assets/unresolved-quarantine.jsonl",
+    "title": "function-asset A05",
+    "provenance": {
+      "source_file": "data/foundation/function-assets/unresolved-quarantine.jsonl",
+      "canonical_id": "A05",
+      "resume_key": "task99:A05"
+    },
+    "current_status": "QUARANTINE_UNTIL_DEFINED",
+    "dependencies": [],
+    "prerequisite_unresolved": false,
+    "affected_surfaces": [
+      "claims-registry",
+      "foundation"
+    ],
+    "evidence_needs": [
+      "Define the operational mapping from variables to external objects before making a reality claim.",
+      "Provide a falsifiable protocol, baseline, data provenance and independent replication appropriate to the claimed domain."
+    ],
+    "stop_conditions": [],
+    "claim_ceiling": "Quarantined; not an established claim.",
+    "authority": "REPO_OWNER",
+    "class": "GOVERNANCE_OR_PROPAGATION_DEFECT",
+    "is_meta": true,
+    "missing_fields": [],
+    "factor_inputs": {
+      "harm_if_wrong": 0.4,
+      "dependency_centrality": 0.4,
+      "falsifiability": 0.5,
+      "data_availability": 0.4,
+      "expected_information_gain": 0.4,
+      "evidence_cost": 0.7,
+      "risk_inverted": 0.6,
+      "maturity_gap": 0.6,
+      "owner_relevance": 0.5,
+      "duplication_inverted": 0.7,
+      "substantive_score": 0.5
+    },
+    "factor_vector": {
+      "consequence_of_being_wrong": 0.4,
+      "dependency_centrality": 0.4,
+      "falsifiability": 0.5,
+      "data_oracle_availability": 0.4,
+      "expected_information_gain": 0.4,
+      "effort_evidence_cost": 0.3,
+      "reversibility_risk": 0.6,
+      "maturity_gap": 0.6,
+      "owner_relevance": 0.5,
+      "duplication_prior_failure": 0.7,
+      "substantive_vs_meta": 0.2
+    },
+    "aggregate_score": 42.8,
+    "blocked_reason": null
+  },
+  {
+    "canonical_id": "A06",
+    "source": "data/foundation/function-assets/unresolved-quarantine.jsonl",
+    "title": "function-asset A06",
+    "provenance": {
+      "source_file": "data/foundation/function-assets/unresolved-quarantine.jsonl",
+      "canonical_id": "A06",
+      "resume_key": "task99:A06"
+    },
+    "current_status": "QUARANTINE_UNTIL_DEFINED",
+    "dependencies": [],
+    "prerequisite_unresolved": false,
+    "affected_surfaces": [
+      "claims-registry",
+      "foundation"
+    ],
+    "evidence_needs": [
+      "Define the operational mapping from variables to external objects before making a reality claim.",
+      "Provide a falsifiable protocol, baseline, data provenance and independent replication appropriate to the claimed domain."
+    ],
+    "stop_conditions": [],
+    "claim_ceiling": "Quarantined; not an established claim.",
+    "authority": "REPO_OWNER",
+    "class": "GOVERNANCE_OR_PROPAGATION_DEFECT",
+    "is_meta": true,
+    "missing_fields": [],
+    "factor_inputs": {
+      "harm_if_wrong": 0.4,
+      "dependency_centrality": 0.4,
+      "falsifiability": 0.5,
+      "data_availability": 0.4,
+      "expected_information_gain": 0.4,
+      "evidence_cost": 0.7,
+      "risk_inverted": 0.6,
+      "maturity_gap": 0.6,
+      "owner_relevance": 0.5,
+      "duplication_inverted": 0.7,
+      "substantive_score": 0.5
+    },
+    "factor_vector": {
+      "consequence_of_being_wrong": 0.4,
+      "dependency_centrality": 0.4,
+      "falsifiability": 0.5,
+      "data_oracle_availability": 0.4,
+      "expected_information_gain": 0.4,
+      "effort_evidence_cost": 0.3,
+      "reversibility_risk": 0.6,
+      "maturity_gap": 0.6,
+      "owner_relevance": 0.5,
+      "duplication_prior_failure": 0.7,
+      "substantive_vs_meta": 0.2
+    },
+    "aggregate_score": 42.8,
+    "blocked_reason": null
+  },
+  {
+    "canonical_id": "A08",
+    "source": "data/foundation/function-assets/unresolved-quarantine.jsonl",
+    "title": "function-asset A08",
+    "provenance": {
+      "source_file": "data/foundation/function-assets/unresolved-quarantine.jsonl",
+      "canonical_id": "A08",
+      "resume_key": "task99:A08"
+    },
+    "current_status": "QUARANTINE_UNTIL_DEFINED",
+    "dependencies": [],
+    "prerequisite_unresolved": false,
+    "affected_surfaces": [
+      "claims-registry",
+      "foundation"
+    ],
+    "evidence_needs": [
+      "Define the operational mapping from variables to external objects before making a reality claim.",
+      "Provide a falsifiable protocol, baseline, data provenance and independent replication appropriate to the claimed domain."
+    ],
+    "stop_conditions": [],
+    "claim_ceiling": "Quarantined; not an established claim.",
+    "authority": "REPO_OWNER",
+    "class": "GOVERNANCE_OR_PROPAGATION_DEFECT",
+    "is_meta": true,
+    "missing_fields": [],
+    "factor_inputs": {
+      "harm_if_wrong": 0.4,
+      "dependency_centrality": 0.4,
+      "falsifiability": 0.5,
+      "data_availability": 0.4,
+      "expected_information_gain": 0.4,
+      "evidence_cost": 0.7,
+      "risk_inverted": 0.6,
+      "maturity_gap": 0.6,
+      "owner_relevance": 0.5,
+      "duplication_inverted": 0.7,
+      "substantive_score": 0.5
+    },
+    "factor_vector": {
+      "consequence_of_being_wrong": 0.4,
+      "dependency_centrality": 0.4,
+      "falsifiability": 0.5,
+      "data_oracle_availability": 0.4,
+      "expected_information_gain": 0.4,
+      "effort_evidence_cost": 0.3,
+      "reversibility_risk": 0.6,
+      "maturity_gap": 0.6,
+      "owner_relevance": 0.5,
+      "duplication_prior_failure": 0.7,
+      "substantive_vs_meta": 0.2
+    },
+    "aggregate_score": 42.8,
+    "blocked_reason": null
+  },
+  {
+    "canonical_id": "A09",
+    "source": "data/foundation/function-assets/unresolved-quarantine.jsonl",
+    "title": "function-asset A09",
+    "provenance": {
+      "source_file": "data/foundation/function-assets/unresolved-quarantine.jsonl",
+      "canonical_id": "A09",
+      "resume_key": "task99:A09"
+    },
+    "current_status": "QUARANTINE_UNTIL_DEFINED",
+    "dependencies": [],
+    "prerequisite_unresolved": false,
+    "affected_surfaces": [
+      "claims-registry",
+      "foundation"
+    ],
+    "evidence_needs": [
+      "Define the operational mapping from variables to external objects before making a reality claim.",
+      "Provide a falsifiable protocol, baseline, data provenance and independent replication appropriate to the claimed domain."
+    ],
+    "stop_conditions": [],
+    "claim_ceiling": "Quarantined; not an established claim.",
+    "authority": "REPO_OWNER",
+    "class": "GOVERNANCE_OR_PROPAGATION_DEFECT",
+    "is_meta": true,
+    "missing_fields": [],
+    "factor_inputs": {
+      "harm_if_wrong": 0.4,
+      "dependency_centrality": 0.4,
+      "falsifiability": 0.5,
+      "data_availability": 0.4,
+      "expected_information_gain": 0.4,
+      "evidence_cost": 0.7,
+      "risk_inverted": 0.6,
+      "maturity_gap": 0.6,
+      "owner_relevance": 0.5,
+      "duplication_inverted": 0.7,
+      "substantive_score": 0.5
+    },
+    "factor_vector": {
+      "consequence_of_being_wrong": 0.4,
+      "dependency_centrality": 0.4,
+      "falsifiability": 0.5,
+      "data_oracle_availability": 0.4,
+      "expected_information_gain": 0.4,
+      "effort_evidence_cost": 0.3,
+      "reversibility_risk": 0.6,
+      "maturity_gap": 0.6,
+      "owner_relevance": 0.5,
+      "duplication_prior_failure": 0.7,
+      "substantive_vs_meta": 0.2
+    },
+    "aggregate_score": 42.8,
+    "blocked_reason": null
+  },
+  {
+    "canonical_id": "A1",
+    "source": "data/foundation/function-assets/unresolved-quarantine.jsonl",
+    "title": "function-asset A1",
+    "provenance": {
+      "source_file": "data/foundation/function-assets/unresolved-quarantine.jsonl",
+      "canonical_id": "A1",
+      "resume_key": "task99:A1"
+    },
+    "current_status": "QUARANTINE_UNTIL_DEFINED",
+    "dependencies": [],
+    "prerequisite_unresolved": false,
+    "affected_surfaces": [
+      "claims-registry",
+      "foundation"
+    ],
+    "evidence_needs": [
+      "Define the operational mapping from variables to external objects before making a reality claim.",
+      "Provide a falsifiable protocol, baseline, data provenance and independent replication appropriate to the claimed domain."
+    ],
+    "stop_conditions": [],
+    "claim_ceiling": "Quarantined; not an established claim.",
+    "authority": "REPO_OWNER",
+    "class": "GOVERNANCE_OR_PROPAGATION_DEFECT",
+    "is_meta": true,
+    "missing_fields": [],
+    "factor_inputs": {
+      "harm_if_wrong": 0.4,
+      "dependency_centrality": 0.4,
+      "falsifiability": 0.5,
+      "data_availability": 0.4,
+      "expected_information_gain": 0.4,
+      "evidence_cost": 0.7,
+      "risk_inverted": 0.6,
+      "maturity_gap": 0.6,
+      "owner_relevance": 0.5,
+      "duplication_inverted": 0.7,
+      "substantive_score": 0.5
+    },
+    "factor_vector": {
+      "consequence_of_being_wrong": 0.4,
+      "dependency_centrality": 0.4,
+      "falsifiability": 0.5,
+      "data_oracle_availability": 0.4,
+      "expected_information_gain": 0.4,
+      "effort_evidence_cost": 0.3,
+      "reversibility_risk": 0.6,
+      "maturity_gap": 0.6,
+      "owner_relevance": 0.5,
+      "duplication_prior_failure": 0.7,
+      "substantive_vs_meta": 0.2
+    },
+    "aggregate_score": 42.8,
+    "blocked_reason": null
+  },
+  {
+    "canonical_id": "A10",
+    "source": "data/foundation/function-assets/unresolved-quarantine.jsonl",
+    "title": "function-asset A10",
+    "provenance": {
+      "source_file": "data/foundation/function-assets/unresolved-quarantine.jsonl",
+      "canonical_id": "A10",
+      "resume_key": "task99:A10"
+    },
+    "current_status": "QUARANTINE_UNTIL_DEFINED",
+    "dependencies": [],
+    "prerequisite_unresolved": false,
+    "affected_surfaces": [
+      "claims-registry",
+      "foundation"
+    ],
+    "evidence_needs": [
+      "Define the operational mapping from variables to external objects before making a reality claim.",
+      "Provide a falsifiable protocol, baseline, data provenance and independent replication appropriate to the claimed domain."
+    ],
+    "stop_conditions": [],
+    "claim_ceiling": "Quarantined; not an established claim.",
+    "authority": "REPO_OWNER",
+    "class": "GOVERNANCE_OR_PROPAGATION_DEFECT",
+    "is_meta": true,
+    "missing_fields": [],
+    "factor_inputs": {
+      "harm_if_wrong": 0.4,
+      "dependency_centrality": 0.4,
+      "falsifiability": 0.5,
+      "data_availability": 0.4,
+      "expected_information_gain": 0.4,
+      "evidence_cost": 0.7,
+      "risk_inverted": 0.6,
+      "maturity_gap": 0.6,
+      "owner_relevance": 0.5,
+      "duplication_inverted": 0.7,
+      "substantive_score": 0.5
+    },
+    "factor_vector": {
+      "consequence_of_being_wrong": 0.4,
+      "dependency_centrality": 0.4,
+      "falsifiability": 0.5,
+      "data_oracle_availability": 0.4,
+      "expected_information_gain": 0.4,
+      "effort_evidence_cost": 0.3,
+      "reversibility_risk": 0.6,
+      "maturity_gap": 0.6,
+      "owner_relevance": 0.5,
+      "duplication_prior_failure": 0.7,
+      "substantive_vs_meta": 0.2
+    },
+    "aggregate_score": 42.8,
+    "blocked_reason": null
+  },
+  {
+    "canonical_id": "A100",
+    "source": "data/foundation/function-assets/unresolved-quarantine.jsonl",
+    "title": "function-asset A100",
+    "provenance": {
+      "source_file": "data/foundation/function-assets/unresolved-quarantine.jsonl",
+      "canonical_id": "A100",
+      "resume_key": "task99:A100"
+    },
+    "current_status": "QUARANTINE_UNTIL_DEFINED",
+    "dependencies": [],
+    "prerequisite_unresolved": false,
+    "affected_surfaces": [
+      "claims-registry",
+      "foundation"
+    ],
+    "evidence_needs": [
+      "Define the operational mapping from variables to external objects before making a reality claim.",
+      "Provide a falsifiable protocol, baseline, data provenance and independent replication appropriate to the claimed domain."
+    ],
+    "stop_conditions": [],
+    "claim_ceiling": "Quarantined; not an established claim.",
+    "authority": "REPO_OWNER",
+    "class": "GOVERNANCE_OR_PROPAGATION_DEFECT",
+    "is_meta": true,
+    "missing_fields": [],
+    "factor_inputs": {
+      "harm_if_wrong": 0.4,
+      "dependency_centrality": 0.4,
+      "falsifiability": 0.5,
+      "data_availability": 0.4,
+      "expected_information_gain": 0.4,
+      "evidence_cost": 0.7,
+      "risk_inverted": 0.6,
+      "maturity_gap": 0.6,
+      "owner_relevance": 0.5,
+      "duplication_inverted": 0.7,
+      "substantive_score": 0.5
+    },
+    "factor_vector": {
+      "consequence_of_being_wrong": 0.4,
+      "dependency_centrality": 0.4,
+      "falsifiability": 0.5,
+      "data_oracle_availability": 0.4,
+      "expected_information_gain": 0.4,
+      "effort_evidence_cost": 0.3,
+      "reversibility_risk": 0.6,
+      "maturity_gap": 0.6,
+      "owner_relevance": 0.5,
+      "duplication_prior_failure": 0.7,
+      "substantive_vs_meta": 0.2
+    },
+    "aggregate_score": 42.8,
+    "blocked_reason": null
+  },
+  {
+    "canonical_id": "CLAIM-BC-20260709-003",
+    "source": "data/foundation/nonfunction-claims/unresolved-quarantine.jsonl",
+    "title": "nonfunction-claim CLAIM-BC-20260709-003",
+    "provenance": {
+      "source_file": "data/foundation/nonfunction-claims/unresolved-quarantine.jsonl",
+      "canonical_id": "CLAIM-BC-20260709-003",
+      "resume_key": "task100:CLAIM-BC-20260709-003"
+    },
+    "current_status": "PENDING_EMPIRICAL_TEST",
+    "dependencies": [],
+    "prerequisite_unresolved": false,
+    "affected_surfaces": [
+      "claims-registry",
+      "foundation"
+    ],
+    "evidence_needs": [
+      "Define operational variables, intervention or identification assumptions, dataset provenance, baselines and failure criteria.",
+      "Document independent replication before any replication claim."
+    ],
+    "stop_conditions": [],
+    "claim_ceiling": "Quarantined; not an established claim.",
+    "authority": "REPO_OWNER",
+    "class": "GOVERNANCE_OR_PROPAGATION_DEFECT",
+    "is_meta": true,
+    "missing_fields": [],
+    "factor_inputs": {
+      "harm_if_wrong": 0.4,
+      "dependency_centrality": 0.4,
+      "falsifiability": 0.5,
+      "data_availability": 0.4,
+      "expected_information_gain": 0.4,
+      "evidence_cost": 0.7,
+      "risk_inverted": 0.6,
+      "maturity_gap": 0.6,
+      "owner_relevance": 0.5,
+      "duplication_inverted": 0.7,
+      "substantive_score": 0.5
+    },
+    "factor_vector": {
+      "consequence_of_being_wrong": 0.4,
+      "dependency_centrality": 0.4,
+      "falsifiability": 0.5,
+      "data_oracle_availability": 0.4,
+      "expected_information_gain": 0.4,
+      "effort_evidence_cost": 0.3,
+      "reversibility_risk": 0.6,
+      "maturity_gap": 0.6,
+      "owner_relevance": 0.5,
+      "duplication_prior_failure": 0.7,
+      "substantive_vs_meta": 0.2
+    },
+    "aggregate_score": 42.8,
+    "blocked_reason": null
+  },
+  {
+    "canonical_id": "CLAIM-BC-20260709-004",
+    "source": "data/foundation/nonfunction-claims/unresolved-quarantine.jsonl",
+    "title": "nonfunction-claim CLAIM-BC-20260709-004",
+    "provenance": {
+      "source_file": "data/foundation/nonfunction-claims/unresolved-quarantine.jsonl",
+      "canonical_id": "CLAIM-BC-20260709-004",
+      "resume_key": "task100:CLAIM-BC-20260709-004"
+    },
+    "current_status": "QUARANTINED_AMBIGUOUS",
+    "dependencies": [],
+    "prerequisite_unresolved": false,
+    "affected_surfaces": [
+      "claims-registry",
+      "foundation"
+    ],
+    "evidence_needs": [],
+    "stop_conditions": [],
+    "claim_ceiling": "Quarantined; not an established claim.",
+    "authority": "REPO_OWNER",
+    "class": "GOVERNANCE_OR_PROPAGATION_DEFECT",
+    "is_meta": true,
+    "missing_fields": [],
+    "factor_inputs": {
+      "harm_if_wrong": 0.4,
+      "dependency_centrality": 0.4,
+      "falsifiability": 0.5,
+      "data_availability": 0.4,
+      "expected_information_gain": 0.4,
+      "evidence_cost": 0.7,
+      "risk_inverted": 0.6,
+      "maturity_gap": 0.6,
+      "owner_relevance": 0.5,
+      "duplication_inverted": 0.7,
+      "substantive_score": 0.5
+    },
+    "factor_vector": {
+      "consequence_of_being_wrong": 0.4,
+      "dependency_centrality": 0.4,
+      "falsifiability": 0.5,
+      "data_oracle_availability": 0.4,
+      "expected_information_gain": 0.4,
+      "effort_evidence_cost": 0.3,
+      "reversibility_risk": 0.6,
+      "maturity_gap": 0.6,
+      "owner_relevance": 0.5,
+      "duplication_prior_failure": 0.7,
+      "substantive_vs_meta": 0.2
+    },
+    "aggregate_score": 42.8,
+    "blocked_reason": null
+  },
+  {
+    "canonical_id": "CLAIM-BC-20260709-006",
+    "source": "data/foundation/nonfunction-claims/unresolved-quarantine.jsonl",
+    "title": "nonfunction-claim CLAIM-BC-20260709-006",
+    "provenance": {
+      "source_file": "data/foundation/nonfunction-claims/unresolved-quarantine.jsonl",
+      "canonical_id": "CLAIM-BC-20260709-006",
+      "resume_key": "task100:CLAIM-BC-20260709-006"
+    },
+    "current_status": "PENDING_EMPIRICAL_TEST",
+    "dependencies": [],
+    "prerequisite_unresolved": false,
+    "affected_surfaces": [
+      "claims-registry",
+      "foundation"
+    ],
+    "evidence_needs": [
+      "Define operational variables, intervention or identification assumptions, dataset provenance, baselines and failure criteria.",
+      "Document independent replication before any replication claim."
+    ],
+    "stop_conditions": [],
+    "claim_ceiling": "Quarantined; not an established claim.",
+    "authority": "REPO_OWNER",
+    "class": "GOVERNANCE_OR_PROPAGATION_DEFECT",
+    "is_meta": true,
+    "missing_fields": [],
+    "factor_inputs": {
+      "harm_if_wrong": 0.4,
+      "dependency_centrality": 0.4,
+      "falsifiability": 0.5,
+      "data_availability": 0.4,
+      "expected_information_gain": 0.4,
+      "evidence_cost": 0.7,
+      "risk_inverted": 0.6,
+      "maturity_gap": 0.6,
+      "owner_relevance": 0.5,
+      "duplication_inverted": 0.7,
+      "substantive_score": 0.5
+    },
+    "factor_vector": {
+      "consequence_of_being_wrong": 0.4,
+      "dependency_centrality": 0.4,
+      "falsifiability": 0.5,
+      "data_oracle_availability": 0.4,
+      "expected_information_gain": 0.4,
+      "effort_evidence_cost": 0.3,
+      "reversibility_risk": 0.6,
+      "maturity_gap": 0.6,
+      "owner_relevance": 0.5,
+      "duplication_prior_failure": 0.7,
+      "substantive_vs_meta": 0.2
+    },
+    "aggregate_score": 42.8,
+    "blocked_reason": null
+  },
+  {
+    "canonical_id": "CLAIM-BC-20260709-012",
+    "source": "data/foundation/nonfunction-claims/unresolved-quarantine.jsonl",
+    "title": "nonfunction-claim CLAIM-BC-20260709-012",
+    "provenance": {
+      "source_file": "data/foundation/nonfunction-claims/unresolved-quarantine.jsonl",
+      "canonical_id": "CLAIM-BC-20260709-012",
+      "resume_key": "task100:CLAIM-BC-20260709-012"
+    },
+    "current_status": "PENDING_EMPIRICAL_TEST",
+    "dependencies": [],
+    "prerequisite_unresolved": false,
+    "affected_surfaces": [
+      "claims-registry",
+      "foundation"
+    ],
+    "evidence_needs": [
+      "Define operational variables, intervention or identification assumptions, dataset provenance, baselines and failure criteria.",
+      "Document independent replication before any replication claim."
+    ],
+    "stop_conditions": [],
+    "claim_ceiling": "Quarantined; not an established claim.",
+    "authority": "REPO_OWNER",
+    "class": "GOVERNANCE_OR_PROPAGATION_DEFECT",
+    "is_meta": true,
+    "missing_fields": [],
+    "factor_inputs": {
+      "harm_if_wrong": 0.4,
+      "dependency_centrality": 0.4,
+      "falsifiability": 0.5,
+      "data_availability": 0.4,
+      "expected_information_gain": 0.4,
+      "evidence_cost": 0.7,
+      "risk_inverted": 0.6,
+      "maturity_gap": 0.6,
+      "owner_relevance": 0.5,
+      "duplication_inverted": 0.7,
+      "substantive_score": 0.5
+    },
+    "factor_vector": {
+      "consequence_of_being_wrong": 0.4,
+      "dependency_centrality": 0.4,
+      "falsifiability": 0.5,
+      "data_oracle_availability": 0.4,
+      "expected_information_gain": 0.4,
+      "effort_evidence_cost": 0.3,
+      "reversibility_risk": 0.6,
+      "maturity_gap": 0.6,
+      "owner_relevance": 0.5,
+      "duplication_prior_failure": 0.7,
+      "substantive_vs_meta": 0.2
+    },
+    "aggregate_score": 42.8,
+    "blocked_reason": null
+  },
+  {
+    "canonical_id": "CLAIM-BC-20260709-013",
+    "source": "data/foundation/nonfunction-claims/unresolved-quarantine.jsonl",
+    "title": "nonfunction-claim CLAIM-BC-20260709-013",
+    "provenance": {
+      "source_file": "data/foundation/nonfunction-claims/unresolved-quarantine.jsonl",
+      "canonical_id": "CLAIM-BC-20260709-013",
+      "resume_key": "task100:CLAIM-BC-20260709-013"
+    },
+    "current_status": "PENDING_EMPIRICAL_TEST",
+    "dependencies": [],
+    "prerequisite_unresolved": false,
+    "affected_surfaces": [
+      "claims-registry",
+      "foundation"
+    ],
+    "evidence_needs": [
+      "Define operational variables, intervention or identification assumptions, dataset provenance, baselines and failure criteria.",
+      "Document independent replication before any replication claim."
+    ],
+    "stop_conditions": [],
+    "claim_ceiling": "Quarantined; not an established claim.",
+    "authority": "REPO_OWNER",
+    "class": "GOVERNANCE_OR_PROPAGATION_DEFECT",
+    "is_meta": true,
+    "missing_fields": [],
+    "factor_inputs": {
+      "harm_if_wrong": 0.4,
+      "dependency_centrality": 0.4,
+      "falsifiability": 0.5,
+      "data_availability": 0.4,
+      "expected_information_gain": 0.4,
+      "evidence_cost": 0.7,
+      "risk_inverted": 0.6,
+      "maturity_gap": 0.6,
+      "owner_relevance": 0.5,
+      "duplication_inverted": 0.7,
+      "substantive_score": 0.5
+    },
+    "factor_vector": {
+      "consequence_of_being_wrong": 0.4,
+      "dependency_centrality": 0.4,
+      "falsifiability": 0.5,
+      "data_oracle_availability": 0.4,
+      "expected_information_gain": 0.4,
+      "effort_evidence_cost": 0.3,
+      "reversibility_risk": 0.6,
+      "maturity_gap": 0.6,
+      "owner_relevance": 0.5,
+      "duplication_prior_failure": 0.7,
+      "substantive_vs_meta": 0.2
+    },
+    "aggregate_score": 42.8,
+    "blocked_reason": null
+  },
+  {
+    "canonical_id": "CLAIM-BC-20260709-014",
+    "source": "data/foundation/nonfunction-claims/unresolved-quarantine.jsonl",
+    "title": "nonfunction-claim CLAIM-BC-20260709-014",
+    "provenance": {
+      "source_file": "data/foundation/nonfunction-claims/unresolved-quarantine.jsonl",
+      "canonical_id": "CLAIM-BC-20260709-014",
+      "resume_key": "task100:CLAIM-BC-20260709-014"
+    },
+    "current_status": "PENDING_EMPIRICAL_TEST",
+    "dependencies": [],
+    "prerequisite_unresolved": false,
+    "affected_surfaces": [
+      "claims-registry",
+      "foundation"
+    ],
+    "evidence_needs": [
+      "Define operational variables, intervention or identification assumptions, dataset provenance, baselines and failure criteria.",
+      "Document independent replication before any replication claim."
+    ],
+    "stop_conditions": [],
+    "claim_ceiling": "Quarantined; not an established claim.",
+    "authority": "REPO_OWNER",
+    "class": "GOVERNANCE_OR_PROPAGATION_DEFECT",
+    "is_meta": true,
+    "missing_fields": [],
+    "factor_inputs": {
+      "harm_if_wrong": 0.4,
+      "dependency_centrality": 0.4,
+      "falsifiability": 0.5,
+      "data_availability": 0.4,
+      "expected_information_gain": 0.4,
+      "evidence_cost": 0.7,
+      "risk_inverted": 0.6,
+      "maturity_gap": 0.6,
+      "owner_relevance": 0.5,
+      "duplication_inverted": 0.7,
+      "substantive_score": 0.5
+    },
+    "factor_vector": {
+      "consequence_of_being_wrong": 0.4,
+      "dependency_centrality": 0.4,
+      "falsifiability": 0.5,
+      "data_oracle_availability": 0.4,
+      "expected_information_gain": 0.4,
+      "effort_evidence_cost": 0.3,
+      "reversibility_risk": 0.6,
+      "maturity_gap": 0.6,
+      "owner_relevance": 0.5,
+      "duplication_prior_failure": 0.7,
+      "substantive_vs_meta": 0.2
+    },
+    "aggregate_score": 42.8,
+    "blocked_reason": null
+  },
+  {
+    "canonical_id": "CLAIM-BC-20260709-015",
+    "source": "data/foundation/nonfunction-claims/unresolved-quarantine.jsonl",
+    "title": "nonfunction-claim CLAIM-BC-20260709-015",
+    "provenance": {
+      "source_file": "data/foundation/nonfunction-claims/unresolved-quarantine.jsonl",
+      "canonical_id": "CLAIM-BC-20260709-015",
+      "resume_key": "task100:CLAIM-BC-20260709-015"
+    },
+    "current_status": "PENDING_EMPIRICAL_TEST",
+    "dependencies": [],
+    "prerequisite_unresolved": false,
+    "affected_surfaces": [
+      "claims-registry",
+      "foundation"
+    ],
+    "evidence_needs": [
+      "Define operational variables, intervention or identification assumptions, dataset provenance, baselines and failure criteria.",
+      "Document independent replication before any replication claim."
+    ],
+    "stop_conditions": [],
+    "claim_ceiling": "Quarantined; not an established claim.",
+    "authority": "REPO_OWNER",
+    "class": "GOVERNANCE_OR_PROPAGATION_DEFECT",
+    "is_meta": true,
+    "missing_fields": [],
+    "factor_inputs": {
+      "harm_if_wrong": 0.4,
+      "dependency_centrality": 0.4,
+      "falsifiability": 0.5,
+      "data_availability": 0.4,
+      "expected_information_gain": 0.4,
+      "evidence_cost": 0.7,
+      "risk_inverted": 0.6,
+      "maturity_gap": 0.6,
+      "owner_relevance": 0.5,
+      "duplication_inverted": 0.7,
+      "substantive_score": 0.5
+    },
+    "factor_vector": {
+      "consequence_of_being_wrong": 0.4,
+      "dependency_centrality": 0.4,
+      "falsifiability": 0.5,
+      "data_oracle_availability": 0.4,
+      "expected_information_gain": 0.4,
+      "effort_evidence_cost": 0.3,
+      "reversibility_risk": 0.6,
+      "maturity_gap": 0.6,
+      "owner_relevance": 0.5,
+      "duplication_prior_failure": 0.7,
+      "substantive_vs_meta": 0.2
+    },
+    "aggregate_score": 42.8,
+    "blocked_reason": null
+  },
+  {
+    "canonical_id": "CLAIM-BC-20260709-018",
+    "source": "data/foundation/nonfunction-claims/unresolved-quarantine.jsonl",
+    "title": "nonfunction-claim CLAIM-BC-20260709-018",
+    "provenance": {
+      "source_file": "data/foundation/nonfunction-claims/unresolved-quarantine.jsonl",
+      "canonical_id": "CLAIM-BC-20260709-018",
+      "resume_key": "task100:CLAIM-BC-20260709-018"
+    },
+    "current_status": "PENDING_EMPIRICAL_TEST",
+    "dependencies": [],
+    "prerequisite_unresolved": false,
+    "affected_surfaces": [
+      "claims-registry",
+      "foundation"
+    ],
+    "evidence_needs": [
+      "Define operational variables, intervention or identification assumptions, dataset provenance, baselines and failure criteria.",
+      "Document independent replication before any replication claim."
+    ],
+    "stop_conditions": [],
+    "claim_ceiling": "Quarantined; not an established claim.",
+    "authority": "REPO_OWNER",
+    "class": "GOVERNANCE_OR_PROPAGATION_DEFECT",
+    "is_meta": true,
+    "missing_fields": [],
+    "factor_inputs": {
+      "harm_if_wrong": 0.4,
+      "dependency_centrality": 0.4,
+      "falsifiability": 0.5,
+      "data_availability": 0.4,
+      "expected_information_gain": 0.4,
+      "evidence_cost": 0.7,
+      "risk_inverted": 0.6,
+      "maturity_gap": 0.6,
+      "owner_relevance": 0.5,
+      "duplication_inverted": 0.7,
+      "substantive_score": 0.5
+    },
+    "factor_vector": {
+      "consequence_of_being_wrong": 0.4,
+      "dependency_centrality": 0.4,
+      "falsifiability": 0.5,
+      "data_oracle_availability": 0.4,
+      "expected_information_gain": 0.4,
+      "effort_evidence_cost": 0.3,
+      "reversibility_risk": 0.6,
+      "maturity_gap": 0.6,
+      "owner_relevance": 0.5,
+      "duplication_prior_failure": 0.7,
+      "substantive_vs_meta": 0.2
+    },
+    "aggregate_score": 42.8,
+    "blocked_reason": null
+  },
+  {
+    "canonical_id": "CLAIM-BC-20260709-019",
+    "source": "data/foundation/nonfunction-claims/unresolved-quarantine.jsonl",
+    "title": "nonfunction-claim CLAIM-BC-20260709-019",
+    "provenance": {
+      "source_file": "data/foundation/nonfunction-claims/unresolved-quarantine.jsonl",
+      "canonical_id": "CLAIM-BC-20260709-019",
+      "resume_key": "task100:CLAIM-BC-20260709-019"
+    },
+    "current_status": "PENDING_PROOF",
+    "dependencies": [],
+    "prerequisite_unresolved": false,
+    "affected_surfaces": [
+      "claims-registry",
+      "foundation"
+    ],
+    "evidence_needs": [],
+    "stop_conditions": [],
+    "claim_ceiling": "Quarantined; not an established claim.",
+    "authority": "REPO_OWNER",
+    "class": "GOVERNANCE_OR_PROPAGATION_DEFECT",
+    "is_meta": true,
+    "missing_fields": [],
+    "factor_inputs": {
+      "harm_if_wrong": 0.4,
+      "dependency_centrality": 0.4,
+      "falsifiability": 0.5,
+      "data_availability": 0.4,
+      "expected_information_gain": 0.4,
+      "evidence_cost": 0.7,
+      "risk_inverted": 0.6,
+      "maturity_gap": 0.6,
+      "owner_relevance": 0.5,
+      "duplication_inverted": 0.7,
+      "substantive_score": 0.5
+    },
+    "factor_vector": {
+      "consequence_of_being_wrong": 0.4,
+      "dependency_centrality": 0.4,
+      "falsifiability": 0.5,
+      "data_oracle_availability": 0.4,
+      "expected_information_gain": 0.4,
+      "effort_evidence_cost": 0.3,
+      "reversibility_risk": 0.6,
+      "maturity_gap": 0.6,
+      "owner_relevance": 0.5,
+      "duplication_prior_failure": 0.7,
+      "substantive_vs_meta": 0.2
+    },
+    "aggregate_score": 42.8,
+    "blocked_reason": null
+  },
+  {
+    "canonical_id": "CLAIM-BC-20260709-022",
+    "source": "data/foundation/nonfunction-claims/unresolved-quarantine.jsonl",
+    "title": "nonfunction-claim CLAIM-BC-20260709-022",
+    "provenance": {
+      "source_file": "data/foundation/nonfunction-claims/unresolved-quarantine.jsonl",
+      "canonical_id": "CLAIM-BC-20260709-022",
+      "resume_key": "task100:CLAIM-BC-20260709-022"
+    },
+    "current_status": "PENDING_EMPIRICAL_TEST",
+    "dependencies": [],
+    "prerequisite_unresolved": false,
+    "affected_surfaces": [
+      "claims-registry",
+      "foundation"
+    ],
+    "evidence_needs": [
+      "Define operational variables, intervention or identification assumptions, dataset provenance, baselines and failure criteria.",
+      "Document independent replication before any replication claim."
+    ],
+    "stop_conditions": [],
+    "claim_ceiling": "Quarantined; not an established claim.",
+    "authority": "REPO_OWNER",
+    "class": "GOVERNANCE_OR_PROPAGATION_DEFECT",
+    "is_meta": true,
+    "missing_fields": [],
+    "factor_inputs": {
+      "harm_if_wrong": 0.4,
+      "dependency_centrality": 0.4,
+      "falsifiability": 0.5,
+      "data_availability": 0.4,
+      "expected_information_gain": 0.4,
+      "evidence_cost": 0.7,
+      "risk_inverted": 0.6,
+      "maturity_gap": 0.6,
+      "owner_relevance": 0.5,
+      "duplication_inverted": 0.7,
+      "substantive_score": 0.5
+    },
+    "factor_vector": {
+      "consequence_of_being_wrong": 0.4,
+      "dependency_centrality": 0.4,
+      "falsifiability": 0.5,
+      "data_oracle_availability": 0.4,
+      "expected_information_gain": 0.4,
+      "effort_evidence_cost": 0.3,
+      "reversibility_risk": 0.6,
+      "maturity_gap": 0.6,
+      "owner_relevance": 0.5,
+      "duplication_prior_failure": 0.7,
+      "substantive_vs_meta": 0.2
+    },
+    "aggregate_score": 42.8,
+    "blocked_reason": null
+  },
+  {
+    "canonical_id": "CLAIM-D107",
+    "source": "data/foundation/nonfunction-claims/unresolved-quarantine.jsonl",
+    "title": "nonfunction-claim CLAIM-D107",
+    "provenance": {
+      "source_file": "data/foundation/nonfunction-claims/unresolved-quarantine.jsonl",
+      "canonical_id": "CLAIM-D107",
+      "resume_key": "task100:CLAIM-D107"
+    },
+    "current_status": "PENDING_PROOF",
+    "dependencies": [],
+    "prerequisite_unresolved": false,
+    "affected_surfaces": [
+      "claims-registry",
+      "foundation"
+    ],
+    "evidence_needs": [
+      "Define the operational mapping from variables to external objects before making a reality claim.",
+      "Provide a falsifiable protocol, baseline, data provenance and independent replication appropriate to the claimed domain."
+    ],
+    "stop_conditions": [],
+    "claim_ceiling": "Quarantined; not an established claim.",
+    "authority": "REPO_OWNER",
+    "class": "GOVERNANCE_OR_PROPAGATION_DEFECT",
+    "is_meta": true,
+    "missing_fields": [],
+    "factor_inputs": {
+      "harm_if_wrong": 0.4,
+      "dependency_centrality": 0.4,
+      "falsifiability": 0.5,
+      "data_availability": 0.4,
+      "expected_information_gain": 0.4,
+      "evidence_cost": 0.7,
+      "risk_inverted": 0.6,
+      "maturity_gap": 0.6,
+      "owner_relevance": 0.5,
+      "duplication_inverted": 0.7,
+      "substantive_score": 0.5
+    },
+    "factor_vector": {
+      "consequence_of_being_wrong": 0.4,
+      "dependency_centrality": 0.4,
+      "falsifiability": 0.5,
+      "data_oracle_availability": 0.4,
+      "expected_information_gain": 0.4,
+      "effort_evidence_cost": 0.3,
+      "reversibility_risk": 0.6,
+      "maturity_gap": 0.6,
+      "owner_relevance": 0.5,
+      "duplication_prior_failure": 0.7,
+      "substantive_vs_meta": 0.2
+    },
+    "aggregate_score": 42.8,
+    "blocked_reason": null
+  },
+  {
+    "canonical_id": "CLAIM-D11",
+    "source": "data/foundation/nonfunction-claims/unresolved-quarantine.jsonl",
+    "title": "nonfunction-claim CLAIM-D11",
+    "provenance": {
+      "source_file": "data/foundation/nonfunction-claims/unresolved-quarantine.jsonl",
+      "canonical_id": "CLAIM-D11",
+      "resume_key": "task100:CLAIM-D11"
+    },
+    "current_status": "PENDING_PROOF",
+    "dependencies": [],
+    "prerequisite_unresolved": false,
+    "affected_surfaces": [
+      "claims-registry",
+      "foundation"
+    ],
+    "evidence_needs": [
+      "Define the operational mapping from variables to external objects before making a reality claim.",
+      "Provide a falsifiable protocol, baseline, data provenance and independent replication appropriate to the claimed domain."
+    ],
+    "stop_conditions": [],
+    "claim_ceiling": "Quarantined; not an established claim.",
+    "authority": "REPO_OWNER",
+    "class": "GOVERNANCE_OR_PROPAGATION_DEFECT",
+    "is_meta": true,
+    "missing_fields": [],
+    "factor_inputs": {
+      "harm_if_wrong": 0.4,
+      "dependency_centrality": 0.4,
+      "falsifiability": 0.5,
+      "data_availability": 0.4,
+      "expected_information_gain": 0.4,
+      "evidence_cost": 0.7,
+      "risk_inverted": 0.6,
+      "maturity_gap": 0.6,
+      "owner_relevance": 0.5,
+      "duplication_inverted": 0.7,
+      "substantive_score": 0.5
+    },
+    "factor_vector": {
+      "consequence_of_being_wrong": 0.4,
+      "dependency_centrality": 0.4,
+      "falsifiability": 0.5,
+      "data_oracle_availability": 0.4,
+      "expected_information_gain": 0.4,
+      "effort_evidence_cost": 0.3,
+      "reversibility_risk": 0.6,
+      "maturity_gap": 0.6,
+      "owner_relevance": 0.5,
+      "duplication_prior_failure": 0.7,
+      "substantive_vs_meta": 0.2
+    },
+    "aggregate_score": 42.8,
+    "blocked_reason": null
+  },
+  {
+    "canonical_id": "CF-apple_gravity_failure",
+    "source": "case_failures/examples/apple_gravity_failure.md",
+    "title": "牛顿苹果故事的误读与重构",
+    "provenance": {
+      "source_file": "case_failures/examples/apple_gravity_failure.md",
+      "canonical_id": "CF-apple_gravity_failure"
+    },
+    "current_status": "KNOWN_DEFECT_CASE",
+    "dependencies": [],
+    "prerequisite_unresolved": false,
+    "affected_surfaces": [
+      "function-os",
+      "case-library"
+    ],
+    "evidence_needs": [
+      "regression guard",
+      "bounded-domain test"
+    ],
+    "stop_conditions": [],
+    "claim_ceiling": "Documented failure mode; not a claim of system correctness.",
+    "authority": "REPO_OWNER",
+    "class": "IMPLEMENTATION_DEFECT",
+    "is_meta": false,
+    "missing_fields": [],
+    "factor_inputs": {
+      "harm_if_wrong": 0.7,
+      "dependency_centrality": 0.5,
+      "falsifiability": 0.8,
+      "data_availability": 0.8,
+      "expected_information_gain": 0.6,
+      "evidence_cost": 0.4,
+      "risk_inverted": 0.8,
+      "maturity_gap": 0.5,
+      "owner_relevance": 0.6,
+      "duplication_inverted": 0.6,
+      "substantive_score": 0.85
+    },
+    "factor_vector": {
+      "consequence_of_being_wrong": 0.7,
+      "dependency_centrality": 0.5,
+      "falsifiability": 0.8,
+      "data_oracle_availability": 0.8,
+      "expected_information_gain": 0.6,
+      "effort_evidence_cost": 0.6,
+      "reversibility_risk": 0.8,
+      "maturity_gap": 0.5,
+      "owner_relevance": 0.6,
+      "duplication_prior_failure": 0.6,
+      "substantive_vs_meta": 0.85
+    },
+    "aggregate_score": 67.9,
+    "blocked_reason": null
+  },
+  {
+    "canonical_id": "CF-cross_domain_synergy_risk",
+    "source": "case_failures/examples/cross_domain_synergy_risk.md",
+    "title": "跨领域协同不一定带来正面效应",
+    "provenance": {
+      "source_file": "case_failures/examples/cross_domain_synergy_risk.md",
+      "canonical_id": "CF-cross_domain_synergy_risk"
+    },
+    "current_status": "KNOWN_DEFECT_CASE",
+    "dependencies": [],
+    "prerequisite_unresolved": false,
+    "affected_surfaces": [
+      "function-os",
+      "case-library"
+    ],
+    "evidence_needs": [
+      "regression guard",
+      "bounded-domain test"
+    ],
+    "stop_conditions": [],
+    "claim_ceiling": "Documented failure mode; not a claim of system correctness.",
+    "authority": "REPO_OWNER",
+    "class": "IMPLEMENTATION_DEFECT",
+    "is_meta": false,
+    "missing_fields": [],
+    "factor_inputs": {
+      "harm_if_wrong": 0.7,
+      "dependency_centrality": 0.5,
+      "falsifiability": 0.8,
+      "data_availability": 0.8,
+      "expected_information_gain": 0.6,
+      "evidence_cost": 0.4,
+      "risk_inverted": 0.8,
+      "maturity_gap": 0.5,
+      "owner_relevance": 0.6,
+      "duplication_inverted": 0.6,
+      "substantive_score": 0.85
+    },
+    "factor_vector": {
+      "consequence_of_being_wrong": 0.7,
+      "dependency_centrality": 0.5,
+      "falsifiability": 0.8,
+      "data_oracle_availability": 0.8,
+      "expected_information_gain": 0.6,
+      "effort_evidence_cost": 0.6,
+      "reversibility_risk": 0.8,
+      "maturity_gap": 0.5,
+      "owner_relevance": 0.6,
+      "duplication_prior_failure": 0.6,
+      "substantive_vs_meta": 0.85
+    },
+    "aggregate_score": 67.9,
+    "blocked_reason": null
+  },
+  {
+    "canonical_id": "CF-technology_economic_growth_failure",
+    "source": "case_failures/examples/technology_economic_growth_failure.md",
+    "title": "技术创新一定带来经济增长吗？",
+    "provenance": {
+      "source_file": "case_failures/examples/technology_economic_growth_failure.md",
+      "canonical_id": "CF-technology_economic_growth_failure"
+    },
+    "current_status": "KNOWN_DEFECT_CASE",
+    "dependencies": [],
+    "prerequisite_unresolved": false,
+    "affected_surfaces": [
+      "function-os",
+      "case-library"
+    ],
+    "evidence_needs": [
+      "regression guard",
+      "bounded-domain test"
+    ],
+    "stop_conditions": [],
+    "claim_ceiling": "Documented failure mode; not a claim of system correctness.",
+    "authority": "REPO_OWNER",
+    "class": "IMPLEMENTATION_DEFECT",
+    "is_meta": false,
+    "missing_fields": [],
+    "factor_inputs": {
+      "harm_if_wrong": 0.7,
+      "dependency_centrality": 0.5,
+      "falsifiability": 0.8,
+      "data_availability": 0.8,
+      "expected_information_gain": 0.6,
+      "evidence_cost": 0.4,
+      "risk_inverted": 0.8,
+      "maturity_gap": 0.5,
+      "owner_relevance": 0.6,
+      "duplication_inverted": 0.6,
+      "substantive_score": 0.85
+    },
+    "factor_vector": {
+      "consequence_of_being_wrong": 0.7,
+      "dependency_centrality": 0.5,
+      "falsifiability": 0.8,
+      "data_oracle_availability": 0.8,
+      "expected_information_gain": 0.6,
+      "effort_evidence_cost": 0.6,
+      "reversibility_risk": 0.8,
+      "maturity_gap": 0.5,
+      "owner_relevance": 0.6,
+      "duplication_prior_failure": 0.6,
+      "substantive_vs_meta": 0.85
+    },
+    "aggregate_score": 67.9,
+    "blocked_reason": null
+  }
+]
