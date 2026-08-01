@@ -37,6 +37,7 @@ ALLOWED_PATTERNS = [
     r"^schemas/operations/lifecycle-event\.schema\.json$",
     r"^tests/test_lifecycle_events\.py$",
     r"^tests/test_terminalization_allowlist\.py$",
+    r"^tests/test_terminal_tag_recovery\.py$",
     r"^tests/fixtures/lifecycle/",
     r"^data/operations/terminal-evidence-core\.json$",
     r"^docs/operations/lifecycle-readme\.md$",

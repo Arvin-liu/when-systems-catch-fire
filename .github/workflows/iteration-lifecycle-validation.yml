@@ -39,7 +39,7 @@ jobs:
         run: python3 tools/foundation/validate_repository_path_classification.py --check
 
       - name: Lifecycle schema + resolver tests (22 negative fixtures + positives)
-        run: python3 -m unittest tests.test_lifecycle_events tests.test_terminalization_allowlist -v
+        run: python3 -m unittest tests.test_lifecycle_events tests.test_terminalization_allowlist tests.test_terminal_tag_recovery -v
 
       - name: Lifecycle event schema validation
         run: python3 -c "import json,sys; json.load(open('schemas/operations/lifecycle-event.schema.json')); print('SCHEMA_OK')"

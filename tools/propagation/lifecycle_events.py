@@ -56,6 +56,9 @@ VALID_EVENT_TYPES = {
 }
 
 TERMINAL_TAG_RE = re.compile(r"^ignition/iterations/(\d+)/terminal-r1$")
+RECOVERY_TAG_RE = re.compile(
+    r"^ignition/iterations/(\d+)/terminal-r1-recovery-([1-9]\d*)$"
+)
 
 
 # ---------------------------------------------------------------------------
@@ -124,6 +127,19 @@ def validate_event_schema(event: Dict) -> List[str]:
         cmc = event.get("content_merge_commit")
         if not isinstance(cmc, str) or cmc in ("", "null", "<placeholder>"):
             problems.append(f"task {tn}: TERMINALIZATION_PROJECTION requires a real content_merge_commit")
+        tag_name = event.get("terminal_tag_name")
+        if RECOVERY_TAG_RE.fullmatch(tag_name or ""):
+            for field in (
+                "recovery_index",
+                "recovery_of_tag",
+                "recovery_of_tag_object_sha",
+                "recovery_of_tag_target",
+                "recovery_reason",
+                "recovery_authorization_control_commit",
+            ):
+                value = event.get(field)
+                if value in (None, "", "null"):
+                    problems.append(f"task {tn}: recovery projection requires {field}")
     return problems
 
 
@@ -183,6 +199,16 @@ def tag_message(tag_name: str) -> Optional[str]:
     return _git("tag", "-l", "--format=%(contents)", tag_name)
 
 
+def recovery_tag_names(task_number: int) -> List[str]:
+    """List governed recovery tags for a task in deterministic order."""
+    raw = _git("tag", "-l", f"ignition/iterations/{task_number}/terminal-r1-recovery-*")
+    if not raw:
+        return []
+    return sorted(
+        name for name in raw.splitlines() if RECOVERY_TAG_RE.fullmatch(name)
+    )
+
+
 # ---------------------------------------------------------------------------
 # Terminal tag verification against Git (fail-closed)
 # ---------------------------------------------------------------------------
@@ -199,8 +225,46 @@ def verify_terminal_tag(event: Dict, main_ref: str = "origin/main") -> List[str]
     if not tag_name:
         problems.append(f"task {tn}: terminal tag name missing")
         return problems
-    if not TERMINAL_TAG_RE.match(tag_name or ""):
-        problems.append(f"task {tn}: terminal tag name {tag_name!r} does not match ignition/iterations/<n>/terminal-r1")
+    is_recovery = bool(RECOVERY_TAG_RE.fullmatch(tag_name or ""))
+    if not TERMINAL_TAG_RE.match(tag_name or "") and not is_recovery:
+        problems.append(
+            f"task {tn}: terminal tag name {tag_name!r} does not match "
+            "ignition/iterations/<n>/terminal-r1 or the governed recovery form"
+        )
+        return problems
+
+    if is_recovery:
+        # Imported lazily to avoid the tag_validator -> lifecycle_events import
+        # cycle while keeping one authoritative recovery validator.
+        import tag_validator as tv
+
+        core_path = os.path.join(
+            REPO, "data", "operations", "iterations", str(tn),
+            "TERMINAL_EVIDENCE_CORE.json",
+        )
+        if not os.path.exists(core_path):
+            problems.append(f"task {tn}: recovery core file missing: {core_path}")
+            core_bytes = None
+        else:
+            with open(core_path, "rb") as fh:
+                core_bytes = fh.read()
+        problems += tv.validate_recovery_tag(
+            tag_name,
+            expected_task_number=tn,
+            expected_task_id=event.get("task_id", ""),
+            expected_target=event.get("terminal_tag_target", ""),
+            expected_core_sha256=event.get("core_receipt_sha256", ""),
+            expected_attestation_mode=event.get("attestation_mode", ""),
+            recovery_of_tag=event.get("recovery_of_tag", ""),
+            recovery_of_tag_object_sha=event.get("recovery_of_tag_object_sha", ""),
+            recovery_of_tag_target=event.get("recovery_of_tag_target", ""),
+            recovery_reason=event.get("recovery_reason", ""),
+            recovery_authorization_control_commit=event.get(
+                "recovery_authorization_control_commit", ""
+            ),
+            expected_recovery_index=event.get("recovery_index", 1),
+            core_evidence_bytes=core_bytes,
+        )
         return problems
     if not ref_exists(f"refs/tags/{tag_name}"):
         problems.append(f"task {tn}: terminal tag {tag_name} not found in repo")
@@ -243,6 +307,7 @@ def resolve_task(
     task_events = [e for e in events if e.get("task_number") == task_number]
     errors: List[str] = []
     sources: List[str] = []
+    tag_audit: Dict[str, Dict] = {}
 
     if not task_events:
         return {
@@ -301,6 +366,30 @@ def resolve_task(
                     errors.append("terminal tag points to a non-terminalization commit (not descendant of content merge)")
         if proj.get("terminal_tag_name") and git_available:
             errors += verify_terminal_tag(proj, main_ref)
+            tag_name = proj.get("terminal_tag_name")
+            if RECOVERY_TAG_RE.fullmatch(tag_name or ""):
+                original_name = proj.get("recovery_of_tag")
+                original_obj = annotated_tag_object_sha(original_name) if original_name else None
+                original_target = _git("rev-parse", f"{original_name}^{{}}") if original_name else None
+                recovery_obj = annotated_tag_object_sha(tag_name)
+                recovery_target = _git("rev-parse", f"{tag_name}^{{}}")
+                tag_audit = {
+                    "original": {
+                        "name": original_name,
+                        "status": "INVALID_TERMINAL_ATTESTATION_PRESERVED",
+                        "object_sha": original_obj,
+                        "target": original_target,
+                    },
+                    "selected_recovery": {
+                        "name": tag_name,
+                        "status": (
+                            "VALID_RECOVERY_TERMINAL_ATTESTATION"
+                            if not errors else "INVALID_RECOVERY_TERMINAL_ATTESTATION"
+                        ),
+                        "object_sha": recovery_obj,
+                        "target": recovery_target,
+                    },
+                }
 
     resolved = "READY_FOR_CONTENT_MERGE"
     if candidate.get("formal_content_pr_number") or candidate.get("exact_reviewed_content_head"):
@@ -326,6 +415,7 @@ def resolve_task(
         "resolved_state": resolved,
         "errors": errors,
         "sources": [e.get("event_type") for e in task_events],
+        **({"tag_audit": tag_audit} if tag_audit else {}),
     }
 
 
@@ -345,7 +435,7 @@ def derive_current_truth(events: List[Dict], main_ref: str = "origin/main") -> D
     terminal = [tn for tn, r in resolved.items() if r["resolved_state"] == "TERMINAL_SUCCESS"]
     non_terminal = [tn for tn, r in resolved.items() if r["resolved_state"] != "TERMINAL_SUCCESS"]
     latest_terminal = max(terminal) if terminal else None
-    return {
+    view = {
         "schema_version": "1.0.0",
         "derived_from": "lifecycle-events.jsonl + annotated terminal tags",
         "terminal_tasks": terminal,
@@ -354,6 +444,10 @@ def derive_current_truth(events: List[Dict], main_ref: str = "origin/main") -> D
         "resolved": {str(k): v["resolved_state"] for k, v in resolved.items()},
         "errors": {str(k): v["errors"] for k, v in resolved.items() if v["errors"]},
     }
+    audits = {str(k): v["tag_audit"] for k, v in resolved.items() if v.get("tag_audit")}
+    if audits:
+        view["tag_audit"] = audits
+    return view
 
 
 def main() -> int:
