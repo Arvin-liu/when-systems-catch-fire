@@ -58,6 +58,18 @@
 - 原始与修复判定保持区分，不合并为单一结论。
 - 任务 104 的编辑产出未改动系统图三个受治理源与生成器，故首页系统图对其无影响（NO_MAP_IMPACT）。
 
+## 任务 110（完成状态修复与 OpenAlex 独立复制）
+
+任务 109 原始推荐 `C-01` 被保留为历史缺陷；治理身份确认 `C-01` 已由任务 103 完成，
+`C-04` 已由任务 105 完成，二者从 active queue 排除。`C-03` 作为独立 OpenAlex oracle
+试点执行：117 条记录全部获得 HTTP 200，主分母 116，结果为 101
+`SUPPORTED_WITHIN_SCOPE`、8 `PARTIALLY_SUPPORTED_WITH_IDENTIFIED_MISMATCHES`、7
+`NULL_OR_INCONCLUSIVE`、0 contradicted、0 invalid。
+
+这只是跨源书目元数据一致性结果；null/歧义被保留，不能推出论文内容正确、科学真理、
+Pointfire/MCF/PSD/ARN 正确或任何成熟度提升。完整的 preregistration、population、原始
+响应哈希、adjudication、Evidence Program 投影和生命周期证据位于 task-110 机器记录。
+
 ## 不能从这些结果推出
 
 - 不能推出点火已经成为被同行评审或实验复现的统一科学理论。

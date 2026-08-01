@@ -52,3 +52,21 @@ The score is a prioritization aid, not an authorization. Human reasoning decides
 The portfolio is reproducible: re-running the scoring on the same corpus yields the
 same ranking. The primary pilot is small enough to finish in this task yet meaningful
 enough to move an E rating / claim wording / quarantine status (§4).
+
+## Task 110 state overlay
+
+The table above is retained as the immutable task-103/task-109 historical portfolio;
+its scores and selection labels are not rewritten after seeing task-110 results.
+The governed state overlay in `task-110-portfolio-state.json` reconciles those labels
+against authoritative lifecycle/evidence records:
+
+- `C-01` → `COMPLETED_SUPPORTED` (task 103), excluded from active scheduling.
+- `C-04` → `COMPLETED_SUPPORTED` within its bounded domain (task 105), excluded from
+  active scheduling.
+- `C-03` → `COMPLETED_PARTIAL` (task 110 OpenAlex metadata replication), retained in
+  history and not silently rescheduled.
+- Corrected active queue: `CF-apple_gravity_failure`, followed by reserves
+  `CF-cross_domain_synergy_risk` and `CF-technology_economic_growth_failure`.
+
+This overlay is a lifecycle projection, not a replacement portfolio and not an
+authorization to create task 111.

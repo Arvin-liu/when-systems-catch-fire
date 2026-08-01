@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0.0",
+  "task_number": 110,
+  "authority_rule": "Only governed identifiers and explicit lifecycle/evidence relations establish completion; prose similarity is advisory only.",
+  "nodes": [
+    {"kind": "candidate", "id": "C-01", "claim_id": "SRC-REGISTRY-104-METADATA", "lifecycle_state": "COMPLETED_SUPPORTED"},
+    {"kind": "candidate", "id": "C-04", "claim_id": "FUNCTION-OS-V02-CORRECTNESS", "lifecycle_state": "COMPLETED_SUPPORTED"},
+    {"kind": "candidate", "id": "C-03", "claim_id": "DOI-OPENALEX-CROSS-CHECK", "lifecycle_state": "COMPLETED_PARTIAL"},
+    {"kind": "task", "id": "103", "lifecycle_state": "TERMINAL_SUCCESS"},
+    {"kind": "task", "id": "105", "lifecycle_state": "TERMINAL_SUCCESS"},
+    {"kind": "task", "id": "110", "lifecycle_state": "CONTENT_MERGED_AWAITING_TERMINALIZATION"},
+    {"kind": "run", "id": "IGNITION-EVIDENCE-PILOT-R1-CROSSREF-DOI-VERIFICATION-RUN-1", "outcome": "SUPPORTED_WITHIN_SCOPE"},
+    {"kind": "run", "id": "IGNITION-EVIDENCE-PILOT-R1-OPENALEX-DOI-REPLICATION-20260801", "outcome": "PARTIALLY_SUPPORTED"}
+  ],
+  "edges": [
+    {"from": "C-01", "relation": "claims_completed_by", "to": "103", "claim_id": "SRC-REGISTRY-104-METADATA"},
+    {"from": "103", "relation": "has_authoritative_run", "to": "IGNITION-EVIDENCE-PILOT-R1-CROSSREF-DOI-VERIFICATION-RUN-1"},
+    {"from": "C-04", "relation": "claims_completed_by", "to": "105", "claim_id": "FUNCTION-OS-V02-CORRECTNESS"},
+    {"from": "C-03", "relation": "executed_by", "to": "110", "claim_id": "DOI-OPENALEX-CROSS-CHECK"},
+    {"from": "110", "relation": "has_authoritative_run", "to": "IGNITION-EVIDENCE-PILOT-R1-OPENALEX-DOI-REPLICATION-20260801"},
+    {"from": "C-03", "relation": "independent_oracle_of", "to": "C-01", "note": "OpenAlex is new cross-source metadata evidence; it is not a rerun of the Crossref acquisition."}
+  ],
+  "invalid_links_rejected": [
+    "candidate-to-result text similarity without candidate_id/claim_id relation",
+    "generated planner output used as completion authority",
+    "merged PR without required terminal evidence treated as complete"
+  ]
+}

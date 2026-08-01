@@ -140,3 +140,11 @@
 - [版本历史](./CHANGELOG.md)
 
 重要项目内容不使用默认折叠容器隐藏；README 两次点击以内可以到达当前结果、最新变化、主题地图、资产卡、分层阅读、搜索、演化/撤回、覆盖审计、纠正、开放问题、裁决总结、研究文章和机器证据入口。
+
+### Task 110：完成状态与独立元数据复制
+
+任务 110 修复了“已完成工作再次进入未来队列”的生命周期缺口：保留 task-109 原始
+推荐，依据治理身份关闭 C-01/C-04，并执行 C-03 的 OpenAlex 独立书目元数据复制。
+首轮 117 条请求全部返回 HTTP 200；116 条主分母中 101 supported、8 partial、7
+null/inconclusive、0 contradicted、0 invalid。结果上限仅为跨源 metadata consistency，
+不代表论文内容、科学真理、Pointfire/MCF/PSD/ARN 或成熟度提升。见 [任务 110 结果](./evidence-program/runs/IGNITION-EVIDENCE-PILOT-R1-OPENALEX-DOI-REPLICATION-20260801/RESULT.md)、[完成状态记录](./data/operations/iterations/110/completion-reconciliation.json) 与[方法文章](./docs/editorial/articles/009-system-completion-state-and-independent-replication.md)。
