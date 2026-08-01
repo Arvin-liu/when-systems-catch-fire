@@ -17,6 +17,7 @@ from __future__ import annotations
 
 import hashlib
 import re
+import sys
 from typing import Dict, List, Optional
 
 import lifecycle_events as le

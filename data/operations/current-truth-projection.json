@@ -10,7 +10,7 @@
     "006": "REVIEWED_CURRENT",
     "007": "REVIEWED_CURRENT"
   },
-  "current_accepted_iteration": 108,
+  "current_accepted_iteration": 110,
   "current_capability_evidence": [
     {
       "ids": [
@@ -26,7 +26,7 @@
       "task": 105
     }
   ],
-  "current_project_status_commit": "ddf64f8b689caf20a69880b3f8bd5f2097916390",
+  "current_project_status_commit": "2fa72751a29f95a1b9d72578cd25eb30f6b0e412",
   "current_project_status_date": "2026-07-31",
   "map_state_and_impact": [
     {
@@ -72,11 +72,19 @@
       "terminal_state": "TERMINAL_SUCCESS"
     },
     {
-      "classification": "folded from event-sourced lifecycle (TERMINAL_SUCCESS); retroactive reconciliation by task 108",
+      "classification": "folded from event-sourced lifecycle (TERMINAL_SUCCESS)",
       "exact_head": "39f30eccbd2c4050bed2b83650e7d823940781ba",
       "merge_commit": "ddf64f8b689caf20a69880b3f8bd5f2097916390",
       "task_id": "IGNITION-TWO-PHASE-ITERATION-TERMINALIZATION-AND-SELF-CLOSING-CURRENT-TRUTH-R1-20260801",
       "task_number": 108,
+      "terminal_state": "TERMINAL_SUCCESS"
+    },
+    {
+      "classification": "folded from event-sourced lifecycle (TERMINAL_SUCCESS)",
+      "exact_head": "56db4f8d40ac95bc5ed4482681d92e5c48d967cc",
+      "merge_commit": "2fa72751a29f95a1b9d72578cd25eb30f6b0e412",
+      "task_id": "IGNITION-PLANNER-COMPLETION-STATE-RECONCILIATION-AND-OPENALEX-INDEPENDENT-REPLICATION-PILOT-R1-20260801",
+      "task_number": 110,
       "terminal_state": "TERMINAL_SUCCESS"
     }
   ],

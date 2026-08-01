@@ -1,17 +1,15 @@
 {
-  "current_accepted_iteration": 108,
+  "current_accepted_iteration": 110,
   "derived_from": "lifecycle-events.jsonl + annotated terminal tags",
   "errors": {},
-  "non_terminal_tasks": [
-    110
-  ],
+  "non_terminal_tasks": [],
   "resolved": {
     "104": "TERMINAL_SUCCESS",
     "105": "TERMINAL_SUCCESS",
     "106": "TERMINAL_SUCCESS",
     "107": "TERMINAL_SUCCESS",
     "108": "TERMINAL_SUCCESS",
-    "110": "CONTENT_MERGED_AWAITING_TERMINALIZATION"
+    "110": "TERMINAL_SUCCESS"
   },
   "schema_version": "1.0.0",
   "task_summary": [
@@ -41,7 +39,7 @@
       "task_number": 108
     },
     {
-      "resolved_state": "CONTENT_MERGED_AWAITING_TERMINALIZATION",
+      "resolved_state": "TERMINAL_SUCCESS",
       "task_id": "IGNITION-PLANNER-COMPLETION-STATE-RECONCILIATION-AND-OPENALEX-INDEPENDENT-REPLICATION-PILOT-R1-20260801",
       "task_number": 110
     }
@@ -51,6 +49,7 @@
     105,
     106,
     107,
-    108
+    108,
+    110
   ]
 }

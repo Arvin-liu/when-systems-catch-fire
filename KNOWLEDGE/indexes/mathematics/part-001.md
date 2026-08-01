@@ -179,11 +179,6 @@
   - 可搜索名称：NFC-295819bf45f85785 / "claim_ceiling": corr\["claim_ceiling"\] if corr else "Automatic discovery only; no mathematical or external truth is conf
   - 来源：`tools/foundation/build_function_asset_census.py`
   - 依赖：—；被引用：—
-- ["classification": "folded from event-sourced lifecycle (TERMINAL_SUCCESS); retroactive reconciliation by task 108",](../../../tools/propagation/current_truth_projection.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-922f8010a981d808 / "classification": "folded from event-sourced lifecycle (TERMINAL_SUCCESS); retroactive reconciliation by task 108",
-  - 来源：`tools/propagation/current_truth_projection.py`
-  - 依赖：—；被引用：—
 - ["classification_basis": {"type": "array", "items": {"enum": \["TITLE_HEURISTIC", "SOURCE_TEXT", "FORMAL_DEFINITION", "PRO](../../../tools/foundation/adjudicate_core.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-47f9fd80a2eafd46 / "classification_basis": {"type": "array", "items": {"enum": \["TITLE_HEURISTIC", "SOURCE_TEXT", "FORMAL_DEFINITION", "PRO
@@ -2503,4 +2498,9 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-CB849C62ED7CA1DC / ## 关联函数 / Related Functions / IMPLICIT-CB849C62ED7CA1DC / IMPLICIT-0026301F130FD562
   - 来源：`统一案例总表/0796-C-0801-抗菌耐药.md`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0794-C-0799-%E7%94%9F%E5%91%BD%E8%B5%B7%E6%BA%90%E4%B8%8E%E8%87%AA%E7%BB%84%E7%BB%87.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-CCE6174152FADCC8 / ## 关联函数 / Related Functions / IMPLICIT-CCE6174152FADCC8 / IMPLICIT-0026301F130FD562
+  - 来源：`统一案例总表/0794-C-0799-生命起源与自组织.md`
   - 依赖：—；被引用：—
