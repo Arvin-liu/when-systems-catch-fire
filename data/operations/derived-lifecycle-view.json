@@ -15,7 +15,7 @@
     "111": "TERMINAL_SUCCESS",
     "112": "TERMINAL_SUCCESS",
     "113": "TERMINAL_SUCCESS",
-    "114": "READY_FOR_CONTENT_MERGE"
+    "114": "CONTENT_MERGED_AWAITING_TERMINALIZATION"
   },
   "schema_version": "1.0.0",
   "tag_audit": {
@@ -81,7 +81,7 @@
       "task_number": 113
     },
     {
-      "resolved_state": "READY_FOR_CONTENT_MERGE",
+      "resolved_state": "CONTENT_MERGED_AWAITING_TERMINALIZATION",
       "task_id": "IGNITION-LANGUAGE-THOUGHT-LOGIC-CROSS-LAYER-PLANE-REPRESENTATIVE-LANGUAGE-PILOT-AND-CURRENT-WORK-REPAIR-R1-20260802",
       "task_number": 114
     }
