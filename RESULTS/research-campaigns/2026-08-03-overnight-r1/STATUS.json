@@ -1,6 +1,6 @@
 {
   "campaign_id": "POINTFIRE-OVERNIGHT-PUBLIC-EVIDENCE-RESEARCH-CAMPAIGN-20260803-R1",
-  "status": "RUNNING",
+  "status": "COMPLETE_AWAITING_GPT_OWNER_ADJUDICATION",
   "control_branch": "relay/parallel/overnight-public-research-20260803-r1",
   "control_tip": "551d1bf51eb8e69f2421ebf78526c323c159c796",
   "formal_repository": "Arvin-liu/when-systems-catch-fire",
@@ -10,6 +10,6 @@
   "deadline": "2026-08-03T10:00:00+08:00",
   "current_round": 8,
   "completed_rounds": 8,
-  "last_pushed_commit": "2c87ff458fe5c1764afc6859354f7aa3a8135e34",
-  "state": "ROUND_COMPLETE_PENDING_PUSH"
+  "last_pushed_commit": "279913c31b33897f179b35176a30f70a4eb90ae4",
+  "state": "COMPLETE_AWAITING_GPT_OWNER_ADJUDICATION"
 }
