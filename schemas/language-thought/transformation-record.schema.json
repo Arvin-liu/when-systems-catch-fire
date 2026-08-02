@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://when-systems-catch-fire.example/schemas/language-thought/transformation-record.schema.json",
+  "title": "Language-Sensitive Transformation Record",
+  "type": "object",
+  "required": ["record_id", "record_kind", "version", "layers", "source_form", "source_language_profile", "normalized_meaning_candidate", "target_form", "target_language_profile", "source_frame", "target_frame", "framing_deltas", "unmapped_residue", "claim_ceiling", "provenance"],
+  "properties": {
+    "record_kind": {"enum": ["production", "fixture"]},
+    "layers": {"type": "array", "minItems": 1, "items": {"enum": ["L0", "L1", "L2", "L3", "L4", "L5", "L6"]}},
+    "source_form": {"type": "object", "required": ["text", "language_tag", "form_status"]},
+    "target_form": {"type": "object", "required": ["text", "language_tag", "form_status"]},
+    "normalized_meaning_candidate": {"type": "object", "required": ["candidate_id", "text", "status"]},
+    "source_frame": {"type": "object"},
+    "target_frame": {"type": "object"},
+    "framing_deltas": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["dimension_id", "delta_type", "source_value", "target_value", "epistemic_relevance", "disposition", "justification"]
+      }
+    },
+    "unmapped_residue": {"type": "array"},
+    "provenance": {"type": "object", "required": ["created_by", "source_locator", "transformation_chain"]}
+  },
+  "additionalProperties": true
+}

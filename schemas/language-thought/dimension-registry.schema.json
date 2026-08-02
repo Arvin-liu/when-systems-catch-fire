@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://when-systems-catch-fire.example/schemas/language-thought/dimension-registry.schema.json",
+  "title": "Finite Language-Thought Dimension Registry",
+  "type": "object",
+  "required": ["schema_version", "basis_version", "status", "claim_ceiling", "dimensions"],
+  "properties": {
+    "schema_version": {"const": "1.0.0"},
+    "dimensions": {
+      "type": "array",
+      "minItems": 12,
+      "items": {
+        "type": "object",
+        "required": ["dimension_id", "label_en", "label_zh", "definition", "evidence_status", "observable_transformations", "pointfire_risks", "authored_examples", "validation_fixture_ids", "counterexamples_and_variation", "evidence_ids"],
+        "properties": {
+          "dimension_id": {"pattern": "^d(0[1-9]|1[0-2])$"},
+          "observable_transformations": {"type": "array", "minItems": 2},
+          "pointfire_risks": {"type": "array", "minItems": 1},
+          "counterexamples_and_variation": {"type": "array", "minItems": 2},
+          "evidence_ids": {"type": "array", "minItems": 1}
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true
+}
