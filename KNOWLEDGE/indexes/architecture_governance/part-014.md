@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [双 088 归并与外部证据层定版报告](../../../reports/external-research/104-dual-088-reconciliation.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-0dfe3d5165dd0cb2 / 双 088 归并与外部证据层定版报告
+  - 来源：`reports/external-research/104-dual-088-reconciliation.md`
+  - 依赖：—；被引用：—
 - [反事实推断（如自然实验、随机对照试验）](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-8f54a73f108447c1 / 反事实推断（如自然实验、随机对照试验）
@@ -2495,9 +2500,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-f756e7f6022e9766 / 理论合理性未验证
   - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [生命共同体价值投影](../../../docs/governance/meta-protocol-reviews/protocols/E1.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-8cafdef611a4113d / 生命共同体价值投影
-  - 来源：`docs/governance/meta-protocol-reviews/protocols/E1.md`
   - 依赖：—；被引用：—

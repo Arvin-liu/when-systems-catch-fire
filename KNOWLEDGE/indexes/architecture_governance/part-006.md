@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [def test_d3_g1_02_shell_string_is_rejected(self):](../../../tests/test_incremental_execution_defensive_rejections.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-FC288D68D77CD14F / def test_d3_g1_02_shell_string_is_rejected(self): / IMPLICIT-FC288D68D77CD14F
+  - 来源：`tests/test_incremental_execution_defensive_rejections.py`
+  - 依赖：—；被引用：—
 - [def test_d3_g1_03_execution_command_identity_mismatch(self):](../../../tests/test_incremental_execution_defensive_rejections.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-44CB4F316525766D / def test_d3_g1_03_execution_command_identity_mismatch(self): / IMPLICIT-44CB4F316525766D
@@ -2498,9 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-D8645553BE7D899C / def test_stateful_orientation_rejects_global_pairwise_false_positive(): / IMPLICIT-D8645553BE7D899C
   - 来源：`tests/test_adaptive_relational_network_validation_contract.py`
-  - 依赖：—；被引用：—
-- [def test_status_mapping_failed(self):](../../../function-os-candidate/v0.2/tests/test_n6_robust.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-57230C8847D7E655 / def test_status_mapping_failed(self): / IMPLICIT-57230C8847D7E655
-  - 来源：`function-os-candidate/v0.2/tests/test_n6_robust.py`
   - 依赖：—；被引用：—

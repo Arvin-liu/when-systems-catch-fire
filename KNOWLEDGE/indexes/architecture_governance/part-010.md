@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [result\["universal_quantifier_gate"\] = "REQUIRES_HUMAN_REVIEW"](../../../tools/foundation/validate_claim_governance.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-b9357662d131eba4 / result\["universal_quantifier_gate"\] = "REQUIRES_HUMAN_REVIEW"
+  - 来源：`tools/foundation/validate_claim_governance.py`
+  - 依赖：—；被引用：—
 - [results = validate(source_pack, coverage_matrix, evidence_cards,](../../../data/external-research/106-105-correction/106-validator.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-61271b82072193b8 / results = validate(source_pack, coverage_matrix, evidence_cards,
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-b996a22882ea43d5 / truth audit
   - 来源：`reports/foundation-architecture/078-truth-audit-20260713.md`
-  - 依赖：—；被引用：—
-- [truth-layer gate: PASS — method remains inside L6 and cannot raise L0-L5 status.](../../../reports/operations/121Q28-embodied-cognitive-leap-writing-method-audit.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-29fdb2fec4c0a052 / truth-layer gate: PASS — method remains inside L6 and cannot raise L0-L5 status.
-  - 来源：`reports/operations/121Q28-embodied-cognitive-leap-writing-method-audit.md`
   - 依赖：—；被引用：—

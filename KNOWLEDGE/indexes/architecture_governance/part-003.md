@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [cards = load_jsonl(f"{BASE}/121c01-max-semantic-evidence-cards.jsonl")](../../../data/external-research/121-fulltext-resolver/121c01/121c01-validator.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-4fac607bc238892b / cards = load_jsonl(f"{BASE}/121c01-max-semantic-evidence-cards.jsonl")
+  - 来源：`data/external-research/121-fulltext-resolver/121c01/121c01-validator.py`
+  - 依赖：—；被引用：—
 - [cards used a shared set of status labels but did not always ground the status in source-specific evidence. Some cards ma](../../../data/external-research/121-fulltext-resolver/121-template-risk-reaudit.json)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-84d33abe0844fad0 / cards used a shared set of status labels but did not always ground the status in source-specific evidence. Some cards ma
@@ -2498,9 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-B346BD9E83AC91EF / def build_card(src: dict, fetch: dict, content: dict, extract: dict) -> dict: / IMPLICIT-B346BD9E83AC91EF
   - 来源：`scripts/external-research/121_generate_evidence_cards.py`
-  - 依赖：—；被引用：—
-- [def build_citation_overlap(nodes, cap=200):](../../../tools/build_corpus_relation_graph.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-6E6F8AFF6A1C8DC3 / def build_citation_overlap(nodes, cap=200): / IMPLICIT-6E6F8AFF6A1C8DC3
-  - 来源：`tools/build_corpus_relation_graph.py`
   - 依赖：—；被引用：—

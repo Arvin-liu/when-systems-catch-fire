@@ -669,6 +669,11 @@
   - 可搜索名称：NFC-abd4f7acf35bd3a0 / "d598_completed": any(r\['id'\]=="D598" and r\['semantic_adjudication_verified'\] for r in reviews),
   - 来源：`tools/foundation/verify_079.py`
   - 依赖：D598；被引用：—
+- ["data/operations/iterations/112/TERMINAL_EVIDENCE_CORE.json",](../../../tools/foundation/build_function_asset_census.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-d57588139a68388c / "data/operations/iterations/112/TERMINAL_EVIDENCE_CORE.json",
+  - 来源：`tools/foundation/build_function_asset_census.py`
+  - 依赖：—；被引用：—
 - ["data_availability", "evidence_cost", "blast_radius"\]:](../../../tools/iteration_planner/planner.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-c98ec3f1bea4b69b / "data_availability", "evidence_cost", "blast_radius"\]:
@@ -2498,9 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-FC9848888997901C / # 099 Function Asset Registry Closure / IMPLICIT-FC9848888997901C
   - 来源：`reports/foundation-architecture/099-function-asset-registry-closure.md`
-  - 依赖：—；被引用：—
-- [# 120 — Function OS Architecture Candidate Report](../../../reports/external-research/120-function-os-architecture-candidate-report.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-4DDF8D51900C7E5E / # 120 — Function OS Architecture Candidate Report / IMPLICIT-4DDF8D51900C7E5E
-  - 来源：`reports/external-research/120-function-os-architecture-candidate-report.md`
   - 依赖：—；被引用：—

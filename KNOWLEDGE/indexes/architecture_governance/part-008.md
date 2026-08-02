@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [f"entry '{entry_id}' (source text tampered or unverified)"](../../../tools/governance/fail_closed_publication_gate.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-469a20ec5b0a7f73 / f"entry '{entry_id}' (source text tampered or unverified)"
+  - 来源：`tools/governance/fail_closed_publication_gate.py`
+  - 依赖：—；被引用：—
 - [f"error should cite provenance_verified: {r}")](../../../tests/test_publication_provenance_attack.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-15883b97f97c01c0 / f"error should cite provenance_verified: {r}")
@@ -2495,9 +2500,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-ab6d8236c7754d90 / link: "统一案例总表/0800-C-0805-平台社会极化.md"
   - 来源：`统一案例总表/0800-C-0805-平台社会极化.md`
-  - 依赖：—；被引用：—
-- [link: "统一案例总表/0801-C-0806-AI 作者性与生成艺术.md"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0801-C-0806-AI%20%E4%BD%9C%E8%80%85%E6%80%A7%E4%B8%8E%E7%94%9F%E6%88%90%E8%89%BA%E6%9C%AF.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-9a5d39ee124de274 / link: "统一案例总表/0801-C-0806-AI 作者性与生成艺术.md"
-  - 来源：`统一案例总表/0801-C-0806-AI 作者性与生成艺术.md`
   - 依赖：—；被引用：—
