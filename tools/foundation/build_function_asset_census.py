@@ -66,6 +66,8 @@ GENERATED_EXACT_PATHS = {
     "data/operations/iterations/112/TERMINAL_EVIDENCE_CORE.json",
     "data/operations/iterations/113/FINAL_STATE.json",
     "data/operations/iterations/113/TERMINAL_EVIDENCE_CORE.json",
+    "data/operations/iterations/114/FINAL_STATE.json",
+    "data/operations/iterations/114/TERMINAL_EVIDENCE_CORE.json",
     "data/operations/propagation/108-impact/system-map-nonimpact-proof.json",
     "docs/operations/lifecycle-readme.md",
     "reports/operations/lifecycle-audit-108.md",

@@ -1,0 +1,150 @@
+{
+  "task_number": 114,
+  "task_id": "IGNITION-LANGUAGE-THOUGHT-LOGIC-CROSS-LAYER-PLANE-REPRESENTATIVE-LANGUAGE-PILOT-AND-CURRENT-WORK-REPAIR-R1-20260802",
+  "control_commit": "adb170f8b3985afc852d96ac1722a2ec443e090c",
+  "success_token": "IGNITION_LANGUAGE_THOUGHT_LOGIC_CROSS_LAYER_PLANE_DIMENSIONAL_BASIS_REPRESENTATIVE_LANGUAGE_PROFILES_POINTFIRE_INTEGRATION_CURRENT_WORKS_REPAIRED_AND_114_TERMINALIZED",
+  "terminal_state": "TERMINAL_SUCCESS",
+  "claim_ceiling": "A bounded language-conditioned thought-organization plane and structured project gate across L0-L6; no strong linguistic determinism, universal language essence, arbitrary-text understanding, literary-quality proof, or truth authority is inferred.",
+  "terminal_tag": "ignition/iterations/114/terminal-r1",
+  "terminal_tag_object_sha": "199a1945a9fb046b4f8edb9f904bcba42113c363",
+  "terminal_tag_target": "61510ed26a1285e1746777c9eacd568cb3038a50",
+  "terminal_tag_message_sha256": "973f714e31d8498b99e068ecea8dff24059e14eba4696cfac76fab026f3822ae",
+  "core_receipt_sha256": "5459b1b4dc46079f26f40cf775f3f2cea1c0cb4a8764a081eed8d7f560264dd5",
+  "predecessor": {
+    "task_number": 113,
+    "terminal_state": "TERMINAL_SUCCESS",
+    "terminal_tag": "ignition/iterations/113/terminal-r1",
+    "terminal_tag_object_sha": "284d8c3a63968065e1c7070d0537118e880f1f51",
+    "terminal_tag_target": "828e1ac5c6c069d34cadc78219b8754e881b893e",
+    "core_receipt_sha256": "83f0de925f68ea5cec3c97e077baff3ac9c8a8667790f23b3a6d9aec4ea1c502",
+    "independently_verified_before_start": true
+  },
+  "content_phase": {
+    "pr_number": 186,
+    "exact_reviewed_head": "75d0f45122fe53a1a28a068e7ddba13fab6a41f5",
+    "ordinary_merge_commit": "fb8d9c48ddf5c9236ae011323578f6965fe51d91",
+    "merged_at": "2026-08-02T17:21:07Z",
+    "ordinary_merge": true,
+    "force_push": false,
+    "checks_success": 6
+  },
+  "terminalization_phase": {
+    "pr_number": 187,
+    "exact_reviewed_head": "552999f34bbf68e2d4a31b1103a36f8a44faebe6",
+    "ordinary_merge_commit": "61510ed26a1285e1746777c9eacd568cb3038a50",
+    "merged_at": "2026-08-02T18:01:19Z",
+    "ordinary_merge": true,
+    "force_push": false,
+    "checks_success": 5
+  },
+  "capability": {
+    "architecture": "ORTHOGONAL_PLANE_ACROSS_L0_L6_NOT_L7",
+    "truth_authority": "NONE",
+    "dimensions": 12,
+    "profiles": {
+      "full": [
+        "zh-hans-modern-written-r1",
+        "en-contemporary-written-r1"
+      ],
+      "bounded_preliminary": [
+        "ja-modern-standard-pilot-r1",
+        "tr-modern-standard-pilot-r1"
+      ]
+    },
+    "evidence_records": 19,
+    "production_transformations": 7,
+    "fixtures": {
+      "total": 26,
+      "true_positive": 12,
+      "true_negative": 13,
+      "false_positive": 0,
+      "false_negative": 0,
+      "unsupported": 1,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "project_audit": {
+      "population_items": 14,
+      "findings": 25
+    },
+    "reviews": {
+      "required_roles": 4,
+      "non_chinese_source_review": true,
+      "dispositions_complete": true,
+      "substantive_rewrite_complete": true
+    }
+  },
+  "publication": {
+    "status": "PUBLISHED_WITH_EXPLICIT_LIMITATIONS_AFTER_ORDINARY_CONTENT_MERGE",
+    "review_state": "FOUR_ROLE_REVIEW_COMPLETE_SUBSTANTIVE_REWRITE_COMPLETE",
+    "shelf": "PUBLICATIONS/README.md",
+    "root_to_shelf_clicks": 1,
+    "root_to_each_current_work_clicks": 2,
+    "method": {
+      "path": "docs/publication/zhiyuan-writing-method.md",
+      "version": "0.5.0",
+      "sha256": "615b049dca357f4c00e3baeb38a3edd649a3bfadfa3a292928ab8d9ed8867e4d"
+    },
+    "works": [
+      {
+        "path": "docs/publication/works/when-an-army-believes-its-own-back.md",
+        "historical_accepted_sha256": "c135acd35a2232f0a6b3f933db482932a9fe5d5add51f870af97901faac90d4b",
+        "current_revision_sha256": "520a4b2043dacbd876b2831c257e62d126378a8e916c4beeb5365867f7f7025d"
+      },
+      {
+        "path": "docs/publication/works/when-an-emperor-manufactures-heaven.md",
+        "historical_accepted_sha256": "8d9fe3752e602041c8effb12f39bb2188c60a74843be4285d9181969e314a2e4",
+        "current_revision_sha256": "d7f9df5cc8d4e1eaf4ffd906856e6e6c363d5bb8a32225f7737a62ce3147e0a5"
+      }
+    ],
+    "source_policy": "TASK_113_THIRD_PARTY_COURSE_TRANSCRIPT_REMAINS_LOCAL_ONLY_NOT_REPUBLISHED",
+    "audit_packet": "data/operations/iterations/114/publication/"
+  },
+  "resolver_verification": {
+    "resolved_114": "TERMINAL_SUCCESS",
+    "errors": {},
+    "terminal_tasks": [104, 105, 106, 107, 108, 110, 111, 112, 113, 114],
+    "non_terminal_tasks": [],
+    "current_accepted_iteration": 114,
+    "tag_validator": "TAG_OK",
+    "tag_is_annotated": true,
+    "tag_target_matches_terminalization_merge": true,
+    "core_hash_matches_tag_and_file": true,
+    "publication_validator": "PASS",
+    "language_thought_validator": "PASS",
+    "lifecycle_events": "PASS"
+  },
+  "fresh_clone_verification": {
+    "full_clone_required": true,
+    "pre_tag_full_clone_verified": true,
+    "pre_tag_clone_path": "/tmp/task114-pretag-fresh.vKLcr4",
+    "pre_tag_commit": "61510ed26a1285e1746777c9eacd568cb3038a50",
+    "pre_tag_resolver": "CONTENT_MERGED_AWAITING_TERMINALIZATION",
+    "tagged_final_evidence_branch_full_clone_required": true,
+    "post_merge_main_full_clone_required": true,
+    "shallow": false,
+    "working_tree_clean": true,
+    "resolver": "TERMINAL_SUCCESS",
+    "current_accepted_iteration": 114,
+    "errors": {},
+    "publication_shelf_reachable": true,
+    "primary_works_reachable": true,
+    "task_115_absent": true,
+    "verification_scope": "pre-tag full clone, tagged final-evidence branch and post-merge main; exact clone receipts are recorded in the 1111 receipt"
+  },
+  "remote_verification": {
+    "content_pr_186_merged_ordinary": true,
+    "terminalization_pr_187_merged_ordinary": true,
+    "terminal_tag_pushed_without_force": true,
+    "terminal_tag_remote_object_verified": true,
+    "final_evidence_branch": "codex/task114-final-evidence-r1-20260802",
+    "no_task_115_created_or_executed": true
+  },
+  "safety_boundary": {
+    "task_113_modified": false,
+    "relay_current_modified": false,
+    "task_114_control_files_modified": false,
+    "prohibited_history_rewrite_used": false,
+    "raw_third_party_source_committed": false
+  }
+}

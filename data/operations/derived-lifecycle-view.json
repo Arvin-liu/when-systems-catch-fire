@@ -1,10 +1,8 @@
 {
-  "current_accepted_iteration": 113,
+  "current_accepted_iteration": 114,
   "derived_from": "lifecycle-events.jsonl + annotated terminal tags",
   "errors": {},
-  "non_terminal_tasks": [
-    114
-  ],
+  "non_terminal_tasks": [],
   "resolved": {
     "104": "TERMINAL_SUCCESS",
     "105": "TERMINAL_SUCCESS",
@@ -15,7 +13,7 @@
     "111": "TERMINAL_SUCCESS",
     "112": "TERMINAL_SUCCESS",
     "113": "TERMINAL_SUCCESS",
-    "114": "CONTENT_MERGED_AWAITING_TERMINALIZATION"
+    "114": "TERMINAL_SUCCESS"
   },
   "schema_version": "1.0.0",
   "tag_audit": {
@@ -81,7 +79,7 @@
       "task_number": 113
     },
     {
-      "resolved_state": "CONTENT_MERGED_AWAITING_TERMINALIZATION",
+      "resolved_state": "TERMINAL_SUCCESS",
       "task_id": "IGNITION-LANGUAGE-THOUGHT-LOGIC-CROSS-LAYER-PLANE-REPRESENTATIVE-LANGUAGE-PILOT-AND-CURRENT-WORK-REPAIR-R1-20260802",
       "task_number": 114
     }
@@ -95,6 +93,7 @@
     110,
     111,
     112,
-    113
+    113,
+    114
   ]
 }
