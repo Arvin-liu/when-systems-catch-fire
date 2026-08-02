@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [def materialize_actor_schema_refs(*, check: bool) -> dict\[str, Any\]:](../../../tools/operations/stage_snapshot_contract.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-A29ED079D3DA3876 / def materialize_actor_schema_refs(*, check: bool) -> dict\[str, Any\]: / IMPLICIT-A29ED079D3DA3876
+  - 来源：`tools/operations/stage_snapshot_contract.py`
+  - 依赖：—；被引用：—
 - [def maturity(obj: dict) -> str:](../../../tools/foundation/build_function_asset_census.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-4842D45B5F512BA8 / def maturity(obj: dict) -> str: / IMPLICIT-4842D45B5F512BA8
@@ -2497,10 +2502,5 @@
 - [def test_d3_g1_01_caller_command_is_ignored(self):](../../../tests/test_incremental_execution_defensive_rejections.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-14C4F80181768439 / def test_d3_g1_01_caller_command_is_ignored(self): / IMPLICIT-14C4F80181768439
-  - 来源：`tests/test_incremental_execution_defensive_rejections.py`
-  - 依赖：—；被引用：—
-- [def test_d3_g1_02_shell_string_is_rejected(self):](../../../tests/test_incremental_execution_defensive_rejections.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-FC288D68D77CD14F / def test_d3_g1_02_shell_string_is_rejected(self): / IMPLICIT-FC288D68D77CD14F
   - 来源：`tests/test_incremental_execution_defensive_rejections.py`
   - 依赖：—；被引用：—

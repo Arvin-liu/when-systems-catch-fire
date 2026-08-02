@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [# 120 — Function OS Architecture Candidate Report](../../../reports/external-research/120-function-os-architecture-candidate-report.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-4DDF8D51900C7E5E / # 120 — Function OS Architecture Candidate Report / IMPLICIT-4DDF8D51900C7E5E
+  - 来源：`reports/external-research/120-function-os-architecture-candidate-report.md`
+  - 依赖：—；被引用：—
 - [# 16. Charter Gate：负担、沉默与反浪漫化](../../../reports/publication/jin-rise-point-fire-analysis.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-9FF37C23DCDFD42D / # 16. Charter Gate：负担、沉默与反浪漫化 / IMPLICIT-9FF37C23DCDFD42D
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-c3cb4ff127a05a47 / capability_evidence.append({
   - 来源：`tools/propagation/current_truth_projection.py`
-  - 依赖：—；被引用：—
-- [cards = load_jsonl(f"{BASE}/121c01-max-semantic-evidence-cards.jsonl")](../../../data/external-research/121-fulltext-resolver/121c01/121c01-validator.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-4fac607bc238892b / cards = load_jsonl(f"{BASE}/121c01-max-semantic-evidence-cards.jsonl")
-  - 来源：`data/external-research/121-fulltext-resolver/121c01/121c01-validator.py`
   - 依赖：—；被引用：—

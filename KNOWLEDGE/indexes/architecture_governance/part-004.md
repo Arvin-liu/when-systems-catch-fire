@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [def build_citation_overlap(nodes, cap=200):](../../../tools/build_corpus_relation_graph.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-6E6F8AFF6A1C8DC3 / def build_citation_overlap(nodes, cap=200): / IMPLICIT-6E6F8AFF6A1C8DC3
+  - 来源：`tools/build_corpus_relation_graph.py`
+  - 依赖：—；被引用：—
 - [def build_delta(config: dict) -> list\[dict\]:](../../../tools/governance/run_self_correction.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-AB14D1051BBDC871 / def build_delta(config: dict) -> list\[dict\]: / IMPLICIT-AB14D1051BBDC871
@@ -2497,10 +2502,5 @@
 - [def materialize(registry: dict\[str, Any\], check: bool) -> None:](../../../tools/operations/stage_snapshot_contract.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-A69E6D646A518FF8 / def materialize(registry: dict\[str, Any\], check: bool) -> None: / IMPLICIT-A69E6D646A518FF8
-  - 来源：`tools/operations/stage_snapshot_contract.py`
-  - 依赖：—；被引用：—
-- [def materialize_actor_schema_refs(*, check: bool) -> dict\[str, Any\]:](../../../tools/operations/stage_snapshot_contract.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-A29ED079D3DA3876 / def materialize_actor_schema_refs(*, check: bool) -> dict\[str, Any\]: / IMPLICIT-A29ED079D3DA3876
   - 来源：`tools/operations/stage_snapshot_contract.py`
   - 依赖：—；被引用：—
