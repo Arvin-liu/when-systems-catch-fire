@@ -693,6 +693,32 @@
     },
     {
       "authority": "canonical",
+      "canonical_target": "docs/architecture/language-thought-logic-plane.md",
+      "component_id": "language_thought_plane",
+      "component_type": "cross_layer_control_plane",
+      "description": "横穿 L0—L6 记录语言条件化的框架差异、转换残余与目标语言实现；不是 L7 或真值层。",
+      "label": "语言—思维逻辑平面 0.1.0",
+      "layer_or_overlay": "overlay",
+      "lifecycle": {
+        "source": "data/language-thought/manifest.json",
+        "status": "current",
+        "version": "0.1.0"
+      },
+      "map_projection": {
+        "group": "language_thought",
+        "visible": true
+      },
+      "path_patterns": [
+        "docs/architecture/language-thought-logic-plane.md",
+        "docs/language-thought/",
+        "data/language-thought/",
+        "schemas/language-thought/",
+        "tools/language_thought/",
+        "tests/test_language_thought_plane.py"
+      ]
+    },
+    {
+      "authority": "canonical",
       "canonical_target": "docs/governance/licensing-rights-inventory.md",
       "component_id": "licensing",
       "component_type": "governance_constraint",
@@ -1290,13 +1316,13 @@
       "canonical_target": "docs/publication/zhiyuan-writing-method.md",
       "component_id": "zhiyuan_method",
       "component_type": "publication_chain",
-      "description": "以双来源素材池驱动 L6 心智层级跃迁与公共表达。",
-      "label": "之元写作法 0.4.0 Current",
+      "description": "以双来源素材池、心智层级跃迁和目标语言直接实现驱动 L6 公共表达。",
+      "label": "之元写作法 0.5.0 Current",
       "layer_or_overlay": "L6",
       "lifecycle": {
         "source": "docs/publication/zhiyuan-writing-method.md",
         "status": "current",
-        "version": "0.4.0"
+        "version": "0.5.0"
       },
       "map_projection": {
         "group": "writing",
@@ -1475,5 +1501,5 @@
     }
   ],
   "purpose": "Canonical project-component identity, target and lifecycle registry for declared change propagation and system-map projection; it does not establish real-world causality.",
-  "registry_version": "1.2.0"
+  "registry_version": "1.3.0"
 }

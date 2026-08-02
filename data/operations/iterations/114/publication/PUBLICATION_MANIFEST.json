@@ -1,0 +1,97 @@
+{
+  "manifest_version": "114.language-thought-publication-manifest.v1",
+  "task_number": 114,
+  "task_id": "IGNITION-LANGUAGE-THOUGHT-LOGIC-CROSS-LAYER-PLANE-REPRESENTATIVE-LANGUAGE-PILOT-AND-CURRENT-WORK-REPAIR-R1-20260802",
+  "control_commit": "adb170f8b3985afc852d96ac1722a2ec443e090c",
+  "formal_base_commit": "8812b93e7aaaffd5d68ca4cf36b01857d0712026",
+  "status": "PUBLISHED_WITH_EXPLICIT_LIMITATIONS_AFTER_ORDINARY_CONTENT_MERGE",
+  "review_state": "FOUR_ROLE_REVIEW_COMPLETE_SUBSTANTIVE_REWRITE_COMPLETE",
+  "architecture": {
+    "name": "Language-Thought Logic Plane / 语言—思维逻辑平面",
+    "version": "0.1.0",
+    "decision": "ORTHOGONAL_PLANE_ACROSS_L0_L6_NOT_L7",
+    "layers": ["L0", "L1", "L2", "L3", "L4", "L5", "L6"],
+    "truth_authority": "NONE",
+    "human_entry": "docs/architecture/language-thought-logic-plane.md"
+  },
+  "basis": {
+    "dimensions": 12,
+    "exhaustive_claim": false,
+    "profiles": [
+      {"profile_id": "zh-hans-modern-written-r1", "coverage": "FULL"},
+      {"profile_id": "en-contemporary-written-r1", "coverage": "FULL"},
+      {"profile_id": "ja-modern-standard-pilot-r1", "coverage": "BOUNDED_PRELIMINARY"},
+      {"profile_id": "tr-modern-standard-pilot-r1", "coverage": "BOUNDED_PRELIMINARY"}
+    ]
+  },
+  "validator": {
+    "path": "tools/language_thought/validate_language_thought.py",
+    "status": "PASS",
+    "production_transformations": 7,
+    "fixtures": 26,
+    "true_positive": 12,
+    "true_negative": 13,
+    "false_positive": 0,
+    "false_negative": 0,
+    "unsupported": 1,
+    "precision": 1.0,
+    "recall": 1.0,
+    "claim_ceiling": "Authored structured annotation fixtures only; no arbitrary-text understanding, naturalness or literary-quality proof."
+  },
+  "audit": {
+    "population_status": "FROZEN_BOUNDED_POPULATION",
+    "population_items": 14,
+    "findings": 25,
+    "report": "reports/operations/114-language-thought-project-audit.md"
+  },
+  "method": {
+    "path": "docs/publication/zhiyuan-writing-method.md",
+    "historical_version": "0.4.0",
+    "current_version": "0.5.0",
+    "frozen_candidate_sha256": "fd23ebd2cb7ad988e31a5e6c38612711fdb1bbda81718a5f74d1381c7985ebab",
+    "current_sha256": "615b049dca357f4c00e3baeb38a3edd649a3bfadfa3a292928ab8d9ed8867e4d"
+  },
+  "works": [
+    {
+      "path": "docs/publication/works/when-an-army-believes-its-own-back.md",
+      "historical_accepted_sha256": "c135acd35a2232f0a6b3f933db482932a9fe5d5add51f870af97901faac90d4b",
+      "frozen_candidate_sha256": "2575c6c20922b434cde18514aed9fc3cd68a8df7514378354b2f8f46af7636f0",
+      "current_revision_sha256": "520a4b2043dacbd876b2831c257e62d126378a8e916c4beeb5365867f7f7025d",
+      "revision_kind": "SUBSTANTIVE_LANGUAGE_THOUGHT_REPAIR"
+    },
+    {
+      "path": "docs/publication/works/when-an-emperor-manufactures-heaven.md",
+      "historical_accepted_sha256": "8d9fe3752e602041c8effb12f39bb2188c60a74843be4285d9181969e314a2e4",
+      "frozen_candidate_sha256": "d397dcb1dff1da39d0340c110b4e655c32fe9b9ce58e99f6b4904ca602bcb7ac",
+      "current_revision_sha256": "d7f9df5cc8d4e1eaf4ffd906856e6e6c363d5bb8a32225f7737a62ce3147e0a5",
+      "revision_kind": "SUBSTANTIVE_LANGUAGE_THOUGHT_REPAIR"
+    }
+  ],
+  "reviews": [
+    "data/operations/iterations/114/publication/LANGUAGE_COGNITION_AND_TYPOLOGY_REVIEW.md",
+    "data/operations/iterations/114/publication/CROSS_LAYER_ARCHITECTURE_REVIEW.md",
+    "data/operations/iterations/114/publication/NATIVE_CHINESE_REVIEW.md",
+    "data/operations/iterations/114/publication/LITERARY_ANTI_HOMOGENIZATION_AND_COPYRIGHT_REVIEW.md",
+    "data/operations/iterations/114/publication/NON_CHINESE_PROFILE_SOURCE_REVIEW.md",
+    "data/operations/iterations/114/publication/REVIEW_DISPOSITION_MATRIX.md",
+    "data/operations/iterations/114/publication/FINAL_REVISION_MAP.md"
+  ],
+  "primary_reading_paths": {
+    "root": "README.md",
+    "publication_shelf": "PUBLICATIONS/README.md",
+    "architecture": "docs/architecture/language-thought-logic-plane.md",
+    "dimensional_basis": "docs/language-thought/dimensional-basis.md",
+    "profile_overview": "docs/language-thought/README.md",
+    "chinese_calibration": "docs/language-thought/chinese-literary-calibration.md",
+    "owner_defect_before_after": "docs/language-thought/task-113-defect-before-after.md",
+    "root_to_each_current_work_clicks": 2
+  },
+  "limitations": [
+    "Language conditions attention and organization during use; it does not determine all thought or truth.",
+    "Profiles cover bounded varieties and project dimensions, not every speaker, dialect, genre or historical period.",
+    "Japanese and Turkish profiles have no independent publication authority in this pilot.",
+    "Literary calibration supplies permissions and counterexamples, not author-cloning instructions.",
+    "The Task 113 third-party course transcript remains local-only and is not republished."
+  ],
+  "lifecycle_state_at_content_commit": "READY_FOR_CONTENT_MERGE"
+}

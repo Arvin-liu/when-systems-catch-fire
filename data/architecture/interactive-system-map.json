@@ -1,18 +1,18 @@
 {
   "schema_version": "2.0.0",
-  "map_version": "0.4.0",
-  "historical_map_version": "0.3.0",
+  "map_version": "0.5.0",
+  "historical_map_version": "0.4.0",
   "projection_status": "CURRENT_DERIVED_PROJECTION",
   "title": "点火完整可点击系统图",
-  "subtitle": "0.4.0 候选投影；0.2.0 为 Historical 轨迹。点击构件打开 canonical 目标。路径、邻近与声明依赖不自动表示现实因果。",
+  "subtitle": "0.5.0 Current 派生投影；0.4.0 为 Historical。语言—思维是横穿 L0—L6 的 overlay，不是 L7。路径、邻近与声明依赖不自动表示现实因果。",
   "repository_url": "https://github.com/Arvin-liu/when-systems-catch-fire",
   "projection_authority": {
     "component_registry": "data/operations/project-components.json",
     "propagation_topology": "data/operations/change-propagation-topology.json",
     "layout_overlay": "data/architecture/interactive-system-map-layout.json",
-    "component_registry_version": "1.2.0",
-    "topology_version": "1.2.0",
-    "layout_version": "1.1.0"
+    "component_registry_version": "1.3.0",
+    "topology_version": "1.3.0",
+    "layout_version": "1.2.0"
   },
   "layout": {
     "columns": 3,
@@ -95,6 +95,14 @@
       "id": "boundaries",
       "label": "图的解释边界",
       "row": 2
+    },
+    {
+      "color": "#0369a1",
+      "column": 0,
+      "description": "横穿 L0—L6 保存语言框架差异、残余与目标语言实现；不是 L7",
+      "id": "language_thought",
+      "label": "语言—思维逻辑平面",
+      "row": 3
     }
   ],
   "nodes": [
@@ -388,10 +396,10 @@
     },
     {
       "id": "zhiyuan_method",
-      "label": "之元写作法 0.4.0 Current",
+      "label": "之元写作法 0.5.0 Current",
       "group": "writing",
       "target": "docs/publication/zhiyuan-writing-method.md",
-      "description": "以双来源素材池驱动 L6 心智层级跃迁与公共表达。",
+      "description": "以双来源素材池、心智层级跃迁和目标语言直接实现驱动 L6 公共表达。",
       "lifecycle_status": "current"
     },
     {
@@ -489,6 +497,14 @@
       "target": "docs/project-current-state.md",
       "description": "完整图是当前导航投影，不是永久总图或理论完备性证明。",
       "lifecycle_status": "boundary"
+    },
+    {
+      "id": "language_thought_plane",
+      "label": "语言—思维逻辑平面 0.1.0",
+      "group": "language_thought",
+      "target": "docs/architecture/language-thought-logic-plane.md",
+      "description": "横穿 L0—L6 记录语言条件化的框架差异、转换残余与目标语言实现；不是 L7 或真值层。",
+      "lifecycle_status": "current"
     }
   ],
   "edges": [
@@ -593,6 +609,70 @@
       "source": "iteration",
       "target": "sync",
       "label": "传播闭包",
+      "relation_class": "synchronization_requires",
+      "relation_domain": "synchronization_obligation"
+    },
+    {
+      "id": "map_language_thought_l0",
+      "source": "language_thought_plane",
+      "target": "l0",
+      "label": "来源语言与转换链",
+      "relation_class": "synchronization_requires",
+      "relation_domain": "synchronization_obligation"
+    },
+    {
+      "id": "map_language_thought_l1",
+      "source": "language_thought_plane",
+      "target": "l1",
+      "label": "命题框架差异",
+      "relation_class": "synchronization_requires",
+      "relation_domain": "synchronization_obligation"
+    },
+    {
+      "id": "map_language_thought_l2",
+      "source": "language_thought_plane",
+      "target": "l2",
+      "label": "对象与事件包装",
+      "relation_class": "synchronization_requires",
+      "relation_domain": "synchronization_obligation"
+    },
+    {
+      "id": "map_language_thought_l3",
+      "source": "language_thought_plane",
+      "target": "l3",
+      "label": "篇章与连接审计",
+      "relation_class": "synchronization_requires",
+      "relation_domain": "synchronization_obligation"
+    },
+    {
+      "id": "map_language_thought_l4",
+      "source": "language_thought_plane",
+      "target": "l4",
+      "label": "机制主体与终点",
+      "relation_class": "synchronization_requires",
+      "relation_domain": "synchronization_obligation"
+    },
+    {
+      "id": "map_language_thought_l5",
+      "source": "language_thought_plane",
+      "target": "l5",
+      "label": "框架差异与残余门",
+      "relation_class": "validates",
+      "relation_domain": "synchronization_obligation"
+    },
+    {
+      "id": "map_language_thought_l6",
+      "source": "language_thought_plane",
+      "target": "l6",
+      "label": "目标语言实现",
+      "relation_class": "synchronization_requires",
+      "relation_domain": "synchronization_obligation"
+    },
+    {
+      "id": "map_language_thought_zhiyuan",
+      "source": "language_thought_plane",
+      "target": "zhiyuan_method",
+      "label": "中文直接成句与残余",
       "relation_class": "synchronization_requires",
       "relation_domain": "synchronization_obligation"
     },

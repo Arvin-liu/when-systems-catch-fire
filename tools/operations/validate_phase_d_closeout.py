@@ -30,6 +30,8 @@ EXPECTED_CHAIN = [
     ("D3", "4dd038bd3caf5483c8bf3833a0382ed5bb3e2b8a", "cb280f2bc546e5703aed99f5836f5a7c8bcc6da9"),
 ]
 EXPECTED_Q29R = "c135acd35a2232f0a6b3f933db482932a9fe5d5add51f870af97901faac90d4b"
+Q29R_HISTORICAL_REF = EXPECTED_CHAIN[-1][1]
+Q29R_REPO_PATH = "docs/publication/works/when-an-army-believes-its-own-back.md"
 REQUIRED = {
     "schema_version", "task_id", "candidate_head", "candidate_head_role", "parent_head",
     "preserved_commit_chain", "tests", "auxiliary_gates", "production_entrypoints",
@@ -84,6 +86,17 @@ def _git_parent(root: Path, commit: str) -> str | None:
         return None
     parents = result.stdout.strip().split()
     return parents[0] if len(parents) == 1 else None
+
+
+def _git_blob_sha256(root: Path, ref: str, path: str) -> str | None:
+    """Hash a historical blob without confusing a later current revision with drift."""
+
+    result = subprocess.run(
+        ["git", "show", f"{ref}:{path}"], cwd=root, capture_output=True, shell=False
+    )
+    if result.returncode:
+        return None
+    return sha256_bytes(result.stdout)
 
 
 def validate_closeout(document: dict[str, Any], *, root: Path = ROOT, markdown_path: Path | None = None) -> dict[str, Any]:
@@ -175,7 +188,8 @@ def validate_closeout(document: dict[str, Any], *, root: Path = ROOT, markdown_p
     closure = json.loads((root / "data/operations/propagation/121Q32-closure.json").read_text(encoding="utf-8"))
     if document.get("q32_closure", {}).get("closure_hash") != closure.get("closure_hash") or document.get("q32_closure", {}).get("production_check") != "PASS":
         add("E_D4_Q32_CLOSURE", "q32_closure", "closure hash or production check mismatch")
-    if document.get("q29r", {}).get("sha256") != EXPECTED_Q29R or sha256_file(root / "docs/publication/works/when-an-army-believes-its-own-back.md") != EXPECTED_Q29R:
+    historical_q29r = _git_blob_sha256(root, Q29R_HISTORICAL_REF, Q29R_REPO_PATH)
+    if document.get("q29r", {}).get("sha256") != EXPECTED_Q29R or historical_q29r != EXPECTED_Q29R:
         add("E_D4_Q29R_HASH", "q29r.sha256", "Q29R frozen hash mismatch")
 
     lifecycle = document.get("lifecycle", {})

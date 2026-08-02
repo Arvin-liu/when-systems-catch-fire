@@ -1,6 +1,6 @@
 # 点火仓库原生系统图
 
-状态：`0.4.0 Current registry-derived navigation projection`；`0.3.0`、`0.2.0` 为 Historical。
+状态：`0.5.0 Current registry-derived navigation projection`；`0.4.0` 与更早版本为 Historical。
 
 ## 打开与生成
 
@@ -29,6 +29,7 @@ SVG 现在位于 `docs/generated/ignition-system-map.svg`，通过 README 和普
 - 边的 relation class/domain 来自 propagation topology。
 - 分组、几何、颜色和顺序来自 layout overlay。
 - cluster 只表达导航分组，不增加架构层。
+- `language_thought` 是横穿 L0—L6 的控制平面 overlay；`layers` 组仍严格只有 L0—L6。它与各层的连线表示框架审计和同步义务，不表示语言决定现实因果。
 - `repository_dependency`、`synchronization_obligation` 和 `substantive_causal_candidate` 权限不同。
 - 图的边、可达性、视觉邻近或 map delta 不证明经验因果、严格同构或理论完整性。
 - “完整”只指当前声明构件的投影覆盖；未来发现缺口时必须更新 registry，而不是把图当永久总图。

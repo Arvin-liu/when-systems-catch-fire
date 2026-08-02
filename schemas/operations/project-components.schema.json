@@ -31,7 +31,7 @@
         "component_id": {"type": "string", "pattern": "^[a-z][a-z0-9_]*$"},
         "label": {"$ref": "#/$defs/nonblank"},
         "description": {"$ref": "#/$defs/nonblank"},
-        "component_type": {"enum": ["front_door", "architecture_layer", "foundation_core", "model_projection", "operation_control", "governance_constraint", "publication_chain", "feedback_interface", "interpretation_boundary", "repository_infrastructure", "historical_asset"]},
+        "component_type": {"enum": ["front_door", "architecture_layer", "cross_layer_control_plane", "foundation_core", "model_projection", "operation_control", "governance_constraint", "publication_chain", "feedback_interface", "interpretation_boundary", "repository_infrastructure", "historical_asset"]},
         "canonical_target": {"$ref": "#/$defs/nonblank"},
         "path_patterns": {"type": "array", "items": {"$ref": "#/$defs/nonblank"}, "uniqueItems": true},
         "authority": {"enum": ["canonical", "derived", "declarative", "historical"]},

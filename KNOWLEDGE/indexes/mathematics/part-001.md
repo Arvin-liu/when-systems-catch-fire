@@ -164,6 +164,11 @@
   - 可搜索名称：NFC-52bafe74d795d69b / "claim_ceiling": "Context-indexed repository claim candidate; this record is traceability, not proof.",
   - 来源：`tools/foundation/adjudicate_function_assets.py`
   - 依赖：—；被引用：—
+- ["claim_ceiling": "declared-annotation contract validation only; no arbitrary-text understanding or literary-quality proo](../../../tools/language_thought/validate_language_thought.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-8a4de72f7a8cb6d1 / "claim_ceiling": "declared-annotation contract validation only; no arbitrary-text understanding or literary-quality proo
+  - 来源：`tools/language_thought/validate_language_thought.py`
+  - 依赖：—；被引用：—
 - ["claim_ceiling": "NetworkDiff is representation diff only, not proof that reality changed."](../../../tools/adaptive_relational_network/diff.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-a303aac571933a85 / "claim_ceiling": "NetworkDiff is representation diff only, not proof that reality changed."
@@ -2498,9 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-C357E95C4F84B97B / ## 关联函数 / Related Functions / IMPLICIT-C357E95C4F84B97B / IMPLICIT-0026301F130FD562
   - 来源：`统一案例总表/0679-C-0684-Kesten猜想.md`
-  - 依赖：—；被引用：—
-- [## 关联函数 / Related Functions](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0738-C-0743-%E5%AE%89%E7%84%B6%E5%85%AC%E5%8F%B8.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-C3A0CA2AD080115E / ## 关联函数 / Related Functions / IMPLICIT-C3A0CA2AD080115E / IMPLICIT-0026301F130FD562
-  - 来源：`统一案例总表/0738-C-0743-安然公司.md`
   - 依赖：—；被引用：—

@@ -6,7 +6,7 @@
 
 它是候选生成、结构发现、模型组织与可审计推理系统，不是自动产生外部真理的机器。编号、公式、AI 输出、内部自洽、测试通过或登记闭合，都不能单独证明自然、社会、生命、意识或 AI 的事实。
 
-**从这里开始：** [成果书架](./PUBLICATIONS/README.md) · [一页全景](./PUBLICATIONS/what-pointfire-knows-now.md) · [统一知识入口](./KNOWLEDGE/README.md) · [最新变化](./KNOWLEDGE/WHATS-NEW.md) · [知识地图](./KNOWLEDGE/MAP.md) · [搜索与交叉引用](./KNOWLEDGE/SEARCH.md) · [当前结果](./RESULTS/LATEST.md) · [纠正与撤回](./RESULTS/CORRECTIONS.md) · [开放问题](./RESULTS/OPEN-QUESTIONS.md) · [项目现状](./docs/project-current-state.md)
+**从这里开始：** [成果书架](./PUBLICATIONS/README.md) · [一页全景](./PUBLICATIONS/what-pointfire-knows-now.md) · [语言—思维逻辑平面](./docs/architecture/language-thought-logic-plane.md) · [统一知识入口](./KNOWLEDGE/README.md) · [最新变化](./KNOWLEDGE/WHATS-NEW.md) · [知识地图](./KNOWLEDGE/MAP.md) · [搜索与交叉引用](./KNOWLEDGE/SEARCH.md) · [当前结果](./RESULTS/LATEST.md) · [纠正与撤回](./RESULTS/CORRECTIONS.md) · [开放问题](./RESULTS/OPEN-QUESTIONS.md) · [项目现状](./docs/project-current-state.md)
 
 ## 百轮成果书架
 
@@ -20,6 +20,7 @@
 - 同次重算的全语料非函数断言注册表登记了 **17,333** 个 canonical claim；其中 **5,581** 个处于显式 quarantine 或 pending，公开表面违规为 **0**。这些计数会随受治理语料变化，是仓库审计结果，不是对断言真实性的统计证明。
 - 当前门控乘积模型没有完成四种基本相互作用统一；四力统一、量子引力和物理学大一统仍是开放研究问题。点火未证明“大一统普遍不可能”。
 - 生命共同体价值宪章约束“什么值得做、何时应暂停或回滚”，但价值判断不替代事实证据、数学证明或治理授权。
+- 语言—思维逻辑平面横穿 L0—L6，保存来源语言、框架差异、翻译残余和目标语言实现。它不是 L7，不是另一套真假逻辑，也不把语言倾向写成民族心智；语言形式本身不能提高 claim ceiling。
 
 [查看带来源和边界的当前结果](./RESULTS/LATEST.md) · [证据程序与首个可证伪验证试点](./evidence-program/README.md)
 
@@ -55,6 +56,7 @@
 - [非函数断言与证据谱系闭合](./reports/foundation-architecture/100-nonfunction-claim-evidence-lineage-closure.md)
 - [外部研究报告集合](./reports/external-research/)
 - [之元写作法与成稿成果](./docs/publication/zhiyuan-writing-showcase.md)
+- [语言—思维逻辑平面、十二维基底与四种语言配置](./docs/language-thought/README.md)
 - [全部历史结果台账](./RESULTS/CHRONOLOGY.md)
 
 [按研究与文章阅读](./RESULTS/RESEARCH-AND-ARTICLES.md)
@@ -82,7 +84,7 @@
 
 ## 系统图
 
-系统图由构件 registry、类型化传播 topology 与布局 overlay 确定性生成。节点用于导航，边只表示声明过的仓库依赖、同步义务或有边界的实质候选关系；它不证明现实因果、严格同构或理论完整性。
+系统图由构件 registry、类型化传播 topology 与布局 overlay 确定性生成。节点用于导航，边只表示声明过的仓库依赖、同步义务或有边界的实质候选关系；它不证明现实因果、严格同构或理论完整性。图中的语言—思维逻辑平面是横穿 L0—L6 的 overlay，`layers` 仍严格只有 L0—L6。
 
 [打开仓库内完整 SVG](./docs/generated/ignition-system-map.svg) · [查看维护说明](./docs/architecture/interactive-system-map.md) · [查看机器 spec](./data/architecture/interactive-system-map.json)
 
@@ -117,6 +119,7 @@
 ### 架构、Foundation 与正式资产
 
 - [现行架构](./ARCHITECTURE.md)
+- [语言—思维逻辑平面](./docs/architecture/language-thought-logic-plane.md) · [维度与语言配置入口](./docs/language-thought/README.md)
 - [Foundation](./FOUNDATION.md)
 - [Foundation 文档入口](./docs/foundation/README.md)
 - [Function OS 候选](./function-os-candidate/v0.2/README.md)

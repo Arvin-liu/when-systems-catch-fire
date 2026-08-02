@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [\[C-0757｜《写作是门手艺》段落控制≤10行\](../../../统一案例总表/0752-C-0757-《写作是门手艺》段落控制≤10行.md)（原笔记编号：C577-1）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0587-D577-%E8%A7%82%E7%82%B9%E7%AB%9E%E4%BA%89.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-9af23d3c49158e99 / \[C-0757｜《写作是门手艺》段落控制≤10行\](../../../统一案例总表/0752-C-0757-《写作是门手艺》段落控制≤10行.md)（原笔记编号：C577-1）
+  - 来源：`统一函数总表/0587-D577-观点竞争.md`
+  - 依赖：—；被引用：—
 - [\[C-0758｜马伯庸建议蹲下来看最下面一排书\](../../../统一案例总表/0753-C-0758-马伯庸建议蹲下来看最下面一排书.md)（原笔记编号：C577-2）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0587-D577-%E8%A7%82%E7%82%B9%E7%AB%9E%E4%BA%89.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-ebecdcf01423171c / \[C-0758｜马伯庸建议蹲下来看最下面一排书\](../../../统一案例总表/0753-C-0758-马伯庸建议蹲下来看最下面一排书.md)（原笔记编号：C577-2）
@@ -1184,6 +1189,11 @@
   - 可搜索名称：NFC-db31150551dccf68 / _validate_lifecycle(manifest, source)
   - 来源：`tools/validate_iteration_sync.py`
   - 依赖：—；被引用：—
+- [`0.5.0` 修复“概念已经成立，中文成句就只是末端文风”的错误。之元写作法现在明确使用横穿 L0—L6 的\[语言—思维逻辑平面\](../../../docs/architecture/language-thought-logic-plane.md)：来源语言](../../../docs/publication/zhiyuan-writing-method.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-740e26039d13c931 / `0.5.0` 修复“概念已经成立，中文成句就只是末端文风”的错误。之元写作法现在明确使用横穿 L0—L6 的\[语言—思维逻辑平面\](../../../docs/architecture/language-thought-logic-plane.md)：来源语言
+  - 来源：`docs/publication/zhiyuan-writing-method.md`
+  - 依赖：—；被引用：—
 - [`0001-Ψ₀元函数完整数学定义` Φ元统一律内部构件完整构成版 2026年07月06日12时32分: GENERATED_WITHOUT_TRACEABLE_SOURCE; missing=direct local note path](../../../reports/math-foundation/provenance-audit-20260712.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-7cfe067c4fe2cf5c / `0001-Ψ₀元函数完整数学定义` Φ元统一律内部构件完整构成版 2026年07月06日12时32分: GENERATED_WITHOUT_TRACEABLE_SOURCE; missing=direct local note path
@@ -2039,6 +2049,11 @@
   - 可搜索名称：NFC-5054bd6a4f4710b0 / Added charter v2 ontology-ethics derivation for 一宇, 今宵, 共在, 相契, 长瞻 with explicit non-scientific status.
   - 来源：`data/foundation/121q8-step-ledger.jsonl`
   - 依赖：—；被引用：—
+- [Added the Language–Thought Logic Plane as an orthogonal control projection across exact L0–L6, with no L7 and no indepen](../../../CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-ca07eb5f6e014114 / Added the Language–Thought Logic Plane as an orthogonal control projection across exact L0–L6, with no L7 and no indepen
+  - 来源：`CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [Added the ontology-ethics derivation for 一宇, 今宵, 共在, 相契, 长瞻. The charter explicitly states this is a philosophical and n](../../../reports/governance/121Q8-final-report.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-74f620dddfe3ca18 / Added the ontology-ethics derivation for 一宇, 今宵, 共在, 相契, 长瞻. The charter explicitly states this is a philosophical and n
@@ -2488,19 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-439d5220b042dcfd / Boundary negative example; not a technical quantum information proof.
   - 来源：`data/architecture/multiscale-causal-fabric/examples/quantum-entanglement-negative.json`
-  - 依赖：—；被引用：—
-- [Boundary: this is not a complete cosmological network and does not claim to unify stellar physics, thermodynamics, and l](../../../data/architecture/multiscale-causal-fabric/examples/stellar-nucleosynthesis.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-f2fbd3a2f0c12ee9 / Boundary: this is not a complete cosmological network and does not claim to unify stellar physics, thermodynamics, and l
-  - 来源：`data/architecture/multiscale-causal-fabric/examples/stellar-nucleosynthesis.md`
-  - 依赖：—；被引用：—
-- [Boundary: this is not a technical proof in quantum information theory. It is a repository safety example for preventing](../../../data/architecture/multiscale-causal-fabric/examples/quantum-entanglement-negative.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-0719069b163d9e38 / Boundary: this is not a technical proof in quantum information theory. It is a repository safety example for preventing
-  - 来源：`data/architecture/multiscale-causal-fabric/examples/quantum-entanglement-negative.md`
-  - 依赖：—；被引用：—
-- [boundary=\["knowledge gain and threshold terms are undefined operationally", "the 'meta-point of autonomy' wording is exp](../../../tools/foundation/build_080_queue.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-108bb66d0876efe4 / boundary=\["knowledge gain and threshold terms are undefined operationally", "the 'meta-point of autonomy' wording is exp
-  - 来源：`tools/foundation/build_080_queue.py`
   - 依赖：—；被引用：—

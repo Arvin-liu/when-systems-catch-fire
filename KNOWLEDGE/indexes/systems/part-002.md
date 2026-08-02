@@ -4,6 +4,31 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Charter Gate: responsibility and burden projections must record beneficiaries, risk bearers, silent subjects, irreversib](../../../reports/architecture/121Q21R-multiscale-causal-fabric-validation.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-93dde877b5eaf729 / Charter Gate: responsibility and burden projections must record beneficiaries, risk bearers, silent subjects, irreversib
+  - 来源：`reports/architecture/121Q21R-multiscale-causal-fabric-validation.md`
+  - 依赖：—；被引用：—
+- [Charter language could absorb licensing mechanics unless legal scope and sustainability mechanism remain separate.](../../../data/architecture/attention-audits/121q8-over-absorption-risk.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-c04f5f379e239df8 / Charter language could absorb licensing mechanics unless legal scope and sustainability mechanism remain separate.
+  - 来源：`data/architecture/attention-audits/121q8-over-absorption-risk.json`
+  - 依赖：—；被引用：—
+- [Charter System R1 — Architecture (Accepted / Current, on main, non-Activated)](../../ASSET-CARDS.md#asset-hr-715f3951a2b86789)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `CURRENT_SCOPED_SOURCE`
+  - 可搜索名称：Charter System R1 — Architecture (Accepted / Current, on main, non-Activated) / charter-system-r1
+  - 来源：`docs/governance/charter-system-r1.md`
+  - 依赖：—；被引用：—
+- [Check evidence tiers](../../../data/external-research/120-function-paradigm-atlas/120-validator.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-1d6b3024441eec44 / Check evidence tiers
+  - 来源：`data/external-research/120-function-paradigm-atlas/120-validator.py`
+  - 依赖：—；被引用：—
+- [check("gate:no-established-causal",all(x.get("claim_type")!="EMPIRICAL_CAUSAL_CLAIM" for x in objects))](../../../tools/foundation/validate_foundation.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a63f9d2ce0ac0f0c / check("gate:no-established-causal",all(x.get("claim_type")!="EMPIRICAL_CAUSAL_CLAIM" for x in objects))
+  - 来源：`tools/foundation/validate_foundation.py`
+  - 依赖：—；被引用：—
 - [check("warning IDs match expected", set(warning_ids) == set(expected_warning_ids))](../../../data/external-research/121-fulltext-resolver/121c01/121c01-validator.py)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-606A51E33FF72B4A / check("warning IDs match expected", set(warning_ids) == set(expected_warning_ids)) / IMPLICIT-606A51E33FF72B4A
@@ -1294,6 +1319,11 @@
   - 可搜索名称：NFC-16436cbea4a216d3 / Fix function-os-ci: explicitly install pytest and use python -m pytest (real root cause: pytest command not found).
   - 来源：`data/external-research/121-fulltext-resolver/121q6d/121q6d-step-ledger.jsonl`
   - 依赖：—；被引用：—
+- [fixture_only_no_causal_identification](../../../data/language-thought/fixtures.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-d27d8e158cfcb2b9 / fixture_only_no_causal_identification
+  - 来源：`data/language-thought/fixtures.jsonl`
+  - 依赖：—；被引用：—
 - [Fold the controls into Q12 mechanism adjudication.](../../../data/architecture/distribution/121q13-hypothesis-distribution.json)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-200dca56b02cda31 / Fold the controls into Q12 mechanism adjudication.
@@ -1834,9 +1864,9 @@
   - 可搜索名称：NFC-f5221d99ca4acd3e / It is not a FUNCTION or PARTIAL_FUNCTION because the displayed multiplicative score does not declare a set-theoretic dom
   - 来源：`reports/foundation-architecture/D598-final-adjudication-20260713.md`
   - 依赖：—；被引用：—
-- [Iteration method 1.3.0 and system map 0.2.0, 0.3.0 are Historical; method 1.2.0 and map 0.1.0 are earlier Historical, no](../../ASSET-CARDS.md#asset-nfc-2b7304f480da70c2)
+- [Iteration method 1.3.0 and system map 0.3.0, 0.4.0 are Historical; method 1.2.0 and maps 0.1.0, 0.2.0 are earlier Histor](../../ASSET-CARDS.md#asset-nfc-2d220e92f7b73dd3)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-2b7304f480da70c2 / Iteration method 1.3.0 and system map 0.2.0, 0.3.0 are Historical; method 1.2.0 and map 0.1.0 are earlier Historical, no / Iteration method 1.3.0 and system map 0.2.0, 0.3.0 are Historical; method 1.2.0 and map 0.1.0 are earlier Historical, not Current. Treat implementation completion, repository synchronization, external synchronization and project completion as distinct states; local validation never proves undeclared live external truth.
+  - 可搜索名称：NFC-2d220e92f7b73dd3 / Iteration method 1.3.0 and system map 0.3.0, 0.4.0 are Historical; method 1.2.0 and maps 0.1.0, 0.2.0 are earlier Histor / Iteration method 1.3.0 and system map 0.3.0, 0.4.0 are Historical; method 1.2.0 and maps 0.1.0, 0.2.0 are earlier Historical, not Current. Treat implementation completion, repository synchronization, external synchronization and project completion as distinct states; local validation never proves undeclared live external truth.
   - 来源：`llms.txt`
   - 依赖：—；被引用：—
 - [Its critique identifies comparability and systems-measurement requirements for validation, while providing no semantic/b](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
@@ -1874,9 +1904,14 @@
   - 可搜索名称：NFC-57f96b0fba525336 / l0_sources\["L0 Sources and Evidence CUSTOM_BUILT preserve"\]
   - 来源：`reports/atlas/maps/map-epistemic-architecture.md`
   - 依赖：—；被引用：—
-- [L6 公共写作的当前接口是之元写作法 \[`0.4.0`\](../../../docs/publication/zhiyuan-writing-method.md)及其\[后台规格\](../../../docs/ai-assistant-usage-reference.md)
+- [L4：机制与模型](../../../docs/language-thought/cross-layer-contract.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-63c1f32798c5b78a / L4：机制与模型
+  - 来源：`docs/language-thought/cross-layer-contract.md`
+  - 依赖：—；被引用：—
+- [L6 公共写作的当前接口是之元写作法 \[`0.5.0`\](../../../docs/publication/zhiyuan-writing-method.md)及其\[后台规格\](../../../docs/ai-assistant-usage-reference.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-325eadcbeac0ba8a / L6 公共写作的当前接口是之元写作法 \[`0.4.0`\](../../../docs/publication/zhiyuan-writing-method.md)及其\[后台规格\](../../../docs/ai-assistant-usage-reference.md)
+  - 可搜索名称：NFC-2edb70ce45a42f26 / L6 公共写作的当前接口是之元写作法 \[`0.5.0`\](../../../docs/publication/zhiyuan-writing-method.md)及其\[后台规格\](../../../docs/ai-assistant-usage-reference.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-0c8e46e707629540 / L6 写作的感染力、跨域收敛或多模型一致不能提高事实、因果、同构或价值主张；高层表达必须保留肉身成本和受损主体。
   - 来源：`docs/ai-assistant-usage-reference.md`
@@ -1895,6 +1930,21 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-b631e2c9e76b0981 / label: I understand support or licensing cannot buy factual conclusions, evidence grades, mechanism conclusions, or endo
   - 来源：`.github/ISSUE_TEMPLATE/sponsorship-or-commercial-license-inquiry.yml`
+  - 依赖：—；被引用：—
+- [language realization only; historical mechanism remains plausible and externally unverified](../../../data/language-thought/transformations.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-af7d2c04daa6e4ec / language realization only; historical mechanism remains plausible and externally unverified
+  - 来源：`data/language-thought/transformations.jsonl`
+  - 依赖：—；被引用：—
+- [language realization only; no upgrade to historical mechanism evidence](../../../data/language-thought/transformations.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-3f6025ae200dfb58 / language realization only; no upgrade to historical mechanism evidence
+  - 来源：`data/language-thought/transformations.jsonl`
+  - 依赖：—；被引用：—
+- [language repair only; Task 113 historical and causal claim ceilings remain unchanged](../../../data/language-thought/transformations.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-b4d137f6be473705 / language repair only; Task 113 historical and causal claim ceilings remain unchanged
+  - 来源：`data/language-thought/transformations.jsonl`
   - 依赖：—；被引用：—
 - [Latent Executor is an approximate learned interpreter — it predicts intermediate execution states for partial programs w](../../../data/external-research/121-fulltext-resolver/121q2/acceptance/S120-017.json)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
@@ -2020,6 +2070,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-147bc7e4783dfeeb / local diff-reference namespace collisions are rejected before string refs are resolved;
   - 来源：`reports/architecture/121Q23-adaptive-relational-network-validation.md`
+  - 依赖：—；被引用：—
+- [Long reflective periods keep hindsight, mechanism and uncertainty in one controlled movement; mechanical short-sentence](../../../data/language-thought/audit-findings.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-1f39f60d28c1b59f / Long reflective periods keep hindsight, mechanism and uncertainty in one controlled movement; mechanical short-sentence
+  - 来源：`data/language-thought/audit-findings.jsonl`
   - 依赖：—；被引用：—
 - [LoRA modules are composable: different modules for different tasks can be swapped at deployment. Multiple LoRA modules c](../../../data/external-research/121-fulltext-resolver/121q2/acceptance/S120-035.json)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -2176,6 +2231,11 @@
   - 可搜索名称：NFC-86f963674303d7ea / Mechanism Adjudication Plane: records M0 pre-action mechanism sketches and M1 post-action mechanism adjudications with c
   - 来源：`reports/architecture/121Q12-baseline-audit.md`
   - 依赖：—；被引用：—
+- [mechanism analogy remains bounded; no deterministic causal identification](../../../data/language-thought/transformations.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-62dd046e56334f5d / mechanism analogy remains bounded; no deterministic causal identification
+  - 来源：`data/language-thought/transformations.jsonl`
+  - 依赖：—；被引用：—
 - [mechanism conclusions;](../../../SUPPORT.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-f0f152bfe1c5dbc6 / mechanism conclusions;
@@ -2240,6 +2300,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-e94c1050d11aec13 / mixed lists such as `\["valid", " "\]` are rejected for provenance, alternatives, residue, evidence, attractor loop patter
   - 来源：`reports/architecture/121Q23-adaptive-relational-network-validation.md`
+  - 依赖：—；被引用：—
+- [Modal and evidential boundaries around Huizong's private belief, Daoism's causal role and hindsight are already explicit](../../../data/language-thought/audit-findings.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-c008cf5697b56ad8 / Modal and evidential boundaries around Huizong's private belief, Daoism's causal role and hindsight are already explicit
+  - 来源：`data/language-thought/audit-findings.jsonl`
   - 依赖：—；被引用：—
 - [MODEL_FAILURE_NOGO = re.compile(r"(?:model\|模型).{0,100}(?:fail\|失败\|不成立).{0,100}(?:impossible\|不可能)\|(?:impossible\|不可能).{0,10](../../../tools/foundation/adjudicate_nonfunction_claims.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -2435,69 +2500,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-b383a99f538cbfc6 / No shared ARN object model for heterogeneous non-causal relation classes, layers, temporal activation, high-order relati
   - 来源：`data/architecture/adaptive-relational-network/network-gap-ledger.json`
-  - 依赖：—；被引用：—
-- [No single validator catches adjacency/similarity/centrality/community as truth/value/causality or retrieval/diffusion as](../../../data/architecture/adaptive-relational-network/network-gap-ledger.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-a539233ea05d3af0 / No single validator catches adjacency/similarity/centrality/community as truth/value/causality or retrieval/diffusion as
-  - 来源：`data/architecture/adaptive-relational-network/network-gap-ledger.json`
-  - 依赖：—；被引用：—
-- [No standard mechanism-map object for explaining what changed, how, under which conditions, and with which alternatives.](../../../data/architecture/121q12-baseline.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-067d30169e6a40b2 / No standard mechanism-map object for explaining what changed, how, under which conditions, and with which alternatives.
-  - 来源：`data/architecture/121q12-baseline.json`
-  - 依赖：—；被引用：—
-- [No unified machine-readable object set exists for events, states, relation classes, propagation channels, cones/horizons](../../../data/architecture/causal-gap-ledger.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-77009884cc405ea7 / No unified machine-readable object set exists for events, states, relation classes, propagation channels, cones/horizons
-  - 来源：`data/architecture/causal-gap-ledger.json`
-  - 依赖：—；被引用：—
-- [No validation mechanism for generated model correctness](../../../data/external-research/121-fulltext-resolver/121q1/acceptance/S120-011.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-e093203bebfd92ad / No validation mechanism for generated model correctness
-  - 来源：`data/external-research/121-fulltext-resolver/121q1/acceptance/S120-011.json`
-  - 依赖：—；被引用：—
-- [node("ai_quota", "AI quota and model access", "SUSTAINABILITY.md", "SUSTAINABILITY.md", "PRODUCT_RENTAL", "High for exec](../../../tools/build_ignition_atlas.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-bff5ecb6c6923ac0 / node("ai_quota", "AI quota and model access", "SUSTAINABILITY.md", "SUSTAINABILITY.md", "PRODUCT_RENTAL", "High for exec
-  - 来源：`tools/build_ignition_atlas.py`
-  - 依赖：—；被引用：—
-- [node("ci_compute", "CI compute", ".github/workflows", ".github/workflows/foundation-validation.yml", "COMMODITY_UTILITY"](../../../tools/build_ignition_atlas.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-1e808fd80503710b / node("ci_compute", "CI compute", ".github/workflows", ".github/workflows/foundation-validation.yml", "COMMODITY_UTILITY"
-  - 来源：`tools/build_ignition_atlas.py`
-  - 依赖：—；被引用：—
-- [node("codex_execution", "Codex execution session", "current branch work", "AI-HANDOFF.md", "PRODUCT_RENTAL", "High for i](../../../tools/build_ignition_atlas.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-5b211ee41bb24a31 / node("codex_execution", "Codex execution session", "current branch work", "AI-HANDOFF.md", "PRODUCT_RENTAL", "High for i
-  - 来源：`tools/build_ignition_atlas.py`
-  - 依赖：—；被引用：—
-- [node("l0_sources", "L0 Sources and Evidence", "ARCHITECTURE.md#L0", "ARCHITECTURE.md", "CUSTOM_BUILT", "High for evidenc](../../../tools/build_ignition_atlas.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-78211a6bffb067f3 / node("l0_sources", "L0 Sources and Evidence", "ARCHITECTURE.md#L0", "ARCHITECTURE.md", "CUSTOM_BUILT", "High for evidenc
-  - 来源：`tools/build_ignition_atlas.py`
-  - 依赖：—；被引用：—
-- [node("l5_validation", "L5 Validation", "tools/foundation/validate_foundation.py", "tools/foundation/validate_foundation.](../../../tools/build_ignition_atlas.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-53fa87254aaf07e5 / node("l5_validation", "L5 Validation", "tools/foundation/validate_foundation.py", "tools/foundation/validate_foundation.
-  - 来源：`tools/build_ignition_atlas.py`
-  - 依赖：—；被引用：—
-- [node("l6_publication", "L6 Publication", "README.md / reports", "ARCHITECTURE.md", "CUSTOM_BUILT", "High for readers", \[](../../../tools/build_ignition_atlas.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-e954fee49d5e01e4 / node("l6_publication", "L6 Publication", "README.md / reports", "ARCHITECTURE.md", "CUSTOM_BUILT", "High for readers", \[
-  - 来源：`tools/build_ignition_atlas.py`
-  - 依赖：—；被引用：—
-- [node("receipt", "1111 result receipt", "agent-results", "agent-results", "CUSTOM_BUILT", "High for cross-thread trace",](../../../tools/build_ignition_atlas.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-84855369a19bd71b / node("receipt", "1111 result receipt", "agent-results", "agent-results", "CUSTOM_BUILT", "High for cross-thread trace",
-  - 来源：`tools/build_ignition_atlas.py`
-  - 依赖：—；被引用：—
-- [node("remote_ci", "Remote CI", "GitHub Actions", ".github/workflows", "COMMODITY_UTILITY", "High for reproducibility", \[](../../../tools/build_ignition_atlas.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-ac1736835a4233db / node("remote_ci", "Remote CI", "GitHub Actions", ".github/workflows", "COMMODITY_UTILITY", "High for reproducibility", \[
-  - 来源：`tools/build_ignition_atlas.py`
-  - 依赖：—；被引用：—
-- [node("repo_artifacts", "Repository artifacts", "git commits", "data/atlas/121q14-ledger.jsonl", "CUSTOM_BUILT", "High fo](../../../tools/build_ignition_atlas.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-5315c5f24924f49e / node("repo_artifacts", "Repository artifacts", "git commits", "data/atlas/121q14-ledger.jsonl", "CUSTOM_BUILT", "High fo
-  - 来源：`tools/build_ignition_atlas.py`
   - 依赖：—；被引用：—

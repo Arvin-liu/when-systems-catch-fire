@@ -111,6 +111,10 @@ jobs:
       - name: Run instance-level stage snapshot responsibility actor cases
         run: python3 tools/operations/run_stage_snapshot_responsibility_cases.py
       - run: python3 tools/validate_human_front_door.py
+      - name: Validate Language-Thought Logic Plane
+        run: |
+          python3 tools/language_thought/validate_language_thought.py
+          python3 -m unittest tests.test_language_thought_plane
       - run: python3 -m unittest tests.foundation.test_foundation
       - run: python3 -m unittest tests.foundation.test_claim_governance
       - run: python3 -m unittest tests.foundation.test_function_asset_closure

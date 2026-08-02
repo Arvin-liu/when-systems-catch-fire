@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0.0",
+  "plane_id": "language-thought-logic-plane",
+  "plane_version": "0.1.0",
+  "status": "CURRENT_CROSS_LAYER_CONTROL_PLANE",
+  "architecture_decision": "ORTHOGONAL_PLANE_ACROSS_L0_L6_NOT_L7",
+  "claim_ceiling": "language_conditioned_attention_encoding_and_thought_organization_may_vary_by_task; no_strong_determinism; no_truth_upgrade",
+  "authoritative_human_entry": "docs/architecture/language-thought-logic-plane.md",
+  "dimension_registry": "data/language-thought/dimensions.json",
+  "evidence_registry": "data/language-thought/evidence-registry.jsonl",
+  "transformation_registry": "data/language-thought/transformations.jsonl",
+  "fixture_registry": "data/language-thought/fixtures.jsonl",
+  "audit_population": "data/language-thought/project-audit-population.json",
+  "audit_findings": "data/language-thought/audit-findings.jsonl",
+  "profiles": [
+    {
+      "profile_id": "zh-hans-modern-written-r1",
+      "path": "data/language-thought/profiles/zh-hans.json",
+      "coverage": "FULL",
+      "publication_authority": "TARGET_LANGUAGE_HUMAN_GATE_REQUIRED"
+    },
+    {
+      "profile_id": "en-contemporary-written-r1",
+      "path": "data/language-thought/profiles/en.json",
+      "coverage": "FULL",
+      "publication_authority": "TARGET_LANGUAGE_HUMAN_GATE_REQUIRED"
+    },
+    {
+      "profile_id": "ja-modern-standard-pilot-r1",
+      "path": "data/language-thought/profiles/ja.json",
+      "coverage": "BOUNDED_PRELIMINARY",
+      "publication_authority": "NO_INDEPENDENT_PUBLICATION_AUTHORITY"
+    },
+    {
+      "profile_id": "tr-modern-standard-pilot-r1",
+      "path": "data/language-thought/profiles/tr.json",
+      "coverage": "BOUNDED_PRELIMINARY",
+      "publication_authority": "NO_INDEPENDENT_PUBLICATION_AUTHORITY"
+    }
+  ],
+  "cross_layer_coverage": ["L0", "L1", "L2", "L3", "L4", "L5", "L6"],
+  "required_dimensions": ["d01", "d02", "d03", "d04", "d05", "d06", "d07", "d08", "d09", "d10", "d11", "d12"],
+  "validator": "tools/language_thought/validate_language_thought.py",
+  "schemas": [
+    "schemas/language-thought/dimension-registry.schema.json",
+    "schemas/language-thought/language-profile.schema.json",
+    "schemas/language-thought/transformation-record.schema.json",
+    "schemas/language-thought/audit-finding.schema.json",
+    "schemas/language-thought/manifest.schema.json"
+  ],
+  "limitations": [
+    "The normalized meaning candidate is a comparison projection, not a language-free true meaning.",
+    "Structured validation checks declared annotations and cannot infer all meaning from arbitrary prose.",
+    "Naturalness, literary gain, complex reference and target-language publication still require human review.",
+    "Profiles describe bounded varieties, genres and tendencies, never every speaker or civilization."
+  ]
+}

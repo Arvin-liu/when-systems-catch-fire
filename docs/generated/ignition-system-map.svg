@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 2364" width="1800" height="2364" role="img" aria-labelledby="map-title map-description">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 2582" width="1800" height="2582" role="img" aria-labelledby="map-title map-description">
   <title id="map-title">点火完整可点击系统图</title>
-  <desc id="map-description">0.4.0 候选投影；0.2.0 为 Historical 轨迹。点击构件打开 canonical 目标。路径、邻近与声明依赖不自动表示现实因果。</desc>
+  <desc id="map-description">0.5.0 Current 派生投影；0.4.0 为 Historical。语言—思维是横穿 L0—L6 的 overlay，不是 L7。路径、邻近与声明依赖不自动表示现实因果。</desc>
   <style>
       .map-bg{fill:#f8fafc}.map-title{font:700 30px system-ui,sans-serif;fill:#0f172a}
       .map-subtitle{font:400 15px system-ui,sans-serif;fill:#475569}
@@ -21,9 +21,9 @@
       <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#0f172a" flood-opacity=".10" />
     </filter>
   </defs>
-  <rect class="map-bg" x="0" y="0" width="1800" height="2364" />
+  <rect class="map-bg" x="0" y="0" width="1800" height="2582" />
   <text class="map-title" x="32" y="42">点火完整可点击系统图</text>
-  <text class="map-subtitle" x="32" y="72">0.4.0 候选投影；0.2.0 为 Historical 轨迹。点击构件打开 canonical 目标。路径、邻近与声明依赖不自动表示现实因果。</text>
+  <text class="map-subtitle" x="32" y="72">0.5.0 Current 派生投影；0.4.0 为 Historical。语言—思维是横穿 L0—L6 的 overlay，不是 L7。路径、邻近与声明依赖不自动表示现实因果。</text>
   <text class="boundary-note" x="32" y="98">点击任一构件打开 canonical 目标；视觉邻近与连线不自动表示因果、严格同构或理论完备。</text>
   <rect class="cluster" x="32" y="122" width="560" height="454" rx="16" stroke="#2563eb" />
   <text class="cluster-title" x="54" y="154" fill="#2563eb">前门 / 导航</text>
@@ -52,6 +52,9 @@
   <rect class="cluster" x="1208" y="1614" width="560" height="322" rx="16" stroke="#475569" />
   <text class="cluster-title" x="1230" y="1646" fill="#475569">图的解释边界</text>
   <text class="cluster-desc" x="1230" y="1672">这是一张导航接口，不是完整性、因果或理论证明</text>
+  <rect class="cluster" x="32" y="2360" width="560" height="190" rx="16" stroke="#0369a1" />
+  <text class="cluster-title" x="54" y="2392" fill="#0369a1">语言—思维逻辑平面</text>
+  <text class="cluster-desc" x="54" y="2418">横穿 L0—L6 保存语言框架差异、残余与目标语言实现；不是 L7</text>
   <g aria-label="system relations">
     <path class="edge" d="M 312.0 2090.0 C 312.0 1931.0, 312.0 1931.0, 312.0 1772.0" data-source="point_fire_analysis" data-target-node="ignition_increment" data-relation-class="generates" data-relation-domain="repository_dependency">
       <title>point_fire_analysis → ignition_increment: 增量输出 [repository_dependency]</title>
@@ -91,6 +94,30 @@
     </path>
     <path class="edge" d="M 900.0 1080.0 C 900.0 1086.0, 900.0 1086.0, 900.0 1092.0" data-source="iteration" data-target-node="sync" data-relation-class="synchronization_requires" data-relation-domain="synchronization_obligation">
       <title>iteration → sync: 传播闭包 [synchronization_obligation]</title>
+    </path>
+    <path class="edge" d="M 312.0 2479.0 C 606.0 2479.0, 606.0 241.0, 900.0 241.0" data-source="language_thought_plane" data-target-node="l0" data-relation-class="synchronization_requires" data-relation-domain="synchronization_obligation">
+      <title>language_thought_plane → l0: 来源语言与转换链 [synchronization_obligation]</title>
+    </path>
+    <path class="edge" d="M 312.0 2479.0 C 606.0 2479.0, 606.0 307.0, 900.0 307.0" data-source="language_thought_plane" data-target-node="l1" data-relation-class="synchronization_requires" data-relation-domain="synchronization_obligation">
+      <title>language_thought_plane → l1: 命题框架差异 [synchronization_obligation]</title>
+    </path>
+    <path class="edge" d="M 312.0 2479.0 C 606.0 2479.0, 606.0 373.0, 900.0 373.0" data-source="language_thought_plane" data-target-node="l2" data-relation-class="synchronization_requires" data-relation-domain="synchronization_obligation">
+      <title>language_thought_plane → l2: 对象与事件包装 [synchronization_obligation]</title>
+    </path>
+    <path class="edge" d="M 312.0 2479.0 C 606.0 2479.0, 606.0 439.0, 900.0 439.0" data-source="language_thought_plane" data-target-node="l3" data-relation-class="synchronization_requires" data-relation-domain="synchronization_obligation">
+      <title>language_thought_plane → l3: 篇章与连接审计 [synchronization_obligation]</title>
+    </path>
+    <path class="edge" d="M 312.0 2479.0 C 606.0 2479.0, 606.0 505.0, 900.0 505.0" data-source="language_thought_plane" data-target-node="l4" data-relation-class="synchronization_requires" data-relation-domain="synchronization_obligation">
+      <title>language_thought_plane → l4: 机制主体与终点 [synchronization_obligation]</title>
+    </path>
+    <path class="edge" d="M 312.0 2479.0 C 606.0 2479.0, 606.0 571.0, 900.0 571.0" data-source="language_thought_plane" data-target-node="l5" data-relation-class="validates" data-relation-domain="synchronization_obligation">
+      <title>language_thought_plane → l5: 框架差异与残余门 [synchronization_obligation]</title>
+    </path>
+    <path class="edge" d="M 312.0 2479.0 C 606.0 2479.0, 606.0 637.0, 900.0 637.0" data-source="language_thought_plane" data-target-node="l6" data-relation-class="synchronization_requires" data-relation-domain="synchronization_obligation">
+      <title>language_thought_plane → l6: 目标语言实现 [synchronization_obligation]</title>
+    </path>
+    <path class="edge" d="M 312.0 2479.0 C 312.0 2479.0, 312.0 1931.0, 312.0 1931.0" data-source="language_thought_plane" data-target-node="zhiyuan_method" data-relation-class="synchronization_requires" data-relation-domain="synchronization_obligation">
+      <title>language_thought_plane → zhiyuan_method: 中文直接成句与残余 [synchronization_obligation]</title>
     </path>
     <path class="edge" d="M 900.0 268.0 C 900.0 274.0, 900.0 274.0, 900.0 280.0" data-source="l0" data-target-node="l1" data-relation-class="derives" data-relation-domain="repository_dependency">
       <title>l0 → l1: 受控语义 [repository_dependency]</title>
@@ -444,11 +471,11 @@
         <tspan x="70.0" dy="0">写作素材池</tspan>
       </text>
     </a>
-    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/docs/publication/zhiyuan-writing-method.md" target="_top" data-node-id="zhiyuan_method" data-group="writing" data-target="docs/publication/zhiyuan-writing-method.md" aria-label="之元写作法 0.4.0 Current：以双来源素材池驱动 L6 心智层级跃迁与公共表达。">
-      <title>之元写作法 0.4.0 Current — 以双来源素材池驱动 L6 心智层级跃迁与公共表达。</title>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/docs/publication/zhiyuan-writing-method.md" target="_top" data-node-id="zhiyuan_method" data-group="writing" data-target="docs/publication/zhiyuan-writing-method.md" aria-label="之元写作法 0.5.0 Current：以双来源素材池、心智层级跃迁和目标语言直接实现驱动 L6 公共表达。">
+      <title>之元写作法 0.5.0 Current — 以双来源素材池、心智层级跃迁和目标语言直接实现驱动 L6 公共表达。</title>
       <rect class="node" x="54.0" y="1904.0" width="516.0" height="54.0" rx="10" />
       <text class="node-label" x="70.0" y="1937.0">
-        <tspan x="70.0" dy="0">之元写作法 0.4.0 Current</tspan>
+        <tspan x="70.0" dy="0">之元写作法 0.5.0 Current</tspan>
       </text>
     </a>
     <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/docs/publication/cases/jin-rise-case-source.md" target="_top" data-node-id="case_source" data-group="writing" data-target="docs/publication/cases/jin-rise-case-source.md" aria-label="Case source provenance：起始案例的公开来源链与版权边界。">
@@ -536,6 +563,13 @@
       <rect class="node" x="1230.0" y="1838.0" width="516.0" height="54.0" rx="10" />
       <text class="node-label" x="1246.0" y="1871.0">
         <tspan x="1246.0" dy="0">不证明理论完整</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/docs/architecture/language-thought-logic-plane.md" target="_top" data-node-id="language_thought_plane" data-group="language_thought" data-target="docs/architecture/language-thought-logic-plane.md" aria-label="语言—思维逻辑平面 0.1.0：横穿 L0—L6 记录语言条件化的框架差异、转换残余与目标语言实现；不是 L7 或真值层。">
+      <title>语言—思维逻辑平面 0.1.0 — 横穿 L0—L6 记录语言条件化的框架差异、转换残余与目标语言实现；不是 L7 或真值层。</title>
+      <rect class="node" x="54.0" y="2452.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="70.0" y="2485.0">
+        <tspan x="70.0" dy="0">语言—思维逻辑平面 0.1.0</tspan>
       </text>
     </a>
   </g>

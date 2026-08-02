@@ -1949,6 +1949,11 @@
   - 可搜索名称：IMPLICIT-F956C2CE754D0277 / ## 判定理由 / Derivation Reason / IMPLICIT-F956C2CE754D0277 / IMPLICIT-054856DD6A537213
   - 来源：`统一函数总表/0560-D545-植物生物圈函数.md`
   - 依赖：—；被引用：—
+- [## 审计能力边界](../../../reports/operations/114-language-thought-project-audit.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-2676E58523AC166C / ## 审计能力边界 / IMPLICIT-2676E58523AC166C
+  - 来源：`reports/operations/114-language-thought-project-audit.md`
+  - 依赖：—；被引用：—
 - [## 建议的隐藏层级模型](../../../docs/narrative-output-layer.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-A7F7EB78E1F14B8B / ## 建议的隐藏层级模型 / IMPLICIT-A7F7EB78E1F14B8B
@@ -2498,9 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-2D1690A54E16E990 / ### function_dependency / IMPLICIT-2D1690A54E16E990 / IMPLICIT-FFF1DCEF8CC17C17
   - 来源：`outputs/collisions/20260708-teacher-competition/collision-report.md`
-  - 依赖：—；被引用：—
-- [### function_dependency](../../../docs/p1-data-index-map-20260708.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-FFF1DCEF8CC17C17 / ### function_dependency / IMPLICIT-FFF1DCEF8CC17C17 / IMPLICIT-2D1690A54E16E990
-  - 来源：`docs/p1-data-index-map-20260708.md`
   - 依赖：—；被引用：—
