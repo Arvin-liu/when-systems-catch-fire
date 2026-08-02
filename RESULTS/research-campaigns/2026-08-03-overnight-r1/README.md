@@ -23,3 +23,4 @@ Each `round-NNN-<short-slug>/` directory contains only the minimal report, sourc
 - Round 004 — Low-carbon electricity growth and fossil generation in 2025 — SUPPORTED_WITH_SCOPE — 6 opened sources.
 - Round 005 — GLP-1 cardiovascular evidence in obesity without diabetes — SUPPORTED_WITH_SCOPE — 7 opened sources.
 - Round 006 — Generative AI and software developer productivity — CONTESTED — 7 opened sources.
+- Round 007 — EV and internal-combustion vehicle fire risk — SUPPORTED_WITH_SCOPE — 5 opened sources.

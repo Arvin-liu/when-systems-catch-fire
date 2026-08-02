@@ -1,0 +1,24 @@
+{
+  "campaign_id": "POINTFIRE-OVERNIGHT-PUBLIC-EVIDENCE-RESEARCH-CAMPAIGN-20260803-R1",
+  "round_number": 7,
+  "short_slug": "ev-fire-risk",
+  "start_time": "2026-08-03T03:05:01+08:00",
+  "end_time": "2026-08-03T03:07:12+08:00",
+  "timezone": "Asia/Shanghai",
+  "research_baseline": "61510ed26a1285e1746777c9eacd568cb3038a50",
+  "question": "电动车是否比燃油车更容易起火，还是现有差异主要来自保有量、车龄、统计分母和起火定义？",
+  "initial_claim": "电动车电池火灾的处置可能更复杂，但“更难处置”不能直接证明“更容易起火”；需要用暴露量和车龄校正的比较。",
+  "selection_score": {
+    "public_relevance": 5,
+    "evidence_availability": 5,
+    "bounded_answerability": 5,
+    "novelty_versus_previous_rounds": 5,
+    "capacity_to_revise_or_falsify_existing_assumption": 5
+  },
+  "verdict": "SUPPORTED_WITH_SCOPE",
+  "source_count": 5,
+  "source_classes": ["official_technical_note", "official_fire_statistics", "full_scale_fire_experiment", "independent_science_fact_check", "official_historical_statistics"],
+  "report_sha256": "6238a03cefb805cfd17c575824a3ca3707bf78e7d6c657401b055fa547924462",
+  "commit_sha": null,
+  "state": "COMPLETE_AWAITING_EXTERNAL_REVIEW"
+}
