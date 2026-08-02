@@ -30,7 +30,7 @@ class HumanFrontDoorTests(unittest.TestCase):
     def test_repository_front_doors_validate(self):
         result = validate_all()
         self.assertEqual(result["status"], "PASS")
-        self.assertEqual(result["interactive_system_map_nodes"], 49)
+        self.assertEqual(result["interactive_system_map_nodes"], 50)
 
     def test_visible_result_sections_are_ordered_and_unfolded(self):
         validate_texts(self.readme, self.guide, self.current_state, self.human_reading)

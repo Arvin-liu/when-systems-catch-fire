@@ -1,6 +1,6 @@
 {
-  "registry_version": "1.0.0",
-  "registry_status": "CURRENT_MERGED_L6_SHOWCASE_INTERFACE",
+  "registry_version": "1.1.0",
+  "registry_status": "TASK_114_LANGUAGE_THOUGHT_REVISIONS_CURRENT_HISTORICAL_ACCEPTANCE_PRESERVED",
   "purpose": "Machine-readable registry for provenance-linked Zhiyuan Writing Method public-expression outcomes; not a literary-quality or truth registry.",
   "homepage_limit": 3,
   "sort": {
@@ -21,6 +21,18 @@
       "method_version": "0.4.0",
       "source_sha256": "506904a3923bf5aac9f65c8311c512d2ba70b4c1073802b02647ce294fab433f",
       "accepted_text_sha256": "8d9fe3752e602041c8effb12f39bb2188c60a74843be4285d9181969e314a2e4",
+      "current_revision_sha256": "d7f9df5cc8d4e1eaf4ffd906856e6e6c363d5bb8a32225f7737a62ce3147e0a5",
+      "current_method_version": "0.5.0",
+      "current_method_sha256": "615b049dca357f4c00e3baeb38a3edd649a3bfadfa3a292928ab8d9ed8867e4d",
+      "current_revision_task_number": 114,
+      "current_revision_task_id": "IGNITION-LANGUAGE-THOUGHT-LOGIC-CROSS-LAYER-PLANE-REPRESENTATIVE-LANGUAGE-PILOT-AND-CURRENT-WORK-REPAIR-R1-20260802",
+      "current_revision_status": "FOUR_ROLE_REVIEW_COMPLETE_SUBSTANTIVE_LANGUAGE_THOUGHT_REWRITE_COMPLETE",
+      "revision_lineage": {
+        "supersedes_text_sha256": "8d9fe3752e602041c8effb12f39bb2188c60a74843be4285d9181969e314a2e4",
+        "preserves_historical_acceptance": true,
+        "historical_method_version": "0.4.0",
+        "revision_kind": "LANGUAGE_THOUGHT_PLANE_CURRENT_WORK_REPAIR"
+      },
       "review_provenance": {
         "task": "IGNITION-ZHIYUAN-WRITING-SONG-HUIZONG-TAOISM-NOTE-TO-PUBLISHED-WORK-R1-20260802",
         "task_number": 113,
@@ -48,6 +60,18 @@
       "method_version": "0.3.0",
       "source_sha256": "63502b10083eeb674e07d69a824f92e9ff35c172ef833fbb810c70d16b06b75b",
       "accepted_text_sha256": "c135acd35a2232f0a6b3f933db482932a9fe5d5add51f870af97901faac90d4b",
+      "current_revision_sha256": "520a4b2043dacbd876b2831c257e62d126378a8e916c4beeb5365867f7f7025d",
+      "current_method_version": "0.5.0",
+      "current_method_sha256": "615b049dca357f4c00e3baeb38a3edd649a3bfadfa3a292928ab8d9ed8867e4d",
+      "current_revision_task_number": 114,
+      "current_revision_task_id": "IGNITION-LANGUAGE-THOUGHT-LOGIC-CROSS-LAYER-PLANE-REPRESENTATIVE-LANGUAGE-PILOT-AND-CURRENT-WORK-REPAIR-R1-20260802",
+      "current_revision_status": "FOUR_ROLE_REVIEW_COMPLETE_SUBSTANTIVE_LANGUAGE_THOUGHT_REWRITE_COMPLETE",
+      "revision_lineage": {
+        "supersedes_text_sha256": "c135acd35a2232f0a6b3f933db482932a9fe5d5add51f870af97901faac90d4b",
+        "preserves_historical_acceptance": true,
+        "historical_method_version": "0.3.0",
+        "revision_kind": "LANGUAGE_THOUGHT_PLANE_CURRENT_WORK_REPAIR"
+      },
       "review_provenance": {
         "task": "121Q29R",
         "status": "121Q29R_PUBLICATION_TEXT_ACCEPTED",

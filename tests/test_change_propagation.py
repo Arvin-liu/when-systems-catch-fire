@@ -194,9 +194,15 @@ class ChangePropagationTests(unittest.TestCase):
         self.assertFalse(closure["closure_complete"])
         self.assertIn("propagation_cycle", {item["type"] for item in closure["residue"]})
 
-    def test_g_q29r_is_frozen(self):
-        payload = Path("docs/publication/works/when-an-army-believes-its-own-back.md").read_bytes()
-        self.assertEqual(hashlib.sha256(payload).hexdigest(), "c135acd35a2232f0a6b3f933db482932a9fe5d5add51f870af97901faac90d4b")
+    def test_g_q29r_historical_acceptance_is_frozen_while_task114_revision_is_current(self):
+        historical = subprocess.run(
+            ["git", "show", "8812b93e7aaaffd5d68ca4cf36b01857d0712026:docs/publication/works/when-an-army-believes-its-own-back.md"],
+            check=True,
+            capture_output=True,
+        ).stdout
+        self.assertEqual(hashlib.sha256(historical).hexdigest(), "c135acd35a2232f0a6b3f933db482932a9fe5d5add51f870af97901faac90d4b")
+        current = Path("docs/publication/works/when-an-army-believes-its-own-back.md").read_bytes()
+        self.assertNotEqual(hashlib.sha256(current).hexdigest(), hashlib.sha256(historical).hexdigest())
 
     def test_fixpoint_and_hash_are_deterministic(self):
         first, _ = compute(copy.deepcopy(BASE_REQUEST))

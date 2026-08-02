@@ -18,7 +18,15 @@
 
 [打开正式作品](../docs/publication/works/when-an-emperor-manufactures-heaven.md) · [打开来源与边界](../docs/publication/cases/song-huizong-taoism-1117-source.md) · [打开点火分析](../reports/publication/song-huizong-taoism-point-fire-analysis.md)
 
-这篇作品由当前之元写作法 `0.4.0` 生成并经过历史／来源、反方／解释、编辑／文学三重审查与实质重写。它从《瑞鹤图》追问天意如何被组织成公共接口，保留信仰、制度化、受影响主体和 1127 年后见之明之间的边界。出版状态：`PUBLISHED_WITH_EXPLICIT_LIMITATIONS`；输入中的第三方课程原文未公开。
+这篇作品在任务 113 中由之元写作法 `0.4.0` 生成并完成三重审查；任务 114 冻结该历史哈希后，又通过当前 `0.5.0` 和[语言—思维逻辑平面](../docs/architecture/language-thought-logic-plane.md)完成全篇复核、四类角色审查与新修订。文章先让鹤飞过，再让宫廷的报告、登记和解释进入，追问天意如何被组织成公共接口；私人信仰、制度化、受影响主体和 1127 年后见之明的边界不变。出版状态：`PUBLISHED_WITH_EXPLICIT_LIMITATIONS`；输入中的第三方课程原文未公开。
+
+### 《当一支军队开始相信自己的背影》
+
+[打开正式作品](../docs/publication/works/when-an-army-believes-its-own-back.md) · [打开来源与边界](../docs/publication/cases/jin-rise-case-source.md) · [打开点火分析](../reports/publication/jin-rise-point-fire-analysis.md)
+
+这篇作品的历史接受版本使用之元写作法 `0.3.0`；任务 114 保留旧哈希和审查 provenance，再以 `0.5.0` 重查施事、局部动作与整体系统、自然中文信息顺序和有意标记句法。修订没有把军队、扩音器、银行和电网写成同一物，也没有把结构对应升级为已识别的历史因果。出版状态仍是有明确证据边界的当前作品。
+
+[打开之元写作法成果全集](../docs/publication/zhiyuan-writing-showcase.md) · [打开语言—思维维度与语言配置](../docs/language-thought/README.md)
 
 ## 一页全景
 

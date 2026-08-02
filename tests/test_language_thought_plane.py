@@ -10,6 +10,7 @@ from tools.language_thought.validate_language_thought import (
     evaluate_fixtures,
     load_json,
     load_jsonl,
+    validate_fixture_references,
     validate_repository,
     validate_transformation,
 )
@@ -82,6 +83,13 @@ class LanguageThoughtPlaneTests(unittest.TestCase):
         self.assertEqual(metrics.recall, 1.0)
         self.assertEqual(layers, set(REQUIRED_LAYERS))
         self.assertIn("purposeful_marked_syntax", phenomena)
+
+    def test_dimension_fixture_reference_fails_closed(self):
+        dimensions = copy.deepcopy(self.dimensions)
+        dimensions["dimensions"][0]["validation_fixture_ids"][0] = "fixture-does-not-exist"
+        errors = []
+        validate_fixture_references(dimensions, self.fixtures, errors)
+        self.assertTrue(any("unknown validation fixtures" in error for error in errors), errors)
 
     def test_schema_assets_are_valid_json_and_declared(self):
         for relative_path in self.manifest["schemas"]:

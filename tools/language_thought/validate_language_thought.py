@@ -330,6 +330,36 @@ def evaluate_fixtures(fixtures: list[dict[str, Any]]) -> tuple[FixtureMetrics, l
     return metrics, errors, phenomena, layers
 
 
+def validate_fixture_references(
+    dimensions_document: dict[str, Any],
+    fixtures: list[dict[str, Any]],
+    errors: list[str],
+) -> None:
+    """Fail closed when a dimension points to a missing validation fixture."""
+
+    fixture_ids = {
+        fixture.get("record_id")
+        for fixture in fixtures
+        if isinstance(fixture, dict) and isinstance(fixture.get("record_id"), str)
+    }
+    dimensions = dimensions_document.get("dimensions", [])
+    if not isinstance(dimensions, list):
+        return
+    for dimension in dimensions:
+        if not isinstance(dimension, dict):
+            continue
+        dimension_id = dimension.get("dimension_id", "?")
+        references = dimension.get("validation_fixture_ids", [])
+        if not isinstance(references, list):
+            continue
+        missing = sorted(set(references) - fixture_ids)
+        require(
+            not missing,
+            f"dimension[{dimension_id}]: references unknown validation fixtures {missing}",
+            errors,
+        )
+
+
 def validate_audit(population: dict[str, Any], findings: list[dict[str, Any]], errors: list[str]) -> None:
     require(population.get("status") == "FROZEN_BOUNDED_POPULATION", "audit population: status must be FROZEN_BOUNDED_POPULATION", errors)
     items = population.get("items")
@@ -385,6 +415,7 @@ def validate_repository(root: Path = ROOT) -> dict[str, Any]:
     fixtures = load_jsonl(root / manifest["fixture_registry"])
     metrics, fixture_errors, phenomena, fixture_layers = evaluate_fixtures(fixtures)
     errors.extend(fixture_errors)
+    validate_fixture_references(dimensions_document, fixtures, errors)
     population = load_json(root / manifest["audit_population"])
     findings = load_jsonl(root / manifest["audit_findings"])
     validate_audit(population, findings, errors)

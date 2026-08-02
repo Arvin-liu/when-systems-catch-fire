@@ -1,6 +1,6 @@
 # AI 助手使用参考
 
-版本事实：当前迭代方法为 `1.4.0 Continuous Stage Snapshot Publication`，当前系统图为 `0.4.0`；`1.3.0`／`0.3.0` 与更早版本均为 Historical。Q32I 已独立接受、由 PR #62 普通合并并 Closed；其 execution capability 与 validation capability 必须分离，manual/external 不得调用本地 validator。`docs/generated/recent-stage-results.md` 的“正在炼化”只投影阶段摘要；可见不等于 Accepted、Current、Activated 或能力可用。
+版本事实：当前迭代方法为 `1.4.0 Continuous Stage Snapshot Publication`，当前系统图为 `0.5.0`；系统图 `0.4.0`、`0.3.0` 与更早版本均为 Historical。Q32I 已独立接受、由 PR #62 普通合并并 Closed；其 execution capability 与 validation capability 必须分离，manual/external 不得调用本地 validator。`docs/generated/recent-stage-results.md` 的“正在炼化”只投影阶段摘要；可见不等于 Accepted、Current、Activated 或能力可用。
 
 这页给第一次接触点火项目的人使用。你不必先读完整仓库，可以先把下面的提示词复制给自己常用的 AI 助手，让它帮你做第一轮阅读。
 
@@ -98,7 +98,9 @@ llms.txt
 
 Q32I 的 1.3.0 增量执行现为 Historical，但其 authority / execution / validation 分离、统一预检、完整 rollback、NonImpactProof 与 cache identity 边界继续由 Current 1.4.0 继承。试用时先读取 `docs/architecture/incremental-execution.md`，只使用 profile 登记的结构化命令。CI 和 artifact 均不能自我建立 Accepted、Merged 或 Current。
 
-L6 公共写作的当前接口是之元写作法 [`0.4.0`](./publication/zhiyuan-writing-method.md)及其[后台规格](../templates/publication/zhiyuan-writing-spec.md)所定义的双来源素材池；`0.3.0` 保留为历史版本。AI 必须区分 `external_input` 与 `ignition_increment`：后者可包括 claim、argument、mechanism、map、gap、residue、Q12—Q14、MCF／PSD／ARN 投影、分析报告和 provenance-gated 返回项，但必须保存 canonical 路径、版本、生成任务、claim ceiling 与原始来源回链。点火派生产物不能被算作新的独立证据。试读／发布反馈仍须登记主体、渠道、时间、原文范围和解释限制，才可返回适用流程。
+L6 公共写作的当前接口是之元写作法 [`0.5.0`](./publication/zhiyuan-writing-method.md)及其[后台规格](../templates/publication/zhiyuan-writing-spec.md)所定义的双来源素材池；`0.4.0`、`0.3.0` 保留为历史版本。AI 必须区分 `external_input` 与 `ignition_increment`：后者可包括 claim、argument、mechanism、map、gap、residue、Q12—Q14、MCF／PSD／ARN 投影、分析报告和 provenance-gated 返回项，但必须保存 canonical 路径、版本、生成任务、claim ceiling 与原始来源回链。点火派生产物不能被算作新的独立证据。试读／发布反馈仍须登记主体、渠道、时间、原文范围和解释限制，才可返回适用流程。
+
+涉及翻译、转述、命题抽取或目标语言成文时，先读[语言—思维逻辑平面](./architecture/language-thought-logic-plane.md)和[人类入口](./language-thought/README.md)。正式记录至少保存 source form/profile、normalized meaning candidate、target form/profile、framing delta、unmapped residue、claim ceiling、provenance 和 version；候选意义不是语言外真义。行为者、体貌、证据来源、指称、连接或机制视角发生认识相关变化却未声明时必须失败关闭。自动门不裁定任意文本的自然度或文学质量；中文出版还要经过母语上下文、朗读和反常句法收益审查。语言配置描述有边界倾向，不得写成强语言决定论、民族心智或不同真值逻辑。
 
 若任务需要全项目导航，读取[完整可点击系统图说明](./architecture/interactive-system-map.md)及机器 spec。图中节点和连线是当前导航或受约束信息流，不是 L7、因果图、严格同构或理论完整性证明。
 

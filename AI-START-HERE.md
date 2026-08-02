@@ -25,7 +25,7 @@
 
 读取阶段快照责任字段时，先把 `responsible_actor.actor_ref`／`publisher_actor.actor_ref` 解析到 `data/operations/responsibility-actors.json`；显示名不是权威身份。`execution_agents` 与 `automation_workflows` 只是技术执行记录，禁止把 Agent、模型、CI 或工作流解释为最终责任人或负责组织。
 
-若任务涉及 L6 公共故事、文章或作品反馈，还应读取 `docs/publication/zhiyuan-writing-method.md` 与对应后台规格。之元写作法 `0.4.0` 是当前能力，使用外部输入与点火增量输出双来源素材池；`0.3.0` 保留为历史版本。不得把点火派生产物重算为独立外部证据。
+若任务涉及翻译、命题抽取、跨语言建模或 L6 公共故事、文章与作品反馈，还应读取 `docs/architecture/language-thought-logic-plane.md`、`docs/language-thought/README.md`、`docs/publication/zhiyuan-writing-method.md` 与对应后台规格。之元写作法 `0.5.0` 是当前能力，`0.4.0`、`0.3.0` 保留为历史版本。它使用外部输入与点火增量输出双来源素材池，并通过目标语言配置直接成文；不得把点火派生产物重算为独立外部证据。
 
 若任务涉及当前展示的之元写作法成果，还要读取 `docs/publication/zhiyuan-writing-showcase.md` 与 `data/publication/zhiyuan-writing-showcase.json`，并沿每项记录回到作品、案例来源链、点火分析和方法版本。首页只投影最近三项，不是完整清单或真值权威。
 
@@ -44,7 +44,7 @@
 - 12 元协议不是自动成立的数学公理；64 组合不是证明空间。
 - L6 解释和出版不能创造下层真实性。
 - 之元写作法的“层级跃迁”不是新架构层；横向换域、漂亮跳转、模板完成或读者共鸣都不能证明事实、因果、同构或文学质量。
-- 使用 0.4.0 时，先标记 `external_input` 与 `ignition_increment`，保存版本、生成路径、claim ceiling、不可映射残余和原始来源回链；发布反馈必须登记 provenance 后才能成为候选 source／gap。同源只表示维护者声明的设计来源与结构对应候选，不是大脑事实、形式同构或真值许可。
+- 使用 0.5.0 时，先标记 `external_input` 与 `ignition_increment`，保存版本、生成路径、claim ceiling、不可映射残余和原始来源回链；涉及语言转换时还须保存 source form、候选意义、target form 与 framing delta。发布反馈必须登记 provenance 后才能成为候选 source／gap。同源只表示维护者声明的设计来源与结构对应候选，不是大脑事实、形式同构或真值许可。
 - 效果推理只产生行动候选，不产生真值。
 - 机制判断只约束解释和 claim ceiling，不自动产生因果证明。
 - 注意力控制只判断循环是否有信息增量，不证明结论更深。
@@ -54,9 +54,9 @@
 - Multiscale Causal Fabric、Probabilistic System Dynamics 和 Adaptive Relational Network 是当前建模/投影能力，不是新真值层。
 - 关系网络的邻接、相似性、中心性、社群、检索和行为变化不能升级为真理、价值、因果或内部学习机制证明。
 - 迭代方法只能约束操作纪律，不能证明实质结论正确。
-- 当前迭代方法是 `1.4.0`（Current），系统图是 `0.4.0`（Current）。
+- 当前迭代方法是 `1.4.0`（Current），系统图是 `0.5.0`（Current）。
 
-方法 `1.3.0` 与系统图 `0.2.0`、`0.3.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0` 为更早 Historical。当前方法要求读取 `data/operations/project-components.json` 与 `data/operations/change-propagation-topology.json`，把变更路径解析为构件、遍历声明关系到 fixpoint、绑定决定／map diff／residue，再由 registries 与布局 overlay 派生系统图。不得把 Git diff、依赖或可达性称为现实因果证明。
+方法 `1.3.0` 与系统图 `0.3.0`、`0.4.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0`、`0.2.0` 为更早 Historical。当前方法要求读取 `data/operations/project-components.json` 与 `data/operations/change-propagation-topology.json`，把变更路径解析为构件、遍历声明关系到 fixpoint、绑定决定／map diff／residue，再由 registries 与布局 overlay 派生系统图。不得把 Git diff、依赖或可达性称为现实因果证明。
 - Q32I 的方法 `1.3.0` 与系统图 `0.3.0` 已独立接受、由 PR #62 普通合并并完成生产收口；其后方法升为 `1.4.0` Current。
 
 `1.3.0` 降为 Historical，Q32I 为 Closed。选择性物化只在完整 profile、authority、plan 与指纹身份一致时选择性物化。Authority 类型、execution capability 与 validation capability 必须分别声明；apply 必须先通过统一预检，rollback（回滚）必须证明整仓字节／类型／symlink／mode 恢复，否则进入 unrecovered 与 recovery package。NonImpactProof 只证明声明关系范围内的非影响；cache 不是真相源；meta-authority 变更强制 full rebuild。Q33 启动包已准备，但 Q33 与 Q34—Q40 均尚未启动。

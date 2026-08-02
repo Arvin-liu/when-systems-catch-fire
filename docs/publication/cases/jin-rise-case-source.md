@@ -27,6 +27,6 @@
 1. 起始案例：本页记录输入身份与公开边界。
 2. [Q26 点火分析](../../../reports/publication/jin-rise-point-fire-analysis.md)：把单因叙事拆成有竞争解释和证据上限的机制候选。
 3. [《当一支军队开始相信自己的背影》](../works/when-an-army-believes-its-own-back.md)：由之元写作法生成并经 Q29R 出版前编辑接受的公共作品。
-4. [之元写作法 0.3.0](../zhiyuan-writing-method.md)：当前 L6 公共表达与来源约束反馈能力。
+4. [之元写作法](../zhiyuan-writing-method.md)：本作品历史接受时使用 0.3.0；当前方法为 0.5.0，旧版本不回填。
 
 多条 AI、Codex 或得到大脑处理路径若使用同一材料，其收敛不构成独立历史证据。

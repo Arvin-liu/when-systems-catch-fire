@@ -2,17 +2,17 @@
 
 English: **Zhiyuan Writing Method**
 
-Version: `0.4.0` current; `0.3.0` remains a historical merged version.
+Version: `0.5.0` current; `0.4.0` and `0.3.0` remain historical merged versions.
 
 Status: `CURRENT_MERGED_L6_CAPABILITY`
 
-Operational location: L6 interpretation / application / publication. Generative provenance: maintainer-declared shared cognitive provenance with 点火 as a whole. Version 0.4.0 extends the writing-material boundary without adding an architecture or truth layer and cannot raise any L0-L5 claim.
+Operational location: L6 interpretation / application / publication. Generative provenance: maintainer-declared shared cognitive provenance with 点火 as a whole. Version 0.5.0 makes the method a target-language publication consumer of the project-wide Language–Thought Logic Plane; it does not add L7 or raise any L0-L5 claim.
 
 ## 命名与内部定义
 
 本方法以“之元”命名，因为它不是从通用写作教材拼接而来，而是从维护者之元的作品、心智运动、反馈和失败反例中蒸馏、提炼并总结出的个人写作方法。名称标记其真实来源和心智风格谱系。
 
-“之元写作法”是方法名称；“心智层级跃迁”是其当前 `0.3.0` 的核心生成运动之一。方法具体如何实现，由起始承载点、前视写作、不可容纳残余、心智引力中心、概念递归重定义、突然跃迁、隐形连续性、回照增义、潜题生长与反向显影、低层保存、信息增益停止，以及公共表达与反馈返回点火的双向契约共同定义。
+“之元写作法”是方法名称；“心智层级跃迁”是其自 `0.3.0` 起的核心生成运动之一。方法具体如何实现，由起始承载点、前视写作、不可容纳残余、心智引力中心、概念递归重定义、突然跃迁、隐形连续性、回照增义、潜题生长与反向显影、低层保存、信息增益停止，以及公共表达与反馈返回点火的双向契约共同定义。
 
 以个人名字命名不等于宣称只有这一种正确写法，也不等于任何人使用方法就复制了之元本人。其他人或 AI 可以学习可迁移部分，但作品仍取决于各自的经历、选择、价值与审美判断。
 
@@ -25,6 +25,8 @@ Operational location: L6 interpretation / application / publication. Generative 
 `0.3.0` 修复 0.2.0 仍把方法写成 L6 外接出版工具的问题：之元写作法与点火是维护者声明的同源认知运动在不同约束下形成的候选投影。之元写作法操作上仍位于 L6，却同时承担公共表达和反馈返回接口。review `4713833187`、旧 HEAD 和追加提交保留完整修订历史。
 
 `0.4.0` 修复“写作素材默认等于外部原始材料”的窄化：写作素材池至少同时接收外部输入源和点火增量输出源。点火对材料生成的 claim、argument、mechanism、map、gap、residue、Q12—Q14 输出、MCF／PSD／ARN 投影、分析报告与 provenance-gated 返回项，可以在保存来源链、版本、对象类型、claim ceiling 和不可映射残余后继续成为写作材料。复用点火产物不把派生结构伪装成新的独立证据；0.3.0 保留为历史已合并版本。
+
+`0.5.0` 修复“概念已经成立，中文成句就只是末端文风”的错误。之元写作法现在明确使用横穿 L0—L6 的[语言—思维逻辑平面](../architecture/language-thought-logic-plane.md)：来源语言、命题主体、事件边界、论证连接、机制视角和翻译残余在进入写作前已经受审计；到 L6 后，再通过目标语言配置直接成文。中文作品不能先搭一个潜在英语句架，再把其中词语换成中文。0.4.0 与 0.3.0 保留为历史已合并版本。
 
 ## 与点火整体的同源认知关系
 
@@ -122,6 +124,46 @@ Operational location: L6 interpretation / application / publication. Generative 
 3. 写作可以重组、递归定义和跨域投影这些增量，但不得抹掉 gap、residue、竞争解释、主体差异和未完成验证。
 4. provenance-gated 返回项只有完成主体、时间、渠道、原文范围和解释限制登记后才能进入；点赞、共鸣、传播或多 AI 一致本身仍只是体验／传播数据。
 5. 素材池扩大的是 L6 的生成范围，不提高 L0—L5 权限，不增加新层，也不证明点火或之元写作法完整、普遍有效。
+
+## 0.5.0：通过目标语言组织思想
+
+之元写作法只是[语言—思维逻辑平面](../architecture/language-thought-logic-plane.md)的一个 L6 使用者。平面属于点火整体：它在 L0 保存原始语言与转换链，在 L1 检查命题框架，在 L2 保留对象／事件包装，在 L3 审计篇章连接，在 L4 检查机制主体与视角，在 L5 保存差异、对照和残余。作品到了 L6，才进入具体目标语言实现门。
+
+这一区分意味着：心智层级跃迁不能替成句缺陷辩护。一个概念即使真的改变了问题层级，也可能仍被组织成抽象主体、嵌套被动和机械从句。作者需要回到事件、参与者和信息出现的顺序，让思想在目标语言里重新长出来，而不是把英语式草稿表面翻译成中文。
+
+### 语言敏感材料的最低记录
+
+发生翻译、转述或高风险重写时，后台同时保存：
+
+- `source_form` 与来源语言配置；
+- `normalized_meaning_candidate`，并明确它只是比较候选，不是语言外的真正意义；
+- `target_form` 与目标语言配置；
+- 行为者、体貌、证据来源、指称、连接、信息顺序等 `framing_deltas`；
+- 未能带入成品的 `unmapped_residue`；
+- provenance、version 与不因文学质量而改变的 claim ceiling。
+
+只要认识相关维度已经变化却没有进入差异账本，成品失败关闭。回译只能辅助发现问题；词面来回相似不证明行为者、确定性或事件边界没有改变。
+
+### 中文直接实现门
+
+中文作品先用[现代普通话书面中文配置](../language-thought/profiles/zh-hans.md)组织，再进入编辑审查：
+
+1. 先确认谁做了什么、事情是否完成、信息从哪里来；这些内容不能为了顺口而改变。
+2. 让事件和关系先落地，再决定抽象反思何时进入。抽象可以先说，但必须是作品真实需要的倒置，不是潜在翻译句架。“事件先行”是一种诊断动作，不是要求所有作品使用同一开头、同一语序或同一短句模板。
+3. 检查话题能否延续，哪些主语可以省，哪些名词必须重提以消除歧义。
+4. 检查体貌、时间、终点、数量范围、传闻／推测与因果连接，不凭空补 `因此`，也不因原文没有连词就否认语境关系。
+5. 检查被动、名词化、多层 `的`、抽象主体和机器平行。它们都是可用资源，不是禁词；只有在遮蔽行为者、阻塞成句或伪造关系时才要求改写。
+6. 朗读全文。停顿应落在意思的关节，长句能保持视角，短句不靠断裂制造假力量。
+
+任务 113 的旧句“它们飞得并不需要先知道自己将被怎样解释”同时改变了事件顺序、主体负担和呼吸，不能靠替换一个 `得` 字解决。0.5.0 的修订先让鹤飞过，再让后来的人进入解释。完整前后说明见[缺陷复核](../language-thought/task-113-defect-before-after.md)。
+
+### 多谱系文学校准与反常句法
+
+语言学和类型学说明结构上能够怎样表达，普通母语使用说明通常怎样组织，文学作品则说明优秀作者如何拉伸或违反默认。三者不能互相替代。
+
+中文校准以汪曾祺的松弛、简净和呼吸为重要一端，同时用鲁迅的拗峭压力、老舍的可听见口吻、沈从文和孙犁的观察与留白、朱自清的长短调度、阿城的压缩、史铁生的反思长句相互校正。项目只提取机制，不提交大型版权语料，不模仿可识别指纹，不把“自然中文”统一成一种风格。
+
+反常结构可以通过，但须回答它带来的可审计收益：视角、速度、压力、歧义、声音或回响。若唯一理由是“文学可以不自然”，退回重写；若为了规则整齐而删除真实收益，也同样失败。文学校准只裁定表达，不提高事实、因果或价值 claim ceiling。
 
 ## 起始承载点
 
@@ -252,6 +294,10 @@ Operational location: L6 interpretation / application / publication. Generative 
 ### 停止门
 
 继续升层必须带来信息增益；模板字段完整、字数、层数和格言式结尾都不是完成证明。
+
+### 语言—思维实现门
+
+来源、候选意义、目标形式、框架差异和残余同时存在；认识相关变化不得静默。中文成品通过语法、信息顺序、指称、体貌、连接、节奏、标点、语体、朗读和文学标记性审查。自动 validator 通过只证明结构化登记一致，不能证明自然度或文学质量。
 
 ## 反模式与降级
 

@@ -1,0 +1,38 @@
+{
+  "schema_version": "114.language-thought-candidate-freeze.v1",
+  "task_number": 114,
+  "task_id": "IGNITION-LANGUAGE-THOUGHT-LOGIC-CROSS-LAYER-PLANE-REPRESENTATIVE-LANGUAGE-PILOT-AND-CURRENT-WORK-REPAIR-R1-20260802",
+  "control_commit": "adb170f8b3985afc852d96ac1722a2ec443e090c",
+  "formal_base_commit": "8812b93e7aaaffd5d68ca4cf36b01857d0712026",
+  "freeze_state": "FROZEN_FOR_ROLE_SEPARATED_REVIEW",
+  "frozen_after_plane_foundation": true,
+  "frozen_before_review_disposition_and_final_rewrite": true,
+  "candidates": [
+    {
+      "candidate_id": "task114-army-language-revision-r0",
+      "path": "docs/publication/works/when-an-army-believes-its-own-back.md",
+      "candidate_sha256": "2575c6c20922b434cde18514aed9fc3cd68a8df7514378354b2f8f46af7636f0",
+      "historical_accepted_sha256": "c135acd35a2232f0a6b3f933db482932a9fe5d5add51f870af97901faac90d4b"
+    },
+    {
+      "candidate_id": "task114-emperor-language-revision-r0",
+      "path": "docs/publication/works/when-an-emperor-manufactures-heaven.md",
+      "candidate_sha256": "d397dcb1dff1da39d0340c110b4e655c32fe9b9ce58e99f6b4904ca602bcb7ac",
+      "historical_accepted_sha256": "8d9fe3752e602041c8effb12f39bb2188c60a74843be4285d9181969e314a2e4"
+    },
+    {
+      "candidate_id": "task114-zhiyuan-method-0.5-r0",
+      "path": "docs/publication/zhiyuan-writing-method.md",
+      "candidate_sha256": "fd23ebd2cb7ad988e31a5e6c38612711fdb1bbda81718a5f74d1381c7985ebab",
+      "historical_method_version": "0.4.0",
+      "candidate_method_version": "0.5.0"
+    }
+  ],
+  "review_roles": [
+    "language_cognition_and_typology",
+    "cross_layer_architecture",
+    "native_chinese",
+    "literary_anti_homogenization_and_copyright"
+  ],
+  "claim_ceiling": "This freeze binds review inputs only. It does not mark the candidates accepted, final, merged or terminal."
+}

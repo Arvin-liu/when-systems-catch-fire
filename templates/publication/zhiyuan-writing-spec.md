@@ -1,6 +1,6 @@
 # 之元写作法故事规格
 
-Method version: `0.4.0` current; `0.3.0` remains historical
+Method version: `0.5.0` current; `0.4.0` and `0.3.0` remain historical
 Status: `CANDIDATE_BACKSTAGE_TEMPLATE_PENDING_INDEPENDENT_REVIEW`
 
 本规格用于后台生成与审计，不是前台提纲。字段顺序不是段落顺序；允许折返、留空、合并、分叉和 `UNNAMED`，不得把它变成固定层数、五段式或隐蔽分幕。
@@ -122,6 +122,28 @@ Status: `CANDIDATE_BACKSTAGE_TEMPLATE_PENDING_INDEPENDENT_REVIEW`
 - 回照／潜题门：起点或旧层是否增义；潜题是否由材料生长？
 - 证据门：哪些句子必须回链来源；哪些只能写成候选？
 - 价值门：事实限制、个体经历、物理差异、受损／沉默主体是否保留？
+
+### 语言—思维逻辑平面记录
+
+- `source_form`、来源语言／变体／语体／版本：
+- `source_language_profile`：
+- `normalized_meaning_candidate`（必须标明候选投影，不是真义）：
+- `target_form` 与 `target_language_profile`：
+- 行为者、体貌、证据来源、指称、连接、信息顺序等 `framing_deltas`：
+- `unmapped_residue` 及其是否影响 claim：
+- 转换 provenance、version 与不变的 claim ceiling：
+- 是否存在认识相关静默变化；若有：`FAIL_CLOSED`：
+
+### 目标中文实现门
+
+- 事情是否先按作品所需发生，再让反思进入；若倒置，表达收益是什么：
+- 话题／主语／焦点是否自然，省略是否可恢复，代词是否唯一或诚实地保留歧义：
+- `了／着／过／在`、时间、过程、完成和终点是否一致：
+- 是否凭空补出因果、让步、确定性或行为者：
+- 被动、名词化、多层 `的` 与机器平行是否遮蔽事件或主体：
+- 全文朗读时，长短句、停顿和标点是否落在意思关节：
+- 反常句法的可审计收益；若无：退回重写：
+- 是否正在模仿一个作家或统一作者声音；若是：停止：
 
 ## 信息增益停止
 

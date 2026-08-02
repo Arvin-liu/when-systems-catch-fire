@@ -1,5 +1,5 @@
 {
-  "current_map_version": "0.4.0",
+  "current_map_version": "0.5.0",
   "geometry": {
     "columns": 3,
     "group_gap": 28,
@@ -81,10 +81,18 @@
       "id": "boundaries",
       "label": "图的解释边界",
       "row": 2
+    },
+    {
+      "color": "#0369a1",
+      "column": 0,
+      "description": "横穿 L0—L6 保存语言框架差异、残余与目标语言实现；不是 L7",
+      "id": "language_thought",
+      "label": "语言—思维逻辑平面",
+      "row": 3
     }
   ],
-  "historical_map_version": "0.3.0",
-  "layout_version": "1.1.0",
+  "historical_map_version": "0.4.0",
+  "layout_version": "1.2.0",
   "node_order": {
     "boundaries": [
       "no_l7",
@@ -130,6 +138,9 @@
       "l5",
       "l6"
     ],
+    "language_thought": [
+      "language_thought_plane"
+    ],
     "models": [
       "mcf",
       "psd",
@@ -155,6 +166,6 @@
     ]
   },
   "repository_url": "https://github.com/Arvin-liu/when-systems-catch-fire",
-  "subtitle": "0.4.0 候选投影；0.2.0 为 Historical 轨迹。点击构件打开 canonical 目标。路径、邻近与声明依赖不自动表示现实因果。",
+  "subtitle": "0.5.0 Current 派生投影；0.4.0 为 Historical。语言—思维是横穿 L0—L6 的 overlay，不是 L7。路径、邻近与声明依赖不自动表示现实因果。",
   "title": "点火完整可点击系统图"
 }

@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-08-02 — Language–Thought Logic Plane and current-work repair (task 114)
+
+- Added the Language–Thought Logic Plane as an orthogonal control projection across exact L0–L6, with no L7 and no independent truth authority.
+- Added a finite twelve-dimensional basis; full bounded project profiles for modern written Chinese and contemporary written English; bounded preliminary Japanese and Turkish stress profiles; source, candidate-meaning, target, framing-delta and residue records; schemas, deterministic validation and adversarial fixtures.
+- Audited a frozen fourteen-surface project population, integrated the plane into current architecture, AI entry points, propagation topology and system map, and upgraded Zhiyuan Writing Method to 0.5.0 as one L6 consumer.
+- Completed four role-separated reviews and substantively revised both current Zhiyuan works while preserving their historical accepted hashes and method provenance.
+- The structured fixture result applies only to authored annotations. It does not prove arbitrary-text understanding, naturalness, literary quality, linguistic determinism or a universal algorithm per language.
+
 ## 2026-07-30 — Knowledge experience entry and exploration layer (task 102)
 
 - Added a no-path `KNOWLEDGE/` entry with typed What's New, research-question map, uniform asset cards, 1/5/full reading, historical aliases and coverage audit.
