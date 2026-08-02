@@ -1,0 +1,24 @@
+{
+  "campaign_id": "POINTFIRE-OVERNIGHT-PUBLIC-EVIDENCE-RESEARCH-CAMPAIGN-20260803-R1",
+  "round_number": 2,
+  "short_slug": "handwriting-learning",
+  "start_time": "2026-08-03T02:37:51+08:00",
+  "end_time": "2026-08-03T02:42:36+08:00",
+  "timezone": "Asia/Shanghai",
+  "research_baseline": "61510ed26a1285e1746777c9eacd568cb3038a50",
+  "question": "手写笔记本身是否比键盘更能促进大学生学习，还是媒介、策略、复习和打字熟练度共同决定结果？",
+  "initial_claim": "手写可能改变注意和加工过程，但不能直接等同于更高的即时或长期学习成绩。",
+  "selection_score": {
+    "public_relevance": 5,
+    "evidence_availability": 5,
+    "bounded_answerability": 5,
+    "novelty_versus_previous_rounds": 5,
+    "capacity_to_revise_or_falsify_existing_assumption": 5
+  },
+  "verdict": "CONTESTED",
+  "source_count": 6,
+  "source_classes": ["peer_reviewed_original_research", "journal_brief_report", "systematic_review", "peer_reviewed_meta_analysis", "peer_reviewed_direct_replication", "edited_health_news"],
+  "report_sha256": "190ab7959353edc5692691bbc144b2dbf54e19ff8c1dd7dd32106cc4b373fff8"
+  "commit_sha": null,
+  "state": "COMPLETE_AWAITING_EXTERNAL_REVIEW"
+}
