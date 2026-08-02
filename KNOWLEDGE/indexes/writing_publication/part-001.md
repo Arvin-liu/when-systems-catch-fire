@@ -114,6 +114,11 @@
   - 可搜索名称：Current Main vs 1.4 Candidate Homepage Comparison / IGNITION-ITERATION-METHOD-1.4-homepage-comparison
   - 来源：`reports/operations/IGNITION-ITERATION-METHOD-1.4-homepage-comparison.md`
   - 依赖：—；被引用：—
+- [docs/publication/cases/song-huizong-taoism-1117-source.md](../../../docs/publication/cases/song-huizong-taoism-1117-source.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：Y2021 / docs/publication/cases/song-huizong-taoism-1117-source.md / Y2021
+  - 来源：`docs/publication/cases/song-huizong-taoism-1117-source.md`
+  - 依赖：—；被引用：—
 - [Embodied anchoring is optional mode; cross-domain isomorphism is application type; high-dimensional compression is optio](../../../reports/operations/121Q28R-cognitive-level-leap-writing-method-audit.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-dad7d080fea392b3 / Embodied anchoring is optional mode; cross-domain isomorphism is application type; high-dimensional compression is optio
@@ -332,7 +337,7 @@
 - [之元写作法 \[`0.4.0`\](../../../docs/publication/zhiyuan-writing-method.md) 是当前 L6 接口，\[后台规格\](../../../docs/USAGE.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-cebb58b02acaa1d6 / 之元写作法 \[`0.4.0`\](../../../docs/publication/zhiyuan-writing-method.md) 是当前 L6 接口，\[后台规格\](../../ASSET-CARDS.md#asset-hr-d328ae24912155e2)
-  - 类型/状态：`RESULT_OR_ARTICLE` · `HISTORICAL_COMPLETION_RECORD`
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
   - 可搜索名称：之元写作法成果 / zhiyuan-writing-showcase
   - 来源：`docs/publication/zhiyuan-writing-showcase.md`
   - 依赖：—；被引用：—
@@ -430,6 +435,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-cd9ad98397c8baf7 / 当前有边界关系表述是：`maintainer-declared shared cognitive provenance / structurally auditable homology candidate`。这里的 `candidate`
   - 来源：`docs/publication/zhiyuan-writing-method.md`
+  - 依赖：—；被引用：—
+- [当天意有了接口：宋徽宗与会自我证明的皇权](../../ASSET-CARDS.md#asset-hr-7977aad32b24032d)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：当天意有了接口：宋徽宗与会自我证明的皇权 / when-an-emperor-manufactures-heaven
+  - 来源：`docs/publication/works/when-an-emperor-manufactures-heaven.md`
   - 依赖：—；被引用：—
 - [所有候选故事都要先确认其对应的证据制度和失败类型。](../../../outputs/getbrain/storytelling-case-backlog-draft-20260707.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`

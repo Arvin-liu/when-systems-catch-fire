@@ -4,6 +4,33 @@
 
 ## 2026
 
+<a id="change-src-hr-d6dc7edfc015e4c7"></a>
+### 2026-08-02 · 《公元1117年：宋徽宗为什么崇信道教？》来源与边界
+
+- **类型：** `ARTICLE_OR_PUBLICATION`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** 这是一份得到大脑中的结构化笔记，包含较长的第三方课程原文。它是本轮写作的起始承载点和问题入口，不是独立的历史证据集合。课程里的叙述、笑话、类比、数字和解释不能因为被笔记收录就自动获得史料地位。
+- **来源：** [song-huizong-taoism-1117-source.md](../docs/publication/cases/song-huizong-taoism-1117-source.md)
+- **资产卡：** [HR-D6DC7EDFC015E4C7](./ASSET-CARDS.md#asset-hr-d6dc7edfc015e4c7)
+
+<a id="change-src-hr-7977aad32b24032d"></a>
+### 2026-08-02 · 当天意有了接口：宋徽宗与会自我证明的皇权
+
+- **类型：** `ARTICLE_OR_PUBLICATION`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** 它们飞得并不需要先知道自己将被怎样解释。鹤只是经过，宫门只是宫门，天空也没有留下可供核对的说明书。可在一座宫廷里，一件自然事件不会停在“发生过”这一层。它会被看见，被报告，被画下来，被题诗，再被放进一套关于太平、圣王与天命的语言中。赵佶留下的《瑞鹤图》，正是在这样的转换之后出现的。
+- **来源：** [when-an-emperor-manufactures-heaven.md](../docs/publication/works/when-an-emperor-manufactures-heaven.md)
+- **资产卡：** [HR-7977AAD32B24032D](./ASSET-CARDS.md#asset-hr-7977aad32b24032d)
+
+<a id="change-src-hr-694db9c100ff4eac"></a>
+### 2026-08-02 · 任务 113：宋徽宗道教笔记的点火分析
+
+- **类型：** `ARTICLE_OR_PUBLICATION`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** 这不是对原笔记的摘要，而是一次受证据边界约束的材料运行。运行的目标不是替徽宗的内心作证，也不是给“道教导致亡国”找一条漂亮因果链；目标是找出材料中最难被同一解释容纳的残余，再让文章承担这个残余。
+- **来源：** [song-huizong-taoism-point-fire-analysis.md](../reports/publication/song-huizong-taoism-point-fire-analysis.md)
+- **资产卡：** [HR-694DB9C100FF4EAC](./ASSET-CARDS.md#asset-hr-694db9c100ff4eac)
+
 <a id="change-chg-111"></a>
 ### 2026-08-01 · 任务 111：失败案例证据门禁与苹果案例 target 缺失裁定
 
@@ -464,8 +491,8 @@
 ### 2026-07-16 · 之元写作法成果
 
 - **类型：** `ARTICLE_OR_PUBLICATION`
-- **状态：** `HISTORICAL_COMPLETION_RECORD`
-- **变化：** 本索引是 121Q30T 收口后的当前成果入口，收录由之元写作法 0.3.0生成、具备可追溯来源链和点火分析链、并已进入相应审查状态的公共表达成果。
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** 本索引是 121Q30T 收口后的当前成果入口，收录由当前之元写作法 0.4.0或其历史版本生成、具备可追溯来源链和点火分析链、并已进入相应审查状态的公共表达成果。每项记录保留实际使用的方法版本；旧作品不会被回填成新版本。
 - **来源：** [zhiyuan-writing-showcase.md](../docs/publication/zhiyuan-writing-showcase.md)
 - **资产卡：** [HR-D328AE24912155E2](./ASSET-CARDS.md#asset-hr-d328ae24912155e2)
 

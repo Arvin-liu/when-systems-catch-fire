@@ -7,7 +7,7 @@
 
 **引导问题：** 对象、运算、定义域、证明和反例究竟完成到哪一步？
 
-当前检索覆盖 10928 项，重点卡片 101 项。 [打开本主题完整索引](./indexes/mathematics.md)
+当前检索覆盖 10949 项，重点卡片 101 项。 [打开本主题完整索引](./indexes/mathematics.md)
 
 - [认知路径积分函数](./ASSET-CARDS.md#asset-d127) — `KEEP_AS_STRUCTURAL_METAPHOR`；Identity: STRUCTURAL_METAPHOR. Definition scope: UNSPECIFIED_IN_SOURCE → structured inference or procedure.
 - [经典确定性函数](./ASSET-CARDS.md#asset-d182) — `KEEP_AS_TOY_MODEL`；Identity: PARAMETRIC_MATHEMATICAL_MODEL. Definition scope: r=mu/Lambda in (0,1) union (1,infinity) → relation over source entities.
@@ -61,7 +61,7 @@
 
 **引导问题：** 跨尺度表示、概率动力学和关系网络能描述什么，不能证明什么？
 
-当前检索覆盖 4329 项，重点卡片 74 项。 [打开本主题完整索引](./indexes/systems.md)
+当前检索覆盖 4352 项，重点卡片 75 项。 [打开本主题完整索引](./indexes/systems.md)
 
 - [Q14 Ignition Atlas maps are versioned derived projections, not a permanent total map and not a second canonical truth so](./ASSET-CARDS.md#asset-nfc-1e10227f1b51e4d0) — `RETAINED_AS_STRUCTURAL_METAPHOR`；- 121Q14 Ignition Atlas maps are versioned derived projections, not a permanent total map and not a second canonical truth source.
 - [Iteration method 1.3.0 and system map 0.2.0, 0.3.0 are Historical; method 1.2.0 and map 0.1.0 are earlier Historical, no](./ASSET-CARDS.md#asset-nfc-2b7304f480da70c2) — `ACCEPTED_AS_DEFINITION`；Iteration method 1.3.0 and system map 0.2.0, 0.3.0 are Historical; method 1.2.0 and map 0.1.0 are earlier Historical, not Current. Treat implementatio
@@ -81,14 +81,14 @@
 - [D598 系统性钝化索引可见性验证](./ASSET-CARDS.md#asset-hr-2e400b8fd7cc6b10) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`；D598 能被以下全部语义关键词召回（命中位置见下）：
 - [121Q23 Network Theory Source Map](./ASSET-CARDS.md#asset-hr-3ad9b4c8053ea959) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`；These sources guide representation and validator boundaries only.
 - [121Q31｜完整可点击系统图与双来源写作素材池审计](./ASSET-CARDS.md#asset-hr-3d02f20fb6692a0c) — `CANDIDATE_OR_PENDING_SOURCE`；Status: READYFORGPTVERIFICATIONCANDIDATEONLY
-- 其余 56 张重点卡片可在[资产卡总表](./ASSET-CARDS.md)搜索主题标记 `SYSTEMS`。
+- 其余 57 张重点卡片可在[资产卡总表](./ASSET-CARDS.md)搜索主题标记 `SYSTEMS`。
 
 <a id="subject-cognition"></a>
 ## 认知、Agent 与行动
 
 **引导问题：** 认知类比、行动选择和现实反馈怎样保留边界与失败条件？
 
-当前检索覆盖 1841 项，重点卡片 23 项。 [打开本主题完整索引](./indexes/cognition.md)
+当前检索覆盖 1850 项，重点卡片 24 项。 [打开本主题完整索引](./indexes/cognition.md)
 
 - [认知路径积分函数](./ASSET-CARDS.md#asset-d127) — `KEEP_AS_STRUCTURAL_METAPHOR`；Identity: STRUCTURAL_METAPHOR. Definition scope: UNSPECIFIED_IN_SOURCE → structured inference or procedure.
 - [IGNITION-121Q6C 执行结果](./ASSET-CARDS.md#asset-hr-1437a5c9924f3c9e) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`；执行者：QClaw（Hy3） 状态：121Q6C 完成（Step 000–007）
@@ -108,14 +108,14 @@
 - [两张表条目模板固化审计](./ASSET-CARDS.md#asset-hr-9bf38326d66a104a) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`；该报告已完成单条条目结构对比（旧函数 9 条 + D595-D599 + Ψ₀；旧案例 4 条 + C-0807-C-0809），提出统一函数 14 字段草案、统一案例 13 字段草案、得到大脑/ Agent-Codex 分工与迁移建议。
 - [AI entrypoint audit](./ASSET-CARDS.md#asset-hr-aa71cb6d79bb27ed) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`；AI-START-HERE.md, AI-HANDOFF.md, docs/AI-USAGE.md and docs/AI-PROMPT-TEMPLATES.md point agents to the same machine-readable authority and validation c
 - [得到大脑输出索引](./ASSET-CARDS.md#asset-hr-c0254716ff47346d) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`；本目录用于收录得到大脑在点火项目推进中的结构性输出。
-- 其余 5 张重点卡片可在[资产卡总表](./ASSET-CARDS.md)搜索主题标记 `COGNITION`。
+- 其余 6 张重点卡片可在[资产卡总表](./ASSET-CARDS.md)搜索主题标记 `COGNITION`。
 
 <a id="subject-architecture-governance"></a>
 ## 架构、治理与自我纠错
 
 **引导问题：** 知识资产怎样被登记、裁决、修订、隔离并保持机器与人类表面一致？
 
-当前检索覆盖 18278 项，重点卡片 183 项。 [打开本主题完整索引](./indexes/architecture_governance.md)
+当前检索覆盖 18349 项，重点卡片 183 项。 [打开本主题完整索引](./indexes/architecture_governance.md)
 
 - [哥德尔不完备性、霍奇猜想类比、不同能标、不同函数族，以及点火当前模型的失败，都不是大一统不可能的桥接定理。](./ASSET-CARDS.md#asset-nfc-00b4be17fb8dc706) — `ACCEPTED_AS_DEFINITION`；哥德尔不完备性、霍奇猜想类比、不同能标、不同函数族，以及点火当前模型的失败，都不是大一统不可能的桥接定理。
 - [历史笔记把 D260 与大一统不可能命题相连；formal main 中 D260 实际为 `p/(1-p)` 偏差敏感度评分。物理断言和评分函数分别处理。](./ASSET-CARDS.md#asset-nfc-0b7defaef4efab24) — `ACCEPTED_AS_DEFINITION`；- 历史笔记把 D260 与大一统不可能命题相连；formal main 中 D260 实际为 `p/(1-p)` 偏差敏感度评分。物理断言和评分函数分别处理。
@@ -142,7 +142,7 @@
 
 **引导问题：** 研究结果如何形成可阅读作品，同时不越过来源、证据和许可边界？
 
-当前检索覆盖 1063 项，重点卡片 43 项。 [打开本主题完整索引](./indexes/writing_publication.md)
+当前检索覆盖 1136 项，重点卡片 46 项。 [打开本主题完整索引](./indexes/writing_publication.md)
 
 - [任务 104（PR #160，已合并）建立编辑文章层与语料关系分析；任务 105（PR #161，已合并，精确 head `9d7d5ab512ffe3fd109a60ebd3d9d246b3a42d19`，普通合并 `9b5b4b9bfb](./ASSET-CARDS.md#asset-nfc-19c3c3352a78b2aa) — `RETAINED_AS_STRUCTURAL_METAPHOR`；任务 104（PR #160，已合并）建立编辑文章层与语料关系分析；任务 105（PR #161，已合并，精确 head `9d7d5ab512ffe3fd109a60ebd3d9d246b3a42d19`，普通合并 `9b5b4b9bfb243fe4cc52f7b163a9613ee6628321
 - [任务 106（本迭代）建立了合并后真相传播基础设施：规范化 merged-iteration ledger、9 维 impact 引擎、确定性 current-truth 投影、fail-closed 验证器、编辑文章 stale/revi](./ASSET-CARDS.md#asset-nfc-1ead70b9f991a2b8) — `RETAINED_AS_STRUCTURAL_METAPHOR`；- 任务 106（本迭代）建立了合并后真相传播基础设施：规范化 merged-iteration ledger、9 维 impact 引擎、确定性 current-truth 投影、fail-closed 验证器、编辑文章 stale/review 生命周期与系统图 impact 审计，使后续合并的
@@ -162,14 +162,14 @@
 - [External Input Non-Republication Principle](./ASSET-CARDS.md#asset-hr-43bf10109af2485e) — `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`；本原则适用于所有从项目外部获得的材料，包括但不限于：
 - [121Q31T｜交互系统总图与双来源写作素材池合并收口审计](./ASSET-CARDS.md#asset-hr-4419fea9529c829c) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`；PR 60 的 accepted HEAD b01429144f78305ead32455873e79a11661f04e1 经 review 4718884255 接受，并以 merge commit ed30d3c30966ce28b54652f2ece27bc1bde02658 合入 main
 - [121Q28S 之元写作法 0.3.0 全项目整合审计](./ASSET-CARDS.md#asset-hr-44a1c398c470bbf4) — `CANDIDATE_OR_PENDING_SOURCE`；Status: READYFORGPTVERIFICATIONCANDIDATEONLY
-- 其余 25 张重点卡片可在[资产卡总表](./ASSET-CARDS.md)搜索主题标记 `WRITING_PUBLICATION`。
+- 其余 28 张重点卡片可在[资产卡总表](./ASSET-CARDS.md)搜索主题标记 `WRITING_PUBLICATION`。
 
 <a id="subject-operations-evidence"></a>
 ## 迭代、验证与证据工程
 
 **引导问题：** 候选、验证、合并和 Current 怎样分离并留下可复算证据？
 
-当前检索覆盖 13097 项，重点卡片 220 项。 [打开本主题完整索引](./indexes/operations_evidence.md)
+当前检索覆盖 13111 项，重点卡片 220 项。 [打开本主题完整索引](./indexes/operations_evidence.md)
 
 - [门控面合并统一函数](./ASSET-CARDS.md#asset-d183) — `REWRITE_AND_RETEST`；Identity: RELATION_OR_CONSTRAINT. Definition scope: Positive scale ratios excluding one, plus an independently defined merge map → relation over sourc
 - [相对论门槛函数](./ASSET-CARDS.md#asset-d185) — `KEEP_AS_STRUCTURAL_METAPHOR`；Identity: STRUCTURAL_METAPHOR. Definition scope: UNSPECIFIED_IN_SOURCE → scalar-like score with unspecified units.

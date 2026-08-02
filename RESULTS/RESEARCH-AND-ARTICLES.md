@@ -23,6 +23,7 @@
 ## 文章与表达
 
 - [之元写作法](../docs/publication/zhiyuan-writing-method.md)：把受 provenance 与 claim ceiling 约束的材料投影到公共语言层；派生产物不是新的独立证据。
+- [《当天意有了接口：宋徽宗与会自我证明的皇权》](../docs/publication/works/when-an-emperor-manufactures-heaven.md)：任务 113 的三重审查与实质重写成果；从《瑞鹤图》追问天意接口与反证权。
 - [《当一支军队开始相信自己的背影》](../docs/publication/works/when-an-army-believes-its-own-back.md)：从历史案例出发的成稿。
 - [成果链](../docs/publication/zhiyuan-writing-showcase.md)：起始案例、点火分析、成稿与方法说明的可追溯入口。
 - [《边界之内的可信：Function OS v0.2 能力基准》](../docs/editorial/articles/007-bounded-trust-function-os-v02-capability-benchmark.md)：任务 105 基准与有界结论（原始/修复判定区分）。

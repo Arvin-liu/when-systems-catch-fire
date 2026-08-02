@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [\[C-0758｜马伯庸建议蹲下来看最下面一排书\](../../../统一案例总表/0753-C-0758-马伯庸建议蹲下来看最下面一排书.md)（原笔记编号：C577-2）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0587-D577-%E8%A7%82%E7%82%B9%E7%AB%9E%E4%BA%89.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-ebecdcf01423171c / \[C-0758｜马伯庸建议蹲下来看最下面一排书\](../../../统一案例总表/0753-C-0758-马伯庸建议蹲下来看最下面一排书.md)（原笔记编号：C577-2）
+  - 来源：`统一函数总表/0587-D577-观点竞争.md`
+  - 依赖：—；被引用：—
 - [\[C-0759｜准备《长谈》花一个月\](../../../统一案例总表/0754-C-0759-准备《长谈》花一个月.md)（原笔记编号：C577-3）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0587-D577-%E8%A7%82%E7%82%B9%E7%AB%9E%E4%BA%89.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-ae36bc996eda01d4 / \[C-0759｜准备《长谈》花一个月\](../../../统一案例总表/0754-C-0759-准备《长谈》花一个月.md)（原笔记编号：C577-3）
@@ -1098,6 +1103,16 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-9f4a5cbc9bba44ce / \[x\] 未修改统一函数总表任何条目
   - 来源：`outputs/audit/two-tables-entry-format-audit-20260709.md`
+  - 依赖：—；被引用：—
+- [\[《当天意有了接口：宋徽宗与会自我证明的皇权》\](../../../docs/publication/works/when-an-emperor-manufactures-heaven.md)：任务 113 的三重审查与实质重写成果；从《瑞鹤图》追问天](../../../RESULTS/RESEARCH-AND-ARTICLES.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-063f2f3fcb0a1c42 / \[《当天意有了接口：宋徽宗与会自我证明的皇权》\](../../../docs/publication/works/when-an-emperor-manufactures-heaven.md)：任务 113 的三重审查与实质重写成果；从《瑞鹤图》追问天
+  - 来源：`RESULTS/RESEARCH-AND-ARTICLES.md`
+  - 依赖：—；被引用：—
+- [\[《当天意有了接口：宋徽宗与会自我证明的皇权》\](../../../docs/publication/works/when-an-emperor-manufactures-heaven.md)](../../../docs/publication/zhiyuan-writing-showcase.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-dd2ea1d1b3997f48 / \[《当天意有了接口：宋徽宗与会自我证明的皇权》\](../../../docs/publication/works/when-an-emperor-manufactures-heaven.md)
+  - 来源：`docs/publication/zhiyuan-writing-showcase.md`
   - 依赖：—；被引用：—
 - [\[三门学科理论核试跑：物理学、数学、历史学\](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)](../../../docs/discipline_kernel_pilot.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -2487,20 +2502,5 @@
 - [boundary=\["knowledge gain and threshold terms are undefined operationally", "the 'meta-point of autonomy' wording is exp](../../../tools/foundation/build_080_queue.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-108bb66d0876efe4 / boundary=\["knowledge gain and threshold terms are undefined operationally", "the 'meta-point of autonomy' wording is exp
-  - 来源：`tools/foundation/build_080_queue.py`
-  - 依赖：—；被引用：—
-- [boundary=\["no explicit transformation rule is written beyond slogan-level symbol swaps", "equivalence is not proved"\],](../../../tools/foundation/build_080_queue.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-17ddbbfccaef9221 / boundary=\["no explicit transformation rule is written beyond slogan-level symbol swaps", "equivalence is not proved"\],
-  - 来源：`tools/foundation/build_080_queue.py`
-  - 依赖：—；被引用：—
-- [boundary=\["no sample space or probability calibration is supplied", "zero-factor claims are stated heuristically rather](../../../tools/foundation/build_080_queue.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-95ea26f03bda5c54 / boundary=\["no sample space or probability calibration is supplied", "zero-factor claims are stated heuristically rather
-  - 来源：`tools/foundation/build_080_queue.py`
-  - 依赖：—；被引用：—
-- [boundary=\["P_track and θ_boot are not typed or calibrated", "the inequality is presented as a rule rather than a proved](../../../tools/foundation/build_080_queue.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-d5532ce505d84dd2 / boundary=\["P_track and θ_boot are not typed or calibrated", "the inequality is presented as a rule rather than a proved
   - 来源：`tools/foundation/build_080_queue.py`
   - 依赖：—；被引用：—

@@ -4,6 +4,106 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [赛课的评价与选拔机制，存在诸多心照不宣的潜规则：](../../../inputs/collisions/20260708-teacher-competition/source.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-dbb4c54cd2760dcf / 赛课的评价与选拔机制，存在诸多心照不宣的潜规则：
+  - 来源：`inputs/collisions/20260708-teacher-competition/source.md`
+  - 依赖：—；被引用：—
+- [跃迁不是为了换景，而是因为当前层不能容纳某个真实残余：定义刚成立就显得不够，事实没有回答意义，机制没有解释主体经验，或一个选择暴露了不可同时实现的可能性。](../../../docs/publication/zhiyuan-writing-method.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-5a6db2ea7b183ff3 / 跃迁不是为了换景，而是因为当前层不能容纳某个真实残余：定义刚成立就显得不够，事实没有回答意义，机制没有解释主体经验，或一个选择暴露了不可同时实现的可能性。
+  - 来源：`docs/publication/zhiyuan-writing-method.md`
+  - 依赖：—；被引用：—
+- [跨域同构**：这个机制在别的领域也见过吗（摄影？财商？AI？历史？）](../../../docs/getbrain-book-collision-guide-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-068793fa591cc7f3 / 跨域同构**：这个机制在别的领域也见过吗（摄影？财商？AI？历史？）
+  - 来源：`docs/getbrain-book-collision-guide-20260708.md`
+  - 依赖：—；被引用：—
+- [跨域同构叙事只是应用类型。它必须声明比较层，保留不可映射残余，不能把结构相似写成物质、尺度或因果相同，更不能用领域收敛提高证据等级。](../../../docs/publication/zhiyuan-writing-method.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-f74123d864e238d5 / 跨域同构叙事只是应用类型。它必须声明比较层，保留不可映射残余，不能把结构相似写成物质、尺度或因果相同，更不能用领域收敛提高证据等级。
+  - 来源：`docs/publication/zhiyuan-writing-method.md`
+  - 依赖：—；被引用：—
+- [跨域同构识别、候选机制生成、反例生成、`pending` 判定。](../../../outputs/audit/agent-project-understanding-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-ac2b81b7e9c296dd / 跨域同构识别、候选机制生成、反例生成、`pending` 判定。
+  - 来源：`outputs/audit/agent-project-understanding-20260708.md`
+  - 依赖：—；被引用：—
+- [跨域同构：财富滚雪球 ↔ 系统正反馈 M13；10万积蓄↔退出权 A3](../../../docs/getbrain-book-collision-guide-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-99f2f581d5b5e8b9 / 跨域同构：财富滚雪球 ↔ 系统正反馈 M13；10万积蓄↔退出权 A3
+  - 来源：`docs/getbrain-book-collision-guide-20260708.md`
+  - 依赖：A3；被引用：—
+- [跨域跳转必须依靠共享意象、动作、变量、句法回声或因果铰链。](../../../docs/narrative-output-layer.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-92073259e5989c23 / 跨域跳转必须依靠共享意象、动作、变量、句法回声或因果铰链。
+  - 来源：`docs/narrative-output-layer.md`
+  - 依赖：—；被引用：—
+- [输入材料、事实、引用或案例基础错误，导致后续结构判断失效。](../../../data/failure_typology.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-a631ea6501b44943 / 输入材料、事实、引用或案例基础错误，导致后续结构判断失效。
+  - 来源：`data/failure_typology.csv`
+  - 依赖：—；被引用：—
+- [输入材料快照 · 赛课机制下的教师生存困境](../../ASSET-CARDS.md#asset-hr-4b5539f6a578f48d)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：输入材料快照 · 赛课机制下的教师生存困境 / source-snapshot
+  - 来源：`outputs/collisions/20260708-teacher-competition/source-snapshot.md`
+  - 依赖：—；被引用：—
+- [输入材料快照 · 赛课机制下的教师生存困境](../../../outputs/collisions/20260708-teacher-competition/source-snapshot.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-27a8231093b47a61 / 输入材料快照 · 赛课机制下的教师生存困境
+  - 来源：`outputs/collisions/20260708-teacher-competition/source-snapshot.md`
+  - 依赖：—；被引用：—
+- [输入：社会将「努力」与「人格价值」错误绑定（努力羞耻）。](../../../outputs/collisions/20260711-disobedience-subjectivity/mechanism-extraction.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-5d94bbdb0da66080 / 输入：社会将「努力」与「人格价值」错误绑定（努力羞耻）。
+  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/mechanism-extraction.md`
+  - 依赖：—；被引用：—
+- [输入：社会角色（母亲/妻子/贤内助/内容官）持续占据评价入口。](../../../outputs/collisions/20260711-disobedience-subjectivity/mechanism-extraction.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-27cbb0a2f6261159 / 输入：社会角色（母亲/妻子/贤内助/内容官）持续占据评价入口。
+  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/mechanism-extraction.md`
+  - 依赖：—；被引用：—
+- [边界：D364/D423 可作为 D598 进入不可逆区间时的上游判据；D598 强调的「群体低敏感/低反抗/低修复稳态」是 D364/D423 未覆盖的社会心理具体结构，因此独立新增，并在文件「与 D364/D423 的边界」小节明确区分](../../../outputs/audit/nf-004-systemic-numbing-backfill-audit-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-c6496eda7c499230 / 边界：D364/D423 可作为 D598 进入不可逆区间时的上游判据；D598 强调的「群体低敏感/低反抗/低修复稳态」是 D364/D423 未覆盖的社会心理具体结构，因此独立新增，并在文件「与 D364/D423 的边界」小节明确区分
+  - 来源：`outputs/audit/nf-004-systemic-numbing-backfill-audit-20260708.md`
+  - 依赖：D364, D423, D598；被引用：—
+- [边界：仅描述理论生成空间的一个维度，不单独预测系统命运。](../../../docs/meta-protocols/12-meta-protocols.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-b0ab774d65148ae5 / 边界：仅描述理论生成空间的一个维度，不单独预测系统命运。
+  - 来源：`docs/meta-protocols/12-meta-protocols.md`
+  - 依赖：—；被引用：—
+- [过度相信单一机制。](../../../outputs/getbrain/failure-typology-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-d317a165eced4a5a / 过度相信单一机制。
+  - 来源：`outputs/getbrain/failure-typology-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [这不是对原笔记的摘要，而是一次受证据边界约束的材料运行。运行的目标不是替徽宗的内心作证，也不是给“道教导致亡国”找一条漂亮因果链；目标是找出材料中最难被同一解释容纳的残余，再让文章承担这个残余。](../../../reports/publication/song-huizong-taoism-point-fire-analysis.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-82c2bc51e8c40e0a / 这不是对原笔记的摘要，而是一次受证据边界约束的材料运行。运行的目标不是替徽宗的内心作证，也不是给“道教导致亡国”找一条漂亮因果链；目标是找出材料中最难被同一解释容纳的残余，再让文章承担这个残余。
+  - 来源：`reports/publication/song-huizong-taoism-point-fire-analysis.md`
+  - 依赖：—；被引用：—
+- [这不是独立复证规则。相同外部证据经点火分析后的派生产物不能重新计数为第二份外部证据；扩大的是 L6 生成材料范围，不是 L0—L5 证据权限。受限原文、未经登记的读者反应、点赞和多 AI 一致都不会因进入素材讨论而自动公开或升级真值。](../../../reports/operations/121Q31-interactive-system-map-and-writing-source-pool-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-05e05c0e1cb36ed1 / 这不是独立复证规则。相同外部证据经点火分析后的派生产物不能重新计数为第二份外部证据；扩大的是 L6 生成材料范围，不是 L0—L5 证据权限。受限原文、未经登记的读者反应、点赞和多 AI 一致都不会因进入素材讨论而自动公开或升级真值。
+  - 来源：`reports/operations/121Q31-interactive-system-map-and-writing-source-pool-audit.md`
+  - 依赖：—；被引用：—
+- [这不构成两份独立史证。Q26 仍回链同一外部材料，历史因果识别与外部核验仍待完成；把分析报告作为素材复用，不能把派生结论重新计数为外部证据。](../../../docs/publication/zhiyuan-writing-examples.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-13e57d6735ec62de / 这不构成两份独立史证。Q26 仍回链同一外部材料，历史因果识别与外部核验仍待完成；把分析报告作为素材复用，不能把派生结论重新计数为外部证据。
+  - 来源：`docs/publication/zhiyuan-writing-examples.md`
+  - 依赖：—；被引用：—
+- [这与“徽宗完全不懂政治”是两回事。一个人可以很懂得如何安排人、物、仪式和形象，却仍然不懂得如何让自己的安排接受坏消息。技巧越高，可能越能把短期成功组织成证据；也可能越难分辨，成功究竟来自世界的配合，还是来自系统只让成功被看见。](../../../docs/publication/works/when-an-emperor-manufactures-heaven.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-c985f47475cf68e6 / 这与“徽宗完全不懂政治”是两回事。一个人可以很懂得如何安排人、物、仪式和形象，却仍然不懂得如何让自己的安排接受坏消息。技巧越高，可能越能把短期成功组织成证据；也可能越难分辨，成功究竟来自世界的配合，还是来自系统只让成功被看见。
+  - 来源：`docs/publication/works/when-an-emperor-manufactures-heaven.md`
+  - 依赖：—；被引用：—
+- [这些跨域同构的案例，是系统底层逻辑的必然。](../../../%E6%96%B0%E6%95%85%E4%BA%8B/0001-S1-%E6%AF%94%E5%88%80%E5%89%91%E6%9B%B4%E6%8C%81%E4%B9%85%E7%9A%84%EF%BC%8C%E6%98%AF%E5%85%B1%E4%BA%AB%E8%A7%82%E5%BF%B5.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-d8bd76d66a812c8c / 这些跨域同构的案例，是系统底层逻辑的必然。
+  - 来源：`新故事/0001-S1-比刀剑更持久的，是共享观念.md`
+  - 依赖：—；被引用：—
 - [这句话之所以重要，不是因为它强势，而是因为它把一个经常被混在一起的问题拆开了。一个人擅长做事，不等于她自动拥有决定权。一个人被角色需要，不等于她已经以自己的名字存在。真正让主体性重新长出来的，不是别人夸你辛苦，也不是别人承认你能干，而是你开](../../../outputs/stories/20260712-disobedience-subjectivity/story-longform.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-e792dd9aa2403dd4 / 这句话之所以重要，不是因为它强势，而是因为它把一个经常被混在一起的问题拆开了。一个人擅长做事，不等于她自动拥有决定权。一个人被角色需要，不等于她已经以自己的名字存在。真正让主体性重新长出来的，不是别人夸你辛苦，也不是别人承认你能干，而是你开
@@ -18,6 +118,16 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-2edb3ebb63f8b74f / 这条成果链同时展示两类写作材料：原始金朝笔记是 `external_input`；Q26 报告对材料生成的机制链、竞争解释、gap、residue 和 claim ceiling 是 `ignition_increment`。Q29／Q29
   - 来源：`docs/publication/zhiyuan-writing-examples.md`
+  - 依赖：—；被引用：—
+- [这条机制链不能抹去被改名、改制或被迫接受新秩序的僧尼；不能把普通百姓只写成祥瑞观众；不能把园林、宫观和仪式的资源成本藏在“文明创造力”后面；不能把官僚、士大夫、权臣和批评者的不同位置合成同一个“皇帝”；不能用 1127 年之后的亡国知识，假](../../../reports/publication/song-huizong-taoism-point-fire-analysis.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-8ce134612b87b87a / 这条机制链不能抹去被改名、改制或被迫接受新秩序的僧尼；不能把普通百姓只写成祥瑞观众；不能把园林、宫观和仪式的资源成本藏在“文明创造力”后面；不能把官僚、士大夫、权臣和批评者的不同位置合成同一个“皇帝”；不能用 1127 年之后的亡国知识，假
+  - 来源：`reports/publication/song-huizong-taoism-point-fire-analysis.md`
+  - 依赖：—；被引用：—
+- [这让“宗教被皇权利用”变得具体起来。它不只发生在皇帝脑中的动机，也发生在名字、房屋、官文书和资源流向里。若只讨论徽宗是否聪明，就会看不见那些没有权力决定自己怎样被称呼的人。文章若要向更高处走，必须把这些低处一起带上去。](../../../docs/publication/works/when-an-emperor-manufactures-heaven.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-46711e0bef3ee31f / 这让“宗教被皇权利用”变得具体起来。它不只发生在皇帝脑中的动机，也发生在名字、房屋、官文书和资源流向里。若只讨论徽宗是否聪明，就会看不见那些没有权力决定自己怎样被称呼的人。文章若要向更高处走，必须把这些低处一起带上去。
+  - 来源：`docs/publication/works/when-an-emperor-manufactures-heaven.md`
   - 依赖：—；被引用：—
 - [进 candidates/ 不强行回填：M7、M8、M9（受≤5约束或需外部证据补强）。](../../../outputs/collisions/20260711-disobedience-subjectivity/mechanism-extraction.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`

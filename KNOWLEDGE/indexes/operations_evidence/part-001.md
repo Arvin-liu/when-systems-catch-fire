@@ -1969,6 +1969,11 @@
   - 可搜索名称：IMPLICIT-42CCA5D6D26502DA / ## 本轮回溯（来自第一步蓝图 `1111/reports/ignition-version-iteration-blueprint-20260709.md`） / IMPLICIT-42CCA5D6D26502DA
   - 来源：`docs/meta-protocols/version-iteration-note-20260709.md`
   - 依赖：—；被引用：—
+- [## 程序可以照料人，也可以保护权力](../../../docs/publication/works/when-an-emperor-manufactures-heaven.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-E08CF9CF49296365 / ## 程序可以照料人，也可以保护权力 / IMPLICIT-E08CF9CF49296365
+  - 来源：`docs/publication/works/when-an-emperor-manufactures-heaven.md`
+  - 依赖：—；被引用：—
 - [## 第五章 Function OS 的价值，在于让失败留下第一现场](../../../data/operations/iterations/112/publication/r0-original/volume/%E7%AC%AC%E4%B8%80%E5%8D%B7-%E7%AC%AC%E4%BA%8C%E7%A8%BF.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-E7C6F08A18B15190 / ## 第五章 Function OS 的价值，在于让失败留下第一现场 / IMPLICIT-E7C6F08A18B15190
@@ -1993,6 +1998,11 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-AADCA211EEBB32FC / ### 10. 84-Source Canonical Index / IMPLICIT-AADCA211EEBB32FC
   - 来源：`reports/external-research/121Q2R-final-report.md`
+  - 依赖：—；被引用：—
+- [### 2. 课程叙述层：可产生张力，不自动产生史实](../../../reports/publication/song-huizong-taoism-point-fire-analysis.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-4CD8B479C11DBE8C / ### 2. 课程叙述层：可产生张力，不自动产生史实 / IMPLICIT-4CD8B479C11DBE8C
+  - 来源：`reports/publication/song-huizong-taoism-point-fire-analysis.md`
   - 依赖：—；被引用：—
 - [### 2.6 P_meta — 元协议投影算子](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0001-%CE%A8%E2%82%80%E5%85%83%E5%87%BD%E6%95%B0%E5%AE%8C%E6%95%B4%E6%95%B0%E5%AD%A6%E5%AE%9A%E4%B9%89.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -2493,14 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-FFF1DCEF8CC17C17 / ### function_dependency / IMPLICIT-FFF1DCEF8CC17C17 / IMPLICIT-2D1690A54E16E990
   - 来源：`docs/p1-data-index-map-20260708.md`
-  - 依赖：—；被引用：—
-- [### G12 Not a Plain Function Rename](../../../inputs/020/formal-protocol-promotion-standard.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-75DAEF27BAF5E003 / ### G12 Not a Plain Function Rename / IMPLICIT-75DAEF27BAF5E003
-  - 来源：`inputs/020/formal-protocol-promotion-standard.md`
-  - 依赖：—；被引用：—
-- [### G18 Function Layer Relation Clear](../../../inputs/020/formal-protocol-promotion-standard.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-07D6B42B0153B62A / ### G18 Function Layer Relation Clear / IMPLICIT-07D6B42B0153B62A
-  - 来源：`inputs/020/formal-protocol-promotion-standard.md`
   - 依赖：—；被引用：—

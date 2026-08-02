@@ -12,6 +12,14 @@
 
 出版状态：`PUBLISHED_WITH_EXPLICIT_LIMITATIONS`。这表示本卷是完整可读作品，经过 112 的事实、反方和编辑审查，同时明确保留来源、版本、范围和外部证据限制。
 
+## 之元写作法：单篇成果
+
+### 《当天意有了接口：宋徽宗与会自我证明的皇权》
+
+[打开正式作品](../docs/publication/works/when-an-emperor-manufactures-heaven.md) · [打开来源与边界](../docs/publication/cases/song-huizong-taoism-1117-source.md) · [打开点火分析](../reports/publication/song-huizong-taoism-point-fire-analysis.md)
+
+这篇作品由当前之元写作法 `0.4.0` 生成并经过历史／来源、反方／解释、编辑／文学三重审查与实质重写。它从《瑞鹤图》追问天意如何被组织成公共接口，保留信仰、制度化、受影响主体和 1127 年后见之明之间的边界。出版状态：`PUBLISHED_WITH_EXPLICIT_LIMITATIONS`；输入中的第三方课程原文未公开。
+
 ## 一页全景
 
 [打开《点火目前真正知道什么》](what-pointfire-knows-now.md)

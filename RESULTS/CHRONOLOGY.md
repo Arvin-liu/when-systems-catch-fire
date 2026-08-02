@@ -1,6 +1,6 @@
 # 历史结果台账
 
-本台账从 287 份现存研究、文章、架构、Foundation 与迭代文档确定性恢复。它只提供保真导航，不改变原来源的证据权限。
+本台账从 290 份现存研究、文章、架构、Foundation 与迭代文档确定性恢复。它只提供保真导航，不改变原来源的证据权限。
 
 **统一断言上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
 
@@ -164,6 +164,19 @@
 
 ## ARTICLE_OR_PUBLICATION
 
+### [任务 113：宋徽宗道教笔记的点火分析](../reports/publication/song-huizong-taoism-point-fire-analysis.md)
+
+- **结果 ID：** `HR-694DB9C100FF4EAC`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：任务 113：宋徽宗道教笔记的点火分析？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 这不是对原笔记的摘要，而是一次受证据边界约束的材料运行。运行的目标不是替徽宗的内心作证，也不是给“道教导致亡国”找一条漂亮因果链；目标是找出材料中最难被同一解释容纳的残余，再让文章承担这个残余。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
 ### [1. 标题与机器可读前言](../reports/publication/jin-rise-point-fire-analysis.md)
 
 - **结果 ID：** `HR-54B0858DD7FE1388`
@@ -184,7 +197,7 @@
 - **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
 - **问题：** 此来源记录了什么：之元写作法成果？
 - **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
-- **来源摘要：** 本索引是 121Q30T 收口后的当前成果入口，收录由之元写作法 0.3.0生成、具备可追溯来源链和点火分析链、并已进入相应审查状态的公共表达成果。
+- **来源摘要：** 本索引是 121Q30T 收口后的当前成果入口，收录由当前之元写作法 0.4.0或其历史版本生成、具备可追溯来源链和点火分析链、并已进入相应审查状态的公共表达成果。每项记录保留实际使用的方法版本；旧作品不会被回填成新版本。
 - **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
 - **变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
@@ -216,6 +229,19 @@
 - **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - **处置：** `HUMAN_INDEX_ONLY`
 
+### [当天意有了接口：宋徽宗与会自我证明的皇权](../docs/publication/works/when-an-emperor-manufactures-heaven.md)
+
+- **结果 ID：** `HR-7977AAD32B24032D`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：当天意有了接口：宋徽宗与会自我证明的皇权？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 它们飞得并不需要先知道自己将被怎样解释。鹤只是经过，宫门只是宫门，天空也没有留下可供核对的说明书。可在一座宫廷里，一件自然事件不会停在“发生过”这一层。它会被看见，被报告，被画下来，被题诗，再被放进一套关于太平、圣王与天命的语言中。赵佶留下的《瑞鹤图》，正是在这样的转换之后出现的。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
 ### [当一支军队开始相信自己的背影](../docs/publication/works/when-an-army-believes-its-own-back.md)
 
 - **结果 ID：** `HR-25CCAD6CEF81CBEA`
@@ -224,6 +250,19 @@
 - **问题：** 此来源记录了什么：当一支军队开始相信自己的背影？
 - **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
 - **来源摘要：** 他可能只是看见前方的旗变了方向，几匹马逆着队列奔来。也许那是传令，也许主将正在调动一支小队，也许真正的战斗还远没有分出胜负。但他站得太低，看不见全局；箭矢和马蹄也不会给他时间核实。他后退一步，想为自己留下半息余地。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [《公元1117年：宋徽宗为什么崇信道教？》来源与边界](../docs/publication/cases/song-huizong-taoism-1117-source.md)
+
+- **结果 ID：** `HR-D6DC7EDFC015E4C7`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：《公元1117年：宋徽宗为什么崇信道教？》来源与边界？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 这是一份得到大脑中的结构化笔记，包含较长的第三方课程原文。它是本轮写作的起始承载点和问题入口，不是独立的历史证据集合。课程里的叙述、笑话、类比、数字和解释不能因为被笔记收录就自动获得史料地位。
 - **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
 - **变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.

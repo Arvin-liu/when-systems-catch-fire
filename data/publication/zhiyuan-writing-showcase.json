@@ -9,6 +9,33 @@
   },
   "items": [
     {
+      "work_id": "zhiyuan-work-song-huizong-taoism-113",
+      "title": "当天意有了接口：宋徽宗与会自我证明的皇权",
+      "status": "PUBLISHED_WITH_EXPLICIT_LIMITATIONS",
+      "sort_at": "2026-08-02T00:00:00+08:00",
+      "work_path": "docs/publication/works/when-an-emperor-manufactures-heaven.md",
+      "case_path": "docs/publication/cases/song-huizong-taoism-1117-source.md",
+      "analysis_path": "reports/publication/song-huizong-taoism-point-fire-analysis.md",
+      "method_path": "docs/publication/zhiyuan-writing-method.md",
+      "method_name": "之元写作法 / Zhiyuan Writing Method",
+      "method_version": "0.4.0",
+      "source_sha256": "506904a3923bf5aac9f65c8311c512d2ba70b4c1073802b02647ce294fab433f",
+      "accepted_text_sha256": "8d9fe3752e602041c8effb12f39bb2188c60a74843be4285d9181969e314a2e4",
+      "review_provenance": {
+        "task": "IGNITION-ZHIYUAN-WRITING-SONG-HUIZONG-TAOISM-NOTE-TO-PUBLISHED-WORK-R1-20260802",
+        "task_number": 113,
+        "status": "THREE_STAGE_REVIEW_COMPLETE_SUBSTANTIVE_REWRITE_COMPLETE",
+        "control_commit": "d15ce70bef67b439ec2e99d1aeb1e792b4e6e9ef"
+      },
+      "claim_ceiling": "publication_text_accepted / historical_mechanism_plausible / private_belief_unresolved / causal_identification_pending / external_historical_verification_required",
+      "publication_boundaries": [
+        "Source text containing third-party course material is not republished.",
+        "The manufacturing metaphor describes an organized visibility and feedback interface, not proof that every auspicious event was fabricated.",
+        "The work does not establish private belief, historical unique causality, universal Daoist healthcare or talisman efficacy.",
+        "Acceptance does not prove universal method effectiveness or literary quality automation."
+      ]
+    },
+    {
       "work_id": "zhiyuan-work-jin-feedback-001",
       "title": "当一支军队开始相信自己的背影",
       "status": "121Q29R_PUBLICATION_TEXT_ACCEPTED",
