@@ -9,7 +9,7 @@
   "started_at": "2026-08-03T02:29:24+08:00",
   "deadline": "2026-08-03T10:00:00+08:00",
   "current_round": 5,
-  "completed_rounds": 4,
-  "last_pushed_commit": "ac89c39a309cf6e69cf7ca8c8401e8fef4660e89",
-  "state": "RESEARCH_IN_PROGRESS"
+  "completed_rounds": 5,
+  "last_pushed_commit": "8be018f6931fb987048579321bf0acf39b34dcfa",
+  "state": "ROUND_COMPLETE_PENDING_PUSH"
 }

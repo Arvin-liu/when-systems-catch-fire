@@ -1,0 +1,24 @@
+{
+  "campaign_id": "POINTFIRE-OVERNIGHT-PUBLIC-EVIDENCE-RESEARCH-CAMPAIGN-20260803-R1",
+  "round_number": 5,
+  "short_slug": "glp1-cardiovascular-evidence",
+  "start_time": "2026-08-03T02:55:45+08:00",
+  "end_time": "2026-08-03T02:59:23+08:00",
+  "timezone": "Asia/Shanghai",
+  "research_baseline": "61510ed26a1285e1746777c9eacd568cb3038a50",
+  "question": "在肥胖但无糖尿病人群中，GLP-1 类药物降低重大心血管事件的证据是否已超出单一试验，并能否外推到没有既往心血管病或所有同类药物？",
+  "initial_claim": "司美格鲁肽在 SELECT 中显示心血管获益，近期传播将其外推为所有 GLP-1 药物和所有无糖尿病肥胖人群的减重之外直接保护。",
+  "selection_score": {
+    "public_relevance": 5,
+    "evidence_availability": 5,
+    "bounded_answerability": 5,
+    "novelty_versus_previous_rounds": 5,
+    "capacity_to_revise_or_falsify_existing_assumption": 5
+  },
+  "verdict": "SUPPORTED_WITH_SCOPE",
+  "source_count": 7,
+  "source_classes": ["peer_reviewed_randomized_trial_primary", "official_regulatory_summary", "peer_reviewed_editorial_commentary", "peer_reviewed_prespecified_analysis", "systematic_review_meta_analysis", "edited_health_news_report", "official_health_technology_assessment"],
+  "report_sha256": "7a690c9ab0e0328164122ab4318d94d69db8ffbfb78e980da4f672eaf9e43331",
+  "commit_sha": null,
+  "state": "COMPLETE_AWAITING_EXTERNAL_REVIEW"
+}

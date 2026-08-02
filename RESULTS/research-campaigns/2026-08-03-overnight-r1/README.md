@@ -21,3 +21,4 @@ Each `round-NNN-<short-slug>/` directory contains only the minimal report, sourc
 - Round 002 — Handwriting, typing, and learning — CONTESTED — 6 opened sources.
 - Round 003 — Heat-health action plans and mortality — SUPPORTED_WITH_SCOPE — 7 opened sources.
 - Round 004 — Low-carbon electricity growth and fossil generation in 2025 — SUPPORTED_WITH_SCOPE — 6 opened sources.
+- Round 005 — GLP-1 cardiovascular evidence in obesity without diabetes — SUPPORTED_WITH_SCOPE — 7 opened sources.
