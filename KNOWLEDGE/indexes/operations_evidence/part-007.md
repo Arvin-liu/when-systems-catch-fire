@@ -4,6 +4,71 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [提供跨域同构识别：中国王朝周期与其他帝国周期性的结构相似性（L1）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-5bb08e4b13d10d80 / 提供跨域同构识别：中国王朝周期与其他帝国周期性的结构相似性（L1）
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [提供跨域同构识别：工业革命与其他技术革命的结构相似性（L1）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-1709cb2bf8a13e4d / 提供跨域同构识别：工业革命与其他技术革命的结构相似性（L1）
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [提供跨域同构识别：现代艺术与科学范式转移、制度变迁、媒介变化的结构相似性（L1）](../../../outputs/getbrain/classic-problems-benchmark-supplement-20260707.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-221d7b8d1d88e492 / 提供跨域同构识别：现代艺术与科学范式转移、制度变迁、媒介变化的结构相似性（L1）
+  - 来源：`outputs/getbrain/classic-problems-benchmark-supplement-20260707.md`
+  - 依赖：—；被引用：—
+- [提供跨域同构识别：罗马帝国衰亡与其他帝国衰亡的结构相似性（L1）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-8b74960539d0f70e / 提供跨域同构识别：罗马帝国衰亡与其他帝国衰亡的结构相似性（L1）
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [数域和有限域已验证，跨域同构路径清晰](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0681-C-0686-Quillen-Lichtenbaum%E7%8C%9C%E6%83%B3.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-1fd34a5f8cd9bdbb / 数域和有限域已验证，跨域同构路径清晰
+  - 来源：`统一案例总表/0681-C-0686-Quillen-Lichtenbaum猜想.md`
+  - 依赖：—；被引用：—
+- [文字说明：** 决策权与信息权的对称性是元协议2，描述局部信息如何对应局部决策。它通过分布式权威和网络拓扑，形成对称的决策结构。](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-19dfb3ab1c36d1d9 / 文字说明：** 决策权与信息权的对称性是元协议2，描述局部信息如何对应局部决策。它通过分布式权威和网络拓扑，形成对称的决策结构。
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [文字说明：** 判定标准分为正向判定J⁺和负向判定J⁻。J⁺=1表示同构性清晰，J⁻=0表示传递性一致。只有当J⁺=1且J⁻=0时，同构判定才通过。](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-a88af1e1a71003e4 / 文字说明：** 判定标准分为正向判定J⁺和负向判定J⁻。J⁺=1表示同构性清晰，J⁻=0表示传递性一致。只有当J⁺=1且J⁻=0时，同构判定才通过。
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [新分支：records/ignition-087-unesco-discipline-projection-gap-closure-20260713](../../../data/discipline-projection/087-execution-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-bf37d7c084db9e48 / 新分支：records/ignition-087-unesco-discipline-projection-gap-closure-20260713
+  - 来源：`data/discipline-projection/087-execution-report.md`
+  - 依赖：—；被引用：—
+- [新增案例候选 · P1 接入烟雾测试](../../ASSET-CARDS.md#asset-hr-104843eaeaebb434)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：新增案例候选 · P1 接入烟雾测试 / new-cases
+  - 来源：`outputs/collisions/20260708-smoke-test/new-cases.md`
+  - 依赖：—；被引用：—
+- [新增注释 · P1 接入烟雾测试](../../ASSET-CARDS.md#asset-hr-4597e4725744281a)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：新增注释 · P1 接入烟雾测试 / notes
+  - 来源：`outputs/collisions/20260708-smoke-test/notes.md`
+  - 依赖：—；被引用：—
+- [新故事索引表（2026年07月06日03时06分，故事总数 1）](../../ASSET-CARDS.md#asset-hr-ad59534793e1d1d7)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：新故事索引表（2026年07月06日03时06分，故事总数 1） / INDEX
+  - 来源：`新故事/INDEX.md`
+  - 依赖：—；被引用：—
+- [无需预知路径的 canonical 入口已经迁移到\[点火知识入口\](../../README.md)。本页保留十分钟阅读路线；它与机器注册表并行，但不要求读者先理解 JSON、JSONL、schema 或 CI。任何机器记录都必](../../../HUMAN-READING.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-1884493a96704d23 / 无需预知路径的 canonical 入口已经迁移到\[点火知识入口\](../../README.md)。本页保留十分钟阅读路线；它与机器注册表并行，但不要求读者先理解 JSON、JSONL、schema 或 CI。任何机器记录都必
+  - 来源：`HUMAN-READING.md`
+  - 依赖：—；被引用：—
+- [旧条目每周维护时逐步补齐**：在碰撞/维护触及时，顺手补齐"边界条件/适用条件/反例/对应案例/版本记录"等缺失字段，不主动大面积重排。](../../../outputs/audit/two-tables-entry-format-audit-20260709.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-3e2634d19f55d4da / 旧条目每周维护时逐步补齐**：在碰撞/维护触及时，顺手补齐"边界条件/适用条件/反例/对应案例/版本记录"等缺失字段，不主动大面积重排。
+  - 来源：`outputs/audit/two-tables-entry-format-audit-20260709.md`
+  - 依赖：—；被引用：—
 - [是否缺少对应案例**：全部缺"对应案例"结构化字段（但 C-0807~C-0809 反向引用了 D595-D599，说明关联存在，仅未正向登记）。](../../../outputs/audit/two-tables-entry-format-audit-20260709.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-2e33615ffec95b56 / 是否缺少对应案例**：全部缺"对应案例"结构化字段（但 C-0807~C-0809 反向引用了 D595-D599，说明关联存在，仅未正向登记）。

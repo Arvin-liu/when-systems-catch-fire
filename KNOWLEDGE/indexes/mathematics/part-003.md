@@ -4,6 +4,41 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [/Users/zhiyuan/我的笔记/统一函数总表/0289-D253-信息维度-容斥权衡函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-4c78f80617c987fc / /Users/zhiyuan/我的笔记/统一函数总表/0289-D253-信息维度-容斥权衡函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D253；被引用：—
+- [/Users/zhiyuan/我的笔记/统一函数总表/0290-D254-耦合-容斥-平坦度三阶段函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-056923449372c914 / /Users/zhiyuan/我的笔记/统一函数总表/0290-D254-耦合-容斥-平坦度三阶段函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D254；被引用：—
+- [/Users/zhiyuan/我的笔记/统一函数总表/0291-D255-耦合缓冲容量函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-01466967fd9421ca / /Users/zhiyuan/我的笔记/统一函数总表/0291-D255-耦合缓冲容量函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D255；被引用：—
+- [/Users/zhiyuan/我的笔记/统一函数总表/0292-D256-阶段宽度-门控面数函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-d76e8bb4f9137a79 / /Users/zhiyuan/我的笔记/统一函数总表/0292-D256-阶段宽度-门控面数函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D256；被引用：—
+- [/Users/zhiyuan/我的笔记/统一函数总表/0293-D257-门槛距离-耦合强度函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-9cd7ac5e65f4cb39 / /Users/zhiyuan/我的笔记/统一函数总表/0293-D257-门槛距离-耦合强度函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D257；被引用：—
+- [/Users/zhiyuan/我的笔记/统一函数总表/0294-D258-g_eff-p-正反馈函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-97e2fccfc469589f / /Users/zhiyuan/我的笔记/统一函数总表/0294-D258-g_eff-p-正反馈函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D258；被引用：—
+- [/Users/zhiyuan/我的笔记/统一函数总表/0295-D259-g_eff-p-双向反馈函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-db3219cb5af594e0 / /Users/zhiyuan/我的笔记/统一函数总表/0295-D259-g_eff-p-双向反馈函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D259；被引用：—
 - [/Users/zhiyuan/我的笔记/统一函数总表/0296-D260-偏差敏感度阈值函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-edcfecc328e4b3cb / /Users/zhiyuan/我的笔记/统一函数总表/0296-D260-偏差敏感度阈值函数.md
@@ -2468,39 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-ebecdcf01423171c / \[C-0758｜马伯庸建议蹲下来看最下面一排书\](../../../统一案例总表/0753-C-0758-马伯庸建议蹲下来看最下面一排书.md)（原笔记编号：C577-2）
   - 来源：`统一函数总表/0587-D577-观点竞争.md`
-  - 依赖：—；被引用：—
-- [\[C-0759｜准备《长谈》花一个月\](../../../统一案例总表/0754-C-0759-准备《长谈》花一个月.md)（原笔记编号：C577-3）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0587-D577-%E8%A7%82%E7%82%B9%E7%AB%9E%E4%BA%89.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-ae36bc996eda01d4 / \[C-0759｜准备《长谈》花一个月\](../../../统一案例总表/0754-C-0759-准备《长谈》花一个月.md)（原笔记编号：C577-3）
-  - 来源：`统一函数总表/0587-D577-观点竞争.md`
-  - 依赖：—；被引用：—
-- [\[C-0760｜亲子共读一本书\](../../../统一案例总表/0755-C-0760-亲子共读一本书.md)（原笔记编号：C577-4）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0587-D577-%E8%A7%82%E7%82%B9%E7%AB%9E%E4%BA%89.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-4d286d49c084c492 / \[C-0760｜亲子共读一本书\](../../../统一案例总表/0755-C-0760-亲子共读一本书.md)（原笔记编号：C577-4）
-  - 来源：`统一函数总表/0587-D577-观点竞争.md`
-  - 依赖：—；被引用：—
-- [\[C-0761｜宠物项目：记录家族史、食物、味道\](../../../统一案例总表/0756-C-0761-宠物项目：记录家族史、食物、味道.md)（原笔记编号：C578-1）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0588-D578-%E8%AF%BB%E8%80%85%E5%8F%8B%E5%A5%BD.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-a3c8445e49e9e154 / \[C-0761｜宠物项目：记录家族史、食物、味道\](../../../统一案例总表/0756-C-0761-宠物项目：记录家族史、食物、味道.md)（原笔记编号：C578-1）
-  - 来源：`统一函数总表/0588-D578-读者友好.md`
-  - 依赖：—；被引用：—
-- [\[C-0762｜写地方偏方、食物、手艺\](../../../统一案例总表/0757-C-0762-写地方偏方、食物、手艺.md)（原笔记编号：C578-2）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0588-D578-%E8%AF%BB%E8%80%85%E5%8F%8B%E5%A5%BD.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-f51ab18449026a18 / \[C-0762｜写地方偏方、食物、手艺\](../../../统一案例总表/0757-C-0762-写地方偏方、食物、手艺.md)（原笔记编号：C578-2）
-  - 来源：`统一函数总表/0588-D578-读者友好.md`
-  - 依赖：—；被引用：—
-- [\[C-0763｜和孩子聊热点事件\](../../../统一案例总表/0758-C-0763-和孩子聊热点事件.md)（原笔记编号：C578-3）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0588-D578-%E8%AF%BB%E8%80%85%E5%8F%8B%E5%A5%BD.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-65b787c23ea85a3c / \[C-0763｜和孩子聊热点事件\](../../../统一案例总表/0758-C-0763-和孩子聊热点事件.md)（原笔记编号：C578-3）
-  - 来源：`统一函数总表/0588-D578-读者友好.md`
-  - 依赖：—；被引用：—
-- [\[C-0764｜博士期间换十个选题\](../../../统一案例总表/0759-C-0764-博士期间换十个选题.md)（原笔记编号：C578-4）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0588-D578-%E8%AF%BB%E8%80%85%E5%8F%8B%E5%A5%BD.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-004d779d7a6cff25 / \[C-0764｜博士期间换十个选题\](../../../统一案例总表/0759-C-0764-博士期间换十个选题.md)（原笔记编号：C578-4）
-  - 来源：`统一函数总表/0588-D578-读者友好.md`
-  - 依赖：—；被引用：—
-- [\[C-0765｜双周访谈打破信息茧房\](../../../统一案例总表/0760-C-0765-双周访谈打破信息茧房.md)（原笔记编号：C579-1）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0589-D579-%E9%98%85%E5%8E%86%E8%B5%A4%E5%AD%97%E8%A7%A3%E5%86%B3.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-a83f69ffb5d14307 / \[C-0765｜双周访谈打破信息茧房\](../../../统一案例总表/0760-C-0765-双周访谈打破信息茧房.md)（原笔记编号：C579-1）
-  - 来源：`统一函数总表/0589-D579-阅历赤字解决.md`
   - 依赖：—；被引用：—

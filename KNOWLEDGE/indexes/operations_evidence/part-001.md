@@ -64,6 +64,11 @@
   - 可搜索名称：IMPLICIT-FBEAA9335F17C7E6 / "expression": "P(x)=1", / IMPLICIT-FBEAA9335F17C7E6
   - 来源：`tools/math_foundation_audit.py`
   - 依赖：—；被引用：—
+- ["final_is_descendant_of_stage_seven": run("git", "merge-base", "--is-ancestor", STAGE_SEVEN, FINAL) == "",](../../../data/operations/iterations/112/publication/tools/r0_intake.py)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-D58820064B0D813D / "final_is_descendant_of_stage_seven": run("git", "merge-base", "--is-ancestor", STAGE_SEVEN, FINAL) == "", / IMPLICIT-D58820064B0D813D
+  - 来源：`data/operations/iterations/112/publication/tools/r0_intake.py`
+  - 依赖：—；被引用：—
 - ["function_concept_used_by_paper": "The central function is an input-conditioned mixture MoE(x)=sum_{i in I_D} w_i M_i(x): a gating function computes scores or probabilities, selects a subset of expert functions, dispatches the input and com](../../../data/external-research/121-fulltext-resolver/121cx/evidence-cards-extreme/S120-078.json)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-2DCA32DC8BA07D5C / "function_concept_used_by_paper": "The central function is an input-conditioned mixture MoE(x)=sum_{i in I_D} w_i M_i(x): a gating function computes scores or probabilities, selects a subset of expert functions, dispatches the input and com / IMPLICIT-2DCA32DC8BA07D5C
@@ -1964,10 +1969,25 @@
   - 可搜索名称：IMPLICIT-42CCA5D6D26502DA / ## 本轮回溯（来自第一步蓝图 `1111/reports/ignition-version-iteration-blueprint-20260709.md`） / IMPLICIT-42CCA5D6D26502DA
   - 来源：`docs/meta-protocols/version-iteration-note-20260709.md`
   - 依赖：—；被引用：—
+- [## 第五章 Function OS 的价值，在于让失败留下第一现场](../../../data/operations/iterations/112/publication/r0-original/volume/%E7%AC%AC%E4%B8%80%E5%8D%B7-%E7%AC%AC%E4%BA%8C%E7%A8%BF.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-E7C6F08A18B15190 / ## 第五章 Function OS 的价值，在于让失败留下第一现场 / IMPLICIT-E7C6F08A18B15190
+  - 来源：`data/operations/iterations/112/publication/r0-original/volume/第一卷-第二稿.md`
+  - 依赖：—；被引用：—
+- [## 第五章 Function OS：一次失败比一次漂亮的通过更能说明问题](../../../data/operations/iterations/112/publication/r0-original/volume/%E7%AC%AC%E4%B8%80%E5%8D%B7-%E5%88%9D%E7%A8%BF.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-60A449EF84B386F0 / ## 第五章 Function OS：一次失败比一次漂亮的通过更能说明问题 / IMPLICIT-60A449EF84B386F0
+  - 来源：`data/operations/iterations/112/publication/r0-original/volume/第一卷-初稿.md`
+  - 依赖：—；被引用：—
 - [## 规范性协议是边界声明，不是经验定律](../../../docs/editorial/articles/005-description-is-not-proof-systems-representations.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-A23966E7DB02CF3F / ## 规范性协议是边界声明，不是经验定律 / IMPLICIT-A23966E7DB02CF3F
   - 来源：`docs/editorial/articles/005-description-is-not-proof-systems-representations.md`
+  - 依赖：—；被引用：—
+- [### 1. 轮次不是样本，而是压力](../../../data/operations/iterations/112/publication/r0-original/volume/%E7%AC%AC%E4%B8%80%E5%8D%B7-%E5%88%9D%E7%A8%BF.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-16D49D6FCBE5DB92 / ### 1. 轮次不是样本，而是压力 / IMPLICIT-16D49D6FCBE5DB92
+  - 来源：`data/operations/iterations/112/publication/r0-original/volume/第一卷-初稿.md`
   - 依赖：—；被引用：—
 - [### 10. 84-Source Canonical Index](../../../reports/external-research/121Q2R-final-report.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -1993,6 +2013,11 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-330F7B57409065B5 / ### 3. Cross-Model Acceptance Queue / IMPLICIT-330F7B57409065B5
   - 来源：`reports/foundation-architecture/085-backlog-prioritization.md`
+  - 依赖：—；被引用：—
+- [### 4. 它不知道 Function OS 能否离开小世界](../../../data/operations/iterations/112/publication/r0-original/volume/%E7%AC%AC%E4%B8%80%E5%8D%B7-%E5%88%9D%E7%A8%BF.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-1F41909AB41A1E5E / ### 4. 它不知道 Function OS 能否离开小世界 / IMPLICIT-1F41909AB41A1E5E
+  - 来源：`data/operations/iterations/112/publication/r0-original/volume/第一卷-初稿.md`
   - 依赖：—；被引用：—
 - [### 84-Source Canonical Index (Corrected)](../../../reports/external-research/121Q2V-verification-repair-report.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -2439,6 +2464,11 @@
   - 可搜索名称：IMPLICIT-09E18F45D120C04D / ### BC-20260709-009 《影响力》 / IMPLICIT-09E18F45D120C04D / IMPLICIT-F7AC5BBB30C9232B
   - 来源：`reports/math-foundation/pilot-formal-audit-20260712.md`
   - 依赖：—；被引用：—
+- [### D. 执行：Function OS 能做什么](../../../data/operations/iterations/112/publication/r0-original/03-%E7%A0%94%E7%A9%B6%E9%97%AE%E9%A2%98%E8%B0%B1%E7%B3%BB.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-7DA9656059AA2661 / ### D. 执行：Function OS 能做什么 / IMPLICIT-7DA9656059AA2661
+  - 来源：`data/operations/iterations/112/publication/r0-original/03-研究问题谱系.md`
+  - 依赖：—；被引用：—
 - [### FORCED STOP — Awaiting GPT Verification](../../../reports/external-research/121Q3-night-final-report.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-409452B95E2E4B58 / ### FORCED STOP — Awaiting GPT Verification / IMPLICIT-409452B95E2E4B58
@@ -2473,34 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-07D6B42B0153B62A / ### G18 Function Layer Relation Clear / IMPLICIT-07D6B42B0153B62A
   - 来源：`inputs/020/formal-protocol-promotion-standard.md`
-  - 依赖：—；被引用：—
-- [### G19 Not Counted as Function](../../../inputs/020/formal-protocol-promotion-standard.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-2B37DB30942D1C67 / ### G19 Not Counted as Function / IMPLICIT-2B37DB30942D1C67
-  - 来源：`inputs/020/formal-protocol-promotion-standard.md`
-  - 依赖：—；被引用：—
-- [### G20 Not a Duplicate of Existing Function](../../../inputs/020/formal-protocol-promotion-standard.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-006E83309FF50E81 / ### G20 Not a Duplicate of Existing Function / IMPLICIT-006E83309FF50E81
-  - 来源：`inputs/020/formal-protocol-promotion-standard.md`
-  - 依赖：—；被引用：—
-- [### G28 Index Entry Exists](../../../inputs/020/formal-protocol-promotion-standard.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-3F11C4308505B8BF / ### G28 Index Entry Exists / IMPLICIT-3F11C4308505B8BF
-  - 来源：`inputs/020/formal-protocol-promotion-standard.md`
-  - 依赖：—；被引用：—
-- [### MF-0003 正反互斥判定器](../../../reports/math-foundation/pilot-formal-audit-20260712.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-5E73B99AABC09852 / ### MF-0003 正反互斥判定器 / IMPLICIT-5E73B99AABC09852
-  - 来源：`reports/math-foundation/pilot-formal-audit-20260712.md`
-  - 依赖：—；被引用：—
-- [### MF-0004 自举嵌套判定器](../../../reports/math-foundation/pilot-formal-audit-20260712.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-A80FE733FE28698B / ### MF-0004 自举嵌套判定器 / IMPLICIT-A80FE733FE28698B
-  - 来源：`reports/math-foundation/pilot-formal-audit-20260712.md`
-  - 依赖：—；被引用：—
-- [### MF-0005 自举收敛判定器](../../../reports/math-foundation/pilot-formal-audit-20260712.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-6B887CBD6FD75DC1 / ### MF-0005 自举收敛判定器 / IMPLICIT-6B887CBD6FD75DC1
-  - 来源：`reports/math-foundation/pilot-formal-audit-20260712.md`
   - 依赖：—；被引用：—

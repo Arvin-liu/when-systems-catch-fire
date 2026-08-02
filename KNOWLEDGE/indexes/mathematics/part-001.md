@@ -1664,6 +1664,11 @@
   - 可搜索名称：IMPLICIT-112A664B455B7E81 / # C-0715｜凯利公式的认知边界 / IMPLICIT-112A664B455B7E81
   - 来源：`统一案例总表/0710-C-0715-凯利公式的认知边界.md`
   - 依赖：—；被引用：—
+- [# Chapter 04 Evidence Binder：函数与断言治理发现了什么](../../../data/operations/iterations/112/publication/r0-original/evidence-binders/chapter-04.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-9BA39232D2EAE230 / # Chapter 04 Evidence Binder：函数与断言治理发现了什么 / IMPLICIT-9BA39232D2EAE230
+  - 来源：`data/operations/iterations/112/publication/r0-original/evidence-binders/chapter-04.md`
+  - 依赖：—；被引用：—
 - [# Core proof and countermodel report](../../../reports/foundation-architecture/core-proof-and-countermodel-report-20260713.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-1BB841CD137A2F25 / # Core proof and countermodel report / IMPLICIT-1BB841CD137A2F25
@@ -2498,9 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-C3A0CA2AD080115E / ## 关联函数 / Related Functions / IMPLICIT-C3A0CA2AD080115E / IMPLICIT-0026301F130FD562
   - 来源：`统一案例总表/0738-C-0743-安然公司.md`
-  - 依赖：—；被引用：—
-- [## 关联函数 / Related Functions](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0778-C-0783-%E5%87%86%E5%A4%87%E3%80%8A%E9%95%BF%E8%B0%88%E3%80%8B%E8%8A%B1%E4%B8%80%E4%B8%AA%E6%9C%88.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-C6868D93532A0674 / ## 关联函数 / Related Functions / IMPLICIT-C6868D93532A0674 / IMPLICIT-0026301F130FD562
-  - 来源：`统一案例总表/0778-C-0783-准备《长谈》花一个月.md`
   - 依赖：—；被引用：—

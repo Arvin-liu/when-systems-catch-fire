@@ -4,6 +4,41 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [\[C-0759｜准备《长谈》花一个月\](../../../统一案例总表/0754-C-0759-准备《长谈》花一个月.md)（原笔记编号：C577-3）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0587-D577-%E8%A7%82%E7%82%B9%E7%AB%9E%E4%BA%89.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-ae36bc996eda01d4 / \[C-0759｜准备《长谈》花一个月\](../../../统一案例总表/0754-C-0759-准备《长谈》花一个月.md)（原笔记编号：C577-3）
+  - 来源：`统一函数总表/0587-D577-观点竞争.md`
+  - 依赖：—；被引用：—
+- [\[C-0760｜亲子共读一本书\](../../../统一案例总表/0755-C-0760-亲子共读一本书.md)（原笔记编号：C577-4）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0587-D577-%E8%A7%82%E7%82%B9%E7%AB%9E%E4%BA%89.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-4d286d49c084c492 / \[C-0760｜亲子共读一本书\](../../../统一案例总表/0755-C-0760-亲子共读一本书.md)（原笔记编号：C577-4）
+  - 来源：`统一函数总表/0587-D577-观点竞争.md`
+  - 依赖：—；被引用：—
+- [\[C-0761｜宠物项目：记录家族史、食物、味道\](../../../统一案例总表/0756-C-0761-宠物项目：记录家族史、食物、味道.md)（原笔记编号：C578-1）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0588-D578-%E8%AF%BB%E8%80%85%E5%8F%8B%E5%A5%BD.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-a3c8445e49e9e154 / \[C-0761｜宠物项目：记录家族史、食物、味道\](../../../统一案例总表/0756-C-0761-宠物项目：记录家族史、食物、味道.md)（原笔记编号：C578-1）
+  - 来源：`统一函数总表/0588-D578-读者友好.md`
+  - 依赖：—；被引用：—
+- [\[C-0762｜写地方偏方、食物、手艺\](../../../统一案例总表/0757-C-0762-写地方偏方、食物、手艺.md)（原笔记编号：C578-2）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0588-D578-%E8%AF%BB%E8%80%85%E5%8F%8B%E5%A5%BD.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-f51ab18449026a18 / \[C-0762｜写地方偏方、食物、手艺\](../../../统一案例总表/0757-C-0762-写地方偏方、食物、手艺.md)（原笔记编号：C578-2）
+  - 来源：`统一函数总表/0588-D578-读者友好.md`
+  - 依赖：—；被引用：—
+- [\[C-0763｜和孩子聊热点事件\](../../../统一案例总表/0758-C-0763-和孩子聊热点事件.md)（原笔记编号：C578-3）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0588-D578-%E8%AF%BB%E8%80%85%E5%8F%8B%E5%A5%BD.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-65b787c23ea85a3c / \[C-0763｜和孩子聊热点事件\](../../../统一案例总表/0758-C-0763-和孩子聊热点事件.md)（原笔记编号：C578-3）
+  - 来源：`统一函数总表/0588-D578-读者友好.md`
+  - 依赖：—；被引用：—
+- [\[C-0764｜博士期间换十个选题\](../../../统一案例总表/0759-C-0764-博士期间换十个选题.md)（原笔记编号：C578-4）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0588-D578-%E8%AF%BB%E8%80%85%E5%8F%8B%E5%A5%BD.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-004d779d7a6cff25 / \[C-0764｜博士期间换十个选题\](../../../统一案例总表/0759-C-0764-博士期间换十个选题.md)（原笔记编号：C578-4）
+  - 来源：`统一函数总表/0588-D578-读者友好.md`
+  - 依赖：—；被引用：—
+- [\[C-0765｜双周访谈打破信息茧房\](../../../统一案例总表/0760-C-0765-双周访谈打破信息茧房.md)（原笔记编号：C579-1）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0589-D579-%E9%98%85%E5%8E%86%E8%B5%A4%E5%AD%97%E8%A7%A3%E5%86%B3.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-a83f69ffb5d14307 / \[C-0765｜双周访谈打破信息茧房\](../../../统一案例总表/0760-C-0765-双周访谈打破信息茧房.md)（原笔记编号：C579-1）
+  - 来源：`统一函数总表/0589-D579-阅历赤字解决.md`
+  - 依赖：—；被引用：—
 - [\[C-0766｜快闪阅读反算法\](../../../统一案例总表/0761-C-0766-快闪阅读反算法.md)（原笔记编号：C579-2）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0589-D579-%E9%98%85%E5%8E%86%E8%B5%A4%E5%AD%97%E8%A7%A3%E5%86%B3.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-18e5dae91845fc52 / \[C-0766｜快闪阅读反算法\](../../../统一案例总表/0761-C-0766-快闪阅读反算法.md)（原笔记编号：C579-2）
@@ -2468,39 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-d5532ce505d84dd2 / boundary=\["P_track and θ_boot are not typed or calibrated", "the inequality is presented as a rule rather than a proved
   - 来源：`tools/foundation/build_080_queue.py`
-  - 依赖：—；被引用：—
-- [boundary=\["the displayed product lacks typed domains and units", "the derivative and zeroing remarks are not backed by a](../../../tools/foundation/build_080_queue.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-d2c6a490be0ed5c3 / boundary=\["the displayed product lacks typed domains and units", "the derivative and zeroing remarks are not backed by a
-  - 来源：`tools/foundation/build_080_queue.py`
-  - 依赖：—；被引用：—
-- [boundary=\["the numeric labels 2 and 3 are descriptive codes, not a proof of geometric dimension", "historical examples d](../../../tools/foundation/build_080_queue.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-cbe3d1901a50e362 / boundary=\["the numeric labels 2 and 3 are descriptive codes, not a proof of geometric dimension", "historical examples d
-  - 来源：`tools/foundation/build_080_queue.py`
-  - 依赖：—；被引用：—
-- [Bošnjak et al. exact registered PMLR/ICML paper, all-10-page main plus all-8-page supplement visual review and complete](../../../data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-98d9285c3f97e670 / Bošnjak et al. exact registered PMLR/ICML paper, all-10-page main plus all-8-page supplement visual review and complete
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl`
-  - 依赖：—；被引用：—
-- [Branch:** `agent/foundation-drift-repair-universal-preflight-propagation-ci-proof-r1-20260731`](../../../docs/foundation/task-107-incident-report.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-85a7b6430641f130 / Branch:** `agent/foundation-drift-repair-universal-preflight-propagation-ci-proof-r1-20260731`
-  - 来源：`docs/foundation/task-107-incident-report.md`
-  - 依赖：—；被引用：—
-- [C --> PO\[proof obligations\]](../../../ARCHITECTURE.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-d42826c1463a4ca0 / C --> PO\[proof obligations\]
-  - 来源：`ARCHITECTURE.md`
-  - 依赖：—；被引用：—
-- [C ∈ {0, 1}：认同验证](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0582-D572-%E9%80%80%E5%87%BA%E6%9D%83%E9%AA%8C%E8%AF%81.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-cdca97c34aede395 / C ∈ {0, 1}：认同验证
-  - 来源：`统一函数总表/0582-D572-退出权验证.md`
-  - 依赖：—；被引用：—
-- [C(x,y) := ∫(cause × effect × temporal_order × counterfactual) / causal_topology](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0001-%CE%A8%E2%82%80%E5%85%83%E5%87%BD%E6%95%B0%E5%AE%8C%E6%95%B4%E6%95%B0%E5%AD%A6%E5%AE%9A%E4%B9%89.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-0efd59aa2d4e4e1e / C(x,y) := ∫(cause × effect × temporal_order × counterfactual) / causal_topology
-  - 来源：`统一函数总表/0001-Ψ₀元函数完整数学定义.md`
   - 依赖：—；被引用：—
