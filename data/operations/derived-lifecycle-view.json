@@ -14,7 +14,7 @@
     "110": "TERMINAL_SUCCESS",
     "111": "TERMINAL_SUCCESS",
     "112": "TERMINAL_SUCCESS",
-    "113": "READY_FOR_CONTENT_MERGE"
+    "113": "CONTENT_MERGED_AWAITING_TERMINALIZATION"
   },
   "schema_version": "1.0.0",
   "tag_audit": {
@@ -75,7 +75,7 @@
       "task_number": 112
     },
     {
-      "resolved_state": "READY_FOR_CONTENT_MERGE",
+      "resolved_state": "CONTENT_MERGED_AWAITING_TERMINALIZATION",
       "task_id": "IGNITION-ZHIYUAN-WRITING-SONG-HUIZONG-TAOISM-NOTE-TO-PUBLISHED-WORK-R1-20260802",
       "task_number": 113
     }
