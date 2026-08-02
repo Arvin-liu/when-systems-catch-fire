@@ -92,6 +92,10 @@ NON_AUTHORITATIVE_PREFIXES = (
     "function-os-candidate/",
     "analysis/",
     "data/operations/",
+    # Published prose is an output/reference surface.  It must remain
+    # auditable without feeding its own claims back into the Foundation
+    # discovery registry.
+    "PUBLICATIONS/",
 )
 EXPLICIT_IMPORTS = {
     "data/foundation/claims/claims.jsonl",
