@@ -1,0 +1,45 @@
+{
+  "schema_version": "112.publication-propagation-impact.v1",
+  "task_number": 112,
+  "task_id": "IGNITION-RESEARCH-PUBLICATION-LAYER-HUNDRED-ITERATION-KNOWLEDGE-HARVEST-VOLUME-ONE-R1-20260802",
+  "source_commit": "2e6ca101ac82d1bd8af413fbdafaaea024a9af8b",
+  "predecessor": {
+    "task_number": 111,
+    "terminal_state": "TERMINAL_SUCCESS",
+    "authoritative_recovery_tag": "ignition/iterations/111/terminal-r1-recovery-1"
+  },
+  "impact_dimensions": {
+    "MACHINE_RECORD_IMPACT": "IMPACT_REQUIRED",
+    "REFERENCE_SURFACE_IMPACT": "IMPACT_REQUIRED",
+    "EDITORIAL_ARTICLE_IMPACT": "NO_IMPACT_JUSTIFIED",
+    "SYSTEM_MAP_IMPACT": "NO_IMPACT_JUSTIFIED",
+    "CURRENT_PUBLIC_WORDING_IMPACT": "IMPACT_REQUIRED",
+    "OPEN_QUESTION_IMPACT": "IMPACT_REQUIRED",
+    "PROJECT_STATE_IMPACT": "IMPACT_REQUIRED",
+    "EVIDENCE_PROGRAM_IMPACT": "NO_IMPACT_JUSTIFIED",
+    "MATURITY_OR_DISPOSITION_IMPACT": "IMPACT_REQUIRED"
+  },
+  "changed_surfaces": [
+    "PUBLICATIONS/README.md",
+    "PUBLICATIONS/volumes/001-pointfire-after-one-hundred-iterations.md",
+    "PUBLICATIONS/notes/001-pointfire-research-notes.md",
+    "PUBLICATIONS/what-pointfire-knows-now.md",
+    "PUBLICATIONS/hundred-iteration-achievement-ledger.md",
+    "README.md",
+    "HUMAN-READING.md",
+    "RESULTS/LATEST.md",
+    "RESULTS/RESEARCH-AND-ARTICLES.md",
+    "docs/project-current-state.md",
+    "KNOWLEDGE/README.md",
+    "KNOWLEDGE/MAP.md",
+    "KNOWLEDGE/WHATS-NEW.md"
+  ],
+  "unchanged_by_justification": [
+    "system map: publication layer is a human-reading projection and does not alter registry topology",
+    "Evidence Program: task 112 reuses prior external evidence runs and does not execute a new external query",
+    "editorial articles: the new volume is the canonical readable publication work; existing articles remain historical sources"
+  ],
+  "claim_ceiling": "Publication synthesis, correction and visibility layer within frozen R0 sources and task-111-audited current state; no external science, historical unique causality or universal capability claim.",
+  "lifecycle_state": "READY_FOR_CONTENT_MERGE",
+  "note": "This is a propagation accounting record, not terminal evidence. Candidate lifecycle event is append-only and contains no future merge, tag or core facts."
+}
