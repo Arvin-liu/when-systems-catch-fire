@@ -10,6 +10,7 @@
   "deadline": "2026-08-03T10:00:00+08:00",
   "current_round": 8,
   "completed_rounds": 8,
-  "last_pushed_commit": "279913c31b33897f179b35176a30f70a4eb90ae4",
+  "last_pushed_commit": "232299483f701e8304265c1484b5b50e5dcf2799",
+  "closeout_report_commit": "232299483f701e8304265c1484b5b50e5dcf2799",
   "state": "COMPLETE_AWAITING_GPT_OWNER_ADJUDICATION"
 }
