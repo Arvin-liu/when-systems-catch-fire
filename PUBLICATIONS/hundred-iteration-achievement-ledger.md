@@ -8,7 +8,7 @@
 
 “百轮”是混合的长期迭代史，不是一百个独立实验。`RESEARCH_RESULT`、`CORRECTION_RESULT`、`EMPIRICAL_OR_REPLICATION_RESULT`、`THEORY_OR_FORMALIZATION_RESULT`、`METHOD_RESULT`、`INFRASTRUCTURE_ONLY`、`MAINTENANCE_ONLY`、`MIXED` 和 `NO_RECOVERABLE_KNOWLEDGE_INCREMENT` 不是荣誉等级；它们说明记录承担的责任不同。分类基于问题、证据、当前状态和输出，而不是只看任务标题或文件名。
 
-R0 记录来自固定基线前置材料；任务 111 的生命周期事实已对正式仓库当前 `main=302362f66dad4e8a9c9e72400f4267c12b0b0d00` 复核。来源路径和提交用于定位，目录/集合不等于逐项全文阅读；任何 `CURRENT_WITH_EXPLICIT_LIMITS` 都不意味着外部共同体已经接受。
+R0 记录来自固定基线前置材料；任务 111 的生命周期事实已在任务 112 审计起点 `main=302362f66dad4e8a9c9e72400f4267c12b0b0d00` 复核。来源路径和提交用于定位，目录/集合不等于逐项全文阅读；任何 `CURRENT_WITH_EXPLICIT_LIMITS` 都不意味着外部共同体已经接受。
 
 ## 统计摘要
 
