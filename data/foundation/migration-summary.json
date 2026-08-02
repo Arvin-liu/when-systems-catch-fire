@@ -55,11 +55,11 @@
       "registry_closed": true
     },
     "nonfunction_claim_evidence_lineage": {
-      "tracked_files_accounted": 3525,
-      "candidate_fragments": 30649,
-      "canonical_claims": 17634,
+      "tracked_files_accounted": 3527,
+      "candidate_fragments": 30650,
+      "canonical_claims": 17635,
       "existing_claims_mapped": 678,
-      "explicit_quarantine_or_pending": 5807,
+      "explicit_quarantine_or_pending": 5808,
       "dependency_edges": 5769,
       "explicitly_unresolved_dependency_edges": 52,
       "public_surface_records": 455,
