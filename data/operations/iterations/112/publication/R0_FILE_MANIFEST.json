@@ -1,0 +1,268 @@
+{
+  "schema_version": "112.r0-file-manifest.v1",
+  "intake_type": "BOUNDED_TRACKED_R0_DELTA",
+  "source_repository": "Arvin-liu/when-systems-catch-fire",
+  "source_workspace": "/Users/zhiyuan/WorkBuddy/Claw/ignition-publication-preproduction-r0",
+  "baseline_commit": "9b15d359c54694d851c38df6ab3c7ae42544a51b",
+  "stage_seven_commit": "68302f968f109afc4b15988b46d3c99cc8c9fa33",
+  "final_commit": "84fdcf68f2bd3fde8ed543b0ec6b51a538ea9597",
+  "tracked_delta_count": 32,
+  "entries": [
+    {
+      "path": "01-百轮成果总台账.jsonl",
+      "bytes": 72105,
+      "sha256": "ff081fd3ac6d77eb13970f3b79125984b2621695dea23339f7ce2fec184fa89d",
+      "characters": 54553,
+      "lines": 81,
+      "han_characters": 8092
+    },
+    {
+      "path": "01-百轮成果总台账.md",
+      "bytes": 21144,
+      "sha256": "02890d8e750ea61ba0f2fb634cf4fff67dd4c97ffb431589c6fdde067f7051b4",
+      "characters": 9656,
+      "lines": 165,
+      "han_characters": 5101
+    },
+    {
+      "path": "02-成果缺口与不可见性审计.md",
+      "bytes": 11811,
+      "sha256": "3664ddca70db9919dfd24f2a018b3846233f4d1dd018907d74513268a865ecc3",
+      "characters": 5713,
+      "lines": 114,
+      "han_characters": 2783
+    },
+    {
+      "path": "03-研究问题谱系.md",
+      "bytes": 10389,
+      "sha256": "398182209abdb65273cd723cf56e65b685da1cfca969f7d8aae1880d8ed189ec",
+      "characters": 4620,
+      "lines": 167,
+      "han_characters": 2532
+    },
+    {
+      "path": "04-纠正与撤回谱系.md",
+      "bytes": 11088,
+      "sha256": "8207eeb9a2f9518948e14fdd238f11a943257aa6f33a95f09f655dcce38d0dc5",
+      "characters": 5815,
+      "lines": 92,
+      "han_characters": 2428
+    },
+    {
+      "path": "CHECKPOINTS.md",
+      "bytes": 8344,
+      "sha256": "818a45859dbeff04549f677a8cf1f457deec453393950d0b4f5af611792c836c",
+      "characters": 4338,
+      "lines": 102,
+      "han_characters": 1734
+    },
+    {
+      "path": "SOURCE-MANIFEST.json",
+      "bytes": 6328,
+      "sha256": "93a62ba867b7cad0222952459873443b9573492be6c3623d2a4460707bdc79d6",
+      "characters": 5958,
+      "lines": 157,
+      "han_characters": 181
+    },
+    {
+      "path": "STATUS.md",
+      "bytes": 2278,
+      "sha256": "07422cd7466c04eeb0ddb3b92898220dddd7f256085cfed87277579e42a55380",
+      "characters": 1316,
+      "lines": 40,
+      "han_characters": 429
+    },
+    {
+      "path": "UNRESOLVED.md",
+      "bytes": 6849,
+      "sha256": "31cd2afa7ba7554b3bc04b411fe73c9666d01899483ee33369780d13d5d43a36",
+      "characters": 3003,
+      "lines": 52,
+      "han_characters": 1742
+    },
+    {
+      "path": "evidence-binders/chapter-01.md",
+      "bytes": 4948,
+      "sha256": "b38fac30761e1cc2e86a4d6dc1c5ba4b0047e06824f8f4b58815cb7f06faea8c",
+      "characters": 2210,
+      "lines": 71,
+      "han_characters": 1240
+    },
+    {
+      "path": "evidence-binders/chapter-02.md",
+      "bytes": 4651,
+      "sha256": "0293e6e5a0a3e8b51bc9517cc31cb8bef6c2738dddafb25dcb997320c6629e58",
+      "characters": 2400,
+      "lines": 71,
+      "han_characters": 986
+    },
+    {
+      "path": "evidence-binders/chapter-03.md",
+      "bytes": 4893,
+      "sha256": "7c92500b1df8e27e8cd43c3c8625e023dbde5aadd21ae3900fdd409ca222f05f",
+      "characters": 2658,
+      "lines": 76,
+      "han_characters": 987
+    },
+    {
+      "path": "evidence-binders/chapter-04.md",
+      "bytes": 5121,
+      "sha256": "4322a080fc17e199172dceb1200490424c47f96c03049aa8a710e6a72936a271",
+      "characters": 3047,
+      "lines": 72,
+      "han_characters": 907
+    },
+    {
+      "path": "evidence-binders/chapter-05.md",
+      "bytes": 4615,
+      "sha256": "58e7c457d15569f286a0cc993fbc74d7217dcf838c9fe1e1595376f5ecd64c0c",
+      "characters": 2537,
+      "lines": 71,
+      "han_characters": 916
+    },
+    {
+      "path": "evidence-binders/chapter-06.md",
+      "bytes": 4709,
+      "sha256": "982de191aff6376309c84f826ff81778f231c1b5b462b5a23e1b61794cbbd305",
+      "characters": 2673,
+      "lines": 72,
+      "han_characters": 884
+    },
+    {
+      "path": "evidence-binders/chapter-07.md",
+      "bytes": 4638,
+      "sha256": "ab2c503c36008eb9c49e53f74a55c1e93ef6c7459f4b577a3147fc06c48dcc23",
+      "characters": 2502,
+      "lines": 70,
+      "han_characters": 946
+    },
+    {
+      "path": "evidence-binders/chapter-08.md",
+      "bytes": 4644,
+      "sha256": "ca0072605d1d90e60f64bb520d206180719e376e474e02c7adc2beb29b8cfe1c",
+      "characters": 2382,
+      "lines": 73,
+      "han_characters": 1003
+    },
+    {
+      "path": "evidence-binders/chapter-09.md",
+      "bytes": 4455,
+      "sha256": "8ba47523a7980e3a0131bee3a9c12d6f8ba69d02d3dafbb9d3defa242cc283de",
+      "characters": 2273,
+      "lines": 74,
+      "han_characters": 969
+    },
+    {
+      "path": "evidence-binders/chapter-10.md",
+      "bytes": 5056,
+      "sha256": "20323c6672454bfb2ad8ad606d0c8e0c612c3f7318ee322fd056d962fabf8927",
+      "characters": 2418,
+      "lines": 83,
+      "han_characters": 1198
+    },
+    {
+      "path": "notes/index.jsonl",
+      "bytes": 17118,
+      "sha256": "5973ea12ea66b2f23eba63abaf58f6bdb0927ab40f6d8b1dfe33bc626eaf87b6",
+      "characters": 13356,
+      "lines": 61,
+      "han_characters": 1773
+    },
+    {
+      "path": "notes/点火研究笔记-第一辑.md",
+      "bytes": 56573,
+      "sha256": "59b26ee2d727c61c5d68f67da0402bb4e8516c344300031db19d48e576749f33",
+      "characters": 24173,
+      "lines": 888,
+      "han_characters": 14364
+    },
+    {
+      "path": "reviews/事实审查.md",
+      "bytes": 6590,
+      "sha256": "72fdc729fd7b5e082418b3fbd44a6360f9602848979bfde42a9a2f9dfdf69cbc",
+      "characters": 3400,
+      "lines": 39,
+      "han_characters": 1420
+    },
+    {
+      "path": "reviews/反方审查.md",
+      "bytes": 6179,
+      "sha256": "e25c38ab294bbfb3de299f47166a73a7c60ca3a25d26d3d298768c4d178b5288",
+      "characters": 2401,
+      "lines": 39,
+      "han_characters": 1716
+    },
+    {
+      "path": "reviews/编辑审查.md",
+      "bytes": 5738,
+      "sha256": "2af206dd3f8206f3bf9530d55526f54343f441151cd8797260b73f3228a22f88",
+      "characters": 2382,
+      "lines": 39,
+      "han_characters": 1525
+    },
+    {
+      "path": "reviews/逐项修订清单.md",
+      "bytes": 6271,
+      "sha256": "4663cb810266bbb370e20773faa4506a897788f9c294265627f86c22f83c0d77",
+      "characters": 3151,
+      "lines": 48,
+      "han_characters": 1458
+    },
+    {
+      "path": "volume/修订说明.md",
+      "bytes": 8251,
+      "sha256": "19a7c4ed4d83390c5d77df83a5b83271ab0d3bac5479b4701168629562e0e4de",
+      "characters": 3699,
+      "lines": 74,
+      "han_characters": 2008
+    },
+    {
+      "path": "volume/术语表.md",
+      "bytes": 6094,
+      "sha256": "cfd8d3b46bcb1ad4e89acaca20ee4a40fa5b50cf2fbd4674abeba9938e112403",
+      "characters": 2700,
+      "lines": 80,
+      "han_characters": 1605
+    },
+    {
+      "path": "volume/来源与证据附录.md",
+      "bytes": 11154,
+      "sha256": "423377d1dab8190b6ffbeac1781b79bc227a2f2582180ba64d62bff36d7c502e",
+      "characters": 7125,
+      "lines": 130,
+      "han_characters": 1833
+    },
+    {
+      "path": "volume/章节摘要.md",
+      "bytes": 3706,
+      "sha256": "8f67c96abdc45a6c6b796c8739c34928cd949f232e6e7e2b0086d40631c4434c",
+      "characters": 1480,
+      "lines": 36,
+      "han_characters": 1020
+    },
+    {
+      "path": "volume/第一卷-初稿.md",
+      "bytes": 106328,
+      "sha256": "3bd493d62c631493fc786cc78210e43006847f72be3f2aaaa73670124de2da14",
+      "characters": 39624,
+      "lines": 913,
+      "han_characters": 30126
+    },
+    {
+      "path": "volume/第一卷-第二稿.md",
+      "bytes": 106475,
+      "sha256": "e254d8be67e358ea0eed4f8fdf72f6e33141c11a46ec9313ff86d20d80bd2965",
+      "characters": 38994,
+      "lines": 978,
+      "han_characters": 30568
+    },
+    {
+      "path": "点火目前真正知道什么.md",
+      "bytes": 12217,
+      "sha256": "e850e4ed65476c430ecdc698b05488beb1c7dce2785456272752fd5b70a4ebf6",
+      "characters": 5362,
+      "lines": 92,
+      "han_characters": 3028
+    }
+  ]
+}
