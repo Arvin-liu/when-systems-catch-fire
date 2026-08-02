@@ -2,7 +2,9 @@
   "current_accepted_iteration": 112,
   "derived_from": "lifecycle-events.jsonl + annotated terminal tags",
   "errors": {},
-  "non_terminal_tasks": [],
+  "non_terminal_tasks": [
+    113
+  ],
   "resolved": {
     "104": "TERMINAL_SUCCESS",
     "105": "TERMINAL_SUCCESS",
@@ -11,7 +13,8 @@
     "108": "TERMINAL_SUCCESS",
     "110": "TERMINAL_SUCCESS",
     "111": "TERMINAL_SUCCESS",
-    "112": "TERMINAL_SUCCESS"
+    "112": "TERMINAL_SUCCESS",
+    "113": "READY_FOR_CONTENT_MERGE"
   },
   "schema_version": "1.0.0",
   "tag_audit": {
@@ -70,6 +73,11 @@
       "resolved_state": "TERMINAL_SUCCESS",
       "task_id": "IGNITION-RESEARCH-PUBLICATION-LAYER-HUNDRED-ITERATION-KNOWLEDGE-HARVEST-VOLUME-ONE-R1-20260802",
       "task_number": 112
+    },
+    {
+      "resolved_state": "READY_FOR_CONTENT_MERGE",
+      "task_id": "IGNITION-ZHIYUAN-WRITING-SONG-HUIZONG-TAOISM-NOTE-TO-PUBLISHED-WORK-R1-20260802",
+      "task_number": 113
     }
   ],
   "terminal_tasks": [
