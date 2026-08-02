@@ -130,9 +130,34 @@
     "new_task_113": false
   },
   "terminalization": {
-    "task112_terminalization_state": "PENDING",
+    "task112_terminalization_state": "TERMINAL_SUCCESS",
     "terminal_tag": "ignition/iterations/112/terminal-r1",
-    "terminal_core": "PENDING_CONTENT_MERGE_AND_TERMINALIZATION",
-    "final_evidence_pr": "PENDING"
+    "terminal_tag_target": "a7b16d0781ed8f804d0015a5485d14c9afca4ecf",
+    "terminal_tag_object": "8edeadd20a2e07825127ae677bd9fb917b5169b1",
+    "terminal_core": "b877093e827853f4f69e468f035a5a15b0c296d8ca4092ef9ffb19b837a078d4",
+    "content_pr": {
+      "number": 178,
+      "exact_reviewed_head": "2e6ca101ac82d1bd8af413fbdafaaea024a9af8",
+      "final_head": "0d4063b471a55de4974dfb17811bafc54ee0d489",
+      "merge_commit": "24c7002477f75608b828f764fba60ebb633f88e8"
+    },
+    "terminalization_pr": {
+      "number": 179,
+      "exact_head": "e8fd20b6ef9113120cf6fe734b4633af6e871e49",
+      "merge_commit": "a7b16d0781ed8f804d0015a5485d14c9afca4ecf"
+    },
+    "final_evidence_pr": {
+      "number": 180,
+      "exact_head": "be2cc9de372541bdb1c550130b0d388b8c62d228",
+      "merge_commit": "12418cf07685077c604af2a4cfd6adce4ceb4ae2"
+    },
+    "fresh_clone_verification": {
+      "head": "12418cf07685077c604af2a4cfd6adce4ceb4ae2",
+      "shallow": false,
+      "working_tree": "CLEAN",
+      "resolver": "TERMINAL_SUCCESS",
+      "current_accepted_iteration": 112,
+      "errors": {}
+    }
   }
 }
