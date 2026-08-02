@@ -19,3 +19,4 @@ Each `round-NNN-<short-slug>/` directory contains only the minimal report, sourc
 
 - Round 001 — AI weather models and record-breaking extremes — `PARTIALLY_SUPPORTED` — 4 opened sources.
 - Round 002 — Handwriting, typing, and learning — CONTESTED — 6 opened sources.
+- Round 003 — Heat-health action plans and mortality — SUPPORTED_WITH_SCOPE — 7 opened sources.

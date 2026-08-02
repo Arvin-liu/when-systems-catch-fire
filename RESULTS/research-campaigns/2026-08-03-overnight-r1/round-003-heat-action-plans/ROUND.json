@@ -1,0 +1,24 @@
+{
+  "campaign_id": "POINTFIRE-OVERNIGHT-PUBLIC-EVIDENCE-RESEARCH-CAMPAIGN-20260803-R1",
+  "round_number": 3,
+  "short_slug": "heat-action-plans",
+  "start_time": "2026-08-03T02:44:41+08:00",
+  "end_time": "2026-08-03T02:47:07+08:00",
+  "timezone": "Asia/Shanghai",
+  "research_baseline": "61510ed26a1285e1746777c9eacd568cb3038a50",
+  "question": "在欧洲已有热健康行动计划的情况下，现有研究能否把计划存在与热相关死亡减少区分开，并支持其具有预防效果？",
+  "initial_claim": "行动计划实施与欧洲城市热相关超额死亡下降相联系，但计划文件、警报、实际行动和总体风险降低不能混为一谈。",
+  "selection_score": {
+    "public_relevance": 5,
+    "evidence_availability": 5,
+    "bounded_answerability": 5,
+    "novelty_versus_previous_rounds": 5,
+    "capacity_to_revise_or_falsify_existing_assumption": 5
+  },
+  "verdict": "SUPPORTED_WITH_SCOPE",
+  "source_count": 7,
+  "source_classes": ["peer_reviewed_research", "official_guidance", "official_news_release", "peer_reviewed_analysis", "peer_reviewed_correspondence", "edited_news", "official_statistics"],
+  "report_sha256": "fae8e11722330cce31716891e897b179941b769b56ba5209fb90a6858373562c"
+  "commit_sha": null,
+  "state": "COMPLETE_AWAITING_EXTERNAL_REVIEW"
+}
