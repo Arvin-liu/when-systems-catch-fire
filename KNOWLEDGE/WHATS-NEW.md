@@ -4,6 +4,14 @@
 
 ## 2026
 
+<a id="change-chg-112"></a>
+### 2026-08-02 · 任务 112：百轮成果出版层与第一卷知识打捞
+
+- **类型：** `PUBLICATION_AND_RESEARCH_SYNTHESIS`
+- **状态：** `PUBLISHED_WITH_EXPLICIT_LIMITATIONS`
+- **变化：** 将 R0 的百轮成果材料冻结后独立审计、重写并整理为可直接阅读的成果书架：第一卷、60 条独立研究笔记、一页全景和 80 条成果台账。出版层区分研究成果、纠正成果、实验结果、方法结果、基础设施、维护与混合产物；任务 111 的恢复终态只作为项目生命周期事实，不被写成苹果案例或其他科学结论。该层基于既有材料综合，不声称本轮完成新的外部实验或同行评审。
+- **来源：** [成果书架](../PUBLICATIONS/README.md) · [第一卷](../PUBLICATIONS/volumes/001-pointfire-after-one-hundred-iterations.md) · [研究笔记](../PUBLICATIONS/notes/001-pointfire-research-notes.md) · [一页全景](../PUBLICATIONS/what-pointfire-knows-now.md) · [百轮成果台账](../PUBLICATIONS/hundred-iteration-achievement-ledger.md) · [任务 112 出版审计](../data/operations/iterations/112/publication/)
+
 <a id="change-chg-111"></a>
 ### 2026-08-01 · 任务 111：失败案例证据门禁与苹果案例 target 缺失裁定
 

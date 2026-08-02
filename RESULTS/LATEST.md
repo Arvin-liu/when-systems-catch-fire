@@ -1,5 +1,11 @@
 # 当前结果
 
+## 任务 112：百轮成果出版层
+
+任务 112 将既有百轮材料整理为可直接阅读的出版层，当前入口是[成果书架](../PUBLICATIONS/README.md)。书架包含[第一卷](../PUBLICATIONS/volumes/001-pointfire-after-one-hundred-iterations.md)、[研究笔记第一辑](../PUBLICATIONS/notes/001-pointfire-research-notes.md)、[一页全景](../PUBLICATIONS/what-pointfire-knows-now.md)和[百轮成果台账](../PUBLICATIONS/hundred-iteration-achievement-ledger.md)。
+
+这不是“登记数量等于科学成果”的结论：本轮主要做 R0 冻结、独立审计、综合写作和出版前审查；正式证据、研究、纠正、实验、基础设施与维护分开标注。任务 111 的 `TERMINAL_SUCCESS`、恢复 tag 和当前生命周期状态只回答项目状态，不回答苹果历史或点火理论是否正确。完整的逐项审计、审稿和来源哈希见 [task 112 publication audit](../data/operations/iterations/112/publication/)。
+
 更新时间：2026-07-30。状态范围：任务 98—101 已合入；任务 102 在 PR 普通合并并通过 `main` 与全新克隆验证后成为 Current。科学和数学义务按项保持开放。
 
 ## 仓库能力

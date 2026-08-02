@@ -1,6 +1,12 @@
 # 点火项目现状
 
-更新时间：2026-08-01。当前状态包含任务 98—103 的断言/函数治理、证据程序与人类可读知识表面，任务 104 的编辑叙事层与语料关系分析，任务 105 的 Function OS v0.2 有界能力基准，任务 110 的完成状态与 OpenAlex 书目复制，以及任务 111 的失败案例证据门禁。任务 104（PR #160）、105（PR #161）和 110 均已普通合并、`main` 验证与全新克隆复验，本段描述其仓库 Current 接口。
+更新时间：2026-08-02。当前状态包含任务 98—103 的断言/函数治理、证据程序与人类可读知识表面，任务 104 的编辑叙事层与语料关系分析，任务 105 的 Function OS v0.2 有界能力基准，任务 110 的完成状态与 OpenAlex 书目复制，任务 111 的失败案例证据门禁与恢复终态，以及任务 112 的百轮成果出版层。本段描述正式仓库当前接口；出版层的研究结论仍受各自来源、版本和证据上限约束。
+
+## Task 112 current publication layer
+
+任务 112 把既有百轮材料整理为可连续阅读的前台成果，而不是继续扩张模块。入口是[成果书架](../PUBLICATIONS/README.md)，其下可直接到达[一页全景](../PUBLICATIONS/what-pointfire-knows-now.md)、[完整第一卷](../PUBLICATIONS/volumes/001-pointfire-after-one-hundred-iterations.md)、[研究笔记第一辑](../PUBLICATIONS/notes/001-pointfire-research-notes.md)和[百轮成果台账](../PUBLICATIONS/hundred-iteration-achievement-ledger.md)。出版层明确区分研究成果、纠正成果、有限实验、形式化、方法、基础设施、维护和开放问题，不把记录数或文件数当作知识总量。
+
+任务 112 的正式证据与来源包位于 `data/operations/iterations/112/publication/`：其中保存 R0 不可变 intake、覆盖/主张/笔记独立性/读者审计、修订决定、三重出版审查、manifest 和未解决义务。R0 以固定基线保存；任务 111 的正式 `TERMINAL_SUCCESS` recovery-1 状态单独作为项目生命周期事实，不能被写成新的科学发现。仓库 Markdown 仍是持续维护的人类阅读层；本出版层没有复活已退出的独立阅读站。
 
 ## 当前形态
 

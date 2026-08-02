@@ -4,14 +4,17 @@
 
 ## 十分钟了解当前状态
 
-1. 从[统一知识入口](./KNOWLEDGE/README.md)选择“最近变化”“按主题探索”“搜索”或“分层阅读”。
-2. 读 [当前结果](./RESULTS/LATEST.md)，先看仓库现在能支持什么。
-3. 读 [纠正与撤回](./RESULTS/CORRECTIONS.md)，避免继承已经撤回的强结论。
-4. 读 [开放问题](./RESULTS/OPEN-QUESTIONS.md)，区分完成的治理工作与尚未完成的科学、数学和实证工作。
+1. 先读[成果书架](./PUBLICATIONS/README.md)或直接读[一页全景](./PUBLICATIONS/what-pointfire-knows-now.md)，不需要理解内部目录就能看见全局。
+2. 再读[完整第一卷](./PUBLICATIONS/volumes/001-pointfire-after-one-hundred-iterations.md)，跟随问题、发现、纠正、有限实验和未知的连续叙事。
+3. 需要核对具体记录时，再从书架进入[研究笔记](./PUBLICATIONS/notes/001-pointfire-research-notes.md)和[百轮成果台账](./PUBLICATIONS/hundred-iteration-achievement-ledger.md)。
+4. 从[统一知识入口](./KNOWLEDGE/README.md)选择“最近变化”“按主题探索”“搜索”或“分层阅读”。
+5. 读 [当前结果](./RESULTS/LATEST.md)，先看仓库现在能支持什么。
+6. 读 [纠正与撤回](./RESULTS/CORRECTIONS.md)，避免继承已经撤回的强结论。
+7. 读 [开放问题](./RESULTS/OPEN-QUESTIONS.md)，区分完成的治理工作与尚未完成的科学、数学和实证工作。
 
-5. 读 [任务 110 的独立复制结果](./evidence-program/runs/IGNITION-EVIDENCE-PILOT-R1-OPENALEX-DOI-REPLICATION-20260801/RESULT.md)，先确认 117 条完整返回、116 条主分母和 7 条 null，再读[完成状态与独立复制文章](./docs/editorial/articles/009-system-completion-state-and-independent-replication.md)。这里的“完成”是生命周期事实，不等于科学命题被证明。
+8. 读 [任务 110 的独立复制结果](./evidence-program/runs/IGNITION-EVIDENCE-PILOT-R1-OPENALEX-DOI-REPLICATION-20260801/RESULT.md)，先确认 117 条完整返回、116 条主分母和 7 条 null，再读[完成状态与独立复制文章](./docs/editorial/articles/009-system-completion-state-and-independent-replication.md)。这里的“完成”是生命周期事实，不等于科学命题被证明。
 
-6. 读 [任务 111 苹果案例证据档案](./data/operations/iterations/111/historical/EVIDENCE_DOSSIER.md) 和[文章 010](./docs/editorial/articles/010-failure-case-evidence-gate-and-apple-case-adjudication.md)，确认历史 provenance、可执行 target 和复现状态彼此分开；目录分类与“可能会输出”不能代替运行证据。
+9. 读 [任务 111 苹果案例证据档案](./data/operations/iterations/111/historical/EVIDENCE_DOSSIER.md) 和[文章 010](./docs/editorial/articles/010-failure-case-evidence-gate-and-apple-case-adjudication.md)，确认历史 provenance、可执行 target 和复现状态彼此分开；目录分类与“可能会输出”不能代替运行证据。
 
 ## 按目的阅读
 

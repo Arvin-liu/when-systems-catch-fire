@@ -1,5 +1,15 @@
 # 研究、复算、审计与文章
 
+## 百轮成果出版层
+
+- [点火成果书架](../PUBLICATIONS/README.md)：面向普通读者的单一前台入口。
+- [《点火百轮之后：一个跨域研究系统真正知道了什么》](../PUBLICATIONS/volumes/001-pointfire-after-one-hundred-iterations.md)：完整第一卷，带明确的来源、版本和证据上限。
+- [《点火研究笔记·第一辑》](../PUBLICATIONS/notes/001-pointfire-research-notes.md)：按问题主题组织的 60 条独立研究入口。
+- [《点火目前真正知道什么》](../PUBLICATIONS/what-pointfire-knows-now.md)：20/20/20/10 一页全景。
+- [百轮成果台账](../PUBLICATIONS/hundred-iteration-achievement-ledger.md)：80 条可恢复记录，区分研究、纠正、实验、形式化、基础设施、维护、混合成果和开放项。
+
+这些作品是对既有百轮材料的综合与出版，不是新的外部研究结果。书目匹配、有限工程试验、历史来源和内部治理各自保留自己的证据层；可读性和可达性不会自动提高任何现实命题的真值。
+
 ## 物理与数学复算
 
 - [首批物理资产纠偏](../docs/foundation/physics-asset-correction-20260729.md)：重算门控乘积、四力统一和大一统不可能性推断的定义、量纲、奇点、桥接义务与反例；结论是现有模型未统一四力，也不能推出普遍不可能。

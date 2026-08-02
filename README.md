@@ -6,7 +6,11 @@
 
 它是候选生成、结构发现、模型组织与可审计推理系统，不是自动产生外部真理的机器。编号、公式、AI 输出、内部自洽、测试通过或登记闭合，都不能单独证明自然、社会、生命、意识或 AI 的事实。
 
-**从这里开始：** [统一知识入口](./KNOWLEDGE/README.md) · [最新变化](./KNOWLEDGE/WHATS-NEW.md) · [知识地图](./KNOWLEDGE/MAP.md) · [搜索与交叉引用](./KNOWLEDGE/SEARCH.md) · [当前结果](./RESULTS/LATEST.md) · [纠正与撤回](./RESULTS/CORRECTIONS.md) · [开放问题](./RESULTS/OPEN-QUESTIONS.md) · [项目现状](./docs/project-current-state.md)
+**从这里开始：** [成果书架](./PUBLICATIONS/README.md) · [一页全景](./PUBLICATIONS/what-pointfire-knows-now.md) · [统一知识入口](./KNOWLEDGE/README.md) · [最新变化](./KNOWLEDGE/WHATS-NEW.md) · [知识地图](./KNOWLEDGE/MAP.md) · [搜索与交叉引用](./KNOWLEDGE/SEARCH.md) · [当前结果](./RESULTS/LATEST.md) · [纠正与撤回](./RESULTS/CORRECTIONS.md) · [开放问题](./RESULTS/OPEN-QUESTIONS.md) · [项目现状](./docs/project-current-state.md)
+
+## 百轮成果书架
+
+如果只想先看点火运行百轮之后真正留下的认识，请从[成果书架](./PUBLICATIONS/README.md)开始；不愿在仓库路径和机器记录之间跳转时，直接打开[一页全景](./PUBLICATIONS/what-pointfire-knows-now.md)。完整第一卷、60 条研究笔记和 80 条成果台账都从书架可达。它们区分研究、纠正、有限实验、基础设施、维护和未知，不用文件数量替代成果判断。
 
 ## 当前结论
 

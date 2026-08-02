@@ -1,6 +1,12 @@
 # 知识地图
 
-本地图按研究问题组织，不按文件夹组织。一个资产可属于多个主题；地图连线表示阅读与仓库依赖，不证明现实因果或同构。
+本地图按研究问题组织，不按文件夹组织。一个资产可属于多个主题；地图连线表示阅读与仓库依赖，不证明现实因果或同构。百轮成果的连续叙事请先读[成果书架](../PUBLICATIONS/README.md)；本地图仍是按主题导航的补充入口。
+
+## 出版层导航
+
+- [一页全景](../PUBLICATIONS/what-pointfire-knows-now.md) — 当前 20 项支持的认识、20 项纠正/降级、20 项未知与 10 项后续方向。
+- [第一卷](../PUBLICATIONS/volumes/001-pointfire-after-one-hundred-iterations.md) — 面向不了解仓库内部结构的读者的连续叙事。
+- [百轮成果台账](../PUBLICATIONS/hundred-iteration-achievement-ledger.md) — 逐条记录原始问题、认识增量、证据类型、当前边界和归类。
 
 <a id="subject-mathematics"></a>
 ## 数学与形式化
