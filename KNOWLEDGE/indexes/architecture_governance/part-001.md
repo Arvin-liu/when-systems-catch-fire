@@ -679,6 +679,11 @@
   - 可搜索名称：NFC-a91700930867d79b / "data/operations/iterations/113/TERMINAL_EVIDENCE_CORE.json",
   - 来源：`tools/foundation/build_function_asset_census.py`
   - 依赖：—；被引用：—
+- ["data/operations/iterations/114/TERMINAL_EVIDENCE_CORE.json",](../../../tools/foundation/build_function_asset_census.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-a0afcb49125b3e50 / "data/operations/iterations/114/TERMINAL_EVIDENCE_CORE.json",
+  - 来源：`tools/foundation/build_function_asset_census.py`
+  - 依赖：—；被引用：—
 - ["data_availability", "evidence_cost", "blast_radius"\]:](../../../tools/iteration_planner/planner.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-c98ec3f1bea4b69b / "data_availability", "evidence_cost", "blast_radius"\]:
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-813370535c992d73 / "本模型冻结 12 个协议统一字段。每个字段定义见 `canonical/data/canonical-field-registry.json`。\\n"
   - 来源：`tools/build_deliverables.py`
-  - 依赖：—；被引用：—
-- ["社会信任是由制度、文化、互动等多重因素共同塑造"（这是社会科学界的共识，点火框架只是重述）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：NFC-d120def3f99203ba / "社会信任是由制度、文化、互动等多重因素共同塑造"（这是社会科学界的共识，点火框架只是重述）
-  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
   - 依赖：—；被引用：—

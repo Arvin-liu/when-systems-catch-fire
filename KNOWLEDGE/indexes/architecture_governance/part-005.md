@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [def main():](../../../tools/foundation/verify_085_architecture_freeze.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-C97ACC52F7C5F35A / def main(): / IMPLICIT-C97ACC52F7C5F35A / IMPLICIT-0F2177FA62A5A69C
+  - 来源：`tools/foundation/verify_085_architecture_freeze.py`
+  - 依赖：—；被引用：—
 - [def main():](../../../scripts/external-research/121_build_registry_and_logs.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-CD7EB8DCD9C77D24 / def main(): / IMPLICIT-CD7EB8DCD9C77D24 / IMPLICIT-0F2177FA62A5A69C
@@ -2498,9 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-4E53A6123CBDCFC1 / def test_current_lifecycle_validated_by_sealed_era(self): / IMPLICIT-4E53A6123CBDCFC1
   - 来源：`tests/test_phase_e_candidate.py`
-  - 依赖：—；被引用：—
-- [def test_current_surfaces_are_visible_paired_and_reachable(self):](../../../tests/test_human_visibility_gate.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-08E5ABE1644B6494 / def test_current_surfaces_are_visible_paired_and_reachable(self): / IMPLICIT-08E5ABE1644B6494
-  - 来源：`tests/test_human_visibility_gate.py`
   - 依赖：—；被引用：—

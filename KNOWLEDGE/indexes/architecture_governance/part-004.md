@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [def build() -> dict\[Path, str\]:](../../../tools/foundation/adjudicate_nonfunction_claims.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-FA9E74DFB45B80AC / def build() -> dict\[Path, str\]: / IMPLICIT-FA9E74DFB45B80AC
+  - 来源：`tools/foundation/adjudicate_nonfunction_claims.py`
+  - 依赖：—；被引用：—
 - [def build() -> None:](../../../tools/foundation/build_080_queue.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-D68DCD25CA62C6E6 / def build() -> None: / IMPLICIT-D68DCD25CA62C6E6
@@ -2498,9 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-B6A4220950E1A43A / def main(): / IMPLICIT-B6A4220950E1A43A / IMPLICIT-0F2177FA62A5A69C
   - 来源：`tools/extract_validator_field_usage.py`
-  - 依赖：—；被引用：—
-- [def main():](../../../tools/foundation/verify_085_architecture_freeze.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-C97ACC52F7C5F35A / def main(): / IMPLICIT-C97ACC52F7C5F35A / IMPLICIT-0F2177FA62A5A69C
-  - 来源：`tools/foundation/verify_085_architecture_freeze.py`
   - 依赖：—；被引用：—
