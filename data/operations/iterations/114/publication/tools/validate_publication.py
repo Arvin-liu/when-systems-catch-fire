@@ -150,6 +150,9 @@ def main() -> None:
     topology = load(ROOT / "data/operations/change-propagation-topology.json")
     relation = next((item for item in topology.get("relations", []) if item.get("relation_id") == "map_language_thought_zhiyuan"), None)
     require(relation is not None and relation.get("relation_class") == "synchronization_requires", "plane-to-method relation is not a synchronization obligation")
+    execution_profiles = load(ROOT / "data/operations/component-execution-profiles.json")
+    language_profile = next((item for item in execution_profiles.get("profiles", []) if item.get("component_id") == "language_thought_plane"), None)
+    require(language_profile is not None and language_profile.get("execution_capability") == "manual", "language-thought component execution profile is missing or inflated")
     system_map = load(ROOT / "data/architecture/interactive-system-map.json")
     node_ids = {node.get("id") for node in system_map.get("nodes", [])}
     require("language_thought_plane" in node_ids, "system map lacks language-thought plane")

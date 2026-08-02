@@ -30,6 +30,7 @@
     "tools/language_thought/",
     "tests/test_language_thought_plane.py",
     "data/operations/project-components.json",
+    "data/operations/component-execution-profiles.json",
     "data/operations/change-propagation-topology.json",
     "data/architecture/interactive-system-map-layout.json",
     "data/architecture/interactive-system-map.json",

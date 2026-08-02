@@ -769,6 +769,11 @@
   - 可搜索名称：NFC-b4cd704a6d325d96 / Iteration method 1.4.0 Continuous Stage Snapshot Publication is Current. If a task produces a real intermediate result,
   - 来源：`AGENTS.md`
   - 依赖：—；被引用：—
+- [language_conditioned_attention_encoding_and_thought_organization_may_vary_by_task; no_strong_determinism; no_truth_upgra](../../../data/language-thought/manifest.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-683bfecf2d40e479 / language_conditioned_attention_encoding_and_thought_organization_may_vary_by_task; no_strong_determinism; no_truth_upgra
+  - 来源：`data/language-thought/manifest.json`
+  - 依赖：—；被引用：—
 - [Licensing Model Candidate](../../ASSET-CARDS.md#asset-hr-f58d1b491fb96c27)
   - 类型/状态：`RESULT_OR_ARTICLE` · `CANDIDATE_OR_PENDING_SOURCE`
   - 可搜索名称：Licensing Model Candidate / licensing-model-candidate
@@ -1008,6 +1013,11 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-380C2EE84E765E47 / require(len(decisions) == 3, "expected one decision summary per map") / IMPLICIT-380C2EE84E765E47
   - 来源：`tools/validate_ignition_atlas.py`
+  - 依赖：—；被引用：—
+- [require(manifest.get("architecture_decision") == "ORTHOGONAL_PLANE_ACROSS_L0_L6_NOT_L7", "manifest: plane must be orthogonal across L0-L6, not L7", errors)](../../../tools/language_thought/validate_language_thought.py)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-79687B1ECFEFF3E9 / require(manifest.get("architecture_decision") == "ORTHOGONAL_PLANE_ACROSS_L0_L6_NOT_L7", "manifest: plane must be orthogonal across L0-L6, not L7", errors) / IMPLICIT-79687B1ECFEFF3E9
+  - 来源：`tools/language_thought/validate_language_thought.py`
   - 依赖：—；被引用：—
 - [require(not frozen\["historical_evidence_cards_modified"\], "historical evidence card boundary violated")](../../../tools/validate_attention_distribution_compression.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -1404,6 +1414,11 @@
   - 可搜索名称：NFC-8376e453b6e690eb / \| surface \| decision \| evidence \|
   - 来源：`reports/operations/121Q28R-cognitive-level-leap-writing-method-audit.md`
   - 依赖：—；被引用：—
+- [\| 事件词汇化 \| 方式、路径、结果通过动词、复合和附加结构组织。 \| 当前证据不足以给出一般认知效应。 \|](../../../docs/language-thought/profiles/ja.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-79e0e59a82461d99 / \| 事件词汇化 \| 方式、路径、结果通过动词、复合和附加结构组织。 \| 当前证据不足以给出一般认知效应。 \|
+  - 来源：`docs/language-thought/profiles/ja.md`
+  - 依赖：—；被引用：—
 - [\| 数据集 \| 编号 \| 用途 \|](../../../outputs/audit/agent-project-understanding-20260708.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-1fbdbad2dad67cbd / \| 数据集 \| 编号 \| 用途 \|
@@ -1458,11 +1473,6 @@
   - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
   - 可搜索名称：《公元1117年：宋徽宗为什么崇信道教？》来源与边界 / song-huizong-taoism-1117-source
   - 来源：`docs/publication/cases/song-huizong-taoism-1117-source.md`
-  - 依赖：—；被引用：—
-- [一步变成了消息。第二个人并没有获得更多战场事实，只获得了第一个人的判断；第三个人甚至看不见敌军，他看见的是前两个人。越靠后，关于敌人的信息越少，关于自己人的信息越多。到某一刻，军队不再根据敌军发生了什么行动，而是根据军队怎样看待自己行动。](../../../docs/publication/works/when-an-army-believes-its-own-back.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-0163c7fbec8eee9f / 一步变成了消息。第二个人并没有获得更多战场事实，只获得了第一个人的判断；第三个人甚至看不见敌军，他看见的是前两个人。越靠后，关于敌人的信息越少，关于自己人的信息越多。到某一刻，军队不再根据敌军发生了什么行动，而是根据军队怎样看待自己行动。
-  - 来源：`docs/publication/works/when-an-army-believes-its-own-back.md`
   - 依赖：—；被引用：—
 - [三阶段操作协议验证 — 个人职业转型-阶段1(ε-θC,不满但没行动力,β小,可以探索各种方向);阶段2(ε≈θC,积累到临界点,β大,必须](../../../data/foundation/evidence/evidence.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -2155,6 +2165,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-da2843117df3b975 / 认知黑洞验证 — 家暴受害者-4维锁定(经济
   - 来源：`data/foundation/evidence/evidence.jsonl`
+  - 依赖：—；被引用：—
+- [证据状态：** 描述语法和信息结构证据充分；跨语言认知后果混合。](../../../docs/language-thought/dimensional-basis.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-66ae6fe8795f29ce / 证据状态：** 描述语法和信息结构证据充分；跨语言认知后果混合。
+  - 来源：`docs/language-thought/dimensional-basis.md`
   - 依赖：—；被引用：—
 - [识别、判定、收敛跨领域**同构结构**；](../../../outputs/audit/agent-project-understanding-20260708.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`

@@ -1,6 +1,6 @@
 # 历史结果台账
 
-本台账从 290 份现存研究、文章、架构、Foundation 与迭代文档确定性恢复。它只提供保真导航，不改变原来源的证据权限。
+本台账从 292 份现存研究、文章、架构、Foundation 与迭代文档确定性恢复。它只提供保真导航，不改变原来源的证据权限。
 
 **统一断言上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
 
@@ -58,6 +58,19 @@
 - **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - **处置：** `HUMAN_INDEX_ONLY`
 
+### [语言—思维逻辑平面](../docs/architecture/language-thought-logic-plane.md)
+
+- **结果 ID：** `HR-CF318764B78D8743`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：语言—思维逻辑平面？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** English: Language–Thought Logic Plane
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
 ### [点火仓库原生系统图](../docs/architecture/interactive-system-map.md)
 
 - **结果 ID：** `HR-DAF1CB45CCD7B5B6`
@@ -65,7 +78,7 @@
 - **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
 - **问题：** 此来源记录了什么：点火仓库原生系统图？
 - **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
-- **来源摘要：** 状态：0.4.0 Current registry-derived navigation projection；0.3.0、0.2.0 为 Historical。
+- **来源摘要：** 状态：0.5.0 Current registry-derived navigation projection；0.4.0 与更早版本为 Historical。
 - **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
 - **变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
@@ -197,7 +210,7 @@
 - **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
 - **问题：** 此来源记录了什么：之元写作法成果？
 - **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
-- **来源摘要：** 本索引是 121Q30T 收口后的当前成果入口，收录由当前之元写作法 0.4.0或其历史版本生成、具备可追溯来源链和点火分析链、并已进入相应审查状态的公共表达成果。每项记录保留实际使用的方法版本；旧作品不会被回填成新版本。
+- **来源摘要：** 本索引是当前成果入口，收录由之元写作法 0.5.0或其历史版本生成、具备可追溯来源链和点火分析链、并已进入相应审查状态的公共表达成果。每项记录同时保留历史接受时实际使用的方法版本与当前 revision；旧作品不会被回填成新版本。任务 114 的语言修订使用语言—思维逻辑平面，不改写旧接受哈希。
 - **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
 - **变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
@@ -223,7 +236,7 @@
 - **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
 - **问题：** 此来源记录了什么：之元写作法：内部范例与反例？
 - **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
-- **来源摘要：** Version: 0.3.0 Status: CURRENTINTERNALEXAMPLES
+- **来源摘要：** Version: 0.5.0 Status: CURRENTINTERNALEXAMPLES
 - **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
 - **变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
@@ -236,7 +249,7 @@
 - **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
 - **问题：** 此来源记录了什么：当天意有了接口：宋徽宗与会自我证明的皇权？
 - **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
-- **来源摘要：** 它们飞得并不需要先知道自己将被怎样解释。鹤只是经过，宫门只是宫门，天空也没有留下可供核对的说明书。可在一座宫廷里，一件自然事件不会停在“发生过”这一层。它会被看见，被报告，被画下来，被题诗，再被放进一套关于太平、圣王与天命的语言中。赵佶留下的《瑞鹤图》，正是在这样的转换之后出现的。
+- **来源摘要：** 鹤只是从宫门上空飞过。人们后来怎样解释这一幕，是另一回事。天空没有留下说明，宫门也不会自行发言。可事情一旦进入宫廷，就不会停在“发生过”这一层：有人看见，有人报告，有人画下来、题上诗，再把它放进关于太平、圣王与天命的语言中。赵佶留下的《瑞鹤图》，正是在这连串动作之后出现的。
 - **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
 - **变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
@@ -1790,6 +1803,19 @@
 - **问题：** 此来源记录了什么：121Q24 Current-State Reconciliation？
 - **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
 - **来源摘要：** Status: AUDITCOMPLETESYNCREQUIRED
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [任务 114 项目级语言—思维风险审计](../reports/operations/114-language-thought-project-audit.md)
+
+- **结果 ID：** `HR-094A86EF6AA2A143`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `114-LANGUAGE-THOUGHT-PROJECT-AUDIT`
+- **问题：** 此来源记录了什么：任务 114 项目级语言—思维风险审计？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 本轮在结果性审计之前冻结了 14 个高风险项目表面，见 data/language-thought/project-audit-population.json。范围包括根入口、权威架构、当前状态、AI 冷启动、系统地图、之元写作法、两篇现行作品、人工／机器书架以及只能由生成器更新的阅读与知识表面。冻结范围之外的仓库文件没有因为“文风统一”而被批量重写。
 - **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
 - **变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.

@@ -1149,6 +1149,11 @@
   - 可搜索名称：IMPLICIT-7E92FC44285573D3 / ## 3. MCF、PSD、ARN 与 Function OS / IMPLICIT-7E92FC44285573D3
   - 来源：`data/operations/iterations/112/publication/r0-original/volume/来源与证据附录.md`
   - 依赖：—；被引用：—
+- [## L4：机制与模型](../../../docs/language-thought/cross-layer-contract.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-C9630059E9808D8A / ## L4：机制与模型 / IMPLICIT-C9630059E9808D8A
+  - 来源：`docs/language-thought/cross-layer-contract.md`
+  - 依赖：—；被引用：—
 - [## nfc-2b7304f480da70c2 — Iteration method 1.3.0 and system map 0.2.0, 0.3.0 are Historical; method 1.2.0 and map 0.1.0 are earlier Historical, no](../../../analysis/corpus-relation/cluster_source_briefs/C004.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-090B7B9E9650BA15 / ## nfc-2b7304f480da70c2 — Iteration method 1.3.0 and system map 0.2.0, 0.3.0 are Historical; method 1.2.0 and map 0.1.0 are earlier Historical, no / IMPLICIT-090B7B9E9650BA15 / IMPLICIT-2545793608FF2828
@@ -1551,6 +1556,11 @@
   - 可搜索名称：NFC-755a3f5c9a0a0cba / `after-projection.json`
   - 来源：`reports/architecture/121Q23C-operational-arn-real-history-validation.md`
   - 依赖：—；被引用：—
+- [`agency_or_causality_changed`](../../../docs/language-thought/validation-and-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-5ba0c5e970b0bfbe / `agency_or_causality_changed`
+  - 来源：`docs/language-thought/validation-and-audit.md`
+  - 依赖：—；被引用：—
 - [`before-projection.json`](../../../reports/architecture/121Q23C-operational-arn-real-history-validation.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-9361bf16cdd7f8c9 / `before-projection.json`
@@ -1606,6 +1616,11 @@
   - 可搜索名称：NFC-7b1ab63aecbf4b2a / `EmbeddingEvidenceRecord`: independent evidence axes for external availability, retrieval, linkage, conflict exposure, j
   - 来源：`docs/architecture/adaptive-relational-network.md`
   - 依赖：—；被引用：—
+- [`epistemic_relevance`：是否可能改变命题、对象、论证、机制或证据权限；](../../../docs/language-thought/translation-and-residue.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-920a498fb9fdf101 / `epistemic_relevance`：是否可能改变命题、对象、论证、机制或证据权限；
+  - 来源：`docs/language-thought/translation-and-residue.md`
+  - 依赖：—；被引用：—
 - [`evidence_tier_104: METADATA_VERIFIED` rating of the external-source atlas. A](../../../evidence-program/registry/candidate-portfolio.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-16695fbd043341d1 / `evidence_tier_104: METADATA_VERIFIED` rating of the external-source atlas. A
@@ -1640,6 +1655,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-d27e0c71144732a1 / `ITERATION.md` and its three operation templates are not triggered because classification excludes `OPERATIONS_METHOD`.
   - 来源：`reports/operations/121Q28-embodied-cognitive-leap-writing-method-audit.md`
+  - 依赖：—；被引用：—
+- [`language_thought` 是横穿 L0—L6 的控制平面 overlay；`layers` 组仍严格只有 L0—L6。它与各层的连线表示框架审计和同步义务，不表示语言决定现实因果。](../../../docs/architecture/interactive-system-map.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-fadcdc0b17ca3814 / `language_thought` 是横穿 L0—L6 的控制平面 overlay；`layers` 组仍严格只有 L0—L6。它与各层的连线表示框架审计和同步义务，不表示语言决定现实因果。
+  - 来源：`docs/architecture/interactive-system-map.md`
   - 依赖：—；被引用：—
 - [`map-agent-delivery-operations`: shows user request, 1111 command bus, Codex execution, artifacts, local validation, rem](../../../reports/atlas/121Q14-dynamic-atlas.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
@@ -1822,6 +1842,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-4f05a2222b175183 / A new approach to causal inference in mortality studies with sustained exposure periods
   - 来源：`data/external-research/105-intervention-control/105-intervention-control-source-pack.jsonl`
+  - 依赖：—；被引用：—
+- [A paired ‘越…越…’ construction makes visibility and self-confirmation sound more deterministic than the bounded mechanism](../../../data/language-thought/audit-findings.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-dda2a17b8eaabc17 / A paired ‘越…越…’ construction makes visibility and self-confirmation sound more deterministic than the bounded mechanism
+  - 来源：`data/language-thought/audit-findings.jsonl`
   - 依赖：—；被引用：—
 - [A Reflection on the Impact of Misspecifying Unidentifiable Causal Inference Models](../../../data/external-research/105-intervention-control/105-intervention-control-source-pack.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
@@ -2472,29 +2497,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-dee0808acfed8e53 / Charter Gate 仍位于两平面之上，决定行动是否可做、可如何做。
   - 来源：`ARCHITECTURE.md`
-  - 依赖：—；被引用：—
-- [Charter Gate: responsibility and burden projections must record beneficiaries, risk bearers, silent subjects, irreversib](../../../reports/architecture/121Q21R-multiscale-causal-fabric-validation.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-93dde877b5eaf729 / Charter Gate: responsibility and burden projections must record beneficiaries, risk bearers, silent subjects, irreversib
-  - 来源：`reports/architecture/121Q21R-multiscale-causal-fabric-validation.md`
-  - 依赖：—；被引用：—
-- [Charter language could absorb licensing mechanics unless legal scope and sustainability mechanism remain separate.](../../../data/architecture/attention-audits/121q8-over-absorption-risk.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-c04f5f379e239df8 / Charter language could absorb licensing mechanics unless legal scope and sustainability mechanism remain separate.
-  - 来源：`data/architecture/attention-audits/121q8-over-absorption-risk.json`
-  - 依赖：—；被引用：—
-- [Charter System R1 — Architecture (Accepted / Current, on main, non-Activated)](../../ASSET-CARDS.md#asset-hr-715f3951a2b86789)
-  - 类型/状态：`RESULT_OR_ARTICLE` · `CURRENT_SCOPED_SOURCE`
-  - 可搜索名称：Charter System R1 — Architecture (Accepted / Current, on main, non-Activated) / charter-system-r1
-  - 来源：`docs/governance/charter-system-r1.md`
-  - 依赖：—；被引用：—
-- [Check evidence tiers](../../../data/external-research/120-function-paradigm-atlas/120-validator.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-1d6b3024441eec44 / Check evidence tiers
-  - 来源：`data/external-research/120-function-paradigm-atlas/120-validator.py`
-  - 依赖：—；被引用：—
-- [check("gate:no-established-causal",all(x.get("claim_type")!="EMPIRICAL_CAUSAL_CLAIM" for x in objects))](../../../tools/foundation/validate_foundation.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-a63f9d2ce0ac0f0c / check("gate:no-established-causal",all(x.get("claim_type")!="EMPIRICAL_CAUSAL_CLAIM" for x in objects))
-  - 来源：`tools/foundation/validate_foundation.py`
   - 依赖：—；被引用：—

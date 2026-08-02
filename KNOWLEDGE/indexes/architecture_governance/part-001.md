@@ -904,6 +904,11 @@
   - 可搜索名称：NFC-0d05d4aad7f271a3 / "EVIDENCE_PROGRAM_IMPACT": "IMPACT_REQUIRED",
   - 来源：`tools/propagation/validate_reconciliation.py`
   - 依赖：—；被引用：—
+- ["evidence_records": len(evidence),](../../../tools/language_thought/validate_language_thought.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-503d78ba7701622d / "evidence_records": len(evidence),
+  - 来源：`tools/language_thought/validate_language_thought.py`
+  - 依赖：—；被引用：—
 - ["evidence_references": source_refs,](../../../tools/foundation/adjudicate_nonfunction_claims.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-7fd5558a50f6ae96 / "evidence_references": source_refs,
@@ -1278,6 +1283,16 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-bdf18bcbe0ea29a9 / "LAW_OR_PRINCIPLE_CLAIM": "UNRESOLVED",
   - 来源：`tools/foundation/adjudicate_nonfunction_claims.py`
+  - 依赖：—；被引用：—
+- ["lawful_long_sentence",](../../../tools/language_thought/validate_language_thought.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-ce17f1d3fe5b4879 / "lawful_long_sentence",
+  - 来源：`tools/language_thought/validate_language_thought.py`
+  - 依赖：—；被引用：—
+- ["lawful_short_sentence",](../../../tools/language_thought/validate_language_thought.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-994a0d188d06ce67 / "lawful_short_sentence",
+  - 来源：`tools/language_thought/validate_language_thought.py`
   - 依赖：—；被引用：—
 - ["legacy-compatibility-report-20260712.md":"# Legacy compatibility report\\n\\nThe old tables are byte-preserved and mapped](../../../tools/foundation/migrate_legacy.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
@@ -2488,19 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
   - 可搜索名称：NFC-d120def3f99203ba / "社会信任是由制度、文化、互动等多重因素共同塑造"（这是社会科学界的共识，点火框架只是重述）
   - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
-  - 依赖：—；被引用：—
-- ["结构增益"容易被误读为"已解决"](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-6cc9280d7313f419 / "结构增益"容易被误读为"已解决"
-  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
-  - 依赖：—；被引用：—
-- ["运行验证器并冻结基线。",](../../../tools/build_deliverables.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-2f33e1dd9af13cbe / "运行验证器并冻结基线。",
-  - 来源：`tools/build_deliverables.py`
-  - 依赖：—；被引用：—
-- ["重新验证 content_machine_eligible 与 ratification_ready。",](../../../tools/build_deliverables.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-7412b87288ca5d2d / "重新验证 content_machine_eligible 与 ratification_ready。",
-  - 来源：`tools/build_deliverables.py`
   - 依赖：—；被引用：—

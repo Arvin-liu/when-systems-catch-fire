@@ -10,6 +10,7 @@
     "docs/architecture/ignition-atlas.md": "2026-07-15",
     "docs/architecture/incremental-execution.md": "2026-07-18",
     "docs/architecture/interactive-system-map.md": "2026-07-17",
+    "docs/architecture/language-thought-logic-plane.md": "2026-08-02",
     "docs/architecture/mechanism-adjudication-plane.md": "2026-07-15",
     "docs/architecture/multiscale-causal-fabric.md": "2026-07-16",
     "docs/architecture/probabilistic-system-dynamics.md": "2026-07-16",
@@ -256,6 +257,7 @@
     "reports/math-foundation/pilot-formal-audit-20260712.md": "2026-07-12",
     "reports/math-foundation/provenance-audit-20260712.md": "2026-07-12",
     "reports/operations/102-knowledge-experience-audit.md": "2026-07-30",
+    "reports/operations/114-language-thought-project-audit.md": "2026-08-02",
     "reports/operations/121Q24-current-state-reconciliation.md": "2026-07-16",
     "reports/operations/121Q25-front-door-audit.md": "2026-07-16",
     "reports/operations/121Q25B-whole-project-synchronization-contract.md": "2026-07-16",
@@ -292,7 +294,7 @@
     "新故事/0001-S1-比刀剑更持久的，是共享观念.md": "2026-07-06",
     "新故事/INDEX.md": "2026-07-06"
   },
-  "entry_count": 290,
+  "entry_count": 292,
   "history_requirement": "FULL",
   "schema_version": "1.0.0"
 }

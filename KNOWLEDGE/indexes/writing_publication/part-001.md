@@ -84,6 +84,11 @@
   - 可搜索名称：NFC-8d10fe1f765dbbee / `FACT` 和 `ANALOGY` 没有混写
   - 来源：`docs/narrative-story-validation.md`
   - 依赖：—；被引用：—
+- [`normalized_meaning_candidate`（必须标明候选投影，不是真义）：](../../../templates/publication/zhiyuan-writing-spec.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-669d97a762b49aa9 / `normalized_meaning_candidate`（必须标明候选投影，不是真义）：
+  - 来源：`templates/publication/zhiyuan-writing-spec.md`
+  - 依赖：—；被引用：—
 - [`stage_snapshot_publication --projects / repository_dependency--> readme` — public stage-summary projection only; no cap](../../../reports/operations/IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-GATE-NARROW-REPAIR-R1-20260726-change-propagation-impact.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-2304d7a7965cf7f8 / `stage_snapshot_publication --projects / repository_dependency--> readme` — public stage-summary projection only; no cap
@@ -164,15 +169,15 @@
   - 可搜索名称：NFC-1b8cd3ccf09d069e / render_projection,
   - 来源：`tests/test_stage_snapshot_publication.py`
   - 依赖：—；被引用：—
-- [reports/publication/jin-rise-point-fire-analysis.md](../../../reports/publication/jin-rise-point-fire-analysis.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：D01 / reports/publication/jin-rise-point-fire-analysis.md / D01
-  - 来源：`reports/publication/jin-rise-point-fire-analysis.md`
-  - 依赖：—；被引用：—
 - [require(len(actor_history_ids) == len(set(actor_history_ids)), f"{actor\['actor_id'\]}: duplicate actor history record ID")](../../../tools/operations/stage_snapshot_contract.py)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-A59CDF2ECB87EAC4 / require(len(actor_history_ids) == len(set(actor_history_ids)), f"{actor\['actor_id'\]}: duplicate actor history record ID") / IMPLICIT-A59CDF2ECB87EAC4
   - 来源：`tools/operations/stage_snapshot_contract.py`
+  - 依赖：—；被引用：—
+- [require(manifest.get("task_id") == TASK_ID, "publication manifest task identity mismatch")](../../../data/operations/iterations/114/publication/tools/validate_publication.py)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-DCD595A104850EA5 / require(manifest.get("task_id") == TASK_ID, "publication manifest task identity mismatch") / IMPLICIT-DCD595A104850EA5
+  - 来源：`data/operations/iterations/114/publication/tools/validate_publication.py`
   - 依赖：—；被引用：—
 - [require(pilot.get("history_mode") == "read_only", f"{source}: pilot must be read_only")](../../../tools/validate_effectual_mechanism_overlay.py)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -520,11 +525,6 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-6e3bd22c54152d14 / 至少列出一个 `non_isomorphic_limit`
   - 来源：`docs/narrative-story-validation.md`
-  - 依赖：—；被引用：—
-- [若任务涉及 L6 公共故事、文章或作品反馈，还应读取 `docs/publication/zhiyuan-writing-method.md` 与对应后台规格。之元写作法 `0.4.0` 是当前能力，使用外部输入与点火增量输出双来源素材池；](../../../AI-START-HERE.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-4a4a05efad828766 / 若任务涉及 L6 公共故事、文章或作品反馈，还应读取 `docs/publication/zhiyuan-writing-method.md` 与对应后台规格。之元写作法 `0.4.0` 是当前能力，使用外部输入与点火增量输出双来源素材池；
-  - 来源：`AI-START-HERE.md`
   - 依赖：—；被引用：—
 - [若任务涉及当前展示的之元写作法成果，还要读取 `docs/publication/zhiyuan-writing-showcase.md` 与 `data/publication/zhiyuan-writing-showcase.json`](../../../AI-START-HERE.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`

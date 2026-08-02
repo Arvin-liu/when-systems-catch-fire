@@ -178,6 +178,28 @@ PARTIALEXTERNALEVIDENCELAYERWITHEXPLICITBLOCKERS 边界：This is a conservative
 
 [outputs/audit/codespace-rescue-two-tables-diff-audit-20260708.md](../outputs/audit/codespace-rescue-two-tables-diff-audit-20260708.md)
 
+<a id="reading-hr-094a86ef6aa2a143"></a>
+## 任务 114 项目级语言—思维风险审计
+
+**状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · **主题：** `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
+
+### 1 分钟
+
+本轮在结果性审计之前冻结了 14 个高风险项目表面，见 data/language-thought/project-audit-population.json。范围包括根入口、权威架构、当前状态、AI 冷启动、系统地图、之元写作法、两篇现行作品、人工／机器书架以及只能由生成器更新的阅读与知识表面。冻结范围之外的仓库文件没有因为“文风统一”而被批量重写。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+
+### 5 分钟
+
+- 来源要点（导航摘录，不得视为当前断言）：主题：任务 114 项目级语言—思维风险审计
+- 来源要点（导航摘录，不得视为当前断言）：本轮在结果性审计之前冻结了 14 个高风险项目表面，见 data/language-thought/project-audit-population.json。范围包括根入口、权威架构、当前状态、AI 冷启动、系统地图、之元写作法、两篇现行作品、人工／机器书架以及只能由生成器更新的阅读与知识表面。冻结范围之外的仓库文件没有因为“文风统一”而被批量重写。
+- 来源要点（导航摘录，不得视为当前断言）：冻结人口：14 个表面；每个都有至少一个 disposition。
+- 来源要点（导航摘录，不得视为当前断言）：分类：meaningorclaimchanged=3、agencyorcausalitychanged=5、uncertaintychanged=2、discourselogicchanged=4、naturalnessorstyleonly=2、allowedmarkedsyntax=2、noaction=7。
+- 来源要点（导航摘录，不得视为当前断言）：处置：19 条首轮修复、3 条母语审查后实质修复、3 条明确保留。
+- 来源要点（导航摘录，不得视为当前断言）：发现全集：data/language-thought/audit-findings.jsonl。
+
+### 完整阅读
+
+[reports/operations/114-language-thought-project-audit.md](../reports/operations/114-language-thought-project-audit.md)
+
 <a id="reading-hr-0a1370d6fff72a4c"></a>
 ## IGNITION-106: 下一任务交接
 
@@ -794,7 +816,7 @@ IGNITION-121A was executed by QClaw (model: qclaw/pool-glm-5.2-night, reasoning:
 - 来源要点（导航摘录，不得视为当前断言）：战场上最先转身的人，未必知道自己正在逃跑。
 - 来源要点（导航摘录，不得视为当前断言）：他可能只是看见前方的旗变了方向，几匹马逆着队列奔来。也许那是传令，也许主将正在调动一支小队，也许真正的战斗还远没有分出胜负。但他站得太低，看不见全局；箭矢和马蹄也不会给他时间核实。他后退一步，想为自己留下半息余地。
 - 来源要点（导航摘录，不得视为当前断言）：身后的人看见的，却不是“半息余地”。他们看见一个从前方退回来的人。
-- 来源要点（导航摘录，不得视为当前断言）：一步变成了消息。第二个人并没有获得更多战场事实，只获得了第一个人的判断；第三个人甚至看不见敌军，他看见的是前两个人。越靠后，关于敌人的信息越少，关于自己人的信息越多。到某一刻，军队不再根据敌军发生了什么行动，而是根据军队怎样看待自己行动。
+- 来源要点（导航摘录，不得视为当前断言）：一步变成了消息。第二个人并没有获得更多战场事实，只获得了第一个人的判断；第三个人甚至看不见敌军，他看见的是前两个人。越靠后，关于敌人的信息越少，关于自己人的信息越多。到了某一刻，军队不再看敌军做了什么，只盯着自己人：谁在退，谁还站着。战局如何，仿佛都能从这些反应里看出来。
 - 来源要点（导航摘录，不得视为当前断言）：我们习惯把“失败”理解为一个结果：阵地丢了，主将死了，伤亡大到无法继续。可在这里，失败先是一种解释。有人把后退解释为前线已败，随后用自己的后退替这个解释增加证据。等越来越多人这样做，解释才取得肉身，踩倒同伴，堵塞道路，把原本尚可收拾的混乱变成真正的溃败。
 - 来源要点（导航摘录，不得视为当前断言）：金辽战争的一些叙述，为这种时刻留下了观察窗口：撤动、指挥中枢受压、信息混乱和局部退却，可能彼此放大。但具体战役的兵力、伤亡和先后次序仍需史料考订；所谓统一的“崩溃百分比”，也不能当作穿越时代的定律。我们不能从一段有力的故事断定某场战役就是这样发生的。我们只能先停在这个士兵身边，看见一件更小、也更危险的事：人会把别人的反应当成现实的证据，而他的反应又会进入别人眼中的现实。
 
@@ -1276,11 +1298,11 @@ These sources guide representation and validator boundaries only. 边界：This 
 
 ### 1 分钟
 
-Version: 0.3.0 Status: CURRENTINTERNALEXAMPLES 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+Version: 0.5.0 Status: CURRENTINTERNALEXAMPLES 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 
 ### 5 分钟
 
-- 来源要点（导航摘录，不得视为当前断言）：Version: 0.3.0 Status: CURRENTINTERNALEXAMPLES
+- 来源要点（导航摘录，不得视为当前断言）：Version: 0.5.0 Status: CURRENTINTERNALEXAMPLES
 - 来源要点（导航摘录，不得视为当前断言）：本文只说明方法原型、反例、同源设计来源与边界，不把作品当作科学证据、普遍审美证明、严格同构或可复制的固定结构。维护者自述属于 design provenance，不是脑科学证据；项目术语不得粗暴解释掉作品自身。
 - 来源要点（导航摘录，不得视为当前断言）：主题：《永昭·虚遐》：肉身锚定模式的正例
 - 来源要点（导航摘录，不得视为当前断言）：权威文本是生命共同体价值宪章中的完整序言与全文。它在本方法中展示的是一种可选模式，而非所有作品的门槛：
@@ -3029,15 +3051,15 @@ Y1 is a workflow orchestrator; JPLUS and JMINUS are internal evidence channels; 
 
 ### 1 分钟
 
-它们飞得并不需要先知道自己将被怎样解释。鹤只是经过，宫门只是宫门，天空也没有留下可供核对的说明书。可在一座宫廷里，一件自然事件不会停在“发生过”这一层。它会被看见，被报告，被画下来，被题诗，再被放进一套关于太平、圣王与天命的语言中。赵佶留下的《瑞鹤图》，正是在这样的转换之后出现的。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+鹤只是从宫门上空飞过。人们后来怎样解释这一幕，是另一回事。天空没有留下说明，宫门也不会自行发言。可事情一旦进入宫廷，就不会停在“发生过”这一层：有人看见，有人报告，有人画下来、题上诗，再把它放进关于太平、圣王与天命的语言中。赵佶留下的《瑞鹤图》，正是在这连串动作之后出现的。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 
 ### 5 分钟
 
 - 来源要点（导航摘录，不得视为当前断言）：主题：当天意有了接口：宋徽宗与会自我证明的皇权
 - 来源要点（导航摘录，不得视为当前断言）：1112 年，开封宫门上空出现了一群鹤。
-- 来源要点（导航摘录，不得视为当前断言）：它们飞得并不需要先知道自己将被怎样解释。鹤只是经过，宫门只是宫门，天空也没有留下可供核对的说明书。可在一座宫廷里，一件自然事件不会停在“发生过”这一层。它会被看见，被报告，被画下来，被题诗，再被放进一套关于太平、圣王与天命的语言中。赵佶留下的《瑞鹤图》，正是在这样的转换之后出现的。
-- 来源要点（导航摘录，不得视为当前断言）：因此，画上最值得看的也许不是鹤到底从哪里来，而是它们上方和下方之间多出了一整套工作：谁有资格报告，什么算作祥瑞，哪一种画法可以保存它，哪一首诗能替它发言，以及谁能把这份发言送回皇帝那里。
-- 来源要点（导航摘录，不得视为当前断言）：天意从来不是只落在地上的东西。它还要经过一个接口，才会成为政治事实。
+- 来源要点（导航摘录，不得视为当前断言）：鹤只是从宫门上空飞过。人们后来怎样解释这一幕，是另一回事。天空没有留下说明，宫门也不会自行发言。可事情一旦进入宫廷，就不会停在“发生过”这一层：有人看见，有人报告，有人画下来、题上诗，再把它放进关于太平、圣王与天命的语言中。赵佶留下的《瑞鹤图》，正是在这连串动作之后出现的。
+- 来源要点（导航摘录，不得视为当前断言）：因此，真正值得看的也许不是鹤到底从哪里来，而是鹤飞过之后发生了什么：谁有资格报告，什么算作祥瑞，哪一种画法可以保存它，哪一首诗能替它发言，又由谁把这份解释送回皇帝那里。
+- 来源要点（导航摘录，不得视为当前断言）：天意不是落地就能成为政治事实。先要有人报告、命名、登记和展示，它才会获得宫廷能够使用的形状。本文把这条通路称为接口。
 - 来源要点（导航摘录，不得视为当前断言）：宋徽宗最容易被解释。北宋在他之后覆亡，他又留下了精致的画、奢丽的园林和“道君皇帝”的名声。于是，一个熟悉的故事很快完成：艺术家皇帝迷信道教，道士替他制造祥瑞，皇权在自我陶醉中走向崩溃。
 
 ### 完整阅读
@@ -4365,11 +4387,11 @@ English: Zhiyuan Writing Method 边界：This is a conservative navigation summa
 ### 5 分钟
 
 - 来源要点（导航摘录，不得视为当前断言）：English: Zhiyuan Writing Method
-- 来源要点（导航摘录，不得视为当前断言）：Version: 0.4.0 current; 0.3.0 remains a historical merged version.
+- 来源要点（导航摘录，不得视为当前断言）：Version: 0.5.0 current; 0.4.0 and 0.3.0 remain historical merged versions.
 - 来源要点（导航摘录，不得视为当前断言）：Status: CURRENTMERGEDL6CAPABILITY
-- 来源要点（导航摘录，不得视为当前断言）：Operational location: L6 interpretation / application / publication. Generative provenance: maintainer-declared shared cognitive provenance with 点火 as a whole. Version 0.4.0 extends the writing-material boundary without adding an architecture or truth layer and cannot raise any L0-L5 claim.
+- 来源要点（导航摘录，不得视为当前断言）：Operational location: L6 interpretation / application / publication. Generative provenance: maintainer-declared shared cognitive provenance with 点火 as a whole. Version 0.5.0 makes the method a target-language publication consumer of the project-wide Language–Thought Logic Plane; it does not add L7 or raise any L0-L5 claim.
 - 来源要点（导航摘录，不得视为当前断言）：本方法以“之元”命名，因为它不是从通用写作教材拼接而来，而是从维护者之元的作品、心智运动、反馈和失败反例中蒸馏、提炼并总结出的个人写作方法。名称标记其真实来源和心智风格谱系。
-- 来源要点（导航摘录，不得视为当前断言）：“之元写作法”是方法名称；“心智层级跃迁”是其当前 0.3.0 的核心生成运动之一。方法具体如何实现，由起始承载点、前视写作、不可容纳残余、心智引力中心、概念递归重定义、突然跃迁、隐形连续性、回照增义、潜题生长与反向显影、低层保存、信息增益停止，以及公共表达与反馈返回点火的双向契约共同定义。
+- 来源要点（导航摘录，不得视为当前断言）：“之元写作法”是方法名称；“心智层级跃迁”是其自 0.3.0 起的核心生成运动之一。方法具体如何实现，由起始承载点、前视写作、不可容纳残余、心智引力中心、概念递归重定义、突然跃迁、隐形连续性、回照增义、潜题生长与反向显影、低层保存、信息增益停止，以及公共表达与反馈返回点火的双向契约共同定义。
 
 ### 完整阅读
 
@@ -5279,6 +5301,28 @@ generatedat: 2026-07-10T20:50:00+08:00 ｜ count: 12 边界：This is a conserva
 
 [outputs/protocol-canonical-validation-results.md](../outputs/protocol-canonical-validation-results.md)
 
+<a id="reading-hr-cf318764b78d8743"></a>
+## 语言—思维逻辑平面
+
+**状态：** `CURRENT_SCOPED_SOURCE` · **主题：** `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`
+
+### 1 分钟
+
+English: Language–Thought Logic Plane 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+
+### 5 分钟
+
+- 来源要点（导航摘录，不得视为当前断言）：English: Language–Thought Logic Plane
+- 来源要点（导航摘录，不得视为当前断言）：Status: CURRENTCROSSLAYERCONTROLPLANE
+- 来源要点（导航摘录，不得视为当前断言）：点火把“语言条件化的思维组织”实现为一张横穿 L0—L6 的正交控制平面，不增加 L7，也不把它降格为 L6 的中文润色器。
+- 来源要点（导航摘录，不得视为当前断言）：这里的“逻辑”不是另一套真假规则。它指人在准备说出、抽取或翻译一个意思时，语言反复要求或倾向要求他怎样安排话题与主语、显露行为者、划定事件边界、标记知识来源、恢复省略成分、连接分句和组织已知／新信息。数学命题和经验证据不会因为换一种语言而改变真值；语言形式本身也不能提高任何 claim ceiling。
+- 来源要点（导航摘录，不得视为当前断言）：记录来源语言、语体、版本、翻译者或模型与转换链；
+- 来源要点（导航摘录，不得视为当前断言）：发现行为者、体貌、证据来源、话题焦点、连接词等发生了什么变化；
+
+### 完整阅读
+
+[docs/architecture/language-thought-logic-plane.md](../docs/architecture/language-thought-logic-plane.md)
+
 <a id="reading-hr-d0d9de18fd9e9bde"></a>
 ## 085: 084 Truth Status Correction
 
@@ -5396,16 +5440,16 @@ Status: 121Q13CONTROLOVERLAY 边界：This is a conservative navigation summary,
 
 ### 1 分钟
 
-本索引是 121Q30T 收口后的当前成果入口，收录由当前之元写作法 0.4.0或其历史版本生成、具备可追溯来源链和点火分析链、并已进入相应审查状态的公共表达成果。每项记录保留实际使用的方法版本；旧作品不会被回填成新版本。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+本索引是当前成果入口，收录由之元写作法 0.5.0或其历史版本生成、具备可追溯来源链和点火分析链、并已进入相应审查状态的公共表达成果。每项记录同时保留历史接受时实际使用的方法版本与当前 revision；旧作品不会被回填成新版本。任务 114 的语言修订使用语言—思维逻辑平面，不改写旧接受哈希。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 
 ### 5 分钟
 
-- 来源要点（导航摘录，不得视为当前断言）：本索引是 121Q30T 收口后的当前成果入口，收录由当前之元写作法 0.4.0或其历史版本生成、具备可追溯来源链和点火分析链、并已进入相应审查状态的公共表达成果。每项记录保留实际使用的方法版本；旧作品不会被回填成新版本。
+- 来源要点（导航摘录，不得视为当前断言）：本索引是当前成果入口，收录由之元写作法 0.5.0或其历史版本生成、具备可追溯来源链和点火分析链、并已进入相应审查状态的公共表达成果。每项记录同时保留历史接受时实际使用的方法版本与当前 revision；旧作品不会被回填成新版本。任务 114 的语言修订使用语言—思维逻辑平面，不改写旧接受哈希。
 - 来源要点（导航摘录，不得视为当前断言）：首页只显示按 registry 排序的最近三条；全部成果保留在本页。新增成果必须同时建立正式作品、起始案例来源链、点火分析和机器 registry 记录，不得只手工添加一条链接。来源受版权或隐私限制时，只公开 provenance 记录，不复制受限全文。
 - 来源要点（导航摘录，不得视为当前断言）：这类成果说明个人认知结构的一部分可以被提炼为可描述、可调用、可审计、可追溯来源的方法，并可由他人或 AI 使用。它不证明方法普遍最优，不表示调用者复制了之元本人，也不让文学感染力提高事实、因果或价值主张的等级。
 - 来源要点（导航摘录，不得视为当前断言）：主题：《当天意有了接口：宋徽宗与会自我证明的皇权》
 - 来源要点（导航摘录，不得视为当前断言）：状态：PUBLISHEDWITHEXPLICITLIMITATIONS
-- 来源要点（导航摘录，不得视为当前断言）：排序时间：2026-08-02 简介：从《瑞鹤图》里一群不必先知道自己将怎样被解释的鹤出发，追问天意怎样经过称号、道门章疏、制度、园林、图像和受影响者，成为可以被宫廷组织的公共接口；文章最后把问题收回到谁能让这个接口报告坏消息。
+- 来源要点（导航摘录，不得视为当前断言）：排序时间：2026-08-02 简介：先让《瑞鹤图》中的鹤从宫门上空飞过，再追问宫廷怎样报告、登记和解释这件事；天意继而经过称号、道门章疏、制度、园林、图像和受影响者，成为可以被组织的公共接口。文章最后把问题收回到谁能让这个接口报告坏消息。
 
 ### 完整阅读
 
@@ -5632,11 +5676,11 @@ Status: 121Q32THISTORICAL. Iteration method 1.3.0 and interactive system map 0.3
 
 ### 1 分钟
 
-状态：0.4.0 Current registry-derived navigation projection；0.3.0、0.2.0 为 Historical。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+状态：0.5.0 Current registry-derived navigation projection；0.4.0 与更早版本为 Historical。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 
 ### 5 分钟
 
-- 来源要点（导航摘录，不得视为当前断言）：状态：0.4.0 Current registry-derived navigation projection；0.3.0、0.2.0 为 Historical。
+- 来源要点（导航摘录，不得视为当前断言）：状态：0.5.0 Current registry-derived navigation projection；0.4.0 与更早版本为 Historical。
 - 来源要点（导航摘录，不得视为当前断言）：project component registry + typed propagation topology + layout overlay → deterministic generator → materialized spec + repository SVG → README / ordinary Markdown navigation
 - 来源要点（导航摘录，不得视为当前断言）：不要手改 materialized spec 或 SVG：
 - 来源要点（导航摘录，不得视为当前断言）：SVG 现在位于 docs/generated/ignition-system-map.svg，通过 README 和普通 Markdown 直接访问，不依赖独立部署站点。SVG 节点链接指向 GitHub 仓库 canonical 文件；若客户端不支持 SVG 内部热点，可使用本页的文本入口。

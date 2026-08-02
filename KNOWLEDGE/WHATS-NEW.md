@@ -13,12 +13,21 @@
 - **来源：** [song-huizong-taoism-1117-source.md](../docs/publication/cases/song-huizong-taoism-1117-source.md)
 - **资产卡：** [HR-D6DC7EDFC015E4C7](./ASSET-CARDS.md#asset-hr-d6dc7edfc015e4c7)
 
+<a id="change-src-hr-cf318764b78d8743"></a>
+### 2026-08-02 · 语言—思维逻辑平面
+
+- **类型：** `MODEL_OR_ARCHITECTURE`
+- **状态：** `CURRENT_SCOPED_SOURCE`
+- **变化：** English: Language–Thought Logic Plane
+- **来源：** [language-thought-logic-plane.md](../docs/architecture/language-thought-logic-plane.md)
+- **资产卡：** [HR-CF318764B78D8743](./ASSET-CARDS.md#asset-hr-cf318764b78d8743)
+
 <a id="change-src-hr-7977aad32b24032d"></a>
 ### 2026-08-02 · 当天意有了接口：宋徽宗与会自我证明的皇权
 
 - **类型：** `ARTICLE_OR_PUBLICATION`
 - **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **变化：** 它们飞得并不需要先知道自己将被怎样解释。鹤只是经过，宫门只是宫门，天空也没有留下可供核对的说明书。可在一座宫廷里，一件自然事件不会停在“发生过”这一层。它会被看见，被报告，被画下来，被题诗，再被放进一套关于太平、圣王与天命的语言中。赵佶留下的《瑞鹤图》，正是在这样的转换之后出现的。
+- **变化：** 鹤只是从宫门上空飞过。人们后来怎样解释这一幕，是另一回事。天空没有留下说明，宫门也不会自行发言。可事情一旦进入宫廷，就不会停在“发生过”这一层：有人看见，有人报告，有人画下来、题上诗，再把它放进关于太平、圣王与天命的语言中。赵佶留下的《瑞鹤图》，正是在这连串动作之后出现的。
 - **来源：** [when-an-emperor-manufactures-heaven.md](../docs/publication/works/when-an-emperor-manufactures-heaven.md)
 - **资产卡：** [HR-7977AAD32B24032D](./ASSET-CARDS.md#asset-hr-7977aad32b24032d)
 
@@ -30,6 +39,15 @@
 - **变化：** 这不是对原笔记的摘要，而是一次受证据边界约束的材料运行。运行的目标不是替徽宗的内心作证，也不是给“道教导致亡国”找一条漂亮因果链；目标是找出材料中最难被同一解释容纳的残余，再让文章承担这个残余。
 - **来源：** [song-huizong-taoism-point-fire-analysis.md](../reports/publication/song-huizong-taoism-point-fire-analysis.md)
 - **资产卡：** [HR-694DB9C100FF4EAC](./ASSET-CARDS.md#asset-hr-694db9c100ff4eac)
+
+<a id="change-src-hr-094a86ef6aa2a143"></a>
+### 2026-08-02 · 任务 114 项目级语言—思维风险审计
+
+- **类型：** `AUDIT_OR_ADJUDICATION`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** 本轮在结果性审计之前冻结了 14 个高风险项目表面，见 data/language-thought/project-audit-population.json。范围包括根入口、权威架构、当前状态、AI 冷启动、系统地图、之元写作法、两篇现行作品、人工／机器书架以及只能由生成器更新的阅读与知识表面。冻结范围之外的仓库文件没有因为“文风统一”而被批量重写。
+- **来源：** [114-language-thought-project-audit.md](../reports/operations/114-language-thought-project-audit.md)
+- **资产卡：** [HR-094A86EF6AA2A143](./ASSET-CARDS.md#asset-hr-094a86ef6aa2a143)
 
 <a id="change-chg-111"></a>
 ### 2026-08-01 · 任务 111：失败案例证据门禁与苹果案例 target 缺失裁定
@@ -375,7 +393,7 @@
 
 - **类型：** `MODEL_OR_ARCHITECTURE`
 - **状态：** `HISTORICAL_OR_SUPERSEDED_SOURCE`
-- **变化：** 状态：0.4.0 Current registry-derived navigation projection；0.3.0、0.2.0 为 Historical。
+- **变化：** 状态：0.5.0 Current registry-derived navigation projection；0.4.0 与更早版本为 Historical。
 - **来源：** [interactive-system-map.md](../docs/architecture/interactive-system-map.md)
 - **资产卡：** [HR-DAF1CB45CCD7B5B6](./ASSET-CARDS.md#asset-hr-daf1cb45ccd7b5b6)
 
@@ -492,7 +510,7 @@
 
 - **类型：** `ARTICLE_OR_PUBLICATION`
 - **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **变化：** 本索引是 121Q30T 收口后的当前成果入口，收录由当前之元写作法 0.4.0或其历史版本生成、具备可追溯来源链和点火分析链、并已进入相应审查状态的公共表达成果。每项记录保留实际使用的方法版本；旧作品不会被回填成新版本。
+- **变化：** 本索引是当前成果入口，收录由之元写作法 0.5.0或其历史版本生成、具备可追溯来源链和点火分析链、并已进入相应审查状态的公共表达成果。每项记录同时保留历史接受时实际使用的方法版本与当前 revision；旧作品不会被回填成新版本。任务 114 的语言修订使用语言—思维逻辑平面，不改写旧接受哈希。
 - **来源：** [zhiyuan-writing-showcase.md](../docs/publication/zhiyuan-writing-showcase.md)
 - **资产卡：** [HR-D328AE24912155E2](./ASSET-CARDS.md#asset-hr-d328ae24912155e2)
 
@@ -636,7 +654,7 @@
 
 - **类型：** `ARTICLE_OR_PUBLICATION`
 - **状态：** `CURRENT_SCOPED_SOURCE`
-- **变化：** Version: 0.3.0 Status: CURRENTINTERNALEXAMPLES
+- **变化：** Version: 0.5.0 Status: CURRENTINTERNALEXAMPLES
 - **来源：** [zhiyuan-writing-examples.md](../docs/publication/zhiyuan-writing-examples.md)
 - **资产卡：** [HR-3B5E72D7F1CDFB5B](./ASSET-CARDS.md#asset-hr-3b5e72d7f1cdfb5b)
 

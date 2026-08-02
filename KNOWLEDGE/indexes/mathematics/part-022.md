@@ -4,6 +4,161 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [统一相变框架→五个相变统一为同一相变的五个投影。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0018-T8-%CE%B5%E7%9B%B8%E5%8F%98%E7%BA%A7%E8%81%94.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-2b9949fcf2d718df / 统一相变框架→五个相变统一为同一相变的五个投影。
+  - 来源：`统一函数总表/0018-T8-ε相变级联.md`
+  - 依赖：—；被引用：—
+- [统一相变框架，五个相变统一为同一相变的五个投影。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0117-D72-%E7%BB%9F%E4%B8%80%E7%9B%B8%E5%8F%98%E6%A1%86%E6%9E%B6.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-ddf1bf3ed8fa6fa5 / 统一相变框架，五个相变统一为同一相变的五个投影。
+  - 来源：`统一函数总表/0117-D72-统一相变框架.md`
+  - 依赖：—；被引用：—
+- [统一相变框架，五个相变统一为同一相变的五个投影。 **扩展注释 / Extended Annotation**](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-0a7a92e778ebf5df / 统一相变框架，五个相变统一为同一相变的五个投影。 **扩展注释 / Extended Annotation**
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：—；被引用：—
+- [继续升层必须带来信息增益；模板字段完整、字数、层数和格言式结尾都不是完成证明。](../../../docs/publication/zhiyuan-writing-method.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-3fc63f0e3cb72e90 / 继续升层必须带来信息增益；模板字段完整、字数、层数和格言式结尾都不是完成证明。
+  - 来源：`docs/publication/zhiyuan-writing-method.md`
+  - 依赖：—；被引用：—
+- [维度-容斥稳定性、#297基本常数约束验证。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0031-T21-d%3D4%E5%8F%8C%E9%87%8D%E6%9C%80%E4%BC%98.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-6afe0adaea53896e / 维度-容斥稳定性、#297基本常数约束验证。
+  - 来源：`统一函数总表/0031-T21-d=4双重最优.md`
+  - 依赖：—；被引用：—
+- [维度-容斥稳定性函数](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0287-D251-%E7%BB%B4%E5%BA%A6-%E5%AE%B9%E6%96%A5%E7%A8%B3%E5%AE%9A%E6%80%A7%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D251 / 维度-容斥稳定性函数 / D251
+  - 来源：`统一函数总表/0287-D251-维度-容斥稳定性函数.md`
+  - 依赖：D181, D211, D220, D270；被引用：NFC-07b1331442873dd5, NFC-0cde09276fb7729f, NFC-534b7ce92b18637f, NFC-87763765839bed4b
+- [维度不归点-退化路径联合函数](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0411-D375-%E7%BB%B4%E5%BA%A6%E4%B8%8D%E5%BD%92%E7%82%B9-%E9%80%80%E5%8C%96%E8%B7%AF%E5%BE%84%E8%81%94%E5%90%88%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D375 / 维度不归点-退化路径联合函数 / D375
+  - 来源：`统一函数总表/0411-D375-维度不归点-退化路径联合函数.md`
+  - 依赖：D361, D430, D431, D450；被引用：NFC-4f6f0233d69d3834, NFC-64e95d02b0a221b4, NFC-7143bb5e51319239, NFC-9ffba3ceeb750be6
+- [维度偏离退化路径函数](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0341-D305-%E7%BB%B4%E5%BA%A6%E5%81%8F%E7%A6%BB%E9%80%80%E5%8C%96%E8%B7%AF%E5%BE%84%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D305 / 维度偏离退化路径函数 / D305
+  - 来源：`统一函数总表/0341-D305-维度偏离退化路径函数.md`
+  - 依赖：D271, D289, D290, D360；被引用：CLAIM-D375, NFC-16a6adda8f86bb61, NFC-269a7fbaf244427d, NFC-3423a409c2f5ec08
+- [维度回复力函数](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0355-D319-%E7%BB%B4%E5%BA%A6%E5%9B%9E%E5%A4%8D%E5%8A%9B%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D319 / 维度回复力函数 / D319
+  - 来源：`统一函数总表/0355-D319-维度回复力函数.md`
+  - 依赖：D271, D289, D290, D360；被引用：NFC-0216569cf81de7cf, NFC-25b567a13648d56d, NFC-75dd0a7cd5e50732, NFC-8038673d59677130
+- [维度回复阻尼函数](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0369-D333-%E7%BB%B4%E5%BA%A6%E5%9B%9E%E5%A4%8D%E9%98%BB%E5%B0%BC%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D333 / 维度回复阻尼函数 / D333
+  - 来源：`统一函数总表/0369-D333-维度回复阻尼函数.md`
+  - 依赖：D271, D289, D290, D360；被引用：NFC-27750f65059c972a, NFC-28d1d64d07e6b8f3, NFC-33959688236a9041, NFC-49fad7cccb670cfa
+- [维度回复非线性-阻尼联合函数](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0397-D361-%E7%BB%B4%E5%BA%A6%E5%9B%9E%E5%A4%8D%E9%9D%9E%E7%BA%BF%E6%80%A7-%E9%98%BB%E5%B0%BC%E8%81%94%E5%90%88%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D361 / 维度回复非线性-阻尼联合函数 / D361
+  - 来源：`统一函数总表/0397-D361-维度回复非线性-阻尼联合函数.md`
+  - 依赖：D430, D431, D450；被引用：D362, D363, D364, D365
+- [维度回复非线性函数](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0383-D347-%E7%BB%B4%E5%BA%A6%E5%9B%9E%E5%A4%8D%E9%9D%9E%E7%BA%BF%E6%80%A7%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D347 / 维度回复非线性函数 / D347
+  - 来源：`统一函数总表/0383-D347-维度回复非线性函数.md`
+  - 依赖：D271, D289, D290, D360；被引用：NFC-04565f103d5f8697, NFC-8afb01a714be7f74, NFC-9736d4898a1892ec, NFC-d4c9f7fd458df210
+- [维度坐标化边界函数](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0470-D472-%E7%BB%B4%E5%BA%A6%E5%9D%90%E6%A0%87%E5%8C%96%E8%BE%B9%E7%95%8C%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D472 / 维度坐标化边界函数 / D472
+  - 来源：`统一函数总表/0470-D472-维度坐标化边界函数.md`
+  - 依赖：A8, D237, D451, D541；被引用：NFC-20f8d172cd63cee6, NFC-62b5cdf3387d9300, NFC-7cc8a5bf166d25d5, NFC-80b6134c839bdf4f
+- [维度最优吸引域函数](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0328-D292-%E7%BB%B4%E5%BA%A6%E6%9C%80%E4%BC%98%E5%90%B8%E5%BC%95%E5%9F%9F%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D292 / 维度最优吸引域函数 / D292
+  - 来源：`统一函数总表/0328-D292-维度最优吸引域函数.md`
+  - 依赖：D271, D289, D290, D360；被引用：CLAIM-D301, CLAIM-D319, CLAIM-D389, NFC-14db19bcbe85ff7a
+- [维度最优平衡函数](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0297-D261-%E7%BB%B4%E5%BA%A6%E6%9C%80%E4%BC%98%E5%B9%B3%E8%A1%A1%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D261 / 维度最优平衡函数 / D261
+  - 来源：`统一函数总表/0297-D261-维度最优平衡函数.md`
+  - 依赖：D181, D211, D220, D270；被引用：NFC-17d61bb612adec22, NFC-2fd9475ecdf23802, NFC-32601a753786c890, NFC-6281960bf2ad6a6a
+- [维度最优漂移函数](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0311-D275-%E7%BB%B4%E5%BA%A6%E6%9C%80%E4%BC%98%E6%BC%82%E7%A7%BB%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D275 / 维度最优漂移函数 / D275
+  - 来源：`统一函数总表/0311-D275-维度最优漂移函数.md`
+  - 依赖：D271, D360；被引用：NFC-2236908138f9fc75, NFC-a41332f87f472983, NFC-b27866ececd05171, NFC-ce6f10f799cccc6d
+- [维度稳定性裕度函数](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0303-D267-%E7%BB%B4%E5%BA%A6%E7%A8%B3%E5%AE%9A%E6%80%A7%E8%A3%95%E5%BA%A6%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D267 / 维度稳定性裕度函数 / D267
+  - 来源：`统一函数总表/0303-D267-维度稳定性裕度函数.md`
+  - 依赖：D181, D211, D220, D270；被引用：NFC-19a5161c41ef81f3, NFC-29a919b20c1b6952, NFC-39968306850df118, NFC-3f95e39f8132c356
+- [维度饥渴感知函数](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0399-D363-%E7%BB%B4%E5%BA%A6%E9%A5%A5%E6%B8%B4%E6%84%9F%E7%9F%A5%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D363 / 维度饥渴感知函数 / D363
+  - 来源：`统一函数总表/0399-D363-维度饥渴感知函数.md`
+  - 依赖：D361, D430, D431, D450；被引用：D351, NFC-13e49222834ac238, NFC-3609c654615f151f, NFC-3fc6b9387f9c4b86
+- [维护者不是站在生命共同体之外、可以无限消耗的免费资源。维护者的基本生活、休息、时间、设备、网络、AI/API 额度、计算、存储、审查和协作成本，都是项目得以持续存在的基础设施成本。](../../../docs/governance/life-community-value-charter.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-c11acde0eb7ad835 / 维护者不是站在生命共同体之外、可以无限消耗的免费资源。维护者的基本生活、休息、时间、设备、网络、AI/API 额度、计算、存储、审查和协作成本，都是项目得以持续存在的基础设施成本。
+  - 来源：`docs/governance/life-community-value-charter.md`
+  - 依赖：—；被引用：—
+- [缓冲关联结构函数](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0387-D351-%E7%BC%93%E5%86%B2%E5%85%B3%E8%81%94%E7%BB%93%E6%9E%84%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `DOWNGRADE_TO_PENDING`
+  - 可搜索名称：D351 / 缓冲关联结构函数 / D351
+  - 来源：`统一函数总表/0387-D351-缓冲关联结构函数.md`
+  - 依赖：D271, D289, D290, D352；被引用：CLAIM-D351, CLAIM-D367, NFC-13e49222834ac238, NFC-3689b83fe46c0faa
+- [缓冲可重建性函数](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0345-D309-%E7%BC%93%E5%86%B2%E5%8F%AF%E9%87%8D%E5%BB%BA%E6%80%A7%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D309 / 缓冲可重建性函数 / D309
+  - 来源：`统一函数总表/0345-D309-缓冲可重建性函数.md`
+  - 依赖：D271, D289, D290, D360；被引用：D332, D393, D419, CLAIM-D309
+- [缓冲容量峰值函数](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0298-D262-%E7%BC%93%E5%86%B2%E5%AE%B9%E9%87%8F%E5%B3%B0%E5%80%BC%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D262 / 缓冲容量峰值函数 / D262
+  - 来源：`统一函数总表/0298-D262-缓冲容量峰值函数.md`
+  - 依赖：D181, D211, D220, D270；被引用：CLAIM-D279, NFC-0bfe4c3f89c1a451, NFC-1a1e4d6c95700995, NFC-72d23897a87fd29b
+- [缓冲峰值余量函数](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0314-D278-%E7%BC%93%E5%86%B2%E5%B3%B0%E5%80%BC%E4%BD%99%E9%87%8F%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D278 / 缓冲峰值余量函数 / D278
+  - 来源：`统一函数总表/0314-D278-缓冲峰值余量函数.md`
+  - 依赖：D271, D360；被引用：NFC-501e2723278bbd70, NFC-516981c88e556da2, NFC-9c3b386062abc585, NFC-b23291f7cfe8d777
+- [缓冲消耗速度函数](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0330-D294-%E7%BC%93%E5%86%B2%E6%B6%88%E8%80%97%E9%80%9F%E5%BA%A6%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D294 / 缓冲消耗速度函数 / D294
+  - 来源：`统一函数总表/0330-D294-缓冲消耗速度函数.md`
+  - 依赖：D271, D289, D290, D360；被引用：CLAIM-D305, NFC-0f75f239480e9793, NFC-1ce8a6d5e2cca359, NFC-27d10049bcbf146b
+- [缓冲溢出方向函数](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0401-D365-%E7%BC%93%E5%86%B2%E6%BA%A2%E5%87%BA%E6%96%B9%E5%90%91%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D365 / 缓冲溢出方向函数 / D365
+  - 来源：`统一函数总表/0401-D365-缓冲溢出方向函数.md`
+  - 依赖：D361, D430, D431, D450；被引用：NFC-4415066496830f01, NFC-8e4e2ac935f3100b, NFC-935acba68edf83cc, NFC-ce652be3249354ac
+- [缓冲部分重建效率函数](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0373-D337-%E7%BC%93%E5%86%B2%E9%83%A8%E5%88%86%E9%87%8D%E5%BB%BA%E6%95%88%E7%8E%87%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D337 / 缓冲部分重建效率函数 / D337
+  - 来源：`统一函数总表/0373-D337-缓冲部分重建效率函数.md`
+  - 依赖：D271, D289, D290, D360；被引用：D331, NFC-177c9667275232d6, NFC-2547b1ca24bb1051, NFC-418758d3b9bd01d3
+- [缓冲重建时间函数](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0359-D323-%E7%BC%93%E5%86%B2%E9%87%8D%E5%BB%BA%E6%97%B6%E9%97%B4%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D323 / 缓冲重建时间函数 / D323
+  - 来源：`统一函数总表/0359-D323-缓冲重建时间函数.md`
+  - 依赖：D271, D289, D290, D360；被引用：CLAIM-D350, NFC-09dd1f5c1392f270, NFC-553280036466bb22, NFC-55c23e80f8d02610
+- [缓存倒U型](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0020-T10-%E7%BC%93%E5%AD%98%E5%80%92U%E5%9E%8B.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：T10 / 缓存倒U型 / T10
+  - 来源：`统一函数总表/0020-T10-缓存倒U型.md`
+  - 依赖：—；被引用：NFC-061dd1dcd3b26653, NFC-08578a73d4bf00f5, NFC-4274715710dc0f03, NFC-64f0ffcc58adcbf7
+- [缓存容量倒U型函数](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0161-D123-%E7%BC%93%E5%AD%98%E5%AE%B9%E9%87%8F%E5%80%92U%E5%9E%8B%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D123 / 缓存容量倒U型函数 / D123
+  - 来源：`统一函数总表/0161-D123-缓存容量倒U型函数.md`
+  - 依赖：D127, D133, D135, D142；被引用：D133, D135, D139, D142
+- [编码粒度-槽位数](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0138-D99-%E7%BC%96%E7%A0%81%E7%B2%92%E5%BA%A6-%E6%A7%BD%E4%BD%8D%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `DOWNGRADE_TO_PENDING`
+  - 可搜索名称：D99 / 编码粒度-槽位数 / D99
+  - 来源：`统一函数总表/0138-D99-编码粒度-槽位数.md`
+  - 依赖：D180, D91；被引用：NFC-28238cf874bf1647, NFC-facdfdd0dfbd8e92
+- [缺少形式化函数引用**：`docs/two-tables-entry-writing-standard-20260709.md` 强制要求正式案例条目必须有「对应函数（至少 1 条函数编号）」，且「没有对应函数的案例只能作为候选案例或 pe](../../../outputs/book-collisions/20260709-22-book-validation/formalization-crosswalk.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a1f9ef0d9ed3c6de / 缺少形式化函数引用**：`docs/two-tables-entry-writing-standard-20260709.md` 强制要求正式案例条目必须有「对应函数（至少 1 条函数编号）」，且「没有对应函数的案例只能作为候选案例或 pe
+  - 来源：`outputs/book-collisions/20260709-22-book-validation/formalization-crosswalk.md`
+  - 依赖：A4, D353, T20, Y1；被引用：—
 - [缺少证明或实证，却使用确定性结论。](../../../data/failure_typology.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-3bec5a006813ffb2 / 缺少证明或实证，却使用确定性结论。
@@ -169,6 +324,16 @@
   - 可搜索名称：NFC-2504a256fe4407a2 / 自动抽取、作者自填标签、公式化和内部测试均不构成权威审定或外部证据。无法自动判断的审计门必须保留 `REQUIRES_HUMAN_REVIEW`。
   - 来源：`CONTRIBUTING.md`
   - 依赖：—；被引用：—
+- [自动门只检查声明过的结构、引用和处置是否一致。它不能从任意文章中自动推断全部行为者、语气或文学收益，也不能用 26 个自编样例证明人类级理解。自然度、复杂指称、母语出版和文学标记性继续需要人类审查；语言差异不改变事实真值，不证明民族或文明拥](../../../reports/operations/114-language-thought-project-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-a508b55aa5a6d671 / 自动门只检查声明过的结构、引用和处置是否一致。它不能从任意文章中自动推断全部行为者、语气或文学收益，也不能用 26 个自编样例证明人类级理解。自然度、复杂指称、母语出版和文学标记性继续需要人类审查；语言差异不改变事实真值，不证明民族或文明拥
+  - 来源：`reports/operations/114-language-thought-project-audit.md`
+  - 依赖：—；被引用：—
+- [自动门只验证显式框架标注的一致性，不能从任意散文中可靠推断全部意义。](../../../docs/architecture/language-thought-logic-plane.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-673c8c8f33390814 / 自动门只验证显式框架标注的一致性，不能从任意散文中可靠推断全部意义。
+  - 来源：`docs/architecture/language-thought-logic-plane.md`
+  - 依赖：—；被引用：—
 - [自我模型-ε_aware连接定理](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0282-D246-%E8%87%AA%E6%88%91%E6%A8%A1%E5%9E%8B-%CE%B5_aware%E8%BF%9E%E6%8E%A5%E5%AE%9A%E7%90%86.md)
   - 类型/状态：`FUNCTION_ASSET` · `DOWNGRADE_TO_CONJECTURE`
   - 可搜索名称：D246 / 自我模型-ε_aware连接定理 / D246
@@ -302,6 +467,11 @@
 - [若任务涉及函数、模型、定理、公式、律、跨域类比或现实强断言，在读取 Foundation 后立即读取 `docs/foundation/claim-governance-and-function-identity.md`、`data/fou](../../../AI-START-HERE.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-a5c33c6712b1feec / 若任务涉及函数、模型、定理、公式、律、跨域类比或现实强断言，在读取 Foundation 后立即读取 `docs/foundation/claim-governance-and-function-identity.md`、`data/fou
+  - 来源：`AI-START-HERE.md`
+  - 依赖：—；被引用：—
+- [若任务涉及翻译、命题抽取、跨语言建模或 L6 公共故事、文章与作品反馈，还应读取 `docs/architecture/language-thought-logic-plane.md`、`docs/language-thought/READ](../../../AI-START-HERE.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-d7176361ace31526 / 若任务涉及翻译、命题抽取、跨语言建模或 L6 公共故事、文章与作品反馈，还应读取 `docs/architecture/language-thought-logic-plane.md`、`docs/language-thought/READ
   - 来源：`AI-START-HERE.md`
   - 依赖：—；被引用：—
 - [若任务需要全项目导航，读取 `docs/architecture/interactive-system-map.md`、`data/architecture/interactive-system-map.json` 与生成 SVG。图是当前](../../../AI-START-HERE.md)
@@ -834,6 +1004,11 @@
   - 可搜索名称：NFC-93f319fe36a77a61 / 该链只证明某个版本的来源、分析、方法与作品可被共同审计。作品被接受不证明来源命题为真、分析完成因果识别、方法普遍有效或 AI 复制了作者；受限原始材料只保留 provenance，不因成果展示而重新公开。
   - 来源：`ARCHITECTURE.md`
   - 依赖：—；被引用：—
+- [语言—思维逻辑平面](../../ASSET-CARDS.md#asset-hr-cf318764b78d8743)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `CURRENT_SCOPED_SOURCE`
+  - 可搜索名称：语言—思维逻辑平面 / language-thought-logic-plane
+  - 来源：`docs/architecture/language-thought-logic-plane.md`
+  - 依赖：—；被引用：—
 - [误差抵消优化函数：解释了多阶段突破的数学机制\\n4.](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0673-C-0678-%E5%AD%AA%E7%94%9F%E7%B4%A0%E6%95%B0%E9%97%AE%E9%A2%98%E8%BD%AC%E6%8D%A2.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-9b38a92a052d6718 / 误差抵消优化函数：解释了多阶段突破的数学机制\\n4.
@@ -1224,6 +1399,11 @@
   - 可搜索名称：NFC-e67cc40ec0729822 / 这些构件是表示、操作和审计能力；不是被外部证实的统一理论，也不证明现实因果、同构或完整性。
   - 来源：`SUMMARY.md`
   - 依赖：—；被引用：—
+- [这些标签本身也不是作者全集的定义。每位作者会跨语体、时期和作品改变写法；校准组只用来证明“自然中文有多种合法实现”。](../../../docs/language-thought/chinese-literary-calibration.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-5a217397220e3b5a / 这些标签本身也不是作者全集的定义。每位作者会跨语体、时期和作品改变写法；校准组只用来证明“自然中文有多种合法实现”。
+  - 来源：`docs/language-thought/chinese-literary-calibration.md`
+  - 依赖：—；被引用：—
 - [这句话之所以扎人，不是因为它冒犯，而是因为它太准确。一个人当然可以同时是母亲、妻子、创业者、内容创作者，也可以心甘情愿地把很多时间给家庭、公司和别人。问题不在于她有没有这些角色。问题在于，当外部世界只通过这些角色来认识她时，她的名字会慢慢退](../../../outputs/stories/20260712-disobedience-subjectivity/story-longform.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-b85833bf538b0cee / 这句话之所以扎人，不是因为它冒犯，而是因为它太准确。一个人当然可以同时是母亲、妻子、创业者、内容创作者，也可以心甘情愿地把很多时间给家庭、公司和别人。问题不在于她有没有这些角色。问题在于，当外部世界只通过这些角色来认识她时，她的名字会慢慢退
@@ -1263,6 +1443,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-ab547e17eb32f482 / 这说明肉身锚定可以强力参与跃迁，不证明每篇文章都必须以身体为入口或回返处。它与价值宪章共享宇宙尺度、主体位置、物理隔绝和伦理共在的来源，但诗的生成运动不等于 Charter 的规范权威。
   - 来源：`docs/publication/zhiyuan-writing-examples.md`
+  - 依赖：—；被引用：—
+- [这里的“逻辑”不是另一套真假规则。它指人在准备说出、抽取或翻译一个意思时，语言反复要求或倾向要求他怎样安排话题与主语、显露行为者、划定事件边界、标记知识来源、恢复省略成分、连接分句和组织已知／新信息。数学命题和经验证据不会因为换一种语言而改](../../../docs/architecture/language-thought-logic-plane.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-19c1603ff15e721a / 这里的“逻辑”不是另一套真假规则。它指人在准备说出、抽取或翻译一个意思时，语言反复要求或倾向要求他怎样安排话题与主语、显露行为者、划定事件边界、标记知识来源、恢复省略成分、连接分句和组织已知／新信息。数学命题和经验证据不会因为换一种语言而改
+  - 来源：`docs/architecture/language-thought-logic-plane.md`
   - 依赖：—；被引用：—
 - [这里记录点火框架在现实问题中没有对齐、给出矛盾映射，或者预测结果后来被外部证据推翻的情况。失败不是缺点，它能告诉我们哪些函数需要改进、哪些边界需要收紧、哪些判断应该保持 `pending`。](../../../case_failures/README.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -1509,6 +1694,11 @@
   - 可搜索名称：D487 / 选择空间上下界函数 / D487
   - 来源：`统一函数总表/0485-D487-选择空间上下界函数.md`
   - 依赖：A5, A9, D451, D476；被引用：NFC-5aa77ca106237a3b, NFC-98580944a40dcd6d, NFC-e76b49702188d3d4
+- [通过样例用于防止过度修正，拒绝样例用于证明静默差异会失败关闭。`unsupported` 样例明确暴露自动门没有能力裁定的类别，例如只凭文本判断文学收益；它们必须进入人类审查，不能被算作通过。](../../../docs/language-thought/validation-and-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-d7f2ed535103ac94 / 通过样例用于防止过度修正，拒绝样例用于证明静默差异会失败关闭。`unsupported` 样例明确暴露自动门没有能力裁定的类别，例如只凭文本判断文学收益；它们必须进入人类审查，不能被算作通过。
+  - 来源：`docs/language-thought/validation-and-audit.md`
+  - 依赖：—；被引用：—
 - [通道不对称](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0144-D105-%E9%80%9A%E9%81%93%E4%B8%8D%E5%AF%B9%E7%A7%B0.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：D105 / 通道不对称 / D105

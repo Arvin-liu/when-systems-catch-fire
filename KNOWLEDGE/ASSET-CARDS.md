@@ -42,18 +42,18 @@
 - [任务 106（本迭代）建立了合并后真相传播基础设施：规范化 merged-iteration ledger、9 维 impact 引擎、确定性 current-truth 投影、fail-closed 验证器、编辑文章 stale/revi](./cards/part-001.md#asset-nfc-1ead70b9f991a2b8) — `NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR` · `NFC-1ead70b9f991a2b8`
 <a id="asset-nfc-2843222a849fe77e"></a>
 - [任务 102 对新增源语料重新运行任务 100 生成器并排除生成投影，当前登记 **17,333** 个 canonical claim。主要类别包括：](./cards/part-001.md#asset-nfc-2843222a849fe77e) — `NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR` · `NFC-2843222a849fe77e`
-<a id="asset-nfc-2b7304f480da70c2"></a>
-- [Iteration method 1.3.0 and system map 0.2.0, 0.3.0 are Historical; method 1.2.0 and map 0.1.0 are earlier Historical, no](./cards/part-001.md#asset-nfc-2b7304f480da70c2) — `NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION` · `NFC-2b7304f480da70c2`
+<a id="asset-nfc-2d220e92f7b73dd3"></a>
+- [Iteration method 1.3.0 and system map 0.3.0, 0.4.0 are Historical; method 1.2.0 and maps 0.1.0, 0.2.0 are earlier Histor](./cards/part-001.md#asset-nfc-2d220e92f7b73dd3) — `NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION` · `NFC-2d220e92f7b73dd3`
 <a id="asset-nfc-2f6931fff5a6554c"></a>
 - [人类可见性门禁：检查机器结果的人类对应物、两步可达导航、过期状态、默认隐藏的重要内容和断链；](./cards/part-001.md#asset-nfc-2f6931fff5a6554c) — `NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR` · `NFC-2f6931fff5a6554c`
+<a id="asset-nfc-3462f5f134c76b5b"></a>
+- [方法 `1.3.0` 与系统图 `0.3.0`、`0.4.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0`、`0.2.0` 为更早 Historical。当前方法要求从构件 registry、类型化 topol](./cards/part-001.md#asset-nfc-3462f5f134c76b5b) — `NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION` · `NFC-3462f5f134c76b5b`
 <a id="asset-nfc-390d533e6aa565c0"></a>
 - [统一函数总表/ and 统一案例总表/ are immutable legacy sources and compatibility views. Never use their hand-written headers as curren](./cards/part-001.md#asset-nfc-390d533e6aa565c0) — `NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS` · `NFC-390d533e6aa565c0`
 <a id="asset-nfc-3c841b1210f8e63e"></a>
 - [区分历史物理笔记对 `D260` 的使用与正式资产：正式 `D260` 是 `p/(1-p)` 偏差敏感度评分，不是大一统不可能命题。](./cards/part-001.md#asset-nfc-3c841b1210f8e63e) — `NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS` · `NFC-3c841b1210f8e63e`
 <a id="asset-nfc-3d9ffb2206406fcc"></a>
 - [为全部恢复的结果/文章来源生成统一卡片和 1 分钟、5 分钟、完整阅读，并为全部函数/断言 registry 建立可回链来源、状态、依赖、反向依赖和历史的分片搜索索引。](./cards/part-001.md#asset-nfc-3d9ffb2206406fcc) — `NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION` · `NFC-3d9ffb2206406fcc`
-<a id="asset-nfc-3f2e05f213dea1ef"></a>
-- [使用 0.4.0 时，先标记 `external_input` 与 `ignition_increment`，保存版本、生成路径、claim ceiling、不可映射残余和原始来源回链；发布反馈必须登记 provenance 后才能成为候选](./cards/part-001.md#asset-nfc-3f2e05f213dea1ef) — `NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR` · `NFC-3f2e05f213dea1ef`
 <a id="asset-nfc-4a20f20c22587a46"></a>
 - [`NO_REPRODUCTION_POSSIBLE_WITH_CURRENT_TARGET`。三个案例在 task-111 队列投影中继续可](./cards/part-001.md#asset-nfc-4a20f20c22587a46) — `NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR` · `NFC-4a20f20c22587a46`
 <a id="asset-nfc-517a9b6de3674e2a"></a>
@@ -74,6 +74,8 @@
 - [原始命题: 引力的B型门控不是偶然属性，是Φ极小点存在的必要条件。若引力为A型，Φ单调递减，大统一在数学上不可能。T33从"冲突"升级为"必要张力"。 **扩展注释 / Extended Annotation**](./cards/part-001.md#asset-nfc-777640d03f719f40) — `NONFUNCTION_CLAIM` · `HISTORICAL_ONLY` · `NFC-777640d03f719f40`
 <a id="asset-nfc-7ba5ae6b5efe40a7"></a>
 - [点火现有乘法门控模型不能完成数学和物理上充分的四种相互作用统一。四力统一问题本身保持开放。项目没有证明“大一统普遍不可能”，也没有给出物理统一点。](./cards/part-001.md#asset-nfc-7ba5ae6b5efe40a7) — `NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION` · `NFC-7ba5ae6b5efe40a7`
+<a id="asset-nfc-7cc4e23e0d003f8f"></a>
+- [任务 114 已将 L6 `之元写作法` `0.5.0` 收口为当前能力；`0.4.0`、`0.3.0` 保留为历史已合并版本。交接时必须区分外部输入与点火增量输出，后者保存 canonical 路径／ID、生成任务、版本、claim ce](./cards/part-001.md#asset-nfc-7cc4e23e0d003f8f) — `NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR` · `NFC-7cc4e23e0d003f8f`
 <a id="asset-nfc-7d491e8a66bfebe6"></a>
 - [不可能性/普遍断言 699；](./cards/part-001.md#asset-nfc-7d491e8a66bfebe6) — `NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS` · `NFC-7d491e8a66bfebe6`
 <a id="asset-nfc-7f34ff08b3193964"></a>
@@ -90,8 +92,6 @@
 - [非函数型资产交接必须保留 task 100 的规范 ID、原子文本、十三门、证据与复现状态、依赖和下游影响、M/E、处置、公开上限及 supersession lineage。自动发现只生成待裁决记录；一个模型失败不能推出普遍不可能，类比不](./cards/part-001.md#asset-nfc-921e43a466f461f8) — `NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR` · `NFC-921e43a466f461f8`
 <a id="asset-nfc-9379ce5377b8455f"></a>
 - [Formalization, computability, internal consistency, AI numbering and passing tests do not establish external truth. The](./cards/part-001.md#asset-nfc-9379ce5377b8455f) — `NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS` · `NFC-9379ce5377b8455f`
-<a id="asset-nfc-97dbfc72d7ef8b40"></a>
-- [Q31T 已将 L6 `之元写作法` `0.4.0` 双来源素材池收口为当前能力；`0.3.0` 保留为历史已合并版本。交接时必须区分外部输入与点火增量输出，后者保存 canonical 路径／ID、生成任务、版本、claim ceilin](./cards/part-001.md#asset-nfc-97dbfc72d7ef8b40) — `NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR` · `NFC-97dbfc72d7ef8b40`
 <a id="asset-nfc-996c4e8631d40356"></a>
 - [D220 完全统一不可能定理](./cards/part-001.md#asset-nfc-996c4e8631d40356) — `NONFUNCTION_CLAIM` · `HISTORICAL_ONLY` · `NFC-996c4e8631d40356`
 <a id="asset-nfc-9d5698768267468e"></a>
@@ -102,8 +102,8 @@
 - [This iteration does not deep-review all 2,033 discovered assets, prove the census exhaustive outside tracked textual Git](./cards/part-001.md#asset-nfc-a6b80fca608c8c8f) — `NONFUNCTION_CLAIM` · `HISTORICAL_ONLY` · `NFC-a6b80fca608c8c8f`
 <a id="asset-nfc-b3044ed3734222fb"></a>
 - [“物理学已经证明大一统不可能”现已正式撤回。它不能仅改名为“结构性边界推论”“框架判定”或“元层机制”后保留同一结论。](./cards/part-001.md#asset-nfc-b3044ed3734222fb) — `NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION` · `NFC-b3044ed3734222fb`
-<a id="asset-nfc-b424983d09c9a88d"></a>
-- [方法 `1.3.0` 与系统图 `0.2.0`、`0.3.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0` 为更早 Historical。当前方法要求从构件 registry、类型化 topology 与 `d](./cards/part-002.md#asset-nfc-b424983d09c9a88d) — `NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION` · `NFC-b424983d09c9a88d`
+<a id="asset-nfc-b8317ad5cc6c3230"></a>
+- [使用 0.5.0 时，先标记 `external_input` 与 `ignition_increment`，保存版本、生成路径、claim ceiling、不可映射残余和原始来源回链；涉及语言转换时还须保存 source form、候选意](./cards/part-002.md#asset-nfc-b8317ad5cc6c3230) — `NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR` · `NFC-b8317ad5cc6c3230`
 <a id="asset-nfc-b84ff0d36d4df547"></a>
 - [响应哈希、adjudication、Evidence Program 投影和生命周期证据位于 task-110 机器记录。](./cards/part-002.md#asset-nfc-b84ff0d36d4df547) — `NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR` · `NFC-b84ff0d36d4df547`
 <a id="asset-nfc-bd6c757f496eff1d"></a>
@@ -144,6 +144,8 @@
 - [Core strong-claim audit](./cards/part-002.md#asset-hr-08f0792e76d0f0cb) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-08F0792E76D0F0CB`
 <a id="asset-hr-09324a8008a3bd3d"></a>
 - [Codespace 救援两张表差异审计](./cards/part-002.md#asset-hr-09324a8008a3bd3d) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-09324A8008A3BD3D`
+<a id="asset-hr-094a86ef6aa2a143"></a>
+- [任务 114 项目级语言—思维风险审计](./cards/part-002.md#asset-hr-094a86ef6aa2a143) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-094A86EF6AA2A143`
 <a id="asset-hr-0a1370d6fff72a4c"></a>
 - [IGNITION-106: 下一任务交接](./cards/part-002.md#asset-hr-0a1370d6fff72a4c) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-0A1370D6FFF72A4C`
 <a id="asset-hr-0a190293ca8a50ae"></a>
@@ -201,7 +203,7 @@
 <a id="asset-hr-259784cecbb2dc49"></a>
 - [121Q13 Baseline And Overlap Audit](./cards/part-002.md#asset-hr-259784cecbb2dc49) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-259784CECBB2DC49`
 <a id="asset-hr-25ccad6cef81cbea"></a>
-- [当一支军队开始相信自己的背影](./cards/part-002.md#asset-hr-25ccad6cef81cbea) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-25CCAD6CEF81CBEA`
+- [当一支军队开始相信自己的背影](./cards/part-003.md#asset-hr-25ccad6cef81cbea) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-25CCAD6CEF81CBEA`
 <a id="asset-hr-25db71123fa1cbc7"></a>
 - [元协议规范性审核（外部治理记录）](./cards/part-003.md#asset-hr-25db71123fa1cbc7) — `RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `HR-25DB71123FA1CBC7`
 <a id="asset-hr-2605b1957ccb9e09"></a>
@@ -301,7 +303,7 @@
 <a id="asset-hr-4b5539f6a578f48d"></a>
 - [输入材料快照 · 赛课机制下的教师生存困境](./cards/part-003.md#asset-hr-4b5539f6a578f48d) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-4B5539F6A578F48D`
 <a id="asset-hr-4e500eb8be311cb7"></a>
-- [机制抽取（mechanism-extraction）](./cards/part-003.md#asset-hr-4e500eb8be311cb7) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-4E500EB8BE311CB7`
+- [机制抽取（mechanism-extraction）](./cards/part-004.md#asset-hr-4e500eb8be311cb7) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-4E500EB8BE311CB7`
 <a id="asset-hr-4f3c4ff4a7ab0e3a"></a>
 - [Current Main vs 1.4 Candidate Homepage Comparison](./cards/part-004.md#asset-hr-4f3c4ff4a7ab0e3a) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-4F3C4FF4A7AB0E3A`
 <a id="asset-hr-52173a553c421e11"></a>
@@ -401,7 +403,7 @@
 <a id="asset-hr-75acdd1f73f32af7"></a>
 - [Full migration coverage](./cards/part-004.md#asset-hr-75acdd1f73f32af7) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-75ACDD1F73F32AF7`
 <a id="asset-hr-75b56a91c97f20be"></a>
-- [Future non-function claim admission protocol](./cards/part-004.md#asset-hr-75b56a91c97f20be) — `RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `HR-75B56A91C97F20BE`
+- [Future non-function claim admission protocol](./cards/part-005.md#asset-hr-75b56a91c97f20be) — `RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `HR-75B56A91C97F20BE`
 <a id="asset-hr-771c2981fcc20396"></a>
 - [121Q13 Attention, Distribution, And Compression Report](./cards/part-005.md#asset-hr-771c2981fcc20396) — `RESULT_OR_ARTICLE` · `CANDIDATE_OR_PENDING_SOURCE` · `HR-771C2981FCC20396`
 <a id="asset-hr-771c575b7e09f8bd"></a>
@@ -501,7 +503,7 @@
 <a id="asset-hr-9a37e04e46e43cf2"></a>
 - [121Q4 Final Report: Function OS v0.1 Symbolic Reference Implementation](./cards/part-005.md#asset-hr-9a37e04e46e43cf2) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-9A37E04E46E43CF2`
 <a id="asset-hr-9ba686d027762485"></a>
-- [Architecture rebuild summary](./cards/part-005.md#asset-hr-9ba686d027762485) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-9BA686D027762485`
+- [Architecture rebuild summary](./cards/part-006.md#asset-hr-9ba686d027762485) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-9BA686D027762485`
 <a id="asset-hr-9be719cb6ef0fd88"></a>
 - [Attention And Attractor Control Plane](./cards/part-006.md#asset-hr-9be719cb6ef0fd88) — `RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `HR-9BE719CB6EF0FD88`
 <a id="asset-hr-9bf38326d66a104a"></a>
@@ -601,7 +603,7 @@
 <a id="asset-hr-c0e9f4990481c808"></a>
 - [121Q21R Causal Asset Audit](./cards/part-006.md#asset-hr-c0e9f4990481c808) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-C0E9F4990481C808`
 <a id="asset-hr-c190ac76ad5f8440"></a>
-- [121Q3 Night Final Report](./cards/part-006.md#asset-hr-c190ac76ad5f8440) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-C190AC76AD5F8440`
+- [121Q3 Night Final Report](./cards/part-007.md#asset-hr-c190ac76ad5f8440) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-C190AC76AD5F8440`
 <a id="asset-hr-c32095e69516906c"></a>
 - [V2 规范性审核 - 效率性协议 (Efficiency Protocol)](./cards/part-007.md#asset-hr-c32095e69516906c) — `RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `HR-C32095E69516906C`
 <a id="asset-hr-c322de3c7799a555"></a>
@@ -620,6 +622,8 @@
 - [Strong-term audit](./cards/part-007.md#asset-hr-cc88abdd459a3602) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-CC88ABDD459A3602`
 <a id="asset-hr-cdbd2a8dabea0396"></a>
 - [Canonical Protocol Validation Results](./cards/part-007.md#asset-hr-cdbd2a8dabea0396) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-CDBD2A8DABEA0396`
+<a id="asset-hr-cf318764b78d8743"></a>
+- [语言—思维逻辑平面](./cards/part-007.md#asset-hr-cf318764b78d8743) — `RESULT_OR_ARTICLE` · `CURRENT_SCOPED_SOURCE` · `HR-CF318764B78D8743`
 <a id="asset-hr-d0d9de18fd9e9bde"></a>
 - [085: 084 Truth Status Correction](./cards/part-007.md#asset-hr-d0d9de18fd9e9bde) — `RESULT_OR_ARTICLE` · `CURRENT_CORRECTION_RECORD` · `HR-D0D9DE18FD9E9BDE`
 <a id="asset-hr-d1de2bd2a70dc6c1"></a>
@@ -699,9 +703,9 @@
 <a id="asset-hr-f8c21cd0cd6a1f34"></a>
 - [生命共同体价值审查（life-community-value-audit）](./cards/part-007.md#asset-hr-f8c21cd0cd6a1f34) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-F8C21CD0CD6A1F34`
 <a id="asset-hr-f92361487a1aad76"></a>
-- [项目本体版本升级审计 2026-07-09](./cards/part-007.md#asset-hr-f92361487a1aad76) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-F92361487A1AAD76`
+- [项目本体版本升级审计 2026-07-09](./cards/part-008.md#asset-hr-f92361487a1aad76) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-F92361487A1AAD76`
 <a id="asset-hr-f9fe7eee273643e9"></a>
-- [121Q12 Effectual-Mechanism Dual-Loop Report](./cards/part-007.md#asset-hr-f9fe7eee273643e9) — `RESULT_OR_ARTICLE` · `CANDIDATE_OR_PENDING_SOURCE` · `HR-F9FE7EEE273643E9`
+- [121Q12 Effectual-Mechanism Dual-Loop Report](./cards/part-008.md#asset-hr-f9fe7eee273643e9) — `RESULT_OR_ARTICLE` · `CANDIDATE_OR_PENDING_SOURCE` · `HR-F9FE7EEE273643E9`
 <a id="asset-hr-fb9a21e0eb12989e"></a>
 - [121Q2V Verification Repair Report](./cards/part-008.md#asset-hr-fb9a21e0eb12989e) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-FB9A21E0EB12989E`
 <a id="asset-hr-fcbaa498cbeb783c"></a>

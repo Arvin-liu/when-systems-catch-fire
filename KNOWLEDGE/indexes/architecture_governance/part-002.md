@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- ["结构增益"容易被误读为"已解决"](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-6cc9280d7313f419 / "结构增益"容易被误读为"已解决"
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- ["运行验证器并冻结基线。",](../../../tools/build_deliverables.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-2f33e1dd9af13cbe / "运行验证器并冻结基线。",
+  - 来源：`tools/build_deliverables.py`
+  - 依赖：—；被引用：—
+- ["重新验证 content_machine_eligible 与 ratification_ready。",](../../../tools/build_deliverables.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-7412b87288ca5d2d / "重新验证 content_machine_eligible 与 ratification_ready。",
+  - 来源：`tools/build_deliverables.py`
+  - 依赖：—；被引用：—
 - [# 099 Function Asset Registry Closure](../../../reports/foundation-architecture/099-function-asset-registry-closure.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-FC9848888997901C / # 099 Function Asset Registry Closure / IMPLICIT-FC9848888997901C
@@ -729,6 +744,11 @@
   - 可搜索名称：NFC-e3842c0326328618 / \[22 本书验证案例候选\](../../../docs/meta-protocols/book-validation-22-cases-20260709.md)
   - 来源：`docs/meta-protocols/README.md`
   - 依赖：—；被引用：—
+- [\[`evidence-registry.jsonl`\](../../../data/language-thought/evidence-registry.jsonl)：研究来源与主张上限](../../../docs/language-thought/README.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-9ce8603ebf51a52d / \[`evidence-registry.jsonl`\](../../../data/language-thought/evidence-registry.jsonl)：研究来源与主张上限
+  - 来源：`docs/language-thought/README.md`
+  - 依赖：—；被引用：—
 - [\[EVIDENCE-LINEAGE.md\](../../../RESULTS/EVIDENCE-LINEAGE.md)：证据谱系变化。](../../../RESULTS/README.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-7bdb7a5ca637982d / \[EVIDENCE-LINEAGE.md\](../../../RESULTS/EVIDENCE-LINEAGE.md)：证据谱系变化。
@@ -778,6 +798,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-5465b5b84c70c3b8 / \[最新变化\](../../WHATS-NEW.md)：按时间看新结论、新纠正、新文章、新实验和新发现。
   - 来源：`tools/governance/build_knowledge_experience.py`
+  - 依赖：—；被引用：—
+- [\[有限维度基底\](../../../docs/language-thought/dimensional-basis.md)：十二个可复用维度及其反例、风险和验证对象。](../../../docs/language-thought/README.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-f237039053250ad2 / \[有限维度基底\](../../../docs/language-thought/dimensional-basis.md)：十二个可复用维度及其反例、风险和验证对象。
+  - 来源：`docs/language-thought/README.md`
   - 依赖：—；被引用：—
 - [\[机器可读化数据结构规范\](../../../docs/machine_readable_data_plan.md)](../../../docs/v0.2_summary.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
@@ -848,6 +873,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-82b2e679e1ae4823 / \[证据谱系变化\](../../../data/governance/self-correction/evidence-lineage-delta.jsonl)
   - 来源：`SUMMARY.md`
+  - 依赖：—；被引用：—
+- [\[验证与审计指南\](../../../docs/language-thought/validation-and-audit.md)：机器门、人工门、项目审计及指标的准确边界。](../../../docs/language-thought/README.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-134505c326457312 / \[验证与审计指南\](../../../docs/language-thought/validation-and-audit.md)：机器门、人工门、项目审计及指标的准确边界。
+  - 来源：`docs/language-thought/README.md`
   - 依赖：—；被引用：—
 - [_ANCESTOR_PREFIXES = ("historical_digest_evidence",)](../../../tools/validate_iteration_sync.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -1428,6 +1458,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-29f7e948b150e433 / A finite parameter vector plus architecture and kernel realization is a reusable discretization-invariant operator artif
   - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [A language-thought capability could be misread as a strong Whorfian claim if positive experiments are cited without null](../../../data/language-thought/audit-findings.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-7e63d6ff7053b83f / A language-thought capability could be misread as a strong Whorfian claim if positive experiments are cited without null
+  - 来源：`data/language-thought/audit-findings.jsonl`
   - 依赖：—；被引用：—
 - [a literature claim needs primary-source adjudication for the exact proposition;](../../../docs/foundation/future-claim-admission-protocol.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
@@ -2468,39 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-f5fc6f05d4ea686f / Candidate signal ONLY — never an accepted relation."""
   - 来源：`tools/build_corpus_relation_graph.py`
-  - 依赖：—；被引用：—
-- [candidates, historical_register, validation_report, prev_invalidated = CS.reconcile(candidates)](../../../tools/iteration_planner/planner.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-2579456959882771 / candidates, historical_register, validation_report, prev_invalidated = CS.reconcile(candidates)
-  - 来源：`tools/iteration_planner/planner.py`
-  - 依赖：—；被引用：—
-- [Canonical classification maps: single source of truth shared by classify + record.](../../../tools/governance/fail_closed_publication_gate.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-aec7eb9b28763e94 / Canonical classification maps: single source of truth shared by classify + record.
-  - 来源：`tools/governance/fail_closed_publication_gate.py`
-  - 依赖：—；被引用：—
-- [Canonical evidence/source references:](../../../templates/operations/task-command-template.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-3b0689e5cf63f5c5 / Canonical evidence/source references:
-  - 来源：`templates/operations/task-command-template.md`
-  - 依赖：—；被引用：—
-- [Canonical index conflicts: FIXED (S120-008=UNRESOLVED, S120-015=BLOCKED)](../../../reports/external-research/121Q2V-verification-repair-report.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-cf99a2e440ca4006 / Canonical index conflicts: FIXED (S120-008=UNRESOLVED, S120-015=BLOCKED)
-  - 来源：`reports/external-research/121Q2V-verification-repair-report.md`
-  - 依赖：—；被引用：—
-- [canonical 发现器是否排除 `KNOWLEDGE/`、`data/governance/`、任务 99/100 注册表、迁移汇总与任务 101 自动生成的结果投影，同时保留显式 canonical 输入导入，阻断下游输出重新进入上游](../../../reports/operations/102-knowledge-experience-audit.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-765b3dcd3e88193a / canonical 发现器是否排除 `KNOWLEDGE/`、`data/governance/`、任务 99/100 注册表、迁移汇总与任务 101 自动生成的结果投影，同时保留显式 canonical 输入导入，阻断下游输出重新进入上游
-  - 来源：`reports/operations/102-knowledge-experience-audit.md`
-  - 依赖：—；被引用：—
-- [canonical、生命共同体价值宪章、12 元协议治理记录均未修改；12 元协议与价值宪章仅作为投影与规范边界。](../../../outputs/collisions/20260711-disobedience-subjectivity/README.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-73e28b2486d53234 / canonical、生命共同体价值宪章、12 元协议治理记录均未修改；12 元协议与价值宪章仅作为投影与规范边界。
-  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/README.md`
-  - 依赖：—；被引用：—
-- [capability_evidence = \[\]](../../../tools/propagation/current_truth_projection.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-d19f5d61ef1c93a1 / capability_evidence = \[\]
-  - 来源：`tools/propagation/current_truth_projection.py`
   - 依赖：—；被引用：—

@@ -124,7 +124,9 @@ def validate(root: Path = ROOT) -> dict:
         require(("MERGE", "0a13c246172c0338bf8dda5dc08db5a574a8b23f") in chain, "E_PHASE_E_MERGE", "merge evidence is absent")
         require(manifest.get("head_binding", {}).get("review_receipt_commit") == "e4178f4310822d085ce8201b95236bc2ebc48d69", "E_PHASE_E_REVIEW", "independent review receipt is absent")
     require(manifest.get("self_hosting", {}).get("plan_hash") == actual_plan["plan_hash"] == seal.get("self_hosting", {}).get("plan_hash"), "E_PHASE_E_PLAN_HASH", "plan hash binding mismatch")
-    require(manifest.get("q29r", {}).get("sha256") == Q29R_SHA256 == seal.get("q29r", {}).get("sha256") == sha(root / Q29R.relative_to(ROOT)), "E_PHASE_E_Q29R", "Q29R frozen hash mismatch")
+    q29r_ref = _ler or manifest.get("candidate_head") or "HEAD"
+    q29r_historical_sha = sha256_at(q29r_ref, str(Q29R.relative_to(ROOT)))
+    require(manifest.get("q29r", {}).get("sha256") == Q29R_SHA256 == seal.get("q29r", {}).get("sha256") == q29r_historical_sha, "E_PHASE_E_Q29R", "Q29R frozen hash mismatch")
     require(seal.get("phase_b", {}).get("head_binding", {}).get("embedded_exact_current_head") is False, "E_PHASE_E_SELF_HEAD", "seal must not embed its own current HEAD")
     require(seal.get("boundaries", {}).get("phase_e_candidate_only") is (lifecycle == candidate_lifecycle) and seal.get("boundaries", {}).get("q33_or_q40_started") is False, "E_PHASE_E_SCOPE", "Phase E scope boundary mismatch")
     # Diff coverage is only meaningful for open candidates; a Current/merged
