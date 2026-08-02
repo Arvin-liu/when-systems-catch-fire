@@ -3,9 +3,9 @@
     "CURRENT_PUBLIC_WORDING_IMPACT": {
       "baseline_sha256": {
         "HUMAN-READING.md": "2e50a58abc135a9ceccbe95ca39f2e1940bba49777e68bfb5e8386742fdabcdf",
-        "README.md": "1c3e30f4fee388953b2b98f1d518828389392b2efae9cc81593df488ae5cdfe6",
+        "README.md": "9c74628cc055a7e520123a83685cf5debc0612c330493cdba104e6fa95c512e1",
         "RESULTS/LATEST.md": "d7a068adda0ae4adc7cba93141df358f80a97d1f89f0e1c5f20e7d07bcdc2d9e",
-        "docs/project-current-state.md": "c4500bc065bbb7040209911af0a9f4b2d3d2dc237996b92ecd9a6bc36015130b"
+        "docs/project-current-state.md": "5adee9d5d0905e6feb51a919635db69243ea6b607150ba6878701b0e8deaf857"
       },
       "declared": "NO_IMPACT_JUSTIFIED",
       "governed_sources": [
@@ -39,10 +39,10 @@
     },
     "MACHINE_RECORD_IMPACT": {
       "baseline_sha256": {
-        "RESULTS/CLAIM-DELTA.md": "755a27cd204777a37c247b7b147986a1bda02690426136e500021cac243eec98",
-        "RESULTS/EVIDENCE-LINEAGE.md": "5215cae52ca44835b6e7bfe819bcadd6b02bc6a3a74f9c8ac460673a8b01b7ad",
-        "RESULTS/IMPACT-ANALYSIS.md": "b9596216e5442d4f6bebdc3733777ea163d46d03ec693559382b2f53e8f562d1",
-        "RESULTS/SELF-CORRECTION-AUDIT.md": "963b8e8df1a091aa8e93057ca353d07953b1a2f987de05a7bcc5c5f35643a152"
+        "RESULTS/CLAIM-DELTA.md": "919d8f9b5bfdf82c64a18731f4fec79ab3edd66d07d336743367abd7e0d8b6ce",
+        "RESULTS/EVIDENCE-LINEAGE.md": "245535fb9a980172db3c55b835de7a116a87ce0a5c7d968669fd50c6d923b96f",
+        "RESULTS/IMPACT-ANALYSIS.md": "7b9ab20c1f4d86ad966937621ed5b7402541f96d33d0e3edf076f1c907949119",
+        "RESULTS/SELF-CORRECTION-AUDIT.md": "bba90a5e1e61f2b5c7eb4048fc6cddad413de2536abedc65f5e1c729a18df082"
       },
       "declared": "NO_IMPACT_JUSTIFIED",
       "governed_sources": [
@@ -75,7 +75,7 @@
     "PROJECT_STATE_IMPACT": {
       "baseline_sha256": {
         "ITERATION.md": "5351952f2483fbd68b8484f8c2262de154155b2c3250378893bb8e277aaba8eb",
-        "docs/project-current-state.md": "c4500bc065bbb7040209911af0a9f4b2d3d2dc237996b92ecd9a6bc36015130b"
+        "docs/project-current-state.md": "5adee9d5d0905e6feb51a919635db69243ea6b607150ba6878701b0e8deaf857"
       },
       "declared": "NO_IMPACT_JUSTIFIED",
       "governed_sources": [
@@ -85,7 +85,7 @@
     },
     "REFERENCE_SURFACE_IMPACT": {
       "baseline_sha256": {
-        "docs/architecture/interactive-system-map.md": "3a6f56bb83713d0883cd5d2d14daf5628d1ccfb0b103e7ebffe244d37e08a216",
+        "docs/architecture/interactive-system-map.md": "336afc83f84b86ab2006d08c2e61401df575c77c944f061614707a6a54dbe014",
         "function-os-candidate/v0.2/README.md": "ab80c23b895b66ff490ac81c6c687948e928743ba5c648f6acf36029d8b861c1"
       },
       "declared": "NO_IMPACT_JUSTIFIED",
@@ -96,9 +96,9 @@
     },
     "SYSTEM_MAP_IMPACT": {
       "baseline_sha256": {
-        "data/architecture/interactive-system-map-layout.json": "29fe4b1ed7e7d93a8703c5f5d53f097449d4b8c791e4660eb6830fe97f01af18",
-        "data/operations/change-propagation-topology.json": "3d8e90746ba92be9ec9d2eb84733034d092825b60bd4d0d5a3978a8988d8059a",
-        "data/operations/project-components.json": "8cf1c869cc5df0d7138c1043a1242cdff37c77bcfa3a6e12628efe95b7023a9a",
+        "data/architecture/interactive-system-map-layout.json": "570cd763a9c6b87f1f546b105cd36de295a158ae3a9be78113ddf76d9c96c178",
+        "data/operations/change-propagation-topology.json": "157acc066ccbc0d0632f2393c757c06e3957d9007eb6b523bbc8cbe7b047034f",
+        "data/operations/project-components.json": "a8c53fcbce3c53ca2c258c412499ebb2ae8105d2b09439c62732ea54e1e57a97",
         "tools/generate_interactive_system_map.py": "0c70dfde5f60e0947551047a2c5d3510ce871abdd323ee986720d546bffc07f8"
       },
       "declared": "NO_IMPACT_JUSTIFIED",
