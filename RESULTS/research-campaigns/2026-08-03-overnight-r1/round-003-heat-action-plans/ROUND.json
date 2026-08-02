@@ -18,7 +18,7 @@
   "verdict": "SUPPORTED_WITH_SCOPE",
   "source_count": 7,
   "source_classes": ["peer_reviewed_research", "official_guidance", "official_news_release", "peer_reviewed_analysis", "peer_reviewed_correspondence", "edited_news", "official_statistics"],
-  "report_sha256": "fae8e11722330cce31716891e897b179941b769b56ba5209fb90a6858373562c"
+  "report_sha256": "fae8e11722330cce31716891e897b179941b769b56ba5209fb90a6858373562c",
   "commit_sha": null,
   "state": "COMPLETE_AWAITING_EXTERNAL_REVIEW"
 }
