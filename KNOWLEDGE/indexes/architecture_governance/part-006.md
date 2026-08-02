@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [def test_d2_09_forged_cache_hit_rejected_by_executor_and_validator(self):](../../../tests/test_incremental_execution.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-0A4AFC4D3CA675F2 / def test_d2_09_forged_cache_hit_rejected_by_executor_and_validator(self): / IMPLICIT-0A4AFC4D3CA675F2
+  - 来源：`tests/test_incremental_execution.py`
+  - 依赖：—；被引用：—
 - [def test_d2_10_stale_generated_output_cannot_hide_behind_cache(self):](../../../tests/test_incremental_execution.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-85FD44A81E4ED975 / def test_d2_10_stale_generated_output_cannot_hide_behind_cache(self): / IMPLICIT-85FD44A81E4ED975
@@ -2498,9 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-C4986DB8E741A576 / def test_stale_digest_rejected(self): / IMPLICIT-C4986DB8E741A576
   - 来源：`tests/test_generated_output_authority_negative.py`
-  - 依赖：—；被引用：—
-- [def test_stale_projection_residue_blocks_ready(self):](../../../tests/test_iteration_sync.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-59AD2E5AE04AF2BA / def test_stale_projection_residue_blocks_ready(self): / IMPLICIT-59AD2E5AE04AF2BA
-  - 来源：`tests/test_iteration_sync.py`
   - 依赖：—；被引用：—

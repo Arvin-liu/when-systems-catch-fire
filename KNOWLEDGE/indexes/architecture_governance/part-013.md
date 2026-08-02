@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0004-C-4-孝文帝汉化.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0004-C-4-%E5%AD%9D%E6%96%87%E5%B8%9D%E6%B1%89%E5%8C%96.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-b31fcf68d5577a2d / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0004-C-4-孝文帝汉化.md`
+  - 来源：`统一案例总表/0004-C-4-孝文帝汉化.md`
+  - 依赖：—；被引用：—
 - [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0005-C-5-唐朝开放.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0005-C-5-%E5%94%90%E6%9C%9D%E5%BC%80%E6%94%BE.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-f05d7b3c88f0b8d7 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0005-C-5-唐朝开放.md`
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-7cafdd3565c8608d / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0652-C-657-EGSS × 点火框架碰撞验证.md`
   - 来源：`统一案例总表/0652-C-657-EGSS × 点火框架碰撞验证.md`
-  - 依赖：—；被引用：—
-- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0653-C-658-Science Earth × EGSS 碰撞验证.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0653-C-658-Science%20Earth%20%C3%97%20EGSS%20%E7%A2%B0%E6%92%9E%E9%AA%8C%E8%AF%81.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-3f180441d5c99d69 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0653-C-658-Science Earth × EGSS 碰撞验证.md`
-  - 来源：`统一案例总表/0653-C-658-Science Earth × EGSS 碰撞验证.md`
   - 依赖：—；被引用：—

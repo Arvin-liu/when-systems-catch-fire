@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [f"- 机器数据：data/meta-protocols/meta-protocols.json#/protocols/{int(pid\[1:\])-1}\\n\\n"](../../../tools/build_deliverables.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-eee48d13e4fee7ba / f"- 机器数据：data/meta-protocols/meta-protocols.json#/protocols/{int(pid\[1:\])-1}\\n\\n"
+  - 来源：`tools/build_deliverables.py`
+  - 依赖：—；被引用：—
 - [f"article {art_id}: restored to CURRENT without review_evidence"](../../../tools/propagation/editorial_lifecycle.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-e11bc09fe0398410 / f"article {art_id}: restored to CURRENT without review_evidence"
@@ -2495,9 +2500,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-6984707da6188938 / link: "统一案例总表/0789-C-0794-马伯庸建议蹲下来看最下面一排书.md"
   - 来源：`统一案例总表/0789-C-0794-马伯庸建议蹲下来看最下面一排书.md`
-  - 依赖：—；被引用：—
-- [link: "统一案例总表/0790-C-0795-准备《长谈》花一个月.md"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0790-C-0795-%E5%87%86%E5%A4%87%E3%80%8A%E9%95%BF%E8%B0%88%E3%80%8B%E8%8A%B1%E4%B8%80%E4%B8%AA%E6%9C%88.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-2be4df06eab0f3cc / link: "统一案例总表/0790-C-0795-准备《长谈》花一个月.md"
-  - 来源：`统一案例总表/0790-C-0795-准备《长谈》花一个月.md`
   - 依赖：—；被引用：—

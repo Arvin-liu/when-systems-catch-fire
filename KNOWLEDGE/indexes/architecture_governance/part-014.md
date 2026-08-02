@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0653-C-658-Science Earth × EGSS 碰撞验证.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0653-C-658-Science%20Earth%20%C3%97%20EGSS%20%E7%A2%B0%E6%92%9E%E9%AA%8C%E8%AF%81.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-3f180441d5c99d69 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0653-C-658-Science Earth × EGSS 碰撞验证.md`
+  - 来源：`统一案例总表/0653-C-658-Science Earth × EGSS 碰撞验证.md`
+  - 依赖：—；被引用：—
 - [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0654-C-659-Science Earth × EGSS × 点火三框架碰撞验证.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0654-C-659-Science%20Earth%20%C3%97%20EGSS%20%C3%97%20%E7%82%B9%E7%81%AB%E4%B8%89%E6%A1%86%E6%9E%B6%E7%A2%B0%E6%92%9E%E9%AA%8C%E8%AF%81.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-51a6eecf0715ae03 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0654-C-659-Science Earth × EGSS × 点火三框架碰撞验证.md`
@@ -2492,9 +2497,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-9217e03fa6284671 / 点火框架外部文献缺口与来源图谱 — 阶段进度（全阶段完成）
   - 来源：`data/external-research/088-PROGRESS.md`
-  - 依赖：—；被引用：—
-- [点火框架暂不扩张材料库，而是优先审视自身结构、边界与证据协议，为后续更深的学科化整理做准备。](../../../CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-5fac5b6687a3b703 / 点火框架暂不扩张材料库，而是优先审视自身结构、边界与证据协议，为后续更深的学科化整理做准备。
-  - 来源：`CHANGELOG.md`
   - 依赖：—；被引用：—

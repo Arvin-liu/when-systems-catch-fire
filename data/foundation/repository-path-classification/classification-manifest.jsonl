@@ -1149,6 +1149,8 @@
 {"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "data/operations/iterations/112/publication/tools/r0_intake.py"}
 {"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "data/operations/iterations/112/publication/tools/rewrite_volume_ending.py"}
 {"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "data/operations/iterations/112/publication/tools/validate_publication.py"}
+{"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "data/operations/iterations/113/FINAL_STATE.json"}
+{"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "data/operations/iterations/113/TERMINAL_EVIDENCE_CORE.json"}
 {"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "data/operations/iterations/113/publication/ADVERSARIAL_REVIEW.md"}
 {"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "data/operations/iterations/113/publication/EDITORIAL_REVIEW.md"}
 {"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "data/operations/iterations/113/publication/FINAL_REVISION_MAP.md"}

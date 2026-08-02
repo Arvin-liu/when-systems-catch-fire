@@ -8,7 +8,7 @@
 - [物理与统一问题](./indexes/physics.md) — 420 条主归属记录
 - [系统论与机制建模](./indexes/systems.md) — 2590 条主归属记录
 - [认知、Agent 与行动](./indexes/cognition.md) — 449 条主归属记录
-- [架构、治理与自我纠错](./indexes/architecture_governance.md) — 7476 条主归属记录
+- [架构、治理与自我纠错](./indexes/architecture_governance.md) — 7477 条主归属记录
 - [文章、写作与公共表达](./indexes/writing_publication.md) — 118 条主归属记录
 - [迭代、验证与证据工程](./indexes/operations_evidence.md) — 3101 条主归属记录
 

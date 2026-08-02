@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [treat CI success as theory truth.](../../../reports/architecture/121Q13-baseline-overlap-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-0ed9a048744dd72b / treat CI success as theory truth.
+  - 来源：`reports/architecture/121Q13-baseline-overlap-audit.md`
+  - 依赖：—；被引用：—
 - [treat same-model repetition as independent evidence;](../../../reports/architecture/121Q13-baseline-overlap-audit.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-b0d938feab58701d / treat same-model repetition as independent evidence;
@@ -2492,9 +2497,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-e50d3b5c7d4dd4da / \| pending_claims \| evidence_regime \| pending 的证据制度原因 \|
   - 来源：`docs/machine_readable_data_plan.md`
-  - 依赖：—；被引用：—
-- [\| PENDING_EVIDENCE \| 与现有相邻但缺一层，需外部材料定 NEW 或 EXTENDED \| 否（登记缺口） \|](../../../docs/material-collision-validation-and-classification.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-f88048f9211813df / \| PENDING_EVIDENCE \| 与现有相邻但缺一层，需外部材料定 NEW 或 EXTENDED \| 否（登记缺口） \|
-  - 来源：`docs/material-collision-validation-and-classification.md`
   - 依赖：—；被引用：—

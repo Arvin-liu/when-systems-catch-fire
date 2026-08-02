@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [def markdown_links(path: Path) -> list\[tuple\[str, str \| None\]\]:](../../../tools/governance/validate_knowledge_experience.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-C4D41690C8C0D0CF / def markdown_links(path: Path) -> list\[tuple\[str, str \| None\]\]: / IMPLICIT-C4D41690C8C0D0CF
+  - 来源：`tools/governance/validate_knowledge_experience.py`
+  - 依赖：—；被引用：—
 - [def matched_terms(text: str):](../../../tools/foundation/adjudicate_core.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-F388801E5C8A9DDD / def matched_terms(text: str): / IMPLICIT-F388801E5C8A9DDD
@@ -2497,10 +2502,5 @@
 - [def test_d2_08_missing_fingerprint_policy_fails_closed(self):](../../../tests/test_incremental_execution.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-23AFFD75A8B3234F / def test_d2_08_missing_fingerprint_policy_fails_closed(self): / IMPLICIT-23AFFD75A8B3234F
-  - 来源：`tests/test_incremental_execution.py`
-  - 依赖：—；被引用：—
-- [def test_d2_09_forged_cache_hit_rejected_by_executor_and_validator(self):](../../../tests/test_incremental_execution.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-0A4AFC4D3CA675F2 / def test_d2_09_forged_cache_hit_rejected_by_executor_and_validator(self): / IMPLICIT-0A4AFC4D3CA675F2
   - 来源：`tests/test_incremental_execution.py`
   - 依赖：—；被引用：—

@@ -2,7 +2,7 @@
   "active_conclusion_rebounds": 0,
   "assertion_type_distribution": {
     "DESCRIPTIVE": 351,
-    "EMPIRICAL": 4630,
+    "EMPIRICAL": 4631,
     "INTERPRETIVE": 2661,
     "MATHEMATICAL": 2769,
     "METAPHYSICAL": 863,
@@ -10,12 +10,12 @@
     "UNRESOLVED": 6258
   },
   "blocked_conclusion_rebounds": 5,
-  "candidate_fragments": 30720,
-  "canonical_claims": 17704,
+  "candidate_fragments": 30721,
+  "canonical_claims": 17705,
   "claim_class_distribution": {
     "CROSS_DOMAIN_CORRESPONDENCE": 2195,
     "DESCRIPTIVE_REPOSITORY_CLAIM": 351,
-    "EMPIRICAL_OR_LITERATURE_CLAIM": 2272,
+    "EMPIRICAL_OR_LITERATURE_CLAIM": 2273,
     "IMPOSSIBILITY_OR_UNIVERSAL_CLAIM": 737,
     "INTERPRETATION_OR_FRAMEWORK_CLAIM": 466,
     "LAW_OR_PRINCIPLE_CLAIM": 210,
@@ -34,7 +34,7 @@
     "ACCEPTED_AS_PROVED_MATHEMATICAL_RESULT": 1,
     "HISTORICAL_ONLY": 6528,
     "PENDING_EMPIRICAL_TEST": 985,
-    "PENDING_LITERATURE_ADJUDICATION": 1380,
+    "PENDING_LITERATURE_ADJUDICATION": 1381,
     "PENDING_PROOF": 1018,
     "QUARANTINED_AMBIGUOUS": 2425,
     "REJECTED_FALSE_OR_INVALID": 1,
@@ -46,14 +46,14 @@
     "WITHDRAWN_UNSUPPORTED": 5
   },
   "existing_claims_mapped": 678,
-  "explicit_quarantine_or_pending": 5815,
+  "explicit_quarantine_or_pending": 5816,
   "explicitly_unresolved_dependency_edges": 52,
   "external_evidence_distribution": {
-    "E0": 11170,
+    "E0": 11171,
     "E1": 6534
   },
   "mathematical_maturity_distribution": {
-    "M0": 14687,
+    "M0": 14688,
     "M1": 3012,
     "M3": 1,
     "M4": 3,
@@ -65,7 +65,7 @@
   "source_base_commit": "ebe723fbf544f3fa1a87706e82493319d9f0af7e",
   "source_coverage_distribution": {
     "EXCLUDED_GENERATED_OR_FUNCTION_ASSET_REGISTRY": 176,
-    "EXCLUDED_NON_AUTHORITATIVE_RECORD": 513,
+    "EXCLUDED_NON_AUTHORITATIVE_RECORD": 515,
     "EXCLUDED_NON_TEXT_SUFFIX": 6,
     "EXCLUDED_NON_UTF8_OR_UNREADABLE": 1,
     "EXPLICIT_CANONICAL_IMPORT": 1,
@@ -73,5 +73,5 @@
     "SCANNED_REGISTERED": 2286
   },
   "task_id": "IGNITION-CORPUS-WIDE-NONFUNCTION-CLAIM-ADJUDICATION-AND-EVIDENCE-LINEAGE-CLOSURE-R1-20260729",
-  "tracked_files_accounted": 3539
+  "tracked_files_accounted": 3541
 }
