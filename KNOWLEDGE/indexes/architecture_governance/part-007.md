@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [def test_stale_projection_residue_blocks_ready(self):](../../../tests/test_iteration_sync.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-59AD2E5AE04AF2BA / def test_stale_projection_residue_blocks_ready(self): / IMPLICIT-59AD2E5AE04AF2BA
+  - 来源：`tests/test_iteration_sync.py`
+  - 依赖：—；被引用：—
 - [def test_stale_request_base_identity_not_used(self):](../../../tests/test_era_resolver_generalization.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-CC13B59090071492 / def test_stale_request_base_identity_not_used(self): / IMPLICIT-CC13B59090071492
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-ac739eb51b2ec3e4 / f"- rows with explicit coverage evidence in this pass: {summary\['touched_rows'\]}",
   - 来源：`tools/build_unesco_coverage.py`
-  - 依赖：—；被引用：—
-- [f"- 机器数据：data/meta-protocols/meta-protocols.json#/protocols/{int(pid\[1:\])-1}\\n\\n"](../../../tools/build_deliverables.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-eee48d13e4fee7ba / f"- 机器数据：data/meta-protocols/meta-protocols.json#/protocols/{int(pid\[1:\])-1}\\n\\n"
-  - 来源：`tools/build_deliverables.py`
   - 依赖：—；被引用：—

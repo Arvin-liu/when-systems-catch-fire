@@ -10,7 +10,7 @@
     "006": "REVIEWED_CURRENT",
     "007": "REVIEWED_CURRENT"
   },
-  "current_accepted_iteration": 112,
+  "current_accepted_iteration": 113,
   "current_capability_evidence": [
     {
       "ids": [
@@ -26,7 +26,7 @@
       "task": 105
     }
   ],
-  "current_project_status_commit": "24c7002477f75608b828f764fba60ebb633f88e8",
+  "current_project_status_commit": "687591cd28aa3bad8e9a9fcb71efc2862eaca91e",
   "current_project_status_date": "2026-07-31",
   "map_state_and_impact": [
     {
@@ -101,6 +101,14 @@
       "merge_commit": "24c7002477f75608b828f764fba60ebb633f88e8",
       "task_id": "IGNITION-RESEARCH-PUBLICATION-LAYER-HUNDRED-ITERATION-KNOWLEDGE-HARVEST-VOLUME-ONE-R1-20260802",
       "task_number": 112,
+      "terminal_state": "TERMINAL_SUCCESS"
+    },
+    {
+      "classification": "folded from event-sourced lifecycle (TERMINAL_SUCCESS)",
+      "exact_head": "9379aee3df73477b6f3ac6b15eed08e027124c58",
+      "merge_commit": "687591cd28aa3bad8e9a9fcb71efc2862eaca91e",
+      "task_id": "IGNITION-ZHIYUAN-WRITING-SONG-HUIZONG-TAOISM-NOTE-TO-PUBLISHED-WORK-R1-20260802",
+      "task_number": 113,
       "terminal_state": "TERMINAL_SUCCESS"
     }
   ],

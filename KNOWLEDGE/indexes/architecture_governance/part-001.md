@@ -674,6 +674,11 @@
   - 可搜索名称：NFC-d57588139a68388c / "data/operations/iterations/112/TERMINAL_EVIDENCE_CORE.json",
   - 来源：`tools/foundation/build_function_asset_census.py`
   - 依赖：—；被引用：—
+- ["data/operations/iterations/113/TERMINAL_EVIDENCE_CORE.json",](../../../tools/foundation/build_function_asset_census.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-a91700930867d79b / "data/operations/iterations/113/TERMINAL_EVIDENCE_CORE.json",
+  - 来源：`tools/foundation/build_function_asset_census.py`
+  - 依赖：—；被引用：—
 - ["data_availability", "evidence_cost", "blast_radius"\]:](../../../tools/iteration_planner/planner.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-c98ec3f1bea4b69b / "data_availability", "evidence_cost", "blast_radius"\]:
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-7412b87288ca5d2d / "重新验证 content_machine_eligible 与 ratification_ready。",
   - 来源：`tools/build_deliverables.py`
-  - 依赖：—；被引用：—
-- [# 099 Function Asset Registry Closure](../../../reports/foundation-architecture/099-function-asset-registry-closure.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-FC9848888997901C / # 099 Function Asset Registry Closure / IMPLICIT-FC9848888997901C
-  - 来源：`reports/foundation-architecture/099-function-asset-registry-closure.md`
   - 依赖：—；被引用：—
