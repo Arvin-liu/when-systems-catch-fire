@@ -24,3 +24,4 @@ Each `round-NNN-<short-slug>/` directory contains only the minimal report, sourc
 - Round 005 — GLP-1 cardiovascular evidence in obesity without diabetes — SUPPORTED_WITH_SCOPE — 7 opened sources.
 - Round 006 — Generative AI and software developer productivity — CONTESTED — 7 opened sources.
 - Round 007 — EV and internal-combustion vehicle fire risk — SUPPORTED_WITH_SCOPE — 5 opened sources.
+- Round 008 — Microplastics and cardiovascular events — INSUFFICIENT_EVIDENCE — 5 opened sources.
