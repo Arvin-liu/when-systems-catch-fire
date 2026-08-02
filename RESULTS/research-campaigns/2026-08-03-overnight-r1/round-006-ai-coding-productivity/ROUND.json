@@ -1,0 +1,24 @@
+{
+  "campaign_id": "POINTFIRE-OVERNIGHT-PUBLIC-EVIDENCE-RESEARCH-CAMPAIGN-20260803-R1",
+  "round_number": 6,
+  "short_slug": "ai-coding-productivity",
+  "start_time": "2026-08-03T03:01:04+08:00",
+  "end_time": "2026-08-03T03:03:15+08:00",
+  "timezone": "Asia/Shanghai",
+  "research_baseline": "61510ed26a1285e1746777c9eacd568cb3038a50",
+  "question": "生成式 AI 是否在真实软件工程中提高开发者生产率，还是只在简单受控任务或自报感受中显示加速？",
+  "initial_claim": "AI 编程工具的生产率效果可能因任务上下文、开发者经验、工具代际和测量指标而异，不能由单一速度百分比概括。",
+  "selection_score": {
+    "public_relevance": 5,
+    "evidence_availability": 5,
+    "bounded_answerability": 5,
+    "novelty_versus_previous_rounds": 5,
+    "capacity_to_revise_or_falsify_existing_assumption": 5
+  },
+  "verdict": "CONTESTED",
+  "source_count": 7,
+  "source_classes": ["primary_randomized_controlled_trial", "primary_randomized_field_experiments", "controlled_experiment_preprint", "vendor_survey_and_experiment", "independent_data_repository", "primary_methodology_update", "edited_technology_news"],
+  "report_sha256": "ab44ad641bbb0ed0f92d66c69187dca13e6b6d189a7ce86b70a895fc781a3dca",
+  "commit_sha": null,
+  "state": "COMPLETE_AWAITING_EXTERNAL_REVIEW"
+}
