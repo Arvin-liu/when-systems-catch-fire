@@ -137,7 +137,7 @@
     "terminal_core": "b877093e827853f4f69e468f035a5a15b0c296d8ca4092ef9ffb19b837a078d4",
     "content_pr": {
       "number": 178,
-      "exact_reviewed_head": "2e6ca101ac82d1bd8af413fbdafaaea024a9af8",
+      "exact_reviewed_head": "2e6ca101ac82d1bd8af413fbdafaaea024a9af8b",
       "final_head": "0d4063b471a55de4974dfb17811bafc54ee0d489",
       "merge_commit": "24c7002477f75608b828f764fba60ebb633f88e8"
     },
