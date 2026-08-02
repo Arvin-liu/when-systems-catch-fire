@@ -1,0 +1,24 @@
+{
+  "campaign_id": "POINTFIRE-OVERNIGHT-PUBLIC-EVIDENCE-RESEARCH-CAMPAIGN-20260803-R1",
+  "round_number": 1,
+  "short_slug": "ai-weather-extremes",
+  "start_time": "2026-08-03T02:31:18+08:00",
+  "end_time": "2026-08-03T02:32:41+08:00",
+  "timezone": "Asia/Shanghai",
+  "research_baseline": "61510ed26a1285e1746777c9eacd568cb3038a50",
+  "question": "在 AI 天气模型进入业务与气象机构试验的背景下，纯数据驱动模型能否替代物理数值模式来预警破纪录极端天气？",
+  "initial_claim": "AI 在平均天气场和计算效率上有优势，但纯 AI 在训练分布外的破纪录事件上可能低估风险；物理约束或混合系统可能更适合高风险预警。",
+  "selection_score": {
+    "public_relevance": 5,
+    "evidence_availability": 5,
+    "bounded_answerability": 5,
+    "novelty_versus_previous_rounds": 5,
+    "capacity_to_revise_or_falsify_existing_assumption": 5
+  },
+  "verdict": "PARTIALLY_SUPPORTED",
+  "source_count": 4,
+  "source_classes": ["peer_reviewed_research", "official_institution_release", "edited_science_news", "professional_news"],
+  "report_sha256": "86f1630b1728833dfd5e375d3a6e52d28ae9dd0a4bc00ee08e687ab1103478e1",
+  "commit_sha": null,
+  "state": "COMPLETE_AWAITING_EXTERNAL_REVIEW"
+}

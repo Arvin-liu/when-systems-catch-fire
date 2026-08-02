@@ -1,0 +1,15 @@
+{
+  "campaign_id": "POINTFIRE-OVERNIGHT-PUBLIC-EVIDENCE-RESEARCH-CAMPAIGN-20260803-R1",
+  "status": "RUNNING",
+  "control_branch": "relay/parallel/overnight-public-research-20260803-r1",
+  "control_tip": "551d1bf51eb8e69f2421ebf78526c323c159c796",
+  "formal_repository": "Arvin-liu/when-systems-catch-fire",
+  "formal_research_branch": "research/overnight-public-evidence-20260803-r1",
+  "research_baseline": "61510ed26a1285e1746777c9eacd568cb3038a50",
+  "started_at": "2026-08-03T02:29:24+08:00",
+  "deadline": "2026-08-03T10:00:00+08:00",
+  "current_round": 1,
+  "completed_rounds": 1,
+  "last_pushed_commit": null,
+  "state": "ROUND_COMPLETE_PENDING_PUSH"
+}
