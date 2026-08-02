@@ -8,8 +8,8 @@
   "research_baseline": "61510ed26a1285e1746777c9eacd568cb3038a50",
   "started_at": "2026-08-03T02:29:24+08:00",
   "deadline": "2026-08-03T10:00:00+08:00",
-  "current_round": 7,
+  "current_round": 8,
   "completed_rounds": 7,
-  "last_pushed_commit": "7fe85b0140a405b93205b7184c033c630853c623",
-  "state": "ROUND_COMPLETE_PENDING_PUSH"
+  "last_pushed_commit": "6f51157f9266eacb8be48940ed39660e88fdabc4",
+  "state": "RESEARCH_IN_PROGRESS"
 }
