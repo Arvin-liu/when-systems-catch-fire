@@ -67,7 +67,9 @@ RULES: list[tuple[str, tuple[str, ...]]] = [
     # 8. Candidate (non-authoritative) claims -- must NOT be authoritative.
     ("CANDIDATE_NONAUTHORITATIVE_RECORD", ("function-os-candidate/",)),
     # 9. Reference surfaces / knowledge / templates / views / inputs / canonical / formal.
-    ("REFERENCE_OR_KNOWLEDGE", ("KNOWLEDGE/", "templates/", "views/", "inputs/", "canonical/", "formal/")),
+    # PUBLICATIONS/ is a maintained human-reading/reference surface; it is not
+    # an authoritative claim input and must not flow back into Foundation discovery.
+    ("REFERENCE_OR_KNOWLEDGE", ("KNOWLEDGE/", "PUBLICATIONS/", "templates/", "views/", "inputs/", "canonical/", "formal/")),
     # 10. Editorial articles / analyses / stories / results / licenses / agent-results.
     ("EDITORIAL_ARTICLE", ("docs/", "analysis/", "新故事/", "RESULTS/", "LICENSES/", "agent-results/")),
     # 11. All remaining data/ machine records.  Must come after the operations exception.

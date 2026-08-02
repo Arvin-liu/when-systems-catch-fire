@@ -1,0 +1,156 @@
+{
+  "schema_version": "r0.1",
+  "artifact": "ignition-publication-preproduction-r0",
+  "purpose": "点火研究成果出版层与百轮成果打捞第一卷的隔离前置成果包",
+  "workspace": "/Users/zhiyuan/WorkBuddy/Claw/ignition-publication-preproduction-r0",
+  "formal_repository": "Arvin-liu/when-systems-catch-fire",
+  "baseline_commit": "9b15d359c54694d851c38df6ab3c7ae42544a51b",
+  "baseline_branch_at_fetch": "main",
+  "local_branch": "publication-preproduction-r0",
+  "source_remote": {
+    "name": "source",
+    "fetch_url": "https://github.com/Arvin-liu/when-systems-catch-fire.git",
+    "push_url": "DISABLED-LOCAL-ONLY",
+    "push_performed": false
+  },
+  "read_policy": {
+    "baseline_is_authoritative": true,
+    "later_remote_history_may_be_read_for_structure": true,
+    "later_unfinalized_recovery_state_is_not_promoted": true,
+    "task_111_completion_claim": "not_made"
+  },
+  "write_policy": {
+    "allowed_root": "/Users/zhiyuan/WorkBuddy/Claw/ignition-publication-preproduction-r0",
+    "formal_remote_modified": false,
+    "formal_remote_pushed": false,
+    "1111_modified": false,
+    "relay_current_modified": false,
+    "task_112_control_files_created_or_executed": false,
+    "formal_pr_created": false,
+    "formal_tag_created": false,
+    "formal_final_state_created": false,
+    "formal_lifecycle_event_created": false
+  },
+  "source_families": [
+    "Git history and first-parent merge history",
+    "RESULTS human-readable surfaces",
+    "reports and outputs",
+    "Foundation and claim/function registries",
+    "Evidence Program and run artifacts",
+    "Function OS candidate and benchmark",
+    "MCF, PSD, ARN architecture candidates",
+    "publication works and editorial articles",
+    "failure-case and task-111 bounded evidence"
+  ],
+  "stages": {
+    "stage_0": "COMPLETED",
+    "stage_1": "COMPLETED",
+    "stage_2": "COMPLETED",
+    "stage_3": "COMPLETED",
+    "stage_4": "COMPLETED",
+    "stage_5": "COMPLETED",
+    "stage_6": "COMPLETED",
+    "stage_7": "COMPLETED"
+  },
+  "stage_1_outputs": {
+    "ledger_markdown": "01-百轮成果总台账.md",
+    "ledger_jsonl": "01-百轮成果总台账.jsonl",
+    "ledger_record_count": 80,
+    "visibility_audit": "02-成果缺口与不可见性审计.md",
+    "question_genealogy": "03-研究问题谱系.md",
+    "correction_genealogy": "04-纠正与撤回谱系.md",
+    "source_recovery_summary_count": 287,
+    "tracked_file_count_at_baseline": 3456,
+    "count_conflicts": {
+      "public_function_cards": 5663,
+      "machine_canonical_function_cards": 7051,
+      "public_nonfunction_claims": 17333,
+      "machine_canonical_nonfunction_claims": 17626,
+      "status": "UNRESOLVED_SCOPE_OR_SNAPSHOT_MISMATCH"
+    },
+    "stage_1_claim_ceiling": "source_recovery_classification_visibility_audit"
+  },
+  "stage_2_outputs": {
+    "directory": "evidence-binders",
+    "files": [
+      "evidence-binders/chapter-01.md",
+      "evidence-binders/chapter-02.md",
+      "evidence-binders/chapter-03.md",
+      "evidence-binders/chapter-04.md",
+      "evidence-binders/chapter-05.md",
+      "evidence-binders/chapter-06.md",
+      "evidence-binders/chapter-07.md",
+      "evidence-binders/chapter-08.md",
+      "evidence-binders/chapter-09.md",
+      "evidence-binders/chapter-10.md"
+    ],
+    "file_count": 10,
+    "approx_characters": 25100,
+    "required_sections_checked": true,
+    "stage_2_claim_ceiling": "chapter_bound_evidence_binders_not_new_external_findings"
+  },
+  "stage_3_outputs": {
+    "volume_draft": "volume/第一卷-初稿.md",
+    "chapter_summary": "volume/章节摘要.md",
+    "source_evidence_appendix": "volume/来源与证据附录.md",
+    "glossary": "volume/术语表.md",
+    "total_characters": 39624,
+    "han_characters": 30126,
+    "chapter_count": 10,
+    "draft_claim_ceiling": "continuous_human_readable_synthesis_bounded_by_chapter_binders",
+    "independent_reviews_completed": false
+  },
+  "stage_4_outputs": {
+    "notes_file": "notes/点火研究笔记-第一辑.md",
+    "index_file": "notes/index.jsonl",
+    "note_count": 60,
+    "index_record_count": 60,
+    "unique_note_ids": 60,
+    "body_length_min_characters": 305,
+    "body_length_max_characters": 481,
+    "required_fields_checked": true,
+    "themes": ["起源与问题生成","证据与解释","纠正、撤回与状态","Foundation、函数与断言","执行、外部来源与真实案例","未知、出版与机构化"],
+    "stage_4_claim_ceiling": "independent_thematic_research_notes_bounded_by_source_and_note_claim_ceiling"
+  },
+  "stage_5_outputs": {
+    "panorama_file": "点火目前真正知道什么.md",
+    "supported_count": 20,
+    "corrected_withdrawn_downgraded_count": 20,
+    "unresolved_count": 20,
+    "next_direction_count": 10,
+    "items_with_inline_boundaries": 70,
+    "stage_5_claim_ceiling": "single_file_bounded_publication_panorama_not_new_authority"
+  },
+  "stage_6_outputs": {
+    "fact_review": "reviews/事实审查.md",
+    "adversarial_review": "reviews/反方审查.md",
+    "editorial_review": "reviews/编辑审查.md",
+    "revision_checklist": "reviews/逐项修订清单.md",
+    "review_item_count": 72,
+    "revision_item_count": 35,
+    "required_roles_checked": true,
+    "stage_6_claim_ceiling": "independent_draft_audit_and_revision_requirements_not_new_research_findings"
+  },
+  "stage_7_outputs": {
+    "second_draft": "volume/第一卷-第二稿.md",
+    "revision_notes": "volume/修订说明.md",
+    "source_appendix_updated": "volume/来源与证据附录.md",
+    "stage_7_commit": "68302f968f109afc4b15988b46d3c99cc8c9fa33",
+    "second_draft_total_characters": 38994,
+    "second_draft_han_characters": 30568,
+    "second_draft_lines": 977,
+    "first_to_second_sha256_differ": true,
+    "revision_items_done": 35,
+    "revision_items_pending_final_isolation_check": 0,
+    "final_isolation_check": {
+      "independent_clone": true,
+      "push_url_disabled": true,
+      "forbidden_control_files_created": false,
+      "relay_current_files_created": false,
+      "formal_remote_write_performed": false
+    },
+    "all_p0_content_items_done": true,
+    "final_state_claim": "publication_package_complete_in_isolated_local_repository_only",
+    "stage_7_claim_ceiling": "substantive_second_draft_rewrite_bounded_by_existing_evidence_not_new_research_findings"
+  }
+}

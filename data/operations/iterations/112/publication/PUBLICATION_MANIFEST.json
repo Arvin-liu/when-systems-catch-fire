@@ -1,0 +1,138 @@
+{
+  "manifest_version": "112.publication-manifest.v1",
+  "work_id": "pointfire-hundred-iterations-volume-one-r1",
+  "title": "《点火百轮之后：一个跨域研究系统真正知道了什么》",
+  "status": "PUBLISHED_WITH_EXPLICIT_LIMITATIONS",
+  "completeness": "COMPLETE_FOR_PUBLISHED_WITH_EXPLICIT_LIMITATIONS",
+  "publication_date": "2026-08-02",
+  "authorship_and_provenance": "本作品由 Codex 依据 R0 固定材料、任务 111 后正式仓库状态和任务 112 独立审计进行综合、重写与编辑；之元写作法 0.4.0 作为问题推进、证据贴边和读者可读性的编辑纪律。它不是新的外部实验、同行评议或外部共同体认领。",
+  "source_task": "IGNITION-RESEARCH-PUBLICATION-LAYER-HUNDRED-ITERATION-KNOWLEDGE-HARVEST-VOLUME-ONE-R1-20260802",
+  "source_commits": {
+    "r0_baseline": "9b15d359c54694d851c38df6ab3c7ae42544a51b",
+    "r0_final_local": "84fdcf68f2bd3fde8ed543b0ec6b51a538ea9597",
+    "formal_audit": "3d591874",
+    "formal_publication_checkpoint": "13b8bb04",
+    "audit_start_main": "302362f66dad4e8a9c9e72400f4267c12b0b0d00"
+  },
+  "primary_reading_path": {
+    "root_entry": "README.md",
+    "shelf": "PUBLICATIONS/README.md",
+    "clicks_to_shelf": 1,
+    "clicks_to_volume": 2,
+    "shelf_status": "PUBLISHED_WITH_EXPLICIT_LIMITATIONS"
+  },
+  "artifacts": {
+    "shelf": {
+      "path": "PUBLICATIONS/README.md",
+      "title": "点火成果书架",
+      "work_type": "PUBLICATION_SHELF",
+      "characters": 1406,
+      "sha256": "7bef339f569ed8159f0d4c43b251510540ab81fcb0d4db2114b5c416635cf09c",
+      "claim_ceiling": "可达性和阅读导航；不抬高任何科学、历史或因果主张。"
+    },
+    "volume": {
+      "path": "PUBLICATIONS/volumes/001-pointfire-after-one-hundred-iterations.md",
+      "title": "《点火百轮之后：一个跨域研究系统真正知道了什么》",
+      "work_type": "HUMAN_READABLE_RESEARCH_SYNTHESIS",
+      "characters": 38775,
+      "han_characters": 30226,
+      "chapters": 10,
+      "sha256": "2a3668cdfe901cf0e28705906286aa061d995849e7d42535e4ca92ad0cebcb4b",
+      "claim_ceiling": "在 R0 既有材料、正式仓库审计起点、声明的形式化/工程/来源范围内的综合性窄认识；不支持外部科学证明、历史唯一因果或普遍机制。"
+    },
+    "notes": {
+      "path": "PUBLICATIONS/notes/001-pointfire-research-notes.md",
+      "title": "《点火研究笔记·第一辑》",
+      "work_type": "INDEPENDENT_RESEARCH_NOTES",
+      "characters": 24503,
+      "han_characters": 14558,
+      "note_count": 60,
+      "sha256": "f4a3a6dd31705750ed7c3053a4cbe688aae000a7ac10bbb99cb952377a9da0a5",
+      "index_path": "PUBLICATIONS/notes/index.jsonl",
+      "claim_ceiling": "每条笔记只承担其问题、来源、边界和未解决残余内的窄结论。"
+    },
+    "panorama": {
+      "path": "PUBLICATIONS/what-pointfire-knows-now.md",
+      "title": "《点火目前真正知道什么》",
+      "work_type": "SINGLE_FILE_GLOBAL_VIEW",
+      "characters": 5724,
+      "han_characters": 3175,
+      "counts": {
+        "currently_supportable": 20,
+        "corrected_withdrawn_weakened_or_superseded": 20,
+        "unresolved": 20,
+        "future_directions": 10
+      },
+      "sha256": "8cd4781d87bde988cc627c16c2df5987ac28e04cd6af75af30c74b8ece105e31",
+      "claim_ceiling": "一页导航中的各项按各自证据层解释；四块不是共同真理等级。"
+    },
+    "ledger": {
+      "path": "PUBLICATIONS/hundred-iteration-achievement-ledger.md",
+      "title": "百轮成果台账",
+      "work_type": "ACHIEVEMENT_LEDGER",
+      "characters": 44180,
+      "han_characters": 14560,
+      "record_count": 80,
+      "sha256": "b2a46a4933095810d491f6c98c7378e84de1468ddb553d9f24ec561a2bada298",
+      "machine_projection": "data/operations/iterations/112/publication/FINAL_ACHIEVEMENT_LEDGER.jsonl",
+      "claim_ceiling": "可恢复记录的逐项分类和来源导航；记录数不是独立实验数或外部成果数。"
+    }
+  },
+  "evidence_packet": {
+    "root": "data/operations/iterations/112/publication/",
+    "r0_lock": "R0_SOURCE_LOCK.json",
+    "r0_manifest": "R0_FILE_MANIFEST.json",
+    "r0_original_subtree": "r0-original/",
+    "claim_audit": "R0_CLAIM_AUDIT.jsonl",
+    "chapter_map": "FINAL_CHAPTER_EVIDENCE_MAP.md",
+    "source_appendix": "FINAL_SOURCE_APPENDIX.md",
+    "glossary": "FINAL_GLOSSARY.md",
+    "revision_map": "FINAL_REVISION_MAP.md",
+    "reviews": [
+      "EVIDENCE_FACTUAL_REVIEW.md",
+      "ADVERSARIAL_REVIEW.md",
+      "EDITORIAL_REVIEW.md",
+      "REVIEW_DISPOSITION_MATRIX.md"
+    ],
+    "accounting": "OUTPUT_ACCOUNTING.md",
+    "unresolved": "UNRESOLVED_PUBLICATION_OBLIGATIONS.md"
+  },
+  "review_state": "COMPLETE",
+  "reviewed_artifact_sha256": {
+    "volume": "2a3668cdfe901cf0e28705906286aa061d995849e7d42535e4ca92ad0cebcb4b",
+    "notes": "f4a3a6dd31705750ed7c3053a4cbe688aae000a7ac10bbb99cb952377a9da0a5",
+    "panorama": "8cd4781d87bde988cc627c16c2df5987ac28e04cd6af75af30c74b8ece105e31",
+    "ledger": "b2a46a4933095810d491f6c98c7378e84de1468ddb553d9f24ec561a2bada298"
+  },
+  "review_findings": {
+    "total_non_deduplicated": 48,
+    "factual_evidence": 15,
+    "adversarial": 18,
+    "editorial": 15,
+    "required_revisions": 22,
+    "retained_with_binding": 24,
+    "open_visible_obligations": 2
+  },
+  "r0_disposition": {
+    "verdict": "PARTIAL_REUSE_MAJOR_REWRITE_REQUIRED",
+    "ledger_records_retained_and_reclassified": 80,
+    "notes_directly_retained": 55,
+    "notes_targeted_rewrite": 5,
+    "volume": "MAJOR_REWRITE_NOT_MECHANICAL_COPY",
+    "panorama": "STRUCTURE_RETAINED_ITEMS_REAUDITED",
+    "r0_reviews": "HISTORICAL_INTAKE_ONLY"
+  },
+  "minimal_architecture": {
+    "validator": "data/operations/iterations/112/publication/tools/validate_publication.py",
+    "notes_index_builder": "data/operations/iterations/112/publication/tools/build_notes_index.py",
+    "new_website_or_cms": false,
+    "new_database": false,
+    "new_task_113": false
+  },
+  "terminalization": {
+    "task112_terminalization_state": "PENDING",
+    "terminal_tag": "ignition/iterations/112/terminal-r1",
+    "terminal_core": "PENDING_CONTENT_MERGE_AND_TERMINALIZATION",
+    "final_evidence_pr": "PENDING"
+  }
+}

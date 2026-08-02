@@ -42,6 +42,9 @@ GENERATED_PREFIXES = (
     "data/foundation/nonfunction-claims/",
     "data/governance/",
     "KNOWLEDGE/",
+    # Maintained human-reading publications are reference surfaces, not
+    # authoritative function-asset discovery inputs.
+    "PUBLICATIONS/",
 )
 GENERATED_EXACT_PATHS = {
     "data/foundation/project-state.json",

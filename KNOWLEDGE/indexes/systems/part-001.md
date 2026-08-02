@@ -1144,6 +1144,11 @@
   - 可搜索名称：IMPLICIT-FDACD9849736DF99 / # 金朝崛起为什么这么快：从凝聚力叙事到跨尺度机制候选 / IMPLICIT-FDACD9849736DF99
   - 来源：`reports/publication/jin-rise-point-fire-analysis.md`
   - 依赖：—；被引用：—
+- [## 3. MCF、PSD、ARN 与 Function OS](../../../data/operations/iterations/112/publication/r0-original/volume/%E6%9D%A5%E6%BA%90%E4%B8%8E%E8%AF%81%E6%8D%AE%E9%99%84%E5%BD%95.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-7E92FC44285573D3 / ## 3. MCF、PSD、ARN 与 Function OS / IMPLICIT-7E92FC44285573D3
+  - 来源：`data/operations/iterations/112/publication/r0-original/volume/来源与证据附录.md`
+  - 依赖：—；被引用：—
 - [## nfc-2b7304f480da70c2 — Iteration method 1.3.0 and system map 0.2.0, 0.3.0 are Historical; method 1.2.0 and map 0.1.0 are earlier Historical, no](../../../analysis/corpus-relation/cluster_source_briefs/C004.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-090B7B9E9650BA15 / ## nfc-2b7304f480da70c2 — Iteration method 1.3.0 and system map 0.2.0, 0.3.0 are Historical; method 1.2.0 and map 0.1.0 are earlier Historical, no / IMPLICIT-090B7B9E9650BA15 / IMPLICIT-2545793608FF2828
@@ -1501,7 +1506,12 @@
   - 依赖：—；被引用：—
 - [\[《一个系统怎样知道某件事已经做过，而不是把同一项工作再次排到未来？》\](../../../RESULTS/RESEARCH-AND-ARTICLES.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-5ae50e8ed126f6f7 / \[《一个系统怎样知道某件事已经做过，而不是把同一项工作再次排到未来？》\](../../../data/architecture/interactive-system-map.json)](../../../docs/architecture/interactive-system-map.md)
+  - 可搜索名称：NFC-5ae50e8ed126f6f7 / \[《一个系统怎样知道某件事已经做过，而不是把同一项工作再次排到未来？》\](../../../PUBLICATIONS/volumes/001-pointfire-after-one-hundred-iterations.md)：完整第一卷，带明确的来源、版本和证据上限。](../../../RESULTS/RESEARCH-AND-ARTICLES.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-249f81943565e430 / \[《点火百轮之后：一个跨域研究系统真正知道了什么》\](../../../PUBLICATIONS/volumes/001-pointfire-after-one-hundred-iterations.md)：完整第一卷，带明确的来源、版本和证据上限。
+  - 来源：`RESULTS/RESEARCH-AND-ARTICLES.md`
+  - 依赖：—；被引用：—
+- [\[机器可读投影\](../../../data/architecture/interactive-system-map.json)](../../../docs/architecture/interactive-system-map.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-4f9ef989426a16e1 / \[机器可读投影\](../../../data/architecture/interactive-system-map.json)
   - 来源：`docs/architecture/interactive-system-map.md`
@@ -2487,14 +2497,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-a63f9d2ce0ac0f0c / check("gate:no-established-causal",all(x.get("claim_type")!="EMPIRICAL_CAUSAL_CLAIM" for x in objects))
   - 来源：`tools/foundation/validate_foundation.py`
-  - 依赖：—；被引用：—
-- [check("warning IDs match expected", set(warning_ids) == set(expected_warning_ids))](../../../data/external-research/121-fulltext-resolver/121c01/121c01-validator.py)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-606A51E33FF72B4A / check("warning IDs match expected", set(warning_ids) == set(expected_warning_ids)) / IMPLICIT-606A51E33FF72B4A
-  - 来源：`data/external-research/121-fulltext-resolver/121c01/121c01-validator.py`
-  - 依赖：—；被引用：—
-- [check(f"warning reconciliation has 7 entries", len(warnings) == 7)](../../../data/external-research/121-fulltext-resolver/121c01/121c01-validator.py)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-968D76B8F129A479 / check(f"warning reconciliation has 7 entries", len(warnings) == 7) / IMPLICIT-968D76B8F129A479
-  - 来源：`data/external-research/121-fulltext-resolver/121c01/121c01-validator.py`
   - 依赖：—；被引用：—

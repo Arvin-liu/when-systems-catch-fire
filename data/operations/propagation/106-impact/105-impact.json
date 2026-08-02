@@ -2,10 +2,10 @@
   "dimensions": {
     "CURRENT_PUBLIC_WORDING_IMPACT": {
       "baseline_sha256": {
-        "HUMAN-READING.md": "dd53e97f15cccaa9c409162f21b10759d61ba862a03685faa632178564d4d158",
-        "README.md": "bbcb42d32455fd850c1f9fff75eb9c7ec6da8368101b7fb63ef9deeb27267eb1",
-        "RESULTS/LATEST.md": "8c116862fc8de3d33e4c06a8c3b98690849ddb4d9515b3624fdb2f7645c69ff2",
-        "docs/project-current-state.md": "e44fd67dee10648c5cec743c0216d7678afbf1382b9856d3e5249c563581cdec"
+        "HUMAN-READING.md": "2e50a58abc135a9ceccbe95ca39f2e1940bba49777e68bfb5e8386742fdabcdf",
+        "README.md": "1c3e30f4fee388953b2b98f1d518828389392b2efae9cc81593df488ae5cdfe6",
+        "RESULTS/LATEST.md": "d7a068adda0ae4adc7cba93141df358f80a97d1f89f0e1c5f20e7d07bcdc2d9e",
+        "docs/project-current-state.md": "c4500bc065bbb7040209911af0a9f4b2d3d2dc237996b92ecd9a6bc36015130b"
       },
       "declared": "NO_IMPACT_JUSTIFIED",
       "governed_sources": [
@@ -39,10 +39,10 @@
     },
     "MACHINE_RECORD_IMPACT": {
       "baseline_sha256": {
-        "RESULTS/CLAIM-DELTA.md": "14c8cd34782273eaf9c2673cc1d975555a2f9a36e7b6207cdb8ac7fb6571269e",
-        "RESULTS/EVIDENCE-LINEAGE.md": "cc39d251fc2663d076755a3edf474bd40067775d0dc710ba487e428d5fb7fb8b",
-        "RESULTS/IMPACT-ANALYSIS.md": "cc2236bed0b34ca9ccdd51a07bedf0d6b2443b9dc52a9dc1df218e4200e545f9",
-        "RESULTS/SELF-CORRECTION-AUDIT.md": "2b745d81ec87613235fc9fbe082c4b5582db2d053e50f294d2762736ca3a752f"
+        "RESULTS/CLAIM-DELTA.md": "72d71abcca272fdd96ce4f256a41af6b4ec4456c7b5b826ac0df280500d7386e",
+        "RESULTS/EVIDENCE-LINEAGE.md": "b43050bf44d20bd8b8eb94912406955f2efd85b8740275900fed1e4d04f0ccc9",
+        "RESULTS/IMPACT-ANALYSIS.md": "988f26da89230a4496efc796b7315ae3d9a97e6d5332d6cc1b635dbf95515ff5",
+        "RESULTS/SELF-CORRECTION-AUDIT.md": "963b8e8df1a091aa8e93057ca353d07953b1a2f987de05a7bcc5c5f35643a152"
       },
       "declared": "NO_IMPACT_JUSTIFIED",
       "governed_sources": [
@@ -75,7 +75,7 @@
     "PROJECT_STATE_IMPACT": {
       "baseline_sha256": {
         "ITERATION.md": "5351952f2483fbd68b8484f8c2262de154155b2c3250378893bb8e277aaba8eb",
-        "docs/project-current-state.md": "e44fd67dee10648c5cec743c0216d7678afbf1382b9856d3e5249c563581cdec"
+        "docs/project-current-state.md": "c4500bc065bbb7040209911af0a9f4b2d3d2dc237996b92ecd9a6bc36015130b"
       },
       "declared": "NO_IMPACT_JUSTIFIED",
       "governed_sources": [
