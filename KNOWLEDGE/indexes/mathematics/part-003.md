@@ -2334,6 +2334,11 @@
   - 可搜索名称：NFC-18cc2bc1fc3bf8cb / \[#97｜高维认知必然多轨\](docs/zh/cases/items/C-0097.md)
   - 来源：`统一函数总表/0136-D97-高维认知必然多轨.md`
   - 依赖：—；被引用：—
+- [\[^1\]: 相关古籍网页保存的是历史文本的定位与版本信息；本文采用其明确的使用范围，不把网页本身当作全部史实的独立证明。](../../../docs/publication/works/when-an-emperor-manufactures-heaven.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-e21f8d406de0cf44 / \[^1\]: 相关古籍网页保存的是历史文本的定位与版本信息；本文采用其明确的使用范围，不把网页本身当作全部史实的独立证明。
+  - 来源：`docs/publication/works/when-an-emperor-manufactures-heaven.md`
+  - 依赖：—；被引用：—
 - [\[A1｜I(t,L) 提议者意识 / I(t,L) proposer awareness\](docs/zh/functions/items/A1.md)](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0002-A1-I%28t%2CL%29%20%E6%8F%90%E8%AE%AE%E8%80%85%E6%84%8F%E8%AF%86.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-a4cdf609e0db550f / \[A1｜I(t,L) 提议者意识 / I(t,L) proposer awareness\](docs/zh/functions/items/A1.md)
@@ -2497,10 +2502,5 @@
 - [\[C-0757｜《写作是门手艺》段落控制≤10行\](../../../统一案例总表/0752-C-0757-《写作是门手艺》段落控制≤10行.md)（原笔记编号：C577-1）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0587-D577-%E8%A7%82%E7%82%B9%E7%AB%9E%E4%BA%89.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-9af23d3c49158e99 / \[C-0757｜《写作是门手艺》段落控制≤10行\](../../../统一案例总表/0752-C-0757-《写作是门手艺》段落控制≤10行.md)（原笔记编号：C577-1）
-  - 来源：`统一函数总表/0587-D577-观点竞争.md`
-  - 依赖：—；被引用：—
-- [\[C-0758｜马伯庸建议蹲下来看最下面一排书\](../../../统一案例总表/0753-C-0758-马伯庸建议蹲下来看最下面一排书.md)（原笔记编号：C577-2）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0587-D577-%E8%A7%82%E7%82%B9%E7%AB%9E%E4%BA%89.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-ebecdcf01423171c / \[C-0758｜马伯庸建议蹲下来看最下面一排书\](../../../统一案例总表/0753-C-0758-马伯庸建议蹲下来看最下面一排书.md)（原笔记编号：C577-2）
   - 来源：`统一函数总表/0587-D577-观点竞争.md`
   - 依赖：—；被引用：—

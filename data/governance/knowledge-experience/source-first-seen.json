@@ -62,7 +62,9 @@
     "docs/operations/lifecycle-readme.md": "2026-08-01",
     "docs/operations/stage-snapshot-publication.md": "2026-07-26",
     "docs/publication/cases/jin-rise-case-source.md": "2026-07-16",
+    "docs/publication/cases/song-huizong-taoism-1117-source.md": "2026-08-02",
     "docs/publication/works/when-an-army-believes-its-own-back.md": "2026-07-16",
+    "docs/publication/works/when-an-emperor-manufactures-heaven.md": "2026-08-02",
     "docs/publication/zhiyuan-writing-examples.md": "2026-07-16",
     "docs/publication/zhiyuan-writing-method.md": "2026-07-16",
     "docs/publication/zhiyuan-writing-showcase.md": "2026-07-16",
@@ -277,6 +279,7 @@
     "reports/operations/IGNITION-ITERATION-METHOD-1.4-homepage-comparison.md": "2026-07-26",
     "reports/operations/lifecycle-audit-108.md": "2026-08-01",
     "reports/publication/jin-rise-point-fire-analysis.md": "2026-07-16",
+    "reports/publication/song-huizong-taoism-point-fire-analysis.md": "2026-08-02",
     "reports/reality/121Q16-action-selection.md": "2026-07-15",
     "reports/reality/121Q16-sustainability-signal-pilot.md": "2026-07-15",
     "reports/release/121Q10-emergent-state-license-finalization.md": "2026-07-15",
@@ -289,7 +292,7 @@
     "新故事/0001-S1-比刀剑更持久的，是共享观念.md": "2026-07-06",
     "新故事/INDEX.md": "2026-07-06"
   },
-  "entry_count": 287,
+  "entry_count": 290,
   "history_requirement": "FULL",
   "schema_version": "1.0.0"
 }

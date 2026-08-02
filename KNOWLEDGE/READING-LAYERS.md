@@ -2537,6 +2537,28 @@ PR 59 的 accepted HEAD fb550c50dc5ebc385dcebb3b9aa8c768458c6d8c 经 review 4715
 
 [reports/operations/121Q30T-homepage-showcase-merge-current-closeout-audit.md](../reports/operations/121Q30T-homepage-showcase-merge-current-closeout-audit.md)
 
+<a id="reading-hr-694db9c100ff4eac"></a>
+## 任务 113：宋徽宗道教笔记的点火分析
+
+**状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · **主题：** `SYSTEMS`, `WRITING_PUBLICATION`
+
+### 1 分钟
+
+这不是对原笔记的摘要，而是一次受证据边界约束的材料运行。运行的目标不是替徽宗的内心作证，也不是给“道教导致亡国”找一条漂亮因果链；目标是找出材料中最难被同一解释容纳的残余，再让文章承担这个残余。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+
+### 5 分钟
+
+- 来源要点（导航摘录，不得视为当前断言）：主题：任务 113：宋徽宗道教笔记的点火分析
+- 来源要点（导航摘录，不得视为当前断言）：控制仓库：Arvin-liu/1111
+- 来源要点（导航摘录，不得视为当前断言）：任务控制提交：d15ce70bef67b439ec2e99d1aeb1e792b4e6e9ef
+- 来源要点（导航摘录，不得视为当前断言）：正式仓库：Arvin-liu/when-systems-catch-fire
+- 来源要点（导航摘录，不得视为当前断言）：点火执行基线：1b3545a252c542129424a240d3c7eb3b5af808af（最新远端 origin/main，不是任务 112 终止标签）
+- 来源要点（导航摘录，不得视为当前断言）：来源模式：FULLLOCALNOTEHASHMATCH
+
+### 完整阅读
+
+[reports/publication/song-huizong-taoism-point-fire-analysis.md](../reports/publication/song-huizong-taoism-point-fire-analysis.md)
+
 <a id="reading-hr-699df907d9234853"></a>
 ## 跨域候选函数批次收口审计
 
@@ -2999,6 +3021,28 @@ Y1 is a workflow orchestrator; JPLUS and JMINUS are internal evidence channels; 
 ### 完整阅读
 
 [outputs/audit/teacher-competition-small-batch-backfill-audit-20260708.md](../outputs/audit/teacher-competition-small-batch-backfill-audit-20260708.md)
+
+<a id="reading-hr-7977aad32b24032d"></a>
+## 当天意有了接口：宋徽宗与会自我证明的皇权
+
+**状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · **主题：** `WRITING_PUBLICATION`
+
+### 1 分钟
+
+它们飞得并不需要先知道自己将被怎样解释。鹤只是经过，宫门只是宫门，天空也没有留下可供核对的说明书。可在一座宫廷里，一件自然事件不会停在“发生过”这一层。它会被看见，被报告，被画下来，被题诗，再被放进一套关于太平、圣王与天命的语言中。赵佶留下的《瑞鹤图》，正是在这样的转换之后出现的。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+
+### 5 分钟
+
+- 来源要点（导航摘录，不得视为当前断言）：主题：当天意有了接口：宋徽宗与会自我证明的皇权
+- 来源要点（导航摘录，不得视为当前断言）：1112 年，开封宫门上空出现了一群鹤。
+- 来源要点（导航摘录，不得视为当前断言）：它们飞得并不需要先知道自己将被怎样解释。鹤只是经过，宫门只是宫门，天空也没有留下可供核对的说明书。可在一座宫廷里，一件自然事件不会停在“发生过”这一层。它会被看见，被报告，被画下来，被题诗，再被放进一套关于太平、圣王与天命的语言中。赵佶留下的《瑞鹤图》，正是在这样的转换之后出现的。
+- 来源要点（导航摘录，不得视为当前断言）：因此，画上最值得看的也许不是鹤到底从哪里来，而是它们上方和下方之间多出了一整套工作：谁有资格报告，什么算作祥瑞，哪一种画法可以保存它，哪一首诗能替它发言，以及谁能把这份发言送回皇帝那里。
+- 来源要点（导航摘录，不得视为当前断言）：天意从来不是只落在地上的东西。它还要经过一个接口，才会成为政治事实。
+- 来源要点（导航摘录，不得视为当前断言）：宋徽宗最容易被解释。北宋在他之后覆亡，他又留下了精致的画、奢丽的园林和“道君皇帝”的名声。于是，一个熟悉的故事很快完成：艺术家皇帝迷信道教，道士替他制造祥瑞，皇权在自我陶醉中走向崩溃。
+
+### 完整阅读
+
+[docs/publication/works/when-an-emperor-manufactures-heaven.md](../docs/publication/works/when-an-emperor-manufactures-heaven.md)
 
 <a id="reading-hr-799941ede8ca07cb"></a>
 ## 验证报告：047 证据链补齐与 PR 11 合并前复核（IGNITION-20260709-049）
@@ -5348,20 +5392,20 @@ Status: 121Q13CONTROLOVERLAY 边界：This is a conservative navigation summary,
 <a id="reading-hr-d328ae24912155e2"></a>
 ## 之元写作法成果
 
-**状态：** `HISTORICAL_COMPLETION_RECORD` · **主题：** `WRITING_PUBLICATION`
+**状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · **主题：** `WRITING_PUBLICATION`
 
 ### 1 分钟
 
-本索引是 121Q30T 收口后的当前成果入口，收录由之元写作法 0.3.0生成、具备可追溯来源链和点火分析链、并已进入相应审查状态的公共表达成果。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+本索引是 121Q30T 收口后的当前成果入口，收录由当前之元写作法 0.4.0或其历史版本生成、具备可追溯来源链和点火分析链、并已进入相应审查状态的公共表达成果。每项记录保留实际使用的方法版本；旧作品不会被回填成新版本。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 
 ### 5 分钟
 
-- 来源要点（导航摘录，不得视为当前断言）：本索引是 121Q30T 收口后的当前成果入口，收录由之元写作法 0.3.0生成、具备可追溯来源链和点火分析链、并已进入相应审查状态的公共表达成果。
+- 来源要点（导航摘录，不得视为当前断言）：本索引是 121Q30T 收口后的当前成果入口，收录由当前之元写作法 0.4.0或其历史版本生成、具备可追溯来源链和点火分析链、并已进入相应审查状态的公共表达成果。每项记录保留实际使用的方法版本；旧作品不会被回填成新版本。
 - 来源要点（导航摘录，不得视为当前断言）：首页只显示按 registry 排序的最近三条；全部成果保留在本页。新增成果必须同时建立正式作品、起始案例来源链、点火分析和机器 registry 记录，不得只手工添加一条链接。来源受版权或隐私限制时，只公开 provenance 记录，不复制受限全文。
 - 来源要点（导航摘录，不得视为当前断言）：这类成果说明个人认知结构的一部分可以被提炼为可描述、可调用、可审计、可追溯来源的方法，并可由他人或 AI 使用。它不证明方法普遍最优，不表示调用者复制了之元本人，也不让文学感染力提高事实、因果或价值主张的等级。
-- 来源要点（导航摘录，不得视为当前断言）：主题：《当一支军队开始相信自己的背影》
-- 来源要点（导航摘录，不得视为当前断言）：状态：121Q29RPUBLICATIONTEXTACCEPTED
-- 来源要点（导航摘录，不得视为当前断言）：排序时间：2026-07-16 简介：从战场中的一次后退进入系统自我生产证据、局部理性与整体毁灭、局部保护和稳定成本，最终返回历史解释如何被胜利结果反写。
+- 来源要点（导航摘录，不得视为当前断言）：主题：《当天意有了接口：宋徽宗与会自我证明的皇权》
+- 来源要点（导航摘录，不得视为当前断言）：状态：PUBLISHEDWITHEXPLICITLIMITATIONS
+- 来源要点（导航摘录，不得视为当前断言）：排序时间：2026-08-02 简介：从《瑞鹤图》里一群不必先知道自己将怎样被解释的鹤出发，追问天意怎样经过称号、道门章疏、制度、园林、图像和受影响者，成为可以被宫廷组织的公共接口；文章最后把问题收回到谁能让这个接口报告坏消息。
 
 ### 完整阅读
 
@@ -5473,6 +5517,28 @@ Historical status: 121Q32I / method 1.3.0 Closed, now superseded by Current 1.4.
 ### 完整阅读
 
 [outputs/getbrain/failure-typology-draft-20260706.md](../outputs/getbrain/failure-typology-draft-20260706.md)
+
+<a id="reading-hr-d6dc7edfc015e4c7"></a>
+## 《公元1117年：宋徽宗为什么崇信道教？》来源与边界
+
+**状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · **主题：** `COGNITION`, `WRITING_PUBLICATION`
+
+### 1 分钟
+
+这是一份得到大脑中的结构化笔记，包含较长的第三方课程原文。它是本轮写作的起始承载点和问题入口，不是独立的历史证据集合。课程里的叙述、笑话、类比、数字和解释不能因为被笔记收录就自动获得史料地位。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+
+### 5 分钟
+
+- 来源要点（导航摘录，不得视为当前断言）：主题：《公元1117年：宋徽宗为什么崇信道教？》来源与边界
+- 来源要点（导航摘录，不得视为当前断言）：输入标题：公元1117年：宋徽宗为什么崇信道教？-2026年07月29日-来自【得到大脑】.md
+- 来源要点（导航摘录，不得视为当前断言）：来源类别：externalinput
+- 来源要点（导航摘录，不得视为当前断言）：来源模式：FULLLOCALNOTEHASHMATCH
+- 来源要点（导航摘录，不得视为当前断言）：SHA-256：506904a3923bf5aac9f65c8311c512d2ba70b4c1073802b02647ce294fab433f
+- 来源要点（导航摘录，不得视为当前断言）：进入任务：IGNITION task 113，控制提交 d15ce70bef67b439ec2e99d1aeb1e792b4e6e9ef
+
+### 完整阅读
+
+[docs/publication/cases/song-huizong-taoism-1117-source.md](../docs/publication/cases/song-huizong-taoism-1117-source.md)
 
 <a id="reading-hr-d77d1e13245bc9a4"></a>
 ## 九轴状态系统

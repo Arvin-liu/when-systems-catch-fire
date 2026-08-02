@@ -15,7 +15,7 @@
 |`RESULTS/LATEST.md`|43|0|否|
 |`RESULTS/OPEN-QUESTIONS.md`|27|0|否|
 |`RESULTS/README.md`|5|0|否|
-|`RESULTS/RESEARCH-AND-ARTICLES.md`|17|0|否|
+|`RESULTS/RESEARCH-AND-ARTICLES.md`|18|0|否|
 |`SUMMARY.md`|8|0|否|
 |`docs/USAGE.md`|23|0|否|
 |`docs/VERSIONING.md`|15|0|否|
@@ -52,7 +52,11 @@
 |`docs/operations/lifecycle-readme.md`|0|0|是|
 |`docs/operations/stage-snapshot-publication.md`|21|0|否|
 |`docs/project-current-state.md`|46|0|否|
+|`docs/publication/cases/song-huizong-taoism-1117-source.md`|8|0|否|
+|`docs/publication/works/when-an-emperor-manufactures-heaven.md`|23|0|否|
+|`docs/publication/zhiyuan-writing-showcase.md`|7|0|否|
 |`llms.txt`|45|0|否|
 |`reports/foundation-architecture/101-human-readable-surfaces-self-correction-closeout.md`|11|0|否|
 |`reports/operations/102-knowledge-experience-audit.md`|3|0|否|
 |`reports/operations/lifecycle-audit-108.md`|0|0|是|
+|`reports/publication/song-huizong-taoism-point-fire-analysis.md`|33|0|否|
