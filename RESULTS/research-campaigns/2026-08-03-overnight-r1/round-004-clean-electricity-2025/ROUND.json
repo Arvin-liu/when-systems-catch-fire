@@ -1,0 +1,24 @@
+{
+  "campaign_id": "POINTFIRE-OVERNIGHT-PUBLIC-EVIDENCE-RESEARCH-CAMPAIGN-20260803-R1",
+  "round_number": 4,
+  "short_slug": "clean-electricity-2025",
+  "start_time": "2026-08-03T02:50:46+08:00",
+  "end_time": "2026-08-03T02:53:29+08:00",
+  "timezone": "Asia/Shanghai",
+  "research_baseline": "61510ed26a1285e1746777c9eacd568cb3038a50",
+  "question": "2025年低碳发电增长是否超过全球新增用电需求，并把化石发电推入绝对下降，还是只压低了煤炭和石油而天然气仍增长？",
+  "initial_claim": "清洁电力可能覆盖 2025 年全部新增用电，并推动全球电力部门化石发电小幅下降，但这不等于整个能源系统已经脱离化石燃料。",
+  "selection_score": {
+    "public_relevance": 5,
+    "evidence_availability": 5,
+    "bounded_answerability": 5,
+    "novelty_versus_previous_rounds": 5,
+    "capacity_to_revise_or_falsify_existing_assumption": 5
+  },
+  "verdict": "SUPPORTED_WITH_SCOPE",
+  "source_count": 6,
+  "source_classes": ["primary_energy_data_report", "official_energy_statistics", "independent_data_interpretation", "edited_industry_news", "edited_news_trigger"],
+  "report_sha256": "6b3c0f7d93af66712ebeea190beabcdc1045fc80e26a294bb6c20ecc0bf6bcf5",
+  "commit_sha": null,
+  "state": "COMPLETE_AWAITING_EXTERNAL_REVIEW"
+}
