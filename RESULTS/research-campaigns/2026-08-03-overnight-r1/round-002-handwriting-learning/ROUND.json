@@ -18,7 +18,7 @@
   "verdict": "CONTESTED",
   "source_count": 6,
   "source_classes": ["peer_reviewed_original_research", "journal_brief_report", "systematic_review", "peer_reviewed_meta_analysis", "peer_reviewed_direct_replication", "edited_health_news"],
-  "report_sha256": "190ab7959353edc5692691bbc144b2dbf54e19ff8c1dd7dd32106cc4b373fff8"
+  "report_sha256": "190ab7959353edc5692691bbc144b2dbf54e19ff8c1dd7dd32106cc4b373fff8",
   "commit_sha": null,
   "state": "COMPLETE_AWAITING_EXTERNAL_REVIEW"
 }
