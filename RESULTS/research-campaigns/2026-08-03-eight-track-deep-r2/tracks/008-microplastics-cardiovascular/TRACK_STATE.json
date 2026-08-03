@@ -2,7 +2,7 @@
   "track_id": "008-microplastics-cardiovascular",
   "original_round": "008",
   "research_identity": "CAUSAL_CONTAMINATION_AND_REPLICATION_AUDIT",
-  "stage": "analysis",
+  "stage": "challenge",
   "state": "IN_PROGRESS",
   "frozen_commit": "d601d9a6",
   "checkpoint_commits": ["d601d9a6", "99306233", "cc3693e0", "d78f6daf"],
@@ -35,7 +35,15 @@
     "independent_tissue_replication": "SUPPORTED_WITH_METHOD_AND_TISSUE_SCOPE",
     "independent_clinical_event_replication": "NOT_FOUND"
   },
-  "next_checkpoint": "challenge",
-  "next_action": "attack selection, sparse-event modeling, measurement validity, source dependence, causal jumps, and externalization before final rewrite",
-  "updated_at": "2026-08-03T14:02:00+08:00"
+  "challenge_outputs": ["ADVERSARIAL-REVIEW.md", "SOURCE-DEPENDENCE-REVIEW.md", "REVISION-REQUIREMENTS.md"],
+  "challenge_findings": {
+    "selection_and_attrition": "MATERIAL_UNRESOLVED_RISK",
+    "sparse_event_model_and_composite_endpoint": "NOT_REANALYZABLE_FROM_PUBLIC_DATA",
+    "measurement_contamination_and_matrix": "MATERIAL_UNRESOLVED_RISK",
+    "source_independence": "TISSUE_AND_METHOD_LAYERS_MUST_NOT_BE_COUNTED_AS_EVENT_REPLICATION",
+    "causal_externalization": "NOT_SUPPORTED"
+  },
+  "next_checkpoint": "final",
+  "next_action": "rewrite the final report so the observed association, tissue enrichment, measurement uncertainty, and causal insufficiency remain separate",
+  "updated_at": "2026-08-03T14:15:00+08:00"
 }
