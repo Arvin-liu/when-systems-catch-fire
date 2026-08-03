@@ -1,0 +1,33 @@
+{
+  "track_id": "004-clean-electricity-2025",
+  "original_round": "004",
+  "stage": "final",
+  "state": "RESEARCH_COMPLETE_AWAITING_EXTERNAL_ADJUDICATION",
+  "verdict": "SUPPORTED_WITH_SCOPE_AFTER_DEEP_REVIEW",
+  "r1_verdict": "SUPPORTED_WITH_SCOPE",
+  "r2_identity": "REPRODUCIBLE_DATA_RECONCILIATION",
+  "checkpoint_commits": ["a863584b", "f3b6a6f9", "f8549b12", "469d4879"],
+  "final_commit_record": "the ordinary commit containing this file; indexed at the next campaign checkpoint",
+  "required_hard_gate": "actual Ember data recomputation completed; IEA public chart data recomputed; source and version boundaries retained",
+  "external_adjudication_required": true,
+  "formal_main_modified": false,
+  "relay_current_modified": false,
+  "pr_or_tag_created": false,
+  "artifacts": [
+    "PREREGISTRATION.md",
+    "R1-AUDIT.md",
+    "SOURCE-PLAN.md",
+    "SOURCE-AUDIT.jsonl",
+    "EVIDENCE-NOTES.md",
+    "CLAIM-MATRIX.jsonl",
+    "ACCESS-AND-HASH-MANIFEST.json",
+    "METHOD.md",
+    "ANALYSIS.md",
+    "ADVERSARIAL-REVIEW.md",
+    "SOURCE-DEPENDENCE-REVIEW.md",
+    "REVISION-REQUIREMENTS.md",
+    "FINAL-RESEARCH-REPORT.md",
+    "LIMITATIONS-AND-OPEN-QUESTIONS.md",
+    "CHANGE-FROM-R1.md"
+  ]
+}
