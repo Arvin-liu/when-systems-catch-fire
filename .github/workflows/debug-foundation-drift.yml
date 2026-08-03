@@ -4,6 +4,9 @@ name: debug-foundation-drift
 # local environment can be aligned. To be removed once Round 0 closes.
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - qwen38max/task115-deep-research-queue-checkpoint-d-r1-20260803
 permissions:
   contents: read
 jobs:
