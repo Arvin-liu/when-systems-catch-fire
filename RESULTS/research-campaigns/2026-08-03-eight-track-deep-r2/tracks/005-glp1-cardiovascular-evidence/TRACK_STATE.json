@@ -15,8 +15,8 @@
     "weight-mediated versus independent-mechanism claim"
   ],
   "claim_ceiling": "specific semaglutide dose, trial population, cardiovascular endpoint and follow-up window; no individual medical advice",
-  "checkpoint_commits": ["16be95dd", "PENDING_EVIDENCE_COMMIT"],
+  "checkpoint_commits": ["16be95dd", "367dc0c1"],
   "next_checkpoint": "analysis",
   "next_action": "write the bounded clinical analysis, distinguish crude in-trial ARR/NNT from time-to-event estimates, and freeze the externalization and mechanism ceilings",
-  "updated_at": "2026-08-03T11:33:01+08:00"
+  "updated_at": "2026-08-03T11:40:56+08:00"
 }
