@@ -5,7 +5,7 @@
   "stage": "final",
   "state": "RESEARCH_COMPLETE_AWAITING_EXTERNAL_ADJUDICATION",
   "frozen_commit": "a358cac1",
-  "checkpoint_commits": ["a358cac1", "f98f7d76", "31e15507", "096a96b3"],
+  "checkpoint_commits": ["a358cac1", "f98f7d76", "31e15507", "096a96b3", "3600efa0"],
   "r1_verdict": "SUPPORTED_WITH_SCOPE",
   "required_layers": [
     "at least two jurisdictions with official fire numerators and official vehicle-stock denominators",
