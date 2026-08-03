@@ -2,7 +2,7 @@
   "track_id": "005-glp1-cardiovascular-evidence",
   "original_round": "005",
   "research_identity": "HIGH_STAKES_CLINICAL_EVIDENCE_REVIEW",
-  "stage": "analysis",
+  "stage": "challenge",
   "state": "IN_PROGRESS",
   "frozen_commit": "16be95dd",
   "required_layers": [
@@ -15,8 +15,18 @@
     "weight-mediated versus independent-mechanism claim"
   ],
   "claim_ceiling": "specific semaglutide dose, trial population, cardiovascular endpoint and follow-up window; no individual medical advice",
-  "checkpoint_commits": ["16be95dd", "367dc0c1", "3b838cac"],
-  "next_checkpoint": "challenge",
-  "next_action": "perform adversarial review of ITT versus adherence, composite-endpoint hierarchy, safety and externalization, appendix access, and same-cohort source dependence",
+  "checkpoint_commits": ["16be95dd", "367dc0c1", "3b838cac", "PENDING_CHALLENGE_COMMIT"],
+  "challenge_outputs": ["CHALLENGE-RESULTS.md", "SOURCE-DEPENDENCE-REVIEW.md"],
+  "challenge_findings": {
+    "select_primary_composite": "NOT_OVERTURNED_BUT_COMPONENTS_NOT_UNIFORMLY_CONFIRMED",
+    "crude_nnt": "RETAINED_ONLY_AS_EXPLICIT_IN_TRIAL_APPROXIMATION",
+    "itt_and_discontinuation": "SUPPORTED_AS_TREATMENT_STRATEGY_NOT_PER_PROTOCOL_EFFICACY",
+    "primary_prevention_or_bmi_below_27": "INSUFFICIENT_EVIDENCE_OR_NOT_SUPPORTED",
+    "class_effect_and_mechanism": "NOT_SUPPORTED_OR_CONTESTED",
+    "source_independence": "CORE_TRIAL_WITH_REGULATORY_HTA_REVIEW_NOT_INDEPENDENT_REPLICATION",
+    "appendix_access": "VERIFIABLE_HTTP_403_LIMITATION"
+  },
+  "next_checkpoint": "final",
+  "next_action": "rewrite the final bounded report from the challenge findings and preserve every externalization and source-dependence ceiling",
   "updated_at": "2026-08-03T11:50:12+08:00"
 }
