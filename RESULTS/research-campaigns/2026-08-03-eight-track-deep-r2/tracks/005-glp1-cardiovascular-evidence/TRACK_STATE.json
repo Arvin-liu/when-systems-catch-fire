@@ -15,7 +15,7 @@
     "weight-mediated versus independent-mechanism claim"
   ],
   "claim_ceiling": "specific semaglutide dose, trial population, cardiovascular endpoint and follow-up window; no individual medical advice",
-  "checkpoint_commits": ["16be95dd", "367dc0c1", "3b838cac", "PENDING_CHALLENGE_COMMIT"],
+  "checkpoint_commits": ["16be95dd", "367dc0c1", "3b838cac", "088391e7"],
   "challenge_outputs": ["CHALLENGE-RESULTS.md", "SOURCE-DEPENDENCE-REVIEW.md"],
   "challenge_findings": {
     "select_primary_composite": "NOT_OVERTURNED_BUT_COMPONENTS_NOT_UNIFORMLY_CONFIRMED",
@@ -28,5 +28,5 @@
   },
   "next_checkpoint": "final",
   "next_action": "rewrite the final bounded report from the challenge findings and preserve every externalization and source-dependence ceiling",
-  "updated_at": "2026-08-03T11:50:12+08:00"
+  "updated_at": "2026-08-03T12:06:20+08:00"
 }
