@@ -1,0 +1,20 @@
+{
+  "_template_note": "Mirror of the dispatch spec produced by tools/research_os/executor_contract.build_dispatch_spec(action). The OS sends this to an executor (Codex, WorkBuddy, another agent or a script). The executor fills the RETURN contract (research-os/executor-return/0.1) — it must NOT edit this spec, raise any claim ceiling, assert a positive finding, or mark the episode complete. Replace <...> placeholders.",
+  "action_type": "<one of 24 action codes in data/research-os/action-vocabulary.json>",
+  "bounded_objective": "<description from the action vocabulary>",
+  "required_inputs": {
+    "episode_id": "<episode-id>",
+    "strategy_pack": "<pack-code>",
+    "question_version": "<question-version>"
+  },
+  "expected_output_schema": "research-os/executor-return/0.1",
+  "success_failure_evidence": "executor must return explicit success/failure with exact source identities and calculation results; absence of evidence is failure.",
+  "prohibited_claims": [
+    "executor must not raise any claim ceiling",
+    "executor must not assert a positive finding",
+    "executor must not mark the episode complete"
+  ],
+  "budget": {},
+  "stop_condition": "return when the bounded objective is met or a budget/blocker is reached; never self-approve.",
+  "dispatched_by": "<actor>"
+}

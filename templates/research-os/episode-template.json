@@ -1,0 +1,34 @@
+{
+  "_template_note": "Human-readable reference skeleton for a Research OS episode. The kernel (tools/research_os/kernel.new_episode) builds this structure programmatically; copy and edit this file only when you need to author or inspect an episode by hand. Field semantics mirror data/research-os/episode-states.json and the obligation graph. Replace every <...> placeholder; do not keep _template_note in a real episode.",
+  "episode_id": "<unique-episode-id>",
+  "question_version": "<question-or-freeze-version>",
+  "research_type": "<free-text research type>",
+  "strategy_pack": "<one of the 8 pack codes in data/research-os/strategy-packs/>",
+  "state": "INTAKE",
+  "state_lineage": [],
+  "candidate_claims": [
+    {
+      "claim_id": "<claim-id>",
+      "text": "<candidate claim text>",
+      "claim_ceiling": "<SPECULATIVE|TENTATIVE|QUALIFIED|BOUNDED_STRONG|NOT_ASSERTED>",
+      "source_layer": null
+    }
+  ],
+  "evidence_obligations": [
+    {
+      "obligation_id": "<obl-id>",
+      "claim_id": "<claim-id>",
+      "class": "<one of 12 obligation classes in data/research-os/obligation-classes.json>",
+      "status": "OPEN",
+      "evidence_refs": []
+    }
+  ],
+  "calculations_required": ["<RECOMPUTE_RESULT|REPRODUCE_ANALYSIS|LOCATE_RAW_DATA|LOCATE_ANALYSIS_CODE>"],
+  "calculations_completed": [],
+  "negative_evidence_search_state": {"searched": false, "results": []},
+  "budgets": {},
+  "escalation_conditions": {},
+  "event_log": [],
+  "created_at": "<iso-utc>",
+  "updated_at": "<iso-utc>"
+}

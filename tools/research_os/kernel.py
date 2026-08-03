@@ -35,6 +35,7 @@ def new_episode(
     budgets: dict[str, Any] | None = None,
 ) -> dict:
     """Create a fresh episode in INTAKE state with an empty append-only log."""
+    R.assert_strategy_pack(strategy_pack)
     now = _now()
     ep: dict[str, Any] = {
         "episode_id": episode_id,

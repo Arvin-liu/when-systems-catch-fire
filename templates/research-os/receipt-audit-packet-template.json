@@ -1,0 +1,34 @@
+{
+  "_template_note": "Audit packet emitted by the Research OS review (tools/research_os/cli.py review) at a checkpoint or terminal state. Snapshots the seven gates, obligation tally and diagnosis summary for independent audit. Mirrors the 1111 read-only + receipt discipline: this packet is a receipt, not an authorization. Replace <...> placeholders.",
+  "packet_id": "<unique-packet-id>",
+  "episode_id": "<episode-id>",
+  "strategy_pack": "<pack-code>",
+  "episode_state": "<state>",
+  "generated_at": "<iso-utc>",
+  "gates_result": {
+    "all_gates_pass": false,
+    "gates": {
+      "source_provenance": {"passed": false, "detail": "<...>"},
+      "method_calculation": {"passed": false, "detail": "<...>"},
+      "source_dependence": {"passed": false, "detail": "<...>"},
+      "adversarial_claim": {"passed": false, "detail": "<...>"},
+      "claim_ceiling": {"passed": false, "detail": "<...>"},
+      "high_stakes_escalation": {"passed": false, "detail": "<...>"},
+      "owner_gpt_acceptance": {"passed": false, "detail": "<...>"}
+    }
+  },
+  "recommendation": {"action": "<ESCALATE|PAUSE_CHECKPOINT|STOP_INSUFFICIENT|READY_FOR_ACCEPTANCE|DONE_INSUFFICIENT|CONTINUE>", "reasons": ["<...>"]},
+  "obligation_summary": {
+    "total": 0,
+    "satisfied": 0,
+    "open": 0,
+    "waived": 0
+  },
+  "diagnosis_summary": {
+    "finding_count": 0,
+    "highest_severity": "NONE"
+  },
+  "information_delta_ref": "<Q13 IterationDelta status or file ref>",
+  "event_log_sha256_head": "<sha256 of last event for tamper evidence>",
+  "notes": "<free text>"
+}

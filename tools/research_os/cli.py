@@ -18,6 +18,7 @@ from pathlib import Path
 
 from . import diagnosis as dx
 from . import executor_contract as ec
+from . import gates
 from . import kernel
 from . import obligation_graph as og
 from . import scheduler
@@ -105,18 +106,9 @@ def cmd_record_result(args) -> int:
 def cmd_review(args) -> int:
     ep = _load_ep(args.episode)
     diag = dx.diagnose(ep)
-    gates = {
-        "source_provenance": all(o["status"] in ("SATISFIED", "NOT_APPLICABLE") for o in ep.get("evidence_obligations", [])),
-        "method_calculation": not any(f["gap_code"] == "NUMERIC_CLAIM_NOT_RECOMPUTED" for f in diag["findings"]),
-        "source_dependence": not any(f["gap_code"] == "SOURCE_DEPENDENCE_HIGH" for f in diag["findings"]),
-        "adversarial_claim": not any(f["gap_code"] == "ADVERSARIAL_REVIEW_MISSING" for f in diag["findings"]),
-        "claim_ceiling": not any(f["gap_code"] == "CLAIM_EXCEEDS_EVIDENCE" for f in diag["findings"]),
-        "high_stakes_escalation": (not ep.get("high_stakes")) or ep.get("state") == "ESCALATED_TO_GPT_OWNER",
-        "owner_gpt_acceptance": ep.get("state") in ("CANDIDATE_COMPLETE", "ESCALATED_TO_GPT_OWNER"),
-    }
-    all_pass = all(gates.values())
-    _emit({"episode_id": ep.get("episode_id"), "gates": gates, "all_gates_pass": all_pass,
-           "note": "passing gates is necessary but not sufficient; owner/GPT acceptance remains required"})
+    result = gates.evaluate_gates(ep, diag)
+    result["recommendation"] = gates.recommend(ep, diag, result)
+    _emit(result)
     return 0
 
 
