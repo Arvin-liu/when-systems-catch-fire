@@ -2,8 +2,8 @@
   "track_id": "008-microplastics-cardiovascular",
   "original_round": "008",
   "research_identity": "CAUSAL_CONTAMINATION_AND_REPLICATION_AUDIT",
-  "stage": "challenge",
-  "state": "IN_PROGRESS",
+  "stage": "final",
+  "state": "BOUNDED_NULL_OR_INSUFFICIENT_RESULT_COMPLETE",
   "frozen_commit": "d601d9a6",
   "checkpoint_commits": ["d601d9a6", "99306233", "cc3693e0", "d78f6daf", "5522c8c6"],
   "r1_verdict": "INSUFFICIENT_EVIDENCE",
@@ -43,7 +43,17 @@
     "source_independence": "TISSUE_AND_METHOD_LAYERS_MUST_NOT_BE_COUNTED_AS_EVENT_REPLICATION",
     "causal_externalization": "NOT_SUPPORTED"
   },
-  "next_checkpoint": "final",
-  "next_action": "rewrite the final report so the observed association, tissue enrichment, measurement uncertainty, and causal insufficiency remain separate",
-  "updated_at": "2026-08-03T14:22:00+08:00"
+  "final_outputs": ["FINAL-RESEARCH-REPORT.md", "LIMITATIONS-AND-OPEN-QUESTIONS.md", "CHANGE-FROM-R1.md"],
+  "final_verdict": "INSUFFICIENT_EVIDENCE_FOR_CAUSAL_CLAIM",
+  "observational_association_verdict": "SUPPORTED_WITHIN_OBSERVATIONAL_COHORT",
+  "tissue_replication_verdict": "SUPPORTED_WITH_METHOD_AND_TISSUE_SCOPE",
+  "clinical_event_replication_verdict": "NOT_FOUND",
+  "cross_evidence_verdict": "TISSUE_ENRICHMENT_REPLICATED_BUT_CAUSAL_EVENT_CHAIN_NOT_REPLICATED",
+  "external_adjudication_required": true,
+  "formal_main_modified": false,
+  "relay_current_modified": false,
+  "pr_or_tag_created": false,
+  "next_checkpoint": "complete",
+  "next_action": "after this final checkpoint is pushed, complete campaign-level verdict matrix, source-dependence report, lessons, and final campaign report",
+  "updated_at": "2026-08-03T14:35:00+08:00"
 }
