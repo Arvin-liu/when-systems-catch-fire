@@ -1,0 +1,24 @@
+{
+  "track_id": "007-ev-fire-risk",
+  "original_round": "007",
+  "research_identity": "DENOMINATOR_DEFINITION_AND_AGE_AUDIT",
+  "stage": "freeze",
+  "state": "IN_PROGRESS",
+  "frozen_commit": "PENDING_FREEZE_COMMIT",
+  "checkpoint_commits": ["PENDING_FREEZE_COMMIT"],
+  "r1_verdict": "SUPPORTED_WITH_SCOPE",
+  "required_layers": [
+    "at least two jurisdictions with official fire numerators and official vehicle-stock denominators",
+    "independent recomputation of fires per 10,000 vehicles with denominator timing recorded",
+    "BEV, PHEV, hybrid, ICE and other-vehicle category crosswalk",
+    "fire definition, emergency-call/incident/reporting boundary and cross-border comparability",
+    "vehicle age, mileage, fleet composition and collision/charging exposure audit",
+    "distinction between fire probability and post-fire toxic/thermal/suppression consequences",
+    "source-dependence review and challenge to the R1 candidate statement"
+  ],
+  "claim_ceiling": "jurisdiction-limited observed fire frequency under named official definitions; no global or full-life risk claim and no inference about severity from frequency",
+  "precommitted_downgrade": "until numerator, denominator, vehicle age and definition are reconciled, retain only: some Nordic official statistics show lower per-vehicle frequency in the observed jurisdiction",
+  "next_checkpoint": "evidence",
+  "next_action": "read the Danish official report/fact sheet, Swedish official incident summary and stock source, at least one independent technical/data-quality source, then recompute the rates",
+  "updated_at": "2026-08-03T13:18:32+08:00"
+}
