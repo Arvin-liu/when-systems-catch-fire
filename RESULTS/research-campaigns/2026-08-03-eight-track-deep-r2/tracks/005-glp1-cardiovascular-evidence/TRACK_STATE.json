@@ -15,8 +15,8 @@
     "weight-mediated versus independent-mechanism claim"
   ],
   "claim_ceiling": "specific semaglutide dose, trial population, cardiovascular endpoint and follow-up window; no individual medical advice",
-  "checkpoint_commits": ["16be95dd", "367dc0c1", "PENDING_ANALYSIS_COMMIT"],
+  "checkpoint_commits": ["16be95dd", "367dc0c1", "3b838cac"],
   "next_checkpoint": "challenge",
   "next_action": "perform adversarial review of ITT versus adherence, composite-endpoint hierarchy, safety and externalization, appendix access, and same-cohort source dependence",
-  "updated_at": "2026-08-03T11:47:00+08:00"
+  "updated_at": "2026-08-03T11:50:12+08:00"
 }
