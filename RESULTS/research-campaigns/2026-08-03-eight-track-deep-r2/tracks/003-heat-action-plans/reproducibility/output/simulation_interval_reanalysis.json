@@ -1,0 +1,34 @@
+{
+  "comparison": "ansimlist_1_hws1 minus ansimlist_1_hws0 and afsimlist_1_hws1 minus afsimlist_1_hws0",
+  "interpretation": {
+    "interval_change": "all-1000 intervals are modestly wider than the first-100 intervals for these output-level contrasts",
+    "not_claimed": [
+      "full rerun of stage 1 mortality-temperature models",
+      "population-weighted EU total",
+      "proof that the Urban headline 25.2% CI changes by the same amount"
+    ],
+    "point_estimate_change": "none from changing quantile slice; point means use the same provided output"
+  },
+  "metrics": {
+    "AF_difference_percentage_points": {
+      "ci_all_1_to_1000": [-0.6287739388115289, -0.35395514035407416],
+      "ci_reported_1_to_100": [-0.6208046210022024, -0.3681164933573648],
+      "mean_all_1000": -0.4854070017629564
+    },
+    "AF_ratio_percent": {
+      "ci_all_1_to_1000": [-35.60086233670062, -20.853455494593472],
+      "ci_reported_1_to_100": [-35.512916211698354, -20.45044323862381],
+      "mean_all_1000": -27.862151160181465
+    },
+    "AN_difference": {
+      "ci_all_1_to_1000": [-2.622939002865521, -1.4807298740693255],
+      "ci_reported_1_to_100": [-2.59672887203645, -1.533362723874771],
+      "mean_all_1000": -2.025705118321069
+    }
+  },
+  "package_sha256": "19a0aaa27419b9bc14e30498f37538add761f3ae7494e379d00e297a78b04193",
+  "reported_simulation_slice": "1:100",
+  "rows_in_public_output_mean": 14,
+  "simulations_available": 1000,
+  "stage4_locator": "04.stage4_final_analysis_and_reporting.R:355-371"
+}
