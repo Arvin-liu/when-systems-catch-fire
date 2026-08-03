@@ -5,7 +5,7 @@
   "stage": "challenge",
   "state": "IN_PROGRESS",
   "frozen_commit": "d601d9a6",
-  "checkpoint_commits": ["d601d9a6", "99306233", "cc3693e0", "d78f6daf"],
+  "checkpoint_commits": ["d601d9a6", "99306233", "cc3693e0", "d78f6daf", "5522c8c6"],
   "r1_verdict": "INSUFFICIENT_EVIDENCE",
   "claim_ceiling": "MNP detection and clinical association within explicitly bounded human samples; no general-population causal claim",
   "required_layers": [
@@ -45,5 +45,5 @@
   },
   "next_checkpoint": "final",
   "next_action": "rewrite the final report so the observed association, tissue enrichment, measurement uncertainty, and causal insufficiency remain separate",
-  "updated_at": "2026-08-03T14:15:00+08:00"
+  "updated_at": "2026-08-03T14:22:00+08:00"
 }
