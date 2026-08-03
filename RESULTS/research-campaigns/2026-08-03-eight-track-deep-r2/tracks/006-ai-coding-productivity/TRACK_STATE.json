@@ -5,7 +5,12 @@
   "stage": "final",
   "state": "RESEARCH_COMPLETE_AWAITING_EXTERNAL_ADJUDICATION",
   "frozen_commit": "e68720ee",
-  "checkpoint_commits": ["e68720ee", "2d4eaa03", "90d325aa", "5d073d52"],
+  "checkpoint_commits": [
+    "e68720ee",
+    "2d4eaa03",
+    "90d325aa",
+    "5d073d52"
+  ],
   "evidence_scope": {
     "full_text_sources_read": 3,
     "method_and_data_pages_read": 5,
@@ -49,5 +54,13 @@
   "final_commit_record": "The ordinary commit containing this final state is indexed at the next campaign checkpoint; no amend or force push is permitted.",
   "next_checkpoint": "005 freeze",
   "next_action": "begin the next ordered track only after this final commit is pushed",
-  "updated_at": "2026-08-03T11:19:33+08:00"
+  "updated_at": "2026-08-03T11:19:33+08:00",
+  "claim_ceiling": "METR 窄主张 SUPPORTED_WITH_SCOPE_AFTER_DEEP_REVIEW；跨研究为 CONTEXT_DEPENDENT_COMPETING_ESTIMANDS，不外推为普遍生产率结论 (derived from R1-TO-R2-VERDICT-MATRIX.md row 006)",
+  "metadata_repair": {
+    "repaired_at_campaign": "qwen38max/eight-track-r2-auditability-repair-r1-20260803",
+    "fields": {
+      "claim_ceiling": "derived verbatim from R1-TO-R2-VERDICT-MATRIX.md row 006; no new claim introduced"
+    },
+    "repair_class": "MISSING_METADATA_RESTORATION"
+  }
 }

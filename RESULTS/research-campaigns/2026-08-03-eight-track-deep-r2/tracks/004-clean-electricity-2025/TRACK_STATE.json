@@ -6,7 +6,12 @@
   "verdict": "SUPPORTED_WITH_SCOPE_AFTER_DEEP_REVIEW",
   "r1_verdict": "SUPPORTED_WITH_SCOPE",
   "r2_identity": "REPRODUCIBLE_DATA_RECONCILIATION",
-  "checkpoint_commits": ["a863584b", "f3b6a6f9", "f8549b12", "469d4879"],
+  "checkpoint_commits": [
+    "a863584b",
+    "f3b6a6f9",
+    "f8549b12",
+    "469d4879"
+  ],
   "final_commit_record": "the ordinary commit containing this file; indexed at the next campaign checkpoint",
   "required_hard_gate": "actual Ember data recomputation completed; IEA public chart data recomputed; source and version boundaries retained",
   "external_adjudication_required": true,
@@ -29,5 +34,15 @@
     "FINAL-RESEARCH-REPORT.md",
     "LIMITATIONS-AND-OPEN-QUESTIONS.md",
     "CHANGE-FROM-R1.md"
-  ]
+  ],
+  "frozen_commit": "a863584b",
+  "claim_ceiling": "仅限指定版本的全球年度电力口径：Ember 当前公开 CSV 与 IEA 公开图表重算；不外推小时匹配、区域可靠性或全能源因果 (derived from R1-TO-R2-VERDICT-MATRIX.md row 004)",
+  "metadata_repair": {
+    "repaired_at_campaign": "qwen38max/eight-track-r2-auditability-repair-r1-20260803",
+    "fields": {
+      "frozen_commit": "restored from git history: a863584b = 'r2 004 freeze' = checkpoint_commits[0]",
+      "claim_ceiling": "derived verbatim from R1-TO-R2-VERDICT-MATRIX.md row 004; no new claim introduced"
+    },
+    "repair_class": "MISSING_METADATA_RESTORATION"
+  }
 }

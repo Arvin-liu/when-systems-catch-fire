@@ -1,0 +1,86 @@
+{
+  "track": "004-clean-electricity-2025",
+  "replay_class": "INDEPENDENT_OFFLINE_RECOMPUTATION",
+  "environment": "clean clone, python3 stdlib only, no network",
+  "input_sha256": {
+    "ember_world_2024_2025.csv": "7c0b854967129bdca6e29e7eba7e5283fd2a8fbfc26a5c3f0a309b00a96b6519",
+    "iea_generation_by_source_2015_2025.csv": "ba0ce766b4f44a04468a92d79055dd71d8b1ca2ffc497586079f990561ab74fc",
+    "iea_annual_change_2024_2025.csv": "e17f6bcdf240741acf5652f6cb24f4af26a2252250f0e9f7035c2de4a21b1f54"
+  },
+  "committed_output_sha256": "e4bbda62ca41f4181fe1f7ba34319b5c1e25d3e3c4510f8e87dbc4e82cd5c1e4",
+  "comparisons": [
+    {
+      "metric": "ember.2024_total_generation_twh",
+      "independent": 30906.114,
+      "committed": 30906.114,
+      "match": true
+    },
+    {
+      "metric": "ember.2025_total_generation_twh",
+      "independent": 31739.347,
+      "committed": 31739.347,
+      "match": true
+    },
+    {
+      "metric": "ember.clean_increment_twh",
+      "independent": 878.491,
+      "committed": 878.491,
+      "match": true
+    },
+    {
+      "metric": "ember.renewables_increment_twh",
+      "independent": 845.09,
+      "committed": 845.09,
+      "match": true
+    },
+    {
+      "metric": "ember.nuclear_increment_twh",
+      "independent": 33.402,
+      "committed": 33.402,
+      "match": true
+    },
+    {
+      "metric": "ember.coal_increment_twh",
+      "independent": -42.208,
+      "committed": -42.208,
+      "match": true
+    },
+    {
+      "metric": "ember.gas_increment_twh",
+      "independent": 28.461,
+      "committed": 28.461,
+      "match": true
+    },
+    {
+      "metric": "ember.other_fossil_increment_twh",
+      "independent": -31.512,
+      "committed": -31.512,
+      "match": true
+    },
+    {
+      "metric": "ember.fossil_increment_twh",
+      "independent": -45.258,
+      "committed": -45.258,
+      "match": true
+    },
+    {
+      "metric": "ember.fossil_equals_coal+gas+other_fossil",
+      "independent": -45.259,
+      "committed": -45.258,
+      "match": true
+    },
+    {
+      "metric": "iea.generation_2024_twh",
+      "independent": 31216.2,
+      "committed": 31216.2,
+      "match": true
+    },
+    {
+      "metric": "iea.generation_2025_twh",
+      "independent": 32088.4,
+      "committed": 32088.399999999998,
+      "match": true
+    }
+  ],
+  "verdict": "MATCH"
+}

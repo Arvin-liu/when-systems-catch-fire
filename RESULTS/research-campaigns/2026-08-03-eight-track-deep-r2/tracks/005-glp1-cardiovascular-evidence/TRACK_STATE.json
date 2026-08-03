@@ -4,7 +4,7 @@
   "research_identity": "HIGH_STAKES_CLINICAL_EVIDENCE_REVIEW",
   "stage": "final",
   "state": "RESEARCH_COMPLETE_AWAITING_EXTERNAL_ADJUDICATION",
-  "frozen_commit": "16be95dd",
+  "frozen_commit": "4ee1ef05",
   "required_layers": [
     "SELECT primary randomized trial and supplement",
     "FDA label and regulatory clinical review",
@@ -15,8 +15,17 @@
     "weight-mediated versus independent-mechanism claim"
   ],
   "claim_ceiling": "specific semaglutide dose, trial population, cardiovascular endpoint and follow-up window; no individual medical advice",
-  "checkpoint_commits": ["16be95dd", "367dc0c1", "3b838cac", "088391e7", "fb76381d"],
-  "challenge_outputs": ["CHALLENGE-RESULTS.md", "SOURCE-DEPENDENCE-REVIEW.md"],
+  "checkpoint_commits": [
+    "4ee1ef05",
+    "367dc0c1",
+    "3b838cac",
+    "088391e7",
+    "fb76381d"
+  ],
+  "challenge_outputs": [
+    "CHALLENGE-RESULTS.md",
+    "SOURCE-DEPENDENCE-REVIEW.md"
+  ],
   "challenge_findings": {
     "select_primary_composite": "NOT_OVERTURNED_BUT_COMPONENTS_NOT_UNIFORMLY_CONFIRMED",
     "crude_nnt": "RETAINED_ONLY_AS_EXPLICIT_IN_TRIAL_APPROXIMATION",
@@ -26,10 +35,22 @@
     "source_independence": "CORE_TRIAL_WITH_REGULATORY_HTA_REVIEW_NOT_INDEPENDENT_REPLICATION",
     "appendix_access": "VERIFIABLE_HTTP_403_LIMITATION"
   },
-  "final_outputs": ["FINAL-RESEARCH-REPORT.md", "CHANGE-FROM-R1.md", "LIMITATIONS-AND-OPEN-QUESTIONS.md"],
+  "final_outputs": [
+    "FINAL-RESEARCH-REPORT.md",
+    "CHANGE-FROM-R1.md",
+    "LIMITATIONS-AND-OPEN-QUESTIONS.md"
+  ],
   "final_verdict": "SUPPORTED_WITH_SCOPE_AFTER_DEEP_REVIEW",
   "final_commit_record": "Final ordinary commit fb76381d was pushed; no amend or force push was used.",
   "next_checkpoint": "003 freeze",
   "next_action": "after this final checkpoint is pushed, read Beijing time and begin the next ordered track 003",
-  "updated_at": "2026-08-03T11:50:23+08:00"
+  "updated_at": "2026-08-03T11:50:23+08:00",
+  "metadata_repair": {
+    "repaired_at_campaign": "qwen38max/eight-track-r2-auditability-repair-r1-20260803",
+    "field": "frozen_commit / checkpoint_commits[0]",
+    "old_value": "16be95dd",
+    "new_value": "4ee1ef05",
+    "evidence": "git log of tracks/005-* shows freeze commit 4ee1ef05 ('r2 005 freeze'); 16be95dd is Track 006 final ('r2 006 final'); R1-TO-R2-VERDICT-MATRIX.md row 005 already records 4ee1ef05",
+    "repair_class": "IDENTITY_MISBINDING_CORRECTION"
+  }
 }

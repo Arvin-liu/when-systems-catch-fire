@@ -1,0 +1,106 @@
+{
+  "pre_treatment_fields": [
+    {
+      "field": "predicted_time_no_ai",
+      "control_mean": 106.181818,
+      "ai_allowed_mean": 116.058824,
+      "mean_difference_ai_minus_control": 9.877005,
+      "p_value_equal_variance_t_test": 0.293656
+    },
+    {
+      "field": "predicted_time_ai_allowed",
+      "control_mean": 82.781818,
+      "ai_allowed_mean": 87.132353,
+      "mean_difference_ai_minus_control": 4.350535,
+      "p_value_equal_variance_t_test": 0.562479
+    }
+  ],
+  "developer_assignment": {
+    "developers": 16,
+    "mean_ai_allowed_share": 0.555814,
+    "min_ai_allowed_share": 0.363636,
+    "max_ai_allowed_share": 0.818182,
+    "developer_rows": [
+      {
+        "dev_id": 26,
+        "tasks": 17,
+        "ai_allowed_share": 0.705882
+      },
+      {
+        "dev_id": 90,
+        "tasks": 11,
+        "ai_allowed_share": 0.818182
+      },
+      {
+        "dev_id": 105,
+        "tasks": 19,
+        "ai_allowed_share": 0.578947
+      },
+      {
+        "dev_id": 115,
+        "tasks": 8,
+        "ai_allowed_share": 0.5
+      },
+      {
+        "dev_id": 143,
+        "tasks": 17,
+        "ai_allowed_share": 0.647059
+      },
+      {
+        "dev_id": 229,
+        "tasks": 2,
+        "ai_allowed_share": 0.5
+      },
+      {
+        "dev_id": 251,
+        "tasks": 8,
+        "ai_allowed_share": 0.625
+      },
+      {
+        "dev_id": 282,
+        "tasks": 17,
+        "ai_allowed_share": 0.470588
+      },
+      {
+        "dev_id": 559,
+        "tasks": 10,
+        "ai_allowed_share": 0.5
+      },
+      {
+        "dev_id": 605,
+        "tasks": 20,
+        "ai_allowed_share": 0.4
+      },
+      {
+        "dev_id": 655,
+        "tasks": 24,
+        "ai_allowed_share": 0.541667
+      },
+      {
+        "dev_id": 693,
+        "tasks": 28,
+        "ai_allowed_share": 0.535714
+      },
+      {
+        "dev_id": 755,
+        "tasks": 11,
+        "ai_allowed_share": 0.363636
+      },
+      {
+        "dev_id": 759,
+        "tasks": 18,
+        "ai_allowed_share": 0.611111
+      },
+      {
+        "dev_id": 760,
+        "tasks": 15,
+        "ai_allowed_share": 0.666667
+      },
+      {
+        "dev_id": 914,
+        "tasks": 21,
+        "ai_allowed_share": 0.428571
+      }
+    ]
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "track": "007-ev-fire-risk",
+  "replay_class": "INDEPENDENT_DENOMINATOR_ARITHMETIC_RECHECK",
+  "environment": "offline clean clone, stdlib only",
+  "rows": [
+    {
+      "jurisdiction": "Denmark",
+      "year": 2023,
+      "independent_rate_per_10000": 1.385171,
+      "committed_rate": 1.3851708427560083,
+      "arithmetic_consistent": true,
+      "recomputed_agrees_with_published_within_5pct": false
+    },
+    {
+      "jurisdiction": "Denmark",
+      "year": 2024,
+      "independent_rate_per_10000": 1.030928,
+      "committed_rate": 1.0309278350515463,
+      "arithmetic_consistent": true,
+      "recomputed_agrees_with_published_within_5pct": false
+    },
+    {
+      "jurisdiction": "Denmark",
+      "year": 2025,
+      "independent_rate_per_10000": 0.894661,
+      "committed_rate": 0.8946608946608947,
+      "arithmetic_consistent": true,
+      "recomputed_agrees_with_published_within_5pct": false
+    },
+    {
+      "jurisdiction": "Sweden",
+      "year": 2024,
+      "independent_rate_per_10000": 0.454051,
+      "committed_rate": 0.45405115794396556,
+      "arithmetic_consistent": true,
+      "recomputed_agrees_with_published_within_5pct": true
+    }
+  ],
+  "official_source_identity_verified_offline": false,
+  "verdict": "ARITHMETIC_CONSISTENT"
+}
