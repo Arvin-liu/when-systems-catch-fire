@@ -1,0 +1,43 @@
+name: debug-foundation-drift
+# TEMPORARY Round 0 debug aid (campaign POINTFIRE-DEEP-RESEARCH-CAPABILITY-SERIAL-QUEUE-STOPPING-EVALUATION-R1-20260803).
+# Regenerates Foundation outputs inside CI and uploads the exact diff so the
+# local environment can be aligned. To be removed once Round 0 closes.
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  drift:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python3 -m pip install -r requirements-foundation.txt
+      - name: Environment facts
+        run: |
+          python3 --version
+          python3 -c "import sys, locale, json; print(json.dumps({'platform': sys.platform, 'version': sys.version, 'fsencoding': sys.getfilesystemencoding(), 'preferred': locale.getpreferredencoding(), 'hashseed_note': 'randomized'}))"
+          git status --short | head -5
+      - name: Regenerate census + nonfunction and capture diff
+        run: |
+          python3 tools/foundation/build_function_asset_census.py || true
+          python3 tools/foundation/adjudicate_function_assets.py || true
+          python3 tools/foundation/adjudicate_nonfunction_claims.py || true
+          git diff --stat > drift-stat.txt
+          git diff -- data/foundation/function-assets/closure-summary.json | head -100 > drift-closure.txt
+          git diff -- data/foundation/nonfunction-claims/closure-summary.json data/foundation/nonfunction-claims/discovery-coverage.json | head -200 > drift-nonfunction-summary.txt
+          git diff -- data/foundation/nonfunction-claims/source-discovery.jsonl | head -60 > drift-source-discovery.txt
+          git diff -- data/foundation/function-assets/discovery.jsonl data/foundation/function-assets/census.jsonl | head -60 > drift-census.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: foundation-drift-diff
+          path: |
+            drift-stat.txt
+            drift-closure.txt
+            drift-nonfunction-summary.txt
+            drift-source-discovery.txt
+            drift-census.txt
