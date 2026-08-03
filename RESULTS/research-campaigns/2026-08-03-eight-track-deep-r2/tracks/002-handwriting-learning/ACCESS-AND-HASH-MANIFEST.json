@@ -1,0 +1,23 @@
+{
+  "track": "002-handwriting-learning",
+  "created_at_beijing": "2026-08-03T12:23:00+08:00",
+  "r1_report": {
+    "path": "RESULTS/research-campaigns/2026-08-03-overnight-r1/round-002-handwriting-learning/REPORT.md",
+    "sha256": "190ab7959353edc5692691bbc144b2dbf54e19ff8c1dd7dd32106cc4b373fff8"
+  },
+  "sources": [
+    {"id":"S1","artifact":"frontiers.pdf","sha256":"47d87fba625a6b37a5bf725f77e35f5e2fa47d189d09880a71d139c6c2cd98f","accessed":"2026-08-03","coverage":"full PDF, 14 pages"},
+    {"id":"S2","artifact":"mueller.pdf","sha256":"3f09c120037e305846ae496df226934a5bd0b8524f6b3068e86fcf76cc4a2125","accessed":"2026-08-03","coverage":"full PDF, 11 pages"},
+    {"id":"S3","artifact":"urry.pdf","sha256":"c45d528fcd73613497c897dad0b80c6468dbb85c60cdfa917c1bd6563dce1e70","accessed":"2026-08-03","coverage":"full PDF, 14 pages"},
+    {"id":"S4","artifact":"meta.pdf","sha256":"2e640b43f89fd63dc46e628c1df15037ae78fc4f97804d786444dc36f4dbd9b","accessed":"2026-08-03","coverage":"full PDF, 25 pages"},
+    {"id":"S5","artifact":"jstage.pdf","sha256":"b9c1dc2bed763ff7b80de5a3dac755921b87accaf0a178f0505b0f68a3c7c42d","accessed":"2026-08-03","coverage":"full public report, 2 pages; abstract-level details"},
+    {"id":"S6","artifact":"lau.pdf","sha256":"45936a2b81bdddcc0b2aeb9fbf53c5633fbf45e6964f7abe6f6e9bc7abeeec25","accessed":"2026-08-03","coverage":"full dissertation PDF, 123 pages"}
+  ],
+  "reproducibility": {
+    "source_files_are_not_treated_as_repository_artifacts": true,
+    "locators_and_hashes_are_recorded_in_evidence_notes_and_source_audit": true,
+    "search_snippets_used_as_evidence": false,
+    "news_used_as_scientific_proof": false,
+    "overlap_warning": "S2, S3, S4, and S6 are related or overlapping literatures; they are not counted as four independent participant datasets."
+  }
+}

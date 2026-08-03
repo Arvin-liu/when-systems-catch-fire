@@ -5,8 +5,7 @@
   "stage": "evidence",
   "state": "IN_PROGRESS",
   "frozen_commit": "2798a0eb",
-  "checkpoint_commits": ["2798a0eb", "PENDING_EVIDENCE_COMMIT"],
-  "evidence_commit": "PENDING_EVIDENCE_COMMIT",
+  "checkpoint_commits": ["2798a0eb"],
   "required_layers": [
     "neural/process measures versus behavioral learning outcomes",
     "immediate achievement and delayed memory/concept transfer",
@@ -18,6 +17,14 @@
   ],
   "claim_ceiling": "outcome-specific evidence about college note-taking media; no universal winner, no neural-to-learning leap, and no policy or population externalization",
   "next_checkpoint": "analysis",
-  "next_action": "record full-text locators, separate the six outcome families, and lock source overlap and data-access limits",
-  "updated_at": "2026-08-03T12:20:17+08:00"
+  "evidence_scope": {
+    "full_text_primary_and_synthesis_sources_read": 5,
+    "full_text_or_report_sources_read": 6,
+    "outcome_families_separated": 6,
+    "source_overlap_audited": true,
+    "search_snippets_as_evidence": false,
+    "news_as_scientific_proof": false
+  },
+  "next_action": "write analysis without collapsing neural, immediate, delayed, review, note-strategy, and skill outcomes",
+  "updated_at": "2026-08-03T12:23:41+08:00"
 }
