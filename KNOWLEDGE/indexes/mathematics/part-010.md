@@ -4,6 +4,26 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [title: "Φ元统一律内部构件完整构成版 2026年07月06日12时32分" author: "之元" date: "2026-07-05" --- # Φ元统一律内部构件完整构成版 2026年07月06日12时32分 **执行时间：](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-d621ec0600eb4d1e / title: "Φ元统一律内部构件完整构成版 2026年07月06日12时32分" author: "之元" date: "2026-07-05" --- # Φ元统一律内部构件完整构成版 2026年07月06日12时32分 **执行时间：
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：—；被引用：—
+- [title: "Φ跨域稳定性定理 / Φcross-domain stability theorem"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0033-T23-%CE%A6%E8%B7%A8%E5%9F%9F%E7%A8%B3%E5%AE%9A%E6%80%A7%E5%AE%9A%E7%90%86.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-AF23607DE7DF53FC / title: "Φ跨域稳定性定理 / Φcross-domain stability theorem" / IMPLICIT-AF23607DE7DF53FC
+  - 来源：`统一函数总表/0033-T23-Φ跨域稳定性定理.md`
+  - 依赖：—；被引用：—
+- [title: "Φ跨域稳定性定理 / Φcross-domain stability theorem"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0033-T23-%CE%A6%E8%B7%A8%E5%9F%9F%E7%A8%B3%E5%AE%9A%E6%80%A7%E5%AE%9A%E7%90%86.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-dccaf3f42872fe31 / title: "Φ跨域稳定性定理 / Φcross-domain stability theorem"
+  - 来源：`统一函数总表/0033-T23-Φ跨域稳定性定理.md`
+  - 依赖：—；被引用：—
+- [title: "Φ跨域统一定理（D224升级）"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0049-T39-%CE%A6%E8%B7%A8%E5%9F%9F%E7%BB%9F%E4%B8%80%E5%AE%9A%E7%90%86%28D224%E5%8D%87%E7%BA%A7%29.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-8cc6510047aa827a / title: "Φ跨域统一定理（D224升级）"
+  - 来源：`统一函数总表/0049-T39-Φ跨域统一定理(D224升级).md`
+  - 依赖：D224；被引用：—
 - [title: "Φ近似阶数选择函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0332-D296-%CE%A6%E8%BF%91%E4%BC%BC%E9%98%B6%E6%95%B0%E9%80%89%E6%8B%A9%E5%87%BD%E6%95%B0.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-DD2B35B96ED4688C / title: "Φ近似阶数选择函数" / IMPLICIT-DD2B35B96ED4688C
@@ -2483,24 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-235d2391f6a0869c / title: "退相干-退化统一函数"
   - 来源：`统一函数总表/0166-D128-退相干-退化统一函数.md`
-  - 依赖：—；被引用：—
-- [title: "退相干-门控退化同构定理"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0263-D227-%E9%80%80%E7%9B%B8%E5%B9%B2-%E9%97%A8%E6%8E%A7%E9%80%80%E5%8C%96%E5%90%8C%E6%9E%84%E5%AE%9A%E7%90%86.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-628639558b6affc6 / title: "退相干-门控退化同构定理"
-  - 来源：`统一函数总表/0263-D227-退相干-门控退化同构定理.md`
-  - 依赖：—；被引用：—
-- [title: "退相干-门槛锁定函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0233-D197-%E9%80%80%E7%9B%B8%E5%B9%B2-%E9%97%A8%E6%A7%9B%E9%94%81%E5%AE%9A%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-55A8CCE4E6DE55FE / title: "退相干-门槛锁定函数" / IMPLICIT-55A8CCE4E6DE55FE
-  - 来源：`统一函数总表/0233-D197-退相干-门槛锁定函数.md`
-  - 依赖：—；被引用：—
-- [title: "适应性演化函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0572-D557-%E9%80%82%E5%BA%94%E6%80%A7%E6%BC%94%E5%8C%96%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-02869A27FB665320 / title: "适应性演化函数" / IMPLICIT-02869A27FB665320
-  - 来源：`统一函数总表/0572-D557-适应性演化函数.md`
-  - 依赖：—；被引用：—
-- [title: "逃逸速度-确定性权衡函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0419-D383-%E9%80%83%E9%80%B8%E9%80%9F%E5%BA%A6-%E7%A1%AE%E5%AE%9A%E6%80%A7%E6%9D%83%E8%A1%A1%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-EC8310C73C7D720C / title: "逃逸速度-确定性权衡函数" / IMPLICIT-EC8310C73C7D720C
-  - 来源：`统一函数总表/0419-D383-逃逸速度-确定性权衡函数.md`
   - 依赖：—；被引用：—

@@ -396,6 +396,11 @@
   - 可搜索名称：NFC-7af0cb11b1197758 / 可写作方向：本文含强叙事（多位教师个案、表格、避风港结尾），适合做「组织制度如何异化专业价值」类文章；对应 `SB-001 哥德尔不完备性` 之外的社会制度题材 backlog。
   - 来源：`outputs/collisions/20260708-teacher-competition/collision-report.md`
   - 依赖：—；被引用：—
+- [同一件事从宫廷视角（整理）切换到被分类者视角（压力），用视角切换完成迁移，不否定任一方。对应之元写作法的横向换域但保持同一未命名问题。](../../../docs/publication/zhiyuan-writing-cognitive-migration-editorial-revision-examples.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-447aa43967988ba2 / 同一件事从宫廷视角（整理）切换到被分类者视角（压力），用视角切换完成迁移，不否定任一方。对应之元写作法的横向换域但保持同一未命名问题。
+  - 来源：`docs/publication/zhiyuan-writing-cognitive-migration-editorial-revision-examples.md`
+  - 依赖：—；被引用：—
 - [同时保留非同构边界，不会把两件事硬写成同一件事。](../../../outputs/stories/20260712-disobedience-subjectivity/story-structure-map.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-b36cd2b3453d6eb1 / 同时保留非同构边界，不会把两件事硬写成同一件事。
@@ -430,6 +435,21 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-d38e61b52e88ffd2 / 对应案例** — 正向登记至少 1 条或写 pending
   - 来源：`docs/two-tables-entry-writing-standard-20260709.md`
+  - 依赖：—；被引用：—
+- [对应：前视写作的“下一层压力提前改变当前层”；把显性问题写成潜题的连续牵引。](../../../docs/publication/zhiyuan-writing-cognitive-migration-editorial-revision.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-09fddd85b5d69f41 / 对应：前视写作的“下一层压力提前改变当前层”；把显性问题写成潜题的连续牵引。
+  - 来源：`docs/publication/zhiyuan-writing-cognitive-migration-editorial-revision.md`
+  - 依赖：—；被引用：—
+- [对应：概念递归重定义与纵向升层；同一概念的世界连续改变，而非换词。](../../../docs/publication/zhiyuan-writing-cognitive-migration-editorial-revision.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-3b956d6e5009b235 / 对应：概念递归重定义与纵向升层；同一概念的世界连续改变，而非换词。
+  - 来源：`docs/publication/zhiyuan-writing-cognitive-migration-editorial-revision.md`
+  - 依赖：—；被引用：—
+- [对应：横向换域但保持同一未命名问题；观察者位置变化维持隐形连续性。](../../../docs/publication/zhiyuan-writing-cognitive-migration-editorial-revision.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-d0f24fbdad127ae7 / 对应：横向换域但保持同一未命名问题；观察者位置变化维持隐形连续性。
+  - 来源：`docs/publication/zhiyuan-writing-cognitive-migration-editorial-revision.md`
   - 依赖：—；被引用：—
 - [当一支军队开始相信自己的背影](../../ASSET-CARDS.md#asset-hr-25ccad6cef81cbea)
   - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
@@ -481,10 +501,20 @@
   - 可搜索名称：NFC-1af3748307046825 / 旧条目只在每周维护或被再次引用时逐步补齐缺失字段（边界条件/适用条件/反例/对应案例/版本记录）。
   - 来源：`docs/two-tables-entry-writing-standard-20260709.md`
   - 依赖：—；被引用：—
+- [是否与现有概念对应：前视压力／递归重定义／横向换域但同潜题／起始承载点／信息增益停止](../../../templates/publication/zhiyuan-writing-spec.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-88850e6dface4a3b / 是否与现有概念对应：前视压力／递归重定义／横向换域但同潜题／起始承载点／信息增益停止
+  - 来源：`templates/publication/zhiyuan-writing-spec.md`
+  - 依赖：—；被引用：—
 - [是否只是修辞类比：](../../../templates/publication/zhiyuan-writing-spec.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-a08ab83673d90d53 / 是否只是修辞类比：
   - 来源：`templates/publication/zhiyuan-writing-spec.md`
+  - 依赖：—；被引用：—
+- [本笔记对应 TASK §8 的必答审查问题，并给出审查结论与待 owner／GPT 决议事项。**本子模块未经接受进入之元写作法；其状态为 Draft PR 待审。**](../../../reports/publication/zhiyuan-writing-cognitive-migration-editorial-revision-review.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-3ca5a51208279ec1 / 本笔记对应 TASK §8 的必答审查问题，并给出审查结论与待 owner／GPT 决议事项。**本子模块未经接受进入之元写作法；其状态为 Draft PR 待审。**
+  - 来源：`reports/publication/zhiyuan-writing-cognitive-migration-editorial-revision-review.md`
   - 依赖：—；被引用：—
 - [此对应明确不能推出什么：](../../../templates/publication/zhiyuan-writing-spec.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -520,6 +550,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-098dfbe443852a01 / 结论：`PARTIAL_ISOMORPHISM`，可进入正文，但必须带边界。
   - 来源：`outputs/stories/20260712-disobedience-subjectivity/story-structure-map.md`
+  - 依赖：—；被引用：—
+- [编辑修订 before/after 范例](../../ASSET-CARDS.md#asset-hr-75430bb574c9c15b)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：编辑修订 before/after 范例 / zhiyuan-writing-cognitive-migration-editorial-revision-examples
+  - 来源：`docs/publication/zhiyuan-writing-cognitive-migration-editorial-revision-examples.md`
   - 依赖：—；被引用：—
 - [至少列出一个 `non_isomorphic_limit`](../../../docs/narrative-story-validation.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
@@ -565,6 +600,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-a0eac8f79bcd3ea7 / 跨域同构判断；
   - 来源：`docs/publication_risk_checklist.md`
+  - 依赖：—；被引用：—
+- [过度延伸的类比；](../../../docs/publication/zhiyuan-writing-cognitive-migration-editorial-revision.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-465e92e3104901b3 / 过度延伸的类比；
+  - 来源：`docs/publication/zhiyuan-writing-cognitive-migration-editorial-revision.md`
   - 依赖：—；被引用：—
 - [这些对应是可审计的 homology candidate，不是逐项身份映射。之元写作法无需在每篇作品中展示所有点火组件，点火也不能从某篇作品自动推出全部正式资产。](../../../docs/publication/zhiyuan-writing-method.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`

@@ -4,6 +4,26 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [title: "退相干-门控退化同构定理"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0263-D227-%E9%80%80%E7%9B%B8%E5%B9%B2-%E9%97%A8%E6%8E%A7%E9%80%80%E5%8C%96%E5%90%8C%E6%9E%84%E5%AE%9A%E7%90%86.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-628639558b6affc6 / title: "退相干-门控退化同构定理"
+  - 来源：`统一函数总表/0263-D227-退相干-门控退化同构定理.md`
+  - 依赖：—；被引用：—
+- [title: "退相干-门槛锁定函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0233-D197-%E9%80%80%E7%9B%B8%E5%B9%B2-%E9%97%A8%E6%A7%9B%E9%94%81%E5%AE%9A%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-55A8CCE4E6DE55FE / title: "退相干-门槛锁定函数" / IMPLICIT-55A8CCE4E6DE55FE
+  - 来源：`统一函数总表/0233-D197-退相干-门槛锁定函数.md`
+  - 依赖：—；被引用：—
+- [title: "适应性演化函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0572-D557-%E9%80%82%E5%BA%94%E6%80%A7%E6%BC%94%E5%8C%96%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-02869A27FB665320 / title: "适应性演化函数" / IMPLICIT-02869A27FB665320
+  - 来源：`统一函数总表/0572-D557-适应性演化函数.md`
+  - 依赖：—；被引用：—
+- [title: "逃逸速度-确定性权衡函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0419-D383-%E9%80%83%E9%80%B8%E9%80%9F%E5%BA%A6-%E7%A1%AE%E5%AE%9A%E6%80%A7%E6%9D%83%E8%A1%A1%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-EC8310C73C7D720C / title: "逃逸速度-确定性权衡函数" / IMPLICIT-EC8310C73C7D720C
+  - 来源：`统一函数总表/0419-D383-逃逸速度-确定性权衡函数.md`
+  - 依赖：—；被引用：—
 - [title: "逆Weibull寿命验证函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0085-D36-%E9%80%86Weibull%E5%AF%BF%E5%91%BD%E9%AA%8C%E8%AF%81%E5%87%BD%E6%95%B0.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-714A0947AB1A41C8 / title: "逆Weibull寿命验证函数" / IMPLICIT-714A0947AB1A41C8
@@ -2461,25 +2481,5 @@
 - [Within the source-defined scope, 空间竞争性函数 is adjudicated as NATURAL_LANGUAGE_CANDIDATE: Σᵢ \|Ωᵢ\| ≤ Ω_total. This is a mode](../../../data/foundation/adjudications/core-kernel.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：CLAIM-D478 / Within the source-defined scope, 空间竞争性函数 is adjudicated as NATURAL_LANGUAGE_CANDIDATE: Σᵢ \|Ωᵢ\| ≤ Ω_total. This is a mode
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 空间耦合函数 is adjudicated as RELATION: Ω₁ = f(Ω₂, Ω₃, ..., Ωₙ). This is a model-internal co](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D479 / Within the source-defined scope, 空间耦合函数 is adjudicated as RELATION: Ω₁ = f(Ω₂, Ω₃, ..., Ωₙ). This is a model-internal co
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 空间锁死维度计数函数 is adjudicated as RELATION: n_lock(Ω) = Σᵢ step(C_exit(Ωᵢ) > θ_C(Ωᵢ)). This](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D495 / Within the source-defined scope, 空间锁死维度计数函数 is adjudicated as RELATION: n_lock(Ω) = Σᵢ step(C_exit(Ωᵢ) > θ_C(Ωᵢ)). This
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 空间集中性函数 is adjudicated as RELATION: I_concentration(Ω) = (1 + σ(Ω))/2. This is a model-](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D500 / Within the source-defined scope, 空间集中性函数 is adjudicated as RELATION: I_concentration(Ω) = (1 + σ(Ω))/2. This is a model-
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 符号-语义带宽 is adjudicated as RELATION: 符号-语义带宽，B_total = B_symbolic + B_semantic。. This is](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D98 / Within the source-defined scope, 符号-语义带宽 is adjudicated as RELATION: 符号-语义带宽，B_total = B_symbolic + B_semantic。. This is
   - 来源：`data/foundation/adjudications/core-kernel.jsonl`
   - 依赖：—；被引用：—

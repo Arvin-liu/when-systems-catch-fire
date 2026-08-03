@@ -4,6 +4,26 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [proof_status="NOT_APPLICABLE_ALGORITHMIC_TEMPLATE",](../../../tools/foundation/build_080_queue.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-034d086b293805e7 / proof_status="NOT_APPLICABLE_ALGORITHMIC_TEMPLATE",
+  - 来源：`tools/foundation/build_080_queue.py`
+  - 依赖：—；被引用：—
+- [proof_status="NOT_APPLICABLE_MECHANISM",](../../../tools/foundation/build_080_queue.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-3bfb3144dc289d8d / proof_status="NOT_APPLICABLE_MECHANISM",
+  - 来源：`tools/foundation/build_080_queue.py`
+  - 依赖：—；被引用：—
+- [proof_status="NOT_APPLICABLE_SCORE_DEFINITION",](../../../tools/foundation/build_080_queue.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-2695160248081cc2 / proof_status="NOT_APPLICABLE_SCORE_DEFINITION",
+  - 来源：`tools/foundation/build_080_queue.py`
+  - 依赖：—；被引用：—
+- [proof_status="UNPROVED_PROPOSITION",](../../../tools/foundation/build_080_queue.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-89af11b69b71e086 / proof_status="UNPROVED_PROPOSITION",
+  - 来源：`tools/foundation/build_080_queue.py`
+  - 依赖：—；被引用：—
 - [Proof（34条）**：低优先 — 形式化证明（除 P1 外）](../../../reports/foundation-architecture/085-backlog-prioritization.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-fbb24b418a8b710e / Proof（34条）**：低优先 — 形式化证明（除 P1 外）
@@ -2481,23 +2501,3 @@
   - 可搜索名称：IMPLICIT-7A142BAAA5F1833D / title: "Φ二阶近似函数" / IMPLICIT-7A142BAAA5F1833D
   - 来源：`统一函数总表/0318-D282-Φ二阶近似函数.md`
   - 依赖：—；被引用：—
-- [title: "Φ元统一律内部构件完整构成版 2026年07月06日12时32分" author: "之元" date: "2026-07-05" --- # Φ元统一律内部构件完整构成版 2026年07月06日12时32分 **执行时间：](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-d621ec0600eb4d1e / title: "Φ元统一律内部构件完整构成版 2026年07月06日12时32分" author: "之元" date: "2026-07-05" --- # Φ元统一律内部构件完整构成版 2026年07月06日12时32分 **执行时间：
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：—；被引用：—
-- [title: "Φ跨域稳定性定理 / Φcross-domain stability theorem"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0033-T23-%CE%A6%E8%B7%A8%E5%9F%9F%E7%A8%B3%E5%AE%9A%E6%80%A7%E5%AE%9A%E7%90%86.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-AF23607DE7DF53FC / title: "Φ跨域稳定性定理 / Φcross-domain stability theorem" / IMPLICIT-AF23607DE7DF53FC
-  - 来源：`统一函数总表/0033-T23-Φ跨域稳定性定理.md`
-  - 依赖：—；被引用：—
-- [title: "Φ跨域稳定性定理 / Φcross-domain stability theorem"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0033-T23-%CE%A6%E8%B7%A8%E5%9F%9F%E7%A8%B3%E5%AE%9A%E6%80%A7%E5%AE%9A%E7%90%86.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-dccaf3f42872fe31 / title: "Φ跨域稳定性定理 / Φcross-domain stability theorem"
-  - 来源：`统一函数总表/0033-T23-Φ跨域稳定性定理.md`
-  - 依赖：—；被引用：—
-- [title: "Φ跨域统一定理（D224升级）"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0049-T39-%CE%A6%E8%B7%A8%E5%9F%9F%E7%BB%9F%E4%B8%80%E5%AE%9A%E7%90%86%28D224%E5%8D%87%E7%BA%A7%29.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-8cc6510047aa827a / title: "Φ跨域统一定理（D224升级）"
-  - 来源：`统一函数总表/0049-T39-Φ跨域统一定理(D224升级).md`
-  - 依赖：D224；被引用：—

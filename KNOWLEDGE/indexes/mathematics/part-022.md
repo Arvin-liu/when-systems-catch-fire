@@ -4,6 +4,71 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [统一函数总表与统一案例总表保留为 legacy source / compatibility view，零删除、零重编号、不得独立生长。Ψ₀ 重新定性为工作流编排器/算法协议；J+ / J- 是内部审议通道；12 元协议默认属于规范、启发或](../../../docs/PROJECT-ARCHITECTURE.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-eb39102985627866 / 统一函数总表与统一案例总表保留为 legacy source / compatibility view，零删除、零重编号、不得独立生长。Ψ₀ 重新定性为工作流编排器/算法协议；J+ / J- 是内部审议通道；12 元协议默认属于规范、启发或
+  - 来源：`docs/PROJECT-ARCHITECTURE.md`
+  - 依赖：—；被引用：—
+- [统一函数总表与统一案例总表是历史来源和兼容索引。它们没有独立表达现行数学身份、定义域和值域、量纲与类型、证明/实证义务、M/E 双成熟度、依赖、处置和 supersession lineage，因此不能作为当前结论面。](../../../RESULTS/ADJUDICATION-SUMMARY.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-782e459d9eda1fa9 / 统一函数总表与统一案例总表是历史来源和兼容索引。它们没有独立表达现行数学身份、定义域和值域、量纲与类型、证明/实证义务、M/E 双成熟度、依赖、处置和 supersession lineage，因此不能作为当前结论面。
+  - 来源：`RESULTS/ADJUDICATION-SUMMARY.md`
+  - 依赖：—；被引用：—
+- [统一函数总表和统一案例总表以后**不再允许自由格式写入**。所有新增函数、案例、扩展注释、pending 项，都必须先通过统一模板整理，再进入正式两张表。](../../../docs/two-tables-entry-writing-standard-20260709.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-ecaf5c6f9fffb84d / 统一函数总表和统一案例总表以后**不再允许自由格式写入**。所有新增函数、案例、扩展注释、pending 项，都必须先通过统一模板整理，再进入正式两张表。
+  - 来源：`docs/two-tables-entry-writing-standard-20260709.md`
+  - 依赖：—；被引用：—
+- [统一函数总表和统一案例总表保留为 legacy source / compatibility view。不得删除、重编号、不可逆覆盖或独立生长。views/ 是从新 registry 生成的兼容视图。](../../../AI-HANDOFF.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-18b63eb8ee780e4d / 统一函数总表和统一案例总表保留为 legacy source / compatibility view。不得删除、重编号、不可逆覆盖或独立生长。views/ 是从新 registry 生成的兼容视图。
+  - 来源：`AI-HANDOFF.md`
+  - 依赖：—；被引用：—
+- [统一函数总表（617）/ 统一案例总表（804）未改；INDEX 与正文均未动。](../../../docs/versions/2026-07-09-meta-protocol-generation-layer.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-0f19ef5e49578e42 / 统一函数总表（617）/ 统一案例总表（804）未改；INDEX 与正文均未动。
+  - 来源：`docs/versions/2026-07-09-meta-protocol-generation-layer.md`
+  - 依赖：—；被引用：—
+- [统一函数总表：目录文件 **622**（含 5×MF、9×A-T、548×D 等），**D 编号唯一数 548**，`max D = D602`。](../../../outputs/collisions/20260711-disobedience-subjectivity/independent-second-angle-audit-056.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-235f6338928aa1fd / 统一函数总表：目录文件 **622**（含 5×MF、9×A-T、548×D 等），**D 编号唯一数 548**，`max D = D602`。
+  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/independent-second-angle-audit-056.md`
+  - 依赖：D602；被引用：—
+- [统一函数条目模板草案](../../../outputs/audit/two-tables-entry-format-audit-20260709.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-2508501f8e0fbad1 / 统一函数条目模板草案
+  - 来源：`outputs/audit/two-tables-entry-format-audit-20260709.md`
+  - 依赖：—；被引用：—
+- [统一函数索引表（2026年07月09日00时30分，函数总数 617，收敛 6 条）](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-db2b0e1d903e7ebf / 统一函数索引表（2026年07月09日00时30分，函数总数 617，收敛 6 条）
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：—；被引用：—
+- [统一函数索引表（2026年07月09日00时30分，函数总数 617，收敛 6 条） - 索引状态: 动态增长 - 条目状态: 单条 Markdown 文件，支持 Agent 读取和编辑 \| 函数编号 \| 函数中文名称 \| 数学表达 \| \|](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-85390e35dfc85eea / 统一函数索引表（2026年07月09日00时30分，函数总数 617，收敛 6 条） - 索引状态: 动态增长 - 条目状态: 单条 Markdown 文件，支持 Agent 读取和编辑 \| 函数编号 \| 函数中文名称 \| 数学表达 \| \|
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：—；被引用：—
+- [统一函数表 / 案例表无修改 ✅](../../../outputs/audit/meta-protocol-normative-review-publication-audit-20260711.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-d957e0078bd2842f / 统一函数表 / 案例表无修改 ✅
+  - 来源：`outputs/audit/meta-protocol-normative-review-publication-audit-20260711.md`
+  - 依赖：—；被引用：—
+- [统一收敛案例验证。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0082-D33-%E4%B8%89%E5%B1%82%E9%80%80%E5%8C%96%E5%8F%A0%E5%8A%A0%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-181e8e0cfba30b60 / 统一收敛案例验证。
+  - 来源：`统一函数总表/0082-D33-三层退化叠加函数.md`
+  - 依赖：—；被引用：—
+- [统一案例总表/（0 个新案例文件）](../../../outputs/audit/book-validation-case-table-formalization-audit-20260709.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-e5f97d99d5ddc5f8 / 统一案例总表/（0 个新案例文件）
+  - 来源：`outputs/audit/book-validation-case-table-formalization-audit-20260709.md`
+  - 依赖：—；被引用：—
+- [统一相变框架](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0117-D72-%E7%BB%9F%E4%B8%80%E7%9B%B8%E5%8F%98%E6%A1%86%E6%9E%B6.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D72 / 统一相变框架 / D72
+  - 来源：`统一函数总表/0117-D72-统一相变框架.md`
+  - 依赖：D1, D90；被引用：CLAIM-T8, NFC-074d9cf7504a21d5, NFC-320d515b750fb94d, NFC-3e5092bc555461b2
 - [统一相变框架→五个相变统一为同一相变的五个投影。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0018-T8-%CE%B5%E7%9B%B8%E5%8F%98%E7%BA%A7%E8%81%94.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-2b9949fcf2d718df / 统一相变框架→五个相变统一为同一相变的五个投影。
@@ -999,6 +1064,11 @@
   - 可搜索名称：NFC-4665ae141c69ce8a / 该登记表用于集中记录数学、物理学、历史学、经济学、社会科学、医学、法律、AI、文学艺术等领域中必须保持 pending 的强结论，避免公开表达时把结构性推论误写成外部证明、事实结论、专业建议或最终定论。
   - 来源：`docs/v0.2_summary.md`
   - 依赖：—；被引用：—
+- [该笔记由之元在反复请**得到大脑**修订《宋徽宗的自我证明工程》（“天意的接口”一文，最初由 Pointfire 与 Codex 产出）之后蒸馏而成。它沉淀了一种受得到长文内容与修订经验启发的编辑实践。](../../../docs/publication/method-sources/cognitive-migration-editorial-revision-source.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-4fd4e5d2ca040e4d / 该笔记由之元在反复请**得到大脑**修订《宋徽宗的自我证明工程》（“天意的接口”一文，最初由 Pointfire 与 Codex 产出）之后蒸馏而成。它沉淀了一种受得到长文内容与修订经验启发的编辑实践。
+  - 来源：`docs/publication/method-sources/cognitive-migration-editorial-revision-source.md`
+  - 依赖：—；被引用：—
 - [该链只证明某个版本的来源、分析、方法与作品可被共同审计。作品被接受不证明来源命题为真、分析完成因果识别、方法普遍有效或 AI 复制了作者；受限原始材料只保留 provenance，不因成果展示而重新公开。](../../../ARCHITECTURE.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-93f319fe36a77a61 / 该链只证明某个版本的来源、分析、方法与作品可被共同审计。作品被接受不证明来源命题为真、分析完成因果识别、方法普遍有效或 AI 复制了作者；受限原始材料只保留 provenance，不因成果展示而重新公开。
@@ -1409,6 +1479,11 @@
   - 可搜索名称：NFC-b85833bf538b0cee / 这句话之所以扎人，不是因为它冒犯，而是因为它太准确。一个人当然可以同时是母亲、妻子、创业者、内容创作者，也可以心甘情愿地把很多时间给家庭、公司和别人。问题不在于她有没有这些角色。问题在于，当外部世界只通过这些角色来认识她时，她的名字会慢慢退
   - 来源：`outputs/stories/20260712-disobedience-subjectivity/story-longform.md`
   - 依赖：—；被引用：—
+- [这是一句明确的否定，但它**保护 claim ceiling**：精确限定了“不能把每个鹤都判为伪造”的证据边界，属于必要的否定而非套路。模块不实行禁词令，此类精确、非公式化、承担证据边界的句子必须保留。](../../../docs/publication/zhiyuan-writing-cognitive-migration-editorial-revision-examples.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-cd69e0c0192d7237 / 这是一句明确的否定，但它**保护 claim ceiling**：精确限定了“不能把每个鹤都判为伪造”的证据边界，属于必要的否定而非套路。模块不实行禁词令，此类精确、非公式化、承担证据边界的句子必须保留。
+  - 来源：`docs/publication/zhiyuan-writing-cognitive-migration-editorial-revision-examples.md`
+  - 依赖：—；被引用：—
 - [这是一张导航接口，不是完整性、因果或理论证明](../../../data/architecture/interactive-system-map-layout.json)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-8269d25bb646c73f / 这是一张导航接口，不是完整性、因果或理论证明
@@ -1458,6 +1533,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-eec8af887c9b4b76 / 远端真相：当前主线已包含七层架构、Foundation、Function OS、Q12 效果行动/机制判断、Q13 注意力/分布/压缩、Q14 地图集、MCF、PSD、ARN，以及“实现—仓库—外部—项目整体”四级完成状态。本任务只使用这些
   - 来源：`reports/publication/jin-rise-point-fire-analysis.md`
+  - 依赖：—；被引用：—
+- [违反硬门：事实门与 claim ceiling 不允许把“接口如何被行政化”升级为“真理被证明”。](../../../docs/publication/zhiyuan-writing-cognitive-migration-editorial-revision-examples.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-45a3ce10f2ab86d0 / 违反硬门：事实门与 claim ceiling 不允许把“接口如何被行政化”升级为“真理被证明”。
+  - 来源：`docs/publication/zhiyuan-writing-cognitive-migration-editorial-revision-examples.md`
   - 依赖：—；被引用：—
 - [迭代方法只能约束操作纪律，不能证明实质结论正确。](../../../AI-START-HERE.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
@@ -2424,18 +2504,3 @@
   - 可搜索名称：NFC-aa0197add5506295 / 默认核心**：经典一阶逻辑只用于已声明的演绎核心，不扩张到不一致证据聚合。
   - 来源：`docs/foundation/logic/README.md`
   - 依赖：—；被引用：—
-- [（候选编号 + 名称 + 对应函数）](../../../templates/collision/backfill-plan-template.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-c7565431848c1811 / （候选编号 + 名称 + 对应函数）
-  - 来源：`templates/collision/backfill-plan-template.md`
-  - 依赖：—；被引用：—
-- [（候选编号 / 名称 / 内容 / 对应函数 / 来源 / 关键发现 / 是否入表 / 理由）](../../../templates/collision/output-template.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-e671ce126b64a66b / （候选编号 / 名称 / 内容 / 对应函数 / 来源 / 关键发现 / 是否入表 / 理由）
-  - 来源：`templates/collision/output-template.md`
-  - 依赖：—；被引用：—
-- [（函数表版本、案例表版本、P1 数据版本、是否校验通过）](../../../templates/collision/output-template.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-2762b048a2c9bc43 / （函数表版本、案例表版本、P1 数据版本、是否校验通过）
-  - 来源：`templates/collision/output-template.md`
-  - 依赖：P1；被引用：—

@@ -4,6 +4,66 @@
 
 [返回资产卡总索引](../ASSET-CARDS.md)
 
+<a id="asset-hr-c023e21ce9a8a6d4"></a>
+## Probabilistic System Dynamics / 概率—系统动力学
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-C023E21CE9A8A6D4` · [docs/architecture/probabilistic-system-dynamics.md](../../docs/architecture/probabilistic-system-dynamics.md)
+- **为什么产生：** 此来源记录了什么：Probabilistic System Dynamics / 概率—系统动力学？
+- **当前状态：** `CANDIDATE_OR_PENDING_SOURCE`
+- **当前结果：** Status: candidate derived operational extension to MCF.
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `docs/architecture/probabilistic-system-dynamics.md`, `REPOSITORY_HISTORY_SOURCE`
+- **演化历史：** 2026-07-16: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `Probabilistic System Dynamics / 概率—系统动力学`, `probabilistic-system-dynamics`
+
+<a id="asset-hr-c0254716ff47346d"></a>
+## 得到大脑输出索引
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-C0254716FF47346D` · [outputs/getbrain/README.md](../../outputs/getbrain/README.md)
+- **为什么产生：** 此来源记录了什么：得到大脑输出索引？
+- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **当前结果：** 本目录用于收录得到大脑在点火项目推进中的结构性输出。
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `outputs/getbrain/README.md`, `REPOSITORY_HISTORY_SOURCE`
+- **演化历史：** 2026-07-06: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `COGNITION`
+- **可搜索名称：** `得到大脑输出索引`, `README`
+
+<a id="asset-hr-c0e9f4990481c808"></a>
+## 121Q21R Causal Asset Audit
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-C0E9F4990481C808` · [reports/architecture/121Q21R-causal-asset-audit.md](../../reports/architecture/121Q21R-causal-asset-audit.md)
+- **为什么产生：** 此来源记录了什么：121Q21R Causal Asset Audit？
+- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **当前结果：** Status: PARTIALCOMPONENTSWITHOUTUNIFIEDMULTISCALEFABRIC
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `reports/architecture/121Q21R-causal-asset-audit.md`, `121Q21R-CAUSAL-ASSET-AUDIT`
+- **演化历史：** 2026-07-16: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `121Q21R Causal Asset Audit`, `121Q21R-causal-asset-audit`
+
 <a id="asset-hr-c190ac76ad5f8440"></a>
 ## 121Q3 Night Final Report
 
@@ -624,6 +684,26 @@
 - **主题：** `MATHEMATICS`
 - **可搜索名称：** `v0.2 函数依赖图初稿`, `v0.2-function-dependency-graph-20260706`
 
+<a id="asset-hr-deb3e834ad440e87"></a>
+## 认知迁移编辑修订子模块 — 审查笔记
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-DEB3E834AD440E87` · [reports/publication/zhiyuan-writing-cognitive-migration-editorial-revision-review.md](../../reports/publication/zhiyuan-writing-cognitive-migration-editorial-revision-review.md)
+- **为什么产生：** 此来源记录了什么：认知迁移编辑修订子模块 — 审查笔记？
+- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **当前结果：** English: Review Note — Cognitive-Migration Editorial Revision Module
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `reports/publication/zhiyuan-writing-cognitive-migration-editorial-revision-review.md`, `REPOSITORY_HISTORY_SOURCE`
+- **演化历史：** 2026-08-03: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `COGNITION`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `认知迁移编辑修订子模块 — 审查笔记`, `zhiyuan-writing-cognitive-migration-editorial-revision-review`
+
 <a id="asset-hr-e14552c4c0658b5a"></a>
 ## 083 Escalation Routing Report
 
@@ -663,6 +743,26 @@
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `ARCHITECTURE_GOVERNANCE`
 - **可搜索名称：** `085: Architecture Structure Freeze Report`, `085-architecture-structure-freeze`
+
+<a id="asset-hr-e2be1a0c85b07db2"></a>
+## PR 189 Independent Method Review and CI Repair — Line B (Qwen 3.8 Max campaign)
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-E2BE1A0C85B07DB2` · [reports/publication/pr189-independent-review-and-ci-repair-r1-20260803.md](../../reports/publication/pr189-independent-review-and-ci-repair-r1-20260803.md)
+- **为什么产生：** 此来源记录了什么：PR 189 Independent Method Review and CI Repair — Line B (Qwen 3.8 Max campaign)？
+- **当前状态：** `CANDIDATE_OR_PENDING_SOURCE`
+- **当前结果：** Status: STACKED DRAFT CANDIDATE targeting workbuddy/zhiyuan-writing-cognitive-migration-editorial-revision-r1-20260803. DO NOT MERGE either PR. Reviewer: independent campaign executor (not the PR author agent).
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `reports/publication/pr189-independent-review-and-ci-repair-r1-20260803.md`, `REPOSITORY_HISTORY_SOURCE`
+- **演化历史：** 2026-08-03: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `COGNITION`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `PR 189 Independent Method Review and CI Repair — Line B (Qwen 3.8 Max campaign)`, `pr189-independent-review-and-ci-repair-r1-20260803`
 
 <a id="asset-hr-e31b1dff732ad215"></a>
 ## 120 — Function OS Architecture Candidate Report
@@ -903,103 +1003,3 @@
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `事实 Pending 总表（外部治理记录）`, `factual-pending-register`
-
-<a id="asset-hr-f29753586c28f9ec"></a>
-## Governance License Scope
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-F29753586C28F9EC` · [docs/governance/README.md](../../docs/governance/README.md)
-- **为什么产生：** 此来源记录了什么：Governance License Scope？
-- **当前状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
-- **当前结果：** SPDX-License-Identifier: CC-BY-SA-4.0 OR CC-BY-NC-SA-4.0
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `docs/governance/README.md`, `REPOSITORY_HISTORY_SOURCE`
-- **演化历史：** 2026-07-15: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `ARCHITECTURE_GOVERNANCE`
-- **可搜索名称：** `Governance License Scope`, `README`
-
-<a id="asset-hr-f3d97a665e74558a"></a>
-## 迭代生命周期模型（事件溯源 · 任务 108 引入）
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-F3D97A665E74558A` · [docs/operations/lifecycle-readme.md](../../docs/operations/lifecycle-readme.md)
-- **为什么产生：** 此来源记录了什么：迭代生命周期模型（事件溯源 · 任务 108 引入）？
-- **当前状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
-- **当前结果：** 本目录与 data/operations/ 下的生命周期文件定义了点火仓库的迭代终态模型。 它在任务 108 中取代"一行可变终态记录"的循环模型，改为追加式、事件溯源的不可变事件 + 不可伪造标注终端 tag。
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `docs/operations/lifecycle-readme.md`, `REPOSITORY_HISTORY_SOURCE`
-- **演化历史：** 2026-08-01: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `迭代生命周期模型（事件溯源 · 任务 108 引入）`, `lifecycle-readme`
-
-<a id="asset-hr-f58d1b491fb96c27"></a>
-## Licensing Model Candidate
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-F58D1B491FB96C27` · [docs/governance/licensing-model-candidate.md](../../docs/governance/licensing-model-candidate.md)
-- **为什么产生：** 此来源记录了什么：Licensing Model Candidate？
-- **当前状态：** `CANDIDATE_OR_PENDING_SOURCE`
-- **当前结果：** Status: candidate decision record. This is not legal advice and does not change the root LICENSE.
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `docs/governance/licensing-model-candidate.md`, `REPOSITORY_HISTORY_SOURCE`
-- **演化历史：** 2026-07-15: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `COGNITION`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `Licensing Model Candidate`, `licensing-model-candidate`
-
-<a id="asset-hr-f664e539ab663124"></a>
-## Ignition Atlas
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-F664E539AB663124` · [docs/architecture/ignition-atlas.md](../../docs/architecture/ignition-atlas.md)
-- **为什么产生：** 此来源记录了什么：Ignition Atlas？
-- **当前状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
-- **当前结果：** Status: 121Q14MAPPROJECTIONOVERLAY
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `docs/architecture/ignition-atlas.md`, `REPOSITORY_HISTORY_SOURCE`
-- **演化历史：** 2026-07-15: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`
-- **可搜索名称：** `Ignition Atlas`, `ignition-atlas`
-
-<a id="asset-hr-f8c21cd0cd6a1f34"></a>
-## 生命共同体价值审查（life-community-value-audit）
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-F8C21CD0CD6A1F34` · [outputs/collisions/20260711-disobedience-subjectivity/life-community-value-audit.md](../../outputs/collisions/20260711-disobedience-subjectivity/life-community-value-audit.md)
-- **为什么产生：** 此来源记录了什么：生命共同体价值审查（life-community-value-audit）？
-- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **当前结果：** 原文件保存该项结果的完整问题、过程与边界。
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `outputs/collisions/20260711-disobedience-subjectivity/life-community-value-audit.md`, `202`
-- **演化历史：** 2026-07-11: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `生命共同体价值审查（life-community-value-audit）`, `life-community-value-audit`

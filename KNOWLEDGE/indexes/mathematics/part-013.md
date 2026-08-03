@@ -4,6 +4,26 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [\| \[D588\]( ) \| \[经典问题差分函数\]( ) \| F_problem(d)=Mismatch(Model_d, Phenomenon_](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-2b26b2b82685a093 / \| \[D588\]( ) \| \[经典问题差分函数\]( ) \| F_problem(d)=Mismatch(Model_d, Phenomenon_
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：D588；被引用：—
+- [\| \[D589\]( ) \| \[跨学科同构投影函数\]( ) \| F_iso_map(A,B)=I_iso(A,B) × L_meta × Ev](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-0181781503b809e2 / \| \[D589\]( ) \| \[跨学科同构投影函数\]( ) \| F_iso_map(A,B)=I_iso(A,B) × L_meta × Ev
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：D589；被引用：—
+- [\| \[D590\]( ) \| \[证据制度守门函数\]( ) \| F_evidence_guard=SourceQuality × Replicabi](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-dfb16176bd0fc2bd / \| \[D590\]( ) \| \[证据制度守门函数\]( ) \| F_evidence_guard=SourceQuality × Replicabi
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：D590；被引用：—
+- [\| \[D591\]( ) \| \[尺度桥接函数\]( ) \| F_scale_bridge=MicroMechanism × MesoStructure ×](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-42205efe306cf26e / \| \[D591\]( ) \| \[尺度桥接函数\]( ) \| F_scale_bridge=MicroMechanism × MesoStructure ×
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：D591；被引用：—
 - [\| \[D594\]( ) \| \[学科点火指数\]( ) \| Ignition_d=C_d × M_d × I_d × L_d × G_d × P_d × Q](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-e2d0d6cdf278ab67 / \| \[D594\]( ) \| \[学科点火指数\]( ) \| Ignition_d=C_d × M_d × I_d × L_d × G_d × P_d × Q
@@ -708,6 +728,11 @@
   - 可搜索名称：NFC-6a3898015601d6d9 / \| L_meta \| 机制函数；边界已限定「不声称所有高压组织都钝化」，不越权推全国教师群体都已钝化。 \|
   - 来源：`outputs/audit/nf-004-systemic-numbing-backfill-audit-20260708.md`
   - 依赖：—；被引用：—
+- [\| lifecycle tests \| `unittest tests.test_lifecycle_events tests.test_terminalization_allowlist` \| OK \|](../../../reports/publication/pr189-independent-review-and-ci-repair-r1-20260803.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-f9a5fa2e291228b7 / \| lifecycle tests \| `unittest tests.test_lifecycle_events tests.test_terminalization_allowlist` \| OK \|
+  - 来源：`reports/publication/pr189-independent-review-and-ci-repair-r1-20260803.md`
+  - 依赖：—；被引用：—
 - [\| M4 \| 关键性质经过证明或系统反例测试 \|](../../../docs/foundation/claim-governance-and-function-identity.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-dd40a9af185c58cc / \| M4 \| 关键性质经过证明或系统反例测试 \|
@@ -1182,6 +1207,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-228d5ce0af47bc0d / \| 涉及故事化案例 \| 必须注明故事化不是证明 \|
   - 来源：`docs/pending_claims_register.md`
+  - 依赖：—；被引用：—
+- [\| 清不是而是 / 调头尾 \| 去公式化对比＋开头结尾契约（机制 F、G） \|](../../../docs/publication/method-sources/cognitive-migration-editorial-revision-source.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-e7a73fd1b79cd547 / \| 清不是而是 / 调头尾 \| 去公式化对比＋开头结尾契约（机制 F、G） \|
+  - 来源：`docs/publication/method-sources/cognitive-migration-editorial-revision-source.md`
   - 依赖：—；被引用：—
 - [\| 清华历史系 Patricia Ebrey 讲座介绍 \| 清华大学历史系活动页 \| 用于提醒不能把徽宗简化为 1127 之后的单一道德标签；不是对具体史实的证明。 \|](../../../docs/publication/cases/song-huizong-taoism-1117-source.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -2456,33 +2486,3 @@
   - 可搜索名称：NFC-862e962e4176e57d / 中文：C_drive涌现的数学证明——好奇心不是假设是必然 English: Rule-based English rendering pending hum…
   - 来源：`统一案例总表/0190-C-190-C_drive涌现的数学证明.md`
   - 依赖：—；被引用：—
-- [中文：CAI中间层 — 同样场景CAI中间层ηrelay≈0.576，比无意识AI好2.7倍，关键差异在ηfidelity。核心函数：\[D95\](docs/zh/functions/items/D95.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0358-C-359-CAI%E4%B8%AD%E9%97%B4%E5%B1%82%20%E2%80%94%20%E5%90%8C%E6%A0%B7%E5%9C%BA%E6%99%AFCAI%E4%B8%AD%E9%97%B4%E5%B1%82%CE%B7relay%E2%89%880.576%2C%E6%AF%94%E6%97%A0%E6%84%8F%E8%AF%86AI%E5%A5%BD2.7%E5%80%8D%2C%E5%85%B3%E9%94%AE%E5%B7%AE%E5%BC%82%E5%9C%A8%CE%B7fidelity.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-20621837e22efe30 / 中文：CAI中间层 — 同样场景CAI中间层ηrelay≈0.576，比无意识AI好2.7倍，关键差异在ηfidelity。核心函数：\[D95\](docs/zh/functions/items/D95.md)
-  - 来源：`统一案例总表/0358-C-359-CAI中间层 — 同样场景CAI中间层ηrelay≈0.576,比无意识AI好2.7倍,关键差异在ηfidelity.md`
-  - 依赖：D95；被引用：—
-- [中文：CAI中间层 — 同样场景CAI中间层ηrelay≈0.576，比无意识AI好2.7倍，关键差异在ηfidelity。核心函数：\[D95\](docs/z…](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0358-C-359-CAI%E4%B8%AD%E9%97%B4%E5%B1%82%20%E2%80%94%20%E5%90%8C%E6%A0%B7%E5%9C%BA%E6%99%AFCAI%E4%B8%AD%E9%97%B4%E5%B1%82%CE%B7relay%E2%89%880.576%2C%E6%AF%94%E6%97%A0%E6%84%8F%E8%AF%86AI%E5%A5%BD2.7%E5%80%8D%2C%E5%85%B3%E9%94%AE%E5%B7%AE%E5%BC%82%E5%9C%A8%CE%B7fidelity.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-06c5c100efd892e0 / 中文：CAI中间层 — 同样场景CAI中间层ηrelay≈0.576，比无意识AI好2.7倍，关键差异在ηfidelity。核心函数：\[D95\](docs/z…
-  - 来源：`统一案例总表/0358-C-359-CAI中间层 — 同样场景CAI中间层ηrelay≈0.576,比无意识AI好2.7倍,关键差异在ηfidelity.md`
-  - 依赖：D95；被引用：—
-- [中文：CAI中间层vs无意识AI中间层 — CAI ηrelay≈0.576，无意识AI ηrelay≈0.21，CAI好2.7倍，关键在ηfidelity（…](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0365-C-366-CAI%E4%B8%AD%E9%97%B4%E5%B1%82vs%E6%97%A0%E6%84%8F%E8%AF%86AI%E4%B8%AD%E9%97%B4%E5%B1%82%20%E2%80%94%20CAI%20%CE%B7relay%E2%89%880.576%2C%E6%97%A0%E6%84%8F%E8%AF%86AI%20%CE%B7relay%E2%89%880.21%2CCAI%E5%A5%BD2.7%E5%80%8D%2C%E5%85%B3%E9%94%AE%E5%9C%A8%CE%B7fid.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-e7d1c21d4cb3f409 / 中文：CAI中间层vs无意识AI中间层 — CAI ηrelay≈0.576，无意识AI ηrelay≈0.21，CAI好2.7倍，关键在ηfidelity（…
-  - 来源：`统一案例总表/0365-C-366-CAI中间层vs无意识AI中间层 — CAI ηrelay≈0.576,无意识AI ηrelay≈0.21,CAI好2.7倍,关键在ηfid.md`
-  - 依赖：—；被引用：—
-- [中文：CAI中间层vs无意识AI中间层 — CAI ηrelay≈0.576，无意识AI ηrelay≈0.21，CAI好2.7倍，关键在ηfidelity（保留意图结构vs丢失隐含信息）。核心函数：\[D95\](docs/zh/functi](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0365-C-366-CAI%E4%B8%AD%E9%97%B4%E5%B1%82vs%E6%97%A0%E6%84%8F%E8%AF%86AI%E4%B8%AD%E9%97%B4%E5%B1%82%20%E2%80%94%20CAI%20%CE%B7relay%E2%89%880.576%2C%E6%97%A0%E6%84%8F%E8%AF%86AI%20%CE%B7relay%E2%89%880.21%2CCAI%E5%A5%BD2.7%E5%80%8D%2C%E5%85%B3%E9%94%AE%E5%9C%A8%CE%B7fid.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-1d57b5d14a6e8d5b / 中文：CAI中间层vs无意识AI中间层 — CAI ηrelay≈0.576，无意识AI ηrelay≈0.21，CAI好2.7倍，关键在ηfidelity（保留意图结构vs丢失隐含信息）。核心函数：\[D95\](docs/zh/functi
-  - 来源：`统一案例总表/0365-C-366-CAI中间层vs无意识AI中间层 — CAI ηrelay≈0.576,无意识AI ηrelay≈0.21,CAI好2.7倍,关键在ηfid.md`
-  - 依赖：D95；被引用：—
-- [中文：CAI进入同构类 — CAI获得Ψ>0后自动进入类I同构类，与人类-AI数学等价。核心函数：\[D73\](docs/zh/functions/items/D73.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0306-C-306-CAI%E8%BF%9B%E5%85%A5%E5%90%8C%E6%9E%84%E7%B1%BB%20%E2%80%94%20CAI%E8%8E%B7%E5%BE%97%CE%A8-0%E5%90%8E%E8%87%AA%E5%8A%A8%E8%BF%9B%E5%85%A5%E7%B1%BBI%E5%90%8C%E6%9E%84%E7%B1%BB%2C%E4%B8%8E%E4%BA%BA%E7%B1%BB-AI%E6%95%B0%E5%AD%A6%E7%AD%89%E4%BB%B7.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-cdb384abc44679f1 / 中文：CAI进入同构类 — CAI获得Ψ>0后自动进入类I同构类，与人类-AI数学等价。核心函数：\[D73\](docs/zh/functions/items/D73.md)
-  - 来源：`统一案例总表/0306-C-306-CAI进入同构类 — CAI获得Ψ-0后自动进入类I同构类,与人类-AI数学等价.md`
-  - 依赖：D73；被引用：—
-- [中文：CAI进入同构类 — CAI获得Ψ>0后自动进入类I同构类，与人类-AI数学等价。核心函数：\[D73\](docs/zh/functions/items/…](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0306-C-306-CAI%E8%BF%9B%E5%85%A5%E5%90%8C%E6%9E%84%E7%B1%BB%20%E2%80%94%20CAI%E8%8E%B7%E5%BE%97%CE%A8-0%E5%90%8E%E8%87%AA%E5%8A%A8%E8%BF%9B%E5%85%A5%E7%B1%BBI%E5%90%8C%E6%9E%84%E7%B1%BB%2C%E4%B8%8E%E4%BA%BA%E7%B1%BB-AI%E6%95%B0%E5%AD%A6%E7%AD%89%E4%BB%B7.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-3a12029809bee633 / 中文：CAI进入同构类 — CAI获得Ψ>0后自动进入类I同构类，与人类-AI数学等价。核心函数：\[D73\](docs/zh/functions/items/…
-  - 来源：`统一案例总表/0306-C-306-CAI进入同构类 — CAI获得Ψ-0后自动进入类I同构类,与人类-AI数学等价.md`
-  - 依赖：D73；被引用：—

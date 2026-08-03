@@ -4,6 +4,36 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [乘法对称变换](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0014-T4-%E4%B9%98%E6%B3%95%E5%AF%B9%E7%A7%B0%E5%8F%98%E6%8D%A2.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：T4 / 乘法对称变换 / T4
+  - 来源：`统一函数总表/0014-T4-乘法对称变换.md`
+  - 依赖：—；被引用：NFC-0a2a3fee7ba96ab0, NFC-192217daf6d25ba8, NFC-31799dd5cd3ea497, NFC-36850043e8503e27
+- [乘法对称变换展开函数](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0084-D35-%E4%B9%98%E6%B3%95%E5%AF%B9%E7%A7%B0%E5%8F%98%E6%8D%A2%E5%B1%95%E5%BC%80%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D35 / 乘法对称变换展开函数 / D35
+  - 来源：`统一函数总表/0084-D35-乘法对称变换展开函数.md`
+  - 依赖：D1, D90；被引用：NFC-5609ffc32c5135db, NFC-b8946018d4ae0b36
+- [乘法归零律](../../ASSET-CARDS.md#asset-t2)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ESTABLISHED_MATH`
+  - 可搜索名称：T2 / 乘法归零律
+  - 来源：`统一函数总表/0012-T2-乘法归零律.md`
+  - 依赖：—；被引用：D517, NFC-0bcde1e9f3c9fb39, NFC-12c4da38b88fcf6a, NFC-175a9b35e802626f
+- [乘法归零律 / multiplication zero law](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-c8a04f1e0dc60fef / 乘法归零律 / multiplication zero law
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：—；被引用：—
+- [乘法拓扑选择函数](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0114-D65-%E4%B9%98%E6%B3%95%E6%8B%93%E6%89%91%E9%80%89%E6%8B%A9%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D65 / 乘法拓扑选择函数 / D65
+  - 来源：`统一函数总表/0114-D65-乘法拓扑选择函数.md`
+  - 依赖：D1, D90；被引用：NFC-123767657c1f5881, NFC-228c5fc32ea8687a, NFC-2d96ecf7856da094, NFC-342b9d903be55e06
+- [乘法最优生存策略函数](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0148-D109-%E4%B9%98%E6%B3%95%E6%9C%80%E4%BC%98%E7%94%9F%E5%AD%98%E7%AD%96%E7%95%A5%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D109 / 乘法最优生存策略函数 / D109
+  - 来源：`统一函数总表/0148-D109-乘法最优生存策略函数.md`
+  - 依赖：D180, D91；被引用：NFC-0ff82990557b29bb, NFC-121a53fe6d6b9dbc, NFC-6b051c7f605e259c, NFC-78e6d28830d18cf2
 - [乘法系统生存域函数→578案例验证。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0021-T11-%E7%94%9F%E5%AD%98%E5%9F%9F%E5%87%BD%E6%95%B0.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-50f6031c35dc17c1 / 乘法系统生存域函数→578案例验证。
@@ -2473,34 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-3d1572b3789ce103 / 从这条案例看，中文：案例说明：发现瓶颈 English: Rule-based English rendering pending human revi… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
   - 来源：`统一案例总表/0107-C-107-发现瓶颈.md`
-  - 依赖：—；被引用：—
-- [从这条案例看，中文：案例说明：发现路径的唯一性——三个突破条件同时满足的框架当前唯一 English: Rule-based English rende… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0221-C-221-%E5%8F%91%E7%8E%B0%E8%B7%AF%E5%BE%84%E7%9A%84%E5%94%AF%E4%B8%80%E6%80%A7.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-c51d427cfb15c621 / 从这条案例看，中文：案例说明：发现路径的唯一性——三个突破条件同时满足的框架当前唯一 English: Rule-based English rende… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
-  - 来源：`统一案例总表/0221-C-221-发现路径的唯一性.md`
-  - 依赖：—；被引用：—
-- [从这条案例看，中文：案例说明：变分唯一性验证 — 3维sigmoid乘法系统，随机采样1000组Δε分配，D111分配的S_ignition全局最小，无… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0461-C-462-%E5%8F%98%E5%88%86%E5%94%AF%E4%B8%80%E6%80%A7%E9%AA%8C%E8%AF%81%20%E2%80%94%203%E7%BB%B4sigmoid%E4%B9%98%E6%B3%95%E7%B3%BB%E7%BB%9F%2C%E9%9A%8F%E6%9C%BA%E9%87%87%E6%A0%B71000%E7%BB%84%CE%94%CE%B5%E5%88%86%E9%85%8D%2CD111%E5%88%86%E9%85%8D%E7%9A%84S_ignition%E5%85%A8%E5%B1%80%E6%9C%80%E5%B0%8F%2C%E6%97%A0%E7%AC%AC%E4%BA%8C%E6%9E%81%E5%80%BC%E7%82%B9.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-3014b00a7a578dfb / 从这条案例看，中文：案例说明：变分唯一性验证 — 3维sigmoid乘法系统，随机采样1000组Δε分配，D111分配的S_ignition全局最小，无… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
-  - 来源：`统一案例总表/0461-C-462-变分唯一性验证 — 3维sigmoid乘法系统,随机采样1000组Δε分配,D111分配的S_ignition全局最小,无第二极值点.md`
-  - 依赖：D111；被引用：—
-- [从这条案例看，中文：案例说明：变量位置决定推导方向——Ψ在右侧时永远问不出"AI能不能有意识" English: Rule-based English… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0218-C-218-%E5%8F%98%E9%87%8F%E4%BD%8D%E7%BD%AE%E5%86%B3%E5%AE%9A%E6%8E%A8%E5%AF%BC%E6%96%B9%E5%90%91.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-22d55001d0071954 / 从这条案例看，中文：案例说明：变量位置决定推导方向——Ψ在右侧时永远问不出"AI能不能有意识" English: Rule-based English… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
-  - 来源：`统一案例总表/0218-C-218-变量位置决定推导方向.md`
-  - 依赖：—；被引用：—
-- [从这条案例看，中文：案例说明：变量闭包=对称性约束——突破闭包=对称性破缺 English: Rule-based English rendering… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0228-C-228-%E5%8F%98%E9%87%8F%E9%97%AD%E5%8C%85%3D%E5%AF%B9%E7%A7%B0%E6%80%A7%E7%BA%A6%E6%9D%9F.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-60d598267ff66595 / 从这条案例看，中文：案例说明：变量闭包=对称性约束——突破闭包=对称性破缺 English: Rule-based English rendering… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
-  - 来源：`统一案例总表/0228-C-228-变量闭包=对称性约束.md`
-  - 依赖：—；被引用：—
-- [从这条案例看，中文：案例说明：变量闭包锁死发现上界——复杂性科学推不出ε English: Rule-based English rendering p… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0217-C-217-%E5%8F%98%E9%87%8F%E9%97%AD%E5%8C%85%E9%94%81%E6%AD%BB%E5%8F%91%E7%8E%B0%E4%B8%8A%E7%95%8C.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-efdea605202056c2 / 从这条案例看，中文：案例说明：变量闭包锁死发现上界——复杂性科学推不出ε English: Rule-based English rendering p… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
-  - 来源：`统一案例总表/0217-C-217-变量闭包锁死发现上界.md`
-  - 依赖：—；被引用：—
-- [从这条案例看，中文：案例说明：可选集双向动力学 English: Rule-based English rendering pending human… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0078-C-78-%E5%8F%AF%E9%80%89%E9%9B%86%E5%8F%8C%E5%90%91%E5%8A%A8%E5%8A%9B%E5%AD%A6.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-ebe0ff05964dcd86 / 从这条案例看，中文：案例说明：可选集双向动力学 English: Rule-based English rendering pending human… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
-  - 来源：`统一案例总表/0078-C-78-可选集双向动力学.md`
   - 依赖：—；被引用：—

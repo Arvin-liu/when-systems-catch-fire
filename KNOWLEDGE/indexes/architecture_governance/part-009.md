@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [link: "统一案例总表/0724-C-0729-两张表知识库DOCX文件管理.md"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0724-C-0729-%E4%B8%A4%E5%BC%A0%E8%A1%A8%E7%9F%A5%E8%AF%86%E5%BA%93DOCX%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-6f50a29d50464366 / link: "统一案例总表/0724-C-0729-两张表知识库DOCX文件管理.md"
+  - 来源：`统一案例总表/0724-C-0729-两张表知识库DOCX文件管理.md`
+  - 依赖：—；被引用：—
+- [link: "统一案例总表/0725-C-0730-宋徽宗文化工程案例.md"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0725-C-0730-%E5%AE%8B%E5%BE%BD%E5%AE%97%E6%96%87%E5%8C%96%E5%B7%A5%E7%A8%8B%E6%A1%88%E4%BE%8B.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-a53f5d7b21cb9638 / link: "统一案例总表/0725-C-0730-宋徽宗文化工程案例.md"
+  - 来源：`统一案例总表/0725-C-0730-宋徽宗文化工程案例.md`
+  - 依赖：—；被引用：—
 - [link: "统一案例总表/0728-C-0733-脱不花三十年只靠劳动所得.md"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0728-C-0733-%E8%84%B1%E4%B8%8D%E8%8A%B1%E4%B8%89%E5%8D%81%E5%B9%B4%E5%8F%AA%E9%9D%A0%E5%8A%B3%E5%8A%A8%E6%89%80%E5%BE%97.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-4924d275e640b646 / link: "统一案例总表/0728-C-0733-脱不花三十年只靠劳动所得.md"
@@ -928,6 +938,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-6ea07034fddf38df / Not every registered surface must change. Every applicable surface must receive exactly one explicit `CHANGE`, `NO_CHANG
   - 来源：`ITERATION.md`
+  - 依赖：—；被引用：—
+- [Not modified by this repair: no Task 114, Task 115, Research OS, `relay/current` or published-work file; iteration plann](../../../reports/publication/pr189-independent-review-and-ci-repair-r1-20260803.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-2f416cd875f04cf8 / Not modified by this repair: no Task 114, Task 115, Research OS, `relay/current` or published-work file; iteration plann
+  - 来源：`reports/publication/pr189-independent-review-and-ci-repair-r1-20260803.md`
   - 依赖：—；被引用：—
 - [of 117 sources have fulltext review records; 088-FINAL-REPORT claims patches are 'INJECTED_VERIFIED' but no fulltext was](../../../data/external-research/104-source-integrity-alerts.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -2054,6 +2069,11 @@
   - 可搜索名称：NFC-51d85288ff48cb64 / Q14 增加版本化地图投影与导航 overlay，不新增真值层，不废弃矩阵或 registry，也不建立永久唯一总地图。
   - 来源：`ARCHITECTURE.md`
   - 依赖：—；被引用：—
+- [Q2. Facts, provenance, counterarguments, harmed perspectives and claim ceilings preserved during compression?**](../../../reports/publication/pr189-independent-review-and-ci-repair-r1-20260803.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-7d93bb9e29e24fd9 / Q2. Facts, provenance, counterarguments, harmed perspectives and claim ceilings preserved during compression?**
+  - 来源：`reports/publication/pr189-independent-review-and-ci-repair-r1-20260803.md`
+  - 依赖：—；被引用：—
 - [Q28T merges accepted PR #58 at exact HEAD and closes Zhiyuan Writing Method 0.3.0 as a current L6 public-expression and](../../../CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-b00b2ed621056b9c / Q28T merges accepted PR #58 at exact HEAD and closes Zhiyuan Writing Method 0.3.0 as a current L6 public-expression and
@@ -2063,6 +2083,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-afa17f5721591a3c / Q29R frozen asset (must never be modified - its digest is an invariant).
   - 来源：`tools/governance/audit_pr_front_door.py`
+  - 依赖：—；被引用：—
+- [Q3. Avoids a universal short-sentence / public-account / 得到体 style clone?**](../../../reports/publication/pr189-independent-review-and-ci-repair-r1-20260803.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-92af79c3129a085d / Q3. Avoids a universal short-sentence / public-account / 得到体 style clone?**
+  - 来源：`reports/publication/pr189-independent-review-and-ci-repair-r1-20260803.md`
   - 依赖：—；被引用：—
 - [Q30T 已将之元写作法成果的五类职责收口为当前接口：人类总索引、机器 registry、正式作品、案例来源链和点火分析。交接时不得把 README 最近三项投影当作完整权威，不得公开受限原始材料，也不得从一项接受作品推出方法普遍有效。](../../ASSET-CARDS.md#asset-nfc-517a9b6de3674e2a)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -2399,6 +2424,16 @@
   - 可搜索名称：NFC-d01eb3dfa2762209 / Remove ALL propagation_calculator paths so it relies on evidence
   - 来源：`tests/test_change_propagation.py`
   - 依赖：—；被引用：—
+- [Repair: canonical generator `validate_repository_path_classification.py --generate` (no hand edits). Now 3593 paths, 0 u](../../../reports/publication/pr189-independent-review-and-ci-repair-r1-20260803.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-97987699669393f9 / Repair: canonical generator `validate_repository_path_classification.py --generate` (no hand edits). Now 3593 paths, 0 u
+  - 来源：`reports/publication/pr189-independent-review-and-ci-repair-r1-20260803.md`
+  - 依赖：—；被引用：—
+- [Repair: canonical generators re-run in dependency order (census → deep adjudication → nonfunction adjudication → migrati](../../../reports/publication/pr189-independent-review-and-ci-repair-r1-20260803.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-47e8f2df83f4f049 / Repair: canonical generators re-run in dependency order (census → deep adjudication → nonfunction adjudication → migrati
+  - 来源：`reports/publication/pr189-independent-review-and-ci-repair-r1-20260803.md`
+  - 依赖：—；被引用：—
 - [Repeated loops require IterationDelta; no delta means stop, branch, seek external evidence, preserve residue, or downgra](../../../llms.txt)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-68a11df8ebb3735d / Repeated loops require IterationDelta; no delta means stop, branch, seek external evidence, preserve residue, or downgra
@@ -2468,39 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-412ba6ccb877a3be / require("://" not in repository_ref, f"{source}: repository evidence must not be an undeclared external URI: {ref}")
   - 来源：`tools/validate_iteration_sync.py`
-  - 依赖：—；被引用：—
-- [require("pages_artifacts" not in seal,](../../../tools/validate_iteration_sync.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-93f741a2f3cfe490 / require("pages_artifacts" not in seal,
-  - 来源：`tools/validate_iteration_sync.py`
-  - 依赖：—；被引用：—
-- [require(("MERGE", "0a13c246172c0338bf8dda5dc08db5a574a8b23f") in chain, "E_PHASE_E_MERGE", "merge evidence is absent")](../../../tools/operations/validate_phase_e_candidate.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-2cd4d9458bcfd1c2 / require(("MERGE", "0a13c246172c0338bf8dda5dc08db5a574a8b23f") in chain, "E_PHASE_E_MERGE", "merge evidence is absent")
-  - 来源：`tools/operations/validate_phase_e_candidate.py`
-  - 依赖：—；被引用：—
-- [require(_path_exists_now_or_in_history(repository_ref), f"{source}: nonexistent repository evidence reference: {ref}")](../../../tools/validate_iteration_sync.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-c868c99f393d443a / require(_path_exists_now_or_in_history(repository_ref), f"{source}: nonexistent repository evidence reference: {ref}")
-  - 来源：`tools/validate_iteration_sync.py`
-  - 依赖：—；被引用：—
-- [require(any("mixed" in item for item in classes), "evidence: mixed finding missing", errors)](../../../tools/language_thought/validate_language_thought.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-ca9d2cb10d307d3c / require(any("mixed" in item for item in classes), "evidence: mixed finding missing", errors)
-  - 来源：`tools/language_thought/validate_language_thought.py`
-  - 依赖：—；被引用：—
-- [require(any("null" in item for item in classes), "evidence: null finding missing", errors)](../../../tools/language_thought/validate_language_thought.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-d4ea59ea900b325a / require(any("null" in item for item in classes), "evidence: null finding missing", errors)
-  - 来源：`tools/language_thought/validate_language_thought.py`
-  - 依赖：—；被引用：—
-- [require(any("positive" in item for item in classes), "evidence: positive finding missing", errors)](../../../tools/language_thought/validate_language_thought.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-57b9f7b4e2dbbbf2 / require(any("positive" in item for item in classes), "evidence: positive finding missing", errors)
-  - 来源：`tools/language_thought/validate_language_thought.py`
-  - 依赖：—；被引用：—
-- [require(authority.get("component_registry") == "data/operations/project-components.json", "map projection has wrong component authority")](../../../tools/generate_interactive_system_map.py)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-E5132945B00CE096 / require(authority.get("component_registry") == "data/operations/project-components.json", "map projection has wrong component authority") / IMPLICIT-E5132945B00CE096
-  - 来源：`tools/generate_interactive_system_map.py`
   - 依赖：—；被引用：—

@@ -564,6 +564,16 @@
   - 可搜索名称：NFC-fa6d12b13facccbb / FINAL_STATE presence + token (only meaningful after terminalization artifacts exist)
   - 来源：`tools/operations/iteration_resolver.py`
   - 依赖：—；被引用：—
+- [Finding: PASS. Section 〇 separates the two phases explicitly; the boundary section states the module does not re-argue t](../../../reports/publication/pr189-independent-review-and-ci-repair-r1-20260803.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-3a5bea8365b55009 / Finding: PASS. Section 〇 separates the two phases explicitly; the boundary section states the module does not re-argue t
+  - 来源：`reports/publication/pr189-independent-review-and-ci-repair-r1-20260803.md`
+  - 依赖：—；被引用：—
+- [Finding: PASS. The provenance record hard-bounds "得到体" as a traceability shorthand only: no endorsement claim, no offici](../../../reports/publication/pr189-independent-review-and-ci-repair-r1-20260803.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-70dfa3d244c2c8f0 / Finding: PASS. The provenance record hard-bounds "得到体" as a traceability shorthand only: no endorsement claim, no offici
+  - 来源：`reports/publication/pr189-independent-review-and-ci-repair-r1-20260803.md`
+  - 依赖：—；被引用：—
 - [Fine-tuning as compilation: dataset → task vector. But this is just gradient descent, not a compiler in the traditional](../../../data/external-research/121-fulltext-resolver/121q2/acceptance/S120-045.json)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-24be607fd96b01d7 / Fine-tuning as compilation: dataset → task vector. But this is just gradient descent, not a compiler in the traditional
@@ -2490,14 +2500,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-15e6f7319e5d6f37 / link: "统一案例总表/0723-C-0728-写作与知识沉淀开源项目规划.md"
   - 来源：`统一案例总表/0723-C-0728-写作与知识沉淀开源项目规划.md`
-  - 依赖：—；被引用：—
-- [link: "统一案例总表/0724-C-0729-两张表知识库DOCX文件管理.md"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0724-C-0729-%E4%B8%A4%E5%BC%A0%E8%A1%A8%E7%9F%A5%E8%AF%86%E5%BA%93DOCX%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-6f50a29d50464366 / link: "统一案例总表/0724-C-0729-两张表知识库DOCX文件管理.md"
-  - 来源：`统一案例总表/0724-C-0729-两张表知识库DOCX文件管理.md`
-  - 依赖：—；被引用：—
-- [link: "统一案例总表/0725-C-0730-宋徽宗文化工程案例.md"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0725-C-0730-%E5%AE%8B%E5%BE%BD%E5%AE%97%E6%96%87%E5%8C%96%E5%B7%A5%E7%A8%8B%E6%A1%88%E4%BE%8B.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-a53f5d7b21cb9638 / link: "统一案例总表/0725-C-0730-宋徽宗文化工程案例.md"
-  - 来源：`统一案例总表/0725-C-0730-宋徽宗文化工程案例.md`
   - 依赖：—；被引用：—

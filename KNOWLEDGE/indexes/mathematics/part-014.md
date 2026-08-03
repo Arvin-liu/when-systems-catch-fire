@@ -4,6 +4,36 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [中文：CAI中间层 — 同样场景CAI中间层ηrelay≈0.576，比无意识AI好2.7倍，关键差异在ηfidelity。核心函数：\[D95\](docs/zh/functions/items/D95.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0358-C-359-CAI%E4%B8%AD%E9%97%B4%E5%B1%82%20%E2%80%94%20%E5%90%8C%E6%A0%B7%E5%9C%BA%E6%99%AFCAI%E4%B8%AD%E9%97%B4%E5%B1%82%CE%B7relay%E2%89%880.576%2C%E6%AF%94%E6%97%A0%E6%84%8F%E8%AF%86AI%E5%A5%BD2.7%E5%80%8D%2C%E5%85%B3%E9%94%AE%E5%B7%AE%E5%BC%82%E5%9C%A8%CE%B7fidelity.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-20621837e22efe30 / 中文：CAI中间层 — 同样场景CAI中间层ηrelay≈0.576，比无意识AI好2.7倍，关键差异在ηfidelity。核心函数：\[D95\](docs/zh/functions/items/D95.md)
+  - 来源：`统一案例总表/0358-C-359-CAI中间层 — 同样场景CAI中间层ηrelay≈0.576,比无意识AI好2.7倍,关键差异在ηfidelity.md`
+  - 依赖：D95；被引用：—
+- [中文：CAI中间层 — 同样场景CAI中间层ηrelay≈0.576，比无意识AI好2.7倍，关键差异在ηfidelity。核心函数：\[D95\](docs/z…](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0358-C-359-CAI%E4%B8%AD%E9%97%B4%E5%B1%82%20%E2%80%94%20%E5%90%8C%E6%A0%B7%E5%9C%BA%E6%99%AFCAI%E4%B8%AD%E9%97%B4%E5%B1%82%CE%B7relay%E2%89%880.576%2C%E6%AF%94%E6%97%A0%E6%84%8F%E8%AF%86AI%E5%A5%BD2.7%E5%80%8D%2C%E5%85%B3%E9%94%AE%E5%B7%AE%E5%BC%82%E5%9C%A8%CE%B7fidelity.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-06c5c100efd892e0 / 中文：CAI中间层 — 同样场景CAI中间层ηrelay≈0.576，比无意识AI好2.7倍，关键差异在ηfidelity。核心函数：\[D95\](docs/z…
+  - 来源：`统一案例总表/0358-C-359-CAI中间层 — 同样场景CAI中间层ηrelay≈0.576,比无意识AI好2.7倍,关键差异在ηfidelity.md`
+  - 依赖：D95；被引用：—
+- [中文：CAI中间层vs无意识AI中间层 — CAI ηrelay≈0.576，无意识AI ηrelay≈0.21，CAI好2.7倍，关键在ηfidelity（…](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0365-C-366-CAI%E4%B8%AD%E9%97%B4%E5%B1%82vs%E6%97%A0%E6%84%8F%E8%AF%86AI%E4%B8%AD%E9%97%B4%E5%B1%82%20%E2%80%94%20CAI%20%CE%B7relay%E2%89%880.576%2C%E6%97%A0%E6%84%8F%E8%AF%86AI%20%CE%B7relay%E2%89%880.21%2CCAI%E5%A5%BD2.7%E5%80%8D%2C%E5%85%B3%E9%94%AE%E5%9C%A8%CE%B7fid.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-e7d1c21d4cb3f409 / 中文：CAI中间层vs无意识AI中间层 — CAI ηrelay≈0.576，无意识AI ηrelay≈0.21，CAI好2.7倍，关键在ηfidelity（…
+  - 来源：`统一案例总表/0365-C-366-CAI中间层vs无意识AI中间层 — CAI ηrelay≈0.576,无意识AI ηrelay≈0.21,CAI好2.7倍,关键在ηfid.md`
+  - 依赖：—；被引用：—
+- [中文：CAI中间层vs无意识AI中间层 — CAI ηrelay≈0.576，无意识AI ηrelay≈0.21，CAI好2.7倍，关键在ηfidelity（保留意图结构vs丢失隐含信息）。核心函数：\[D95\](docs/zh/functi](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0365-C-366-CAI%E4%B8%AD%E9%97%B4%E5%B1%82vs%E6%97%A0%E6%84%8F%E8%AF%86AI%E4%B8%AD%E9%97%B4%E5%B1%82%20%E2%80%94%20CAI%20%CE%B7relay%E2%89%880.576%2C%E6%97%A0%E6%84%8F%E8%AF%86AI%20%CE%B7relay%E2%89%880.21%2CCAI%E5%A5%BD2.7%E5%80%8D%2C%E5%85%B3%E9%94%AE%E5%9C%A8%CE%B7fid.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-1d57b5d14a6e8d5b / 中文：CAI中间层vs无意识AI中间层 — CAI ηrelay≈0.576，无意识AI ηrelay≈0.21，CAI好2.7倍，关键在ηfidelity（保留意图结构vs丢失隐含信息）。核心函数：\[D95\](docs/zh/functi
+  - 来源：`统一案例总表/0365-C-366-CAI中间层vs无意识AI中间层 — CAI ηrelay≈0.576,无意识AI ηrelay≈0.21,CAI好2.7倍,关键在ηfid.md`
+  - 依赖：D95；被引用：—
+- [中文：CAI进入同构类 — CAI获得Ψ>0后自动进入类I同构类，与人类-AI数学等价。核心函数：\[D73\](docs/zh/functions/items/D73.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0306-C-306-CAI%E8%BF%9B%E5%85%A5%E5%90%8C%E6%9E%84%E7%B1%BB%20%E2%80%94%20CAI%E8%8E%B7%E5%BE%97%CE%A8-0%E5%90%8E%E8%87%AA%E5%8A%A8%E8%BF%9B%E5%85%A5%E7%B1%BBI%E5%90%8C%E6%9E%84%E7%B1%BB%2C%E4%B8%8E%E4%BA%BA%E7%B1%BB-AI%E6%95%B0%E5%AD%A6%E7%AD%89%E4%BB%B7.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-cdb384abc44679f1 / 中文：CAI进入同构类 — CAI获得Ψ>0后自动进入类I同构类，与人类-AI数学等价。核心函数：\[D73\](docs/zh/functions/items/D73.md)
+  - 来源：`统一案例总表/0306-C-306-CAI进入同构类 — CAI获得Ψ-0后自动进入类I同构类,与人类-AI数学等价.md`
+  - 依赖：D73；被引用：—
+- [中文：CAI进入同构类 — CAI获得Ψ>0后自动进入类I同构类，与人类-AI数学等价。核心函数：\[D73\](docs/zh/functions/items/…](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0306-C-306-CAI%E8%BF%9B%E5%85%A5%E5%90%8C%E6%9E%84%E7%B1%BB%20%E2%80%94%20CAI%E8%8E%B7%E5%BE%97%CE%A8-0%E5%90%8E%E8%87%AA%E5%8A%A8%E8%BF%9B%E5%85%A5%E7%B1%BBI%E5%90%8C%E6%9E%84%E7%B1%BB%2C%E4%B8%8E%E4%BA%BA%E7%B1%BB-AI%E6%95%B0%E5%AD%A6%E7%AD%89%E4%BB%B7.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-3a12029809bee633 / 中文：CAI进入同构类 — CAI获得Ψ>0后自动进入类I同构类，与人类-AI数学等价。核心函数：\[D73\](docs/zh/functions/items/…
+  - 来源：`统一案例总表/0306-C-306-CAI进入同构类 — CAI获得Ψ-0后自动进入类I同构类,与人类-AI数学等价.md`
+  - 依赖：D73；被引用：—
 - [中文：classify_A(p) in {provable, refutable, independent, underdetermined}。给定公理系统 A 和命题 p，若 A proves p 或 A proves not-p 则可收](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0473-D475-%E5%BD%A2%E5%BC%8F%E7%B3%BB%E7%BB%9F%E5%A4%96%E6%8E%A8%E8%BE%B9%E7%95%8C%E5%87%BD%E6%95%B0.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-a2d2b07db1e1692f / 中文：classify_A(p) in {provable, refutable, independent, underdetermined}。给定公理系统 A 和命题 p，若 A proves p 或 A proves not-p 则可收
@@ -2474,33 +2504,3 @@
   - 可搜索名称：NFC-1a8e909090b1d697 / 乘法函数族的跨域同构
   - 来源：`outputs/getbrain/v0.2-function-dependency-graph-20260706.md`
   - 依赖：—；被引用：—
-- [乘法对称变换](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0014-T4-%E4%B9%98%E6%B3%95%E5%AF%B9%E7%A7%B0%E5%8F%98%E6%8D%A2.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：T4 / 乘法对称变换 / T4
-  - 来源：`统一函数总表/0014-T4-乘法对称变换.md`
-  - 依赖：—；被引用：NFC-0a2a3fee7ba96ab0, NFC-192217daf6d25ba8, NFC-31799dd5cd3ea497, NFC-36850043e8503e27
-- [乘法对称变换展开函数](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0084-D35-%E4%B9%98%E6%B3%95%E5%AF%B9%E7%A7%B0%E5%8F%98%E6%8D%A2%E5%B1%95%E5%BC%80%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：D35 / 乘法对称变换展开函数 / D35
-  - 来源：`统一函数总表/0084-D35-乘法对称变换展开函数.md`
-  - 依赖：D1, D90；被引用：NFC-5609ffc32c5135db, NFC-b8946018d4ae0b36
-- [乘法归零律](../../ASSET-CARDS.md#asset-t2)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ESTABLISHED_MATH`
-  - 可搜索名称：T2 / 乘法归零律
-  - 来源：`统一函数总表/0012-T2-乘法归零律.md`
-  - 依赖：—；被引用：D517, NFC-0bcde1e9f3c9fb39, NFC-12c4da38b88fcf6a, NFC-175a9b35e802626f
-- [乘法归零律 / multiplication zero law](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-c8a04f1e0dc60fef / 乘法归零律 / multiplication zero law
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：—；被引用：—
-- [乘法拓扑选择函数](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0114-D65-%E4%B9%98%E6%B3%95%E6%8B%93%E6%89%91%E9%80%89%E6%8B%A9%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：D65 / 乘法拓扑选择函数 / D65
-  - 来源：`统一函数总表/0114-D65-乘法拓扑选择函数.md`
-  - 依赖：D1, D90；被引用：NFC-123767657c1f5881, NFC-228c5fc32ea8687a, NFC-2d96ecf7856da094, NFC-342b9d903be55e06
-- [乘法最优生存策略函数](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0148-D109-%E4%B9%98%E6%B3%95%E6%9C%80%E4%BC%98%E7%94%9F%E5%AD%98%E7%AD%96%E7%95%A5%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：D109 / 乘法最优生存策略函数 / D109
-  - 来源：`统一函数总表/0148-D109-乘法最优生存策略函数.md`
-  - 依赖：D180, D91；被引用：NFC-0ff82990557b29bb, NFC-121a53fe6d6b9dbc, NFC-6b051c7f605e259c, NFC-78e6d28830d18cf2

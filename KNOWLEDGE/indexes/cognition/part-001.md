@@ -919,6 +919,11 @@
   - 可搜索名称：NFC-8be11e01b0e9287b / Positive claims must still be tied to evidence, version, test scope, and boundary conditions. Negative feedback is not t
   - 来源：`SUPPORT.md`
   - 依赖：—；被引用：—
+- [PR 189 Independent Method Review and CI Repair — Line B (Qwen 3.8 Max campaign)](../../ASSET-CARDS.md#asset-hr-e2be1a0c85b07db2)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `CANDIDATE_OR_PENDING_SOURCE`
+  - 可搜索名称：PR 189 Independent Method Review and CI Repair — Line B (Qwen 3.8 Max campaign) / pr189-independent-review-and-ci-repair-r1-20260803
+  - 来源：`reports/publication/pr189-independent-review-and-ci-repair-r1-20260803.md`
+  - 依赖：—；被引用：—
 - [print("emitted: factor_schema.json, dossiers/", len(inv), "files, decision_log.json,",](../../../tools/iteration_planner/emit_outputs.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-ba4938fa32825a25 / print("emitted: factor_schema.json, dossiers/", len(inv), "files, decision_log.json,",
@@ -1419,6 +1424,11 @@
   - 可搜索名称：NFC-79e0e59a82461d99 / \| 事件词汇化 \| 方式、路径、结果通过动词、复合和附加结构组织。 \| 当前证据不足以给出一般认知效应。 \|
   - 来源：`docs/language-thought/profiles/ja.md`
   - 依赖：—；被引用：—
+- [\| 史料／编年密集草稿 \| 事实多、观点隐、按时间线平铺 \| 重切分，找出认知迁移点 \|](../../../docs/publication/zhiyuan-writing-cognitive-migration-editorial-revision.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-6664a7e289072d87 / \| 史料／编年密集草稿 \| 事实多、观点隐、按时间线平铺 \| 重切分，找出认知迁移点 \|
+  - 来源：`docs/publication/zhiyuan-writing-cognitive-migration-editorial-revision.md`
+  - 依赖：—；被引用：—
 - [\| 数据集 \| 编号 \| 用途 \|](../../../outputs/audit/agent-project-understanding-20260708.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-1fbdbad2dad67cbd / \| 数据集 \| 编号 \| 用途 \|
@@ -1478,6 +1488,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-40a6d86540047fe7 / 三阶段操作协议验证 — 个人职业转型-阶段1(ε-θC,不满但没行动力,β小,可以探索各种方向);阶段2(ε≈θC,积累到临界点,β大,必须
   - 来源：`data/foundation/evidence/evidence.jsonl`
+  - 依赖：—；被引用：—
+- [下列六个微案例对应\[认知迁移编辑修订子模块\](../../../docs/publication/zhiyuan-writing-cognitive-migration-editorial-revision.md)的审查要求：至少四类“外露脚手架 → 结构认知迁移”转换，至少一例保留精确](../../../docs/publication/zhiyuan-writing-cognitive-migration-editorial-revision-examples.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-3179c876fd41986e / 下列六个微案例对应\[认知迁移编辑修订子模块\](../../../docs/publication/zhiyuan-writing-cognitive-migration-editorial-revision.md)的审查要求：至少四类“外露脚手架 → 结构认知迁移”转换，至少一例保留精确
+  - 来源：`docs/publication/zhiyuan-writing-cognitive-migration-editorial-revision-examples.md`
   - 依赖：—；被引用：—
 - [不是任何具体学科的替代品；现实结论必须连接外部证据。](../../../outputs/audit/agent-project-understanding-20260708.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -1729,6 +1744,11 @@
   - 可搜索名称：NFC-15149ae435592760 / 六、外部证据 pending
   - 来源：`outputs/collisions/20260711-disobedience-subjectivity/candidate-decision-summary.md`
   - 依赖：—；被引用：—
+- [六个案例共同说明：本子模块处理的是**认知迁移的可见性**，不是真值再论证。脚手架外露的句子（案例 1–4）通过结构承载被转化；精确且承担证据边界的否定（案例 5）被保留；夸大且压平论证的金句（案例 6）被驳回。四类转换 + 一保留 + 一](../../../docs/publication/zhiyuan-writing-cognitive-migration-editorial-revision-examples.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-f01c2da880688700 / 六个案例共同说明：本子模块处理的是**认知迁移的可见性**，不是真值再论证。脚手架外露的句子（案例 1–4）通过结构承载被转化；精确且承担证据边界的否定（案例 5）被保留；夸大且压平论证的金句（案例 6）被驳回。四类转换 + 一保留 + 一
+  - 来源：`docs/publication/zhiyuan-writing-cognitive-migration-editorial-revision-examples.md`
+  - 依赖：—；被引用：—
 - [关键发现：A1-A3=认知空间投影](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0642-C-647-%E9%80%80%E5%87%BA%E6%9D%83%E7%A9%BA%E9%97%B4%E6%A1%88%E4%BE%8B27.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-875d101c10833930 / 关键发现：A1-A3=认知空间投影
@@ -1971,6 +1991,11 @@
   - 可搜索名称：NFC-7243e9abe3faa13c / 对应条目：D244 自主意识涌现临界条件（量化相关）、D173 显态粘性（表演化固化）。
   - 来源：`outputs/collisions/20260708-teacher-competition/notes.md`
   - 依赖：D173, D244；被引用：—
+- [对比案例 1 中被转换的句子，区别在于：案例 1 的“不是……而是……”把整个认知迁移一次性宣布完毕；本句的“并不是说……没有足够依据”是在划清论证边界，二者功能不同，不能机械统一处理。](../../../docs/publication/zhiyuan-writing-cognitive-migration-editorial-revision-examples.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-1ba90026fe2a1dde / 对比案例 1 中被转换的句子，区别在于：案例 1 的“不是……而是……”把整个认知迁移一次性宣布完毕；本句的“并不是说……没有足够依据”是在划清论证边界，二者功能不同，不能机械统一处理。
+  - 来源：`docs/publication/zhiyuan-writing-cognitive-migration-editorial-revision-examples.md`
+  - 依赖：—；被引用：—
 - [当然，项目中的判断、取舍、发布、维护和责任仍由人类维护者承担。AI Agents 的输出需要被检查、修正、反驳和验证。它们并不替代人的判断，也不替代外部证据。](../../../ACKNOWLEDGEMENTS.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-6e4b3099629ffa1a / 当然，项目中的判断、取舍、发布、维护和责任仍由人类维护者承担。AI Agents 的输出需要被检查、修正、反驳和验证。它们并不替代人的判断，也不替代外部证据。
@@ -2046,10 +2071,20 @@
   - 可搜索名称：NFC-9a720a9cf5a0073e / 新 Agent 必须先读取 `docs/project-current-state.md` 与 `ITERATION.md`，再重新核验远端、分支、HEAD、开放 PR 和验证结果，不得把聊天记忆当权威。统计必须写出去重键、范围、单位和生成
   - 来源：`AI-HANDOFF.md`
   - 依赖：—；被引用：—
+- [方法来源记录：认知迁移编辑修订子模块](../../ASSET-CARDS.md#asset-hr-9094b2cb638397a8)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：方法来源记录：认知迁移编辑修订子模块 / cognitive-migration-editorial-revision-source
+  - 来源：`docs/publication/method-sources/cognitive-migration-editorial-revision-source.md`
+  - 依赖：—；被引用：—
 - [更新必要索引；](../../../docs/agent-trigger-phrases-20260708.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-ddcfe279a5dd0ad8 / 更新必要索引；
   - 来源：`docs/agent-trigger-phrases-20260708.md`
+  - 依赖：—；被引用：—
+- [本子模块处理的是另一个问题：草稿已经生成、事实边界与概念运动已稳定之后，怎样**重组这次运动在公共读者那里的可见方式**，使读者自己经历认知迁移，而不是由作者逐句机械宣布每个转折。](../../../docs/publication/zhiyuan-writing-cognitive-migration-editorial-revision.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-03a74f6731af16a4 / 本子模块处理的是另一个问题：草稿已经生成、事实边界与概念运动已稳定之后，怎样**重组这次运动在公共读者那里的可见方式**，使读者自己经历认知迁移，而不是由作者逐句机械宣布每个转折。
+  - 来源：`docs/publication/zhiyuan-writing-cognitive-migration-editorial-revision.md`
   - 依赖：—；被引用：—
 - [本收口只改变 121Q30 的生命周期表述：README、ARCHITECTURE、项目现状、导航、使用、AI/Agent/机器入口、版本记录和机器 registry 将成果展示描述为当前 L6 presentation/provenanc](../../../reports/operations/121Q30T-homepage-showcase-merge-current-closeout-audit.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
@@ -2060,6 +2095,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-649b9397abfdce53 / 本次公开作品没有复制原笔记，也没有沿用其“自我神化—政治用途—祥瑞景观—民间道教—行动主义—富兰克林”的排列。原文中无法在本轮独立定位、且不是成稿所必需的细节，例如“千道会”赏钱、人工驯鹤、九鼎与祥瑞目录、符箓步骤、安慰剂比例及富兰克林类比
   - 来源：`docs/publication/cases/song-huizong-taoism-1117-source.md`
+  - 依赖：—；被引用：—
+- [本段仅在草稿已有稳定事实边界、claim ceiling 与概念运动后启用，用于重组认知迁移的公共可见性。**可选、非强制**，长反思文、学术说明或文学随笔可整段留空或只取部分。字段顺序不是执行顺序。](../../../templates/publication/zhiyuan-writing-spec.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-82ce4c718268ef01 / 本段仅在草稿已有稳定事实边界、claim ceiling 与概念运动后启用，用于重组认知迁移的公共可见性。**可选、非强制**，长反思文、学术说明或文学随笔可整段留空或只取部分。字段顺序不是执行顺序。
+  - 来源：`templates/publication/zhiyuan-writing-spec.md`
   - 依赖：—；被引用：—
 - [某个具体叙事一定会改变某个人的理解：`pending`（需要个体认知实验）](../../../outputs/getbrain/classic-problems-benchmark-supplement-20260707.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -2160,6 +2200,16 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-f0947c9dacb64078 / 认知等效原理验证 — 组织诊断-观测到ε_eff下降30%,仅从ε_eff无法判断来源。潮汐力分析-经济维度ε_econ下降50%但社交维度
   - 来源：`data/foundation/evidence/evidence.jsonl`
+  - 依赖：—；被引用：—
+- [认知迁移编辑修订子模块](../../ASSET-CARDS.md#asset-hr-0a5e4005a933ea19)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：认知迁移编辑修订子模块 / zhiyuan-writing-cognitive-migration-editorial-revision
+  - 来源：`docs/publication/zhiyuan-writing-cognitive-migration-editorial-revision.md`
+  - 依赖：—；被引用：—
+- [认知迁移编辑修订子模块 — 审查笔记](../../ASSET-CARDS.md#asset-hr-deb3e834ad440e87)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：认知迁移编辑修订子模块 — 审查笔记 / zhiyuan-writing-cognitive-migration-editorial-revision-review
+  - 来源：`reports/publication/zhiyuan-writing-cognitive-migration-editorial-revision-review.md`
   - 依赖：—；被引用：—
 - [认知黑洞验证 — 家暴受害者-4维锁定(经济](../../../data/foundation/evidence/evidence.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`

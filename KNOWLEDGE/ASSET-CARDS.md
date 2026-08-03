@@ -150,6 +150,8 @@
 - [IGNITION-106: 下一任务交接](./cards/part-002.md#asset-hr-0a1370d6fff72a4c) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-0A1370D6FFF72A4C`
 <a id="asset-hr-0a190293ca8a50ae"></a>
 - [迁移与回滚](./cards/part-002.md#asset-hr-0a190293ca8a50ae) — `RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `HR-0A190293CA8A50AE`
+<a id="asset-hr-0a5e4005a933ea19"></a>
+- [认知迁移编辑修订子模块](./cards/part-002.md#asset-hr-0a5e4005a933ea19) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-0A5E4005A933EA19`
 <a id="asset-hr-0b2df1f7b457cbe6"></a>
 - [121Q2 Night Progress Report](./cards/part-002.md#asset-hr-0b2df1f7b457cbe6) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-0B2DF1F7B457CBE6`
 <a id="asset-hr-0dcc5422ea65d2e4"></a>
@@ -201,7 +203,7 @@
 <a id="asset-hr-252ed61cfaf40f35"></a>
 - [Agent 碰撞阶段收口审计（2026-07-08 23:55）](./cards/part-002.md#asset-hr-252ed61cfaf40f35) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-252ED61CFAF40F35`
 <a id="asset-hr-259784cecbb2dc49"></a>
-- [121Q13 Baseline And Overlap Audit](./cards/part-002.md#asset-hr-259784cecbb2dc49) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-259784CECBB2DC49`
+- [121Q13 Baseline And Overlap Audit](./cards/part-003.md#asset-hr-259784cecbb2dc49) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-259784CECBB2DC49`
 <a id="asset-hr-25ccad6cef81cbea"></a>
 - [当一支军队开始相信自己的背影](./cards/part-003.md#asset-hr-25ccad6cef81cbea) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-25CCAD6CEF81CBEA`
 <a id="asset-hr-25db71123fa1cbc7"></a>
@@ -301,7 +303,7 @@
 <a id="asset-hr-4a7f6b204cdcb0ee"></a>
 - [Validation summary](./cards/part-003.md#asset-hr-4a7f6b204cdcb0ee) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-4A7F6B204CDCB0EE`
 <a id="asset-hr-4b5539f6a578f48d"></a>
-- [输入材料快照 · 赛课机制下的教师生存困境](./cards/part-003.md#asset-hr-4b5539f6a578f48d) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-4B5539F6A578F48D`
+- [输入材料快照 · 赛课机制下的教师生存困境](./cards/part-004.md#asset-hr-4b5539f6a578f48d) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-4B5539F6A578F48D`
 <a id="asset-hr-4e500eb8be311cb7"></a>
 - [机制抽取（mechanism-extraction）](./cards/part-004.md#asset-hr-4e500eb8be311cb7) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-4E500EB8BE311CB7`
 <a id="asset-hr-4f3c4ff4a7ab0e3a"></a>
@@ -400,8 +402,10 @@
 - [Formalization roadmap](./cards/part-004.md#asset-hr-741abc37fd9e4409) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-741ABC37FD9E4409`
 <a id="asset-hr-7491533b5a81fa71"></a>
 - [历史函数资产全量登记](./cards/part-004.md#asset-hr-7491533b5a81fa71) — `RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `HR-7491533B5A81FA71`
+<a id="asset-hr-75430bb574c9c15b"></a>
+- [编辑修订 before/after 范例](./cards/part-005.md#asset-hr-75430bb574c9c15b) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-75430BB574C9C15B`
 <a id="asset-hr-75acdd1f73f32af7"></a>
-- [Full migration coverage](./cards/part-004.md#asset-hr-75acdd1f73f32af7) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-75ACDD1F73F32AF7`
+- [Full migration coverage](./cards/part-005.md#asset-hr-75acdd1f73f32af7) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-75ACDD1F73F32AF7`
 <a id="asset-hr-75b56a91c97f20be"></a>
 - [Future non-function claim admission protocol](./cards/part-005.md#asset-hr-75b56a91c97f20be) — `RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `HR-75B56A91C97F20BE`
 <a id="asset-hr-771c2981fcc20396"></a>
@@ -476,6 +480,8 @@
 - [E1 规范性审核 - 线性演化协议 (Linear-Evolution Protocol)](./cards/part-005.md#asset-hr-8f6026df1ef643fe) — `RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `HR-8F6026DF1EF643FE`
 <a id="asset-hr-8faeed857e0f9416"></a>
 - [点火项目整体认知初始化 — Agent 认知报告](./cards/part-005.md#asset-hr-8faeed857e0f9416) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-8FAEED857E0F9416`
+<a id="asset-hr-9094b2cb638397a8"></a>
+- [方法来源记录：认知迁移编辑修订子模块](./cards/part-005.md#asset-hr-9094b2cb638397a8) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-9094B2CB638397A8`
 <a id="asset-hr-91f57f34641602bd"></a>
 - [Task 98 remote truth and gap lock](./cards/part-005.md#asset-hr-91f57f34641602bd) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-91F57F34641602BD`
 <a id="asset-hr-92fc8f7bd633607c"></a>
@@ -497,11 +503,11 @@
 <a id="asset-hr-996b1e97820089e9"></a>
 - [v0.2 P0 收口复核审计](./cards/part-005.md#asset-hr-996b1e97820089e9) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-996B1E97820089E9`
 <a id="asset-hr-996ef89e3a670484"></a>
-- [函数资产注册表迁移 R2](./cards/part-005.md#asset-hr-996ef89e3a670484) — `RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `HR-996EF89E3A670484`
+- [函数资产注册表迁移 R2](./cards/part-006.md#asset-hr-996ef89e3a670484) — `RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `HR-996EF89E3A670484`
 <a id="asset-hr-9a0447fe84ecbc5f"></a>
-- [22 本书籍验证案例候选 · 暂存层](./cards/part-005.md#asset-hr-9a0447fe84ecbc5f) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-9A0447FE84ECBC5F`
+- [22 本书籍验证案例候选 · 暂存层](./cards/part-006.md#asset-hr-9a0447fe84ecbc5f) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-9A0447FE84ECBC5F`
 <a id="asset-hr-9a37e04e46e43cf2"></a>
-- [121Q4 Final Report: Function OS v0.1 Symbolic Reference Implementation](./cards/part-005.md#asset-hr-9a37e04e46e43cf2) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-9A37E04E46E43CF2`
+- [121Q4 Final Report: Function OS v0.1 Symbolic Reference Implementation](./cards/part-006.md#asset-hr-9a37e04e46e43cf2) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-9A37E04E46E43CF2`
 <a id="asset-hr-9ba686d027762485"></a>
 - [Architecture rebuild summary](./cards/part-006.md#asset-hr-9ba686d027762485) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-9BA686D027762485`
 <a id="asset-hr-9be719cb6ef0fd88"></a>
@@ -597,11 +603,11 @@
 <a id="asset-hr-bfe8f79290fb0e20"></a>
 - [121Q15 Q12-Q14 Cumulative Preflight](./cards/part-006.md#asset-hr-bfe8f79290fb0e20) — `RESULT_OR_ARTICLE` · `CANDIDATE_OR_PENDING_SOURCE` · `HR-BFE8F79290FB0E20`
 <a id="asset-hr-c023e21ce9a8a6d4"></a>
-- [Probabilistic System Dynamics / 概率—系统动力学](./cards/part-006.md#asset-hr-c023e21ce9a8a6d4) — `RESULT_OR_ARTICLE` · `CANDIDATE_OR_PENDING_SOURCE` · `HR-C023E21CE9A8A6D4`
+- [Probabilistic System Dynamics / 概率—系统动力学](./cards/part-007.md#asset-hr-c023e21ce9a8a6d4) — `RESULT_OR_ARTICLE` · `CANDIDATE_OR_PENDING_SOURCE` · `HR-C023E21CE9A8A6D4`
 <a id="asset-hr-c0254716ff47346d"></a>
-- [得到大脑输出索引](./cards/part-006.md#asset-hr-c0254716ff47346d) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-C0254716FF47346D`
+- [得到大脑输出索引](./cards/part-007.md#asset-hr-c0254716ff47346d) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-C0254716FF47346D`
 <a id="asset-hr-c0e9f4990481c808"></a>
-- [121Q21R Causal Asset Audit](./cards/part-006.md#asset-hr-c0e9f4990481c808) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-C0E9F4990481C808`
+- [121Q21R Causal Asset Audit](./cards/part-007.md#asset-hr-c0e9f4990481c808) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-C0E9F4990481C808`
 <a id="asset-hr-c190ac76ad5f8440"></a>
 - [121Q3 Night Final Report](./cards/part-007.md#asset-hr-c190ac76ad5f8440) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-C190AC76AD5F8440`
 <a id="asset-hr-c32095e69516906c"></a>
@@ -664,10 +670,14 @@
 - [121Q28R 之元写作法 0.2.0 修订审计](./cards/part-007.md#asset-hr-de57c4f1ec87eada) — `RESULT_OR_ARTICLE` · `CANDIDATE_OR_PENDING_SOURCE` · `HR-DE57C4F1EC87EADA`
 <a id="asset-hr-de9bf5c4104738d3"></a>
 - [v0.2 函数依赖图初稿](./cards/part-007.md#asset-hr-de9bf5c4104738d3) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-DE9BF5C4104738D3`
+<a id="asset-hr-deb3e834ad440e87"></a>
+- [认知迁移编辑修订子模块 — 审查笔记](./cards/part-007.md#asset-hr-deb3e834ad440e87) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-DEB3E834AD440E87`
 <a id="asset-hr-e14552c4c0658b5a"></a>
 - [083 Escalation Routing Report](./cards/part-007.md#asset-hr-e14552c4c0658b5a) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-E14552C4C0658B5A`
 <a id="asset-hr-e1d441f85e9b4b63"></a>
 - [085: Architecture Structure Freeze Report](./cards/part-007.md#asset-hr-e1d441f85e9b4b63) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-E1D441F85E9B4B63`
+<a id="asset-hr-e2be1a0c85b07db2"></a>
+- [PR 189 Independent Method Review and CI Repair — Line B (Qwen 3.8 Max campaign)](./cards/part-007.md#asset-hr-e2be1a0c85b07db2) — `RESULT_OR_ARTICLE` · `CANDIDATE_OR_PENDING_SOURCE` · `HR-E2BE1A0C85B07DB2`
 <a id="asset-hr-e31b1dff732ad215"></a>
 - [120 — Function OS Architecture Candidate Report](./cards/part-007.md#asset-hr-e31b1dff732ad215) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-E31B1DFF732AD215`
 <a id="asset-hr-e46a02fee84ab9b4"></a>
@@ -693,15 +703,15 @@
 <a id="asset-hr-ef6e1d0860ae3fef"></a>
 - [事实 Pending 总表（外部治理记录）](./cards/part-007.md#asset-hr-ef6e1d0860ae3fef) — `RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `HR-EF6E1D0860AE3FEF`
 <a id="asset-hr-f29753586c28f9ec"></a>
-- [Governance License Scope](./cards/part-007.md#asset-hr-f29753586c28f9ec) — `RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `HR-F29753586C28F9EC`
+- [Governance License Scope](./cards/part-008.md#asset-hr-f29753586c28f9ec) — `RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `HR-F29753586C28F9EC`
 <a id="asset-hr-f3d97a665e74558a"></a>
-- [迭代生命周期模型（事件溯源 · 任务 108 引入）](./cards/part-007.md#asset-hr-f3d97a665e74558a) — `RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `HR-F3D97A665E74558A`
+- [迭代生命周期模型（事件溯源 · 任务 108 引入）](./cards/part-008.md#asset-hr-f3d97a665e74558a) — `RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `HR-F3D97A665E74558A`
 <a id="asset-hr-f58d1b491fb96c27"></a>
-- [Licensing Model Candidate](./cards/part-007.md#asset-hr-f58d1b491fb96c27) — `RESULT_OR_ARTICLE` · `CANDIDATE_OR_PENDING_SOURCE` · `HR-F58D1B491FB96C27`
+- [Licensing Model Candidate](./cards/part-008.md#asset-hr-f58d1b491fb96c27) — `RESULT_OR_ARTICLE` · `CANDIDATE_OR_PENDING_SOURCE` · `HR-F58D1B491FB96C27`
 <a id="asset-hr-f664e539ab663124"></a>
-- [Ignition Atlas](./cards/part-007.md#asset-hr-f664e539ab663124) — `RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `HR-F664E539AB663124`
+- [Ignition Atlas](./cards/part-008.md#asset-hr-f664e539ab663124) — `RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `HR-F664E539AB663124`
 <a id="asset-hr-f8c21cd0cd6a1f34"></a>
-- [生命共同体价值审查（life-community-value-audit）](./cards/part-007.md#asset-hr-f8c21cd0cd6a1f34) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-F8C21CD0CD6A1F34`
+- [生命共同体价值审查（life-community-value-audit）](./cards/part-008.md#asset-hr-f8c21cd0cd6a1f34) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-F8C21CD0CD6A1F34`
 <a id="asset-hr-f92361487a1aad76"></a>
 - [项目本体版本升级审计 2026-07-09](./cards/part-008.md#asset-hr-f92361487a1aad76) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-F92361487A1AAD76`
 <a id="asset-hr-f9fe7eee273643e9"></a>

@@ -1839,6 +1839,11 @@
   - 可搜索名称：IMPLICIT-94BEA1FF86F1D6B7 / ## d260 — 偏差敏感度阈值函数 / IMPLICIT-94BEA1FF86F1D6B7
   - 来源：`analysis/corpus-relation/cluster_source_briefs/C000.md`
   - 依赖：—；被引用：—
+- [## F. 去公式化对比](../../../docs/publication/zhiyuan-writing-cognitive-migration-editorial-revision.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-F642426A02FA7263 / ## F. 去公式化对比 / IMPLICIT-F642426A02FA7263
+  - 来源：`docs/publication/zhiyuan-writing-cognitive-migration-editorial-revision.md`
+  - 依赖：—；被引用：—
 - [## hr-2bf3c3a1ac552110 — 历史函数资产深度裁决与注册表闭合 R1](../../../analysis/corpus-relation/cluster_source_briefs/C000.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-F970DB3660F2395D / ## hr-2bf3c3a1ac552110 — 历史函数资产深度裁决与注册表闭合 R1 / IMPLICIT-F970DB3660F2395D
@@ -2498,9 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-C0CEAEAE7232C3C1 / ## 关联函数 / Related Functions / IMPLICIT-C0CEAEAE7232C3C1 / IMPLICIT-0026301F130FD562
   - 来源：`统一案例总表/0724-C-0729-两张表知识库DOCX文件管理.md`
-  - 依赖：—；被引用：—
-- [## 关联函数 / Related Functions](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0679-C-0684-Kesten%E7%8C%9C%E6%83%B3.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-C357E95C4F84B97B / ## 关联函数 / Related Functions / IMPLICIT-C357E95C4F84B97B / IMPLICIT-0026301F130FD562
-  - 来源：`统一案例总表/0679-C-0684-Kesten猜想.md`
   - 依赖：—；被引用：—

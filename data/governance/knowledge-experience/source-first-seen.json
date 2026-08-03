@@ -64,8 +64,11 @@
     "docs/operations/stage-snapshot-publication.md": "2026-07-26",
     "docs/publication/cases/jin-rise-case-source.md": "2026-07-16",
     "docs/publication/cases/song-huizong-taoism-1117-source.md": "2026-08-02",
+    "docs/publication/method-sources/cognitive-migration-editorial-revision-source.md": "2026-08-03",
     "docs/publication/works/when-an-army-believes-its-own-back.md": "2026-07-16",
     "docs/publication/works/when-an-emperor-manufactures-heaven.md": "2026-08-02",
+    "docs/publication/zhiyuan-writing-cognitive-migration-editorial-revision-examples.md": "2026-08-03",
+    "docs/publication/zhiyuan-writing-cognitive-migration-editorial-revision.md": "2026-08-03",
     "docs/publication/zhiyuan-writing-examples.md": "2026-07-16",
     "docs/publication/zhiyuan-writing-method.md": "2026-07-16",
     "docs/publication/zhiyuan-writing-showcase.md": "2026-07-16",
@@ -282,6 +285,7 @@
     "reports/operations/lifecycle-audit-108.md": "2026-08-01",
     "reports/publication/jin-rise-point-fire-analysis.md": "2026-07-16",
     "reports/publication/song-huizong-taoism-point-fire-analysis.md": "2026-08-02",
+    "reports/publication/zhiyuan-writing-cognitive-migration-editorial-revision-review.md": "2026-08-03",
     "reports/reality/121Q16-action-selection.md": "2026-07-15",
     "reports/reality/121Q16-sustainability-signal-pilot.md": "2026-07-15",
     "reports/release/121Q10-emergent-state-license-finalization.md": "2026-07-15",
@@ -294,7 +298,7 @@
     "新故事/0001-S1-比刀剑更持久的，是共享观念.md": "2026-07-06",
     "新故事/INDEX.md": "2026-07-06"
   },
-  "entry_count": 292,
+  "entry_count": 296,
   "history_requirement": "FULL",
   "schema_version": "1.0.0"
 }
