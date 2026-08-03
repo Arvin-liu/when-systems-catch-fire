@@ -6,9 +6,9 @@
   "control_tip": "77a6ac4ed6f0b0bf9c3a5aef75f3b894829fe982",
   "r1_source_tip": "232299483f701e8304265c1484b5b50e5dcf2799",
   "research_branch": "research/eight-track-deep-validation-20260803-r2",
-  "current_track": "005-glp1-cardiovascular-evidence",
-  "current_checkpoint": "final",
-  "completed_tracks": ["004-clean-electricity-2025", "006-ai-coding-productivity"],
+  "current_track": "003-heat-action-plans",
+  "current_checkpoint": "not_started",
+  "completed_tracks": ["004-clean-electricity-2025", "006-ai-coding-productivity", "005-glp1-cardiovascular-evidence"],
   "track_order": [
     "004-clean-electricity-2025",
     "006-ai-coding-productivity",
@@ -19,6 +19,6 @@
     "007-ev-fire-risk",
     "008-microplastics-cardiovascular"
   ],
-  "last_checkpoint_commit": "PENDING_FINAL_COMMIT",
-  "updated_at": "2026-08-03T12:18:00+08:00"
+  "last_checkpoint_commit": "fb76381d",
+  "updated_at": "2026-08-03T11:50:23+08:00"
 }
