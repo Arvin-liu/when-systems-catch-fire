@@ -5,7 +5,7 @@
   "stage": "freeze",
   "state": "IN_PROGRESS",
   "frozen_commit": "ba00a700",
-  "checkpoint_commits": ["ba00a700", "PENDING_FREEZE_COMMIT"],
+  "checkpoint_commits": ["ba00a700", "3814adf5"],
   "required_layers": [
     "Urban 2025 102-location primary study full text and three-stage model",
     "public code, supplied outputs, HPP metadata and data availability audit",
