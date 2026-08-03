@@ -3,13 +3,20 @@
   "original_round": "003",
   "research_identity": "CAUSAL_POLICY_EVALUATION",
   "stage": "final",
-  "state": "IN_PROGRESS",
+  "state": "RESEARCH_COMPLETE_AWAITING_EXTERNAL_ADJUDICATION",
   "frozen_commit": "3814adf5",
-  "checkpoint_commits": ["3814adf5", "0c98b1b2", "ec9a3023", "008a1413", "50479178", "PENDING_FINAL_COMMIT"],
+  "verdict": "SUPPORTED_WITH_SCOPE_AFTER_DEEP_REVIEW",
+  "r1_verdict": "SUPPORTED_WITH_SCOPE",
+  "checkpoint_commits": ["3814adf5", "0c98b1b2", "008a1413", "50479178", "6ff57031"],
+  "analysis_superseded_commit": "ec9a3023",
   "evidence_commit": "0c98b1b2",
   "analysis_commit": "008a1413",
   "challenge_commit": "50479178",
-  "final_commit": "PENDING_FINAL_COMMIT",
+  "final_commit": "6ff57031",
+  "external_adjudication_required": true,
+  "formal_main_modified": false,
+  "relay_current_modified": false,
+  "pr_or_tag_created": false,
   "required_layers": [
     "Urban 2025 102-location primary study full text and three-stage model",
     "public code, supplied outputs, HPP metadata and data availability audit",
@@ -20,7 +27,7 @@
     "source dependence and causal claim ceiling"
   ],
   "claim_ceiling": "observational and quasi-experimental evidence about heat-plan implementation and heat-related mortality; no fixed universal effect and no single-element attribution",
-  "next_checkpoint": "complete",
-  "next_action": "complete the final report, mark this track awaiting external adjudication, then advance to 002",
-  "updated_at": "2026-08-03T12:17:43+08:00"
+  "next_checkpoint": "campaign_next_track_002",
+  "next_action": "advance in order to 002 only after this final checkpoint metadata is pushed",
+  "updated_at": "2026-08-03T12:19:26+08:00"
 }
