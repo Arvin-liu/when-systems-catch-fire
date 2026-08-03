@@ -37,10 +37,10 @@
     "D": {
       "branch": "qwen38max/whole-repo-state-convergence-r1-20260803",
       "parent_tip": "cac043d438bea6c4dc2c57c1169093df715ef5df",
-      "tip": null,
-      "pr": null,
+      "tip": "8f179fae03a2893fa106962ef450cb3dfcb6e872",
+      "pr": 193,
       "base": "main",
-      "status": "DRAFT_IN_PROGRESS"
+      "status": "DRAFT_PUSHED"
     }
   },
   "task115_local_recovery": {
