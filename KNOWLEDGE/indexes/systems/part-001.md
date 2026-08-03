@@ -284,6 +284,11 @@
   - 可搜索名称：NFC-8a48341e4ab90ab8 / "evidence_reference": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/134",
   - 来源：`tools/operations/run_stage_snapshot_responsibility_cases.py`
   - 依赖：—；被引用：—
+- ["failure": "NONFUNCTION_CLAIM_OUTPUT_DRIFT (generator ordering root cause, repaired in pass 2)"](../../../ROUND-LEDGER.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-d9b21d2ac89c6ae5 / "failure": "NONFUNCTION_CLAIM_OUTPUT_DRIFT (generator ordering root cause, repaired in pass 2)"
+  - 来源：`ROUND-LEDGER.jsonl`
+  - 依赖：—；被引用：—
 - ["Function OS v0.2 benchmark/evidence is not represented in mapped node "](../../../tools/propagation/system_map_audit.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-26e9f6bcfc825ec8 / "Function OS v0.2 benchmark/evidence is not represented in mapped node "
@@ -628,6 +633,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-db48d1487ad5cd31 / "RETAINED_AS_STRUCTURAL_METAPHOR": "Analogy or structural metaphor only; no homomorphism, isomorphism or causal identity
   - 来源：`tools/foundation/adjudicate_nonfunction_claims.py`
+  - 依赖：—；被引用：—
+- ["root_cause": "generator ordering dependency: pass-1 ran knowledge-experience rebuild AFTER nonfunction adjudication; th](../../../ROUND-LEDGER.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-773501ef696fa32e / "root_cause": "generator ordering dependency: pass-1 ran knowledge-experience rebuild AFTER nonfunction adjudication; th
+  - 来源：`ROUND-LEDGER.jsonl`
   - 依赖：—；被引用：—
 - ["sections": \["1 Introduction", "2 Hypernetworks", "3 Experiments", "4 Analysis", "5 Related Work", "6 Conclusion"\],](../../../scripts/external-research/121_generate_evidence_cards.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
@@ -2487,14 +2497,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-a21481e5bba1112e / CAUSAL 必须有结构因果模型、干预语义与识别依据；否则是机制假说。
   - 来源：`FOUNDATION.md`
-  - 依赖：—；被引用：—
-- [causal_identification: 250/250 PARTIAL](../../../data/discipline-projection/087-execution-report.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-a04b9437a289ec5b / causal_identification: 250/250 PARTIAL
-  - 来源：`data/discipline-projection/087-execution-report.md`
-  - 依赖：—；被引用：—
-- [causal_like = {"CAUSAL_IDENTIFICATION", "MECHANISM_ALTERNATIVE"}](../../../tools/research_os/adapters.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-ef53a4f632f33490 / causal_like = {"CAUSAL_IDENTIFICATION", "MECHANISM_ALTERNATIVE"}
-  - 来源：`tools/research_os/adapters.py`
   - 依赖：—；被引用：—

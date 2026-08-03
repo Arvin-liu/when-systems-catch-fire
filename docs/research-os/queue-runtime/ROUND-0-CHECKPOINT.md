@@ -35,3 +35,9 @@ Remote exact-head run 30829240122 (workflow_dispatch, head 066f530d) FAILED at `
 Pass 2 re-ran the canonical generator chain in dependency order (knowledge before nonfunction) to fixed point. Full CI-step-order replay now exits 0 for every foundation step, and all remaining workflow steps (iteration sync, phase D/E, system map, stage snapshots, front door, language-thought, knowledge determinism, unittests) exit 0. Research OS tests still pass. This head is pushed for a second exact-head remote verification.
 
 Resumable instruction for any future drift of this class: run the chain in the order recorded in ROUND-LEDGER.jsonl `repair_pass_2.fix`, then replay the CI step order before pushing.
+
+## Pass 3 — interpreter-version root cause (verified)
+
+Remote run 30832717871 (head fa530044) failed with the same drift. Controlled experiment: a fresh venv at Python 3.12.13 (CI's exact version) regenerated `data/foundation/nonfunction-claims/`; 10 of 15 outputs differ from the Python 3.14.6 generation. Local green was a same-version artifact: generation and verification both ran on 3.14, while CI regenerates under 3.12 and compares against committed bytes.
+
+Pass 3 rebuilt the whole canonical generator chain under Python 3.12.13 to fixed point. The complete CI step order (foundation, governance incl. determinism, operations, language-thought) now exits 0 under 3.12.13, and Research OS + lifecycle tests pass. Resume rule recorded in ROUND-LEDGER.jsonl: generate and verify Foundation outputs with the CI interpreter version; local-only green under another interpreter is not CI evidence.

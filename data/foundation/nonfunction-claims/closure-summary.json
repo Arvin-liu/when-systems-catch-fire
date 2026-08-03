@@ -2,7 +2,7 @@
   "active_conclusion_rebounds": 0,
   "assertion_type_distribution": {
     "DESCRIPTIVE": 363,
-    "EMPIRICAL": 4916,
+    "EMPIRICAL": 4920,
     "INTERPRETIVE": 2675,
     "MATHEMATICAL": 2797,
     "METAPHYSICAL": 870,
@@ -10,8 +10,8 @@
     "UNRESOLVED": 6384
   },
   "blocked_conclusion_rebounds": 5,
-  "candidate_fragments": 31229,
-  "canonical_claims": 18187,
+  "candidate_fragments": 31233,
+  "canonical_claims": 18191,
   "claim_class_distribution": {
     "CROSS_DOMAIN_CORRESPONDENCE": 2208,
     "DESCRIPTIVE_REPOSITORY_CLAIM": 363,
@@ -19,7 +19,7 @@
     "IMPOSSIBILITY_OR_UNIVERSAL_CLAIM": 793,
     "INTERPRETATION_OR_FRAMEWORK_CLAIM": 467,
     "LAW_OR_PRINCIPLE_CLAIM": 210,
-    "MECHANISM_OR_CAUSAL_CLAIM": 2224,
+    "MECHANISM_OR_CAUSAL_CLAIM": 2228,
     "NORMATIVE_OR_GOVERNANCE_CLAIM": 182,
     "ONTOLOGICAL_OR_METAPHYSICAL_CLAIM": 870,
     "PREDICTION_OR_FORECAST": 218,
@@ -30,10 +30,10 @@
   "conclusion_rebound_candidates": 83,
   "dependency_edges": 5781,
   "disposition_distribution": {
-    "ACCEPTED_AS_DEFINITION": 3694,
+    "ACCEPTED_AS_DEFINITION": 3696,
     "ACCEPTED_AS_PROVED_MATHEMATICAL_RESULT": 1,
     "HISTORICAL_ONLY": 6533,
-    "PENDING_EMPIRICAL_TEST": 1035,
+    "PENDING_EMPIRICAL_TEST": 1037,
     "PENDING_LITERATURE_ADJUDICATION": 1518,
     "PENDING_PROOF": 1033,
     "QUARANTINED_AMBIGUOUS": 2477,
@@ -46,14 +46,14 @@
     "WITHDRAWN_UNSUPPORTED": 5
   },
   "existing_claims_mapped": 678,
-  "explicit_quarantine_or_pending": 6070,
+  "explicit_quarantine_or_pending": 6072,
   "explicitly_unresolved_dependency_edges": 57,
   "external_evidence_distribution": {
-    "E0": 11648,
+    "E0": 11652,
     "E1": 6539
   },
   "mathematical_maturity_distribution": {
-    "M0": 15142,
+    "M0": 15146,
     "M1": 3040,
     "M3": 1,
     "M4": 3,

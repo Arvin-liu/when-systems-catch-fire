@@ -81,7 +81,7 @@
 |`docs/research-os/R2-AI-CODING-LOOP.md`|14|0|否|
 |`docs/research-os/RESEARCH-OS-ARCHITECTURE.md`|28|0|否|
 |`docs/research-os/REVIEW-GATES.md`|14|0|否|
-|`docs/research-os/queue-runtime/ROUND-0-CHECKPOINT.md`|5|0|否|
+|`docs/research-os/queue-runtime/ROUND-0-CHECKPOINT.md`|7|0|否|
 |`llms.txt`|46|0|否|
 |`reports/foundation-architecture/101-human-readable-surfaces-self-correction-closeout.md`|11|0|否|
 |`reports/operations/102-knowledge-experience-audit.md`|3|0|否|

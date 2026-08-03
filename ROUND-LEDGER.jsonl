@@ -54,6 +54,14 @@
           "conclusion": "failure",
           "failed_step": "Run python3 tools/foundation/validate_foundation.py",
           "failure": "NONFUNCTION_CLAIM_OUTPUT_DRIFT (generator ordering root cause, repaired in pass 2)"
+        },
+        {
+          "run_id": 30832717871,
+          "head": "fa53004499f1b4ab40c34bda950f7f869ccbaf3c",
+          "event": "workflow_dispatch",
+          "conclusion": "failure",
+          "failed_step": "Run python3 tools/foundation/validate_foundation.py",
+          "failure": "NONFUNCTION_CLAIM_OUTPUT_DRIFT (interpreter-version root cause; repaired in pass 3 under python 3.12.13)"
         }
       ],
       "repair_pass_2": {
@@ -62,6 +70,13 @@
         "fix": "re-ran the canonical generator chain in dependency order (manifest -> census -> function adjudication -> governance outputs -> knowledge experience -> nonfunction adjudication -> migration) to fixed point; no hand-edited generated output",
         "verification": "CI-step-order local replay: adjudicate_core, migrate --check, validate_foundation (63/63), census --check, function adjudication --check, claim governance, function closure, math checks, nonfunction --check, nonfunction closure, core claims, 079, 080 all exit 0; iteration sync, phase D/E, system map, stage snapshots, human front door, language-thought, knowledge determinism, language-thought unittest, foundation unittest trio all exit 0; Research OS tests all pass",
         "lessons_for_resume": "knowledge-experience and any generator writing tracked text content must run BEFORE nonfunction adjudication; verify by replaying the CI step order, not only validate_foundation"
+      },
+      "repair_pass_3": {
+        "trigger": "remote run 30832717871 at head fa530044 FAILED again: NONFUNCTION_CLAIM_OUTPUT_DRIFT despite full local green (python 3.14.6)",
+        "root_cause_verified": "interpreter-version-dependent generated output. Evidence: regenerated data/foundation/nonfunction-claims with Python 3.12.13 (CI's exact version, fresh venv, requirements-foundation.txt) and diffed against the 3.14-generated committed files: 10 of 15 outputs differ (adjudication-ledger, claim-inventory, claim-registry, closure-summary, dependency-graph, discovery-coverage, evidence-lineage, inference-risk-report, source-discovery, unresolved-quarantine). Local local-only checks passed because both generation and verification ran on 3.14; CI regenerates under 3.12 and compares against the committed bytes.",
+        "fix": "rebuilt the ENTIRE canonical generator chain under Python 3.12.13 (.venv-ci) in dependency order (manifest -> census -> function adjudication -> governance outputs -> knowledge experience -> nonfunction adjudication -> migration) to fixed point; no hand-edited generated output",
+        "verification_under_3.12.13": "CI-step-order replay all exit 0: adjudicate_core, migrate --check, validate_foundation, census --check, function adjudication --check, claim governance, function closure, math checks, nonfunction --check, nonfunction closure, core claims, 079, 080, path accounting --check; governance human-results/self-correction/knowledge --check + validators + determinism; iteration sync, phase D/E, system map, stage snapshots, human front door, language-thought all 0; Research OS tests 3/3; lifecycle tests PASS",
+        "resume_rule": "always generate and verify Foundation outputs with the CI interpreter version (currently 3.12); a local-only green under a different interpreter is not CI evidence"
       }
     }
   ]

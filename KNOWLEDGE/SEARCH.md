@@ -6,7 +6,7 @@
 
 - [数学与形式化](./indexes/mathematics.md) — 11012 条主归属记录
 - [物理与统一问题](./indexes/physics.md) — 420 条主归属记录
-- [系统论与机制建模](./indexes/systems.md) — 2679 条主归属记录
+- [系统论与机制建模](./indexes/systems.md) — 2683 条主归属记录
 - [认知、Agent 与行动](./indexes/cognition.md) — 454 条主归属记录
 - [架构、治理与自我纠错](./indexes/architecture_governance.md) — 7950 条主归属记录
 - [文章、写作与公共表达](./indexes/writing_publication.md) — 118 条主归属记录
