@@ -5,7 +5,7 @@
   "stage": "final",
   "state": "BOUNDED_NULL_OR_INSUFFICIENT_RESULT_COMPLETE",
   "frozen_commit": "d601d9a6",
-  "checkpoint_commits": ["d601d9a6", "99306233", "cc3693e0", "d78f6daf", "5522c8c6"],
+  "checkpoint_commits": ["d601d9a6", "99306233", "cc3693e0", "d78f6daf", "5522c8c6", "d9054c73"],
   "r1_verdict": "INSUFFICIENT_EVIDENCE",
   "claim_ceiling": "MNP detection and clinical association within explicitly bounded human samples; no general-population causal claim",
   "required_layers": [
@@ -44,6 +44,10 @@
     "causal_externalization": "NOT_SUPPORTED"
   },
   "final_outputs": ["FINAL-RESEARCH-REPORT.md", "LIMITATIONS-AND-OPEN-QUESTIONS.md", "CHANGE-FROM-R1.md"],
+  "evidence_commit": "cc3693e0",
+  "analysis_commit": "d78f6daf",
+  "challenge_commit": "5522c8c6",
+  "final_commit": "d9054c73",
   "final_verdict": "INSUFFICIENT_EVIDENCE_FOR_CAUSAL_CLAIM",
   "observational_association_verdict": "SUPPORTED_WITHIN_OBSERVATIONAL_COHORT",
   "tissue_replication_verdict": "SUPPORTED_WITH_METHOD_AND_TISSUE_SCOPE",
@@ -55,5 +59,5 @@
   "pr_or_tag_created": false,
   "next_checkpoint": "complete",
   "next_action": "after this final checkpoint is pushed, complete campaign-level verdict matrix, source-dependence report, lessons, and final campaign report",
-  "updated_at": "2026-08-03T14:35:00+08:00"
+  "updated_at": "2026-08-03T14:42:00+08:00"
 }
