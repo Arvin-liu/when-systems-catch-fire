@@ -9,6 +9,11 @@
       "pages": 50,
       "sha256": "b6d4a8e7d8aeed20cc9a4545e485fdc5496b5cc48470338d2d7662b1953e5765"
     },
+    "metr_arxiv_paper_version_check": {
+      "url": "https://arxiv.org/pdf/2507.09089",
+      "pages": 51,
+      "sha256": "3e18d9e097a3163dbae662e8b7c68ace0510be433891994b136ae7730beab25c"
+    },
     "metr_data_csv": {
       "url": "https://github.com/METR/Measuring-Early-2025-AI-on-Exp-OSS-Devs/blob/7ff2d7670235f531dff77eff58355bd77392f396/data_complete.csv",
       "sha256": "1493fc46dc379b15d2c39273fa7a7ee98767ff0d90dea113f300d7338f165746",
