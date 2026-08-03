@@ -2,10 +2,10 @@
   "track_id": "006-ai-coding-productivity",
   "original_round": "006",
   "research_identity": "DATA_REANALYSIS_AND_HETEROGENEITY_STUDY",
-  "stage": "challenge",
-  "state": "IN_PROGRESS",
+  "stage": "final",
+  "state": "RESEARCH_COMPLETE_AWAITING_EXTERNAL_ADJUDICATION",
   "frozen_commit": "e68720ee",
-  "checkpoint_commits": ["e68720ee", "2d4eaa03", "90d325aa"],
+  "checkpoint_commits": ["e68720ee", "2d4eaa03", "90d325aa", "5d073d52"],
   "evidence_scope": {
     "full_text_sources_read": 3,
     "method_and_data_pages_read": 5,
@@ -39,7 +39,15 @@
     "github_time_claim": "SUPPORTED_ONLY_FOR_COMPLETERS_ON_ONE_STANDARDIZED_TASK",
     "cross_study_average": "NOT_SUPPORTED"
   },
-  "next_checkpoint": "final",
-  "next_action": "rewrite the final report after challenge; carry every unresolved discrepancy and the Microsoft access gate into the limits and status",
-  "updated_at": "2026-08-03T11:17:13+08:00"
+  "final_outputs": [
+    "FINAL-RESEARCH-REPORT.md",
+    "LIMITATIONS-AND-OPEN-QUESTIONS.md",
+    "CHANGE-FROM-R1.md"
+  ],
+  "final_verdict": "SUPPORTED_WITH_SCOPE_AFTER_DEEP_REVIEW",
+  "cross_study_verdict": "CONTEXT_DEPENDENT_COMPETING_ESTIMANDS",
+  "final_commit_record": "The ordinary commit containing this final state is indexed at the next campaign checkpoint; no amend or force push is permitted.",
+  "next_checkpoint": "005 freeze",
+  "next_action": "begin the next ordered track only after this final commit is pushed",
+  "updated_at": "2026-08-03T11:19:33+08:00"
 }
