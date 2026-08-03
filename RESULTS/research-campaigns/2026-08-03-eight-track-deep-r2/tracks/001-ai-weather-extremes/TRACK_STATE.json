@@ -3,9 +3,9 @@
   "original_round": "001",
   "research_identity": "BENCHMARK_AND_METHOD_AUDIT",
   "stage": "final",
-  "state": "IN_PROGRESS",
+  "state": "RESEARCH_COMPLETE_AWAITING_EXTERNAL_ADJUDICATION",
   "frozen_commit": "ba1a1500",
-  "checkpoint_commits": ["ba1a1500", "cd3c8840", "e9f2ae02", "d58fd5b3"],
+  "checkpoint_commits": ["ba1a1500", "cd3c8840", "e9f2ae02", "d58fd5b3", "7b326474"],
   "r1_verdict": "PARTIALLY_SUPPORTED",
   "required_layers": [
     "承重论文与补充材料全文",
@@ -20,7 +20,14 @@
   "evidence_commit": "cd3c8840",
   "analysis_commit": "e9f2ae02",
   "challenge_commit": "d58fd5b3",
-  "next_checkpoint": "terminal",
-  "next_action": "publish final report, limitations, and R1 change receipt; mark the track awaiting external adjudication",
-  "updated_at": "2026-08-03T13:12:25+08:00"
+  "final_commit": "7b326474",
+  "final_verdict": "SUPPORTED_WITH_SCOPE_AFTER_DEEP_REVIEW",
+  "cross_benchmark_verdict": "CONTEXT_DEPENDENT_COMPETING_BENCHMARKS",
+  "external_adjudication_required": true,
+  "formal_main_modified": false,
+  "relay_current_modified": false,
+  "pr_or_tag_created": false,
+  "next_checkpoint": "complete",
+  "next_action": "advance in order to 007 only after this final checkpoint metadata is pushed",
+  "updated_at": "2026-08-03T13:13:04+08:00"
 }
