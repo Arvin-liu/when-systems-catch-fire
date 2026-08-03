@@ -1,0 +1,60 @@
+{
+  "commented_sensitivity_models": {
+    "mod4_comment_present": true,
+    "mod4_first_comment_line": 79,
+    "mod5_comment_present": true,
+    "mod5_first_comment_line": 82
+  },
+  "interpretation": "static and precomputed-output audit only; not a full numerical rerun",
+  "members": {
+    "stage1": "MCC-HEWS-main/01.stage1_erf_coefficient_preparation.R",
+    "stage2": "MCC-HEWS-main/02.stage2_meta_regression.R",
+    "stage3": "MCC-HEWS-main/03.stage3_attributable_mortality_calculation.R",
+    "stage4": "MCC-HEWS-main/04.stage4_final_analysis_and_reporting.R",
+    "tmeanperpar": "MCC-HEWS-main/data/tmeanperpar.csv"
+  },
+  "missing_raw_input_marker": {
+    "stage1_marker_line": 10,
+    "stage1_reads_MCCdata_20230830_RData": true
+  },
+  "package_sha256": "19a0aaa27419b9bc14e30498f37538add761f3ae7494e379d00e297a78b04193",
+  "provided_output_shapes": {
+    "afsimlist_0_hws0.csv": {"columns_first_row": 1002, "data_rows": 14, "simulation_columns_if_1002": 1000},
+    "afsimlist_0_hws1.csv": {"columns_first_row": 1002, "data_rows": 14, "simulation_columns_if_1002": 1000},
+    "afsimlist_1_hws0.csv": {"columns_first_row": 1002, "data_rows": 14, "simulation_columns_if_1002": 1000},
+    "afsimlist_1_hws1.csv": {"columns_first_row": 1002, "data_rows": 14, "simulation_columns_if_1002": 1000},
+    "ansimlist_0_hws0.csv": {"columns_first_row": 1002, "data_rows": 14, "simulation_columns_if_1002": 1000},
+    "ansimlist_0_hws1.csv": {"columns_first_row": 1002, "data_rows": 14, "simulation_columns_if_1002": 1000},
+    "ansimlist_1_hws0.csv": {"columns_first_row": 1002, "data_rows": 14, "simulation_columns_if_1002": 1000},
+    "ansimlist_1_hws1.csv": {"columns_first_row": 1002, "data_rows": 14, "simulation_columns_if_1002": 1000}
+  },
+  "stage3_simulation": {
+    "nsim_1000_present": true,
+    "nsim_line": 58,
+    "seed_12345_present": true,
+    "simulation_loop_marker_line": null
+  },
+  "stage4_interval_selection": {
+    "exact_1_colon_100_count": 54,
+    "first_exact_1_colon_100_line": 130,
+    "has_1000_marker": false
+  },
+  "tmeanperpar": {
+    "city_period_counts": {
+      "1990-1992": 29,
+      "1993-1995": 48,
+      "1996-1998": 77,
+      "1999-2001": 79,
+      "2002-2004": 102,
+      "2005-2007": 102,
+      "2008-2010": 102,
+      "2011-2013": 102,
+      "2014-2016": 73,
+      "2017-2019": 32
+    },
+    "hwc_counts": {"0": 331, "1": 34, "2": 96, "3": 285},
+    "hws_counts": {"0": 342, "1": 404},
+    "records": 746,
+    "unique_cities": 102
+  }
+}

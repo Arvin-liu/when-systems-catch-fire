@@ -1,0 +1,21 @@
+{
+  "track_id": "003-heat-action-plans",
+  "accessed_at": "2026-08-03T12:03:07+08:00",
+  "r1_source_tip": "232299483f701e8304265c1484b5b50e5dcf2799",
+  "sources": [
+    {"id":"U1","url":"https://helda.helsinki.fi/server/api/core/bitstreams/fb9de7d0-ca94-417c-ab38-b63c1f79418d/content","local_artifact":"not committed; page-read PDF","sha256":"5033e616d03ec9cb2351642b896abe9b1a0e17846be43eea440ff75be7d690d","access":"full PDF downloaded and read"},
+    {"id":"U2","url":"https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12724396/fullTextXML","local_artifact":"not committed; XML mirror","sha256":"a465df2ac64af268c20d42e87316985cfb779fd289951cdf4e2101f194ba02bd","access":"full XML downloaded"},
+    {"id":"U3","url":"https://zenodo.org/api/records/17507283","local_artifact":"not committed; JSON metadata","sha256":"8a805b745874158099148a51e4afc69bb36f9f7fbf871f012a9730d4418e4428","access":"API metadata read"},
+    {"id":"U4","url":"https://zenodo.org/records/17507283","local_artifact":"reproducibility/input/MCC-HEWS-main.zip","sha256":"19a0aaa27419b9bc14e30498f37538add761f3ae7494e379d00e297a78b04193","access":"zip downloaded, copied unchanged and hash locked","repository_head":"d12c2278890f206a42ea68693003b137020dd828"},
+    {"id":"W1","url":"https://iris.who.int/server/api/core/bitstreams/2b297924-2c87-4bd8-b2a0-918a67235bd3/content","local_artifact":"not committed; full PDF","sha256":"5c32fb24807c7ccce89c4d10635e893be6d79dc615a269204ed6fddeafbd57db","access":"full PDF downloaded and read"},
+    {"id":"W2","url":"https://www.who.int/docs/librariesprovider2/default-document-library/who-hhap-guidance-exec-summary-eng-2026.pdf?download=true&sfvrsn=bee14f79_7","local_artifact":"not committed; executive-summary PDF","sha256":"fcb5ee68300459cf4339d6e47175a758966fb94381d061bb5c4f1ce2c7d98756","access":"full PDF downloaded and read"},
+    {"id":"G1","url":"https://push-zb.helmholtz-munich.de/deliver.php?id=43055","local_artifact":"not committed; full PDF","sha256":"f412b3bd888ff43c888772fb5d35aba0e018e7d6b21ca5a08147a6e346f8075a","access":"full PDF downloaded and read"},
+    {"id":"M1","url":"https://strathprints.strath.ac.uk/81551/1/Dwyer_etal_IJB_2022_Evaluations_of_heat_action_plans_for_reducing_the_health_impacts_of_extreme_heat.pdf","local_artifact":"not committed; full PDF","sha256":"86bac368344e1c3027f618d65896c2efaef0e9bd20769ec2f3cebcfd0e394ec7","access":"full PDF downloaded and read"}
+  ],
+  "reproducibility_boundary": {
+    "full_stage1_rerun": false,
+    "reason": "public package does not include MCCdata_20230830.RData/raw mortality and this machine has no R executable",
+    "completed_in_this_stage": ["source hash lock", "R-script line audit", "field/value audit", "provided-output shape audit", "simulation-column discrepancy detection"],
+    "not_claimed": ["full numerical rerun", "exact replication of every headline confidence interval", "local action coverage measurement"]
+  }
+}

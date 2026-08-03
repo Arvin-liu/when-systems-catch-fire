@@ -7,7 +7,7 @@
   "r1_source_tip": "232299483f701e8304265c1484b5b50e5dcf2799",
   "research_branch": "research/eight-track-deep-validation-20260803-r2",
   "current_track": "003-heat-action-plans",
-  "current_checkpoint": "freeze",
+  "current_checkpoint": "evidence",
   "completed_tracks": ["004-clean-electricity-2025", "006-ai-coding-productivity", "005-glp1-cardiovascular-evidence"],
   "track_order": [
     "004-clean-electricity-2025",
@@ -20,5 +20,5 @@
     "008-microplastics-cardiovascular"
   ],
   "last_checkpoint_commit": "3814adf5",
-  "updated_at": "2026-08-03T11:59:54+08:00"
+  "updated_at": "2026-08-03T12:08:07+08:00"
 }

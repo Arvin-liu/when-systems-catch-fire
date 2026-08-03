@@ -2,10 +2,11 @@
   "track_id": "003-heat-action-plans",
   "original_round": "003",
   "research_identity": "CAUSAL_POLICY_EVALUATION",
-  "stage": "freeze",
+  "stage": "evidence",
   "state": "IN_PROGRESS",
-  "frozen_commit": "ba00a700",
-  "checkpoint_commits": ["ba00a700", "3814adf5"],
+  "frozen_commit": "3814adf5",
+  "checkpoint_commits": ["3814adf5", "PENDING_EVIDENCE_COMMIT"],
+  "evidence_commit": "PENDING_EVIDENCE_COMMIT",
   "required_layers": [
     "Urban 2025 102-location primary study full text and three-stage model",
     "public code, supplied outputs, HPP metadata and data availability audit",
@@ -18,5 +19,5 @@
   "claim_ceiling": "observational and quasi-experimental evidence about heat-plan implementation and heat-related mortality; no fixed universal effect and no single-element attribution",
   "next_checkpoint": "evidence",
   "next_action": "read the Urban paper, code/output package, WHO guidance, independent DID study and methods review with page, table, code-line and hash locators",
-  "updated_at": "2026-08-03T11:51:29+08:00"
+  "updated_at": "2026-08-03T12:08:07+08:00"
 }
