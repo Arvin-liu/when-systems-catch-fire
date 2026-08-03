@@ -1,0 +1,21 @@
+{
+  "track_id": "008-microplastics-cardiovascular",
+  "accessed_at": "2026-08-03T13:41:15+08:00",
+  "source_cache_note": "Full-text cache was kept outside the repository under the isolated R2 clone; hashes below bind the read objects. No cache files are promoted into formal knowledge.",
+  "objects": [
+    {"source_id":"S1","url":"https://pmc.ncbi.nlm.nih.gov/articles/PMC11009876/","local_read_object":"008-source-cache.9wewo4/marfella-2024-pmc.xml","sha256":"345d5859670aec4af89f9cfcc1aab8affb763be0ad3915dbe180c022298fc743","format":"HTML","scope":"full article HTML"},
+    {"source_id":"S1","url":"https://www.comfortncolor.com/HTML/2024%20New%20England%20Journal%20of%20Medicine_Microplastics%20and%20Nanoplastics%20in%20Atheromas%20and%20Cardiovascular%20Events.pdf","local_read_object":"008-source-cache.9wewo4/marfella-2024-full.pdf","sha256":"0255d2439ff3fe1b7700f2bdcaaa2acbd0733157a03d2b2b26d4edbebb74a7e4","format":"PDF","pages":10,"scope":"full article mirror PDF"},
+    {"source_id":"S2","url":"https://www.nejm.org/doi/abs/10.1056/NEJMc2404154","local_read_object":null,"sha256":null,"format":"HTML abstract via web","scope":"abstract and contamination critique; full body blocked 403"},
+    {"source_id":"S3","url":"https://pmc.ncbi.nlm.nih.gov/articles/PMC12506576/","local_read_object":"008-source-cache.9wewo4/massie-2025-pmc.html","sha256":"390d90b61db73b124cc73b1ee2da3277745549ad2bacc320f468a33ef579f5c1","format":"HTML","scope":"full article HTML"},
+    {"source_id":"S4","url":"https://pmc.ncbi.nlm.nih.gov/articles/PMC11800385/","local_read_object":"008-source-cache.9wewo4/rauert-2025-pmc.html","sha256":"f50a334b5a0152beda14aa73290eb9e8a186a0eaf40e94b5010cc4d605b24719","format":"HTML","scope":"full article HTML"},
+    {"source_id":"S5","url":"https://pmc.ncbi.nlm.nih.gov/articles/PMC12401730/","local_read_object":"008-source-cache.9wewo4/goldsworthy-2025-europepmc.xml","sha256":"a20426769fe73e4b16217a9a040a3a187cc2c477f4ebcf51c4fb8afb92e56692","format":"Europe PMC XML","scope":"full article XML"},
+    {"source_id":"S6","url":"https://ro.ecu.edu.au/ecuworks2022-2026/6821/","local_read_object":"institutional record read via web","sha256":null,"format":"HTML abstract/record","scope":"abstract and metadata; publisher full text blocked"},
+    {"source_id":"S7","url":"https://doi.org/10.1016/j.jhazmat.2024.133855","local_read_object":"publisher abstract read via web","sha256":null,"format":"HTML abstract","scope":"abstract only; full text blocked"}
+  ],
+  "blocked_or_not_recomputed": [
+    "S1 supplementary appendix link was visible in the full article but the PMC download endpoint returned an anti-bot proof-of-work page; no supplement-derived number is claimed.",
+    "S2 full correspondence body was not retrieved; only the indexed abstract and repository record are used.",
+    "S6 and S7 full publisher articles were not retrieved; their abstracts are not treated as full methods or causal evidence.",
+    "No individual-level S1 data or code were publicly retrieved; no individual-level reanalysis is claimed."
+  ]
+}

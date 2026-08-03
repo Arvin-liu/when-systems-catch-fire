@@ -2,10 +2,10 @@
   "track_id": "008-microplastics-cardiovascular",
   "original_round": "008",
   "research_identity": "CAUSAL_CONTAMINATION_AND_REPLICATION_AUDIT",
-  "stage": "freeze",
+  "stage": "evidence",
   "state": "IN_PROGRESS",
   "frozen_commit": "d601d9a6",
-  "checkpoint_commits": ["d601d9a6"],
+  "checkpoint_commits": ["d601d9a6", "99306233"],
   "r1_verdict": "INSUFFICIENT_EVIDENCE",
   "claim_ceiling": "MNP detection and clinical association within explicitly bounded human samples; no general-population causal claim",
   "required_layers": [
@@ -18,7 +18,15 @@
     "source-dependence and same-cohort reuse audit"
   ],
   "precommitted_downgrade": "if contamination controls or independent replication do not support the exposure classification, retain only a contested research signal; if no independent human replication is found, do not claim causal confirmation",
-  "next_checkpoint": "evidence",
-  "next_action": "read the original NEJM study and supplement, the methodological correspondence, independent human-sample evidence, and a current evidence synthesis in full",
+  "evidence_outputs": ["EVIDENCE-NOTES.md", "SOURCE-AUDIT.jsonl", "CLAIM-MATRIX.jsonl", "ACCESS-AND-HASH-MANIFEST.json"],
+  "evidence_findings": {
+    "original_observational_association": "SUPPORTED_WITHIN_COHORT",
+    "independent_tissue_presence": "SUPPORTED_WITH_METHOD_AND_TISSUE_SCOPE",
+    "contamination_and_matrix_interference": "UNRESOLVED_AND_MATERIAL",
+    "independent_clinical_event_replication": "NOT_FOUND",
+    "individual_level_reanalysis": "NOT_CLAIMED_NO_PUBLIC_DATA_RETRIEVED"
+  },
+  "next_checkpoint": "analysis",
+  "next_action": "analyze causal estimands, selection and confounding, differential measurement error, independent tissue replication, and the gap between presence and clinical events",
   "updated_at": "2026-08-03T13:29:26+08:00"
 }
