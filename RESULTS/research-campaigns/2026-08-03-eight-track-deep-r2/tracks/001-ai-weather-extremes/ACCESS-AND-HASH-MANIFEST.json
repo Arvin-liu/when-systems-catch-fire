@@ -1,0 +1,34 @@
+{
+  "track": "001-ai-weather-extremes",
+  "access_date_beijing": "2026-08-03",
+  "r1_report_sha256": "86f1630b1728833dfd5e375d3a6e52d28ae9dd0a4bc00ee08e687ab1103478e1",
+  "primary": {
+    "zhang_science_advances_pdf_sha256": "a8608305b038ba5b029e6ff72ab9ec92ec2de99d46e486bef40dd63204f2a86e",
+    "zhang_arxiv_article_supplement_pdf_sha256": "38bd3350b3a75548103142df902d5c651a175b0e1f4fe6316082b48c3d4ed4aa"
+  },
+  "competition": {
+    "olivetti_messori_gmd_pdf_sha256": "727361937d3fc903b34a414292ed18c204daf73a0dae659ed4d3c74e99996b85",
+    "pasche_extremes_pdf_sha256": "13d93fa8c48ea984b215c0f9591586a4395d7bbe219fa24244a1f91e98c428e5",
+    "fastnet_loss_pdf_sha256": "d551bdcffe6a2cc14737b72eb56b393f7c56b8f031c480e1296ab387ac6c4720",
+    "fastnet_architecture_pdf_sha256": "56c5b3d4a9a26a006655f0e3c51a6092cd920ad32e50d0bc0278826bf5b55280",
+    "ecmwf_review_pdf_sha256": "896efdf79596299e70ab4161e924de9ab2c06986d5d9d4e5c7426b8fa597ac38"
+  },
+  "public_data": {
+    "era5_zmetadata_sha256": "123bb279f6aa9c6375d5d2c2b95591aeddc797ec7400272a7b38f43f475b35e2",
+    "hres_zmetadata_sha256": "62811c8101885386acc33e3fe49641af74936d87eb2409ecf47dc193a777db9a",
+    "coarse_record_output_sha256": "25dc3969edfeed6d27cba268ac2fba62c2662e77f8dc44cfd1b38b83994a8b08",
+    "coarse_forecast_output_sha256": "6c73c4463648a04297429f4c609d981d9e1c9576901c56bae1dff58dd9514b8c"
+  },
+  "repositories": {
+    "weatherbench2": "95c36d547b22abc2d191451a580b0b194fde67ef",
+    "pasche_dlwp_eval_extremes": "b762f9850bf4b835674096c6a2aa306a939ee46f",
+    "nwp_benchmark": "48c5597af256e5933be4fc1e8a73d86e2bef611d"
+  },
+  "access_boundaries": {
+    "search_snippets_as_evidence": false,
+    "news_as_scientific_proof": false,
+    "R1_identity_promoted": false,
+    "paper_headline_reproduced_at_025_degree": false,
+    "coarse_public_reproduction_completed": true
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "dataset": {
+    "truth": "ERA5 1959-2022 6h 64x32",
+    "forecast": "WeatherBench2 public HRES/Pangu 2020",
+    "threshold": "1979-2017 strict per-grid per-calendar-month max",
+    "test": "2020 valid times",
+    "mask": "land_sea_mask>0.5 and latitude>-60",
+    "note": "coarse 64x32 reproduction, not Zhang 0.25-degree headline"
+  },
+  "results": [
+    {"model":"HRES","lead_hours":24,"n_valid_times":730,"record_count":349,"overall_rmse_K":0.8275911808013916,"record_rmse_K":1.438254952430725,"record_latitude_weighted_rmse_K":1.4082662549617435,"record_bias_K":-1.0034501552581787},
+    {"model":"HRES","lead_hours":48,"n_valid_times":728,"record_count":348,"overall_rmse_K":0.9451273679733276,"record_rmse_K":1.5639199018478394,"record_latitude_weighted_rmse_K":1.511055379613759,"record_bias_K":-1.0925519466400146},
+    {"model":"HRES","lead_hours":120,"n_valid_times":722,"record_count":348,"overall_rmse_K":1.6201516389846802,"record_rmse_K":2.626253604888916,"record_latitude_weighted_rmse_K":2.396239770947563,"record_bias_K":-1.7105903625488281},
+    {"model":"Pangu","lead_hours":24,"n_valid_times":730,"record_count":349,"overall_rmse_K":0.48725366592407227,"record_rmse_K":0.6762559413909912,"record_latitude_weighted_rmse_K":0.635137095426079,"record_bias_K":-0.35788410902023315},
+    {"model":"Pangu","lead_hours":48,"n_valid_times":728,"record_count":348,"overall_rmse_K":0.6842445135116577,"record_rmse_K":1.0603183507919312,"record_latitude_weighted_rmse_K":0.9729065656236547,"record_bias_K":-0.6658861637115479},
+    {"model":"Pangu","lead_hours":120,"n_valid_times":722,"record_count":348,"overall_rmse_K":1.522422194480896,"record_rmse_K":2.6350700855255127,"record_latitude_weighted_rmse_K":2.3048883517195713,"record_bias_K":-1.823288083076477}
+  ]
+}

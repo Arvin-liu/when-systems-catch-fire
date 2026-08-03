@@ -1,0 +1,13 @@
+{
+  "dataset": "WeatherBench2 ERA5 1959-2022-6h-64x32_equiangular_conservative.zarr",
+  "variable": "2m_temperature",
+  "train": "1979-2017 all 6-hourly times",
+  "test": "2020 00/12 UTC",
+  "definition": "per-grid-cell calendar-month training maximum; strict test exceedance",
+  "land_mask": ">0.5 and latitude>-60",
+  "coarse_land_record_count": 349,
+  "all_grid_record_count": 2674,
+  "by_month_land": {"1": 4, "2": 37, "3": 16, "4": 24, "5": 48, "6": 42, "7": 30, "8": 34, "9": 37, "10": 15, "11": 33, "12": 29},
+  "by_month_all": {"1": 245, "2": 159, "3": 87, "4": 196, "5": 198, "6": 159, "7": 201, "8": 456, "9": 423, "10": 258, "11": 161, "12": 131},
+  "note": "coarse-grid reconstruction; not the 0.25-degree headline count"
+}

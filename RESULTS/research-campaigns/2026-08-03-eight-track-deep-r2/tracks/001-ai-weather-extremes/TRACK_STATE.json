@@ -2,10 +2,10 @@
   "track_id": "001-ai-weather-extremes",
   "original_round": "001",
   "research_identity": "BENCHMARK_AND_METHOD_AUDIT",
-  "stage": "freeze",
+  "stage": "evidence",
   "state": "IN_PROGRESS",
-  "frozen_commit": "PENDING_FREEZE_COMMIT",
-  "checkpoint_commits": ["PENDING_FREEZE_COMMIT"],
+  "frozen_commit": "ba1a1500",
+  "checkpoint_commits": ["ba1a1500"],
   "r1_verdict": "PARTIALLY_SUPPORTED",
   "required_layers": [
     "承重论文与补充材料全文",
@@ -17,7 +17,7 @@
     "业务替代资格与高风险预警边界"
   ],
   "claim_ceiling": "specified benchmark and method judgment; no universal AI-versus-physics ranking and no operational replacement claim",
-  "next_checkpoint": "evidence",
-  "next_action": "read the承重 paper and supplement in full, then audit independent benchmark, model documentation, truth construction, and accessible data",
-  "updated_at": "2026-08-03T12:36:00+08:00"
+  "next_checkpoint": "analysis",
+  "next_action": "compare the primary record benchmark with the independent quantile/extreme benchmarks and document the coarse public-data reconstruction without treating it as the headline replication",
+  "updated_at": "2026-08-03T13:02:54+08:00"
 }
