@@ -1,0 +1,23 @@
+{
+  "track_id": "001-ai-weather-extremes",
+  "original_round": "001",
+  "research_identity": "BENCHMARK_AND_METHOD_AUDIT",
+  "stage": "freeze",
+  "state": "IN_PROGRESS",
+  "frozen_commit": "PENDING_FREEZE_COMMIT",
+  "checkpoint_commits": ["PENDING_FREEZE_COMMIT"],
+  "r1_verdict": "PARTIALLY_SUPPORTED",
+  "required_layers": [
+    "承重论文与补充材料全文",
+    "训练期、测试期、真值、模型版本、变量、提前期与极端定义",
+    "纯数据驱动、物理NWP、物理引导/混合模型 crosswalk",
+    "事件强度、事件计数、召回/漏报、RMSE与概率校准",
+    "独立竞争证据与来源依赖审查",
+    "至少一项可复算数值或有凭据的公开数据阻断",
+    "业务替代资格与高风险预警边界"
+  ],
+  "claim_ceiling": "specified benchmark and method judgment; no universal AI-versus-physics ranking and no operational replacement claim",
+  "next_checkpoint": "evidence",
+  "next_action": "read the承重 paper and supplement in full, then audit independent benchmark, model documentation, truth construction, and accessible data",
+  "updated_at": "2026-08-03T12:36:00+08:00"
+}
