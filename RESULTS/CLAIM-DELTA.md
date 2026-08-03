@@ -622,7 +622,7 @@
 
 - 状态：`ADDED`
 - Delta：`CD-6B43DC27FA46375B`
-- 关联断言：['NFC-0a749b51c4176de2', 'NFC-29fc66f1cb01e1a4', 'NFC-39aca0ba6e2da984', 'NFC-66a73679cd1beaa5', 'NFC-792e328c127de39c', 'NFC-8e0a679d8162d092', 'NFC-ba53c17ef0bef447']
+- 关联断言：['NFC-0019c5c22c9d1aba', 'NFC-0a749b51c4176de2', 'NFC-1e9d2654b3594a4b', 'NFC-29fc66f1cb01e1a4', 'NFC-2f77becd8a264b10', 'NFC-39aca0ba6e2da984', 'NFC-66a73679cd1beaa5', 'NFC-792e328c127de39c', 'NFC-8e0a679d8162d092', 'NFC-ba53c17ef0bef447']
 - 人类结果义务：`True`
 - 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
 

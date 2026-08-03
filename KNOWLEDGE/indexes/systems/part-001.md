@@ -289,6 +289,11 @@
   - 可搜索名称：NFC-d9b21d2ac89c6ae5 / "failure": "NONFUNCTION_CLAIM_OUTPUT_DRIFT (generator ordering root cause, repaired in pass 2)"
   - 来源：`ROUND-LEDGER.jsonl`
   - 依赖：—；被引用：—
+- ["failure": "NONFUNCTION_CLAIM_OUTPUT_DRIFT (interpreter-version root cause; repaired in pass 3 under python 3.12.13)"](../../../ROUND-LEDGER.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-3ee07452d971a8b1 / "failure": "NONFUNCTION_CLAIM_OUTPUT_DRIFT (interpreter-version root cause; repaired in pass 3 under python 3.12.13)"
+  - 来源：`ROUND-LEDGER.jsonl`
+  - 依赖：—；被引用：—
 - ["Function OS v0.2 benchmark/evidence is not represented in mapped node "](../../../tools/propagation/system_map_audit.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-26e9f6bcfc825ec8 / "Function OS v0.2 benchmark/evidence is not represented in mapped node "
@@ -637,6 +642,11 @@
 - ["root_cause": "generator ordering dependency: pass-1 ran knowledge-experience rebuild AFTER nonfunction adjudication; th](../../../ROUND-LEDGER.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-773501ef696fa32e / "root_cause": "generator ordering dependency: pass-1 ran knowledge-experience rebuild AFTER nonfunction adjudication; th
+  - 来源：`ROUND-LEDGER.jsonl`
+  - 依赖：—；被引用：—
+- ["root_cause_verified": "interpreter-version-dependent generated output. Evidence: regenerated data/foundation/nonfunctio](../../../ROUND-LEDGER.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-b9513c1926a0712b / "root_cause_verified": "interpreter-version-dependent generated output. Evidence: regenerated data/foundation/nonfunctio
   - 来源：`ROUND-LEDGER.jsonl`
   - 依赖：—；被引用：—
 - ["sections": \["1 Introduction", "2 Hypernetworks", "3 Experiments", "4 Analysis", "5 Related Work", "6 Conclusion"\],](../../../scripts/external-research/121_generate_evidence_cards.py)
@@ -2487,14 +2497,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-b6c1d5766444460a / Causal inference in the medical domain: a survey
   - 来源：`data/external-research/088-external-source-atlas-v2.jsonl`
-  - 依赖：—；被引用：—
-- [Causal inference to scope environmental impact assessment of renewable energy projects](../../../data/external-research/106-105-correction/106-corrected-source-pack.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-438a68c6d211cc99 / Causal inference to scope environmental impact assessment of renewable energy projects
-  - 来源：`data/external-research/106-105-correction/106-corrected-source-pack.jsonl`
-  - 依赖：—；被引用：—
-- [CAUSAL 必须有结构因果模型、干预语义与识别依据；否则是机制假说。](../../../FOUNDATION.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-a21481e5bba1112e / CAUSAL 必须有结构因果模型、干预语义与识别依据；否则是机制假说。
-  - 来源：`FOUNDATION.md`
   - 依赖：—；被引用：—

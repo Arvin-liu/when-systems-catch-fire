@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [统一函数总表/0109-D60-智慧干预效力函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-7d7ec7967d5e9718 / 统一函数总表/0109-D60-智慧干预效力函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D60；被引用：—
 - [统一函数总表/0110-D61-向上螺旋自维持函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-56c6bd2e2cefb22e / 统一函数总表/0110-D61-向上螺旋自维持函数.md
@@ -2499,8 +2504,3 @@
   - 可搜索名称：NFC-d5c832992f5c25f5 / 统一函数总表/0605-D595-绩效绑定裹挟.md
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：D595；被引用：—
-- [统一函数总表/0606-D596-避风港.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-6537a4e3275c3686 / 统一函数总表/0606-D596-避风港.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D596；被引用：—

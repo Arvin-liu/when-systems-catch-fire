@@ -1819,6 +1819,11 @@
   - 可搜索名称：NFC-6ec8e1b751683ab2 / "RESULTS/EVIDENCE-LINEAGE.md",
   - 来源：`tests/test_knowledge_experience.py`
   - 依赖：—；被引用：—
+- ["resume_rule": "always generate and verify Foundation outputs with the CI interpreter version (currently 3.12); a local-](../../../ROUND-LEDGER.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-f75c416434441879 / "resume_rule": "always generate and verify Foundation outputs with the CI interpreter version (currently 3.12); a local-
+  - 来源：`ROUND-LEDGER.jsonl`
+  - 依赖：—；被引用：—
 - ["RETAIN_SCOPED_DEFINITION": "DOWNGRADE_TO_STRUCTURAL_ANALOGY",](../../../tools/foundation/process_084_batch.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-f161b67f899fbe6f / "RETAIN_SCOPED_DEFINITION": "DOWNGRADE_TO_STRUCTURAL_ANALOGY",
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-a0f477c511a90a4e / "verified_exposure_events",
   - 来源：`tools/validate_sustainability_signal_interface.py`
-  - 依赖：—；被引用：—
-- ["verified_records": 0,](../../../evidence-program/tools/run_crossref_verification.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-bababe4247acd912 / "verified_records": 0,
-  - 来源：`evidence-program/tools/run_crossref_verification.py`
   - 依赖：—；被引用：—

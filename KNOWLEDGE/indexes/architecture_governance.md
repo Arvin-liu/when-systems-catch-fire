@@ -4,19 +4,19 @@
 
 索引按固定 500 条分片，避免单页过大而无法在 GitHub 渲染。分片连续覆盖本主题主归属资产，未按重要性删减。
 
-- [第 001 片](./architecture_governance/part-001.md)：1—500；"""121-validator.py — Validate 121 fulltext artifacts by actually reading files. → "verified_records": 0,
-- [第 002 片](./architecture_governance/part-002.md)：501—1000；"verified_registry_5": sum(r\["registry_object"\] for r in reviews)==5, → Bingham et al. exact full JMLR paper, all-page visual review and publication-near Pyro 0.3.1 source audit: named Python
-- [第 003 片](./architecture_governance/part-003.md)：1001—1500；blob = args.json.read_text(encoding="utf-8") + args.source.read_text(encoding="utf-8") + args.evidence_map.read_text(enc → def _unique(items: list\[str\], label: str, source: Path) -> None:
-- [第 004 片](./architecture_governance/part-004.md)：1501—2000；def _valid_attestation(): → def load_first_seen() -> dict\[str, str\]:
-- [第 005 片](./architecture_governance/part-005.md)：2001—2500；def load_gate_registry() -> dict: → def silent_actor_change() -> None:
-- [第 006 片](./architecture_governance/part-006.md)：2501—3000；def slug(value: str) -> str: → def test_missing_target_commit_fails():
-- [第 007 片](./architecture_governance/part-007.md)：3001—3500；def test_model_failure_universal_inference_is_reviewed(self): → dims=set(request.get('changed_dimensions',\['identity'\])); classes=set(request.get('change_classifications',\['EVIDENCE_UP
-- [第 008 片](./architecture_governance/part-008.md)：3501—4000；Direct evidence for separating novice/API specification, cAST intermediate representation, Python AST, and executable so → if dd.get("github_artifact_archive_digest") and dd.get("pages_payload_tar_digest"):
-- [第 009 片](./architecture_governance/part-009.md)：4001—4500；if dimensions.get("reproduction") == "REPRODUCED_IMPLEMENTATION_DEFECT" and not claims_defect: → P1 机器可读数据完整性审计
-- [第 010 片](./architecture_governance/part-010.md)：4501—5000；P1 机器数据接入碰撞工作流 · Smoke Test 审计（2026-07-08） → self.assertTrue(any("provenance_verified" in e for e in r.get("errors", \[\])),
-- [第 011 片](./architecture_governance/part-011.md)：5001—5500；self.assertTrue(any("provenance_verified" in e for e in r\["errors"\])) → What actual artifact, test, schema, state page, report or workflow is missing, stale or contradictory?
-- [第 012 片](./architecture_governance/part-012.md)：5501—6000；What evidence would show that no change is needed? → Θ := 统一元律
-- [第 013 片](./architecture_governance/part-013.md)：6001—6500；Θ 统一元律完整表达：** → 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0071-C-71-美国国家认同危机★.md`
-- [第 014 片](./architecture_governance/part-014.md)：6501—7000；原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0072-C-72-统一相变框架.md` → 基于任务 D 的三门学科理论核试跑，我将扩展为 12 个领域的证据制度卡片。
-- [第 015 片](./architecture_governance/part-015.md)：7001—7500；声称公平交易/合理使用适用于未经验证的情况 → 真实语义门槛必须人工确认；验证器不能替代人工审核。
-- [第 016 片](./architecture_governance/part-016.md)：7501—7950；真正必要的问题，然后给我一份个性化的首次使用建议。 → ：晋级门槛 + 初版验证器。machine_eligible=0/12，但验证器字段与 Schema 不一致。
+- [第 001 片](./architecture_governance/part-001.md)：1—500；"""121-validator.py — Validate 121 fulltext artifacts by actually reading files. → "verified_exposure_events",
+- [第 002 片](./architecture_governance/part-002.md)：501—1000；"verified_records": 0, → bind positive words such as `complete`, `correct`, `accepted`, `verified` and `green` to object, criterion, version, evi
+- [第 003 片](./architecture_governance/part-003.md)：1001—1500；Bingham et al. exact full JMLR paper, all-page visual review and publication-near Pyro 0.3.1 source audit: named Python → def _type_match(self, actual: str, expected: str) -> bool:
+- [第 004 片](./architecture_governance/part-004.md)：1501—2000；def _unique(items: list\[str\], label: str, source: Path) -> None: → def load_fabric(path: Path) -> dict:
+- [第 005 片](./architecture_governance/part-005.md)：2001—2500；def load_first_seen() -> dict\[str, str\]: → def sha_payload(value: object) -> str:
+- [第 006 片](./architecture_governance/part-006.md)：2501—3000；def silent_actor_change() -> None: → def test_missing_source_text_blocked(self):
+- [第 007 片](./architecture_governance/part-007.md)：3001—3500；def test_missing_target_commit_fails(): → dimension_ids = validate_dimensions(dimensions_document, evidence_ids, errors)
+- [第 008 片](./architecture_governance/part-008.md)：3501—4000；dims=set(request.get('changed_dimensions',\['identity'\])); classes=set(request.get('change_classifications',\['EVIDENCE_UP → if code in evidence_records:
+- [第 009 片](./architecture_governance/part-009.md)：4001—4500；if dd.get("github_artifact_archive_digest") and dd.get("pages_payload_tar_digest"): → P1 是数据结构层。
+- [第 010 片](./architecture_governance/part-010.md)：4501—5000；P1 机器可读数据完整性审计 → self.assertNotIn("pages_pipeline", closure\["resolved_components"\])
+- [第 011 片](./architecture_governance/part-011.md)：5001—5500；self.assertTrue(any("forbidden silent/unresolved" in error for error in errors), errors) → waiver can **never** raise a claim ceiling.
+- [第 012 片](./architecture_governance/part-012.md)：5501—6000；weaknesses.append("testability concern: legacy text mixes discovery and hypothesis without distinguishing testable predi → §5 将 G33 归为 governance（不阻断 machine_eligible），但 020 验证器把 G33 的 PENDING
+- [第 013 片](./architecture_governance/part-013.md)：6001—6500；α = 0.0（已收敛至最小必要结构） → 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0068-C-68-张居正改革★.md`
+- [第 014 片](./architecture_governance/part-014.md)：6501—7000；原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0069-C-69-福耀美国工厂★.md` → 在框架中新增轻量级 InterventionControlRef 对象(只含reference和metadata)，详细证据放在外部证据层
+- [第 015 片](./architecture_governance/part-015.md)：7001—7500；在线远端验证使用： → 目的地空间验证
+- [第 016 片](./architecture_governance/part-016.md)：7501—7953；相反，两个当前作品中的部分长句、结尾压缩和有意重复在朗读与反方审查后保留。0.5.0 不是短句化工具，也不把汪曾祺或任何作家当统一风格；它要求反常结构有可说明的表达收益，普通结构则真正沿目标语言组织。 → ：晋级门槛 + 初版验证器。machine_eligible=0/12，但验证器字段与 Schema 不一致。

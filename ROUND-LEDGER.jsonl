@@ -62,6 +62,14 @@
           "conclusion": "failure",
           "failed_step": "Run python3 tools/foundation/validate_foundation.py",
           "failure": "NONFUNCTION_CLAIM_OUTPUT_DRIFT (interpreter-version root cause; repaired in pass 3 under python 3.12.13)"
+        },
+        {
+          "run_id": 30839816598,
+          "head": "3ba8d549be2433ffdf88bd8fee436e413d153ec7",
+          "event": "workflow_dispatch",
+          "conclusion": "failure",
+          "failed_step": "Run python3 tools/foundation/validate_foundation.py",
+          "failure": "DEEP_ADJUDICATION_OUT_OF_DATE + NONFUNCTION_CLAIM_OUTPUT_DRIFT (repaired in pass 4 with check-only final gate)"
         }
       ],
       "repair_pass_2": {
@@ -77,6 +85,13 @@
         "fix": "rebuilt the ENTIRE canonical generator chain under Python 3.12.13 (.venv-ci) in dependency order (manifest -> census -> function adjudication -> governance outputs -> knowledge experience -> nonfunction adjudication -> migration) to fixed point; no hand-edited generated output",
         "verification_under_3.12.13": "CI-step-order replay all exit 0: adjudicate_core, migrate --check, validate_foundation, census --check, function adjudication --check, claim governance, function closure, math checks, nonfunction --check, nonfunction closure, core claims, 079, 080, path accounting --check; governance human-results/self-correction/knowledge --check + validators + determinism; iteration sync, phase D/E, system map, stage snapshots, human front door, language-thought all 0; Research OS tests 3/3; lifecycle tests PASS",
         "resume_rule": "always generate and verify Foundation outputs with the CI interpreter version (currently 3.12); a local-only green under a different interpreter is not CI evidence"
+      },
+      "repair_pass_4": {
+        "trigger": "remote run 30839816598 at head 3ba8d549 still failed: DEEP_ADJUDICATION_OUT_OF_DATE + NONFUNCTION_CLAIM_OUTPUT_DRIFT (census now matched)",
+        "method": "controlled experiments against the exact committed state (tree clean before each probe): (1) validate_foundation under 3.12.13 reproduces the CI failure 61/63 and does NOT modify the tree (no self-healing); (2) standalone --check on committed state: funcadj FAIL, nonfunction FAIL, census PASS — matching CI exactly; (3) running the two generators produced 13 changed files; migration then went stale (generator chain dependency); (4) migrate + governance chain + nonfunction re-run reached validate_foundation 63/63 in one iteration",
+        "root_cause_of_pass3_miss": "the pass-3 background chain's final verification was read incompletely and its last generation pass was committed without a clean check-only gate against the committed tree; lesson encoded: the final gate must be checks-only against the committed state, in CI step order, under the CI interpreter",
+        "final_gate": "26 CI-ordered steps under python 3.12.13, check-only, no regeneration: TOTAL_FAILS=0 (foundation 14 steps incl. validate_foundation 63/63, governance 5 incl. knowledge checks, iteration sync, phase D/E, system map, stage snapshots, human front door, language-thought); Research OS tests 3/3; lifecycle tests PASS",
+        "resume_rule": "after any generator run, re-run the full check-only CI-ordered gate against the tree you are about to commit; never infer stability from a mixed generate+check sequence"
       }
     }
   ]
