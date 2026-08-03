@@ -1,0 +1,19 @@
+{
+  "action_type": "SEARCH_PRIMARY_SOURCE",
+  "bounded_objective": "Locate the primary source(s) for a material claim.",
+  "required_inputs": {
+    "episode_id": "r2-loop-ai-coding-001",
+    "strategy_pack": "ENGINEERING_BENCHMARK",
+    "question_version": "生成式 AI 是否在真实软件工程中提高开发者生产率，还是只在简单受控任务或自报感受中显示加速？"
+  },
+  "expected_output_schema": "research-os/executor-return/0.1",
+  "success_failure_evidence": "executor must return explicit success/failure with exact source identities and calculation results; absence of evidence is failure.",
+  "prohibited_claims": [
+    "executor must not raise any claim ceiling",
+    "executor must not assert a positive finding",
+    "executor must not mark the episode complete"
+  ],
+  "budget": "{\"human_attention_hours\": 2, \"tool_calls\": 20}",
+  "stop_condition": "return when the bounded objective is met or a budget/blocker is reached; never self-approve.",
+  "dispatched_by": "cli"
+}

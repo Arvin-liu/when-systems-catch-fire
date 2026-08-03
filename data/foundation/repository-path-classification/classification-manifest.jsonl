@@ -1183,6 +1183,18 @@
 {"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "data/operations/iterations/114/publication/REVIEW_DISPOSITION_MATRIX.md"}
 {"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "data/operations/iterations/114/publication/tools/validate_publication.py"}
 {"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "data/operations/iterations/115/candidate/TASK115-RECOVERY-MANIFEST.json"}
+{"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "data/operations/iterations/115/candidate/r1-replay/REPLAY-SUMMARY.jsonl"}
+{"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "data/operations/iterations/115/candidate/r1-replay/round-001.json"}
+{"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "data/operations/iterations/115/candidate/r1-replay/round-002.json"}
+{"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "data/operations/iterations/115/candidate/r1-replay/round-003.json"}
+{"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "data/operations/iterations/115/candidate/r1-replay/round-004.json"}
+{"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "data/operations/iterations/115/candidate/r1-replay/round-005.json"}
+{"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "data/operations/iterations/115/candidate/r1-replay/round-006.json"}
+{"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "data/operations/iterations/115/candidate/r1-replay/round-007.json"}
+{"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "data/operations/iterations/115/candidate/r1-replay/round-008.json"}
+{"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "data/operations/iterations/115/candidate/r2-loop/LOOP-LOG.md"}
+{"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "data/operations/iterations/115/candidate/r2-loop/dispatch-spec-search-primary-source.json"}
+{"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "data/operations/iterations/115/candidate/r2-loop/episode.json"}
 {"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "data/operations/iterations/121Q24.json"}
 {"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "data/operations/iterations/121Q25.json"}
 {"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "data/operations/iterations/121Q25B.json"}
@@ -1455,6 +1467,8 @@
 {"category": "EDITORIAL_ARTICLE", "matched_rule": "EDITORIAL_ARTICLE", "path": "docs/publication_risk_checklist.md"}
 {"category": "EDITORIAL_ARTICLE", "matched_rule": "EDITORIAL_ARTICLE", "path": "docs/research-os/EXISTING-CAPABILITY-MAP.md"}
 {"category": "EDITORIAL_ARTICLE", "matched_rule": "EDITORIAL_ARTICLE", "path": "docs/research-os/OPERATING-GUIDE.md"}
+{"category": "EDITORIAL_ARTICLE", "matched_rule": "EDITORIAL_ARTICLE", "path": "docs/research-os/R1-INCIDENT-REPLAY.md"}
+{"category": "EDITORIAL_ARTICLE", "matched_rule": "EDITORIAL_ARTICLE", "path": "docs/research-os/R2-AI-CODING-LOOP.md"}
 {"category": "EDITORIAL_ARTICLE", "matched_rule": "EDITORIAL_ARTICLE", "path": "docs/research-os/RESEARCH-OS-ARCHITECTURE.md"}
 {"category": "EDITORIAL_ARTICLE", "matched_rule": "EDITORIAL_ARTICLE", "path": "docs/research-os/REVIEW-GATES.md"}
 {"category": "EDITORIAL_ARTICLE", "matched_rule": "EDITORIAL_ARTICLE", "path": "docs/roadmap_v0.2.md"}
@@ -2055,6 +2069,7 @@
 {"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "tests/test_registered_generator_attack.py"}
 {"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "tests/test_research_os.py"}
 {"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "tests/test_research_os_checkpoint_c.py"}
+{"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "tests/test_research_os_resumability.py"}
 {"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "tests/test_seal_freshness.py"}
 {"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "tests/test_self_correction_engine.py"}
 {"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "tests/test_source_rights_gate_enum_consistency.py"}
@@ -2165,6 +2180,7 @@
 {"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": "tools/research_os/gates.py"}
 {"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": "tools/research_os/kernel.py"}
 {"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": "tools/research_os/obligation_graph.py"}
+{"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": "tools/research_os/r1_replay.py"}
 {"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": "tools/research_os/registries.py"}
 {"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": "tools/research_os/scheduler.py"}
 {"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": "tools/validate_adaptive_relational_network.py"}

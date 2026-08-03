@@ -127,7 +127,10 @@ def cmd_resume(args) -> int:
         print("episode not paused", file=sys.stderr)
         return 2
     target = ep.get("paused_from") or "EVIDENCE_GATHERING"
-    allowed = kernel.ALLOWED_NEXT.get(target, [])
+    # The legal resume targets are the successors of PAUSED_RESUMABLE, not the
+    # successors of the target itself (previous code compared target against
+    # its own successor list, so resume could never return to paused_from).
+    allowed = kernel.ALLOWED_NEXT.get("PAUSED_RESUMABLE", [])
     if target not in allowed:
         target = "EVIDENCE_GATHERING"
     kernel.transition(ep, target, actor="cli")
