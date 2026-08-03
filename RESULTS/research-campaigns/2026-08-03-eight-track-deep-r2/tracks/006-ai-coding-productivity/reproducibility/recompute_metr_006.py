@@ -15,7 +15,7 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 import statsmodels.formula.api as smf
-from scipy.stats import norm
+from scipy.stats import norm, ttest_ind
 
 
 REQUIRED_COLUMNS = {
@@ -287,6 +287,43 @@ def sensitivity_results(df: pd.DataFrame) -> list[dict[str, object]]:
     return results
 
 
+def balance_results(df: pd.DataFrame) -> dict[str, object]:
+    records: list[dict[str, object]] = []
+    for outcome in ("predicted_time_no_ai", "predicted_time_ai_allowed"):
+        control = df.loc[df["ai_treatment"] == 0, outcome]
+        allowed = df.loc[df["ai_treatment"] == 1, outcome]
+        test = ttest_ind(allowed, control, equal_var=True)
+        records.append(
+            {
+                "field": outcome,
+                "control_mean": round_value(control.mean()),
+                "ai_allowed_mean": round_value(allowed.mean()),
+                "mean_difference_ai_minus_control": round_value(
+                    allowed.mean() - control.mean()
+                ),
+                "p_value_equal_variance_t_test": round_value(test.pvalue),
+            }
+        )
+    per_developer = df.groupby("dev_id")["ai_treatment"].agg(["count", "mean"])
+    return {
+        "pre_treatment_fields": records,
+        "developer_assignment": {
+            "developers": int(len(per_developer)),
+            "mean_ai_allowed_share": round_value(per_developer["mean"].mean()),
+            "min_ai_allowed_share": round_value(per_developer["mean"].min()),
+            "max_ai_allowed_share": round_value(per_developer["mean"].max()),
+            "developer_rows": [
+                {
+                    "dev_id": int(dev_id),
+                    "tasks": int(row["count"]),
+                    "ai_allowed_share": round_value(row["mean"]),
+                }
+                for dev_id, row in per_developer.iterrows()
+            ],
+        },
+    }
+
+
 def group_descriptives(df: pd.DataFrame) -> list[dict[str, object]]:
     records: list[dict[str, object]] = []
     for treatment, group in df.groupby("ai_treatment", sort=True):
@@ -369,6 +406,9 @@ def main() -> None:
     )
     (args.output_dir / "sensitivity_results.json").write_text(
         json.dumps(sensitivity_results(df), ensure_ascii=False, indent=2) + "\n"
+    )
+    (args.output_dir / "balance_results.json").write_text(
+        json.dumps(balance_results(df), ensure_ascii=False, indent=2) + "\n"
     )
 
     official_like = core_results(df)[0]

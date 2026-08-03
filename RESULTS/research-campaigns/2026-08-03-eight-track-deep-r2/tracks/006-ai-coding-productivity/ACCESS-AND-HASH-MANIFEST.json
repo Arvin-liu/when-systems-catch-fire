@@ -37,6 +37,17 @@
       "url": "https://arxiv.org/pdf/2302.06590",
       "pages": 19,
       "sha256": "60d9bbb58e67a3ba5c5df28926227994086baa9767c0b0f4bc61b11035c15a9c"
+    },
+    "microsoft_supplemental_appendix": {
+      "url": "https://pubsonline.informs.org/doi/suppl/10.1287/mnsc.2025.00535",
+      "pages": 15,
+      "access": "full text read through web source; direct local download returned HTTP 403",
+      "sha256": null
+    },
+    "microsoft_replication_files_gate": {
+      "url": "https://services.informs.org/dataset/mnsc/download.php?doi=mnsc.2025.00535",
+      "access": "form gate read; no checkbox, identity or email submitted",
+      "sha256": null
     }
   },
   "reproduction_environment": {
