@@ -1,0 +1,52 @@
+{
+  "track_id": "006-ai-coding-productivity",
+  "stage": "evidence",
+  "accessed_at": "2026-08-03T11:04:54+08:00",
+  "source_commit": "7ff2d7670235f531dff77eff58355bd77392f396",
+  "local_evidence": {
+    "metr_paper_pdf": {
+      "url": "https://metr.org/Early_2025_AI_Experienced_OS_Devs_Study-paper.pdf",
+      "pages": 50,
+      "sha256": "b6d4a8e7d8aeed20cc9a4545e485fdc5496b5cc48470338d2d7662b1953e5765"
+    },
+    "metr_data_csv": {
+      "url": "https://github.com/METR/Measuring-Early-2025-AI-on-Exp-OSS-Devs/blob/7ff2d7670235f531dff77eff58355bd77392f396/data_complete.csv",
+      "sha256": "1493fc46dc379b15d2c39273fa7a7ee98767ff0d90dea113f300d7338f165746",
+      "rows": 246,
+      "columns": 9
+    },
+    "metr_regression_py": {
+      "url": "https://github.com/METR/Measuring-Early-2025-AI-on-Exp-OSS-Devs/blob/7ff2d7670235f531dff77eff58355bd77392f396/regression.py",
+      "sha256": "41307fa0b2f617eb815fdaaf41ee18c04fb7332eab118e86c1556154f496afd6"
+    },
+    "cmu_mirror_csv": {
+      "url": "https://cmustatistics.github.io/data-repository/data/metr-ai.csv",
+      "sha256": "1493fc46dc379b15d2c39273fa7a7ee98767ff0d90dea113f300d7338f165746"
+    },
+    "microsoft_paper_pdf": {
+      "url": "https://demirermert.github.io/Papers/Demirer_AI_productivity.pdf",
+      "pages": 38,
+      "sha256": "932bdd4ef1c75391935d759b1b7d918b073c86b6c654a5f40d6e18f258459cd4"
+    },
+    "github_copilot_paper_pdf": {
+      "url": "https://arxiv.org/pdf/2302.06590",
+      "pages": 19,
+      "sha256": "60d9bbb58e67a3ba5c5df28926227994086baa9767c0b0f4bc61b11035c15a9c"
+    }
+  },
+  "reproduction_environment": {
+    "python": "3.12.13 arm64",
+    "packages_file": "reproducibility/requirements.lock.txt",
+    "official_command": "python regression.py --input-data data_complete.csv",
+    "official_output": "reproducibility/output/official_regression.txt",
+    "independent_script": "reproducibility/recompute_metr_006.py"
+  },
+  "failed_attempts": [
+    {
+      "runtime": "Python 3.14 arm64",
+      "attempt": "install statsmodels==0.14.4 scipy==1.15.2",
+      "result": "scipy==1.15.2 had no applicable wheel; source build required a missing Fortran compiler and installation aborted",
+      "resolution": "reran in Python 3.12.13; no inference was made from the failed attempt"
+    }
+  ]
+}

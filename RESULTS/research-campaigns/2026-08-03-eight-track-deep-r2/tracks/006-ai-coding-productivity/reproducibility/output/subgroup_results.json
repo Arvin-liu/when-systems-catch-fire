@@ -1,0 +1,58 @@
+[
+  {
+    "estimate_time_change": 0.141132,
+    "ci95_lower": -0.143957,
+    "ci95_upper": 0.521163,
+    "beta_log_time": 0.13202,
+    "se_beta": 0.146663,
+    "subgroup": "prior_task_exposure_high",
+    "level": "reference",
+    "level_value": 0,
+    "n": 159,
+    "n_level": 81,
+    "interaction_beta": 0.210956,
+    "interaction_p_value": 0.313012
+  },
+  {
+    "estimate_time_change": 0.409135,
+    "ci95_lower": 0.053735,
+    "ci95_upper": 0.884404,
+    "beta_log_time": 0.342976,
+    "se_beta": 0.148286,
+    "subgroup": "prior_task_exposure_high",
+    "level": "target",
+    "level_value": 1,
+    "n": 159,
+    "n_level": 78,
+    "interaction_beta": 0.210956,
+    "interaction_p_value": 0.313012
+  },
+  {
+    "estimate_time_change": 0.086635,
+    "ci95_lower": -0.249819,
+    "ci95_upper": 0.573988,
+    "beta_log_time": 0.083086,
+    "se_beta": 0.189048,
+    "subgroup": "external_resource_needs_low",
+    "level": "reference",
+    "level_value": 0,
+    "n": 159,
+    "n_level": 50,
+    "interaction_beta": 0.22188,
+    "interaction_p_value": 0.333781
+  },
+  {
+    "estimate_time_change": 0.356578,
+    "ci95_lower": 0.055046,
+    "ci95_upper": 0.744289,
+    "beta_log_time": 0.304966,
+    "se_beta": 0.128258,
+    "subgroup": "external_resource_needs_low",
+    "level": "target",
+    "level_value": 1,
+    "n": 159,
+    "n_level": 109,
+    "interaction_beta": 0.22188,
+    "interaction_p_value": 0.333781
+  }
+]

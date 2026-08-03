@@ -1,0 +1,25 @@
+{
+  "track_id": "006-ai-coding-productivity",
+  "original_round": "006",
+  "research_identity": "DATA_REANALYSIS_AND_HETEROGENEITY_STUDY",
+  "stage": "evidence",
+  "state": "IN_PROGRESS",
+  "frozen_commit": "e68720ee",
+  "checkpoint_commits": ["e68720ee"],
+  "evidence_scope": {
+    "full_text_sources_read": 3,
+    "method_and_data_pages_read": 5,
+    "metr_recomputation": "COMPLETE",
+    "microsoft_recomputation": "NOT_CLAIMED_RAW_DATA_NOT_PUBLIC",
+    "github_recomputation": "NOT_CLAIMED_SOURCE_PAPER_ONLY"
+  },
+  "open_audit_points": [
+    "METR paper prose reports 27 unreviewed issues while locked CSV has 16 missing post-review values",
+    "one external_resource_needs_1_to_3 value is 5 although the source description says 1-3",
+    "Microsoft pooled W-IV is weekly pull-request output, not completion time",
+    "GitHub 55.8 percent is conditional on 70 completers out of 95 randomized developers"
+  ],
+  "next_checkpoint": "analysis",
+  "next_action": "write analysis from the recomputed outputs and comparison matrix; do not erase unresolved source-version discrepancies",
+  "updated_at": "2026-08-03T11:04:54+08:00"
+}

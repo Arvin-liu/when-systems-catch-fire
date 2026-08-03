@@ -1,0 +1,4 @@
+Regression calculated speedup of:          0.188
+CI calculed with stderr=Homoskedastic:     (0.013, 0.395)
+CI calculed with stderr=Robust (HC3):      (0.013, 0.394)
+CI calculed with stderr=Clustered By Dev:  (0.016, 0.39)

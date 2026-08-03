@@ -1,0 +1,6 @@
+# Environment used for the R2 METR recomputation on 2026-08-03.
+# Python 3.12.13 (arm64); the official repository pins statsmodels/scipy.
+numpy==2.4.6
+pandas==3.0.5
+scipy==1.15.2
+statsmodels==0.14.4
