@@ -1,0 +1,22 @@
+{
+  "track_id": "002-handwriting-learning",
+  "original_round": "002",
+  "research_identity": "MULTI_OUTCOME_EVIDENCE_SYNTHESIS",
+  "stage": "freeze",
+  "state": "IN_PROGRESS",
+  "frozen_commit": "PENDING_FREEZE_COMMIT",
+  "checkpoint_commits": ["PENDING_FREEZE_COMMIT"],
+  "required_layers": [
+    "neural/process measures versus behavioral learning outcomes",
+    "immediate achievement and delayed memory/concept transfer",
+    "formal review, revision and external-storage stages",
+    "note quantity, verbatim overlap, images and generative strategy",
+    "typing skill, device familiarity, learner characteristics and accessibility",
+    "direct replication, meta-analytic heterogeneity and study overlap",
+    "Chinese/child/disability and device externalization ceiling"
+  ],
+  "claim_ceiling": "outcome-specific evidence about college note-taking media; no universal winner, no neural-to-learning leap, and no policy or population externalization",
+  "next_checkpoint": "evidence",
+  "next_action": "read the full Frontiers EEG paper, 2014 original, 2021 preregistered replication, 2024 meta-analysis, J-STAGE typing-proficiency report and an independent review with page-level locators",
+  "updated_at": "2026-08-03T12:20:17+08:00"
+}

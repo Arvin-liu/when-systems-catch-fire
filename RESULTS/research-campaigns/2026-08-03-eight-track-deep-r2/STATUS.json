@@ -6,8 +6,8 @@
   "control_tip": "77a6ac4ed6f0b0bf9c3a5aef75f3b894829fe982",
   "r1_source_tip": "232299483f701e8304265c1484b5b50e5dcf2799",
   "research_branch": "research/eight-track-deep-validation-20260803-r2",
-  "current_track": "003-heat-action-plans",
-  "current_checkpoint": "final",
+  "current_track": "002-handwriting-learning",
+  "current_checkpoint": "freeze",
   "completed_tracks": ["004-clean-electricity-2025", "006-ai-coding-productivity", "005-glp1-cardiovascular-evidence", "003-heat-action-plans"],
   "track_order": [
     "004-clean-electricity-2025",
@@ -19,6 +19,6 @@
     "007-ev-fire-risk",
     "008-microplastics-cardiovascular"
   ],
-  "last_checkpoint_commit": "6ff57031",
-  "updated_at": "2026-08-03T12:19:26+08:00"
+  "last_checkpoint_commit": "05f5ff9e",
+  "updated_at": "2026-08-03T12:20:17+08:00"
 }
