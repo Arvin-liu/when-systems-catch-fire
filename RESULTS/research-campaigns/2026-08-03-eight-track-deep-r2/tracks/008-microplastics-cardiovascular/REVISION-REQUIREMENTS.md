@@ -8,4 +8,3 @@
 6. 将体外、动物和机制文献限定为生物学可行性；不把机制连贯性当作临床因果证据。
 7. 最终裁定使用 `INSUFFICIENT_EVIDENCE_FOR_CAUSAL_CLAIM`，并保留 `SUPPORTED_WITHIN_OBSERVATIONAL_COHORT` 与 `TISSUE_ENRICHMENT_REPLICATED_WITH_METHOD_SCOPE` 两个低层级结果。
 8. 明确下一项最能改变判断的研究：预注册、多中心、塑料最小化/洁净室采样，手术室与全流程空白，斑块矩阵加标回收和至少一种正交粒子/聚合物确认，同时在暴露检测前注册完整临床随访和独立复现队列。
-

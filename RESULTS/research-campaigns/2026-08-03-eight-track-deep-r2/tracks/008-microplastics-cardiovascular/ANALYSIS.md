@@ -48,4 +48,3 @@ S6 是 20 人血液—颈动脉斑块配对研究，摘要级信息支持斑块�
 ## 分析裁定
 
 `SUPPORTED_WITHIN_OBSERVATIONAL_COHORT`：S1 的窄关联命题成立；`SUPPORTED_WITH_METHOD_AND_TISSUE_SCOPE`：组织富集方向有独立支持；`CONTAMINATION_UNRESOLVED`：PE/PVC 分类的污染和基质有效性仍是材料性缺口；`NOT_SUPPORTED`：当前不能支持人类一般人群因果结论、机制升级或跨研究定量合并；`NOT_FOUND`：没有独立人体临床事件复制。最终结论必须保留这些层次，不得用 4.53 替代因果证据。
-

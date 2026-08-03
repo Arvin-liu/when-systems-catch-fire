@@ -1,14 +1,14 @@
 {
   "campaign_id": "POINTFIRE-EIGHT-TRACK-DEEP-PUBLIC-RESEARCH-20260803-R2",
-  "state": "IN_PROGRESS",
+  "state": "COMPLETE_AWAITING_GPT_OWNER_ADJUDICATION",
   "final_state_target": "COMPLETE_AWAITING_GPT_OWNER_ADJUDICATION",
   "research_baseline": "cac043d438bea6c4dc2c57c1169093df715ef5df",
   "control_tip": "77a6ac4ed6f0b0bf9c3a5aef75f3b894829fe982",
   "r1_source_tip": "232299483f701e8304265c1484b5b50e5dcf2799",
   "research_branch": "research/eight-track-deep-validation-20260803-r2",
-  "current_track": "008-microplastics-cardiovascular",
-  "current_checkpoint": "final",
-  "completed_tracks": ["004-clean-electricity-2025", "006-ai-coding-productivity", "005-glp1-cardiovascular-evidence", "003-heat-action-plans", "002-handwriting-learning", "001-ai-weather-extremes", "007-ev-fire-risk"],
+  "current_track": null,
+  "current_checkpoint": "complete",
+  "completed_tracks": ["004-clean-electricity-2025", "006-ai-coding-productivity", "005-glp1-cardiovascular-evidence", "003-heat-action-plans", "002-handwriting-learning", "001-ai-weather-extremes", "007-ev-fire-risk", "008-microplastics-cardiovascular"],
   "track_order": [
     "004-clean-electricity-2025",
     "006-ai-coding-productivity",
@@ -19,6 +19,13 @@
     "007-ev-fire-risk",
     "008-microplastics-cardiovascular"
   ],
-  "last_checkpoint_commit": "d9054c73",
-  "updated_at": "2026-08-03T14:42:00+08:00"
+  "last_checkpoint_commit": "92302b22",
+  "campaign_artifacts": ["README.md", "CAMPAIGN-BASELINE.md", "TRACK-INDEX.jsonl", "R1-TO-R2-VERDICT-MATRIX.md", "CROSS-TRACK-SOURCE-DEPENDENCE.md", "CAMPAIGN-LESSONS.md", "FINAL-CAMPAIGN-REPORT.md"],
+  "formal_main_modified": false,
+  "relay_current_modified": false,
+  "task_114_modified": false,
+  "pr_created": false,
+  "tag_created": false,
+  "project_lifecycle_modified": false,
+  "updated_at": "2026-08-03T14:00:27+08:00"
 }
