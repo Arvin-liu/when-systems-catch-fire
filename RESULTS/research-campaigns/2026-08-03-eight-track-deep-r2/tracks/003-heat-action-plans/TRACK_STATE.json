@@ -2,12 +2,13 @@
   "track_id": "003-heat-action-plans",
   "original_round": "003",
   "research_identity": "CAUSAL_POLICY_EVALUATION",
-  "stage": "analysis",
+  "stage": "challenge",
   "state": "IN_PROGRESS",
   "frozen_commit": "3814adf5",
-  "checkpoint_commits": ["3814adf5", "0c98b1b2", "ec9a3023"],
+  "checkpoint_commits": ["3814adf5", "0c98b1b2", "ec9a3023", "008a1413", "PENDING_CHALLENGE_COMMIT"],
   "evidence_commit": "0c98b1b2",
-  "analysis_commit": "ec9a3023",
+  "analysis_commit": "008a1413",
+  "challenge_commit": "PENDING_CHALLENGE_COMMIT",
   "required_layers": [
     "Urban 2025 102-location primary study full text and three-stage model",
     "public code, supplied outputs, HPP metadata and data availability audit",
@@ -18,7 +19,7 @@
     "source dependence and causal claim ceiling"
   ],
   "claim_ceiling": "observational and quasi-experimental evidence about heat-plan implementation and heat-related mortality; no fixed universal effect and no single-element attribution",
-  "next_checkpoint": "challenge",
-  "next_action": "stress-test interval coverage, pre-trends, implementation proxies, source dependence and the model/code version mismatch before final adjudication",
-  "updated_at": "2026-08-03T12:13:28+08:00"
+  "next_checkpoint": "final",
+  "next_action": "rewrite the final report after the independent challenge, preserving the causal claim ceiling and the bounded reproducibility result",
+  "updated_at": "2026-08-03T12:15:45+08:00"
 }
