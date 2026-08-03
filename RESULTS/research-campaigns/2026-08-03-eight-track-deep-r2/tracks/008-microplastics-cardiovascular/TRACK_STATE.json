@@ -2,7 +2,7 @@
   "track_id": "008-microplastics-cardiovascular",
   "original_round": "008",
   "research_identity": "CAUSAL_CONTAMINATION_AND_REPLICATION_AUDIT",
-  "stage": "evidence",
+  "stage": "analysis",
   "state": "IN_PROGRESS",
   "frozen_commit": "d601d9a6",
   "checkpoint_commits": ["d601d9a6", "99306233", "cc3693e0"],
@@ -26,7 +26,16 @@
     "independent_clinical_event_replication": "NOT_FOUND",
     "individual_level_reanalysis": "NOT_CLAIMED_NO_PUBLIC_DATA_RETRIEVED"
   },
-  "next_checkpoint": "analysis",
-  "next_action": "analyze causal estimands, selection and confounding, differential measurement error, independent tissue replication, and the gap between presence and clinical events",
-  "updated_at": "2026-08-03T13:47:00+08:00"
+  "analysis_outputs": ["METHOD.md", "ANALYSIS.md", "reproducibility/README.md"],
+  "analysis_findings": {
+    "observational_association": "SUPPORTED_WITHIN_OBSERVATIONAL_COHORT",
+    "causal_estimand": "NOT_IDENTIFIED_FOR_GENERAL_POPULATION",
+    "selection_and_confounding": "MATERIAL_UNRESOLVED_RISK",
+    "measurement_validity": "CONTAMINATION_AND_MATRIX_INTERFERENCE_UNRESOLVED",
+    "independent_tissue_replication": "SUPPORTED_WITH_METHOD_AND_TISSUE_SCOPE",
+    "independent_clinical_event_replication": "NOT_FOUND"
+  },
+  "next_checkpoint": "challenge",
+  "next_action": "attack selection, sparse-event modeling, measurement validity, source dependence, causal jumps, and externalization before final rewrite",
+  "updated_at": "2026-08-03T13:55:00+08:00"
 }
