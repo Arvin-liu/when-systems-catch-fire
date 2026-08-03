@@ -2,10 +2,10 @@
   "track_id": "007-ev-fire-risk",
   "original_round": "007",
   "research_identity": "DENOMINATOR_DEFINITION_AND_AGE_AUDIT",
-  "stage": "evidence",
+  "stage": "analysis",
   "state": "IN_PROGRESS",
   "frozen_commit": "a358cac1",
-  "checkpoint_commits": ["a358cac1"],
+  "checkpoint_commits": ["a358cac1", "f98f7d76"],
   "r1_verdict": "SUPPORTED_WITH_SCOPE",
   "required_layers": [
     "at least two jurisdictions with official fire numerators and official vehicle-stock denominators",
@@ -18,7 +18,14 @@
   ],
   "claim_ceiling": "jurisdiction-limited observed fire frequency under named official definitions; no global or full-life risk claim and no inference about severity from frequency",
   "precommitted_downgrade": "until numerator, denominator, vehicle age and definition are reconciled, retain only: some Nordic official statistics show lower per-vehicle frequency in the observed jurisdiction",
-  "next_checkpoint": "analysis",
-  "next_action": "analyze the exact recomputations, the Denmark denominator-timing mismatch, Sweden’s explicit data limits, and the separate probability-versus-consequence estimands",
-  "updated_at": "2026-08-03T13:31:12+08:00"
+  "analysis_outputs": ["ANALYSIS.md", "reproducibility/output/official-rate-recalc.json"],
+  "analysis_verdicts": {
+    "within_jurisdiction_observed_direction": "SUPPORTED_WITH_SCOPE",
+    "cross_jurisdiction_comparability": "NOT_SUPPORTED",
+    "age_adjusted_or_lifetime_risk": "INSUFFICIENT_EVIDENCE",
+    "consequence_estimand": "SEPARATE_OUTCOME_FAMILY"
+  },
+  "next_checkpoint": "challenge",
+  "next_action": "challenge denominator timing, numerator definitions, age and exposure confounding, source dependence, and probability-versus-consequence conflation",
+  "updated_at": "2026-08-03T13:24:15+08:00"
 }
