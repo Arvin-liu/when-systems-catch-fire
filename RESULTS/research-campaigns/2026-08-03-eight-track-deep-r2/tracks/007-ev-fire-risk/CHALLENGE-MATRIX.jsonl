@@ -1,0 +1,7 @@
+{"id":"C1","claim":"丹麦公布的电动/混合车辆每车火灾率低于比较组","attack":"用公开年末库存重算并检查公布率反推分母","evidence":"2023-2025年末库存重算为1.385、1.031、0.895/万车；BRS公布1.7、1.2、1.0/万车，反推分母分别低于年末库存","result":"NOT_OVERTURNED_BUT_DENOMINATOR_FORMULA_UNRESOLVED","scope":"仅保留为丹麦官方公布率，不当作透明年末库存风险"}
+{"id":"C2","claim":"瑞典官方数据提供电动车起火率分子","attack":"审查自由文本检索、疑似损坏、近失事件、充电事件和纵火排除","evidence":"40起2024乘用车事件含10行驶、11充电、19其他/未知；自由文本搜寻；蓄意纵火排除","result":"SCOPED_STATISTIC_RETAINED_HARMONIZED_COMPARATOR_NOT_ESTABLISHED","scope":"观测事件频率，不写成电池热失控或同定义起火率"}
+{"id":"C3","claim":"低观测率代表全寿命或年龄调整后的低风险","attack":"检查火灾车辆车龄、车队扩张和可用里程分母","evidence":"丹麦火灾受损电动/混合车约2年，传统车约10年；无年龄/里程分层分母","result":"REJECTED_FOR_EXTERNALIZATION","scope":"年龄/里程调整和终身风险为INSUFFICIENT_EVIDENCE"}
+{"id":"C4","claim":"丹麦、瑞典、挪威数字是三个独立可比复制","attack":"审计发布机构、登记边界和跨建筑蔓延分类","evidence":"三国数字由BRS事实表转述；BRS明确警告国家登记实践不同","result":"CROSS_COUNTRY_POOLING_REJECTED","scope":"不合并、不计算北欧总率"}
+{"id":"C5","claim":"NIST美国估算能够判定北欧方向","attack":"检查是否有共同ICE分母和同定义分子","evidence":"NFIRS缺专用LIB字段、VIN不完整、捕获再捕获假设；无共同ICE分母","result":"DATA_QUALITY_CHALLENGE_VALID_DIRECTION_UNAVAILABLE","scope":"仅用于欠报和测量误差审计"}
+{"id":"C6","claim":"电动车烟气/处置差异证明更易起火","attack":"分离实验后果指标和道路点火概率","evidence":"RISE比较热释放、HF和金属；没有道路暴露分母或点火概率","result":"ESTIMAND_CONFLATION_REJECTED","scope":"后果/处置是独立结果族"}
+{"id":"C7","claim":"BEV、PHEV、hybrid合并后的方向适用于纯BEV","attack":"检查类别交叉表和各类独立分母","evidence":"丹麦/瑞典公开主表合并电动与混合类别；缺同年度类别分母","result":"NOT_SUPPORTED","scope":"不外推到单一动力类别"}

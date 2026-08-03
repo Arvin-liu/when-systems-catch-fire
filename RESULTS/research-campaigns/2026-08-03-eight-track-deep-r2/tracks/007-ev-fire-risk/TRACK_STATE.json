@@ -2,10 +2,10 @@
   "track_id": "007-ev-fire-risk",
   "original_round": "007",
   "research_identity": "DENOMINATOR_DEFINITION_AND_AGE_AUDIT",
-  "stage": "analysis",
+  "stage": "challenge",
   "state": "IN_PROGRESS",
   "frozen_commit": "a358cac1",
-  "checkpoint_commits": ["a358cac1", "f98f7d76"],
+  "checkpoint_commits": ["a358cac1", "f98f7d76", "31e15507"],
   "r1_verdict": "SUPPORTED_WITH_SCOPE",
   "required_layers": [
     "at least two jurisdictions with official fire numerators and official vehicle-stock denominators",
@@ -25,7 +25,16 @@
     "age_adjusted_or_lifetime_risk": "INSUFFICIENT_EVIDENCE",
     "consequence_estimand": "SEPARATE_OUTCOME_FAMILY"
   },
-  "next_checkpoint": "challenge",
-  "next_action": "challenge denominator timing, numerator definitions, age and exposure confounding, source dependence, and probability-versus-consequence conflation",
+  "challenge_outputs": ["CHALLENGE-RESULTS.md", "CHALLENGE-MATRIX.jsonl", "SOURCE-DEPENDENCE-REVIEW.md"],
+  "challenge_findings": {
+    "denominator_timing": "UNRESOLVED_BUT_NOT_DIRECTION_REVERSING",
+    "numerator_harmonization": "NOT_ESTABLISHED",
+    "age_adjusted_lifetime_claim": "REJECTED",
+    "cross_country_pooling": "REJECTED",
+    "probability_consequence_conflation": "REJECTED",
+    "source_dependence": "CROSS_COUNTRY_COUNTS_NOT_INDEPENDENT"
+  },
+  "next_checkpoint": "final",
+  "next_action": "rewrite the final report to retain only jurisdiction-limited official-statistic language and explicit denominator, definition, age and consequence limits",
   "updated_at": "2026-08-03T13:24:15+08:00"
 }
