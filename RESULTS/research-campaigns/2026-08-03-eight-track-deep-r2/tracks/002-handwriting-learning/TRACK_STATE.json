@@ -2,10 +2,10 @@
   "track_id": "002-handwriting-learning",
   "original_round": "002",
   "research_identity": "MULTI_OUTCOME_EVIDENCE_SYNTHESIS",
-  "stage": "analysis",
+  "stage": "challenge",
   "state": "IN_PROGRESS",
   "frozen_commit": "2798a0eb",
-  "checkpoint_commits": ["2798a0eb", "670012e1"],
+  "checkpoint_commits": ["2798a0eb", "670012e1", "22b7c5d7"],
   "evidence_commit": "670012e1",
   "required_layers": [
     "neural/process measures versus behavioral learning outcomes",
@@ -18,7 +18,8 @@
   ],
   "claim_ceiling": "outcome-specific evidence about college note-taking media; no universal winner, no neural-to-learning leap, and no policy or population externalization",
   "analysis_outputs": ["ANALYSIS.md"],
-  "next_checkpoint": "challenge",
+  "challenge_outputs": ["CHALLENGE-RESULTS.md", "SOURCE-DEPENDENCE-REVIEW.md", "CHALLENGE-MATRIX.jsonl"],
+  "next_checkpoint": "final",
   "evidence_scope": {
     "full_text_primary_and_synthesis_sources_read": 5,
     "full_text_or_report_sources_read": 6,
@@ -27,6 +28,6 @@
     "search_snippets_as_evidence": false,
     "news_as_scientific_proof": false
   },
-  "next_action": "test the strongest competing explanations: study overlap, review confounding, delayed-versus-immediate mismatch, skill/accessibility limits, and neural-to-learning overreach",
-  "updated_at": "2026-08-03T12:27:18+08:00"
+  "next_action": "rewrite the final report from the surviving outcome-specific claims and preserve all overturned or unresolved claims",
+  "updated_at": "2026-08-03T12:31:02+08:00"
 }
