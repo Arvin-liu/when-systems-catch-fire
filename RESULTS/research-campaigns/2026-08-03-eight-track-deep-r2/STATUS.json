@@ -8,7 +8,7 @@
   "research_branch": "research/eight-track-deep-validation-20260803-r2",
   "current_track": "002-handwriting-learning",
   "current_checkpoint": "final",
-  "completed_tracks": ["004-clean-electricity-2025", "006-ai-coding-productivity", "005-glp1-cardiovascular-evidence", "003-heat-action-plans"],
+  "completed_tracks": ["004-clean-electricity-2025", "006-ai-coding-productivity", "005-glp1-cardiovascular-evidence", "003-heat-action-plans", "002-handwriting-learning"],
   "track_order": [
     "004-clean-electricity-2025",
     "006-ai-coding-productivity",
@@ -19,6 +19,6 @@
     "007-ev-fire-risk",
     "008-microplastics-cardiovascular"
   ],
-  "last_checkpoint_commit": "d6ef3cdb",
-  "updated_at": "2026-08-03T12:35:16+08:00"
+  "last_checkpoint_commit": "05ad776b",
+  "updated_at": "2026-08-03T12:36:04+08:00"
 }
