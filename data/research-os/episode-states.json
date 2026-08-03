@@ -16,35 +16,35 @@
       "definition": "Research question and question version frozen; scope, population, temporal and outcome definitions captured.",
       "terminal": false,
       "completion_requires": ["frozen_question_record"],
-      "allowed_next": ["EVIDENCE_GATHERING"]
+      "allowed_next": ["EVIDENCE_GATHERING", "PAUSED_RESUMABLE", "ESCALATED_TO_GPT_OWNER", "INSUFFICIENT_EVIDENCE_COMPLETE"]
     },
     "EVIDENCE_GATHERING": {
       "order": 2,
       "definition": "Collecting primary sources, full text, methods, data and code; building the claim/evidence obligation graph.",
       "terminal": false,
       "completion_requires": [],
-      "allowed_next": ["ANALYSIS", "BLOCKED", "PAUSED_RESUMABLE"]
+      "allowed_next": ["ANALYSIS", "BLOCKED", "PAUSED_RESUMABLE", "ESCALATED_TO_GPT_OWNER", "INSUFFICIENT_EVIDENCE_COMPLETE"]
     },
     "ANALYSIS": {
       "order": 3,
       "definition": "Recomputing results, reproducing analyses, building definition crosswalks, comparing populations/denominators.",
       "terminal": false,
       "completion_requires": [],
-      "allowed_next": ["CHALLENGE", "REVISION", "EVIDENCE_GATHERING", "BLOCKED", "PAUSED_RESUMABLE"]
+      "allowed_next": ["CHALLENGE", "REVISION", "EVIDENCE_GATHERING", "BLOCKED", "PAUSED_RESUMABLE", "ESCALATED_TO_GPT_OWNER", "INSUFFICIENT_EVIDENCE_COMPLETE"]
     },
     "CHALLENGE": {
       "order": 4,
       "definition": "Searching negative/replication/null/contradictory evidence, methodological critique, alternative mechanisms and adversarial review.",
       "terminal": false,
       "completion_requires": [],
-      "allowed_next": ["REVISION", "ANALYSIS", "EVIDENCE_GATHERING"]
+      "allowed_next": ["REVISION", "ANALYSIS", "EVIDENCE_GATHERING", "ESCALATED_TO_GPT_OWNER", "INSUFFICIENT_EVIDENCE_COMPLETE"]
     },
     "REVISION": {
       "order": 5,
       "definition": "Revising candidate claims, claim ceilings and obligation statuses in response to analysis and challenge outcomes.",
       "terminal": false,
       "completion_requires": [],
-      "allowed_next": ["ANALYSIS", "CHALLENGE", "CANDIDATE_COMPLETE"]
+      "allowed_next": ["ANALYSIS", "CHALLENGE", "CANDIDATE_COMPLETE", "ESCALATED_TO_GPT_OWNER", "INSUFFICIENT_EVIDENCE_COMPLETE"]
     },
     "CANDIDATE_COMPLETE": {
       "order": 6,
@@ -79,7 +79,7 @@
       "definition": "Budget or interruption boundary reached; full resumable checkpoint written to the append-only event log.",
       "terminal": false,
       "completion_requires": ["resumable_checkpoint_written"],
-      "allowed_next": ["EVIDENCE_GATHERING", "ANALYSIS", "CHALLENGE", "REVISION"]
+      "allowed_next": ["EVIDENCE_GATHERING", "ANALYSIS", "CHALLENGE", "REVISION", "QUESTION_FROZEN"]
     },
     "REOPENED": {
       "order": 94,
