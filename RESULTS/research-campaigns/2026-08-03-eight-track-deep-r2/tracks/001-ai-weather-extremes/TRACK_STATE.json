@@ -2,10 +2,10 @@
   "track_id": "001-ai-weather-extremes",
   "original_round": "001",
   "research_identity": "BENCHMARK_AND_METHOD_AUDIT",
-  "stage": "challenge",
+  "stage": "final",
   "state": "IN_PROGRESS",
   "frozen_commit": "ba1a1500",
-  "checkpoint_commits": ["ba1a1500", "cd3c8840", "e9f2ae02"],
+  "checkpoint_commits": ["ba1a1500", "cd3c8840", "e9f2ae02", "d58fd5b3"],
   "r1_verdict": "PARTIALLY_SUPPORTED",
   "required_layers": [
     "承重论文与补充材料全文",
@@ -19,7 +19,8 @@
   "claim_ceiling": "specified benchmark and method judgment; no universal AI-versus-physics ranking and no operational replacement claim",
   "evidence_commit": "cd3c8840",
   "analysis_commit": "e9f2ae02",
-  "next_checkpoint": "final",
-  "next_action": "write the final bounded report after recording which primary claims survive source-dependence and adversarial benchmark review",
-  "updated_at": "2026-08-03T13:09:40+08:00"
+  "challenge_commit": "d58fd5b3",
+  "next_checkpoint": "terminal",
+  "next_action": "publish final report, limitations, and R1 change receipt; mark the track awaiting external adjudication",
+  "updated_at": "2026-08-03T13:12:25+08:00"
 }
