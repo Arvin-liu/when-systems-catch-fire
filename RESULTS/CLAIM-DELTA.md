@@ -1,6 +1,6 @@
 # Claim Delta
 
-本轮识别 83 个新增、删除或修改的知识资产。关联断言来自现行 claim registry；无关联项必须人工确认是否需要新增登记。
+本轮识别 84 个新增、删除或修改的知识资产。关联断言来自现行 claim registry；无关联项必须人工确认是否需要新增登记。
 
 ## `AI-HANDOFF.md`
 
@@ -615,6 +615,14 @@
 - 状态：`ADDED`
 - Delta：`CD-A69170B52310D340`
 - 关联断言：['NFC-0194d992b2b12013', 'NFC-041c28034c367977', 'NFC-17391ac0de46e5e2', 'NFC-5a210214e72fd678', 'NFC-5b859a796e194907', 'NFC-673df927717513b8', 'NFC-71dff01d447d706d', 'NFC-7b544229e9db94d5', 'NFC-8578d84cbfeec672', 'NFC-953f67da961f4ee8', 'NFC-9d6f9867c8384a47', 'NFC-c972820d3f64a855', 'NFC-dfda60cb84451144', 'NFC-f57206f61dca1d2f']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/research-os/queue-runtime/ROUND-0-CHECKPOINT.md`
+
+- 状态：`ADDED`
+- Delta：`CD-6B43DC27FA46375B`
+- 关联断言：['NFC-0a749b51c4176de2', 'NFC-29fc66f1cb01e1a4', 'NFC-39aca0ba6e2da984', 'NFC-792e328c127de39c', 'NFC-ba53c17ef0bef447']
 - 人类结果义务：`True`
 - 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
 

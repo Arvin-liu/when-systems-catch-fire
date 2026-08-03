@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [元协议是跨系统的底层结构同构，是复杂系统的必然产物**](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-bf62cf26a3a8692a / 元协议是跨系统的底层结构同构，是复杂系统的必然产物**
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
 - [元协议跨系统验证整体结论](../../../docs/phi_meta_law.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-de0d425dbf979d80 / 元协议跨系统验证整体结论
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-c221338643119dfe / 相关：教育公平/不平等是经典问题，但赛课机制是其下一层「考评制度如何扭曲教育价值」的具体机制，未直接命中其他经典问题。
   - 来源：`outputs/collisions/20260708-teacher-competition/collision-report.md`
-  - 依赖：—；被引用：—
-- [真诚信仰、政治利用和制度化并不互相排斥；把它们硬切成纯真或纯假会丢失机制。](../../../reports/publication/song-huizong-taoism-point-fire-analysis.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-f2462ec1f6f8e14c / 真诚信仰、政治利用和制度化并不互相排斥；把它们硬切成纯真或纯假会丢失机制。
-  - 来源：`reports/publication/song-huizong-taoism-point-fire-analysis.md`
   - 依赖：—；被引用：—

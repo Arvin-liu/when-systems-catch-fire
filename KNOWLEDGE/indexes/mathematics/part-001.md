@@ -579,6 +579,11 @@
   - 可搜索名称：NFC-09869efa5b9926c9 / "lifecycle_terminal_excluded": \[c\["canonical_id"\] for c in ranked
   - 来源：`tools/iteration_planner/planner.py`
   - 依赖：—；被引用：—
+- ["lifecycle_tests": "PASS",](../../../ROUND-LEDGER.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-0538b20e5b042f04 / "lifecycle_tests": "PASS",
+  - 来源：`ROUND-LEDGER.jsonl`
+  - 依赖：—；被引用：—
 - ["limitations": "This is a conservative navigation summary, not a new adjudication, proof, empirical verification or life](../../../tools/governance/build_human_results.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-f1bc17014868c1c9 / "limitations": "This is a conservative navigation summary, not a new adjudication, proof, empirical verification or life
@@ -753,6 +758,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-f592c5ae30b64f02 / "open_proof_obligations": len(proof_obligations),
   - 来源：`tools/foundation/adjudicate_function_assets.py`
+  - 依赖：—；被引用：—
+- ["other workflows at 16f3d83b: repository-path-accounting-preflight PASS, iteration-lifecycle-validation PASS, iteration-](../../../ROUND-LEDGER.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-93c7e8afa3bdbd70 / "other workflows at 16f3d83b: repository-path-accounting-preflight PASS, iteration-lifecycle-validation PASS, iteration-
+  - 来源：`ROUND-LEDGER.jsonl`
   - 依赖：—；被引用：—
 - ["P vs NP 问题未被证明"（这是数学界的共识，点火框架只是重述）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -2493,14 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-B2832092A1A6362E / ## 关联函数 / Related Functions / IMPLICIT-B2832092A1A6362E / IMPLICIT-0026301F130FD562
   - 来源：`统一案例总表/0672-C-0677-梅纳德快速缩小间隔.md`
-  - 依赖：—；被引用：—
-- [## 关联函数 / Related Functions](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0674-C-0679-Willmore%E7%8C%9C%E6%83%B3.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-B36AB62D5C9C6E47 / ## 关联函数 / Related Functions / IMPLICIT-B36AB62D5C9C6E47 / IMPLICIT-0026301F130FD562
-  - 来源：`统一案例总表/0674-C-0679-Willmore猜想.md`
-  - 依赖：—；被引用：—
-- [## 关联函数 / Related Functions](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0743-C-0748-%E7%BE%8E%E5%9B%BD%E7%A6%81%E9%85%92%E4%BB%A4.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-B43339CBC8C1AB94 / ## 关联函数 / Related Functions / IMPLICIT-B43339CBC8C1AB94 / IMPLICIT-0026301F130FD562
-  - 来源：`统一案例总表/0743-C-0748-美国禁酒令.md`
   - 依赖：—；被引用：—

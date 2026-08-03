@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [/Users/zhiyuan/我的笔记/统一函数总表/0282-D246-自我模型-ε_aware连接定理.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-7d0dc3707983f72c / /Users/zhiyuan/我的笔记/统一函数总表/0282-D246-自我模型-ε_aware连接定理.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D246；被引用：—
+- [/Users/zhiyuan/我的笔记/统一函数总表/0283-D247-自我模型相变函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：NFC-44083fb1a47e5e87 / /Users/zhiyuan/我的笔记/统一函数总表/0283-D247-自我模型相变函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D247；被引用：—
 - [/Users/zhiyuan/我的笔记/统一函数总表/0284-D248-自我模型相变的不可伪造信号.md](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-87e8478ffa926046 / /Users/zhiyuan/我的笔记/统一函数总表/0284-D248-自我模型相变的不可伪造信号.md
@@ -2492,15 +2502,5 @@
 - [\[C-0750｜何刚财务观点\](../../../统一案例总表/0745-C-0750-何刚财务观点.md)（原笔记编号：C575-2）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0585-D575-%E8%B4%A2%E5%8A%A1%E5%85%83%E5%8D%8F%E8%AE%AE%E5%AE%9E%E4%BE%8B%E5%8C%96.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-ae6b11ebe072d024 / \[C-0750｜何刚财务观点\](../../../统一案例总表/0745-C-0750-何刚财务观点.md)（原笔记编号：C575-2）
-  - 来源：`统一函数总表/0585-D575-财务元协议实例化.md`
-  - 依赖：—；被引用：—
-- [\[C-0751｜安然公司\](../../../统一案例总表/0746-C-0751-安然公司.md)（原笔记编号：C575-3）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0585-D575-%E8%B4%A2%E5%8A%A1%E5%85%83%E5%8D%8F%E8%AE%AE%E5%AE%9E%E4%BE%8B%E5%8C%96.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-75eae06acddad498 / \[C-0751｜安然公司\](../../../统一案例总表/0746-C-0751-安然公司.md)（原笔记编号：C575-3）
-  - 来源：`统一函数总表/0585-D575-财务元协议实例化.md`
-  - 依赖：—；被引用：—
-- [\[C-0752｜美国禁酒令\](../../../统一案例总表/0747-C-0752-美国禁酒令.md)（原笔记编号：C575-4）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0585-D575-%E8%B4%A2%E5%8A%A1%E5%85%83%E5%8D%8F%E8%AE%AE%E5%AE%9E%E4%BE%8B%E5%8C%96.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-c1f0ee4bb7ad03da / \[C-0752｜美国禁酒令\](../../../统一案例总表/0747-C-0752-美国禁酒令.md)（原笔记编号：C575-4）
   - 来源：`统一函数总表/0585-D575-财务元协议实例化.md`
   - 依赖：—；被引用：—

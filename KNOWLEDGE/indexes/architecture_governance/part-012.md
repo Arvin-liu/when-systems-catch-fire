@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [What evidence would show that no change is needed?](../../../ITERATION.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-46d6f21bbfbfb494 / What evidence would show that no change is needed?
+  - 来源：`ITERATION.md`
+  - 依赖：—；被引用：—
+- [whether action collapse is being confused with truth collapse;](../../../reports/architecture/121Q13-baseline-overlap-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-1a835065beb973f6 / whether action collapse is being confused with truth collapse;
+  - 来源：`reports/architecture/121Q13-baseline-overlap-audit.md`
+  - 依赖：—；被引用：—
 - [which iteration to validate via --request or --iteration-id; it never assumes Q32I.](../../../tools/operations/validate_generated_output_authority.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-5682d281b99c6d2f / which iteration to validate via --request or --iteration-id; it never assumes Q32I.
@@ -2487,14 +2497,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-c2ab86642717b1bd / Θ := 统一元律
   - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [Θ 统一元律完整表达：**](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-5762f98783fd27b6 / Θ 统一元律完整表达：**
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [σ_opt=√e验证](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0618-C-623-%E9%80%80%E5%87%BA%E6%9D%83%E7%A9%BA%E9%97%B4%E6%A1%88%E4%BE%8B03.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-787add4d1e046063 / σ_opt=√e验证
-  - 来源：`统一案例总表/0618-C-623-退出权空间案例03.md`
   - 依赖：—；被引用：—

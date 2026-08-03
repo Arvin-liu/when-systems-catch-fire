@@ -1586,6 +1586,11 @@
   - 可搜索名称：NFC-fb809c71df7d15db / load artifacts
   - 来源：`tests/test_canonical.py`
   - 依赖：—；被引用：—
+- [Local merge-ref simulation (main + PR #190 branch) passes path accounting 9/9, so the defect is branch-tree generated-ou](../../../docs/research-os/queue-runtime/ROUND-0-CHECKPOINT.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-29fc66f1cb01e1a4 / Local merge-ref simulation (main + PR #190 branch) passes path accounting 9/9, so the defect is branch-tree generated-ou
+  - 来源：`docs/research-os/queue-runtime/ROUND-0-CHECKPOINT.md`
+  - 依赖：—；被引用：—
 - [LoRA adapters as reusable artifacts stored in a library. Retrieved and merged at inference. This is a practical artifact](../../../data/external-research/121-fulltext-resolver/121q2/acceptance/S120-036.json)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-ff6df4f67cae4990 / LoRA adapters as reusable artifacts stored in a library. Retrieved and merged at inference. This is a practical artifact
@@ -2495,9 +2500,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-6b6be29f744ffd16 / P1 机器可读数据完整性审计
   - 来源：`outputs/audit/p1-machine-readable-data-audit-20260707.md`
-  - 依赖：P1；被引用：—
-- [P1 机器数据接入碰撞工作流 · Smoke Test 审计（2026-07-08）](../../../outputs/audit/p1-collision-workflow-smoke-test-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-7e6df2cb40f3af55 / P1 机器数据接入碰撞工作流 · Smoke Test 审计（2026-07-08）
-  - 来源：`outputs/audit/p1-collision-workflow-smoke-test-20260708.md`
   - 依赖：P1；被引用：—

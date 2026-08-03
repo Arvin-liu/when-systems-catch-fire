@@ -4,6 +4,26 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0531-D534-无聊-意义重构函数.md`](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0531-D534-%E6%97%A0%E8%81%8A-%E6%84%8F%E4%B9%89%E9%87%8D%E6%9E%84%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-cf44d8f3d3ece0db / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0531-D534-无聊-意义重构函数.md`
+  - 来源：`统一函数总表/0531-D534-无聊-意义重构函数.md`
+  - 依赖：D534；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0532-D535-死亡三重定义函数.md`](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0532-D535-%E6%AD%BB%E4%BA%A1%E4%B8%89%E9%87%8D%E5%AE%9A%E4%B9%89%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-9dbdf2c833af4e7b / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0532-D535-死亡三重定义函数.md`
+  - 来源：`统一函数总表/0532-D535-死亡三重定义函数.md`
+  - 依赖：D535；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0533-D536-清醒梦-梦境真实感提升函数.md`](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0533-D536-%E6%B8%85%E9%86%92%E6%A2%A6-%E6%A2%A6%E5%A2%83%E7%9C%9F%E5%AE%9E%E6%84%9F%E6%8F%90%E5%8D%87%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-65d0edc708ea86d6 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0533-D536-清醒梦-梦境真实感提升函数.md`
+  - 来源：`统一函数总表/0533-D536-清醒梦-梦境真实感提升函数.md`
+  - 依赖：D536；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0534-D537-完成-完美函数.md`](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0534-D537-%E5%AE%8C%E6%88%90-%E5%AE%8C%E7%BE%8E%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-648088c6d96b54e0 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0534-D537-完成-完美函数.md`
+  - 来源：`统一函数总表/0534-D537-完成-完美函数.md`
+  - 依赖：D537；被引用：—
 - [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0535-D538-潜意识-觉知-意识函数.md`](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0535-D538-%E6%BD%9C%E6%84%8F%E8%AF%86-%E8%A7%89%E7%9F%A5-%E6%84%8F%E8%AF%86%E5%87%BD%E6%95%B0.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-62af76e4285a8816 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0535-D538-潜意识-觉知-意识函数.md`
@@ -2481,23 +2501,3 @@
   - 可搜索名称：NFC-f6918a2964f3c496 / 报告写 T4 被降级为自然语言候选，但实际数据中 T4 保留为未证明形式命题。
   - 来源：`reports/foundation-architecture/085-084-truth-status-correction.md`
   - 依赖：T4；被引用：—
-- [报告结论明确把它判为 `G₄`，理由是 `e^{-x}` 与对数族同构，可与 D312 归在同一结构族。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0347-D311-%E5%83%B5%E5%B0%B8%E6%80%81%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-8a13ef8f76ba248a / 报告结论明确把它判为 `G₄`，理由是 `e^{-x}` 与对数族同构，可与 D312 归在同一结构族。
-  - 来源：`统一函数总表/0347-D311-僵尸态函数.md`
-  - 依赖：D312；被引用：—
-- [报告结论明确把它判定为 `G₁` 乘法归零律，并给出与 D352/D355/D357/D360/D363 的同构关系。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0387-D351-%E7%BC%93%E5%86%B2%E5%85%B3%E8%81%94%E7%BB%93%E6%9E%84%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-529a25db52930a46 / 报告结论明确把它判定为 `G₁` 乘法归零律，并给出与 D352/D355/D357/D360/D363 的同构关系。
-  - 来源：`统一函数总表/0387-D351-缓冲关联结构函数.md`
-  - 依赖：D352, D355, D357, D360；被引用：—
-- [持续自我纠错引擎](../../ASSET-CARDS.md#asset-hr-07eaa526c5114401)
-  - 类型/状态：`RESULT_OR_ARTICLE` · `CURRENT_CORRECTION_RECORD`
-  - 可搜索名称：持续自我纠错引擎 / self-correction-engine
-  - 来源：`docs/governance/self-correction-engine.md`
-  - 依赖：—；被引用：—
-- [挂靠 EXIT 族；机制 R_effective = R_formal × (1 - B_binding)](../../../outputs/audit/teacher-competition-small-batch-backfill-audit-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-2ab3771b24f9896d / 挂靠 EXIT 族；机制 R_effective = R_formal × (1 - B_binding)
-  - 来源：`outputs/audit/teacher-competition-small-batch-backfill-audit-20260708.md`
-  - 依赖：—；被引用：—

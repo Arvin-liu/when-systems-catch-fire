@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [base / "work-queues" / "085-proof-priority-queue.jsonl",](../../../tools/foundation/verify_085_architecture_freeze.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-0ce1250af284f1c2 / base / "work-queues" / "085-proof-priority-queue.jsonl",
+  - 来源：`tools/foundation/verify_085_architecture_freeze.py`
+  - 依赖：—；被引用：—
+- [base\["logic_form"\] = "analogy or mapping claim without proven equivalence"](../../../tools/foundation/build_080_queue.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-b7cb845e4f42f0a1 / base\["logic_form"\] = "analogy or mapping claim without proven equivalence"
+  - 来源：`tools/foundation/build_080_queue.py`
+  - 依赖：—；被引用：—
+- [base\["logic_form"\] = "directional mechanism claim with source-scoped drivers"](../../../tools/foundation/build_080_queue.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-6825e5ea62ae93f7 / base\["logic_form"\] = "directional mechanism claim with source-scoped drivers"
+  - 来源：`tools/foundation/build_080_queue.py`
+  - 依赖：—；被引用：—
 - [base\["logic_form"\] = "source-scoped formal proposition or theorem-style claim"](../../../tools/foundation/build_080_queue.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-5092806ae334cfd7 / base\["logic_form"\] = "source-scoped formal proposition or theorem-style claim"
@@ -2482,19 +2497,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-56083285c984826f / Derived operational extension for probability semantics and system dynamics; not a truth layer or causal proof.
   - 来源：`data/architecture/probabilistic-system-dynamics/completion-seal.json`
-  - 依赖：—；被引用：—
-- [Derived representation only; not ontology, truth, value, causality, clinical inference, psychological diagnosis or proof](../../../data/architecture/adaptive-relational-network/completion-seal.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-d2401e78c02929ad / Derived representation only; not ontology, truth, value, causality, clinical inference, psychological diagnosis or proof
-  - 来源：`data/architecture/adaptive-relational-network/completion-seal.json`
-  - 依赖：—；被引用：—
-- [derived_from: "/Users/zhiyuan/Library/Containers/com.biji.getNotes/Data/Library/Caches/欧亚大陆的枢纽×Ψ₀元函数验证报告 2026年7月6日0306-2](../../../%E6%96%B0%E6%95%85%E4%BA%8B/0001-S1-%E6%AF%94%E5%88%80%E5%89%91%E6%9B%B4%E6%8C%81%E4%B9%85%E7%9A%84%EF%BC%8C%E6%98%AF%E5%85%B1%E4%BA%AB%E8%A7%82%E5%BF%B5.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-a8183ae42f8eeaba / derived_from: "/Users/zhiyuan/Library/Containers/com.biji.getNotes/Data/Library/Caches/欧亚大陆的枢纽×Ψ₀元函数验证报告 2026年7月6日0306-2
-  - 来源：`新故事/0001-S1-比刀剑更持久的，是共享观念.md`
-  - 依赖：—；被引用：—
-- [detect the seal-manifest lifecycle mismatch and fail-closed.](../../../tests/test_seal_freshness.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-78c72e4b9f1faccb / detect the seal-manifest lifecycle mismatch and fail-closed.
-  - 来源：`tests/test_seal_freshness.py`
   - 依赖：—；被引用：—

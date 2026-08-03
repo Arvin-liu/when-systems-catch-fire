@@ -4,6 +4,26 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [title: "R_upgrade升级路径函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0105-D56-R_upgrade%E5%8D%87%E7%BA%A7%E8%B7%AF%E5%BE%84%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-BDCF59A1E5D101A1 / title: "R_upgrade升级路径函数" / IMPLICIT-BDCF59A1E5D101A1
+  - 来源：`统一函数总表/0105-D56-R_upgrade升级路径函数.md`
+  - 依赖：—；被引用：—
+- [title: "Shannon-Fisher跷跷板定理"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0269-D233-Shannon-Fisher%E8%B7%B7%E8%B7%B7%E6%9D%BF%E5%AE%9A%E7%90%86.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-98bedcc2f0f456b7 / title: "Shannon-Fisher跷跷板定理"
+  - 来源：`统一函数总表/0269-D233-Shannon-Fisher跷跷板定理.md`
+  - 依赖：—；被引用：—
+- [title: "δ_c-相变点统一函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0439-D403-%CE%B4_c-%E7%9B%B8%E5%8F%98%E7%82%B9%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-4AF0B9018E435CC5 / title: "δ_c-相变点统一函数" / IMPLICIT-4AF0B9018E435CC5
+  - 来源：`统一函数总表/0439-D403-δ_c-相变点统一函数.md`
+  - 依赖：—；被引用：—
+- [title: "δ_c-相变点统一函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0439-D403-%CE%B4_c-%E7%9B%B8%E5%8F%98%E7%82%B9%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-23b4d48bdeec8af0 / title: "δ_c-相变点统一函数"
+  - 来源：`统一函数总表/0439-D403-δ_c-相变点统一函数.md`
+  - 依赖：—；被引用：—
 - [title: "δ_c-稳定性裕度统一函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0453-D417-%CE%B4_c-%E7%A8%B3%E5%AE%9A%E6%80%A7%E8%A3%95%E5%BA%A6%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-C4A8B80AB86F3EED / title: "δ_c-稳定性裕度统一函数" / IMPLICIT-C4A8B80AB86F3EED
@@ -2483,24 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-B8164867D6E7EEB0 / title: "退出权时间衰减函数" / IMPLICIT-B8164867D6E7EEB0
   - 来源：`统一函数总表/0497-D499-退出权时间衰减函数.md`
-  - 依赖：—；被引用：—
-- [title: "退出权最大化函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0499-D501-%E9%80%80%E5%87%BA%E6%9D%83%E6%9C%80%E5%A4%A7%E5%8C%96%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-BBC9D6E5A2673A5F / title: "退出权最大化函数" / IMPLICIT-BBC9D6E5A2673A5F
-  - 来源：`统一函数总表/0499-D501-退出权最大化函数.md`
-  - 依赖：—；被引用：—
-- [title: "退出权最弱项瓶颈函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0501-D503-%E9%80%80%E5%87%BA%E6%9D%83%E6%9C%80%E5%BC%B1%E9%A1%B9%E7%93%B6%E9%A2%88%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-C04D4FF48920BAE0 / title: "退出权最弱项瓶颈函数" / IMPLICIT-C04D4FF48920BAE0
-  - 来源：`统一函数总表/0501-D503-退出权最弱项瓶颈函数.md`
-  - 依赖：—；被引用：—
-- [title: "退出权相变级联函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0483-D485-%E9%80%80%E5%87%BA%E6%9D%83%E7%9B%B8%E5%8F%98%E7%BA%A7%E8%81%94%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-1B49A85FA92D3ABB / title: "退出权相变级联函数" / IMPLICIT-1B49A85FA92D3ABB
-  - 来源：`统一函数总表/0483-D485-退出权相变级联函数.md`
-  - 依赖：—；被引用：—
-- [title: "退出权空间总函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0505-D507-%E9%80%80%E5%87%BA%E6%9D%83%E7%A9%BA%E9%97%B4%E6%80%BB%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-E09ED800108F27C2 / title: "退出权空间总函数" / IMPLICIT-E09ED800108F27C2
-  - 来源：`统一函数总表/0505-D507-退出权空间总函数.md`
   - 依赖：—；被引用：—

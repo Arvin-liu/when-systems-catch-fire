@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Θ 统一元律完整表达：**](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-5762f98783fd27b6 / Θ 统一元律完整表达：**
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [σ_opt=√e验证](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0618-C-623-%E9%80%80%E5%87%BA%E6%9D%83%E7%A9%BA%E9%97%B4%E6%A1%88%E4%BE%8B03.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-787add4d1e046063 / σ_opt=√e验证
+  - 来源：`统一案例总表/0618-C-623-退出权空间案例03.md`
+  - 依赖：—；被引用：—
 - [“写作素材来源”在这里描述生成与审计角色，不等于 L0 中“外部证据来源”的专门含义。0.4.0 至少区分两类可进入写作过程的材料：](../../../docs/publication/zhiyuan-writing-method.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-bd18340994206cbf / “写作素材来源”在这里描述生成与审计角色，不等于 L0 中“外部证据来源”的专门含义。0.4.0 至少区分两类可进入写作过程的材料：
@@ -2478,14 +2488,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-31150d90fef87ea7 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0071-C-71-美国国家认同危机★.md`
   - 来源：`统一案例总表/0071-C-71-美国国家认同危机★.md`
-  - 依赖：—；被引用：—
-- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0072-C-72-统一相变框架.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0072-C-72-%E7%BB%9F%E4%B8%80%E7%9B%B8%E5%8F%98%E6%A1%86%E6%9E%B6.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-ef6818eef4791ac8 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0072-C-72-统一相变框架.md`
-  - 来源：`统一案例总表/0072-C-72-统一相变框架.md`
-  - 依赖：—；被引用：—
-- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0078-C-78-可选集双向动力学.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0078-C-78-%E5%8F%AF%E9%80%89%E9%9B%86%E5%8F%8C%E5%90%91%E5%8A%A8%E5%8A%9B%E5%AD%A6.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-96c2790bdc9ff35f / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0078-C-78-可选集双向动力学.md`
-  - 来源：`统一案例总表/0078-C-78-可选集双向动力学.md`
   - 依赖：—；被引用：—

@@ -4,6 +4,26 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [共存稳态条件函数](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0349-D313-%E5%85%B1%E5%AD%98%E7%A8%B3%E6%80%81%E6%9D%A1%E4%BB%B6%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D313 / 共存稳态条件函数 / D313
+  - 来源：`统一函数总表/0349-D313-共存稳态条件函数.md`
+  - 依赖：D271, D274, D289, D290；被引用：NFC-17acde05a5c89ff0, NFC-6212e7d027246b43, NFC-66ebd4ccc914eaec, NFC-952bc1056009bab1
+- [共存震荡函数](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0363-D327-%E5%85%B1%E5%AD%98%E9%9C%87%E8%8D%A1%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D327 / 共存震荡函数 / D327
+  - 来源：`统一函数总表/0363-D327-共存震荡函数.md`
+  - 依赖：D271, D289, D290, D360；被引用：NFC-14c37e19e397c981, NFC-29e205ae1d439380, NFC-2b0a03e48e9a4d49, NFC-5a3edb1445b2b6c4
+- [共存震荡分支函数](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0391-D355-%E5%85%B1%E5%AD%98%E9%9C%87%E8%8D%A1%E5%88%86%E6%94%AF%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `DOWNGRADE_TO_PENDING`
+  - 可搜索名称：D355 / 共存震荡分支函数 / D355
+  - 来源：`统一函数总表/0391-D355-共存震荡分支函数.md`
+  - 依赖：D271, D289, D290, D360；被引用：D351, NFC-09af678d025c1da4, NFC-13e49222834ac238, NFC-26d740452db9781e
+- [共存震荡阻尼函数](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0377-D341-%E5%85%B1%E5%AD%98%E9%9C%87%E8%8D%A1%E9%98%BB%E5%B0%BC%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D341 / 共存震荡阻尼函数 / D341
+  - 来源：`统一函数总表/0377-D341-共存震荡阻尼函数.md`
+  - 依赖：D271, D289, D290, D360；被引用：NFC-031b7f87b7ba1789, NFC-048fde41c0913ee7, NFC-4f8e37635eb0091d, NFC-b3ba5c22622931c7
 - [共振频率-消耗效率函数](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0402-D366-%E5%85%B1%E6%8C%AF%E9%A2%91%E7%8E%87-%E6%B6%88%E8%80%97%E6%95%88%E7%8E%87%E5%87%BD%E6%95%B0.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：D366 / 共振频率-消耗效率函数 / D366
@@ -2481,23 +2501,3 @@
   - 可搜索名称：NFC-afafff54af9ea43e / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0530-D533-Banach算子不变子空间函数.md`
   - 来源：`统一函数总表/0530-D533-Banach算子不变子空间函数.md`
   - 依赖：D533；被引用：—
-- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0531-D534-无聊-意义重构函数.md`](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0531-D534-%E6%97%A0%E8%81%8A-%E6%84%8F%E4%B9%89%E9%87%8D%E6%9E%84%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-cf44d8f3d3ece0db / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0531-D534-无聊-意义重构函数.md`
-  - 来源：`统一函数总表/0531-D534-无聊-意义重构函数.md`
-  - 依赖：D534；被引用：—
-- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0532-D535-死亡三重定义函数.md`](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0532-D535-%E6%AD%BB%E4%BA%A1%E4%B8%89%E9%87%8D%E5%AE%9A%E4%B9%89%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-9dbdf2c833af4e7b / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0532-D535-死亡三重定义函数.md`
-  - 来源：`统一函数总表/0532-D535-死亡三重定义函数.md`
-  - 依赖：D535；被引用：—
-- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0533-D536-清醒梦-梦境真实感提升函数.md`](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0533-D536-%E6%B8%85%E9%86%92%E6%A2%A6-%E6%A2%A6%E5%A2%83%E7%9C%9F%E5%AE%9E%E6%84%9F%E6%8F%90%E5%8D%87%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-65d0edc708ea86d6 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0533-D536-清醒梦-梦境真实感提升函数.md`
-  - 来源：`统一函数总表/0533-D536-清醒梦-梦境真实感提升函数.md`
-  - 依赖：D536；被引用：—
-- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0534-D537-完成-完美函数.md`](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0534-D537-%E5%AE%8C%E6%88%90-%E5%AE%8C%E7%BE%8E%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-648088c6d96b54e0 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0534-D537-完成-完美函数.md`
-  - 来源：`统一函数总表/0534-D537-完成-完美函数.md`
-  - 依赖：D537；被引用：—

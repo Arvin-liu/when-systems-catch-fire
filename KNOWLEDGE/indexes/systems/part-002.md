@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [causal_relation = next(item for item in TOPOLOGY_DOC\["relations"\] if item\["relation_domain"\] == "substantive_causal_cand](../../../tests/test_change_propagation.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-526c28a208207972 / causal_relation = next(item for item in TOPOLOGY_DOC\["relations"\] if item\["relation_domain"\] == "substantive_causal_cand
+  - 来源：`tests/test_change_propagation.py`
+  - 依赖：—；被引用：—
 - [causal_topology := ∫_{Ω} cause × effect × temporal_order × counterfactual dΩ（legacy candidate；不能据此识别现实因果）](../../../docs/phi_meta_law.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-006F03978554BA99 / causal_topology := ∫_{Ω} cause × effect × temporal_order × counterfactual dΩ（legacy candidate；不能据此识别现实因果） / IMPLICIT-006F03978554BA99
@@ -2495,9 +2500,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-22c0126e08206e31 / Network/non-200 outcomes are recorded explicitly (acquisition_status) and NEVER
   - 来源：`evidence-program/tools/run_crossref_verification.py`
-  - 依赖：—；被引用：—
-- [network\["diffs"\]\[0\]\["external_refs"\]\[1\]\["ref_type"\] = "external_projection"](../../../tests/test_adaptive_relational_network_validation_contract.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-4407a6fb900d4ab3 / network\["diffs"\]\[0\]\["external_refs"\]\[1\]\["ref_type"\] = "external_projection"
-  - 来源：`tests/test_adaptive_relational_network_validation_contract.py`
   - 依赖：—；被引用：—

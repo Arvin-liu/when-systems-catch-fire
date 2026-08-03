@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [声称公平交易/合理使用适用于未经验证的情况](../../../docs/governance/external-input-non-republication-principle.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-73869a0d1537936d / 声称公平交易/合理使用适用于未经验证的情况
+  - 来源：`docs/governance/external-input-non-republication-principle.md`
+  - 依赖：—；被引用：—
+- [处置上，3,765 项 `QUARANTINE_UNTIL_DEFINED`，77 项 `DOWNGRADE_TO_PENDING`，44 项 `DOWNGRADE_TO_CONJECTURE`。仅 1 项在该登记口径中标作 `KEEP_A](../../../RESULTS/ADJUDICATION-SUMMARY.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-f1c45cfca5869cf4 / 处置上，3,765 项 `QUARANTINE_UNTIL_DEFINED`，77 项 `DOWNGRADE_TO_PENDING`，44 项 `DOWNGRADE_TO_CONJECTURE`。仅 1 项在该登记口径中标作 `KEEP_A
+  - 来源：`RESULTS/ADJUDICATION-SUMMARY.md`
+  - 依赖：—；被引用：—
 - [处置：** 088 将 087 定性降级为'外部来源未接入学科学投影初稿'，并在阶段2-4建立真实外部来源层。](../../../reports/foundation-architecture/088-087-count-and-denominator-audit.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-b792119b46ebb3b2 / 处置：** 088 将 087 定性降级为'外部来源未接入学科学投影初稿'，并在阶段2-4建立真实外部来源层。
@@ -2487,14 +2497,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-d483a4e0b958648d / 真实语义门槛必须人工确认；验证器不能替代人工审核。
   - 来源：`tools/build_reports.py`
-  - 依赖：—；被引用：—
-- [真正必要的问题，然后给我一份个性化的首次使用建议。](../../../docs/ai-assistant-usage-reference.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-451e74da718b357f / 真正必要的问题，然后给我一份个性化的首次使用建议。
-  - 来源：`docs/ai-assistant-usage-reference.md`
-  - 依赖：—；被引用：—
-- [真理等级，不创建 task 112。](../../../docs/project-current-state.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-7840ede918e5a7d9 / 真理等级，不创建 task 112。
-  - 来源：`docs/project-current-state.md`
   - 依赖：—；被引用：—

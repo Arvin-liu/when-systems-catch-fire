@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [self.assertTrue(any("provenance_verified" in e for e in r\["errors"\]))](../../../tests/test_publication_gate_fail_closed.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-b98d997ef99b3b66 / self.assertTrue(any("provenance_verified" in e for e in r\["errors"\]))
+  - 来源：`tests/test_publication_gate_fail_closed.py`
+  - 依赖：—；被引用：—
+- [self.assertTrue(any("restored to CURRENT without review_evidence" in p for p in problems))](../../../tests/test_propagation_reconciliation.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-69efa3e1b8caed11 / self.assertTrue(any("restored to CURRENT without review_evidence" in p for p in problems))
+  - 来源：`tests/test_propagation_reconciliation.py`
+  - 依赖：—；被引用：—
 - [self.assertTrue(any("subject_head" in e and "artifact_head_sha" in e for e in errors))](../../../tests/test_external_attestation.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-3314c1f2849ec984 / self.assertTrue(any("subject_head" in e and "artifact_head_sha" in e for e in errors))
@@ -2493,14 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-555cc42a493edecd / What actual artifact, test, schema, state page, report or workflow is missing, stale or contradictory?
   - 来源：`ITERATION.md`
-  - 依赖：—；被引用：—
-- [What evidence would show that no change is needed?](../../../ITERATION.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-46d6f21bbfbfb494 / What evidence would show that no change is needed?
-  - 来源：`ITERATION.md`
-  - 依赖：—；被引用：—
-- [whether action collapse is being confused with truth collapse;](../../../reports/architecture/121Q13-baseline-overlap-audit.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-1a835065beb973f6 / whether action collapse is being confused with truth collapse;
-  - 来源：`reports/architecture/121Q13-baseline-overlap-audit.md`
   - 依赖：—；被引用：—

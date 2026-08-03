@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [真正必要的问题，然后给我一份个性化的首次使用建议。](../../../docs/ai-assistant-usage-reference.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-451e74da718b357f / 真正必要的问题，然后给我一份个性化的首次使用建议。
+  - 来源：`docs/ai-assistant-usage-reference.md`
+  - 依赖：—；被引用：—
+- [真理等级，不创建 task 112。](../../../docs/project-current-state.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-7840ede918e5a7d9 / 真理等级，不创建 task 112。
+  - 来源：`docs/project-current-state.md`
+  - 依赖：—；被引用：—
 - [睡眠修复窗口验证](../../../data/foundation/evidence/evidence.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-781251482ddda6b2 / 睡眠修复窗口验证

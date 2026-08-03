@@ -4,6 +4,26 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [proof_index = next(i for i, item in enumerate(base\["component_decisions"\]) if item\["decision"\] == "NO_CHANGE_WITH_PROOF"](../../../tests/test_incremental_execution.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-01919b0109fbc2d7 / proof_index = next(i for i, item in enumerate(base\["component_decisions"\]) if item\["decision"\] == "NO_CHANGE_WITH_PROOF"
+  - 来源：`tests/test_incremental_execution.py`
+  - 依赖：—；被引用：—
+- [proof_obligation = "Formalize the causal DAG and identification assumptions."](../../../tools/foundation/process_084_batch.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-54f54440693ccbbf / proof_obligation = "Formalize the causal DAG and identification assumptions."
+  - 来源：`tools/foundation/process_084_batch.py`
+  - 依赖：—；被引用：—
+- [proof_obligation = "Formalize the strong quantifier claim and provide proof or counterexample."](../../../tools/foundation/process_084_batch.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-fd68e2ea07e9c9ac / proof_obligation = "Formalize the strong quantifier claim and provide proof or counterexample."
+  - 来源：`tools/foundation/process_084_batch.py`
+  - 依赖：—；被引用：—
+- [proof_obligation = "Verify dimensional consistency and parameter source for cross-domain mapping."](../../../tools/foundation/process_084_batch.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-c1269770bce39598 / proof_obligation = "Verify dimensional consistency and parameter source for cross-domain mapping."
+  - 来源：`tools/foundation/process_084_batch.py`
+  - 依赖：—；被引用：—
 - [proof_obligation = f"Provide reproducible Lean/Z3/SymPy artifact proving the ORIGINAL proposition (not a weakened versio](../../../tools/foundation/process_084_batch.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-1a3864c0a5ed76ad / proof_obligation = f"Provide reproducible Lean/Z3/SymPy artifact proving the ORIGINAL proposition (not a weakened versio
@@ -2480,24 +2500,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-76e8c807da8e6c12 / title: "r_cross优先性定理"
   - 来源：`统一函数总表/0154-D115-r_cross优先性定理.md`
-  - 依赖：—；被引用：—
-- [title: "R_upgrade升级路径函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0105-D56-R_upgrade%E5%8D%87%E7%BA%A7%E8%B7%AF%E5%BE%84%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-BDCF59A1E5D101A1 / title: "R_upgrade升级路径函数" / IMPLICIT-BDCF59A1E5D101A1
-  - 来源：`统一函数总表/0105-D56-R_upgrade升级路径函数.md`
-  - 依赖：—；被引用：—
-- [title: "Shannon-Fisher跷跷板定理"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0269-D233-Shannon-Fisher%E8%B7%B7%E8%B7%B7%E6%9D%BF%E5%AE%9A%E7%90%86.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-98bedcc2f0f456b7 / title: "Shannon-Fisher跷跷板定理"
-  - 来源：`统一函数总表/0269-D233-Shannon-Fisher跷跷板定理.md`
-  - 依赖：—；被引用：—
-- [title: "δ_c-相变点统一函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0439-D403-%CE%B4_c-%E7%9B%B8%E5%8F%98%E7%82%B9%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-4AF0B9018E435CC5 / title: "δ_c-相变点统一函数" / IMPLICIT-4AF0B9018E435CC5
-  - 来源：`统一函数总表/0439-D403-δ_c-相变点统一函数.md`
-  - 依赖：—；被引用：—
-- [title: "δ_c-相变点统一函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0439-D403-%CE%B4_c-%E7%9B%B8%E5%8F%98%E7%82%B9%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-23b4d48bdeec8af0 / title: "δ_c-相变点统一函数"
-  - 来源：`统一函数总表/0439-D403-δ_c-相变点统一函数.md`
   - 依赖：—；被引用：—

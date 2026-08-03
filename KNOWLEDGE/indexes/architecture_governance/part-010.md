@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [P1 机器数据接入碰撞工作流 · Smoke Test 审计（2026-07-08）](../../../outputs/audit/p1-collision-workflow-smoke-test-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-7e6df2cb40f3af55 / P1 机器数据接入碰撞工作流 · Smoke Test 审计（2026-07-08）
+  - 来源：`outputs/audit/p1-collision-workflow-smoke-test-20260708.md`
+  - 依赖：P1；被引用：—
 - [P1 机器数据接入碰撞工作流的作用是**辅助**碰撞，而不是替代或自动结论：](../../../docs/p1-machine-data-collision-workflow-20260708.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-f1bed93ab9863059 / P1 机器数据接入碰撞工作流的作用是**辅助**碰撞，而不是替代或自动结论：
@@ -1254,6 +1259,11 @@
   - 可搜索名称：Remaining content work queue / remaining-content-work-queue-20260713
   - 来源：`reports/foundation-architecture/remaining-content-work-queue-20260713.md`
   - 依赖：—；被引用：—
+- [Remote CI truth at parent head (all logs read)](../../../docs/research-os/queue-runtime/ROUND-0-CHECKPOINT.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-ba53c17ef0bef447 / Remote CI truth at parent head (all logs read)
+  - 来源：`docs/research-os/queue-runtime/ROUND-0-CHECKPOINT.md`
+  - 依赖：—；被引用：—
 - [Remote truth](../../../reports/foundation-architecture/098-claim-governance-implementation.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-cf188e9675d0df41 / Remote truth
@@ -2493,14 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-111045825b8186dc / self.assertTrue(any("provenance_verified" in e for e in r.get("errors", \[\])),
   - 来源：`tests/test_publication_provenance_attack.py`
-  - 依赖：—；被引用：—
-- [self.assertTrue(any("provenance_verified" in e for e in r\["errors"\]))](../../../tests/test_publication_gate_fail_closed.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-b98d997ef99b3b66 / self.assertTrue(any("provenance_verified" in e for e in r\["errors"\]))
-  - 来源：`tests/test_publication_gate_fail_closed.py`
-  - 依赖：—；被引用：—
-- [self.assertTrue(any("restored to CURRENT without review_evidence" in p for p in problems))](../../../tests/test_propagation_reconciliation.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-69efa3e1b8caed11 / self.assertTrue(any("restored to CURRENT without review_evidence" in p for p in problems))
-  - 来源：`tests/test_propagation_reconciliation.py`
   - 依赖：—；被引用：—

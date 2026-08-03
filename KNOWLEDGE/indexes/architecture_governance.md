@@ -12,11 +12,11 @@
 - [第 006 片](./architecture_governance/part-006.md)：2501—3000；def slug(value: str) -> str: → def test_missing_target_commit_fails():
 - [第 007 片](./architecture_governance/part-007.md)：3001—3500；def test_model_failure_universal_inference_is_reviewed(self): → dims=set(request.get('changed_dimensions',\['identity'\])); classes=set(request.get('change_classifications',\['EVIDENCE_UP
 - [第 008 片](./architecture_governance/part-008.md)：3501—4000；Direct evidence for separating novice/API specification, cAST intermediate representation, Python AST, and executable so → if dd.get("github_artifact_archive_digest") and dd.get("pages_payload_tar_digest"):
-- [第 009 片](./architecture_governance/part-009.md)：4001—4500；if dimensions.get("reproduction") == "REPRODUCED_IMPLEMENTATION_DEFECT" and not claims_defect: → P1 机器数据接入碰撞工作流 · Smoke Test 审计（2026-07-08）
-- [第 010 片](./architecture_governance/part-010.md)：4501—5000；P1 机器数据接入碰撞工作流的作用是**辅助**碰撞，而不是替代或自动结论： → self.assertTrue(any("restored to CURRENT without review_evidence" in p for p in problems))
-- [第 011 片](./architecture_governance/part-011.md)：5001—5500；self.assertTrue(any("subject_head" in e and "artifact_head_sha" in e for e in errors)) → whether action collapse is being confused with truth collapse;
-- [第 012 片](./architecture_governance/part-012.md)：5501—6000；which iteration to validate via --request or --iteration-id; it never assumes Q32I. → σ_opt=√e验证
-- [第 013 片](./architecture_governance/part-013.md)：6001—6500；“写作素材来源”在这里描述生成与审计角色，不等于 L0 中“外部证据来源”的专门含义。0.4.0 至少区分两类可进入写作过程的材料： → 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0078-C-78-可选集双向动力学.md`
-- [第 014 片](./architecture_governance/part-014.md)：6501—7000；原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0081-C-81-好奇心驱动.md` → 处置上，3,765 项 `QUARANTINE_UNTIL_DEFINED`，77 项 `DOWNGRADE_TO_PENDING`，44 项 `DOWNGRADE_TO_CONJECTURE`。仅 1 项在该登记口径中标作 `KEEP_A
-- [第 015 片](./architecture_governance/part-015.md)：7001—7500；处置：** 088 将 087 定性降级为'外部来源未接入学科学投影初稿'，并在阶段2-4建立真实外部来源层。 → 真理等级，不创建 task 112。
-- [第 016 片](./architecture_governance/part-016.md)：7501—7948；睡眠修复窗口验证 → ：晋级门槛 + 初版验证器。machine_eligible=0/12，但验证器字段与 Schema 不一致。
+- [第 009 片](./architecture_governance/part-009.md)：4001—4500；if dimensions.get("reproduction") == "REPRODUCED_IMPLEMENTATION_DEFECT" and not claims_defect: → P1 机器可读数据完整性审计
+- [第 010 片](./architecture_governance/part-010.md)：4501—5000；P1 机器数据接入碰撞工作流 · Smoke Test 审计（2026-07-08） → self.assertTrue(any("provenance_verified" in e for e in r.get("errors", \[\])),
+- [第 011 片](./architecture_governance/part-011.md)：5001—5500；self.assertTrue(any("provenance_verified" in e for e in r\["errors"\])) → What actual artifact, test, schema, state page, report or workflow is missing, stale or contradictory?
+- [第 012 片](./architecture_governance/part-012.md)：5501—6000；What evidence would show that no change is needed? → Θ := 统一元律
+- [第 013 片](./architecture_governance/part-013.md)：6001—6500；Θ 统一元律完整表达：** → 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0071-C-71-美国国家认同危机★.md`
+- [第 014 片](./architecture_governance/part-014.md)：6501—7000；原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0072-C-72-统一相变框架.md` → 基于任务 D 的三门学科理论核试跑，我将扩展为 12 个领域的证据制度卡片。
+- [第 015 片](./architecture_governance/part-015.md)：7001—7500；声称公平交易/合理使用适用于未经验证的情况 → 真实语义门槛必须人工确认；验证器不能替代人工审核。
+- [第 016 片](./architecture_governance/part-016.md)：7501—7950；真正必要的问题，然后给我一份个性化的首次使用建议。 → ：晋级门槛 + 初版验证器。machine_eligible=0/12，但验证器字段与 Schema 不一致。

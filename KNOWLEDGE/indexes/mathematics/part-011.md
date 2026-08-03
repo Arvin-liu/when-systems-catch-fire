@@ -4,6 +4,26 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [title: "退出权最大化函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0499-D501-%E9%80%80%E5%87%BA%E6%9D%83%E6%9C%80%E5%A4%A7%E5%8C%96%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-BBC9D6E5A2673A5F / title: "退出权最大化函数" / IMPLICIT-BBC9D6E5A2673A5F
+  - 来源：`统一函数总表/0499-D501-退出权最大化函数.md`
+  - 依赖：—；被引用：—
+- [title: "退出权最弱项瓶颈函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0501-D503-%E9%80%80%E5%87%BA%E6%9D%83%E6%9C%80%E5%BC%B1%E9%A1%B9%E7%93%B6%E9%A2%88%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-C04D4FF48920BAE0 / title: "退出权最弱项瓶颈函数" / IMPLICIT-C04D4FF48920BAE0
+  - 来源：`统一函数总表/0501-D503-退出权最弱项瓶颈函数.md`
+  - 依赖：—；被引用：—
+- [title: "退出权相变级联函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0483-D485-%E9%80%80%E5%87%BA%E6%9D%83%E7%9B%B8%E5%8F%98%E7%BA%A7%E8%81%94%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-1B49A85FA92D3ABB / title: "退出权相变级联函数" / IMPLICIT-1B49A85FA92D3ABB
+  - 来源：`统一函数总表/0483-D485-退出权相变级联函数.md`
+  - 依赖：—；被引用：—
+- [title: "退出权空间总函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0505-D507-%E9%80%80%E5%87%BA%E6%9D%83%E7%A9%BA%E9%97%B4%E6%80%BB%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-E09ED800108F27C2 / title: "退出权空间总函数" / IMPLICIT-E09ED800108F27C2
+  - 来源：`统一函数总表/0505-D507-退出权空间总函数.md`
+  - 依赖：—；被引用：—
 - [title: "退出权空间衰减函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0508-D510-%E9%80%80%E5%87%BA%E6%9D%83%E7%A9%BA%E9%97%B4%E8%A1%B0%E5%87%8F%E5%87%BD%E6%95%B0.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-03AEE21788C32B14 / title: "退出权空间衰减函数" / IMPLICIT-03AEE21788C32B14
@@ -2464,22 +2484,5 @@
 - [Within the source-defined scope, 犹豫域维度函数 is adjudicated as RELATION: 犹豫域维度函数，ε→0时dim从3退化到2。. This is a model-internal co](../../../data/foundation/adjudications/core-kernel.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
   - 可搜索名称：CLAIM-D73 / Within the source-defined scope, 犹豫域维度函数 is adjudicated as RELATION: 犹豫域维度函数，ε→0时dim从3退化到2。. This is a model-internal co
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 犹豫域退化函数 is adjudicated as STATE_TRANSITION: 犹豫域退化函数，dim从3到2的完整动力学。. This is a model-int](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D77 / Within the source-defined scope, 犹豫域退化函数 is adjudicated as STATE_TRANSITION: 犹豫域退化函数，dim从3到2的完整动力学。. This is a model-int
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 玻尔兹曼分布-门槛分布函数 is adjudicated as PROBABILISTIC_MODEL: 玻尔兹曼分布-门槛分布函数，玻尔兹曼分布P(E)∝e^{-βE}描述](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D206 / Within the source-defined scope, 玻尔兹曼分布-门槛分布函数 is adjudicated as PROBABILISTIC_MODEL: 玻尔兹曼分布-门槛分布函数，玻尔兹曼分布P(E)∝e^{-βE}描述
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 生命智能的σ压缩函数 is adjudicated as MECHANISM_MODEL: 宇宙σ_Planck ≈ 6.9 >> σ_opt ≈ 1.65（\[D234\](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D237 / Within the source-defined scope, 生命智能的σ压缩函数 is adjudicated as MECHANISM_MODEL: 宇宙σ_Planck ≈ 6.9 >> σ_opt ≈ 1.65（\[D234\](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：CLAIM-T11 / Within the source-defined scope, 生存域函数 is adjudicated as FORMAL_PROPOSITION: 系统只能在中间存活，上下界约束。. This is a model-internal
   - 来源：`data/foundation/adjudications/core-kernel.jsonl`
   - 依赖：—；被引用：—

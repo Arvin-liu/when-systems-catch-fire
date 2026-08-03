@@ -4,6 +4,26 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [主动下一代生命边界函数](../../../data/foundation/formal-objects/objects.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-711955117d8bc170 / 主动下一代生命边界函数
+  - 来源：`data/foundation/formal-objects/objects.jsonl`
+  - 依赖：—；被引用：—
+- [主因：候选「相关函数」为 Ψ₀/框架记号（非统一函数表正式 ID），且均为单材料证据，未过入表硬门槛。](../../../docs/meta-protocols/book-validation-22-cases-20260709.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-3bc4d058e399d645 / 主因：候选「相关函数」为 Ψ₀/框架记号（非统一函数表正式 ID），且均为单材料证据，未过入表硬门槛。
+  - 来源：`docs/meta-protocols/book-validation-22-cases-20260709.md`
+  - 依赖：—；被引用：—
+- [主权函数](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0058-D9-%E4%B8%BB%E6%9D%83%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D9 / 主权函数 / D9
+  - 来源：`统一函数总表/0058-D9-主权函数.md`
+  - 依赖：D1, D90；被引用：CLAIM-D243, NFC-00c629a4eeaf9471, NFC-083794f20bd6043b, NFC-1fea2cd0aa6b53b4
+- [主题归类、摘要恢复和重要性筛选是确定性仓库规则，不是学科专家裁决。machine-only 表示未生成重点长卡，不表示资产被删除、无价值或已被否定。依赖图只表示仓库声明关系，不是现实因果。候选通过本地或 CI 测试也不证明内容真值。](../../../reports/operations/102-knowledge-experience-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-838e5a8192a995d6 / 主题归类、摘要恢复和重要性筛选是确定性仓库规则，不是学科专家裁决。machine-only 表示未生成重点长卡，不表示资产被删除、无价值或已被否定。依赖图只表示仓库声明关系，不是现实因果。候选通过本地或 CI 测试也不证明内容真值。
+  - 来源：`reports/operations/102-knowledge-experience-audit.md`
+  - 依赖：—；被引用：—
 - [之元写作法 `0.5.0` 是当前 L6 使用者，`0.4.0`、`0.3.0` 为历史已合并版本。两个当前作品均由任务 114 冻结旧 SHA-256、执行全篇语言审计、四类角色复核和实质修订；机器 registry 分开保存历史接受哈希](../../../docs/project-current-state.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-4e328c91d105c58c / 之元写作法 `0.5.0` 是当前 L6 使用者，`0.4.0`、`0.3.0` 为历史已合并版本。两个当前作品均由任务 114 冻结旧 SHA-256、执行全篇语言审计、四类角色复核和实质修订；机器 registry 分开保存历史接受哈希
@@ -2484,23 +2504,3 @@
   - 可搜索名称：NFC-9b071573634eba0c / 从这条案例看，中文：案例说明：创新在边缘的拖累效应——大公司新维度1/ln为负拖低整体Φ，边缘玩家无旧维度拖累。核心函数：\[D163\](docs/zh/… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
   - 来源：`统一案例总表/0380-C-381-创新在边缘的拖累效应——大公司新维度1.md`
   - 依赖：D163；被引用：—
-- [从这条案例看，中文：案例说明：初中肄业高认知——反设置路径的投影优势 English: Rule-based English rendering pen… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0199-C-199-%E5%88%9D%E4%B8%AD%E8%82%84%E4%B8%9A%E9%AB%98%E8%AE%A4%E7%9F%A5.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-d59c2cf3b71e1788 / 从这条案例看，中文：案例说明：初中肄业高认知——反设置路径的投影优势 English: Rule-based English rendering pen… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
-  - 来源：`统一案例总表/0199-C-199-初中肄业高认知.md`
-  - 依赖：—；被引用：—
-- [从这条案例看，中文：案例说明：初期事实退出权，逐步漂移向真实退出权，漂移尚未完成 关键发现：第4步进行中 English: Rule-based Eng… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0020-C-20-%E6%94%B9%E9%9D%A9%E5%BC%80%E6%94%BE.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-6eb1006d03cce031 / 从这条案例看，中文：案例说明：初期事实退出权，逐步漂移向真实退出权，漂移尚未完成 关键发现：第4步进行中 English: Rule-based Eng… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
-  - 来源：`统一案例总表/0020-C-20-改革开放.md`
-  - 依赖：—；被引用：—
-- [从这条案例看，中文：案例说明：加密是防御性门槛碾压——人为抬高Λ_compute让攻击者在门外。核心函数：\[D162\](docs/zh/function… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0389-C-390-%E5%8A%A0%E5%AF%86%E6%98%AF%E9%98%B2%E5%BE%A1%E6%80%A7%E9%97%A8%E6%A7%9B%E7%A2%BE%E5%8E%8B%E2%80%94%E2%80%94%E4%BA%BA%E4%B8%BA%E6%8A%AC%E9%AB%98%CE%9B_compute%E8%AE%A9%E6%94%BB%E5%87%BB%E8%80%85%E5%9C%A8%E9%97%A8%E5%A4%96.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-e0f077981ada2b96 / 从这条案例看，中文：案例说明：加密是防御性门槛碾压——人为抬高Λ_compute让攻击者在门外。核心函数：\[D162\](docs/zh/function… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
-  - 来源：`统一案例总表/0389-C-390-加密是防御性门槛碾压——人为抬高Λ_compute让攻击者在门外.md`
-  - 依赖：D162；被引用：—
-- [从这条案例看，中文：案例说明：加法系统无退相干 — 同维度加法系统：d_F有上界3.2，Γ_unified上界=3.2/λ=0.8/年，A_Fisher… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0489-C-491-%E5%8A%A0%E6%B3%95%E7%B3%BB%E7%BB%9F%E6%97%A0%E9%80%80%E7%9B%B8%E5%B9%B2%20%E2%80%94%20%E5%90%8C%E7%BB%B4%E5%BA%A6%E5%8A%A0%E6%B3%95%E7%B3%BB%E7%BB%9F-d_F%E6%9C%89%E4%B8%8A%E7%95%8C3.2%2C%CE%93_unified%E4%B8%8A%E7%95%8C%3D3.2.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-f022490ea85bc057 / 从这条案例看，中文：案例说明：加法系统无退相干 — 同维度加法系统：d_F有上界3.2，Γ_unified上界=3.2/λ=0.8/年，A_Fisher… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
-  - 来源：`统一案例总表/0489-C-491-加法系统无退相干 — 同维度加法系统-d_F有上界3.2,Γ_unified上界=3.2.md`
-  - 依赖：—；被引用：—

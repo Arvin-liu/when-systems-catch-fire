@@ -4,6 +4,26 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [link: "统一函数总表/0576-D561-记忆-智能边界函数.md"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0576-D561-%E8%AE%B0%E5%BF%86-%E6%99%BA%E8%83%BD%E8%BE%B9%E7%95%8C%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-f996d7c9891cd3cf / link: "统一函数总表/0576-D561-记忆-智能边界函数.md"
+  - 来源：`统一函数总表/0576-D561-记忆-智能边界函数.md`
+  - 依赖：D561；被引用：—
+- [link: "统一函数总表/0577-D562-记忆哥德尔函数.md"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0577-D562-%E8%AE%B0%E5%BF%86%E5%93%A5%E5%BE%B7%E5%B0%94%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-4a2cd75e952faf1f / link: "统一函数总表/0577-D562-记忆哥德尔函数.md"
+  - 来源：`统一函数总表/0577-D562-记忆哥德尔函数.md`
+  - 依赖：D562；被引用：—
+- [link: "统一函数总表/0578-D563-跨系统移植成功函数.md"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0578-D563-%E8%B7%A8%E7%B3%BB%E7%BB%9F%E7%A7%BB%E6%A4%8D%E6%88%90%E5%8A%9F%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-235f4d9e87aa41af / link: "统一函数总表/0578-D563-跨系统移植成功函数.md"
+  - 来源：`统一函数总表/0578-D563-跨系统移植成功函数.md`
+  - 依赖：D563；被引用：—
+- [link: "统一函数总表/0579-D564-理想主义双重性函数.md"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0579-D564-%E7%90%86%E6%83%B3%E4%B8%BB%E4%B9%89%E5%8F%8C%E9%87%8D%E6%80%A7%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-47cc1a1ab95792bc / link: "统一函数总表/0579-D564-理想主义双重性函数.md"
+  - 来源：`统一函数总表/0579-D564-理想主义双重性函数.md`
+  - 依赖：D564；被引用：—
 - [link: "统一函数总表/0580-D565-阶级背叛函数.md"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0580-D565-%E9%98%B6%E7%BA%A7%E8%83%8C%E5%8F%9B%E5%87%BD%E6%95%B0.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-a96f3f48a132a32c / link: "统一函数总表/0580-D565-阶级背叛函数.md"
@@ -2483,24 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-0245c1b644ff9abc / proof_file = os.path.abspath(os.path.join(repo_root, "data", "operations", "propagation", "106-impact", "system-map-noni
   - 来源：`tools/propagation/validate_reconciliation.py`
-  - 依赖：—；被引用：—
-- [proof_index = next(i for i, item in enumerate(base\["component_decisions"\]) if item\["decision"\] == "NO_CHANGE_WITH_PROOF"](../../../tests/test_incremental_execution.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-01919b0109fbc2d7 / proof_index = next(i for i, item in enumerate(base\["component_decisions"\]) if item\["decision"\] == "NO_CHANGE_WITH_PROOF"
-  - 来源：`tests/test_incremental_execution.py`
-  - 依赖：—；被引用：—
-- [proof_obligation = "Formalize the causal DAG and identification assumptions."](../../../tools/foundation/process_084_batch.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-54f54440693ccbbf / proof_obligation = "Formalize the causal DAG and identification assumptions."
-  - 来源：`tools/foundation/process_084_batch.py`
-  - 依赖：—；被引用：—
-- [proof_obligation = "Formalize the strong quantifier claim and provide proof or counterexample."](../../../tools/foundation/process_084_batch.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-fd68e2ea07e9c9ac / proof_obligation = "Formalize the strong quantifier claim and provide proof or counterexample."
-  - 来源：`tools/foundation/process_084_batch.py`
-  - 依赖：—；被引用：—
-- [proof_obligation = "Verify dimensional consistency and parameter source for cross-domain mapping."](../../../tools/foundation/process_084_batch.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-c1269770bce39598 / proof_obligation = "Verify dimensional consistency and parameter source for cross-domain mapping."
-  - 来源：`tools/foundation/process_084_batch.py`
   - 依赖：—；被引用：—

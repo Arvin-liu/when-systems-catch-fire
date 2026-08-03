@@ -4,6 +4,26 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [统一函数总表/0110-D61-向上螺旋自维持函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-56c6bd2e2cefb22e / 统一函数总表/0110-D61-向上螺旋自维持函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D61；被引用：—
+- [统一函数总表/0111-D62-调温器慢变量函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-87de740d37f676f1 / 统一函数总表/0111-D62-调温器慢变量函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D62；被引用：—
+- [统一函数总表/0112-D63-档案可达性函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-cba2106219fef9fb / 统一函数总表/0112-D63-档案可达性函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D63；被引用：—
+- [统一函数总表/0113-D64-恐惧锁定稳态函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-a9ace97120e6df59 / 统一函数总表/0113-D64-恐惧锁定稳态函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D64；被引用：—
 - [统一函数总表/0114-D65-乘法拓扑选择函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-fa53917e328240dc / 统一函数总表/0114-D65-乘法拓扑选择函数.md
@@ -2484,23 +2504,3 @@
   - 可搜索名称：NFC-6537a4e3275c3686 / 统一函数总表/0606-D596-避风港.md
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：D596；被引用：—
-- [统一函数总表/0607-D597-量化指标替代真实价值.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-bd852977f2c5cd65 / 统一函数总表/0607-D597-量化指标替代真实价值.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D597；被引用：—
-- [统一函数总表/0607-D597-量化指标替代真实价值.md（基线函数）](../../../outputs/audit/cross-domain-candidate-function-small-batch-backfill-audit-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-039ee63a7cebcdf5 / 统一函数总表/0607-D597-量化指标替代真实价值.md（基线函数）
-  - 来源：`outputs/audit/cross-domain-candidate-function-small-batch-backfill-audit-20260708.md`
-  - 依赖：D597；被引用：—
-- [统一函数总表/0608-D598-系统性钝化.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-f698f4d1238b08e6 / 统一函数总表/0608-D598-系统性钝化.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D598；被引用：—
-- [统一函数总表/0609-D599-刷分博弈.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-825de3991172478b / 统一函数总表/0609-D599-刷分博弈.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D599；被引用：—

@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [This chain governs declared repository dependency and materialization. It does not identify real-world causality, prove](../../../docs/architecture/incremental-execution.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-3d00f72075369ea9 / This chain governs declared repository dependency and materialization. It does not identify real-world causality, prove
+  - 来源：`docs/architecture/incremental-execution.md`
+  - 依赖：—；被引用：—
 - [This contract can detect declared synchronization omissions and lifecycle inflation under its registry. It does not prov](../../../reports/operations/121Q25B-whole-project-synchronization-contract.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-b94e63eaad2c792a / This contract can detect declared synchronization omissions and lifecycle inflation under its registry. It does not prov
@@ -2494,10 +2499,5 @@
 - [元协议1：智能契约（简单规则→复杂涌现）](../../../docs/phi_meta_law.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-5af3504309572cc5 / 元协议1：智能契约（简单规则→复杂涌现）
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [元协议是跨系统的底层结构同构，是复杂系统的必然产物**](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-bf62cf26a3a8692a / 元协议是跨系统的底层结构同构，是复杂系统的必然产物**
   - 来源：`docs/phi_meta_law.md`
   - 依赖：—；被引用：—

@@ -4,6 +4,23 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Within the source-defined scope, 犹豫域退化函数 is adjudicated as STATE_TRANSITION: 犹豫域退化函数，dim从3到2的完整动力学。. This is a model-int](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D77 / Within the source-defined scope, 犹豫域退化函数 is adjudicated as STATE_TRANSITION: 犹豫域退化函数，dim从3到2的完整动力学。. This is a model-int
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 玻尔兹曼分布-门槛分布函数 is adjudicated as PROBABILISTIC_MODEL: 玻尔兹曼分布-门槛分布函数，玻尔兹曼分布P(E)∝e^{-βE}描述](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D206 / Within the source-defined scope, 玻尔兹曼分布-门槛分布函数 is adjudicated as PROBABILISTIC_MODEL: 玻尔兹曼分布-门槛分布函数，玻尔兹曼分布P(E)∝e^{-βE}描述
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 生命智能的σ压缩函数 is adjudicated as MECHANISM_MODEL: 宇宙σ_Planck ≈ 6.9 >> σ_opt ≈ 1.65（\[D234\](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D237 / Within the source-defined scope, 生命智能的σ压缩函数 is adjudicated as MECHANISM_MODEL: 宇宙σ_Planck ≈ 6.9 >> σ_opt ≈ 1.65（\[D234\](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：CLAIM-T11 / Within the source-defined scope, 生存域函数 is adjudicated as FORMAL_PROPOSITION: 系统只能在中间存活，上下界约束。. This is a model-internal
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
 - [Within the source-defined scope, 生物体死亡 is adjudicated as RELATION: 生物体死亡，P_death = 1 - ∏ᵢ(1-P_failure(i))。. This is a mo](../../../data/foundation/adjudications/core-kernel.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
   - 可搜索名称：CLAIM-D101 / Within the source-defined scope, 生物体死亡 is adjudicated as RELATION: 生物体死亡，P_death = 1 - ∏ᵢ(1-P_failure(i))。. This is a mo
@@ -2484,23 +2501,3 @@
   - 可搜索名称：NFC-7f1fff8e11c74164 / \| \[D505\]( ) \| \[空间函数三元投影\]( ) \| F_{D505}(x) := Space_Function(Ω) = {I(Ω),
   - 来源：`统一函数总表/INDEX.md`
   - 依赖：D505；被引用：—
-- [\| \[D516\]( ) \| \[跨域对称性破缺推论函数族\]( ) \| F_{D516}(x) := ∂Φ/∂N_gate\\\|physics <](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-1caae76544524042 / \| \[D516\]( ) \| \[跨域对称性破缺推论函数族\]( ) \| F_{D516}(x) := ∂Φ/∂N_gate\\\|physics <
-  - 来源：`统一函数总表/INDEX.md`
-  - 依赖：D516；被引用：—
-- [\| \[D518\]( ) \| \[跨域对称性破缺推论函数族\]( ) \| F_{D518}(x) := 并行验证→对比操作→评估操作，形成维度](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-9753d683ef1efe32 / \| \[D518\]( ) \| \[跨域对称性破缺推论函数族\]( ) \| F_{D518}(x) := 并行验证→对比操作→评估操作，形成维度
-  - 来源：`统一函数总表/INDEX.md`
-  - 依赖：D518；被引用：—
-- [\| \[D522\]( ) \| \[3维流形几何化与递归函数族\]( ) \| F_D522(S) := W(S)=∫_S H](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-7efca97b00ec9669 / \| \[D522\]( ) \| \[3维流形几何化与递归函数族\]( ) \| F_D522(S) := W(S)=∫_S H
-  - 来源：`统一函数总表/INDEX.md`
-  - 依赖：D522；被引用：—
-- [\| \[D523\]( ) \| \[3维流形几何化与递归函数族\]( ) \| F_D523(K_n) := dim_H(K_](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-ad7d6a49edaa39a7 / \| \[D523\]( ) \| \[3维流形几何化与递归函数族\]( ) \| F_D523(K_n) := dim_H(K_
-  - 来源：`统一函数总表/INDEX.md`
-  - 依赖：D523, T39；被引用：—

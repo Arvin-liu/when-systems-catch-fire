@@ -46,7 +46,23 @@
       "remaining_blockers": [],
       "output_head": null,
       "remote_push_confirmed": false,
-      "remote_runs": []
+      "remote_runs": [
+        {
+          "run_id": 30829240122,
+          "head": "066f530d5774d05fe057b04cb93b38a9688a8617",
+          "event": "workflow_dispatch",
+          "conclusion": "failure",
+          "failed_step": "Run python3 tools/foundation/validate_foundation.py",
+          "failure": "NONFUNCTION_CLAIM_OUTPUT_DRIFT (generator ordering root cause, repaired in pass 2)"
+        }
+      ],
+      "repair_pass_2": {
+        "trigger": "remote workflow_dispatch run 30829240122 at head 066f530d FAILED: validate_foundation step, NONFUNCTION_CLAIM_OUTPUT_DRIFT (61/63); locally reproduced identically",
+        "root_cause": "generator ordering dependency: pass-1 ran knowledge-experience rebuild AFTER nonfunction adjudication; the knowledge rebuild changes KNOWLEDGE/* tracked contents, which the nonfunction discovery scans, so the previously written nonfunction outputs became stale relative to the working tree. Platform sensitivity was ruled out: the generator uses no z3/random/time/uuid and 19 sorted() calls.",
+        "fix": "re-ran the canonical generator chain in dependency order (manifest -> census -> function adjudication -> governance outputs -> knowledge experience -> nonfunction adjudication -> migration) to fixed point; no hand-edited generated output",
+        "verification": "CI-step-order local replay: adjudicate_core, migrate --check, validate_foundation (63/63), census --check, function adjudication --check, claim governance, function closure, math checks, nonfunction --check, nonfunction closure, core claims, 079, 080 all exit 0; iteration sync, phase D/E, system map, stage snapshots, human front door, language-thought, knowledge determinism, language-thought unittest, foundation unittest trio all exit 0; Research OS tests all pass",
+        "lessons_for_resume": "knowledge-experience and any generator writing tracked text content must run BEFORE nonfunction adjudication; verify by replaying the CI step order, not only validate_foundation"
+      }
     }
   ]
 }

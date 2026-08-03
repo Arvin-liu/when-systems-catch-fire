@@ -27,3 +27,11 @@ path manifest -> function census -> deep adjudication -> nonfunction adjudicatio
 A `workflow_dispatch` run of foundation-validation will be triggered at the pushed head and recorded in ROUND-LEDGER.jsonl (field `remote_runs`). Any remaining merge-ref-specific failure would be recorded there with resumable repair instructions; none is expected because the branch tree is now self-consistent.
 
 Research OS is not redesigned in this round; only generated surfaces were regenerated.
+
+## Pass 2 — remote run feedback and ordering root cause
+
+Remote exact-head run 30829240122 (workflow_dispatch, head 066f530d) FAILED at `validate_foundation.py` with `NONFUNCTION_CLAIM_OUTPUT_DRIFT` (61/63). The failure was reproduced locally, byte-for-byte in symptom. Root cause: pass 1 ran the knowledge-experience rebuild after the nonfunction adjudication; the knowledge rebuild changes tracked `KNOWLEDGE/*` contents that nonfunction discovery scans, so the earlier nonfunction outputs were stale relative to the tree. Platform sensitivity was ruled out (no z3/random/time/uuid in the generator; 19 explicit `sorted()` calls).
+
+Pass 2 re-ran the canonical generator chain in dependency order (knowledge before nonfunction) to fixed point. Full CI-step-order replay now exits 0 for every foundation step, and all remaining workflow steps (iteration sync, phase D/E, system map, stage snapshots, front door, language-thought, knowledge determinism, unittests) exit 0. Research OS tests still pass. This head is pushed for a second exact-head remote verification.
+
+Resumable instruction for any future drift of this class: run the chain in the order recorded in ROUND-LEDGER.jsonl `repair_pass_2.fix`, then replay the CI step order before pushing.

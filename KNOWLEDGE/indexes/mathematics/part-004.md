@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [\[C-0751｜安然公司\](../../../统一案例总表/0746-C-0751-安然公司.md)（原笔记编号：C575-3）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0585-D575-%E8%B4%A2%E5%8A%A1%E5%85%83%E5%8D%8F%E8%AE%AE%E5%AE%9E%E4%BE%8B%E5%8C%96.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-75eae06acddad498 / \[C-0751｜安然公司\](../../../统一案例总表/0746-C-0751-安然公司.md)（原笔记编号：C575-3）
+  - 来源：`统一函数总表/0585-D575-财务元协议实例化.md`
+  - 依赖：—；被引用：—
+- [\[C-0752｜美国禁酒令\](../../../统一案例总表/0747-C-0752-美国禁酒令.md)（原笔记编号：C575-4）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0585-D575-%E8%B4%A2%E5%8A%A1%E5%85%83%E5%8D%8F%E8%AE%AE%E5%AE%9E%E4%BE%8B%E5%8C%96.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-c1f0ee4bb7ad03da / \[C-0752｜美国禁酒令\](../../../统一案例总表/0747-C-0752-美国禁酒令.md)（原笔记编号：C575-4）
+  - 来源：`统一函数总表/0585-D575-财务元协议实例化.md`
+  - 依赖：—；被引用：—
 - [\[C-0753｜博士期间换十个选题\](../../../统一案例总表/0748-C-0753-博士期间换十个选题.md)（原笔记编号：C576-1）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0586-D576-%E8%AE%A4%E7%9F%A5%E5%B9%B4%E9%BE%84%E6%8F%90%E5%8D%87.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-bbc0c73dd733971d / \[C-0753｜博士期间换十个选题\](../../../统一案例总表/0748-C-0753-博士期间换十个选题.md)（原笔记编号：C576-1）
@@ -1664,6 +1674,11 @@
   - 可搜索名称：NFC-a679caa184a28160 / `internal_test_truth_gate`：测试只证明实现符合规格，不证明规格描述现实。
   - 来源：`docs/foundation/claim-governance-and-function-identity.md`
   - 依赖：—；被引用：—
+- [`iteration-lifecycle-validation` run 30801202590: PASS.](../../../docs/research-os/queue-runtime/ROUND-0-CHECKPOINT.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-39aca0ba6e2da984 / `iteration-lifecycle-validation` run 30801202590: PASS.
+  - 来源：`docs/research-os/queue-runtime/ROUND-0-CHECKPOINT.md`
+  - 依赖：—；被引用：—
 - [`KEEP` 只保留其身份卡允许的用途。代码函数可以作为仓库范围算法保留，但测试通过不证明现实真实性。未声明定义域、值域、类型、量纲、表达或领域桥接的资产进入 `QUARANTINE_UNTIL_DEFINED`；开放命题进入 `DOWNG](../../../docs/foundation/historical-function-deep-adjudication-20260729.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-8ad7a5cbe00f9556 / `KEEP` 只保留其身份卡允许的用途。代码函数可以作为仓库范围算法保留，但测试通过不证明现实真实性。未声明定义域、值域、类型、量纲、表达或领域桥接的资产进入 `QUARANTINE_UNTIL_DEFINED`；开放命题进入 `DOWNG
@@ -2488,19 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-a0baa6cc4baba737 / base / "proofs" / "084-proof-obligations.jsonl",
   - 来源：`tools/foundation/verify_085_architecture_freeze.py`
-  - 依赖：—；被引用：—
-- [base / "work-queues" / "085-proof-priority-queue.jsonl",](../../../tools/foundation/verify_085_architecture_freeze.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-0ce1250af284f1c2 / base / "work-queues" / "085-proof-priority-queue.jsonl",
-  - 来源：`tools/foundation/verify_085_architecture_freeze.py`
-  - 依赖：—；被引用：—
-- [base\["logic_form"\] = "analogy or mapping claim without proven equivalence"](../../../tools/foundation/build_080_queue.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-b7cb845e4f42f0a1 / base\["logic_form"\] = "analogy or mapping claim without proven equivalence"
-  - 来源：`tools/foundation/build_080_queue.py`
-  - 依赖：—；被引用：—
-- [base\["logic_form"\] = "directional mechanism claim with source-scoped drivers"](../../../tools/foundation/build_080_queue.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-6825e5ea62ae93f7 / base\["logic_form"\] = "directional mechanism claim with source-scoped drivers"
-  - 来源：`tools/foundation/build_080_queue.py`
   - 依赖：—；被引用：—

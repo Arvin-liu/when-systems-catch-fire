@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [## 关联函数 / Related Functions](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0674-C-0679-Willmore%E7%8C%9C%E6%83%B3.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-B36AB62D5C9C6E47 / ## 关联函数 / Related Functions / IMPLICIT-B36AB62D5C9C6E47 / IMPLICIT-0026301F130FD562
+  - 来源：`统一案例总表/0674-C-0679-Willmore猜想.md`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0743-C-0748-%E7%BE%8E%E5%9B%BD%E7%A6%81%E9%85%92%E4%BB%A4.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-B43339CBC8C1AB94 / ## 关联函数 / Related Functions / IMPLICIT-B43339CBC8C1AB94 / IMPLICIT-0026301F130FD562
+  - 来源：`统一案例总表/0743-C-0748-美国禁酒令.md`
+  - 依赖：—；被引用：—
 - [## 关联函数 / Related Functions](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0728-C-0733-%E8%84%B1%E4%B8%8D%E8%8A%B1%E4%B8%89%E5%8D%81%E5%B9%B4%E5%8F%AA%E9%9D%A0%E5%8A%B3%E5%8A%A8%E6%89%80%E5%BE%97.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-BB55E36C430FC0CD / ## 关联函数 / Related Functions / IMPLICIT-BB55E36C430FC0CD / IMPLICIT-0026301F130FD562
@@ -2494,13 +2504,3 @@
   - 可搜索名称：NFC-02a53f5a3ab0a69c / /Users/zhiyuan/我的笔记/统一函数总表/0281-D245-自我模型函数.md
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：D245；被引用：—
-- [/Users/zhiyuan/我的笔记/统一函数总表/0282-D246-自我模型-ε_aware连接定理.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-7d0dc3707983f72c / /Users/zhiyuan/我的笔记/统一函数总表/0282-D246-自我模型-ε_aware连接定理.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D246；被引用：—
-- [/Users/zhiyuan/我的笔记/统一函数总表/0283-D247-自我模型相变函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：NFC-44083fb1a47e5e87 / /Users/zhiyuan/我的笔记/统一函数总表/0283-D247-自我模型相变函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D247；被引用：—

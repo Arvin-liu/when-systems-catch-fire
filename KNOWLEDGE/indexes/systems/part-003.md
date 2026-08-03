@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [network\["diffs"\]\[0\]\["external_refs"\]\[1\]\["ref_type"\] = "external_projection"](../../../tests/test_adaptive_relational_network_validation_contract.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-4407a6fb900d4ab3 / network\["diffs"\]\[0\]\["external_refs"\]\[1\]\["ref_type"\] = "external_projection"
+  - 来源：`tests/test_adaptive_relational_network_validation_contract.py`
+  - 依赖：—；被引用：—
 - [network\["embedding_evidence"\]\[0\]\["alternatives"\] = \["valid", " "\]](../../../tests/test_adaptive_relational_network_validation_contract.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-31253dbfa15c1917 / network\["embedding_evidence"\]\[0\]\["alternatives"\] = \["valid", " "\]
@@ -2486,9 +2491,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-30b80656b20d0f46 / This audit supersedes the older 121Q21 Persistent Causal Commitment Network direction for this task. The older task is n
   - 来源：`reports/architecture/121Q21R-causal-asset-audit.md`
-  - 依赖：—；被引用：—
-- [This chain governs declared repository dependency and materialization. It does not identify real-world causality, prove](../../../docs/architecture/incremental-execution.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-3d00f72075369ea9 / This chain governs declared repository dependency and materialization. It does not identify real-world causality, prove
-  - 来源：`docs/architecture/incremental-execution.md`
   - 依赖：—；被引用：—

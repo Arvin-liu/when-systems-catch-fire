@@ -4,6 +4,26 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [统一函数总表/0607-D597-量化指标替代真实价值.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-bd852977f2c5cd65 / 统一函数总表/0607-D597-量化指标替代真实价值.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D597；被引用：—
+- [统一函数总表/0607-D597-量化指标替代真实价值.md（基线函数）](../../../outputs/audit/cross-domain-candidate-function-small-batch-backfill-audit-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-039ee63a7cebcdf5 / 统一函数总表/0607-D597-量化指标替代真实价值.md（基线函数）
+  - 来源：`outputs/audit/cross-domain-candidate-function-small-batch-backfill-audit-20260708.md`
+  - 依赖：D597；被引用：—
+- [统一函数总表/0608-D598-系统性钝化.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-f698f4d1238b08e6 / 统一函数总表/0608-D598-系统性钝化.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D598；被引用：—
+- [统一函数总表/0609-D599-刷分博弈.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-825de3991172478b / 统一函数总表/0609-D599-刷分博弈.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D599；被引用：—
 - [统一函数总表/0610-D600-资源托举退化为路径控制.md](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-9c82d8e132f851c4 / 统一函数总表/0610-D600-资源托举退化为路径控制.md
@@ -2484,23 +2504,3 @@
   - 可搜索名称：NFC-404a74d8f2d269bc / 高风险批：MF、A、T、D189/D190/D220/D225/D600-D602 以及所有数学/物理/唯一性/必然性条目。
   - 来源：`docs/math-foundation/07-migration-plan.md`
   - 依赖：D189, D190, D220, D225；被引用：—
-- [高风险领域（医学、法学、物理学、数学）的 pending 条件容易被忽略](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-4aedbe580bd24942 / 高风险领域（医学、法学、物理学、数学）的 pending 条件容易被忽略
-  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [高风险领域（数学、物理学、医学、法学）的 pending 条件容易被忽略](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-961b6ab6e2b1a1e6 / 高风险领域（数学、物理学、医学、法学）的 pending 条件容易被忽略
-  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [鲁棒系统设计原则函数](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0334-D298-%E9%B2%81%E6%A3%92%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%E5%8E%9F%E5%88%99%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：D298 / 鲁棒系统设计原则函数 / D298
-  - 来源：`统一函数总表/0334-D298-鲁棒系统设计原则函数.md`
-  - 依赖：D271, D289, D290, D360；被引用：NFC-44966c30ff3330d5, NFC-56747046629bb334, NFC-dadb56b1bf44aace, NFC-e98d250da85e2956
-- [黄金分割0.618在生活中的广泛应用（构图、资产配置、决策时机）验证了跨域统一定理——当多个门控面共存时，最优解总是在一个特定位置（极小点μ*）。](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0667-C-672-%E6%9C%80%E4%BC%98%E5%8C%96%E9%97%AE%E9%A2%98%C3%97%E8%B7%A8%E5%9F%9F%E7%BB%9F%E4%B8%80%E5%AE%9A%E7%90%86%E9%AA%8C%E8%AF%81.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-ea6f5f2deb7f9ea2 / 黄金分割0.618在生活中的广泛应用（构图、资产配置、决策时机）验证了跨域统一定理——当多个门控面共存时，最优解总是在一个特定位置（极小点μ*）。
-  - 来源：`统一案例总表/0667-C-672-最优化问题×跨域统一定理验证.md`
-  - 依赖：—；被引用：—

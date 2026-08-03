@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [真诚信仰、政治利用和制度化并不互相排斥；把它们硬切成纯真或纯假会丢失机制。](../../../reports/publication/song-huizong-taoism-point-fire-analysis.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-f2462ec1f6f8e14c / 真诚信仰、政治利用和制度化并不互相排斥；把它们硬切成纯真或纯假会丢失机制。
+  - 来源：`reports/publication/song-huizong-taoism-point-fire-analysis.md`
+  - 依赖：—；被引用：—
 - [研究只能支持“在哪些维度需要检查”，不能直接判定一条历史因果或一篇文章的意义。机器配置中的每条 tendency 都要回链证据 ID，并附 `claim_ceiling`。研究有冲突时，配置把该维度标为 `mixed` 或 `open`，而](../../../docs/language-thought/research-boundary.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-e8af973f3ba4801e / 研究只能支持“在哪些维度需要检查”，不能直接判定一条历史因果或一篇文章的意义。机器配置中的每条 tendency 都要回链证据 ID，并附 `claim_ceiling`。研究有冲突时，配置把该维度标为 `mixed` 或 `open`，而

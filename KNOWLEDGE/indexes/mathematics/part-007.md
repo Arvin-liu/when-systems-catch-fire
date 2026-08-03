@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [If upstream objects D_{D206} exist, compose F_{D206}=N(⊕_{g∈D_{D206}} g); otherwise treat F_{D206} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0242-D206-%E7%8E%BB%E5%B0%94%E5%85%B9%E6%9B%BC%E5%88%86%E5%B8%83-%E9%97%A8%E6%A7%9B%E5%88%86%E5%B8%83%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-14999e6ca25040d5 / If upstream objects D_{D206} exist, compose F_{D206}=N(⊕_{g∈D_{D206}} g); otherwise treat F_{D206} as an axiom seed.
+  - 来源：`统一函数总表/0242-D206-玻尔兹曼分布-门槛分布函数.md`
+  - 依赖：D206；被引用：—
+- [If upstream objects D_{D207} exist, compose F_{D207}=N(⊕_{g∈D_{D207}} g); otherwise treat F_{D207} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0243-D207-%E8%B4%B9%E7%B1%B3-%E7%8B%84%E6%8B%89%E5%85%8B.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-79dc865dbd8fa6e5 / If upstream objects D_{D207} exist, compose F_{D207}=N(⊕_{g∈D_{D207}} g); otherwise treat F_{D207} as an axiom seed.
+  - 来源：`统一函数总表/0243-D207-费米-狄拉克.md`
+  - 依赖：D207；被引用：—
+- [If upstream objects D_{D208} exist, compose F_{D208}=N(⊕_{g∈D_{D208}} g); otherwise treat F_{D208} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0244-D208-%E7%83%AD%E4%BC%A0%E5%AF%BC%E6%96%B9%E7%A8%8B-%E9%97%A8%E6%A7%9B%E6%89%A9%E6%95%A3%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-870721326b63a33b / If upstream objects D_{D208} exist, compose F_{D208}=N(⊕_{g∈D_{D208}} g); otherwise treat F_{D208} as an axiom seed.
+  - 来源：`统一函数总表/0244-D208-热传导方程-门槛扩散函数.md`
+  - 依赖：D208；被引用：—
 - [If upstream objects D_{D209} exist, compose F_{D209}=N(⊕_{g∈D_{D209}} g); otherwise treat F_{D209} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0245-D209-%E6%B8%97%E9%80%8F%E7%8E%87.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-e80a278e5fef441b / If upstream objects D_{D209} exist, compose F_{D209}=N(⊕_{g∈D_{D209}} g); otherwise treat F_{D209} as an axiom seed.
@@ -2169,6 +2184,11 @@
   - 可搜索名称：NFC-dcb5d81cdbc5f5e9 / Life(S)=1 iff M_self*Boundary*Energy*Reproduction_active*Selection > theta_life。生命式系统至少要有自维持、边界、能量/资源代谢、主动复制或变体生成、选择反馈；被
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：D124；被引用：—
+- [lifecycle + terminalization allowlist tests: pass](../../../docs/research-os/queue-runtime/ROUND-0-CHECKPOINT.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-792e328c127de39c / lifecycle + terminalization allowlist tests: pass
+  - 来源：`docs/research-os/queue-runtime/ROUND-0-CHECKPOINT.md`
+  - 依赖：—；被引用：—
 - [lifecycle = document.get("lifecycle", {})](../../../tools/operations/validate_phase_d_closeout.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
   - 可搜索名称：NFC-2380a538777fcd92 / lifecycle = document.get("lifecycle", {})
@@ -2484,23 +2504,3 @@
   - 可搜索名称：NFC-62dfb69df3e84a0f / link: "统一函数总表/0575-D560-记忆分布式编码函数.md"
   - 来源：`统一函数总表/0575-D560-记忆分布式编码函数.md`
   - 依赖：D560；被引用：—
-- [link: "统一函数总表/0576-D561-记忆-智能边界函数.md"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0576-D561-%E8%AE%B0%E5%BF%86-%E6%99%BA%E8%83%BD%E8%BE%B9%E7%95%8C%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-f996d7c9891cd3cf / link: "统一函数总表/0576-D561-记忆-智能边界函数.md"
-  - 来源：`统一函数总表/0576-D561-记忆-智能边界函数.md`
-  - 依赖：D561；被引用：—
-- [link: "统一函数总表/0577-D562-记忆哥德尔函数.md"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0577-D562-%E8%AE%B0%E5%BF%86%E5%93%A5%E5%BE%B7%E5%B0%94%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-4a2cd75e952faf1f / link: "统一函数总表/0577-D562-记忆哥德尔函数.md"
-  - 来源：`统一函数总表/0577-D562-记忆哥德尔函数.md`
-  - 依赖：D562；被引用：—
-- [link: "统一函数总表/0578-D563-跨系统移植成功函数.md"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0578-D563-%E8%B7%A8%E7%B3%BB%E7%BB%9F%E7%A7%BB%E6%A4%8D%E6%88%90%E5%8A%9F%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-235f4d9e87aa41af / link: "统一函数总表/0578-D563-跨系统移植成功函数.md"
-  - 来源：`统一函数总表/0578-D563-跨系统移植成功函数.md`
-  - 依赖：D563；被引用：—
-- [link: "统一函数总表/0579-D564-理想主义双重性函数.md"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0579-D564-%E7%90%86%E6%83%B3%E4%B8%BB%E4%B9%89%E5%8F%8C%E9%87%8D%E6%80%A7%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-47cc1a1ab95792bc / link: "统一函数总表/0579-D564-理想主义双重性函数.md"
-  - 来源：`统一函数总表/0579-D564-理想主义双重性函数.md`
-  - 依赖：D564；被引用：—

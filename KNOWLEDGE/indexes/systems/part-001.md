@@ -1863,6 +1863,11 @@
   - 可搜索名称：NFC-8a1fa6071d233099 / `统一案例总表/0802-C-0807-系统性钝化与教室避风港.md`
   - 来源：`outputs/audit/teacher-competition-index-visibility-check-20260708.md`
   - 依赖：—；被引用：—
+- [A `workflow_dispatch` run of foundation-validation will be triggered at the pushed head and recorded in ROUND-LEDGER.jso](../../../docs/research-os/queue-runtime/ROUND-0-CHECKPOINT.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-0a749b51c4176de2 / A `workflow_dispatch` run of foundation-validation will be triggered at the pushed head and recorded in ROUND-LEDGER.jso
+  - 来源：`docs/research-os/queue-runtime/ROUND-0-CHECKPOINT.md`
+  - 依赖：—；被引用：—
 - [a causal claim needs an explicit causal model, intervention semantics and identification evidence;](../../../docs/foundation/future-claim-admission-protocol.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-c6116b227d555438 / a causal claim needs an explicit causal model, intervention semantics and identification evidence;
@@ -2492,9 +2497,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-ef53a4f632f33490 / causal_like = {"CAUSAL_IDENTIFICATION", "MECHANISM_ALTERNATIVE"}
   - 来源：`tools/research_os/adapters.py`
-  - 依赖：—；被引用：—
-- [causal_relation = next(item for item in TOPOLOGY_DOC\["relations"\] if item\["relation_domain"\] == "substantive_causal_cand](../../../tests/test_change_propagation.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-526c28a208207972 / causal_relation = next(item for item in TOPOLOGY_DOC\["relations"\] if item\["relation_domain"\] == "substantive_causal_cand
-  - 来源：`tests/test_change_propagation.py`
   - 依赖：—；被引用：—

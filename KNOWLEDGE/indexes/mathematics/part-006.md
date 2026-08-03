@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Derived representation only; not ontology, truth, value, causality, clinical inference, psychological diagnosis or proof](../../../data/architecture/adaptive-relational-network/completion-seal.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-d2401e78c02929ad / Derived representation only; not ontology, truth, value, causality, clinical inference, psychological diagnosis or proof
+  - 来源：`data/architecture/adaptive-relational-network/completion-seal.json`
+  - 依赖：—；被引用：—
+- [derived_from: "/Users/zhiyuan/Library/Containers/com.biji.getNotes/Data/Library/Caches/欧亚大陆的枢纽×Ψ₀元函数验证报告 2026年7月6日0306-2](../../../%E6%96%B0%E6%95%85%E4%BA%8B/0001-S1-%E6%AF%94%E5%88%80%E5%89%91%E6%9B%B4%E6%8C%81%E4%B9%85%E7%9A%84%EF%BC%8C%E6%98%AF%E5%85%B1%E4%BA%AB%E8%A7%82%E5%BF%B5.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-a8183ae42f8eeaba / derived_from: "/Users/zhiyuan/Library/Containers/com.biji.getNotes/Data/Library/Caches/欧亚大陆的枢纽×Ψ₀元函数验证报告 2026年7月6日0306-2
+  - 来源：`新故事/0001-S1-比刀剑更持久的，是共享观念.md`
+  - 依赖：—；被引用：—
+- [detect the seal-manifest lifecycle mismatch and fail-closed.](../../../tests/test_seal_freshness.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-78c72e4b9f1faccb / detect the seal-manifest lifecycle mismatch and fail-closed.
+  - 来源：`tests/test_seal_freshness.py`
+  - 依赖：—；被引用：—
 - [Deterministic epistemic gap codes for the Research OS diagnosis engine. The contract (Task 115 §5.3) enumerates 23 minim](../../../data/research-os/gap-codes.json)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-07080cf7c0777f0e / Deterministic epistemic gap codes for the Research OS diagnosis engine. The contract (Task 115 §5.3) enumerates 23 minim
@@ -2489,18 +2504,3 @@
   - 可搜索名称：NFC-99575160bd8f0e0c / If upstream objects D_{D205} exist, compose F_{D205}=N(⊕_{g∈D_{D205}} g); otherwise treat F_{D205} as an axiom seed.
   - 来源：`统一函数总表/0241-D205-涨落-耗散定理-门槛函数.md`
   - 依赖：D205；被引用：—
-- [If upstream objects D_{D206} exist, compose F_{D206}=N(⊕_{g∈D_{D206}} g); otherwise treat F_{D206} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0242-D206-%E7%8E%BB%E5%B0%94%E5%85%B9%E6%9B%BC%E5%88%86%E5%B8%83-%E9%97%A8%E6%A7%9B%E5%88%86%E5%B8%83%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-14999e6ca25040d5 / If upstream objects D_{D206} exist, compose F_{D206}=N(⊕_{g∈D_{D206}} g); otherwise treat F_{D206} as an axiom seed.
-  - 来源：`统一函数总表/0242-D206-玻尔兹曼分布-门槛分布函数.md`
-  - 依赖：D206；被引用：—
-- [If upstream objects D_{D207} exist, compose F_{D207}=N(⊕_{g∈D_{D207}} g); otherwise treat F_{D207} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0243-D207-%E8%B4%B9%E7%B1%B3-%E7%8B%84%E6%8B%89%E5%85%8B.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-79dc865dbd8fa6e5 / If upstream objects D_{D207} exist, compose F_{D207}=N(⊕_{g∈D_{D207}} g); otherwise treat F_{D207} as an axiom seed.
-  - 来源：`统一函数总表/0243-D207-费米-狄拉克.md`
-  - 依赖：D207；被引用：—
-- [If upstream objects D_{D208} exist, compose F_{D208}=N(⊕_{g∈D_{D208}} g); otherwise treat F_{D208} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0244-D208-%E7%83%AD%E4%BC%A0%E5%AF%BC%E6%96%B9%E7%A8%8B-%E9%97%A8%E6%A7%9B%E6%89%A9%E6%95%A3%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-870721326b63a33b / If upstream objects D_{D208} exist, compose F_{D208}=N(⊕_{g∈D_{D208}} g); otherwise treat F_{D208} as an axiom seed.
-  - 来源：`统一函数总表/0244-D208-热传导方程-门槛扩散函数.md`
-  - 依赖：D208；被引用：—
