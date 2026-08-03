@@ -2,7 +2,7 @@
   "track_id": "002-handwriting-learning",
   "original_round": "002",
   "research_identity": "MULTI_OUTCOME_EVIDENCE_SYNTHESIS",
-  "stage": "challenge",
+  "stage": "final",
   "state": "IN_PROGRESS",
   "frozen_commit": "2798a0eb",
   "checkpoint_commits": ["2798a0eb", "670012e1", "22b7c5d7"],
@@ -19,7 +19,11 @@
   "claim_ceiling": "outcome-specific evidence about college note-taking media; no universal winner, no neural-to-learning leap, and no policy or population externalization",
   "analysis_outputs": ["ANALYSIS.md"],
   "challenge_outputs": ["CHALLENGE-RESULTS.md", "SOURCE-DEPENDENCE-REVIEW.md", "CHALLENGE-MATRIX.jsonl"],
-  "next_checkpoint": "final",
+  "final_commit": "PENDING_FINAL_COMMIT",
+  "final_outputs": ["FINAL-RESEARCH-REPORT.md", "LIMITATIONS-AND-OPEN-QUESTIONS.md", "CHANGE-FROM-R1.md"],
+  "final_verdict": "SUPPORTED_WITH_SCOPE_AFTER_DEEP_REVIEW",
+  "cross_outcome_verdict": "CONTEXT_DEPENDENT_COMPETING_ESTIMANDS",
+  "next_checkpoint": "complete",
   "evidence_scope": {
     "full_text_primary_and_synthesis_sources_read": 5,
     "full_text_or_report_sources_read": 6,
@@ -28,6 +32,6 @@
     "search_snippets_as_evidence": false,
     "news_as_scientific_proof": false
   },
-  "next_action": "rewrite the final report from the surviving outcome-specific claims and preserve all overturned or unresolved claims",
-  "updated_at": "2026-08-03T12:31:02+08:00"
+  "next_action": "complete the final commit, mark this track awaiting external adjudication, then advance to 001",
+  "updated_at": "2026-08-03T12:35:16+08:00"
 }
