@@ -1,0 +1,104 @@
+{
+  "rows": 246,
+  "unique_developers": 16,
+  "unique_issues": 246,
+  "treatment_counts": {
+    "0": 110,
+    "1": 136
+  },
+  "missing_counts": {
+    "prior_task_exposure_1_to_5": 87,
+    "external_resource_needs_1_to_3": 87,
+    "post_review_implementation_time": 16
+  },
+  "post_review_imputation_means": {
+    "0": 9.70873786407767,
+    "1": 14.94488188976378
+  },
+  "post_review_missing_by_treatment": {
+    "0": 7,
+    "1": 9
+  },
+  "developer_treatment_cell_counts": [
+    {
+      "dev_id": 26,
+      "ai_disallowed": 5,
+      "ai_allowed": 12
+    },
+    {
+      "dev_id": 90,
+      "ai_disallowed": 2,
+      "ai_allowed": 9
+    },
+    {
+      "dev_id": 105,
+      "ai_disallowed": 8,
+      "ai_allowed": 11
+    },
+    {
+      "dev_id": 115,
+      "ai_disallowed": 4,
+      "ai_allowed": 4
+    },
+    {
+      "dev_id": 143,
+      "ai_disallowed": 6,
+      "ai_allowed": 11
+    },
+    {
+      "dev_id": 229,
+      "ai_disallowed": 1,
+      "ai_allowed": 1
+    },
+    {
+      "dev_id": 251,
+      "ai_disallowed": 3,
+      "ai_allowed": 5
+    },
+    {
+      "dev_id": 282,
+      "ai_disallowed": 9,
+      "ai_allowed": 8
+    },
+    {
+      "dev_id": 559,
+      "ai_disallowed": 5,
+      "ai_allowed": 5
+    },
+    {
+      "dev_id": 605,
+      "ai_disallowed": 12,
+      "ai_allowed": 8
+    },
+    {
+      "dev_id": 655,
+      "ai_disallowed": 11,
+      "ai_allowed": 13
+    },
+    {
+      "dev_id": 693,
+      "ai_disallowed": 13,
+      "ai_allowed": 15
+    },
+    {
+      "dev_id": 755,
+      "ai_disallowed": 7,
+      "ai_allowed": 4
+    },
+    {
+      "dev_id": 759,
+      "ai_disallowed": 7,
+      "ai_allowed": 11
+    },
+    {
+      "dev_id": 760,
+      "ai_disallowed": 5,
+      "ai_allowed": 10
+    },
+    {
+      "dev_id": 914,
+      "ai_disallowed": 12,
+      "ai_allowed": 9
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+ai_treatment,outcome,n,mean,median,std,min,max
+0,initial_implementation_time,110,90.9,65.0,89.397776,4.0,500.0
+0,post_review_implementation_time,103,9.708738,0.0,20.807065,0.0,155.0
+0,total_implementation_time,110,100.608738,74.854369,94.331312,6.0,500.0
+1,initial_implementation_time,136,119.540441,76.0,118.114023,7.0,600.0
+1,post_review_implementation_time,127,14.944882,4.0,33.028681,0.0,232.0
+1,total_implementation_time,136,134.485323,90.0,132.410673,7.0,680.0

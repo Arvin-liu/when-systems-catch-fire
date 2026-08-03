@@ -1,0 +1,11 @@
+{
+  "track_id": "005-fixture",
+  "stage": "final",
+  "state": "RESEARCH_COMPLETE_AWAITING_EXTERNAL_ADJUDICATION",
+  "frozen_commit": "bbbb0006",
+  "checkpoint_commits": [
+    "aaaaaaa1",
+    "bbbb0006"
+  ],
+  "claim_ceiling": "bounded fixture ceiling for test only; nothing real"
+}

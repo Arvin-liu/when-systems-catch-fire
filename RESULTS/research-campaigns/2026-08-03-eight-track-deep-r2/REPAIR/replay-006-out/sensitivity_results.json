@@ -1,0 +1,136 @@
+[
+  {
+    "estimate_time_change": 0.198264,
+    "ci95_lower": 0.019191,
+    "ci95_upper": 0.4088,
+    "beta_log_time": 0.180874,
+    "se_beta": 0.082585,
+    "outcome": "initial_implementation_time",
+    "covariance": "nonrobust",
+    "n": 246,
+    "r_squared": 0.480016,
+    "sensitivity": "initial_only_outcome"
+  },
+  {
+    "estimate_time_change": 0.198264,
+    "ci95_lower": 0.017913,
+    "ci95_upper": 0.410569,
+    "beta_log_time": 0.180874,
+    "se_beta": 0.083226,
+    "outcome": "initial_implementation_time",
+    "covariance": "HC3",
+    "n": 246,
+    "r_squared": 0.480016,
+    "sensitivity": "initial_only_outcome"
+  },
+  {
+    "estimate_time_change": 0.198264,
+    "ci95_lower": -0.004626,
+    "ci95_upper": 0.44251,
+    "beta_log_time": 0.180874,
+    "se_beta": 0.09465,
+    "outcome": "initial_implementation_time",
+    "covariance": "cluster",
+    "n": 246,
+    "r_squared": 0.480016,
+    "sensitivity": "initial_only_outcome"
+  },
+  {
+    "estimate_time_change": 0.201151,
+    "ci95_lower": 0.015144,
+    "ci95_upper": 0.421241,
+    "beta_log_time": 0.18328,
+    "se_beta": 0.085843,
+    "outcome": "total_implementation_time",
+    "covariance": "nonrobust",
+    "n": 230,
+    "r_squared": 0.467068,
+    "sensitivity": "complete_post_review_cases"
+  },
+  {
+    "estimate_time_change": 0.201151,
+    "ci95_lower": 0.015834,
+    "ci95_upper": 0.420274,
+    "beta_log_time": 0.18328,
+    "se_beta": 0.085496,
+    "outcome": "total_implementation_time",
+    "covariance": "HC3",
+    "n": 230,
+    "r_squared": 0.467068,
+    "sensitivity": "complete_post_review_cases"
+  },
+  {
+    "estimate_time_change": 0.201151,
+    "ci95_lower": 0.025571,
+    "ci95_upper": 0.406791,
+    "beta_log_time": 0.18328,
+    "se_beta": 0.080629,
+    "outcome": "total_implementation_time",
+    "covariance": "cluster",
+    "n": 230,
+    "r_squared": 0.467068,
+    "sensitivity": "complete_post_review_cases"
+  },
+  {
+    "estimate_time_change": 0.190801,
+    "ci95_lower": 0.014026,
+    "ci95_upper": 0.398394,
+    "beta_log_time": 0.174626,
+    "se_beta": 0.08199,
+    "outcome": "total_implementation_time",
+    "covariance": "nonrobust",
+    "n": 245,
+    "r_squared": 0.469898,
+    "sensitivity": "exclude_external_resource_out_of_range_row"
+  },
+  {
+    "estimate_time_change": 0.229422,
+    "ci95_lower": 0.046924,
+    "ci95_upper": 0.443732,
+    "beta_log_time": 0.206544,
+    "se_beta": 0.081985,
+    "outcome": "total_implementation_time",
+    "covariance": "nonrobust",
+    "n": 246,
+    "r_squared": 0.474084,
+    "sensitivity": "extreme_ai_allowed_one_hour_control_zero"
+  },
+  {
+    "estimate_time_change": 0.141954,
+    "ci95_lower": -0.02825,
+    "ci95_upper": 0.34197,
+    "beta_log_time": 0.132741,
+    "se_beta": 0.082347,
+    "outcome": "total_implementation_time",
+    "covariance": "nonrobust",
+    "n": 246,
+    "r_squared": 0.47055,
+    "sensitivity": "extreme_ai_allowed_zero_control_one_hour"
+  },
+  {
+    "estimate_time_change": 0.149257,
+    "ci95_lower": -0.039729,
+    "ci95_upper": 0.375435,
+    "beta_log_time": 0.139115,
+    "se_beta": 0.091662,
+    "outcome": "total_implementation_time",
+    "covariance": "cluster",
+    "n": 246,
+    "r_squared": 0.570468,
+    "sensitivity": "developer_fixed_effects"
+  },
+  {
+    "sensitivity": "ratio_of_means_imputed_total",
+    "outcome": "total_implementation_time",
+    "estimate_time_change": 0.336716,
+    "control_mean": 100.608738,
+    "ai_allowed_mean": 134.485323
+  },
+  {
+    "sensitivity": "ratio_of_means_initial_only",
+    "outcome": "initial_implementation_time",
+    "estimate_time_change": 0.315076,
+    "control_mean": 90.9,
+    "ai_allowed_mean": 119.540441
+  }
+]

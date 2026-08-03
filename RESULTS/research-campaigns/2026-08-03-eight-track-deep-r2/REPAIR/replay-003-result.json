@@ -1,0 +1,10 @@
+{
+  "track": "003-heat-action-plans",
+  "replay_class": "COMPLEX_CANDIDATE_INDEPENDENT_RERUN",
+  "selection_reason": "chosen per TASK Line C C3 from Track 001 weather / Track 003 heat: 003 committed a deterministic offline simulation-interval reanalysis package (MCC-HEWS public output zip) whose boundary is explicit (14-row public output means, not population-weighted EU totals); this makes an exact clean-environment rerun possible offline",
+  "boundary": "output-level audit of 14 public output rows per simulation; not the full EU mortality analysis",
+  "environment": "offline clean clone, python3 stdlib only",
+  "exact_command": "python3 tracks/003-heat-action-plans/reproducibility/analyze_simulation_columns.py tracks/003-heat-action-plans/reproducibility/input/MCC-HEWS-main.zip",
+  "output_equal_to_committed": true,
+  "verdict": "MATCH"
+}

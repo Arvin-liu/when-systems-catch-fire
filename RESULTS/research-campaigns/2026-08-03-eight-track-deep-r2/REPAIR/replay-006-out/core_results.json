@@ -1,0 +1,35 @@
+[
+  {
+    "estimate_time_change": 0.1884,
+    "ci95_lower": 0.01256,
+    "ci95_upper": 0.394776,
+    "beta_log_time": 0.172608,
+    "se_beta": 0.081699,
+    "outcome": "total_implementation_time",
+    "covariance": "nonrobust",
+    "n": 246,
+    "r_squared": 0.473041
+  },
+  {
+    "estimate_time_change": 0.1884,
+    "ci95_lower": 0.013019,
+    "ci95_upper": 0.394144,
+    "beta_log_time": 0.172608,
+    "se_beta": 0.081467,
+    "outcome": "total_implementation_time",
+    "covariance": "HC3",
+    "n": 246,
+    "r_squared": 0.473041
+  },
+  {
+    "estimate_time_change": 0.1884,
+    "ci95_lower": 0.016316,
+    "ci95_upper": 0.389621,
+    "beta_log_time": 0.172608,
+    "se_beta": 0.079809,
+    "outcome": "total_implementation_time",
+    "covariance": "cluster",
+    "n": 246,
+    "r_squared": 0.473041
+  }
+]

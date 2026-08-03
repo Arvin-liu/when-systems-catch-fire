@@ -1,0 +1,39 @@
+{
+  "track": "006-ai-coding-productivity",
+  "replay_class": "INDEPENDENT_CLEAN_ENVIRONMENT_RERUN",
+  "environment": "python 3.12.13-class (3.12 arm64), pinned numpy 2.4.6 / pandas 3.0.5 / scipy 1.15.2 / statsmodels 0.14.4 per requirements.lock.txt, offline, committed input CSV only",
+  "files": [
+    {
+      "file": "balance_results.json",
+      "status": "MATCH"
+    },
+    {
+      "file": "core_results.json",
+      "status": "MATCH"
+    },
+    {
+      "file": "data_profile.json",
+      "status": "MATCH"
+    },
+    {
+      "file": "group_descriptives.csv",
+      "status": "MATCH",
+      "committed_lines": 7,
+      "replay_lines": 7
+    },
+    {
+      "file": "official_regression.txt",
+      "status": "NOT_REGENERATED_BY_SCRIPT",
+      "note": "present only in committed output"
+    },
+    {
+      "file": "sensitivity_results.json",
+      "status": "MATCH"
+    },
+    {
+      "file": "subgroup_results.json",
+      "status": "MATCH"
+    }
+  ],
+  "verdict": "MATCH"
+}
