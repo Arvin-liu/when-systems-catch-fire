@@ -1,0 +1,20 @@
+{
+  "fetched_at_utc": "2026-08-03T02:43:48.554050+00:00",
+  "sources": [
+    {
+      "url": "https://files.ember-energy.org/public-downloads/generation/outputs/release_generation_yearly_global.csv",
+      "bytes": 15593443,
+      "sha256": "bfe5ee43da273e2399626be735743e33c7f9c2706eac5be3c31517960f9cec8f"
+    },
+    {
+      "url": "https://www.iea.org/data-and-statistics/charts/global-electricity-generation-by-source-2015-2025",
+      "bytes": 242030,
+      "sha256": "473cf050d5542387bca1fbfd8b3565107a52edcd8db262cd4f56cf6e005b116c"
+    },
+    {
+      "url": "https://www.iea.org/data-and-statistics/charts/annual-change-in-global-electricity-generation-by-source-2024-2025",
+      "bytes": 242297,
+      "sha256": "34b42a8b109e387ef93841872602fa2824e3dc64e414823f9dfeb1a269005a80"
+    }
+  ]
+}

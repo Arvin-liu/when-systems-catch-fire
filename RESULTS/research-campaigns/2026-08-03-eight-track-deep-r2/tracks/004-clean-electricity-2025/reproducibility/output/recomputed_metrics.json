@@ -1,0 +1,35 @@
+{
+  "fetched_at_utc": "2026-08-03T02:43:48.554050+00:00",
+  "ember": {
+    "2024_total_generation_twh": 30906.114,
+    "2025_total_generation_twh": 31739.347,
+    "demand_increment_twh": 833.233,
+    "clean_increment_twh": 878.491,
+    "clean_minus_demand_twh": 45.258,
+    "renewables_increment_twh": 845.09,
+    "nuclear_increment_twh": 33.402,
+    "coal_increment_twh": -42.208,
+    "gas_increment_twh": 28.461,
+    "other_fossil_increment_twh": -31.512,
+    "fossil_increment_twh": -45.258,
+    "note": "The current global CSV has no separate oil row; Ember says Other fossil is mostly oil in the report methodology."
+  },
+  "iea_chart": {
+    "generation_2024_twh": 31216.2,
+    "generation_2025_twh": 32088.399999999998,
+    "renewables_increment_twh": 860.9000000000001,
+    "nuclear_increment_twh": 34.2,
+    "low_emissions_increment_twh": 895.1,
+    "coal_increment_twh": -48.8,
+    "gas_increment_twh": 38.8,
+    "oil_increment_twh": -13.0,
+    "fossil_increment_twh": -23.0,
+    "source_note": "IEA chart values are the public CC BY 4.0 chart table embedded in the page; the separate report text describes demand growth as around 800 TWh."
+  },
+  "input_sha256": {
+    "ember_download": "bfe5ee43da273e2399626be735743e33c7f9c2706eac5be3c31517960f9cec8f",
+    "ember_filtered": "7c0b854967129bdca6e29e7eba7e5283fd2a8fbfc26a5c3f0a309b00a96b6519",
+    "iea_generation_chart_html": "473cf050d5542387bca1fbfd8b3565107a52edcd8db262cd4f56cf6e005b116c",
+    "iea_change_chart_html": "34b42a8b109e387ef93841872602fa2824e3dc64e414823f9dfeb1a269005a80"
+  }
+}

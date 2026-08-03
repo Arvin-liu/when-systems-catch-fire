@@ -1,0 +1,27 @@
+{
+  "track_id": "004-clean-electricity-2025",
+  "manifest_created_at": "2026-08-03T10:46:00+08:00",
+  "download_policy": "Full reports were read locally but not committed; only small public data extracts, scripts and hashes are committed.",
+  "files": [
+    {"source_id":"E1","url":"https://www.energiesdelamer.eu/wp-content/uploads/2026/04/22-04-026-Ember-Global-Electricity-Review-2026.pdf","local_path":"/tmp/ember-ger-2026-r2.pdf","access":"FULL_TEXT_VERIFIED","bytes":20414267,"sha256":"d166f006854de3be8d9603c59abf9b1ee88c57ab948a572243dc28428234300b"},
+    {"source_id":"E2","url":"https://ember-energy.org/data/yearly-electricity-data/","local_path":"/tmp/ember-data-page-r2.html","access":"OFFICIAL_SUMMARY_ONLY","bytes":null,"sha256":"4a75a5d3e1c11193e9eab0086f3ffe66c8a8500001e7fe01b677ef134008d0a7"},
+    {"source_id":"E3","url":"https://files.ember-energy.org/public-downloads/generation/outputs/release_generation_yearly_global.csv","local_path":"/tmp/ember-global-r2.csv","access":"DATA_VERIFIED","bytes":15593443,"sha256":"bfe5ee43da273e2399626be735743e33c7f9c2706eac5be3c31517960f9cec8f"},
+    {"source_id":"E3-filtered","url":"same as E3","local_path":"reproducibility/input/ember_world_2024_2025.csv","access":"DATA_VERIFIED","bytes":null,"sha256":"7c0b854967129bdca6e29e7eba7e5283fd2a8fbfc26a5c3f0a309b00a96b6519"},
+    {"source_id":"I1","url":"https://iea.blob.core.windows.net/assets/df903e1c-49c6-4757-8cbf-6fbcfe7611a0/GlobalEnergyReview2026.pdf","local_path":"/tmp/iea-ger-2026-r2.pdf","access":"FULL_TEXT_VERIFIED","bytes":942115,"sha256":"150e332147b822241689428b88f93dc37d8ed68e4892335a8463935cd78d2392"},
+    {"source_id":"I2","url":"https://www.iea.org/data-and-statistics/charts/global-electricity-generation-by-source-2015-2025","local_path":"downloaded by recompute_004.py; exact fetched hash in reproducibility/output/download-manifest.json","access":"DATA_VERIFIED","bytes":null,"sha256":"473cf050d5542387bca1fbfd8b3565107a52edcd8db262cd4f56cf6e005b116c"},
+    {"source_id":"I3","url":"https://www.iea.org/data-and-statistics/charts/annual-change-in-global-electricity-generation-by-source-2024-2025","local_path":"downloaded by recompute_004.py; exact fetched hash in reproducibility/output/download-manifest.json","access":"DATA_VERIFIED","bytes":null,"sha256":"34b42a8b109e387ef93841872602fa2824e3dc64e414823f9dfeb1a269005a80"},
+    {"source_id":"I4","url":"https://www.iea.org/data-and-statistics/data-product/global-energy-review-dataset","local_path":"/tmp/iea-ger-dataset-r2.html","access":"OFFICIAL_SUMMARY_ONLY","bytes":null,"sha256":"f12bbd2df6fafe199144d811662cba2ddc1c2ddfaed4abca50d166878f8e3382","download_result":"The free XLSX is listed but the site requested a login/account session; no bypass attempted."},
+    {"source_id":"O1","url":"https://ourworldindata.org/data-insights/low-carbon-electricity-sources-grew-faster-than-demand-in-2025-pushing-fossil-fuels-into-decline","local_path":"/tmp/owid-r2.html","access":"FULL_TEXT_VERIFIED","bytes":null,"sha256":"08a8a44a4d85ff48095f1be27045ac0da24f1245ef07afd910178cdb4f9c16a9"},
+    {"source_id":"N1","url":"https://apnews.com/article/climate-renewables-clean-energy-china-india-solar-electricity-demand-c412207bc332c5e0f904030ab21389e7","local_path":"/tmp/ap-r2.html","access":"FULL_TEXT_VERIFIED","bytes":null,"sha256":"2807cba5f3fd3fb89b889320ce67e3db247d0f99601e6958c99128587e77c091"}
+  ],
+  "committed_reproducibility_hashes": {
+    "iea_generation_extract":"ba0ce766b4f44a04468a92d79055dd71d8b1ca2ffc497586079f990561ab74fc",
+    "iea_annual_change_extract":"e17f6bcdf240741acf5652f6cb24f4af26a2252250f0e9f7035c2de4a21b1f54",
+    "recomputed_metrics":"e4bbda62ca41f4181fe1f7ba34319b5c1e25d3e3c4510f8e87dbc4e82cd5c1e4"
+  },
+  "failed_or_limited_access": [
+    {"url":"https://ember-energy.org/app/uploads/2026/04/Global-Electricity-Review-2026.pdf","result":"403 Forbidden","handling":"used the same report's public mirror and recorded its hash"},
+    {"url":"https://files.ember-energy.org/public-downloads/ember_electricity_data_methodology.pdf","result":"NoSuchKey","handling":"used the methodology pages in E1 and the live data-page definitions"},
+    {"url":"IEA Global Energy Review Dataset XLSX","result":"login/account session required","handling":"used public CC BY chart tables; did not claim exact demand XLSX access"}
+  ]
+}
