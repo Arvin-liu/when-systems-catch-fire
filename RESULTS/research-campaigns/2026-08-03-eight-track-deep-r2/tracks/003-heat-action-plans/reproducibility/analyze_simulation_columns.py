@@ -43,10 +43,15 @@ def mean_by_simulation(rows: list[list[float]]) -> list[float]:
 
 
 def summarize(values: list[float]) -> dict[str, float | list[float]]:
+    reported = [q7(values[:100], 0.025), q7(values[:100], 0.975)]
+    complete = [q7(values, 0.025), q7(values, 0.975)]
     return {
         "mean_all_1000": sum(values) / len(values),
-        "ci_reported_1_to_100": [q7(values[:100], 0.025), q7(values[:100], 0.975)],
-        "ci_all_1_to_1000": [q7(values, 0.025), q7(values, 0.975)],
+        "ci_reported_1_to_100": reported,
+        "ci_all_1_to_1000": complete,
+        "width_reported_1_to_100": reported[1] - reported[0],
+        "width_all_1_to_1000": complete[1] - complete[0],
+        "width_delta_all_minus_reported": (complete[1] - complete[0]) - (reported[1] - reported[0]),
     }
 
 
@@ -76,7 +81,7 @@ def audit(package: str) -> dict:
         },
         "interpretation": {
             "point_estimate_change": "none from changing quantile slice; point means use the same provided output",
-            "interval_change": "all-1000 intervals are modestly wider than the first-100 intervals for these output-level contrasts",
+            "interval_change": "all-1000 intervals are wider for AN and AF difference, but slightly narrower for AF ratio; all preserve the same direction",
             "not_claimed": [
                 "full rerun of stage 1 mortality-temperature models",
                 "population-weighted EU total",
