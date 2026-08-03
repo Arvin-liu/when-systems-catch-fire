@@ -1,0 +1,21 @@
+{
+  "track": "007-ev-fire-risk",
+  "access_date_beijing": "2026-08-03",
+  "r1_report_sha256": "6238a03cefb805cfd17c575824a3ca3707bf78e7d6c657401b055fa547924462",
+  "sources": {
+    "denmark_2023_report_pdf_sha256": "3784a108307a8023c8d8330cd342eecc60acbb3b8756bde50e8f9403ff61a71d",
+    "denmark_2024_fact_sheet_pdf_sha256": "a4b19a9c3e9de8ea5755beaa418752178fc1854dc23d281f0d36744a6b18bdaf",
+    "denmark_2025_fact_sheet_pdf_sha256": "cac7a5db03361e362adfc93a77763da131f0320e64340f2b95efd590395d2a73",
+    "sweden_msb1647_pdf_sha256": "319afcafe5cfe6617dc583f8a566282668a03095174bace2f989bf75aeed3b98",
+    "nist_tn2365_pdf_sha256": "d186872c8f306466a331db03c6de9210c81a8b114a82dd66e0305f9fc8447d0f"
+  },
+  "reproducibility": {
+    "formula": "fires / vehicle_stock * 10000",
+    "denominator_timing_recorded": true,
+    "denominator_source_and_numerator_source_explicit": true,
+    "denmark_end_year_recalculation_completed": true,
+    "sweden_2024_recalculation_completed": true,
+    "search_snippets_as_evidence": false,
+    "news_as_scientific_proof": false
+  }
+}

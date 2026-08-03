@@ -1,0 +1,10 @@
+{
+  "formula": "fires / stock * 10000",
+  "warning": "published rates can use a different exposure timing; no age or mileage adjustment",
+  "rows": [
+    {"jurisdiction":"Denmark","year":2023,"fires":46,"stock":332089,"published_rate":1.7,"stock_timing":"end_year","recomputed_rate_per_10000":1.3851708427560083,"implied_stock_from_published_rate":270588.23529411765},
+    {"jurisdiction":"Denmark","year":2024,"fires":50,"stock":485000,"published_rate":1.2,"stock_timing":"approx_end_year","recomputed_rate_per_10000":1.0309278350515463,"implied_stock_from_published_rate":416666.6666666667},
+    {"jurisdiction":"Denmark","year":2025,"fires":62,"stock":693000,"published_rate":1.0,"stock_timing":"approx_end_year","recomputed_rate_per_10000":0.8946608946608947,"implied_stock_from_published_rate":620000.0},
+    {"jurisdiction":"Sweden","year":2024,"fires":40,"stock":880958,"other_fires":3060,"other_stock":4096833,"published_rate":0.45,"stock_timing":"end_year_in_traffic","recomputed_rate_per_10000":0.45405115794396556,"implied_stock_from_published_rate":888888.8888888889,"recomputed_other_rate_per_10000":7.469184123443646}
+  ]
+}
