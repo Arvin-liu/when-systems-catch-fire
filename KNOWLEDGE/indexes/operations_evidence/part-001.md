@@ -934,6 +934,11 @@
   - 可搜索名称：IMPLICIT-07DBAFC03FA811F0 / "title": "Protocol Canonical Schema (022 frozen model)", / IMPLICIT-07DBAFC03FA811F0
   - 来源：`canonical/schemas/protocol-canonical.schema.json`
   - 依赖：—；被引用：—
+- ["title": "Research Episode State Kernel (draft)",](../../../schemas/research-os/episode-state.schema.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-CEC9C3120B535A46 / "title": "Research Episode State Kernel (draft)", / IMPLICIT-CEC9C3120B535A46
+  - 来源：`schemas/research-os/episode-state.schema.json`
+  - 依赖：—；被引用：—
 - ["title": "Semantics for probabilistic programming: higher-order functions, continuous distributions, and soft constraints",](../../../data/external-research/121-fulltext-resolver/evidence-cards/S120-059.json)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-03A9FA5162C65A47 / "title": "Semantics for probabilistic programming: higher-order functions, continuous distributions, and soft constraints", / IMPLICIT-03A9FA5162C65A47 / IMPLICIT-B9F178DE6BDE867B
@@ -1053,6 +1058,16 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-99CC901579B0030D / # 3) Validate the whole program (schema + preregistration-before-result + post-hoc + provenance + leakage): / IMPLICIT-99CC901579B0030D
   - 来源：`evidence-program/README.md`
+  - 依赖：—；被引用：—
+- [# 3. Choose the next action (inspectable rationale)](../../../docs/research-os/OPERATING-GUIDE.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-DEC96076A847A12D / # 3. Choose the next action (inspectable rationale) / IMPLICIT-DEC96076A847A12D
+  - 来源：`docs/research-os/OPERATING-GUIDE.md`
+  - 依赖：—；被引用：—
+- [# 6. Review gates + stop/escalation recommendation](../../../docs/research-os/OPERATING-GUIDE.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-C2DD7DF3156FBFA5 / # 6. Review gates + stop/escalation recommendation / IMPLICIT-C2DD7DF3156FBFA5
+  - 来源：`docs/research-os/OPERATING-GUIDE.md`
   - 依赖：—；被引用：—
 - [# === CHECK 14: No Ψ₀ modification (via baseline hash check) ===](../../../data/external-research/106-105-correction/106-validator.py)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -1204,6 +1219,11 @@
   - 可搜索名称：IMPLICIT-2E8A2F551430F78D / # Preregistration — Task 110 OpenAlex Independent Replication Pilot (C-03) / IMPLICIT-2E8A2F551430F78D
   - 来源：`data/operations/iterations/110/openalex/PREREGISTRATION.md`
   - 依赖：—；被引用：—
+- [# Research OS — Review / Stop / Escalation Gates (Checkpoint C)](../../../docs/research-os/REVIEW-GATES.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-72068AA56D732EEE / # Research OS — Review / Stop / Escalation Gates (Checkpoint C) / IMPLICIT-72068AA56D732EEE
+  - 来源：`docs/research-os/REVIEW-GATES.md`
+  - 依赖：—；被引用：—
 - [# sub(10,4)=6 (feed add output as 'a')](../../../function-os-candidate/v0.2/tests/test_n8_real_router.py)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-88B8E7E37A33D533 / # sub(10,4)=6 (feed add output as 'a') / IMPLICIT-88B8E7E37A33D533
@@ -1268,6 +1288,11 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-DDD9641083AF8935 / ## 007 — 边界之内的可信：Function OS v0.2 能力基准告诉我们什么，以及它诚实停在哪里 / IMPLICIT-DDD9641083AF8935
   - 来源：`docs/editorial/MANIFEST.md`
+  - 依赖：—；被引用：—
+- [## 1. The seven gates](../../../docs/research-os/REVIEW-GATES.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-3FBC581F1F8780D5 / ## 1. The seven gates / IMPLICIT-3FBC581F1F8780D5
+  - 来源：`docs/research-os/REVIEW-GATES.md`
   - 依赖：—；被引用：—
 - [## 1. Ψ₀ → P_meta → Protocol → Function → Case 的关系](../../../docs/protocols/protocol-architecture.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -1338,6 +1363,16 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-14388139E384F276 / ## 5. Gate Types / IMPLICIT-14388139E384F276
   - 来源：`inputs/020/formal-protocol-promotion-standard.md`
+  - 依赖：—；被引用：—
+- [## 5. Integration adapters (non-duplicative)](../../../docs/research-os/RESEARCH-OS-ARCHITECTURE.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-AF81BD5B13AF2720 / ## 5. Integration adapters (non-duplicative) / IMPLICIT-AF81BD5B13AF2720
+  - 来源：`docs/research-os/RESEARCH-OS-ARCHITECTURE.md`
+  - 依赖：—；被引用：—
+- [## 5. Interpreting the gates](../../../docs/research-os/OPERATING-GUIDE.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-907CC8F247A5AEA5 / ## 5. Interpreting the gates / IMPLICIT-907CC8F247A5AEA5
+  - 来源：`docs/research-os/OPERATING-GUIDE.md`
   - 依赖：—；被引用：—
 - [## 5. Safety Considerations](../../../reports/external-research/120-function-os-architecture-candidate-report.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -1999,6 +2034,11 @@
   - 可搜索名称：IMPLICIT-16D49D6FCBE5DB92 / ### 1. 轮次不是样本，而是压力 / IMPLICIT-16D49D6FCBE5DB92
   - 来源：`data/operations/iterations/112/publication/r0-original/volume/第一卷-初稿.md`
   - 依赖：—；被引用：—
+- [### 1.3 Function OS (executor)](../../../docs/research-os/EXISTING-CAPABILITY-MAP.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-6EA19F4F90C30156 / ### 1.3 Function OS (executor) / IMPLICIT-6EA19F4F90C30156
+  - 来源：`docs/research-os/EXISTING-CAPABILITY-MAP.md`
+  - 依赖：—；被引用：—
 - [### 10. 84-Source Canonical Index](../../../reports/external-research/121Q2R-final-report.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-AADCA211EEBB32FC / ### 10. 84-Source Canonical Index / IMPLICIT-AADCA211EEBB32FC
@@ -2033,6 +2073,11 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-1F41909AB41A1E5E / ### 4. 它不知道 Function OS 能否离开小世界 / IMPLICIT-1F41909AB41A1E5E
   - 来源：`data/operations/iterations/112/publication/r0-original/volume/第一卷-初稿.md`
+  - 依赖：—；被引用：—
+- [### 4.1 Episode State Kernel (§5.1)](../../../docs/research-os/RESEARCH-OS-ARCHITECTURE.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-31AA4FB3DE798BA3 / ### 4.1 Episode State Kernel (§5.1) / IMPLICIT-31AA4FB3DE798BA3
+  - 来源：`docs/research-os/RESEARCH-OS-ARCHITECTURE.md`
   - 依赖：—；被引用：—
 - [### 84-Source Canonical Index (Corrected)](../../../reports/external-research/121Q2V-verification-repair-report.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -2458,49 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-AF872765D8DB5407 / ### \[MF-0002｜反向自举通道\](docs/zh/functions/meta/items/MF-0002.md) / IMPLICIT-AF872765D8DB5407
   - 来源：`统一函数总表/0000-MF-0002-反向自举通道.md`
-  - 依赖：—；被引用：—
-- [### \[MF-0003｜正反互斥判定器\](docs/zh/functions/meta/items/MF-0003.md)](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0000-MF-0003-%E6%AD%A3%E5%8F%8D%E4%BA%92%E6%96%A5%E5%88%A4%E5%AE%9A%E5%99%A8.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-92AAE8F51554B002 / ### \[MF-0003｜正反互斥判定器\](docs/zh/functions/meta/items/MF-0003.md) / IMPLICIT-92AAE8F51554B002
-  - 来源：`统一函数总表/0000-MF-0003-正反互斥判定器.md`
-  - 依赖：—；被引用：—
-- [### \[MF-0004｜自举嵌套判定器\](docs/zh/functions/meta/items/MF-0004.md)](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0000-MF-0004-%E8%87%AA%E4%B8%BE%E5%B5%8C%E5%A5%97%E5%88%A4%E5%AE%9A%E5%99%A8.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-F473C6BB0406028E / ### \[MF-0004｜自举嵌套判定器\](docs/zh/functions/meta/items/MF-0004.md) / IMPLICIT-F473C6BB0406028E
-  - 来源：`统一函数总表/0000-MF-0004-自举嵌套判定器.md`
-  - 依赖：—；被引用：—
-- [### \[MF-0005｜自举收敛判定器\](docs/zh/functions/meta/items/MF-0005.md)](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0000-MF-0005-%E8%87%AA%E4%B8%BE%E6%94%B6%E6%95%9B%E5%88%A4%E5%AE%9A%E5%99%A8.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-7A41B32FCC34FCFA / ### \[MF-0005｜自举收敛判定器\](docs/zh/functions/meta/items/MF-0005.md) / IMPLICIT-7A41B32FCC34FCFA
-  - 来源：`统一函数总表/0000-MF-0005-自举收敛判定器.md`
-  - 依赖：—；被引用：—
-- [### BC-20260709-009 《影响力》](../../../reports/math-foundation/pilot-formal-audit-20260712.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-09E18F45D120C04D / ### BC-20260709-009 《影响力》 / IMPLICIT-09E18F45D120C04D / IMPLICIT-F7AC5BBB30C9232B
-  - 来源：`reports/math-foundation/pilot-formal-audit-20260712.md`
-  - 依赖：—；被引用：—
-- [### D. 执行：Function OS 能做什么](../../../data/operations/iterations/112/publication/r0-original/03-%E7%A0%94%E7%A9%B6%E9%97%AE%E9%A2%98%E8%B0%B1%E7%B3%BB.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-7DA9656059AA2661 / ### D. 执行：Function OS 能做什么 / IMPLICIT-7DA9656059AA2661
-  - 来源：`data/operations/iterations/112/publication/r0-original/03-研究问题谱系.md`
-  - 依赖：—；被引用：—
-- [### FORCED STOP — Awaiting GPT Verification](../../../reports/external-research/121Q3-night-final-report.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-409452B95E2E4B58 / ### FORCED STOP — Awaiting GPT Verification / IMPLICIT-409452B95E2E4B58
-  - 来源：`reports/external-research/121Q3-night-final-report.md`
-  - 依赖：—；被引用：—
-- [### Function OS Node Statuses](../../../reports/external-research/121Q3-night-final-report.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-CD58E122AAA2AC87 / ### Function OS Node Statuses / IMPLICIT-CD58E122AAA2AC87
-  - 来源：`reports/external-research/121Q3-night-final-report.md`
-  - 依赖：—；被引用：—
-- [### Function OS: NOT FROZEN](../../../reports/external-research/121Q3-night-final-report.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-DB8343FB5279B3CE / ### Function OS: NOT FROZEN / IMPLICIT-DB8343FB5279B3CE
-  - 来源：`reports/external-research/121Q3-night-final-report.md`
-  - 依赖：—；被引用：—
-- [### function_dependency](../../../outputs/collisions/20260708-teacher-competition/collision-report.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-2D1690A54E16E990 / ### function_dependency / IMPLICIT-2D1690A54E16E990 / IMPLICIT-FFF1DCEF8CC17C17
-  - 来源：`outputs/collisions/20260708-teacher-competition/collision-report.md`
   - 依赖：—；被引用：—

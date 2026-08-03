@@ -9,6 +9,11 @@
   - 可搜索名称：NFC-b1d3e7fdc691ac8e / "execution_agents": \[{"name": "Codex Agent", "role": "evidence collection tool", "evidence_reference": "https://github.c
   - 来源：`tests/test_stage_snapshot_publication.py`
   - 依赖：—；被引用：—
+- ["N7": {"name": "Validator / Feedback", "role": "一致性验证与修订反馈", "schema": "n7-validator-schema.json"},](../../../tools/research_os/adapters.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-24a123b158bfd930 / "N7": {"name": "Validator / Feedback", "role": "一致性验证与修订反馈", "schema": "n7-validator-schema.json"},
+  - 来源：`tools/research_os/adapters.py`
+  - 依赖：—；被引用：—
 - ["name": " ",](../../../templates/operations/stage-snapshot-request-template.json)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-46400B190985B277 / "name": " ", / IMPLICIT-46400B190985B277
@@ -929,6 +934,11 @@
   - 可搜索名称：NFC-0a2a3fee7ba96ab0 / print(f"✅ T4 contradiction resolved: {t4\['reconciled_decision'\]} (JSONL truth confirmed)")
   - 来源：`tools/foundation/verify_085_architecture_freeze.py`
   - 依赖：T4；被引用：—
+- [PROHIBITED. An executor must never raise or assert a claim ceiling. That is an OS/gate decision.](../../../schemas/research-os/executor-return.schema.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-3acb4c3927e1b8bd / PROHIBITED. An executor must never raise or assert a claim ceiling. That is an OS/gate decision.
+  - 来源：`schemas/research-os/executor-return.schema.json`
+  - 依赖：—；被引用：—
 - [Q25B assesses all triggered human, AI/Agent, machine, history and deployment surfaces. Q25's accepted README/current-sta](../../../reports/operations/121Q25B-whole-project-synchronization-contract.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-fcf9952646b5c24b / Q25B assesses all triggered human, AI/Agent, machine, history and deployment surfaces. Q25's accepted README/current-sta

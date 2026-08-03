@@ -1,0 +1,52 @@
+{
+  "schema_version": "round-ledger/0.1",
+  "campaign_id": "POINTFIRE-DEEP-RESEARCH-CAPABILITY-SERIAL-QUEUE-STOPPING-EVALUATION-R1-20260803",
+  "child_branch": "qwen38max/task115-deep-research-queue-checkpoint-d-r1-20260803",
+  "parent_pr": 190,
+  "parent_head": "16f3d83b51a3b72456ed1857d956ac76a5d33e14",
+  "created_at_utc": "2026-08-03T15:24:10Z",
+  "rounds": [
+    {
+      "round": 0,
+      "title": "Remote Foundation CI closure",
+      "started_at_utc": "2026-08-03T15:24:10Z",
+      "start_head": "16f3d83b51a3b72456ed1857d956ac76a5d33e14",
+      "inputs": [
+        "remote CI log: foundation-validation run 30801202396 at head 16f3d83b (FAIL: CENSUS_OUT_OF_DATE, DEEP_ADJUDICATION_OUT_OF_DATE, discovery listed=3588 tracked=3643, NONFUNCTION_CLAIM_OUTPUT_DRIFT)",
+        "other workflows at 16f3d83b: repository-path-accounting-preflight PASS, iteration-lifecycle-validation PASS, iteration-planner-ci PASS",
+        "local merge-ref simulation (main+PR#190): path accounting 9/9 PASS -> merge-ref itself is clean; drift is stale generated outputs on the branch tree"
+      ],
+      "method": "canonical generator fixed-point procedure (no hand-edited generated output): path manifest -> function census -> deep adjudication -> nonfunction adjudication -> migration -> governance (human results, self correction, knowledge experience); iterated to stability",
+      "commands": [
+        "tools/foundation/validate_repository_path_classification.py --generate/--check",
+        "tools/foundation/build_function_asset_census.py",
+        "tools/foundation/adjudicate_function_assets.py",
+        "tools/foundation/adjudicate_nonfunction_claims.py",
+        "tools/foundation/migrate_legacy.py [--check]",
+        "tools/governance/build_human_results.py / run_self_correction.py / build_knowledge_experience.py",
+        "tools/foundation/validate_foundation.py",
+        "python3 tests/test_research_os.py / test_research_os_checkpoint_c.py / test_research_os_resumability.py",
+        "python -m unittest tests.test_lifecycle_events tests.test_terminalization_allowlist"
+      ],
+      "results": {
+        "validate_foundation": "63/63 ALL_FOUNDATION_VALID",
+        "path_accounting": "REPOSITORY_PATH_CLASSIFICATION_VALID",
+        "research_os_tests": "3/3 PASS",
+        "lifecycle_tests": "PASS",
+        "migration_check": "PASS",
+        "knowledge_experience": "PASS"
+      },
+      "files_changed_summary": {
+        "KNOWLEDGE": 62,
+        "RESULTS": 3,
+        "data": 37,
+        "docs": 1,
+        "ROUND-LEDGER.jsonl": 1
+      },
+      "remaining_blockers": [],
+      "output_head": null,
+      "remote_push_confirmed": false,
+      "remote_runs": []
+    }
+  ]
+}
