@@ -1,0 +1,81 @@
+{
+  "schema_ref": "data/operations/schemas/global-invariant-results.schema.json",
+  "checked_by": "tools/operations/validate_global_invariants.py",
+  "checks": [
+    {
+      "id": "INV-01",
+      "status": "PASS",
+      "detail": "classified=81 snapshot=81 duplicates=False"
+    },
+    {
+      "id": "INV-02",
+      "status": "PASS",
+      "detail": "accepted_current=114 iterations_marked=[114]"
+    },
+    {
+      "id": "INV-03",
+      "status": "PASS",
+      "detail": "terminalized iterations 104..114; gaps=[]"
+    },
+    {
+      "id": "INV-04",
+      "status": "PASS",
+      "detail": "open_candidate_heads=81 accepted_leaks=[]; accepted states derive only from ledger/tags/FINAL_STATE"
+    },
+    {
+      "id": "INV-05",
+      "status": "PASS",
+      "detail": "research_branches=2 represented_as_accepted=[]"
+    },
+    {
+      "id": "INV-06",
+      "status": "PASS",
+      "detail": "stacked=68 unresolved_parents=[] (parent may be an open-PR head or an existing branch)"
+    },
+    {
+      "id": "INV-07",
+      "status": "PASS",
+      "detail": "task114 tag_present=True terminalized=True category=ACCEPTED_CURRENT"
+    },
+    {
+      "id": "INV-08",
+      "status": "PASS",
+      "detail": "components in map or justified non-projection; unjustified_missing=[]; justified_non_projected=11"
+    },
+    {
+      "id": "INV-09",
+      "status": "PASS",
+      "detail": "broken_relative_links=[] total=0"
+    },
+    {
+      "id": "INV-10",
+      "status": "PASS",
+      "detail": "ledger+lineage satisfy schemas"
+    },
+    {
+      "id": "INV-11",
+      "status": "PASS",
+      "detail": "rebuild byte-identical=True sha256=f9f9429e00374b67"
+    }
+  ],
+  "external_checks": [
+    {
+      "id": "EXT-01",
+      "validator": "tools/foundation/validate_repository_path_classification.py --check",
+      "status_at_line_b_head": "PASS"
+    },
+    {
+      "id": "EXT-02",
+      "validator": "tools/foundation/validate_foundation.py",
+      "status_at_line_b_head": "PASS (63/63)"
+    },
+    {
+      "id": "EXT-03",
+      "validator": "iteration-lifecycle-validation workflow",
+      "status_at_pr189_head_after_repair": "PASS"
+    }
+  ],
+  "total": 11,
+  "failed": 0,
+  "verdict": "GLOBAL_INVARIANTS_CLOSED"
+}

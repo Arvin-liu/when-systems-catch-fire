@@ -1,0 +1,95 @@
+{
+  "campaign_id": "POINTFIRE-QWEN38MAX-WHOLE-REPOSITORY-STATE-RECONSTRUCTION-CANDIDATE-CONVERGENCE-GLOBAL-INVARIANT-CLOSURE-R1-20260803",
+  "executor_model": "Qwen 3.8 Max",
+  "control_repository": "Arvin-liu/1111",
+  "control_branch": "relay/parallel/qwen38max-whole-repo-convergence-20260803-r1",
+  "control_branch_tip": "6bf7357707a2292bcc9f525a5b621da977fc6d7d",
+  "relay_current_tip": "6a95666cb256c8a3c21c8f14858fcd9b9fed9128",
+  "formal_repository": "Arvin-liu/when-systems-catch-fire",
+  "formal_main_baseline": "cac043d438bea6c4dc2c57c1169093df715ef5df",
+  "final_state_claimed": "QWEN38MAX_WHOLE_REPO_CANDIDATE_PACKAGE_AWAITING_GPT_OWNER_TOTAL_CONTROL",
+  "generated_at": "2026-08-03T11:55:38Z",
+  "lines": {
+    "A": {
+      "branch": "qwen38max/task115-checkpoint-c-recovery-r1-20260803",
+      "parent_tip": "f56edf33474ffdee5fb992346159c500b3d97c83",
+      "tip": "16f3d83b51a3b72456ed1857d956ac76a5d33e14",
+      "pr": 190,
+      "base": "main",
+      "status": "DRAFT_PUSHED"
+    },
+    "B": {
+      "branch": "qwen38max/pr189-independent-review-ci-repair-r1-20260803",
+      "parent_tip": "046570c6b69c3817b53167bebf8cf09cbf75e6d0",
+      "tip": "266d3fd74703b21a2c8aa540bce03e824c2f30a4",
+      "pr": 191,
+      "base": "workbuddy/zhiyuan-writing-cognitive-migration-editorial-revision-r1-20260803",
+      "status": "DRAFT_PUSHED"
+    },
+    "C": {
+      "branch": "qwen38max/eight-track-r2-auditability-repair-r1-20260803",
+      "parent_tip": "ae777859beb947750daa8ff45d9d617100669979",
+      "tip": "e702a0e0628d07b5fc83c90ba933a3eafb623f23",
+      "pr": 192,
+      "base": "research/eight-track-deep-validation-20260803-r2",
+      "status": "DRAFT_PUSHED"
+    },
+    "D": {
+      "branch": "qwen38max/whole-repo-state-convergence-r1-20260803",
+      "parent_tip": "cac043d438bea6c4dc2c57c1169093df715ef5df",
+      "tip": null,
+      "pr": null,
+      "base": "main",
+      "status": "DRAFT_IN_PROGRESS"
+    }
+  },
+  "task115_local_recovery": {
+    "workspace": "/Users/zhiyuan/Workbuddy/Claw/arr-r2-formal-115",
+    "workspace_branch": "workbuddy/task115-research-executive-os-draft-r1-20260803",
+    "head_matched_remote": true,
+    "unpushed_commits": 0,
+    "preservation": "status/diff/untracked-list/patch bundle archived before any mutating operation; tracked diff sha256 7bc49593… verified byte-identical after apply",
+    "defects_found_in_recovered_code": [
+      "consume_iteration_delta setdefault bug",
+      "cli resume fallback bug"
+    ],
+    "r1_replay": "8/8 rounds rejected as completed; machine episodes committed",
+    "r2_loop": "bounded AI-coding loop completed across separate processes; ceiling never raised"
+  },
+  "ci_and_validation": {
+    "line_b_at_repaired_head": {
+      "validate_foundation": "63/63",
+      "path_accounting": "PASS 3593/0",
+      "claim_governance": "39/39",
+      "function_asset_closure": "46/46",
+      "nonfunction_closure": "54/54",
+      "governance_chain": "PASS (fixed point)",
+      "unittest_foundation_trio": "OK",
+      "lean_replay": "covered by CI (toolchain not local)"
+    },
+    "line_c_validator": "EIGHT_TRACK_R2_VALID 657/0; self-test 5/5 fixtures",
+    "line_d_invariants": "GLOBAL_INVARIANTS_CLOSED 11/11; self-test 5/5 fixtures; line D tests all pass"
+  },
+  "artifacts_sha256": {
+    "repository-state-ledger.json": "f9f9429e00374b678d884596d92165d808c1466a78e55ffd35b21c55841d2ece",
+    "candidate-lineage-registry.json": "9aeb6e7c6934a6023192994ca7bbc35441430e91ac625f8e4193813968577f73",
+    "global-invariant-results.json": "55736b1e7a252a5d06928289f8fc537fa7209c7283816eca8240c41894409880"
+  },
+  "unresolved_conflicts": [
+    "PR #189 module substance vs owner style policy: independent review found no method blocker; acceptance remains owner decision",
+    "R2 result acceptance: candidate research only; Line C repaired metadata but adjudication is owner/GPT",
+    "old record drafts (#3,#5,#16-#21,#31,#32): supersession undecidable by rules; owner adjudication required"
+  ],
+  "safe_to_review_independently": [
+    "A",
+    "B",
+    "C",
+    "D"
+  ],
+  "requires_ordering": [
+    "#191 before any #189 substance step",
+    "#192 before any R2 adjudication",
+    "#190 gated by R2_EMPIRICAL_CALIBRATION_PENDING"
+  ],
+  "prohibited_actions_observed": "none executed: no merge, no Ready, no tag, no Task 116, no Task 115 terminalization, no Task 114 history alteration, no force push, no R2 promotion, no old-PR closure"
+}
