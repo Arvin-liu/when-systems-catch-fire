@@ -5,7 +5,7 @@
   "stage": "analysis",
   "state": "IN_PROGRESS",
   "frozen_commit": "d601d9a6",
-  "checkpoint_commits": ["d601d9a6", "99306233", "cc3693e0"],
+  "checkpoint_commits": ["d601d9a6", "99306233", "cc3693e0", "d78f6daf"],
   "r1_verdict": "INSUFFICIENT_EVIDENCE",
   "claim_ceiling": "MNP detection and clinical association within explicitly bounded human samples; no general-population causal claim",
   "required_layers": [
@@ -37,5 +37,5 @@
   },
   "next_checkpoint": "challenge",
   "next_action": "attack selection, sparse-event modeling, measurement validity, source dependence, causal jumps, and externalization before final rewrite",
-  "updated_at": "2026-08-03T13:55:00+08:00"
+  "updated_at": "2026-08-03T14:02:00+08:00"
 }
