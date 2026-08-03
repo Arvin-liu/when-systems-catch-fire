@@ -4,8 +4,8 @@
   "research_identity": "CAUSAL_CONTAMINATION_AND_REPLICATION_AUDIT",
   "stage": "freeze",
   "state": "IN_PROGRESS",
-  "frozen_commit": "PENDING_FREEZE_COMMIT",
-  "checkpoint_commits": [],
+  "frozen_commit": "d601d9a6",
+  "checkpoint_commits": ["d601d9a6"],
   "r1_verdict": "INSUFFICIENT_EVIDENCE",
   "claim_ceiling": "MNP detection and clinical association within explicitly bounded human samples; no general-population causal claim",
   "required_layers": [
