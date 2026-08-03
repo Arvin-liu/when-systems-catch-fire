@@ -5,7 +5,7 @@
   "stage": "evidence",
   "state": "IN_PROGRESS",
   "frozen_commit": "d601d9a6",
-  "checkpoint_commits": ["d601d9a6", "99306233"],
+  "checkpoint_commits": ["d601d9a6", "99306233", "cc3693e0"],
   "r1_verdict": "INSUFFICIENT_EVIDENCE",
   "claim_ceiling": "MNP detection and clinical association within explicitly bounded human samples; no general-population causal claim",
   "required_layers": [
@@ -28,5 +28,5 @@
   },
   "next_checkpoint": "analysis",
   "next_action": "analyze causal estimands, selection and confounding, differential measurement error, independent tissue replication, and the gap between presence and clinical events",
-  "updated_at": "2026-08-03T13:29:26+08:00"
+  "updated_at": "2026-08-03T13:47:00+08:00"
 }
