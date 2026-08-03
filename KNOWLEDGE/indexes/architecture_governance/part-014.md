@@ -4,6 +4,66 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0522-C-527-EPR悖论 — 局域性和实在性是连续因子不是布尔量,B=ε_loc×ε_real≈0.9.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0522-C-527-EPR%E6%82%96%E8%AE%BA%20%E2%80%94%20%E5%B1%80%E5%9F%9F%E6%80%A7%E5%92%8C%E5%AE%9E%E5%9C%A8%E6%80%A7%E6%98%AF%E8%BF%9E%E7%BB%AD%E5%9B%A0%E5%AD%90%E4%B8%8D%E6%98%AF%E5%B8%83%E5%B0%94%E9%87%8F%2CB%3D%CE%B5_loc%C3%97%CE%B5_real%E2%89%880.9.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-331bcc4db17186e7 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0522-C-527-EPR悖论 — 局域性和实在性是连续因子不是布尔量,B=ε_loc×ε_real≈0.9.md`
+  - 来源：`统一案例总表/0522-C-527-EPR悖论 — 局域性和实在性是连续因子不是布尔量,B=ε_loc×ε_real≈0.9.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0523-C-528-时间箭头 — dΦ.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0523-C-528-%E6%97%B6%E9%97%B4%E7%AE%AD%E5%A4%B4%20%E2%80%94%20d%CE%A6.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-1c2f6eb949adf45f / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0523-C-528-时间箭头 — dΦ.md`
+  - 来源：`统一案例总表/0523-C-528-时间箭头 — dΦ.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0524-C-529-麦克斯韦妖 — 信息操作总Φ变化≥0,Landauer是特例.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0524-C-529-%E9%BA%A6%E5%85%8B%E6%96%AF%E9%9F%A6%E5%A6%96%20%E2%80%94%20%E4%BF%A1%E6%81%AF%E6%93%8D%E4%BD%9C%E6%80%BB%CE%A6%E5%8F%98%E5%8C%96%E2%89%A50%2CLandauer%E6%98%AF%E7%89%B9%E4%BE%8B.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-4290263825f13f9d / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0524-C-529-麦克斯韦妖 — 信息操作总Φ变化≥0,Landauer是特例.md`
+  - 来源：`统一案例总表/0524-C-529-麦克斯韦妖 — 信息操作总Φ变化≥0,Landauer是特例.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0525-C-530-负温度 — ε-1=-超存活-态,弛豫释放能量.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0525-C-530-%E8%B4%9F%E6%B8%A9%E5%BA%A6%20%E2%80%94%20%CE%B5-1%3D-%E8%B6%85%E5%AD%98%E6%B4%BB-%E6%80%81%2C%E5%BC%9B%E8%B1%AB%E9%87%8A%E6%94%BE%E8%83%BD%E9%87%8F.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-d0c8bda444c1015d / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0525-C-530-负温度 — ε-1=-超存活-态,弛豫释放能量.md`
+  - 来源：`统一案例总表/0525-C-530-负温度 — ε-1=-超存活-态,弛豫释放能量.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0526-C-531-相变分类 — 连续=穿越超平面,一级=两存活区跳变.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0526-C-531-%E7%9B%B8%E5%8F%98%E5%88%86%E7%B1%BB%20%E2%80%94%20%E8%BF%9E%E7%BB%AD%3D%E7%A9%BF%E8%B6%8A%E8%B6%85%E5%B9%B3%E9%9D%A2%2C%E4%B8%80%E7%BA%A7%3D%E4%B8%A4%E5%AD%98%E6%B4%BB%E5%8C%BA%E8%B7%B3%E5%8F%98.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-ea3078ae4d024912 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0526-C-531-相变分类 — 连续=穿越超平面,一级=两存活区跳变.md`
+  - 来源：`统一案例总表/0526-C-531-相变分类 — 连续=穿越超平面,一级=两存活区跳变.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0528-C-533-黑洞热力学 — S_BH=N_dof×⟨Φ(视界)⟩,面积律×对数律.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0528-C-533-%E9%BB%91%E6%B4%9E%E7%83%AD%E5%8A%9B%E5%AD%A6%20%E2%80%94%20S_BH%3DN_dof%C3%97%E2%9F%A8%CE%A6%28%E8%A7%86%E7%95%8C%29%E2%9F%A9%2C%E9%9D%A2%E7%A7%AF%E5%BE%8B%C3%97%E5%AF%B9%E6%95%B0%E5%BE%8B.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-c582a1f766e96445 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0528-C-533-黑洞热力学 — S_BH=N_dof×⟨Φ(视界)⟩,面积律×对数律.md`
+  - 来源：`统一案例总表/0528-C-533-黑洞热力学 — S_BH=N_dof×⟨Φ(视界)⟩,面积律×对数律.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0530-C-535-光速上限 — c=Fisher速度在ε=1时的值,所有场ε≤1.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0530-C-535-%E5%85%89%E9%80%9F%E4%B8%8A%E9%99%90%20%E2%80%94%20c%3DFisher%E9%80%9F%E5%BA%A6%E5%9C%A8%CE%B5%3D1%E6%97%B6%E7%9A%84%E5%80%BC%2C%E6%89%80%E6%9C%89%E5%9C%BA%CE%B5%E2%89%A41.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-4dfa52cc0a9a288e / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0530-C-535-光速上限 — c=Fisher速度在ε=1时的值,所有场ε≤1.md`
+  - 来源：`统一案例总表/0530-C-535-光速上限 — c=Fisher速度在ε=1时的值,所有场ε≤1.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0531-C-536-等效原理 — m_i=m_g精确到O((μ.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0531-C-536-%E7%AD%89%E6%95%88%E5%8E%9F%E7%90%86%20%E2%80%94%20m_i%3Dm_g%E7%B2%BE%E7%A1%AE%E5%88%B0O%28%28%CE%BC.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-718150d438341010 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0531-C-536-等效原理 — m_i=m_g精确到O((μ.md`
+  - 来源：`统一案例总表/0531-C-536-等效原理 — m_i=m_g精确到O((μ.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0532-C-537-双生子佯谬 — 固有时∝exp(-∫Φdt),加速增Φ减固有时.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0532-C-537-%E5%8F%8C%E7%94%9F%E5%AD%90%E4%BD%AF%E8%B0%AC%20%E2%80%94%20%E5%9B%BA%E6%9C%89%E6%97%B6%E2%88%9Dexp%28-%E2%88%AB%CE%A6dt%29%2C%E5%8A%A0%E9%80%9F%E5%A2%9E%CE%A6%E5%87%8F%E5%9B%BA%E6%9C%89%E6%97%B6.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-7c89bf817405a279 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0532-C-537-双生子佯谬 — 固有时∝exp(-∫Φdt),加速增Φ减固有时.md`
+  - 来源：`统一案例总表/0532-C-537-双生子佯谬 — 固有时∝exp(-∫Φdt),加速增Φ减固有时.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0534-C-539-E=mc2 — mc2=信息容量×信息速度2.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0534-C-539-E%3Dmc2%20%E2%80%94%20mc2%3D%E4%BF%A1%E6%81%AF%E5%AE%B9%E9%87%8F%C3%97%E4%BF%A1%E6%81%AF%E9%80%9F%E5%BA%A62.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-3da7cba199d30567 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0534-C-539-E=mc2 — mc2=信息容量×信息速度2.md`
+  - 来源：`统一案例总表/0534-C-539-E=mc2 — mc2=信息容量×信息速度2.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0535-C-540-黑洞无毛 — 4维时空3方向ε-0,径向被门控否决.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0535-C-540-%E9%BB%91%E6%B4%9E%E6%97%A0%E6%AF%9B%20%E2%80%94%204%E7%BB%B4%E6%97%B6%E7%A9%BA3%E6%96%B9%E5%90%91%CE%B5-0%2C%E5%BE%84%E5%90%91%E8%A2%AB%E9%97%A8%E6%8E%A7%E5%90%A6%E5%86%B3.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-85a8447966f3e1aa / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0535-C-540-黑洞无毛 — 4维时空3方向ε-0,径向被门控否决.md`
+  - 来源：`统一案例总表/0535-C-540-黑洞无毛 — 4维时空3方向ε-0,径向被门控否决.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0536-C-541-宇宙加速膨胀 — Φ远尾区d2Φ.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0536-C-541-%E5%AE%87%E5%AE%99%E5%8A%A0%E9%80%9F%E8%86%A8%E8%83%80%20%E2%80%94%20%CE%A6%E8%BF%9C%E5%B0%BE%E5%8C%BAd2%CE%A6.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-9579df404fcd4676 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0536-C-541-宇宙加速膨胀 — Φ远尾区d2Φ.md`
+  - 来源：`统一案例总表/0536-C-541-宇宙加速膨胀 — Φ远尾区d2Φ.md`
+  - 依赖：—；被引用：—
 - [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0539-C-544-拓扑绝缘体 — 体态3D门控否决,表面=2D门控边界.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0539-C-544-%E6%8B%93%E6%89%91%E7%BB%9D%E7%BC%98%E4%BD%93%20%E2%80%94%20%E4%BD%93%E6%80%813D%E9%97%A8%E6%8E%A7%E5%90%A6%E5%86%B3%2C%E8%A1%A8%E9%9D%A2%3D2D%E9%97%A8%E6%8E%A7%E8%BE%B9%E7%95%8C.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-4cc736449cece241 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0539-C-544-拓扑绝缘体 — 体态3D门控否决,表面=2D门控边界.md`
@@ -1518,6 +1578,11 @@
   - 可搜索名称：NFC-d2634f91fb542991 / 当前成果从\[人类索引\](../../../docs/publication/zhiyuan-writing-showcase.md)与 `data/publication/zhiyuan-writing-showcase.json` 读取。AI 不得只抓取作品标题
   - 来源：`docs/ai-assistant-usage-reference.md`
   - 依赖：—；被引用：—
+- [当前状态：`DRAFT_PR_AWAITING_GPT_OWNER_REVIEW`，未 Ready、未合并、未打 tag、未产生终态证据。](../../../reports/publication/zhiyuan-writing-cognitive-migration-editorial-revision-review.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-4a42efacfa4b7499 / 当前状态：`DRAFT_PR_AWAITING_GPT_OWNER_REVIEW`，未 Ready、未合并、未打 tag、未产生终态证据。
+  - 来源：`reports/publication/zhiyuan-writing-cognitive-migration-editorial-revision-review.md`
+  - 依赖：—；被引用：—
 - [当前结论的上限仍是跨源书目元数据一致性。OpenAlex 结果不验证论文内容、科学真理、](../../../docs/project-current-state.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-ecffbc93efbf56d0 / 当前结论的上限仍是跨源书目元数据一致性。OpenAlex 结果不验证论文内容、科学真理、
@@ -1783,6 +1848,11 @@
   - 可搜索名称：NFC-b8815f8b0bc91cac / 把作者立场当作客观事实。
   - 来源：`outputs/getbrain/failure-typology-draft-20260706.md`
   - 依赖：—；被引用：—
+- [把公共文章流畅度当成新证据；](../../../docs/publication/zhiyuan-writing-cognitive-migration-editorial-revision.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-1067a33744a25de7 / 把公共文章流畅度当成新证据；
+  - 来源：`docs/publication/zhiyuan-writing-cognitive-migration-editorial-revision.md`
+  - 依赖：—；被引用：—
 - [把四种基本力统一写成已解决](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-82201d8054765f61 / 把四种基本力统一写成已解决
@@ -1797,6 +1867,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-af8a629bdaf4447d / 把政策建议写成已验证
   - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [把本子模块当成每类文体的强制要求或统一风格机。](../../../docs/publication/zhiyuan-writing-cognitive-migration-editorial-revision.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a8cb8f10f7417d51 / 把本子模块当成每类文体的强制要求或统一风格机。
+  - 来源：`docs/publication/zhiyuan-writing-cognitive-migration-editorial-revision.md`
   - 依赖：—；被引用：—
 - [把理论自洽写成实证成立](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
@@ -1832,6 +1907,16 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-c3d93c8348093a74 / 报告「未找到正式可执行的晋级门槛」；020 建立了晋级门槛/Schema/验证器，二者为前后承接，非矛盾。
   - 来源：`inputs/021/upstream-conflict-audit.md`
+  - 依赖：—；被引用：—
+- [抽象判断落到一个具体的人（僧人）、一个具体的制度动作（改名、改制）、一个具体的社群（地方信众）。具体锚定来自证据记录，未杜撰。](../../../docs/publication/zhiyuan-writing-cognitive-migration-editorial-revision-examples.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-ce8b53d98e1bbd0b / 抽象判断落到一个具体的人（僧人）、一个具体的制度动作（改名、改制）、一个具体的社群（地方信众）。具体锚定来自证据记录，未杜撰。
+  - 来源：`docs/publication/zhiyuan-writing-cognitive-migration-editorial-revision-examples.md`
+  - 依赖：—；被引用：—
+- [抽象运动要周期性落在一个已经被证据记录支撑的**人、场景、物、数字或引文**上。具体锚定是读者的落脚点，不是装饰；**绝不可为提升可读性而杜撰**人物、场景、数字或引文。概念与例子的比例至少 1:1：新概念出现时立刻用一个感性例子接住。](../../../docs/publication/zhiyuan-writing-cognitive-migration-editorial-revision.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-d562f5fd7a71963a / 抽象运动要周期性落在一个已经被证据记录支撑的**人、场景、物、数字或引文**上。具体锚定是读者的落脚点，不是装饰；**绝不可为提升可读性而杜撰**人物、场景、数字或引文。概念与例子的比例至少 1:1：新概念出现时立刻用一个感性例子接住。
+  - 来源：`docs/publication/zhiyuan-writing-cognitive-migration-editorial-revision.md`
   - 依赖：—；被引用：—
 - [拉格朗日量、规范群、耦合常数、粒子谱、RG 流和实验数值](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
@@ -2412,89 +2497,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-324eb747337ccaeb / 有限划分必然存在倒数和大于1的子集
   - 来源：`统一案例总表/0678-C-0683-Erdős–Graham猜想.md`
-  - 依赖：—；被引用：—
-- [有限游戏vs无限游戏与点火框架元协议组合的碰撞。有限游戏追求延续性（V₁），无限游戏追求创新性（V₃），验证了元协议价值取决于组合搭配。](../../../data/foundation/arguments/arguments.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-BC-20260709-017 / 有限游戏vs无限游戏与点火框架元协议组合的碰撞。有限游戏追求延续性（V₁），无限游戏追求创新性（V₃），验证了元协议价值取决于组合搭配。
-  - 来源：`data/foundation/arguments/arguments.jsonl`
-  - 依赖：—；被引用：—
-- [未把 CONDITIONAL_ACCEPTANCE 写成：正式批准、已完成全部人工审核、已完成外部验证、已晋级正式协议、canonical 已更新。](../../../outputs/audit/meta-protocol-normative-review-publication-audit-20260711.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-1f10489c43fce0ff / 未把 CONDITIONAL_ACCEPTANCE 写成：正式批准、已完成全部人工审核、已完成外部验证、已晋级正式协议、canonical 已更新。
-  - 来源：`outputs/audit/meta-protocol-normative-review-publication-audit-20260711.md`
-  - 依赖：—；被引用：—
-- [未改案例表（统一案例总表/ 未动）。](../../../outputs/audit/mf-0001-0005-integration-audit-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-a9d0e6b9d47e24ab / 未改案例表（统一案例总表/ 未动）。
-  - 来源：`outputs/audit/mf-0001-0005-integration-audit-20260708.md`
-  - 依赖：—；被引用：—
-- [未来工作只要改变能力、状态、结论、纠正、开放问题、证据或公开表述，就必须同步 README、`HUMAN-READING.md`、`KNOWLEDGE/`、相应 `RESULTS/` 页面、机器 Delta/impact/lineage、知](../../../docs/project-current-state.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-8c6af1bfef409d7b / 未来工作只要改变能力、状态、结论、纠正、开放问题、证据或公开表述，就必须同步 README、`HUMAN-READING.md`、`KNOWLEDGE/`、相应 `RESULTS/` 页面、机器 Delta/impact/lineage、知
-  - 来源：`docs/project-current-state.md`
-  - 依赖：—；被引用：—
-- [未经验真（crossref_verified=false）或验真失败（UNVERIFIED_NOT_USED）的外部理论，一律不得注入 Ψ₀ 核心或补丁库主体；转入‘外部参考轨道’待后续核验。](../../../data/external-research/093-scope-guard.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-59ae5f8746997b5a / 未经验真（crossref_verified=false）或验真失败（UNVERIFIED_NOT_USED）的外部理论，一律不得注入 Ψ₀ 核心或补丁库主体；转入‘外部参考轨道’待后续核验。
-  - 来源：`data/external-research/093-scope-guard.md`
-  - 依赖：—；被引用：—
-- [未要求预防原则与风险上限，易被用作'不可预测所以随便试'的借口（歧义/滥用风险）。](../../../docs/governance/meta-protocol-reviews/protocols/E2.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-d72fbd561b8b8c43 / 未要求预防原则与风险上限，易被用作'不可预测所以随便试'的借口（歧义/滥用风险）。
-  - 来源：`docs/governance/meta-protocol-reviews/protocols/E2.md`
-  - 依赖：—；被引用：—
-- [未说明仅适用于局部、低耦合、关系稳定、可预测范围（歧义）。](../../../docs/governance/meta-protocol-reviews/protocols/E1.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-c5d6a372a88ffffa / 未说明仅适用于局部、低耦合、关系稳定、可预测范围（歧义）。
-  - 来源：`docs/governance/meta-protocol-reviews/protocols/E1.md`
-  - 依赖：—；被引用：—
-- [本书完成元协议重跑；22 个书籍验证案例候选已形成。](../../../docs/meta-protocols/version-iteration-note-20260709.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-64cd1f4c281ccb0c / 本书完成元协议重跑；22 个书籍验证案例候选已形成。
-  - 来源：`docs/meta-protocols/version-iteration-note-20260709.md`
-  - 依赖：—；被引用：—
-- [本书籍验证案例为候选（candidate_only），未分配 C 编号，未进入统一案例总表，须经逐本复核后才可入表。](../../../docs/two-tables-entry-writing-standard-20260709.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-bbe02c56fcdbfe6c / 本书籍验证案例为候选（candidate_only），未分配 C 编号，未进入统一案例总表，须经逐本复核后才可入表。
-  - 来源：`docs/two-tables-entry-writing-standard-20260709.md`
-  - 依赖：—；被引用：—
-- [本书籍验证案例候选 · 暂存层](../../../outputs/book-collisions/20260709-22-book-validation/README.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-99e195c7638a008c / 本书籍验证案例候选 · 暂存层
-  - 来源：`outputs/book-collisions/20260709-22-book-validation/README.md`
-  - 依赖：—；被引用：—
-- [本书籍验证案例候选（元协议重跑版）](../../../docs/meta-protocols/book-validation-22-cases-20260709.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-09300055aeb87acc / 本书籍验证案例候选（元协议重跑版）
-  - 来源：`docs/meta-protocols/book-validation-22-cases-20260709.md`
-  - 依赖：—；被引用：—
-- [本书籍验证案例候选（可读版）](../../../outputs/book-collisions/20260709-22-book-validation/book-case-candidates.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-694adc7a9556c41a / 本书籍验证案例候选（可读版）
-  - 来源：`outputs/book-collisions/20260709-22-book-validation/book-case-candidates.md`
-  - 依赖：—；被引用：—
-- [本书籍验证案例清单（元协议重跑版） 2026年7月9日18_20__1915117838454264008.md](../../../outputs/book-collisions/20260709-22-book-validation/source-manifest.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-53bc7be07212d456 / 本书籍验证案例清单（元协议重跑版） 2026年7月9日18_20__1915117838454264008.md
-  - 来源：`outputs/book-collisions/20260709-22-book-validation/source-manifest.md`
-  - 依赖：—；被引用：—
-- [本书验证案例当前为 `candidate_only`，**不是正式案例**，不进入 Case 层编号。](../../../docs/protocols/protocol-architecture.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-db511de3e59ce616 / 本书验证案例当前为 `candidate_only`，**不是正式案例**，不进入 Case 层编号。
-  - 来源：`docs/protocols/protocol-architecture.md`
-  - 依赖：—；被引用：—
-- [本地 163 PASS 与 GitHub function-os-ci 是**两条独立证据链**，CI 必须独立变绿。](../../../data/external-research/121-fulltext-resolver/121q6c/121Q6C-final-report.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-94a02a9bc936189a / 本地 163 PASS 与 GitHub function-os-ci 是**两条独立证据链**，CI 必须独立变绿。
-  - 来源：`data/external-research/121-fulltext-resolver/121q6c/121Q6C-final-report.md`
-  - 依赖：—；被引用：—
-- [本地 unittest/pytest 164 PASS 是**独立证据链**；GitHub function-os-ci 全绿是**另一条证据链**，二者均已满足。](../../../data/external-research/121-fulltext-resolver/121q6d/121Q6D-final-report.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-e16331303f08fff5 / 本地 unittest/pytest 164 PASS 是**独立证据链**；GitHub function-os-ci 全绿是**另一条证据链**，二者均已满足。
-  - 来源：`data/external-research/121-fulltext-resolver/121q6d/121Q6D-final-report.md`
-  - 依赖：—；被引用：—
-- [本宪章处于点火项目的最高规范层，但它不是不可讨论的经文。底线原则与具体解释应当分离：底线用于保护生命共同体、未知主体、维护者可持续性和反俘获边界；具体解释可以在公开理由、证据、影响和异议中修订。](../../../docs/governance/life-community-value-charter.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-e7ada520d567ec3c / 本宪章处于点火项目的最高规范层，但它不是不可讨论的经文。底线原则与具体解释应当分离：底线用于保护生命共同体、未知主体、维护者可持续性和反俘获边界；具体解释可以在公开理由、证据、影响和异议中修订。
-  - 来源：`docs/governance/life-community-value-charter.md`
   - 依赖：—；被引用：—

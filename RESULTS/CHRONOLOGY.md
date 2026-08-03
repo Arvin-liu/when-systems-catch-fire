@@ -1,6 +1,6 @@
 # 历史结果台账
 
-本台账从 292 份现存研究、文章、架构、Foundation 与迭代文档确定性恢复。它只提供保真导航，不改变原来源的证据权限。
+本台账从 297 份现存研究、文章、架构、Foundation 与迭代文档确定性恢复。它只提供保真导航，不改变原来源的证据权限。
 
 **统一断言上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
 
@@ -177,6 +177,19 @@
 
 ## ARTICLE_OR_PUBLICATION
 
+### [认知迁移编辑修订子模块 — 审查笔记](../reports/publication/zhiyuan-writing-cognitive-migration-editorial-revision-review.md)
+
+- **结果 ID：** `HR-DEB3E834AD440E87`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：认知迁移编辑修订子模块 — 审查笔记？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** English: Review Note — Cognitive-Migration Editorial Revision Module
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
 ### [任务 113：宋徽宗道教笔记的点火分析](../reports/publication/song-huizong-taoism-point-fire-analysis.md)
 
 - **结果 ID：** `HR-694DB9C100FF4EAC`
@@ -242,6 +255,32 @@
 - **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - **处置：** `HUMAN_INDEX_ONLY`
 
+### [认知迁移编辑修订子模块](../docs/publication/zhiyuan-writing-cognitive-migration-editorial-revision.md)
+
+- **结果 ID：** `HR-0A5E4005A933EA19`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：认知迁移编辑修订子模块？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** English: Cognitive-Migration Editorial Revision Module
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [编辑修订 before/after 范例](../docs/publication/zhiyuan-writing-cognitive-migration-editorial-revision-examples.md)
+
+- **结果 ID：** `HR-75430BB574C9C15B`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：编辑修订 before/after 范例？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** English: Editorial-Revision Before/After Micro-Cases
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
 ### [当天意有了接口：宋徽宗与会自我证明的皇权](../docs/publication/works/when-an-emperor-manufactures-heaven.md)
 
 - **结果 ID：** `HR-7977AAD32B24032D`
@@ -268,6 +307,19 @@
 - **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - **处置：** `HUMAN_INDEX_ONLY`
 
+### [方法来源记录：认知迁移编辑修订子模块](../docs/publication/method-sources/cognitive-migration-editorial-revision-source.md)
+
+- **结果 ID：** `HR-9094B2CB638397A8`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：方法来源记录：认知迁移编辑修订子模块？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** English: Source & Provenance Note — Cognitive-Migration Editorial Revision Module
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
 ### [《公元1117年：宋徽宗为什么崇信道教？》来源与边界](../docs/publication/cases/song-huizong-taoism-1117-source.md)
 
 - **结果 ID：** `HR-D6DC7EDFC015E4C7`
@@ -289,6 +341,19 @@
 - **问题：** 此来源记录了什么：起始案例来源链｜公元1115年：金朝崛起为什么这么快？？
 - **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
 - **来源摘要：** 原始材料包含第三方课程内容，本仓库只公开来源记录、哈希、分析边界和派生成果，不复制或公开原始全文。SHA-256 用于确认后续分析所对应的输入版本，不表示原文中的历史断言已经核验。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [PR 189 Independent Method Review and CI Repair — Line B (Qwen 3.8 Max campaign)](../reports/publication/pr189-independent-review-and-ci-repair-r1-20260803.md)
+
+- **结果 ID：** `HR-E2BE1A0C85B07DB2`
+- **日期：** 2026-08-03
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：PR 189 Independent Method Review and CI Repair — Line B (Qwen 3.8 Max campaign)？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Status: STACKED DRAFT CANDIDATE targeting workbuddy/zhiyuan-writing-cognitive-migration-editorial-revision-r1-20260803. DO NOT MERGE either PR. Reviewer: independent campaign executor (not the PR author agent).
 - **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
 - **变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.

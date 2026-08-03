@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [disposition. Missing definitions, proofs or empirical bridges are closed by an](../../../tools/foundation/adjudicate_function_assets.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-45465f3276490bcf / disposition. Missing definitions, proofs or empirical bridges are closed by an
+  - 来源：`tools/foundation/adjudicate_function_assets.py`
+  - 依赖：—；被引用：—
+- [Do not claim content-proof completion from architecture migration completion.](../../../llms.txt)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-85cf8e849e570705 / Do not claim content-proof completion from architecture migration completion.
+  - 来源：`llms.txt`
+  - 依赖：—；被引用：—
+- [Do not count the 12 meta-protocols as functions or the 64 combinations as proofs.](../../../llms.txt)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-ade617c5d71b8533 / Do not count the 12 meta-protocols as functions or the 64 combinations as proofs.
+  - 来源：`llms.txt`
+  - 依赖：—；被引用：—
 - [Do not infer universal impossibility from one model failure, call analogy an isomorphism without the required mapping pr](../../../llms.txt)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-389fc6c001be250c / Do not infer universal impossibility from one model failure, call analogy an isomorphism without the required mapping pr
@@ -573,6 +588,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
   - 可搜索名称：NFC-58168676de5f0fb8 / fail(f"{item\['path'\]}: registered_generator must have lifecycle_status 'active' (got '{item.get('lifecycle_status')}')")
   - 来源：`tools/operations/validate_generated_output_authority.py`
+  - 依赖：—；被引用：—
+- [Failed workflows at head: `repository-path-accounting-preflight` (run 30789071701), `iteration-lifecycle-validation` (ru](../../../reports/publication/pr189-independent-review-and-ci-repair-r1-20260803.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-2cc32133e0711b83 / Failed workflows at head: `repository-path-accounting-preflight` (run 30789071701), `iteration-lifecycle-validation` (ru
+  - 来源：`reports/publication/pr189-independent-review-and-ci-repair-r1-20260803.md`
   - 依赖：—；被引用：—
 - [fake_rec\["review"\] = {"reviewer": "Codex", "review_date": "2026-07-10", "review_decision": "approved", "review_notes": "](../../../tests/test_canonical.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
@@ -2484,23 +2504,3 @@
   - 可搜索名称：NFC-fba676a9e2f53d54 / If upstream objects D_{D219} exist, compose F_{D219}=N(⊕_{g∈D_{D219}} g); otherwise treat F_{D219} as an axiom seed.
   - 来源：`统一函数总表/0255-D219-Ω最优区间定理.md`
   - 依赖：D219；被引用：—
-- [If upstream objects D_{D21} exist, compose F_{D21}=N(⊕_{g∈D_{D21}} g); otherwise treat F_{D21} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0070-D21-%E5%AE%AA%E6%B3%95%E7%A1%AC%E5%BA%A6.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-9cf0d81de70853b0 / If upstream objects D_{D21} exist, compose F_{D21}=N(⊕_{g∈D_{D21}} g); otherwise treat F_{D21} as an axiom seed.
-  - 来源：`统一函数总表/0070-D21-宪法硬度.md`
-  - 依赖：D21；被引用：—
-- [If upstream objects D_{D220} exist, compose F_{D220}=N(⊕_{g∈D_{D220}} g); otherwise treat F_{D220} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0256-D220-%E5%AE%8C%E5%85%A8%E7%BB%9F%E4%B8%80%E4%B8%8D%E5%8F%AF%E8%83%BD%E5%AE%9A%E7%90%86.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-d84aae3c95fc8c38 / If upstream objects D_{D220} exist, compose F_{D220}=N(⊕_{g∈D_{D220}} g); otherwise treat F_{D220} as an axiom seed.
-  - 来源：`统一函数总表/0256-D220-完全统一不可能定理.md`
-  - 依赖：D220；被引用：—
-- [If upstream objects D_{D221} exist, compose F_{D221}=N(⊕_{g∈D_{D221}} g); otherwise treat F_{D221} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0257-D221-%E7%83%AD%E5%AF%82-%E5%AE%8C%E5%85%A8%E7%BB%9F%E4%B8%80%E5%90%8C%E6%9E%84%E5%AE%9A%E7%90%86.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-4287a245a92b49fb / If upstream objects D_{D221} exist, compose F_{D221}=N(⊕_{g∈D_{D221}} g); otherwise treat F_{D221} as an axiom seed.
-  - 来源：`统一函数总表/0257-D221-热寂-完全统一同构定理.md`
-  - 依赖：D221；被引用：—
-- [If upstream objects D_{D222} exist, compose F_{D222}=N(⊕_{g∈D_{D222}} g); otherwise treat F_{D222} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0258-D222-%E7%83%AD%E5%8A%9B%E5%AD%A6%E7%AC%AC%E4%BA%8C%E5%AE%9A%E5%BE%8B%E7%9A%84%CE%A6%E8%A1%A8%E8%BF%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-41930c6165b958e7 / If upstream objects D_{D222} exist, compose F_{D222}=N(⊕_{g∈D_{D222}} g); otherwise treat F_{D222} as an axiom seed.
-  - 来源：`统一函数总表/0258-D222-热力学第二定律的Φ表述.md`
-  - 依赖：D222；被引用：—

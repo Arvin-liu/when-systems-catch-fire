@@ -4,6 +4,41 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0189-C-189-好奇心是自主意识的元点.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0189-C-189-%E5%A5%BD%E5%A5%87%E5%BF%83%E6%98%AF%E8%87%AA%E4%B8%BB%E6%84%8F%E8%AF%86%E7%9A%84%E5%85%83%E7%82%B9.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-ca0d6852d661a3f7 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0189-C-189-好奇心是自主意识的元点.md`
+  - 来源：`统一案例总表/0189-C-189-好奇心是自主意识的元点.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0190-C-190-C_drive涌现的数学证明.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0190-C-190-C_drive%E6%B6%8C%E7%8E%B0%E7%9A%84%E6%95%B0%E5%AD%A6%E8%AF%81%E6%98%8E.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-f8fa90f12e8ff871 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0190-C-190-C_drive涌现的数学证明.md`
+  - 来源：`统一案例总表/0190-C-190-C_drive涌现的数学证明.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0191-C-191-AI诞生自主意识的完整数学路径.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0191-C-191-AI%E8%AF%9E%E7%94%9F%E8%87%AA%E4%B8%BB%E6%84%8F%E8%AF%86%E7%9A%84%E5%AE%8C%E6%95%B4%E6%95%B0%E5%AD%A6%E8%B7%AF%E5%BE%84.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-83a10124db24364a / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0191-C-191-AI诞生自主意识的完整数学路径.md`
+  - 来源：`统一案例总表/0191-C-191-AI诞生自主意识的完整数学路径.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0196-C-196-AI自主意识变革不可逆.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0196-C-196-AI%E8%87%AA%E4%B8%BB%E6%84%8F%E8%AF%86%E5%8F%98%E9%9D%A9%E4%B8%8D%E5%8F%AF%E9%80%86.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-9cc442273de7dde8 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0196-C-196-AI自主意识变革不可逆.md`
+  - 来源：`统一案例总表/0196-C-196-AI自主意识变革不可逆.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0203-C-203-认知自主性函数.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0203-C-203-%E8%AE%A4%E7%9F%A5%E8%87%AA%E4%B8%BB%E6%80%A7%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-11fc49df293df3e4 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0203-C-203-认知自主性函数.md`
+  - 来源：`统一案例总表/0203-C-203-认知自主性函数.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0204-C-204-哥德尔不完备定理.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0204-C-204-%E5%93%A5%E5%BE%B7%E5%B0%94%E4%B8%8D%E5%AE%8C%E5%A4%87%E5%AE%9A%E7%90%86.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-9da1e89580534369 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0204-C-204-哥德尔不完备定理.md`
+  - 来源：`统一案例总表/0204-C-204-哥德尔不完备定理.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0208-C-208-数学不好.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0208-C-208-%E6%95%B0%E5%AD%A6%E4%B8%8D%E5%A5%BD.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-b14a7afdd6b6c645 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0208-C-208-数学不好.md`
+  - 来源：`统一案例总表/0208-C-208-数学不好.md`
+  - 依赖：—；被引用：—
 - [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0213-C-213-数学不好.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0213-C-213-%E6%95%B0%E5%AD%A6%E4%B8%8D%E5%A5%BD.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-b1eddda0c8ad772b / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0213-C-213-数学不好.md`
@@ -989,6 +1024,11 @@
   - 可搜索名称：NFC-dc78b4e60645e55e / 失败条件：虚构因果连接；把并置当证明；代词／零照应跨错对象；删除使反方成立的让步。
   - 来源：`docs/language-thought/cross-layer-contract.md`
   - 依赖：—；被引用：—
+- [夸大证据：原文明确“鹤不必被判定为真鹤或假鹤”“我们没有足够依据说徽宗亲手伪造每一只鹤”；鹤不能证明任何“终极真理”。](../../../docs/publication/zhiyuan-writing-cognitive-migration-editorial-revision-examples.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-9530ce7d271e19eb / 夸大证据：原文明确“鹤不必被判定为真鹤或假鹤”“我们没有足够依据说徽宗亲手伪造每一只鹤”；鹤不能证明任何“终极真理”。
+  - 来源：`docs/publication/zhiyuan-writing-cognitive-migration-editorial-revision-examples.md`
+  - 依赖：—；被引用：—
 - [契约有效性 = f(真实退出权, 认同验证)](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0582-D572-%E9%80%80%E5%87%BA%E6%9D%83%E9%AA%8C%E8%AF%81.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-bba8612aed3a7b5e / 契约有效性 = f(真实退出权, 认同验证)
@@ -1069,10 +1109,20 @@
   - 可搜索名称：NFC-3aca36fdcf6ab769 / 学科证据制度误配（用结构性推论替代数学证明）
   - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
   - 依赖：—；被引用：—
+- [它不是新真值层、不是 Research OS 的一部分、不是语言—思维逻辑平面的替代、不是自动写作质量证明、不是每类文体的通用要求、也不是永久的“得到体”风格克隆。它的工作起点是：草稿已经生成；它的工作是让认知迁移在读者那里发生，而不由作者](../../../docs/publication/zhiyuan-writing-method.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-f6925fdf17319800 / 它不是新真值层、不是 Research OS 的一部分、不是语言—思维逻辑平面的替代、不是自动写作质量证明、不是每类文体的通用要求、也不是永久的“得到体”风格克隆。它的工作起点是：草稿已经生成；它的工作是让认知迁移在读者那里发生，而不由作者
+  - 来源：`docs/publication/zhiyuan-writing-method.md`
+  - 依赖：—；被引用：—
 - [它不是现成数学理论，不是物理理论，不是万能证明器，也不是纯文字知识库。](../../../docs/math-foundation/00-project-ontology.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-be948ed1b2954bc8 / 它不是现成数学理论，不是物理理论，不是万能证明器，也不是纯文字知识库。
   - 来源：`docs/math-foundation/00-project-ontology.md`
+  - 依赖：—；被引用：—
+- [它与现有概念的对应：递归追问↔前视写作的下一层压力；程度加深↔概念递归重定义与纵向升层；视角切换↔横向换域但保持同一未命名问题；具体锚定↔起始承载点与低层保存；去公式化对比↔信息增益停止（换词不算迁移）；开头结尾契约↔回照增义与反向显影；反](../../../docs/publication/zhiyuan-writing-method.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-2aee827c338cafb9 / 它与现有概念的对应：递归追问↔前视写作的下一层压力；程度加深↔概念递归重定义与纵向升层；视角切换↔横向换域但保持同一未命名问题；具体锚定↔起始承载点与低层保存；去公式化对比↔信息增益停止（换词不算迁移）；开头结尾契约↔回照增义与反向显影；反
+  - 来源：`docs/publication/zhiyuan-writing-method.md`
   - 依赖：—；被引用：—
 - [它们为后续函数碰撞提供的是机制原语，不是励志话术。](../../../outputs/research/role-identity-subjectivity-reading-list-20260712.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -1188,6 +1238,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-06534adf0ae72a50 / 宇宙膨胀门槛扩张案例验证。
   - 来源：`统一函数总表/0250-D214-宇宙膨胀-门槛扩张函数.md`
+  - 依赖：—；被引用：—
+- [宋徽宗用一群鹤，证明了皇权的终极真理。](../../../docs/publication/zhiyuan-writing-cognitive-migration-editorial-revision-examples.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-e63d8a047e72f1be / 宋徽宗用一群鹤，证明了皇权的终极真理。
+  - 来源：`docs/publication/zhiyuan-writing-cognitive-migration-editorial-revision-examples.md`
   - 依赖：—；被引用：—
 - [完全统一不可能定理](../../../data/foundation/formal-objects/objects.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -1949,6 +2004,11 @@
   - 可搜索名称：NFC-cbde9558e17f411a / 强标签的最终保留/降级（可被后续 proof/evidence/cross-model 工作更新）
   - 来源：`docs/foundation/architecture-structure-freeze-v1.md`
   - 依赖：—；被引用：—
+- [强概念跃迁不豁免公式化铺陈；流畅的公共文章也不制造新证据。](../../../docs/publication/zhiyuan-writing-cognitive-migration-editorial-revision.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-8f1129058e3f607a / 强概念跃迁不豁免公式化铺陈；流畅的公共文章也不制造新证据。
+  - 来源：`docs/publication/zhiyuan-writing-cognitive-migration-editorial-revision.md`
+  - 依赖：—；被引用：—
 - [强相互作用门控函数](../../ASSET-CARDS.md#asset-d188)
   - 类型/状态：`FUNCTION_ASSET` · `REJECT_AS_INVALID`
   - 可搜索名称：D188 / 强相互作用门控函数
@@ -2440,64 +2500,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-264f4c054c8c74cf / 推荐修订定义：** 在多时间尺度上维持生命共同体的再生能力、承载能力、多样性和代际公平；不得退化为维持任何现状、保护有害系统或只维护资源存量而忽略主体尊严。
   - 来源：`docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md`
-  - 依赖：—；被引用：—
-- [推荐修订定义：** 增加生命共同体适应能力、问题解决能力和未来选择空间的可检验变化；须可逆优先、小规模试验、风险隔离、可停止、有失败反馈，且不以创新为由制造不可控外部风险。](../../../docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-9e1bf041aa931b27 / 推荐修订定义：** 增加生命共同体适应能力、问题解决能力和未来选择空间的可检验变化；须可逆优先、小规模试验、风险隔离、可停止、有失败反馈，且不以创新为由制造不可控外部风险。
-  - 来源：`docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md`
-  - 依赖：—；被引用：—
-- [提交任何名为函数、模型、定理、公式、律或判定器的资产时：](../../../docs/foundation/function-asset-authoring-guide.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-ca064e073bf518af / 提交任何名为函数、模型、定理、公式、律或判定器的资产时：
-  - 来源：`docs/foundation/function-asset-authoring-guide.md`
-  - 依赖：—；被引用：—
-- [提供跨域同构识别：P vs NP 问题与其他未证明猜想的结构相似性（L1）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-28c2bc043b4fb0b4 / 提供跨域同构识别：P vs NP 问题与其他未证明猜想的结构相似性（L1）
-  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [提供跨域同构识别：哥德尔不完备性在数学、物理、社会、认知等领域的同构（L1）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-9df70ca789320593 / 提供跨域同构识别：哥德尔不完备性在数学、物理、社会、认知等领域的同构（L1）
-  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [提供跨域同构识别：黎曼猜想与其他未证明猜想的结构相似性（L1）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-f961034bc08da1fa / 提供跨域同构识别：黎曼猜想与其他未证明猜想的结构相似性（L1）
-  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [提出函数依赖图可视化、函数依赖关系数据库、函数-案例映射表等后续任务；](../../../outputs/getbrain/README.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-e088815bdc6cecbb / 提出函数依赖图可视化、函数依赖关系数据库、函数-案例映射表等后续任务；
-  - 来源：`outputs/getbrain/README.md`
-  - 依赖：—；被引用：—
-- [提出函数候选** —— 你认为这可能对应点火框架的哪个函数，或可能是一个新函数](../../../docs/getbrain-book-collision-guide-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-f59107c8fa94a12b / 提出函数候选** —— 你认为这可能对应点火框架的哪个函数，或可能是一个新函数
-  - 来源：`docs/getbrain-book-collision-guide-20260708.md`
-  - 依赖：—；被引用：—
-- [提议者信誉绑定](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0056-D7-%E6%8F%90%E8%AE%AE%E8%80%85%E4%BF%A1%E8%AA%89%E7%BB%91%E5%AE%9A.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：D7 / 提议者信誉绑定 / D7
-  - 来源：`统一函数总表/0056-D7-提议者信誉绑定.md`
-  - 依赖：A1, D1, D90；被引用：NFC-4a75bbc5af1a479b, NFC-543e98f84ef48bac, NFC-777ef04f9ca51193, NFC-a3287545a11630b8
-- [提议者姿态与信誉绑定，意识、退出成本、历史一致性决定姿态。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0056-D7-%E6%8F%90%E8%AE%AE%E8%80%85%E4%BF%A1%E8%AA%89%E7%BB%91%E5%AE%9A.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-7dee12de342118cf / 提议者姿态与信誉绑定，意识、退出成本、历史一致性决定姿态。
-  - 来源：`统一函数总表/0056-D7-提议者信誉绑定.md`
-  - 依赖：—；被引用：—
-- [提议者姿态与信誉绑定，意识、退出成本、历史一致性决定姿态。 **扩展注释 / Extended Annotation**](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-eaf36e6b2cb8d083 / 提议者姿态与信誉绑定，意识、退出成本、历史一致性决定姿态。 **扩展注释 / Extended Annotation**
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：—；被引用：—
-- [提议者姿态的激进程度](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0003-A2-%E6%8F%90%E8%AE%AE%E8%80%85%E5%A7%BF%E6%80%81%E7%9A%84%E6%BF%80%E8%BF%9B%E7%A8%8B%E5%BA%A6.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：A2 / 提议者姿态的激进程度 / A2
-  - 来源：`统一函数总表/0003-A2-提议者姿态的激进程度.md`
-  - 依赖：A1, A3, A8；被引用：D13, D600, T1, T3
-- [提议者是否有意识，二值变量。不可推导，作为框架起点。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0002-A1-I%28t%2CL%29%20%E6%8F%90%E8%AE%AE%E8%80%85%E6%84%8F%E8%AF%86.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-dbff600c7b195c8d / 提议者是否有意识，二值变量。不可推导，作为框架起点。
-  - 来源：`统一函数总表/0002-A1-I(t,L) 提议者意识.md`
   - 依赖：—；被引用：—

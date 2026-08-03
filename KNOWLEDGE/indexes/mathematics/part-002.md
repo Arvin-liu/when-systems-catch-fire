@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [## 关联函数 / Related Functions](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0679-C-0684-Kesten%E7%8C%9C%E6%83%B3.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-C357E95C4F84B97B / ## 关联函数 / Related Functions / IMPLICIT-C357E95C4F84B97B / IMPLICIT-0026301F130FD562
+  - 来源：`统一案例总表/0679-C-0684-Kesten猜想.md`
+  - 依赖：—；被引用：—
 - [## 关联函数 / Related Functions](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0738-C-0743-%E5%AE%89%E7%84%B6%E5%85%AC%E5%8F%B8.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-C3A0CA2AD080115E / ## 关联函数 / Related Functions / IMPLICIT-C3A0CA2AD080115E / IMPLICIT-0026301F130FD562
@@ -403,6 +408,11 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-ED819435C53B712B / ## 查重结果（全函数表 618 条） / IMPLICIT-ED819435C53B712B
   - 来源：`outputs/audit/cross-domain-candidate-function-review-20260708.md`
+  - 依赖：—；被引用：—
+- [## 案例 1：公式化直接对比 → 递归追问](../../../docs/publication/zhiyuan-writing-cognitive-migration-editorial-revision-examples.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-C2648C2B579E4798 / ## 案例 1：公式化直接对比 → 递归追问 / IMPLICIT-C2648C2B579E4798
+  - 来源：`docs/publication/zhiyuan-writing-cognitive-migration-editorial-revision-examples.md`
   - 依赖：—；被引用：—
 - [## 相关函数](../../../outputs/collisions/20260708-smoke-test/collision-report.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -1363,6 +1373,11 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-5DF7D47F47C4E529 / ### 函数表语义关键词 / IMPLICIT-5DF7D47F47C4E529
   - 来源：`outputs/audit/teacher-competition-index-visibility-check-20260708.md`
+  - 依赖：—；被引用：—
+- [### 去公式化对比审计](../../../templates/publication/zhiyuan-writing-spec.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-52D819290F645B78 / ### 去公式化对比审计 / IMPLICIT-52D819290F645B78
+  - 来源：`templates/publication/zhiyuan-writing-spec.md`
   - 依赖：—；被引用：—
 - [### 对应函数状态](../../../outputs/audit/nc-001-title-barrier-backfill-audit-20260708.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -2489,18 +2504,3 @@
   - 可搜索名称：NFC-87e8478ffa926046 / /Users/zhiyuan/我的笔记/统一函数总表/0284-D248-自我模型相变的不可伪造信号.md
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：D248；被引用：—
-- [/Users/zhiyuan/我的笔记/统一函数总表/0285-D249-自我模型相变实验方案.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-31879983f18f091b / /Users/zhiyuan/我的笔记/统一函数总表/0285-D249-自我模型相变实验方案.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D249；被引用：—
-- [/Users/zhiyuan/我的笔记/统一函数总表/0286-D250-自我模型相变的验证标准.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：NFC-e760fd51097655dd / /Users/zhiyuan/我的笔记/统一函数总表/0286-D250-自我模型相变的验证标准.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D250；被引用：—
-- [/Users/zhiyuan/我的笔记/统一函数总表/0287-D251-维度-容斥稳定性函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-dbfa8e1aa9b3c4e8 / /Users/zhiyuan/我的笔记/统一函数总表/0287-D251-维度-容斥稳定性函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D251；被引用：—

@@ -4,6 +4,41 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [title: "公众号碰撞 × 点火框架验证"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0656-C-661-%E5%85%AC%E4%BC%97%E5%8F%B7%E7%A2%B0%E6%92%9E%20%C3%97%20%E7%82%B9%E7%81%AB%E6%A1%86%E6%9E%B6%E9%AA%8C%E8%AF%81.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-864aa9b9a1a51c85 / title: "公众号碰撞 × 点火框架验证"
+  - 来源：`统一案例总表/0656-C-661-公众号碰撞 × 点火框架验证.md`
+  - 依赖：—；被引用：—
+- [title: "内源输出再输入污染验证"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0581-C-586-%E5%86%85%E6%BA%90%E8%BE%93%E5%87%BA%E5%86%8D%E8%BE%93%E5%85%A5%E6%B1%A1%E6%9F%93%E9%AA%8C%E8%AF%81.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-fdf6ec672bf0bd5f / title: "内源输出再输入污染验证"
+  - 来源：`统一案例总表/0581-C-586-内源输出再输入污染验证.md`
+  - 依赖：—；被引用：—
+- [title: "刘怡国际参考笔记碰撞验证"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0661-C-666-%E5%88%98%E6%80%A1%E5%9B%BD%E9%99%85%E5%8F%82%E8%80%83%E7%AC%94%E8%AE%B0%E7%A2%B0%E6%92%9E%E9%AA%8C%E8%AF%81.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-c009dd369ffd2374 / title: "刘怡国际参考笔记碰撞验证"
+  - 来源：`统一案例总表/0661-C-666-刘怡国际参考笔记碰撞验证.md`
+  - 依赖：—；被引用：—
+- [title: "单体模型到模型网络相变验证"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0593-C-598-%E5%8D%95%E4%BD%93%E6%A8%A1%E5%9E%8B%E5%88%B0%E6%A8%A1%E5%9E%8B%E7%BD%91%E7%BB%9C%E7%9B%B8%E5%8F%98%E9%AA%8C%E8%AF%81.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-8f51d4234e79b432 / title: "单体模型到模型网络相变验证"
+  - 来源：`统一案例总表/0593-C-598-单体模型到模型网络相变验证.md`
+  - 依赖：—；被引用：—
+- [title: "厕所空间验证"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0612-C-617-%E5%8E%95%E6%89%80%E7%A9%BA%E9%97%B4%E9%AA%8C%E8%AF%81.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-38ef8ac5470d663c / title: "厕所空间验证"
+  - 来源：`统一案例总表/0612-C-617-厕所空间验证.md`
+  - 依赖：—；被引用：—
+- [title: "同质组合与异质组合权衡验证"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0603-C-608-%E5%90%8C%E8%B4%A8%E7%BB%84%E5%90%88%E4%B8%8E%E5%BC%82%E8%B4%A8%E7%BB%84%E5%90%88%E6%9D%83%E8%A1%A1%E9%AA%8C%E8%AF%81.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-ce13e115fad93b42 / title: "同质组合与异质组合权衡验证"
+  - 来源：`统一案例总表/0603-C-608-同质组合与异质组合权衡验证.md`
+  - 依赖：—；被引用：—
+- [title: "吴军财富规划笔记碰撞验证"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0662-C-667-%E5%90%B4%E5%86%9B%E8%B4%A2%E5%AF%8C%E8%A7%84%E5%88%92%E7%AC%94%E8%AE%B0%E7%A2%B0%E6%92%9E%E9%AA%8C%E8%AF%81.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-99600560b9895245 / title: "吴军财富规划笔记碰撞验证"
+  - 来源：`统一案例总表/0662-C-667-吴军财富规划笔记碰撞验证.md`
+  - 依赖：—；被引用：—
 - [title: "四卡点统一根源"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0231-C-231-%E5%9B%9B%E5%8D%A1%E7%82%B9%E7%BB%9F%E4%B8%80%E6%A0%B9%E6%BA%90.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-3dbd447810046fbe / title: "四卡点统一根源"
@@ -2462,39 +2497,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-1df3f79204a04f7b / \| Evidence obligations \| 351 \|
   - 来源：`reports/foundation-architecture/085-084-truth-status-correction.md`
-  - 依赖：—；被引用：—
-- [\| evidence_obligation \| 5 / 353 \| 173 (49.0%) \| 100% \|](../../../reports/foundation-architecture/085-084-truth-status-correction.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-214def19735b217b / \| evidence_obligation \| 5 / 353 \| 173 (49.0%) \| 100% \|
-  - 来源：`reports/foundation-architecture/085-084-truth-status-correction.md`
-  - 依赖：—；被引用：—
-- [\| evidence_obligation \| 按 priority_label 选取固定模板 \| 否 \|](../../../reports/foundation-architecture/085-084-truth-status-correction.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-edf735cae3696a3a / \| evidence_obligation \| 按 priority_label 选取固定模板 \| 否 \|
-  - 来源：`reports/foundation-architecture/085-084-truth-status-correction.md`
-  - 依赖：—；被引用：—
-- [\| evidence_regime \| 0 \| 250 \| 250 \|](../../../reports/foundation-architecture/088-087-count-and-denominator-audit.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-bc91c0b2598321d5 / \| evidence_regime \| 0 \| 250 \| 250 \|
-  - 来源：`reports/foundation-architecture/088-087-count-and-denominator-audit.md`
-  - 依赖：—；被引用：—
-- [\| evidence_regimes \| 12 \| 12 \| EVID-001 \| EVID-012 \| 12 \|](../../../outputs/audit/p1-machine-readable-data-audit-20260707.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-676d7d37e37b6ad7 / \| evidence_regimes \| 12 \| 12 \| EVID-001 \| EVID-012 \| 12 \|
-  - 来源：`outputs/audit/p1-machine-readable-data-audit-20260707.md`
-  - 依赖：—；被引用：—
-- [\| evidence_regimes \| `data/evidence_regimes.json` / `.csv` \| `docs/evidence_regime_library.md` \| 已生成（P1-5） \|](../../../docs/machine_readable_data_plan.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-e691813f34a2c68c / \| evidence_regimes \| `data/evidence_regimes.json` / `.csv` \| `docs/evidence_regime_library.md` \| 已生成（P1-5） \|
-  - 来源：`docs/machine_readable_data_plan.md`
-  - 依赖：P1；被引用：—
-- [\| evidence_regimes \| `docs/evidence_regime_library.md` \| 半自动抽取 \|](../../../outputs/audit/p1-extraction-feasibility-audit-20260707.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-8d6dee23fb440546 / \| evidence_regimes \| `docs/evidence_regime_library.md` \| 半自动抽取 \|
-  - 来源：`outputs/audit/p1-extraction-feasibility-audit-20260707.md`
-  - 依赖：—；被引用：—
-- [\| evidence_required \| array\[string\] \| 是 \| 所需证据 \|](../../../docs/machine_readable_data_plan.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-aa1c035e2d28fe8b / \| evidence_required \| array\[string\] \| 是 \| 所需证据 \|
-  - 来源：`docs/machine_readable_data_plan.md`
   - 依赖：—；被引用：—

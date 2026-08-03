@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [blocker、未解决证明义务、commit 和 Draft PR。](../../../docs/VERSIONING.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-94e5fcd10761eaf4 / blocker、未解决证明义务、commit 和 Draft PR。
+  - 来源：`docs/VERSIONING.md`
+  - 依赖：—；被引用：—
+- [Both artifacts are valid, but their domains differ from one another and both are narrower than the source's domain-unspe](../../../reports/foundation-architecture/T2-proof-equivalence-audit-20260713.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-c5f84bed8ecf6bfc / Both artifacts are valid, but their domains differ from one another and both are narrower than the source's domain-unspe
+  - 来源：`reports/foundation-architecture/T2-proof-equivalence-audit-20260713.md`
+  - 依赖：T2；被引用：—
+- [Boundary negative example; not a technical quantum information proof.](../../../data/architecture/multiscale-causal-fabric/examples/quantum-entanglement-negative.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-439d5220b042dcfd / Boundary negative example; not a technical quantum information proof.
+  - 来源：`data/architecture/multiscale-causal-fabric/examples/quantum-entanglement-negative.json`
+  - 依赖：—；被引用：—
 - [Boundary: this is not a complete cosmological network and does not claim to unify stellar physics, thermodynamics, and l](../../../data/architecture/multiscale-causal-fabric/examples/stellar-nucleosynthesis.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-f2fbd3a2f0c12ee9 / Boundary: this is not a complete cosmological network and does not claim to unify stellar physics, thermodynamics, and l
@@ -2482,19 +2497,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-5bef37c6dde18c3a / direct source artifact unresolved
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：—；被引用：—
-- [disposition. Missing definitions, proofs or empirical bridges are closed by an](../../../tools/foundation/adjudicate_function_assets.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-45465f3276490bcf / disposition. Missing definitions, proofs or empirical bridges are closed by an
-  - 来源：`tools/foundation/adjudicate_function_assets.py`
-  - 依赖：—；被引用：—
-- [Do not claim content-proof completion from architecture migration completion.](../../../llms.txt)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-85cf8e849e570705 / Do not claim content-proof completion from architecture migration completion.
-  - 来源：`llms.txt`
-  - 依赖：—；被引用：—
-- [Do not count the 12 meta-protocols as functions or the 64 combinations as proofs.](../../../llms.txt)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-ade617c5d71b8533 / Do not count the 12 meta-protocols as functions or the 64 combinations as proofs.
-  - 来源：`llms.txt`
   - 依赖：—；被引用：—

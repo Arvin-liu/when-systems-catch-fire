@@ -7,7 +7,7 @@
 
 **引导问题：** 对象、运算、定义域、证明和反例究竟完成到哪一步？
 
-当前检索覆盖 10987 项，重点卡片 102 项。 [打开本主题完整索引](./indexes/mathematics.md)
+当前检索覆盖 11003 项，重点卡片 102 项。 [打开本主题完整索引](./indexes/mathematics.md)
 
 - [认知路径积分函数](./ASSET-CARDS.md#asset-d127) — `KEEP_AS_STRUCTURAL_METAPHOR`；Identity: STRUCTURAL_METAPHOR. Definition scope: UNSPECIFIED_IN_SOURCE → structured inference or procedure.
 - [经典确定性函数](./ASSET-CARDS.md#asset-d182) — `KEEP_AS_TOY_MODEL`；Identity: PARAMETRIC_MATHEMATICAL_MODEL. Definition scope: r=mu/Lambda in (0,1) union (1,infinity) → relation over source entities.
@@ -61,7 +61,7 @@
 
 **引导问题：** 跨尺度表示、概率动力学和关系网络能描述什么，不能证明什么？
 
-当前检索覆盖 4416 项，重点卡片 76 项。 [打开本主题完整索引](./indexes/systems.md)
+当前检索覆盖 4457 项，重点卡片 76 项。 [打开本主题完整索引](./indexes/systems.md)
 
 - [Q14 Ignition Atlas maps are versioned derived projections, not a permanent total map and not a second canonical truth so](./ASSET-CARDS.md#asset-nfc-1e10227f1b51e4d0) — `RETAINED_AS_STRUCTURAL_METAPHOR`；- 121Q14 Ignition Atlas maps are versioned derived projections, not a permanent total map and not a second canonical truth source.
 - [Iteration method 1.3.0 and system map 0.3.0, 0.4.0 are Historical; method 1.2.0 and maps 0.1.0, 0.2.0 are earlier Histor](./ASSET-CARDS.md#asset-nfc-2d220e92f7b73dd3) — `ACCEPTED_AS_DEFINITION`；Iteration method 1.3.0 and system map 0.3.0, 0.4.0 are Historical; method 1.2.0 and maps 0.1.0, 0.2.0 are earlier Historical, not Current. Treat imple
@@ -88,9 +88,10 @@
 
 **引导问题：** 认知类比、行动选择和现实反馈怎样保留边界与失败条件？
 
-当前检索覆盖 1855 项，重点卡片 24 项。 [打开本主题完整索引](./indexes/cognition.md)
+当前检索覆盖 1872 项，重点卡片 28 项。 [打开本主题完整索引](./indexes/cognition.md)
 
 - [认知路径积分函数](./ASSET-CARDS.md#asset-d127) — `KEEP_AS_STRUCTURAL_METAPHOR`；Identity: STRUCTURAL_METAPHOR. Definition scope: UNSPECIFIED_IN_SOURCE → structured inference or procedure.
+- [认知迁移编辑修订子模块](./ASSET-CARDS.md#asset-hr-0a5e4005a933ea19) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`；English: Cognitive-Migration Editorial Revision Module
 - [IGNITION-121Q6C 执行结果](./ASSET-CARDS.md#asset-hr-1437a5c9924f3c9e) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`；执行者：QClaw（Hy3） 状态：121Q6C 完成（Step 000–007）
 - [Agent 碰撞阶段收口审计（2026-07-08 23:55）](./ASSET-CARDS.md#asset-hr-252ed61cfaf40f35) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`；对当前 Get 笔记碰撞准备阶段做封版整理，固化工作流、得到大脑操作指南、碰撞模板，并确认本阶段未越界（未改表、未新增、仓库干净）。
 - [121Q10 Emergent Current State and License Text Finalization](./ASSET-CARDS.md#asset-hr-4021615f6416219a) — `CANDIDATE_OR_PENDING_SOURCE`；Status: READYFORFINALRELEASEDECISION pending final remote CI observation on this head.
@@ -103,19 +104,18 @@
 - [map-agent-delivery-operations](./ASSET-CARDS.md#asset-hr-8c7e1c2721f6e7fd) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`；Observer: maintainer coordinating AI execution, validation, PR review, and command-bus receipt
 - [12 元协议规范性审核（外部治理记录）](./ASSET-CARDS.md#asset-hr-8d592a920b9edd0e) — `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`；原定义： 选择使系统延续时间最大（或延续概率最高）的行动。
 - [点火项目整体认知初始化 — Agent 认知报告](./ASSET-CARDS.md#asset-hr-8faeed857e0f9416) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`；生成时间：2026-07-08 21:25 (GMT+8) 任务来源：用户发来的「点火项目整体认知初始化」指令（.md 附件） 执行方式：只读阅读 GitHub 主仓库（README / docs / outputs/audit / 统一函数总表 / 统一案例总表 / data / schemas
+- [方法来源记录：认知迁移编辑修订子模块](./ASSET-CARDS.md#asset-hr-9094b2cb638397a8) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`；English: Source & Provenance Note — Cognitive-Migration Editorial Revision Module
 - [121C01: First Batch GLM-5.2 Max Semantic Review Report](./ASSET-CARDS.md#asset-hr-933d6ba7d34f8014) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`；Task: IGNITION-20260709-121C01 Reviewer: qclaw/pool-glm-5.2 (reasoning: high) Note: Task specified max reasoning; subagent environment supports high o
 - [Attention And Attractor Control Plane](./ASSET-CARDS.md#asset-hr-9be719cb6ef0fd88) — `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`；Status: 121Q13CONTROLOVERLAY
 - [两张表条目模板固化审计](./ASSET-CARDS.md#asset-hr-9bf38326d66a104a) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`；该报告已完成单条条目结构对比（旧函数 9 条 + D595-D599 + Ψ₀；旧案例 4 条 + C-0807-C-0809），提出统一函数 14 字段草案、统一案例 13 字段草案、得到大脑/ Agent-Codex 分工与迁移建议。
-- [AI entrypoint audit](./ASSET-CARDS.md#asset-hr-aa71cb6d79bb27ed) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`；AI-START-HERE.md, AI-HANDOFF.md, docs/AI-USAGE.md and docs/AI-PROMPT-TEMPLATES.md point agents to the same machine-readable authority and validation c
-- [得到大脑输出索引](./ASSET-CARDS.md#asset-hr-c0254716ff47346d) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`；本目录用于收录得到大脑在点火项目推进中的结构性输出。
-- 其余 6 张重点卡片可在[资产卡总表](./ASSET-CARDS.md)搜索主题标记 `COGNITION`。
+- 其余 10 张重点卡片可在[资产卡总表](./ASSET-CARDS.md)搜索主题标记 `COGNITION`。
 
 <a id="subject-architecture-governance"></a>
 ## 架构、治理与自我纠错
 
 **引导问题：** 知识资产怎样被登记、裁决、修订、隔离并保持机器与人类表面一致？
 
-当前检索覆盖 18578 项，重点卡片 185 项。 [打开本主题完整索引](./indexes/architecture_governance.md)
+当前检索覆盖 18662 项，重点卡片 185 项。 [打开本主题完整索引](./indexes/architecture_governance.md)
 
 - [哥德尔不完备性、霍奇猜想类比、不同能标、不同函数族，以及点火当前模型的失败，都不是大一统不可能的桥接定理。](./ASSET-CARDS.md#asset-nfc-00b4be17fb8dc706) — `ACCEPTED_AS_DEFINITION`；哥德尔不完备性、霍奇猜想类比、不同能标、不同函数族，以及点火当前模型的失败，都不是大一统不可能的桥接定理。
 - [历史笔记把 D260 与大一统不可能命题相连；formal main 中 D260 实际为 `p/(1-p)` 偏差敏感度评分。物理断言和评分函数分别处理。](./ASSET-CARDS.md#asset-nfc-0b7defaef4efab24) — `ACCEPTED_AS_DEFINITION`；- 历史笔记把 D260 与大一统不可能命题相连；formal main 中 D260 实际为 `p/(1-p)` 偏差敏感度评分。物理断言和评分函数分别处理。
@@ -142,7 +142,7 @@
 
 **引导问题：** 研究结果如何形成可阅读作品，同时不越过来源、证据和许可边界？
 
-当前检索覆盖 1164 项，重点卡片 47 项。 [打开本主题完整索引](./indexes/writing_publication.md)
+当前检索覆盖 1262 项，重点卡片 52 项。 [打开本主题完整索引](./indexes/writing_publication.md)
 
 - [任务 104（PR #160，已合并）建立编辑文章层与语料关系分析；任务 105（PR #161，已合并，精确 head `9d7d5ab512ffe3fd109a60ebd3d9d246b3a42d19`，普通合并 `9b5b4b9bfb](./ASSET-CARDS.md#asset-nfc-19c3c3352a78b2aa) — `RETAINED_AS_STRUCTURAL_METAPHOR`；任务 104（PR #160，已合并）建立编辑文章层与语料关系分析；任务 105（PR #161，已合并，精确 head `9d7d5ab512ffe3fd109a60ebd3d9d246b3a42d19`，普通合并 `9b5b4b9bfb243fe4cc52f7b163a9613ee6628321
 - [任务 106（本迭代）建立了合并后真相传播基础设施：规范化 merged-iteration ledger、9 维 impact 引擎、确定性 current-truth 投影、fail-closed 验证器、编辑文章 stale/revi](./ASSET-CARDS.md#asset-nfc-1ead70b9f991a2b8) — `RETAINED_AS_STRUCTURAL_METAPHOR`；- 任务 106（本迭代）建立了合并后真相传播基础设施：规范化 merged-iteration ledger、9 维 impact 引擎、确定性 current-truth 投影、fail-closed 验证器、编辑文章 stale/review 生命周期与系统图 impact 审计，使后续合并的
@@ -152,6 +152,7 @@
 - [任务 114 已将 L6 `之元写作法` `0.5.0` 收口为当前能力；`0.4.0`、`0.3.0` 保留为历史已合并版本。交接时必须区分外部输入与点火增量输出，后者保存 canonical 路径／ID、生成任务、版本、claim ce](./ASSET-CARDS.md#asset-nfc-7cc4e23e0d003f8f) — `RETAINED_AS_STRUCTURAL_METAPHOR`；任务 114 已将 L6 `之元写作法` `0.5.0` 收口为当前能力；`0.4.0`、`0.3.0` 保留为历史已合并版本。交接时必须区分外部输入与点火增量输出，后者保存 canonical 路径／ID、生成任务、版本、claim ceiling、gap／residue 和原始来源回链；复用分析
 - [当前物理边界不变：点火现有门控乘积模型没有统一四种基本相互作用；物理统一问题保持开放。当前模型失败既不证明普遍不可能，也不证明其他路线成功。](./ASSET-CARDS.md#asset-nfc-82ebe95def5bfab1) — `ACCEPTED_AS_DEFINITION`；当前物理边界不变：点火现有门控乘积模型没有统一四种基本相互作用；物理统一问题保持开放。当前模型失败既不证明普遍不可能，也不证明其他路线成功。
 - [任务 114 项目级语言—思维风险审计](./ASSET-CARDS.md#asset-hr-094a86ef6aa2a143) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`；本轮在结果性审计之前冻结了 14 个高风险项目表面，见 data/language-thought/project-audit-population.json。范围包括根入口、权威架构、当前状态、AI 冷启动、系统地图、之元写作法、两篇现行作品、人工／机器书架以及只能由生成器更新的阅读与知识表面。冻
+- [认知迁移编辑修订子模块](./ASSET-CARDS.md#asset-hr-0a5e4005a933ea19) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`；English: Cognitive-Migration Editorial Revision Module
 - [map-epistemic-architecture](./ASSET-CARDS.md#asset-hr-1c89ea0a4c2a0aa1) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`；Observer: maintainer and reviewer deciding how claims can move toward publication
 - [Task 98 claim-governance implementation record](./ASSET-CARDS.md#asset-hr-1fc7367092e0045c) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`；The Foundation distinguished formal types and nine statuses, but it had no authoritative ten-class function-identity overlay, no independent M/E axes,
 - [当一支军队开始相信自己的背影](./ASSET-CARDS.md#asset-hr-25ccad6cef81cbea) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`；他可能只是看见前方的旗变了方向，几匹马逆着队列奔来。也许那是传令，也许主将正在调动一支小队，也许真正的战斗还远没有分出胜负。但他站得太低，看不见全局；箭矢和马蹄也不会给他时间核实。他后退一步，想为自己留下半息余地。
@@ -161,15 +162,14 @@
 - [121Q31｜完整可点击系统图与双来源写作素材池审计](./ASSET-CARDS.md#asset-hr-3d02f20fb6692a0c) — `CANDIDATE_OR_PENDING_SOURCE`；Status: READYFORGPTVERIFICATIONCANDIDATEONLY
 - [跨域 smoke test — 历史学碰撞报告](./ASSET-CARDS.md#asset-hr-3d6271e0ba81267e) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`；inputs/collisions/20260708-cross-domain-smoke-test/history.md（修志数字化积分）
 - [External Input Non-Republication Principle](./ASSET-CARDS.md#asset-hr-43bf10109af2485e) — `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`；本原则适用于所有从项目外部获得的材料，包括但不限于：
-- [121Q31T｜交互系统总图与双来源写作素材池合并收口审计](./ASSET-CARDS.md#asset-hr-4419fea9529c829c) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`；PR 60 的 accepted HEAD b01429144f78305ead32455873e79a11661f04e1 经 review 4718884255 接受，并以 merge commit ed30d3c30966ce28b54652f2ece27bc1bde02658 合入 main
-- 其余 29 张重点卡片可在[资产卡总表](./ASSET-CARDS.md)搜索主题标记 `WRITING_PUBLICATION`。
+- 其余 34 张重点卡片可在[资产卡总表](./ASSET-CARDS.md)搜索主题标记 `WRITING_PUBLICATION`。
 
 <a id="subject-operations-evidence"></a>
 ## 迭代、验证与证据工程
 
 **引导问题：** 候选、验证、合并和 Current 怎样分离并留下可复算证据？
 
-当前检索覆盖 13250 项，重点卡片 221 项。 [打开本主题完整索引](./indexes/operations_evidence.md)
+当前检索覆盖 13289 项，重点卡片 225 项。 [打开本主题完整索引](./indexes/operations_evidence.md)
 
 - [门控面合并统一函数](./ASSET-CARDS.md#asset-d183) — `REWRITE_AND_RETEST`；Identity: RELATION_OR_CONSTRAINT. Definition scope: Positive scale ratios excluding one, plus an independently defined merge map → relation over sourc
 - [相对论门槛函数](./ASSET-CARDS.md#asset-d185) — `KEEP_AS_STRUCTURAL_METAPHOR`；Identity: STRUCTURAL_METAPHOR. Definition scope: UNSPECIFIED_IN_SOURCE → scalar-like score with unspecified units.
@@ -189,4 +189,4 @@
 - [This iteration does not deep-review all 2,033 discovered assets, prove the census exhaustive outside tracked textual Git](./ASSET-CARDS.md#asset-nfc-a6b80fca608c8c8f) — `HISTORICAL_ONLY`；This iteration does not deep-review all 2,033 discovered assets, prove the census exhaustive outside tracked textual Git sources, validate a physical
 - [任务边界：1111 中对应的 IGNITION command、progress 与 result](./ASSET-CARDS.md#asset-nfc-c15234f1546c00ea) — `RETAINED_AS_STRUCTURAL_METAPHOR`；- 任务边界：1111 中对应的 IGNITION command、progress 与 result
 - [Meaningful knowledge changes must regenerate the task-102 What's New, subject map, asset cards, reading layers, aliases/](./ASSET-CARDS.md#asset-nfc-c349fbdc470b50ab) — `RETAINED_AS_STRUCTURAL_METAPHOR`；- Meaningful knowledge changes must regenerate the task-102 What's New, subject map, asset cards, reading layers, aliases/supersession, full search an
-- 其余 203 张重点卡片可在[资产卡总表](./ASSET-CARDS.md)搜索主题标记 `OPERATIONS_EVIDENCE`。
+- 其余 207 张重点卡片可在[资产卡总表](./ASSET-CARDS.md)搜索主题标记 `OPERATIONS_EVIDENCE`。

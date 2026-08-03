@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [/Users/zhiyuan/我的笔记/统一函数总表/0285-D249-自我模型相变实验方案.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-31879983f18f091b / /Users/zhiyuan/我的笔记/统一函数总表/0285-D249-自我模型相变实验方案.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D249；被引用：—
+- [/Users/zhiyuan/我的笔记/统一函数总表/0286-D250-自我模型相变的验证标准.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：NFC-e760fd51097655dd / /Users/zhiyuan/我的笔记/统一函数总表/0286-D250-自我模型相变的验证标准.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D250；被引用：—
+- [/Users/zhiyuan/我的笔记/统一函数总表/0287-D251-维度-容斥稳定性函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-dbfa8e1aa9b3c4e8 / /Users/zhiyuan/我的笔记/统一函数总表/0287-D251-维度-容斥稳定性函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D251；被引用：—
 - [/Users/zhiyuan/我的笔记/统一函数总表/0288-D252-社会学容斥加速函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-3dd654e6f0e62abc / /Users/zhiyuan/我的笔记/统一函数总表/0288-D252-社会学容斥加速函数.md
@@ -2487,20 +2502,5 @@
 - [\[C-0753｜博士期间换十个选题\](../../../统一案例总表/0748-C-0753-博士期间换十个选题.md)（原笔记编号：C576-1）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0586-D576-%E8%AE%A4%E7%9F%A5%E5%B9%B4%E9%BE%84%E6%8F%90%E5%8D%87.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-bbc0c73dd733971d / \[C-0753｜博士期间换十个选题\](../../../统一案例总表/0748-C-0753-博士期间换十个选题.md)（原笔记编号：C576-1）
-  - 来源：`统一函数总表/0586-D576-认知年龄提升.md`
-  - 依赖：—；被引用：—
-- [\[C-0754｜双周访谈打破信息茧房\](../../../统一案例总表/0749-C-0754-双周访谈打破信息茧房.md)（原笔记编号：C576-2）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0586-D576-%E8%AE%A4%E7%9F%A5%E5%B9%B4%E9%BE%84%E6%8F%90%E5%8D%87.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-4d9272a0b63bf20d / \[C-0754｜双周访谈打破信息茧房\](../../../统一案例总表/0749-C-0754-双周访谈打破信息茧房.md)（原笔记编号：C576-2）
-  - 来源：`统一函数总表/0586-D576-认知年龄提升.md`
-  - 依赖：—；被引用：—
-- [\[C-0755｜快闪阅读反算法\](../../../统一案例总表/0750-C-0755-快闪阅读反算法.md)（原笔记编号：C576-3）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0586-D576-%E8%AE%A4%E7%9F%A5%E5%B9%B4%E9%BE%84%E6%8F%90%E5%8D%87.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-fadddd467d7f47c5 / \[C-0755｜快闪阅读反算法\](../../../统一案例总表/0750-C-0755-快闪阅读反算法.md)（原笔记编号：C576-3）
-  - 来源：`统一函数总表/0586-D576-认知年龄提升.md`
-  - 依赖：—；被引用：—
-- [\[C-0756｜青蒿素从《肘后备急方》提炼\](../../../统一案例总表/0751-C-0756-青蒿素从《肘后备急方》提炼.md)（原笔记编号：C576-4）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0586-D576-%E8%AE%A4%E7%9F%A5%E5%B9%B4%E9%BE%84%E6%8F%90%E5%8D%87.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-e2b99ebbd4024ecf / \[C-0756｜青蒿素从《肘后备急方》提炼\](../../../统一案例总表/0751-C-0756-青蒿素从《肘后备急方》提炼.md)（原笔记编号：C576-4）
   - 来源：`统一函数总表/0586-D576-认知年龄提升.md`
   - 依赖：—；被引用：—

@@ -4,6 +4,26 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Within the source-defined scope, 空间耦合函数 is adjudicated as RELATION: Ω₁ = f(Ω₂, Ω₃, ..., Ωₙ). This is a model-internal co](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D479 / Within the source-defined scope, 空间耦合函数 is adjudicated as RELATION: Ω₁ = f(Ω₂, Ω₃, ..., Ωₙ). This is a model-internal co
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 空间锁死维度计数函数 is adjudicated as RELATION: n_lock(Ω) = Σᵢ step(C_exit(Ωᵢ) > θ_C(Ωᵢ)). This](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D495 / Within the source-defined scope, 空间锁死维度计数函数 is adjudicated as RELATION: n_lock(Ω) = Σᵢ step(C_exit(Ωᵢ) > θ_C(Ωᵢ)). This
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 空间集中性函数 is adjudicated as RELATION: I_concentration(Ω) = (1 + σ(Ω))/2. This is a model-](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D500 / Within the source-defined scope, 空间集中性函数 is adjudicated as RELATION: I_concentration(Ω) = (1 + σ(Ω))/2. This is a model-
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 符号-语义带宽 is adjudicated as RELATION: 符号-语义带宽，B_total = B_symbolic + B_semantic。. This is](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D98 / Within the source-defined scope, 符号-语义带宽 is adjudicated as RELATION: 符号-语义带宽，B_total = B_symbolic + B_semantic。. This is
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
 - [Within the source-defined scope, 素数对差分函数 is adjudicated as RELATION: ∀k∈ℕ⁺，x>e^(1.514k)时熵跃迁，∃∞{p, p+2k}∈ℙ². This is a mo](../../../data/foundation/adjudications/core-kernel.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
   - 可搜索名称：CLAIM-D531 / Within the source-defined scope, 素数对差分函数 is adjudicated as RELATION: ∀k∈ℕ⁺，x>e^(1.514k)时熵跃迁，∃∞{p, p+2k}∈ℙ². This is a mo
@@ -2484,23 +2504,3 @@
   - 可搜索名称：NFC-e1e00c70364148df / \| \[D57\]( ) \| \[解读偏置函数（核心疑问→错误解读的数学结构）\]( ) \| F_{
   - 来源：`统一函数总表/INDEX.md`
   - 依赖：D57；被引用：—
-- [\| \[D588\]( ) \| \[经典问题差分函数\]( ) \| F_problem(d)=Mismatch(Model_d, Phenomenon_](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-2b26b2b82685a093 / \| \[D588\]( ) \| \[经典问题差分函数\]( ) \| F_problem(d)=Mismatch(Model_d, Phenomenon_
-  - 来源：`统一函数总表/INDEX.md`
-  - 依赖：D588；被引用：—
-- [\| \[D589\]( ) \| \[跨学科同构投影函数\]( ) \| F_iso_map(A,B)=I_iso(A,B) × L_meta × Ev](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-0181781503b809e2 / \| \[D589\]( ) \| \[跨学科同构投影函数\]( ) \| F_iso_map(A,B)=I_iso(A,B) × L_meta × Ev
-  - 来源：`统一函数总表/INDEX.md`
-  - 依赖：D589；被引用：—
-- [\| \[D590\]( ) \| \[证据制度守门函数\]( ) \| F_evidence_guard=SourceQuality × Replicabi](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-dfb16176bd0fc2bd / \| \[D590\]( ) \| \[证据制度守门函数\]( ) \| F_evidence_guard=SourceQuality × Replicabi
-  - 来源：`统一函数总表/INDEX.md`
-  - 依赖：D590；被引用：—
-- [\| \[D591\]( ) \| \[尺度桥接函数\]( ) \| F_scale_bridge=MicroMechanism × MesoStructure ×](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-42205efe306cf26e / \| \[D591\]( ) \| \[尺度桥接函数\]( ) \| F_scale_bridge=MicroMechanism × MesoStructure ×
-  - 来源：`统一函数总表/INDEX.md`
-  - 依赖：D591；被引用：—

@@ -239,6 +239,28 @@ PARTIALEXTERNALEVIDENCELAYERWITHEXPLICITBLOCKERS 边界：This is a conservative
 
 [docs/foundation/migration.md](../docs/foundation/migration.md)
 
+<a id="reading-hr-0a5e4005a933ea19"></a>
+## 认知迁移编辑修订子模块
+
+**状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · **主题：** `COGNITION`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
+
+### 1 分钟
+
+English: Cognitive-Migration Editorial Revision Module 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+
+### 5 分钟
+
+- 来源要点（导航摘录，不得视为当前断言）：English: Cognitive-Migration Editorial Revision Module
+- 来源要点（导航摘录，不得视为当前断言）：候选版本：0.6.0-candidate 状态：DRAFTPRAWAITINGGPTOWNERREVIEW 操作位置：L6 公共表达／修订（位于生成纪律之后） 来源边界：见方法来源记录
+- 来源要点（导航摘录，不得视为当前断言）：本子模块不是之元写作法 0.5.0 的生成内核，而是生成之后的一次编辑修订动作。它不重写历史版本、不新增层、不提高 L0—L5 claim，也不声称已被接受进入之元写作法。
+- 来源要点（导航摘录，不得视为当前断言）：之元写作法描述作品的生成纪律：从起始承载点出发，受下一层牵引，因不可容纳的残余而跃迁，借隐形连续性突然发生，回照增义，潜题生长，信息增益停止。这是一篇作品如何获得其内部运动。
+- 来源要点（导航摘录，不得视为当前断言）：本子模块处理的是另一个问题：草稿已经生成、事实边界与概念运动已稳定之后，怎样重组这次运动在公共读者那里的可见方式，使读者自己经历认知迁移，而不是由作者逐句机械宣布每个转折。
+- 来源要点（导航摘录，不得视为当前断言）：编辑修订阶段重组草稿的认知迁移，使读者无需作者每步提示也能发生迁移。
+
+### 完整阅读
+
+[docs/publication/zhiyuan-writing-cognitive-migration-editorial-revision.md](../docs/publication/zhiyuan-writing-cognitive-migration-editorial-revision.md)
+
 <a id="reading-hr-0b2df1f7b457cbe6"></a>
 ## 121Q2 Night Progress Report
 
@@ -2920,6 +2942,28 @@ Prioritize MF predicates, Y1 operational semantics, protocol typing, theorem can
 
 [docs/foundation/historical-function-census.md](../docs/foundation/historical-function-census.md)
 
+<a id="reading-hr-75430bb574c9c15b"></a>
+## 编辑修订 before/after 范例
+
+**状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · **主题：** `WRITING_PUBLICATION`
+
+### 1 分钟
+
+English: Editorial-Revision Before/After Micro-Cases 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+
+### 5 分钟
+
+- 来源要点（导航摘录，不得视为当前断言）：主题：编辑修订 before/after 范例
+- 来源要点（导航摘录，不得视为当前断言）：English: Editorial-Revision Before/After Micro-Cases
+- 来源要点（导航摘录，不得视为当前断言）：状态：DRAFTPRAWAITINGGPTOWNERREVIEW 关联候选版本：0.6.0-candidate 说明：本文件仅以有边界的短句引用现行作品 docs/publication/works/when-an-emperor-manufactures-heaven.md（宋徽宗文），不修改该作品，仅作方法机制演示。
+- 来源要点（导航摘录，不得视为当前断言）：下列六个微案例对应认知迁移编辑修订子模块的审查要求：至少四类“外露脚手架 → 结构认知迁移”转换，至少一例保留精确对比句，至少一例驳回夸大金句。
+- 来源要点（导航摘录，不得视为当前断言）：主题：案例 1：公式化直接对比 → 递归追问
+- 来源要点（导航摘录，不得视为当前断言）：祥瑞不是天上掉下来的，而是宫廷制造出来的。
+
+### 完整阅读
+
+[docs/publication/zhiyuan-writing-cognitive-migration-editorial-revision-examples.md](../docs/publication/zhiyuan-writing-cognitive-migration-editorial-revision-examples.md)
+
 <a id="reading-hr-75acdd1f73f32af7"></a>
 ## Full migration coverage
 
@@ -3735,6 +3779,28 @@ Q25B correctly separated completion states but incorrectly required projectsynch
 
 [outputs/audit/agent-project-understanding-20260708.md](../outputs/audit/agent-project-understanding-20260708.md)
 
+<a id="reading-hr-9094b2cb638397a8"></a>
+## 方法来源记录：认知迁移编辑修订子模块
+
+**状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · **主题：** `COGNITION`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
+
+### 1 分钟
+
+English: Source & Provenance Note — Cognitive-Migration Editorial Revision Module 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+
+### 5 分钟
+
+- 来源要点（导航摘录，不得视为当前断言）：主题：方法来源记录：认知迁移编辑修订子模块
+- 来源要点（导航摘录，不得视为当前断言）：English: Source & Provenance Note — Cognitive-Migration Editorial Revision Module
+- 来源要点（导航摘录，不得视为当前断言）：状态：DRAFTPRAWAITINGGPTOWNERREVIEW 关联候选版本：0.6.0-candidate
+- 来源要点（导航摘录，不得视为当前断言）：本文是认知迁移编辑修订子模块的来源与版权边界记录。原始笔记不进入正式仓库，此处只保留可审计的来源指纹、经过实质转化的方法机制，以及分析所必需的最小引用。
+- 来源要点（导航摘录，不得视为当前断言）：上传标题：之元写作法·得到体改写操作手册 v0.1 2026年8月3日13:40
+- 来源要点（导航摘录，不得视为当前断言）：SHA-256：e1fa1c38e1403035f69d8384d7e4981fa91f008bb6bb0643e75a769c86a1544e
+
+### 完整阅读
+
+[docs/publication/method-sources/cognitive-migration-editorial-revision-source.md](../docs/publication/method-sources/cognitive-migration-editorial-revision-source.md)
+
 <a id="reading-hr-91f57f34641602bd"></a>
 ## Task 98 remote truth and gap lock
 
@@ -4389,9 +4455,9 @@ English: Zhiyuan Writing Method 边界：This is a conservative navigation summa
 - 来源要点（导航摘录，不得视为当前断言）：English: Zhiyuan Writing Method
 - 来源要点（导航摘录，不得视为当前断言）：Version: 0.5.0 current; 0.4.0 and 0.3.0 remain historical merged versions.
 - 来源要点（导航摘录，不得视为当前断言）：Status: CURRENTMERGEDL6CAPABILITY
+- 来源要点（导航摘录，不得视为当前断言）：候选增补（Draft PR，尚未合并接受）：分支 workbuddy/zhiyuan-writing-cognitive-migration-editorial-revision-r1-20260803，状态 DRAFTPRAWAITINGGPTOWNERREVIEW。新增 L6 编辑修订子模块 cognitive-migration editorial revision，候选版本 0.6.0-candidate；不改写 0.5.0 历史版本，不新增层，不提高 L0—L5 claim。详见认知迁移编辑修订子模块。
 - 来源要点（导航摘录，不得视为当前断言）：Operational location: L6 interpretation / application / publication. Generative provenance: maintainer-declared shared cognitive provenance with 点火 as a whole. Version 0.5.0 makes the method a target-language publication consumer of the project-wide Language–Thought Logic Plane; it does not add L7 or raise any L0-L5 claim.
 - 来源要点（导航摘录，不得视为当前断言）：本方法以“之元”命名，因为它不是从通用写作教材拼接而来，而是从维护者之元的作品、心智运动、反馈和失败反例中蒸馏、提炼并总结出的个人写作方法。名称标记其真实来源和心智风格谱系。
-- 来源要点（导航摘录，不得视为当前断言）：“之元写作法”是方法名称；“心智层级跃迁”是其自 0.3.0 起的核心生成运动之一。方法具体如何实现，由起始承载点、前视写作、不可容纳残余、心智引力中心、概念递归重定义、突然跃迁、隐形连续性、回照增义、潜题生长与反向显影、低层保存、信息增益停止，以及公共表达与反馈返回点火的双向契约共同定义。
 
 ### 完整阅读
 
@@ -5757,6 +5823,28 @@ Status: READYFORGPTVERIFICATIONCANDIDATEONLY 边界：This is a conservative nav
 
 [outputs/getbrain/v0.2-function-dependency-graph-20260706.md](../outputs/getbrain/v0.2-function-dependency-graph-20260706.md)
 
+<a id="reading-hr-deb3e834ad440e87"></a>
+## 认知迁移编辑修订子模块 — 审查笔记
+
+**状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · **主题：** `COGNITION`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
+
+### 1 分钟
+
+English: Review Note — Cognitive-Migration Editorial Revision Module 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+
+### 5 分钟
+
+- 来源要点（导航摘录，不得视为当前断言）：主题：认知迁移编辑修订子模块 — 审查笔记
+- 来源要点（导航摘录，不得视为当前断言）：English: Review Note — Cognitive-Migration Editorial Revision Module
+- 来源要点（导航摘录，不得视为当前断言）：状态：DRAFTPRAWAITINGGPTOWNERREVIEW 候选版本：0.6.0-candidate 审查者：WorkBuddy（执行 Agent） 关联文档：模块文档、来源记录、before/after 范例、规格增补
+- 来源要点（导航摘录，不得视为当前断言）：本笔记对应 TASK §8 的必答审查问题，并给出审查结论与待 owner／GPT 决议事项。本子模块未经接受进入之元写作法；其状态为 Draft PR 待审。
+- 来源要点（导航摘录，不得视为当前断言）：1. 候选是否真的新增了一项编辑能力，还是只是重述既有的语言—思维与写作法章节？
+- 来源要点（导航摘录，不得视为当前断言）：是真实新增。既有 0.5.0 描述生成纪律（心智层级跃迁如何发生）；本子模块处在生成之后，处理“草稿已稳定后，如何重组认知迁移的公共可见性”。它引入生成阶段没有的专用机制：草稿诊断、认知迁移不变量冻结、去公式化对比审计、开头结尾公共阅读契约、反套路审查矩阵。这些在 0.5.0 中没有对应整段，不是换名重述。
+
+### 完整阅读
+
+[reports/publication/zhiyuan-writing-cognitive-migration-editorial-revision-review.md](../reports/publication/zhiyuan-writing-cognitive-migration-editorial-revision-review.md)
+
 <a id="reading-hr-e14552c4c0658b5a"></a>
 ## 083 Escalation Routing Report
 
@@ -5800,6 +5888,28 @@ ARCHITECTURESTRUCTUREFROZENCLAIMTRUTHPROVISIONAL 边界：This is a conservative
 ### 完整阅读
 
 [reports/foundation-architecture/085-architecture-structure-freeze.md](../reports/foundation-architecture/085-architecture-structure-freeze.md)
+
+<a id="reading-hr-e2be1a0c85b07db2"></a>
+## PR 189 Independent Method Review and CI Repair — Line B (Qwen 3.8 Max campaign)
+
+**状态：** `CANDIDATE_OR_PENDING_SOURCE` · **主题：** `COGNITION`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
+
+### 1 分钟
+
+Status: STACKED DRAFT CANDIDATE targeting workbuddy/zhiyuan-writing-cognitive-migration-editorial-revision-r1-20260803. DO NOT MERGE either PR. Reviewer: independent campaign executor (not the PR author agent). 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+
+### 5 分钟
+
+- 来源要点（导航摘录，不得视为当前断言）：主题：PR #189 Independent Method Review and CI Repair — Line B (Qwen 3.8 Max campaign)
+- 来源要点（导航摘录，不得视为当前断言）：Status: STACKED DRAFT CANDIDATE targeting workbuddy/zhiyuan-writing-cognitive-migration-editorial-revision-r1-20260803. DO NOT MERGE either PR. Reviewer: independent campaign executor (not the PR author agent).
+- 来源要点（导航摘录，不得视为当前断言）：PR identity at review: #189, head 046570c6b69c3817b53167bebf8cf09cbf75e6d0, base main, OPEN/DRAFT.
+- 来源要点（导航摘录，不得视为当前断言）：主题：Part 1 — Independent method review (findings per acceptance question)
+- 来源要点（导航摘录，不得视为当前断言）：Q1. Real post-generation editorial capability, not a rename of the source note? Finding: PASS. The module operates strictly after generation ("生成之后的一次编辑修订动作"), introduces mechanisms absent from 0.5.0 (draft diagnosis, cognitive-migration invariant freeze, de-formulaic contrast audit, opening/ending public reading contract, anti-cliché review matrix), and exp…
+- 来源要点（导航摘录，不得视为当前断言）：Q2. Facts, provenance, counterarguments, harmed perspectives and claim ceilings preserved during compression? Finding: PASS. Mechanism B lists claim boundary and low-level reality (具体人、事件、差异与受损／沉默主体) as frozen invariants; mechanism D forbids deleting counterarguments or harmed subjects for fluency; mechanism H separates hard fact gates from optional stylisti…
+
+### 完整阅读
+
+[reports/publication/pr189-independent-review-and-ci-repair-r1-20260803.md](../reports/publication/pr189-independent-review-and-ci-repair-r1-20260803.md)
 
 <a id="reading-hr-e31b1dff732ad215"></a>
 ## 120 — Function OS Architecture Candidate Report

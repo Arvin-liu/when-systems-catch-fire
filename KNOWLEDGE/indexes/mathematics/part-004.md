@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [\[C-0754｜双周访谈打破信息茧房\](../../../统一案例总表/0749-C-0754-双周访谈打破信息茧房.md)（原笔记编号：C576-2）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0586-D576-%E8%AE%A4%E7%9F%A5%E5%B9%B4%E9%BE%84%E6%8F%90%E5%8D%87.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-4d9272a0b63bf20d / \[C-0754｜双周访谈打破信息茧房\](../../../统一案例总表/0749-C-0754-双周访谈打破信息茧房.md)（原笔记编号：C576-2）
+  - 来源：`统一函数总表/0586-D576-认知年龄提升.md`
+  - 依赖：—；被引用：—
+- [\[C-0755｜快闪阅读反算法\](../../../统一案例总表/0750-C-0755-快闪阅读反算法.md)（原笔记编号：C576-3）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0586-D576-%E8%AE%A4%E7%9F%A5%E5%B9%B4%E9%BE%84%E6%8F%90%E5%8D%87.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-fadddd467d7f47c5 / \[C-0755｜快闪阅读反算法\](../../../统一案例总表/0750-C-0755-快闪阅读反算法.md)（原笔记编号：C576-3）
+  - 来源：`统一函数总表/0586-D576-认知年龄提升.md`
+  - 依赖：—；被引用：—
+- [\[C-0756｜青蒿素从《肘后备急方》提炼\](../../../统一案例总表/0751-C-0756-青蒿素从《肘后备急方》提炼.md)（原笔记编号：C576-4）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0586-D576-%E8%AE%A4%E7%9F%A5%E5%B9%B4%E9%BE%84%E6%8F%90%E5%8D%87.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-e2b99ebbd4024ecf / \[C-0756｜青蒿素从《肘后备急方》提炼\](../../../统一案例总表/0751-C-0756-青蒿素从《肘后备急方》提炼.md)（原笔记编号：C576-4）
+  - 来源：`统一函数总表/0586-D576-认知年龄提升.md`
+  - 依赖：—；被引用：—
 - [\[C-0757｜《写作是门手艺》段落控制≤10行\](../../../统一案例总表/0752-C-0757-《写作是门手艺》段落控制≤10行.md)（原笔记编号：C577-1）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0587-D577-%E8%A7%82%E7%82%B9%E7%AB%9E%E4%BA%89.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-9af23d3c49158e99 / \[C-0757｜《写作是门手艺》段落控制≤10行\](../../../统一案例总表/0752-C-0757-《写作是门手艺》段落控制≤10行.md)（原笔记编号：C577-1）
@@ -2488,19 +2503,4 @@
   - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
   - 可搜索名称：Blockers / blockers-20260712
   - 来源：`reports/math-foundation/blockers-20260712.md`
-  - 依赖：—；被引用：—
-- [blocker、未解决证明义务、commit 和 Draft PR。](../../../docs/VERSIONING.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-94e5fcd10761eaf4 / blocker、未解决证明义务、commit 和 Draft PR。
-  - 来源：`docs/VERSIONING.md`
-  - 依赖：—；被引用：—
-- [Both artifacts are valid, but their domains differ from one another and both are narrower than the source's domain-unspe](../../../reports/foundation-architecture/T2-proof-equivalence-audit-20260713.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-c5f84bed8ecf6bfc / Both artifacts are valid, but their domains differ from one another and both are narrower than the source's domain-unspe
-  - 来源：`reports/foundation-architecture/T2-proof-equivalence-audit-20260713.md`
-  - 依赖：T2；被引用：—
-- [Boundary negative example; not a technical quantum information proof.](../../../data/architecture/multiscale-causal-fabric/examples/quantum-entanglement-negative.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-439d5220b042dcfd / Boundary negative example; not a technical quantum information proof.
-  - 来源：`data/architecture/multiscale-causal-fabric/examples/quantum-entanglement-negative.json`
   - 依赖：—；被引用：—

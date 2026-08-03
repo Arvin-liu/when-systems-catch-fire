@@ -1953,6 +1953,26 @@
   - 可搜索名称：NFC-eea8d72880d790bb / after\["transition_law"\]\["transition_kernel"\] = \[\[0.6, 0.4\], \[0.2, 0.8\]\]
   - 来源：`tests/test_probabilistic_system_dynamics.py`
   - 依赖：—；被引用：—
+- [After（具体锚定，机制 E）**](../../../docs/publication/zhiyuan-writing-cognitive-migration-editorial-revision-examples.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-3e91c1724fb1db49 / After（具体锚定，机制 E）**
+  - 来源：`docs/publication/zhiyuan-writing-cognitive-migration-editorial-revision-examples.md`
+  - 依赖：—；被引用：—
+- [After（程度加深，机制 C）**](../../../docs/publication/zhiyuan-writing-cognitive-migration-editorial-revision-examples.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-a087d8c94f9e39f1 / After（程度加深，机制 C）**
+  - 来源：`docs/publication/zhiyuan-writing-cognitive-migration-editorial-revision-examples.md`
+  - 依赖：—；被引用：—
+- [After（视角切换，机制 C）**](../../../docs/publication/zhiyuan-writing-cognitive-migration-editorial-revision-examples.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-ebc32bdc703f5064 / After（视角切换，机制 C）**
+  - 来源：`docs/publication/zhiyuan-writing-cognitive-migration-editorial-revision-examples.md`
+  - 依赖：—；被引用：—
+- [After（递归追问，机制 C）**](../../../docs/publication/zhiyuan-writing-cognitive-migration-editorial-revision-examples.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-0e29d27bddc21e85 / After（递归追问，机制 C）**
+  - 来源：`docs/publication/zhiyuan-writing-cognitive-migration-editorial-revision-examples.md`
+  - 依赖：—；被引用：—
 - [Agent 会：拉取/索引你的 Get 笔记材料 → 做 Ψ₀ 判定 → 机制级边界比对 → 给出是否新增的建议 → 等你（或 GPT）审核](../../../docs/getbrain-book-collision-guide-20260708.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-ed0c050c7bef0da4 / Agent 会：拉取/索引你的 Get 笔记材料 → 做 Ψ₀ 判定 → 机制级边界比对 → 给出是否新增的建议 → 等你（或 GPT）审核
@@ -2477,24 +2497,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-61fc41dc694914cc / CausalState
   - 来源：`docs/architecture/multiscale-causal-fabric.md`
-  - 依赖：—；被引用：—
-- [cause := P(y\|x) - P(y)（legacy candidate；不能据此识别现实因果）](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-072d16dcca490e9f / cause := P(y\|x) - P(y)（legacy candidate；不能据此识别现实因果）
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [Central hypernetwork could be viewed as a registry of per-client artifacts; not versioned](../../../data/external-research/121-fulltext-resolver/121q1/acceptance/S120-011.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-b34c26f34e147bf8 / Central hypernetwork could be viewed as a registry of per-client artifacts; not versioned
-  - 来源：`data/external-research/121-fulltext-resolver/121q1/acceptance/S120-011.json`
-  - 依赖：—；被引用：—
-- [centrality/similarity/community/adjacency as truth;](../../../reports/architecture/121Q23-adaptive-relational-network-validation.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-81fac032e479c57f / centrality/similarity/community/adjacency as truth;
-  - 来源：`reports/architecture/121Q23-adaptive-relational-network-validation.md`
-  - 依赖：—；被引用：—
-- [Charter Gate 仍位于两平面之上，决定行动是否可做、可如何做。](../../../ARCHITECTURE.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-dee0808acfed8e53 / Charter Gate 仍位于两平面之上，决定行动是否可做、可如何做。
-  - 来源：`ARCHITECTURE.md`
   - 依赖：—；被引用：—

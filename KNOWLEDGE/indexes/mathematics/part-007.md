@@ -4,6 +4,26 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [If upstream objects D_{D21} exist, compose F_{D21}=N(⊕_{g∈D_{D21}} g); otherwise treat F_{D21} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0070-D21-%E5%AE%AA%E6%B3%95%E7%A1%AC%E5%BA%A6.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-9cf0d81de70853b0 / If upstream objects D_{D21} exist, compose F_{D21}=N(⊕_{g∈D_{D21}} g); otherwise treat F_{D21} as an axiom seed.
+  - 来源：`统一函数总表/0070-D21-宪法硬度.md`
+  - 依赖：D21；被引用：—
+- [If upstream objects D_{D220} exist, compose F_{D220}=N(⊕_{g∈D_{D220}} g); otherwise treat F_{D220} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0256-D220-%E5%AE%8C%E5%85%A8%E7%BB%9F%E4%B8%80%E4%B8%8D%E5%8F%AF%E8%83%BD%E5%AE%9A%E7%90%86.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-d84aae3c95fc8c38 / If upstream objects D_{D220} exist, compose F_{D220}=N(⊕_{g∈D_{D220}} g); otherwise treat F_{D220} as an axiom seed.
+  - 来源：`统一函数总表/0256-D220-完全统一不可能定理.md`
+  - 依赖：D220；被引用：—
+- [If upstream objects D_{D221} exist, compose F_{D221}=N(⊕_{g∈D_{D221}} g); otherwise treat F_{D221} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0257-D221-%E7%83%AD%E5%AF%82-%E5%AE%8C%E5%85%A8%E7%BB%9F%E4%B8%80%E5%90%8C%E6%9E%84%E5%AE%9A%E7%90%86.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-4287a245a92b49fb / If upstream objects D_{D221} exist, compose F_{D221}=N(⊕_{g∈D_{D221}} g); otherwise treat F_{D221} as an axiom seed.
+  - 来源：`统一函数总表/0257-D221-热寂-完全统一同构定理.md`
+  - 依赖：D221；被引用：—
+- [If upstream objects D_{D222} exist, compose F_{D222}=N(⊕_{g∈D_{D222}} g); otherwise treat F_{D222} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0258-D222-%E7%83%AD%E5%8A%9B%E5%AD%A6%E7%AC%AC%E4%BA%8C%E5%AE%9A%E5%BE%8B%E7%9A%84%CE%A6%E8%A1%A8%E8%BF%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-41930c6165b958e7 / If upstream objects D_{D222} exist, compose F_{D222}=N(⊕_{g∈D_{D222}} g); otherwise treat F_{D222} as an axiom seed.
+  - 来源：`统一函数总表/0258-D222-热力学第二定律的Φ表述.md`
+  - 依赖：D222；被引用：—
 - [If upstream objects D_{D223} exist, compose F_{D223}=N(⊕_{g∈D_{D223}} g); otherwise treat F_{D223} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0259-D223-%E7%89%A9%E7%90%86%E5%AD%98%E5%9C%A8%E7%9A%84%E6%97%B6%E9%97%B4%E7%AA%97%E5%8F%A3%E5%AE%9A%E7%90%86.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-cacdbaf9bdbd2223 / If upstream objects D_{D223} exist, compose F_{D223}=N(⊕_{g∈D_{D223}} g); otherwise treat F_{D223} as an axiom seed.
@@ -2484,23 +2504,3 @@
   - 可搜索名称：NFC-221614e2a7f6a0a1 / link: "统一函数总表/0592-D582-堆肥法.md"
   - 来源：`统一函数总表/0592-D582-堆肥法.md`
   - 依赖：D582；被引用：—
-- [link: "统一函数总表/0593-D583-认知肌肉锻炼.md"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0593-D583-%E8%AE%A4%E7%9F%A5%E8%82%8C%E8%82%89%E9%94%BB%E7%82%BC.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-9008845dcee229d2 / link: "统一函数总表/0593-D583-认知肌肉锻炼.md"
-  - 来源：`统一函数总表/0593-D583-认知肌肉锻炼.md`
-  - 依赖：D583；被引用：—
-- [link: "统一函数总表/0594-D584-电子节食.md"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0594-D584-%E7%94%B5%E5%AD%90%E8%8A%82%E9%A3%9F.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-38282cf1c63727e7 / link: "统一函数总表/0594-D584-电子节食.md"
-  - 来源：`统一函数总表/0594-D584-电子节食.md`
-  - 依赖：D584；被引用：—
-- [link: "统一函数总表/0595-D585-认知复杂度收敛.md"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0595-D585-%E8%AE%A4%E7%9F%A5%E5%A4%8D%E6%9D%82%E5%BA%A6%E6%94%B6%E6%95%9B.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-cf7ee85017cdb930 / link: "统一函数总表/0595-D585-认知复杂度收敛.md"
-  - 来源：`统一函数总表/0595-D585-认知复杂度收敛.md`
-  - 依赖：D585；被引用：—
-- [link: "统一函数总表/0596-D586-独特赛道选择.md"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0596-D586-%E7%8B%AC%E7%89%B9%E8%B5%9B%E9%81%93%E9%80%89%E6%8B%A9.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-b6273e4c0e0cc7b6 / link: "统一函数总表/0596-D586-独特赛道选择.md"
-  - 来源：`统一函数总表/0596-D586-独特赛道选择.md`
-  - 依赖：D586；被引用：—

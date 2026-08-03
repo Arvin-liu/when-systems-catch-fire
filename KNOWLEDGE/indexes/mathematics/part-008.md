@@ -4,6 +4,26 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [link: "统一函数总表/0593-D583-认知肌肉锻炼.md"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0593-D583-%E8%AE%A4%E7%9F%A5%E8%82%8C%E8%82%89%E9%94%BB%E7%82%BC.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-9008845dcee229d2 / link: "统一函数总表/0593-D583-认知肌肉锻炼.md"
+  - 来源：`统一函数总表/0593-D583-认知肌肉锻炼.md`
+  - 依赖：D583；被引用：—
+- [link: "统一函数总表/0594-D584-电子节食.md"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0594-D584-%E7%94%B5%E5%AD%90%E8%8A%82%E9%A3%9F.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-38282cf1c63727e7 / link: "统一函数总表/0594-D584-电子节食.md"
+  - 来源：`统一函数总表/0594-D584-电子节食.md`
+  - 依赖：D584；被引用：—
+- [link: "统一函数总表/0595-D585-认知复杂度收敛.md"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0595-D585-%E8%AE%A4%E7%9F%A5%E5%A4%8D%E6%9D%82%E5%BA%A6%E6%94%B6%E6%95%9B.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-cf7ee85017cdb930 / link: "统一函数总表/0595-D585-认知复杂度收敛.md"
+  - 来源：`统一函数总表/0595-D585-认知复杂度收敛.md`
+  - 依赖：D585；被引用：—
+- [link: "统一函数总表/0596-D586-独特赛道选择.md"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0596-D586-%E7%8B%AC%E7%89%B9%E8%B5%9B%E9%81%93%E9%80%89%E6%8B%A9.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-b6273e4c0e0cc7b6 / link: "统一函数总表/0596-D586-独特赛道选择.md"
+  - 来源：`统一函数总表/0596-D586-独特赛道选择.md`
+  - 依赖：D586；被引用：—
 - [link: "统一函数总表/0597-D587-学科理论核抽取函数.md"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0597-D587-%E5%AD%A6%E7%A7%91%E7%90%86%E8%AE%BA%E6%A0%B8%E6%8A%BD%E5%8F%96%E5%87%BD%E6%95%B0.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-e2991f340748a39b / link: "统一函数总表/0597-D587-学科理论核抽取函数.md"
@@ -2482,25 +2502,5 @@
 - [proof_status="NO_EQUIVALENCE_PROOF",](../../../tools/foundation/build_080_queue.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-b4e8b5358ba540b9 / proof_status="NO_EQUIVALENCE_PROOF",
-  - 来源：`tools/foundation/build_080_queue.py`
-  - 依赖：—；被引用：—
-- [proof_status="NOT_APPLICABLE_ALGORITHMIC_TEMPLATE",](../../../tools/foundation/build_080_queue.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-034d086b293805e7 / proof_status="NOT_APPLICABLE_ALGORITHMIC_TEMPLATE",
-  - 来源：`tools/foundation/build_080_queue.py`
-  - 依赖：—；被引用：—
-- [proof_status="NOT_APPLICABLE_MECHANISM",](../../../tools/foundation/build_080_queue.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-3bfb3144dc289d8d / proof_status="NOT_APPLICABLE_MECHANISM",
-  - 来源：`tools/foundation/build_080_queue.py`
-  - 依赖：—；被引用：—
-- [proof_status="NOT_APPLICABLE_SCORE_DEFINITION",](../../../tools/foundation/build_080_queue.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-2695160248081cc2 / proof_status="NOT_APPLICABLE_SCORE_DEFINITION",
-  - 来源：`tools/foundation/build_080_queue.py`
-  - 依赖：—；被引用：—
-- [proof_status="UNPROVED_PROPOSITION",](../../../tools/foundation/build_080_queue.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-89af11b69b71e086 / proof_status="UNPROVED_PROPOSITION",
   - 来源：`tools/foundation/build_080_queue.py`
   - 依赖：—；被引用：—
