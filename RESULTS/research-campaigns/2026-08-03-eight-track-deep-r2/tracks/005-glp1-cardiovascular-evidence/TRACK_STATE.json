@@ -2,10 +2,9 @@
   "track_id": "005-glp1-cardiovascular-evidence",
   "original_round": "005",
   "research_identity": "HIGH_STAKES_CLINICAL_EVIDENCE_REVIEW",
-  "stage": "freeze",
+  "stage": "evidence",
   "state": "IN_PROGRESS",
   "frozen_commit": "16be95dd",
-  "checkpoint_commits": ["16be95dd"],
   "required_layers": [
     "SELECT primary randomized trial and supplement",
     "FDA label and regulatory clinical review",
@@ -16,7 +15,8 @@
     "weight-mediated versus independent-mechanism claim"
   ],
   "claim_ceiling": "specific semaglutide dose, trial population, cardiovascular endpoint and follow-up window; no individual medical advice",
-  "next_checkpoint": "evidence",
-  "next_action": "read the primary trial, regulator, HTA and competing evidence in full enough to extract page, table and label locators",
-  "updated_at": "2026-08-03T11:21:35+08:00"
+  "checkpoint_commits": ["16be95dd", "PENDING_EVIDENCE_COMMIT"],
+  "next_checkpoint": "analysis",
+  "next_action": "write the bounded clinical analysis, distinguish crude in-trial ARR/NNT from time-to-event estimates, and freeze the externalization and mechanism ceilings",
+  "updated_at": "2026-08-03T11:33:01+08:00"
 }

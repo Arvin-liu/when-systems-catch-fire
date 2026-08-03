@@ -1,0 +1,82 @@
+{
+  "track_id": "005-glp1-cardiovascular-evidence",
+  "stage": "evidence",
+  "accessed_at": "2026-08-03T11:33:01+08:00",
+  "sources": {
+    "select_primary_pdf": {
+      "url": "https://doi.org/10.1056/NEJMoa2307563",
+      "repository_url": "https://pure.rug.nl/ws/portalfiles/portal/911981662/nejmoa2307563.pdf",
+      "pages": 13,
+      "sha256": "e592caf24b51c7093933f8ad09b90f3acf09bea1eb980154dc1c0047c389cb43",
+      "version": "publisher PDF / version of record; repository cover plus journal pages 2221-2232"
+    },
+    "select_registry_results": {
+      "url": "https://clinicaltrials.gov/study/NCT03574597",
+      "api_url": "https://clinicaltrials.gov/api/v2/studies/NCT03574597",
+      "sha256": "382f8e74a9c1f777c3472281baa46d64960f6a758b0343df1a320665b05ef229",
+      "status_verified": "2024-08",
+      "result_posted": "2024-08-30"
+    },
+    "fda_label": {
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/215256s029lbl.pdf",
+      "pages": 67,
+      "sha256": "d1c4cdb753e295a682505203bf470882161d5d23735ca1e30ff28470cca9cc6e",
+      "revision": "03/2026",
+      "reference_id": "5766092"
+    },
+    "fda_approval_announcement": {
+      "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-first-treatment-reduce-risk-serious-heart-problems-specifically-adults-obesity-or",
+      "published": "2024-03-08",
+      "sha256": null
+    },
+    "nice_final_guidance": {
+      "url": "https://www.nice.org.uk/guidance/ta1152",
+      "mirror_url": "https://www.ncbi.nlm.nih.gov/books/NBK623401/pdf/Bookshelf_NBK623401.pdf",
+      "pages": 19,
+      "sha256": "e3db155290d907c77887d595b0e668903f4215dbfa017ecd5d8d9dc3138cf54e",
+      "published": "2026-05-07"
+    },
+    "nice_committee_papers": {
+      "url": "https://www.nice.org.uk/guidance/ta1152/evidence/committee-papers-pdf-15676237117",
+      "pages": 466,
+      "sha256": "6c115d25d14ced7079b6f634e181d1fad2eea0c8c79af80d861e5ecad9efc624",
+      "access_note": "public PDF includes company submission and confidential redactions; not treated as independent evidence"
+    },
+    "select_safety_analysis": {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11897845/",
+      "fulltext_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11897845/fullTextXML",
+      "sha256": "ff1e14d02725e1c73ad1348028a9e65038548cce1eadfaae7df6112270f2c6f4",
+      "access_note": "Europe PMC XML read; PMC HTML web view challenged by reCAPTCHA"
+    },
+    "select_hba1c_analysis": {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11282385/",
+      "fulltext_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11282385/fullTextXML",
+      "sha256": "079e53096b49c535354d3f75eb7b50f3477fb6bc98d73364ced6f3788a164b4e",
+      "access_note": "Europe PMC XML read; PMC HTML web view challenged by reCAPTCHA"
+    },
+    "select_adiposity_analysis": {
+      "url": "https://www.sciencedirect.com/science/article/pii/S0140673625013753",
+      "repository_url": "https://iris.unipa.it/handle/10447/692208",
+      "access_note": "abstract and repository search record read; direct PDF/fulltext fetch returned HTTP 403",
+      "sha256": null
+    },
+    "independent_meta_analysis": {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11982705/",
+      "fulltext_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11982705/fullTextXML",
+      "sha256": "dd1d42b08ca506b2295cc9a5714ba384f55b8b1b020c45775e1db73a6cb6cf05",
+      "access_note": "Europe PMC XML read; PMC HTML web view challenged by reCAPTCHA"
+    },
+    "select_supplementary_appendix": {
+      "url": "https://www.nejm.org/doi/suppl/10.1056/NEJMoa2307563/suppl_file/nejmoa2307563_appendix.pdf",
+      "access_note": "publisher and direct PDF fetch returned HTTP 403; not claimed as fully read",
+      "sha256": null
+    }
+  },
+  "failed_access_attempts": [
+    {"url":"https://www.nejm.org/doi/pdf/10.1056/NEJMoa2307563","result":"HTTP 403"},
+    {"url":"https://www.nejm.org/doi/suppl/10.1056/NEJMoa2307563/suppl_file/nejmoa2307563_appendix.pdf","result":"HTTP 403"},
+    {"url":"https://www.sciencedirect.com/science/article/pii/S0140673625013753/pdfft","result":"HTTP 403"},
+    {"url":"https://iris.unipa.it/retrieve/d0310ba3-ba2f-436e-a750-4a6bac91179f/PIIS0140673625013753.pdf","result":"HTTP 403"}
+  ],
+  "evidence_boundary": "No individual-level SELECT data were downloaded or reanalyzed; only publicly reported counts and denominators were recomputed for a crude in-trial ARR/NNT approximation."
+}
