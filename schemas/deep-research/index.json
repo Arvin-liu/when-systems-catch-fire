@@ -1,0 +1,19 @@
+{
+  "version": "deep-research/0.1",
+  "records": [
+    "claim-evidence-record",
+    "evidence-obligation",
+    "executor-observation",
+    "research-action",
+    "research-brief",
+    "research-campaign",
+    "research-episode-result",
+    "research-plan",
+    "research-queue-item",
+    "research-sufficiency-decision",
+    "research-topic-candidate",
+    "research-trace-event",
+    "source-record"
+  ],
+  "generated_by": "tools/deep_research/generate_schemas.py"
+}

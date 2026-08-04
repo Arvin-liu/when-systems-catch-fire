@@ -1,0 +1,9 @@
+{
+  "_record": "research-trace-event",
+  "_expect": "payload_sha256 must be 64 hex chars",
+  "event_id": "evt-X",
+  "timestamp": "2026-01-01T00:00:00Z",
+  "type": "STEP",
+  "actor": "kernel",
+  "payload_sha256": "not-a-real-sha"
+}

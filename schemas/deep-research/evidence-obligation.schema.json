@@ -1,0 +1,83 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "deep-research/0.1/evidence-obligation",
+  "title": "EvidenceObligation",
+  "description": "One material evidence obligation tied to a claim. obligation_class must be a valid Research OS obligation class; claim_id is mandatory (claim relation).",
+  "type": "object",
+  "required": [
+    "obligation_id",
+    "claim_id",
+    "obligation_class",
+    "status"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "obligation_id": {
+      "type": "string"
+    },
+    "claim_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "obligation_class": {
+      "type": "string",
+      "enum": [
+        "PRIMARY_SOURCE",
+        "FULL_TEXT_OR_METHODS_OR_SUPPLEMENT",
+        "DATA_OR_TABLE_ACCESS",
+        "NUMERIC_RECOMPUTATION",
+        "CONSTRUCT_AND_OUTCOME_DEFINITION",
+        "SOURCE_INDEPENDENCE_CHECK",
+        "REPLICATION_NULL_CONTRADICTORY",
+        "CAUSAL_IDENTIFICATION",
+        "POPULATION_JURISDICTION_TIME_SCOPE",
+        "MECHANISM_ALTERNATIVE",
+        "ADVERSE_EFFECT_COST_HARMED",
+        "EXTERNAL_HUMAN_OR_DOMAIN_REVIEW"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "OPEN",
+        "PARTIAL",
+        "SATISFIED",
+        "WAIVED_WITH_REASON",
+        "BLOCKED_WITH_EVIDENCE",
+        "NOT_APPLICABLE"
+      ]
+    },
+    "severity": {
+      "type": "string",
+      "enum": [
+        "INFO",
+        "LOW",
+        "MEDIUM",
+        "HIGH",
+        "CRITICAL"
+      ]
+    },
+    "required_source_family": {
+      "type": "string"
+    },
+    "satisfied_by": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "ceiling_impact": {
+      "type": "string",
+      "enum": [
+        "SPECULATIVE",
+        "TENTATIVE",
+        "QUALIFIED",
+        "BOUNDED_STRONG",
+        "NOT_ASSERTED"
+      ]
+    },
+    "notes": {
+      "type": "string"
+    }
+  }
+}

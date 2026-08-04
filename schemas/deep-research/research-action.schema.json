@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "deep-research/0.1/research-action",
+  "title": "ResearchAction",
+  "description": "One bounded action from the Research OS action vocabulary. action_code must be a valid kernel action code.",
+  "type": "object",
+  "required": [
+    "action_id",
+    "action_code"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "action_id": {
+      "type": "string"
+    },
+    "action_code": {
+      "type": "string",
+      "enum": [
+        "FREEZE_OR_NARROW_QUESTION",
+        "SEARCH_PRIMARY_SOURCE",
+        "FETCH_FULL_TEXT",
+        "READ_METHODS",
+        "READ_SUPPLEMENT",
+        "LOCATE_RAW_DATA",
+        "LOCATE_ANALYSIS_CODE",
+        "RECOMPUTE_RESULT",
+        "REPRODUCE_ANALYSIS",
+        "BUILD_DEFINITION_CROSSWALK",
+        "CHECK_SOURCE_DEPENDENCE",
+        "SEEK_REPLICATION",
+        "SEEK_NULL_OR_CONTRADICTORY_RESULT",
+        "SEEK_METHODOLOGICAL_CRITIQUE",
+        "COMPARE_POPULATIONS_OR_JURISDICTIONS",
+        "COMPARE_OUTCOMES_OR_DENOMINATORS",
+        "TEST_ALTERNATIVE_MECHANISM",
+        "RUN_ADVERSARIAL_REVIEW",
+        "DOWNGRADE_CLAIM",
+        "BRANCH_QUESTION",
+        "PAUSE_AND_CHECKPOINT",
+        "ESCALATE_TO_GPT_OWNER",
+        "STOP_WITH_INSUFFICIENT_EVIDENCE",
+        "PUBLISH_CANDIDATE_PACKET"
+      ]
+    },
+    "objective": {
+      "type": "string"
+    },
+    "inputs": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "expected_output": {
+      "type": "string"
+    },
+    "prohibited_claims": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "budget": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "stop_condition": {
+      "type": "string"
+    }
+  }
+}

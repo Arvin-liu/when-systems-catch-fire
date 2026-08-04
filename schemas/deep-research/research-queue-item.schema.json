@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "deep-research/0.1/research-queue-item",
+  "title": "ResearchQueueItem",
+  "description": "One queue item with optional lease (owner/expiry/idempotent claim) and resumable checkpoint commit metadata.",
+  "type": "object",
+  "required": [
+    "queue_item_id",
+    "status"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "queue_item_id": {
+      "type": "string"
+    },
+    "topic_candidate": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "brief": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "episode_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "lease": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "additionalProperties": true,
+      "properties": {
+        "owner": {
+          "type": "string"
+        },
+        "expiry": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "claim_id": {
+          "type": "string"
+        }
+      }
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "QUEUED",
+        "ACTIVE",
+        "COMPLETED",
+        "BLOCKED",
+        "SKIPPED"
+      ]
+    },
+    "checkpoint_commit": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "priority_factors": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "created_at": {
+      "type": "string"
+    }
+  }
+}

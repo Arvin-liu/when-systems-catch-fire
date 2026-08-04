@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "deep-research/0.1/research-plan",
+  "title": "ResearchPlan",
+  "description": "Planned evidence obligations and subquestions derived from the frozen brief and strategy pack.",
+  "type": "object",
+  "required": [
+    "plan_id",
+    "brief_id",
+    "obligations"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "plan_id": {
+      "type": "string"
+    },
+    "brief_id": {
+      "type": "string"
+    },
+    "obligations": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "subquestions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "search_strategy": {
+      "type": "string"
+    },
+    "stop_criteria": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "created_at": {
+      "type": "string"
+    }
+  }
+}

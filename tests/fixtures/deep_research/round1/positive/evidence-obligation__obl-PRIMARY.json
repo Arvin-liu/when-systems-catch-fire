@@ -1,0 +1,11 @@
+{
+  "obligation_id": "obl-PRIMARY",
+  "claim_id": "claim-1",
+  "obligation_class": "PRIMARY_SOURCE",
+  "status": "SATISFIED",
+  "severity": "HIGH",
+  "satisfied_by": [
+    "src-RCT-001"
+  ],
+  "ceiling_impact": "BOUNDED_STRONG"
+}

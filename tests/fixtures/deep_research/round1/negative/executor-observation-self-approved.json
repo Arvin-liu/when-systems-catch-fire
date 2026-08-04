@@ -1,0 +1,14 @@
+{
+  "_record": "executor-observation",
+  "_expect": "self_approved is a prohibited key",
+  "observation_id": "obs-X",
+  "action_id": "act-X",
+  "observations": [],
+  "source_identities": [],
+  "access_level": "DISCOVERED",
+  "calculation_result": null,
+  "errors": [],
+  "provenance": [],
+  "timestamps": {},
+  "self_approved": true
+}
