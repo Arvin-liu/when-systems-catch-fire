@@ -1,0 +1,181 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "deep-research/0.1/execution-packet",
+  "title": "ExecutionPacket",
+  "description": "Immutable, self-contained instruction set handed to an executor. Uses precise refs/hashes, capability-based permissions, and declares allowed reads/writes/network, output schema, validation commands, stop states and forbidden actions. No brand-name requirement.",
+  "type": "object",
+  "required": [
+    "packet_id",
+    "episode_id",
+    "target_ref",
+    "target_ref_sha256",
+    "allowed_reads",
+    "allowed_writes",
+    "allowed_network",
+    "validation_commands",
+    "stop_states",
+    "forbidden_actions"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "packet_id": {
+      "type": "string"
+    },
+    "episode_id": {
+      "type": "string"
+    },
+    "target_repo": {
+      "type": "string"
+    },
+    "target_ref": {
+      "type": "string"
+    },
+    "target_ref_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "requested_capabilities": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "capability"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "capability": {
+            "type": "string",
+            "enum": [
+              "READ_FILE",
+              "WRITE_FILE",
+              "RUN_SHELL",
+              "FETCH_URL",
+              "CALL_TOOL",
+              "COMPUTE_NUMERIC",
+              "GENERATE_TEXT",
+              "PARSE_DOCUMENT",
+              "RUN_TEST",
+              "CLONE_REPO",
+              "COMMIT_CHANGES",
+              "PUSH_CHANGES",
+              "QUERY_API",
+              "EMBED_TEXT",
+              "SEARCH_INDEX",
+              "READ_ENV",
+              "WRITE_ENV"
+            ]
+          },
+          "scope": {
+            "type": "string"
+          },
+          "permission": {
+            "type": "string",
+            "enum": [
+              "ALLOWED",
+              "DENIED",
+              "CONDITIONAL"
+            ]
+          }
+        }
+      }
+    },
+    "allowed_reads": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "allowed_writes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "allowed_network": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "output_schema_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "validation_commands": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "command"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "command": {
+            "type": "string"
+          },
+          "expected_exit_code": {
+            "type": "integer"
+          },
+          "timeout_seconds": {
+            "type": "number"
+          }
+        }
+      }
+    },
+    "stop_states": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "SUCCESS",
+          "FAILED_WITH_EVIDENCE",
+          "WAITING_HUMAN_APPROVAL",
+          "PAUSED_BUDGET_RESUMABLE",
+          "BLOCKED_UNRECOVERABLE"
+        ]
+      }
+    },
+    "forbidden_actions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "model_telemetry_hint": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "created_at": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "required_provider": {
+      "type": "null"
+    },
+    "required_model": {
+      "type": "null"
+    }
+  },
+  "allOf": [
+    {
+      "not": {
+        "anyOf": [
+          {
+            "required": [
+              "required_provider"
+            ]
+          },
+          {
+            "required": [
+              "required_model"
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

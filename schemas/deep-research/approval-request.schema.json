@@ -1,0 +1,145 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "deep-research/0.1/approval-request",
+  "title": "ApprovalRequest",
+  "description": "Executor-raised request for an owner/GPT decision. The executor may NOT self-approve and may NOT pre-fill the decision; brand names cannot be a required dependency.",
+  "type": "object",
+  "required": [
+    "request_id",
+    "episode_id",
+    "requested_by",
+    "action_code",
+    "reason"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "request_id": {
+      "type": "string"
+    },
+    "episode_id": {
+      "type": "string"
+    },
+    "requested_by": {
+      "type": "string"
+    },
+    "action_code": {
+      "type": "string",
+      "enum": [
+        "FREEZE_OR_NARROW_QUESTION",
+        "SEARCH_PRIMARY_SOURCE",
+        "FETCH_FULL_TEXT",
+        "READ_METHODS",
+        "READ_SUPPLEMENT",
+        "LOCATE_RAW_DATA",
+        "LOCATE_ANALYSIS_CODE",
+        "RECOMPUTE_RESULT",
+        "REPRODUCE_ANALYSIS",
+        "BUILD_DEFINITION_CROSSWALK",
+        "CHECK_SOURCE_DEPENDENCE",
+        "SEEK_REPLICATION",
+        "SEEK_NULL_OR_CONTRADICTORY_RESULT",
+        "SEEK_METHODOLOGICAL_CRITIQUE",
+        "COMPARE_POPULATIONS_OR_JURISDICTIONS",
+        "COMPARE_OUTCOMES_OR_DENOMINATORS",
+        "TEST_ALTERNATIVE_MECHANISM",
+        "RUN_ADVERSARIAL_REVIEW",
+        "DOWNGRADE_CLAIM",
+        "BRANCH_QUESTION",
+        "PAUSE_AND_CHECKPOINT",
+        "ESCALATE_TO_GPT_OWNER",
+        "STOP_WITH_INSUFFICIENT_EVIDENCE",
+        "PUBLISH_CANDIDATE_PACKET"
+      ]
+    },
+    "reason": {
+      "type": "string",
+      "minLength": 1
+    },
+    "requested_capabilities": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "READ_FILE",
+          "WRITE_FILE",
+          "RUN_SHELL",
+          "FETCH_URL",
+          "CALL_TOOL",
+          "COMPUTE_NUMERIC",
+          "GENERATE_TEXT",
+          "PARSE_DOCUMENT",
+          "RUN_TEST",
+          "CLONE_REPO",
+          "COMMIT_CHANGES",
+          "PUSH_CHANGES",
+          "QUERY_API",
+          "EMBED_TEXT",
+          "SEARCH_INDEX",
+          "READ_ENV",
+          "WRITE_ENV"
+        ]
+      }
+    },
+    "raised_at": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "urgency": {
+      "type": "string",
+      "enum": [
+        "LOW",
+        "MEDIUM",
+        "HIGH",
+        "BLOCKING"
+      ]
+    },
+    "context_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "self_approved": {
+      "type": "null"
+    },
+    "decision": {
+      "type": "null"
+    },
+    "required_provider": {
+      "type": "null"
+    },
+    "required_model": {
+      "type": "null"
+    }
+  },
+  "allOf": [
+    {
+      "not": {
+        "anyOf": [
+          {
+            "required": [
+              "self_approved"
+            ]
+          },
+          {
+            "required": [
+              "decision"
+            ]
+          },
+          {
+            "required": [
+              "required_provider"
+            ]
+          },
+          {
+            "required": [
+              "required_model"
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

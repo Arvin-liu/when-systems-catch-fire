@@ -1,0 +1,19 @@
+{
+  "telemetry_id": "tel-001",
+  "episode_id": "ep-001",
+  "model_telemetry": {
+    "family": "generic-instruct",
+    "params_billions": 70
+  },
+  "provider_telemetry": {
+    "host": "local-runtime",
+    "region": "na"
+  },
+  "duration_ms": 421337,
+  "token_counts": {
+    "prompt": 12000,
+    "completion": 3000
+  },
+  "step_count": 7,
+  "captured_at": "2026-08-01T00:00:00Z"
+}

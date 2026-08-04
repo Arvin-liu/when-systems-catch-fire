@@ -1,11 +1,13 @@
 """Round 1 — Deep Research Capability contract + machine schemas.
 
 Validates:
-  * All 13 generated schemas are themselves valid JSON Schema (Draft 2020-12)
+  * All 21 generated schemas are themselves valid JSON Schema (Draft 2020-12)
     and reuse the inherited Research OS vocabularies (no duplicate authority).
   * Every positive fixture validates; every negative fixture is rejected
-    (fail-closed executor contract, opened-scope, STOP_SUFFICIENT gates, enums).
-  * The records.py constructors build all 13 types and the executor-observation
+    (fail-closed executor contract, opened-scope, STOP_SUFFICIENT gates, enums,
+    and the executor-neutral boundary: provider/model brand names can never
+    become a required action dependency).
+  * The records.py constructors build all 21 types and the executor-observation
     contract is delegated to the kernel (prohibited keys rejected).
   * The field-origin classification proves the executor can never write an
     owner/GPT-adjudicated field and never smuggles a prohibited key.
@@ -38,7 +40,7 @@ def _load(p: Path) -> dict:
 class Round1SchemaStructureTests(unittest.TestCase):
     def test_thirteen_schemas_present(self):
         names = R.list_records()
-        self.assertEqual(len(names), 13, f"expected 13 records, got {len(names)}")
+        self.assertEqual(len(names), 21, f"expected 21 records, got {len(names)}")
         for n in names:
             self.assertTrue((SCHEMA_DIR / f"{n}.schema.json").exists())
 
@@ -122,21 +124,63 @@ class Round1NegativeFixtureTests(unittest.TestCase):
                 else:
                     R.validate_record(record, doc)
 
-    def test_executor_observation_prohibited_keys_rejected_by_kernel(self):
+    def test_executor_observation_prohibited_keys_rejected(self):
         base = {
             "observation_id": "obs-X", "action_id": "act-X", "observations": [],
             "source_identities": [], "access_level": "DISCOVERED",
             "calculation_result": None, "errors": [], "provenance": [], "timestamps": {},
         }
-        for banned in ("self_approved", "mark_episode_complete", "claim_ceiling"):
+        # self_approved / mark_episode_complete / claim_ceiling are rejected by the
+        # kernel contract; owner_acceptance / round_complete are rejected by the
+        # deep-research structural schema (all five are PROHIBITED).
+        for banned in ("self_approved", "mark_episode_complete", "claim_ceiling",
+                       "owner_acceptance", "round_complete"):
             bad = dict(base)
             bad[banned] = True
-            with self.assertRaises(ValueError, msg=f"kernel must reject {banned}"):
+            with self.assertRaises(ValueError, msg=f"must reject prohibited key {banned}"):
                 R.validate_executor_observation(bad)
 
 
+class Round1ExecutorNeutralBrandNameTests(unittest.TestCase):
+    """Round 1 hard requirement: a provider/model brand name can NEVER become a
+    required action dependency. Capability tokens + permission scopes are the
+    only legitimate way to express needs. Proven by positive + negative fixtures."""
+
+    def _neg(self, fname: str) -> dict:
+        return _load(NEG_DIR / fname)
+
+    def test_brand_name_required_dependency_rejected(self):
+        brand_fixtures = [
+            "executor-capability-declaration-bad-required-provider.json",
+            "execution-packet-bad-required-model.json",
+            "approval-request-bad-required-provider.json",
+            "resume-capsule-bad-required-model.json",
+        ]
+        for fname in brand_fixtures:
+            doc = self._neg(fname)
+            record = doc.pop("_record")
+            expect = doc.pop("_expect")
+            with self.assertRaises(ValueError, msg=f"{fname} not rejected ({expect})"):
+                R.validate_record(record, doc)
+
+    def test_capability_token_form_accepted(self):
+        # The capability-token form (no brand name) is accepted and constructible.
+        decl = R.make_record("executor-capability-declaration", declared_capabilities=[
+            {"capability": "READ_FILE", "scope": "schemas/*", "permission": "ALLOWED"},
+        ])
+        self.assertEqual(decl["declared_capabilities"][0]["capability"], "READ_FILE")
+        pkt = R.make_record("execution-packet",
+                            target_ref="main", target_ref_sha256="0" * 64,
+                            allowed_reads=["*"], allowed_writes=[], allowed_network=[],
+                            validation_commands=[{"command": "true"}],
+                            stop_states=["SUCCESS"], forbidden_actions=[],
+                            requested_capabilities=[
+                                {"capability": "WRITE_FILE", "scope": "*", "permission": "ALLOWED"}])
+        self.assertEqual(pkt["requested_capabilities"][0]["capability"], "WRITE_FILE")
+
+
 class Round1ConstructorAndOriginTests(unittest.TestCase):
-    def test_constructors_build_all_thirteen(self):
+    def test_constructors_build_all_records(self):
         for name in R.list_records():
             obj = R.make_record(name)
             self.assertIsInstance(obj, dict)

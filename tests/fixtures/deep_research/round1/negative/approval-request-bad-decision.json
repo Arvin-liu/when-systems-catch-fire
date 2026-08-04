@@ -1,0 +1,10 @@
+{
+  "_record": "approval-request",
+  "_expect": "decision must not be pre-filled by the executor",
+  "request_id": "req-Y",
+  "episode_id": "ep-X",
+  "requested_by": "exec-X",
+  "action_code": "ESCALATE_TO_GPT_OWNER",
+  "reason": "need decision",
+  "decision": "APPROVED"
+}

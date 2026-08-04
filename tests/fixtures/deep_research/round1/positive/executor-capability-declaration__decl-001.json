@@ -1,0 +1,23 @@
+{
+  "declaration_id": "decl-001",
+  "executor_id": "exec-generic-001",
+  "declared_capabilities": [
+    {
+      "capability": "READ_FILE",
+      "scope": "schemas/deep-research/*",
+      "permission": "ALLOWED"
+    },
+    {
+      "capability": "RUN_TEST",
+      "scope": "tests/*",
+      "permission": "ALLOWED"
+    }
+  ],
+  "model_telemetry": {
+    "family": "generic-instruct",
+    "params_billions": 70
+  },
+  "provider_telemetry": {
+    "host": "local-runtime"
+  }
+}

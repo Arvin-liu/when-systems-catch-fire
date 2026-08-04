@@ -88,6 +88,24 @@ OBLIGATION_STATUS = [
 SEED_SOURCES = ["OWNER_SEED", "PROJECT_GAP", "PREVIOUS_BLOCKER", "TRUSTED_RECENT_SIGNAL"]
 QUEUE_ITEM_STATUS = ["QUEUED", "ACTIVE", "COMPLETED", "BLOCKED", "SKIPPED"]
 
+# Executor-neutral capability federation vocabulary (Round 1) -----------------
+# Needs/actions are expressed as CAPABILITY tokens + PERMISSION scopes, NEVER as
+# brand/model names. Provider/model brand names may appear ONLY as telemetry
+# inside the records and must never become a required action dependency.
+_CAPABILITY_TOKENS = [
+    "READ_FILE", "WRITE_FILE", "RUN_SHELL", "FETCH_URL", "CALL_TOOL",
+    "COMPUTE_NUMERIC", "GENERATE_TEXT", "PARSE_DOCUMENT", "RUN_TEST",
+    "CLONE_REPO", "COMMIT_CHANGES", "PUSH_CHANGES", "QUERY_API",
+    "EMBED_TEXT", "SEARCH_INDEX", "READ_ENV", "WRITE_ENV",
+]
+_PERMISSION_LEVELS = ["ALLOWED", "DENIED", "CONDITIONAL"]
+# Terminal execution states reused from the CONTINUOUS-SUPERVISOR-AMENDMENT.
+_EXECUTION_STOP_STATES = [
+    "SUCCESS", "FAILED_WITH_EVIDENCE", "WAITING_HUMAN_APPROVAL",
+    "PAUSED_BUDGET_RESUMABLE", "BLOCKED_UNRECOVERABLE",
+]
+_LEASE_STATUSES = ["ACTIVE", "EXPIRED", "REVOKED", "RELEASED"]
+
 
 def _req(*fields: str) -> dict:
     return {"type": "object", "required": list(fields), "additionalProperties": True}
@@ -259,7 +277,7 @@ def build_schemas() -> dict[str, dict]:
         "$schema": "https://json-schema.org/draft/2020-12/schema",
         "$id": f"{OUT_VERSION}/executor-observation",
         "title": "ExecutorObservation",
-        "description": "Executor return under contract. Reuses the Research OS executor-return contract: required fields plus prohibition of self_approved / mark_episode_complete / claim_ceiling.",
+        "description": "Executor return under contract. Reuses the Research OS executor-return contract: required fields plus prohibition of self_approved / mark_episode_complete / claim_ceiling / owner_acceptance / round_complete. An executor may never self-approve, mark an episode/round complete, raise a claim ceiling, or assert owner acceptance.",
         "type": "object",
         "required": ["observation_id", "action_id", "observations", "source_identities", "access_level", "provenance", "timestamps"],
         "additionalProperties": False,
@@ -276,6 +294,8 @@ def build_schemas() -> dict[str, dict]:
             "self_approved": {"type": "null"},
             "mark_episode_complete": {"type": "null"},
             "claim_ceiling": {"type": "null"},
+            "owner_acceptance": {"type": "null"},
+            "round_complete": {"type": "null"},
         },
         "allOf": [
             {
@@ -284,6 +304,8 @@ def build_schemas() -> dict[str, dict]:
                         {"required": ["self_approved"]},
                         {"required": ["mark_episode_complete"]},
                         {"required": ["claim_ceiling"]},
+                        {"required": ["owner_acceptance"]},
+                        {"required": ["round_complete"]},
                     ]
                 }
             }
@@ -445,6 +467,326 @@ def build_schemas() -> dict[str, dict]:
             },
             "status": {"type": "string", "enum": ["RUNNING", "STOPPED", "PAUSED"]},
             "created_at": {"type": "string"},
+        },
+    }
+
+    # 14. ExecutorCapabilityDeclaration --------------------------------------
+    S["executor-capability-declaration"] = {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "$id": f"{OUT_VERSION}/executor-capability-declaration",
+        "title": "ExecutorCapabilityDeclaration",
+        "description": "Neutral declaration of what an executor is capable of, expressed ONLY via capability tokens + permission scopes. Provider/model brand names may appear ONLY as telemetry and must never become a required action dependency.",
+        "type": "object",
+        "required": ["declaration_id", "executor_id", "declared_capabilities"],
+        "additionalProperties": False,
+        "properties": {
+            "declaration_id": {"type": "string"},
+            "executor_id": {"type": "string"},
+            "declared_capabilities": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "required": ["capability", "permission"],
+                    "additionalProperties": False,
+                    "properties": {
+                        "capability": {"type": "string", "enum": _CAPABILITY_TOKENS},
+                        "scope": {"type": "string"},
+                        "permission": {"type": "string", "enum": _PERMISSION_LEVELS},
+                        "conditions": {"type": "object", "additionalProperties": True},
+                    },
+                },
+            },
+            "capability_proof": {"type": "array", "items": {"type": "object", "additionalProperties": True}},
+            "model_telemetry": {"type": "object", "additionalProperties": True},
+            "provider_telemetry": {"type": "object", "additionalProperties": True},
+            "declared_at": {"type": ["string", "null"]},
+            "expires_at": {"type": ["string", "null"]},
+            # Prohibited: a brand name can never become a required capability dependency.
+            "required_provider": {"type": "null"},
+            "required_model": {"type": "null"},
+        },
+        "allOf": [
+            {
+                "not": {
+                    "anyOf": [
+                        {"required": ["required_provider"]},
+                        {"required": ["required_model"]},
+                    ]
+                }
+            }
+        ],
+    }
+
+    # 15. ExecutionPacket ----------------------------------------------------
+    S["execution-packet"] = {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "$id": f"{OUT_VERSION}/execution-packet",
+        "title": "ExecutionPacket",
+        "description": "Immutable, self-contained instruction set handed to an executor. Uses precise refs/hashes, capability-based permissions, and declares allowed reads/writes/network, output schema, validation commands, stop states and forbidden actions. No brand-name requirement.",
+        "type": "object",
+        "required": [
+            "packet_id", "episode_id", "target_ref", "target_ref_sha256",
+            "allowed_reads", "allowed_writes", "allowed_network",
+            "validation_commands", "stop_states", "forbidden_actions",
+        ],
+        "additionalProperties": False,
+        "properties": {
+            "packet_id": {"type": "string"},
+            "episode_id": {"type": "string"},
+            "target_repo": {"type": "string"},
+            "target_ref": {"type": "string"},
+            "target_ref_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+            "requested_capabilities": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "required": ["capability"],
+                    "additionalProperties": False,
+                    "properties": {
+                        "capability": {"type": "string", "enum": _CAPABILITY_TOKENS},
+                        "scope": {"type": "string"},
+                        "permission": {"type": "string", "enum": _PERMISSION_LEVELS},
+                    },
+                },
+            },
+            "allowed_reads": {"type": "array", "items": {"type": "string"}},
+            "allowed_writes": {"type": "array", "items": {"type": "string"}},
+            "allowed_network": {"type": "array", "items": {"type": "string"}},
+            "output_schema_ref": {"type": ["string", "null"]},
+            "validation_commands": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "required": ["command"],
+                    "additionalProperties": False,
+                    "properties": {
+                        "command": {"type": "string"},
+                        "expected_exit_code": {"type": "integer"},
+                        "timeout_seconds": {"type": "number"},
+                    },
+                },
+            },
+            "stop_states": {"type": "array", "items": {"type": "string", "enum": _EXECUTION_STOP_STATES}},
+            "forbidden_actions": {"type": "array", "items": {"type": "string"}},
+            "model_telemetry_hint": {"type": "object", "additionalProperties": True},
+            "created_at": {"type": ["string", "null"]},
+            # Prohibited: the packet must not require a specific brand/model.
+            "required_provider": {"type": "null"},
+            "required_model": {"type": "null"},
+        },
+        "allOf": [
+            {
+                "not": {
+                    "anyOf": [
+                        {"required": ["required_provider"]},
+                        {"required": ["required_model"]},
+                    ]
+                }
+            }
+        ],
+    }
+
+    # 16. ExecutionLease -----------------------------------------------------
+    S["execution-lease"] = {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "$id": f"{OUT_VERSION}/execution-lease",
+        "title": "ExecutionLease",
+        "description": "Idempotent claim over an execution slot. Reuses the queue-item lease concept (owner/expiry/claim_id) and binds a granted capability set to a specific executor_id. Fails closed on owner + claim_id.",
+        "type": "object",
+        "required": ["lease_id", "owner", "claim_id"],
+        "additionalProperties": False,
+        "properties": {
+            "lease_id": {"type": "string"},
+            "owner": {"type": "string"},
+            "claim_id": {"type": "string"},
+            "executor_id": {"type": ["string", "null"]},
+            "expiry": {"type": ["string", "null"]},
+            "granted_capabilities": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "required": ["capability", "permission"],
+                    "additionalProperties": False,
+                    "properties": {
+                        "capability": {"type": "string", "enum": _CAPABILITY_TOKENS},
+                        "scope": {"type": "string"},
+                        "permission": {"type": "string", "enum": _PERMISSION_LEVELS},
+                    },
+                },
+            },
+            "status": {"type": "string", "enum": _LEASE_STATUSES},
+            "granted_at": {"type": ["string", "null"]},
+            "revoked": {"type": "boolean"},
+        },
+    }
+
+    # 17. ApprovalRequest ----------------------------------------------------
+    S["approval-request"] = {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "$id": f"{OUT_VERSION}/approval-request",
+        "title": "ApprovalRequest",
+        "description": "Executor-raised request for an owner/GPT decision. The executor may NOT self-approve and may NOT pre-fill the decision; brand names cannot be a required dependency.",
+        "type": "object",
+        "required": ["request_id", "episode_id", "requested_by", "action_code", "reason"],
+        "additionalProperties": False,
+        "properties": {
+            "request_id": {"type": "string"},
+            "episode_id": {"type": "string"},
+            "requested_by": {"type": "string"},
+            "action_code": {"type": "string", "enum": _ACTION_CODES},
+            "reason": {"type": "string", "minLength": 1},
+            "requested_capabilities": {
+                "type": "array",
+                "items": {"type": "string", "enum": _CAPABILITY_TOKENS},
+            },
+            "raised_at": {"type": ["string", "null"]},
+            "urgency": {"type": "string", "enum": ["LOW", "MEDIUM", "HIGH", "BLOCKING"]},
+            "context_refs": {"type": "array", "items": {"type": "string"}},
+            # Prohibited: executor must not self-approve or pre-fill the decision.
+            "self_approved": {"type": "null"},
+            "decision": {"type": "null"},
+            "required_provider": {"type": "null"},
+            "required_model": {"type": "null"},
+        },
+        "allOf": [
+            {
+                "not": {
+                    "anyOf": [
+                        {"required": ["self_approved"]},
+                        {"required": ["decision"]},
+                        {"required": ["required_provider"]},
+                        {"required": ["required_model"]},
+                    ]
+                }
+            }
+        ],
+    }
+
+    # 18. ExecutionCheckpoint ------------------------------------------------
+    S["execution-checkpoint"] = {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "$id": f"{OUT_VERSION}/execution-checkpoint",
+        "title": "ExecutionCheckpoint",
+        "description": "Resumable progress checkpoint recording completed/pending steps and the precise state ref. Fails closed on episode_id + state_ref + state_ref_sha256.",
+        "type": "object",
+        "required": ["checkpoint_id", "episode_id", "state_ref", "state_ref_sha256"],
+        "additionalProperties": False,
+        "properties": {
+            "checkpoint_id": {"type": "string"},
+            "episode_id": {"type": "string"},
+            "step_index": {"type": "integer"},
+            "completed_steps": {"type": "array", "items": {"type": "string"}},
+            "pending_steps": {"type": "array", "items": {"type": "string"}},
+            "state_ref": {"type": "string"},
+            "state_ref_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+            "status": {"type": "string", "enum": ["IN_PROGRESS", "PAUSED_RESUMABLE", "COMPLETED"]},
+            "taken_at": {"type": ["string", "null"]},
+        },
+    }
+
+    # 19. ResumeCapsule ------------------------------------------------------
+    S["resume-capsule"] = {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "$id": f"{OUT_VERSION}/resume-capsule",
+        "title": "ResumeCapsule",
+        "description": "Self-contained handoff so a DIFFERENT executor (with no chat history) can resume. Needs are expressed as capability tokens, not brand names; includes a precise resume-point sha256.",
+        "type": "object",
+        "required": [
+            "capsule_id", "episode_id", "objective", "frozen_brief_ref",
+            "completed_summary", "pending_tasks", "known_blockers",
+            "required_capabilities", "resume_point_sha256", "validation_state",
+        ],
+        "additionalProperties": False,
+        "properties": {
+            "capsule_id": {"type": "string"},
+            "episode_id": {"type": "string"},
+            "objective": {"type": "string", "minLength": 1},
+            "frozen_brief_ref": {"type": "string"},
+            "completed_summary": {"type": "string"},
+            "pending_tasks": {"type": "array", "items": {"type": "string"}},
+            "known_blockers": {"type": "array", "items": {"type": "string"}},
+            "required_capabilities": {
+                "type": "array",
+                "items": {"type": "string", "enum": _CAPABILITY_TOKENS},
+            },
+            "resume_point_ref": {"type": "string"},
+            "resume_point_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+            "validation_state": {"type": "object", "additionalProperties": True},
+            "model_telemetry": {"type": "object", "additionalProperties": True},
+            # Prohibited: a resume handoff must not require a specific brand/model.
+            "required_provider": {"type": "null"},
+            "required_model": {"type": "null"},
+        },
+        "allOf": [
+            {
+                "not": {
+                    "anyOf": [
+                        {"required": ["required_provider"]},
+                        {"required": ["required_model"]},
+                    ]
+                }
+            }
+        ],
+    }
+
+    # 20. ExecutionValidationResult ------------------------------------------
+    S["execution-validation-result"] = {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "$id": f"{OUT_VERSION}/execution-validation-result",
+        "title": "ExecutionValidationResult",
+        "description": "Evidence from running the packet's validation commands. The validator may NOT self-approve; model/provider are telemetry only.",
+        "type": "object",
+        "required": ["result_id", "packet_id", "checks", "all_passed"],
+        "additionalProperties": False,
+        "properties": {
+            "result_id": {"type": "string"},
+            "packet_id": {"type": "string"},
+            "checks": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "required": ["command", "exit_code", "passed"],
+                    "additionalProperties": False,
+                    "properties": {
+                        "command": {"type": "string"},
+                        "exit_code": {"type": "integer"},
+                        "passed": {"type": "boolean"},
+                        "output_sha256": {"type": ["string", "null"], "pattern": "^[0-9a-f]{64}$"},
+                    },
+                },
+            },
+            "all_passed": {"type": "boolean"},
+            "validated_by": {"type": "string"},
+            "model_telemetry": {"type": "object", "additionalProperties": True},
+            "validated_at": {"type": ["string", "null"]},
+            # Prohibited: validation is evidence, never self-approval.
+            "self_approved": {"type": "null"},
+        },
+        "allOf": [
+            {
+                "not": {"anyOf": [{"required": ["self_approved"]}]}
+            }
+        ],
+    }
+
+    # 21. RuntimeTelemetry ---------------------------------------------------
+    S["runtime-telemetry"] = {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "$id": f"{OUT_VERSION}/runtime-telemetry",
+        "title": "RuntimeTelemetry",
+        "description": "Telemetry-only record. Model/provider names appear here as telemetry ONLY and must never be interpreted as a control input or required dependency.",
+        "type": "object",
+        "required": ["telemetry_id", "episode_id"],
+        "additionalProperties": False,
+        "properties": {
+            "telemetry_id": {"type": "string"},
+            "episode_id": {"type": "string"},
+            "model_telemetry": {"type": "object", "additionalProperties": True},
+            "provider_telemetry": {"type": "object", "additionalProperties": True},
+            "duration_ms": {"type": "number"},
+            "token_counts": {"type": "object", "additionalProperties": True},
+            "step_count": {"type": "integer"},
+            "captured_at": {"type": ["string", "null"]},
         },
     }
 

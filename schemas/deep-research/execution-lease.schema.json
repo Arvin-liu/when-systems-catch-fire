@@ -1,0 +1,100 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "deep-research/0.1/execution-lease",
+  "title": "ExecutionLease",
+  "description": "Idempotent claim over an execution slot. Reuses the queue-item lease concept (owner/expiry/claim_id) and binds a granted capability set to a specific executor_id. Fails closed on owner + claim_id.",
+  "type": "object",
+  "required": [
+    "lease_id",
+    "owner",
+    "claim_id"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "lease_id": {
+      "type": "string"
+    },
+    "owner": {
+      "type": "string"
+    },
+    "claim_id": {
+      "type": "string"
+    },
+    "executor_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "expiry": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "granted_capabilities": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "capability",
+          "permission"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "capability": {
+            "type": "string",
+            "enum": [
+              "READ_FILE",
+              "WRITE_FILE",
+              "RUN_SHELL",
+              "FETCH_URL",
+              "CALL_TOOL",
+              "COMPUTE_NUMERIC",
+              "GENERATE_TEXT",
+              "PARSE_DOCUMENT",
+              "RUN_TEST",
+              "CLONE_REPO",
+              "COMMIT_CHANGES",
+              "PUSH_CHANGES",
+              "QUERY_API",
+              "EMBED_TEXT",
+              "SEARCH_INDEX",
+              "READ_ENV",
+              "WRITE_ENV"
+            ]
+          },
+          "scope": {
+            "type": "string"
+          },
+          "permission": {
+            "type": "string",
+            "enum": [
+              "ALLOWED",
+              "DENIED",
+              "CONDITIONAL"
+            ]
+          }
+        }
+      }
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "ACTIVE",
+        "EXPIRED",
+        "REVOKED",
+        "RELEASED"
+      ]
+    },
+    "granted_at": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "revoked": {
+      "type": "boolean"
+    }
+  }
+}

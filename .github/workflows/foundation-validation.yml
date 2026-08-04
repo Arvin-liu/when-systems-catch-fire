@@ -133,3 +133,5 @@ jobs:
         run: |
           python3 -m unittest tests.test_propagation_reconciliation -v
           python3 tools/propagation/validate_reconciliation.py --check
+      - name: "Task 115 Round 1 — executor-neutral action/observation boundary schemas"
+        run: python3 -m unittest tests.test_deep_research_round1 -v

@@ -1,0 +1,17 @@
+{
+  "lease_id": "lease-001",
+  "owner": "owner-gpt",
+  "claim_id": "claim-001",
+  "executor_id": "exec-generic-001",
+  "expiry": "2026-12-31T23:59:59Z",
+  "granted_capabilities": [
+    {
+      "capability": "RUN_TEST",
+      "scope": "tests/*",
+      "permission": "ALLOWED"
+    }
+  ],
+  "status": "ACTIVE",
+  "granted_at": "2026-08-01T00:00:00Z",
+  "revoked": false
+}
