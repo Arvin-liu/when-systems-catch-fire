@@ -39,6 +39,21 @@
   - 可搜索名称：NFC-2f756fb5a978813d / "1_FunctionSpec", "2_Representation", "3_Compiler", "4_Artifact",
   - 来源：`data/external-research/120-function-paradigm-atlas/120-validator.py`
   - 依赖：—；被引用：—
+- ["30829240122": "ordering root cause (pass 2)",](../../../ROUND-LEDGER.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-130a192948b575ea / "30829240122": "ordering root cause (pass 2)",
+  - 来源：`ROUND-LEDGER.jsonl`
+  - 依赖：—；被引用：—
+- ["30832717871": "interpreter version root cause (pass 3)",](../../../ROUND-LEDGER.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-9e3cdff6ecdecd2e / "30832717871": "interpreter version root cause (pass 3)",
+  - 来源：`ROUND-LEDGER.jsonl`
+  - 依赖：—；被引用：—
+- ["30842732230": "content-after-generation root cause confirmed via drift artifact"](../../../ROUND-LEDGER.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-80e11a49f6702bbe / "30842732230": "content-after-generation root cause confirmed via drift artifact"
+  - 来源：`ROUND-LEDGER.jsonl`
+  - 依赖：—；被引用：—
 - ["A4": ("MECHANISM_MODEL", "EXPLANATORY_HYPOTHESIS"),](../../../tools/foundation/adjudicate_core.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-a7266108ff010c54 / "A4": ("MECHANISM_MODEL", "EXPLANATORY_HYPOTHESIS"),
@@ -642,6 +657,11 @@
 - ["root_cause": "generator ordering dependency: pass-1 ran knowledge-experience rebuild AFTER nonfunction adjudication; th](../../../ROUND-LEDGER.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-773501ef696fa32e / "root_cause": "generator ordering dependency: pass-1 ran knowledge-experience rebuild AFTER nonfunction adjudication; th
+  - 来源：`ROUND-LEDGER.jsonl`
+  - 依赖：—；被引用：—
+- ["root_cause_of_pass3_miss": "the pass-3 background chain's final verification was read incompletely and its last generat](../../../ROUND-LEDGER.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-86128238db48c84f / "root_cause_of_pass3_miss": "the pass-3 background chain's final verification was read incompletely and its last generat
   - 来源：`ROUND-LEDGER.jsonl`
   - 依赖：—；被引用：—
 - ["root_cause_verified": "interpreter-version-dependent generated output. Evidence: regenerated data/foundation/nonfunctio](../../../ROUND-LEDGER.jsonl)
@@ -2477,24 +2497,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-0805a3d8aa88b83e / Causal diagrams for empirical research
   - 来源：`data/external-research/105-intervention-control/105-intervention-control-source-pack.jsonl`
-  - 依赖：—；被引用：—
-- [Causal identification strategy must be specified where a causal claim is made.](../../../data/research-os/obligation-classes.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-90f40cd7e221f23f / Causal identification strategy must be specified where a causal claim is made.
-  - 来源：`data/research-os/obligation-classes.json`
-  - 依赖：—；被引用：—
-- [Causal Inference for Statistics, Social, and Biomedical Sciences](../../../data/external-research/105-intervention-control/105-intervention-control-source-pack.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-9f83e9b4b23892a2 / Causal Inference for Statistics, Social, and Biomedical Sciences
-  - 来源：`data/external-research/105-intervention-control/105-intervention-control-source-pack.jsonl`
-  - 依赖：—；被引用：—
-- [Causal Inference in Infectious Diseases](../../../data/external-research/105-intervention-control/105-intervention-control-source-pack.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-fd60ce1a84be25aa / Causal Inference in Infectious Diseases
-  - 来源：`data/external-research/105-intervention-control/105-intervention-control-source-pack.jsonl`
-  - 依赖：—；被引用：—
-- [Causal inference in the medical domain: a survey](../../../data/external-research/088-external-source-atlas-v2.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-b6c1d5766444460a / Causal inference in the medical domain: a survey
-  - 来源：`data/external-research/088-external-source-atlas-v2.jsonl`
   - 依赖：—；被引用：—

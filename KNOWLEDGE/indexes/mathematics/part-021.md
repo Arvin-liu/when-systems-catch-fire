@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [统一函数总表/0107-D58-固化加速函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-fe3373e0f35a934c / 统一函数总表/0107-D58-固化加速函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D58；被引用：—
+- [统一函数总表/0108-D59-过渡期窗口衰减函数(新发现).md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-1f49275a4076c26d / 统一函数总表/0108-D59-过渡期窗口衰减函数(新发现).md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D59；被引用：—
 - [统一函数总表/0109-D60-智慧干预效力函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-7d7ec7967d5e9718 / 统一函数总表/0109-D60-智慧干预效力函数.md
@@ -2494,13 +2504,3 @@
   - 可搜索名称：NFC-5d4c4b54b78c83f7 / 统一函数总表/0603-D593-解释剩余函数.md
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：D593；被引用：—
-- [统一函数总表/0604-D594-学科点火指数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-1cf98142aeb07d14 / 统一函数总表/0604-D594-学科点火指数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D594；被引用：—
-- [统一函数总表/0605-D595-绩效绑定裹挟.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-d5c832992f5c25f5 / 统一函数总表/0605-D595-绩效绑定裹挟.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D595；被引用：—

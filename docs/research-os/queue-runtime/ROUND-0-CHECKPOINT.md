@@ -47,3 +47,9 @@ Pass 3 rebuilt the whole canonical generator chain under Python 3.12.13 to fixed
 Remote run 30839816598 (head 3ba8d549) still failed with DEEP_ADJUDICATION_OUT_OF_DATE plus NONFUNCTION_CLAIM_OUTPUT_DRIFT (census had converged). Controlled experiments against the exact committed state established: validate_foundation under 3.12.13 reproduces the CI failure without modifying the tree; standalone --check reproduces the two drifts on committed bytes; regenerating the two drifted generators changed 13 files and then aged migration outputs (chain dependency). After migrate + governance + nonfunction regeneration, validate_foundation reached 63/63 in one iteration.
 
 Final gate (the one that now defines round completion): 26 CI-ordered steps under Python 3.12.13 in CHECK-ONLY mode against the tree being committed — TOTAL_FAILS=0. Research OS tests 3/3; lifecycle tests PASS. Rule recorded: after any generator run, the final gate must be checks-only, CI-ordered, under the CI interpreter, against the exact tree to be committed; mixed generate+check sequences are not stability evidence.
+
+## Pass 5 — final root cause: content-after-generation (proven by CI diff)
+
+A temporary push-triggered debug workflow (removed in the same round) regenerated the Foundation outputs inside CI and uploaded the exact diff. The only new discovery records correspond to text added to this checkpoint report after the last local generation (the pass-4 heading) and to the debug workflow file itself. Interpreter/platform non-determinism is excluded once content order is controlled.
+
+Round discipline encoded in ROUND-LEDGER.jsonl: for every commit — docs/ledger first, canonical generator chain second (CI interpreter, dependency order), check-only CI-ordered gate third against the exact tree, commit fourth.

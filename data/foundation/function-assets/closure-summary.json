@@ -1,13 +1,13 @@
 {
-  "adjudication_ledger_records": 7328,
+  "adjudication_ledger_records": 7330,
   "blocked_semantic_rebounds": 0,
-  "canonical_identity_cards": 7328,
+  "canonical_identity_cards": 7330,
   "claim_ceiling": "Repository-scoped classification, executable checks and explicit quarantine closure; no external truth, peer review, empirical replication or universal proof is inferred.",
   "closure_definition": "Every discovery has one canonical card, one primary identity, two maturity values, one final disposition and an evidence or quarantine path.",
   "counterexample_records": 12,
   "dependency_edges": 1923,
   "dependency_nodes_with_dangling_parents": 0,
-  "discovered_assets": 7328,
+  "discovered_assets": 7330,
   "disposition_distribution": {
     "DOWNGRADE_TO_CONJECTURE": 44,
     "DOWNGRADE_TO_PENDING": 77,
@@ -16,13 +16,13 @@
     "KEEP_AS_STRUCTURAL_METAPHOR": 4,
     "KEEP_AS_TESTED_INDEX_OR_CLASSIFIER": 1,
     "KEEP_AS_TOY_MODEL": 2,
-    "QUARANTINE_UNTIL_DEFINED": 4959,
+    "QUARANTINE_UNTIL_DEFINED": 4961,
     "REJECT_AS_INVALID": 1,
     "REWRITE_AND_RETEST": 1
   },
-  "explicit_quarantine_or_pending": 5081,
+  "explicit_quarantine_or_pending": 5083,
   "external_evidence_distribution": {
-    "E0": 7323,
+    "E0": 7325,
     "E1": 5
   },
   "identity_distribution": {
@@ -35,21 +35,21 @@
     "RELATION_OR_CONSTRAINT": 227,
     "SCORING_OR_INDEX_FUNCTION": 72,
     "STRUCTURAL_METAPHOR": 4,
-    "UNRESOLVED_IDENTITY": 4467
+    "UNRESOLVED_IDENTITY": 4469
   },
   "mathematical_maturity_distribution": {
-    "M0": 4469,
+    "M0": 4471,
     "M1": 2004,
     "M2": 850,
     "M3": 1,
     "M4": 3,
     "M6": 1
   },
-  "public_strong_claim_candidates": 871,
+  "public_strong_claim_candidates": 872,
   "registry_closed": true,
   "reviewer_state_distribution": {
     "TASK98_HUMAN_ADJUDICATION_RECONFIRMED": 12,
-    "TASK99_MACHINE_TRIAGED_EXPLICIT_QUARANTINE": 4468,
+    "TASK99_MACHINE_TRIAGED_EXPLICIT_QUARANTINE": 4470,
     "TASK99_REPOSITORY_EVIDENCE_ADJUDICATED": 2848
   },
   "schema_version": "2.0.0",

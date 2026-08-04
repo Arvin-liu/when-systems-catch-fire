@@ -70,6 +70,13 @@
           "conclusion": "failure",
           "failed_step": "Run python3 tools/foundation/validate_foundation.py",
           "failure": "DEEP_ADJUDICATION_OUT_OF_DATE + NONFUNCTION_CLAIM_OUTPUT_DRIFT (repaired in pass 4 with check-only final gate)"
+        },
+        {
+          "run_id": 30843260738,
+          "head": "8b15eb43",
+          "event": "push (temporary debug workflow)",
+          "conclusion": "success (debug capture)",
+          "finding": "drift records correspond exactly to post-generation doc content (ROUND-0-CHECKPOINT.md pass-4 heading) and the debug workflow file; no environment-specific differences"
         }
       ],
       "repair_pass_2": {
@@ -92,6 +99,18 @@
         "root_cause_of_pass3_miss": "the pass-3 background chain's final verification was read incompletely and its last generation pass was committed without a clean check-only gate against the committed tree; lesson encoded: the final gate must be checks-only against the committed state, in CI step order, under the CI interpreter",
         "final_gate": "26 CI-ordered steps under python 3.12.13, check-only, no regeneration: TOTAL_FAILS=0 (foundation 14 steps incl. validate_foundation 63/63, governance 5 incl. knowledge checks, iteration sync, phase D/E, system map, stage snapshots, human front door, language-thought); Research OS tests 3/3; lifecycle tests PASS",
         "resume_rule": "after any generator run, re-run the full check-only CI-ordered gate against the tree you are about to commit; never infer stability from a mixed generate+check sequence"
+      },
+      "repair_pass_5": {
+        "trigger": "remote runs kept failing with a MOVING drift set (pass2: nonfunction; pass3: deep-adjudication+nonfunction; pass4: census+nonfunction)",
+        "debug_method": "temporary push-triggered workflow regenerating outputs inside CI and uploading the exact git diff (artifact foundation-drift-diff of run 30843260738); workflow removed afterwards",
+        "root_cause_final": "content-after-generation: each pass committed ROUND-LEDGER.jsonl / ROUND-0-CHECKPOINT.md updates (and finally the debug workflow file) AFTER the last generator run; the census/nonfunction scanners read tracked text content, so the new doc text aged the committed outputs. The CI diff proved it: the only new discovery records correspond to the '## Pass 4' checkpoint heading in ROUND-0-CHECKPOINT.md and to the debug workflow file itself. No platform or interpreter non-determinism remains once content order is fixed.",
+        "fix_discipline": "for every commit: write docs/ledger first, run the canonical generator chain second (python 3.12.13, dependency order), run the check-only CI-ordered gate third against the exact tree, commit fourth",
+        "remote_runs_explained": {
+          "30829240122": "ordering root cause (pass 2)",
+          "30832717871": "interpreter version root cause (pass 3)",
+          "30839816598": "mixed: committed state still pre-doc-update generation (pass 4)",
+          "30842732230": "content-after-generation root cause confirmed via drift artifact"
+        }
       }
     }
   ]

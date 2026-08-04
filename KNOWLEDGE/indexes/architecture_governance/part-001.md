@@ -739,6 +739,11 @@
   - 可搜索名称：NFC-b277fd623676a525 / "dataset": {
   - 来源：`tools/emit_evidence_program_openalex.py`
   - 依赖：—；被引用：—
+- ["debug_method": "temporary push-triggered workflow regenerating outputs inside CI and uploading the exact git diff (arti](../../../ROUND-LEDGER.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-45f2d0d005f9147a / "debug_method": "temporary push-triggered workflow regenerating outputs inside CI and uploading the exact git diff (arti
+  - 来源：`ROUND-LEDGER.jsonl`
+  - 依赖：—；被引用：—
 - ["declared": declared.get(dim, "UNRESOLVED_REVIEW_REQUIRED"),](../../../tools/propagation/impact_contract.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-8c07685e78d13512 / "declared": declared.get(dim, "UNRESOLVED_REVIEW_REQUIRED"),
@@ -1444,6 +1449,11 @@
   - 可搜索名称：NFC-56996007b650c1eb / "message": f"Explicit seed '{seed_id}' has no path mapping and no structured evidence."})
   - 来源：`tools/operations/compute_change_propagation.py`
   - 依赖：—；被引用：—
+- ["method": "controlled experiments against the exact committed state (tree clean before each probe): (1) validate_foundat](../../../ROUND-LEDGER.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-cb7a29cf8a2146d4 / "method": "controlled experiments against the exact committed state (tree clean before each probe): (1) validate_foundat
+  - 来源：`ROUND-LEDGER.jsonl`
+  - 依赖：—；被引用：—
 - ["method_or_evidence_class": "SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION",](../../../tools/governance/build_human_results.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-e1990768de42f4cb / "method_or_evidence_class": "SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION",
@@ -1818,6 +1828,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-6ec8e1b751683ab2 / "RESULTS/EVIDENCE-LINEAGE.md",
   - 来源：`tests/test_knowledge_experience.py`
+  - 依赖：—；被引用：—
+- ["resume_rule": "after any generator run, re-run the full check-only CI-ordered gate against the tree you are about to co](../../../ROUND-LEDGER.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-21abcecfc541faf1 / "resume_rule": "after any generator run, re-run the full check-only CI-ordered gate against the tree you are about to co
+  - 来源：`ROUND-LEDGER.jsonl`
   - 依赖：—；被引用：—
 - ["resume_rule": "always generate and verify Foundation outputs with the CI interpreter version (currently 3.12); a local-](../../../ROUND-LEDGER.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -2488,19 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-c646c794f66d6a6a / "validation_authority": {"authority": "external", "required_evidence": \["receipt"\], "evidence_boundary": "fixture"},
   - 来源：`tests/test_incremental_execution_validator.py`
-  - 依赖：—；被引用：—
-- ["validation_authority": {"authority": "human", "required_evidence": \["review"\], "evidence_boundary": "fixture"},](../../../tests/test_incremental_execution_validator.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-50471d2790ee8986 / "validation_authority": {"authority": "human", "required_evidence": \["review"\], "evidence_boundary": "fixture"},
-  - 来源：`tests/test_incremental_execution_validator.py`
-  - 依赖：—；被引用：—
-- ["VERIFIED", "OFFICIAL_TEXT_NOT_VERIFIED", "LEGAL_REVIEW_REQUIRED",](../../../tests/test_source_rights_gate_enum_consistency.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-fef2c09365691c0d / "VERIFIED", "OFFICIAL_TEXT_NOT_VERIFIED", "LEGAL_REVIEW_REQUIRED",
-  - 来源：`tests/test_source_rights_gate_enum_consistency.py`
-  - 依赖：—；被引用：—
-- ["verified_exposure_events",](../../../tools/validate_sustainability_signal_interface.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-a0f477c511a90a4e / "verified_exposure_events",
-  - 来源：`tools/validate_sustainability_signal_interface.py`
   - 依赖：—；被引用：—
