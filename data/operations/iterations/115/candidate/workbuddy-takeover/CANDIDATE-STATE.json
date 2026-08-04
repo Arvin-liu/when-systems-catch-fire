@@ -30,7 +30,7 @@
      "deliverable": "27 frozen anti-overfit fixtures + replay + separate metrics", "tests_pass": 27, "tests_methods": 4},
     {"round": 6, "commit": "965e796edf6e2b3887219c89558537b7b4dde6ae",
      "deliverable": "bounded sleep-timing pilot -> BLOCKED_WITH_EVIDENCE + trace", "tests_pass": 2},
-    {"round": 7, "commit": "PENDING",
+    {"round": 7, "commit": "1416fcc782eb276b08d27a28d1d31fd172a7a609",
      "deliverable": "docs + CODEX-HANDOFF + GPT-OWNER-REVIEW-PACKET + candidate state + Draft PR", "tests_pass": 0}
   ],
   "test_totals": {
