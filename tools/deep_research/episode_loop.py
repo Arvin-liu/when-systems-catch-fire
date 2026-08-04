@@ -1,4 +1,4 @@
-"""Deep Research Capability — bounded inner research episode loop (Round 3).
+"""Deep Research Capability — bounded inner research episode loop (Round 3 + 4).
 
 Implements one episode cycle:
   freeze scope -> plan obligations -> search -> open/read -> extract ->
@@ -11,10 +11,10 @@ is the single authority for state transitions and for the executor
 no-self-approval contract, so this module can never mark an episode complete or
 raise a claim ceiling on its own — those are gate/owner decisions.
 
-The sufficiency evaluator is PLUGGABLE: Round 3 supplies a minimal placeholder
-(obligation-coverage only); Round 4 replaces it with the hard-gate + vector
-algorithm. The loop calls ``evaluate`` and only finalizes to a terminal state
-when the evaluator returns a stop decision.
+The sufficiency evaluator (Round 4) is transparent: it enforces the hard gates
+and computes a multidimensional sufficiency vector, then decides. The loop calls
+``evaluate`` and only finalizes to a terminal state when the evaluator returns a
+stop decision. No scalar score alone authorizes completion.
 
 Security rules enforced here (per TASK.md Round 3):
 * every adapter return is an executor observation under contract (no
@@ -107,17 +107,215 @@ def add_claim(ep: dict, claim_text: str, claim_ceiling: str,
 
 
 # ---------------------------------------------------------------------------
-# Minimal sufficiency evaluator (Round 3 placeholder; Round 4 replaces)
+# Transparent sufficiency evaluator (Round 4): hard gates + sufficiency vector
 # ---------------------------------------------------------------------------
+# Material claims are those asserted at/above these ceilings — they MUST be
+# evidenced (observations, independent families, recomputation, contrary search).
+_MATERIAL_CEILINGS = ("BOUNDED_STRONG", "QUALIFIED")
+
+# Severity -> ordinal (for the unresolved-gap-severity dimension).
+_SEV_SCORE = {"LOW": 0, "MEDIUM": 1, "HIGH": 2, "CRITICAL": 3}
+
+# Strategy-pack-specific thresholds for each sufficiency-vector dimension.
+# A dimension is "met" only when its value >= its threshold. Every dimension
+# must be met AND every hard gate must pass before STOP_SUFFICIENT_CANDIDATE is
+# permitted. NO scalar score alone authorizes completion. Unknown packs fall
+# back to the default thresholds (registry-driven).
+_SUFFICIENCY_THRESHOLDS = {
+    DEFAULT_STRATEGY_PACK: {
+        "obligation_coverage": 1.0,
+        "claim_support_faithfulness": 0.8,
+        "independent_family_coverage": 1.0,   # requires >=2 families when material claims exist
+        "contrary_null_coverage": 1.0,        # required when material claims exist
+        "method_data_recomputation_coverage": 1.0,
+        "claim_ceiling_stability": 1.0,
+        "unresolved_gap_severity": 0.0,       # no open HIGH/CRITICAL obligation
+        "marginal_information_gain": 0.0,
+    },
+}
+
+
+def _pack_thresholds(pack: str) -> dict:
+    return _SUFFICIENCY_THRESHOLDS.get(_safe_pack(pack)) or \
+        _SUFFICIENCY_THRESHOLDS[DEFAULT_STRATEGY_PACK]
+
+
+class SufficiencyEvaluator:
+    """Transparent, inspectable sufficiency evaluator.
+
+    Produces a decision record containing the hard-gate results, the full
+    sufficiency vector, and a human-readable reason. Replaces the Round 3
+    obligation-coverage placeholder and satisfies TASK.md Round 4.
+    """
+
+    def __init__(self, thresholds: Optional[dict] = None):
+        self.thresholds = thresholds
+
+    # -- episode introspection helpers ------------------------------------
+    @staticmethod
+    def _material_claims(ep: dict) -> list[dict]:
+        return [c for c in ep.get("candidate_claims", [])
+                if c.get("claim_ceiling") in _MATERIAL_CEILINGS]
+
+    @staticmethod
+    def _families(ep: dict) -> set:
+        fams = set()
+        for s in ep.get("source_identities", []):
+            sid = s.get("source_id", "") or ""
+            fams.add(sid.split(":", 1)[0] or "unknown")
+        return fams
+
+    @staticmethod
+    def _gate(gid: str, passed: bool, detail: str) -> dict:
+        return {"gate": gid, "passed": bool(passed), "detail": detail}
+
+    # -- hard gates -------------------------------------------------------
+    def hard_gates(self, ep: dict) -> list[dict]:
+        obs = ep.get("observations", [])
+        obls = ep.get("evidence_obligations", [])
+        mat = self._material_claims(ep)
+
+        # 1. scope frozen (a frozen scope always carries a brief)
+        gates = [self._gate("scope_frozen",
+                            bool(ep.get("brief")),
+                            "episode scope must be frozen (brief present)")]
+        # 2. unsupported material claim (material claim with no gathered observation)
+        gates.append(self._gate("unsupported_material_claim",
+                                not (bool(mat) and len(obs) == 0),
+                                "material claims require gathered observations"))
+        # 3. open burden-bearing severe obligation
+        open_severe = [o for o in obls
+                       if o.get("status") != "SATISFIED" and o.get("severity") in ("HIGH", "CRITICAL")]
+        gates.append(self._gate("open_burden_bearing_severe_obligation",
+                                not open_severe, "no open HIGH/CRITICAL obligation"))
+        # 4. unresolved load-bearing source identity / access scope
+        bad_src = [s for s in ep.get("source_identities", [])
+                   if s.get("access_level") in (None, "NONE") or not s.get("inspected_scope")]
+        gates.append(self._gate("unresolved_source_identity", not bad_src,
+                                "all source identities resolved with inspected scope"))
+        # 5. citation attribution mismatch (abstract-only source behind a material claim)
+        abstract_only = [s for s in ep.get("source_identities", [])
+                         if s.get("access_level") == "ABSTRACT_ONLY"]
+        gates.append(self._gate("citation_attribution_mismatch",
+                                not (bool(abstract_only) and bool(mat)),
+                                "abstract-only sources must not back material claims"))
+        # 6. false independence across one source family
+        gates.append(self._gate("false_independence_same_family",
+                                not (bool(mat) and len(self._families(ep)) <= 1),
+                                "material claims need >=2 independent source families"))
+        # 7. high-stakes evidence-route failure (failed tool/calc behind a material claim)
+        errored = any(o.get("errors") for o in obs)
+        gates.append(self._gate("high_stakes_evidence_route_failure",
+                                not (bool(mat) and errored),
+                                "no failed required computation/tool behind material claims"))
+        # 8. unresolved prompt injection / provenance contamination
+        injection = any((p.get("injection_detected")
+                         for o in obs for p in (o.get("provenance") or [])))
+        gates.append(self._gate("unresolved_prompt_injection", not injection,
+                                "no unresolved prompt-injection / provenance contamination"))
+        # 9. blocked evidence route (load-bearing source with NONE access)
+        none_src = [s for s in ep.get("source_identities", [])
+                    if s.get("access_level") == "NONE"]
+        gates.append(self._gate("blocked_evidence_route", not none_src,
+                                "no load-bearing source with NONE access"))
+        # 10. missing required calculation/method inspection without ceiling reduction
+        requires_calc = bool(ep.get("requires_recomputation"))
+        has_calc = any(o.get("calculation_result") is not None for o in obs)
+        gates.append(self._gate("missing_required_calc_without_ceiling_reduction",
+                                not (requires_calc and not has_calc),
+                                "quantitative claim needs recomputation or ceiling reduction"))
+        return gates
+
+    # -- sufficiency vector ------------------------------------------------
+    def sufficiency_vector(self, ep: dict, thresh: dict) -> list[dict]:
+        obs = ep.get("observations", [])
+        obls = ep.get("evidence_obligations", [])
+        mat = self._material_claims(ep)
+
+        cov = (sum(1 for o in obls if o.get("status") == "SATISFIED") / len(obls)) if obls else 1.0
+        supported = (sum(1 for _ in mat if len(obs) > 0) / len(mat)) if mat else 1.0
+        fams = self._families(ep)
+        indep = (1.0 if len(fams) >= 2 else 0.0) if mat else 1.0
+        contrary = (1.0 if ep.get("contrary_evidence_sought") else 0.0) if mat else 1.0
+        calcs = [o for o in obs if o.get("calculation_result") is not None]
+        recov = (sum(1 for c in calcs if not c["calculation_result"].get("errors")) / len(calcs)) \
+            if calcs else 1.0
+        stable = (1.0 if not any(c.get("claim_ceiling") == "NOT_ASSERTED" for c in mat) else 0.0) \
+            if mat else 1.0
+        gap = max([_SEV_SCORE.get(o.get("severity", "LOW"), 0) for o in obls
+                   if o.get("status") != "SATISFIED"], default=0)
+        gap_dim = 1.0 - (gap / 3.0)
+        mig = 1.0 if obs else 0.0
+
+        dims = [
+            ("obligation_coverage", cov),
+            ("claim_support_faithfulness", supported),
+            ("independent_family_coverage", indep),
+            ("contrary_null_coverage", contrary),
+            ("method_data_recomputation_coverage", recov),
+            ("claim_ceiling_stability", stable),
+            ("unresolved_gap_severity", gap_dim),
+            ("marginal_information_gain", mig),
+        ]
+        vec = []
+        for name, val in dims:
+            t = thresh.get(name, 1.0)
+            vec.append({"dimension": name, "value": round(float(val), 4),
+                        "threshold": t, "met": bool(val >= t - 1e-9)})
+        return vec
+
+    # -- decision ---------------------------------------------------------
+    def evaluate(self, ep: dict) -> dict:
+        pack = _safe_pack(ep.get("strategy_pack") or DEFAULT_STRATEGY_PACK)
+        thresh = self.thresholds or _pack_thresholds(pack)
+        gates = self.hard_gates(ep)
+        failed = [g for g in gates if not g["passed"]]
+        vector = self.sufficiency_vector(ep, thresh)
+
+        if failed:
+            ids = {g["gate"] for g in failed}
+            if ids & {"unresolved_prompt_injection", "high_stakes_evidence_route_failure"}:
+                decision = "ESCALATE_GPT_OWNER"
+            elif "blocked_evidence_route" in ids:
+                decision = "BLOCKED_WITH_EVIDENCE"
+            else:
+                decision = "CONTINUE_RESEARCH"
+        else:
+            if all(v["met"] for v in vector):
+                decision = "STOP_SUFFICIENT_CANDIDATE"
+            elif next((v for v in vector if v["dimension"] == "marginal_information_gain"),
+                      {"value": 1.0})["value"] == 0.0:
+                decision = "STOP_INSUFFICIENT_EVIDENCE"
+            else:
+                decision = "CONTINUE_RESEARCH"
+
+        return {
+            "decision": decision,
+            "registry_pack": pack,
+            "hard_gates": gates,
+            "sufficiency_vector": vector,
+            "failed_gates": [g["gate"] for g in failed],
+            "reason": self._reason(decision, failed, vector),
+        }
+
+    @staticmethod
+    def _reason(decision: str, failed: list[dict], vector: list[dict]) -> str:
+        if failed:
+            return "hard gate(s) failed: " + ", ".join(g["gate"] for g in failed)
+        unmet = [v["dimension"] for v in vector if not v["met"]]
+        if decision == "STOP_SUFFICIENT_CANDIDATE":
+            return "all hard gates passed; sufficiency vector met"
+        return f"insufficient (unmet: {', '.join(unmet)})" if unmet else decision
+
+
+def evaluate_sufficiency(ep: dict, thresholds: Optional[dict] = None) -> dict:
+    """Module-level entry point used as the controller's default evaluator."""
+    return SufficiencyEvaluator(thresholds=thresholds).evaluate(ep)
+
+
+# Backward-compatible alias (Round 3 code referenced the placeholder name).
 def _placeholder_sufficiency(ep: dict) -> dict:
-    obls = ep.get("evidence_obligations", [])
-    open_severe = [o for o in obls if o.get("status") != "SATISFIED"
-                   and o.get("severity") in ("HIGH", "CRITICAL")]
-    if open_severe:
-        return {"decision": "CONTINUE_RESEARCH", "hard_gates_passed": False,
-                "failed_hard_gates": [o["obligation_id"] for o in open_severe]}
-    return {"decision": "STOP_SUFFICIENT_CANDIDATE", "hard_gates_passed": True,
-            "failed_hard_gates": []}
+    return evaluate_sufficiency(ep)
 
 
 # ---------------------------------------------------------------------------
@@ -128,7 +326,7 @@ class EpisodeController:
                  sufficiency_evaluator: Callable[[dict], dict] = None,
                  checkpoint_dir: Optional[str] = None):
         self.adapters = adapters or A.build_default_adapters()
-        self.sufficiency = sufficiency_evaluator or _placeholder_sufficiency
+        self.sufficiency = sufficiency_evaluator or evaluate_sufficiency
         self.checkpoint_dir = Path(checkpoint_dir) if checkpoint_dir else None
 
     # -- scope / plan -------------------------------------------------------
@@ -185,7 +383,9 @@ class EpisodeController:
     def evaluate(self, ep: dict) -> dict:
         if ep["state"] not in ("ANALYSIS",):
             K.transition(ep, "ANALYSIS")
-        return self.sufficiency(ep)
+        decision = self.sufficiency(ep)
+        ep.setdefault("sufficiency_decision", decision)
+        return decision
 
     def finalize(self, ep: dict, decision: str) -> bool:
         """Finalize to a terminal state only when the evaluator decides so.

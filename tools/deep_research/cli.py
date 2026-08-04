@@ -139,6 +139,7 @@ def queue_step(queue: Q.SerialQueue, controller: E.EpisodeController,
         claims=ep.get("candidate_claims", []),
         obligations_status={"open": len([o for o in ep.get("evidence_obligations", [])
                                          if o.get("status") != "SATISFIED"])},
+        sufficiency_decision=ep.get("sufficiency_decision"),
         machine_trace_ref=f"trace-{ep['episode_id']}",
     )
     item["episode_id"] = ep["episode_id"]
