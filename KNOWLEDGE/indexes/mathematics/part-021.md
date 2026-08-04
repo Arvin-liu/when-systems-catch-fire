@@ -4,6 +4,76 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [统一函数总表/0093-D44-确定性误解函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-3a20972f52b6f927 / 统一函数总表/0093-D44-确定性误解函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D44；被引用：—
+- [统一函数总表/0094-D45-中间稳态存在性函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-6045af3fca6412fc / 统一函数总表/0094-D45-中间稳态存在性函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D45；被引用：—
+- [统一函数总表/0095-D46-碰撞层级8格概率函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-b1f61a77166da26b / 统一函数总表/0095-D46-碰撞层级8格概率函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D46；被引用：—
+- [统一函数总表/0096-D47-点火窗口关闭动力学函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-f7322e6f4fb34b1e / 统一函数总表/0096-D47-点火窗口关闭动力学函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D47；被引用：—
+- [统一函数总表/0097-D48-退化渗透临界触发函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-ee15a03c034ce118 / 统一函数总表/0097-D48-退化渗透临界触发函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D48；被引用：—
+- [统一函数总表/0098-D49-种子-点火结果概率分布函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-eb7eb4948ceb599d / 统一函数总表/0098-D49-种子-点火结果概率分布函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D49；被引用：—
+- [统一函数总表/0099-D50-碰撞产出密度函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-37bda9793439e921 / 统一函数总表/0099-D50-碰撞产出密度函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D50；被引用：—
+- [统一函数总表/0100-D51-门锁交替律函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-545a80a751be59ce / 统一函数总表/0100-D51-门锁交替律函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D51；被引用：—
+- [统一函数总表/0101-D52-自锁结构稳定性函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-19f55f6ae7f02caa / 统一函数总表/0101-D52-自锁结构稳定性函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D52；被引用：—
+- [统一函数总表/0102-D53-信号最优流速函数(凯利公式同构).md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-612599e6e21cb21a / 统一函数总表/0102-D53-信号最优流速函数(凯利公式同构).md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D53；被引用：—
+- [统一函数总表/0103-D54-C_exit(geo)四因子子函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-62b54f315c6d3969 / 统一函数总表/0103-D54-C_exit(geo)四因子子函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D54；被引用：—
+- [统一函数总表/0104-D55-ε_eff昼夜分时函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-904dfe68b1a013fe / 统一函数总表/0104-D55-ε_eff昼夜分时函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D55；被引用：—
+- [统一函数总表/0105-D56-R_upgrade升级路径函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-c7b091cb1660a130 / 统一函数总表/0105-D56-R_upgrade升级路径函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D56；被引用：—
+- [统一函数总表/0106-D57-解读偏置函数(核心疑问→错误解读的数学结构).md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-30204a939b4bef84 / 统一函数总表/0106-D57-解读偏置函数(核心疑问→错误解读的数学结构).md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D57；被引用：—
 - [统一函数总表/0107-D58-固化加速函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-fe3373e0f35a934c / 统一函数总表/0107-D58-固化加速函数.md
@@ -2434,73 +2504,3 @@
   - 可搜索名称：NFC-62eaa9240d9d9458 / 统一函数总表/0589-D579-阅历赤字解决.md
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：D579；被引用：—
-- [统一函数总表/0590-D580-边缘革命.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-47f5a636717db8f8 / 统一函数总表/0590-D580-边缘革命.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D580；被引用：—
-- [统一函数总表/0591-D581-信息茧房破解.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-c21e12883cd6dc51 / 统一函数总表/0591-D581-信息茧房破解.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D581；被引用：—
-- [统一函数总表/0592-D582-堆肥法.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-3e767368c34ea16c / 统一函数总表/0592-D582-堆肥法.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D582；被引用：—
-- [统一函数总表/0593-D583-认知肌肉锻炼.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-c0e1a7a2ef9da35a / 统一函数总表/0593-D583-认知肌肉锻炼.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D583；被引用：—
-- [统一函数总表/0594-D584-电子节食.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-23e09d5b692ccc0f / 统一函数总表/0594-D584-电子节食.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D584；被引用：—
-- [统一函数总表/0595-D585-认知复杂度收敛.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-ba0c6ac8aaff7b87 / 统一函数总表/0595-D585-认知复杂度收敛.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D585；被引用：—
-- [统一函数总表/0596-D586-独特赛道选择.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-65a00c11d70ec6a4 / 统一函数总表/0596-D586-独特赛道选择.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D586；被引用：—
-- [统一函数总表/0597-D587-学科理论核抽取函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-5b2775edc08a87f5 / 统一函数总表/0597-D587-学科理论核抽取函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D587；被引用：—
-- [统一函数总表/0598-D588-经典问题差分函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-e3cd24b6726c9600 / 统一函数总表/0598-D588-经典问题差分函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D588；被引用：—
-- [统一函数总表/0599-D589-跨学科同构投影函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-5af38ff53a05f955 / 统一函数总表/0599-D589-跨学科同构投影函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D589；被引用：—
-- [统一函数总表/0600-D590-证据制度守门函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-7bc4bbcb06cf2920 / 统一函数总表/0600-D590-证据制度守门函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D590；被引用：—
-- [统一函数总表/0601-D591-尺度桥接函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-4d6364d9b48c8852 / 统一函数总表/0601-D591-尺度桥接函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D591；被引用：—
-- [统一函数总表/0602-D592-规范性分离函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-5d53544b19ac386a / 统一函数总表/0602-D592-规范性分离函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D592；被引用：—
-- [统一函数总表/0603-D593-解释剩余函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：NFC-5d4c4b54b78c83f7 / 统一函数总表/0603-D593-解释剩余函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D593；被引用：—

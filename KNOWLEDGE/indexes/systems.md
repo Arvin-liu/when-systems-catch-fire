@@ -4,9 +4,9 @@
 
 索引按固定 500 条分片，避免单页过大而无法在 GitHub 渲染。分片连续覆盖本主题主归属资产，未按重要性删减。
 
-- [第 001 片](./systems/part-001.md)：1—500；"""Build deterministic Ignition Atlas projections from repository artifacts.""" → Causal diagrams for empirical research
-- [第 002 片](./systems/part-002.md)：501—1000；Causal identification strategy must be specified where a causal claim is made. → Multiscale Causal Fabric Data
-- [第 003 片](./systems/part-003.md)：1001—1500；Multiscale Causal Fabric, Probabilistic System Dynamics, and Adaptive Relational Network are current modeling/projection → The repository contains many relation-like assets: Foundation registries, function dependencies, Q12-Q14 control overlay
-- [第 004 片](./systems/part-004.md)：1501—2000；The root cause is **not** any single claim. It is an **infrastructure** defect: the repository's *Git path set → 候选机制写成“最终机制”；
-- [第 005 片](./systems/part-005.md)：2001—2500；候选机制检查数：9（M1–M9）。 → 生命共同体价值投影：** 价值：责任清晰、应急协调、专业分工与大规模复杂任务，是有效组织的工具。条件：仅当权力可问责、层级可撤销、决策可复核且底层有申诉与退出机制时才有价值。伤害：当层级不可问责、不可撤销、把服从当价值或剥夺底层权利时，会伤
-- [第 006 片](./systems/part-006.md)：2501—2692；生命共同体价值投影：** 价值：隔离风险、保护脆弱系统、守护隐私、孵化新结构、防止污染或入侵，是有价值的情境工具。条件：仅当目标正当（隔离风险/保护脆弱/隐私/孵化/防污染）且设有时限与退出权时才有价值。伤害：当变成永久封锁、排斥异己、信息 → 黑死病是加速器。它加速了共享机制的失效。人口锐减，税收减少，汗无法再通过共享收入维持别克们的忠诚。别克们开始各自为政，汗的权威成了空壳。这是内部的共享机制崩溃了。
+- [第 001 片](./systems/part-001.md)：1—500；"""Build deterministic Ignition Atlas projections from repository artifacts.""" → calibration projection
+- [第 002 片](./systems/part-002.md)：501—1000；Candidate coarse-graining example; does not claim macro always beats micro. → Mechanism interpretation is handled by the Mechanism Adjudication Plane after observation and validation.
+- [第 003 片](./systems/part-003.md)：1001—1500；mechanism map; → The goal is not forced negativity. The goal is to prevent praise, alignment, or reassurance from replacing mechanism, ev
+- [第 004 片](./systems/part-004.md)：1501—2000；The HyperRelation pairwise projection records explicit information-loss residue. → 价值：在局部、低耦合、关系稳定、可预测范围内，线性近似是简洁有效的建模与规划工具。条件：仅当系统满足低耦合、关系稳定、可预测，且设反馈与偏差检测时才有价值。伤害：当把复杂生命系统强行简化为直线、忽略临界点时会伤害共同体（误判崩溃）。不可缺少
+- [第 005 片](./systems/part-005.md)：2001—2500；价值：承认临界点、放大、涌现与不确定性，是对复杂系统的诚实描述，支撑预防原则。条件：仅当配套预防原则、沙盒、风险上限、可逆操作与实时反馈时才有价值。伤害：当以“不可预测”为由放弃约束、制造不可逆风险时会伤害共同体。不可缺少的约束：预防原则、 → 点火框架提供了因果链分析、跨域同构识别、门控分析和乘法临界漂移分析，但不能替代计量检验和反事实推断。市场失灵的具体因果判定必须 pending。
+- [第 006 片](./systems/part-006.md)：2501—2714；点火框架提供了因果链分析、跨域同构识别和叙事结构收敛，但不能替代文本细读、文学共同体讨论。文学作品跨时代有效性的具体判定必须 pending。 → 黑死病是加速器。它加速了共享机制的失效。人口锐减，税收减少，汗无法再通过共享收入维持别克们的忠诚。别克们开始各自为政，汗的权威成了空壳。这是内部的共享机制崩溃了。

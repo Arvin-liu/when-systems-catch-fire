@@ -4,10 +4,20 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- ["description": "Transparent stopping decision. Fails closed: decision required; if STOP_SUFFICIENT_CANDIDATE, hard_gates](../../../tools/deep_research/generate_schemas.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-0139409691fd3f7c / "description": "Transparent stopping decision. Fails closed: decision required; if STOP_SUFFICIENT_CANDIDATE, hard_gates
+  - 来源：`tools/deep_research/generate_schemas.py`
+  - 依赖：—；被引用：—
 - ["execution_agents": \[{"name": "Codex Agent", "role": "evidence collection tool", "evidence_reference": "https://github.c](../../../tests/test_stage_snapshot_publication.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-b1d3e7fdc691ac8e / "execution_agents": \[{"name": "Codex Agent", "role": "evidence collection tool", "evidence_reference": "https://github.c
   - 来源：`tests/test_stage_snapshot_publication.py`
+  - 依赖：—；被引用：—
+- ["if": {"required": \["decision"\], "properties": {"decision": {"const": "STOP_SUFFICIENT_CANDIDATE"}}},](../../../tools/deep_research/generate_schemas.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-61cffb3cb7d0de66 / "if": {"required": \["decision"\], "properties": {"decision": {"const": "STOP_SUFFICIENT_CANDIDATE"}}},
+  - 来源：`tools/deep_research/generate_schemas.py`
   - 依赖：—；被引用：—
 - ["N7": {"name": "Validator / Feedback", "role": "一致性验证与修订反馈", "schema": "n7-validator-schema.json"},](../../../tools/research_os/adapters.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -409,6 +419,21 @@
   - 可搜索名称：IMPLICIT-13EC985309612492 / dec_in_batch = {d\["stable_id"\] for d in decisions if d.get("batch_id") == batch\["batch_id"\]} / IMPLICIT-13EC985309612492
   - 来源：`tools/foundation/validate_084_max_adjudication.py`
   - 依赖：—；被引用：—
+- [decision = "BLOCKED_WITH_EVIDENCE"](../../../tools/deep_research/episode_loop.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-406b8b47ee3ddfe1 / decision = "BLOCKED_WITH_EVIDENCE"
+  - 来源：`tools/deep_research/episode_loop.py`
+  - 依赖：—；被引用：—
+- [decision = "STOP_INSUFFICIENT_EVIDENCE"](../../../tools/deep_research/episode_loop.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-bb77230f9cf479b2 / decision = "STOP_INSUFFICIENT_EVIDENCE"
+  - 来源：`tools/deep_research/episode_loop.py`
+  - 依赖：—；被引用：—
+- [decision = "STOP_SUFFICIENT_CANDIDATE"](../../../tools/deep_research/episode_loop.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-fb0ac0e0d29b90de / decision = "STOP_SUFFICIENT_CANDIDATE"
+  - 来源：`tools/deep_research/episode_loop.py`
+  - 依赖：—；被引用：—
 - [decision = "UNRESOLVED_REVIEW_REQUIRED"](../../../tools/propagation/impact_contract.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-e292be981359ce5e / decision = "UNRESOLVED_REVIEW_REQUIRED"
@@ -438,6 +463,11 @@
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-CFE30ACB0E280E22 / def _impact_decisions(manifest: dict, source: Path) -> dict\[str, dict\]: / IMPLICIT-CFE30ACB0E280E22
   - 来源：`tools/validate_iteration_sync.py`
+  - 依赖：—；被引用：—
+- [def _reason(decision: str, failed: list\[dict\], vector: list\[dict\]) -> str:](../../../tools/deep_research/episode_loop.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-5812E8778949F42E / def _reason(decision: str, failed: list\[dict\], vector: list\[dict\]) -> str: / IMPLICIT-5812E8778949F42E
+  - 来源：`tools/deep_research/episode_loop.py`
   - 依赖：—；被引用：—
 - [def _recommend(self, feedback: dict) -> str:](../../../function-os-candidate/v0.2/function_os/n7_validator.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
@@ -494,10 +524,25 @@
   - 可搜索名称：IMPLICIT-A3E8553099A10339 / def decisions_by_id(items: list\[dict\]) -> dict\[str, dict\]: / IMPLICIT-A3E8553099A10339
   - 来源：`tools/operations/compute_change_propagation.py`
   - 依赖：—；被引用：—
+- [def emit_episode_fixture(fid, fn, desc, intent_decision):](../../../tools/deep_research/generate_round5_fixtures.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-266FFD8F9C782428 / def emit_episode_fixture(fid, fn, desc, intent_decision): / IMPLICIT-266FFD8F9C782428
+  - 来源：`tools/deep_research/generate_round5_fixtures.py`
+  - 依赖：—；被引用：—
+- [def finalize(self, ep: dict, decision: str) -> bool:](../../../tools/deep_research/episode_loop.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-3B564C1F62BB2321 / def finalize(self, ep: dict, decision: str) -> bool: / IMPLICIT-3B564C1F62BB2321
+  - 来源：`tools/deep_research/episode_loop.py`
+  - 依赖：—；被引用：—
 - [def load_existing_decisions(self):](../../../tools/governance/fail_closed_publication_gate.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-2B4231EF71C308CC / def load_existing_decisions(self): / IMPLICIT-2B4231EF71C308CC
   - 来源：`tools/governance/fail_closed_publication_gate.py`
+  - 依赖：—；被引用：—
+- [def make_sufficiency_decision(**o: Any) -> dict:](../../../tools/deep_research/records.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-8C1EC2D1E535002D / def make_sufficiency_decision(**o: Any) -> dict: / IMPLICIT-8C1EC2D1E535002D
+  - 来源：`tools/deep_research/records.py`
   - 依赖：—；被引用：—
 - [def node(node_id: str, label: str, object_ref: str, source: str, maturity: str, value: str, cost: list\[str\], maintainer: str, uncertainty: str, decision: str, reason: str) -> dict:](../../../tools/build_ignition_atlas.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
@@ -644,6 +689,11 @@
   - 可搜索名称：NFC-dd489fc362ae582c / empirical = \[d for d in decisions_084 if d\['evidence_status'\] == 'EMPIRICAL_EVIDENCE_AVAILABLE'\]
   - 来源：`tools/foundation/verify_085_architecture_freeze.py`
   - 依赖：—；被引用：—
+- [Episode decision distribution:** CONTINUE_RESEARCH 9, STOP_SUFFICIENT_](../../../docs/deep-research/EVALUATION.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-ef8dcc24a98a760e / Episode decision distribution:** CONTINUE_RESEARCH 9, STOP_SUFFICIENT_
+  - 来源：`docs/deep-research/EVALUATION.md`
+  - 依赖：—；被引用：—
 - [Every no-change decision includes evidence; green CI alone does not close propagation.](../../../templates/operations/independent-review-template.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-0848a785fbe5e971 / Every no-change decision includes evidence; green CI alone does not close propagation.
@@ -743,6 +793,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-cd204f3b9199e6f2 / if "isomorphism" in str(strong_terms).lower() and reconciled_decision != "RETAIN_SCOPED_DEFINITION":
   - 来源：`tools/foundation/process_084_batch.py`
+  - 依赖：—；被引用：—
+- [if decision == "STOP_SUFFICIENT_CANDIDATE":](../../../tools/deep_research/episode_loop.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-6ec219f3f69fdcd9 / if decision == "STOP_SUFFICIENT_CANDIDATE":
+  - 来源：`tools/deep_research/episode_loop.py`
   - 依赖：—；被引用：—
 - [if decision.get("provenance_verified") is True:](../../../tools/governance/fail_closed_publication_gate.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -1054,6 +1109,16 @@
   - 可搜索名称：NFC-15db74c681d0652c / residue.append({"type": "missing_component_decision", "component_id": item, "message": "Resolved component lacks CHANGE/
   - 来源：`tools/operations/compute_change_propagation.py`
   - 依赖：—；被引用：—
+- [return decision == "STOP_INSUFFICIENT_EVIDENCE" or final_state == "INSUFFICIENT_EVIDENCE_COMPLETE"](../../../tools/deep_research/queue_runtime.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-4cdc8f3834c99b63 / return decision == "STOP_INSUFFICIENT_EVIDENCE" or final_state == "INSUFFICIENT_EVIDENCE_COMPLETE"
+  - 来源：`tools/deep_research/queue_runtime.py`
+  - 依赖：—；被引用：—
+- [return f"insufficient (unmet: {', '.join(unmet)})" if unmet else decision](../../../tools/deep_research/episode_loop.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-acad2f77de121d87 / return f"insufficient (unmet: {', '.join(unmet)})" if unmet else decision
+  - 来源：`tools/deep_research/episode_loop.py`
+  - 依赖：—；被引用：—
 - [S120-021 (EG-CFG):** Execution-guided code generation with line-by-line feedback. Strongest evidence for N6 (ExecutionTr](../../../reports/external-research/121c01-max-semantic-review-batch-01.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-9f5182c80ba8d748 / S120-021 (EG-CFG):** Execution-guided code generation with line-by-line feedback. Strongest evidence for N6 (ExecutionTr
@@ -1074,10 +1139,40 @@
   - 可搜索名称：NFC-999a87a59cc019c9 / seek external evidence;
   - 来源：`docs/architecture/attention-attractor-control-plane.md`
   - 依赖：—；被引用：—
+- [self.assertEqual(dec\["decision"\], "BLOCKED_WITH_EVIDENCE")](../../../tests/test_deep_research_round4.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-5e717652d11d6961 / self.assertEqual(dec\["decision"\], "BLOCKED_WITH_EVIDENCE")
+  - 来源：`tests/test_deep_research_round4.py`
+  - 依赖：—；被引用：—
+- [self.assertEqual(dec\["decision"\], "STOP_SUFFICIENT_CANDIDATE")](../../../tests/test_deep_research_round4.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-5d88376886fd310c / self.assertEqual(dec\["decision"\], "STOP_SUFFICIENT_CANDIDATE")
+  - 来源：`tests/test_deep_research_round4.py`
+  - 依赖：—；被引用：—
+- [self.assertEqual(dec_custom\["decision"\], "STOP_SUFFICIENT_CANDIDATE")](../../../tests/test_deep_research_round4.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-e7439cf19df72323 / self.assertEqual(dec_custom\["decision"\], "STOP_SUFFICIENT_CANDIDATE")
+  - 来源：`tests/test_deep_research_round4.py`
+  - 依赖：—；被引用：—
+- [self.assertEqual(report\["in_episode_decision"\], "BLOCKED_WITH_EVIDENCE")](../../../tests/test_deep_research_round6.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-ca8e17bc7c79a6bc / self.assertEqual(report\["in_episode_decision"\], "BLOCKED_WITH_EVIDENCE")
+  - 来源：`tests/test_deep_research_round6.py`
+  - 依赖：—；被引用：—
 - [self.assertFalse(bad\["success"\], "VERIFIED decision with tampered digest must be rejected")](../../../tests/test_source_rights_gate_enum_consistency.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-8ac4bd53b98daba4 / self.assertFalse(bad\["success"\], "VERIFIED decision with tampered digest must be rejected")
   - 来源：`tests/test_source_rights_gate_enum_consistency.py`
+  - 依赖：—；被引用：—
+- [self.assertNotEqual(dec\["decision"\], "STOP_SUFFICIENT_CANDIDATE")](../../../tests/test_deep_research_round4.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a93b8c353a8a019e / self.assertNotEqual(dec\["decision"\], "STOP_SUFFICIENT_CANDIDATE")
+  - 来源：`tests/test_deep_research_round4.py`
+  - 依赖：—；被引用：—
+- [self.assertNotEqual(dec_default\["decision"\], "STOP_SUFFICIENT_CANDIDATE")](../../../tests/test_deep_research_round4.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-d0aa37f15633a4ae / self.assertNotEqual(dec_default\["decision"\], "STOP_SUFFICIENT_CANDIDATE")
+  - 来源：`tests/test_deep_research_round4.py`
   - 依赖：—；被引用：—
 - [self.assertTrue(ok\["success"\], f"VERIFIED decision with correct digest must be recorded: {ok}")](../../../tests/test_source_rights_gate_enum_consistency.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -1109,6 +1204,16 @@
   - 可搜索名称：NFC-75e173b571fa91c5 / subject="T5 / Kelly cognition analogy",
   - 来源：`tools/foundation/build_080_queue.py`
   - 依赖：T5；被引用：—
+- [sufficiency decision STOP_SUFFICIENT_CANDIDATE MUST carry hard_gates_passed=true](../../../tools/deep_research/generate_fixtures.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-c512c2be0de1bd36 / sufficiency decision STOP_SUFFICIENT_CANDIDATE MUST carry hard_gates_passed=true
+  - 来源：`tools/deep_research/generate_fixtures.py`
+  - 依赖：—；被引用：—
+- [sufficiency_decision={"decision": "STOP_SUFFICIENT_CANDIDATE"},](../../../tests/test_deep_research_round2.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-55051116dbb87c96 / sufficiency_decision={"decision": "STOP_SUFFICIENT_CANDIDATE"},
+  - 来源：`tests/test_deep_research_round2.py`
+  - 依赖：—；被引用：—
 - [Task 102 makes `KNOWLEDGE/README.md` the no-path human entry. Any meaningful knowledge change must update the determinis](../../../AGENTS.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-fd03cbe57c7f9728 / Task 102 makes `KNOWLEDGE/README.md` the no-path human entry. Any meaningful knowledge change must update the determinis
@@ -1213,6 +1318,11 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-8725C345FC0FA5E6 / title: "门控-路径积分同构与极小熵原理 / gate / path-integral isomorphism and minimum-entropy principle" / IMPLICIT-8725C345FC0FA5E6
   - 来源：`统一函数总表/0040-T30-门控-路径积分同构与极小熵原理.md`
+  - 依赖：—；被引用：—
+- [Transparent stopping decision. Fails closed: decision required; if STOP_SUFFICIENT_CANDIDATE, hard_gates_passed must be](../../../schemas/deep-research/research-sufficiency-decision.schema.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-21972aa9d7241400 / Transparent stopping decision. Fails closed: decision required; if STOP_SUFFICIENT_CANDIDATE, hard_gates_passed must be
+  - 来源：`schemas/deep-research/research-sufficiency-decision.schema.json`
   - 依赖：—；被引用：—
 - [unresolved residue.](../../../docs/architecture/attention-attractor-control-plane.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`

@@ -37,10 +37,12 @@
 - Did **not** modify PR #194's head branch (`workbuddy/task115-deep-research-queue-round1-7-takeover-r1-20260804`).
 - Did **not** merge, mark Ready, tag, terminalize Task 115, create Task 116, modify `main`, `relay/current`, or rewrite Task 114 history.
 
-## Self-correction cascade (added after remote CI feedback)
+## Cascaded governance drift (added after remote CI feedback)
 
-- **Root cause:** Round 0 foundation regen rewrote `data/foundation/nonfunction-claims/{claim-registry,dependency-graph,evidence-lineage}.jsonl`, which `tools/governance/run_self_correction.py` consumes. The remote `foundation-validation` run `30903275683` therefore failed at `run_self_correction.py --check` with `SELF_CORRECTION_OUTPUT_DRIFT` on 8 files (`data/governance/self-correction/*` + `RESULTS/*`). This is the repo's documented cascade pattern (task 107/108), not a Task 115 bug; my Round 0 commit touched no governance/self-correction files directly.
-- **Fix:** regenerated the 8 self-correction outputs to a fixed point (`SELF_CORRECTION_OK deltas=88 rules=10, blocking_rules=0`); reproduced locally on the identical 8 files, then re-checked clean. All other foundation-validation steps (path-accounting, foundation Layer B, human-results, knowledge-experience) already pass.
+Round 0 foundation regen rewrote `data/foundation/nonfunction-claims/{claim-registry,dependency-graph,evidence-lineage}.jsonl`, which both `run_self_correction.py` and `build_knowledge_experience.py` consume. This is the repo's documented cascade pattern (task 107/108), **not** a Task 115 bug; my Round 0 commit touched no governance files directly. The remote `foundation-validation` step runs these `--check`s in one bash step with `set -e`, so the first drift aborts the step before later checks run — each layer was revealed only after the prior was fixed.
+
+- **Self-correction (run `30903275683`):** `SELF_CORRECTION_OUTPUT_DRIFT` on 8 files (`data/governance/self-correction/*` + `RESULTS/*`). Fixed at commit `683a295e`: regenerated to fixed point (`SELF_CORRECTION_OK deltas=88 rules=10, blocking_rules=0`). Confirmed green on Linux CI (run `30907048029` printed `SELF_CORRECTION_OK`).
+- **Knowledge-experience (run `30907048029`):** `KNOWLEDGE_EXPERIENCE_OUTPUT_DRIFT` on `data/governance/knowledge-experience/*` + `KNOWLEDGE/indexes/*` + `KNOWLEDGE/{README,MAP,SEARCH,COVERAGE}.md`. Root cause: `build_knowledge_experience.py` relinks links by rglob-ing the repo for target part-files; in write mode `output_map` runs before part-files exist on disk, so links resolve differently than in `--check` mode. Fixed by a **second write pass** (pass 2 relinks with part-files present) → fixed point (`KNOWLEDGE_EXPERIENCE_OK cards=355 changes=275 layered=292 search=26416`); `validate_knowledge_experience.py` clean (`KNOWLEDGE_EXPERIENCE_AUDIT_OK`). `build_human_results.py --check` (human-results) already passed and is unchanged.
 
 ## Pending
 
