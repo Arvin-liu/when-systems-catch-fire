@@ -1,0 +1,7 @@
+{
+  "_record": "source-record",
+  "_expect": "opened=true requires inspected_scope (fail-closed if/then)",
+  "source_id": "src-X",
+  "access_level": "FULL_TEXT",
+  "opened": true
+}

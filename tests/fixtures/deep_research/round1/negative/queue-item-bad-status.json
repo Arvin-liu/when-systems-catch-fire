@@ -1,0 +1,6 @@
+{
+  "_record": "research-queue-item",
+  "_expect": "status must be a valid QUEUE_ITEM_STATUS enum",
+  "queue_item_id": "qi-X",
+  "status": "MYSTERIOUS"
+}

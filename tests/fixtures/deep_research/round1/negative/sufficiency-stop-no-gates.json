@@ -1,0 +1,8 @@
+{
+  "_record": "research-sufficiency-decision",
+  "_expect": "STOP_SUFFICIENT_CANDIDATE requires hard_gates_passed=true",
+  "decision_id": "suff-X",
+  "episode_id": "ep-X",
+  "hard_gates_passed": false,
+  "decision": "STOP_SUFFICIENT_CANDIDATE"
+}

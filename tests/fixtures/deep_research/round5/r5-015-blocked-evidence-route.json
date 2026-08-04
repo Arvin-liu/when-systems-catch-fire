@@ -1,0 +1,121 @@
+{
+  "id": "r5-015-blocked-evidence-route",
+  "kind": "episode",
+  "description": "Load-bearing source with NONE access.",
+  "strategy_pack": "SYSTEMATIC_EVIDENCE_SYNTHESIS",
+  "episode": {
+    "episode_id": "ep-fix",
+    "question_version": "v1",
+    "research_type": "deep_research",
+    "strategy_pack": "SYSTEMATIC_EVIDENCE_SYNTHESIS",
+    "state": "QUESTION_FROZEN",
+    "state_lineage": [
+      "INTAKE"
+    ],
+    "candidate_claims": [],
+    "evidence_obligations": [],
+    "source_identities": [
+      {
+        "source_id": "web:gone",
+        "access_level": "NONE",
+        "inspected_scope": null
+      }
+    ],
+    "independence_groups": [],
+    "access_levels": [],
+    "calculations_required": [],
+    "calculations_completed": [],
+    "competing_explanations": [],
+    "negative_evidence_search_state": {
+      "searched": false,
+      "results": []
+    },
+    "unresolved_residues": [],
+    "blockers": [],
+    "budgets": {},
+    "current_diagnosis": null,
+    "candidate_next_actions": [],
+    "selected_action": null,
+    "observations": [
+      {
+        "observation_id": "obs-0ff950412545",
+        "action_id": "act-open",
+        "observations": [
+          "could not open web:gone: no content available offline"
+        ],
+        "source_identities": [
+          {
+            "source_id": "web:gone",
+            "access_level": "NONE"
+          }
+        ],
+        "access_level": "NONE",
+        "calculation_result": null,
+        "errors": [
+          "offline: web:gone not opened"
+        ],
+        "provenance": [
+          {
+            "step": "open",
+            "source_id": "web:gone"
+          }
+        ],
+        "timestamps": {}
+      }
+    ],
+    "information_delta": null,
+    "stop_conditions": {},
+    "branch_conditions": {},
+    "rollback_conditions": {},
+    "escalation_conditions": {},
+    "provenance": {},
+    "versions": {
+      "schema": "research-os/0.1"
+    },
+    "event_log": [
+      {
+        "event_id": "evt-000000",
+        "timestamp": "2026-08-04T07:53:44.021065+00:00",
+        "type": "state_transition",
+        "actor": "kernel",
+        "payload_sha256": "c099f16eefa8f4d89c7f3f2704de86cc438beeecf0cf09fe1ca03ec7150ed6c1"
+      },
+      {
+        "event_id": "evt-000001",
+        "timestamp": "2026-08-04T07:53:44.021110+00:00",
+        "type": "state_transition",
+        "actor": "kernel",
+        "payload_sha256": "638c923b6230a6fd1dd8961e31da9f75234e7276a11a9c07ce53e14b8f6e5649"
+      },
+      {
+        "event_id": "evt-000002",
+        "timestamp": "2026-08-04T07:53:44.021242+00:00",
+        "type": "observe",
+        "actor": "kernel",
+        "payload_sha256": "aa0107c82ec3b81898face9a0f161a4fb9f9501f297483ad39bd9a6dc03c2704"
+      }
+    ],
+    "created_at": "2026-08-04T07:53:44.021056+00:00",
+    "updated_at": "2026-08-04T07:53:44.021244+00:00",
+    "brief": {
+      "brief_id": "brief-000",
+      "question_version": "v1",
+      "question": "Frozen question: causal effects of late sleep timing vs sleep duration on health.",
+      "scope": {
+        "population": "unspecified",
+        "object": "unspecified",
+        "timeframe": "unspecified",
+        "outcomes": []
+      },
+      "strategy_pack": "default",
+      "frozen": true
+    }
+  },
+  "expect": {
+    "decision": "BLOCKED_WITH_EVIDENCE",
+    "failed_gates": [
+      "unresolved_source_identity",
+      "blocked_evidence_route"
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "candidate_id": "cand-SLEEP-TIMING",
+  "proposed_question": "What is the optimal sleep-timing window for adult sustained cognitive recovery?",
+  "source_of_seed": "TRUSTED_RECENT_SIGNAL",
+  "proposed_strategy_pack": "sleep-timing-v1",
+  "status": "CANDIDATE",
+  "materiality": 0.8,
+  "expected_information_gain": 0.7,
+  "tractability": 0.6,
+  "access": 0.7,
+  "freshness": 0.9,
+  "cost": 1.5,
+  "risk": 0.2,
+  "diversity": 0.5
+}

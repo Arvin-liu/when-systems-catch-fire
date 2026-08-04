@@ -1,0 +1,50 @@
+{
+  "campaign_id": "POINTFIRE-WORKBUDDY-DEEP-RESEARCH-QUEUE-ROUND1-7-TAKEOVER-R1-20260804",
+  "executor": "WorkBuddy",
+  "task": 115,
+  "phase_state_target": "WORKBUDDY_DEEP_RESEARCH_QUEUE_ROUND1_7_STACKED_DRAFT_AWAITING_CODEX_GPT_OWNER_REVIEW",
+  "formal_repo": "Arvin-liu/when-systems-catch-fire",
+  "formal_child_branch": "workbuddy/task115-deep-research-queue-round1-7-takeover-r1-20260804",
+  "exact_parent_qwen_round0_head": "f4fe6faded65c16c98230ad34ca17e4374d59613",
+  "final_stacked_pr_base": "qwen38max/task115-deep-research-queue-checkpoint-d-r1-20260803",
+  "locked_tips": {
+    "control_branch_takeover": "703e84c5fca8c10a26dd6acbbd2629a40618db3a",
+    "qwen_control_tip": "3267e45a32e322e64c8c97f8eb4605fa47d99cd4",
+    "relay_current": "6a95666cb256c8a3c21c8f14858fcd9b9fed9128",
+    "qwen_round0_branch": "f4fe6faded65c16c98230ad34ca17e4374d59613",
+    "qwen_receipt": "49dce1ee9fb57f161e7e6c3e05470176638a3adf",
+    "formal_main": "cac043d438bea6c4dc2c57c1169093df715ef5df"
+  },
+  "foundation_run": {
+    "run_id": 30880344616,
+    "target_head": "f4fe6faded65c16c98230ad34ca17e4374d59613",
+    "final_status": "completed",
+    "conclusion": "success",
+    "total_steps": 46,
+    "failed_steps": 0,
+    "url": "https://github.com/Arvin-liu/when-systems-catch-fire/actions/runs/30880344616"
+  },
+  "round0_decision": "FROZEN_SUCCESS — remote Foundation run 30880344616 succeeded (46/46 steps success); Round 0 not redesigned; no Round 0A repair; all six Qwen passes preserved.",
+  "rounds_planned": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7"
+  ],
+  "rounds_frozen": [
+    "0"
+  ],
+  "created_at": "2026-08-04T06:01:42.641044+00:00",
+  "schema": "research-os/workbuddy-takeover/0.1",
+  "hard_boundaries": [
+    "do not modify Qwen Round 0 branch",
+    "do not modify PR #190 parent, formal main, relay/current, Task 114 history, Codex 631-note work, PRs #189/#191/#192/#193",
+    "no merge, Ready, tag, Task 116, or Task 115 terminalization",
+    "no force push, amend, rebase, or squash of shared history",
+    "non-forced ordinary commits/pushes only",
+    "Draft PR must retain R2_EMPIRICAL_CALIBRATION_PENDING"
+  ]
+}

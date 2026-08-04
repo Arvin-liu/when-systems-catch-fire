@@ -1,0 +1,14 @@
+{
+  "campaign_id": "camp-SLEEP-HEALTH",
+  "stop_conditions": {
+    "queue_empty_stops": true,
+    "max_episodes": 12,
+    "safety_blocker_stops": true
+  },
+  "items": [
+    {
+      "queue_item_id": "qi-001"
+    }
+  ],
+  "status": "RUNNING"
+}

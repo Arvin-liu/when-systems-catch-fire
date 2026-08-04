@@ -1,0 +1,80 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "deep-research/0.1/research-brief",
+  "title": "ResearchBrief",
+  "description": "A frozen research brief. Fails closed on missing question, scope or strategy pack. Once frozen it is immutable for the episode.",
+  "type": "object",
+  "required": [
+    "brief_id",
+    "question_version",
+    "question",
+    "scope",
+    "strategy_pack",
+    "frozen"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "brief_id": {
+      "type": "string"
+    },
+    "question_version": {
+      "type": "string"
+    },
+    "question": {
+      "type": "string",
+      "minLength": 1
+    },
+    "scope": {
+      "type": "object",
+      "required": [
+        "population",
+        "object",
+        "timeframe",
+        "outcomes"
+      ],
+      "additionalProperties": true,
+      "properties": {
+        "population": {
+          "type": "string"
+        },
+        "object": {
+          "type": "string"
+        },
+        "timeframe": {
+          "type": "string"
+        },
+        "outcomes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "prohibited_overreach": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "strategy_pack": {
+      "type": "string"
+    },
+    "source_family_priorities": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "frozen": {
+      "type": "boolean"
+    },
+    "created_at": {
+      "type": "string"
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": true
+    }
+  }
+}

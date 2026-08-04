@@ -1,0 +1,90 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "deep-research/0.1/research-topic-candidate",
+  "title": "ResearchTopicCandidate",
+  "description": "A proposed research topic for the serial queue. Materiality/info-gain/risk are executor-proposed rankings; owner/GPT acceptance is separate.",
+  "type": "object",
+  "required": [
+    "candidate_id",
+    "proposed_question",
+    "source_of_seed",
+    "proposed_strategy_pack"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "candidate_id": {
+      "type": "string"
+    },
+    "proposed_question": {
+      "type": "string",
+      "minLength": 1
+    },
+    "proposed_scope": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "source_of_seed": {
+      "type": "string",
+      "enum": [
+        "OWNER_SEED",
+        "PROJECT_GAP",
+        "PREVIOUS_BLOCKER",
+        "TRUSTED_RECENT_SIGNAL"
+      ]
+    },
+    "materiality": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "expected_information_gain": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "tractability": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "access": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "freshness": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "cost": {
+      "type": "number",
+      "minimum": 0
+    },
+    "risk": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "diversity": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "proposed_strategy_pack": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "CANDIDATE",
+        "SELECTED",
+        "REJECTED"
+      ]
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": true
+    }
+  }
+}

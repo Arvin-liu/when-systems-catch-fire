@@ -1,0 +1,38 @@
+{
+  "campaign": {
+    "campaign_id": "camp-round6-sleep",
+    "stop_conditions": {
+      "owner_stop": false,
+      "queue_empty_stops": false,
+      "safety_blocker_stops": true
+    }
+  },
+  "items": [
+    {
+      "queue_item_id": "cand-sleep-timing",
+      "status": "ACTIVE",
+      "topic_candidate": {
+        "candidate_id": "cand-sleep-timing",
+        "proposed_question": "For adults obtaining approximately 7-8 hours of sleep, what causal or near-causal health effects are supported for consistently late sleep timing or delayed circadian phase, separately from sleep duration, chronotype and social jetlag?",
+        "source_of_seed": "PROJECT_GAP",
+        "proposed_strategy_pack": "SYSTEMATIC_EVIDENCE_SYNTHESIS",
+        "status": "CANDIDATE",
+        "materiality": 0.9,
+        "expected_information_gain": 0.8,
+        "tractability": 0.5
+      },
+      "lease": {
+        "owner": "workbuddy",
+        "expiry": "2026-08-04T09:30:00Z",
+        "claim_id": "lease-dddf95ed06bb"
+      }
+    }
+  ],
+  "stats": {
+    "completions": 0,
+    "attempts": 0,
+    "cost": 0.0,
+    "consecutive_low_info": 0
+  },
+  "owner": "workbuddy"
+}

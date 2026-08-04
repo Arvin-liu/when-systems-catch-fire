@@ -1,0 +1,71 @@
+{
+  "candidate": "workbuddy/task115-deep-research-queue-round1-7-takeover-r1-20260804",
+  "capability_version": "deep-research/0.1",
+  "repo": "Arvin-liu/when-systems-catch-fire",
+  "parent": {
+    "kind": "frozen_qwen_round0",
+    "branch": "qwen38max/task115-deep-research-queue-checkpoint-d-r1-20260803",
+    "exact_head": "f4fe6faded65c16c98230ad34ca17e4374d59613"
+  },
+  "draft_pr": {
+    "state": "DRAFT_CREATED",
+    "number": 194,
+    "url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/194",
+    "head": "workbuddy/task115-deep-research-queue-round1-7-takeover-r1-20260804",
+    "base": "qwen38max/task115-deep-research-queue-checkpoint-d-r1-20260803",
+    "is_draft": true,
+    "remain_draft": true,
+    "flags_retained": ["R2_EMPIRICAL_CALIBRATION_PENDING"]
+  },
+  "rounds": [
+    {"round": 1, "commit": "0c07b798caf296bb85872dedff4542015ef60497",
+     "deliverable": "13 fail-closed schemas + records + 27 fixtures", "tests_pass": 19},
+    {"round": 2, "commit": "3d88af6a3323f6c27468e15a027d9909403debb8",
+     "deliverable": "serial crash-resumable SerialQueue", "tests_pass": 24},
+    {"round": 3, "commit": "e0176d670fafd04e95029ad050f11cd878a73be5",
+     "deliverable": "episode controller + offline-safe adapters + CLI/API", "tests_pass": 18},
+    {"round": 4, "commit": "a2413475851feacef41277e71e5cdc1fe69daf1f",
+     "deliverable": "transparent stopping: 10 hard gates + 8-dim vector", "tests_pass": 13},
+    {"round": 5, "commit": "7ceb4280444396e8e57a20dee7f37105829b728b",
+     "deliverable": "27 frozen anti-overfit fixtures + replay + separate metrics", "tests_pass": 27, "tests_methods": 4},
+    {"round": 6, "commit": "965e796edf6e2b3887219c89558537b7b4dde6ae",
+     "deliverable": "bounded sleep-timing pilot -> BLOCKED_WITH_EVIDENCE + trace", "tests_pass": 2},
+    {"round": 7, "commit": "PENDING",
+     "deliverable": "docs + CODEX-HANDOFF + GPT-OWNER-REVIEW-PACKET + candidate state + Draft PR", "tests_pass": 0}
+  ],
+  "test_totals": {
+    "rounds_1_to_6": 99,
+    "baseline_kernel_suites": "ALL PASS (research_os, checkpoint_c, resumability)",
+    "queue_smoke": "OK",
+    "regression": "none"
+  },
+  "pilot": {
+    "round": 6,
+    "frozen_question": "For adults obtaining approximately 7-8 hours of sleep, what causal or near-causal health effects are supported for consistently late sleep timing or delayed circadian phase, separately from sleep duration, chronotype and social jetlag?",
+    "outcome": "BLOCKED_WITH_EVIDENCE",
+    "in_episode_evaluator_decision": "BLOCKED_WITH_EVIDENCE",
+    "reason": "offline-safe adapters; no live public-web tool wired; Round 6 precondition 'required tool access' not met",
+    "machine_trace": "data/operations/iterations/115/candidate/workbuddy-takeover/round6-trace/{episode,queue,PILOT-REPORT}.json"
+  },
+  "unresolved_obligations": [
+    {"id": "O1", "title": "live public-web tooling for a true live pilot",
+     "blocks": "Round 6 empirical calibration", "owner_forward": "Codex / Round 7 handoff",
+     "resume": "wire a live adapter into adapters.build_default_adapters(); re-run run_round6_pilot.py"},
+    {"id": "O2", "title": "contradiction/entailment gate",
+     "blocks": "eliminate 1 known false-positive stop (r5-006-conflicting-estimands)",
+     "owner_forward": "Codex", "resume": "add hard gate to SufficiencyEvaluator.hard_gates; regenerate + re-run Round 5"}
+  ],
+  "flags": {
+    "R2_EMPIRICAL_CALIBRATION_PENDING": true,
+    "remote_exact_head_ci": "owner/GPT verify; not asserted as passed"
+  },
+  "discipline": {
+    "serial_execution": true,
+    "push_method": "gitops (non-forced)",
+    "verified_exact_remote_tip_per_round": true,
+    "no_force_push_amend_rebase_squash": true,
+    "no_approval_window_encountered": true,
+    "protected": ["qwen_round0_branch", "PR190_parent", "formal_main", "relay_current", "task114_history", "codex_631_note", "PRs_189_191_192_193"]
+  },
+  "generated_at": "2026-08-04T08:30:00Z"
+}

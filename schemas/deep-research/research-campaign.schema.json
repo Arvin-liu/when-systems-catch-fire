@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "deep-research/0.1/research-campaign",
+  "title": "ResearchCampaign",
+  "description": "A campaign of queue items with independent campaign-level stop conditions.",
+  "type": "object",
+  "required": [
+    "campaign_id",
+    "stop_conditions"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "campaign_id": {
+      "type": "string"
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "stop_conditions": {
+      "type": "object",
+      "properties": {
+        "deadline": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "max_episodes": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "max_attempts": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "budget": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "queue_empty_stops": {
+          "type": "boolean"
+        },
+        "owner_stop": {
+          "type": "boolean"
+        },
+        "low_information_stops": {
+          "type": "boolean"
+        },
+        "safety_blocker_stops": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": true
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "RUNNING",
+        "STOPPED",
+        "PAUSED"
+      ]
+    },
+    "created_at": {
+      "type": "string"
+    }
+  }
+}
