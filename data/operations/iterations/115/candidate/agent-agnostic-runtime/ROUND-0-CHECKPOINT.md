@@ -37,7 +37,12 @@
 - Did **not** modify PR #194's head branch (`workbuddy/task115-deep-research-queue-round1-7-takeover-r1-20260804`).
 - Did **not** merge, mark Ready, tag, terminalize Task 115, create Task 116, modify `main`, `relay/current`, or rewrite Task 114 history.
 
+## Self-correction cascade (added after remote CI feedback)
+
+- **Root cause:** Round 0 foundation regen rewrote `data/foundation/nonfunction-claims/{claim-registry,dependency-graph,evidence-lineage}.jsonl`, which `tools/governance/run_self_correction.py` consumes. The remote `foundation-validation` run `30903275683` therefore failed at `run_self_correction.py --check` with `SELF_CORRECTION_OUTPUT_DRIFT` on 8 files (`data/governance/self-correction/*` + `RESULTS/*`). This is the repo's documented cascade pattern (task 107/108), not a Task 115 bug; my Round 0 commit touched no governance/self-correction files directly.
+- **Fix:** regenerated the 8 self-correction outputs to a fixed point (`SELF_CORRECTION_OK deltas=88 rules=10, blocking_rules=0`); reproduced locally on the identical 8 files, then re-checked clean. All other foundation-validation steps (path-accounting, foundation Layer B, human-results, knowledge-experience) already pass.
+
 ## Pending
 
-- Remote exact-head CI verification (push + `gitops ci watch`). Round 0 is complete only when both `repository-path-accounting-preflight` and `foundation-validation` are green on the child-branch head.
-- Rounds 1–9 remain (executor-neutral contracts, runtime adapters, approval/watchdog state machine, license intake, OpenAI4S mapping, narrow experiment, contradiction-gate fix, executor-substitution pilot, review packet + stacked Draft PR).
+- Remote exact-head CI re-verification (push + re-run `foundation-validation`). Round 0 is complete only when both `repository-path-accounting-preflight` and `foundation-validation` are green on the child-branch head.
+- Rounds 1–9 remain, now under the **callable-capability-federation** architecture per `ARCHITECTURE-AMENDMENT-EXTERNAL-CAPABILITY-FEDERATION.md` (control tip `292d15ef`): executor-neutral capability-adapter boundary, invocation-first / thin-adapter / no source vendoring, approval/watchdog state machine, license intake, OpenAI4S invocation-first mapping, narrow experiment, contradiction-gate fix, executor-substitution pilot, review packet + stacked Draft PR.

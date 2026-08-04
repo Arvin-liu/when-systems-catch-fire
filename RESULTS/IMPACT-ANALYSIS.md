@@ -25,6 +25,10 @@
 |`docs/architecture/interactive-system-map.md`|8|0|否|
 |`docs/architecture/language-thought-logic-plane.md`|13|0|否|
 |`docs/architecture/typed-change-propagation.md`|10|0|否|
+|`docs/deep-research/ARCHITECTURE.md`|12|0|否|
+|`docs/deep-research/EVALUATION.md`|8|0|否|
+|`docs/deep-research/OPERATOR-GUIDE.md`|4|0|否|
+|`docs/deep-research/STOP-ALGORITHM.md`|18|0|否|
 |`docs/editorial/MANIFEST.md`|0|0|是|
 |`docs/editorial/QUALITY-REPORT.md`|0|0|是|
 |`docs/editorial/README.md`|0|0|是|

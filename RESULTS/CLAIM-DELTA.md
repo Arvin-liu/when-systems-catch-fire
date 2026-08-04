@@ -1,6 +1,6 @@
 # Claim Delta
 
-本轮识别 84 个新增、删除或修改的知识资产。关联断言来自现行 claim registry；无关联项必须人工确认是否需要新增登记。
+本轮识别 88 个新增、删除或修改的知识资产。关联断言来自现行 claim registry；无关联项必须人工确认是否需要新增登记。
 
 ## `AI-HANDOFF.md`
 
@@ -167,6 +167,38 @@
 - 状态：`MODIFIED`
 - Delta：`CD-DA202C53B7387F68`
 - 关联断言：['NFC-2cb36b1c0be2c432', 'NFC-2cbdde88ea3e3f44', 'NFC-337fbe50cdc1fff9', 'NFC-81f5c908ad81bb6c', 'NFC-9226cd8f34b134f7', 'NFC-a0ed426014cef9ec', 'NFC-a7b8b72c2c49b080', 'NFC-bc0ff7f64b2f49c5', 'NFC-cacdab773dd6ca58', 'NFC-f2eae3bf1d427bfe']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/deep-research/ARCHITECTURE.md`
+
+- 状态：`ADDED`
+- Delta：`CD-FF1CDDE49F141450`
+- 关联断言：['NFC-007da1e144831e31', 'NFC-1c3b6e620630a3a5', 'NFC-1fc629a4551550d0', 'NFC-2667ce07db2b50cf', 'NFC-27dd39d53db442e6', 'NFC-436970fa24a44e58', 'NFC-55a30495c23e78db', 'NFC-80ff18f16f238616', 'NFC-8ca68cd11ca7bd92', 'NFC-a22fe1b5a663a720', 'NFC-da1646c1e2933f80', 'NFC-f6b83f505178357e']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/deep-research/EVALUATION.md`
+
+- 状态：`ADDED`
+- Delta：`CD-A3F6B8FA0A6B36B9`
+- 关联断言：['NFC-0c16307064d0fd7a', 'NFC-19032e20163906dc', 'NFC-53c700d08a0443a6', 'NFC-5683bcd8c13418a7', 'NFC-916d4d6d04687511', 'NFC-d734cd5aaf2494bd', 'NFC-ef8dcc24a98a760e', 'NFC-f15c1d92fada572f']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/deep-research/OPERATOR-GUIDE.md`
+
+- 状态：`ADDED`
+- Delta：`CD-A0ACED26B34D237C`
+- 关联断言：['NFC-27db92dc9c8a00b1', 'NFC-63b4ebf547bd7c98', 'NFC-89483380ba22400d', 'NFC-99346e9fae61cd2d']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/deep-research/STOP-ALGORITHM.md`
+
+- 状态：`ADDED`
+- Delta：`CD-A7C83F39A3829D0E`
+- 关联断言：['NFC-047f457ee809a52c', 'NFC-07b0c4dc2a3f68ce', 'NFC-1534572af9533c31', 'NFC-5716c8f3685335f3', 'NFC-5d11b483b8f17b14', 'NFC-60c8f2beae5845d0', 'NFC-6af41e4fa1353d2b', 'NFC-8b31ee26acc94e2e', 'NFC-af8bf84345a21140', 'NFC-b321c39ddf915d1c', 'NFC-b7c42e624a0f336c', 'NFC-be941388b655f112', 'NFC-bf54acf13af5dcf1', 'NFC-c860bd3912c61c41', 'NFC-cbae235f445a740a', 'NFC-eabb4b0bb84ae70f', 'NFC-f14747150ec42f87', 'NFC-f9ce9e02e42cc71e']
 - 人类结果义务：`True`
 - 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
 
