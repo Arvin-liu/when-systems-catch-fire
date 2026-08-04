@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [### \[#565｜哈勃张力超指数衰减\](docs/zh/cases/items/C-0565.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0560-C-565-%E5%93%88%E5%8B%83%E5%BC%A0%E5%8A%9B%E8%B6%85%E6%8C%87%E6%95%B0%E8%A1%B0%E5%87%8F.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-C2960CD88850854C / ### \[#565｜哈勃张力超指数衰减\](docs/zh/cases/items/C-0565.md) / IMPLICIT-C2960CD88850854C
+  - 来源：`统一案例总表/0560-C-565-哈勃张力超指数衰减.md`
+  - 依赖：—；被引用：—
+- [### \[#580｜睡眠清除门控验证\](docs/zh/cases/items/C-0580.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0575-C-580-%E7%9D%A1%E7%9C%A0%E6%B8%85%E9%99%A4%E9%97%A8%E6%8E%A7%E9%AA%8C%E8%AF%81.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-EAF5E65C7B869665 / ### \[#580｜睡眠清除门控验证\](docs/zh/cases/items/C-0580.md) / IMPLICIT-EAF5E65C7B869665
+  - 来源：`统一案例总表/0575-C-580-睡眠清除门控验证.md`
+  - 依赖：—；被引用：—
 - [### \[#595｜OrcaRouter多模型并行扇出验证\](docs/zh/cases/items/C-0595.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0590-C-595-OrcaRouter%E5%A4%9A%E6%A8%A1%E5%9E%8B%E5%B9%B6%E8%A1%8C%E6%89%87%E5%87%BA%E9%AA%8C%E8%AF%81.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-6B3AE0813F0507F2 / ### \[#595｜OrcaRouter多模型并行扇出验证\](docs/zh/cases/items/C-0595.md) / IMPLICIT-6B3AE0813F0507F2
@@ -2493,14 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-8868796DB27B5C0E / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0417})=1\]. / IMPLICIT-8868796DB27B5C0E
   - 来源：`统一案例总表/0416-C-417-城市规模律的倒U型——互动收益与摩擦成本之间的走钢丝.md`
-  - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0418})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0417-C-418-%E6%A0%B8%E5%BF%83-%E8%BE%B9%E7%BC%98%E7%9A%84%E4%B9%98%E6%B3%95%E5%88%86%E5%8C%96%E2%80%94%E2%80%94%E6%A0%B8%E5%BF%83%E6%98%AF%E5%A4%9A%E9%97%A8%E6%8E%A7%E9%9D%A2%E6%AD%A3%E8%B4%A1%E7%8C%AE%E7%9A%84%E5%90%B8%E5%BC%95%E5%AD%90%2C%E8%BE%B9%E7%BC%98%E6%98%AF%E9%97%A8%E5%A4%96%E9%94%81%E5%AE%9A.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-F4A0A5C7B54DB9EF / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0418})=1\]. / IMPLICIT-F4A0A5C7B54DB9EF
-  - 来源：`统一案例总表/0417-C-418-核心-边缘的乘法分化——核心是多门控面正贡献的吸引子,边缘是门外锁定.md`
-  - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0419})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0418-C-419-%E4%BA%A4%E9%80%9A%E6%8B%A5%E5%A0%B5%E7%9A%84%E9%97%A8%E6%A7%9B%E7%AA%81%E5%8F%98%E2%80%94%E2%80%94%CE%9B_friction%E5%9C%A8%E4%B8%B4%E7%95%8C%E5%AF%86%E5%BA%A6%E5%A4%84%E7%AA%81%E5%8F%98%2C%E7%95%85%E9%80%9A%E5%92%8C%E6%8B%A5%E5%A0%B5%E6%97%A0%E4%B8%AD%E9%97%B4%E6%80%81.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-066FB13ADE0B505B / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0419})=1\]. / IMPLICIT-066FB13ADE0B505B
-  - 来源：`统一案例总表/0418-C-419-交通拥堵的门槛突变——Λ_friction在临界密度处突变,畅通和拥堵无中间态.md`
   - 依赖：—；被引用：—

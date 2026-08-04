@@ -4,6 +4,31 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [title: "Fisher信息-门控距离函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0234-D198-Fisher%E4%BF%A1%E6%81%AF-%E9%97%A8%E6%8E%A7%E8%B7%9D%E7%A6%BB%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-037A7826B790A25C / title: "Fisher信息-门控距离函数" / IMPLICIT-037A7826B790A25C
+  - 来源：`统一函数总表/0234-D198-Fisher信息-门控距离函数.md`
+  - 依赖：—；被引用：—
+- [title: "Fisher健康度函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0159-D121-Fisher%E5%81%A5%E5%BA%B7%E5%BA%A6%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-2437802615B64DDE / title: "Fisher健康度函数" / IMPLICIT-2437802615B64DDE
+  - 来源：`统一函数总表/0159-D121-Fisher健康度函数.md`
+  - 依赖：—；被引用：—
+- [title: "Fisher退化统一函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0157-D119-Fisher%E9%80%80%E5%8C%96%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-856B9F6156989BE9 / title: "Fisher退化统一函数" / IMPLICIT-856B9F6156989BE9
+  - 来源：`统一函数总表/0157-D119-Fisher退化统一函数.md`
+  - 依赖：—；被引用：—
+- [title: "Fisher退化统一函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0157-D119-Fisher%E9%80%80%E5%8C%96%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-aeea5cf110383561 / title: "Fisher退化统一函数"
+  - 来源：`统一函数总表/0157-D119-Fisher退化统一函数.md`
+  - 依赖：—；被引用：—
+- [title: "g_eff-p*双向反馈函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0295-D259-g_eff-p-%E5%8F%8C%E5%90%91%E5%8F%8D%E9%A6%88%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-C80DC76ABDE3789B / title: "g_eff-p*双向反馈函数" / IMPLICIT-C80DC76ABDE3789B
+  - 来源：`统一函数总表/0295-D259-g_eff-p-双向反馈函数.md`
+  - 依赖：—；被引用：—
 - [title: "g_eff-p*正反馈函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0294-D258-g_eff-p-%E6%AD%A3%E5%8F%8D%E9%A6%88%E5%87%BD%E6%95%B0.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-25D16CCA0991914F / title: "g_eff-p*正反馈函数" / IMPLICIT-25D16CCA0991914F
@@ -2478,29 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-0C60F3F503D8FFFC / title: "跨域对称性破缺推论函数族" / IMPLICIT-0C60F3F503D8FFFC / IMPLICIT-2DF3EDEE4D7E7007
   - 来源：`统一函数总表/0516-D518-操作类型维度降低函数.md`
-  - 依赖：—；被引用：—
-- [title: "跨域对称性破缺推论函数族"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0517-D519-%E5%8C%B9%E9%85%8D%E6%93%8D%E4%BD%9C%E7%B2%BE%E5%BA%A6%E6%B3%A2%E5%8A%A8%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-2DF3EDEE4D7E7007 / title: "跨域对称性破缺推论函数族" / IMPLICIT-2DF3EDEE4D7E7007 / IMPLICIT-0C60F3F503D8FFFC
-  - 来源：`统一函数总表/0517-D519-匹配操作精度波动函数.md`
-  - 依赖：—；被引用：—
-- [title: "跨域对称性破缺推论函数族"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0514-D516-%E8%B7%A8%E5%9F%9F%E5%AF%B9%E7%A7%B0%E6%80%A7%E7%A0%B4%E7%BC%BA%E6%8E%A8%E8%AE%BA.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-4E351B44B36CE0E4 / title: "跨域对称性破缺推论函数族" / IMPLICIT-4E351B44B36CE0E4 / IMPLICIT-0C60F3F503D8FFFC
-  - 来源：`统一函数总表/0514-D516-跨域对称性破缺推论.md`
-  - 依赖：—；被引用：—
-- [title: "跨域对称性破缺推论函数族"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0515-D517-%E8%B4%A8%E9%87%8F%E5%BA%A6%E9%87%8F%E7%BA%A6%E6%9D%9F%E6%94%BE%E6%9D%BE%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-8E83F2AEB372B203 / title: "跨域对称性破缺推论函数族" / IMPLICIT-8E83F2AEB372B203 / IMPLICIT-0C60F3F503D8FFFC
-  - 来源：`统一函数总表/0515-D517-质量度量约束放松函数.md`
-  - 依赖：—；被引用：—
-- [title: "跨域枢纽函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0216-D180-%E8%B7%A8%E5%9F%9F%E6%9E%A2%E7%BA%BD%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-3D52819E7CBD47A4 / title: "跨域枢纽函数" / IMPLICIT-3D52819E7CBD47A4
-  - 来源：`统一函数总表/0216-D180-跨域枢纽函数.md`
-  - 依赖：—；被引用：—
-- [title: "跨学科同构投影函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0599-D589-%E8%B7%A8%E5%AD%A6%E7%A7%91%E5%90%8C%E6%9E%84%E6%8A%95%E5%BD%B1%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-6125AB0C69AABA91 / title: "跨学科同构投影函数" / IMPLICIT-6125AB0C69AABA91
-  - 来源：`统一函数总表/0599-D589-跨学科同构投影函数.md`
   - 依赖：—；被引用：—

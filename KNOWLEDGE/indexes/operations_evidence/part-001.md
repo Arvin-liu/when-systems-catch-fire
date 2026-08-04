@@ -449,6 +449,16 @@
   - 可搜索名称：IMPLICIT-6845FE6A359FB79D / "title": "Execution Guided Line-by-Line Code Generation", / IMPLICIT-6845FE6A359FB79D / IMPLICIT-1852A3ABDD2DEB44
   - 来源：`data/external-research/121-fulltext-resolver/evidence-cards/S120-021.json`
   - 依赖：—；被引用：—
+- ["title": "ExecutorCapabilityDeclaration",](../../../tools/deep_research/generate_schemas.py)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-3DF1C2CBFE5BEF02 / "title": "ExecutorCapabilityDeclaration", / IMPLICIT-3DF1C2CBFE5BEF02 / IMPLICIT-CC70213E508A681D
+  - 来源：`tools/deep_research/generate_schemas.py`
+  - 依赖：—；被引用：—
+- ["title": "ExecutorCapabilityDeclaration",](../../../schemas/deep-research/executor-capability-declaration.schema.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-CC70213E508A681D / "title": "ExecutorCapabilityDeclaration", / IMPLICIT-CC70213E508A681D / IMPLICIT-3DF1C2CBFE5BEF02
+  - 来源：`schemas/deep-research/executor-capability-declaration.schema.json`
+  - 依赖：—；被引用：—
 - ["title": "Fourier Neural Operator for Parametric Partial Differential Equations (CORRECT)",](../../../data/external-research/121-fulltext-resolver/121q2/acceptance/S120-030.json)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-11175F4D61DD0A5B / "title": "Fourier Neural Operator for Parametric Partial Differential Equations (CORRECT)", / IMPLICIT-11175F4D61DD0A5B
@@ -2493,14 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-1154A742469575BC / ### \[#559｜大灭绝 — 多门控共振+级联，周期性∝Φ到临界值时间\](docs/zh/cases/items/C-0559.md) / IMPLICIT-1154A742469575BC
   - 来源：`统一案例总表/0554-C-559-大灭绝 — 多门控共振+级联,周期性∝Φ到临界值时间.md`
-  - 依赖：—；被引用：—
-- [### \[#565｜哈勃张力超指数衰减\](docs/zh/cases/items/C-0565.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0560-C-565-%E5%93%88%E5%8B%83%E5%BC%A0%E5%8A%9B%E8%B6%85%E6%8C%87%E6%95%B0%E8%A1%B0%E5%87%8F.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-C2960CD88850854C / ### \[#565｜哈勃张力超指数衰减\](docs/zh/cases/items/C-0565.md) / IMPLICIT-C2960CD88850854C
-  - 来源：`统一案例总表/0560-C-565-哈勃张力超指数衰减.md`
-  - 依赖：—；被引用：—
-- [### \[#580｜睡眠清除门控验证\](docs/zh/cases/items/C-0580.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0575-C-580-%E7%9D%A1%E7%9C%A0%E6%B8%85%E9%99%A4%E9%97%A8%E6%8E%A7%E9%AA%8C%E8%AF%81.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-EAF5E65C7B869665 / ### \[#580｜睡眠清除门控验证\](docs/zh/cases/items/C-0580.md) / IMPLICIT-EAF5E65C7B869665
-  - 来源：`统一案例总表/0575-C-580-睡眠清除门控验证.md`
   - 依赖：—；被引用：—

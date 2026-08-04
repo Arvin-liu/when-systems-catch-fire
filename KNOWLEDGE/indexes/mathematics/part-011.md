@@ -4,6 +4,31 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [title: "跨域对称性破缺推论函数族"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0517-D519-%E5%8C%B9%E9%85%8D%E6%93%8D%E4%BD%9C%E7%B2%BE%E5%BA%A6%E6%B3%A2%E5%8A%A8%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-2DF3EDEE4D7E7007 / title: "跨域对称性破缺推论函数族" / IMPLICIT-2DF3EDEE4D7E7007 / IMPLICIT-0C60F3F503D8FFFC
+  - 来源：`统一函数总表/0517-D519-匹配操作精度波动函数.md`
+  - 依赖：—；被引用：—
+- [title: "跨域对称性破缺推论函数族"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0514-D516-%E8%B7%A8%E5%9F%9F%E5%AF%B9%E7%A7%B0%E6%80%A7%E7%A0%B4%E7%BC%BA%E6%8E%A8%E8%AE%BA.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-4E351B44B36CE0E4 / title: "跨域对称性破缺推论函数族" / IMPLICIT-4E351B44B36CE0E4 / IMPLICIT-0C60F3F503D8FFFC
+  - 来源：`统一函数总表/0514-D516-跨域对称性破缺推论.md`
+  - 依赖：—；被引用：—
+- [title: "跨域对称性破缺推论函数族"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0515-D517-%E8%B4%A8%E9%87%8F%E5%BA%A6%E9%87%8F%E7%BA%A6%E6%9D%9F%E6%94%BE%E6%9D%BE%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-8E83F2AEB372B203 / title: "跨域对称性破缺推论函数族" / IMPLICIT-8E83F2AEB372B203 / IMPLICIT-0C60F3F503D8FFFC
+  - 来源：`统一函数总表/0515-D517-质量度量约束放松函数.md`
+  - 依赖：—；被引用：—
+- [title: "跨域枢纽函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0216-D180-%E8%B7%A8%E5%9F%9F%E6%9E%A2%E7%BA%BD%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-3D52819E7CBD47A4 / title: "跨域枢纽函数" / IMPLICIT-3D52819E7CBD47A4
+  - 来源：`统一函数总表/0216-D180-跨域枢纽函数.md`
+  - 依赖：—；被引用：—
+- [title: "跨学科同构投影函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0599-D589-%E8%B7%A8%E5%AD%A6%E7%A7%91%E5%90%8C%E6%9E%84%E6%8A%95%E5%BD%B1%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-6125AB0C69AABA91 / title: "跨学科同构投影函数" / IMPLICIT-6125AB0C69AABA91
+  - 来源：`统一函数总表/0599-D589-跨学科同构投影函数.md`
+  - 依赖：—；被引用：—
 - [title: "跨学科同构投影函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0599-D589-%E8%B7%A8%E5%AD%A6%E7%A7%91%E5%90%8C%E6%9E%84%E6%8A%95%E5%BD%B1%E5%87%BD%E6%95%B0.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-10e8ee0d2b8f6a16 / title: "跨学科同构投影函数"
@@ -2467,28 +2492,3 @@
   - 可搜索名称：CLAIM-D23 / Within the source-defined scope, 法治度 is adjudicated as METRIC: 法治度，退出权信号、宪法硬度、司法独立、法条净效应的乘积。. This is a model-internal c
   - 来源：`data/foundation/adjudications/core-kernel.jsonl`
   - 依赖：—；被引用：—
-- [Within the source-defined scope, 涨落-耗散定理-门槛函数 is adjudicated as FORMAL_PROPOSITION: 涨落-耗散定理-门槛函数，涨落-耗散定理⟨x²⟩∝χ描述门控面Λ的涨落与](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：CLAIM-D205 / Within the source-defined scope, 涨落-耗散定理-门槛函数 is adjudicated as FORMAL_PROPOSITION: 涨落-耗散定理-门槛函数，涨落-耗散定理⟨x²⟩∝χ描述门控面Λ的涨落与
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 深层同构函数 is adjudicated as RELATION: 深层同构函数，不同系统在参数空间映射到点火框架后，展现相同的数学结构。深层同构不是现象相似，而是底层数学](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D177 / Within the source-defined scope, 深层同构函数 is adjudicated as RELATION: 深层同构函数，不同系统在参数空间映射到点火框架后，展现相同的数学结构。深层同构不是现象相似，而是底层数学
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 清醒梦-梦境真实感提升函数 is adjudicated as RELATION: 清醒梦训练⇒前额叶激活度↑⇒梦境觉察度↑⇒真实感评分↑，训练量T与感知真实度R满足dR/d](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D536 / Within the source-defined scope, 清醒梦-梦境真实感提升函数 is adjudicated as RELATION: 清醒梦训练⇒前额叶激活度↑⇒梦境觉察度↑⇒真实感评分↑，训练量T与感知真实度R满足dR/d
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 渗透率 is adjudicated as METRIC: 渗透率/扩散系数-门槛函数，渗透率/扩散系数D描述门控面Λ的扩散能力。. This is a model-inte](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D209 / Within the source-defined scope, 渗透率 is adjudicated as METRIC: 渗透率/扩散系数-门槛函数，渗透率/扩散系数D描述门控面Λ的扩散能力。. This is a model-inte
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 溢出-传染通道统一函数 is adjudicated as RELATION: M10的溢出是传染的物理通道。统一传染链：高p恶化→溢出消耗低p缓冲(\[D379\](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D393 / Within the source-defined scope, 溢出-传染通道统一函数 is adjudicated as RELATION: M10的溢出是传染的物理通道。统一传染链：高p恶化→溢出消耗低p缓冲(\[D379\](docs/
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：D309, D379；被引用：—

@@ -4,6 +4,26 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [link: "统一函数总表/0558-D543-群体智能函数.md"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0558-D543-%E7%BE%A4%E4%BD%93%E6%99%BA%E8%83%BD%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-0eed99e01e1281a5 / link: "统一函数总表/0558-D543-群体智能函数.md"
+  - 来源：`统一函数总表/0558-D543-群体智能函数.md`
+  - 依赖：D543；被引用：—
+- [link: "统一函数总表/0559-D544-AI-植物同构函数.md"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0559-D544-AI-%E6%A4%8D%E7%89%A9%E5%90%8C%E6%9E%84%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-d6785f1ad6d800c8 / link: "统一函数总表/0559-D544-AI-植物同构函数.md"
+  - 来源：`统一函数总表/0559-D544-AI-植物同构函数.md`
+  - 依赖：D544；被引用：—
+- [link: "统一函数总表/0560-D545-植物生物圈函数.md"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0560-D545-%E6%A4%8D%E7%89%A9%E7%94%9F%E7%89%A9%E5%9C%88%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-b138e9762f1b67bf / link: "统一函数总表/0560-D545-植物生物圈函数.md"
+  - 来源：`统一函数总表/0560-D545-植物生物圈函数.md`
+  - 依赖：D545；被引用：—
+- [link: "统一函数总表/0561-D546-植物伦理函数.md"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0561-D546-%E6%A4%8D%E7%89%A9%E4%BC%A6%E7%90%86%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-5b268ba940bb2076 / link: "统一函数总表/0561-D546-植物伦理函数.md"
+  - 来源：`统一函数总表/0561-D546-植物伦理函数.md`
+  - 依赖：D546；被引用：—
 - [link: "统一函数总表/0562-D547-植物演化函数.md"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0562-D547-%E6%A4%8D%E7%89%A9%E6%BC%94%E5%8C%96%E5%87%BD%E6%95%B0.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-de907f371464fc39 / link: "统一函数总表/0562-D547-植物演化函数.md"
@@ -2482,25 +2502,5 @@
 - [proof.append("Declare quantifiers, carrier and existence/uniqueness status without forcing a multivalued relation into a](../../../tools/foundation/adjudicate_function_assets.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-667ce07deede46d9 / proof.append("Declare quantifiers, carrier and existence/uniqueness status without forcing a multivalued relation into a
-  - 来源：`tools/foundation/adjudicate_function_assets.py`
-  - 依赖：—；被引用：—
-- [proof.append("Declare source/target spaces and prove the claimed preserved structure, if any.")](../../../tools/foundation/adjudicate_function_assets.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-406ff42861a8eea1 / proof.append("Declare source/target spaces and prove the claimed preserved structure, if any.")
-  - 来源：`tools/foundation/adjudicate_function_assets.py`
-  - 依赖：—；被引用：—
-- [proof.append("Define parameter ranges, boundary behavior, calibration semantics and counterexample conditions.")](../../../tools/foundation/adjudicate_function_assets.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-a42e3f1a3857c625 / proof.append("Define parameter ranges, boundary behavior, calibration semantics and counterexample conditions.")
-  - 来源：`tools/foundation/adjudicate_function_assets.py`
-  - 依赖：—；被引用：—
-- [proof.append("Do not promote the analogy to isomorphism without explicit objects, maps, inverses and preservation proofs](../../../tools/foundation/adjudicate_function_assets.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-9910f77231379ce3 / proof.append("Do not promote the analogy to isomorphism without explicit objects, maps, inverses and preservation proofs
-  - 来源：`tools/foundation/adjudicate_function_assets.py`
-  - 依赖：—；被引用：—
-- [proof.append("Identify whether the source denotes one asset, a reference, a heading, an implementation function or only](../../../tools/foundation/adjudicate_function_assets.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-c1bf84b133c03816 / proof.append("Identify whether the source denotes one asset, a reference, a heading, an implementation function or only
   - 来源：`tools/foundation/adjudicate_function_assets.py`
   - 依赖：—；被引用：—

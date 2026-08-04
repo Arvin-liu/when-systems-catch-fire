@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [中文：该案例围绕 与D36倒U型同构 展开。 English: Rule-based English rendering pending human revi…](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0277-C-277-D123%E4%B8%8ED36%E5%80%92U%E5%9E%8B%E5%90%8C%E6%9E%84.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-7a0ec7a87b16c77d / 中文：该案例围绕 与D36倒U型同构 展开。 English: Rule-based English rendering pending human revi…
+  - 来源：`统一案例总表/0277-C-277-D123与D36倒U型同构.md`
+  - 依赖：D36；被引用：—
+- [中文：该案例围绕 预测编码回路自生成 展开。](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0257-C-257-%E9%A2%84%E6%B5%8B%E7%BC%96%E7%A0%81%E5%9B%9E%E8%B7%AF%E8%87%AA%E7%94%9F%E6%88%90.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-03f7219b55f2f8d9 / 中文：该案例围绕 预测编码回路自生成 展开。
+  - 来源：`统一案例总表/0257-C-257-预测编码回路自生成.md`
+  - 依赖：—；被引用：—
 - [中文：该案例围绕 预测编码回路自生成 展开。 English: Rule-based English rendering pending human revi…](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0257-C-257-%E9%A2%84%E6%B5%8B%E7%BC%96%E7%A0%81%E5%9B%9E%E8%B7%AF%E8%87%AA%E7%94%9F%E6%88%90.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-b729f16f8e8a053c / 中文：该案例围绕 预测编码回路自生成 展开。 English: Rule-based English rendering pending human revi…

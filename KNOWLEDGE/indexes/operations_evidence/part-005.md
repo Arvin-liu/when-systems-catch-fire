@@ -6,6 +6,16 @@
 
 - [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：A5061765954 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json / A5061765954 / A5001316926
+  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json`
+  - 依赖：—；被引用：—
+- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：A5062875334 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json / A5062875334 / A5001316926
+  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json`
+  - 依赖：—；被引用：—
+- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：A5063112241 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json / A5063112241 / A5001316926
   - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json`
   - 依赖：—；被引用：—
@@ -2492,15 +2502,5 @@
 - [require(isinstance(dimensions, list) and len(dimensions) == 12, "dimensions: exactly twelve dimensions required", errors)](../../../tools/language_thought/validate_language_thought.py)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-47A4F6BF1CF03817 / require(isinstance(dimensions, list) and len(dimensions) == 12, "dimensions: exactly twelve dimensions required", errors) / IMPLICIT-47A4F6BF1CF03817
-  - 来源：`tools/language_thought/validate_language_thought.py`
-  - 依赖：—；被引用：—
-- [require(isinstance(items, list) and len(items) == 12, f"{prefix}: exact twelve-dimensional coverage required", errors)](../../../tools/language_thought/validate_language_thought.py)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-8114133C117DFB7F / require(isinstance(items, list) and len(items) == 12, f"{prefix}: exact twelve-dimensional coverage required", errors) / IMPLICIT-8114133C117DFB7F
-  - 来源：`tools/language_thought/validate_language_thought.py`
-  - 依赖：—；被引用：—
-- [require(isinstance(profiles, list) and len(profiles) == 4, "manifest: exactly four pilot profiles are required", errors)](../../../tools/language_thought/validate_language_thought.py)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-C9589FABB9DC192A / require(isinstance(profiles, list) and len(profiles) == 4, "manifest: exactly four pilot profiles are required", errors) / IMPLICIT-C9589FABB9DC192A
   - 来源：`tools/language_thought/validate_language_thought.py`
   - 依赖：—；被引用：—

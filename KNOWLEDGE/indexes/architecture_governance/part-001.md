@@ -209,6 +209,11 @@
   - 可搜索名称：NFC-2a4ba0b84df3c66f / """Return the registry-pinned content_digest_sha256 for a VERIFIED source category,
   - 来源：`tests/test_publication_gate_fail_closed.py`
   - 依赖：—；被引用：—
+- ["""Round 1 hard requirement: a provider/model brand name can NEVER become a](../../../tests/test_deep_research_round1.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-cf2fe77e7310df2a / """Round 1 hard requirement: a provider/model brand name can NEVER become a
+  - 来源：`tests/test_deep_research_round1.py`
+  - 依赖：—；被引用：—
 - ["""Run stable, instance-level two-surface responsibility actor evidence."""](../../../tools/operations/run_stage_snapshot_responsibility_cases.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-094f8f1dad26ae6d / """Run stable, instance-level two-surface responsibility actor evidence."""
@@ -829,6 +834,16 @@
   - 可搜索名称：NFC-16104db42163615c / "description": "A material claim and its supporting evidence relation. Fails closed: claim_text + claim_ceiling + source
   - 来源：`tools/deep_research/generate_schemas.py`
   - 依赖：—；被引用：—
+- ["description": "Evidence from running the packet's validation commands. The validator may NOT self-approve; model/provid](../../../tools/deep_research/generate_schemas.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-b26fe7018d283591 / "description": "Evidence from running the packet's validation commands. The validator may NOT self-approve; model/provid
+  - 来源：`tools/deep_research/generate_schemas.py`
+  - 依赖：—；被引用：—
+- ["description": "Neutral declaration of what an executor is capable of, expressed ONLY via capability tokens + permission](../../../tools/deep_research/generate_schemas.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-221c80761eaa853b / "description": "Neutral declaration of what an executor is capable of, expressed ONLY via capability tokens + permission
+  - 来源：`tools/deep_research/generate_schemas.py`
+  - 依赖：—；被引用：—
 - ["description": "One material evidence obligation tied to a claim. obligation_class must be a valid Research OS obligatio](../../../tools/deep_research/generate_schemas.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-ad68c2c6bc1e297e / "description": "One material evidence obligation tied to a claim. obligation_class must be a valid Research OS obligatio
@@ -837,6 +852,11 @@
 - ["description": "Planned evidence obligations and subquestions derived from the frozen brief and strategy pack.",](../../../tools/deep_research/generate_schemas.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-626522437ad3c199 / "description": "Planned evidence obligations and subquestions derived from the frozen brief and strategy pack.",
+  - 来源：`tools/deep_research/generate_schemas.py`
+  - 依赖：—；被引用：—
+- ["description": "Telemetry-only record. Model/provider names appear here as telemetry ONLY and must never be interpreted](../../../tools/deep_research/generate_schemas.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-d16e0bfabb96d7ec / "description": "Telemetry-only record. Model/provider names appear here as telemetry ONLY and must never be interpreted
   - 来源：`tools/deep_research/generate_schemas.py`
   - 依赖：—；被引用：—
 - ["detail": "claim ceiling within evidence" if passed else "CLAIM_EXCEEDS_EVIDENCE present",](../../../tools/research_os/gates.py)
@@ -2259,6 +2279,11 @@
   - 可搜索名称：NFC-cd948a116469d0b3 / "STOP_INSUFFICIENT_EVIDENCE": "INSUFFICIENT_EVIDENCE_COMPLETE",
   - 来源：`tools/deep_research/episode_loop.py`
   - 依赖：—；被引用：—
+- ["stop_states": \["SUCCESS", "FAILED_WITH_EVIDENCE"\],](../../../tools/deep_research/records.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-6c92ba0f847e12af / "stop_states": \["SUCCESS", "FAILED_WITH_EVIDENCE"\],
+  - 来源：`tools/deep_research/records.py`
+  - 依赖：—；被引用：—
 - ["STOP_SUFFICIENT_CANDIDATE requires hard_gates_passed=true",](../../../tools/deep_research/generate_negative_fixtures.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-c3ba539e297b1501 / "STOP_SUFFICIENT_CANDIDATE requires hard_gates_passed=true",
@@ -2284,6 +2309,11 @@
   - 可搜索名称：NFC-4f85ef2c4e6880c4 / "STRUCTURAL_ANALOGY_ONLY": {"T17", "T38", "D90", "D149"},
   - 来源：`tools/foundation/verify_079.py`
   - 依赖：D149, D90, T17, T38；被引用：—
+- ["SUCCESS", "FAILED_WITH_EVIDENCE", "WAITING_HUMAN_APPROVAL",](../../../tools/deep_research/generate_schemas.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-5054af0f6fd328fa / "SUCCESS", "FAILED_WITH_EVIDENCE", "WAITING_HUMAN_APPROVAL",
+  - 来源：`tools/deep_research/generate_schemas.py`
+  - 依赖：—；被引用：—
 - ["success_failure_evidence": (](../../../tools/research_os/executor_contract.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-3166a2af4a60845e / "success_failure_evidence": (
@@ -2473,34 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-0160CFA61ED7E142 / "title": "nonfunction-claim CLAIM-BC-20260709-004", / IMPLICIT-0160CFA61ED7E142 / IMPLICIT-4A6C4DB1EFAA2A40
   - 来源：`data/operations/iterations/109/candidate_inventory.json`
-  - 依赖：—；被引用：—
-- ["title": "nonfunction-claim CLAIM-BC-20260709-004",](../../../data/operations/iterations/110/candidate_inventory.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-4A6C4DB1EFAA2A40 / "title": "nonfunction-claim CLAIM-BC-20260709-004", / IMPLICIT-4A6C4DB1EFAA2A40 / IMPLICIT-0160CFA61ED7E142
-  - 来源：`data/operations/iterations/110/candidate_inventory.json`
-  - 依赖：—；被引用：—
-- ["title": "nonfunction-claim CLAIM-BC-20260709-004",](../../../data/operations/iterations/109/dossiers/CLAIM-BC-20260709-004.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-51DEDF3A94BE85B3 / "title": "nonfunction-claim CLAIM-BC-20260709-004", / IMPLICIT-51DEDF3A94BE85B3 / IMPLICIT-0160CFA61ED7E142
-  - 来源：`data/operations/iterations/109/dossiers/CLAIM-BC-20260709-004.json`
-  - 依赖：—；被引用：—
-- ["title": "nonfunction-claim CLAIM-BC-20260709-004",](../../../data/operations/iterations/111/candidate_inventory.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-9CC68D0A32EC8E30 / "title": "nonfunction-claim CLAIM-BC-20260709-004", / IMPLICIT-9CC68D0A32EC8E30 / IMPLICIT-0160CFA61ED7E142
-  - 来源：`data/operations/iterations/111/candidate_inventory.json`
-  - 依赖：—；被引用：—
-- ["title": "nonfunction-claim CLAIM-BC-20260709-006",](../../../data/operations/iterations/110/candidate_inventory.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-6805B0932F836267 / "title": "nonfunction-claim CLAIM-BC-20260709-006", / IMPLICIT-6805B0932F836267 / IMPLICIT-9166097B994C2453
-  - 来源：`data/operations/iterations/110/candidate_inventory.json`
-  - 依赖：—；被引用：—
-- ["title": "nonfunction-claim CLAIM-BC-20260709-006",](../../../data/operations/iterations/111/candidate_inventory.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-9166097B994C2453 / "title": "nonfunction-claim CLAIM-BC-20260709-006", / IMPLICIT-9166097B994C2453 / IMPLICIT-6805B0932F836267
-  - 来源：`data/operations/iterations/111/candidate_inventory.json`
-  - 依赖：—；被引用：—
-- ["title": "nonfunction-claim CLAIM-BC-20260709-006",](../../../data/operations/iterations/109/dossiers/CLAIM-BC-20260709-006.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-D985388C9C6E4333 / "title": "nonfunction-claim CLAIM-BC-20260709-006", / IMPLICIT-D985388C9C6E4333 / IMPLICIT-6805B0932F836267
-  - 来源：`data/operations/iterations/109/dossiers/CLAIM-BC-20260709-006.json`
   - 依赖：—；被引用：—

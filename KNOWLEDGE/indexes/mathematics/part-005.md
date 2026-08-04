@@ -4,6 +4,26 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Assuming finite second moments for the random scale variables is presented as a more easily checked sufficient condition](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-e630927b348c301c / Assuming finite second moments for the random scale variables is presented as a more easily checked sufficient condition
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [Assumption logs and assertion obligations provide observability, but calibrated uncertainty and durable lifecycle proven](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-3adda23bcde2d3b9 / Assumption logs and assertion obligations provide observability, but calibrated uncertainty and durable lifecycle proven
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [Assumption-scoped proofs and broad held-out numerical studies provide complementary validation surfaces.](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-8930fc0f9a1044e0 / Assumption-scoped proofs and broad held-out numerical studies provide complementary validation surfaces.
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [At that candidate commit, method 1.2.0 and map 0.2.0 remained Current and review was pending; the newer closeout entry a](../../../CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-0cf6cb3970c142cf / At that candidate commit, method 1.2.0 and map 0.2.0 remained Current and review was pending; the newer closeout entry a
+  - 来源：`CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [At the current commit, Ignition is an evidence-traceable, object-typed, inference-checkable and audit-graded formal mech](../../../llms.txt)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-a5d20412373ffb28 / At the current commit, Ignition is an evidence-traceable, object-typed, inference-checkable and audit-graded formal mech
@@ -2477,24 +2497,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-1876C0126C997F7F / def test_schemas_are_valid_draft202012(self): / IMPLICIT-1876C0126C997F7F
   - 来源：`tests/test_deep_research_round1.py`
-  - 依赖：—；被引用：—
-- [def test_temporally_valid_but_topologically_disconnected_sequence_is_not_graph_path():](../../../tests/test_adaptive_relational_network_validation_contract.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-99170264CE12CC82 / def test_temporally_valid_but_topologically_disconnected_sequence_is_not_graph_path(): / IMPLICIT-99170264CE12CC82
-  - 来源：`tests/test_adaptive_relational_network_validation_contract.py`
-  - 依赖：—；被引用：—
-- [def test_topologically_connected_but_temporally_invalid_path_is_rejected():](../../../tests/test_adaptive_relational_network_validation_contract.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-F23501DF3CB4A974 / def test_topologically_connected_but_temporally_invalid_path_is_rejected(): / IMPLICIT-F23501DF3CB4A974
-  - 来源：`tests/test_adaptive_relational_network_validation_contract.py`
-  - 依赖：—；被引用：—
-- [def test_valid_cumulative_current_lifecycle(self):](../../../tests/test_iteration_sync.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-d0eeb61b4c036410 / def test_valid_cumulative_current_lifecycle(self):
-  - 来源：`tests/test_iteration_sync.py`
-  - 依赖：—；被引用：—
-- [def validate_version_front_doors(ai_start: str, ai_handoff: str, llms: str, readme: str \| None = None, current_state: st](../../../tools/validate_human_front_door.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-bb96b8de1a677463 / def validate_version_front_doors(ai_start: str, ai_handoff: str, llms: str, readme: str \| None = None, current_state: st
-  - 来源：`tools/validate_human_front_door.py`
   - 依赖：—；被引用：—

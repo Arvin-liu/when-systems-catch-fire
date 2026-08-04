@@ -4,6 +4,31 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [从这条案例看，中文：案例说明：公民有真实退出权，福利国家认同经退出权验证 关键发现：第5步跑通 English: Rule-based English… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0038-C-38-%E5%8C%97%E6%AC%A7%E7%A6%8F%E5%88%A9%E5%9B%BD%E5%AE%B6.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-a70aa0a8fd57e020 / 从这条案例看，中文：案例说明：公民有真实退出权，福利国家认同经退出权验证 关键发现：第5步跑通 English: Rule-based English… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`统一案例总表/0038-C-38-北欧福利国家.md`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：案例说明：六国遗民"可以离开"但离开等于死，象征退出权=强制力的优雅版本 关键发现：第3步未满足 English: Rule-bas… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0003-C-3-%E7%A7%A6%E7%BB%9F%E4%B8%80.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-5624e6d267690503 / 从这条案例看，中文：案例说明：六国遗民"可以离开"但离开等于死，象征退出权=强制力的优雅版本 关键发现：第3步未满足 English: Rule-bas… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`统一案例总表/0003-C-3-秦统一.md`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：案例说明：共享层沟通验证 — 物理学家和生物学家在数学框架上沟通η=0.27，物理学家降维到BL沟通η=0.15，共享层优于降维。核… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0356-C-357-%E5%85%B1%E4%BA%AB%E5%B1%82%E6%B2%9F%E9%80%9A%E9%AA%8C%E8%AF%81%20%E2%80%94%20%E7%89%A9%E7%90%86%E5%AD%A6%E5%AE%B6%E5%92%8C%E7%94%9F%E7%89%A9%E5%AD%A6%E5%AE%B6%E5%9C%A8%E6%95%B0%E5%AD%A6%E6%A1%86%E6%9E%B6%E4%B8%8A%E6%B2%9F%E9%80%9A%CE%B7%3D0.27%2C%E7%89%A9%E7%90%86%E5%AD%A6%E5%AE%B6%E9%99%8D%E7%BB%B4%E5%88%B0BL%E6%B2%9F%E9%80%9A%CE%B7%3D0.15%2C%E5%85%B1%E4%BA%AB%E5%B1%82%E4%BC%98%E4%BA%8E%E9%99%8D%E7%BB%B4.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-c2ee983cc92e917e / 从这条案例看，中文：案例说明：共享层沟通验证 — 物理学家和生物学家在数学框架上沟通η=0.27，物理学家降维到BL沟通η=0.15，共享层优于降维。核… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`统一案例总表/0356-C-357-共享层沟通验证 — 物理学家和生物学家在数学框架上沟通η=0.27,物理学家降维到BL沟通η=0.15,共享层优于降维.md`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：案例说明：共生是互为外部注入——两个物种互为对方的外部注入打破各自的门外锁定。核心函数：\[D166\](docs/zh/functio… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0385-C-386-%E5%85%B1%E7%94%9F%E6%98%AF%E4%BA%92%E4%B8%BA%E5%A4%96%E9%83%A8%E6%B3%A8%E5%85%A5%E2%80%94%E2%80%94%E4%B8%A4%E4%B8%AA%E7%89%A9%E7%A7%8D%E4%BA%92%E4%B8%BA%E5%AF%B9%E6%96%B9%E7%9A%84%E5%A4%96%E9%83%A8%E6%B3%A8%E5%85%A5%E6%89%93%E7%A0%B4%E5%90%84%E8%87%AA%E7%9A%84%E9%97%A8%E5%A4%96%E9%94%81%E5%AE%9A.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-1b05b90d3ce5ca26 / 从这条案例看，中文：案例说明：共生是互为外部注入——两个物种互为对方的外部注入打破各自的门外锁定。核心函数：\[D166\](docs/zh/functio… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`统一案例总表/0385-C-386-共生是互为外部注入——两个物种互为对方的外部注入打破各自的门外锁定.md`
+  - 依赖：D166；被引用：—
+- [从这条案例看，中文：案例说明：关系中的μ倒U型 — 恋爱初期高认知方积极降维（"他好懂我"），6个月后降维疲惫→μ翻转→"他根本不理解我"。核心函数：\[… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0350-C-351-%E5%85%B3%E7%B3%BB%E4%B8%AD%E7%9A%84%CE%BC%E5%80%92U%E5%9E%8B%20%E2%80%94%20%E6%81%8B%E7%88%B1%E5%88%9D%E6%9C%9F%E9%AB%98%E8%AE%A4%E7%9F%A5%E6%96%B9%E7%A7%AF%E6%9E%81%E9%99%8D%E7%BB%B4%28-%E4%BB%96%E5%A5%BD%E6%87%82%E6%88%91-%29%2C6%E4%B8%AA%E6%9C%88%E5%90%8E%E9%99%8D%E7%BB%B4%E7%96%B2%E6%83%AB%E2%86%92%CE%BC%E7%BF%BB%E8%BD%AC%E2%86%92-%E4%BB%96%E6%A0%B9%E6%9C%AC%E4%B8%8D%E7%90%86%E8%A7%A3%E6%88%91-.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-4cee89183e597deb / 从这条案例看，中文：案例说明：关系中的μ倒U型 — 恋爱初期高认知方积极降维（"他好懂我"），6个月后降维疲惫→μ翻转→"他根本不理解我"。核心函数：\[… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`统一案例总表/0350-C-351-关系中的μ倒U型 — 恋爱初期高认知方积极降维(-他好懂我-),6个月后降维疲惫→μ翻转→-他根本不理解我-.md`
+  - 依赖：—；被引用：—
 - [从这条案例看，中文：案例说明：关系衰减的临界漂移 — μ从0.5翻转到-0.3，dcritical从2000km缩到50km，D87在D77域的实例。核… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0333-C-333-%E5%85%B3%E7%B3%BB%E8%A1%B0%E5%87%8F%E7%9A%84%E4%B8%B4%E7%95%8C%E6%BC%82%E7%A7%BB%20%E2%80%94%20%CE%BC%E4%BB%8E0.5%E7%BF%BB%E8%BD%AC%E5%88%B0-0.3%2Cdcritical%E4%BB%8E2000km%E7%BC%A9%E5%88%B050km%2CD87%E5%9C%A8D77%E5%9F%9F%E7%9A%84%E5%AE%9E%E4%BE%8B.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-f3609757529114a3 / 从这条案例看，中文：案例说明：关系衰减的临界漂移 — μ从0.5翻转到-0.3，dcritical从2000km缩到50km，D87在D77域的实例。核… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
@@ -2478,29 +2503,4 @@
   - 类型/状态：`RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
   - 可搜索名称：全语料非函数型断言裁决索引 / nonfunction-claim-adjudication-index
   - 来源：`docs/foundation/nonfunction-claim-adjudication-index.md`
-  - 依赖：—；被引用：—
-- [全量两张表查重**：`统一函数总表/`（614 文件）、`统一案例总表/`（802 文件），按 18 个重点关键词检索。](../../../outputs/audit/teacher-competition-backfill-review-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-ba6ceef4c8328d57 / 全量两张表查重**：`统一函数总表/`（614 文件）、`统一案例总表/`（802 文件），按 18 个重点关键词检索。
-  - 来源：`outputs/audit/teacher-competition-backfill-review-20260708.md`
-  - 依赖：—；被引用：—
-- [全量查重方式：对 M1–M9 逐条在函数总表做关键词+锚点检索（家庭/身份/价值感/沉没/托举/管理成本/支持/角色/父母/服从 轴 grep），并对命中的 D595–D599、D583、T40、D245 逐篇精读确认实质同构。](../../../outputs/collisions/20260711-disobedience-subjectivity/two-tables-full-collision-report.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-39cec8f4b70d2ded / 全量查重方式：对 M1–M9 逐条在函数总表做关键词+锚点检索（家庭/身份/价值感/沉没/托举/管理成本/支持/角色/父母/服从 轴 grep），并对命中的 D595–D599、D583、T40、D245 逐篇精读确认实质同构。
-  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/two-tables-full-collision-report.md`
-  - 依赖：D245, D583, D595, D599；被引用：—
-- [全量查重（18 关键词函数表 + 14 关键词案例表）确认无同名/同构直接条目。](../../../outputs/audit/teacher-competition-small-batch-backfill-audit-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-b3b1b158cfdff127 / 全量查重（18 关键词函数表 + 14 关键词案例表）确认无同名/同构直接条目。
-  - 来源：`outputs/audit/teacher-competition-small-batch-backfill-audit-20260708.md`
-  - 依赖：—；被引用：—
-- [公式化、可计算、内部自洽、AI 编号和单元测试通过都不等于外部真实；当前门控模型没有统一四力，也没有证明大一统普遍不可能。](../../ASSET-CARDS.md#asset-nfc-fa7f908615d24682)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-fa7f908615d24682 / 公式化、可计算、内部自洽、AI 编号和单元测试通过都不等于外部真实；当前门控模型没有统一四力，也没有证明大一统普遍不可能。 / - 公式化、可计算、内部自洽、AI 编号和单元测试通过都不等于外部真实；当前门控模型没有统一四力，也没有证明大一统普遍不可能。
-  - 来源：`AI-START-HERE.md`
-  - 依赖：—；被引用：—
-- [公理、定理、引理、推论](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-a7422d93388ba0c0 / 公理、定理、引理、推论
-  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
   - 依赖：—；被引用：—

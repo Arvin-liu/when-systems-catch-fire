@@ -4,6 +4,26 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [\[C-0738｜美国禁酒令\](../../../统一案例总表/0733-C-0738-美国禁酒令.md)（原笔记编号：C572-2）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0582-D572-%E9%80%80%E5%87%BA%E6%9D%83%E9%AA%8C%E8%AF%81.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-b2a8f23ff1e6679e / \[C-0738｜美国禁酒令\](../../../统一案例总表/0733-C-0738-美国禁酒令.md)（原笔记编号：C572-2）
+  - 来源：`统一函数总表/0582-D572-退出权验证.md`
+  - 依赖：—；被引用：—
+- [\[C-0739｜脱不花财务决策\](../../../统一案例总表/0734-C-0739-脱不花财务决策.md)（原笔记编号：C572-3）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0582-D572-%E9%80%80%E5%87%BA%E6%9D%83%E9%AA%8C%E8%AF%81.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-170e44c16bd616d8 / \[C-0739｜脱不花财务决策\](../../../统一案例总表/0734-C-0739-脱不花财务决策.md)（原笔记编号：C572-3）
+  - 来源：`统一函数总表/0582-D572-退出权验证.md`
+  - 依赖：—；被引用：—
+- [\[C-0740｜何刚财务观点\](../../../统一案例总表/0735-C-0740-何刚财务观点.md)（原笔记编号：C572-4）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0582-D572-%E9%80%80%E5%87%BA%E6%9D%83%E9%AA%8C%E8%AF%81.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-a00a16d23a1feedc / \[C-0740｜何刚财务观点\](../../../统一案例总表/0735-C-0740-何刚财务观点.md)（原笔记编号：C572-4）
+  - 来源：`统一函数总表/0582-D572-退出权验证.md`
+  - 依赖：—；被引用：—
+- [\[C-0741｜脱不花财务决策\](../../../统一案例总表/0736-C-0741-脱不花财务决策.md)（原笔记编号：C573-1）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0583-D573-%E8%B4%A2%E5%8A%A1%E5%86%B3%E7%AD%96%E4%B8%8D%E5%AE%8C%E5%A4%87%E6%80%A7.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-44bc723d6594859d / \[C-0741｜脱不花财务决策\](../../../统一案例总表/0736-C-0741-脱不花财务决策.md)（原笔记编号：C573-1）
+  - 来源：`统一函数总表/0583-D573-财务决策不完备性.md`
+  - 依赖：—；被引用：—
 - [\[C-0742｜何刚财务观点\](../../../统一案例总表/0737-C-0742-何刚财务观点.md)（原笔记编号：C573-2）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0583-D573-%E8%B4%A2%E5%8A%A1%E5%86%B3%E7%AD%96%E4%B8%8D%E5%AE%8C%E5%A4%87%E6%80%A7.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-e90c8f7a4616c746 / \[C-0742｜何刚财务观点\](../../../统一案例总表/0737-C-0742-何刚财务观点.md)（原笔记编号：C573-2）
@@ -2483,24 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-0b888ca73ad0ef6b / asset bridge audit: IMPORTABLE_NOW=7 (meta_function/psi0_definition), NEEDS_MANUAL_SPEC=19 (theorem_function), OUT_OF_SC
   - 来源：`data/external-research/121-fulltext-resolver/121q6c/121q6c-step-ledger.jsonl`
-  - 依赖：—；被引用：—
-- [Assuming finite second moments for the random scale variables is presented as a more easily checked sufficient condition](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-e630927b348c301c / Assuming finite second moments for the random scale variables is presented as a more easily checked sufficient condition
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
-  - 依赖：—；被引用：—
-- [Assumption logs and assertion obligations provide observability, but calibrated uncertainty and durable lifecycle proven](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-3adda23bcde2d3b9 / Assumption logs and assertion obligations provide observability, but calibrated uncertainty and durable lifecycle proven
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
-  - 依赖：—；被引用：—
-- [Assumption-scoped proofs and broad held-out numerical studies provide complementary validation surfaces.](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-8930fc0f9a1044e0 / Assumption-scoped proofs and broad held-out numerical studies provide complementary validation surfaces.
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
-  - 依赖：—；被引用：—
-- [At that candidate commit, method 1.2.0 and map 0.2.0 remained Current and review was pending; the newer closeout entry a](../../../CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-0cf6cb3970c142cf / At that candidate commit, method 1.2.0 and map 0.2.0 remained Current and review was pending; the newer closeout entry a
-  - 来源：`CHANGELOG.md`
   - 依赖：—；被引用：—

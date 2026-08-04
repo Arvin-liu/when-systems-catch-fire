@@ -4,6 +4,31 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [\| \[D400\]( ) \| \[集中性-序参量统一函数\]( ) \| F_{D400}(x) := M3的I_concentration](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-2948f5783ed55ebc / \| \[D400\]( ) \| \[集中性-序参量统一函数\]( ) \| F_{D400}(x) := M3的I_concentration
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：D386, D387, D400；被引用：—
+- [\| \[D403\]( ) \| \[δ_c-相变点统一函数\]( ) \| F_{D403}(x) := M6的δ_c对应配分函数中耦合-容斥](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-69061bb4a42549ad / \| \[D403\]( ) \| \[δ_c-相变点统一函数\]( ) \| F_{D403}(x) := M6的δ_c对应配分函数中耦合-容斥
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：D389, D403；被引用：—
+- [\| \[D404\]( ) \| \[双临界n统一函数\]( ) \| F_{D404}(x) := M7的n*∝β/(p̄·Σαᵢ)依赖干预力度β，n_c](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-0040294f24faf1fe / \| \[D404\]( ) \| \[双临界n统一函数\]( ) \| F_{D404}(x) := M7的n*∝β/(p̄·Σαᵢ)依赖干预力度β，n_c
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：D404；被引用：—
+- [\| \[D406\]( ) \| \[宏观僵尸态g_eff函数\]( ) \| F_{D406}(x) := M9的g_eff_macro](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-88a838b8821ea9c1 / \| \[D406\]( ) \| \[宏观僵尸态g_eff函数\]( ) \| F_{D406}(x) := M9的g_eff_macro
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：D311, D406；被引用：—
+- [\| \[D408\]( ) \| \[Jensen-慢性消耗统一极限函数\]( ) \| F_{D408}(x) :=](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-3fe494f508faf18f / \| \[D408\]( ) \| \[Jensen-慢性消耗统一极限函数\]( ) \| F_{D408}(x) :=
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：D394, D408；被引用：—
 - [\| \[D414\]( ) \| \[集中性-序参量映射修正函数\]( ) \| F_{D414}(x) := M3的I=(1+m)/2](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-89fb6543f6a924da / \| \[D414\]( ) \| \[集中性-序参量映射修正函数\]( ) \| F_{D414}(x) := M3的I=(1+m)/2
@@ -2460,29 +2485,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-41f9ae8fb1ac6ecb / 两个反向单调函数相乘必然生成倒U型 / two oppositely monotone functions multiplied together necessarily generate an inverted-U curve
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：—；被引用：—
-- [两个反向单调函数相乘必然生成倒U型，最优在f₁'/f₁ = -f₂'/f₂处。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0026-T16-%E4%B8%A4%E4%B8%AA%E5%8F%8D%E5%90%91%E5%8D%95%E8%B0%83%E5%87%BD%E6%95%B0%E7%9B%B8%E4%B9%98%E5%BF%85%E7%84%B6%E7%94%9F%E6%88%90%E5%80%92U%E5%9E%8B.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-4897550b051bc1e5 / 两个反向单调函数相乘必然生成倒U型，最优在f₁'/f₁ = -f₂'/f₂处。
-  - 来源：`统一函数总表/0026-T16-两个反向单调函数相乘必然生成倒U型.md`
-  - 依赖：—；被引用：—
-- [两个反向单调函数相乘必然生成倒U型，最优在f₁'/f₁ = -f₂'/f₂处。 **扩展注释 / Extended Annotation**](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-817ff8cdff2f034e / 两个反向单调函数相乘必然生成倒U型，最优在f₁'/f₁ = -f₂'/f₂处。 **扩展注释 / Extended Annotation**
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：—；被引用：—
-- [两个框架都是迭代扩张系统，数学形式同构但驱动逻辑相反。](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0651-C-656-Science%20Earth%20%C3%97%20%E7%82%B9%E7%81%AB%E6%A1%86%E6%9E%B6%E7%A2%B0%E6%92%9E%E9%AA%8C%E8%AF%81.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-d6b87c849d99ae54 / 两个框架都是迭代扩张系统，数学形式同构但驱动逻辑相反。
-  - 来源：`统一案例总表/0651-C-656-Science Earth × 点火框架碰撞验证.md`
-  - 依赖：—；被引用：—
-- [两个系统在结构上相似，但尚未证明同构。](../../../docs/claim_levels.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-a2f85b655a2092ee / 两个系统在结构上相似，但尚未证明同构。
-  - 来源：`docs/claim_levels.md`
-  - 依赖：—；被引用：—
-- [两张表主权已回到 `when-systems-catch-fire`**：函数表在 `统一函数总表/`，案例表在 `统一案例总表/`。](../../../docs/getbrain-operation-guide-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-fec3ea8272d49872 / 两张表主权已回到 `when-systems-catch-fire`**：函数表在 `统一函数总表/`，案例表在 `统一案例总表/`。
-  - 来源：`docs/getbrain-operation-guide-20260708.md`
   - 依赖：—；被引用：—

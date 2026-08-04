@@ -4,6 +4,31 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [统一函数总表/0088-D39-统一内部驱动力函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-e40d640a4367ad71 / 统一函数总表/0088-D39-统一内部驱动力函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D39；被引用：—
+- [统一函数总表/0089-D40-碰撞存活率.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-b2d3cec49854b277 / 统一函数总表/0089-D40-碰撞存活率.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D40；被引用：—
+- [统一函数总表/0090-D41-退化渗透临界触发.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-304543f70d831713 / 统一函数总表/0090-D41-退化渗透临界触发.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D41；被引用：—
+- [统一函数总表/0091-D42-H_分类升级函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-7c73fe49f443b42f / 统一函数总表/0091-D42-H_分类升级函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D42；被引用：—
+- [统一函数总表/0092-D43-碰撞存活率函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-1d77a97e5e35e05f / 统一函数总表/0092-D43-碰撞存活率函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D43；被引用：—
 - [统一函数总表/0093-D44-确定性误解函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-3a20972f52b6f927 / 统一函数总表/0093-D44-确定性误解函数.md
@@ -2479,28 +2504,3 @@
   - 可搜索名称：NFC-3f3b77ec85ba9bc8 / 统一函数总表/0584-D574-财务教育框架化.md
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：D574；被引用：—
-- [统一函数总表/0585-D575-财务元协议实例化.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-93d388a4e4fbd897 / 统一函数总表/0585-D575-财务元协议实例化.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D575；被引用：—
-- [统一函数总表/0586-D576-认知年龄提升.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-6355ca2817a78b27 / 统一函数总表/0586-D576-认知年龄提升.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D576；被引用：—
-- [统一函数总表/0587-D577-观点竞争.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-241aaef886fe05f5 / 统一函数总表/0587-D577-观点竞争.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D577；被引用：—
-- [统一函数总表/0588-D578-读者友好.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-e5d92c27e507c030 / 统一函数总表/0588-D578-读者友好.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D578；被引用：—
-- [统一函数总表/0589-D579-阅历赤字解决.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-62eaa9240d9d9458 / 统一函数总表/0589-D579-阅历赤字解决.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D579；被引用：—

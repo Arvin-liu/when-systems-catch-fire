@@ -4,6 +4,31 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0509-D511-退出权归零函数.md`](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0509-D511-%E9%80%80%E5%87%BA%E6%9D%83%E5%BD%92%E9%9B%B6%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-da0c4394d440536b / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0509-D511-退出权归零函数.md`
+  - 来源：`统一函数总表/0509-D511-退出权归零函数.md`
+  - 依赖：D511；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0510-D512-宇宙约束空间函数.md`](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0510-D512-%E5%AE%87%E5%AE%99%E7%BA%A6%E6%9D%9F%E7%A9%BA%E9%97%B4%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-386440ed858bd1f3 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0510-D512-宇宙约束空间函数.md`
+  - 来源：`统一函数总表/0510-D512-宇宙约束空间函数.md`
+  - 依赖：D512；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0511-D513-信息可区分性函数.md`](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0511-D513-%E4%BF%A1%E6%81%AF%E5%8F%AF%E5%8C%BA%E5%88%86%E6%80%A7%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-7afafb39ddb6f7b7 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0511-D513-信息可区分性函数.md`
+  - 来源：`统一函数总表/0511-D513-信息可区分性函数.md`
+  - 依赖：D513；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0512-D514-信息守恒函数.md`](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0512-D514-%E4%BF%A1%E6%81%AF%E5%AE%88%E6%81%92%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-782dfba883318cad / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0512-D514-信息守恒函数.md`
+  - 来源：`统一函数总表/0512-D514-信息守恒函数.md`
+  - 依赖：D514；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0513-D515-宇宙约束边界函数.md`](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0513-D515-%E5%AE%87%E5%AE%99%E7%BA%A6%E6%9D%9F%E8%BE%B9%E7%95%8C%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-4b8b52f6639326c7 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0513-D515-宇宙约束边界函数.md`
+  - 来源：`统一函数总表/0513-D515-宇宙约束边界函数.md`
+  - 依赖：D515；被引用：—
 - [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0514-D516-跨域对称性破缺推论.md`](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0514-D516-%E8%B7%A8%E5%9F%9F%E5%AF%B9%E7%A7%B0%E6%80%A7%E7%A0%B4%E7%BC%BA%E6%8E%A8%E8%AE%BA.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-21e5b1419fa1fb49 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0514-D516-跨域对称性破缺推论.md`
@@ -2475,29 +2500,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-2c486c79c7b03d75 / 把外部已证明的定理写成点火框架证明
   - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [把审美判断写成客观定理](../../../outputs/getbrain/classic-problems-benchmark-supplement-20260707.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-1a90066bfec1b0a8 / 把审美判断写成客观定理
-  - 来源：`outputs/getbrain/classic-problems-benchmark-supplement-20260707.md`
-  - 依赖：—；被引用：—
-- [把局部函数或局部案例中的结构关系写成普遍函数。](../../../data/failure_typology.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-1edcdcc4132b31ec / 把局部函数或局部案例中的结构关系写成普遍函数。
-  - 来源：`data/failure_typology.csv`
-  - 依赖：—；被引用：—
-- [把已经通过点火证据制度的函数、案例与碰撞结果，转换成普通读者可以读懂、但又不会越过事实边界的故事产物。](../../../docs/narrative-output-layer.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-123b44c855d41075 / 把已经通过点火证据制度的函数、案例与碰撞结果，转换成普通读者可以读懂、但又不会越过事实边界的故事产物。
-  - 来源：`docs/narrative-output-layer.md`
-  - 依赖：—；被引用：—
-- [把描述性机制和规范性判断分开，只有在正当化桥接存在时才允许合流。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0602-D592-%E8%A7%84%E8%8C%83%E6%80%A7%E5%88%86%E7%A6%BB%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-360a048007ab298f / 把描述性机制和规范性判断分开，只有在正当化桥接存在时才允许合流。
-  - 来源：`统一函数总表/0602-D592-规范性分离函数.md`
-  - 依赖：—；被引用：—
-- [把故事化案例写成证明；](../../../docs/publication_risk_checklist.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-910a5a15b0e3ce57 / 把故事化案例写成证明；
-  - 来源：`docs/publication_risk_checklist.md`
   - 依赖：—；被引用：—

@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0418})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0417-C-418-%E6%A0%B8%E5%BF%83-%E8%BE%B9%E7%BC%98%E7%9A%84%E4%B9%98%E6%B3%95%E5%88%86%E5%8C%96%E2%80%94%E2%80%94%E6%A0%B8%E5%BF%83%E6%98%AF%E5%A4%9A%E9%97%A8%E6%8E%A7%E9%9D%A2%E6%AD%A3%E8%B4%A1%E7%8C%AE%E7%9A%84%E5%90%B8%E5%BC%95%E5%AD%90%2C%E8%BE%B9%E7%BC%98%E6%98%AF%E9%97%A8%E5%A4%96%E9%94%81%E5%AE%9A.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-F4A0A5C7B54DB9EF / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0418})=1\]. / IMPLICIT-F4A0A5C7B54DB9EF
+  - 来源：`统一案例总表/0417-C-418-核心-边缘的乘法分化——核心是多门控面正贡献的吸引子,边缘是门外锁定.md`
+  - 依赖：—；被引用：—
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0419})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0418-C-419-%E4%BA%A4%E9%80%9A%E6%8B%A5%E5%A0%B5%E7%9A%84%E9%97%A8%E6%A7%9B%E7%AA%81%E5%8F%98%E2%80%94%E2%80%94%CE%9B_friction%E5%9C%A8%E4%B8%B4%E7%95%8C%E5%AF%86%E5%BA%A6%E5%A4%84%E7%AA%81%E5%8F%98%2C%E7%95%85%E9%80%9A%E5%92%8C%E6%8B%A5%E5%A0%B5%E6%97%A0%E4%B8%AD%E9%97%B4%E6%80%81.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-066FB13ADE0B505B / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0419})=1\]. / IMPLICIT-066FB13ADE0B505B
+  - 来源：`统一案例总表/0418-C-419-交通拥堵的门槛突变——Λ_friction在临界密度处突变,畅通和拥堵无中间态.md`
+  - 依赖：—；被引用：—
 - [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0420})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0419-C-420-%E5%9F%8E%E5%B8%82%E8%A1%B0%E8%B4%A5%E7%9A%84%E6%AD%BB%E9%94%81%E2%80%94%E2%80%94%CE%9B%E2%86%91%2B%CE%BC%E2%86%93%E9%97%A8%E6%A7%9B%E7%A2%BE%E5%8E%8B%2B%E9%9C%80%E8%A6%81%E4%BA%A7%E4%B8%9A%E6%9D%A5%E6%8F%90%E9%AB%98%CE%BC%E4%BD%86%E9%9C%80%E8%A6%81%CE%BC%E6%9D%A5%E5%90%B8%E5%BC%95%E4%BA%A7%E4%B8%9A.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-FCB44413CA6C3038 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0420})=1\]. / IMPLICIT-FCB44413CA6C3038
@@ -2492,15 +2502,5 @@
 - [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-01.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-01.json)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：D002980 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-01.json / D002980 / A5005438899
-  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-01.json`
-  - 依赖：—；被引用：—
-- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-01.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-01.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：D005068 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-01.json / D005068 / A5005438899
-  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-01.json`
-  - 依赖：—；被引用：—
-- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-01.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-01.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：D012640 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-01.json / D012640 / A5005438899
   - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-01.json`
   - 依赖：—；被引用：—

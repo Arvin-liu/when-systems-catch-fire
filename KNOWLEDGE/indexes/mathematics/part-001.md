@@ -144,6 +144,16 @@
   - 可搜索名称：NFC-090ac6aab5d89ea8 / "blocked_by_disposition": row\["final_disposition"\] not in {"ACCEPTED_AS_PROVED_MATHEMATICAL_RESULT", "ACCEPTED_AS_ESTABL
   - 来源：`tools/foundation/adjudicate_nonfunction_claims.py`
   - 依赖：—；被引用：—
+- ["capability_proof": EXECUTOR_PROPOSED,](../../../tools/deep_research/records.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-c20c8ff19a0c017e / "capability_proof": EXECUTOR_PROPOSED,
+  - 来源：`tools/deep_research/records.py`
+  - 依赖：—；被引用：—
+- ["capability_proof": {"type": "array", "items": {"type": "object", "additionalProperties": True}},](../../../tools/deep_research/generate_schemas.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-f85513a79f74f505 / "capability_proof": {"type": "array", "items": {"type": "object", "additionalProperties": True}},
+  - 来源：`tools/deep_research/generate_schemas.py`
+  - 依赖：—；被引用：—
 - ["case_index": repo / "统一案例总表/INDEX.md",](../../../inputs/020/validate_formal_protocol.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-97aaf65f37c9f441 / "case_index": repo / "统一案例总表/INDEX.md",
@@ -285,8 +295,8 @@
   - 来源：`tools/foundation/adjudicate_core.py`
   - 依赖：—；被引用：—
 - ["description": "Executor return under contract. Reuses the Research OS executor-return contract: required fields plus pr](../../../tools/deep_research/generate_schemas.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-28d1df9499fa8548 / "description": "Executor return under contract. Reuses the Research OS executor-return contract: required fields plus pr
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-ca2a584f85029177 / "description": "Executor return under contract. Reuses the Research OS executor-return contract: required fields plus pr
   - 来源：`tools/deep_research/generate_schemas.py`
   - 依赖：—；被引用：—
 - ["docs/operations/lifecycle-readme.md",](../../../tools/foundation/adjudicate_function_assets.py)
@@ -733,6 +743,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-dcd667a3d8323cf1 / "no_totality_proof": \[("python3", "tools/validate_human_front_door.py")\],
   - 来源：`tools/operations/generate_component_profiles.py`
+  - 依赖：—；被引用：—
+- ["not": {"anyOf": \[{"required": \["self_approved"\]}\]}](../../../tools/deep_research/generate_schemas.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-1cf7c785d5c6fffa / "not": {"anyOf": \[{"required": \["self_approved"\]}\]}
+  - 来源：`tools/deep_research/generate_schemas.py`
   - 依赖：—；被引用：—
 - ["note": "Verified via git diff: no changes to 统一函数总表/ directory"}](../../../data/external-research/106-105-correction/106-validator.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -2488,19 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-9343BA50DCFF6DE6 / ## 关联函数 / Related Functions / IMPLICIT-9343BA50DCFF6DE6 / IMPLICIT-0026301F130FD562
   - 来源：`统一案例总表/0792-C-0797-哥德尔不完备性与形式系统边界.md`
-  - 依赖：—；被引用：—
-- [## 关联函数 / Related Functions](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0686-C-0691-%E5%BC%A0%E7%9B%8A%E5%94%90%E7%AA%81%E7%A0%B4%E5%8D%8A%E6%95%B0%E9%9A%9C%E7%A2%8D.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-948B341D3D5AD0EA / ## 关联函数 / Related Functions / IMPLICIT-948B341D3D5AD0EA / IMPLICIT-0026301F130FD562
-  - 来源：`统一案例总表/0686-C-0691-张益唐突破半数障碍.md`
-  - 依赖：—；被引用：—
-- [## 关联函数 / Related Functions](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0688-C-0693-%E5%AD%AA%E7%94%9F%E7%B4%A0%E6%95%B0%E9%97%AE%E9%A2%98%E8%BD%AC%E6%8D%A2.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-95373A07149F87CB / ## 关联函数 / Related Functions / IMPLICIT-95373A07149F87CB / IMPLICIT-0026301F130FD562
-  - 来源：`统一案例总表/0688-C-0693-孪生素数问题转换.md`
-  - 依赖：—；被引用：—
-- [## 关联函数 / Related Functions](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0746-C-0751-%E5%AE%89%E7%84%B6%E5%85%AC%E5%8F%B8.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-96B0D98EAD8A497C / ## 关联函数 / Related Functions / IMPLICIT-96B0D98EAD8A497C / IMPLICIT-0026301F130FD562
-  - 来源：`统一案例总表/0746-C-0751-安然公司.md`
   - 依赖：—；被引用：—

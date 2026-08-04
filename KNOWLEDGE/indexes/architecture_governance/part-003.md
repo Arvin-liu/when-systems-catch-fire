@@ -4,6 +4,61 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [AI 输出时应根据证据制度库检查：](../../../docs/evidence_regime_library.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-439ea02a91ffb0c0 / AI 输出时应根据证据制度库检查：
+  - 来源：`docs/evidence_regime_library.md`
+  - 依赖：—；被引用：—
+- [AI 过度解释指模型把结构性推论扩写成超出证据范围的结论。](../../../outputs/getbrain/failure-typology-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-a345bdb41638c12a / AI 过度解释指模型把结构性推论扩写成超出证据范围的结论。
+  - 来源：`outputs/getbrain/failure-typology-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [AI 过度解释（把结构性推论写成"已解决"）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：NFC-b60ac4f646168901 / AI 过度解释（把结构性推论写成"已解决"）
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [AI共震策略全失效(验证D66)](../../../data/foundation/evidence/evidence.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-ae1a5b2f5943a5cd / AI共震策略全失效(验证D66)
+  - 来源：`data/foundation/evidence/evidence.jsonl`
+  - 依赖：D66；被引用：—
+- [AI医疗 × 点火框架碰撞验证](../../../data/foundation/evidence/evidence.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：NFC-a85f64b00bf7c8bd / AI医疗 × 点火框架碰撞验证
+  - 来源：`data/foundation/evidence/evidence.jsonl`
+  - 依赖：—；被引用：—
+- [AI多智能体协作≠调度 — 两个AI互相发信号,ηShannon≈1但Pintention=0,属于类II,是自动响应链](../../../data/foundation/evidence/evidence.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-7dc64aa41c33b3cb / AI多智能体协作≠调度 — 两个AI互相发信号,ηShannon≈1但Pintention=0,属于类II,是自动响应链
+  - 来源：`data/foundation/evidence/evidence.jsonl`
+  - 依赖：—；被引用：—
+- [AI安装路径的串行约束 — 不能并行装三个模块,串行安装每一步是下一步的必要条件](../../../data/foundation/evidence/evidence.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-1ab1dddaed9e22dd / AI安装路径的串行约束 — 不能并行装三个模块,串行安装每一步是下一步的必要条件
+  - 来源：`data/foundation/evidence/evidence.jsonl`
+  - 依赖：—；被引用：—
+- [All 082 audit products re-verified and written to fire repo:](../../../reports/foundation-architecture/083-glm-high-repair-summary.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-967c9d03f6a4c783 / All 082 audit products re-verified and written to fire repo:
+  - 来源：`reports/foundation-architecture/083-glm-high-repair-summary.md`
+  - 依赖：—；被引用：—
+- [All 30 evidence cards are marked PARTIAL. No source fully satisfies a complete Function OS node.](../../../reports/external-research/121-function-paradigm-fulltext-review-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-b0a74fe77849b15c / All 30 evidence cards are marked PARTIAL. No source fully satisfies a complete Function OS node.
+  - 来源：`reports/external-research/121-function-paradigm-fulltext-review-report.md`
+  - 依赖：—；被引用：—
+- [All 30 evidence cards have source-specific claims (not template text)](../../../data/external-research/121A-night-recovery/121A-resume-plan-121B-121C.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-7d7b718a44a76384 / All 30 evidence cards have source-specific claims (not template text)
+  - 来源：`data/external-research/121A-night-recovery/121A-resume-plan-121B-121C.md`
+  - 依赖：—；被引用：—
+- [All 84 sources have resolution status (RESOLVED or FAILED_WITH_REASON)](../../../data/external-research/121A-night-recovery/121A-resume-plan-121B-121C.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-17ce58d492a0f02c / All 84 sources have resolution status (RESOLVED or FAILED_WITH_REASON)
+  - 来源：`data/external-research/121A-night-recovery/121A-resume-plan-121B-121C.md`
+  - 依赖：—；被引用：—
 - [All 9 Function OS nodes have evidence mapping](../../../data/external-research/121A-night-recovery/121A-resume-plan-121B-121C.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-048ea42ed275f7fb / All 9 Function OS nodes have evidence mapping
@@ -138,6 +193,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-a98ea65df1e4c4b1 / and if so, supply the concrete unresolved failure it addresses.
   - 来源：`tools/iteration_planner/emit_outputs.py`
+  - 依赖：—；被引用：—
+- [and the executor-neutral boundary: provider/model brand names can never](../../../tests/test_deep_research_round1.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-2d6e373dc71ce77c / and the executor-neutral boundary: provider/model brand names can never
+  - 来源：`tests/test_deep_research_round1.py`
   - 依赖：—；被引用：—
 - [Anti-overfit fixture corpus beyond the Checkpoint B negative-completion fixtures is a Checkpoint D remainder; the loop a](../../../docs/research-os/GPT-OWNER-REVIEW-PACKET.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -2069,6 +2129,11 @@
   - 可搜索名称：NFC-ddf79e0b3122df43 / Deep semantic review** of each evidence card:
   - 来源：`data/external-research/121A-night-recovery/121A-resume-plan-121B-121C.md`
   - 依赖：—；被引用：—
+- [deep-research boundary so an executor can never assert acceptance or](../../../tools/deep_research/records.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-0e140531ce1a6a11 / deep-research boundary so an executor can never assert acceptance or
+  - 来源：`tools/deep_research/records.py`
+  - 依赖：—；被引用：—
 - [def __enter__(self) -> "_Capture":](../../../tests/foundation/test_repository_path_classification.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-1EF8D7E630FDD6CA / def __enter__(self) -> "_Capture": / IMPLICIT-1EF8D7E630FDD6CA
@@ -2438,69 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-576EBFA7ECBF397F / def _derive_capabilities(self, spec: dict) -> list: / IMPLICIT-576EBFA7ECBF397F
   - 来源：`function-os-candidate/v0.1/function_os/n4_artifact_packager.py`
-  - 依赖：—；被引用：—
-- [def _derive_expected(self, source_category):](../../../tools/governance/fail_closed_publication_gate.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-0F784CE6BDE9A521 / def _derive_expected(self, source_category): / IMPLICIT-0F784CE6BDE9A521
-  - 来源：`tools/governance/fail_closed_publication_gate.py`
-  - 依赖：—；被引用：—
-- [def _digest(content: str) -> str:](../../../tests/test_registered_generator_attack.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-E5F7ECFE0E6C7161 / def _digest(content: str) -> str: / IMPLICIT-E5F7ECFE0E6C7161
-  - 来源：`tests/test_registered_generator_attack.py`
-  - 依赖：—；被引用：—
-- [def _discovery_authoritative_prefixes() -> tuple\[str, ...\]:](../../../tests/foundation/test_trigger_coverage.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-55EAAAA5EB144E62 / def _discovery_authoritative_prefixes() -> tuple\[str, ...\]: / IMPLICIT-55EAAAA5EB144E62
-  - 来源：`tests/foundation/test_trigger_coverage.py`
-  - 依赖：—；被引用：—
-- [def _discovery_nonauthoritative_prefixes() -> tuple\[str, ...\]:](../../../tests/foundation/test_trigger_coverage.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-DFE49E58D97976AF / def _discovery_nonauthoritative_prefixes() -> tuple\[str, ...\]: / IMPLICIT-DFE49E58D97976AF
-  - 来源：`tests/foundation/test_trigger_coverage.py`
-  - 依赖：—；被引用：—
-- [def _dispatch(self, ep: dict, action: dict) -> dict:](../../../tools/deep_research/episode_loop.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-0DD4D59B596AB967 / def _dispatch(self, ep: dict, action: dict) -> dict: / IMPLICIT-0DD4D59B596AB967
-  - 来源：`tools/deep_research/episode_loop.py`
-  - 依赖：—；被引用：—
-- [def _dp_label(meta: dict) -> str:](../../../tools/research_os/scheduler.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-B34DD3BE18AD106D / def _dp_label(meta: dict) -> str: / IMPLICIT-B34DD3BE18AD106D
-  - 来源：`tools/research_os/scheduler.py`
-  - 依赖：—；被引用：—
-- [def _emit(obj) -> None:](../../../tools/research_os/cli.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-36E1F896616A00D7 / def _emit(obj) -> None: / IMPLICIT-36E1F896616A00D7
-  - 来源：`tools/research_os/cli.py`
-  - 依赖：—；被引用：—
-- [def _episode_metrics(self, fx):](../../../tests/test_deep_research_round5.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-84244B87E3CB7CA6 / def _episode_metrics(self, fx): / IMPLICIT-84244B87E3CB7CA6
-  - 来源：`tests/test_deep_research_round5.py`
-  - 依赖：—；被引用：—
-- [def _era_aware_recompute(request: dict, era_ref: str):](../../../tools/validate_iteration_sync.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-42DF92B14B0E13C2 / def _era_aware_recompute(request: dict, era_ref: str): / IMPLICIT-42DF92B14B0E13C2
-  - 来源：`tools/validate_iteration_sync.py`
-  - 依赖：—；被引用：—
-- [def _era_digest(era_ref, relpath):](../../../tools/operations/plan_incremental_execution.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-62680497391C7775 / def _era_digest(era_ref, relpath): / IMPLICIT-62680497391C7775
-  - 来源：`tools/operations/plan_incremental_execution.py`
-  - 依赖：—；被引用：—
-- [def _err(errors: list\[str\], field: str, message: str) -> None:](../../../tools/failure_case_evidence_gate.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-A5D0D7DDB0F80170 / def _err(errors: list\[str\], field: str, message: str) -> None: / IMPLICIT-A5D0D7DDB0F80170
-  - 来源：`tools/failure_case_evidence_gate.py`
-  - 依赖：—；被引用：—
-- [def _eval(node, env):](../../../function-os-candidate/v0.2/benchmark/oracle/reference.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-03DC5E9445D2A65B / def _eval(node, env): / IMPLICIT-03DC5E9445D2A65B
-  - 来源：`function-os-candidate/v0.2/benchmark/oracle/reference.py`
-  - 依赖：—；被引用：—
-- [def _eval_node(self, node, context):](../../../function-os-candidate/v0.2/function_os/n1_safe_expression_dsl.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-19FE31416A5D8FA7 / def _eval_node(self, node, context): / IMPLICIT-19FE31416A5D8FA7
-  - 来源：`function-os-candidate/v0.2/function_os/n1_safe_expression_dsl.py`
   - 依赖：—；被引用：—

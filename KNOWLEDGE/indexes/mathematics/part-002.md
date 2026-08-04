@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [## 关联函数 / Related Functions](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0686-C-0691-%E5%BC%A0%E7%9B%8A%E5%94%90%E7%AA%81%E7%A0%B4%E5%8D%8A%E6%95%B0%E9%9A%9C%E7%A2%8D.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-948B341D3D5AD0EA / ## 关联函数 / Related Functions / IMPLICIT-948B341D3D5AD0EA / IMPLICIT-0026301F130FD562
+  - 来源：`统一案例总表/0686-C-0691-张益唐突破半数障碍.md`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0688-C-0693-%E5%AD%AA%E7%94%9F%E7%B4%A0%E6%95%B0%E9%97%AE%E9%A2%98%E8%BD%AC%E6%8D%A2.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-95373A07149F87CB / ## 关联函数 / Related Functions / IMPLICIT-95373A07149F87CB / IMPLICIT-0026301F130FD562
+  - 来源：`统一案例总表/0688-C-0693-孪生素数问题转换.md`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0746-C-0751-%E5%AE%89%E7%84%B6%E5%85%AC%E5%8F%B8.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-96B0D98EAD8A497C / ## 关联函数 / Related Functions / IMPLICIT-96B0D98EAD8A497C / IMPLICIT-0026301F130FD562
+  - 来源：`统一案例总表/0746-C-0751-安然公司.md`
+  - 依赖：—；被引用：—
 - [## 关联函数 / Related Functions](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0678-C-0683-Erd%C5%91s%E2%80%93Graham%E7%8C%9C%E6%83%B3.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-98590738D8F27EE7 / ## 关联函数 / Related Functions / IMPLICIT-98590738D8F27EE7 / IMPLICIT-0026301F130FD562
@@ -1734,6 +1749,11 @@
   - 可搜索名称：NFC-d5e802c32627d83a / (contract §6 propagation proof prerequisite).
   - 来源：`tests/foundation/test_generator_reconciliation_staleness.py`
   - 依赖：—；被引用：—
+- [(self_approved / mark_episode_complete / claim_ceiling come from the](../../../tools/deep_research/records.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-200a26ae40d7461b / (self_approved / mark_episode_complete / claim_ceiling come from the
+  - 来源：`tools/deep_research/records.py`
+  - 依赖：—；被引用：—
 - [**文字说明：** 每一层都是上一层在具体领域的投影。Θ是L0元律，十二律是L5实例。收敛不是消除十二律，而是找到它们的元统一性。这个Θ统一元律跟Φ=零温自由能精确等价——约束通过罚函数进入Φ，优化通过最小化Φ实现。物理域、生物域、认知域的所有函数，底层都是同一个Φ在不同约束条件下的优化问题。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0001-%CE%A8%E2%82%80%E5%85%83%E5%87%BD%E6%95%B0%E5%AE%8C%E6%95%B4%E6%95%B0%E5%AD%A6%E5%AE%9A%E4%B9%89.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-4CF876300BCE45C5 / **文字说明：** 每一层都是上一层在具体领域的投影。Θ是L0元律，十二律是L5实例。收敛不是消除十二律，而是找到它们的元统一性。这个Θ统一元律跟Φ=零温自由能精确等价——约束通过罚函数进入Φ，优化通过最小化Φ实现。物理域、生物域、认知域的所有函数，底层都是同一个Φ在不同约束条件下的优化问题。 / IMPLICIT-4CF876300BCE45C5 / IMPLICIT-A852989C64FC3DD0
@@ -2484,23 +2504,3 @@
   - 可搜索名称：NFC-a55b57788d6a12ee / /Users/zhiyuan/我的笔记/统一函数总表/0268-D232-信息守恒-衰减悖论与黑洞.md
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：D232；被引用：—
-- [/Users/zhiyuan/我的笔记/统一函数总表/0269-D233-Shannon-Fisher跷跷板定理.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-08ddafe1158d8b81 / /Users/zhiyuan/我的笔记/统一函数总表/0269-D233-Shannon-Fisher跷跷板定理.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D233；被引用：—
-- [/Users/zhiyuan/我的笔记/统一函数总表/0270-D234-有效信息倒U型定理.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-bdbdf1a1d8bab8fd / /Users/zhiyuan/我的笔记/统一函数总表/0270-D234-有效信息倒U型定理.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D234；被引用：—
-- [/Users/zhiyuan/我的笔记/统一函数总表/0271-D235-信息论完备性定理.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-207d767f6a89d59a / /Users/zhiyuan/我的笔记/统一函数总表/0271-D235-信息论完备性定理.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D235；被引用：—
-- [/Users/zhiyuan/我的笔记/统一函数总表/0272-D236-门控组合-中心极限定理.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-cea3a8bafb76c995 / /Users/zhiyuan/我的笔记/统一函数总表/0272-D236-门控组合-中心极限定理.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D236；被引用：—

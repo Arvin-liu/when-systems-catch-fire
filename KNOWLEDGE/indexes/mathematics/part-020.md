@@ -4,6 +4,31 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [来源、候选意义、目标形式、框架差异和残余同时存在；认识相关变化不得静默。中文成品通过语法、信息顺序、指称、体貌、连接、节奏、标点、语体、朗读和文学标记性审查。自动 validator 通过只证明结构化登记一致，不能证明自然度或文学质量。](../../../docs/publication/zhiyuan-writing-method.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-58149c171ddd7bb5 / 来源、候选意义、目标形式、框架差异和残余同时存在；认识相关变化不得静默。中文成品通过语法、信息顺序、指称、体貌、连接、节奏、标点、语体、朗读和文学标记性审查。自动 validator 通过只证明结构化登记一致，不能证明自然度或文学质量。
+  - 来源：`docs/publication/zhiyuan-writing-method.md`
+  - 依赖：—；被引用：—
+- [来源层：原始笔记、案例、材料、史料、论文、数据。](../../../docs/math-foundation/00-project-ontology.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-311031d6a1aeb209 / 来源层：原始笔记、案例、材料、史料、论文、数据。
+  - 来源：`docs/math-foundation/00-project-ontology.md`
+  - 依赖：—；被引用：—
+- [来源报告：/Users/zhiyuan/Library/Containers/com.biji.getNotes/Data/Library/Caches/Φ元统一律新增函数与案例收敛报告 2026年7月5日2235-2026年07月05日-](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0597-D587-%E5%AD%A6%E7%A7%91%E7%90%86%E8%AE%BA%E6%A0%B8%E6%8A%BD%E5%8F%96%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-b49977060c5d8df2 / 来源报告：/Users/zhiyuan/Library/Containers/com.biji.getNotes/Data/Library/Caches/Φ元统一律新增函数与案例收敛报告 2026年7月5日2235-2026年07月05日-
+  - 来源：`统一函数总表/0597-D587-学科理论核抽取函数.md`
+  - 依赖：—；被引用：—
+- [来源：/Users/zhiyuan/Library/Containers/com.biji.getNotes/Data/Library/Caches/Φ元统一律新增函数与案例收敛报告 2026年7月5日2235-2026年07月05日-来自](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0597-D587-%E5%AD%A6%E7%A7%91%E7%90%86%E8%AE%BA%E6%A0%B8%E6%8A%BD%E5%8F%96%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-a52860da354817f1 / 来源：/Users/zhiyuan/Library/Containers/com.biji.getNotes/Data/Library/Caches/Φ元统一律新增函数与案例收敛报告 2026年7月5日2235-2026年07月05日-来自
+  - 来源：`统一函数总表/0597-D587-学科理论核抽取函数.md`
+  - 依赖：—；被引用：—
+- [极值点-极小点分离定理](../../../data/foundation/formal-objects/objects.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-f1ee82ddd1b134a0 / 极值点-极小点分离定理
+  - 来源：`data/foundation/formal-objects/objects.jsonl`
+  - 依赖：—；被引用：—
 - [极值点-极小点分离定理](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0048-T38-%E6%9E%81%E5%80%BC%E7%82%B9-%E6%9E%81%E5%B0%8F%E7%82%B9%E5%88%86%E7%A6%BB%E5%AE%9A%E7%90%86.md)
   - 类型/状态：`FUNCTION_ASSET` · `DOWNGRADE_TO_CONJECTURE`
   - 可搜索名称：T38 / 极值点-极小点分离定理 / T38
@@ -2479,28 +2504,3 @@
   - 可搜索名称：NFC-2d9877b9d00fd818 / 统一函数总表/0087-D38-跨层完整退化,6因子乘法,杠杆排序.md
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：D38；被引用：—
-- [统一函数总表/0088-D39-统一内部驱动力函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-e40d640a4367ad71 / 统一函数总表/0088-D39-统一内部驱动力函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D39；被引用：—
-- [统一函数总表/0089-D40-碰撞存活率.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-b2d3cec49854b277 / 统一函数总表/0089-D40-碰撞存活率.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D40；被引用：—
-- [统一函数总表/0090-D41-退化渗透临界触发.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-304543f70d831713 / 统一函数总表/0090-D41-退化渗透临界触发.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D41；被引用：—
-- [统一函数总表/0091-D42-H_分类升级函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-7c73fe49f443b42f / 统一函数总表/0091-D42-H_分类升级函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D42；被引用：—
-- [统一函数总表/0092-D43-碰撞存活率函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-1d77a97e5e35e05f / 统一函数总表/0092-D43-碰撞存活率函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D43；被引用：—

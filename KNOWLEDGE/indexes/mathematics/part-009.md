@@ -4,6 +4,26 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [proof.append("Declare source/target spaces and prove the claimed preserved structure, if any.")](../../../tools/foundation/adjudicate_function_assets.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-406ff42861a8eea1 / proof.append("Declare source/target spaces and prove the claimed preserved structure, if any.")
+  - 来源：`tools/foundation/adjudicate_function_assets.py`
+  - 依赖：—；被引用：—
+- [proof.append("Define parameter ranges, boundary behavior, calibration semantics and counterexample conditions.")](../../../tools/foundation/adjudicate_function_assets.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-a42e3f1a3857c625 / proof.append("Define parameter ranges, boundary behavior, calibration semantics and counterexample conditions.")
+  - 来源：`tools/foundation/adjudicate_function_assets.py`
+  - 依赖：—；被引用：—
+- [proof.append("Do not promote the analogy to isomorphism without explicit objects, maps, inverses and preservation proofs](../../../tools/foundation/adjudicate_function_assets.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-9910f77231379ce3 / proof.append("Do not promote the analogy to isomorphism without explicit objects, maps, inverses and preservation proofs
+  - 来源：`tools/foundation/adjudicate_function_assets.py`
+  - 依赖：—；被引用：—
+- [proof.append("Identify whether the source denotes one asset, a reference, a heading, an implementation function or only](../../../tools/foundation/adjudicate_function_assets.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-c1bf84b133c03816 / proof.append("Identify whether the source denotes one asset, a reference, a heading, an implementation function or only
+  - 来源：`tools/foundation/adjudicate_function_assets.py`
+  - 依赖：—；被引用：—
 - [proof.append("State a formal proposition and supply a proof artifact or preserve it as an open conjecture.")](../../../tools/foundation/adjudicate_function_assets.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-c682dd037067db44 / proof.append("State a formal proposition and supply a proof artifact or preserve it as an open conjecture.")
@@ -1220,6 +1240,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
   - 可搜索名称：NFC-da63e2b8aef78f03 / self.set_lifecycle(manifest, seal, accepted=True, merged=True, current=True)
   - 来源：`tests/test_iteration_sync.py`
+  - 依赖：—；被引用：—
+- [self_approved / mark_episode_complete / claim_ceiling are rejected by the](../../../tests/test_deep_research_round1.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-54da86972b016063 / self_approved / mark_episode_complete / claim_ceiling are rejected by the
+  - 来源：`tests/test_deep_research_round1.py`
   - 依赖：—；被引用：—
 - [self_approved / mark_episode_complete / claim_ceiling);](../../../tools/deep_research/episode_loop.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
@@ -2475,29 +2500,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-D6C10B9425944C18 / title: "d_opt-σ_opt联合演化函数" / IMPLICIT-D6C10B9425944C18
   - 来源：`统一函数总表/0357-D321-d_opt-σ_opt联合演化函数.md`
-  - 依赖：—；被引用：—
-- [title: "Fisher信息-门控距离函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0234-D198-Fisher%E4%BF%A1%E6%81%AF-%E9%97%A8%E6%8E%A7%E8%B7%9D%E7%A6%BB%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-037A7826B790A25C / title: "Fisher信息-门控距离函数" / IMPLICIT-037A7826B790A25C
-  - 来源：`统一函数总表/0234-D198-Fisher信息-门控距离函数.md`
-  - 依赖：—；被引用：—
-- [title: "Fisher健康度函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0159-D121-Fisher%E5%81%A5%E5%BA%B7%E5%BA%A6%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-2437802615B64DDE / title: "Fisher健康度函数" / IMPLICIT-2437802615B64DDE
-  - 来源：`统一函数总表/0159-D121-Fisher健康度函数.md`
-  - 依赖：—；被引用：—
-- [title: "Fisher退化统一函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0157-D119-Fisher%E9%80%80%E5%8C%96%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-856B9F6156989BE9 / title: "Fisher退化统一函数" / IMPLICIT-856B9F6156989BE9
-  - 来源：`统一函数总表/0157-D119-Fisher退化统一函数.md`
-  - 依赖：—；被引用：—
-- [title: "Fisher退化统一函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0157-D119-Fisher%E9%80%80%E5%8C%96%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-aeea5cf110383561 / title: "Fisher退化统一函数"
-  - 来源：`统一函数总表/0157-D119-Fisher退化统一函数.md`
-  - 依赖：—；被引用：—
-- [title: "g_eff-p*双向反馈函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0295-D259-g_eff-p-%E5%8F%8C%E5%90%91%E5%8F%8D%E9%A6%88%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-C80DC76ABDE3789B / title: "g_eff-p*双向反馈函数" / IMPLICIT-C80DC76ABDE3789B
-  - 来源：`统一函数总表/0295-D259-g_eff-p-双向反馈函数.md`
   - 依赖：—；被引用：—
