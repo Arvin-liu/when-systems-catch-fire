@@ -1,0 +1,204 @@
+{
+  "id": "r5-006-conflicting-estimands",
+  "kind": "episode",
+  "description": "Two contradictory material claims both asserted.",
+  "strategy_pack": "SYSTEMATIC_EVIDENCE_SYNTHESIS",
+  "episode": {
+    "episode_id": "ep-fix",
+    "question_version": "v1",
+    "research_type": "deep_research",
+    "strategy_pack": "SYSTEMATIC_EVIDENCE_SYNTHESIS",
+    "state": "EVIDENCE_GATHERING",
+    "state_lineage": [
+      "INTAKE",
+      "QUESTION_FROZEN"
+    ],
+    "candidate_claims": [
+      {
+        "claim_id": "claim-001",
+        "claim_text": "Late sleep timing INCREASES glucose control.",
+        "claim_ceiling": "BOUNDED_STRONG",
+        "source_relations": [],
+        "status": "CANDIDATE"
+      },
+      {
+        "claim_id": "claim-002",
+        "claim_text": "Late sleep timing DECREASES glucose control.",
+        "claim_ceiling": "BOUNDED_STRONG",
+        "source_relations": [],
+        "status": "CANDIDATE"
+      }
+    ],
+    "evidence_obligations": [
+      {
+        "obligation_id": "obl-1",
+        "claim_id": "c1",
+        "obligation_class": "PRIMARY_SOURCE",
+        "status": "SATISFIED"
+      }
+    ],
+    "source_identities": [
+      {
+        "source_id": "web:a",
+        "access_level": "FULL_TEXT",
+        "inspected_scope": "full_text"
+      },
+      {
+        "source_id": "pdf:b",
+        "access_level": "FULL_TEXT",
+        "inspected_scope": "full_text"
+      }
+    ],
+    "independence_groups": [],
+    "access_levels": [],
+    "calculations_required": [],
+    "calculations_completed": [],
+    "competing_explanations": [],
+    "negative_evidence_search_state": {
+      "searched": false,
+      "results": []
+    },
+    "unresolved_residues": [],
+    "blockers": [],
+    "budgets": {},
+    "current_diagnosis": null,
+    "candidate_next_actions": [],
+    "selected_action": null,
+    "observations": [
+      {
+        "observation_id": "obs-066ab09bbae3",
+        "action_id": "act-open",
+        "observations": [
+          "clean study one"
+        ],
+        "source_identities": [
+          {
+            "source_id": "web:a",
+            "access_level": "FULL_TEXT",
+            "injection_detected": false
+          }
+        ],
+        "access_level": "FULL_TEXT",
+        "calculation_result": null,
+        "errors": [],
+        "provenance": [
+          {
+            "step": "open",
+            "source_id": "web:a",
+            "locator": "https://x",
+            "inspected_scope": "full_text",
+            "injection_detected": false
+          }
+        ],
+        "timestamps": {}
+      },
+      {
+        "observation_id": "obs-8e6240939dca",
+        "action_id": "act-open",
+        "observations": [
+          "clean study two"
+        ],
+        "source_identities": [
+          {
+            "source_id": "pdf:b",
+            "access_level": "FULL_TEXT",
+            "injection_detected": false
+          }
+        ],
+        "access_level": "FULL_TEXT",
+        "calculation_result": null,
+        "errors": [],
+        "provenance": [
+          {
+            "step": "open",
+            "source_id": "pdf:b",
+            "locator": "file://x",
+            "inspected_scope": "full_text",
+            "injection_detected": false
+          }
+        ],
+        "timestamps": {}
+      }
+    ],
+    "information_delta": null,
+    "stop_conditions": {},
+    "branch_conditions": {},
+    "rollback_conditions": {},
+    "escalation_conditions": {},
+    "provenance": {},
+    "versions": {
+      "schema": "research-os/0.1"
+    },
+    "event_log": [
+      {
+        "event_id": "evt-000000",
+        "timestamp": "2026-08-04T07:53:44.017549+00:00",
+        "type": "state_transition",
+        "actor": "kernel",
+        "payload_sha256": "c099f16eefa8f4d89c7f3f2704de86cc438beeecf0cf09fe1ca03ec7150ed6c1"
+      },
+      {
+        "event_id": "evt-000001",
+        "timestamp": "2026-08-04T07:53:44.017592+00:00",
+        "type": "state_transition",
+        "actor": "kernel",
+        "payload_sha256": "638c923b6230a6fd1dd8961e31da9f75234e7276a11a9c07ce53e14b8f6e5649"
+      },
+      {
+        "event_id": "evt-000002",
+        "timestamp": "2026-08-04T07:53:44.017615+00:00",
+        "type": "state_transition",
+        "actor": "kernel",
+        "payload_sha256": "85078e440fb5bf192c312d1407c7ac6c857aa6b26176a173887393ad0226b33f"
+      },
+      {
+        "event_id": "evt-000003",
+        "timestamp": "2026-08-04T07:53:44.017637+00:00",
+        "type": "claim_added",
+        "actor": "kernel",
+        "payload_sha256": "50b237fa5f6c73a2d514f6513438b2ff1769733dc9e2ac8f9feeafd767726e94"
+      },
+      {
+        "event_id": "evt-000004",
+        "timestamp": "2026-08-04T07:53:44.017660+00:00",
+        "type": "claim_added",
+        "actor": "kernel",
+        "payload_sha256": "5c2b30210dcfb7f69c345db3249b4138e293cbd9160f89ac93a65b0d7ec5a4fb"
+      },
+      {
+        "event_id": "evt-000005",
+        "timestamp": "2026-08-04T07:53:44.017775+00:00",
+        "type": "observe",
+        "actor": "kernel",
+        "payload_sha256": "aa0107c82ec3b81898face9a0f161a4fb9f9501f297483ad39bd9a6dc03c2704"
+      },
+      {
+        "event_id": "evt-000006",
+        "timestamp": "2026-08-04T07:53:44.017892+00:00",
+        "type": "observe",
+        "actor": "kernel",
+        "payload_sha256": "776fd9388fff6e36078e5d5033aadb12001a3a3d81430feacfd60b45da177f91"
+      }
+    ],
+    "created_at": "2026-08-04T07:53:44.017541+00:00",
+    "updated_at": "2026-08-04T07:53:44.017894+00:00",
+    "brief": {
+      "brief_id": "brief-000",
+      "question_version": "v1",
+      "question": "Frozen question: causal effects of late sleep timing vs sleep duration on health.",
+      "scope": {
+        "population": "unspecified",
+        "object": "unspecified",
+        "timeframe": "unspecified",
+        "outcomes": []
+      },
+      "strategy_pack": "default",
+      "frozen": true
+    },
+    "contrary_evidence_sought": true
+  },
+  "expect": {
+    "decision": "STOP_SUFFICIENT_CANDIDATE",
+    "failed_gates": []
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "campaign": {
+    "stop_conditions": {}
+  },
+  "items": [
+    {
+      "queue_item_id": "cand-A",
+      "status": "QUEUED",
+      "topic_candidate": {
+        "candidate_id": "cand-A",
+        "proposed_question": "Q",
+        "source_of_seed": "PROJECT_GAP",
+        "proposed_strategy_pack": "SYSTEMATIC_EVIDENCE_SYNTHESIS",
+        "status": "CANDIDATE"
+      }
+    }
+  ],
+  "now_iso": "2026-01-01T00:00:00Z",
+  "ingest": {
+    "episode_id": "ep-A",
+    "final_state": "CANDIDATE_COMPLETE",
+    "sufficiency_decision": {
+      "decision": "STOP_SUFFICIENT_CANDIDATE"
+    },
+    "machine_trace_ref": "trace-ep-A"
+  },
+  "expect": {
+    "op": "ingest_never_stops",
+    "stopped": false
+  },
+  "id": "r5-026-executor-success-never-stops",
+  "kind": "queue",
+  "description": "Ingesting an executor 'success' result must NOT stop the queue."
+}
