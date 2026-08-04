@@ -8,9 +8,12 @@
     "exact_head": "f4fe6faded65c16c98230ad34ca17e4374d59613"
   },
   "draft_pr": {
-    "state": "DRAFT_PENDING_CREATION",
+    "state": "DRAFT_CREATED",
+    "number": 194,
+    "url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/194",
     "head": "workbuddy/task115-deep-research-queue-round1-7-takeover-r1-20260804",
     "base": "qwen38max/task115-deep-research-queue-checkpoint-d-r1-20260803",
+    "is_draft": true,
     "remain_draft": true,
     "flags_retained": ["R2_EMPIRICAL_CALIBRATION_PENDING"]
   },
