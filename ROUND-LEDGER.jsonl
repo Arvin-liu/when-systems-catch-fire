@@ -77,6 +77,15 @@
           "event": "push (temporary debug workflow)",
           "conclusion": "success (debug capture)",
           "finding": "drift records correspond exactly to post-generation doc content (ROUND-0-CHECKPOINT.md pass-4 heading) and the debug workflow file; no environment-specific differences"
+        },
+        {
+          "run_id": 30872474844,
+          "head": "ffaa13cc32d081347d679b06e93e12db27119d1c",
+          "event": "workflow_dispatch",
+          "conclusion": "failure",
+          "failed_step": "Task 107 — generator determinism & reconciliation staleness (Layer B negative fixtures)",
+          "failure": "task-106 propagation reconciliation --check reported drift (stale reconciliation artifacts; generator omitted from chain)",
+          "progress": "validate_foundation and all foundation generator drift checks passed at this head"
         }
       ],
       "repair_pass_2": {
@@ -111,6 +120,10 @@
           "30839816598": "mixed: committed state still pre-doc-update generation (pass 4)",
           "30842732230": "content-after-generation root cause confirmed via drift artifact"
         }
+      },
+      "repair_pass_6": {
+        "trigger": "remote run 30872474844 at head ffaa13cc: foundation generator drift STEPS NOW PASS; new failure at 'Task 107 generator determinism & reconciliation staleness' and 'Task 106 fail-closed propagation reconciliation' — propagation reconciliation artifacts stale; the round-0 generator chain had not included tools/propagation/validate_reconciliation.py",
+        "fix": "docs/ledger first; then tools/propagation/validate_reconciliation.py --generate (canonical); then the FULL remaining workflow gate under python 3.12.13 (all unittest groups incl. Task 106/107 suites)"
       }
     }
   ]

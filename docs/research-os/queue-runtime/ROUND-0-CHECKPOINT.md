@@ -53,3 +53,7 @@ Final gate (the one that now defines round completion): 26 CI-ordered steps unde
 A temporary push-triggered debug workflow (removed in the same round) regenerated the Foundation outputs inside CI and uploaded the exact diff. The only new discovery records correspond to text added to this checkpoint report after the last local generation (the pass-4 heading) and to the debug workflow file itself. Interpreter/platform non-determinism is excluded once content order is controlled.
 
 Round discipline encoded in ROUND-LEDGER.jsonl: for every commit — docs/ledger first, canonical generator chain second (CI interpreter, dependency order), check-only CI-ordered gate third against the exact tree, commit fourth.
+
+## Pass 6 — propagation reconciliation closure
+
+Remote run 30872474844 (head ffaa13cc): the Foundation generator drift checks passed for the first time; the remaining failure moved to the Task 106/107 propagation reconciliation step. Root cause: the reconciliation artifacts were stale because the canonical propagation reconciliation generator was not part of the round-0 chain. Repair: run `tools/propagation/validate_reconciliation.py --generate`, then the full remaining workflow gate (all unittest groups incl. the Task 106/107 suites) under python 3.12.13, docs-first discipline unchanged.

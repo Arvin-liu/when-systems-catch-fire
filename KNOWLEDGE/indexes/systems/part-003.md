@@ -1652,6 +1652,11 @@
   - 可搜索名称：NFC-8e0a679d8162d092 / Remote exact-head run 30829240122 (workflow_dispatch, head 066f530d) FAILED at `validate_foundation.py` with `NONFUNCTIO
   - 来源：`docs/research-os/queue-runtime/ROUND-0-CHECKPOINT.md`
   - 依赖：—；被引用：—
+- [Remote run 30872474844 (head ffaa13cc): the Foundation generator drift checks passed for the first time; the remaining f](../../../docs/research-os/queue-runtime/ROUND-0-CHECKPOINT.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-786b0f50dc8c0958 / Remote run 30872474844 (head ffaa13cc): the Foundation generator drift checks passed for the first time; the remaining f
+  - 来源：`docs/research-os/queue-runtime/ROUND-0-CHECKPOINT.md`
+  - 依赖：—；被引用：—
 - [Rent model access; do not make provider output a truth source.](../../../data/atlas/generated/ignition-atlas-121q14.json)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-92ba09837aba001c / Rent model access; do not make provider output a truth source.
@@ -2486,9 +2491,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-ee9dc34331eb55b6 / The repository contains many relation-like assets: Foundation registries, function dependencies, Q12-Q14 control overlay
   - 来源：`reports/architecture/121Q23-relational-network-gap-audit.md`
-  - 依赖：—；被引用：—
-- [The root cause is **not** any single claim. It is an **infrastructure** defect: the repository's *Git path set](../../../docs/foundation/task-107-incident-report.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-77f5d4092c87fd2a / The root cause is **not** any single claim. It is an **infrastructure** defect: the repository's *Git path set
-  - 来源：`docs/foundation/task-107-incident-report.md`
   - 依赖：—；被引用：—

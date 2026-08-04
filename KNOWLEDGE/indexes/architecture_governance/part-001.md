@@ -1144,6 +1144,11 @@
   - 可搜索名称：NFC-fc55e35cf2b2b89b / "factors": \[{"key": f\["key"\], "direction": f\["direction"\], "weight": f\["weight"\],
   - 来源：`tools/iteration_planner/emit_outputs.py`
   - 依赖：—；被引用：—
+- ["failure": "task-106 propagation reconciliation --check reported drift (stale reconciliation artifacts; generator omitte](../../../ROUND-LEDGER.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-9e4045145146c0a3 / "failure": "task-106 propagation reconciliation --check reported drift (stale reconciliation artifacts; generator omitte
+  - 来源：`ROUND-LEDGER.jsonl`
+  - 依赖：—；被引用：—
 - ["first_failure": {"preserved": True, "path": "tests/fixtures/failure_case_evidence_gate/first-failure.json", "sha256": Z](../../../tests/test_failure_case_evidence_gate.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-cc14f25941248ad1 / "first_failure": {"preserved": True, "path": "tests/fixtures/failure_case_evidence_gate/first-failure.json", "sha256": Z
@@ -2419,6 +2424,11 @@
   - 可搜索名称：NFC-9b888a544703beba / "trace": {"path": "tests/fixtures/failure_case_evidence_gate/trace.jsonl", "sha256": ZERO_SHA},
   - 来源：`tests/test_failure_case_evidence_gate.py`
   - 依赖：—；被引用：—
+- ["trigger": "remote run 30872474844 at head ffaa13cc: foundation generator drift STEPS NOW PASS; new failure at 'Task 107](../../../ROUND-LEDGER.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-106aede1e6d60679 / "trigger": "remote run 30872474844 at head ffaa13cc: foundation generator drift STEPS NOW PASS; new failure at 'Task 107
+  - 来源：`ROUND-LEDGER.jsonl`
+  - 依赖：—；被引用：—
 - ["type_and_dimension": {"result": gates\["dimension_and_type_gate"\], "evidence": "typed signature or declared metadata"},](../../../tools/foundation/adjudicate_function_assets.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-b6ead479bbe945b9 / "type_and_dimension": {"result": gates\["dimension_and_type_gate"\], "evidence": "typed signature or declared metadata"},
@@ -2493,14 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-00a15f45d38e7927 / "unverified": unverified,
   - 来源：`data/external-research/105-intervention-control/105-evidence-validator.py`
-  - 依赖：—；被引用：—
-- ["use": "source-language normalization adapter only; never a reasoning substitute",](../../../tools/research_os/adapters.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-5fb1c34a6d6a45c6 / "use": "source-language normalization adapter only; never a reasoning substitute",
-  - 来源：`tools/research_os/adapters.py`
-  - 依赖：—；被引用：—
-- ["validation_authority": {"authority": "external", "required_evidence": \["receipt"\], "evidence_boundary": "fixture"},](../../../tests/test_incremental_execution_validator.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-c646c794f66d6a6a / "validation_authority": {"authority": "external", "required_evidence": \["receipt"\], "evidence_boundary": "fixture"},
-  - 来源：`tests/test_incremental_execution_validator.py`
   - 依赖：—；被引用：—
