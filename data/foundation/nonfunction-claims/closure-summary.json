@@ -64,7 +64,7 @@
   "registry_closed": true,
   "source_base_commit": "ebe723fbf544f3fa1a87706e82493319d9f0af7e",
   "source_coverage_distribution": {
-    "EXCLUDED_GENERATED_OR_FUNCTION_ASSET_REGISTRY": 178,
+    "EXCLUDED_GENERATED_OR_FUNCTION_ASSET_REGISTRY": 179,
     "EXCLUDED_NON_AUTHORITATIVE_RECORD": 558,
     "EXCLUDED_NON_TEXT_SUFFIX": 6,
     "EXCLUDED_NON_UTF8_OR_UNREADABLE": 1,
@@ -73,5 +73,5 @@
     "SCANNED_REGISTERED": 2375
   },
   "task_id": "IGNITION-CORPUS-WIDE-NONFUNCTION-CLAIM-ADJUDICATION-AND-EVIDENCE-LINEAGE-CLOSURE-R1-20260729",
-  "tracked_files_accounted": 3752
+  "tracked_files_accounted": 3753
 }
