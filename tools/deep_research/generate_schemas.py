@@ -435,7 +435,7 @@ def build_schemas() -> dict[str, dict]:
                     "deadline": {"type": ["string", "null"]},
                     "max_episodes": {"type": ["integer", "null"]},
                     "max_attempts": {"type": ["integer", "null"]},
-                    "budget": {"type": ["object", "null"]},
+                    "budget": {"type": ["number", "null"]},
                     "queue_empty_stops": {"type": "boolean"},
                     "owner_stop": {"type": "boolean"},
                     "low_information_stops": {"type": "boolean"},

@@ -42,7 +42,7 @@
         },
         "budget": {
           "type": [
-            "object",
+            "number",
             "null"
           ]
         },
