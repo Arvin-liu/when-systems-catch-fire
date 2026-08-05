@@ -1,0 +1,1 @@
+{"milestone":"A0_LIFECYCLE_DRIFT_REPRODUCED","recorded_at_utc":"2026-08-05T02:49:38Z","pr":"#195","pr_head_sha":"a7f8cb1ed333adc4830c03c0adff6bca39b5d60d","drift_detected":true,"defects":["D1_stale_persisted_projection","D2_check_self_comparison","D3_gate_asymmetry"],"next_milestone":"A1_LIFECYCLE_PARITY_REPAIR_PUSHED"}
