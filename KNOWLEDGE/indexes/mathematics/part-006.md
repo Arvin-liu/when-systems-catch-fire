@@ -829,6 +829,11 @@
   - 可搜索名称：NFC-08b3cd4e088ddd50 / for key in ("ordinary_realizations", "transformation_risks", "counterexamples_and_variation", "evidence_ids", "open_ques
   - 来源：`tools/language_thought/validate_language_thought.py`
   - 依赖：—；被引用：—
+- [for name in ("foundation-validation.yml", "iteration-lifecycle-validation.yml"):](../../../tests/test_current_truth_projection_parity.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-6804bb6376afb88a / for name in ("foundation-validation.yml", "iteration-lifecycle-validation.yml"):
+  - 来源：`tests/test_current_truth_projection_parity.py`
+  - 依赖：—；被引用：—
 - [for p in sorted((ROOT / "统一函数总表").glob("*.md")):](../../../tools/foundation/migrate_legacy.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-95846ee0e3bb4e5d / for p in sorted((ROOT / "统一函数总表").glob("*.md")):
@@ -1113,6 +1118,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-76157c66b5e136b6 / Foundation 保存 claims、formal objects、arguments、evidence、proof obligations、counterexamples 和 validation records，并通过 schema
   - 来源：`RESULTS/LATEST.md`
+  - 依赖：—；被引用：—
+- [foundation-validation and iteration-lifecycle-validation both invoke the](../../../tests/test_current_truth_projection_parity.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-6c72831122512587 / foundation-validation and iteration-lifecycle-validation both invoke the
+  - 来源：`tests/test_current_truth_projection_parity.py`
   - 依赖：—；被引用：—
 - [fp\["review"\]={"reviewer":"人","review_date":"x","review_decision":"approved","review_notes":"x"}](../../../tests/test_canonical.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
@@ -2494,13 +2504,3 @@
   - 可搜索名称：NFC-4a00666b748b2837 / If upstream objects D_{D18} exist, compose F_{D18}=N(⊕_{g∈D_{D18}} g); otherwise treat F_{D18} as an axiom seed.
   - 来源：`统一函数总表/0067-D18-情绪稳态临界.md`
   - 依赖：D18；被引用：—
-- [If upstream objects D_{D190} exist, compose F_{D190}=N(⊕_{g∈D_{D190}} g); otherwise treat F_{D190} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0226-D190-%E4%B8%87%E6%9C%89%E7%90%86%E8%AE%BA%E9%97%A8%E6%A7%9B%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-96b6126f9da87bb0 / If upstream objects D_{D190} exist, compose F_{D190}=N(⊕_{g∈D_{D190}} g); otherwise treat F_{D190} as an axiom seed.
-  - 来源：`统一函数总表/0226-D190-万有理论门槛函数.md`
-  - 依赖：D190；被引用：—
-- [If upstream objects D_{D191} exist, compose F_{D191}=N(⊕_{g∈D_{D191}} g); otherwise treat F_{D191} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0227-D191-%E8%AE%A4%E7%9F%A5%E8%A7%84%E8%8C%83%E7%A0%B4%E7%BC%BA%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-fcedc72cf9317c5f / If upstream objects D_{D191} exist, compose F_{D191}=N(⊕_{g∈D_{D191}} g); otherwise treat F_{D191} as an axiom seed.
-  - 来源：`统一函数总表/0227-D191-认知规范破缺函数.md`
-  - 依赖：D191；被引用：—

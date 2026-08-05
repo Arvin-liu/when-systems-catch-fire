@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [把因果、自举、同构、元层、哥德尔不完备性、元协议与证据强度合成总分。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0604-D594-%E5%AD%A6%E7%A7%91%E7%82%B9%E7%81%AB%E6%8C%87%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-28d6a72c1a59a7ef / 把因果、自举、同构、元层、哥德尔不完备性、元协议与证据强度合成总分。
+  - 来源：`统一函数总表/0604-D594-学科点火指数.md`
+  - 依赖：—；被引用：—
+- [把外部已证明的定理写成点火框架证明](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-2c486c79c7b03d75 / 把外部已证明的定理写成点火框架证明
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
 - [把审美判断写成客观定理](../../../outputs/getbrain/classic-problems-benchmark-supplement-20260707.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-1a90066bfec1b0a8 / 把审美判断写成客观定理
@@ -2490,14 +2500,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-5df9cb9b21c2ce92 / 条件：所有普遍性主张保留 pending（E1–E6）；不把个人成功当因果证明；不提交访谈原文。
   - 来源：`outputs/collisions/20260711-disobedience-subjectivity/life-community-value-audit.md`
-  - 依赖：—；被引用：—
-- [条保留为未证明形式命题](../../../reports/foundation-architecture/084-max-adjudication-report.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-70d3c710237e3cf0 / 条保留为未证明形式命题
-  - 来源：`reports/foundation-architecture/084-max-adjudication-report.md`
-  - 依赖：—；被引用：—
-- [条达到 PROVED_ORIGINAL_CLAIM_WITH_ARTIFACT](../../../reports/foundation-architecture/084-max-adjudication-report.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-888b35718665b8e1 / 条达到 PROVED_ORIGINAL_CLAIM_WITH_ARTIFACT
-  - 来源：`reports/foundation-architecture/084-max-adjudication-report.md`
   - 依赖：—；被引用：—

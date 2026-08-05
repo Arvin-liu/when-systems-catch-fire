@@ -24,10 +24,25 @@
   - 可搜索名称：NFC-4aaa3d34ec7d237a / """Fold terminal tasks from the event-sourced lifecycle into the projection.
   - 来源：`tools/propagation/current_truth_projection.py`
   - 依赖：—；被引用：—
+- ["""Regression tests for the current-truth projection lifecycle parity (PR #195).](../../../tests/test_current_truth_projection_parity.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-a6b6a292e0e37aa2 / """Regression tests for the current-truth projection lifecycle parity (PR #195).
+  - 来源：`tests/test_current_truth_projection_parity.py`
+  - 依赖：—；被引用：—
+- ["""Return True iff the regenerated projection is byte-identical to the](../../../tools/propagation/current_truth_projection.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-81ec3b6f68384afb / """Return True iff the regenerated projection is byte-identical to the
+  - 来源：`tools/propagation/current_truth_projection.py`
+  - 依赖：—；被引用：—
 - ["## 覆盖项（对应 §14 的 28 项要求）\\n"](../../../tools/build_reports.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-1642e6374cea059f / "## 覆盖项（对应 §14 的 28 项要求）\\n"
   - 来源：`tools/build_reports.py`
+  - 依赖：—；被引用：—
+- ["committed (fresh) projection must pass --check",](../../../tests/test_current_truth_projection_parity.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-d3843504968127d6 / "committed (fresh) projection must pass --check",
+  - 来源：`tests/test_current_truth_projection_parity.py`
   - 依赖：—；被引用：—
 - ["compiler_or_generator": "The compiler flattens aligned task deltas, retains top-k magnitude coordinates per task, elects sign(gamma_p)=sign(sum_t trimmed_tau_t,p), selects nonzero entries of that sign, averages them coordinate-wise, applie](../../../data/external-research/121-fulltext-resolver/121cx/evidence-cards-extreme/S120-046.json)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -43,6 +58,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-17b170e44fa069bf / "current-truth-projection.json",
   - 来源：`tools/propagation/current_truth_projection.py`
+  - 依赖：—；被引用：—
+- ["current_truth_projection.py --repo . --check", body,](../../../tests/test_current_truth_projection_parity.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-c7d707d328fa0257 / "current_truth_projection.py --repo . --check", body,
+  - 来源：`tests/test_current_truth_projection_parity.py`
   - 依赖：—；被引用：—
 - ["dossiers_40": len(dossiers)==40 and len({r\['id'\] for r in dossiers})==40,](../../../tools/foundation/verify_079.py)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -263,6 +283,11 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-A67F26A2127BA84D / "specification_language": "The actual specification is a finite set of input-output string pairs together with a fixed DSL grammar and operational semantics. It is not natural language in this paper. Consistency means P(ij)=oj for every pro / IMPLICIT-A67F26A2127BA84D
   - 来源：`data/external-research/121-fulltext-resolver/121cx/evidence-cards-extreme/S120-023.json`
+  - 依赖：—；被引用：—
+- ["stale projection (missing 110-114) must be detected as drift",](../../../tests/test_current_truth_projection_parity.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-2cee358981d6936c / "stale projection (missing 110-114) must be detected as drift",
+  - 来源：`tests/test_current_truth_projection_parity.py`
   - 依赖：—；被引用：—
 - ["subquestions": \["Does midpoint-of-sleep timing predict recovery?"\],](../../../tools/deep_research/generate_fixtures.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
@@ -2478,29 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-5D54B747738B106B / ### \[#548｜自旋液体 — 门控面对称性简并，无法选择进入哪个象限\](docs/zh/cases/items/C-0548.md) / IMPLICIT-5D54B747738B106B
   - 来源：`统一案例总表/0543-C-548-自旋液体 — 门控面对称性简并,无法选择进入哪个象限.md`
-  - 依赖：—；被引用：—
-- [### \[#551｜恒星质量下限 — 聚变门控面=Gamow峰=隧穿×热分布乘积极大\](docs/zh/cases/items/C-0551.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0546-C-551-%E6%81%92%E6%98%9F%E8%B4%A8%E9%87%8F%E4%B8%8B%E9%99%90%20%E2%80%94%20%E8%81%9A%E5%8F%98%E9%97%A8%E6%8E%A7%E9%9D%A2%3DGamow%E5%B3%B0%3D%E9%9A%A7%E7%A9%BF%C3%97%E7%83%AD%E5%88%86%E5%B8%83%E4%B9%98%E7%A7%AF%E6%9E%81%E5%A4%A7.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-517D9EFA3F23FFE3 / ### \[#551｜恒星质量下限 — 聚变门控面=Gamow峰=隧穿×热分布乘积极大\](docs/zh/cases/items/C-0551.md) / IMPLICIT-517D9EFA3F23FFE3
-  - 来源：`统一案例总表/0546-C-551-恒星质量下限 — 聚变门控面=Gamow峰=隧穿×热分布乘积极大.md`
-  - 依赖：—；被引用：—
-- [### \[#555｜费米悖论 — 乘法门控使跨星系文明B=⟨ε⟩^N→0\](docs/zh/cases/items/C-0555.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0550-C-555-%E8%B4%B9%E7%B1%B3%E6%82%96%E8%AE%BA%20%E2%80%94%20%E4%B9%98%E6%B3%95%E9%97%A8%E6%8E%A7%E4%BD%BF%E8%B7%A8%E6%98%9F%E7%B3%BB%E6%96%87%E6%98%8EB%3D%E2%9F%A8%CE%B5%E2%9F%A9%5EN%E2%86%920.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-0521E651C0E10664 / ### \[#555｜费米悖论 — 乘法门控使跨星系文明B=⟨ε⟩^N→0\](docs/zh/cases/items/C-0555.md) / IMPLICIT-0521E651C0E10664
-  - 来源：`统一案例总表/0550-C-555-费米悖论 — 乘法门控使跨星系文明B=⟨ε⟩^N→0.md`
-  - 依赖：—；被引用：—
-- [### \[#556｜衰老 — Φ线性增长→B指数衰减→Gompertz定律 / 衰老 - Φ线性增长 -> B指数衰减 -> Gompertz定律\](docs/zh/cases/items/C-0556.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0551-C-556-%E8%A1%B0%E8%80%81%20%E2%80%94%20%CE%A6%E7%BA%BF%E6%80%A7%E5%A2%9E%E9%95%BF%E2%86%92B%E6%8C%87%E6%95%B0%E8%A1%B0%E5%87%8F%E2%86%92Gompertz%E5%AE%9A%E5%BE%8B.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-CF6FB94DB046D71A / ### \[#556｜衰老 — Φ线性增长→B指数衰减→Gompertz定律 / 衰老 - Φ线性增长 -> B指数衰减 -> Gompertz定律\](docs/zh/cases/items/C-0556.md) / IMPLICIT-CF6FB94DB046D71A
-  - 来源：`统一案例总表/0551-C-556-衰老 — Φ线性增长→B指数衰减→Gompertz定律.md`
-  - 依赖：—；被引用：—
-- [### \[#557｜癌症 — ε穿越门控面，发病率∝exp(Φt)指数增长\](docs/zh/cases/items/C-0557.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0552-C-557-%E7%99%8C%E7%97%87%20%E2%80%94%20%CE%B5%E7%A9%BF%E8%B6%8A%E9%97%A8%E6%8E%A7%E9%9D%A2%2C%E5%8F%91%E7%97%85%E7%8E%87%E2%88%9Dexp%28%CE%A6t%29%E6%8C%87%E6%95%B0%E5%A2%9E%E9%95%BF.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-F1B3CD991152F628 / ### \[#557｜癌症 — ε穿越门控面，发病率∝exp(Φt)指数增长\](docs/zh/cases/items/C-0557.md) / IMPLICIT-F1B3CD991152F628
-  - 来源：`统一案例总表/0552-C-557-癌症 — ε穿越门控面,发病率∝exp(Φt)指数增长.md`
-  - 依赖：—；被引用：—
-- [### \[#559｜大灭绝 — 多门控共振+级联，周期性∝Φ到临界值时间\](docs/zh/cases/items/C-0559.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0554-C-559-%E5%A4%A7%E7%81%AD%E7%BB%9D%20%E2%80%94%20%E5%A4%9A%E9%97%A8%E6%8E%A7%E5%85%B1%E6%8C%AF%2B%E7%BA%A7%E8%81%94%2C%E5%91%A8%E6%9C%9F%E6%80%A7%E2%88%9D%CE%A6%E5%88%B0%E4%B8%B4%E7%95%8C%E5%80%BC%E6%97%B6%E9%97%B4.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-1154A742469575BC / ### \[#559｜大灭绝 — 多门控共振+级联，周期性∝Φ到临界值时间\](docs/zh/cases/items/C-0559.md) / IMPLICIT-1154A742469575BC
-  - 来源：`统一案例总表/0554-C-559-大灭绝 — 多门控共振+级联,周期性∝Φ到临界值时间.md`
   - 依赖：—；被引用：—

@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [条保留为未证明形式命题](../../../reports/foundation-architecture/084-max-adjudication-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-70d3c710237e3cf0 / 条保留为未证明形式命题
+  - 来源：`reports/foundation-architecture/084-max-adjudication-report.md`
+  - 依赖：—；被引用：—
+- [条达到 PROVED_ORIGINAL_CLAIM_WITH_ARTIFACT](../../../reports/foundation-architecture/084-max-adjudication-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-888b35718665b8e1 / 条达到 PROVED_ORIGINAL_CLAIM_WITH_ARTIFACT
+  - 来源：`reports/foundation-architecture/084-max-adjudication-report.md`
+  - 依赖：—；被引用：—
 - [来源、候选意义、目标形式、框架差异和残余同时存在；认识相关变化不得静默。中文成品通过语法、信息顺序、指称、体貌、连接、节奏、标点、语体、朗读和文学标记性审查。自动 validator 通过只证明结构化登记一致，不能证明自然度或文学质量。](../../../docs/publication/zhiyuan-writing-method.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-58149c171ddd7bb5 / 来源、候选意义、目标形式、框架差异和残余同时存在；认识相关变化不得静默。中文成品通过语法、信息顺序、指称、体貌、连接、节奏、标点、语体、朗读和文学标记性审查。自动 validator 通过只证明结构化登记一致，不能证明自然度或文学质量。
@@ -2494,13 +2504,3 @@
   - 可搜索名称：NFC-ee8ff532a3f18083 / 统一函数总表/0085-D36-逆Weibull寿命验证函数.md
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：D36；被引用：—
-- [统一函数总表/0086-D37-点火对冲函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-b6a32a782ddcf3a3 / 统一函数总表/0086-D37-点火对冲函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D37；被引用：—
-- [统一函数总表/0087-D38-跨层完整退化,6因子乘法,杠杆排序.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-2d9877b9d00fd818 / 统一函数总表/0087-D38-跨层完整退化,6因子乘法,杠杆排序.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D38；被引用：—

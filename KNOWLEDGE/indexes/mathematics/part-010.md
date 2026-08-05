@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [title: "d_opt-σ_opt平衡稳定性函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0371-D335-d_opt-%CF%83_opt%E5%B9%B3%E8%A1%A1%E7%A8%B3%E5%AE%9A%E6%80%A7%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-D75984A385D340D7 / title: "d_opt-σ_opt平衡稳定性函数" / IMPLICIT-D75984A385D340D7
+  - 来源：`统一函数总表/0371-D335-d_opt-σ_opt平衡稳定性函数.md`
+  - 依赖：—；被引用：—
+- [title: "d_opt-σ_opt联合演化函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0357-D321-d_opt-%CF%83_opt%E8%81%94%E5%90%88%E6%BC%94%E5%8C%96%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-D6C10B9425944C18 / title: "d_opt-σ_opt联合演化函数" / IMPLICIT-D6C10B9425944C18
+  - 来源：`统一函数总表/0357-D321-d_opt-σ_opt联合演化函数.md`
+  - 依赖：—；被引用：—
 - [title: "Fisher信息-门控距离函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0234-D198-Fisher%E4%BF%A1%E6%81%AF-%E9%97%A8%E6%8E%A7%E8%B7%9D%E7%A6%BB%E5%87%BD%E6%95%B0.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-037A7826B790A25C / title: "Fisher信息-门控距离函数" / IMPLICIT-037A7826B790A25C
@@ -2493,14 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-12D09E2E42F3E9A9 / title: "距离衰减统一函数" / IMPLICIT-12D09E2E42F3E9A9 / IMPLICIT-0F0963C6C237F355
   - 来源：`统一函数总表/0177-D139-距离衰减统一函数.md`
-  - 依赖：—；被引用：—
-- [title: "距离衰减统一函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0177-D139-%E8%B7%9D%E7%A6%BB%E8%A1%B0%E5%87%8F%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-7faff2c5ad035d44 / title: "距离衰减统一函数"
-  - 来源：`统一函数总表/0177-D139-距离衰减统一函数.md`
-  - 依赖：—；被引用：—
-- [title: "跨域对称性破缺推论函数族"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0516-D518-%E6%93%8D%E4%BD%9C%E7%B1%BB%E5%9E%8B%E7%BB%B4%E5%BA%A6%E9%99%8D%E4%BD%8E%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-0C60F3F503D8FFFC / title: "跨域对称性破缺推论函数族" / IMPLICIT-0C60F3F503D8FFFC / IMPLICIT-2DF3EDEE4D7E7007
-  - 来源：`统一函数总表/0516-D518-操作类型维度降低函数.md`
   - 依赖：—；被引用：—

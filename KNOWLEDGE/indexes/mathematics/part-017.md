@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [全球公共债务作为系统熵值，AI投资作为熵引导的出口——这是熵引导函数在国际宏观域的完美验证。](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0661-C-666-%E5%88%98%E6%80%A1%E5%9B%BD%E9%99%85%E5%8F%82%E8%80%83%E7%AC%94%E8%AE%B0%E7%A2%B0%E6%92%9E%E9%AA%8C%E8%AF%81.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-19270cf0304b779b / 全球公共债务作为系统熵值，AI投资作为熵引导的出口——这是熵引导函数在国际宏观域的完美验证。
+  - 来源：`统一案例总表/0661-C-666-刘怡国际参考笔记碰撞验证.md`
+  - 依赖：—；被引用：—
+- [全语料非函数型断言裁决索引](../../ASSET-CARDS.md#asset-hr-addcb11c670ad242)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+  - 可搜索名称：全语料非函数型断言裁决索引 / nonfunction-claim-adjudication-index
+  - 来源：`docs/foundation/nonfunction-claim-adjudication-index.md`
+  - 依赖：—；被引用：—
 - [全量两张表查重**：`统一函数总表/`（614 文件）、`统一案例总表/`（802 文件），按 18 个重点关键词检索。](../../../outputs/audit/teacher-competition-backfill-review-20260708.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-ba6ceef4c8328d57 / 全量两张表查重**：`统一函数总表/`（614 文件）、`统一案例总表/`（802 文件），按 18 个重点关键词检索。
@@ -2491,13 +2501,3 @@
   - 可搜索名称：NFC-d7a24162a75e45bf / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0506-D508-退出权时变空间函数.md`
   - 来源：`统一函数总表/0506-D508-退出权时变空间函数.md`
   - 依赖：D508；被引用：—
-- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0507-D509-退出权共振函数.md`](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0507-D509-%E9%80%80%E5%87%BA%E6%9D%83%E5%85%B1%E6%8C%AF%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-c20b41a756b81c18 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0507-D509-退出权共振函数.md`
-  - 来源：`统一函数总表/0507-D509-退出权共振函数.md`
-  - 依赖：D509；被引用：—
-- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0508-D510-退出权空间衰减函数.md`](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0508-D510-%E9%80%80%E5%87%BA%E6%9D%83%E7%A9%BA%E9%97%B4%E8%A1%B0%E5%87%8F%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-4bc9f0b020374e67 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0508-D510-退出权空间衰减函数.md`
-  - 来源：`统一函数总表/0508-D510-退出权空间衰减函数.md`
-  - 依赖：D510；被引用：—

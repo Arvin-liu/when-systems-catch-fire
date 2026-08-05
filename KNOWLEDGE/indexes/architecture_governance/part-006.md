@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [def rank_candidates(candidates: list\[dict\]) -> list\[tuple\[float, dict\]\]:](../../../tools/deep_research/queue_runtime.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-B878B96AB139B7BD / def rank_candidates(candidates: list\[dict\]) -> list\[tuple\[float, dict\]\]: / IMPLICIT-B878B96AB139B7BD
+  - 来源：`tools/deep_research/queue_runtime.py`
+  - 依赖：—；被引用：—
+- [def rank_score(candidate: dict) -> float:](../../../tools/deep_research/queue_runtime.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-88F1CC8EB5A4C935 / def rank_score(candidate: dict) -> float: / IMPLICIT-88F1CC8EB5A4C935
+  - 来源：`tools/deep_research/queue_runtime.py`
+  - 依赖：—；被引用：—
+- [def raw_retraction(value: str \| None) -> str:](../../../data/operations/iterations/110/openalex/adjudicate_first_run.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-D33B4A933DE9C35D / def raw_retraction(value: str \| None) -> str: / IMPLICIT-D33B4A933DE9C35D
+  - 来源：`data/operations/iterations/110/openalex/adjudicate_first_run.py`
+  - 依赖：—；被引用：—
 - [def reachable_within_two_clicks() -> set\[str\]:](../../../tools/governance/validate_knowledge_experience.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-59085682BF32A58C / def reachable_within_two_clicks() -> set\[str\]: / IMPLICIT-59085682BF32A58C
@@ -2184,6 +2199,11 @@
   - 可搜索名称：IMPLICIT-824ED063475708DD / def test_census_is_deterministic(self): / IMPLICIT-824ED063475708DD
   - 来源：`tests/foundation/test_claim_governance.py`
   - 依赖：—；被引用：—
+- [def test_check_detects_stale_projection_drift(self):](../../../tests/test_current_truth_projection_parity.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-6EB46A9D5AD44515 / def test_check_detects_stale_projection_drift(self): / IMPLICIT-6EB46A9D5AD44515
+  - 来源：`tests/test_current_truth_projection_parity.py`
+  - 依赖：—；被引用：—
 - [def test_checker_is_stateless(self):](../../../function-os-candidate/v0.2/tests/test_n1_robust.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-1BFD98953C255599 / def test_checker_is_stateless(self): / IMPLICIT-1BFD98953C255599
@@ -2483,24 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-9999CB8E99FBA9FD / def test_d2_12_unknown_and_escaping_paths_fail_closed(self): / IMPLICIT-9999CB8E99FBA9FD
   - 来源：`tests/test_incremental_execution.py`
-  - 依赖：—；被引用：—
-- [def test_d2_13_plan_is_byte_deterministic(self):](../../../tests/test_incremental_execution.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-DDB09C3A8471A21A / def test_d2_13_plan_is_byte_deterministic(self): / IMPLICIT-DDB09C3A8471A21A
-  - 来源：`tests/test_incremental_execution.py`
-  - 依赖：—；被引用：—
-- [def test_d2_14_midstream_failure_rollback_and_recovery(self):](../../../tests/test_incremental_execution.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-84F9B6851D37FDB6 / def test_d2_14_midstream_failure_rollback_and_recovery(self): / IMPLICIT-84F9B6851D37FDB6
-  - 来源：`tests/test_incremental_execution.py`
-  - 依赖：—；被引用：—
-- [def test_d3_g1_01_caller_command_is_ignored(self):](../../../tests/test_incremental_execution_defensive_rejections.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-14C4F80181768439 / def test_d3_g1_01_caller_command_is_ignored(self): / IMPLICIT-14C4F80181768439
-  - 来源：`tests/test_incremental_execution_defensive_rejections.py`
-  - 依赖：—；被引用：—
-- [def test_d3_g1_02_shell_string_is_rejected(self):](../../../tests/test_incremental_execution_defensive_rejections.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-FC288D68D77CD14F / def test_d3_g1_02_shell_string_is_rejected(self): / IMPLICIT-FC288D68D77CD14F
-  - 来源：`tests/test_incremental_execution_defensive_rejections.py`
   - 依赖：—；被引用：—

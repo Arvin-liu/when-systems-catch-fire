@@ -4,6 +4,91 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Verified Gap](../../../reports/operations/121Q24-current-state-reconciliation.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-475cfe30474aac1c / Verified Gap
+  - 来源：`reports/operations/121Q24-current-state-reconciliation.md`
+  - 依赖：—；被引用：—
+- [Verified inputs:](../../../reports/architecture/121Q13-baseline-overlap-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-10886507edcac1b3 / Verified inputs:
+  - 来源：`reports/architecture/121Q13-baseline-overlap-audit.md`
+  - 依赖：—；被引用：—
+- [Verified PR #44 truth from GitHub, created isolated branch from exact HEAD, and initialized 121Q8 control plane.](../../../data/foundation/121q8-step-ledger.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-a881f86809c0dbd8 / Verified PR #44 truth from GitHub, created isolated branch from exact HEAD, and initialized 121Q8 control plane.
+  - 来源：`data/foundation/121q8-step-ledger.jsonl`
+  - 依赖：—；被引用：—
+- [Verified provenance reference (set by the tool, not trusted from the caller)](../../../tools/governance/fail_closed_publication_gate.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a85e7f3878c1bda6 / Verified provenance reference (set by the tool, not trusted from the caller)
+  - 来源：`tools/governance/fail_closed_publication_gate.py`
+  - 依赖：—；被引用：—
+- [Verified provenance reference (source_rights_entry_id + content_digest_sha256).](../../../tests/test_publication_gate_fail_closed.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-258aebe5d87b063c / Verified provenance reference (source_rights_entry_id + content_digest_sha256).
+  - 来源：`tests/test_publication_gate_fail_closed.py`
+  - 依赖：—；被引用：—
+- [verified provenance reference (source_rights_entry_id) missing](../../../tests/test_publication_gate_fail_closed.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-74f46a8546acdf96 / verified provenance reference (source_rights_entry_id) missing
+  - 来源：`tests/test_publication_gate_fail_closed.py`
+  - 依赖：—；被引用：—
+- [Verified Start Point](../../../reports/architecture/121Q12-baseline-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-b40cf4014a54c721 / Verified Start Point
+  - 来源：`reports/architecture/121Q12-baseline-audit.md`
+  - 依赖：—；被引用：—
+- [VERIFIED: 16](../../../reports/external-research/121Q2R-final-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-1e500d073327027e / VERIFIED: 16
+  - 来源：`reports/external-research/121Q2R-final-report.md`
+  - 依赖：—；被引用：—
+- [VERIFIED: 7 (S120-014/021/030/039/045/047/053)](../../../reports/external-research/121Q2V-verification-repair-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-c3d9c20871a7710e / VERIFIED: 7 (S120-014/021/030/039/045/047/053)
+  - 来源：`reports/external-research/121Q2V-verification-repair-report.md`
+  - 依赖：—；被引用：—
+- [VERIFIED: 7 (S120-021/030/035/039/045/047/053)](../../../reports/external-research/121Q2W-final-consistency-seal-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-5a6c961a77251254 / VERIFIED: 7 (S120-021/030/035/039/045/047/053)
+  - 来源：`reports/external-research/121Q2W-final-consistency-seal-report.md`
+  - 依赖：—；被引用：—
+- [Verified: Real titles returned, no errors](../../../docs/external-research/anysearch-usage.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-8a7890bda279fbd5 / Verified: Real titles returned, no errors
+  - 来源：`docs/external-research/anysearch-usage.md`
+  - 依赖：—；被引用：—
+- [version: which commit, artifact, data version, or time;](../../../docs/governance/non-sycophancy-output-protocol.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-a34513656a810d49 / version: which commit, artifact, data version, or time;
+  - 来源：`docs/governance/non-sycophancy-output-protocol.md`
+  - 依赖：—；被引用：—
+- [VERSION_FACTS = {](../../../tools/validate_human_front_door.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-b721f3a168b4a4fc / VERSION_FACTS = {
+  - 来源：`tools/validate_human_front_door.py`
+  - 依赖：—；被引用：—
+- [Versioned skills/tools are conceptual/executed artifacts, but none of the evaluated states or implementations is release](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-38b91629ea690d73 / Versioned skills/tools are conceptual/executed artifacts, but none of the evaluated states or implementations is release
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [Versioned, resumable episode state with explicit, validated transitions. Minimum](../../../docs/research-os/RESEARCH-OS-ARCHITECTURE.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-cad951308ea61b8b / Versioned, resumable episode state with explicit, validated transitions. Minimum
+  - 来源：`docs/research-os/RESEARCH-OS-ARCHITECTURE.md`
+  - 依赖：—；被引用：—
+- [Versions, lineages, bundle IDs, Pareto states, retirement and epitaphs are strong registry primitives, but no actual imm](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-c28bef8dfd676563 / Versions, lineages, bundle IDs, Pareto states, retirement and epitaphs are strong registry primitives, but no actual imm
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [view = le.derive_current_truth(events, "origin/main")](../../../tools/propagation/current_truth_projection.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-41303a7612522bf8 / view = le.derive_current_truth(events, "origin/main")
+  - 来源：`tools/propagation/current_truth_projection.py`
+  - 依赖：—；被引用：—
 - [visible = visible\[: registry\["projection_limit"\]\]](../../../tools/operations/stage_snapshot_contract.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-f86612a071eca8a6 / visible = visible\[: registry\["projection_limit"\]\]
@@ -2412,89 +2497,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-890e02364eb0926e / \| 统一案例总表 \| `统一案例总表/` \| 当前正式案例表（拆分目录） \|
   - 来源：`docs/getbrain-handoff-20260708.md`
-  - 依赖：—；被引用：—
-- [\| 统一案例总表未修改 \| ✅ PASS \|](../../../reports/external-research/104-dual-088-reconciliation.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-1774220e1612692f / \| 统一案例总表未修改 \| ✅ PASS \|
-  - 来源：`reports/external-research/104-dual-088-reconciliation.md`
-  - 依赖：—；被引用：—
-- [\| 缺口 \| 标题 \| 类型 \| 重算覆盖(missing/partial) \| 定位 \| 证据门槛 \|](../../../data/external-research/088-patch-blueprint.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-e4be02de7dfc0600 / \| 缺口 \| 标题 \| 类型 \| 重算覆盖(missing/partial) \| 定位 \| 证据门槛 \|
-  - 来源：`data/external-research/088-patch-blueprint.md`
-  - 依赖：—；被引用：—
-- [\| 老舍 \| 说话人口吻、社会位置、城市语汇与可听见的节奏 \| 只检查书面规范而删掉人物和社会关系。 \|](../../../docs/language-thought/chinese-literary-calibration.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-9e6c74f39017efbd / \| 老舍 \| 说话人口吻、社会位置、城市语汇与可听见的节奏 \| 只检查书面规范而删掉人物和社会关系。 \|
-  - 来源：`docs/language-thought/chinese-literary-calibration.md`
-  - 依赖：—；被引用：—
-- [\| 艺术 \| 形式证据、媒介证据、解释自洽 \| 形式分析、媒介分析、观看情境分析、历史语境分析、解释共同体共识 \| L1-L2 \| 形式证据不足、媒介证据不足、观看情境证据不足、历史语境证据不足、缺乏解释共同体共识 \| 低 \|](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-e37ed74819fd8b76 / \| 艺术 \| 形式证据、媒介证据、解释自洽 \| 形式分析、媒介分析、观看情境分析、历史语境分析、解释共同体共识 \| L1-L2 \| 形式证据不足、媒介证据不足、观看情境证据不足、历史语境证据不足、缺乏解释共同体共识 \| 低 \|
-  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [\| 节奏／标点／呼吸 \| 形态长度、从属链、焦点与韵律共同组织句子。 \| 本轮无充分口语／文学样本，保留专家审校。 \|](../../../docs/language-thought/profiles/tr.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-32cae92d08d05f63 / \| 节奏／标点／呼吸 \| 形态长度、从属链、焦点与韵律共同组织句子。 \| 本轮无充分口语／文学样本，保留专家审校。 \|
-  - 来源：`docs/language-thought/profiles/tr.md`
-  - 依赖：—；被引用：—
-- [\| 行为者／责任 \| 主动、被动、使役及省略共同调节施事；意外事件实验显示任务相关差异。 \| 不从实验外推社会责任性格。 \|](../../../docs/language-thought/profiles/ja.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-b7277685257f0d0e / \| 行为者／责任 \| 主动、被动、使役及省略共同调节施事；意外事件实验显示任务相关差异。 \| 不从实验外推社会责任性格。 \|
-  - 来源：`docs/language-thought/profiles/ja.md`
-  - 依赖：—；被引用：—
-- [\| 行为者／责任 \| 动词、处置式、被动式、无施事变化句和语境省略共同调节施事显露。 \| `杯子碎了` 不可无证据翻成某人打碎；`被` 也不能被机械删除。 \|](../../../docs/language-thought/profiles/zh-hans.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-4be8d50bf1b8c767 / \| 行为者／责任 \| 动词、处置式、被动式、无施事变化句和语境省略共同调节施事显露。 \| `杯子碎了` 不可无证据翻成某人打碎；`被` 也不能被机械删除。 \|
-  - 来源：`docs/language-thought/profiles/zh-hans.md`
-  - 依赖：—；被引用：—
-- [\| 证据制度 \| evidence_regimes \| 12 \| `id` (EVID-xxx) \| 证据/claim level 约束 \|](../../../docs/p1-data-index-map-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-7dc87c5f722f4024 / \| 证据制度 \| evidence_regimes \| 12 \| `id` (EVID-xxx) \| 证据/claim level 约束 \|
-  - 来源：`docs/p1-data-index-map-20260708.md`
-  - 依赖：—；被引用：—
-- [\| 证据制度缺口 \| 任务 E：证据制度库初稿 \|](../../../docs/structural_gap_audit.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-abb49fdc86fa503d / \| 证据制度缺口 \| 任务 E：证据制度库初稿 \|
-  - 来源：`docs/structural_gap_audit.md`
-  - 依赖：—；被引用：—
-- [\| 证据等级不足 \| 断言过强 \| 证据制度库 \| `pending` \|](../../../outputs/getbrain/failure-typology-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-bc6e884c1fb09030 / \| 证据等级不足 \| 断言过强 \| 证据制度库 \| `pending` \|
-  - 来源：`outputs/getbrain/failure-typology-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [\| 证据／情态 \| `-miş` 系列可表达间接／推断／获知等范围，`-di` 等形成对照，但具体语义随语境。 \| 不把 `-miş` 简化成单一“传闻”，也不据形态判事实真伪。 \|](../../../docs/language-thought/profiles/tr.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-85243628a60c68d1 / \| 证据／情态 \| `-miş` 系列可表达间接／推断／获知等范围，`-di` 等形成对照，但具体语义随语境。 \| 不把 `-miş` 简化成单一“传闻”，也不据形态判事实真伪。 \|
-  - 来源：`docs/language-thought/profiles/tr.md`
-  - 依赖：—；被引用：—
-- [\| 证据／情态 \| 主要用 modal、adverb、reporting verb 和来源短语；通常无强制证据形态。 \| 将 Turkish 间接证据形式压成无来源直陈；`may/must/reportedly` 在摘要中丢失。 \|](../../../docs/language-thought/profiles/en.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-6bea383c0e658edc / \| 证据／情态 \| 主要用 modal、adverb、reporting verb 和来源短语；通常无强制证据形态。 \| 将 Turkish 间接证据形式压成无来源直陈；`may/must/reportedly` 在摘要中丢失。 \|
-  - 来源：`docs/language-thought/profiles/en.md`
-  - 依赖：—；被引用：—
-- [\| 证据／情态 \| 句末形式、传闻／样态表达与引用结构可标记来源和立场。 \| 类型学对“语法化证据性”的分析口径不一，保留分析争议。 \|](../../../docs/language-thought/profiles/ja.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-8b84cf018eed66b9 / \| 证据／情态 \| 句末形式、传闻／样态表达与引用结构可标记来源和立场。 \| 类型学对“语法化证据性”的分析口径不一，保留分析争议。 \|
-  - 来源：`docs/language-thought/profiles/ja.md`
-  - 依赖：—；被引用：—
-- [\| 证据／情态 \| 多用副词、助动词、引述和来源短语标记；一般不强制每句编码信息来源。 \| `据说、看来、恐怕、可能` 消失会抬高确定性。 \|](../../../docs/language-thought/profiles/zh-hans.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-1e9b3da908a895e4 / \| 证据／情态 \| 多用副词、助动词、引述和来源短语标记；一般不强制每句编码信息来源。 \| `据说、看来、恐怕、可能` 消失会抬高确定性。 \|
-  - 来源：`docs/language-thought/profiles/zh-hans.md`
-  - 依赖：—；被引用：—
-- [\| 读者／现实反馈 \| 新来源、反例、误解、gap、现实反馈环 \| 外部反应暴露缺口和失败 \| 点赞、共鸣、传播、多 AI 共识不是事实证据 \|](../../../docs/publication/zhiyuan-writing-method.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-96167477dac7dfae / \| 读者／现实反馈 \| 新来源、反例、误解、gap、现实反馈环 \| 外部反应暴露缺口和失败 \| 点赞、共鸣、传播、多 AI 共识不是事实证据 \|
-  - 来源：`docs/publication/zhiyuan-writing-method.md`
-  - 依赖：—；被引用：—
-- [\| 起始承载点 \| 外部输入源或点火增量输出源 \| 从有类型、有版本、可回链的材料开始 \| 写作起点不是证据充分性；派生产物不是独立复证 \|](../../../docs/publication/zhiyuan-writing-method.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-6d6e7a7a7c269782 / \| 起始承载点 \| 外部输入源或点火增量输出源 \| 从有类型、有版本、可回链的材料开始 \| 写作起点不是证据充分性；派生产物不是独立复证 \|
-  - 来源：`docs/publication/zhiyuan-writing-method.md`
-  - 依赖：—；被引用：—
-- [\| 跨协议红队 \| PASS_WITH_EXCEPTIONS（例外 V2、V3 事实度量 pending） \|](../../../outputs/audit/meta-protocol-normative-review-publication-audit-20260711.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-5e5dcf7ec8ab22fe / \| 跨协议红队 \| PASS_WITH_EXCEPTIONS（例外 V2、V3 事实度量 pending） \|
-  - 来源：`outputs/audit/meta-protocol-normative-review-publication-audit-20260711.md`
   - 依赖：—；被引用：—

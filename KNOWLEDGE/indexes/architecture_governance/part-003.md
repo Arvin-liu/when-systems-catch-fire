@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [AI 界和计算机科学界通过实验研究、理论分析、跨学科研究等方法研究大模型涌现问题。主流观点认为大模型涌现是真实的，但存在测量方法和解释上的争议。](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-f5802b5b4aedfeb5 / AI 界和计算机科学界通过实验研究、理论分析、跨学科研究等方法研究大模型涌现问题。主流观点认为大模型涌现是真实的，但存在测量方法和解释上的争议。
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
 - [AI 输出时应根据证据制度库检查：](../../../docs/evidence_regime_library.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-439ea02a91ffb0c0 / AI 输出时应根据证据制度库检查：
@@ -1474,6 +1479,11 @@
   - 可搜索名称：NFC-183d109d0415f3fb / classification records to independent semantic reviews. The small verified
   - 来源：`tools/foundation/verify_079.py`
   - 依赖：—；被引用：—
+- [clearly non-existent task must never be folded in.](../../../tests/test_current_truth_projection_parity.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-244d53aa6c23584f / clearly non-existent task must never be folded in.
+  - 来源：`tests/test_current_truth_projection_parity.py`
+  - 依赖：—；被引用：—
 - [Closed iteration manifests are immutable evidence. A later governed removal](../../../tools/validate_iteration_sync.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-dd8cc4d5a6a15256 / Closed iteration manifests are immutable evidence. A later governed removal
@@ -2493,14 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-5EB1122C62C0D1C1 / def _count_symbols(text: str) -> int: / IMPLICIT-5EB1122C62C0D1C1
   - 来源：`function-os-candidate/v0.2/function_os/importer/legacy_asset_importer.py`
-  - 依赖：—；被引用：—
-- [def _current_head() -> str:](../../../tests/test_seal_freshness.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-95D9E03BBF338329 / def _current_head() -> str: / IMPLICIT-95D9E03BBF338329
-  - 来源：`tests/test_seal_freshness.py`
-  - 依赖：—；被引用：—
-- [def _derive_capabilities(self, spec: dict) -> list:](../../../function-os-candidate/v0.1/function_os/n4_artifact_packager.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-576EBFA7ECBF397F / def _derive_capabilities(self, spec: dict) -> list: / IMPLICIT-576EBFA7ECBF397F
-  - 来源：`function-os-candidate/v0.1/function_os/n4_artifact_packager.py`
   - 依赖：—；被引用：—

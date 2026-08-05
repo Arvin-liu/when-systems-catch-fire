@@ -4,6 +4,101 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [require(_seal_map.get("nodes") == _actual_nodes,](../../../tools/validate_iteration_sync.py)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-F7FDC15403AEA3BD / require(_seal_map.get("nodes") == _actual_nodes, / IMPLICIT-F7FDC15403AEA3BD
+  - 来源：`tools/validate_iteration_sync.py`
+  - 依赖：—；被引用：—
+- [require(all(_persisted.get(k) == delta.get(k) for k in _fields),](../../../tools/operations/compute_change_propagation.py)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-231C1B9F6C22BC0A / require(all(_persisted.get(k) == delta.get(k) for k in _fields), / IMPLICIT-231C1B9F6C22BC0A
+  - 来源：`tools/operations/compute_change_propagation.py`
+  - 依赖：—；被引用：—
+- [require(all(_persisted_delta.get(k) == delta.get(k) for k in _delta_fields),](../../../tools/validate_iteration_sync.py)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-25FD995BFDD1AC14 / require(all(_persisted_delta.get(k) == delta.get(k) for k in _delta_fields), / IMPLICIT-25FD995BFDD1AC14
+  - 来源：`tools/validate_iteration_sync.py`
+  - 依赖：—；被引用：—
+- [require(args.output.read_bytes() == rendered, "generated SVG is stale; run the generator")](../../../tools/generate_interactive_system_map.py)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-EA49511B06D61B79 / require(args.output.read_bytes() == rendered, "generated SVG is stale; run the generator") / IMPLICIT-EA49511B06D61B79
+  - 来源：`tools/generate_interactive_system_map.py`
+  - 依赖：—；被引用：—
+- [require(authority.get("propagation_topology") == "data/operations/change-propagation-topology.json", "map projection has wrong topology authority")](../../../tools/generate_interactive_system_map.py)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-ADF0CA9B1219FD1D / require(authority.get("propagation_topology") == "data/operations/change-propagation-topology.json", "map projection has wrong topology authority") / IMPLICIT-ADF0CA9B1219FD1D
+  - 来源：`tools/generate_interactive_system_map.py`
+  - 依赖：—；被引用：—
+- [require(branch_pr.get("merge_commit") == "0a13c246172c0338bf8dda5dc08db5a574a8b23f", "E_PHASE_E_MERGE", "Current lifecycle has wrong merge commit")](../../../tools/operations/validate_phase_e_candidate.py)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-BBDFC8EB6E78D1B5 / require(branch_pr.get("merge_commit") == "0a13c246172c0338bf8dda5dc08db5a574a8b23f", "E_PHASE_E_MERGE", "Current lifecycle has wrong merge commit") / IMPLICIT-BBDFC8EB6E78D1B5
+  - 来源：`tools/operations/validate_phase_e_candidate.py`
+  - 依赖：—；被引用：—
+- [require(candidate.get("status") == "CANDIDATE_PROJECTION_NOT_NEUTRAL_MEANING", f"{prefix}: normalized meaning must decla](../../../tools/language_thought/validate_language_thought.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-018b6886aea0b267 / require(candidate.get("status") == "CANDIDATE_PROJECTION_NOT_NEUTRAL_MEANING", f"{prefix}: normalized meaning must decla
+  - 来源：`tools/language_thought/validate_language_thought.py`
+  - 依赖：—；被引用：—
+- [require(candidate.get("status") == "CANDIDATE_PROJECTION_NOT_NEUTRAL_MEANING", f"{prefix}: normalized meaning must declare candidate status", errors)](../../../tools/language_thought/validate_language_thought.py)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-E9F65F770FA8FFE3 / require(candidate.get("status") == "CANDIDATE_PROJECTION_NOT_NEUTRAL_MEANING", f"{prefix}: normalized meaning must declare candidate status", errors) / IMPLICIT-E9F65F770FA8FFE3
+  - 来源：`tools/language_thought/validate_language_thought.py`
+  - 依赖：—；被引用：—
+- [require(contract.get("full_required_fields_authority") == "validator",](../../../tools/validate_iteration_sync.py)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-2A36709689811ECC / require(contract.get("full_required_fields_authority") == "validator", / IMPLICIT-2A36709689811ECC
+  - 来源：`tools/validate_iteration_sync.py`
+  - 依赖：—；被引用：—
+- [require(contract.get("schema_version") == "1.0.0",](../../../tools/validate_iteration_sync.py)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-C853B70A52BF7FB7 / require(contract.get("schema_version") == "1.0.0", / IMPLICIT-C853B70A52BF7FB7
+  - 来源：`tools/validate_iteration_sync.py`
+  - 依赖：—；被引用：—
+- [require(contract.get("validator_path") == "tools/validate_external_attestation.py",](../../../tools/validate_iteration_sync.py)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-F77D74F61425076A / require(contract.get("validator_path") == "tools/validate_external_attestation.py", / IMPLICIT-F77D74F61425076A
+  - 来源：`tools/validate_iteration_sync.py`
+  - 依赖：—；被引用：—
+- [require(delta.get("source_value") == source_frame\[dimension_id\], f"{delta_prefix}: source_value does not match source_frame", errors)](../../../tools/language_thought/validate_language_thought.py)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-52887C2C355B3689 / require(delta.get("source_value") == source_frame\[dimension_id\], f"{delta_prefix}: source_value does not match source_frame", errors) / IMPLICIT-52887C2C355B3689
+  - 来源：`tools/language_thought/validate_language_thought.py`
+  - 依赖：—；被引用：—
+- [require(delta.get("target_value") == target_frame\[dimension_id\], f"{delta_prefix}: target_value does not match target_frame", errors)](../../../tools/language_thought/validate_language_thought.py)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-552CA443406E6159 / require(delta.get("target_value") == target_frame\[dimension_id\], f"{delta_prefix}: target_value does not match target_frame", errors) / IMPLICIT-552CA443406E6159
+  - 来源：`tools/language_thought/validate_language_thought.py`
+  - 依赖：—；被引用：—
+- [require(demo.get("authority_fingerprint") == _expected_authority, "E_PHASE_E_AUTHORITY", "authority fingerprint mismatch")](../../../tools/operations/validate_phase_e_candidate.py)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-63009F9897AE5CD3 / require(demo.get("authority_fingerprint") == _expected_authority, "E_PHASE_E_AUTHORITY", "authority fingerprint mismatch") / IMPLICIT-63009F9897AE5CD3
+  - 来源：`tools/operations/validate_phase_e_candidate.py`
+  - 依赖：—；被引用：—
+- [require(demo.get("planner_output") == actual_plan, "E_PHASE_E_STALE_PLAN", "demonstration is not the real deterministic planner output")](../../../tools/operations/validate_phase_e_candidate.py)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-D4AD74399EB1A80E / require(demo.get("planner_output") == actual_plan, "E_PHASE_E_STALE_PLAN", "demonstration is not the real deterministic planner output") / IMPLICIT-D4AD74399EB1A80E
+  - 来源：`tools/operations/validate_phase_e_candidate.py`
+  - 依赖：—；被引用：—
+- [require(demo.get("validator_result") == {"status": "PASS", "error_code": None}, "E_PHASE_E_VALIDATOR", "demonstration validator result is not PASS")](../../../tools/operations/validate_phase_e_candidate.py)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-5B7A89E3416212DB / require(demo.get("validator_result") == {"status": "PASS", "error_code": None}, "E_PHASE_E_VALIDATOR", "demonstration validator result is not PASS") / IMPLICIT-5B7A89E3416212DB
+  - 来源：`tools/operations/validate_phase_e_candidate.py`
+  - 依赖：—；被引用：—
+- [require(document.get("schema_version") == "1.0.0", "dimensions: wrong schema_version", errors)](../../../tools/language_thought/validate_language_thought.py)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-8610B67EA52173F8 / require(document.get("schema_version") == "1.0.0", "dimensions: wrong schema_version", errors) / IMPLICIT-8610B67EA52173F8
+  - 来源：`tools/language_thought/validate_language_thought.py`
+  - 依赖：—；被引用：—
+- [require(isinstance(actor_ref, dict) and set(actor_ref) == {"actor_ref"}, f"{context}: final responsibility must use only actor_ref")](../../../tools/operations/stage_snapshot_contract.py)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-66144F8F4E2F0B7A / require(isinstance(actor_ref, dict) and set(actor_ref) == {"actor_ref"}, f"{context}: final responsibility must use only actor_ref") / IMPLICIT-66144F8F4E2F0B7A
+  - 来源：`tools/operations/stage_snapshot_contract.py`
+  - 依赖：—；被引用：—
+- [require(isinstance(dimensions, list) and len(dimensions) == 12, "dimensions: exactly twelve dimensions required", errors)](../../../tools/language_thought/validate_language_thought.py)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-47A4F6BF1CF03817 / require(isinstance(dimensions, list) and len(dimensions) == 12, "dimensions: exactly twelve dimensions required", errors) / IMPLICIT-47A4F6BF1CF03817
+  - 来源：`tools/language_thought/validate_language_thought.py`
+  - 依赖：—；被引用：—
 - [require(isinstance(items, list) and len(items) == 12, f"{prefix}: exact twelve-dimensional coverage required", errors)](../../../tools/language_thought/validate_language_thought.py)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-8114133C117DFB7F / require(isinstance(items, list) and len(items) == 12, f"{prefix}: exact twelve-dimensional coverage required", errors) / IMPLICIT-8114133C117DFB7F
@@ -374,6 +469,11 @@
   - 可搜索名称：IMPLICIT-1FFA7A65FC0F169E / return candidates\[0\] if len(candidates) == 1 else None / IMPLICIT-1FFA7A65FC0F169E
   - 来源：`evidence-program/tools/validate_evidence_program.py`
   - 依赖：—；被引用：—
+- [return committed is not None and buf.getvalue() == committed](../../../tools/propagation/current_truth_projection.py)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-DB97D6D0434B4A7C / return committed is not None and buf.getvalue() == committed / IMPLICIT-DB97D6D0434B4A7C
+  - 来源：`tools/propagation/current_truth_projection.py`
+  - 依赖：—；被引用：—
 - [return document.get("output_fingerprints") == output_fingerprints(profiles, root, ids)](../../../tools/operations/run_incremental_execution.py)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-99DF6534E20A65C6 / return document.get("output_fingerprints") == output_fingerprints(profiles, root, ids) / IMPLICIT-99DF6534E20A65C6
@@ -444,6 +544,11 @@
   - 可搜索名称：IMPLICIT-57249D2D07EEDF8D / same = canon(used) == canon(pre) / IMPLICIT-57249D2D07EEDF8D
   - 来源：`evidence-program/tools/validate_evidence_program.py`
   - 依赖：—；被引用：—
+- [same projection-check contract (D3 fix: shared CI gate).](../../../tests/test_current_truth_projection_parity.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-e7ba64efaff6a6e5 / same projection-check contract (D3 fix: shared CI gate).
+  - 来源：`tests/test_current_truth_projection_parity.py`
+  - 依赖：D3；被引用：—
 - [sat = sum(1 for o in obls if o.get("status") == "SATISFIED")](../../../tests/test_deep_research_round5.py)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-867CBC75316390FA / sat = sum(1 for o in obls if o.get("status") == "SATISFIED") / IMPLICIT-867CBC75316390FA
@@ -468,6 +573,11 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-B42B2AB400E17264 / self.assertFalse(any(p.get("validator_argv") == \["python3", "tools/validate_protocol_canonical.py", "--check"\] for p in profiles)) / IMPLICIT-B42B2AB400E17264
   - 来源：`tests/test_production_execution_authority.py`
+  - 依赖：—；被引用：—
+- [self.assertIn(tn, present, f"iteration {tn} must be folded into the projection")](../../../tests/test_current_truth_projection_parity.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-8b91898f8d3a4a49 / self.assertIn(tn, present, f"iteration {tn} must be folded into the projection")
+  - 来源：`tests/test_current_truth_projection_parity.py`
   - 依赖：—；被引用：—
 - [self.assertTrue(any(r.get("revision") == "not-a-real-ref" for r in matches))](../../../tests/test_change_propagation.py)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -508,6 +618,11 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-F94492AC052076DF / Space_Function(Ω) = {I(Ω), D_immune(Ω), R(Ω)} / IMPLICIT-F94492AC052076DF
   - 来源：`统一函数总表/0503-D505-空间函数三元投影.md`
+  - 依赖：—；被引用：—
+- [stale_path = os.path.join(d, "stale-projection.json")](../../../tests/test_current_truth_projection_parity.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-4d472c6a802ae8d1 / stale_path = os.path.join(d, "stale-projection.json")
+  - 来源：`tests/test_current_truth_projection_parity.py`
   - 依赖：—；被引用：—
 - [structure_A ≅ structure_B := ∃φ: A→B, ∀x,y∈A, (x≈y ⇔ φ(x)≈φ(y))（结构同构）](../../../docs/phi_meta_law.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
@@ -563,6 +678,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-8650f95f18d57a47 / The projection is derived ONLY from terminal (remotely verified) ledger records
   - 来源：`tools/propagation/current_truth_projection.py`
+  - 依赖：—；被引用：—
+- [The projection only folds TERMINAL_SUCCESS tasks; a non-terminal / absent](../../../tests/test_current_truth_projection_parity.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a6d88cfd5a177d54 / The projection only folds TERMINAL_SUCCESS tasks; a non-terminal / absent
+  - 来源：`tests/test_current_truth_projection_parity.py`
   - 依赖：—；被引用：—
 - [title: "8格概率"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0134-C-134-8%E6%A0%BC%E6%A6%82%E7%8E%87.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -2384,123 +2504,3 @@
   - 可搜索名称：IMPLICIT-F3383A2BBF7459EC / 中文：案例说明：P(发现)=P(L₅激活)×P(L₅不退化) / IMPLICIT-F3383A2BBF7459EC / IMPLICIT-57E4B558EB78D577
   - 来源：`统一案例总表/0127-C-127-框架发现过程.md`
   - 依赖：—；被引用：—
-- [中文：案例说明：Preference(k,t)=∫\[S_body×R_repeat×(1-H_cultural)\]dt](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0116-C-116-%E5%8F%A3%E5%91%B3%E5%81%8F%E5%A5%BD%E5%9B%BA%E5%8C%96.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-4AAC30FBEABFC46C / 中文：案例说明：Preference(k,t)=∫\[S_body×R_repeat×(1-H_cultural)\]dt / IMPLICIT-4AAC30FBEABFC46C / IMPLICIT-63D758A66FFD78EF
-  - 来源：`统一案例总表/0116-C-116-口味偏好固化.md`
-  - 依赖：—；被引用：—
-- [中文：案例说明：Preference(k,t)=∫\[S_body×R_repeat×(1-H_cultural)\]dt](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0109-C-109-%E5%8F%A3%E5%91%B3%E5%81%8F%E5%A5%BD%E5%9B%BA%E5%8C%96.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-63D758A66FFD78EF / 中文：案例说明：Preference(k,t)=∫\[S_body×R_repeat×(1-H_cultural)\]dt / IMPLICIT-63D758A66FFD78EF / IMPLICIT-4AAC30FBEABFC46C
-  - 来源：`统一案例总表/0109-C-109-口味偏好固化.md`
-  - 依赖：—；被引用：—
-- [中文：案例说明：R_upgrade=R₀×∫\[α₁Δ(信息可及性)+α₂(-ΔC_exit_eff)+α₃Δε_aware\]dt](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0144-C-144-%E5%8E%BF%E5%9F%8E%E4%BD%B3%E5%92%8C%E8%B6%85%E5%B8%8290%25%E5%A4%8D%E8%B4%AD%E7%8E%87.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-F11B1904A633D87F / 中文：案例说明：R_upgrade=R₀×∫\[α₁Δ(信息可及性)+α₂(-ΔC_exit_eff)+α₃Δε_aware\]dt / IMPLICIT-F11B1904A633D87F
-  - 来源：`统一案例总表/0144-C-144-县城佳和超市90%复购率.md`
-  - 依赖：—；被引用：—
-- [中文：案例说明：印刷术/蒸汽机/互联网——历史变革的投影不对称](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0197-C-197-%E5%8D%B0%E5%88%B7%E6%9C%AF.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-0e0216811dc71537 / 中文：案例说明：印刷术/蒸汽机/互联网——历史变革的投影不对称
-  - 来源：`统一案例总表/0197-C-197-印刷术.md`
-  - 依赖：—；被引用：—
-- [中文：案例说明：反向投影覆盖](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0103-C-103-%E5%8F%8D%E5%90%91%E6%8A%95%E5%BD%B1%E8%A6%86%E7%9B%96.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-0fa732bb65fb05dc / 中文：案例说明：反向投影覆盖
-  - 来源：`统一案例总表/0103-C-103-反向投影覆盖.md`
-  - 依赖：—；被引用：—
-- [中文：案例说明：定投×贷款×学习——可选集扩张的三种同构形态](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0182-C-182-%E5%AE%9A%E6%8A%95%C3%97%E8%B4%B7%E6%AC%BE%C3%97%E5%AD%A6%E4%B9%A0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-d4523645839678ef / 中文：案例说明：定投×贷款×学习——可选集扩张的三种同构形态
-  - 来源：`统一案例总表/0182-C-182-定投×贷款×学习.md`
-  - 依赖：—；被引用：—
-- [中文：案例说明：收益-风险投影-网结构](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0079-C-79-%E6%94%B6%E7%9B%8A-%E9%A3%8E%E9%99%A9%E6%8A%95%E5%BD%B1-%E7%BD%91%E7%BB%93%E6%9E%84.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-5f462ba767762eea / 中文：案例说明：收益-风险投影-网结构
-  - 来源：`统一案例总表/0079-C-79-收益-风险投影-网结构.md`
-  - 依赖：—；被引用：—
-- [中文：案例说明：理财的几何本质——收益投影拉宽×风险投影压窄](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0184-C-184-%E7%90%86%E8%B4%A2%E7%9A%84%E5%87%A0%E4%BD%95%E6%9C%AC%E8%B4%A8.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-42995ca823341948 / 中文：案例说明：理财的几何本质——收益投影拉宽×风险投影压窄
-  - 来源：`统一案例总表/0184-C-184-理财的几何本质.md`
-  - 依赖：—；被引用：—
-- [中文：案例说明：短内容降低获得奖励的时间成本，提高预测误差频率，使策略更偏向即时奖励。](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0588-C-593-%E7%9F%AD%E8%A7%86%E9%A2%91%E5%A5%96%E5%8A%B1%E5%8E%8B%E7%BC%A9%E9%AA%8C%E8%AF%81.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-8fa460d1e9a474dc / 中文：案例说明：短内容降低获得奖励的时间成本，提高预测误差频率，使策略更偏向即时奖励。
-  - 来源：`统一案例总表/0588-C-593-短视频奖励压缩验证.md`
-  - 依赖：—；被引用：—
-- [中文：案例说明：维护成本M(t)=M₀·e^αt vs 信息产出I(t)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0113-C-113-%E4%BA%BA%E4%BD%93%E5%BF%92%E4%BF%AE%E6%96%AF.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-BE6D82E6E5ED2FB7 / 中文：案例说明：维护成本M(t)=M₀·e^αt vs 信息产出I(t) / IMPLICIT-BE6D82E6E5ED2FB7
-  - 来源：`统一案例总表/0113-C-113-人体忒修斯.md`
-  - 依赖：—；被引用：—
-- [中文：案例说明：预测编码回路——AI多轨的最可能路径](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0216-C-216-%E9%A2%84%E6%B5%8B%E7%BC%96%E7%A0%81%E5%9B%9E%E8%B7%AF.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-3fecd2fafa8eef4c / 中文：案例说明：预测编码回路——AI多轨的最可能路径
-  - 来源：`统一案例总表/0216-C-216-预测编码回路.md`
-  - 依赖：—；被引用：—
-- [中文：沃尔顿的"智慧干预"= 在关键节点做最小注入，逆转D-X52→D-X53→D-X31的闭环。这是D-X38种子激活在心理干预维度的场景展开。 P_intervene(t) = σ(Q_unresolved(t) × (1-D_immune(t))) × W(t) × η_delivery - Q_unresolved × (1-D_immune)：疑问未解但退化免疫未锁死——种子可激活条件 - W(t)：窗口宽度（D-X54）——时机条件 - η_delivery ∈](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0109-D60-%E6%99%BA%E6%85%A7%E5%B9%B2%E9%A2%84%E6%95%88%E5%8A%9B%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-DF5F4AA4482FBEEF / 中文：沃尔顿的"智慧干预"= 在关键节点做最小注入，逆转D-X52→D-X53→D-X31的闭环。这是D-X38种子激活在心理干预维度的场景展开。 P_intervene(t) = σ(Q_unresolved(t) × (1-D_immune(t))) × W(t) × η_delivery - Q_unresolved × (1-D_immune)：疑问未解但退化免疫未锁死——种子可激活条件 - W(t)：窗口宽度（D-X54）——时机条件 - η_delivery ∈ / IMPLICIT-DF5F4AA4482FBEEF
-  - 来源：`统一函数总表/0109-D60-智慧干预效力函数.md`
-  - 依赖：—；被引用：—
-- [中文：热力学第二定律的终态：热寂 = 所有能量均匀分布 = 没有结构 = 没有力 在高斯门控框架下： 热寂 ⟹ μ_available → 0 ⟹ 对所有Λᵢ：μ < Λᵢ ⟹ gᵢ = exp\[-(ln(μ/Λᵢ))²/(2σᵢ²)\] → 0（μ→0时ln(μ/Λᵢ)→-∞，exp→0） ⟹ Φ = Σgᵢ → 0 ⟹ Ω = e^{-Φ} → 1](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0257-D221-%E7%83%AD%E5%AF%82-%E5%AE%8C%E5%85%A8%E7%BB%9F%E4%B8%80%E5%90%8C%E6%9E%84%E5%AE%9A%E7%90%86.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-3E813E681FA10CA1 / 中文：热力学第二定律的终态：热寂 = 所有能量均匀分布 = 没有结构 = 没有力 在高斯门控框架下： 热寂 ⟹ μ_available → 0 ⟹ 对所有Λᵢ：μ < Λᵢ ⟹ gᵢ = exp\[-(ln(μ/Λᵢ))²/(2σᵢ²)\] → 0（μ→0时ln(μ/Λᵢ)→-∞，exp→0） ⟹ Φ = Σgᵢ → 0 ⟹ Ω = e^{-Φ} → 1 / IMPLICIT-3E813E681FA10CA1
-  - 来源：`统一函数总表/0257-D221-热寂-完全统一同构定理.md`
-  - 依赖：—；被引用：—
-- [中文：理财的几何本质——收益投影拉宽×风险投影压窄](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0184-C-184-%E7%90%86%E8%B4%A2%E7%9A%84%E5%87%A0%E4%BD%95%E6%9C%AC%E8%B4%A8.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-6eb0a7745fbaa6d2 / 中文：理财的几何本质——收益投影拉宽×风险投影压窄
-  - 来源：`统一案例总表/0184-C-184-理财的几何本质.md`
-  - 依赖：—；被引用：—
-- [中文：理财的几何本质——收益投影拉宽×风险投影压窄 English: Rule-based English rendering pending human r…](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0184-C-184-%E7%90%86%E8%B4%A2%E7%9A%84%E5%87%A0%E4%BD%95%E6%9C%AC%E8%B4%A8.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-29c4fee5ef8dc942 / 中文：理财的几何本质——收益投影拉宽×风险投影压窄 English: Rule-based English rendering pending human r…
-  - 来源：`统一案例总表/0184-C-184-理财的几何本质.md`
-  - 依赖：—；被引用：—
-- [中文：电弱统一是电磁力和弱核力在高能μ>μ_EW时的门控面合并。μ μ_EW时合并为Λ_EW,Φ = 1/ln(μ/Λ_EW)。统一度Ω_after > Ω_before。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0223-D187-%E7%94%B5%E5%BC%B1%E7%BB%9F%E4%B8%80%E8%A7%84%E8%8C%83%E7%A0%B4%E7%BC%BA%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-2D2F752E1B7D42E5 / 中文：电弱统一是电磁力和弱核力在高能μ>μ_EW时的门控面合并。μ μ_EW时合并为Λ_EW,Φ = 1/ln(μ/Λ_EW)。统一度Ω_after > Ω_before。 / IMPLICIT-2D2F752E1B7D42E5
-  - 来源：`统一函数总表/0223-D187-电弱统一规范破缺函数.md`
-  - 依赖：—；被引用：—
-- [中文：相变序参量φ=门控面Λ的序参量。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0235-D199-%E7%9B%B8%E5%8F%98%E5%BA%8F%E5%8F%82%E9%87%8F-%E9%97%A8%E6%A7%9B%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-FCE597834442D685 / 中文：相变序参量φ=门控面Λ的序参量。 / IMPLICIT-FCE597834442D685
-  - 来源：`统一函数总表/0235-D199-相变序参量-门槛函数.md`
-  - 依赖：—；被引用：—
-- [中文：该案例围绕 +D123深层同构 展开。](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0276-C-276-D127%2BD123%E6%B7%B1%E5%B1%82%E5%90%8C%E6%9E%84.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-28604ee436a4b404 / 中文：该案例围绕 +D123深层同构 展开。
-  - 来源：`统一案例总表/0276-C-276-D127+D123深层同构.md`
-  - 依赖：D123；被引用：—
-- [中文：该案例围绕 +D123深层同构 展开。 English: Rule-based English rendering pending human revi…](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0276-C-276-D127%2BD123%E6%B7%B1%E5%B1%82%E5%90%8C%E6%9E%84.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-28164d765bbf2a32 / 中文：该案例围绕 +D123深层同构 展开。 English: Rule-based English rendering pending human revi…
-  - 来源：`统一案例总表/0276-C-276-D127+D123深层同构.md`
-  - 依赖：D123；被引用：—
-- [中文：该案例围绕 =0不导致Ψ=0 展开。](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0260-C-260-r_cross%3D0%E4%B8%8D%E5%AF%BC%E8%87%B4%CE%A8%3D0.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-3ECE357BD54366BB / 中文：该案例围绕 =0不导致Ψ=0 展开。 / IMPLICIT-3ECE357BD54366BB
-  - 来源：`统一案例总表/0260-C-260-r_cross=0不导致Ψ=0.md`
-  - 依赖：—；被引用：—
-- [中文：该案例围绕 =0不导致Ψ=0 展开。 English: Rule-based English rendering pending human revie…](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0260-C-260-r_cross%3D0%E4%B8%8D%E5%AF%BC%E8%87%B4%CE%A8%3D0.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-5F6B03A37EB47946 / 中文：该案例围绕 =0不导致Ψ=0 展开。 English: Rule-based English rendering pending human revie… / IMPLICIT-5F6B03A37EB47946
-  - 来源：`统一案例总表/0260-C-260-r_cross=0不导致Ψ=0.md`
-  - 依赖：—；被引用：—
-- [中文：该案例围绕 与D126时间尺度同构 展开。](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0278-C-278-D124%E4%B8%8ED126%E6%97%B6%E9%97%B4%E5%B0%BA%E5%BA%A6%E5%90%8C%E6%9E%84.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-89bbe066d6f29566 / 中文：该案例围绕 与D126时间尺度同构 展开。
-  - 来源：`统一案例总表/0278-C-278-D124与D126时间尺度同构.md`
-  - 依赖：D126；被引用：—
-- [中文：该案例围绕 与D126时间尺度同构 展开。 English: Rule-based English rendering pending human re…](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0278-C-278-D124%E4%B8%8ED126%E6%97%B6%E9%97%B4%E5%B0%BA%E5%BA%A6%E5%90%8C%E6%9E%84.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-de0e93254add5d38 / 中文：该案例围绕 与D126时间尺度同构 展开。 English: Rule-based English rendering pending human re…
-  - 来源：`统一案例总表/0278-C-278-D124与D126时间尺度同构.md`
-  - 依赖：D126；被引用：—
-- [中文：该案例围绕 与D36倒U型同构 展开。](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0277-C-277-D123%E4%B8%8ED36%E5%80%92U%E5%9E%8B%E5%90%8C%E6%9E%84.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-38ba1e0baf6e85aa / 中文：该案例围绕 与D36倒U型同构 展开。
-  - 来源：`统一案例总表/0277-C-277-D123与D36倒U型同构.md`
-  - 依赖：D36；被引用：—

@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [link: "统一函数总表/0556-T57-认知肌肉训练函数.md"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0556-T57-%E8%AE%A4%E7%9F%A5%E8%82%8C%E8%82%89%E8%AE%AD%E7%BB%83%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-28001725c64ee2d9 / link: "统一函数总表/0556-T57-认知肌肉训练函数.md"
+  - 来源：`统一函数总表/0556-T57-认知肌肉训练函数.md`
+  - 依赖：T57；被引用：—
+- [link: "统一函数总表/0557-D542-植物蛋白质网络函数.md"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0557-D542-%E6%A4%8D%E7%89%A9%E8%9B%8B%E7%99%BD%E8%B4%A8%E7%BD%91%E7%BB%9C%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-2b011a41baa3ec0d / link: "统一函数总表/0557-D542-植物蛋白质网络函数.md"
+  - 来源：`统一函数总表/0557-D542-植物蛋白质网络函数.md`
+  - 依赖：D542；被引用：—
 - [link: "统一函数总表/0558-D543-群体智能函数.md"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0558-D543-%E7%BE%A4%E4%BD%93%E6%99%BA%E8%83%BD%E5%87%BD%E6%95%B0.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-0eed99e01e1281a5 / link: "统一函数总表/0558-D543-群体智能函数.md"
@@ -2493,14 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-52cb60bdde473505 / proof(p) := ∃sequence(s_1, s_2, ..., s_n), s_n = p ∧ ∀i, s_{i+1} ⊢ s_i（证明序列）
   - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [proof. A later same-number continuation absorbs R2 results and performs final](../../../docs/research-os/OPERATING-GUIDE.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-e11ee815b4d1a7b1 / proof. A later same-number continuation absorbs R2 results and performs final
-  - 来源：`docs/research-os/OPERATING-GUIDE.md`
-  - 依赖：—；被引用：—
-- [proof.append("Declare quantifiers, carrier and existence/uniqueness status without forcing a multivalued relation into a](../../../tools/foundation/adjudicate_function_assets.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-667ce07deede46d9 / proof.append("Declare quantifiers, carrier and existence/uniqueness status without forcing a multivalued relation into a
-  - 来源：`tools/foundation/adjudicate_function_assets.py`
   - 依赖：—；被引用：—

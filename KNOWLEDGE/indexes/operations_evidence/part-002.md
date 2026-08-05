@@ -4,6 +4,31 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [### \[#551｜恒星质量下限 — 聚变门控面=Gamow峰=隧穿×热分布乘积极大\](docs/zh/cases/items/C-0551.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0546-C-551-%E6%81%92%E6%98%9F%E8%B4%A8%E9%87%8F%E4%B8%8B%E9%99%90%20%E2%80%94%20%E8%81%9A%E5%8F%98%E9%97%A8%E6%8E%A7%E9%9D%A2%3DGamow%E5%B3%B0%3D%E9%9A%A7%E7%A9%BF%C3%97%E7%83%AD%E5%88%86%E5%B8%83%E4%B9%98%E7%A7%AF%E6%9E%81%E5%A4%A7.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-517D9EFA3F23FFE3 / ### \[#551｜恒星质量下限 — 聚变门控面=Gamow峰=隧穿×热分布乘积极大\](docs/zh/cases/items/C-0551.md) / IMPLICIT-517D9EFA3F23FFE3
+  - 来源：`统一案例总表/0546-C-551-恒星质量下限 — 聚变门控面=Gamow峰=隧穿×热分布乘积极大.md`
+  - 依赖：—；被引用：—
+- [### \[#555｜费米悖论 — 乘法门控使跨星系文明B=⟨ε⟩^N→0\](docs/zh/cases/items/C-0555.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0550-C-555-%E8%B4%B9%E7%B1%B3%E6%82%96%E8%AE%BA%20%E2%80%94%20%E4%B9%98%E6%B3%95%E9%97%A8%E6%8E%A7%E4%BD%BF%E8%B7%A8%E6%98%9F%E7%B3%BB%E6%96%87%E6%98%8EB%3D%E2%9F%A8%CE%B5%E2%9F%A9%5EN%E2%86%920.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-0521E651C0E10664 / ### \[#555｜费米悖论 — 乘法门控使跨星系文明B=⟨ε⟩^N→0\](docs/zh/cases/items/C-0555.md) / IMPLICIT-0521E651C0E10664
+  - 来源：`统一案例总表/0550-C-555-费米悖论 — 乘法门控使跨星系文明B=⟨ε⟩^N→0.md`
+  - 依赖：—；被引用：—
+- [### \[#556｜衰老 — Φ线性增长→B指数衰减→Gompertz定律 / 衰老 - Φ线性增长 -> B指数衰减 -> Gompertz定律\](docs/zh/cases/items/C-0556.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0551-C-556-%E8%A1%B0%E8%80%81%20%E2%80%94%20%CE%A6%E7%BA%BF%E6%80%A7%E5%A2%9E%E9%95%BF%E2%86%92B%E6%8C%87%E6%95%B0%E8%A1%B0%E5%87%8F%E2%86%92Gompertz%E5%AE%9A%E5%BE%8B.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-CF6FB94DB046D71A / ### \[#556｜衰老 — Φ线性增长→B指数衰减→Gompertz定律 / 衰老 - Φ线性增长 -> B指数衰减 -> Gompertz定律\](docs/zh/cases/items/C-0556.md) / IMPLICIT-CF6FB94DB046D71A
+  - 来源：`统一案例总表/0551-C-556-衰老 — Φ线性增长→B指数衰减→Gompertz定律.md`
+  - 依赖：—；被引用：—
+- [### \[#557｜癌症 — ε穿越门控面，发病率∝exp(Φt)指数增长\](docs/zh/cases/items/C-0557.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0552-C-557-%E7%99%8C%E7%97%87%20%E2%80%94%20%CE%B5%E7%A9%BF%E8%B6%8A%E9%97%A8%E6%8E%A7%E9%9D%A2%2C%E5%8F%91%E7%97%85%E7%8E%87%E2%88%9Dexp%28%CE%A6t%29%E6%8C%87%E6%95%B0%E5%A2%9E%E9%95%BF.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-F1B3CD991152F628 / ### \[#557｜癌症 — ε穿越门控面，发病率∝exp(Φt)指数增长\](docs/zh/cases/items/C-0557.md) / IMPLICIT-F1B3CD991152F628
+  - 来源：`统一案例总表/0552-C-557-癌症 — ε穿越门控面,发病率∝exp(Φt)指数增长.md`
+  - 依赖：—；被引用：—
+- [### \[#559｜大灭绝 — 多门控共振+级联，周期性∝Φ到临界值时间\](docs/zh/cases/items/C-0559.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0554-C-559-%E5%A4%A7%E7%81%AD%E7%BB%9D%20%E2%80%94%20%E5%A4%9A%E9%97%A8%E6%8E%A7%E5%85%B1%E6%8C%AF%2B%E7%BA%A7%E8%81%94%2C%E5%91%A8%E6%9C%9F%E6%80%A7%E2%88%9D%CE%A6%E5%88%B0%E4%B8%B4%E7%95%8C%E5%80%BC%E6%97%B6%E9%97%B4.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-1154A742469575BC / ### \[#559｜大灭绝 — 多门控共振+级联，周期性∝Φ到临界值时间\](docs/zh/cases/items/C-0559.md) / IMPLICIT-1154A742469575BC
+  - 来源：`统一案例总表/0554-C-559-大灭绝 — 多门控共振+级联,周期性∝Φ到临界值时间.md`
+  - 依赖：—；被引用：—
 - [### \[#565｜哈勃张力超指数衰减\](docs/zh/cases/items/C-0565.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0560-C-565-%E5%93%88%E5%8B%83%E5%BC%A0%E5%8A%9B%E8%B6%85%E6%8C%87%E6%95%B0%E8%A1%B0%E5%87%8F.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-C2960CD88850854C / ### \[#565｜哈勃张力超指数衰减\](docs/zh/cases/items/C-0565.md) / IMPLICIT-C2960CD88850854C
@@ -2478,29 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-95D53A930A9B40D4 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0412})=1\]. / IMPLICIT-95D53A930A9B40D4
   - 来源：`统一案例总表/0411-C-412-安慰剂的信念相变——信念提高μ_immune越过Λ_immune的微小翻转.md`
-  - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0413})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0412-C-413-%E8%87%AA%E6%84%88%E6%98%AF%E9%97%A8%E6%A7%9B%E8%87%AA%E7%84%B6%E7%BF%BB%E8%BD%AC%E2%80%94%E2%80%94%CE%BC_immune-%CE%9B_pathogen%E6%97%B6%E6%97%A0%E9%9C%80%E5%A4%96%E9%83%A8%E6%B3%A8%E5%85%A5.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-C07FFE1B8537987E / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0413})=1\]. / IMPLICIT-C07FFE1B8537987E
-  - 来源：`统一案例总表/0412-C-413-自愈是门槛自然翻转——μ_immune-Λ_pathogen时无需外部注入.md`
-  - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0414})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0413-C-414-%E5%99%A8%E5%AE%98%E6%8E%92%E6%96%A5%E7%9A%84%E9%97%A8%E6%A7%9B%E7%BF%BB%E8%BD%AC%E2%80%94%E2%80%94%E5%BC%82%E8%B4%A8%E7%BB%84%E7%BB%87%E9%99%8D%E4%BD%8E%CE%9B_immune%E5%AF%BC%E8%87%B4%E8%87%AA%E8%BA%AB%E5%85%8D%E7%96%AB.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-80248F92D844A9E7 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0414})=1\]. / IMPLICIT-80248F92D844A9E7
-  - 来源：`统一案例总表/0413-C-414-器官排斥的门槛翻转——异质组织降低Λ_immune导致自身免疫.md`
-  - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0415})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0414-C-415-%E8%A1%B0%E8%80%81%E5%A4%9A%E7%97%85%E7%9A%84%E4%B9%98%E6%B3%95%E5%8A%A0%E9%80%9F%E2%80%94%E2%80%94%E5%A4%9A%E9%97%A8%E6%8E%A7%E9%9D%A2%E5%90%8C%E6%97%B6%E9%97%A8%E6%A7%9B%E7%A2%BE%E5%8E%8B%2CD87%E5%A4%9A%E5%9B%A0%E5%AD%90%E5%8F%A0%E5%8A%A0.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-B3B5718B015615FB / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0415})=1\]. / IMPLICIT-B3B5718B015615FB
-  - 来源：`统一案例总表/0414-C-415-衰老多病的乘法加速——多门控面同时门槛碾压,D87多因子叠加.md`
-  - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0416})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0415-C-416-%E6%89%8B%E6%9C%AF%E7%AA%97%E5%8F%A3%E7%9A%84%E5%80%92U%E5%9E%8B%E2%80%94%E2%80%94%E5%A4%AA%E5%BC%B1%E6%AD%BB%E9%94%81%E5%92%8C%E5%A4%AA%E6%99%9A%E6%AD%BB%E9%94%81%E4%B9%8B%E9%97%B4%E7%9A%84%E5%94%AF%E4%B8%80%E9%80%9A%E8%B7%AF.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-6D0D1F3F17B86831 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0416})=1\]. / IMPLICIT-6D0D1F3F17B86831
-  - 来源：`统一案例总表/0415-C-416-手术窗口的倒U型——太弱死锁和太晚死锁之间的唯一通路.md`
-  - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0417})=1\].](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0416-C-417-%E5%9F%8E%E5%B8%82%E8%A7%84%E6%A8%A1%E5%BE%8B%E7%9A%84%E5%80%92U%E5%9E%8B%E2%80%94%E2%80%94%E4%BA%92%E5%8A%A8%E6%94%B6%E7%9B%8A%E4%B8%8E%E6%91%A9%E6%93%A6%E6%88%90%E6%9C%AC%E4%B9%8B%E9%97%B4%E7%9A%84%E8%B5%B0%E9%92%A2%E4%B8%9D.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-8868796DB27B5C0E / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0417})=1\]. / IMPLICIT-8868796DB27B5C0E
-  - 来源：`统一案例总表/0416-C-417-城市规模律的倒U型——互动收益与摩擦成本之间的走钢丝.md`
   - 依赖：—；被引用：—

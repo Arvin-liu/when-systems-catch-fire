@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [If upstream objects D_{D190} exist, compose F_{D190}=N(⊕_{g∈D_{D190}} g); otherwise treat F_{D190} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0226-D190-%E4%B8%87%E6%9C%89%E7%90%86%E8%AE%BA%E9%97%A8%E6%A7%9B%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-96b6126f9da87bb0 / If upstream objects D_{D190} exist, compose F_{D190}=N(⊕_{g∈D_{D190}} g); otherwise treat F_{D190} as an axiom seed.
+  - 来源：`统一函数总表/0226-D190-万有理论门槛函数.md`
+  - 依赖：D190；被引用：—
+- [If upstream objects D_{D191} exist, compose F_{D191}=N(⊕_{g∈D_{D191}} g); otherwise treat F_{D191} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0227-D191-%E8%AE%A4%E7%9F%A5%E8%A7%84%E8%8C%83%E7%A0%B4%E7%BC%BA%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-fcedc72cf9317c5f / If upstream objects D_{D191} exist, compose F_{D191}=N(⊕_{g∈D_{D191}} g); otherwise treat F_{D191} as an axiom seed.
+  - 来源：`统一函数总表/0227-D191-认知规范破缺函数.md`
+  - 依赖：D191；被引用：—
 - [If upstream objects D_{D192} exist, compose F_{D192}=N(⊕_{g∈D_{D192}} g); otherwise treat F_{D192} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0228-D192-%E8%AE%A4%E7%9F%A5Higgs%E6%9C%BA%E5%88%B6.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-dfacb202305726a0 / If upstream objects D_{D192} exist, compose F_{D192}=N(⊕_{g∈D_{D192}} g); otherwise treat F_{D192} as an axiom seed.
@@ -2494,13 +2504,3 @@
   - 可搜索名称：NFC-972214d499b198ce / link: "统一函数总表/0555-T56-演化分歧函数.md"
   - 来源：`统一函数总表/0555-T56-演化分歧函数.md`
   - 依赖：T56；被引用：—
-- [link: "统一函数总表/0556-T57-认知肌肉训练函数.md"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0556-T57-%E8%AE%A4%E7%9F%A5%E8%82%8C%E8%82%89%E8%AE%AD%E7%BB%83%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-28001725c64ee2d9 / link: "统一函数总表/0556-T57-认知肌肉训练函数.md"
-  - 来源：`统一函数总表/0556-T57-认知肌肉训练函数.md`
-  - 依赖：T57；被引用：—
-- [link: "统一函数总表/0557-D542-植物蛋白质网络函数.md"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0557-D542-%E6%A4%8D%E7%89%A9%E8%9B%8B%E7%99%BD%E8%B4%A8%E7%BD%91%E7%BB%9C%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-2b011a41baa3ec0d / link: "统一函数总表/0557-D542-植物蛋白质网络函数.md"
-  - 来源：`统一函数总表/0557-D542-植物蛋白质网络函数.md`
-  - 依赖：D542；被引用：—

@@ -4,6 +4,46 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [def test_representation_type_rejected(self):](../../../function-os-candidate/v0.2/tests/test_n2_robust.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-6AF4B0280D74DD85 / def test_representation_type_rejected(self): / IMPLICIT-6AF4B0280D74DD85
+  - 来源：`function-os-candidate/v0.2/tests/test_n2_robust.py`
+  - 依赖：—；被引用：—
+- [def test_representation_type_unsupported(self):](../../../function-os-candidate/v0.2/tests/test_n3_robust.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-56127351C487B44B / def test_representation_type_unsupported(self): / IMPLICIT-56127351C487B44B
+  - 来源：`function-os-candidate/v0.2/tests/test_n3_robust.py`
+  - 依赖：—；被引用：—
+- [def test_reproduction_dimension_cannot_hide_non_defect_label():](../../../tests/test_failure_case_evidence_gate.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-4E162083DE27713E / def test_reproduction_dimension_cannot_hide_non_defect_label(): / IMPLICIT-4E162083DE27713E
+  - 来源：`tests/test_failure_case_evidence_gate.py`
+  - 依赖：—；被引用：—
+- [def test_request_schema_positive_and_negative_instances(self):](../../../tests/test_stage_snapshot_publication.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-F9192CB3CCE071C0 / def test_request_schema_positive_and_negative_instances(self): / IMPLICIT-F9192CB3CCE071C0
+  - 来源：`tests/test_stage_snapshot_publication.py`
+  - 依赖：—；被引用：—
+- [def test_resolve_for_request_reads_task_id(self):](../../../tests/test_era_resolver_generalization.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-0917526F0BAB03D1 / def test_resolve_for_request_reads_task_id(self): / IMPLICIT-0917526F0BAB03D1
+  - 来源：`tests/test_era_resolver_generalization.py`
+  - 依赖：—；被引用：—
+- [def test_resolver_reproduces_ci_era_ref(self):](../../../tests/test_era_resolver_generalization.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-4B6E40AFF56B9AD1 / def test_resolver_reproduces_ci_era_ref(self): / IMPLICIT-4B6E40AFF56B9AD1
+  - 来源：`tests/test_era_resolver_generalization.py`
+  - 依赖：—；被引用：—
+- [def test_restore_to_current_without_review_fails(self):](../../../tests/test_propagation_reconciliation.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-CA14A59FE098A85B / def test_restore_to_current_without_review_fails(self): / IMPLICIT-CA14A59FE098A85B
+  - 来源：`tests/test_propagation_reconciliation.py`
+  - 依赖：—；被引用：—
+- [def test_retired_deployed_reader_is_absent(self):](../../../tests/test_human_front_door.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-3CDD8353FB682633 / def test_retired_deployed_reader_is_absent(self): / IMPLICIT-3CDD8353FB682633
+  - 来源：`tests/test_human_front_door.py`
+  - 依赖：—；被引用：—
 - [def test_reversed_relation_and_activation_intervals_are_rejected():](../../../tests/test_adaptive_relational_network_validation_contract.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-B3D84C4BF411A96D / def test_reversed_relation_and_activation_intervals_are_rejected(): / IMPLICIT-B3D84C4BF411A96D
@@ -2463,44 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-43933001f63b7120 / ev_path = evidence.get("source_path")
   - 来源：`tools/operations/compute_change_propagation.py`
-  - 依赖：—；被引用：—
-- [even if a hypothetical tag reference were absent, the run evidence still terminates it.](../../../tests/iteration_planner/test_completion_reconciliation.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-a1f49709fd3ea3d8 / even if a hypothetical tag reference were absent, the run evidence still terminates it.
-  - 来源：`tests/iteration_planner/test_completion_reconciliation.py`
-  - 依赖：—；被引用：—
-- [Even with a near-perfect vector, a failing hard gate blocks STOP_SUFFICIENT.](../../../tests/test_deep_research_round4.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-01f53344f7ecbcc4 / Even with a near-perfect vector, a failing hard gate blocks STOP_SUFFICIENT.
-  - 来源：`tests/test_deep_research_round4.py`
-  - 依赖：—；被引用：—
-- [Every ACCEPTED relation declares: type, evidence (source location), confidence.](../../../tools/build_corpus_relation_graph.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-2d02b971a672d0f8 / Every ACCEPTED relation declares: type, evidence (source location), confidence.
-  - 来源：`tools/build_corpus_relation_graph.py`
-  - 依赖：—；被引用：—
-- [Every computable distribution is representable by a stochastic lambda expression, motivating the broader universality th](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-80e505add4e82e9e / Every computable distribution is representable by a stochastic lambda expression, motivating the broader universality th
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
-  - 依赖：—；被引用：—
-- [Every ledger entry is VALIDATED against the live authoritative artifact; on any](../../../tools/iteration_planner/completion_state.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-9437aad4c1191024 / Every ledger entry is VALIDATED against the live authoritative artifact; on any
-  - 来源：`tools/iteration_planner/completion_state.py`
-  - 依赖：—；被引用：—
-- [Every positive conclusion must include the strongest remaining alternative explanation or residual counterevidence unles](../../../docs/governance/non-sycophancy-output-protocol.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-5f27bc8321217208 / Every positive conclusion must include the strongest remaining alternative explanation or residual counterevidence unles
-  - 来源：`docs/governance/non-sycophancy-output-protocol.md`
-  - 依赖：—；被引用：—
-- [Every record in data/external-research/104-source-registry.jsonl that asserts crossref_verified:true corresponds to a DO](../../../evidence-program/preregistration/IGNITION-EVIDENCE-PILOT-R1-CROSSREF-DOI-VERIFICATION.prereg.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-7b3eaa88e18f240c / Every record in data/external-research/104-source-registry.jsonl that asserts crossref_verified:true corresponds to a DO
-  - 来源：`evidence-program/preregistration/IGNITION-EVIDENCE-PILOT-R1-CROSSREF-DOI-VERIFICATION.prereg.json`
-  - 依赖：—；被引用：—
-- [Every triggered external surface now has an individual attestation record. A global true value cannot hide a missing, pe](../../../reports/operations/121Q25C-lifecycle-gate-deadlock-repair.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-da15a6da880caf1c / Every triggered external surface now has an individual attestation record. A global true value cannot hide a missing, pe
-  - 来源：`reports/operations/121Q25C-lifecycle-gate-deadlock-repair.md`
   - 依赖：—；被引用：—

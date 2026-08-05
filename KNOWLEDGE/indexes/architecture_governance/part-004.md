@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [def _current_head() -> str:](../../../tests/test_seal_freshness.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-95D9E03BBF338329 / def _current_head() -> str: / IMPLICIT-95D9E03BBF338329
+  - 来源：`tests/test_seal_freshness.py`
+  - 依赖：—；被引用：—
+- [def _derive_capabilities(self, spec: dict) -> list:](../../../function-os-candidate/v0.1/function_os/n4_artifact_packager.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-576EBFA7ECBF397F / def _derive_capabilities(self, spec: dict) -> list: / IMPLICIT-576EBFA7ECBF397F
+  - 来源：`function-os-candidate/v0.1/function_os/n4_artifact_packager.py`
+  - 依赖：—；被引用：—
 - [def _derive_expected(self, source_category):](../../../tools/governance/fail_closed_publication_gate.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-0F784CE6BDE9A521 / def _derive_expected(self, source_category): / IMPLICIT-0F784CE6BDE9A521
@@ -1799,6 +1809,11 @@
   - 可搜索名称：IMPLICIT-EF7F636BF9DF6A6A / def check(self, spec: dict) -> List\[Dict\]: / IMPLICIT-EF7F636BF9DF6A6A
   - 来源：`function-os-candidate/v0.1/function_os/n1_semantic_checker.py`
   - 依赖：—；被引用：—
+- [def check_against_committed(repo_root: str, target: str = None) -> bool:](../../../tools/propagation/current_truth_projection.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-3B2F84B468FEA2F1 / def check_against_committed(repo_root: str, target: str = None) -> bool: / IMPLICIT-3B2F84B468FEA2F1
+  - 来源：`tools/propagation/current_truth_projection.py`
+  - 依赖：—；被引用：—
 - [def check_diff_coverage(authority: dict, request: dict, base: str, era_ref: str = None) -> None:](../../../tools/operations/validate_generated_output_authority.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-40201204011A8921 / def check_diff_coverage(authority: dict, request: dict, base: str, era_ref: str = None) -> None: / IMPLICIT-40201204011A8921
@@ -2488,19 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-002500F5C5751BA0 / def evaluate_fixtures(fixtures: list\[dict\[str, Any\]\]) -> tuple\[FixtureMetrics, list\[str\], set\[str\], set\[str\]\]: / IMPLICIT-002500F5C5751BA0
   - 来源：`tools/language_thought/validate_language_thought.py`
-  - 依赖：—；被引用：—
-- [def evaluate_gates(ep: dict, diagnosis: dict \| None = None) -> dict:](../../../tools/research_os/gates.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-DD7E9B20B533ADC6 / def evaluate_gates(ep: dict, diagnosis: dict \| None = None) -> dict: / IMPLICIT-DD7E9B20B533ADC6
-  - 来源：`tools/research_os/gates.py`
-  - 依赖：—；被引用：—
-- [def evaluate_machine_eligibility(gates: list\[GateResult\]) -> bool:](../../../inputs/020/validate_formal_protocol.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-26BE719DCCA015A7 / def evaluate_machine_eligibility(gates: list\[GateResult\]) -> bool: / IMPLICIT-26BE719DCCA015A7
-  - 来源：`inputs/020/validate_formal_protocol.py`
-  - 依赖：—；被引用：—
-- [def evaluate_sufficiency(ep: dict, thresholds: Optional\[dict\] = None) -> dict:](../../../tools/deep_research/episode_loop.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-A82DBC5827F223EC / def evaluate_sufficiency(ep: dict, thresholds: Optional\[dict\] = None) -> dict: / IMPLICIT-A82DBC5827F223EC
-  - 来源：`tools/deep_research/episode_loop.py`
   - 依赖：—；被引用：—

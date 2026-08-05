@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [\| \[D397\]( ) \| \[两步策略最优性证明函数\]( ) \| F_{D397}(x) := M14的D280两步策略是最小化T_](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-02ccdbb700b38bfc / \| \[D397\]( ) \| \[两步策略最优性证明函数\]( ) \| F_{D397}(x) := M14的D280两步策略是最小化T_
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：D280, D397；被引用：—
+- [\| \[D39\]( ) \| \[统一内部驱动力函数\]( ) \| F_{D39}(x) := P_internal = k×ε×exp(-ε/ε_op](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-e396cf5026b6f7b2 / \| \[D39\]( ) \| \[统一内部驱动力函数\]( ) \| F_{D39}(x) := P_internal = k×ε×exp(-ε/ε_op
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：D39；被引用：—
 - [\| \[D400\]( ) \| \[集中性-序参量统一函数\]( ) \| F_{D400}(x) := M3的I_concentration](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-2948f5783ed55ebc / \| \[D400\]( ) \| \[集中性-序参量统一函数\]( ) \| F_{D400}(x) := M3的I_concentration
@@ -2475,14 +2485,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-b5876a4aa3ad8a00 / 两个反向单调函数相乘必然生成倒U型
   - 来源：`data/foundation/formal-objects/objects.jsonl`
-  - 依赖：—；被引用：—
-- [两个反向单调函数相乘必然生成倒U型](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0026-T16-%E4%B8%A4%E4%B8%AA%E5%8F%8D%E5%90%91%E5%8D%95%E8%B0%83%E5%87%BD%E6%95%B0%E7%9B%B8%E4%B9%98%E5%BF%85%E7%84%B6%E7%94%9F%E6%88%90%E5%80%92U%E5%9E%8B.md)
-  - 类型/状态：`FUNCTION_ASSET` · `DOWNGRADE_TO_CONJECTURE`
-  - 可搜索名称：T16 / 两个反向单调函数相乘必然生成倒U型 / T16
-  - 来源：`统一函数总表/0026-T16-两个反向单调函数相乘必然生成倒U型.md`
-  - 依赖：—；被引用：NFC-192ebc1af63705d1, NFC-1952548277feb215, NFC-26519263268268ff, NFC-30e55649eb7b1370
-- [两个反向单调函数相乘必然生成倒U型 / two oppositely monotone functions multiplied together necessarily generate an inverted-U curve](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-41f9ae8fb1ac6ecb / 两个反向单调函数相乘必然生成倒U型 / two oppositely monotone functions multiplied together necessarily generate an inverted-U curve
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：—；被引用：—

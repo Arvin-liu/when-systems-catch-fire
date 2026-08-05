@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [验证器（validate_formal_protocol.py）读取的机器字段（dimension/examples/role_in_P_meta/relation_to_Psi0）与 020 Schema（formal-protocol-](../../../inputs/021/upstream-conflict-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-9b3f6608496ff6b0 / 验证器（validate_formal_protocol.py）读取的机器字段（dimension/examples/role_in_P_meta/relation_to_Psi0）与 020 Schema（formal-protocol-
+  - 来源：`inputs/021/upstream-conflict-audit.md`
+  - 依赖：—；被引用：—
+- [验证层**：决定事实 / 证明 / 实验 / 语义审读 / 外部证据是否足够。](../../../docs/governance/charter-system-r1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-17bb8213ccaee2af / 验证层**：决定事实 / 证明 / 实验 / 语义审读 / 外部证据是否足够。
+  - 来源：`docs/governance/charter-system-r1.md`
+  - 依赖：—；被引用：—
 - [验证层：决定事实、证明、实验、语义审读和外部证据是否足够。](../../../docs/governance/life-community-value-charter.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-23771b4e47609df9 / 验证层：决定事实、证明、实验、语义审读和外部证据是否足够。

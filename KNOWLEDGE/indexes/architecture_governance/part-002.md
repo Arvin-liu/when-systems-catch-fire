@@ -2459,6 +2459,11 @@
   - 可搜索名称：NFC-86610e3f4996582f / against that same event-sourced terminal truth; otherwise a legitimate
   - 来源：`tools/propagation/validate_reconciliation.py`
   - 依赖：—；被引用：—
+- [against the *committed* file, never against the freshly-written file.](../../../tools/propagation/current_truth_projection.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-fcdaa56578c71c2f / against the *committed* file, never against the freshly-written file.
+  - 来源：`tools/propagation/current_truth_projection.py`
+  - 依赖：—；被引用：—
 - [AI / 计算机科学是中等风险领域。AI 领域尤其需要区分 demo、benchmark、真实部署效果。不能替代实验、代码、benchmark、可复现评测。](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-ab794a3409199f05 / AI / 计算机科学是中等风险领域。AI 领域尤其需要区分 demo、benchmark、真实部署效果。不能替代实验、代码、benchmark、可复现评测。
@@ -2497,10 +2502,5 @@
 - [AI 界和计算机科学界通过实验研究、理论分析、跨学科研究等方法研究 AI 泛化能力问题。主流观点认为 AI 泛化能力是由数据、模型、架构等多重因素共同促成。](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-b888e61097d91bf1 / AI 界和计算机科学界通过实验研究、理论分析、跨学科研究等方法研究 AI 泛化能力问题。主流观点认为 AI 泛化能力是由数据、模型、架构等多重因素共同促成。
-  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [AI 界和计算机科学界通过实验研究、理论分析、跨学科研究等方法研究大模型涌现问题。主流观点认为大模型涌现是真实的，但存在测量方法和解释上的争议。](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-f5802b5b4aedfeb5 / AI 界和计算机科学界通过实验研究、理论分析、跨学科研究等方法研究大模型涌现问题。主流观点认为大模型涌现是真实的，但存在测量方法和解释上的争议。
   - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
   - 依赖：—；被引用：—

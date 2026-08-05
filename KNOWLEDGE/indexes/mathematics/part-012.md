@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Within the source-defined scope, 法条净效应函数 is adjudicated as RELATION: 法条净效应，遮蔽模糊、退出成本增益、法条刚性的平衡。. This is a model-interna](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D20 / Within the source-defined scope, 法条净效应函数 is adjudicated as RELATION: 法条净效应，遮蔽模糊、退出成本增益、法条刚性的平衡。. This is a model-interna
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 法治度 is adjudicated as METRIC: 法治度，退出权信号、宪法硬度、司法独立、法条净效应的乘积。. This is a model-internal c](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D23 / Within the source-defined scope, 法治度 is adjudicated as METRIC: 法治度，退出权信号、宪法硬度、司法独立、法条净效应的乘积。. This is a model-internal c
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
 - [Within the source-defined scope, 涨落-耗散定理-门槛函数 is adjudicated as FORMAL_PROPOSITION: 涨落-耗散定理-门槛函数，涨落-耗散定理⟨x²⟩∝χ描述门控面Λ的涨落与](../../../data/foundation/adjudications/core-kernel.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
   - 可搜索名称：CLAIM-D205 / Within the source-defined scope, 涨落-耗散定理-门槛函数 is adjudicated as FORMAL_PROPOSITION: 涨落-耗散定理-门槛函数，涨落-耗散定理⟨x²⟩∝χ描述门控面Λ的涨落与
@@ -2485,13 +2495,3 @@
   - 可搜索名称：NFC-4984361c427c6861 / \| \[D396\]( ) \| \[延迟临界-不可逆点统一函数\]( ) \| F_{D396}(x) := F_{D396}: X_
   - 来源：`统一函数总表/INDEX.md`
   - 依赖：D396；被引用：—
-- [\| \[D397\]( ) \| \[两步策略最优性证明函数\]( ) \| F_{D397}(x) := M14的D280两步策略是最小化T_](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-02ccdbb700b38bfc / \| \[D397\]( ) \| \[两步策略最优性证明函数\]( ) \| F_{D397}(x) := M14的D280两步策略是最小化T_
-  - 来源：`统一函数总表/INDEX.md`
-  - 依赖：D280, D397；被引用：—
-- [\| \[D39\]( ) \| \[统一内部驱动力函数\]( ) \| F_{D39}(x) := P_internal = k×ε×exp(-ε/ε_op](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-e396cf5026b6f7b2 / \| \[D39\]( ) \| \[统一内部驱动力函数\]( ) \| F_{D39}(x) := P_internal = k×ε×exp(-ε/ε_op
-  - 来源：`统一函数总表/INDEX.md`
-  - 依赖：D39；被引用：—

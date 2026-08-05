@@ -4,6 +4,91 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0035-C-35-罗斯福新政.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0035-C-35-%E7%BD%97%E6%96%AF%E7%A6%8F%E6%96%B0%E6%94%BF.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-622f08ba7818bf04 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0035-C-35-罗斯福新政.md`
+  - 来源：`统一案例总表/0035-C-35-罗斯福新政.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0036-C-36-中国土地改革.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0036-C-36-%E4%B8%AD%E5%9B%BD%E5%9C%9F%E5%9C%B0%E6%94%B9%E9%9D%A9.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-d9ece90620c5b929 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0036-C-36-中国土地改革.md`
+  - 来源：`统一案例总表/0036-C-36-中国土地改革.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0037-C-37-韩国新村运动.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0037-C-37-%E9%9F%A9%E5%9B%BD%E6%96%B0%E6%9D%91%E8%BF%90%E5%8A%A8.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-fb65acd782158bbd / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0037-C-37-韩国新村运动.md`
+  - 来源：`统一案例总表/0037-C-37-韩国新村运动.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0038-C-38-北欧福利国家.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0038-C-38-%E5%8C%97%E6%AC%A7%E7%A6%8F%E5%88%A9%E5%9B%BD%E5%AE%B6.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-7d531684042ae2e4 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0038-C-38-北欧福利国家.md`
+  - 来源：`统一案例总表/0038-C-38-北欧福利国家.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0039-C-39-美国禁酒令.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0039-C-39-%E7%BE%8E%E5%9B%BD%E7%A6%81%E9%85%92%E4%BB%A4.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-b70253e03b3bf3e5 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0039-C-39-美国禁酒令.md`
+  - 来源：`统一案例总表/0039-C-39-美国禁酒令.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0040-C-40-中国计划生育.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0040-C-40-%E4%B8%AD%E5%9B%BD%E8%AE%A1%E5%88%92%E7%94%9F%E8%82%B2.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-7f0229a9311bfe59 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0040-C-40-中国计划生育.md`
+  - 来源：`统一案例总表/0040-C-40-中国计划生育.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0041-C-41-英国NHS.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0041-C-41-%E8%8B%B1%E5%9B%BDNHS.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-c18a0ed5f668214d / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0041-C-41-英国NHS.md`
+  - 来源：`统一案例总表/0041-C-41-英国NHS.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0042-C-42-洋务运动.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0042-C-42-%E6%B4%8B%E5%8A%A1%E8%BF%90%E5%8A%A8.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-d05ae11e1bf8e755 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0042-C-42-洋务运动.md`
+  - 来源：`统一案例总表/0042-C-42-洋务运动.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0043-C-43-坦志麦特改革.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0043-C-43-%E5%9D%A6%E5%BF%97%E9%BA%A6%E7%89%B9%E6%94%B9%E9%9D%A9.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-fbca47de105e0cfe / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0043-C-43-坦志麦特改革.md`
+  - 来源：`统一案例总表/0043-C-43-坦志麦特改革.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0044-C-44-亚历山大二世废奴.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0044-C-44-%E4%BA%9A%E5%8E%86%E5%B1%B1%E5%A4%A7%E4%BA%8C%E4%B8%96%E5%BA%9F%E5%A5%B4.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-03b3617394e20f3d / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0044-C-44-亚历山大二世废奴.md`
+  - 来源：`统一案例总表/0044-C-44-亚历山大二世废奴.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0045-C-45-南非转型.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0045-C-45-%E5%8D%97%E9%9D%9E%E8%BD%AC%E5%9E%8B.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-26058d04f0946461 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0045-C-45-南非转型.md`
+  - 来源：`统一案例总表/0045-C-45-南非转型.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0046-C-46-欧盟.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0046-C-46-%E6%AC%A7%E7%9B%9F.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-8c313da1b0e74e2d / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0046-C-46-欧盟.md`
+  - 来源：`统一案例总表/0046-C-46-欧盟.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0047-C-47-庇隆主义.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0047-C-47-%E5%BA%87%E9%9A%86%E4%B8%BB%E4%B9%89.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-c955411a49a71b26 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0047-C-47-庇隆主义.md`
+  - 来源：`统一案例总表/0047-C-47-庇隆主义.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0048-C-48-王安石变法.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0048-C-48-%E7%8E%8B%E5%AE%89%E7%9F%B3%E5%8F%98%E6%B3%95.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-f5d5bbcd8916b9fa / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0048-C-48-王安石变法.md`
+  - 来源：`统一案例总表/0048-C-48-王安石变法.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0049-C-49-凯末尔改革.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0049-C-49-%E5%87%AF%E6%9C%AB%E5%B0%94%E6%94%B9%E9%9D%A9.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-138c2499ddf209f1 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0049-C-49-凯末尔改革.md`
+  - 来源：`统一案例总表/0049-C-49-凯末尔改革.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0050-C-50-华为员工持股.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0050-C-50-%E5%8D%8E%E4%B8%BA%E5%91%98%E5%B7%A5%E6%8C%81%E8%82%A1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-4f8ddbe189a77496 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0050-C-50-华为员工持股.md`
+  - 来源：`统一案例总表/0050-C-50-华为员工持股.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0051-C-51-丰田生产方式.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0051-C-51-%E4%B8%B0%E7%94%B0%E7%94%9F%E4%BA%A7%E6%96%B9%E5%BC%8F.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-5d6a1a0733b48d18 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0051-C-51-丰田生产方式.md`
+  - 来源：`统一案例总表/0051-C-51-丰田生产方式.md`
+  - 依赖：—；被引用：—
 - [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0052-C-52-奈飞文化.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0052-C-52-%E5%A5%88%E9%A3%9E%E6%96%87%E5%8C%96.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-1e94ca7c085b7765 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0052-C-52-奈飞文化.md`
@@ -2418,89 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-ab76e9f3ce8daa64 / 可机器验证的 Claim Delta、影响分析和证据谱系变化；
   - 来源：`CONTRIBUTING.md`
-  - 依赖：—；被引用：—
-- [可用于碰撞：`domain`、`valid_claim_types`、`max_claim_level_without_external_evidence`、`pending_conditions`、`forbidden_claims`](../../../docs/p1-data-index-map-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-1b08d025a21f276f / 可用于碰撞：`domain`、`valid_claim_types`、`max_claim_level_without_external_evidence`、`pending_conditions`、`forbidden_claims`
-  - 来源：`docs/p1-data-index-map-20260708.md`
-  - 依赖：—；被引用：—
-- [可用于碰撞：`title`（匹配对象名）、`domain`、`claim_level_max`（最高可声明层级）、`pending_required`、`related_failure_types`、`related_evidence_re](../../../docs/p1-data-index-map-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-2510b1878fdf3b77 / 可用于碰撞：`title`（匹配对象名）、`domain`、`claim_level_max`（最高可声明层级）、`pending_required`、`related_failure_types`、`related_evidence_re
-  - 来源：`docs/p1-data-index-map-20260708.md`
-  - 依赖：—；被引用：—
-- [可观察变化：** `在修` 被写成 `修好了`；无终点活动被包装成完成任务；过去推断变成现在事实。](../../../docs/language-thought/dimensional-basis.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-a077764dd5a6b352 / 可观察变化：** `在修` 被写成 `修好了`；无终点活动被包装成完成任务；过去推断变成现在事实。
-  - 来源：`docs/language-thought/dimensional-basis.md`
-  - 依赖：—；被引用：—
-- [可观察变化：** 先说结论改成先落事件；背景从句变主断言；预设被写成新证据。](../../../docs/language-thought/dimensional-basis.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-b8444c8a2748f592 / 可观察变化：** 先说结论改成先落事件；背景从句变主断言；预设被写成新证据。
-  - 来源：`docs/language-thought/dimensional-basis.md`
-  - 依赖：—；被引用：—
-- [可观察变化：** 零主语被随意补成某人；代词指向漂移；为了避免重复而删掉必要区分。](../../../docs/language-thought/dimensional-basis.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-bb29c4488c44ae70 / 可观察变化：** 零主语被随意补成某人；代词指向漂移；为了避免重复而删掉必要区分。
-  - 来源：`docs/language-thought/dimensional-basis.md`
-  - 依赖：—；被引用：—
-- [各数据集字段](../../../docs/p1-data-index-map-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-39f98085d3b8045c / 各数据集字段
-  - 来源：`docs/p1-data-index-map-20260708.md`
-  - 依赖：—；被引用：—
-- [合并“如何开始 / 使用说明 / AI 使用指南”为统一使用指南；](../../../CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-d2a516dbefc5bc06 / 合并“如何开始 / 使用说明 / AI 使用指南”为统一使用指南；
-  - 来源：`CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [同质组合与异质组合权衡验证](../../../data/foundation/evidence/evidence.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-556ad0ebf42b244e / 同质组合与异质组合权衡验证
-  - 来源：`data/foundation/evidence/evidence.jsonl`
-  - 依赖：—；被引用：—
-- [后续 UNESCO 学科深跑时，每个学科都需要先建立证据制度卡片。证据制度库提供了统一的模板和标准，确保不同学科的深跑质量一致。同时，证据制度库可以帮助识别高风险领域，避免误判。](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-b80805727b372754 / 后续 UNESCO 学科深跑时，每个学科都需要先建立证据制度卡片。证据制度库提供了统一的模板和标准，确保不同学科的深跑质量一致。同时，证据制度库可以帮助识别高风险领域，避免误判。
-  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [后续扩展到更多学科前，应先完成证据制度库；](../../../docs/discipline_kernel_pilot.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-db38ebda18875c2a / 后续扩展到更多学科前，应先完成证据制度库；
-  - 来源：`docs/discipline_kernel_pilot.md`
-  - 依赖：—；被引用：—
-- [后续每个学科深跑前，应先建立或引用对应证据制度卡片。](../../../docs/evidence_regime_library.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-cea7659fe6076c3d / 后续每个学科深跑前，应先建立或引用对应证据制度卡片。
-  - 来源：`docs/evidence_regime_library.md`
-  - 依赖：—；被引用：—
-- [后续需要的证据或验证](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-fe5624b616a8b8f3 / 后续需要的证据或验证
-  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [后续需要的证据或验证。](../../../docs/discipline_kernel_pilot.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-ef2bb7ae38431ee1 / 后续需要的证据或验证。
-  - 来源：`docs/discipline_kernel_pilot.md`
-  - 依赖：—；被引用：—
-- [后续需要的证据或验证；](../../../docs/classic_problems_benchmark.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-accf5c55a962c74f / 后续需要的证据或验证；
-  - 来源：`docs/classic_problems_benchmark.md`
-  - 依赖：—；被引用：—
-- [否。E1 限定低耦合可预测域并设非线性退出；E2 须配预防/沙盒/上限；E3 区分良/恶性循环；E4 防强制同质化与过早收敛。四者按情境互补，无任一被设为绝对优先。PASS。](../../../docs/governance/meta-protocol-reviews/cross-protocol-red-team.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-f2adf28ddd577708 / 否。E1 限定低耦合可预测域并设非线性退出；E2 须配预防/沙盒/上限；E3 区分良/恶性循环；E4 防强制同质化与过早收敛。四者按情境互补，无任一被设为绝对优先。PASS。
-  - 来源：`docs/governance/meta-protocol-reviews/cross-protocol-red-team.md`
-  - 依赖：—；被引用：—
-- [吴军财富规划笔记碰撞验证](../../../data/foundation/evidence/evidence.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-b319f0e40323d51e / 吴军财富规划笔记碰撞验证
-  - 来源：`data/foundation/evidence/evidence.jsonl`
-  - 依赖：—；被引用：—
-- [命中的 `related_*` 字段 → 顺着关联键拉出 failure_typology、evidence_regimes、publication_risk_rules。](../../../docs/p1-data-index-map-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-4c49757004b72bd6 / 命中的 `related_*` 字段 → 顺着关联键拉出 failure_typology、evidence_regimes、publication_risk_rules。
-  - 来源：`docs/p1-data-index-map-20260708.md`
   - 依赖：—；被引用：—

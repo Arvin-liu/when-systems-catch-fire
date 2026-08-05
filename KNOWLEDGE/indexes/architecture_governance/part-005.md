@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [def evaluate_gates(ep: dict, diagnosis: dict \| None = None) -> dict:](../../../tools/research_os/gates.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-DD7E9B20B533ADC6 / def evaluate_gates(ep: dict, diagnosis: dict \| None = None) -> dict: / IMPLICIT-DD7E9B20B533ADC6
+  - 来源：`tools/research_os/gates.py`
+  - 依赖：—；被引用：—
+- [def evaluate_machine_eligibility(gates: list\[GateResult\]) -> bool:](../../../inputs/020/validate_formal_protocol.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-26BE719DCCA015A7 / def evaluate_machine_eligibility(gates: list\[GateResult\]) -> bool: / IMPLICIT-26BE719DCCA015A7
+  - 来源：`inputs/020/validate_formal_protocol.py`
+  - 依赖：—；被引用：—
+- [def evaluate_sufficiency(ep: dict, thresholds: Optional\[dict\] = None) -> dict:](../../../tools/deep_research/episode_loop.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-A82DBC5827F223EC / def evaluate_sufficiency(ep: dict, thresholds: Optional\[dict\] = None) -> dict: / IMPLICIT-A82DBC5827F223EC
+  - 来源：`tools/deep_research/episode_loop.py`
+  - 依赖：—；被引用：—
 - [def event_count(ep: dict) -> int:](../../../tools/research_os/kernel.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-DCFD445B702DC940 / def event_count(ep: dict) -> int: / IMPLICIT-DCFD445B702DC940
@@ -2488,19 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-82432091FB117374 / def queue_step(queue: Q.SerialQueue, controller: E.EpisodeController, / IMPLICIT-82432091FB117374
   - 来源：`tools/deep_research/cli.py`
-  - 依赖：—；被引用：—
-- [def rank_candidates(candidates: list\[dict\]) -> list\[tuple\[float, dict\]\]:](../../../tools/deep_research/queue_runtime.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-B878B96AB139B7BD / def rank_candidates(candidates: list\[dict\]) -> list\[tuple\[float, dict\]\]: / IMPLICIT-B878B96AB139B7BD
-  - 来源：`tools/deep_research/queue_runtime.py`
-  - 依赖：—；被引用：—
-- [def rank_score(candidate: dict) -> float:](../../../tools/deep_research/queue_runtime.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-88F1CC8EB5A4C935 / def rank_score(candidate: dict) -> float: / IMPLICIT-88F1CC8EB5A4C935
-  - 来源：`tools/deep_research/queue_runtime.py`
-  - 依赖：—；被引用：—
-- [def raw_retraction(value: str \| None) -> str:](../../../data/operations/iterations/110/openalex/adjudicate_first_run.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-D33B4A933DE9C35D / def raw_retraction(value: str \| None) -> str: / IMPLICIT-D33B4A933DE9C35D
-  - 来源：`data/operations/iterations/110/openalex/adjudicate_first_run.py`
   - 依赖：—；被引用：—

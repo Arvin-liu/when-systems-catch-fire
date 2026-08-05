@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [统一函数总表/0086-D37-点火对冲函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-b6a32a782ddcf3a3 / 统一函数总表/0086-D37-点火对冲函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D37；被引用：—
+- [统一函数总表/0087-D38-跨层完整退化,6因子乘法,杠杆排序.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-2d9877b9d00fd818 / 统一函数总表/0087-D38-跨层完整退化,6因子乘法,杠杆排序.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D38；被引用：—
 - [统一函数总表/0088-D39-统一内部驱动力函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-e40d640a4367ad71 / 统一函数总表/0088-D39-统一内部驱动力函数.md
@@ -2494,13 +2504,3 @@
   - 可搜索名称：NFC-77c0ea78e6618668 / 统一函数总表/0582-D572-退出权验证.md
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：D572；被引用：—
-- [统一函数总表/0583-D573-财务决策不完备性.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-c104368afe908bfb / 统一函数总表/0583-D573-财务决策不完备性.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D573；被引用：—
-- [统一函数总表/0584-D574-财务教育框架化.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：NFC-3f3b77ec85ba9bc8 / 统一函数总表/0584-D574-财务教育框架化.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D574；被引用：—

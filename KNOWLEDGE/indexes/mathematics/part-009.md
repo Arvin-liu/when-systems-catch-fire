@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [proof. A later same-number continuation absorbs R2 results and performs final](../../../docs/research-os/OPERATING-GUIDE.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-e11ee815b4d1a7b1 / proof. A later same-number continuation absorbs R2 results and performs final
+  - 来源：`docs/research-os/OPERATING-GUIDE.md`
+  - 依赖：—；被引用：—
+- [proof.append("Declare quantifiers, carrier and existence/uniqueness status without forcing a multivalued relation into a](../../../tools/foundation/adjudicate_function_assets.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-667ce07deede46d9 / proof.append("Declare quantifiers, carrier and existence/uniqueness status without forcing a multivalued relation into a
+  - 来源：`tools/foundation/adjudicate_function_assets.py`
+  - 依赖：—；被引用：—
 - [proof.append("Declare source/target spaces and prove the claimed preserved structure, if any.")](../../../tools/foundation/adjudicate_function_assets.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-406ff42861a8eea1 / proof.append("Declare source/target spaces and prove the claimed preserved structure, if any.")
@@ -2491,13 +2501,3 @@
   - 可搜索名称：NFC-df1b47a5dca6c115 / title: "D158预测失效阈值函数"
   - 来源：`统一函数总表/0312-D276-D158预测失效阈值函数.md`
   - 依赖：D158；被引用：—
-- [title: "d_opt-σ_opt平衡稳定性函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0371-D335-d_opt-%CF%83_opt%E5%B9%B3%E8%A1%A1%E7%A8%B3%E5%AE%9A%E6%80%A7%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-D75984A385D340D7 / title: "d_opt-σ_opt平衡稳定性函数" / IMPLICIT-D75984A385D340D7
-  - 来源：`统一函数总表/0371-D335-d_opt-σ_opt平衡稳定性函数.md`
-  - 依赖：—；被引用：—
-- [title: "d_opt-σ_opt联合演化函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0357-D321-d_opt-%CF%83_opt%E8%81%94%E5%90%88%E6%BC%94%E5%8C%96%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-D6C10B9425944C18 / title: "d_opt-σ_opt联合演化函数" / IMPLICIT-D6C10B9425944C18
-  - 来源：`统一函数总表/0357-D321-d_opt-σ_opt联合演化函数.md`
-  - 依赖：—；被引用：—

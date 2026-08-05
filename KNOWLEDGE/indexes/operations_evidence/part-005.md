@@ -6,6 +6,56 @@
 
 - [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：A5049483847 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json / A5049483847 / A5001316926
+  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json`
+  - 依赖：—；被引用：—
+- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：A5049602140 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json / A5049602140 / A5001316926
+  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json`
+  - 依赖：—；被引用：—
+- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：A5050224974 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json / A5050224974 / A5001316926
+  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json`
+  - 依赖：—；被引用：—
+- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：A5051404063 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json / A5051404063 / A5001316926
+  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json`
+  - 依赖：—；被引用：—
+- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：A5056712523 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json / A5056712523 / A5001316926
+  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json`
+  - 依赖：—；被引用：—
+- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：A5056854008 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json / A5056854008 / A5001316926
+  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json`
+  - 依赖：—；被引用：—
+- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：A5059785745 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json / A5059785745 / A5001316926
+  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json`
+  - 依赖：—；被引用：—
+- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：A5060574653 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json / A5060574653 / A5001316926
+  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json`
+  - 依赖：—；被引用：—
+- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：A5060667008 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json / A5060667008 / A5001316926
+  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json`
+  - 依赖：—；被引用：—
+- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：A5061336502 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json / A5061336502 / A5001316926
+  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json`
+  - 依赖：—；被引用：—
+- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：A5061765954 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json / A5061765954 / A5001316926
   - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json`
   - 依赖：—；被引用：—
@@ -494,6 +544,21 @@
   - 可搜索名称：IMPLICIT-02FB41BF6172103F / def main() -> int: / IMPLICIT-02FB41BF6172103F / IMPLICIT-027F8B91980E723D
   - 来源：`tools/math_foundation_audit.py`
   - 依赖：—；被引用：—
+- [def test_check_detects_stale_projection_drift(self):](../../../tests/test_current_truth_projection_parity.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-4624d36f2d5581f9 / def test_check_detects_stale_projection_drift(self):
+  - 来源：`tests/test_current_truth_projection_parity.py`
+  - 依赖：—；被引用：—
+- [def test_projection_includes_terminal_110_114(self):](../../../tests/test_current_truth_projection_parity.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-33e336de35603bdf / def test_projection_includes_terminal_110_114(self):
+  - 来源：`tests/test_current_truth_projection_parity.py`
+  - 依赖：—；被引用：—
+- [def test_projection_only_folds_terminal_success(self):](../../../tests/test_current_truth_projection_parity.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-6b67efc6b6a1cd4a / def test_projection_only_folds_terminal_success(self):
+  - 来源：`tests/test_current_truth_projection_parity.py`
+  - 依赖：—；被引用：—
 - [def test_stale_projection_residue_blocks_ready(self):](../../../tests/test_iteration_sync.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-683aa17bd78d0d5f / def test_stale_projection_residue_blocks_ready(self):
@@ -503,6 +568,11 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-1A24B1C7178FED96 / def validate_entry(entry: dict) -> list\[str\]: / IMPLICIT-1A24B1C7178FED96 / IMPLICIT-AAD4C52E6FCDD714
   - 来源：`tools/math_foundation_audit.py`
+  - 依赖：—；被引用：—
+- [default: (re)generate and write the projection to disk](../../../tools/propagation/current_truth_projection.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-087a85ca5b21e2a6 / default: (re)generate and write the projection to disk
+  - 来源：`tools/propagation/current_truth_projection.py`
   - 依赖：—；被引用：—
 - [definitions = \[a for a in anchors if a.get("role") == "DEFINITION"\]](../../../tools/governance/build_knowledge_experience.py)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -809,6 +879,16 @@
   - 可搜索名称：NFC-7f18c236855f21f9 / expected_projection = "# Recent Stage Results / 正在炼化\\n\\n" + projection.split("\\n", 2)\[2\]
   - 来源：`tools/operations/stage_snapshot_contract.py`
   - 依赖：—；被引用：—
+- [f"iteration {tn} must be TERMINAL_SUCCESS in the projection",](../../../tests/test_current_truth_projection_parity.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-88deaf34c0a1f35e / f"iteration {tn} must be TERMINAL_SUCCESS in the projection",
+  - 来源：`tests/test_current_truth_projection_parity.py`
+  - 依赖：—；被引用：—
+- [f"{name} must run the shared current-truth projection --check gate (D3)",](../../../tests/test_current_truth_projection_parity.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-2f5eaa168ab51e7b / f"{name} must run the shared current-truth projection --check gate (D3)",
+  - 来源：`tests/test_current_truth_projection_parity.py`
+  - 依赖：D3；被引用：—
 - [f(R, C) = 0 ⟺ R=0 ∨ C=0](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0582-D572-%E9%80%80%E5%87%BA%E6%9D%83%E9%AA%8C%E8%AF%81.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-06E59C8B620D5AD7 / f(R, C) = 0 ⟺ R=0 ∨ C=0 / IMPLICIT-06E59C8B620D5AD7 / IMPLICIT-3659EF71A4F283D6
@@ -1004,6 +1084,11 @@
   - 可搜索名称：IMPLICIT-AB92BA4DD527D2D4 / F_theory(d)=O_d × R_d × E_d × Δ_t × Θ_d × V_d / IMPLICIT-AB92BA4DD527D2D4 / IMPLICIT-09037C50D537ABDA
   - 来源：`统一函数总表/0597-D587-学科理论核抽取函数.md`
   - 依赖：—；被引用：—
+- [Fail-closed: the projection must never present a non-terminal /](../../../tests/test_current_truth_projection_parity.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a398e14b38247873 / Fail-closed: the projection must never present a non-terminal /
+  - 来源：`tests/test_current_truth_projection_parity.py`
+  - 依赖：—；被引用：—
 - [failed_indexes = \[i for i, x in enumerate(records) if isinstance(x, dict) and x.get("end_status") == "failed"\]](../../../tools/operations/validate_incremental_execution.py)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-615BB631C44E6734 / failed_indexes = \[i for i, x in enumerate(records) if isinstance(x, dict) and x.get("end_status") == "failed"\] / IMPLICIT-615BB631C44E6734
@@ -1014,6 +1099,11 @@
   - 可搜索名称：IMPLICIT-AF5958341F391001 / failure=\["H_pro and Σ_compatibility are not measurable under a shared protocol", "argmax over heterogeneous sources is underspecified"\], / IMPLICIT-AF5958341F391001
   - 来源：`tools/foundation/build_080_queue.py`
   - 依赖：—；被引用：—
+- [Fixes D2 (was a self-comparison): the regenerated projection is compared](../../../tools/propagation/current_truth_projection.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-50aa9c6873bb86d3 / Fixes D2 (was a self-comparison): the regenerated projection is compared
+  - 来源：`tools/propagation/current_truth_projection.py`
+  - 依赖：D2；被引用：—
 - [for e in evs if e.get("event_type") in ("TERMINALIZATION_PROJECTION", "LEGACY_TERMINAL_SUCCESS")), None)](../../../tools/propagation/current_truth_projection.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-85be273b46e11b03 / for e in evs if e.get("event_type") in ("TERMINALIZATION_PROJECTION", "LEGACY_TERMINAL_SUCCESS")), None)
@@ -1589,10 +1679,10 @@
   - 可搜索名称：IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-NORMALIZED-SCHEMA-AND-AUTOMATION-VARIANT-NARROW-REPAIR-R2-20260726 typed change-propagation impact report / IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-NORMALIZED-SCHEMA-AND-AUTOMATION-VARIANT-NARROW-REPAIR-R2-20260726-change-propagation-impact
   - 来源：`reports/operations/IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-NORMALIZED-SCHEMA-AND-AUTOMATION-VARIANT-NARROW-REPAIR-R2-20260726-change-propagation-impact.md`
   - 依赖：—；被引用：—
-- [import current_truth_projection as ctp # noqa: E402](../../../tools/propagation/validate_reconciliation.py)
+- [import current_truth_projection as ctp # noqa: E402](../../../tests/test_current_truth_projection_parity.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-324fc007c64ad3a5 / import current_truth_projection as ctp # noqa: E402
-  - 来源：`tools/propagation/validate_reconciliation.py`
+  - 来源：`tests/test_current_truth_projection_parity.py`
   - 依赖：—；被引用：—
 - [in_frontmatter = bool(lines and lines\[0\].strip() == "---")](../../../tools/governance/build_knowledge_experience.py)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -2379,6 +2469,11 @@
   - 可搜索名称：IMPLICIT-03DE3FBBB41B42A9 / recovery_only = profile.get("rollback_policy") == "recovery_package_only" / IMPLICIT-03DE3FBBB41B42A9
   - 来源：`tools/operations/run_incremental_execution.py`
   - 依赖：—；被引用：—
+- [regeneration. A stale committed projection now fails closed here](../../../tools/propagation/current_truth_projection.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-8cac1ad89fecb05c / regeneration. A stale committed projection now fails closed here
+  - 来源：`tools/propagation/current_truth_projection.py`
+  - 依赖：—；被引用：—
 - [relation = next((item for item in topology.get("relations", \[\]) if item.get("relation_id") == "map_language_thought_zhiyuan"), None)](../../../data/operations/iterations/114/publication/tools/validate_publication.py)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-3C0F724825A54953 / relation = next((item for item in topology.get("relations", \[\]) if item.get("relation_id") == "map_language_thought_zhiyuan"), None) / IMPLICIT-3C0F724825A54953
@@ -2408,99 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-BDCCAA448ECBD1DE / require(_seal_map.get("groups") == _actual_groups, / IMPLICIT-BDCCAA448ECBD1DE
   - 来源：`tools/validate_iteration_sync.py`
-  - 依赖：—；被引用：—
-- [require(_seal_map.get("nodes") == _actual_nodes,](../../../tools/validate_iteration_sync.py)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-F7FDC15403AEA3BD / require(_seal_map.get("nodes") == _actual_nodes, / IMPLICIT-F7FDC15403AEA3BD
-  - 来源：`tools/validate_iteration_sync.py`
-  - 依赖：—；被引用：—
-- [require(all(_persisted.get(k) == delta.get(k) for k in _fields),](../../../tools/operations/compute_change_propagation.py)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-231C1B9F6C22BC0A / require(all(_persisted.get(k) == delta.get(k) for k in _fields), / IMPLICIT-231C1B9F6C22BC0A
-  - 来源：`tools/operations/compute_change_propagation.py`
-  - 依赖：—；被引用：—
-- [require(all(_persisted_delta.get(k) == delta.get(k) for k in _delta_fields),](../../../tools/validate_iteration_sync.py)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-25FD995BFDD1AC14 / require(all(_persisted_delta.get(k) == delta.get(k) for k in _delta_fields), / IMPLICIT-25FD995BFDD1AC14
-  - 来源：`tools/validate_iteration_sync.py`
-  - 依赖：—；被引用：—
-- [require(args.output.read_bytes() == rendered, "generated SVG is stale; run the generator")](../../../tools/generate_interactive_system_map.py)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-EA49511B06D61B79 / require(args.output.read_bytes() == rendered, "generated SVG is stale; run the generator") / IMPLICIT-EA49511B06D61B79
-  - 来源：`tools/generate_interactive_system_map.py`
-  - 依赖：—；被引用：—
-- [require(authority.get("propagation_topology") == "data/operations/change-propagation-topology.json", "map projection has wrong topology authority")](../../../tools/generate_interactive_system_map.py)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-ADF0CA9B1219FD1D / require(authority.get("propagation_topology") == "data/operations/change-propagation-topology.json", "map projection has wrong topology authority") / IMPLICIT-ADF0CA9B1219FD1D
-  - 来源：`tools/generate_interactive_system_map.py`
-  - 依赖：—；被引用：—
-- [require(branch_pr.get("merge_commit") == "0a13c246172c0338bf8dda5dc08db5a574a8b23f", "E_PHASE_E_MERGE", "Current lifecycle has wrong merge commit")](../../../tools/operations/validate_phase_e_candidate.py)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-BBDFC8EB6E78D1B5 / require(branch_pr.get("merge_commit") == "0a13c246172c0338bf8dda5dc08db5a574a8b23f", "E_PHASE_E_MERGE", "Current lifecycle has wrong merge commit") / IMPLICIT-BBDFC8EB6E78D1B5
-  - 来源：`tools/operations/validate_phase_e_candidate.py`
-  - 依赖：—；被引用：—
-- [require(candidate.get("status") == "CANDIDATE_PROJECTION_NOT_NEUTRAL_MEANING", f"{prefix}: normalized meaning must decla](../../../tools/language_thought/validate_language_thought.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-018b6886aea0b267 / require(candidate.get("status") == "CANDIDATE_PROJECTION_NOT_NEUTRAL_MEANING", f"{prefix}: normalized meaning must decla
-  - 来源：`tools/language_thought/validate_language_thought.py`
-  - 依赖：—；被引用：—
-- [require(candidate.get("status") == "CANDIDATE_PROJECTION_NOT_NEUTRAL_MEANING", f"{prefix}: normalized meaning must declare candidate status", errors)](../../../tools/language_thought/validate_language_thought.py)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-E9F65F770FA8FFE3 / require(candidate.get("status") == "CANDIDATE_PROJECTION_NOT_NEUTRAL_MEANING", f"{prefix}: normalized meaning must declare candidate status", errors) / IMPLICIT-E9F65F770FA8FFE3
-  - 来源：`tools/language_thought/validate_language_thought.py`
-  - 依赖：—；被引用：—
-- [require(contract.get("full_required_fields_authority") == "validator",](../../../tools/validate_iteration_sync.py)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-2A36709689811ECC / require(contract.get("full_required_fields_authority") == "validator", / IMPLICIT-2A36709689811ECC
-  - 来源：`tools/validate_iteration_sync.py`
-  - 依赖：—；被引用：—
-- [require(contract.get("schema_version") == "1.0.0",](../../../tools/validate_iteration_sync.py)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-C853B70A52BF7FB7 / require(contract.get("schema_version") == "1.0.0", / IMPLICIT-C853B70A52BF7FB7
-  - 来源：`tools/validate_iteration_sync.py`
-  - 依赖：—；被引用：—
-- [require(contract.get("validator_path") == "tools/validate_external_attestation.py",](../../../tools/validate_iteration_sync.py)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-F77D74F61425076A / require(contract.get("validator_path") == "tools/validate_external_attestation.py", / IMPLICIT-F77D74F61425076A
-  - 来源：`tools/validate_iteration_sync.py`
-  - 依赖：—；被引用：—
-- [require(delta.get("source_value") == source_frame\[dimension_id\], f"{delta_prefix}: source_value does not match source_frame", errors)](../../../tools/language_thought/validate_language_thought.py)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-52887C2C355B3689 / require(delta.get("source_value") == source_frame\[dimension_id\], f"{delta_prefix}: source_value does not match source_frame", errors) / IMPLICIT-52887C2C355B3689
-  - 来源：`tools/language_thought/validate_language_thought.py`
-  - 依赖：—；被引用：—
-- [require(delta.get("target_value") == target_frame\[dimension_id\], f"{delta_prefix}: target_value does not match target_frame", errors)](../../../tools/language_thought/validate_language_thought.py)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-552CA443406E6159 / require(delta.get("target_value") == target_frame\[dimension_id\], f"{delta_prefix}: target_value does not match target_frame", errors) / IMPLICIT-552CA443406E6159
-  - 来源：`tools/language_thought/validate_language_thought.py`
-  - 依赖：—；被引用：—
-- [require(demo.get("authority_fingerprint") == _expected_authority, "E_PHASE_E_AUTHORITY", "authority fingerprint mismatch")](../../../tools/operations/validate_phase_e_candidate.py)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-63009F9897AE5CD3 / require(demo.get("authority_fingerprint") == _expected_authority, "E_PHASE_E_AUTHORITY", "authority fingerprint mismatch") / IMPLICIT-63009F9897AE5CD3
-  - 来源：`tools/operations/validate_phase_e_candidate.py`
-  - 依赖：—；被引用：—
-- [require(demo.get("planner_output") == actual_plan, "E_PHASE_E_STALE_PLAN", "demonstration is not the real deterministic planner output")](../../../tools/operations/validate_phase_e_candidate.py)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-D4AD74399EB1A80E / require(demo.get("planner_output") == actual_plan, "E_PHASE_E_STALE_PLAN", "demonstration is not the real deterministic planner output") / IMPLICIT-D4AD74399EB1A80E
-  - 来源：`tools/operations/validate_phase_e_candidate.py`
-  - 依赖：—；被引用：—
-- [require(demo.get("validator_result") == {"status": "PASS", "error_code": None}, "E_PHASE_E_VALIDATOR", "demonstration validator result is not PASS")](../../../tools/operations/validate_phase_e_candidate.py)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-5B7A89E3416212DB / require(demo.get("validator_result") == {"status": "PASS", "error_code": None}, "E_PHASE_E_VALIDATOR", "demonstration validator result is not PASS") / IMPLICIT-5B7A89E3416212DB
-  - 来源：`tools/operations/validate_phase_e_candidate.py`
-  - 依赖：—；被引用：—
-- [require(document.get("schema_version") == "1.0.0", "dimensions: wrong schema_version", errors)](../../../tools/language_thought/validate_language_thought.py)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-8610B67EA52173F8 / require(document.get("schema_version") == "1.0.0", "dimensions: wrong schema_version", errors) / IMPLICIT-8610B67EA52173F8
-  - 来源：`tools/language_thought/validate_language_thought.py`
-  - 依赖：—；被引用：—
-- [require(isinstance(actor_ref, dict) and set(actor_ref) == {"actor_ref"}, f"{context}: final responsibility must use only actor_ref")](../../../tools/operations/stage_snapshot_contract.py)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-66144F8F4E2F0B7A / require(isinstance(actor_ref, dict) and set(actor_ref) == {"actor_ref"}, f"{context}: final responsibility must use only actor_ref") / IMPLICIT-66144F8F4E2F0B7A
-  - 来源：`tools/operations/stage_snapshot_contract.py`
-  - 依赖：—；被引用：—
-- [require(isinstance(dimensions, list) and len(dimensions) == 12, "dimensions: exactly twelve dimensions required", errors)](../../../tools/language_thought/validate_language_thought.py)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-47A4F6BF1CF03817 / require(isinstance(dimensions, list) and len(dimensions) == 12, "dimensions: exactly twelve dimensions required", errors) / IMPLICIT-47A4F6BF1CF03817
-  - 来源：`tools/language_thought/validate_language_thought.py`
   - 依赖：—；被引用：—

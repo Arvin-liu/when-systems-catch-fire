@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [统一函数总表/0583-D573-财务决策不完备性.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-c104368afe908bfb / 统一函数总表/0583-D573-财务决策不完备性.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D573；被引用：—
+- [统一函数总表/0584-D574-财务教育框架化.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：NFC-3f3b77ec85ba9bc8 / 统一函数总表/0584-D574-财务教育框架化.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D574；被引用：—
 - [统一函数总表/0585-D575-财务元协议实例化.md](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-93d388a4e4fbd897 / 统一函数总表/0585-D575-财务元协议实例化.md
@@ -1723,7 +1733,7 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：D3 / 退出权信号衰减 / D3
   - 来源：`统一函数总表/0052-D3-退出权信号衰减.md`
-  - 依赖：A6, D1, D90；被引用：NFC-19c27386c7e7f30e, NFC-2c4277abd6d6426a, NFC-42c4b1712565351d, NFC-4f6f0233d69d3834
+  - 依赖：A6, D1, D90；被引用：NFC-0b616fa51f7b8f0e, NFC-19c27386c7e7f30e, NFC-2a0fbe811f5c09df, NFC-2c4277abd6d6426a
 - [退出权信号随时间衰减，衰减率λ由遮蔽决定。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0052-D3-%E9%80%80%E5%87%BA%E6%9D%83%E4%BF%A1%E5%8F%B7%E8%A1%B0%E5%87%8F.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-ce9c54c7270d7dff / 退出权信号随时间衰减，衰减率λ由遮蔽决定。
@@ -2493,14 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-b04deba20d9ab914 / 验证 / Verification**
   - 来源：`统一函数总表/0002-A1-I(t,L) 提议者意识.md`
-  - 依赖：—；被引用：—
-- [验证器（validate_formal_protocol.py）读取的机器字段（dimension/examples/role_in_P_meta/relation_to_Psi0）与 020 Schema（formal-protocol-](../../../inputs/021/upstream-conflict-audit.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-9b3f6608496ff6b0 / 验证器（validate_formal_protocol.py）读取的机器字段（dimension/examples/role_in_P_meta/relation_to_Psi0）与 020 Schema（formal-protocol-
-  - 来源：`inputs/021/upstream-conflict-audit.md`
-  - 依赖：—；被引用：—
-- [验证层**：决定事实 / 证明 / 实验 / 语义审读 / 外部证据是否足够。](../../../docs/governance/charter-system-r1.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-17bb8213ccaee2af / 验证层**：决定事实 / 证明 / 实验 / 语义审读 / 外部证据是否足够。
-  - 来源：`docs/governance/charter-system-r1.md`
   - 依赖：—；被引用：—

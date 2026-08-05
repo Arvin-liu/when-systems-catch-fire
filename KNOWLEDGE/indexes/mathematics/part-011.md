@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [title: "距离衰减统一函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0177-D139-%E8%B7%9D%E7%A6%BB%E8%A1%B0%E5%87%8F%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-7faff2c5ad035d44 / title: "距离衰减统一函数"
+  - 来源：`统一函数总表/0177-D139-距离衰减统一函数.md`
+  - 依赖：—；被引用：—
+- [title: "跨域对称性破缺推论函数族"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0516-D518-%E6%93%8D%E4%BD%9C%E7%B1%BB%E5%9E%8B%E7%BB%B4%E5%BA%A6%E9%99%8D%E4%BD%8E%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-0C60F3F503D8FFFC / title: "跨域对称性破缺推论函数族" / IMPLICIT-0C60F3F503D8FFFC / IMPLICIT-2DF3EDEE4D7E7007
+  - 来源：`统一函数总表/0516-D518-操作类型维度降低函数.md`
+  - 依赖：—；被引用：—
 - [title: "跨域对称性破缺推论函数族"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0517-D519-%E5%8C%B9%E9%85%8D%E6%93%8D%E4%BD%9C%E7%B2%BE%E5%BA%A6%E6%B3%A2%E5%8A%A8%E5%87%BD%E6%95%B0.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-2DF3EDEE4D7E7007 / title: "跨域对称性破缺推论函数族" / IMPLICIT-2DF3EDEE4D7E7007 / IMPLICIT-0C60F3F503D8FFFC
@@ -2480,15 +2490,5 @@
 - [Within the source-defined scope, 民事保护,各维度退出权的乘积 is adjudicated as RELATION: 民事保护，各维度退出权的乘积。. This is a model-internal co](../../../data/foundation/adjudications/core-kernel.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
   - 可搜索名称：CLAIM-D22 / Within the source-defined scope, 民事保护,各维度退出权的乘积 is adjudicated as RELATION: 民事保护，各维度退出权的乘积。. This is a model-internal co
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 法条净效应函数 is adjudicated as RELATION: 法条净效应，遮蔽模糊、退出成本增益、法条刚性的平衡。. This is a model-interna](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D20 / Within the source-defined scope, 法条净效应函数 is adjudicated as RELATION: 法条净效应，遮蔽模糊、退出成本增益、法条刚性的平衡。. This is a model-interna
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 法治度 is adjudicated as METRIC: 法治度，退出权信号、宪法硬度、司法独立、法条净效应的乘积。. This is a model-internal c](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D23 / Within the source-defined scope, 法治度 is adjudicated as METRIC: 法治度，退出权信号、宪法硬度、司法独立、法条净效应的乘积。. This is a model-internal c
   - 来源：`data/foundation/adjudications/core-kernel.jsonl`
   - 依赖：—；被引用：—
