@@ -10,7 +10,7 @@
     "006": "REVIEWED_CURRENT",
     "007": "REVIEWED_CURRENT"
   },
-  "current_accepted_iteration": 108,
+  "current_accepted_iteration": 114,
   "current_capability_evidence": [
     {
       "ids": [
@@ -26,7 +26,7 @@
       "task": 105
     }
   ],
-  "current_project_status_commit": "ddf64f8b689caf20a69880b3f8bd5f2097916390",
+  "current_project_status_commit": "fb8d9c48ddf5c9236ae011323578f6965fe51d91",
   "current_project_status_date": "2026-07-31",
   "map_state_and_impact": [
     {
@@ -77,6 +77,46 @@
       "merge_commit": "ddf64f8b689caf20a69880b3f8bd5f2097916390",
       "task_id": "IGNITION-TWO-PHASE-ITERATION-TERMINALIZATION-AND-SELF-CLOSING-CURRENT-TRUTH-R1-20260801",
       "task_number": 108,
+      "terminal_state": "TERMINAL_SUCCESS"
+    },
+    {
+      "classification": "folded from event-sourced lifecycle (TERMINAL_SUCCESS)",
+      "exact_head": "56db4f8d40ac95bc5ed4482681d92e5c48d967cc",
+      "merge_commit": "2fa72751a29f95a1b9d72578cd25eb30f6b0e412",
+      "task_id": "IGNITION-PLANNER-COMPLETION-STATE-RECONCILIATION-AND-OPENALEX-INDEPENDENT-REPLICATION-PILOT-R1-20260801",
+      "task_number": 110,
+      "terminal_state": "TERMINAL_SUCCESS"
+    },
+    {
+      "classification": "folded from event-sourced lifecycle (TERMINAL_SUCCESS)",
+      "exact_head": "3c086e070998670aa88c7a9bb31481b27e17d59e",
+      "merge_commit": "efd4cef9a602c70c9c41db4c0e9c9e42d54fe49f",
+      "task_id": "IGNITION-FAILURE-CASE-EVIDENCE-GATE-AND-REAL-DEFECT-REPRODUCTION-PILOT-R1-20260801",
+      "task_number": 111,
+      "terminal_state": "TERMINAL_SUCCESS"
+    },
+    {
+      "classification": "folded from event-sourced lifecycle (TERMINAL_SUCCESS)",
+      "exact_head": "2e6ca101ac82d1bd8af413fbdafaaea024a9af8b",
+      "merge_commit": "24c7002477f75608b828f764fba60ebb633f88e8",
+      "task_id": "IGNITION-RESEARCH-PUBLICATION-LAYER-HUNDRED-ITERATION-KNOWLEDGE-HARVEST-VOLUME-ONE-R1-20260802",
+      "task_number": 112,
+      "terminal_state": "TERMINAL_SUCCESS"
+    },
+    {
+      "classification": "folded from event-sourced lifecycle (TERMINAL_SUCCESS)",
+      "exact_head": "9379aee3df73477b6f3ac6b15eed08e027124c58",
+      "merge_commit": "687591cd28aa3bad8e9a9fcb71efc2862eaca91e",
+      "task_id": "IGNITION-ZHIYUAN-WRITING-SONG-HUIZONG-TAOISM-NOTE-TO-PUBLISHED-WORK-R1-20260802",
+      "task_number": 113,
+      "terminal_state": "TERMINAL_SUCCESS"
+    },
+    {
+      "classification": "folded from event-sourced lifecycle (TERMINAL_SUCCESS)",
+      "exact_head": "75d0f45122fe53a1a28a068e7ddba13fab6a41f5",
+      "merge_commit": "fb8d9c48ddf5c9236ae011323578f6965fe51d91",
+      "task_id": "IGNITION-LANGUAGE-THOUGHT-LOGIC-CROSS-LAYER-PLANE-REPRESENTATIVE-LANGUAGE-PILOT-AND-CURRENT-WORK-REPAIR-R1-20260802",
+      "task_number": 114,
       "terminal_state": "TERMINAL_SUCCESS"
     }
   ],
