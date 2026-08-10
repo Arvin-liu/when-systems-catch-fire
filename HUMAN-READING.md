@@ -4,7 +4,7 @@
 
 ## 十分钟了解当前状态
 
-1. 先读[成果书架](./PUBLICATIONS/README.md)或直接读[一页全景](./PUBLICATIONS/what-pointfire-knows-now.md)，不需要理解内部目录就能看见全局。
+1. 先读唯一[《点火成果册》](./PUBLICATIONS/pointfire-results-book/README.md)；需要百轮历史层时再读[成果书架](./PUBLICATIONS/README.md)或[一页全景](./PUBLICATIONS/what-pointfire-knows-now.md)，不需要理解内部目录就能看见全局。
 2. 再读[完整第一卷](./PUBLICATIONS/volumes/001-pointfire-after-one-hundred-iterations.md)，跟随问题、发现、纠正、有限实验和未知的连续叙事。
 3. 需要核对具体记录时，再从书架进入[研究笔记](./PUBLICATIONS/notes/001-pointfire-research-notes.md)和[百轮成果台账](./PUBLICATIONS/hundred-iteration-achievement-ledger.md)。
 4. 从[统一知识入口](./KNOWLEDGE/README.md)选择“最近变化”“按主题探索”“搜索”或“分层阅读”。
