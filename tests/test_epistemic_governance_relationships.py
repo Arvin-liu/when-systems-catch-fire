@@ -53,4 +53,14 @@ class Tests(unittest.TestCase):
  def test_body_reentry_cannot_publish_directly(self): self.bad(lambda d:next(s for s in d["suspension_contracts"] if s["name"]=="BODY_RECOVERY_BLOCKED").update({"reentry":"PUBLISH_DIRECTLY"}),"schema")
  def test_suspension_authority_cannot_drift(self): self.bad(lambda d:next(s for s in d["suspension_contracts"] if s["name"]=="ABSTAIN").update({"authority":"foundation.lifecycle"}),"canonical contract")
  def test_suspension_question_cannot_drift(self): self.bad(lambda d:next(s for s in d["suspension_contracts"] if s["name"]=="ABSTAIN").update({"decision_question":"WAS_TARGET_LABEL_ASSIGNED"}),"canonical contract")
+ def test_relation_endpoints_authority_cannot_drift(self): self.bad(lambda d:d["relationships"][0].update({"from":"charter.normative","authority":"charter.normative"}),"relation tuple")
+ def test_duplicate_relation_injection(self): self.bad(lambda d:d["relationships"].append(copy.deepcopy(d["relationships"][0])),"unique and inventory exact")
+ def test_duplicate_relation_id(self): self.bad(lambda d:d["relationships"][1].update({"id":"r-provenance"}),"unique and inventory exact")
+ def test_duplicate_authority_injection(self): self.bad(lambda d:d["authorities"].append(copy.deepcopy(d["authorities"][0])),"unique and inventory exact")
+ def test_authority_domain_path_drift(self): self.bad(lambda d:d["authorities"][0].update({"decision_domain":"unbounded_truth","canonical_paths":["README.md"]}),"authority tuple")
+ def test_duplicate_public_route(self): self.bad(lambda d:d["public_surface_routes"].append(copy.deepcopy(d["public_surface_routes"][0])),"unique and inventory exact")
+ def test_reviewed_sources_fake_hashes(self):
+  def m(d): d["reviewed_sources"]["formal_baseline"]["commit"]="0"*40; d["reviewed_sources"]["private_step06_checkpoint"]["commit"]="1"*40
+  self.bad(m,"schema")
+ def test_reviewed_sources_wrong_semantics(self): self.bad(lambda d:d["reviewed_sources"]["formal_baseline"].update({"verification":"EXACT_EXTERNAL_REPOSITORY_IDENTIFIER"}),"schema")
 if __name__=="__main__": unittest.main()

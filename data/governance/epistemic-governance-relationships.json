@@ -1,6 +1,6 @@
 {
   "spec_version":"1.1.0-candidate","architecture_disposition":"FEDERATED_ARCHITECTURE_ONLY","canonical_name":"Epistemic Governance Kernel and Federated Planes","authority_mode":"REFERENTIAL_ONLY",
-  "reviewed_tips":{"formal_candidate":"90064c9581f17033e22f440202a57c335ef4e8e9","private_records":"6725f26f887e37fb3cabea0faa22424cf2b00108"},
+  "reviewed_sources":{"formal_baseline":{"commit":"87b723be0ab314454303627dd6b8e266b60403f2","verification":"MUST_EXIST_AND_BE_ANCESTOR_OF_VALIDATED_WORKTREE"},"private_step06_checkpoint":{"commit":"3c147539ca6b5ede4919ec803a945a0b3bfef32e","verification":"EXACT_EXTERNAL_REPOSITORY_IDENTIFIER"}},
   "negative_permission_profiles":{
     "claim_authority":["action_permission","privacy_eligibility","owner_acceptance"],
     "language_authority":["truth","mathematical_maturity","external_evidence_maturity","ceiling_upgrade","layer_creation"],

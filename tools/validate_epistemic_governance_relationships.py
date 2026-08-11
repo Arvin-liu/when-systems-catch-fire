@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-import argparse, json
+import argparse, json, subprocess
 from pathlib import Path
 from jsonschema import Draft202012Validator
 
@@ -47,6 +47,31 @@ SUSPENSIONS={
  "BODY_RECOVERY_BLOCKED":("foundation.lifecycle","WAS_REQUIRED_SOURCE_BODY_RECOVERED",{"REJECT","NOT_ASSIGNED"},"PROVENANCE_BOUND_BODY_RECOVERY"),
  "WITHDRAWN":("foundation.lifecycle","DOES_CURRENT_PERMISSION_REMAIN",{"REJECT","HISTORICAL_ONLY"},"NEW_SUCCESSOR_WITH_NEW_GOVERNED_EVIDENCE")
 }
+AUTHORITY_TUPLES={
+ "foundation.claims":("claim_authority","claim_identity_and_qualification",("data/foundation/nonfunction-claims/claim-registry.jsonl","docs/foundation/claim-governance-and-function-identity.md")),
+ "foundation.lifecycle":("claim_authority","suspension_dependency_revision",("docs/foundation/future-claim-admission-protocol.md","data/foundation/nonfunction-claims/dependency-graph.jsonl","data/foundation/nonfunction-claims/supersession-lineage.jsonl")),
+ "language_thought.plane":("language_authority","language_transformation_and_residue",("docs/architecture/language-thought-logic-plane.md",)),
+ "charter.normative":("charter_authority","action_linked_permission",("docs/governance/charter-system-r1.md","docs/governance/charter-system-registry.json")),
+ "operations.iteration":("operations_authority","execution_feedback_and_receipts",("ITERATION.md","docs/architecture/mechanism-adjudication-plane.md")),
+ "publication.results_book":("publication_authority","public_projection_and_navigation",("PUBLICATIONS/pointfire-results-book/README.md","PUBLICATIONS/pointfire-results-book/RESULT-REGISTRY.jsonl")),
+ "publication.privacy":("privacy_authority","privacy_and_publication_eligibility",("docs/governance/external-input-non-republication-principle.md","schemas/governance/external-input-non-republication.schema.json","data/governance/publication-gate-decisions.jsonl")),
+ "models.local":("model_authority","model_local_capability",("ARCHITECTURE.md","docs/architecture/mechanism-adjudication-plane.md")),
+ "review.scoped":("review_authority","scoped_human_or_independent_review",("schemas/foundation/independent-semantic-review.schema.json",)),
+ "history.meta_protocol":("review_authority","historical_lineage_mapping",("ARCHITECTURE.md","docs/phi_meta_law.md")),
+ "pressure_test.getnote":("operations_authority","internal_pressure_test_projection",("data/governance/getnote-1329-epistemic-governance-pressure-test.json","docs/architecture/getnote-1329-epistemic-governance-pressure-test.md"))
+}
+RELATION_TUPLES={
+ "r-provenance":("foundation.provenance_route","foundation.claims","publication.results_book","foundation.claims","REQUIRE_PROVENANCE_AND_LOCAL_CEILING",{"TRUTH_UPGRADE","CEILING_WIDENING","E_UPGRADE"}),
+ "r-language":("language_thought.transform","language_thought.plane","publication.results_book","language_thought.plane","PRESERVE_FRAMING_RESIDUE",{"TRUTH_UPGRADE","CEILING_WIDENING","CREATE_L7"}),
+ "r-repo":("operations.repository_dependency","operations.iteration","publication.results_book","operations.iteration","REQUEST_PROJECTION_REFRESH",{"TRUTH_UPGRADE","CAUSALITY_INFERENCE","MECHANISM_CONFIRMATION"}),
+ "r-feedback":("operations.feedback_to_l0","operations.iteration","foundation.claims","operations.iteration","SUBMIT_PROVENANCE_BOUND_L0_CANDIDATE",{"TRUTH_UPGRADE","MECHANISM_CONFIRMATION","E_UPGRADE"}),
+ "r-model":("models.capability_boundary","models.local","foundation.claims","models.local","REFERENCE_LOCAL_CAPABILITY_ONLY",{"TRUTH_UPGRADE","FOUNDATION_STATUS_UPGRADE","E_UPGRADE"}),
+ "r-dependency":("foundation.epistemic_dependency","foundation.lifecycle","review.scoped","foundation.lifecycle","REQUIRE_DOWNSTREAM_REVIEW_ON_UPSTREAM_DOWNGRADE",{"TRUTH_INHERITANCE","CAUSALITY_INFERENCE","CEILING_WIDENING"}),
+ "r-revision":("foundation.revision_lineage","foundation.lifecycle","publication.results_book","foundation.lifecycle","REQUIRE_APPEND_ONLY_SUPERSESSION_OR_WITHDRAWAL",{"SILENT_REVIVAL","HISTORY_ERASURE","CEILING_WIDENING"}),
+ "r-getnote":("pressure_test.internal_projection","pressure_test.getnote","publication.results_book","pressure_test.getnote","REPORT_INTERNAL_PRESSURE_TEST_ONLY",{"TRUTH_UPGRADE","EXTERNAL_VALIDITY_INFERENCE","SOURCE_FAMILY_INDEPENDENCE_INFERENCE"}),
+ "r-history":("history.current_mapping","history.meta_protocol","publication.results_book","history.meta_protocol","PRESERVE_HISTORICAL_LINEAGE",{"TRUTH_UPGRADE","SILENT_REVIVAL","SUPERIORITY_INFERENCE"}),
+ "r-privacy":("publication.privacy_gate","publication.privacy","publication.results_book","publication.privacy","BLOCK_OR_NARROW_PUBLICATION",{"TRUTH_UPGRADE","E_UPGRADE","CEILING_WIDENING"})
+}
 
 def validate(doc, repo_root, schema=None):
     errors=[]; root=Path(repo_root)
@@ -54,13 +79,23 @@ def validate(doc, repo_root, schema=None):
     for e in sorted(Draft202012Validator(schema).iter_errors(doc),key=lambda x:list(x.absolute_path)):
         errors.append("schema: "+(".".join(map(str,e.absolute_path)) or "$")+": "+e.message)
     if errors: return errors
-    profiles=doc["negative_permission_profiles"]; auths={a["id"]:a for a in doc["authorities"]}
+    src=doc["reviewed_sources"]
+    if src != {"formal_baseline":{"commit":"87b723be0ab314454303627dd6b8e266b60403f2","verification":"MUST_EXIST_AND_BE_ANCESTOR_OF_VALIDATED_WORKTREE"},"private_step06_checkpoint":{"commit":"3c147539ca6b5ede4919ec803a945a0b3bfef32e","verification":"EXACT_EXTERNAL_REPOSITORY_IDENTIFIER"}}: errors.append("reviewed sources must exactly bind STEP06 frozen provenance")
+    else:
+        base=src["formal_baseline"]["commit"]
+        exists=subprocess.run(["git","-C",str(root),"cat-file","-e",base+"^{commit}"],capture_output=True).returncode==0
+        ancestor=subprocess.run(["git","-C",str(root),"merge-base","--is-ancestor",base,"HEAD"],capture_output=True).returncode==0
+        if not exists or not ancestor: errors.append("formal reviewed baseline must resolve and be an ancestor of validated worktree HEAD")
+    profiles=doc["negative_permission_profiles"]
+    auth_ids=[a["id"] for a in doc["authorities"]]; auths={a["id"]:a for a in doc["authorities"]}
     if {k:tuple(v) for k,v in profiles.items()} != CANONICAL_PROFILES: errors.append("negative permission profiles must exactly equal canonical profile map")
-    if set(auths)!=set(AUTHORITY_PROFILE): errors.append("authority inventory must exactly equal canonical authority map")
+    if len(auth_ids)!=len(set(auth_ids)) or len(auth_ids)!=len(AUTHORITY_TUPLES) or set(auths)!=set(AUTHORITY_TUPLES): errors.append("authority IDs must be unique and inventory exact")
     for a in auths.values():
         if a["profile"] not in profiles: errors.append(f"{a['id']}: unknown negative permission profile")
         elif set(a["cannot_decide"]) != set(profiles[a["profile"]]): errors.append(f"{a['id']}: cannot_decide must exactly bind profile {a['profile']}")
         if AUTHORITY_PROFILE.get(a["id"]) != a["profile"]: errors.append(f"{a['id']}: profile must equal canonical authority-profile binding")
+        expected=AUTHORITY_TUPLES.get(a["id"])
+        if expected and (a["profile"],a["decision_domain"],tuple(a["canonical_paths"])) != expected: errors.append(f"{a['id']}: authority tuple must exactly match canonical binding")
         for p in a["canonical_paths"]:
             if p.startswith("/") or ".." in Path(p).parts or not (root/p).exists(): errors.append(f"{a['id']}: invalid or missing canonical path: {p}")
     fed_by_id={f["responsibility"]:f for f in doc["responsibility_federations"]}
@@ -72,7 +107,8 @@ def validate(doc, repo_root, schema=None):
         if "publication.privacy" not in f["authorities"]: errors.append(f"{f['responsibility']}: privacy authority missing")
         expected=FEDERATIONS.get(f["responsibility"])
         if expected and (f["condition"]!=expected[0] or set(f["authorities"])!=expected[1]): errors.append(f"{f['responsibility']}: condition and authorities must exactly match canonical federation")
-    types={r["type"] for r in doc["relationships"]}
+    rel_ids=[r["id"] for r in doc["relationships"]]; rel_by_id={r["id"]:r for r in doc["relationships"]}; types={r["type"] for r in doc["relationships"]}
+    if len(rel_ids)!=len(set(rel_ids)) or len(rel_ids)!=len(RELATION_TUPLES) or set(rel_by_id)!=set(RELATION_TUPLES): errors.append("relation IDs must be unique and inventory exact")
     if types != REQUIRED_RELATIONS: errors.append(f"relationship coverage mismatch: {sorted(REQUIRED_RELATIONS-types)} missing, {sorted(types-REQUIRED_RELATIONS)} extra")
     for r in doc["relationships"]:
         for key in ("from","to","authority"):
@@ -81,8 +117,11 @@ def validate(doc, repo_root, schema=None):
         if r["allowed_effect"] != RELATION_EFFECT[r["type"]]: errors.append(f"{r['id']}: allowed effect must match relation type")
         missing=REQUIRED_EDGE_PROHIBITIONS.get(r["type"],set())-set(r["prohibited_effects"])
         if missing: errors.append(f"{r['id']}: relationship coverage missing prohibitions {sorted(missing)}")
+        expected=RELATION_TUPLES.get(r["id"])
+        actual=(r["type"],r["from"],r["to"],r["authority"],r["allowed_effect"],set(r["prohibited_effects"]))
+        if expected and actual!=expected: errors.append(f"{r['id']}: relation tuple must exactly match canonical binding")
     contracts={s["name"]:s for s in doc["suspension_contracts"]}
-    if len(contracts)!=len(doc["suspension_contracts"]): errors.append("duplicate suspension contract")
+    if len(contracts)!=len(doc["suspension_contracts"]) or len(contracts)!=len(SUSPENSIONS): errors.append("suspension names must be unique and count exact")
     if set(contracts)!=set(SUSPENSIONS): errors.append("suspension inventory must exactly match canonical names")
     for s in contracts.values():
         if s["authority"] not in auths: errors.append(f"{s['name']}: unknown authority")
@@ -92,7 +131,7 @@ def validate(doc, repo_root, schema=None):
     if "REJECT" not in contracts["ABSTAIN"]["non_equivalent_to"]: errors.append("ABSTAIN must remain non-equivalent to REJECT")
     if "UNKNOWN_TRUTH" not in contracts["NOT_ASSIGNED"]["non_equivalent_to"]: errors.append("NOT_ASSIGNED must remain non-equivalent to UNKNOWN_TRUTH")
     routes={r["path"]:r for r in doc["public_surface_routes"]}
-    if set(routes)!=REQUIRED_SURFACES: errors.append("public surface coverage must exactly match closed canonical route inventory")
+    if len(routes)!=len(doc["public_surface_routes"]) or len(routes)!=len(ROUTES) or set(routes)!=REQUIRED_SURFACES: errors.append("public surface paths must be unique and inventory exact")
     for p,r in routes.items():
         for q in (p,r["registry"]):
             if q.startswith("/") or ".." in Path(q).parts or not (root/q).exists(): errors.append(f"public route missing canonical path: {q}")
