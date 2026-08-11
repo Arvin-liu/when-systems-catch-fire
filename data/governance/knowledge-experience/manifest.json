@@ -88,11 +88,11 @@
     "KNOWLEDGE/indexes/writing_publication.md": "2bcf9e4d27b5828f0b23d99814d0b9aa45c90749132d1093fb1ad565aebf68c7",
     "KNOWLEDGE/indexes/writing_publication/part-001.md": "b08e2cf6db9101d435daace016f3801008410a435b92a97631e5fe34dba422d2",
     "data/governance/knowledge-experience/alias-index.jsonl": "0007a44ac5c85a7c224643f59a5d48591b22816e7a99a91fad7381ca32b0d8cb",
-    "data/governance/knowledge-experience/asset-cards.jsonl": "48d06ac4d61bd54e88fffdc245ee6943af99a332ee5992157f364fe757768a34",
+    "data/governance/knowledge-experience/asset-cards.jsonl": "6a251a1db3e4501b3f7f41fb7a7699cc559d35d6472c6f883923f890313c7582",
     "data/governance/knowledge-experience/changes.jsonl": "e63936accff0a249bb957c20f245387e46e37e34108a2f31321d653de52cab4b",
     "data/governance/knowledge-experience/coverage.json": "83c0c62b8173d2b607e16f78bc1281110e728adb126af6e3ed7558689c821aed",
-    "data/governance/knowledge-experience/layered-reading.jsonl": "c7892064fe20447a069d72bdc84cd8e737395dfd367a540773c4a82f3a5a69be",
-    "data/governance/knowledge-experience/search-index.jsonl": "c59c43b6917afb6b23377e03247b8ba09c4229eddb85e58e7d386f2a72cd55bc"
+    "data/governance/knowledge-experience/layered-reading.jsonl": "a782132e12dd1e1a3ad79b3f182f359db852bba206b9ebe6730542186a88dd61",
+    "data/governance/knowledge-experience/search-index.jsonl": "b2321516d9dbeb8624d0695d1c645d5691b00c5d1b9e3b62a381ec9ae0063a71"
   },
   "machine_human_pairs": [
     {

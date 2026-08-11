@@ -264,7 +264,9 @@ GetNote 管线对 source recovery、atomization、ceiling、ABSTAIN、blocked、
 
 机器关系索引位于 [`data/governance/epistemic-governance-relationships.json`](../../data/governance/epistemic-governance-relationships.json)，对应 [JSON Schema](../../schemas/governance/epistemic-governance-relationships.schema.json)、[validator](../../tools/validate_epistemic_governance_relationships.py) 与 [tests](../../tests/test_epistemic_governance_relationships.py)。
 
-它只保存 component/authority references、relation types、federation rule、public routes、prohibited inferences 与 human/machine links；不复制 claim rows 或局部状态。validator PASS 只证明 repository-local referential consistency，不证明内容真值、架构 unity 或 external validity。
+它只保存 authority/path references、封闭的 typed effects、negative-permission profiles、条件化 federation、悬置非等价/re-entry contracts、doc-to-spec obligation inventory 与 canonical public-route inventory；不复制 claim rows 或局部状态。Charter 只参与 action-linked statement 的 permission，privacy/publication eligibility 由独立 authority 负责。
+
+obligation inventory 将每项承诺明确标为 `MACHINE_ENFORCED`、`HUMAN_REVIEW_ONLY` 或 `UNBOUND`。前者只表示 schema、引用、封闭 effect、路由和禁止边可执行；后两者不得计入 machine maturity。source-family independence 与 external validity 仍须人审，跨局部 ceiling vocabulary 的 universal order 仍为 `UNBOUND`。validator PASS 只证明这些 repository-local bindings 一致，不证明内容真值、语义等价、架构 unity 或 external validity。
 
 ## Falsification criteria
 
@@ -296,9 +298,9 @@ GetNote 管线对 source recovery、atomization、ceiling、ABSTAIN、blocked、
 
 - 没有独立跨域 replay；
 - 不存在覆盖所有局部 ceiling vocabulary 的无损总顺序；
-- suspension/block 只 namespaced，不做强制语义统一；
+- suspension/block 的 non-equivalence 与 re-entry 已 namespaced 绑定，但其具体语义裁决仍由局部 authority 负责；
 - system-map 版本文案和 ARN capability/object-status 仍需同步裁定；
-- machine validator 只能验证引用与禁止边；
+- machine validator 只能验证 strict schema、引用、封闭 effects、negative profiles、obligation classification 与 closed public routes；
 - 本轮 STEP04 始终是 `FEDERATED_ARCHITECTURE_ONLY`，不得自动升级。
 
 本候选没有 merge `main`，没有 `OWNER_ACCEPTED`、`FORMAL_KNOWLEDGE` 或 `EPISTEMICALLY_ACCEPTED`。它停在 GPT Owner review 之前。

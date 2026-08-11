@@ -1,25 +1,23 @@
 {
-  "$schema":"https://json-schema.org/draft/2020-12/schema",
-  "$id":"https://pointfire.example/schemas/governance/epistemic-governance-relationships.schema.json",
-  "title":"Referential epistemic governance relationship index",
-  "type":"object","additionalProperties":false,
-  "required":["spec_version","architecture_disposition","canonical_name","authority_mode","reviewed_tips","namespaces","authorities","responsibility_federations","relationships","global_prohibited_inferences","human_review_only"],
-  "properties":{
-    "spec_version":{"type":"string"},
-    "architecture_disposition":{"const":"FEDERATED_ARCHITECTURE_ONLY"},
-    "canonical_name":{"const":"Epistemic Governance Kernel and Federated Planes"},
-    "authority_mode":{"const":"REFERENTIAL_ONLY"},
-    "reviewed_tips":{"type":"object","required":["private_checkpoint","formal_baseline"],"additionalProperties":false,"properties":{"private_checkpoint":{"pattern":"^[0-9a-f]{40}$"},"formal_baseline":{"pattern":"^[0-9a-f]{40}$"}}},
-    "namespaces":{"type":"array","minItems":6,"uniqueItems":true,"items":{"type":"string","pattern":"^[a-z][a-z0-9_]*$"}},
-    "authorities":{"type":"array","minItems":1,"items":{"$ref":"#/$defs/authority"}},
-    "responsibility_federations":{"type":"array","minItems":1,"items":{"$ref":"#/$defs/federation"}},
-    "relationships":{"type":"array","minItems":1,"items":{"$ref":"#/$defs/relationship"}},
-    "global_prohibited_inferences":{"type":"array","minItems":8,"uniqueItems":true,"items":{"type":"string"}},
-    "human_review_only":{"type":"array","minItems":1,"uniqueItems":true,"items":{"type":"string"}}
-  },
-  "$defs":{
-    "authority":{"type":"object","additionalProperties":false,"required":["id","decision_domain","responsibility","canonical_paths","cannot_decide"],"properties":{"id":{"type":"string","pattern":"^[a-z_]+\\.[a-z0-9_]+$"},"decision_domain":{"type":"string"},"responsibility":{"type":"string"},"canonical_paths":{"type":"array","minItems":1,"uniqueItems":true,"items":{"type":"string"}},"cannot_decide":{"type":"array","minItems":1,"uniqueItems":true,"items":{"type":"string"}}}},
-    "federation":{"type":"object","additionalProperties":false,"required":["responsibility","authorities","overlap_mode","conflict_rule"],"properties":{"responsibility":{"type":"string"},"authorities":{"type":"array","minItems":2,"uniqueItems":true,"items":{"type":"string"}},"overlap_mode":{"const":"EXPLICIT_FEDERATION"},"conflict_rule":{"const":"FAIL_CLOSED_ON_INCOMPARABLE_OR_BLOCKING_DECISION"}}},
-    "relationship":{"type":"object","additionalProperties":false,"required":["id","type","from","to","authority","allowed_inference","prohibited_inferences"],"properties":{"id":{"type":"string"},"type":{"type":"string","pattern":"^[a-z_]+\\.[a-z0-9_]+$"},"from":{"type":"string"},"to":{"type":"string"},"authority":{"type":"string"},"allowed_inference":{"type":"string"},"prohibited_inferences":{"type":"array","minItems":1,"uniqueItems":true,"items":{"type":"string"}},"public_surface":{"type":"boolean"},"ceiling_route":{"enum":["LOCAL_AUTHORITY_REFERENCE","NOT_APPLICABLE"]},"provenance_route":{"enum":["REQUIRED","NOT_APPLICABLE"]},"reciprocal_id":{"type":"string"}}}
-  }
+ "$schema":"https://json-schema.org/draft/2020-12/schema","type":"object","additionalProperties":false,
+ "required":["spec_version","architecture_disposition","canonical_name","authority_mode","reviewed_tips","negative_permission_profiles","authorities","responsibility_federations","relationships","suspension_contracts","public_surface_routes","obligation_inventory"],
+ "properties":{
+  "spec_version":{"type":"string"},"architecture_disposition":{"const":"FEDERATED_ARCHITECTURE_ONLY"},"canonical_name":{"const":"Epistemic Governance Kernel and Federated Planes"},"authority_mode":{"const":"REFERENTIAL_ONLY"},
+  "reviewed_tips":{"type":"object","additionalProperties":false,"required":["formal_candidate","private_records"],"properties":{"formal_candidate":{"type":"string","pattern":"^[0-9a-f]{40}$"},"private_records":{"type":"string","pattern":"^[0-9a-f]{40}$"}}},
+  "negative_permission_profiles":{"type":"object","minProperties":8,"additionalProperties":{"type":"array","minItems":2,"uniqueItems":true,"items":{"type":"string"}}},
+  "authorities":{"type":"array","minItems":10,"items":{"$ref":"#/$defs/authority"}},
+  "responsibility_federations":{"type":"array","minItems":2,"items":{"$ref":"#/$defs/federation"}},
+  "relationships":{"type":"array","minItems":10,"items":{"$ref":"#/$defs/relation"}},
+  "suspension_contracts":{"type":"array","minItems":5,"items":{"$ref":"#/$defs/suspension"}},
+  "public_surface_routes":{"type":"array","minItems":6,"items":{"$ref":"#/$defs/route"}},
+  "obligation_inventory":{"type":"array","minItems":14,"items":{"$ref":"#/$defs/obligation"}}
+ },
+ "$defs":{
+  "authority":{"type":"object","additionalProperties":false,"required":["id","profile","decision_domain","canonical_paths","cannot_decide"],"properties":{"id":{"type":"string","pattern":"^[a-z_]+\\.[a-z0-9_]+$"},"profile":{"type":"string"},"decision_domain":{"type":"string"},"canonical_paths":{"type":"array","minItems":1,"uniqueItems":true,"items":{"type":"string"}},"cannot_decide":{"type":"array","minItems":2,"uniqueItems":true,"items":{"type":"string"}}}},
+  "federation":{"type":"object","additionalProperties":false,"required":["responsibility","authorities","condition","conflict_rule"],"properties":{"responsibility":{"enum":["non_action_public_statement_release","action_linked_public_statement_release"]},"authorities":{"type":"array","minItems":3,"uniqueItems":true,"items":{"type":"string"}},"condition":{"enum":["NON_ACTION_STATEMENT","ACTION_LINKED_STATEMENT"]},"conflict_rule":{"const":"ANY_BLOCK_FAILS_CLOSED"}}},
+  "relation":{"type":"object","additionalProperties":false,"required":["id","type","from","to","authority","allowed_effect","note","prohibited_effects"],"properties":{"id":{"type":"string"},"type":{"enum":["foundation.provenance_route","language_thought.transform","operations.repository_dependency","operations.feedback_to_l0","models.capability_boundary","foundation.epistemic_dependency","foundation.revision_lineage","pressure_test.internal_projection","history.current_mapping","publication.privacy_gate"]},"from":{"type":"string"},"to":{"type":"string"},"authority":{"type":"string"},"allowed_effect":{"enum":["REQUIRE_PROVENANCE_AND_LOCAL_CEILING","PRESERVE_FRAMING_RESIDUE","REQUEST_PROJECTION_REFRESH","SUBMIT_PROVENANCE_BOUND_L0_CANDIDATE","REFERENCE_LOCAL_CAPABILITY_ONLY","REQUIRE_DOWNSTREAM_REVIEW_ON_UPSTREAM_DOWNGRADE","REQUIRE_APPEND_ONLY_SUPERSESSION_OR_WITHDRAWAL","REPORT_INTERNAL_PRESSURE_TEST_ONLY","PRESERVE_HISTORICAL_LINEAGE","BLOCK_OR_NARROW_PUBLICATION"]},"note":{"type":"string"},"prohibited_effects":{"type":"array","minItems":2,"uniqueItems":true,"items":{"enum":["TRUTH_UPGRADE","CEILING_WIDENING","E_UPGRADE","M_UPGRADE","CREATE_L7","CREATE_L_MINUS_1","CAUSALITY_INFERENCE","MECHANISM_CONFIRMATION","FOUNDATION_STATUS_UPGRADE","TRUTH_INHERITANCE","SILENT_REVIVAL","HISTORY_ERASURE","EXTERNAL_VALIDITY_INFERENCE","SOURCE_FAMILY_INDEPENDENCE_INFERENCE","SUPERIORITY_INFERENCE"]}}}},
+  "suspension":{"type":"object","additionalProperties":false,"required":["name","authority","decision_question","non_equivalent_to","reentry"],"properties":{"name":{"enum":["ABSTAIN","NOT_ASSIGNED","NOT_IDENTIFIABLE","BODY_RECOVERY_BLOCKED","WITHDRAWN"]},"authority":{"type":"string"},"decision_question":{"type":"string","minLength":1},"non_equivalent_to":{"type":"array","minItems":2,"uniqueItems":true,"items":{"type":"string"}},"reentry":{"type":"string","minLength":1}}},
+  "route":{"type":"object","additionalProperties":false,"required":["path","registry","authority","provenance_route","ceiling_route","privacy_authority"],"properties":{"path":{"type":"string"},"registry":{"type":"string"},"authority":{"type":"string"},"provenance_route":{"const":"REQUIRED"},"ceiling_route":{"enum":["LOCAL_AUTHORITY_REFERENCE","NOT_APPLICABLE"]},"ceiling_reason":{"enum":["RELATIONSHIP_MAP_NOT_CLAIM_STATUS","NAVIGATION_PROJECTION_ONLY"]},"privacy_authority":{"const":"publication.privacy"}},"allOf":[{"if":{"properties":{"ceiling_route":{"const":"NOT_APPLICABLE"}}},"then":{"required":["ceiling_reason"]}}]},
+  "obligation":{"type":"object","additionalProperties":false,"required":["id","coverage","binding"],"properties":{"id":{"type":"string"},"coverage":{"enum":["MACHINE_ENFORCED","HUMAN_REVIEW_ONLY","UNBOUND"]},"binding":{"type":"string"}}}
+ }
 }

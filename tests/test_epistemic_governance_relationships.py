@@ -1,26 +1,38 @@
 import copy, importlib.util, json, unittest
 from pathlib import Path
-
-ROOT=Path(__file__).resolve().parents[1]
-SPEC=json.loads((ROOT/"data/governance/epistemic-governance-relationships.json").read_text())
-REPO=ROOT
-sp=importlib.util.spec_from_file_location("validator",ROOT/"tools/validate_epistemic_governance_relationships.py")
-v=importlib.util.module_from_spec(sp); sp.loader.exec_module(v)
-
-class TestRelationships(unittest.TestCase):
-    def check_bad(self, mutate, needle):
-        d=copy.deepcopy(SPEC); mutate(d); errors=v.validate(d,REPO)
-        self.assertTrue(any(needle in e for e in errors),errors)
-    def test_valid(self): self.assertEqual([],v.validate(SPEC,REPO))
-    def test_mechanism_m0_collision_is_not_copyable(self): self.check_bad(lambda d:d.update({"mathematical_maturity":"M0"}),"copied local state")
-    def test_publication_to_truth_rejected(self): self.check_bad(lambda d:d["relationships"][0].update({"allowed_inference":"publication implies truth"}),"truth/causality upgrade")
-    def test_review_to_e_rejected(self): self.check_bad(lambda d:d["relationships"][0].update({"allowed_inference":"review implies external evidence"}),"truth/causality upgrade")
-    def test_owner_to_e_rejected(self): self.check_bad(lambda d:d["relationships"][0].update({"allowed_inference":"owner acceptance implies external evidence"}),"truth/causality upgrade")
-    def test_repo_dependency_to_causality_rejected(self): self.check_bad(lambda d:d["relationships"][2].update({"allowed_inference":"repository dependency implies causality"}),"truth/causality upgrade")
-    def test_copied_local_claim_rows_rejected(self): self.check_bad(lambda d:d.update({"claim_rows":[]}),"copied local state")
-    def test_public_surface_requires_routes(self): self.check_bad(lambda d:d["relationships"][0].update({"ceiling_route":"NOT_APPLICABLE"}),"lacks ceiling/provenance")
-    def test_language_cannot_be_l7(self): self.check_bad(lambda d:d["relationships"][1]["prohibited_inferences"].remove("language_creates_L7"),"prohibit L7")
-    def test_historical_mapping_required(self): self.check_bad(lambda d:d.update({"relationships":[r for r in d["relationships"] if r["type"]!="publication.historical_mapping"]}),"historical mapping")
-    def test_reciprocal_link_required(self): self.check_bad(lambda d:d["relationships"][4].update({"reciprocal_id":"missing"}),"broken reciprocal")
-
+ROOT=Path(__file__).resolve().parents[1]; SPEC=json.loads((ROOT/"data/governance/epistemic-governance-relationships.json").read_text())
+sp=importlib.util.spec_from_file_location("v",ROOT/"tools/validate_epistemic_governance_relationships.py"); v=importlib.util.module_from_spec(sp); sp.loader.exec_module(v)
+class Tests(unittest.TestCase):
+ def bad(self,fn,needle=""):
+  d=copy.deepcopy(SPEC); fn(d); es=v.validate(d,ROOT); self.assertTrue(es); self.assertTrue(not needle or any(needle in e for e in es),es)
+ def test_valid(self): self.assertEqual([],v.validate(SPEC,ROOT))
+ def test_unknown_top_state_laundering(self): self.bad(lambda d:d.update({"semantic_acceptance":"CONFIRMED"}),"schema")
+ def test_nested_state_laundering(self): self.bad(lambda d:d["authorities"][0].update({"payload":{"truth":"YES"}}),"schema")
+ def test_free_text_effect_removed(self): self.bad(lambda d:d["relationships"][0].update({"allowed_inference":"Publication confirms reality"}),"schema")
+ def test_unknown_typed_effect(self): self.bad(lambda d:d["relationships"][0].update({"allowed_effect":"CONFIRM_REALITY"}),"schema")
+ def test_deleted_cannot_decide(self): self.bad(lambda d:d["authorities"][0].update({"cannot_decide":[]}),"schema")
+ def test_profile_permission_removed(self): self.bad(lambda d:d["authorities"][0]["cannot_decide"].pop(),"exactly bind profile")
+ def test_local_prohibitions_removed(self): self.bad(lambda d:d["relationships"][0].update({"prohibited_effects":[]}),"schema")
+ def test_federation_deleted(self): self.bad(lambda d:d.update({"responsibility_federations":[]}),"schema")
+ def test_public_route_deleted(self): self.bad(lambda d:d["public_surface_routes"].pop())
+ def test_public_route_flag_cannot_bypass(self): self.bad(lambda d:d["relationships"][0].update({"public_surface":False}),"schema")
+ def test_m_to_e_laundering(self): self.bad(lambda d:d["relationships"][0].update({"allowed_effect":"E_UPGRADE"}),"schema")
+ def test_e_to_m_laundering(self): self.bad(lambda d:d["relationships"][0].update({"allowed_effect":"M_UPGRADE"}),"schema")
+ def test_review_owner_laundering(self): self.bad(lambda d:d["authorities"][8]["cannot_decide"].remove("external_evidence_maturity"),"exactly bind")
+ def test_repository_to_causality(self): self.bad(lambda d:d["relationships"][2].update({"allowed_effect":"CAUSALITY_INFERENCE"}),"schema")
+ def test_repository_to_mechanism(self): self.bad(lambda d:d["relationships"][2].update({"allowed_effect":"MECHANISM_CONFIRMATION"}),"schema")
+ def test_language_l7(self): self.bad(lambda d:d["relationships"][1]["prohibited_effects"].remove("CREATE_L7"),"relationship coverage")
+ def test_abstain_not_reject(self): self.bad(lambda d:d["suspension_contracts"][0].update({"non_equivalent_to":["NOT_ASSIGNED","UNKNOWN_TRUTH"]}),"ABSTAIN")
+ def test_not_assigned_not_truth(self): self.bad(lambda d:d["suspension_contracts"][1].update({"non_equivalent_to":["ABSTAIN","REJECT"]}),"NOT_ASSIGNED")
+ def test_body_block_has_reentry(self): self.bad(lambda d:d["suspension_contracts"][3].update({"reentry":""}),"schema")
+ def test_dependency_downgrade_binding_required(self): self.bad(lambda d:d.update({"relationships":[r for r in d["relationships"] if r["type"]!="foundation.epistemic_dependency"]}),"schema")
+ def test_withdrawal_anti_rebound_required(self): self.bad(lambda d:d["relationships"][6]["prohibited_effects"].remove("SILENT_REVIVAL"),"relationship coverage")
+ def test_feedback_to_l0_required(self): self.bad(lambda d:d.update({"relationships":[r for r in d["relationships"] if r["type"]!="operations.feedback_to_l0"]}),"schema")
+ def test_model_boundary_required(self): self.bad(lambda d:d.update({"relationships":[r for r in d["relationships"] if r["type"]!="models.capability_boundary"]}),"schema")
+ def test_getnote_external_validity_forbidden(self): self.bad(lambda d:d["relationships"][7]["prohibited_effects"].remove("EXTERNAL_VALIDITY_INFERENCE"),"relationship coverage")
+ def test_privacy_can_block(self): self.assertEqual("BLOCK_OR_NARROW_PUBLICATION",next(r for r in SPEC["relationships"] if r["type"]=="publication.privacy_gate")["allowed_effect"])
+ def test_charter_not_in_non_action_release(self): self.bad(lambda d:d["responsibility_federations"][0]["authorities"].append("charter.normative"),"Charter")
+ def test_charter_required_for_action_release(self): self.bad(lambda d:d["responsibility_federations"][1]["authorities"].remove("charter.normative"),"Charter")
+ def test_human_review_not_machine_maturity(self): self.bad(lambda d:next(o for o in d["obligation_inventory"] if o["id"]=="K4_SOURCE_FAMILY_INDEPENDENCE").update({"coverage":"MACHINE_ENFORCED"}),"may not be machine")
+ def test_unbound_ceiling_order_preserved(self): self.bad(lambda d:next(o for o in d["obligation_inventory"] if o["id"]=="UNIVERSAL_CEILING_ORDER").update({"coverage":"MACHINE_ENFORCED"}),"UNBOUND")
 if __name__=="__main__": unittest.main()

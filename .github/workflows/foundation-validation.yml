@@ -115,6 +115,10 @@ jobs:
         run: |
           python3 tools/language_thought/validate_language_thought.py
           python3 -m unittest tests.test_language_thought_plane
+      - name: Validate epistemic governance referential kernel
+        run: |
+          python3 tools/validate_epistemic_governance_relationships.py data/governance/epistemic-governance-relationships.json --repo-root .
+          python3 -m unittest tests.test_epistemic_governance_relationships -v
       - run: python3 -m unittest tests.foundation.test_foundation
       - run: python3 -m unittest tests.foundation.test_claim_governance
       - run: python3 -m unittest tests.foundation.test_function_asset_closure
