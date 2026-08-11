@@ -93,20 +93,20 @@ Status: PASS locally for cumulative release candidate Step 003. 边界：This is
 <a id="reading-hr-077438a238642315"></a>
 ## Epistemic Governance Kernel and Federated Planes
 
-**状态：** `CANDIDATE_OR_PENDING_SOURCE` · **主题：** `ARCHITECTURE_GOVERNANCE`
+**状态：** `HISTORICAL_COMPLETION_RECORD` · **主题：** `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
 
 ### 1 分钟
 
-Status: CANDIDATE — READY FOR GPT OWNER REVIEW ONLY Architecture disposition: FEDERATEDARCHITECTUREONLY Alias: Knowledge Qualification Federation 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+Status: OWNERACCEPTEDWITHEXPLICITRESIDUALS Architecture disposition: FEDERATEDARCHITECTUREONLY Alias: Knowledge Qualification Federation 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 
 ### 5 分钟
 
 - 来源要点（导航摘录，不得视为当前断言）：主题：Epistemic Governance Kernel and Federated Planes
-- 来源要点（导航摘录，不得视为当前断言）：Status: CANDIDATE — READY FOR GPT OWNER REVIEW ONLY Architecture disposition: FEDERATEDARCHITECTUREONLY Alias: Knowledge Qualification Federation
+- 来源要点（导航摘录，不得视为当前断言）：Status: OWNERACCEPTEDWITHEXPLICITRESIDUALS Architecture disposition: FEDERATEDARCHITECTUREONLY Alias: Knowledge Qualification Federation
+- 来源要点（导航摘录，不得视为当前断言）：当前项目/架构状态为 OWNERACCEPTEDWITHEXPLICITRESIDUALS。这里的 Owner acceptance 只表示项目、架构边界与正式公开发布资格已获接受；它不是外部真理、FORMALKNOWLEDGE、同行评审、普适有效性或任何 claim-level EPISTEMICALLYACCEPTED。
 - 来源要点（导航摘录，不得视为当前断言）：Epistemic Governance Kernel and Federated Planes（认识论治理内核与联邦平面）是一组只记录共享禁升规则和类型化交接的引用内核；它约束点火中各自独立负责的认识论、语言、价值、行动、工程和出版平面，但不取代它们的局部状态与真值权威。
 - 来源要点（导航摘录，不得视为当前断言）：这不是一个今天新发明的“元元协议”。它是对仓库中已经反复运行的接口第一次做整体识别和显式绑定。独立反统一审查裁定：当前证据支持阶段性成熟的 federation，不足以证明一个共享状态机或单一生命周期意义上的统一架构。
 - 来源要点（导航摘录，不得视为当前断言）：它管理：对象如何回到 canonical authority，跨系统关系允许推出什么、禁止推出什么，公开措辞如何受来源与 claim ceiling 约束，以及降级、替代和撤回怎样向下游传播。
-- 来源要点（导航摘录，不得视为当前断言）：Foundation 局部记录中的 M/E、proof、evidence、disposition 或 ceiling 值；
 
 ### 完整阅读
 

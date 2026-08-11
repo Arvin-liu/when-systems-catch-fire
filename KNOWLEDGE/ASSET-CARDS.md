@@ -137,7 +137,7 @@
 <a id="asset-hr-052d55fd7ec8bacd"></a>
 - [独立复核主报告：脱不花×李丹阳长谈碰撞（IGNITION-20260709-056 第二视角）](./cards/part-002.md#asset-hr-052d55fd7ec8bacd) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-052D55FD7EC8BACD`
 <a id="asset-hr-077438a238642315"></a>
-- [Epistemic Governance Kernel and Federated Planes](./cards/part-002.md#asset-hr-077438a238642315) — `RESULT_OR_ARTICLE` · `CANDIDATE_OR_PENDING_SOURCE` · `HR-077438A238642315`
+- [Epistemic Governance Kernel and Federated Planes](./cards/part-002.md#asset-hr-077438a238642315) — `RESULT_OR_ARTICLE` · `HISTORICAL_COMPLETION_RECORD` · `HR-077438A238642315`
 <a id="asset-hr-07eaa526c5114401"></a>
 - [持续自我纠错引擎](./cards/part-002.md#asset-hr-07eaa526c5114401) — `RESULT_OR_ARTICLE` · `CURRENT_CORRECTION_RECORD` · `HR-07EAA526C5114401`
 <a id="asset-hr-081b7e1fafaa5756"></a>

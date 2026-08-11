@@ -30,12 +30,12 @@
   "function_registry_records": 7199,
   "historical_aliases": 5,
   "historical_result_audit": {
-    "CURRENT_OR_SCOPED_SOURCE": 264,
+    "CURRENT_OR_SCOPED_SOURCE": 263,
     "MACHINE_ONLY": 25041,
     "NOT_MEANINGFUL_PUBLIC_CHANGE": 24,
     "SOURCE_MISSING": 0,
     "STALE_OR_INTERMEDIATE": 24,
-    "SUPERSEDED_OR_WITHDRAWN": 6
+    "SUPERSEDED_OR_WITHDRAWN": 7
   },
   "layered_reading_records": 294,
   "material_nonfunction_claim_cards": 51,

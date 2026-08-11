@@ -130,7 +130,7 @@
 - **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
 - **问题：** 此来源记录了什么：Epistemic Governance Kernel and Federated Planes？
 - **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
-- **来源摘要：** Status: CANDIDATE — READY FOR GPT OWNER REVIEW ONLY Architecture disposition: FEDERATEDARCHITECTUREONLY Alias: Knowledge Qualification Federation
+- **来源摘要：** Status: OWNERACCEPTEDWITHEXPLICITRESIDUALS Architecture disposition: FEDERATEDARCHITECTUREONLY Alias: Knowledge Qualification Federation
 - **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
 - **变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.

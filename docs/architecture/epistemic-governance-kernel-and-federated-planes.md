@@ -1,6 +1,6 @@
 # Epistemic Governance Kernel and Federated Planes
 
-Status: `OWNER_ACCEPTED_WITH_EXPLICIT_RESIDUALS`<br>
+Status: `OWNER_ACCEPTED_WITH_EXPLICIT_RESIDUALS`
 Architecture disposition: `FEDERATED_ARCHITECTURE_ONLY`  
 Alias: **Knowledge Qualification Federation**
 

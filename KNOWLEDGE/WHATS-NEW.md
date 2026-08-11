@@ -5,11 +5,11 @@
 ## 2026
 
 <a id="change-chg-epistemic-governance-r1-20260811"></a>
-### 2026-08-11 · 认识论治理内核与联邦平面 R1 候选
+### 2026-08-11 · 认识论治理内核与联邦平面 R1
 
 - **类型：** `MODEL_OR_ARCHITECTURE`
-- **状态：** `CANDIDATE_FOR_OWNER_REVIEW_WITH_EXPLICIT_RESIDUALS`
-- **变化：** 把点火已有的来源、命题、形式对象、证据、审查、公开上限、悬置、降级与撤回接口显式化为 referential kernel；独立反统一裁决只支持 FEDERATED_ARCHITECTURE_ONLY，外部有效性未建立。
+- **状态：** `OWNER_ACCEPTED_WITH_EXPLICIT_RESIDUALS`
+- **变化：** Owner 以 OWNER_ACCEPTED_WITH_EXPLICIT_RESIDUALS 接受项目/架构边界与正式公开发布资格；独立反统一裁决仍只支持 FEDERATED_ARCHITECTURE_ONLY，四维成熟度固定为 PHASE_MATURE_INTERNAL、FEDERATED_MODEL_SUPPORTED、OWNER_ACCEPTED_WITH_EXPLICIT_RESIDUALS、NOT_ESTABLISHED，外部有效性未建立。
 - **来源：** [epistemic-governance-kernel-and-federated-planes.md](../docs/architecture/epistemic-governance-kernel-and-federated-planes.md) · [epistemic-governance-relationships.json](../data/governance/epistemic-governance-relationships.json) · [getnote-1329-epistemic-governance-pressure-test.md](../docs/architecture/getnote-1329-epistemic-governance-pressure-test.md)
 
 <a id="change-src-hr-f369ae0cee850786"></a>
@@ -25,8 +25,8 @@
 ### 2026-08-11 · Epistemic Governance Kernel and Federated Planes
 
 - **类型：** `MODEL_OR_ARCHITECTURE`
-- **状态：** `CANDIDATE_OR_PENDING_SOURCE`
-- **变化：** Status: CANDIDATE — READY FOR GPT OWNER REVIEW ONLY Architecture disposition: FEDERATEDARCHITECTUREONLY Alias: Knowledge Qualification Federation
+- **状态：** `HISTORICAL_COMPLETION_RECORD`
+- **变化：** Status: OWNERACCEPTEDWITHEXPLICITRESIDUALS Architecture disposition: FEDERATEDARCHITECTUREONLY Alias: Knowledge Qualification Federation
 - **来源：** [epistemic-governance-kernel-and-federated-planes.md](../docs/architecture/epistemic-governance-kernel-and-federated-planes.md)
 - **资产卡：** [HR-077438A238642315](./ASSET-CARDS.md#asset-hr-077438a238642315)
 

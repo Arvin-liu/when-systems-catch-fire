@@ -92,9 +92,9 @@
       "change_id": "CHG-EPISTEMIC-GOVERNANCE-R1-20260811",
       "date": "2026-08-11",
       "change_type": "MODEL_OR_ARCHITECTURE",
-      "title": "认识论治理内核与联邦平面 R1 候选",
-      "summary": "把点火已有的来源、命题、形式对象、证据、审查、公开上限、悬置、降级与撤回接口显式化为 referential kernel；独立反统一裁决只支持 FEDERATED_ARCHITECTURE_ONLY，外部有效性未建立。",
-      "status": "CANDIDATE_FOR_OWNER_REVIEW_WITH_EXPLICIT_RESIDUALS",
+      "title": "认识论治理内核与联邦平面 R1",
+      "summary": "Owner 以 OWNER_ACCEPTED_WITH_EXPLICIT_RESIDUALS 接受项目/架构边界与正式公开发布资格；独立反统一裁决仍只支持 FEDERATED_ARCHITECTURE_ONLY，四维成熟度固定为 PHASE_MATURE_INTERNAL、FEDERATED_MODEL_SUPPORTED、OWNER_ACCEPTED_WITH_EXPLICIT_RESIDUALS、NOT_ESTABLISHED，外部有效性未建立。",
+      "status": "OWNER_ACCEPTED_WITH_EXPLICIT_RESIDUALS",
       "sources": [
         "docs/architecture/epistemic-governance-kernel-and-federated-planes.md",
         "data/governance/epistemic-governance-relationships.json",

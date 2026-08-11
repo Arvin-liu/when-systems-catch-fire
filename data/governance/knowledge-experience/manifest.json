@@ -10,16 +10,16 @@
     "subject_indexes": 61
   },
   "generated_outputs": {
-    "KNOWLEDGE/ASSET-CARDS.md": "5580f2d5e98df54bd24079634d9cf58b9edf84f8e776ba972584ddbc2e7ed1f9",
-    "KNOWLEDGE/COVERAGE.md": "961db47368ef2dfab1b794d0ebe60c5dce7f57998bbe4e4c6abaf61c8c1b3449",
+    "KNOWLEDGE/ASSET-CARDS.md": "f997a3a1aed085949bb15bb4311440d0a5c241a5c46e4d07c9cb4791177a19dd",
+    "KNOWLEDGE/COVERAGE.md": "a6337fb6340b3f29b6b7fd27c6f1e9a6ef18c308afab4240cc949347b7901db2",
     "KNOWLEDGE/EVOLUTION.md": "d8fdb0e49b5873cb40f7059ab49f8300b1909323494452c6861f925ee1ec7abe",
-    "KNOWLEDGE/MAP.md": "5493c7cc69f6e745401e190dac6af370df686817cc44df1eb8dfcdc09978e422",
-    "KNOWLEDGE/READING-LAYERS.md": "105a30a241efa940170e89df67e4d4048848db5f4e55dba2f21030074a055b18",
+    "KNOWLEDGE/MAP.md": "07f84aaa7253e5f8cb91016799052f40c8d8c504883820fee8429f850abf6c0e",
+    "KNOWLEDGE/READING-LAYERS.md": "d9e72115867a5be0b7c5f82c1a950795239af6a4f24ee1395d40fe2bb85c9d78",
     "KNOWLEDGE/README.md": "120b6cb24778ad2c2122f849905beaf2fcfaf21c4d52686a21f549f3b9888cf4",
     "KNOWLEDGE/SEARCH.md": "f0752b532bff8c00c0cecbc1257c9d779ab4bd227d1542a48848d5787eb9a395",
-    "KNOWLEDGE/WHATS-NEW.md": "467ef6fc7e2bbe86e14a0b1ee48e0c8c4b7dafc668217da52d974aa7f26e9154",
+    "KNOWLEDGE/WHATS-NEW.md": "df07624b1353e0e0b91fcb3e7b8e7daf5290516ca340fd9e537c724bc021d6e4",
     "KNOWLEDGE/cards/part-001.md": "4591921872408522fdb84f20cba52a43d25c00331d73a8fdd4de8c8bb2062879",
-    "KNOWLEDGE/cards/part-002.md": "82ac2e03119ec2440e0bd8320dd8b7deae7563035d71416f445a0cedd7bb2379",
+    "KNOWLEDGE/cards/part-002.md": "8cefb8c75b1ae60807e0280277377770d1389f71f3ff623be039bd2bf2b05397",
     "KNOWLEDGE/cards/part-003.md": "6ea6ee7fc33f5b582c404144a98d91870c3fc5f479f5dee9e23cd896818b323f",
     "KNOWLEDGE/cards/part-004.md": "50618dbfe3299a315c81c3ce108fac6875815819413e05f5083f053ff648ecb9",
     "KNOWLEDGE/cards/part-005.md": "4508fd24509054a9732e4ad4022a10a076cf50cd93227e144ace66510a0b65a7",
@@ -33,7 +33,7 @@
     "KNOWLEDGE/indexes/architecture_governance/part-004.md": "de09bed14b5cf0c152160bb6b3921d5dd4a2b9ed6707e8c71e239dbe727735a1",
     "KNOWLEDGE/indexes/architecture_governance/part-005.md": "fa911adc9a5dad098d88e6f34b47f770181868cb4f41a202754f3b7e1b7a6bf9",
     "KNOWLEDGE/indexes/architecture_governance/part-006.md": "13a9ab1cce349e503fde89c70fbd5617fab0733a76e094ee0760707cd085bf41",
-    "KNOWLEDGE/indexes/architecture_governance/part-007.md": "dcd533a42a6d272a3000130274bdf6a978070485d965311f0beca7920d5a8794",
+    "KNOWLEDGE/indexes/architecture_governance/part-007.md": "955c126ac2fc1de0996469a7c6dcac02c2855ee86c10e16e9c12617137e467e8",
     "KNOWLEDGE/indexes/architecture_governance/part-008.md": "b93f450318b2ae11a3d5999eb904c3753534e3a6eaa955f0877642f628ebe0ec",
     "KNOWLEDGE/indexes/architecture_governance/part-009.md": "032d9abb3aa904d42012fbbbef6158939e0f4e3f85e273cf71adc3187577f04d",
     "KNOWLEDGE/indexes/architecture_governance/part-010.md": "300a1d6a9239ec3ef6515ec35ad5fd3732e147fef393905c09dc87f0fb1fabbf",
@@ -88,11 +88,11 @@
     "KNOWLEDGE/indexes/writing_publication.md": "2bcf9e4d27b5828f0b23d99814d0b9aa45c90749132d1093fb1ad565aebf68c7",
     "KNOWLEDGE/indexes/writing_publication/part-001.md": "b08e2cf6db9101d435daace016f3801008410a435b92a97631e5fe34dba422d2",
     "data/governance/knowledge-experience/alias-index.jsonl": "0007a44ac5c85a7c224643f59a5d48591b22816e7a99a91fad7381ca32b0d8cb",
-    "data/governance/knowledge-experience/asset-cards.jsonl": "6a251a1db3e4501b3f7f41fb7a7699cc559d35d6472c6f883923f890313c7582",
-    "data/governance/knowledge-experience/changes.jsonl": "e63936accff0a249bb957c20f245387e46e37e34108a2f31321d653de52cab4b",
-    "data/governance/knowledge-experience/coverage.json": "83c0c62b8173d2b607e16f78bc1281110e728adb126af6e3ed7558689c821aed",
-    "data/governance/knowledge-experience/layered-reading.jsonl": "a782132e12dd1e1a3ad79b3f182f359db852bba206b9ebe6730542186a88dd61",
-    "data/governance/knowledge-experience/search-index.jsonl": "b2321516d9dbeb8624d0695d1c645d5691b00c5d1b9e3b62a381ec9ae0063a71"
+    "data/governance/knowledge-experience/asset-cards.jsonl": "7470b21a35ef4e779f14df89ebee0e4c0bf909509fb990707a5359baf68d0234",
+    "data/governance/knowledge-experience/changes.jsonl": "d3da0bd9eac09eb73cdff7a611743abe292e3fbb980277edd11e2ae246eca1f3",
+    "data/governance/knowledge-experience/coverage.json": "d0a5384eff3fc2b2efebe4b83f1ef76c517e68f3f31c3a2932e864f70b66da10",
+    "data/governance/knowledge-experience/layered-reading.jsonl": "b57e6a1227172d9aca27f8126b2c2d645ceb906dbd7c73ef27866dd40c0913ce",
+    "data/governance/knowledge-experience/search-index.jsonl": "fd7103a50a7fb98c2e2113fb1a86523f7e085239206e9b1a1c10ea89c77043c3"
   },
   "machine_human_pairs": [
     {
@@ -125,8 +125,8 @@
   "source_inputs": {
     "data/foundation/function-assets/identity-cards.jsonl": "7690ffd4e922db122e169a4c719d82b7bcf4df94a486c0ea90193cfc357a31eb",
     "data/foundation/nonfunction-claims/claim-registry.jsonl": "7c01db15fc38a3ef8c23a48c994811839aa800ecba35ab2daf87d9a591c89168",
-    "data/governance/human-results/result-ledger.jsonl": "6856c9dd51cdcbdf0c0977706bfef13b0f7d1949e6bd6586815e55918f917f03",
-    "data/governance/knowledge-experience/config.json": "738057b56d3973a28867a89a83b95df8cfa78812916e1f82dae362ab7925b5bb",
+    "data/governance/human-results/result-ledger.jsonl": "d60443dad01a5545c0cdd6f6706c0b775b91b9929314e73a5393a6a1263e43eb",
+    "data/governance/knowledge-experience/config.json": "ec9601203f57e28a5e23c649f93848029b21bd79f041576acd6f7d19307d11da",
     "data/governance/knowledge-experience/source-first-seen.json": "896d56ef5da296c83f77c471c4e9b50b9d7e54df2243cb6b23c06b786b45bd26"
   }
 }
