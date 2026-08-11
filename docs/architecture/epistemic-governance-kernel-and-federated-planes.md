@@ -289,7 +289,7 @@ obligation inventory 将每项承诺明确标为 `MACHINE_ENFORCED`、`HUMAN_REV
 |---|---|---|
 | operational | `PHASE_MATURE_INTERNAL` | 多个 authority、gate、lineage、悬置和 correction 已运行；不是外部真值 |
 | conceptual | `FEDERATED_MODEL_SUPPORTED` | 支持 kernel/federation；单一统一生命周期被 STEP04 拒绝 |
-| explicit architecture | `CANDIDATE_FOR_OWNER_REVIEW` | 本文与 machine spec 是新显式投影，不是 unity 既有证明 |
+| explicit architecture | `OWNER_ACCEPTED_WITH_EXPLICIT_RESIDUALS` | Owner 接受的是项目/架构边界与公开发布资格，不是外部真理、形式知识、普适性或 claim-level epistemic acceptance |
 | external validity | `NOT_ESTABLISHED` | 没有独立跨域 replay 或普适性证据 |
 
 不得把四维平均成一个总分。operational 较成熟不能掩盖 external validity 未建立。
