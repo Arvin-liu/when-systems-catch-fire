@@ -4,6 +4,32 @@
 
 ## 2026
 
+<a id="change-chg-epistemic-governance-r1-20260811"></a>
+### 2026-08-11 · 认识论治理内核与联邦平面 R1 候选
+
+- **类型：** `MODEL_OR_ARCHITECTURE`
+- **状态：** `CANDIDATE_FOR_OWNER_REVIEW_WITH_EXPLICIT_RESIDUALS`
+- **变化：** 把点火已有的来源、命题、形式对象、证据、审查、公开上限、悬置、降级与撤回接口显式化为 referential kernel；独立反统一裁决只支持 FEDERATED_ARCHITECTURE_ONLY，外部有效性未建立。
+- **来源：** [epistemic-governance-kernel-and-federated-planes.md](../docs/architecture/epistemic-governance-kernel-and-federated-planes.md) · [epistemic-governance-relationships.json](../data/governance/epistemic-governance-relationships.json) · [getnote-1329-epistemic-governance-pressure-test.md](../docs/architecture/getnote-1329-epistemic-governance-pressure-test.md)
+
+<a id="change-src-hr-f369ae0cee850786"></a>
+### 2026-08-11 · GetNote 1329 pipeline as an internal pressure test
+
+- **类型：** `MODEL_OR_ARCHITECTURE`
+- **状态：** `CANDIDATE_OR_PENDING_SOURCE`
+- **变化：** Status: PUBLICATIONSAFEROLEFCANDIDATE Architecture: Epistemic Governance Kernel and Federated Planes Architecture disposition: FEDERATEDARCHITECTUREONLY
+- **来源：** [getnote-1329-epistemic-governance-pressure-test.md](../docs/architecture/getnote-1329-epistemic-governance-pressure-test.md)
+- **资产卡：** [HR-F369AE0CEE850786](./ASSET-CARDS.md#asset-hr-f369ae0cee850786)
+
+<a id="change-src-hr-077438a238642315"></a>
+### 2026-08-11 · Epistemic Governance Kernel and Federated Planes
+
+- **类型：** `MODEL_OR_ARCHITECTURE`
+- **状态：** `CANDIDATE_OR_PENDING_SOURCE`
+- **变化：** Status: CANDIDATE — READY FOR GPT OWNER REVIEW ONLY Architecture disposition: FEDERATEDARCHITECTUREONLY Alias: Knowledge Qualification Federation
+- **来源：** [epistemic-governance-kernel-and-federated-planes.md](../docs/architecture/epistemic-governance-kernel-and-federated-planes.md)
+- **资产卡：** [HR-077438A238642315](./ASSET-CARDS.md#asset-hr-077438a238642315)
+
 <a id="change-src-hr-d6dc7edfc015e4c7"></a>
 ### 2026-08-02 · 《公元1117年：宋徽宗为什么崇信道教？》来源与边界
 

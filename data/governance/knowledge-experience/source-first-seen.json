@@ -7,6 +7,8 @@
     "docs/architecture/compression-integrity-gate.md": "2026-07-15",
     "docs/architecture/distribution-collapse-control-plane.md": "2026-07-15",
     "docs/architecture/effectual-action-plane.md": "2026-07-15",
+    "docs/architecture/epistemic-governance-kernel-and-federated-planes.md": "2026-08-11",
+    "docs/architecture/getnote-1329-epistemic-governance-pressure-test.md": "2026-08-11",
     "docs/architecture/ignition-atlas.md": "2026-07-15",
     "docs/architecture/incremental-execution.md": "2026-07-18",
     "docs/architecture/interactive-system-map.md": "2026-07-17",
@@ -294,7 +296,7 @@
     "新故事/0001-S1-比刀剑更持久的，是共享观念.md": "2026-07-06",
     "新故事/INDEX.md": "2026-07-06"
   },
-  "entry_count": 292,
+  "entry_count": 294,
   "history_requirement": "FULL",
   "schema_version": "1.0.0"
 }

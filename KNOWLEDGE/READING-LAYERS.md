@@ -90,6 +90,28 @@ Status: PASS locally for cumulative release candidate Step 003. 边界：This is
 
 [outputs/collisions/20260711-disobedience-subjectivity/independent-second-angle-audit-056.md](../outputs/collisions/20260711-disobedience-subjectivity/independent-second-angle-audit-056.md)
 
+<a id="reading-hr-077438a238642315"></a>
+## Epistemic Governance Kernel and Federated Planes
+
+**状态：** `CANDIDATE_OR_PENDING_SOURCE` · **主题：** `ARCHITECTURE_GOVERNANCE`
+
+### 1 分钟
+
+Status: CANDIDATE — READY FOR GPT OWNER REVIEW ONLY Architecture disposition: FEDERATEDARCHITECTUREONLY Alias: Knowledge Qualification Federation 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+
+### 5 分钟
+
+- 来源要点（导航摘录，不得视为当前断言）：主题：Epistemic Governance Kernel and Federated Planes
+- 来源要点（导航摘录，不得视为当前断言）：Status: CANDIDATE — READY FOR GPT OWNER REVIEW ONLY Architecture disposition: FEDERATEDARCHITECTUREONLY Alias: Knowledge Qualification Federation
+- 来源要点（导航摘录，不得视为当前断言）：Epistemic Governance Kernel and Federated Planes（认识论治理内核与联邦平面）是一组只记录共享禁升规则和类型化交接的引用内核；它约束点火中各自独立负责的认识论、语言、价值、行动、工程和出版平面，但不取代它们的局部状态与真值权威。
+- 来源要点（导航摘录，不得视为当前断言）：这不是一个今天新发明的“元元协议”。它是对仓库中已经反复运行的接口第一次做整体识别和显式绑定。独立反统一审查裁定：当前证据支持阶段性成熟的 federation，不足以证明一个共享状态机或单一生命周期意义上的统一架构。
+- 来源要点（导航摘录，不得视为当前断言）：它管理：对象如何回到 canonical authority，跨系统关系允许推出什么、禁止推出什么，公开措辞如何受来源与 claim ceiling 约束，以及降级、替代和撤回怎样向下游传播。
+- 来源要点（导航摘录，不得视为当前断言）：Foundation 局部记录中的 M/E、proof、evidence、disposition 或 ceiling 值；
+
+### 完整阅读
+
+[docs/architecture/epistemic-governance-kernel-and-federated-planes.md](../docs/architecture/epistemic-governance-kernel-and-federated-planes.md)
+
 <a id="reading-hr-07eaa526c5114401"></a>
 ## 持续自我纠错引擎
 
@@ -6082,6 +6104,28 @@ SPDX-License-Identifier: CC-BY-SA-4.0 OR CC-BY-NC-SA-4.0 边界：This is a cons
 ### 完整阅读
 
 [docs/governance/README.md](../docs/governance/README.md)
+
+<a id="reading-hr-f369ae0cee850786"></a>
+## GetNote 1329 pipeline as an internal pressure test
+
+**状态：** `CANDIDATE_OR_PENDING_SOURCE` · **主题：** `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`
+
+### 1 分钟
+
+Status: PUBLICATIONSAFEROLEFCANDIDATE Architecture: Epistemic Governance Kernel and Federated Planes Architecture disposition: FEDERATEDARCHITECTUREONLY 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+
+### 5 分钟
+
+- 来源要点（导航摘录，不得视为当前断言）：主题：GetNote 1329 pipeline as an internal pressure test
+- 来源要点（导航摘录，不得视为当前断言）：Status: PUBLICATIONSAFEROLEFCANDIDATE Architecture: Epistemic Governance Kernel and Federated Planes Architecture disposition: FEDERATEDARCHITECTUREONLY
+- 来源要点（导航摘录，不得视为当前断言）：主题：Boundary and conclusion
+- 来源要点（导航摘录，不得视为当前断言）：The frozen public aggregate records 160 selected notes, 154 claim-bearing notes, 6 body-recovery-blocked notes, 1329 claim rows and 1328 normalized distinct claim texts. It records ceilings of 931 EVIDENTIALLYSUPPORTED, 307 SEMANTICALLYINTERPRETED, 3 STRUCTURALLYVALID and 88 NOTASSIGNED; adjudication closes as 1241 terminal decisions plus 38 ABSTAIN plus 50…
+- 来源要点（导航摘录，不得视为当前断言）：This is evidence that Pointfire's internal source, claim, review, ceiling, suspension and publication hand-offs were exercised under volume and incomplete inputs. It is not evidence of 1329 independent facts, 1329 externally verified claims, or general validity of the architecture. The row count measures a projection. The distinct-text count measures normali…
+- 来源要点（导航摘录，不得视为当前断言）：主题：Pipeline-to-automata mapping
+
+### 完整阅读
+
+[docs/architecture/getnote-1329-epistemic-governance-pressure-test.md](../docs/architecture/getnote-1329-epistemic-governance-pressure-test.md)
 
 <a id="reading-hr-f3d97a665e74558a"></a>
 ## 迭代生命周期模型（事件溯源 · 任务 108 引入）

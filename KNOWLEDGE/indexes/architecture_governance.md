@@ -10,13 +10,13 @@
 - [第 004 片](./architecture_governance/part-004.md)：1501—2000；def build() -> dict\[Path, str\]: → def main():
 - [第 005 片](./architecture_governance/part-005.md)：2001—2500；def main(): → def test_current_lifecycle_validated_by_sealed_era(self):
 - [第 006 片](./architecture_governance/part-006.md)：2501—3000；def test_current_surfaces_are_visible_paired_and_reachable(self): → def test_runner_joint_verdict_cannot_ignore_either_surface(self):
-- [第 007 片](./architecture_governance/part-007.md)：3001—3500；def test_runtime_error_div0(self): → evidence_rows.append({
-- [第 008 片](./architecture_governance/part-008.md)：3501—4000；evidence_status = "EMPIRICAL_EVIDENCE_AVAILABLE" if any("evidence" in str(e).lower() or "验证" in str(e) for e in known_ev → link: "统一案例总表/0725-C-0730-宋徽宗文化工程案例.md"
-- [第 009 片](./architecture_governance/part-009.md)：4001—4500；link: "统一案例总表/0728-C-0733-脱不花三十年只靠劳动所得.md" → require(authority.get("component_registry") == "data/operations/project-components.json", "map projection has wrong component authority")
-- [第 010 片](./architecture_governance/part-010.md)：4501—5000；require(binding\["closure_complete"\] and not binding\["unresolved_residue"\], f"{source}: unresolved propagation residue bl → title: "吴军财富规划笔记碰撞验证"
-- [第 011 片](./architecture_governance/part-011.md)：5001—5500；title: "四卡点统一根源" → \| evidence_required \| array\[string\] \| 是 \| 所需证据 \|
-- [第 012 片](./architecture_governance/part-012.md)：5501—6000；\| evidence_status \| EMPIRICAL_EVIDENCE_AVAILABLE, NO_EMPIRICAL_EVIDENCE, INTERNAL_REFERENCE_ONLY \| → 何刚强调信息权与决策权对称，但现实里并不存在保证这种对称恒成立的万能算法。
-- [第 013 片](./architecture_governance/part-013.md)：6001—6500；何刚强调信息权和决策权对称，实质上是在强调真实退出权和认同验证的共同成立。 → 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0536-C-541-宇宙加速膨胀 — Φ远尾区d2Φ.md`
-- [第 014 片](./architecture_governance/part-014.md)：6501—7000；原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0539-C-544-拓扑绝缘体 — 体态3D门控否决,表面=2D门控边界.md` → 本宪章处于点火项目的最高规范层，但它不是不可讨论的经文。底线原则与具体解释应当分离：底线用于保护生命共同体、未知主体、维护者可持续性和反俘获边界；具体解释可以在公开理由、证据、影响和异议中修订。
-- [第 015 片](./architecture_governance/part-015.md)：7001—7500；本层基础设施为文档/模板，不引入新数据文件结构；以下校验器仍须通过（见仓库 `tools/`）： → 需要代码、实验、benchmark、可复现评测。
-- [第 016 片](./architecture_governance/part-016.md)：7501—7620；需要单独深挖的协议：V2、V3（仅事实度量验证，非重新审核）。** → ：晋级门槛 + 初版验证器。machine_eligible=0/12，但验证器字段与 Schema 不一致。
+- [第 007 片](./architecture_governance/part-007.md)：3001—3500；def test_runtime_error_div0(self): → evidence_rows = \[\]
+- [第 008 片](./architecture_governance/part-008.md)：3501—4000；evidence_rows.append({ → link: "统一案例总表/0723-C-0728-写作与知识沉淀开源项目规划.md"
+- [第 009 片](./architecture_governance/part-009.md)：4001—4500；link: "统一案例总表/0724-C-0729-两张表知识库DOCX文件管理.md" → require(any("null" in item for item in classes), "evidence: null finding missing", errors)
+- [第 010 片](./architecture_governance/part-010.md)：4501—5000；require(any("positive" in item for item in classes), "evidence: positive finding missing", errors) → title: "厕所空间验证"
+- [第 011 片](./architecture_governance/part-011.md)：5001—5500；title: "同质组合与异质组合权衡验证" → \| evidence_regimes \| `data/evidence_regimes.json` / `.csv` \| `docs/evidence_regime_library.md` \| 已生成（P1-5） \|
+- [第 012 片](./architecture_governance/part-012.md)：5501—6000；\| evidence_regimes \| `docs/evidence_regime_library.md` \| 半自动抽取 \| → 传统兵力数、“统一崩溃阈值”、“百次冲锋”和全球罕见性等说法仍需外部历史核验。
+- [第 013 片](./architecture_governance/part-013.md)：6001—6500；但共享观念没有消失。它以不同的形式，在人类社会反复出现。 → 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0534-C-539-E=mc2 — mc2=信息容量×信息速度2.md`
+- [第 014 片](./architecture_governance/part-014.md)：6501—7000；原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0535-C-540-黑洞无毛 — 4维时空3方向ε-0,径向被门控否决.md` → 本地 163 PASS 与 GitHub function-os-ci 是**两条独立证据链**，CI 必须独立变绿。
+- [第 015 片](./architecture_governance/part-015.md)：7001—7500；本地 unittest/pytest 164 PASS 是**独立证据链**；GitHub function-os-ci 全绿是**另一条证据链**，二者均已满足。 → 隐性层级/分层/荣誉阶层：**零精确命中**（现有 D94 向下兼容损耗提及组织层级，但非「指标排名制造隐性社会分层」）
+- [第 016 片](./architecture_governance/part-016.md)：7501—7622；隐性层级：**零精确命中**（同社会学 NF-X1） → ：晋级门槛 + 初版验证器。machine_eligible=0/12，但验证器字段与 Schema 不一致。

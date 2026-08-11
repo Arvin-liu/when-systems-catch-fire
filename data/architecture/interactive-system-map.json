@@ -299,6 +299,14 @@
       "lifecycle_status": "current"
     },
     {
+      "id": "epistemic_governance_kernel",
+      "label": "认识论治理内核与联邦平面",
+      "group": "governance",
+      "target": "docs/architecture/epistemic-governance-kernel-and-federated-planes.md",
+      "description": "引用既有 authority、类型化 handoff 与禁止升级边；不复制局部状态，不是 L7 或统一真值层。",
+      "lifecycle_status": "draft_candidate"
+    },
+    {
       "id": "copyright_governance_history_remediation",
       "label": "版权治理-历史整改注册表",
       "group": "governance",
@@ -923,6 +931,46 @@
       "label": "材料分类",
       "relation_class": "validates",
       "relation_domain": "repository_dependency"
+    },
+    {
+      "id": "map_foundation_epistemic_kernel",
+      "source": "foundation",
+      "target": "epistemic_governance_kernel",
+      "label": "局部 authority 引用",
+      "relation_class": "projects",
+      "relation_domain": "repository_dependency"
+    },
+    {
+      "id": "map_language_epistemic_kernel",
+      "source": "language_thought_plane",
+      "target": "epistemic_governance_kernel",
+      "label": "framing / provenance handoff",
+      "relation_class": "synchronization_requires",
+      "relation_domain": "synchronization_obligation"
+    },
+    {
+      "id": "map_charter_epistemic_kernel",
+      "source": "charter",
+      "target": "epistemic_governance_kernel",
+      "label": "行动许可边界",
+      "relation_class": "governance_constrains",
+      "relation_domain": "synchronization_obligation"
+    },
+    {
+      "id": "map_epistemic_kernel_l6",
+      "source": "epistemic_governance_kernel",
+      "target": "l6",
+      "label": "ceiling / provenance / withdrawal route",
+      "relation_class": "constraint",
+      "relation_domain": "synchronization_obligation"
+    },
+    {
+      "id": "map_epistemic_kernel_no_truth",
+      "source": "epistemic_governance_kernel",
+      "target": "no_truth_upgrade",
+      "label": "联邦内核不制造真值",
+      "relation_class": "constraint",
+      "relation_domain": "synchronization_obligation"
     }
   ]
 }

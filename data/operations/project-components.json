@@ -94,6 +94,7 @@
         "copyright_governance_publication_gate_validator",
         "copyright_governance_history_remediation",
         "copyright_governance_tests",
+        "epistemic_governance_kernel",
         "human_knowledge_surfaces",
         "licensing"
       ],
@@ -1497,6 +1498,33 @@
       },
       "path_patterns": [
         "docs/governance/charter-system-r1.md"
+      ]
+    },
+    {
+      "authority": "declarative",
+      "canonical_target": "docs/architecture/epistemic-governance-kernel-and-federated-planes.md",
+      "component_id": "epistemic_governance_kernel",
+      "component_type": "governance_constraint",
+      "description": "引用既有 authority、类型化 handoff 与禁止升级边；不复制局部状态，不是 L7 或统一真值层。",
+      "label": "认识论治理内核与联邦平面",
+      "layer_or_overlay": "governance",
+      "lifecycle": {
+        "source": "data/governance/epistemic-governance-relationships.json",
+        "status": "draft_candidate",
+        "version": "R1"
+      },
+      "map_projection": {
+        "group": "governance",
+        "visible": true
+      },
+      "path_patterns": [
+        "docs/architecture/epistemic-governance-kernel-and-federated-planes.md",
+        "docs/architecture/getnote-1329-epistemic-governance-pressure-test.md",
+        "data/governance/epistemic-governance-relationships.json",
+        "data/governance/getnote-1329-epistemic-governance-pressure-test.json",
+        "schemas/governance/epistemic-governance-relationships.schema.json",
+        "tools/validate_epistemic_governance_relationships.py",
+        "tests/test_epistemic_governance_relationships.py"
       ]
     }
   ],
