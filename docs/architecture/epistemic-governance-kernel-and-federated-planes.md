@@ -36,7 +36,7 @@ Foundation、L0–L6、函数身份、未来断言准入、M/E 双轴、claim ce
 5. 历史与失败必须追加保存；
 6. 关系图、成果册和机器 validator 都不能成为第二真值库。
 
-因此，“阶段性成熟”只描述点火仓库内部已经运行的治理接口和 fail-closed 行为；“显式架构成熟”仍处于候选审查阶段，“外部有效性”仍未建立。
+因此，“阶段性成熟”只描述点火仓库内部已经运行的治理接口和 fail-closed 行为；显式架构当前为 `OWNER_ACCEPTED_WITH_EXPLICIT_RESIDUALS`，外部有效性仍为 `NOT_ESTABLISHED`。
 
 ## Governed-object taxonomy
 
