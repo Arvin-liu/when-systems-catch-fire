@@ -1,8 +1,10 @@
 # Epistemic Governance Kernel and Federated Planes
 
-Status: `CANDIDATE — READY FOR GPT OWNER REVIEW ONLY`  
+Status: `OWNER_ACCEPTED_WITH_EXPLICIT_RESIDUALS`<br>
 Architecture disposition: `FEDERATED_ARCHITECTURE_ONLY`  
 Alias: **Knowledge Qualification Federation**
+
+当前项目/架构状态为 `OWNER_ACCEPTED_WITH_EXPLICIT_RESIDUALS`。这里的 Owner acceptance 只表示项目、架构边界与正式公开发布资格已获接受；它不是外部真理、`FORMAL_KNOWLEDGE`、同行评审、普适有效性或任何 claim-level `EPISTEMICALLY_ACCEPTED`。
 
 ## 一句话定义
 
@@ -303,4 +305,4 @@ obligation inventory 将每项承诺明确标为 `MACHINE_ENFORCED`、`HUMAN_REV
 - machine validator 只能验证 strict schema、引用、封闭 effects、negative profiles、obligation classification 与 closed public routes；
 - 本轮 STEP04 始终是 `FEDERATED_ARCHITECTURE_ONLY`，不得自动升级。
 
-本候选没有 merge `main`，没有 `OWNER_ACCEPTED`、`FORMAL_KNOWLEDGE` 或 `EPISTEMICALLY_ACCEPTED`。它停在 GPT Owner review 之前。
+Owner acceptance 已在本 R1 的项目/架构层持久化，但不改变 `FEDERATED_ARCHITECTURE_ONLY`，也不改变任何 Foundation claim 的状态、M/E、证据上限或历史裁决。正式发布仍受本页残余约束：外部有效性、独立跨域 replay、source-family census 与 universal ceiling order 均未建立或未绑定；GetNote 1329 仍只是内部压力测试，`EPISTEMICALLY_ACCEPTED=0`。
