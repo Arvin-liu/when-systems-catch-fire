@@ -244,6 +244,8 @@ flowchart LR
 
 ## GetNote 1329 条意味着什么
 
+完整的 publication-safe object-automata 映射见 [GetNote 1329 internal pressure test](getnote-1329-epistemic-governance-pressure-test.md)，机器引用映射见 [`data/governance/getnote-1329-epistemic-governance-pressure-test.json`](../../data/governance/getnote-1329-epistemic-governance-pressure-test.json)。
+
 GetNote 管线对 source recovery、atomization、ceiling、ABSTAIN、blocked、conflict、lineage 和 publication boundary 做了大规模内部压力测试。公开口径保留 1329 claim rows、931 `EVIDENTIALLY_SUPPORTED`、307 `SEMANTICALLY_INTERPRETED`、3 `STRUCTURALLY_VALID`、88 `NOT_ASSIGNED`、38 `ABSTAIN`、50 未完成 terminal adjudication、6 个 body-recovery-blocked notes，以及 `EPISTEMICALLY_ACCEPTED=0`。
 
 这些数字不能解释为 1329 个真知识。`EVIDENTIALLY_SUPPORTED` 只表示受控来源/材料层支持；同源重复不成为独立 source family。`EPISTEMICALLY_ACCEPTED=0` 可能说明 fail-closed 架构没有被产量压力迫使伪造接受，但它不证明系统的外部正确性或普适性。

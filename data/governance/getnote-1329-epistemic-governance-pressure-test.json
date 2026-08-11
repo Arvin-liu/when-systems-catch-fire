@@ -1,0 +1,111 @@
+{
+  "spec_version": "1.0.0-candidate",
+  "role": "ROLE-F_GETNOTE_PRESSURE_TEST_ANALYST",
+  "architecture": {
+    "canonical_name": "Epistemic Governance Kernel and Federated Planes",
+    "disposition": "FEDERATED_ARCHITECTURE_ONLY",
+    "authority_mode": "REFERENTIAL_ONLY"
+  },
+  "frozen_inputs": {
+    "private_checkpoint": "37546ddda6284601aca20b07105dae5125b4b1c8",
+    "formal_candidate": "8ab26585159266e715b45bdfd3ea4a5467406381",
+    "control_tip": "34f0c411c5299f9b1674f5407660bcadf41c6a17"
+  },
+  "public_aggregate": {
+    "selected_notes": 160,
+    "claim_bearing_notes": 154,
+    "body_recovery_blocked_notes": 6,
+    "claim_rows": 1329,
+    "normalized_distinct_claim_text": 1328,
+    "ceilings": {
+      "EVIDENTIALLY_SUPPORTED": 931,
+      "SEMANTICALLY_INTERPRETED": 307,
+      "STRUCTURALLY_VALID": 3,
+      "NOT_ASSIGNED": 88
+    },
+    "adjudication": {
+      "terminal": 1241,
+      "ABSTAIN": 38,
+      "not_adjudicated": 50
+    },
+    "EPISTEMICALLY_ACCEPTED": 0
+  },
+  "count_invariants": [
+    "claim_rows != independent_claims",
+    "normalized_distinct_claim_text != independent_source_families",
+    "note_key_count != independent_source_family_count",
+    "sum(ceilings) == claim_rows",
+    "terminal + ABSTAIN + not_adjudicated == claim_rows",
+    "ABSTAIN is separate from terminal adjudication and is not acceptance"
+  ],
+  "automata_handoffs": [
+    {"id":"gf1","object_class":"source","from":"DISCOVER","to":"SOURCE_BOUND","operation":"corpus_selection","constraint":"provenance_and_privacy_bound","forbidden_inference":"corpus_is_complete_or_representative"},
+    {"id":"gf2","object_class":"source_body","from":"SOURCE_BOUND","to":"BODY_RECOVERY_BLOCKED","operation":"body_recovery_failure","constraint":"FAIL_CLOSED","reentry":"provenance_bound_recovery","forbidden_inference":"infer_missing_body"},
+    {"id":"gf3","object_class":"atomic_claim_candidate","from":"SOURCE_BOUND","to":"ATOMIZED","operation":"claim_projection","constraint":"row_identity_is_not_truth_identity","forbidden_inference":"1329_true_or_independent_claims"},
+    {"id":"gf4","object_class":"semantic_projection","from":"ATOMIZED","to":"NORMALIZED","operation":"text_normalization_and_deduplication","constraint":"preserve_lineage_and_collision_risk","forbidden_inference":"semantic_equivalence_or_source_independence"},
+    {"id":"gf5","object_class":"claim_projection","from":"CLASSIFIED","to":"CEILING_ASSIGNED_OR_NOT_ASSIGNED","operation":"local_ceiling_assignment","constraint":"local_vocabulary_no_cross_axis_upgrade","forbidden_inference":"ceiling_equals_truth_or_external_evidence_maturity"},
+    {"id":"gf6","object_class":"evidence_relation","from":"SOURCE_BOUND","to":"SOURCE_FAMILY_ASSESSMENT_OPEN","operation":"source_independence_review","constraint":"duplicates_do_not_create_independence","forbidden_inference":"note_keys_equal_source_families"},
+    {"id":"gf7","object_class":"adjudication","from":"REVIEW","to":"LOCAL_TERMINAL","operation":"scoped_review","constraint":"reviewer_authority_is_scoped","forbidden_inference":"terminality_equals_truth"},
+    {"id":"gf8","object_class":"adjudication","from":"REVIEW","to":"ABSTAIN","operation":"legal_suspension","constraint":"no_forced_verdict","reentry":"new_evidence_clearer_scope_or_different_authority","forbidden_inference":"abstain_equals_reject_or_support"},
+    {"id":"gf9","object_class":"workflow_obligation","from":"REVIEW","to":"NOT_ADJUDICATED","operation":"open_review_debt","constraint":"incomplete_is_not_abstention","forbidden_inference":"open_row_has_hidden_verdict"},
+    {"id":"gf10","object_class":"counterexample_candidate","from":"CONFLICT_CUE","to":"SCOPED_REVIEW","operation":"conflict_retention","constraint":"lexical_marker_is_not_adjudication","forbidden_inference":"conflict_is_proved_or_resolved"},
+    {"id":"gf11","object_class":"result_unit_candidate","from":"LOCAL_CLAIMS","to":"SANITIZED_THEME_PROJECTION","operation":"theme_synthesis","constraint":"aggregation_may_only_narrow_wording","forbidden_inference":"theme_hits_are_additive_evidence"},
+    {"id":"gf12","object_class":"public_projection","from":"SANITIZED_THEME_PROJECTION","to":"PUBLISHED","operation":"results_book_projection","constraint":"provenance_ceiling_privacy_route_required","forbidden_inference":"publication_upgrades_source"},
+    {"id":"gf13","object_class":"claim_or_result_unit","from":"PUBLISHED","to":"REVISED_DOWNGRADED_SUPERSEDED_OR_WITHDRAWN","operation":"future_correction","constraint":"append_only_lineage_and_anti_rebound","forbidden_inference":"silent_historical_rewrite"}
+  ],
+  "prior_mechanisms": [
+    "source_and_provenance_binding",
+    "L0_L6_transformation_spine",
+    "claim_ceiling",
+    "M_E_independence",
+    "proof_evidence_type_separation",
+    "J_plus_J_minus_and_counterexample",
+    "fail_closed_human_review",
+    "dependency_impact_supersession_withdrawal",
+    "private_public_publication_boundary"
+  ],
+  "reinforced_or_revealed": [
+    "body_recovery_blocking_at_corpus_scale",
+    "separation_of_rows_distinct_texts_note_keys_and_source_families",
+    "non_equivalence_of_ABSTAIN_NOT_ASSIGNED_and_not_adjudicated",
+    "multi_ceiling_distribution_without_acceptance_collapse",
+    "conflict_and_alternative_retention",
+    "machine_aggregate_to_human_results_book_handoff"
+  ],
+  "newly_sharpened_interfaces": [
+    "explicit_source_family_assessment",
+    "review_capacity_debt_visibility",
+    "publication_safe_aggregate_contract",
+    "anti_absorption_rule_for_suspended_blocked_and_open_rows"
+  ],
+  "residuals": [
+    "no_frozen_independently_validated_source_family_census",
+    "external_verification_not_globally_completed_or_assessed",
+    "no_independent_cross_domain_replay",
+    "no_lossless_global_ceiling_crosswalk",
+    "suspension_and_block_states_remain_namespaced",
+    "review_capacity_not_a_canonical_maturity_axis",
+    "conflict_markers_require_semantic_adjudication",
+    "six_blocked_sources_and_fifty_open_adjudications"
+  ],
+  "maturity_effect": {
+    "operational": "SUPPORTS_PHASE_MATURE_INTERNAL_WITH_RESIDUALS",
+    "conceptual": "SUPPORTS_TYPED_HANDOFF_FEDERATION_NOT_SINGLE_LIFECYCLE",
+    "explicit_architecture": "SUPPLIES_PRESSURE_TEST_MAPPING_CANDIDATE",
+    "external_validity": "NOT_ESTABLISHED"
+  },
+  "public_sources": [
+    "PUBLICATIONS/pointfire-results-book/GETNOTE-PUBLIC-METRICS.md",
+    "PUBLICATIONS/pointfire-results-book/05-GetNote主题成果.md",
+    "PUBLICATIONS/pointfire-results-book/07-方法系统与负结果.md",
+    "PUBLICATIONS/pointfire-results-book/PUBLICATION-BOUNDARY.md",
+    "docs/architecture/epistemic-governance-kernel-and-federated-planes.md",
+    "data/governance/epistemic-governance-relationships.json"
+  ],
+  "privacy": {
+    "raw_note_bodies_read": false,
+    "note_identifiers_included": false,
+    "private_paths_included": false,
+    "internal_audit_inventory_read_or_included": false
+  }
+}
