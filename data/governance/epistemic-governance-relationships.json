@@ -1,0 +1,38 @@
+{
+  "spec_version": "1.0.0-candidate",
+  "architecture_disposition": "FEDERATED_ARCHITECTURE_ONLY",
+  "canonical_name": "Epistemic Governance Kernel and Federated Planes",
+  "authority_mode": "REFERENTIAL_ONLY",
+  "reviewed_tips": {
+    "private_checkpoint": "3c147539ca6b5ede4919ec803a945a0b3bfef32e",
+    "formal_baseline": "87b723be0ab314454303627dd6b8e266b60403f2"
+  },
+  "namespaces": ["foundation", "language_thought", "charter", "operations", "publication", "history", "human_machine"],
+  "authorities": [
+    {"id":"foundation.claims","decision_domain":"claim_identity_and_qualification","responsibility":"Own claim identity, local qualification and public ceiling fields.","canonical_paths":["data/foundation/nonfunction-claims/claim-registry.jsonl","docs/foundation/claim-governance-and-function-identity.md"],"cannot_decide":["charter.action_permission","publication.privacy_eligibility","owner.acceptance"]},
+    {"id":"foundation.assets","decision_domain":"function_asset_identity","responsibility":"Own function-like asset identity and local maturity coordinates.","canonical_paths":["data/foundation/function-assets/identity-cards.jsonl","schemas/foundation/function-asset-identity-card.schema.json"],"cannot_decide":["external_truth","publication.privacy_eligibility"]},
+    {"id":"language_thought.plane","decision_domain":"language_transformation_and_residue","responsibility":"Own framing delta, transformation and unmapped residue controls.","canonical_paths":["docs/architecture/language-thought-logic-plane.md","schemas/language-thought/transformation-record.schema.json"],"cannot_decide":["truth","mathematical_maturity","external_evidence_maturity"]},
+    {"id":"charter.normative","decision_domain":"action_permission","responsibility":"Permit, refuse, stop or roll back action under Charter values.","canonical_paths":["docs/governance/charter-system-r1.md","docs/governance/charter-system-registry.json"],"cannot_decide":["truth","external_evidence_maturity"]},
+    {"id":"operations.iteration","decision_domain":"execution_and_repository_receipts","responsibility":"Own execution, recovery and exact-state receipts.","canonical_paths":["ITERATION.md","schemas/operations/lifecycle-event.schema.json"],"cannot_decide":["truth","causality","mathematical_maturity","external_evidence_maturity"]},
+    {"id":"publication.results_book","decision_domain":"public_projection_and_navigation","responsibility":"Own bounded public result projections and revision navigation.","canonical_paths":["PUBLICATIONS/pointfire-results-book/README.md","PUBLICATIONS/pointfire-results-book/RESULT-REGISTRY.jsonl"],"cannot_decide":["truth","mathematical_maturity","external_evidence_maturity","owner.acceptance"]},
+    {"id":"history.meta_protocol","decision_domain":"historical_lineage_mapping","responsibility":"Preserve old meta-protocol lineage without reviving withdrawn wording.","canonical_paths":["ARCHITECTURE.md","docs/phi_meta_law.md"],"cannot_decide":["current_truth","external_validity"]},
+    {"id":"human_machine.links","decision_domain":"projection_link_integrity","responsibility":"Require reciprocal human-readable and machine-readable navigation.","canonical_paths":["KNOWLEDGE/README.md","data/foundation/registry-manifest.json"],"cannot_decide":["truth","owner.acceptance"]}
+  ],
+  "responsibility_federations": [
+    {"responsibility":"public_statement_release","authorities":["foundation.claims","publication.results_book","charter.normative"],"overlap_mode":"EXPLICIT_FEDERATION","conflict_rule":"FAIL_CLOSED_ON_INCOMPARABLE_OR_BLOCKING_DECISION"}
+  ],
+  "relationships": [
+    {"id":"r1","type":"foundation.provenance_routes_to","from":"foundation.claims","to":"publication.results_book","authority":"foundation.claims","allowed_inference":"Public projection must reference upstream provenance and local ceiling route.","prohibited_inferences":["publication_implies_truth","publication_raises_ceiling"],"public_surface":true,"ceiling_route":"LOCAL_AUTHORITY_REFERENCE","provenance_route":"REQUIRED"},
+    {"id":"r2","type":"language_thought.transforms_for","from":"language_thought.plane","to":"publication.results_book","authority":"language_thought.plane","allowed_inference":"Language transformation may alter expression while preserving bounded meaning.","prohibited_inferences":["language_creates_L7","language_raises_truth","language_raises_ceiling"]},
+    {"id":"r3","type":"operations.repository_dependency","from":"operations.iteration","to":"publication.results_book","authority":"operations.iteration","allowed_inference":"Repository change may require projection refresh.","prohibited_inferences":["repository_dependency_implies_causality","execution_implies_truth"]},
+    {"id":"r4","type":"publication.historical_mapping","from":"history.meta_protocol","to":"publication.results_book","authority":"history.meta_protocol","allowed_inference":"Current projection must preserve explicit historical disposition and lineage.","prohibited_inferences":["historical_label_implies_current_status","mapping_proves_superiority"]},
+    {"id":"r5","type":"human_machine.bidirectional_link","from":"human_machine.links","to":"publication.results_book","authority":"human_machine.links","allowed_inference":"Human and machine projections are mutually navigable.","prohibited_inferences":["projection_parity_implies_truth"],"reciprocal_id":"r6"},
+    {"id":"r6","type":"human_machine.bidirectional_link","from":"publication.results_book","to":"human_machine.links","authority":"human_machine.links","allowed_inference":"Machine registry points back to a human interpretation surface.","prohibited_inferences":["projection_parity_implies_truth"],"reciprocal_id":"r5"}
+  ],
+  "global_prohibited_inferences": [
+    "publication_implies_truth", "review_implies_external_evidence", "owner_acceptance_implies_external_evidence",
+    "repository_dependency_implies_causality", "copied_local_state", "language_creates_L7",
+    "axis_auto_upgrade", "workflow_implies_truth"
+  ],
+  "human_review_only": ["semantic_equivalence_between_local_ceiling_vocabularies","external_validity","owner_acceptance","incomparable_authority_resolution"]
+}

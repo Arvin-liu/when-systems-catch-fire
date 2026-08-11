@@ -1,0 +1,25 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"https://pointfire.example/schemas/governance/epistemic-governance-relationships.schema.json",
+  "title":"Referential epistemic governance relationship index",
+  "type":"object","additionalProperties":false,
+  "required":["spec_version","architecture_disposition","canonical_name","authority_mode","reviewed_tips","namespaces","authorities","responsibility_federations","relationships","global_prohibited_inferences","human_review_only"],
+  "properties":{
+    "spec_version":{"type":"string"},
+    "architecture_disposition":{"const":"FEDERATED_ARCHITECTURE_ONLY"},
+    "canonical_name":{"const":"Epistemic Governance Kernel and Federated Planes"},
+    "authority_mode":{"const":"REFERENTIAL_ONLY"},
+    "reviewed_tips":{"type":"object","required":["private_checkpoint","formal_baseline"],"additionalProperties":false,"properties":{"private_checkpoint":{"pattern":"^[0-9a-f]{40}$"},"formal_baseline":{"pattern":"^[0-9a-f]{40}$"}}},
+    "namespaces":{"type":"array","minItems":6,"uniqueItems":true,"items":{"type":"string","pattern":"^[a-z][a-z0-9_]*$"}},
+    "authorities":{"type":"array","minItems":1,"items":{"$ref":"#/$defs/authority"}},
+    "responsibility_federations":{"type":"array","minItems":1,"items":{"$ref":"#/$defs/federation"}},
+    "relationships":{"type":"array","minItems":1,"items":{"$ref":"#/$defs/relationship"}},
+    "global_prohibited_inferences":{"type":"array","minItems":8,"uniqueItems":true,"items":{"type":"string"}},
+    "human_review_only":{"type":"array","minItems":1,"uniqueItems":true,"items":{"type":"string"}}
+  },
+  "$defs":{
+    "authority":{"type":"object","additionalProperties":false,"required":["id","decision_domain","responsibility","canonical_paths","cannot_decide"],"properties":{"id":{"type":"string","pattern":"^[a-z_]+\\.[a-z0-9_]+$"},"decision_domain":{"type":"string"},"responsibility":{"type":"string"},"canonical_paths":{"type":"array","minItems":1,"uniqueItems":true,"items":{"type":"string"}},"cannot_decide":{"type":"array","minItems":1,"uniqueItems":true,"items":{"type":"string"}}}},
+    "federation":{"type":"object","additionalProperties":false,"required":["responsibility","authorities","overlap_mode","conflict_rule"],"properties":{"responsibility":{"type":"string"},"authorities":{"type":"array","minItems":2,"uniqueItems":true,"items":{"type":"string"}},"overlap_mode":{"const":"EXPLICIT_FEDERATION"},"conflict_rule":{"const":"FAIL_CLOSED_ON_INCOMPARABLE_OR_BLOCKING_DECISION"}}},
+    "relationship":{"type":"object","additionalProperties":false,"required":["id","type","from","to","authority","allowed_inference","prohibited_inferences"],"properties":{"id":{"type":"string"},"type":{"type":"string","pattern":"^[a-z_]+\\.[a-z0-9_]+$"},"from":{"type":"string"},"to":{"type":"string"},"authority":{"type":"string"},"allowed_inference":{"type":"string"},"prohibited_inferences":{"type":"array","minItems":1,"uniqueItems":true,"items":{"type":"string"}},"public_surface":{"type":"boolean"},"ceiling_route":{"enum":["LOCAL_AUTHORITY_REFERENCE","NOT_APPLICABLE"]},"provenance_route":{"enum":["REQUIRED","NOT_APPLICABLE"]},"reciprocal_id":{"type":"string"}}}
+  }
+}
