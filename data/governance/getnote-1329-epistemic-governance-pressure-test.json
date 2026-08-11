@@ -89,9 +89,9 @@
     "six_blocked_sources_and_fifty_open_adjudications"
   ],
   "maturity_effect": {
-    "operational": "SUPPORTS_PHASE_MATURE_INTERNAL_WITH_RESIDUALS",
-    "conceptual": "SUPPORTS_TYPED_HANDOFF_FEDERATION_NOT_SINGLE_LIFECYCLE",
-    "explicit_architecture": "SUPPLIES_PRESSURE_TEST_MAPPING_CANDIDATE",
+    "operational": "PHASE_MATURE_INTERNAL",
+    "conceptual": "FEDERATED_MODEL_SUPPORTED",
+    "explicit_architecture": "OWNER_ACCEPTED_WITH_EXPLICIT_RESIDUALS",
     "external_validity": "NOT_ESTABLISHED"
   },
   "public_sources": [
