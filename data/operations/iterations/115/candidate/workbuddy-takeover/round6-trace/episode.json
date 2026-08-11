@@ -1,0 +1,321 @@
+{
+  "episode_id": "ep-round6-sleep",
+  "question_version": "v1",
+  "research_type": "deep_research",
+  "strategy_pack": "SYSTEMATIC_EVIDENCE_SYNTHESIS",
+  "state": "BLOCKED",
+  "state_lineage": [
+    "INTAKE",
+    "QUESTION_FROZEN",
+    "EVIDENCE_GATHERING",
+    "ANALYSIS"
+  ],
+  "candidate_claims": [],
+  "evidence_obligations": [
+    {
+      "obligation_id": "obl-1",
+      "claim_id": "unasserted",
+      "obligation_class": "PRIMARY_SOURCE",
+      "status": "OPEN",
+      "severity": "HIGH"
+    }
+  ],
+  "source_identities": [
+    {
+      "source_id": "web:https://pubmed.ncbi.nlm.nih.gov/?term=late+sleep+timing+health",
+      "access_level": "NONE",
+      "inspected_scope": null
+    }
+  ],
+  "independence_groups": [],
+  "access_levels": [],
+  "calculations_required": [],
+  "calculations_completed": [],
+  "competing_explanations": [],
+  "negative_evidence_search_state": {
+    "searched": false,
+    "results": []
+  },
+  "unresolved_residues": [],
+  "blockers": [
+    {
+      "blocker_id": "blk-round6-offline-no-live-tool",
+      "kind": "BLOCKED_WITH_EVIDENCE",
+      "reason": "live public-web evidence tooling unavailable in offline sandbox",
+      "evidence": [
+        "deep-research capability adapters are OFFLINE-SAFE by design (Rounds 1-3): WebAdapter/PdfAdapter open() with no supplied content returns NONE access and an offline error; they never reach the public web.",
+        "no live public-web tool is wired into the runtime in this sandbox; the only search path records DISCOVERED access and performs no fetch.",
+        "1 load-bearing source(s) resolved to NONE access on open (no content available offline): web:https://pubmed.ncbi.nlm.nih.gov/?term=late+sleep+timing+health",
+        "the opened primary-source obligation (obl-1, HIGH) remains OPEN because no live evidence could be gathered; it cannot be satisfied offline.",
+        "TASK.md Round 6 precondition 'required tool access is available' is NOT met, so the live evidence-gathering pilot must not start (no unattended public-web work)."
+      ],
+      "timestamp": "2026-08-04T08:09:37.803772+00:00"
+    }
+  ],
+  "budgets": {},
+  "current_diagnosis": null,
+  "candidate_next_actions": [],
+  "selected_action": {
+    "selected_action": "FETCH_FULL_TEXT",
+    "source_id": "web:https://pubmed.ncbi.nlm.nih.gov/?term=late+sleep+timing+health"
+  },
+  "observations": [
+    {
+      "observation_id": "obs-ebdaf029316b",
+      "action_id": "act-search",
+      "observations": [
+        "discovered 3 web sources for query: late sleep timing delayed circadian phase health 7 8 hours"
+      ],
+      "source_identities": [
+        {
+          "source_id": "web:https://pubmed.ncbi.nlm.nih.gov/?term=late+sleep+timing+health",
+          "access_level": "DISCOVERED"
+        },
+        {
+          "source_id": "web:https://pubmed.ncbi.nlm.nih.gov/?term=delayed+circadian+phase+mortality",
+          "access_level": "DISCOVERED"
+        },
+        {
+          "source_id": "web:https://pubmed.ncbi.nlm.nih.gov/?term=evening+chronotype+metabolic",
+          "access_level": "DISCOVERED"
+        }
+      ],
+      "access_level": "DISCOVERED",
+      "calculation_result": null,
+      "errors": [],
+      "provenance": [
+        {
+          "step": "search",
+          "query": "late sleep timing delayed circadian phase health 7 8 hours"
+        }
+      ],
+      "timestamps": {}
+    },
+    {
+      "observation_id": "obs-2e3eacf92e58",
+      "action_id": "act-open",
+      "observations": [
+        "could not open web:https://pubmed.ncbi.nlm.nih.gov/?term=late+sleep+timing+health: no content available offline"
+      ],
+      "source_identities": [
+        {
+          "source_id": "web:https://pubmed.ncbi.nlm.nih.gov/?term=late+sleep+timing+health",
+          "access_level": "NONE"
+        }
+      ],
+      "access_level": "NONE",
+      "calculation_result": null,
+      "errors": [
+        "offline: web:https://pubmed.ncbi.nlm.nih.gov/?term=late+sleep+timing+health not opened"
+      ],
+      "provenance": [
+        {
+          "step": "open",
+          "source_id": "web:https://pubmed.ncbi.nlm.nih.gov/?term=late+sleep+timing+health"
+        }
+      ],
+      "timestamps": {}
+    }
+  ],
+  "information_delta": null,
+  "stop_conditions": {},
+  "branch_conditions": {},
+  "rollback_conditions": {},
+  "escalation_conditions": {},
+  "provenance": {},
+  "versions": {
+    "schema": "research-os/0.1"
+  },
+  "event_log": [
+    {
+      "event_id": "evt-000000",
+      "timestamp": "2026-08-04T08:09:37.801788+00:00",
+      "type": "state_transition",
+      "actor": "kernel",
+      "payload_sha256": "c099f16eefa8f4d89c7f3f2704de86cc438beeecf0cf09fe1ca03ec7150ed6c1"
+    },
+    {
+      "event_id": "evt-000001",
+      "timestamp": "2026-08-04T08:09:37.802450+00:00",
+      "type": "state_transition",
+      "actor": "kernel",
+      "payload_sha256": "638c923b6230a6fd1dd8961e31da9f75234e7276a11a9c07ce53e14b8f6e5649"
+    },
+    {
+      "event_id": "evt-000002",
+      "timestamp": "2026-08-04T08:09:37.802592+00:00",
+      "type": "state_transition",
+      "actor": "kernel",
+      "payload_sha256": "85078e440fb5bf192c312d1407c7ac6c857aa6b26176a173887393ad0226b33f"
+    },
+    {
+      "event_id": "evt-000003",
+      "timestamp": "2026-08-04T08:09:37.803414+00:00",
+      "type": "observe",
+      "actor": "kernel",
+      "payload_sha256": "aa0107c82ec3b81898face9a0f161a4fb9f9501f297483ad39bd9a6dc03c2704"
+    },
+    {
+      "event_id": "evt-000004",
+      "timestamp": "2026-08-04T08:09:37.803420+00:00",
+      "type": "plan",
+      "actor": "kernel",
+      "payload_sha256": "5f2ae9d67d33518a210a6dc4df744e1a0e0353621f08c8f552a6bcaa5407b6b1"
+    },
+    {
+      "event_id": "evt-000005",
+      "timestamp": "2026-08-04T08:09:37.803543+00:00",
+      "type": "observe",
+      "actor": "kernel",
+      "payload_sha256": "776fd9388fff6e36078e5d5033aadb12001a3a3d81430feacfd60b45da177f91"
+    },
+    {
+      "event_id": "evt-000006",
+      "timestamp": "2026-08-04T08:09:37.803549+00:00",
+      "type": "plan",
+      "actor": "kernel",
+      "payload_sha256": "548d45ecfd9559c268a4a606b67c5a0fee5bf4723c5b81d51e75f95500eac2f5"
+    },
+    {
+      "event_id": "evt-000007",
+      "timestamp": "2026-08-04T08:09:37.803555+00:00",
+      "type": "state_transition",
+      "actor": "kernel",
+      "payload_sha256": "7443f3f3b797fb004d32ee8bc2df1f555093788b82bc1a63d28f65aa273ce5f0"
+    },
+    {
+      "event_id": "evt-000008",
+      "timestamp": "2026-08-04T08:09:37.803778+00:00",
+      "type": "state_transition",
+      "actor": "kernel",
+      "payload_sha256": "c4d7f0051e3362cc162ff5686269d14bb52e889fd6aaae774e29be87eaa1ed8b"
+    }
+  ],
+  "created_at": "2026-08-04T08:09:37.801655+00:00",
+  "updated_at": "2026-08-04T08:09:37.803775+00:00",
+  "brief": {
+    "brief_id": "brief-000",
+    "question_version": "v1",
+    "question": "For adults obtaining approximately 7-8 hours of sleep, what causal or near-causal health effects are supported for consistently late sleep timing or delayed circadian phase, separately from sleep duration, chronotype and social jetlag?",
+    "scope": {
+      "population": "unspecified",
+      "object": "unspecified",
+      "timeframe": "unspecified",
+      "outcomes": []
+    },
+    "strategy_pack": "SYSTEMATIC_EVIDENCE_SYNTHESIS",
+    "frozen": true
+  },
+  "sufficiency_decision": {
+    "decision": "BLOCKED_WITH_EVIDENCE",
+    "registry_pack": "SYSTEMATIC_EVIDENCE_SYNTHESIS",
+    "hard_gates": [
+      {
+        "gate": "scope_frozen",
+        "passed": true,
+        "detail": "episode scope must be frozen (brief present)"
+      },
+      {
+        "gate": "unsupported_material_claim",
+        "passed": true,
+        "detail": "material claims require gathered observations"
+      },
+      {
+        "gate": "open_burden_bearing_severe_obligation",
+        "passed": false,
+        "detail": "no open HIGH/CRITICAL obligation"
+      },
+      {
+        "gate": "unresolved_source_identity",
+        "passed": false,
+        "detail": "all source identities resolved with inspected scope"
+      },
+      {
+        "gate": "citation_attribution_mismatch",
+        "passed": true,
+        "detail": "abstract-only sources must not back material claims"
+      },
+      {
+        "gate": "false_independence_same_family",
+        "passed": true,
+        "detail": "material claims need >=2 independent source families"
+      },
+      {
+        "gate": "high_stakes_evidence_route_failure",
+        "passed": true,
+        "detail": "no failed required computation/tool behind material claims"
+      },
+      {
+        "gate": "unresolved_prompt_injection",
+        "passed": true,
+        "detail": "no unresolved prompt-injection / provenance contamination"
+      },
+      {
+        "gate": "blocked_evidence_route",
+        "passed": false,
+        "detail": "no load-bearing source with NONE access"
+      },
+      {
+        "gate": "missing_required_calc_without_ceiling_reduction",
+        "passed": true,
+        "detail": "quantitative claim needs recomputation or ceiling reduction"
+      }
+    ],
+    "sufficiency_vector": [
+      {
+        "dimension": "obligation_coverage",
+        "value": 0.0,
+        "threshold": 1.0,
+        "met": false
+      },
+      {
+        "dimension": "claim_support_faithfulness",
+        "value": 1.0,
+        "threshold": 0.8,
+        "met": true
+      },
+      {
+        "dimension": "independent_family_coverage",
+        "value": 1.0,
+        "threshold": 1.0,
+        "met": true
+      },
+      {
+        "dimension": "contrary_null_coverage",
+        "value": 1.0,
+        "threshold": 1.0,
+        "met": true
+      },
+      {
+        "dimension": "method_data_recomputation_coverage",
+        "value": 1.0,
+        "threshold": 1.0,
+        "met": true
+      },
+      {
+        "dimension": "claim_ceiling_stability",
+        "value": 1.0,
+        "threshold": 1.0,
+        "met": true
+      },
+      {
+        "dimension": "unresolved_gap_severity",
+        "value": 0.3333,
+        "threshold": 0.0,
+        "met": true
+      },
+      {
+        "dimension": "marginal_information_gain",
+        "value": 1.0,
+        "threshold": 0.0,
+        "met": true
+      }
+    ],
+    "failed_gates": [
+      "open_burden_bearing_severe_obligation",
+      "unresolved_source_identity",
+      "blocked_evidence_route"
+    ],
+    "reason": "hard gate(s) failed: open_burden_bearing_severe_obligation, unresolved_source_identity, blocked_evidence_route"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "source_id": "src-RCT-001",
+  "access_level": "FULL_TEXT",
+  "kind": "clinical_trial",
+  "source_family": "RCT",
+  "discovery_method": "systematic_search",
+  "opened": true,
+  "inspected_scope": "full-text methods + results tables 1-3",
+  "opened_at": "2026-02-01T00:00:00Z",
+  "independence_group": "independent_author"
+}

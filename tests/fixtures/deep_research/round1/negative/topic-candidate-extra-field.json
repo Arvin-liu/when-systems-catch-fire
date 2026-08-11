@@ -1,0 +1,9 @@
+{
+  "_record": "research-topic-candidate",
+  "_expect": "additionalProperties:False rejects unknown fields",
+  "candidate_id": "cand-X",
+  "proposed_question": "q",
+  "source_of_seed": "PROJECT_GAP",
+  "proposed_strategy_pack": "sp",
+  "bogus_field": 1
+}

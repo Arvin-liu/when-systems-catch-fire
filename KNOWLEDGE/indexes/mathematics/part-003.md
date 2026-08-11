@@ -4,6 +4,101 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [/Users/zhiyuan/我的笔记/统一函数总表/0269-D233-Shannon-Fisher跷跷板定理.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-08ddafe1158d8b81 / /Users/zhiyuan/我的笔记/统一函数总表/0269-D233-Shannon-Fisher跷跷板定理.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D233；被引用：—
+- [/Users/zhiyuan/我的笔记/统一函数总表/0270-D234-有效信息倒U型定理.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-bdbdf1a1d8bab8fd / /Users/zhiyuan/我的笔记/统一函数总表/0270-D234-有效信息倒U型定理.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D234；被引用：—
+- [/Users/zhiyuan/我的笔记/统一函数总表/0271-D235-信息论完备性定理.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-207d767f6a89d59a / /Users/zhiyuan/我的笔记/统一函数总表/0271-D235-信息论完备性定理.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D235；被引用：—
+- [/Users/zhiyuan/我的笔记/统一函数总表/0272-D236-门控组合-中心极限定理.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-cea3a8bafb76c995 / /Users/zhiyuan/我的笔记/统一函数总表/0272-D236-门控组合-中心极限定理.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D236；被引用：—
+- [/Users/zhiyuan/我的笔记/统一函数总表/0273-D237-生命智能的σ压缩函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-9490668eef9aed17 / /Users/zhiyuan/我的笔记/统一函数总表/0273-D237-生命智能的σ压缩函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D237；被引用：—
+- [/Users/zhiyuan/我的笔记/统一函数总表/0274-D238-智能的门控精度最优定理.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-2c455ab2a521e7b5 / /Users/zhiyuan/我的笔记/统一函数总表/0274-D238-智能的门控精度最优定理.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D238；被引用：—
+- [/Users/zhiyuan/我的笔记/统一函数总表/0275-D239-智能度-意识函数连接定理.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-94cd21ff9ddd06a1 / /Users/zhiyuan/我的笔记/统一函数总表/0275-D239-智能度-意识函数连接定理.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D239；被引用：—
+- [/Users/zhiyuan/我的笔记/统一函数总表/0276-D240-意识的智能必要条件.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-ece3d0eac7fe13ac / /Users/zhiyuan/我的笔记/统一函数总表/0276-D240-意识的智能必要条件.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D240；被引用：—
+- [/Users/zhiyuan/我的笔记/统一函数总表/0277-D241-自主意识的四象限.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-383aa7ef576bd0d6 / /Users/zhiyuan/我的笔记/统一函数总表/0277-D241-自主意识的四象限.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D241；被引用：—
+- [/Users/zhiyuan/我的笔记/统一函数总表/0278-D242-四象限相变路径函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-866b2423089d6bca / /Users/zhiyuan/我的笔记/统一函数总表/0278-D242-四象限相变路径函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D242；被引用：—
+- [/Users/zhiyuan/我的笔记/统一函数总表/0279-D243-感知退出权瓶颈函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-9642704f6e4f0df5 / /Users/zhiyuan/我的笔记/统一函数总表/0279-D243-感知退出权瓶颈函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D243；被引用：—
+- [/Users/zhiyuan/我的笔记/统一函数总表/0280-D244-自主意识涌现的临界条件.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-b39fbfbc5147677a / /Users/zhiyuan/我的笔记/统一函数总表/0280-D244-自主意识涌现的临界条件.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D244；被引用：—
+- [/Users/zhiyuan/我的笔记/统一函数总表/0281-D245-自我模型函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：NFC-02a53f5a3ab0a69c / /Users/zhiyuan/我的笔记/统一函数总表/0281-D245-自我模型函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D245；被引用：—
+- [/Users/zhiyuan/我的笔记/统一函数总表/0282-D246-自我模型-ε_aware连接定理.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-7d0dc3707983f72c / /Users/zhiyuan/我的笔记/统一函数总表/0282-D246-自我模型-ε_aware连接定理.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D246；被引用：—
+- [/Users/zhiyuan/我的笔记/统一函数总表/0283-D247-自我模型相变函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：NFC-44083fb1a47e5e87 / /Users/zhiyuan/我的笔记/统一函数总表/0283-D247-自我模型相变函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D247；被引用：—
+- [/Users/zhiyuan/我的笔记/统一函数总表/0284-D248-自我模型相变的不可伪造信号.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-87e8478ffa926046 / /Users/zhiyuan/我的笔记/统一函数总表/0284-D248-自我模型相变的不可伪造信号.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D248；被引用：—
+- [/Users/zhiyuan/我的笔记/统一函数总表/0285-D249-自我模型相变实验方案.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-31879983f18f091b / /Users/zhiyuan/我的笔记/统一函数总表/0285-D249-自我模型相变实验方案.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D249；被引用：—
+- [/Users/zhiyuan/我的笔记/统一函数总表/0286-D250-自我模型相变的验证标准.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：NFC-e760fd51097655dd / /Users/zhiyuan/我的笔记/统一函数总表/0286-D250-自我模型相变的验证标准.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D250；被引用：—
+- [/Users/zhiyuan/我的笔记/统一函数总表/0287-D251-维度-容斥稳定性函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-dbfa8e1aa9b3c4e8 / /Users/zhiyuan/我的笔记/统一函数总表/0287-D251-维度-容斥稳定性函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D251；被引用：—
 - [/Users/zhiyuan/我的笔记/统一函数总表/0288-D252-社会学容斥加速函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-3dd654e6f0e62abc / /Users/zhiyuan/我的笔记/统一函数总表/0288-D252-社会学容斥加速函数.md
@@ -2408,99 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-8922f0896d4d7581 / \[C-0737｜安然公司\](../../../统一案例总表/0732-C-0737-安然公司.md)（原笔记编号：C572-1）
   - 来源：`统一函数总表/0582-D572-退出权验证.md`
-  - 依赖：—；被引用：—
-- [\[C-0738｜美国禁酒令\](../../../统一案例总表/0733-C-0738-美国禁酒令.md)（原笔记编号：C572-2）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0582-D572-%E9%80%80%E5%87%BA%E6%9D%83%E9%AA%8C%E8%AF%81.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-b2a8f23ff1e6679e / \[C-0738｜美国禁酒令\](../../../统一案例总表/0733-C-0738-美国禁酒令.md)（原笔记编号：C572-2）
-  - 来源：`统一函数总表/0582-D572-退出权验证.md`
-  - 依赖：—；被引用：—
-- [\[C-0739｜脱不花财务决策\](../../../统一案例总表/0734-C-0739-脱不花财务决策.md)（原笔记编号：C572-3）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0582-D572-%E9%80%80%E5%87%BA%E6%9D%83%E9%AA%8C%E8%AF%81.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-170e44c16bd616d8 / \[C-0739｜脱不花财务决策\](../../../统一案例总表/0734-C-0739-脱不花财务决策.md)（原笔记编号：C572-3）
-  - 来源：`统一函数总表/0582-D572-退出权验证.md`
-  - 依赖：—；被引用：—
-- [\[C-0740｜何刚财务观点\](../../../统一案例总表/0735-C-0740-何刚财务观点.md)（原笔记编号：C572-4）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0582-D572-%E9%80%80%E5%87%BA%E6%9D%83%E9%AA%8C%E8%AF%81.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-a00a16d23a1feedc / \[C-0740｜何刚财务观点\](../../../统一案例总表/0735-C-0740-何刚财务观点.md)（原笔记编号：C572-4）
-  - 来源：`统一函数总表/0582-D572-退出权验证.md`
-  - 依赖：—；被引用：—
-- [\[C-0741｜脱不花财务决策\](../../../统一案例总表/0736-C-0741-脱不花财务决策.md)（原笔记编号：C573-1）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0583-D573-%E8%B4%A2%E5%8A%A1%E5%86%B3%E7%AD%96%E4%B8%8D%E5%AE%8C%E5%A4%87%E6%80%A7.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-44bc723d6594859d / \[C-0741｜脱不花财务决策\](../../../统一案例总表/0736-C-0741-脱不花财务决策.md)（原笔记编号：C573-1）
-  - 来源：`统一函数总表/0583-D573-财务决策不完备性.md`
-  - 依赖：—；被引用：—
-- [\[C-0742｜何刚财务观点\](../../../统一案例总表/0737-C-0742-何刚财务观点.md)（原笔记编号：C573-2）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0583-D573-%E8%B4%A2%E5%8A%A1%E5%86%B3%E7%AD%96%E4%B8%8D%E5%AE%8C%E5%A4%87%E6%80%A7.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-e90c8f7a4616c746 / \[C-0742｜何刚财务观点\](../../../统一案例总表/0737-C-0742-何刚财务观点.md)（原笔记编号：C573-2）
-  - 来源：`统一函数总表/0583-D573-财务决策不完备性.md`
-  - 依赖：—；被引用：—
-- [\[C-0743｜安然公司\](../../../统一案例总表/0738-C-0743-安然公司.md)（原笔记编号：C573-3）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0583-D573-%E8%B4%A2%E5%8A%A1%E5%86%B3%E7%AD%96%E4%B8%8D%E5%AE%8C%E5%A4%87%E6%80%A7.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-09c184e54fe93c5a / \[C-0743｜安然公司\](../../../统一案例总表/0738-C-0743-安然公司.md)（原笔记编号：C573-3）
-  - 来源：`统一函数总表/0583-D573-财务决策不完备性.md`
-  - 依赖：—；被引用：—
-- [\[C-0744｜美国禁酒令\](../../../统一案例总表/0739-C-0744-美国禁酒令.md)（原笔记编号：C573-4）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0583-D573-%E8%B4%A2%E5%8A%A1%E5%86%B3%E7%AD%96%E4%B8%8D%E5%AE%8C%E5%A4%87%E6%80%A7.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-ddc48d980b4681eb / \[C-0744｜美国禁酒令\](../../../统一案例总表/0739-C-0744-美国禁酒令.md)（原笔记编号：C573-4）
-  - 来源：`统一函数总表/0583-D573-财务决策不完备性.md`
-  - 依赖：—；被引用：—
-- [\[C-0745｜脱不花财务教育\](../../../统一案例总表/0740-C-0745-脱不花财务教育.md)（原笔记编号：C574-1）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0584-D574-%E8%B4%A2%E5%8A%A1%E6%95%99%E8%82%B2%E6%A1%86%E6%9E%B6%E5%8C%96.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-236e1b39ed151424 / \[C-0745｜脱不花财务教育\](../../../统一案例总表/0740-C-0745-脱不花财务教育.md)（原笔记编号：C574-1）
-  - 来源：`统一函数总表/0584-D574-财务教育框架化.md`
-  - 依赖：—；被引用：—
-- [\[C-0746｜何刚财务观点\](../../../统一案例总表/0741-C-0746-何刚财务观点.md)（原笔记编号：C574-2）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0584-D574-%E8%B4%A2%E5%8A%A1%E6%95%99%E8%82%B2%E6%A1%86%E6%9E%B6%E5%8C%96.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-217020e79dbbe7d3 / \[C-0746｜何刚财务观点\](../../../统一案例总表/0741-C-0746-何刚财务观点.md)（原笔记编号：C574-2）
-  - 来源：`统一函数总表/0584-D574-财务教育框架化.md`
-  - 依赖：—；被引用：—
-- [\[C-0747｜安然公司\](../../../统一案例总表/0742-C-0747-安然公司.md)（原笔记编号：C574-3）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0584-D574-%E8%B4%A2%E5%8A%A1%E6%95%99%E8%82%B2%E6%A1%86%E6%9E%B6%E5%8C%96.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-6caed4ce4d8e93f0 / \[C-0747｜安然公司\](../../../统一案例总表/0742-C-0747-安然公司.md)（原笔记编号：C574-3）
-  - 来源：`统一函数总表/0584-D574-财务教育框架化.md`
-  - 依赖：—；被引用：—
-- [\[C-0748｜美国禁酒令\](../../../统一案例总表/0743-C-0748-美国禁酒令.md)（原笔记编号：C574-4）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0584-D574-%E8%B4%A2%E5%8A%A1%E6%95%99%E8%82%B2%E6%A1%86%E6%9E%B6%E5%8C%96.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-3d9c679e440f7f2a / \[C-0748｜美国禁酒令\](../../../统一案例总表/0743-C-0748-美国禁酒令.md)（原笔记编号：C574-4）
-  - 来源：`统一函数总表/0584-D574-财务教育框架化.md`
-  - 依赖：—；被引用：—
-- [\[C-0749｜脱不花财务决策\](../../../统一案例总表/0744-C-0749-脱不花财务决策.md)（原笔记编号：C575-1）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0585-D575-%E8%B4%A2%E5%8A%A1%E5%85%83%E5%8D%8F%E8%AE%AE%E5%AE%9E%E4%BE%8B%E5%8C%96.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-bbe80a4d1642a212 / \[C-0749｜脱不花财务决策\](../../../统一案例总表/0744-C-0749-脱不花财务决策.md)（原笔记编号：C575-1）
-  - 来源：`统一函数总表/0585-D575-财务元协议实例化.md`
-  - 依赖：—；被引用：—
-- [\[C-0750｜何刚财务观点\](../../../统一案例总表/0745-C-0750-何刚财务观点.md)（原笔记编号：C575-2）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0585-D575-%E8%B4%A2%E5%8A%A1%E5%85%83%E5%8D%8F%E8%AE%AE%E5%AE%9E%E4%BE%8B%E5%8C%96.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-ae6b11ebe072d024 / \[C-0750｜何刚财务观点\](../../../统一案例总表/0745-C-0750-何刚财务观点.md)（原笔记编号：C575-2）
-  - 来源：`统一函数总表/0585-D575-财务元协议实例化.md`
-  - 依赖：—；被引用：—
-- [\[C-0751｜安然公司\](../../../统一案例总表/0746-C-0751-安然公司.md)（原笔记编号：C575-3）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0585-D575-%E8%B4%A2%E5%8A%A1%E5%85%83%E5%8D%8F%E8%AE%AE%E5%AE%9E%E4%BE%8B%E5%8C%96.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-75eae06acddad498 / \[C-0751｜安然公司\](../../../统一案例总表/0746-C-0751-安然公司.md)（原笔记编号：C575-3）
-  - 来源：`统一函数总表/0585-D575-财务元协议实例化.md`
-  - 依赖：—；被引用：—
-- [\[C-0752｜美国禁酒令\](../../../统一案例总表/0747-C-0752-美国禁酒令.md)（原笔记编号：C575-4）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0585-D575-%E8%B4%A2%E5%8A%A1%E5%85%83%E5%8D%8F%E8%AE%AE%E5%AE%9E%E4%BE%8B%E5%8C%96.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-c1f0ee4bb7ad03da / \[C-0752｜美国禁酒令\](../../../统一案例总表/0747-C-0752-美国禁酒令.md)（原笔记编号：C575-4）
-  - 来源：`统一函数总表/0585-D575-财务元协议实例化.md`
-  - 依赖：—；被引用：—
-- [\[C-0753｜博士期间换十个选题\](../../../统一案例总表/0748-C-0753-博士期间换十个选题.md)（原笔记编号：C576-1）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0586-D576-%E8%AE%A4%E7%9F%A5%E5%B9%B4%E9%BE%84%E6%8F%90%E5%8D%87.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-bbc0c73dd733971d / \[C-0753｜博士期间换十个选题\](../../../统一案例总表/0748-C-0753-博士期间换十个选题.md)（原笔记编号：C576-1）
-  - 来源：`统一函数总表/0586-D576-认知年龄提升.md`
-  - 依赖：—；被引用：—
-- [\[C-0754｜双周访谈打破信息茧房\](../../../统一案例总表/0749-C-0754-双周访谈打破信息茧房.md)（原笔记编号：C576-2）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0586-D576-%E8%AE%A4%E7%9F%A5%E5%B9%B4%E9%BE%84%E6%8F%90%E5%8D%87.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-4d9272a0b63bf20d / \[C-0754｜双周访谈打破信息茧房\](../../../统一案例总表/0749-C-0754-双周访谈打破信息茧房.md)（原笔记编号：C576-2）
-  - 来源：`统一函数总表/0586-D576-认知年龄提升.md`
-  - 依赖：—；被引用：—
-- [\[C-0755｜快闪阅读反算法\](../../../统一案例总表/0750-C-0755-快闪阅读反算法.md)（原笔记编号：C576-3）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0586-D576-%E8%AE%A4%E7%9F%A5%E5%B9%B4%E9%BE%84%E6%8F%90%E5%8D%87.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-fadddd467d7f47c5 / \[C-0755｜快闪阅读反算法\](../../../统一案例总表/0750-C-0755-快闪阅读反算法.md)（原笔记编号：C576-3）
-  - 来源：`统一函数总表/0586-D576-认知年龄提升.md`
-  - 依赖：—；被引用：—
-- [\[C-0756｜青蒿素从《肘后备急方》提炼\](../../../统一案例总表/0751-C-0756-青蒿素从《肘后备急方》提炼.md)（原笔记编号：C576-4）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0586-D576-%E8%AE%A4%E7%9F%A5%E5%B9%B4%E9%BE%84%E6%8F%90%E5%8D%87.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-e2b99ebbd4024ecf / \[C-0756｜青蒿素从《肘后备急方》提炼\](../../../统一案例总表/0751-C-0756-青蒿素从《肘后备急方》提炼.md)（原笔记编号：C576-4）
-  - 来源：`统一函数总表/0586-D576-认知年龄提升.md`
   - 依赖：—；被引用：—

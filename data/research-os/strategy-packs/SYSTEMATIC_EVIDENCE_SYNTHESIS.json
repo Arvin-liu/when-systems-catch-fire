@@ -1,0 +1,44 @@
+{
+  "schema_version": "research-os/0.1",
+  "registry": "strategy-pack",
+  "code": "SYSTEMATIC_EVIDENCE_SYNTHESIS",
+  "title": "Systematic Evidence Synthesis",
+  "description": "Synthesize a body of evidence: verify source independence across included studies, search for unpublished nulls, resolve outcome-definition conflicts, and run adversarial review before a tentative synthesis claim.",
+  "required_obligations": [
+    "PRIMARY_SOURCE",
+    "FULL_TEXT_OR_METHODS_OR_SUPPLEMENT",
+    "SOURCE_INDEPENDENCE_CHECK",
+    "REPLICATION_NULL_CONTRADICTORY",
+    "CONSTRUCT_AND_OUTCOME_DEFINITION",
+    "POPULATION_JURISDICTION_TIME_SCOPE",
+    "EXTERNAL_HUMAN_OR_DOMAIN_REVIEW"
+  ],
+  "typical_gaps": [
+    "PRIMARY_SOURCE_MISSING",
+    "SOURCE_DEPENDENCE_HIGH",
+    "REPLICATION_STATUS_UNKNOWN",
+    "NEGATIVE_EVIDENCE_NOT_SEARCHED",
+    "OUTCOME_DEFINITION_CONFLICT",
+    "ADVERSARIAL_REVIEW_MISSING",
+    "HUMAN_JUDGMENT_REQUIRED"
+  ],
+  "mandatory_calculations": [
+    "RECOMPUTE_RESULT"
+  ],
+  "common_failure_modes": [
+    {"gap_code": "SOURCE_DEPENDENCE_HIGH", "note": "Included studies share one primary chain; synthesis overstates independence."},
+    {"gap_code": "NEGATIVE_EVIDENCE_NOT_SEARCHED", "note": "Unpublished nulls and contradictory studies excluded."},
+    {"gap_code": "ADVERSARIAL_REVIEW_MISSING", "note": "No methodological critique of the synthesis."}
+  ],
+  "max_claim_ceiling": "TENTATIVE",
+  "escalation_conditions": [
+    {"when": "candidate claim ceiling would exceed TENTATIVE", "trigger_gap": "CLAIM_EXCEEDS_EVIDENCE", "escalate_to": "GPT_OWNER"},
+    {"when": "source dependence unresolved across included studies", "trigger_gap": "SOURCE_DEPENDENCE_HIGH", "escalate_to": "GPT_OWNER"},
+    {"when": "high-stakes or publication claim", "trigger_gap": "HUMAN_JUDGMENT_REQUIRED", "escalate_to": "GPT_OWNER"}
+  ],
+  "stop_criteria": [
+    {"condition": "independence verified, nulls searched, conflicts resolved, adversarial review passed", "terminal_state": "CANDIDATE_COMPLETE", "note": "Tentative ceiling only; heterogeneous evidence."},
+    {"condition": "primary studies inaccessible or evidence body too thin after search", "terminal_state": "INSUFFICIENT_EVIDENCE_COMPLETE", "note": "Reliable insufficient-evidence conclusion."},
+    {"condition": "null/contradictory evidence never searched", "terminal_state": "EVIDENCE_GATHERING", "note": "Must run SEEK_NULL_OR_CONTRADICTORY_RESULT before completion."}
+  ]
+}

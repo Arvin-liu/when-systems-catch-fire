@@ -1,0 +1,20 @@
+{
+  "plan_id": "plan-SLEEP-TIMING",
+  "brief_id": "brief-SLEEP-TIMING",
+  "obligations": [
+    {
+      "obligation_id": "obl-PRIMARY",
+      "claim_id": "claim-1",
+      "obligation_class": "PRIMARY_SOURCE",
+      "status": "OPEN"
+    }
+  ],
+  "subquestions": [
+    "Does midpoint-of-sleep timing predict recovery?"
+  ],
+  "search_strategy": "systematic search of RCT/cohort on sleep timing",
+  "stop_criteria": [
+    "all HIGH obligations satisfied",
+    "gate SOURCE_PROVENANCE passed"
+  ]
+}

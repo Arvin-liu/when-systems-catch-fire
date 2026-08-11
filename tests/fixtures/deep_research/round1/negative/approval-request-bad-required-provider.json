@@ -1,0 +1,10 @@
+{
+  "_record": "approval-request",
+  "_expect": "required_provider is a prohibited brand-name dependency",
+  "request_id": "req-Z",
+  "episode_id": "ep-X",
+  "requested_by": "exec-X",
+  "action_code": "ESCALATE_TO_GPT_OWNER",
+  "reason": "need decision",
+  "required_provider": "Anthropic"
+}

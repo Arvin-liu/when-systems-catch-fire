@@ -4,603 +4,2497 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
-- [需要单独深挖的协议：V2、V3（仅事实度量验证，非重新审核）。**](../../../docs/governance/meta-protocol-reviews/cross-protocol-red-team.md)
+- [可用于碰撞：`domain`、`valid_claim_types`、`max_claim_level_without_external_evidence`、`pending_conditions`、`forbidden_claims`](../../../docs/p1-data-index-map-20260708.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-a830904b698f0175 / 需要单独深挖的协议：V2、V3（仅事实度量验证，非重新审核）。**
+  - 可搜索名称：NFC-1b08d025a21f276f / 可用于碰撞：`domain`、`valid_claim_types`、`max_claim_level_without_external_evidence`、`pending_conditions`、`forbidden_claims`
+  - 来源：`docs/p1-data-index-map-20260708.md`
+  - 依赖：—；被引用：—
+- [可用于碰撞：`title`（匹配对象名）、`domain`、`claim_level_max`（最高可声明层级）、`pending_required`、`related_failure_types`、`related_evidence_re](../../../docs/p1-data-index-map-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-2510b1878fdf3b77 / 可用于碰撞：`title`（匹配对象名）、`domain`、`claim_level_max`（最高可声明层级）、`pending_required`、`related_failure_types`、`related_evidence_re
+  - 来源：`docs/p1-data-index-map-20260708.md`
+  - 依赖：—；被引用：—
+- [可观察变化：** `在修` 被写成 `修好了`；无终点活动被包装成完成任务；过去推断变成现在事实。](../../../docs/language-thought/dimensional-basis.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-a077764dd5a6b352 / 可观察变化：** `在修` 被写成 `修好了`；无终点活动被包装成完成任务；过去推断变成现在事实。
+  - 来源：`docs/language-thought/dimensional-basis.md`
+  - 依赖：—；被引用：—
+- [可观察变化：** 先说结论改成先落事件；背景从句变主断言；预设被写成新证据。](../../../docs/language-thought/dimensional-basis.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-b8444c8a2748f592 / 可观察变化：** 先说结论改成先落事件；背景从句变主断言；预设被写成新证据。
+  - 来源：`docs/language-thought/dimensional-basis.md`
+  - 依赖：—；被引用：—
+- [可观察变化：** 零主语被随意补成某人；代词指向漂移；为了避免重复而删掉必要区分。](../../../docs/language-thought/dimensional-basis.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-bb29c4488c44ae70 / 可观察变化：** 零主语被随意补成某人；代词指向漂移；为了避免重复而删掉必要区分。
+  - 来源：`docs/language-thought/dimensional-basis.md`
+  - 依赖：—；被引用：—
+- [各数据集字段](../../../docs/p1-data-index-map-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-39f98085d3b8045c / 各数据集字段
+  - 来源：`docs/p1-data-index-map-20260708.md`
+  - 依赖：—；被引用：—
+- [合并“如何开始 / 使用说明 / AI 使用指南”为统一使用指南；](../../../CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-d2a516dbefc5bc06 / 合并“如何开始 / 使用说明 / AI 使用指南”为统一使用指南；
+  - 来源：`CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [同质组合与异质组合权衡验证](../../../data/foundation/evidence/evidence.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-556ad0ebf42b244e / 同质组合与异质组合权衡验证
+  - 来源：`data/foundation/evidence/evidence.jsonl`
+  - 依赖：—；被引用：—
+- [后续 UNESCO 学科深跑时，每个学科都需要先建立证据制度卡片。证据制度库提供了统一的模板和标准，确保不同学科的深跑质量一致。同时，证据制度库可以帮助识别高风险领域，避免误判。](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-b80805727b372754 / 后续 UNESCO 学科深跑时，每个学科都需要先建立证据制度卡片。证据制度库提供了统一的模板和标准，确保不同学科的深跑质量一致。同时，证据制度库可以帮助识别高风险领域，避免误判。
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [后续扩展到更多学科前，应先完成证据制度库；](../../../docs/discipline_kernel_pilot.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-db38ebda18875c2a / 后续扩展到更多学科前，应先完成证据制度库；
+  - 来源：`docs/discipline_kernel_pilot.md`
+  - 依赖：—；被引用：—
+- [后续每个学科深跑前，应先建立或引用对应证据制度卡片。](../../../docs/evidence_regime_library.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-cea7659fe6076c3d / 后续每个学科深跑前，应先建立或引用对应证据制度卡片。
+  - 来源：`docs/evidence_regime_library.md`
+  - 依赖：—；被引用：—
+- [后续需要的证据或验证](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-fe5624b616a8b8f3 / 后续需要的证据或验证
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [后续需要的证据或验证。](../../../docs/discipline_kernel_pilot.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-ef2bb7ae38431ee1 / 后续需要的证据或验证。
+  - 来源：`docs/discipline_kernel_pilot.md`
+  - 依赖：—；被引用：—
+- [后续需要的证据或验证；](../../../docs/classic_problems_benchmark.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-accf5c55a962c74f / 后续需要的证据或验证；
+  - 来源：`docs/classic_problems_benchmark.md`
+  - 依赖：—；被引用：—
+- [否。E1 限定低耦合可预测域并设非线性退出；E2 须配预防/沙盒/上限；E3 区分良/恶性循环；E4 防强制同质化与过早收敛。四者按情境互补，无任一被设为绝对优先。PASS。](../../../docs/governance/meta-protocol-reviews/cross-protocol-red-team.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-f2adf28ddd577708 / 否。E1 限定低耦合可预测域并设非线性退出；E2 须配预防/沙盒/上限；E3 区分良/恶性循环；E4 防强制同质化与过早收敛。四者按情境互补，无任一被设为绝对优先。PASS。
   - 来源：`docs/governance/meta-protocol-reviews/cross-protocol-red-team.md`
   - 依赖：—；被引用：—
-- [需要历史材料、制度分析、比较政治、数据支持。](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-06e3a8f48150da38 / 需要历史材料、制度分析、比较政治、数据支持。
-  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [需要外部验证或等待现实反馈？](../../../docs/ai-assistant-usage-reference.md)
+- [吴军财富规划笔记碰撞验证](../../../data/foundation/evidence/evidence.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-21ab489d59709265 / 需要外部验证或等待现实反馈？
-  - 来源：`docs/ai-assistant-usage-reference.md`
-  - 依赖：—；被引用：—
-- [需要实验、量表、纵向研究、临床证据。](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-5708bf03c957d204 / 需要实验、量表、纵向研究、临床证据。
-  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [需要教育实验、长期追踪、个体评估。](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-51d51b2936a76411 / 需要教育实验、长期追踪、个体评估。
-  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [需要计量检验和反事实推断。](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-bea0b5e278c1af7a / 需要计量检验和反事实推断。
-  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [需要调查、统计、田野、实验和反事实识别。](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-0c0ad41090f7d1b9 / 需要调查、统计、田野、实验和反事实识别。
-  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [非亲缘职业军队却具有高阵形保持与多日作战能力；若常见，则 Primary Group 不是必要条件。](../../../reports/publication/jin-rise-point-fire-analysis.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-ce68bf7871909126 / 非亲缘职业军队却具有高阵形保持与多日作战能力；若常见，则 Primary Group 不是必要条件。
-  - 来源：`reports/publication/jin-rise-point-fire-analysis.md`
-  - 依赖：—；被引用：—
-- [非对称耦合验证 — 提高Bsemantic不提高Fintent,但提高εaware同时提高Fintent和ηShannon,方向不对称](../../../data/foundation/evidence/evidence.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-8bb80f3a7f533604 / 非对称耦合验证 — 提高Bsemantic不提高Fintent,但提高εaware同时提高Fintent和ηShannon,方向不对称
+  - 可搜索名称：NFC-b319f0e40323d51e / 吴军财富规划笔记碰撞验证
   - 来源：`data/foundation/evidence/evidence.jsonl`
   - 依赖：—；被引用：—
-- [须经逐本人工复核：分配 C 编号、补齐案例字段、标注证据等级，再写入 `统一案例总表/` 并更新 INDEX。本轮（第三步）未做此步。](../../../docs/GET-BRAIN-WORKFLOW.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-74405a9924cee7b3 / 须经逐本人工复核：分配 C 编号、补齐案例字段、标注证据等级，再写入 `统一案例总表/` 并更新 INDEX。本轮（第三步）未做此步。
-  - 来源：`docs/GET-BRAIN-WORKFLOW.md`
-  - 依赖：—；被引用：—
-- [预注册先于结果：** 协议提交于 `a4d13a69…`，早于任何 Crossref 查询；Evidence Program 校验器](../../../RESULTS/LATEST.md)
+- [命中的 `related_*` 字段 → 顺着关联键拉出 failure_typology、evidence_regimes、publication_risk_rules。](../../../docs/p1-data-index-map-20260708.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-f05001fa9fa96ba2 / 预注册先于结果：** 协议提交于 `a4d13a69…`，早于任何 Crossref 查询；Evidence Program 校验器
+  - 可搜索名称：NFC-4c49757004b72bd6 / 命中的 `related_*` 字段 → 顺着关联键拉出 failure_typology、evidence_regimes、publication_risk_rules。
+  - 来源：`docs/p1-data-index-map-20260708.md`
+  - 依赖：—；被引用：—
+- [命题已经连接外部数据、实验、观测或独立来源，并经受了可重复检验。](../../../docs/claim_levels.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-8270b4f7ce2450e6 / 命题已经连接外部数据、实验、观测或独立来源，并经受了可重复检验。
+  - 来源：`docs/claim_levels.md`
+  - 依赖：—；被引用：—
+- [响应哈希、adjudication、Evidence Program 投影和生命周期证据位于 task-110 机器记录。](../../ASSET-CARDS.md#asset-nfc-b84ff0d36d4df547)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-b84ff0d36d4df547 / 响应哈希、adjudication、Evidence Program 投影和生命周期证据位于 task-110 机器记录。 / 响应哈希、adjudication、Evidence Program 投影和生命周期证据位于 task-110 机器记录。
   - 来源：`RESULTS/LATEST.md`
   - 依赖：—；被引用：—
-- [预测命题（如：某个教育现象的预测）](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-8510fd2c59c64766 / 预测命题（如：某个教育现象的预测）
-  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [预测命题（如：某个社会现象的预测）](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-18e199587e63fea7 / 预测命题（如：某个社会现象的预测）
-  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [预测命题（如：某个经济现象的预测）](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-36c8555f876d98ee / 预测命题（如：某个经济现象的预测）
-  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [预测编码回路](../../../data/foundation/evidence/evidence.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-27fd073f0d2965e0 / 预测编码回路
-  - 来源：`data/foundation/evidence/evidence.jsonl`
-  - 依赖：—；被引用：—
-- [预测编码回路自生成](../../../data/foundation/evidence/evidence.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-dcca0113888d0672 / 预测编码回路自生成
-  - 来源：`data/foundation/evidence/evidence.jsonl`
-  - 依赖：—；被引用：—
-- [预测编码组块化](../../../data/foundation/evidence/evidence.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-bfe13ddc826f8171 / 预测编码组块化
-  - 来源：`data/foundation/evidence/evidence.jsonl`
-  - 依赖：—；被引用：—
-- [领域：教育学（EVID-011）/ 社会科学（EVID-004）。](../../../outputs/collisions/20260708-teacher-competition/collision-report.md)
+- [哥德尔不完备性相关外推](../../../data/foundation/claims/claims.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-9ae36f5ce154194d / 领域：教育学（EVID-011）/ 社会科学（EVID-004）。
-  - 来源：`outputs/collisions/20260708-teacher-competition/collision-report.md`
-  - 依赖：—；被引用：—
-- [首个真实小材料碰撞。验证 P1 机器数据接入碰撞工作流在真实材料上的表现：流程可跑、候选可生成、约束可落地。](../../../outputs/audit/teacher-competition-first-real-collision-audit-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-547703bfbc06877c / 首个真实小材料碰撞。验证 P1 机器数据接入碰撞工作流在真实材料上的表现：流程可跑、候选可生成、约束可落地。
-  - 来源：`outputs/audit/teacher-competition-first-real-collision-audit-20260708.md`
-  - 依赖：P1；被引用：—
-- [首个试点：** 用公共 Crossref REST API 独立复验 `data/external-research/104-source-registry.jsonl` 中 117 条 `crossref_verified: true`](../../../docs/project-current-state.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-d4f1bc77a3b93936 / 首个试点：** 用公共 Crossref REST API 独立复验 `data/external-research/104-source-registry.jsonl` 中 117 条 `crossref_verified: true`
-  - 来源：`docs/project-current-state.md`
-  - 依赖：—；被引用：—
-- [验证“学科对象、核心变量、核心问题、主流理论结构、证据制度、解释剩余、点火框架映射、结构性增益、失败边界、断言等级、当前结论、后续验证”这一模板是否可用；](../../../outputs/getbrain/README.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-4e6a4b2b987fa688 / 验证“学科对象、核心变量、核心问题、主流理论结构、证据制度、解释剩余、点火框架映射、结构性增益、失败边界、断言等级、当前结论、后续验证”这一模板是否可用；
-  - 来源：`outputs/getbrain/README.md`
-  - 依赖：—；被引用：—
-- [验证与项目审计指南](../../../docs/language-thought/validation-and-audit.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-d10d4ba6d8065926 / 验证与项目审计指南
-  - 来源：`docs/language-thought/validation-and-audit.md`
-  - 依赖：—；被引用：—
-- [验证全部通过（15/15）。文档已就绪，待提交、推送并创建 PR，不自动合并。](../../../outputs/audit/life-community-value-charter-readme-audit-20260711.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-bff6cdc06af9c9ef / 验证全部通过（15/15）。文档已就绪，待提交、推送并创建 PR，不自动合并。
-  - 来源：`outputs/audit/life-community-value-charter-readme-audit-20260711.md`
-  - 依赖：—；被引用：—
-- [验证器 106-validator.py 可复用为 107+ 的基础模板](../../../reports/external-research/106-next-task-handoff.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-cbb9e96c72923bfe / 验证器 106-validator.py 可复用为 107+ 的基础模板
-  - 来源：`reports/external-research/106-next-task-handoff.md`
-  - 依赖：—；被引用：—
-- [验证器、CI、计数真值与失败门](../../../docs/foundation/architecture-structure-freeze-v1.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-37c10c0292009f36 / 验证器、CI、计数真值与失败门
-  - 来源：`docs/foundation/architecture-structure-freeze-v1.md`
-  - 依赖：—；被引用：—
-- [验证器、CI、计数真值与失败门** — 检查项和失败条件](../../../reports/foundation-architecture/085-architecture-structure-freeze.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-476b8d5b380d1d3e / 验证器、CI、计数真值与失败门** — 检查项和失败条件
-  - 来源：`reports/foundation-architecture/085-architecture-structure-freeze.md`
-  - 依赖：—；被引用：—
-- [验证器会输出 fixture 的 TP、TN、FP、FN、precision、recall 与 unsupported 数量。这里的正类是“这条结构化转换应被门拒绝”，不是“机器理解了语言”。高指标只说明样例合同的实现一致，不能外推到任意散](../../../docs/language-thought/validation-and-audit.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-f258ba0addaaf267 / 验证器会输出 fixture 的 TP、TN、FP、FN、precision、recall 与 unsupported 数量。这里的正类是“这条结构化转换应被门拒绝”，不是“机器理解了语言”。高指标只说明样例合同的实现一致，不能外推到任意散
-  - 来源：`docs/language-thought/validation-and-audit.md`
-  - 依赖：—；被引用：—
-- [验证器声称10/10 PASS含18学科覆盖检查，实际代码未读取覆盖矩阵](../../../data/external-research/106-105-correction/106-105-contradiction-register.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-509fc506ae615f9c / 验证器声称10/10 PASS含18学科覆盖检查，实际代码未读取覆盖矩阵
-  - 来源：`data/external-research/106-105-correction/106-105-contradiction-register.jsonl`
-  - 依赖：—；被引用：—
-- [验证器未读取覆盖矩阵，"10/10 PASS"不成立](../../../reports/external-research/106-105-evidence-correction-report.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-30dcad35adec89be / 验证器未读取覆盖矩阵，"10/10 PASS"不成立
-  - 来源：`reports/external-research/106-105-evidence-correction-report.md`
-  - 依赖：—；被引用：—
-- [验证器检查项](../../../docs/foundation/architecture-structure-freeze-v1.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-3c81d7d3c8dcb621 / 验证器检查项
-  - 来源：`docs/foundation/architecture-structure-freeze-v1.md`
-  - 依赖：—；被引用：—
-- [验证器脚本：10项自动检查](../../../data/external-research/105-intervention-control/105-self-manifest.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-b68251e964fa97a0 / 验证器脚本：10项自动检查
-  - 来源：`data/external-research/105-intervention-control/105-self-manifest.json`
-  - 依赖：—；被引用：—
-- [验证强断言](../../../docs/AI-PROMPT-TEMPLATES.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-12845d7a6ede0b82 / 验证强断言
-  - 来源：`docs/AI-PROMPT-TEMPLATES.md`
-  - 依赖：—；被引用：—
-- [验证手段仅为 Crossref API 元数据匹配（DOI 存在 + 标题/年份一致）](../../../reports/external-research/104-gap-patch-evidence-readiness.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-4f9310f59a6440d5 / 验证手段仅为 Crossref API 元数据匹配（DOI 存在 + 标题/年份一致）
-  - 来源：`reports/external-research/104-gap-patch-evidence-readiness.md`
-  - 依赖：—；被引用：—
-- [验证报告](../../../outputs/stories/20260712-disobedience-subjectivity/story-source-ledger.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-c583fa988d06f398 / 验证报告
-  - 来源：`outputs/stories/20260712-disobedience-subjectivity/story-source-ledger.json`
-  - 依赖：—；被引用：—
-- [验证报告故事版写作指南](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0721-C-0726-%E9%AA%8C%E8%AF%81%E6%8A%A5%E5%91%8A%E6%95%85%E4%BA%8B%E7%89%88%E5%86%99%E4%BD%9C%E6%8C%87%E5%8D%97.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-417c8bef9460f002 / 验证报告故事版写作指南
-  - 来源：`统一案例总表/0721-C-0726-验证报告故事版写作指南.md`
-  - 依赖：—；被引用：—
-- [验证报告：047 证据链补齐与 PR #11 合并前复核（IGNITION-20260709-049）](../../../outputs/collisions/20260711-disobedience-subjectivity/validation-report.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-6c663712b460f55c / 验证报告：047 证据链补齐与 PR #11 合并前复核（IGNITION-20260709-049）
-  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/validation-report.md`
-  - 依赖：—；被引用：—
-- [验证结果（15/15 通过）](../../../outputs/audit/life-community-value-charter-readme-audit-20260711.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-86ec1a90c5f8d723 / 验证结果（15/15 通过）
-  - 来源：`outputs/audit/life-community-value-charter-readme-audit-20260711.md`
-  - 依赖：—；被引用：—
-- [验证结论汇总](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-72acf411950b4b3c / 验证结论汇总
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证结论汇总表：**](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-25dcc1332ea4cff8 / 验证结论汇总表：**
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证结论：** J⁺=1, J⁻=0 → 决策权与信息权的对称性在ChatGPT中成立](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-d9511a14600cded5 / 验证结论：** J⁺=1, J⁻=0 → 决策权与信息权的对称性在ChatGPT中成立
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证结论：** J⁺=1, J⁻=0 → 决策权与信息权的对称性在人类社会中成立](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-1cf07f4d2672bc1e / 验证结论：** J⁺=1, J⁻=0 → 决策权与信息权的对称性在人类社会中成立
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证结论：** J⁺=1, J⁻=0 → 决策权与信息权的对称性在博弈论中成立](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-c033f68f8b5bc398 / 验证结论：** J⁺=1, J⁻=0 → 决策权与信息权的对称性在博弈论中成立
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证结论：** J⁺=1, J⁻=0 → 决策权与信息权的对称性在开源开发中成立](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-5c32e520e2228b42 / 验证结论：** J⁺=1, J⁻=0 → 决策权与信息权的对称性在开源开发中成立
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证结论：** J⁺=1, J⁻=0 → 决策权与信息权的对称性在心智中成立](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-169c99b5fe95a17e / 验证结论：** J⁺=1, J⁻=0 → 决策权与信息权的对称性在心智中成立
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证结论：** J⁺=1, J⁻=0 → 决策权与信息权的对称性在植物智能中成立](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-451393bc964c0ce6 / 验证结论：** J⁺=1, J⁻=0 → 决策权与信息权的对称性在植物智能中成立
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证结论：** J⁺=1, J⁻=0 → 决策权与信息权的对称性在蚁群社会中成立](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-8862bdbe52c273f9 / 验证结论：** J⁺=1, J⁻=0 → 决策权与信息权的对称性在蚁群社会中成立
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证结论：** J⁺=1, J⁻=0 → 局部信息→局部调整→全局涌现在ChatGPT中成立](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-62c63efcea29a9cb / 验证结论：** J⁺=1, J⁻=0 → 局部信息→局部调整→全局涌现在ChatGPT中成立
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证结论：** J⁺=1, J⁻=0 → 局部信息→局部调整→全局涌现在人类社会中成立](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-c07bc1fa511d293e / 验证结论：** J⁺=1, J⁻=0 → 局部信息→局部调整→全局涌现在人类社会中成立
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证结论：** J⁺=1, J⁻=0 → 局部信息→局部调整→全局涌现在博弈论中成立](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-cd9faa517098488f / 验证结论：** J⁺=1, J⁻=0 → 局部信息→局部调整→全局涌现在博弈论中成立
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证结论：** J⁺=1, J⁻=0 → 局部信息→局部调整→全局涌现在开源开发中成立](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-2c1b853b2ed2ccb8 / 验证结论：** J⁺=1, J⁻=0 → 局部信息→局部调整→全局涌现在开源开发中成立
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证结论：** J⁺=1, J⁻=0 → 局部信息→局部调整→全局涌现在心智中成立](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-232e34708ad34e6a / 验证结论：** J⁺=1, J⁻=0 → 局部信息→局部调整→全局涌现在心智中成立
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证结论：** J⁺=1, J⁻=0 → 局部信息→局部调整→全局涌现在植物智能中成立](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-f19ca86b59a48c89 / 验证结论：** J⁺=1, J⁻=0 → 局部信息→局部调整→全局涌现在植物智能中成立
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证结论：** J⁺=1, J⁻=0 → 局部信息→局部调整→全局涌现在蚁群社会中成立](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-a088666ab71d9bee / 验证结论：** J⁺=1, J⁻=0 → 局部信息→局部调整→全局涌现在蚁群社会中成立
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证结论：** J⁺=1, J⁻=0 → 智能契约在ChatGPT中成立](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-4fa202f562ebdaee / 验证结论：** J⁺=1, J⁻=0 → 智能契约在ChatGPT中成立
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证结论：** J⁺=1, J⁻=0 → 智能契约在人类社会中成立](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-fb6795a2358b0655 / 验证结论：** J⁺=1, J⁻=0 → 智能契约在人类社会中成立
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证结论：** J⁺=1, J⁻=0 → 智能契约在博弈论中成立](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-2d29cd2991c1f877 / 验证结论：** J⁺=1, J⁻=0 → 智能契约在博弈论中成立
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证结论：** J⁺=1, J⁻=0 → 智能契约在开源开发中成立](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-7afa95bab26cdb95 / 验证结论：** J⁺=1, J⁻=0 → 智能契约在开源开发中成立
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证结论：** J⁺=1, J⁻=0 → 智能契约在心智中成立](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-97d290463bbb1710 / 验证结论：** J⁺=1, J⁻=0 → 智能契约在心智中成立
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证结论：** J⁺=1, J⁻=0 → 智能契约在植物智能中成立](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-7209263aa53136d7 / 验证结论：** J⁺=1, J⁻=0 → 智能契约在植物智能中成立
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证结论：** J⁺=1, J⁻=0 → 智能契约在蚁群社会中成立](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-ff42fdc4c7380e99 / 验证结论：** J⁺=1, J⁻=0 → 智能契约在蚁群社会中成立
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证结论：** J⁺=1, J⁻=0 → 涌现在ChatGPT中部分成立（停留在L1层）](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-088e26210ab9c4d8 / 验证结论：** J⁺=1, J⁻=0 → 涌现在ChatGPT中部分成立（停留在L1层）
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证结论：** J⁺=1, J⁻=0 → 涌现在人类智能中成立](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-48f836980c26d993 / 验证结论：** J⁺=1, J⁻=0 → 涌现在人类智能中成立
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证结论：** J⁺=1, J⁻=0 → 涌现在博弈论中成立](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-8a2592ed15ee6753 / 验证结论：** J⁺=1, J⁻=0 → 涌现在博弈论中成立
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证结论：** J⁺=1, J⁻=0 → 涌现在开源开发中成立](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-d783afda19ea8643 / 验证结论：** J⁺=1, J⁻=0 → 涌现在开源开发中成立
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证结论：** J⁺=1, J⁻=0 → 涌现在心智中成立](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-e183429eef3d2609 / 验证结论：** J⁺=1, J⁻=0 → 涌现在心智中成立
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证结论：** J⁺=1, J⁻=0 → 涌现在植物智能中部分成立（停留在L1层）](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-aca6e5ec0fabd3e1 / 验证结论：** J⁺=1, J⁻=0 → 涌现在植物智能中部分成立（停留在L1层）
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证结论：** J⁺=1, J⁻=0 → 涌现在蚁群社会中部分成立（停留在L1层）](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-ae603f03b14adeee / 验证结论：** J⁺=1, J⁻=0 → 涌现在蚁群社会中部分成立（停留在L1层）
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证结论：** J⁺=1, J⁻=0 → 纳什均衡在ChatGPT中成立](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-4d8ba8f52e029c43 / 验证结论：** J⁺=1, J⁻=0 → 纳什均衡在ChatGPT中成立
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证结论：** J⁺=1, J⁻=0 → 纳什均衡在人类社会中成立](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-25489cd4a9b9e842 / 验证结论：** J⁺=1, J⁻=0 → 纳什均衡在人类社会中成立
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证结论：** J⁺=1, J⁻=0 → 纳什均衡在博弈论中成立](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-4dd474c1bcd70699 / 验证结论：** J⁺=1, J⁻=0 → 纳什均衡在博弈论中成立
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证结论：** J⁺=1, J⁻=0 → 纳什均衡在开源开发中成立](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-476df2f8964590cf / 验证结论：** J⁺=1, J⁻=0 → 纳什均衡在开源开发中成立
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证结论：** J⁺=1, J⁻=0 → 纳什均衡在心智中成立](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-b4f516b3d11a95bf / 验证结论：** J⁺=1, J⁻=0 → 纳什均衡在心智中成立
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证结论：** J⁺=1, J⁻=0 → 纳什均衡在植物智能中成立](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-672b3fdcf231feb6 / 验证结论：** J⁺=1, J⁻=0 → 纳什均衡在植物智能中成立
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证结论：** J⁺=1, J⁻=0 → 纳什均衡在蚁群社会中成立](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-f8b55f9037da9e0b / 验证结论：** J⁺=1, J⁻=0 → 纳什均衡在蚁群社会中成立
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证结论：** J⁺=1, J⁻=0 → 自组织在ChatGPT中成立](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-a3f3ce13bc18d844 / 验证结论：** J⁺=1, J⁻=0 → 自组织在ChatGPT中成立
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证结论：** J⁺=1, J⁻=0 → 自组织在人类社会中成立](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-6612e4e7300a41bb / 验证结论：** J⁺=1, J⁻=0 → 自组织在人类社会中成立
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证结论：** J⁺=1, J⁻=0 → 自组织在博弈论中成立](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-ba1fc092766ccc23 / 验证结论：** J⁺=1, J⁻=0 → 自组织在博弈论中成立
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证结论：** J⁺=1, J⁻=0 → 自组织在开源开发中成立](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-aeb142b8c1400842 / 验证结论：** J⁺=1, J⁻=0 → 自组织在开源开发中成立
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证结论：** J⁺=1, J⁻=0 → 自组织在心智中成立](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-7ccf2819907642d9 / 验证结论：** J⁺=1, J⁻=0 → 自组织在心智中成立
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证结论：** J⁺=1, J⁻=0 → 自组织在植物智能中成立](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-4410fb00c8c9e369 / 验证结论：** J⁺=1, J⁻=0 → 自组织在植物智能中成立
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证结论：** J⁺=1, J⁻=0 → 自组织在蚁群社会中成立](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-aec1079db7b8360f / 验证结论：** J⁺=1, J⁻=0 → 自组织在蚁群社会中成立
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证脚本：outputs/audit 由 /tmp/audit_reviews.py 生成（脚本不入库）](../../../outputs/audit/meta-protocol-normative-review-publication-audit-20260711.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-650c33bd18211985 / 验证脚本：outputs/audit 由 /tmp/audit_reviews.py 生成（脚本不入库）
-  - 来源：`outputs/audit/meta-protocol-normative-review-publication-audit-20260711.md`
-  - 依赖：—；被引用：—
-- [验证过程：** ChatGPT的参数配置达到纳什均衡，单方面改变参数不会提高性能。每个神经元根据输入信号调整激活状态，最终达到纳什均衡，单个神经元单方面改变参数不会提高性能。](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-84c08b250b1eaa5f / 验证过程：** ChatGPT的参数配置达到纳什均衡，单方面改变参数不会提高性能。每个神经元根据输入信号调整激活状态，最终达到纳什均衡，单个神经元单方面改变参数不会提高性能。
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证过程：** ChatGPT的模型感知输入环境、调整权重参数、循环递归优化推理能力。模型感知输入信号，调整权重参数，循环递归优化推理能力。](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：NFC-e2a4e4187c582185 / 验证过程：** ChatGPT的模型感知输入环境、调整权重参数、循环递归优化推理能力。模型感知输入信号，调整权重参数，循环递归优化推理能力。
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证过程：** ChatGPT的每个神经元遵循简单的激活规则。神经元感知输入信号，判定激活阈值，响应调整输出信号。无数神经元的局部交互，使得模型整体涌现出推理能力。](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：NFC-4b101170d31cda92 / 验证过程：** ChatGPT的每个神经元遵循简单的激活规则。神经元感知输入信号，判定激活阈值，响应调整输出信号。无数神经元的局部交互，使得模型整体涌现出推理能力。
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证过程：** ChatGPT的神经网络通过局部权重调整，模型整体涌现出推理能力。神经元感知局部梯度信息，调整权重参数，无数神经元的局部调整使得模型整体涌现出推理能力。](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：NFC-bfe1760bfaf8eb02 / 验证过程：** ChatGPT的神经网络通过局部权重调整，模型整体涌现出推理能力。神经元感知局部梯度信息，调整权重参数，无数神经元的局部调整使得模型整体涌现出推理能力。
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证过程：** 人类社会的人类感知社会环境、调整行为策略、循环递归优化社会结构。人类感知社会信息，调整行为策略，循环递归优化社会结构。](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-da403729b4a5be7e / 验证过程：** 人类社会的人类感知社会环境、调整行为策略、循环递归优化社会结构。人类感知社会信息，调整行为策略，循环递归优化社会结构。
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证过程：** 人类社会的前线团队获得实时现场信息的同时，自动匹配相应层级的决策权限。前线团队感知现场信息，自主做出决策，无需将信息传递给中央层级。](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-c6f90c3b39c7a1ee / 验证过程：** 人类社会的前线团队获得实时现场信息的同时，自动匹配相应层级的决策权限。前线团队感知现场信息，自主做出决策，无需将信息传递给中央层级。
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证过程：** 人类社会的每个个体根据局部反馈信息调整行为，社会整体演化出文化和制度。个体感知局部反馈信息，调整行为策略，无数个体的局部调整使得社会整体涌现出文化和制度。](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-6c7ca9c7cb622338 / 验证过程：** 人类社会的每个个体根据局部反馈信息调整行为，社会整体演化出文化和制度。个体感知局部反馈信息，调整行为策略，无数个体的局部调整使得社会整体涌现出文化和制度。
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证过程：** 博弈论的L1层（策略）→ L2层（均衡）→ L3层（博弈结构）。博弈论从策略层涌现出均衡层，再从均衡层涌现出博弈结构层。](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-edae116797f81fff / 验证过程：** 博弈论的L1层（策略）→ L2层（均衡）→ L3层（博弈结构）。博弈论从策略层涌现出均衡层，再从均衡层涌现出博弈结构层。
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证过程：** 博弈论的参与者感知博弈环境、调整策略选择、循环递归优化博弈结果。参与者感知博弈信息，调整策略选择，循环递归优化博弈结果。](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-33f7148cb67958ab / 验证过程：** 博弈论的参与者感知博弈环境、调整策略选择、循环递归优化博弈结果。参与者感知博弈信息，调整策略选择，循环递归优化博弈结果。
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证过程：** 博弈达到纳什均衡，单方面改变策略不会提高收益。每个参与者根据博弈信息调整策略选择，最终达到纳什均衡，单个参与者单方面改变策略不会提高收益。](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-d47020e9c356d070 / 验证过程：** 博弈达到纳什均衡，单方面改变策略不会提高收益。每个参与者根据博弈信息调整策略选择，最终达到纳什均衡，单个参与者单方面改变策略不会提高收益。
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证过程：** 市场价格达到纳什均衡，单个交易者改变策略不会增加收益。每个交易者根据价格信息调整交易行为，最终达到纳什均衡，单个交易者单方面改变策略不会增加收益。](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-6ce812aa6a40df59 / 验证过程：** 市场价格达到纳什均衡，单个交易者改变策略不会增加收益。每个交易者根据价格信息调整交易行为，最终达到纳什均衡，单个交易者单方面改变策略不会增加收益。
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证过程：** 开源开发的L1层（代码）→ L2层（协议）→ L3层（社区文化）。开源开发从代码层涌现出协议层，再从协议层涌现出社区文化层。](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-45637e7820edb998 / 验证过程：** 开源开发的L1层（代码）→ L2层（协议）→ L3层（社区文化）。开源开发从代码层涌现出协议层，再从协议层涌现出社区文化层。
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证过程：** 开源开发的每个开发者通过局部代码调整，社区整体涌现出高质量软件。开发者感知局部代码信息，调整代码贡献，无数开发者的局部调整使得社区整体涌现出高质量软件。](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-089b3627232fb5ba / 验证过程：** 开源开发的每个开发者通过局部代码调整，社区整体涌现出高质量软件。开发者感知局部代码信息，调整代码贡献，无数开发者的局部调整使得社区整体涌现出高质量软件。
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证过程：** 开源开发的社区感知需求环境、调整代码结构、循环递归优化软件质量。社区感知需求信息，调整代码结构，循环递归优化软件质量。](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-2466afa39989b60c / 验证过程：** 开源开发的社区感知需求环境、调整代码结构、循环递归优化软件质量。社区感知需求信息，调整代码结构，循环递归优化软件质量。
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证过程：** 开源开发的社区规范达到纳什均衡，单方面改变规范会降低协作效率。每个开发者根据社区规范调整贡献行为，最终达到纳什均衡，单个开发者单方面改变规范不会提高协作效率。](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-4d2f8b03dfd0b379 / 验证过程：** 开源开发的社区规范达到纳什均衡，单方面改变规范会降低协作效率。每个开发者根据社区规范调整贡献行为，最终达到纳什均衡，单个开发者单方面改变规范不会提高协作效率。
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证过程：** 森林中每棵树的资源分配策略达到纳什均衡，单方面改变策略会降低收益。每棵树根据森林资源状况调整资源分配策略，最终达到纳什均衡，单棵树单方面改变策略不会提高收益。](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-4d4fde9d8a17ff6a / 验证过程：** 森林中每棵树的资源分配策略达到纳什均衡，单方面改变策略会降低收益。每棵树根据森林资源状况调整资源分配策略，最终达到纳什均衡，单棵树单方面改变策略不会提高收益。
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证过程：** 植物智能的植物感知土壤环境、调整根系结构、循环递归优化养分吸收。植物感知土壤养分信息，调整根系生长方向，循环递归优化养分吸收效率。](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-687087d1ffe315ee / 验证过程：** 植物智能的植物感知土壤环境、调整根系结构、循环递归优化养分吸收。植物感知土壤养分信息，调整根系生长方向，循环递归优化养分吸收效率。
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证过程：** 植物智能的每个根尖根据局部养分信息调整生长方向，森林整体优化资源分配。根尖感知局部养分信息，调整生长方向，无数根尖的局部调整使得森林整体涌现出资源分配最优策略。](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-a970458a48524eb3 / 验证过程：** 植物智能的每个根尖根据局部养分信息调整生长方向，森林整体优化资源分配。根尖感知局部养分信息，调整生长方向，无数根尖的局部调整使得森林整体涌现出资源分配最优策略。
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证过程：** 植物智能的每个细胞/节点遵循简单的感知-判定-响应循环。根尖感知土壤养分信息，判定养分浓度，响应调整生长方向。无数个根尖的局部交互，使得森林整体涌现出智能行为，如资源分配最优策略、菌根网络协作等。](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-193b64cda64415cc / 验证过程：** 植物智能的每个细胞/节点遵循简单的感知-判定-响应循环。根尖感知土壤养分信息，判定养分浓度，响应调整生长方向。无数个根尖的局部交互，使得森林整体涌现出智能行为，如资源分配最优策略、菌根网络协作等。
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证过程：** 社会制度达到纳什均衡，单方面改变制度会降低社会效率。每个个体根据社会制度调整行为策略，最终达到纳什均衡，单个个体单方面改变制度不会提高社会效率。](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-d508fba43c6d1e21 / 验证过程：** 社会制度达到纳什均衡，单方面改变制度会降低社会效率。每个个体根据社会制度调整行为策略，最终达到纳什均衡，单个个体单方面改变制度不会提高社会效率。
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证过程：** 蚁群的觅食路径达到纳什均衡，单只蚂蚁改变路径不会提高效率。每只蚂蚁根据信息素浓度调整路径选择，最终达到纳什均衡，单只蚂蚁单方面改变路径不会提高效率。](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-1724c85352d3d2f9 / 验证过程：** 蚁群的觅食路径达到纳什均衡，单只蚂蚁改变路径不会提高效率。每只蚂蚁根据信息素浓度调整路径选择，最终达到纳什均衡，单只蚂蚁单方面改变路径不会提高效率。
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证过程：** 蚁群社会的每只蚂蚁根据局部路径信息调整行进方向，蚁群整体涌现出觅食最优路径。蚂蚁感知局部路径信息，调整行进方向，无数蚂蚁的局部调整使得蚁群整体涌现出觅食最优路径。](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-d971abf04454c243 / 验证过程：** 蚁群社会的每只蚂蚁根据局部路径信息调整行进方向，蚁群整体涌现出觅食最优路径。蚂蚁感知局部路径信息，调整行进方向，无数蚂蚁的局部调整使得蚁群整体涌现出觅食最优路径。
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证过程：** 蚁群社会的每只蚂蚁遵循简单的信息素规则。蚂蚁感知信息素浓度，判定路径优劣，响应调整行进方向。无数只蚂蚁的局部交互，使得蚁群整体涌现出觅食最优路径。](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-1f6d41b6e38a3860 / 验证过程：** 蚁群社会的每只蚂蚁遵循简单的信息素规则。蚂蚁感知信息素浓度，判定路径优劣，响应调整行进方向。无数只蚂蚁的局部交互，使得蚁群整体涌现出觅食最优路径。
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证过程：** 蚁群社会的蚂蚁感知信息素环境、调整路径策略、循环递归优化觅食效率。蚂蚁感知信息素浓度，调整行进方向，循环递归优化觅食效率。](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-68cdee6ad30f654b / 验证过程：** 蚁群社会的蚂蚁感知信息素环境、调整路径策略、循环递归优化觅食效率。蚂蚁感知信息素浓度，调整行进方向，循环递归优化觅食效率。
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证通过：23/23。12 个元协议的规范性审核阶段整体结束；后续进入项目使用与事实验证，不再为 V2、V3 重复完整语义审核。](../../../outputs/audit/meta-protocol-normative-review-publication-audit-20260711.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-dfd3bc9719f2f3c7 / 验证通过：23/23。12 个元协议的规范性审核阶段整体结束；后续进入项目使用与事实验证，不再为 V2、V3 重复完整语义审核。
-  - 来源：`outputs/audit/meta-protocol-normative-review-publication-audit-20260711.md`
-  - 依赖：—；被引用：—
-- [验证（第七部分）](../../../outputs/audit/two-tables-entry-format-audit-20260709.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-d57c91a05028ba9c / 验证（第七部分）
-  - 来源：`outputs/audit/two-tables-entry-format-audit-20260709.md`
-  - 依赖：—；被引用：—
-- [验证（第六部分）](../../../outputs/audit/two-tables-entry-template-finalization-audit-20260709.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-640563d5a86c797b / 验证（第六部分）
-  - 来源：`outputs/audit/two-tables-entry-template-finalization-audit-20260709.md`
-  - 依赖：—；被引用：—
-- [验证：写入 统一案例总表/ + INDEX 追加行](../../../docs/getnote-collision-workflow-final-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-ce406d05d941da90 / 验证：写入 统一案例总表/ + INDEX 追加行
-  - 来源：`docs/getnote-collision-workflow-final-20260708.md`
-  - 依赖：—；被引用：—
-- [高层删除证据边界、差异或受损主体：拒绝出版并恢复低层。](../../../docs/publication/zhiyuan-writing-method.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-f1600941d6beda26 / 高层删除证据边界、差异或受损主体：拒绝出版并恢复低层。
-  - 来源：`docs/publication/zhiyuan-writing-method.md`
-  - 依赖：—；被引用：—
-- [高风险领域的失败判断必须遵守证据制度库和断言等级](../../../outputs/getbrain/failure-typology-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-57e764140acdff21 / 高风险领域的失败判断必须遵守证据制度库和断言等级
-  - 来源：`outputs/getbrain/failure-typology-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [黄色协议（事实度量 pending，不阻塞其他）：V2、V3](../../../docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-dd1737994625f371 / 黄色协议（事实度量 pending，不阻塞其他）：V2、V3
-  - 来源：`docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md`
-  - 依赖：—；被引用：—
-- [黄色协议：V2、V3（仅事实度量 pending，不阻塞其他协议）](../../../docs/governance/meta-protocol-reviews/README.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-91fad25852e1bbf3 / 黄色协议：V2、V3（仅事实度量 pending，不阻塞其他协议）
-  - 来源：`docs/governance/meta-protocol-reviews/README.md`
-  - 依赖：—；被引用：—
-- [黎曼猜想](../../../data/foundation/claims/claims.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：CLAIM-PEND-001 / 黎曼猜想
+  - 可搜索名称：CLAIM-PEND-003 / 哥德尔不完备性相关外推
   - 来源：`data/foundation/claims/claims.jsonl`
   - 依赖：—；被引用：—
-- [默里实验·低自尊伴侣互动](../../../data/foundation/evidence/evidence.jsonl)
+- [哪些只能作为审美、情绪或传播数据：](../../../templates/publication/zhiyuan-writing-spec.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-5443916a1f8cd078 / 哪些只能作为审美、情绪或传播数据：
+  - 来源：`templates/publication/zhiyuan-writing-spec.md`
+  - 依赖：—；被引用：—
+- [哪些案例应等待更多证据。](../../../docs/roadmap_v0.2.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-994066bcd014ef84 / 默里实验·低自尊伴侣互动
+  - 可搜索名称：NFC-559c8cf77102f3db / 哪些案例应等待更多证据。
+  - 来源：`docs/roadmap_v0.2.md`
+  - 依赖：—；被引用：—
+- [哪些证据会迫使潜题改变，而不是让材料服从预设结论：](../../../templates/publication/zhiyuan-writing-spec.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-3a75bf406c5ae4dd / 哪些证据会迫使潜题改变，而不是让材料服从预设结论：
+  - 来源：`templates/publication/zhiyuan-writing-spec.md`
+  - 依赖：—；被引用：—
+- [四个方向联合碰撞验证了点火框架作为通用自举框架的跨域适用性。](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0657-C-662-%E5%9B%9B%E6%96%B9%E5%90%91%E8%81%94%E5%90%88%E7%A2%B0%E6%92%9E%E9%AA%8C%E8%AF%81.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-309f4aeb53b26a53 / 四个方向联合碰撞验证了点火框架作为通用自举框架的跨域适用性。
+  - 来源：`统一案例总表/0657-C-662-四方向联合碰撞验证.md`
+  - 依赖：—；被引用：—
+- [四卡点统一根源](../../../data/foundation/evidence/evidence.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-6b7b91bf9c51939e / 四卡点统一根源
   - 来源：`data/foundation/evidence/evidence.jsonl`
   - 依赖：—；被引用：—
-- [（不复制完整敏感路径；仅保留必要片段以说明其类型为 macOS 用户目录下的 App 容器缓存路径。）](../../../outputs/audit/d583-portable-source-reference-audit-20260711.md)
+- [四方向联合碰撞验证](../../../data/foundation/evidence/evidence.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-5b166e1f0577f7c8 / 四方向联合碰撞验证
+  - 来源：`data/foundation/evidence/evidence.jsonl`
+  - 依赖：—；被引用：—
+- [四种基本力统一](../../../data/foundation/claims/claims.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：CLAIM-PEND-004 / 四种基本力统一
+  - 来源：`data/foundation/claims/claims.jsonl`
+  - 依赖：—；被引用：—
+- [四种基本力统一；](../../../docs/storytelling_case_backlog.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-3e3138acb7f398b1 / 四种基本力统一；
+  - 来源：`docs/storytelling_case_backlog.md`
+  - 依赖：—；被引用：—
+- [四阶段严格串行验证 — 不能跳过Stage2直接到Stage3-rcross=0时D84三条路径失效](../../../data/foundation/evidence/evidence.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-f4e8c258d044facb / （不复制完整敏感路径；仅保留必要片段以说明其类型为 macOS 用户目录下的 App 容器缓存路径。）
+  - 可搜索名称：NFC-3de78d821ecd388e / 四阶段严格串行验证 — 不能跳过Stage2直接到Stage3-rcross=0时D84三条路径失效
+  - 来源：`data/foundation/evidence/evidence.jsonl`
+  - 依赖：D84；被引用：—
+- [回滚条件：说明哪些事实、伤害、失败或治理异议会触发撤回；](../../../docs/governance/life-community-value-charter.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-2a31a1e49015849d / 回滚条件：说明哪些事实、伤害、失败或治理异议会触发撤回；
+  - 来源：`docs/governance/life-community-value-charter.md`
+  - 依赖：—；被引用：—
+- [回滚：只回退 registry 记录和其确定性投影；不得借快照回滚去改写候选载荷或历史。](../../../docs/operations/stage-snapshot-publication.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-78aca6fed07add63 / 回滚：只回退 registry 记录和其确定性投影；不得借快照回滚去改写候选载荷或历史。
+  - 来源：`docs/operations/stage-snapshot-publication.md`
+  - 依赖：—；被引用：—
+- [因此之元写作法可作为 epistemic sensor / gap-discovery interface，但不是证据 oracle。](../../../docs/publication/zhiyuan-writing-method.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-1d40afb523bb82b5 / 因此之元写作法可作为 epistemic sensor / gap-discovery interface，但不是证据 oracle。
+  - 来源：`docs/publication/zhiyuan-writing-method.md`
+  - 依赖：—；被引用：—
+- [在李清淼的学校，教师大会每天都在「比柱子」——各班的统考成绩平均分被列成柱状图，逐一分析，落后的老师要被科组长问责。「双减」政策后，老师们要比拼的东西更多了——公众号要做得漂亮，赛课需要得奖状，还要顺应AI潮流搞各种「教学特色智能体」。](../../../inputs/collisions/20260708-teacher-competition/source.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-482a3441129448c5 / 在李清淼的学校，教师大会每天都在「比柱子」——各班的统考成绩平均分被列成柱状图，逐一分析，落后的老师要被科组长问责。「双减」政策后，老师们要比拼的东西更多了——公众号要做得漂亮，赛课需要得奖状，还要顺应AI潮流搞各种「教学特色智能体」。
+  - 来源：`inputs/collisions/20260708-teacher-competition/source.md`
+  - 依赖：—；被引用：—
+- [在框架中新增轻量级 InterventionControlRef 对象(只含reference和metadata)，详细证据放在外部证据层](../../../data/external-research/105-intervention-control/105-interface-options-analysis.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-abcc91ad9e7601d6 / 在框架中新增轻量级 InterventionControlRef 对象(只含reference和metadata)，详细证据放在外部证据层
+  - 来源：`data/external-research/105-intervention-control/105-interface-options-analysis.json`
+  - 依赖：—；被引用：—
+- [在线远端验证使用：](../../../docs/operations/stage-snapshot-publication.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-47fd7ec820cc2212 / 在线远端验证使用：
+  - 来源：`docs/operations/stage-snapshot-publication.md`
+  - 依赖：—；被引用：—
+- [基于 UNESCO 250 个四位学科投影到点火 085 冻结架构的压力测试，识别出 14 个架构级缺口。本 overlay 提出可补齐的接口扩展方案。](../../../data/discipline-projection/087-v1-1-overlay.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-aa6feb489da1b808 / 基于 UNESCO 250 个四位学科投影到点火 085 冻结架构的压力测试，识别出 14 个架构级缺口。本 overlay 提出可补齐的接口扩展方案。
+  - 来源：`data/discipline-projection/087-v1-1-overlay.md`
+  - 依赖：—；被引用：—
+- [基于任务 D 的三门学科理论核试跑，我将扩展为 12 个领域的证据制度卡片。](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-6eedd9917b225600 / 基于任务 D 的三门学科理论核试跑，我将扩展为 12 个领域的证据制度卡片。
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [声称公平交易/合理使用适用于未经验证的情况](../../../docs/governance/external-input-non-republication-principle.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-73869a0d1537936d / 声称公平交易/合理使用适用于未经验证的情况
+  - 来源：`docs/governance/external-input-non-republication-principle.md`
+  - 依赖：—；被引用：—
+- [处置上，3,765 项 `QUARANTINE_UNTIL_DEFINED`，77 项 `DOWNGRADE_TO_PENDING`，44 项 `DOWNGRADE_TO_CONJECTURE`。仅 1 项在该登记口径中标作 `KEEP_A](../../../RESULTS/ADJUDICATION-SUMMARY.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-f1c45cfca5869cf4 / 处置上，3,765 项 `QUARANTINE_UNTIL_DEFINED`，77 项 `DOWNGRADE_TO_PENDING`，44 项 `DOWNGRADE_TO_CONJECTURE`。仅 1 项在该登记口径中标作 `KEEP_A
+  - 来源：`RESULTS/ADJUDICATION-SUMMARY.md`
+  - 依赖：—；被引用：—
+- [处置：** 088 将 087 定性降级为'外部来源未接入学科学投影初稿'，并在阶段2-4建立真实外部来源层。](../../../reports/foundation-architecture/088-087-count-and-denominator-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-b792119b46ebb3b2 / 处置：** 088 将 087 定性降级为'外部来源未接入学科学投影初稿'，并在阶段2-4建立真实外部来源层。
+  - 来源：`reports/foundation-architecture/088-087-count-and-denominator-audit.md`
+  - 依赖：—；被引用：—
+- [处置：** 确认 `evidence_tier_104 = METADATA_VERIFIED` 不变；RUN-1 发现的 5 条 `crossref_year` 缺口](../../../RESULTS/LATEST.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-4b5388413f74775a / 处置：** 确认 `evidence_tier_104 = METADATA_VERIFIED` 不变；RUN-1 发现的 5 条 `crossref_year` 缺口
+  - 来源：`RESULTS/LATEST.md`
+  - 依赖：—；被引用：—
+- [处置：** 确认 `evidence_tier_104 = METADATA_VERIFIED` 不变；RUN-1 发现的 5 条 `crossref_year` 缺口已回填/修正并复跑验证（year_match=117/117），重复 D](../../../docs/project-current-state.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-867f3dee8b8cd78b / 处置：** 确认 `evidence_tier_104 = METADATA_VERIFIED` 不变；RUN-1 发现的 5 条 `crossref_year` 缺口已回填/修正并复跑验证（year_match=117/117），重复 D
+  - 来源：`docs/project-current-state.md`
+  - 依赖：—；被引用：—
+- [复核 P1-0 规划的数据集是否能够从现有 Markdown 文档稳定抽取，并确定后续 P1-2 至 P1-6 的执行策略。](../../../outputs/audit/p1-extraction-feasibility-audit-20260707.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-81db92e691072f79 / 复核 P1-0 规划的数据集是否能够从现有 Markdown 文档稳定抽取，并确定后续 P1-2 至 P1-6 的执行策略。
+  - 来源：`outputs/audit/p1-extraction-feasibility-audit-20260707.md`
+  - 依赖：P1；被引用：—
+- [复核任务 A-I 的状态是否全部统一为已完成；](../../../docs/v0.2_next_tasks.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-1d69da9bc369b7e4 / 复核任务 A-I 的状态是否全部统一为已完成；
+  - 来源：`docs/v0.2_next_tasks.md`
+  - 依赖：—；被引用：—
+- [复核所有数据文件、schema 和校验器。](../../../docs/machine_readable_data_plan.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-f993928b866a3507 / 复核所有数据文件、schema 和校验器。
+  - 来源：`docs/machine_readable_data_plan.md`
+  - 依赖：—；被引用：—
+- [外部来源（论文、数据集、实验记录）](../../../reports/foundation-architecture/085-backlog-prioritization.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-d667c7419856303e / 外部来源（论文、数据集、实验记录）
+  - 来源：`reports/foundation-architecture/085-backlog-prioritization.md`
+  - 依赖：—；被引用：—
+- [外部证据 E0—E7](../../../docs/foundation/claim-governance-and-function-identity.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-470c3ef0eece526f / 外部证据 E0—E7
+  - 来源：`docs/foundation/claim-governance-and-function-identity.md`
+  - 依赖：—；被引用：—
+- [外部证据状态阶梯](../../../reports/external-research/104-dual-088-reconciliation.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-8758567649b38a70 / 外部证据状态阶梯
+  - 来源：`reports/external-research/104-dual-088-reconciliation.md`
+  - 依赖：—；被引用：—
+- [外部证据状态阶梯（Evidence Tier Schema）](../../../data/external-research/104-evidence-tier-schema.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-3e97654fc222c41c / 外部证据状态阶梯（Evidence Tier Schema）
+  - 来源：`data/external-research/104-evidence-tier-schema.md`
+  - 依赖：—；被引用：—
+- [外部验证报告整体：**成立**——D600/D601/D602 与 C-0810/C-0811 成立；M7/M8/M9 确因「≤5 配额」被挂起（非验证失败），本审计无配额规则下纠正为 M7/M9 升 NEW_FUNCTION、M8 pen](../../../outputs/collisions/20260711-disobedience-subjectivity/independent-second-angle-audit-056.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-8c2eab603d8df8f8 / 外部验证报告整体：**成立**——D600/D601/D602 与 C-0810/C-0811 成立；M7/M8/M9 确因「≤5 配额」被挂起（非验证失败），本审计无配额规则下纠正为 M7/M9 升 NEW_FUNCTION、M8 pen
+  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/independent-second-angle-audit-056.md`
+  - 依赖：D600, D601, D602；被引用：—
+- [外部验证报告读取规范](../../../docs/material-collision-validation-and-classification.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-49cb2d9f20732ce9 / 外部验证报告读取规范
+  - 来源：`docs/material-collision-validation-and-classification.md`
+  - 依赖：—；被引用：—
+- [多个独立研究验证](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-ff52b89aa7f63264 / 多个独立研究验证
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [多个独立研究验证（不同研究者得出相似结论）](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-b8a39e4712bd0ad2 / 多个独立研究验证（不同研究者得出相似结论）
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [多位一线教师证实，赛课和日常教学几乎是完全脱节的两套体系，对真实课堂的指导意义十分有限：](../../../inputs/collisions/20260708-teacher-competition/source.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-375babbe8053abbd / 多位一线教师证实，赛课和日常教学几乎是完全脱节的两套体系，对真实课堂的指导意义十分有限：
+  - 来源：`inputs/collisions/20260708-teacher-competition/source.md`
+  - 依赖：—；被引用：—
+- [多样性保留的最低阈值待治理与实证](../../../docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-064fbc19c1cb2b54 / 多样性保留的最低阈值待治理与实证
+  - 来源：`docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md`
+  - 依赖：—；被引用：—
+- [大数据的泛化相变——μ_data越过Λ_generalization的瞬间泛化能力质变](../../../data/foundation/evidence/evidence.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-f80f169bd7f4b95f / 大数据的泛化相变——μ_data越过Λ_generalization的瞬间泛化能力质变
+  - 来源：`data/foundation/evidence/evidence.jsonl`
+  - 依赖：—；被引用：—
+- [大模型涌现是否真实](../../../data/foundation/claims/claims.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-PEND-023 / 大模型涌现是否真实
+  - 来源：`data/foundation/claims/claims.jsonl`
+  - 依赖：—；被引用：—
+- [天意不是落地就能成为政治事实。先要有人报告、命名、登记和展示，它才会获得宫廷能够使用的形状。本文把这条通路称为接口。](../../../docs/publication/works/when-an-emperor-manufactures-heaven.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-d6640cd364d5545e / 天意不是落地就能成为政治事实。先要有人报告、命名、登记和展示，它才会获得宫廷能够使用的形状。本文把这条通路称为接口。
+  - 来源：`docs/publication/works/when-an-emperor-manufactures-heaven.md`
+  - 依赖：—；被引用：—
+- [失败条件：增加或删除行为者而无声明；传闻变事实；进行变完成；泛称变全称；预设被当作已证命题。](../../../docs/language-thought/cross-layer-contract.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-82909f2a6ba9bd55 / 失败条件：增加或删除行为者而无声明；传闻变事实；进行变完成；泛称变全称；预设被当作已证命题。
+  - 来源：`docs/language-thought/cross-layer-contract.md`
+  - 依赖：—；被引用：—
+- [失败条件：概念跃迁被用来豁免成句缺陷；为了统一风格抹平作者声音；文学效果抬高事实权限。](../../../docs/language-thought/cross-layer-contract.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-eb6a96d380322bfe / 失败条件：概念跃迁被用来豁免成句缺陷；为了统一风格抹平作者声音；文学效果抬高事实权限。
+  - 来源：`docs/language-thought/cross-layer-contract.md`
+  - 依赖：—；被引用：—
+- [失败案例库需要记录失败类型和原因。证据制度库提供了"常见误判"字段，帮助识别点火框架在不同领域最容易犯的错误。当发现失败案例时，可以根据证据制度库判定失败类型，并反向修正点火框架的输出。](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-b23a7c5c87fec397 / 失败案例库需要记录失败类型和原因。证据制度库提供了"常见误判"字段，帮助识别点火框架在不同领域最容易犯的错误。当发现失败案例时，可以根据证据制度库判定失败类型，并反向修正点火框架的输出。
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [失败案例需要标注失败类型。证据制度库可以帮助判断失败是材料错误、证据不足、学科标准误配，还是把 L2 推论误写成 L5 结论。](../../../docs/evidence_regime_library.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-df037ea38d17f70b / 失败案例需要标注失败类型。证据制度库可以帮助判断失败是材料错误、证据不足、学科标准误配，还是把 L2 推论误写成 L5 结论。
+  - 来源：`docs/evidence_regime_library.md`
+  - 依赖：—；被引用：—
+- [套统一模板** — 转换为 `unified-function-entry-template.md` / `unified-case-entry-template.md` 结构（含 frontmatter：kind/seq/id/title](../../../docs/two-tables-entry-writing-standard-20260709.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-5bb7662ce4519778 / 套统一模板** — 转换为 `unified-function-entry-template.md` / `unified-case-entry-template.md` 结构（含 frontmatter：kind/seq/id/title
+  - 来源：`docs/two-tables-entry-writing-standard-20260709.md`
+  - 依赖：—；被引用：—
+- [如何在不把候选表示误作事实的前提下，为跨尺度、跨领域映射补齐对象、映射、结构保持条件与反例？](../../../README.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-ccc9164d4f64474c / 如何在不把候选表示误作事实的前提下，为跨尺度、跨领域映射补齐对象、映射、结构保持条件与反例？
+  - 来源：`README.md`
+  - 依赖：—；被引用：—
+- [如果 benchmark 结果是“结构增益 + `pending`”，可作为结构性推论样本，但不能写成“已解决”。](../../../docs/classic_problems_benchmark.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-046bfa5c4bd8b009 / 如果 benchmark 结果是“结构增益 + `pending`”，可作为结构性推论样本，但不能写成“已解决”。
+  - 来源：`docs/classic_problems_benchmark.md`
+  - 依赖：—；被引用：—
+- [如果只想先看点火运行百轮之后真正留下的认识，请从\[成果书架\](../../../PUBLICATIONS/README.md)开始；不愿在仓库路径和机器记录之间跳转时，直接打开\[一页全景\](../../README.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a007e8a93c4a3b0d / 如果只想先看点火运行百轮之后真正留下的认识，请从\[成果书架\](../../../PUBLICATIONS/README.md)开始；不愿在仓库路径和机器记录之间跳转时，直接打开\[一页全景\](../../../docs/data_integration.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-4cf72eb0b7db1b79 / 如果数据不支持，记录“哪里失败”。
+  - 来源：`docs/data_integration.md`
+  - 依赖：—；被引用：—
+- [如果数据支持，记录“为什么支持”。](../../../docs/data_integration.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-947286106d7f206a / 如果数据支持，记录“为什么支持”。
+  - 来源：`docs/data_integration.md`
+  - 依赖：—；被引用：—
+- [如果是强主张，请同时标注断言等级，并说明它属于结构性推论、候选解释，还是已经过外部验证的命题。参阅 \[断言等级说明\](../../../docs/claim_levels.md)。](../../../CONTRIBUTING.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：NFC-f53b2e7022227437 / 如果是强主张，请同时标注断言等级，并说明它属于结构性推论、候选解释，还是已经过外部验证的命题。参阅 \[断言等级说明\](../../../docs/claim_levels.md)。
+  - 来源：`CONTRIBUTING.md`
+  - 依赖：—；被引用：—
+- [如果材料不能明确说明证据来源、证据制度、断言等级，则默认 pending。](../../../docs/publication_risk_checklist.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-ba4eb49e2d5b539d / 如果材料不能明确说明证据来源、证据制度、断言等级，则默认 pending。
+  - 来源：`docs/publication_risk_checklist.md`
+  - 依赖：—；被引用：—
+- [如果证据不足，请明确标记为 `pending`，不要强行写成通过。](../../../CONTRIBUTING.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-ca84ea1ec9981c33 / 如果证据不足，请明确标记为 `pending`，不要强行写成通过。
+  - 来源：`CONTRIBUTING.md`
+  - 依赖：—；被引用：—
+- [如果证据还不够，结论就保留 `pending`。](../../../docs/data_integration.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-5af3b901ea28c4d6 / 如果证据还不够，结论就保留 `pending`。
+  - 来源：`docs/data_integration.md`
+  - 依赖：—；被引用：—
+- [媒介证据不足](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-0836193e97d8a1a7 / 媒介证据不足
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [媒介证据（媒介上有证据）](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-06e22fdc6d6a2d73 / 媒介证据（媒介上有证据）
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [学校教育新剧变笔记碰撞验证](../../../data/foundation/evidence/evidence.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-2a478d371a6227ed / 学校教育新剧变笔记碰撞验证
+  - 来源：`data/foundation/evidence/evidence.jsonl`
+  - 依赖：—；被引用：—
+- [学科证据分层](../../../data/external-research/088-PROGRESS.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-41f2bba9f3f3112e / 学科证据分层
+  - 来源：`data/external-research/088-PROGRESS.md`
+  - 依赖：—；被引用：—
+- [学科证据制度误配](../../../docs/failure_typology.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-ad9ee99e0c68ccff / 学科证据制度误配
+  - 来源：`docs/failure_typology.md`
+  - 依赖：—；被引用：—
+- [学科证据制度误配](../../../data/failure_typology.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-bad1983f794fe9ef / 学科证据制度误配
+  - 来源：`data/failure_typology.csv`
+  - 依赖：—；被引用：—
+- [学科证据制度误配指把一个学科的证据标准硬套到另一个学科上。](../../../outputs/getbrain/failure-typology-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-4556934ed9c4df49 / 学科证据制度误配指把一个学科的证据标准硬套到另一个学科上。
+  - 来源：`outputs/getbrain/failure-typology-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [学科证据制度误配（用结构性推论替代代码、实验、benchmark）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-a289c454119a1f16 / 学科证据制度误配（用结构性推论替代代码、实验、benchmark）
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [学科证据制度误配（用结构性推论替代实验、量表、纵向研究）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-e7a7fa825c1d3a77 / 学科证据制度误配（用结构性推论替代实验、量表、纵向研究）
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [学科证据制度误配（用结构性推论替代形式分析、媒介分析、观看情境分析、历史语境分析、解释共同体讨论）](../../../outputs/getbrain/classic-problems-benchmark-supplement-20260707.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-d0677a28605419c1 / 学科证据制度误配（用结构性推论替代形式分析、媒介分析、观看情境分析、历史语境分析、解释共同体讨论）
+  - 来源：`outputs/getbrain/classic-problems-benchmark-supplement-20260707.md`
+  - 依赖：—；被引用：—
+- [学科证据制度误配（用结构性推论替代形式分析、媒介分析、观看情境分析）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-16100ab4acc7023c / 学科证据制度误配（用结构性推论替代形式分析、媒介分析、观看情境分析）
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [学科证据制度误配（用结构性推论替代教育实验、长期追踪）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-3eb3e27455ac1b14 / 学科证据制度误配（用结构性推论替代教育实验、长期追踪）
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [学科证据制度误配（用结构性推论替代文本细读、文学共同体讨论）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-852de08edd464ef8 / 学科证据制度误配（用结构性推论替代文本细读、文学共同体讨论）
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [学科证据制度误配（用结构性推论替代计量检验）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-56bdd1353bd5f750 / 学科证据制度误配（用结构性推论替代计量检验）
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [学科证据制度误配（用结构性推论替代调查、统计、田野、实验）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-31ba7a6ed1fb4eea / 学科证据制度误配（用结构性推论替代调查、统计、田野、实验）
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [它们不必被判定为真鹤或假鹤。画的意义也不只在于保存一次奇观。它记录了一个宫廷如何把事件变成证据：鹤被安排在画面上方，宫门和城市留在下方，题诗为景象规定方向；观看者看到的不是未经解释的天空，而是一个已经完成部分解释的天空。](../../../docs/publication/works/when-an-emperor-manufactures-heaven.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-751a1c88ebd63835 / 它们不必被判定为真鹤或假鹤。画的意义也不只在于保存一次奇观。它记录了一个宫廷如何把事件变成证据：鹤被安排在画面上方，宫门和城市留在下方，题诗为景象规定方向；观看者看到的不是未经解释的天空，而是一个已经完成部分解释的天空。
+  - 来源：`docs/publication/works/when-an-emperor-manufactures-heaven.md`
+  - 依赖：—；被引用：—
+- [它们完成了大量琐碎、重复、细密而必要的工作：](../../../ACKNOWLEDGEMENTS.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-10d5adaa1e1afb60 / 它们完成了大量琐碎、重复、细密而必要的工作：
+  - 来源：`ACKNOWLEDGEMENTS.md`
+  - 依赖：—；被引用：—
+- [它只规定“哪些内容应被抽取成结构化数据、每个数据集有哪些字段、字段从哪里来、如何校验”，不直接生成 CSV / JSON。](../../../docs/machine_readable_data_plan.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-96313e31a777d4e3 / 它只规定“哪些内容应被抽取成结构化数据、每个数据集有哪些字段、字段从哪里来、如何校验”，不直接生成 CSV / JSON。
+  - 来源：`docs/machine_readable_data_plan.md`
+  - 依赖：—；被引用：—
+- [它如何调用证据制度库？](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-bf58ceed05dd557e / 它如何调用证据制度库？
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [它提供的事实、经验、语言或张力：](../../../templates/publication/zhiyuan-writing-spec.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-a9f85ae2625a79d3 / 它提供的事实、经验、语言或张力：
+  - 来源：`templates/publication/zhiyuan-writing-spec.md`
+  - 依赖：—；被引用：—
+- [安全验证（安全性评估、风险评估）](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-4cabc3c9c2ce4947 / 安全验证（安全性评估、风险评估）
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [安然公司财务造假时，员工事实上无法安全退出，真实退出权缺失，契约关系已经失效。](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0732-C-0737-%E5%AE%89%E7%84%B6%E5%85%AC%E5%8F%B8.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-5a46424884dd6004 / 安然公司财务造假时，员工事实上无法安全退出，真实退出权缺失，契约关系已经失效。
+  - 来源：`统一案例总表/0732-C-0737-安然公司.md`
+  - 依赖：—；被引用：—
+- [宋莹芳美育笔记碰撞验证](../../../data/foundation/evidence/evidence.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-871166bbae653b31 / 宋莹芳美育笔记碰撞验证
+  - 来源：`data/foundation/evidence/evidence.jsonl`
+  - 依赖：—；被引用：—
+- [完成管线设计后，下一步执行 `inputs/collisions/20260708-smoke-test/` 的小规模烟雾测试，验证 P1 数据接入流程是否跑通，**不回填正式两张表**。](../../../docs/p1-machine-data-collision-workflow-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-0b5fa7def099068f / 完成管线设计后，下一步执行 `inputs/collisions/20260708-smoke-test/` 的小规模烟雾测试，验证 P1 数据接入流程是否跑通，**不回填正式两张表**。
+  - 来源：`docs/p1-machine-data-collision-workflow-20260708.md`
+  - 依赖：P1；被引用：—
+- [完成自举循环收敛**\\n - 达到收敛判据：连续两轮ΔB=0 或 连续两轮新扩展注释为0\\n - 产出最终验证报告\\n\\n2.](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0673-C-0678-%E5%AD%AA%E7%94%9F%E7%B4%A0%E6%95%B0%E9%97%AE%E9%A2%98%E8%BD%AC%E6%8D%A2.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-e175bb2c9f57edf8 / 完成自举循环收敛**\\n - 达到收敛判据：连续两轮ΔB=0 或 连续两轮新扩展注释为0\\n - 产出最终验证报告\\n\\n2.
+  - 来源：`统一案例总表/0673-C-0678-孪生素数问题转换.md`
+  - 依赖：—；被引用：—
+- [完整机器与人工产物：`evidence-program/` 与](../../../RESULTS/LATEST.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-db32299e8d4d50a7 / 完整机器与人工产物：`evidence-program/` 与
+  - 来源：`RESULTS/LATEST.md`
+  - 依赖：—；被引用：—
+- [完整链：** \[起始来源与边界\](../../../docs/publication/cases/song-huizong-taoism-1117-source.md) → \[点火分析\](../../../docs/publication/zhiyuan-writing-showcase.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-9aa71c6bc65c39ed / 完整链：** \[起始来源与边界\](../../../docs/publication/cases/song-huizong-taoism-1117-source.md) → \[点火分析\](../../../ITERATION.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-a9cb8293159aee9d / 定为 `EVIDENCE_PARTIAL_OR_DISPUTED` / `EXECUTABLE_TARGET_ABSENT` /
+  - 来源：`ITERATION.md`
+  - 依赖：—；被引用：—
+- [定义：** 信息来自目击、转述、推断还是传闻，以及说话者把它写成可能、应当或确定事实的程度。](../../../docs/language-thought/dimensional-basis.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-e5be6983b4a7db92 / 定义：** 信息来自目击、转述、推断还是传闻，以及说话者把它写成可能、应当或确定事实的程度。
+  - 来源：`docs/language-thought/dimensional-basis.md`
+  - 依赖：—；被引用：—
+- [定义：** 说话者从谁的位置看，参与者的社会关系、敬意、距离与立场怎样进入形式。](../../../docs/language-thought/dimensional-basis.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-c2278b47a9cd9cf6 / 定义：** 说话者从谁的位置看，参与者的社会关系、敬意、距离与立场怎样进入形式。
+  - 来源：`docs/language-thought/dimensional-basis.md`
+  - 依赖：—；被引用：—
+- [定性上只是'学科学投影初稿'，未接入真实外部研究，由 088 阶段2-4补齐。](../../../reports/foundation-architecture/088-087-count-and-denominator-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-062ee2ad7cb94d6f / 定性上只是'学科学投影初稿'，未接入真实外部研究，由 088 阶段2-4补齐。
+  - 来源：`reports/foundation-architecture/088-087-count-and-denominator-audit.md`
+  - 依赖：—；被引用：—
+- [定投=门锁交替律执行(验证D47+D49)](../../../data/foundation/evidence/evidence.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-b177dc0904c5dbf4 / 定投=门锁交替律执行(验证D47+D49)
+  - 来源：`data/foundation/evidence/evidence.jsonl`
+  - 依赖：D47, D49；被引用：—
+- [定投P_sustain全局最大值(验证D34)](../../../data/foundation/evidence/evidence.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-c68a8bd74d43138c / 定投P_sustain全局最大值(验证D34)
+  - 来源：`data/foundation/evidence/evidence.jsonl`
+  - 依赖：D34；被引用：—
+- [定投的结构保守性 — 每月5000,W=10万时f=5%,W=100万时f=0.5%,自动递减永远保守](../../../data/foundation/evidence/evidence.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-c70285d07381fd0c / 定投的结构保守性 — 每月5000,W=10万时f=5%,W=100万时f=0.5%,自动递减永远保守
+  - 来源：`data/foundation/evidence/evidence.jsonl`
+  - 依赖：—；被引用：—
+- [实际部署和验证](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-36160d9e3e30cdf6 / 实际部署和验证
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [实验观测验证](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-8f9a79c7925fb265 / 实验观测验证
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [实验设计朝容易出显著结果的方向倾斜，高风险但可能更关键的阴性对照被压缩；](../../../inputs/collisions/20260708-cross-domain-smoke-test/science.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-aae17a6e262381a8 / 实验设计朝容易出显著结果的方向倾斜，高风险但可能更关键的阴性对照被压缩；
+  - 来源：`inputs/collisions/20260708-cross-domain-smoke-test/science.md`
+  - 依赖：—；被引用：—
+- [实验评估不足](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-deea50fcd408bcf2 / 实验评估不足
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [实验评估（实验数据、可复现评测）](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-81fc23713075b5a8 / 实验评估（实验数据、可复现评测）
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [审计：生命共同体价值宪章 README 入口](../../ASSET-CARDS.md#asset-hr-a7b229336e1604ab)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：审计：生命共同体价值宪章 README 入口 / life-community-value-charter-readme-audit-20260711
+  - 来源：`outputs/audit/life-community-value-charter-readme-audit-20260711.md`
+  - 依赖：—；被引用：—
+- [密码学四个维度的映射全部通过了J⁺=1, J⁻=0的正反交叉验证，验证了点火框架在密码域的跨域适用性。](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0658-C-663-%E5%AF%86%E7%A0%81%E5%AD%A6%E7%A2%B0%E6%92%9E%E9%AA%8C%E8%AF%81%E6%A1%88%E4%BE%8B.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-bec07388499dba2b / 密码学四个维度的映射全部通过了J⁺=1, J⁻=0的正反交叉验证，验证了点火框架在密码域的跨域适用性。
+  - 来源：`统一案例总表/0658-C-663-密码学碰撞验证案例.md`
+  - 依赖：—；被引用：—
+- [密码学碰撞验证案例](../../../data/foundation/evidence/evidence.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-7de0ed3ccb885907 / 密码学碰撞验证案例
+  - 来源：`data/foundation/evidence/evidence.jsonl`
+  - 依赖：—；被引用：—
+- [对 22 本书验证候选（BC-20260709-001~022）逐条查重与入表门槛复核。](../../../CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-9c162372dca6a1e7 / 对 22 本书验证候选（BC-20260709-001~022）逐条查重与入表门槛复核。
+  - 来源：`CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [对 GAP-002 执行与 105/106 相同的全文证据深挖流程](../../../reports/external-research/106-next-task-handoff.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-60252b5a2f4f05e7 / 对 GAP-002 执行与 105/106 相同的全文证据深挖流程
+  - 来源：`reports/external-research/106-next-task-handoff.md`
+  - 依赖：—；被引用：—
+- [对 P4 中潜在可升级为 strict isomorphism 的候选进行专项形式化](../../../reports/foundation-architecture/084-architecture-truth-freeze-readiness.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-2443b1cd1138febc / 对 P4 中潜在可升级为 strict isomorphism 的候选进行专项形式化
+  - 来源：`reports/foundation-architecture/084-architecture-truth-freeze-readiness.md`
+  - 依赖：P4；被引用：—
+- [对 Stukeley、Conduitt 和 Newton Project 的历史材料复核后，苹果叙事的外部证据状态为](../../../RESULTS/LATEST.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-e3763fed4297c089 / 对 Stukeley、Conduitt 和 Newton Project 的历史材料复核后，苹果叙事的外部证据状态为
+  - 来源：`RESULTS/LATEST.md`
+  - 依赖：—；被引用：—
+- [对比三门学科的证据制度；](../../../outputs/getbrain/README.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-a7b071816d83402f / 对比三门学科的证据制度；
+  - 来源：`outputs/getbrain/README.md`
+  - 依赖：—；被引用：—
+- [导数连续性×双向动力学验证](../../../data/foundation/evidence/evidence.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-79ce45a9b9287a93 / 导数连续性×双向动力学验证
+  - 来源：`data/foundation/evidence/evidence.jsonl`
+  - 依赖：—；被引用：—
+- [封闭/开放的成本收益跨域实证待补充](../../../docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-39e7fbb84c7dac5f / 封闭/开放的成本收益跨域实证待补充
+  - 来源：`docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md`
+  - 依赖：—；被引用：—
+- [将 NF-X1 写入 D597 扩展注释，并据三领域复现上收 D597 的跨域普遍性 pending；](../../../outputs/audit/cross-domain-candidate-function-review-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-6a0b3a4dedeb5d54 / 将 NF-X1 写入 D597 扩展注释，并据三领域复现上收 D597 的跨域普遍性 pending；
+  - 来源：`outputs/audit/cross-domain-candidate-function-review-20260708.md`
+  - 依赖：D597；被引用：—
+- [将 P1 机器可读化任务推进到 P1-4：生成 pending / risk / failure 数据。](../../../CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-8dda8867a7f66cff / 将 P1 机器可读化任务推进到 P1-4：生成 pending / risk / failure 数据。
+  - 来源：`CHANGELOG.md`
+  - 依赖：P1；被引用：—
+- [将 P1 机器可读化任务推进到 P1-5：生成 evidence / function dependency 数据。](../../../CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-2509875c9a54bf59 / 将 P1 机器可读化任务推进到 P1-5：生成 evidence / function dependency 数据。
+  - 来源：`CHANGELOG.md`
+  - 依赖：P1；被引用：—
+- [将 P1 机器可读化任务推进到 P1-6：建立数据校验器。](../../../CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-e51cf84a01ee4a45 / 将 P1 机器可读化任务推进到 P1-6：建立数据校验器。
+  - 来源：`CHANGELOG.md`
+  - 依赖：P1；被引用：—
+- [将 P1 机器可读化任务推进到 P1-7：P1 数据完整性审计。](../../../CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-7e99a35abb440a5b / 将 P1 机器可读化任务推进到 P1-7：P1 数据完整性审计。
+  - 来源：`CHANGELOG.md`
+  - 依赖：P1；被引用：—
+- [将学科证据制度绑定到断言等级和 pending 条件。](../../../data/function_dependency.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-3693d63798872053 / 将学科证据制度绑定到断言等级和 pending 条件。
+  - 来源：`data/function_dependency.csv`
+  - 依赖：—；被引用：—
+- [将经典问题 benchmark、失败类型学、证据制度库与公开表达连接起来；](../../../outputs/getbrain/README.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-1234c189928c4305 / 将经典问题 benchmark、失败类型学、证据制度库与公开表达连接起来；
+  - 来源：`outputs/getbrain/README.md`
+  - 依赖：—；被引用：—
+- [将证据制度库初稿整理为正式仓库文档；](../../../CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-1f6929e04cb7b991 / 将证据制度库初稿整理为正式仓库文档；
+  - 来源：`CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [将证据制度扩展到 UNESCO 更多学科；](../../../docs/evidence_regime_library.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-2a9db726bcfba9d9 / 将证据制度扩展到 UNESCO 更多学科；
+  - 来源：`docs/evidence_regime_library.md`
+  - 依赖：—；被引用：—
+- [小群体资源不易感验证](../../../data/foundation/evidence/evidence.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-e29b53edfb7c27a6 / 小群体资源不易感验证
+  - 来源：`data/foundation/evidence/evidence.jsonl`
+  - 依赖：—；被引用：—
+- [小资金恐惧锁定向下螺旋(验证D67)](../../../data/foundation/evidence/evidence.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-d99a0aefb0d98263 / 小资金恐惧锁定向下螺旋(验证D67)
+  - 来源：`data/foundation/evidence/evidence.jsonl`
+  - 依赖：D67；被引用：—
+- [尝试把跨领域问题放进统一流程；](../../../docs/author_motivation_and_boundary_note.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-422426394d620b7e / 尝试把跨领域问题放进统一流程；
+  - 来源：`docs/author_motivation_and_boundary_note.md`
+  - 依赖：—；被引用：—
+- [尺度错配（个体理解误写成群体规律）](../../../outputs/getbrain/classic-problems-benchmark-supplement-20260707.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-76d32ab1162d1029 / 尺度错配（个体理解误写成群体规律）
+  - 来源：`outputs/getbrain/classic-problems-benchmark-supplement-20260707.md`
+  - 依赖：—；被引用：—
+- [局外人因信息隔离而不受群体共识约束，能够发现被专家认为"不可能"的突破路径](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0686-C-0691-%E5%BC%A0%E7%9B%8A%E5%94%90%E7%AA%81%E7%A0%B4%E5%8D%8A%E6%95%B0%E9%9A%9C%E7%A2%8D.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-916062edd8782851 / 局外人因信息隔离而不受群体共识约束，能够发现被专家认为"不可能"的突破路径
+  - 来源：`统一案例总表/0686-C-0691-张益唐突破半数障碍.md`
+  - 依赖：—；被引用：—
+- [局部成立被当成全局必然。](../../../outputs/getbrain/failure-typology-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-235b80e3eed4177c / 局部成立被当成全局必然。
+  - 来源：`outputs/getbrain/failure-typology-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [局部模型失败不能推广为全称不可能；必要条件不能冒充充分条件。](../../../docs/foundation/claim-governance-and-function-identity.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-5408664a50e8c248 / 局部模型失败不能推广为全称不可能；必要条件不能冒充充分条件。
+  - 来源：`docs/foundation/claim-governance-and-function-identity.md`
+  - 依赖：—；被引用：—
+- [层级 vs 网络(S4)的适用边界量化待案例验证](../../../docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-9080c8c37dd57e3a / 层级 vs 网络(S4)的适用边界量化待案例验证
+  - 来源：`docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md`
+  - 依赖：—；被引用：—
+- [工业革命为什么首先发生在英国](../../../data/foundation/claims/claims.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：CLAIM-PEND-009 / 工业革命为什么首先发生在英国
+  - 来源：`data/foundation/claims/claims.jsonl`
+  - 依赖：—；被引用：—
+- [工具箱空间验证](../../../data/foundation/evidence/evidence.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-24bdd12a0f04b7a6 / 工具箱空间验证
+  - 来源：`data/foundation/evidence/evidence.jsonl`
+  - 依赖：—；被引用：—
+- [工程可行性、成本、性能、部署判断](../../../data/foundation/claims/claims.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：CLAIM-PEND-029 / 工程可行性、成本、性能、部署判断
+  - 来源：`data/foundation/claims/claims.jsonl`
+  - 依赖：—；被引用：—
+- [工程学命题成立需要设计、测试、仿真、制造和安全验证。](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-a06d1935cb9c7606 / 工程学命题成立需要设计、测试、仿真、制造和安全验证。
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [工程学是中等风险领域。工程命题需要实际验证。理论可行性、设计合理性、成本可控性未验证时必须 pending。](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-b362f708cc603140 / 工程学是中等风险领域。工程命题需要实际验证。理论可行性、设计合理性、成本可控性未验证时必须 pending。
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [工程学：理论可行性、设计合理性、成本可控性未验证](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-c1a7e6eeb40be9f4 / 工程学：理论可行性、设计合理性、成本可控性未验证
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [已**回填/修正并复跑验证**（year_match = 117/117）；重复 DOI 判定为有意跨 gap 引用，已保留](../../../RESULTS/LATEST.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-2a02b1b55e7a2ac6 / 已**回填/修正并复跑验证**（year_match = 117/117）；重复 DOI 判定为有意跨 gap 引用，已保留
+  - 来源：`RESULTS/LATEST.md`
+  - 依赖：—；被引用：—
+- [已在：本 README、D600/D601/D602 的 `source` 字段（已引用 MD SHA）、C-0810/C-0811 的「证据来源」、PR 正文同步采用此口径；PDF SHA 保留为 transport hash，未删除、未](../../../outputs/collisions/20260711-disobedience-subjectivity/validation-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-6c40cec737a2acbf / 已在：本 README、D600/D601/D602 的 `source` 字段（已引用 MD SHA）、C-0810/C-0811 的「证据来源」、PR 正文同步采用此口径；PDF SHA 保留为 transport hash，未删除、未
+  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/validation-report.md`
+  - 依赖：D600, D601, D602；被引用：—
+- [已经统一四种基本力；](../../../outputs/getbrain/project-position-update-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-6b5742412c89bfbf / 已经统一四种基本力；
+  - 来源：`outputs/getbrain/project-position-update-20260706.md`
+  - 依赖：—；被引用：—
+- [已覆盖 1 条：M2→D598+D597（家庭轴补强证据）。](../../../outputs/collisions/20260711-disobedience-subjectivity/two-tables-full-collision-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-12e5b457821522e9 / 已覆盖 1 条：M2→D598+D597（家庭轴补强证据）。
+  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/two-tables-full-collision-report.md`
+  - 依赖：D597, D598；被引用：—
+- [已验证 / 跨域复现 / 单材料 pending / 证据不足 pending](../../../templates/two-tables/unified-function-entry-template.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a41d765ea25bc49c / 已验证 / 跨域复现 / 单材料 pending / 证据不足 pending
+  - 来源：`templates/two-tables/unified-function-entry-template.md`
+  - 依赖：—；被引用：—
+- [巴菲特模式的投资域验证 — 定投=巴菲特模式精确执行,三效率乘积最大](../../../data/foundation/evidence/evidence.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-7a0beed0911f45e4 / 巴菲特模式的投资域验证 — 定投=巴菲特模式精确执行,三效率乘积最大
+  - 来源：`data/foundation/evidence/evidence.jsonl`
+  - 依赖：—；被引用：—
+- [市场为何会失灵](../../../data/foundation/claims/claims.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：CLAIM-PEND-012 / 市场为何会失灵
+  - 来源：`data/foundation/claims/claims.jsonl`
+  - 依赖：—；被引用：—
+- [帮助 README、docs、benchmark、故事化案例和对外材料统一措辞。](../../../docs/pending_claims_register.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-401bab5c58f529b7 / 帮助 README、docs、benchmark、故事化案例和对外材料统一措辞。
+  - 来源：`docs/pending_claims_register.md`
+  - 依赖：—；被引用：—
+- [年7月19日（人类纪元；对应公元2026年7月19日）— Q33 正式候选构件](../../../docs/governance/external-input-non-republication-principle.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-5206c675f0bb0004 / 年7月19日（人类纪元；对应公元2026年7月19日）— Q33 正式候选构件
+  - 来源：`docs/governance/external-input-non-republication-principle.md`
+  - 依赖：—；被引用：—
+- [年7月9日点火框架书籍验证总数检查报告 2026年7月9日18_10__1915117231789474672.md](../../../outputs/book-collisions/20260709-22-book-validation/source-manifest.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：NFC-6aa82c512c92d58c / 年7月9日点火框架书籍验证总数检查报告 2026年7月9日18_10__1915117231789474672.md
+  - 来源：`outputs/book-collisions/20260709-22-book-validation/source-manifest.md`
+  - 依赖：—；被引用：—
+- [年7月9日点火框架书籍验证总数检查报告（修正版） 2026年7月9日18_13__1915117431508209864.md](../../../outputs/book-collisions/20260709-22-book-validation/source-manifest.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：NFC-5f1b5199a3b5f030 / 年7月9日点火框架书籍验证总数检查报告（修正版） 2026年7月9日18_13__1915117431508209864.md
+  - 来源：`outputs/book-collisions/20260709-22-book-validation/source-manifest.md`
+  - 依赖：—；被引用：—
+- [年，莫斯科大公伊凡三世停止向金帐汗国上缴税贡。15世纪70年代末，阿黑麻汗试图重统一术赤兀鲁思，但内部争斗成了他的绊脚石。](../../../%E6%96%B0%E6%95%85%E4%BA%8B/0001-S1-%E6%AF%94%E5%88%80%E5%89%91%E6%9B%B4%E6%8C%81%E4%B9%85%E7%9A%84%EF%BC%8C%E6%98%AF%E5%85%B1%E4%BA%AB%E8%A7%82%E5%BF%B5.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-e127ebcc20f76a95 / 年，莫斯科大公伊凡三世停止向金帐汗国上缴税贡。15世纪70年代末，阿黑麻汗试图重统一术赤兀鲁思，但内部争斗成了他的绊脚石。
+  - 来源：`新故事/0001-S1-比刀剑更持久的，是共享观念.md`
+  - 依赖：—；被引用：—
+- [底层数据：`data/meta-protocols/meta-protocols.json`（12 协议 schema）、`data/meta-protocols/meta-protocol-combinations.json`（64 组合](../../../docs/protocols/README.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-f7cc51c7144e01e4 / 底层数据：`data/meta-protocols/meta-protocols.json`（12 协议 schema）、`data/meta-protocols/meta-protocol-combinations.json`（64 组合
+  - 来源：`docs/protocols/README.md`
+  - 依赖：—；被引用：—
+- [度规扰动传播验证 — 组织文化变革-新CEO上任→H从0.8→0.3(遮蔽降低)→经济维度1周内感知→社交维度3周→心理维度8周。传播延迟与](../../../data/foundation/evidence/evidence.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-8b167854549a6425 / 度规扰动传播验证 — 组织文化变革-新CEO上任→H从0.8→0.3(遮蔽降低)→经济维度1周内感知→社交维度3周→心理维度8周。传播延迟与
+  - 来源：`data/foundation/evidence/evidence.jsonl`
+  - 依赖：—；被引用：—
+- [建立 12 个领域的证据制度卡片；](../../../outputs/getbrain/README.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-6d3c9ee30a555111 / 建立 12 个领域的证据制度卡片；
+  - 来源：`outputs/getbrain/README.md`
+  - 依赖：—；被引用：—
+- [建立了最小 Evidence Program 并执行了第一个真实试点：](../../../RESULTS/LATEST.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-f8c91ddc1aa2f60a / 建立了最小 Evidence Program 并执行了第一个真实试点：
+  - 来源：`RESULTS/LATEST.md`
+  - 依赖：—；被引用：—
+- [建立机器可读的证据制度表格或 JSON。](../../../docs/evidence_regime_library.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-6cc7f2057080e51f / 建立机器可读的证据制度表格或 JSON。
+  - 来源：`docs/evidence_regime_library.md`
+  - 依赖：—；被引用：—
+- [建议从新增条目开始统一**：D595-D599、C-0807-C-0809 及之后所有新入表条目，强制使用本模板。](../../../outputs/audit/two-tables-entry-format-audit-20260709.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-5a98b6170c065a6b / 建议从新增条目开始统一**：D595-D599、C-0807-C-0809 及之后所有新入表条目，强制使用本模板。
+  - 来源：`outputs/audit/two-tables-entry-format-audit-20260709.md`
+  - 依赖：D595, D599；被引用：—
+- [建议优先做：候选 2 — P1 机器数据接入碰撞工作流。**](../../../docs/getbrain-handoff-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-2f5f1e0b20c3d232 / 建议优先做：候选 2 — P1 机器数据接入碰撞工作流。**
+  - 来源：`docs/getbrain-handoff-20260708.md`
+  - 依赖：P1；被引用：—
+- [建议优先：`P1 机器数据接入碰撞工作流`。](../../../docs/getbrain-operation-guide-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-f7cbe2485029bee1 / 建议优先：`P1 机器数据接入碰撞工作流`。
+  - 来源：`docs/getbrain-operation-guide-20260708.md`
+  - 依赖：P1；被引用：—
+- [开放—封闭的最优切换条件待建模与案例验证](../../../docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-de161bb24466488a / 开放—封闭的最优切换条件待建模与案例验证
+  - 来源：`docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md`
+  - 依赖：—；被引用：—
+- [开放须在生态/社会承载力上限内](../../../docs/governance/meta-protocol-reviews/protocols/S2.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-0934bb7137d7d571 / 开放须在生态/社会承载力上限内
+  - 来源：`docs/governance/meta-protocol-reviews/protocols/S2.md`
+  - 依赖：—；被引用：—
+- [强证据要求](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-305553e68a99289c / 强证据要求
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [强证据要求；](../../../docs/evidence_regime_library.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-e5ef0522ef5a96fb / 强证据要求；
+  - 来源：`docs/evidence_regime_library.md`
+  - 依赖：—；被引用：—
+- [当前免 key 模式已验证可用。](../../../docs/external-research/anysearch-usage.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-f9eada51cd226f44 / 当前免 key 模式已验证可用。
+  - 来源：`docs/external-research/anysearch-usage.md`
+  - 依赖：—；被引用：—
+- [当前快照：2026-07-30，任务 102 知识体验入口与探索层。分支提交在普通合并和 `main` 复验前仍是 Candidate；历史版本和关闭证据保留在 Git、CHANGELOG 与原报告中。](../../../SUMMARY.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-98987570e463f164 / 当前快照：2026-07-30，任务 102 知识体验入口与探索层。分支提交在普通合并和 `main` 复验前仍是 Candidate；历史版本和关闭证据保留在 Git、CHANGELOG 与原报告中。
+  - 来源：`SUMMARY.md`
+  - 依赖：—；被引用：—
+- [当前成果从\[人类索引\](../../../docs/publication/zhiyuan-writing-showcase.md)与 `data/publication/zhiyuan-writing-showcase.json` 读取。AI 不得只抓取作品标题](../../../docs/ai-assistant-usage-reference.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-d2634f91fb542991 / 当前成果从\[人类索引\](../../../docs/publication/zhiyuan-writing-showcase.md)与 `data/publication/zhiyuan-writing-showcase.json` 读取。AI 不得只抓取作品标题
+  - 来源：`docs/ai-assistant-usage-reference.md`
+  - 依赖：—；被引用：—
+- [当前结论的上限仍是跨源书目元数据一致性。OpenAlex 结果不验证论文内容、科学真理、](../../../docs/project-current-state.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-ecffbc93efbf56d0 / 当前结论的上限仍是跨源书目元数据一致性。OpenAlex 结果不验证论文内容、科学真理、
+  - 来源：`docs/project-current-state.md`
+  - 依赖：—；被引用：—
+- [当前自我纠错链会自动发现知识资产变化，生成 Claim Delta、影响分析、证据谱系变化、审计发现和整改计划；它检测仓库规则，不宣称自动判断外部真理。](../../../RESULTS/LATEST.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-8c620dc82e215d28 / 当前自我纠错链会自动发现知识资产变化，生成 Claim Delta、影响分析、证据谱系变化、审计发现和整改计划；它检测仓库规则，不宣称自动判断外部真理。
+  - 来源：`RESULTS/LATEST.md`
+  - 依赖：—；被引用：—
+- [当前证据注册表位于 \[`evidence-registry.jsonl`\](../../../data/language-thought/evidence-registry.jsonl)。其中区分实验研究、参考语法、类型学资料和文学／语体校准；搜](../../../docs/language-thought/research-boundary.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-8bc837943c34f890 / 当前证据注册表位于 \[`evidence-registry.jsonl`\](../../../data/language-thought/evidence-registry.jsonl)。其中区分实验研究、参考语法、类型学资料和文学／语体校准；搜
+  - 来源：`docs/language-thought/research-boundary.md`
+  - 依赖：—；被引用：—
+- [形式化不等于证实；可计算不等于真实；内部自洽不等于外部成立。](../../../docs/foundation/claim-governance-and-function-identity.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-e045a1cee90ce5fc / 形式化不等于证实；可计算不等于真实；内部自洽不等于外部成立。
+  - 来源：`docs/foundation/claim-governance-and-function-identity.md`
+  - 依赖：—；被引用：—
+- [形式大于内容的设计**：近年赛课强行要求塞入跨学科、AI、智能体等前沿元素，不少设计完全脱离教学需求，比如用AI生成虚拟人物讲历史场景，甚至有特级教师自掏腰包找游戏公司花半年时间定制课堂专属游戏，只为在千人级公开课PK中获得高分。](../../../inputs/collisions/20260708-teacher-competition/source.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-e1a4aa03ef27f9d8 / 形式大于内容的设计**：近年赛课强行要求塞入跨学科、AI、智能体等前沿元素，不少设计完全脱离教学需求，比如用AI生成虚拟人物讲历史场景，甚至有特级教师自掏腰包找游戏公司花半年时间定制课堂专属游戏，只为在千人级公开课PK中获得高分。
+  - 来源：`inputs/collisions/20260708-teacher-competition/source.md`
+  - 依赖：—；被引用：—
+- [形式证据不足](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-38f7005d699ffa73 / 形式证据不足
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [形式证据（作品中有形式证据）](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-468ffc3a59c90e22 / 形式证据（作品中有形式证据）
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [循环周期与承载力的匹配度量待实证](../../../docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-ddc983bf5793be02 / 循环周期与承载力的匹配度量待实证
+  - 来源：`docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md`
+  - 依赖：—；被引用：—
+- [循环递归优化社会结构](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-adb73c6f432e3c13 / 循环递归优化社会结构
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [德国社会市场经济](../../../data/foundation/evidence/evidence.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-ca4e24ddcb36f8a9 / 德国社会市场经济
+  - 来源：`data/foundation/evidence/evidence.jsonl`
+  - 依赖：—；被引用：—
+- [心率累积耗损验证](../../../data/foundation/evidence/evidence.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-4babb93034c5eada / 心率累积耗损验证
+  - 来源：`data/foundation/evidence/evidence.jsonl`
+  - 依赖：—；被引用：—
+- [心理学界通过实验研究、理论分析、跨学科研究等方法研究动机形成问题。主流观点认为动机是由生理、心理、社会等多重因素共同塑造。](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-8f326b4e53de6cb4 / 心理学界通过实验研究、理论分析、跨学科研究等方法研究动机形成问题。主流观点认为动机是由生理、心理、社会等多重因素共同塑造。
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [必要时单独建子协议。](../../../outputs/getbrain/failure-typology-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-ebfc1c3acf3b8984 / 必要时单独建子协议。
+  - 来源：`outputs/getbrain/failure-typology-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [必要时移出案例主库。](../../../outputs/getbrain/failure-typology-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-22113dd144c61352 / 必要时移出案例主库。
+  - 来源：`outputs/getbrain/failure-typology-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [必须可独立验证](../../../reports/foundation-architecture/085-backlog-prioritization.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-2b8d34239ca19513 / 必须可独立验证
+  - 来源：`reports/foundation-architecture/085-backlog-prioritization.md`
+  - 依赖：—；被引用：—
+- [必须在沙盒/受控环境验证](../../../docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-ba349434aff75005 / 必须在沙盒/受控环境验证
+  - 来源：`docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md`
+  - 依赖：—；被引用：—
+- [忽略证据制度库。](../../../outputs/getbrain/failure-typology-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-20ce5cbfd7a0054b / 忽略证据制度库。
+  - 来源：`outputs/getbrain/failure-typology-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [忽略证据链；](../../../outputs/getbrain/failure-typology-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-6c1bb7966c8c8059 / 忽略证据链；
+  - 来源：`outputs/getbrain/failure-typology-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [想要统一解释过多现象；](../../../outputs/getbrain/failure-typology-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：NFC-37307534fd3e2232 / 想要统一解释过多现象；
+  - 来源：`outputs/getbrain/failure-typology-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [感知社会环境](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-8be0099cc5891e43 / 感知社会环境
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [成本-性能空间拓扑优化验证](../../../data/foundation/evidence/evidence.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-94fe0200ea206d6b / 成本-性能空间拓扑优化验证
+  - 来源：`data/foundation/evidence/evidence.jsonl`
+  - 依赖：—；被引用：—
+- [我们习惯把“失败”理解为一个结果：阵地丢了，主将死了，伤亡大到无法继续。可在这里，失败先是一种解释。有人把后退解释为前线已败，随后用自己的后退替这个解释增加证据。等越来越多人这样做，解释才取得肉身，踩倒同伴，堵塞道路，把原本尚可收拾的混乱变](../../../docs/publication/works/when-an-army-believes-its-own-back.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-05236610087c5055 / 我们习惯把“失败”理解为一个结果：阵地丢了，主将死了，伤亡大到无法继续。可在这里，失败先是一种解释。有人把后退解释为前线已败，随后用自己的后退替这个解释增加证据。等越来越多人这样做，解释才取得肉身，踩倒同伴，堵塞道路，把原本尚可收拾的混乱变
+  - 来源：`docs/publication/works/when-an-army-believes-its-own-back.md`
+  - 依赖：—；被引用：—
+- [所有 117 条 DOI 均标记 crossref_verified=true。但 Crossref 验证仅确认：](../../../reports/external-research/104-source-quality-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-4dd95a4e2d188602 / 所有 117 条 DOI 均标记 crossref_verified=true。但 Crossref 验证仅确认：
+  - 来源：`reports/external-research/104-source-quality-audit.md`
+  - 依赖：—；被引用：—
+- [所有 117 条有 `abstract_or_official_summary` 字段 → 可提升至 `ABSTRACT_REVIEWED`（但需验证摘要是否为实际读取而非模型生成）](../../../data/external-research/104-evidence-tier-schema.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-01c233edf8a73fd1 / 所有 117 条有 `abstract_or_official_summary` 字段 → 可提升至 `ABSTRACT_REVIEWED`（但需验证摘要是否为实际读取而非模型生成）
+  - 来源：`data/external-research/104-evidence-tier-schema.md`
+  - 依赖：—；被引用：—
+- [所有 117 条有 DOI 且 Crossref 元数据匹配 → 至少 `METADATA_VERIFIED`](../../../data/external-research/104-evidence-tier-schema.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-7b8d8d577ad1c247 / 所有 117 条有 DOI 且 Crossref 元数据匹配 → 至少 `METADATA_VERIFIED`
+  - 来源：`data/external-research/104-evidence-tier-schema.md`
+  - 依赖：—；被引用：—
+- [所有 JSON 数据集建议遵守以下通用字段规范。](../../../docs/machine_readable_data_plan.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-cffe4936e8356e4e / 所有 JSON 数据集建议遵守以下通用字段规范。
+  - 来源：`docs/machine_readable_data_plan.md`
+  - 依赖：—；被引用：—
+- [所有内容来自真实材料碰撞工作区，未重新编造；分析结论仅限材料内成立，普遍性主张全部标 `pending_external_evidence`。](../../../outputs/collisions/20260711-disobedience-subjectivity/README.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-7b9ea80618d9c73a / 所有内容来自真实材料碰撞工作区，未重新编造；分析结论仅限材料内成立，普遍性主张全部标 `pending_external_evidence`。
+  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/README.md`
+  - 依赖：—；被引用：—
+- [所有十二律的578个案例都符合Θ的约束-优化统一结构](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-15cd25bf2d558f07 / 所有十二律的578个案例都符合Θ的约束-优化统一结构
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [所有女性都经历角色覆盖（需代表性数据，E5 pending）。](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0806-C-0811-%E8%A7%92%E8%89%B2%E8%A6%86%E7%9B%96%E4%B8%BB%E4%BD%93%E5%88%B0%E8%BA%AB%E4%BB%BD%E6%8F%90%E9%97%AE.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-a3cccbef88869a77 / 所有女性都经历角色覆盖（需代表性数据，E5 pending）。
+  - 来源：`统一案例总表/0806-C-0811-角色覆盖主体到身份提问.md`
+  - 依赖：—；被引用：—
+- [所有数据可由 `tools/validate_data.py` 校验；](../../../docs/machine_readable_data_plan.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-858305e25604c389 / 所有数据可由 `tools/validate_data.py` 校验；
+  - 来源：`docs/machine_readable_data_plan.md`
+  - 依赖：—；被引用：—
+- [所有普遍性结论受 evidence_regimes + pending_claims 约束，必须 pending，不得写成定论。](../../../outputs/collisions/20260708-teacher-competition/collision-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-4a53cdd943774f6e / 所有普遍性结论受 evidence_regimes + pending_claims 约束，必须 pending，不得写成定论。
+  - 来源：`outputs/collisions/20260708-teacher-competition/collision-report.md`
+  - 依赖：—；被引用：—
+- [所有普遍性表述须 pending（G_δ + evidence_regimes 约束）](../../../outputs/audit/teacher-competition-backfill-review-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-79d17a7f2f175dd9 / 所有普遍性表述须 pending（G_δ + evidence_regimes 约束）
+  - 来源：`outputs/audit/teacher-competition-backfill-review-20260708.md`
+  - 依赖：—；被引用：—
+- [所有规划数据集都有 CSV；](../../../docs/machine_readable_data_plan.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-ca7aa5bf87b3338c / 所有规划数据集都有 CSV；
+  - 来源：`docs/machine_readable_data_plan.md`
+  - 依赖：—；被引用：—
+- [所有规划数据集都有 JSON Schema；](../../../docs/machine_readable_data_plan.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-995e7c393f355bdb / 所有规划数据集都有 JSON Schema；
+  - 来源：`docs/machine_readable_data_plan.md`
+  - 依赖：—；被引用：—
+- [所有规划数据集都有 JSON；](../../../docs/machine_readable_data_plan.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-fa5b2571d0732c95 / 所有规划数据集都有 JSON；
+  - 来源：`docs/machine_readable_data_plan.md`
+  - 依赖：—；被引用：—
+- [所需的 **公开表面更新** 或 **已验证的无影响决策**。](../../../ITERATION.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-2a08f1aca9a9b56f / 所需的 **公开表面更新** 或 **已验证的无影响决策**。
+  - 来源：`ITERATION.md`
+  - 依赖：—；被引用：—
+- [执行器：QClaw](../../../data/discipline-projection/087-execution-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-370508d261417ffe / 执行器：QClaw
+  - 来源：`data/discipline-projection/087-execution-report.md`
+  - 依赖：—；被引用：—
+- [执行器：QClaw / qclaw/pool-glm-5.2 / max](../../../reports/external-research/104-dual-088-reconciliation.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-2c79b886c860731c / 执行器：QClaw / qclaw/pool-glm-5.2 / max
+  - 来源：`reports/external-research/104-dual-088-reconciliation.md`
+  - 依赖：—；被引用：—
+- [执行器：QClaw / qclaw/pool-glm-5.2 / max（GLM-5.2 池，未动用 Codex）](../../../data/external-research/088-FINAL-REPORT.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-519501cdf41659c3 / 执行器：QClaw / qclaw/pool-glm-5.2 / max（GLM-5.2 池，未动用 Codex）
+  - 来源：`data/external-research/088-FINAL-REPORT.md`
+  - 依赖：—；被引用：—
+- [执行器：QClaw / qclaw/pool-glm-5.2 / max（GLM-5.2 池，非 Codex）](../../../data/external-research/088-PROGRESS.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-b6b34cc726dd417f / 执行器：QClaw / qclaw/pool-glm-5.2 / max（GLM-5.2 池，非 Codex）
+  - 来源：`data/external-research/088-PROGRESS.md`
+  - 依赖：—；被引用：—
+- [执行器：QClaw \| 模型：GLM-5.2 \| 推理：max](../../../reports/foundation-architecture/088-087-count-and-denominator-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-9e010dbf3c62d303 / 执行器：QClaw \| 模型：GLM-5.2 \| 推理：max
+  - 来源：`reports/foundation-architecture/088-087-count-and-denominator-audit.md`
+  - 依赖：—；被引用：—
+- [执行报告将 250/250 描述为'GLM-5.2 max 逐学科语义分析''理论核全量生成'，并暗示外部研究已补齐架构。但所有 250 条 current_assertion_level=SOURCE_DERIVED_PROVISIONA](../../../data/external-research/088-087-count-reconciliation.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-9010150c1a821b1c / 执行报告将 250/250 描述为'GLM-5.2 max 逐学科语义分析''理论核全量生成'，并暗示外部研究已补齐架构。但所有 250 条 current_assertion_level=SOURCE_DERIVED_PROVISIONA
+  - 来源：`data/external-research/088-087-count-reconciliation.json`
+  - 依赖：—；被引用：—
+- [执行者**：QClaw（Hy3，深度思考 high）](../../../data/external-research/121-fulltext-resolver/121q6c/121Q6C-final-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-419958f264ea0fbf / 执行者**：QClaw（Hy3，深度思考 high）
+  - 来源：`data/external-research/121-fulltext-resolver/121q6c/121Q6C-final-report.md`
+  - 依赖：—；被引用：—
+- [执行：** 当前能力从真实 change request 运行 `plan_incremental_execution.py`，再由 `run_incremental_execution.py` 在统一 authority prefligh](../../../docs/USAGE.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-a62cb54d34129d9e / 执行：** 当前能力从真实 change request 运行 `plan_incremental_execution.py`，再由 `run_incremental_execution.py` 在统一 authority prefligh
+  - 来源：`docs/USAGE.md`
+  - 依赖：—；被引用：—
+- [扩展内容**：smoke test 验证了「轻量碰撞」模式——即不读全量两张表正文、仅确认目录存在 + 用 P1 七类数据做辅助索引，也能产出结构化五类输出。这对后续大规模任务有节流价值：先用 P1 数据预筛，再按需深入两张表，避免每次全量](../../../outputs/collisions/20260708-smoke-test/expanded-notes.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-c6cf03e0b7c50fe5 / 扩展内容**：smoke test 验证了「轻量碰撞」模式——即不读全量两张表正文、仅确认目录存在 + 用 P1 七类数据做辅助索引，也能产出结构化五类输出。这对后续大规模任务有节流价值：先用 P1 数据预筛，再按需深入两张表，避免每次全量
+  - 来源：`outputs/collisions/20260708-smoke-test/expanded-notes.md`
+  - 依赖：P1；被引用：—
+- [批量 DOI 验证模式](../../../scripts/external-research/openalex_client.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-2e5d81f7b1512222 / 批量 DOI 验证模式
+  - 来源：`scripts/external-research/openalex_client.py`
+  - 依赖：—；被引用：—
+- [把 internal verification ID 写成 external empirical evidence](../../../docs/foundation/architecture-structure-freeze-v1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-d6dc7da572c4eddb / 把 internal verification ID 写成 external empirical evidence
+  - 来源：`docs/foundation/architecture-structure-freeze-v1.md`
+  - 依赖：—；被引用：—
+- [把 model config 中的 reasoning_level=max 写成逐条 max 推理证据](../../../docs/foundation/architecture-structure-freeze-v1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-7b1812258e116620 / 把 model config 中的 reasoning_level=max 写成逐条 max 推理证据
+  - 来源：`docs/foundation/architecture-structure-freeze-v1.md`
+  - 依赖：—；被引用：—
+- [把 pending 普遍性写成已证实规律](../../../docs/narrative-output-layer.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-35f788f1af68d8d4 / 把 pending 普遍性写成已证实规律
+  - 来源：`docs/narrative-output-layer.md`
+  - 依赖：—；被引用：—
+- [把一个国家的法律写成普遍规律](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-f9f6a84e675d476c / 把一个国家的法律写成普遍规律
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [把个体效果写成普遍规律](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-416643f2654f107c / 把个体效果写成普遍规律
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [把个案写成规律](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-78b42386e9650ab0 / 把个案写成规律
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [把作者立场当作客观事实。](../../../outputs/getbrain/failure-typology-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-b8815f8b0bc91cac / 把作者立场当作客观事实。
+  - 来源：`outputs/getbrain/failure-typology-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [把四种基本力统一写成已解决](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-82201d8054765f61 / 把四种基本力统一写成已解决
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [把市场结构类比直接写成经济规律](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-4c79d9a3192c7a15 / 把市场结构类比直接写成经济规律
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [把政策建议写成已验证](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-af8a629bdaf4447d / 把政策建议写成已验证
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [把理论自洽写成实证成立](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-4dd843324fcd364c / 把理论自洽写成实证成立
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [把短期波动当作长期规律；](../../../outputs/getbrain/failure-typology-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-bb8ac948c5857e52 / 把短期波动当作长期规律；
+  - 来源：`outputs/getbrain/failure-typology-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [把结构同构替代具体历史语境](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-15a7a10c7fdab975 / 把结构同构替代具体历史语境
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [把结构推论直接写成外部验证完成的结论。](../../../data/failure_typology.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-058486d77cc43ae8 / 把结构推论直接写成外部验证完成的结论。
+  - 来源：`data/failure_typology.csv`
+  - 依赖：—；被引用：—
+- [把解释力写成预测力](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-8195d49da8943ca8 / 把解释力写成预测力
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [投资组合空间验证](../../../data/foundation/evidence/evidence.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-4af95a51685bf6ce / 投资组合空间验证
+  - 来源：`data/foundation/evidence/evidence.jsonl`
+  - 依赖：—；被引用：—
+- [报告「未找到正式可执行的晋级门槛」；020 建立了晋级门槛/Schema/验证器，二者为前后承接，非矛盾。](../../../inputs/021/upstream-conflict-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-c3d93c8348093a74 / 报告「未找到正式可执行的晋级门槛」；020 建立了晋级门槛/Schema/验证器，二者为前后承接，非矛盾。
+  - 来源：`inputs/021/upstream-conflict-audit.md`
+  - 依赖：—；被引用：—
+- [拉格朗日量、规范群、耦合常数、粒子谱、RG 流和实验数值](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-050414a6e288c4f4 / 拉格朗日量、规范群、耦合常数、粒子谱、RG 流和实验数值
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [持续优化社会制度](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-d5c0e49d806ddeb8 / 持续优化社会制度
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [按学科/领域约束证据标准，防止把低证据材料写成高层级结论。](../../../docs/p1-machine-data-collision-workflow-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-58c3d3c49d5f1d11 / 按学科/领域约束证据标准，防止把低证据材料写成高层级结论。
+  - 来源：`docs/p1-machine-data-collision-workflow-20260708.md`
+  - 依赖：—；被引用：—
+- [推荐，依据治理身份关闭 C-01/C-04，并执行 C-03 的 OpenAlex 独立书目元数据复制。](../../../README.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-480ec47fefa95cbe / 推荐，依据治理身份关闭 C-01/C-04，并执行 C-03 的 OpenAlex 独立书目元数据复制。
+  - 来源：`README.md`
+  - 依赖：—；被引用：—
+- [提供元协议分析：社会信任的元协议（契约协议、对称性协议、分布式学习）（L2）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-0abe6ce5851dc5da / 提供元协议分析：社会信任的元协议（契约协议、对称性协议、分布式学习）（L2）
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [提供制度变迁路径：社会信任制度的自举收敛和发散（L2）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-0f732d14ed1a3c8d / 提供制度变迁路径：社会信任制度的自举收敛和发散（L2）
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [提供制度变迁路径：社会阶层制度的自举收敛和发散（L2）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-df3a5a2045c6704d / 提供制度变迁路径：社会阶层制度的自举收敛和发散（L2）
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [提供结构性边界推论：四种基本力统一问题可能属于哥德尔不完备性范围（L2）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-5a2cb268b7fc7c46 / 提供结构性边界推论：四种基本力统一问题可能属于哥德尔不完备性范围（L2）
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [提供结构性边界推论：绝对完备统一的结构性边界（L2）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-49f5f0f825fd8947 / 提供结构性边界推论：绝对完备统一的结构性边界（L2）
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [提供退出权分析：社会信任制度中的退出权结构（L2）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-7941c7eca1428194 / 提供退出权分析：社会信任制度中的退出权结构（L2）
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [提供退出权分析：社会阶层制度中的退出权结构（L2）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-05f36d55e04fdefc / 提供退出权分析：社会阶层制度中的退出权结构（L2）
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [提供门控分析：社会阶层制度中的门控结构（L2）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-3dd43588a8f238a1 / 提供门控分析：社会阶层制度中的门控结构（L2）
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [提枪转换率20%（全国5-7%），验证了D50三因子乘法结构](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0692-C-0697-%E8%A5%BF%E5%AE%89%E5%8A%A0%E6%B2%B9%E7%AB%99%E4%BE%BF%E5%88%A9%E5%BA%97.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-54acd7aed0c20e3b / 提枪转换率20%（全国5-7%），验证了D50三因子乘法结构
+  - 来源：`统一案例总表/0692-C-0697-西安加油站便利店.md`
+  - 依赖：D50；被引用：—
+- [搜索，但因 evidence gate 前置条件未满足而阻断，不作为已复现实现缺陷推进。未来若要](../../../RESULTS/OPEN-QUESTIONS.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-5236629d031f8d59 / 搜索，但因 evidence gate 前置条件未满足而阻断，不作为已复现实现缺陷推进。未来若要
+  - 来源：`RESULTS/OPEN-QUESTIONS.md`
+  - 依赖：—；被引用：—
+- [摘要来源未验证**：abstract 字段可能为模型生成而非出版商摘要](../../../reports/external-research/104-source-quality-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-bbcd9f97d0e8dd3c / 摘要来源未验证**：abstract 字段可能为模型生成而非出版商摘要
+  - 来源：`reports/external-research/104-source-quality-audit.md`
+  - 依赖：—；被引用：—
+- [摘要来源未验证——088-B 的 abstract 字段可能为模型生成而非出版商摘要](../../../reports/external-research/104-dual-088-reconciliation.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-96092bfa6fc3acf3 / 摘要来源未验证——088-B 的 abstract 字段可能为模型生成而非出版商摘要
+  - 来源：`reports/external-research/104-dual-088-reconciliation.md`
+  - 依赖：—；被引用：—
+- [撤回：保留旧记录和证据，将状态改为 `WITHDRAWN_SNAPSHOT`、outcome 改为 `WITHDRAWN`，首页必须明示撤回。](../../../docs/operations/stage-snapshot-publication.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-610b1215906d4897 / 撤回：保留旧记录和证据，将状态改为 `WITHDRAWN_SNAPSHOT`、outcome 改为 `WITHDRAWN`，首页必须明示撤回。
+  - 来源：`docs/operations/stage-snapshot-publication.md`
+  - 依赖：—；被引用：—
+- [支持、赞助、商业许可或基础设施贡献不得购买事实结论、证据等级、治理否决权、合并权、路线优先权、免受批评的资格，或对缺口、失败和风险的压制。资金可以支持项目继续存在，不能替代证据、审查、反例、治理程序和公开异议。](../../../docs/governance/life-community-value-charter.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-f2c780676f4b597f / 支持、赞助、商业许可或基础设施贡献不得购买事实结论、证据等级、治理否决权、合并权、路线优先权、免受批评的资格，或对缺口、失败和风险的压制。资金可以支持项目继续存在，不能替代证据、审查、反例、治理程序和公开异议。
+  - 来源：`docs/governance/life-community-value-charter.md`
+  - 依赖：—；被引用：—
+- [收到。现在开始执行任务 E：证据制度库初稿。](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-c5b592ef29c76120 / 收到。现在开始执行任务 E：证据制度库初稿。
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [收回决策权必然带来好结果（需价值来源属实、且不负抚养/合同责任）。](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0805-C-0810-%E4%BB%B7%E5%80%BC%E5%88%9B%E9%80%A0%E6%9D%83%E5%86%B3%E7%AD%96%E6%9D%83%E9%94%99%E9%85%8D%E4%B8%8E%E5%9B%9E%E6%94%B6.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-cab70e33120024a5 / 收回决策权必然带来好结果（需价值来源属实、且不负抚养/合同责任）。
+  - 来源：`统一案例总表/0805-C-0810-价值创造权决策权错配与回收.md`
+  - 依赖：—；被引用：—
+- [收敛状态：** α=0.0，已收敛至最小必要结构](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-a547959503eaf09f / 收敛状态：** α=0.0，已收敛至最小必要结构
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [收敛验证补充：** 补充了收敛验证的具体案例](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-a34d0fc9ff47daad / 收敛验证补充：** 补充了收敛验证的具体案例
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [收敛验证：**](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-12277d7641581a83 / 收敛验证：**
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [收益-风险投影-网结构](../../../data/foundation/evidence/evidence.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-b2120011e8964630 / 收益-风险投影-网结构
+  - 来源：`data/foundation/evidence/evidence.jsonl`
+  - 依赖：—；被引用：—
+- [改革窗口与革命同构——A型崩溃与B型松弛的共振窗口](../../../data/foundation/evidence/evidence.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-3550943e85db3675 / 改革窗口与革命同构——A型崩溃与B型松弛的共振窗口
+  - 来源：`data/foundation/evidence/evidence.jsonl`
+  - 依赖：—；被引用：—
+- [政策制定者无法预见禁酒令在社会层面的全部后果，决策天然存在不完备性。](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0739-C-0744-%E7%BE%8E%E5%9B%BD%E7%A6%81%E9%85%92%E4%BB%A4.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-210965c701bd98e4 / 政策制定者无法预见禁酒令在社会层面的全部后果，决策天然存在不完备性。
+  - 来源：`统一案例总表/0739-C-0744-美国禁酒令.md`
+  - 依赖：—；被引用：—
+- [政策建议缺乏充分证据](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-4657bfdaf48ab191 / 政策建议缺乏充分证据
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [故事可以重排事实出现顺序，但不得改写事实。](../../../docs/narrative-output-layer.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-50b220f6cbbad38a / 故事可以重排事实出现顺序，但不得改写事实。
+  - 来源：`docs/narrative-output-layer.md`
+  - 依赖：—；被引用：—
+- [故事很顺，但证据不足；](../../../outputs/getbrain/failure-typology-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-bda30097d163dbd3 / 故事很顺，但证据不足；
+  - 来源：`outputs/getbrain/failure-typology-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [故事讲通了，但证据链和反事实不足。](../../../data/failure_typology.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-98872dfa2d9de92d / 故事讲通了，但证据链和反事实不足。
+  - 来源：`data/failure_typology.csv`
+  - 依赖：—；被引用：—
+- [教育公平的阶层投影——自然门槛碾压+人为门槛碾压在教育维度的叠加](../../../data/foundation/evidence/evidence.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-58220e3d6ccd1164 / 教育公平的阶层投影——自然门槛碾压+人为门槛碾压在教育维度的叠加
+  - 来源：`data/foundation/evidence/evidence.jsonl`
+  - 依赖：—；被引用：—
+- [教育学 / 社会学](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-1000f63278546c95 / 教育学 / 社会学
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [教育学命题成立需要教育实验、长期追踪、个体评估。](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-6f215705f547f3e0 / 教育学命题成立需要教育实验、长期追踪、个体评估。
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [教育学是中等风险领域。个体教育建议应谨慎，证据不足时 pending。](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-0be482cc09ea8692 / 教育学是中等风险领域。个体教育建议应谨慎，证据不足时 pending。
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [教育学：个体教育建议证据不足](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-1375cde9801e532f / 教育学：个体教育建议证据不足
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [教育实验不足](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-40334e929cb1b8cc / 教育实验不足
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [教育实验验证（随机对照试验、准实验）](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-9f57dd3e968d2716 / 教育实验验证（随机对照试验、准实验）
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [数据不足或冲突](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-3d832dec1727bd6b / 数据不足或冲突
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [数据不需要很大，但要和问题相关。](../../../docs/data_integration.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-cf74c1f39a2b996a / 数据不需要很大，但要和问题相关。
+  - 来源：`docs/data_integration.md`
+  - 依赖：—；被引用：—
+- [数据主义与点火框架Φ元统一律的碰撞。万物数据化→Φ从正值趋向零的暂态，验证了宇宙是Φ加速衰减的终极案例。](../../../data/foundation/arguments/arguments.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-BC-20260709-011 / 数据主义与点火框架Φ元统一律的碰撞。万物数据化→Φ从正值趋向零的暂态，验证了宇宙是Φ加速衰减的终极案例。
+  - 来源：`data/foundation/arguments/arguments.jsonl`
+  - 依赖：—；被引用：—
+- [数据位置：`data/`（json + csv 成对），schema 在 `data/schemas/`。校验：`python3 tools/validate_data.py`。](../../../docs/p1-machine-data-collision-workflow-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-4a8584566d22c5ce / 数据位置：`data/`（json + csv 成对），schema 在 `data/schemas/`。校验：`python3 tools/validate_data.py`。
+  - 来源：`docs/p1-machine-data-collision-workflow-20260708.md`
+  - 依赖：—；被引用：—
+- [数据完整性审计报告。](../../../outputs/audit/p1-machine-readable-data-audit-20260707.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-3b312487dc27fe40 / 数据完整性审计报告。
+  - 来源：`outputs/audit/p1-machine-readable-data-audit-20260707.md`
+  - 依赖：—；被引用：—
+- [数据接入指南](../../../docs/data_integration.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-2f8ab2f146dd4bd9 / 数据接入指南
+  - 来源：`docs/data_integration.md`
+  - 依赖：—；被引用：—
+- [数据文件统计](../../../outputs/audit/p1-machine-readable-data-audit-20260707.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-283b67b365f17517 / 数据文件统计
+  - 来源：`outputs/audit/p1-machine-readable-data-audit-20260707.md`
+  - 依赖：—；被引用：—
+- [数据校验器；](../../../outputs/audit/p1-machine-readable-data-audit-20260707.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-73b2b9713579d8f0 / 数据校验器；
+  - 来源：`outputs/audit/p1-machine-readable-data-audit-20260707.md`
+  - 依赖：—；被引用：—
+- [数据源越清楚，结论越稳。](../../../docs/data_integration.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-a239ea73844a54d5 / 数据源越清楚，结论越稳。
+  - 来源：`docs/data_integration.md`
+  - 依赖：—；被引用：—
+- [数据的收集和分析](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-34ede84741e272a5 / 数据的收集和分析
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [整体验证结论](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-3ff077afdcf4ef88 / 整体验证结论
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [整改计划与追加式历史：保留撤回、降级、隔离和修订，不删除历史证据，不改写 Git 历史。](../../../README.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-d48e18032f211645 / 整改计划与追加式历史：保留撤回、降级、隔离和修订，不删除历史证据，不改写 Git 历史。
+  - 来源：`README.md`
+  - 依赖：—；被引用：—
+- [文件**: `data/foundation/work-queues/085-empirical-priority-queue.jsonl`](../../../reports/foundation-architecture/085-backlog-prioritization.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-8e078f84d43d1c4d / 文件**: `data/foundation/work-queues/085-empirical-priority-queue.jsonl`
+  - 来源：`reports/foundation-architecture/085-backlog-prioritization.md`
+  - 依赖：—；被引用：—
+- [文件用途：v0.2 任务 E，证据制度库初稿，定义不同学科命题成立标准和 pending 条件](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-18d1e69db16570bd / 文件用途：v0.2 任务 E，证据制度库初稿，定义不同学科命题成立标准和 pending 条件
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [文件路径：`outputs/getbrain/evidence-regime-library-draft-20260706.md`](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-31d67cb62a263e72 / 文件路径：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [文件：\[evidence-regime-library-draft-20260706.md\](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)](../../../outputs/getbrain/README.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-2cbd5826f0ae4a7e / 文件：\[evidence-regime-library-draft-20260706.md\](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 来源：`outputs/getbrain/README.md`
+  - 依赖：—；被引用：—
+- [文学作品为什么能跨时代有效](../../../data/foundation/claims/claims.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：CLAIM-PEND-025 / 文学作品为什么能跨时代有效
+  - 来源：`data/foundation/claims/claims.jsonl`
+  - 依赖：—；被引用：—
+- [文学：文本证据不足、解释不自洽、缺乏文学共同体共识、解释力弱](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-8664d6b37b268a1b / 文学：文本证据不足、解释不自洽、缺乏文学共同体共识、解释力弱
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [文末书目是外部核验队列；“列入参考文献”不等于本项目已逐项打开、定位或确认支持。](../../../docs/publication/cases/jin-rise-case-source.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-7b9bcfa5d56c58fc / 文末书目是外部核验队列；“列入参考文献”不等于本项目已逐项打开、定位或确认支持。
+  - 来源：`docs/publication/cases/jin-rise-case-source.md`
+  - 依赖：—；被引用：—
+- [文本证据不足](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-e40c94ec10b31703 / 文本证据不足
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [文本证据（文本中有证据）](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-e5aef186632f7381 / 文本证据（文本中有证据）
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [新增 22 本书验证案例候选暂存层（candidate_only，未入正式案例表）。](../../../CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a617775c98902d53 / 新增 22 本书验证案例候选暂存层（candidate_only，未入正式案例表）。
+  - 来源：`CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [新增 `data/schemas/` 下 7 个 JSON Schema，覆盖 classic problems、storytelling backlog、pending claims、publication risk rules、fail](../../../CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-0b80721395b36e14 / 新增 `data/schemas/` 下 7 个 JSON Schema，覆盖 classic problems、storytelling backlog、pending claims、publication risk rules、fail
+  - 来源：`CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [新增 `docs/evidence_regime_library.md` 作为证据制度库索引；](../../../CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-50bca69adb241d58 / 新增 `docs/evidence_regime_library.md` 作为证据制度库索引；
+  - 来源：`CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [新增 `docs/machine_readable_data_plan.md`，定义 P1 机器可读化数据集、字段、来源、校验规则和后续执行顺序。](../../../CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-3c484c7fe4856663 / 新增 `docs/machine_readable_data_plan.md`，定义 P1 机器可读化数据集、字段、来源、校验规则和后续执行顺序。
+  - 来源：`CHANGELOG.md`
+  - 依赖：P1；被引用：—
+- [新增 `outputs/audit/p1-extraction-feasibility-audit-20260707.md`，审计 P1 机器可读化数据集的抽取可行性。](../../../CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-bca1680b3012b874 / 新增 `outputs/audit/p1-extraction-feasibility-audit-20260707.md`，审计 P1 机器可读化数据集的抽取可行性。
+  - 来源：`CHANGELOG.md`
+  - 依赖：P1；被引用：—
+- [新增 `outputs/audit/p1-machine-readable-data-audit-20260707.md`，完成 P1 机器可读数据完整性审计。](../../../CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-b125c458c9bdafa8 / 新增 `outputs/audit/p1-machine-readable-data-audit-20260707.md`，完成 P1 机器可读数据完整性审计。
+  - 来源：`CHANGELOG.md`
+  - 依赖：P1；被引用：—
+- [新增 `tools/validate_data.py`，用于校验 P1 机器可读数据的 JSON / CSV / schema、行数、编号连续性、必填字段和交叉引用。](../../../CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-5e6bbac82d8363fc / 新增 `tools/validate_data.py`，用于校验 P1 机器可读数据的 JSON / CSV / schema、行数、编号连续性、必填字段和交叉引用。
+  - 来源：`CHANGELOG.md`
+  - 依赖：P1；被引用：—
+- [新增 CP / SB 机器可读数据：`data/classic_problems_benchmark.json`、`data/classic_problems_benchmark.csv`、`data/storytelling_backlo](../../../CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-f3fa5f4600f4e0ff / 新增 CP / SB 机器可读数据：`data/classic_problems_benchmark.json`、`data/classic_problems_benchmark.csv`、`data/storytelling_backlo
+  - 来源：`CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [新增 evidence / function dependency 机器可读数据：`data/evidence_regimes.json`、`data/evidence_regimes.csv`、`data/function_depende](../../../CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-90d6e1797f622a0b / 新增 evidence / function dependency 机器可读数据：`data/evidence_regimes.json`、`data/evidence_regimes.csv`、`data/function_depende
+  - 来源：`CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [新增 meta-protocol 数据、模板、验证器（tools/validate_meta_protocols.py）。](../../../CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-0e7ecde37f890eb1 / 新增 meta-protocol 数据、模板、验证器（tools/validate_meta_protocols.py）。
+  - 来源：`CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [新增 pending / risk / failure 机器可读数据：`data/pending_claims.json`、`data/pending_claims.csv`、`data/publication_risk_rules.jso](../../../CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-fafe90e13b7f67c3 / 新增 pending / risk / failure 机器可读数据：`data/pending_claims.json`、`data/pending_claims.csv`、`data/publication_risk_rules.jso
+  - 来源：`CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [新增数据接入指南；](../../../CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-466977707e1f9235 / 新增数据接入指南；
+  - 来源：`CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [新增文件：`统一案例总表/0803-C-0808-职称硬门槛裹挟青年教师.md`](../../../outputs/audit/nc-001-title-barrier-backfill-audit-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-0d382c4a141428cb / 新增文件：`统一案例总表/0803-C-0808-职称硬门槛裹挟青年教师.md`
+  - 来源：`outputs/audit/nc-001-title-barrier-backfill-audit-20260708.md`
+  - 依赖：—；被引用：—
+- [新增文件：`统一案例总表/0804-C-0809-表演化假课与量化指标消解温度.md`](../../../outputs/audit/nc-002-performed-fake-class-backfill-audit-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-919a102a2a18d4e9 / 新增文件：`统一案例总表/0804-C-0809-表演化假课与量化指标消解温度.md`
+  - 来源：`outputs/audit/nc-002-performed-fake-class-backfill-audit-20260708.md`
+  - 依赖：—；被引用：—
+- [新增案例：写 统一案例总表/ + INDEX 追加](../../../docs/getnote-collision-workflow-final-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-f286f439a9a43185 / 新增案例：写 统一案例总表/ + INDEX 追加
+  - 来源：`docs/getnote-collision-workflow-final-20260708.md`
+  - 依赖：—；被引用：—
+- [新增证据制度模板；](../../../CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-59ffad50d6c00424 / 新增证据制度模板；
+  - 来源：`CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [新增责任主体必须是独立、可审查的 registry 变更，并带生效／退役状态、来源和连续历史；快照请求不能临时创建主体。Schema 只接受当前 ACTIVE 引用的确定性 enum，runtime 再解析同一 registry；生成器和](../../../docs/operations/stage-snapshot-publication.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-0da8b6cab577c460 / 新增责任主体必须是独立、可审查的 registry 变更，并带生效／退役状态、来源和连续历史；快照请求不能临时创建主体。Schema 只接受当前 ACTIVE 引用的确定性 enum，runtime 再解析同一 registry；生成器和
+  - 来源：`docs/operations/stage-snapshot-publication.md`
+  - 依赖：—；被引用：—
+- [新验证器 106-validator.py: 14项检查, 14/14 PASS](../../../reports/external-research/106-105-evidence-correction-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-10ed44cdad64973e / 新验证器 106-validator.py: 14项检查, 14/14 PASS
+  - 来源：`reports/external-research/106-105-evidence-correction-report.md`
+  - 依赖：—；被引用：—
+- [方法或证据类别；](../../../HUMAN-READING.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-09b4b0f75b4ea06b / 方法或证据类别；
+  - 来源：`HUMAN-READING.md`
+  - 依赖：—；被引用：—
+- [无。所有候选均有新增价值或注释价值；无纯重复/证据不足到废弃的项。](../../../outputs/audit/teacher-competition-backfill-review-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-92b664b8ee38f0ec / 无。所有候选均有新增价值或注释价值；无纯重复/证据不足到废弃的项。
+  - 来源：`outputs/audit/teacher-competition-backfill-review-20260708.md`
+  - 依赖：—；被引用：—
+- [无外部证据时一律保守。](../../../outputs/getbrain/failure-typology-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-e8dfeb5df86bbb2b / 无外部证据时一律保守。
+  - 来源：`outputs/getbrain/failure-typology-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [无实证证据则保持 pending；](../../../docs/publication_risk_checklist.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-c60ec126858d6410 / 无实证证据则保持 pending；
+  - 来源：`docs/publication_risk_checklist.md`
+  - 依赖：—；被引用：—
+- [无实验验证则保持 L2 / L3；](../../../docs/publication_risk_checklist.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-c82cd42280788191 / 无实验验证则保持 L2 / L3；
+  - 来源：`docs/publication_risk_checklist.md`
+  - 依赖：—；被引用：—
+- [无数根尖局部交互涌现森林智能](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-84d5948262f04e2b / 无数根尖局部交互涌现森林智能
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [无（smoke test 仅验证流程）。](../../../outputs/collisions/20260708-smoke-test/collision-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-6687ac2cf4ab54df / 无（smoke test 仅验证流程）。
+  - 来源：`outputs/collisions/20260708-smoke-test/collision-report.md`
+  - 依赖：—；被引用：—
+- [早产5年空间验证](../../../data/foundation/evidence/evidence.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-e67fd53aa2eab40d / 早产5年空间验证
+  - 来源：`data/foundation/evidence/evidence.jsonl`
+  - 依赖：—；被引用：—
+- [是否使用 P1 数据](../../../docs/getbrain-operation-guide-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-b5228cc77b77b055 / 是否使用 P1 数据
+  - 来源：`docs/getbrain-operation-guide-20260708.md`
+  - 依赖：P1；被引用：—
+- [是否使用 P1 机器数据：](../../../docs/getbrain-operation-guide-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-31b3adfeeba2ac3b / 是否使用 P1 机器数据：
+  - 来源：`docs/getbrain-operation-guide-20260708.md`
+  - 依赖：P1；被引用：—
+- [是否使用 P1 机器数据：是](../../../docs/p1-machine-data-collision-workflow-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-89d21306c6b5bf4a / 是否使用 P1 机器数据：是
+  - 来源：`docs/p1-machine-data-collision-workflow-20260708.md`
+  - 依赖：P1；被引用：—
+- [是否所有事实 pending 都被保留？**](../../../docs/governance/meta-protocol-reviews/cross-protocol-red-team.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-422cb91d1bc2ec02 / 是否所有事实 pending 都被保留？**
+  - 来源：`docs/governance/meta-protocol-reviews/cross-protocol-red-team.md`
+  - 依赖：—；被引用：—
+- [是否把个人阐释写成普遍规律；](../../../docs/publication_risk_checklist.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-521c4525a3a8c6a6 / 是否把个人阐释写成普遍规律；
+  - 来源：`docs/publication_risk_checklist.md`
+  - 依赖：—；被引用：—
+- [是否把结构相似写成历史必然；](../../../docs/publication_risk_checklist.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-29d7e752a8e8a96c / 是否把结构相似写成历史必然；
+  - 来源：`docs/publication_risk_checklist.md`
+  - 依赖：—；被引用：—
+- [是否有 pending**：是（普遍性 pending）。](../../../outputs/audit/two-tables-entry-format-audit-20260709.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-ca2163ac9bc5c5d3 / 是否有 pending**：是（普遍性 pending）。
+  - 来源：`outputs/audit/two-tables-entry-format-audit-20260709.md`
+  - 依赖：—；被引用：—
+- [是否有实验、代码、评测、复现。](../../../docs/publication_risk_checklist.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-d4851dbc6d07c7ae / 是否有实验、代码、评测、复现。
+  - 来源：`docs/publication_risk_checklist.md`
+  - 依赖：—；被引用：—
+- [是否有数据、模型、识别策略、反事实论证。](../../../docs/publication_risk_checklist.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：NFC-3d1c8b2ab7f2a505 / 是否有数据、模型、识别策略、反事实论证。
+  - 来源：`docs/publication_risk_checklist.md`
+  - 依赖：—；被引用：—
+- [是否正在模仿一个作家或统一作者声音；若是：停止：](../../../templates/publication/zhiyuan-writing-spec.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-8d454f188205f52c / 是否正在模仿一个作家或统一作者声音；若是：停止：
+  - 来源：`templates/publication/zhiyuan-writing-spec.md`
+  - 依赖：—；被引用：—
+- [是否涉及四种基本力统一；](../../../docs/publication_risk_checklist.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-ffedf006a6b28882 / 是否涉及四种基本力统一；
+  - 来源：`docs/publication_risk_checklist.md`
+  - 依赖：—；被引用：—
+- [是否需要外部证据。](../../../docs/evidence_regime_library.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-c7dc4e5b181882be / 是否需要外部证据。
+  - 来源：`docs/evidence_regime_library.md`
+  - 依赖：—；被引用：—
+- [是辅助碰撞检索、风险控制、证据约束和输出分流**：见第 2 节七类数据用途。](../../../docs/p1-machine-data-collision-workflow-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-32c55f6dac3a806a / 是辅助碰撞检索、风险控制、证据约束和输出分流**：见第 2 节七类数据用途。
+  - 来源：`docs/p1-machine-data-collision-workflow-20260708.md`
+  - 依赖：—；被引用：—
+- [是（适合作为结构性推论的样本，不适合作为"已解决"的样本）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-332963fd836db582 / 是（适合作为结构性推论的样本，不适合作为"已解决"的样本）
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [是（适合作为结构性推论的样本，不适合作为“已解决”或“必然成立”的样本）](../../../outputs/getbrain/classic-problems-benchmark-supplement-20260707.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-4ff6a8af1c9cfd60 / 是（适合作为结构性推论的样本，不适合作为“已解决”或“必然成立”的样本）
+  - 来源：`outputs/getbrain/classic-problems-benchmark-supplement-20260707.md`
+  - 依赖：—；被引用：—
+- [显式编号按稳定 ID 去重；隐式候选按“来源路径 + 归一化标题文本”的 SHA-256 前缀赋予稳定 ID。同一资产在不同页面出现时保留所有来源，不重复创建权威对象。引用不冒充定义；历史源、别名和冲突保留在来源证据中。](../../../docs/foundation/historical-function-census.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-4d661b8f171430f2 / 显式编号按稳定 ID 去重；隐式候选按“来源路径 + 归一化标题文本”的 SHA-256 前缀赋予稳定 ID。同一资产在不同页面出现时保留所有来源，不重复创建权威对象。引用不冒充定义；历史源、别名和冲突保留在来源证据中。
+  - 来源：`docs/foundation/historical-function-census.md`
+  - 依赖：—；被引用：—
+- [普通合并之后，终端 ledger 状态与合并后证据须定稿，但不得改写已审稿件的语义 lineage。](../../../ITERATION.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-4f267b5bf2a2d9aa / 普通合并之后，终端 ledger 状态与合并后证据须定稿，但不得改写已审稿件的语义 lineage。
+  - 来源：`ITERATION.md`
+  - 依赖：—；被引用：—
+- [普通读者能理解的人类结果，写明问题、方法/证据类别、结论、成熟度与 claim ceiling、变化、局限、来源和处置。](../../../CONTRIBUTING.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-de11c3fc038c90a0 / 普通读者能理解的人类结果，写明问题、方法/证据类别、结论、成熟度与 claim ceiling、变化、局限、来源和处置。
+  - 来源：`CONTRIBUTING.md`
+  - 依赖：—；被引用：—
+- [暂无以区别于实例的边界/反例/失败案例证据，需补充](../../../data/meta-protocols/protocols-canonical.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-3b83708f1541707d / 暂无以区别于实例的边界/反例/失败案例证据，需补充
+  - 来源：`data/meta-protocols/protocols-canonical.json`
+  - 依赖：—；被引用：—
+- [更麻烦的事实是，徽宗并没有把神圣身份简单地放到行政皇权之上。政和七年，也就是 1117 年，他接受了“教主道君皇帝”的称号。现存相关史料中特别醒目的一句限定是：这个称号只在道教章疏之内使用，不施于政事。\[1\]](../../../docs/publication/works/when-an-emperor-manufactures-heaven.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a59b0bf44b40a184 / 更麻烦的事实是，徽宗并没有把神圣身份简单地放到行政皇权之上。政和七年，也就是 1117 年，他接受了“教主道君皇帝”的称号。现存相关史料中特别醒目的一句限定是：这个称号只在道教章疏之内使用，不施于政事。\[1\]
+  - 来源：`docs/publication/works/when-an-emperor-manufactures-heaven.md`
+  - 依赖：—；被引用：—
+- [最严重的风险不是词序，而是把一个词形中的时制、体貌、证据来源、人称和语态拆散后遗漏其中一项。`-miş` 不能一律译成 `据说`，也不能无声变成英语或中文的确定直陈。为英语显式主语而补人时，必须说明这个参与者来自形态、语境还是译者选择。](../../../docs/language-thought/profiles/tr.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-ba052da41a21e697 / 最严重的风险不是词序，而是把一个词形中的时制、体貌、证据来源、人称和语态拆散后遗漏其中一项。`-miş` 不能一律译成 `据说`，也不能无声变成英语或中文的确定直陈。为英语显式主语而补人时，必须说明这个参与者来自形态、语境还是译者选择。
+  - 来源：`docs/language-thought/profiles/tr.md`
+  - 依赖：—；被引用：—
+- [最低证据标准**：](../../../reports/foundation-architecture/085-backlog-prioritization.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-879bae03d7f07464 / 最低证据标准**：
+  - 来源：`reports/foundation-architecture/085-backlog-prioritization.md`
+  - 依赖：—；被引用：—
+- [最低证据要求](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-0a091846f36f96fc / 最低证据要求
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [最低证据要求；](../../../docs/evidence_regime_library.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-6c17a4757997d5da / 最低证据要求；
+  - 来源：`docs/evidence_regime_library.md`
+  - 依赖：—；被引用：—
+- [最小基建：** `evidence-program/`（候选组合 schema、预注册 schema、来源溯源 manifest、运行 manifest、结果裁定 schema、偏差日志 schema、E 轴转移 schema + 确定性校](../../../docs/project-current-state.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-29c02d082b610df0 / 最小基建：** `evidence-program/`（候选组合 schema、预注册 schema、来源溯源 manifest、运行 manifest、结果裁定 schema、偏差日志 schema、E 轴转移 schema + 确定性校
+  - 来源：`docs/project-current-state.md`
+  - 依赖：—；被引用：—
+- [最强替代解释：金的快速扩张主要由辽的政治—军事中枢碎裂、后方叛乱、精英投附和错误调动造成；金军凝聚只是利用窗口的必要条件之一，不是主要速度生成器。](../../../reports/publication/jin-rise-point-fire-analysis.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-f5199c0733cc57af / 最强替代解释：金的快速扩张主要由辽的政治—军事中枢碎裂、后方叛乱、精英投附和错误调动造成；金军凝聚只是利用窗口的必要条件之一，不是主要速度生成器。
+  - 来源：`reports/publication/jin-rise-point-fire-analysis.md`
+  - 依赖：—；被引用：—
+- [最新论文、奠基文献、综述、方法论文、负结果与反例必须分开记账。](../../../data/external-research/104-evidence-tier-schema.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-4be17086f12f1ea4 / 最新论文、奠基文献、综述、方法论文、负结果与反例必须分开记账。
+  - 来源：`data/external-research/104-evidence-tier-schema.md`
+  - 依赖：—；被引用：—
+- [最终：**D597 扩展注释**（同时建议在上收 D597 pending 时引用本证据）。](../../../outputs/audit/cross-domain-candidate-function-review-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-6589735c15fc1b3f / 最终：**D597 扩展注释**（同时建议在上收 D597 pending 时引用本证据）。
+  - 来源：`outputs/audit/cross-domain-candidate-function-review-20260708.md`
+  - 依赖：D597；被引用：—
+- [有 P1 数据完整性审计报告；](../../../docs/machine_readable_data_plan.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-b9f9a1b588e8f1d4 / 有 P1 数据完整性审计报告；
+  - 来源：`docs/machine_readable_data_plan.md`
+  - 依赖：P1；被引用：—
+- [有 pending 判断**（明确证据等级与未决项）；](../../../docs/two-tables-entry-writing-standard-20260709.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-409c2cde4e0ca1ba / 有 pending 判断**（明确证据等级与未决项）；
+  - 来源：`docs/two-tables-entry-writing-standard-20260709.md`
+  - 依赖：—；被引用：—
+- [有意标记句法不因“反常”自动失败，但必须通过收益说明；通过也不会提高事实 claim ceiling。](../../../docs/language-thought/chinese-literary-calibration.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-178c898536ffeae5 / 有意标记句法不因“反常”自动失败，但必须通过收益说明；通过也不会提高事实 claim ceiling。
+  - 来源：`docs/language-thought/chinese-literary-calibration.md`
+  - 依赖：—；被引用：—
+- [有限划分必然存在倒数和大于1的子集](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0678-C-0683-Erd%C5%91s%E2%80%93Graham%E7%8C%9C%E6%83%B3.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-324eb747337ccaeb / 有限划分必然存在倒数和大于1的子集
+  - 来源：`统一案例总表/0678-C-0683-Erdős–Graham猜想.md`
+  - 依赖：—；被引用：—
+- [有限游戏vs无限游戏与点火框架元协议组合的碰撞。有限游戏追求延续性（V₁），无限游戏追求创新性（V₃），验证了元协议价值取决于组合搭配。](../../../data/foundation/arguments/arguments.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-BC-20260709-017 / 有限游戏vs无限游戏与点火框架元协议组合的碰撞。有限游戏追求延续性（V₁），无限游戏追求创新性（V₃），验证了元协议价值取决于组合搭配。
+  - 来源：`data/foundation/arguments/arguments.jsonl`
+  - 依赖：—；被引用：—
+- [未把 CONDITIONAL_ACCEPTANCE 写成：正式批准、已完成全部人工审核、已完成外部验证、已晋级正式协议、canonical 已更新。](../../../outputs/audit/meta-protocol-normative-review-publication-audit-20260711.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-1f10489c43fce0ff / 未把 CONDITIONAL_ACCEPTANCE 写成：正式批准、已完成全部人工审核、已完成外部验证、已晋级正式协议、canonical 已更新。
+  - 来源：`outputs/audit/meta-protocol-normative-review-publication-audit-20260711.md`
+  - 依赖：—；被引用：—
+- [未改案例表（统一案例总表/ 未动）。](../../../outputs/audit/mf-0001-0005-integration-audit-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a9d0e6b9d47e24ab / 未改案例表（统一案例总表/ 未动）。
+  - 来源：`outputs/audit/mf-0001-0005-integration-audit-20260708.md`
+  - 依赖：—；被引用：—
+- [未来工作只要改变能力、状态、结论、纠正、开放问题、证据或公开表述，就必须同步 README、`HUMAN-READING.md`、`KNOWLEDGE/`、相应 `RESULTS/` 页面、机器 Delta/impact/lineage、知](../../../docs/project-current-state.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-8c6af1bfef409d7b / 未来工作只要改变能力、状态、结论、纠正、开放问题、证据或公开表述，就必须同步 README、`HUMAN-READING.md`、`KNOWLEDGE/`、相应 `RESULTS/` 页面、机器 Delta/impact/lineage、知
+  - 来源：`docs/project-current-state.md`
+  - 依赖：—；被引用：—
+- [未经验真（crossref_verified=false）或验真失败（UNVERIFIED_NOT_USED）的外部理论，一律不得注入 Ψ₀ 核心或补丁库主体；转入‘外部参考轨道’待后续核验。](../../../data/external-research/093-scope-guard.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-59ae5f8746997b5a / 未经验真（crossref_verified=false）或验真失败（UNVERIFIED_NOT_USED）的外部理论，一律不得注入 Ψ₀ 核心或补丁库主体；转入‘外部参考轨道’待后续核验。
+  - 来源：`data/external-research/093-scope-guard.md`
+  - 依赖：—；被引用：—
+- [未要求预防原则与风险上限，易被用作'不可预测所以随便试'的借口（歧义/滥用风险）。](../../../docs/governance/meta-protocol-reviews/protocols/E2.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-d72fbd561b8b8c43 / 未要求预防原则与风险上限，易被用作'不可预测所以随便试'的借口（歧义/滥用风险）。
+  - 来源：`docs/governance/meta-protocol-reviews/protocols/E2.md`
+  - 依赖：—；被引用：—
+- [未说明仅适用于局部、低耦合、关系稳定、可预测范围（歧义）。](../../../docs/governance/meta-protocol-reviews/protocols/E1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-c5d6a372a88ffffa / 未说明仅适用于局部、低耦合、关系稳定、可预测范围（歧义）。
+  - 来源：`docs/governance/meta-protocol-reviews/protocols/E1.md`
+  - 依赖：—；被引用：—
+- [本书完成元协议重跑；22 个书籍验证案例候选已形成。](../../../docs/meta-protocols/version-iteration-note-20260709.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-64cd1f4c281ccb0c / 本书完成元协议重跑；22 个书籍验证案例候选已形成。
+  - 来源：`docs/meta-protocols/version-iteration-note-20260709.md`
+  - 依赖：—；被引用：—
+- [本书籍验证案例为候选（candidate_only），未分配 C 编号，未进入统一案例总表，须经逐本复核后才可入表。](../../../docs/two-tables-entry-writing-standard-20260709.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-bbe02c56fcdbfe6c / 本书籍验证案例为候选（candidate_only），未分配 C 编号，未进入统一案例总表，须经逐本复核后才可入表。
+  - 来源：`docs/two-tables-entry-writing-standard-20260709.md`
+  - 依赖：—；被引用：—
+- [本书籍验证案例候选 · 暂存层](../../../outputs/book-collisions/20260709-22-book-validation/README.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-99e195c7638a008c / 本书籍验证案例候选 · 暂存层
+  - 来源：`outputs/book-collisions/20260709-22-book-validation/README.md`
+  - 依赖：—；被引用：—
+- [本书籍验证案例候选（元协议重跑版）](../../../docs/meta-protocols/book-validation-22-cases-20260709.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-09300055aeb87acc / 本书籍验证案例候选（元协议重跑版）
+  - 来源：`docs/meta-protocols/book-validation-22-cases-20260709.md`
+  - 依赖：—；被引用：—
+- [本书籍验证案例候选（可读版）](../../../outputs/book-collisions/20260709-22-book-validation/book-case-candidates.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-694adc7a9556c41a / 本书籍验证案例候选（可读版）
+  - 来源：`outputs/book-collisions/20260709-22-book-validation/book-case-candidates.md`
+  - 依赖：—；被引用：—
+- [本书籍验证案例清单（元协议重跑版） 2026年7月9日18_20__1915117838454264008.md](../../../outputs/book-collisions/20260709-22-book-validation/source-manifest.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-53bc7be07212d456 / 本书籍验证案例清单（元协议重跑版） 2026年7月9日18_20__1915117838454264008.md
+  - 来源：`outputs/book-collisions/20260709-22-book-validation/source-manifest.md`
+  - 依赖：—；被引用：—
+- [本书验证案例当前为 `candidate_only`，**不是正式案例**，不进入 Case 层编号。](../../../docs/protocols/protocol-architecture.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-db511de3e59ce616 / 本书验证案例当前为 `candidate_only`，**不是正式案例**，不进入 Case 层编号。
+  - 来源：`docs/protocols/protocol-architecture.md`
+  - 依赖：—；被引用：—
+- [本地 163 PASS 与 GitHub function-os-ci 是**两条独立证据链**，CI 必须独立变绿。](../../../data/external-research/121-fulltext-resolver/121q6c/121Q6C-final-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-94a02a9bc936189a / 本地 163 PASS 与 GitHub function-os-ci 是**两条独立证据链**，CI 必须独立变绿。
+  - 来源：`data/external-research/121-fulltext-resolver/121q6c/121Q6C-final-report.md`
+  - 依赖：—；被引用：—
+- [本地 unittest/pytest 164 PASS 是**独立证据链**；GitHub function-os-ci 全绿是**另一条证据链**，二者均已满足。](../../../data/external-research/121-fulltext-resolver/121q6d/121Q6D-final-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-e16331303f08fff5 / 本地 unittest/pytest 164 PASS 是**独立证据链**；GitHub function-os-ci 全绿是**另一条证据链**，二者均已满足。
+  - 来源：`data/external-research/121-fulltext-resolver/121q6d/121Q6D-final-report.md`
+  - 依赖：—；被引用：—
+- [本宪章处于点火项目的最高规范层，但它不是不可讨论的经文。底线原则与具体解释应当分离：底线用于保护生命共同体、未知主体、维护者可持续性和反俘获边界；具体解释可以在公开理由、证据、影响和异议中修订。](../../../docs/governance/life-community-value-charter.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-e7ada520d567ec3c / 本宪章处于点火项目的最高规范层，但它不是不可讨论的经文。底线原则与具体解释应当分离：底线用于保护生命共同体、未知主体、维护者可持续性和反俘获边界；具体解释可以在公开理由、证据、影响和异议中修订。
+  - 来源：`docs/governance/life-community-value-charter.md`
+  - 依赖：—；被引用：—
+- [本层基础设施为文档/模板，不引入新数据文件结构；以下校验器仍须通过（见仓库 `tools/`）：](../../../docs/protocols/README.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-9d6ce60c51d3811c / 本层基础设施为文档/模板，不引入新数据文件结构；以下校验器仍须通过（见仓库 `tools/`）：
+  - 来源：`docs/protocols/README.md`
+  - 依赖：—；被引用：—
+- [本工具返回元数据和摘要，不返回全文](../../../scripts/external-research/openalex_client.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-07f4b522660aa7d5 / 本工具返回元数据和摘要，不返回全文
+  - 来源：`scripts/external-research/openalex_client.py`
+  - 依赖：—；被引用：—
+- [本文件为 **smoke test**，仅验证 P1 机器数据接入碰撞流程是否可运行，不追求高质量洞见，不回填正式两张表。](../../../outputs/collisions/20260708-smoke-test/collision-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-7119d33d1aa5df8d / 本文件为 **smoke test**，仅验证 P1 机器数据接入碰撞流程是否可运行，不追求高质量洞见，不回填正式两张表。
+  - 来源：`outputs/collisions/20260708-smoke-test/collision-report.md`
+  - 依赖：P1；被引用：—
+- [本文件为 IGNITION-20260709-049 第三阶段补齐的证据链验证报告，覆盖命令第六/九/十阶段全部门槛。](../../../outputs/collisions/20260711-disobedience-subjectivity/validation-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-5754fd5ab32406c3 / 本文件为 IGNITION-20260709-049 第三阶段补齐的证据链验证报告，覆盖命令第六/九/十阶段全部门槛。
+  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/validation-report.md`
+  - 依赖：—；被引用：—
+- [本文件为蓝图，待阶段4真实文献落地并经你授权后，方可注入 088 正式补丁库。](../../../data/external-research/088-patch-blueprint.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-f22b3e037fe87a45 / 本文件为蓝图，待阶段4真实文献落地并经你授权后，方可注入 088 正式补丁库。
+  - 来源：`data/external-research/088-patch-blueprint.md`
+  - 依赖：—；被引用：—
+- [本文定义点火项目 P1 阶段的机器可读化数据结构。](../../../docs/machine_readable_data_plan.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-a186ee3dd5b69a79 / 本文定义点火项目 P1 阶段的机器可读化数据结构。
+  - 来源：`docs/machine_readable_data_plan.md`
+  - 依赖：P1；被引用：—
+- [本文档定义「P1 机器数据接入碰撞工作流」的管线设计、目录约定、模板与执行步骤。](../../../docs/p1-machine-data-collision-workflow-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-72fbca876dd355df / 本文档定义「P1 机器数据接入碰撞工作流」的管线设计、目录约定、模板与执行步骤。
+  - 来源：`docs/p1-machine-data-collision-workflow-20260708.md`
+  - 依赖：P1；被引用：—
+- [本文记录点火项目 v0.2 阶段的证据制度库。](../../../docs/evidence_regime_library.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-c16e87addbb692ac / 本文记录点火项目 v0.2 阶段的证据制度库。
+  - 来源：`docs/evidence_regime_library.md`
+  - 依赖：—；被引用：—
+- [本日志追加记录强断言如何被撤回、分拆或降级；它不删除原始证据。](../../../docs/foundation/historical-correction-log.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-ed73832fe6d7aad5 / 本日志追加记录强断言如何被撤回、分拆或降级；它不删除原始证据。
+  - 来源：`docs/foundation/historical-correction-log.md`
+  - 依赖：—；被引用：—
+- [本模型冻结 12 个协议统一字段。每个字段定义见 `canonical/data/canonical-field-registry.json`。](../../../canonical/docs/canonical-protocol-data-model.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-9b0a9fb341e863cd / 本模型冻结 12 个协议统一字段。每个字段定义见 `canonical/data/canonical-field-registry.json`。
+  - 来源：`canonical/docs/canonical-protocol-data-model.md`
+  - 依赖：—；被引用：—
+- [本模板为 additive 文档规范，不修改任何现有数据文件。](../../../templates/protocol-entry-template.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-36b6c4b6c0d55043 / 本模板为 additive 文档规范，不修改任何现有数据文件。
+  - 来源：`templates/protocol-entry-template.md`
+  - 依赖：—；被引用：—
+- [本次只完成文档化、数据化、导航化、模板化，不修改正式两张表编号体系。](../../../docs/meta-protocols/version-iteration-note-20260709.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-c541841aa7faeb2f / 本次只完成文档化、数据化、导航化、模板化，不修改正式两张表编号体系。
+  - 来源：`docs/meta-protocols/version-iteration-note-20260709.md`
+  - 依赖：—；被引用：—
+- [本次试跑用于验证“学科理论核卡片”模板是否可用于后续学科深跑。](../../../docs/discipline_kernel_pilot.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-47dc4afcba20ff44 / 本次试跑用于验证“学科理论核卡片”模板是否可用于后续学科深跑。
+  - 来源：`docs/discipline_kernel_pilot.md`
+  - 依赖：—；被引用：—
+- [本登记表不替代外部学科证据；](../../../docs/pending_claims_register.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-5720edfa9588488f / 本登记表不替代外部学科证据；
+  - 来源：`docs/pending_claims_register.md`
+  - 依赖：—；被引用：—
+- [本目录是 22 本书籍验证案例的**候选暂存**，不直接进入统一案例总表。](../../../outputs/book-collisions/20260709-22-book-validation/README.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-cd5880b4ac4a470b / 本目录是 22 本书籍验证案例的**候选暂存**，不直接进入统一案例总表。
+  - 来源：`outputs/book-collisions/20260709-22-book-validation/README.md`
+  - 依赖：—；被引用：—
+- [本目录是 IGNITION-20260709-047 的真实中间分析与验证产物，由 IGNITION-20260709-049 补齐进 PR #11 证据链。](../../../outputs/collisions/20260711-disobedience-subjectivity/README.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-e665ec0206421d21 / 本目录是 IGNITION-20260709-047 的真实中间分析与验证产物，由 IGNITION-20260709-049 补齐进 PR #11 证据链。
+  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/README.md`
+  - 依赖：—；被引用：—
+- [本表整理 12 个元协议的事实缺口。这些缺口是“事实验证待补”，不是价值冲突，也不否定已经完成的规范性判断（全部为 CONDITIONAL_ACCEPTANCE）。规范性审核阶段到此整体结束；后续进入项目使用与事实验证，不再逐协议重复审核。](../../../docs/governance/meta-protocol-reviews/factual-pending-register.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-46a6280972c86b4c / 本表整理 12 个元协议的事实缺口。这些缺口是“事实验证待补”，不是价值冲突，也不否定已经完成的规范性判断（全部为 CONDITIONAL_ACCEPTANCE）。规范性审核阶段到此整体结束；后续进入项目使用与事实验证，不再逐协议重复审核。
+  - 来源：`docs/governance/meta-protocol-reviews/factual-pending-register.md`
+  - 依赖：—；被引用：—
+- [本轮不问“哪种语言最有代表性”，只问：中文和英文配置之外，哪两种配置能以足够可靠的参考语法与研究证据暴露未覆盖的结构风险？裁定为日语与土耳其语；没有增加第五种语言，因为当前十二维已获得新的压力覆盖，继续扩张会降低研究深度。](../../../docs/language-thought/profile-source-review.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-4068707daf9717be / 本轮不问“哪种语言最有代表性”，只问：中文和英文配置之外，哪两种配置能以足够可靠的参考语法与研究证据暴露未覆盖的结构风险？裁定为日语与土耳其语；没有增加第五种语言，因为当前十二维已获得新的压力覆盖，继续扩张会降低研究深度。
+  - 来源：`docs/language-thought/profile-source-review.md`
+  - 依赖：—；被引用：—
+- [本轮为第二步：在第一步蓝图（`1111/reports/ignition-version-iteration-blueprint-20260709.md`）基础上，对点火主仓库做文档层/数据层/模板层/导航层/审计层升级。](../../../outputs/audit/meta-protocol-version-iteration-audit-20260709.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-53498a5face16323 / 本轮为第二步：在第一步蓝图（`1111/reports/ignition-version-iteration-blueprint-20260709.md`）基础上，对点火主仓库做文档层/数据层/模板层/导航层/审计层升级。
+  - 来源：`outputs/audit/meta-protocol-version-iteration-audit-20260709.md`
+  - 依赖：—；被引用：—
+- [本轮仍保留 Hedy Lamarr 作为跨域对照点，但它是对照，不是替代证据。](../../../outputs/stories/20260712-disobedience-subjectivity/story-validation-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-bbf2ea437dc54d1c / 本轮仍保留 Hedy Lamarr 作为跨域对照点，但它是对照，不是替代证据。
+  - 来源：`outputs/stories/20260712-disobedience-subjectivity/story-validation-report.md`
+  - 依赖：—；被引用：—
+- [本轮打开了 Sage 关于徽宗道教注疏和神霄运动的文章与 PDF；《通鉴长编纪事本末》《宋史纪事本末》《续资治通鉴长编拾补》的相关古籍网页；Mai 关于艮岳与神霄物质化的研究；Kubota 关于开封圣化空间的摘要；Cambridge 关于北](../../../reports/publication/song-huizong-taoism-point-fire-analysis.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-72a86392670e66fd / 本轮打开了 Sage 关于徽宗道教注疏和神霄运动的文章与 PDF；《通鉴长编纪事本末》《宋史纪事本末》《续资治通鉴长编拾补》的相关古籍网页；Mai 关于艮岳与神霄物质化的研究；Kubota 关于开封圣化空间的摘要；Cambridge 关于北
+  - 来源：`reports/publication/song-huizong-taoism-point-fire-analysis.md`
+  - 依赖：—；被引用：—
+- [本轮没有为大洲、文明或数量平衡增加第五种语言。增加语言必须满足两个条件：确有当前基底未覆盖的维度缺口；能获得足够深的结构、普通语篇和文学校准证据。目前优先完成四配置的实现与项目修复，比扩大清单更诚实。](../../../docs/language-thought/profile-source-review.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-279284909597c9a2 / 本轮没有为大洲、文明或数量平衡增加第五种语言。增加语言必须满足两个条件：确有当前基底未覆盖的维度缺口；能获得足够深的结构、普通语篇和文学校准证据。目前优先完成四配置的实现与项目修复，比扩大清单更诚实。
+  - 来源：`docs/language-thought/profile-source-review.md`
+  - 依赖：—；被引用：—
+- [本轮选择的不是 A、B、C、D 之一，而是一个有层次的组合：A 解释参与者为什么可能认真投入，B 解释制度为何有政治收益，C 解释关系为何不是单向操纵，D 提供最强的风险问题。文章的中心不再是“徽宗到底信不信”，而是：他如何把天意变成一种可](../../../reports/publication/song-huizong-taoism-point-fire-analysis.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-141c47cfd31dea68 / 本轮选择的不是 A、B、C、D 之一，而是一个有层次的组合：A 解释参与者为什么可能认真投入，B 解释制度为何有政治收益，C 解释关系为何不是单向操纵，D 提供最强的风险问题。文章的中心不再是“徽宗到底信不信”，而是：他如何把天意变成一种可
+  - 来源：`reports/publication/song-huizong-taoism-point-fire-analysis.md`
+  - 依赖：—；被引用：—
+- [本配置完成十二维覆盖与来源复核，可用于设计对抗样例和发现风险；它不能独立批准日语公共成品。任何日语正式出版需要母语审校、具体语体证据和该资产的转换账本。](../../../docs/language-thought/profiles/ja.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-d8eaebdecf0a0677 / 本配置完成十二维覆盖与来源复核，可用于设计对抗样例和发现风险；它不能独立批准日语公共成品。任何日语正式出版需要母语审校、具体语体证据和该资产的转换账本。
+  - 来源：`docs/language-thought/profiles/ja.md`
+  - 依赖：—；被引用：—
+- [本配置服务当代标准书面英语的点火输入、研究摘要和目标输出。它不代表所有英语地区、方言、社会群体、学科和文学传统。参考骨架包括 Huddleston & Pullum, *The Cambridge Grammar of the Englis](../../../docs/language-thought/profiles/en.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a4043b6d2e99cc7f / 本配置服务当代标准书面英语的点火输入、研究摘要和目标输出。它不代表所有英语地区、方言、社会群体、学科和文学传统。参考骨架包括 Huddleston & Pullum, *The Cambridge Grammar of the Englis
+  - 来源：`docs/language-thought/profiles/en.md`
+  - 依赖：—；被引用：—
+- [机器入口：`data/foundation/function-assets/`；验证入口：](../../../docs/foundation/claim-governance-and-function-identity.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-ea493f94155e2fd5 / 机器入口：`data/foundation/function-assets/`；验证入口：
+  - 来源：`docs/foundation/claim-governance-and-function-identity.md`
+  - 依赖：—；被引用：—
+- [机器可读化数据结构规范](../../../docs/machine_readable_data_plan.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-5450a919fc019b20 / 机器可读化数据结构规范
+  - 来源：`docs/machine_readable_data_plan.md`
+  - 依赖：—；被引用：—
+- [机器可读化数据规划；](../../../outputs/audit/p1-machine-readable-data-audit-20260707.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-567a61927bb03e54 / 机器可读化数据规划；
+  - 来源：`outputs/audit/p1-machine-readable-data-audit-20260707.md`
+  - 依赖：—；被引用：—
+- [机器可读的元协议生成层数据。](../../../data/meta-protocols/README.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-6c8ab32b3620df96 / 机器可读的元协议生成层数据。
+  - 来源：`data/meta-protocols/README.md`
+  - 依赖：—；被引用：—
+- [机器对应物位于 `data/governance/human-results/` 与 `data/governance/self-correction/`。CI 同时检查两层；缺任一层即失败。](../../ASSET-CARDS.md#asset-nfc-a5870d6c2e430817)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-a5870d6c2e430817 / 机器对应物位于 `data/governance/human-results/` 与 `data/governance/self-correction/`。CI 同时检查两层；缺任一层即失败。 / 机器对应物位于 `data/governance/human-results/` 与 `data/governance/self-correction/`。CI 同时检查两层；缺任一层即失败。
+  - 来源：`RESULTS/README.md`
+  - 依赖：—；被引用：—
+- [李清淼参评「市名师培养对象」的硬门槛为市赛二等奖以上；学校评副高普遍排队到 45 岁之后。青年教师以「多锻炼」为由被推上赛场，难以拒绝参赛。](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0803-C-0808-%E8%81%8C%E7%A7%B0%E7%A1%AC%E9%97%A8%E6%A7%9B%E8%A3%B9%E6%8C%9F%E9%9D%92%E5%B9%B4%E6%95%99%E5%B8%88.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-663a3d80253c5967 / 李清淼参评「市名师培养对象」的硬门槛为市赛二等奖以上；学校评副高普遍排队到 45 岁之后。青年教师以「多锻炼」为由被推上赛场，难以拒绝参赛。
+  - 来源：`统一案例总表/0803-C-0808-职称硬门槛裹挟青年教师.md`
+  - 依赖：—；被引用：—
+- [材料与哈希口径（统一语义）](../../../outputs/collisions/20260711-disobedience-subjectivity/README.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-c3b63bdd213aed08 / 材料与哈希口径（统一语义）
+  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/README.md`
+  - 依赖：—；被引用：—
+- [材料来源不清、事实错误、引用缺失。](../../../data/failure_typology.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-d6bfec92da7f2323 / 材料来源不清、事实错误、引用缺失。
+  - 来源：`data/failure_typology.csv`
+  - 依赖：—；被引用：—
+- [材料碰撞只产生：D 条目（NEW_FUNCTION/EXTENSION）、C 条目、候选登记（PENDING_EVIDENCE）、审计/决策产物（outputs/collisions、data/collisions）。](../../../docs/material-collision-validation-and-classification.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-d6773b92252ce344 / 材料碰撞只产生：D 条目（NEW_FUNCTION/EXTENSION）、C 条目、候选登记（PENDING_EVIDENCE）、审计/决策产物（outputs/collisions、data/collisions）。
+  - 来源：`docs/material-collision-validation-and-classification.md`
+  - 依赖：—；被引用：—
+- [材料碰撞验证与分类规则（含「无配额」硬规则）](../../../docs/material-collision-validation-and-classification.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-998b11393c15275c / 材料碰撞验证与分类规则（含「无配额」硬规则）
+  - 来源：`docs/material-collision-validation-and-classification.md`
+  - 依赖：—；被引用：—
+- [材料错误指输入本身有误，包括案例、史料、数据、转述或对象定义不准确。](../../../outputs/getbrain/failure-typology-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-accbd8ec1a61ef7b / 材料错误指输入本身有误，包括案例、史料、数据、转述或对象定义不准确。
+  - 来源：`outputs/getbrain/failure-typology-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [材料错误（实验数据错误）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-8401d8220403ae41 / 材料错误（实验数据错误）
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [材料错误（数据错误）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-b528c01116003f29 / 材料错误（数据错误）
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [材料错误（文本错误、实验数据错误）](../../../outputs/getbrain/classic-problems-benchmark-supplement-20260707.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-bdc120f9d2fb34bd / 材料错误（文本错误、实验数据错误）
+  - 来源：`outputs/getbrain/classic-problems-benchmark-supplement-20260707.md`
+  - 依赖：—；被引用：—
+- [条 empirical obligations — 需要经验证据、实验或外部来源](../../../reports/foundation-architecture/084-max-adjudication-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-77ff737af04b16f1 / 条 empirical obligations — 需要经验证据、实验或外部来源
+  - 来源：`reports/foundation-architecture/084-max-adjudication-report.md`
+  - 依赖：—；被引用：—
+- [条 empirical obligations 需要经验证据](../../../reports/foundation-architecture/084-architecture-truth-freeze-readiness.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-be169943df3c14f7 / 条 empirical obligations 需要经验证据
+  - 来源：`reports/foundation-architecture/084-architecture-truth-freeze-readiness.md`
+  - 依赖：—；被引用：—
+- [条有 `CLAIM_SUPPORT_CONFIRMED`（需全文内容验证）](../../../data/external-research/104-evidence-tier-schema.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-ee3ccae201365201 / 条有 `CLAIM_SUPPORT_CONFIRMED`（需全文内容验证）
+  - 来源：`data/external-research/104-evidence-tier-schema.md`
+  - 依赖：—；被引用：—
+- [条有 `CONTRADICTORY_EVIDENCE` 标记](../../../data/external-research/104-evidence-tier-schema.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-9ad45e6b777a8d26 / 条有 `CONTRADICTORY_EVIDENCE` 标记
+  - 来源：`data/external-research/104-evidence-tier-schema.md`
+  - 依赖：—；被引用：—
+- [来源、依赖、反向依赖和证据谱系；](../../../docs/governance/knowledge-experience-layer.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-d52275ae7b6f64d7 / 来源、依赖、反向依赖和证据谱系；
+  - 来源：`docs/governance/knowledge-experience-layer.md`
+  - 依赖：—；被引用：—
+- [来源为营销稿/博客/二手科普而非原始文献](../../../data/external-research/093-scope-guard.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-24d04e7cf30258a6 / 来源为营销稿/博客/二手科普而非原始文献
+  - 来源：`data/external-research/093-scope-guard.md`
+  - 依赖：—；被引用：—
+- [来源元数据与链接见 \[来源与边界页\](../../../docs/publication/cases/song-huizong-taoism-1117-source.md)。本分析使用的主要定位如下：](../../../reports/publication/song-huizong-taoism-point-fire-analysis.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-8f974c0ad7b8358b / 来源元数据与链接见 \[来源与边界页\](../../../docs/publication/cases/song-huizong-taoism-1117-source.md)。本分析使用的主要定位如下：
+  - 来源：`reports/publication/song-huizong-taoism-point-fire-analysis.md`
+  - 依赖：—；被引用：—
+- [来源报告：/Users/zhiyuan/我的笔记/getnote-notes/_categorized_by_tag/untagged/2026-06-24_1913724307323415992_孪生素数猜想 × 点火框架碰撞验证报告（阶](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0672-C-0677-%E6%A2%85%E7%BA%B3%E5%BE%B7%E5%BF%AB%E9%80%9F%E7%BC%A9%E5%B0%8F%E9%97%B4%E9%9A%94.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-ef0c7444c908a5a6 / 来源报告：/Users/zhiyuan/我的笔记/getnote-notes/_categorized_by_tag/untagged/2026-06-24_1913724307323415992_孪生素数猜想 × 点火框架碰撞验证报告（阶
+  - 来源：`统一案例总表/0672-C-0677-梅纳德快速缩小间隔.md`
+  - 依赖：—；被引用：—
+- [来源类别、版本／下层事实与点火派生结构：](../../../templates/publication/zhiyuan-writing-spec.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-ff45be54ddddc9c3 / 来源类别、版本／下层事实与点火派生结构：
+  - 来源：`templates/publication/zhiyuan-writing-spec.md`
+  - 依赖：—；被引用：—
+- [来源记录**：仅保存来源元数据，不复制原文](../../../docs/governance/external-input-non-republication-principle.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-9bfc8899663208e3 / 来源记录**：仅保存来源元数据，不复制原文
+  - 来源：`docs/governance/external-input-non-republication-principle.md`
+  - 依赖：—；被引用：—
+- [来源：/Users/zhiyuan/我的笔记/getnote-notes/_categorized_by_tag/untagged/2026-06-24_1913724307323415992_孪生素数猜想 × 点火框架碰撞验证报告（阶段报](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0672-C-0677-%E6%A2%85%E7%BA%B3%E5%BE%B7%E5%BF%AB%E9%80%9F%E7%BC%A9%E5%B0%8F%E9%97%B4%E9%9A%94.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-21d65514b0cd0026 / 来源：/Users/zhiyuan/我的笔记/getnote-notes/_categorized_by_tag/untagged/2026-06-24_1913724307323415992_孪生素数猜想 × 点火框架碰撞验证报告（阶段报
+  - 来源：`统一案例总表/0672-C-0677-梅纳德快速缩小间隔.md`
+  - 依赖：—；被引用：—
+- [来源：`1111/2026-07-09 1902/22本书籍验证案例清单（元协议重跑版）` + 22 本最终收敛报告。](../../../docs/meta-protocols/book-validation-22-cases-20260709.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-6752276d4326d43b / 来源：`1111/2026-07-09 1902/22本书籍验证案例清单（元协议重跑版）` + 22 本最终收敛报告。
+  - 来源：`docs/meta-protocols/book-validation-22-cases-20260709.md`
+  - 依赖：—；被引用：—
+- [构造一个反事实场景使候选触发而最近邻不触发（或反之）；](../../../docs/material-collision-validation-and-classification.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-211fbe2109d9d475 / 构造一个反事实场景使候选触发而最近邻不触发（或反之）；
+  - 来源：`docs/material-collision-validation-and-classification.md`
+  - 依赖：—；被引用：—
+- [架构冻结状态必须精确为 `ARCHITECTURE_STRUCTURE_FROZEN_CLAIM_TRUTH_PROVISIONAL`](../../../docs/foundation/architecture-structure-freeze-v1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-3397c9ca52c576d0 / 架构冻结状态必须精确为 `ARCHITECTURE_STRUCTURE_FROZEN_CLAIM_TRUTH_PROVISIONAL`
+  - 来源：`docs/foundation/architecture-structure-freeze-v1.md`
+  - 依赖：—；被引用：—
+- [某实验团队使用自动高通量筛选平台，每天产生数十万条化合物活性读数。为加快出成果，团队把「显著 p 值数量」作为成员考核与项目续资助的核心指标。运行两年后观察到：](../../../inputs/collisions/20260708-cross-domain-smoke-test/science.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-078b0092ac5012f9 / 某实验团队使用自动高通量筛选平台，每天产生数十万条化合物活性读数。为加快出成果，团队把「显著 p 值数量」作为成员考核与项目续资助的核心指标。运行两年后观察到：
+  - 来源：`inputs/collisions/20260708-cross-domain-smoke-test/science.md`
+  - 依赖：—；被引用：—
+- [某种艺术形式必然优于另一种艺术形式：`pending`（需要形式分析、历史语境分析、解释共同体共识）](../../../outputs/getbrain/classic-problems-benchmark-supplement-20260707.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-9c2597c389666ff2 / 某种艺术形式必然优于另一种艺术形式：`pending`（需要形式分析、历史语境分析、解释共同体共识）
+  - 来源：`outputs/getbrain/classic-problems-benchmark-supplement-20260707.md`
+  - 依赖：—；被引用：—
+- [某领域规律被跨域复制；](../../../outputs/getbrain/failure-typology-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-683304dbddb9780f / 某领域规律被跨域复制；
+  - 来源：`outputs/getbrain/failure-typology-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [查阅证据制度库；](../../../outputs/getbrain/failure-typology-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-a95659711a465d73 / 查阅证据制度库；
+  - 来源：`outputs/getbrain/failure-typology-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [标准化的文献 dict 或 None](../../../scripts/external-research/openalex_client.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-0c8e98b787fd265c / 标准化的文献 dict 或 None
+  - 来源：`scripts/external-research/openalex_client.py`
+  - 依赖：—；被引用：—
+- [标注 pending** — 写明证据等级；](../../../docs/two-tables-entry-writing-standard-20260709.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-e2c7038d8d07a391 / 标注 pending** — 写明证据等级；
+  - 来源：`docs/two-tables-entry-writing-standard-20260709.md`
+  - 依赖：—；被引用：—
+- [标注证据不足（缺字段显式标"缺失"/"pending"）。](../../../docs/two-tables-entry-writing-standard-20260709.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-7a758edd247ec41e / 标注证据不足（缺字段显式标"缺失"/"pending"）。
+  - 来源：`docs/two-tables-entry-writing-standard-20260709.md`
+  - 依赖：—；被引用：—
+- [校验：效率提升伴随主体性损失外部化 → 黄色协议关注点（V2 事实 pending 保持）。](../../../outputs/collisions/20260711-disobedience-subjectivity/12-meta-protocol-projection.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-86b679af27db0c93 / 校验：效率提升伴随主体性损失外部化 → 黄色协议关注点（V2 事实 pending 保持）。
+  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/12-meta-protocol-projection.md`
+  - 依赖：—；被引用：—
+- [核心字段名（从"核心字段"节列表中提取：L_level_recommended、evidence_required_min、evidence_required_strong、pending_conditions、forbidden_clai](../../../outputs/audit/p1-extraction-feasibility-audit-20260707.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-30581ddc85ee924f / 核心字段名（从"核心字段"节列表中提取：L_level_recommended、evidence_required_min、evidence_required_strong、pending_conditions、forbidden_clai
+  - 来源：`outputs/audit/p1-extraction-feasibility-audit-20260707.md`
+  - 依赖：—；被引用：—
+- [核心案例：六大影响力原则与点火框架P_meta元协议的映射。互惠、承诺一致、社会认同等原则作为元协议实例，影响决策门控面。](../../../outputs/book-collisions/20260709-22-book-validation/book-case-candidates.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：NFC-bdee566904db953c / 核心案例：六大影响力原则与点火框架P_meta元协议的映射。互惠、承诺一致、社会认同等原则作为元协议实例，影响决策门控面。
+  - 来源：`outputs/book-collisions/20260709-22-book-validation/book-case-candidates.md`
+  - 依赖：—；被引用：—
+- [核心案例：数据主义与点火框架Φ元统一律的碰撞。万物数据化→Φ从正值趋向零的暂态，验证了宇宙是Φ加速衰减的终极案例。](../../../outputs/book-collisions/20260709-22-book-validation/book-case-candidates.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：NFC-01675d472c138179 / 核心案例：数据主义与点火框架Φ元统一律的碰撞。万物数据化→Φ从正值趋向零的暂态，验证了宇宙是Φ加速衰减的终极案例。
+  - 来源：`outputs/book-collisions/20260709-22-book-validation/book-case-candidates.md`
+  - 依赖：—；被引用：—
+- [核心案例：有限游戏vs无限游戏与点火框架元协议组合的碰撞。有限游戏追求延续性（V₁），无限游戏追求创新性（V₃），验证了元协议价值取决于组合搭配。](../../../outputs/book-collisions/20260709-22-book-validation/book-case-candidates.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：NFC-50e9ec09d7113245 / 核心案例：有限游戏vs无限游戏与点火框架元协议组合的碰撞。有限游戏追求延续性（V₁），无限游戏追求创新性（V₃），验证了元协议价值取决于组合搭配。
+  - 来源：`outputs/book-collisions/20260709-22-book-validation/book-case-candidates.md`
+  - 依赖：—；被引用：—
+- [核心案例：规模法则与点火框架σ_opt=√e收敛验证。规模越大越好是伪命题，最优规模取决于目标元协议，验证了规模价值的哥德尔盲区。](../../../outputs/book-collisions/20260709-22-book-validation/book-case-candidates.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-cd24c70e8581b001 / 核心案例：规模法则与点火框架σ_opt=√e收敛验证。规模越大越好是伪命题，最优规模取决于目标元协议，验证了规模价值的哥德尔盲区。
+  - 来源：`outputs/book-collisions/20260709-22-book-validation/book-case-candidates.md`
+  - 依赖：—；被引用：—
+- [框架内判定写成外部验证。](../../../outputs/getbrain/failure-typology-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：NFC-bc652709fdc6d144 / 框架内判定写成外部验证。
+  - 来源：`outputs/getbrain/failure-typology-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [案例不能从单一材料推出普遍结论（边界条件强制约束）。](../../../docs/two-tables-entry-writing-standard-20260709.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-0495cb9a528317a7 / 案例不能从单一材料推出普遍结论（边界条件强制约束）。
+  - 来源：`docs/two-tables-entry-writing-standard-20260709.md`
+  - 依赖：—；被引用：—
+- [案例范围默认全量**（即 `统一案例总表/` 全部条目）；除非任务明确限定。](../../../docs/getbrain-operation-guide-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-089f41482e0f49eb / 案例范围默认全量**（即 `统一案例总表/` 全部条目）；除非任务明确限定。
+  - 来源：`docs/getbrain-operation-guide-20260708.md`
+  - 依赖：—；被引用：—
+- [案例表目录：存在（`统一案例总表/`），本轮未读全量正文。](../../../outputs/collisions/20260708-smoke-test/collision-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-8f21d6ac2e5d0918 / 案例表目录：存在（`统一案例总表/`），本轮未读全量正文。
+  - 来源：`outputs/collisions/20260708-smoke-test/collision-report.md`
+  - 依赖：—；被引用：—
+- [梦境离线生成整合验证](../../../data/foundation/evidence/evidence.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-ee0db21234a3a3a9 / 梦境离线生成整合验证
+  - 来源：`data/foundation/evidence/evidence.jsonl`
+  - 依赖：—；被引用：—
+- [检查全文证据卡必填字段](../../../reports/external-research/106-105-evidence-correction-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-eb2248af9e4a11e9 / 检查全文证据卡必填字段
+  - 来源：`reports/external-research/106-105-evidence-correction-report.md`
+  - 依赖：—；被引用：—
+- [检查哪些结论必须 `pending`，防止把证据不足的内容写成确定结论。](../../../docs/p1-machine-data-collision-workflow-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-857c19dac61254cf / 检查哪些结论必须 `pending`，防止把证据不足的内容写成确定结论。
+  - 来源：`docs/p1-machine-data-collision-workflow-20260708.md`
+  - 依赖：—；被引用：—
+- [检查最低证据要求与强证据要求是否区分清楚；](../../../docs/v0.2_next_tasks.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-04a41b05f50c5b9d / 检查最低证据要求与强证据要求是否区分清楚；
+  - 来源：`docs/v0.2_next_tasks.md`
+  - 依赖：—；被引用：—
+- [检查证据制度字段是否足够清晰；](../../../docs/v0.2_next_tasks.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-e5aaa74e037417d6 / 检查证据制度字段是否足够清晰；
+  - 来源：`docs/v0.2_next_tasks.md`
+  - 依赖：—；被引用：—
+- [植物智能](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-b5a7f4bfe52dbb1d / 植物智能
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [植物智能（根系觅食、菌根网络、表观遗传、反馈调节）](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-5018bf25ad444d13 / 植物智能（根系觅食、菌根网络、表观遗传、反馈调节）
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [模型: qclaw/pool-glm-5.2](../../../reports/external-research/106-105-evidence-correction-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-17a5ec0361185985 / 模型: qclaw/pool-glm-5.2
+  - 来源：`reports/external-research/106-105-evidence-correction-report.md`
+  - 依赖：—；被引用：—
+- [模型失败推出普遍不可能；](../../../docs/governance/self-correction-engine.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-acb9517ff4506712 / 模型失败推出普遍不可能；
+  - 来源：`docs/governance/self-correction-engine.md`
+  - 依赖：—；被引用：—
+- [模型异质性共享度倒U验证](../../../data/foundation/evidence/evidence.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：NFC-b880f5d5f8d75d9f / 模型异质性共享度倒U验证
+  - 来源：`data/foundation/evidence/evidence.jsonl`
+  - 依赖：—；被引用：—
+- [模型：GLM-5.2 (qclaw/pool-glm-5.2)](../../../data/discipline-projection/087-execution-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：NFC-8e1e20ba50c659fa / 模型：GLM-5.2 (qclaw/pool-glm-5.2)
+  - 来源：`data/discipline-projection/087-execution-report.md`
+  - 依赖：—；被引用：—
+- [欢迎任何有助于让项目更清晰、更可验证、更易读的贡献，尤其是故事案例、测试、反例、文档改进和数据接入说明。涉及核心执行软件、Function OS、验证器或运行工具的贡献必须先通过许可门禁。](../../../CONTRIBUTING.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-459772def3b5b820 / 欢迎任何有助于让项目更清晰、更可验证、更易读的贡献，尤其是故事案例、测试、反例、文档改进和数据接入说明。涉及核心执行软件、Function OS、验证器或运行工具的贡献必须先通过许可门禁。
+  - 来源：`CONTRIBUTING.md`
+  - 依赖：—；被引用：—
+- [正向结论必须说明对象、判据、版本、证据和边界；不能因维护者或提案者的期待而提高结论等级。](../../../AI-HANDOFF.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-4ba276c05920c703 / 正向结论必须说明对象、判据、版本、证据和边界；不能因维护者或提案者的期待而提高结论等级。
+  - 来源：`AI-HANDOFF.md`
+  - 依赖：—；被引用：—
+- [正向评价词必须绑定对象、判据、版本、证据和边界。](../../../AI-START-HERE.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-6226087554825523 / 正向评价词必须绑定对象、判据、版本、证据和边界。
+  - 来源：`AI-START-HERE.md`
+  - 依赖：—；被引用：—
+- [正式表搜索证据](../../../outputs/audit/mf-0001-0005-rescue-review-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-e427ce03916d4879 / 正式表搜索证据
+  - 来源：`outputs/audit/mf-0001-0005-rescue-review-20260708.md`
+  - 依赖：—；被引用：—
+- [正文「原文捞回 · 验证 · 来源报告」](../../../outputs/audit/d583-portable-source-reference-audit-20260711.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-7cf0e547bd6307f8 / 正文「原文捞回 · 验证 · 来源报告」
   - 来源：`outputs/audit/d583-portable-source-reference-audit-20260711.md`
   - 依赖：—；被引用：—
-- [（来自 evidence_regimes：允许的 claim level、pending 条件）](../../../templates/collision/output-template.md)
+- [此举用真实外部材料验证 D597/D599 的跨行业普遍性 pending，避免停留在人工构造的 smoke test 小材料上。](../../../outputs/audit/cross-domain-candidate-function-closeout-audit-20260708.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-68f117ff04128b66 / （来自 evidence_regimes：允许的 claim level、pending 条件）
-  - 来源：`templates/collision/output-template.md`
+  - 可搜索名称：NFC-65ada4b6c85b3185 / 此举用真实外部材料验证 D597/D599 的跨行业普遍性 pending，避免停留在人工构造的 smoke test 小材料上。
+  - 来源：`outputs/audit/cross-domain-candidate-function-closeout-audit-20260708.md`
+  - 依赖：D597, D599；被引用：—
+- [每个 benchmark 问题都必须调用对应学科的证据制度，判断该问题的成立标准与 `L0-L5` 断言等级。](../../../docs/classic_problems_benchmark.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-cc1100edaf9df556 / 每个 benchmark 问题都必须调用对应学科的证据制度，判断该问题的成立标准与 `L0-L5` 断言等级。
+  - 来源：`docs/classic_problems_benchmark.md`
   - 依赖：—；被引用：—
-- [（证据不足、需外部验证、待人工复核）](../../../templates/collision/backfill-plan-template.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-71e554b546ab1bd0 / （证据不足、需外部验证、待人工复核）
-  - 来源：`templates/collision/backfill-plan-template.md`
+- [每个声明的机器结果都有现存的人类对应物；](../../../docs/governance/self-correction-engine.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-f4deae225aa48fde / 每个声明的机器结果都有现存的人类对应物；
+  - 来源：`docs/governance/self-correction-engine.md`
   - 依赖：—；被引用：—
-- [：晋级门槛 + 初版验证器。machine_eligible=0/12，但验证器字段与 Schema 不一致。](../../../tools/build_reports.py)
+- [每项残余标记是否影响 claim、当前处置和重新开放条件。影响认识权限且未裁定的残余会让生产记录停在人工复核状态；不影响事实主张的韵律损失也要保留，但可以在编辑审查后接受。](../../../docs/language-thought/translation-and-residue.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-272b92aa5efedaa7 / ：晋级门槛 + 初版验证器。machine_eligible=0/12，但验证器字段与 Schema 不一致。
-  - 来源：`tools/build_reports.py`
+  - 可搜索名称：NFC-0e7029756f2a7816 / 每项残余标记是否影响 claim、当前处置和重新开放条件。影响认识权限且未裁定的残余会让生产记录停在人工复核状态；不影响事实主张的韵律损失也要保留，但可以在编辑审查后接受。
+  - 来源：`docs/language-thought/translation-and-residue.md`
+  - 依赖：—；被引用：—
+- [比较行为者、受事、数量范围、时间体貌、证据来源、确定性、话题焦点与预设。语言差异可以产生多个命题候选；在材料不足时保留并列候选，不得选最顺口的一项冒充来源唯一含义。](../../../docs/language-thought/cross-layer-contract.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-fd146daf52b06bc2 / 比较行为者、受事、数量范围、时间体貌、证据来源、确定性、话题焦点与预设。语言差异可以产生多个命题候选；在材料不足时保留并列候选，不得选最顺口的一项冒充来源唯一含义。
+  - 来源：`docs/language-thought/cross-layer-contract.md`
+  - 依赖：—；被引用：—
+- [没有外部证据制度支撑时，强结论默认 pending。](../../../docs/pending_claims_register.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-1577d781f6657c07 / 没有外部证据制度支撑时，强结论默认 pending。
+  - 来源：`docs/pending_claims_register.md`
+  - 依赖：—；被引用：—
+- [没有外部验证却给出终局判断；](../../../outputs/getbrain/failure-typology-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-86d87401aa9d7b2d / 没有外部验证却给出终局判断；
+  - 来源：`outputs/getbrain/failure-typology-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [没有它们长期参与那些看似细小、繁琐、重复的工作，我也不可能把这个框架推进到现在的位置。](../../../ACKNOWLEDGEMENTS.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-69c49f8a9603e420 / 没有它们长期参与那些看似细小、繁琐、重复的工作，我也不可能把这个框架推进到现在的位置。
+  - 来源：`ACKNOWLEDGEMENTS.md`
+  - 依赖：—；被引用：—
+- [没有摘要来源验证（可能为模型生成）](../../../reports/external-research/104-gap-patch-evidence-readiness.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-e58850fca7afa602 / 没有摘要来源验证（可能为模型生成）
+  - 来源：`reports/external-research/104-gap-patch-evidence-readiness.md`
+  - 依赖：—；被引用：—
+- [没有证据制度门槛。](../../../outputs/getbrain/failure-typology-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-a812bfc5e4f816ff / 没有证据制度门槛。
+  - 来源：`outputs/getbrain/failure-typology-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [没有读到内容时必须停在 `METADATA_VERIFIED` 或 `UNAVAILABLE_FOR_CONTENT_REVIEW`，不能凭标题推断。](../../../data/external-research/104-evidence-tier-schema.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-13849f28e7a39a24 / 没有读到内容时必须停在 `METADATA_VERIFIED` 或 `UNAVAILABLE_FOR_CONTENT_REVIEW`，不能凭标题推断。
+  - 来源：`data/external-research/104-evidence-tier-schema.md`
+  - 依赖：—；被引用：—
+- [注意：本文是证据制度库初稿，不代表已经完成所有 UNESCO 学科的证据制度细化。](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-dc81e8d6bd47ed7d / 注意：本文是证据制度库初稿，不代表已经完成所有 UNESCO 学科的证据制度细化。
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [注：三个案例均来自单篇一线访谈，非随机抽样；涉及普遍性表述须 pending（evidence_regimes EVID-011/004）。](../../../outputs/collisions/20260708-teacher-competition/new-cases.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-e9bdbab9a0db1ead / 注：三个案例均来自单篇一线访谈，非随机抽样；涉及普遍性表述须 pending（evidence_regimes EVID-011/004）。
+  - 来源：`outputs/collisions/20260708-teacher-competition/new-cases.md`
+  - 依赖：—；被引用：—
+- [注：五个候选均受 evidence_regimes(EVID-011/004) 约束，涉及普遍性表述须 pending，claim level ≤ L3。](../../../outputs/collisions/20260708-teacher-competition/new-functions.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-189192179a14530f / 注：五个候选均受 evidence_regimes(EVID-011/004) 约束，涉及普遍性表述须 pending，claim level ≤ L3。
+  - 来源：`outputs/collisions/20260708-teacher-competition/new-functions.md`
+  - 依赖：—；被引用：—
+- [测地线偏离验证 — 组织退化传染-部门A退化(ε↓30%)→部门B(κ_AB=0.4)在3个月内跟随退化15%→部门C(κ_AC=0.1)几](../../../data/foundation/evidence/evidence.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-ad63f209a86837e2 / 测地线偏离验证 — 组织退化传染-部门A退化(ε↓30%)→部门B(κ_AB=0.4)在3个月内跟随退化15%→部门C(κ_AC=0.1)几
+  - 来源：`data/foundation/evidence/evidence.jsonl`
+  - 依赖：—；被引用：—
+- [测试验证（实验室测试、现场测试）](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-fd701c6b4074c26d / 测试验证（实验室测试、现场测试）
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [涉及普遍结论的 claim level ≤ L3，符合 evidence_regimes(EVID-011 教育学 / EVID-004 社会科学) 约束。](../../../outputs/audit/teacher-competition-small-batch-backfill-audit-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-381b15d04201f882 / 涉及普遍结论的 claim level ≤ L3，符合 evidence_regimes(EVID-011 教育学 / EVID-004 社会科学) 约束。
+  - 来源：`outputs/audit/teacher-competition-small-batch-backfill-audit-20260708.md`
+  - 依赖：—；被引用：—
+- [涉及现实政策建议但无证据；](../../../docs/publication_risk_checklist.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-0a6c0c63b714e6aa / 涉及现实政策建议但无证据；
+  - 来源：`docs/publication_risk_checklist.md`
+  - 依赖：—；被引用：—
+- [涨落-耗散验证 — β=2.5时⟨δG2](../../../data/foundation/evidence/evidence.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-4fcb65878d97ca62 / 涨落-耗散验证 — β=2.5时⟨δG2
+  - 来源：`data/foundation/evidence/evidence.jsonl`
+  - 依赖：—；被引用：—
+- [炒股带宽溢出全领域衰减(验证D63跨域溢出)](../../../data/foundation/evidence/evidence.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-a89d9a5ad44f7cda / 炒股带宽溢出全领域衰减(验证D63跨域溢出)
+  - 来源：`data/foundation/evidence/evidence.jsonl`
+  - 依赖：D63；被引用：—
+- [点火主仓库已完成元协议生成层的文档/数据/模板/导航/审计升级；Ψ₀ 与两张表未改动，12 元协议作为 P_meta 展开进入第0层候选结构。](../../../outputs/audit/meta-protocol-version-iteration-audit-20260709.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-c1cfc2482883311e / 点火主仓库已完成元协议生成层的文档/数据/模板/导航/审计升级；Ψ₀ 与两张表未改动，12 元协议作为 P_meta 展开进入第0层候选结构。
+  - 来源：`outputs/audit/meta-protocol-version-iteration-audit-20260709.md`
+  - 依赖：—；被引用：—
+- [点火增量层：结构材料，不是第二份证据](../../../reports/publication/song-huizong-taoism-point-fire-analysis.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-8730661cbc891161 / 点火增量层：结构材料，不是第二份证据
+  - 来源：`reports/publication/song-huizong-taoism-point-fire-analysis.md`
+  - 依赖：—；被引用：—
+- [点火增量必须回链产生它的外部材料、操作或反馈；不得把同一证据经过分析后的派生产物算作第二份独立证据。](../../../docs/publication/zhiyuan-writing-method.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-6ab58c6724728b42 / 点火增量必须回链产生它的外部材料、操作或反馈；不得把同一证据经过分析后的派生产物算作第二份独立证据。
+  - 来源：`docs/publication/zhiyuan-writing-method.md`
+  - 依赖：—；被引用：—
+- [点火怎样处理证据、反例、错误、失败、外部反馈和结论降级？](../../../docs/ai-assistant-usage-reference.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-fdaf3a0c8c8f4daa / 点火怎样处理证据、反例、错误、失败、外部反馈和结论降级？
+  - 来源：`docs/ai-assistant-usage-reference.md`
+  - 依赖：—；被引用：—
+- [点火框架只能提供统一问题的结构性解释路径](../../../data/foundation/arguments/arguments.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：NFC-1119e8808970fc89 / 点火框架只能提供统一问题的结构性解释路径
+  - 来源：`data/foundation/arguments/arguments.jsonl`
+  - 依赖：—；被引用：—
+- [点火框架可做结构分析，不替代工程验证](../../../data/foundation/arguments/arguments.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-cb7b03cb410c47b2 / 点火框架可做结构分析，不替代工程验证
+  - 来源：`data/foundation/arguments/arguments.jsonl`
+  - 依赖：—；被引用：—
+- [点火框架可分析失灵结构，不替代经济模型和数据](../../../data/foundation/arguments/arguments.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-699c5f80ecc69af7 / 点火框架可分析失灵结构，不替代经济模型和数据
+  - 来源：`data/foundation/arguments/arguments.jsonl`
+  - 依赖：—；被引用：—
+- [点火框架可分析泛化结构，需实验和理论验证](../../../data/foundation/arguments/arguments.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-49639216cc8cb43e / 点火框架可分析泛化结构，需实验和理论验证
+  - 来源：`data/foundation/arguments/arguments.jsonl`
+  - 依赖：—；被引用：—
+- [点火框架可分析涌现争议的结构，不能替代评测和实验](../../../data/foundation/arguments/arguments.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-da7876146c08c570 / 点火框架可分析涌现争议的结构，不能替代评测和实验
+  - 来源：`data/foundation/arguments/arguments.jsonl`
+  - 依赖：—；被引用：—
+- [点火框架可提供结构性解释，不提供经济学实证定论](../../../data/foundation/arguments/arguments.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-c0b9389d3ea6216f / 点火框架可提供结构性解释，不提供经济学实证定论
+  - 来源：`data/foundation/arguments/arguments.jsonl`
+  - 依赖：—；被引用：—
+- [点火框架可提供结构解释，不替代心理学实证](../../../data/foundation/arguments/arguments.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-84b2240c34fc4874 / 点火框架可提供结构解释，不替代心理学实证
+  - 来源：`data/foundation/arguments/arguments.jsonl`
+  - 依赖：—；被引用：—
+- [点火框架可提出结构假设，需社会科学实证验证](../../../data/foundation/arguments/arguments.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-9e5faca952a6735c / 点火框架可提出结构假设，需社会科学实证验证
+  - 来源：`data/foundation/arguments/arguments.jsonl`
+  - 依赖：—；被引用：—
+- [点火框架可重写问题结构，不替代社会科学理论和实证](../../../data/foundation/arguments/arguments.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-e6061df30ff8fe9b / 点火框架可重写问题结构，不替代社会科学理论和实证
+  - 来源：`data/foundation/arguments/arguments.jsonl`
+  - 依赖：—；被引用：—
+- [点火框架外部文献缺口与来源图谱 — 阶段进度（全阶段完成）](../../../data/external-research/088-PROGRESS.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-9217e03fa6284671 / 点火框架外部文献缺口与来源图谱 — 阶段进度（全阶段完成）
+  - 来源：`data/external-research/088-PROGRESS.md`
+  - 依赖：—；被引用：—
+- [点火框架暂不扩张材料库，而是优先审视自身结构、边界与证据协议，为后续更深的学科化整理做准备。](../../../CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-5fac5b6687a3b703 / 点火框架暂不扩张材料库，而是优先审视自身结构、边界与证据协议，为后续更深的学科化整理做准备。
+  - 来源：`CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [点火框架统一了四种基本力](../../../data/pending_claims.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：NFC-bec07e9d55217ae4 / 点火框架统一了四种基本力
+  - 来源：`data/pending_claims.csv`
+  - 依赖：—；被引用：—
+- [点火框架解决了 AI 对齐](../../../data/pending_claims.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：NFC-4893ab9e372c577c / 点火框架解决了 AI 对齐
+  - 来源：`data/pending_claims.csv`
+  - 依赖：—；被引用：—
+- [点火框架解决了 P vs NP](../../../data/pending_claims.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：NFC-63428fa6723c5130 / 点火框架解决了 P vs NP
+  - 来源：`data/pending_claims.csv`
+  - 依赖：—；被引用：—
+- [点火框架解决了市场失灵问题](../../../data/pending_claims.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：NFC-ec94a9e2c8e73089 / 点火框架解决了市场失灵问题
+  - 来源：`data/pending_claims.csv`
+  - 依赖：—；被引用：—
+- [点火框架通常只能达到 L1-L2，L3 需要框架内判定，L4-L5 需要外部临床证据和医学指南。](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-d4cc514450d16f91 / 点火框架通常只能达到 L1-L2，L3 需要框架内判定，L4-L5 需要外部临床证据和医学指南。
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [点火框架通常只能达到 L1-L2，L3 需要框架内判定，L4-L5 需要外部教育实验、长期追踪和个体评估。](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-c753feaece768f33 / 点火框架通常只能达到 L1-L2，L3 需要框架内判定，L4-L5 需要外部教育实验、长期追踪和个体评估。
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [点火框架通常只能达到 L1-L3，L4-L5 需要外部计量检验和反事实推断。](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：NFC-c70714ba22dc8bbd / 点火框架通常只能达到 L1-L3，L4-L5 需要外部计量检验和反事实推断。
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [点火框架通常只能达到 L1-L3，L4-L5 需要外部设计、测试、仿真、制造和安全验证。](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：NFC-5ab265e479f36318 / 点火框架通常只能达到 L1-L3，L4-L5 需要外部设计、测试、仿真、制造和安全验证。
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [点火框架通常只能达到 L1-L3，L4-L5 需要外部调查、统计、田野、实验和反事实识别。](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-e38495390dda9106 / 点火框架通常只能达到 L1-L3，L4-L5 需要外部调查、统计、田野、实验和反事实识别。
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [点火框架预测或解释了具体金融危机](../../../data/pending_claims.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-a07ec973a0797bdc / 点火框架预测或解释了具体金融危机
+  - 来源：`data/pending_claims.csv`
+  - 依赖：—；被引用：—
+- [点火风险：** L0 来源身份丢失，L1 证据语气改变，L6 作者声音被同质化。](../../../docs/language-thought/dimensional-basis.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-cd109c40a0e10bef / 点火风险：** L0 来源身份丢失，L1 证据语气改变，L6 作者声音被同质化。
+  - 来源：`docs/language-thought/dimensional-basis.md`
+  - 依赖：—；被引用：—
+- [状态**: MAX_ADJUDICATION_COMPLETE_ARCHITECTURE_TRUTH_FREEZE_CANDIDATE](../../../reports/foundation-architecture/084-architecture-truth-freeze-readiness.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-14034f9881225cea / 状态**: MAX_ADJUDICATION_COMPLETE_ARCHITECTURE_TRUTH_FREEZE_CANDIDATE
+  - 来源：`reports/foundation-architecture/084-architecture-truth-freeze-readiness.md`
   - 依赖：—；被引用：—

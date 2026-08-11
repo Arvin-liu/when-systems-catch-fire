@@ -1,0 +1,15 @@
+{
+  "_record": "execution-validation-result",
+  "_expect": "self_approved is a prohibited key in validation result",
+  "result_id": "val-X",
+  "packet_id": "pkt-X",
+  "checks": [
+    {
+      "command": "true",
+      "exit_code": 0,
+      "passed": true
+    }
+  ],
+  "all_passed": true,
+  "self_approved": true
+}

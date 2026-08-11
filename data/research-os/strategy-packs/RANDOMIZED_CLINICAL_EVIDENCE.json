@@ -1,0 +1,52 @@
+{
+  "schema_version": "research-os/0.1",
+  "registry": "strategy-pack",
+  "code": "RANDOMIZED_CLINICAL_EVIDENCE",
+  "title": "Randomized Clinical Evidence",
+  "description": "Assess randomized clinical trial evidence: locate the primary trial, access data, recompute effect estimates, and actively search for null/contradictory and adverse-effect evidence before any qualified claim.",
+  "required_obligations": [
+    "PRIMARY_SOURCE",
+    "FULL_TEXT_OR_METHODS_OR_SUPPLEMENT",
+    "DATA_OR_TABLE_ACCESS",
+    "NUMERIC_RECOMPUTATION",
+    "CONSTRUCT_AND_OUTCOME_DEFINITION",
+    "REPLICATION_NULL_CONTRADICTORY",
+    "CAUSAL_IDENTIFICATION",
+    "POPULATION_JURISDICTION_TIME_SCOPE",
+    "ADVERSE_EFFECT_COST_HARMED",
+    "EXTERNAL_HUMAN_OR_DOMAIN_REVIEW"
+  ],
+  "typical_gaps": [
+    "PRIMARY_SOURCE_MISSING",
+    "FULL_TEXT_MISSING",
+    "RAW_DATA_OR_CODE_MISSING",
+    "NUMERIC_CLAIM_NOT_RECOMPUTED",
+    "METHODS_OR_SUPPLEMENT_MISSING",
+    "NEGATIVE_EVIDENCE_NOT_SEARCHED",
+    "REPLICATION_STATUS_UNKNOWN",
+    "ADVERSARIAL_REVIEW_MISSING",
+    "POPULATION_SCOPE_MISMATCH",
+    "HUMAN_JUDGMENT_REQUIRED"
+  ],
+  "mandatory_calculations": [
+    "RECOMPUTE_RESULT",
+    "REPRODUCE_ANALYSIS",
+    "LOCATE_RAW_DATA"
+  ],
+  "common_failure_modes": [
+    {"gap_code": "NEGATIVE_EVIDENCE_NOT_SEARCHED", "note": "Only positive trial outcomes considered; unpublished nulls ignored."},
+    {"gap_code": "ADVERSARIAL_REVIEW_MISSING", "note": "No methodological critique or adverse-effect review performed."},
+    {"gap_code": "NUMERIC_CLAIM_NOT_RECOMPUTED", "note": "Effect estimate accepted without independent recomputation."},
+    {"gap_code": "POPULATION_SCOPE_MISMATCH", "note": "Trial population differs from the claimed population."}
+  ],
+  "max_claim_ceiling": "QUALIFIED",
+  "escalation_conditions": [
+    {"when": "candidate claim ceiling would exceed QUALIFIED", "trigger_gap": "CLAIM_EXCEEDS_EVIDENCE", "escalate_to": "GPT_OWNER"},
+    {"when": "high-stakes treatment or publication claim", "trigger_gap": "HUMAN_JUDGMENT_REQUIRED", "escalate_to": "GPT_OWNER"}
+  ],
+  "stop_criteria": [
+    {"condition": "effect recomputed, null/adverse evidence searched, obligations satisfied and adversarial review passed", "terminal_state": "CANDIDATE_COMPLETE", "note": "Qualified ceiling only after external review."},
+    {"condition": "no primary trial located or data inaccessible after search", "terminal_state": "INSUFFICIENT_EVIDENCE_COMPLETE", "note": "Reliable insufficient-evidence conclusion."},
+    {"condition": "negative/adverse evidence never searched", "terminal_state": "EVIDENCE_GATHERING", "note": "Must run SEEK_NULL_OR_CONTRADICTORY_RESULT before completion."}
+  ]
+}

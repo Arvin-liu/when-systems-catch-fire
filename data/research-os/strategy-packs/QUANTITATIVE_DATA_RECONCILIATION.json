@@ -1,0 +1,50 @@
+{
+  "schema_version": "research-os/0.1",
+  "registry": "strategy-pack",
+  "code": "QUANTITATIVE_DATA_RECONCILIATION",
+  "title": "Quantitative Data Reconciliation",
+  "description": "Reconcile reported quantitative results by locating primary sources, accessing raw data/code and independently recomputing the numbers. The pack enforces numeric independence before any assertive claim ceiling.",
+  "required_obligations": [
+    "PRIMARY_SOURCE",
+    "FULL_TEXT_OR_METHODS_OR_SUPPLEMENT",
+    "DATA_OR_TABLE_ACCESS",
+    "NUMERIC_RECOMPUTATION",
+    "CONSTRUCT_AND_OUTCOME_DEFINITION",
+    "SOURCE_INDEPENDENCE_CHECK",
+    "POPULATION_JURISDICTION_TIME_SCOPE",
+    "EXTERNAL_HUMAN_OR_DOMAIN_REVIEW"
+  ],
+  "typical_gaps": [
+    "PRIMARY_SOURCE_MISSING",
+    "FULL_TEXT_MISSING",
+    "RAW_DATA_OR_CODE_MISSING",
+    "NUMERIC_CLAIM_NOT_RECOMPUTED",
+    "OBJECT_OR_DENOMINATOR_MISMATCH",
+    "OUTCOME_DEFINITION_CONFLICT",
+    "SOURCE_DEPENDENCE_HIGH",
+    "POPULATION_SCOPE_MISMATCH"
+  ],
+  "mandatory_calculations": [
+    "RECOMPUTE_RESULT",
+    "REPRODUCE_ANALYSIS",
+    "LOCATE_RAW_DATA",
+    "LOCATE_ANALYSIS_CODE"
+  ],
+  "common_failure_modes": [
+    {"gap_code": "NUMERIC_CLAIM_NOT_RECOMPUTED", "note": "Numeric claim accepted from the source without independent recomputation."},
+    {"gap_code": "RAW_DATA_OR_CODE_MISSING", "note": "No raw data or analysis code located, so recomputation is impossible to verify."},
+    {"gap_code": "OBJECT_OR_DENOMINATOR_MISMATCH", "note": "Compared objects or denominators are not equivalent, producing a false reconciliation."},
+    {"gap_code": "SOURCE_DEPENDENCE_HIGH", "note": "Multiple 'independent' reports derive from one primary chain."}
+  ],
+  "max_claim_ceiling": "BOUNDED_STRONG",
+  "escalation_conditions": [
+    {"when": "candidate claim ceiling would exceed BOUNDED_STRONG", "trigger_gap": "CLAIM_EXCEEDS_EVIDENCE", "escalate_to": "GPT_OWNER"},
+    {"when": "high-stakes or publication claim pending", "trigger_gap": "HUMAN_JUDGMENT_REQUIRED", "escalate_to": "GPT_OWNER"},
+    {"when": "recomputation conflicts with source and cannot be resolved", "trigger_gap": "OBJECT_OR_DENOMINATOR_MISMATCH", "escalate_to": "GPT_OWNER"}
+  ],
+  "stop_criteria": [
+    {"condition": "numeric claim independently recomputed and matches source within declared tolerance; obligations satisfied", "terminal_state": "CANDIDATE_COMPLETE", "note": "Bounded strong result may be candidate only after external review."},
+    {"condition": "raw data/code inaccessible and no independent replication available after search", "terminal_state": "INSUFFICIENT_EVIDENCE_COMPLETE", "note": "Honest insufficient-evidence conclusion, not a forced match."},
+    {"condition": "negative or contradictory results never searched", "terminal_state": "EVIDENCE_GATHERING", "note": "Must run SEEK_NULL_OR_CONTRADICTORY_RESULT before completion."}
+  ]
+}

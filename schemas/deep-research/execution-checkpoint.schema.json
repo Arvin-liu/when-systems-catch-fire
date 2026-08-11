@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "deep-research/0.1/execution-checkpoint",
+  "title": "ExecutionCheckpoint",
+  "description": "Resumable progress checkpoint recording completed/pending steps and the precise state ref. Fails closed on episode_id + state_ref + state_ref_sha256.",
+  "type": "object",
+  "required": [
+    "checkpoint_id",
+    "episode_id",
+    "state_ref",
+    "state_ref_sha256"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "checkpoint_id": {
+      "type": "string"
+    },
+    "episode_id": {
+      "type": "string"
+    },
+    "step_index": {
+      "type": "integer"
+    },
+    "completed_steps": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "pending_steps": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "state_ref": {
+      "type": "string"
+    },
+    "state_ref_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "IN_PROGRESS",
+        "PAUSED_RESUMABLE",
+        "COMPLETED"
+      ]
+    },
+    "taken_at": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}

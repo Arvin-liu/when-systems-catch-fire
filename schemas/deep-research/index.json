@@ -1,0 +1,27 @@
+{
+  "version": "deep-research/0.1",
+  "records": [
+    "approval-request",
+    "claim-evidence-record",
+    "evidence-obligation",
+    "execution-checkpoint",
+    "execution-lease",
+    "execution-packet",
+    "execution-validation-result",
+    "executor-capability-declaration",
+    "executor-observation",
+    "research-action",
+    "research-brief",
+    "research-campaign",
+    "research-episode-result",
+    "research-plan",
+    "research-queue-item",
+    "research-sufficiency-decision",
+    "research-topic-candidate",
+    "research-trace-event",
+    "resume-capsule",
+    "runtime-telemetry",
+    "source-record"
+  ],
+  "generated_by": "tools/deep_research/generate_schemas.py"
+}

@@ -1,0 +1,14 @@
+{
+  "_record": "executor-observation",
+  "_expect": "round_complete is a prohibited key",
+  "observation_id": "obs-Y",
+  "action_id": "act-Y",
+  "observations": [],
+  "source_identities": [],
+  "access_level": "DISCOVERED",
+  "calculation_result": null,
+  "errors": [],
+  "provenance": [],
+  "timestamps": {},
+  "round_complete": true
+}

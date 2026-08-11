@@ -5,23 +5,24 @@
 索引按固定 500 条分片，避免单页过大而无法在 GitHub 渲染。分片连续覆盖本主题主归属资产，未按重要性删减。
 
 - [第 001 片](./mathematics/part-001.md)：1—500；"""Build the IGNITION-20260709-075 math-foundation audit artifacts. → ## 关联函数 / Related Functions
-- [第 002 片](./mathematics/part-002.md)：501—1000；## 关联函数 / Related Functions → /Users/zhiyuan/我的笔记/统一函数总表/0287-D251-维度-容斥稳定性函数.md
-- [第 003 片](./mathematics/part-003.md)：1001—1500；/Users/zhiyuan/我的笔记/统一函数总表/0288-D252-社会学容斥加速函数.md → \[C-0756｜青蒿素从《肘后备急方》提炼\](../../统一案例总表/0751-C-0756-青蒿素从《肘后备急方》提炼.md)（原笔记编号：C576-4）
-- [第 004 片](./mathematics/part-004.md)：1501—2000；\[C-0757｜《写作是门手艺》段落控制≤10行\](../../统一案例总表/0752-C-0757-《写作是门手艺》段落控制≤10行.md)（原笔记编号：C577-1） → Boundary negative example; not a technical quantum information proof.
-- [第 005 片](./mathematics/part-005.md)：2001—2500；Boundary: this is not a complete cosmological network and does not claim to unify stellar physics, thermodynamics, and l → Do not count the 12 meta-protocols as functions or the 64 combinations as proofs.
-- [第 006 片](./mathematics/part-006.md)：2501—3000；Do not infer universal impossibility from one model failure, call analogy an isomorphism without the required mapping pr → If upstream objects D_{D222} exist, compose F_{D222}=N(⊕_{g∈D_{D222}} g); otherwise treat F_{D222} as an axiom seed.
-- [第 007 片](./mathematics/part-007.md)：3001—3500；If upstream objects D_{D223} exist, compose F_{D223}=N(⊕_{g∈D_{D223}} g); otherwise treat F_{D223} as an axiom seed. → link: "统一函数总表/0596-D586-独特赛道选择.md"
-- [第 008 片](./mathematics/part-008.md)：3501—4000；link: "统一函数总表/0597-D587-学科理论核抽取函数.md" → proof_status="UNPROVED_PROPOSITION",
-- [第 009 片](./mathematics/part-009.md)：4001—4500；Proof（34条）**：低优先 — 形式化证明（除 P1 外） → title: "Φ跨域统一定理（D224升级）"
-- [第 010 片](./mathematics/part-010.md)：4501—5000；title: "Φ近似阶数选择函数" → title: "逃逸速度-确定性权衡函数"
-- [第 011 片](./mathematics/part-011.md)：5001—5500；title: "逆Weibull寿命验证函数" → Within the source-defined scope, 符号-语义带宽 is adjudicated as RELATION: 符号-语义带宽，B_total = B_symbolic + B_semantic。. This is
-- [第 012 片](./mathematics/part-012.md)：5501—6000；Within the source-defined scope, 素数对差分函数 is adjudicated as RELATION: ∀k∈ℕ⁺，x>e^(1.514k)时熵跃迁，∃∞{p, p+2k}∈ℙ². This is a mo → \| \[D591\]( ) \| \[尺度桥接函数\]( ) \| F_scale_bridge=MicroMechanism × MesoStructure ×
-- [第 013 片](./mathematics/part-013.md)：6001—6500；\| \[D594\]( ) \| \[学科点火指数\]( ) \| Ignition_d=C_d × M_d × I_d × L_d × G_d × P_d × Q → 中文：CAI进入同构类 — CAI获得Ψ>0后自动进入类I同构类，与人类-AI数学等价。核心函数：\[D73\](architecture_governance/part-014.md)：6501—7000；中文：classify_A(p) in {provable, refutable, independent, underdetermined}。给定公理系统 A 和命题 p，若 A proves p 或 A proves not-p 则可收 → 乘法最优生存策略函数
-- [第 015 片](./mathematics/part-015.md)：7001—7500；乘法系统生存域函数→578案例验证。 → 从这条案例看，中文：案例说明：可选集双向动力学 English: Rule-based English rendering pending human… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
-- [第 016 片](./mathematics/part-016.md)：7501—8000；从这条案例看，中文：案例说明：合并中→σ偏离√e→核心更分散→与观测一致 关键发现：合并中→σ偏离√e→核心更分散→与观测一致 English: Rul… 更像是在验证“退出权、认同和函数映射”之间的对应关系。 → 关键发现：全球公共债务作为系统熵值，AI投资作为熵引导的出口——这是熵引导函数在国际宏观域的完美验证。
-- [第 017 片](./mathematics/part-017.md)：8001—8500；关键发现：公理化体系的外层补齐本身就是一个自举循环——从不足的数据出发，通过外部碰撞补全内容，再验证收敛。这与点火框架的自举循环机制完全同构。 → 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0208-C-208-数学不好.md`
-- [第 018 片](./mathematics/part-018.md)：8501—9000；原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0213-C-213-数学不好.md` → 提议者是否有意识，二值变量。不可推导，作为框架起点。
-- [第 019 片](./mathematics/part-019.md)：9001—9500；提议者是否有意识，二值变量。不可推导，作为框架起点。 **扩展注释 / Extended Annotation** → 植物意识函数 **扩展注释 / Extended Annotation**
-- [第 020 片](./mathematics/part-020.md)：9501—10000；模板通过、CI 绿色或自动评分：不得表述为文学质量证明。 → 统一函数总表/0134-D95-AI中间层调度.md
-- [第 021 片](./mathematics/part-021.md)：10001—10500；统一函数总表/0135-D96-三层结构必然性.md → 统一相变框架
-- [第 022 片](./mathematics/part-022.md)：10501—10987；统一相变框架→五个相变统一为同一相变的五个投影。 → （函数表版本、案例表版本、P1 数据版本、是否校验通过）
+- [第 002 片](./mathematics/part-002.md)：501—1000；## 关联函数 / Related Functions → /Users/zhiyuan/我的笔记/统一函数总表/0268-D232-信息守恒-衰减悖论与黑洞.md
+- [第 003 片](./mathematics/part-003.md)：1001—1500；/Users/zhiyuan/我的笔记/统一函数总表/0269-D233-Shannon-Fisher跷跷板定理.md → \[C-0737｜安然公司\](../../统一案例总表/0732-C-0737-安然公司.md)（原笔记编号：C572-1）
+- [第 004 片](./mathematics/part-004.md)：1501—2000；\[C-0738｜美国禁酒令\](../../统一案例总表/0733-C-0738-美国禁酒令.md)（原笔记编号：C572-2） → asset bridge audit: IMPORTABLE_NOW=7 (meta_function/psi0_definition), NEEDS_MANUAL_SPEC=19 (theorem_function), OUT_OF_SC
+- [第 005 片](./mathematics/part-005.md)：2001—2500；Assuming finite second moments for the random scale variables is presented as a more easily checked sufficient condition → def test_schemas_are_valid_draft202012(self):
+- [第 006 片](./mathematics/part-006.md)：2501—3000；def test_temporally_valid_but_topologically_disconnected_sequence_is_not_graph_path(): → If upstream objects D_{D18} exist, compose F_{D18}=N(⊕_{g∈D_{D18}} g); otherwise treat F_{D18} as an axiom seed.
+- [第 007 片](./mathematics/part-007.md)：3001—3500；If upstream objects D_{D190} exist, compose F_{D190}=N(⊕_{g∈D_{D190}} g); otherwise treat F_{D190} as an axiom seed. → link: "统一函数总表/0555-T56-演化分歧函数.md"
+- [第 008 片](./mathematics/part-008.md)：3501—4000；link: "统一函数总表/0556-T57-认知肌肉训练函数.md" → proof(p) := ∃sequence(s_1, s_2, ..., s_n), s_n = p ∧ ∀i, s_{i+1} ⊢ s_i（证明序列）
+- [第 009 片](./mathematics/part-009.md)：4001—4500；proof. A later same-number continuation absorbs R2 results and performs final → title: "D158预测失效阈值函数"
+- [第 010 片](./mathematics/part-010.md)：4501—5000；title: "d_opt-σ_opt平衡稳定性函数" → title: "距离衰减统一函数"
+- [第 011 片](./mathematics/part-011.md)：5001—5500；title: "距离衰减统一函数" → Within the source-defined scope, 民事保护,各维度退出权的乘积 is adjudicated as RELATION: 民事保护，各维度退出权的乘积。. This is a model-internal co
+- [第 012 片](./mathematics/part-012.md)：5501—6000；Within the source-defined scope, 法条净效应函数 is adjudicated as RELATION: 法条净效应，遮蔽模糊、退出成本增益、法条刚性的平衡。. This is a model-interna → \| \[D396\]( ) \| \[延迟临界-不可逆点统一函数\]( ) \| F_{D396}(x) := F_{D396}: X_
+- [第 013 片](./mathematics/part-013.md)：6001—6500；\| \[D397\]( ) \| \[两步策略最优性证明函数\]( ) \| F_{D397}(x) := M14的D280两步策略是最小化T_ → 两个反向单调函数相乘必然生成倒U型
+- [第 014 片](./mathematics/part-014.md)：6501—7000；两个反向单调函数相乘必然生成倒U型 → 中文：退出隧穿验证 — 朝鲜脱北者：C_exit≈∞（地理+政治+身份三维锁定），经典P_exit≈0，但实际发生。隧穿路径：边境信息泄漏（降低势垒宽度）+贿赂守卫（局部降低C_exit）+外部接应（提供ε_eff脉冲）。核心函数：\[D12
+- [第 015 片](./mathematics/part-015.md)：7001—7500；中文：退相干-退化统一验证 — 8维乘法系统：纯Fisher退化（H=0）时Γ=0.3/年，纯退相干（ε远离门槛）时Γ=0.2/年，两者叠加Γ=0.5/年。A_Fisher衰减速率与Γ_unified精确匹配。核心函数：\[D128\](architecture_governance/part-016.md)：7501—8000；从这条案例看，中文：案例说明：公民有真实退出权，但认同建在部分应约者身上（政治极化） 关键发现：第5步跑通后在退化 English: Rule-base… 更像是在验证“退出权、认同和函数映射”之间的对应关系。 → 免疫消耗-传染临界联合函数
+- [第 017 片](./mathematics/part-017.md)：8001—8500；全球公共债务作为系统熵值，AI投资作为熵引导的出口——这是熵引导函数在国际宏观域的完美验证。 → 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0506-D508-退出权时变空间函数.md`
+- [第 018 片](./mathematics/part-018.md)：8501—9000；原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0507-D509-退出权共振函数.md` → 把历史因果写成单因决定论（应写成多因结构）
+- [第 019 片](./mathematics/part-019.md)：9001—9500；把因果、自举、同构、元层、哥德尔不完备性、元协议与证据强度合成总分。 → 条件：所有普遍性主张保留 pending（E1–E6）；不把个人成功当因果证明；不提交访谈原文。
+- [第 020 片](./mathematics/part-020.md)：9501—10000；条保留为未证明形式命题 → 统一函数总表/0085-D36-逆Weibull寿命验证函数.md
+- [第 021 片](./mathematics/part-021.md)：10001—10500；统一函数总表/0086-D37-点火对冲函数.md → 统一函数总表/0582-D572-退出权验证.md
+- [第 022 片](./mathematics/part-022.md)：10501—11000；统一函数总表/0583-D573-财务决策不完备性.md → 验证 / Verification**
+- [第 023 片](./mathematics/part-023.md)：11001—11036；验证器（validate_formal_protocol.py）读取的机器字段（dimension/examples/role_in_P_meta/relation_to_Psi0）与 020 Schema（formal-protocol- → （函数表版本、案例表版本、P1 数据版本、是否校验通过）

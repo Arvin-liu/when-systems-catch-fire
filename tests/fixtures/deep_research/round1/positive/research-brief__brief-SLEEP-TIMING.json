@@ -1,0 +1,24 @@
+{
+  "brief_id": "brief-SLEEP-TIMING",
+  "question_version": "v1",
+  "question": "What is the optimal sleep-timing window for adult sustained cognitive recovery?",
+  "scope": {
+    "population": "healthy adults 18-65",
+    "object": "sleep onset/offset timing relative to circadian markers",
+    "timeframe": "2020-2026",
+    "outcomes": [
+      "cognitive recovery",
+      "next-day alertness"
+    ],
+    "prohibited_overreach": [
+      "mortality claims",
+      "clinical treatment guidance"
+    ]
+  },
+  "strategy_pack": "sleep-timing-v1",
+  "frozen": true,
+  "source_family_priorities": [
+    "RCT",
+    "cohort"
+  ]
+}

@@ -25,6 +25,10 @@
 |`docs/architecture/interactive-system-map.md`|8|0|否|
 |`docs/architecture/language-thought-logic-plane.md`|13|0|否|
 |`docs/architecture/typed-change-propagation.md`|10|0|否|
+|`docs/deep-research/ARCHITECTURE.md`|12|0|否|
+|`docs/deep-research/EVALUATION.md`|8|0|否|
+|`docs/deep-research/OPERATOR-GUIDE.md`|4|0|否|
+|`docs/deep-research/STOP-ALGORITHM.md`|18|0|否|
 |`docs/editorial/MANIFEST.md`|0|0|是|
 |`docs/editorial/QUALITY-REPORT.md`|0|0|是|
 |`docs/editorial/README.md`|0|0|是|
@@ -74,6 +78,14 @@
 |`docs/publication/zhiyuan-writing-examples.md`|28|0|否|
 |`docs/publication/zhiyuan-writing-method.md`|65|0|否|
 |`docs/publication/zhiyuan-writing-showcase.md`|8|0|否|
+|`docs/research-os/EXISTING-CAPABILITY-MAP.md`|13|0|否|
+|`docs/research-os/GPT-OWNER-REVIEW-PACKET.md`|6|0|否|
+|`docs/research-os/OPERATING-GUIDE.md`|14|0|否|
+|`docs/research-os/R1-INCIDENT-REPLAY.md`|16|0|否|
+|`docs/research-os/R2-AI-CODING-LOOP.md`|14|0|否|
+|`docs/research-os/RESEARCH-OS-ARCHITECTURE.md`|28|0|否|
+|`docs/research-os/REVIEW-GATES.md`|14|0|否|
+|`docs/research-os/queue-runtime/ROUND-0-CHECKPOINT.md`|15|0|否|
 |`llms.txt`|46|0|否|
 |`reports/foundation-architecture/101-human-readable-surfaces-self-correction-closeout.md`|11|0|否|
 |`reports/operations/102-knowledge-experience-audit.md`|3|0|否|

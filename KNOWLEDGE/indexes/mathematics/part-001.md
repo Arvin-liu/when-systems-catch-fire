@@ -144,6 +144,16 @@
   - 可搜索名称：NFC-090ac6aab5d89ea8 / "blocked_by_disposition": row\["final_disposition"\] not in {"ACCEPTED_AS_PROVED_MATHEMATICAL_RESULT", "ACCEPTED_AS_ESTABL
   - 来源：`tools/foundation/adjudicate_nonfunction_claims.py`
   - 依赖：—；被引用：—
+- ["capability_proof": EXECUTOR_PROPOSED,](../../../tools/deep_research/records.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-c20c8ff19a0c017e / "capability_proof": EXECUTOR_PROPOSED,
+  - 来源：`tools/deep_research/records.py`
+  - 依赖：—；被引用：—
+- ["capability_proof": {"type": "array", "items": {"type": "object", "additionalProperties": True}},](../../../tools/deep_research/generate_schemas.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-f85513a79f74f505 / "capability_proof": {"type": "array", "items": {"type": "object", "additionalProperties": True}},
+  - 来源：`tools/deep_research/generate_schemas.py`
+  - 依赖：—；被引用：—
 - ["case_index": repo / "统一案例总表/INDEX.md",](../../../inputs/020/validate_formal_protocol.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-97aaf65f37c9f441 / "case_index": repo / "统一案例总表/INDEX.md",
@@ -284,6 +294,11 @@
   - 可搜索名称：NFC-afb432e88cab3d36 / "dependencies", "proof_artifacts", "related_cases", "evidence_status", "semantic_status", "formal_status",
   - 来源：`tools/foundation/adjudicate_core.py`
   - 依赖：—；被引用：—
+- ["description": "Executor return under contract. Reuses the Research OS executor-return contract: required fields plus pr](../../../tools/deep_research/generate_schemas.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-ca2a584f85029177 / "description": "Executor return under contract. Reuses the Research OS executor-return contract: required fields plus pr
+  - 来源：`tools/deep_research/generate_schemas.py`
+  - 依赖：—；被引用：—
 - ["docs/operations/lifecycle-readme.md",](../../../tools/foundation/adjudicate_function_assets.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
   - 可搜索名称：NFC-1ba5118093fe48bc / "docs/operations/lifecycle-readme.md",
@@ -318,6 +333,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-9b32d8916504044b / "equivalence":"NOT_EQUIVALENT_WEAKENED_LEMMA","reason":"Legacy text is domain-unspecified and speaks of any factor in th
   - 来源：`tools/foundation/verify_079.py`
+  - 依赖：—；被引用：—
+- ["errors": \[\], "provenance": \[\], "timestamps": {}, "self_approved": True}),](../../../tools/deep_research/generate_negative_fixtures.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-b6d6a12c88eeb966 / "errors": \[\], "provenance": \[\], "timestamps": {}, "self_approved": True}),
+  - 来源：`tools/deep_research/generate_negative_fixtures.py`
   - 依赖：—；被引用：—
 - ["evidence_status": {"enum": \["SOURCE_ONLY", "CASE_SUPPORTED", "MULTI_CASE_SUPPORTED", "EMPIRICALLY_TESTED", "EXTERNALLY_](../../../tools/math_foundation_audit.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -359,6 +379,11 @@
   - 可搜索名称：NFC-15a62b30859102ea / "EXTERNAL_THEOREM_REFERENCE": {"D205"},
   - 来源：`tools/foundation/verify_079.py`
   - 依赖：D205；被引用：—
+- ["final_gate": "26 CI-ordered steps under python 3.12.13, check-only, no regeneration: TOTAL_FAILS=0 (foundation 14 steps](../../../ROUND-LEDGER.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-2462d2c70f90bf0c / "final_gate": "26 CI-ordered steps under python 3.12.13, check-only, no regeneration: TOTAL_FAILS=0 (foundation 14 steps
+  - 来源：`ROUND-LEDGER.jsonl`
+  - 依赖：—；被引用：—
 - ["first_appearance_rule": "Earliest path occurrence in the locked source commit ancestry; no unproved rename inference.",](../../../tools/foundation/adjudicate_function_assets.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-58e3582cafbdf189 / "first_appearance_rule": "Earliest path occurrence in the locked source commit ancestry; no unproved rename inference.",
@@ -579,6 +604,11 @@
   - 可搜索名称：NFC-09869efa5b9926c9 / "lifecycle_terminal_excluded": \[c\["canonical_id"\] for c in ranked
   - 来源：`tools/iteration_planner/planner.py`
   - 依赖：—；被引用：—
+- ["lifecycle_tests": "PASS",](../../../ROUND-LEDGER.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-0538b20e5b042f04 / "lifecycle_tests": "PASS",
+  - 来源：`ROUND-LEDGER.jsonl`
+  - 依赖：—；被引用：—
 - ["limitations": "This is a conservative navigation summary, not a new adjudication, proof, empirical verification or life](../../../tools/governance/build_human_results.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-f1bc17014868c1c9 / "limitations": "This is a conservative navigation summary, not a new adjudication, proof, empirical verification or life
@@ -619,6 +649,11 @@
   - 可搜索名称：NFC-dd8ccd0cbdc3feb4 / "mathematical_maturity": row\["mathematical_maturity"\], "external_evidence_maturity": row\["external_evidence_maturity"\],
   - 来源：`tools/foundation/adjudicate_nonfunction_claims.py`
   - 依赖：—；被引用：—
+- ["mechanism": "language-thought logic plane",](../../../tools/research_os/adapters.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-3316a40797094d61 / "mechanism": "language-thought logic plane",
+  - 来源：`tools/research_os/adapters.py`
+  - 依赖：—；被引用：—
 - ["MECHANISM_MODEL": "PARAMETRIC_MATHEMATICAL_MODEL",](../../../tools/foundation/adjudicate_function_assets.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-83943e63718bd588 / "MECHANISM_MODEL": "PARAMETRIC_MATHEMATICAL_MODEL",
@@ -633,6 +668,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-b86515c0dba3a1cc / "model_or_theorem_status": obj.get("claim_type") if obj else "UNRESOLVED",
   - 来源：`tools/foundation/adjudicate_function_assets.py`
+  - 依赖：—；被引用：—
+- ["N5": {"name": "Interpreter", "role": "用 artifact 与输入执行函数", "schema": "n5-interpreter-schema.json"},](../../../tools/research_os/adapters.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：NFC-76bcd90661a75304 / "N5": {"name": "Interpreter", "role": "用 artifact 与输入执行函数", "schema": "n5-interpreter-schema.json"},
+  - 来源：`tools/research_os/adapters.py`
   - 依赖：—；被引用：—
 - ["name": "乘法临界漂移函数族",](../../../data/function_dependency.json)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -704,6 +744,11 @@
   - 可搜索名称：NFC-dcd667a3d8323cf1 / "no_totality_proof": \[("python3", "tools/validate_human_front_door.py")\],
   - 来源：`tools/operations/generate_component_profiles.py`
   - 依赖：—；被引用：—
+- ["not": {"anyOf": \[{"required": \["self_approved"\]}\]}](../../../tools/deep_research/generate_schemas.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-1cf7c785d5c6fffa / "not": {"anyOf": \[{"required": \["self_approved"\]}\]}
+  - 来源：`tools/deep_research/generate_schemas.py`
+  - 依赖：—；被引用：—
 - ["note": "Verified via git diff: no changes to 统一函数总表/ directory"}](../../../data/external-research/106-105-correction/106-validator.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-2135e5407310efa0 / "note": "Verified via git diff: no changes to 统一函数总表/ directory"}
@@ -743,6 +788,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-f592c5ae30b64f02 / "open_proof_obligations": len(proof_obligations),
   - 来源：`tools/foundation/adjudicate_function_assets.py`
+  - 依赖：—；被引用：—
+- ["other workflows at 16f3d83b: repository-path-accounting-preflight PASS, iteration-lifecycle-validation PASS, iteration-](../../../ROUND-LEDGER.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-93c7e8afa3bdbd70 / "other workflows at 16f3d83b: repository-path-accounting-preflight PASS, iteration-lifecycle-validation PASS, iteration-
+  - 来源：`ROUND-LEDGER.jsonl`
   - 依赖：—；被引用：—
 - ["P vs NP 问题未被证明"（这是数学界的共识，点火框架只是重述）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -969,6 +1019,11 @@
   - 可搜索名称：NFC-fadd8f9feb98f59d / "RETAINED_AS_TOY_MODEL": "Toy-model result only; no inference to nature, society or universal ontology.",
   - 来源：`tools/foundation/adjudicate_nonfunction_claims.py`
   - 依赖：—；被引用：—
+- ["root_cause_final": "content-after-generation: each pass committed ROUND-LEDGER.jsonl / ROUND-0-CHECKPOINT.md updates (a](../../../ROUND-LEDGER.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-1df060f92bce8792 / "root_cause_final": "content-after-generation: each pass committed ROUND-LEDGER.jsonl / ROUND-0-CHECKPOINT.md updates (a
+  - 来源：`ROUND-LEDGER.jsonl`
+  - 依赖：—；被引用：—
 - ["schemas/operations/lifecycle-event.schema.json",](../../../tools/foundation/adjudicate_nonfunction_claims.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
   - 可搜索名称：NFC-66f2a793e89ef63e / "schemas/operations/lifecycle-event.schema.json",
@@ -998,6 +1053,26 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-a62a2d37ad0a213b / "sections": \["1 Introduction", "2 Refinement Types", "3 Refinement Reflection", "4 Proof by Logical Evaluation", "5 Eval
   - 来源：`scripts/external-research/121_generate_evidence_cards.py`
+  - 依赖：—；被引用：—
+- ["self_approved is a prohibited key",](../../../tools/deep_research/generate_negative_fixtures.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-3e2ffa419cfd9515 / "self_approved is a prohibited key",
+  - 来源：`tools/deep_research/generate_negative_fixtures.py`
+  - 依赖：—；被引用：—
+- ["self_approved",](../../../tools/research_os/executor_contract.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-837aeb6ce41eef15 / "self_approved",
+  - 来源：`tools/research_os/executor_contract.py`
+  - 依赖：—；被引用：—
+- ["self_approved": PROHIBITED,](../../../tools/deep_research/records.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-43e096b310989471 / "self_approved": PROHIBITED,
+  - 来源：`tools/deep_research/records.py`
+  - 依赖：—；被引用：—
+- ["self_approved": {"type": "null"},](../../../tools/deep_research/generate_schemas.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-e0d3770975204c61 / "self_approved": {"type": "null"},
+  - 来源：`tools/deep_research/generate_schemas.py`
   - 依赖：—；被引用：—
 - ["semantic_adjudication":"function_identity_and_nonfunction_claim_registries_closed_by_disposition_or_explicit_quarantine](../../../tools/foundation/migrate_legacy.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -1083,6 +1158,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-e84e7237c1e15809 / "This rendering is a derived view. It is not causal proof and does not replace Foundation.",
   - 来源：`tools/causal_fabric/renderer.py`
+  - 依赖：—；被引用：—
+- ["TIMESTAMP_BATCH_NOT_PROOF_OF_READING",](../../../tools/research_os/diagnosis.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-44cb974dfbddf121 / "TIMESTAMP_BATCH_NOT_PROOF_OF_READING",
+  - 来源：`tools/research_os/diagnosis.py`
   - 依赖：—；被引用：—
 - ["title": "Core proof and countermodel report",](../../../analysis/corpus-relation/corpus_relation_graph.json)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -1499,6 +1579,11 @@
   - 可搜索名称：NFC-979e091f4c7707a0 / "unresolved_questions": \[\] if oid == "T2" else obligations_for(oid, object_type, claim_type),
   - 来源：`tools/foundation/adjudicate_core.py`
   - 依赖：T2；被引用：—
+- ["verification_under_3.12.13": "CI-step-order replay all exit 0: adjudicate_core, migrate --check, validate_foundation, c](../../../ROUND-LEDGER.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-fd829d89a8ae55cf / "verification_under_3.12.13": "CI-step-order replay all exit 0: adjudicate_core, migrate --check, validate_foundation, c
+  - 来源：`ROUND-LEDGER.jsonl`
+  - 依赖：—；被引用：—
 - ["what_the_paper_does_not_support": "As a review, it does not introduce new formal composition operators. It does not sol](../../../scripts/external-research/121_generate_evidence_cards.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-79a7731c68cd062c / "what_the_paper_does_not_support": "As a review, it does not introduce new formal composition operators. It does not sol
@@ -2418,89 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-9343BA50DCFF6DE6 / ## 关联函数 / Related Functions / IMPLICIT-9343BA50DCFF6DE6 / IMPLICIT-0026301F130FD562
   - 来源：`统一案例总表/0792-C-0797-哥德尔不完备性与形式系统边界.md`
-  - 依赖：—；被引用：—
-- [## 关联函数 / Related Functions](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0686-C-0691-%E5%BC%A0%E7%9B%8A%E5%94%90%E7%AA%81%E7%A0%B4%E5%8D%8A%E6%95%B0%E9%9A%9C%E7%A2%8D.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-948B341D3D5AD0EA / ## 关联函数 / Related Functions / IMPLICIT-948B341D3D5AD0EA / IMPLICIT-0026301F130FD562
-  - 来源：`统一案例总表/0686-C-0691-张益唐突破半数障碍.md`
-  - 依赖：—；被引用：—
-- [## 关联函数 / Related Functions](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0688-C-0693-%E5%AD%AA%E7%94%9F%E7%B4%A0%E6%95%B0%E9%97%AE%E9%A2%98%E8%BD%AC%E6%8D%A2.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-95373A07149F87CB / ## 关联函数 / Related Functions / IMPLICIT-95373A07149F87CB / IMPLICIT-0026301F130FD562
-  - 来源：`统一案例总表/0688-C-0693-孪生素数问题转换.md`
-  - 依赖：—；被引用：—
-- [## 关联函数 / Related Functions](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0746-C-0751-%E5%AE%89%E7%84%B6%E5%85%AC%E5%8F%B8.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-96B0D98EAD8A497C / ## 关联函数 / Related Functions / IMPLICIT-96B0D98EAD8A497C / IMPLICIT-0026301F130FD562
-  - 来源：`统一案例总表/0746-C-0751-安然公司.md`
-  - 依赖：—；被引用：—
-- [## 关联函数 / Related Functions](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0678-C-0683-Erd%C5%91s%E2%80%93Graham%E7%8C%9C%E6%83%B3.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-98590738D8F27EE7 / ## 关联函数 / Related Functions / IMPLICIT-98590738D8F27EE7 / IMPLICIT-0026301F130FD562
-  - 来源：`统一案例总表/0678-C-0683-Erdős–Graham猜想.md`
-  - 依赖：—；被引用：—
-- [## 关联函数 / Related Functions](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0726-C-0731-%E6%AF%95%E5%8A%A0%E7%B4%A2%E7%AB%8B%E4%BD%93%E4%B8%BB%E4%B9%89%C3%97%E4%B8%AD%E5%9B%BD%E6%89%8B%E5%8D%B7%E6%B5%81%E5%8A%A8%E6%80%A7%E8%B7%A8%E5%9F%9F%E5%90%8C%E6%9E%84%E6%A1%88%E4%BE%8B.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-9C1BA92630BB400C / ## 关联函数 / Related Functions / IMPLICIT-9C1BA92630BB400C / IMPLICIT-0026301F130FD562
-  - 来源：`统一案例总表/0726-C-0731-毕加索立体主义×中国手卷流动性跨域同构案例.md`
-  - 依赖：—；被引用：—
-- [## 关联函数 / Related Functions](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0704-C-0709-%E7%A9%BA%E9%99%8DCEO%E5%A4%B1%E8%B4%A5%E6%9C%BA%E5%88%B6.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-A5154D2A83CC52FC / ## 关联函数 / Related Functions / IMPLICIT-A5154D2A83CC52FC / IMPLICIT-0026301F130FD562
-  - 来源：`统一案例总表/0704-C-0709-空降CEO失败机制.md`
-  - 依赖：—；被引用：—
-- [## 关联函数 / Related Functions](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0764-C-0769-%E3%80%8A%E5%86%99%E4%BD%9C%E6%98%AF%E9%97%A8%E6%89%8B%E8%89%BA%E3%80%8B%E6%AE%B5%E8%90%BD%E6%8E%A7%E5%88%B6%E2%89%A410%E8%A1%8C.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-A74DDB7F7587CB1B / ## 关联函数 / Related Functions / IMPLICIT-A74DDB7F7587CB1B / IMPLICIT-0026301F130FD562
-  - 来源：`统一案例总表/0764-C-0769-《写作是门手艺》段落控制≤10行.md`
-  - 依赖：—；被引用：—
-- [## 关联函数 / Related Functions](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0700-C-0705-%E5%8F%AF%E9%80%89%E9%9B%86%E5%8A%A8%E5%8A%9B%E5%AD%A6%C3%97%E5%95%86%E4%B8%9A%E6%A8%A1%E5%BC%8F.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-AB177EBEC1562BA2 / ## 关联函数 / Related Functions / IMPLICIT-AB177EBEC1562BA2 / IMPLICIT-0026301F130FD562
-  - 来源：`统一案例总表/0700-C-0705-可选集动力学×商业模式.md`
-  - 依赖：—；被引用：—
-- [## 关联函数 / Related Functions](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0781-C-0786-%E5%86%99%E5%9C%B0%E6%96%B9%E5%81%8F%E6%96%B9%E3%80%81%E9%A3%9F%E7%89%A9%E3%80%81%E6%89%8B%E8%89%BA.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-B0D36EDDAEC9534B / ## 关联函数 / Related Functions / IMPLICIT-B0D36EDDAEC9534B / IMPLICIT-0026301F130FD562
-  - 来源：`统一案例总表/0781-C-0786-写地方偏方、食物、手艺.md`
-  - 依赖：—；被引用：—
-- [## 关联函数 / Related Functions](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0685-C-0690-Invariant%20Subspace%E7%8C%9C%E6%83%B3.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-B22661C48C0A0950 / ## 关联函数 / Related Functions / IMPLICIT-B22661C48C0A0950 / IMPLICIT-0026301F130FD562
-  - 来源：`统一案例总表/0685-C-0690-Invariant Subspace猜想.md`
-  - 依赖：—；被引用：—
-- [## 关联函数 / Related Functions](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0672-C-0677-%E6%A2%85%E7%BA%B3%E5%BE%B7%E5%BF%AB%E9%80%9F%E7%BC%A9%E5%B0%8F%E9%97%B4%E9%9A%94.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-B2832092A1A6362E / ## 关联函数 / Related Functions / IMPLICIT-B2832092A1A6362E / IMPLICIT-0026301F130FD562
-  - 来源：`统一案例总表/0672-C-0677-梅纳德快速缩小间隔.md`
-  - 依赖：—；被引用：—
-- [## 关联函数 / Related Functions](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0674-C-0679-Willmore%E7%8C%9C%E6%83%B3.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-B36AB62D5C9C6E47 / ## 关联函数 / Related Functions / IMPLICIT-B36AB62D5C9C6E47 / IMPLICIT-0026301F130FD562
-  - 来源：`统一案例总表/0674-C-0679-Willmore猜想.md`
-  - 依赖：—；被引用：—
-- [## 关联函数 / Related Functions](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0743-C-0748-%E7%BE%8E%E5%9B%BD%E7%A6%81%E9%85%92%E4%BB%A4.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-B43339CBC8C1AB94 / ## 关联函数 / Related Functions / IMPLICIT-B43339CBC8C1AB94 / IMPLICIT-0026301F130FD562
-  - 来源：`统一案例总表/0743-C-0748-美国禁酒令.md`
-  - 依赖：—；被引用：—
-- [## 关联函数 / Related Functions](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0728-C-0733-%E8%84%B1%E4%B8%8D%E8%8A%B1%E4%B8%89%E5%8D%81%E5%B9%B4%E5%8F%AA%E9%9D%A0%E5%8A%B3%E5%8A%A8%E6%89%80%E5%BE%97.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-BB55E36C430FC0CD / ## 关联函数 / Related Functions / IMPLICIT-BB55E36C430FC0CD / IMPLICIT-0026301F130FD562
-  - 来源：`统一案例总表/0728-C-0733-脱不花三十年只靠劳动所得.md`
-  - 依赖：—；被引用：—
-- [## 关联函数 / Related Functions](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0694-C-0699-%E6%94%B6%E5%85%A5%E6%B5%81%E5%A4%9A%E5%85%83.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-BC769174AAEF1CDC / ## 关联函数 / Related Functions / IMPLICIT-BC769174AAEF1CDC / IMPLICIT-0026301F130FD562
-  - 来源：`统一案例总表/0694-C-0699-收入流多元.md`
-  - 依赖：—；被引用：—
-- [## 关联函数 / Related Functions](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0724-C-0729-%E4%B8%A4%E5%BC%A0%E8%A1%A8%E7%9F%A5%E8%AF%86%E5%BA%93DOCX%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-C0CEAEAE7232C3C1 / ## 关联函数 / Related Functions / IMPLICIT-C0CEAEAE7232C3C1 / IMPLICIT-0026301F130FD562
-  - 来源：`统一案例总表/0724-C-0729-两张表知识库DOCX文件管理.md`
-  - 依赖：—；被引用：—
-- [## 关联函数 / Related Functions](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0679-C-0684-Kesten%E7%8C%9C%E6%83%B3.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-C357E95C4F84B97B / ## 关联函数 / Related Functions / IMPLICIT-C357E95C4F84B97B / IMPLICIT-0026301F130FD562
-  - 来源：`统一案例总表/0679-C-0684-Kesten猜想.md`
   - 依赖：—；被引用：—

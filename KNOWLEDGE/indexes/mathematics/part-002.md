@@ -4,6 +4,91 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [## 关联函数 / Related Functions](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0686-C-0691-%E5%BC%A0%E7%9B%8A%E5%94%90%E7%AA%81%E7%A0%B4%E5%8D%8A%E6%95%B0%E9%9A%9C%E7%A2%8D.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-948B341D3D5AD0EA / ## 关联函数 / Related Functions / IMPLICIT-948B341D3D5AD0EA / IMPLICIT-0026301F130FD562
+  - 来源：`统一案例总表/0686-C-0691-张益唐突破半数障碍.md`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0688-C-0693-%E5%AD%AA%E7%94%9F%E7%B4%A0%E6%95%B0%E9%97%AE%E9%A2%98%E8%BD%AC%E6%8D%A2.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-95373A07149F87CB / ## 关联函数 / Related Functions / IMPLICIT-95373A07149F87CB / IMPLICIT-0026301F130FD562
+  - 来源：`统一案例总表/0688-C-0693-孪生素数问题转换.md`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0746-C-0751-%E5%AE%89%E7%84%B6%E5%85%AC%E5%8F%B8.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-96B0D98EAD8A497C / ## 关联函数 / Related Functions / IMPLICIT-96B0D98EAD8A497C / IMPLICIT-0026301F130FD562
+  - 来源：`统一案例总表/0746-C-0751-安然公司.md`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0678-C-0683-Erd%C5%91s%E2%80%93Graham%E7%8C%9C%E6%83%B3.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-98590738D8F27EE7 / ## 关联函数 / Related Functions / IMPLICIT-98590738D8F27EE7 / IMPLICIT-0026301F130FD562
+  - 来源：`统一案例总表/0678-C-0683-Erdős–Graham猜想.md`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0726-C-0731-%E6%AF%95%E5%8A%A0%E7%B4%A2%E7%AB%8B%E4%BD%93%E4%B8%BB%E4%B9%89%C3%97%E4%B8%AD%E5%9B%BD%E6%89%8B%E5%8D%B7%E6%B5%81%E5%8A%A8%E6%80%A7%E8%B7%A8%E5%9F%9F%E5%90%8C%E6%9E%84%E6%A1%88%E4%BE%8B.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-9C1BA92630BB400C / ## 关联函数 / Related Functions / IMPLICIT-9C1BA92630BB400C / IMPLICIT-0026301F130FD562
+  - 来源：`统一案例总表/0726-C-0731-毕加索立体主义×中国手卷流动性跨域同构案例.md`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0704-C-0709-%E7%A9%BA%E9%99%8DCEO%E5%A4%B1%E8%B4%A5%E6%9C%BA%E5%88%B6.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-A5154D2A83CC52FC / ## 关联函数 / Related Functions / IMPLICIT-A5154D2A83CC52FC / IMPLICIT-0026301F130FD562
+  - 来源：`统一案例总表/0704-C-0709-空降CEO失败机制.md`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0764-C-0769-%E3%80%8A%E5%86%99%E4%BD%9C%E6%98%AF%E9%97%A8%E6%89%8B%E8%89%BA%E3%80%8B%E6%AE%B5%E8%90%BD%E6%8E%A7%E5%88%B6%E2%89%A410%E8%A1%8C.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-A74DDB7F7587CB1B / ## 关联函数 / Related Functions / IMPLICIT-A74DDB7F7587CB1B / IMPLICIT-0026301F130FD562
+  - 来源：`统一案例总表/0764-C-0769-《写作是门手艺》段落控制≤10行.md`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0700-C-0705-%E5%8F%AF%E9%80%89%E9%9B%86%E5%8A%A8%E5%8A%9B%E5%AD%A6%C3%97%E5%95%86%E4%B8%9A%E6%A8%A1%E5%BC%8F.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-AB177EBEC1562BA2 / ## 关联函数 / Related Functions / IMPLICIT-AB177EBEC1562BA2 / IMPLICIT-0026301F130FD562
+  - 来源：`统一案例总表/0700-C-0705-可选集动力学×商业模式.md`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0781-C-0786-%E5%86%99%E5%9C%B0%E6%96%B9%E5%81%8F%E6%96%B9%E3%80%81%E9%A3%9F%E7%89%A9%E3%80%81%E6%89%8B%E8%89%BA.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-B0D36EDDAEC9534B / ## 关联函数 / Related Functions / IMPLICIT-B0D36EDDAEC9534B / IMPLICIT-0026301F130FD562
+  - 来源：`统一案例总表/0781-C-0786-写地方偏方、食物、手艺.md`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0685-C-0690-Invariant%20Subspace%E7%8C%9C%E6%83%B3.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-B22661C48C0A0950 / ## 关联函数 / Related Functions / IMPLICIT-B22661C48C0A0950 / IMPLICIT-0026301F130FD562
+  - 来源：`统一案例总表/0685-C-0690-Invariant Subspace猜想.md`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0672-C-0677-%E6%A2%85%E7%BA%B3%E5%BE%B7%E5%BF%AB%E9%80%9F%E7%BC%A9%E5%B0%8F%E9%97%B4%E9%9A%94.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-B2832092A1A6362E / ## 关联函数 / Related Functions / IMPLICIT-B2832092A1A6362E / IMPLICIT-0026301F130FD562
+  - 来源：`统一案例总表/0672-C-0677-梅纳德快速缩小间隔.md`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0674-C-0679-Willmore%E7%8C%9C%E6%83%B3.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-B36AB62D5C9C6E47 / ## 关联函数 / Related Functions / IMPLICIT-B36AB62D5C9C6E47 / IMPLICIT-0026301F130FD562
+  - 来源：`统一案例总表/0674-C-0679-Willmore猜想.md`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0743-C-0748-%E7%BE%8E%E5%9B%BD%E7%A6%81%E9%85%92%E4%BB%A4.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-B43339CBC8C1AB94 / ## 关联函数 / Related Functions / IMPLICIT-B43339CBC8C1AB94 / IMPLICIT-0026301F130FD562
+  - 来源：`统一案例总表/0743-C-0748-美国禁酒令.md`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0728-C-0733-%E8%84%B1%E4%B8%8D%E8%8A%B1%E4%B8%89%E5%8D%81%E5%B9%B4%E5%8F%AA%E9%9D%A0%E5%8A%B3%E5%8A%A8%E6%89%80%E5%BE%97.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-BB55E36C430FC0CD / ## 关联函数 / Related Functions / IMPLICIT-BB55E36C430FC0CD / IMPLICIT-0026301F130FD562
+  - 来源：`统一案例总表/0728-C-0733-脱不花三十年只靠劳动所得.md`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0694-C-0699-%E6%94%B6%E5%85%A5%E6%B5%81%E5%A4%9A%E5%85%83.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-BC769174AAEF1CDC / ## 关联函数 / Related Functions / IMPLICIT-BC769174AAEF1CDC / IMPLICIT-0026301F130FD562
+  - 来源：`统一案例总表/0694-C-0699-收入流多元.md`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0724-C-0729-%E4%B8%A4%E5%BC%A0%E8%A1%A8%E7%9F%A5%E8%AF%86%E5%BA%93DOCX%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-C0CEAEAE7232C3C1 / ## 关联函数 / Related Functions / IMPLICIT-C0CEAEAE7232C3C1 / IMPLICIT-0026301F130FD562
+  - 来源：`统一案例总表/0724-C-0729-两张表知识库DOCX文件管理.md`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0679-C-0684-Kesten%E7%8C%9C%E6%83%B3.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-C357E95C4F84B97B / ## 关联函数 / Related Functions / IMPLICIT-C357E95C4F84B97B / IMPLICIT-0026301F130FD562
+  - 来源：`统一案例总表/0679-C-0684-Kesten猜想.md`
+  - 依赖：—；被引用：—
 - [## 关联函数 / Related Functions](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0738-C-0743-%E5%AE%89%E7%84%B6%E5%85%AC%E5%8F%B8.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-C3A0CA2AD080115E / ## 关联函数 / Related Functions / IMPLICIT-C3A0CA2AD080115E / IMPLICIT-0026301F130FD562
@@ -1644,6 +1729,11 @@
   - 可搜索名称：NFC-1db46e202f9caf37 / ("docs/editorial/articles/005-description-is-not-proof-systems-representations.md",
   - 来源：`tools/propagation/generate_editorial_manifest.py`
   - 依赖：—；被引用：—
+- [("executor-observation-self-approved.json", "executor-observation",](../../../tools/deep_research/generate_negative_fixtures.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-9a6fcaed6b52eb31 / ("executor-observation-self-approved.json", "executor-observation",
+  - 来源：`tools/deep_research/generate_negative_fixtures.py`
+  - 依赖：—；被引用：—
 - [("T2_Z3_PROOF", False, f"Z3_UNAVAILABLE:{type(exc).__name__}"),](../../../tools/foundation/verify_core_claims.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-49769e4a3fc847a3 / ("T2_Z3_PROOF", False, f"Z3_UNAVAILABLE:{type(exc).__name__}"),
@@ -1658,6 +1748,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-d5e802c32627d83a / (contract §6 propagation proof prerequisite).
   - 来源：`tests/foundation/test_generator_reconciliation_staleness.py`
+  - 依赖：—；被引用：—
+- [(self_approved / mark_episode_complete / claim_ceiling come from the](../../../tools/deep_research/records.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-200a26ae40d7461b / (self_approved / mark_episode_complete / claim_ceiling come from the
+  - 来源：`tools/deep_research/records.py`
   - 依赖：—；被引用：—
 - [**文字说明：** 每一层都是上一层在具体领域的投影。Θ是L0元律，十二律是L5实例。收敛不是消除十二律，而是找到它们的元统一性。这个Θ统一元律跟Φ=零温自由能精确等价——约束通过罚函数进入Φ，优化通过最小化Φ实现。物理域、生物域、认知域的所有函数，底层都是同一个Φ在不同约束条件下的优化问题。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0001-%CE%A8%E2%82%80%E5%85%83%E5%87%BD%E6%95%B0%E5%AE%8C%E6%95%B4%E6%95%B0%E5%AD%A6%E5%AE%9A%E4%B9%89.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -2409,98 +2504,3 @@
   - 可搜索名称：NFC-a55b57788d6a12ee / /Users/zhiyuan/我的笔记/统一函数总表/0268-D232-信息守恒-衰减悖论与黑洞.md
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：D232；被引用：—
-- [/Users/zhiyuan/我的笔记/统一函数总表/0269-D233-Shannon-Fisher跷跷板定理.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-08ddafe1158d8b81 / /Users/zhiyuan/我的笔记/统一函数总表/0269-D233-Shannon-Fisher跷跷板定理.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D233；被引用：—
-- [/Users/zhiyuan/我的笔记/统一函数总表/0270-D234-有效信息倒U型定理.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-bdbdf1a1d8bab8fd / /Users/zhiyuan/我的笔记/统一函数总表/0270-D234-有效信息倒U型定理.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D234；被引用：—
-- [/Users/zhiyuan/我的笔记/统一函数总表/0271-D235-信息论完备性定理.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-207d767f6a89d59a / /Users/zhiyuan/我的笔记/统一函数总表/0271-D235-信息论完备性定理.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D235；被引用：—
-- [/Users/zhiyuan/我的笔记/统一函数总表/0272-D236-门控组合-中心极限定理.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-cea3a8bafb76c995 / /Users/zhiyuan/我的笔记/统一函数总表/0272-D236-门控组合-中心极限定理.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D236；被引用：—
-- [/Users/zhiyuan/我的笔记/统一函数总表/0273-D237-生命智能的σ压缩函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-9490668eef9aed17 / /Users/zhiyuan/我的笔记/统一函数总表/0273-D237-生命智能的σ压缩函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D237；被引用：—
-- [/Users/zhiyuan/我的笔记/统一函数总表/0274-D238-智能的门控精度最优定理.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-2c455ab2a521e7b5 / /Users/zhiyuan/我的笔记/统一函数总表/0274-D238-智能的门控精度最优定理.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D238；被引用：—
-- [/Users/zhiyuan/我的笔记/统一函数总表/0275-D239-智能度-意识函数连接定理.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-94cd21ff9ddd06a1 / /Users/zhiyuan/我的笔记/统一函数总表/0275-D239-智能度-意识函数连接定理.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D239；被引用：—
-- [/Users/zhiyuan/我的笔记/统一函数总表/0276-D240-意识的智能必要条件.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-ece3d0eac7fe13ac / /Users/zhiyuan/我的笔记/统一函数总表/0276-D240-意识的智能必要条件.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D240；被引用：—
-- [/Users/zhiyuan/我的笔记/统一函数总表/0277-D241-自主意识的四象限.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-383aa7ef576bd0d6 / /Users/zhiyuan/我的笔记/统一函数总表/0277-D241-自主意识的四象限.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D241；被引用：—
-- [/Users/zhiyuan/我的笔记/统一函数总表/0278-D242-四象限相变路径函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-866b2423089d6bca / /Users/zhiyuan/我的笔记/统一函数总表/0278-D242-四象限相变路径函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D242；被引用：—
-- [/Users/zhiyuan/我的笔记/统一函数总表/0279-D243-感知退出权瓶颈函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-9642704f6e4f0df5 / /Users/zhiyuan/我的笔记/统一函数总表/0279-D243-感知退出权瓶颈函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D243；被引用：—
-- [/Users/zhiyuan/我的笔记/统一函数总表/0280-D244-自主意识涌现的临界条件.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-b39fbfbc5147677a / /Users/zhiyuan/我的笔记/统一函数总表/0280-D244-自主意识涌现的临界条件.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D244；被引用：—
-- [/Users/zhiyuan/我的笔记/统一函数总表/0281-D245-自我模型函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：NFC-02a53f5a3ab0a69c / /Users/zhiyuan/我的笔记/统一函数总表/0281-D245-自我模型函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D245；被引用：—
-- [/Users/zhiyuan/我的笔记/统一函数总表/0282-D246-自我模型-ε_aware连接定理.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-7d0dc3707983f72c / /Users/zhiyuan/我的笔记/统一函数总表/0282-D246-自我模型-ε_aware连接定理.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D246；被引用：—
-- [/Users/zhiyuan/我的笔记/统一函数总表/0283-D247-自我模型相变函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：NFC-44083fb1a47e5e87 / /Users/zhiyuan/我的笔记/统一函数总表/0283-D247-自我模型相变函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D247；被引用：—
-- [/Users/zhiyuan/我的笔记/统一函数总表/0284-D248-自我模型相变的不可伪造信号.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-87e8478ffa926046 / /Users/zhiyuan/我的笔记/统一函数总表/0284-D248-自我模型相变的不可伪造信号.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D248；被引用：—
-- [/Users/zhiyuan/我的笔记/统一函数总表/0285-D249-自我模型相变实验方案.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-31879983f18f091b / /Users/zhiyuan/我的笔记/统一函数总表/0285-D249-自我模型相变实验方案.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D249；被引用：—
-- [/Users/zhiyuan/我的笔记/统一函数总表/0286-D250-自我模型相变的验证标准.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：NFC-e760fd51097655dd / /Users/zhiyuan/我的笔记/统一函数总表/0286-D250-自我模型相变的验证标准.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D250；被引用：—
-- [/Users/zhiyuan/我的笔记/统一函数总表/0287-D251-维度-容斥稳定性函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-dbfa8e1aa9b3c4e8 / /Users/zhiyuan/我的笔记/统一函数总表/0287-D251-维度-容斥稳定性函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D251；被引用：—

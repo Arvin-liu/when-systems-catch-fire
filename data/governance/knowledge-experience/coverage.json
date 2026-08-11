@@ -27,11 +27,11 @@
     "HR-FCBAA498CBEB783C"
   ],
   "featured_function_cards": 12,
-  "function_registry_records": 7199,
+  "function_registry_records": 7606,
   "historical_aliases": 5,
   "historical_result_audit": {
     "CURRENT_OR_SCOPED_SOURCE": 262,
-    "MACHINE_ONLY": 25041,
+    "MACHINE_ONLY": 26134,
     "NOT_MEANINGFUL_PUBLIC_CHANGE": 24,
     "SOURCE_MISSING": 0,
     "STALE_OR_INTERMEDIATE": 24,
@@ -41,10 +41,10 @@
   "material_nonfunction_claim_cards": 51,
   "materiality_policy": "Every recovered result/article receives a card and three reading levels. Function cards cover the explicit task-98 correction set. Claim cards cover named rebound lineages and risk-class claims on current public surfaces. All remaining registry assets stay fully searchable and retain their machine authority.",
   "meaningful_changes": 275,
-  "nonfunction_claim_records": 17905,
+  "nonfunction_claim_records": 18591,
   "result_asset_cards": 292,
   "result_sources": 292,
   "schema_version": "1.0.0",
-  "search_records": 25396,
+  "search_records": 26489,
   "snapshot_date": "2026-07-30"
 }

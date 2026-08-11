@@ -18,6 +18,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          fetch-tags: true
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
@@ -53,6 +54,12 @@ jobs:
       - run: python3 tools/foundation/validate_080_adjudications.py
       - name: Validate synchronization registry and iteration closures
         run: python3 tools/validate_iteration_sync.py
+      - name: "Task 108 — current-truth projection freshness gate (shared with iteration-lifecycle-validation, D3)"
+        # Keeps foundation and iteration-lifecycle aligned on the SAME projection
+        # fixed-point check. The generator folds terminal iterations (104-114)
+        # from terminal tags + lifecycle events; a stale committed projection now
+        # fails closed here instead of one CI going green while the other is red.
+        run: python3 tools/propagation/current_truth_projection.py --repo . --check
       - name: Validate typed change-propagation products
         run: |
           # Q32 is accepted historical evidence and is verified by the D4
@@ -133,3 +140,5 @@ jobs:
         run: |
           python3 -m unittest tests.test_propagation_reconciliation -v
           python3 tools/propagation/validate_reconciliation.py --check
+      - name: "Task 115 Round 1 — executor-neutral action/observation boundary schemas"
+        run: python3 -m unittest tests.test_deep_research_round1 -v

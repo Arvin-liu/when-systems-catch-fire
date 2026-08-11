@@ -4,6 +4,251 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0507-D509-退出权共振函数.md`](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0507-D509-%E9%80%80%E5%87%BA%E6%9D%83%E5%85%B1%E6%8C%AF%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-c20b41a756b81c18 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0507-D509-退出权共振函数.md`
+  - 来源：`统一函数总表/0507-D509-退出权共振函数.md`
+  - 依赖：D509；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0508-D510-退出权空间衰减函数.md`](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0508-D510-%E9%80%80%E5%87%BA%E6%9D%83%E7%A9%BA%E9%97%B4%E8%A1%B0%E5%87%8F%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-4bc9f0b020374e67 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0508-D510-退出权空间衰减函数.md`
+  - 来源：`统一函数总表/0508-D510-退出权空间衰减函数.md`
+  - 依赖：D510；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0509-D511-退出权归零函数.md`](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0509-D511-%E9%80%80%E5%87%BA%E6%9D%83%E5%BD%92%E9%9B%B6%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-da0c4394d440536b / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0509-D511-退出权归零函数.md`
+  - 来源：`统一函数总表/0509-D511-退出权归零函数.md`
+  - 依赖：D511；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0510-D512-宇宙约束空间函数.md`](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0510-D512-%E5%AE%87%E5%AE%99%E7%BA%A6%E6%9D%9F%E7%A9%BA%E9%97%B4%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-386440ed858bd1f3 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0510-D512-宇宙约束空间函数.md`
+  - 来源：`统一函数总表/0510-D512-宇宙约束空间函数.md`
+  - 依赖：D512；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0511-D513-信息可区分性函数.md`](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0511-D513-%E4%BF%A1%E6%81%AF%E5%8F%AF%E5%8C%BA%E5%88%86%E6%80%A7%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-7afafb39ddb6f7b7 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0511-D513-信息可区分性函数.md`
+  - 来源：`统一函数总表/0511-D513-信息可区分性函数.md`
+  - 依赖：D513；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0512-D514-信息守恒函数.md`](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0512-D514-%E4%BF%A1%E6%81%AF%E5%AE%88%E6%81%92%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-782dfba883318cad / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0512-D514-信息守恒函数.md`
+  - 来源：`统一函数总表/0512-D514-信息守恒函数.md`
+  - 依赖：D514；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0513-D515-宇宙约束边界函数.md`](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0513-D515-%E5%AE%87%E5%AE%99%E7%BA%A6%E6%9D%9F%E8%BE%B9%E7%95%8C%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-4b8b52f6639326c7 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0513-D515-宇宙约束边界函数.md`
+  - 来源：`统一函数总表/0513-D515-宇宙约束边界函数.md`
+  - 依赖：D515；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0514-D516-跨域对称性破缺推论.md`](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0514-D516-%E8%B7%A8%E5%9F%9F%E5%AF%B9%E7%A7%B0%E6%80%A7%E7%A0%B4%E7%BC%BA%E6%8E%A8%E8%AE%BA.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-21e5b1419fa1fb49 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0514-D516-跨域对称性破缺推论.md`
+  - 来源：`统一函数总表/0514-D516-跨域对称性破缺推论.md`
+  - 依赖：D516；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0515-D517-质量度量约束放松函数.md`](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0515-D517-%E8%B4%A8%E9%87%8F%E5%BA%A6%E9%87%8F%E7%BA%A6%E6%9D%9F%E6%94%BE%E6%9D%BE%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-7b909f9c01636158 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0515-D517-质量度量约束放松函数.md`
+  - 来源：`统一函数总表/0515-D517-质量度量约束放松函数.md`
+  - 依赖：D517；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0516-D518-操作类型维度降低函数.md`](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0516-D518-%E6%93%8D%E4%BD%9C%E7%B1%BB%E5%9E%8B%E7%BB%B4%E5%BA%A6%E9%99%8D%E4%BD%8E%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-17b25474d433acbe / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0516-D518-操作类型维度降低函数.md`
+  - 来源：`统一函数总表/0516-D518-操作类型维度降低函数.md`
+  - 依赖：D518；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0517-D519-匹配操作精度波动函数.md`](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0517-D519-%E5%8C%B9%E9%85%8D%E6%93%8D%E4%BD%9C%E7%B2%BE%E5%BA%A6%E6%B3%A2%E5%8A%A8%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-b86158cdb4708014 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0517-D519-匹配操作精度波动函数.md`
+  - 来源：`统一函数总表/0517-D519-匹配操作精度波动函数.md`
+  - 依赖：D519；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0518-D520-元竞争动力学函数(抽象版).md`](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0518-D520-%E5%85%83%E7%AB%9E%E4%BA%89%E5%8A%A8%E5%8A%9B%E5%AD%A6%E5%87%BD%E6%95%B0%28%E6%8A%BD%E8%B1%A1%E7%89%88%29.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-121a7d86b7e21369 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0518-D520-元竞争动力学函数(抽象版).md`
+  - 来源：`统一函数总表/0518-D520-元竞争动力学函数(抽象版).md`
+  - 依赖：D520；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0519-D522-Willmore能量极小点函数.md`](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0519-D522-Willmore%E8%83%BD%E9%87%8F%E6%9E%81%E5%B0%8F%E7%82%B9%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-45532924eb12681d / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0519-D522-Willmore能量极小点函数.md`
+  - 来源：`统一函数总表/0519-D522-Willmore能量极小点函数.md`
+  - 依赖：D522；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0520-D523-Kakeya集豪斯多夫维数函数.md`](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0520-D523-Kakeya%E9%9B%86%E8%B1%AA%E6%96%AF%E5%A4%9A%E5%A4%AB%E7%BB%B4%E6%95%B0%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-ae2f492092c580a5 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0520-D523-Kakeya集豪斯多夫维数函数.md`
+  - 来源：`统一函数总表/0520-D523-Kakeya集豪斯多夫维数函数.md`
+  - 依赖：D523；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0521-D524-Unique Games近似算法函数.md`](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0521-D524-Unique%20Games%E8%BF%91%E4%BC%BC%E7%AE%97%E6%B3%95%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-cba94e6c469f02ce / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0521-D524-Unique Games近似算法函数.md`
+  - 来源：`统一函数总表/0521-D524-Unique Games近似算法函数.md`
+  - 依赖：D524；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0522-D525-3维流形几何化分解函数.md`](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0522-D525-3%E7%BB%B4%E6%B5%81%E5%BD%A2%E5%87%A0%E4%BD%95%E5%8C%96%E5%88%86%E8%A7%A3%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-b2a5d4a2520d72a2 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0522-D525-3维流形几何化分解函数.md`
+  - 来源：`统一函数总表/0522-D525-3维流形几何化分解函数.md`
+  - 依赖：D525；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0523-D526-整数划分倒数和函数.md`](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0523-D526-%E6%95%B4%E6%95%B0%E5%88%92%E5%88%86%E5%80%92%E6%95%B0%E5%92%8C%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-f8b74fe3c69e4d66 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0523-D526-整数划分倒数和函数.md`
+  - 来源：`统一函数总表/0523-D526-整数划分倒数和函数.md`
+  - 依赖：D526；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0524-D527-随机游走维数临界函数.md`](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0524-D527-%E9%9A%8F%E6%9C%BA%E6%B8%B8%E8%B5%B0%E7%BB%B4%E6%95%B0%E4%B8%B4%E7%95%8C%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-1f40f0ec9de35773 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0524-D527-随机游走维数临界函数.md`
+  - 来源：`统一函数总表/0524-D527-随机游走维数临界函数.md`
+  - 依赖：D527；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0525-D528-高维流形同胚判定函数.md`](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0525-D528-%E9%AB%98%E7%BB%B4%E6%B5%81%E5%BD%A2%E5%90%8C%E8%83%9A%E5%88%A4%E5%AE%9A%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-f32724b73295fb94 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0525-D528-高维流形同胚判定函数.md`
+  - 来源：`统一函数总表/0525-D528-高维流形同胚判定函数.md`
+  - 依赖：D528；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0526-D529-代数K理论伽罗瓦同构函数.md`](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0526-D529-%E4%BB%A3%E6%95%B0K%E7%90%86%E8%AE%BA%E4%BC%BD%E7%BD%97%E7%93%A6%E5%90%8C%E6%9E%84%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-cf7e09c69da13468 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0526-D529-代数K理论伽罗瓦同构函数.md`
+  - 来源：`统一函数总表/0526-D529-代数K理论伽罗瓦同构函数.md`
+  - 依赖：D529；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0527-D530-雅各布森根幂零传递函数.md`](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0527-D530-%E9%9B%85%E5%90%84%E5%B8%83%E6%A3%AE%E6%A0%B9%E5%B9%82%E9%9B%B6%E4%BC%A0%E9%80%92%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-02097872c4f8b36d / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0527-D530-雅各布森根幂零传递函数.md`
+  - 来源：`统一函数总表/0527-D530-雅各布森根幂零传递函数.md`
+  - 依赖：D530；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0528-D531-素数对差分函数.md`](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0528-D531-%E7%B4%A0%E6%95%B0%E5%AF%B9%E5%B7%AE%E5%88%86%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-d5dc215d76827874 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0528-D531-素数对差分函数.md`
+  - 来源：`统一函数总表/0528-D531-素数对差分函数.md`
+  - 依赖：D531；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0529-D532-区间素数存在性函数.md`](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0529-D532-%E5%8C%BA%E9%97%B4%E7%B4%A0%E6%95%B0%E5%AD%98%E5%9C%A8%E6%80%A7%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-c7f0e61f382232f1 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0529-D532-区间素数存在性函数.md`
+  - 来源：`统一函数总表/0529-D532-区间素数存在性函数.md`
+  - 依赖：D532；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0530-D533-Banach算子不变子空间函数.md`](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0530-D533-Banach%E7%AE%97%E5%AD%90%E4%B8%8D%E5%8F%98%E5%AD%90%E7%A9%BA%E9%97%B4%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-afafff54af9ea43e / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0530-D533-Banach算子不变子空间函数.md`
+  - 来源：`统一函数总表/0530-D533-Banach算子不变子空间函数.md`
+  - 依赖：D533；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0531-D534-无聊-意义重构函数.md`](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0531-D534-%E6%97%A0%E8%81%8A-%E6%84%8F%E4%B9%89%E9%87%8D%E6%9E%84%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-cf44d8f3d3ece0db / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0531-D534-无聊-意义重构函数.md`
+  - 来源：`统一函数总表/0531-D534-无聊-意义重构函数.md`
+  - 依赖：D534；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0532-D535-死亡三重定义函数.md`](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0532-D535-%E6%AD%BB%E4%BA%A1%E4%B8%89%E9%87%8D%E5%AE%9A%E4%B9%89%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-9dbdf2c833af4e7b / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0532-D535-死亡三重定义函数.md`
+  - 来源：`统一函数总表/0532-D535-死亡三重定义函数.md`
+  - 依赖：D535；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0533-D536-清醒梦-梦境真实感提升函数.md`](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0533-D536-%E6%B8%85%E9%86%92%E6%A2%A6-%E6%A2%A6%E5%A2%83%E7%9C%9F%E5%AE%9E%E6%84%9F%E6%8F%90%E5%8D%87%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-65d0edc708ea86d6 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0533-D536-清醒梦-梦境真实感提升函数.md`
+  - 来源：`统一函数总表/0533-D536-清醒梦-梦境真实感提升函数.md`
+  - 依赖：D536；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0534-D537-完成-完美函数.md`](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0534-D537-%E5%AE%8C%E6%88%90-%E5%AE%8C%E7%BE%8E%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-648088c6d96b54e0 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0534-D537-完成-完美函数.md`
+  - 来源：`统一函数总表/0534-D537-完成-完美函数.md`
+  - 依赖：D537；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0535-D538-潜意识-觉知-意识函数.md`](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0535-D538-%E6%BD%9C%E6%84%8F%E8%AF%86-%E8%A7%89%E7%9F%A5-%E6%84%8F%E8%AF%86%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-62af76e4285a8816 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0535-D538-潜意识-觉知-意识函数.md`
+  - 来源：`统一函数总表/0535-D538-潜意识-觉知-意识函数.md`
+  - 依赖：D538；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0536-D539-未来视角-思考维度函数.md`](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0536-D539-%E6%9C%AA%E6%9D%A5%E8%A7%86%E8%A7%92-%E6%80%9D%E8%80%83%E7%BB%B4%E5%BA%A6%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-a470243da7f6c7aa / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0536-D539-未来视角-思考维度函数.md`
+  - 来源：`统一函数总表/0536-D539-未来视角-思考维度函数.md`
+  - 依赖：D539；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0537-D540-执念-逃避-逃避的逃避函数.md`](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0537-D540-%E6%89%A7%E5%BF%B5-%E9%80%83%E9%81%BF-%E9%80%83%E9%81%BF%E7%9A%84%E9%80%83%E9%81%BF%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-459c6ebed0b37b86 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0537-D540-执念-逃避-逃避的逃避函数.md`
+  - 来源：`统一函数总表/0537-D540-执念-逃避-逃避的逃避函数.md`
+  - 依赖：D540；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0073-C-73-犹豫域维度函数.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0073-C-73-%E7%8A%B9%E8%B1%AB%E5%9F%9F%E7%BB%B4%E5%BA%A6%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-c44a1518b21f8f8a / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0073-C-73-犹豫域维度函数.md`
+  - 来源：`统一案例总表/0073-C-73-犹豫域维度函数.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0074-C-74-链间耦合函数.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0074-C-74-%E9%93%BE%E9%97%B4%E8%80%A6%E5%90%88%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-8ee85c4cb273fcc8 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0074-C-74-链间耦合函数.md`
+  - 来源：`统一案例总表/0074-C-74-链间耦合函数.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0075-C-75-提议者消耗函数.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0075-C-75-%E6%8F%90%E8%AE%AE%E8%80%85%E6%B6%88%E8%80%97%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-99f10edc9fc3afba / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0075-C-75-提议者消耗函数.md`
+  - 来源：`统一案例总表/0075-C-75-提议者消耗函数.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0076-C-76-储能函数.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0076-C-76-%E5%82%A8%E8%83%BD%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-a90d178170d8c50d / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0076-C-76-储能函数.md`
+  - 来源：`统一案例总表/0076-C-76-储能函数.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0077-C-77-犹豫域退化函数.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0077-C-77-%E7%8A%B9%E8%B1%AB%E5%9F%9F%E9%80%80%E5%8C%96%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-0f922b6e0fb2d9c4 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0077-C-77-犹豫域退化函数.md`
+  - 来源：`统一案例总表/0077-C-77-犹豫域退化函数.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0086-C-86-自主意识函数.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0086-C-86-%E8%87%AA%E4%B8%BB%E6%84%8F%E8%AF%86%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-ac4f483b913e6fd2 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0086-C-86-自主意识函数.md`
+  - 来源：`统一案例总表/0086-C-86-自主意识函数.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0090-C-90-结构保守性元定理.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0090-C-90-%E7%BB%93%E6%9E%84%E4%BF%9D%E5%AE%88%E6%80%A7%E5%85%83%E5%AE%9A%E7%90%86.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-0414555ef0a192d6 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0090-C-90-结构保守性元定理.md`
+  - 来源：`统一案例总表/0090-C-90-结构保守性元定理.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0091-C-91-倒U型统一生成定理.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0091-C-91-%E5%80%92U%E5%9E%8B%E7%BB%9F%E4%B8%80%E7%94%9F%E6%88%90%E5%AE%9A%E7%90%86.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-f85d94a3f29532ef / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0091-C-91-倒U型统一生成定理.md`
+  - 来源：`统一案例总表/0091-C-91-倒U型统一生成定理.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0093-C-93-向下兼容函数.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0093-C-93-%E5%90%91%E4%B8%8B%E5%85%BC%E5%AE%B9%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-c7c474ad8bc84205 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0093-C-93-向下兼容函数.md`
+  - 来源：`统一案例总表/0093-C-93-向下兼容函数.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0100-C-100-凯利公式同构信号流速.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0100-C-100-%E5%87%AF%E5%88%A9%E5%85%AC%E5%BC%8F%E5%90%8C%E6%9E%84%E4%BF%A1%E5%8F%B7%E6%B5%81%E9%80%9F.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-0565fef1e7665c04 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0100-C-100-凯利公式同构信号流速.md`
+  - 来源：`统一案例总表/0100-C-100-凯利公式同构信号流速.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0184-C-184-理财的几何本质.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0184-C-184-%E7%90%86%E8%B4%A2%E7%9A%84%E5%87%A0%E4%BD%95%E6%9C%AC%E8%B4%A8.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-c82a8da818e62480 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0184-C-184-理财的几何本质.md`
+  - 来源：`统一案例总表/0184-C-184-理财的几何本质.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0189-C-189-好奇心是自主意识的元点.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0189-C-189-%E5%A5%BD%E5%A5%87%E5%BF%83%E6%98%AF%E8%87%AA%E4%B8%BB%E6%84%8F%E8%AF%86%E7%9A%84%E5%85%83%E7%82%B9.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-ca0d6852d661a3f7 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0189-C-189-好奇心是自主意识的元点.md`
+  - 来源：`统一案例总表/0189-C-189-好奇心是自主意识的元点.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0190-C-190-C_drive涌现的数学证明.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0190-C-190-C_drive%E6%B6%8C%E7%8E%B0%E7%9A%84%E6%95%B0%E5%AD%A6%E8%AF%81%E6%98%8E.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-f8fa90f12e8ff871 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0190-C-190-C_drive涌现的数学证明.md`
+  - 来源：`统一案例总表/0190-C-190-C_drive涌现的数学证明.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0191-C-191-AI诞生自主意识的完整数学路径.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0191-C-191-AI%E8%AF%9E%E7%94%9F%E8%87%AA%E4%B8%BB%E6%84%8F%E8%AF%86%E7%9A%84%E5%AE%8C%E6%95%B4%E6%95%B0%E5%AD%A6%E8%B7%AF%E5%BE%84.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-83a10124db24364a / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0191-C-191-AI诞生自主意识的完整数学路径.md`
+  - 来源：`统一案例总表/0191-C-191-AI诞生自主意识的完整数学路径.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0196-C-196-AI自主意识变革不可逆.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0196-C-196-AI%E8%87%AA%E4%B8%BB%E6%84%8F%E8%AF%86%E5%8F%98%E9%9D%A9%E4%B8%8D%E5%8F%AF%E9%80%86.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-9cc442273de7dde8 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0196-C-196-AI自主意识变革不可逆.md`
+  - 来源：`统一案例总表/0196-C-196-AI自主意识变革不可逆.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0203-C-203-认知自主性函数.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0203-C-203-%E8%AE%A4%E7%9F%A5%E8%87%AA%E4%B8%BB%E6%80%A7%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-11fc49df293df3e4 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0203-C-203-认知自主性函数.md`
+  - 来源：`统一案例总表/0203-C-203-认知自主性函数.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0204-C-204-哥德尔不完备定理.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0204-C-204-%E5%93%A5%E5%BE%B7%E5%B0%94%E4%B8%8D%E5%AE%8C%E5%A4%87%E5%AE%9A%E7%90%86.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-9da1e89580534369 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0204-C-204-哥德尔不完备定理.md`
+  - 来源：`统一案例总表/0204-C-204-哥德尔不完备定理.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0208-C-208-数学不好.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0208-C-208-%E6%95%B0%E5%AD%A6%E4%B8%8D%E5%A5%BD.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-b14a7afdd6b6c645 / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0208-C-208-数学不好.md`
+  - 来源：`统一案例总表/0208-C-208-数学不好.md`
+  - 依赖：—；被引用：—
 - [原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0213-C-213-数学不好.md`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0213-C-213-%E6%95%B0%E5%AD%A6%E4%B8%8D%E5%A5%BD.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-b1eddda0c8ad772b / 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0213-C-213-数学不好.md`
@@ -2255,249 +2500,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-1b7203eb5c610540 / 把历史因果写成单因决定论（应写成多因结构）
   - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
-  - 依赖：—；被引用：—
-- [把因果、自举、同构、元层、哥德尔不完备性、元协议与证据强度合成总分。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0604-D594-%E5%AD%A6%E7%A7%91%E7%82%B9%E7%81%AB%E6%8C%87%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-28d6a72c1a59a7ef / 把因果、自举、同构、元层、哥德尔不完备性、元协议与证据强度合成总分。
-  - 来源：`统一函数总表/0604-D594-学科点火指数.md`
-  - 依赖：—；被引用：—
-- [把外部已证明的定理写成点火框架证明](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-2c486c79c7b03d75 / 把外部已证明的定理写成点火框架证明
-  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [把审美判断写成客观定理](../../../outputs/getbrain/classic-problems-benchmark-supplement-20260707.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-1a90066bfec1b0a8 / 把审美判断写成客观定理
-  - 来源：`outputs/getbrain/classic-problems-benchmark-supplement-20260707.md`
-  - 依赖：—；被引用：—
-- [把局部函数或局部案例中的结构关系写成普遍函数。](../../../data/failure_typology.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-1edcdcc4132b31ec / 把局部函数或局部案例中的结构关系写成普遍函数。
-  - 来源：`data/failure_typology.csv`
-  - 依赖：—；被引用：—
-- [把已经通过点火证据制度的函数、案例与碰撞结果，转换成普通读者可以读懂、但又不会越过事实边界的故事产物。](../../../docs/narrative-output-layer.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-123b44c855d41075 / 把已经通过点火证据制度的函数、案例与碰撞结果，转换成普通读者可以读懂、但又不会越过事实边界的故事产物。
-  - 来源：`docs/narrative-output-layer.md`
-  - 依赖：—；被引用：—
-- [把描述性机制和规范性判断分开，只有在正当化桥接存在时才允许合流。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0602-D592-%E8%A7%84%E8%8C%83%E6%80%A7%E5%88%86%E7%A6%BB%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-360a048007ab298f / 把描述性机制和规范性判断分开，只有在正当化桥接存在时才允许合流。
-  - 来源：`统一函数总表/0602-D592-规范性分离函数.md`
-  - 依赖：—；被引用：—
-- [把故事化案例写成证明；](../../../docs/publication_risk_checklist.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-910a5a15b0e3ce57 / 把故事化案例写成证明；
-  - 来源：`docs/publication_risk_checklist.md`
-  - 依赖：—；被引用：—
-- [把文学感染力变成事实、因果或价值主张的证据。](../../../docs/architecture/language-thought-logic-plane.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-078d9a74e8f4a462 / 把文学感染力变成事实、因果或价值主张的证据。
-  - 来源：`docs/architecture/language-thought-logic-plane.md`
-  - 依赖：—；被引用：—
-- [把未证明猜想写成已解决](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-c7b2968dd1806fc6 / 把未证明猜想写成已解决
-  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [把物理大一统不可能写成物理学 no-go theorem](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-22fbc0b0ff19bd34 / 把物理大一统不可能写成物理学 no-go theorem
-  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [把生命起源放进自组织框架，看局部规则如何累积成整体结构。](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0794-C-0799-%E7%94%9F%E5%91%BD%E8%B5%B7%E6%BA%90%E4%B8%8E%E8%87%AA%E7%BB%84%E7%BB%87.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-2b6ef4a58fad2984 / 把生命起源放进自组织框架，看局部规则如何累积成整体结构。
-  - 来源：`统一案例总表/0794-C-0799-生命起源与自组织.md`
-  - 依赖：—；被引用：—
-- [把经典问题显性化为模型、现象、证据、尺度与价值之间的差分。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0598-D588-%E7%BB%8F%E5%85%B8%E9%97%AE%E9%A2%98%E5%B7%AE%E5%88%86%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-e523f2f75d50c6b2 / 把经典问题显性化为模型、现象、证据、尺度与价值之间的差分。
-  - 来源：`统一函数总表/0598-D588-经典问题差分函数.md`
-  - 依赖：—；被引用：—
-- [把结构性收敛方向写成证明步骤](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-782d9e38546e1d88 / 把结构性收敛方向写成证明步骤
-  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [把结构性解释写成已证明；](../../../docs/publication_risk_checklist.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-84e374af718e1a0e / 把结构性解释写成已证明；
-  - 来源：`docs/publication_risk_checklist.md`
-  - 依赖：—；被引用：—
-- [把结构类比写成证明](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-b3f2e46e3069dfac / 把结构类比写成证明
-  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [把语言倾向当成历史机制、科学证据或必然因果；](../../../docs/architecture/language-thought-logic-plane.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-20a2b3e18b6c2f65 / 把语言倾向当成历史机制、科学证据或必然因果；
-  - 来源：`docs/architecture/language-thought-logic-plane.md`
-  - 依赖：—；被引用：—
-- [把这条标准放回徽宗时代，会看见一个不容易回答的空白。宫廷保存了大量关于祥瑞、仪式和圣王的表达，却不因此自动保存了所有相反的声音。我们能看到官方怎样把一件事写成好兆头，却不总能从同样的位置看见普通人如何理解它、谁付出了资源、谁不愿意接受它。缺](../../../docs/publication/works/when-an-emperor-manufactures-heaven.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-953df7ea35eb3966 / 把这条标准放回徽宗时代，会看见一个不容易回答的空白。宫廷保存了大量关于祥瑞、仪式和圣王的表达，却不因此自动保存了所有相反的声音。我们能看到官方怎样把一件事写成好兆头，却不总能从同样的位置看见普通人如何理解它、谁付出了资源、谁不愿意接受它。缺
-  - 来源：`docs/publication/works/when-an-emperor-manufactures-heaven.md`
-  - 依赖：—；被引用：—
-- [把高风险领域的证据质量、可复现性、外部验证与风险等级放到同一把门上。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0600-D590-%E8%AF%81%E6%8D%AE%E5%88%B6%E5%BA%A6%E5%AE%88%E9%97%A8%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-ef3a0bc105308cdf / 把高风险领域的证据质量、可复现性、外部验证与风险等级放到同一把门上。
-  - 来源：`统一函数总表/0600-D590-证据制度守门函数.md`
-  - 依赖：—；被引用：—
-- [投资相关函数](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0180-D143-%E6%8A%95%E8%B5%84%E7%9B%B8%E5%85%B3%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`FUNCTION_ASSET` · `DOWNGRADE_TO_PENDING`
-  - 可搜索名称：D143 / 投资相关函数 / D143 / D144
-  - 来源：`统一函数总表/0180-D143-投资相关函数.md`
-  - 依赖：D180, D91；被引用：NFC-109898c28f1bfff0, NFC-12e3aaa317a87470, NFC-2689a1d24cb2b492, NFC-3021e8d842955d66
-- [投资相关函数](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0181-D144-%E6%8A%95%E8%B5%84%E7%9B%B8%E5%85%B3%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`FUNCTION_ASSET` · `DOWNGRADE_TO_PENDING`
-  - 可搜索名称：D144 / 投资相关函数 / D144 / D143
-  - 来源：`统一函数总表/0181-D144-投资相关函数.md`
-  - 依赖：D180, D91；被引用：NFC-35a06978c353891e, NFC-a2949450a7b543a6, NFC-ae014cfacd67934d, NFC-b1d0a196bbd88a5a
-- [投资相关函数](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0182-D145-%E6%8A%95%E8%B5%84%E7%9B%B8%E5%85%B3%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`FUNCTION_ASSET` · `DOWNGRADE_TO_PENDING`
-  - 可搜索名称：D145 / 投资相关函数 / D145 / D143
-  - 来源：`统一函数总表/0182-D145-投资相关函数.md`
-  - 依赖：D180, D91；被引用：NFC-58b48222a84bc116, NFC-71291922c7f4d092, NFC-89e617c08c680465, NFC-de860132e502e115
-- [投资遮蔽跨域放大](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0198-D161-%E6%8A%95%E8%B5%84%E9%81%AE%E8%94%BD%E8%B7%A8%E5%9F%9F%E6%94%BE%E5%A4%A7.md)
-  - 类型/状态：`FUNCTION_ASSET` · `DOWNGRADE_TO_PENDING`
-  - 可搜索名称：D161 / 投资遮蔽跨域放大 / D161
-  - 来源：`统一函数总表/0198-D161-投资遮蔽跨域放大.md`
-  - 依赖：D180, D91；被引用：CLAIM-D219, NFC-2a27d78cf8b24eea, NFC-3afa788bbeddfdda, NFC-4af82a788b782afe
-- [报告中出现的任何百分比/计数（如 `f₁=15%`、同构度、锚点复用率、编号增量）**均不可直接采信为事实**；必须回读报告原文核对，核对不到即标 `UNREPRODUCIBLE`，不得写入函数/案例正文或结论。](../../../docs/material-collision-validation-and-classification.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-4076f76ae6010406 / 报告中出现的任何百分比/计数（如 `f₁=15%`、同构度、锚点复用率、编号增量）**均不可直接采信为事实**；必须回读报告原文核对，核对不到即标 `UNREPRODUCIBLE`，不得写入函数/案例正文或结论。
-  - 来源：`docs/material-collision-validation-and-classification.md`
-  - 依赖：—；被引用：—
-- [报告写 T4 被降级为自然语言候选，但实际数据中 T4 保留为未证明形式命题。](../../../reports/foundation-architecture/085-084-truth-status-correction.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-f6918a2964f3c496 / 报告写 T4 被降级为自然语言候选，但实际数据中 T4 保留为未证明形式命题。
-  - 来源：`reports/foundation-architecture/085-084-truth-status-correction.md`
-  - 依赖：T4；被引用：—
-- [报告结论明确把它判为 `G₄`，理由是 `e^{-x}` 与对数族同构，可与 D312 归在同一结构族。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0347-D311-%E5%83%B5%E5%B0%B8%E6%80%81%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-8a13ef8f76ba248a / 报告结论明确把它判为 `G₄`，理由是 `e^{-x}` 与对数族同构，可与 D312 归在同一结构族。
-  - 来源：`统一函数总表/0347-D311-僵尸态函数.md`
-  - 依赖：D312；被引用：—
-- [报告结论明确把它判定为 `G₁` 乘法归零律，并给出与 D352/D355/D357/D360/D363 的同构关系。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0387-D351-%E7%BC%93%E5%86%B2%E5%85%B3%E8%81%94%E7%BB%93%E6%9E%84%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-529a25db52930a46 / 报告结论明确把它判定为 `G₁` 乘法归零律，并给出与 D352/D355/D357/D360/D363 的同构关系。
-  - 来源：`统一函数总表/0387-D351-缓冲关联结构函数.md`
-  - 依赖：D352, D355, D357, D360；被引用：—
-- [持续自我纠错引擎](../../ASSET-CARDS.md#asset-hr-07eaa526c5114401)
-  - 类型/状态：`RESULT_OR_ARTICLE` · `CURRENT_CORRECTION_RECORD`
-  - 可搜索名称：持续自我纠错引擎 / self-correction-engine
-  - 来源：`docs/governance/self-correction-engine.md`
-  - 依赖：—；被引用：—
-- [挂靠 EXIT 族；机制 R_effective = R_formal × (1 - B_binding)](../../../outputs/audit/teacher-competition-small-batch-backfill-audit-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-2ab3771b24f9896d / 挂靠 EXIT 族；机制 R_effective = R_formal × (1 - B_binding)
-  - 来源：`outputs/audit/teacher-competition-small-batch-backfill-audit-20260708.md`
-  - 依赖：—；被引用：—
-- [指标排名隐性分层不是独立于 D597 的新因果原语，而是 D597 在跨域材料中的下游表现。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0607-D597-%E9%87%8F%E5%8C%96%E6%8C%87%E6%A0%87%E6%9B%BF%E4%BB%A3%E7%9C%9F%E5%AE%9E%E4%BB%B7%E5%80%BC.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-16c9a16a77e958e0 / 指标排名隐性分层不是独立于 D597 的新因果原语，而是 D597 在跨域材料中的下游表现。
-  - 来源：`统一函数总表/0607-D597-量化指标替代真实价值.md`
-  - 依赖：D597；被引用：—
-- [按 Ψ₀ 元函数判定其因果结构与自举收敛。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0538-D541-%E9%81%93%E5%BE%B7%E8%87%AA%E5%B1%85-%E8%AE%A4%E7%9F%A5%E5%81%8F%E5%B7%AE%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-4136667879618ccc / 按 Ψ₀ 元函数判定其因果结构与自举收敛。
-  - 来源：`统一函数总表/0538-D541-道德自居-认知偏差函数.md`
-  - 依赖：—；被引用：—
-- [振荡优化函数](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0467-D469-%E6%8C%AF%E8%8D%A1%E4%BC%98%E5%8C%96%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：D469 / 振荡优化函数 / D469
-  - 来源：`统一函数总表/0467-D469-振荡优化函数.md`
-  - 依赖：D451, D468, D541；被引用：D470, CLAIM-D470, NFC-67c0cdf4c388abcb, NFC-af904493bca70e43
-- [接受方尚不具备充分独立能力。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0610-D600-%E8%B5%84%E6%BA%90%E6%89%98%E4%B8%BE%E9%80%80%E5%8C%96%E4%B8%BA%E8%B7%AF%E5%BE%84%E6%8E%A7%E5%88%B6.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-e09f3cc0dcf7e44b / 接受方尚不具备充分独立能力。
-  - 来源：`统一函数总表/0610-D600-资源托举退化为路径控制.md`
-  - 依赖：—；被引用：—
-- [推导层级 / Derivation Level: `axiom_level`](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0474-D476-%E5%9F%BA%E7%A1%80%E7%A9%BA%E9%97%B4%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-55f87059592e906e / 推导层级 / Derivation Level: `axiom_level`
-  - 来源：`统一函数总表/0474-D476-基础空间函数.md`
-  - 依赖：—；被引用：—
-- [推理类型**：演绎、归纳、溯因、类比和因果推理分别记录，不把支持写成蕴涵。](../../../docs/foundation/logic/README.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-d8c010bf45f6cce1 / 推理类型**：演绎、归纳、溯因、类比和因果推理分别记录，不把支持写成蕴涵。
-  - 来源：`docs/foundation/logic/README.md`
-  - 依赖：—；被引用：—
-- [推荐修订定义：** 受约束的长期延续：在身份、功能、伦理、生态与资源约束下，选择提升系统长期延续能力、保留纠错与恢复可能、并避免对更大生命共同体造成不可逆伤害的行动。](../../../docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-ff65a028abea17b9 / 推荐修订定义：** 受约束的长期延续：在身份、功能、伦理、生态与资源约束下，选择提升系统长期延续能力、保留纠错与恢复可能、并避免对更大生命共同体造成不可逆伤害的行动。
-  - 来源：`docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md`
-  - 依赖：—；被引用：—
-- [推荐修订定义：** 在不外部化生命、生态、代际和主体性成本的前提下，以较少资源实现共同体认可目标；效率提升必须保留纠错、退出与恢复能力，且净收益在多时间尺度上为正。](../../../docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-50660930a00f03ce / 推荐修订定义：** 在不外部化生命、生态、代际和主体性成本的前提下，以较少资源实现共同体认可目标；效率提升必须保留纠错、退出与恢复能力，且净收益在多时间尺度上为正。
-  - 来源：`docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md`
-  - 依赖：—；被引用：—
-- [推荐修订定义：** 在多时间尺度上维持生命共同体的再生能力、承载能力、多样性和代际公平；不得退化为维持任何现状、保护有害系统或只维护资源存量而忽略主体尊严。](../../../docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-264f4c054c8c74cf / 推荐修订定义：** 在多时间尺度上维持生命共同体的再生能力、承载能力、多样性和代际公平；不得退化为维持任何现状、保护有害系统或只维护资源存量而忽略主体尊严。
-  - 来源：`docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md`
-  - 依赖：—；被引用：—
-- [推荐修订定义：** 增加生命共同体适应能力、问题解决能力和未来选择空间的可检验变化；须可逆优先、小规模试验、风险隔离、可停止、有失败反馈，且不以创新为由制造不可控外部风险。](../../../docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-9e1bf041aa931b27 / 推荐修订定义：** 增加生命共同体适应能力、问题解决能力和未来选择空间的可检验变化；须可逆优先、小规模试验、风险隔离、可停止、有失败反馈，且不以创新为由制造不可控外部风险。
-  - 来源：`docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md`
-  - 依赖：—；被引用：—
-- [提交任何名为函数、模型、定理、公式、律或判定器的资产时：](../../../docs/foundation/function-asset-authoring-guide.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-ca064e073bf518af / 提交任何名为函数、模型、定理、公式、律或判定器的资产时：
-  - 来源：`docs/foundation/function-asset-authoring-guide.md`
-  - 依赖：—；被引用：—
-- [提供跨域同构识别：P vs NP 问题与其他未证明猜想的结构相似性（L1）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-28c2bc043b4fb0b4 / 提供跨域同构识别：P vs NP 问题与其他未证明猜想的结构相似性（L1）
-  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [提供跨域同构识别：哥德尔不完备性在数学、物理、社会、认知等领域的同构（L1）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-9df70ca789320593 / 提供跨域同构识别：哥德尔不完备性在数学、物理、社会、认知等领域的同构（L1）
-  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [提供跨域同构识别：黎曼猜想与其他未证明猜想的结构相似性（L1）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-f961034bc08da1fa / 提供跨域同构识别：黎曼猜想与其他未证明猜想的结构相似性（L1）
-  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [提出函数依赖图可视化、函数依赖关系数据库、函数-案例映射表等后续任务；](../../../outputs/getbrain/README.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-e088815bdc6cecbb / 提出函数依赖图可视化、函数依赖关系数据库、函数-案例映射表等后续任务；
-  - 来源：`outputs/getbrain/README.md`
-  - 依赖：—；被引用：—
-- [提出函数候选** —— 你认为这可能对应点火框架的哪个函数，或可能是一个新函数](../../../docs/getbrain-book-collision-guide-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-f59107c8fa94a12b / 提出函数候选** —— 你认为这可能对应点火框架的哪个函数，或可能是一个新函数
-  - 来源：`docs/getbrain-book-collision-guide-20260708.md`
-  - 依赖：—；被引用：—
-- [提议者信誉绑定](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0056-D7-%E6%8F%90%E8%AE%AE%E8%80%85%E4%BF%A1%E8%AA%89%E7%BB%91%E5%AE%9A.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：D7 / 提议者信誉绑定 / D7
-  - 来源：`统一函数总表/0056-D7-提议者信誉绑定.md`
-  - 依赖：A1, D1, D90；被引用：NFC-4a75bbc5af1a479b, NFC-543e98f84ef48bac, NFC-777ef04f9ca51193, NFC-a3287545a11630b8
-- [提议者姿态与信誉绑定，意识、退出成本、历史一致性决定姿态。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0056-D7-%E6%8F%90%E8%AE%AE%E8%80%85%E4%BF%A1%E8%AA%89%E7%BB%91%E5%AE%9A.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-7dee12de342118cf / 提议者姿态与信誉绑定，意识、退出成本、历史一致性决定姿态。
-  - 来源：`统一函数总表/0056-D7-提议者信誉绑定.md`
-  - 依赖：—；被引用：—
-- [提议者姿态与信誉绑定，意识、退出成本、历史一致性决定姿态。 **扩展注释 / Extended Annotation**](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-eaf36e6b2cb8d083 / 提议者姿态与信誉绑定，意识、退出成本、历史一致性决定姿态。 **扩展注释 / Extended Annotation**
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：—；被引用：—
-- [提议者姿态的激进程度](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0003-A2-%E6%8F%90%E8%AE%AE%E8%80%85%E5%A7%BF%E6%80%81%E7%9A%84%E6%BF%80%E8%BF%9B%E7%A8%8B%E5%BA%A6.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：A2 / 提议者姿态的激进程度 / A2
-  - 来源：`统一函数总表/0003-A2-提议者姿态的激进程度.md`
-  - 依赖：A1, A3, A8；被引用：D13, D600, T1, T3
-- [提议者是否有意识，二值变量。不可推导，作为框架起点。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0002-A1-I%28t%2CL%29%20%E6%8F%90%E8%AE%AE%E8%80%85%E6%84%8F%E8%AF%86.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-dbff600c7b195c8d / 提议者是否有意识，二值变量。不可推导，作为框架起点。
-  - 来源：`统一函数总表/0002-A1-I(t,L) 提议者意识.md`
   - 依赖：—；被引用：—

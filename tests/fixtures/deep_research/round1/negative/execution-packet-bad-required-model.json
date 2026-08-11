@@ -1,0 +1,26 @@
+{
+  "_record": "execution-packet",
+  "_expect": "required_model is a prohibited brand-name dependency",
+  "packet_id": "pkt-X",
+  "episode_id": "ep-X",
+  "target_ref": "main",
+  "target_ref_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "allowed_reads": [
+    "*"
+  ],
+  "allowed_writes": [],
+  "allowed_network": [],
+  "validation_commands": [
+    {
+      "command": "true",
+      "expected_exit_code": 0,
+      "timeout_seconds": 60
+    }
+  ],
+  "stop_states": [
+    "SUCCESS",
+    "FAILED_WITH_EVIDENCE"
+  ],
+  "forbidden_actions": [],
+  "required_model": "gpt-4o"
+}
