@@ -6,6 +6,8 @@ Version: `0.5.0` current; `0.4.0` and `0.3.0` remain historical merged versions.
 
 Status: `CURRENT_MERGED_L6_CAPABILITY`
 
+候选增补（Draft PR，尚未合并接受）：分支 `workbuddy/zhiyuan-writing-cognitive-migration-editorial-revision-r1-20260803`，状态 `DRAFT_PR_AWAITING_GPT_OWNER_REVIEW`。新增 L6 编辑修订子模块 `cognitive-migration editorial revision`，候选版本 `0.6.0-candidate`；不改写 0.5.0 历史版本，不新增层，不提高 L0—L5 claim。详见[认知迁移编辑修订子模块](./zhiyuan-writing-cognitive-migration-editorial-revision.md)。
+
 Operational location: L6 interpretation / application / publication. Generative provenance: maintainer-declared shared cognitive provenance with 点火 as a whole. Version 0.5.0 makes the method a target-language publication consumer of the project-wide Language–Thought Logic Plane; it does not add L7 or raise any L0-L5 claim.
 
 ## 命名与内部定义
@@ -311,6 +313,37 @@ Operational location: L6 interpretation / application / publication. Generative 
 - 无肉身锚点：不构成降级理由。
 - 不用压缩结尾：不构成降级理由。
 - 模板通过、CI 绿色或自动评分：不得表述为文学质量证明。
+
+## 候选增补 R1：认知迁移编辑修订子模块（Draft PR 待审，非合并版本）
+
+> 状态：`DRAFT_PR_AWAITING_GPT_OWNER_REVIEW`。候选版本 `0.6.0-candidate`。本增补不重写 0.5.0，不新增层，不提高 L0—L5 claim，不声称已被接受进入之元写作法。
+
+之元写作法 0.5.0 描述的是**生成纪律**：一篇作品怎样通过心智层级运动把结构带给读者。本子模块处在生成之后的另一阶段——**编辑修订**：草稿已经有稳定的事实边界、claim ceiling 和概念运动时，再重组这次运动在公共读者那里的可见方式。
+
+它不是新真值层、不是 Research OS 的一部分、不是语言—思维逻辑平面的替代、不是自动写作质量证明、不是每类文体的通用要求、也不是永久的“得到体”风格克隆。它的工作起点是：草稿已经生成；它的工作是让认知迁移在读者那里发生，而不由作者逐句机械宣布每个转折。
+
+该子模块把“认知迁移由结构承载，而非反复用‘不是……而是……’公式宣布”这一编辑实践，重建为之元写作法自身的体系，并提供：
+
+- 修订触发与草稿诊断（概念密集／史料堆砌／清单综述／已连贯仅局部修订）；
+- 冻结认知迁移不变量（读者读完有何不同）；
+- 三种非互斥的结构承载：递归追问、程度加深、视角切换；
+- 段落重建与选择性取舍；
+- 具体锚定（人、场景、物、数、引文，绝不杜撰）；
+- 去公式化对比（表面语法不应独自承担全部认知迁移）；
+- 开头、结尾与公共阅读契约；
+- 朗读与反套路审查。
+
+它与现有概念的对应：递归追问↔前视写作的下一层压力；程度加深↔概念递归重定义与纵向升层；视角切换↔横向换域但保持同一未命名问题；具体锚定↔起始承载点与低层保存；去公式化对比↔信息增益停止（换词不算迁移）；开头结尾契约↔回照增义与反向显影；反套路审查↔出版审计门中的语言—思维实现门。
+
+完整机制、与源笔记的来源边界、四个 before/after 微案例与审查结论见：
+
+- 模块文档：[认知迁移编辑修订子模块](./zhiyuan-writing-cognitive-migration-editorial-revision.md)
+- 来源与版权边界：[方法来源记录](./method-sources/cognitive-migration-editorial-revision-source.md)
+- 微案例：[编辑修订 before/after 范例](./zhiyuan-writing-cognitive-migration-editorial-revision-examples.md)
+- 后台规格增补：[之元写作法故事规格](../../templates/publication/zhiyuan-writing-spec.md)
+- 审查笔记：[编辑修订模块审查](../../reports/publication/zhiyuan-writing-cognitive-migration-editorial-revision-review.md)
+
+本增补不修改两篇现行作品（`when-an-emperor-manufactures-heaven.md`、`when-an-army-believes-its-own-back.md`），仅将它们作为有边界的短例引用。
 
 ## 使用入口
 
