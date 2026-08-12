@@ -1,0 +1,12 @@
+[
+  {
+    "number": 1,
+    "headRefName": "cand/a",
+    "baseRefName": "main"
+  },
+  {
+    "number": 2,
+    "headRefName": "fix/b",
+    "baseRefName": "cand/a"
+  }
+]

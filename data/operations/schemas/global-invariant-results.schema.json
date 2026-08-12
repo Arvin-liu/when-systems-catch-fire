@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "global-invariant-results.schema.json",
+  "title": "Global Invariant Results",
+  "type": "object",
+  "required": [
+    "checks",
+    "total",
+    "failed",
+    "verdict"
+  ],
+  "properties": {
+    "checks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "status",
+          "detail"
+        ]
+      }
+    },
+    "total": {
+      "type": "integer"
+    },
+    "failed": {
+      "type": "integer"
+    },
+    "verdict": {
+      "enum": [
+        "GLOBAL_INVARIANTS_CLOSED",
+        "GLOBAL_INVARIANTS_OPEN"
+      ]
+    }
+  }
+}

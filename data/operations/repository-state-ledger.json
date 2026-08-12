@@ -1,0 +1,1321 @@
+{
+  "schema_ref": "data/operations/schemas/repository-state-ledger.schema.json",
+  "built_by": "tools/operations/build_repository_state_ledger.py",
+  "deterministic_inputs": [
+    "campaign-inputs/open-prs-20260803.json",
+    "campaign-inputs/remote-branches-20260803.txt",
+    "campaign-inputs/tags-20260803.txt",
+    "campaign-inputs/tip-lock-20260803.txt",
+    "merged-iteration-ledger.jsonl",
+    "current-truth-projection.json",
+    "project-components.json"
+  ],
+  "baselines": {
+    "formal_main_at_build": "cac043d438bea6c4dc2c57c1169093df715ef5df",
+    "control_relay_current_campaign": "POINTFIRE-QWEN38MAX-WHOLE-REPOSITORY-STATE-RECONSTRUCTION-CANDIDATE-CONVERGENCE-GLOBAL-INVARIANT-CLOSURE-R1-20260803",
+    "locked_tips": {
+      "main": "cac043d438bea6c4dc2c57c1169093df715ef5df",
+      "task115_branch": "f56edf33474ffdee5fb992346159c500b3d97c83",
+      "pr189_branch": "046570c6b69c3817b53167bebf8cf09cbf75e6d0",
+      "r2_branch": "ae777859beb947750daa8ff45d9d617100669979",
+      "r1_branch": "495b4304d2cddcf7833c62ff47868a391ae7f29a",
+      "line_a": "16f3d83b51a3b72456ed1857d956ac76a5d33e14",
+      "line_b": "266d3fd74703b21a2c8aa540bce03e824c2f30a4",
+      "line_c": "e702a0e0628d07b5fc83c90ba933a3eafb623f23"
+    }
+  },
+  "accepted_iterations": [
+    {
+      "iteration": 104,
+      "terminal_tag": null,
+      "final_state": null,
+      "merged_ledger_status": "TERMINAL_SUCCESS",
+      "merged_ledger_merge_commit": "16f640045b3dc9d411f015a51e45de07299d31fc",
+      "terminalized": true,
+      "state_category": "ACCEPTED_HISTORICAL",
+      "consistency": "OK"
+    },
+    {
+      "iteration": 105,
+      "terminal_tag": null,
+      "final_state": null,
+      "merged_ledger_status": "TERMINAL_SUCCESS",
+      "merged_ledger_merge_commit": "9b5b4b9bfb243fe4cc52f7b163a9613ee6628321",
+      "terminalized": true,
+      "state_category": "ACCEPTED_HISTORICAL",
+      "consistency": "OK"
+    },
+    {
+      "iteration": 106,
+      "terminal_tag": "ignition/iterations/106/terminal-r1",
+      "final_state": null,
+      "merged_ledger_status": "PR_OPEN",
+      "merged_ledger_merge_commit": null,
+      "terminalized": true,
+      "state_category": "ACCEPTED_HISTORICAL",
+      "consistency": "OK"
+    },
+    {
+      "iteration": 107,
+      "terminal_tag": "ignition/iterations/107/terminal-r1",
+      "final_state": null,
+      "merged_ledger_status": null,
+      "merged_ledger_merge_commit": null,
+      "terminalized": true,
+      "state_category": "ACCEPTED_HISTORICAL",
+      "consistency": "OK"
+    },
+    {
+      "iteration": 108,
+      "terminal_tag": "ignition/iterations/108/terminal-r1",
+      "final_state": {
+        "path": "data/operations/iterations/108-FINAL_STATE.json",
+        "terminal_state": "TERMINAL_SUCCESS"
+      },
+      "merged_ledger_status": null,
+      "merged_ledger_merge_commit": null,
+      "terminalized": true,
+      "state_category": "ACCEPTED_HISTORICAL",
+      "consistency": "OK"
+    },
+    {
+      "iteration": 109,
+      "terminal_tag": "ignition/iterations/109/terminal-r1",
+      "final_state": {
+        "path": "data/operations/iterations/109/FINAL_STATE.json",
+        "terminal_state": "TERMINAL_TAG_AND_TERMINALIZATION_FIELDS_PRESENT",
+        "dialect_note": "FINAL_STATE dialect lacks top-level terminal_state; terminal tag + terminalization fields recorded instead"
+      },
+      "merged_ledger_status": null,
+      "merged_ledger_merge_commit": null,
+      "terminalized": true,
+      "state_category": "ACCEPTED_HISTORICAL",
+      "consistency": "OK"
+    },
+    {
+      "iteration": 110,
+      "terminal_tag": "ignition/iterations/110/terminal-r1",
+      "final_state": {
+        "path": "data/operations/iterations/110/FINAL_STATE.json",
+        "terminal_state": "TERMINAL_TAG_AND_TERMINALIZATION_FIELDS_PRESENT",
+        "dialect_note": "FINAL_STATE dialect lacks top-level terminal_state; terminal tag + terminalization fields recorded instead"
+      },
+      "merged_ledger_status": null,
+      "merged_ledger_merge_commit": null,
+      "terminalized": true,
+      "state_category": "ACCEPTED_HISTORICAL",
+      "consistency": "OK"
+    },
+    {
+      "iteration": 111,
+      "terminal_tag": "ignition/iterations/111/terminal-r1",
+      "final_state": {
+        "path": "data/operations/iterations/111/FINAL_STATE.json",
+        "terminal_state": "TERMINAL_SUCCESS"
+      },
+      "merged_ledger_status": null,
+      "merged_ledger_merge_commit": null,
+      "terminalized": true,
+      "state_category": "ACCEPTED_HISTORICAL",
+      "consistency": "OK"
+    },
+    {
+      "iteration": 112,
+      "terminal_tag": "ignition/iterations/112/terminal-r1",
+      "final_state": {
+        "path": "data/operations/iterations/112/FINAL_STATE.json",
+        "terminal_state": "TERMINAL_SUCCESS"
+      },
+      "merged_ledger_status": null,
+      "merged_ledger_merge_commit": null,
+      "terminalized": true,
+      "state_category": "ACCEPTED_HISTORICAL",
+      "consistency": "OK"
+    },
+    {
+      "iteration": 113,
+      "terminal_tag": "ignition/iterations/113/terminal-r1",
+      "final_state": {
+        "path": "data/operations/iterations/113/FINAL_STATE.json",
+        "terminal_state": "TERMINAL_SUCCESS"
+      },
+      "merged_ledger_status": null,
+      "merged_ledger_merge_commit": null,
+      "terminalized": true,
+      "state_category": "ACCEPTED_HISTORICAL",
+      "consistency": "OK"
+    },
+    {
+      "iteration": 114,
+      "terminal_tag": "ignition/iterations/114/terminal-r1",
+      "final_state": {
+        "path": "data/operations/iterations/114/FINAL_STATE.json",
+        "terminal_state": "TERMINAL_SUCCESS"
+      },
+      "merged_ledger_status": null,
+      "merged_ledger_merge_commit": null,
+      "terminalized": true,
+      "state_category": "ACCEPTED_CURRENT",
+      "consistency": "OK"
+    }
+  ],
+  "counts": {
+    "open_prs": 81,
+    "open_draft_candidates": 13,
+    "stacked_repair_candidates": 68,
+    "pr_families": 16,
+    "remote_branches": 215,
+    "tags": 94,
+    "terminal_iterations_from_ledger": 2,
+    "accepted_iterations_reconstructed": 11,
+    "research_branches": 2
+  },
+  "accepted_current": {
+    "iteration": 114,
+    "source": "data/operations/current-truth-projection.json",
+    "project_status_commit": "fb8d9c48ddf5c9236ae011323578f6965fe51d91",
+    "project_status_date": "2026-07-31",
+    "capability_evidence": [
+      {
+        "ids": [
+          "editorial-layer",
+          "corpus-relation-graph"
+        ],
+        "task": 104
+      },
+      {
+        "ids": [
+          "function-os-v0.2"
+        ],
+        "task": 105
+      }
+    ]
+  },
+  "accepted_historical": [
+    {
+      "task_number": 104,
+      "task_id": "IGNITION-NARRATIVE-SYNTHESIS-AND-LIVE-SYSTEM-MAP-R1-20260730",
+      "merge_commit": "16f640045b3dc9d411f015a51e45de07299d31fc",
+      "merged_timestamp": "2026-07-30",
+      "terminal_state": "IGNITION_NARRATIVE_SYNTHESIS_EDITORIAL_LAYER_AND_RELATION_ANALYSIS_PROPAGATED_AND_MERGED",
+      "state_category": "ACCEPTED_HISTORICAL"
+    },
+    {
+      "task_number": 105,
+      "task_id": "IGNITION-FUNCTION-OS-CORE-CAPABILITY-BENCHMARK-ADVERSARIAL-VALIDATION-R1-20260730",
+      "merge_commit": "9b5b4b9bfb243fe4cc52f7b163a9613ee6628321",
+      "merged_timestamp": "2026-07-30",
+      "terminal_state": "IGNITION_FUNCTION_OS_CORE_CAPABILITY_PREREGISTERED_BENCHMARKED_ADVERSARIALLY_VALIDATED_PROPAGATED_AND_MERGED",
+      "state_category": "ACCEPTED_HISTORICAL"
+    }
+  ],
+  "merged_not_current": [],
+  "open_draft_candidates": [
+    {
+      "pr_number": 190,
+      "title": "Task 115 Research Executive OS — Checkpoint C recovery Draft candidate (DO NOT MERGE)",
+      "base": "main",
+      "head": "qwen38max/task115-checkpoint-c-recovery-r1-20260803",
+      "head_tip_at_snapshot": "16f3d83b51a3b72456ed1857d956ac76a5d33e14",
+      "is_draft": true,
+      "url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/190",
+      "parent_pr": null,
+      "state_category": "OPEN_DRAFT_CANDIDATE",
+      "recommended_disposition": "REMAIN_DRAFT_NO_MERGE_WITHOUT_OWNER_ADJUDICATION"
+    },
+    {
+      "pr_number": 189,
+      "title": "Zhiyuan Writing Method: add cognitive-migration editorial revision module",
+      "base": "main",
+      "head": "workbuddy/zhiyuan-writing-cognitive-migration-editorial-revision-r1-20260803",
+      "head_tip_at_snapshot": "046570c6b69c3817b53167bebf8cf09cbf75e6d0",
+      "is_draft": true,
+      "url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/189",
+      "parent_pr": null,
+      "state_category": "OPEN_DRAFT_CANDIDATE",
+      "recommended_disposition": "REMAIN_DRAFT_NO_MERGE_WITHOUT_OWNER_ADJUDICATION"
+    },
+    {
+      "pr_number": 109,
+      "title": "[R3] symbolic-sphere — semantic evaluator + foundation repair",
+      "base": "main",
+      "head": "repair-r3/symbolic-sphere-r3-semantic-evaluator-contract",
+      "head_tip_at_snapshot": "01c8414797ab458b703a63a595f9af691a91fe9e",
+      "is_draft": true,
+      "url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/109",
+      "parent_pr": null,
+      "state_category": "OPEN_DRAFT_CANDIDATE",
+      "recommended_disposition": "REMAIN_DRAFT_NO_MERGE_WITHOUT_OWNER_ADJUDICATION"
+    },
+    {
+      "pr_number": 82,
+      "title": "Q34 repair-r1: bind commitment evidence and review authority",
+      "base": "main",
+      "head": "repair/121q34-r1-commitment-evidence-binding",
+      "head_tip_at_snapshot": "61c696f7cf74fed5525ec7da6cf8a7c4b544e5a8",
+      "is_draft": true,
+      "url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/82",
+      "parent_pr": null,
+      "state_category": "OPEN_DRAFT_CANDIDATE",
+      "recommended_disposition": "REMAIN_DRAFT_NO_MERGE_WITHOUT_OWNER_ADJUDICATION"
+    },
+    {
+      "pr_number": 65,
+      "title": "Q34-I1: Discovery–Commitment Boundary & Verifiable Commitment Gate",
+      "base": "main",
+      "head": "agent/121q34-i1-discovery-commitment-boundary",
+      "head_tip_at_snapshot": "06749dd118df7ade715b53f360e8177b09cdab49",
+      "is_draft": true,
+      "url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/65",
+      "parent_pr": null,
+      "state_category": "OPEN_DRAFT_CANDIDATE",
+      "recommended_disposition": "REMAIN_DRAFT_NO_MERGE_WITHOUT_OWNER_ADJUDICATION"
+    },
+    {
+      "pr_number": 21,
+      "title": "IGNITION-20260709-074: preview-link truth and dual front door finalization",
+      "base": "main",
+      "head": "records/ignition-074-preview-link-truth-20260712",
+      "head_tip_at_snapshot": "2795cdc825f8f28ea21e90881c3e0f03fc7b0c29",
+      "is_draft": true,
+      "url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/21",
+      "parent_pr": null,
+      "state_category": "OPEN_DRAFT_CANDIDATE",
+      "recommended_disposition": "REMAIN_DRAFT_NO_MERGE_WITHOUT_OWNER_ADJUDICATION"
+    },
+    {
+      "pr_number": 20,
+      "title": "IGNITION-20260709-073: dual front door, AI handoff, and live-link truth",
+      "base": "main",
+      "head": "records/ignition-073-dual-front-door-live-link-20260712",
+      "head_tip_at_snapshot": "101ef58b46c301d5b90eb36e6afd75c0373b60a1",
+      "is_draft": true,
+      "url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/20",
+      "parent_pr": null,
+      "state_category": "OPEN_DRAFT_CANDIDATE",
+      "recommended_disposition": "REMAIN_DRAFT_NO_MERGE_WITHOUT_OWNER_ADJUDICATION"
+    },
+    {
+      "pr_number": 19,
+      "title": "IGNITION-20260709-071: AI-first README, prompts, and truth-audit correction",
+      "base": "main",
+      "head": "records/ignition-071-ai-first-readme-20260712",
+      "head_tip_at_snapshot": "38e41ee0a82e470529372f4ece9264677e7b6f50",
+      "is_draft": true,
+      "url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/19",
+      "parent_pr": null,
+      "state_category": "OPEN_DRAFT_CANDIDATE",
+      "recommended_disposition": "REMAIN_DRAFT_NO_MERGE_WITHOUT_OWNER_ADJUDICATION"
+    },
+    {
+      "pr_number": 18,
+      "title": "IGNITION-20260709-069: exhaustive publication atlas and reader MVP",
+      "base": "main",
+      "head": "records/ignition-069-exhaustive-publication-atlas-20260712",
+      "head_tip_at_snapshot": "c360ff4b455e4a2ae1021630172d495cd7d79bfa",
+      "is_draft": true,
+      "url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/18",
+      "parent_pr": null,
+      "state_category": "OPEN_DRAFT_CANDIDATE",
+      "recommended_disposition": "REMAIN_DRAFT_NO_MERGE_WITHOUT_OWNER_ADJUDICATION"
+    },
+    {
+      "pr_number": 17,
+      "title": "IGNITION-20260709-067: open publication layer and publish story 57",
+      "base": "main",
+      "head": "records/ignition-067-open-publication-layer-20260712",
+      "head_tip_at_snapshot": "95396d99f94e6b739a208f1aece64b9d09f0d96e",
+      "is_draft": true,
+      "url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/17",
+      "parent_pr": null,
+      "state_category": "OPEN_DRAFT_CANDIDATE",
+      "recommended_disposition": "REMAIN_DRAFT_NO_MERGE_WITHOUT_OWNER_ADJUDICATION"
+    },
+    {
+      "pr_number": 16,
+      "title": "065: blocked convergence verdict for the two gap routes",
+      "base": "main",
+      "head": "audit/065-two-route-blocked-verdict-20260712",
+      "head_tip_at_snapshot": "4a1d543c87260acad9a66959cd091fe627bd2be3",
+      "is_draft": true,
+      "url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/16",
+      "parent_pr": null,
+      "state_category": "OPEN_DRAFT_CANDIDATE",
+      "recommended_disposition": "REMAIN_DRAFT_NO_MERGE_WITHOUT_OWNER_ADJUDICATION"
+    },
+    {
+      "pr_number": 5,
+      "title": "Protocol 层条目与两张表关系（12 条目+关系/映射/状态文档，非函数表改动）",
+      "base": "main",
+      "head": "protocol/entries-and-table-relation-20260709",
+      "head_tip_at_snapshot": "6b32981076a704561b56c62307fd6afa3ce57782",
+      "is_draft": true,
+      "url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/5",
+      "parent_pr": null,
+      "state_category": "OPEN_DRAFT_CANDIDATE",
+      "recommended_disposition": "REMAIN_DRAFT_NO_MERGE_WITHOUT_OWNER_ADJUDICATION"
+    },
+    {
+      "pr_number": 3,
+      "title": "审计：12 元协议函数 ID 映射审计（20260709）",
+      "base": "main",
+      "head": "audit/function-id-mapping-20260709",
+      "head_tip_at_snapshot": "9f06b0998d6f9b86709311e83d6e01ea1a18f5a1",
+      "is_draft": true,
+      "url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/3",
+      "parent_pr": null,
+      "state_category": "OPEN_DRAFT_CANDIDATE",
+      "recommended_disposition": "REMAIN_DRAFT_NO_MERGE_WITHOUT_OWNER_ADJUDICATION"
+    }
+  ],
+  "stacked_repair_candidates": [
+    {
+      "pr_number": 192,
+      "title": "Stacked Draft: R2 eight-track auditability & reproduction repair (DO NOT MERGE)",
+      "base": "research/eight-track-deep-validation-20260803-r2",
+      "head": "qwen38max/eight-track-r2-auditability-repair-r1-20260803",
+      "head_tip_at_snapshot": "e702a0e0628d07b5fc83c90ba933a3eafb623f23",
+      "is_draft": true,
+      "url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/192",
+      "parent_pr": null,
+      "state_category": "STACKED_REPAIR_CANDIDATE",
+      "recommended_disposition": "REMAIN_DRAFT_NO_MERGE_WITHOUT_OWNER_ADJUDICATION"
+    },
+    {
+      "pr_number": 191,
+      "title": "Stacked Draft: PR #189 independent review + CI root-cause repair (DO NOT MERGE)",
+      "base": "workbuddy/zhiyuan-writing-cognitive-migration-editorial-revision-r1-20260803",
+      "head": "qwen38max/pr189-independent-review-ci-repair-r1-20260803",
+      "head_tip_at_snapshot": "266d3fd74703b21a2c8aa540bce03e824c2f30a4",
+      "is_draft": true,
+      "url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/191",
+      "parent_pr": 189,
+      "state_category": "STACKED_REPAIR_CANDIDATE",
+      "recommended_disposition": "REMAIN_DRAFT_NO_MERGE_WITHOUT_OWNER_ADJUDICATION"
+    },
+    {
+      "pr_number": 132,
+      "title": "R5-A consolidated review: bind contract-bypass repair request",
+      "base": "architecture/ignition-r5a-life-integrity-charter-candidate-r1",
+      "head": "repair/ignition-r5a-consolidated-contract-bypass-request-r1-20260726",
+      "head_tip_at_snapshot": "5b3d653ae877160a0fad1307a8055a862ff72a0d",
+      "is_draft": true,
+      "url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/132",
+      "parent_pr": 130,
+      "state_category": "STACKED_REPAIR_CANDIDATE",
+      "recommended_disposition": "REMAIN_DRAFT_NO_MERGE_WITHOUT_OWNER_ADJUDICATION"
+    },
+    {
+      "pr_number": 130,
+      "title": "R5-A Life Integrity Charter Candidate R1 (Draft, stacked on R3-R4 closure)",
+      "base": "repair/adaptive-relational-runtime-r3-r4-metric-semantics-observability-closure-r1",
+      "head": "architecture/ignition-r5a-life-integrity-charter-candidate-r1",
+      "head_tip_at_snapshot": "019f52cc296b7417cc91ea97077fbf85d19ad7fc",
+      "is_draft": true,
+      "url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/130",
+      "parent_pr": 129,
+      "state_category": "STACKED_REPAIR_CANDIDATE",
+      "recommended_disposition": "REMAIN_DRAFT_NO_MERGE_WITHOUT_OWNER_ADJUDICATION"
+    },
+    {
+      "pr_number": 129,
+      "title": "R3R4-observability-closure: versioned metric/semantic correction layer (Draft, stacked on #128)",
+      "base": "repair/adaptive-relational-runtime-r4-metric-disclosure-relay-receipt-r1",
+      "head": "repair/adaptive-relational-runtime-r3-r4-metric-semantics-observability-closure-r1",
+      "head_tip_at_snapshot": "f236543dadcaf79ba9dba750fa21bd8b5c65a33a",
+      "is_draft": true,
+      "url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/129",
+      "parent_pr": 128,
+      "state_category": "STACKED_REPAIR_CANDIDATE",
+      "recommended_disposition": "REMAIN_DRAFT_NO_MERGE_WITHOUT_OWNER_ADJUDICATION"
+    },
+    {
+      "pr_number": 128,
+      "title": "R4 metric disclosure & relay receipt repair R1 (narrow, stacked on #127)",
+      "base": "analysis/adaptive-relational-runtime-r4-waic-self-reflection-r1",
+      "head": "repair/adaptive-relational-runtime-r4-metric-disclosure-relay-receipt-r1",
+      "head_tip_at_snapshot": "27af5f99e13d8217961cbc803520c648ce791c68",
+      "is_draft": true,
+      "url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/128",
+      "parent_pr": 127,
+      "state_category": "STACKED_REPAIR_CANDIDATE",
+      "recommended_disposition": "REMAIN_DRAFT_NO_MERGE_WITHOUT_OWNER_ADJUDICATION"
+    },
+    {
+      "pr_number": 127,
+      "title": "ARR R4 WAIC self-reflection & failure-attribution R1 (DRAFT, awaiting external review)",
+      "base": "runtime/adaptive-relational-runtime-r3-waic-corpus-scale-r1",
+      "head": "analysis/adaptive-relational-runtime-r4-waic-self-reflection-r1",
+      "head_tip_at_snapshot": "1d30f64d3e18e137c306e550c4b9ebe30b151734",
+      "is_draft": true,
+      "url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/127",
+      "parent_pr": 126,
+      "state_category": "STACKED_REPAIR_CANDIDATE",
+      "recommended_disposition": "REMAIN_DRAFT_NO_MERGE_WITHOUT_OWNER_ADJUDICATION"
+    },
+    {
+      "pr_number": 126,
+      "title": "R3 WAIC Corpus-Scale Measurement Run R1 (Draft)",
+      "base": "repair/adaptive-relational-runtime-r2-q33-era-resolver-repair-r1",
+      "head": "runtime/adaptive-relational-runtime-r3-waic-corpus-scale-r1",
+      "head_tip_at_snapshot": "d6719a74859f278b6166b11e6bd5235c2fa46879",
+      "is_draft": true,
+      "url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/126",
+      "parent_pr": 125,
+      "state_category": "STACKED_REPAIR_CANDIDATE",
+      "recommended_disposition": "REMAIN_DRAFT_NO_MERGE_WITHOUT_OWNER_ADJUDICATION"
+    },
+    {
+      "pr_number": 125,
+      "title": "ARR R2 Q33 Era Resolver Repair R1 (Draft)",
+      "base": "repair/adaptive-relational-runtime-r2-human-front-door-sync-r1",
+      "head": "repair/adaptive-relational-runtime-r2-q33-era-resolver-repair-r1",
+      "head_tip_at_snapshot": "a08e802a6fea51ebf884419e4825a4b32d79773e",
+      "is_draft": true,
+      "url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/125",
+      "parent_pr": 124,
+      "state_category": "STACKED_REPAIR_CANDIDATE",
+      "recommended_disposition": "REMAIN_DRAFT_NO_MERGE_WITHOUT_OWNER_ADJUDICATION"
+    },
+    {
+      "pr_number": 124,
+      "title": "ARR R2 Human-Front-Door Sync Repair R1 (Draft)",
+      "base": "repair/adaptive-relational-runtime-r2-positive-routing-ci-r1",
+      "head": "repair/adaptive-relational-runtime-r2-human-front-door-sync-r1",
+      "head_tip_at_snapshot": "81e6054baf5dd0df0422c0fd42f21854073d75dd",
+      "is_draft": true,
+      "url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/124",
+      "parent_pr": 123,
+      "state_category": "STACKED_REPAIR_CANDIDATE",
+      "recommended_disposition": "REMAIN_DRAFT_NO_MERGE_WITHOUT_OWNER_ADJUDICATION"
+    },
+    {
+      "pr_number": 123,
+      "title": "ARR R2 Positive Routing CI Repair R1 (draft, awaiting external review)",
+      "base": "repair/adaptive-relational-runtime-r2-positive-routing-r1",
+      "head": "repair/adaptive-relational-runtime-r2-positive-routing-ci-r1",
+      "head_tip_at_snapshot": "5771d6c1174cc5c3ae72d1441c1c26b49951d79b",
+      "is_draft": true,
+      "url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/123",
+      "parent_pr": 122,
+      "state_category": "STACKED_REPAIR_CANDIDATE",
+      "recommended_disposition": "REMAIN_DRAFT_NO_MERGE_WITHOUT_OWNER_ADJUDICATION"
+    },
+    {
+      "pr_number": 122,
+      "title": "repair: ARR R2 positive routing repair R1 (DRAFT, awaiting external review)",
+      "base": "runtime/adaptive-relational-runtime-r2-real-object-pilot",
+      "head": "repair/adaptive-relational-runtime-r2-positive-routing-r1",
+      "head_tip_at_snapshot": "1908878c051de15e5934d38e017d469c0430cc83",
+      "is_draft": true,
+      "url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/122",
+      "parent_pr": 121,
+      "state_category": "STACKED_REPAIR_CANDIDATE",
+      "recommended_disposition": "REMAIN_DRAFT_NO_MERGE_WITHOUT_OWNER_ADJUDICATION"
+    },
+    {
+      "pr_number": 121,
+      "title": "ARR R2 — Real Object Pilot (stacked Draft on PR #120)",
+      "base": "architecture/adaptive-relational-runtime-r1-scaffold",
+      "head": "runtime/adaptive-relational-runtime-r2-real-object-pilot",
+      "head_tip_at_snapshot": "bfe90c65a80619e6c6c81586a2befb15796b93bb",
+      "is_draft": true,
+      "url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/121",
+      "parent_pr": 120,
+      "state_category": "STACKED_REPAIR_CANDIDATE",
+      "recommended_disposition": "REMAIN_DRAFT_NO_MERGE_WITHOUT_OWNER_ADJUDICATION"
+    },
+    {
+      "pr_number": 120,
+      "title": "Draft: Adaptive Relational Runtime R1 Scaffold (stacked on PR #119)",
+      "base": "production/ignition-run-promote-evolve-r1",
+      "head": "architecture/adaptive-relational-runtime-r1-scaffold",
+      "head_tip_at_snapshot": "a0d6c46cd55ef2dde49d13f958b230f71f619e73",
+      "is_draft": true,
+      "url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/120",
+      "parent_pr": 119,
+      "state_category": "STACKED_REPAIR_CANDIDATE",
+      "recommended_disposition": "REMAIN_DRAFT_NO_MERGE_WITHOUT_OWNER_ADJUDICATION"
+    },
+    {
+      "pr_number": 119,
+      "title": "Draft: production RUN/PROMOTE/EVOLVE runtime (ignition-rpe-r1) — awaiting external review",
+      "base": "repair-r3/scientific-context-protocol-r3-semantic-evaluator",
+      "head": "production/ignition-run-promote-evolve-r1",
+      "head_tip_at_snapshot": "6723cdfaf52873516c564c324066361b257cdf52",
+      "is_draft": true,
+      "url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/119",
+      "parent_pr": 118,
+      "state_category": "STACKED_REPAIR_CANDIDATE",
+      "recommended_disposition": "REMAIN_DRAFT_NO_MERGE_WITHOUT_OWNER_ADJUDICATION"
+    },
+    {
+      "pr_number": 118,
+      "title": "[R3] open_scientific_context_protocol — semantic evaluator + foundation repair",
+      "base": "repair-r3/q44-r3-semantic-evaluator",
+      "head": "repair-r3/scientific-context-protocol-r3-semantic-evaluator",
+      "head_tip_at_snapshot": "833c3e5f25c25c8f225ade19e6b3111f1a60e695",
+      "is_draft": true,
+      "url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/118",
+      "parent_pr": 117,
+      "state_category": "STACKED_REPAIR_CANDIDATE",
+      "recommended_disposition": "REMAIN_DRAFT_NO_MERGE_WITHOUT_OWNER_ADJUDICATION"
+    },
+    {
+      "pr_number": 117,
+      "title": "[R3] coaching_commitment_subcapability — semantic evaluator + foundation repair",
+      "base": "repair-r3/q43-r3-semantic-evaluator",
+      "head": "repair-r3/q44-r3-semantic-evaluator",
+      "head_tip_at_snapshot": "045bf233e2d22124c903eeff33df42e1b091a1a1",
+      "is_draft": true,
+      "url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/117",
+      "parent_pr": 116,
+      "state_category": "STACKED_REPAIR_CANDIDATE",
+      "recommended_disposition": "REMAIN_DRAFT_NO_MERGE_WITHOUT_OWNER_ADJUDICATION"
+    },
+    {
+      "pr_number": 116,
+      "title": "[R3] graded_intervention_escalation — semantic evaluator + foundation repair",
+      "base": "repair-r3/q42-r3-semantic-evaluator",
+      "head": "repair-r3/q43-r3-semantic-evaluator",
+      "head_tip_at_snapshot": "25c240835c8d753405cb4f3d34448462a56f2e42",
+      "is_draft": true,
+      "url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/116",
+      "parent_pr": 115,
+      "state_category": "STACKED_REPAIR_CANDIDATE",
+      "recommended_disposition": "REMAIN_DRAFT_NO_MERGE_WITHOUT_OWNER_ADJUDICATION"
+    },
+    {
+      "pr_number": 115,
+      "title": "[R3] counterfactual_unrealized_path — semantic evaluator + foundation repair",
+      "base": "repair-r3/d2-r3-semantic-evaluator",
+      "head": "repair-r3/q42-r3-semantic-evaluator",
+      "head_tip_at_snapshot": "c043b8f9050a4a5b7d11f5bd3df30f346aaad1da",
+      "is_draft": true,
+      "url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/115",
+      "parent_pr": 114,
+      "state_category": "STACKED_REPAIR_CANDIDATE",
+      "recommended_disposition": "REMAIN_DRAFT_NO_MERGE_WITHOUT_OWNER_ADJUDICATION"
+    },
+    {
+      "pr_number": 114,
+      "title": "[R3] multi_history_world_projection — semantic evaluator + foundation repair",
+      "base": "repair-r3/f15-d1-r3-semantic-evaluator",
+      "head": "repair-r3/d2-r3-semantic-evaluator",
+      "head_tip_at_snapshot": "36ee4f58b21541aadd33211818234bb7d58b3e01",
+      "is_draft": true,
+      "url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/114",
+      "parent_pr": 113,
+      "state_category": "STACKED_REPAIR_CANDIDATE",
+      "recommended_disposition": "REMAIN_DRAFT_NO_MERGE_WITHOUT_OWNER_ADJUDICATION"
+    },
+    {
+      "pr_number": 113,
+      "title": "[R3] latent_system_identifiability — semantic evaluator + foundation repair",
+      "base": "repair-r3/q41-r3-semantic-evaluator",
+      "head": "repair-r3/f15-d1-r3-semantic-evaluator",
+      "head_tip_at_snapshot": "7f7bceb5b4671af492d503b452b0fa40ba8f3287",
+      "is_draft": true,
+      "url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/113",
+      "parent_pr": 112,
+      "state_category": "STACKED_REPAIR_CANDIDATE",
+      "recommended_disposition": "REMAIN_DRAFT_NO_MERGE_WITHOUT_OWNER_ADJUDICATION"
+    },
+    {
+      "pr_number": 112,
+      "title": "[R3] world_feedback_anomaly — semantic evaluator + foundation repair",
+      "base": "repair-r3/scientific-metacognition-r3-semantic-evaluator",
+      "head": "repair-r3/q41-r3-semantic-evaluator",
+      "head_tip_at_snapshot": "e803f3406ab46fc0353f8b7b8572595abcc62470",
+      "is_draft": true,
+      "url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/112",
+      "parent_pr": 111,
+      "state_category": "STACKED_REPAIR_CANDIDATE",
+      "recommended_disposition": "REMAIN_DRAFT_NO_MERGE_WITHOUT_OWNER_ADJUDICATION"
+    },
+    {
+      "pr_number": 111,
+      "title": "[R3] epistemic_state_control_plane — semantic evaluator + foundation repair",
+      "base": "repair-r3/decision-integrity-r3-semantic-evaluator",
+      "head": "repair-r3/scientific-metacognition-r3-semantic-evaluator",
+      "head_tip_at_snapshot": "371b550fc608a423a72975afe116cd10b173a47e",
+      "is_draft": true,
+      "url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/111",
+      "parent_pr": 110,
+      "state_category": "STACKED_REPAIR_CANDIDATE",
+      "recommended_disposition": "REMAIN_DRAFT_NO_MERGE_WITHOUT_OWNER_ADJUDICATION"
+    },
+    {
+      "pr_number": 110,
+      "title": "[R3] decision-integrity — semantic evaluator + foundation repair",
+      "base": "repair-r3/symbolic-sphere-r3-semantic-evaluator-contract",
+      "head": "repair-r3/decision-integrity-r3-semantic-evaluator",
+      "head_tip_at_snapshot": "d98a33472ba10de15dbfeb11d2e72fdfa7daeb23",
+      "is_draft": true,
+      "url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/110",
+      "parent_pr": 109,
+      "state_category": "STACKED_REPAIR_CANDIDATE",
+      "recommended_disposition": "REMAIN_DRAFT_NO_MERGE_WITHOUT_OWNER_ADJUDICATION"
+    },
+    {
+      "pr_number": 108,
+      "title": "Draft: SCIENTIFIC-CONTEXT-PROTOCOL repair-r2 — bind real predecessor r2 head (RB09-DIRECT-PREDECESSOR-BINDING)",
+      "base": "repair-r2/q44-r2-consent-semantics",
+      "head": "repair-r2/scientific-context-protocol-r2-context-semantics",
+      "head_tip_at_snapshot": "20e598d75d8c40ed3e8af6aa1de14320c1cd0d3a",
+      "is_draft": true,
+      "url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/108",
+      "parent_pr": 107,
+      "state_category": "STACKED_REPAIR_CANDIDATE",
+      "recommended_disposition": "REMAIN_DRAFT_NO_MERGE_WITHOUT_OWNER_ADJUDICATION"
+    },
+    {
+      "pr_number": 107,
+      "title": "Draft: Q44 repair-r2 — bind real predecessor r2 head (RB09-DIRECT-PREDECESSOR-BINDING)",
+      "base": "repair-r2/q43-r2-escalation-semantics",
+      "head": "repair-r2/q44-r2-consent-semantics",
+      "head_tip_at_snapshot": "7532b4b34cf841c09faab8c835c5fc7f896d30d8",
+      "is_draft": true,
+      "url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/107",
+      "parent_pr": 106,
+      "state_category": "STACKED_REPAIR_CANDIDATE",
+      "recommended_disposition": "REMAIN_DRAFT_NO_MERGE_WITHOUT_OWNER_ADJUDICATION"
+    },
+    {
+      "pr_number": 106,
+      "title": "Draft: Q43 repair-r2 — bind real predecessor r2 head (RB09-DIRECT-PREDECESSOR-BINDING)",
+      "base": "repair-r2/q42-r2-counterfactual-semantics",
+      "head": "repair-r2/q43-r2-escalation-semantics",
+      "head_tip_at_snapshot": "e5181c83efba68f847b55e13c7b5a1ee1fd6888e",
+      "is_draft": true,
+      "url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/106",
+      "parent_pr": 105,
+      "state_category": "STACKED_REPAIR_CANDIDATE",
+      "recommended_disposition": "REMAIN_DRAFT_NO_MERGE_WITHOUT_OWNER_ADJUDICATION"
+    },
+    {
+      "pr_number": 105,
+      "title": "Draft: Q42 repair-r2 — bind real predecessor r2 head (RB09-DIRECT-PREDECESSOR-BINDING)",
+      "base": "repair-r2/d2-r2-multihistory-semantics",
+      "head": "repair-r2/q42-r2-counterfactual-semantics",
+      "head_tip_at_snapshot": "3283ef6e76788b30a467467083f0d5ad7086b5a0",
+      "is_draft": true,
+      "url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/105",
+      "parent_pr": 104,
+      "state_category": "STACKED_REPAIR_CANDIDATE",
+      "recommended_disposition": "REMAIN_DRAFT_NO_MERGE_WITHOUT_OWNER_ADJUDICATION"
+    },
+    {
+      "pr_number": 104,
+      "title": "Draft: D2 repair-r2 — bind real predecessor r2 head (RB09-DIRECT-PREDECESSOR-BINDING)",
+      "base": "repair-r2/f15-d1-r2-identifiability-semantics",
+      "head": "repair-r2/d2-r2-multihistory-semantics",
+      "head_tip_at_snapshot": "ea447ed7f6331f8ed5e58526f4c2341d3a41d6a6",
+      "is_draft": true,
+      "url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/104",
+      "parent_pr": 103,
+      "state_category": "STACKED_REPAIR_CANDIDATE",
+      "recommended_disposition": "REMAIN_DRAFT_NO_MERGE_WITHOUT_OWNER_ADJUDICATION"
+    },
+    {
+      "pr_number": 103,
+      "title": "Draft: F15-D1 repair-r2 — bind real predecessor r2 head (RB09-DIRECT-PREDECESSOR-BINDING)",
+      "base": "repair-r2/q41-r2-anomaly-semantics",
+      "head": "repair-r2/f15-d1-r2-identifiability-semantics",
+      "head_tip_at_snapshot": "95405ae791dc0359c2ab6597bfd7c50224c2c59c",
+      "is_draft": true,
+      "url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/103",
+      "parent_pr": 102,
+      "state_category": "STACKED_REPAIR_CANDIDATE",
+      "recommended_disposition": "REMAIN_DRAFT_NO_MERGE_WITHOUT_OWNER_ADJUDICATION"
+    },
+    {
+      "pr_number": 102,
+      "title": "Draft: Q41 repair-r2 — bind real predecessor r2 head (RB09-DIRECT-PREDECESSOR-BINDING)",
+      "base": "repair-r2/scientific-metacognition-r2-parent-and-semantics",
+      "head": "repair-r2/q41-r2-anomaly-semantics",
+      "head_tip_at_snapshot": "e92e7d3eadbb67da288077052f635e3c052bd3a1",
+      "is_draft": true,
+      "url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/102",
+      "parent_pr": 101,
+      "state_category": "STACKED_REPAIR_CANDIDATE",
+      "recommended_disposition": "REMAIN_DRAFT_NO_MERGE_WITHOUT_OWNER_ADJUDICATION"
+    },
+    {
+      "pr_number": 101,
+      "title": "Draft: SCIENTIFIC-METACOGNITION repair-r2 — bind real predecessor r2 head (RB09-DIRECT-PREDECESSOR-BINDING)",
+      "base": "repair-r2/decision-integrity-r2-parent-and-semantics",
+      "head": "repair-r2/scientific-metacognition-r2-parent-and-semantics",
+      "head_tip_at_snapshot": "25f937ea8d53b4b14f31fc9c8779995f3c516bac",
+      "is_draft": true,
+      "url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/101",
+      "parent_pr": 100,
+      "state_category": "STACKED_REPAIR_CANDIDATE",
+      "recommended_disposition": "REMAIN_DRAFT_NO_MERGE_WITHOUT_OWNER_ADJUDICATION"
+    },
+    {
+      "pr_number": 100,
+      "title": "Draft: DECISION-INTEGRITY repair-r2 — bind real SYMBOLIC-SPHERE r2 head (RB09-DIRECT-PREDECESSOR-BINDING)",
+      "base": "repair-r2/symbolic-sphere-r2-shared-engine-hardening",
+      "head": "repair-r2/decision-integrity-r2-parent-and-semantics",
+      "head_tip_at_snapshot": "1a51d1b3fd1bab4eb1c80a7429e0b629bcae69a9",
+      "is_draft": true,
+      "url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/100",
+      "parent_pr": 99,
+      "state_category": "STACKED_REPAIR_CANDIDATE",
+      "recommended_disposition": "REMAIN_DRAFT_NO_MERGE_WITHOUT_OWNER_ADJUDICATION"
+    },
+    {
+      "pr_number": 99,
+      "title": "B09 SYMBOLIC-SPHERE repair-r2: fail-closed shared governance engine [DRAFT]",
+      "base": "repair/121q39-r1-repair-effect-recomputation",
+      "head": "repair-r2/symbolic-sphere-r2-shared-engine-hardening",
+      "head_tip_at_snapshot": "68ea9bf4d9987a9ec6c4d3a14ec6f9899618ee04",
+      "is_draft": true,
+      "url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/99",
+      "parent_pr": 87,
+      "state_category": "STACKED_REPAIR_CANDIDATE",
+      "recommended_disposition": "REMAIN_DRAFT_NO_MERGE_WITHOUT_OWNER_ADJUDICATION"
+    },
+    {
+      "pr_number": 98,
+      "title": "R1(SCI-R1): scientific context protocol evidence-binding repair (Draft PR #98)",
+      "base": "repair/q44-r1-coaching-consent-binding",
+      "head": "repair/scientific-context-protocol-r1-context-capability-binding",
+      "head_tip_at_snapshot": "50cdf4ca95337d5adbd900140c53dfc3aaf422f4",
+      "is_draft": true,
+      "url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/98",
+      "parent_pr": 97,
+      "state_category": "STACKED_REPAIR_CANDIDATE",
+      "recommended_disposition": "REMAIN_DRAFT_NO_MERGE_WITHOUT_OWNER_ADJUDICATION"
+    },
+    {
+      "pr_number": 97,
+      "title": "R1(Q44-I1): coaching consent evidence-binding repair (Draft PR #97)",
+      "base": "repair/q43-r1-escalation-authority-binding",
+      "head": "repair/q44-r1-coaching-consent-binding",
+      "head_tip_at_snapshot": "4d15ccaf2e574248c0e224c05716c3af46203a39",
+      "is_draft": true,
+      "url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/97",
+      "parent_pr": 96,
+      "state_category": "STACKED_REPAIR_CANDIDATE",
+      "recommended_disposition": "REMAIN_DRAFT_NO_MERGE_WITHOUT_OWNER_ADJUDICATION"
+    },
+    {
+      "pr_number": 96,
+      "title": "R1(Q43-I1): escalation authority evidence-binding repair (Draft PR #96)",
+      "base": "repair/q42-r1-counterfactual-ledger-binding",
+      "head": "repair/q43-r1-escalation-authority-binding",
+      "head_tip_at_snapshot": "5efbce81e96d90d5ebd246891e4762928365d6b8",
+      "is_draft": true,
+      "url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/96",
+      "parent_pr": 95,
+      "state_category": "STACKED_REPAIR_CANDIDATE",
+      "recommended_disposition": "REMAIN_DRAFT_NO_MERGE_WITHOUT_OWNER_ADJUDICATION"
+    },
+    {
+      "pr_number": 95,
+      "title": "R1(Q42-I1): counterfactual ledger evidence-binding repair (Draft PR #95)",
+      "base": "repair/d2-r1-multi-history-world-projection",
+      "head": "repair/q42-r1-counterfactual-ledger-binding",
+      "head_tip_at_snapshot": "2f7777b26e1d52c5e6fff44fbf3d079cb38bdb98",
+      "is_draft": true,
+      "url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/95",
+      "parent_pr": 94,
+      "state_category": "STACKED_REPAIR_CANDIDATE",
+      "recommended_disposition": "REMAIN_DRAFT_NO_MERGE_WITHOUT_OWNER_ADJUDICATION"
+    },
+    {
+      "pr_number": 94,
+      "title": "R1(D2-I1): multi-history world projection evidence-binding repair (Draft PR #94)",
+      "base": "repair/f15-d1-r1-latent-system-identifiability",
+      "head": "repair/d2-r1-multi-history-world-projection",
+      "head_tip_at_snapshot": "1904628103d8c23133107d501a22e3f17d08221d",
+      "is_draft": true,
+      "url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/94",
+      "parent_pr": 93,
+      "state_category": "STACKED_REPAIR_CANDIDATE",
+      "recommended_disposition": "REMAIN_DRAFT_NO_MERGE_WITHOUT_OWNER_ADJUDICATION"
+    },
+    {
+      "pr_number": 93,
+      "title": "R1(F15-D1-I1): latent system identifiability evidence-binding repair (Draft PR #93)",
+      "base": "repair/q41-r1-anomaly-evidence-binding",
+      "head": "repair/f15-d1-r1-latent-system-identifiability",
+      "head_tip_at_snapshot": "f0f7d7ff9dda620d59ad1dd1b504bcd503fe5c09",
+      "is_draft": true,
+      "url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/93",
+      "parent_pr": 92,
+      "state_category": "STACKED_REPAIR_CANDIDATE",
+      "recommended_disposition": "REMAIN_DRAFT_NO_MERGE_WITHOUT_OWNER_ADJUDICATION"
+    },
+    {
+      "pr_number": 92,
+      "title": "Q41-I1-REPAIR-R1: world-feedback anomaly evidence bound to immutable Git objects (Draft)",
+      "base": "repair/scientific-metacognition-r1-epistemic-state-binding",
+      "head": "repair/q41-r1-anomaly-evidence-binding",
+      "head_tip_at_snapshot": "da9c4e2a6b8c0f757aa676814fda7c86d4ac2558",
+      "is_draft": true,
+      "url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/92",
+      "parent_pr": 91,
+      "state_category": "STACKED_REPAIR_CANDIDATE",
+      "recommended_disposition": "REMAIN_DRAFT_NO_MERGE_WITHOUT_OWNER_ADJUDICATION"
+    },
+    {
+      "pr_number": 91,
+      "title": "repair-r1: SCIENTIFIC-METACOGNITION-I1 epistemic-state evidence->Git-object binding (fail-closed)",
+      "base": "repair/decision-integrity-r1-principle-process-binding",
+      "head": "repair/scientific-metacognition-r1-epistemic-state-binding",
+      "head_tip_at_snapshot": "183f4343a036d0dbb20ae7df9dd96be97bcd3fc3",
+      "is_draft": true,
+      "url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/91",
+      "parent_pr": 89,
+      "state_category": "STACKED_REPAIR_CANDIDATE",
+      "recommended_disposition": "REMAIN_DRAFT_NO_MERGE_WITHOUT_OWNER_ADJUDICATION"
+    },
+    {
+      "pr_number": 90,
+      "title": "121Q36-INT-REPAIR-R1: intervention content-authority binding (recovered)",
+      "base": "repair/121q36-obs-r1-evidence-resolution",
+      "head": "repair/121q36-int-r1-content-authority-binding",
+      "head_tip_at_snapshot": "e4ca5350a3c68e61031e3205eaca9f2665799a08",
+      "is_draft": true,
+      "url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/90",
+      "parent_pr": 84,
+      "state_category": "STACKED_REPAIR_CANDIDATE",
+      "recommended_disposition": "REMAIN_DRAFT_NO_MERGE_WITHOUT_OWNER_ADJUDICATION"
+    },
+    {
+      "pr_number": 89,
+      "title": "Draft: DECISION-INTEGRITY-I1 repair-r1 — evidence-binding reference integrity",
+      "base": "repair/symbolic-sphere-r1-reference-integrity",
+      "head": "repair/decision-integrity-r1-principle-process-binding",
+      "head_tip_at_snapshot": "25bd2ca3e14a2693e3c9fac49a2547e1aa7ca9a8",
+      "is_draft": true,
+      "url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/89",
+      "parent_pr": 88,
+      "state_category": "STACKED_REPAIR_CANDIDATE",
+      "recommended_disposition": "REMAIN_DRAFT_NO_MERGE_WITHOUT_OWNER_ADJUDICATION"
+    },
+    {
+      "pr_number": 88,
+      "title": "REPAIR-R1 (Phase 0): SYMBOLIC-SPHERE reference-integrity — frozen head 4ec76976 [DRAFT]",
+      "base": "repair/121q39-r1-repair-effect-recomputation",
+      "head": "repair/symbolic-sphere-r1-reference-integrity",
+      "head_tip_at_snapshot": "4ec769768d31c1fd0d7a6c066d235b4064606652",
+      "is_draft": true,
+      "url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/88",
+      "parent_pr": 87,
+      "state_category": "STACKED_REPAIR_CANDIDATE",
+      "recommended_disposition": "REMAIN_DRAFT_NO_MERGE_WITHOUT_OWNER_ADJUDICATION"
+    },
+    {
+      "pr_number": 87,
+      "title": "REPAIR-R1 (Phase 0): 121Q39 failure-memory repair propagation — frozen head 99ab601a [DRAFT]",
+      "base": "repair/121q38-r1-retrieved-byte-binding",
+      "head": "repair/121q39-r1-repair-effect-recomputation",
+      "head_tip_at_snapshot": "99ab601a48dd45972b238e468bc8e3002d648c98",
+      "is_draft": true,
+      "url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/87",
+      "parent_pr": 86,
+      "state_category": "STACKED_REPAIR_CANDIDATE",
+      "recommended_disposition": "REMAIN_DRAFT_NO_MERGE_WITHOUT_OWNER_ADJUDICATION"
+    },
+    {
+      "pr_number": 86,
+      "title": "REPAIR-R1 (Phase 0): 121Q38 structural-retrieval boundary — frozen head d5cf0f08 [DRAFT]",
+      "base": "repair/121q37-r1-final-head-and-source-binding",
+      "head": "repair/121q38-r1-retrieved-byte-binding",
+      "head_tip_at_snapshot": "d5cf0f0846206d3c47463f66697d2d8bf7d4aca3",
+      "is_draft": true,
+      "url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/86",
+      "parent_pr": 85,
+      "state_category": "STACKED_REPAIR_CANDIDATE",
+      "recommended_disposition": "REMAIN_DRAFT_NO_MERGE_WITHOUT_OWNER_ADJUDICATION"
+    },
+    {
+      "pr_number": 85,
+      "title": "REPAIR-R1 (Phase 0): 121Q37 analogy-audit transportability — frozen head 7a01b195 [DRAFT]",
+      "base": "repair/121q36-int-r1-content-authority-binding",
+      "head": "repair/121q37-r1-final-head-and-source-binding",
+      "head_tip_at_snapshot": "7a01b1958c3f6b6eff559be85ec5e47eecff313c",
+      "is_draft": true,
+      "url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/85",
+      "parent_pr": 90,
+      "state_category": "STACKED_REPAIR_CANDIDATE",
+      "recommended_disposition": "REMAIN_DRAFT_NO_MERGE_WITHOUT_OWNER_ADJUDICATION"
+    },
+    {
+      "pr_number": 84,
+      "title": "REPAIR-R1 (Phase 0): 121Q36-OBS evidence resolution — frozen head 9087e494 [DRAFT]",
+      "base": "repair/121q35-r1-authority-resolution",
+      "head": "repair/121q36-obs-r1-evidence-resolution",
+      "head_tip_at_snapshot": "9087e494c782b405b5bbdb0d1ae4bd1707792d95",
+      "is_draft": true,
+      "url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/84",
+      "parent_pr": 83,
+      "state_category": "STACKED_REPAIR_CANDIDATE",
+      "recommended_disposition": "REMAIN_DRAFT_NO_MERGE_WITHOUT_OWNER_ADJUDICATION"
+    },
+    {
+      "pr_number": 83,
+      "title": "Q35 repair-r1: bind claims and canonical authority",
+      "base": "repair/121q34-r1-commitment-evidence-binding",
+      "head": "repair/121q35-r1-authority-resolution",
+      "head_tip_at_snapshot": "167f254e637259d57b7ce09623de982dda527f54",
+      "is_draft": true,
+      "url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/83",
+      "parent_pr": 82,
+      "state_category": "STACKED_REPAIR_CANDIDATE",
+      "recommended_disposition": "REMAIN_DRAFT_NO_MERGE_WITHOUT_OWNER_ADJUDICATION"
+    },
+    {
+      "pr_number": 81,
+      "title": "SCIENTIFIC-CONTEXT-PROTOCOL-I1: Open Scientific Context Protocol",
+      "base": "agent/q44-i1-coaching-commitment-subcapability",
+      "head": "agent/scientific-context-protocol-i1-open-research-context",
+      "head_tip_at_snapshot": "77adc367b560a1e004884fe96b470fa7615e5493",
+      "is_draft": true,
+      "url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/81",
+      "parent_pr": 80,
+      "state_category": "STACKED_REPAIR_CANDIDATE",
+      "recommended_disposition": "REMAIN_DRAFT_NO_MERGE_WITHOUT_OWNER_ADJUDICATION"
+    },
+    {
+      "pr_number": 80,
+      "title": "Q44-I1: Coaching / Commitment Subcapability",
+      "base": "agent/q43-i1-graded-intervention-professional-escalation",
+      "head": "agent/q44-i1-coaching-commitment-subcapability",
+      "head_tip_at_snapshot": "e603e4503b424cea7c85639ec83f96b7e1bc7efb",
+      "is_draft": true,
+      "url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/80",
+      "parent_pr": 79,
+      "state_category": "STACKED_REPAIR_CANDIDATE",
+      "recommended_disposition": "REMAIN_DRAFT_NO_MERGE_WITHOUT_OWNER_ADJUDICATION"
+    },
+    {
+      "pr_number": 79,
+      "title": "Q43-I1: Graded Intervention & Professional Escalation",
+      "base": "agent/q42-i1-counterfactual-unrealized-path-ledger",
+      "head": "agent/q43-i1-graded-intervention-professional-escalation",
+      "head_tip_at_snapshot": "3756cd6453135a333771243ffa6eb3d4f86344a0",
+      "is_draft": true,
+      "url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/79",
+      "parent_pr": 78,
+      "state_category": "STACKED_REPAIR_CANDIDATE",
+      "recommended_disposition": "REMAIN_DRAFT_NO_MERGE_WITHOUT_OWNER_ADJUDICATION"
+    },
+    {
+      "pr_number": 78,
+      "title": "Q42-I1: Counterfactual & Unrealized-Path Ledger",
+      "base": "agent/d2-i1-multi-history-world-projection",
+      "head": "agent/q42-i1-counterfactual-unrealized-path-ledger",
+      "head_tip_at_snapshot": "98998bb1e3db67230954c1436d8effbcb87027af",
+      "is_draft": true,
+      "url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/78",
+      "parent_pr": 77,
+      "state_category": "STACKED_REPAIR_CANDIDATE",
+      "recommended_disposition": "REMAIN_DRAFT_NO_MERGE_WITHOUT_OWNER_ADJUDICATION"
+    },
+    {
+      "pr_number": 77,
+      "title": "D2-I1: Evidence-Constrained Multi-History / Multi-World Projection",
+      "base": "agent/f15-d1-i1-latent-system-identifiability",
+      "head": "agent/d2-i1-multi-history-world-projection",
+      "head_tip_at_snapshot": "f638442a2ac28f2e5b4d3911e19c074c2ee003cb",
+      "is_draft": true,
+      "url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/77",
+      "parent_pr": 76,
+      "state_category": "STACKED_REPAIR_CANDIDATE",
+      "recommended_disposition": "REMAIN_DRAFT_NO_MERGE_WITHOUT_OWNER_ADJUDICATION"
+    },
+    {
+      "pr_number": 76,
+      "title": "F15-D1-I1: Latent-System Discovery & Identifiability Gate",
+      "base": "agent/q41-i1-world-feedback-anomaly-governance",
+      "head": "agent/f15-d1-i1-latent-system-identifiability",
+      "head_tip_at_snapshot": "8db9e5abeaa32ffa73eb778bfbd5574a2aefe301",
+      "is_draft": true,
+      "url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/76",
+      "parent_pr": 75,
+      "state_category": "STACKED_REPAIR_CANDIDATE",
+      "recommended_disposition": "REMAIN_DRAFT_NO_MERGE_WITHOUT_OWNER_ADJUDICATION"
+    },
+    {
+      "pr_number": 75,
+      "title": "Q41-I1: World-Feedback Anomaly Trigger & Governance",
+      "base": "agent/scientific-metacognition-i1-epistemic-state-control-plane",
+      "head": "agent/q41-i1-world-feedback-anomaly-governance",
+      "head_tip_at_snapshot": "d09bd6fe964d8879e1b5027aa28cb2e010363c05",
+      "is_draft": true,
+      "url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/75",
+      "parent_pr": 74,
+      "state_category": "STACKED_REPAIR_CANDIDATE",
+      "recommended_disposition": "REMAIN_DRAFT_NO_MERGE_WITHOUT_OWNER_ADJUDICATION"
+    },
+    {
+      "pr_number": 74,
+      "title": "SCIENTIFIC-METACOGNITION-I1: Scientific Metacognition & Epistemic-State Control Plane",
+      "base": "agent/decision-integrity-i1-principle-lock-process-outcome-governance",
+      "head": "agent/scientific-metacognition-i1-epistemic-state-control-plane",
+      "head_tip_at_snapshot": "2b18e1f2d11511dc758734338e7c715566d01394",
+      "is_draft": true,
+      "url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/74",
+      "parent_pr": 73,
+      "state_category": "STACKED_REPAIR_CANDIDATE",
+      "recommended_disposition": "REMAIN_DRAFT_NO_MERGE_WITHOUT_OWNER_ADJUDICATION"
+    },
+    {
+      "pr_number": 73,
+      "title": "DECISION-INTEGRITY-I1: Principle Lock, Process Quality & Outcome-Bias Governance",
+      "base": "agent/symbolic-sphere-i1-symbol-power-perspective-governance",
+      "head": "agent/decision-integrity-i1-principle-lock-process-outcome-governance",
+      "head_tip_at_snapshot": "b3f27e4c3d614b95af4b112e3564fcf0e3d9f68e",
+      "is_draft": true,
+      "url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/73",
+      "parent_pr": 72,
+      "state_category": "STACKED_REPAIR_CANDIDATE",
+      "recommended_disposition": "REMAIN_DRAFT_NO_MERGE_WITHOUT_OWNER_ADJUDICATION"
+    },
+    {
+      "pr_number": 72,
+      "title": "SYMBOLIC-SPHERE-I1: Symbol, Power & Multi-Perspective Governance",
+      "base": "agent/121q39-i1-failure-memory-repair-propagation",
+      "head": "agent/symbolic-sphere-i1-symbol-power-perspective-governance",
+      "head_tip_at_snapshot": "213dced90f1e9b1f1992a148ee10fc0844917490",
+      "is_draft": true,
+      "url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/72",
+      "parent_pr": 71,
+      "state_category": "STACKED_REPAIR_CANDIDATE",
+      "recommended_disposition": "REMAIN_DRAFT_NO_MERGE_WITHOUT_OWNER_ADJUDICATION"
+    },
+    {
+      "pr_number": 71,
+      "title": "121Q39-I1: Append-Only Failure Memory & Repair Propagation",
+      "base": "agent/121q38-i1-case-counterexample-boundary-evidence",
+      "head": "agent/121q39-i1-failure-memory-repair-propagation",
+      "head_tip_at_snapshot": "824ff7f713303b18bca94b05de3f4b6530ffff51",
+      "is_draft": true,
+      "url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/71",
+      "parent_pr": 70,
+      "state_category": "STACKED_REPAIR_CANDIDATE",
+      "recommended_disposition": "REMAIN_DRAFT_NO_MERGE_WITHOUT_OWNER_ADJUDICATION"
+    },
+    {
+      "pr_number": 70,
+      "title": "121Q38-I1: Audited Case, Counterexample & Boundary Evidence Retrieval",
+      "base": "agent/121q37-i1-analogy-audit-transportability",
+      "head": "agent/121q38-i1-case-counterexample-boundary-evidence",
+      "head_tip_at_snapshot": "312a3282381bd0cb6dcc5fa629cbd058eacd9a56",
+      "is_draft": true,
+      "url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/70",
+      "parent_pr": 69,
+      "state_category": "STACKED_REPAIR_CANDIDATE",
+      "recommended_disposition": "REMAIN_DRAFT_NO_MERGE_WITHOUT_OWNER_ADJUDICATION"
+    },
+    {
+      "pr_number": 69,
+      "title": "121Q37-I1: Analogy-Audit & Transportability Gate (Draft candidate)",
+      "base": "agent/121q36-int-i1-intervention-failure-dynamics",
+      "head": "agent/121q37-i1-analogy-audit-transportability",
+      "head_tip_at_snapshot": "927cae48f3c65d3c23543dac4b9262704fabb6f1",
+      "is_draft": true,
+      "url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/69",
+      "parent_pr": 68,
+      "state_category": "STACKED_REPAIR_CANDIDATE",
+      "recommended_disposition": "REMAIN_DRAFT_NO_MERGE_WITHOUT_OWNER_ADJUDICATION"
+    },
+    {
+      "pr_number": 68,
+      "title": "121Q36-INT-I1 — 干预—失效动力学闭环 (Draft candidate)",
+      "base": "agent/121q36-obs-i1-observation-prediction-calibration",
+      "head": "agent/121q36-int-i1-intervention-failure-dynamics",
+      "head_tip_at_snapshot": "02a87221b86cf39217f8c6b3c63e0737a0e2de98",
+      "is_draft": true,
+      "url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/68",
+      "parent_pr": 67,
+      "state_category": "STACKED_REPAIR_CANDIDATE",
+      "recommended_disposition": "REMAIN_DRAFT_NO_MERGE_WITHOUT_OWNER_ADJUDICATION"
+    },
+    {
+      "pr_number": 67,
+      "title": "121Q36-OBS-I1: Observation-Prediction Calibration (Draft, checkpoint 3)",
+      "base": "agent/121q35-i1-responsibility-authority-action-trace",
+      "head": "agent/121q36-obs-i1-observation-prediction-calibration",
+      "head_tip_at_snapshot": "a8eab57bf2a2465c48d5d624e22681a1ad1bc20c",
+      "is_draft": true,
+      "url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/67",
+      "parent_pr": 66,
+      "state_category": "STACKED_REPAIR_CANDIDATE",
+      "recommended_disposition": "REMAIN_DRAFT_NO_MERGE_WITHOUT_OWNER_ADJUDICATION"
+    },
+    {
+      "pr_number": 66,
+      "title": "121Q35-I1R: responsibility/authority/action-trace boundary (Draft candidate)",
+      "base": "agent/121q34-i1-discovery-commitment-boundary",
+      "head": "agent/121q35-i1-responsibility-authority-action-trace",
+      "head_tip_at_snapshot": "ea1408e6525ceac8ea0c9c5377aca269579d6ff4",
+      "is_draft": true,
+      "url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/66",
+      "parent_pr": 65,
+      "state_category": "STACKED_REPAIR_CANDIDATE",
+      "recommended_disposition": "REMAIN_DRAFT_NO_MERGE_WITHOUT_OWNER_ADJUDICATION"
+    },
+    {
+      "pr_number": 32,
+      "title": "121CN: Night Long-Haul Microstep Review & Function OS Synthesis",
+      "base": "records/ignition-121c01-max-semantic-review-batch-01-20260714",
+      "head": "records/ignition-121cn-night-long-haul-20260714",
+      "head_tip_at_snapshot": "ba0d46d09d77f2fae85970f19f1b635d9f7eed5c",
+      "is_draft": true,
+      "url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/32",
+      "parent_pr": 31,
+      "state_category": "STACKED_REPAIR_CANDIDATE",
+      "recommended_disposition": "REMAIN_DRAFT_NO_MERGE_WITHOUT_OWNER_ADJUDICATION"
+    },
+    {
+      "pr_number": 31,
+      "title": "121C01: First Batch GLM-5.2 Max Semantic Review",
+      "base": "records/ignition-121-fulltext-resolver-and-120-repair-20260714",
+      "head": "records/ignition-121c01-max-semantic-review-batch-01-20260714",
+      "head_tip_at_snapshot": "8c8a1e1968d828b304fc8430edc383003f5babcf",
+      "is_draft": true,
+      "url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/31",
+      "parent_pr": null,
+      "state_category": "STACKED_REPAIR_CANDIDATE",
+      "recommended_disposition": "REMAIN_DRAFT_NO_MERGE_WITHOUT_OWNER_ADJUDICATION"
+    }
+  ],
+  "research_candidate_not_formal_knowledge": [
+    {
+      "branch": "research/eight-track-deep-validation-20260803-r2",
+      "tip": "ae777859beb947750daa8ff45d9d617100669979",
+      "state_category": "RESEARCH_CANDIDATE_NOT_FORMAL_KNOWLEDGE",
+      "note": "research branch: candidate evidence only; never formal knowledge without separate adjudication"
+    },
+    {
+      "branch": "research/overnight-public-evidence-20260803-r1",
+      "tip": "495b4304d2cddcf7833c62ff47868a391ae7f29a",
+      "state_category": "RESEARCH_CANDIDATE_NOT_FORMAL_KNOWLEDGE",
+      "note": "research branch: candidate evidence only; never formal knowledge without separate adjudication"
+    }
+  ],
+  "non_terminal_ledger_tasks": [
+    {
+      "task_number": 106,
+      "ledger_status": "PR_OPEN",
+      "state_category": "OPEN_DRAFT_CANDIDATE"
+    }
+  ],
+  "generated_projections": [
+    {
+      "path": "data/operations/current-truth-projection.json",
+      "generator": "task-106 reconciliation tooling",
+      "state_category": "GENERATED_PROJECTION"
+    },
+    {
+      "path": "data/operations/repository-state-ledger.json",
+      "generator": "tools/operations/build_repository_state_ledger.py",
+      "state_category": "GENERATED_PROJECTION"
+    },
+    {
+      "path": "data/operations/candidate-lineage-registry.json",
+      "generator": "tools/operations/build_repository_state_ledger.py",
+      "state_category": "GENERATED_PROJECTION"
+    },
+    {
+      "path": "data/architecture/interactive-system-map.json",
+      "generator": "tools/generate_interactive_system_map.py",
+      "state_category": "GENERATED_PROJECTION"
+    },
+    {
+      "path": "data/foundation/repository-path-classification/classification-manifest.jsonl",
+      "generator": "tools/foundation/validate_repository_path_classification.py --generate",
+      "state_category": "GENERATED_PROJECTION"
+    }
+  ],
+  "unknown_requires_owner_adjudication": [
+    {
+      "item": "open Draft PRs older than the current iteration chain (e.g. #3, #5, #16-#21, #31, #32)",
+      "state_category": "UNKNOWN_REQUIRES_OWNER_ADJUDICATION",
+      "question": "remain draft, be superseded by later lines, or require separate owner decision? This ledger does not close or edit them."
+    },
+    {
+      "item": "Task 115 Draft-PR phase",
+      "state_category": "OPEN_DRAFT_CANDIDATE",
+      "question": "phase one only; terminalization prohibited in this phase; R2 calibration pending"
+    },
+    {
+      "item": "eight-track R2 campaign",
+      "state_category": "RESEARCH_CANDIDATE_NOT_FORMAL_KNOWLEDGE",
+      "question": "adjudication remains owner/GPT decision after Line C auditability repair"
+    }
+  ],
+  "component_registry_summary": {
+    "component_ids": [
+      "accepted_work",
+      "ai_guide",
+      "arn",
+      "candidate_return",
+      "case_source",
+      "charter",
+      "charter_system_r1",
+      "copyright_governance_history_remediation",
+      "copyright_governance_jurisdiction_registry",
+      "copyright_governance_material_classification",
+      "copyright_governance_non_republication_principle",
+      "copyright_governance_publication_gate_validator",
+      "copyright_governance_source_rights",
+      "copyright_governance_tests",
+      "current_state",
+      "external_input",
+      "feedback_routes",
+      "foundation",
+      "foundation_data",
+      "function_os",
+      "historical_reports",
+      "human_knowledge_surfaces",
+      "ignition_increment",
+      "incremental_execution",
+      "iteration",
+      "iteration_manifest_contract",
+      "l0",
+      "l1",
+      "l2",
+      "l3",
+      "l4",
+      "l5",
+      "l6",
+      "language_thought_plane",
+      "licensing",
+      "mcf",
+      "no_l7",
+      "no_totality_proof",
+      "no_truth_upgrade",
+      "point_fire_analysis",
+      "project_component_registry",
+      "propagation_calculator",
+      "propagation_topology",
+      "provenance_capture",
+      "psd",
+      "public_response",
+      "q12",
+      "q13",
+      "q14",
+      "readme",
+      "showcase",
+      "showcase_registry",
+      "source_pool",
+      "stage_snapshot_publication",
+      "summary",
+      "sustainability",
+      "sync",
+      "system_map",
+      "system_map_layout",
+      "system_map_projection",
+      "usage",
+      "zhiyuan_method"
+    ],
+    "source": "data/operations/project-components.json"
+  }
+}

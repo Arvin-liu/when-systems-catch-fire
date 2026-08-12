@@ -1,0 +1,47 @@
+{
+  "baselines": {
+    "formal_main_at_build": "x",
+    "locked_tips": {}
+  },
+  "counts": {},
+  "accepted_current": {
+    "iteration": 114,
+    "source": "data/operations/current-truth-projection.json"
+  },
+  "accepted_iterations": [
+    {
+      "iteration": 112,
+      "terminalized": true,
+      "state_category": "ACCEPTED_HISTORICAL",
+      "terminal_tag": "ignition/iterations/112/terminal-r1"
+    },
+    {
+      "iteration": 114,
+      "terminalized": true,
+      "state_category": "ACCEPTED_CURRENT",
+      "terminal_tag": "ignition/iterations/114/terminal-r1"
+    }
+  ],
+  "open_draft_candidates": [
+    {
+      "pr_number": 1,
+      "base": "main",
+      "head": "cand/a",
+      "state_category": "OPEN_DRAFT_CANDIDATE"
+    }
+  ],
+  "stacked_repair_candidates": [
+    {
+      "pr_number": 2,
+      "base": "cand/a",
+      "head": "fix/b",
+      "state_category": "STACKED_REPAIR_CANDIDATE"
+    }
+  ],
+  "research_candidate_not_formal_knowledge": [
+    {
+      "branch": "research/r2-x"
+    }
+  ],
+  "unknown_requires_owner_adjudication": []
+}
