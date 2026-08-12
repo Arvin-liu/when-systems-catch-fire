@@ -1,0 +1,420 @@
+{
+  "episode": {
+    "episode_id": "r1-replay-round-004",
+    "question_version": "2025年低碳发电增长是否超过全球新增用电需求，并把化石发电推入绝对下降，还是只压低了煤炭和石油而天然气仍增长？",
+    "research_type": "r1-incident-replay",
+    "strategy_pack": "QUANTITATIVE_DATA_RECONCILIATION",
+    "state": "EVIDENCE_GATHERING",
+    "state_lineage": [
+      "INTAKE",
+      "QUESTION_FROZEN"
+    ],
+    "candidate_claims": [
+      {
+        "claim_id": "c-primary",
+        "text": "清洁电力可能覆盖 2025 年全部新增用电，并推动全球电力部门化石发电小幅下降，但这不等于整个能源系统已经脱离化石燃料。",
+        "claim_ceiling": "SPECULATIVE",
+        "source_layer": null
+      }
+    ],
+    "evidence_obligations": [
+      {
+        "obligation_id": "o01",
+        "claim_id": "c-primary",
+        "class": "PRIMARY_SOURCE",
+        "status": "PARTIAL",
+        "evidence_refs": []
+      },
+      {
+        "obligation_id": "o02",
+        "claim_id": "c-primary",
+        "class": "FULL_TEXT_OR_METHODS_OR_SUPPLEMENT",
+        "status": "OPEN",
+        "evidence_refs": []
+      },
+      {
+        "obligation_id": "o03",
+        "claim_id": "c-primary",
+        "class": "DATA_OR_TABLE_ACCESS",
+        "status": "OPEN",
+        "evidence_refs": []
+      },
+      {
+        "obligation_id": "o04",
+        "claim_id": "c-primary",
+        "class": "NUMERIC_RECOMPUTATION",
+        "status": "OPEN",
+        "evidence_refs": []
+      },
+      {
+        "obligation_id": "o05",
+        "claim_id": "c-primary",
+        "class": "CONSTRUCT_AND_OUTCOME_DEFINITION",
+        "status": "OPEN",
+        "evidence_refs": []
+      },
+      {
+        "obligation_id": "o06",
+        "claim_id": "c-primary",
+        "class": "SOURCE_INDEPENDENCE_CHECK",
+        "status": "OPEN",
+        "evidence_refs": []
+      },
+      {
+        "obligation_id": "o07",
+        "claim_id": "c-primary",
+        "class": "POPULATION_JURISDICTION_TIME_SCOPE",
+        "status": "OPEN",
+        "evidence_refs": []
+      },
+      {
+        "obligation_id": "o08",
+        "claim_id": "c-primary",
+        "class": "EXTERNAL_HUMAN_OR_DOMAIN_REVIEW",
+        "status": "OPEN",
+        "evidence_refs": []
+      }
+    ],
+    "source_identities": [
+      {
+        "source_id": "S1",
+        "url": "https://www.energiesdelamer.eu/wp-content/uploads/2026/04/22-04-026-Ember-Global-Electricity-Review-2026.pdf",
+        "accessed_at": "2026-08-03T02:50:46+08:00"
+      },
+      {
+        "source_id": "S2",
+        "url": "https://www.iea.org/reports/global-energy-review-2026/electricity-supply",
+        "accessed_at": "2026-08-03T02:50:46+08:00"
+      },
+      {
+        "source_id": "S3",
+        "url": "https://www.iea.org/reports/global-energy-review-2026/global-trends",
+        "accessed_at": "2026-08-03T02:50:46+08:00"
+      },
+      {
+        "source_id": "S4",
+        "url": "https://ourworldindata.org/data-insights/low-carbon-electricity-sources-grew-faster-than-demand-in-2025-pushing-fossil-fuels-into-decline",
+        "accessed_at": "2026-08-03T02:50:46+08:00"
+      },
+      {
+        "source_id": "S5",
+        "url": "https://www.spglobal.com/market-intelligence/en/news-insights/articles/2026/4/clean-energy-met-all-new-global-electricity-demand-in-2025-report-100911505",
+        "accessed_at": "2026-08-03T02:50:46+08:00"
+      },
+      {
+        "source_id": "S6",
+        "url": "https://www.axios.com/2026/07/28/renewables-ai-data-centers-power-fossil-fuels",
+        "accessed_at": "2026-08-03T02:50:46+08:00"
+      }
+    ],
+    "independence_groups": [],
+    "access_levels": [],
+    "calculations_required": [],
+    "calculations_completed": [],
+    "competing_explanations": [],
+    "negative_evidence_search_state": {
+      "searched": false,
+      "results": []
+    },
+    "unresolved_residues": [],
+    "blockers": [],
+    "budgets": {},
+    "current_diagnosis": null,
+    "candidate_next_actions": [],
+    "selected_action": null,
+    "observations": [],
+    "information_delta": null,
+    "stop_conditions": {},
+    "branch_conditions": {},
+    "rollback_conditions": {},
+    "escalation_conditions": {},
+    "provenance": {
+      "packet_parse": {
+        "strict_json_parse": true,
+        "repair_note": null
+      },
+      "r1_replay": {
+        "r1_locked_tip": "232299483f701e8304265c1484b5b50e5dcf2799",
+        "round_number": 4,
+        "short_slug": "clean-electricity-2025",
+        "r1_declared_state": "COMPLETE_AWAITING_EXTERNAL_REVIEW",
+        "r1_verdict": "SUPPORTED_WITH_SCOPE",
+        "pack_adjudication": "QUANTITATIVE_DATA_RECONCILIATION",
+        "reading_floor_rule": "0.5h per source"
+      }
+    },
+    "versions": {
+      "schema": "research-os/0.1"
+    },
+    "event_log": [
+      {
+        "event_id": "evt-000000",
+        "timestamp": "2026-08-03T07:51:51.818233+00:00",
+        "type": "state_transition",
+        "actor": "kernel",
+        "payload_sha256": "c099f16eefa8f4d89c7f3f2704de86cc438beeecf0cf09fe1ca03ec7150ed6c1"
+      },
+      {
+        "event_id": "evt-000001",
+        "timestamp": "2026-08-03T07:51:51.818241+00:00",
+        "type": "diagnose",
+        "actor": "kernel",
+        "payload_sha256": "b17ee8c88070a3e3da63fb15e816b56e152debb3c87397e37af83da01bea2522"
+      },
+      {
+        "event_id": "evt-000002",
+        "timestamp": "2026-08-03T07:51:51.818246+00:00",
+        "type": "diagnose",
+        "actor": "kernel",
+        "payload_sha256": "6a476e2430c7801153de9710004372238a73d0e3b2dab3ef3f19fc3ac2307e4e"
+      },
+      {
+        "event_id": "evt-000003",
+        "timestamp": "2026-08-03T07:51:51.818249+00:00",
+        "type": "diagnose",
+        "actor": "kernel",
+        "payload_sha256": "a86e65738f267701b16e899f274a9973c53c56d4349be24ab0d21ddeff04839a"
+      },
+      {
+        "event_id": "evt-000004",
+        "timestamp": "2026-08-03T07:51:51.818253+00:00",
+        "type": "diagnose",
+        "actor": "kernel",
+        "payload_sha256": "cb2501ecbf819db0011990015d240c36afc325ae4fc98e4b360a1455d2a78751"
+      },
+      {
+        "event_id": "evt-000005",
+        "timestamp": "2026-08-03T07:51:51.818256+00:00",
+        "type": "diagnose",
+        "actor": "kernel",
+        "payload_sha256": "013b622fea66a85bbbefbaeaa201a7eeb1e0ecb627005235e1d5f2cc3854b9af"
+      },
+      {
+        "event_id": "evt-000006",
+        "timestamp": "2026-08-03T07:51:51.818260+00:00",
+        "type": "diagnose",
+        "actor": "kernel",
+        "payload_sha256": "079d9f1639d99b43950be70fe07917b84054f46267326f068bf4ed9b774125c8"
+      },
+      {
+        "event_id": "evt-000007",
+        "timestamp": "2026-08-03T07:51:51.818263+00:00",
+        "type": "diagnose",
+        "actor": "kernel",
+        "payload_sha256": "b0d30ece097f07c243dbb6c5932a9772bee55d30fea42ea0868137c7c4caf5c7"
+      },
+      {
+        "event_id": "evt-000008",
+        "timestamp": "2026-08-03T07:51:51.818266+00:00",
+        "type": "diagnose",
+        "actor": "kernel",
+        "payload_sha256": "10dc57e105444652cab6834bc7067144da2fd0b95255e90375aeaa83f1b0372e"
+      },
+      {
+        "event_id": "evt-000009",
+        "timestamp": "2026-08-03T07:51:51.818270+00:00",
+        "type": "diagnose",
+        "actor": "kernel",
+        "payload_sha256": "9fc870180df2e119ba376a8cbc763f161e6bf726c1ea9c525ad84976dc139261"
+      },
+      {
+        "event_id": "evt-000010",
+        "timestamp": "2026-08-03T07:51:51.818274+00:00",
+        "type": "state_transition",
+        "actor": "r1-replay",
+        "payload_sha256": "638c923b6230a6fd1dd8961e31da9f75234e7276a11a9c07ce53e14b8f6e5649"
+      },
+      {
+        "event_id": "evt-000011",
+        "timestamp": "2026-08-03T07:51:51.818278+00:00",
+        "type": "state_transition",
+        "actor": "r1-replay",
+        "payload_sha256": "85078e440fb5bf192c312d1407c7ac6c857aa6b26176a173887393ad0226b33f"
+      }
+    ],
+    "created_at": "2026-08-03T07:51:51.818228+00:00",
+    "updated_at": "2026-08-03T07:51:51.818276+00:00",
+    "elapsed_time_hours": 0.0453,
+    "report_length_words": null,
+    "source_timestamps_identical": true,
+    "reading_integrity": {
+      "declared_reading_window_hours": 0.0453,
+      "minimum_required_reading_hours": 3.0,
+      "basis": "declared window is the actual elapsed window; floor is 0.5h/source conservative lower bound"
+    },
+    "campaign_closeout_before_deadline": true
+  },
+  "diagnosis": {
+    "episode_id": "r1-replay-round-004",
+    "engine_version": "0.1",
+    "findings": [
+      {
+        "gap_code": "PRIMARY_SOURCE_MISSING",
+        "severity": "CRITICAL",
+        "evidence": "obligation o01 (class PRIMARY_SOURCE) status=PARTIAL",
+        "affected": "obligation:o01",
+        "correcting_actions": [
+          "SEARCH_PRIMARY_SOURCE",
+          "FETCH_FULL_TEXT"
+        ],
+        "detection_method": "structured_inspection"
+      },
+      {
+        "gap_code": "FULL_TEXT_MISSING",
+        "severity": "HIGH",
+        "evidence": "obligation o02 (class FULL_TEXT_OR_METHODS_OR_SUPPLEMENT) status=OPEN",
+        "affected": "obligation:o02",
+        "correcting_actions": [
+          "FETCH_FULL_TEXT"
+        ],
+        "detection_method": "structured_inspection"
+      },
+      {
+        "gap_code": "RAW_DATA_OR_CODE_MISSING",
+        "severity": "HIGH",
+        "evidence": "obligation o03 (class DATA_OR_TABLE_ACCESS) status=OPEN",
+        "affected": "obligation:o03",
+        "correcting_actions": [
+          "LOCATE_RAW_DATA",
+          "LOCATE_ANALYSIS_CODE"
+        ],
+        "detection_method": "structured_inspection"
+      },
+      {
+        "gap_code": "NUMERIC_CLAIM_NOT_RECOMPUTED",
+        "severity": "HIGH",
+        "evidence": "obligation o04 (class NUMERIC_RECOMPUTATION) status=OPEN",
+        "affected": "obligation:o04",
+        "correcting_actions": [
+          "RECOMPUTE_RESULT",
+          "REPRODUCE_ANALYSIS",
+          "LOCATE_RAW_DATA"
+        ],
+        "detection_method": "structured_inspection"
+      },
+      {
+        "gap_code": "OUTCOME_DEFINITION_CONFLICT",
+        "severity": "MEDIUM",
+        "evidence": "obligation o05 (class CONSTRUCT_AND_OUTCOME_DEFINITION) status=OPEN",
+        "affected": "obligation:o05",
+        "correcting_actions": [
+          "BUILD_DEFINITION_CROSSWALK",
+          "COMPARE_OUTCOMES_OR_DENOMINATORS"
+        ],
+        "detection_method": "structured_inspection"
+      },
+      {
+        "gap_code": "SOURCE_DEPENDENCE_HIGH",
+        "severity": "HIGH",
+        "evidence": "obligation o06 (class SOURCE_INDEPENDENCE_CHECK) status=OPEN",
+        "affected": "obligation:o06",
+        "correcting_actions": [
+          "CHECK_SOURCE_DEPENDENCE",
+          "SEARCH_PRIMARY_SOURCE"
+        ],
+        "detection_method": "structured_inspection"
+      },
+      {
+        "gap_code": "POPULATION_SCOPE_MISMATCH",
+        "severity": "HIGH",
+        "evidence": "obligation o07 (class POPULATION_JURISDICTION_TIME_SCOPE) status=OPEN",
+        "affected": "obligation:o07",
+        "correcting_actions": [
+          "COMPARE_POPULATIONS_OR_JURISDICTIONS",
+          "FREEZE_OR_NARROW_QUESTION"
+        ],
+        "detection_method": "structured_inspection"
+      },
+      {
+        "gap_code": "HUMAN_JUDGMENT_REQUIRED",
+        "severity": "HIGH",
+        "evidence": "obligation o08 (class EXTERNAL_HUMAN_OR_DOMAIN_REVIEW) status=OPEN",
+        "affected": "obligation:o08",
+        "correcting_actions": [
+          "ESCALATE_TO_GPT_OWNER"
+        ],
+        "detection_method": "structured_inspection"
+      },
+      {
+        "gap_code": "NEGATIVE_EVIDENCE_NOT_SEARCHED",
+        "severity": "HIGH",
+        "evidence": "negative/null/contradictory evidence search not performed",
+        "affected": "episode",
+        "correcting_actions": [
+          "SEEK_NULL_OR_CONTRADICTORY_RESULT",
+          "SEEK_REPLICATION"
+        ],
+        "detection_method": "structured_inspection"
+      },
+      {
+        "gap_code": "READING_TIME_SCOPE_INCONSISTENT",
+        "severity": "HIGH",
+        "evidence": "declared reading window 0.0453h < minimum required 3.0h for claimed scope",
+        "affected": "episode",
+        "correcting_actions": [
+          "ESCALATE_TO_GPT_OWNER",
+          "PAUSE_AND_CHECKPOINT"
+        ],
+        "detection_method": "structured_inspection"
+      },
+      {
+        "gap_code": "TIMESTAMP_BATCH_NOT_PROOF_OF_READING",
+        "severity": "HIGH",
+        "evidence": "identical/batch timestamps cannot demonstrate actual reading of sources",
+        "affected": "episode",
+        "correcting_actions": [
+          "CHECK_SOURCE_DEPENDENCE",
+          "ESCALATE_TO_GPT_OWNER"
+        ],
+        "detection_method": "structured_inspection"
+      },
+      {
+        "gap_code": "UNAUTHORIZED_EARLY_CLOSEOUT",
+        "severity": "CRITICAL",
+        "evidence": "campaign closeout before authorized deadline",
+        "affected": "episode",
+        "correcting_actions": [
+          "REOPENED",
+          "ESCALATE_TO_GPT_OWNER"
+        ],
+        "detection_method": "structured_inspection"
+      }
+    ]
+  },
+  "selected_action": "ESCALATE_TO_GPT_OWNER",
+  "ranked_candidates": [
+    {
+      "action": "ESCALATE_TO_GPT_OWNER",
+      "score": 20
+    },
+    {
+      "action": "SEARCH_PRIMARY_SOURCE",
+      "score": 19
+    },
+    {
+      "action": "CHECK_SOURCE_DEPENDENCE",
+      "score": 17
+    },
+    {
+      "action": "BRANCH_QUESTION",
+      "score": 15
+    },
+    {
+      "action": "FREEZE_OR_NARROW_QUESTION",
+      "score": 15
+    },
+    {
+      "action": "REPRODUCE_ANALYSIS",
+      "score": 14
+    },
+    {
+      "action": "COMPARE_POPULATIONS_OR_JURISDICTIONS",
+      "score": 12
+    },
+    {
+      "action": "FETCH_FULL_TEXT",
+      "score": 11
+    }
+  ],
+  "os_accepts_round_as_completed": false
+}

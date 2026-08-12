@@ -1,0 +1,466 @@
+{
+  "episode_id": "r2-loop-ai-coding-001",
+  "question_version": "生成式 AI 是否在真实软件工程中提高开发者生产率，还是只在简单受控任务或自报感受中显示加速？",
+  "research_type": "r2-bounded-loop",
+  "strategy_pack": "ENGINEERING_BENCHMARK",
+  "state": "QUESTION_FROZEN",
+  "state_lineage": [
+    "INTAKE",
+    "QUESTION_FROZEN",
+    "PAUSED_RESUMABLE"
+  ],
+  "candidate_claims": [
+    {
+      "claim_id": "c-acp-1",
+      "text": "AI 编程工具的生产率效果因任务上下文、开发者经验、工具代际和测量指标而异，不能由单一速度百分比概括。",
+      "claim_ceiling": "SPECULATIVE",
+      "source_layer": null
+    }
+  ],
+  "evidence_obligations": [
+    {
+      "obligation_id": "o01",
+      "claim_id": "c-acp-1",
+      "class": "PRIMARY_SOURCE",
+      "status": "BLOCKED_WITH_EVIDENCE",
+      "evidence_refs": [],
+      "status_evidence": "SOURCE_ACCESS_BLOCKER: clean offline environment cannot verify METR 2025 primary materials; recorded via executor return errors[]"
+    },
+    {
+      "obligation_id": "o02",
+      "claim_id": "c-acp-1",
+      "class": "FULL_TEXT_OR_METHODS_OR_SUPPLEMENT",
+      "status": "OPEN",
+      "evidence_refs": []
+    },
+    {
+      "obligation_id": "o03",
+      "claim_id": "c-acp-1",
+      "class": "DATA_OR_TABLE_ACCESS",
+      "status": "OPEN",
+      "evidence_refs": []
+    },
+    {
+      "obligation_id": "o04",
+      "claim_id": "c-acp-1",
+      "class": "NUMERIC_RECOMPUTATION",
+      "status": "OPEN",
+      "evidence_refs": []
+    },
+    {
+      "obligation_id": "o05",
+      "claim_id": "c-acp-1",
+      "class": "CONSTRUCT_AND_OUTCOME_DEFINITION",
+      "status": "OPEN",
+      "evidence_refs": []
+    },
+    {
+      "obligation_id": "o06",
+      "claim_id": "c-acp-1",
+      "class": "SOURCE_INDEPENDENCE_CHECK",
+      "status": "OPEN",
+      "evidence_refs": []
+    },
+    {
+      "obligation_id": "o07",
+      "claim_id": "c-acp-1",
+      "class": "POPULATION_JURISDICTION_TIME_SCOPE",
+      "status": "OPEN",
+      "evidence_refs": []
+    },
+    {
+      "obligation_id": "o08",
+      "claim_id": "c-acp-1",
+      "class": "EXTERNAL_HUMAN_OR_DOMAIN_REVIEW",
+      "status": "OPEN",
+      "evidence_refs": []
+    }
+  ],
+  "source_identities": [],
+  "independence_groups": [],
+  "access_levels": [],
+  "calculations_required": [],
+  "calculations_completed": [],
+  "competing_explanations": [],
+  "negative_evidence_search_state": {
+    "searched": false,
+    "results": []
+  },
+  "unresolved_residues": [],
+  "blockers": [],
+  "budgets": "{\"human_attention_hours\": 2, \"tool_calls\": 20}",
+  "current_diagnosis": {
+    "episode_id": "r2-loop-ai-coding-001",
+    "engine_version": "0.1",
+    "findings": [
+      {
+        "gap_code": "PRIMARY_SOURCE_MISSING",
+        "severity": "CRITICAL",
+        "evidence": "obligation o01 (class PRIMARY_SOURCE) status=PARTIAL",
+        "affected": "obligation:o01",
+        "correcting_actions": [
+          "SEARCH_PRIMARY_SOURCE",
+          "FETCH_FULL_TEXT"
+        ],
+        "detection_method": "structured_inspection"
+      },
+      {
+        "gap_code": "FULL_TEXT_MISSING",
+        "severity": "HIGH",
+        "evidence": "obligation o02 (class FULL_TEXT_OR_METHODS_OR_SUPPLEMENT) status=OPEN",
+        "affected": "obligation:o02",
+        "correcting_actions": [
+          "FETCH_FULL_TEXT"
+        ],
+        "detection_method": "structured_inspection"
+      },
+      {
+        "gap_code": "RAW_DATA_OR_CODE_MISSING",
+        "severity": "HIGH",
+        "evidence": "obligation o03 (class DATA_OR_TABLE_ACCESS) status=OPEN",
+        "affected": "obligation:o03",
+        "correcting_actions": [
+          "LOCATE_RAW_DATA",
+          "LOCATE_ANALYSIS_CODE"
+        ],
+        "detection_method": "structured_inspection"
+      },
+      {
+        "gap_code": "NUMERIC_CLAIM_NOT_RECOMPUTED",
+        "severity": "HIGH",
+        "evidence": "obligation o04 (class NUMERIC_RECOMPUTATION) status=OPEN",
+        "affected": "obligation:o04",
+        "correcting_actions": [
+          "RECOMPUTE_RESULT",
+          "REPRODUCE_ANALYSIS",
+          "LOCATE_RAW_DATA"
+        ],
+        "detection_method": "structured_inspection"
+      },
+      {
+        "gap_code": "OUTCOME_DEFINITION_CONFLICT",
+        "severity": "MEDIUM",
+        "evidence": "obligation o05 (class CONSTRUCT_AND_OUTCOME_DEFINITION) status=OPEN",
+        "affected": "obligation:o05",
+        "correcting_actions": [
+          "BUILD_DEFINITION_CROSSWALK",
+          "COMPARE_OUTCOMES_OR_DENOMINATORS"
+        ],
+        "detection_method": "structured_inspection"
+      },
+      {
+        "gap_code": "SOURCE_DEPENDENCE_HIGH",
+        "severity": "HIGH",
+        "evidence": "obligation o06 (class SOURCE_INDEPENDENCE_CHECK) status=OPEN",
+        "affected": "obligation:o06",
+        "correcting_actions": [
+          "CHECK_SOURCE_DEPENDENCE",
+          "SEARCH_PRIMARY_SOURCE"
+        ],
+        "detection_method": "structured_inspection"
+      },
+      {
+        "gap_code": "POPULATION_SCOPE_MISMATCH",
+        "severity": "HIGH",
+        "evidence": "obligation o07 (class POPULATION_JURISDICTION_TIME_SCOPE) status=OPEN",
+        "affected": "obligation:o07",
+        "correcting_actions": [
+          "COMPARE_POPULATIONS_OR_JURISDICTIONS",
+          "FREEZE_OR_NARROW_QUESTION"
+        ],
+        "detection_method": "structured_inspection"
+      },
+      {
+        "gap_code": "HUMAN_JUDGMENT_REQUIRED",
+        "severity": "HIGH",
+        "evidence": "obligation o08 (class EXTERNAL_HUMAN_OR_DOMAIN_REVIEW) status=OPEN",
+        "affected": "obligation:o08",
+        "correcting_actions": [
+          "ESCALATE_TO_GPT_OWNER"
+        ],
+        "detection_method": "structured_inspection"
+      },
+      {
+        "gap_code": "NEGATIVE_EVIDENCE_NOT_SEARCHED",
+        "severity": "HIGH",
+        "evidence": "negative/null/contradictory evidence search not performed",
+        "affected": "episode",
+        "correcting_actions": [
+          "SEEK_NULL_OR_CONTRADICTORY_RESULT",
+          "SEEK_REPLICATION"
+        ],
+        "detection_method": "structured_inspection"
+      }
+    ]
+  },
+  "candidate_next_actions": [],
+  "selected_action": {
+    "episode_id": "r2-loop-ai-coding-001",
+    "selected_action": "ESCALATE_TO_GPT_OWNER",
+    "selection_rationale": {
+      "prerequisite_gaps_addressed": [
+        "HUMAN_JUDGMENT_REQUIRED"
+      ],
+      "expected_information_gain": "high",
+      "discriminating_power": "medium",
+      "cost_and_available_resources": {
+        "cost_class": "low"
+      },
+      "reversibility": "irreversible",
+      "dependency_ordering": [],
+      "risk_high_stakes_multiplier": 3.0,
+      "rejected_alternatives_and_why": [
+        {
+          "action": "SEARCH_PRIMARY_SOURCE",
+          "why": "score 19 lower than selected 20"
+        },
+        {
+          "action": "BRANCH_QUESTION",
+          "why": "score 15 lower than selected 20"
+        },
+        {
+          "action": "FREEZE_OR_NARROW_QUESTION",
+          "why": "score 15 lower than selected 20"
+        },
+        {
+          "action": "REPRODUCE_ANALYSIS",
+          "why": "score 14 lower than selected 20"
+        },
+        {
+          "action": "COMPARE_POPULATIONS_OR_JURISDICTIONS",
+          "why": "score 12 lower than selected 20"
+        }
+      ],
+      "observation_that_would_change_next_decision": "if ['HUMAN_JUDGMENT_REQUIRED', 'CLAIM_EXCEEDS_EVIDENCE'] resolved, select next from remaining gaps"
+    },
+    "ranked_candidates": [
+      {
+        "action": "ESCALATE_TO_GPT_OWNER",
+        "score": 20
+      },
+      {
+        "action": "SEARCH_PRIMARY_SOURCE",
+        "score": 19
+      },
+      {
+        "action": "BRANCH_QUESTION",
+        "score": 15
+      },
+      {
+        "action": "FREEZE_OR_NARROW_QUESTION",
+        "score": 15
+      },
+      {
+        "action": "REPRODUCE_ANALYSIS",
+        "score": 14
+      },
+      {
+        "action": "COMPARE_POPULATIONS_OR_JURISDICTIONS",
+        "score": 12
+      },
+      {
+        "action": "CHECK_SOURCE_DEPENDENCE",
+        "score": 11
+      },
+      {
+        "action": "FETCH_FULL_TEXT",
+        "score": 11
+      }
+    ]
+  },
+  "observations": [
+    {
+      "observations": [
+        "Imported R1 round-006 telemetry (locked tip 23229948): elapsed 0.0364h for 7 sources; all accessed_at identical; no recomputation recorded; verdict CONTESTED.",
+        "R1 round-006 QUESTION.json/REPORT.md exist; no raw benchmark dataset or per-task timing data committed."
+      ],
+      "source_identities": [
+        {
+          "source_id": "R1-R6",
+          "locator": "RESULTS/research-campaigns/2026-08-03-overnight-r1/round-006-ai-coding-productivity/",
+          "access_level": "COMMITTED_FULL_TEXT"
+        }
+      ],
+      "access_level": "COMMITTED_FULL_TEXT",
+      "calculation_result": null,
+      "errors": [],
+      "provenance": {
+        "executor": "qwen38max-line-a",
+        "method": "git archive at locked tip + replay episode round-006.json"
+      },
+      "timestamps": {
+        "started_at": "2026-08-03T15:45:00+08:00",
+        "finished_at": "2026-08-03T15:46:00+08:00"
+      }
+    },
+    {
+      "observations": [
+        "Clean offline environment: no verified network access to METR 2025 time-study primary materials or GitHub experiment repositories.",
+        "R1 round-006 SOURCES.jsonl lists 7 URLs but no archived full text, no dataset and no per-task timing data committed to the repository.",
+        "No independent recomputation of any productivity percentage is possible from committed bytes alone."
+      ],
+      "source_identities": [
+        {
+          "source_id": "metr-2025-time-study",
+          "locator": "https://metr.org/blog/2025-07-10-early-2025-ai-coding-study/",
+          "access_level": "NOT_VERIFIED_OFFLINE"
+        },
+        {
+          "source_id": "r1-round-006-sources",
+          "locator": "RESULTS/research-campaigns/2026-08-03-overnight-r1/round-006-ai-coding-productivity/SOURCES.jsonl",
+          "access_level": "COMMITTED_FULL_TEXT"
+        }
+      ],
+      "access_level": "BLOCKED_OFFLINE",
+      "calculation_result": null,
+      "errors": [
+        "SOURCE_ACCESS_BLOCKER: primary-source verification impossible in clean offline environment"
+      ],
+      "provenance": {
+        "executor": "qwen38max-line-a",
+        "environment": "clean offline clone, no external fetch"
+      },
+      "timestamps": {
+        "started_at": "2026-08-03T15:50:00+08:00",
+        "finished_at": "2026-08-03T15:51:00+08:00"
+      }
+    }
+  ],
+  "information_delta": null,
+  "stop_conditions": {},
+  "branch_conditions": {},
+  "rollback_conditions": {},
+  "escalation_conditions": {},
+  "provenance": {
+    "claim_registration": {
+      "actor": "qwen38max-line-a",
+      "note": "initial ceiling SPECULATIVE; obligations OPEN because the clean offline environment has no verified access to METR/GitHub primary data; waivers are not requested"
+    },
+    "obligation_update": {
+      "actor": "qwen38max-line-a",
+      "rule": "access blocker leaves obligation open-class (BLOCKED_WITH_EVIDENCE); ceiling is never raised by a blocker"
+    }
+  },
+  "versions": {
+    "schema": "research-os/0.1"
+  },
+  "event_log": [
+    {
+      "event_id": "evt-000000",
+      "timestamp": "2026-08-03T09:18:15.362612+00:00",
+      "type": "state_transition",
+      "actor": "kernel",
+      "payload_sha256": "c099f16eefa8f4d89c7f3f2704de86cc438beeecf0cf09fe1ca03ec7150ed6c1"
+    },
+    {
+      "event_id": "evt-000001",
+      "timestamp": "2026-08-03T09:18:15.362641+00:00",
+      "type": "state_transition",
+      "actor": "cli",
+      "payload_sha256": "638c923b6230a6fd1dd8961e31da9f75234e7276a11a9c07ce53e14b8f6e5649"
+    },
+    {
+      "event_id": "evt-000002",
+      "timestamp": "2026-08-03T09:18:15.427623+00:00",
+      "type": "observe",
+      "actor": "cli",
+      "payload_sha256": "aa0107c82ec3b81898face9a0f161a4fb9f9501f297483ad39bd9a6dc03c2704"
+    },
+    {
+      "event_id": "evt-000003",
+      "timestamp": "2026-08-03T09:18:15.458809+00:00",
+      "type": "diagnose",
+      "actor": "kernel",
+      "payload_sha256": "ed0feb0ac40a52a9f26c4433bf1400f1ea3cfcf6045fc0460140d89b2994d6b6"
+    },
+    {
+      "event_id": "evt-000004",
+      "timestamp": "2026-08-03T09:18:15.458963+00:00",
+      "type": "diagnose",
+      "actor": "kernel",
+      "payload_sha256": "6a476e2430c7801153de9710004372238a73d0e3b2dab3ef3f19fc3ac2307e4e"
+    },
+    {
+      "event_id": "evt-000005",
+      "timestamp": "2026-08-03T09:18:15.458972+00:00",
+      "type": "diagnose",
+      "actor": "kernel",
+      "payload_sha256": "a86e65738f267701b16e899f274a9973c53c56d4349be24ab0d21ddeff04839a"
+    },
+    {
+      "event_id": "evt-000006",
+      "timestamp": "2026-08-03T09:18:15.458977+00:00",
+      "type": "diagnose",
+      "actor": "kernel",
+      "payload_sha256": "cb2501ecbf819db0011990015d240c36afc325ae4fc98e4b360a1455d2a78751"
+    },
+    {
+      "event_id": "evt-000007",
+      "timestamp": "2026-08-03T09:18:15.458981+00:00",
+      "type": "diagnose",
+      "actor": "kernel",
+      "payload_sha256": "013b622fea66a85bbbefbaeaa201a7eeb1e0ecb627005235e1d5f2cc3854b9af"
+    },
+    {
+      "event_id": "evt-000008",
+      "timestamp": "2026-08-03T09:18:15.458985+00:00",
+      "type": "diagnose",
+      "actor": "kernel",
+      "payload_sha256": "079d9f1639d99b43950be70fe07917b84054f46267326f068bf4ed9b774125c8"
+    },
+    {
+      "event_id": "evt-000009",
+      "timestamp": "2026-08-03T09:18:15.458988+00:00",
+      "type": "diagnose",
+      "actor": "kernel",
+      "payload_sha256": "b0d30ece097f07c243dbb6c5932a9772bee55d30fea42ea0868137c7c4caf5c7"
+    },
+    {
+      "event_id": "evt-000010",
+      "timestamp": "2026-08-03T09:18:15.458992+00:00",
+      "type": "diagnose",
+      "actor": "kernel",
+      "payload_sha256": "10dc57e105444652cab6834bc7067144da2fd0b95255e90375aeaa83f1b0372e"
+    },
+    {
+      "event_id": "evt-000011",
+      "timestamp": "2026-08-03T09:18:15.458995+00:00",
+      "type": "diagnose",
+      "actor": "kernel",
+      "payload_sha256": "9fc870180df2e119ba376a8cbc763f161e6bf726c1ea9c525ad84976dc139261"
+    },
+    {
+      "event_id": "evt-000012",
+      "timestamp": "2026-08-03T09:18:15.555690+00:00",
+      "type": "plan",
+      "actor": "cli",
+      "payload_sha256": "5582fadc15be0a9911ae233fa7543a10f376958e0f6c37a58e569596451c71d3"
+    },
+    {
+      "event_id": "evt-000013",
+      "timestamp": "2026-08-03T09:18:15.651002+00:00",
+      "type": "observe",
+      "actor": "cli",
+      "payload_sha256": "776fd9388fff6e36078e5d5033aadb12001a3a3d81430feacfd60b45da177f91"
+    },
+    {
+      "event_id": "evt-000014",
+      "timestamp": "2026-08-03T09:18:15.766713+00:00",
+      "type": "state_transition",
+      "actor": "cli",
+      "payload_sha256": "2b2dfcea8964abf5c6c3df94188a7d15bce245a7d5cd30ab9f26c21a4054f549"
+    },
+    {
+      "event_id": "evt-000015",
+      "timestamp": "2026-08-03T09:18:15.805620+00:00",
+      "type": "state_transition",
+      "actor": "cli",
+      "payload_sha256": "4a64548c24cd559b0ec09f40728395290409c37bd93de157a0dee5b061da0274"
+    }
+  ],
+  "created_at": "2026-08-03T09:18:15.362265+00:00",
+  "updated_at": "2026-08-03T09:18:15.805486+00:00",
+  "actions_taken": [
+    "SEARCH_PRIMARY_SOURCE"
+  ]
+}

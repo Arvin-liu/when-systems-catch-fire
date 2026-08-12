@@ -1,0 +1,50 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://arvin-liu.github.io/when-systems-catch-fire/schemas/research-os/action-vocabulary.schema.json",
+  "title": "Next-Action Selection Record",
+  "description": "Validates a scheduler selection record. The action code MUST belong to the closed vocabulary in data/research-os/action-vocabulary.json. Selection must be inspectable: prerequisite gaps addressed, expected information gain, discriminating power, cost, reversibility, dependency ordering, risk multiplier, rejected alternatives, and the observation that would change the next decision. LLM proposals are only optional candidate inputs and cannot be the sole selector or validator.",
+  "type": "object",
+  "required": ["episode_id", "selected_action", "selection_rationale", "ranked_candidates"],
+  "properties": {
+    "episode_id": {"type": "string"},
+    "selected_action": {
+      "type": "string",
+      "enum": ["FREEZE_OR_NARROW_QUESTION", "SEARCH_PRIMARY_SOURCE", "FETCH_FULL_TEXT", "READ_METHODS", "READ_SUPPLEMENT", "LOCATE_RAW_DATA", "LOCATE_ANALYSIS_CODE", "RECOMPUTE_RESULT", "REPRODUCE_ANALYSIS", "BUILD_DEFINITION_CROSSWALK", "CHECK_SOURCE_DEPENDENCE", "SEEK_REPLICATION", "SEEK_NULL_OR_CONTRADICTORY_RESULT", "SEEK_METHODOLOGICAL_CRITIQUE", "COMPARE_POPULATIONS_OR_JURISDICTIONS", "COMPARE_OUTCOMES_OR_DENOMINATORS", "TEST_ALTERNATIVE_MECHANISM", "RUN_ADVERSARIAL_REVIEW", "DOWNGRADE_CLAIM", "BRANCH_QUESTION", "PAUSE_AND_CHECKPOINT", "ESCALATE_TO_GPT_OWNER", "STOP_WITH_INSUFFICIENT_EVIDENCE", "PUBLISH_CANDIDATE_PACKET"]
+    },
+    "selection_rationale": {
+      "type": "object",
+      "required": ["prerequisite_gaps_addressed", "expected_information_gain", "discriminating_power", "cost_and_available_resources", "reversibility", "dependency_ordering", "risk_high_stakes_multiplier", "rejected_alternatives_and_why", "observation_that_would_change_next_decision"],
+      "properties": {
+        "prerequisite_gaps_addressed": {"type": "array", "items": {"type": "string"}},
+        "expected_information_gain": {"type": "string"},
+        "discriminating_power": {"type": "string", "enum": ["none", "low", "medium", "high"]},
+        "cost_and_available_resources": {"type": "object"},
+        "reversibility": {"type": "string", "enum": ["reversible", "irreversible"]},
+        "dependency_ordering": {"type": "array", "items": {"type": "string"}},
+        "risk_high_stakes_multiplier": {"type": "number", "minimum": 1.0},
+        "rejected_alternatives_and_why": {"type": "array", "items": {"type": "object"}},
+        "observation_that_would_change_next_decision": {"type": "string"}
+      }
+    },
+    "ranked_candidates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["action", "score"],
+        "properties": {
+          "action": {"type": "string"},
+          "score": {"type": "number"},
+          "tie_breaker": {"type": "string"}
+        }
+      }
+    },
+    "llm_candidate_input": {
+      "type": "object",
+      "description": "Optional only. Never used as sole selector or validator.",
+      "properties": {
+        "proposed_action": {"type": "string"},
+        "confidence": {"type": "number"}
+      }
+    }
+  }
+}
