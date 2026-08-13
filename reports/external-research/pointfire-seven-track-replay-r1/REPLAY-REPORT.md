@@ -67,7 +67,7 @@ Retrieval was mixed: five peer-reviewed or official HTML/repository records were
 
 The strongest defensible conclusion from this repaired pass is conditional and measurement-specific: in the Tacoma, Portland, and Madison settings, measured canopy-cover exposures were associated with lower local summertime near-surface air temperature under the reported observational designs, while the size and direction depend on endpoint, time, urban form, ventilation, water, and the exact exposure definition. A local temperature-threshold proxy was observed in Tacoma, but direct human heat-stress exposure was not established. This is not evidence that adding or preserving canopy will stably lower summer near-ground heat exposure in every city, nor that the observed associations are causal.
 
-The replay does not establish EPISTEMICALLY_ACCEPTED. The independent adversarial review and fresh rereview passed after repairs to source metadata, exposure pooling, outcome typing, source-family roles, and causal audit fields; detailed reviewer receipts are retained privately. The remaining limits are substantive scope limits, not a claim of universal external validity.
+The replay does not establish `EPISTEMICALLY_ACCEPTED=0`. Review provenance is withheld from this public report; it records only the bounded result and its substantive scope limits. Nothing here is a claim of universal external validity.
 
 ## Provenance
 

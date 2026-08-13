@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [\| \[C-263\]( ) \| \[缓存倒U型验证\]( ) \| 暂无内容 / No content \|](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-ab458bef405241c1 / \| \[C-263\]( ) \| \[缓存倒U型验证\]( ) \| 暂无内容 / No content \|
+  - 来源：`统一案例总表/INDEX.md`
+  - 依赖：—；被引用：—
 - [\| \[C-268\]( ) \| \[D86乘法归零验证\]( ) \| 暂无内容 / No content \|](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-012a66e3b7602de6 / \| \[C-268\]( ) \| \[D86乘法归零验证\]( ) \| 暂无内容 / No content \|
@@ -2489,9 +2494,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-cfb1cf993d15e650 / 中文：案例说明：公民有真实退出权，NHS认同经退出权验证但应约者逐渐消极
   - 来源：`统一案例总表/0041-C-41-英国NHS.md`
-  - 依赖：—；被引用：—
-- [中文：案例说明：公民有真实退出权，福利国家认同经退出权验证](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0038-C-38-%E5%8C%97%E6%AC%A7%E7%A6%8F%E5%88%A9%E5%9B%BD%E5%AE%B6.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-0ba8dd65d27f82e9 / 中文：案例说明：公民有真实退出权，福利国家认同经退出权验证
-  - 来源：`统一案例总表/0038-C-38-北欧福利国家.md`
   - 依赖：—；被引用：—

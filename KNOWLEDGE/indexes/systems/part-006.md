@@ -4,11 +4,6 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
-- [点火框架提供了因果链分析、跨域同构识别和叙事结构收敛，但不能替代文本细读、文学共同体讨论。文学作品跨时代有效性的具体判定必须 pending。](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-25d24960fc0d6664 / 点火框架提供了因果链分析、跨域同构识别和叙事结构收敛，但不能替代文本细读、文学共同体讨论。文学作品跨时代有效性的具体判定必须 pending。
-  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
-  - 依赖：—；被引用：—
 - [点火框架提供了因果链分析、跨域同构识别和审美判断收敛，但不能替代形式分析、媒介分析、观看情境分析、历史语境分析、解释共同体共识。审美判断客观性的具体判定必须 pending。](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-fbaa0de0b4cf3116 / 点火框架提供了因果链分析、跨域同构识别和审美判断收敛，但不能替代形式分析、媒介分析、观看情境分析、历史语境分析、解释共同体共识。审美判断客观性的具体判定必须 pending。

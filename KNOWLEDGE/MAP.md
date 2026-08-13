@@ -61,7 +61,7 @@
 
 **引导问题：** 跨尺度表示、概率动力学和关系网络能描述什么，不能证明什么？
 
-当前检索覆盖 4502 项，重点卡片 79 项。 [打开本主题完整索引](./indexes/systems.md)
+当前检索覆盖 4501 项，重点卡片 79 项。 [打开本主题完整索引](./indexes/systems.md)
 
 - [Q14 Ignition Atlas maps are versioned derived projections, not a permanent total map and not a second canonical truth so](./ASSET-CARDS.md#asset-nfc-1e10227f1b51e4d0) — `RETAINED_AS_STRUCTURAL_METAPHOR`；- 121Q14 Ignition Atlas maps are versioned derived projections, not a permanent total map and not a second canonical truth source.
 - [Iteration method 1.3.0 and system map 0.3.0, 0.4.0 are Historical; method 1.2.0 and maps 0.1.0, 0.2.0 are earlier Histor](./ASSET-CARDS.md#asset-nfc-2d220e92f7b73dd3) — `ACCEPTED_AS_DEFINITION`；Iteration method 1.3.0 and system map 0.3.0, 0.4.0 are Historical; method 1.2.0 and maps 0.1.0, 0.2.0 are earlier Historical, not Current. Treat imple
@@ -142,7 +142,7 @@
 
 **引导问题：** 研究结果如何形成可阅读作品，同时不越过来源、证据和许可边界？
 
-当前检索覆盖 1245 项，重点卡片 53 项。 [打开本主题完整索引](./indexes/writing_publication.md)
+当前检索覆盖 1246 项，重点卡片 53 项。 [打开本主题完整索引](./indexes/writing_publication.md)
 
 - [任务 104（PR #160，已合并）建立编辑文章层与语料关系分析；任务 105（PR #161，已合并，精确 head `9d7d5ab512ffe3fd109a60ebd3d9d246b3a42d19`，普通合并 `9b5b4b9bfb](./ASSET-CARDS.md#asset-nfc-19c3c3352a78b2aa) — `RETAINED_AS_STRUCTURAL_METAPHOR`；任务 104（PR #160，已合并）建立编辑文章层与语料关系分析；任务 105（PR #161，已合并，精确 head `9d7d5ab512ffe3fd109a60ebd3d9d246b3a42d19`，普通合并 `9b5b4b9bfb243fe4cc52f7b163a9613ee6628321
 - [任务 106（本迭代）建立了合并后真相传播基础设施：规范化 merged-iteration ledger、9 维 impact 引擎、确定性 current-truth 投影、fail-closed 验证器、编辑文章 stale/revi](./ASSET-CARDS.md#asset-nfc-1ead70b9f991a2b8) — `RETAINED_AS_STRUCTURAL_METAPHOR`；- 任务 106（本迭代）建立了合并后真相传播基础设施：规范化 merged-iteration ledger、9 维 impact 引擎、确定性 current-truth 投影、fail-closed 验证器、编辑文章 stale/review 生命周期与系统图 impact 审计，使后续合并的

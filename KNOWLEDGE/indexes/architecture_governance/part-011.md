@@ -269,6 +269,11 @@
   - 可搜索名称：NFC-60c8e4b003dc6024 / The registry's own `crossref_verified: true`, `crossref_title`, `crossref_year`
   - 来源：`evidence-program/preregistration/IGNITION-EVIDENCE-PILOT-R1-CROSSREF-DOI-VERIFICATION.protocol.md`
   - 依赖：—；被引用：—
+- [The replay does not establish `EPISTEMICALLY_ACCEPTED=0`. Review provenance is withheld from this public report; it reco](../../../reports/external-research/pointfire-seven-track-replay-r1/REPLAY-REPORT.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-9618e7b29b00cff7 / The replay does not establish `EPISTEMICALLY_ACCEPTED=0`. Review provenance is withheld from this public report; it reco
+  - 来源：`reports/external-research/pointfire-seven-track-replay-r1/REPLAY-REPORT.md`
+  - 依赖：—；被引用：—
 - [The reported adapter bank comprises 22 rank-64 LoRA modules trained for three epochs on task data and applied to attenti](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-7940c46059e8b181 / The reported adapter bank comprises 22 rank-64 LoRA modules trained for three epochs on task data and applied to attenti
@@ -2497,10 +2502,5 @@
 - [\| \[C-24\]( ) \| \[德国社会市场经济\]( ) \| 战后德国人有真实退出权，社会市场经济认同经退出权验证 \|](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-3603e21bbbc34985 / \| \[C-24\]( ) \| \[德国社会市场经济\]( ) \| 战后德国人有真实退出权，社会市场经济认同经退出权验证 \|
-  - 来源：`统一案例总表/INDEX.md`
-  - 依赖：—；被引用：—
-- [\| \[C-263\]( ) \| \[缓存倒U型验证\]( ) \| 暂无内容 / No content \|](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/INDEX.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-ab458bef405241c1 / \| \[C-263\]( ) \| \[缓存倒U型验证\]( ) \| 暂无内容 / No content \|
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：—；被引用：—

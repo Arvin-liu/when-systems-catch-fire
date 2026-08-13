@@ -14,9 +14,9 @@
 - [第 008 片](./architecture_governance/part-008.md)：3501—4000；Every ACCEPTED relation declares: type, evidence (source location), confidence. → L1：结构类比；
 - [第 009 片](./architecture_governance/part-009.md)：4001—4500；L2 推论误写成 L5 结论指内部结构性判断被当作外部实证成立。 → Prior 121Q5 status `MIXED_OR_UNVERIFIED` → now **`VERIFIED_HY3`**. Full task executed by a single Hy3 runtime; no model
 - [第 010 片](./architecture_governance/part-010.md)：4501—5000；private/public separation and the rule that publication does not create truth. → the current factual boundary and claim ceiling;
-- [第 011 片](./architecture_governance/part-011.md)：5001—5500；the deviation log with a timestamp — it never overwrites this plan (§5.10). → \| \[C-263\]( ) \| \[缓存倒U型验证\]( ) \| 暂无内容 / No content \|
-- [第 012 片](./architecture_governance/part-012.md)：5501—6000；\| \[C-268\]( ) \| \[D86乘法归零验证\]( ) \| 暂无内容 / No content \| → 中文：案例说明：公民有真实退出权，福利国家认同经退出权验证
-- [第 013 片](./architecture_governance/part-013.md)：6001—6500；中文：案例说明：农奴"获得自由"但赎地成本极高事实上走不了 → 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
-- [第 014 片](./architecture_governance/part-014.md)：6501—7000；原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD` → 必要时移出案例主库。
-- [第 015 片](./architecture_governance/part-015.md)：7001—7500；必须可独立验证 → 规范性审核阶段：整体结束；后续进入项目使用与事实验证
-- [第 016 片](./architecture_governance/part-016.md)：7501—7801；规范破缺验证 — 创业团队-3人团队(所有εi-θC)→S3完全对称,角色可互换。加入投资人后(C_exit↑→ε_econ↓)→S3破缺到 → ：晋级门槛 + 初版验证器。machine_eligible=0/12，但验证器字段与 Schema 不一致。
+- [第 011 片](./architecture_governance/part-011.md)：5001—5500；the deviation log with a timestamp — it never overwrites this plan (§5.10). → \| \[C-24\]( ) \| \[德国社会市场经济\]( ) \| 战后德国人有真实退出权，社会市场经济认同经退出权验证 \|
+- [第 012 片](./architecture_governance/part-012.md)：5501—6000；\| \[C-263\]( ) \| \[缓存倒U型验证\]( ) \| 暂无内容 / No content \| → 中文：案例说明：公民有真实退出权，NHS认同经退出权验证但应约者逐渐消极
+- [第 013 片](./architecture_governance/part-013.md)：6001—6500；中文：案例说明：公民有真实退出权，福利国家认同经退出权验证 → 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
+- [第 014 片](./architecture_governance/part-014.md)：6501—7000；原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD` → 必要时单独建子协议。
+- [第 015 片](./architecture_governance/part-015.md)：7001—7500；必要时移出案例主库。 → 规模法则与点火框架σ_opt=√e收敛验证。规模越大越好是伪命题，最优规模取决于目标元协议，验证了规模价值的哥德尔盲区。
+- [第 016 片](./architecture_governance/part-016.md)：7501—7802；规范性审核阶段：整体结束；后续进入项目使用与事实验证 → ：晋级门槛 + 初版验证器。machine_eligible=0/12，但验证器字段与 Schema 不一致。

@@ -4,11 +4,6 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
-- [The replay does not establish EPISTEMICALLY_ACCEPTED. The independent adversarial review and fresh rereview passed after](../../../reports/external-research/pointfire-seven-track-replay-r1/REPLAY-REPORT.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-0a4229c0d737123d / The replay does not establish EPISTEMICALLY_ACCEPTED. The independent adversarial review and fresh rereview passed after
-  - 来源：`reports/external-research/pointfire-seven-track-replay-r1/REPLAY-REPORT.md`
-  - 依赖：—；被引用：—
 - [The repository already contains latent topology in matrices, registries, dependencies, mechanisms, and state axes, but l](../../../data/atlas/latent-map-inventory.json)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-ebdbf332e8d94a51 / The repository already contains latent topology in matrices, registries, dependencies, mechanisms, and state axes, but l
@@ -2503,4 +2498,9 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-d9b96b365d5738f2 / 任何 CAUSAL_IDENTIFIED 必须有识别假设与证据
   - 来源：`docs/foundation/architecture-structure-freeze-v1.md`
+  - 依赖：—；被引用：—
+- [任何尚无外部证据的因果、严格同构或精确跨域结论](../../../reports/foundation-architecture/085-architecture-structure-freeze.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-2af6fc7397705d23 / 任何尚无外部证据的因果、严格同构或精确跨域结论
+  - 来源：`reports/foundation-architecture/085-architecture-structure-freeze.md`
   - 依赖：—；被引用：—
