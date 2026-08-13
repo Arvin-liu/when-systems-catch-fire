@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [从这条案例看，中文：案例说明：公民有真实退出权，但旧体制先拆新体制未建→寡头收割 关键发现：第3步未满足 English: Rule-based Eng… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0028-C-28-%E4%BF%84%E7%BD%97%E6%96%AF%E4%BC%91%E5%85%8B%E7%96%97%E6%B3%95.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-f37d682234ed3b08 / 从这条案例看，中文：案例说明：公民有真实退出权，但旧体制先拆新体制未建→寡头收割 关键发现：第3步未满足 English: Rule-based Eng… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`统一案例总表/0028-C-28-俄罗斯休克疗法.md`
+  - 依赖：—；被引用：—
 - [从这条案例看，中文：案例说明：公民有真实退出权，但认同建在部分应约者身上（政治极化） 关键发现：第5步跑通后在退化 English: Rule-base… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0071-C-71-%E7%BE%8E%E5%9B%BD%E5%9B%BD%E5%AE%B6%E8%AE%A4%E5%90%8C%E5%8D%B1%E6%9C%BA%E2%98%85.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-bc6104c5d8c99110 / 从这条案例看，中文：案例说明：公民有真实退出权，但认同建在部分应约者身上（政治极化） 关键发现：第5步跑通后在退化 English: Rule-base… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-19270cf0304b779b / 全球公共债务作为系统熵值，AI投资作为熵引导的出口——这是熵引导函数在国际宏观域的完美验证。
   - 来源：`统一案例总表/0661-C-666-刘怡国际参考笔记碰撞验证.md`
-  - 依赖：—；被引用：—
-- [全语料非函数型断言裁决索引](../../ASSET-CARDS.md#asset-hr-addcb11c670ad242)
-  - 类型/状态：`RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
-  - 可搜索名称：全语料非函数型断言裁决索引 / nonfunction-claim-adjudication-index
-  - 来源：`docs/foundation/nonfunction-claim-adjudication-index.md`
   - 依赖：—；被引用：—

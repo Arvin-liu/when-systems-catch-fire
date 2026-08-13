@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [def test_public_route_flag_cannot_bypass(self): self.bad(lambda d:d\["relationships"\]\[0\].update({"public_surface":False}),"schema")](../../../tests/test_epistemic_governance_relationships.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-88EB361A3CCC9477 / def test_public_route_flag_cannot_bypass(self): self.bad(lambda d:d\["relationships"\]\[0\].update({"public_surface":False}),"schema") / IMPLICIT-88EB361A3CCC9477
+  - 来源：`tests/test_epistemic_governance_relationships.py`
+  - 依赖：—；被引用：—
 - [def test_publication_gate_workflow():](../../../tests/test_q33_governance_infrastructure.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-15BF1F80D3442059 / def test_publication_gate_workflow(): / IMPLICIT-15BF1F80D3442059
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-2d02b971a672d0f8 / Every ACCEPTED relation declares: type, evidence (source location), confidence.
   - 来源：`tools/build_corpus_relation_graph.py`
-  - 依赖：—；被引用：—
-- [Every computable distribution is representable by a stochastic lambda expression, motivating the broader universality th](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-80e505add4e82e9e / Every computable distribution is representable by a stochastic lambda expression, motivating the broader universality th
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
   - 依赖：—；被引用：—

@@ -175,6 +175,8 @@
 {"category": "EVIDENCE_OR_BENCHMARK", "matched_rule": "EVIDENCE_OR_BENCHMARK", "path": "case_failures/examples/cross_domain_synergy_risk.md"}
 {"category": "EVIDENCE_OR_BENCHMARK", "matched_rule": "EVIDENCE_OR_BENCHMARK", "path": "case_failures/examples/technology_economic_growth_failure.md"}
 {"category": "GOVERNED_MACHINE_RECORD", "matched_rule": "GOVERNED_MACHINE_RECORD", "path": "data/README.md"}
+{"category": "GOVERNED_MACHINE_RECORD", "matched_rule": "GOVERNED_MACHINE_RECORD", "path": "data/architecture-calibration/STEP08-PREREGISTRATION.json"}
+{"category": "GOVERNED_MACHINE_RECORD", "matched_rule": "GOVERNED_MACHINE_RECORD", "path": "data/architecture-calibration/STEP09-RESULTS.json"}
 {"category": "GOVERNED_MACHINE_RECORD", "matched_rule": "GOVERNED_MACHINE_RECORD", "path": "data/architecture/121q12-baseline.json"}
 {"category": "GOVERNED_MACHINE_RECORD", "matched_rule": "GOVERNED_MACHINE_RECORD", "path": "data/architecture/121q12-ledger.jsonl"}
 {"category": "GOVERNED_MACHINE_RECORD", "matched_rule": "GOVERNED_MACHINE_RECORD", "path": "data/architecture/121q12-run-state.json"}
@@ -1715,6 +1717,8 @@
 {"category": "GENERATED_PROJECTION", "matched_rule": "GENERATED_PROJECTION", "path": "outputs/stories/20260712-disobedience-subjectivity/story-source-ledger.json"}
 {"category": "GENERATED_PROJECTION", "matched_rule": "GENERATED_PROJECTION", "path": "outputs/stories/20260712-disobedience-subjectivity/story-structure-map.md"}
 {"category": "GENERATED_PROJECTION", "matched_rule": "GENERATED_PROJECTION", "path": "outputs/stories/20260712-disobedience-subjectivity/story-validation-report.md"}
+{"category": "GENERATED_PROJECTION", "matched_rule": "GENERATED_PROJECTION", "path": "reports/architecture-calibration/STEP08-PREREGISTRATION.md"}
+{"category": "GENERATED_PROJECTION", "matched_rule": "GENERATED_PROJECTION", "path": "reports/architecture-calibration/STEP09-EXECUTION.md"}
 {"category": "GENERATED_PROJECTION", "matched_rule": "GENERATED_PROJECTION", "path": "reports/architecture/121Q12-baseline-audit.md"}
 {"category": "GENERATED_PROJECTION", "matched_rule": "GENERATED_PROJECTION", "path": "reports/architecture/121Q12-completion-seal.json"}
 {"category": "GENERATED_PROJECTION", "matched_rule": "GENERATED_PROJECTION", "path": "reports/architecture/121Q12-effectual-mechanism-dual-loop.md"}

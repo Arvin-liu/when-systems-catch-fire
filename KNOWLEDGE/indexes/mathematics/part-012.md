@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Within the source-defined scope, 点火充要条件 is adjudicated as FORMAL_PROPOSITION: 点火(系统可持续)的充要条件，五因子乘法。. This is a model-int](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：CLAIM-T1 / Within the source-defined scope, 点火充要条件 is adjudicated as FORMAL_PROPOSITION: 点火(系统可持续)的充要条件，五因子乘法。. This is a model-int
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
 - [Within the source-defined scope, 点火对冲函数 is adjudicated as RELATION: 点火对冲，意识、退出权信号、退化免疫、抵抗的平衡。. This is a model-internal](../../../data/foundation/adjudications/core-kernel.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
   - 可搜索名称：CLAIM-D37 / Within the source-defined scope, 点火对冲函数 is adjudicated as RELATION: 点火对冲，意识、退出权信号、退化免疫、抵抗的平衡。. This is a model-internal
@@ -2493,8 +2498,3 @@
   - 可搜索名称：NFC-4c56b3945415016a / \| \[D416\]( ) \| \[K=1-p_max=p*等价证明函数 \\\| M5的K=1对应正反馈恰好自持\](<./0452-D416-K
   - 来源：`统一函数总表/INDEX.md`
   - 依赖：D416；被引用：—
-- [\| \[D417\]( ) \| \[δ_c-稳定性裕度统一函数\]( ) \| F_{D417}(x) := M6的吸引域深度×宽度²](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-25e5efc4e8dfa3b9 / \| \[D417\]( ) \| \[δ_c-稳定性裕度统一函数\]( ) \| F_{D417}(x) := M6的吸引域深度×宽度²
-  - 来源：`统一函数总表/INDEX.md`
-  - 依赖：D285, D417；被引用：—

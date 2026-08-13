@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [非对称门在跨学科合作中 — 先在共享域建立沟通降低意识落差,再进入各自领域](../../../data/foundation/evidence/evidence.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-0c5901e46d6fa065 / 非对称门在跨学科合作中 — 先在共享域建立沟通降低意识落差,再进入各自领域
+  - 来源：`data/foundation/evidence/evidence.jsonl`
+  - 依赖：—；被引用：—
 - [项目本体升级完成情况](../../../outputs/audit/project-body-version-upgrade-audit-20260709.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
   - 可搜索名称：NFC-16dbdcfc49b2344b / 项目本体升级完成情况

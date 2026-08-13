@@ -4,6 +4,36 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [\| \[C-325\]( ) \| \[D135修正的工程含义 — CAI和EAI应使用部分不同的训练数据，降低G来提高ηg](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-b7bf135ca5b84b51 / \| \[C-325\]( ) \| \[D135修正的工程含义 — CAI和EAI应使用部分不同的训练数据，降低G来提高ηg
+  - 来源：`统一案例总表/INDEX.md`
+  - 依赖：D135, D80；被引用：—
+- [\| \[C-329\]( ) \| \[定投的结构保守性 — 每月5000，W=10万时f=5%，W=100万时](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-d4fbde197f6a64c8 / \| \[C-329\]( ) \| \[定投的结构保守性 — 每月5000，W=10万时f=5%，W=100万时
+  - 来源：`统一案例总表/INDEX.md`
+  - 依赖：D85；被引用：—
+- [\| \[C-32\]( ) \| \[雅典民主改革\]( ) \| 公民可流亡可拒绝参与，民主认同经退出权验证（排除了奴隶和女性） \|](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-1e73ffed60abe13c / \| \[C-32\]( ) \| \[雅典民主改革\]( ) \| 公民可流亡可拒绝参与，民主认同经退出权验证（排除了奴隶和女性） \|
+  - 来源：`统一案例总表/INDEX.md`
+  - 依赖：—；被引用：—
+- [\| \[C-330\]( ) \| \[巴菲特模式的投资域验证 — 定投=巴菲特模式精确执行，三效率乘积最大\](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-4bc94e82fc1ce419 / \| \[C-330\]( ) \| \[巴菲特模式的投资域验证 — 定投=巴菲特模式精确执行，三效率乘积最大\](<./0330-C-330-巴菲特
+  - 来源：`统一案例总表/INDEX.md`
+  - 依赖：D85；被引用：—
+- [\| \[C-332\]( ) \| \[乘法临界漂移验证 — 改善0.3→0.](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-84852bf4f1546dce / \| \[C-332\]( ) \| \[乘法临界漂移验证 — 改善0.3→0.
+  - 来源：`统一案例总表/INDEX.md`
+  - 依赖：D87；被引用：—
+- [\| \[C-336\]( ) \| \[自举循环的结构保守性 — B(n)越大ΔB/B越小但永远为正，不会爆炸也不会归零\](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-fe0db9f0bb0ecbb0 / \| \[C-336\]( ) \| \[自举循环的结构保守性 — B(n)越大ΔB/B越小但永远为正，不会爆炸也不会归零\](<./0335-C-336-自举循环的结构保守性
+  - 来源：`统一案例总表/INDEX.md`
+  - 依赖：D89；被引用：—
 - [\| \[C-337\]( ) \| \[倒U型统一验证 — D123/D142/D133/D135/D139五个最优值都是f₁(↑)×f₂(↓)的极值点\](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-069daf6613174298 / \| \[C-337\]( ) \| \[倒U型统一验证 — D123/D142/D133/D135/D139五个最优值都是f₁(↑)×f₂(↓)的极值点\](<./0336-C-337-倒
@@ -772,6 +802,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-5e381e8a3aa7c460 / \| extract 1329 claim rows \| atomic-claim candidate \| `SOURCE-BIND → ATOMIZE` \| row identity is not truth identity \| a ma
   - 来源：`docs/architecture/getnote-1329-epistemic-governance-pressure-test.md`
+  - 依赖：—；被引用：—
+- [\| Function OS \| direct bounded function with precondition \| success and precondition rejection PASS; artifact, trace, va](../../../reports/architecture-calibration/STEP09-EXECUTION.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-e5a17cc82991ed5d / \| Function OS \| direct bounded function with precondition \| success and precondition rejection PASS; artifact, trace, va
+  - 来源：`reports/architecture-calibration/STEP09-EXECUTION.md`
   - 依赖：—；被引用：—
 - [\| future correction \| result unit / claim \| `PUBLISH → REVISE/DOWNGRADE/SUPERSEDE/WITHDRAW` \| append-only lineage and an](../../../docs/architecture/getnote-1329-epistemic-governance-pressure-test.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -2460,38 +2495,3 @@
   - 可搜索名称：NFC-123b454ec7ddfc44 / 中文：案例说明：沃尔顿10年追踪 → D61向上螺旋自维持验证
   - 来源：`统一案例总表/0155-C-155-沃尔顿10年追踪.md`
   - 依赖：D61；被引用：—
-- [中文：案例说明：沃尔顿1小时归属感练习 → D60智慧干预效力验证（新生有效/大三无效）](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0153-C-153-%E6%B2%83%E5%B0%94%E9%A1%BF1%E5%B0%8F%E6%97%B6%E5%BD%92%E5%B1%9E%E6%84%9F%E7%BB%83%E4%B9%A0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-4d4c9dc8e194eb2e / 中文：案例说明：沃尔顿1小时归属感练习 → D60智慧干预效力验证（新生有效/大三无效）
-  - 来源：`统一案例总表/0153-C-153-沃尔顿1小时归属感练习.md`
-  - 依赖：D60；被引用：—
-- [中文：案例说明：沃尔顿21分钟拯救婚姻 → D60的η_delivery因子验证](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0154-C-154-%E6%B2%83%E5%B0%94%E9%A1%BF21%E5%88%86%E9%92%9F%E6%8B%AF%E6%95%91%E5%A9%9A%E5%A7%BB.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-401970354ea7a6bb / 中文：案例说明：沃尔顿21分钟拯救婚姻 → D60的η_delivery因子验证
-  - 来源：`统一案例总表/0154-C-154-沃尔顿21分钟拯救婚姻.md`
-  - 依赖：D60；被引用：—
-- [中文：案例说明：种姓制度事实上锁定社会位置，认同薄且未经验证](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0018-C-18-%E7%AC%88%E5%A4%9A%E7%8E%8B%E6%9C%9D.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-38997529a1e84885 / 中文：案例说明：种姓制度事实上锁定社会位置，认同薄且未经验证
-  - 来源：`统一案例总表/0018-C-18-笈多王朝.md`
-  - 依赖：—；被引用：—
-- [中文：案例说明：种姓制度事实上锁定社会位置，认同靠阿育王个人权威维持](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0010-C-10-%E9%98%BF%E8%82%B2%E7%8E%8B%E7%9A%88%E4%BE%9D.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-66c153392c10c232 / 中文：案例说明：种姓制度事实上锁定社会位置，认同靠阿育王个人权威维持
-  - 来源：`统一案例总表/0010-C-10-阿育王皈依.md`
-  - 依赖：—；被引用：—
-- [中文：案例说明：科举制让汉人"可以不考"但事实上不考=放弃上升通道](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0007-C-7-%E6%B8%85%E6%9C%9D%E6%BB%A1%E6%B1%89%E4%B8%80%E4%BD%93.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-4c7ca9d0dbdc9f7d / 中文：案例说明：科举制让汉人"可以不考"但事实上不考=放弃上升通道
-  - 来源：`统一案例总表/0007-C-7-清朝满汉一体.md`
-  - 依赖：—；被引用：—
-- [中文：案例说明：统一相变框架](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0072-C-72-%E7%BB%9F%E4%B8%80%E7%9B%B8%E5%8F%98%E6%A1%86%E6%9E%B6.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-2c6be35c070bbf29 / 中文：案例说明：统一相变框架
-  - 来源：`统一案例总表/0072-C-72-统一相变框架.md`
-  - 依赖：—；被引用：—
-- [中文：案例说明：罗森塔尔"潜力生"标签实验 → D59过渡期窗口衰减验证](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0152-C-152-%E7%BD%97%E6%A3%AE%E5%A1%94%E5%B0%94-%E6%BD%9C%E5%8A%9B%E7%94%9F-%E6%A0%87%E7%AD%BE%E5%AE%9E%E9%AA%8C.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-a00f078b123f9a14 / 中文：案例说明：罗森塔尔"潜力生"标签实验 → D59过渡期窗口衰减验证
-  - 来源：`统一案例总表/0152-C-152-罗森塔尔-潜力生-标签实验.md`
-  - 依赖：D59；被引用：—

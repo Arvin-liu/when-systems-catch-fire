@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [causal_topology := ∫_{Ω} cause × effect × temporal_order × counterfactual dΩ（legacy candidate；不能据此识别现实因果）](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-001d410543ff17ee / causal_topology := ∫_{Ω} cause × effect × temporal_order × counterfactual dΩ（legacy candidate；不能据此识别现实因果）
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [causal_topology := ∫_{Ω} cause × effect × temporal_order × counterfactual dΩ（因果拓扑积分）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0001-%CE%A8%E2%82%80%E5%85%83%E5%87%BD%E6%95%B0%E5%AE%8C%E6%95%B4%E6%95%B0%E5%AD%A6%E5%AE%9A%E4%B9%89.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-A020D8048B556C3D / causal_topology := ∫_{Ω} cause × effect × temporal_order × counterfactual dΩ（因果拓扑积分） / IMPLICIT-A020D8048B556C3D
+  - 来源：`统一函数总表/0001-Ψ₀元函数完整数学定义.md`
+  - 依赖：—；被引用：—
+- [CausalConeOrHorizon](../../../docs/architecture/multiscale-causal-fabric.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-bd6fc4184c24d371 / CausalConeOrHorizon
+  - 来源：`docs/architecture/multiscale-causal-fabric.md`
+  - 依赖：—；被引用：—
 - [CausalEvent](../../../docs/architecture/multiscale-causal-fabric.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-10fd3acc75e4b626 / CausalEvent
@@ -1599,6 +1614,11 @@
   - 可搜索名称：NFC-524702c1f6533ecf / Function OS can execute specified PSD checks but does not decide truth.
   - 来源：`reports/architecture/121Q22-probabilistic-system-dynamics-validation.md`
   - 依赖：—；被引用：—
+- [Function OS remains a candidate reference implementation and not a complete sandbox or general-purpose operating system.](../../../reports/architecture-calibration/STEP09-EXECUTION.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-7722c0ca37f03b84 / Function OS remains a candidate reference implementation and not a complete sandbox or general-purpose operating system.
+  - 来源：`reports/architecture-calibration/STEP09-EXECUTION.md`
+  - 依赖：—；被引用：—
 - [Function OS 负责执行动作，不决定动作是否值得。](../../../ARCHITECTURE.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-0fae86a2713fc63f / Function OS 负责执行动作，不决定动作是否值得。
@@ -2296,6 +2316,11 @@
   - 可搜索名称：NFC-75c28921c39aa1b4 / MCF organizes causal representation.
   - 来源：`reports/architecture/121Q22-probabilistic-system-dynamics-validation.md`
   - 依赖：—；被引用：—
+- [MCF: tests/test_multiscale_causal_fabric.py](../../../reports/architecture-calibration/STEP08-PREREGISTRATION.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-23d651384e618b2b / MCF: tests/test_multiscale_causal_fabric.py
+  - 来源：`reports/architecture-calibration/STEP08-PREREGISTRATION.md`
+  - 依赖：—；被引用：—
 - [MCF、PSD、ARN 与 Atlas 的有边界投影、差异或反例；](../../../docs/publication/zhiyuan-writing-method.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-a9f0723a30beaed7 / MCF、PSD、ARN 与 Atlas 的有边界投影、差异或反例；
@@ -2475,29 +2500,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-6331fb4e76941f90 / Must reference a local network_id, state_id, projection_id or a declared external_refs.ref_id.
   - 来源：`schemas/architecture/adaptive-relational-network.schema.json`
-  - 依赖：—；被引用：—
-- [NC-001 经全表查重（无等价案例）与 Ψ₀ 六维判定，判定为**真新增教育评价机制个案**，已以 C-0808 入表并完成最小索引追加与 D595 对应闭环。后续建议做 C-0808 索引可见性验证。](../../../outputs/audit/nc-001-title-barrier-backfill-audit-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-7cf222c84250ba6e / NC-001 经全表查重（无等价案例）与 Ψ₀ 六维判定，判定为**真新增教育评价机制个案**，已以 C-0808 入表并完成最小索引追加与 D595 对应闭环。后续建议做 C-0808 索引可见性验证。
-  - 来源：`outputs/audit/nc-001-title-barrier-backfill-audit-20260708.md`
-  - 依赖：D595；被引用：—
-- [NC-002 经全表查重（无等价案例）与 Ψ₀ 六维判定，判定为**真新增教育评价机制个案**，已以 C-0809 入表并完成最小索引追加与 D597/D173 对应闭环。后续建议做 C-0809 索引可见性验证。](../../../outputs/audit/nc-002-performed-fake-class-backfill-audit-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-dd7e8fb851ffdeef / NC-002 经全表查重（无等价案例）与 Ψ₀ 六维判定，判定为**真新增教育评价机制个案**，已以 C-0809 入表并完成最小索引追加与 D597/D173 对应闭环。后续建议做 C-0809 索引可见性验证。
-  - 来源：`outputs/audit/nc-002-performed-fake-class-backfill-audit-20260708.md`
-  - 依赖：D173, D597；被引用：—
-- [Network/non-200 outcomes are recorded explicitly (acquisition_status) and NEVER](../../../evidence-program/tools/run_crossref_verification.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-22c0126e08206e31 / Network/non-200 outcomes are recorded explicitly (acquisition_status) and NEVER
-  - 来源：`evidence-program/tools/run_crossref_verification.py`
-  - 依赖：—；被引用：—
-- [network\["diffs"\]\[0\]\["external_refs"\]\[1\]\["ref_type"\] = "external_projection"](../../../tests/test_adaptive_relational_network_validation_contract.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-4407a6fb900d4ab3 / network\["diffs"\]\[0\]\["external_refs"\]\[1\]\["ref_type"\] = "external_projection"
-  - 来源：`tests/test_adaptive_relational_network_validation_contract.py`
-  - 依赖：—；被引用：—
-- [network\["embedding_evidence"\]\[0\]\["alternatives"\] = \["valid", " "\]](../../../tests/test_adaptive_relational_network_validation_contract.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-31253dbfa15c1917 / network\["embedding_evidence"\]\[0\]\["alternatives"\] = \["valid", " "\]
-  - 来源：`tests/test_adaptive_relational_network_validation_contract.py`
   - 依赖：—；被引用：—

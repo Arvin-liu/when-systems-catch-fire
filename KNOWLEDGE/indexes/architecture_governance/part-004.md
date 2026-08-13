@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [def arxiv_candidates(arxiv_id: str) -> list\[tuple\[str, str\]\]:](../../../scripts/external-research/fulltext_resolver.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-4B03D65A2F6E90C7 / def arxiv_candidates(arxiv_id: str) -> list\[tuple\[str, str\]\]: / IMPLICIT-4B03D65A2F6E90C7
+  - 来源：`scripts/external-research/fulltext_resolver.py`
+  - 依赖：—；被引用：—
 - [def as_dict(self) -> dict\[str, int \| float \| None\]:](../../../tools/language_thought/validate_language_thought.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-55122C9E7A6C99C4 / def as_dict(self) -> dict\[str, int \| float \| None\]: / IMPLICIT-55122C9E7A6C99C4
@@ -2498,9 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-E1608B8603415E8C / def main() -> int: / IMPLICIT-E1608B8603415E8C / IMPLICIT-027F8B91980E723D
   - 来源：`tools/operations/generate_stage_snapshot_actor_contract.py`
-  - 依赖：—；被引用：—
-- [def main() -> int:](../../../tools/operations/compute_change_propagation.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-E41293F50CB02700 / def main() -> int: / IMPLICIT-E41293F50CB02700 / IMPLICIT-027F8B91980E723D
-  - 来源：`tools/operations/compute_change_propagation.py`
   - 依赖：—；被引用：—

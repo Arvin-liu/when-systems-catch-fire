@@ -4,6 +4,41 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [所有普遍性结论受 evidence_regimes + pending_claims 约束，必须 pending，不得写成定论。](../../../outputs/collisions/20260708-teacher-competition/collision-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-4a53cdd943774f6e / 所有普遍性结论受 evidence_regimes + pending_claims 约束，必须 pending，不得写成定论。
+  - 来源：`outputs/collisions/20260708-teacher-competition/collision-report.md`
+  - 依赖：—；被引用：—
+- [所有普遍性表述须 pending（G_δ + evidence_regimes 约束）](../../../outputs/audit/teacher-competition-backfill-review-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-79d17a7f2f175dd9 / 所有普遍性表述须 pending（G_δ + evidence_regimes 约束）
+  - 来源：`outputs/audit/teacher-competition-backfill-review-20260708.md`
+  - 依赖：—；被引用：—
+- [所有规划数据集都有 CSV；](../../../docs/machine_readable_data_plan.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-ca7aa5bf87b3338c / 所有规划数据集都有 CSV；
+  - 来源：`docs/machine_readable_data_plan.md`
+  - 依赖：—；被引用：—
+- [所有规划数据集都有 JSON Schema；](../../../docs/machine_readable_data_plan.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-995e7c393f355bdb / 所有规划数据集都有 JSON Schema；
+  - 来源：`docs/machine_readable_data_plan.md`
+  - 依赖：—；被引用：—
+- [所有规划数据集都有 JSON；](../../../docs/machine_readable_data_plan.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-fa5b2571d0732c95 / 所有规划数据集都有 JSON；
+  - 来源：`docs/machine_readable_data_plan.md`
+  - 依赖：—；被引用：—
+- [所需的 **公开表面更新** 或 **已验证的无影响决策**。](../../../ITERATION.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-2a08f1aca9a9b56f / 所需的 **公开表面更新** 或 **已验证的无影响决策**。
+  - 来源：`ITERATION.md`
+  - 依赖：—；被引用：—
+- [执行器：QClaw](../../../data/discipline-projection/087-execution-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-370508d261417ffe / 执行器：QClaw
+  - 来源：`data/discipline-projection/087-execution-report.md`
+  - 依赖：—；被引用：—
 - [执行器：QClaw / qclaw/pool-glm-5.2 / max](../../../reports/external-research/104-dual-088-reconciliation.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-2c79b886c860731c / 执行器：QClaw / qclaw/pool-glm-5.2 / max
@@ -2462,39 +2497,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-8a68d96ec3749cc3 / 证据制度卡片模板
   - 来源：`docs/templates/evidence_regime_card.md`
-  - 依赖：—；被引用：—
-- [证据制度卡片：AI / 计算机科学](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-f9c5432d549667cf / 证据制度卡片：AI / 计算机科学
-  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [证据制度卡片：医学](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-20c55d3f4101e0ff / 证据制度卡片：医学
-  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [证据制度卡片：历史学](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-53ded72f139fce1b / 证据制度卡片：历史学
-  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [证据制度卡片：工程学](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-e9a2f16acb5bf30d / 证据制度卡片：工程学
-  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [证据制度卡片：教育学](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-a0d3493f7fca95ba / 证据制度卡片：教育学
-  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [证据制度卡片：文学](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-cffd202f07eed74f / 证据制度卡片：文学
-  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [证据制度卡片：法学](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-10e5779f4282580f / 证据制度卡片：法学
-  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
   - 依赖：—；被引用：—

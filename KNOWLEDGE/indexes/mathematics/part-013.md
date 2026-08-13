@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [\| \[D417\]( ) \| \[δ_c-稳定性裕度统一函数\]( ) \| F_{D417}(x) := M6的吸引域深度×宽度²](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-25e5efc4e8dfa3b9 / \| \[D417\]( ) \| \[δ_c-稳定性裕度统一函数\]( ) \| F_{D417}(x) := M6的吸引域深度×宽度²
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：D285, D417；被引用：—
 - [\| \[D421\]( ) \| \[τ_min-噪声相关时间等价函数\]( ) \| F_{D421}(x) := M11](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-999d134c8daddaf3 / \| \[D421\]( ) \| \[τ_min-噪声相关时间等价函数\]( ) \| F_{D421}(x) := M11
@@ -2480,9 +2485,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-5d38611083b93d34 / 与统一案例总表建立双向链接。
   - 来源：`统一函数总表/0538-D541-道德自居-认知偏差函数.md`
-  - 依赖：—；被引用：—
-- [两个反向单调函数相乘必然生成倒U型](../../../data/foundation/formal-objects/objects.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-b5876a4aa3ad8a00 / 两个反向单调函数相乘必然生成倒U型
-  - 来源：`data/foundation/formal-objects/objects.jsonl`
   - 依赖：—；被引用：—

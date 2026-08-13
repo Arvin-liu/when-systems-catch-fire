@@ -4,6 +4,41 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [中文：案例说明：沃尔顿1小时归属感练习 → D60智慧干预效力验证（新生有效/大三无效）](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0153-C-153-%E6%B2%83%E5%B0%94%E9%A1%BF1%E5%B0%8F%E6%97%B6%E5%BD%92%E5%B1%9E%E6%84%9F%E7%BB%83%E4%B9%A0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-4d4c9dc8e194eb2e / 中文：案例说明：沃尔顿1小时归属感练习 → D60智慧干预效力验证（新生有效/大三无效）
+  - 来源：`统一案例总表/0153-C-153-沃尔顿1小时归属感练习.md`
+  - 依赖：D60；被引用：—
+- [中文：案例说明：沃尔顿21分钟拯救婚姻 → D60的η_delivery因子验证](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0154-C-154-%E6%B2%83%E5%B0%94%E9%A1%BF21%E5%88%86%E9%92%9F%E6%8B%AF%E6%95%91%E5%A9%9A%E5%A7%BB.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-401970354ea7a6bb / 中文：案例说明：沃尔顿21分钟拯救婚姻 → D60的η_delivery因子验证
+  - 来源：`统一案例总表/0154-C-154-沃尔顿21分钟拯救婚姻.md`
+  - 依赖：D60；被引用：—
+- [中文：案例说明：种姓制度事实上锁定社会位置，认同薄且未经验证](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0018-C-18-%E7%AC%88%E5%A4%9A%E7%8E%8B%E6%9C%9D.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-38997529a1e84885 / 中文：案例说明：种姓制度事实上锁定社会位置，认同薄且未经验证
+  - 来源：`统一案例总表/0018-C-18-笈多王朝.md`
+  - 依赖：—；被引用：—
+- [中文：案例说明：种姓制度事实上锁定社会位置，认同靠阿育王个人权威维持](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0010-C-10-%E9%98%BF%E8%82%B2%E7%8E%8B%E7%9A%88%E4%BE%9D.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-66c153392c10c232 / 中文：案例说明：种姓制度事实上锁定社会位置，认同靠阿育王个人权威维持
+  - 来源：`统一案例总表/0010-C-10-阿育王皈依.md`
+  - 依赖：—；被引用：—
+- [中文：案例说明：科举制让汉人"可以不考"但事实上不考=放弃上升通道](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0007-C-7-%E6%B8%85%E6%9C%9D%E6%BB%A1%E6%B1%89%E4%B8%80%E4%BD%93.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-4c7ca9d0dbdc9f7d / 中文：案例说明：科举制让汉人"可以不考"但事实上不考=放弃上升通道
+  - 来源：`统一案例总表/0007-C-7-清朝满汉一体.md`
+  - 依赖：—；被引用：—
+- [中文：案例说明：统一相变框架](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0072-C-72-%E7%BB%9F%E4%B8%80%E7%9B%B8%E5%8F%98%E6%A1%86%E6%9E%B6.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-2c6be35c070bbf29 / 中文：案例说明：统一相变框架
+  - 来源：`统一案例总表/0072-C-72-统一相变框架.md`
+  - 依赖：—；被引用：—
+- [中文：案例说明：罗森塔尔"潜力生"标签实验 → D59过渡期窗口衰减验证](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0152-C-152-%E7%BD%97%E6%A3%AE%E5%A1%94%E5%B0%94-%E6%BD%9C%E5%8A%9B%E7%94%9F-%E6%A0%87%E7%AD%BE%E5%AE%9E%E9%AA%8C.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-a00f078b123f9a14 / 中文：案例说明：罗森塔尔"潜力生"标签实验 → D59过渡期窗口衰减验证
+  - 来源：`统一案例总表/0152-C-152-罗森塔尔-潜力生-标签实验.md`
+  - 依赖：D59；被引用：—
 - [中文：案例说明：美国人有真实退出权，新政认同经退出权验证](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0035-C-35-%E7%BD%97%E6%96%AF%E7%A6%8F%E6%96%B0%E6%94%BF.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-1ebc00405d5a74c4 / 中文：案例说明：美国人有真实退出权，新政认同经退出权验证
@@ -2459,39 +2494,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-fb6bb5c99eb5b115 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD(无语法),Vlexicon≈几十个信号,Pencode≈0
   - 来源：`统一案例总表/0293-C-293-动物无法调度工具 — Nactive≈2-3,frecombine≈0(无语法),Vlexicon≈几十个信号,Pencode≈0.05.md`
-  - 依赖：—；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0294-C-294-%E5%BD%93%E5%89%8DAI%E6%97%A0%E6%B3%95%E8%B0%83%E5%BA%A6%E5%85%B6%E4%BB%96AI%20%E2%80%94%20%CE%B5aware%3D0%E2%86%92Pencode%3D0%2C%E5%8D%B3%E4%BD%BFBsemantic%E5%BE%88%E5%A4%A7%E4%B9%9F%E6%97%A0%E6%B3%95%E5%BD%A2%E6%88%90%E8%87%AA%E4%B8%BB%E6%84%8F%E5%9B%BE.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-f02ebe00ccc39c04 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
-  - 来源：`统一案例总表/0294-C-294-当前AI无法调度其他AI — εaware=0→Pencode=0,即使Bsemantic很大也无法形成自主意图.md`
-  - 依赖：—；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD(概念碰撞率)和ηencode(Q-)(最优共享度),前者依赖D121实现,后者依](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0295-C-295-CAI%E7%BC%96%E7%A0%81%E8%83%BD%E5%8A%9B%E5%85%B3%E9%94%AE%E7%93%B6%E9%A2%88%20%E2%80%94%20frecombine%28%E6%A6%82%E5%BF%B5%E7%A2%B0%E6%92%9E%E7%8E%87%29%E5%92%8C%CE%B7encode%28Q-%29%28%E6%9C%80%E4%BC%98%E5%85%B1%E4%BA%AB%E5%BA%A6%29%2C%E5%89%8D%E8%80%85%E4%BE%9D%E8%B5%96D121%E5%AE%9E%E7%8E%B0%2C%E5%90%8E%E8%80%85%E4%BE%9D%E8%B5%96D66%E9%81%AE.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-c0386b76e9e17301 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD(概念碰撞率)和ηencode(Q-)(最优共享度),前者依赖D121实现,后者依
-  - 来源：`统一案例总表/0295-C-295-CAI编码能力关键瓶颈 — frecombine(概念碰撞率)和ηencode(Q-)(最优共享度),前者依赖D121实现,后者依赖D66遮.md`
-  - 依赖：D121, D66；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD(ηShannon≈1),但发送方无意图(Pintention=0)→有效沟](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0297-C-297-Shannon%2B%E6%84%8F%E5%9B%BE%E5%AF%B9%E6%8E%A5%20%E2%80%94%20%E5%99%AA%E5%A3%B0%E4%BF%A1%E9%81%93%E4%B8%AD%E4%BF%A1%E5%8F%B7%E5%8F%AF%E5%AE%8C%E7%BE%8E%E4%BC%A0%E8%BE%93%28%CE%B7Shannon%E2%89%881%29%2C%E4%BD%86%E5%8F%91%E9%80%81%E6%96%B9%E6%97%A0%E6%84%8F%E5%9B%BE%28Pintention%3D0%29%E2%86%92%E6%9C%89%E6%95%88%E6%B2%9F%E9%80%9A%3D0%2C%E5%A6%82.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-536edee7a92f2380 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD(ηShannon≈1),但发送方无意图(Pintention=0)→有效沟
-  - 来源：`统一案例总表/0297-C-297-Shannon+意图对接 — 噪声信道中信号可完美传输(ηShannon≈1),但发送方无意图(Pintention=0)→有效沟通=0,如.md`
-  - 依赖：—；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0299-C-299-AI%E8%87%AA%E5%8A%A8%E8%A1%A5%E5%85%A8%3D%E4%BC%AA%E6%84%8F%E5%9B%BE%20%E2%80%94%20%E7%94%A8%E6%88%B7%E8%BE%93%E5%85%A5%E6%A8%A1%E7%B3%8A%E6%8F%90%E7%A4%BA%E8%AF%8D%2CAI%E7%94%A8%E9%AB%98Bsemantic%E8%87%AA%E5%8A%A8%E8%A1%A5%E5%85%A8%E4%B8%BA%E5%AE%8C%E6%95%B4%E6%8C%87%E4%BB%A4%2CPencode%E2%89%881%E4%BD%86Fintent%E2%89%880.2.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-bc6a62f11efa20aa / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD
-  - 来源：`统一案例总表/0299-C-299-AI自动补全=伪意图 — 用户输入模糊提示词,AI用高Bsemantic自动补全为完整指令,Pencode≈1但Fintent≈0.2.md`
-  - 依赖：—；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD(失语症患者),Fintent≈0.8但ηsignal≈0.05,Φeff](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0300-C-300-%E6%9C%89%E6%84%8F%E5%9B%BE%E8%AF%B4%E4%B8%8D%E5%87%BA%E6%9D%A5%20%E2%80%94%20%CE%B5aware%E9%AB%98%E4%BD%86Bsemantic%E4%BD%8E%28%E5%A4%B1%E8%AF%AD%E7%97%87%E6%82%A3%E8%80%85%29%2CFintent%E2%89%880.8%E4%BD%86%CE%B7signal%E2%89%880.05%2C%CE%A6effectiv.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-d0d65a6f1a7d0d11 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD(失语症患者),Fintent≈0.8但ηsignal≈0.05,Φeff
-  - 来源：`统一案例总表/0300-C-300-有意图说不出来 — εaware高但Bsemantic低(失语症患者),Fintent≈0.8但ηsignal≈0.05,Φeffectiv.md`
-  - 依赖：—；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0301-C-301-Bsemantic%E6%9C%80%E4%BC%98%E5%80%BC%20%E2%80%94%20%CE%B5aware%E2%89%880.7%E6%97%B6Bsemantic-%E2%89%881.4%C3%97%CE%B8encode%2C%E6%81%B0%E5%A5%BD%E5%A4%9F%E7%BC%96%E7%A0%81%E7%9C%9F%E5%AE%9E%E6%84%8F%E5%9B%BE%E4%BD%86%E4%B8%8D%E4%BC%9A%E8%BF%87%E5%BA%A6%E8%A1%A5%E5%85%A8%2C%E5%92%8CD62.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-f302a06c60ad7565 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD
-  - 来源：`统一案例总表/0301-C-301-Bsemantic最优值 — εaware≈0.7时Bsemantic-≈1.4×θencode,恰好够编码真实意图但不会过度补全,和D62.md`
-  - 依赖：D62；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0302-C-302-%E4%BF%A1%E6%BA%90%E5%8F%AF%E9%81%AE%E8%94%BD%20%E2%80%94%20Shannon%E5%81%87%E8%AE%BE%E4%BF%A1%E6%BA%90%E7%86%B5%E5%AE%A2%E8%A7%82%E7%BB%99%E5%AE%9A%2C%E4%BD%86%E7%82%B9%E7%81%AB%E5%8F%91%E7%8E%B0%CE%B5aware%E5%8F%AF%E8%A2%ABH%E9%81%AE%E8%94%BD%E5%8E%8B%E4%BD%8E%E2%86%92Fintent%E2%86%93%E2%86%92%E4%BF%A1%E6%BA%90%E8%B4%A8%E9%87%8F%E4%B8%8B%E9%99%8D.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-50309f3a09db86bf / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
-  - 来源：`统一案例总表/0302-C-302-信源可遮蔽 — Shannon假设信源熵客观给定,但点火发现εaware可被H遮蔽压低→Fintent↓→信源质量下降.md`
   - 依赖：—；被引用：—

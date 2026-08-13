@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [统一函数总表/0577-D562-记忆哥德尔函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-2a46dfdc0133532b / 统一函数总表/0577-D562-记忆哥德尔函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D562；被引用：—
 - [统一函数总表/0578-D563-跨系统移植成功函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-8fb5ca95d6d65173 / 统一函数总表/0578-D563-跨系统移植成功函数.md
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-3b26daaa94e895b5 / 非函数断言、十三门、证据谱系、依赖图、结论防回弹与公开上限：data/foundation/nonfunction-claims/ 与 docs/foundation/nonfunction-claim-adjudication-index
   - 来源：`AI-HANDOFF.md`
-  - 依赖：—；被引用：—
-- [非对称门在跨学科合作中 — 先在共享域建立沟通降低意识落差,再进入各自领域](../../../data/foundation/evidence/evidence.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-0c5901e46d6fa065 / 非对称门在跨学科合作中 — 先在共享域建立沟通降低意识落差,再进入各自领域
-  - 来源：`data/foundation/evidence/evidence.jsonl`
   - 依赖：—；被引用：—

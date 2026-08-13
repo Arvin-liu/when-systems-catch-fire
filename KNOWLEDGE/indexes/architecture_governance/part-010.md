@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [problems = vr.check_open_question_resolved(text)](../../../tests/test_propagation_reconciliation.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-647cdd8a06def41f / problems = vr.check_open_question_resolved(text)
+  - 来源：`tests/test_propagation_reconciliation.py`
+  - 依赖：—；被引用：—
+- [production readiness, or universal correctness. Remaining narrower questions](../../../evidence-program/README.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-457afdf536df4ad3 / production readiness, or universal correctness. Remaining narrower questions
+  - 来源：`evidence-program/README.md`
+  - 依赖：—；被引用：—
+- [Program-and-parameter co-search can recover a synthetic battery structure and produce competitive real-data forecasts, w](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-79d6d83cb2f6d25a / Program-and-parameter co-search can recover a synthetic battery structure and produce competitive real-data forecasts, w
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
 - [Program-as-Weights (arXiv:2607.02512) fetch+extraction verified](../../../data/external-research/121A-night-recovery/121A-resume-plan-121B-121C.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-ad65fc05bdac446a / Program-as-Weights (arXiv:2607.02512) fetch+extraction verified
@@ -2009,6 +2024,11 @@
   - 可搜索名称：NFC-66df99b394d511e2 / Status: `STRICT_FOUR_PART_README_VALIDATED_LOCALLY`
   - 来源：`reports/readme/121Q19-readme-frontdoor-validation.md`
   - 依赖：—；被引用：—
+- [Status: OWNER_ACCEPTED_BOUNDED_CALIBRATION_EVIDENCE_WITH_EXPLICIT_RESIDUALS](../../../reports/architecture-calibration/STEP09-EXECUTION.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-5605259688235854 / Status: OWNER_ACCEPTED_BOUNDED_CALIBRATION_EVIDENCE_WITH_EXPLICIT_RESIDUALS
+  - 来源：`reports/architecture-calibration/STEP09-EXECUTION.md`
+  - 依赖：—；被引用：—
 - [Status:** 121C01_MAX_SEMANTIC_BATCH_COMPLETE_EVIDENCE_ACCUMULATING](../../../reports/external-research/121c01-max-semantic-review-batch-01.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-ba2c25d81b98781e / Status:** 121C01_MAX_SEMANTIC_BATCH_COMPLETE_EVIDENCE_ACCUMULATING
@@ -2483,24 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-af4e8bd4eb0f3820 / The frozen candidate began with an abstract passive definition of evidence and hid the ordinary sequence that the feedba
   - 来源：`data/language-thought/audit-findings.jsonl`
-  - 依赖：—；被引用：—
-- [The function is pure/deterministic. It never mutates scores or blocked_reasons.](../../../tools/iteration_planner/completion_state.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-9ac96dcb2c4a3e28 / The function is pure/deterministic. It never mutates scores or blocked_reasons.
-  - 来源：`tools/iteration_planner/completion_state.py`
-  - 依赖：—；被引用：—
-- [The Function OS is **aspirational**. The current ignition architecture is documentation-first, not execution-first. Thre](../../../reports/external-research/120-function-os-architecture-candidate-report.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-5e4e62def30b779f / The Function OS is **aspirational**. The current ignition architecture is documentation-first, not execution-first. Thre
-  - 来源：`reports/external-research/120-function-os-architecture-candidate-report.md`
-  - 依赖：—；被引用：—
-- [The Function OS model has substantial full-text evidence across representation, artifact, interpreter, and registry node](../../../reports/external-research/121-function-paradigm-fulltext-review-report.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-2765dbe30faa1c17 / The Function OS model has substantial full-text evidence across representation, artifact, interpreter, and registry node
-  - 来源：`reports/external-research/121-function-paradigm-fulltext-review-report.md`
-  - 依赖：—；被引用：—
-- [The generated artifact is an interpretable, executable regular-expression-based string-transformation program rather tha](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：NFC-40dbb9ddb2d65a30 / The generated artifact is an interpretable, executable regular-expression-based string-transformation program rather tha
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
   - 依赖：—；被引用：—

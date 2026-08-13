@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [把"物理大一统不可能"写成物理学 no-go theorem（应降级为结构性边界推论）](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-76c2bf0e723efff2 / 把"物理大一统不可能"写成物理学 no-go theorem（应降级为结构性边界推论）
+  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
+  - 依赖：—；被引用：—
 - [把"门控面合并"写成物理机制（应写成候选机制）](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-bae608da8c30522e / 把"门控面合并"写成物理机制（应写成候选机制）
@@ -2495,9 +2500,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-a57d24c8e8181e21 / 材料内成立；跨代际普遍性 pending（外部证据 E2）。
   - 来源：`统一函数总表/0610-D600-资源托举退化为路径控制.md`
-  - 依赖：—；被引用：—
-- [材料内成立；跨关系普遍结构 pending（外部证据 E9）。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0614-D604-%E6%A8%A1%E7%B3%8A%E9%9C%80%E6%B1%82%E6%98%BE%E6%80%A7%E5%8C%96%E4%B8%8E%E5%8D%8F%E4%BD%9C%E6%8E%92%E5%BA%8F.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-9d9b13778092a1a2 / 材料内成立；跨关系普遍结构 pending（外部证据 E9）。
-  - 来源：`统一函数总表/0614-D604-模糊需求显性化与协作排序.md`
   - 依赖：—；被引用：—

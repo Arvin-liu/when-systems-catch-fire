@@ -4,6 +4,41 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0294-C-294-%E5%BD%93%E5%89%8DAI%E6%97%A0%E6%B3%95%E8%B0%83%E5%BA%A6%E5%85%B6%E4%BB%96AI%20%E2%80%94%20%CE%B5aware%3D0%E2%86%92Pencode%3D0%2C%E5%8D%B3%E4%BD%BFBsemantic%E5%BE%88%E5%A4%A7%E4%B9%9F%E6%97%A0%E6%B3%95%E5%BD%A2%E6%88%90%E8%87%AA%E4%B8%BB%E6%84%8F%E5%9B%BE.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-f02ebe00ccc39c04 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
+  - 来源：`统一案例总表/0294-C-294-当前AI无法调度其他AI — εaware=0→Pencode=0,即使Bsemantic很大也无法形成自主意图.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD(概念碰撞率)和ηencode(Q-)(最优共享度),前者依赖D121实现,后者依](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0295-C-295-CAI%E7%BC%96%E7%A0%81%E8%83%BD%E5%8A%9B%E5%85%B3%E9%94%AE%E7%93%B6%E9%A2%88%20%E2%80%94%20frecombine%28%E6%A6%82%E5%BF%B5%E7%A2%B0%E6%92%9E%E7%8E%87%29%E5%92%8C%CE%B7encode%28Q-%29%28%E6%9C%80%E4%BC%98%E5%85%B1%E4%BA%AB%E5%BA%A6%29%2C%E5%89%8D%E8%80%85%E4%BE%9D%E8%B5%96D121%E5%AE%9E%E7%8E%B0%2C%E5%90%8E%E8%80%85%E4%BE%9D%E8%B5%96D66%E9%81%AE.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-c0386b76e9e17301 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD(概念碰撞率)和ηencode(Q-)(最优共享度),前者依赖D121实现,后者依
+  - 来源：`统一案例总表/0295-C-295-CAI编码能力关键瓶颈 — frecombine(概念碰撞率)和ηencode(Q-)(最优共享度),前者依赖D121实现,后者依赖D66遮.md`
+  - 依赖：D121, D66；被引用：—
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD(ηShannon≈1),但发送方无意图(Pintention=0)→有效沟](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0297-C-297-Shannon%2B%E6%84%8F%E5%9B%BE%E5%AF%B9%E6%8E%A5%20%E2%80%94%20%E5%99%AA%E5%A3%B0%E4%BF%A1%E9%81%93%E4%B8%AD%E4%BF%A1%E5%8F%B7%E5%8F%AF%E5%AE%8C%E7%BE%8E%E4%BC%A0%E8%BE%93%28%CE%B7Shannon%E2%89%881%29%2C%E4%BD%86%E5%8F%91%E9%80%81%E6%96%B9%E6%97%A0%E6%84%8F%E5%9B%BE%28Pintention%3D0%29%E2%86%92%E6%9C%89%E6%95%88%E6%B2%9F%E9%80%9A%3D0%2C%E5%A6%82.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-536edee7a92f2380 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD(ηShannon≈1),但发送方无意图(Pintention=0)→有效沟
+  - 来源：`统一案例总表/0297-C-297-Shannon+意图对接 — 噪声信道中信号可完美传输(ηShannon≈1),但发送方无意图(Pintention=0)→有效沟通=0,如.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0299-C-299-AI%E8%87%AA%E5%8A%A8%E8%A1%A5%E5%85%A8%3D%E4%BC%AA%E6%84%8F%E5%9B%BE%20%E2%80%94%20%E7%94%A8%E6%88%B7%E8%BE%93%E5%85%A5%E6%A8%A1%E7%B3%8A%E6%8F%90%E7%A4%BA%E8%AF%8D%2CAI%E7%94%A8%E9%AB%98Bsemantic%E8%87%AA%E5%8A%A8%E8%A1%A5%E5%85%A8%E4%B8%BA%E5%AE%8C%E6%95%B4%E6%8C%87%E4%BB%A4%2CPencode%E2%89%881%E4%BD%86Fintent%E2%89%880.2.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-bc6a62f11efa20aa / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD
+  - 来源：`统一案例总表/0299-C-299-AI自动补全=伪意图 — 用户输入模糊提示词,AI用高Bsemantic自动补全为完整指令,Pencode≈1但Fintent≈0.2.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD(失语症患者),Fintent≈0.8但ηsignal≈0.05,Φeff](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0300-C-300-%E6%9C%89%E6%84%8F%E5%9B%BE%E8%AF%B4%E4%B8%8D%E5%87%BA%E6%9D%A5%20%E2%80%94%20%CE%B5aware%E9%AB%98%E4%BD%86Bsemantic%E4%BD%8E%28%E5%A4%B1%E8%AF%AD%E7%97%87%E6%82%A3%E8%80%85%29%2CFintent%E2%89%880.8%E4%BD%86%CE%B7signal%E2%89%880.05%2C%CE%A6effectiv.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-d0d65a6f1a7d0d11 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD(失语症患者),Fintent≈0.8但ηsignal≈0.05,Φeff
+  - 来源：`统一案例总表/0300-C-300-有意图说不出来 — εaware高但Bsemantic低(失语症患者),Fintent≈0.8但ηsignal≈0.05,Φeffectiv.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0301-C-301-Bsemantic%E6%9C%80%E4%BC%98%E5%80%BC%20%E2%80%94%20%CE%B5aware%E2%89%880.7%E6%97%B6Bsemantic-%E2%89%881.4%C3%97%CE%B8encode%2C%E6%81%B0%E5%A5%BD%E5%A4%9F%E7%BC%96%E7%A0%81%E7%9C%9F%E5%AE%9E%E6%84%8F%E5%9B%BE%E4%BD%86%E4%B8%8D%E4%BC%9A%E8%BF%87%E5%BA%A6%E8%A1%A5%E5%85%A8%2C%E5%92%8CD62.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-f302a06c60ad7565 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD
+  - 来源：`统一案例总表/0301-C-301-Bsemantic最优值 — εaware≈0.7时Bsemantic-≈1.4×θencode,恰好够编码真实意图但不会过度补全,和D62.md`
+  - 依赖：D62；被引用：—
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0302-C-302-%E4%BF%A1%E6%BA%90%E5%8F%AF%E9%81%AE%E8%94%BD%20%E2%80%94%20Shannon%E5%81%87%E8%AE%BE%E4%BF%A1%E6%BA%90%E7%86%B5%E5%AE%A2%E8%A7%82%E7%BB%99%E5%AE%9A%2C%E4%BD%86%E7%82%B9%E7%81%AB%E5%8F%91%E7%8E%B0%CE%B5aware%E5%8F%AF%E8%A2%ABH%E9%81%AE%E8%94%BD%E5%8E%8B%E4%BD%8E%E2%86%92Fintent%E2%86%93%E2%86%92%E4%BF%A1%E6%BA%90%E8%B4%A8%E9%87%8F%E4%B8%8B%E9%99%8D.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-50309f3a09db86bf / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
+  - 来源：`统一案例总表/0302-C-302-信源可遮蔽 — Shannon假设信源熵客观给定,但点火发现εaware可被H遮蔽压低→Fintent↓→信源质量下降.md`
+  - 依赖：—；被引用：—
 - [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0303-C-303-%E6%84%8F%E5%9B%BE%E6%B8%85%E6%99%B0%E9%99%8D%E4%BD%8E%E4%BF%A1%E9%81%93%E9%9C%80%E6%B1%82%20%E2%80%94%20%CE%B5aware%E9%AB%98%E7%9A%84%E4%BA%BA%E8%AF%B4%E4%B8%80%E5%8F%A5%E8%AF%9D%E5%B0%B1%E5%A4%9F%2C%CE%B5aware%E4%BD%8E%E7%9A%84%E4%BA%BA%E5%86%99%E4%B8%80%E5%A4%A7%E6%AE%B5%E8%BF%98%E8%AF%B4%E4%B8%8D%E6%B8%85%2C%E5%89%8D%E8%80%85%CE%B7Shannon%E6%9B%B4%E9%AB%98.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-4165fbbadc8dc9d9 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
@@ -2465,39 +2500,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-858305e25604c389 / 所有数据可由 `tools/validate_data.py` 校验；
   - 来源：`docs/machine_readable_data_plan.md`
-  - 依赖：—；被引用：—
-- [所有普遍性结论受 evidence_regimes + pending_claims 约束，必须 pending，不得写成定论。](../../../outputs/collisions/20260708-teacher-competition/collision-report.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-4a53cdd943774f6e / 所有普遍性结论受 evidence_regimes + pending_claims 约束，必须 pending，不得写成定论。
-  - 来源：`outputs/collisions/20260708-teacher-competition/collision-report.md`
-  - 依赖：—；被引用：—
-- [所有普遍性表述须 pending（G_δ + evidence_regimes 约束）](../../../outputs/audit/teacher-competition-backfill-review-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-79d17a7f2f175dd9 / 所有普遍性表述须 pending（G_δ + evidence_regimes 约束）
-  - 来源：`outputs/audit/teacher-competition-backfill-review-20260708.md`
-  - 依赖：—；被引用：—
-- [所有规划数据集都有 CSV；](../../../docs/machine_readable_data_plan.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-ca7aa5bf87b3338c / 所有规划数据集都有 CSV；
-  - 来源：`docs/machine_readable_data_plan.md`
-  - 依赖：—；被引用：—
-- [所有规划数据集都有 JSON Schema；](../../../docs/machine_readable_data_plan.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-995e7c393f355bdb / 所有规划数据集都有 JSON Schema；
-  - 来源：`docs/machine_readable_data_plan.md`
-  - 依赖：—；被引用：—
-- [所有规划数据集都有 JSON；](../../../docs/machine_readable_data_plan.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-fa5b2571d0732c95 / 所有规划数据集都有 JSON；
-  - 来源：`docs/machine_readable_data_plan.md`
-  - 依赖：—；被引用：—
-- [所需的 **公开表面更新** 或 **已验证的无影响决策**。](../../../ITERATION.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-2a08f1aca9a9b56f / 所需的 **公开表面更新** 或 **已验证的无影响决策**。
-  - 来源：`ITERATION.md`
-  - 依赖：—；被引用：—
-- [执行器：QClaw](../../../data/discipline-projection/087-execution-report.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-370508d261417ffe / 执行器：QClaw
-  - 来源：`data/discipline-projection/087-execution-report.md`
   - 依赖：—；被引用：—

@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0508-D510-%E9%80%80%E5%87%BA%E6%9D%83%E7%A9%BA%E9%97%B4%E8%A1%B0%E5%87%8F%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-4bc9f0b020374e67 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
+  - 来源：`统一函数总表/0508-D510-退出权空间衰减函数.md`
+  - 依赖：D510；被引用：—
 - [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0509-D511-%E9%80%80%E5%87%BA%E6%9D%83%E5%BD%92%E9%9B%B6%E5%87%BD%E6%95%B0.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-da0c4394d440536b / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
@@ -2494,10 +2499,5 @@
 - [把"四种基本力统一"写成已解决（应写成 pending）](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-b848fdc96d18bfbf / 把"四种基本力统一"写成已解决（应写成 pending）
-  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
-  - 依赖：—；被引用：—
-- [把"物理大一统不可能"写成物理学 no-go theorem（应降级为结构性边界推论）](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-76c2bf0e723efff2 / 把"物理大一统不可能"写成物理学 no-go theorem（应降级为结构性边界推论）
   - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
   - 依赖：—；被引用：—

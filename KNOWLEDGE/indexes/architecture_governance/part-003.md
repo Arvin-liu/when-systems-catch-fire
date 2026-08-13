@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [c\["evidence_needs"\] = \["versioned executable target", "exact input/output", "trace", "oracle", "regression guard"\]](../../../tools/iteration_planner/planner.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-9804860ae3c61762 / c\["evidence_needs"\] = \["versioned executable target", "exact input/output", "trace", "oracle", "regression guard"\]
+  - 来源：`tools/iteration_planner/planner.py`
+  - 依赖：—；被引用：—
 - [c\["evidence_needs"\] = \[ev\]](../../../tools/iteration_planner/planner.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-c485771193709dda / c\["evidence_needs"\] = \[ev\]
@@ -2498,9 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-63CB3A4CEBD9A871 / def archive(self, trace: dict, output_path: str) -> Dict\[str, Any\]: / IMPLICIT-63CB3A4CEBD9A871
   - 来源：`function-os-candidate/v0.1/function_os/n8_trace_archiver.py`
-  - 依赖：—；被引用：—
-- [def arxiv_candidates(arxiv_id: str) -> list\[tuple\[str, str\]\]:](../../../scripts/external-research/fulltext_resolver.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-4B03D65A2F6E90C7 / def arxiv_candidates(arxiv_id: str) -> list\[tuple\[str, str\]\]: / IMPLICIT-4B03D65A2F6E90C7
-  - 来源：`scripts/external-research/fulltext_resolver.py`
   - 依赖：—；被引用：—

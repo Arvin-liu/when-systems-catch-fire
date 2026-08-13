@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [def main() -> int:](../../../tools/operations/compute_change_propagation.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-E41293F50CB02700 / def main() -> int: / IMPLICIT-E41293F50CB02700 / IMPLICIT-027F8B91980E723D
+  - 来源：`tools/operations/compute_change_propagation.py`
+  - 依赖：—；被引用：—
 - [def main() -> int:](../../../tools/governance/gen_source_first_seen.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-F0942047873B3140 / def main() -> int: / IMPLICIT-F0942047873B3140 / IMPLICIT-027F8B91980E723D
@@ -2497,10 +2502,5 @@
 - [def test_c11_profile_identity_mismatch_rejected(self):](../../../tests/test_incremental_executor.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-1B3E2CBD15DFC323 / def test_c11_profile_identity_mismatch_rejected(self): / IMPLICIT-1B3E2CBD15DFC323
-  - 来源：`tests/test_incremental_executor.py`
-  - 依赖：—；被引用：—
-- [def test_c12_registry_and_topology_mismatch_rejected(self):](../../../tests/test_incremental_executor.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-9006EE7DC5300C80 / def test_c12_registry_and_topology_mismatch_rejected(self): / IMPLICIT-9006EE7DC5300C80
   - 来源：`tests/test_incremental_executor.py`
   - 依赖：—；被引用：—

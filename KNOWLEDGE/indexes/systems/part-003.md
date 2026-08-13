@@ -4,6 +4,31 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [NC-001 经全表查重（无等价案例）与 Ψ₀ 六维判定，判定为**真新增教育评价机制个案**，已以 C-0808 入表并完成最小索引追加与 D595 对应闭环。后续建议做 C-0808 索引可见性验证。](../../../outputs/audit/nc-001-title-barrier-backfill-audit-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-7cf222c84250ba6e / NC-001 经全表查重（无等价案例）与 Ψ₀ 六维判定，判定为**真新增教育评价机制个案**，已以 C-0808 入表并完成最小索引追加与 D595 对应闭环。后续建议做 C-0808 索引可见性验证。
+  - 来源：`outputs/audit/nc-001-title-barrier-backfill-audit-20260708.md`
+  - 依赖：D595；被引用：—
+- [NC-002 经全表查重（无等价案例）与 Ψ₀ 六维判定，判定为**真新增教育评价机制个案**，已以 C-0809 入表并完成最小索引追加与 D597/D173 对应闭环。后续建议做 C-0809 索引可见性验证。](../../../outputs/audit/nc-002-performed-fake-class-backfill-audit-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-dd7e8fb851ffdeef / NC-002 经全表查重（无等价案例）与 Ψ₀ 六维判定，判定为**真新增教育评价机制个案**，已以 C-0809 入表并完成最小索引追加与 D597/D173 对应闭环。后续建议做 C-0809 索引可见性验证。
+  - 来源：`outputs/audit/nc-002-performed-fake-class-backfill-audit-20260708.md`
+  - 依赖：D173, D597；被引用：—
+- [Network/non-200 outcomes are recorded explicitly (acquisition_status) and NEVER](../../../evidence-program/tools/run_crossref_verification.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-22c0126e08206e31 / Network/non-200 outcomes are recorded explicitly (acquisition_status) and NEVER
+  - 来源：`evidence-program/tools/run_crossref_verification.py`
+  - 依赖：—；被引用：—
+- [network\["diffs"\]\[0\]\["external_refs"\]\[1\]\["ref_type"\] = "external_projection"](../../../tests/test_adaptive_relational_network_validation_contract.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-4407a6fb900d4ab3 / network\["diffs"\]\[0\]\["external_refs"\]\[1\]\["ref_type"\] = "external_projection"
+  - 来源：`tests/test_adaptive_relational_network_validation_contract.py`
+  - 依赖：—；被引用：—
+- [network\["embedding_evidence"\]\[0\]\["alternatives"\] = \["valid", " "\]](../../../tests/test_adaptive_relational_network_validation_contract.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-31253dbfa15c1917 / network\["embedding_evidence"\]\[0\]\["alternatives"\] = \["valid", " "\]
+  - 来源：`tests/test_adaptive_relational_network_validation_contract.py`
+  - 依赖：—；被引用：—
 - [network\["embedding_evidence"\]\[0\]\["claim_ceiling"\] = " "](../../../tests/test_adaptive_relational_network_validation_contract.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-f1249059d9f33348 / network\["embedding_evidence"\]\[0\]\["claim_ceiling"\] = " "
@@ -2292,6 +2317,11 @@
   - 可搜索名称：NFC-c571ba03153abe17 / The filesystem bank, catalog, metadata, memory and maintenance operations are strong registry design evidence, but evalu
   - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
   - 依赖：—；被引用：—
+- [The four components all showed a bounded incremental capability against their frozen baselines. The incremental result i](../../../reports/architecture-calibration/STEP09-EXECUTION.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-1bcbf90fc28618fc / The four components all showed a bounded incremental capability against their frozen baselines. The incremental result i
+  - 来源：`reports/architecture-calibration/STEP09-EXECUTION.md`
+  - 依赖：—；被引用：—
 - [The full cosmic causal network is not exhaustively represented.](../../../data/architecture/multiscale-causal-fabric/examples/stellar-nucleosynthesis.json)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-14dab9dac787e706 / The full cosmic causal network is not exhaustively represented.
@@ -2461,34 +2491,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-2c6b741a794dedaa / The third option was selected because it is low-cost, reversible, directly linked to Q14 unmapped residue, and capable o
   - 来源：`reports/reality/121Q16-action-selection.md`
-  - 依赖：—；被引用：—
-- [The topology separates `substantive_causal_candidate`, `repository_dependency` and `synchronization_obligation`. Substan](../../../ITERATION.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-369c29f9fb93c74d / The topology separates `substantive_causal_candidate`, `repository_dependency` and `synchronization_obligation`. Substan
-  - 来源：`ITERATION.md`
-  - 依赖：—；被引用：—
-- [the underlying concepts as social laws, universal mechanisms, measured](../../../reports/external-research/pointfire-getnote-external-verification-r1-20260813.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-e18741bde22ddbe6 / the underlying concepts as social laws, universal mechanisms, measured
-  - 来源：`reports/external-research/pointfire-getnote-external-verification-r1-20260813.md`
-  - 依赖：—；被引用：—
-- [These tools do not discover hidden reality, mind-read integration, infer clinical states, or create a second canonical t](../../../docs/architecture/adaptive-relational-network.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-7d87cc56bd503414 / These tools do not discover hidden reality, mind-read integration, infer clinical states, or create a second canonical t
-  - 来源：`docs/architecture/adaptive-relational-network.md`
-  - 依赖：—；被引用：—
-- [They should not include the proponent's excitement, expected conclusion, or emotional framing. This is separation of rev](../../../docs/architecture/mechanism-adjudication-plane.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-16711648f7772d6c / They should not include the proponent's excitement, expected conclusion, or emotional framing. This is separation of rev
-  - 来源：`docs/architecture/mechanism-adjudication-plane.md`
-  - 依赖：—；被引用：—
-- [This audit establishes an architectural representation gap only; it does not prove any new causal relation.](../../../data/architecture/causal-gap-ledger.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-0f2d16e82c9f63f0 / This audit establishes an architectural representation gap only; it does not prove any new causal relation.
-  - 来源：`data/architecture/causal-gap-ledger.json`
-  - 依赖：—；被引用：—
-- [This audit starts the effectual-action and mechanism-adjudication overlay from the verified post-121Q11 main state. It d](../../../reports/architecture/121Q12-baseline-audit.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-63fadf5f6ec67ab5 / This audit starts the effectual-action and mechanism-adjudication overlay from the verified post-121Q11 main state. It d
-  - 来源：`reports/architecture/121Q12-baseline-audit.md`
   - 依赖：—；被引用：—

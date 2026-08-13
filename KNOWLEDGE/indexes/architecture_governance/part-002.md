@@ -2329,6 +2329,11 @@
   - 可搜索名称：NFC-cadbda8f7bbce7de / blocked = "UNRESOLVED_PREREQUISITE"
   - 来源：`tools/iteration_planner/planner.py`
   - 依赖：—；被引用：—
+- [BLOCKED_WITH_EVIDENCE](../../../reports/architecture-calibration/STEP08-PREREGISTRATION.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-af8bf84345a21140 / BLOCKED_WITH_EVIDENCE
+  - 来源：`reports/architecture-calibration/STEP08-PREREGISTRATION.md`
+  - 依赖：—；被引用：—
 - [boundaries←boundary_evidence, source_files←source_references。](../../../tools/build_reports.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-df832d817ae4b24a / boundaries←boundary_evidence, source_files←source_references。
@@ -2497,10 +2502,5 @@
 - [c\["evidence_needs"\] = \["regression guard", "bounded-domain test"\]](../../../tools/iteration_planner/planner.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-ccf73fda382f0b53 / c\["evidence_needs"\] = \["regression guard", "bounded-domain test"\]
-  - 来源：`tools/iteration_planner/planner.py`
-  - 依赖：—；被引用：—
-- [c\["evidence_needs"\] = \["versioned executable target", "exact input/output", "trace", "oracle", "regression guard"\]](../../../tools/iteration_planner/planner.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-9804860ae3c61762 / c\["evidence_needs"\] = \["versioned executable target", "exact input/output", "trace", "oracle", "regression guard"\]
   - 来源：`tools/iteration_planner/planner.py`
   - 依赖：—；被引用：—

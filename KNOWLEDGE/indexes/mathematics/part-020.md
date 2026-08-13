@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [材料内成立；跨关系普遍结构 pending（外部证据 E9）。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0614-D604-%E6%A8%A1%E7%B3%8A%E9%9C%80%E6%B1%82%E6%98%BE%E6%80%A7%E5%8C%96%E4%B8%8E%E5%8D%8F%E4%BD%9C%E6%8E%92%E5%BA%8F.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-9d9b13778092a1a2 / 材料内成立；跨关系普遍结构 pending（外部证据 E9）。
+  - 来源：`统一函数总表/0614-D604-模糊需求显性化与协作排序.md`
+  - 依赖：—；被引用：—
 - [材料内成立；跨群体普遍性 pending（外部证据 E5）。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0611-D601-%E8%A7%92%E8%89%B2%E8%A6%86%E7%9B%96%E4%B8%BB%E4%BD%93%E8%BA%AB%E4%BB%BD.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-a8359024fd4614a8 / 材料内成立；跨群体普遍性 pending（外部证据 E5）。
@@ -2499,8 +2504,3 @@
   - 可搜索名称：NFC-1d81083394b60655 / 统一函数总表/0079-D30-ε_eff闭环动力学函数.md
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：D30；被引用：—
-- [统一函数总表/0080-D31-衰减率干预函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-9298361a7db7437e / 统一函数总表/0080-D31-衰减率干预函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D31；被引用：—

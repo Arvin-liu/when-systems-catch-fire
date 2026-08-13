@@ -4,6 +4,36 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [The topology separates `substantive_causal_candidate`, `repository_dependency` and `synchronization_obligation`. Substan](../../../ITERATION.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-369c29f9fb93c74d / The topology separates `substantive_causal_candidate`, `repository_dependency` and `synchronization_obligation`. Substan
+  - 来源：`ITERATION.md`
+  - 依赖：—；被引用：—
+- [the underlying concepts as social laws, universal mechanisms, measured](../../../reports/external-research/pointfire-getnote-external-verification-r1-20260813.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-e18741bde22ddbe6 / the underlying concepts as social laws, universal mechanisms, measured
+  - 来源：`reports/external-research/pointfire-getnote-external-verification-r1-20260813.md`
+  - 依赖：—；被引用：—
+- [These tools do not discover hidden reality, mind-read integration, infer clinical states, or create a second canonical t](../../../docs/architecture/adaptive-relational-network.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-7d87cc56bd503414 / These tools do not discover hidden reality, mind-read integration, infer clinical states, or create a second canonical t
+  - 来源：`docs/architecture/adaptive-relational-network.md`
+  - 依赖：—；被引用：—
+- [They should not include the proponent's excitement, expected conclusion, or emotional framing. This is separation of rev](../../../docs/architecture/mechanism-adjudication-plane.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-16711648f7772d6c / They should not include the proponent's excitement, expected conclusion, or emotional framing. This is separation of rev
+  - 来源：`docs/architecture/mechanism-adjudication-plane.md`
+  - 依赖：—；被引用：—
+- [This audit establishes an architectural representation gap only; it does not prove any new causal relation.](../../../data/architecture/causal-gap-ledger.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-0f2d16e82c9f63f0 / This audit establishes an architectural representation gap only; it does not prove any new causal relation.
+  - 来源：`data/architecture/causal-gap-ledger.json`
+  - 依赖：—；被引用：—
+- [This audit starts the effectual-action and mechanism-adjudication overlay from the verified post-121Q11 main state. It d](../../../reports/architecture/121Q12-baseline-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-63fadf5f6ec67ab5 / This audit starts the effectual-action and mechanism-adjudication overlay from the verified post-121Q11 main state. It d
+  - 来源：`reports/architecture/121Q12-baseline-audit.md`
+  - 依赖：—；被引用：—
 - [This audit supersedes the older 121Q21 Persistent Causal Commitment Network direction for this task. The older task is n](../../../reports/architecture/121Q21R-causal-asset-audit.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-30b80656b20d0f46 / This audit supersedes the older 121Q21 Persistent Causal Commitment Network direction for this task. The older task is n
@@ -1294,6 +1324,11 @@
   - 可搜索名称：NFC-090f0918480fa227 / \| Kalman 1960, DOI `10.1115/1.3662552` \| State-space filtering and prediction boundaries. \| Do not universalize linear/G
   - 来源：`reports/research/121Q22-probability-systems-source-map.md`
   - 依赖：—；被引用：—
+- [\| MCF \| nodes plus source-target edges \| simple graph representation PASS; typed relation, residue, and claim ceiling ab](../../../reports/architecture-calibration/STEP09-EXECUTION.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-60256c49058146f7 / \| MCF \| nodes plus source-target edges \| simple graph representation PASS; typed relation, residue, and claim ceiling ab
+  - 来源：`reports/architecture-calibration/STEP09-EXECUTION.md`
+  - 依赖：—；被引用：—
 - [\| METADATA_VERIFIED \| 67 \|](../../../reports/external-research/120-function-paradigm-atlas-report.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-cab0cf594e2c74c5 / \| METADATA_VERIFIED \| 67 \|
@@ -2468,39 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-20ea0eb75fb848e9 / 信息传染的阻断机制有效性待实证
   - 来源：`docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md`
-  - 依赖：—；被引用：—
-- [修订记录进入**宪章修订谱系**（与 §6 Fork 谱系同构为可审计树）。](../../../docs/governance/charter-system-r1.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-84cea77914243d5a / 修订记录进入**宪章修订谱系**（与 §6 Fork 谱系同构为可审计树）。
-  - 来源：`docs/governance/charter-system-r1.md`
-  - 依赖：—；被引用：—
-- [候选接口需求：记录干预操作、对照实验设计、因果效应估计、混杂因素、外部效度](../../../data/external-research/089-external-source-atlas.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-0f03991b066d86d8 / 候选接口需求：记录干预操作、对照实验设计、因果效应估计、混杂因素、外部效度
-  - 来源：`data/external-research/089-external-source-atlas.md`
-  - 依赖：—；被引用：—
-- [候选接口需求：证据层级、元研究、可重复性](../../../data/external-research/089-external-source-atlas.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-023eb6e7719623e1 / 候选接口需求：证据层级、元研究、可重复性
-  - 来源：`data/external-research/089-external-source-atlas.md`
-  - 依赖：—；被引用：—
-- [候选机制 M1–M9。每条含：输入条件、中间变量、输出、反馈、触发、停止、反例、来源锚点(A层)、断言等级、是否需外部证据。](../../../outputs/collisions/20260711-disobedience-subjectivity/mechanism-extraction.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-32a2993048eb029b / 候选机制 M1–M9。每条含：输入条件、中间变量、输出、反馈、触发、停止、反例、来源锚点(A层)、断言等级、是否需外部证据。
-  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/mechanism-extraction.md`
-  - 依赖：—；被引用：—
-- [候选机制写成“最终机制”；](../../../outputs/getbrain/failure-typology-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-1116d233539365f4 / 候选机制写成“最终机制”；
-  - 来源：`outputs/getbrain/failure-typology-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [候选机制检查数：9（M1–M9）。](../../../outputs/collisions/20260711-disobedience-subjectivity/mechanism-extraction.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-4a67342f3c2bce54 / 候选机制检查数：9（M1–M9）。
-  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/mechanism-extraction.md`
-  - 依赖：—；被引用：—
-- [候选机制生成；](../../../outputs/getbrain/project-position-update-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-75e297ab2f9be996 / 候选机制生成；
-  - 来源：`outputs/getbrain/project-position-update-20260706.md`
   - 依赖：—；被引用：—

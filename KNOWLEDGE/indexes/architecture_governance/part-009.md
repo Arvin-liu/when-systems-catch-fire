@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [L3 Case 层 —— 统一案例总表（C 编号）+ 22 本书候选（candidate_only）](../../../docs/protocols/README.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-bc0abe2df0776db1 / L3 Case 层 —— 统一案例总表（C 编号）+ 22 本书候选（candidate_only）
+  - 来源：`docs/protocols/README.md`
+  - 依赖：—；被引用：—
+- [L3：框架内部交叉验证；](../../../docs/pending_claims_register.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：NFC-4354c4dd75b0cb30 / L3：框架内部交叉验证；
+  - 来源：`docs/pending_claims_register.md`
+  - 依赖：—；被引用：—
 - [L4 --> L5\[L5 验证与有效性\]](../../../ARCHITECTURE.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-70e450ca47031246 / L4 --> L5\[L5 验证与有效性\]
@@ -1356,6 +1366,11 @@
   - 可搜索名称：NFC-3ce0bf3237b73d7f / No automated test can establish literary quality or universal effectiveness.
   - 来源：`reports/operations/121Q28R-cognitive-level-leap-writing-method-audit.md`
   - 依赖：—；被引用：—
+- [No component is EPISTEMICALLY_ACCEPTED, production-ready, or externally validated by this calibration. External validity](../../../reports/architecture-calibration/STEP09-EXECUTION.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-77bee2745f6b2dc3 / No component is EPISTEMICALLY_ACCEPTED, production-ready, or externally validated by this calibration. External validity
+  - 来源：`reports/architecture-calibration/STEP09-EXECUTION.md`
+  - 依赖：—；被引用：—
 - [No EMPIRICALLY_VALIDATED without external source](../../../tools/foundation/verify_085_architecture_freeze.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-a9c5f15302f2fbea / No EMPIRICALLY_VALIDATED without external source
@@ -2485,19 +2500,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-a76be02698464d4b / problems += check_open_question_resolved(oq_text)
   - 来源：`tools/propagation/validate_reconciliation.py`
-  - 依赖：—；被引用：—
-- [problems = vr.check_open_question_resolved(text)](../../../tests/test_propagation_reconciliation.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-647cdd8a06def41f / problems = vr.check_open_question_resolved(text)
-  - 来源：`tests/test_propagation_reconciliation.py`
-  - 依赖：—；被引用：—
-- [production readiness, or universal correctness. Remaining narrower questions](../../../evidence-program/README.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-457afdf536df4ad3 / production readiness, or universal correctness. Remaining narrower questions
-  - 来源：`evidence-program/README.md`
-  - 依赖：—；被引用：—
-- [Program-and-parameter co-search can recover a synthetic battery structure and produce competitive real-data forecasts, w](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-79d6d83cb2f6d25a / Program-and-parameter co-search can recover a synthetic battery structure and produce competitive real-data forecasts, w
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
   - 依赖：—；被引用：—

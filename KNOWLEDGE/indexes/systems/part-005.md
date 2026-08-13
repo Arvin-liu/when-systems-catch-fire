@@ -4,6 +4,41 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [修订记录进入**宪章修订谱系**（与 §6 Fork 谱系同构为可审计树）。](../../../docs/governance/charter-system-r1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-84cea77914243d5a / 修订记录进入**宪章修订谱系**（与 §6 Fork 谱系同构为可审计树）。
+  - 来源：`docs/governance/charter-system-r1.md`
+  - 依赖：—；被引用：—
+- [候选接口需求：记录干预操作、对照实验设计、因果效应估计、混杂因素、外部效度](../../../data/external-research/089-external-source-atlas.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-0f03991b066d86d8 / 候选接口需求：记录干预操作、对照实验设计、因果效应估计、混杂因素、外部效度
+  - 来源：`data/external-research/089-external-source-atlas.md`
+  - 依赖：—；被引用：—
+- [候选接口需求：证据层级、元研究、可重复性](../../../data/external-research/089-external-source-atlas.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-023eb6e7719623e1 / 候选接口需求：证据层级、元研究、可重复性
+  - 来源：`data/external-research/089-external-source-atlas.md`
+  - 依赖：—；被引用：—
+- [候选机制 M1–M9。每条含：输入条件、中间变量、输出、反馈、触发、停止、反例、来源锚点(A层)、断言等级、是否需外部证据。](../../../outputs/collisions/20260711-disobedience-subjectivity/mechanism-extraction.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-32a2993048eb029b / 候选机制 M1–M9。每条含：输入条件、中间变量、输出、反馈、触发、停止、反例、来源锚点(A层)、断言等级、是否需外部证据。
+  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/mechanism-extraction.md`
+  - 依赖：—；被引用：—
+- [候选机制写成“最终机制”；](../../../outputs/getbrain/failure-typology-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-1116d233539365f4 / 候选机制写成“最终机制”；
+  - 来源：`outputs/getbrain/failure-typology-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [候选机制检查数：9（M1–M9）。](../../../outputs/collisions/20260711-disobedience-subjectivity/mechanism-extraction.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-4a67342f3c2bce54 / 候选机制检查数：9（M1–M9）。
+  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/mechanism-extraction.md`
+  - 依赖：—；被引用：—
+- [候选机制生成；](../../../outputs/getbrain/project-position-update-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-75e297ab2f9be996 / 候选机制生成；
+  - 来源：`outputs/getbrain/project-position-update-20260706.md`
+  - 依赖：—；被引用：—
 - [候选机制：L2](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-4eb107c343a698dd / 候选机制：L2
@@ -2468,39 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-0d7cdc34bda71629 / 理论族：潜在结果, 结构因果模型, 工具变量, 自然实验, 因果发现, 运输性, 外部效度
   - 来源：`data/external-research/089-external-source-atlas.md`
-  - 依赖：—；被引用：—
-- [理论族：科学哲学, 证据层级, 元研究, 可重复性, 证据综合, 领域特异成立标准](../../../data/external-research/089-external-source-atlas.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-ec1b9d8a3fa3631e / 理论族：科学哲学, 证据层级, 元研究, 可重复性, 证据综合, 领域特异成立标准
-  - 来源：`data/external-research/089-external-source-atlas.md`
-  - 依赖：—；被引用：—
-- [生命共同体价值投影：** 价值：交流、迁移、知识传播、资源互助与系统适应，是共同体活力与适应的关键。条件：仅当在承载力与风险可控范围内，且保护隐私与弱势成员时才有价值。伤害：当无限开放导致污染扩散、隐私消失、承载突破或强者掠夺时，会伤害共同](../../../docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-d3e59871fe2497c9 / 生命共同体价值投影：** 价值：交流、迁移、知识传播、资源互助与系统适应，是共同体活力与适应的关键。条件：仅当在承载力与风险可控范围内，且保护隐私与弱势成员时才有价值。伤害：当无限开放导致污染扩散、隐私消失、承载突破或强者掠夺时，会伤害共同
-  - 来源：`docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md`
-  - 依赖：—；被引用：—
-- [生命共同体价值投影：** 价值：分布式协作、多中心治理、冗余、知识共享与局部失效隔离，提升系统韧性。条件：仅当责任可追溯、无隐形中心垄断、且局部失效可隔离时才有价值。伤害：当责任消失、隐形中心垄断、信息传染或网络效应锁定时，会伤害共同体。不](../../../docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-1b8dd692276f8a64 / 生命共同体价值投影：** 价值：分布式协作、多中心治理、冗余、知识共享与局部失效隔离，提升系统韧性。条件：仅当责任可追溯、无隐形中心垄断、且局部失效可隔离时才有价值。伤害：当责任消失、隐形中心垄断、信息传染或网络效应锁定时，会伤害共同体。不
-  - 来源：`docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md`
-  - 依赖：—；被引用：—
-- [生命共同体价值投影：** 价值：向安全吸引子、合作稳定、风险降低与系统协调收敛，是降低冲突与风险的正向工具。条件：仅当收敛不强制同质化、保留多样性与未来选择空间时才有价值。伤害：当强制同质化、过早收敛、单一占据全部空间时会伤害共同体（锁死未](../../../docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-ef981b8e8862e988 / 生命共同体价值投影：** 价值：向安全吸引子、合作稳定、风险降低与系统协调收敛，是降低冲突与风险的正向工具。条件：仅当收敛不强制同质化、保留多样性与未来选择空间时才有价值。伤害：当强制同质化、过早收敛、单一占据全部空间时会伤害共同体（锁死未
-  - 来源：`docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md`
-  - 依赖：—；被引用：—
-- [生命共同体价值投影：** 价值：在多时间尺度上维持再生能力、承载能力、多样性与代际公平，是共同体长期繁荣的硬边界。条件：仅当它指向再生与公平，而非维持有害现状时才有价值。伤害：当它被用作保护有害系统、压制必要改革或牺牲主体尊严的借口时，会伤](../../../docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-5da0a2414b117f23 / 生命共同体价值投影：** 价值：在多时间尺度上维持再生能力、承载能力、多样性与代际公平，是共同体长期繁荣的硬边界。条件：仅当它指向再生与公平，而非维持有害现状时才有价值。伤害：当它被用作保护有害系统、压制必要改革或牺牲主体尊严的借口时，会伤
-  - 来源：`docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md`
-  - 依赖：—；被引用：—
-- [生命共同体价值投影：** 价值：在局部、低耦合、关系稳定、可预测范围内，线性近似是简洁有效的建模与规划工具。条件：仅当系统满足低耦合、关系稳定、可预测，且设反馈与偏差检测时才有价值。伤害：当把复杂生命系统强行简化为直线、忽略临界点时会伤害共](../../../docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-680991c086d04dbb / 生命共同体价值投影：** 价值：在局部、低耦合、关系稳定、可预测范围内，线性近似是简洁有效的建模与规划工具。条件：仅当系统满足低耦合、关系稳定、可预测，且设反馈与偏差检测时才有价值。伤害：当把复杂生命系统强行简化为直线、忽略临界点时会伤害共
-  - 来源：`docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md`
-  - 依赖：—；被引用：—
-- [生命共同体价值投影：** 价值：承认临界点、放大、涌现与不确定性，是对复杂系统的诚实描述，支撑预防原则。条件：仅当配套预防原则、沙盒、风险上限、可逆操作与实时反馈时才有价值。伤害：当以“不可预测”为由放弃约束、制造不可逆风险时会伤害共同体。](../../../docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-cea131ea4bf6275a / 生命共同体价值投影：** 价值：承认临界点、放大、涌现与不确定性，是对复杂系统的诚实描述，支撑预防原则。条件：仅当配套预防原则、沙盒、风险上限、可逆操作与实时反馈时才有价值。伤害：当以“不可预测”为由放弃约束、制造不可逆风险时会伤害共同体。
-  - 来源：`docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md`
   - 依赖：—；被引用：—

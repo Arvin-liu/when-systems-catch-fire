@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [def test_c12_registry_and_topology_mismatch_rejected(self):](../../../tests/test_incremental_executor.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-9006EE7DC5300C80 / def test_c12_registry_and_topology_mismatch_rejected(self): / IMPLICIT-9006EE7DC5300C80
+  - 来源：`tests/test_incremental_executor.py`
+  - 依赖：—；被引用：—
 - [def test_c13_producer_and_validator_identity_mismatch_rejected(self):](../../../tests/test_incremental_executor.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-190FC3F934EA72EA / def test_c13_producer_and_validator_identity_mismatch_rejected(self): / IMPLICIT-190FC3F934EA72EA
@@ -2497,10 +2502,5 @@
 - [def test_public_route_deleted(self): self.bad(lambda d:d\["public_surface_routes"\].pop())](../../../tests/test_epistemic_governance_relationships.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-7786069FE3594316 / def test_public_route_deleted(self): self.bad(lambda d:d\["public_surface_routes"\].pop()) / IMPLICIT-7786069FE3594316
-  - 来源：`tests/test_epistemic_governance_relationships.py`
-  - 依赖：—；被引用：—
-- [def test_public_route_flag_cannot_bypass(self): self.bad(lambda d:d\["relationships"\]\[0\].update({"public_surface":False}),"schema")](../../../tests/test_epistemic_governance_relationships.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-88EB361A3CCC9477 / def test_public_route_flag_cannot_bypass(self): self.bad(lambda d:d\["relationships"\]\[0\].update({"public_surface":False}),"schema") / IMPLICIT-88EB361A3CCC9477
   - 来源：`tests/test_epistemic_governance_relationships.py`
   - 依赖：—；被引用：—

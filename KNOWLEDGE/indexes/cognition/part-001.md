@@ -924,6 +924,11 @@
   - 可搜索名称：NFC-b109b67d13c9d76e / Other architecture, Foundation, evidence, governance, participation, sustainability, license, history, and feedback cont
   - 来源：`reports/readme/121Q19-readme-frontdoor-validation.md`
   - 依赖：—；被引用：—
+- [Owner decision: `ACCEPT_BOUNDED_CALIBRATION_EVIDENCE_WITH_EXPLICIT_RESIDUALS`.](../../../reports/architecture-calibration/STEP09-EXECUTION.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-66dc460346a72744 / Owner decision: `ACCEPT_BOUNDED_CALIBRATION_EVIDENCE_WITH_EXPLICIT_RESIDUALS`.
+  - 来源：`reports/architecture-calibration/STEP09-EXECUTION.md`
+  - 依赖：—；被引用：—
 - [P1 数据辅助预筛**：对任意新输入材料，用七类数据集做命中/失败类型/证据约束预筛，产出 collision 五分类草稿。](../../../outputs/audit/agent-project-understanding-20260708.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-b02c31efe3beb897 / P1 数据辅助预筛**：对任意新输入材料，用七类数据集做命中/失败类型/证据约束预筛，产出 collision 五分类草稿。

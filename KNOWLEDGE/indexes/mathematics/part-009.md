@@ -2176,6 +2176,11 @@
   - 可搜索名称：NFC-15fa5116d450f595 / The static-aggregation counterexample is `rel-repo-1 -> rel-repo-2`: it exists as a relation sequence and is temporally
   - 来源：`reports/architecture/121Q23C-operational-arn-real-history-validation.md`
   - 依赖：—；被引用：—
+- [The status describes this bounded comparison only. A PASS in a unit test is not a scientific proof; a simpler baseline p](../../../reports/architecture-calibration/STEP08-PREREGISTRATION.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-a6710911cc7dc8f1 / The status describes this bounded comparison only. A PASS in a unit test is not a scientific proof; a simpler baseline p
+  - 来源：`reports/architecture-calibration/STEP08-PREREGISTRATION.md`
+  - 依赖：—；被引用：—
 - [The study exposes memory and interference risks, but lacks calibration, statistical uncertainty, durable traces and life](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
   - 可搜索名称：NFC-8ab8649f093e9225 / The study exposes memory and interference risks, but lacks calibration, statistical uncertainty, durable traces and life
@@ -2495,9 +2500,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-D1C0B1AB4A32100A / title: "g_eff有限时间崩溃函数" / IMPLICIT-D1C0B1AB4A32100A
   - 来源：`统一函数总表/0324-D288-g_eff有限时间崩溃函数.md`
-  - 依赖：—；被引用：—
-- [title: "H(t,L) 遮蔽函数（双源） / H(t,L) obscuration function (dual-source)"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0007-A6-H%28t%2CL%29%20%E9%81%AE%E8%94%BD%E5%87%BD%E6%95%B0%28%E5%8F%8C%E6%BA%90%29.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-77468F3AD3EF8237 / title: "H(t,L) 遮蔽函数（双源） / H(t,L) obscuration function (dual-source)" / IMPLICIT-77468F3AD3EF8237
-  - 来源：`统一函数总表/0007-A6-H(t,L) 遮蔽函数(双源).md`
   - 依赖：—；被引用：—

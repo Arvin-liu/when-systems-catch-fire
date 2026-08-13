@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [统一函数总表/0080-D31-衰减率干预函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-9298361a7db7437e / 统一函数总表/0080-D31-衰减率干预函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D31；被引用：—
 - [统一函数总表/0081-D32-认知-群体犹豫域统一映射函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-ee14b8af60ae67d0 / 统一函数总表/0081-D32-认知-群体犹豫域统一映射函数.md
@@ -2499,8 +2504,3 @@
   - 可搜索名称：NFC-a59feab035d29bee / 统一函数总表/0576-D561-记忆-智能边界函数.md
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：D561；被引用：—
-- [统一函数总表/0577-D562-记忆哥德尔函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-2a46dfdc0133532b / 统一函数总表/0577-D562-记忆哥德尔函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D562；被引用：—

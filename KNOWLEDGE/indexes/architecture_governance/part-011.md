@@ -4,6 +4,26 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [The function is pure/deterministic. It never mutates scores or blocked_reasons.](../../../tools/iteration_planner/completion_state.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-9ac96dcb2c4a3e28 / The function is pure/deterministic. It never mutates scores or blocked_reasons.
+  - 来源：`tools/iteration_planner/completion_state.py`
+  - 依赖：—；被引用：—
+- [The Function OS is **aspirational**. The current ignition architecture is documentation-first, not execution-first. Thre](../../../reports/external-research/120-function-os-architecture-candidate-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-5e4e62def30b779f / The Function OS is **aspirational**. The current ignition architecture is documentation-first, not execution-first. Thre
+  - 来源：`reports/external-research/120-function-os-architecture-candidate-report.md`
+  - 依赖：—；被引用：—
+- [The Function OS model has substantial full-text evidence across representation, artifact, interpreter, and registry node](../../../reports/external-research/121-function-paradigm-fulltext-review-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-2765dbe30faa1c17 / The Function OS model has substantial full-text evidence across representation, artifact, interpreter, and registry node
+  - 来源：`reports/external-research/121-function-paradigm-fulltext-review-report.md`
+  - 依赖：—；被引用：—
+- [The generated artifact is an interpretable, executable regular-expression-based string-transformation program rather tha](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：NFC-40dbb9ddb2d65a30 / The generated artifact is an interpretable, executable regular-expression-based string-transformation program rather tha
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
 - [the git history of the registry file, never from a per-task exception list.](../../../tests/test_iteration_sync.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-ed28995676ac9249 / the git history of the registry file, never from a per-task exception list.
@@ -329,6 +349,11 @@
   - 可搜索名称：NFC-304e7e893004090f / This control plane treats AI and human judgments on open-ended questions as context-conditioned samples, not as final an
   - 来源：`docs/architecture/distribution-collapse-control-plane.md`
   - 依赖：—；被引用：—
+- [This execution compares each candidate component with the frozen simplest baseline from STEP08. The outcome is bounded r](../../../reports/architecture-calibration/STEP09-EXECUTION.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-2fdaf15713e7ca55 / This execution compares each candidate component with the frozen simplest baseline from STEP08. The outcome is bounded r
+  - 来源：`reports/architecture-calibration/STEP09-EXECUTION.md`
+  - 依赖：—；被引用：—
 - [This explicit seed has no path佐证 — must have structured evidence](../../../tools/operations/compute_change_propagation.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-497272c054f5c2f1 / This explicit seed has no path佐证 — must have structured evidence
@@ -338,6 +363,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-3b5e08ef063ae1d5 / This gate records evidence eligibility only. It does not turn Function OS into
   - 来源：`evidence-program/README.md`
+  - 依赖：—；被引用：—
+- [This is a capability calibration of four current-main candidate components. It is not a truth test and does not promote](../../../reports/architecture-calibration/STEP08-PREREGISTRATION.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-a92d1d608e6b1e3f / This is a capability calibration of four current-main candidate components. It is not a truth test and does not promote
+  - 来源：`reports/architecture-calibration/STEP08-PREREGISTRATION.md`
   - 依赖：—；被引用：—
 - [This is a cumulative release seal for already validated Q12-Q14 work:](../../../reports/releases/121Q15-q12-q14-cumulative-preflight.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
@@ -2474,33 +2504,3 @@
   - 可搜索名称：NFC-ab894bd0cf6a88ed / \| \[C-321\]( ) \| \[AI安装路径的串行约束 — 不能并行装三个模块，串行安装每一步是下一步的必要条件\](<./03
   - 来源：`统一案例总表/INDEX.md`
   - 依赖：D79；被引用：—
-- [\| \[C-325\]( ) \| \[D135修正的工程含义 — CAI和EAI应使用部分不同的训练数据，降低G来提高ηg](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-b7bf135ca5b84b51 / \| \[C-325\]( ) \| \[D135修正的工程含义 — CAI和EAI应使用部分不同的训练数据，降低G来提高ηg
-  - 来源：`统一案例总表/INDEX.md`
-  - 依赖：D135, D80；被引用：—
-- [\| \[C-329\]( ) \| \[定投的结构保守性 — 每月5000，W=10万时f=5%，W=100万时](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-d4fbde197f6a64c8 / \| \[C-329\]( ) \| \[定投的结构保守性 — 每月5000，W=10万时f=5%，W=100万时
-  - 来源：`统一案例总表/INDEX.md`
-  - 依赖：D85；被引用：—
-- [\| \[C-32\]( ) \| \[雅典民主改革\]( ) \| 公民可流亡可拒绝参与，民主认同经退出权验证（排除了奴隶和女性） \|](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/INDEX.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-1e73ffed60abe13c / \| \[C-32\]( ) \| \[雅典民主改革\]( ) \| 公民可流亡可拒绝参与，民主认同经退出权验证（排除了奴隶和女性） \|
-  - 来源：`统一案例总表/INDEX.md`
-  - 依赖：—；被引用：—
-- [\| \[C-330\]( ) \| \[巴菲特模式的投资域验证 — 定投=巴菲特模式精确执行，三效率乘积最大\](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-4bc94e82fc1ce419 / \| \[C-330\]( ) \| \[巴菲特模式的投资域验证 — 定投=巴菲特模式精确执行，三效率乘积最大\](<./0330-C-330-巴菲特
-  - 来源：`统一案例总表/INDEX.md`
-  - 依赖：D85；被引用：—
-- [\| \[C-332\]( ) \| \[乘法临界漂移验证 — 改善0.3→0.](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-84852bf4f1546dce / \| \[C-332\]( ) \| \[乘法临界漂移验证 — 改善0.3→0.
-  - 来源：`统一案例总表/INDEX.md`
-  - 依赖：D87；被引用：—
-- [\| \[C-336\]( ) \| \[自举循环的结构保守性 — B(n)越大ΔB/B越小但永远为正，不会爆炸也不会归零\](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-fe0db9f0bb0ecbb0 / \| \[C-336\]( ) \| \[自举循环的结构保守性 — B(n)越大ΔB/B越小但永远为正，不会爆炸也不会归零\](<./0335-C-336-自举循环的结构保守性
-  - 来源：`统一案例总表/INDEX.md`
-  - 依赖：D89；被引用：—

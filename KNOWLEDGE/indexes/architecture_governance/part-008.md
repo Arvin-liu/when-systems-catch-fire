@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Every computable distribution is representable by a stochastic lambda expression, motivating the broader universality th](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-80e505add4e82e9e / Every computable distribution is representable by a stochastic lambda expression, motivating the broader universality th
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
 - [Every ledger entry is VALIDATED against the live authoritative artifact; on any](../../../tools/iteration_planner/completion_state.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-9437aad4c1191024 / Every ledger entry is VALIDATED against the live authoritative artifact; on any
@@ -1339,6 +1344,11 @@
   - 可搜索名称：NFC-92242248eb3585b1 / Function Dependency Dataset
   - 来源：`data/schemas/function_dependency.schema.json`
   - 依赖：—；被引用：—
+- [Function OS baseline: a direct bounded Python function with an input check and return value. It can compute and reject a](../../../reports/architecture-calibration/STEP08-PREREGISTRATION.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-a35d5e7a2de41899 / Function OS baseline: a direct bounded Python function with an input check and return value. It can compute and reject a
+  - 来源：`reports/architecture-calibration/STEP08-PREREGISTRATION.md`
+  - 依赖：—；被引用：—
 - [Function OS CI 失败 -> 已修。真实根因（Actions 日志）：`pytest: command not found`（exit 127），runner 未预装且 pyproject 未声明。修复：workflow 显式](../../../data/external-research/121-fulltext-resolver/121q6d/121Q6D-final-report.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-69bd4b18a990f9a2 / Function OS CI 失败 -> 已修。真实根因（Actions 日志）：`pytest: command not found`（exit 127），runner 未预装且 pyproject 未声明。修复：workflow 显式
@@ -2493,14 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-0ac4c84b77f0c703 / L2 推论误写成 L5 结论（把叙事改变理解的可能性写成必然性）
   - 来源：`outputs/getbrain/classic-problems-benchmark-supplement-20260707.md`
-  - 依赖：—；被引用：—
-- [L3 Case 层 —— 统一案例总表（C 编号）+ 22 本书候选（candidate_only）](../../../docs/protocols/README.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-bc0abe2df0776db1 / L3 Case 层 —— 统一案例总表（C 编号）+ 22 本书候选（candidate_only）
-  - 来源：`docs/protocols/README.md`
-  - 依赖：—；被引用：—
-- [L3：框架内部交叉验证；](../../../docs/pending_claims_register.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：NFC-4354c4dd75b0cb30 / L3：框架内部交叉验证；
-  - 来源：`docs/pending_claims_register.md`
   - 依赖：—；被引用：—

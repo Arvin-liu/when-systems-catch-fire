@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [title: "H(t,L) 遮蔽函数（双源） / H(t,L) obscuration function (dual-source)"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0007-A6-H%28t%2CL%29%20%E9%81%AE%E8%94%BD%E5%87%BD%E6%95%B0%28%E5%8F%8C%E6%BA%90%29.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-77468F3AD3EF8237 / title: "H(t,L) 遮蔽函数（双源） / H(t,L) obscuration function (dual-source)" / IMPLICIT-77468F3AD3EF8237
+  - 来源：`统一函数总表/0007-A6-H(t,L) 遮蔽函数(双源).md`
+  - 依赖：—；被引用：—
 - [title: "H_分类升级函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0091-D42-H_%E5%88%86%E7%B1%BB%E5%8D%87%E7%BA%A7%E5%87%BD%E6%95%B0.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-CEF95BAA3C6638EA / title: "H_分类升级函数" / IMPLICIT-CEF95BAA3C6638EA
@@ -2498,9 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-9703A3505FCAB1CD / title: "跨层完整退化函数" / IMPLICIT-9703A3505FCAB1CD
   - 来源：`统一函数总表/0075-D26-跨层完整退化函数.md`
-  - 依赖：—；被引用：—
-- [title: "跨物种协同函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0564-D549-%E8%B7%A8%E7%89%A9%E7%A7%8D%E5%8D%8F%E5%90%8C%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-D9C0B0E2AC6DBEED / title: "跨物种协同函数" / IMPLICIT-D9C0B0E2AC6DBEED
-  - 来源：`统一函数总表/0564-D549-跨物种协同函数.md`
   - 依赖：—；被引用：—

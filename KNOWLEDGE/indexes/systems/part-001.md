@@ -1169,6 +1169,16 @@
   - 可搜索名称：IMPLICIT-929F456ACB7F6F9B / # Probabilistic System Dynamics / 概率—系统动力学 / IMPLICIT-929F456ACB7F6F9B
   - 来源：`docs/architecture/probabilistic-system-dynamics.md`
   - 依赖：—；被引用：—
+- [# STEP08 MCF / PSD / ARN / Function OS baseline-relative calibration](../../../reports/architecture-calibration/STEP08-PREREGISTRATION.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-C67E9FEB00B7464A / # STEP08 MCF / PSD / ARN / Function OS baseline-relative calibration / IMPLICIT-C67E9FEB00B7464A
+  - 来源：`reports/architecture-calibration/STEP08-PREREGISTRATION.md`
+  - 依赖：—；被引用：—
+- [# STEP09 MCF / PSD / ARN / Function OS execution result](../../../reports/architecture-calibration/STEP09-EXECUTION.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-9881D33956F975F0 / # STEP09 MCF / PSD / ARN / Function OS execution result / IMPLICIT-9881D33956F975F0
+  - 来源：`reports/architecture-calibration/STEP09-EXECUTION.md`
+  - 依赖：—；被引用：—
 - [# 当一个系统学会维护自己，它怎样避免把全部精力都用来维护自己？](../../../data/operations/iterations/109/article.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-03279043DA5C0CF6 / # 当一个系统学会维护自己，它怎样避免把全部精力都用来维护自己？ / IMPLICIT-03279043DA5C0CF6
@@ -2106,6 +2116,11 @@
   - 可搜索名称：NFC-328c7c61a406508e / Argument separation should not be outsourced as truth judgment.
   - 来源：`data/atlas/generated/ignition-atlas-121q14.json`
   - 依赖：—；被引用：—
+- [ARN baseline: a directed adjacency dictionary. It can answer a simple static path query but has no multilayer or higher-](../../../reports/architecture-calibration/STEP08-PREREGISTRATION.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-f439493ac06e5f04 / ARN baseline: a directed adjacency dictionary. It can answer a simple static path query but has no multilayer or higher-
+  - 来源：`reports/architecture-calibration/STEP08-PREREGISTRATION.md`
+  - 依赖：—；被引用：—
 - [ARN is a derived representation for heterogeneous, non-causal, multilayer and temporally activated relations. It does no](../../../reports/architecture/121Q23-adaptive-relational-network-validation.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-dc83752669784b76 / ARN is a derived representation for heterogeneous, non-causal, multilayer and temporally activated relations. It does no
@@ -2485,19 +2500,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-006F03978554BA99 / causal_topology := ∫_{Ω} cause × effect × temporal_order × counterfactual dΩ（legacy candidate；不能据此识别现实因果） / IMPLICIT-006F03978554BA99
   - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [causal_topology := ∫_{Ω} cause × effect × temporal_order × counterfactual dΩ（legacy candidate；不能据此识别现实因果）](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-001d410543ff17ee / causal_topology := ∫_{Ω} cause × effect × temporal_order × counterfactual dΩ（legacy candidate；不能据此识别现实因果）
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [causal_topology := ∫_{Ω} cause × effect × temporal_order × counterfactual dΩ（因果拓扑积分）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0001-%CE%A8%E2%82%80%E5%85%83%E5%87%BD%E6%95%B0%E5%AE%8C%E6%95%B4%E6%95%B0%E5%AD%A6%E5%AE%9A%E4%B9%89.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-A020D8048B556C3D / causal_topology := ∫_{Ω} cause × effect × temporal_order × counterfactual dΩ（因果拓扑积分） / IMPLICIT-A020D8048B556C3D
-  - 来源：`统一函数总表/0001-Ψ₀元函数完整数学定义.md`
-  - 依赖：—；被引用：—
-- [CausalConeOrHorizon](../../../docs/architecture/multiscale-causal-fabric.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-bd6fc4184c24d371 / CausalConeOrHorizon
-  - 来源：`docs/architecture/multiscale-causal-fabric.md`
   - 依赖：—；被引用：—
