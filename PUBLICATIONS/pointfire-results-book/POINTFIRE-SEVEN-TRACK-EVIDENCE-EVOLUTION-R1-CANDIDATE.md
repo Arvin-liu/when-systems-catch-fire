@@ -131,8 +131,12 @@ PR-closure states distinct.
 PR #189 was not imported. A fresh candidate was rebuilt from current main as a
 separate optional post-generation editorial pass, with two recoverable text
 types, exact source blobs, claim-ceiling protection, and explicit non-overlap
-with research/runtime governance. Fresh ROLE-L3 review returned
-`PASS_WITH_EXPLICIT_RESIDUALS` after EOF mechanical cleanup.
+with research/runtime governance. The linked formal candidate packet retains
+`REBUILD_REQUIRED_BEFORE_INTEGRATION` because this optional module is not
+integrated and is not `READY`. The relay's fresh ROLE-L3 exact-tip review of
+the rebuilt candidate returned `PASS_WITH_EXPLICIT_RESIDUALS` for this
+Owner-review packet after EOF mechanical cleanup; that review does not grant
+integration, readiness, or authorization.
 
 The candidate does not measure reader cognition, establish literary quality,
 clone an author or brand, publish private GetNote material, or alter current
