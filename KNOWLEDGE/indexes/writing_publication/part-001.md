@@ -134,6 +134,11 @@
   - 可搜索名称：NFC-ddccea20e717a904 / final_actor_line = next(line for line in projection.splitlines() if line.startswith("**最终责任主体：**"))
   - 来源：`tests/test_stage_snapshot_publication.py`
   - 依赖：—；被引用：—
+- [front-door validation, legacy migration, and public-projection privacy checks.](../../../reports/validation/pointfire-seven-track-current-main-maintenance-r1-20260813.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-438d8f26a135ee53 / front-door validation, legacy migration, and public-projection privacy checks.
+  - 来源：`reports/validation/pointfire-seven-track-current-main-maintenance-r1-20260813.md`
+  - 依赖：—；被引用：—
 - [IGNITION-ITERATION-METHOD-1.4-CONTINUOUS-STAGE-SNAPSHOT-PUBLICATION-R1-20260726 typed change-propagation impact report](../../ASSET-CARDS.md#asset-hr-5a6642209467ff3a)
   - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
   - 可搜索名称：IGNITION-ITERATION-METHOD-1.4-CONTINUOUS-STAGE-SNAPSHOT-PUBLICATION-R1-20260726 typed change-propagation impact report / IGNITION-ITERATION-METHOD-1.4-change-propagation-impact
@@ -213,6 +218,16 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-038e96bba3393be9 / The normative candidate contract is `docs/operations/stage-snapshot-publication.md`. This section, its schemas, tools, t
   - 来源：`ITERATION.md`
+  - 依赖：—；被引用：—
+- [The privacy check covers the declared public projection; it does not certify](../../../reports/validation/pointfire-seven-track-current-main-maintenance-r1-20260813.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-915290d1e60de4ca / The privacy check covers the declared public projection; it does not certify
+  - 来源：`reports/validation/pointfire-seven-track-current-main-maintenance-r1-20260813.md`
+  - 依赖：—；被引用：—
+- [The public knowledge-experience projection deterministically withholds](../../../reports/validation/pointfire-seven-track-current-main-maintenance-r1-20260813.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-c42ab2a7bfad6fd4 / The public knowledge-experience projection deterministically withholds
+  - 来源：`reports/validation/pointfire-seven-track-current-main-maintenance-r1-20260813.md`
   - 依赖：—；被引用：—
 - [The Q27 story was read but not copied. It is preserved as a useful baseline: battlefield, microphone, bank and grid expo](../../../reports/operations/121Q28-embodied-cognitive-leap-writing-method-audit.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`

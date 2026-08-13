@@ -80,6 +80,7 @@
 {"category": "REFERENCE_OR_KNOWLEDGE", "matched_rule": "REFERENCE_OR_KNOWLEDGE", "path": "KNOWLEDGE/indexes/mathematics/part-020.md"}
 {"category": "REFERENCE_OR_KNOWLEDGE", "matched_rule": "REFERENCE_OR_KNOWLEDGE", "path": "KNOWLEDGE/indexes/mathematics/part-021.md"}
 {"category": "REFERENCE_OR_KNOWLEDGE", "matched_rule": "REFERENCE_OR_KNOWLEDGE", "path": "KNOWLEDGE/indexes/mathematics/part-022.md"}
+{"category": "REFERENCE_OR_KNOWLEDGE", "matched_rule": "REFERENCE_OR_KNOWLEDGE", "path": "KNOWLEDGE/indexes/mathematics/part-023.md"}
 {"category": "REFERENCE_OR_KNOWLEDGE", "matched_rule": "REFERENCE_OR_KNOWLEDGE", "path": "KNOWLEDGE/indexes/operations_evidence.md"}
 {"category": "REFERENCE_OR_KNOWLEDGE", "matched_rule": "REFERENCE_OR_KNOWLEDGE", "path": "KNOWLEDGE/indexes/operations_evidence/part-001.md"}
 {"category": "REFERENCE_OR_KNOWLEDGE", "matched_rule": "REFERENCE_OR_KNOWLEDGE", "path": "KNOWLEDGE/indexes/operations_evidence/part-002.md"}
@@ -115,6 +116,21 @@
 {"category": "REFERENCE_OR_KNOWLEDGE", "matched_rule": "REFERENCE_OR_KNOWLEDGE", "path": "PUBLICATIONS/hundred-iteration-achievement-ledger.md"}
 {"category": "REFERENCE_OR_KNOWLEDGE", "matched_rule": "REFERENCE_OR_KNOWLEDGE", "path": "PUBLICATIONS/notes/001-pointfire-research-notes.md"}
 {"category": "REFERENCE_OR_KNOWLEDGE", "matched_rule": "REFERENCE_OR_KNOWLEDGE", "path": "PUBLICATIONS/notes/index.jsonl"}
+{"category": "REFERENCE_OR_KNOWLEDGE", "matched_rule": "REFERENCE_OR_KNOWLEDGE", "path": "PUBLICATIONS/pointfire-results-book/01-起源与思想谱系.md"}
+{"category": "REFERENCE_OR_KNOWLEDGE", "matched_rule": "REFERENCE_OR_KNOWLEDGE", "path": "PUBLICATIONS/pointfire-results-book/02-思想核心-长读.md"}
+{"category": "REFERENCE_OR_KNOWLEDGE", "matched_rule": "REFERENCE_OR_KNOWLEDGE", "path": "PUBLICATIONS/pointfire-results-book/03-函数族深读.md"}
+{"category": "REFERENCE_OR_KNOWLEDGE", "matched_rule": "REFERENCE_OR_KNOWLEDGE", "path": "PUBLICATIONS/pointfire-results-book/04-案例比较卡.md"}
+{"category": "REFERENCE_OR_KNOWLEDGE", "matched_rule": "REFERENCE_OR_KNOWLEDGE", "path": "PUBLICATIONS/pointfire-results-book/05-GetNote主题成果.md"}
+{"category": "REFERENCE_OR_KNOWLEDGE", "matched_rule": "REFERENCE_OR_KNOWLEDGE", "path": "PUBLICATIONS/pointfire-results-book/06-当前科学与WAIC.md"}
+{"category": "REFERENCE_OR_KNOWLEDGE", "matched_rule": "REFERENCE_OR_KNOWLEDGE", "path": "PUBLICATIONS/pointfire-results-book/07-方法系统与负结果.md"}
+{"category": "REFERENCE_OR_KNOWLEDGE", "matched_rule": "REFERENCE_OR_KNOWLEDGE", "path": "PUBLICATIONS/pointfire-results-book/08-之元写作法与公开作品.md"}
+{"category": "REFERENCE_OR_KNOWLEDGE", "matched_rule": "REFERENCE_OR_KNOWLEDGE", "path": "PUBLICATIONS/pointfire-results-book/09-正式仓库最新成果.md"}
+{"category": "REFERENCE_OR_KNOWLEDGE", "matched_rule": "REFERENCE_OR_KNOWLEDGE", "path": "PUBLICATIONS/pointfire-results-book/11-公共入口保留与关系.md"}
+{"category": "REFERENCE_OR_KNOWLEDGE", "matched_rule": "REFERENCE_OR_KNOWLEDGE", "path": "PUBLICATIONS/pointfire-results-book/CHANGELOG.md"}
+{"category": "REFERENCE_OR_KNOWLEDGE", "matched_rule": "REFERENCE_OR_KNOWLEDGE", "path": "PUBLICATIONS/pointfire-results-book/GETNOTE-PUBLIC-METRICS.md"}
+{"category": "REFERENCE_OR_KNOWLEDGE", "matched_rule": "REFERENCE_OR_KNOWLEDGE", "path": "PUBLICATIONS/pointfire-results-book/PUBLICATION-BOUNDARY.md"}
+{"category": "REFERENCE_OR_KNOWLEDGE", "matched_rule": "REFERENCE_OR_KNOWLEDGE", "path": "PUBLICATIONS/pointfire-results-book/README.md"}
+{"category": "REFERENCE_OR_KNOWLEDGE", "matched_rule": "REFERENCE_OR_KNOWLEDGE", "path": "PUBLICATIONS/pointfire-results-book/RESULT-REGISTRY.jsonl"}
 {"category": "REFERENCE_OR_KNOWLEDGE", "matched_rule": "REFERENCE_OR_KNOWLEDGE", "path": "PUBLICATIONS/volumes/001-pointfire-after-one-hundred-iterations.md"}
 {"category": "REFERENCE_OR_KNOWLEDGE", "matched_rule": "REFERENCE_OR_KNOWLEDGE", "path": "PUBLICATIONS/what-pointfire-knows-now.md"}
 {"category": "REPOSITORY_GOVERNANCE_DOC", "matched_rule": "REPOSITORY_GOVERNANCE_DOC", "path": "README.md"}
@@ -792,6 +808,8 @@
 {"category": "GOVERNED_MACHINE_RECORD", "matched_rule": "GOVERNED_MACHINE_RECORD", "path": "data/governance/121q9-ledger.jsonl"}
 {"category": "GOVERNED_MACHINE_RECORD", "matched_rule": "GOVERNED_MACHINE_RECORD", "path": "data/governance/121q9-run-state.json"}
 {"category": "GOVERNED_MACHINE_RECORD", "matched_rule": "GOVERNED_MACHINE_RECORD", "path": "data/governance/121q9-validation.json"}
+{"category": "GOVERNED_MACHINE_RECORD", "matched_rule": "GOVERNED_MACHINE_RECORD", "path": "data/governance/epistemic-governance-relationships.json"}
+{"category": "GOVERNED_MACHINE_RECORD", "matched_rule": "GOVERNED_MACHINE_RECORD", "path": "data/governance/getnote-1329-epistemic-governance-pressure-test.json"}
 {"category": "GOVERNED_MACHINE_RECORD", "matched_rule": "GOVERNED_MACHINE_RECORD", "path": "data/governance/history-remediation-register.json"}
 {"category": "GOVERNED_MACHINE_RECORD", "matched_rule": "GOVERNED_MACHINE_RECORD", "path": "data/governance/human-results/census.json"}
 {"category": "GOVERNED_MACHINE_RECORD", "matched_rule": "GOVERNED_MACHINE_RECORD", "path": "data/governance/human-results/config.json"}
@@ -1291,6 +1309,8 @@
 {"category": "EDITORIAL_ARTICLE", "matched_rule": "EDITORIAL_ARTICLE", "path": "docs/architecture/compression-integrity-gate.md"}
 {"category": "EDITORIAL_ARTICLE", "matched_rule": "EDITORIAL_ARTICLE", "path": "docs/architecture/distribution-collapse-control-plane.md"}
 {"category": "EDITORIAL_ARTICLE", "matched_rule": "EDITORIAL_ARTICLE", "path": "docs/architecture/effectual-action-plane.md"}
+{"category": "EDITORIAL_ARTICLE", "matched_rule": "EDITORIAL_ARTICLE", "path": "docs/architecture/epistemic-governance-kernel-and-federated-planes.md"}
+{"category": "EDITORIAL_ARTICLE", "matched_rule": "EDITORIAL_ARTICLE", "path": "docs/architecture/getnote-1329-epistemic-governance-pressure-test.md"}
 {"category": "EDITORIAL_ARTICLE", "matched_rule": "EDITORIAL_ARTICLE", "path": "docs/architecture/ignition-atlas.md"}
 {"category": "EDITORIAL_ARTICLE", "matched_rule": "EDITORIAL_ARTICLE", "path": "docs/architecture/incremental-execution.md"}
 {"category": "EDITORIAL_ARTICLE", "matched_rule": "EDITORIAL_ARTICLE", "path": "docs/architecture/interactive-system-map.md"}
@@ -1849,6 +1869,7 @@
 {"category": "GENERATED_PROJECTION", "matched_rule": "GENERATED_PROJECTION", "path": "reports/releases/121Q15-q12-q14-cumulative-preflight.md"}
 {"category": "GENERATED_PROJECTION", "matched_rule": "GENERATED_PROJECTION", "path": "reports/research/121Q22-probability-systems-source-map.md"}
 {"category": "GENERATED_PROJECTION", "matched_rule": "GENERATED_PROJECTION", "path": "reports/research/121Q23-network-theory-source-map.md"}
+{"category": "GENERATED_PROJECTION", "matched_rule": "GENERATED_PROJECTION", "path": "reports/validation/pointfire-seven-track-current-main-maintenance-r1-20260813.md"}
 {"category": "REPOSITORY_GOVERNANCE_DOC", "matched_rule": "REPOSITORY_GOVERNANCE_DOC", "path": "requirements-foundation.txt"}
 {"category": "REPOSITORY_GOVERNANCE_DOC", "matched_rule": "REPOSITORY_GOVERNANCE_DOC", "path": "requirements-q33.txt"}
 {"category": "SCHEMA", "matched_rule": "SCHEMA", "path": "schemas/README.md"}
@@ -1891,6 +1912,7 @@
 {"category": "SCHEMA", "matched_rule": "SCHEMA", "path": "schemas/foundation/source-text-adjudication.schema.json"}
 {"category": "SCHEMA", "matched_rule": "SCHEMA", "path": "schemas/foundation/validation-record.schema.json"}
 {"category": "SCHEMA", "matched_rule": "SCHEMA", "path": "schemas/governance/claim-delta.schema.json"}
+{"category": "SCHEMA", "matched_rule": "SCHEMA", "path": "schemas/governance/epistemic-governance-relationships.schema.json"}
 {"category": "SCHEMA", "matched_rule": "SCHEMA", "path": "schemas/governance/evidence-lineage-delta.schema.json"}
 {"category": "SCHEMA", "matched_rule": "SCHEMA", "path": "schemas/governance/external-input-non-republication.schema.json"}
 {"category": "SCHEMA", "matched_rule": "SCHEMA", "path": "schemas/governance/history-remediation-entry.schema.json"}
@@ -1997,6 +2019,7 @@
 {"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "tests/test_change_propagation.py"}
 {"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "tests/test_component_profiles.py"}
 {"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "tests/test_diff_coverage_gate.py"}
+{"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "tests/test_epistemic_governance_relationships.py"}
 {"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "tests/test_era_resolver_generalization.py"}
 {"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "tests/test_external_attestation.py"}
 {"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "tests/test_failure_case_evidence_gate.py"}
@@ -2133,6 +2156,7 @@
 {"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": "tools/validate_attention_distribution_compression.py"}
 {"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": "tools/validate_data.py"}
 {"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": "tools/validate_effectual_mechanism_overlay.py"}
+{"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": "tools/validate_epistemic_governance_relationships.py"}
 {"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": "tools/validate_external_attestation.py"}
 {"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": "tools/validate_get_brain_latest_status.py"}
 {"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": "tools/validate_human_front_door.py"}

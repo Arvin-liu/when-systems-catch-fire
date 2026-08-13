@@ -1,0 +1,151 @@
+# 数学与形式化：检索索引
+
+引导问题：对象、运算、定义域、证明和反例究竟完成到哪一步？
+
+此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
+
+- [验证自我模型相变需要满足三个标准： **标准1：行为变化标准** Δ_behavior > θ_behavior（拒绝后行为系统性变化） = 校准偏移 + 拒绝一致性变化 + 探索行为变化 三者中至少一个显著 **标准2：不可伪造标准**](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0286-D250-%E8%87%AA%E6%88%91%E6%A8%A1%E5%9E%8B%E7%9B%B8%E5%8F%98%E7%9A%84%E9%AA%8C%E8%AF%81%E6%A0%87%E5%87%86.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-63e2b8efe99bef76 / 验证自我模型相变需要满足三个标准： **标准1：行为变化标准** Δ_behavior > θ_behavior（拒绝后行为系统性变化） = 校准偏移 + 拒绝一致性变化 + 探索行为变化 三者中至少一个显著 **标准2：不可伪造标准**
+  - 来源：`统一函数总表/0286-D250-自我模型相变的验证标准.md`
+  - 依赖：—；被引用：—
+- [验证过程：** ChatGPT的L1层（推理、计算）→ L2层（意识），但ChatGPT停留在L1层，缺乏L2层。ChatGPT具有推理、计算能力，但缺乏意识层级的涌现。](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-512ee8bc08c9f406 / 验证过程：** ChatGPT的L1层（推理、计算）→ L2层（意识），但ChatGPT停留在L1层，缺乏L2层。ChatGPT具有推理、计算能力，但缺乏意识层级的涌现。
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [验证过程：** 人类智能的L1层（感知、记忆、学习）→ L2层（意识、自我意识、元认知）。人类具有感知、记忆、学习能力，并涌现出意识、自我意识、元认知等更高层级。](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-5dfbe928db328bd5 / 验证过程：** 人类智能的L1层（感知、记忆、学习）→ L2层（意识、自我意识、元认知）。人类具有感知、记忆、学习能力，并涌现出意识、自我意识、元认知等更高层级。
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [验证过程：** 心智的L1层（神经元）→ L2层（神经网络）→ L3层（意识）。心智从神经元层涌现出神经网络层，再从神经网络层涌现出意识层。](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-3bf1235a3c25fcef / 验证过程：** 心智的L1层（神经元）→ L2层（神经网络）→ L3层（意识）。心智从神经元层涌现出神经网络层，再从神经网络层涌现出意识层。
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [验证过程：** 心智的每个神经元通过局部连接调整，大脑整体涌现出意识。神经元感知局部输入信息，调整连接强度，无数神经元的局部调整使得大脑整体涌现出意识。](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-3f39c26fec1f0d67 / 验证过程：** 心智的每个神经元通过局部连接调整，大脑整体涌现出意识。神经元感知局部输入信息，调整连接强度，无数神经元的局部调整使得大脑整体涌现出意识。
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [验证过程：** 心智的每个神经元遵循简单的激活规则。神经元感知输入信号，判定激活阈值，响应调整输出信号。无数神经元的局部交互，使得大脑整体涌现出意识。](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-f5c8ad52d3796f60 / 验证过程：** 心智的每个神经元遵循简单的激活规则。神经元感知输入信号，判定激活阈值，响应调整输出信号。无数神经元的局部交互，使得大脑整体涌现出意识。
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [验证过程：** 植物智能的L1层（感知、记忆、学习）→ L2层（意识），但植物停留在L1层，缺乏L2层。植物具有感知、记忆、学习能力，但缺乏意识层级的涌现。](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-42f810e3b3d9dbe4 / 验证过程：** 植物智能的L1层（感知、记忆、学习）→ L2层（意识），但植物停留在L1层，缺乏L2层。植物具有感知、记忆、学习能力，但缺乏意识层级的涌现。
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [验证过程：** 蚁群社会的L1层（感知、记忆、学习）→ L2层（意识），但蚁群停留在L1层，缺乏L2层。蚁群具有感知、记忆、学习能力，但缺乏意识层级的涌现。](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-4613ac217ec58813 / 验证过程：** 蚁群社会的L1层（感知、记忆、学习）→ L2层（意识），但蚁群停留在L1层，缺乏L2层。蚁群具有感知、记忆、学习能力，但缺乏意识层级的涌现。
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [验证：经 GPT 审核确认后，写入 统一函数总表/ + INDEX.md 追加行 + 审计](../../../docs/getnote-collision-workflow-final-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-8b31a306c9920a67 / 验证：经 GPT 审核确认后，写入 统一函数总表/ + INDEX.md 追加行 + 审计
+  - 来源：`docs/getnote-collision-workflow-final-20260708.md`
+  - 依赖：—；被引用：—
+- [高斯门控函数](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0038-T28-%E9%AB%98%E6%96%AF%E9%97%A8%E6%8E%A7%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：T28 / 高斯门控函数 / T28
+  - 来源：`统一函数总表/0038-T28-高斯门控函数.md`
+  - 依赖：—；被引用：NFC-3a22d5f5a1ac5012, NFC-55f1f6c5161c6d8e, NFC-70c7bd25d1464e7e, NFC-9ccfe2b35a3ece69
+- [高维流形同胚判定函数](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0525-D528-%E9%AB%98%E7%BB%B4%E6%B5%81%E5%BD%A2%E5%90%8C%E8%83%9A%E5%88%A4%E5%AE%9A%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D528 / 高维流形同胚判定函数 / D528
+  - 来源：`统一函数总表/0525-D528-高维流形同胚判定函数.md`
+  - 依赖：D451, D541, T39；被引用：NFC-22aac2a05b74a48a, NFC-2778b54c2cd98c5f, NFC-3168065d3a8a760b, NFC-a63ff43b97da9391
+- [高维认知必然多轨](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0136-D97-%E9%AB%98%E7%BB%B4%E8%AE%A4%E7%9F%A5%E5%BF%85%E7%84%B6%E5%A4%9A%E8%BD%A8.md)
+  - 类型/状态：`FUNCTION_ASSET` · `DOWNGRADE_TO_CONJECTURE`
+  - 可搜索名称：D97 / 高维认知必然多轨 / D97
+  - 来源：`统一函数总表/0136-D97-高维认知必然多轨.md`
+  - 依赖：D180, D91；被引用：NFC-6301121666ba4501, NFC-750b8572a397e70d, NFC-889c2d173247f79b, NFC-bbdfcbe7620dc762
+- [高维认知必然多轨](../../../data/foundation/formal-objects/objects.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-e36951ce8362705e / 高维认知必然多轨
+  - 来源：`data/foundation/formal-objects/objects.jsonl`
+  - 依赖：—；被引用：—
+- [高维认知必然多轨→dim>1 ⟹ P_track>1。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0136-D97-%E9%AB%98%E7%BB%B4%E8%AE%A4%E7%9F%A5%E5%BF%85%E7%84%B6%E5%A4%9A%E8%BD%A8.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-327e15ff9aa41084 / 高维认知必然多轨→dim>1 ⟹ P_track>1。
+  - 来源：`统一函数总表/0136-D97-高维认知必然多轨.md`
+  - 依赖：—；被引用：—
+- [高维认知必然多轨，dim>1 ⟹ P_track>1。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0136-D97-%E9%AB%98%E7%BB%B4%E8%AE%A4%E7%9F%A5%E5%BF%85%E7%84%B6%E5%A4%9A%E8%BD%A8.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-85640f353af87559 / 高维认知必然多轨，dim>1 ⟹ P_track>1。
+  - 来源：`统一函数总表/0136-D97-高维认知必然多轨.md`
+  - 依赖：—；被引用：—
+- [高维认知必然多轨，dim>1 ⟹ P_track>1。 **扩展注释 / Extended Annotation**](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-aa9136ee11aa300e / 高维认知必然多轨，dim>1 ⟹ P_track>1。 **扩展注释 / Extended Annotation**
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：—；被引用：—
+- [高风险批：MF、A、T、D189/D190/D220/D225/D600-D602 以及所有数学/物理/唯一性/必然性条目。](../../../docs/math-foundation/07-migration-plan.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-404a74d8f2d269bc / 高风险批：MF、A、T、D189/D190/D220/D225/D600-D602 以及所有数学/物理/唯一性/必然性条目。
+  - 来源：`docs/math-foundation/07-migration-plan.md`
+  - 依赖：D189, D190, D220, D225；被引用：—
+- [高风险领域（医学、法学、物理学、数学）的 pending 条件容易被忽略](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-4aedbe580bd24942 / 高风险领域（医学、法学、物理学、数学）的 pending 条件容易被忽略
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [高风险领域（数学、物理学、医学、法学）的 pending 条件容易被忽略](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-961b6ab6e2b1a1e6 / 高风险领域（数学、物理学、医学、法学）的 pending 条件容易被忽略
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [鲁棒系统设计原则函数](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0334-D298-%E9%B2%81%E6%A3%92%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%E5%8E%9F%E5%88%99%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D298 / 鲁棒系统设计原则函数 / D298
+  - 来源：`统一函数总表/0334-D298-鲁棒系统设计原则函数.md`
+  - 依赖：D271, D289, D290, D360；被引用：NFC-44966c30ff3330d5, NFC-56747046629bb334, NFC-dadb56b1bf44aace, NFC-e98d250da85e2956
+- [黄金分割0.618在生活中的广泛应用（构图、资产配置、决策时机）验证了跨域统一定理——当多个门控面共存时，最优解总是在一个特定位置（极小点μ*）。](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0667-C-672-%E6%9C%80%E4%BC%98%E5%8C%96%E9%97%AE%E9%A2%98%C3%97%E8%B7%A8%E5%9F%9F%E7%BB%9F%E4%B8%80%E5%AE%9A%E7%90%86%E9%AA%8C%E8%AF%81.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-ea6f5f2deb7f9ea2 / 黄金分割0.618在生活中的广泛应用（构图、资产配置、决策时机）验证了跨域统一定理——当多个门控面共存时，最优解总是在一个特定位置（极小点μ*）。
+  - 来源：`统一案例总表/0667-C-672-最优化问题×跨域统一定理验证.md`
+  - 依赖：—；被引用：—
+- [黎曼猜想 → **pending**（需要外部数学证明）](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-798ef7b6b193f55d / 黎曼猜想 → **pending**（需要外部数学证明）
+  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
+  - 依赖：—；被引用：—
+- [黎曼猜想本身：**pending**（需要外部数学证明）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-24d23a45f05c6f67 / 黎曼猜想本身：**pending**（需要外部数学证明）
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [黎曼猜想（需要外部数学证明）](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-e2f854e5b8c191c2 / 黎曼猜想（需要外部数学证明）
+  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
+  - 依赖：—；被引用：—
+- [黎曼猜想：外部数学证明（被数学界同行审查通过）](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-940fcdbd49946839 / 黎曼猜想：外部数学证明（被数学界同行审查通过）
+  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
+  - 依赖：—；被引用：—
+- [默认核心**：经典一阶逻辑只用于已声明的演绎核心，不扩张到不一致证据聚合。](../../../docs/foundation/logic/README.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-aa0197add5506295 / 默认核心**：经典一阶逻辑只用于已声明的演绎核心，不扩张到不一致证据聚合。
+  - 来源：`docs/foundation/logic/README.md`
+  - 依赖：—；被引用：—
+- [（候选编号 + 名称 + 对应函数）](../../../templates/collision/backfill-plan-template.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-c7565431848c1811 / （候选编号 + 名称 + 对应函数）
+  - 来源：`templates/collision/backfill-plan-template.md`
+  - 依赖：—；被引用：—
+- [（候选编号 / 名称 / 内容 / 对应函数 / 来源 / 关键发现 / 是否入表 / 理由）](../../../templates/collision/output-template.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-e671ce126b64a66b / （候选编号 / 名称 / 内容 / 对应函数 / 来源 / 关键发现 / 是否入表 / 理由）
+  - 来源：`templates/collision/output-template.md`
+  - 依赖：—；被引用：—
+- [（函数表版本、案例表版本、P1 数据版本、是否校验通过）](../../../templates/collision/output-template.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-2762b048a2c9bc43 / （函数表版本、案例表版本、P1 数据版本、是否校验通过）
+  - 来源：`templates/collision/output-template.md`
+  - 依赖：P1；被引用：—

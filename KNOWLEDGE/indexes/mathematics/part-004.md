@@ -4,6 +4,46 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [\[C-0749｜脱不花财务决策\](../../../统一案例总表/0744-C-0749-脱不花财务决策.md)（原笔记编号：C575-1）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0585-D575-%E8%B4%A2%E5%8A%A1%E5%85%83%E5%8D%8F%E8%AE%AE%E5%AE%9E%E4%BE%8B%E5%8C%96.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-bbe80a4d1642a212 / \[C-0749｜脱不花财务决策\](../../../统一案例总表/0744-C-0749-脱不花财务决策.md)（原笔记编号：C575-1）
+  - 来源：`统一函数总表/0585-D575-财务元协议实例化.md`
+  - 依赖：—；被引用：—
+- [\[C-0750｜何刚财务观点\](../../../统一案例总表/0745-C-0750-何刚财务观点.md)（原笔记编号：C575-2）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0585-D575-%E8%B4%A2%E5%8A%A1%E5%85%83%E5%8D%8F%E8%AE%AE%E5%AE%9E%E4%BE%8B%E5%8C%96.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-ae6b11ebe072d024 / \[C-0750｜何刚财务观点\](../../../统一案例总表/0745-C-0750-何刚财务观点.md)（原笔记编号：C575-2）
+  - 来源：`统一函数总表/0585-D575-财务元协议实例化.md`
+  - 依赖：—；被引用：—
+- [\[C-0751｜安然公司\](../../../统一案例总表/0746-C-0751-安然公司.md)（原笔记编号：C575-3）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0585-D575-%E8%B4%A2%E5%8A%A1%E5%85%83%E5%8D%8F%E8%AE%AE%E5%AE%9E%E4%BE%8B%E5%8C%96.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-75eae06acddad498 / \[C-0751｜安然公司\](../../../统一案例总表/0746-C-0751-安然公司.md)（原笔记编号：C575-3）
+  - 来源：`统一函数总表/0585-D575-财务元协议实例化.md`
+  - 依赖：—；被引用：—
+- [\[C-0752｜美国禁酒令\](../../../统一案例总表/0747-C-0752-美国禁酒令.md)（原笔记编号：C575-4）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0585-D575-%E8%B4%A2%E5%8A%A1%E5%85%83%E5%8D%8F%E8%AE%AE%E5%AE%9E%E4%BE%8B%E5%8C%96.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-c1f0ee4bb7ad03da / \[C-0752｜美国禁酒令\](../../../统一案例总表/0747-C-0752-美国禁酒令.md)（原笔记编号：C575-4）
+  - 来源：`统一函数总表/0585-D575-财务元协议实例化.md`
+  - 依赖：—；被引用：—
+- [\[C-0753｜博士期间换十个选题\](../../../统一案例总表/0748-C-0753-博士期间换十个选题.md)（原笔记编号：C576-1）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0586-D576-%E8%AE%A4%E7%9F%A5%E5%B9%B4%E9%BE%84%E6%8F%90%E5%8D%87.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-bbc0c73dd733971d / \[C-0753｜博士期间换十个选题\](../../../统一案例总表/0748-C-0753-博士期间换十个选题.md)（原笔记编号：C576-1）
+  - 来源：`统一函数总表/0586-D576-认知年龄提升.md`
+  - 依赖：—；被引用：—
+- [\[C-0754｜双周访谈打破信息茧房\](../../../统一案例总表/0749-C-0754-双周访谈打破信息茧房.md)（原笔记编号：C576-2）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0586-D576-%E8%AE%A4%E7%9F%A5%E5%B9%B4%E9%BE%84%E6%8F%90%E5%8D%87.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-4d9272a0b63bf20d / \[C-0754｜双周访谈打破信息茧房\](../../../统一案例总表/0749-C-0754-双周访谈打破信息茧房.md)（原笔记编号：C576-2）
+  - 来源：`统一函数总表/0586-D576-认知年龄提升.md`
+  - 依赖：—；被引用：—
+- [\[C-0755｜快闪阅读反算法\](../../../统一案例总表/0750-C-0755-快闪阅读反算法.md)（原笔记编号：C576-3）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0586-D576-%E8%AE%A4%E7%9F%A5%E5%B9%B4%E9%BE%84%E6%8F%90%E5%8D%87.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-fadddd467d7f47c5 / \[C-0755｜快闪阅读反算法\](../../../统一案例总表/0750-C-0755-快闪阅读反算法.md)（原笔记编号：C576-3）
+  - 来源：`统一函数总表/0586-D576-认知年龄提升.md`
+  - 依赖：—；被引用：—
+- [\[C-0756｜青蒿素从《肘后备急方》提炼\](../../../统一案例总表/0751-C-0756-青蒿素从《肘后备急方》提炼.md)（原笔记编号：C576-4）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0586-D576-%E8%AE%A4%E7%9F%A5%E5%B9%B4%E9%BE%84%E6%8F%90%E5%8D%87.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-e2b99ebbd4024ecf / \[C-0756｜青蒿素从《肘后备急方》提炼\](../../../统一案例总表/0751-C-0756-青蒿素从《肘后备急方》提炼.md)（原笔记编号：C576-4）
+  - 来源：`统一函数总表/0586-D576-认知年龄提升.md`
+  - 依赖：—；被引用：—
 - [\[C-0757｜《写作是门手艺》段落控制≤10行\](../../../统一案例总表/0752-C-0757-《写作是门手艺》段落控制≤10行.md)（原笔记编号：C577-1）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0587-D577-%E8%A7%82%E7%82%B9%E7%AB%9E%E4%BA%89.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-9af23d3c49158e99 / \[C-0757｜《写作是门手艺》段落控制≤10行\](../../../统一案例总表/0752-C-0757-《写作是门手艺》段落控制≤10行.md)（原笔记编号：C577-1）
@@ -1129,11 +1169,6 @@
   - 可搜索名称：NFC-f6aabc72c32c7027 / \[意识的智能必要条件\](docs/zh/functions/items/D240.md)
   - 来源：`统一案例总表/0472-C-473-符号AI卡在1.md`
   - 依赖：D240；被引用：—
-- [\[生命共同体价值宪章\](../../../docs/governance/life-community-value-charter.md)](../../../README.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-6f6f4770c8fc6186 / \[生命共同体价值宪章\](../../../docs/governance/life-community-value-charter.md)
-  - 来源：`README.md`
-  - 依赖：—；被引用：—
 - [\[生命共同体价值宪章\](../../../docs/governance/life-community-value-charter.md)：规范性边界。](../../../SUMMARY.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
   - 可搜索名称：NFC-6371ba9b57f2ffb5 / \[生命共同体价值宪章\](../../../docs/governance/life-community-value-charter.md)：规范性边界。
@@ -1144,25 +1179,10 @@
   - 可搜索名称：NFC-af9fda048635c78c / \[知识地图\](../../MAP.md)：按数学、物理、系统、认知、治理、写作和证据问题探索。
   - 来源：`tools/governance/build_knowledge_experience.py`
   - 依赖：—；被引用：—
-- [\[统一函数总表历史入口\](../../../统一函数总表/INDEX.md) 与 \[统一案例总表历史入口\](../../../统一案例总表/INDEX.md)：只用于历史追溯，不是现行裁决权威。](../../../README.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-39545eedb71a2283 / \[统一函数总表历史入口\](../../../统一函数总表/INDEX.md) 与 \[统一案例总表历史入口\](../../../统一案例总表/INDEX.md)：只用于历史追溯，不是现行裁决权威。
-  - 来源：`README.md`
-  - 依赖：—；被引用：—
 - [\[统一案例总表索引\]()](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0008-A7-%E9%80%80%E5%87%BA%E6%9D%83%E4%BF%A1%E5%8F%B7.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-9c5468c6f6f37cfa / \[统一案例总表索引\]()
   - 来源：`统一函数总表/0008-A7-退出权信号.md`
-  - 依赖：—；被引用：—
-- [\[非函数断言 closure summary\](../../../data/foundation/nonfunction-claims/closure-summary.json)：定理、规律、机制、因果、不可能性、跨域对应、预测、经验与解释性断言的当前计](../../../README.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-842e74ac13c6dadd / \[非函数断言 closure summary\](../../../data/foundation/nonfunction-claims/closure-summary.json)：定理、规律、机制、因果、不可能性、跨域对应、预测、经验与解释性断言的当前计
-  - 来源：`README.md`
-  - 依赖：—；被引用：—
-- [\[非函数断言与证据谱系闭合\](../../../reports/foundation-architecture/100-nonfunction-claim-evidence-lineage-closure.md)](../../../README.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-b4353e0a58e6de47 / \[非函数断言与证据谱系闭合\](../../../reports/foundation-architecture/100-nonfunction-claim-evidence-lineage-closure.md)
-  - 来源：`README.md`
   - 依赖：—；被引用：—
 - [\[非函数断言证据谱系闭合\](../../../reports/foundation-architecture/100-nonfunction-claim-evidence-lineage-closure.md)：将治理扩展到定理、规律、机制、因果、不可](../../../RESULTS/RESEARCH-AND-ARTICLES.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
@@ -1594,10 +1614,20 @@
   - 可搜索名称：NFC-4c553f0765c0d33c / `data/foundation/` 是状态与映射的机器权威；`统一函数总表/`、`统一案例总表/` 是冻结的 legacy source；`views/` 是可重建兼容投影。
   - 来源：`ARCHITECTURE.md`
   - 依赖：—；被引用：—
+- [`DISCOVER/OBSERVE → SOURCE-BIND → ATOMIZE/IDENTIFY → CLASSIFY → \[FORMALIZE\] → \[ARGUE/MODEL\] → \[TEST/COUNTEREXAMPLE\] → EV](../../../docs/architecture/epistemic-governance-kernel-and-federated-planes.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-6775b6776edb3617 / `DISCOVER/OBSERVE → SOURCE-BIND → ATOMIZE/IDENTIFY → CLASSIFY → \[FORMALIZE\] → \[ARGUE/MODEL\] → \[TEST/COUNTEREXAMPLE\] → EV
+  - 来源：`docs/architecture/epistemic-governance-kernel-and-federated-planes.md`
+  - 依赖：—；被引用：—
 - [`discovery-coverage.json` / `closure-summary.json`：覆盖与闭合证明。](../../../docs/foundation/historical-function-deep-adjudication-20260729.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-ca2f4ddbfaf03371 / `discovery-coverage.json` / `closure-summary.json`：覆盖与闭合证明。
   - 来源：`docs/foundation/historical-function-deep-adjudication-20260729.md`
+  - 依赖：—；被引用：—
+- [`EPISTEMICALLY_ACCEPTED=0` is compatible with internal governance success because the pipeline did not convert throughpu](../../../docs/architecture/getnote-1329-epistemic-governance-pressure-test.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-2b0266f40202b511 / `EPISTEMICALLY_ACCEPTED=0` is compatible with internal governance success because the pipeline did not convert throughpu
+  - 来源：`docs/architecture/getnote-1329-epistemic-governance-pressure-test.md`
   - 依赖：—；被引用：—
 - [`evidence_status`](../../../docs/math-foundation/03-validity-and-evidence-axes.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
@@ -1823,6 +1853,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-3fea9adb1fc63915 / `rejected`: clear evidence that the item is not a protocol-layer item.
   - 来源：`inputs/020/formal-protocol-promotion-standard.md`
+  - 依赖：—；被引用：—
+- [`STRUCTURALLY_VALID`**: the projection satisfied a structural/formal condition. Structure does not establish empirical s](../../../docs/architecture/getnote-1329-epistemic-governance-pressure-test.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-ead8868c2aa4f1b2 / `STRUCTURALLY_VALID`**: the projection satisfied a structural/formal condition. Structure does not establish empirical s
+  - 来源：`docs/architecture/getnote-1329-epistemic-governance-pressure-test.md`
   - 依赖：—；被引用：—
 - [`T10` 缓存倒U型 / cache inverted-U curve: MULTIPLE_CONFLICTING_SOURCES; missing=direct local note path or raw source artifac](../../../reports/math-foundation/provenance-audit-20260712.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
@@ -2424,6 +2459,11 @@
   - 可搜索名称：NFC-91d4a0b46b5094b3 / authority\["component_decisions"\]\[proof_index\]\["non_impact_proof"\]\["authority_fingerprint"\] = "0" * 64
   - 来源：`tests/test_incremental_execution.py`
   - 依赖：—；被引用：—
+- [AUTHORITY_PROFILE={"foundation.claims":"claim_authority","foundation.lifecycle":"claim_authority","language_thought.plan](../../../tools/validate_epistemic_governance_relationships.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-0654d64dd382182a / AUTHORITY_PROFILE={"foundation.claims":"claim_authority","foundation.lifecycle":"claim_authority","language_thought.plan
+  - 来源：`tools/validate_epistemic_governance_relationships.py`
+  - 依赖：—；被引用：—
 - [Automatic discovery can propose a record, but cannot assign authoritative truth, proof, evidence or novelty status.](../../../docs/foundation/future-claim-admission-protocol.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-fedb396c6063c21f / Automatic discovery can propose a record, but cannot assign authoritative truth, proof, evidence or novelty status.
@@ -2433,6 +2473,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-f2f4e551851c8798 / AXES = \["workflow_status", "semantic_status", "formal_status", "logic_status", "proof_status", "evidence_status", "scope
   - 来源：`tools/foundation/migrate_legacy.py`
+  - 依赖：—；被引用：—
+- [Axes 是由局部权威独立维护的坐标，包括九轴状态、数学成熟度 `M0–M7`、外部证据成熟度 `E0–E7`、source lineage、claim ceiling、隐私/出版资格、语言 framing residue、能力可用性与模型](../../../docs/architecture/epistemic-governance-kernel-and-federated-planes.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-3bb597d1a9ce28ce / Axes 是由局部权威独立维护的坐标，包括九轴状态、数学成熟度 `M0–M7`、外部证据成熟度 `E0–E7`、source lineage、claim ceiling、隐私/出版资格、语言 framing residue、能力可用性与模型
+  - 来源：`docs/architecture/epistemic-governance-kernel-and-federated-planes.md`
   - 依赖：—；被引用：—
 - [b = mk("SIM-B", base_fi(), title="门函数投影的半经典极限")](../../../tests/iteration_planner/test_planner.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
@@ -2458,49 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-b7cb845e4f42f0a1 / base\["logic_form"\] = "analogy or mapping claim without proven equivalence"
   - 来源：`tools/foundation/build_080_queue.py`
-  - 依赖：—；被引用：—
-- [base\["logic_form"\] = "directional mechanism claim with source-scoped drivers"](../../../tools/foundation/build_080_queue.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-6825e5ea62ae93f7 / base\["logic_form"\] = "directional mechanism claim with source-scoped drivers"
-  - 来源：`tools/foundation/build_080_queue.py`
-  - 依赖：—；被引用：—
-- [base\["logic_form"\] = "source-scoped formal proposition or theorem-style claim"](../../../tools/foundation/build_080_queue.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-5092806ae334cfd7 / base\["logic_form"\] = "source-scoped formal proposition or theorem-style claim"
-  - 来源：`tools/foundation/build_080_queue.py`
-  - 依赖：—；被引用：—
-- [Before apply performs any producer, validator, output, cache, or recovery write, the unified production validator comple](../../../docs/architecture/incremental-execution.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-139020b88d33626b / Before apply performs any producer, validator, output, cache, or recovery write, the unified production validator comple
-  - 来源：`docs/architecture/incremental-execution.md`
-  - 依赖：—；被引用：—
-- [Behavior change is not proof of a specific internal cognitive mechanism.](../../../docs/architecture/adaptive-relational-network.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-12c786c7ae9031aa / Behavior change is not proof of a specific internal cognitive mechanism.
-  - 来源：`docs/architecture/adaptive-relational-network.md`
-  - 依赖：—；被引用：—
-- [benchmark 通过"可能失败类型"字段，调用任务 F 的失败类型学。每个经典问题都会至少检查 10 种失败类型（材料错误、边界选错、尺度错配、函数过度泛化、同构误判、证据等级不足、AI 过度解释、L2 推论误写成 L5 结论、学科证据](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-913f1ea750855f3b / benchmark 通过"可能失败类型"字段，调用任务 F 的失败类型学。每个经典问题都会至少检查 10 种失败类型（材料错误、边界选错、尺度错配、函数过度泛化、同构误判、证据等级不足、AI 过度解释、L2 推论误写成 L5 结论、学科证据
-  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [Blockers](../../ASSET-CARDS.md#asset-hr-853faf13207f1d67)
-  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-  - 可搜索名称：Blockers / blockers-20260712
-  - 来源：`reports/math-foundation/blockers-20260712.md`
-  - 依赖：—；被引用：—
-- [blocker、未解决证明义务、commit 和 Draft PR。](../../../docs/VERSIONING.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-94e5fcd10761eaf4 / blocker、未解决证明义务、commit 和 Draft PR。
-  - 来源：`docs/VERSIONING.md`
-  - 依赖：—；被引用：—
-- [Both artifacts are valid, but their domains differ from one another and both are narrower than the source's domain-unspe](../../../reports/foundation-architecture/T2-proof-equivalence-audit-20260713.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-c5f84bed8ecf6bfc / Both artifacts are valid, but their domains differ from one another and both are narrower than the source's domain-unspe
-  - 来源：`reports/foundation-architecture/T2-proof-equivalence-audit-20260713.md`
-  - 依赖：T2；被引用：—
-- [Boundary negative example; not a technical quantum information proof.](../../../data/architecture/multiscale-causal-fabric/examples/quantum-entanglement-negative.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-439d5220b042dcfd / Boundary negative example; not a technical quantum information proof.
-  - 来源：`data/architecture/multiscale-causal-fabric/examples/quantum-entanglement-negative.json`
   - 依赖：—；被引用：—

@@ -78,6 +78,10 @@ SELF_EXCLUDES = {
 MACHINE_EXCLUDE_PREFIXES = (
     "data/foundation/nonfunction-claims/",
     "data/foundation/function-assets/",
+    # The manifest is a path-accounting projection, not an authoritative claim
+    # source.  Keep it accounted for by its own validator without allowing its
+    # serialized paths and categories to create registry claims.
+    "data/foundation/repository-path-classification/",
     "data/governance/",
     "KNOWLEDGE/",
 )

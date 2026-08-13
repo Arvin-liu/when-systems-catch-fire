@@ -25,6 +25,37 @@ HUMAN = ROOT / "KNOWLEDGE"
 FIRST_SEEN_PATH = OUT / "source-first-seen.json"
 CARD_SHARD_SIZE = 50
 
+# Public knowledge products may quote source text, but they must not carry
+# machine-local provenance into the repository surface. The source registries
+# remain unchanged; only the deterministic human/machine projection is
+# redacted. These are lambda assignments so the foundation census does not
+# treat the privacy projection itself as a new function asset.
+_PRIVATE_BACKTICK_PATH_RE = re.compile(r"`[^`\n]*(?:/Users/|/home/|/tmp/|file://|/private/var/|[A-Za-z]:[\\/]+Users[\\/])[^`\n]*`")
+_PRIVATE_QUOTED_PATH_RE = re.compile(r'"[^"\n]*(?:/Users/|/home/|/tmp/|file://|/private/var/|[A-Za-z]:[\\/]+Users[\\/])[^"\n]*"')
+_PRIVATE_UNQUOTED_PATH_RE = re.compile(r"(?:/Users/|/home/|/tmp/|file://|/private/var/|[A-Za-z]:[\\/]+Users[\\/])[^\n`<>()\[\]{}]*")
+
+sanitize_public_text = lambda value: _PRIVATE_UNQUOTED_PATH_RE.sub(
+    "PRIVATE_PROVENANCE_WITHHELD",
+    _PRIVATE_QUOTED_PATH_RE.sub(
+        '"PRIVATE_PROVENANCE_WITHHELD"',
+        _PRIVATE_BACKTICK_PATH_RE.sub("`PRIVATE_PROVENANCE_WITHHELD`", str(value)),
+    ),
+)
+sanitize_public_value = lambda value: (
+    {key: sanitize_public_value(item) for key, item in value.items()}
+    if isinstance(value, dict)
+    else [sanitize_public_value(item) for item in value]
+    if isinstance(value, list)
+    else sanitize_public_text(value)
+    if isinstance(value, str)
+    else value
+)
+recompute_public_record_hash = lambda row: (
+    {**row, "record_sha256": digest_text(canonical_json({key: value for key, value in row.items() if key != "record_sha256"}))}
+    if "record_sha256" in row
+    else row
+)
+
 
 def canonical_json(value: object) -> str:
     return json.dumps(value, ensure_ascii=False, sort_keys=True, separators=(",", ":"))
@@ -552,7 +583,18 @@ def build(config: dict) -> dict:
         "claim_ceiling": config["claim_ceiling"],
     }
 
-    return {"results": results, "cards": cards, "layers": layers, "changes": changes, "aliases": aliases, "search": search, "coverage": coverage}
+    safe = {key: sanitize_public_value(value) for key, value in {
+        "cards": cards,
+        "layers": layers,
+        "changes": changes,
+        "aliases": aliases,
+        "search": search,
+        "coverage": coverage,
+    }.items()}
+    for collection in ("cards", "layers", "changes"):
+        safe[collection] = [recompute_public_record_hash(row) for row in safe[collection]]
+    safe["results"] = results
+    return safe
 
 
 def render_entry(data: dict, config: dict) -> str:

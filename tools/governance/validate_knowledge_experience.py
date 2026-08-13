@@ -17,6 +17,8 @@ CONFIG_PATH = ROOT / "data/governance/knowledge-experience/config.json"
 DATA_ROOT = ROOT / "data/governance/knowledge-experience"
 HUMAN_ROOT = ROOT / "KNOWLEDGE"
 
+_PUBLIC_LOCAL_PROVENANCE_RE = re.compile(r"/Users/|/home/|/tmp/|file://|/private/var/|[A-Za-z]:[\\/]+Users[\\/]")
+
 SPEC = importlib.util.spec_from_file_location("knowledge_builder", ROOT / "tools/governance/build_knowledge_experience.py")
 BUILDER = importlib.util.module_from_spec(SPEC)
 assert SPEC.loader
@@ -226,6 +228,13 @@ def validate() -> dict:
         errors.append("important knowledge content is hidden")
 
     expected_products = BUILDER.output_map(BUILDER.build(config), config)
+    privacy_leaks = [
+        path.relative_to(ROOT).as_posix()
+        for path, content in expected_products.items()
+        if _PUBLIC_LOCAL_PROVENANCE_RE.search(content)
+    ]
+    if privacy_leaks:
+        errors.append("public knowledge projection contains local/private provenance: " + ", ".join(privacy_leaks))
     drift = [path.relative_to(ROOT).as_posix() for path, content in expected_products.items() if not path.is_file() or path.read_text(encoding="utf-8") != content]
     if drift:
         errors.append("deterministic output drift: " + ", ".join(drift))

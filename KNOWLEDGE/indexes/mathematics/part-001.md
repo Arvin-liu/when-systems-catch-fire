@@ -144,6 +144,11 @@
   - 可搜索名称：NFC-090ac6aab5d89ea8 / "blocked_by_disposition": row\["final_disposition"\] not in {"ACCEPTED_AS_PROVED_MATHEMATICAL_RESULT", "ACCEPTED_AS_ESTABL
   - 来源：`tools/foundation/adjudicate_nonfunction_claims.py`
   - 依赖：—；被引用：—
+- ["BODY_RECOVERY_BLOCKED":("foundation.lifecycle","WAS_REQUIRED_SOURCE_BODY_RECOVERED",{"REJECT","NOT_ASSIGNED"},"PROVENAN](../../../tools/validate_epistemic_governance_relationships.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-c6c760e194e025f1 / "BODY_RECOVERY_BLOCKED":("foundation.lifecycle","WAS_REQUIRED_SOURCE_BODY_RECOVERED",{"REJECT","NOT_ASSIGNED"},"PROVENAN
+  - 来源：`tools/validate_epistemic_governance_relationships.py`
+  - 依赖：—；被引用：—
 - ["case_index": repo / "统一案例总表/INDEX.md",](../../../inputs/020/validate_formal_protocol.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-97aaf65f37c9f441 / "case_index": repo / "统一案例总表/INDEX.md",
@@ -394,6 +399,11 @@
   - 可搜索名称：NFC-7ed9af7c9b60054d / "formalization_readiness": "LOW" if category in {"SEMANTICALLY_UNDEFINED", "EMPIRICAL_NOT_PURE_MATH", "STRUCTURAL_ANALOG
   - 来源：`tools/foundation/verify_079.py`
   - 依赖：—；被引用：—
+- ["foundation.lifecycle":("claim_authority","suspension_dependency_revision",("docs/foundation/future-claim-admission-prot](../../../tools/validate_epistemic_governance_relationships.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-022b6df89db47c2f / "foundation.lifecycle":("claim_authority","suspension_dependency_revision",("docs/foundation/future-claim-admission-prot
+  - 来源：`tools/validate_epistemic_governance_relationships.py`
+  - 依赖：—；被引用：—
 - ["full-migration-coverage-20260712.md":"# Full migration coverage\\n\\nEvery deduplicated formal object has an object, clai](../../../tools/foundation/migrate_legacy.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-97b1b5dffabf5e58 / "full-migration-coverage-20260712.md":"# Full migration coverage\\n\\nEvery deduplicated formal object has an object, clai
@@ -473,6 +483,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-c8f277dd94a90f68 / "L_META": ((125, 150), "OPERATOR", "L_meta is an argmin-style layer-selection operator with an operational stopping poli
   - 来源：`tools/foundation/verify_079.py`
+  - 依赖：—；被引用：—
+- ["language_authority":("truth","mathematical_maturity","external_evidence_maturity","ceiling_upgrade","layer_creation"),](../../../tools/validate_epistemic_governance_relationships.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-df5654bd46a35e3c / "language_authority":("truth","mathematical_maturity","external_evidence_maturity","ceiling_upgrade","layer_creation"),
+  - 来源：`tools/validate_epistemic_governance_relationships.py`
   - 依赖：—；被引用：—
 - ["LAW_OR_PRINCIPLE_CLAIM": "PENDING_PROOF",](../../../tools/foundation/adjudicate_nonfunction_claims.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -704,6 +719,16 @@
   - 可搜索名称：NFC-dcd667a3d8323cf1 / "no_totality_proof": \[("python3", "tools/validate_human_front_door.py")\],
   - 来源：`tools/operations/generate_component_profiles.py`
   - 依赖：—；被引用：—
+- ["NOT_ASSIGNED":("foundation.lifecycle","WAS_TARGET_LABEL_ASSIGNED",{"UNKNOWN_TRUTH","ABSTAIN","REJECT"},"EXPLICIT_LINEAG](../../../tools/validate_epistemic_governance_relationships.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-07adec9fb1e6a1d7 / "NOT_ASSIGNED":("foundation.lifecycle","WAS_TARGET_LABEL_ASSIGNED",{"UNKNOWN_TRUTH","ABSTAIN","REJECT"},"EXPLICIT_LINEAG
+  - 来源：`tools/validate_epistemic_governance_relationships.py`
+  - 依赖：—；被引用：—
+- ["NOT_IDENTIFIABLE":("foundation.lifecycle","CAN_IDENTITY_BE_ESTABLISHED",{"REJECT","NOT_ASSIGNED"},"NEW_IDENTIFYING_MATE](../../../tools/validate_epistemic_governance_relationships.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-84830a1ecb6ba876 / "NOT_IDENTIFIABLE":("foundation.lifecycle","CAN_IDENTITY_BE_ESTABLISHED",{"REJECT","NOT_ASSIGNED"},"NEW_IDENTIFYING_MATE
+  - 来源：`tools/validate_epistemic_governance_relationships.py`
+  - 依赖：—；被引用：—
 - ["note": "Verified via git diff: no changes to 统一函数总表/ directory"}](../../../data/external-research/106-105-correction/106-validator.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-2135e5407310efa0 / "note": "Verified via git diff: no changes to 统一函数总表/ directory"}
@@ -744,6 +769,11 @@
   - 可搜索名称：NFC-f592c5ae30b64f02 / "open_proof_obligations": len(proof_obligations),
   - 来源：`tools/foundation/adjudicate_function_assets.py`
   - 依赖：—；被引用：—
+- ["operations_authority":("truth","causality","mechanism_confirmation","mathematical_maturity","external_evidence_maturity](../../../tools/validate_epistemic_governance_relationships.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-26ca40b8aa519e07 / "operations_authority":("truth","causality","mechanism_confirmation","mathematical_maturity","external_evidence_maturity
+  - 来源：`tools/validate_epistemic_governance_relationships.py`
+  - 依赖：—；被引用：—
 - ["P vs NP 问题未被证明"（这是数学界的共识，点火框架只是重述）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-0e03c43dfc7d07d2 / "P vs NP 问题未被证明"（这是数学界的共识，点火框架只是重述）
@@ -763,6 +793,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-d75a88bb27313734 / "PENDING_PROOF": "Candidate mathematical statement only; no theorem or proved-result wording until a scoped proof passes
   - 来源：`tools/foundation/adjudicate_nonfunction_claims.py`
+  - 依赖：—；被引用：—
+- ["privacy_authority":("truth","mathematical_maturity","external_evidence_maturity"),](../../../tools/validate_epistemic_governance_relationships.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-c9eee03d312e48aa / "privacy_authority":("truth","mathematical_maturity","external_evidence_maturity"),
+  - 来源：`tools/validate_epistemic_governance_relationships.py`
   - 依赖：—；被引用：—
 - ["prohibited_wording": authority_card\["prohibited_uses"\] if authority_card else \["Do not present registry presence, inter](../../../tools/foundation/adjudicate_nonfunction_claims.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -914,10 +949,20 @@
   - 可搜索名称：NFC-57995326bc896eb4 / "psi0_proof": "no change to phi_meta_law.md.",
   - 来源：`tools/build_deliverables.py`
   - 依赖：—；被引用：—
+- ["publication_authority":("truth","mathematical_maturity","external_evidence_maturity","owner_acceptance","ceiling_upgrad](../../../tools/validate_epistemic_governance_relationships.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-9ee2fc2248e53a04 / "publication_authority":("truth","mathematical_maturity","external_evidence_maturity","owner_acceptance","ceiling_upgrad
+  - 来源：`tools/validate_epistemic_governance_relationships.py`
+  - 依赖：—；被引用：—
 - ["question": "Is the source's 1.4×N_active peak claim an exact theorem under a specific cache model, or only an illustrat](../../../tools/foundation/build_080_queue.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-c540b7096bab4375 / "question": "Is the source's 1.4×N_active peak claim an exact theorem under a specific cache model, or only an illustrat
   - 来源：`tools/foundation/build_080_queue.py`
+  - 依赖：—；被引用：—
+- ["r-revision":("foundation.revision_lineage","foundation.lifecycle","publication.results_book","foundation.lifecycle","RE](../../../tools/validate_epistemic_governance_relationships.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-af2a089d174969f2 / "r-revision":("foundation.revision_lineage","foundation.lifecycle","publication.results_book","foundation.lifecycle","RE
+  - 来源：`tools/validate_epistemic_governance_relationships.py`
   - 依赖：—；被引用：—
 - ["reason": "; ".join(proof_obligations\[:4\]) or "Open bounded adjudication obligation",](../../../tools/foundation/adjudicate_function_assets.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
@@ -2458,49 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-AB177EBEC1562BA2 / ## 关联函数 / Related Functions / IMPLICIT-AB177EBEC1562BA2 / IMPLICIT-0026301F130FD562
   - 来源：`统一案例总表/0700-C-0705-可选集动力学×商业模式.md`
-  - 依赖：—；被引用：—
-- [## 关联函数 / Related Functions](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0781-C-0786-%E5%86%99%E5%9C%B0%E6%96%B9%E5%81%8F%E6%96%B9%E3%80%81%E9%A3%9F%E7%89%A9%E3%80%81%E6%89%8B%E8%89%BA.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-B0D36EDDAEC9534B / ## 关联函数 / Related Functions / IMPLICIT-B0D36EDDAEC9534B / IMPLICIT-0026301F130FD562
-  - 来源：`统一案例总表/0781-C-0786-写地方偏方、食物、手艺.md`
-  - 依赖：—；被引用：—
-- [## 关联函数 / Related Functions](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0685-C-0690-Invariant%20Subspace%E7%8C%9C%E6%83%B3.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-B22661C48C0A0950 / ## 关联函数 / Related Functions / IMPLICIT-B22661C48C0A0950 / IMPLICIT-0026301F130FD562
-  - 来源：`统一案例总表/0685-C-0690-Invariant Subspace猜想.md`
-  - 依赖：—；被引用：—
-- [## 关联函数 / Related Functions](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0672-C-0677-%E6%A2%85%E7%BA%B3%E5%BE%B7%E5%BF%AB%E9%80%9F%E7%BC%A9%E5%B0%8F%E9%97%B4%E9%9A%94.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-B2832092A1A6362E / ## 关联函数 / Related Functions / IMPLICIT-B2832092A1A6362E / IMPLICIT-0026301F130FD562
-  - 来源：`统一案例总表/0672-C-0677-梅纳德快速缩小间隔.md`
-  - 依赖：—；被引用：—
-- [## 关联函数 / Related Functions](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0674-C-0679-Willmore%E7%8C%9C%E6%83%B3.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-B36AB62D5C9C6E47 / ## 关联函数 / Related Functions / IMPLICIT-B36AB62D5C9C6E47 / IMPLICIT-0026301F130FD562
-  - 来源：`统一案例总表/0674-C-0679-Willmore猜想.md`
-  - 依赖：—；被引用：—
-- [## 关联函数 / Related Functions](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0743-C-0748-%E7%BE%8E%E5%9B%BD%E7%A6%81%E9%85%92%E4%BB%A4.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-B43339CBC8C1AB94 / ## 关联函数 / Related Functions / IMPLICIT-B43339CBC8C1AB94 / IMPLICIT-0026301F130FD562
-  - 来源：`统一案例总表/0743-C-0748-美国禁酒令.md`
-  - 依赖：—；被引用：—
-- [## 关联函数 / Related Functions](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0728-C-0733-%E8%84%B1%E4%B8%8D%E8%8A%B1%E4%B8%89%E5%8D%81%E5%B9%B4%E5%8F%AA%E9%9D%A0%E5%8A%B3%E5%8A%A8%E6%89%80%E5%BE%97.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-BB55E36C430FC0CD / ## 关联函数 / Related Functions / IMPLICIT-BB55E36C430FC0CD / IMPLICIT-0026301F130FD562
-  - 来源：`统一案例总表/0728-C-0733-脱不花三十年只靠劳动所得.md`
-  - 依赖：—；被引用：—
-- [## 关联函数 / Related Functions](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0694-C-0699-%E6%94%B6%E5%85%A5%E6%B5%81%E5%A4%9A%E5%85%83.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-BC769174AAEF1CDC / ## 关联函数 / Related Functions / IMPLICIT-BC769174AAEF1CDC / IMPLICIT-0026301F130FD562
-  - 来源：`统一案例总表/0694-C-0699-收入流多元.md`
-  - 依赖：—；被引用：—
-- [## 关联函数 / Related Functions](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0724-C-0729-%E4%B8%A4%E5%BC%A0%E8%A1%A8%E7%9F%A5%E8%AF%86%E5%BA%93DOCX%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-C0CEAEAE7232C3C1 / ## 关联函数 / Related Functions / IMPLICIT-C0CEAEAE7232C3C1 / IMPLICIT-0026301F130FD562
-  - 来源：`统一案例总表/0724-C-0729-两张表知识库DOCX文件管理.md`
-  - 依赖：—；被引用：—
-- [## 关联函数 / Related Functions](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0679-C-0684-Kesten%E7%8C%9C%E6%83%B3.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-C357E95C4F84B97B / ## 关联函数 / Related Functions / IMPLICIT-C357E95C4F84B97B / IMPLICIT-0026301F130FD562
-  - 来源：`统一案例总表/0679-C-0684-Kesten猜想.md`
   - 依赖：—；被引用：—

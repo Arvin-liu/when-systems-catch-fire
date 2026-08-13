@@ -4,46 +4,6 @@
 
 [返回资产卡总索引](../ASSET-CARDS.md)
 
-<a id="asset-hr-75acdd1f73f32af7"></a>
-## Full migration coverage
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-75ACDD1F73F32AF7` · [reports/foundation-architecture/full-migration-coverage-20260712.md](../../reports/foundation-architecture/full-migration-coverage-20260712.md)
-- **为什么产生：** 此来源记录了什么：Full migration coverage？
-- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **当前结果：** Every deduplicated formal object has an object, claim, argument, source, mapping and open proof-obligation record. Every formal case and candidate case has an evidence record. Pending claims remain pending.
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `reports/foundation-architecture/full-migration-coverage-20260712.md`, `REPOSITORY_HISTORY_SOURCE`
-- **演化历史：** 2026-07-12: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`
-- **可搜索名称：** `Full migration coverage`, `full-migration-coverage-20260712`
-
-<a id="asset-hr-75b56a91c97f20be"></a>
-## Future non-function claim admission protocol
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-75B56A91C97F20BE` · [docs/foundation/future-claim-admission-protocol.md](../../docs/foundation/future-claim-admission-protocol.md)
-- **为什么产生：** 此来源记录了什么：Future non-function claim admission protocol？
-- **当前状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
-- **当前结果：** This protocol is the mandatory entry path for a new theorem, law, principle, mechanism, causal judgment, impossibility result, cross-domain correspondence, prediction, empirical assertion, ontology claim, interpretation rule or public summary. It extends the task 98–99 function-asset governance;…
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** `D127`, `D182`, `D184`, `D183`, `D185`, `D187`, `D188`, `D189`, `D190`, `D260`, `T2`
-- **来源与证据：** `docs/foundation/future-claim-admission-protocol.md`, `REPOSITORY_HISTORY_SOURCE`
-- **演化历史：** 2026-07-29: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `MATHEMATICS`, `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `Future non-function claim admission protocol`, `future-claim-admission-protocol`
-
 <a id="asset-hr-771c2981fcc20396"></a>
 ## 121Q13 Attention, Distribution, And Compression Report
 
@@ -750,7 +710,7 @@
 - **身份/来源：** `RESULT_OR_ARTICLE` · `HR-8FAEED857E0F9416` · [outputs/audit/agent-project-understanding-20260708.md](../../outputs/audit/agent-project-understanding-20260708.md)
 - **为什么产生：** 此来源记录了什么：点火项目整体认知初始化 — Agent 认知报告？
 - **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **当前结果：** 生成时间：2026-07-08 21:25 (GMT+8) 任务来源：用户发来的「点火项目整体认知初始化」指令（.md 附件） 执行方式：只读阅读 GitHub 主仓库（README / docs / outputs/audit / 统一函数总表 / 统一案例总表 / data / schemas / tools），未修改任何核心资产。 主仓库路径：/Users/zhiyuan/Agent 工作区/Codex/2026-06-25/github-cp-agent-500-600-1000/when-systems-catch-fire git 状态（只读确认）：main 与 origin…
+- **当前结果：** 生成时间：2026-07-08 21:25 (GMT+8) 任务来源：用户发来的「点火项目整体认知初始化」指令（.md 附件） 执行方式：只读阅读 GitHub 主仓库（README / docs / outputs/audit / 统一函数总表 / 统一案例总表 / data / schemas / tools），未修改任何核心资产。 主仓库路径：PRIVATE_PROVENANCE_WITHHELD
 - **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
 - **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
 - **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
@@ -1003,3 +963,43 @@
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `22 本书籍验证案例候选 · 暂存层`, `README`
+
+<a id="asset-hr-9a37e04e46e43cf2"></a>
+## 121Q4 Final Report: Function OS v0.1 Symbolic Reference Implementation
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-9A37E04E46E43CF2` · [reports/external-research/121Q4-final-report.md](../../reports/external-research/121Q4-final-report.md)
+- **为什么产生：** 此来源记录了什么：121Q4 Final Report: Function OS v0.1 Symbolic Reference Implementation？
+- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **当前结果：** Generated: 2026-07-15T03:50:00Z Branch: records/ignition-121q4-v4pro-symbolic-function-os-reference-20260715 Status: CANDIDATE COMPLETE (Steps 000-024, consistency-sealed)
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `reports/external-research/121Q4-final-report.md`, `121Q4-FINAL-REPORT`
+- **演化历史：** 2026-07-15: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `121Q4 Final Report: Function OS v0.1 Symbolic Reference Implementation`, `121Q4-final-report`
+
+<a id="asset-hr-9ba686d027762485"></a>
+## Architecture rebuild summary
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-9BA686D027762485` · [reports/foundation-architecture/architecture-rebuild-summary-20260712.md](../../reports/foundation-architecture/architecture-rebuild-summary-20260712.md)
+- **为什么产生：** 此来源记录了什么：Architecture rebuild summary？
+- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **当前结果：** The seven-layer architecture, separated registries, nine status axes, gates, deterministic migration, compatibility views and executable benchmarks are installed. Status: ARCHITECTURECOMPLETEPENDINGCONTENTPROOFS. Architecture completion does not prove the registered content.
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `reports/foundation-architecture/architecture-rebuild-summary-20260712.md`, `REPOSITORY_HISTORY_SOURCE`
+- **演化历史：** 2026-07-12: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`
+- **可搜索名称：** `Architecture rebuild summary`, `architecture-rebuild-summary-20260712`

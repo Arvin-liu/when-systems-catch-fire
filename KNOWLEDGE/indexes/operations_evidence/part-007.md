@@ -4,6 +4,81 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0216-C-216-%E9%A2%84%E6%B5%8B%E7%BC%96%E7%A0%81%E5%9B%9E%E8%B7%AF.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-0f3e10b6064a65e9 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
+  - 来源：`统一案例总表/0216-C-216-预测编码回路.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0254-C-254-%E9%A2%84%E6%B5%8B%E7%BC%96%E7%A0%81%E7%BB%84%E5%9D%97%E5%8C%96.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-2ea89c0199035768 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
+  - 来源：`统一案例总表/0254-C-254-预测编码组块化.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0257-C-257-%E9%A2%84%E6%B5%8B%E7%BC%96%E7%A0%81%E5%9B%9E%E8%B7%AF%E8%87%AA%E7%94%9F%E6%88%90.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-1aa682602da7833d / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
+  - 来源：`统一案例总表/0257-C-257-预测编码回路自生成.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0276-C-276-D127%2BD123%E6%B7%B1%E5%B1%82%E5%90%8C%E6%9E%84.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-bcd7715d2fcb39a9 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
+  - 来源：`统一案例总表/0276-C-276-D127+D123深层同构.md`
+  - 依赖：D123, D127；被引用：—
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0277-C-277-D123%E4%B8%8ED36%E5%80%92U%E5%9E%8B%E5%90%8C%E6%9E%84.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-ece13de409e8cb00 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
+  - 来源：`统一案例总表/0277-C-277-D123与D36倒U型同构.md`
+  - 依赖：D123, D36；被引用：—
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0278-C-278-D124%E4%B8%8ED126%E6%97%B6%E9%97%B4%E5%B0%BA%E5%BA%A6%E5%90%8C%E6%9E%84.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-f0ee2ebf16ee5873 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
+  - 来源：`统一案例总表/0278-C-278-D124与D126时间尺度同构.md`
+  - 依赖：D124, D126；被引用：—
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0322-C-322-D137%E4%B8%8ED141%E7%9A%84%E7%B2%92%E5%BA%A6%E5%AF%B9%E5%BA%94%20%E2%80%94%20D137%E8%AF%B4-%E9%98%B6%E6%AE%B52%E6%98%AF%E6%9C%80%E5%A4%A7%E7%93%B6%E9%A2%88-%2CD141%E8%AF%B4-%E8%A3%85Ptrack%E6%98%AF%E7%AC%AC%E4%BA%8C%E6%AD%A5-%E2%80%94%E2%80%94%E5%90%8C%E6%9E%84.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-ee4adfd5878519ee / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
+  - 来源：`统一案例总表/0322-C-322-D137与D141的粒度对应 — D137说-阶段2是最大瓶颈-,D141说-装Ptrack是第二步-——同构.md`
+  - 依赖：D137, D141；被引用：—
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0403-C-404-%E6%94%B9%E9%9D%A9%E7%AA%97%E5%8F%A3%E4%B8%8E%E9%9D%A9%E5%91%BD%E5%90%8C%E6%9E%84%E2%80%94%E2%80%94A%E5%9E%8B%E5%B4%A9%E6%BA%83%E4%B8%8EB%E5%9E%8B%E6%9D%BE%E5%BC%9B%E7%9A%84%E5%85%B1%E6%8C%AF%E7%AA%97%E5%8F%A3.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-7f3dce28667759cb / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
+  - 来源：`统一案例总表/0403-C-404-改革窗口与革命同构——A型崩溃与B型松弛的共振窗口.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0428-C-429-%E6%95%99%E8%82%B2%E5%85%AC%E5%B9%B3%E7%9A%84%E9%98%B6%E5%B1%82%E6%8A%95%E5%BD%B1%E2%80%94%E2%80%94%E8%87%AA%E7%84%B6%E9%97%A8%E6%A7%9B%E7%A2%BE%E5%8E%8B%2B%E4%BA%BA%E4%B8%BA%E9%97%A8%E6%A7%9B%E7%A2%BE%E5%8E%8B%E5%9C%A8%E6%95%99%E8%82%B2%E7%BB%B4%E5%BA%A6%E7%9A%84%E5%8F%A0%E5%8A%A0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-446247fdfddcfb86 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
+  - 来源：`统一案例总表/0428-C-429-教育公平的阶层投影——自然门槛碾压+人为门槛碾压在教育维度的叠加.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0527-C-532-%E4%BF%A1%E6%81%AF%E7%86%B5vs%E7%83%AD%E5%8A%9B%E5%AD%A6%E7%86%B5%20%E2%80%94%20S_thermo%3D%CE%A6%E5%9C%A8%E7%B2%97%E7%B2%92%E5%8C%96%E4%B8%8B%E7%9A%84%E6%8A%95%E5%BD%B1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-aa865dbf7d54ce49 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
+  - 来源：`统一案例总表/0527-C-532-信息熵vs热力学熵 — S_thermo=Φ在粗粒化下的投影.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0548-C-553-CMB%E5%90%84%E5%90%91%E5%BC%82%E6%80%A7%E6%96%B9%E5%90%91%20%E2%80%94%20%CE%A6%E9%A2%84%E8%A8%80~10%E2%88%928%2C%E6%AF%94%E8%A7%82%E6%B5%8B10%E2%88%925%E5%B0%8F3%E9%87%8F%E7%BA%A7.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-9dcc93b8d2575e3f / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
+  - 来源：`统一案例总表/0548-C-553-CMB各向异性方向 — Φ预言~10−8,比观测10−5小3量级.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0599-C-604-%E4%BB%B2%E8%A3%81%E6%A8%A1%E5%9E%8B%E8%83%BD%E5%8A%9B%E4%B8%8A%E9%99%90%E9%A2%84%E6%B5%8B%E9%AA%8C%E8%AF%81.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-821264901dbdcc45 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
+  - 来源：`统一案例总表/0599-C-604-仲裁模型能力上限预测验证.md`
+  - 依赖：—；被引用：—
+- [反例与变异：** 中文也大量使用主谓句，英语也有话题前置；不能用一个标签预测所有语篇。](../../../docs/language-thought/dimensional-basis.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-e49bae5fa4b69d1b / 反例与变异：** 中文也大量使用主谓句，英语也有话题前置；不能用一个标签预测所有语篇。
+  - 来源：`docs/language-thought/dimensional-basis.md`
+  - 依赖：—；被引用：—
+- [发现跨域同构](../../../docs/getnote-collision-workflow-final-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-1a16106811d94840 / 发现跨域同构
+  - 来源：`docs/getnote-collision-workflow-final-20260708.md`
+  - 依赖：—；被引用：—
+- [可能把弱类比写成强同构；](../../../outputs/getbrain/failure-typology-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-ba92b8a8fb451006 / 可能把弱类比写成强同构；
+  - 来源：`outputs/getbrain/failure-typology-draft-20260706.md`
+  - 依赖：—；被引用：—
 - [可能风险：过度类比、层级误置。](../../../outputs/collisions/20260708-smoke-test/rejected.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-8af19e71a2a14596 / 可能风险：过度类比、层级误置。
@@ -68,11 +143,6 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-9f7578b36a470a74 / 固定为以下五类，每一类用对应字段输出：
   - 来源：`docs/getbrain-operation-guide-20260708.md`
-  - 依赖：—；被引用：—
-- [在 task-111 队列投影中保持可检索，但因证据前置条件未满足而不进入 active queue。](../../ASSET-CARDS.md#asset-nfc-8fe9b8761b7aa866)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-8fe9b8761b7aa866 / 在 task-111 队列投影中保持可检索，但因证据前置条件未满足而不进入 active queue。 / 在 task-111 队列投影中保持可检索，但因证据前置条件未满足而不进入 active queue。
-  - 来源：`README.md`
   - 依赖：—；被引用：—
 - [在正式贡献者许可协议或书面贡献授权建立前，项目不接受会妨碍双重许可、商业许可或 BUSL 覆盖软件未来 AGPL 转换的外部代码贡献。DCO 式 sign-off 本身不被视为自动授予任意再许可权。贡献前请先讨论，并说明你有权按对应许可层提](../../../CONTRIBUTING.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
@@ -458,6 +528,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-27e200b6811a088d / 模糊相关命中（已逐条核对边界，均非同构）：
   - 来源：`outputs/audit/cross-domain-candidate-function-review-20260708.md`
+  - 依赖：—；被引用：—
+- [测试、登记闭合或跨域类比不能越过这些边界。](../../ASSET-CARDS.md#asset-nfc-35ac0049ec6101ca)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-35ac0049ec6101ca / 测试、登记闭合或跨域类比不能越过这些边界。 / 测试、登记闭合或跨域类比不能越过这些边界。
+  - 来源：`README.md`
   - 依赖：—；被引用：—
 - [点火框架接收外部学科输入时，先按 gap 路由到对应 object_type 接口；接口仅承载外部理论的结构化表示，不参与 Ψ₀ 核心判定；核心判定仍由 Ψ₀ 六组件执行。](../../../data/external-research/096-clm-alignment-layer-v2.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`

@@ -1194,6 +1194,11 @@
   - 可搜索名称：IMPLICIT-A763F2DD75CCBD77 / # point-fire project integration from audit through CI / IMPLICIT-A763F2DD75CCBD77
   - 来源：`data/architecture/adaptive-relational-network/examples/point-fire-project-integration.md`
   - 依赖：—；被引用：—
+- [# Pointfire seven-track current-main maintenance integration R1](../../../reports/validation/pointfire-seven-track-current-main-maintenance-r1-20260813.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-D6ECB6636C8BD92A / # Pointfire seven-track current-main maintenance integration R1 / IMPLICIT-D6ECB6636C8BD92A
+  - 来源：`reports/validation/pointfire-seven-track-current-main-maintenance-r1-20260813.md`
+  - 依赖：—；被引用：—
 - [# Preregistration Protocol — Crossref DOI Re-verification Pilot (Task 103 §5)](../../../evidence-program/preregistration/IGNITION-EVIDENCE-PILOT-R1-CROSSREF-DOI-VERIFICATION.protocol.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-2C13C5F548AA4EAD / # Preregistration Protocol — Crossref DOI Re-verification Pilot (Task 103 §5) / IMPLICIT-2C13C5F548AA4EAD
@@ -1539,6 +1544,11 @@
   - 可搜索名称：IMPLICIT-B36F4909EBF73B97 / ## Required Follow-up Before Effective Migration / IMPLICIT-B36F4909EBF73B97
   - 来源：`docs/governance/licensing-rights-inventory.md`
   - 依赖：—；被引用：—
+- [## Required gate scope](../../../reports/validation/pointfire-seven-track-current-main-maintenance-r1-20260813.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-EF6B2A9C3EFFF0C6 / ## Required gate scope / IMPLICIT-EF6B2A9C3EFFF0C6
+  - 来源：`reports/validation/pointfire-seven-track-current-main-maintenance-r1-20260813.md`
+  - 依赖：—；被引用：—
 - [## Scope and gate boundary](../../../data/operations/iterations/111/historical/EVIDENCE_DOSSIER.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-9196C079ACFFEAC2 / ## Scope and gate boundary / IMPLICIT-9196C079ACFFEAC2
@@ -1596,18 +1606,18 @@
   - 依赖：—；被引用：—
 - [## 任务 104 与 105（编辑叙事层与 Function OS 有界基准）](../../../RESULTS/LATEST.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-C9296EA8B17C9D9B / ## 任务 104 与 105（编辑叙事层与 Function OS 有界基准） / IMPLICIT-C9296EA8B17C9D9B / IMPLICIT-E81D11993DD77407
+  - 可搜索名称：IMPLICIT-C9296EA8B17C9D9B / ## 任务 104 与 105（编辑叙事层与 Function OS 有界基准） / IMPLICIT-C9296EA8B17C9D9B
   - 来源：`RESULTS/LATEST.md`
-  - 依赖：—；被引用：—
-- [## 任务 104 与 105：编辑叙事层与 Function OS 有界基准](../../../README.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-E81D11993DD77407 / ## 任务 104 与 105：编辑叙事层与 Function OS 有界基准 / IMPLICIT-E81D11993DD77407 / IMPLICIT-C9296EA8B17C9D9B
-  - 来源：`README.md`
   - 依赖：—；被引用：—
 - [## 任务 104—105（编辑叙事层与 Function OS 有界基准）](../../../docs/project-current-state.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-D27D157B295D5B22 / ## 任务 104—105（编辑叙事层与 Function OS 有界基准） / IMPLICIT-D27D157B295D5B22
   - 来源：`docs/project-current-state.md`
+  - 依赖：—；被引用：—
+- [## 共享 kernel invariants](../../../docs/architecture/epistemic-governance-kernel-and-federated-planes.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-70126DDABADF3DCF / ## 共享 kernel invariants / IMPLICIT-70126DDABADF3DCF
+  - 来源：`docs/architecture/epistemic-governance-kernel-and-federated-planes.md`
   - 依赖：—；被引用：—
 - [## 关于“四种基本力统一”](../../../docs/physics_boundary.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -2493,14 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-CD58E122AAA2AC87 / ### Function OS Node Statuses / IMPLICIT-CD58E122AAA2AC87
   - 来源：`reports/external-research/121Q3-night-final-report.md`
-  - 依赖：—；被引用：—
-- [### Function OS: NOT FROZEN](../../../reports/external-research/121Q3-night-final-report.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-DB8343FB5279B3CE / ### Function OS: NOT FROZEN / IMPLICIT-DB8343FB5279B3CE
-  - 来源：`reports/external-research/121Q3-night-final-report.md`
-  - 依赖：—；被引用：—
-- [### function_dependency](../../../outputs/collisions/20260708-teacher-competition/collision-report.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-2D1690A54E16E990 / ### function_dependency / IMPLICIT-2D1690A54E16E990 / IMPLICIT-FFF1DCEF8CC17C17
-  - 来源：`outputs/collisions/20260708-teacher-competition/collision-report.md`
   - 依赖：—；被引用：—
