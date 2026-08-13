@@ -41,10 +41,11 @@ navigation. The stale human-front-door assertion was updated from the retired
 - Nonfunction closure: `54/54`, `NONFUNCTION_CLAIM_EVIDENCE_LINEAGE_CLOSURE_VALID`.
 - Knowledge-experience generator `--check`: pass.
 - Knowledge-experience two-pass determinism: pass; outputs byte-identical.
-- Repository path accounting: the baseline `3588` manifest versus `3610`
-  tracked paths is closed by the canonical manifest generator; the candidate
-  manifest now exactly matches the live tracked inventory, with 9/9 checks
-  passing.
+- Repository path accounting: the initial `3588` manifest versus `3610`
+  tracked paths discrepancy is closed by the canonical manifest generator.
+  The maintenance candidate itself adds the report and one generated index;
+  at the exact candidate tip the manifest matches the live tracked inventory
+  at `3612/3612`, with 9/9 checks passing.
 - System-map generator: `SYSTEM_MAP_DERIVED_OK nodes=51 edges=57`.
 - Human front-door unittest: `8/8` pass.
 - Legacy migration `--check`: `MIGRATION_CHECK_OK`.

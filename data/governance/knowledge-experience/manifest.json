@@ -93,7 +93,7 @@
     "data/governance/knowledge-experience/changes.jsonl": "d3da0bd9eac09eb73cdff7a611743abe292e3fbb980277edd11e2ae246eca1f3",
     "data/governance/knowledge-experience/coverage.json": "68dc87566b85d6d333a37c3e5013bee31a97941509f162e560209310121ff21c",
     "data/governance/knowledge-experience/layered-reading.jsonl": "fd02d0a619fdcb5952df3a14bb3bd94b2b38ef90b9758e70d26b2fec4cf805ca",
-    "data/governance/knowledge-experience/search-index.jsonl": "abffa5ccffa54f13de5d16f181b76af7b4a120a628def703157d126c2b96dc43"
+    "data/governance/knowledge-experience/search-index.jsonl": "c9d8d2091991bd5ee600533ec655266d7e34c05e1b57fc43742e9ed0cb40fe80"
   },
   "machine_human_pairs": [
     {
@@ -125,7 +125,7 @@
   "snapshot_date": "2026-07-30",
   "source_inputs": {
     "data/foundation/function-assets/identity-cards.jsonl": "b8ec2caa51635edf6829a0cfd9a2f9bbcc2df277c75d18f010cdd622c78c2a25",
-    "data/foundation/nonfunction-claims/claim-registry.jsonl": "1079994f6d0ad4b41d70c214edf41bbd1ef650d9caeb58a07283ca34e87853ed",
+    "data/foundation/nonfunction-claims/claim-registry.jsonl": "39a98e189392ceac869f8df003ae83dc3ef8cff08d61bcf367133afd3c2f24c0",
     "data/governance/human-results/result-ledger.jsonl": "d60443dad01a5545c0cdd6f6706c0b775b91b9929314e73a5393a6a1263e43eb",
     "data/governance/knowledge-experience/config.json": "ec9601203f57e28a5e23c649f93848029b21bd79f041576acd6f7d19307d11da",
     "data/governance/knowledge-experience/source-first-seen.json": "896d56ef5da296c83f77c471c4e9b50b9d7e54df2243cb6b23c06b786b45bd26"
