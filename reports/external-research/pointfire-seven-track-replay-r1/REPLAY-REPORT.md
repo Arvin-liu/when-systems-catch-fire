@@ -34,7 +34,7 @@ Seven substantive source families and two contextual or methodological records w
 - one official urban-climate contextual record;
 - one official causal-inference methodological record.
 
-Retrieval was mixed: four peer-reviewed HTML or repository records were directly readable, four publisher or official records yielded an abstract or authoritative landing-page record with access limits noted, and the official WMO PDF was retrieved but its text extraction was limited in this run. A blocked publisher page was never treated as if full text had been inspected.
+Retrieval was mixed: five peer-reviewed or official HTML/repository records were directly readable, three publisher or authoritative landing-page records yielded an abstract or landing-page record with access limits noted, and the official WMO PDF was retrieved but its text extraction was limited in this run. A blocked publisher page was never treated as if full text had been inspected.
 
 ### Main findings
 
