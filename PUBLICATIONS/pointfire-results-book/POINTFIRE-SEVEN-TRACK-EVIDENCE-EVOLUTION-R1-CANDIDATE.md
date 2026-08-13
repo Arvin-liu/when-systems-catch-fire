@@ -7,6 +7,12 @@ This page is a public-safe candidate on
 formal main `e5c6d1d0b75dae41b414474bc22747816cd00c78`. It is not an edit to
 the canonical Results Book, not a release, and not an Owner acceptance.
 
+The STEP00 program ledger is a historical starting snapshot: its
+`PENDING_START` track states describe the program before execution. The
+current dispositions below come from the later step receipts and final
+review packet; they do not rewrite that starting snapshot or imply
+`EPISTEMICALLY_ACCEPTED`.
+
 ## What this run actually established
 
 This program completed seven bounded tracks across one controlled program. The
@@ -37,12 +43,12 @@ Source attribution is retained in the replay ledger, including [Schwaab et al.](
 [Ettinger et al.](https://www.nature.com/articles/s41598-024-51921-y),
 [Ralls et al.](https://pdxscholar.library.pdx.edu/geog_fac/302/),
 [Ziter et al.](https://pmc.ncbi.nlm.nih.gov/articles/PMC6462107/),
-[Wujeska-Klause and Pfautsch](https://www.mdpi.com/1999-4907/11/9/945),
+[Wujeska-Klause and Pfautsch](https://doi.org/10.3390/f11090945),
 [Meili et al.](https://doi.org/10.1016/j.ufug.2020.126970), and the [US Forest Service record](https://research.fs.usda.gov/treesearch/62536).
 WMO and CDC records remain contextual/method records, not additional
 substantive source families.
 
-Evidence receipt: [sealed replay receipt](https://github.com/Arvin-liu/1111/blob/records/pointfire-seven-track-evidence-evolution-r1-20260813/STEP02/REPLAY-RECEIPT.md).
+Evidence receipt: [sealed replay report](https://github.com/Arvin-liu/when-systems-catch-fire/blob/af7569b696f8463c4649224acc91799f8daf070a/reports/external-research/pointfire-seven-track-replay-r1/REPLAY-REPORT.md).
 
 ### 2. What the Pointfire governance added in this replay
 
@@ -54,7 +60,7 @@ ceiling, and a conditional conclusion. The measured architecture status is
 therefore `MIXED_VALUE_WITH_COST_OR_UNDERDETERMINED`: a process and boundary
 increment within this replay, not universal external validity.
 
-Comparison receipt: [baseline versus governed comparison](https://github.com/Arvin-liu/1111/blob/records/pointfire-seven-track-evidence-evolution-r1-20260813/STEP03/ARCHITECTURE-VALUE-COMPARISON.md).
+Comparison receipt: [baseline versus governed comparison](https://github.com/Arvin-liu/when-systems-catch-fire/blob/af7569b696f8463c4649224acc91799f8daf070a/data/external-research/pointfire-seven-track-replay-r1/process-comparison.json).
 
 ### 3. Foundation high-impact frontier
 
@@ -75,7 +81,9 @@ No high-impact function asset was promoted by centrality. Historical labels
 such as `EXTERNAL` or `CONVERGED` were retained as historical labels, not
 upgraded into truth.
 
-Evidence receipt: [frontier freeze](https://github.com/Arvin-liu/1111/blob/records/pointfire-seven-track-evidence-evolution-r1-20260813/STEP04/FOUNDATION-FRONTIER-FREEZE.md) and [64-asset adjudication](https://github.com/Arvin-liu/1111/blob/records/pointfire-seven-track-evidence-evolution-r1-20260813/STEP05/FOUNDATION-64-ADJUDICATION.md).
+The row-level frontier and adjudication receipts remain in the private
+records channel; this public candidate carries the aggregate table and does
+not link the command-bus records.
 
 ### 4. GetNote synthesis-unit source-family verification
 
@@ -86,36 +94,44 @@ source-family maps are not independent proof of the private notes; private
 GetNote bodies, hashes, and local paths remain withheld. No unit is
 `EPISTEMICALLY_ACCEPTED`.
 
-Evidence receipts: [unit freeze](https://github.com/Arvin-liu/1111/blob/records/pointfire-seven-track-evidence-evolution-r1-20260813/STEP06/GETNOTE-UNIT-FREEZE.md) and [external source verification](https://github.com/Arvin-liu/1111/blob/records/pointfire-seven-track-evidence-evolution-r1-20260813/STEP07/GETNOTE-SOURCE-VERIFICATION.md).
+The unit-level freeze and verification receipts remain withheld from this
+public page; only the safe aggregate and public-source boundary are shown.
 
 ### 5. Capability calibration
 
-MCF, PSD, ARN, and Function OS were each compared with a simpler baseline on
-the declared candidate scope. The replay observed
+MCF (Multiscale Causal Fabric), PSD (Probabilistic System Dynamics), ARN
+(Adaptive Relational Network), and the bounded candidate Function OS were
+each compared with a simpler baseline on the declared candidate scope. The
+replay observed
 `OBSERVED_INCREMENTAL_VALUE_WITHIN_REPLAY` for each: richer representations
 exposed bounded structure or failure distinctions beyond the simple baseline.
 This is repository/candidate-scope evidence only. It does not establish a
 production runtime, external validity, causal identification, or universal
 utility; cost was not measured.
 
-Evidence: [STEP08–09 calibration branch](https://github.com/Arvin-liu/when-systems-catch-fire/tree/research/architecture-capability-calibration-r1-20260813/reports/architecture-calibration).
+Evidence: [STEP08–09 calibration candidate](https://github.com/Arvin-liu/when-systems-catch-fire/tree/97acecfb52b054dce44e86c574d7a836931cbdcf/reports/architecture-calibration).
 
 ### 6. Task115 / Research Executive OS / agent-agnostic runtime
 
-The old Task115 lineage and old PR #194/#195 implementations are
-`RETIRE_HISTORICAL_DRAFT`: no old code is salvaged, merged, or cherry-picked.
-ROLE-T found that a future Research Executive OS or executor-neutral adapter
-would require a new minimal rebuild from current main only if a later bounded
-task demonstrates need. This replay did not need those capabilities.
+The Task115 lineage is `RETIRE`: no old code is salvaged, merged, or
+cherry-picked. PR #194 and PR #195 remain open historical Drafts with
+disposition `RETIRE_HISTORICAL_DRAFT`; that label does not close either PR or
+delete either branch. The future Research Executive OS capability and the
+executor-neutral runtime capability are each `REBUILD_IF_FUTURE_NEED`: only a
+later bounded task demonstrating need could justify a minimal rebuild from
+current main. ROLE-T independently agreed with these separate dispositions.
+This replay did not need either capability.
 
-Evidence: [Task115 decision](https://github.com/Arvin-liu/1111/blob/records/pointfire-seven-track-evidence-evolution-r1-20260813/STEP10/TASK115-DECISION.md).
+The row-level Task115 decision and machine status check remain in the private
+records channel; this page keeps the implementation, future-capability, and
+PR-closure states distinct.
 
 ### 7. Cognitive-migration editorial revision
 
 PR #189 was not imported. A fresh candidate was rebuilt from current main as a
 separate optional post-generation editorial pass, with two recoverable text
 types, exact source blobs, claim-ceiling protection, and explicit non-overlap
-with research/runtime governance. Fresh ROLE-L review returned
+with research/runtime governance. Fresh ROLE-L3 review returned
 `PASS_WITH_EXPLICIT_RESIDUALS` after EOF mechanical cleanup.
 
 The candidate does not measure reader cognition, establish literary quality,
@@ -123,7 +139,7 @@ clone an author or brand, publish private GetNote material, or alter current
 method `0.5.0`. Copyright, naming, and any third-party authorization remain
 Owner decisions.
 
-Evidence: [current-main candidate branch](https://github.com/Arvin-liu/when-systems-catch-fire/tree/research/writing-editorial-rebuild-r1-20260813) and [writing decision packet](https://github.com/Arvin-liu/when-systems-catch-fire/blob/research/writing-editorial-rebuild-r1-20260813/reports/publication/zhiyuan-writing-cognitive-migration-editorial-revision-review.md).
+Evidence: [current-main candidate](https://github.com/Arvin-liu/when-systems-catch-fire/tree/d434b32ff8516066cc2990e5804f8e12d414a82c) and [writing decision packet](https://github.com/Arvin-liu/when-systems-catch-fire/blob/d434b32ff8516066cc2990e5804f8e12d414a82c/reports/publication/zhiyuan-writing-cognitive-migration-editorial-revision-review.md).
 
 ## Repository hygiene and current engineering debt
 
@@ -141,7 +157,9 @@ tracked-path accounting (`3588` listed vs `3610` tracked), a stale system-map
 test expectation (`50` vs live `51` nodes), and optional proof-test environment
 limits remain explicit residuals.
 
-Evidence: [PR disposition inventory](https://github.com/Arvin-liu/1111/blob/records/pointfire-seven-track-evidence-evolution-r1-20260813/STEP12/OPEN-PR-DISPOSITION.md) and [maintenance candidate debt report](https://github.com/Arvin-liu/when-systems-catch-fire/blob/repair/current-main-validation-r1-20260813/reports/validation/STEP14-CURRENT-MAIN-DEBT-AND-REPAIR.md).
+The row-level PR disposition remains in the private records channel; this
+page reports the public before/after count and strict closure rule. The
+maintenance result is available in the [immutable maintenance candidate](https://github.com/Arvin-liu/when-systems-catch-fire/tree/fb56cc9c4a4c38508f60f6412e48c7485ee6cb8c), whose [debt report](https://github.com/Arvin-liu/when-systems-catch-fire/blob/fb56cc9c4a4c38508f60f6412e48c7485ee6cb8c/reports/validation/STEP14-CURRENT-MAIN-DEBT-AND-REPAIR.md) contains no private provenance.
 
 ## Candidate disposition
 
