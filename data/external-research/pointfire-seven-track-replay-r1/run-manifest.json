@@ -1,0 +1,53 @@
+{
+  "program": "pointfire-seven-track-evidence-evolution-r1",
+  "track": "external-cross-domain-replay",
+  "step": "STEP02",
+  "status": "ROLE-B_INITIAL_PENDING_ADVERSARIAL_REVIEW",
+  "question": "在城市尺度，增加树冠覆盖是否能稳定降低夏季近地面热暴露？在什么条件下这一关系不能被解释为因果？",
+  "formal_base": {
+    "repository": "when-systems-catch-fire",
+    "branch": "main",
+    "tip": "e5c6d1d0b75dae41b414474bc22747816cd00c78"
+  },
+  "control_receipts": {
+    "control_branch": "relay/parallel/codex-pointfire-seven-track-evidence-evolution-program-r1-20260813",
+    "control_tip": "338f884a9a9f97cd8c17b8b9fbd9da978e1ec4f9",
+    "preregistration_commit": "7b3179fea869e613654ee579ed4b201e5e5b1022",
+    "baseline_sha256": "b56be7ff2c8b022ed3ade68b7d8bd572ce5f5dbc85e55a1b83a4ff0e0b650bf6"
+  },
+  "source_family_policy": {
+    "definition": "An original study, cohort, experiment, or independent official dataset; duplicate papers or pages for the same underlying study count once.",
+    "minimum_overall": 5,
+    "minimum_air_or_human_heat": 2,
+    "minimum_lst": 1,
+    "minimum_null_negative_boundary": 1,
+    "observed_source_families": 9
+  },
+  "measurement_policy": {
+    "endpoints_kept_separate": [
+      "land_surface_temperature",
+      "near_surface_air_temperature",
+      "human_heat_exposure"
+    ],
+    "endpoint_pooling": "DISALLOWED",
+    "causal_ceiling": "SOURCE_SCOPED_CONDITIONAL_SUPPORT_ONLY"
+  },
+  "outcomes": [
+    "SUPPORTED_WITHIN_SOURCE_SCOPE",
+    "PARTIALLY_SUPPORTED",
+    "DISPUTED",
+    "CONTRADICTED",
+    "NOT_IDENTIFIABLE",
+    "BLOCKED_WITH_EVIDENCE"
+  ],
+  "retrieval_summary": {
+    "directly_readable_peer_review_or_repository_records": 4,
+    "abstract_or_authoritative_landing_page_records_with_limits": 4,
+    "official_pdf_text_extraction_limited": 1,
+    "retrieval_limit_policy": "LIMITS_RECORDED_AND_NOT_SILENTLY_UPGRADED"
+  },
+  "claims_file": "claim-ledger.jsonl",
+  "sources_file": "source-ledger.jsonl",
+  "global_validity_claim": false,
+  "epistemically_accepted": false
+}
