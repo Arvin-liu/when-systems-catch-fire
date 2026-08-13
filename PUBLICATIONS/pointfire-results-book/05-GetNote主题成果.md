@@ -208,8 +208,8 @@ AI 主题的生成速度与研究主题的可识别性相遇：当生成数量�
 
 ## 派生来源
 
-- [公开主题矩阵与指标](GETNOTE-PUBLIC-METRICS.md) 保存主题计数、全局 ceiling、状态和升级/降级条件，不保存长 raw claim text。
-- [公开 GetNote metrics](GETNOTE-PUBLIC-METRICS.md) 保存 1329/1328/931/307/3/88 总账与六步管线。
+- 本篇保存主题层的当前最佳命题、状态、主题计数以及升级/降级条件，不保存长 raw claim text；这些内容不应被误归因给聚合指标页。
+- [公开 GetNote metrics](GETNOTE-PUBLIC-METRICS.md) 只保存 1329/1328/931/307/3/88 总账和证据边界说明；它不替代本篇的主题矩阵，也不声称保存六步管线。
 - R1 `FINAL-CLAIMS` projection 只作为历史 provenance 线索保留；本篇不复制私人笔记正文，也不把私有历史路径当作出版分支必须存在的依赖。
 
 本篇的状态是 `CURRENT_BEST_SOURCE_BOUND_SYNTHESIS`。它可以被未来证据升级、降级、修订、拆分、合并或撤回。
