@@ -179,6 +179,11 @@
   - 可搜索名称：NFC-c7045030fb2d09cd / `0.3.0` 修复 0.2.0 仍把方法写成 L6 外接出版工具的问题：之元写作法与点火是维护者声明的同源认知运动在不同约束下形成的候选投影。之元写作法操作上仍位于 L6，却同时承担公共表达和反馈返回接口。review `47138331
   - 来源：`docs/publication/zhiyuan-writing-method.md`
   - 依赖：—；被引用：—
+- [`ABSTAIN` belongs to reviewer authority. It is separate from the 1241 terminal decisions and records that a scoped revie](../../../docs/architecture/getnote-1329-epistemic-governance-pressure-test.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-bd0d2a2c6e9a3453 / `ABSTAIN` belongs to reviewer authority. It is separate from the 1241 terminal decisions and records that a scoped revie
+  - 来源：`docs/architecture/getnote-1329-epistemic-governance-pressure-test.md`
+  - 依赖：—；被引用：—
 - [`agent_claims_published_to_main` 永远必须为 false。Agent 提交请求不等于发布；只有独立轻量同步任务核验远端真值、公开边界和生成结果后，才能提出把快照记录合并进 Main。](../../../docs/operations/stage-snapshot-publication.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-532a35848e59dc23 / `agent_claims_published_to_main` 永远必须为 false。Agent 提交请求不等于发布；只有独立轻量同步任务核验远端真值、公开边界和生成结果后，才能提出把快照记录合并进 Main。
@@ -328,6 +333,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-5577870fd7e0fe28 / candidate_zhiyuan_writing_method_0_3_0_whole_project_expression_feedback_projection_implemented / repository_synchroniza
   - 来源：`reports/operations/121Q28S-completion-seal.json`
+  - 依赖：—；被引用：—
+- [Charter/human authority：允许、拒绝、停止或回滚行动；不裁定事实；](../../../docs/architecture/epistemic-governance-kernel-and-federated-planes.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-2a29ad9ebffd066a / Charter/human authority：允许、拒绝、停止或回滚行动；不裁定事实；
+  - 来源：`docs/architecture/epistemic-governance-kernel-and-federated-planes.md`
   - 依赖：—；被引用：—
 - [Claim ceiling: `candidate_zhiyuan_writing_method_0_3_0_whole_project_expression_feedback_projection_implemented / reposi](../../../reports/operations/121Q28S-zhiyuan-writing-method-whole-project-integration-audit.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
@@ -509,6 +519,16 @@
   - 可搜索名称：IMPLICIT-E2BDB171D36A80F1 / def technical_agent_as_final() -> None: / IMPLICIT-E2BDB171D36A80F1
   - 来源：`tools/operations/run_stage_snapshot_responsibility_cases.py`
   - 依赖：—；被引用：—
+- [def test_authority_domain_path_drift(self): self.bad(lambda d:d\["authorities"\]\[0\].update({"decision_domain":"unbounded_t](../../../tests/test_epistemic_governance_relationships.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-98207988806c78ba / def test_authority_domain_path_drift(self): self.bad(lambda d:d\["authorities"\]\[0\].update({"decision_domain":"unbounded_t
+  - 来源：`tests/test_epistemic_governance_relationships.py`
+  - 依赖：—；被引用：—
+- [def test_authority_domain_path_drift(self): self.bad(lambda d:d\["authorities"\]\[0\].update({"decision_domain":"unbounded_truth","canonical_paths":\["README.md"\]}),"authority tuple")](../../../tests/test_epistemic_governance_relationships.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-9613EAA0B2C5A1BD / def test_authority_domain_path_drift(self): self.bad(lambda d:d\["authorities"\]\[0\].update({"decision_domain":"unbounded_truth","canonical_paths":\["README.md"\]}),"authority tuple") / IMPLICIT-9613EAA0B2C5A1BD
+  - 来源：`tests/test_epistemic_governance_relationships.py`
+  - 依赖：—；被引用：—
 - [def test_change_decision_must_be_declared_changed(self):](../../../tests/test_iteration_sync.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-F63834CC502BD599 / def test_change_decision_must_be_declared_changed(self): / IMPLICIT-F63834CC502BD599
@@ -538,6 +558,11 @@
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-4BD77D9E7B37EA95 / def test_feedback_suggests(self): / IMPLICIT-4BD77D9E7B37EA95
   - 来源：`function-os-candidate/v0.2/tests/test_n5_through_n9.py`
+  - 依赖：—；被引用：—
+- [def test_feedback_to_l0_required(self): self.bad(lambda d:d.update({"relationships":\[r for r in d\["relationships"\] if r\["type"\]!="operations.feedback_to_l0"\]}),"schema")](../../../tests/test_epistemic_governance_relationships.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-FFECEE9A3114C367 / def test_feedback_to_l0_required(self): self.bad(lambda d:d.update({"relationships":\[r for r in d\["relationships"\] if r\["type"\]!="operations.feedback_to_l0"\]}),"schema") / IMPLICIT-FFECEE9A3114C367
+  - 来源：`tests/test_epistemic_governance_relationships.py`
   - 依赖：—；被引用：—
 - [def test_gate_gatemap_decisions_in_schema_enum(self):](../../../tests/test_source_rights_gate_enum_consistency.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
@@ -578,6 +603,11 @@
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-4CEB89EC716114F3 / def test_q32_sync_and_component_surface_decisions_cannot_diverge(self): / IMPLICIT-4CEB89EC716114F3
   - 来源：`tests/test_iteration_sync.py`
+  - 依赖：—；被引用：—
+- [def test_suspension_question_cannot_drift(self): self.bad(lambda d:next(s for s in d\["suspension_contracts"\] if s\["name"\]=="ABSTAIN").update({"decision_question":"WAS_TARGET_LABEL_ASSIGNED"}),"canonical contract")](../../../tests/test_epistemic_governance_relationships.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-9DFE447837DDFAF0 / def test_suspension_question_cannot_drift(self): self.bad(lambda d:next(s for s in d\["suspension_contracts"\] if s\["name"\]=="ABSTAIN").update({"decision_question":"WAS_TARGET_LABEL_ASSIGNED"}),"canonical contract") / IMPLICIT-9DFE447837DDFAF0
+  - 来源：`tests/test_epistemic_governance_relationships.py`
   - 依赖：—；被引用：—
 - [def test_valid_decision_is_recorded(self):](../../../tests/test_publication_gate_fail_closed.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
@@ -1244,16 +1274,6 @@
   - 可搜索名称：CLAIM-D244 / Within the source-defined scope, 自主意识涌现的临界条件 is adjudicated as PREDICATE: 从D242-D243推导自主意识涌现的临界条件： Ψ = ι × P_exit > 0（\[D
   - 来源：`data/foundation/adjudications/core-kernel.jsonl`
   - 依赖：D239, D242, D243；被引用：—
-- [{"category": "AUTHORITATIVE_CLAIM_INPUT", "matched_rule": "AUTHORITATIVE_CLAIM_INPUT", "path": "统一案例总表/0474-C-476-Ψ=ι×P_exit — 智能度×退出概率=自主意识,乘法归零律适用.md"}](../../../data/foundation/repository-path-classification/classification-manifest.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-712AA2BDAAAA90C2 / {"category": "AUTHORITATIVE_CLAIM_INPUT", "matched_rule": "AUTHORITATIVE_CLAIM_INPUT", "path": "统一案例总表/0474-C-476-Ψ=ι×P_exit — 智能度×退出概率=自主意识,乘法归零律适用.md"} / IMPLICIT-712AA2BDAAAA90C2
-  - 来源：`data/foundation/repository-path-classification/classification-manifest.jsonl`
-  - 依赖：—；被引用：—
-- [{"category": "AUTHORITATIVE_CLAIM_INPUT", "matched_rule": "AUTHORITATIVE_CLAIM_INPUT", "path": "统一案例总表/0475-C-477-无智能无意识 — ι=0⟹Ψ=0,纯1.md"}](../../../data/foundation/repository-path-classification/classification-manifest.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-D99A676792DA4713 / {"category": "AUTHORITATIVE_CLAIM_INPUT", "matched_rule": "AUTHORITATIVE_CLAIM_INPUT", "path": "统一案例总表/0475-C-477-无智能无意识 — ι=0⟹Ψ=0,纯1.md"} / IMPLICIT-D99A676792DA4713
-  - 来源：`data/foundation/repository-path-classification/classification-manifest.jsonl`
-  - 依赖：—；被引用：—
 - [{"id": "SAMPLE-001", "title": "Sample Predicate", "object_type": "PREDICATE", "domain": "AgentState", "codomain": "{0,1}", "variables": \[{"name": "x", "type": "AgentState", "unit": "dimensionless"}\], "units": "dimensionless", "assumptions":](../../../tests/fixtures/math-foundation-valid-sample.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-F14CED02D3D3E210 / {"id": "SAMPLE-001", "title": "Sample Predicate", "object_type": "PREDICATE", "domain": "AgentState", "codomain": "{0,1}", "variables": \[{"name": "x", "type": "AgentState", "unit": "dimensionless"}\], "units": "dimensionless", "assumptions": / IMPLICIT-F14CED02D3D3E210
@@ -1428,6 +1448,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-1c9b53a057a4137f / \| 未修改案例表 \| ✅ 统一案例总表/ 无改动 \|
   - 来源：`outputs/audit/agent-collision-phase-closeout-20260708.md`
+  - 依赖：—；被引用：—
+- [\| 来源 \| source、fragment、observation、feedback \| Foundation sources/evidence、语料 intake \| 绑定 provenance、privacy、source-famil](../../../docs/architecture/epistemic-governance-kernel-and-federated-planes.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-a0715999d6e24eed / \| 来源 \| source、fragment、observation、feedback \| Foundation sources/evidence、语料 intake \| 绑定 provenance、privacy、source-famil
+  - 来源：`docs/architecture/epistemic-governance-kernel-and-federated-planes.md`
   - 依赖：—；被引用：—
 - [\| 社会科学 \| 集体行动如何可能 \| C、M、I_iso、退出权、P_meta \| 中 \| 低 \| 中 \| L2 + pending \| 结构增益 + pending \| 是 \|](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`

@@ -464,11 +464,6 @@
   - 可搜索名称：NFC-01310cdbd47cbf9b / \[历史撤回断言\]“已经证明物理大一统不可能”；
   - 来源：`outputs/getbrain/project-position-update-20260706.md`
   - 依赖：—；被引用：—
-- [\[物理资产纠偏与复算边界\](../../../docs/foundation/physics-asset-correction-20260729.md)](../../../README.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-b583ad2c2f88c7ed / \[物理资产纠偏与复算边界\](../../../docs/foundation/physics-asset-correction-20260729.md)
-  - 来源：`README.md`
-  - 依赖：—；被引用：—
 - [\[首批物理资产纠偏\](../../../docs/foundation/physics-asset-correction-20260729.md)：重算门控乘积、四力统一和大一统不可能性推断的定义、量纲、奇点、桥接义务与反例；结论是现有模型未统一四力，](../../../RESULTS/RESEARCH-AND-ARTICLES.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-f08a82ac32193994 / \[首批物理资产纠偏\](../../../docs/foundation/physics-asset-correction-20260729.md)：重算门控乘积、四力统一和大一统不可能性推断的定义、量纲、奇点、桥接义务与反例；结论是现有模型未统一四力，
@@ -1061,11 +1056,6 @@
   - 可搜索名称：NFC-f45d0667886ae342 / z3.Implies(no_constraints, no_physics),
   - 来源：`tools/foundation/verify_core_claims.py`
   - 依赖：—；被引用：—
-- [{"category": "AUTHORITATIVE_CLAIM_INPUT", "matched_rule": "AUTHORITATIVE_CLAIM_INPUT", "path": "统一案例总表/0533-C-538-引力时间减慢 — -Φ(r)=GM.md"}](../../../data/foundation/repository-path-classification/classification-manifest.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-5EA8573576692FB5 / {"category": "AUTHORITATIVE_CLAIM_INPUT", "matched_rule": "AUTHORITATIVE_CLAIM_INPUT", "path": "统一案例总表/0533-C-538-引力时间减慢 — -Φ(r)=GM.md"} / IMPLICIT-5EA8573576692FB5
-  - 来源：`data/foundation/repository-path-classification/classification-manifest.jsonl`
-  - 依赖：—；被引用：—
 - [{"id":"C0538","registry_ref":"evidence:C0538","source":"统一案例总表/0533-C-538-引力时间减慢 — -Φ(r)=GM.md","title":"538-引力时间减慢 — -Φ(r)=GM"}](../../../views/legacy-cases.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-2BE62A6880AF6D00 / {"id":"C0538","registry_ref":"evidence:C0538","source":"统一案例总表/0533-C-538-引力时间减慢 — -Φ(r)=GM.md","title":"538-引力时间减慢 — -Φ(r)=GM"} / IMPLICIT-2BE62A6880AF6D00
@@ -1538,11 +1528,6 @@
   - 可搜索名称：NFC-0665798ec679413e / 哪些证据支持；
   - 来源：`docs/physics_boundary.md`
   - 依赖：—；被引用：—
-- [四力统一、量子引力、暗物质、暗能量、宇宙常数与测量问题等物理问题，点火模型目前只能提供哪些有界投影，哪些桥接义务尚未满足？](../../ASSET-CARDS.md#asset-nfc-fcd82f719963c928)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-fcd82f719963c928 / 四力统一、量子引力、暗物质、暗能量、宇宙常数与测量问题等物理问题，点火模型目前只能提供哪些有界投影，哪些桥接义务尚未满足？ / - 四力统一、量子引力、暗物质、暗能量、宇宙常数与测量问题等物理问题，点火模型目前只能提供哪些有界投影，哪些桥接义务尚未满足？
-  - 来源：`README.md`
-  - 依赖：—；被引用：—
 - [四力统一、量子引力、暗物质、暗能量、宇宙常数和测量问题没有被本项目解决。](../../../docs/project-current-state.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-69f3c2fe5c51c1af / 四力统一、量子引力、暗物质、暗能量、宇宙常数和测量问题没有被本项目解决。
@@ -1683,11 +1668,6 @@
   - 可搜索名称：NFC-82ebe95def5bfab1 / 当前物理边界不变：点火现有门控乘积模型没有统一四种基本相互作用；物理统一问题保持开放。当前模型失败既不证明普遍不可能，也不证明其他路线成功。 / 当前物理边界不变：点火现有门控乘积模型没有统一四种基本相互作用；物理统一问题保持开放。当前模型失败既不证明普遍不可能，也不证明其他路线成功。
   - 来源：`docs/foundation/public-claim-ceiling-guidance.md`
   - 依赖：—；被引用：—
-- [当前门控乘积模型没有完成四种基本相互作用统一；四力统一、量子引力和物理学大一统仍是开放研究问题。点火未证明“大一统普遍不可能”。](../../ASSET-CARDS.md#asset-nfc-51f85a6892787610)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-51f85a6892787610 / 当前门控乘积模型没有完成四种基本相互作用统一；四力统一、量子引力和物理学大一统仍是开放研究问题。点火未证明“大一统普遍不可能”。 / - 当前门控乘积模型没有完成四种基本相互作用统一；四力统一、量子引力和物理学大一统仍是开放研究问题。点火未证明“大一统普遍不可能”。
-  - 来源：`README.md`
-  - 依赖：—；被引用：—
 - [当前门控乘积模型没有统一四种基本相互作用；物理统一问题保持开放。](../../../docs/project-current-state.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
   - 可搜索名称：NFC-0ccc961fd77152ee / 当前门控乘积模型没有统一四种基本相互作用；物理统一问题保持开放。
@@ -1732,11 +1712,6 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-6ca935ca1a4f2a8e / 撤回、降级或隔离的结论，即使换标题、换编号、改成“结构性定理”或藏入摘要，也继续受原 supersession lineage 与 claim ceiling 约束。CI 检查大一统不可能性、单模型失败推出普遍不可能、类比冒充同构、量词膨胀 / 撤回、降级或隔离的结论，即使换标题、换编号、改成“结构性定理”或藏入摘要，也继续受原 supersession lineage 与 claim ceiling 约束。CI 检查大一统不可能性、单模型失败推出普遍不可能、类比冒充同构、量词膨胀和内部测试真值升级等模式。
   - 来源：`RESULTS/CORRECTIONS.md`
-  - 依赖：—；被引用：—
-- [撤回把单一门控乘积模型失败推广成“所有大一统理论不可能”的越界结论。](../../ASSET-CARDS.md#asset-nfc-9d5698768267468e)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-9d5698768267468e / 撤回把单一门控乘积模型失败推广成“所有大一统理论不可能”的越界结论。 / - 撤回把单一门控乘积模型失败推广成“所有大一统理论不可能”的越界结论。
-  - 来源：`README.md`
   - 依赖：—；被引用：—
 - [新增 `docs/author_motivation_and_boundary_note.md`，澄清点火项目的好奇心驱动动机，并防止被误读为"野心驱动的大一统理论"。](../../../CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
@@ -1827,6 +1802,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
   - 可搜索名称：NFC-87c4d49f5637465e / 正是这些反馈，让点火框架逐渐从个人直觉、长篇对话和内部结构，走向一个更清楚、更谨慎、更可公开阅读的版本。许多重要调整，包括项目定位、断言等级、物理学边界、失败案例库、AI 使用指南和 README 首页重构，都与这些外部反馈有关。
   - 来源：`ACKNOWLEDGEMENTS.md`
+  - 依赖：—；被引用：—
+- [没有证明“大一统普遍不可能”；相关旧表述已撤回或降为开放问题。一次本地](../../ASSET-CARDS.md#asset-nfc-817cb00a7c27fb86)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-817cb00a7c27fb86 / 没有证明“大一统普遍不可能”；相关旧表述已撤回或降为开放问题。一次本地 / 没有证明“大一统普遍不可能”；相关旧表述已撤回或降为开放问题。一次本地
+  - 来源：`README.md`
   - 依赖：—；被引用：—
 - [点火框架不是物理学理论，不替代标准模型、广义相对论、量子场论、粒子物理或宇宙学。](../../../docs/physics_boundary.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`

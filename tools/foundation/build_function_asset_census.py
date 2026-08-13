@@ -40,6 +40,10 @@ EXPRESSION_ASSET = re.compile(
 GENERATED_PREFIXES = (
     "data/foundation/function-assets/",
     "data/foundation/nonfunction-claims/",
+    # Repository path accounting is a governed projection.  It must remain
+    # visible to the path-accounting validator but cannot feed its serialized
+    # rows back into function discovery.
+    "data/foundation/repository-path-classification/",
     "data/governance/",
     "KNOWLEDGE/",
     # Maintained human-reading publications are reference surfaces, not

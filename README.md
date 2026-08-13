@@ -6,6 +6,61 @@
 
 本仓库的结果是当前证据、计算资源、模型和方法条件下的当前最佳版本，不是自动产生外部真理的机器；编号、公式、AI 输出、内部自洽、测试通过或登记闭合都不能单独证明现实。
 
+下面的显式结果目录保持首页校验与人类阅读入口同步；它们是仓库范围的
+导航，不是第二份结果状态源。
+
+## 当前结论
+
+当前上限是 `CURRENT_WITH_OPEN_OBLIGATIONS`。Foundation、Function OS、MCF、
+PSD、ARN、语言—思维逻辑平面和公开写作各自保留范围、证据等级和未决残余。
+没有证明“大一统普遍不可能”；相关旧表述已撤回或降为开放问题。一次本地
+测试、登记闭合或跨域类比不能越过这些边界。
+
+## 已完成的纠正
+
+公开结果已保留撤回、隔离、降级和 `PENDING` 记录；自动提取、公式、AI 输出
+和内部一致性不再被写成外部真理。人类入口、结果层和系统图的职责也已分开。
+
+## 仍然开放的问题
+
+开放问题包括 Foundation 生成物漂移与路径闭包、历史案例的外部核证、模型
+与现实机制的边界、Function OS 的有限适用域，以及公开写作与读者反馈的
+provenance 约束。详见[开放问题](./RESULTS/OPEN-QUESTIONS.md)。
+
+## 研究、复算与文章结果
+
+研究、复算和文章结果分别保留来源、方法、范围和残余；从[当前结果](./RESULTS/LATEST.md)
+和[点火成果册](./PUBLICATIONS/pointfire-results-book/README.md)进入，不把文章
+感染力或复算通过当成科学证明。
+
+## 函数与断言裁决结果
+
+函数与断言的身份、成熟度、证据等级、隔离和撤回状态见
+[Foundation](./FOUNDATION.md)及其[裁决文档](./docs/foundation/README.md)。
+高影响未决资产仍须按各自义务复核，不能因登记数量而自动清空。
+[函数资产闭合摘要](./data/foundation/function-assets/closure-summary.json)与
+[非函数断言闭合摘要](./data/foundation/nonfunction-claims/closure-summary.json)
+是机器记录入口；闭合只表示状态已记录，不表示证明完成。
+
+## 持续自我纠错
+
+自我纠错保留 append-only 历史、来源链、反例和变更影响；纠正改变的是可
+说范围，不会自动把新文字升级成现实真值。
+
+## 系统图
+
+系统图是确定性导航投影，表达仓库依赖和同步义务，不表达现实因果、严格
+同构或理论完备性。详见[完整系统图](./docs/generated/ignition-system-map.svg)。
+
+## 项目内容入口
+
+人类入口是[十分钟阅读路线](./HUMAN-READING.md)，结果入口是[RESULTS](./RESULTS/README.md)，
+知识入口是[KNOWLEDGE](./KNOWLEDGE/README.md)，机器入口是[llms.txt](./llms.txt)。
+能力入口还包括 [MCF](./docs/architecture/multiscale-causal-fabric.md)、
+[PSD](./docs/architecture/probabilistic-system-dynamics.md)、
+[ARN](./docs/architecture/adaptive-relational-network.md) 和
+[点火迭代操作法](./ITERATION.md)。
+
 ## 1. 点火现状
 
 当前公开阶段是：以 Foundation、Function OS 有界基准、MCF、PSD、ARN、语言—思维逻辑平面、Evidence Program、知识体验层和公开写作为构件的持续研究与出版系统。公开结果保留 `CURRENT_WITH_OPEN_OBLIGATIONS`、`PENDING`、`QUARANTINE`、`WITHDRAWN`、`NULL` 和 `PARTIAL` 等状态，不把完成的工程动作写成科学真理。

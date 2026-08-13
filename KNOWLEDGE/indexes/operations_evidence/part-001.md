@@ -1596,18 +1596,18 @@
   - 依赖：—；被引用：—
 - [## 任务 104 与 105（编辑叙事层与 Function OS 有界基准）](../../../RESULTS/LATEST.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-C9296EA8B17C9D9B / ## 任务 104 与 105（编辑叙事层与 Function OS 有界基准） / IMPLICIT-C9296EA8B17C9D9B / IMPLICIT-E81D11993DD77407
+  - 可搜索名称：IMPLICIT-C9296EA8B17C9D9B / ## 任务 104 与 105（编辑叙事层与 Function OS 有界基准） / IMPLICIT-C9296EA8B17C9D9B
   - 来源：`RESULTS/LATEST.md`
-  - 依赖：—；被引用：—
-- [## 任务 104 与 105：编辑叙事层与 Function OS 有界基准](../../../README.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-E81D11993DD77407 / ## 任务 104 与 105：编辑叙事层与 Function OS 有界基准 / IMPLICIT-E81D11993DD77407 / IMPLICIT-C9296EA8B17C9D9B
-  - 来源：`README.md`
   - 依赖：—；被引用：—
 - [## 任务 104—105（编辑叙事层与 Function OS 有界基准）](../../../docs/project-current-state.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-D27D157B295D5B22 / ## 任务 104—105（编辑叙事层与 Function OS 有界基准） / IMPLICIT-D27D157B295D5B22
   - 来源：`docs/project-current-state.md`
+  - 依赖：—；被引用：—
+- [## 共享 kernel invariants](../../../docs/architecture/epistemic-governance-kernel-and-federated-planes.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-70126DDABADF3DCF / ## 共享 kernel invariants / IMPLICIT-70126DDABADF3DCF
+  - 来源：`docs/architecture/epistemic-governance-kernel-and-federated-planes.md`
   - 依赖：—；被引用：—
 - [## 关于“四种基本力统一”](../../../docs/physics_boundary.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
