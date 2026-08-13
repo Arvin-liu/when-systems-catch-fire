@@ -1,6 +1,6 @@
-# Pointfire seven-track external cross-domain replay — initial governed pass
+# Pointfire seven-track external cross-domain replay — repaired governed pass
 
-Status: ROLE-C_REPAIRS_APPLIED_PENDING_FRESH_REREVIEW
+Status: `PASS_WITH_EXPLICIT_RESIDUALS`
 
 This report records the first governed pass of the preregistered external replay. It is a source-scoped research result and not a declaration of universal external validity, causal identification, or epistemic acceptance.
 
@@ -67,7 +67,7 @@ Retrieval was mixed: five peer-reviewed or official HTML/repository records were
 
 The strongest defensible conclusion from this repaired pass is conditional and measurement-specific: in the Tacoma, Portland, and Madison settings, measured canopy-cover exposures were associated with lower local summertime near-surface air temperature under the reported observational designs, while the size and direction depend on endpoint, time, urban form, ventilation, water, and the exact exposure definition. A local temperature-threshold proxy was observed in Tacoma, but direct human heat-stress exposure was not established. This is not evidence that adding or preserving canopy will stably lower summer near-ground heat exposure in every city, nor that the observed associations are causal.
 
-The replay does not establish EPISTEMICALLY_ACCEPTED. ROLE-C identified repairs to source metadata, exposure pooling, outcome typing, source-family roles, and causal audit fields. Those repairs are applied in this candidate commit and require a fresh independent ROLE-C recheck.
+The replay does not establish EPISTEMICALLY_ACCEPTED. ROLE-C identified repairs to source metadata, exposure pooling, outcome typing, source-family roles, and causal audit fields. Those repairs are applied in this candidate branch and were rechecked by a fresh independent ROLE-C at `adef39cbb96b71ea5c420407801d4220a1b66972`, which returned `PASS`. The remaining limits are substantive scope limits, not a claim of universal external validity.
 
 ## Provenance
 
@@ -76,3 +76,5 @@ The replay does not establish EPISTEMICALLY_ACCEPTED. ROLE-C identified repairs 
 - Blinded baseline: 1111 STEP01/BLINDED-BASELINE.md and JSON, independently prepared before the governed pass.
 - Machine-readable ledgers are in the adjacent data directory.
 - This branch is a candidate evidence branch only; it is not formal main and is not a release or acceptance tag.
+- Fresh ROLE-C: agent `019ffa00-faba-7171-bd8f-d79ead7ae8b7`, clean checkout,
+  exact tip `adef39cbb96b71ea5c420407801d4220a1b66972`, verdict `PASS`.

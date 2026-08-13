@@ -1,6 +1,6 @@
 {
   "step": "STEP03",
-  "status": "COMPARISON_REPAIRED_PENDING_FRESH_ROLE_C_REVIEW",
+  "status": "COMPARISON_COMPLETE_WITH_EXPLICIT_RESIDUALS",
   "baseline_artifact": "1111 STEP01/BLINDED-BASELINE.md",
   "governed_artifacts": [
     "reports/external-research/pointfire-seven-track-replay-r1/REPLAY-REPORT.md",

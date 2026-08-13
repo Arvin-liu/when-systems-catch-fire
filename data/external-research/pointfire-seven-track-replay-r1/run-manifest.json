@@ -2,7 +2,7 @@
   "program": "pointfire-seven-track-evidence-evolution-r1",
   "track": "external-cross-domain-replay",
   "step": "STEP02",
-  "status": "ROLE-C_REPAIRS_APPLIED_PENDING_FRESH_REREVIEW",
+  "status": "PASS_WITH_EXPLICIT_RESIDUALS",
   "question": "在城市尺度，增加树冠覆盖是否能稳定降低夏季近地面热暴露？在什么条件下这一关系不能被解释为因果？",
   "formal_base": {
     "repository": "when-systems-catch-fire",
@@ -56,7 +56,14 @@
     "agent_id": "019ff9cd-194c-7171-bf9d-c01ad822b260",
     "initial_review_tip": "552c9d56e55a801aff0b93683b30bbd515d25fb5",
     "verdict": "PASS_WITH_REPAIRS",
-    "fresh_rereview_required": true
+    "fresh_rereview_required": false,
+    "fresh_rereview": {
+      "agent_id": "019ffa00-faba-7171-bd8f-d79ead7ae8b7",
+      "tip": "adef39cbb96b71ea5c420407801d4220a1b66972",
+      "verdict": "PASS",
+      "checkout_clean": true,
+      "all_repaired_fields_rechecked": true
+    }
   },
   "global_validity_claim": false,
   "epistemically_accepted": false
