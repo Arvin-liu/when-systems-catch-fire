@@ -261,6 +261,28 @@ PARTIALEXTERNALEVIDENCELAYERWITHEXPLICITBLOCKERS 边界：This is a conservative
 
 [docs/foundation/migration.md](../docs/foundation/migration.md)
 
+<a id="reading-hr-0a5e4005a933ea19"></a>
+## 认知迁移编辑修订
+
+**状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · **主题：** `COGNITION`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
+
+### 1 分钟
+
+English: Cognitive-Migration Editorial Revision 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+
+### 5 分钟
+
+- 来源要点（导航摘录，不得视为当前断言）：English: Cognitive-Migration Editorial Revision
+- 来源要点（导航摘录，不得视为当前断言）：Module version: 0.1.0
+- 来源要点（导航摘录，不得视为当前断言）：Lifecycle: OPTIONALEXPERIMENTALMODULE
+- 来源要点（导航摘录，不得视为当前断言）：Owner decision: RETAINASOPTIONALEXPERIMENTALMODULE
+- 来源要点（导航摘录，不得视为当前断言）：Current method: 之元写作法 0.5.0 — unchanged.
+- 来源要点（导航摘录，不得视为当前断言）：This module is rebuilt on current formal main e5c6d1d0b75dae41b414474bc22747816cd00c78. It is a separate post-generation editorial module published separately from the current method. It is not a new version of the current method, does not replay or cherry-pick PR #189, and is not integrated into the current method version.
+
+### 完整阅读
+
+[docs/publication/zhiyuan-writing-cognitive-migration-editorial-revision.md](../docs/publication/zhiyuan-writing-cognitive-migration-editorial-revision.md)
+
 <a id="reading-hr-0b2df1f7b457cbe6"></a>
 ## 121Q2 Night Progress Report
 
@@ -1121,6 +1143,28 @@ Classification is conservative. Names containing function do not establish total
 
 [reports/foundation-architecture/object-classification-20260712.md](../reports/foundation-architecture/object-classification-20260712.md)
 
+<a id="reading-hr-2ffed40e044f68aa"></a>
+## STEP08 MCF / PSD / ARN / Function OS baseline-relative calibration
+
+**状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · **主题：** `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`
+
+### 1 分钟
+
+Status: FROZENCALIBRATIONPREREGISTRATION 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+
+### 5 分钟
+
+- 来源要点（导航摘录，不得视为当前断言）：主题：STEP08 MCF / PSD / ARN / Function OS baseline-relative calibration
+- 来源要点（导航摘录，不得视为当前断言）：Status: FROZENCALIBRATIONPREREGISTRATION
+- 来源要点（导航摘录，不得视为当前断言）：This is a capability calibration of four current-main candidate components. It is not a truth test and does not promote any component to production, scientific validity, or external acceptance.
+- 来源要点（导航摘录，不得视为当前断言）：repository: when-systems-catch-fire
+- 来源要点（导航摘录，不得视为当前断言）：formal main base: e5c6d1d0b75dae41b414474bc22747816cd00c78
+- 来源要点（导航摘录，不得视为当前断言）：branch: research/architecture-capability-calibration-r1-20260813
+
+### 完整阅读
+
+[reports/architecture-calibration/STEP08-PREREGISTRATION.md](../reports/architecture-calibration/STEP08-PREREGISTRATION.md)
+
 <a id="reading-hr-3069e59a51d869c3"></a>
 ## 121Q28 肉身锚定的心智层级跃迁写作法审计
 
@@ -1142,6 +1186,28 @@ Status: READYFORGPTVERIFICATIONCANDIDATEONLY 边界：This is a conservative nav
 ### 完整阅读
 
 [reports/operations/121Q28-embodied-cognitive-leap-writing-method-audit.md](../reports/operations/121Q28-embodied-cognitive-leap-writing-method-audit.md)
+
+<a id="reading-hr-3254690d89efc00d"></a>
+## Pointfire seven-track external cross-domain replay — repaired governed pass
+
+**状态：** `HISTORICAL_COMPLETION_RECORD` · **主题：** `OPERATIONS_EVIDENCE`
+
+### 1 分钟
+
+Status: OWNERACCEPTEDBOUNDEDREPLAYRESULTWITHEXPLICITRESIDUALS 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+
+### 5 分钟
+
+- 来源要点（导航摘录，不得视为当前断言）：主题：Pointfire seven-track external cross-domain replay — repaired governed pass
+- 来源要点（导航摘录，不得视为当前断言）：Status: OWNERACCEPTEDBOUNDEDREPLAYRESULTWITHEXPLICITRESIDUALS
+- 来源要点（导航摘录，不得视为当前断言）：This report records the first governed pass of the preregistered external replay. It is a source-scoped research result and not a declaration of universal external validity, causal identification, or epistemic acceptance.
+- 来源要点（导航摘录，不得视为当前断言）：主题：Frozen question and scope
+- 来源要点（导航摘录，不得视为当前断言）：Question: 在城市尺度，增加树冠覆盖是否能稳定降低夏季近地面热暴露？在什么条件下这一关系不能被解释为因果？
+- 来源要点（导航摘录，不得视为当前断言）：The scope is urban or urbanized settings during summer or a comparable warm season. Land-surface temperature, near-surface air temperature, and human heat exposure are kept as separate measurement targets. A source family is an original study, cohort, experiment, or independent official dataset; multiple papers or pages describing the same underlying study d…
+
+### 完整阅读
+
+[reports/external-research/pointfire-seven-track-replay-r1/REPLAY-REPORT.md](../reports/external-research/pointfire-seven-track-replay-r1/REPLAY-REPORT.md)
 
 <a id="reading-hr-32eebb16db448f9c"></a>
 ## D597 量化指标替代真实价值索引可见性验证
@@ -2304,6 +2370,28 @@ Status: complete pending GPT verification. PR remains OPEN / DRAFT / UNMERGED. �
 
 [reports/external-research/121b-handoff-to-121c.md](../reports/external-research/121b-handoff-to-121c.md)
 
+<a id="reading-hr-5d85331f1d96b2aa"></a>
+## Pointfire seven-track current-main maintenance integration R1
+
+**状态：** `HISTORICAL_COMPLETION_RECORD` · **主题：** `OPERATIONS_EVIDENCE`
+
+### 1 分钟
+
+Status: OWNERACCEPTEDLIMITEDMAINTENANCEWITHEXPLICITRESIDUALS 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+
+### 5 分钟
+
+- 来源要点（导航摘录，不得视为当前断言）：主题：Pointfire seven-track current-main maintenance integration R1
+- 来源要点（导航摘录，不得视为当前断言）：Status: OWNERACCEPTEDLIMITEDMAINTENANCEWITHEXPLICITRESIDUALS
+- 来源要点（导航摘录，不得视为当前断言）：Fresh formal main base: e5c6d1d0b75dae41b414474bc22747816cd00c78
+- 来源要点（导航摘录，不得视为当前断言）：Integration branch: publication/pointfire-seven-track-owner-accepted-r1-20260814
+- 来源要点（导航摘录，不得视为当前断言）：This report records the accepted maintenance delta rebuilt on fresh formal main. It does not rerun the seven-track research and does not convert any generated registry into external truth.
+- 来源要点（导航摘录，不得视为当前断言）：主题：Rebuilt source/root-cause changes
+
+### 完整阅读
+
+[reports/validation/pointfire-seven-track-current-main-maintenance-r1-20260813.md](../reports/validation/pointfire-seven-track-current-main-maintenance-r1-20260813.md)
+
 <a id="reading-hr-5de7359175082aca"></a>
 ## 082 Independent Acceptance Audit Report
 
@@ -2884,6 +2972,28 @@ Status: CURRENT (Accepted, non-Activated). Merged to main (merge commit 0e7c032,
 
 [outputs/audit/nc-001-title-barrier-backfill-audit-20260708.md](../outputs/audit/nc-001-title-barrier-backfill-audit-20260708.md)
 
+<a id="reading-hr-728801b4d8a22d85"></a>
+## STEP09 MCF / PSD / ARN / Function OS execution result
+
+**状态：** `HISTORICAL_COMPLETION_RECORD` · **主题：** `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+
+### 1 分钟
+
+Status: OWNERACCEPTEDBOUNDEDCALIBRATIONEVIDENCEWITHEXPLICITRESIDUALS 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+
+### 5 分钟
+
+- 来源要点（导航摘录，不得视为当前断言）：主题：STEP09 MCF / PSD / ARN / Function OS execution result
+- 来源要点（导航摘录，不得视为当前断言）：Status: OWNERACCEPTEDBOUNDEDCALIBRATIONEVIDENCEWITHEXPLICITRESIDUALS
+- 来源要点（导航摘录，不得视为当前断言）：This execution compares each candidate component with the frozen simplest baseline from STEP08. The outcome is bounded repository capability evidence only. It is not a claim of scientific truth, production readiness, safety, or external validity.
+- 来源要点（导航摘录，不得视为当前断言）：主题：Execution receipt
+- 来源要点（导航摘录，不得视为当前断言）：Frozen base and canonical calibration branch:
+- 来源要点（导航摘录，不得视为当前断言）：formal main base: e5c6d1d0b75dae41b414474bc22747816cd00c78
+
+### 完整阅读
+
+[reports/architecture-calibration/STEP09-EXECUTION.md](../reports/architecture-calibration/STEP09-EXECUTION.md)
+
 <a id="reading-hr-72e8a74d5d2cba68"></a>
 ## Logic validation report
 
@@ -2941,6 +3051,28 @@ Prioritize MF predicates, Y1 operational semantics, protocol typing, theorem can
 ### 完整阅读
 
 [docs/foundation/historical-function-census.md](../docs/foundation/historical-function-census.md)
+
+<a id="reading-hr-75430bb574c9c15b"></a>
+## 认知迁移编辑修订：可恢复 before/after 范例
+
+**状态：** `HISTORICAL_COMPLETION_RECORD` · **主题：** `COGNITION`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
+
+### 1 分钟
+
+Status: OWNERACCEPTEDOPTIONALEXPERIMENTALMODULE 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+
+### 5 分钟
+
+- 来源要点（导航摘录，不得视为当前断言）：主题：认知迁移编辑修订：可恢复 before/after 范例
+- 来源要点（导航摘录，不得视为当前断言）：Status: OWNERACCEPTEDOPTIONALEXPERIMENTALMODULE
+- 来源要点（导航摘录，不得视为当前断言）：Module version: 0.1.0
+- 来源要点（导航摘录，不得视为当前断言）：The before passages are recoverable from current formal main e5c6d1d0b75dae41b414474bc22747816cd00c78. The examples use different text types. Neither source work is modified by this module. They do not measure reader cognition, literary quality, knowledge transfer, or effectiveness.
+- 来源要点（导航摘录，不得视为当前断言）：主题：Example A — historical interpretive essay
+- 来源要点（导航摘录，不得视为当前断言）：Source: docs/publication/works/when-an-emperor-manufactures-heaven.md.
+
+### 完整阅读
+
+[docs/publication/zhiyuan-writing-cognitive-migration-editorial-revision-examples.md](../docs/publication/zhiyuan-writing-cognitive-migration-editorial-revision-examples.md)
 
 <a id="reading-hr-75acdd1f73f32af7"></a>
 ## Full migration coverage
@@ -3670,6 +3802,28 @@ Observer: maintainer coordinating AI execution, validation, PR review, and comma
 
 [docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md](../docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md)
 
+<a id="reading-hr-8e2625b0ff92a368"></a>
+## Foundation high-impact frontier R1
+
+**状态：** `HISTORICAL_COMPLETION_RECORD` · **主题：** `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+
+### 1 分钟
+
+Status: OWNERACCEPTEDNOCANONICALDELTAFRONTIERWITHEXPLICITRESIDUALS 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+
+### 5 分钟
+
+- 来源要点（导航摘录，不得视为当前断言）：主题：Foundation high-impact frontier R1
+- 来源要点（导航摘录，不得视为当前断言）：Status: OWNERACCEPTEDNOCANONICALDELTAFRONTIERWITHEXPLICITRESIDUALS
+- 来源要点（导航摘录，不得视为当前断言）：This publication preserves the bounded result of the accepted 64-row review. It is not a change to canonical Foundation status and does not establish external or epistemic truth.
+- 来源要点（导航摘录，不得视为当前断言）：主题：Scope and result
+- 来源要点（导航摘录，不得视为当前断言）：The frozen 64-row high-impact frontier was audited one row at a time against the current canonical Foundation records. The machine-readable projection is FOUNDATION-64-PROPAGATION.jsonl.
+- 来源要点（导航摘录，不得视为当前断言）：No canonical Foundation file or generated output was changed merely because the review occurred. The accepted result is a public, bounded frontier projection with zero invented deltas.
+
+### 完整阅读
+
+[reports/foundation-architecture/pointfire-seven-track-foundation-high-impact-frontier-r1-20260813.md](../reports/foundation-architecture/pointfire-seven-track-foundation-high-impact-frontier-r1-20260813.md)
+
 <a id="reading-hr-8e4b48d6273130f9"></a>
 ## 阶段成果持续快照与分层发布制度
 
@@ -3691,6 +3845,28 @@ Status: Ignition Iteration Method 1.4.0 — Continuous Stage Snapshot Publicatio
 ### 完整阅读
 
 [docs/operations/stage-snapshot-publication.md](../docs/operations/stage-snapshot-publication.md)
+
+<a id="reading-hr-8e601e0eaf017fcd"></a>
+## GetNote external verification R1
+
+**状态：** `HISTORICAL_COMPLETION_RECORD` · **主题：** `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
+
+### 1 分钟
+
+Status: OWNERACCEPTEDBOUNDEDPUBLICVERIFICATIONWITHEXPLICITRESIDUALS 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+
+### 5 分钟
+
+- 来源要点（导航摘录，不得视为当前断言）：主题：GetNote external verification R1
+- 来源要点（导航摘录，不得视为当前断言）：Status: OWNERACCEPTEDBOUNDEDPUBLICVERIFICATIONWITHEXPLICITRESIDUALS
+- 来源要点（导航摘录，不得视为当前断言）：This public artifact records the accepted 12-unit source-family verification. It is not a general external validation of GetNote, its source projection, or the underlying concepts as social laws, universal mechanisms, measured psychological facts, or causal effects.
+- 来源要点（导航摘录，不得视为当前断言）：主题：What this publication establishes
+- 来源要点（导航摘录，不得视为当前断言）：The 12 frozen synthesis units were checked proposition-by-proposition against independent public source families. The strongest result is bounded support for method and measurement boundaries: define the construct, expose denominator and timing, distinguish self-report from behavior, document evaluation and human oversight, and keep narrative or structural a…
+- 来源要点（导航摘录，不得视为当前断言）：主题：Exact unit disposition counts
+
+### 完整阅读
+
+[reports/external-research/pointfire-getnote-external-verification-r1-20260813.md](../reports/external-research/pointfire-getnote-external-verification-r1-20260813.md)
 
 <a id="reading-hr-8f3c2449dfb9208b"></a>
 ## 121Q25C Lifecycle-Gate Deadlock Repair
@@ -3756,6 +3932,28 @@ Q25B correctly separated completion states but incorrectly required projectsynch
 ### 完整阅读
 
 [outputs/audit/agent-project-understanding-20260708.md](../outputs/audit/agent-project-understanding-20260708.md)
+
+<a id="reading-hr-9094b2cb638397a8"></a>
+## 认知迁移编辑修订：来源与边界记录
+
+**状态：** `HISTORICAL_COMPLETION_RECORD` · **主题：** `COGNITION`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
+
+### 1 分钟
+
+Status: OWNERACCEPTEDRETAINASOPTIONALEXPERIMENTALMODULEWITHEXPLICITRESIDUALS 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+
+### 5 分钟
+
+- 来源要点（导航摘录，不得视为当前断言）：主题：认知迁移编辑修订：来源与边界记录
+- 来源要点（导航摘录，不得视为当前断言）：Status: OWNERACCEPTEDRETAINASOPTIONALEXPERIMENTALMODULEWITHEXPLICITRESIDUALS
+- 来源要点（导航摘录，不得视为当前断言）：主题：Reconstruction boundary
+- 来源要点（导航摘录，不得视为当前断言）：This module is rebuilt from current formal main e5c6d1d0b75dae41b414474bc22747816cd00c78. Historical PR #189 is a design input only; it is not merged, cherry-picked, or treated as an accepted method version. No private source note, attachment, or third-party full text is republished.
+- 来源要点（导航摘录，不得视为当前断言）：主题：Current repository sources
+- 来源要点（导航摘录，不得视为当前断言）：The two works are used only as recoverable text artifacts for before/after editorial variants. This module does not re-adjudicate their historical or scientific claims.
+
+### 完整阅读
+
+[docs/publication/method-sources/cognitive-migration-editorial-revision-source.md](../docs/publication/method-sources/cognitive-migration-editorial-revision-source.md)
 
 <a id="reading-hr-91f57f34641602bd"></a>
 ## Task 98 remote truth and gap lock
@@ -5606,6 +5804,28 @@ Historical status: 121Q32I / method 1.3.0 Closed, now superseded by Current 1.4.
 
 [docs/publication/cases/song-huizong-taoism-1117-source.md](../docs/publication/cases/song-huizong-taoism-1117-source.md)
 
+<a id="reading-hr-d75690d278464805"></a>
+## STEP03 blinded baseline versus governed replay
+
+**状态：** `HISTORICAL_COMPLETION_RECORD` · **主题：** `OPERATIONS_EVIDENCE`
+
+### 1 分钟
+
+Status: OWNERACCEPTEDBOUNDEDREPLAYRESULTWITHEXPLICITRESIDUALS 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+
+### 5 分钟
+
+- 来源要点（导航摘录，不得视为当前断言）：主题：STEP03 blinded baseline versus governed replay
+- 来源要点（导航摘录，不得视为当前断言）：Status: OWNERACCEPTEDBOUNDEDREPLAYRESULTWITHEXPLICITRESIDUALS
+- 来源要点（导航摘录，不得视为当前断言）：The comparison is between the independently frozen blinded baseline and the first governed pass. It asks what the governed process added to the research operation. It does not claim that the added process caused more true findings or that Pointfire is externally validated.
+- 来源要点（导航摘录，不得视为当前断言）：主题：Comparison table
+- 来源要点（导航摘录，不得视为当前断言）：The repaired governed pass added source-family role labels, per-source causal-audit fields, exposure-specific claim rows, a preregistration-aligned abstention receipt, and more recoverable provenance. Endpoint separation, alternative explanations, and the broad causal ceiling were already present in the blinded baseline. The architecture-level value is there…
+- 来源要点（导航摘录，不得视为当前断言）：The comparison also records a limitation: both passes rely primarily on observational studies, local monitoring, mechanistic modeling, and official guidance. The governed pass makes some limits more traceable; it does not remove them. Its contextual WMO and CDC records are not counted as substantive canopy source families.
+
+### 完整阅读
+
+[reports/external-research/pointfire-seven-track-replay-r1/BASELINE-VS-GOVERNED.md](../reports/external-research/pointfire-seven-track-replay-r1/BASELINE-VS-GOVERNED.md)
+
 <a id="reading-hr-d77d1e13245bc9a4"></a>
 ## 九轴状态系统
 
@@ -5778,6 +5998,28 @@ Status: READYFORGPTVERIFICATIONCANDIDATEONLY 边界：This is a conservative nav
 ### 完整阅读
 
 [outputs/getbrain/v0.2-function-dependency-graph-20260706.md](../outputs/getbrain/v0.2-function-dependency-graph-20260706.md)
+
+<a id="reading-hr-deb3e834ad440e87"></a>
+## 认知迁移编辑修订：Owner 决定与独立审查入口
+
+**状态：** `HISTORICAL_COMPLETION_RECORD` · **主题：** `COGNITION`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
+
+### 1 分钟
+
+Status: OWNERACCEPTEDRETAINASOPTIONALEXPERIMENTALMODULEWITHEXPLICITRESIDUALS 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+
+### 5 分钟
+
+- 来源要点（导航摘录，不得视为当前断言）：主题：认知迁移编辑修订：Owner 决定与独立审查入口
+- 来源要点（导航摘录，不得视为当前断言）：Status: OWNERACCEPTEDRETAINASOPTIONALEXPERIMENTALMODULEWITHEXPLICITRESIDUALS
+- 来源要点（导航摘录，不得视为当前断言）：Current formal main baseline: e5c6d1d0b75dae41b414474bc22747816cd00c78
+- 来源要点（导航摘录，不得视为当前断言）：Current 之元写作法: 0.5.0 and unchanged.
+- 来源要点（导航摘录，不得视为当前断言）：Experimental module: 认知迁移编辑修订 / Cognitive-Migration Editorial Revision, version 0.1.0.
+- 来源要点（导航摘录，不得视为当前断言）：Retain the module as a separate optional experimental module. It is published as a separate module and is not a new current method version.
+
+### 完整阅读
+
+[reports/publication/zhiyuan-writing-cognitive-migration-editorial-revision-review.md](../reports/publication/zhiyuan-writing-cognitive-migration-editorial-revision-review.md)
 
 <a id="reading-hr-e14552c4c0658b5a"></a>
 ## 083 Escalation Routing Report

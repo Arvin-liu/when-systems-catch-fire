@@ -4,14 +4,14 @@
 
 |规则|状态|匹配数|
 |---|---|---:|
-|`proof_obligation`|`REVIEW`|77|
-|`empirical_obligation`|`REVIEW`|14|
-|`cross_domain_mapping`|`REVIEW`|64|
-|`quantifier_inflation`|`REVIEW`|191|
+|`proof_obligation`|`REVIEW`|78|
+|`empirical_obligation`|`REVIEW`|15|
+|`cross_domain_mapping`|`REVIEW`|66|
+|`quantifier_inflation`|`REVIEW`|193|
 |`circular_reasoning`|`PASS`|0|
 |`analogy_as_isomorphism`|`PASS`|1|
-|`model_failure_to_universal_impossibility`|`PASS`|20|
-|`conclusion_rebound`|`PASS`|24|
+|`model_failure_to_universal_impossibility`|`PASS`|15|
+|`conclusion_rebound`|`PASS`|25|
 |`hidden_essential_content`|`PASS`|0|
 |`retired_pages_surface`|`PASS`|0|
 

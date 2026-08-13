@@ -208,8 +208,8 @@ AI 主题的生成速度与研究主题的可识别性相遇：当生成数量�
 
 ## 派生来源
 
-- [GETNOTE-R2-SYNTHESIS-MATRIX.json](GETNOTE-PUBLIC-METRICS.md) 保存主题计数、全局 ceiling、状态和升级/降级条件，不保存长 raw claim text。
-- [GETNOTE-SYNTHESIS-METRICS.json](GETNOTE-PUBLIC-METRICS.md) 保存 1329/1328/931/307/3/88 总账与六步管线。
-- R1 `FINAL-CLAIMS` projection（仓库历史中的 `PRIVATE_PROVENANCE_WITHHELD provenance 回指；本篇不复制私人笔记正文，也不把该历史路径当作出版分支必须存在的依赖。
+- [公开主题矩阵与指标](GETNOTE-PUBLIC-METRICS.md) 保存主题计数、全局 ceiling、状态和升级/降级条件，不保存长 raw claim text。
+- [公开 GetNote metrics](GETNOTE-PUBLIC-METRICS.md) 保存 1329/1328/931/307/3/88 总账与六步管线。
+- R1 `FINAL-CLAIMS` projection 只作为历史 provenance 线索保留；本篇不复制私人笔记正文，也不把私有历史路径当作出版分支必须存在的依赖。
 
 本篇的状态是 `CURRENT_BEST_SOURCE_BOUND_SYNTHESIS`。它可以被未来证据升级、降级、修订、拆分、合并或撤回。

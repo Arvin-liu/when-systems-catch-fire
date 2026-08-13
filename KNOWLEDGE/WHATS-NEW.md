@@ -4,6 +4,105 @@
 
 ## 2026
 
+<a id="change-src-hr-deb3e834ad440e87"></a>
+### 2026-08-14 · 认知迁移编辑修订：Owner 决定与独立审查入口
+
+- **类型：** `ARTICLE_OR_PUBLICATION`
+- **状态：** `HISTORICAL_COMPLETION_RECORD`
+- **变化：** Status: OWNERACCEPTEDRETAINASOPTIONALEXPERIMENTALMODULEWITHEXPLICITRESIDUALS
+- **来源：** [zhiyuan-writing-cognitive-migration-editorial-revision-review.md](../reports/publication/zhiyuan-writing-cognitive-migration-editorial-revision-review.md)
+- **资产卡：** [HR-DEB3E834AD440E87](./ASSET-CARDS.md#asset-hr-deb3e834ad440e87)
+
+<a id="change-src-hr-d75690d278464805"></a>
+### 2026-08-14 · STEP03 blinded baseline versus governed replay
+
+- **类型：** `RESEARCH_OR_SOURCE_REVIEW`
+- **状态：** `HISTORICAL_COMPLETION_RECORD`
+- **变化：** Status: OWNERACCEPTEDBOUNDEDREPLAYRESULTWITHEXPLICITRESIDUALS
+- **来源：** [BASELINE-VS-GOVERNED.md](../reports/external-research/pointfire-seven-track-replay-r1/BASELINE-VS-GOVERNED.md)
+- **资产卡：** [HR-D75690D278464805](./ASSET-CARDS.md#asset-hr-d75690d278464805)
+
+<a id="change-src-hr-9094b2cb638397a8"></a>
+### 2026-08-14 · 认知迁移编辑修订：来源与边界记录
+
+- **类型：** `ARTICLE_OR_PUBLICATION`
+- **状态：** `HISTORICAL_COMPLETION_RECORD`
+- **变化：** Status: OWNERACCEPTEDRETAINASOPTIONALEXPERIMENTALMODULEWITHEXPLICITRESIDUALS
+- **来源：** [cognitive-migration-editorial-revision-source.md](../docs/publication/method-sources/cognitive-migration-editorial-revision-source.md)
+- **资产卡：** [HR-9094B2CB638397A8](./ASSET-CARDS.md#asset-hr-9094b2cb638397a8)
+
+<a id="change-src-hr-75430bb574c9c15b"></a>
+### 2026-08-14 · 认知迁移编辑修订：可恢复 before/after 范例
+
+- **类型：** `ARTICLE_OR_PUBLICATION`
+- **状态：** `HISTORICAL_COMPLETION_RECORD`
+- **变化：** Status: OWNERACCEPTEDOPTIONALEXPERIMENTALMODULE
+- **来源：** [zhiyuan-writing-cognitive-migration-editorial-revision-examples.md](../docs/publication/zhiyuan-writing-cognitive-migration-editorial-revision-examples.md)
+- **资产卡：** [HR-75430BB574C9C15B](./ASSET-CARDS.md#asset-hr-75430bb574c9c15b)
+
+<a id="change-src-hr-728801b4d8a22d85"></a>
+### 2026-08-14 · STEP09 MCF / PSD / ARN / Function OS execution result
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `HISTORICAL_COMPLETION_RECORD`
+- **变化：** Status: OWNERACCEPTEDBOUNDEDCALIBRATIONEVIDENCEWITHEXPLICITRESIDUALS
+- **来源：** [STEP09-EXECUTION.md](../reports/architecture-calibration/STEP09-EXECUTION.md)
+- **资产卡：** [HR-728801B4D8A22D85](./ASSET-CARDS.md#asset-hr-728801b4d8a22d85)
+
+<a id="change-src-hr-3254690d89efc00d"></a>
+### 2026-08-14 · Pointfire seven-track external cross-domain replay — repaired governed pass
+
+- **类型：** `RESEARCH_OR_SOURCE_REVIEW`
+- **状态：** `HISTORICAL_COMPLETION_RECORD`
+- **变化：** Status: OWNERACCEPTEDBOUNDEDREPLAYRESULTWITHEXPLICITRESIDUALS
+- **来源：** [REPLAY-REPORT.md](../reports/external-research/pointfire-seven-track-replay-r1/REPLAY-REPORT.md)
+- **资产卡：** [HR-3254690D89EFC00D](./ASSET-CARDS.md#asset-hr-3254690d89efc00d)
+
+<a id="change-src-hr-2ffed40e044f68aa"></a>
+### 2026-08-14 · STEP08 MCF / PSD / ARN / Function OS baseline-relative calibration
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Status: FROZENCALIBRATIONPREREGISTRATION
+- **来源：** [STEP08-PREREGISTRATION.md](../reports/architecture-calibration/STEP08-PREREGISTRATION.md)
+- **资产卡：** [HR-2FFED40E044F68AA](./ASSET-CARDS.md#asset-hr-2ffed40e044f68aa)
+
+<a id="change-src-hr-0a5e4005a933ea19"></a>
+### 2026-08-14 · 认知迁移编辑修订
+
+- **类型：** `ARTICLE_OR_PUBLICATION`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** English: Cognitive-Migration Editorial Revision
+- **来源：** [zhiyuan-writing-cognitive-migration-editorial-revision.md](../docs/publication/zhiyuan-writing-cognitive-migration-editorial-revision.md)
+- **资产卡：** [HR-0A5E4005A933EA19](./ASSET-CARDS.md#asset-hr-0a5e4005a933ea19)
+
+<a id="change-src-hr-8e601e0eaf017fcd"></a>
+### 2026-08-13 · GetNote external verification R1
+
+- **类型：** `RESEARCH_OR_SOURCE_REVIEW`
+- **状态：** `HISTORICAL_COMPLETION_RECORD`
+- **变化：** Status: OWNERACCEPTEDBOUNDEDPUBLICVERIFICATIONWITHEXPLICITRESIDUALS
+- **来源：** [pointfire-getnote-external-verification-r1-20260813.md](../reports/external-research/pointfire-getnote-external-verification-r1-20260813.md)
+- **资产卡：** [HR-8E601E0EAF017FCD](./ASSET-CARDS.md#asset-hr-8e601e0eaf017fcd)
+
+<a id="change-src-hr-8e2625b0ff92a368"></a>
+### 2026-08-13 · Foundation high-impact frontier R1
+
+- **类型：** `FOUNDATION_OR_GOVERNANCE`
+- **状态：** `HISTORICAL_COMPLETION_RECORD`
+- **变化：** Status: OWNERACCEPTEDNOCANONICALDELTAFRONTIERWITHEXPLICITRESIDUALS
+- **来源：** [pointfire-seven-track-foundation-high-impact-frontier-r1-20260813.md](../reports/foundation-architecture/pointfire-seven-track-foundation-high-impact-frontier-r1-20260813.md)
+- **资产卡：** [HR-8E2625B0FF92A368](./ASSET-CARDS.md#asset-hr-8e2625b0ff92a368)
+
+<a id="change-src-hr-5d85331f1d96b2aa"></a>
+### 2026-08-13 · Pointfire seven-track current-main maintenance integration R1
+
+- **类型：** `AUDIT_OR_ADJUDICATION`
+- **状态：** `HISTORICAL_COMPLETION_RECORD`
+- **变化：** Status: OWNERACCEPTEDLIMITEDMAINTENANCEWITHEXPLICITRESIDUALS
+- **来源：** [pointfire-seven-track-current-main-maintenance-r1-20260813.md](../reports/validation/pointfire-seven-track-current-main-maintenance-r1-20260813.md)
+- **资产卡：** [HR-5D85331F1D96B2AA](./ASSET-CARDS.md#asset-hr-5d85331f1d96b2aa)
+
 <a id="change-chg-epistemic-governance-r1-20260811"></a>
 ### 2026-08-11 · 认识论治理内核与联邦平面 R1
 

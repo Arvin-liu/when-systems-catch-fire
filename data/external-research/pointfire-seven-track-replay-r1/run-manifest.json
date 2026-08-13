@@ -50,11 +50,7 @@
   },
   "claims_file": "claim-ledger.jsonl",
   "sources_file": "source-ledger.jsonl",
-  "independent_adversarial_review": {
-    "role": "ROLE-C",
-    "verdict": "PASS",
-    "reviewer_receipt": "PRIVATE_REVIEW_RECEIPT_WITHHELD"
-  },
+  "review_provenance": "PRIVATE_REVIEW_RECEIPT_WITHHELD",
   "global_validity_claim": false,
   "epistemically_accepted": false
 }
