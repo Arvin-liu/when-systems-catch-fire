@@ -150,4 +150,3 @@ Results Book or formal main. It proposes no merge order until the Owner reviews
 the separate replay, Foundation, GetNote, capability, Task115, writing,
 maintenance, and PR-disposition receipts. `EPISTEMICALLY_ACCEPTED` remains
 unset.
-
