@@ -1,5 +1,11 @@
 # 成果册公共出版变更
 
+## 2026-08-13 · seven-track evidence evolution R1 contract-repair candidate
+
+- 新增第十章，将七轨窄修复整理为可读的知识结果、负结果、Owner 决策候选和残余，而不是执行日志。
+- 将 Foundation 64 项零 canonical delta 审查、12 个 GetNote 外部来源族核证、能力校准、Task115 处置、认知迁移编辑修订模块和 current-main maintenance 登记到同一本成果册及公开 registry。
+- 所有私有正文、私有路径、私有回执和可重建私有 provenance 继续省略；`EPISTEMICALLY_ACCEPTED=0`，本候选不代表正式 main 合并或 Owner 接受。
+
 ## 2026-08-11 · formal homepage publication repair R1
 
 - 在正式公开仓库建立唯一 `PUBLICATIONS/pointfire-results-book/` canonical 入口。
