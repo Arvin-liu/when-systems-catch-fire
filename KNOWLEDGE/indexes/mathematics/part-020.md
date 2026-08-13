@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [材料内成立；跨群体普遍性 pending（外部证据 E5）。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0611-D601-%E8%A7%92%E8%89%B2%E8%A6%86%E7%9B%96%E4%B8%BB%E4%BD%93%E8%BA%AB%E4%BB%BD.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-a8359024fd4614a8 / 材料内成立；跨群体普遍性 pending（外部证据 E5）。
+  - 来源：`统一函数总表/0611-D601-角色覆盖主体身份.md`
+  - 依赖：—；被引用：—
+- [条 proof obligations — 需要可重放 Lean/Z3/SymPy artifact](../../../reports/foundation-architecture/084-max-adjudication-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-319cc45a7fd205d1 / 条 proof obligations — 需要可重放 Lean/Z3/SymPy artifact
+  - 来源：`reports/foundation-architecture/084-max-adjudication-report.md`
+  - 依赖：—；被引用：—
 - [条 proof obligations 需要可重放 artifact](../../../reports/foundation-architecture/084-architecture-truth-freeze-readiness.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-fe52241c25de367d / 条 proof obligations 需要可重放 artifact
@@ -2494,13 +2504,3 @@
   - 可搜索名称：NFC-9298361a7db7437e / 统一函数总表/0080-D31-衰减率干预函数.md
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：D31；被引用：—
-- [统一函数总表/0081-D32-认知-群体犹豫域统一映射函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-ee14b8af60ae67d0 / 统一函数总表/0081-D32-认知-群体犹豫域统一映射函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D32；被引用：—
-- [统一函数总表/0082-D33-三层退化叠加函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-159a35df0b5e7629 / 统一函数总表/0082-D33-三层退化叠加函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D33；被引用：—

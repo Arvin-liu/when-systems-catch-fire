@@ -1,0 +1,60 @@
+{
+  "program": "pointfire-seven-track-evidence-evolution-r1",
+  "track": "external-cross-domain-replay",
+  "step": "STEP02",
+  "status": "OWNER_ACCEPTED_BOUNDED_REPLAY_RESULT_WITH_EXPLICIT_RESIDUALS",
+  "question": "在城市尺度，增加树冠覆盖是否能稳定降低夏季近地面热暴露？在什么条件下这一关系不能被解释为因果？",
+  "formal_base": {
+    "repository": "when-systems-catch-fire",
+    "branch": "main",
+    "tip": "e5c6d1d0b75dae41b414474bc22747816cd00c78"
+  },
+  "public_provenance_boundary": {
+    "private_control_and_source_receipts": "WITHHELD",
+    "baseline_state": "FROZEN_BEFORE_GOVERNED_PASS",
+    "public_traceability": "THIS_DIRECTORY_AND_THE_IMMUTABLE_FORMAL_BASE_TIP"
+  },
+  "source_family_policy": {
+    "definition": "An original study, cohort, experiment, or independent official dataset; duplicate papers or pages for the same underlying study count once.",
+    "minimum_overall": 5,
+    "minimum_air_or_human_heat": 2,
+    "minimum_lst": 1,
+    "minimum_null_negative_boundary": 1,
+    "observed_source_families": 7,
+    "contextual_or_method_records": 2,
+    "source_family_count_policy": "Only substantive primary study, model, or original dataset families count toward the minimum; contextual and method records are retained but not counted."
+  },
+  "measurement_policy": {
+    "endpoints_kept_separate": [
+      "land_surface_temperature",
+      "near_surface_air_temperature",
+      "human_heat_exposure"
+    ],
+    "endpoint_pooling": "DISALLOWED",
+    "causal_ceiling": "SOURCE_SCOPED_CONDITIONAL_SUPPORT_ONLY"
+  },
+  "outcomes": [
+    "SUPPORTED_WITHIN_SOURCE_SCOPE",
+    "PARTIALLY_SUPPORTED",
+    "DISPUTED",
+    "CONTRADICTED",
+    "NOT_IDENTIFIABLE",
+    "SOURCE_NOT_RECOVERED",
+    "ABSTAIN"
+  ],
+  "retrieval_summary": {
+    "directly_readable_peer_review_or_repository_records": 5,
+    "abstract_or_authoritative_landing_page_records_with_limits": 3,
+    "official_pdf_text_extraction_limited": 1,
+    "retrieval_limit_policy": "LIMITS_RECORDED_AND_NOT_SILENTLY_UPGRADED"
+  },
+  "claims_file": "claim-ledger.jsonl",
+  "sources_file": "source-ledger.jsonl",
+  "independent_adversarial_review": {
+    "role": "ROLE-C",
+    "verdict": "PASS",
+    "reviewer_receipt": "PRIVATE_REVIEW_RECEIPT_WITHHELD"
+  },
+  "global_validity_claim": false,
+  "epistemically_accepted": false
+}

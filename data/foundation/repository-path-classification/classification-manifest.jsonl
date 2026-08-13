@@ -664,6 +664,10 @@
 {"category": "GOVERNED_MACHINE_RECORD", "matched_rule": "GOVERNED_MACHINE_RECORD", "path": "data/external-research/121b-fulltext-batch/121b-remote-publication-manifest.json"}
 {"category": "GOVERNED_MACHINE_RECORD", "matched_rule": "GOVERNED_MACHINE_RECORD", "path": "data/external-research/121b-fulltext-batch/121b-run-state.json"}
 {"category": "GOVERNED_MACHINE_RECORD", "matched_rule": "GOVERNED_MACHINE_RECORD", "path": "data/external-research/121b-fulltext-batch/121b-validator.py"}
+{"category": "GOVERNED_MACHINE_RECORD", "matched_rule": "GOVERNED_MACHINE_RECORD", "path": "data/external-research/pointfire-seven-track-replay-r1/claim-ledger.jsonl"}
+{"category": "GOVERNED_MACHINE_RECORD", "matched_rule": "GOVERNED_MACHINE_RECORD", "path": "data/external-research/pointfire-seven-track-replay-r1/process-comparison.json"}
+{"category": "GOVERNED_MACHINE_RECORD", "matched_rule": "GOVERNED_MACHINE_RECORD", "path": "data/external-research/pointfire-seven-track-replay-r1/run-manifest.json"}
+{"category": "GOVERNED_MACHINE_RECORD", "matched_rule": "GOVERNED_MACHINE_RECORD", "path": "data/external-research/pointfire-seven-track-replay-r1/source-ledger.jsonl"}
 {"category": "GOVERNED_MACHINE_RECORD", "matched_rule": "GOVERNED_MACHINE_RECORD", "path": "data/failure_typology.csv"}
 {"category": "GOVERNED_MACHINE_RECORD", "matched_rule": "GOVERNED_MACHINE_RECORD", "path": "data/failure_typology.json"}
 {"category": "GOVERNED_MACHINE_RECORD", "matched_rule": "GOVERNED_MACHINE_RECORD", "path": "data/foundation-architecture/075-counterexample-ledger.jsonl"}
@@ -1757,6 +1761,8 @@
 {"category": "GENERATED_PROJECTION", "matched_rule": "GENERATED_PROJECTION", "path": "reports/external-research/pointfire-getnote-external-verification-r1-20260813-sources.jsonl"}
 {"category": "GENERATED_PROJECTION", "matched_rule": "GENERATED_PROJECTION", "path": "reports/external-research/pointfire-getnote-external-verification-r1-20260813.jsonl"}
 {"category": "GENERATED_PROJECTION", "matched_rule": "GENERATED_PROJECTION", "path": "reports/external-research/pointfire-getnote-external-verification-r1-20260813.md"}
+{"category": "GENERATED_PROJECTION", "matched_rule": "GENERATED_PROJECTION", "path": "reports/external-research/pointfire-seven-track-replay-r1/BASELINE-VS-GOVERNED.md"}
+{"category": "GENERATED_PROJECTION", "matched_rule": "GENERATED_PROJECTION", "path": "reports/external-research/pointfire-seven-track-replay-r1/REPLAY-REPORT.md"}
 {"category": "GENERATED_PROJECTION", "matched_rule": "GENERATED_PROJECTION", "path": "reports/foundation-architecture/075-truth-audit-20260712.md"}
 {"category": "GENERATED_PROJECTION", "matched_rule": "GENERATED_PROJECTION", "path": "reports/foundation-architecture/076-adversarial-acceptance-audit-20260713.md"}
 {"category": "GENERATED_PROJECTION", "matched_rule": "GENERATED_PROJECTION", "path": "reports/foundation-architecture/078-truth-audit-20260713.md"}
