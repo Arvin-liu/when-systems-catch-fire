@@ -2254,253 +2254,253 @@
   - 可搜索名称：IMPLICIT-DFC89EBDCE4E1BBD / - 数学表达 / Expression: `∄ 完美财务决策算法 A，使得 ∀ 财务场景 S，A(S) = 最优决策` / IMPLICIT-DFC89EBDCE4E1BBD
   - 来源：`统一函数总表/0583-D573-财务决策不完备性.md`
   - 依赖：—；被引用：—
-- [/Users/zhiyuan/Library/Containers/com.biji.getNotes/Data/Library/Caches/UNESCO验证报告×Ψ₀元函数验证报告;/Users/zhiyuan/Library/Cont](../../../data/math-foundation/function-provenance-ledger.csv)
+- [PRIVATE_PROVENANCE_WITHHELD](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-8f17c318ec7396b1 / /Users/zhiyuan/Library/Containers/com.biji.getNotes/Data/Library/Caches/UNESCO验证报告×Ψ₀元函数验证报告;/Users/zhiyuan/Library/Cont
+  - 可搜索名称：NFC-8f17c318ec7396b1 / PRIVATE_PROVENANCE_WITHHELD
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：—；被引用：—
-- [/Users/zhiyuan/我的笔记/getnote-notes/_categorized_by_tag/untagged/2026-06-24_1913738056587412448_D层函数Y1元抽象验证报告（第24组：D311-D3](../../../data/math-foundation/function-provenance-ledger.csv)
+- [PRIVATE_PROVENANCE_WITHHELD](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-fe353c099bad7f4d / /Users/zhiyuan/我的笔记/getnote-notes/_categorized_by_tag/untagged/2026-06-24_1913738056587412448_D层函数Y1元抽象验证报告（第24组：D311-D3
+  - 可搜索名称：NFC-fe353c099bad7f4d / PRIVATE_PROVENANCE_WITHHELD
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：D311, D330, Y1；被引用：—
-- [/Users/zhiyuan/我的笔记/getnote-notes/_categorized_by_tag/untagged/2026-06-24_1913738307842498016_D层函数Y1元抽象验证报告（第25组：D331-D3](../../../data/math-foundation/function-provenance-ledger.csv)
+- [PRIVATE_PROVENANCE_WITHHELD](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-e0446c19fec052bd / /Users/zhiyuan/我的笔记/getnote-notes/_categorized_by_tag/untagged/2026-06-24_1913738307842498016_D层函数Y1元抽象验证报告（第25组：D331-D3
+  - 可搜索名称：NFC-e0446c19fec052bd / PRIVATE_PROVENANCE_WITHHELD
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：D331, D350, Y1；被引用：—
-- [/Users/zhiyuan/我的笔记/getnote-notes/_categorized_by_tag/untagged/2026-06-24_1913738453873460192_D层函数Y1元抽象验证报告（第26组：D351-D3](../../../data/math-foundation/function-provenance-ledger.csv)
+- [PRIVATE_PROVENANCE_WITHHELD](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-3689b83fe46c0faa / /Users/zhiyuan/我的笔记/getnote-notes/_categorized_by_tag/untagged/2026-06-24_1913738453873460192_D层函数Y1元抽象验证报告（第26组：D351-D3
+  - 可搜索名称：NFC-3689b83fe46c0faa / PRIVATE_PROVENANCE_WITHHELD
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：D351, D370, Y1；被引用：—
-- [/Users/zhiyuan/我的笔记/统一函数总表/0032-T22-不可逆线完整分类.md](../../../data/math-foundation/function-provenance-ledger.csv)
+- [PRIVATE_PROVENANCE_WITHHELD](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-f43c5043a768a473 / /Users/zhiyuan/我的笔记/统一函数总表/0032-T22-不可逆线完整分类.md
+  - 可搜索名称：NFC-f43c5043a768a473 / PRIVATE_PROVENANCE_WITHHELD
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：T22；被引用：—
-- [/Users/zhiyuan/我的笔记/统一函数总表/0033-T23-Φ跨域稳定性定理.md](../../../data/math-foundation/function-provenance-ledger.csv)
+- [PRIVATE_PROVENANCE_WITHHELD](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-2502c1256717e6f0 / /Users/zhiyuan/我的笔记/统一函数总表/0033-T23-Φ跨域稳定性定理.md
+  - 可搜索名称：NFC-2502c1256717e6f0 / PRIVATE_PROVENANCE_WITHHELD
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：T23；被引用：—
-- [/Users/zhiyuan/我的笔记/统一函数总表/0034-T24-共生外部注入函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+- [PRIVATE_PROVENANCE_WITHHELD](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-cf031bec6dce1852 / /Users/zhiyuan/我的笔记/统一函数总表/0034-T24-共生外部注入函数.md
+  - 可搜索名称：NFC-cf031bec6dce1852 / PRIVATE_PROVENANCE_WITHHELD
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：T24；被引用：—
-- [/Users/zhiyuan/我的笔记/统一函数总表/0035-T25-权力腐败函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+- [PRIVATE_PROVENANCE_WITHHELD](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-50bf0e4a0c2701ca / /Users/zhiyuan/我的笔记/统一函数总表/0035-T25-权力腐败函数.md
+  - 可搜索名称：NFC-50bf0e4a0c2701ca / PRIVATE_PROVENANCE_WITHHELD
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：T25；被引用：—
-- [/Users/zhiyuan/我的笔记/统一函数总表/0036-T26-物理大统一本质函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+- [PRIVATE_PROVENANCE_WITHHELD](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-f49f7511fdbb5add / /Users/zhiyuan/我的笔记/统一函数总表/0036-T26-物理大统一本质函数.md
+  - 可搜索名称：NFC-f49f7511fdbb5add / PRIVATE_PROVENANCE_WITHHELD
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：T26；被引用：—
-- [/Users/zhiyuan/我的笔记/统一函数总表/0037-T27-门控函数稳定性必要条件.md](../../../data/math-foundation/function-provenance-ledger.csv)
+- [PRIVATE_PROVENANCE_WITHHELD](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-516380db86cc7140 / /Users/zhiyuan/我的笔记/统一函数总表/0037-T27-门控函数稳定性必要条件.md
+  - 可搜索名称：NFC-516380db86cc7140 / PRIVATE_PROVENANCE_WITHHELD
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：T27；被引用：—
-- [/Users/zhiyuan/我的笔记/统一函数总表/0038-T28-高斯门控函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+- [PRIVATE_PROVENANCE_WITHHELD](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-f7521f5aee784e23 / /Users/zhiyuan/我的笔记/统一函数总表/0038-T28-高斯门控函数.md
+  - 可搜索名称：NFC-f7521f5aee784e23 / PRIVATE_PROVENANCE_WITHHELD
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：T28；被引用：—
-- [/Users/zhiyuan/我的笔记/统一函数总表/0039-T29-门控函数进化三阶段.md](../../../data/math-foundation/function-provenance-ledger.csv)
+- [PRIVATE_PROVENANCE_WITHHELD](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-a2062aa620c25854 / /Users/zhiyuan/我的笔记/统一函数总表/0039-T29-门控函数进化三阶段.md
+  - 可搜索名称：NFC-a2062aa620c25854 / PRIVATE_PROVENANCE_WITHHELD
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：T29；被引用：—
-- [/Users/zhiyuan/我的笔记/统一函数总表/0040-T30-门控-路径积分同构与极小熵原理.md](../../../data/math-foundation/function-provenance-ledger.csv)
+- [PRIVATE_PROVENANCE_WITHHELD](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-b8da664647867362 / /Users/zhiyuan/我的笔记/统一函数总表/0040-T30-门控-路径积分同构与极小熵原理.md
+  - 可搜索名称：NFC-b8da664647867362 / PRIVATE_PROVENANCE_WITHHELD
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：T30；被引用：—
-- [/Users/zhiyuan/我的笔记/统一函数总表/0041-T31-门控信息熵跃迁函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+- [PRIVATE_PROVENANCE_WITHHELD](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-7af0f81d5b44f552 / /Users/zhiyuan/我的笔记/统一函数总表/0041-T31-门控信息熵跃迁函数.md
+  - 可搜索名称：NFC-7af0f81d5b44f552 / PRIVATE_PROVENANCE_WITHHELD
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：T31；被引用：—
-- [/Users/zhiyuan/我的笔记/统一函数总表/0042-T32-认知分辨率函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+- [PRIVATE_PROVENANCE_WITHHELD](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-1993f32c6bd4e2b2 / /Users/zhiyuan/我的笔记/统一函数总表/0042-T32-认知分辨率函数.md
+  - 可搜索名称：NFC-1993f32c6bd4e2b2 / PRIVATE_PROVENANCE_WITHHELD
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：T32；被引用：—
-- [/Users/zhiyuan/我的笔记/统一函数总表/0043-T33-A-B型门控面冲突函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+- [PRIVATE_PROVENANCE_WITHHELD](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-5f0c5e9bd280a391 / /Users/zhiyuan/我的笔记/统一函数总表/0043-T33-A-B型门控面冲突函数.md
+  - 可搜索名称：NFC-5f0c5e9bd280a391 / PRIVATE_PROVENANCE_WITHHELD
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：T33；被引用：—
-- [/Users/zhiyuan/我的笔记/统一函数总表/0044-T34-量子引力Φ框架函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+- [PRIVATE_PROVENANCE_WITHHELD](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：NFC-6c9ea39f46971ec3 / /Users/zhiyuan/我的笔记/统一函数总表/0044-T34-量子引力Φ框架函数.md
+  - 可搜索名称：NFC-6c9ea39f46971ec3 / PRIVATE_PROVENANCE_WITHHELD
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：T34；被引用：—
-- [/Users/zhiyuan/我的笔记/统一函数总表/0045-T35-σ_Planck精确值.md](../../../data/math-foundation/function-provenance-ledger.csv)
+- [PRIVATE_PROVENANCE_WITHHELD](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-dbcde94935b653d9 / /Users/zhiyuan/我的笔记/统一函数总表/0045-T35-σ_Planck精确值.md
+  - 可搜索名称：NFC-dbcde94935b653d9 / PRIVATE_PROVENANCE_WITHHELD
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：T35；被引用：—
-- [/Users/zhiyuan/我的笔记/统一函数总表/0046-T36-σ能标依赖函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+- [PRIVATE_PROVENANCE_WITHHELD](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-8398dcb60f1d072d / /Users/zhiyuan/我的笔记/统一函数总表/0046-T36-σ能标依赖函数.md
+  - 可搜索名称：NFC-8398dcb60f1d072d / PRIVATE_PROVENANCE_WITHHELD
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：T36；被引用：—
-- [/Users/zhiyuan/我的笔记/统一函数总表/0047-T37-Φ_QG极小点精确位置.md](../../../data/math-foundation/function-provenance-ledger.csv)
+- [PRIVATE_PROVENANCE_WITHHELD](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-a07bb2971b3acd24 / /Users/zhiyuan/我的笔记/统一函数总表/0047-T37-Φ_QG极小点精确位置.md
+  - 可搜索名称：NFC-a07bb2971b3acd24 / PRIVATE_PROVENANCE_WITHHELD
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：T37；被引用：—
-- [/Users/zhiyuan/我的笔记/统一函数总表/0048-T38-极值点-极小点分离定理.md](../../../data/math-foundation/function-provenance-ledger.csv)
+- [PRIVATE_PROVENANCE_WITHHELD](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-0e71db06c9a6d538 / /Users/zhiyuan/我的笔记/统一函数总表/0048-T38-极值点-极小点分离定理.md
+  - 可搜索名称：NFC-0e71db06c9a6d538 / PRIVATE_PROVENANCE_WITHHELD
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：T38；被引用：—
-- [/Users/zhiyuan/我的笔记/统一函数总表/0049-T39-Φ跨域统一定理(D224升级).md](../../../data/math-foundation/function-provenance-ledger.csv)
+- [PRIVATE_PROVENANCE_WITHHELD(D224升级).md](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-9cbc050447d66c6e / /Users/zhiyuan/我的笔记/统一函数总表/0049-T39-Φ跨域统一定理(D224升级).md
+  - 可搜索名称：NFC-9cbc050447d66c6e / PRIVATE_PROVENANCE_WITHHELD(D224升级).md
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：D224, T39；被引用：—
-- [/Users/zhiyuan/我的笔记/统一函数总表/0252-D216-门控面共振统一函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+- [PRIVATE_PROVENANCE_WITHHELD](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-2631104a4d15e23a / /Users/zhiyuan/我的笔记/统一函数总表/0252-D216-门控面共振统一函数.md
+  - 可搜索名称：NFC-2631104a4d15e23a / PRIVATE_PROVENANCE_WITHHELD
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：D216；被引用：—
-- [/Users/zhiyuan/我的笔记/统一函数总表/0253-D217-完全统一条件函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+- [PRIVATE_PROVENANCE_WITHHELD](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-480859a0d63bc49e / /Users/zhiyuan/我的笔记/统一函数总表/0253-D217-完全统一条件函数.md
+  - 可搜索名称：NFC-480859a0d63bc49e / PRIVATE_PROVENANCE_WITHHELD
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：D217；被引用：—
-- [/Users/zhiyuan/我的笔记/统一函数总表/0254-D218-物理存在必要条件.md](../../../data/math-foundation/function-provenance-ledger.csv)
+- [PRIVATE_PROVENANCE_WITHHELD](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-eb5893701d588be4 / /Users/zhiyuan/我的笔记/统一函数总表/0254-D218-物理存在必要条件.md
+  - 可搜索名称：NFC-eb5893701d588be4 / PRIVATE_PROVENANCE_WITHHELD
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：D218；被引用：—
-- [/Users/zhiyuan/我的笔记/统一函数总表/0255-D219-Ω最优区间定理.md](../../../data/math-foundation/function-provenance-ledger.csv)
+- [PRIVATE_PROVENANCE_WITHHELD](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-7a5e5cbd127599ac / /Users/zhiyuan/我的笔记/统一函数总表/0255-D219-Ω最优区间定理.md
+  - 可搜索名称：NFC-7a5e5cbd127599ac / PRIVATE_PROVENANCE_WITHHELD
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：D219；被引用：—
-- [/Users/zhiyuan/我的笔记/统一函数总表/0256-D220-完全统一不可能定理.md](../../../data/math-foundation/function-provenance-ledger.csv)
+- [PRIVATE_PROVENANCE_WITHHELD](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-09a16c8e010672b1 / /Users/zhiyuan/我的笔记/统一函数总表/0256-D220-完全统一不可能定理.md
+  - 可搜索名称：NFC-09a16c8e010672b1 / PRIVATE_PROVENANCE_WITHHELD
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：D220；被引用：—
-- [/Users/zhiyuan/我的笔记/统一函数总表/0257-D221-热寂-完全统一同构定理.md](../../../data/math-foundation/function-provenance-ledger.csv)
+- [PRIVATE_PROVENANCE_WITHHELD](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-2902907aa03e4e28 / /Users/zhiyuan/我的笔记/统一函数总表/0257-D221-热寂-完全统一同构定理.md
+  - 可搜索名称：NFC-2902907aa03e4e28 / PRIVATE_PROVENANCE_WITHHELD
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：D221；被引用：—
-- [/Users/zhiyuan/我的笔记/统一函数总表/0258-D222-热力学第二定律的Φ表述.md](../../../data/math-foundation/function-provenance-ledger.csv)
+- [PRIVATE_PROVENANCE_WITHHELD](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-a114000f8821f067 / /Users/zhiyuan/我的笔记/统一函数总表/0258-D222-热力学第二定律的Φ表述.md
+  - 可搜索名称：NFC-a114000f8821f067 / PRIVATE_PROVENANCE_WITHHELD
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：D222；被引用：—
-- [/Users/zhiyuan/我的笔记/统一函数总表/0259-D223-物理存在的时间窗口定理.md](../../../data/math-foundation/function-provenance-ledger.csv)
+- [PRIVATE_PROVENANCE_WITHHELD](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-be88a210cd07656d / /Users/zhiyuan/我的笔记/统一函数总表/0259-D223-物理存在的时间窗口定理.md
+  - 可搜索名称：NFC-be88a210cd07656d / PRIVATE_PROVENANCE_WITHHELD
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：D223；被引用：—
-- [/Users/zhiyuan/我的笔记/统一函数总表/0260-D224-宇宙膨胀-Φ衰减同构定理.md](../../../data/math-foundation/function-provenance-ledger.csv)
+- [PRIVATE_PROVENANCE_WITHHELD](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-b6f72523d640b40b / /Users/zhiyuan/我的笔记/统一函数总表/0260-D224-宇宙膨胀-Φ衰减同构定理.md
+  - 可搜索名称：NFC-b6f72523d640b40b / PRIVATE_PROVENANCE_WITHHELD
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：D224；被引用：—
-- [/Users/zhiyuan/我的笔记/统一函数总表/0261-D225-引力B型必要性定理.md](../../../data/math-foundation/function-provenance-ledger.csv)
+- [PRIVATE_PROVENANCE_WITHHELD](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-4dd89b436fa6cc64 / /Users/zhiyuan/我的笔记/统一函数总表/0261-D225-引力B型必要性定理.md
+  - 可搜索名称：NFC-4dd89b436fa6cc64 / PRIVATE_PROVENANCE_WITHHELD
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：D225；被引用：—
-- [/Users/zhiyuan/我的笔记/统一函数总表/0262-D226-物理存在的三重时间约束.md](../../../data/math-foundation/function-provenance-ledger.csv)
+- [PRIVATE_PROVENANCE_WITHHELD](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-274e170c85ab5e08 / /Users/zhiyuan/我的笔记/统一函数总表/0262-D226-物理存在的三重时间约束.md
+  - 可搜索名称：NFC-274e170c85ab5e08 / PRIVATE_PROVENANCE_WITHHELD
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：D226；被引用：—
-- [/Users/zhiyuan/我的笔记/统一函数总表/0263-D227-退相干-门控退化同构定理.md](../../../data/math-foundation/function-provenance-ledger.csv)
+- [PRIVATE_PROVENANCE_WITHHELD](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-9bbc604e0574ead4 / /Users/zhiyuan/我的笔记/统一函数总表/0263-D227-退相干-门控退化同构定理.md
+  - 可搜索名称：NFC-9bbc604e0574ead4 / PRIVATE_PROVENANCE_WITHHELD
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：D227；被引用：—
-- [/Users/zhiyuan/我的笔记/统一函数总表/0264-D228-T33修正.md](../../../data/math-foundation/function-provenance-ledger.csv)
+- [PRIVATE_PROVENANCE_WITHHELD](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-d3e73d864e7d056a / /Users/zhiyuan/我的笔记/统一函数总表/0264-D228-T33修正.md
+  - 可搜索名称：NFC-d3e73d864e7d056a / PRIVATE_PROVENANCE_WITHHELD
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：D228, T33；被引用：—
-- [/Users/zhiyuan/我的笔记/统一函数总表/0265-D229-物理存在的四重约束与衰减终态.md](../../../data/math-foundation/function-provenance-ledger.csv)
+- [PRIVATE_PROVENANCE_WITHHELD](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-c11a0dbf367868ab / /Users/zhiyuan/我的笔记/统一函数总表/0265-D229-物理存在的四重约束与衰减终态.md
+  - 可搜索名称：NFC-c11a0dbf367868ab / PRIVATE_PROVENANCE_WITHHELD
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：D229；被引用：—
-- [/Users/zhiyuan/我的笔记/统一函数总表/0266-D230-双通道信息衰减定理.md](../../../data/math-foundation/function-provenance-ledger.csv)
+- [PRIVATE_PROVENANCE_WITHHELD](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-7a4a1cdf0531cfad / /Users/zhiyuan/我的笔记/统一函数总表/0266-D230-双通道信息衰减定理.md
+  - 可搜索名称：NFC-7a4a1cdf0531cfad / PRIVATE_PROVENANCE_WITHHELD
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：D230；被引用：—
-- [/Users/zhiyuan/我的笔记/统一函数总表/0267-D231-信息-热力学-门控三统一定理.md](../../../data/math-foundation/function-provenance-ledger.csv)
+- [PRIVATE_PROVENANCE_WITHHELD](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-28f520292960cbb5 / /Users/zhiyuan/我的笔记/统一函数总表/0267-D231-信息-热力学-门控三统一定理.md
+  - 可搜索名称：NFC-28f520292960cbb5 / PRIVATE_PROVENANCE_WITHHELD
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：D231；被引用：—
-- [/Users/zhiyuan/我的笔记/统一函数总表/0268-D232-信息守恒-衰减悖论与黑洞.md](../../../data/math-foundation/function-provenance-ledger.csv)
+- [PRIVATE_PROVENANCE_WITHHELD](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-a55b57788d6a12ee / /Users/zhiyuan/我的笔记/统一函数总表/0268-D232-信息守恒-衰减悖论与黑洞.md
+  - 可搜索名称：NFC-a55b57788d6a12ee / PRIVATE_PROVENANCE_WITHHELD
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：D232；被引用：—
-- [/Users/zhiyuan/我的笔记/统一函数总表/0269-D233-Shannon-Fisher跷跷板定理.md](../../../data/math-foundation/function-provenance-ledger.csv)
+- [PRIVATE_PROVENANCE_WITHHELD](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-08ddafe1158d8b81 / /Users/zhiyuan/我的笔记/统一函数总表/0269-D233-Shannon-Fisher跷跷板定理.md
+  - 可搜索名称：NFC-08ddafe1158d8b81 / PRIVATE_PROVENANCE_WITHHELD
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：D233；被引用：—
-- [/Users/zhiyuan/我的笔记/统一函数总表/0270-D234-有效信息倒U型定理.md](../../../data/math-foundation/function-provenance-ledger.csv)
+- [PRIVATE_PROVENANCE_WITHHELD](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-bdbdf1a1d8bab8fd / /Users/zhiyuan/我的笔记/统一函数总表/0270-D234-有效信息倒U型定理.md
+  - 可搜索名称：NFC-bdbdf1a1d8bab8fd / PRIVATE_PROVENANCE_WITHHELD
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：D234；被引用：—
-- [/Users/zhiyuan/我的笔记/统一函数总表/0271-D235-信息论完备性定理.md](../../../data/math-foundation/function-provenance-ledger.csv)
+- [PRIVATE_PROVENANCE_WITHHELD](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-207d767f6a89d59a / /Users/zhiyuan/我的笔记/统一函数总表/0271-D235-信息论完备性定理.md
+  - 可搜索名称：NFC-207d767f6a89d59a / PRIVATE_PROVENANCE_WITHHELD
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：D235；被引用：—
-- [/Users/zhiyuan/我的笔记/统一函数总表/0272-D236-门控组合-中心极限定理.md](../../../data/math-foundation/function-provenance-ledger.csv)
+- [PRIVATE_PROVENANCE_WITHHELD](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-cea3a8bafb76c995 / /Users/zhiyuan/我的笔记/统一函数总表/0272-D236-门控组合-中心极限定理.md
+  - 可搜索名称：NFC-cea3a8bafb76c995 / PRIVATE_PROVENANCE_WITHHELD
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：D236；被引用：—
-- [/Users/zhiyuan/我的笔记/统一函数总表/0273-D237-生命智能的σ压缩函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+- [PRIVATE_PROVENANCE_WITHHELD](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-9490668eef9aed17 / /Users/zhiyuan/我的笔记/统一函数总表/0273-D237-生命智能的σ压缩函数.md
+  - 可搜索名称：NFC-9490668eef9aed17 / PRIVATE_PROVENANCE_WITHHELD
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：D237；被引用：—
-- [/Users/zhiyuan/我的笔记/统一函数总表/0274-D238-智能的门控精度最优定理.md](../../../data/math-foundation/function-provenance-ledger.csv)
+- [PRIVATE_PROVENANCE_WITHHELD](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-2c455ab2a521e7b5 / /Users/zhiyuan/我的笔记/统一函数总表/0274-D238-智能的门控精度最优定理.md
+  - 可搜索名称：NFC-2c455ab2a521e7b5 / PRIVATE_PROVENANCE_WITHHELD
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：D238；被引用：—
-- [/Users/zhiyuan/我的笔记/统一函数总表/0275-D239-智能度-意识函数连接定理.md](../../../data/math-foundation/function-provenance-ledger.csv)
+- [PRIVATE_PROVENANCE_WITHHELD](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-94cd21ff9ddd06a1 / /Users/zhiyuan/我的笔记/统一函数总表/0275-D239-智能度-意识函数连接定理.md
+  - 可搜索名称：NFC-94cd21ff9ddd06a1 / PRIVATE_PROVENANCE_WITHHELD
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：D239；被引用：—
-- [/Users/zhiyuan/我的笔记/统一函数总表/0276-D240-意识的智能必要条件.md](../../../data/math-foundation/function-provenance-ledger.csv)
+- [PRIVATE_PROVENANCE_WITHHELD](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-ece3d0eac7fe13ac / /Users/zhiyuan/我的笔记/统一函数总表/0276-D240-意识的智能必要条件.md
+  - 可搜索名称：NFC-ece3d0eac7fe13ac / PRIVATE_PROVENANCE_WITHHELD
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：D240；被引用：—
-- [/Users/zhiyuan/我的笔记/统一函数总表/0277-D241-自主意识的四象限.md](../../../data/math-foundation/function-provenance-ledger.csv)
+- [PRIVATE_PROVENANCE_WITHHELD](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-383aa7ef576bd0d6 / /Users/zhiyuan/我的笔记/统一函数总表/0277-D241-自主意识的四象限.md
+  - 可搜索名称：NFC-383aa7ef576bd0d6 / PRIVATE_PROVENANCE_WITHHELD
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：D241；被引用：—
-- [/Users/zhiyuan/我的笔记/统一函数总表/0278-D242-四象限相变路径函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+- [PRIVATE_PROVENANCE_WITHHELD](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-866b2423089d6bca / /Users/zhiyuan/我的笔记/统一函数总表/0278-D242-四象限相变路径函数.md
+  - 可搜索名称：NFC-866b2423089d6bca / PRIVATE_PROVENANCE_WITHHELD
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：D242；被引用：—
-- [/Users/zhiyuan/我的笔记/统一函数总表/0279-D243-感知退出权瓶颈函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+- [PRIVATE_PROVENANCE_WITHHELD](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-9642704f6e4f0df5 / /Users/zhiyuan/我的笔记/统一函数总表/0279-D243-感知退出权瓶颈函数.md
+  - 可搜索名称：NFC-9642704f6e4f0df5 / PRIVATE_PROVENANCE_WITHHELD
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：D243；被引用：—

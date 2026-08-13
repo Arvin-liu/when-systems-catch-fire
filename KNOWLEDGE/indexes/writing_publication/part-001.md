@@ -149,6 +149,11 @@
   - 可搜索名称：IMPLICIT-939E7A37795972AC / public = any(anchor.get("source_context") == "CURRENT_PUBLIC_SURFACE" for anchor in anchors) / IMPLICIT-939E7A37795972AC
   - 来源：`tools/governance/build_knowledge_experience.py`
   - 依赖：—；被引用：—
+- [Public knowledge projection privacy scan: pass; source registries unchanged.](../../../reports/validation/pointfire-seven-track-current-main-maintenance-r1-20260813.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-fb4917df12455cb3 / Public knowledge projection privacy scan: pass; source registries unchanged.
+  - 来源：`reports/validation/pointfire-seven-track-current-main-maintenance-r1-20260813.md`
+  - 依赖：—；被引用：—
 - [Q27 的战场、麦克风、银行与电网共同暴露“扰动—耦合—正反馈—阈值—换态”的结构，并产生“冲击衰减／冲击放大”的新增解释。它是跨域同构叙事这一应用类型的有效基线。](../../../docs/publication/zhiyuan-writing-examples.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-4bf829b566abc1c0 / Q27 的战场、麦克风、银行与电网共同暴露“扰动—耦合—正反馈—阈值—换态”的结构，并产生“冲击衰减／冲击放大”的新增解释。它是跨域同构叙事这一应用类型的有效基线。
@@ -213,6 +218,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-038e96bba3393be9 / The normative candidate contract is `docs/operations/stage-snapshot-publication.md`. This section, its schemas, tools, t
   - 来源：`ITERATION.md`
+  - 依赖：—；被引用：—
+- [The public knowledge-experience projection now deterministically withholds](../../../reports/validation/pointfire-seven-track-current-main-maintenance-r1-20260813.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-649d470b4098cd10 / The public knowledge-experience projection now deterministically withholds
+  - 来源：`reports/validation/pointfire-seven-track-current-main-maintenance-r1-20260813.md`
   - 依赖：—；被引用：—
 - [The Q27 story was read but not copied. It is preserved as a useful baseline: battlefield, microphone, bank and grid expo](../../../reports/operations/121Q28-embodied-cognitive-leap-writing-method-audit.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`

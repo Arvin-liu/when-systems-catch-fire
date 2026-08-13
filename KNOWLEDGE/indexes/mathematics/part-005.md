@@ -794,9 +794,9 @@
   - 可搜索名称：NFC-ff5b68cef4670487 / correction notice: the 075 labels below are raw-row heuristics, not verified provenance facts. DIRECT_SOURCE_FOUND meant
   - 来源：`reports/math-foundation/provenance-audit-20260712.md`
   - 依赖：—；被引用：—
-- [correction notice: this is a preserved 075 filesystem snapshot. A fresh read-only check found /Users/zhiyuan/我的笔记/getnot](../../../reports/math-foundation/local-note-sync-report-20260712.md)
+- [correction notice: this is a preserved 075 filesystem snapshot. A fresh read-only check found PRIVATE_PROVENANCE_WITHHELD](../../../reports/math-foundation/local-note-sync-report-20260712.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-8351db0937af6b3e / correction notice: this is a preserved 075 filesystem snapshot. A fresh read-only check found /Users/zhiyuan/我的笔记/getnot
+  - 可搜索名称：NFC-8351db0937af6b3e / correction notice: this is a preserved 075 filesystem snapshot. A fresh read-only check found PRIVATE_PROVENANCE_WITHHELD
   - 来源：`reports/math-foundation/local-note-sync-report-20260712.md`
   - 依赖：—；被引用：—
 - [correction notice: this is a preserved 075 heuristic pilot, not an object-level proof audit. Its 110 selections mix A/MF](../../../reports/math-foundation/pilot-formal-audit-20260712.md)

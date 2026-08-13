@@ -6,8 +6,8 @@ Every recovered result/article receives a card and three reading levels. Functio
 
 - 结果/文章来源：294；资产卡：294；分层阅读：294。
 - 函数 registry：7257；重点人工可读卡：12。
-- 非函数断言 registry：18040；重点人工可读卡：49。
-- 全量搜索记录：25591；知识变化：278。
+- 非函数断言 registry：18046；重点人工可读卡：49。
+- 全量搜索记录：25597；知识变化：278。
 
 ## 历史结果审计
 
@@ -15,7 +15,7 @@ Every recovered result/article receives a card and three reading levels. Functio
 |---|---:|---|
 |`CURRENT_OR_SCOPED_SOURCE`|263|现存且未被识别为辅助/撤回历史的来源记录。|
 |`STALE_OR_INTERMEDIATE`|24|交接、预检、夜间进度等中间材料；保留来源与卡片，不进入主时间线。|
-|`MACHINE_ONLY`|25236|仍可全量搜索、可回到 canonical registry，但未达到本轮重点卡片 materiality policy。|
+|`MACHINE_ONLY`|25242|仍可全量搜索、可回到 canonical registry，但未达到本轮重点卡片 materiality policy。|
 |`SOURCE_MISSING`|0|索引指向不存在来源；必须为零，否则 CI 阻断。|
 |`SUPERSEDED_OR_WITHDRAWN`|7|来源自身带历史、替代或撤回信号；保留演化链，不作为当前结论。|
 |`NOT_MEANINGFUL_PUBLIC_CHANGE`|24|不是有意义的公共知识变化，不进入 What's New。|

@@ -10,13 +10,11 @@
 - [第 004 片](./architecture_governance/part-004.md)：1501—2000；def authority_snapshot(self): → def main():
 - [第 005 片](./architecture_governance/part-005.md)：2001—2500；def main(): → def test_charter_not_in_non_action_release(self): self.bad(lambda d:d\["responsibility_federations"\]\[0\]\["authorities"\].append("charter.normative"),"Charter")
 - [第 006 片](./architecture_governance/part-006.md)：2501—3000；def test_charter_required_for_action_release(self): self.bad(lambda d:d\["responsibility_federations"\]\[1\]\["authorities"\].remove("charter.normative"),"Charter") → def test_query_summary(self):
-- [第 007 片](./architecture_governance/part-007.md)：3001—3500；def test_read_latest(self): → evidence and current claim ceiling. Hashes are computed from the current repo
-- [第 008 片](./architecture_governance/part-008.md)：3501—4000；Evidence and limits → L5：实验、临床、法律、工程、社会科学实证或政策验证，除非已有外部证据。
-- [第 009 片](./architecture_governance/part-009.md)：4001—4500；L5：验证 → Q-0031 将免疫缺陷和感染性疾病统一写成防御能力与复制数阈值问题。
-- [第 010 片](./architecture_governance/part-010.md)：4501—5000；Q14 增加版本化地图投影与导航 overlay，不新增真值层，不废弃矩阵或 registry，也不建立永久唯一总地图。 → The public synthesis describes projection, normalization/deduplication, theme mapping, review/conflict retention and bou
-- [第 011 片](./architecture_governance/part-011.md)：5001—5500；The publication states are `UNPUBLISHED`, `PR_VISIBLE`, `PUBLISHED_SNAPSHOT`, `SUPERSEDED_SNAPSHOT`, `WITHDRAWN_SNAPSHOT → \| \[C-579\]( ) \| \[上下文饱和重置验证\]( ) \| 当上下文噪声和冲突累积超过保真阈值时，重置会提高局部推理质量；跨会话状态
-- [第 012 片](./architecture_governance/part-012.md)：5501—6000；\| \[C-580\]( ) \| \[睡眠清除门控验证\]( ) \| 睡眠改变神经调质、血流、间隙和代谢状态，从而改变清除通量；外部研究对“睡眠一定 → 中文：该案例把“AI 共震”从经验感受推进到可验证结构，说明同质性遮蔽既不是单一主体故意欺骗，也不是简单兼容性问题，而是第三类独立遮蔽源。
-- [第 013 片](./architecture_governance/part-013.md)：6001—6500；中文：跑动耦合验证 — 投资决策：秒级观测（μ_cog=1秒）→ε_eff≈0.1（噪声主导，看不出差异）；日级观测→ε_eff≈0.5；年级观测→ε_eff… → 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0354-C-355-组织层级=信息保真度结构 — CEO→VP→执行层每层内部同层沟通非对称退化最小,扁平化ηfidelity断崖下降.md`
-- [第 014 片](./architecture_governance/part-014.md)：6501—7000；原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0355-C-356-扁平化vs分层编码 — 10人团队CEO直接BL对全员ηflat=0.08,加VP中间层ηlayered=0.211,效率差2.6 → 撤回：保留旧记录和证据，将状态改为 `WITHDRAWN_SNAPSHOT`、outcome 改为 `WITHDRAWN`，首页必须明示撤回。
-- [第 015 片](./architecture_governance/part-015.md)：7001—7500；支持、赞助、商业许可或基础设施贡献不得购买事实结论、证据等级、治理否决权、合并权、路线优先权、免受批评的资格，或对缺口、失败和风险的压制。资金可以支持项目继续存在，不能替代证据、审查、反例、治理程序和公开异议。 → 证据等级**：你自己的判断（强 / 中 / 弱 / 单一来源）
-- [第 016 片](./architecture_governance/part-016.md)：7501—7735；证据等级不足 → ：晋级门槛 + 初版验证器。machine_eligible=0/12，但验证器字段与 Schema 不一致。
+- [第 007 片](./architecture_governance/part-007.md)：3001—3500；def test_read_latest(self): → evidence = {row\["canonical_id"\]: row for row in load_jsonl(EVIDENCE_LINEAGE)}
+- [第 008 片](./architecture_governance/part-008.md)：3501—4000；evidence and current claim ceiling. Hashes are computed from the current repo → L5：外部实证验证
+- [第 009 片](./architecture_governance/part-009.md)：4001—4500；L5：实验、临床、法律、工程、社会科学实证或政策验证，除非已有外部证据。 → Q-0005 作为 \[D84\](docs/zh/functions/items/D84.md) 的新增验证案例，说明 AI-ε 安装路径需要重置与外部记忆共同维持。
+- [第 010 片](./architecture_governance/part-010.md)：4501—5000；Q-0031 将免疫缺陷和感染性疾病统一写成防御能力与复制数阈值问题。 → The primary contribution is a direct multi-model, multi-subset and multi-task empirical comparison with explicit control
+- [第 011 片](./architecture_governance/part-011.md)：5001—5500；The proposed diagnostic sequence checks representation compatibility first, parameter conflict and subspace overlap seco → \| \[C-523\]( ) \| \[不确定性原理 — Fisher信息度规的几何必然，算符不对易是度规非对角的代数表现\](architecture_governance/part-012.md)：5501—6000；\| \[C-536\]( ) \| \[等效原理 — m_i=m_g精确到O((μ/M_Planck)²)，强场失效\](architecture_governance/part-013.md)：6001—6500；中文：该案例围绕 自举激活归零验证 展开。 → 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD
+- [第 014 片](./architecture_governance/part-014.md)：6501—7000；原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD → 搜索，但因 evidence gate 前置条件未满足而阻断，不作为已复现实现缺陷推进。未来若要
+- [第 015 片](./architecture_governance/part-015.md)：7001—7500；摘要来源未验证**：abstract 字段可能为模型生成而非出版商摘要 → 证据状态：** 语篇描述充分；“意合／形合”只能作为梯度，不是二分本质。
+- [第 016 片](./architecture_governance/part-016.md)：7501—7738；证据状态：** 语音、加工和文体证据存在；文学质量不能由标点统计推出。 → ：晋级门槛 + 初版验证器。machine_eligible=0/12，但验证器字段与 Schema 不一致。

@@ -192,9 +192,9 @@ PARTIALEXTERNALEVIDENCELAYERWITHEXPLICITBLOCKERS 边界：This is a conservative
 - 来源要点（导航摘录，不得视为当前断言）：主题：Codespace 救援两张表差异审计
 - 来源要点（导航摘录，不得视为当前断言）：两张表（函数总表 / 案例总表）本质上属于点火项目 Arvin-liu/when-systems-catch-fire 的核心资产，不应长期分裂到独立仓库维护。LIANGZHANGBIAO / Unified-Case-Table / Unified-Function-Table 仅作为 Codespace 救援缓存，不作为长期维护主线。
 - 来源要点（导航摘录，不得视为当前断言）：本审计只做差异扫描，不修改正式两张表，不提交合并，不删除 Codespace。
-- 来源要点（导航摘录，不得视为当前断言）：救援函数表：/Users/zhiyuan/Agent 工作区/Codespace-Rescue/Unified-Case-Table/统一函数总表Codespace救援.md
+- 来源要点（导航摘录，不得视为当前断言）：救援函数表：PRIVATE_PROVENANCE_WITHHELD
 - 来源要点（导航摘录，不得视为当前断言）：条目数：1 条第 0 节主入口 + 5 条内部子项 + 470 条普通函数（标准 ID 共 476 个：MF/A/T/D 类）
-- 来源要点（导航摘录，不得视为当前断言）：救援案例表：/Users/zhiyuan/Agent 工作区/Codespace-Rescue/Unified-Case-Table/统一案例总表Codespace救援.md
+- 来源要点（导航摘录，不得视为当前断言）：救援案例表：PRIVATE_PROVENANCE_WITHHELD
 
 ### 完整阅读
 
@@ -1697,7 +1697,7 @@ Status: superseded non-ready method 1.1.0 Draft candidate on PR 57. Q25C preserv
 - 来源要点（导航摘录，不得视为当前断言）：任务：12 元协议规范性审核外部治理记录入库与统一发布
 - 来源要点（导航摘录，不得视为当前断言）：基线分支：docs/life-community-value-charter-20260711（宪章 PR #9，尚未合并）
 - 来源要点（导航摘录，不得视为当前断言）：发布分支：docs/meta-protocol-normative-reviews-20260711
-- 来源要点（导航摘录，不得视为当前断言）：验证脚本：outputs/audit 由 /tmp/auditreviews.py 生成（脚本不入库）
+- 来源要点（导航摘录，不得视为当前断言）：验证脚本：outputs/audit 由 PRIVATE_PROVENANCE_WITHHELD
 - 来源要点（导航摘录，不得视为当前断言）：主题：二、验证清单（23 项，全部通过）
 
 ### 完整阅读
@@ -1890,7 +1890,7 @@ Expected registry counts: {"benchmarkcounterexamples":2,"candidatecases":22,"for
 
 - 来源要点（导航摘录，不得视为当前断言）：主题：输入材料快照 · 赛课机制下的教师生存困境
 - 来源要点（导航摘录，不得视为当前断言）：本轮工作副本：inputs/collisions/20260708-teacher-competition/source.md
-- 来源要点（导航摘录，不得视为当前断言）：原始上传路径：/Users/zhiyuan/Library/Containers/com.biji.getNotes/Data/Library/Caches/赛课机制下的教师生存困境：当讲台之上的人不堪重负，教育该如何安放-2026年07月08日-来自【Get 笔记】.md
+- 来源要点（导航摘录，不得视为当前断言）：原始上传路径：PRIVATE_PROVENANCE_WITHHELD
 - 来源要点（导航摘录，不得视为当前断言）：赛课机制下的教师生存困境：当讲台之上的人不堪重负，教育该如何安放
 - 来源要点（导航摘录，不得视为当前断言）：文章以「赛课」机制为对象，揭示其将教师专业成长转化为可量化竞赛，层层绑定职称、绩效、学校业绩与教研资源，造成教师身心代价与真实教学被挤压。含 7 条机制链、多教师个案表格、系统性钝化与「教室作为避风港」结尾。提出了量化竞赛转化、多层利益绑定、表演化生产、评价失衡、身心外部化、避风港等多个可判定结构点。
 - 来源要点（导航摘录，不得视为当前断言）：是（仅用本地 Markdown 正文，未访问网页，未用公众号推广语/图片链接作核心材料）。
@@ -3485,7 +3485,7 @@ Date: 2026-07-13 Task: IGNITION-20260709-083 Executor: QClaw GLM-5.2 (pool-glm-5
 
 - 来源要点（导航摘录，不得视为当前断言）：076 correction notice: several items below became stale after 075 execution. The 076 task now runs in the required real worktree; PR #22 exists and remains OPEN / DRAFT / UNMERGED; “95 objects” was a duplicated raw-row bucket, not a deduplicated verified source-gap count. Current blockers are maintained in data/foundation/unresolved-obligations.jsonl and the…
 - 来源要点（导航摘录，不得视为当前断言）：主题：Active Blockers
-- 来源要点（导航摘录，不得视为当前断言）：默认本地来源根缺失: /Users/zhiyuan/Documents/GetNoteVault/getnote-notes, /Users/zhiyuan/我的笔记/得到大脑
+- 来源要点（导航摘录，不得视为当前断言）：默认本地来源根缺失: PRIVATE_PROVENANCE_WITHHELD
 - 来源要点（导航摘录，不得视为当前断言）：当前任务工作目录不是正式 repo；必须在真实仓库分支执行。
 - 来源要点（导航摘录，不得视为当前断言）：仍有 95 个对象未恢复到直接来源，不能宣称数学成立或来源闭环。
 - 来源要点（导航摘录，不得视为当前断言）：Draft PR 远端状态尚未在本轮重新写入，因为需要后续 push / PR 创建步骤。
@@ -3742,12 +3742,12 @@ Q25B correctly separated completion states but incorrectly required projectsynch
 
 ### 1 分钟
 
-生成时间：2026-07-08 21:25 (GMT+8) 任务来源：用户发来的「点火项目整体认知初始化」指令（.md 附件） 执行方式：只读阅读 GitHub 主仓库（README / docs / outputs/audit / 统一函数总表 / 统一案例总表 / data / schemas / tools），未修改任何核心资产。 主仓库路径：/Users/zhiyuan/Agent 工作区/Codex/2026-06-25/github-cp-agent-500-600-1000/when-systems-catch-fire git 状态（只读确认）：main 与 origin… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+生成时间：2026-07-08 21:25 (GMT+8) 任务来源：用户发来的「点火项目整体认知初始化」指令（.md 附件） 执行方式：只读阅读 GitHub 主仓库（README / docs / outputs/audit / 统一函数总表 / 统一案例总表 / data / schemas / tools），未修改任何核心资产。 主仓库路径：PRIVATE_PROVENANCE_WITHHELD
 
 ### 5 分钟
 
 - 来源要点（导航摘录，不得视为当前断言）：主题：点火项目整体认知初始化 — Agent 认知报告
-- 来源要点（导航摘录，不得视为当前断言）：生成时间：2026-07-08 21:25 (GMT+8) 任务来源：用户发来的「点火项目整体认知初始化」指令（.md 附件） 执行方式：只读阅读 GitHub 主仓库（README / docs / outputs/audit / 统一函数总表 / 统一案例总表 / data / schemas / tools），未修改任何核心资产。 主仓库路径：/Users/zhiyuan/Agent 工作区/Codex/2026-06-25/github-cp-agent-500-600-1000/when-systems-catch-fire git 状态（只读确认）：main 与 origin/main 同步，工作区干净。
+- 来源要点（导航摘录，不得视为当前断言）：生成时间：2026-07-08 21:25 (GMT+8) 任务来源：用户发来的「点火项目整体认知初始化」指令（.md 附件） 执行方式：只读阅读 GitHub 主仓库（README / docs / outputs/audit / 统一函数总表 / 统一案例总表 / data / schemas / tools），未修改任何核心资产。 主仓库路径：PRIVATE_PROVENANCE_WITHHELD
 - 来源要点（导航摘录，不得视为当前断言）：一句话：点火（When Systems Catch Fire）是一个跨学科系统相变的生成模型——把现象映射为函数与案例，分析系统何时被「点燃」，输出 true / false / contradiction / pending 四象限结论。
 - 来源要点（导航摘录，不得视为当前断言）：跨域结构性推论的元工具（meta-tool），不是物理理论、不是数学证明工具、不是学科替代品。
 - 来源要点（导航摘录，不得视为当前断言）：通过六组件（C / M / Iiso / Lmeta / Gδ / Pmeta）帮助人和 AI 发现不同领域共享的结构性规律。
@@ -4236,10 +4236,10 @@ files=141, latestmtime=2026-07-09 17:36:06, sampledtotalsizebytes=135155 边界�
 ### 5 分钟
 
 - 来源要点（导航摘录，不得视为当前断言）：主题：Local Note Sync Report
-- 来源要点（导航摘录，不得视为当前断言）：076 correction notice: this is a preserved 075 filesystem snapshot. A fresh read-only check found /Users/zhiyuan/我的笔记/getnote-notes present with 117986 files, while /Users/zhiyuan/我的笔记/得到大脑 remained absent. Current evidence is recorded in reports/foundation-architecture/local-source-recovery-audit-20260712.md. Directory existence alone does not verify per-ob…
-- 来源要点（导航摘录，不得视为当前断言）：/Users/zhiyuan/Documents/GetNoteVault/getnote-notes: exists=no
-- 来源要点（导航摘录，不得视为当前断言）：/Users/zhiyuan/我的笔记/得到大脑: exists=no
-- 来源要点（导航摘录，不得视为当前断言）：/Users/zhiyuan/我的笔记/2026-07-09 1735: exists=yes
+- 来源要点（导航摘录，不得视为当前断言）：076 correction notice: this is a preserved 075 filesystem snapshot. A fresh read-only check found PRIVATE_PROVENANCE_WITHHELD
+- 来源要点（导航摘录，不得视为当前断言）：PRIVATE_PROVENANCE_WITHHELD
+- 来源要点（导航摘录，不得视为当前断言）：PRIVATE_PROVENANCE_WITHHELD
+- 来源要点（导航摘录，不得视为当前断言）：PRIVATE_PROVENANCE_WITHHELD
 - 来源要点（导航摘录，不得视为当前断言）：files=141, latestmtime=2026-07-09 17:36:06, sampledtotalsizebytes=135155
 
 ### 完整阅读
@@ -4367,7 +4367,7 @@ Task 99 reuses the task-98 governance layer and expands discovery to executable 
 - 来源要点（导航摘录，不得视为当前断言）：主题：审计：生命共同体价值宪章 README 入口
 - 来源要点（导航摘录，不得视为当前断言）：任务编号：IGNITION-20260709-041
 - 来源要点（导航摘录，不得视为当前断言）：正式仓库：Arvin-liu/when-systems-catch-fire
-- 来源要点（导航摘录，不得视为当前断言）：工作树：/Users/zhiyuan/Documents/Codex/2026-07-11/ignition-20260709-041/worktree/repo（仅本机执行位置，不进入提交内容）
+- 来源要点（导航摘录，不得视为当前断言）：工作树：PRIVATE_PROVENANCE_WITHHELD
 - 来源要点（导航摘录，不得视为当前断言）：分支：docs/life-community-value-charter-20260711
 - 来源要点（导航摘录，不得视为当前断言）：基线 base SHA：9463459edab4803c2452ae52d0f1ca2733cdc008（执行时最新 origin/main）
 
@@ -5515,7 +5515,7 @@ Pmeta2(x) := Symmetry(Decision(x), Information(x)) 边界：This is a conservati
 - 来源要点（导航摘录，不得视为当前断言）：判定维度：对象类型、定义域/值域占位、变量/单位、散文伪公式、类型错误、反例、案例-证明混淆、框架内收敛误写为外部真理。
 - 来源要点（导航摘录，不得视为当前断言）：主题：A1 I(t,L) 提议者意识 / I(t,L) proposer awareness
 - 来源要点（导航摘录，不得视为当前断言）：原始命题: 提议者是否有意识，二值变量。不可推导，作为框架起点。 扩展注释 / Extended Annotation
-- 来源要点（导航摘录，不得视为当前断言）：原始来源: /Users/zhiyuan/我的笔记/getnote-notes/点火/2026-06-121912608226785509104点火｜函数A1.md
+- 来源要点（导航摘录，不得视为当前断言）：原始来源: PRIVATE_PROVENANCE_WITHHELD
 
 ### 完整阅读
 
@@ -5720,7 +5720,7 @@ Status: 121Q32THISTORICAL. Iteration method 1.3.0 and interactive system map 0.3
 
 ### 1 分钟
 
---- kind: "story" seq: 1 id: "S1" title: "比刀剑更持久的，是共享观念" source: "/Users/zhiyuan/Library/Containers/com.biji.getNotes/Data/Library/Caches/比刀剑更持久的，是共享观念-2026年07月06日-来自【Get 笔记】.md" derivedfrom: "/Users/zhiyuan/Library/Containers/com.biji.getNotes/Data/Library/Caches/欧亚大陆的枢纽×Ψ₀元函数验证报告 2026年7月6日0306-… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+--- kind: "story" seq: 1 id: "S1" title: "比刀剑更持久的，是共享观念" source: "PRIVATE_PROVENANCE_WITHHELD" derivedfrom: "PRIVATE_PROVENANCE_WITHHELD
 
 ### 5 分钟
 
@@ -6007,8 +6007,8 @@ No 075 keyword hit satisfied the replay contract. Two new 076 benchmark countere
 ### 5 分钟
 
 - 来源要点（导航摘录，不得视为当前断言）：主题：MF-0001~0005 Codespace 救援复核
-- 来源要点（导航摘录，不得视为当前断言）：救援函数表：/Users/zhiyuan/Agent 工作区/Codespace-Rescue/Unified-Case-Table/统一函数总表Codespace救援.md
-- 来源要点（导航摘录，不得视为当前断言）：正式函数表目录：/Users/zhiyuan/Agent 工作区/Codex/2026-06-25/github-cp-agent-500-600-1000/when-systems-catch-fire/统一函数总表/
+- 来源要点（导航摘录，不得视为当前断言）：救援函数表：PRIVATE_PROVENANCE_WITHHELD
+- 来源要点（导航摘录，不得视为当前断言）：正式函数表目录：PRIVATE_PROVENANCE_WITHHELD
 - 来源要点（导航摘录，不得视为当前断言）：主题：抽取内容（来自救援函数表 Section 0 内部元算子表）
 - 来源要点（导航摘录，不得视为当前断言）：在正式函数表目录中搜索以下关键词，命中情况：
 - 来源要点（导航摘录，不得视为当前断言）：计算 J⁺ / 计算 J⁻：0 文件

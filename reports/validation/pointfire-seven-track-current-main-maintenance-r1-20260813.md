@@ -28,6 +28,11 @@ projection from claim/function discovery while keeping it accountable to the
 dedicated path validator. This closes the generated self-ingestion drift
 without changing any source claim or disposition.
 
+The public knowledge-experience projection now deterministically withholds
+machine-local and private provenance markers from generated human and machine
+surfaces. Source registries remain unchanged; the projection validator fails
+closed if an absolute local provenance marker reappears.
+
 The current front door was restored with explicit conservative result,
 correction, open-question, Foundation, knowledge, system-map, and MCF/PSD/ARN
 navigation. The stale human-front-door assertion was updated from the retired
@@ -41,6 +46,7 @@ navigation. The stale human-front-door assertion was updated from the retired
 - Nonfunction closure: `54/54`, `NONFUNCTION_CLAIM_EVIDENCE_LINEAGE_CLOSURE_VALID`.
 - Knowledge-experience generator `--check`: pass.
 - Knowledge-experience two-pass determinism: pass; outputs byte-identical.
+- Public knowledge projection privacy scan: pass; source registries unchanged.
 - Repository path accounting: the initial `3588` manifest versus `3610`
   tracked paths discrepancy is closed by the canonical manifest generator.
   The maintenance candidate itself adds the report and one generated index;
