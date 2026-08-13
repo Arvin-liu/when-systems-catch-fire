@@ -377,8 +377,8 @@
   - 来源：`docs/ai-assistant-usage-reference.md`
   - 依赖：—；被引用：—
 - [Q33 lifecycle closeout (I2): PR #63 was independently accepted and merged (merge commit cf321f9); the 7 copyright risk a](../../../CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-3b9eefef6e0c9149 / Q33 lifecycle closeout (I2): PR #63 was independently accepted and merged (merge commit cf321f9); the 7 copyright risk a
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-e47b8ee8de6fe879 / Q33 lifecycle closeout (I2): PR #63 was independently accepted and merged (merge commit cf321f9); the 7 copyright risk a
   - 来源：`CHANGELOG.md`
   - 依赖：—；被引用：—
 - [quarantines missing proof/evidence instead of manufacturing it.](../../../tools/foundation/adjudicate_nonfunction_claims.py)

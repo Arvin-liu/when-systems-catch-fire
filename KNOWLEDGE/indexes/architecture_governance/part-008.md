@@ -639,11 +639,6 @@
   - 可搜索名称：NFC-2df449f0a06da192 / external = bool(EXTERNAL.search(text)) or empirical
   - 来源：`tools/foundation/adjudicate_nonfunction_claims.py`
   - 依赖：—；被引用：—
-- [External attestation (F12 receipt in 1111, commit 3fbf40c9) binds exact HEAD 9290c83f, the three historical CI runs (fou](../../../CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-fb55889e61cfb8b3 / External attestation (F12 receipt in 1111, commit 3fbf40c9) binds exact HEAD 9290c83f, the three historical CI runs (fou
-  - 来源：`CHANGELOG.md`
-  - 依赖：—；被引用：—
 - [external expert / independent replication：增加有范围的外部证据；不自动解决价值或无关轴；](../../../docs/architecture/epistemic-governance-kernel-and-federated-planes.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-34bab8cb1b4d9a8b / external expert / independent replication：增加有范围的外部证据；不自动解决价值或无关轴；
@@ -2503,4 +2498,9 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-b8866f79abe5fbb6 / L1：结构类比；
   - 来源：`docs/pending_claims_register.md`
+  - 依赖：—；被引用：—
+- [L2 推论误写成 L5 结论指内部结构性判断被当作外部实证成立。](../../../outputs/getbrain/failure-typology-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-5a35e19bd4568f1c / L2 推论误写成 L5 结论指内部结构性判断被当作外部实证成立。
+  - 来源：`outputs/getbrain/failure-typology-draft-20260706.md`
   - 依赖：—；被引用：—

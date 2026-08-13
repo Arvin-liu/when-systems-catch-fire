@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [视觉邻近不是同构。](../../../ARCHITECTURE.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-8e3f220e18f79c42 / 视觉邻近不是同构。
+  - 来源：`ARCHITECTURE.md`
+  - 依赖：—；被引用：—
 - [解析来源仓库、PR、分支、精确 HEAD，以及 1111 回执或等价证据入口；](../../../docs/operations/stage-snapshot-publication.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-3174573d77926519 / 解析来源仓库、PR、分支、精确 HEAD，以及 1111 回执或等价证据入口；

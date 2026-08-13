@@ -2419,7 +2419,7 @@
   - 依赖：—；被引用：—
 - [The method does not prove truth, value, causality, completeness or correctness; final main closeout HEAD and post-closeo](../../../CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-e414c8418bdfe04a / The method does not prove truth, value, causality, completeness or correctness; final main closeout HEAD and post-closeo
+  - 可搜索名称：NFC-4a0c8f7b67a2df02 / The method does not prove truth, value, causality, completeness or correctness; final main closeout HEAD and post-closeo
   - 来源：`CHANGELOG.md`
   - 依赖：—；被引用：—
 - [The missing layer is a derived representation for heterogeneous, non-causal, multilayer, temporally activated, higher-or](../../../reports/architecture/121Q23-relational-network-gap-audit.md)

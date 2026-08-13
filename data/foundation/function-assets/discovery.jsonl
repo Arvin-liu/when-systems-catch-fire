@@ -2887,7 +2887,7 @@
 {"first_line":276,"last_line":490,"mention_count":5,"path":"统一案例总表/INDEX.md","role":"REFERENCE","stable_id":"D126"}
 {"first_line":13,"last_line":13,"mention_count":1,"path":"AGENTS.md","role":"REFERENCE","stable_id":"D127"}
 {"first_line":35,"last_line":35,"mention_count":1,"path":"AI-HANDOFF.md","role":"REFERENCE","stable_id":"D127"}
-{"first_line":30,"last_line":30,"mention_count":1,"path":"CHANGELOG.md","role":"REFERENCE","stable_id":"D127"}
+{"first_line":42,"last_line":42,"mention_count":1,"path":"CHANGELOG.md","role":"REFERENCE","stable_id":"D127"}
 {"first_line":10,"last_line":10,"mention_count":1,"path":"RESULTS/CORRECTIONS.md","role":"REFERENCE","stable_id":"D127"}
 {"first_line":13,"last_line":538,"mention_count":15,"path":"analysis/corpus-relation/cluster_source_briefs/C000.md","role":"REFERENCE","stable_id":"D127"}
 {"first_line":3477,"last_line":3477,"mention_count":1,"path":"analysis/corpus-relation/corpus_relation_graph.json","role":"REFERENCE","stable_id":"D127"}
@@ -5249,7 +5249,7 @@
 {"first_line":47,"last_line":47,"mention_count":1,"path":"统一案例总表/0220-C-220-肉身经验天然跨三域.md","role":"REFERENCE","stable_id":"D181"}
 {"first_line":13,"last_line":13,"mention_count":1,"path":"AGENTS.md","role":"REFERENCE","stable_id":"D182"}
 {"first_line":35,"last_line":35,"mention_count":1,"path":"AI-HANDOFF.md","role":"REFERENCE","stable_id":"D182"}
-{"first_line":30,"last_line":30,"mention_count":1,"path":"CHANGELOG.md","role":"REFERENCE","stable_id":"D182"}
+{"first_line":42,"last_line":42,"mention_count":1,"path":"CHANGELOG.md","role":"REFERENCE","stable_id":"D182"}
 {"first_line":35,"last_line":538,"mention_count":16,"path":"analysis/corpus-relation/cluster_source_briefs/C000.md","role":"REFERENCE","stable_id":"D182"}
 {"first_line":3492,"last_line":3492,"mention_count":1,"path":"analysis/corpus-relation/corpus_relation_graph.json","role":"REFERENCE","stable_id":"D182"}
 {"first_line":244,"last_line":244,"mention_count":1,"path":"data/foundation/adjudications/079-method-audit.jsonl","role":"REFERENCE","stable_id":"D182"}
@@ -5655,7 +5655,7 @@
 {"first_line":80,"last_line":80,"mention_count":1,"path":"统一函数总表/INDEX.md","role":"REFERENCE","stable_id":"D19"}
 {"first_line":13,"last_line":13,"mention_count":1,"path":"AGENTS.md","role":"REFERENCE","stable_id":"D190"}
 {"first_line":35,"last_line":35,"mention_count":1,"path":"AI-HANDOFF.md","role":"REFERENCE","stable_id":"D190"}
-{"first_line":30,"last_line":30,"mention_count":1,"path":"CHANGELOG.md","role":"REFERENCE","stable_id":"D190"}
+{"first_line":42,"last_line":42,"mention_count":1,"path":"CHANGELOG.md","role":"REFERENCE","stable_id":"D190"}
 {"first_line":179,"last_line":538,"mention_count":13,"path":"analysis/corpus-relation/cluster_source_briefs/C000.md","role":"REFERENCE","stable_id":"D190"}
 {"first_line":3610,"last_line":3610,"mention_count":1,"path":"analysis/corpus-relation/corpus_relation_graph.json","role":"REFERENCE","stable_id":"D190"}
 {"first_line":252,"last_line":252,"mention_count":1,"path":"data/foundation/adjudications/079-method-audit.jsonl","role":"REFERENCE","stable_id":"D190"}
@@ -8479,7 +8479,7 @@
 {"first_line":28,"last_line":92,"mention_count":4,"path":"统一案例总表/0108-C-108-认知犹豫域压缩.md","role":"REFERENCE","stable_id":"D26"}
 {"first_line":13,"last_line":13,"mention_count":1,"path":"AGENTS.md","role":"REFERENCE","stable_id":"D260"}
 {"first_line":35,"last_line":35,"mention_count":1,"path":"AI-HANDOFF.md","role":"REFERENCE","stable_id":"D260"}
-{"first_line":30,"last_line":30,"mention_count":1,"path":"CHANGELOG.md","role":"REFERENCE","stable_id":"D260"}
+{"first_line":42,"last_line":42,"mention_count":1,"path":"CHANGELOG.md","role":"REFERENCE","stable_id":"D260"}
 {"first_line":11,"last_line":11,"mention_count":1,"path":"RESULTS/CORRECTIONS.md","role":"REFERENCE","stable_id":"D260"}
 {"first_line":303,"last_line":314,"mention_count":2,"path":"analysis/corpus-relation/article_cluster_candidates.json","role":"REFERENCE","stable_id":"D260"}
 {"first_line":193,"last_line":538,"mention_count":23,"path":"analysis/corpus-relation/cluster_source_briefs/C000.md","role":"REFERENCE","stable_id":"D260"}
@@ -22367,7 +22367,7 @@
 {"first_line":41,"last_line":41,"line":41,"mention_count":1,"path":"docs/foundation/task-107-verification-ladder.json","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-210015EEE1BAE5D9","text":"\"name\": \"generator --check: adjudicate_function_assets.py\","}
 {"first_line":34,"last_line":34,"line":34,"mention_count":1,"path":"统一函数总表/0570-D555-认知调取函数.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-2104A37C659A3473","text":"- 数学表达 / Expression: `F_cognitive_retrieval := ∫(distributed_path × synchronous_activation × adaptive_plasticity) / retrieval_topology`"}
 {"first_line":49,"last_line":49,"line":49,"mention_count":1,"path":"data/external-research/121-fulltext-resolver/121q3/function-os/nodes/N7.json","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-2105EA4E2759B979","text":"\"title\": \"Voyager: An Open-Ended Embodied Agent with Large Language Models\""}
-{"first_line":11,"last_line":11,"line":11,"mention_count":1,"path":"CHANGELOG.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-2119AEAF16D8584E","text":"## 2026-07-30 — Knowledge experience entry and exploration layer (task 102)"}
+{"first_line":23,"last_line":23,"line":23,"mention_count":1,"path":"CHANGELOG.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-2119AEAF16D8584E","text":"## 2026-07-30 — Knowledge experience entry and exploration layer (task 102)"}
 {"first_line":19,"last_line":19,"line":19,"mention_count":1,"path":"templates/collision/task-template.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-2122923192C17BD7","text":"## 使用函数范围"}
 {"first_line":49,"last_line":49,"line":49,"mention_count":1,"path":"tests/foundation/test_nonfunction_claim_closure.py","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-212956752E2F5C41","text":"def test_candidate_discovery_is_conservative_but_multilingual(self):"}
 {"first_line":47,"last_line":47,"line":47,"mention_count":1,"path":"function-os-candidate/v0.2/tests/test_e2e_pipeline.py","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-21338A0D020239FC","text":"def setUp(self):"}
@@ -22895,7 +22895,7 @@
 {"first_line":28,"last_line":28,"line":28,"mention_count":1,"path":"tools/validate_unesco_coverage.py","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-3726757CFD9CC001","text":"def main() -> int:"}
 {"first_line":29,"last_line":29,"line":29,"mention_count":1,"path":"统一案例总表/0726-C-0731-毕加索立体主义×中国手卷流动性跨域同构案例.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-3735AA0FA25CDF6C","text":"## 纯数学函数与推导 / Pure Mathematical Function and Derivation"}
 {"first_line":123,"last_line":123,"line":123,"mention_count":1,"path":"data/external-research/121-fulltext-resolver/121c01/121c01-validator.py","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-373622230946AC2C","text":"check(\"run-state credential_fragments = 0\", rs.get(\"credential_fragments\") == 0)"}
-{"first_line":48,"last_line":48,"line":48,"mention_count":1,"path":"CHANGELOG.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-37504BC1EE962868","text":"## 2026-07-16 · PR #56 iteration method merged and current-state closeout"}
+{"first_line":60,"last_line":60,"line":60,"mention_count":1,"path":"CHANGELOG.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-37504BC1EE962868","text":"## 2026-07-16 · PR #56 iteration method merged and current-state closeout"}
 {"first_line":52,"last_line":52,"line":52,"mention_count":1,"path":"tools/governance/audit_pr_front_door.py","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-3757EADEC107352E","text":"def audit_body(body: str) -> dict:"}
 {"first_line":21,"last_line":21,"line":21,"mention_count":1,"path":"统一函数总表/0535-D538-潜意识-觉知-意识函数.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-3765A6C15B3A9324","text":"English: Subconscious content S enters consciousness C through awareness threshold θ_a: C(x)=1[φ(S(x))>θ_a]"}
 {"first_line":221,"last_line":221,"line":221,"mention_count":1,"path":"tests/test_seal_freshness.py","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-377016140A3AC810","text":"def test_f12c_attack_contract_missing_validator_path(self):"}
@@ -27406,7 +27406,7 @@
 {"first_line":78,"last_line":78,"line":78,"mention_count":1,"path":"tools/language_thought/validate_language_thought.py","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-FFFEE851DC955931","text":"def precision(self) -> float | None:"}
 {"first_line":35,"last_line":35,"mention_count":1,"path":"AI-HANDOFF.md","role":"REFERENCE","stable_id":"M0"}
 {"first_line":180,"last_line":181,"mention_count":2,"path":"ARCHITECTURE.md","role":"REFERENCE","stable_id":"M0"}
-{"first_line":30,"last_line":30,"mention_count":1,"path":"CHANGELOG.md","role":"REFERENCE","stable_id":"M0"}
+{"first_line":42,"last_line":42,"mention_count":1,"path":"CHANGELOG.md","role":"REFERENCE","stable_id":"M0"}
 {"first_line":87,"last_line":87,"mention_count":1,"path":"ITERATION.md","role":"REFERENCE","stable_id":"M0"}
 {"first_line":325,"last_line":325,"mention_count":1,"path":"analysis/corpus-relation/article_cluster_candidates.json","role":"REFERENCE","stable_id":"M0"}
 {"first_line":109,"last_line":541,"mention_count":6,"path":"analysis/corpus-relation/cluster_source_briefs/C000.md","role":"REFERENCE","stable_id":"M0"}
@@ -27542,7 +27542,7 @@
 {"first_line":83,"last_line":83,"mention_count":1,"path":"evidence-program/runs/IGNITION-EVIDENCE-PILOT-R1-OPENALEX-DOI-REPLICATION-20260801/source-manifest.jsonl","role":"REFERENCE","stable_id":"M09"}
 {"first_line":348,"last_line":348,"mention_count":1,"path":"tools/operations/run_stage_snapshot_responsibility_cases.py","role":"REFERENCE","stable_id":"M09"}
 {"first_line":184,"last_line":185,"mention_count":2,"path":"ARCHITECTURE.md","role":"REFERENCE","stable_id":"M1"}
-{"first_line":84,"last_line":84,"mention_count":1,"path":"CHANGELOG.md","role":"REFERENCE","stable_id":"M1"}
+{"first_line":96,"last_line":96,"mention_count":1,"path":"CHANGELOG.md","role":"REFERENCE","stable_id":"M1"}
 {"first_line":19,"last_line":181,"mention_count":6,"path":"analysis/corpus-relation/cluster_source_briefs/C000.md","role":"REFERENCE","stable_id":"M1"}
 {"first_line":3475,"last_line":3608,"mention_count":6,"path":"analysis/corpus-relation/corpus_relation_graph.json","role":"REFERENCE","stable_id":"M1"}
 {"first_line":3,"last_line":3,"mention_count":1,"path":"data/architecture/121q12-ledger.jsonl","role":"REFERENCE","stable_id":"M1"}
@@ -28330,7 +28330,7 @@
 {"first_line":67,"last_line":67,"mention_count":1,"path":"统一函数总表/0593-D583-认知肌肉锻炼.md","role":"REFERENCE","stable_id":"M6"}
 {"first_line":318,"last_line":468,"mention_count":12,"path":"统一函数总表/INDEX.md","role":"REFERENCE","stable_id":"M6"}
 {"first_line":35,"last_line":35,"mention_count":1,"path":"AI-HANDOFF.md","role":"REFERENCE","stable_id":"M7"}
-{"first_line":30,"last_line":30,"mention_count":1,"path":"CHANGELOG.md","role":"REFERENCE","stable_id":"M7"}
+{"first_line":42,"last_line":42,"mention_count":1,"path":"CHANGELOG.md","role":"REFERENCE","stable_id":"M7"}
 {"first_line":87,"last_line":87,"mention_count":1,"path":"ITERATION.md","role":"REFERENCE","stable_id":"M7"}
 {"first_line":325,"last_line":325,"mention_count":1,"path":"analysis/corpus-relation/article_cluster_candidates.json","role":"REFERENCE","stable_id":"M7"}
 {"first_line":529,"last_line":533,"mention_count":2,"path":"analysis/corpus-relation/cluster_source_briefs/C000.md","role":"REFERENCE","stable_id":"M7"}
@@ -28618,7 +28618,7 @@
 {"first_line":69,"last_line":69,"mention_count":1,"path":"tools/foundation/migrate_legacy.py","role":"REFERENCE","stable_id":"MF5"}
 {"first_line":66,"last_line":66,"mention_count":1,"path":"tools/foundation/validate_foundation.py","role":"REFERENCE","stable_id":"MF5"}
 {"first_line":5,"last_line":5,"mention_count":1,"path":"views/legacy-functions.jsonl","role":"REFERENCE","stable_id":"MF5"}
-{"first_line":103,"last_line":150,"mention_count":4,"path":"CHANGELOG.md","role":"REFERENCE","stable_id":"P0"}
+{"first_line":115,"last_line":162,"mention_count":4,"path":"CHANGELOG.md","role":"REFERENCE","stable_id":"P0"}
 {"first_line":1814,"last_line":1814,"mention_count":1,"path":"analysis/corpus-relation/article_cluster_candidates.json","role":"REFERENCE","stable_id":"P0"}
 {"first_line":6321,"last_line":6321,"mention_count":1,"path":"analysis/corpus-relation/corpus_relation_graph.json","role":"REFERENCE","stable_id":"P0"}
 {"first_line":84,"last_line":84,"mention_count":1,"path":"data/operations/iterations/112/publication/r0-original/CHECKPOINTS.md","role":"REFERENCE","stable_id":"P0"}
@@ -28651,7 +28651,7 @@
 {"first_line":8,"last_line":8,"mention_count":1,"path":"data/foundation/core-systems/protocol-roles.jsonl","role":"REFERENCE","stable_id":"P08"}
 {"first_line":9,"last_line":9,"mention_count":1,"path":"data/foundation/core-systems/protocol-roles.jsonl","role":"REFERENCE","stable_id":"P09"}
 {"first_line":2,"last_line":2,"mention_count":1,"path":".github/workflows/q33-governance-validation.yml","role":"REFERENCE","stable_id":"P1"}
-{"first_line":94,"last_line":116,"mention_count":12,"path":"CHANGELOG.md","role":"REFERENCE","stable_id":"P1"}
+{"first_line":106,"last_line":128,"mention_count":12,"path":"CHANGELOG.md","role":"REFERENCE","stable_id":"P1"}
 {"first_line":2165,"last_line":3240,"mention_count":11,"path":"analysis/corpus-relation/article_cluster_candidates.json","role":"REFERENCE","stable_id":"P1"}
 {"first_line":3917,"last_line":7030,"mention_count":11,"path":"analysis/corpus-relation/corpus_relation_graph.json","role":"REFERENCE","stable_id":"P1"}
 {"first_line":2,"last_line":35,"mention_count":34,"path":"data/classic_problems_benchmark.csv","role":"REFERENCE","stable_id":"P1"}
@@ -29744,7 +29744,7 @@
 {"first_line":47,"last_line":47,"mention_count":1,"path":"统一案例总表/0386-C-387-病毒的门控面切换——寄生前σ=0寄生后σ=1,没有中间态.md","role":"REFERENCE","stable_id":"T19"}
 {"first_line":13,"last_line":13,"mention_count":1,"path":"AGENTS.md","role":"REFERENCE","stable_id":"T2"}
 {"first_line":35,"last_line":35,"mention_count":1,"path":"AI-HANDOFF.md","role":"REFERENCE","stable_id":"T2"}
-{"first_line":30,"last_line":30,"mention_count":1,"path":"CHANGELOG.md","role":"REFERENCE","stable_id":"T2"}
+{"first_line":42,"last_line":42,"mention_count":1,"path":"CHANGELOG.md","role":"REFERENCE","stable_id":"T2"}
 {"first_line":49,"last_line":49,"mention_count":1,"path":"FOUNDATION.md","role":"REFERENCE","stable_id":"T2"}
 {"first_line":10,"last_line":10,"mention_count":1,"path":"RESULTS/CORRECTIONS.md","role":"REFERENCE","stable_id":"T2"}
 {"first_line":292,"last_line":292,"mention_count":1,"path":"analysis/corpus-relation/article_cluster_candidates.json","role":"REFERENCE","stable_id":"T2"}
@@ -31368,7 +31368,7 @@
 {"first_line":1,"last_line":1,"mention_count":1,"path":"data/external-research/092-gap-to-patch-projection.jsonl","role":"REFERENCE","stable_id":"Y0"}
 {"first_line":1,"last_line":1,"mention_count":1,"path":"data/external-research/094-088-patch-library.jsonl","role":"REFERENCE","stable_id":"Y0"}
 {"first_line":3,"last_line":162,"mention_count":2,"path":"ARCHITECTURE.md","role":"REFERENCE","stable_id":"Y1"}
-{"first_line":84,"last_line":84,"mention_count":1,"path":"CHANGELOG.md","role":"REFERENCE","stable_id":"Y1"}
+{"first_line":96,"last_line":96,"mention_count":1,"path":"CHANGELOG.md","role":"REFERENCE","stable_id":"Y1"}
 {"first_line":425,"last_line":425,"mention_count":1,"path":"analysis/corpus-relation/cluster_source_briefs/C000.md","role":"REFERENCE","stable_id":"Y1"}
 {"first_line":1,"last_line":1,"mention_count":1,"path":"data/external-research/088-patch-blueprint.jsonl","role":"REFERENCE","stable_id":"Y1"}
 {"first_line":1,"last_line":1,"mention_count":1,"path":"data/external-research/092-gap-to-patch-projection.jsonl","role":"REFERENCE","stable_id":"Y1"}
