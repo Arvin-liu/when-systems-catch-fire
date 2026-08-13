@@ -4,6 +4,61 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0511-D513-%E4%BF%A1%E6%81%AF%E5%8F%AF%E5%8C%BA%E5%88%86%E6%80%A7%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-7afafb39ddb6f7b7 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
+  - 来源：`统一函数总表/0511-D513-信息可区分性函数.md`
+  - 依赖：D513；被引用：—
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0512-D514-%E4%BF%A1%E6%81%AF%E5%AE%88%E6%81%92%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-782dfba883318cad / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
+  - 来源：`统一函数总表/0512-D514-信息守恒函数.md`
+  - 依赖：D514；被引用：—
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0513-D515-%E5%AE%87%E5%AE%99%E7%BA%A6%E6%9D%9F%E8%BE%B9%E7%95%8C%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-4b8b52f6639326c7 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
+  - 来源：`统一函数总表/0513-D515-宇宙约束边界函数.md`
+  - 依赖：D515；被引用：—
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0514-D516-%E8%B7%A8%E5%9F%9F%E5%AF%B9%E7%A7%B0%E6%80%A7%E7%A0%B4%E7%BC%BA%E6%8E%A8%E8%AE%BA.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-21e5b1419fa1fb49 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
+  - 来源：`统一函数总表/0514-D516-跨域对称性破缺推论.md`
+  - 依赖：D516；被引用：—
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0515-D517-%E8%B4%A8%E9%87%8F%E5%BA%A6%E9%87%8F%E7%BA%A6%E6%9D%9F%E6%94%BE%E6%9D%BE%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-7b909f9c01636158 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
+  - 来源：`统一函数总表/0515-D517-质量度量约束放松函数.md`
+  - 依赖：D517；被引用：—
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0516-D518-%E6%93%8D%E4%BD%9C%E7%B1%BB%E5%9E%8B%E7%BB%B4%E5%BA%A6%E9%99%8D%E4%BD%8E%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-17b25474d433acbe / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
+  - 来源：`统一函数总表/0516-D518-操作类型维度降低函数.md`
+  - 依赖：D518；被引用：—
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0517-D519-%E5%8C%B9%E9%85%8D%E6%93%8D%E4%BD%9C%E7%B2%BE%E5%BA%A6%E6%B3%A2%E5%8A%A8%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-b86158cdb4708014 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
+  - 来源：`统一函数总表/0517-D519-匹配操作精度波动函数.md`
+  - 依赖：D519；被引用：—
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0518-D520-%E5%85%83%E7%AB%9E%E4%BA%89%E5%8A%A8%E5%8A%9B%E5%AD%A6%E5%87%BD%E6%95%B0%28%E6%8A%BD%E8%B1%A1%E7%89%88%29.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-121a7d86b7e21369 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
+  - 来源：`统一函数总表/0518-D520-元竞争动力学函数(抽象版).md`
+  - 依赖：D520；被引用：—
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0519-D522-Willmore%E8%83%BD%E9%87%8F%E6%9E%81%E5%B0%8F%E7%82%B9%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-45532924eb12681d / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
+  - 来源：`统一函数总表/0519-D522-Willmore能量极小点函数.md`
+  - 依赖：D522；被引用：—
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0520-D523-Kakeya%E9%9B%86%E8%B1%AA%E6%96%AF%E5%A4%9A%E5%A4%AB%E7%BB%B4%E6%95%B0%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-ae2f492092c580a5 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
+  - 来源：`统一函数总表/0520-D523-Kakeya集豪斯多夫维数函数.md`
+  - 依赖：D523；被引用：—
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0521-D524-Unique%20Games%E8%BF%91%E4%BC%BC%E7%AE%97%E6%B3%95%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-cba94e6c469f02ce / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
+  - 来源：`统一函数总表/0521-D524-Unique Games近似算法函数.md`
+  - 依赖：D524；被引用：—
 - [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0522-D525-3%E7%BB%B4%E6%B5%81%E5%BD%A2%E5%87%A0%E4%BD%95%E5%8C%96%E5%88%86%E8%A7%A3%E5%87%BD%E6%95%B0.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-b2a5d4a2520d72a2 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
@@ -2445,59 +2500,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-1b7203eb5c610540 / 把历史因果写成单因决定论（应写成多因结构）
   - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
-  - 依赖：—；被引用：—
-- [把因果、自举、同构、元层、哥德尔不完备性、元协议与证据强度合成总分。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0604-D594-%E5%AD%A6%E7%A7%91%E7%82%B9%E7%81%AB%E6%8C%87%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-28d6a72c1a59a7ef / 把因果、自举、同构、元层、哥德尔不完备性、元协议与证据强度合成总分。
-  - 来源：`统一函数总表/0604-D594-学科点火指数.md`
-  - 依赖：—；被引用：—
-- [把外部已证明的定理写成点火框架证明](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-2c486c79c7b03d75 / 把外部已证明的定理写成点火框架证明
-  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [把审美判断写成客观定理](../../../outputs/getbrain/classic-problems-benchmark-supplement-20260707.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-1a90066bfec1b0a8 / 把审美判断写成客观定理
-  - 来源：`outputs/getbrain/classic-problems-benchmark-supplement-20260707.md`
-  - 依赖：—；被引用：—
-- [把局部函数或局部案例中的结构关系写成普遍函数。](../../../data/failure_typology.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-1edcdcc4132b31ec / 把局部函数或局部案例中的结构关系写成普遍函数。
-  - 来源：`data/failure_typology.csv`
-  - 依赖：—；被引用：—
-- [把已经通过点火证据制度的函数、案例与碰撞结果，转换成普通读者可以读懂、但又不会越过事实边界的故事产物。](../../../docs/narrative-output-layer.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-123b44c855d41075 / 把已经通过点火证据制度的函数、案例与碰撞结果，转换成普通读者可以读懂、但又不会越过事实边界的故事产物。
-  - 来源：`docs/narrative-output-layer.md`
-  - 依赖：—；被引用：—
-- [把描述性机制和规范性判断分开，只有在正当化桥接存在时才允许合流。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0602-D592-%E8%A7%84%E8%8C%83%E6%80%A7%E5%88%86%E7%A6%BB%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-360a048007ab298f / 把描述性机制和规范性判断分开，只有在正当化桥接存在时才允许合流。
-  - 来源：`统一函数总表/0602-D592-规范性分离函数.md`
-  - 依赖：—；被引用：—
-- [把故事化案例写成证明；](../../../docs/publication_risk_checklist.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-910a5a15b0e3ce57 / 把故事化案例写成证明；
-  - 来源：`docs/publication_risk_checklist.md`
-  - 依赖：—；被引用：—
-- [把文学感染力变成事实、因果或价值主张的证据。](../../../docs/architecture/language-thought-logic-plane.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-078d9a74e8f4a462 / 把文学感染力变成事实、因果或价值主张的证据。
-  - 来源：`docs/architecture/language-thought-logic-plane.md`
-  - 依赖：—；被引用：—
-- [把未证明猜想写成已解决](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-c7b2968dd1806fc6 / 把未证明猜想写成已解决
-  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [把物理大一统不可能写成物理学 no-go theorem](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-22fbc0b0ff19bd34 / 把物理大一统不可能写成物理学 no-go theorem
-  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [把生命起源放进自组织框架，看局部规则如何累积成整体结构。](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0794-C-0799-%E7%94%9F%E5%91%BD%E8%B5%B7%E6%BA%90%E4%B8%8E%E8%87%AA%E7%BB%84%E7%BB%87.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-2b6ef4a58fad2984 / 把生命起源放进自组织框架，看局部规则如何累积成整体结构。
-  - 来源：`统一案例总表/0794-C-0799-生命起源与自组织.md`
   - 依赖：—；被引用：—

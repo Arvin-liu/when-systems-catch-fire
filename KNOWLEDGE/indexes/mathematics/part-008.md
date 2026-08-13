@@ -4,6 +4,41 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [link: "统一函数总表/0569-D554-植物菌根函数（更新版）.md"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0569-D554-%E6%A4%8D%E7%89%A9%E8%8F%8C%E6%A0%B9%E5%87%BD%E6%95%B0%EF%BC%88%E6%9B%B4%E6%96%B0%E7%89%88%EF%BC%89.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-8f119d01bcb66563 / link: "统一函数总表/0569-D554-植物菌根函数（更新版）.md"
+  - 来源：`统一函数总表/0569-D554-植物菌根函数（更新版）.md`
+  - 依赖：D554；被引用：—
+- [link: "统一函数总表/0570-D555-认知调取函数.md"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0570-D555-%E8%AE%A4%E7%9F%A5%E8%B0%83%E5%8F%96%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-93b27601c9b2af52 / link: "统一函数总表/0570-D555-认知调取函数.md"
+  - 来源：`统一函数总表/0570-D555-认知调取函数.md`
+  - 依赖：D555；被引用：—
+- [link: "统一函数总表/0571-D556-集体智能函数.md"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0571-D556-%E9%9B%86%E4%BD%93%E6%99%BA%E8%83%BD%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-0ca69c0f5a2b6869 / link: "统一函数总表/0571-D556-集体智能函数.md"
+  - 来源：`统一函数总表/0571-D556-集体智能函数.md`
+  - 依赖：D556；被引用：—
+- [link: "统一函数总表/0572-D557-适应性演化函数.md"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0572-D557-%E9%80%82%E5%BA%94%E6%80%A7%E6%BC%94%E5%8C%96%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-af9579a00399fe9f / link: "统一函数总表/0572-D557-适应性演化函数.md"
+  - 来源：`统一函数总表/0572-D557-适应性演化函数.md`
+  - 依赖：D557；被引用：—
+- [link: "统一函数总表/0573-D558-智能边界函数.md"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0573-D558-%E6%99%BA%E8%83%BD%E8%BE%B9%E7%95%8C%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-4b248dd25bc25616 / link: "统一函数总表/0573-D558-智能边界函数.md"
+  - 来源：`统一函数总表/0573-D558-智能边界函数.md`
+  - 依赖：D558；被引用：—
+- [link: "统一函数总表/0574-D559-记忆锚定函数.md"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0574-D559-%E8%AE%B0%E5%BF%86%E9%94%9A%E5%AE%9A%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-ec6efaa9ad5a401c / link: "统一函数总表/0574-D559-记忆锚定函数.md"
+  - 来源：`统一函数总表/0574-D559-记忆锚定函数.md`
+  - 依赖：D559；被引用：—
+- [link: "统一函数总表/0575-D560-记忆分布式编码函数.md"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0575-D560-%E8%AE%B0%E5%BF%86%E5%88%86%E5%B8%83%E5%BC%8F%E7%BC%96%E7%A0%81%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-62dfb69df3e84a0f / link: "统一函数总表/0575-D560-记忆分布式编码函数.md"
+  - 来源：`统一函数总表/0575-D560-记忆分布式编码函数.md`
+  - 依赖：D560；被引用：—
 - [link: "统一函数总表/0576-D561-记忆-智能边界函数.md"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0576-D561-%E8%AE%B0%E5%BF%86-%E6%99%BA%E8%83%BD%E8%BE%B9%E7%95%8C%E5%87%BD%E6%95%B0.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-f996d7c9891cd3cf / link: "统一函数总表/0576-D561-记忆-智能边界函数.md"
@@ -2468,39 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-15249928ae514b6f / Proof/evidence obligation 引用完整性: ✅ 通过
   - 来源：`reports/foundation-architecture/084-max-adjudication-report.md`
-  - 依赖：—；被引用：—
-- [proof;](../../../docs/architecture/effectual-action-plane.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-c1cda26362828b69 / proof;
-  - 来源：`docs/architecture/effectual-action-plane.md`
-  - 依赖：—；被引用：—
-- [proof=(ROOT/"formal/lean/Foundation.lean").read_text()](../../../tests/foundation/test_foundation.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-984c3b92d6ba6474 / proof=(ROOT/"formal/lean/Foundation.lean").read_text()
-  - 来源：`tests/foundation/test_foundation.py`
-  - 依赖：—；被引用：—
-- [proof\["plan_hash"\] = document\["plan_hash"\]](../../../tests/test_incremental_execution.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-892b38665cb132be / proof\["plan_hash"\] = document\["plan_hash"\]
-  - 来源：`tests/test_incremental_execution.py`
-  - 依赖：—；被引用：—
-- [proof\["plan_hash"\] = PLAN_HASH_SENTINEL](../../../tools/operations/validate_incremental_execution.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-44c6ef68382f8261 / proof\["plan_hash"\] = PLAN_HASH_SENTINEL
-  - 来源：`tools/operations/validate_incremental_execution.py`
-  - 依赖：—；被引用：—
-- [proof\["plan_hash"\] = value\["plan_hash"\]](../../../tests/test_incremental_execution_defensive_rejections.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-c4430faa13247a60 / proof\["plan_hash"\] = value\["plan_hash"\]
-  - 来源：`tests/test_incremental_execution_defensive_rejections.py`
-  - 依赖：—；被引用：—
-- [proof_artifacts = \["proof:T2-zero-factor-nat"\] if oid == "T2" else \[\]](../../../tools/foundation/adjudicate_core.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-df54cce5c9fe1bcc / proof_artifacts = \["proof:T2-zero-factor-nat"\] if oid == "T2" else \[\]
-  - 来源：`tools/foundation/adjudicate_core.py`
-  - 依赖：T2；被引用：—
-- [proof_artifacts=load("data/foundation/proofs/core-artifacts.jsonl")](../../../tools/foundation/validate_foundation.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-a274a37be3dc9de4 / proof_artifacts=load("data/foundation/proofs/core-artifacts.jsonl")
-  - 来源：`tools/foundation/validate_foundation.py`
   - 依赖：—；被引用：—

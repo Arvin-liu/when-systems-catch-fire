@@ -4,6 +4,101 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [L4**：外部形式/媒介/语境验证（形式分析、媒介分析、观看情境分析、历史语境分析）](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-33b8da459fc8e4e2 / L4**：外部形式/媒介/语境验证（形式分析、媒介分析、观看情境分析、历史语境分析）
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [L4**：外部教育实验验证（教育实验、长期追踪）](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-3e1fd1d14105c312 / L4**：外部教育实验验证（教育实验、长期追踪）
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [L4**：外部文本细读验证（文本细读、文学共同体共识）](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-a161aa0f78b1dd56 / L4**：外部文本细读验证（文本细读、文学共同体共识）
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [L4**：外部法律文本验证（法律文本、判例、程序、管辖区）](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-eca83fafa7afba89 / L4**：外部法律文本验证（法律文本、判例、程序、管辖区）
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [L4**：外部测试验证（测试、仿真、制造验证）](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-5abf91b6dd613e35 / L4**：外部测试验证（测试、仿真、制造验证）
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [L4**：外部统计验证（计量检验、反事实推断）](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-10cf57d08eb29e6b / L4**：外部统计验证（计量检验、反事实推断）
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [L4**：外部统计验证（调查数据、统计显著性检验）](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-b40eb57a9bb7eb7d / L4**：外部统计验证（调查数据、统计显著性检验）
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [L5**：外部实证/计算验证（benchmark、实验评估、多个独立研究验证）](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-b039fb5e05810ec9 / L5**：外部实证/计算验证（benchmark、实验评估、多个独立研究验证）
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [L5**：外部实证/计算验证（个体评估、多个独立研究验证）](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-a863e7876285e0ef / L5**：外部实证/计算验证（个体评估、多个独立研究验证）
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [L5**：外部实证/计算验证（多个独立研究验证、可重复验证）](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-1919077f574f0375 / L5**：外部实证/计算验证（多个独立研究验证、可重复验证）
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [L5**：外部实证/计算验证（实际部署、安全验证）](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-08671596de75bdfc / L5**：外部实证/计算验证（实际部署、安全验证）
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [L5**：外部实证/计算验证（实验观测验证）](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-244ca73ff5e26cc3 / L5**：外部实证/计算验证（实验观测验证）
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [L5**：外部实证/计算验证（法律解释权威、程序完整、管辖区一致）](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-f5db494f6166d496 / L5**：外部实证/计算验证（法律解释权威、程序完整、管辖区一致）
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [L5**：外部实证/计算验证（田野实验、反事实识别、可重复验证）](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-237d69efd0dabb43 / L5**：外部实证/计算验证（田野实验、反事实识别、可重复验证）
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [L5**：外部实证/计算验证（解释共同体共识）](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-8dd7e6dce1347d9f / L5**：外部实证/计算验证（解释共同体共识）
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [L5**：外部实证/计算验证（计算验证、实验验证）](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-4c0f062f3f793280 / L5**：外部实证/计算验证（计算验证、实验验证）
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [L5**：外部实证/计算验证（跨学科验证、可重复验证）](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-de74d9ab95eb5a6a / L5**：外部实证/计算验证（跨学科验证、可重复验证）
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [L5**：外部实证/计算验证（跨文本验证、解释力强）](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-b1cfd694b55752a1 / L5**：外部实证/计算验证（跨文本验证、解释力强）
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [L5**：外部实证/计算验证（风险收益评估、多个独立研究验证）](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-0c3fea77e7fe3210 / L5**：外部实证/计算验证（风险收益评估、多个独立研究验证）
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
 - [L5：外部实证验证](../../../docs/claim_levels.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-d3986dcc75072def / L5：外部实证验证
@@ -1166,6 +1261,11 @@
   - 可搜索名称：NFC-332699eb3366116a / NARRATIVE ONLY — explicitly not a verified claim in the corpus.
   - 来源：`evidence-program/registry/candidate-portfolio.jsonl`
   - 依赖：—；被引用：—
+- [Narrative transportation and narrative-world comprehension can influence measured beliefs or norm judgments in defined e](../../../reports/external-research/pointfire-getnote-external-verification-r1-20260813.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-ef631fad903e0e21 / Narrative transportation and narrative-world comprehension can influence measured beliefs or norm judgments in defined e
+  - 来源：`reports/external-research/pointfire-getnote-external-verification-r1-20260813.jsonl`
+  - 依赖：—；被引用：—
 - [Negative fixture 1: a brand-new top-level directory with no rule -> UNRESOLVED.](../../../tests/foundation/test_repository_path_classification.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-d9c364296b6a0d5e / Negative fixture 1: a brand-new top-level directory with no rule -> UNRESOLVED.
@@ -1355,6 +1455,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-eff4d9ccdfd39ceb / of 117 sources have fulltext review records; 088-FINAL-REPORT claims patches are 'INJECTED_VERIFIED' but no fulltext was
   - 来源：`data/external-research/104-source-integrity-alerts.jsonl`
+  - 依赖：—；被引用：—
+- [Official frameworks and law specify risk management, records, human oversight, accountability, and complaint or redress](../../../reports/external-research/pointfire-getnote-external-verification-r1-20260813.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-63d5624b13fd8779 / Official frameworks and law specify risk management, records, human oversight, accountability, and complaint or redress
+  - 来源：`reports/external-research/pointfire-getnote-external-verification-r1-20260813.jsonl`
   - 依赖：—；被引用：—
 - [ok("Evidence cards ≥ 20 (CP4 minimum)")](../../../data/external-research/121A-night-recovery/121A-validator.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
@@ -2396,108 +2501,3 @@
   - 可搜索名称：NFC-ab0aa33eb7ee3d97 / projection = render_projection(registry)
   - 来源：`tests/test_stage_snapshot_publication.py`
   - 依赖：—；被引用：—
-- [projection from claim/function discovery while retaining it under its own](../../../reports/validation/pointfire-seven-track-current-main-maintenance-r1-20260813.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-35d025d0d5a88b1c / projection from claim/function discovery while retaining it under its own
-  - 来源：`reports/validation/pointfire-seven-track-current-main-maintenance-r1-20260813.md`
-  - 依赖：—；被引用：—
-- [projection metrics require a publication-safe aggregate contract that excludes raw bodies, identifiers and internal inve](../../../docs/architecture/getnote-1329-epistemic-governance-pressure-test.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-6588c545471516b4 / projection metrics require a publication-safe aggregate contract that excludes raw bodies, identifiers and internal inve
-  - 来源：`docs/architecture/getnote-1329-epistemic-governance-pressure-test.md`
-  - 依赖：—；被引用：—
-- [projection-matrix.jsonl 中 disciplines_with_any_NA=0](../../../reports/foundation-architecture/088-087-count-and-denominator-audit.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-5f05caf031227754 / projection-matrix.jsonl 中 disciplines_with_any_NA=0
-  - 来源：`reports/foundation-architecture/088-087-count-and-denominator-audit.md`
-  - 依赖：—；被引用：—
-- [Provenance record for one externally acquired evidence item (Task 103 §6).](../../../evidence-program/schemas/evidence-source-manifest.schema.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-e74cc08928d8ce93 / Provenance record for one externally acquired evidence item (Task 103 §6).
-  - 来源：`evidence-program/schemas/evidence-source-manifest.schema.json`
-  - 依赖：—；被引用：—
-- [provenance-gated 返回项只有完成主体、时间、渠道、原文范围和解释限制登记后才能进入；点赞、共鸣、传播或多 AI 一致本身仍只是体验／传播数据。](../../../docs/publication/zhiyuan-writing-method.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：NFC-c9e97f52321c3c7a / provenance-gated 返回项只有完成主体、时间、渠道、原文范围和解释限制登记后才能进入；点赞、共鸣、传播或多 AI 一致本身仍只是体验／传播数据。
-  - 来源：`docs/publication/zhiyuan-writing-method.md`
-  - 依赖：—；被引用：—
-- [provenance: provenance_verified is set by the tool from a digest match, not trusted.](../../../tools/governance/fail_closed_publication_gate.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-5d256f1d83af0877 / provenance: provenance_verified is set by the tool from a digest match, not trusted.
-  - 来源：`tools/governance/fail_closed_publication_gate.py`
-  - 依赖：—；被引用：—
-- [provenance_verified = False](../../../tools/governance/fail_closed_publication_gate.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-3ad155db7fa49284 / provenance_verified = False
-  - 来源：`tools/governance/fail_closed_publication_gate.py`
-  - 依赖：—；被引用：—
-- [provenance_verified = True](../../../tools/governance/fail_closed_publication_gate.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-7625a93356ef924d / provenance_verified = True
-  - 来源：`tools/governance/fail_closed_publication_gate.py`
-  - 依赖：—；被引用：—
-- [Proves the governed classification source is the single source of truth for the](../../../tests/foundation/test_trigger_coverage.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-db68daf4c11ff870 / Proves the governed classification source is the single source of truth for the
-  - 来源：`tests/foundation/test_trigger_coverage.py`
-  - 依赖：—；被引用：—
-- [Pryor, Dickens and Getoor exact author-hosted KLR workshop paper, all-11-page visual/full-text/equation/table/appendix r](../../../data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-9f7a8d3ab85adf5b / Pryor, Dickens and Getoor exact author-hosted KLR workshop paper, all-11-page visual/full-text/equation/table/appendix r
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl`
-  - 依赖：—；被引用：—
-- [public provenance and bounded summary only; restricted source remains controlling input evidence](../../../data/language-thought/transformations.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-7eb564116b9bf75d / public provenance and bounded summary only; restricted source remains controlling input evidence
-  - 来源：`data/language-thought/transformations.jsonl`
-  - 依赖：—；被引用：—
-- [public truth is complete and honest.](../../../tools/propagation/current_truth_projection.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-79efd0e5303b8f04 / public truth is complete and honest.
-  - 来源：`tools/propagation/current_truth_projection.py`
-  - 依赖：—；被引用：—
-- [Publication Risk Rules Dataset](../../../data/schemas/publication_risk_rules.schema.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-f3ca595a22720957 / Publication Risk Rules Dataset
-  - 来源：`data/schemas/publication_risk_rules.schema.json`
-  - 依赖：—；被引用：—
-- [publication_risk_rules 数据结构](../../../docs/machine_readable_data_plan.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-064572916d9f5b95 / publication_risk_rules 数据结构
-  - 来源：`docs/machine_readable_data_plan.md`
-  - 依赖：—；被引用：—
-- [publication_risk_rules：RISK-001/004/006 均 → REVISE（断言越界/证据误配/尺度错误）。](../../../outputs/audit/teacher-competition-first-real-collision-audit-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-932b15a9bba1b9b7 / publication_risk_rules：RISK-001/004/006 均 → REVISE（断言越界/证据误配/尺度错误）。
-  - 来源：`outputs/audit/teacher-competition-first-real-collision-audit-20260708.md`
-  - 依赖：—；被引用：—
-- [PublicProjection --> PrivacyBlocked](../../../docs/architecture/epistemic-governance-kernel-and-federated-planes.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-67aea7acc20a8b51 / PublicProjection --> PrivacyBlocked
-  - 来源：`docs/architecture/epistemic-governance-kernel-and-federated-planes.md`
-  - 依赖：—；被引用：—
-- [PublicProjection --> Published](../../../docs/architecture/epistemic-governance-kernel-and-federated-planes.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-c947a126c3579fca / PublicProjection --> Published
-  - 来源：`docs/architecture/epistemic-governance-kernel-and-federated-planes.md`
-  - 依赖：—；被引用：—
-- [python evidence-program/tools/run_crossref_verification.py \\](../../../evidence-program/README.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-185fa4a300754ff4 / python evidence-program/tools/run_crossref_verification.py \\
-  - 来源：`evidence-program/README.md`
-  - 依赖：—；被引用：—
-- [python evidence-program/tools/validate_evidence_program.py --root evidence-program](../../../evidence-program/README.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-5eec67e3f4636e3c / python evidence-program/tools/validate_evidence_program.py --root evidence-program
-  - 来源：`evidence-program/README.md`
-  - 依赖：—；被引用：—
-- [PyTorch and the library's numerical layers provide a concrete runtime for the artifacts.](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-fb8e5e10b9dba687 / PyTorch and the library's numerical layers provide a concrete runtime for the artifacts.
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
-  - 依赖：—；被引用：—
-- [Q-0005 作为 \[D84\](docs/zh/functions/items/D84.md) 的新增验证案例，说明 AI-ε 安装路径需要重置与外部记忆共同维持。](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0574-C-579-%E4%B8%8A%E4%B8%8B%E6%96%87%E9%A5%B1%E5%92%8C%E9%87%8D%E7%BD%AE%E9%AA%8C%E8%AF%81.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-59db9509ec4164f7 / Q-0005 作为 \[D84\](docs/zh/functions/items/D84.md) 的新增验证案例，说明 AI-ε 安装路径需要重置与外部记忆共同维持。
-  - 来源：`统一案例总表/0574-C-579-上下文饱和重置验证.md`
-  - 依赖：D84；被引用：—

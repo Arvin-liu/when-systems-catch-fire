@@ -539,6 +539,16 @@
   - 可搜索名称：NFC-3b9ad72efda18a0f / controlled="Given the source chain Omega=1 implies Phi=0 implies no gates implies no constraints implies no physics, plu
   - 来源：`tools/foundation/verify_079.py`
   - 依赖：—；被引用：—
+- [Current canonical claim record already preserves the information-boundary analogy without replacing concrete gravity evi](../../../FOUNDATION-64-PROPAGATION.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-06b36d78bb272928 / Current canonical claim record already preserves the information-boundary analogy without replacing concrete gravity evi
+  - 来源：`FOUNDATION-64-PROPAGATION.jsonl`
+  - 依赖：—；被引用：—
+- [Current canonical record already preserves the grand-unification path as an argument schema without physical promotion.](../../../FOUNDATION-64-PROPAGATION.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-2cb9bce95a4045de / Current canonical record already preserves the grand-unification path as an argument schema without physical promotion.
+  - 来源：`FOUNDATION-64-PROPAGATION.jsonl`
+  - 依赖：—；被引用：—
 - [D220 countermodel-equivalence audit](../../ASSET-CARDS.md#asset-hr-8abef15d00fa6899)
   - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
   - 可搜索名称：D220 countermodel-equivalence audit / D220-countermodel-equivalence-audit-20260713

@@ -4,6 +4,61 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [全量查重（18 关键词函数表 + 14 关键词案例表）确认无同名/同构直接条目。](../../../outputs/audit/teacher-competition-small-batch-backfill-audit-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-b3b1b158cfdff127 / 全量查重（18 关键词函数表 + 14 关键词案例表）确认无同名/同构直接条目。
+  - 来源：`outputs/audit/teacher-competition-small-batch-backfill-audit-20260708.md`
+  - 依赖：—；被引用：—
+- [公式化、可计算、内部自洽、AI 编号和单元测试通过都不等于外部真实；当前门控模型没有统一四力，也没有证明大一统普遍不可能。](../../ASSET-CARDS.md#asset-nfc-fa7f908615d24682)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-fa7f908615d24682 / 公式化、可计算、内部自洽、AI 编号和单元测试通过都不等于外部真实；当前门控模型没有统一四力，也没有证明大一统普遍不可能。 / - 公式化、可计算、内部自洽、AI 编号和单元测试通过都不等于外部真实；当前门控模型没有统一四力，也没有证明大一统普遍不可能。
+  - 来源：`AI-START-HERE.md`
+  - 依赖：—；被引用：—
+- [公理、定理、引理、推论](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-a7422d93388ba0c0 / 公理、定理、引理、推论
+  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
+  - 依赖：—；被引用：—
+- [公理化体系×三层函数结构验证](../../../data/foundation/evidence/evidence.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-eb5b9f2cde4e435c / 公理化体系×三层函数结构验证
+  - 来源：`data/foundation/evidence/evidence.jsonl`
+  - 依赖：—；被引用：—
+- [公理化体系外层补齐×定理层验证](../../../data/foundation/evidence/evidence.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-f02222cfcb513bc2 / 公理化体系外层补齐×定理层验证
+  - 来源：`data/foundation/evidence/evidence.jsonl`
+  - 依赖：—；被引用：—
+- [公理化体系的外层补齐本身就是一个自举循环——从不足的数据出发，通过外部碰撞补全内容，再验证收敛。这与点火框架的自举循环机制完全同构。](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0670-C-675-%E5%85%AC%E7%90%86%E5%8C%96%E4%BD%93%E7%B3%BB%E5%A4%96%E5%B1%82%E8%A1%A5%E9%BD%90%C3%97%E5%AE%9A%E7%90%86%E5%B1%82%E9%AA%8C%E8%AF%81.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-ddc5f08d5edba028 / 公理化体系的外层补齐本身就是一个自举循环——从不足的数据出发，通过外部碰撞补全内容，再验证收敛。这与点火框架的自举循环机制完全同构。
+  - 来源：`统一案例总表/0670-C-675-公理化体系外层补齐×定理层验证.md`
+  - 依赖：—；被引用：—
+- [公理化方法（ZFC 集合论）](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-489c3149275ef1c2 / 公理化方法（ZFC 集合论）
+  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
+  - 依赖：—；被引用：—
+- [公理系统内可复核证明](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-1182b5ebe1282eb5 / 公理系统内可复核证明
+  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
+  - 依赖：—；被引用：—
+- [公理系统内证明](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-94ae1519fc953db9 / 公理系统内证明
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [公理级函数，不可从其他函数推导。通过历史案例观察：有意识的提议者（周公、孔子）能建立长期系统，无意识的提议者（秦制）系统快速崩溃。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0002-A1-I%28t%2CL%29%20%E6%8F%90%E8%AE%AE%E8%80%85%E6%84%8F%E8%AF%86.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-2f264ade8e66ed0f / 公理级函数，不可从其他函数推导。通过历史案例观察：有意识的提议者（周公、孔子）能建立长期系统，无意识的提议者（秦制）系统快速崩溃。
+  - 来源：`统一函数总表/0002-A1-I(t,L) 提议者意识.md`
+  - 依赖：—；被引用：—
+- [公理级函数，不可推导。从历史案例归纳：姿态越激进，系统越脆弱。F_form为形式化程度，形式化越高越难被遮蔽侵蚀。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0003-A2-%E6%8F%90%E8%AE%AE%E8%80%85%E5%A7%BF%E6%80%81%E7%9A%84%E6%BF%80%E8%BF%9B%E7%A8%8B%E5%BA%A6.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-fbe4cc1b133ab52b / 公理级函数，不可推导。从历史案例归纳：姿态越激进，系统越脆弱。F_form为形式化程度，形式化越高越难被遮蔽侵蚀。
+  - 来源：`统一函数总表/0003-A2-提议者姿态的激进程度.md`
+  - 依赖：—；被引用：—
 - [公理级函数，不可推导。从历史案例归纳：有犹豫域(dim=3)系统更脆弱，无犹豫域(dim=2)系统更稳定。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0009-A8-dim%28t%2CL%29%20%E5%86%B3%E7%AD%96%E7%BB%B4%E5%BA%A6.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-93f0c87cc722a124 / 公理级函数，不可推导。从历史案例归纳：有犹豫域(dim=3)系统更脆弱，无犹豫域(dim=2)系统更稳定。
@@ -2446,58 +2501,3 @@
   - 可搜索名称：NFC-386440ed858bd1f3 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
   - 来源：`统一函数总表/0510-D512-宇宙约束空间函数.md`
   - 依赖：D512；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0511-D513-%E4%BF%A1%E6%81%AF%E5%8F%AF%E5%8C%BA%E5%88%86%E6%80%A7%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-7afafb39ddb6f7b7 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
-  - 来源：`统一函数总表/0511-D513-信息可区分性函数.md`
-  - 依赖：D513；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0512-D514-%E4%BF%A1%E6%81%AF%E5%AE%88%E6%81%92%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-782dfba883318cad / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
-  - 来源：`统一函数总表/0512-D514-信息守恒函数.md`
-  - 依赖：D514；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0513-D515-%E5%AE%87%E5%AE%99%E7%BA%A6%E6%9D%9F%E8%BE%B9%E7%95%8C%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-4b8b52f6639326c7 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
-  - 来源：`统一函数总表/0513-D515-宇宙约束边界函数.md`
-  - 依赖：D515；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0514-D516-%E8%B7%A8%E5%9F%9F%E5%AF%B9%E7%A7%B0%E6%80%A7%E7%A0%B4%E7%BC%BA%E6%8E%A8%E8%AE%BA.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-21e5b1419fa1fb49 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
-  - 来源：`统一函数总表/0514-D516-跨域对称性破缺推论.md`
-  - 依赖：D516；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0515-D517-%E8%B4%A8%E9%87%8F%E5%BA%A6%E9%87%8F%E7%BA%A6%E6%9D%9F%E6%94%BE%E6%9D%BE%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-7b909f9c01636158 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
-  - 来源：`统一函数总表/0515-D517-质量度量约束放松函数.md`
-  - 依赖：D517；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0516-D518-%E6%93%8D%E4%BD%9C%E7%B1%BB%E5%9E%8B%E7%BB%B4%E5%BA%A6%E9%99%8D%E4%BD%8E%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-17b25474d433acbe / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
-  - 来源：`统一函数总表/0516-D518-操作类型维度降低函数.md`
-  - 依赖：D518；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0517-D519-%E5%8C%B9%E9%85%8D%E6%93%8D%E4%BD%9C%E7%B2%BE%E5%BA%A6%E6%B3%A2%E5%8A%A8%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-b86158cdb4708014 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
-  - 来源：`统一函数总表/0517-D519-匹配操作精度波动函数.md`
-  - 依赖：D519；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0518-D520-%E5%85%83%E7%AB%9E%E4%BA%89%E5%8A%A8%E5%8A%9B%E5%AD%A6%E5%87%BD%E6%95%B0%28%E6%8A%BD%E8%B1%A1%E7%89%88%29.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-121a7d86b7e21369 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
-  - 来源：`统一函数总表/0518-D520-元竞争动力学函数(抽象版).md`
-  - 依赖：D520；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0519-D522-Willmore%E8%83%BD%E9%87%8F%E6%9E%81%E5%B0%8F%E7%82%B9%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-45532924eb12681d / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
-  - 来源：`统一函数总表/0519-D522-Willmore能量极小点函数.md`
-  - 依赖：D522；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0520-D523-Kakeya%E9%9B%86%E8%B1%AA%E6%96%AF%E5%A4%9A%E5%A4%AB%E7%BB%B4%E6%95%B0%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-ae2f492092c580a5 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
-  - 来源：`统一函数总表/0520-D523-Kakeya集豪斯多夫维数函数.md`
-  - 依赖：D523；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0521-D524-Unique%20Games%E8%BF%91%E4%BC%BC%E7%AE%97%E6%B3%95%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-cba94e6c469f02ce / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
-  - 来源：`统一函数总表/0521-D524-Unique Games近似算法函数.md`
-  - 依赖：D524；被引用：—

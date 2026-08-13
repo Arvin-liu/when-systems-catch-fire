@@ -4,6 +4,41 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [proof;](../../../docs/architecture/effectual-action-plane.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-c1cda26362828b69 / proof;
+  - 来源：`docs/architecture/effectual-action-plane.md`
+  - 依赖：—；被引用：—
+- [proof=(ROOT/"formal/lean/Foundation.lean").read_text()](../../../tests/foundation/test_foundation.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-984c3b92d6ba6474 / proof=(ROOT/"formal/lean/Foundation.lean").read_text()
+  - 来源：`tests/foundation/test_foundation.py`
+  - 依赖：—；被引用：—
+- [proof\["plan_hash"\] = document\["plan_hash"\]](../../../tests/test_incremental_execution.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-892b38665cb132be / proof\["plan_hash"\] = document\["plan_hash"\]
+  - 来源：`tests/test_incremental_execution.py`
+  - 依赖：—；被引用：—
+- [proof\["plan_hash"\] = PLAN_HASH_SENTINEL](../../../tools/operations/validate_incremental_execution.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-44c6ef68382f8261 / proof\["plan_hash"\] = PLAN_HASH_SENTINEL
+  - 来源：`tools/operations/validate_incremental_execution.py`
+  - 依赖：—；被引用：—
+- [proof\["plan_hash"\] = value\["plan_hash"\]](../../../tests/test_incremental_execution_defensive_rejections.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-c4430faa13247a60 / proof\["plan_hash"\] = value\["plan_hash"\]
+  - 来源：`tests/test_incremental_execution_defensive_rejections.py`
+  - 依赖：—；被引用：—
+- [proof_artifacts = \["proof:T2-zero-factor-nat"\] if oid == "T2" else \[\]](../../../tools/foundation/adjudicate_core.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-df54cce5c9fe1bcc / proof_artifacts = \["proof:T2-zero-factor-nat"\] if oid == "T2" else \[\]
+  - 来源：`tools/foundation/adjudicate_core.py`
+  - 依赖：T2；被引用：—
+- [proof_artifacts=load("data/foundation/proofs/core-artifacts.jsonl")](../../../tools/foundation/validate_foundation.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-a274a37be3dc9de4 / proof_artifacts=load("data/foundation/proofs/core-artifacts.jsonl")
+  - 来源：`tools/foundation/validate_foundation.py`
+  - 依赖：—；被引用：—
 - [proof_count = sum(1 for l in open(proof_path) if l.strip())](../../../tools/foundation/validate_084_max_adjudication.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-876b250e07a158dc / proof_count = sum(1 for l in open(proof_path) if l.strip())
@@ -193,6 +228,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-d3573051fd95b15c / psi0_path = os.path.join(BASE_DIR, "统一函数总表/0001-Ψ₀元函数完整数学定义.md")
   - 来源：`data/external-research/120-function-paradigm-atlas/120-validator.py`
+  - 依赖：—；被引用：—
+- [psychological facts, or causal effects.](../../../reports/external-research/pointfire-getnote-external-verification-r1-20260813.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-9f000409d590a215 / psychological facts, or causal effects.
+  - 来源：`reports/external-research/pointfire-getnote-external-verification-r1-20260813.md`
   - 依赖：—；被引用：—
 - [public_violation = current_public and bool(PUBLIC_OVERCLAIM.search(text)) and not CAVEAT.search(text) and not inherited_](../../../tools/foundation/adjudicate_nonfunction_claims.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -575,6 +615,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-f119db3d6430cfa4 / record\["evidence_gate"\]\["formalization_frozen"\] = False
   - 来源：`tests/test_failure_case_evidence_gate.py`
+  - 依赖：—；被引用：—
+- [recorded as normative requirements, not proof of compliance or effectiveness.](../../../reports/external-research/pointfire-getnote-external-verification-r1-20260813.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-3fca45d555c0f78d / recorded as normative requirements, not proof of compliance or effectiveness.
+  - 来源：`reports/external-research/pointfire-getnote-external-verification-r1-20260813.md`
   - 依赖：—；被引用：—
 - [Records origin event, spacetime scope, reachability semantics, horizon/boundary, coordinate/frame assumptions, and sourc](../../../docs/architecture/multiscale-causal-fabric.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -2455,49 +2500,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-5f54ebd7f5bee46f / title: "I(t,L) 提议者意识 / I(t,L) proposer awareness"
   - 来源：`统一函数总表/0002-A1-I(t,L) 提议者意识.md`
-  - 依赖：—；被引用：—
-- [title: "Jensen-慢性消耗统一极限函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0444-D408-Jensen-%E6%85%A2%E6%80%A7%E6%B6%88%E8%80%97%E7%BB%9F%E4%B8%80%E6%9E%81%E9%99%90%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-949FA5755D5918CD / title: "Jensen-慢性消耗统一极限函数" / IMPLICIT-949FA5755D5918CD
-  - 来源：`统一函数总表/0444-D408-Jensen-慢性消耗统一极限函数.md`
-  - 依赖：—；被引用：—
-- [title: "Jensen-慢性消耗统一极限函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0444-D408-Jensen-%E6%85%A2%E6%80%A7%E6%B6%88%E8%80%97%E7%BB%9F%E4%B8%80%E6%9E%81%E9%99%90%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-e660b9d814623d0b / title: "Jensen-慢性消耗统一极限函数"
-  - 来源：`统一函数总表/0444-D408-Jensen-慢性消耗统一极限函数.md`
-  - 依赖：—；被引用：—
-- [title: "K=1-p_max=p*等价证明函数 \| M5的K=1对应正反馈恰好自持"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0452-D416-K%3D1-p_max%3Dp-%E7%AD%89%E4%BB%B7%E8%AF%81%E6%98%8E%E5%87%BD%E6%95%B0%20-%20M5%E7%9A%84K%3D1%E5%AF%B9%E5%BA%94%E6%AD%A3%E5%8F%8D%E9%A6%88%E6%81%B0%E5%A5%BD%E8%87%AA%E6%8C%81.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-021e4ab37a340b89 / title: "K=1-p_max=p*等价证明函数 \| M5的K=1对应正反馈恰好自持"
-  - 来源：`统一函数总表/0452-D416-K=1-p_max=p-等价证明函数 - M5的K=1对应正反馈恰好自持.md`
-  - 依赖：—；被引用：—
-- [title: "p*-分布形态函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0322-D286-p--%E5%88%86%E5%B8%83%E5%BD%A2%E6%80%81%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-B8D82B5F2158B94F / title: "p*-分布形态函数" / IMPLICIT-B8D82B5F2158B94F
-  - 来源：`统一函数总表/0322-D286-p--分布形态函数.md`
-  - 依赖：—；被引用：—
-- [title: "p*临界标度函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0409-D373-p-%E4%B8%B4%E7%95%8C%E6%A0%87%E5%BA%A6%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-47560747D8973DB8 / title: "p*临界标度函数" / IMPLICIT-47560747D8973DB8
-  - 来源：`统一函数总表/0409-D373-p-临界标度函数.md`
-  - 依赖：—；被引用：—
-- [title: "p*放大涨落-有限n联合函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0395-D359-p-%E6%94%BE%E5%A4%A7%E6%B6%A8%E8%90%BD-%E6%9C%89%E9%99%90n%E8%81%94%E5%90%88%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-3845A504630CC3CC / title: "p*放大涨落-有限n联合函数" / IMPLICIT-3845A504630CC3CC
-  - 来源：`统一函数总表/0395-D359-p-放大涨落-有限n联合函数.md`
-  - 依赖：—；被引用：—
-- [title: "p*敏感度函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0353-D317-p-%E6%95%8F%E6%84%9F%E5%BA%A6%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-BCEFBE2BFF47CC27 / title: "p*敏感度函数" / IMPLICIT-BCEFBE2BFF47CC27
-  - 来源：`统一函数总表/0353-D317-p-敏感度函数.md`
-  - 依赖：—；被引用：—
-- [title: "p*涨落-噪声耦合函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0381-D345-p-%E6%B6%A8%E8%90%BD-%E5%99%AA%E5%A3%B0%E8%80%A6%E5%90%88%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-7142AC9F71F58ADD / title: "p*涨落-噪声耦合函数" / IMPLICIT-7142AC9F71F58ADD
-  - 来源：`统一函数总表/0381-D345-p-涨落-噪声耦合函数.md`
-  - 依赖：—；被引用：—
-- [title: "p*涨落函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0367-D331-p-%E6%B6%A8%E8%90%BD%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-48930BEDB5CEFE3F / title: "p*涨落函数" / IMPLICIT-48930BEDB5CEFE3F
-  - 来源：`统一函数总表/0367-D331-p-涨落函数.md`
   - 依赖：—；被引用：—

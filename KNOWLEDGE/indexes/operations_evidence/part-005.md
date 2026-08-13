@@ -1499,6 +1499,11 @@
   - 可搜索名称：NFC-c5c59b586a1da1c5 / isomorphism_topology := ∫_{Ω} structure_A ≅ structure_B × mapping_consistency dΩ
   - 来源：`docs/phi_meta_law.md`
   - 依赖：—；被引用：—
+- [It is not a general external validation of GetNote, its source projection, or](../../../reports/external-research/pointfire-getnote-external-verification-r1-20260813.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-ba8cc68dc0566917 / It is not a general external validation of GetNote, its source projection, or
+  - 来源：`reports/external-research/pointfire-getnote-external-verification-r1-20260813.md`
+  - 依赖：—；被引用：—
 - [item = next((row for row in items if row.get("work_id") == WORK_ID), None)](../../../data/operations/iterations/113/publication/tools/validate_publication.py)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-FB12BE7095DEAC70 / item = next((row for row in items if row.get("work_id") == WORK_ID), None) / IMPLICIT-FB12BE7095DEAC70
@@ -2498,9 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-AA8BFDDFF700F348 / require(path.read_bytes() == expected, f"stale propagation product: {path}") / IMPLICIT-AA8BFDDFF700F348
   - 来源：`tools/operations/compute_change_propagation.py`
-  - 依赖：—；被引用：—
-- [require(paths\["impact_report_path"\].read_text(encoding="utf-8") == impact_report(recomputed), f"{source}: propagation impact report is stale")](../../../tools/validate_iteration_sync.py)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-95E3159469800722 / require(paths\["impact_report_path"\].read_text(encoding="utf-8") == impact_report(recomputed), f"{source}: propagation impact report is stale") / IMPLICIT-95E3159469800722
-  - 来源：`tools/validate_iteration_sync.py`
   - 依赖：—；被引用：—

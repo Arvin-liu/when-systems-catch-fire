@@ -869,6 +869,36 @@
   - 可搜索名称：NFC-36a31158300a7859 / counts={"formal_objects":len(objects),"formal_cases":len(cases),"candidate_cases":len(candidates),"pending_claims":len(p
   - 来源：`tools/foundation/migrate_legacy.py`
   - 依赖：—；被引用：—
+- [Current canonical claim record already preserves the claim as bounded heuristic language with open proof obligations.](../../../FOUNDATION-64-PROPAGATION.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-19c66a2253149fe8 / Current canonical claim record already preserves the claim as bounded heuristic language with open proof obligations.
+  - 来源：`FOUNDATION-64-PROPAGATION.jsonl`
+  - 依赖：—；被引用：—
+- [Current canonical claim record already preserves the heuristic ceiling and unresolved proof/type obligations.](../../../FOUNDATION-64-PROPAGATION.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-9a9e5fff58e9c95a / Current canonical claim record already preserves the heuristic ceiling and unresolved proof/type obligations.
+  - 来源：`FOUNDATION-64-PROPAGATION.jsonl`
+  - 依赖：—；被引用：—
+- [Current canonical claim record already preserves the Kakeya statement with its bounded proof/status ceiling.](../../../FOUNDATION-64-PROPAGATION.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-b2de9ce257a7ae59 / Current canonical claim record already preserves the Kakeya statement with its bounded proof/status ceiling.
+  - 来源：`FOUNDATION-64-PROPAGATION.jsonl`
+  - 依赖：—；被引用：—
+- [Current canonical claim record already retains the unproved proposition as a research hypothesis.](../../../FOUNDATION-64-PROPAGATION.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-1b46a05caec78e84 / Current canonical claim record already retains the unproved proposition as a research hypothesis.
+  - 来源：`FOUNDATION-64-PROPAGATION.jsonl`
+  - 依赖：—；被引用：—
+- [Current canonical record already preserves the explicit grand-unification withdrawal and quarantine; reopening would req](../../../FOUNDATION-64-PROPAGATION.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-cc523f39738c8884 / Current canonical record already preserves the explicit grand-unification withdrawal and quarantine; reopening would req
+  - 来源：`FOUNDATION-64-PROPAGATION.jsonl`
+  - 依赖：—；被引用：—
+- [Current canonical record already preserves the repository/toolchain statement as pending proof rather than external evid](../../../FOUNDATION-64-PROPAGATION.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-54744d44932b03df / Current canonical record already preserves the repository/toolchain statement as pending proof rather than external evid
+  - 来源：`FOUNDATION-64-PROPAGATION.jsonl`
+  - 依赖：—；被引用：—
 - [Current claim ceiling: MCF is a repository-native representation candidate for navigating multiscale causal hypotheses a](../../../data/architecture/multiscale-causal-fabric/README.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-b5b16104a9dffeb1 / Current claim ceiling: MCF is a repository-native representation candidate for navigating multiscale causal hypotheses a
@@ -2467,34 +2497,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-9C9F532C27812969 / def write_validator(formal_schema: dict, provenance_schema: dict) -> None: / IMPLICIT-9C9F532C27812969
   - 来源：`tools/math_foundation_audit.py`
-  - 依赖：—；被引用：—
-- [Define a repeatable, evidence-backed gate for deciding when a protocol may be recommended for formal promotion to `forma](../../../inputs/020/formal-protocol-promotion-standard.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-0c6188eaa8818dcf / Define a repeatable, evidence-backed gate for deciding when a protocol may be recommended for formal promotion to `forma
-  - 来源：`inputs/020/formal-protocol-promotion-standard.md`
-  - 依赖：—；被引用：—
-- [Denotational semantics and regression fixtures give meaning and finite checks, but no mechanized correspondence, semanti](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-ead18f42a23c2858 / Denotational semantics and regression fixtures give meaning and finite checks, but no mechanized correspondence, semanti
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
-  - 依赖：—；被引用：—
-- [Denotational semantics provides mathematical correctness basis. Equational theory provides laws that must be satisfied.](../../../data/external-research/121-fulltext-resolver/121q2/acceptance/S120-053.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-4bf3bede0dc2e1bc / Denotational semantics provides mathematical correctness basis. Equational theory provides laws that must be satisfied.
-  - 来源：`data/external-research/121-fulltext-resolver/121q2/acceptance/S120-053.json`
-  - 依赖：—；被引用：—
-- [Denotational validity, operational equality, equational derivability, lambda equivalence and algebraic laws are formally](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-665312210482fca8 / Denotational validity, operational equality, equational derivability, lambda equivalence and algebraic laws are formally
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
-  - 依赖：—；被引用：—
-- [Derived architecture candidate only; not causal proof and not a new truth layer.](../../../data/architecture/multiscale-causal-fabric/completion-seal.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-b8dbc85745a4d198 / Derived architecture candidate only; not causal proof and not a new truth layer.
-  - 来源：`data/architecture/multiscale-causal-fabric/completion-seal.json`
-  - 依赖：—；被引用：—
-- [Derived operational extension for probability semantics and system dynamics; not a truth layer or causal proof.](../../../data/architecture/probabilistic-system-dynamics/completion-seal.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-56083285c984826f / Derived operational extension for probability semantics and system dynamics; not a truth layer or causal proof.
-  - 来源：`data/architecture/probabilistic-system-dynamics/completion-seal.json`
   - 依赖：—；被引用：—

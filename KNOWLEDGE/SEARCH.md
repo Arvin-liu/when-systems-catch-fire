@@ -4,13 +4,13 @@
 
 ## 主题索引
 
-- [数学与形式化](./indexes/mathematics.md) — 11029 条主归属记录
-- [物理与统一问题](./indexes/physics.md) — 416 条主归属记录
-- [系统论与机制建模](./indexes/systems.md) — 2665 条主归属记录
+- [数学与形式化](./indexes/mathematics.md) — 11040 条主归属记录
+- [物理与统一问题](./indexes/physics.md) — 418 条主归属记录
+- [系统论与机制建模](./indexes/systems.md) — 2677 条主归属记录
 - [认知、Agent 与行动](./indexes/cognition.md) — 457 条主归属记录
-- [架构、治理与自我纠错](./indexes/architecture_governance.md) — 7739 条主归属记录
+- [架构、治理与自我纠错](./indexes/architecture_governance.md) — 7769 条主归属记录
 - [文章、写作与公共表达](./indexes/writing_publication.md) — 121 条主归属记录
-- [迭代、验证与证据工程](./indexes/operations_evidence.md) — 3174 条主归属记录
+- [迭代、验证与证据工程](./indexes/operations_evidence.md) — 3175 条主归属记录
 
 ## 不确定搜哪个主题
 

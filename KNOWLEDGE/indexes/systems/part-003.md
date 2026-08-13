@@ -4,6 +4,41 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [network\["embedding_evidence"\]\[0\]\["evidence"\] = \["valid", "also valid"\]](../../../tests/test_adaptive_relational_network_validation_contract.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-0a28ba4ad7b7949b / network\["embedding_evidence"\]\[0\]\["evidence"\] = \["valid", "also valid"\]
+  - 来源：`tests/test_adaptive_relational_network_validation_contract.py`
+  - 依赖：—；被引用：—
+- [network\["embedding_evidence"\]\[0\]\["record_id"\],](../../../tests/test_adaptive_relational_network_validation_contract.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-a1893b0916335aa0 / network\["embedding_evidence"\]\[0\]\["record_id"\],
+  - 来源：`tests/test_adaptive_relational_network_validation_contract.py`
+  - 依赖：—；被引用：—
+- [network\["integration_responses"\]\[0\]\["evidence_ref"\] = "missing-evidence"](../../../tests/test_adaptive_relational_network_validation_contract.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-6b14754ee62283a5 / network\["integration_responses"\]\[0\]\["evidence_ref"\] = "missing-evidence"
+  - 来源：`tests/test_adaptive_relational_network_validation_contract.py`
+  - 依赖：—；被引用：—
+- [network\["projections"\]\[0\]\["omitted_dimensions"\] = \["valid", " "\]](../../../tests/test_adaptive_relational_network_validation_contract.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-cc1e4a626733cdaf / network\["projections"\]\[0\]\["omitted_dimensions"\] = \["valid", " "\]
+  - 来源：`tests/test_adaptive_relational_network_validation_contract.py`
+  - 依赖：—；被引用：—
+- [network\["projections"\]\[0\]\["omitted_dimensions"\] = \["valid", "also valid"\]](../../../tests/test_adaptive_relational_network_validation_contract.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-ab15fa46ead789db / network\["projections"\]\[0\]\["omitted_dimensions"\] = \["valid", "also valid"\]
+  - 来源：`tests/test_adaptive_relational_network_validation_contract.py`
+  - 依赖：—；被引用：—
+- [network\["projections"\]\[0\]\["projection_rules"\] = \["valid", " "\]](../../../tests/test_adaptive_relational_network_validation_contract.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-c82c1f7f3ecd3de5 / network\["projections"\]\[0\]\["projection_rules"\] = \["valid", " "\]
+  - 来源：`tests/test_adaptive_relational_network_validation_contract.py`
+  - 依赖：—；被引用：—
+- [network\["projections"\]\[0\]\["projection_rules"\] = \["valid", "also valid"\]](../../../tests/test_adaptive_relational_network_validation_contract.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-59b6163a762016f8 / network\["projections"\]\[0\]\["projection_rules"\] = \["valid", "also valid"\]
+  - 来源：`tests/test_adaptive_relational_network_validation_contract.py`
+  - 依赖：—；被引用：—
 - [network_topology := ∫_{Ω} local_information × local_decision × distributed_authority dΩ](../../../docs/phi_meta_law.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-40EF3366143C282D / network_topology := ∫_{Ω} local_information × local_decision × distributed_authority dΩ / IMPLICIT-40EF3366143C282D / IMPLICIT-5B9AC3F095D10459
@@ -39,6 +74,11 @@
   - 可搜索名称：NFC-6c34856f3c47a60b / NF-X1 指标排名隐性分层**：当量化积分与公共资格/晋升/荣誉挂钩，积分高低被默认等同贡献大小，制造新的隐性社会/组织分层。三领域均出现（荣誉阶层/续资助分层/职称层级）。现有表仅 D94 提及组织层级但不覆盖此机制。
   - 来源：`outputs/collisions/20260708-cross-domain-smoke-test/cross-domain-synthesis.md`
   - 依赖：D94；被引用：—
+- [No canonical Foundation file or generated output was changed merely because](../../../reports/foundation-architecture/pointfire-seven-track-foundation-high-impact-frontier-r1-20260813.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-7e8d1eb8704c5228 / No canonical Foundation file or generated output was changed merely because
+  - 来源：`reports/foundation-architecture/pointfire-seven-track-foundation-high-impact-frontier-r1-20260813.md`
+  - 依赖：—；被引用：—
 - [No EmbeddingEvidenceRecord separates external availability, retrieval, relational linkage, judgment change, action chang](../../../data/architecture/adaptive-relational-network/network-gap-ledger.json)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-eb0248d589f7105c / No EmbeddingEvidenceRecord separates external availability, retrieval, relational linkage, judgment change, action chang
@@ -2372,6 +2412,11 @@
   - 可搜索名称：NFC-369c29f9fb93c74d / The topology separates `substantive_causal_candidate`, `repository_dependency` and `synchronization_obligation`. Substan
   - 来源：`ITERATION.md`
   - 依赖：—；被引用：—
+- [the underlying concepts as social laws, universal mechanisms, measured](../../../reports/external-research/pointfire-getnote-external-verification-r1-20260813.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-e18741bde22ddbe6 / the underlying concepts as social laws, universal mechanisms, measured
+  - 来源：`reports/external-research/pointfire-getnote-external-verification-r1-20260813.md`
+  - 依赖：—；被引用：—
 - [These tools do not discover hidden reality, mind-read integration, infer clinical states, or create a second canonical t](../../../docs/architecture/adaptive-relational-network.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-7d87cc56bd503414 / These tools do not discover hidden reality, mind-read integration, infer clinical states, or create a second canonical t
@@ -2446,49 +2491,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-1454b45d4f0d0b8c / This negative example records the boundary that quantum entanglement can support nonclassical correlation, but must not
   - 来源：`data/architecture/multiscale-causal-fabric/examples/quantum-entanglement-negative.md`
-  - 依赖：—；被引用：—
-- [This permits Step 001. The audit claim ceiling is narrow: it establishes a representation gap, not a new causal truth.](../../../reports/architecture/121Q21R-causal-asset-audit.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-c042cbda15da38b6 / This permits Step 001. The audit claim ceiling is narrow: it establishes a representation gap, not a new causal truth.
-  - 来源：`reports/architecture/121Q21R-causal-asset-audit.md`
-  - 依赖：—；被引用：—
-- [This permits Step 001. The audit establishes a modeling gap only; it does not prove any new probabilistic or system-dyna](../../../reports/architecture/121Q22-probability-system-gap-audit.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-b1414120b8806748 / This permits Step 001. The audit establishes a modeling gap only; it does not prove any new probabilistic or system-dyna
-  - 来源：`reports/architecture/121Q22-probability-system-gap-audit.md`
-  - 依赖：—；被引用：—
-- [This rendering is a projection, not canonical evidence, truth, value or causality.](../../../data/architecture/adaptive-relational-network/real-history/after-layer-architecture.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-5d5beba8a6156e78 / This rendering is a projection, not canonical evidence, truth, value or causality.
-  - 来源：`data/architecture/adaptive-relational-network/real-history/after-layer-architecture.md`
-  - 依赖：—；被引用：—
-- [This report documents the collection and analysis of 84 academic sources across 10 function paradigm families, the gener](../../../reports/external-research/120-function-paradigm-atlas-report.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-9cc48aedf1bd70da / This report documents the collection and analysis of 84 academic sources across 10 function paradigm families, the gener
-  - 来源：`reports/external-research/120-function-paradigm-atlas-report.md`
-  - 依赖：—；被引用：—
-- [This test verifies the mechanism works by checking no gap exists](../../../tests/test_change_propagation.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-1d8574973102debf / This test verifies the mechanism works by checking no gap exists
-  - 来源：`tests/test_change_propagation.py`
-  - 依赖：—；被引用：—
-- [Three AI affirmations do not cancel one missing executable test. One CI pass does not settle a value conflict. One human](../../../docs/architecture/mechanism-adjudication-plane.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-88945913daeffa47 / Three AI affirmations do not cancel one missing executable test. One CI pass does not settle a value conflict. One human
-  - 来源：`docs/architecture/mechanism-adjudication-plane.md`
-  - 依赖：—；被引用：—
-- [Timeline: arn-projection-26fea4a0](../../../data/architecture/adaptive-relational-network/real-history/after-timeline.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-a4ddd8dd4eb1ca96 / Timeline: arn-projection-26fea4a0
-  - 来源：`data/architecture/adaptive-relational-network/real-history/after-timeline.md`
-  - 依赖：—；被引用：—
-- [title: "Fisher可达性单调递减 — 模拟8维乘法系统从存活区滑入门控区，A_Fisher从12.3→2.1→0.01，单调递减无反弹。Shannon熵从3.2→2.8→1.1，也递减（违反经典第二定律） / Fisher可达性单调递减 - 模拟8维乘法系统从存活区滑入门控区, A_Fisher从12.3 -> 2.1 -> 0.01, 单调递减无反弹. Shannon熵从3.2 -> 2.8 -> 1.1, 也递减(违反经典第二定律)"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0457-C-458-Fisher%E5%8F%AF%E8%BE%BE%E6%80%A7%E5%8D%95%E8%B0%83%E9%80%92%E5%87%8F%20%E2%80%94%20%E6%A8%A1%E6%8B%9F8%E7%BB%B4%E4%B9%98%E6%B3%95%E7%B3%BB%E7%BB%9F%E4%BB%8E%E5%AD%98%E6%B4%BB%E5%8C%BA%E6%BB%91%E5%85%A5%E9%97%A8%E6%8E%A7%E5%8C%BA%2CA_Fisher%E4%BB%8E12.3%E2%86%922.1%E2%86%920.01%2C%E5%8D%95%E8%B0%83%E9%80%92%E5%87%8F%E6%97%A0%E5%8F%8D%E5%BC%B9%E3%80%82Shann.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-73DFBBE301FCC3C3 / title: "Fisher可达性单调递减 — 模拟8维乘法系统从存活区滑入门控区，A_Fisher从12.3→2.1→0.01，单调递减无反弹。Shannon熵从3.2→2.8→1.1，也递减（违反经典第二定律） / Fisher可达性单调递减 - 模拟8维乘法系统从存活区滑入门控区, A_Fisher从12.3 -> 2.1 -> 0.01, 单调递减无反弹. Shannon熵从3.2 -> 2.8 -> 1.1, 也递减(违反经典第二定律)" / IMPLICIT-73DFBBE301FCC3C3
-  - 来源：`统一案例总表/0457-C-458-Fisher可达性单调递减 — 模拟8维乘法系统从存活区滑入门控区,A_Fisher从12.3→2.1→0.01,单调递减无反弹。Shann.md`
-  - 依赖：—；被引用：—
-- [title: "OrcaRouter智能分流机制验证"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0591-C-596-OrcaRouter%E6%99%BA%E8%83%BD%E5%88%86%E6%B5%81%E6%9C%BA%E5%88%B6%E9%AA%8C%E8%AF%81.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-e71f8ea15a7f4365 / title: "OrcaRouter智能分流机制验证"
-  - 来源：`统一案例总表/0591-C-596-OrcaRouter智能分流机制验证.md`
   - 依赖：—；被引用：—

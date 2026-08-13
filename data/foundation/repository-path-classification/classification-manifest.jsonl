@@ -18,6 +18,7 @@
 {"category": "REPOSITORY_GOVERNANCE_DOC", "matched_rule": "REPOSITORY_GOVERNANCE_DOC", "path": "COMMERCIAL-LICENSING.md"}
 {"category": "REPOSITORY_GOVERNANCE_DOC", "matched_rule": "REPOSITORY_GOVERNANCE_DOC", "path": "CONTRIBUTING.md"}
 {"category": "REPOSITORY_GOVERNANCE_DOC", "matched_rule": "REPOSITORY_GOVERNANCE_DOC", "path": "CONTRIBUTOR-LICENSE-CANDIDATE.md"}
+{"category": "REPOSITORY_GOVERNANCE_DOC", "matched_rule": "REPOSITORY_GOVERNANCE_DOC", "path": "FOUNDATION-64-PROPAGATION.jsonl"}
 {"category": "REPOSITORY_GOVERNANCE_DOC", "matched_rule": "REPOSITORY_GOVERNANCE_DOC", "path": "FOUNDATION.md"}
 {"category": "REPOSITORY_GOVERNANCE_DOC", "matched_rule": "REPOSITORY_GOVERNANCE_DOC", "path": "GET-BRAIN-LATEST.md"}
 {"category": "REPOSITORY_GOVERNANCE_DOC", "matched_rule": "REPOSITORY_GOVERNANCE_DOC", "path": "HUMAN-READING.md"}
@@ -1753,6 +1754,9 @@
 {"category": "GENERATED_PROJECTION", "matched_rule": "GENERATED_PROJECTION", "path": "reports/external-research/121b-fulltext-batch-report.md"}
 {"category": "GENERATED_PROJECTION", "matched_rule": "GENERATED_PROJECTION", "path": "reports/external-research/121b-handoff-to-121c.md"}
 {"category": "GENERATED_PROJECTION", "matched_rule": "GENERATED_PROJECTION", "path": "reports/external-research/121c01-max-semantic-review-batch-01.md"}
+{"category": "GENERATED_PROJECTION", "matched_rule": "GENERATED_PROJECTION", "path": "reports/external-research/pointfire-getnote-external-verification-r1-20260813-sources.jsonl"}
+{"category": "GENERATED_PROJECTION", "matched_rule": "GENERATED_PROJECTION", "path": "reports/external-research/pointfire-getnote-external-verification-r1-20260813.jsonl"}
+{"category": "GENERATED_PROJECTION", "matched_rule": "GENERATED_PROJECTION", "path": "reports/external-research/pointfire-getnote-external-verification-r1-20260813.md"}
 {"category": "GENERATED_PROJECTION", "matched_rule": "GENERATED_PROJECTION", "path": "reports/foundation-architecture/075-truth-audit-20260712.md"}
 {"category": "GENERATED_PROJECTION", "matched_rule": "GENERATED_PROJECTION", "path": "reports/foundation-architecture/076-adversarial-acceptance-audit-20260713.md"}
 {"category": "GENERATED_PROJECTION", "matched_rule": "GENERATED_PROJECTION", "path": "reports/foundation-architecture/078-truth-audit-20260713.md"}
@@ -1798,6 +1802,7 @@
 {"category": "GENERATED_PROJECTION", "matched_rule": "GENERATED_PROJECTION", "path": "reports/foundation-architecture/math-proof-backend-report-20260712.md"}
 {"category": "GENERATED_PROJECTION", "matched_rule": "GENERATED_PROJECTION", "path": "reports/foundation-architecture/migration-and-rollback-20260712.md"}
 {"category": "GENERATED_PROJECTION", "matched_rule": "GENERATED_PROJECTION", "path": "reports/foundation-architecture/object-classification-20260712.md"}
+{"category": "GENERATED_PROJECTION", "matched_rule": "GENERATED_PROJECTION", "path": "reports/foundation-architecture/pointfire-seven-track-foundation-high-impact-frontier-r1-20260813.md"}
 {"category": "GENERATED_PROJECTION", "matched_rule": "GENERATED_PROJECTION", "path": "reports/foundation-architecture/remaining-content-work-queue-20260713.md"}
 {"category": "GENERATED_PROJECTION", "matched_rule": "GENERATED_PROJECTION", "path": "reports/foundation-architecture/schema-and-integrity-audit-20260712.md"}
 {"category": "GENERATED_PROJECTION", "matched_rule": "GENERATED_PROJECTION", "path": "reports/foundation-architecture/semantic-adjudication-verification-20260713.md"}

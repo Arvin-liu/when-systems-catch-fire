@@ -4,6 +4,141 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [\| \[C-393\]( ) \| \[大数据的泛化相变——μ_data越过Λ_generalization的瞬间泛化能力质变\]](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-027381db07975df8 / \| \[C-393\]( ) \| \[大数据的泛化相变——μ_data越过Λ_generalization的瞬间泛化能力质变\]
+  - 来源：`统一案例总表/INDEX.md`
+  - 依赖：D159；被引用：—
+- [\| \[C-3\]( ) \| \[秦统一\]( ) \| 六国遗民"可以离开"但离开等于死，象征退出权=强制力的优雅版本 \|](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-0a3cbddd101134d3 / \| \[C-3\]( ) \| \[秦统一\]( ) \| 六国遗民"可以离开"但离开等于死，象征退出权=强制力的优雅版本 \|
+  - 来源：`统一案例总表/INDEX.md`
+  - 依赖：—；被引用：—
+- [\| \[C-40\]( ) \| \[中国计划生育\]( ) \| 超生=罚款+开除+社会压力，象征退出权=强制力的优雅版本 \|](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-9109ccc879326d3f / \| \[C-40\]( ) \| \[中国计划生育\]( ) \| 超生=罚款+开除+社会压力，象征退出权=强制力的优雅版本 \|
+  - 来源：`统一案例总表/INDEX.md`
+  - 依赖：—；被引用：—
+- [\| \[C-41\]( ) \| \[英国NHS\]( ) \| 公民有真实退出权，NHS认同经退出权验证但应约者逐渐消极 \|](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-a534e4036aeadede / \| \[C-41\]( ) \| \[英国NHS\]( ) \| 公民有真实退出权，NHS认同经退出权验证但应约者逐渐消极 \|
+  - 来源：`统一案例总表/INDEX.md`
+  - 依赖：—；被引用：—
+- [\| \[C-432\]( ) \| \[β完整轨迹验证 — εₖ从0.1→0](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-49382875b7bebb06 / \| \[C-432\]( ) \| \[β完整轨迹验证 — εₖ从0.1→0
+  - 来源：`统一案例总表/INDEX.md`
+  - 依赖：D112；被引用：—
+- [\| \[C-436\]( ) \| \[经验法则证伪 — 经验说\\\\"先确](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-43f3298137a326bf / \| \[C-436\]( ) \| \[经验法则证伪 — 经验说\\\\"先确
+  - 来源：`统一案例总表/INDEX.md`
+  - 依赖：D112；被引用：—
+- [\| \[C-442\]( ) \| \[三阶段操作协议验证 — 职业转型：探索期(β小)→转型期(β大,精准投入)→拓](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-97aa04e804780d00 / \| \[C-442\]( ) \| \[三阶段操作协议验证 — 职业转型：探索期(β小)→转型期(β大,精准投入)→拓
+  - 来源：`统一案例总表/INDEX.md`
+  - 依赖：D114；被引用：—
+- [\| \[C-44\]( ) \| \[亚历山大二世废奴\]( ) \| 农奴"获得自由"但赎地成本极高事实上走不了 \|](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-d71e5b0c43078d4c / \| \[C-44\]( ) \| \[亚历山大二世废奴\]( ) \| 农奴"获得自由"但赎地成本极高事实上走不了 \|
+  - 来源：`统一案例总表/INDEX.md`
+  - 依赖：—；被引用：—
+- [\| \[C-456\]( ) \| \[涨落-耗散验证 — β=2.5时⟨δG²/G²⟩=0.6×2.5/10×0.5/0.25=0.3（30%波动），β=0.18时波动≈2](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-ab8d8ee4a0c8e2df / \| \[C-456\]( ) \| \[涨落-耗散验证 — β=2.5时⟨δG²/G²⟩=0.6×2.5/10×0.5/0.25=0.3（30%波动），β=0.18时波动≈2
+  - 来源：`统一案例总表/INDEX.md`
+  - 依赖：D116；被引用：—
+- [\| \[C-45\]( ) \| \[南非转型\]( ) \| 政治认同经退出权验证但经济认同未建立 \|](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-e33be1b658204a08 / \| \[C-45\]( ) \| \[南非转型\]( ) \| 政治认同经退出权验证但经济认同未建立 \|
+  - 来源：`统一案例总表/INDEX.md`
+  - 依赖：—；被引用：—
+- [\| \[C-46\]( ) \| \[欧盟\]( ) \| 成员国有真实退出权（英国脱欧=验证），但只点了经济认同 \|](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-df2c5f342585f18f / \| \[C-46\]( ) \| \[欧盟\]( ) \| 成员国有真实退出权（英国脱欧=验证），但只点了经济认同 \|
+  - 来源：`统一案例总表/INDEX.md`
+  - 依赖：—；被引用：—
+- [\| \[C-473\]( ) \| \[符号AI卡在1/ln — if-then规则=二值门控，σ→0，ι→0，无智能\]( ) \| 符号AI卡在1/ln](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-9ad1ef7bd300bbab / \| \[C-473\]( ) \| \[符号AI卡在1/ln — if-then规则=二值门控，σ→0，ι→0，无智能\]( ) \| 符号AI卡在1/ln
+  - 来源：`统一案例总表/INDEX.md`
+  - 依赖：D240；被引用：—
+- [\| \[C-47\]( ) \| \[庇隆主义\]( ) \| 工会+国家机器事实上锁定退出通道，认同建在个人权威上 \|](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-e75a583833967689 / \| \[C-47\]( ) \| \[庇隆主义\]( ) \| 工会+国家机器事实上锁定退出通道，认同建在个人权威上 \|
+  - 来源：`统一案例总表/INDEX.md`
+  - 依赖：—；被引用：—
+- [\| \[C-482\]( ) \| \[退出隧穿验证 — 朝鲜脱北者：C_](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-a81d7bf3d42582b5 / \| \[C-482\]( ) \| \[退出隧穿验证 — 朝鲜脱北者：C_
+  - 来源：`统一案例总表/INDEX.md`
+  - 依赖：D125；被引用：—
+- [\| \[C-483\]( ) \| \[不确定性原理验证 — 职业转型决策：精确评估当前岗位价值（Δε小）需要长期](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-a22f550f100d221a / \| \[C-483\]( ) \| \[不确定性原理验证 — 职业转型决策：精确评估当前岗位价值（Δε小）需要长期
+  - 来源：`统一案例总表/INDEX.md`
+  - 依赖：D125；被引用：—
+- [\| \[C-485\]( ) \| \[退相干验证 — 新员工入职6个月：](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-743448250f277be3 / \| \[C-485\]( ) \| \[退相干验证 — 新员工入职6个月：
+  - 来源：`统一案例总表/INDEX.md`
+  - 依赖：D126；被引用：—
+- [\| \[C-489\]( ) \| \[遮蔽=退相干环境 — 组织信息透明](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-62fa19f5626086f7 / \| \[C-489\]( ) \| \[遮蔽=退相干环境 — 组织信息透明
+  - 来源：`统一案例总表/INDEX.md`
+  - 依赖：D128；被引用：—
+- [\| \[C-492\]( ) \| \[修复=降Γ验证 — 两种修复：降门](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-63de8d4666ee5435 / \| \[C-492\]( ) \| \[修复=降Γ验证 — 两种修复：降门
+  - 来源：`统一案例总表/INDEX.md`
+  - 依赖：D128；被引用：—
+- [\| \[C-50\]( ) \| \[华为员工持股\]( ) \| 员工可辞职且行业有下家，"华为人"认同经退出权验证 \|](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-7243deeff7377fd2 / \| \[C-50\]( ) \| \[华为员工持股\]( ) \| 员工可辞职且行业有下家，"华为人"认同经退出权验证 \|
+  - 来源：`统一案例总表/INDEX.md`
+  - 依赖：—；被引用：—
+- [\| \[C-510\]( ) \| \[三阶段=曲率穿越验证 — 创业者路](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-cad43c10d7a70949 / \| \[C-510\]( ) \| \[三阶段=曲率穿越验证 — 创业者路
+  - 来源：`统一案例总表/INDEX.md`
+  - 依赖：D139；被引用：—
+- [\| \[C-515\]( ) \| \[度规扰动传播验证 — 组织文化变革](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-9003c32882d960b8 / \| \[C-515\]( ) \| \[度规扰动传播验证 — 组织文化变革
+  - 来源：`统一案例总表/INDEX.md`
+  - 依赖：D142；被引用：—
+- [\| \[C-516\]( ) \| \[三阶段曲率穿越验证 — 创业公司5](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-109898c28f1bfff0 / \| \[C-516\]( ) \| \[三阶段曲率穿越验证 — 创业公司5
+  - 来源：`统一案例总表/INDEX.md`
+  - 依赖：D143；被引用：—
+- [\| \[C-518\]( ) \| \[规范破缺验证 — 创业团队：3人团](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-de860132e502e115 / \| \[C-518\]( ) \| \[规范破缺验证 — 创业团队：3人团
+  - 来源：`统一案例总表/INDEX.md`
+  - 依赖：D145；被引用：—
+- [\| \[C-519\]( ) \| \[Higgs相变验证 — 职业选择：](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-23d6aef5b7f97fdf / \| \[C-519\]( ) \| \[Higgs相变验证 — 职业选择：
+  - 来源：`统一案例总表/INDEX.md`
+  - 依赖：D146；被引用：—
+- [\| \[C-51\]( ) \| \[丰田生产方式\]( ) \| 员工可辞职且行业有下家，"丰田人"认同经退出权验证 \|](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-b32929c1c90d5826 / \| \[C-51\]( ) \| \[丰田生产方式\]( ) \| 员工可辞职且行业有下家，"丰田人"认同经退出权验证 \|
+  - 来源：`统一案例总表/INDEX.md`
+  - 依赖：—；被引用：—
+- [\| \[C-520\]( ) \| \[Weinberg角验证 — 三个维](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-006c170421e607bf / \| \[C-520\]( ) \| \[Weinberg角验证 — 三个维
+  - 来源：`统一案例总表/INDEX.md`
+  - 依赖：D147；被引用：—
+- [\| \[C-522\]( ) \| \[跑动耦合验证 — 投资决策：秒级观](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-33615c701d79d5fb / \| \[C-522\]( ) \| \[跑动耦合验证 — 投资决策：秒级观
+  - 来源：`统一案例总表/INDEX.md`
+  - 依赖：D149；被引用：—
 - [\| \[C-523\]( ) \| \[不确定性原理 — Fisher信息度规的几何必然，算符不对易是度规非对角的代数表现\](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-adc155a1ea330aae / \| \[C-523\]( ) \| \[不确定性原理 — Fisher信息度规的几何必然，算符不对易是度规非对角的代数表现\](<./
@@ -997,6 +1132,21 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-619d7aebd421cfae / \| public metrics and Results Book \| public projection \| `PROJECT → PUBLISH` \| provenance/ceiling/privacy routes; publica
   - 来源：`docs/architecture/getnote-1329-epistemic-governance-pressure-test.md`
+  - 依赖：—；被引用：—
+- [\| R2-GETNOTE-003 \| `PARTIALLY_SUPPORTED` \| 2 \| normative requirements only \| Implementation, rights usability, effective](../../../reports/external-research/pointfire-getnote-external-verification-r1-20260813.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-b9d3ed2c0a2b970c / \| R2-GETNOTE-003 \| `PARTIALLY_SUPPORTED` \| 2 \| normative requirements only \| Implementation, rights usability, effective
+  - 来源：`reports/external-research/pointfire-getnote-external-verification-r1-20260813.md`
+  - 依赖：—；被引用：—
+- [\| R2-GETNOTE-009 \| `BRIDGE_NOT_IDENTIFIABLE` \| 0 direct bridge families \| non-identity boundary \| Structural comparison](../../../reports/external-research/pointfire-getnote-external-verification-r1-20260813.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-9a5233e19abb85cb / \| R2-GETNOTE-009 \| `BRIDGE_NOT_IDENTIFIABLE` \| 0 direct bridge families \| non-identity boundary \| Structural comparison
+  - 来源：`reports/external-research/pointfire-getnote-external-verification-r1-20260813.md`
+  - 依赖：—；被引用：—
+- [\| R2-GETNOTE-010 \| `PARTIALLY_SUPPORTED` \| 2 \| capability/evaluation boundary \| No universal hierarchy identified \|](../../../reports/external-research/pointfire-getnote-external-verification-r1-20260813.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-ecdaac3e5f521f93 / \| R2-GETNOTE-010 \| `PARTIALLY_SUPPORTED` \| 2 \| capability/evaluation boundary \| No universal hierarchy identified \|
+  - 来源：`reports/external-research/pointfire-getnote-external-verification-r1-20260813.md`
   - 依赖：—；被引用：—
 - [\| README / Pages homepage \| Current capability narrative and writing showcase; no structured recent-stage section \| Adds](../../../reports/operations/IGNITION-ITERATION-METHOD-1.4-homepage-comparison.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
@@ -2344,154 +2494,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-6064f4141c1e0b17 / 中文：案例说明：部落联盟可叛可留，认同经退出权验证但建在部分应约者身上
   - 来源：`统一案例总表/0012-C-12-阿拔斯革命.md`
-  - 依赖：—；被引用：—
-- [中文：案例说明：闭合缺失锁死收敛概率——哲学的无限维空间永远不收敛](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0219-C-219-%E9%97%AD%E5%90%88%E7%BC%BA%E5%A4%B1%E9%94%81%E6%AD%BB%E6%94%B6%E6%95%9B%E6%A6%82%E7%8E%87.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-267cac25e21061d7 / 中文：案例说明：闭合缺失锁死收敛概率——哲学的无限维空间永远不收敛
-  - 来源：`统一案例总表/0219-C-219-闭合缺失锁死收敛概率.md`
-  - 依赖：—；被引用：—
-- [中文：沃尔顿10年追踪 → D61向上螺旋自维持验证](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0155-C-155-%E6%B2%83%E5%B0%94%E9%A1%BF10%E5%B9%B4%E8%BF%BD%E8%B8%AA.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-b08533cc12e276bb / 中文：沃尔顿10年追踪 → D61向上螺旋自维持验证
-  - 来源：`统一案例总表/0155-C-155-沃尔顿10年追踪.md`
-  - 依赖：D61；被引用：—
-- [中文：沃尔顿10年追踪 → D61向上螺旋自维持验证 English: Rule-based English rendering pending human…](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0155-C-155-%E6%B2%83%E5%B0%94%E9%A1%BF10%E5%B9%B4%E8%BF%BD%E8%B8%AA.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-29778ad97693b78b / 中文：沃尔顿10年追踪 → D61向上螺旋自维持验证 English: Rule-based English rendering pending human…
-  - 来源：`统一案例总表/0155-C-155-沃尔顿10年追踪.md`
-  - 依赖：D61；被引用：—
-- [中文：沃尔顿1小时归属感练习 → D60智慧干预效力验证（新生有效/大三无效）](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0153-C-153-%E6%B2%83%E5%B0%94%E9%A1%BF1%E5%B0%8F%E6%97%B6%E5%BD%92%E5%B1%9E%E6%84%9F%E7%BB%83%E4%B9%A0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-4bdf3cbf7b317517 / 中文：沃尔顿1小时归属感练习 → D60智慧干预效力验证（新生有效/大三无效）
-  - 来源：`统一案例总表/0153-C-153-沃尔顿1小时归属感练习.md`
-  - 依赖：D60；被引用：—
-- [中文：沃尔顿1小时归属感练习 → D60智慧干预效力验证（新生有效/大三无效） English: Rule-based English rendering p…](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0153-C-153-%E6%B2%83%E5%B0%94%E9%A1%BF1%E5%B0%8F%E6%97%B6%E5%BD%92%E5%B1%9E%E6%84%9F%E7%BB%83%E4%B9%A0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-04ae8bf7b86cbd34 / 中文：沃尔顿1小时归属感练习 → D60智慧干预效力验证（新生有效/大三无效） English: Rule-based English rendering p…
-  - 来源：`统一案例总表/0153-C-153-沃尔顿1小时归属感练习.md`
-  - 依赖：D60；被引用：—
-- [中文：沃尔顿21分钟拯救婚姻 → D60的η_delivery因子验证](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0154-C-154-%E6%B2%83%E5%B0%94%E9%A1%BF21%E5%88%86%E9%92%9F%E6%8B%AF%E6%95%91%E5%A9%9A%E5%A7%BB.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-20ce6bb03021a303 / 中文：沃尔顿21分钟拯救婚姻 → D60的η_delivery因子验证
-  - 来源：`统一案例总表/0154-C-154-沃尔顿21分钟拯救婚姻.md`
-  - 依赖：D60；被引用：—
-- [中文：沃尔顿21分钟拯救婚姻 → D60的η_delivery因子验证 English: Rule-based English rendering pendi…](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0154-C-154-%E6%B2%83%E5%B0%94%E9%A1%BF21%E5%88%86%E9%92%9F%E6%8B%AF%E6%95%91%E5%A9%9A%E5%A7%BB.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-85f10f3cf75d5dfe / 中文：沃尔顿21分钟拯救婚姻 → D60的η_delivery因子验证 English: Rule-based English rendering pendi…
-  - 来源：`统一案例总表/0154-C-154-沃尔顿21分钟拯救婚姻.md`
-  - 依赖：D60；被引用：—
-- [中文：测地线偏离验证 — 组织退化传染：部门A退化（ε↓30%）→部门B（κ_AB=0.4）在3个月内跟随退化15%→部门C（κ_AC=0.1）几乎不受影响。…](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0502-C-507-%E6%B5%8B%E5%9C%B0%E7%BA%BF%E5%81%8F%E7%A6%BB%E9%AA%8C%E8%AF%81%20%E2%80%94%20%E7%BB%84%E7%BB%87%E9%80%80%E5%8C%96%E4%BC%A0%E6%9F%93-%E9%83%A8%E9%97%A8A%E9%80%80%E5%8C%96%28%CE%B5%E2%86%9330%25%29%E2%86%92%E9%83%A8%E9%97%A8B%28%CE%BA_AB%3D0.4%29%E5%9C%A83%E4%B8%AA%E6%9C%88%E5%86%85%E8%B7%9F%E9%9A%8F%E9%80%80%E5%8C%9615%25%E2%86%92%E9%83%A8%E9%97%A8C%28%CE%BA_AC%3D0.1%29%E5%87%A0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-af4d81458d27d46c / 中文：测地线偏离验证 — 组织退化传染：部门A退化（ε↓30%）→部门B（κ_AB=0.4）在3个月内跟随退化15%→部门C（κ_AC=0.1）几乎不受影响。…
-  - 来源：`统一案例总表/0502-C-507-测地线偏离验证 — 组织退化传染-部门A退化(ε↓30%)→部门B(κ_AB=0.4)在3个月内跟随退化15%→部门C(κ_AC=0.1)几.md`
-  - 依赖：—；被引用：—
-- [中文：涨落-耗散验证 — β=2.5时⟨δG²/G²⟩=0.6×2.5/10×0.5/0.25=0.3（30%波动），β=0.18时波动≈2.2%。刀刃期产出…](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0455-C-456-%E6%B6%A8%E8%90%BD-%E8%80%97%E6%95%A3%E9%AA%8C%E8%AF%81%20%E2%80%94%20%CE%B2%3D2.5%E6%97%B6%E2%9F%A8%CE%B4G2.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-5164f7518dbdbbdf / 中文：涨落-耗散验证 — β=2.5时⟨δG²/G²⟩=0.6×2.5/10×0.5/0.25=0.3（30%波动），β=0.18时波动≈2.2%。刀刃期产出…
-  - 来源：`统一案例总表/0455-C-456-涨落-耗散验证 — β=2.5时⟨δG2.md`
-  - 依赖：—；被引用：—
-- [中文：经验法则证伪 — 经验说"先确保生存再追求增长"，但D112说防守强度在接近门槛时反而增大——不是"先防守完再进攻"，而是"防守强度随接近门槛先增后减，…](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0435-C-436-%E7%BB%8F%E9%AA%8C%E6%B3%95%E5%88%99%E8%AF%81%E4%BC%AA%20%E2%80%94%20%E7%BB%8F%E9%AA%8C%E8%AF%B4-%E5%85%88%E7%A1%AE%E4%BF%9D%E7%94%9F%E5%AD%98%E5%86%8D%E8%BF%BD%E6%B1%82%E5%A2%9E%E9%95%BF-%2C%E4%BD%86D112%E8%AF%B4%E9%98%B2%E5%AE%88%E5%BC%BA%E5%BA%A6%E5%9C%A8%E6%8E%A5%E8%BF%91%E9%97%A8%E6%A7%9B%E6%97%B6%E5%8F%8D%E8%80%8C%E5%A2%9E%E5%A4%A7%E2%80%94%E2%80%94%E4%B8%8D%E6%98%AF-%E5%85%88%E9%98%B2%E5%AE%88%E5%AE%8C%E5%86%8D%E8%BF%9B%E6%94%BB-%2C%E8%80%8C%E6%98%AF-%E9%98%B2%E5%AE%88%E5%BC%BA%E5%BA%A6%E9%9A%8F%E6%8E%A5%E8%BF%91%E9%97%A8.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-1902f4f7153c34ee / 中文：经验法则证伪 — 经验说"先确保生存再追求增长"，但D112说防守强度在接近门槛时反而增大——不是"先防守完再进攻"，而是"防守强度随接近门槛先增后减，…
-  - 来源：`统一案例总表/0435-C-436-经验法则证伪 — 经验说-先确保生存再追求增长-,但D112说防守强度在接近门槛时反而增大——不是-先防守完再进攻-,而是-防守强度随接近门.md`
-  - 依赖：D112；被引用：—
-- [中文：统一相变框架](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0072-C-72-%E7%BB%9F%E4%B8%80%E7%9B%B8%E5%8F%98%E6%A1%86%E6%9E%B6.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-059bde7802503108 / 中文：统一相变框架
-  - 来源：`统一案例总表/0072-C-72-统一相变框架.md`
-  - 依赖：—；被引用：—
-- [中文：统一相变框架 English: Rule-based English rendering pending human review.](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0072-C-72-%E7%BB%9F%E4%B8%80%E7%9B%B8%E5%8F%98%E6%A1%86%E6%9E%B6.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-3bca392889bc82af / 中文：统一相变框架 English: Rule-based English rendering pending human review.
-  - 来源：`统一案例总表/0072-C-72-统一相变框架.md`
-  - 依赖：—；被引用：—
-- [中文：罗森塔尔"潜力生"标签实验 → D59过渡期窗口衰减验证](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0152-C-152-%E7%BD%97%E6%A3%AE%E5%A1%94%E5%B0%94-%E6%BD%9C%E5%8A%9B%E7%94%9F-%E6%A0%87%E7%AD%BE%E5%AE%9E%E9%AA%8C.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-a6256e73290b7980 / 中文：罗森塔尔"潜力生"标签实验 → D59过渡期窗口衰减验证
-  - 来源：`统一案例总表/0152-C-152-罗森塔尔-潜力生-标签实验.md`
-  - 依赖：D59；被引用：—
-- [中文：罗森塔尔"潜力生"标签实验 → D59过渡期窗口衰减验证 English: Rule-based English rendering pending h…](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0152-C-152-%E7%BD%97%E6%A3%AE%E5%A1%94%E5%B0%94-%E6%BD%9C%E5%8A%9B%E7%94%9F-%E6%A0%87%E7%AD%BE%E5%AE%9E%E9%AA%8C.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-18390e9aa2fa0245 / 中文：罗森塔尔"潜力生"标签实验 → D59过渡期窗口衰减验证 English: Rule-based English rendering pending h…
-  - 来源：`统一案例总表/0152-C-152-罗森塔尔-潜力生-标签实验.md`
-  - 依赖：D59；被引用：—
-- [中文：规范破缺验证 — 创业团队：3人团队（所有εᵢ>>θC）→S₃完全对称，角色可互换。加入投资人后（C_exit↑→ε_econ↓）→S₃破缺到S₂，经济…](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0513-C-518-%E8%A7%84%E8%8C%83%E7%A0%B4%E7%BC%BA%E9%AA%8C%E8%AF%81%20%E2%80%94%20%E5%88%9B%E4%B8%9A%E5%9B%A2%E9%98%9F-3%E4%BA%BA%E5%9B%A2%E9%98%9F%28%E6%89%80%E6%9C%89%CE%B5i-%CE%B8C%29%E2%86%92S3%E5%AE%8C%E5%85%A8%E5%AF%B9%E7%A7%B0%2C%E8%A7%92%E8%89%B2%E5%8F%AF%E4%BA%92%E6%8D%A2%E3%80%82%E5%8A%A0%E5%85%A5%E6%8A%95%E8%B5%84%E4%BA%BA%E5%90%8E%28C_exit%E2%86%91%E2%86%92%CE%B5_econ%E2%86%93%29%E2%86%92S3%E7%A0%B4%E7%BC%BA%E5%88%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-3b5875d32d9daf72 / 中文：规范破缺验证 — 创业团队：3人团队（所有εᵢ>>θC）→S₃完全对称，角色可互换。加入投资人后（C_exit↑→ε_econ↓）→S₃破缺到S₂，经济…
-  - 来源：`统一案例总表/0513-C-518-规范破缺验证 — 创业团队-3人团队(所有εi-θC)→S3完全对称,角色可互换。加入投资人后(C_exit↑→ε_econ↓)→S3破缺到.md`
-  - 依赖：—；被引用：—
-- [中文：该案例围绕 三因子归零验证 展开。](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0271-C-271-D121%E4%B8%89%E5%9B%A0%E5%AD%90%E5%BD%92%E9%9B%B6%E9%AA%8C%E8%AF%81.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-490d6592ece1a899 / 中文：该案例围绕 三因子归零验证 展开。
-  - 来源：`统一案例总表/0271-C-271-D121三因子归零验证.md`
-  - 依赖：—；被引用：—
-- [中文：该案例围绕 三因子归零验证 展开。 English: Rule-based English rendering pending human review.](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0271-C-271-D121%E4%B8%89%E5%9B%A0%E5%AD%90%E5%BD%92%E9%9B%B6%E9%AA%8C%E8%AF%81.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-70bccc5b21148820 / 中文：该案例围绕 三因子归零验证 展开。 English: Rule-based English rendering pending human review.
-  - 来源：`统一案例总表/0271-C-271-D121三因子归零验证.md`
-  - 依赖：—；被引用：—
-- [中文：该案例围绕 三效率归零验证 展开。](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0269-C-269-D126%E4%B8%89%E6%95%88%E7%8E%87%E5%BD%92%E9%9B%B6%E9%AA%8C%E8%AF%81.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-089915907991358d / 中文：该案例围绕 三效率归零验证 展开。
-  - 来源：`统一案例总表/0269-C-269-D126三效率归零验证.md`
-  - 依赖：—；被引用：—
-- [中文：该案例围绕 三效率归零验证 展开。 English: Rule-based English rendering pending human review.](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0269-C-269-D126%E4%B8%89%E6%95%88%E7%8E%87%E5%BD%92%E9%9B%B6%E9%AA%8C%E8%AF%81.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-e39b3fdf83bf7dfa / 中文：该案例围绕 三效率归零验证 展开。 English: Rule-based English rendering pending human review.
-  - 来源：`统一案例总表/0269-C-269-D126三效率归零验证.md`
-  - 依赖：—；被引用：—
-- [中文：该案例围绕 乘法归零验证 展开。](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0268-C-268-D86%E4%B9%98%E6%B3%95%E5%BD%92%E9%9B%B6%E9%AA%8C%E8%AF%81.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-7f6f308caee1b28a / 中文：该案例围绕 乘法归零验证 展开。
-  - 来源：`统一案例总表/0268-C-268-D86乘法归零验证.md`
-  - 依赖：—；被引用：—
-- [中文：该案例围绕 乘法归零验证 展开。 English: Rule-based English rendering pending human review.](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0268-C-268-D86%E4%B9%98%E6%B3%95%E5%BD%92%E9%9B%B6%E9%AA%8C%E8%AF%81.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-b22b4fd0fdee1c96 / 中文：该案例围绕 乘法归零验证 展开。 English: Rule-based English rendering pending human review.
-  - 来源：`统一案例总表/0268-C-268-D86乘法归零验证.md`
-  - 依赖：—；被引用：—
-- [中文：该案例围绕 充分条件归零验证 展开。](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0275-C-275-D41%E5%85%85%E5%88%86%E6%9D%A1%E4%BB%B6%E5%BD%92%E9%9B%B6%E9%AA%8C%E8%AF%81.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-921237d4dbdaf65d / 中文：该案例围绕 充分条件归零验证 展开。
-  - 来源：`统一案例总表/0275-C-275-D41充分条件归零验证.md`
-  - 依赖：—；被引用：—
-- [中文：该案例围绕 充分条件归零验证 展开。 English: Rule-based English rendering pending human revie…](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0275-C-275-D41%E5%85%85%E5%88%86%E6%9D%A1%E4%BB%B6%E5%BD%92%E9%9B%B6%E9%AA%8C%E8%AF%81.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-6e933060779940d0 / 中文：该案例围绕 充分条件归零验证 展开。 English: Rule-based English rendering pending human revie…
-  - 来源：`统一案例总表/0275-C-275-D41充分条件归零验证.md`
-  - 依赖：—；被引用：—
-- [中文：该案例围绕 六因子退化归零验证 展开。](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0274-C-274-D33%E5%85%AD%E5%9B%A0%E5%AD%90%E9%80%80%E5%8C%96%E5%BD%92%E9%9B%B6%E9%AA%8C%E8%AF%81.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-901d0733dc1db88b / 中文：该案例围绕 六因子退化归零验证 展开。
-  - 来源：`统一案例总表/0274-C-274-D33六因子退化归零验证.md`
-  - 依赖：—；被引用：—
-- [中文：该案例围绕 六因子退化归零验证 展开。 English: Rule-based English rendering pending human revi…](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0274-C-274-D33%E5%85%AD%E5%9B%A0%E5%AD%90%E9%80%80%E5%8C%96%E5%BD%92%E9%9B%B6%E9%AA%8C%E8%AF%81.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-abefdfd657814463 / 中文：该案例围绕 六因子退化归零验证 展开。 English: Rule-based English rendering pending human revi…
-  - 来源：`统一案例总表/0274-C-274-D33六因子退化归零验证.md`
-  - 依赖：—；被引用：—
-- [中文：该案例围绕 四卡点归零验证 展开。](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0270-C-270-D124%E5%9B%9B%E5%8D%A1%E7%82%B9%E5%BD%92%E9%9B%B6%E9%AA%8C%E8%AF%81.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-2615c82d4f2cda68 / 中文：该案例围绕 四卡点归零验证 展开。
-  - 来源：`统一案例总表/0270-C-270-D124四卡点归零验证.md`
-  - 依赖：—；被引用：—
-- [中文：该案例围绕 四卡点归零验证 展开。 English: Rule-based English rendering pending human review.](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0270-C-270-D124%E5%9B%9B%E5%8D%A1%E7%82%B9%E5%BD%92%E9%9B%B6%E9%AA%8C%E8%AF%81.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-115c8c8369b21334 / 中文：该案例围绕 四卡点归零验证 展开。 English: Rule-based English rendering pending human review.
-  - 来源：`统一案例总表/0270-C-270-D124四卡点归零验证.md`
-  - 依赖：—；被引用：—
-- [中文：该案例围绕 法治度归零验证 展开。](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0273-C-273-D23%E6%B3%95%E6%B2%BB%E5%BA%A6%E5%BD%92%E9%9B%B6%E9%AA%8C%E8%AF%81.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-c4f16ec807ae6edc / 中文：该案例围绕 法治度归零验证 展开。
-  - 来源：`统一案例总表/0273-C-273-D23法治度归零验证.md`
-  - 依赖：—；被引用：—
-- [中文：该案例围绕 法治度归零验证 展开。 English: Rule-based English rendering pending human review.](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0273-C-273-D23%E6%B3%95%E6%B2%BB%E5%BA%A6%E5%BD%92%E9%9B%B6%E9%AA%8C%E8%AF%81.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-698301abe220fd46 / 中文：该案例围绕 法治度归零验证 展开。 English: Rule-based English rendering pending human review.
-  - 来源：`统一案例总表/0273-C-273-D23法治度归零验证.md`
-  - 依赖：—；被引用：—
-- [中文：该案例围绕 缓存倒U型验证 展开。](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0263-C-263-%E7%BC%93%E5%AD%98%E5%80%92U%E5%9E%8B%E9%AA%8C%E8%AF%81.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-cbff349283026578 / 中文：该案例围绕 缓存倒U型验证 展开。
-  - 来源：`统一案例总表/0263-C-263-缓存倒U型验证.md`
   - 依赖：—；被引用：—

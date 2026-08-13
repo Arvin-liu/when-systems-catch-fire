@@ -4,6 +4,51 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [\| \[D464\]( ) \| \[幽灵超指数衰减函数\]( ) \| F_{D464}(x) := D384精确化——极小点消失后的势能面残余不是简](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-23a00d74e8c76209 / \| \[D464\]( ) \| \[幽灵超指数衰减函数\]( ) \| F_{D464}(x) := D384精确化——极小点消失后的势能面残余不是简
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：D384, D464；被引用：—
+- [\| \[D465\]( ) \| \[幽灵-不可逆竞争函数\]( ) \| F_{D465}(x) := D464×D410交叉产生——幽灵消失时间](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-96ab636bfb5bde4c / \| \[D465\]( ) \| \[幽灵-不可逆竞争函数\]( ) \| F_{D465}(x) := D464×D410交叉产生——幽灵消失时间
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：D410, D464, D465；被引用：—
+- [\| \[D466\]( ) \| \[暗物质核心-幽灵衰减函数\]( ) \| F_{D466}(x) := D464×P16跨域碰撞——暗](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-c62f1a096b4e02de / \| \[D466\]( ) \| \[暗物质核心-幽灵衰减函数\]( ) \| F_{D466}(x) := D464×P16跨域碰撞——暗
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：D464, D466, P16；被引用：—
+- [\| \[D467\]( ) \| \[最优性-惯性反比函数\]( ) \| F_{D467}(x) := D464扩展(κ∝\\\|σ-√e\\\|/√e)](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-2135dbd7444a64f2 / \| \[D467\]( ) \| \[最优性-惯性反比函数\]( ) \| F_{D467}(x) := D464扩展(κ∝\\\|σ-√e\\\|/√e)
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：D307, D464, D467；被引用：—
+- [\| \[D469\]( ) \| \[振荡优化函数\]( ) \| F_{D469}(x) := D468×M14碰撞——吸引子-陷阱等价导致系统在"优化→锁定→降](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-fbe512512adc2d14 / \| \[D469\]( ) \| \[振荡优化函数\]( ) \| F_{D469}(x) := D468×M14碰撞——吸引子-陷阱等价导致系统在"优化→锁定→降
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：D468, D469；被引用：—
+- [\| \[D471\]( ) \| \[状态时间重写函数\]( ) \| F_{D471}(x) := E_{Q_0001}(x)=1 iff exists](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-f083055f95ada66a / \| \[D471\]( ) \| \[状态时间重写函数\]( ) \| F_{D471}(x) := E_{Q_0001}(x)=1 iff exists
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：D342, D471；被引用：—
+- [\| \[D472\]( ) \| \[维度坐标化边界函数\]( ) \| F_{D472}(x) := E_{Q_0003}=1 iff d*(O)=a](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-80b6134c839bdf4f / \| \[D472\]( ) \| \[维度坐标化边界函数\]( ) \| F_{D472}(x) := E_{Q_0003}=1 iff d*(O)=a
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：A8, D237, D472；被引用：—
+- [\| \[D474\]( ) \| \[主动下一代生命边界函数\]( ) \| F_{D474}(x) := Life(S)=1 iff M_se](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-8a0cdf49cdcaca07 / \| \[D474\]( ) \| \[主动下一代生命边界函数\]( ) \| F_{D474}(x) := Life(S)=1 iff M_se
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：D124, D474；被引用：—
+- [\| \[D490\]( ) \| \[退出权自举元函数投影\]( ) \| F_{D490}(x) := M_boot = f(P_exit, σ(](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-8b6be4ad73fc8aa9 / \| \[D490\]( ) \| \[退出权自举元函数投影\]( ) \| F_{D490}(x) := M_boot = f(P_exit, σ(
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：D490；被引用：—
 - [\| \[D494\]( ) \| \[退出权-Φ极值同构函数\]( ) \| F_{D494}(x) := dP_exit/dΩ = 0 ↔ d](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-91da8cd0c29891ac / \| \[D494\]( ) \| \[退出权-Φ极值同构函数\]( ) \| F_{D494}(x) := dP_exit/dΩ = 0 ↔ d
@@ -1077,6 +1122,16 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-c76ba19ac358c55f / \| PROVED_ORIGINAL_CLAIM_WITH_ARTIFACT \| 必须有可重放 Lean/Z3/SymPy artifact \|
   - 来源：`docs/foundation/architecture-structure-freeze-v1.md`
+  - 依赖：—；被引用：—
+- [\| R2-GETNOTE-007 \| `SUPPORTED_WITHIN_MEASUREMENT_SCOPE` \| 2 \| measurement boundary \| No general psychological mechanism](../../../reports/external-research/pointfire-getnote-external-verification-r1-20260813.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-c5dae2f66233fa86 / \| R2-GETNOTE-007 \| `SUPPORTED_WITHIN_MEASUREMENT_SCOPE` \| 2 \| measurement boundary \| No general psychological mechanism
+  - 来源：`reports/external-research/pointfire-getnote-external-verification-r1-20260813.md`
+  - 依赖：—；被引用：—
+- [\| R2-GETNOTE-011 \| `PARTIALLY_SUPPORTED` \| 3 \| bounded organizational/legal scope \| Formal routes do not establish acces](../../../reports/external-research/pointfire-getnote-external-verification-r1-20260813.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-8d37ca8b77922c43 / \| R2-GETNOTE-011 \| `PARTIALLY_SUPPORTED` \| 3 \| bounded organizational/legal scope \| Formal routes do not establish acces
+  - 来源：`reports/external-research/pointfire-getnote-external-verification-r1-20260813.md`
   - 依赖：—；被引用：—
 - [\| RETAIN_FORMAL_PROPOSITION_UNPROVED \| 2 \|](../../../reports/foundation-architecture/084-max-adjudication-report.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
@@ -2431,58 +2486,3 @@
   - 可搜索名称：NFC-41f9ae8fb1ac6ecb / 两个反向单调函数相乘必然生成倒U型 / two oppositely monotone functions multiplied together necessarily generate an inverted-U curve
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：—；被引用：—
-- [两个反向单调函数相乘必然生成倒U型，最优在f₁'/f₁ = -f₂'/f₂处。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0026-T16-%E4%B8%A4%E4%B8%AA%E5%8F%8D%E5%90%91%E5%8D%95%E8%B0%83%E5%87%BD%E6%95%B0%E7%9B%B8%E4%B9%98%E5%BF%85%E7%84%B6%E7%94%9F%E6%88%90%E5%80%92U%E5%9E%8B.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-4897550b051bc1e5 / 两个反向单调函数相乘必然生成倒U型，最优在f₁'/f₁ = -f₂'/f₂处。
-  - 来源：`统一函数总表/0026-T16-两个反向单调函数相乘必然生成倒U型.md`
-  - 依赖：—；被引用：—
-- [两个反向单调函数相乘必然生成倒U型，最优在f₁'/f₁ = -f₂'/f₂处。 **扩展注释 / Extended Annotation**](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-817ff8cdff2f034e / 两个反向单调函数相乘必然生成倒U型，最优在f₁'/f₁ = -f₂'/f₂处。 **扩展注释 / Extended Annotation**
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：—；被引用：—
-- [两个框架都是迭代扩张系统，数学形式同构但驱动逻辑相反。](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0651-C-656-Science%20Earth%20%C3%97%20%E7%82%B9%E7%81%AB%E6%A1%86%E6%9E%B6%E7%A2%B0%E6%92%9E%E9%AA%8C%E8%AF%81.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-d6b87c849d99ae54 / 两个框架都是迭代扩张系统，数学形式同构但驱动逻辑相反。
-  - 来源：`统一案例总表/0651-C-656-Science Earth × 点火框架碰撞验证.md`
-  - 依赖：—；被引用：—
-- [两个系统在结构上相似，但尚未证明同构。](../../../docs/claim_levels.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-a2f85b655a2092ee / 两个系统在结构上相似，但尚未证明同构。
-  - 来源：`docs/claim_levels.md`
-  - 依赖：—；被引用：—
-- [两张表主权已回到 `when-systems-catch-fire`**：函数表在 `统一函数总表/`，案例表在 `统一案例总表/`。](../../../docs/getbrain-operation-guide-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-fec3ea8272d49872 / 两张表主权已回到 `when-systems-catch-fire`**：函数表在 `统一函数总表/`，案例表在 `统一案例总表/`。
-  - 来源：`docs/getbrain-operation-guide-20260708.md`
-  - 依赖：—；被引用：—
-- [两张表单条条目结构审计与统一模板草案](../../ASSET-CARDS.md#asset-hr-b7cf68ed12ba8b82)
-  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-  - 可搜索名称：两张表单条条目结构审计与统一模板草案 / two-tables-entry-format-audit-20260709
-  - 来源：`outputs/audit/two-tables-entry-format-audit-20260709.md`
-  - 依赖：—；被引用：—
-- [两张表条目模板固化审计](../../ASSET-CARDS.md#asset-hr-9bf38326d66a104a)
-  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-  - 可搜索名称：两张表条目模板固化审计 / two-tables-entry-template-finalization-audit-20260709
-  - 来源：`outputs/audit/two-tables-entry-template-finalization-audit-20260709.md`
-  - 依赖：—；被引用：—
-- [两张表路径（`统一函数总表/`、`统一案例总表/`）](../../../docs/p1-machine-data-collision-workflow-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-a6e15b406411f227 / 两张表路径（`统一函数总表/`、`统一案例总表/`）
-  - 来源：`docs/p1-machine-data-collision-workflow-20260708.md`
-  - 依赖：—；被引用：—
-- [两张表：统一函数总表 / 统一案例总表的已审核资产库。](../../../docs/meta-protocols/README.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-e6ad6a2b4c7e4b0a / 两张表：统一函数总表 / 统一案例总表的已审核资产库。
-  - 来源：`docs/meta-protocols/README.md`
-  - 依赖：—；被引用：—
-- [两步策略唯一性函数](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0460-D424-%E4%B8%A4%E6%AD%A5%E7%AD%96%E7%95%A5%E5%94%AF%E4%B8%80%E6%80%A7%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`FUNCTION_ASSET` · `DOWNGRADE_TO_CONJECTURE`
-  - 可搜索名称：D424 / 两步策略唯一性函数 / D424
-  - 来源：`统一函数总表/0460-D424-两步策略唯一性函数.md`
-  - 依赖：D361, D430, D431, D450；被引用：NFC-1b481ed056943f13, NFC-208be101c4850673, NFC-3dc14d0bf7d3bf2b, NFC-a11599aefb2ebd97
-- [两步策略最优性证明函数](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0433-D397-%E4%B8%A4%E6%AD%A5%E7%AD%96%E7%95%A5%E6%9C%80%E4%BC%98%E6%80%A7%E8%AF%81%E6%98%8E%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`FUNCTION_ASSET` · `DOWNGRADE_TO_CONJECTURE`
-  - 可搜索名称：D397 / 两步策略最优性证明函数 / D397
-  - 来源：`统一函数总表/0433-D397-两步策略最优性证明函数.md`
-  - 依赖：D361, D430, D431, D450；被引用：NFC-02ccdbb700b38bfc, NFC-1fb75a9aefaf751d, NFC-4a6d0a12c770246c, NFC-555e277abaea35f5

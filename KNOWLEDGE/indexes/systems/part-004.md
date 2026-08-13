@@ -4,6 +4,51 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [This permits Step 001. The audit claim ceiling is narrow: it establishes a representation gap, not a new causal truth.](../../../reports/architecture/121Q21R-causal-asset-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-c042cbda15da38b6 / This permits Step 001. The audit claim ceiling is narrow: it establishes a representation gap, not a new causal truth.
+  - 来源：`reports/architecture/121Q21R-causal-asset-audit.md`
+  - 依赖：—；被引用：—
+- [This permits Step 001. The audit establishes a modeling gap only; it does not prove any new probabilistic or system-dyna](../../../reports/architecture/121Q22-probability-system-gap-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-b1414120b8806748 / This permits Step 001. The audit establishes a modeling gap only; it does not prove any new probabilistic or system-dyna
+  - 来源：`reports/architecture/121Q22-probability-system-gap-audit.md`
+  - 依赖：—；被引用：—
+- [This rendering is a projection, not canonical evidence, truth, value or causality.](../../../data/architecture/adaptive-relational-network/real-history/after-layer-architecture.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-5d5beba8a6156e78 / This rendering is a projection, not canonical evidence, truth, value or causality.
+  - 来源：`data/architecture/adaptive-relational-network/real-history/after-layer-architecture.md`
+  - 依赖：—；被引用：—
+- [This report documents the collection and analysis of 84 academic sources across 10 function paradigm families, the gener](../../../reports/external-research/120-function-paradigm-atlas-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-9cc48aedf1bd70da / This report documents the collection and analysis of 84 academic sources across 10 function paradigm families, the gener
+  - 来源：`reports/external-research/120-function-paradigm-atlas-report.md`
+  - 依赖：—；被引用：—
+- [This test verifies the mechanism works by checking no gap exists](../../../tests/test_change_propagation.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-1d8574973102debf / This test verifies the mechanism works by checking no gap exists
+  - 来源：`tests/test_change_propagation.py`
+  - 依赖：—；被引用：—
+- [Three AI affirmations do not cancel one missing executable test. One CI pass does not settle a value conflict. One human](../../../docs/architecture/mechanism-adjudication-plane.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-88945913daeffa47 / Three AI affirmations do not cancel one missing executable test. One CI pass does not settle a value conflict. One human
+  - 来源：`docs/architecture/mechanism-adjudication-plane.md`
+  - 依赖：—；被引用：—
+- [Timeline: arn-projection-26fea4a0](../../../data/architecture/adaptive-relational-network/real-history/after-timeline.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-a4ddd8dd4eb1ca96 / Timeline: arn-projection-26fea4a0
+  - 来源：`data/architecture/adaptive-relational-network/real-history/after-timeline.md`
+  - 依赖：—；被引用：—
+- [title: "Fisher可达性单调递减 — 模拟8维乘法系统从存活区滑入门控区，A_Fisher从12.3→2.1→0.01，单调递减无反弹。Shannon熵从3.2→2.8→1.1，也递减（违反经典第二定律） / Fisher可达性单调递减 - 模拟8维乘法系统从存活区滑入门控区, A_Fisher从12.3 -> 2.1 -> 0.01, 单调递减无反弹. Shannon熵从3.2 -> 2.8 -> 1.1, 也递减(违反经典第二定律)"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0457-C-458-Fisher%E5%8F%AF%E8%BE%BE%E6%80%A7%E5%8D%95%E8%B0%83%E9%80%92%E5%87%8F%20%E2%80%94%20%E6%A8%A1%E6%8B%9F8%E7%BB%B4%E4%B9%98%E6%B3%95%E7%B3%BB%E7%BB%9F%E4%BB%8E%E5%AD%98%E6%B4%BB%E5%8C%BA%E6%BB%91%E5%85%A5%E9%97%A8%E6%8E%A7%E5%8C%BA%2CA_Fisher%E4%BB%8E12.3%E2%86%922.1%E2%86%920.01%2C%E5%8D%95%E8%B0%83%E9%80%92%E5%87%8F%E6%97%A0%E5%8F%8D%E5%BC%B9%E3%80%82Shann.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-73DFBBE301FCC3C3 / title: "Fisher可达性单调递减 — 模拟8维乘法系统从存活区滑入门控区，A_Fisher从12.3→2.1→0.01，单调递减无反弹。Shannon熵从3.2→2.8→1.1，也递减（违反经典第二定律） / Fisher可达性单调递减 - 模拟8维乘法系统从存活区滑入门控区, A_Fisher从12.3 -> 2.1 -> 0.01, 单调递减无反弹. Shannon熵从3.2 -> 2.8 -> 1.1, 也递减(违反经典第二定律)" / IMPLICIT-73DFBBE301FCC3C3
+  - 来源：`统一案例总表/0457-C-458-Fisher可达性单调递减 — 模拟8维乘法系统从存活区滑入门控区,A_Fisher从12.3→2.1→0.01,单调递减无反弹。Shann.md`
+  - 依赖：—；被引用：—
+- [title: "OrcaRouter智能分流机制验证"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0591-C-596-OrcaRouter%E6%99%BA%E8%83%BD%E5%88%86%E6%B5%81%E6%9C%BA%E5%88%B6%E9%AA%8C%E8%AF%81.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-e71f8ea15a7f4365 / title: "OrcaRouter智能分流机制验证"
+  - 来源：`统一案例总表/0591-C-596-OrcaRouter智能分流机制验证.md`
+  - 依赖：—；被引用：—
 - [title: "r_cross=0不导致Ψ=0"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0260-C-260-r_cross%3D0%E4%B8%8D%E5%AF%BC%E8%87%B4%CE%A8%3D0.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-37c5a7667300dc47 / title: "r_cross=0不导致Ψ=0"
@@ -1289,6 +1334,21 @@
   - 可搜索名称：NFC-26c32a0dfd8275aa / \| Projection/diff \| partial via Atlas \| no causal-specific projection and diff \|
   - 来源：`reports/architecture/121Q21R-causal-asset-audit.md`
   - 依赖：—；被引用：—
+- [\| R2-GETNOTE-002 \| `SUPPORTED_WITHIN_SOURCE_SCOPE` \| 2 \| causal-inference method boundary \| Not a substantive verificati](../../../reports/external-research/pointfire-getnote-external-verification-r1-20260813.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-3a742707aa68b83b / \| R2-GETNOTE-002 \| `SUPPORTED_WITHIN_SOURCE_SCOPE` \| 2 \| causal-inference method boundary \| Not a substantive verificati
+  - 来源：`reports/external-research/pointfire-getnote-external-verification-r1-20260813.md`
+  - 依赖：—；被引用：—
+- [\| R2-GETNOTE-006 \| `PARTIALLY_SUPPORTED` \| 2 \| reader experiment scope \| Writing method, durable learning, and interpret](../../../reports/external-research/pointfire-getnote-external-verification-r1-20260813.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-817418f2f014dc15 / \| R2-GETNOTE-006 \| `PARTIALLY_SUPPORTED` \| 2 \| reader experiment scope \| Writing method, durable learning, and interpret
+  - 来源：`reports/external-research/pointfire-getnote-external-verification-r1-20260813.md`
+  - 依赖：—；被引用：—
+- [\| R2-GETNOTE-008 \| `PARTIALLY_SUPPORTED` \| 2 \| engineering process boundary \| No universal review-capacity threshold or](../../../reports/external-research/pointfire-getnote-external-verification-r1-20260813.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-75237237f822e96c / \| R2-GETNOTE-008 \| `PARTIALLY_SUPPORTED` \| 2 \| engineering process boundary \| No universal review-capacity threshold or
+  - 来源：`reports/external-research/pointfire-getnote-external-verification-r1-20260813.md`
+  - 依赖：—；被引用：—
 - [\| Relations \| partial \| no relation class taxonomy across physical, statistical, mechanism, analogy, and unknown relatio](../../../reports/architecture/121Q21R-causal-asset-audit.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-11db8d102c2c222b / \| Relations \| partial \| no relation class taxonomy across physical, statistical, mechanism, analogy, and unknown relatio
@@ -2443,64 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-2ae6ec8ea003a087 / 关键发现：Q-0007 给出民族、国家、物种差异的路径分叉机制。
   - 来源：`统一案例总表/0578-C-583-路径依赖分化验证.md`
-  - 依赖：—；被引用：—
-- [关键发现：Q-0026 提供内源输出再输入导致系统完备性下降的案例化机制。](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0581-C-586-%E5%86%85%E6%BA%90%E8%BE%93%E5%87%BA%E5%86%8D%E8%BE%93%E5%85%A5%E6%B1%A1%E6%9F%93%E9%AA%8C%E8%AF%81.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-3f487c3dc054cc3a / 关键发现：Q-0026 提供内源输出再输入导致系统完备性下降的案例化机制。
-  - 来源：`统一案例总表/0581-C-586-内源输出再输入污染验证.md`
-  - 依赖：—；被引用：—
-- [关键发现：σ偏离最优导致P_exit下降](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0621-C-626-%E9%80%80%E5%87%BA%E6%9D%83%E7%A9%BA%E9%97%B4%E6%A1%88%E4%BE%8B06.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-a1dca5570bc536e2 / 关键发现：σ偏离最优导致P_exit下降
-  - 来源：`统一案例总表/0621-C-626-退出权空间案例06.md`
-  - 依赖：—；被引用：—
-- [关键发现：人体运动系统存在与 σ_opt=√e 同构的最优点](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0604-C-609-%E8%B7%91%E6%AD%A5%E8%AE%AD%E7%BB%83%CF%83_opt%3D%E2%88%9Ae%E6%94%B6%E6%95%9B%E9%AA%8C%E8%AF%81.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-6373a2bd9de42830 / 关键发现：人体运动系统存在与 σ_opt=√e 同构的最优点
-  - 来源：`统一案例总表/0604-C-609-跑步训练σ_opt=√e收敛验证.md`
-  - 依赖：—；被引用：—
-- [关键发现：如果把"问题"看成需要消除的bug，教育就变成了压制；如果把"问题"看成门控面演化的信号，教育就变成了引导。同一个行为，两种框架导致完全不同的结果。](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0664-C-669-%E5%AD%A6%E6%A0%A1%E6%95%99%E8%82%B2%E6%96%B0%E5%89%A7%E5%8F%98%E7%AC%94%E8%AE%B0%E7%A2%B0%E6%92%9E%E9%AA%8C%E8%AF%81.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-ed2667c01badd0c9 / 关键发现：如果把"问题"看成需要消除的bug，教育就变成了压制；如果把"问题"看成门控面演化的信号，教育就变成了引导。同一个行为，两种框架导致完全不同的结果。
-  - 来源：`统一案例总表/0664-C-669-学校教育新剧变笔记碰撞验证.md`
-  - 依赖：—；被引用：—
-- [关键发现：智能分流验证倒U型最优](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0591-C-596-OrcaRouter%E6%99%BA%E8%83%BD%E5%88%86%E6%B5%81%E6%9C%BA%E5%88%B6%E9%AA%8C%E8%AF%81.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-4415f8176eea839d / 关键发现：智能分流验证倒U型最优
-  - 来源：`统一案例总表/0591-C-596-OrcaRouter智能分流机制验证.md`
-  - 依赖：—；被引用：—
-- [关键发现：费勇的"瓶颈→系统调整→知行合一"三段论与点火框架的"锁定→自举激活→主权最大化"完美对应，验证了框架在个人成长域的适用性。](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0659-C-664-%E8%B4%B9%E5%8B%87%E7%93%B6%E9%A2%88%E7%AA%81%E7%A0%B4%E7%AC%94%E8%AE%B0%E7%A2%B0%E6%92%9E%E9%AA%8C%E8%AF%81.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-135d229af950bd9f / 关键发现：费勇的"瓶颈→系统调整→知行合一"三段论与点火框架的"锁定→自举激活→主权最大化"完美对应，验证了框架在个人成长域的适用性。
-  - 来源：`统一案例总表/0659-C-664-费勇瓶颈突破笔记碰撞验证.md`
-  - 依赖：—；被引用：—
-- [关键发现：钱荒本质是退出权空间压缩和门控面单一化导致的系统锁定](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0650-C-655-%E5%94%90%E5%AE%8B%E9%92%B1%E8%8D%92%28%E5%85%AC%E5%85%831111%E5%B9%B4%E8%B4%A7%E5%B8%81%E9%94%81%E5%AE%9A%29.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-c144752c4bcf8a81 / 关键发现：钱荒本质是退出权空间压缩和门控面单一化导致的系统锁定
-  - 来源：`统一案例总表/0650-C-655-唐宋钱荒(公元1111年货币锁定).md`
-  - 依赖：—；被引用：—
-- [关键词命中但**机制不成立**（反向语境误触发，如材料「批判刷分」被判为刷分博弈）](../../../docs/getnote-collision-workflow-final-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-cfe8f9a314eb2047 / 关键词命中但**机制不成立**（反向语境误触发，如材料「批判刷分」被判为刷分博弈）
-  - 来源：`docs/getnote-collision-workflow-final-20260708.md`
-  - 依赖：—；被引用：—
-- [具备反锁定与可退出机制](../../../docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-ca46e2a8621f024f / 具备反锁定与可退出机制
-  - 来源：`docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md`
-  - 依赖：—；被引用：—
-- [冲突/优先级机制已说明](../../../data/protocol-canonical-validation-results.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-ac4692cbbac9bafe / 冲突/优先级机制已说明
-  - 来源：`data/protocol-canonical-validation-results.json`
-  - 依赖：—；被引用：—
-- [分支：`records/ignition-088-external-literature-gap-source-atlas-20260713`（未动 main，合并需用户/GPT 显式授权）](../../../data/external-research/088-FINAL-REPORT.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-5d262da12f1e4c81 / 分支：`records/ignition-088-external-literature-gap-source-atlas-20260713`（未动 main，合并需用户/GPT 显式授权）
-  - 来源：`data/external-research/088-FINAL-REPORT.md`
-  - 依赖：—；被引用：—
-- [分支：records/ignition-088-external-literature-gap-source-atlas-20260713（未动 main，合并需用户授权）](../../../data/external-research/103-maintenance-hooks.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-5d582bd5f9524a2c / 分支：records/ignition-088-external-literature-gap-source-atlas-20260713（未动 main，合并需用户授权）
-  - 来源：`data/external-research/103-maintenance-hooks.md`
   - 依赖：—；被引用：—

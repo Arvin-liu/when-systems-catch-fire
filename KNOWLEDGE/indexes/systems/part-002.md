@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Causality](../../../data/external-research/088-external-source-atlas-v2.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-eb3efb5151e62559 / Causality
+  - 来源：`data/external-research/088-external-source-atlas-v2.jsonl`
+  - 依赖：—；被引用：—
 - [Causality: Models, Reasoning and Inference, Second Edition by Judea Pearl](../../../data/external-research/088-external-source-atlas-v1.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-ef2081b50b6ec10c / Causality: Models, Reasoning and Inference, Second Edition by Judea Pearl
@@ -859,6 +864,11 @@
   - 可搜索名称：IMPLICIT-F64C9EDDF87C1624 / def warn(msg: str) -> None: / IMPLICIT-F64C9EDDF87C1624
   - 来源：`tools/operations/validate_generated_output_authority.py`
   - 依赖：—；被引用：—
+- [Defined interventions, outcomes, time ordering, comparison, confounding, and identification conditions are necessary for](../../../reports/external-research/pointfire-getnote-external-verification-r1-20260813.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-a61a773e0bc45a3d / Defined interventions, outcomes, time ordering, comparison, confounding, and identification conditions are necessary for
+  - 来源：`reports/external-research/pointfire-getnote-external-verification-r1-20260813.jsonl`
+  - 依赖：—；被引用：—
 - [derived = build_projection()](../../../tools/generate_interactive_system_map.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-550a38a20df839d3 / derived = build_projection()
@@ -1138,6 +1148,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-4315ba3ab34e7768 / Estimating causal effects of treatments in randomized and nonrandomized studies.
   - 来源：`data/external-research/088-external-source-atlas-v1.jsonl`
+  - 依赖：—；被引用：—
+- [Evidence and governance have separate literatures; this pass found no direct independent study showing that evidence tra](../../../reports/external-research/pointfire-getnote-external-verification-r1-20260813.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-024daf592d9fd22e / Evidence and governance have separate literatures; this pass found no direct independent study showing that evidence tra
+  - 来源：`reports/external-research/pointfire-getnote-external-verification-r1-20260813.jsonl`
   - 依赖：—；被引用：—
 - [Evidence Tier Distribution](../../../reports/external-research/120-function-paradigm-atlas-report.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
@@ -1684,6 +1699,11 @@
   - 可搜索名称：NFC-16270613f6f1c813 / Historical candidate entry: Q32I proposed iteration method 1.3.0 and system-map projection 0.3.0 as OPEN Draft candidate
   - 来源：`CHANGELOG.md`
   - 依赖：—；被引用：—
+- [Historical causal explanation and historiographical reconstruction are contested, selective, and case-dependent.](../../../reports/external-research/pointfire-getnote-external-verification-r1-20260813.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-6620aa58a54e5829 / Historical causal explanation and historiographical reconstruction are contested, selective, and case-dependent.
+  - 来源：`reports/external-research/pointfire-getnote-external-verification-r1-20260813.jsonl`
+  - 依赖：—；被引用：—
 - [Historical Q32I closeout: method 1.3.0 and registry-derived system map 0.3.0 completed the exact-head, merge and externa](../../../CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-c64c1a1b3d7ece12 / Historical Q32I closeout: method 1.3.0 and registry-derived system map 0.3.0 completed the exact-head, merge and externa
@@ -1698,6 +1718,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-0a0432cf85fcf55a / Historical-anchor existence only; not a claim about causal interpretation.
   - 来源：`evidence-program/registry/candidate-portfolio.jsonl`
+  - 依赖：—；被引用：—
+- [human oversight, and keep narrative or structural analogy separate from causal](../../../reports/external-research/pointfire-getnote-external-verification-r1-20260813.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-6c7ecb7ae372f7b7 / human oversight, and keep narrative or structural analogy separate from causal
+  - 来源：`reports/external-research/pointfire-getnote-external-verification-r1-20260813.md`
   - 依赖：—；被引用：—
 - [I_iso(A,B) 检测到上述9个系统的真实结构同构，验证了元同构率的普适性。**](../../../docs/phi_meta_law.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
@@ -1878,6 +1903,16 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-31963eacc3564f49 / Improving causal inference from unreplicated on-farm strip trials with propensity scores
   - 来源：`data/external-research/105-intervention-control/105-intervention-control-source-pack.jsonl`
+  - 依赖：—；被引用：—
+- [Incentive interventions changed selected organizational behavior in specific settings; neither study identifies durable](../../../reports/external-research/pointfire-getnote-external-verification-r1-20260813.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-df0ee8c050a09456 / Incentive interventions changed selected organizational behavior in specific settings; neither study identifies durable
+  - 来源：`reports/external-research/pointfire-getnote-external-verification-r1-20260813.jsonl`
+  - 依赖：—；被引用：—
+- [Incident response and reliability practice require explicit detection, response, recovery, learning, and failure evidenc](../../../reports/external-research/pointfire-getnote-external-verification-r1-20260813.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-7150efdd5b64aa62 / Incident response and reliability practice require explicit detection, response, recovery, learning, and failure evidenc
+  - 来源：`reports/external-research/pointfire-getnote-external-verification-r1-20260813.jsonl`
   - 依赖：—；被引用：—
 - [includes_evidence = map_includes_function_os_evidence(repo_root)](../../../tools/propagation/system_map_audit.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
@@ -2464,40 +2499,5 @@
 - [network\["embedding_evidence"\]\[0\]\["evidence"\] = \["valid", " "\]](../../../tests/test_adaptive_relational_network_validation_contract.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-edc742285b804fa2 / network\["embedding_evidence"\]\[0\]\["evidence"\] = \["valid", " "\]
-  - 来源：`tests/test_adaptive_relational_network_validation_contract.py`
-  - 依赖：—；被引用：—
-- [network\["embedding_evidence"\]\[0\]\["evidence"\] = \["valid", "also valid"\]](../../../tests/test_adaptive_relational_network_validation_contract.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-0a28ba4ad7b7949b / network\["embedding_evidence"\]\[0\]\["evidence"\] = \["valid", "also valid"\]
-  - 来源：`tests/test_adaptive_relational_network_validation_contract.py`
-  - 依赖：—；被引用：—
-- [network\["embedding_evidence"\]\[0\]\["record_id"\],](../../../tests/test_adaptive_relational_network_validation_contract.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-a1893b0916335aa0 / network\["embedding_evidence"\]\[0\]\["record_id"\],
-  - 来源：`tests/test_adaptive_relational_network_validation_contract.py`
-  - 依赖：—；被引用：—
-- [network\["integration_responses"\]\[0\]\["evidence_ref"\] = "missing-evidence"](../../../tests/test_adaptive_relational_network_validation_contract.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-6b14754ee62283a5 / network\["integration_responses"\]\[0\]\["evidence_ref"\] = "missing-evidence"
-  - 来源：`tests/test_adaptive_relational_network_validation_contract.py`
-  - 依赖：—；被引用：—
-- [network\["projections"\]\[0\]\["omitted_dimensions"\] = \["valid", " "\]](../../../tests/test_adaptive_relational_network_validation_contract.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-cc1e4a626733cdaf / network\["projections"\]\[0\]\["omitted_dimensions"\] = \["valid", " "\]
-  - 来源：`tests/test_adaptive_relational_network_validation_contract.py`
-  - 依赖：—；被引用：—
-- [network\["projections"\]\[0\]\["omitted_dimensions"\] = \["valid", "also valid"\]](../../../tests/test_adaptive_relational_network_validation_contract.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-ab15fa46ead789db / network\["projections"\]\[0\]\["omitted_dimensions"\] = \["valid", "also valid"\]
-  - 来源：`tests/test_adaptive_relational_network_validation_contract.py`
-  - 依赖：—；被引用：—
-- [network\["projections"\]\[0\]\["projection_rules"\] = \["valid", " "\]](../../../tests/test_adaptive_relational_network_validation_contract.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-c82c1f7f3ecd3de5 / network\["projections"\]\[0\]\["projection_rules"\] = \["valid", " "\]
-  - 来源：`tests/test_adaptive_relational_network_validation_contract.py`
-  - 依赖：—；被引用：—
-- [network\["projections"\]\[0\]\["projection_rules"\] = \["valid", "also valid"\]](../../../tests/test_adaptive_relational_network_validation_contract.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-59b6163a762016f8 / network\["projections"\]\[0\]\["projection_rules"\] = \["valid", "also valid"\]
   - 来源：`tests/test_adaptive_relational_network_validation_contract.py`
   - 依赖：—；被引用：—

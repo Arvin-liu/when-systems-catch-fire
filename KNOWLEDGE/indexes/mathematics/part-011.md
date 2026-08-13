@@ -4,6 +4,51 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [title: "过分散相图函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0385-D349-%E8%BF%87%E5%88%86%E6%95%A3%E7%9B%B8%E5%9B%BE%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-196E4C750C724D44 / title: "过分散相图函数" / IMPLICIT-196E4C750C724D44
+  - 来源：`统一函数总表/0385-D349-过分散相图函数.md`
+  - 依赖：—；被引用：—
+- [title: "过渡期窗口衰减函数（新发现）"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0108-D59-%E8%BF%87%E6%B8%A1%E6%9C%9F%E7%AA%97%E5%8F%A3%E8%A1%B0%E5%87%8F%E5%87%BD%E6%95%B0%28%E6%96%B0%E5%8F%91%E7%8E%B0%29.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-B5D4EF502557F0B4 / title: "过渡期窗口衰减函数（新发现）" / IMPLICIT-B5D4EF502557F0B4
+  - 来源：`统一函数总表/0108-D59-过渡期窗口衰减函数(新发现).md`
+  - 依赖：—；被引用：—
+- [title: "退出成本-遮蔽-时间三角约束函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0487-D489-%E9%80%80%E5%87%BA%E6%88%90%E6%9C%AC-%E9%81%AE%E8%94%BD-%E6%97%B6%E9%97%B4%E4%B8%89%E8%A7%92%E7%BA%A6%E6%9D%9F%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-B66F1800AA581947 / title: "退出成本-遮蔽-时间三角约束函数" / IMPLICIT-B66F1800AA581947
+  - 来源：`统一函数总表/0487-D489-退出成本-遮蔽-时间三角约束函数.md`
+  - 依赖：—；被引用：—
+- [title: "退出权-Φ极值同构函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0492-D494-%E9%80%80%E5%87%BA%E6%9D%83-%CE%A6%E6%9E%81%E5%80%BC%E5%90%8C%E6%9E%84%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-0772A49875B306AC / title: "退出权-Φ极值同构函数" / IMPLICIT-0772A49875B306AC
+  - 来源：`统一函数总表/0492-D494-退出权-Φ极值同构函数.md`
+  - 依赖：—；被引用：—
+- [title: "退出权-Φ极值同构函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0492-D494-%E9%80%80%E5%87%BA%E6%9D%83-%CE%A6%E6%9E%81%E5%80%BC%E5%90%8C%E6%9E%84%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-fb45df484c2f34a7 / title: "退出权-Φ极值同构函数"
+  - 来源：`统一函数总表/0492-D494-退出权-Φ极值同构函数.md`
+  - 依赖：—；被引用：—
+- [title: "退出权共振函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0507-D509-%E9%80%80%E5%87%BA%E6%9D%83%E5%85%B1%E6%8C%AF%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-3BAAF438ACCB0F60 / title: "退出权共振函数" / IMPLICIT-3BAAF438ACCB0F60
+  - 来源：`统一函数总表/0507-D509-退出权共振函数.md`
+  - 依赖：—；被引用：—
+- [title: "退出权净收益函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0484-D486-%E9%80%80%E5%87%BA%E6%9D%83%E5%87%80%E6%94%B6%E7%9B%8A%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-5D43B42C9541F3EC / title: "退出权净收益函数" / IMPLICIT-5D43B42C9541F3EC
+  - 来源：`统一函数总表/0484-D486-退出权净收益函数.md`
+  - 依赖：—；被引用：—
+- [title: "退出权序贯动力学函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0480-D482-%E9%80%80%E5%87%BA%E6%9D%83%E5%BA%8F%E8%B4%AF%E5%8A%A8%E5%8A%9B%E5%AD%A6%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-3D39C7061EEEC696 / title: "退出权序贯动力学函数" / IMPLICIT-3D39C7061EEEC696
+  - 来源：`统一函数总表/0480-D482-退出权序贯动力学函数.md`
+  - 依赖：—；被引用：—
+- [title: "退出权归零函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0509-D511-%E9%80%80%E5%87%BA%E6%9D%83%E5%BD%92%E9%9B%B6%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-F8BCAEC12BF6CC22 / title: "退出权归零函数" / IMPLICIT-F8BCAEC12BF6CC22
+  - 来源：`统一函数总表/0509-D511-退出权归零函数.md`
+  - 依赖：—；被引用：—
 - [title: "退出权时变空间函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0506-D508-%E9%80%80%E5%87%BA%E6%9D%83%E6%97%B6%E5%8F%98%E7%A9%BA%E9%97%B4%E5%87%BD%E6%95%B0.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-B4FE1F219CAABDB6 / title: "退出权时变空间函数" / IMPLICIT-B4FE1F219CAABDB6
@@ -2444,45 +2489,3 @@
   - 可搜索名称：CLAIM-D47 / Within the source-defined scope, 点火窗口关闭动力学函数 is adjudicated as STATE_TRANSITION: 窗口与临界函数，窗口与临界案例验证。. This is a model-int
   - 来源：`data/foundation/adjudications/core-kernel.jsonl`
   - 依赖：—；被引用：—
-- [Within the source-defined scope, 点火窗口函数 is adjudicated as RELATION: 点火窗口，退出权信号在特定区间内才能点火。. This is a model-internal cont](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D10 / Within the source-defined scope, 点火窗口函数 is adjudicated as RELATION: 点火窗口，退出权信号在特定区间内才能点火。. This is a model-internal cont
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 热传导方程-门槛扩散函数 is adjudicated as METRIC: 热传导方程-门槛扩散函数，热传导方程∂T/∂t=α∇²T描述门控面Λ的扩散过程。. This i](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D208 / Within the source-defined scope, 热传导方程-门槛扩散函数 is adjudicated as METRIC: 热传导方程-门槛扩散函数，热传导方程∂T/∂t=α∇²T描述门控面Λ的扩散过程。. This i
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 热力学第二定律的Φ表述 is adjudicated as RELATION: 经典表述：dS/dt ≥ 0 Φ表述：dΦ/dt ≤ 0（门控贡献随时间单调递减） 证明： D](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D222 / Within the source-defined scope, 热力学第二定律的Φ表述 is adjudicated as RELATION: 经典表述：dS/dt ≥ 0 Φ表述：dΦ/dt ≤ 0（门控贡献随时间单调递减） 证明： D
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：D184；被引用：—
-- [Within the source-defined scope, 热寂-完全统一同构定理 is adjudicated as RELATION: 热力学第二定律的终态：热寂 = 所有能量均匀分布 = 没有结构 = 没有力 在高斯门控框架下：](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D221 / Within the source-defined scope, 热寂-完全统一同构定理 is adjudicated as RELATION: 热力学第二定律的终态：热寂 = 所有能量均匀分布 = 没有结构 = 没有力 在高斯门控框架下：
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 熵增门槛碾压函数 is adjudicated as METRIC: 熵增门槛碾压函数，Λ_disorder(t) = Λ₀ × e^(σ_entropy × t)，σ_en](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_TOY_MODEL`
-  - 可搜索名称：CLAIM-D184 / Within the source-defined scope, 熵增门槛碾压函数 is adjudicated as METRIC: 熵增门槛碾压函数，Λ_disorder(t) = Λ₀ × e^(σ_entropy × t)，σ_en
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：D160；被引用：—
-- [Within the source-defined scope, 物理大统一本质函数 is adjudicated as STATE_TRANSITION: 门控面从多到少的级联合并，每次统一减少Φ项数、增大Ω. This is a mod](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-T26 / Within the source-defined scope, 物理大统一本质函数 is adjudicated as STATE_TRANSITION: 门控面从多到少的级联合并，每次统一减少Φ项数、增大Ω. This is a mod
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 物理存在必要条件 is adjudicated as FORMAL_PROPOSITION: Ω = e^{-Φ}，Φ = Σᵢ gᵢ(μ) Ω = 1 ⟺ Φ = 0 ⟺](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：CLAIM-D218 / Within the source-defined scope, 物理存在必要条件 is adjudicated as FORMAL_PROPOSITION: Ω = e^{-Φ}，Φ = Σᵢ gᵢ(μ) Ω = 1 ⟺ Φ = 0 ⟺
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 物理存在的三重时间约束 is adjudicated as METRIC: 物理存在受三重时间约束： 约束1（逻辑约束·\[D220\](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D226 / Within the source-defined scope, 物理存在的三重时间约束 is adjudicated as METRIC: 物理存在受三重时间约束： 约束1（逻辑约束·\[D220\](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：CLAIM-D223 / Within the source-defined scope, 物理存在的时间窗口定理 is adjudicated as FORMAL_PROPOSITION: D221：热寂=完全统一=Ω→1=无物理；D222：dΦ/dt≤0，Φ单调
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：D221, D222；被引用：—

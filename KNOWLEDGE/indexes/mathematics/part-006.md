@@ -4,6 +4,36 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Define a repeatable, evidence-backed gate for deciding when a protocol may be recommended for formal promotion to `forma](../../../inputs/020/formal-protocol-promotion-standard.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-0c6188eaa8818dcf / Define a repeatable, evidence-backed gate for deciding when a protocol may be recommended for formal promotion to `forma
+  - 来源：`inputs/020/formal-protocol-promotion-standard.md`
+  - 依赖：—；被引用：—
+- [Denotational semantics and regression fixtures give meaning and finite checks, but no mechanized correspondence, semanti](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-ead18f42a23c2858 / Denotational semantics and regression fixtures give meaning and finite checks, but no mechanized correspondence, semanti
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [Denotational semantics provides mathematical correctness basis. Equational theory provides laws that must be satisfied.](../../../data/external-research/121-fulltext-resolver/121q2/acceptance/S120-053.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-4bf3bede0dc2e1bc / Denotational semantics provides mathematical correctness basis. Equational theory provides laws that must be satisfied.
+  - 来源：`data/external-research/121-fulltext-resolver/121q2/acceptance/S120-053.json`
+  - 依赖：—；被引用：—
+- [Denotational validity, operational equality, equational derivability, lambda equivalence and algebraic laws are formally](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-665312210482fca8 / Denotational validity, operational equality, equational derivability, lambda equivalence and algebraic laws are formally
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [Derived architecture candidate only; not causal proof and not a new truth layer.](../../../data/architecture/multiscale-causal-fabric/completion-seal.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-b8dbc85745a4d198 / Derived architecture candidate only; not causal proof and not a new truth layer.
+  - 来源：`data/architecture/multiscale-causal-fabric/completion-seal.json`
+  - 依赖：—；被引用：—
+- [Derived operational extension for probability semantics and system dynamics; not a truth layer or causal proof.](../../../data/architecture/probabilistic-system-dynamics/completion-seal.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-56083285c984826f / Derived operational extension for probability semantics and system dynamics; not a truth layer or causal proof.
+  - 来源：`data/architecture/probabilistic-system-dynamics/completion-seal.json`
+  - 依赖：—；被引用：—
 - [Derived representation only; not ontology, truth, value, causality, clinical inference, psychological diagnosis or proof](../../../data/architecture/adaptive-relational-network/completion-seal.json)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-d2401e78c02929ad / Derived representation only; not ontology, truth, value, causality, clinical inference, psychological diagnosis or proof
@@ -1344,6 +1374,11 @@
   - 可搜索名称：NFC-b6d3d2cb388c751f / GPT Owner：可接受项目/出版状态；不能替代 proof、evidence、replication 或外部专家；
   - 来源：`docs/architecture/epistemic-governance-kernel-and-federated-planes.md`
   - 依赖：—；被引用：—
+- [grand-unification boundary; reopening it would require a new theorem and](../../../reports/foundation-architecture/pointfire-seven-track-foundation-high-impact-frontier-r1-20260813.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-424f0a156d8579c2 / grand-unification boundary; reopening it would require a new theorem and
+  - 来源：`reports/foundation-architecture/pointfire-seven-track-foundation-high-impact-frontier-r1-20260813.md`
+  - 依赖：—；被引用：—
 - [gs = "approved"](../../../tools/validate_protocol_canonical.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-c173fb6e0615fb61 / gs = "approved"
@@ -2469,38 +2504,3 @@
   - 可搜索名称：NFC-c77d71568e70ea04 / If upstream objects D_{D19} exist, compose F_{D19}=N(⊕_{g∈D_{D19}} g); otherwise treat F_{D19} as an axiom seed.
   - 来源：`统一函数总表/0068-D19-情绪注入退出权信号.md`
   - 依赖：D19；被引用：—
-- [If upstream objects D_{D1} exist, compose F_{D1}=N(⊕_{g∈D_{D1}} g); otherwise treat F_{D1} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0050-D1-%E9%94%81%E5%AE%9A%E5%BC%BA%E5%BA%A6%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-d863d3d51bf90317 / If upstream objects D_{D1} exist, compose F_{D1}=N(⊕_{g∈D_{D1}} g); otherwise treat F_{D1} as an axiom seed.
-  - 来源：`统一函数总表/0050-D1-锁定强度函数.md`
-  - 依赖：D1；被引用：—
-- [If upstream objects D_{D200} exist, compose F_{D200}=N(⊕_{g∈D_{D200}} g); otherwise treat F_{D200} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0236-D200-%E9%87%8D%E6%95%B4%E5%8C%96%E7%BE%A4-%E9%97%A8%E6%A7%9B%E6%A0%87%E5%BA%A6%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-ef04726aa9092f4b / If upstream objects D_{D200} exist, compose F_{D200}=N(⊕_{g∈D_{D200}} g); otherwise treat F_{D200} as an axiom seed.
-  - 来源：`统一函数总表/0236-D200-重整化群-门槛标度函数.md`
-  - 依赖：D200；被引用：—
-- [If upstream objects D_{D201} exist, compose F_{D201}=N(⊕_{g∈D_{D201}} g); otherwise treat F_{D201} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0237-D201-%E4%B8%B4%E7%95%8C%E6%8C%87%E6%95%B0-%E9%97%A8%E6%A7%9B%E6%A0%87%E5%BA%A6%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-e390fff1e7baba44 / If upstream objects D_{D201} exist, compose F_{D201}=N(⊕_{g∈D_{D201}} g); otherwise treat F_{D201} as an axiom seed.
-  - 来源：`统一函数总表/0237-D201-临界指数-门槛标度函数.md`
-  - 依赖：D201；被引用：—
-- [If upstream objects D_{D202} exist, compose F_{D202}=N(⊕_{g∈D_{D202}} g); otherwise treat F_{D202} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0238-D202-%E5%85%B3%E8%81%94%E9%95%BF%E5%BA%A6-%E9%97%A8%E6%A7%9B%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-d9f3840c5cab3339 / If upstream objects D_{D202} exist, compose F_{D202}=N(⊕_{g∈D_{D202}} g); otherwise treat F_{D202} as an axiom seed.
-  - 来源：`统一函数总表/0238-D202-关联长度-门槛函数.md`
-  - 依赖：D202；被引用：—
-- [If upstream objects D_{D203} exist, compose F_{D203}=N(⊕_{g∈D_{D203}} g); otherwise treat F_{D203} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0239-D203-%E9%85%8D%E5%88%86%E5%87%BD%E6%95%B0-%E9%97%A8%E6%8E%A7%E5%92%8C%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-aa27e3ead12b283a / If upstream objects D_{D203} exist, compose F_{D203}=N(⊕_{g∈D_{D203}} g); otherwise treat F_{D203} as an axiom seed.
-  - 来源：`统一函数总表/0239-D203-配分函数-门控和函数.md`
-  - 依赖：D203；被引用：—
-- [If upstream objects D_{D204} exist, compose F_{D204}=N(⊕_{g∈D_{D204}} g); otherwise treat F_{D204} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0240-D204-%E8%87%AA%E7%94%B1%E8%83%BD-%E9%97%A8%E6%8E%A7%E5%8A%BF%E8%83%BD%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-9cb2f1390911b964 / If upstream objects D_{D204} exist, compose F_{D204}=N(⊕_{g∈D_{D204}} g); otherwise treat F_{D204} as an axiom seed.
-  - 来源：`统一函数总表/0240-D204-自由能-门控势能函数.md`
-  - 依赖：D204；被引用：—
-- [If upstream objects D_{D205} exist, compose F_{D205}=N(⊕_{g∈D_{D205}} g); otherwise treat F_{D205} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0241-D205-%E6%B6%A8%E8%90%BD-%E8%80%97%E6%95%A3%E5%AE%9A%E7%90%86-%E9%97%A8%E6%A7%9B%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-99575160bd8f0e0c / If upstream objects D_{D205} exist, compose F_{D205}=N(⊕_{g∈D_{D205}} g); otherwise treat F_{D205} as an axiom seed.
-  - 来源：`统一函数总表/0241-D205-涨落-耗散定理-门槛函数.md`
-  - 依赖：D205；被引用：—

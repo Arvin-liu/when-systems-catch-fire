@@ -132,6 +132,7 @@
 {"first_line":68,"last_line":68,"mention_count":1,"path":"data/operations/iterations/111/dependency_graph.json","role":"REFERENCE","stable_id":"A09"}
 {"first_line":1183,"last_line":1183,"mention_count":1,"path":"data/operations/iterations/111/ranked_queue.json","role":"REFERENCE","stable_id":"A09"}
 {"first_line":151,"last_line":151,"mention_count":1,"path":"tools/operations/run_stage_snapshot_responsibility_cases.py","role":"REFERENCE","stable_id":"A09"}
+{"first_line":22,"last_line":22,"mention_count":1,"path":"FOUNDATION-64-PROPAGATION.jsonl","role":"REFERENCE","stable_id":"A1"}
 {"first_line":18,"last_line":558,"mention_count":12,"path":"analysis/corpus-relation/cluster_source_briefs/C000.md","role":"REFERENCE","stable_id":"A1"}
 {"first_line":3477,"last_line":8585,"mention_count":12,"path":"analysis/corpus-relation/corpus_relation_graph.json","role":"REFERENCE","stable_id":"A1"}
 {"first_line":8,"last_line":8,"mention_count":1,"path":"data/external-research/120-function-paradigm-atlas/120-internal-function-asset-inventory.jsonl","role":"REFERENCE","stable_id":"A1"}
@@ -388,6 +389,7 @@
 {"first_line":17,"last_line":102,"mention_count":4,"path":"统一案例总表/0673-C-0678-孪生素数问题转换.md","role":"REFERENCE","stable_id":"A2"}
 {"first_line":25,"last_line":25,"mention_count":1,"path":"data/external-research/121-fulltext-resolver/121-extracts.jsonl","role":"REFERENCE","stable_id":"A2603"}
 {"first_line":25,"last_line":25,"mention_count":1,"path":"data/external-research/121-fulltext-resolver/121-extracts.jsonl","role":"REFERENCE","stable_id":"A2626"}
+{"first_line":23,"last_line":23,"mention_count":1,"path":"FOUNDATION-64-PROPAGATION.jsonl","role":"REFERENCE","stable_id":"A3"}
 {"first_line":39,"last_line":39,"mention_count":1,"path":"data/collisions/20260711-disobedience-subjectivity.json","role":"REFERENCE","stable_id":"A3"}
 {"first_line":21,"last_line":21,"mention_count":1,"path":"data/collisions/20260712-disobedience-audit-056.json","role":"REFERENCE","stable_id":"A3"}
 {"first_line":10,"last_line":10,"mention_count":1,"path":"data/external-research/120-function-paradigm-atlas/120-internal-function-asset-inventory.jsonl","role":"REFERENCE","stable_id":"A3"}
@@ -508,6 +510,7 @@
 {"first_line":51,"last_line":51,"mention_count":1,"path":"统一案例总表/0003-C-3-秦统一.md","role":"REFERENCE","stable_id":"A4"}
 {"first_line":42,"last_line":42,"mention_count":1,"path":"统一案例总表/0655-C-660-AI医疗 × 点火框架碰撞验证.md","role":"REFERENCE","stable_id":"A4"}
 {"first_line":42,"last_line":42,"mention_count":1,"path":"统一案例总表/0657-C-662-四方向联合碰撞验证.md","role":"REFERENCE","stable_id":"A4"}
+{"first_line":16,"last_line":16,"mention_count":1,"path":"FOUNDATION-64-PROPAGATION.jsonl","role":"REFERENCE","stable_id":"A5"}
 {"first_line":18,"last_line":18,"mention_count":1,"path":"analysis/corpus-relation/cluster_source_briefs/C000.md","role":"REFERENCE","stable_id":"A5"}
 {"first_line":3477,"last_line":3477,"mention_count":1,"path":"analysis/corpus-relation/corpus_relation_graph.json","role":"REFERENCE","stable_id":"A5"}
 {"first_line":53,"last_line":101,"mention_count":2,"path":"data/collisions/20260711-disobedience-subjectivity.json","role":"REFERENCE","stable_id":"A5"}
@@ -1231,6 +1234,7 @@
 {"first_line":15,"last_line":81,"mention_count":7,"path":"统一案例总表/0180-C-180-退出权剥夺导致决策结构退化——三支→二支.md","role":"REFERENCE","stable_id":"A7"}
 {"first_line":31,"last_line":31,"mention_count":1,"path":"统一案例总表/0805-C-0810-价值创造权决策权错配与回收.md","role":"REFERENCE","stable_id":"A7"}
 {"first_line":177,"last_line":187,"mention_count":2,"path":"统一案例总表/INDEX.md","role":"REFERENCE","stable_id":"A7"}
+{"first_line":32,"last_line":32,"mention_count":1,"path":"FOUNDATION-64-PROPAGATION.jsonl","role":"REFERENCE","stable_id":"A8"}
 {"first_line":18,"last_line":558,"mention_count":12,"path":"analysis/corpus-relation/cluster_source_briefs/C000.md","role":"REFERENCE","stable_id":"A8"}
 {"first_line":3477,"last_line":8585,"mention_count":12,"path":"analysis/corpus-relation/corpus_relation_graph.json","role":"REFERENCE","stable_id":"A8"}
 {"first_line":54,"last_line":102,"mention_count":4,"path":"data/collisions/20260711-disobedience-subjectivity.json","role":"REFERENCE","stable_id":"A8"}
@@ -1306,6 +1310,7 @@
 {"first_line":32,"last_line":32,"mention_count":1,"path":"统一案例总表/0805-C-0810-价值创造权决策权错配与回收.md","role":"REFERENCE","stable_id":"A8"}
 {"first_line":32,"last_line":32,"mention_count":1,"path":"统一案例总表/0806-C-0811-角色覆盖主体到身份提问.md","role":"REFERENCE","stable_id":"A8"}
 {"first_line":212,"last_line":212,"mention_count":1,"path":"统一案例总表/INDEX.md","role":"REFERENCE","stable_id":"A8"}
+{"first_line":21,"last_line":21,"mention_count":1,"path":"FOUNDATION-64-PROPAGATION.jsonl","role":"REFERENCE","stable_id":"A9"}
 {"first_line":70,"last_line":90,"mention_count":2,"path":"data/collisions/20260711-disobedience-subjectivity.json","role":"REFERENCE","stable_id":"A9"}
 {"first_line":23,"last_line":32,"mention_count":3,"path":"data/collisions/20260712-disobedience-audit-056.json","role":"REFERENCE","stable_id":"A9"}
 {"first_line":16,"last_line":16,"mention_count":1,"path":"data/external-research/120-function-paradigm-atlas/120-internal-function-asset-inventory.jsonl","role":"REFERENCE","stable_id":"A9"}
@@ -1548,6 +1553,7 @@
 {"first_line":9,"last_line":9,"mention_count":1,"path":"docs/language-thought/profiles/tr.md","role":"REFERENCE","stable_id":"D08"}
 {"first_line":11,"last_line":11,"mention_count":1,"path":"docs/language-thought/task-113-defect-before-after.md","role":"REFERENCE","stable_id":"D08"}
 {"first_line":79,"last_line":79,"mention_count":1,"path":"docs/language-thought/dimensional-basis.md","role":"REFERENCE","stable_id":"D09"}
+{"first_line":3,"last_line":3,"mention_count":1,"path":"FOUNDATION-64-PROPAGATION.jsonl","role":"REFERENCE","stable_id":"D1"}
 {"first_line":214,"last_line":214,"mention_count":1,"path":"analysis/corpus-relation/cluster_source_briefs/C000.md","role":"REFERENCE","stable_id":"D1"}
 {"first_line":195,"last_line":195,"mention_count":1,"path":"analysis/corpus-relation/cluster_source_briefs/C002.md","role":"REFERENCE","stable_id":"D1"}
 {"first_line":21,"last_line":21,"mention_count":1,"path":"data/external-research/121-fulltext-resolver/121q6/121q5-reconciliation.json","role":"REFERENCE","stable_id":"D1"}
@@ -1706,6 +1712,7 @@
 {"first_line":17,"last_line":40,"mention_count":2,"path":"统一案例总表/0704-C-0709-空降CEO失败机制.md","role":"REFERENCE","stable_id":"D1"}
 {"first_line":17,"last_line":41,"mention_count":2,"path":"统一案例总表/0705-C-0710-小国君主制保留机制.md","role":"REFERENCE","stable_id":"D1"}
 {"first_line":665,"last_line":673,"mention_count":2,"path":"统一案例总表/INDEX.md","role":"REFERENCE","stable_id":"D1"}
+{"first_line":26,"last_line":26,"mention_count":1,"path":"FOUNDATION-64-PROPAGATION.jsonl","role":"REFERENCE","stable_id":"D10"}
 {"first_line":82,"last_line":82,"mention_count":1,"path":"data/foundation/adjudications/079-method-audit.jsonl","role":"REFERENCE","stable_id":"D10"}
 {"first_line":1,"last_line":1,"mention_count":1,"path":"data/foundation/adjudications/083-repaired-adjudications.jsonl","role":"REFERENCE","stable_id":"D10"}
 {"first_line":51,"last_line":79,"mention_count":2,"path":"data/foundation/adjudications/083-updated-original-adjudications.jsonl","role":"REFERENCE","stable_id":"D10"}
@@ -2685,6 +2692,7 @@
 {"first_line":62,"last_line":62,"mention_count":1,"path":"统一案例总表/0108-C-108-认知犹豫域压缩.md","role":"REFERENCE","stable_id":"D122"}
 {"first_line":63,"last_line":63,"mention_count":1,"path":"统一案例总表/0128-C-128-大脑进化为Agent.md","role":"REFERENCE","stable_id":"D122"}
 {"first_line":28,"last_line":75,"mention_count":4,"path":"统一案例总表/0260-C-260-r_cross=0不导致Ψ=0.md","role":"REFERENCE","stable_id":"D122"}
+{"first_line":17,"last_line":17,"mention_count":1,"path":"FOUNDATION-64-PROPAGATION.jsonl","role":"REFERENCE","stable_id":"D123"}
 {"first_line":15,"last_line":412,"mention_count":6,"path":"analysis/corpus-relation/cluster_source_briefs/C000.md","role":"REFERENCE","stable_id":"D123"}
 {"first_line":185,"last_line":185,"mention_count":1,"path":"data/foundation/adjudications/079-method-audit.jsonl","role":"REFERENCE","stable_id":"D123"}
 {"first_line":37,"last_line":39,"mention_count":2,"path":"data/foundation/adjudications/083-repaired-adjudications.jsonl","role":"REFERENCE","stable_id":"D123"}
@@ -3182,6 +3190,7 @@
 {"first_line":183,"last_line":183,"mention_count":1,"path":"统一函数总表/INDEX.md","role":"REFERENCE","stable_id":"D132"}
 {"first_line":50,"last_line":50,"mention_count":1,"path":"统一案例总表/0130-C-130-招聘歧视与工资压制.md","role":"REFERENCE","stable_id":"D132"}
 {"first_line":50,"last_line":50,"mention_count":1,"path":"统一案例总表/0133-C-133-中间稳态.md","role":"REFERENCE","stable_id":"D132"}
+{"first_line":15,"last_line":15,"mention_count":1,"path":"FOUNDATION-64-PROPAGATION.jsonl","role":"REFERENCE","stable_id":"D133"}
 {"first_line":195,"last_line":195,"mention_count":1,"path":"data/foundation/adjudications/079-method-audit.jsonl","role":"REFERENCE","stable_id":"D133"}
 {"first_line":37,"last_line":39,"mention_count":2,"path":"data/foundation/adjudications/083-repaired-adjudications.jsonl","role":"REFERENCE","stable_id":"D133"}
 {"first_line":149,"last_line":201,"mention_count":6,"path":"data/foundation/adjudications/083-updated-original-adjudications.jsonl","role":"REFERENCE","stable_id":"D133"}
@@ -3265,6 +3274,7 @@
 {"first_line":48,"last_line":48,"mention_count":1,"path":"统一案例总表/0155-C-155-沃尔顿10年追踪.md","role":"REFERENCE","stable_id":"D134"}
 {"first_line":15,"last_line":71,"mention_count":8,"path":"统一案例总表/0497-C-502-认知时间膨胀验证 — 危机决策实验-ε高的决策者(专家)平均决策时间2分钟,ε低的决策者(新手)平均决策时间8分钟。同样事件,新手感知时间膨.md","role":"REFERENCE","stable_id":"D134"}
 {"first_line":504,"last_line":504,"mention_count":1,"path":"统一案例总表/INDEX.md","role":"REFERENCE","stable_id":"D134"}
+{"first_line":30,"last_line":30,"mention_count":1,"path":"FOUNDATION-64-PROPAGATION.jsonl","role":"REFERENCE","stable_id":"D135"}
 {"first_line":197,"last_line":197,"mention_count":1,"path":"data/foundation/adjudications/079-method-audit.jsonl","role":"REFERENCE","stable_id":"D135"}
 {"first_line":37,"last_line":39,"mention_count":2,"path":"data/foundation/adjudications/083-repaired-adjudications.jsonl","role":"REFERENCE","stable_id":"D135"}
 {"first_line":149,"last_line":201,"mention_count":6,"path":"data/foundation/adjudications/083-updated-original-adjudications.jsonl","role":"REFERENCE","stable_id":"D135"}
@@ -3561,6 +3571,7 @@
 {"first_line":41,"last_line":41,"mention_count":1,"path":"统一案例总表/0669-C-674-导数连续性×双向动力学验证.md","role":"REFERENCE","stable_id":"D141"}
 {"first_line":41,"last_line":41,"mention_count":1,"path":"统一案例总表/0670-C-675-公理化体系外层补齐×定理层验证.md","role":"REFERENCE","stable_id":"D141"}
 {"first_line":329,"last_line":516,"mention_count":2,"path":"统一案例总表/INDEX.md","role":"REFERENCE","stable_id":"D141"}
+{"first_line":31,"last_line":31,"mention_count":1,"path":"FOUNDATION-64-PROPAGATION.jsonl","role":"REFERENCE","stable_id":"D142"}
 {"first_line":204,"last_line":204,"mention_count":1,"path":"data/foundation/adjudications/079-method-audit.jsonl","role":"REFERENCE","stable_id":"D142"}
 {"first_line":37,"last_line":39,"mention_count":2,"path":"data/foundation/adjudications/083-repaired-adjudications.jsonl","role":"REFERENCE","stable_id":"D142"}
 {"first_line":149,"last_line":201,"mention_count":6,"path":"data/foundation/adjudications/083-updated-original-adjudications.jsonl","role":"REFERENCE","stable_id":"D142"}
@@ -4813,6 +4824,7 @@
 {"first_line":61,"last_line":61,"mention_count":1,"path":"统一函数总表/0214-D177-深层同构函数.md","role":"REFERENCE","stable_id":"D175"}
 {"first_line":59,"last_line":59,"mention_count":1,"path":"统一函数总表/0219-D183-门控面合并统一函数.md","role":"REFERENCE","stable_id":"D175"}
 {"first_line":226,"last_line":226,"mention_count":1,"path":"统一函数总表/INDEX.md","role":"REFERENCE","stable_id":"D175"}
+{"first_line":54,"last_line":54,"mention_count":1,"path":"FOUNDATION-64-PROPAGATION.jsonl","role":"REFERENCE","stable_id":"D176"}
 {"first_line":214,"last_line":214,"mention_count":1,"path":"analysis/corpus-relation/cluster_source_briefs/C000.md","role":"REFERENCE","stable_id":"D176"}
 {"first_line":238,"last_line":238,"mention_count":1,"path":"data/foundation/adjudications/079-method-audit.jsonl","role":"REFERENCE","stable_id":"D176"}
 {"first_line":235,"last_line":235,"mention_count":1,"path":"data/foundation/adjudications/083-updated-original-adjudications.jsonl","role":"REFERENCE","stable_id":"D176"}
@@ -4986,6 +4998,7 @@
 {"first_line":90,"last_line":90,"mention_count":1,"path":"views/legacy-functions.jsonl","role":"REFERENCE","stable_id":"D18"}
 {"first_line":4,"last_line":45,"mention_count":17,"path":"统一函数总表/0067-D18-情绪稳态临界.md","role":"DEFINITION","stable_id":"D18"}
 {"first_line":79,"last_line":79,"mention_count":1,"path":"统一函数总表/INDEX.md","role":"REFERENCE","stable_id":"D18"}
+{"first_line":5,"last_line":5,"mention_count":1,"path":"FOUNDATION-64-PROPAGATION.jsonl","role":"REFERENCE","stable_id":"D180"}
 {"first_line":14,"last_line":412,"mention_count":4,"path":"analysis/corpus-relation/cluster_source_briefs/C000.md","role":"REFERENCE","stable_id":"D180"}
 {"first_line":242,"last_line":242,"mention_count":1,"path":"data/foundation/adjudications/079-method-audit.jsonl","role":"REFERENCE","stable_id":"D180"}
 {"first_line":30,"last_line":58,"mention_count":29,"path":"data/foundation/adjudications/083-repaired-adjudications.jsonl","role":"REFERENCE","stable_id":"D180"}
@@ -5105,6 +5118,7 @@
 {"first_line":230,"last_line":230,"mention_count":1,"path":"统一函数总表/INDEX.md","role":"REFERENCE","stable_id":"D180"}
 {"first_line":47,"last_line":47,"mention_count":1,"path":"统一案例总表/0221-C-221-发现路径的唯一性.md","role":"REFERENCE","stable_id":"D180"}
 {"first_line":49,"last_line":49,"mention_count":1,"path":"统一案例总表/0240-C-240-γ振荡绑定轨道.md","role":"REFERENCE","stable_id":"D180"}
+{"first_line":6,"last_line":6,"mention_count":1,"path":"FOUNDATION-64-PROPAGATION.jsonl","role":"REFERENCE","stable_id":"D181"}
 {"first_line":32,"last_line":412,"mention_count":22,"path":"analysis/corpus-relation/cluster_source_briefs/C000.md","role":"REFERENCE","stable_id":"D181"}
 {"first_line":243,"last_line":243,"mention_count":1,"path":"data/foundation/adjudications/079-method-audit.jsonl","role":"REFERENCE","stable_id":"D181"}
 {"first_line":59,"last_line":70,"mention_count":12,"path":"data/foundation/adjudications/083-repaired-adjudications.jsonl","role":"REFERENCE","stable_id":"D181"}
@@ -6463,6 +6477,7 @@
 {"first_line":4,"last_line":45,"mention_count":17,"path":"统一函数总表/0246-D210-最小作用量原理-门槛优化函数.md","role":"DEFINITION","stable_id":"D210"}
 {"first_line":26,"last_line":53,"mention_count":2,"path":"统一函数总表/0578-D563-跨系统移植成功函数.md","role":"REFERENCE","stable_id":"D210"}
 {"first_line":261,"last_line":261,"mention_count":1,"path":"统一函数总表/INDEX.md","role":"REFERENCE","stable_id":"D210"}
+{"first_line":12,"last_line":12,"mention_count":1,"path":"FOUNDATION-64-PROPAGATION.jsonl","role":"REFERENCE","stable_id":"D211"}
 {"first_line":32,"last_line":412,"mention_count":21,"path":"analysis/corpus-relation/cluster_source_briefs/C000.md","role":"REFERENCE","stable_id":"D211"}
 {"first_line":273,"last_line":273,"mention_count":1,"path":"data/foundation/adjudications/079-method-audit.jsonl","role":"REFERENCE","stable_id":"D211"}
 {"first_line":59,"last_line":70,"mention_count":12,"path":"data/foundation/adjudications/083-repaired-adjudications.jsonl","role":"REFERENCE","stable_id":"D211"}
@@ -6852,6 +6867,7 @@
 {"first_line":83,"last_line":83,"mention_count":1,"path":"统一函数总表/INDEX.md","role":"REFERENCE","stable_id":"D22"}
 {"first_line":48,"last_line":104,"mention_count":2,"path":"统一案例总表/0493-C-497-文明崩溃=Φ加速衰减 — 多个门控面同时消失,D228双通道衰减的文明版.md","role":"REFERENCE","stable_id":"D22"}
 {"first_line":17,"last_line":104,"mention_count":4,"path":"统一案例总表/0673-C-0678-孪生素数问题转换.md","role":"REFERENCE","stable_id":"D22"}
+{"first_line":1,"last_line":1,"mention_count":1,"path":"FOUNDATION-64-PROPAGATION.jsonl","role":"REFERENCE","stable_id":"D220"}
 {"first_line":49,"last_line":49,"mention_count":1,"path":"FOUNDATION.md","role":"REFERENCE","stable_id":"D220"}
 {"first_line":924,"last_line":3395,"mention_count":2,"path":"analysis/corpus-relation/article_cluster_candidates.json","role":"REFERENCE","stable_id":"D220"}
 {"first_line":32,"last_line":466,"mention_count":26,"path":"analysis/corpus-relation/cluster_source_briefs/C000.md","role":"REFERENCE","stable_id":"D220"}
@@ -6887,6 +6903,7 @@
 {"first_line":9,"last_line":18,"mention_count":10,"path":"reports/foundation-architecture/098-dependency-impact.md","role":"REFERENCE","stable_id":"D220"}
 {"first_line":1,"last_line":15,"mention_count":2,"path":"reports/foundation-architecture/D220-countermodel-equivalence-audit-20260713.md","role":"REFERENCE","stable_id":"D220"}
 {"first_line":6,"last_line":6,"mention_count":1,"path":"reports/foundation-architecture/core-proof-and-countermodel-report-20260713.md","role":"REFERENCE","stable_id":"D220"}
+{"first_line":28,"last_line":28,"mention_count":1,"path":"reports/foundation-architecture/pointfire-seven-track-foundation-high-impact-frontier-r1-20260813.md","role":"REFERENCE","stable_id":"D220"}
 {"first_line":3,"last_line":9,"mention_count":2,"path":"reports/foundation-architecture/semantic-adjudication-verification-20260713.md","role":"REFERENCE","stable_id":"D220"}
 {"first_line":199,"last_line":211,"mention_count":3,"path":"reports/math-foundation/pilot-formal-audit-20260712.md","role":"REFERENCE","stable_id":"D220"}
 {"first_line":23,"last_line":662,"mention_count":13,"path":"tools/foundation/adjudicate_core.py","role":"REFERENCE","stable_id":"D220"}
@@ -7044,6 +7061,7 @@
 {"first_line":19,"last_line":57,"mention_count":4,"path":"统一函数总表/0265-D229-物理存在的四重约束与衰减终态.md","role":"REFERENCE","stable_id":"D222"}
 {"first_line":19,"last_line":57,"mention_count":4,"path":"统一函数总表/0267-D231-信息-热力学-门控三统一定理.md","role":"REFERENCE","stable_id":"D222"}
 {"first_line":273,"last_line":282,"mention_count":4,"path":"统一函数总表/INDEX.md","role":"REFERENCE","stable_id":"D222"}
+{"first_line":37,"last_line":37,"mention_count":1,"path":"FOUNDATION-64-PROPAGATION.jsonl","role":"REFERENCE","stable_id":"D223"}
 {"first_line":285,"last_line":285,"mention_count":1,"path":"data/foundation/adjudications/079-method-audit.jsonl","role":"REFERENCE","stable_id":"D223"}
 {"first_line":281,"last_line":281,"mention_count":1,"path":"data/foundation/adjudications/083-updated-original-adjudications.jsonl","role":"REFERENCE","stable_id":"D223"}
 {"first_line":193,"last_line":193,"mention_count":1,"path":"data/foundation/adjudications/084-max-decisions.jsonl","role":"REFERENCE","stable_id":"D223"}
@@ -7082,6 +7100,7 @@
 {"first_line":274,"last_line":274,"mention_count":1,"path":"统一函数总表/INDEX.md","role":"REFERENCE","stable_id":"D223"}
 {"first_line":6,"last_line":82,"mention_count":13,"path":"统一案例总表/0495-C-500-宇宙是Φ从正值趋向零的暂态 — 物理存在有保质期,D223的终极案例.md","role":"REFERENCE","stable_id":"D223"}
 {"first_line":502,"last_line":502,"mention_count":1,"path":"统一案例总表/INDEX.md","role":"REFERENCE","stable_id":"D223"}
+{"first_line":13,"last_line":13,"mention_count":1,"path":"FOUNDATION-64-PROPAGATION.jsonl","role":"REFERENCE","stable_id":"D224"}
 {"first_line":466,"last_line":466,"mention_count":1,"path":"analysis/corpus-relation/cluster_source_briefs/C000.md","role":"REFERENCE","stable_id":"D224"}
 {"first_line":54,"last_line":286,"mention_count":2,"path":"data/foundation/adjudications/079-method-audit.jsonl","role":"REFERENCE","stable_id":"D224"}
 {"first_line":1,"last_line":64,"mention_count":2,"path":"data/foundation/adjudications/083-repaired-adjudications.jsonl","role":"REFERENCE","stable_id":"D224"}
@@ -7168,6 +7187,7 @@
 {"first_line":19,"last_line":57,"mention_count":3,"path":"统一函数总表/0044-T34-量子引力Φ框架函数.md","role":"REFERENCE","stable_id":"D225"}
 {"first_line":4,"last_line":74,"mention_count":22,"path":"统一函数总表/0261-D225-引力B型必要性定理.md","role":"DEFINITION","stable_id":"D225"}
 {"first_line":56,"last_line":276,"mention_count":2,"path":"统一函数总表/INDEX.md","role":"REFERENCE","stable_id":"D225"}
+{"first_line":33,"last_line":33,"mention_count":1,"path":"FOUNDATION-64-PROPAGATION.jsonl","role":"REFERENCE","stable_id":"D226"}
 {"first_line":288,"last_line":288,"mention_count":1,"path":"data/foundation/adjudications/079-method-audit.jsonl","role":"REFERENCE","stable_id":"D226"}
 {"first_line":284,"last_line":284,"mention_count":1,"path":"data/foundation/adjudications/083-updated-original-adjudications.jsonl","role":"REFERENCE","stable_id":"D226"}
 {"first_line":66,"last_line":66,"mention_count":1,"path":"data/foundation/adjudications/084-max-decisions.jsonl","role":"REFERENCE","stable_id":"D226"}
@@ -7275,6 +7295,7 @@
 {"first_line":279,"last_line":279,"mention_count":1,"path":"统一函数总表/INDEX.md","role":"REFERENCE","stable_id":"D228"}
 {"first_line":6,"last_line":120,"mention_count":13,"path":"统一案例总表/0493-C-497-文明崩溃=Φ加速衰减 — 多个门控面同时消失,D228双通道衰减的文明版.md","role":"REFERENCE","stable_id":"D228"}
 {"first_line":500,"last_line":500,"mention_count":1,"path":"统一案例总表/INDEX.md","role":"REFERENCE","stable_id":"D228"}
+{"first_line":34,"last_line":34,"mention_count":1,"path":"FOUNDATION-64-PROPAGATION.jsonl","role":"REFERENCE","stable_id":"D229"}
 {"first_line":291,"last_line":291,"mention_count":1,"path":"data/foundation/adjudications/079-method-audit.jsonl","role":"REFERENCE","stable_id":"D229"}
 {"first_line":64,"last_line":64,"mention_count":1,"path":"data/foundation/adjudications/083-repaired-adjudications.jsonl","role":"REFERENCE","stable_id":"D229"}
 {"first_line":287,"last_line":287,"mention_count":1,"path":"data/foundation/adjudications/083-updated-original-adjudications.jsonl","role":"REFERENCE","stable_id":"D229"}
@@ -7388,6 +7409,7 @@
 {"first_line":34,"last_line":34,"mention_count":1,"path":"统一函数总表/0513-D515-宇宙约束边界函数.md","role":"REFERENCE","stable_id":"D230"}
 {"first_line":281,"last_line":283,"mention_count":3,"path":"统一函数总表/INDEX.md","role":"REFERENCE","stable_id":"D230"}
 {"first_line":15,"last_line":71,"mention_count":5,"path":"统一案例总表/0658-C-663-密码学碰撞验证案例.md","role":"REFERENCE","stable_id":"D230"}
+{"first_line":35,"last_line":35,"mention_count":1,"path":"FOUNDATION-64-PROPAGATION.jsonl","role":"REFERENCE","stable_id":"D231"}
 {"first_line":293,"last_line":293,"mention_count":1,"path":"data/foundation/adjudications/079-method-audit.jsonl","role":"REFERENCE","stable_id":"D231"}
 {"first_line":65,"last_line":65,"mention_count":1,"path":"data/foundation/adjudications/083-repaired-adjudications.jsonl","role":"REFERENCE","stable_id":"D231"}
 {"first_line":49,"last_line":293,"mention_count":3,"path":"data/foundation/adjudications/083-updated-original-adjudications.jsonl","role":"REFERENCE","stable_id":"D231"}
@@ -7533,6 +7555,7 @@
 {"first_line":285,"last_line":288,"mention_count":2,"path":"统一函数总表/INDEX.md","role":"REFERENCE","stable_id":"D234"}
 {"first_line":15,"last_line":71,"mention_count":10,"path":"统一案例总表/0494-C-499-AI对齐问题=σ控制 — 让AI的σ在σ_opt附近而非σ→0(僵化)或σ→∞(随机).md","role":"REFERENCE","stable_id":"D234"}
 {"first_line":501,"last_line":501,"mention_count":1,"path":"统一案例总表/INDEX.md","role":"REFERENCE","stable_id":"D234"}
+{"first_line":41,"last_line":41,"mention_count":1,"path":"FOUNDATION-64-PROPAGATION.jsonl","role":"REFERENCE","stable_id":"D235"}
 {"first_line":297,"last_line":297,"mention_count":1,"path":"data/foundation/adjudications/079-method-audit.jsonl","role":"REFERENCE","stable_id":"D235"}
 {"first_line":293,"last_line":293,"mention_count":1,"path":"data/foundation/adjudications/083-updated-original-adjudications.jsonl","role":"REFERENCE","stable_id":"D235"}
 {"first_line":75,"last_line":75,"mention_count":1,"path":"data/foundation/adjudications/084-max-decisions.jsonl","role":"REFERENCE","stable_id":"D235"}
@@ -7967,6 +7990,7 @@
 {"first_line":4,"last_line":74,"mention_count":22,"path":"统一函数总表/0281-D245-自我模型函数.md","role":"DEFINITION","stable_id":"D245"}
 {"first_line":68,"last_line":87,"mention_count":4,"path":"统一函数总表/0611-D601-角色覆盖主体身份.md","role":"REFERENCE","stable_id":"D245"}
 {"first_line":296,"last_line":296,"mention_count":1,"path":"统一函数总表/INDEX.md","role":"REFERENCE","stable_id":"D245"}
+{"first_line":40,"last_line":40,"mention_count":1,"path":"FOUNDATION-64-PROPAGATION.jsonl","role":"REFERENCE","stable_id":"D246"}
 {"first_line":308,"last_line":308,"mention_count":1,"path":"data/foundation/adjudications/079-method-audit.jsonl","role":"REFERENCE","stable_id":"D246"}
 {"first_line":304,"last_line":304,"mention_count":1,"path":"data/foundation/adjudications/083-updated-original-adjudications.jsonl","role":"REFERENCE","stable_id":"D246"}
 {"first_line":85,"last_line":85,"mention_count":1,"path":"data/foundation/adjudications/084-max-decisions.jsonl","role":"REFERENCE","stable_id":"D246"}
@@ -8837,6 +8861,7 @@
 {"first_line":99,"last_line":99,"mention_count":1,"path":"views/legacy-functions.jsonl","role":"REFERENCE","stable_id":"D27"}
 {"first_line":4,"last_line":45,"mention_count":17,"path":"统一函数总表/0076-D27-级联速度.md","role":"DEFINITION","stable_id":"D27"}
 {"first_line":88,"last_line":88,"mention_count":1,"path":"统一函数总表/INDEX.md","role":"REFERENCE","stable_id":"D27"}
+{"first_line":7,"last_line":7,"mention_count":1,"path":"FOUNDATION-64-PROPAGATION.jsonl","role":"REFERENCE","stable_id":"D270"}
 {"first_line":32,"last_line":412,"mention_count":21,"path":"analysis/corpus-relation/cluster_source_briefs/C000.md","role":"REFERENCE","stable_id":"D270"}
 {"first_line":332,"last_line":332,"mention_count":1,"path":"data/foundation/adjudications/079-method-audit.jsonl","role":"REFERENCE","stable_id":"D270"}
 {"first_line":59,"last_line":70,"mention_count":12,"path":"data/foundation/adjudications/083-repaired-adjudications.jsonl","role":"REFERENCE","stable_id":"D270"}
@@ -8962,6 +8987,7 @@
 {"first_line":7,"last_line":7,"mention_count":1,"path":"统一函数总表/0305-D269-阶段过渡锐度函数.md","role":"REFERENCE","stable_id":"D270"}
 {"first_line":4,"last_line":74,"mention_count":23,"path":"统一函数总表/0306-D270-阶段宽度竞争函数.md","role":"DEFINITION","stable_id":"D270"}
 {"first_line":321,"last_line":321,"mention_count":1,"path":"统一函数总表/INDEX.md","role":"REFERENCE","stable_id":"D270"}
+{"first_line":10,"last_line":10,"mention_count":1,"path":"FOUNDATION-64-PROPAGATION.jsonl","role":"REFERENCE","stable_id":"D271"}
 {"first_line":333,"last_line":333,"mention_count":1,"path":"data/foundation/adjudications/079-method-audit.jsonl","role":"REFERENCE","stable_id":"D271"}
 {"first_line":71,"last_line":84,"mention_count":14,"path":"data/foundation/adjudications/083-repaired-adjudications.jsonl","role":"REFERENCE","stable_id":"D271"}
 {"first_line":329,"last_line":418,"mention_count":90,"path":"data/foundation/adjudications/083-updated-original-adjudications.jsonl","role":"REFERENCE","stable_id":"D271"}
@@ -9531,6 +9557,7 @@
 {"first_line":4,"last_line":69,"mention_count":22,"path":"统一函数总表/0324-D288-g_eff有限时间崩溃函数.md","role":"DEFINITION","stable_id":"D288"}
 {"first_line":19,"last_line":57,"mention_count":3,"path":"统一函数总表/0382-D346-容斥主导区内部结构函数.md","role":"REFERENCE","stable_id":"D288"}
 {"first_line":339,"last_line":397,"mention_count":2,"path":"统一函数总表/INDEX.md","role":"REFERENCE","stable_id":"D288"}
+{"first_line":8,"last_line":8,"mention_count":1,"path":"FOUNDATION-64-PROPAGATION.jsonl","role":"REFERENCE","stable_id":"D289"}
 {"first_line":351,"last_line":351,"mention_count":1,"path":"data/foundation/adjudications/079-method-audit.jsonl","role":"REFERENCE","stable_id":"D289"}
 {"first_line":74,"last_line":84,"mention_count":11,"path":"data/foundation/adjudications/083-repaired-adjudications.jsonl","role":"REFERENCE","stable_id":"D289"}
 {"first_line":347,"last_line":432,"mention_count":73,"path":"data/foundation/adjudications/083-updated-original-adjudications.jsonl","role":"REFERENCE","stable_id":"D289"}
@@ -9656,6 +9683,7 @@
 {"first_line":90,"last_line":90,"mention_count":1,"path":"统一函数总表/INDEX.md","role":"REFERENCE","stable_id":"D29"}
 {"first_line":28,"last_line":71,"mention_count":4,"path":"统一案例总表/0111-C-111-跨层犹豫域映射.md","role":"REFERENCE","stable_id":"D29"}
 {"first_line":17,"last_line":113,"mention_count":4,"path":"统一案例总表/0673-C-0678-孪生素数问题转换.md","role":"REFERENCE","stable_id":"D29"}
+{"first_line":14,"last_line":14,"mention_count":1,"path":"FOUNDATION-64-PROPAGATION.jsonl","role":"REFERENCE","stable_id":"D290"}
 {"first_line":352,"last_line":352,"mention_count":1,"path":"data/foundation/adjudications/079-method-audit.jsonl","role":"REFERENCE","stable_id":"D290"}
 {"first_line":74,"last_line":84,"mention_count":11,"path":"data/foundation/adjudications/083-repaired-adjudications.jsonl","role":"REFERENCE","stable_id":"D290"}
 {"first_line":348,"last_line":418,"mention_count":71,"path":"data/foundation/adjudications/083-updated-original-adjudications.jsonl","role":"REFERENCE","stable_id":"D290"}
@@ -10261,6 +10289,7 @@
 {"first_line":365,"last_line":365,"mention_count":1,"path":"views/legacy-functions.jsonl","role":"REFERENCE","stable_id":"D303"}
 {"first_line":4,"last_line":72,"mention_count":22,"path":"统一函数总表/0339-D303-容斥-耦合竞争动态演化函数.md","role":"DEFINITION","stable_id":"D303"}
 {"first_line":354,"last_line":354,"mention_count":1,"path":"统一函数总表/INDEX.md","role":"REFERENCE","stable_id":"D303"}
+{"first_line":55,"last_line":55,"mention_count":1,"path":"FOUNDATION-64-PROPAGATION.jsonl","role":"REFERENCE","stable_id":"D304"}
 {"first_line":366,"last_line":366,"mention_count":1,"path":"data/foundation/adjudications/079-method-audit.jsonl","role":"REFERENCE","stable_id":"D304"}
 {"first_line":362,"last_line":362,"mention_count":1,"path":"data/foundation/adjudications/083-updated-original-adjudications.jsonl","role":"REFERENCE","stable_id":"D304"}
 {"first_line":203,"last_line":203,"mention_count":1,"path":"data/foundation/adjudications/084-max-decisions.jsonl","role":"REFERENCE","stable_id":"D304"}
@@ -10421,6 +10450,7 @@
 {"first_line":370,"last_line":370,"mention_count":1,"path":"views/legacy-functions.jsonl","role":"REFERENCE","stable_id":"D308"}
 {"first_line":4,"last_line":74,"mention_count":22,"path":"统一函数总表/0344-D308-阶段过渡滞后函数.md","role":"DEFINITION","stable_id":"D308"}
 {"first_line":359,"last_line":359,"mention_count":1,"path":"统一函数总表/INDEX.md","role":"REFERENCE","stable_id":"D308"}
+{"first_line":45,"last_line":45,"mention_count":1,"path":"FOUNDATION-64-PROPAGATION.jsonl","role":"REFERENCE","stable_id":"D309"}
 {"first_line":33,"last_line":33,"mention_count":1,"path":"analysis/corpus-relation/cluster_source_briefs/C006.md","role":"REFERENCE","stable_id":"D309"}
 {"first_line":371,"last_line":371,"mention_count":1,"path":"data/foundation/adjudications/079-method-audit.jsonl","role":"REFERENCE","stable_id":"D309"}
 {"first_line":77,"last_line":78,"mention_count":2,"path":"data/foundation/adjudications/083-repaired-adjudications.jsonl","role":"REFERENCE","stable_id":"D309"}
@@ -10567,6 +10597,7 @@
 {"first_line":19,"last_line":57,"mention_count":3,"path":"统一函数总表/0375-D339-僵尸态救援函数.md","role":"REFERENCE","stable_id":"D312"}
 {"first_line":49,"last_line":53,"mention_count":3,"path":"统一函数总表/0609-D599-刷分博弈.md","role":"REFERENCE","stable_id":"D312"}
 {"first_line":363,"last_line":390,"mention_count":3,"path":"统一函数总表/INDEX.md","role":"REFERENCE","stable_id":"D312"}
+{"first_line":52,"last_line":52,"mention_count":1,"path":"FOUNDATION-64-PROPAGATION.jsonl","role":"REFERENCE","stable_id":"D313"}
 {"first_line":375,"last_line":375,"mention_count":1,"path":"data/foundation/adjudications/079-method-audit.jsonl","role":"REFERENCE","stable_id":"D313"}
 {"first_line":371,"last_line":371,"mention_count":1,"path":"data/foundation/adjudications/083-updated-original-adjudications.jsonl","role":"REFERENCE","stable_id":"D313"}
 {"first_line":204,"last_line":204,"mention_count":1,"path":"data/foundation/adjudications/084-max-decisions.jsonl","role":"REFERENCE","stable_id":"D313"}
@@ -11246,6 +11277,7 @@
 {"first_line":4,"last_line":77,"mention_count":21,"path":"统一函数总表/0367-D331-p-涨落函数.md","role":"DEFINITION","stable_id":"D331"}
 {"first_line":19,"last_line":57,"mention_count":3,"path":"统一函数总表/0450-D414-集中性-序参量映射修正函数.md","role":"REFERENCE","stable_id":"D331"}
 {"first_line":382,"last_line":465,"mention_count":2,"path":"统一函数总表/INDEX.md","role":"REFERENCE","stable_id":"D331"}
+{"first_line":46,"last_line":46,"mention_count":1,"path":"FOUNDATION-64-PROPAGATION.jsonl","role":"REFERENCE","stable_id":"D332"}
 {"first_line":394,"last_line":394,"mention_count":1,"path":"data/foundation/adjudications/079-method-audit.jsonl","role":"REFERENCE","stable_id":"D332"}
 {"first_line":390,"last_line":446,"mention_count":4,"path":"data/foundation/adjudications/083-updated-original-adjudications.jsonl","role":"REFERENCE","stable_id":"D332"}
 {"first_line":121,"last_line":210,"mention_count":3,"path":"data/foundation/adjudications/084-max-decisions.jsonl","role":"REFERENCE","stable_id":"D332"}
@@ -12243,6 +12275,7 @@
 {"first_line":28,"last_line":71,"mention_count":4,"path":"统一案例总表/0118-C-118-倒U型驱动力.md","role":"REFERENCE","stable_id":"D36"}
 {"first_line":6,"last_line":79,"mention_count":10,"path":"统一案例总表/0277-C-277-D123与D36倒U型同构.md","role":"REFERENCE","stable_id":"D36"}
 {"first_line":284,"last_line":284,"mention_count":1,"path":"统一案例总表/INDEX.md","role":"REFERENCE","stable_id":"D36"}
+{"first_line":11,"last_line":11,"mention_count":1,"path":"FOUNDATION-64-PROPAGATION.jsonl","role":"REFERENCE","stable_id":"D360"}
 {"first_line":422,"last_line":422,"mention_count":1,"path":"data/foundation/adjudications/079-method-audit.jsonl","role":"REFERENCE","stable_id":"D360"}
 {"first_line":71,"last_line":84,"mention_count":14,"path":"data/foundation/adjudications/083-repaired-adjudications.jsonl","role":"REFERENCE","stable_id":"D360"}
 {"first_line":329,"last_line":418,"mention_count":90,"path":"data/foundation/adjudications/083-updated-original-adjudications.jsonl","role":"REFERENCE","stable_id":"D360"}
@@ -12366,6 +12399,7 @@
 {"first_line":7,"last_line":63,"mention_count":4,"path":"统一函数总表/0395-D359-p-放大涨落-有限n联合函数.md","role":"REFERENCE","stable_id":"D360"}
 {"first_line":4,"last_line":74,"mention_count":26,"path":"统一函数总表/0396-D360-弱容斥-不可逆边界函数.md","role":"DEFINITION","stable_id":"D360"}
 {"first_line":411,"last_line":411,"mention_count":1,"path":"统一函数总表/INDEX.md","role":"REFERENCE","stable_id":"D360"}
+{"first_line":28,"last_line":28,"mention_count":1,"path":"FOUNDATION-64-PROPAGATION.jsonl","role":"REFERENCE","stable_id":"D361"}
 {"first_line":423,"last_line":423,"mention_count":1,"path":"data/foundation/adjudications/079-method-audit.jsonl","role":"REFERENCE","stable_id":"D361"}
 {"first_line":85,"last_line":88,"mention_count":4,"path":"data/foundation/adjudications/083-repaired-adjudications.jsonl","role":"REFERENCE","stable_id":"D361"}
 {"first_line":419,"last_line":482,"mention_count":64,"path":"data/foundation/adjudications/083-updated-original-adjudications.jsonl","role":"REFERENCE","stable_id":"D361"}
@@ -12881,6 +12915,7 @@
 {"first_line":435,"last_line":435,"mention_count":1,"path":"views/legacy-functions.jsonl","role":"REFERENCE","stable_id":"D373"}
 {"first_line":4,"last_line":72,"mention_count":22,"path":"统一函数总表/0409-D373-p-临界标度函数.md","role":"DEFINITION","stable_id":"D373"}
 {"first_line":424,"last_line":424,"mention_count":1,"path":"统一函数总表/INDEX.md","role":"REFERENCE","stable_id":"D373"}
+{"first_line":36,"last_line":36,"mention_count":1,"path":"FOUNDATION-64-PROPAGATION.jsonl","role":"REFERENCE","stable_id":"D374"}
 {"first_line":436,"last_line":436,"mention_count":1,"path":"data/foundation/adjudications/079-method-audit.jsonl","role":"REFERENCE","stable_id":"D374"}
 {"first_line":432,"last_line":432,"mention_count":1,"path":"data/foundation/adjudications/083-updated-original-adjudications.jsonl","role":"REFERENCE","stable_id":"D374"}
 {"first_line":121,"last_line":121,"mention_count":1,"path":"data/foundation/adjudications/084-max-decisions.jsonl","role":"REFERENCE","stable_id":"D374"}
@@ -13222,6 +13257,7 @@
 {"first_line":445,"last_line":445,"mention_count":1,"path":"views/legacy-functions.jsonl","role":"REFERENCE","stable_id":"D383"}
 {"first_line":4,"last_line":72,"mention_count":22,"path":"统一函数总表/0419-D383-逃逸速度-确定性权衡函数.md","role":"DEFINITION","stable_id":"D383"}
 {"first_line":434,"last_line":434,"mention_count":1,"path":"统一函数总表/INDEX.md","role":"REFERENCE","stable_id":"D383"}
+{"first_line":56,"last_line":56,"mention_count":1,"path":"FOUNDATION-64-PROPAGATION.jsonl","role":"REFERENCE","stable_id":"D384"}
 {"first_line":446,"last_line":446,"mention_count":1,"path":"data/foundation/adjudications/079-method-audit.jsonl","role":"REFERENCE","stable_id":"D384"}
 {"first_line":442,"last_line":484,"mention_count":2,"path":"data/foundation/adjudications/083-updated-original-adjudications.jsonl","role":"REFERENCE","stable_id":"D384"}
 {"first_line":131,"last_line":131,"mention_count":1,"path":"data/foundation/adjudications/084-max-decisions.jsonl","role":"REFERENCE","stable_id":"D384"}
@@ -13417,6 +13453,7 @@
 {"first_line":4,"last_line":74,"mention_count":22,"path":"统一函数总表/0425-D389-不归点-吸引域边界统一函数.md","role":"DEFINITION","stable_id":"D389"}
 {"first_line":19,"last_line":55,"mention_count":3,"path":"统一函数总表/0439-D403-δ_c-相变点统一函数.md","role":"REFERENCE","stable_id":"D389"}
 {"first_line":440,"last_line":454,"mention_count":2,"path":"统一函数总表/INDEX.md","role":"REFERENCE","stable_id":"D389"}
+{"first_line":18,"last_line":18,"mention_count":1,"path":"FOUNDATION-64-PROPAGATION.jsonl","role":"REFERENCE","stable_id":"D39"}
 {"first_line":111,"last_line":111,"mention_count":1,"path":"data/foundation/adjudications/079-method-audit.jsonl","role":"REFERENCE","stable_id":"D39"}
 {"first_line":99,"last_line":118,"mention_count":7,"path":"data/foundation/adjudications/083-repaired-adjudications.jsonl","role":"REFERENCE","stable_id":"D39"}
 {"first_line":108,"last_line":579,"mention_count":14,"path":"data/foundation/adjudications/083-updated-original-adjudications.jsonl","role":"REFERENCE","stable_id":"D39"}
@@ -13548,6 +13585,7 @@
 {"first_line":454,"last_line":454,"mention_count":1,"path":"views/legacy-functions.jsonl","role":"REFERENCE","stable_id":"D392"}
 {"first_line":4,"last_line":74,"mention_count":22,"path":"统一函数总表/0428-D392-不可逆-缓冲消失同步函数.md","role":"DEFINITION","stable_id":"D392"}
 {"first_line":443,"last_line":443,"mention_count":1,"path":"统一函数总表/INDEX.md","role":"REFERENCE","stable_id":"D392"}
+{"first_line":47,"last_line":47,"mention_count":1,"path":"FOUNDATION-64-PROPAGATION.jsonl","role":"REFERENCE","stable_id":"D393"}
 {"first_line":455,"last_line":455,"mention_count":1,"path":"data/foundation/adjudications/079-method-audit.jsonl","role":"REFERENCE","stable_id":"D393"}
 {"first_line":451,"last_line":451,"mention_count":1,"path":"data/foundation/adjudications/083-updated-original-adjudications.jsonl","role":"REFERENCE","stable_id":"D393"}
 {"first_line":140,"last_line":140,"mention_count":1,"path":"data/foundation/adjudications/084-max-decisions.jsonl","role":"REFERENCE","stable_id":"D393"}
@@ -15211,6 +15249,7 @@
 {"first_line":33,"last_line":33,"mention_count":1,"path":"统一函数总表/0518-D520-元竞争动力学函数(抽象版).md","role":"REFERENCE","stable_id":"D464"}
 {"first_line":477,"last_line":483,"mention_count":5,"path":"统一函数总表/INDEX.md","role":"REFERENCE","stable_id":"D464"}
 {"first_line":29,"last_line":74,"mention_count":4,"path":"统一案例总表/0562-C-567-科举制度幽灵.md","role":"REFERENCE","stable_id":"D464"}
+{"first_line":43,"last_line":43,"mention_count":1,"path":"FOUNDATION-64-PROPAGATION.jsonl","role":"REFERENCE","stable_id":"D465"}
 {"first_line":489,"last_line":489,"mention_count":1,"path":"data/foundation/adjudications/079-method-audit.jsonl","role":"REFERENCE","stable_id":"D465"}
 {"first_line":485,"last_line":540,"mention_count":2,"path":"data/foundation/adjudications/083-updated-original-adjudications.jsonl","role":"REFERENCE","stable_id":"D465"}
 {"first_line":489,"last_line":544,"mention_count":2,"path":"data/foundation/adjudications/classification-overrides.jsonl","role":"REFERENCE","stable_id":"D465"}
@@ -15237,6 +15276,7 @@
 {"first_line":478,"last_line":478,"mention_count":1,"path":"统一函数总表/INDEX.md","role":"REFERENCE","stable_id":"D465"}
 {"first_line":29,"last_line":74,"mention_count":4,"path":"统一案例总表/0562-C-567-科举制度幽灵.md","role":"REFERENCE","stable_id":"D465"}
 {"first_line":29,"last_line":74,"mention_count":4,"path":"统一案例总表/0567-C-572-诺基亚缓慢退化.md","role":"REFERENCE","stable_id":"D465"}
+{"first_line":51,"last_line":51,"mention_count":1,"path":"FOUNDATION-64-PROPAGATION.jsonl","role":"REFERENCE","stable_id":"D466"}
 {"first_line":490,"last_line":490,"mention_count":1,"path":"data/foundation/adjudications/079-method-audit.jsonl","role":"REFERENCE","stable_id":"D466"}
 {"first_line":486,"last_line":486,"mention_count":1,"path":"data/foundation/adjudications/083-updated-original-adjudications.jsonl","role":"REFERENCE","stable_id":"D466"}
 {"first_line":490,"last_line":490,"mention_count":1,"path":"data/foundation/adjudications/classification-overrides.jsonl","role":"REFERENCE","stable_id":"D466"}
@@ -15262,6 +15302,7 @@
 {"first_line":479,"last_line":479,"mention_count":1,"path":"统一函数总表/INDEX.md","role":"REFERENCE","stable_id":"D466"}
 {"first_line":29,"last_line":73,"mention_count":4,"path":"统一案例总表/0563-C-568-暗物质核心时间演化.md","role":"REFERENCE","stable_id":"D466"}
 {"first_line":29,"last_line":74,"mention_count":4,"path":"统一案例总表/0573-C-578-子弹星系团暗物质.md","role":"REFERENCE","stable_id":"D466"}
+{"first_line":48,"last_line":48,"mention_count":1,"path":"FOUNDATION-64-PROPAGATION.jsonl","role":"REFERENCE","stable_id":"D467"}
 {"first_line":51,"last_line":51,"mention_count":1,"path":"analysis/corpus-relation/cluster_source_briefs/C004.md","role":"REFERENCE","stable_id":"D467"}
 {"first_line":24,"last_line":24,"mention_count":1,"path":"data/collisions/20260712-disobedience-audit-056.json","role":"REFERENCE","stable_id":"D467"}
 {"first_line":491,"last_line":491,"mention_count":1,"path":"data/foundation/adjudications/079-method-audit.jsonl","role":"REFERENCE","stable_id":"D467"}
@@ -15302,6 +15343,7 @@
 {"first_line":29,"last_line":77,"mention_count":4,"path":"统一案例总表/0565-C-570-市场改革悖论.md","role":"REFERENCE","stable_id":"D467"}
 {"first_line":29,"last_line":74,"mention_count":4,"path":"统一案例总表/0567-C-572-诺基亚缓慢退化.md","role":"REFERENCE","stable_id":"D467"}
 {"first_line":29,"last_line":74,"mention_count":4,"path":"统一案例总表/0568-C-573-精细结构常数稳定性.md","role":"REFERENCE","stable_id":"D467"}
+{"first_line":49,"last_line":49,"mention_count":1,"path":"FOUNDATION-64-PROPAGATION.jsonl","role":"REFERENCE","stable_id":"D468"}
 {"first_line":492,"last_line":492,"mention_count":1,"path":"data/foundation/adjudications/079-method-audit.jsonl","role":"REFERENCE","stable_id":"D468"}
 {"first_line":60,"last_line":60,"mention_count":1,"path":"data/foundation/adjudications/083-repaired-adjudications.jsonl","role":"REFERENCE","stable_id":"D468"}
 {"first_line":217,"last_line":489,"mention_count":4,"path":"data/foundation/adjudications/083-updated-original-adjudications.jsonl","role":"REFERENCE","stable_id":"D468"}
@@ -15402,6 +15444,7 @@
 {"first_line":108,"last_line":108,"mention_count":1,"path":"统一函数总表/INDEX.md","role":"REFERENCE","stable_id":"D47"}
 {"first_line":6,"last_line":79,"mention_count":9,"path":"统一案例总表/0167-C-167-定投=门锁交替律执行(验证D47+D49).md","role":"REFERENCE","stable_id":"D47"}
 {"first_line":174,"last_line":174,"mention_count":1,"path":"统一案例总表/INDEX.md","role":"REFERENCE","stable_id":"D47"}
+{"first_line":50,"last_line":50,"mention_count":1,"path":"FOUNDATION-64-PROPAGATION.jsonl","role":"REFERENCE","stable_id":"D470"}
 {"first_line":494,"last_line":494,"mention_count":1,"path":"data/foundation/adjudications/079-method-audit.jsonl","role":"REFERENCE","stable_id":"D470"}
 {"first_line":490,"last_line":490,"mention_count":1,"path":"data/foundation/adjudications/083-updated-original-adjudications.jsonl","role":"REFERENCE","stable_id":"D470"}
 {"first_line":494,"last_line":494,"mention_count":1,"path":"data/foundation/adjudications/classification-overrides.jsonl","role":"REFERENCE","stable_id":"D470"}
@@ -15459,6 +15502,7 @@
 {"first_line":484,"last_line":484,"mention_count":1,"path":"统一函数总表/INDEX.md","role":"REFERENCE","stable_id":"D471"}
 {"first_line":29,"last_line":73,"mention_count":4,"path":"统一案例总表/0586-C-591-神经自举唤醒验证.md","role":"REFERENCE","stable_id":"D471"}
 {"first_line":29,"last_line":73,"mention_count":4,"path":"统一案例总表/0589-C-594-梦境离线生成整合验证.md","role":"REFERENCE","stable_id":"D471"}
+{"first_line":39,"last_line":39,"mention_count":1,"path":"FOUNDATION-64-PROPAGATION.jsonl","role":"REFERENCE","stable_id":"D472"}
 {"first_line":496,"last_line":496,"mention_count":1,"path":"data/foundation/adjudications/079-method-audit.jsonl","role":"REFERENCE","stable_id":"D472"}
 {"first_line":492,"last_line":492,"mention_count":1,"path":"data/foundation/adjudications/083-updated-original-adjudications.jsonl","role":"REFERENCE","stable_id":"D472"}
 {"first_line":310,"last_line":310,"mention_count":1,"path":"data/foundation/adjudications/084-max-decisions.jsonl","role":"REFERENCE","stable_id":"D472"}
@@ -15490,6 +15534,7 @@
 {"first_line":496,"last_line":496,"mention_count":1,"path":"views/legacy-functions.jsonl","role":"REFERENCE","stable_id":"D472"}
 {"first_line":4,"last_line":74,"mention_count":22,"path":"统一函数总表/0470-D472-维度坐标化边界函数.md","role":"DEFINITION","stable_id":"D472"}
 {"first_line":485,"last_line":485,"mention_count":1,"path":"统一函数总表/INDEX.md","role":"REFERENCE","stable_id":"D472"}
+{"first_line":44,"last_line":44,"mention_count":1,"path":"FOUNDATION-64-PROPAGATION.jsonl","role":"REFERENCE","stable_id":"D473"}
 {"first_line":497,"last_line":497,"mention_count":1,"path":"data/foundation/adjudications/079-method-audit.jsonl","role":"REFERENCE","stable_id":"D473"}
 {"first_line":493,"last_line":493,"mention_count":1,"path":"data/foundation/adjudications/083-updated-original-adjudications.jsonl","role":"REFERENCE","stable_id":"D473"}
 {"first_line":311,"last_line":311,"mention_count":1,"path":"data/foundation/adjudications/084-max-decisions.jsonl","role":"REFERENCE","stable_id":"D473"}
@@ -15584,6 +15629,7 @@
 {"first_line":499,"last_line":499,"mention_count":1,"path":"views/legacy-functions.jsonl","role":"REFERENCE","stable_id":"D475"}
 {"first_line":4,"last_line":74,"mention_count":22,"path":"统一函数总表/0473-D475-形式系统外推边界函数.md","role":"DEFINITION","stable_id":"D475"}
 {"first_line":488,"last_line":488,"mention_count":1,"path":"统一函数总表/INDEX.md","role":"REFERENCE","stable_id":"D475"}
+{"first_line":29,"last_line":29,"mention_count":1,"path":"FOUNDATION-64-PROPAGATION.jsonl","role":"REFERENCE","stable_id":"D476"}
 {"first_line":500,"last_line":500,"mention_count":1,"path":"data/foundation/adjudications/079-method-audit.jsonl","role":"REFERENCE","stable_id":"D476"}
 {"first_line":91,"last_line":96,"mention_count":6,"path":"data/foundation/adjudications/083-repaired-adjudications.jsonl","role":"REFERENCE","stable_id":"D476"}
 {"first_line":496,"last_line":535,"mention_count":36,"path":"data/foundation/adjudications/083-updated-original-adjudications.jsonl","role":"REFERENCE","stable_id":"D476"}
@@ -15662,6 +15708,7 @@
 {"first_line":41,"last_line":41,"mention_count":1,"path":"统一案例总表/0614-C-619-大脑容量空间验证.md","role":"REFERENCE","stable_id":"D476"}
 {"first_line":41,"last_line":41,"mention_count":1,"path":"统一案例总表/0615-C-620-早产5年空间验证.md","role":"REFERENCE","stable_id":"D476"}
 {"first_line":45,"last_line":45,"mention_count":1,"path":"统一案例总表/0658-C-663-密码学碰撞验证案例.md","role":"REFERENCE","stable_id":"D476"}
+{"first_line":24,"last_line":24,"mention_count":1,"path":"FOUNDATION-64-PROPAGATION.jsonl","role":"REFERENCE","stable_id":"D477"}
 {"first_line":501,"last_line":501,"mention_count":1,"path":"data/foundation/adjudications/079-method-audit.jsonl","role":"REFERENCE","stable_id":"D477"}
 {"first_line":90,"last_line":96,"mention_count":7,"path":"data/foundation/adjudications/083-repaired-adjudications.jsonl","role":"REFERENCE","stable_id":"D477"}
 {"first_line":497,"last_line":535,"mention_count":36,"path":"data/foundation/adjudications/083-updated-original-adjudications.jsonl","role":"REFERENCE","stable_id":"D477"}
@@ -15731,6 +15778,7 @@
 {"first_line":34,"last_line":34,"mention_count":1,"path":"统一函数总表/0512-D514-信息守恒函数.md","role":"REFERENCE","stable_id":"D477"}
 {"first_line":34,"last_line":34,"mention_count":1,"path":"统一函数总表/0513-D515-宇宙约束边界函数.md","role":"REFERENCE","stable_id":"D477"}
 {"first_line":490,"last_line":490,"mention_count":1,"path":"统一函数总表/INDEX.md","role":"REFERENCE","stable_id":"D477"}
+{"first_line":25,"last_line":25,"mention_count":1,"path":"FOUNDATION-64-PROPAGATION.jsonl","role":"REFERENCE","stable_id":"D478"}
 {"first_line":502,"last_line":502,"mention_count":1,"path":"data/foundation/adjudications/079-method-audit.jsonl","role":"REFERENCE","stable_id":"D478"}
 {"first_line":91,"last_line":96,"mention_count":6,"path":"data/foundation/adjudications/083-repaired-adjudications.jsonl","role":"REFERENCE","stable_id":"D478"}
 {"first_line":498,"last_line":535,"mention_count":36,"path":"data/foundation/adjudications/083-updated-original-adjudications.jsonl","role":"REFERENCE","stable_id":"D478"}
@@ -15798,6 +15846,7 @@
 {"first_line":34,"last_line":34,"mention_count":1,"path":"统一函数总表/0512-D514-信息守恒函数.md","role":"REFERENCE","stable_id":"D478"}
 {"first_line":34,"last_line":34,"mention_count":1,"path":"统一函数总表/0513-D515-宇宙约束边界函数.md","role":"REFERENCE","stable_id":"D478"}
 {"first_line":491,"last_line":491,"mention_count":1,"path":"统一函数总表/INDEX.md","role":"REFERENCE","stable_id":"D478"}
+{"first_line":19,"last_line":19,"mention_count":1,"path":"FOUNDATION-64-PROPAGATION.jsonl","role":"REFERENCE","stable_id":"D479"}
 {"first_line":503,"last_line":503,"mention_count":1,"path":"data/foundation/adjudications/079-method-audit.jsonl","role":"REFERENCE","stable_id":"D479"}
 {"first_line":91,"last_line":96,"mention_count":6,"path":"data/foundation/adjudications/083-repaired-adjudications.jsonl","role":"REFERENCE","stable_id":"D479"}
 {"first_line":499,"last_line":535,"mention_count":36,"path":"data/foundation/adjudications/083-updated-original-adjudications.jsonl","role":"REFERENCE","stable_id":"D479"}
@@ -15891,6 +15940,7 @@
 {"first_line":4,"last_line":45,"mention_count":17,"path":"统一函数总表/0097-D48-退化渗透临界触发函数.md","role":"DEFINITION","stable_id":"D48"}
 {"first_line":109,"last_line":109,"mention_count":1,"path":"统一函数总表/INDEX.md","role":"REFERENCE","stable_id":"D48"}
 {"first_line":28,"last_line":71,"mention_count":4,"path":"统一案例总表/0136-C-136-退化临界.md","role":"REFERENCE","stable_id":"D48"}
+{"first_line":20,"last_line":20,"mention_count":1,"path":"FOUNDATION-64-PROPAGATION.jsonl","role":"REFERENCE","stable_id":"D480"}
 {"first_line":504,"last_line":504,"mention_count":1,"path":"data/foundation/adjudications/079-method-audit.jsonl","role":"REFERENCE","stable_id":"D480"}
 {"first_line":91,"last_line":96,"mention_count":6,"path":"data/foundation/adjudications/083-repaired-adjudications.jsonl","role":"REFERENCE","stable_id":"D480"}
 {"first_line":500,"last_line":535,"mention_count":36,"path":"data/foundation/adjudications/083-updated-original-adjudications.jsonl","role":"REFERENCE","stable_id":"D480"}
@@ -17502,6 +17552,7 @@
 {"first_line":4,"last_line":72,"mention_count":7,"path":"统一函数总表/0519-D522-Willmore能量极小点函数.md","role":"DEFINITION","stable_id":"D522"}
 {"first_line":534,"last_line":534,"mention_count":1,"path":"统一函数总表/INDEX.md","role":"REFERENCE","stable_id":"D522"}
 {"first_line":17,"last_line":40,"mention_count":2,"path":"统一案例总表/0674-C-0679-Willmore猜想.md","role":"REFERENCE","stable_id":"D522"}
+{"first_line":53,"last_line":53,"mention_count":1,"path":"FOUNDATION-64-PROPAGATION.jsonl","role":"REFERENCE","stable_id":"D523"}
 {"first_line":546,"last_line":546,"mention_count":1,"path":"data/foundation/adjudications/079-method-audit.jsonl","role":"REFERENCE","stable_id":"D523"}
 {"first_line":542,"last_line":542,"mention_count":1,"path":"data/foundation/adjudications/083-updated-original-adjudications.jsonl","role":"REFERENCE","stable_id":"D523"}
 {"first_line":347,"last_line":347,"mention_count":1,"path":"data/foundation/adjudications/084-max-decisions.jsonl","role":"REFERENCE","stable_id":"D523"}
@@ -18133,6 +18184,7 @@
 {"first_line":563,"last_line":563,"mention_count":1,"path":"views/legacy-functions.jsonl","role":"REFERENCE","stable_id":"D540"}
 {"first_line":4,"last_line":72,"mention_count":5,"path":"统一函数总表/0537-D540-执念-逃避-逃避的逃避函数.md","role":"DEFINITION","stable_id":"D540"}
 {"first_line":552,"last_line":552,"mention_count":1,"path":"统一函数总表/INDEX.md","role":"REFERENCE","stable_id":"D540"}
+{"first_line":27,"last_line":42,"mention_count":2,"path":"FOUNDATION-64-PROPAGATION.jsonl","role":"REFERENCE","stable_id":"D541"}
 {"first_line":564,"last_line":564,"mention_count":1,"path":"data/foundation/adjudications/079-method-audit.jsonl","role":"REFERENCE","stable_id":"D541"}
 {"first_line":89,"last_line":99,"mention_count":11,"path":"data/foundation/adjudications/083-repaired-adjudications.jsonl","role":"REFERENCE","stable_id":"D541"}
 {"first_line":483,"last_line":560,"mention_count":78,"path":"data/foundation/adjudications/083-updated-original-adjudications.jsonl","role":"REFERENCE","stable_id":"D541"}
@@ -21041,6 +21093,7 @@
 {"first_line":19,"last_line":55,"mention_count":3,"path":"统一函数总表/0279-D243-感知退出权瓶颈函数.md","role":"REFERENCE","stable_id":"D9"}
 {"first_line":70,"last_line":294,"mention_count":2,"path":"统一函数总表/INDEX.md","role":"REFERENCE","stable_id":"D9"}
 {"first_line":63,"last_line":63,"mention_count":1,"path":"统一案例总表/0001-C-1-周公制礼.md","role":"REFERENCE","stable_id":"D9"}
+{"first_line":4,"last_line":4,"mention_count":1,"path":"FOUNDATION-64-PROPAGATION.jsonl","role":"REFERENCE","stable_id":"D90"}
 {"first_line":152,"last_line":152,"mention_count":1,"path":"data/foundation/adjudications/079-method-audit.jsonl","role":"REFERENCE","stable_id":"D90"}
 {"first_line":20,"last_line":59,"mention_count":12,"path":"data/foundation/adjudications/083-repaired-adjudications.jsonl","role":"REFERENCE","stable_id":"D90"}
 {"first_line":70,"last_line":240,"mention_count":83,"path":"data/foundation/adjudications/083-updated-original-adjudications.jsonl","role":"REFERENCE","stable_id":"D90"}
@@ -21171,6 +21224,7 @@
 {"first_line":42,"last_line":42,"mention_count":1,"path":"统一案例总表/0604-C-609-跑步训练σ_opt=√e收敛验证.md","role":"REFERENCE","stable_id":"D90"}
 {"first_line":43,"last_line":43,"mention_count":1,"path":"统一案例总表/0605-C-610-API成本σ_opt=√e收敛验证.md","role":"REFERENCE","stable_id":"D90"}
 {"first_line":343,"last_line":427,"mention_count":6,"path":"统一案例总表/INDEX.md","role":"REFERENCE","stable_id":"D90"}
+{"first_line":2,"last_line":2,"mention_count":1,"path":"FOUNDATION-64-PROPAGATION.jsonl","role":"REFERENCE","stable_id":"D91"}
 {"first_line":14,"last_line":412,"mention_count":3,"path":"analysis/corpus-relation/cluster_source_briefs/C000.md","role":"REFERENCE","stable_id":"D91"}
 {"first_line":153,"last_line":153,"mention_count":1,"path":"data/foundation/adjudications/079-method-audit.jsonl","role":"REFERENCE","stable_id":"D91"}
 {"first_line":30,"last_line":58,"mention_count":29,"path":"data/foundation/adjudications/083-repaired-adjudications.jsonl","role":"REFERENCE","stable_id":"D91"}
@@ -29881,6 +29935,7 @@
 {"first_line":37,"last_line":37,"mention_count":1,"path":"views/legacy-functions.jsonl","role":"REFERENCE","stable_id":"T22"}
 {"first_line":4,"last_line":74,"mention_count":22,"path":"统一函数总表/0032-T22-不可逆线完整分类.md","role":"DEFINITION","stable_id":"T22"}
 {"first_line":44,"last_line":44,"mention_count":1,"path":"统一函数总表/INDEX.md","role":"REFERENCE","stable_id":"T22"}
+{"first_line":38,"last_line":38,"mention_count":1,"path":"FOUNDATION-64-PROPAGATION.jsonl","role":"REFERENCE","stable_id":"T23"}
 {"first_line":49,"last_line":49,"mention_count":1,"path":"FOUNDATION.md","role":"REFERENCE","stable_id":"T23"}
 {"first_line":322,"last_line":466,"mention_count":3,"path":"analysis/corpus-relation/cluster_source_briefs/C000.md","role":"REFERENCE","stable_id":"T23"}
 {"first_line":38,"last_line":38,"mention_count":1,"path":"data/foundation/adjudications/079-method-audit.jsonl","role":"REFERENCE","stable_id":"T23"}
@@ -30447,6 +30502,7 @@
 {"first_line":53,"last_line":53,"mention_count":1,"path":"views/legacy-functions.jsonl","role":"REFERENCE","stable_id":"T38"}
 {"first_line":4,"last_line":74,"mention_count":22,"path":"统一函数总表/0048-T38-极值点-极小点分离定理.md","role":"DEFINITION","stable_id":"T38"}
 {"first_line":60,"last_line":60,"mention_count":1,"path":"统一函数总表/INDEX.md","role":"REFERENCE","stable_id":"T38"}
+{"first_line":9,"last_line":9,"mention_count":1,"path":"FOUNDATION-64-PROPAGATION.jsonl","role":"REFERENCE","stable_id":"T39"}
 {"first_line":54,"last_line":54,"mention_count":1,"path":"data/foundation/adjudications/079-method-audit.jsonl","role":"REFERENCE","stable_id":"T39"}
 {"first_line":1,"last_line":98,"mention_count":2,"path":"data/foundation/adjudications/083-repaired-adjudications.jsonl","role":"REFERENCE","stable_id":"T39"}
 {"first_line":51,"last_line":552,"mention_count":15,"path":"data/foundation/adjudications/083-updated-original-adjudications.jsonl","role":"REFERENCE","stable_id":"T39"}

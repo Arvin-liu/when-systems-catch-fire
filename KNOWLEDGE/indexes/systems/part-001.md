@@ -2461,6 +2461,11 @@
   - 可搜索名称：NFC-a04b9437a289ec5b / causal_identification: 250/250 PARTIAL
   - 来源：`data/discipline-projection/087-execution-report.md`
   - 依赖：—；被引用：—
+- [causal_inference_method_boundary](../../../reports/external-research/pointfire-getnote-external-verification-r1-20260813.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-15cad65cd728ae23 / causal_inference_method_boundary
+  - 来源：`reports/external-research/pointfire-getnote-external-verification-r1-20260813.jsonl`
+  - 依赖：—；被引用：—
 - [causal_relation = next(item for item in TOPOLOGY_DOC\["relations"\] if item\["relation_domain"\] == "substantive_causal_cand](../../../tests/test_change_propagation.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-526c28a208207972 / causal_relation = next(item for item in TOPOLOGY_DOC\["relations"\] if item\["relation_domain"\] == "substantive_causal_cand
@@ -2495,9 +2500,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-545c3ec17f44bc98 / CausalFabricDiff
   - 来源：`docs/architecture/multiscale-causal-fabric.md`
-  - 依赖：—；被引用：—
-- [Causality](../../../data/external-research/088-external-source-atlas-v2.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-eb3efb5151e62559 / Causality
-  - 来源：`data/external-research/088-external-source-atlas-v2.jsonl`
   - 依赖：—；被引用：—

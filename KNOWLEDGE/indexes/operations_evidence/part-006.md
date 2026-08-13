@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [require(paths\["impact_report_path"\].read_text(encoding="utf-8") == impact_report(recomputed), f"{source}: propagation impact report is stale")](../../../tools/validate_iteration_sync.py)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-95E3159469800722 / require(paths\["impact_report_path"\].read_text(encoding="utf-8") == impact_report(recomputed), f"{source}: propagation impact report is stale") / IMPLICIT-95E3159469800722
+  - 来源：`tools/validate_iteration_sync.py`
+  - 依赖：—；被引用：—
 - [require(paths\["residue_path"\].read_bytes() == serialized(expected_residue), f"{source}: propagation residue product is stale")](../../../tools/validate_iteration_sync.py)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-C1ABDBE616189BBB / require(paths\["residue_path"\].read_bytes() == serialized(expected_residue), f"{source}: propagation residue product is stale") / IMPLICIT-C1ABDBE616189BBB
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-3515848a06d23c4c / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
   - 来源：`统一案例总表/0079-C-79-收益-风险投影-网结构.md`
-  - 依赖：—；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0103-C-103-%E5%8F%8D%E5%90%91%E6%8A%95%E5%BD%B1%E8%A6%86%E7%9B%96.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-dc63e0b37ca8e57a / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
-  - 来源：`统一案例总表/0103-C-103-反向投影覆盖.md`
   - 依赖：—；被引用：—

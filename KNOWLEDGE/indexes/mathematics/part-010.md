@@ -4,6 +4,51 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [title: "Jensen-慢性消耗统一极限函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0444-D408-Jensen-%E6%85%A2%E6%80%A7%E6%B6%88%E8%80%97%E7%BB%9F%E4%B8%80%E6%9E%81%E9%99%90%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-949FA5755D5918CD / title: "Jensen-慢性消耗统一极限函数" / IMPLICIT-949FA5755D5918CD
+  - 来源：`统一函数总表/0444-D408-Jensen-慢性消耗统一极限函数.md`
+  - 依赖：—；被引用：—
+- [title: "Jensen-慢性消耗统一极限函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0444-D408-Jensen-%E6%85%A2%E6%80%A7%E6%B6%88%E8%80%97%E7%BB%9F%E4%B8%80%E6%9E%81%E9%99%90%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-e660b9d814623d0b / title: "Jensen-慢性消耗统一极限函数"
+  - 来源：`统一函数总表/0444-D408-Jensen-慢性消耗统一极限函数.md`
+  - 依赖：—；被引用：—
+- [title: "K=1-p_max=p*等价证明函数 \| M5的K=1对应正反馈恰好自持"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0452-D416-K%3D1-p_max%3Dp-%E7%AD%89%E4%BB%B7%E8%AF%81%E6%98%8E%E5%87%BD%E6%95%B0%20-%20M5%E7%9A%84K%3D1%E5%AF%B9%E5%BA%94%E6%AD%A3%E5%8F%8D%E9%A6%88%E6%81%B0%E5%A5%BD%E8%87%AA%E6%8C%81.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-021e4ab37a340b89 / title: "K=1-p_max=p*等价证明函数 \| M5的K=1对应正反馈恰好自持"
+  - 来源：`统一函数总表/0452-D416-K=1-p_max=p-等价证明函数 - M5的K=1对应正反馈恰好自持.md`
+  - 依赖：—；被引用：—
+- [title: "p*-分布形态函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0322-D286-p--%E5%88%86%E5%B8%83%E5%BD%A2%E6%80%81%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-B8D82B5F2158B94F / title: "p*-分布形态函数" / IMPLICIT-B8D82B5F2158B94F
+  - 来源：`统一函数总表/0322-D286-p--分布形态函数.md`
+  - 依赖：—；被引用：—
+- [title: "p*临界标度函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0409-D373-p-%E4%B8%B4%E7%95%8C%E6%A0%87%E5%BA%A6%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-47560747D8973DB8 / title: "p*临界标度函数" / IMPLICIT-47560747D8973DB8
+  - 来源：`统一函数总表/0409-D373-p-临界标度函数.md`
+  - 依赖：—；被引用：—
+- [title: "p*放大涨落-有限n联合函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0395-D359-p-%E6%94%BE%E5%A4%A7%E6%B6%A8%E8%90%BD-%E6%9C%89%E9%99%90n%E8%81%94%E5%90%88%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-3845A504630CC3CC / title: "p*放大涨落-有限n联合函数" / IMPLICIT-3845A504630CC3CC
+  - 来源：`统一函数总表/0395-D359-p-放大涨落-有限n联合函数.md`
+  - 依赖：—；被引用：—
+- [title: "p*敏感度函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0353-D317-p-%E6%95%8F%E6%84%9F%E5%BA%A6%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-BCEFBE2BFF47CC27 / title: "p*敏感度函数" / IMPLICIT-BCEFBE2BFF47CC27
+  - 来源：`统一函数总表/0353-D317-p-敏感度函数.md`
+  - 依赖：—；被引用：—
+- [title: "p*涨落-噪声耦合函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0381-D345-p-%E6%B6%A8%E8%90%BD-%E5%99%AA%E5%A3%B0%E8%80%A6%E5%90%88%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-7142AC9F71F58ADD / title: "p*涨落-噪声耦合函数" / IMPLICIT-7142AC9F71F58ADD
+  - 来源：`统一函数总表/0381-D345-p-涨落-噪声耦合函数.md`
+  - 依赖：—；被引用：—
+- [title: "p*涨落函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0367-D331-p-%E6%B6%A8%E8%90%BD%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-48930BEDB5CEFE3F / title: "p*涨落函数" / IMPLICIT-48930BEDB5CEFE3F
+  - 来源：`统一函数总表/0367-D331-p-涨落函数.md`
+  - 依赖：—；被引用：—
 - [title: "P_sustain空间互补函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0479-D481-P_sustain%E7%A9%BA%E9%97%B4%E4%BA%92%E8%A1%A5%E5%87%BD%E6%95%B0.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-CCB349E932DB6D82 / title: "P_sustain空间互补函数" / IMPLICIT-CCB349E932DB6D82
@@ -2458,49 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-9E28FD1281C36F2A / title: "跨系统移植成功函数" / IMPLICIT-9E28FD1281C36F2A
   - 来源：`统一函数总表/0578-D563-跨系统移植成功函数.md`
-  - 依赖：—；被引用：—
-- [title: "过分散相图函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0385-D349-%E8%BF%87%E5%88%86%E6%95%A3%E7%9B%B8%E5%9B%BE%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-196E4C750C724D44 / title: "过分散相图函数" / IMPLICIT-196E4C750C724D44
-  - 来源：`统一函数总表/0385-D349-过分散相图函数.md`
-  - 依赖：—；被引用：—
-- [title: "过渡期窗口衰减函数（新发现）"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0108-D59-%E8%BF%87%E6%B8%A1%E6%9C%9F%E7%AA%97%E5%8F%A3%E8%A1%B0%E5%87%8F%E5%87%BD%E6%95%B0%28%E6%96%B0%E5%8F%91%E7%8E%B0%29.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-B5D4EF502557F0B4 / title: "过渡期窗口衰减函数（新发现）" / IMPLICIT-B5D4EF502557F0B4
-  - 来源：`统一函数总表/0108-D59-过渡期窗口衰减函数(新发现).md`
-  - 依赖：—；被引用：—
-- [title: "退出成本-遮蔽-时间三角约束函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0487-D489-%E9%80%80%E5%87%BA%E6%88%90%E6%9C%AC-%E9%81%AE%E8%94%BD-%E6%97%B6%E9%97%B4%E4%B8%89%E8%A7%92%E7%BA%A6%E6%9D%9F%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-B66F1800AA581947 / title: "退出成本-遮蔽-时间三角约束函数" / IMPLICIT-B66F1800AA581947
-  - 来源：`统一函数总表/0487-D489-退出成本-遮蔽-时间三角约束函数.md`
-  - 依赖：—；被引用：—
-- [title: "退出权-Φ极值同构函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0492-D494-%E9%80%80%E5%87%BA%E6%9D%83-%CE%A6%E6%9E%81%E5%80%BC%E5%90%8C%E6%9E%84%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-0772A49875B306AC / title: "退出权-Φ极值同构函数" / IMPLICIT-0772A49875B306AC
-  - 来源：`统一函数总表/0492-D494-退出权-Φ极值同构函数.md`
-  - 依赖：—；被引用：—
-- [title: "退出权-Φ极值同构函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0492-D494-%E9%80%80%E5%87%BA%E6%9D%83-%CE%A6%E6%9E%81%E5%80%BC%E5%90%8C%E6%9E%84%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-fb45df484c2f34a7 / title: "退出权-Φ极值同构函数"
-  - 来源：`统一函数总表/0492-D494-退出权-Φ极值同构函数.md`
-  - 依赖：—；被引用：—
-- [title: "退出权共振函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0507-D509-%E9%80%80%E5%87%BA%E6%9D%83%E5%85%B1%E6%8C%AF%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-3BAAF438ACCB0F60 / title: "退出权共振函数" / IMPLICIT-3BAAF438ACCB0F60
-  - 来源：`统一函数总表/0507-D509-退出权共振函数.md`
-  - 依赖：—；被引用：—
-- [title: "退出权净收益函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0484-D486-%E9%80%80%E5%87%BA%E6%9D%83%E5%87%80%E6%94%B6%E7%9B%8A%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-5D43B42C9541F3EC / title: "退出权净收益函数" / IMPLICIT-5D43B42C9541F3EC
-  - 来源：`统一函数总表/0484-D486-退出权净收益函数.md`
-  - 依赖：—；被引用：—
-- [title: "退出权序贯动力学函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0480-D482-%E9%80%80%E5%87%BA%E6%9D%83%E5%BA%8F%E8%B4%AF%E5%8A%A8%E5%8A%9B%E5%AD%A6%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-3D39C7061EEEC696 / title: "退出权序贯动力学函数" / IMPLICIT-3D39C7061EEEC696
-  - 来源：`统一函数总表/0480-D482-退出权序贯动力学函数.md`
-  - 依赖：—；被引用：—
-- [title: "退出权归零函数"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0509-D511-%E9%80%80%E5%87%BA%E6%9D%83%E5%BD%92%E9%9B%B6%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-F8BCAEC12BF6CC22 / title: "退出权归零函数" / IMPLICIT-F8BCAEC12BF6CC22
-  - 来源：`统一函数总表/0509-D511-退出权归零函数.md`
   - 依赖：—；被引用：—

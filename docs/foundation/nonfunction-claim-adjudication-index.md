@@ -4,11 +4,11 @@
 
 ## 闭合摘要
 
-- 已核算跟踪文件：3612
-- 候选片段：31065
-- 规范断言：18048
+- 已核算跟踪文件：3617
+- 候选片段：31121
+- 规范断言：18104
 - 既有断言映射：678
-- 显式隔离或待决：5947
+- 显式隔离或待决：5959
 - 依赖边：5775
 - 公共表面当前越界：0
 - 活跃结论回弹：0
@@ -17,17 +17,17 @@
 
 |处置|数量|
 |---|---:|
-|ACCEPTED_AS_DEFINITION|3651|
+|ACCEPTED_AS_DEFINITION|3658|
 |ACCEPTED_AS_PROVED_MATHEMATICAL_RESULT|1|
-|HISTORICAL_ONLY|6542|
-|PENDING_EMPIRICAL_TEST|1025|
-|PENDING_LITERATURE_ADJUDICATION|1431|
-|PENDING_PROOF|1027|
-|QUARANTINED_AMBIGUOUS|2457|
+|HISTORICAL_ONLY|6573|
+|PENDING_EMPIRICAL_TEST|1026|
+|PENDING_LITERATURE_ADJUDICATION|1432|
+|PENDING_PROOF|1031|
+|QUARANTINED_AMBIGUOUS|2463|
 |REJECTED_FALSE_OR_INVALID|1|
-|RETAINED_AS_HEURISTIC|637|
+|RETAINED_AS_HEURISTIC|639|
 |RETAINED_AS_RESEARCH_HYPOTHESIS|466|
-|RETAINED_AS_STRUCTURAL_METAPHOR|801|
+|RETAINED_AS_STRUCTURAL_METAPHOR|805|
 |RETAINED_AS_TOY_MODEL|3|
 |REWRITE_AND_RETEST|1|
 |WITHDRAWN_UNSUPPORTED|5|
@@ -68,6 +68,7 @@
 |NFC-c0213a52f7f0a783|definition_audit:REQUIRES_HUMAN_REVIEW, quantifier_audit:FAIL, proof_audit:FAIL, counterexample_audit:REQUIRES_HUMAN_REVIEW, type_dimension_audit:REQUIRES_HUMAN_REVIEW, internal_external_audit:FAIL, model_class_audit:REQUIRES_HUMAN_REVIEW, evidence_audit:FAIL|0|true|
 |NFC-dea1acc06807d565|definition_audit:REQUIRES_HUMAN_REVIEW, quantifier_audit:FAIL, counterexample_audit:REQUIRES_HUMAN_REVIEW, type_dimension_audit:REQUIRES_HUMAN_REVIEW, internal_external_audit:FAIL, model_class_audit:REQUIRES_HUMAN_REVIEW, cross_domain_audit:FAIL, evidence_audit:FAIL|0|true|
 |NFC-e1bfe7e86733b708|definition_audit:REQUIRES_HUMAN_REVIEW, quantifier_audit:FAIL, counterexample_audit:REQUIRES_HUMAN_REVIEW, type_dimension_audit:REQUIRES_HUMAN_REVIEW, internal_external_audit:FAIL, model_class_audit:REQUIRES_HUMAN_REVIEW, cross_domain_audit:REQUIRES_HUMAN_REVIEW, evidence_audit:FAIL|0|true|
+|NFC-eb733cbefff9a20d|definition_audit:REQUIRES_HUMAN_REVIEW, quantifier_audit:FAIL, counterexample_audit:REQUIRES_HUMAN_REVIEW, type_dimension_audit:REQUIRES_HUMAN_REVIEW, internal_external_audit:FAIL, model_class_audit:REQUIRES_HUMAN_REVIEW, cross_domain_audit:REQUIRES_HUMAN_REVIEW, evidence_audit:FAIL|0|true|
 |NFC-ede240848c1edd24|definition_audit:REQUIRES_HUMAN_REVIEW, quantifier_audit:FAIL, counterexample_audit:REQUIRES_HUMAN_REVIEW, type_dimension_audit:REQUIRES_HUMAN_REVIEW, internal_external_audit:FAIL, model_class_audit:REQUIRES_HUMAN_REVIEW, cross_domain_audit:REQUIRES_HUMAN_REVIEW, evidence_audit:FAIL|0|true|
 |NFC-ef8d291285631441|definition_audit:REQUIRES_HUMAN_REVIEW, quantifier_audit:FAIL, proof_audit:FAIL, counterexample_audit:REQUIRES_HUMAN_REVIEW, type_dimension_audit:REQUIRES_HUMAN_REVIEW, internal_external_audit:FAIL, model_class_audit:REQUIRES_HUMAN_REVIEW, evidence_audit:FAIL|0|true|
 |NFC-f43a64cb9c84aed7|definition_audit:REQUIRES_HUMAN_REVIEW, quantifier_audit:FAIL, proof_audit:FAIL, counterexample_audit:REQUIRES_HUMAN_REVIEW, type_dimension_audit:REQUIRES_HUMAN_REVIEW, internal_external_audit:FAIL, model_class_audit:REQUIRES_HUMAN_REVIEW, evidence_audit:FAIL|0|true|
@@ -99,6 +100,7 @@
 |NFC-05b6282fd465817d|definition_audit:REQUIRES_HUMAN_REVIEW, counterexample_audit:REQUIRES_HUMAN_REVIEW, type_dimension_audit:REQUIRES_HUMAN_REVIEW, internal_external_audit:FAIL, cross_domain_audit:FAIL, evidence_audit:FAIL|0|true|
 |NFC-05c73e43b80adff0|definition_audit:REQUIRES_HUMAN_REVIEW, quantifier_audit:FAIL, counterexample_audit:REQUIRES_HUMAN_REVIEW, internal_external_audit:FAIL, model_class_audit:REQUIRES_HUMAN_REVIEW, evidence_audit:FAIL|0|true|
 |NFC-067471830a4827c8|definition_audit:REQUIRES_HUMAN_REVIEW, proof_audit:FAIL, counterexample_audit:REQUIRES_HUMAN_REVIEW, type_dimension_audit:REQUIRES_HUMAN_REVIEW, internal_external_audit:FAIL, evidence_audit:FAIL|0|true|
+|NFC-06b36d78bb272928|definition_audit:REQUIRES_HUMAN_REVIEW, counterexample_audit:REQUIRES_HUMAN_REVIEW, type_dimension_audit:REQUIRES_HUMAN_REVIEW, internal_external_audit:FAIL, cross_domain_audit:REQUIRES_HUMAN_REVIEW, evidence_audit:FAIL|0|true|
 |NFC-0719ff8622149c4c|definition_audit:REQUIRES_HUMAN_REVIEW, counterexample_audit:REQUIRES_HUMAN_REVIEW, type_dimension_audit:REQUIRES_HUMAN_REVIEW, internal_external_audit:FAIL, cross_domain_audit:REQUIRES_HUMAN_REVIEW, evidence_audit:FAIL|0|true|
 |NFC-0788cfec6f261418|definition_audit:REQUIRES_HUMAN_REVIEW, quantifier_audit:FAIL, counterexample_audit:REQUIRES_HUMAN_REVIEW, type_dimension_audit:REQUIRES_HUMAN_REVIEW, model_class_audit:REQUIRES_HUMAN_REVIEW, cross_domain_audit:REQUIRES_HUMAN_REVIEW|0|true|
 |NFC-07d33417cea253f7|definition_audit:REQUIRES_HUMAN_REVIEW, proof_audit:FAIL, counterexample_audit:REQUIRES_HUMAN_REVIEW, type_dimension_audit:REQUIRES_HUMAN_REVIEW, internal_external_audit:FAIL, evidence_audit:FAIL|0|true|
@@ -114,8 +116,6 @@
 |NFC-0e0dba2f2ea06f66|definition_audit:REQUIRES_HUMAN_REVIEW, proof_audit:FAIL, counterexample_audit:REQUIRES_HUMAN_REVIEW, type_dimension_audit:REQUIRES_HUMAN_REVIEW, internal_external_audit:FAIL, evidence_audit:FAIL|0|true|
 |NFC-0e4d1f76c2c781ec|definition_audit:REQUIRES_HUMAN_REVIEW, counterexample_audit:REQUIRES_HUMAN_REVIEW, type_dimension_audit:REQUIRES_HUMAN_REVIEW, internal_external_audit:FAIL, cross_domain_audit:REQUIRES_HUMAN_REVIEW, evidence_audit:FAIL|0|true|
 |NFC-0e5493d7043b1ee9|definition_audit:REQUIRES_HUMAN_REVIEW, quantifier_audit:FAIL, counterexample_audit:REQUIRES_HUMAN_REVIEW, type_dimension_audit:REQUIRES_HUMAN_REVIEW, model_class_audit:REQUIRES_HUMAN_REVIEW, cross_domain_audit:FAIL|0|true|
-|NFC-0f691ce96b1a769d|definition_audit:REQUIRES_HUMAN_REVIEW, quantifier_audit:FAIL, counterexample_audit:REQUIRES_HUMAN_REVIEW, internal_external_audit:FAIL, model_class_audit:REQUIRES_HUMAN_REVIEW, evidence_audit:FAIL|0|true|
-|NFC-1013abf2c5e34da7|definition_audit:REQUIRES_HUMAN_REVIEW, quantifier_audit:FAIL, counterexample_audit:REQUIRES_HUMAN_REVIEW, internal_external_audit:FAIL, model_class_audit:REQUIRES_HUMAN_REVIEW, evidence_audit:FAIL|0|true|
 
 ## 权威边界
 

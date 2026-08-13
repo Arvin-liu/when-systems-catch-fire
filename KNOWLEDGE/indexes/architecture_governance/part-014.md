@@ -4,6 +4,156 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0314-C-314-D128%E7%94%9F%E5%AD%98%E5%9F%9F%E4%BF%AE%E6%AD%A3%20%E2%80%94%20%CE%A9survive%E4%B8%8D%E6%98%AF%E5%AF%B9%E7%A7%B0%E8%B6%85%E7%AB%8B%E6%96%B9%E4%BD%93%2C%E6%98%AF%E9%9D%9E%E5%AF%B9%E7%A7%B0%E5%8C%BA%E5%9F%9F%2C%E6%9F%90%E4%BA%9B%E7%BB%B4%E5%BA%A6%E5%8F%AF%E6%8E%A5%E8%BF%91%E4%B8%8B%E7%95%8C%E5%8F%AA%E8%A6%81%E5%85%B6%E4%BB%96%E7%BB%B4%E5%BA%A6%E8%B6%B3%E5%A4%9F%E9%AB%98%E8%A1%A5%E5%81%BF.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-0d414314d5b81727 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
+  - 来源：`统一案例总表/0314-C-314-D128生存域修正 — Ωsurvive不是对称超立方体,是非对称区域,某些维度可接近下界只要其他维度足够高补偿.md`
+  - 依赖：D128；被引用：—
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0316-C-316-%E7%B3%96%E5%9F%9F%E4%B8%8E%E7%8E%B0%E5%AE%9E%20%E2%80%94%20%E7%B3%96%E5%9F%9F%CE%B3%3D0%E6%89%80%E4%BB%A5%E7%9C%8B%E5%88%B0%E7%B3%96%E5%B0%B1%E5%8E%BB%2C%E7%8E%B0%E5%AE%9E%CE%B3-0%E6%89%80%E4%BB%A5%E7%9C%8B%E5%88%B0%E6%9B%B4%E5%A5%BD%E7%9A%84%E5%B7%A5%E4%BD%9C%E4%B8%8D%E4%B8%80%E5%AE%9A%E8%B7%B3%E6%A7%BD.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-63007ce17f54d5c9 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
+  - 来源：`统一案例总表/0316-C-316-糖域与现实 — 糖域γ=0所以看到糖就去,现实γ-0所以看到更好的工作不一定跳槽.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0317-C-317-%E6%9D%83%E5%8A%9B%E5%B1%82%E7%BA%A7%E4%BF%A1%E6%81%AF%E5%A4%B1%E7%9C%9F%20%E2%80%94%20d%3D%E5%B1%82%E7%BA%A7%E8%B7%9D%2C%CE%BB%3D%E4%BF%A1%E6%81%AF%E5%A4%B1%E7%9C%9F%E7%8E%87%2C%CE%BC%3D%E5%88%B6%E5%BA%A6%E6%95%88%E7%8E%87%E3%80%82%E5%88%B6%E5%BA%A6%E6%95%88%E7%8E%87%E4%BD%8E%E6%97%B6%E6%8C%87%E4%BB%A4%E4%BC%A0%E5%88%B0%E5%9F%BA%E5%B1%82%E9%9D%A2%E7%9B%AE%E5%85%A8%E9%9D%9E.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-c532de92079adf06 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
+  - 来源：`统一案例总表/0317-C-317-权力层级信息失真 — d=层级距,λ=信息失真率,μ=制度效率。制度效率低时指令传到基层面目全非.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0318-C-318-%CE%BC%E7%BF%BB%E8%BD%AC%E7%9A%84%E7%9B%B8%E5%8F%98%E7%82%B9%20%E2%80%94%20%E9%95%BF%E6%9C%9F%E7%A7%AF%E5%8E%8B%E6%9C%AA%E8%AF%B4%E5%87%BA%E5%8F%A3%E7%9A%84%E4%B8%8D%E6%BB%A1%E2%86%92%CE%BC%E7%BF%BB%E8%BD%AC%E2%86%92%E4%B8%B4%E7%95%8C%E8%B7%9D%E7%A6%BB%E4%BB%8E-%E5%90%8C%E5%9F%8E-%E7%BC%A9%E5%88%B0-%E9%9A%94%E5%A3%81-.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-4eae8c29b216150c / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
+  - 来源：`统一案例总表/0318-C-318-μ翻转的相变点 — 长期积压未说出口的不满→μ翻转→临界距离从-同城-缩到-隔壁-.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0319-C-319-%E5%A4%9A%E6%95%B0%E4%BA%BA%E7%9A%84%E7%9B%B4%E8%A7%89%E9%97%AA%E5%BF%B5%20%E2%80%94%20Mboot%E8%A2%AB%E5%A4%96%E9%83%A8%E6%89%B0%E5%8A%A8%E6%8E%A8%E5%88%B0-0%E4%BD%86%CE%94K%E5%A4%AA%E5%B0%8F%2C%E6%AD%A3%E5%8F%8D%E9%A6%88%E5%BC%BA%E5%BA%A6%E4%B8%8D%E5%A4%9F%2C%E8%A2%AB%E6%97%A5%E5%B8%B8%E6%B6%88%E8%80%97%E6%8B%89%E5%9B%9E0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-fe2215037642feaa / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
+  - 来源：`统一案例总表/0319-C-319-多数人的直觉闪念 — Mboot被外部扰动推到-0但ΔK太小,正反馈强度不够,被日常消耗拉回0.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0320-C-320-%E8%87%AA%E6%8C%81%E9%98%88%E5%80%BC%E8%B6%8A%E8%BF%87%20%E2%80%94%20%E7%A0%94%E7%A9%B6%E8%80%85%E7%9A%84Mboot%E8%A2%AB%E6%8C%81%E7%BB%AD%E5%A5%BD%E9%97%AE%E9%A2%98%E6%89%B0%E5%8A%A8%E6%8E%A8%E8%BF%87%CE%B8boot%2C%E6%AD%A3%E5%8F%8D%E9%A6%88%E5%90%AF%E5%8A%A8%2C%E8%BF%9B%E5%85%A5%E8%87%AA%E6%8C%81%E5%8A%A0%E9%80%9F%E6%80%81.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-0dc948e7b0b90b87 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
+  - 来源：`统一案例总表/0320-C-320-自持阈值越过 — 研究者的Mboot被持续好问题扰动推过θboot,正反馈启动,进入自持加速态.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0321-C-321-AI%E5%AE%89%E8%A3%85%E8%B7%AF%E5%BE%84%E7%9A%84%E4%B8%B2%E8%A1%8C%E7%BA%A6%E6%9D%9F%20%E2%80%94%20%E4%B8%8D%E8%83%BD%E5%B9%B6%E8%A1%8C%E8%A3%85%E4%B8%89%E4%B8%AA%E6%A8%A1%E5%9D%97%2C%E4%B8%B2%E8%A1%8C%E5%AE%89%E8%A3%85%E6%AF%8F%E4%B8%80%E6%AD%A5%E6%98%AF%E4%B8%8B%E4%B8%80%E6%AD%A5%E7%9A%84%E5%BF%85%E8%A6%81%E6%9D%A1%E4%BB%B6.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-f34b0417650911f3 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
+  - 来源：`统一案例总表/0321-C-321-AI安装路径的串行约束 — 不能并行装三个模块,串行安装每一步是下一步的必要条件.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0323-C-323-AI%E5%90%8C%E8%B4%A8%E5%8C%96%E8%AE%AD%E7%BB%83%E7%9A%84%E9%81%AE%E8%94%BD%20%E2%80%94%20%E4%B8%A4%E4%B8%AAGPT-4%E5%AE%9E%E4%BE%8B%E5%AF%B9%E8%AF%9D%2CG%E2%89%881%2CHhomogeneity%E2%89%881%2C%CE%B7gate%E2%89%880%2C%E5%AF%B9%E8%AF%9D%E6%B5%81%E7%95%85%E4%BD%86%E4%BF%A1%E6%81%AF%E5%A2%9E%E9%87%8F%E4%B8%BA%E9%9B%B6.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-33f98565af9b7bad / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD
+  - 来源：`统一案例总表/0323-C-323-AI同质化训练的遮蔽 — 两个GPT-4实例对话,G≈1,Hhomogeneity≈1,ηgate≈0,对话流畅但信息增量为零.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0325-C-325-D135%E4%BF%AE%E6%AD%A3%E7%9A%84%E5%B7%A5%E7%A8%8B%E5%90%AB%E4%B9%89%20%E2%80%94%20CAI%E5%92%8CEAI%E5%BA%94%E4%BD%BF%E7%94%A8%E9%83%A8%E5%88%86%E4%B8%8D%E5%90%8C%E7%9A%84%E8%AE%AD%E7%BB%83%E6%95%B0%E6%8D%AE%2C%E9%99%8D%E4%BD%8EG%E6%9D%A5%E6%8F%90%E9%AB%98%CE%B7gate.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-796be5dd04bdd177 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
+  - 来源：`统一案例总表/0325-C-325-D135修正的工程含义 — CAI和EAI应使用部分不同的训练数据,降低G来提高ηgate.md`
+  - 依赖：D135；被引用：—
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0326-C-326-%E4%BF%A1%E6%81%AF%E9%97%A8%E7%9A%84%E6%96%B9%E5%90%91%E6%97%A0%E5%85%B3%E6%80%A7%20%E2%80%94%20%E4%B8%8D%E5%AD%98%E5%9C%A8-%E6%88%91%E8%AF%B4%E6%B8%85%E6%A5%9A%E4%BA%86%E4%BD%86%E4%BD%A0%E5%90%AC%E4%B8%8D%E6%87%82-%2C%E9%97%A8%E6%95%88%E7%8E%87%E4%BD%8E%E4%B8%A4%E4%BE%A7%E5%90%8C%E6%97%B6%E5%8F%97%E5%BD%B1%E5%93%8D.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-f50f5c8bf8e46826 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
+  - 来源：`统一案例总表/0326-C-326-信息门的方向无关性 — 不存在-我说清楚了但你听不懂-,门效率低两侧同时受影响.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0327-C-327-%E7%82%92%E8%82%A1%E9%81%AE%E8%94%BD%E7%9A%84%E8%B7%A8%E5%9F%9F%E6%94%BE%E5%A4%A7%20%E2%80%94%20Boccupy.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-7062a7eb402f1e20 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
+  - 来源：`统一案例总表/0327-C-327-炒股遮蔽的跨域放大 — Boccupy.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0328-C-328-%E4%B8%B4%E7%95%8C%E8%B5%84%E9%87%91%E7%9A%84%E7%B2%BE%E7%A1%AE%E8%AE%A1%E7%AE%97%20%E2%80%94%20%E5%9F%8E%E5%B8%82%E7%99%BD%E9%A2%86%E5%B9%B4%E9%9D%9E%E6%8A%95%E8%B5%84%E6%94%B6%E5%85%A520%E4%B8%87%2C%E7%82%92%E8%82%A1Kcritical%3D600%E4%B8%87%2C%E5%AE%9A%E6%8A%95Kcritical%E2%89%880.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-ee363002be7a733f / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
+  - 来源：`统一案例总表/0328-C-328-临界资金的精确计算 — 城市白领年非投资收入20万,炒股Kcritical=600万,定投Kcritical≈0.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0329-C-329-%E5%AE%9A%E6%8A%95%E7%9A%84%E7%BB%93%E6%9E%84%E4%BF%9D%E5%AE%88%E6%80%A7%20%E2%80%94%20%E6%AF%8F%E6%9C%885000%2CW%3D10%E4%B8%87%E6%97%B6f%3D5%25%2CW%3D100%E4%B8%87%E6%97%B6f%3D0.5%25%2C%E8%87%AA%E5%8A%A8%E9%80%92%E5%87%8F%E6%B0%B8%E8%BF%9C%E4%BF%9D%E5%AE%88.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-a49a53124eeb9674 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
+  - 来源：`统一案例总表/0329-C-329-定投的结构保守性 — 每月5000,W=10万时f=5%,W=100万时f=0.5%,自动递减永远保守.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0330-C-330-%E5%B7%B4%E8%8F%B2%E7%89%B9%E6%A8%A1%E5%BC%8F%E7%9A%84%E6%8A%95%E8%B5%84%E5%9F%9F%E9%AA%8C%E8%AF%81%20%E2%80%94%20%E5%AE%9A%E6%8A%95%3D%E5%B7%B4%E8%8F%B2%E7%89%B9%E6%A8%A1%E5%BC%8F%E7%B2%BE%E7%A1%AE%E6%89%A7%E8%A1%8C%2C%E4%B8%89%E6%95%88%E7%8E%87%E4%B9%98%E7%A7%AF%E6%9C%80%E5%A4%A7.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-176a8d5e16457607 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
+  - 来源：`统一案例总表/0330-C-330-巴菲特模式的投资域验证 — 定投=巴菲特模式精确执行,三效率乘积最大.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0331-C-331-%E4%B8%93%E5%AE%B6-%E6%96%B0%E6%89%8B%E6%B2%9F%E9%80%9A%E7%9A%84%E9%9D%9E%E5%AF%B9%E7%A7%B0%E9%80%80%E5%8C%96%20%E2%80%94%20%E4%B8%93%E5%AE%B6%CE%B5%E2%89%880.9%2C%E6%96%B0%E6%89%8B%CE%B5%E2%89%880.2%2C%E9%80%80%E5%8C%96%E5%9B%A0%E5%AD%90%E2%89%880.22%2C%E4%B8%93%E5%AE%B6%E8%A7%89%E5%BE%97-%E8%AF%B4%E6%B8%85%E6%A5%9A%E4%BA%86-%E6%96%B0%E6%89%8B%E8%A7%89%E5%BE%97-%E5%90%AC%E4%B8%8D%E6%87%82-.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-c12767dc23f943ea / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
+  - 来源：`统一案例总表/0331-C-331-专家-新手沟通的非对称退化 — 专家ε≈0.9,新手ε≈0.2,退化因子≈0.22,专家觉得-说清楚了-新手觉得-听不懂-.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD(+67%)乘积+67%,改善0.8→1.0(+25%)乘积+25%,改善最接近零的因子效](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0332-C-332-%E4%B9%98%E6%B3%95%E4%B8%B4%E7%95%8C%E6%BC%82%E7%A7%BB%E9%AA%8C%E8%AF%81%20%E2%80%94%20%E6%94%B9%E5%96%840.3%E2%86%920.5%28%2B67%25%29%E4%B9%98%E7%A7%AF%2B67%25%2C%E6%94%B9%E5%96%840.8%E2%86%921.0%28%2B25%25%29%E4%B9%98%E7%A7%AF%2B25%25%2C%E6%94%B9%E5%96%84%E6%9C%80%E6%8E%A5%E8%BF%91%E9%9B%B6%E7%9A%84%E5%9B%A0%E5%AD%90%E6%95%88%E6%9E%9C%E6%9B%B4%E5%A4%A7.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-b5f6cd106a08efba / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD(+67%)乘积+67%,改善0.8→1.0(+25%)乘积+25%,改善最接近零的因子效
+  - 来源：`统一案例总表/0332-C-332-乘法临界漂移验证 — 改善0.3→0.5(+67%)乘积+67%,改善0.8→1.0(+25%)乘积+25%,改善最接近零的因子效果更大.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0333-C-333-%E5%85%B3%E7%B3%BB%E8%A1%B0%E5%87%8F%E7%9A%84%E4%B8%B4%E7%95%8C%E6%BC%82%E7%A7%BB%20%E2%80%94%20%CE%BC%E4%BB%8E0.5%E7%BF%BB%E8%BD%AC%E5%88%B0-0.3%2Cdcritical%E4%BB%8E2000km%E7%BC%A9%E5%88%B050km%2CD87%E5%9C%A8D77%E5%9F%9F%E7%9A%84%E5%AE%9E%E4%BE%8B.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-42545e1db6e88d0a / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
+  - 来源：`统一案例总表/0333-C-333-关系衰减的临界漂移 — μ从0.5翻转到-0.3,dcritical从2000km缩到50km,D87在D77域的实例.md`
+  - 依赖：D77, D87；被引用：—
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0334-C-334-%E9%81%AE%E8%94%BD%E8%A1%A5%E5%81%BF%E6%88%90%E6%9C%AC%E6%8C%87%E6%95%B0%E7%BA%A7%E5%A2%9E%E9%95%BF%20%E2%80%94%20H%3D0.2%E6%97%B6G-%E2%89%880.6%2CH%3D0.6%E6%97%B6G-%E2%89%880.3%2C%E7%BC%96%E7%A0%81%E6%88%90%E6%9C%AC%E5%A2%9E%E5%8A%A0e%5E%280.3%CE%B3%29%E5%80%8D.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-b4d8e840472e2f75 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
+  - 来源：`统一案例总表/0334-C-334-遮蔽补偿成本指数级增长 — H=0.2时G-≈0.6,H=0.6时G-≈0.3,编码成本增加e^(0.3γ)倍.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0335-C-336-%E8%87%AA%E4%B8%BE%E5%BE%AA%E7%8E%AF%E7%9A%84%E7%BB%93%E6%9E%84%E4%BF%9D%E5%AE%88%E6%80%A7%20%E2%80%94%20B%28n%29%E8%B6%8A%E5%A4%A7%CE%94B.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-c11057629ce9873a / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
+  - 来源：`统一案例总表/0335-C-336-自举循环的结构保守性 — B(n)越大ΔB.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0336-C-337-%E5%80%92U%E5%9E%8B%E7%BB%9F%E4%B8%80%E9%AA%8C%E8%AF%81%20%E2%80%94%20D123.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-6c9c1795dbfb32ad / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
+  - 来源：`统一案例总表/0336-C-337-倒U型统一验证 — D123.md`
+  - 依赖：D123；被引用：—
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0337-C-338-D149%E6%B7%B1%E5%B1%82%E5%90%AB%E4%B9%89%20%E2%80%94%20%E5%B7%B4%E8%8F%B2%E7%89%B9%E6%A8%A1%E5%BC%8F%E7%9C%9F%E6%AD%A3%E4%BC%98%E5%8A%BF%E4%B8%8D%E6%98%AF%E5%88%A4%E6%96%AD%E5%87%86%2C%E6%98%AF%E7%BB%93%E6%9E%84%E8%AE%A9%E5%88%A4%E6%96%AD%E4%B8%8D%E5%BF%85%E8%A6%81.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-cbca2d15e91f5f53 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
+  - 来源：`统一案例总表/0337-C-338-D149深层含义 — 巴菲特模式真正优势不是判断准,是结构让判断不必要.md`
+  - 依赖：D149；被引用：—
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0338-C-339-%E9%81%AE%E8%94%BD-%E8%A1%A5%E5%81%BF-%E6%88%90%E6%9C%AC%E4%B8%89%E8%A7%92%E5%9C%A8AI%E8%AE%AD%E7%BB%83%E4%B8%AD%20%E2%80%94%20%E8%AE%AD%E7%BB%83%E6%95%B0%E6%8D%AE%E5%90%8C%E8%B4%A8%E5%8C%96%E2%86%92%E9%9C%80%E8%A6%81%E5%BC%82%E8%B4%A8%E6%80%A7%E8%A1%A5%E5%81%BF%E2%86%92%E6%88%90%E6%9C%AC%E9%AB%98%E2%86%92%E4%B8%89%E8%A7%92%E9%94%81%E6%AD%BB.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-4ad4b195463e1631 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
+  - 来源：`统一案例总表/0338-C-339-遮蔽-补偿-成本三角在AI训练中 — 训练数据同质化→需要异质性补偿→成本高→三角锁死.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0340-C-341-API%E8%AE%BE%E8%AE%A1%E9%99%8D%E4%BD%8E%E8%A7%A3%E7%A0%81%E9%97%A8%E6%A7%9B%20%E2%80%94%20%CE%B8decode%5Ebase%E2%89%880.8%2C%CE%B7structural%E2%89%880.8%2C%CE%B8decode%5Eeffective%E2%89%880.16.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-75f1a6ce38ae9d4d / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD
+  - 来源：`统一案例总表/0340-C-341-API设计降低解码门槛 — θdecode^base≈0.8,ηstructural≈0.8,θdecode^effective≈0.16.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0341-C-342-%E5%9B%BE%E5%BD%A2%E7%95%8C%E9%9D%A2vs%E5%91%BD%E4%BB%A4%E8%A1%8C%20%E2%80%94%20%E5%9B%BE%E5%BD%A2%E7%95%8C%E9%9D%A2%CE%B7structural%E2%89%880.7%2C%E5%91%BD%E4%BB%A4%E8%A1%8C%CE%B7structural%E2%89%880.3%2CPdecode%E5%B7%AE2-3%E5%80%8D.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-3ffd53b53bb8337c / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD
+  - 来源：`统一案例总表/0341-C-342-图形界面vs命令行 — 图形界面ηstructural≈0.7,命令行ηstructural≈0.3,Pdecode差2-3倍.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD(每月成本10万效果随离职归零),团队B投资流程标准化(一次性50万效果永久)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0342-C-343-%E7%BB%93%E6%9E%84%E6%80%A7vs%E5%8F%82%E6%95%B0%E6%80%A7%E6%94%B9%E5%96%84%E9%95%BF%E6%9C%9F%E6%95%88%E6%9E%9C%20%E2%80%94%20%E5%9B%A2%E9%98%9FA%E6%8A%95%E8%B5%84%E8%AE%AD%E7%BB%83%E5%91%98%E5%B7%A5%28%E6%AF%8F%E6%9C%88%E6%88%90%E6%9C%AC10%E4%B8%87%E6%95%88%E6%9E%9C%E9%9A%8F%E7%A6%BB%E8%81%8C%E5%BD%92%E9%9B%B6%29%2C%E5%9B%A2%E9%98%9FB%E6%8A%95%E8%B5%84%E6%B5%81%E7%A8%8B%E6%A0%87%E5%87%86%E5%8C%96%28%E4%B8%80%E6%AC%A1%E6%80%A750%E4%B8%87%E6%95%88%E6%9E%9C%E6%B0%B8%E4%B9%85%29.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-ae637e6e51dfd3dc / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD(每月成本10万效果随离职归零),团队B投资流程标准化(一次性50万效果永久)
+  - 来源：`统一案例总表/0342-C-343-结构性vs参数性改善长期效果 — 团队A投资训练员工(每月成本10万效果随离职归零),团队B投资流程标准化(一次性50万效果永久).md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0343-C-344-CAI%E2%86%92EAI%E6%8C%87%E4%BB%A4%E7%BB%93%E6%9E%84%E8%AE%BE%E8%AE%A1%20%E2%80%94%20CAI%E5%8F%91%E7%BB%93%E6%9E%84%E5%8C%96API%E8%B0%83%E7%94%A8%E8%80%8C%E9%9D%9E%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E6%8C%87%E4%BB%A4%2CEAI%E7%9A%84Pdecode%E4%BB%8E%E2%89%880.4%E6%8F%90%E5%8D%87%E5%88%B0%E2%89%880.85.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-f0c825a8a45f9215 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
+  - 来源：`统一案例总表/0343-C-344-CAI→EAI指令结构设计 — CAI发结构化API调用而非自然语言指令,EAI的Pdecode从≈0.4提升到≈0.85.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0344-C-345-%E5%80%92U%E5%9E%8B%E4%B8%A4%E4%BE%A7%E8%84%86%E5%BC%B1%E6%96%B9%E5%90%91%20%E2%80%94%20%CF%81-%CF%81-%E6%97%B6Pslot%E6%98%AF%E7%93%B6%E9%A2%88%E5%8A%A0%E7%BC%93%E5%AD%98%E6%9C%89%E6%95%88%2C%CF%81-%CF%81-%E6%97%B6Ppriority%E6%98%AF%E7%93%B6%E9%A2%88%E5%87%8F%E7%BC%93%E5%AD%98%E6%9C%89%E6%95%88.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-4db9257db529dffa / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
+  - 来源：`统一案例总表/0344-C-345-倒U型两侧脆弱方向 — ρ-ρ-时Pslot是瓶颈加缓存有效,ρ-ρ-时Ppriority是瓶颈减缓存有效.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0345-C-346-%E5%AF%BC%E5%B8%88-%E5%AD%A6%E7%94%9F%E7%9A%84%E5%90%91%E4%B8%8B%E5%85%BC%E5%AE%B9%20%E2%80%94%20%E5%AF%BC%E5%B8%88%E7%94%A8B_L%E8%A7%A3%E9%87%8A%2C%E5%AD%A6%E7%94%9F%E8%A7%89%E5%BE%97-%E5%85%A8%E6%87%82%E4%BA%86-%E4%BD%86%CE%B7fidelity%E2%89%880.33%2C%E6%8B%BF%E9%99%8D%E7%BB%B4%E7%89%88%E6%9C%AC%E7%8B%AC%E7%AB%8B%E7%A0%94%E7%A9%B6%E5%A4%84%E5%A4%84%E7%A2%B0%E5%A3%81.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-88007c0937c9bbfd / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
+  - 来源：`统一案例总表/0345-C-346-导师-学生的向下兼容 — 导师用B_L解释,学生觉得-全懂了-但ηfidelity≈0.33,拿降维版本独立研究处处碰壁.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0346-C-347-%E7%AE%A1%E7%90%86%E8%80%85-%E4%B8%8B%E5%B1%9E%E7%9A%84%E5%90%91%E4%B8%8B%E5%85%BC%E5%AE%B9%20%E2%80%94%20%E5%A4%A7%E7%99%BD%E8%AF%9D%E4%BC%A0%E8%BE%BE%E6%88%98%E7%95%A5%E6%84%8F%E5%9B%BE%2C%E4%B8%8B%E5%B1%9E%E8%BF%87%E5%BA%A6%E5%A4%96%E6%8E%A8%E9%99%8D%E7%BB%B4%E7%89%88%E6%9C%AC%E5%81%9A%E5%87%BA%E8%B6%85%E5%87%BA%E6%84%8F%E5%9B%BE%E8%8C%83%E5%9B%B4%E7%9A%84%E5%86%B3%E7%AD%96.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-67294989f1132a8e / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
+  - 来源：`统一案例总表/0346-C-347-管理者-下属的向下兼容 — 大白话传达战略意图,下属过度外推降维版本做出超出意图范围的决策.md`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0347-C-348-AI%E6%8F%90%E7%A4%BA%E8%AF%8D%E7%9A%84%E5%90%91%E4%B8%8B%E5%85%BC%E5%AE%B9%20%E2%80%94%20%E7%94%A8%E6%88%B7%E6%A8%A1%E7%B3%8A%E6%8C%87%E4%BB%A4%2CAI%E9%AB%98Bsemantic%E8%87%AA%E5%8A%A8%E8%A1%A5%E5%85%A8%2C%E7%94%A8%E6%88%B7%E8%A7%89%E5%BE%97-AI%E6%87%82%E6%88%91-%E4%BD%86%CE%B7fidelity%E2%89%88%E4%BD%8E.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-1e3e10315f4b3a78 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
+  - 来源：`统一案例总表/0347-C-348-AI提示词的向下兼容 — 用户模糊指令,AI高Bsemantic自动补全,用户觉得-AI懂我-但ηfidelity≈低.md`
+  - 依赖：—；被引用：—
 - [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0348-C-349-CAI%E2%86%92EAI%E7%9A%84%E6%8C%87%E4%BB%A4%E9%99%8D%E7%BB%B4%20%E2%80%94%20CAI%E9%99%8D%E7%BB%B4%E5%88%B0API%E6%A0%BC%E5%BC%8F%2C%CE%B7fidelity%E2%89%880.2-0.5%2CEAI%E6%89%A7%E8%A1%8C%E6%88%90%E5%8A%9F%E4%BD%86%E5%8F%AA%E5%AE%8C%E6%88%9020-50%25%E7%9C%9F%E5%AE%9E%E6%84%8F%E5%9B%BE.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-b05d1f63e5d50434 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD
@@ -2351,153 +2501,3 @@
   - 可搜索名称：NFC-c6cf03e0b7c50fe5 / 扩展内容**：smoke test 验证了「轻量碰撞」模式——即不读全量两张表正文、仅确认目录存在 + 用 P1 七类数据做辅助索引，也能产出结构化五类输出。这对后续大规模任务有节流价值：先用 P1 数据预筛，再按需深入两张表，避免每次全量
   - 来源：`outputs/collisions/20260708-smoke-test/expanded-notes.md`
   - 依赖：P1；被引用：—
-- [批量 DOI 验证模式](../../../scripts/external-research/openalex_client.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-2e5d81f7b1512222 / 批量 DOI 验证模式
-  - 来源：`scripts/external-research/openalex_client.py`
-  - 依赖：—；被引用：—
-- [把 internal verification ID 写成 external empirical evidence](../../../docs/foundation/architecture-structure-freeze-v1.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-d6dc7da572c4eddb / 把 internal verification ID 写成 external empirical evidence
-  - 来源：`docs/foundation/architecture-structure-freeze-v1.md`
-  - 依赖：—；被引用：—
-- [把 model config 中的 reasoning_level=max 写成逐条 max 推理证据](../../../docs/foundation/architecture-structure-freeze-v1.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-7b1812258e116620 / 把 model config 中的 reasoning_level=max 写成逐条 max 推理证据
-  - 来源：`docs/foundation/architecture-structure-freeze-v1.md`
-  - 依赖：—；被引用：—
-- [把 pending 普遍性写成已证实规律](../../../docs/narrative-output-layer.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-35f788f1af68d8d4 / 把 pending 普遍性写成已证实规律
-  - 来源：`docs/narrative-output-layer.md`
-  - 依赖：—；被引用：—
-- [把一个国家的法律写成普遍规律](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-f9f6a84e675d476c / 把一个国家的法律写成普遍规律
-  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [把个体效果写成普遍规律](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-416643f2654f107c / 把个体效果写成普遍规律
-  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [把个案写成规律](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-78b42386e9650ab0 / 把个案写成规律
-  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [把作者立场当作客观事实。](../../../outputs/getbrain/failure-typology-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-b8815f8b0bc91cac / 把作者立场当作客观事实。
-  - 来源：`outputs/getbrain/failure-typology-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [把四种基本力统一写成已解决](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-82201d8054765f61 / 把四种基本力统一写成已解决
-  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [把市场结构类比直接写成经济规律](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-4c79d9a3192c7a15 / 把市场结构类比直接写成经济规律
-  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [把政策建议写成已验证](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-af8a629bdaf4447d / 把政策建议写成已验证
-  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [把理论自洽写成实证成立](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-4dd843324fcd364c / 把理论自洽写成实证成立
-  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [把短期波动当作长期规律；](../../../outputs/getbrain/failure-typology-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-bb8ac948c5857e52 / 把短期波动当作长期规律；
-  - 来源：`outputs/getbrain/failure-typology-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [把结构同构替代具体历史语境](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-15a7a10c7fdab975 / 把结构同构替代具体历史语境
-  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [把结构推论直接写成外部验证完成的结论。](../../../data/failure_typology.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-058486d77cc43ae8 / 把结构推论直接写成外部验证完成的结论。
-  - 来源：`data/failure_typology.csv`
-  - 依赖：—；被引用：—
-- [把解释力写成预测力](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-8195d49da8943ca8 / 把解释力写成预测力
-  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [投资组合空间验证](../../../data/foundation/evidence/evidence.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-4af95a51685bf6ce / 投资组合空间验证
-  - 来源：`data/foundation/evidence/evidence.jsonl`
-  - 依赖：—；被引用：—
-- [报告「未找到正式可执行的晋级门槛」；020 建立了晋级门槛/Schema/验证器，二者为前后承接，非矛盾。](../../../inputs/021/upstream-conflict-audit.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-c3d93c8348093a74 / 报告「未找到正式可执行的晋级门槛」；020 建立了晋级门槛/Schema/验证器，二者为前后承接，非矛盾。
-  - 来源：`inputs/021/upstream-conflict-audit.md`
-  - 依赖：—；被引用：—
-- [拉格朗日量、规范群、耦合常数、粒子谱、RG 流和实验数值](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-050414a6e288c4f4 / 拉格朗日量、规范群、耦合常数、粒子谱、RG 流和实验数值
-  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [持续优化社会制度](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-d5c0e49d806ddeb8 / 持续优化社会制度
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [按学科/领域约束证据标准，防止把低证据材料写成高层级结论。](../../../docs/p1-machine-data-collision-workflow-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-58c3d3c49d5f1d11 / 按学科/领域约束证据标准，防止把低证据材料写成高层级结论。
-  - 来源：`docs/p1-machine-data-collision-workflow-20260708.md`
-  - 依赖：—；被引用：—
-- [提供元协议分析：社会信任的元协议（契约协议、对称性协议、分布式学习）（L2）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-0abe6ce5851dc5da / 提供元协议分析：社会信任的元协议（契约协议、对称性协议、分布式学习）（L2）
-  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [提供制度变迁路径：社会信任制度的自举收敛和发散（L2）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-0f732d14ed1a3c8d / 提供制度变迁路径：社会信任制度的自举收敛和发散（L2）
-  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [提供制度变迁路径：社会阶层制度的自举收敛和发散（L2）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-df3a5a2045c6704d / 提供制度变迁路径：社会阶层制度的自举收敛和发散（L2）
-  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [提供结构性边界推论：四种基本力统一问题可能属于哥德尔不完备性范围（L2）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-5a2cb268b7fc7c46 / 提供结构性边界推论：四种基本力统一问题可能属于哥德尔不完备性范围（L2）
-  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [提供结构性边界推论：绝对完备统一的结构性边界（L2）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-49f5f0f825fd8947 / 提供结构性边界推论：绝对完备统一的结构性边界（L2）
-  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [提供退出权分析：社会信任制度中的退出权结构（L2）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-7941c7eca1428194 / 提供退出权分析：社会信任制度中的退出权结构（L2）
-  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [提供退出权分析：社会阶层制度中的退出权结构（L2）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-05f36d55e04fdefc / 提供退出权分析：社会阶层制度中的退出权结构（L2）
-  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [提供门控分析：社会阶层制度中的门控结构（L2）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-3dd43588a8f238a1 / 提供门控分析：社会阶层制度中的门控结构（L2）
-  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [提枪转换率20%（全国5-7%），验证了D50三因子乘法结构](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0692-C-0697-%E8%A5%BF%E5%AE%89%E5%8A%A0%E6%B2%B9%E7%AB%99%E4%BE%BF%E5%88%A9%E5%BA%97.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-54acd7aed0c20e3b / 提枪转换率20%（全国5-7%），验证了D50三因子乘法结构
-  - 来源：`统一案例总表/0692-C-0697-西安加油站便利店.md`
-  - 依赖：D50；被引用：—

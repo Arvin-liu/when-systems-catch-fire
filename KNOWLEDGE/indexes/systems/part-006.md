@@ -4,6 +4,66 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [社会科学是中等风险领域。社会因果不能写成单因决定论。数据不足、解释争议大、缺乏统计显著性检验时必须 pending。](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-8017de0e1a02dc61 / 社会科学是中等风险领域。社会因果不能写成单因决定论。数据不足、解释争议大、缺乏统计显著性检验时必须 pending。
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [社会科学界通过实证研究、理论分析、比较研究等方法研究社会阶层固化问题。主流观点认为社会阶层固化是由制度、教育、文化等多重因素共同导致。](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-e00c88e5b96f2bcb / 社会科学界通过实证研究、理论分析、比较研究等方法研究社会阶层固化问题。主流观点认为社会阶层固化是由制度、教育、文化等多重因素共同导致。
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [社会科学：所有社会因果的具体判定](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-1ea101a0b4342e0e / 社会科学：所有社会因果的具体判定
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [社会阶层固化的具体因果判定：**pending**（需要调查、统计、田野、实验和反事实识别）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-e0b21330a981ed20 / 社会阶层固化的具体因果判定：**pending**（需要调查、统计、田野、实验和反事实识别）
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [突破后认知熵快速下降，系统从"不可能"相变到"可能"，涌现出大量优化路径。](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0672-C-0677-%E6%A2%85%E7%BA%B3%E5%BE%B7%E5%BF%AB%E9%80%9F%E7%BC%A9%E5%B0%8F%E9%97%B4%E9%9A%94.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-a1b58f7f9ea835ac / 突破后认知熵快速下降，系统从"不可能"相变到"可能"，涌现出大量优化路径。
+  - 来源：`统一案例总表/0672-C-0677-梅纳德快速缩小间隔.md`
+  - 依赖：—；被引用：—
+- [竞争机制：A 基层凝聚中心；B 后勤/机动/地理中心；C 辽中枢和内部叛乱中心；D 投附/联盟/制度吸收中心；E 多因素交互、无单一主因。](../../../reports/publication/jin-rise-point-fire-analysis.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-97bbeaea4390bc0c / 竞争机制：A 基层凝聚中心；B 后勤/机动/地理中心；C 辽中枢和内部叛乱中心；D 投附/联盟/制度吸收中心；E 多因素交互、无单一主因。
+  - 来源：`reports/publication/jin-rise-point-fire-analysis.md`
+  - 依赖：—；被引用：—
+- [简介：从战场中的一次后退进入系统自我生产证据、局部理性与整体毁灭、局部保护和稳定成本，最终返回历史解释如何被胜利结果反写。](../../../docs/publication/zhiyuan-writing-showcase.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-1723970e8f08623c / 简介：从战场中的一次后退进入系统自我生产证据、局部理性与整体毁灭、局部保护和稳定成本，最终返回历史解释如何被胜利结果反写。
+  - 来源：`docs/publication/zhiyuan-writing-showcase.md`
+  - 依赖：—；被引用：—
+- [类型化变更传播闭包 / Typed Change-Propagation Closure](../../ASSET-CARDS.md#asset-hr-da202c53b7387f68)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `HISTORICAL_OR_SUPERSEDED_SOURCE`
+  - 可搜索名称：类型化变更传播闭包 / Typed Change-Propagation Closure / typed-change-propagation
+  - 来源：`docs/architecture/typed-change-propagation.md`
+  - 依赖：—；被引用：—
+- [类型：机制注释 / 来源补充](../../../outputs/collisions/20260708-teacher-competition/notes.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-b99810d7d4a70d6a / 类型：机制注释 / 来源补充
+  - 来源：`outputs/collisions/20260708-teacher-competition/notes.md`
+  - 依赖：—；被引用：—
+- [系统图是确定性导航投影，表达仓库依赖和同步义务，不表达现实因果、严格](../../../README.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-d8e4744f9874ee0b / 系统图是确定性导航投影，表达仓库依赖和同步义务，不表达现实因果、严格
+  - 来源：`README.md`
+  - 依赖：—；被引用：—
+- [系统地图、人工阅读面、知识面和基础资产由正式生成器投影，没有手工修改派生权威。](../../../reports/operations/114-language-thought-project-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-227682adb08bb3b6 / 系统地图、人工阅读面、知识面和基础资产由正式生成器投影，没有手工修改派生权威。
+  - 来源：`reports/operations/114-language-thought-project-audit.md`
+  - 依赖：—；被引用：—
+- [系统基模中的"成长上限"基模与点火框架M1增强回路的同构性。当增强回路推动系统增长，同时调节回路在某个阈值启动限制增长，形成门控面极小点。](../../../data/foundation/arguments/arguments.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：CLAIM-BC-20260709-001 / 系统基模中的"成长上限"基模与点火框架M1增强回路的同构性。当增强回路推动系统增长，同时调节回路在某个阈值启动限制增长，形成门控面极小点。
+  - 来源：`data/foundation/arguments/arguments.jsonl`
+  - 依赖：—；被引用：—
 - [系统边界、时间尺度、空间尺度或分析层级没有说明，导致结论泛化。](../../../data/publication_risk_rules.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-584d3104a5e4ec3f / 系统边界、时间尺度、空间尺度或分析层级没有说明，导致结论泛化。

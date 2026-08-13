@@ -4,6 +4,61 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [把因果、自举、同构、元层、哥德尔不完备性、元协议与证据强度合成总分。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0604-D594-%E5%AD%A6%E7%A7%91%E7%82%B9%E7%81%AB%E6%8C%87%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-28d6a72c1a59a7ef / 把因果、自举、同构、元层、哥德尔不完备性、元协议与证据强度合成总分。
+  - 来源：`统一函数总表/0604-D594-学科点火指数.md`
+  - 依赖：—；被引用：—
+- [把外部已证明的定理写成点火框架证明](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-2c486c79c7b03d75 / 把外部已证明的定理写成点火框架证明
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [把审美判断写成客观定理](../../../outputs/getbrain/classic-problems-benchmark-supplement-20260707.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-1a90066bfec1b0a8 / 把审美判断写成客观定理
+  - 来源：`outputs/getbrain/classic-problems-benchmark-supplement-20260707.md`
+  - 依赖：—；被引用：—
+- [把局部函数或局部案例中的结构关系写成普遍函数。](../../../data/failure_typology.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-1edcdcc4132b31ec / 把局部函数或局部案例中的结构关系写成普遍函数。
+  - 来源：`data/failure_typology.csv`
+  - 依赖：—；被引用：—
+- [把已经通过点火证据制度的函数、案例与碰撞结果，转换成普通读者可以读懂、但又不会越过事实边界的故事产物。](../../../docs/narrative-output-layer.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-123b44c855d41075 / 把已经通过点火证据制度的函数、案例与碰撞结果，转换成普通读者可以读懂、但又不会越过事实边界的故事产物。
+  - 来源：`docs/narrative-output-layer.md`
+  - 依赖：—；被引用：—
+- [把描述性机制和规范性判断分开，只有在正当化桥接存在时才允许合流。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0602-D592-%E8%A7%84%E8%8C%83%E6%80%A7%E5%88%86%E7%A6%BB%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-360a048007ab298f / 把描述性机制和规范性判断分开，只有在正当化桥接存在时才允许合流。
+  - 来源：`统一函数总表/0602-D592-规范性分离函数.md`
+  - 依赖：—；被引用：—
+- [把故事化案例写成证明；](../../../docs/publication_risk_checklist.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-910a5a15b0e3ce57 / 把故事化案例写成证明；
+  - 来源：`docs/publication_risk_checklist.md`
+  - 依赖：—；被引用：—
+- [把文学感染力变成事实、因果或价值主张的证据。](../../../docs/architecture/language-thought-logic-plane.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-078d9a74e8f4a462 / 把文学感染力变成事实、因果或价值主张的证据。
+  - 来源：`docs/architecture/language-thought-logic-plane.md`
+  - 依赖：—；被引用：—
+- [把未证明猜想写成已解决](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-c7b2968dd1806fc6 / 把未证明猜想写成已解决
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [把物理大一统不可能写成物理学 no-go theorem](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-22fbc0b0ff19bd34 / 把物理大一统不可能写成物理学 no-go theorem
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [把生命起源放进自组织框架，看局部规则如何累积成整体结构。](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0794-C-0799-%E7%94%9F%E5%91%BD%E8%B5%B7%E6%BA%90%E4%B8%8E%E8%87%AA%E7%BB%84%E7%BB%87.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-2b6ef4a58fad2984 / 把生命起源放进自组织框架，看局部规则如何累积成整体结构。
+  - 来源：`统一案例总表/0794-C-0799-生命起源与自组织.md`
+  - 依赖：—；被引用：—
 - [把经典问题显性化为模型、现象、证据、尺度与价值之间的差分。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0598-D588-%E7%BB%8F%E5%85%B8%E9%97%AE%E9%A2%98%E5%B7%AE%E5%88%86%E5%87%BD%E6%95%B0.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-e523f2f75d50c6b2 / 把经典问题显性化为模型、现象、证据、尺度与价值之间的差分。
@@ -2446,58 +2501,3 @@
   - 可搜索名称：NFC-319cc45a7fd205d1 / 条 proof obligations — 需要可重放 Lean/Z3/SymPy artifact
   - 来源：`reports/foundation-architecture/084-max-adjudication-report.md`
   - 依赖：—；被引用：—
-- [条 proof obligations 需要可重放 artifact](../../../reports/foundation-architecture/084-architecture-truth-freeze-readiness.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-fe52241c25de367d / 条 proof obligations 需要可重放 artifact
-  - 来源：`reports/foundation-architecture/084-architecture-truth-freeze-readiness.md`
-  - 依赖：—；被引用：—
-- [条件检查**：必要、充分、充要条件分别编码，禁止肯定后件。](../../../docs/foundation/logic/README.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-e3241aa3683bc0ea / 条件检查**：必要、充分、充要条件分别编码，禁止肯定后件。
-  - 来源：`docs/foundation/logic/README.md`
-  - 依赖：—；被引用：—
-- [条件：所有普遍性主张保留 pending（E1–E6）；不把个人成功当因果证明；不提交访谈原文。](../../../outputs/collisions/20260711-disobedience-subjectivity/life-community-value-audit.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-5df9cb9b21c2ce92 / 条件：所有普遍性主张保留 pending（E1–E6）；不把个人成功当因果证明；不提交访谈原文。
-  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/life-community-value-audit.md`
-  - 依赖：—；被引用：—
-- [条保留为未证明形式命题](../../../reports/foundation-architecture/084-max-adjudication-report.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-70d3c710237e3cf0 / 条保留为未证明形式命题
-  - 来源：`reports/foundation-architecture/084-max-adjudication-report.md`
-  - 依赖：—；被引用：—
-- [条达到 PROVED_ORIGINAL_CLAIM_WITH_ARTIFACT](../../../reports/foundation-architecture/084-max-adjudication-report.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-888b35718665b8e1 / 条达到 PROVED_ORIGINAL_CLAIM_WITH_ARTIFACT
-  - 来源：`reports/foundation-architecture/084-max-adjudication-report.md`
-  - 依赖：—；被引用：—
-- [来源、候选意义、目标形式、框架差异和残余同时存在；认识相关变化不得静默。中文成品通过语法、信息顺序、指称、体貌、连接、节奏、标点、语体、朗读和文学标记性审查。自动 validator 通过只证明结构化登记一致，不能证明自然度或文学质量。](../../../docs/publication/zhiyuan-writing-method.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-58149c171ddd7bb5 / 来源、候选意义、目标形式、框架差异和残余同时存在；认识相关变化不得静默。中文成品通过语法、信息顺序、指称、体貌、连接、节奏、标点、语体、朗读和文学标记性审查。自动 validator 通过只证明结构化登记一致，不能证明自然度或文学质量。
-  - 来源：`docs/publication/zhiyuan-writing-method.md`
-  - 依赖：—；被引用：—
-- [来源层：原始笔记、案例、材料、史料、论文、数据。](../../../docs/math-foundation/00-project-ontology.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-311031d6a1aeb209 / 来源层：原始笔记、案例、材料、史料、论文、数据。
-  - 来源：`docs/math-foundation/00-project-ontology.md`
-  - 依赖：—；被引用：—
-- [来源报告：PRIVATE_PROVENANCE_WITHHELD](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0597-D587-%E5%AD%A6%E7%A7%91%E7%90%86%E8%AE%BA%E6%A0%B8%E6%8A%BD%E5%8F%96%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-b49977060c5d8df2 / 来源报告：PRIVATE_PROVENANCE_WITHHELD
-  - 来源：`统一函数总表/0597-D587-学科理论核抽取函数.md`
-  - 依赖：—；被引用：—
-- [来源：PRIVATE_PROVENANCE_WITHHELD](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0597-D587-%E5%AD%A6%E7%A7%91%E7%90%86%E8%AE%BA%E6%A0%B8%E6%8A%BD%E5%8F%96%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-a52860da354817f1 / 来源：PRIVATE_PROVENANCE_WITHHELD
-  - 来源：`统一函数总表/0597-D587-学科理论核抽取函数.md`
-  - 依赖：—；被引用：—
-- [极值点-极小点分离定理](../../../data/foundation/formal-objects/objects.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-f1ee82ddd1b134a0 / 极值点-极小点分离定理
-  - 来源：`data/foundation/formal-objects/objects.jsonl`
-  - 依赖：—；被引用：—
-- [极值点-极小点分离定理](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0048-T38-%E6%9E%81%E5%80%BC%E7%82%B9-%E6%9E%81%E5%B0%8F%E7%82%B9%E5%88%86%E7%A6%BB%E5%AE%9A%E7%90%86.md)
-  - 类型/状态：`FUNCTION_ASSET` · `DOWNGRADE_TO_CONJECTURE`
-  - 可搜索名称：T38 / 极值点-极小点分离定理 / T38
-  - 来源：`统一函数总表/0048-T38-极值点-极小点分离定理.md`
-  - 依赖：—；被引用：NFC-02e366ef7c4fcf3f, NFC-05ee7c77f1cf487d, NFC-0e71db06c9a6d538, NFC-28314c7426492136

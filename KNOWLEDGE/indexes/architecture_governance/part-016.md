@@ -4,6 +4,156 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [证据制度库的补充；](../../../docs/failure_typology.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-69d97fd40d3bc33e / 证据制度库的补充；
+  - 来源：`docs/failure_typology.md`
+  - 依赖：—；被引用：—
+- [证据制度库缺失或未使用。](../../../outputs/getbrain/failure-typology-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-86396959cdcd849c / 证据制度库缺失或未使用。
+  - 来源：`outputs/getbrain/failure-typology-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [证据制度库通过"必须 pending 的情况"字段，明确了不同领域必须 pending 的条件。当点火框架输出某个结论时，如果满足某个领域的 pending 条件，必须标记为 pending。这确保了点火框架的输出不会误导用户。](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-687eb4324182bb6e / 证据制度库通过"必须 pending 的情况"字段，明确了不同领域必须 pending 的条件。当点火框架输出某个结论时，如果满足某个领域的 pending 条件，必须标记为 pending。这确保了点火框架的输出不会误导用户。
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [证据制度库通过"最低证据要求"和"强证据要求"两个维度，明确了不同学科命题的成立标准。当点火框架输出某个结论时，可以根据证据制度库判定该结论应该处于哪个断言等级（L0-L5）。如果证据不足，必须标记为 pending。](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-8969726a07b17e5a / 证据制度库通过"最低证据要求"和"强证据要求"两个维度，明确了不同学科命题的成立标准。当点火框架输出某个结论时，可以根据证据制度库判定该结论应该处于哪个断言等级（L0-L5）。如果证据不足，必须标记为 pending。
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [证据制度库；](../../../docs/v0.2_summary.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-52c145e1a23de406 / 证据制度库；
+  - 来源：`docs/v0.2_summary.md`
+  - 依赖：—；被引用：—
+- [证据制度库；](../../../docs/failure_typology.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-6f812a3fe2c8208c / 证据制度库；
+  - 来源：`docs/failure_typology.md`
+  - 依赖：—；被引用：—
+- [证据制度总表](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-02b79940044877f1 / 证据制度总表
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [证据制度映射；](../../../docs/publication_risk_checklist.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-45356bab20a9ddec / 证据制度映射；
+  - 来源：`docs/publication_risk_checklist.md`
+  - 依赖：—；被引用：—
+- [证据制度是什么？](../../../docs/roadmap_v0.2.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-c875a1c42d1ee03d / 证据制度是什么？
+  - 来源：`docs/roadmap_v0.2.md`
+  - 依赖：—；被引用：—
+- [证据制度约束](../../../outputs/collisions/20260708-smoke-test/collision-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-f43db75cea219155 / 证据制度约束
+  - 来源：`outputs/collisions/20260708-smoke-test/collision-report.md`
+  - 依赖：—；被引用：—
+- [证据制度缺口](../../../docs/structural_gap_audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-46c5316afeffaacb / 证据制度缺口
+  - 来源：`docs/structural_gap_audit.md`
+  - 依赖：—；被引用：—
+- [证据制度缺失；](../../../docs/roadmap_v0.2.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-7a31d8c9a8dfe21a / 证据制度缺失；
+  - 来源：`docs/roadmap_v0.2.md`
+  - 依赖：—；被引用：—
+- [证据制度误配；](../../../docs/v0.2_summary.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-7393501c58fea847 / 证据制度误配；
+  - 来源：`docs/v0.2_summary.md`
+  - 依赖：—；被引用：—
+- [证据制度；](../../../docs/discipline_kernel_pilot.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-b32c4e686c7d61fb / 证据制度；
+  - 来源：`docs/discipline_kernel_pilot.md`
+  - 依赖：—；被引用：—
+- [证据外推过度；](../../../outputs/getbrain/failure-typology-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-031d508d2c0551de / 证据外推过度；
+  - 来源：`outputs/getbrain/failure-typology-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [证据层](../../../docs/narrative-output-layer.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-5d594558b3960ea3 / 证据层
+  - 来源：`docs/narrative-output-layer.md`
+  - 依赖：—；被引用：—
+- [证据层保存故事背后不能丢失的事实约束：](../../../docs/narrative-output-layer.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-8d6f626e615e73b7 / 证据层保存故事背后不能丢失的事实约束：
+  - 来源：`docs/narrative-output-layer.md`
+  - 依赖：—；被引用：—
+- [证据怎样进入实现](../../../docs/language-thought/research-boundary.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-f0fa3783afd0775d / 证据怎样进入实现
+  - 来源：`docs/language-thought/research-boundary.md`
+  - 依赖：—；被引用：—
+- [证据文件清单](../../../outputs/collisions/20260711-disobedience-subjectivity/README.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-61c24daa565ef001 / 证据文件清单
+  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/README.md`
+  - 依赖：—；被引用：—
+- [证据来源](../../../outputs/audit/two-tables-entry-format-audit-20260709.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-8dace0d0aa07b6f8 / 证据来源
+  - 来源：`outputs/audit/two-tables-entry-format-audit-20260709.md`
+  - 依赖：—；被引用：—
+- [证据来源** — 原始材料路径/出处](../../../docs/two-tables-entry-writing-standard-20260709.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-4522e9a7ed872408 / 证据来源** — 原始材料路径/出处
+  - 来源：`docs/two-tables-entry-writing-standard-20260709.md`
+  - 依赖：—；被引用：—
+- [证据来源不可省。](../../../docs/two-tables-entry-writing-standard-20260709.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-f8027b2d255cf868 / 证据来源不可省。
+  - 来源：`docs/two-tables-entry-writing-standard-20260709.md`
+  - 依赖：—；被引用：—
+- [证据状态：** 信息结构研究充分；不存在一种固定“中文顺序”或“英文顺序”。](../../../docs/language-thought/dimensional-basis.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-1061d4229af84fa0 / 证据状态：** 信息结构研究充分；不存在一种固定“中文顺序”或“英文顺序”。
+  - 来源：`docs/language-thought/dimensional-basis.md`
+  - 依赖：—；被引用：—
+- [证据状态：** 意外事件实验提供条件性正效应；不能外推为民族责任观。](../../../docs/language-thought/dimensional-basis.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-ffd2bf5ad9b8b782 / 证据状态：** 意外事件实验提供条件性正效应；不能外推为民族责任观。
+  - 来源：`docs/language-thought/dimensional-basis.md`
+  - 依赖：—；被引用：—
+- [证据状态：** 社会语言学与文体描述充分；作者效果不可压缩成统一规则。](../../../docs/language-thought/dimensional-basis.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-7a51060b5f0d316a / 证据状态：** 社会语言学与文体描述充分；作者效果不可压缩成统一规则。
+  - 来源：`docs/language-thought/dimensional-basis.md`
+  - 依赖：—；被引用：—
+- [证据状态：** 类型学差异明确；非语言分类结果混合。](../../../docs/language-thought/dimensional-basis.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-c7eb8844bc3daa0a / 证据状态：** 类型学差异明确；非语言分类结果混合。
+  - 来源：`docs/language-thought/dimensional-basis.md`
+  - 依赖：—；被引用：—
+- [证据状态：** 词汇差异普遍；从词汇空缺推导不可思考性没有依据。](../../../docs/language-thought/dimensional-basis.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-4f6099d5bd357217 / 证据状态：** 词汇差异普遍；从词汇空缺推导不可思考性没有依据。
+  - 来源：`docs/language-thought/dimensional-basis.md`
+  - 依赖：—；被引用：—
+- [证据状态：** 语法与篇章研究充分；自动恢复仍高不确定。](../../../docs/language-thought/dimensional-basis.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-ee72861c85bebb32 / 证据状态：** 语法与篇章研究充分；自动恢复仍高不确定。
+  - 来源：`docs/language-thought/dimensional-basis.md`
+  - 依赖：—；被引用：—
+- [证据状态：** 语法化程度跨语言差异明确；与一般推理能力的关系不能由语法直接推出。](../../../docs/language-thought/dimensional-basis.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-90e858ce2555f4c5 / 证据状态：** 语法化程度跨语言差异明确；与一般推理能力的关系不能由语法直接推出。
+  - 来源：`docs/language-thought/dimensional-basis.md`
+  - 依赖：—；被引用：—
+- [证据状态：** 语法差异清楚；英语—普通话非语言事件研究呈空效应或条件效应。](../../../docs/language-thought/dimensional-basis.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-fd855af7f36004d6 / 证据状态：** 语法差异清楚；英语—普通话非语言事件研究呈空效应或条件效应。
+  - 来源：`docs/language-thought/dimensional-basis.md`
+  - 依赖：—；被引用：—
 - [证据状态：** 语篇描述充分；“意合／形合”只能作为梯度，不是二分本质。](../../../docs/language-thought/dimensional-basis.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-2847851f320dc8cd / 证据状态：** 语篇描述充分；“意合／形合”只能作为梯度，不是二分本质。

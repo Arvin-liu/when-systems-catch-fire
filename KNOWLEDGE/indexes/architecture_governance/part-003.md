@@ -854,6 +854,91 @@
   - 可搜索名称：NFC-ca50e348e42f9faa / cumulative_verified_registry: `{5 + len(reviewed)}/622`
   - 来源：`tools/foundation/build_080_queue.py`
   - 依赖：—；被引用：—
+- [Current canonical claim record already preserves the attractor/trap analogy without universal promotion.](../../../FOUNDATION-64-PROPAGATION.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-eb733cbefff9a20d / Current canonical claim record already preserves the attractor/trap analogy without universal promotion.
+  - 来源：`FOUNDATION-64-PROPAGATION.jsonl`
+  - 依赖：—；被引用：—
+- [Current canonical claim record already preserves the dark-matter-core candidate and its unvalidated prediction ceiling.](../../../FOUNDATION-64-PROPAGATION.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-826c3b702ed25c0f / Current canonical claim record already preserves the dark-matter-core candidate and its unvalidated prediction ceiling.
+  - 来源：`FOUNDATION-64-PROPAGATION.jsonl`
+  - 依赖：—；被引用：—
+- [Current canonical claim record already preserves the shared-source analogy without strict-isomorphism promotion.](../../../FOUNDATION-64-PROPAGATION.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-41145b247d4be021 / Current canonical claim record already preserves the shared-source analogy without strict-isomorphism promotion.
+  - 来源：`FOUNDATION-64-PROPAGATION.jsonl`
+  - 依赖：—；被引用：—
+- [Current canonical record already expresses the bounded authority overlay as a repository definition, not external truth.](../../../FOUNDATION-64-PROPAGATION.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-dd900b918c77fd57 / Current canonical record already expresses the bounded authority overlay as a repository definition, not external truth.
+  - 来源：`FOUNDATION-64-PROPAGATION.jsonl`
+  - 依赖：—；被引用：—
+- [Current canonical record already keeps the cross-domain hub pending rather than promoting the analogy.](../../../FOUNDATION-64-PROPAGATION.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-8b4be3c659cc1373 / Current canonical record already keeps the cross-domain hub pending rather than promoting the analogy.
+  - 来源：`FOUNDATION-64-PROPAGATION.jsonl`
+  - 依赖：—；被引用：—
+- [Current canonical record already preserves the boundary between internal formulas/tests and external truth.](../../../FOUNDATION-64-PROPAGATION.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-f260308438ce8f88 / Current canonical record already preserves the boundary between internal formulas/tests and external truth.
+  - 来源：`FOUNDATION-64-PROPAGATION.jsonl`
+  - 依赖：—；被引用：—
+- [Current canonical record already preserves the bounded current-project statement without universal external conclusion.](../../../FOUNDATION-64-PROPAGATION.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-600e779ea7b6a2ad / Current canonical record already preserves the bounded current-project statement without universal external conclusion.
+  - 来源：`FOUNDATION-64-PROPAGATION.jsonl`
+  - 依赖：—；被引用：—
+- [Current canonical record already preserves the cognitive-bias model as unresolved model language.](../../../FOUNDATION-64-PROPAGATION.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：NFC-e52230071fa7f7ab / Current canonical record already preserves the cognitive-bias model as unresolved model language.
+  - 来源：`FOUNDATION-64-PROPAGATION.jsonl`
+  - 依赖：—；被引用：—
+- [Current canonical record already preserves the conjectural ceiling and unresolved definition/evidence gates.](../../../FOUNDATION-64-PROPAGATION.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-c678f3942d591d9c / Current canonical record already preserves the conjectural ceiling and unresolved definition/evidence gates.
+  - 来源：`FOUNDATION-64-PROPAGATION.jsonl`
+  - 依赖：—；被引用：—
+- [Current canonical record already preserves the cross-domain relation as unresolved rather than established isomorphism.](../../../FOUNDATION-64-PROPAGATION.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-44a907424d2927b4 / Current canonical record already preserves the cross-domain relation as unresolved rather than established isomorphism.
+  - 来源：`FOUNDATION-64-PROPAGATION.jsonl`
+  - 依赖：—；被引用：—
+- [Current canonical record already preserves the information-gate metric with unresolved cross-domain semantics.](../../../FOUNDATION-64-PROPAGATION.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-ac2350dd70c2ef55 / Current canonical record already preserves the information-gate metric with unresolved cross-domain semantics.
+  - 来源：`FOUNDATION-64-PROPAGATION.jsonl`
+  - 依赖：—；被引用：—
+- [Current canonical record already preserves the model-internal threshold claim and unresolved semantics.](../../../FOUNDATION-64-PROPAGATION.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：NFC-73f1795f8492b3f9 / Current canonical record already preserves the model-internal threshold claim and unresolved semantics.
+  - 来源：`FOUNDATION-64-PROPAGATION.jsonl`
+  - 依赖：—；被引用：—
+- [Current canonical record already preserves the probability model with unresolved semantics and no empirical promotion.](../../../FOUNDATION-64-PROPAGATION.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-ee8d6d8e43e433aa / Current canonical record already preserves the probability model with unresolved semantics and no empirical promotion.
+  - 来源：`FOUNDATION-64-PROPAGATION.jsonl`
+  - 依赖：—；被引用：—
+- [Current canonical record already preserves the repository/model ceiling and unresolved mapping obligations.](../../../FOUNDATION-64-PROPAGATION.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-74abbfd8c193957f / Current canonical record already preserves the repository/model ceiling and unresolved mapping obligations.
+  - 来源：`FOUNDATION-64-PROPAGATION.jsonl`
+  - 依赖：—；被引用：—
+- [Current canonical record already preserves the repository/model relation and its unresolved physical interpretation.](../../../FOUNDATION-64-PROPAGATION.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-08eacafde46ce466 / Current canonical record already preserves the repository/model relation and its unresolved physical interpretation.
+  - 来源：`FOUNDATION-64-PROPAGATION.jsonl`
+  - 依赖：—；被引用：—
+- [Current canonical record already preserves the spatial-coupling relation as unresolved.](../../../FOUNDATION-64-PROPAGATION.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-239dc13aead03768 / Current canonical record already preserves the spatial-coupling relation as unresolved.
+  - 来源：`FOUNDATION-64-PROPAGATION.jsonl`
+  - 依赖：—；被引用：—
+- [Current canonical record already preserves the threshold candidate and unresolved type/definition gates.](../../../FOUNDATION-64-PROPAGATION.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-1241bf098ad7de75 / Current canonical record already preserves the threshold candidate and unresolved type/definition gates.
+  - 来源：`FOUNDATION-64-PROPAGATION.jsonl`
+  - 依赖：—；被引用：—
 - [Current state**: 085 frozen v1 JSON is a partial artifact](../../../reports/external-research/120-function-os-architecture-candidate-report.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-255fa31045fd9427 / Current state**: 085 frozen v1 JSON is a partial artifact
@@ -2418,89 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-55122C9E7A6C99C4 / def as_dict(self) -> dict\[str, int \| float \| None\]: / IMPLICIT-55122C9E7A6C99C4
   - 来源：`tools/language_thought/validate_language_thought.py`
-  - 依赖：—；被引用：—
-- [def as_dict(self) -> dict\[str, str\]:](../../../tools/operations/validate_incremental_execution.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-36F4972FD03176A5 / def as_dict(self) -> dict\[str, str\]: / IMPLICIT-36F4972FD03176A5
-  - 来源：`tools/operations/validate_incremental_execution.py`
-  - 依赖：—；被引用：—
-- [def assert_boundary_error(self, code, callback):](../../../tests/test_incremental_execution_defensive_rejections.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-B69004F6B8A3D744 / def assert_boundary_error(self, code, callback): / IMPLICIT-B69004F6B8A3D744
-  - 来源：`tests/test_incremental_execution_defensive_rejections.py`
-  - 依赖：—；被引用：—
-- [def assert_layer_coverage(results: list\[dict\], layers: list\[dict\], cards: list\[dict\]) -> None:](../../../tools/governance/validate_knowledge_experience.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-AB09CA21237EEF2A / def assert_layer_coverage(results: list\[dict\], layers: list\[dict\], cards: list\[dict\]) -> None: / IMPLICIT-AB09CA21237EEF2A
-  - 来源：`tools/governance/validate_knowledge_experience.py`
-  - 依赖：—；被引用：—
-- [def assert_links_and_anchors(paths: list\[Path\]) -> int:](../../../tools/governance/validate_knowledge_experience.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-EE51B7DA1085976D / def assert_links_and_anchors(paths: list\[Path\]) -> int: / IMPLICIT-EE51B7DA1085976D
-  - 来源：`tools/governance/validate_knowledge_experience.py`
-  - 依赖：—；被引用：—
-- [def assert_missing_surface_rejected(self, surface_id):](../../../tests/test_iteration_sync.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-B2425F393998FB3A / def assert_missing_surface_rejected(self, surface_id): / IMPLICIT-B2425F393998FB3A
-  - 来源：`tests/test_iteration_sync.py`
-  - 依赖：—；被引用：—
-- [def assert_required_aliases(aliases: list\[dict\], config: dict) -> None:](../../../tools/governance/validate_knowledge_experience.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-0F0A52AD6ECB9AE9 / def assert_required_aliases(aliases: list\[dict\], config: dict) -> None: / IMPLICIT-0F0A52AD6ECB9AE9
-  - 来源：`tools/governance/validate_knowledge_experience.py`
-  - 依赖：—；被引用：—
-- [def assert_restored(self, before, result):](../../../tests/test_production_execution_authority.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-C0FFB244B8678A01 / def assert_restored(self, before, result): / IMPLICIT-C0FFB244B8678A01
-  - 来源：`tests/test_production_execution_authority.py`
-  - 依赖：—；被引用：—
-- [def assert_source_hashes(rows: list\[dict\], root: Path = ROOT) -> None:](../../../tools/governance/validate_knowledge_experience.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-C85F4191961A782B / def assert_source_hashes(rows: list\[dict\], root: Path = ROOT) -> None: / IMPLICIT-C85F4191961A782B
-  - 来源：`tools/governance/validate_knowledge_experience.py`
-  - 依赖：—；被引用：—
-- [def assert_valid_live_plan(self, request):](../../../tests/test_incremental_execution.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-9AD43DCDFB19505D / def assert_valid_live_plan(self, request): / IMPLICIT-9AD43DCDFB19505D
-  - 来源：`tests/test_incremental_execution.py`
-  - 依赖：—；被引用：—
-- [def assertion_type(claim_class: str) -> str:](../../../tools/foundation/adjudicate_nonfunction_claims.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-7CD0C8CF67D2BD0B / def assertion_type(claim_class: str) -> str: / IMPLICIT-7CD0C8CF67D2BD0B
-  - 来源：`tools/foundation/adjudicate_nonfunction_claims.py`
-  - 依赖：—；被引用：—
-- [def assertRejected(self, registry, pattern, remote=False):](../../../tests/test_stage_snapshot_publication.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-07C7453E246B1E8F / def assertRejected(self, registry, pattern, remote=False): / IMPLICIT-07C7453E246B1E8F
-  - 来源：`tests/test_stage_snapshot_publication.py`
-  - 依赖：—；被引用：—
-- [def attack_matrix(](../../../tools/operations/run_stage_snapshot_responsibility_cases.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-D0971CF9F3439F0A / def attack_matrix( / IMPLICIT-D0971CF9F3439F0A
-  - 来源：`tools/operations/run_stage_snapshot_responsibility_cases.py`
-  - 依赖：—；被引用：—
-- [def audit(repo_root: str, baseline: Optional\[Dict\[str, str\]\] = None) -> Dict:](../../../tools/propagation/system_map_audit.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-80B37002EDE601B1 / def audit(repo_root: str, baseline: Optional\[Dict\[str, str\]\] = None) -> Dict: / IMPLICIT-80B37002EDE601B1
-  - 来源：`tools/propagation/system_map_audit.py`
-  - 依赖：—；被引用：—
-- [def audit_body(body: str) -> dict:](../../../tools/governance/audit_pr_front_door.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-3757EADEC107352E / def audit_body(body: str) -> dict: / IMPLICIT-3757EADEC107352E
-  - 来源：`tools/governance/audit_pr_front_door.py`
-  - 依赖：—；被引用：—
-- [def audit_report(self):](../../../tools/governance/fail_closed_publication_gate.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-CCE3E251CA59EFE2 / def audit_report(self): / IMPLICIT-CCE3E251CA59EFE2
-  - 来源：`tools/governance/fail_closed_publication_gate.py`
-  - 依赖：—；被引用：—
-- [def audits_for(claim_class: str, kind: str, text: str, disposition: str, context: str) -> dict:](../../../tools/foundation/adjudicate_nonfunction_claims.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-4C324B3803ECB7BC / def audits_for(claim_class: str, kind: str, text: str, disposition: str, context: str) -> dict: / IMPLICIT-4C324B3803ECB7BC
-  - 来源：`tools/foundation/adjudicate_nonfunction_claims.py`
-  - 依赖：—；被引用：—
-- [def authority_fingerprint(registry_path: Path, topology_path: Path, profiles_path: Path) -> str:](../../../tools/operations/validate_incremental_execution.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-BECA2DF58901AFA0 / def authority_fingerprint(registry_path: Path, topology_path: Path, profiles_path: Path) -> str: / IMPLICIT-BECA2DF58901AFA0
-  - 来源：`tools/operations/validate_incremental_execution.py`
   - 依赖：—；被引用：—
