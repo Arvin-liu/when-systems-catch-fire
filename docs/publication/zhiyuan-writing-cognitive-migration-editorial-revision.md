@@ -125,4 +125,3 @@ This is a bounded reconstruction for independent review. It is not a new
 current method version, not a merge candidate for formal main, and not
 `EPISTEMICALLY_ACCEPTED`. The accompanying source record, examples, and review
 report are required before any owner decision.
-

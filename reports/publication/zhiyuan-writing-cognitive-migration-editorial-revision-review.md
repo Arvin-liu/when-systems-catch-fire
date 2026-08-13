@@ -51,4 +51,3 @@ semantic reviewer audits:
 
 This packet does not mark the module `READY`, does not update formal main, and
 does not set `EPISTEMICALLY_ACCEPTED`.
-

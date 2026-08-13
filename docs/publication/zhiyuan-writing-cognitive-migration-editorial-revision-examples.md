@@ -67,4 +67,3 @@ The pass can make a movement more legible, but neither before/after pair
 measures reader cognition. They are editorial demonstrations with fixed source
 boundaries, not validation data. The examples do not justify a style clone,
 an author-similarity score, a research runtime, or a method-level acceptance.
-

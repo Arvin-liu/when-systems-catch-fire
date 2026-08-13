@@ -50,4 +50,3 @@ scientific claims.
    `CANDIDATE_BACKSTAGE_TEMPLATE_PENDING_INDEPENDENT_REVIEW`.
 4. A future owner decision must choose whether this candidate stays separate,
    is incorporated into a future method revision, or is retired.
-
