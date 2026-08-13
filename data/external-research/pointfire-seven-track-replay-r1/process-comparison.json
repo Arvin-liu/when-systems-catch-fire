@@ -1,6 +1,6 @@
 {
   "step": "STEP03",
-  "status": "COMPARISON_COMPLETE_WITHOUT_EXTERNAL_VALIDITY_UPGRADE",
+  "status": "COMPARISON_REPAIRED_PENDING_FRESH_ROLE_C_REVIEW",
   "baseline_artifact": "1111 STEP01/BLINDED-BASELINE.md",
   "governed_artifacts": [
     "reports/external-research/pointfire-seven-track-replay-r1/REPLAY-REPORT.md",
@@ -10,10 +10,10 @@
   "incremental_dimensions": [
     "TRACEABILITY_ADDED",
     "SOURCE_BOUNDARY_ADDED",
-    "MEASUREMENT_BOUNDARY_ADDED",
-    "CLAIM_CEILING_MADE_EXPLICIT",
-    "CONTRADICTION_VISIBILITY_ADDED",
-    "ABSTENTION_TYPED",
+    "MEASUREMENT_BOUNDARY_REINFORCED_NOT_UNIQUE",
+    "CAUSAL_AUDIT_ADDED",
+    "CONTRADICTION_TRACEABILITY_ADDED",
+    "ABSTENTION_RECEIPT_ADDED",
     "REPLAY_RECEIPT_ADDED"
   ],
   "not_demonstrated": [
@@ -23,9 +23,17 @@
   ],
   "source_family_counts": {
     "blinded_baseline_ledger_entries": 8,
-    "governed_pass_source_families": 9,
+    "governed_pass_source_families": 7,
+    "governed_contextual_or_method_records": 2,
     "governed_substantive_observation_or_model_families": 7,
     "governed_official_guidance_families": 2
   },
+  "architecture_value_status": "MIXED_VALUE_WITH_COST_OR_UNDERDETERMINED",
+  "baseline_already_had": [
+    "endpoint separation",
+    "alternative explanations",
+    "causal ceiling",
+    "conditional conclusion"
+  ],
   "comparison_ceiling": "PROCESS_INCREMENT_AND_BOUNDARY_DISCIPLINE_ONLY"
 }
