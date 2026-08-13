@@ -1,0 +1,76 @@
+{
+  "step": "STEP09",
+  "status": "CALIBRATION_COMPLETE_WITH_EXPLICIT_RESIDUALS",
+  "base_tip": "e5c6d1d0b75dae41b414474bc22747816cd00c78",
+  "preregistration_commit": "593dda901d7a1073680eb4c185b4fe5dd1d728bb",
+  "environment": {
+    "default_pytest_available": false,
+    "initial_jsonschema_available": false,
+    "rerun_environment": "uv temporary environment with pytest and jsonschema",
+    "limitation_status": "RECORDED_ENVIRONMENT_LIMITATION"
+  },
+  "component_results": [
+    {
+      "id": "MCF",
+      "baseline": {
+        "simple_graph": true,
+        "typed_relation_class": false,
+        "claim_ceiling": false,
+        "residue": false
+      },
+      "declared_test_command": "PYTHONPATH=. uv run --no-project --with pytest --with jsonschema pytest -q --disable-warnings tests/test_multiscale_causal_fabric.py",
+      "declared_tests_passed": 4,
+      "declared_tests_failed": 0,
+      "status": "OBSERVED_INCREMENTAL_VALUE_WITHIN_REPLAY",
+      "incremental_capabilities": ["typed_relation_classes", "causal_fabric_diff", "claim_ceiling_and_residue", "deterministic_projection"],
+      "external_validity": "NOT_ESTABLISHED"
+    },
+    {
+      "id": "PSD",
+      "baseline": {
+        "normalized_kernel": true,
+        "trajectory_probability": true,
+        "probability_semantics": false,
+        "observational_interventional_split": false
+      },
+      "declared_test_command": "PYTHONPATH=. uv run --no-project --with pytest --with jsonschema pytest -q --disable-warnings tests/test_probabilistic_system_dynamics.py",
+      "declared_tests_passed": 6,
+      "declared_tests_failed": 0,
+      "status": "OBSERVED_INCREMENTAL_VALUE_WITHIN_REPLAY",
+      "incremental_capabilities": ["probability_semantics", "system_boundary", "observation_intervention_separation", "calibration_and_transition_diff"],
+      "external_validity": "NOT_ESTABLISHED"
+    },
+    {
+      "id": "ARN",
+      "baseline": {
+        "simple_static_path": true,
+        "temporal_activation": false,
+        "higher_order_relation": false,
+        "claim_ceiling": false
+      },
+      "declared_test_command": "PYTHONPATH=. uv run --no-project --with pytest --with jsonschema pytest -q --disable-warnings tests/test_adaptive_relational_network.py tests/test_adaptive_relational_network_operational.py tests/test_adaptive_relational_network_validation_contract.py",
+      "declared_tests_passed": 37,
+      "declared_tests_failed": 0,
+      "status": "OBSERVED_INCREMENTAL_VALUE_WITHIN_REPLAY",
+      "incremental_capabilities": ["temporal_path_continuity", "direction_policy", "multilayer_and_higher_order_relations", "deterministic_diff_and_residue"],
+      "external_validity": "NOT_ESTABLISHED"
+    },
+    {
+      "id": "Function_OS",
+      "baseline": {
+        "simple_bounded_success": true,
+        "precondition_rejection": true,
+        "artifact_trace_registry": false
+      },
+      "declared_test_command": "PYTHONPATH=. uv run --no-project --with pytest pytest -q tests",
+      "declared_tests_passed": 166,
+      "declared_tests_failed": 0,
+      "status": "OBSERVED_INCREMENTAL_VALUE_WITHIN_REPLAY",
+      "incremental_capabilities": ["specification_to_artifact", "execution_trace", "validator_feedback", "revision_and_rollback_registry"],
+      "external_validity": "NOT_ESTABLISHED",
+      "warnings": ["datetime.utcnow deprecation warnings in registry tests"]
+    }
+  ],
+  "global_ceiling": "bounded_repository_capability_comparison_only",
+  "epistemically_accepted": false
+}
