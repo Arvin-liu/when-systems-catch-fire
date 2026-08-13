@@ -109,6 +109,11 @@
   - 可搜索名称：NFC-a0940ee425760d97 / Candidate: Ignition Iteration Method 1.4.0 adds fail-closed continuous stage snapshot publication. A schema-backed regis
   - 来源：`CHANGELOG.md`
   - 依赖：—；被引用：—
+- [Changed: the concrete microphone scene constrains the later analogy.](../../../docs/publication/zhiyuan-writing-cognitive-migration-editorial-revision-examples.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-a98acb75bba60f58 / Changed: the concrete microphone scene constrains the later analogy.
+  - 来源：`docs/publication/zhiyuan-writing-cognitive-migration-editorial-revision-examples.md`
+  - 依赖：—；被引用：—
 - [CI 的仓库内门使用确定性 schema、语义和投影检查；独立验收者还必须在线重新获取 PR 身份、HEAD 与 Actions，不能只采信记录时间的 attestation。](../../../docs/operations/stage-snapshot-publication.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-6e3478fe878eae79 / CI 的仓库内门使用确定性 schema、语义和投影检查；独立验收者还必须在线重新获取 PR 身份、HEAD 与 Actions，不能只采信记录时间的 attestation。
