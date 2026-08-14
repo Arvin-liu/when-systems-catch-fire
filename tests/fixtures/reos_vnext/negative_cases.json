@@ -1,0 +1,15 @@
+[
+  {"id":"cycle","expected_code":"CYCLE","description":"obligation dependency cycle"},
+  {"id":"unknown_dependency","expected_code":"UNKNOWN_DEPENDENCY","description":"dangling obligation dependency"},
+  {"id":"silent_question_mutation","expected_code":"QUESTION_MUTATION","description":"question digest changed without append-only amendment"},
+  {"id":"evidence_truth_upgrade","expected_code":"EVIDENCE_TRUTH_UPGRADE","description":"retrieval record attempts to set epistemic or truth state"},
+  {"id":"review_owner_acceptance","expected_code":"REVIEW_OWNER_ACCEPTANCE","description":"review decision attempts to set Owner acceptance"},
+  {"id":"canonical_claim_masquerade","expected_code":"CANONICAL_CLAIM_MASQUERADE","description":"claim candidate is marked canonical or Foundation-authoritative"},
+  {"id":"handoff_missing_prohibited_inference","expected_code":"HANDOFF_PROHIBITED_INFERENCE","description":"handoff projection omits prohibited inference"},
+  {"id":"provider_hard_dependency","expected_code":"PROVIDER_HARD_DEPENDENCY","description":"provider/model is required capability without protocol justification"},
+  {"id":"full_activation","expected_code":"FULL_UNAVAILABLE","description":"REOS_FULL activation in R1"},
+  {"id":"artifact_missing_provenance","expected_code":"ARTIFACT_PROVENANCE","description":"artifact reference has no provenance"},
+  {"id":"conflicting_state_namespaces","expected_code":"CONFLICTING_STATE_NAMESPACE","description":"case state contains obligation/review/retrieval state"},
+  {"id":"generic_success","expected_code":"GENERIC_SUCCESS","description":"generic SUCCESS terminal value"}
+]
+
