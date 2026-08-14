@@ -12,6 +12,10 @@ on:
     branches: [main]
   workflow_dispatch:
 
+defaults:
+  run:
+    working-directory: ignition
+
 jobs:
   lifecycle-validation:
     runs-on: ubuntu-latest

@@ -6,24 +6,24 @@ on:
   pull_request:
     paths:
       - '.github/workflows/q33-governance-validation.yml'
-      - 'requirements-q33.txt'
-      - 'data/governance/**'
-      - 'schemas/governance/**'
-      - 'tools/governance/**'
-      - 'data/operations/propagation/121Q33-request.json'
-      - 'tests/test_q33_governance_infrastructure.py'
-      - 'tests/test_publication_gate_fail_closed.py'
-      - 'tests/test_publication_provenance_attack.py'
-      - 'tests/test_source_rights_gate_enum_consistency.py'
-      - 'tests/test_generated_output_authority_generic.py'
-      - 'tests/test_generated_output_authority_negative.py'
-      - 'tests/test_registered_generator_attack.py'
-      - 'tests/test_jurisdiction_sovereignty_neutral.py'
-      - 'tests/test_diff_coverage_gate.py'
-      - 'tests/test_era_resolver_generalization.py'
-      - 'tests/test_human_front_door.py'
-      - 'tests/test_pr_front_door_audit.py'
-      - 'tests/test_q33_fail_closed_fixtures.py'
+      - 'ignition/requirements-q33.txt'
+      - 'ignition/data/governance/**'
+      - 'ignition/schemas/governance/**'
+      - 'ignition/tools/governance/**'
+      - 'ignition/data/operations/propagation/121Q33-request.json'
+      - 'ignition/tests/test_q33_governance_infrastructure.py'
+      - 'ignition/tests/test_publication_gate_fail_closed.py'
+      - 'ignition/tests/test_publication_provenance_attack.py'
+      - 'ignition/tests/test_source_rights_gate_enum_consistency.py'
+      - 'ignition/tests/test_generated_output_authority_generic.py'
+      - 'ignition/tests/test_generated_output_authority_negative.py'
+      - 'ignition/tests/test_registered_generator_attack.py'
+      - 'ignition/tests/test_jurisdiction_sovereignty_neutral.py'
+      - 'ignition/tests/test_diff_coverage_gate.py'
+      - 'ignition/tests/test_era_resolver_generalization.py'
+      - 'ignition/tests/test_human_front_door.py'
+      - 'ignition/tests/test_pr_front_door_audit.py'
+      - 'ignition/tests/test_q33_fail_closed_fixtures.py'
   push:
     branches:
       - 'agent/121q33-global-copyright-risk-and-rights-governance'
@@ -33,6 +33,9 @@ concurrency:
   cancel-in-progress: true
 permissions:
   contents: read
+defaults:
+  run:
+    working-directory: ignition
 jobs:
   validate:
     runs-on: ubuntu-latest

@@ -1,0 +1,221 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/schemas/operations/lifecycle-event.schema.json",
+  "title": "Ignition iteration lifecycle event (task 108, contract §3/§5)",
+  "description": "Append-only, event-sourced lifecycle record. A task is never represented by a single row that must know its own future merge; instead it is the union of immutable events plus annotated terminal tags.",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "event_type",
+    "task_number",
+    "task_id",
+    "control_commit",
+    "record_type",
+    "lifecycle_state"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "pattern": "^1\\.0\\.[0-9]+$"
+    },
+    "event_type": {
+      "type": "string",
+      "enum": [
+        "ITERATION_CANDIDATE",
+        "TERMINALIZATION_PROJECTION",
+        "LEGACY_TERMINAL_SUCCESS"
+      ]
+    },
+    "task_number": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "task_id": {
+      "type": "string",
+      "pattern": "^IGNITION-.*-R1-2026"
+    },
+    "control_commit": {
+      "type": "string",
+      "description": "The relay/current control commit that authorized this task. Must be an existing ref/commit, never a placeholder."
+    },
+    "predecessor_terminal_state": {
+      "type": "string"
+    },
+    "base_commit": {
+      "type": ["string", "null"]
+    },
+    "record_type": {
+      "type": "string",
+      "enum": [
+        "ITERATION_CANDIDATE",
+        "TERMINALIZATION_PROJECTION",
+        "LEGACY_TERMINAL_SUCCESS"
+      ]
+    },
+    "lifecycle_state": {
+      "type": "string",
+      "enum": [
+        "READY_FOR_CONTENT_MERGE",
+        "CONTENT_MERGED_AWAITING_TERMINALIZATION",
+        "AWAITING_TERMINAL_TAG",
+        "TERMINAL_SUCCESS",
+        "BLOCKED",
+        "INVALID"
+      ]
+    },
+    "formal_content_pr_number": {
+      "type": ["integer", "null"]
+    },
+    "exact_reviewed_content_head": {
+      "type": ["string", "null"]
+    },
+    "intended_terminal_state": {
+      "type": "string"
+    },
+    "expected_terminal_tag_name": {
+      "type": ["string", "null"]
+    },
+    "receipt_branch": {
+      "type": "string"
+    },
+    "receipt_root": {
+      "type": "string"
+    },
+    "content_pr_number": {
+      "type": ["integer", "null"]
+    },
+    "content_merge_commit": {
+      "type": ["string", "null"]
+    },
+    "terminalization_pr_number": {
+      "type": ["integer", "null"]
+    },
+    "terminalization_merge_commit": {
+      "type": ["string", "null"]
+    },
+    "terminal_tag_name": {
+      "type": ["string", "null"]
+    },
+    "terminal_tag_object_sha": {
+      "type": ["string", "null"]
+    },
+    "terminal_tag_target": {
+      "type": ["string", "null"]
+    },
+    "core_receipt_sha256": {
+      "type": ["string", "null"]
+    },
+    "attestation_mode": {
+      "type": ["string", "null"]
+    },
+    "recovery_index": {
+      "type": ["integer", "null"],
+      "minimum": 1
+    },
+    "recovery_of_tag": {
+      "type": ["string", "null"]
+    },
+    "recovery_of_tag_object_sha": {
+      "type": ["string", "null"]
+    },
+    "recovery_of_tag_target": {
+      "type": ["string", "null"]
+    },
+    "recovery_reason": {
+      "type": ["string", "null"]
+    },
+    "recovery_authorization_control_commit": {
+      "type": ["string", "null"]
+    },
+    "terminal_state": {
+      "type": ["string", "null"]
+    },
+    "impact_dimensions": {
+      "type": "object"
+    },
+    "public_surfaces_expected_to_change": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "article_review_state": {
+      "type": "object"
+    },
+    "map_impact_verdict": {
+      "type": "string"
+    },
+    "note": {
+      "type": ["string", "null"]
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "event_type": {
+            "const": "ITERATION_CANDIDATE"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "lifecycle_state": {
+            "const": "READY_FOR_CONTENT_MERGE"
+          }
+        },
+        "required": [
+          "formal_content_pr_number",
+          "exact_reviewed_content_head",
+          "intended_terminal_state",
+          "expected_terminal_tag_name"
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "event_type": {
+            "const": "TERMINALIZATION_PROJECTION"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "content_pr_number": {
+            "type": "integer"
+          },
+          "content_merge_commit": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "content_pr_number",
+          "content_merge_commit"
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "event_type": {
+            "const": "TERMINALIZATION_PROJECTION"
+          },
+          "terminal_tag_name": {
+            "pattern": "^ignition/iterations/[0-9]+/terminal-r1-recovery-[1-9][0-9]*$"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "recovery_index",
+          "recovery_of_tag",
+          "recovery_of_tag_object_sha",
+          "recovery_of_tag_target",
+          "recovery_reason",
+          "recovery_authorization_control_commit"
+        ]
+      }
+    }
+  ]
+}

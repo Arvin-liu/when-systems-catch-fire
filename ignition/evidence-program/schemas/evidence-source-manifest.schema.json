@@ -1,0 +1,27 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/evidence-program/schemas/evidence-source-manifest.schema.json",
+  "title": "Evidence Source Manifest (per acquired source)",
+  "description": "Provenance record for one externally acquired evidence item (Task 103 §6).",
+  "type": "object",
+  "required": [
+    "source_id", "canonical_identifier", "retrieval_timestamp_utc", "version_or_date",
+    "response_sha256", "licence", "raw_redistribution_allowed", "acquisition_status"
+  ],
+  "properties": {
+    "source_id": {"type": "string"},
+    "canonical_identifier": {"type": "string", "description": "Immutable identifier, e.g. bare DOI. Not a mutable display name."},
+    "retrieval_timestamp_utc": {"type": "string"},
+    "version_or_date": {"type": "string"},
+    "response_sha256": {"type": ["string", "null"], "description": "Checksum of the retained/observed response body. Null when acquisition failed (status != OK)."},
+    "licence": {"type": "string"},
+    "raw_redistribution_allowed": {"type": "boolean"},
+    "acquisition_status": {"type": "string", "enum": ["OK", "RESOLUTION_FAILED", "PARSE_FAILED", "NETWORK_ERROR", "POLICY_BLOCKED"]},
+    "observed_title": {"type": ["string", "null"]},
+    "observed_year": {"type": ["integer", "null"]},
+    "title_match": {"type": ["boolean", "null"]},
+    "year_match": {"type": ["boolean", "null"]},
+    "retraction_signal": {"type": ["string", "null"]},
+    "notes": {"type": "string"}
+  }
+}

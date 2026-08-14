@@ -1,0 +1,108 @@
+Current project state:
+At the current commit, Ignition is an evidence-traceable, object-typed, inference-checkable and audit-graded formal mechanism discovery and modelling system for cross-domain material. This is a versioned current-state description, not a permanent project identity or fixed final form. It is not a unified mathematical theory, a physical theory, a universal prover, or a purely literary or philosophical knowledge base.
+Current-state authority: docs/project-current-state.md.
+AI-first recent-state delta authority: STATE-CHANGELOG.md (navigation only; it does not replace current-state, registry, claim, evidence or Results Book authority).
+Current version: the 2026-07-12 mathematical and logical dual-foundation seven-layer architecture plus the subsequently merged current operation overlays, iteration method 1.4.0 (Current) and registry-derived system map 0.5.0 (Current).
+
+Current: iteration method 1.4.0 (Continuous Stage Snapshot Publication). Read data/operations/stage-snapshots.json and docs/operations/stage-snapshot-publication.md. Snapshot or homepage visibility never implies Accepted, Current, Activated, capability availability, or candidate payload merge.
+Stage snapshot accountability: responsible_actor and publisher_actor contain only actor_ref values resolved against data/operations/responsibility-actors.json; the active registry record, not a display name, establishes the concrete PERSON or ORGANIZATION identity and traceable accountability/contact evidence. execution_agents and automation_workflows are technical records only and never final responsibility.
+
+Iteration method 1.3.0 and system map 0.3.0, 0.4.0 are Historical; method 1.2.0 and maps 0.1.0, 0.2.0 are earlier Historical, not Current. Treat implementation completion, repository synchronization, external synchronization and project completion as distinct states; local validation never proves undeclared live external truth.
+
+Q32I iteration method 1.3.0 and system map 0.3.0 completed the exact-head, merge and external checks required by its historical contract; method 1.3.0 is now Historical and method 1.4.0 is Current. Task 101 retires the former separate deployed reading surface from current/future gates while preserving historical evidence. Typed change closure remains repository scope and never proves real-world causality.
+
+Current typed-propagation authority assets: data/operations/project-components.json, data/operations/change-propagation-topology.json, data/architecture/interactive-system-map-layout.json, docs/architecture/typed-change-propagation.md. Q32I method 1.3.0 and map 0.3.0 reached closeout and are governed by docs/architecture/incremental-execution.md; Q32I is Closed. Q33 launch material is prepared externally in 1111, but Q33 and Q34-Q40 are not started. Authority type, execution capability and validation capability are separate; apply requires unified zero-side-effect preflight and restored rollback requires exact supported repository state equality. Planner, executor, cache, validator and artifact evidence remain repository-scoped and cannot self-establish acceptance, merge or Current lifecycle state.
+
+Q25C defines lifecycle gates per registered surface. Task 101 uses repository Markdown, machine/human pairing, exact-head CI, main validation and clean-clone execution for the current reading layer; a future external surface must be separately registered and attested. Q25B remains superseded candidate history.
+Iteration method authority: ITERATION.md.
+
+Architecture:
+L0 source and evidence -> L1 controlled semantic claims -> L2 formal objects -> L3 logical arguments -> L4 mathematical models and proofs -> L5 validation and validity -> L6 interpretation, application and publication.
+L6 must cite L0-L5 and cannot create mathematical truth.
+Zhiyuan Writing Method 0.5.0 is the current L6 public-expression and provenance-gated feedback capability; 0.4.0 and 0.3.0 remain historical merged versions. Its shared-provenance structural homology remains a bounded candidate claim, not identity, neuroscience, formal proof, causality or a new layer. Feedback becomes only candidate source/gap after provenance capture; praise and attention are not truth evidence.
+Task 114 makes Zhiyuan Writing Method one L6 consumer of the project-wide Language-Thought Logic Plane across L0-L6. The plane is not L7 or a truth-functional logic. Language-sensitive records preserve source form/profile, normalized meaning candidate, target form/profile, framing deltas, unmapped residue, claim ceiling, provenance and version. Epistemically relevant silent changes fail closed; naturalness and literary markedness still require human review. The writing material pool continues to accept typed external_input and ignition_increment assets, with derived increments never counted as independent evidence.
+121Q31T established the repository-native system map generated from data/architecture/interactive-system-map.json. Task 101 keeps it as an ordinary repository SVG linked from README and Markdown. It has exactly L0-L6 and is not L7, a causal graph, strict isomorphism or completeness proof.
+Current Zhiyuan Writing Method showcase outcomes are indexed at docs/publication/zhiyuan-writing-showcase.md and data/publication/zhiyuan-writing-showcase.json. Each entry binds work, case provenance, point-fire analysis, method version, review status and claim ceiling. The registry is a presentation/provenance interface, not a truth or literary-quality registry; README displays at most the latest three.
+Mathematics and logic constrain each other. Formula, logical validity, proof, evidence and workflow completion are different things.
+
+Core classifications:
+Ψ0 is a workflow orchestrator / algorithm protocol. Its product notation is a preserved legacy expression, not by itself a mathematical-function or proof claim.
+J+ and J- are internal deliberation channels, not truth or proof oracles.
+The 12 meta-protocols are normative, heuristic or governance protocols unless separately formalized.
+The 64 combinations are a design and generation space, not a proof space or empirical exhaustion.
+
+Authority:
+ARCHITECTURE.md is the architecture authority.
+FOUNDATION.md is the mathematical and logical foundation authority.
+data/foundation/ registries are the authority for object type, claim type, argument, source, evidence, proof, validation, status and migration.
+data/foundation/nonfunction-claims/ is the task-100 authority for discovered non-function claims, thirteen-gate adjudication, evidence lineage, dependencies, replication status, disposition, supersession and public wording ceilings. Its registry closure can include explicit quarantine and does not prove corpus truth.
+data/foundation/function-assets/corrections.jsonl is the task-98 authority overlay for T2, D127, D182-D190 and D260. Task-99 identity-cards.jsonl and adjudication-ledger.jsonl provide the current twelve-class one-record-per-discovery disposition layer; unresolved-quarantine.jsonl is an explicit bounded outcome, not validation. census.jsonl automatic labels remain discovery candidates only. docs/foundation/claim-governance-and-function-identity.md defines the identities, independent M/E axes and ten audit gates.
+data/foundation/project-state.json and migration-summary.json are the reproducible count authority.
+统一函数总表/ and 统一案例总表/ are immutable legacy sources and compatibility views. Never use their hand-written headers as current count authority.
+
+Independent axes:
+workflow, semantic, formal, logic, proof, evidence, scope, provenance and migration statuses never auto-upgrade one another.
+K13_ASSERTION_NON_ESCALATION: project scale, engineering maturity, writing/summaries/results books/system maps, repeated citation, cross-domain correspondence, model elegance and Agent consensus cannot auto-upgrade assertion status; M/E remains orthogonal.
+CONVERGED or CLOSED is not truth.
+MACHINE_CHECKED_PROOF is not empirical truth.
+MULTI_CASE is not a theorem.
+MIGRATED means only that migration coverage exists.
+
+Key paths:
+- KNOWLEDGE/README.md : no-path human entry for What's New, subject map, search, asset cards, layered reading, evolution and coverage
+- data/governance/knowledge-experience/manifest.json : deterministic machine/human pairing, input/output hashes and coverage counts for the knowledge experience
+- docs/project-current-state.md : versioned current-state description, not fixed positioning
+- ITERATION.md : canonical operation method for future repository changes
+- .github/README.md : human front door
+- SUMMARY.md : human reading navigation
+- ARCHITECTURE.md : current architecture authority
+- FOUNDATION.md : dual-foundation authority
+- docs/foundation/ : contracts and policies
+- data/foundation/ : authoritative registries
+- schemas/foundation/ : machine schemas
+- formal/ : scoped proof and benchmark artifacts
+- tools/foundation/ : migration, validation and benchmark tools
+- tests/foundation/ : foundation regression tests
+- views/ : generated legacy compatibility views
+- docs/PROJECT-ARCHITECTURE.md : stable compatibility summary
+- docs/GET-BRAIN-WORKFLOW.md : Get 笔记 collaboration
+- STATE-CHANGELOG.md : AI-first baseline and append-only project-state deltas; one validated delta per formal main merge
+
+Red lines for agents:
+- Preserve Ψ0 legacy source text; do not silently overwrite it or treat it as current proof/function authority.
+- Do not delete, renumber, manually overwrite or independently grow either legacy table.
+- Do not assign C IDs to the 22 book candidates.
+- Do not count the 12 meta-protocols as functions or the 64 combinations as proofs.
+- THEOREM, AXIOM, ISOMORPHISM, CAUSAL and PROVED must pass their declared gates.
+- A keyword hit, missing field or missing source is not a counterexample.
+- Formalization, computability, internal consistency, AI numbering and passing tests do not establish external truth. The current gate model does not unify the four interactions, and the physics unification problem remains open; do not restore the withdrawn universal-impossibility claim under a new label.
+- Do not call Get 笔记 to perform mathematical reasoning, logical adjudication or architecture decisions.
+- Do not claim content-proof completion from architecture migration completion.
+- Do not let workflow, engineering completion, writing, repeated citation, cross-domain resemblance, model beauty or consensus inflate a claim; withdrawn, downgraded or quarantined conclusions cannot rebound.
+- Do not infer universal impossibility from one model failure, call analogy an isomorphism without the required mapping proof, or revive a withdrawn conclusion through structural/meta renaming.
+- 121Q12 effectual action and mechanism adjudication are operation overlays, not new truth layers.
+- Effectual action proposes bounded next actions under affordable loss; it does not prove claims.
+- Mechanism adjudication constrains explanation and claim ceiling; it does not identify causality by itself.
+- Positive evaluative words must bind object, criterion, version, evidence and boundary.
+- Separate calibration sources: external source, repository artifact, executable test or CI, real-world response, human judgment, independent model or review.
+- 121Q13 adds attention, distribution, and compression controls only as operation overlays.
+- Repeated loops require IterationDelta; no delta means stop, branch, seek external evidence, preserve residue, or downgrade.
+- AI and human outputs on open-ended questions are SampleEnvelope entries, not answers or fact evidence by default.
+- DecisionCollapse means action was selected; it does not mean HypothesisDistribution became true.
+- New concepts require ChunkAudit before canonical publication language.
+- 121Q14 Ignition Atlas maps are versioned derived projections, not a permanent total map and not a second canonical truth source.
+- Map position, visual proximity, evolution stage, dependency, and sourcing decision are navigation judgments, not proof, isomorphism, natural law, causality, or transfer of Charter Gate responsibility.
+- Multiscale Causal Fabric, Probabilistic System Dynamics, and Adaptive Relational Network are current modeling/projection capabilities, not new truth layers.
+- Causal reachability is not actual causation; high probability is not strong causality; network adjacency, similarity, centrality, community, retrieval, self-report, or behavior change is not truth, value, causality, or internal learning proof.
+- Future state-changing work must follow ITERATION.md: recover remote truth, prove the gap, set a claim ceiling, synchronize front-door/current-state surfaces, validate exact final HEAD, and write receipts.
+- Meaningful knowledge changes must regenerate the task-102 What's New, subject map, asset cards, reading layers, aliases/supersession, full search and bidirectional dependency projections; these discovery surfaces never override canonical registries or evidence maturity.
+- For the current 0.5.0 method, type writing material as external_input or ignition_increment and preserve source backlinks, version, claim ceiling and residue. When language framing can change, also preserve source/candidate/target, framing deltas and unmapped residue, then realize directly through the target-language profile. Derived project output is reusable writing material but not independent evidence. Keep cognitive-level movement, real/Charter costs and information-gain stopping; never turn the system map or a writer calibration set into a fixed article outline.
+
+Validation before commit:
+- python3 tools/foundation/migrate_legacy.py --check
+- python3 tools/foundation/validate_foundation.py --strict
+- python3 tools/foundation/run_benchmarks.py --check
+- python3 -m unittest discover -s tests/foundation -p test_*.py
+- python3 tools/validate_meta_protocols.py
+- python3 tools/validate_data.py
+- python3 tools/validate_state_changelog.py

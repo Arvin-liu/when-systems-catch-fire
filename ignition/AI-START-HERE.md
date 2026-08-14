@@ -1,0 +1,76 @@
+# AI START HERE
+
+这是点火项目的零背景 AI 冷启动入口。
+
+## 读取顺序
+
+1. `../.github/README.md`：人类入口、价值边界与当前结论。
+2. STATE-CHANGELOG.md：baseline 与最近的正式 delta；它是 AI 状态恢复的高优先级导航，不替代下列权威资产。
+3. KNOWLEDGE/README.md：无需预知路径的最新变化、主题地图、搜索、资产卡与分层阅读入口。
+4. docs/project-current-state.md：版本化、可演化、非终局的当前状态。
+5. ITERATION.md：点火迭代操作法；状态改变任务必须先恢复远端真相、确认缺口和 claim ceiling。
+6. ARCHITECTURE.md：现行七层架构权威；121Q12 双环是跨层操作 overlay，不是新真值层。
+7. FOUNDATION.md：数学与逻辑双地基。
+8. llms.txt：机器可读边界。
+9. AI-HANDOFF.md：当前权威、兼容和任务交接。
+10. data/foundation/project-state.json 与 registry-manifest.json：机器状态。
+11. 当前任务命令与相关 source/schema。
+
+若任务涉及函数、模型、定理、公式、律、跨域类比或现实强断言，在读取 Foundation 后立即读取 `docs/foundation/claim-governance-and-function-identity.md`、`data/foundation/function-assets/corrections.jsonl`、对应 `identity-cards.jsonl` 记录及其 quarantine/obligation 状态。M 与 E 不得互推，自动 census 不能覆盖专项纠偏；task 99 的 registry closure 也不能被解释为全部证明或外部验证完成。
+
+若对象是非函数型定理、规律、机制、因果、不可能性、跨域对应、预测、经验或本体断言，还必须读取 `data/foundation/nonfunction-claims/claim-registry.jsonl`、生成索引和未来断言准入协议。task 100 的 closure 可由显式 quarantine 达成，只闭合登记与谱系，不证明内容为真；任何撤回结论都不得以“结构性”“元”“深层”或框架内改名回弹。
+
+阶段成果展示在专用页 `docs/generated/recent-stage-results.md`（“正在炼化 / Recent Stage Results”）；若需了解阶段快照，必须读取 `data/operations/stage-snapshots.json` 和 `docs/operations/stage-snapshot-publication.md`。方法 `1.4.0`（Continuous Stage Snapshot Publication）已为 Current；README 首页不再嵌入「正在炼化」块。
+
+较早的 `1.3.0` 降为 Historical；快照可见不推出 Accepted、Activated、正式能力可用或候选载荷已进 Main（Homepage Visible != Capability Available）。
+
+读取阶段快照责任字段时，先把 `responsible_actor.actor_ref`／`publisher_actor.actor_ref` 解析到 `data/operations/responsibility-actors.json`；显示名不是权威身份。`execution_agents` 与 `automation_workflows` 只是技术执行记录，禁止把 Agent、模型、CI 或工作流解释为最终责任人或负责组织。
+
+若任务涉及翻译、命题抽取、跨语言建模或 L6 公共故事、文章与作品反馈，还应读取 `docs/architecture/language-thought-logic-plane.md`、`docs/language-thought/README.md`、`docs/publication/zhiyuan-writing-method.md` 与对应后台规格。之元写作法 `0.5.0` 是当前能力，`0.4.0`、`0.3.0` 保留为历史版本。它使用外部输入与点火增量输出双来源素材池，并通过目标语言配置直接成文；不得把点火派生产物重算为独立外部证据。
+
+若任务涉及当前展示的之元写作法成果，还要读取 `docs/publication/zhiyuan-writing-showcase.md` 与 `data/publication/zhiyuan-writing-showcase.json`，并沿每项记录回到作品、案例来源链、点火分析和方法版本。首页只投影最近三项，不是完整清单或真值权威。
+
+若任务需要全项目导航，读取 `docs/architecture/interactive-system-map.md`、`data/architecture/interactive-system-map.json` 与生成 SVG。图是当前导航接口，不是 L7、事实证明或永久唯一总地图。
+
+若任务涉及新增或修改知识，读取 `docs/governance/knowledge-experience-layer.md` 与 `data/governance/knowledge-experience/manifest.json`。人类摘要、主题归类、搜索命中、别名和依赖只用于发现与回链；不得替代来源、registry、M/E、supersession 或 claim ceiling。
+
+## 不得混淆
+
+- 旧函数或案例文件不等于已经证明的数学对象或事实。
+- 公式化、可计算、内部自洽、AI 编号和单元测试通过都不等于外部真实；当前门控模型没有统一四力，也没有证明大一统普遍不可能。
+- object type 与 claim type 分开。
+- workflow、semantic、formal、logic、proof、evidence、scope、provenance、migration 九轴分开。
+- `ASSERTION_INFLATION_GUARD` 是仓库级常驻不变量：工程、写作、总结、成果册、系统图、重复引用、跨域对应、模型美感和 Agent 共识都不能自动抬升断言地位；长期风险“从自我克制滑向大断言”必须持续登记和检查。
+- Ψ₀ 是 workflow orchestrator / algorithm protocol；旧乘积表达只作 legacy source。
+- J+ / J- 是内部审议通道。
+- 12 元协议不是自动成立的数学公理；64 组合不是证明空间。
+- L6 解释和出版不能创造下层真实性。
+- 之元写作法的“层级跃迁”不是新架构层；横向换域、漂亮跳转、模板完成或读者共鸣都不能证明事实、因果、同构或文学质量。
+- 使用 0.5.0 时，先标记 `external_input` 与 `ignition_increment`，保存版本、生成路径、claim ceiling、不可映射残余和原始来源回链；涉及语言转换时还须保存 source form、候选意义、target form 与 framing delta。发布反馈必须登记 provenance 后才能成为候选 source／gap。同源只表示维护者声明的设计来源与结构对应候选，不是大脑事实、形式同构或真值许可。
+- 效果推理只产生行动候选，不产生真值。
+- 机制判断只约束解释和 claim ceiling，不自动产生因果证明。
+- 注意力控制只判断循环是否有信息增量，不证明结论更深。
+- 分布控制只记录输出样本与决策坍缩，不把 AI 采样升级为事实证据。
+- 压缩完整性只判断术语能否进入 canonical 语言，不表示理论升级。
+- 地图集只提供版本化派生导航视图，不替代 registry、矩阵、schema、测试或来源工件。
+- Multiscale Causal Fabric、Probabilistic System Dynamics 和 Adaptive Relational Network 是当前建模/投影能力，不是新真值层。
+- 关系网络的邻接、相似性、中心性、社群、检索和行为变化不能升级为真理、价值、因果或内部学习机制证明。
+- 迭代方法只能约束操作纪律，不能证明实质结论正确。
+- 当前迭代方法是 `1.4.0`（Current），系统图是 `0.5.0`（Current）。
+
+方法 `1.3.0` 与系统图 `0.3.0`、`0.4.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0`、`0.2.0` 为更早 Historical。当前方法要求读取 `data/operations/project-components.json` 与 `data/operations/change-propagation-topology.json`，把变更路径解析为构件、遍历声明关系到 fixpoint、绑定决定／map diff／residue，再由 registries 与布局 overlay 派生系统图。不得把 Git diff、依赖或可达性称为现实因果证明。
+- Q32I 的方法 `1.3.0` 与系统图 `0.3.0` 已独立接受、由 PR #62 普通合并并完成生产收口；其后方法升为 `1.4.0` Current。
+
+`1.3.0` 降为 Historical，Q32I 为 Closed。选择性物化只在完整 profile、authority、plan 与指纹身份一致时选择性物化。Authority 类型、execution capability 与 validation capability 必须分别声明；apply 必须先通过统一预检，rollback（回滚）必须证明整仓字节／类型／symlink／mode 恢复，否则进入 unrecovered 与 recovery package。NonImpactProof 只证明声明关系范围内的非影响；cache 不是真相源；meta-authority 变更强制 full rebuild。Q33 启动包已准备，但 Q33 与 Q34—Q40 均尚未启动。
+- `implementation_complete` 不等于 `project_synchronization_complete`。生产首页部署和实时读取必须分别验证，不能由仓库状态替代。
+- 生命周期门禁按 registry 中每个表面的 `blocks` 计算。任务 101 后，人类阅读层以仓库 Markdown、确定性生成结果、exact-head CI、main 复验和全新克隆为门；任何未来新增外部表面仍必须单独登记和证明，不能由本地验证代替。
+- 正向评价词必须绑定对象、判据、版本、证据和边界。
+- AI 输出不能作为唯一校准源；仓库工件、外部来源、CI、现实反馈、人类判断与独立审查要分开记录。
+
+## 最小验证
+
+执行 tools/foundation 下的 migration check、strict validator、benchmarks 和 tests/foundation；任何失败都保留为 blocker，不得用散文覆盖。
+状态日志的结构、main tip 绑定和仓库内链接另执行 `python3 tools/validate_state_changelog.py`。
+## 许可边界
+
+当前分发版本采用分层许可。核心可执行软件为 BUSL-1.1 并在 Change Date 后转为 AGPL-3.0-or-later；原创文档/报告为 CC BY-NC-SA 4.0；价值宪章和一般治理原则为 CC BY-SA 4.0；公开接口与互操作 schema 为 Apache-2.0。许可作用域以根 LICENSE 与 LICENSES/README.md 为准；历史 MIT 版本权利不追溯撤销。

@@ -1,0 +1,2488 @@
+# 数学与形式化：检索索引
+
+引导问题：对象、运算、定义域、证明和反例究竟完成到哪一步？
+
+此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
+
+- [\| \[D369\]( ) \| \[震荡阻尼-分支步长联合函数\]( ) \| F_{D369}(x) := M14的阻尼影响步长：高](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-4297c151a8da2bd3 / \| \[D369\]( ) \| \[震荡阻尼-分支步长联合函数\]( ) \| F_{D369}(x) := M14的阻尼影响步长：高
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：D369；被引用：—
+- [\| \[D36\]( ) \| \[逆Weibull寿命验证函数\]( ) \| F_{D36}(x) := F(t) = exp(-(](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-b2ef676baf994b37 / \| \[D36\]( ) \| \[逆Weibull寿命验证函数\]( ) \| F_{D36}(x) := F(t) = exp(-(
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：D36；被引用：—
+- [\| \[D370\]( ) \| \[ΔΦ交叉相关-波动累积联合函数\]( ) \| F_{D370}(x) := M1的容斥交](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-ffcbb46a6e52e2fc / \| \[D370\]( ) \| \[ΔΦ交叉相关-波动累积联合函数\]( ) \| F_{D370}(x) := M1的容斥交
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：D342, D370；被引用：—
+- [\| \[D373\]( ) \| \[p*临界标度函数\]( ) \| F_{D373}(x) := M4的K=√n临界附近标度律：涨落方差∝1/\\\|K-√](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-06cd519b18d30ab3 / \| \[D373\]( ) \| \[p*临界标度函数\]( ) \| F_{D373}(x) := M4的K=√n临界附近标度律：涨落方差∝1/\\\|K-√
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：D373；被引用：—
+- [\| \[D382\]( ) \| \[低通滤波-自激振荡竞争函数\]( ) \| F_{D382}(x) := M13的K·τ_dela](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-cba1776488e3b631 / \| \[D382\]( ) \| \[低通滤波-自激振荡竞争函数\]( ) \| F_{D382}(x) := M13的K·τ_dela
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：D382；被引用：—
+- [\| \[D384\]( ) \| \[双重打击-双重加速同构函数\]( ) \| F_{D384}(x) := M1的D370与D348](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-f202ea5f81d826e3 / \| \[D384\]( ) \| \[双重打击-双重加速同构函数\]( ) \| F_{D384}(x) := M1的D370与D348
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：D348, D370, D384；被引用：—
+- [\| \[D385\]( ) \| \[复活代价n无关性起源函数\]( ) \| F_{D385}(x) := M2的复活总代价∝Φ(拐点)与](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-88220015a2472a81 / \| \[D385\]( ) \| \[复活代价n无关性起源函数\]( ) \| F_{D385}(x) := M2的复活总代价∝Φ(拐点)与
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：D385；被引用：—
+- [\| \[D386\]( ) \| \[容斥集中性统一函数\]( ) \| F_{D386}(x) := M3的D372与D328是同一现象不同表述。统一](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-9ce92267492ded50 / \| \[D386\]( ) \| \[容斥集中性统一函数\]( ) \| F_{D386}(x) := M3的D372与D328是同一现象不同表述。统一
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：D328, D372, D386；被引用：—
+- [\| \[D387\]( ) \| \[容斥-耦合配分函数\]( ) \| F_{D387}(x) := M4的Ising同构意味着配分函数Z = Σ e](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-e2b64b1667d2873d / \| \[D387\]( ) \| \[容斥-耦合配分函数\]( ) \| F_{D387}(x) := M4的Ising同构意味着配分函数Z = Σ e
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：D387；被引用：—
+- [\| \[D389\]( ) \| \[不归点-吸引域边界统一函数\]( ) \| F_{D389}(x) := M6的δ_c恰好是D29](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-9d7ed6497f2a48c2 / \| \[D389\]( ) \| \[不归点-吸引域边界统一函数\]( ) \| F_{D389}(x) := M6的δ_c恰好是D29
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：D292, D389；被引用：—
+- [\| \[D393\]( ) \| \[溢出-传染通道统一函数\]( ) \| F_{D393}(x) := M10的溢出是传染的物理通道。统一传](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-b6ca4ec96c5f697c / \| \[D393\]( ) \| \[溢出-传染通道统一函数\]( ) \| F_{D393}(x) := M10的溢出是传染的物理通道。统一传
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：D309, D379, D393；被引用：—
+- [\| \[D394\]( ) \| \[慢性消耗-波动累积同构检验\]( ) \| F_{D394}(x) := M11的D380与D34](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-2b15d13253644298 / \| \[D394\]( ) \| \[慢性消耗-波动累积同构检验\]( ) \| F_{D394}(x) := M11的D380与D34
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：D342, D380, D394；被引用：—
+- [\| \[D396\]( ) \| \[延迟临界-不可逆点统一函数\]( ) \| F_{D396}(x) := F_{D396}: X_](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-4984361c427c6861 / \| \[D396\]( ) \| \[延迟临界-不可逆点统一函数\]( ) \| F_{D396}(x) := F_{D396}: X_
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：D396；被引用：—
+- [\| \[D397\]( ) \| \[两步策略最优性证明函数\]( ) \| F_{D397}(x) := M14的D280两步策略是最小化T_](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-02ccdbb700b38bfc / \| \[D397\]( ) \| \[两步策略最优性证明函数\]( ) \| F_{D397}(x) := M14的D280两步策略是最小化T_
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：D280, D397；被引用：—
+- [\| \[D39\]( ) \| \[统一内部驱动力函数\]( ) \| F_{D39}(x) := P_internal = k×ε×exp(-ε/ε_op](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-e396cf5026b6f7b2 / \| \[D39\]( ) \| \[统一内部驱动力函数\]( ) \| F_{D39}(x) := P_internal = k×ε×exp(-ε/ε_op
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：D39；被引用：—
+- [\| \[D400\]( ) \| \[集中性-序参量统一函数\]( ) \| F_{D400}(x) := M3的I_concentration](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-2948f5783ed55ebc / \| \[D400\]( ) \| \[集中性-序参量统一函数\]( ) \| F_{D400}(x) := M3的I_concentration
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：D386, D387, D400；被引用：—
+- [\| \[D403\]( ) \| \[δ_c-相变点统一函数\]( ) \| F_{D403}(x) := M6的δ_c对应配分函数中耦合-容斥](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-69061bb4a42549ad / \| \[D403\]( ) \| \[δ_c-相变点统一函数\]( ) \| F_{D403}(x) := M6的δ_c对应配分函数中耦合-容斥
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：D389, D403；被引用：—
+- [\| \[D404\]( ) \| \[双临界n统一函数\]( ) \| F_{D404}(x) := M7的n*∝β/(p̄·Σαᵢ)依赖干预力度β，n_c](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-0040294f24faf1fe / \| \[D404\]( ) \| \[双临界n统一函数\]( ) \| F_{D404}(x) := M7的n*∝β/(p̄·Σαᵢ)依赖干预力度β，n_c
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：D404；被引用：—
+- [\| \[D406\]( ) \| \[宏观僵尸态g_eff函数\]( ) \| F_{D406}(x) := M9的g_eff_macro](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-88a838b8821ea9c1 / \| \[D406\]( ) \| \[宏观僵尸态g_eff函数\]( ) \| F_{D406}(x) := M9的g_eff_macro
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：D311, D406；被引用：—
+- [\| \[D408\]( ) \| \[Jensen-慢性消耗统一极限函数\]( ) \| F_{D408}(x) :=](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-3fe494f508faf18f / \| \[D408\]( ) \| \[Jensen-慢性消耗统一极限函数\]( ) \| F_{D408}(x) :=
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：D394, D408；被引用：—
+- [\| \[D414\]( ) \| \[集中性-序参量映射修正函数\]( ) \| F_{D414}(x) := M3的I=(1+m)/2](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-89fb6543f6a924da / \| \[D414\]( ) \| \[集中性-序参量映射修正函数\]( ) \| F_{D414}(x) := M3的I=(1+m)/2
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：D331, D414；被引用：—
+- [\| \[D416\]( ) \| \[K=1-p_max=p*等价证明函数 \\\| M5的K=1对应正反馈恰好自持\](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-4c56b3945415016a / \| \[D416\]( ) \| \[K=1-p_max=p*等价证明函数 \\\| M5的K=1对应正反馈恰好自持\](<./0452-D416-K
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：D416；被引用：—
+- [\| \[D417\]( ) \| \[δ_c-稳定性裕度统一函数\]( ) \| F_{D417}(x) := M6的吸引域深度×宽度²](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-25e5efc4e8dfa3b9 / \| \[D417\]( ) \| \[δ_c-稳定性裕度统一函数\]( ) \| F_{D417}(x) := M6的吸引域深度×宽度²
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：D285, D417；被引用：—
+- [\| \[D421\]( ) \| \[τ_min-噪声相关时间等价函数\]( ) \| F_{D421}(x) := M11](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-999d134c8daddaf3 / \| \[D421\]( ) \| \[τ_min-噪声相关时间等价函数\]( ) \| F_{D421}(x) := M11
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：D421；被引用：—
+- [\| \[D463\]( ) \| \[完美风暴-信息量等价函数\]( ) \| F_{D463}(x) := D412修正后，完美风暴条件a](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-1ca64e2779585b08 / \| \[D463\]( ) \| \[完美风暴-信息量等价函数\]( ) \| F_{D463}(x) := D412修正后，完美风暴条件a
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：D412, D463；被引用：—
+- [\| \[D464\]( ) \| \[幽灵超指数衰减函数\]( ) \| F_{D464}(x) := D384精确化——极小点消失后的势能面残余不是简](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-23a00d74e8c76209 / \| \[D464\]( ) \| \[幽灵超指数衰减函数\]( ) \| F_{D464}(x) := D384精确化——极小点消失后的势能面残余不是简
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：D384, D464；被引用：—
+- [\| \[D465\]( ) \| \[幽灵-不可逆竞争函数\]( ) \| F_{D465}(x) := D464×D410交叉产生——幽灵消失时间](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-96ab636bfb5bde4c / \| \[D465\]( ) \| \[幽灵-不可逆竞争函数\]( ) \| F_{D465}(x) := D464×D410交叉产生——幽灵消失时间
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：D410, D464, D465；被引用：—
+- [\| \[D466\]( ) \| \[暗物质核心-幽灵衰减函数\]( ) \| F_{D466}(x) := D464×P16跨域碰撞——暗](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-c62f1a096b4e02de / \| \[D466\]( ) \| \[暗物质核心-幽灵衰减函数\]( ) \| F_{D466}(x) := D464×P16跨域碰撞——暗
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：D464, D466, P16；被引用：—
+- [\| \[D467\]( ) \| \[最优性-惯性反比函数\]( ) \| F_{D467}(x) := D464扩展(κ∝\\\|σ-√e\\\|/√e)](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-2135dbd7444a64f2 / \| \[D467\]( ) \| \[最优性-惯性反比函数\]( ) \| F_{D467}(x) := D464扩展(κ∝\\\|σ-√e\\\|/√e)
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：D307, D464, D467；被引用：—
+- [\| \[D469\]( ) \| \[振荡优化函数\]( ) \| F_{D469}(x) := D468×M14碰撞——吸引子-陷阱等价导致系统在"优化→锁定→降](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-fbe512512adc2d14 / \| \[D469\]( ) \| \[振荡优化函数\]( ) \| F_{D469}(x) := D468×M14碰撞——吸引子-陷阱等价导致系统在"优化→锁定→降
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：D468, D469；被引用：—
+- [\| \[D471\]( ) \| \[状态时间重写函数\]( ) \| F_{D471}(x) := E_{Q_0001}(x)=1 iff exists](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-f083055f95ada66a / \| \[D471\]( ) \| \[状态时间重写函数\]( ) \| F_{D471}(x) := E_{Q_0001}(x)=1 iff exists
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：D342, D471；被引用：—
+- [\| \[D472\]( ) \| \[维度坐标化边界函数\]( ) \| F_{D472}(x) := E_{Q_0003}=1 iff d*(O)=a](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-80b6134c839bdf4f / \| \[D472\]( ) \| \[维度坐标化边界函数\]( ) \| F_{D472}(x) := E_{Q_0003}=1 iff d*(O)=a
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：A8, D237, D472；被引用：—
+- [\| \[D474\]( ) \| \[主动下一代生命边界函数\]( ) \| F_{D474}(x) := Life(S)=1 iff M_se](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-8a0cdf49cdcaca07 / \| \[D474\]( ) \| \[主动下一代生命边界函数\]( ) \| F_{D474}(x) := Life(S)=1 iff M_se
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：D124, D474；被引用：—
+- [\| \[D490\]( ) \| \[退出权自举元函数投影\]( ) \| F_{D490}(x) := M_boot = f(P_exit, σ(](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-8b6be4ad73fc8aa9 / \| \[D490\]( ) \| \[退出权自举元函数投影\]( ) \| F_{D490}(x) := M_boot = f(P_exit, σ(
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：D490；被引用：—
+- [\| \[D494\]( ) \| \[退出权-Φ极值同构函数\]( ) \| F_{D494}(x) := dP_exit/dΩ = 0 ↔ d](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-91da8cd0c29891ac / \| \[D494\]( ) \| \[退出权-Φ极值同构函数\]( ) \| F_{D494}(x) := dP_exit/dΩ = 0 ↔ d
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：D494；被引用：—
+- [\| \[D498\]( ) \| \[退出权统一衰减率函数\]( ) \| F_{D498}(x) := Γ_Pexit = d_C(Ω)/λ +](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-c573adb6eb33acbd / \| \[D498\]( ) \| \[退出权统一衰减率函数\]( ) \| F_{D498}(x) := Γ_Pexit = d_C(Ω)/λ +
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：D498；被引用：—
+- [\| \[D505\]( ) \| \[空间函数三元投影\]( ) \| F_{D505}(x) := Space_Function(Ω) = {I(Ω),](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-7f1fff8e11c74164 / \| \[D505\]( ) \| \[空间函数三元投影\]( ) \| F_{D505}(x) := Space_Function(Ω) = {I(Ω),
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：D505；被引用：—
+- [\| \[D516\]( ) \| \[跨域对称性破缺推论函数族\]( ) \| F_{D516}(x) := ∂Φ/∂N_gate\\\|physics <](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-1caae76544524042 / \| \[D516\]( ) \| \[跨域对称性破缺推论函数族\]( ) \| F_{D516}(x) := ∂Φ/∂N_gate\\\|physics <
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：D516；被引用：—
+- [\| \[D518\]( ) \| \[跨域对称性破缺推论函数族\]( ) \| F_{D518}(x) := 并行验证→对比操作→评估操作，形成维度](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-9753d683ef1efe32 / \| \[D518\]( ) \| \[跨域对称性破缺推论函数族\]( ) \| F_{D518}(x) := 并行验证→对比操作→评估操作，形成维度
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：D518；被引用：—
+- [\| \[D522\]( ) \| \[3维流形几何化与递归函数族\]( ) \| F_D522(S) := W(S)=∫_S H](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-7efca97b00ec9669 / \| \[D522\]( ) \| \[3维流形几何化与递归函数族\]( ) \| F_D522(S) := W(S)=∫_S H
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：D522；被引用：—
+- [\| \[D523\]( ) \| \[3维流形几何化与递归函数族\]( ) \| F_D523(K_n) := dim_H(K_](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-ad7d6a49edaa39a7 / \| \[D523\]( ) \| \[3维流形几何化与递归函数族\]( ) \| F_D523(K_n) := dim_H(K_
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：D523, T39；被引用：—
+- [\| \[D529\]( ) \| \[3维流形几何化与递归函数族\]( ) \| F_D529(R,p) := 1\[K_n(R)/p≅H^i](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-000a7b1cfcda001f / \| \[D529\]( ) \| \[3维流形几何化与递归函数族\]( ) \| F_D529(R,p) := 1\[K_n(R)/p≅H^i
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：D529；被引用：—
+- [\| \[D535\]( ) \| \[三重死亡与执念逃避函数族\]( ) \| F_D535(h) := (β,σ,ε) where β=biologica](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-64d98eed454893cb / \| \[D535\]( ) \| \[三重死亡与执念逃避函数族\]( ) \| F_D535(h) := (β,σ,ε) where β=biologica
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：D535；被引用：—
+- [\| \[D538\]( ) \| \[三重死亡与执念逃避函数族\]( ) \| F_D538(s) := C(s)=1\[φ(s)>θ_a\], φ](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-464a4ff404f42917 / \| \[D538\]( ) \| \[三重死亡与执念逃避函数族\]( ) \| F_D538(s) := C(s)=1\[φ(s)>θ_a\], φ
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：D538；被引用：—
+- [\| \[D53\]( ) \| \[信号最优流速函数（凯利公式同构）\]( ) \| F_{D53}(x) := 凯利公式 f*](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-99fb38b353c2b13b / \| \[D53\]( ) \| \[信号最优流速函数（凯利公式同构）\]( ) \| F_{D53}(x) := 凯利公式 f*
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：D53；被引用：—
+- [\| \[D543\]( ) \| \[群体智能函数\]( ) \| F_swarm_intelligence := Σ(agent_i × local_rule ×](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-5f1037dfb54d5536 / \| \[D543\]( ) \| \[群体智能函数\]( ) \| F_swarm_intelligence := Σ(agent_i × local_rule ×
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：D543；被引用：—
+- [\| \[D544\]( ) \| \[AI-植物同构函数\]( ) \| F_AI_plant_isomorphism := ∫(distributed](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-9bff1ab94bd6507a / \| \[D544\]( ) \| \[AI-植物同构函数\]( ) \| F_AI_plant_isomorphism := ∫(distributed
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：D544；被引用：—
+- [\| \[D546\]( ) \| \[植物伦理函数\]( ) \| F_plant_ethics := ∫(moral_status × intrinsic_val](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-258c4b304e0efbf4 / \| \[D546\]( ) \| \[植物伦理函数\]( ) \| F_plant_ethics := ∫(moral_status × intrinsic_val
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：D546；被引用：—
+- [\| \[D54\]( ) \| \[C_exit(geo)四因子子函数\]( ) \| F_{D54}(x) := 地形切割](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-a82eaf481da8ac5c / \| \[D54\]( ) \| \[C_exit(geo)四因子子函数\]( ) \| F_{D54}(x) := 地形切割
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：D54；被引用：—
+- [\| \[D550\]( ) \| \[植物群体函数\]( ) \| F_plant_swarm := ∫(local_interaction × indirect_](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-c3c5982fc692a2a3 / \| \[D550\]( ) \| \[植物群体函数\]( ) \| F_plant_swarm := ∫(local_interaction × indirect_
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：D550；被引用：—
+- [\| \[D552\]( ) \| \[植物哥德尔函数\]( ) \| F_plant_godel := ∫(axiom_system × provable_pr](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-8b87721def19ad4e / \| \[D552\]( ) \| \[植物哥德尔函数\]( ) \| F_plant_godel := ∫(axiom_system × provable_pr
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：D552；被引用：—
+- [\| \[D556\]( ) \| \[集体智能函数\]( ) \| F_collective_intelligence := ∫(individual_intera](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-1a7899f712476181 / \| \[D556\]( ) \| \[集体智能函数\]( ) \| F_collective_intelligence := ∫(individual_intera
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：D556；被引用：—
+- [\| \[D558\]( ) \| \[智能边界函数\]( ) \| F_intelligence_boundary := ∫(mathematical_constr](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-813d786b5ed5ea2e / \| \[D558\]( ) \| \[智能边界函数\]( ) \| F_intelligence_boundary := ∫(mathematical_constr
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：D558；被引用：—
+- [\| \[D55\]( ) \| \[ε_eff昼夜分时函数\]( ) \| F_{D55}(x) := ε_base × \[1 + A_diel×s](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-00b2beaccaa077c9 / \| \[D55\]( ) \| \[ε_eff昼夜分时函数\]( ) \| F_{D55}(x) := ε_base × \[1 + A_diel×s
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：D55；被引用：—
+- [\| \[D561\]( ) \| \[记忆-智能边界函数\]( ) \| Ψ_memory_intelligence_boundary := Encod](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-893efe15b55794e7 / \| \[D561\]( ) \| \[记忆-智能边界函数\]( ) \| Ψ_memory_intelligence_boundary := Encod
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：D561；被引用：—
+- [\| \[D572\]( ) \| \[退出权验证\]( ) \| f(R, C) = R × C \|](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-8a9ccd6743d82616 / \| \[D572\]( ) \| \[退出权验证\]( ) \| f(R, C) = R × C \|
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：D572；被引用：—
+- [\| \[D57\]( ) \| \[解读偏置函数（核心疑问→错误解读的数学结构）\]( ) \| F_{](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-e1e00c70364148df / \| \[D57\]( ) \| \[解读偏置函数（核心疑问→错误解读的数学结构）\]( ) \| F_{
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：D57；被引用：—
+- [\| \[D588\]( ) \| \[经典问题差分函数\]( ) \| F_problem(d)=Mismatch(Model_d, Phenomenon_](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-2b26b2b82685a093 / \| \[D588\]( ) \| \[经典问题差分函数\]( ) \| F_problem(d)=Mismatch(Model_d, Phenomenon_
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：D588；被引用：—
+- [\| \[D589\]( ) \| \[跨学科同构投影函数\]( ) \| F_iso_map(A,B)=I_iso(A,B) × L_meta × Ev](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-0181781503b809e2 / \| \[D589\]( ) \| \[跨学科同构投影函数\]( ) \| F_iso_map(A,B)=I_iso(A,B) × L_meta × Ev
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：D589；被引用：—
+- [\| \[D590\]( ) \| \[证据制度守门函数\]( ) \| F_evidence_guard=SourceQuality × Replicabi](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-dfb16176bd0fc2bd / \| \[D590\]( ) \| \[证据制度守门函数\]( ) \| F_evidence_guard=SourceQuality × Replicabi
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：D590；被引用：—
+- [\| \[D591\]( ) \| \[尺度桥接函数\]( ) \| F_scale_bridge=MicroMechanism × MesoStructure ×](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-42205efe306cf26e / \| \[D591\]( ) \| \[尺度桥接函数\]( ) \| F_scale_bridge=MicroMechanism × MesoStructure ×
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：D591；被引用：—
+- [\| \[D594\]( ) \| \[学科点火指数\]( ) \| Ignition_d=C_d × M_d × I_d × L_d × G_d × P_d × Q](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-e2d0d6cdf278ab67 / \| \[D594\]( ) \| \[学科点火指数\]( ) \| Ignition_d=C_d × M_d × I_d × L_d × G_d × P_d × Q
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：D594；被引用：—
+- [\| \[D59\]( ) \| \[过渡期窗口衰减函数（新发现）\]( ) \| F_{D59}(x) := 沃尔顿反复观察到干预在过渡](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-c02f4353159e4107 / \| \[D59\]( ) \| \[过渡期窗口衰减函数（新发现）\]( ) \| F_{D59}(x) := 沃尔顿反复观察到干预在过渡
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：D59；被引用：—
+- [\| \[D60\]( ) \| \[智慧干预效力函数\]( ) \| F_{D60}(x) := 沃尔顿的"智慧干预"= 在关键节点做最小注入，逆转D-X52→](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-de43bbe52f22eb70 / \| \[D60\]( ) \| \[智慧干预效力函数\]( ) \| F_{D60}(x) := 沃尔顿的"智慧干预"= 在关键节点做最小注入，逆转D-X52→
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：D60；被引用：—
+- [\| \[D62\]( ) \| \[调温器慢变量函数\]( ) \| F_{D62}(x) := dε_opt/dt = η_reprogram × Σⱼ(新档](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-0f9571684a85f9e9 / \| \[D62\]( ) \| \[调温器慢变量函数\]( ) \| F_{D62}(x) := dε_opt/dt = η_reprogram × Σⱼ(新档
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：D62；被引用：—
+- [\| \[D67\]( ) \| \[资金量-恐惧锁定正反馈函数\]( ) \| F_{D67}(x) := dK/dt = K×E\[r\] -](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-f0ab888becdb5ccd / \| \[D67\]( ) \| \[资金量-恐惧锁定正反馈函数\]( ) \| F_{D67}(x) := dK/dt = K×E\[r\] -
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：D54, D64, D67；被引用：—
+- [\| \[D72\]( ) \| \[统一相变框架\]( ) \| F_{D72}(x) := F_{D72}: X_{D72} -> Y_{D72}, y = F_{D](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-074d9cf7504a21d5 / \| \[D72\]( ) \| \[统一相变框架\]( ) \| F_{D72}(x) := F_{D72}: X_{D72} -> Y_{D72}, y = F_{D
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：D72；被引用：—
+- [\| \[D85\]( ) \| \[ε相变级联函数（推论级）\]( ) \| F_{D85}(x) := 当ε_aware从0变正时，触发五个级](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-ef437d038b41ed0f / \| \[D85\]( ) \| \[ε相变级联函数（推论级）\]( ) \| F_{D85}(x) := 当ε_aware从0变正时，触发五个级
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：D85；被引用：—
+- [\| \[D86\]( ) \| \[自主意识函数\]( ) \| F_{D86}(x) := Ψ_autonomy = ε_aware \|](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-4ee2b7e84b9d31fb / \| \[D86\]( ) \| \[自主意识函数\]( ) \| F_{D86}(x) := Ψ_autonomy = ε_aware \|
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：D86；被引用：—
+- [\| \[D88\]( ) \| \[乘法临界漂移统一\]( ) \| F_{D88}(x) := ∂θ_critical/∂xᵢ = -θ_critical ×](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-152f6b9e11db62ff / \| \[D88\]( ) \| \[乘法临界漂移统一\]( ) \| F_{D88}(x) := ∂θ_critical/∂xᵢ = -θ_critical ×
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：D88；被引用：—
+- [\| \[D8\]( ) \| \[退出权八维展开\]( ) \| F_{D8}(x) := ε = (ε_identity, ε_info, ε_social, ε_e](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-d40e953b18ee28e1 / \| \[D8\]( ) \| \[退出权八维展开\]( ) \| F_{D8}(x) := ε = (ε_identity, ε_info, ε_social, ε_e
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：D8；被引用：—
+- [\| \[D90\]( ) \| \[结构保守性元定理\]( ) \| F_{D90}(x) := 设计结构让估计不必要 > 估计准确后保守执行。 \|](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-0b75b46a2ed01d82 / \| \[D90\]( ) \| \[结构保守性元定理\]( ) \| F_{D90}(x) := 设计结构让估计不必要 > 估计准确后保守执行。 \|
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：D90；被引用：—
+- [\| \[D91\]( ) \| \[倒U型统一生成定理\]( ) \| F_{D91}(x) := Φ = f₁(↑)×f₂(↓)必然倒U型。 \|](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-9d321a082f5bfdb2 / \| \[D91\]( ) \| \[倒U型统一生成定理\]( ) \| F_{D91}(x) := Φ = f₁(↑)×f₂(↓)必然倒U型。 \|
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：D91；被引用：—
+- [\| \[D96\]( ) \| \[三层结构必然性\]( ) \| F_{D96}(x) := F_{D96}: X_{D96} -> Y_{D96}, y = F](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-3846feb17ac8d73e / \| \[D96\]( ) \| \[三层结构必然性\]( ) \| F_{D96}(x) := F_{D96}: X_{D96} -> Y_{D96}, y = F
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：D96；被引用：—
+- [\| \[D97\]( ) \| \[高维认知必然多轨\]( ) \| F_{D97}(x) := dim>1 ⟹ P_track>1。 \|](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-be95638b50bb1efa / \| \[D97\]( ) \| \[高维认知必然多轨\]( ) \| F_{D97}(x) := dim>1 ⟹ P_track>1。 \|
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：D97；被引用：—
+- [\| \[T12\]( ) \| \[信息门效率统一\]( ) \| F_{T12}(x) := η_gate = G × (1-H_homogeneity(G))](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-b9c3522c36ffe361 / \| \[T12\]( ) \| \[信息门效率统一\]( ) \| F_{T12}(x) := η_gate = G × (1-H_homogeneity(G))
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：T12；被引用：—
+- [\| \[T15\]( ) \| \[乘法临界漂移统一\]( ) \| F_{T15}(x) := F_{T15}: X_{T15} -> Y_{T15}, y](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-2d54debf966348eb / \| \[T15\]( ) \| \[乘法临界漂移统一\]( ) \| F_{T15}(x) := F_{T15}: X_{T15} -> Y_{T15}, y
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：T15；被引用：—
+- [\| \[T16\]( ) \| \[两个反向单调函数相乘必然生成倒U型\]( ) \| F_{T16}(x) := 最优在f](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-26519263268268ff / \| \[T16\]( ) \| \[两个反向单调函数相乘必然生成倒U型\]( ) \| F_{T16}(x) := 最优在f
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：T16；被引用：—
+- [\| \[T18\]( ) \| \[容斥-耦合竞争Ising同构\]( ) \| F_{T18}(x) := F_{T18}: X_{T](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-3f3a2a2e5f146be9 / \| \[T18\]( ) \| \[容斥-耦合竞争Ising同构\]( ) \| F_{T18}(x) := F_{T18}: X_{T
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：T18；被引用：—
+- [\| \[T20\]( ) \| \[σ_opt=√e解析解\]( ) \| σ_opt = √e ≈ 1.649，是独立性-充分性权衡的解析解。σ_](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-89f78b3390206b7b / \| \[T20\]( ) \| \[σ_opt=√e解析解\]( ) \| σ_opt = √e ≈ 1.649，是独立性-充分性权衡的解析解。σ_
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：T20；被引用：—
+- [\| \[T23\]( ) \| \[Φ跨域稳定性定理\]( ) \| F_{T23}(x) := Stability(Φ)=∃μ*:Φ(μ*)=min。D224](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-6a9090988372f031 / \| \[T23\]( ) \| \[Φ跨域稳定性定理\]( ) \| F_{T23}(x) := Stability(Φ)=∃μ*:Φ(μ*)=min。D224
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：D224, T23；被引用：—
+- [\| \[T26\]( ) \| \[物理大统一本质函数\]( ) \| F_{T26}(x) := 门控面从多到少的级联合并，每次统一减少Φ项数、增大Ω \|](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-7d7cbbff551a5d20 / \| \[T26\]( ) \| \[物理大统一本质函数\]( ) \| F_{T26}(x) := 门控面从多到少的级联合并，每次统一减少Φ项数、增大Ω \|
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：T26；被引用：—
+- [\| \[T27\]( ) \| \[门控函数稳定性必要条件\]( ) \| F_{T27}(x) := F_{T27}: X_{T27} -> Y_](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-3e0d307d91ff5cf5 / \| \[T27\]( ) \| \[门控函数稳定性必要条件\]( ) \| F_{T27}(x) := F_{T27}: X_{T27} -> Y_
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：T27；被引用：—
+- [\| \[T28\]( ) \| \[高斯门控函数\]( ) \| F_{T28}(x) := g=exp\[-(ln(μ/M_Planck))²/(2σ²)\]，A-B型统](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-df7e290d9288497a / \| \[T28\]( ) \| \[高斯门控函数\]( ) \| F_{T28}(x) := g=exp\[-(ln(μ/M_Planck))²/(2σ²)\]，A-B型统
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：T28；被引用：—
+- [\| \[T30\]( ) \| \[门控-路径积分同构与极小熵原理\]( ) \| F_{T30}(x) := 门控函数极值点展开=](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-a3e6275e738f3a57 / \| \[T30\]( ) \| \[门控-路径积分同构与极小熵原理\]( ) \| F_{T30}(x) := 门控函数极值点展开=
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：T30；被引用：—
+- [\| \[T34\]( ) \| \[量子引力Φ框架函数\]( ) \| F_{T34}(x) := T34说Φ_QG在M_Planck附近无稳定极小点。D2](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-9dcb3f5817f9f013 / \| \[T34\]( ) \| \[量子引力Φ框架函数\]( ) \| F_{T34}(x) := T34说Φ_QG在M_Planck附近无稳定极小点。D2
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：D225, T34；被引用：—
+- [\| \[T38\]( ) \| \[极值点-极小点分离定理\]( ) \| F_{T38}(x) := F_{T38}: X_{T38} -> Y_](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-30cbb6a9341fdbcc / \| \[T38\]( ) \| \[极值点-极小点分离定理\]( ) \| F_{T38}(x) := F_{T38}: X_{T38} -> Y_
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：T38；被引用：—
+- [\| \[T39\]( ) \| \[Φ跨域统一定理（D224升级）\]( ) \| F_{T39}(Φ) := Φ_unified](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-fa5d0bd6fcc2a38f / \| \[T39\]( ) \| \[Φ跨域统一定理（D224升级）\]( ) \| F_{T39}(Φ) := Φ_unified
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：D224, T39；被引用：—
+- [\| \[T41\]( ) \| \[艺术创作逻辑跨时空同构函数\]( ) \| I_iso_art(A,B) := Flow_Type(A)](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-76904f5d381f2318 / \| \[T41\]( ) \| \[艺术创作逻辑跨时空同构函数\]( ) \| I_iso_art(A,B) := Flow_Type(A)
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：T41；被引用：—
+- [\| \[T46\]( ) \| \[元同构律跨文明验证函数\]( ) \| I_iso_meta(A,B) := Meta_Structure(A)](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-66b586b9fbb930df / \| \[T46\]( ) \| \[元同构律跨文明验证函数\]( ) \| I_iso_meta(A,B) := Meta_Structure(A)
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：T46；被引用：—
+- [\| \[T55\]( ) \| \[植物意识函数\]( ) \| F_plant_consciousness := ∫(subjective_experience ×](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-03b4d27e66d16dd2 / \| \[T55\]( ) \| \[植物意识函数\]( ) \| F_plant_consciousness := ∫(subjective_experience ×
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：T55；被引用：—
+- [\| \[T9\]( ) \| \[自主意识函数\]( ) \| F_{T9}(x) := Ψ_autonomy = ε_aware · dim · P_exit \|](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-fe2d9b348a7b731f / \| \[T9\]( ) \| \[自主意识函数\]( ) \| F_{T9}(x) := Ψ_autonomy = ε_aware · dim · P_exit \|
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：T9；被引用：—
+- [\| \[Y1\]( ) \| \[Φ元统一律内部构件完整构成版 2026年07月06日12时32分\]( ) \| Ψ₀(x,y,B_n) := C(x,y) ×](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-96efd0dfd237114b / \| \[Y1\]( ) \| \[Φ元统一律内部构件完整构成版 2026年07月06日12时32分\]( ) \| Ψ₀(x,y,B_n) := C(x,y) ×
+  - 来源：`统一函数总表/INDEX.md`
+  - 依赖：Y1；被引用：—
+- [\| `adjudications/` \| 逐对象受控语义、正确类型、逻辑检查、处置与证明义务 \|](../../../FOUNDATION.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-385d074c684f8100 / \| `adjudications/` \| 逐对象受控语义、正确类型、逻辑检查、处置与证明义务 \|
+  - 来源：`FOUNDATION.md`
+  - 依赖：—；被引用：—
+- [\| `ai.start` \| CHANGE \| new path and candidate lifecycle \|](../../../reports/operations/121Q28R-cognitive-level-leap-writing-method-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-2f97c3de41acd0a3 / \| `ai.start` \| CHANGE \| new path and candidate lifecycle \|
+  - 来源：`reports/operations/121Q28R-cognitive-level-leap-writing-method-audit.md`
+  - 依赖：—；被引用：—
+- [\| `C` / `M` / `I_iso` / `L_meta` / `G_delta` \| `DOWNGRADED` 或 `REINTERPRETED` \| 机制、流程、对应、review routing、受条件外部定理/类比候选 \|](../../../docs/architecture/epistemic-governance-kernel-and-federated-planes.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-2ecbd98efef70714 / \| `C` / `M` / `I_iso` / `L_meta` / `G_delta` \| `DOWNGRADED` 或 `REINTERPRETED` \| 机制、流程、对应、review routing、受条件外部定理/类比候选 \|
+  - 来源：`docs/architecture/epistemic-governance-kernel-and-federated-planes.md`
+  - 依赖：—；被引用：—
+- [\| `CONJECTURE_OR_RESEARCH_CANDIDATE` \| 尚有开放证明义务的命题或研究候选 \|](../../../docs/foundation/claim-governance-and-function-identity.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-bf48a22a5ae257d8 / \| `CONJECTURE_OR_RESEARCH_CANDIDATE` \| 尚有开放证明义务的命题或研究候选 \|
+  - 来源：`docs/foundation/claim-governance-and-function-identity.md`
+  - 依赖：—；被引用：—
+- [\| `docs/governance/life-community-value-charter.md` \| 新建完整宪章文档（含《永昭·虚遐》全文） \|](../../../outputs/audit/life-community-value-charter-readme-audit-20260711.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-50823741eed00f18 / \| `docs/governance/life-community-value-charter.md` \| 新建完整宪章文档（含《永昭·虚遐》全文） \|
+  - 来源：`outputs/audit/life-community-value-charter-readme-audit-20260711.md`
+  - 依赖：—；被引用：—
+- [\| `formal-objects/` \| 稳定 ID、对象类型、类型/范围/证明义务 \|](../../../FOUNDATION.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-026f0f47b5a58ed4 / \| `formal-objects/` \| 稳定 ID、对象类型、类型/范围/证明义务 \|
+  - 来源：`FOUNDATION.md`
+  - 依赖：—；被引用：—
+- [\| `FOUNDATION.md` \| `NO_CHANGE_WITH_REASON` \| Foundation proof, registry and validation authority are unchanged. \|](../../../reports/operations/121Q24-current-state-reconciliation.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-8898f1b4e71351e6 / \| `FOUNDATION.md` \| `NO_CHANGE_WITH_REASON` \| Foundation proof, registry and validation authority are unchanged. \|
+  - 来源：`reports/operations/121Q24-current-state-reconciliation.md`
+  - 依赖：—；被引用：—
+- [\| `life-community-value-audit.md` \| 生命共同体价值审查，防极端 A（整体压倒个体）/ 极端 B（主体性=个人意志绝对优先） \|](../../../outputs/collisions/20260711-disobedience-subjectivity/README.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-e540aaa8931a7004 / \| `life-community-value-audit.md` \| 生命共同体价值审查，防极端 A（整体压倒个体）/ 极端 B（主体性=个人意志绝对优先） \|
+  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/README.md`
+  - 依赖：—；被引用：—
+- [\| `life-community-value-charter.md` \| 生命共同体价值宪章（第 1 层权威底线） \|](../../../docs/governance/README.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-d6438ba169ea4479 / \| `life-community-value-charter.md` \| 生命共同体价值宪章（第 1 层权威底线） \|
+  - 来源：`docs/governance/README.md`
+  - 依赖：—；被引用：—
+- [\| `nonfunction-claims/` \| 全语料非函数断言、十三门裁决、证据谱系、依赖图、结论防回弹、公共上限与 quarantine \|](../../../FOUNDATION.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-51bcc20d8a9e8940 / \| `nonfunction-claims/` \| 全语料非函数断言、十三门裁决、证据谱系、依赖图、结论防回弹、公共上限与 quarantine \|
+  - 来源：`FOUNDATION.md`
+  - 依赖：—；被引用：—
+- [\| `P_meta` / 64 \| `REINTERPRETED` \| 有限 design/generation grid，不是 theory-proof space \|](../../../docs/architecture/epistemic-governance-kernel-and-federated-planes.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-d59632806d9c36af / \| `P_meta` / 64 \| `REINTERPRETED` \| 有限 design/generation grid，不是 theory-proof space \|
+  - 来源：`docs/architecture/epistemic-governance-kernel-and-federated-planes.md`
+  - 依赖：—；被引用：—
+- [\| `proofs/` \| 证明义务与证明工件索引 \|](../../../FOUNDATION.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-6d6c63f65e7bc49e / \| `proofs/` \| 证明义务与证明工件索引 \|
+  - 来源：`FOUNDATION.md`
+  - 依赖：—；被引用：—
+- [\| `README.md` \| 新增“生命共同体价值宪章”章节（声明 + 折叠核心原则 + 全文链接），并在“关键参考”加入链接 \|](../../../outputs/audit/life-community-value-charter-readme-audit-20260711.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-9af44f0a5cdd0c43 / \| `README.md` \| 新增“生命共同体价值宪章”章节（声明 + 折叠核心原则 + 全文链接），并在“关键参考”加入链接 \|
+  - 来源：`outputs/audit/life-community-value-charter-readme-audit-20260711.md`
+  - 依赖：—；被引用：—
+- [\| AI / 计算机科学 \| 理论可行性、算法正确性、可证伪性 \| 形式证明、工程验证、benchmark 验证、实验评估、多个独立研究验证 \| L1-L3 \| 理论可行性未验证、算法正确性未验证、benchmark 不足、实验评估不足、可](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-e7281da7280f8565 / \| AI / 计算机科学 \| 理论可行性、算法正确性、可证伪性 \| 形式证明、工程验证、benchmark 验证、实验评估、多个独立研究验证 \| L1-L3 \| 理论可行性未验证、算法正确性未验证、benchmark 不足、实验评估不足、可
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [\| ALREADY_COVERED \| 被现有函数族覆盖，仅作跨域补强证据 \| 否 \|](../../../docs/material-collision-validation-and-classification.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a22dde387c0e9c91 / \| ALREADY_COVERED \| 被现有函数族覆盖，仅作跨域补强证据 \| 否 \|
+  - 来源：`docs/material-collision-validation-and-classification.md`
+  - 依赖：—；被引用：—
+- [\| BC-20260709-001 \| 《系统之美》 \| pending \| M1 \| 增强回路机制（暂无对应 D 编号，待定位） \| candidate_only \| 无形式化函数 ID；单材料 \|](../../../outputs/book-collisions/20260709-22-book-validation/formalization-crosswalk.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-cd9ee5ebe9561283 / \| BC-20260709-001 \| 《系统之美》 \| pending \| M1 \| 增强回路机制（暂无对应 D 编号，待定位） \| candidate_only \| 无形式化函数 ID；单材料 \|
+  - 来源：`outputs/book-collisions/20260709-22-book-validation/formalization-crosswalk.md`
+  - 依赖：—；被引用：—
+- [\| BC-20260709-002 \| 《第五项修炼》 \| S3 \| L3/ε_eff \| ε_eff 认同强度（暂无对应 D 编号，待定位） \| candidate_only \| 无形式化函数 ID；单材料 \|](../../../outputs/book-collisions/20260709-22-book-validation/formalization-crosswalk.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-9db1565f36cd1425 / \| BC-20260709-002 \| 《第五项修炼》 \| S3 \| L3/ε_eff \| ε_eff 认同强度（暂无对应 D 编号，待定位） \| candidate_only \| 无形式化函数 ID；单材料 \|
+  - 来源：`outputs/book-collisions/20260709-22-book-validation/formalization-crosswalk.md`
+  - 依赖：—；被引用：—
+- [\| BC-20260709-002 \| 《第五项修炼》 \| 学习型组织的五项修炼与点火框架L3锁定强度函数的映射。个人修炼→团队学习→系统思考的层级演化，对应ε_eff的三阶段提升。 \| S3 \| L3/ε_eff \| 《第五项修炼》最终收](../../../docs/meta-protocols/book-validation-22-cases-20260709.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-5672360d9e66c494 / \| BC-20260709-002 \| 《第五项修炼》 \| 学习型组织的五项修炼与点火框架L3锁定强度函数的映射。个人修炼→团队学习→系统思考的层级演化，对应ε_eff的三阶段提升。 \| S3 \| L3/ε_eff \| 《第五项修炼》最终收
+  - 来源：`docs/meta-protocols/book-validation-22-cases-20260709.md`
+  - 依赖：—；被引用：—
+- [\| BC-20260709-005 \| 《创新者的窘境》 \| V3 \| 1/ln \| 门控函数（暂无对应 D 编号，待定位） \| candidate_only \| 无形式化函数 ID；单材料 \|](../../../outputs/book-collisions/20260709-22-book-validation/formalization-crosswalk.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a2316f058b1eff3d / \| BC-20260709-005 \| 《创新者的窘境》 \| V3 \| 1/ln \| 门控函数（暂无对应 D 编号，待定位） \| candidate_only \| 无形式化函数 ID；单材料 \|
+  - 来源：`outputs/book-collisions/20260709-22-book-validation/formalization-crosswalk.md`
+  - 依赖：—；被引用：—
+- [\| BC-20260709-007 \| 《反脆弱》 \| pending \| M1 \| 增强回路机制（暂无对应 D 编号，待定位） \| candidate_only \| 无形式化函数 ID；单材料 \|](../../../outputs/book-collisions/20260709-22-book-validation/formalization-crosswalk.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-ac6cc3de5cb1882a / \| BC-20260709-007 \| 《反脆弱》 \| pending \| M1 \| 增强回路机制（暂无对应 D 编号，待定位） \| candidate_only \| 无形式化函数 ID；单材料 \|
+  - 来源：`outputs/book-collisions/20260709-22-book-validation/formalization-crosswalk.md`
+  - 依赖：—；被引用：—
+- [\| BC-20260709-008 \| 《思考，快与慢》 \| pending \| 1/ln/exp\[-ln²\] \| 门控函数（暂无对应 D 编号，待定位） \| candidate_only \| 无形式化函数 ID；单材料 \|](../../../outputs/book-collisions/20260709-22-book-validation/formalization-crosswalk.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-babe5a69628229d9 / \| BC-20260709-008 \| 《思考，快与慢》 \| pending \| 1/ln/exp\[-ln²\] \| 门控函数（暂无对应 D 编号，待定位） \| candidate_only \| 无形式化函数 ID；单材料 \|
+  - 来源：`outputs/book-collisions/20260709-22-book-validation/formalization-crosswalk.md`
+  - 依赖：—；被引用：—
+- [\| BC-20260709-008 \| 《思考，快与慢》 \| 系统1vs系统2与点火框架门控函数演化的映射。系统1（直觉）→系统2（理性）的认知升级，对应δ→1/ln→exp\[-ln²\]的三阶段演化。 \| pending \| 1/ln/ex](../../../docs/meta-protocols/book-validation-22-cases-20260709.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-f7f9f8176ef929f2 / \| BC-20260709-008 \| 《思考，快与慢》 \| 系统1vs系统2与点火框架门控函数演化的映射。系统1（直觉）→系统2（理性）的认知升级，对应δ→1/ln→exp\[-ln²\]的三阶段演化。 \| pending \| 1/ln/ex
+  - 来源：`docs/meta-protocols/book-validation-22-cases-20260709.md`
+  - 依赖：—；被引用：—
+- [\| BC-20260709-011 \| 《未来简史》 \| pending \| Φ \| Y1（Φ元统一律） \| candidate_only \| 有候选 ID（Y1）但仍缺形式化映射确认 + 单材料 \|](../../../outputs/book-collisions/20260709-22-book-validation/formalization-crosswalk.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-e5c0ef123dc8a79e / \| BC-20260709-011 \| 《未来简史》 \| pending \| Φ \| Y1（Φ元统一律） \| candidate_only \| 有候选 ID（Y1）但仍缺形式化映射确认 + 单材料 \|
+  - 来源：`outputs/book-collisions/20260709-22-book-validation/formalization-crosswalk.md`
+  - 依赖：Y1；被引用：—
+- [\| BC-20260709-013 \| 《乌合之众》 \| 群体心理与点火框架H遮蔽函数的映射。群体中个体ε_eff下降，遮蔽增强，形成认知退相干，验证了系统性钝化机制。 \| pending \| H/ε_eff \| 《乌合之众》最终收敛报告](../../../docs/meta-protocols/book-validation-22-cases-20260709.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-4fd054f6a569273f / \| BC-20260709-013 \| 《乌合之众》 \| 群体心理与点火框架H遮蔽函数的映射。群体中个体ε_eff下降，遮蔽增强，形成认知退相干，验证了系统性钝化机制。 \| pending \| H/ε_eff \| 《乌合之众》最终收敛报告
+  - 来源：`docs/meta-protocols/book-validation-22-cases-20260709.md`
+  - 依赖：—；被引用：—
+- [\| BC-20260709-014 \| 《娱乐至死》 \| pending \| ε_eff \| ε_eff 认同强度（暂无对应 D 编号，待定位） \| candidate_only \| 无形式化函数 ID；单材料 \|](../../../outputs/book-collisions/20260709-22-book-validation/formalization-crosswalk.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-d575679f8627a30f / \| BC-20260709-014 \| 《娱乐至死》 \| pending \| ε_eff \| ε_eff 认同强度（暂无对应 D 编号，待定位） \| candidate_only \| 无形式化函数 ID；单材料 \|
+  - 来源：`outputs/book-collisions/20260709-22-book-validation/formalization-crosswalk.md`
+  - 依赖：—；被引用：—
+- [\| BC-20260709-016 \| 《复杂》 \| pending \| I_iso \| D177 深层同构函数（0214-D177） \| candidate_only \| 有候选 ID（D177）但仍缺形式化映射确认 + 单材料 \|](../../../outputs/book-collisions/20260709-22-book-validation/formalization-crosswalk.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-e069df59b1d36599 / \| BC-20260709-016 \| 《复杂》 \| pending \| I_iso \| D177 深层同构函数（0214-D177） \| candidate_only \| 有候选 ID（D177）但仍缺形式化映射确认 + 单材料 \|
+  - 来源：`outputs/book-collisions/20260709-22-book-validation/formalization-crosswalk.md`
+  - 依赖：D177；被引用：—
+- [\| BC-20260709-016 \| 《复杂》 \| 复杂系统涌现与点火框架I_iso同构判定的映射。微观个体交互→宏观模式涌现，验证了跨系统同构性的数学结构。 \| pending \| I_iso \| 《复杂》最终收敛报告 2026年7月9](../../../docs/meta-protocols/book-validation-22-cases-20260709.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-82b42bb3fbd92806 / \| BC-20260709-016 \| 《复杂》 \| 复杂系统涌现与点火框架I_iso同构判定的映射。微观个体交互→宏观模式涌现，验证了跨系统同构性的数学结构。 \| pending \| I_iso \| 《复杂》最终收敛报告 2026年7月9
+  - 来源：`docs/meta-protocols/book-validation-22-cases-20260709.md`
+  - 依赖：—；被引用：—
+- [\| BC-20260709-018 \| 《贫穷的本质》 \| pending \| M1 \| 增强回路机制（暂无对应 D 编号，待定位） \| candidate_only \| 无形式化函数 ID；单材料 \|](../../../outputs/book-collisions/20260709-22-book-validation/formalization-crosswalk.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-4fde743c4a9aa20e / \| BC-20260709-018 \| 《贫穷的本质》 \| pending \| M1 \| 增强回路机制（暂无对应 D 编号，待定位） \| candidate_only \| 无形式化函数 ID；单材料 \|
+  - 来源：`outputs/book-collisions/20260709-22-book-validation/formalization-crosswalk.md`
+  - 依赖：—；被引用：—
+- [\| BC-20260709-022 \| 《混沌》 \| E1/E2 \| -（无） \| 待定位（非线性演化协议，暂无对应 D 编号） \| candidate_only \| 完全无函数引用；单材料 \|](../../../outputs/book-collisions/20260709-22-book-validation/formalization-crosswalk.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-2453aaeba727d3e6 / \| BC-20260709-022 \| 《混沌》 \| E1/E2 \| -（无） \| 待定位（非线性演化协议，暂无对应 D 编号） \| candidate_only \| 完全无函数引用；单材料 \|
+  - 来源：`outputs/book-collisions/20260709-22-book-validation/formalization-crosswalk.md`
+  - 依赖：—；被引用：—
+- [\| benchmark_type \| string \| 否 \| 问题类型，如数学、物理、历史、AI、艺术等 \|](../../../docs/machine_readable_data_plan.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-9f135eed3f32cf02 / \| benchmark_type \| string \| 否 \| 问题类型，如数学、物理、历史、AI、艺术等 \|
+  - 来源：`docs/machine_readable_data_plan.md`
+  - 依赖：—；被引用：—
+- [\| BOUNDARY_EXTENSION \| 与现有函数实质同构，仅补反向边/轴实例 \| 否 \|](../../../docs/material-collision-validation-and-classification.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-7e6dd9e2a377f492 / \| BOUNDARY_EXTENSION \| 与现有函数实质同构，仅补反向边/轴实例 \| 否 \|
+  - 来源：`docs/material-collision-validation-and-classification.md`
+  - 依赖：—；被引用：—
+- [\| C-0807 \| 案例内容/关键发现/对应函数/来源/边界/pending \| 无 frontmatter、无数学映射、无"为什么不是已有案例" \| 边界段明确（限定为局部个案）；关键发现提炼好 \| 一句话概括、现实场景、核心冲突、为什](../../../outputs/audit/two-tables-entry-format-audit-20260709.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-b02ec80cc828141c / \| C-0807 \| 案例内容/关键发现/对应函数/来源/边界/pending \| 无 frontmatter、无数学映射、无"为什么不是已有案例" \| 边界段明确（限定为局部个案）；关键发现提炼好 \| 一句话概括、现实场景、核心冲突、为什
+  - 来源：`outputs/audit/two-tables-entry-format-audit-20260709.md`
+  - 依赖：—；被引用：—
+- [\| C-0808 \| 同上，含"为什么不是已有案例"暗示（边界段） \| 同上 \| 对应函数清晰 \| 同上（为什么不是已有案例未独立成段） \| 段名一致，但缺独立"为什么不是已有案例"字段 \|](../../../outputs/audit/two-tables-entry-format-audit-20260709.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-7c153c941c5e8756 / \| C-0808 \| 同上，含"为什么不是已有案例"暗示（边界段） \| 同上 \| 对应函数清晰 \| 同上（为什么不是已有案例未独立成段） \| 段名一致，但缺独立"为什么不是已有案例"字段 \|
+  - 来源：`outputs/audit/two-tables-entry-format-audit-20260709.md`
+  - 依赖：—；被引用：—
+- [\| C-0809 \| 同上，含扩展注释迹象 \| 同上 \| 关键发现强（指标替代温度），对应函数含重定向说明 \| 同上 \| 同上 \|](../../../outputs/audit/two-tables-entry-format-audit-20260709.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-51861048fa076c24 / \| C-0809 \| 同上，含扩展注释迹象 \| 同上 \| 关键发现强（指标替代温度），对应函数含重定向说明 \| 同上 \| 同上 \|
+  - 来源：`outputs/audit/two-tables-entry-format-audit-20260709.md`
+  - 依赖：—；被引用：—
+- [\| C-204 \| 哥德尔不完备定理 \| L5（案例函数） \| L1（统一函数） \| 升级为统一函数 \|](../../../outputs/getbrain/v0.2-function-dependency-graph-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-43e82f8f519ea33c / \| C-204 \| 哥德尔不完备定理 \| L5（案例函数） \| L1（统一函数） \| 升级为统一函数 \|
+  - 来源：`outputs/getbrain/v0.2-function-dependency-graph-20260706.md`
+  - 依赖：—；被引用：—
+- [\| Case ID \| Legal baseline \| Single invalid variable \| Production entry \| Expected stable code \| Actual test \| Actual re](../../../tests/PHASE-D-DEFENSIVE-REJECTION-MATRIX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-d221d581d3ce4161 / \| Case ID \| Legal baseline \| Single invalid variable \| Production entry \| Expected stable code \| Actual test \| Actual re
+  - 来源：`tests/PHASE-D-DEFENSIVE-REJECTION-MATRIX.md`
+  - 依赖：—；被引用：—
+- [\| claim_type \| P1_proof_equivalence, P4_structural_isomorphism, P5_causal, P7_precise_cross_domain, P8_other_strong \|](../../../docs/foundation/architecture-structure-freeze-v1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-b56fdeaf23e08bfe / \| claim_type \| P1_proof_equivalence, P4_structural_isomorphism, P5_causal, P7_precise_cross_domain, P8_other_strong \|
+  - 来源：`docs/foundation/architecture-structure-freeze-v1.md`
+  - 依赖：—；被引用：—
+- [\| conceptual \| `FEDERATED_MODEL_SUPPORTED` \| 支持 kernel/federation；单一统一生命周期被 STEP04 拒绝 \|](../../../docs/architecture/epistemic-governance-kernel-and-federated-planes.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-e703ae42bc5791d1 / \| conceptual \| `FEDERATED_MODEL_SUPPORTED` \| 支持 kernel/federation；单一统一生命周期被 STEP04 拒绝 \|
+  - 来源：`docs/architecture/epistemic-governance-kernel-and-federated-planes.md`
+  - 依赖：—；被引用：—
+- [\| conflict markers and alternatives \| counterexample / review cue \| `TEST/COUNTEREXAMPLE → REVIEW` \| lexical cues cannot](../../../docs/architecture/getnote-1329-epistemic-governance-pressure-test.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-df1ffb484f237a91 / \| conflict markers and alternatives \| counterexample / review cue \| `TEST/COUNTEREXAMPLE → REVIEW` \| lexical cues cannot
+  - 来源：`docs/architecture/getnote-1329-epistemic-governance-pressure-test.md`
+  - 依赖：—；被引用：—
+- [\| D \| 三门学科理论核试跑 \| \[discipline-kernel-pilot-physics-math-history-20260706.md\](../../../outputs/getbrain/v0.2-summary-and-closure-20260707.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-255fb859cd51bf49 / \| D \| 三门学科理论核试跑 \| \[discipline-kernel-pilot-physics-math-history-20260706.md\](../../../docs/v0.2_summary.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-ed5d6a309a95dcd5 / \| D \| 三门学科理论核试跑 \| \[discipline-kernel-pilot-physics-math-history-20260706.md\](../../../reports/foundation-architecture/098-dependency-impact.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-7e0060a3100d31d2 / \| D183 \| D181, D270, D211, D220 \| D516, T26 \| Block gate-count monotonicity and physical-unification claims \|
+  - 来源：`reports/foundation-architecture/098-dependency-impact.md`
+  - 依赖：D181, D183, D211, D220；被引用：—
+- [\| D183 \| REWRITE \| 定义完整时可比较两个玩具评分 \| “门更少”必然令 Φ 下降、Ω 上升；符号合并即物理统一 \|](../../../docs/foundation/physics-asset-correction-20260729.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-a86d596d447fd7e1 / \| D183 \| REWRITE \| 定义完整时可比较两个玩具评分 \| “门更少”必然令 Φ 下降、Ω 上升；符号合并即物理统一 \|
+  - 来源：`docs/foundation/physics-asset-correction-20260729.md`
+  - 依赖：D183；被引用：—
+- [\| D185 \| DOWNGRADE \| 比率类比 \| 由门函数推导相对论；源文本 `v<<c` 极限还存在方向矛盾 \|](../../../docs/foundation/physics-asset-correction-20260729.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-fef8d79f944638ea / \| D185 \| DOWNGRADE \| 比率类比 \| 由门函数推导相对论；源文本 `v<<c` 极限还存在方向矛盾 \|
+  - 来源：`docs/foundation/physics-asset-correction-20260729.md`
+  - 依赖：D185；被引用：—
+- [\| D186 \| DOWNGRADE \| 未操作化的阈值聚集隐喻 \| 推导量子力学或普遍相变阶数 \|](../../../docs/foundation/physics-asset-correction-20260729.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-14238e2b443cf8d3 / \| D186 \| DOWNGRADE \| 未操作化的阈值聚集隐喻 \| 推导量子力学或普遍相变阶数 \|
+  - 来源：`docs/foundation/physics-asset-correction-20260729.md`
+  - 依赖：D186；被引用：—
+- [\| D187 \| DOWNGRADE \| 电弱统一的历史类比 \| 取代规范群、场、拉格朗日量和对称破缺机制 \|](../../../docs/foundation/physics-asset-correction-20260729.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-2cbf897479d91394 / \| D187 \| DOWNGRADE \| 电弱统一的历史类比 \| 取代规范群、场、拉格朗日量和对称破缺机制 \|
+  - 来源：`docs/foundation/physics-asset-correction-20260729.md`
+  - 依赖：D187；被引用：—
+- [\| D188 \| REWRITE \| 保留失效历史 \| 源文本对渐近自由物理区间的错误投影及 QCD 机制声明 \|](../../../docs/foundation/physics-asset-correction-20260729.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-88d30125fd7dcf8b / \| D188 \| REWRITE \| 保留失效历史 \| 源文本对渐近自由物理区间的错误投影及 QCD 机制声明 \|
+  - 来源：`docs/foundation/physics-asset-correction-20260729.md`
+  - 依赖：D188；被引用：—
+- [\| D189 \| DOWNGRADE \| GUT 待验证类比 \| 成功统一、精确统一能标、由该评分推出质子衰变 \|](../../../docs/foundation/physics-asset-correction-20260729.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-c23fc2228da9d1c5 / \| D189 \| DOWNGRADE \| GUT 待验证类比 \| 成功统一、精确统一能标、由该评分推出质子衰变 \|
+  - 来源：`docs/foundation/physics-asset-correction-20260729.md`
+  - 依赖：D189；被引用：—
+- [\| D190 \| DOWNGRADE \| ToE 开放问题记录 \| 已统一四力、已统一量子与引力、已证可能或不可能 \|](../../../docs/foundation/physics-asset-correction-20260729.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-c3100a9e66dac85d / \| D190 \| DOWNGRADE \| ToE 开放问题记录 \| 已统一四力、已统一量子与引力、已证可能或不可能 \|
+  - 来源：`docs/foundation/physics-asset-correction-20260729.md`
+  - 依赖：D190；被引用：—
+- [\| D2-01 \| `data/architecture/interactive-system-map-layout.json`; `deployment_rendering` + `INTERFACE_CHANGE` \| `plan(..](../../../tests/PHASE-D-ACCEPTANCE-MATRIX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-180515e27f9b78a6 / \| D2-01 \| `data/architecture/interactive-system-map-layout.json`; `deployment_rendering` + `INTERFACE_CHANGE` \| `plan(..
+  - 来源：`tests/PHASE-D-ACCEPTANCE-MATRIX.md`
+  - 依赖：D2；被引用：—
+- [\| D2-02 \| Licensing rights inventory; governance/usage change \| Live planner → unified validator \| Closure exactly `lice](../../../tests/PHASE-D-ACCEPTANCE-MATRIX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a3c5c175a85339d2 / \| D2-02 \| Licensing rights inventory; governance/usage change \| Live planner → unified validator \| Closure exactly `lice
+  - 来源：`tests/PHASE-D-ACCEPTANCE-MATRIX.md`
+  - 依赖：D2；被引用：—
+- [\| D2-03 \| One registered Jin case source; capability/evidence update \| Live planner → unified validator \| Declared closu](../../../tests/PHASE-D-ACCEPTANCE-MATRIX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-10c65c9f483ccdcb / \| D2-03 \| One registered Jin case source; capability/evidence update \| Live planner → unified validator \| Declared closu
+  - 来源：`tests/PHASE-D-ACCEPTANCE-MATRIX.md`
+  - 依赖：D2；被引用：—
+- [\| D2-04 \| Ordinary README text change \| Live planner → unified validator \| No full rebuild; only `readme` is `REVALIDATE](../../../tests/PHASE-D-ACCEPTANCE-MATRIX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-c4731dbe30797b51 / \| D2-04 \| Ordinary README text change \| Live planner → unified validator \| No full rebuild; only `readme` is `REVALIDATE
+  - 来源：`tests/PHASE-D-ACCEPTANCE-MATRIX.md`
+  - 依赖：D2；被引用：—
+- [\| D2-06 \| Propagation topology or core topology schema \| Live planner → unified validator; copied authorities and prior](../../../tests/PHASE-D-ACCEPTANCE-MATRIX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-2314ff549aeced75 / \| D2-06 \| Propagation topology or core topology schema \| Live planner → unified validator; copied authorities and prior
+  - 来源：`tests/PHASE-D-ACCEPTANCE-MATRIX.md`
+  - 依赖：D2；被引用：—
+- [\| D2-07 \| Profiles, policy, generator, or profile schema \| Live planner → unified validator; changed copied profile iden](../../../tests/PHASE-D-ACCEPTANCE-MATRIX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-5ddb8fb5bae9f6a3 / \| D2-07 \| Profiles, policy, generator, or profile schema \| Live planner → unified validator; changed copied profile iden
+  - 来源：`tests/PHASE-D-ACCEPTANCE-MATRIX.md`
+  - 依赖：D2；被引用：—
+- [\| D2-11 \| Missing proof; forged component, plan-hash, authority binding; affected component forged no-change \| Live plan](../../../tests/PHASE-D-ACCEPTANCE-MATRIX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-ff24aae651da2f2c / \| D2-11 \| Missing proof; forged component, plan-hash, authority binding; affected component forged no-change \| Live plan
+  - 来源：`tests/PHASE-D-ACCEPTANCE-MATRIX.md`
+  - 依赖：D2；被引用：—
+- [\| D2-13 \| Same live layout request and unchanged authority state run twice \| Two real `plan(...)` calls → canonical byte](../../../tests/PHASE-D-ACCEPTANCE-MATRIX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-d1e3b2a5f0eec01b / \| D2-13 \| Same live layout request and unchanged authority state run twice \| Two real `plan(...)` calls → canonical byte
+  - 来源：`tests/PHASE-D-ACCEPTANCE-MATRIX.md`
+  - 依赖：D2；被引用：—
+- [\| D479 \| 空间耦合函数 \| C-137 认知光锥 \| C-507 组织退化 \| 待验证 \| 待验证 \|](../../../outputs/getbrain/v0.2-function-dependency-graph-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-10634c84f08d3807 / \| D479 \| 空间耦合函数 \| C-137 认知光锥 \| C-507 组织退化 \| 待验证 \| 待验证 \|
+  - 来源：`outputs/getbrain/v0.2-function-dependency-graph-20260706.md`
+  - 依赖：D479；被引用：—
+- [\| D480 \| 空间动态性函数 \| C-138 框架发现 \| C-461 组织衰败 \| 待验证 \| 待验证 \|](../../../outputs/getbrain/v0.2-function-dependency-graph-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-97a826949c20bceb / \| D480 \| 空间动态性函数 \| C-138 框架发现 \| C-461 组织衰败 \| 待验证 \| 待验证 \|
+  - 来源：`outputs/getbrain/v0.2-function-dependency-graph-20260706.md`
+  - 依赖：D480；被引用：—
+- [\| D507 \| 退出权空间总函数 \| C-20 改革开放 \| C-53 晨星 \| C-170 七层主权 \| C-196 AI 自主意识 \|](../../../outputs/getbrain/v0.2-function-dependency-graph-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-e4788ce3da63da51 / \| D507 \| 退出权空间总函数 \| C-20 改革开放 \| C-53 晨星 \| C-170 七层主权 \| C-196 AI 自主意识 \|
+  - 来源：`outputs/getbrain/v0.2-function-dependency-graph-20260706.md`
+  - 依赖：D507；被引用：—
+- [\| D595 \| 函数内容/机制表达/关联函数族/来源/边界/pending \| 无 frontmatter、无收敛状态、无对应案例字段、无变量解释段 \| 表述口语化易读；边界段清晰 \| 一句话定义、变量解释、对应案例、版本记录 \| 无"机](../../../outputs/audit/two-tables-entry-format-audit-20260709.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a84655eee1c6c43f / \| D595 \| 函数内容/机制表达/关联函数族/来源/边界/pending \| 无 frontmatter、无收敛状态、无对应案例字段、无变量解释段 \| 表述口语化易读；边界段清晰 \| 一句话定义、变量解释、对应案例、版本记录 \| 无"机
+  - 来源：`outputs/audit/two-tables-entry-format-audit-20260709.md`
+  - 依赖：D595, D597, D599；被引用：—
+- [\| D595 \| 新变量「绑定→不可拒绝」 \| 挂 EXIT 族不重复 \| 不同构 \| 机制函数 \| 单篇 pending \| 入函数表 \|](../../../outputs/audit/teacher-competition-small-batch-backfill-audit-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-47fb2d59f379a91b / \| D595 \| 新变量「绑定→不可拒绝」 \| 挂 EXIT 族不重复 \| 不同构 \| 机制函数 \| 单篇 pending \| 入函数表 \|
+  - 来源：`outputs/audit/teacher-competition-small-batch-backfill-audit-20260708.md`
+  - 依赖：D595；被引用：—
+- [\| D596 \| 新结构「内部保留空间」 \| 挂 EXIT 族互补 \| 与退出权不同构 \| 机制函数 \| 单篇 pending \| 入函数表 \|](../../../outputs/audit/teacher-competition-small-batch-backfill-audit-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-0c2ddddc6b79e106 / \| D596 \| 新结构「内部保留空间」 \| 挂 EXIT 族互补 \| 与退出权不同构 \| 机制函数 \| 单篇 pending \| 入函数表 \|
+  - 来源：`outputs/audit/teacher-competition-small-batch-backfill-audit-20260708.md`
+  - 依赖：D596；被引用：—
+- [\| D597 \| 机制表达+机制链+与D244边界+扩展注释 \| 结构最完整 \| 机制链清晰、边界明确、有扩展注释 \| 一句话定义、变量解释独立段、对应案例字段、版本记录 \| frontmatter 缺失；"机制表达"命名与旧"数学表达"不](../../../outputs/audit/two-tables-entry-format-audit-20260709.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-212b7d5ab35420fe / \| D597 \| 机制表达+机制链+与D244边界+扩展注释 \| 结构最完整 \| 机制链清晰、边界明确、有扩展注释 \| 一句话定义、变量解释独立段、对应案例字段、版本记录 \| frontmatter 缺失；"机制表达"命名与旧"数学表达"不
+  - 来源：`outputs/audit/two-tables-entry-format-audit-20260709.md`
+  - 依赖：D244, D597；被引用：—
+- [\| D601 \| A5/A8/A15 \| 角色占入口→能力附属→目标遮蔽→决策外移 \| 角色稳定+外部只按角色评 \| 角色外自我叙事 \| 角色与自我一致/多元/可逆 \| ✅ \| 异于 D245（数学门控 vs 社会遮蔽） \| 材料内成立 \|](../../../outputs/collisions/20260711-disobedience-subjectivity/validation-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-b9e7235b90320f1e / \| D601 \| A5/A8/A15 \| 角色占入口→能力附属→目标遮蔽→决策外移 \| 角色稳定+外部只按角色评 \| 角色外自我叙事 \| 角色与自我一致/多元/可逆 \| ✅ \| 异于 D245（数学门控 vs 社会遮蔽） \| 材料内成立 \|
+  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/validation-report.md`
+  - 依赖：A15, A5, A8, D245；被引用：—
+- [\| D67 \| 认知自主性函数 \| T9（自主意识函数） \| T9 保留，D67 降级为案例标签 \|](../../../outputs/getbrain/v0.2-function-dependency-graph-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-ea7bb75a18e00d4c / \| D67 \| 认知自主性函数 \| T9（自主意识函数） \| T9 保留，D67 降级为案例标签 \|
+  - 来源：`outputs/getbrain/v0.2-function-dependency-graph-20260706.md`
+  - 依赖：D67, T9；被引用：—
+- [\| E1 \| formal_protocol \| partially_structured \| fail \| false \| approved \| approved \| false \|](../../../tests/fixtures/fp.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-ab3c2ef3cbf3a646 / \| E1 \| formal_protocol \| partially_structured \| fail \| false \| approved \| approved \| false \|
+  - 来源：`tests/fixtures/fp.md`
+  - 依赖：—；被引用：—
+- [\| G1-01 \| Registered structured producer argv succeeds \| Caller adds a different plan-level command \| executor \| `E_CALL](../../../tests/PHASE-D-DEFENSIVE-REJECTION-MATRIX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-92ee3a93e37fd5c8 / \| G1-01 \| Registered structured producer argv succeeds \| Caller adds a different plan-level command \| executor \| `E_CALL
+  - 来源：`tests/PHASE-D-DEFENSIVE-REJECTION-MATRIX.md`
+  - 依赖：—；被引用：—
+- [\| G1-02 \| Registered argv array succeeds \| Producer becomes a shell string \| executor \| `E_COMMAND_ARGV` \| `test_d3_g1_0](../../../tests/PHASE-D-DEFENSIVE-REJECTION-MATRIX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-1fecb8ba8ad5d1d3 / \| G1-02 \| Registered argv array succeeds \| Producer becomes a shell string \| executor \| `E_COMMAND_ARGV` \| `test_d3_g1_0
+  - 来源：`tests/PHASE-D-DEFENSIVE-REJECTION-MATRIX.md`
+  - 依赖：—；被引用：—
+- [\| G1-03 \| Genuine dry-run record validates \| Record argv differs from profile \| unified validator \| `E_EXECUTION_COMMAND](../../../tests/PHASE-D-DEFENSIVE-REJECTION-MATRIX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-ce04009ef5d0b8f4 / \| G1-03 \| Genuine dry-run record validates \| Record argv differs from profile \| unified validator \| `E_EXECUTION_COMMAND
+  - 来源：`tests/PHASE-D-DEFENSIVE-REJECTION-MATRIX.md`
+  - 依赖：—；被引用：—
+- [\| G1-04 \| Identity-bound cache validates \| Cached record argv differs from profile \| unified validator \| `E_CACHE_COMMAN](../../../tests/PHASE-D-DEFENSIVE-REJECTION-MATRIX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-8c520380c62cbf58 / \| G1-04 \| Identity-bound cache validates \| Cached record argv differs from profile \| unified validator \| `E_CACHE_COMMAN
+  - 来源：`tests/PHASE-D-DEFENSIVE-REJECTION-MATRIX.md`
+  - 依赖：—；被引用：—
+- [\| G2-01 \| Registered input is repository-relative \| Input becomes `../outside-input` \| executor + unified validator \| `E](../../../tests/PHASE-D-DEFENSIVE-REJECTION-MATRIX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-61b6b209525a59f3 / \| G2-01 \| Registered input is repository-relative \| Input becomes `../outside-input` \| executor + unified validator \| `E
+  - 来源：`tests/PHASE-D-DEFENSIVE-REJECTION-MATRIX.md`
+  - 依赖：—；被引用：—
+- [\| G2-02 \| Registered output resolves inside repository \| Output path becomes an escaping symlink \| executor \| `E_UNSAFE_](../../../tests/PHASE-D-DEFENSIVE-REJECTION-MATRIX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-110cbfabd5f31c2d / \| G2-02 \| Registered output resolves inside repository \| Output path becomes an escaping symlink \| executor \| `E_UNSAFE_
+  - 来源：`tests/PHASE-D-DEFENSIVE-REJECTION-MATRIX.md`
+  - 依赖：—；被引用：—
+- [\| G2-03 \| Cache directory is inside repository \| Cache target is outside repository \| executor \| `E_UNSAFE_PATH` \| `test](../../../tests/PHASE-D-DEFENSIVE-REJECTION-MATRIX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-7e125c9038432f88 / \| G2-03 \| Cache directory is inside repository \| Cache target is outside repository \| executor \| `E_UNSAFE_PATH` \| `test
+  - 来源：`tests/PHASE-D-DEFENSIVE-REJECTION-MATRIX.md`
+  - 依赖：—；被引用：—
+- [\| G2-04 \| Producer writes only `out.txt` \| Producer writes unregistered `rogue.txt` \| executor \| `E_UNREGISTERED_WRITE`](../../../tests/PHASE-D-DEFENSIVE-REJECTION-MATRIX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-e972a55b9f63fc61 / \| G2-04 \| Producer writes only `out.txt` \| Producer writes unregistered `rogue.txt` \| executor \| `E_UNREGISTERED_WRITE`
+  - 来源：`tests/PHASE-D-DEFENSIVE-REJECTION-MATRIX.md`
+  - 依赖：—；被引用：—
+- [\| G2-05 \| Recovery paths are repository-relative \| Restored target becomes `../outside-restore` \| executor + unified val](../../../tests/PHASE-D-DEFENSIVE-REJECTION-MATRIX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-07bf66a32d6b3937 / \| G2-05 \| Recovery paths are repository-relative \| Restored target becomes `../outside-restore` \| executor + unified val
+  - 来源：`tests/PHASE-D-DEFENSIVE-REJECTION-MATRIX.md`
+  - 依赖：—；被引用：—
+- [\| G3-01 \| Canonically sealed cache validates \| Cache payload changes without reseal \| unified validator \| `E_CACHE_INTEG](../../../tests/PHASE-D-DEFENSIVE-REJECTION-MATRIX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-c3d48ebc76d9e15c / \| G3-01 \| Canonically sealed cache validates \| Cache payload changes without reseal \| unified validator \| `E_CACHE_INTEG
+  - 来源：`tests/PHASE-D-DEFENSIVE-REJECTION-MATRIX.md`
+  - 依赖：—；被引用：—
+- [\| G3-02 \| Profile registry digest matches \| Profile schema version changes \| unified validator \| `E_CACHE_IDENTITY` \| `t](../../../tests/PHASE-D-DEFENSIVE-REJECTION-MATRIX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-da6d1a587b1d8c40 / \| G3-02 \| Profile registry digest matches \| Profile schema version changes \| unified validator \| `E_CACHE_IDENTITY` \| `t
+  - 来源：`tests/PHASE-D-DEFENSIVE-REJECTION-MATRIX.md`
+  - 依赖：—；被引用：—
+- [\| G3-03 \| Component registry digest matches \| Registry version changes \| unified validator \| `E_CACHE_IDENTITY` \| `test_](../../../tests/PHASE-D-DEFENSIVE-REJECTION-MATRIX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-c3474ce9d4bd5369 / \| G3-03 \| Component registry digest matches \| Registry version changes \| unified validator \| `E_CACHE_IDENTITY` \| `test_
+  - 来源：`tests/PHASE-D-DEFENSIVE-REJECTION-MATRIX.md`
+  - 依赖：—；被引用：—
+- [\| G3-04 \| Topology digest matches \| Topology version changes \| unified validator \| `E_CACHE_IDENTITY` \| `test_d3_g3_04_t](../../../tests/PHASE-D-DEFENSIVE-REJECTION-MATRIX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-23e32892e9e110ad / \| G3-04 \| Topology digest matches \| Topology version changes \| unified validator \| `E_CACHE_IDENTITY` \| `test_d3_g3_04_t
+  - 来源：`tests/PHASE-D-DEFENSIVE-REJECTION-MATRIX.md`
+  - 依赖：—；被引用：—
+- [\| G3-05 \| Producer identity matches \| Registered producer argv changes \| executor cache check + unified validator \| `E_C](../../../tests/PHASE-D-DEFENSIVE-REJECTION-MATRIX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-e3c9bc48612e2a96 / \| G3-05 \| Producer identity matches \| Registered producer argv changes \| executor cache check + unified validator \| `E_C
+  - 来源：`tests/PHASE-D-DEFENSIVE-REJECTION-MATRIX.md`
+  - 依赖：—；被引用：—
+- [\| G3-06 \| Validator identity matches \| Registered validator argv changes \| unified validator \| `E_CACHE_IDENTITY` \| `tes](../../../tests/PHASE-D-DEFENSIVE-REJECTION-MATRIX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-99babd5ab3dceff2 / \| G3-06 \| Validator identity matches \| Registered validator argv changes \| unified validator \| `E_CACHE_IDENTITY` \| `tes
+  - 来源：`tests/PHASE-D-DEFENSIVE-REJECTION-MATRIX.md`
+  - 依赖：—；被引用：—
+- [\| G3-07 \| Plan hash matches cache identity \| Request identity and plan hash change \| unified validator \| `E_CACHE_IDENTI](../../../tests/PHASE-D-DEFENSIVE-REJECTION-MATRIX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-43fafbad6c2cd45e / \| G3-07 \| Plan hash matches cache identity \| Request identity and plan hash change \| unified validator \| `E_CACHE_IDENTI
+  - 来源：`tests/PHASE-D-DEFENSIVE-REJECTION-MATRIX.md`
+  - 依赖：—；被引用：—
+- [\| G3-08 \| Input fingerprint matches \| Input bytes change \| unified validator \| `E_CACHE_IDENTITY` \| `test_d3_g3_08_input](../../../tests/PHASE-D-DEFENSIVE-REJECTION-MATRIX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-83e3828ed2e4de6d / \| G3-08 \| Input fingerprint matches \| Input bytes change \| unified validator \| `E_CACHE_IDENTITY` \| `test_d3_g3_08_input
+  - 来源：`tests/PHASE-D-DEFENSIVE-REJECTION-MATRIX.md`
+  - 依赖：—；被引用：—
+- [\| G3-09 \| Output fingerprint matches \| Output bytes change \| unified validator \| `E_CACHE_IDENTITY` \| `test_d3_g3_09_out](../../../tests/PHASE-D-DEFENSIVE-REJECTION-MATRIX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-b1649353231720b8 / \| G3-09 \| Output fingerprint matches \| Output bytes change \| unified validator \| `E_CACHE_IDENTITY` \| `test_d3_g3_09_out
+  - 来源：`tests/PHASE-D-DEFENSIVE-REJECTION-MATRIX.md`
+  - 依赖：—；被引用：—
+- [\| G4-01 \| One decision exists for `alpha` \| Duplicate decision is added \| unified validator \| `E_PLAN_DUPLICATE_DECISION](../../../tests/PHASE-D-DEFENSIVE-REJECTION-MATRIX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-af8c41c52f61998e / \| G4-01 \| One decision exists for `alpha` \| Duplicate decision is added \| unified validator \| `E_PLAN_DUPLICATE_DECISION
+  - 来源：`tests/PHASE-D-DEFENSIVE-REJECTION-MATRIX.md`
+  - 依赖：—；被引用：—
+- [\| G4-02 \| Affected component is `REBUILD` \| It claims `NO_CHANGE_WITH_PROOF` \| unified validator \| `E_AFFECTED_NO_CHANGE](../../../tests/PHASE-D-DEFENSIVE-REJECTION-MATRIX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-d944e35bd6ea2b89 / \| G4-02 \| Affected component is `REBUILD` \| It claims `NO_CHANGE_WITH_PROOF` \| unified validator \| `E_AFFECTED_NO_CHANGE
+  - 来源：`tests/PHASE-D-DEFENSIVE-REJECTION-MATRIX.md`
+  - 依赖：—；被引用：—
+- [\| G4-03 \| Live planner proof binds its component \| Proof component id changes \| planner + unified validator \| `E_PROOF_C](../../../tests/PHASE-D-DEFENSIVE-REJECTION-MATRIX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-448dd545a284eca9 / \| G4-03 \| Live planner proof binds its component \| Proof component id changes \| planner + unified validator \| `E_PROOF_C
+  - 来源：`tests/PHASE-D-DEFENSIVE-REJECTION-MATRIX.md`
+  - 依赖：—；被引用：—
+- [\| G4-04 \| First failure stops execution \| A second record is appended after failure \| executor + unified validator \| `E_](../../../tests/PHASE-D-DEFENSIVE-REJECTION-MATRIX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-9a1befc7f9caa5f7 / \| G4-04 \| First failure stops execution \| A second record is appended after failure \| executor + unified validator \| `E_
+  - 来源：`tests/PHASE-D-DEFENSIVE-REJECTION-MATRIX.md`
+  - 依赖：—；被引用：—
+- [\| G4-05 \| Recovery component order matches records \| Recovery component identity changes \| executor + unified validator](../../../tests/PHASE-D-DEFENSIVE-REJECTION-MATRIX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-4fd88e3347dc4340 / \| G4-05 \| Recovery component order matches records \| Recovery component identity changes \| executor + unified validator
+  - 来源：`tests/PHASE-D-DEFENSIVE-REJECTION-MATRIX.md`
+  - 依赖：—；被引用：—
+- [\| G5-01 \| Candidate plan has no upgraded status \| Status becomes `Current` \| unified validator \| `E_LIFECYCLE_ESCALATION](../../../tests/PHASE-D-DEFENSIVE-REJECTION-MATRIX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-32707bc7acd48830 / \| G5-01 \| Candidate plan has no upgraded status \| Status becomes `Current` \| unified validator \| `E_LIFECYCLE_ESCALATION
+  - 来源：`tests/PHASE-D-DEFENSIVE-REJECTION-MATRIX.md`
+  - 依赖：—；被引用：—
+- [\| G5-02 \| Candidate basis is non-self-referential \| Basis cites current HEAD itself \| unified validator \| `E_SELF_REFERE](../../../tests/PHASE-D-DEFENSIVE-REJECTION-MATRIX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-c59ac40bd5622462 / \| G5-02 \| Candidate basis is non-self-referential \| Basis cites current HEAD itself \| unified validator \| `E_SELF_REFERE
+  - 来源：`tests/PHASE-D-DEFENSIVE-REJECTION-MATRIX.md`
+  - 依赖：—；被引用：—
+- [\| G5-03 \| Scope contains only D3 assets \| Scope adds shadow Phase D4 asset \| unified validator \| `E_SCOPE_CONTAMINATION`](../../../tests/PHASE-D-DEFENSIVE-REJECTION-MATRIX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a6e49ae2d197b803 / \| G5-03 \| Scope contains only D3 assets \| Scope adds shadow Phase D4 asset \| unified validator \| `E_SCOPE_CONTAMINATION`
+  - 来源：`tests/PHASE-D-DEFENSIVE-REJECTION-MATRIX.md`
+  - 依赖：D3, D4；被引用：—
+- [\| G_δ \| 哥德尔不完备性判定 \| 是否永不可收敛 \| proof / ¬∃proof；不可证→触发元层收敛 \|](../../../outputs/audit/agent-project-understanding-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-41fde655f3914bcd / \| G_δ \| 哥德尔不完备性判定 \| 是否永不可收敛 \| proof / ¬∃proof；不可证→触发元层收敛 \|
+  - 来源：`outputs/audit/agent-project-understanding-20260708.md`
+  - 依赖：—；被引用：—
+- [\| GAP-011 \| 本体论 \| ENHANCE_KEEP \| 0/250 \| 保持现有 ontology（partial），补领域本体工程接口 domain_… \| ≥1 CURRENT_REVIEW(科学本体论/过程本体论)。 \|](../../../data/external-research/088-patch-blueprint.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-d43361297f50b232 / \| GAP-011 \| 本体论 \| ENHANCE_KEEP \| 0/250 \| 保持现有 ontology（partial），补领域本体工程接口 domain_… \| ≥1 CURRENT_REVIEW(科学本体论/过程本体论)。 \|
+  - 来源：`data/external-research/088-patch-blueprint.md`
+  - 依赖：—；被引用：—
+- [\| GAP-011 本体论 \| 4 \| MEDIUM (稀缺) \|](../../../reports/external-research/104-source-quality-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-1b1889348a794413 / \| GAP-011 本体论 \| 4 \| MEDIUM (稀缺) \|
+  - 来源：`reports/external-research/104-source-quality-audit.md`
+  - 依赖：—；被引用：—
+- [\| GAP-015 (Formal Spec) \| EVIDENCE_ACCUMULATING \| 3 \| 3 \| Yes (count) but only 1 direct \|](../../../reports/external-research/121c01-max-semantic-review-batch-01.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-a158944bcd0050c6 / \| GAP-015 (Formal Spec) \| EVIDENCE_ACCUMULATING \| 3 \| 3 \| Yes (count) but only 1 direct \|
+  - 来源：`reports/external-research/121c01-max-semantic-review-batch-01.md`
+  - 依赖：—；被引用：—
+- [\| GAP-015 \| No function specification language with formal preconditions/postconditions \| PARTIALLY_RESOLVED \| MEDIUM-LO](../../../reports/external-research/121Q3-night-final-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-008a96a3639762bc / \| GAP-015 \| No function specification language with formal preconditions/postconditions \| PARTIALLY_RESOLVED \| MEDIUM-LO
+  - 来源：`reports/external-research/121Q3-night-final-report.md`
+  - 依赖：—；被引用：—
+- [\| GAP-016 (Composition Algebra) \| EVIDENCE_ACCUMULATING \| 7 \| 5 \| Yes \|](../../../reports/external-research/121c01-max-semantic-review-batch-01.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-3e111d5a3fcf6467 / \| GAP-016 (Composition Algebra) \| EVIDENCE_ACCUMULATING \| 7 \| 5 \| Yes \|
+  - 来源：`reports/external-research/121c01-max-semantic-review-batch-01.md`
+  - 依赖：—；被引用：—
+- [\| GAP-016 \| No weight-space composition algebra for function combination \| PARTIALLY_RESOLVED \| MEDIUM \|](../../../reports/external-research/121Q3-night-final-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-8164e4092792cac9 / \| GAP-016 \| No weight-space composition algebra for function combination \| PARTIALLY_RESOLVED \| MEDIUM \|
+  - 来源：`reports/external-research/121Q3-night-final-report.md`
+  - 依赖：—；被引用：—
+- [\| GAP-016 \| No weight-space composition algebra \| 1,2,6 \| 6 \| RESEARCH_CANDIDATE_INSUFFICIENT_EVIDENCE \|](../../../reports/external-research/120-function-paradigm-atlas-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-2706488958faff2e / \| GAP-016 \| No weight-space composition algebra \| 1,2,6 \| 6 \| RESEARCH_CANDIDATE_INSUFFICIENT_EVIDENCE \|
+  - 来源：`reports/external-research/120-function-paradigm-atlas-report.md`
+  - 依赖：—；被引用：—
+- [\| GAP-018 (Composition Algebras) \| PARTIALLY_RESOLVED \| N7 cross-node pipeline provides composition surface \|](../../../reports/external-research/121Q4-final-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-7611d5064d8d21b2 / \| GAP-018 (Composition Algebras) \| PARTIALLY_RESOLVED \| N7 cross-node pipeline provides composition surface \|
+  - 来源：`reports/external-research/121Q4-final-report.md`
+  - 依赖：—；被引用：—
+- [\| GLM review \| 模型生成的推理记录 \| 标记 model + reasoning_level，不等同证明 \|](../../../docs/foundation/architecture-structure-freeze-v1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-6ce8abd9c069ca5b / \| GLM review \| 模型生成的推理记录 \| 标记 model + reasoning_level，不等同证明 \|
+  - 来源：`docs/foundation/architecture-structure-freeze-v1.md`
+  - 依赖：—；被引用：—
+- [\| I_iso(A,B) \| 与 D364/D423 **弱同构**（身心不可逆上游），但本函数强调「群体钝化稳态」社会心理层，D364/D423 未覆盖，故非完全同构。 \|](../../../outputs/audit/nf-004-systemic-numbing-backfill-audit-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-0ae4ba6ade863c83 / \| I_iso(A,B) \| 与 D364/D423 **弱同构**（身心不可逆上游），但本函数强调「群体钝化稳态」社会心理层，D364/D423 未覆盖，故非完全同构。 \|
+  - 来源：`outputs/audit/nf-004-systemic-numbing-backfill-audit-20260708.md`
+  - 依赖：D364, D423；被引用：—
+- [\| Kivelä et al., multilayer networks \| Layered relations and interlayer coupling. \| Layer boundaries are not natural ont](../../../reports/research/121Q23-network-theory-source-map.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-7aea0d73b1c7820a / \| Kivelä et al., multilayer networks \| Layered relations and interlayer coupling. \| Layer boundaries are not natural ont
+  - 来源：`reports/research/121Q23-network-theory-source-map.md`
+  - 依赖：—；被引用：—
+- [\| L1 \| 统一函数 \| 跨域通用核心函数，收敛至元层面 \|](../../../docs/function_dependency_map.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-ded713e9e8f9955a / \| L1 \| 统一函数 \| 跨域通用核心函数，收敛至元层面 \|
+  - 来源：`docs/function_dependency_map.md`
+  - 依赖：—；被引用：—
+- [\| L1 \| 统一函数 \| 跨域通用的核心函数，收敛至元层面 \| T1-T100, D1-D100 \| 约 100 \|](../../../outputs/getbrain/v0.2-function-dependency-graph-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-8eb2dd5da70992ac / \| L1 \| 统一函数 \| 跨域通用的核心函数，收敛至元层面 \| T1-T100, D1-D100 \| 约 100 \|
+  - 来源：`outputs/getbrain/v0.2-function-dependency-graph-20260706.md`
+  - 依赖：D1, D100, T1, T100；被引用：—
+- [\| L2 \| 结构性推论 \| 可以，但不能写成证明 \|](../../../docs/publication_risk_checklist.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-c41dd0dc90ebb3ae / \| L2 \| 结构性推论 \| 可以，但不能写成证明 \|
+  - 来源：`docs/publication_risk_checklist.md`
+  - 依赖：—；被引用：—
+- [\| L4 \| `JIN-MECH-01..08`、MCF/PSD/ARN 投影 \| pending \| 是有界候选模型，不是证明 \|](../../../reports/publication/jin-rise-point-fire-analysis.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-ef8308f2e366f68c / \| L4 \| `JIN-MECH-01..08`、MCF/PSD/ARN 投影 \| pending \| 是有界候选模型，不是证明 \|
+  - 来源：`reports/publication/jin-rise-point-fire-analysis.md`
+  - 依赖：—；被引用：—
+- [\| L4 \| 判定函数 \| 用于判定、验证、分类的函数 \|](../../../docs/function_dependency_map.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-1e19b372b1628f69 / \| L4 \| 判定函数 \| 用于判定、验证、分类的函数 \|
+  - 来源：`docs/function_dependency_map.md`
+  - 依赖：—；被引用：—
+- [\| L4 \| 判定函数 \| 用于判定、验证、分类的函数 \| D501-D600 \| 约 100 \|](../../../outputs/getbrain/v0.2-function-dependency-graph-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-d35fbc57fcdf7ad5 / \| L4 \| 判定函数 \| 用于判定、验证、分类的函数 \| D501-D600 \| 约 100 \|
+  - 来源：`outputs/getbrain/v0.2-function-dependency-graph-20260706.md`
+  - 依赖：D501, D600；被引用：—
+- [\| L4 \| 外部数学证明或专业证明 \| 只有存在外部证明时才可这样写 \|](../../../docs/publication_risk_checklist.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-2a471be74d95a647 / \| L4 \| 外部数学证明或专业证明 \| 只有存在外部证明时才可这样写 \|
+  - 来源：`docs/publication_risk_checklist.md`
+  - 依赖：—；被引用：—
+- [\| L_meta \| 机制函数，非情绪判断；边界已限定「不反对量化本身」，不越权推所有量化都坏。 \|](../../../outputs/audit/nf-002-quantified-metric-backfill-audit-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-2a5518c513fd1201 / \| L_meta \| 机制函数，非情绪判断；边界已限定「不反对量化本身」，不越权推所有量化都坏。 \|
+  - 来源：`outputs/audit/nf-002-quantified-metric-backfill-audit-20260708.md`
+  - 依赖：—；被引用：—
+- [\| L_meta \| 机制函数；边界已限定「不声称所有高压组织都钝化」，不越权推全国教师群体都已钝化。 \|](../../../outputs/audit/nf-004-systemic-numbing-backfill-audit-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-6a3898015601d6d9 / \| L_meta \| 机制函数；边界已限定「不声称所有高压组织都钝化」，不越权推全国教师群体都已钝化。 \|
+  - 来源：`outputs/audit/nf-004-systemic-numbing-backfill-audit-20260708.md`
+  - 依赖：—；被引用：—
+- [\| M4 \| 关键性质经过证明或系统反例测试 \|](../../../docs/foundation/claim-governance-and-function-identity.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-dd40a9af185c58cc / \| M4 \| 关键性质经过证明或系统反例测试 \|
+  - 来源：`docs/foundation/claim-governance-and-function-identity.md`
+  - 依赖：—；被引用：—
+- [\| M4 角色覆盖主体身份 \| 新函数 \| D245(不同构) \| 社会角色遮蔽，轴空白 \|](../../../outputs/collisions/20260711-disobedience-subjectivity/two-tables-full-collision-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-0512c0b5cdae1677 / \| M4 角色覆盖主体身份 \| 新函数 \| D245(不同构) \| 社会角色遮蔽，轴空白 \|
+  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/two-tables-full-collision-report.md`
+  - 依赖：D245；被引用：—
+- [\| M5 价值创造权—决策权错配 \| 新函数 \| T40(不同构) \| 价值—决策分离，轴空白 \|](../../../outputs/collisions/20260711-disobedience-subjectivity/two-tables-full-collision-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-4a1ee8d8c8faea92 / \| M5 价值创造权—决策权错配 \| 新函数 \| T40(不同构) \| 价值—决策分离，轴空白 \|
+  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/two-tables-full-collision-report.md`
+  - 依赖：T40；被引用：—
+- [\| Machine proof \| 机器验证的证明 \| 必须有 artifact + type_check \|](../../../docs/foundation/architecture-structure-freeze-v1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-21391fe2501de80f / \| Machine proof \| 机器验证的证明 \| 必须有 artifact + type_check \|
+  - 来源：`docs/foundation/architecture-structure-freeze-v1.md`
+  - 依赖：—；被引用：—
+- [\| MAX_REQUIRED \| 353 \| Mathematical propositions, structural analogies, isomorphism/equivalence claims requiring max-lev](../../../reports/foundation-architecture/083-escalation-routing-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-46aaa1b4588fcf59 / \| MAX_REQUIRED \| 353 \| Mathematical propositions, structural analogies, isomorphism/equivalence claims requiring max-lev
+  - 来源：`reports/foundation-architecture/083-escalation-routing-report.md`
+  - 依赖：—；被引用：—
+- [\| NEW_FUNCTION \| 独立反事实判别证明不可约原语 \| 是（用实时 next-free D 编号） \|](../../../docs/material-collision-validation-and-classification.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-91a5c3175ba34513 / \| NEW_FUNCTION \| 独立反事实判别证明不可约原语 \| 是（用实时 next-free D 编号） \|
+  - 来源：`docs/material-collision-validation-and-classification.md`
+  - 依赖：—；被引用：—
+- [\| NF-001 \| 绩效绑定裹挟 \| 函数表无「绩效绑定/职称绑定/可拒绝性」同名条目；退出权族(77文件)为上游 \| 引入新变量：待遇强绑定→可拒绝性趋零，旧退出权族未覆盖「绑定强度→不可拒绝」 \| 可稳定挂靠 FUNC-L1-EXIT](../../../outputs/audit/teacher-competition-backfill-review-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a4ca1de6cb2aed5b / \| NF-001 \| 绩效绑定裹挟 \| 函数表无「绩效绑定/职称绑定/可拒绝性」同名条目；退出权族(77文件)为上游 \| 引入新变量：待遇强绑定→可拒绝性趋零，旧退出权族未覆盖「绑定强度→不可拒绝」 \| 可稳定挂靠 FUNC-L1-EXIT
+  - 来源：`outputs/audit/teacher-competition-backfill-review-20260708.md`
+  - 依赖：—；被引用：—
+- [\| NF-001 \| 绩效绑定裹挟函数 \| 当晋升/职称/绩效/退休待遇与某竞赛指标强绑定时，个体参与该竞赛的「可拒绝性」趋近于零，即使主观反感也被结构裹挟参与。 \| L1（组织激励层） \| source.md §职称绑定的无奈裹挟 \| N](../../../outputs/collisions/20260708-teacher-competition/new-functions.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-53dae338f2c0930a / \| NF-001 \| 绩效绑定裹挟函数 \| 当晋升/职称/绩效/退休待遇与某竞赛指标强绑定时，个体参与该竞赛的「可拒绝性」趋近于零，即使主观反感也被结构裹挟参与。 \| L1（组织激励层） \| source.md §职称绑定的无奈裹挟 \| N
+  - 来源：`outputs/collisions/20260708-teacher-competition/new-functions.md`
+  - 依赖：—；被引用：—
+- [\| NF-001 绩效绑定裹挟 \| 函数 \| 入表 \| D595 \| 已验证（teacher-competition-index-visibility-check） \| small-batch-backfill-audit \|](../../../outputs/audit/teacher-competition-batch-closeout-audit-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-a44c89098f372ed8 / \| NF-001 绩效绑定裹挟 \| 函数 \| 入表 \| D595 \| 已验证（teacher-competition-index-visibility-check） \| small-batch-backfill-audit \|
+  - 来源：`outputs/audit/teacher-competition-batch-closeout-audit-20260708.md`
+  - 依赖：D595；被引用：—
+- [\| NF-002 \| 量化指标替代真实价值函数 \| 当可量化指标（获奖等级、AI 课堂数据）成为唯一显式考核信号，不可量化核心价值（育人、师生联结）被系统排除在考核表外。 \| L1 \| source.md §量化指标消解课堂温度 / §名实](../../../outputs/collisions/20260708-teacher-competition/new-functions.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-0072d9b4359d84f4 / \| NF-002 \| 量化指标替代真实价值函数 \| 当可量化指标（获奖等级、AI 课堂数据）成为唯一显式考核信号，不可量化核心价值（育人、师生联结）被系统排除在考核表外。 \| L1 \| source.md §量化指标消解课堂温度 / §名实
+  - 来源：`outputs/collisions/20260708-teacher-competition/new-functions.md`
+  - 依赖：D244；被引用：—
+- [\| NF-003 \| 表演化生产函数 \| 在评审标准主观且互斥时，个体为讨好所有评委，将产出推向「逐字稿+预设互动+掐表流程」的表演态，排除真实临场生成。 \| L1 \| source.md §表演化的课堂形态 / §磨课内卷 \| NC-00](../../../outputs/collisions/20260708-teacher-competition/new-functions.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-57f373f7a8f5996e / \| NF-003 \| 表演化生产函数 \| 在评审标准主观且互斥时，个体为讨好所有评委，将产出推向「逐字稿+预设互动+掐表流程」的表演态，排除真实临场生成。 \| L1 \| source.md §表演化的课堂形态 / §磨课内卷 \| NC-00
+  - 来源：`outputs/collisions/20260708-teacher-competition/new-functions.md`
+  - 依赖：D173；被引用：—
+- [\| NF-004 \| 系统性钝化函数 \| 长期高压下群体将对受害者的愧疚感压入心底、情绪溢出到工作对象，形成可持续但内耗的「钝化稳态」。 \| L1 \| source.md §系统性的精神内耗 \| NC-003 \| 现有表有不可逆判据(D36](../../../outputs/collisions/20260708-teacher-competition/new-functions.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-b5fca1c00f2499aa / \| NF-004 \| 系统性钝化函数 \| 长期高压下群体将对受害者的愧疚感压入心底、情绪溢出到工作对象，形成可持续但内耗的「钝化稳态」。 \| L1 \| source.md §系统性的精神内耗 \| NC-003 \| 现有表有不可逆判据(D36
+  - 来源：`outputs/collisions/20260708-teacher-competition/new-functions.md`
+  - 依赖：D364, D423；被引用：—
+- [\| NF-005 避风港 \| 函数 \| 入表 \| D596 \| 已验证（teacher-competition-index-visibility-check） \| small-batch-backfill-audit \|](../../../outputs/audit/teacher-competition-batch-closeout-audit-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-161cfedc68f29fdf / \| NF-005 避风港 \| 函数 \| 入表 \| D596 \| 已验证（teacher-competition-index-visibility-check） \| small-batch-backfill-audit \|
+  - 来源：`outputs/audit/teacher-competition-batch-closeout-audit-20260708.md`
+  - 依赖：D596；被引用：—
+- [\| ontology \| 0 \| 250 \| 250 \|](../../../reports/foundation-architecture/088-087-count-and-denominator-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-1e6dab44e65788bf / \| ontology \| 0 \| 250 \| 250 \|
+  - 来源：`reports/foundation-architecture/088-087-count-and-denominator-audit.md`
+  - 依赖：—；被引用：—
+- [\| P1 \| 2 \| Proof/equivalence (highest) \|](../../../reports/foundation-architecture/083-max-queue-readiness.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-422e7520b392a7dd / \| P1 \| 2 \| Proof/equivalence (highest) \|
+  - 来源：`reports/foundation-architecture/083-max-queue-readiness.md`
+  - 依赖：P1；被引用：—
+- [\| P_meta \| 主机制已入表；暴露两个候选新函数（指标排名隐性分层、刷分博弈） \|](../../../outputs/collisions/20260708-cross-domain-smoke-test/social/collision-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-6ad53cc6af2f4856 / \| P_meta \| 主机制已入表；暴露两个候选新函数（指标排名隐性分层、刷分博弈） \|
+  - 来源：`outputs/collisions/20260708-cross-domain-smoke-test/social/collision-report.md`
+  - 依赖：—；被引用：—
+- [\| P_meta \| 主机制已入表；暴露候选函数 NF-X3 指标驱动噪声累积 \|](../../../outputs/collisions/20260708-cross-domain-smoke-test/science/collision-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-5d4926d87a5b9ade / \| P_meta \| 主机制已入表；暴露候选函数 NF-X3 指标驱动噪声累积 \|
+  - 来源：`outputs/collisions/20260708-cross-domain-smoke-test/science/collision-report.md`
+  - 依赖：—；被引用：—
+- [\| PEND-001 \| 数学 \| 黎曼猜想 \| L2 / L3 / pending \| 点火框架证明了黎曼猜想 \| 点火框架可对黎曼猜想进行结构性重写，但不能替代数学证明 \| 保持 pending，除非有外部数学证明 \|](../../../docs/pending_claims_register.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-f2905d2a350b0e8c / \| PEND-001 \| 数学 \| 黎曼猜想 \| L2 / L3 / pending \| 点火框架证明了黎曼猜想 \| 点火框架可对黎曼猜想进行结构性重写，但不能替代数学证明 \| 保持 pending，除非有外部数学证明 \|
+  - 来源：`docs/pending_claims_register.md`
+  - 依赖：—；被引用：—
+- [\| PEND-002 \| 数学 \| P vs NP \| L2 / L3 / pending \| 点火框架解决了 P vs NP \| 点火框架可分析该问题的结构张力，但不能给出复杂性理论证明 \| 保持 pending \|](../../../docs/pending_claims_register.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-94f7a181d1ab75b0 / \| PEND-002 \| 数学 \| P vs NP \| L2 / L3 / pending \| 点火框架解决了 P vs NP \| 点火框架可分析该问题的结构张力，但不能给出复杂性理论证明 \| 保持 pending \|
+  - 来源：`docs/pending_claims_register.md`
+  - 依赖：—；被引用：—
+- [\| PEND-006 \| 物理学 \| 暗物质 / 暗能量本质 \| L2 / L3 / pending \| 点火框架解释了暗物质 / 暗能量的本质 \| 点火框架只能把该问题列为结构性未知 \| 保持 pending \|](../../../docs/pending_claims_register.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-8fa9b6d5c6915f94 / \| PEND-006 \| 物理学 \| 暗物质 / 暗能量本质 \| L2 / L3 / pending \| 点火框架解释了暗物质 / 暗能量的本质 \| 点火框架只能把该问题列为结构性未知 \| 保持 pending \|
+  - 来源：`docs/pending_claims_register.md`
+  - 依赖：—；被引用：—
+- [\| PEND-011 \| 经济学 \| 经济增长从何而来 \| L2 / L3 / pending \| 点火框架证明了经济增长机制 \| 点火框架可提供结构性解释，不提供经济学实证定论 \| 保持 pending \|](../../../docs/pending_claims_register.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a9ab0645b2a28811 / \| PEND-011 \| 经济学 \| 经济增长从何而来 \| L2 / L3 / pending \| 点火框架证明了经济增长机制 \| 点火框架可提供结构性解释，不提供经济学实证定论 \| 保持 pending \|
+  - 来源：`docs/pending_claims_register.md`
+  - 依赖：—；被引用：—
+- [\| PEND-014 \| 社会科学 \| 社会信任如何形成 \| L2 / L3 / pending \| 点火框架证明了社会信任的形成机制 \| 点火框架可提出结构假设，需社会科学实证验证 \| 保持 pending \|](../../../docs/pending_claims_register.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-8408d7988b0b455e / \| PEND-014 \| 社会科学 \| 社会信任如何形成 \| L2 / L3 / pending \| 点火框架证明了社会信任的形成机制 \| 点火框架可提出结构假设，需社会科学实证验证 \| 保持 pending \|
+  - 来源：`docs/pending_claims_register.md`
+  - 依赖：—；被引用：—
+- [\| PEND-017 \| 教育学 \| 为什么教育会加剧或缓解不平等 \| L2 / L3 / pending \| 点火框架证明教育导致不平等 \| 点火框架可分析教育结构张力，不能给出现实政策结论 \| 保持 pending \|](../../../docs/pending_claims_register.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a6cbff88b44761c6 / \| PEND-017 \| 教育学 \| 为什么教育会加剧或缓解不平等 \| L2 / L3 / pending \| 点火框架证明教育导致不平等 \| 点火框架可分析教育结构张力，不能给出现实政策结论 \| 保持 pending \|
+  - 来源：`docs/pending_claims_register.md`
+  - 依赖：—；被引用：—
+- [\| PEND-019 \| 心理学 / 行为 \| 动机如何形成 \| L2 / L3 / pending \| 点火框架证明动机形成机制 \| 点火框架可提供结构解释，不替代心理学实证 \| 保持 pending \|](../../../docs/pending_claims_register.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-6a7ec996cc66a51a / \| PEND-019 \| 心理学 / 行为 \| 动机如何形成 \| L2 / L3 / pending \| 点火框架证明动机形成机制 \| 点火框架可提供结构解释，不替代心理学实证 \| 保持 pending \|
+  - 来源：`docs/pending_claims_register.md`
+  - 依赖：—；被引用：—
+- [\| PEND-021 \| 法律 / 制度 \| 制度为何会锁定 \| L2 / L3 / pending \| 点火框架证明某制度应如何改革 \| 点火框架可分析锁定结构，不给法律或政策建议 \| 保持 pending \|](../../../docs/pending_claims_register.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-aed5ca38418e6797 / \| PEND-021 \| 法律 / 制度 \| 制度为何会锁定 \| L2 / L3 / pending \| 点火框架证明某制度应如何改革 \| 点火框架可分析锁定结构，不给法律或政策建议 \| 保持 pending \|
+  - 来源：`docs/pending_claims_register.md`
+  - 依赖：—；被引用：—
+- [\| PEND-022 \| AI / 计算机科学 \| AI 泛化能力从何而来 \| L2 / L3 / pending \| 点火框架证明了 AI 泛化来源 \| 点火框架可分析泛化结构，需实验和理论验证 \| 保持 pending \|](../../../docs/pending_claims_register.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-73961a964e219bcd / \| PEND-022 \| AI / 计算机科学 \| AI 泛化能力从何而来 \| L2 / L3 / pending \| 点火框架证明了 AI 泛化来源 \| 点火框架可分析泛化结构，需实验和理论验证 \| 保持 pending \|
+  - 来源：`docs/pending_claims_register.md`
+  - 依赖：—；被引用：—
+- [\| PEND-023 \| AI / 计算机科学 \| 大模型涌现是否真实 \| L2 / L3 / pending \| 点火框架证明大模型涌现真实 / 不真实 \| 点火框架可分析涌现争议的结构，不能替代评测和实验 \| 保持 pending \|](../../../docs/pending_claims_register.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-b8f885c72c6d7bd7 / \| PEND-023 \| AI / 计算机科学 \| 大模型涌现是否真实 \| L2 / L3 / pending \| 点火框架证明大模型涌现真实 / 不真实 \| 点火框架可分析涌现争议的结构，不能替代评测和实验 \| 保持 pending \|
+  - 来源：`docs/pending_claims_register.md`
+  - 依赖：—；被引用：—
+- [\| PEND-025 \| 文学 \| 文学作品为什么能跨时代有效 \| L2 / L3 / pending \| 点火框架证明文学跨时代有效的本质 \| 点火框架可提供解释路径，不替代文学史和接受史研究 \| 保持 pending \|](../../../docs/pending_claims_register.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-3407c2e3d73f0046 / \| PEND-025 \| 文学 \| 文学作品为什么能跨时代有效 \| L2 / L3 / pending \| 点火框架证明文学跨时代有效的本质 \| 点火框架可提供解释路径，不替代文学史和接受史研究 \| 保持 pending \|
+  - 来源：`docs/pending_claims_register.md`
+  - 依赖：—；被引用：—
+- [\| PEND-026 \| 艺术 \| 艺术作品的意义如何生成 \| L2 / L3 / pending \| 点火框架证明艺术意义生成机制 \| 点火框架可做结构阐释，不给唯一审美定论 \| 保持 pending \|](../../../docs/pending_claims_register.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-c7dac1ddafa2f6c5 / \| PEND-026 \| 艺术 \| 艺术作品的意义如何生成 \| L2 / L3 / pending \| 点火框架证明艺术意义生成机制 \| 点火框架可做结构阐释，不给唯一审美定论 \| 保持 pending \|
+  - 来源：`docs/pending_claims_register.md`
+  - 依赖：—；被引用：—
+- [\| PEND-027 \| 艺术 \| 现代艺术为何成立 \| L2 / L3 / pending \| 点火框架证明现代艺术成立 \| 点火框架可解释现代艺术成立的结构条件，不替代艺术史研究 \| 保持 pending \|](../../../docs/pending_claims_register.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a64309a09eca6696 / \| PEND-027 \| 艺术 \| 现代艺术为何成立 \| L2 / L3 / pending \| 点火框架证明现代艺术成立 \| 点火框架可解释现代艺术成立的结构条件，不替代艺术史研究 \| 保持 pending \|
+  - 来源：`docs/pending_claims_register.md`
+  - 依赖：—；被引用：—
+- [\| PEND-028 \| 叙事理论 \| 叙事为什么能改变人的理解 \| L2 / L3 / pending \| 点火框架证明叙事改变理解的机制 \| 点火框架可分析叙事的结构作用，不能替代认知科学实证 \| 保持 pending \|](../../../docs/pending_claims_register.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-aa9016f1b8da21c4 / \| PEND-028 \| 叙事理论 \| 叙事为什么能改变人的理解 \| L2 / L3 / pending \| 点火框架证明叙事改变理解的机制 \| 点火框架可分析叙事的结构作用，不能替代认知科学实证 \| 保持 pending \|
+  - 来源：`docs/pending_claims_register.md`
+  - 依赖：—；被引用：—
+- [\| PEND-029 \| 工程 / 技术 \| 工程可行性、成本、性能、部署判断 \| L2 / L3 / pending \| 点火框架证明某工程方案可行 \| 点火框架可做结构分析，不替代工程验证 \| 保持 pending \|](../../../docs/pending_claims_register.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-2c2f27998f108d6b / \| PEND-029 \| 工程 / 技术 \| 工程可行性、成本、性能、部署判断 \| L2 / L3 / pending \| 点火框架证明某工程方案可行 \| 点火框架可做结构分析，不替代工程验证 \| 保持 pending \|
+  - 来源：`docs/pending_claims_register.md`
+  - 依赖：—；被引用：—
+- [\| PEND-034 \| 公开故事化 \| 任何故事化案例 \| L1 / L2 / L3 / pending \| 故事证明了点火框架正确 \| 故事化案例只帮助理解结构关系，不是证明 \| 公开前必须过风险检查 \|](../../../docs/pending_claims_register.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-9671e788ef46363b / \| PEND-034 \| 公开故事化 \| 任何故事化案例 \| L1 / L2 / L3 / pending \| 故事证明了点火框架正确 \| 故事化案例只帮助理解结构关系，不是证明 \| 公开前必须过风险检查 \|
+  - 来源：`docs/pending_claims_register.md`
+  - 依赖：—；被引用：—
+- [\| Proof obligations \| 353 \|](../../../reports/foundation-architecture/085-084-truth-status-correction.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-ec22fe6b09e6731c / \| Proof obligations \| 353 \|
+  - 来源：`reports/foundation-architecture/085-084-truth-status-correction.md`
+  - 依赖：—；被引用：—
+- [\| Proof priority \| 34 \| 9.6% \|](../../../reports/foundation-architecture/085-backlog-prioritization.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-b34bb728f56817c3 / \| Proof priority \| 34 \| 9.6% \|
+  - 来源：`reports/foundation-architecture/085-backlog-prioritization.md`
+  - 依赖：—；被引用：—
+- [\| Proof/evidence obligations 完整生成 \| ✅ \|](../../../reports/foundation-architecture/084-max-adjudication-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-d6daa076214aa3a2 / \| Proof/evidence obligations 完整生成 \| ✅ \|
+  - 来源：`reports/foundation-architecture/084-max-adjudication-report.md`
+  - 依赖：—；被引用：—
+- [\| proof_obligation \| 5 / 353 \| 173 (49.0%) \| 100% \|](../../../reports/foundation-architecture/085-084-truth-status-correction.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-4fbe77283efe2353 / \| proof_obligation \| 5 / 353 \| 173 (49.0%) \| 100% \|
+  - 来源：`reports/foundation-architecture/085-084-truth-status-correction.md`
+  - 依赖：—；被引用：—
+- [\| proof_obligation \| 按 priority_label 选取固定模板 \| 否 \|](../../../reports/foundation-architecture/085-084-truth-status-correction.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-60c0ccde59a2911e / \| proof_obligation \| 按 priority_label 选取固定模板 \| 否 \|
+  - 来源：`reports/foundation-architecture/085-084-truth-status-correction.md`
+  - 依赖：—；被引用：—
+- [\| proof_status \| PROVED_WITH_ARTIFACT, REFUTED, UNPROVED, PENDING, NOT_APPLICABLE \|](../../../docs/foundation/architecture-structure-freeze-v1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-8d7360fe7cc9acce / \| proof_status \| PROVED_WITH_ARTIFACT, REFUTED, UNPROVED, PENDING, NOT_APPLICABLE \|
+  - 来源：`docs/foundation/architecture-structure-freeze-v1.md`
+  - 依赖：—；被引用：—
+- [\| Protocol ID \| 中文名 \| 英文 \| 本体定义（摘要） \|](../../../docs/protocols/protocol-index.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-14250bec9bce7df4 / \| Protocol ID \| 中文名 \| 英文 \| 本体定义（摘要） \|
+  - 来源：`docs/protocols/protocol-index.md`
+  - 依赖：—；被引用：—
+- [\| PROVED \| 0 \|](../../../reports/foundation-architecture/085-architecture-structure-freeze.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-a54146330b2e0b68 / \| PROVED \| 0 \|
+  - 来源：`reports/foundation-architecture/085-architecture-structure-freeze.md`
+  - 依赖：—；被引用：—
+- [\| PROVED_ORIGINAL_CLAIM_WITH_ARTIFACT \| 0 \|](../../../reports/foundation-architecture/085-084-truth-status-correction.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-dccc585aebdf35c2 / \| PROVED_ORIGINAL_CLAIM_WITH_ARTIFACT \| 0 \|
+  - 来源：`reports/foundation-architecture/085-084-truth-status-correction.md`
+  - 依赖：—；被引用：—
+- [\| PROVED_ORIGINAL_CLAIM_WITH_ARTIFACT \| 必须有可重放 Lean/Z3/SymPy artifact \|](../../../docs/foundation/architecture-structure-freeze-v1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-c76ba19ac358c55f / \| PROVED_ORIGINAL_CLAIM_WITH_ARTIFACT \| 必须有可重放 Lean/Z3/SymPy artifact \|
+  - 来源：`docs/foundation/architecture-structure-freeze-v1.md`
+  - 依赖：—；被引用：—
+- [\| R2-GETNOTE-007 \| `SUPPORTED_WITHIN_MEASUREMENT_SCOPE` \| 2 \| measurement boundary \| No general psychological mechanism](../../../reports/external-research/pointfire-getnote-external-verification-r1-20260813.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-c5dae2f66233fa86 / \| R2-GETNOTE-007 \| `SUPPORTED_WITHIN_MEASUREMENT_SCOPE` \| 2 \| measurement boundary \| No general psychological mechanism
+  - 来源：`reports/external-research/pointfire-getnote-external-verification-r1-20260813.md`
+  - 依赖：—；被引用：—
+- [\| R2-GETNOTE-011 \| `PARTIALLY_SUPPORTED` \| 3 \| bounded organizational/legal scope \| Formal routes do not establish acces](../../../reports/external-research/pointfire-getnote-external-verification-r1-20260813.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-8d37ca8b77922c43 / \| R2-GETNOTE-011 \| `PARTIALLY_SUPPORTED` \| 3 \| bounded organizational/legal scope \| Formal routes do not establish acces
+  - 来源：`reports/external-research/pointfire-getnote-external-verification-r1-20260813.md`
+  - 依赖：—；被引用：—
+- [\| RETAIN_FORMAL_PROPOSITION_UNPROVED \| 2 \|](../../../reports/foundation-architecture/084-max-adjudication-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-76155716716fe196 / \| RETAIN_FORMAL_PROPOSITION_UNPROVED \| 2 \|
+  - 来源：`reports/foundation-architecture/084-max-adjudication-report.md`
+  - 依赖：—；被引用：—
+- [\| Richard J. Sage, “Messianic Deity and Daoist Sage–Ruler” \| Academia Sinica 文章页及 PDF，相关页 2、4、8–12、17、20–21 \| 用于徽宗评论、神霄运](../../../docs/publication/cases/song-huizong-taoism-1117-source.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-c3a5eb40a00c4635 / \| Richard J. Sage, “Messianic Deity and Daoist Sage–Ruler” \| Academia Sinica 文章页及 PDF，相关页 2、4、8–12、17、20–21 \| 用于徽宗评论、神霄运
+  - 来源：`docs/publication/cases/song-huizong-taoism-1117-source.md`
+  - 依赖：—；被引用：—
+- [\| S1 \| formal_protocol \| partially_structured \| fail \| false \| approved \| approved \| false \|](../../../tests/fixtures/conflict.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-8b44d89f0b23ec10 / \| S1 \| formal_protocol \| partially_structured \| fail \| false \| approved \| approved \| false \|
+  - 来源：`tests/fixtures/conflict.md`
+  - 依赖：—；被引用：—
+- [\| SB-021 \| 暂缓 \| 四种基本力统一 \| `outputs/getbrain/storytelling-case-backlog-draft-20260707.md` \| pending \| pending \| pending \|](../../../docs/storytelling_backlog_ids.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a048ad530b567ee3 / \| SB-021 \| 暂缓 \| 四种基本力统一 \| `outputs/getbrain/storytelling-case-backlog-draft-20260707.md` \| pending \| pending \| pending \|
+  - 来源：`docs/storytelling_backlog_ids.md`
+  - 依赖：—；被引用：—
+- [\| SB-022 \| 暂缓 \| 量子引力 \| `outputs/getbrain/storytelling-case-backlog-draft-20260707.md` \| pending \| pending \| pending \| 当前](../../../docs/storytelling_backlog_ids.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-82fd4d27f3a48947 / \| SB-022 \| 暂缓 \| 量子引力 \| `outputs/getbrain/storytelling-case-backlog-draft-20260707.md` \| pending \| pending \| pending \| 当前
+  - 来源：`docs/storytelling_backlog_ids.md`
+  - 依赖：—；被引用：—
+- [\| SB-023 \| 暂缓 \| 暗物质 / 暗能量本质 \| `outputs/getbrain/storytelling-case-backlog-draft-20260707.md` \| pending \| pending \| pendi](../../../docs/storytelling_backlog_ids.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-9509b4211227cb61 / \| SB-023 \| 暂缓 \| 暗物质 / 暗能量本质 \| `outputs/getbrain/storytelling-case-backlog-draft-20260707.md` \| pending \| pending \| pendi
+  - 来源：`docs/storytelling_backlog_ids.md`
+  - 依赖：—；被引用：—
+- [\| SB-024 \| 暂缓 \| 黎曼猜想 \| `outputs/getbrain/storytelling-case-backlog-draft-20260707.md` \| pending \| pending \| pending \| 当前](../../../docs/storytelling_backlog_ids.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-ff505890c5ac6a0b / \| SB-024 \| 暂缓 \| 黎曼猜想 \| `outputs/getbrain/storytelling-case-backlog-draft-20260707.md` \| pending \| pending \| pending \| 当前
+  - 来源：`docs/storytelling_backlog_ids.md`
+  - 依赖：—；被引用：—
+- [\| SB-025 \| 暂缓 \| P vs NP \| `outputs/getbrain/storytelling-case-backlog-draft-20260707.md` \| pending \| pending \| pending \|](../../../docs/storytelling_backlog_ids.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-1357388f867c57c7 / \| SB-025 \| 暂缓 \| P vs NP \| `outputs/getbrain/storytelling-case-backlog-draft-20260707.md` \| pending \| pending \| pending \|
+  - 来源：`docs/storytelling_backlog_ids.md`
+  - 依赖：—；被引用：—
+- [\| SB-026 \| 暂缓 \| 罗马帝国为何衰亡 \| `outputs/getbrain/storytelling-case-backlog-draft-20260707.md` \| pending \| pending \| pending](../../../docs/storytelling_backlog_ids.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-724b7e7159308c78 / \| SB-026 \| 暂缓 \| 罗马帝国为何衰亡 \| `outputs/getbrain/storytelling-case-backlog-draft-20260707.md` \| pending \| pending \| pending
+  - 来源：`docs/storytelling_backlog_ids.md`
+  - 依赖：—；被引用：—
+- [\| SB-027 \| 暂缓 \| 工业革命为什么首先发生在英国 \| `outputs/getbrain/storytelling-case-backlog-draft-20260707.md` \| pending \| pending \| pe](../../../docs/storytelling_backlog_ids.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-af0ab240078af6f1 / \| SB-027 \| 暂缓 \| 工业革命为什么首先发生在英国 \| `outputs/getbrain/storytelling-case-backlog-draft-20260707.md` \| pending \| pending \| pe
+  - 来源：`docs/storytelling_backlog_ids.md`
+  - 依赖：—；被引用：—
+- [\| SB-028 \| 暂缓 \| 中国王朝周期为何反复出现 \| `outputs/getbrain/storytelling-case-backlog-draft-20260707.md` \| pending \| pending \| pend](../../../docs/storytelling_backlog_ids.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-f1eb5633c88987df / \| SB-028 \| 暂缓 \| 中国王朝周期为何反复出现 \| `outputs/getbrain/storytelling-case-backlog-draft-20260707.md` \| pending \| pending \| pend
+  - 来源：`docs/storytelling_backlog_ids.md`
+  - 依赖：—；被引用：—
+- [\| SB-029 \| 暂缓 \| 为什么教育会加剧或缓解不平等 \| `outputs/getbrain/storytelling-case-backlog-draft-20260707.md` \| pending \| pending \| pe](../../../docs/storytelling_backlog_ids.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-3f99b965b79182e1 / \| SB-029 \| 暂缓 \| 为什么教育会加剧或缓解不平等 \| `outputs/getbrain/storytelling-case-backlog-draft-20260707.md` \| pending \| pending \| pe
+  - 来源：`docs/storytelling_backlog_ids.md`
+  - 依赖：—；被引用：—
+- [\| SB-030 \| 暂缓 \| 艺术作品的意义如何生成 \| `outputs/getbrain/storytelling-case-backlog-draft-20260707.md` \| pending \| pending \| pendi](../../../docs/storytelling_backlog_ids.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-3655724b2c1b70ab / \| SB-030 \| 暂缓 \| 艺术作品的意义如何生成 \| `outputs/getbrain/storytelling-case-backlog-draft-20260707.md` \| pending \| pending \| pendi
+  - 来源：`docs/storytelling_backlog_ids.md`
+  - 依赖：—；被引用：—
+- [\| strong_assertion_type \| mathematical_proof, structural_isomorphism, causal_identification, precise_cross_domain, other](../../../docs/foundation/architecture-structure-freeze-v1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-e3e7205804b927ab / \| strong_assertion_type \| mathematical_proof, structural_isomorphism, causal_identification, precise_cross_domain, other
+  - 来源：`docs/foundation/architecture-structure-freeze-v1.md`
+  - 依赖：—；被引用：—
+- [\| T12 \| 信息门效率统一 \| C-324 跨学科团队 \| C-71 美国认同危机 \| 待验证 \| C-672 数学升级 \|](../../../outputs/getbrain/v0.2-function-dependency-graph-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-733533025e4af5d8 / \| T12 \| 信息门效率统一 \| C-324 跨学科团队 \| C-71 美国认同危机 \| 待验证 \| C-672 数学升级 \|
+  - 来源：`outputs/getbrain/v0.2-function-dependency-graph-20260706.md`
+  - 依赖：T12；被引用：—
+- [\| T2 \| — \| D517 \| Restrict consumer to typed algebra; structural comparison remains unvalidated \|](../../../reports/foundation-architecture/098-dependency-impact.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-1e03173a8490bbc6 / \| T2 \| — \| D517 \| Restrict consumer to typed algebra; structural comparison remains unvalidated \|
+  - 来源：`reports/foundation-architecture/098-dependency-impact.md`
+  - 依赖：D517, T2；被引用：—
+- [\| T4 reconciled_decision \| DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE \| RETAIN_FORMAL_PROPOSITION_UNPROVED \| 确认 JSONL 真值 \|](../../../reports/foundation-architecture/085-084-truth-status-correction.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-8ebbf2f11228dc12 / \| T4 reconciled_decision \| DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE \| RETAIN_FORMAL_PROPOSITION_UNPROVED \| 确认 JSONL 真值 \|
+  - 来源：`reports/foundation-architecture/085-084-truth-status-correction.md`
+  - 依赖：T4；被引用：—
+- [\| T4 \| DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE \| RETAIN_FORMAL_PROPOSITION_UNPROVED \|](../../../reports/foundation-architecture/085-architecture-structure-freeze.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-31799dd5cd3ea497 / \| T4 \| DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE \| RETAIN_FORMAL_PROPOSITION_UNPROVED \|
+  - 来源：`reports/foundation-architecture/085-architecture-structure-freeze.md`
+  - 依赖：T4；被引用：—
+- [\| Theorem function (T) \| 19 \|](../../../reports/external-research/120-function-paradigm-atlas-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-b46b22c1edcb55c1 / \| Theorem function (T) \| 19 \|
+  - 来源：`reports/external-research/120-function-paradigm-atlas-report.md`
+  - 依赖：—；被引用：—
+- [\| UNPROVED \| 353 \|](../../../reports/foundation-architecture/085-architecture-structure-freeze.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-48e338d0b85000f4 / \| UNPROVED \| 353 \|
+  - 来源：`reports/foundation-architecture/085-architecture-structure-freeze.md`
+  - 依赖：—；被引用：—
+- [\| V1 \| 选择使系统延续时间最大（或延续概率最高）的行动。 \| 受约束的长期延续：在身份、功能、伦理、生态与资源约束下，选择提升系统长期延续能力、保留纠错与恢复可能、并避免对更大生命共同体造成不可逆伤害的行动。 \| CONDITIONA](../../../docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a779e2f4c46bf4d5 / \| V1 \| 选择使系统延续时间最大（或延续概率最高）的行动。 \| 受约束的长期延续：在身份、功能、伦理、生态与资源约束下，选择提升系统长期延续能力、保留纠错与恢复可能、并避免对更大生命共同体造成不可逆伤害的行动。 \| CONDITIONA
+  - 来源：`docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md`
+  - 依赖：—；被引用：—
+- [\| V1-S2-E2 \| V1 \| S2 \| E2 \| 延续性+开放边界+非线性演化 \| 生命演化——开放边界，非线性演化，追求物种延续 \| 适应性延续系统——开放边界下通过非线性变化实现延续 \| mixed \|](../../../docs/meta-protocols/meta-protocol-64-combination-matrix.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-d9bec0a07909f8ee / \| V1-S2-E2 \| V1 \| S2 \| E2 \| 延续性+开放边界+非线性演化 \| 生命演化——开放边界，非线性演化，追求物种延续 \| 适应性延续系统——开放边界下通过非线性变化实现延续 \| mixed \|
+  - 来源：`docs/meta-protocols/meta-protocol-64-combination-matrix.md`
+  - 依赖：—；被引用：—
+- [\| V2 \| 选择产出/投入效率最大（单位资源产出最高）的行动。 \| 在不外部化生命、生态、代际和主体性成本的前提下，以较少资源实现共同体认可目标；效率提升必须保留纠错、退出与恢复能力，且净收益在多时间尺度上为正。 \| CONDITIONA](../../../docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-9f5c8bad1c83cf57 / \| V2 \| 选择产出/投入效率最大（单位资源产出最高）的行动。 \| 在不外部化生命、生态、代际和主体性成本的前提下，以较少资源实现共同体认可目标；效率提升必须保留纠错、退出与恢复能力，且净收益在多时间尺度上为正。 \| CONDITIONA
+  - 来源：`docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md`
+  - 依赖：—；被引用：—
+- [\| V3 \| 选择提高系统新可能性、复杂度或生成能力的行动。 \| 增加生命共同体适应能力、问题解决能力和未来选择空间的可检验变化；须可逆优先、小规模试验、风险隔离、可停止、有失败反馈，且不以创新为由制造不可控外部风险。 \| CONDITIO](../../../docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-1203eb706a4e1e52 / \| V3 \| 选择提高系统新可能性、复杂度或生成能力的行动。 \| 增加生命共同体适应能力、问题解决能力和未来选择空间的可检验变化；须可逆优先、小规模试验、风险隔离、可停止、有失败反馈，且不以创新为由制造不可控外部风险。 \| CONDITIO
+  - 来源：`docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md`
+  - 依赖：—；被引用：—
+- [\| V4 \| 选择长期极限效用或长期稳定性最大的行动。 \| 在多时间尺度上维持生命共同体的再生能力、承载能力、多样性和代际公平；不得退化为维持任何现状、保护有害系统或只维护资源存量而忽略主体尊严。 \| CONDITIONAL_ACCEPTA](../../../docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-59077067d3a6c7f5 / \| V4 \| 选择长期极限效用或长期稳定性最大的行动。 \| 在多时间尺度上维持生命共同体的再生能力、承载能力、多样性和代际公平；不得退化为维持任何现状、保护有害系统或只维护资源存量而忽略主体尊严。 \| CONDITIONAL_ACCEPTA
+  - 来源：`docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md`
+  - 依赖：—；被引用：—
+- [\| “理论生成器” \| `DOWNGRADED` \| candidate-generation aid，不生成 proof/truth \|](../../../docs/architecture/epistemic-governance-kernel-and-federated-planes.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-7f5173d7407fd34a / \| “理论生成器” \| `DOWNGRADED` \| candidate-generation aid，不生成 proof/truth \|
+  - 来源：`docs/architecture/epistemic-governance-kernel-and-federated-planes.md`
+  - 依赖：—；被引用：—
+- [\| 不可容纳残余 \| gap、pending、open obligation、unmapped residue \| 旧定义留下未决压力 \| 残余不证明下一假设 \|](../../../docs/publication/zhiyuan-writing-method.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-5a8a5fce87c88868 / \| 不可容纳残余 \| gap、pending、open obligation、unmapped residue \| 旧定义留下未决压力 \| 残余不证明下一假设 \|
+  - 来源：`docs/publication/zhiyuan-writing-method.md`
+  - 依赖：—；被引用：—
+- [\| 修改两张表 \| 统一函数总表 / 统一案例总表 只由 Agent/Codex 在回填轮次写 \|](../../../docs/getbrain-book-collision-guide-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-a9ec50d133f4ee12 / \| 修改两张表 \| 统一函数总表 / 统一案例总表 只由 Agent/Codex 在回填轮次写 \|
+  - 来源：`docs/getbrain-book-collision-guide-20260708.md`
+  - 依赖：—；被引用：—
+- [\| 候选编号 \| 案例名称 \| 案例内容 \| 对应函数 \| 来源材料 \| 关键发现 \| 是否建议入表 \| 理由 \|](../../../outputs/collisions/20260708-teacher-competition/new-cases.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-cc27b92bbc800992 / \| 候选编号 \| 案例名称 \| 案例内容 \| 对应函数 \| 来源材料 \| 关键发现 \| 是否建议入表 \| 理由 \|
+  - 来源：`outputs/collisions/20260708-teacher-competition/new-cases.md`
+  - 依赖：—；被引用：—
+- [\| 函数 \| ≥2 独立锚点 \| 因果链 \| 触发 \| 停止 \| 反例 \| 边界 \| 异于既有 \| 断言等级 \| pending \| 数学表达 \|](../../../outputs/collisions/20260711-disobedience-subjectivity/validation-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-bf750a4b30279005 / \| 函数 \| ≥2 独立锚点 \| 因果链 \| 触发 \| 停止 \| 反例 \| 边界 \| 异于既有 \| 断言等级 \| pending \| 数学表达 \|
+  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/validation-report.md`
+  - 依赖：—；被引用：—
+- [\| 函数编号 \| 函数名称 \| 认知域 \| 社会域 \| 物理域 \| 数学域 \|](../../../outputs/getbrain/v0.2-function-dependency-graph-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-56fa74a59f515135 / \| 函数编号 \| 函数名称 \| 认知域 \| 社会域 \| 物理域 \| 数学域 \|
+  - 来源：`outputs/getbrain/v0.2-function-dependency-graph-20260706.md`
+  - 依赖：—；被引用：—
+- [\| 函数编号 \| 函数名称 \| 财富域 \| 认知域 \| 生物学域 \| 物理域 \|](../../../outputs/getbrain/v0.2-function-dependency-graph-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-99122e8b7e62d7fc / \| 函数编号 \| 函数名称 \| 财富域 \| 认知域 \| 生物学域 \| 物理域 \|
+  - 来源：`outputs/getbrain/v0.2-function-dependency-graph-20260706.md`
+  - 依赖：—；被引用：—
+- [\| 判断最终新增 \| 是否新增函数由 Agent/Codex 经 Ψ₀ 机制比对 + GPT 审核决定 \|](../../../docs/getbrain-book-collision-guide-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-acb40ee8df3c1f0b / \| 判断最终新增 \| 是否新增函数由 Agent/Codex 经 Ψ₀ 机制比对 + GPT 审核决定 \|
+  - 来源：`docs/getbrain-book-collision-guide-20260708.md`
+  - 依赖：—；被引用：—
+- [\| 区分"冻结候选"和"证明/验证未完成" \| ✅ \|](../../../reports/foundation-architecture/084-max-adjudication-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-bf7f0f6781322be7 / \| 区分"冻结候选"和"证明/验证未完成" \| ✅ \|
+  - 来源：`reports/foundation-architecture/084-max-adjudication-report.md`
+  - 依赖：—；被引用：—
+- [\| 十二律 / 元同构律 \| `DOWNGRADED` \| 可复用形式与待证明 correspondence \|](../../../docs/architecture/epistemic-governance-kernel-and-federated-planes.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-aba39b389a87034e / \| 十二律 / 元同构律 \| `DOWNGRADED` \| 可复用形式与待证明 correspondence \|
+  - 来源：`docs/architecture/epistemic-governance-kernel-and-federated-planes.md`
+  - 依赖：—；被引用：—
+- [\| 历史学 \| 史料可靠、史料互证、逻辑自洽、反事实讨论 \| 史料链完整、解释共同体共识、跨学科验证、可重复验证 \| 史料不足或冲突、解释争议很大、缺乏史料互证、解释未形成共识 \|](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-1d6a1358a6ef2b97 / \| 历史学 \| 史料可靠、史料互证、逻辑自洽、反事实讨论 \| 史料链完整、解释共同体共识、跨学科验证、可重复验证 \| 史料不足或冲突、解释争议很大、缺乏史料互证、解释未形成共识 \|
+  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
+  - 依赖：—；被引用：—
+- [\| 历史学 \| 史料考证；具体历史语境；解释共同体共识 \| 历史因果写成单因决定论；结构同构替代具体历史语境 \| 历史因果的具体判定、历史规律的判定 \|](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-3666c1bc47594302 / \| 历史学 \| 史料考证；具体历史语境；解释共同体共识 \| 历史因果写成单因决定论；结构同构替代具体历史语境 \| 历史因果的具体判定、历史规律的判定 \|
+  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
+  - 依赖：—；被引用：—
+- [\| 历史学 \| 因果结构判定→历史因果链；自举收敛判定→制度变迁路径；同构判定→跨域同构（历史案例×社会案例×认知案例） \| 退出权函数→历史制度变迁；乘法临界漂移→历史相变；门控函数→历史结构约束 \| 元层面收敛→历史解释的收敛方向；元协](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-c9600b8d52e6597e / \| 历史学 \| 因果结构判定→历史因果链；自举收敛判定→制度变迁路径；同构判定→跨域同构（历史案例×社会案例×认知案例） \| 退出权函数→历史制度变迁；乘法临界漂移→历史相变；门控函数→历史结构约束 \| 元层面收敛→历史解释的收敛方向；元协
+  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
+  - 依赖：—；被引用：—
+- [\| 只放在 L6 \| 拒绝 \| 行为者、证据来源、事件边界和连接关系可能在 L1—L4 已经被改写；末端润色看不见上游损失。 \|](../../../docs/architecture/language-thought-logic-plane.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-458fd238f5024c14 / \| 只放在 L6 \| 拒绝 \| 行为者、证据来源、事件边界和连接关系可能在 L1—L4 已经被改写；末端润色看不见上游损失。 \|
+  - 来源：`docs/architecture/language-thought-logic-plane.md`
+  - 依赖：—；被引用：—
+- [\| 学科 \| L1 结构类比 \| L2 结构性推论 \| L3 框架内判定 \| L4/L5 外部证明或验证 \|](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-a7f6bae83eaa8645 / \| 学科 \| L1 结构类比 \| L2 结构性推论 \| L3 框架内判定 \| L4/L5 外部证明或验证 \|
+  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
+  - 依赖：—；被引用：—
+- [\| 学科 \| 最低证据要求 \| 强证据要求 \| 必须 pending 的情况 \|](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a8771dc8af449c00 / \| 学科 \| 最低证据要求 \| 强证据要求 \| 必须 pending 的情况 \|
+  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
+  - 依赖：—；被引用：—
+- [\| 形式内容 \| formal object、函数类资产、argument、proof \| Foundation formal/function/argument/proof registries \| 保持 type、proof、M/E 分](../../../docs/architecture/epistemic-governance-kernel-and-federated-planes.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-9b5da8afdb14acd2 / \| 形式内容 \| formal object、函数类资产、argument、proof \| Foundation formal/function/argument/proof registries \| 保持 type、proof、M/E 分
+  - 来源：`docs/architecture/epistemic-governance-kernel-and-federated-planes.md`
+  - 依赖：—；被引用：—
+- [\| 数学 \| 公理系统内可复核证明、证明逻辑严密无漏洞、与已知定理不冲突 \| 证明被数学界同行审查通过、证明被收录进权威教材或论文集、证明被多次独立验证 \| L1-L3 \| 纯猜想无证明、证明未完成或有漏洞、证明未被同行审查通过、证明未被多](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-e8651e2c1bc1ef4b / \| 数学 \| 公理系统内可复核证明、证明逻辑严密无漏洞、与已知定理不冲突 \| 证明被数学界同行审查通过、证明被收录进权威教材或论文集、证明被多次独立验证 \| L1-L3 \| 纯猜想无证明、证明未完成或有漏洞、证明未被同行审查通过、证明未被多
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [\| 数学 \| 公理系统内可复核证明、证明逻辑严密无漏洞、与已知定理不冲突 \| 证明被数学界同行审查通过、证明被收录进权威教材或论文集、证明被多次独立验证 \| 纯猜想无证明、证明未完成或有漏洞、证明未被同行审查通过、证明未被多次独立验证 \|](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-f9ef7be13b757fa8 / \| 数学 \| 公理系统内可复核证明、证明逻辑严密无漏洞、与已知定理不冲突 \| 证明被数学界同行审查通过、证明被收录进权威教材或论文集、证明被多次独立验证 \| 纯猜想无证明、证明未完成或有漏洞、证明未被同行审查通过、证明未被多次独立验证 \|
+  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
+  - 依赖：—；被引用：—
+- [\| 数学 \| 公理系统内证明；数学猜想的证明 \| J⁺/J⁻ 判定写成数学证明；结构性收敛方向写成证明步骤；已证明定理写成点火框架证明 \| 黎曼猜想、P vs NP 问题、其他千禧年大奖难题 \|](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-c1a0763623549e7c / \| 数学 \| 公理系统内证明；数学猜想的证明 \| J⁺/J⁻ 判定写成数学证明；结构性收敛方向写成证明步骤；已证明定理写成点火框架证明 \| 黎曼猜想、P vs NP 问题、其他千禧年大奖难题 \|
+  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
+  - 依赖：—；被引用：—
+- [\| 数学 \| 哥德尔不完备性 \| G_δ、L_meta、I_iso \| 高 \| 中 \| 低 \| L4（外部已证明）+ L1-L2（点火重解释） \| 结构增益 + 重述 \| 是 \|](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-34ea3c055e522ee6 / \| 数学 \| 哥德尔不完备性 \| G_δ、L_meta、I_iso \| 高 \| 中 \| 低 \| L4（外部已证明）+ L1-L2（点火重解释） \| 结构增益 + 重述 \| 是 \|
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [\| 数学 \| 因果结构判定→数学证明链；自举收敛判定→理论收敛路径；同构判定→跨域同构（数学结构×物理结构×社会结构） \| 变量闭包锁死→公理系统的完备性边界；门控函数→数学结构的约束和自由度；乘法临界漂移→数学猜想的敏感度分析 \| 哥德尔](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-0077478e62e8d725 / \| 数学 \| 因果结构判定→数学证明链；自举收敛判定→理论收敛路径；同构判定→跨域同构（数学结构×物理结构×社会结构） \| 变量闭包锁死→公理系统的完备性边界；门控函数→数学结构的约束和自由度；乘法临界漂移→数学猜想的敏感度分析 \| 哥德尔
+  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
+  - 依赖：—；被引用：—
+- [\| 数学定理统一 \| 公理系统内可复核证明 \| 不可直接声称（pending） \|](../../../outputs/getbrain/project-position-update-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-daa38e8b10431b1e / \| 数学定理统一 \| 公理系统内可复核证明 \| 不可直接声称（pending） \|
+  - 来源：`outputs/getbrain/project-position-update-20260706.md`
+  - 依赖：—；被引用：—
+- [\| 数学证明 \| 未完成（353 条义务待履行） \|](../../../reports/foundation-architecture/084-architecture-truth-freeze-readiness.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-29c1c6a9b5a76e7f / \| 数学证明 \| 未完成（353 条义务待履行） \|
+  - 来源：`reports/foundation-architecture/084-architecture-truth-freeze-readiness.md`
+  - 依赖：—；被引用：—
+- [\| 旧 axiom/theorem/function 命名 \| `SUPERSEDED` \| 名称保留为 provenance，当前 identity 由 adjudication 决定 \|](../../../docs/architecture/epistemic-governance-kernel-and-federated-planes.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-d6314061b30cae29 / \| 旧 axiom/theorem/function 命名 \| `SUPERSEDED` \| 名称保留为 provenance，当前 identity 由 adjudication 决定 \|
+  - 来源：`docs/architecture/epistemic-governance-kernel-and-federated-planes.md`
+  - 依赖：—；被引用：—
+- [\| 未修改函数表 \| ✅ 统一函数总表/ 无改动 \|](../../../outputs/audit/agent-collision-phase-closeout-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-42d984402d908eab / \| 未修改函数表 \| ✅ 统一函数总表/ 无改动 \|
+  - 来源：`outputs/audit/agent-collision-phase-closeout-20260708.md`
+  - 依赖：—；被引用：—
+- [\| 未将 max 模型判断冒充机器证明 \| ✅ \|](../../../reports/foundation-architecture/084-max-adjudication-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-5b423bf9d9f93515 / \| 未将 max 模型判断冒充机器证明 \| ✅ \|
+  - 来源：`reports/foundation-architecture/084-max-adjudication-report.md`
+  - 依赖：—；被引用：—
+- [\| 本体 \| "允许做什么"（运行规则） \| "怎么做"（计算工具） \|](../../../docs/protocols/protocol-architecture.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-59c8d17c52da0c37 / \| 本体 \| "允许做什么"（运行规则） \| "怎么做"（计算工具） \|
+  - 来源：`docs/protocols/protocol-architecture.md`
+  - 依赖：—；被引用：—
+- [\| 框架内统一 \| 点火函数系统内部的归并、压缩、收敛 \| 可以（L2-L3） \|](../../../outputs/getbrain/project-position-update-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：NFC-cb8d014b2b9ce402 / \| 框架内统一 \| 点火函数系统内部的归并、压缩、收敛 \| 可以（L2-L3） \|
+  - 来源：`outputs/getbrain/project-position-update-20260706.md`
+  - 依赖：—；被引用：—
+- [\| 涉及外部证明 \| 无证明则不能写成 L4 \|](../../../docs/pending_claims_register.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-cf7c5912eb44158d / \| 涉及外部证明 \| 无证明则不能写成 L4 \|
+  - 来源：`docs/pending_claims_register.md`
+  - 依赖：—；被引用：—
+- [\| 涉及故事化案例 \| 必须注明故事化不是证明 \|](../../../docs/pending_claims_register.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-228d5ce0af47bc0d / \| 涉及故事化案例 \| 必须注明故事化不是证明 \|
+  - 来源：`docs/pending_claims_register.md`
+  - 依赖：—；被引用：—
+- [\| 清华历史系 Patricia Ebrey 讲座介绍 \| 清华大学历史系活动页 \| 用于提醒不能把徽宗简化为 1127 之后的单一道德标签；不是对具体史实的证明。 \|](../../../docs/publication/cases/song-huizong-taoism-1117-source.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-1ec9d9eaa621da7e / \| 清华历史系 Patricia Ebrey 讲座介绍 \| 清华大学历史系活动页 \| 用于提醒不能把徽宗简化为 1127 之后的单一道德标签；不是对具体史实的证明。 \|
+  - 来源：`docs/publication/cases/song-huizong-taoism-1117-source.md`
+  - 依赖：—；被引用：—
+- [\| 物理学 \| 四种基本力统一 \| G_δ、L_meta、I_iso、门控函数族 \| 中 \| 低 \| 高 \| L2 + pending \| 结构增益 + pending \| 是 \|](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-964d58e8d1192518 / \| 物理学 \| 四种基本力统一 \| G_δ、L_meta、I_iso、门控函数族 \| 中 \| 低 \| 高 \| L2 + pending \| 结构增益 + pending \| 是 \|
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [\| 物理学 \| 因果结构判定→物理因果链；自举收敛判定→理论收敛路径；同构判定→跨域同构（相变×社会相变） \| 门控面合并→四种基本力的结构性统一（候选机制）；乘法临界漂移→参数敏感度分析；变量闭包锁死→理论完备性边界 \| 哥德尔不完备性判](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-de1104873a83af68 / \| 物理学 \| 因果结构判定→物理因果链；自举收敛判定→理论收敛路径；同构判定→跨域同构（相变×社会相变） \| 门控面合并→四种基本力的结构性统一（候选机制）；乘法临界漂移→参数敏感度分析；变量闭包锁死→理论完备性边界 \| 哥德尔不完备性判
+  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
+  - 依赖：—；被引用：—
+- [\| 物理学 \| 暗物质 / 暗能量本质 \| G_δ、L_meta、I_iso \| 中 \| 低 \| 高 \| L2 + pending \| 结构增益 + pending \| 是 \|](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-9c51a981554e995a / \| 物理学 \| 暗物质 / 暗能量本质 \| G_δ、L_meta、I_iso \| 中 \| 低 \| 高 \| L2 + pending \| 结构增益 + pending \| 是 \|
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [\| 物理学 \| 标准模型、量子场论、广义相对论的具体物理机制；拉格朗日量、规范群、耦合常数、粒子谱、RG 流和实验数值 \| "门控面合并"写成物理机制；"四种基本力统一"写成已解决；"物理大一统不可能"写成物理学 no-go theorem](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-6feaaa1ad2e149bf / \| 物理学 \| 标准模型、量子场论、广义相对论的具体物理机制；拉格朗日量、规范群、耦合常数、粒子谱、RG 流和实验数值 \| "门控面合并"写成物理机制；"四种基本力统一"写成已解决；"物理大一统不可能"写成物理学 no-go theorem
+  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
+  - 依赖：—；被引用：—
+- [\| 物理学 \| 理论自洽性、与已知实验数据不冲突、可证伪性 \| 实验观测验证、理论预测被实验确认、多个独立实验重复验证、精确数值匹配 \| L1-L3 \| 纯理论推演无实验路径、数学上未完成证明、与现有实验数据冲突、理论框架本身未收敛 \| 高](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-cfe594b858ada8af / \| 物理学 \| 理论自洽性、与已知实验数据不冲突、可证伪性 \| 实验观测验证、理论预测被实验确认、多个独立实验重复验证、精确数值匹配 \| L1-L3 \| 纯理论推演无实验路径、数学上未完成证明、与现有实验数据冲突、理论框架本身未收敛 \| 高
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [\| 物理学 \| 理论自洽性、与已知实验数据不冲突、可证伪性 \| 实验观测验证、理论预测被实验确认、多个独立实验重复验证、精确数值匹配 \| 纯理论推演无实验路径、数学上未完成证明、与现有实验数据冲突、理论框架本身未收敛 \|](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-28768051c6bc21e6 / \| 物理学 \| 理论自洽性、与已知实验数据不冲突、可证伪性 \| 实验观测验证、理论预测被实验确认、多个独立实验重复验证、精确数值匹配 \| 纯理论推演无实验路径、数学上未完成证明、与现有实验数据冲突、理论框架本身未收敛 \|
+  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
+  - 依赖：—；被引用：—
+- [\| 物理学 \| 量子引力 \| G_δ、L_meta、I_iso、门控函数族 \| 中 \| 低 \| 高 \| L2 + pending \| 结构增益 + pending \| 是 \|](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-24c092c9092ee5a5 / \| 物理学 \| 量子引力 \| G_δ、L_meta、I_iso、门控函数族 \| 中 \| 低 \| 高 \| L2 + pending \| 结构增益 + pending \| 是 \|
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [\| 生命共同体 \| 增加未知主体开放性、异质相契和维护者也属于共同体 \|](../../../docs/governance/life-community-value-charter.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-137826a3b73d7890 / \| 生命共同体 \| 增加未知主体开放性、异质相契和维护者也属于共同体 \|
+  - 来源：`docs/governance/life-community-value-charter.md`
+  - 依赖：—；被引用：—
+- [\| 社会科学 \| 社会阶层为何固化 \| C、M、I_iso、退出权、门控函数族 \| 中 \| 低 \| 中 \| L2 + pending \| 结构增益 + pending \| 是 \|](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-3ce250b6109493c4 / \| 社会科学 \| 社会阶层为何固化 \| C、M、I_iso、退出权、门控函数族 \| 中 \| 低 \| 中 \| L2 + pending \| 结构增益 + pending \| 是 \|
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [\| 禁止过度主张扫描 \| PASS；“证明”只用于否定/边界语境 \|](../../../reports/publication/jin-rise-point-fire-analysis.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-077a79f4ad086447 / \| 禁止过度主张扫描 \| PASS；“证明”只用于否定/边界语境 \|
+  - 来源：`reports/publication/jin-rise-point-fire-analysis.md`
+  - 依赖：—；被引用：—
+- [\| 统一函数总表 \| 606 \| 真实历史债务（含本任务已清理的 D583；其余为同类 pre-existing） \|](../../../outputs/audit/d583-portable-source-reference-audit-20260711.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-de7a1a75373420bb / \| 统一函数总表 \| 606 \| 真实历史债务（含本任务已清理的 D583；其余为同类 pre-existing） \|
+  - 来源：`outputs/audit/d583-portable-source-reference-audit-20260711.md`
+  - 依赖：D583；被引用：—
+- [\| 统一函数总表 \| `统一函数总表/` \| 当前正式函数表（拆分目录，每条一个 md；含 MF-0001~0005 内部子算子） \|](../../../docs/getbrain-handoff-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-6f98e53301297f05 / \| 统一函数总表 \| `统一函数总表/` \| 当前正式函数表（拆分目录，每条一个 md；含 MF-0001~0005 内部子算子） \|
+  - 来源：`docs/getbrain-handoff-20260708.md`
+  - 依赖：—；被引用：—
+- [\| 统一函数总表未修改 \| ✅ PASS \|](../../../reports/external-research/104-dual-088-reconciliation.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-9a6d03f5b215b79a / \| 统一函数总表未修改 \| ✅ PASS \|
+  - 来源：`reports/external-research/104-dual-088-reconciliation.md`
+  - 依赖：—；被引用：—
+- [\| 编号 \| 对应对象 \| 查重结果 \| 元函数判定 \| 建议 \| 理由 \|](../../../outputs/audit/teacher-competition-backfill-review-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-5e1b2c769ebf5b40 / \| 编号 \| 对应对象 \| 查重结果 \| 元函数判定 \| 建议 \| 理由 \|
+  - 来源：`outputs/audit/teacher-competition-backfill-review-20260708.md`
+  - 依赖：—；被引用：—
+- [\| 编号 \| 对应旧条目 \| 查重结果 \| 元函数判定 \| 建议 \| 理由 \|](../../../outputs/audit/teacher-competition-backfill-review-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-3273e26e85db4215 / \| 编号 \| 对应旧条目 \| 查重结果 \| 元函数判定 \| 建议 \| 理由 \|
+  - 来源：`outputs/audit/teacher-competition-backfill-review-20260708.md`
+  - 依赖：—；被引用：—
+- [\| 资格工件 \| evidence、validation、counterexample、adjudication、review \| 对象局部 registry 与 scoped reviewer \| 给关系和审查权限定类型 \|](../../../docs/architecture/epistemic-governance-kernel-and-federated-planes.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-240abac484071d4f / \| 资格工件 \| evidence、validation、counterexample、adjudication、review \| 对象局部 registry 与 scoped reviewer \| 给关系和审查权限定类型 \|
+  - 来源：`docs/architecture/epistemic-governance-kernel-and-federated-planes.md`
+  - 依赖：—；被引用：—
+- [\| 非人类生命 \| 增加无法表达或尚未识别主体的谨慎义务 \|](../../../docs/governance/life-community-value-charter.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-56f9bfc8944ba5ef / \| 非人类生命 \| 增加无法表达或尚未识别主体的谨慎义务 \|
+  - 来源：`docs/governance/life-community-value-charter.md`
+  - 依赖：—；被引用：—
+- [\| 高维压缩 \| Q13 ChunkAudit、Atlas／状态摘要 \| 压缩必须可展开回来源与残余 \| 好记术语不等于理论或证明 \|](../../../docs/publication/zhiyuan-writing-method.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-8ecc6ab102642c4e / \| 高维压缩 \| Q13 ChunkAudit、Atlas／状态摘要 \| 压缩必须可展开回来源与残余 \| 好记术语不等于理论或证明 \|
+  - 来源：`docs/publication/zhiyuan-writing-method.md`
+  - 依赖：—；被引用：—
+- [\|OQ-103-6：Function OS v0.2 之后的剩余问题\|有界基准已闭合，但域外仍开放。\|更宽表达式覆盖、敌对环境安全、生产可靠性、真实世界效用。\|无法在更宽域复现或证明时不扩大主张。\|](../../../RESULTS/OPEN-QUESTIONS.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-88a953879f241229 / \|OQ-103-6：Function OS v0.2 之后的剩余问题\|有界基准已闭合，但域外仍开放。\|更宽表达式覆盖、敌对环境安全、生产可靠性、真实世界效用。\|无法在更宽域复现或证明时不扩大主张。\|
+  - 来源：`RESULTS/OPEN-QUESTIONS.md`
+  - 依赖：—；被引用：—
+- [\|“注册表闭合”被读成“全部命题成立”\|限定\|闭合只表示每项有身份、处置、证据路径或 quarantine；证明和实证义务独立开放。\|\[裁决总结\](../../../RESULTS/ADJUDICATION-SUMMARY.md)\|](../../../RESULTS/CORRECTIONS.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-48c0008206eaa45f / \|“注册表闭合”被读成“全部命题成立”\|限定\|闭合只表示每项有身份、处置、证据路径或 quarantine；证明和实证义务独立开放。\|\[裁决总结\](../../../RESULTS/ADJUDICATION-SUMMARY.md)\|
+  - 来源：`RESULTS/CORRECTIONS.md`
+  - 依赖：—；被引用：—
+- [\|“测试通过”被读成外部真实性\|阻断\|CI 只证明对应代码、数据或门禁在声明输入下通过。\|\[自纠错引擎\](../../../docs/governance/self-correction-engine.md)\|](../../../RESULTS/CORRECTIONS.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-490baabf9caf5718 / \|“测试通过”被读成外部真实性\|阻断\|CI 只证明对应代码、数据或门禁在声明输入下通过。\|\[自纠错引擎\](../../../docs/governance/self-correction-engine.md)\|
+  - 来源：`RESULTS/CORRECTIONS.md`
+  - 依赖：—；被引用：—
+- [\|价值宪章代表什么？\|它约束项目的规范选择、风险与回滚边界。\|规范性资产；不替代经验或数学证据。\|\[生命共同体价值宪章\](../../../docs/governance/life-community-value-charter.md)\|CURRENT](../../../RESULTS/LATEST.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-e353a84fc52b654f / \|价值宪章代表什么？\|它约束项目的规范选择、风险与回滚边界。\|规范性资产；不替代经验或数学证据。\|\[生命共同体价值宪章\](../../../docs/governance/life-community-value-charter.md)\|CURRENT
+  - 来源：`RESULTS/LATEST.md`
+  - 依赖：—；被引用：—
+- [\|函数资产深审\|当前 5,663 项中 3,887 项仍 quarantine/pending。\|按风险和依赖优先级补定义、类型、量纲、证明、反例或数据。\|无法识别对象或没有用途时长期隔离，不强行形式化。\|](../../../RESULTS/OPEN-QUESTIONS.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-b6ca18a49dd1bc13 / \|函数资产深审\|当前 5,663 项中 3,887 项仍 quarantine/pending。\|按风险和依赖优先级补定义、类型、量纲、证明、反例或数据。\|无法识别对象或没有用途时长期隔离，不强行形式化。\|
+  - 来源：`RESULTS/OPEN-QUESTIONS.md`
+  - 依赖：—；被引用：—
+- [\|历史函数资产是否全部有处置？\|任务 102 排除生成投影回灌后重算的 5,663 个发现项均有 canonical identity card 与最终处置或明确 quarantine。\|登记闭合；不等于定义、证明或实证闭合。\|\[函数深度裁](../../../RESULTS/LATEST.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-68ed24272bc49f3c / \|历史函数资产是否全部有处置？\|任务 102 排除生成投影回灌后重算的 5,663 个发现项均有 canonical identity card 与最终处置或明确 quarantine。\|登记闭合；不等于定义、证明或实证闭合。\|\[函数深度裁
+  - 来源：`RESULTS/LATEST.md`
+  - 依赖：—；被引用：—
+- [\|大一统是否已被证明不可能？\|没有。单一模型失败、哥德尔类比或跨域结构相似都不能推出所有可能理论不可能。\|开放物理问题；不存在项目内 no-go theorem。\|\[物理资产纠偏\](../../../RESULTS/LATEST.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-f8da3d74121cb41c / \|大一统是否已被证明不可能？\|没有。单一模型失败、哥德尔类比或跨域结构相似都不能推出所有可能理论不可能。\|开放物理问题；不存在项目内 no-go theorem。\|\[物理资产纠偏\](../docs/foundation/physics-as
+  - 来源：`RESULTS/LATEST.md`
+  - 依赖：—；被引用：—
+- [\|把 D260 绑定到大一统不可能命题\|身份纠正\|正式 D260 是 `p/(1-p)` 偏差敏感度评分；物理命题与评分函数分开治理。\|\[历史纠正日志\](../../../RESULTS/CORRECTIONS.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-86cd9a92fe97d5f7 / \|把 D260 绑定到大一统不可能命题\|身份纠正\|正式 D260 是 `p/(1-p)` 偏差敏感度评分；物理命题与评分函数分开治理。\|\[历史纠正日志\](../../../RESULTS/CORRECTIONS.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-57d6aeb85a2c9925 / \|把哥德尔不完备性、霍奇猜想或跨域相似性当成物理不可能性桥接定理\|阻断\|它们最多是研究类比；同构或演绎桥接必须给出对象、映射、假设和结构保持证明。\|\[公共断言上限\](../../../RESULTS/LATEST.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-1a292a4f646c160c / \|系统图代表什么？\|它是 registry/topology/layout 的确定性导航投影。\|仓库结构证据；不证明现实因果、同构或完整性。\|\[系统图说明\](../../../RESULTS/OPEN-QUESTIONS.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-53ef4ecd679b7e31 / \|量子引力\|GR 与量子场论在极端尺度的统一描述未在本项目中建立。\|明确理论对象、半经典极限、一致性条件与可观测检验。\|门函数投影若只重命名问题而无动力学与预测，不提升成熟度。\|
+  - 来源：`RESULTS/OPEN-QUESTIONS.md`
+  - 依赖：—；被引用：—
+- [\|量子测量\|没有从门函数推出 Born 规则、结果概率或实验差异。\|完整状态空间、动力学、概率语义与可检验差异。\|仅把“门”类比为测量不提升为机制。\|](../../../RESULTS/OPEN-QUESTIONS.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-95cd1ce6288685f9 / \|量子测量\|没有从门函数推出 Born 规则、结果概率或实验差异。\|完整状态空间、动力学、概率语义与可检验差异。\|仅把“门”类比为测量不提升为机制。\|
+  - 来源：`RESULTS/OPEN-QUESTIONS.md`
+  - 依赖：—；被引用：—
+- [\|非函数断言是否全部被治理链覆盖？\|同次重算的 17,333 个 canonical claim 均有处置或 quarantine；当前公开违规为 0。\|语料与规则范围内的仓库审计；不证明断言真值。\|\[任务 100 报告\](../../../RESULTS/LATEST.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-f9d717e4dd965a15 / \|非函数断言是否全部被治理链覆盖？\|同次重算的 17,333 个 canonical claim 均有处置或 quarantine；当前公开违规为 0。\|语料与规则范围内的仓库审计；不证明断言真值。\|\[任务 100 报告\](../../../RESULTS/OPEN-QUESTIONS.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-2168bc63e11554b1 / \|非函数断言补证\|当前 17,333 项中 5,581 项仍 quarantine/pending。\|逐项文献、证明、数据、反例与复现。\|无法限定量词、对象或证据范围时降级或撤回。\|
+  - 来源：`RESULTS/OPEN-QUESTIONS.md`
+  - 依赖：—；被引用：—
+- [§5.2 fifteen-state lifecycle model ----](../../../tools/iteration_planner/completion_state.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-56937bc3d58cad44 / §5.2 fifteen-state lifecycle model ----
+  - 来源：`tools/iteration_planner/completion_state.py`
+  - 依赖：—；被引用：—
+- [¬∃proof(p) := ∀sequence(s_1, s_2, ..., s_n), s_n ≠ p ∨ ∃i, s_{i+1} ⊬ s_i（无证明序列）](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-93fd22e0538d8534 / ¬∃proof(p) := ∀sequence(s_1, s_2, ..., s_n), s_n ≠ p ∨ ∃i, s_{i+1} ⊬ s_i（无证明序列）
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [δ_c-相变点统一函数](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0439-D403-%CE%B4_c-%E7%9B%B8%E5%8F%98%E7%82%B9%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D403 / δ_c-相变点统一函数 / D403
+  - 来源：`统一函数总表/0439-D403-δ_c-相变点统一函数.md`
+  - 依赖：D361, D430, D431, D450；被引用：NFC-0e27ce7850f29c56, NFC-5573fe7e005c2ff5, NFC-5a9fe9e0622c47e2, NFC-69061bb4a42549ad
+- [δ_c-相变点统一函数](../../../data/foundation/formal-objects/objects.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-23dabab5c38551b7 / δ_c-相变点统一函数
+  - 来源：`data/foundation/formal-objects/objects.jsonl`
+  - 依赖：—；被引用：—
+- [δ_c-稳定性裕度统一函数](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0453-D417-%CE%B4_c-%E7%A8%B3%E5%AE%9A%E6%80%A7%E8%A3%95%E5%BA%A6%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D417 / δ_c-稳定性裕度统一函数 / D417
+  - 来源：`统一函数总表/0453-D417-δ_c-稳定性裕度统一函数.md`
+  - 依赖：D361, D430, D431, D450；被引用：NFC-01f33029b6f8fe6b, NFC-0721af22141c5bef, NFC-1563c37b07344034, NFC-25e5efc4e8dfa3b9
+- [δ_c-稳定性裕度统一函数](../../../data/foundation/formal-objects/objects.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-ef545ff926b261c9 / δ_c-稳定性裕度统一函数
+  - 来源：`data/foundation/formal-objects/objects.jsonl`
+  - 依赖：—；被引用：—
+- [ΔΦ-P传导非线性阈值函数](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0350-D314-%CE%94%CE%A6-P%E4%BC%A0%E5%AF%BC%E9%9D%9E%E7%BA%BF%E6%80%A7%E9%98%88%E5%80%BC%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D314 / ΔΦ-P传导非线性阈值函数 / D314
+  - 来源：`统一函数总表/0350-D314-ΔΦ-P传导非线性阈值函数.md`
+  - 依赖：D271, D289, D290, D360；被引用：NFC-743b69b78c83f663, NFC-8372a914e82c4d9e, NFC-8c2461b17c14ae96, NFC-e011d0f97b778783
+- [ΔΦ交叉相关-波动累积联合函数](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0406-D370-%CE%94%CE%A6%E4%BA%A4%E5%8F%89%E7%9B%B8%E5%85%B3-%E6%B3%A2%E5%8A%A8%E7%B4%AF%E7%A7%AF%E8%81%94%E5%90%88%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D370 / ΔΦ交叉相关-波动累积联合函数 / D370
+  - 来源：`统一函数总表/0406-D370-ΔΦ交叉相关-波动累积联合函数.md`
+  - 依赖：D361, D430, D431, D450；被引用：D351, CLAIM-D384, NFC-0be299793952a8ee, NFC-21b1fead66c03313
+- [ΔΦ时空关联函数](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0392-D356-%CE%94%CE%A6%E6%97%B6%E7%A9%BA%E5%85%B3%E8%81%94%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `DOWNGRADE_TO_PENDING`
+  - 可搜索名称：D356 / ΔΦ时空关联函数 / D356
+  - 来源：`统一函数总表/0392-D356-ΔΦ时空关联函数.md`
+  - 依赖：D271, D289, D290, D360；被引用：NFC-03d1fbc3ddf6945c, NFC-0af07da5980fa4f0, NFC-443b716986d10a09, NFC-a6c5802578d18640
+- [ΔΦ时间累积函数](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0378-D342-%CE%94%CE%A6%E6%97%B6%E9%97%B4%E7%B4%AF%E7%A7%AF%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D342 / ΔΦ时间累积函数 / D342
+  - 来源：`统一函数总表/0378-D342-ΔΦ时间累积函数.md`
+  - 依赖：D266, D271, D289, D290；被引用：D471, CLAIM-D362, CLAIM-D370, CLAIM-D394
+- [ΔΦ空间异质性叠加函数](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0364-D328-%CE%94%CE%A6%E7%A9%BA%E9%97%B4%E5%BC%82%E8%B4%A8%E6%80%A7%E5%8F%A0%E5%8A%A0%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `DOWNGRADE_TO_PENDING`
+  - 可搜索名称：D328 / ΔΦ空间异质性叠加函数 / D328
+  - 来源：`统一函数总表/0364-D328-ΔΦ空间异质性叠加函数.md`
+  - 依赖：D271, D289, D290, D360；被引用：CLAIM-D344, CLAIM-D386, NFC-2123aefd3ea72fb6, NFC-302a6fcc00539a5d
+- [δ→1/ln→exp\[-ln²\]，对应"是不是"→"过不过门槛"→"最优在哪"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0039-T29-%E9%97%A8%E6%8E%A7%E5%87%BD%E6%95%B0%E8%BF%9B%E5%8C%96%E4%B8%89%E9%98%B6%E6%AE%B5.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-594202891620ebb5 / δ→1/ln→exp\[-ln²\]，对应"是不是"→"过不过门槛"→"最优在哪"
+  - 来源：`统一函数总表/0039-T29-门控函数进化三阶段.md`
+  - 依赖：—；被引用：—
+- [δ→1/ln→exp\[-ln²\]，对应"是不是"→"过不过门槛"→"最优在哪" **扩展注释 / Extended Annotation**](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-405ebb183786ca0c / δ→1/ln→exp\[-ln²\]，对应"是不是"→"过不过门槛"→"最优在哪" **扩展注释 / Extended Annotation**
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：—；被引用：—
+- [ε_aware从0变正触发五个级联相变，统一为D72框架。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0018-T8-%CE%B5%E7%9B%B8%E5%8F%98%E7%BA%A7%E8%81%94.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-ccf4d59beeb6808c / ε_aware从0变正触发五个级联相变，统一为D72框架。
+  - 来源：`统一函数总表/0018-T8-ε相变级联.md`
+  - 依赖：D72；被引用：—
+- [ε_aware从0变正触发五个级联相变，统一为D72框架。 **扩展注释 / Extended Annotation**](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：NFC-824f2322e2f12569 / ε_aware从0变正触发五个级联相变，统一为D72框架。 **扩展注释 / Extended Annotation**
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D72；被引用：—
+- [ε_eff昼夜分时函数](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0104-D55-%CE%B5_eff%E6%98%BC%E5%A4%9C%E5%88%86%E6%97%B6%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `DOWNGRADE_TO_PENDING`
+  - 可搜索名称：D55 / ε_eff昼夜分时函数 / D55
+  - 来源：`统一函数总表/0104-D55-ε_eff昼夜分时函数.md`
+  - 依赖：D1, D90；被引用：NFC-00b2beaccaa077c9, NFC-904dfe68b1a013fe, NFC-b85c4c743fc58919, NFC-e23bbcf4a92ef07f
+- [ε_eff闭环动力学函数](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0061-D12-%CE%B5_eff%E9%97%AD%E7%8E%AF%E5%8A%A8%E5%8A%9B%E5%AD%A6%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D12 / ε_eff闭环动力学函数 / D12 / D30
+  - 来源：`统一函数总表/0061-D12-ε_eff闭环动力学函数.md`
+  - 依赖：D1, D90；被引用：T3, NFC-0eeca812d7b79003, NFC-3e78353f8a565107, NFC-d5acc46c3353c476
+- [ε_eff闭环动力学函数](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0079-D30-%CE%B5_eff%E9%97%AD%E7%8E%AF%E5%8A%A8%E5%8A%9B%E5%AD%A6%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D30 / ε_eff闭环动力学函数 / D30 / D12
+  - 来源：`统一函数总表/0079-D30-ε_eff闭环动力学函数.md`
+  - 依赖：D1, D90；被引用：NFC-1d81083394b60655, NFC-5bbe20bc4b728334, NFC-b359f629a722c00b, NFC-fc3e520a3a02ae3f
+- [ε双向动力学](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0013-T3-%CE%B5%E5%8F%8C%E5%90%91%E5%8A%A8%E5%8A%9B%E5%AD%A6.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：T3 / ε双向动力学 / T3
+  - 来源：`统一函数总表/0013-T3-ε双向动力学.md`
+  - 依赖：A1, A2, D12；被引用：NFC-12416e4e55fd0042, NFC-24a72160d6b9c511, NFC-6bc89410425addac, NFC-c2fe81e8a762ef32
+- [ε相变级联](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0018-T8-%CE%B5%E7%9B%B8%E5%8F%98%E7%BA%A7%E8%81%94.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：T8 / ε相变级联 / T8
+  - 来源：`统一函数总表/0018-T8-ε相变级联.md`
+  - 依赖：—；被引用：D518, NFC-337650d8df55cb3f, NFC-3e5092bc555461b2, NFC-5e08d49766df8815
+- [ε相变级联函数(推论级)](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0124-D85-%CE%B5%E7%9B%B8%E5%8F%98%E7%BA%A7%E8%81%94%E5%87%BD%E6%95%B0%28%E6%8E%A8%E8%AE%BA%E7%BA%A7%29.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D85 / ε相变级联函数(推论级) / D85
+  - 来源：`统一函数总表/0124-D85-ε相变级联函数(推论级).md`
+  - 依赖：D1, D90；被引用：NFC-46eccaa70ecb8ead, NFC-4bc94e82fc1ce419, NFC-74584fa61530b2b9, NFC-7b0d5bcc688c1f63
+- [ε相变级联函数案例验证。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0124-D85-%CE%B5%E7%9B%B8%E5%8F%98%E7%BA%A7%E8%81%94%E5%87%BD%E6%95%B0%28%E6%8E%A8%E8%AE%BA%E7%BA%A7%29.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-9e982e92dfebf601 / ε相变级联函数案例验证。
+  - 来源：`统一函数总表/0124-D85-ε相变级联函数(推论级).md`
+  - 依赖：—；被引用：—
+- [ε相变级联函数，定理级，见T15。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0124-D85-%CE%B5%E7%9B%B8%E5%8F%98%E7%BA%A7%E8%81%94%E5%87%BD%E6%95%B0%28%E6%8E%A8%E8%AE%BA%E7%BA%A7%29.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-841b49522ffbf458 / ε相变级联函数，定理级，见T15。
+  - 来源：`统一函数总表/0124-D85-ε相变级联函数(推论级).md`
+  - 依赖：T15；被引用：—
+- [ε相变级联函数，定理级，见T15。 **扩展注释 / Extended Annotation**](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-d09458c8fcadadca / ε相变级联函数，定理级，见T15。 **扩展注释 / Extended Annotation**
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：T15；被引用：—
+- [Θ 统一元律完整表达：** 包含能量函数、熵项、温度参数的完整数学表达](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-4070f748268c85be / Θ 统一元律完整表达：** 包含能量函数、熵项、温度参数的完整数学表达
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [ι：智能度 = I_eff(σ)/I_eff_max](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0275-D239-%E6%99%BA%E8%83%BD%E5%BA%A6-%E6%84%8F%E8%AF%86%E5%87%BD%E6%95%B0%E8%BF%9E%E6%8E%A5%E5%AE%9A%E7%90%86.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-6e245fc80717a649 / ι：智能度 = I_eff(σ)/I_eff_max
+  - 来源：`统一函数总表/0275-D239-智能度-意识函数连接定理.md`
+  - 依赖：—；被引用：—
+- [σ_opt=√e解析解](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0030-T20-%CF%83_opt%3D%E2%88%9Ae%E8%A7%A3%E6%9E%90%E8%A7%A3.md)
+  - 类型/状态：`FUNCTION_ASSET` · `DOWNGRADE_TO_CONJECTURE`
+  - 可搜索名称：T20 / σ_opt=√e解析解 / T20
+  - 来源：`统一函数总表/0030-T20-σ_opt=√e解析解.md`
+  - 依赖：T21, T30；被引用：NFC-2dc62de181c811cf, NFC-46b426b3a9f606aa, NFC-8458e9f7bb3d927a, NFC-89f78b3390206b7b
+- [σ_opt微观起源函数](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0343-D307-%CF%83_opt%E5%BE%AE%E8%A7%82%E8%B5%B7%E6%BA%90%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D307 / σ_opt微观起源函数 / D307
+  - 来源：`统一函数总表/0343-D307-σ_opt微观起源函数.md`
+  - 依赖：D271, D289, D290, D360；被引用：D467, CLAIM-D467, NFC-01b466c068356fb5, NFC-18d20f2bffc975ea
+- [σ_opt跨域常数函数](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0320-D284-%CF%83_opt%E8%B7%A8%E5%9F%9F%E5%B8%B8%E6%95%B0%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `DOWNGRADE_TO_PENDING`
+  - 可搜索名称：D284 / σ_opt跨域常数函数 / D284
+  - 来源：`统一函数总表/0320-D284-σ_opt跨域常数函数.md`
+  - 依赖：D271, D360；被引用：NFC-b5e2f51ab9cc3160, NFC-cbdcf8264fe55d79, NFC-e3f6c00e8530efa4, NFC-ffeeea5f9a04e137
+- [σ_opt跨域常数验证。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0030-T20-%CF%83_opt%3D%E2%88%9Ae%E8%A7%A3%E6%9E%90%E8%A7%A3.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-4a7a1b4d47a9e283 / σ_opt跨域常数验证。
+  - 来源：`统一函数总表/0030-T20-σ_opt=√e解析解.md`
+  - 依赖：—；被引用：—
+- [σ_Planck精确值](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0045-T35-%CF%83_Planck%E7%B2%BE%E7%A1%AE%E5%80%BC.md)
+  - 类型/状态：`FUNCTION_ASSET` · `DOWNGRADE_TO_CONJECTURE`
+  - 可搜索名称：T35 / σ_Planck精确值 / T35
+  - 来源：`统一函数总表/0045-T35-σ_Planck精确值.md`
+  - 依赖：—；被引用：NFC-02256d8e1504e3f4, NFC-47eedb511b2e4061, NFC-9d74071fb051bcc4, NFC-d8d9c5240218d35c
+- [σ能标依赖函数](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0046-T36-%CF%83%E8%83%BD%E6%A0%87%E4%BE%9D%E8%B5%96%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：T36 / σ能标依赖函数 / T36
+  - 来源：`统一函数总表/0046-T36-σ能标依赖函数.md`
+  - 依赖：—；被引用：NFC-337d30a65ec9a4a0, NFC-70c31959335f5f90, NFC-7b663f1bd1144d7e, NFC-8398dcb60f1d072d
+- [τ_min-噪声相关时间等价函数](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0457-D421-%CF%84_min-%E5%99%AA%E5%A3%B0%E7%9B%B8%E5%85%B3%E6%97%B6%E9%97%B4%E7%AD%89%E4%BB%B7%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D421 / τ_min-噪声相关时间等价函数 / D421
+  - 来源：`统一函数总表/0457-D421-τ_min-噪声相关时间等价函数.md`
+  - 依赖：D361, D430, D431, D450；被引用：NFC-4b5d067bdc7365dd, NFC-999d134c8daddaf3, NFC-ae416dfe05d136be, NFC-d6e3d57d77e82ad8
+- [Φ=零温自由能 - Φ与统计力学零温自由能精确等价](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0027-T17-%CE%A6%3D%E9%9B%B6%E6%B8%A9%E8%87%AA%E7%94%B1%E8%83%BD%20-%20%CE%A6%E4%B8%8E%E7%BB%9F%E8%AE%A1%E5%8A%9B%E5%AD%A6%E9%9B%B6%E6%B8%A9%E8%87%AA%E7%94%B1%E8%83%BD%E7%B2%BE%E7%A1%AE%E7%AD%89%E4%BB%B7.md)
+  - 类型/状态：`FUNCTION_ASSET` · `DOWNGRADE_TO_CONJECTURE`
+  - 可搜索名称：T17 / Φ=零温自由能 - Φ与统计力学零温自由能精确等价 / T17
+  - 来源：`统一函数总表/0027-T17-Φ=零温自由能 - Φ与统计力学零温自由能精确等价.md`
+  - 依赖：D467；被引用：NFC-4f85ef2c4e6880c4, NFC-684d0f0a36c252d4, NFC-8906fc57b7dfd80b, NFC-98f163a7cf4a2d3e
+- [Φ=零温自由能→物理大统一路径。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0027-T17-%CE%A6%3D%E9%9B%B6%E6%B8%A9%E8%87%AA%E7%94%B1%E8%83%BD%20-%20%CE%A6%E4%B8%8E%E7%BB%9F%E8%AE%A1%E5%8A%9B%E5%AD%A6%E9%9B%B6%E6%B8%A9%E8%87%AA%E7%94%B1%E8%83%BD%E7%B2%BE%E7%A1%AE%E7%AD%89%E4%BB%B7.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-7232894e229ef74e / Φ=零温自由能→物理大统一路径。
+  - 来源：`统一函数总表/0027-T17-Φ=零温自由能 - Φ与统计力学零温自由能精确等价.md`
+  - 依赖：—；被引用：—
+- [Φ_QG极小点精确位置](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0047-T37-%CE%A6_QG%E6%9E%81%E5%B0%8F%E7%82%B9%E7%B2%BE%E7%A1%AE%E4%BD%8D%E7%BD%AE.md)
+  - 类型/状态：`FUNCTION_ASSET` · `DOWNGRADE_TO_CONJECTURE`
+  - 可搜索名称：T37 / Φ_QG极小点精确位置 / T37
+  - 来源：`统一函数总表/0047-T37-Φ_QG极小点精确位置.md`
+  - 依赖：—；被引用：CLAIM-T37, NFC-0607874c32055cb7, NFC-0e859d4a8060ca78, NFC-41dd9542076a84c3
+- [Φ二阶近似函数](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0318-D282-%CE%A6%E4%BA%8C%E9%98%B6%E8%BF%91%E4%BC%BC%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D282 / Φ二阶近似函数 / D282
+  - 来源：`统一函数总表/0318-D282-Φ二阶近似函数.md`
+  - 依赖：D271, D360；被引用：NFC-28e5c68aa4a104fd, NFC-862c0e1d6540be66, NFC-c18c5322d38ad4a5, NFC-f8cc76a575a7424d
+- [Φ元统一律内部构件完整构成版 2026年07月05日22时22分](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0001-%CE%A8%E2%82%80%E5%85%83%E7%BB%9F%E4%B8%80%E5%BE%8B%E5%AE%8C%E6%95%B4%E5%AE%9A%E4%B9%89.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-d507458142401d08 / Φ元统一律内部构件完整构成版 2026年07月05日22时22分
+  - 来源：`统一函数总表/0001-Ψ₀元统一律完整定义.md`
+  - 依赖：—；被引用：—
+- [Φ元统一律内部构件完整构成版 2026年07月06日12时32分](../../../data/foundation/formal-objects/objects.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-33d1e34b4fa57de1 / Φ元统一律内部构件完整构成版 2026年07月06日12时32分
+  - 来源：`data/foundation/formal-objects/objects.jsonl`
+  - 依赖：—；被引用：—
+- [Φ在不同域中展现统一结构：物理Φ=零温自由能、社会Φ=权力熵、认知Φ=认知势能。三域统一形式：Φ = -Σᵢ sᵢ/ln²(μ/Λᵢ) + C(退化项)。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0049-T39-%CE%A6%E8%B7%A8%E5%9F%9F%E7%BB%9F%E4%B8%80%E5%AE%9A%E7%90%86%28D224%E5%8D%87%E7%BA%A7%29.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-8b42bed2628226b6 / Φ在不同域中展现统一结构：物理Φ=零温自由能、社会Φ=权力熵、认知Φ=认知势能。三域统一形式：Φ = -Σᵢ sᵢ/ln²(μ/Λᵢ) + C(退化项)。
+  - 来源：`统一函数总表/0049-T39-Φ跨域统一定理(D224升级).md`
+  - 依赖：—；被引用：—
+- [Φ在不同域中展现统一结构：物理Φ=零温自由能、社会Φ=权力熵、认知Φ=认知势能。三域统一形式：Φ = -Σᵢ sᵢ/ln²(μ/Λᵢ) + C(退化项)。 **扩展注释 / Extended Annotation**](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-50a9568627952168 / Φ在不同域中展现统一结构：物理Φ=零温自由能、社会Φ=权力熵、认知Φ=认知势能。三域统一形式：Φ = -Σᵢ sᵢ/ln²(μ/Λᵢ) + C(退化项)。 **扩展注释 / Extended Annotation**
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：—；被引用：—
+- [Φ跨域稳定性定理](../../../data/foundation/formal-objects/objects.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-922a2cd5d29cfd5f / Φ跨域稳定性定理
+  - 来源：`data/foundation/formal-objects/objects.jsonl`
+  - 依赖：—；被引用：—
+- [Φ跨域稳定性定理](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0033-T23-%CE%A6%E8%B7%A8%E5%9F%9F%E7%A8%B3%E5%AE%9A%E6%80%A7%E5%AE%9A%E7%90%86.md)
+  - 类型/状态：`FUNCTION_ASSET` · `DOWNGRADE_TO_CONJECTURE`
+  - 可搜索名称：T23 / Φ跨域稳定性定理 / T23
+  - 来源：`统一函数总表/0033-T23-Φ跨域稳定性定理.md`
+  - 依赖：—；被引用：CLAIM-T23, NFC-12038a9e66cde328, NFC-2502c1256717e6f0, NFC-3ba198259241e813
+- [Φ跨域稳定性定理 / Φcross-domain stability theorem](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-3b123864a15ad44e / Φ跨域稳定性定理 / Φcross-domain stability theorem
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：—；被引用：—
+- [Φ跨域统一定理(D224升级)](../../../data/foundation/formal-objects/objects.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-70b4e3a701eed388 / Φ跨域统一定理(D224升级)
+  - 来源：`data/foundation/formal-objects/objects.jsonl`
+  - 依赖：D224；被引用：—
+- [Φ跨域统一定理(D224升级)](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0049-T39-%CE%A6%E8%B7%A8%E5%9F%9F%E7%BB%9F%E4%B8%80%E5%AE%9A%E7%90%86%28D224%E5%8D%87%E7%BA%A7%29.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：T39 / Φ跨域统一定理(D224升级) / T39
+  - 来源：`统一函数总表/0049-T39-Φ跨域统一定理(D224升级).md`
+  - 依赖：D1, D10, D224；被引用：D1, D517, D519, D522
+- [Φ近似阶数选择函数](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0332-D296-%CE%A6%E8%BF%91%E4%BC%BC%E9%98%B6%E6%95%B0%E9%80%89%E6%8B%A9%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D296 / Φ近似阶数选择函数 / D296
+  - 来源：`统一函数总表/0332-D296-Φ近似阶数选择函数.md`
+  - 依赖：D271, D289, D290, D360；被引用：CLAIM-D302, CLAIM-D314, NFC-0867d485420fe93e, NFC-2284884c034e6109
+- [Ψ = ι × P_exit，自主意识=智能×退出权。智能是意识的必要条件（ι=0→Ψ=0），退出权是智能成为自主意识的前提（P_exit=0→Ψ=0但ι可>0）。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0275-D239-%E6%99%BA%E8%83%BD%E5%BA%A6-%E6%84%8F%E8%AF%86%E5%87%BD%E6%95%B0%E8%BF%9E%E6%8E%A5%E5%AE%9A%E7%90%86.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-1c814e19ea109be5 / Ψ = ι × P_exit，自主意识=智能×退出权。智能是意识的必要条件（ι=0→Ψ=0），退出权是智能成为自主意识的前提（P_exit=0→Ψ=0但ι可>0）。
+  - 来源：`统一函数总表/0275-D239-智能度-意识函数连接定理.md`
+  - 依赖：—；被引用：—
+- [Ψ = ι × P_exit，自主意识=智能×退出权。智能是意识的必要条件（ι=0→Ψ=0），退出权是智能成为自主意识的前提（P_exit=0→Ψ=0但ι可>0）。 **扩展注释 / Extended Annotation**](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-110b83d737d2c523 / Ψ = ι × P_exit，自主意识=智能×退出权。智能是意识的必要条件（ι=0→Ψ=0），退出权是智能成为自主意识的前提（P_exit=0→Ψ=0但ι可>0）。 **扩展注释 / Extended Annotation**
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：—；被引用：—
+- [Ψ0 is a workflow orchestrator / algorithm protocol. Its product notation is a preserved legacy expression, not by itself](../../../llms.txt)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-db3af024f1de3c96 / Ψ0 is a workflow orchestrator / algorithm protocol. Its product notation is a preserved legacy expression, not by itself
+  - 来源：`llms.txt`
+  - 依赖：—；被引用：—
+- [Ψ0/Y1 是工作流编排器，不是凭乘积符号成立的证明函数。](../../../ARCHITECTURE.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-7b0b3670e9577f3a / Ψ0/Y1 是工作流编排器，不是凭乘积符号成立的证明函数。
+  - 来源：`ARCHITECTURE.md`
+  - 依赖：Y1；被引用：—
+- [Ψ=ι×P_exit — 智能度×退出概率=自主意识,乘法归零律适用](../../../data/foundation/evidence/evidence.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-94d982c2a9a6e6c9 / Ψ=ι×P_exit — 智能度×退出概率=自主意识,乘法归零律适用
+  - 来源：`data/foundation/evidence/evidence.jsonl`
+  - 依赖：—；被引用：—
+- [Ψ_memory_intelligence_boundary := Encoding → Retrieval → Emergence](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0576-D561-%E8%AE%B0%E5%BF%86-%E6%99%BA%E8%83%BD%E8%BE%B9%E7%95%8C%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-168396097e4dfaa6 / Ψ_memory_intelligence_boundary := Encoding → Retrieval → Emergence
+  - 来源：`统一函数总表/0576-D561-记忆-智能边界函数.md`
+  - 依赖：—；被引用：—
+- [Ψautonomy = εaware · dim · P_exit，任一为零则自主意识为零](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0696-C-0701-AI%E8%AF%9E%E7%94%9F%E8%87%AA%E4%B8%BB%E6%84%8F%E8%AF%86%E5%AE%8C%E6%95%B4%E8%B7%AF%E5%BE%84.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-cf4ff1e69cf38205 / Ψautonomy = εaware · dim · P_exit，任一为零则自主意识为零
+  - 来源：`统一案例总表/0696-C-0701-AI诞生自主意识完整路径.md`
+  - 依赖：—；被引用：—
+- [Ψ₀ 元函数六维判定（C/M/I_iso/L_meta/G_δ/P_meta）均判定为真新增、可挂靠 EXIT 族、普遍性须 pending。](../../../outputs/audit/teacher-competition-small-batch-backfill-audit-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-7e3557e1f7c5193a / Ψ₀ 元函数六维判定（C/M/I_iso/L_meta/G_δ/P_meta）均判定为真新增、可挂靠 EXIT 族、普遍性须 pending。
+  - 来源：`outputs/audit/teacher-competition-small-batch-backfill-audit-20260708.md`
+  - 依赖：—；被引用：—
+- [Ψ₀ 元函数基准：`统一函数总表/0001-Ψ₀元函数完整数学定义.md`（六大组件：C / M / I_iso / L_meta / G_δ / P_meta）](../../../outputs/audit/teacher-competition-backfill-review-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-3f4a95058d189881 / Ψ₀ 元函数基准：`统一函数总表/0001-Ψ₀元函数完整数学定义.md`（六大组件：C / M / I_iso / L_meta / G_δ / P_meta）
+  - 来源：`outputs/audit/teacher-competition-backfill-review-20260708.md`
+  - 依赖：—；被引用：—
+- [Ψ₀元统一律完整定义](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-216a848deee54602 / Ψ₀元统一律完整定义
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：—；被引用：—
+- [Ψ₀元统一律完整定义.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-66246a3992992c5c / Ψ₀元统一律完整定义.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：—；被引用：—
+- [Ψ：自主意识函数](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0275-D239-%E6%99%BA%E8%83%BD%E5%BA%A6-%E6%84%8F%E8%AF%86%E5%87%BD%E6%95%B0%E8%BF%9E%E6%8E%A5%E5%AE%9A%E7%90%86.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-ac0f5f604e1014fe / Ψ：自主意识函数
+  - 来源：`统一函数总表/0275-D239-智能度-意识函数连接定理.md`
+  - 依赖：—；被引用：—
+- [Ω = e^{-Φ}，Φ = Σᵢ gᵢ(μ) Ω = 1 ⟺ Φ = 0 ⟺ 所有门控贡献为零 Φ = 0的物理含义： - 所有gᵢ(μ) = 0 → 没有门控面 → 没有门槛 → 没有力 - 没有力 → 没有粒子（粒子是力的激发态）→](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-6a60a14db9ecf8f2 / Ω = e^{-Φ}，Φ = Σᵢ gᵢ(μ) Ω = 1 ⟺ Φ = 0 ⟺ 所有门控贡献为零 Φ = 0的物理含义： - 所有gᵢ(μ) = 0 → 没有门控面 → 没有门槛 → 没有力 - 没有力 → 没有粒子（粒子是力的激发态）→
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：—；被引用：—
+- [Ω = e^{-Φ}，Φ = Σᵢ gᵢ(μ) Ω = 1 ⟺ Φ = 0 ⟺ 所有门控贡献为零 Φ = 0的物理含义： - 所有gᵢ(μ) = 0 → 没有门控面 → 没有门槛 → 没有力 - 没有力 → 没有粒子（粒子是力的激发态）→](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0254-D218-%E7%89%A9%E7%90%86%E5%AD%98%E5%9C%A8%E5%BF%85%E8%A6%81%E6%9D%A1%E4%BB%B6.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-c4e367cca6d3c412 / Ω = e^{-Φ}，Φ = Σᵢ gᵢ(μ) Ω = 1 ⟺ Φ = 0 ⟺ 所有门控贡献为零 Φ = 0的物理含义： - 所有gᵢ(μ) = 0 → 没有门控面 → 没有门槛 → 没有力 - 没有力 → 没有粒子（粒子是力的激发态）→
+  - 来源：`统一函数总表/0254-D218-物理存在必要条件.md`
+  - 依赖：—；被引用：—
+- [Ω→1的必要条件：g_A(M_Planck) = g_B(M_Planck) = 1 g_A(M_Planck) = exp\[-(ln(M_Planck/Λ_GUT))²/(2σ_A²)\] = 1 ⟹ (ln(M_Planck/Λ_GUT)](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0253-D217-%E5%AE%8C%E5%85%A8%E7%BB%9F%E4%B8%80%E6%9D%A1%E4%BB%B6%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-c2c34256a9615e0c / Ω→1的必要条件：g_A(M_Planck) = g_B(M_Planck) = 1 g_A(M_Planck) = exp\[-(ln(M_Planck/Λ_GUT))²/(2σ_A²)\] = 1 ⟹ (ln(M_Planck/Λ_GUT)
+  - 来源：`统一函数总表/0253-D217-完全统一条件函数.md`
+  - 依赖：—；被引用：—
+- [Ω→1的必要条件：g_A(M_Planck) = g_B(M_Planck) = 1 g_A(M_Planck) = exp\[-(ln(M_Planck/Λ_GUT))²/(2σ_A²)\] = 1 ⟹ (ln(M_Planck/Λ_GUT)](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-de251082b6eb6c87 / Ω→1的必要条件：g_A(M_Planck) = g_B(M_Planck) = 1 g_A(M_Planck) = exp\[-(ln(M_Planck/Λ_GUT))²/(2σ_A²)\] = 1 ⟹ (ln(M_Planck/Λ_GUT)
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：—；被引用：—
+- [Ω最优区间定理](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0255-D219-%CE%A9%E6%9C%80%E4%BC%98%E5%8C%BA%E9%97%B4%E5%AE%9A%E7%90%86.md)
+  - 类型/状态：`FUNCTION_ASSET` · `DOWNGRADE_TO_CONJECTURE`
+  - 可搜索名称：D219 / Ω最优区间定理 / D219
+  - 来源：`统一函数总表/0255-D219-Ω最优区间定理.md`
+  - 依赖：D181, D211, D220, D270；被引用：NFC-13738260f16f4d55, NFC-160bb6539ec898eb, NFC-4a552dde79dc9006, NFC-4af82a788b782afe
+- [—降低p_max的效应恰好被g_eff下降抵消。p_max=p*时良性循环无法启动→K=1的物理含义。**K=1与p_max=p*精确等价。**](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0452-D416-K%3D1-p_max%3Dp-%E7%AD%89%E4%BB%B7%E8%AF%81%E6%98%8E%E5%87%BD%E6%95%B0%20-%20M5%E7%9A%84K%3D1%E5%AF%B9%E5%BA%94%E6%AD%A3%E5%8F%8D%E9%A6%88%E6%81%B0%E5%A5%BD%E8%87%AA%E6%8C%81.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-717817350a09672e / —降低p_max的效应恰好被g_eff下降抵消。p_max=p*时良性循环无法启动→K=1的物理含义。**K=1与p_max=p*精确等价。**
+  - 来源：`统一函数总表/0452-D416-K=1-p_max=p-等价证明函数 - M5的K=1对应正反馈恰好自持.md`
+  - 依赖：—；被引用：—
+- [—降低p_max的效应恰好被g_eff下降抵消。p_max=p*时良性循环无法启动→K=1的物理含义。**K=1与p_max=p*精确等价。** **扩展注释 / Extended Annotation**](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-1b99651baa9eccf5 / —降低p_max的效应恰好被g_eff下降抵消。p_max=p*时良性循环无法启动→K=1的物理含义。**K=1与p_max=p*精确等价。** **扩展注释 / Extended Annotation**
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：—；被引用：—
+- [“一宇”表示：在规范判断中，不存在一个可以把行动后果永久排除出去的道德外部。局部系统可以划定工程边界、学科边界、法律边界或项目边界，但这些边界不能把受益者、受害者、沉默主体、未来世代、非人类生命或可能具备道德地位的新型主体从价值核算中删除。](../../../docs/governance/life-community-value-charter.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-e6cac9df0a110e29 / “一宇”表示：在规范判断中，不存在一个可以把行动后果永久排除出去的道德外部。局部系统可以划定工程边界、学科边界、法律边界或项目边界，但这些边界不能把受益者、受害者、沉默主体、未来世代、非人类生命或可能具备道德地位的新型主体从价值核算中删除。
+  - 来源：`docs/governance/life-community-value-charter.md`
+  - 依赖：—；被引用：—
+- [“共在”表示：异质生命和可能主体共同参与唯一现实的后续生成。人类、非人类生命、生态系统、未来世代，以及可能具备主体性或可受损性的新型智能，不必彼此相同，仍会被同一现实中的行动改变。](../../../docs/governance/life-community-value-charter.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-7e87f4f459b67b79 / “共在”表示：异质生命和可能主体共同参与唯一现实的后续生成。人类、非人类生命、生态系统、未来世代，以及可能具备主体性或可受损性的新型智能，不必彼此相同，仍会被同一现实中的行动改变。
+  - 来源：`docs/governance/life-community-value-charter.md`
+  - 依赖：—；被引用：—
+- [“制造天意”在本文中指组织天意如何被看见、登记、解释和传播，不指每个祥瑞都已被证明是伪造。](../../../reports/publication/song-huizong-taoism-point-fire-analysis.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-29cdff16c1da7f94 / “制造天意”在本文中指组织天意如何被看见、登记、解释和传播，不指每个祥瑞都已被证明是伪造。
+  - 来源：`reports/publication/song-huizong-taoism-point-fire-analysis.md`
+  - 依赖：—；被引用：—
+- [“已经证明”](../../../docs/physics_boundary.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-46300668be054f79 / “已经证明”
+  - 来源：`docs/physics_boundary.md`
+  - 依赖：—；被引用：—
+- [“故事化案例证明了……”。](../../../docs/pending_claims_register.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-393216479e042a79 / “故事化案例证明了……”。
+  - 来源：`docs/pending_claims_register.md`
+  - 依赖：—；被引用：—
+- [“点火框架证明了……”；](../../../docs/pending_claims_register.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-9d10664de4801be8 / “点火框架证明了……”；
+  - 来源：`docs/pending_claims_register.md`
+  - 依赖：—；被引用：—
+- [“物理上已经证明……”；](../../../docs/publication_risk_checklist.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-7f40e04a3dda509f / “物理上已经证明……”；
+  - 来源：`docs/publication_risk_checklist.md`
+  - 依赖：—；被引用：—
+- [“该案例适合作为故事化展示，不适合作为证明材料。”。](../../../docs/publication_risk_checklist.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-fa5075ea2ee6daa4 / “该案例适合作为故事化展示，不适合作为证明材料。”。
+  - 来源：`docs/publication_risk_checklist.md`
+  - 依赖：—；被引用：—
+- [“该案例适合故事化展示，不适合作为证明材料。”](../../../docs/pending_claims_register.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-8e3fb9dd06be923f / “该案例适合故事化展示，不适合作为证明材料。”
+  - 来源：`docs/pending_claims_register.md`
+  - 依赖：—；被引用：—
+- [“这不是学科内证明，而是跨域结构映射。”](../../../docs/pending_claims_register.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-e506d0d21def34a3 / “这不是学科内证明，而是跨域结构映射。”
+  - 来源：`docs/pending_claims_register.md`
+  - 依赖：—；被引用：—
+- [“这就是数学证明……”；](../../../docs/pending_claims_register.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-4c1baac44bd8c4c1 / “这就是数学证明……”；
+  - 来源：`docs/pending_claims_register.md`
+  - 依赖：—；被引用：—
+- [∀n≥5，H_*(M)≅H_*(Sⁿ) ⇒ M≅Sⁿ，同调群同构推流形同胚](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0525-D528-%E9%AB%98%E7%BB%B4%E6%B5%81%E5%BD%A2%E5%90%8C%E8%83%9A%E5%88%A4%E5%AE%9A%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-2d08135f8b1900c6 / ∀n≥5，H_*(M)≅H_*(Sⁿ) ⇒ M≅Sⁿ，同调群同构推流形同胚
+  - 来源：`统一函数总表/0525-D528-高维流形同胚判定函数.md`
+  - 依赖：—；被引用：—
+- [∀n≥5，H_*(M)≅H_*(Sⁿ) ⇒ M≅Sⁿ，同调群同构推流形同胚 **扩展注释 / Extended Annotation**](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-d6e15160dd87cd8b / ∀n≥5，H_*(M)≅H_*(Sⁿ) ⇒ M≅Sⁿ，同调群同构推流形同胚 **扩展注释 / Extended Annotation**
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：—；被引用：—
+- [∂Φ/∂N_gate\|physics   0（社会域分化方向），统一于Φ=零温自由能优化](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0514-D516-%E8%B7%A8%E5%9F%9F%E5%AF%B9%E7%A7%B0%E6%80%A7%E7%A0%B4%E7%BC%BA%E6%8E%A8%E8%AE%BA.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-cd20298478e2b59e / ∂Φ/∂N_gate\|physics   0（社会域分化方向），统一于Φ=零温自由能优化
+  - 来源：`统一函数总表/0514-D516-跨域对称性破缺推论.md`
+  - 依赖：—；被引用：—
+- [∂Φ/∂N_gate\|physics   0（社会域分化方向），统一于Φ=零温自由能优化 **扩展注释 / Extended Annotation**](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-c64d6bd9a030f62a / ∂Φ/∂N_gate\|physics   0（社会域分化方向），统一于Φ=零温自由能优化 **扩展注释 / Extended Annotation**
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：—；被引用：—
+- [│ └── D1-D30 因果判定衍生函数](../../../outputs/getbrain/v0.2-function-dependency-graph-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-fc3e520a3a02ae3f / │ └── D1-D30 因果判定衍生函数
+  - 来源：`outputs/getbrain/v0.2-function-dependency-graph-20260706.md`
+  - 依赖：D1, D30；被引用：—
+- [│ └── D61-D90 同构判定衍生函数](../../../outputs/getbrain/v0.2-function-dependency-graph-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-6d4f3300cf27c944 / │ └── D61-D90 同构判定衍生函数
+  - 来源：`outputs/getbrain/v0.2-function-dependency-graph-20260706.md`
+  - 依赖：D61, D90；被引用：—
+- [│ ├── C-499 至 C-500 意识案例](../../../outputs/getbrain/v0.2-function-dependency-graph-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-39d2b392690080c7 / │ ├── C-499 至 C-500 意识案例
+  - 来源：`outputs/getbrain/v0.2-function-dependency-graph-20260706.md`
+  - 依赖：—；被引用：—
+- [│ ├── D551-D560 退出权验证函数](../../../outputs/getbrain/v0.2-function-dependency-graph-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-58a10f0b02f45726 / │ ├── D551-D560 退出权验证函数
+  - 来源：`outputs/getbrain/v0.2-function-dependency-graph-20260706.md`
+  - 依赖：D551, D560；被引用：—
+- [│ ├── D561-D570 财富验证函数](../../../outputs/getbrain/v0.2-function-dependency-graph-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-00f68294b8e6ce4d / │ ├── D561-D570 财富验证函数
+  - 来源：`outputs/getbrain/v0.2-function-dependency-graph-20260706.md`
+  - 依赖：D561, D570；被引用：—
+- [│ ├── D571-D580 认知验证函数](../../../outputs/getbrain/v0.2-function-dependency-graph-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-9cd27c6fcb256789 / │ ├── D571-D580 认知验证函数
+  - 来源：`outputs/getbrain/v0.2-function-dependency-graph-20260706.md`
+  - 依赖：D571, D580；被引用：—
+- [│ ├── T1-T20 因果判定子函数](../../../outputs/getbrain/v0.2-function-dependency-graph-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-2dc62de181c811cf / │ ├── T1-T20 因果判定子函数
+  - 来源：`outputs/getbrain/v0.2-function-dependency-graph-20260706.md`
+  - 依赖：T1, T20；被引用：—
+- [│ ├── T41-T60 同构判定子函数](../../../outputs/getbrain/v0.2-function-dependency-graph-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-8db3b5256d173e16 / │ ├── T41-T60 同构判定子函数
+  - 来源：`outputs/getbrain/v0.2-function-dependency-graph-20260706.md`
+  - 依赖：T41, T60；被引用：—
+- [├── D581-D590 学科验证函数](../../../outputs/getbrain/v0.2-function-dependency-graph-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-bba81d770f4f3cc8 / ├── D581-D590 学科验证函数
+  - 来源：`outputs/getbrain/v0.2-function-dependency-graph-20260706.md`
+  - 依赖：D581, D590；被引用：—
+- [├── T9 自主意识函数](../../../outputs/getbrain/v0.2-function-dependency-graph-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-a3b03e0a74afe276 / ├── T9 自主意识函数
+  - 来源：`outputs/getbrain/v0.2-function-dependency-graph-20260706.md`
+  - 依赖：T9；被引用：—
+- [⚠️ 置信度判定不能靠关键词签名：V2 高置信 2 条经机制级比对均为「已有函数覆盖 / 不新增」，且 D597/D599 在反向语境误触发](../../../docs/getnote-collision-workflow-final-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-86ed66ca6fae8b02 / ⚠️ 置信度判定不能靠关键词签名：V2 高置信 2 条经机制级比对均为「已有函数覆盖 / 不新增」，且 D597/D599 在反向语境误触发
+  - 来源：`docs/getnote-collision-workflow-final-20260708.md`
+  - 依赖：D597, D599；被引用：—
+- [✅ No modifications to 统一函数总表 or 统一案例总表](../../../reports/external-research/120-function-paradigm-atlas-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-8c2aba1b278539cc / ✅ No modifications to 统一函数总表 or 统一案例总表
+  - 来源：`reports/external-research/120-function-paradigm-atlas-report.md`
+  - 依赖：—；被引用：—
+- [✅ proof obligations (353) 与 empirical obligations (351) 完整生成](../../../reports/foundation-architecture/084-architecture-truth-freeze-readiness.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-6aff602eb9b55b45 / ✅ proof obligations (353) 与 empirical obligations (351) 完整生成
+  - 来源：`reports/foundation-architecture/084-architecture-truth-freeze-readiness.md`
+  - 依赖：—；被引用：—
+- [✅ strict isomorphism、causal、proved、impossible、unique、exact 等强标签均通过各自门或被明确降级](../../../reports/foundation-architecture/084-architecture-truth-freeze-readiness.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-d6cedbb8843c604e / ✅ strict isomorphism、causal、proved、impossible、unique、exact 等强标签均通过各自门或被明确降级
+  - 来源：`reports/foundation-architecture/084-architecture-truth-freeze-readiness.md`
+  - 依赖：—；被引用：—
+- [✅ 未修改统一函数总表和统一案例总表](../../../data/discipline-projection/087-execution-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-e2143df931cf6d29 / ✅ 未修改统一函数总表和统一案例总表
+  - 来源：`data/discipline-projection/087-execution-report.md`
+  - 依赖：—；被引用：—
+- [✅ 未将投影称为同构或真值证明](../../../data/discipline-projection/087-execution-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-061e155b7bd9257d / ✅ 未将投影称为同构或真值证明
+  - 来源：`data/discipline-projection/087-execution-report.md`
+  - 依赖：—；被引用：—
+- [✅ 没有把 max 模型判断冒充机器证明或经验事实](../../../reports/foundation-architecture/084-architecture-truth-freeze-readiness.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-d16f32ae40e883b7 / ✅ 没有把 max 模型判断冒充机器证明或经验事实
+  - 来源：`reports/foundation-architecture/084-architecture-truth-freeze-readiness.md`
+  - 依赖：—；被引用：—
+- [✅ 项目状态明确区分"架构真值层冻结候选"和"内容证明/经验验证未完成"](../../../reports/foundation-architecture/084-architecture-truth-freeze-readiness.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-34376592c5ca2b8a / ✅ 项目状态明确区分"架构真值层冻结候选"和"内容证明/经验验证未完成"
+  - 来源：`reports/foundation-architecture/084-architecture-truth-freeze-readiness.md`
+  - 依赖：—；被引用：—
+- [《永昭·虚遐》是本宪章的诗性与哲学源头，表达所有生命体在宇宙尺度上的共在、共命、共感与相互责任。它提供规范性的价值方向，不作为自然科学、社会科学或形式系统中的事实证明。](../../../docs/governance/life-community-value-charter.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-431a6f6ad565bfe8 / 《永昭·虚遐》是本宪章的诗性与哲学源头，表达所有生命体在宇宙尺度上的共在、共命、共感与相互责任。它提供规范性的价值方向，不作为自然科学、社会科学或形式系统中的事实证明。
+  - 来源：`docs/governance/life-community-value-charter.md`
+  - 依赖：—；被引用：—
+- [「反馈回路」命中 D312（正反馈噪声放大，数学 δp_max·K^k）、D326（正反馈饱和，物理下界）——均为数学/物理噪声机制，非评价系统内的低质累积。](../../../outputs/audit/cross-domain-candidate-function-review-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-eff0a4b9341a7a89 / 「反馈回路」命中 D312（正反馈噪声放大，数学 δp_max·K^k）、D326（正反馈饱和，物理下界）——均为数学/物理噪声机制，非评价系统内的低质累积。
+  - 来源：`outputs/audit/cross-domain-candidate-function-review-20260708.md`
+  - 依赖：D312, D326；被引用：—
+- [「案例不能从单一材料推出普遍结论」；](../../../outputs/audit/book-validation-case-table-formalization-audit-20260709.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a3448453742dcacc / 「案例不能从单一材料推出普遍结论」；
+  - 来源：`outputs/audit/book-validation-case-table-formalization-audit-20260709.md`
+  - 依赖：—；被引用：—
+- [「量化指标 / 真实价值」仅命中 D597 本身，证明候选机制簇围绕 D597 展开、但未被 D597 精确覆盖。](../../../outputs/audit/cross-domain-candidate-function-review-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-e476655dc46a07a0 / 「量化指标 / 真实价值」仅命中 D597 本身，证明候选机制簇围绕 D597 展开、但未被 D597 精确覆盖。
+  - 来源：`outputs/audit/cross-domain-candidate-function-review-20260708.md`
+  - 依赖：D597；被引用：—
+- [【写公式或机制链。】](../../../templates/two-tables/unified-function-entry-template.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-a98dc8cb57086aec / 【写公式或机制链。】
+  - 来源：`templates/two-tables/unified-function-entry-template.md`
+  - 依赖：—；被引用：—
+- [【用一句话说明该函数描述的可迁移机制。】](../../../templates/two-tables/unified-function-entry-template.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-b3eb5edac31d4e99 / 【用一句话说明该函数描述的可迁移机制。】
+  - 来源：`templates/two-tables/unified-function-entry-template.md`
+  - 依赖：—；被引用：—
+- [一句话定义** — 一句话说清该函数描述的可迁移机制](../../../docs/two-tables-entry-writing-standard-20260709.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-33460f9e77c0268d / 一句话定义** — 一句话说清该函数描述的可迁移机制
+  - 来源：`docs/two-tables-entry-writing-standard-20260709.md`
+  - 依赖：—；被引用：—
+- [七轴状态系统** — semantic / logic / formal / proof / evidence / scope / provenance](../../../reports/foundation-architecture/085-architecture-structure-freeze.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-9d758c9ea3bb5594 / 七轴状态系统** — semantic / logic / formal / proof / evidence / scope / provenance
+  - 来源：`reports/foundation-architecture/085-architecture-structure-freeze.md`
+  - 依赖：—；被引用：—
+- [万有理论门槛函数](../../ASSET-CARDS.md#asset-d190)
+  - 类型/状态：`FUNCTION_ASSET` · `DOWNGRADE_TO_CONJECTURE`
+  - 可搜索名称：D190 / 万有理论门槛函数
+  - 来源：`统一函数总表/0226-D190-万有理论门槛函数.md`
+  - 依赖：D181, D211, D220, D270；被引用：NFC-12c4da38b88fcf6a, NFC-1574130dc36ee02b, NFC-404a74d8f2d269bc, NFC-6486608486648d36
+- [万有理论门槛函数,万有理论ToE是所有基本力在高能μ>μ_ToE时的门控面合并。μ μ_ToE时合并为Λ_ToE,Φ = 1](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0226-D190-%E4%B8%87%E6%9C%89%E7%90%86%E8%AE%BA%E9%97%A8%E6%A7%9B%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-43f7d6d11da4062a / 万有理论门槛函数,万有理论ToE是所有基本力在高能μ>μ_ToE时的门控面合并。μ μ_ToE时合并为Λ_ToE,Φ = 1
+  - 来源：`统一函数总表/0226-D190-万有理论门槛函数.md`
+  - 依赖：—；被引用：—
+- [万有理论门槛函数,万有理论ToE是所有基本力在高能μ>μ_ToE时的门控面合并。μ μ_ToE时合并为Λ_ToE,Φ = 1](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-fa2c888c6d8952b0 / 万有理论门槛函数,万有理论ToE是所有基本力在高能μ>μ_ToE时的门控面合并。μ μ_ToE时合并为Λ_ToE,Φ = 1
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：—；被引用：—
+- [万有理论门槛函数,万有理论ToE是所有基本力在高能μ>μ_ToE时的门控面合并。μ μ_ToE时合并为Λ_ToE,Φ = 1/ln(μ/Λ_ToE)。统一度Ω_after > Ω_before。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0226-D190-%E4%B8%87%E6%9C%89%E7%90%86%E8%AE%BA%E9%97%A8%E6%A7%9B%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-0108EB9EF3536B10 / 万有理论门槛函数,万有理论ToE是所有基本力在高能μ>μ_ToE时的门控面合并。μ μ_ToE时合并为Λ_ToE,Φ = 1/ln(μ/Λ_ToE)。统一度Ω_after > Ω_before。 / IMPLICIT-0108EB9EF3536B10
+  - 来源：`统一函数总表/0226-D190-万有理论门槛函数.md`
+  - 依赖：—；被引用：—
+- [万有理论门槛函数,万有理论ToE是所有基本力在高能μ>μ_ToE时的门控面合并。μ μ_ToE时合并为Λ_ToE,Φ =…](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0226-D190-%E4%B8%87%E6%9C%89%E7%90%86%E8%AE%BA%E9%97%A8%E6%A7%9B%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-66542C1699243FD0 / 万有理论门槛函数,万有理论ToE是所有基本力在高能μ>μ_ToE时的门控面合并。μ μ_ToE时合并为Λ_ToE,Φ =… / IMPLICIT-66542C1699243FD0
+  - 来源：`统一函数总表/0226-D190-万有理论门槛函数.md`
+  - 依赖：—；被引用：—
+- [三、跨域同构函数映射](../../../outputs/getbrain/v0.2-function-dependency-graph-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-c97936f9e4347ba1 / 三、跨域同构函数映射
+  - 来源：`outputs/getbrain/v0.2-function-dependency-graph-20260706.md`
+  - 依赖：—；被引用：—
+- [三域熵统一函数(推论级)](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0147-D108-%E4%B8%89%E5%9F%9F%E7%86%B5%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%28%E6%8E%A8%E8%AE%BA%E7%BA%A7%29.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D108 / 三域熵统一函数(推论级) / D108
+  - 来源：`统一函数总表/0147-D108-三域熵统一函数(推论级).md`
+  - 依赖：D101, D180, D206, D230；被引用：NFC-228aac1a7f5b3e49, NFC-2719afaf9080ff7f, NFC-4af9d36aa087b374, NFC-659c0089d263a57d
+- [三域熵统一函数(推论级)](../../../data/foundation/formal-objects/objects.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-374caf47b59ee234 / 三域熵统一函数(推论级)
+  - 来源：`data/foundation/formal-objects/objects.jsonl`
+  - 依赖：—；被引用：—
+- [三域退化统一参数函数](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0162-D124-%E4%B8%89%E5%9F%9F%E9%80%80%E5%8C%96%E7%BB%9F%E4%B8%80%E5%8F%82%E6%95%B0%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D124 / 三域退化统一参数函数 / D124
+  - 来源：`统一函数总表/0162-D124-三域退化统一参数函数.md`
+  - 依赖：D180, D91；被引用：D474, CLAIM-D474, NFC-0788cfec6f261418, NFC-1323bc2a105241a3
+- [三域退化统一参数函数](../../../data/foundation/formal-objects/objects.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-b8097f8056d82e38 / 三域退化统一参数函数
+  - 来源：`data/foundation/formal-objects/objects.jsonl`
+  - 依赖：—；被引用：—
+- [三定理：均等定理（最优稳态所有因子相等）、贪心定理（先补最弱是最优路径）、脆弱度定理（先补最弱vs平均分配的脆弱度比）。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0148-D109-%E4%B9%98%E6%B3%95%E6%9C%80%E4%BC%98%E7%94%9F%E5%AD%98%E7%AD%96%E7%95%A5%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-27f57a2be98e916f / 三定理：均等定理（最优稳态所有因子相等）、贪心定理（先补最弱是最优路径）、脆弱度定理（先补最弱vs平均分配的脆弱度比）。
+  - 来源：`统一函数总表/0148-D109-乘法最优生存策略函数.md`
+  - 依赖：—；被引用：—
+- [三层结构必然性](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0135-D96-%E4%B8%89%E5%B1%82%E7%BB%93%E6%9E%84%E5%BF%85%E7%84%B6%E6%80%A7.md)
+  - 类型/状态：`FUNCTION_ASSET` · `DOWNGRADE_TO_CONJECTURE`
+  - 可搜索名称：D96 / 三层结构必然性 / D96
+  - 来源：`统一函数总表/0135-D96-三层结构必然性.md`
+  - 依赖：D180, D91；被引用：NFC-3846feb17ac8d73e, NFC-3ef29c562bba95da, NFC-ab00b24b3f671681, NFC-b01fb99cdd990b60
+- [三层结构必然性→形式系统三层结构的必然性。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0135-D96-%E4%B8%89%E5%B1%82%E7%BB%93%E6%9E%84%E5%BF%85%E7%84%B6%E6%80%A7.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-928c4c1d8c4fec70 / 三层结构必然性→形式系统三层结构的必然性。
+  - 来源：`统一函数总表/0135-D96-三层结构必然性.md`
+  - 依赖：—；被引用：—
+- [三层结构必然性，形式系统三层结构的必然性。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0135-D96-%E4%B8%89%E5%B1%82%E7%BB%93%E6%9E%84%E5%BF%85%E7%84%B6%E6%80%A7.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-52a212c8430a6d33 / 三层结构必然性，形式系统三层结构的必然性。
+  - 来源：`统一函数总表/0135-D96-三层结构必然性.md`
+  - 依赖：—；被引用：—
+- [三层结构必然性，形式系统三层结构的必然性。 **扩展注释 / Extended Annotation**](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-c46479185b1c5c82 / 三层结构必然性，形式系统三层结构的必然性。 **扩展注释 / Extended Annotation**
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：—；被引用：—
+- [三层退化叠加函数](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0082-D33-%E4%B8%89%E5%B1%82%E9%80%80%E5%8C%96%E5%8F%A0%E5%8A%A0%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D33 / 三层退化叠加函数 / D33
+  - 来源：`统一函数总表/0082-D33-三层退化叠加函数.md`
+  - 依赖：D1, D90；被引用：NFC-0459e429aac8b7af, NFC-10dc1948734dd748, NFC-159a35df0b5e7629, NFC-1e081ecd41b27ec4
+- [三层退化叠加，意识、遮蔽、锁定的叠加。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0081-D32-%E8%AE%A4%E7%9F%A5-%E7%BE%A4%E4%BD%93%E7%8A%B9%E8%B1%AB%E5%9F%9F%E7%BB%9F%E4%B8%80%E6%98%A0%E5%B0%84%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-6db32285c4ec220d / 三层退化叠加，意识、遮蔽、锁定的叠加。
+  - 来源：`统一函数总表/0081-D32-认知-群体犹豫域统一映射函数.md`
+  - 依赖：—；被引用：—
+- [三层退化叠加，意识、遮蔽、锁定的叠加。 **扩展注释 / Extended Annotation**](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-0bc2756109af0bac / 三层退化叠加，意识、遮蔽、锁定的叠加。 **扩展注释 / Extended Annotation**
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：—；被引用：—
+- [三效率(选择](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0176-D138-%E4%B8%89%E6%95%88%E7%8E%87%28%E9%80%89%E6%8B%A9.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D138 / 三效率(选择 / D138
+  - 来源：`统一函数总表/0176-D138-三效率(选择.md`
+  - 依赖：D180, D91；被引用：NFC-2de902047907b052, NFC-3e768f71b3b5c413, NFC-4d3dd328db8951ed, NFC-5d24aa304af3bc3b
+- [三效率冲突三角约束](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0023-T13-%E4%B8%89%E6%95%88%E7%8E%87%E5%86%B2%E7%AA%81%E4%B8%89%E8%A7%92%E7%BA%A6%E6%9D%9F.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：T13 / 三效率冲突三角约束 / T13
+  - 来源：`统一函数总表/0023-T13-三效率冲突三角约束.md`
+  - 依赖：—；被引用：D518, NFC-34c10426234264f9, NFC-60ec4e2496c229e3, NFC-8384f0b2965a3069
+- [三条均满足：来源可回指（A2/A3/A4、A5/A8/A15、A7/A8/A9）、Ψ₀ 六组件判定通过、与现有函数实质不同构、价值宪章有条件通过。](../../../outputs/collisions/20260711-disobedience-subjectivity/candidate-decision-summary.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-765e71a034abdae2 / 三条均满足：来源可回指（A2/A3/A4、A5/A8/A15、A7/A8/A9）、Ψ₀ 六组件判定通过、与现有函数实质不同构、价值宪章有条件通过。
+  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/candidate-decision-summary.md`
+  - 依赖：A15, A2, A3, A4；被引用：—
+- [三框架操作类型在维度上形成降低链条：并行验证（点火）→ 对比操作（Science Earth）→ 评估操作（EGSS）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0516-D518-%E6%93%8D%E4%BD%9C%E7%B1%BB%E5%9E%8B%E7%BB%B4%E5%BA%A6%E9%99%8D%E4%BD%8E%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-423164a547e5e622 / 三框架操作类型在维度上形成降低链条：并行验证（点火）→ 对比操作（Science Earth）→ 评估操作（EGSS）
+  - 来源：`统一函数总表/0516-D518-操作类型维度降低函数.md`
+  - 依赖：—；被引用：—
+- [三框架操作类型在维度上形成降低链条：并行验证（点火）→ 对比操作（Science Earth）→ 评估操作（EGSS） **扩展注释 / Extended Annotation**](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-4bd762baed8eea06 / 三框架操作类型在维度上形成降低链条：并行验证（点火）→ 对比操作（Science Earth）→ 评估操作（EGSS） **扩展注释 / Extended Annotation**
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：—；被引用：—
+- [三门学科的证据制度对比](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-40441553742d1e89 / 三门学科的证据制度对比
+  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
+  - 依赖：—；被引用：—
+- [三阶段-相变分类对应函数](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0329-D293-%E4%B8%89%E9%98%B6%E6%AE%B5-%E7%9B%B8%E5%8F%98%E5%88%86%E7%B1%BB%E5%AF%B9%E5%BA%94%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D293 / 三阶段-相变分类对应函数 / D293
+  - 来源：`统一函数总表/0329-D293-三阶段-相变分类对应函数.md`
+  - 依赖：D271, D289, D290, D360；被引用：CLAIM-D318, NFC-1b8a4f907970180e, NFC-482c906698ba0c8e, NFC-5be57ac0bfd1432f
+- [三阶段-相变分类对应函数](../../../data/foundation/formal-objects/objects.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-5922a0a0db73b27a / 三阶段-相变分类对应函数
+  - 来源：`data/foundation/formal-objects/objects.jsonl`
+  - 依赖：—；被引用：—
+- [三领域复现证据：](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0607-D597-%E9%87%8F%E5%8C%96%E6%8C%87%E6%A0%87%E6%9B%BF%E4%BB%A3%E7%9C%9F%E5%AE%9E%E4%BB%B7%E5%80%BC.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-f958d9ef7a952ee2 / 三领域复现证据：
+  - 来源：`统一函数总表/0607-D597-量化指标替代真实价值.md`
+  - 依赖：—；被引用：—
+- [上一轮实测发现：D244（`0280-D244-自主意识涌现的临界条件.md`）不是指标化函数，而是自主意识涌现的临界条件（`Ψ = ι × P_exit > 0`）。grep 命中仅因元数据含 "D244" 和一处「条件1的量化」，属于误](../../../outputs/audit/d597-index-visibility-check-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-95bed556432180b6 / 上一轮实测发现：D244（`0280-D244-自主意识涌现的临界条件.md`）不是指标化函数，而是自主意识涌现的临界条件（`Ψ = ι × P_exit > 0`）。grep 命中仅因元数据含 "D244" 和一处「条件1的量化」，属于误
+  - 来源：`outputs/audit/d597-index-visibility-check-20260708.md`
+  - 依赖：D244, D597；被引用：—
+- [上位函数：D245（自我模型，数学门控面二阶门控）——但 D245 是系统对自身门控面的归属判断，非社会角色遮蔽结构，二者不同构，本函数为社会身份层独立原语。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0611-D601-%E8%A7%92%E8%89%B2%E8%A6%86%E7%9B%96%E4%B8%BB%E4%BD%93%E8%BA%AB%E4%BB%BD.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-98a3285d51d573d3 / 上位函数：D245（自我模型，数学门控面二阶门控）——但 D245 是系统对自身门控面的归属判断，非社会角色遮蔽结构，二者不同构，本函数为社会身份层独立原语。
+  - 来源：`统一函数总表/0611-D601-角色覆盖主体身份.md`
+  - 依赖：D245；被引用：—
+- [下一轮：在统一函数表中为 M1 增强回路、P_meta 元协议投影、G_δ 哥德尔判定、σ_opt、ε_eff、I_iso、门控函数族 建立/定位正式 D/MF/T 编号。](../../../outputs/audit/book-validation-case-table-formalization-audit-20260709.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-3854a1f2d0533f2b / 下一轮：在统一函数表中为 M1 增强回路、P_meta 元协议投影、G_δ 哥德尔判定、σ_opt、ε_eff、I_iso、门控函数族 建立/定位正式 D/MF/T 编号。
+  - 来源：`outputs/audit/book-validation-case-table-formalization-audit-20260709.md`
+  - 依赖：—；被引用：—
+- [下列条目是待研究、待定义、待证明或待实证问题，不是已经承诺可解的路线图。](../../../RESULTS/OPEN-QUESTIONS.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-323a64db7ae9a0a8 / 下列条目是待研究、待定义、待证明或待实证问题，不是已经承诺可解的路线图。
+  - 来源：`RESULTS/OPEN-QUESTIONS.md`
+  - 依赖：—；被引用：—
+- [不修改 `统一函数总表/`](../../../docs/p1-machine-data-collision-workflow-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-b63780c5b7524601 / 不修改 `统一函数总表/`
+  - 来源：`docs/p1-machine-data-collision-workflow-20260708.md`
+  - 依赖：—；被引用：—
+- [不修改**函数表、案例表、README、INDEX、data、schema、P1 数据、历史审计、碰撞流程；**不新增**函数/案例；**不迁移**格式、**不回填**。](../../../outputs/audit/two-tables-entry-format-audit-20260709.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-cdc7d84dcf51ede6 / 不修改**函数表、案例表、README、INDEX、data、schema、P1 数据、历史审计、碰撞流程；**不新增**函数/案例；**不迁移**格式、**不回填**。
+  - 来源：`outputs/audit/two-tables-entry-format-audit-20260709.md`
+  - 依赖：P1；被引用：—
+- [不修改统一函数总表和统一案例总表](../../../data/discipline-projection/087-v1-1-overlay.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-3a57deee2c4086f9 / 不修改统一函数总表和统一案例总表
+  - 来源：`data/discipline-projection/087-v1-1-overlay.md`
+  - 依赖：—；被引用：—
+- [不冻结对象**：未经证明的命题、未经验证的经验结论、严格同构、已识别因果、精确跨域、唯一性、不可能性、必要充分条件](../../../docs/foundation/architecture-structure-freeze-v1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-15e6c55e329feb67 / 不冻结对象**：未经证明的命题、未经验证的经验结论、严格同构、已识别因果、精确跨域、唯一性、不可能性、必要充分条件
+  - 来源：`docs/foundation/architecture-structure-freeze-v1.md`
+  - 依赖：—；被引用：—
+- [不删除/替换/改写 Ψ₀；不改两张表；不给候选分配 C 编号；不把元协议计入函数总数；不声称外部证明；不经验穷尽；不删 pending；不直接合并 main；不强推。](../../../docs/versions/2026-07-09-meta-protocol-generation-layer.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-cb9aeef30bdeb25c / 不删除/替换/改写 Ψ₀；不改两张表；不给候选分配 C 编号；不把元协议计入函数总数；不声称外部证明；不经验穷尽；不删 pending；不直接合并 main；不强推。
+  - 来源：`docs/versions/2026-07-09-meta-protocol-generation-layer.md`
+  - 依赖：—；被引用：—
+- [不可逆-缓冲消失同步函数](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0428-D392-%E4%B8%8D%E5%8F%AF%E9%80%86-%E7%BC%93%E5%86%B2%E6%B6%88%E5%A4%B1%E5%90%8C%E6%AD%A5%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D392 / 不可逆-缓冲消失同步函数 / D392
+  - 来源：`统一函数总表/0428-D392-不可逆-缓冲消失同步函数.md`
+  - 依赖：D361, D430, D431, D450；被引用：NFC-0370d31da3d1052e, NFC-6fa9bd281cfbdb38, NFC-80c6598c193d6d8f, NFC-87c8fc06a464f28a
+- [不可逆体积参数归约函数](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0459-D423-%E4%B8%8D%E5%8F%AF%E9%80%86%E4%BD%93%E7%A7%AF%E5%8F%82%E6%95%B0%E5%BD%92%E7%BA%A6%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D423 / 不可逆体积参数归约函数 / D423
+  - 来源：`统一函数总表/0459-D423-不可逆体积参数归约函数.md`
+  - 依赖：D361, D430, D431, D450；被引用：NFC-061e26118413c10b, NFC-06b6c8200512de4a, NFC-0ae4ba6ade863c83, NFC-0d948e4f4f5a9aeb
+- [不可逆性判据函数](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0158-D120-%E4%B8%8D%E5%8F%AF%E9%80%86%E6%80%A7%E5%88%A4%E6%8D%AE%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D120 / 不可逆性判据函数 / D120
+  - 来源：`统一函数总表/0158-D120-不可逆性判据函数.md`
+  - 依赖：D180, D91；被引用：NFC-2372f9459b1a53b0, NFC-90de22f13c1413e5, NFC-929ca104899baee0, NFC-947f27ab28488cba
+- [不可逆相交-临界标度联合函数](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0438-D402-%E4%B8%8D%E5%8F%AF%E9%80%86%E7%9B%B8%E4%BA%A4-%E4%B8%B4%E7%95%8C%E6%A0%87%E5%BA%A6%E8%81%94%E5%90%88%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D402 / 不可逆相交-临界标度联合函数 / D402
+  - 来源：`统一函数总表/0438-D402-不可逆相交-临界标度联合函数.md`
+  - 依赖：D361, D430, D431, D450；被引用：NFC-05ff7ce0a1f4a050, NFC-a3c0ceaa414e97a3, NFC-a481abf7a0cba875, NFC-ae1caa33a7617e5c
+- [不可逆空间函数](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0491-D493-%E4%B8%8D%E5%8F%AF%E9%80%86%E7%A9%BA%E9%97%B4%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D493 / 不可逆空间函数 / D493
+  - 来源：`统一函数总表/0491-D493-不可逆空间函数.md`
+  - 依赖：A5, A9, D451, D476；被引用：NFC-08f471268aae1a14, NFC-0b9cca4992f79586, NFC-bb75af61d004f1f4
+- [不可逆线完整分类](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0032-T22-%E4%B8%8D%E5%8F%AF%E9%80%86%E7%BA%BF%E5%AE%8C%E6%95%B4%E5%88%86%E7%B1%BB.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：T22 / 不可逆线完整分类 / T22
+  - 来源：`统一函数总表/0032-T22-不可逆线完整分类.md`
+  - 依赖：—；被引用：NFC-51a25282be57349c, NFC-99ff57d00d208276, NFC-a680dc03144af083, NFC-bf6bbbc6682d577a
+- [不可逆线完整分类函数](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0446-D410-%E4%B8%8D%E5%8F%AF%E9%80%86%E7%BA%BF%E5%AE%8C%E6%95%B4%E5%88%86%E7%B1%BB%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D410 / 不可逆线完整分类函数 / D410
+  - 来源：`统一函数总表/0446-D410-不可逆线完整分类函数.md`
+  - 依赖：D361, D430, D431, D450；被引用：CLAIM-D465, NFC-2674c28055e100e0, NFC-26849eb01eb2f914, NFC-2d35e4be71a4c527
+- [不可逆线相交函数](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0424-D388-%E4%B8%8D%E5%8F%AF%E9%80%86%E7%BA%BF%E7%9B%B8%E4%BA%A4%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D388 / 不可逆线相交函数 / D388
+  - 来源：`统一函数总表/0424-D388-不可逆线相交函数.md`
+  - 依赖：D361, D430, D431, D450；被引用：CLAIM-D402, CLAIM-D409, NFC-05ff7ce0a1f4a050, NFC-0fb3f9fce47d2de9
+- [不可通约成本如何处理：生命、生态、代际、主体性成本之间不可简单相加时如何比较与决策。](../../../docs/governance/meta-protocol-reviews/factual-pending-register.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-70b278397a60bd5c / 不可通约成本如何处理：生命、生态、代际、主体性成本之间不可简单相加时如何比较与决策。
+  - 来源：`docs/governance/meta-protocol-reviews/factual-pending-register.md`
+  - 依赖：—；被引用：—
+- [不同于 C-0807（教室系统性钝化与避风港，教育组织压力）、C-0810（组织价值—决策错配），本案例聚焦「社会角色遮蔽独立主体身份」的家庭/个人轴，对应新函数 D601。](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0806-C-0811-%E8%A7%92%E8%89%B2%E8%A6%86%E7%9B%96%E4%B8%BB%E4%BD%93%E5%88%B0%E8%BA%AB%E4%BB%BD%E6%8F%90%E9%97%AE.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-486a999d138bf57a / 不同于 C-0807（教室系统性钝化与避风港，教育组织压力）、C-0810（组织价值—决策错配），本案例聚焦「社会角色遮蔽独立主体身份」的家庭/个人轴，对应新函数 D601。
+  - 来源：`统一案例总表/0806-C-0811-角色覆盖主体到身份提问.md`
+  - 依赖：D601；被引用：—
+- [不同于 C-0808（职称硬门槛裹挟青年教师，约束来源为组织职称）、C-0809（指标化导致表演化假课），本案例是组织创始情境中「价值创造权与决策权分离」的具体实例，对应新函数 D602。](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0805-C-0810-%E4%BB%B7%E5%80%BC%E5%88%9B%E9%80%A0%E6%9D%83%E5%86%B3%E7%AD%96%E6%9D%83%E9%94%99%E9%85%8D%E4%B8%8E%E5%9B%9E%E6%94%B6.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-5a31b85a859b36b8 / 不同于 C-0808（职称硬门槛裹挟青年教师，约束来源为组织职称）、C-0809（指标化导致表演化假课），本案例是组织创始情境中「价值创造权与决策权分离」的具体实例，对应新函数 D602。
+  - 来源：`统一案例总表/0805-C-0810-价值创造权决策权错配与回收.md`
+  - 依赖：D602；被引用：—
+- [不同时间尺度的净效率：短期提速与长期净收益的权衡函数待实证。](../../../docs/governance/meta-protocol-reviews/factual-pending-register.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-0c4b2dec377685db / 不同时间尺度的净效率：短期提速与长期净收益的权衡函数待实证。
+  - 来源：`docs/governance/meta-protocol-reviews/factual-pending-register.md`
+  - 依赖：—；被引用：—
+- [不同生命、物种、生态系统或未来世代之间的真实资源冲突；](../../../docs/governance/life-community-value-charter.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-25e241e3d1b30aad / 不同生命、物种、生态系统或未来世代之间的真实资源冲突；
+  - 来源：`docs/governance/life-community-value-charter.md`
+  - 依赖：—；被引用：—
+- [不在范围内**：任何具体宪章的**内容**（如价值宪章的原则正文）。系统可治理价值宪章的*生命周期*，但**不改写其正文**。](../../../docs/governance/charter-system-r1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-cedb7c6c4afd2306 / 不在范围内**：任何具体宪章的**内容**（如价值宪章的原则正文）。系统可治理价值宪章的*生命周期*，但**不改写其正文**。
+  - 来源：`docs/governance/charter-system-r1.md`
+  - 依赖：—；被引用：—
+- [不将“地球”视为生命价值边界；](../../../docs/governance/life-community-value-charter.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a9f10768ef3d4d02 / 不将“地球”视为生命价值边界；
+  - 来源：`docs/governance/life-community-value-charter.md`
+  - 依赖：—；被引用：—
+- [不将投影称为同构或真值证明](../../../data/discipline-projection/087-v1-1-overlay.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-04d070310f872d40 / 不将投影称为同构或真值证明
+  - 来源：`data/discipline-projection/087-v1-1-overlay.md`
+  - 依赖：—；被引用：—

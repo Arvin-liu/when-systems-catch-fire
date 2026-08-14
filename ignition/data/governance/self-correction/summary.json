@@ -1,0 +1,14 @@
+{
+  "audit_rules": 10,
+  "blocking_rules": 0,
+  "claim_ceiling": "Automated repository governance only; no external truth adjudication.",
+  "evidence_lineage_records": 3894,
+  "impact_records": 474,
+  "knowledge_asset_deltas": 474,
+  "linked_claims": 3894,
+  "machine_human_pairing_required": true,
+  "review_rules": 4,
+  "schema_version": "1.0.0",
+  "source_base_commit": "428ad50cf4438f027d5b8992d6e362d76037a3bd",
+  "task_id": "IGNITION-HUMAN-READABLE-KNOWLEDGE-SURFACES-AND-SELF-CORRECTION-ENGINE-R1-20260729"
+}

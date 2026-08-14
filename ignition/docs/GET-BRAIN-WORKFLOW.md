@@ -1,0 +1,33 @@
+# 得到大脑协作工作流（Get 笔记 / 得到大脑）
+
+> 当前版本：2026-07-09 元协议生成层版本。
+
+## 得到大脑在项目中的角色
+得到大脑（Get 笔记）是用户的个人知识库与碰撞引擎，负责产出书籍碰撞、学科碰撞、笔记抽取的候选材料。它本身不是点火项目的正式版本层。
+
+## 1111 仓库作为中转层
+`Arvin-liu/1111` 是中转仓库：
+- `agent-commands/`：用户下发的指令文件（IGNITION-*.md）。
+- `agent-results/`：Agent 写回的执行结果。
+- `2026-07-09 1735/`、`2026-07-09 1902/`：碰撞批次产出（含 22 本书元协议重跑、12 元协议×64、22 案例清单、22 本收敛报告）。
+- `reports/`：蓝图与审计（如 `ignition-version-iteration-blueprint-20260709.md`）。
+
+## 点火主仓库作为正式版本层
+`Arvin-liu/when-systems-catch-fire` 是正式版本层，接受审核后的资产。分支策略：维护在 `version/*` 分支，经 GPT 审核后再合并 main。
+
+## Agent 状态恢复优先级
+新 Agent 进入正式仓库时，先读项目的 [`STATE-CHANGELOG.md`](../STATE-CHANGELOG.md) baseline 与最近若干条 delta，再按其中的 `next_read` 回到 `docs/project-current-state.md`、`ITERATION.md`、Foundation、claim/evidence registry 和任务资产；仓库首页位于 `.github/README.md`。每次正式迭代合并 `main` 必须追加一条 delta；该日志只提供最近状态的增量导航，不替代任何权威记录。
+
+## 书籍碰撞输出如何进入候选区
+1. 得到大脑产出书籍碰撞笔记 → 进入 1111 批次目录。
+2. Agent 读取并抽取 → 生成 `data/meta-protocols/book-validation-cases-20260709.json` 与 `docs/meta-protocols/book-validation-22-cases-20260709.md`。
+3. 暂存于 `outputs/book-collisions/20260709-22-book-validation/`，状态 candidate_only。
+
+## 候选内容如何进入两张表
+须经逐本人工复核：分配 C 编号、补齐案例字段、标注证据等级，再写入 `统一案例总表/` 并更新 INDEX。本轮（第三步）未做此步。
+
+## 为什么不能直接把得到大脑输出写成正式结论
+得到大脑输出是候选、可能含未校验信息；框架要求 pending 机制、反例压力测试与外部证据连接。直接写入会破坏「可继续验证」的本体属性。
+
+## 短指令工作流
+用户只发编号（如「请执行 1111 的 IGNITION-20260709-003 ...」）→ Agent 读 1111 指令文件 → 在主仓库分支执行 → 写 1111 结果文件 → 回用户短句。用户无需贴长文。

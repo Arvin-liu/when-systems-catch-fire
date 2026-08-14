@@ -1,0 +1,37 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/evidence-program/schemas/candidate-portfolio.schema.json",
+  "title": "Evidence Candidate Portfolio Entry",
+  "description": "One candidate asset/claim considered for a falsifiable validation pilot (Task 103 §4).",
+  "type": "object",
+  "required": [
+    "candidate_id", "claim_id", "source", "current_claim", "claim_ceiling",
+    "current_M_level", "current_E_level", "dependency_centrality", "blast_radius",
+    "harm_if_wrong", "falsifiability", "data_availability", "provenance_quality",
+    "baseline_availability", "evidence_cost", "confounding_risk", "required_expertise",
+    "possible_outcomes", "selection_decision", "ranking_score"
+  ],
+  "properties": {
+    "candidate_id": {"type": "string"},
+    "claim_id": {"type": "string"},
+    "source": {"type": "string", "description": "Repo path or registry the claim derives from."},
+    "current_claim": {"type": "string"},
+    "claim_ceiling": {"type": "string"},
+    "current_M_level": {"type": "string", "pattern": "^M[0-9]$"},
+    "current_E_level": {"type": "string", "pattern": "^E[0-9]$"},
+    "dependency_centrality": {"type": "number", "minimum": 0, "maximum": 1},
+    "blast_radius": {"type": "number", "minimum": 0, "maximum": 1},
+    "harm_if_wrong": {"type": "number", "minimum": 0, "maximum": 1},
+    "falsifiability": {"type": "number", "minimum": 0, "maximum": 1},
+    "data_availability": {"type": "number", "minimum": 0, "maximum": 1},
+    "provenance_quality": {"type": "number", "minimum": 0, "maximum": 1},
+    "baseline_availability": {"type": "number", "minimum": 0, "maximum": 1},
+    "evidence_cost": {"type": "number", "minimum": 0, "maximum": 1, "description": "Higher = more expensive."},
+    "confounding_risk": {"type": "number", "minimum": 0, "maximum": 1},
+    "required_expertise": {"type": "string"},
+    "possible_outcomes": {"type": "string", "description": "How each outcome would alter disposition."},
+    "selection_decision": {"type": "string", "enum": ["PRIMARY", "RESERVE", "DEFERRED"]},
+    "ranking_score": {"type": "number", "description": "Documented composite; NOT treated as truth (§4)."},
+    "deferral_reason": {"type": "string", "description": "Required when selection_decision=DEFERRED."}
+  }
+}

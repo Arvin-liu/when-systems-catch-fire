@@ -11,6 +11,9 @@ concurrency:
   cancel-in-progress: true
 permissions:
   contents: read
+defaults:
+  run:
+    working-directory: ignition
 jobs:
   validate:
     runs-on: ubuntu-latest
@@ -46,6 +49,9 @@ jobs:
           python3 tools/governance/build_knowledge_experience.py --check
           python3 tools/governance/validate_human_visibility.py
           python3 tools/governance/validate_knowledge_experience.py
+          python3 tools/publication/validate_fire_seeds.py --check
+          python3 tools/governance/build_claim_browsers.py --check
+          python3 tools/generate_overall_architecture.py --check
       - name: Regression — knowledge-experience clone-independence (task 102)
         run: python3 tools/governance/check_knowledge_experience_determinism.py
       - run: python3 tools/foundation/verify_core_claims.py --check

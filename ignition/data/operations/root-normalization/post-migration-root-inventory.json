@@ -1,0 +1,24 @@
+{
+  "audit_kind": "POST_MIGRATION_ROOT_INVENTORY",
+  "audit_version": "1.0.0",
+  "base_commit": "e224f9fd3a822af87f366830eb7afefa961b169a",
+  "expected_root_entries": [
+    ".github",
+    ".gitignore",
+    "AGENTS.md",
+    "LICENSE",
+    "ignition"
+  ],
+  "namespace_descendant_count": 3634,
+  "ordinary_entities_outside_namespace": [],
+  "repository_root_entries": [
+    ".github",
+    ".gitignore",
+    "AGENTS.md",
+    "LICENSE",
+    "ignition"
+  ],
+  "root_entry_count": 5,
+  "root_shell_ok": true,
+  "tracked_path_count": 3650
+}

@@ -1,0 +1,121 @@
+{
+  "assets_with_dependencies": 541,
+  "authority_boundary": "AUTO_CANDIDATE records never override human adjudication; corrections.jsonl is the task 98 authority overlay.",
+  "deduplicated_assets": 7400,
+  "dependency_edges": 1923,
+  "duplicate_mentions": 64057,
+  "explicit_undefined_ids": 846,
+  "external_evidence_counts": {
+    "E0": 7395,
+    "E1": 5
+  },
+  "highest_reverse_dependency_counts": [
+    {
+      "dependent_count": 94,
+      "stable_id": "D1"
+    },
+    {
+      "dependent_count": 89,
+      "stable_id": "D180"
+    },
+    {
+      "dependent_count": 89,
+      "stable_id": "D91"
+    },
+    {
+      "dependent_count": 89,
+      "stable_id": "D270"
+    },
+    {
+      "dependent_count": 89,
+      "stable_id": "D181"
+    },
+    {
+      "dependent_count": 89,
+      "stable_id": "D360"
+    },
+    {
+      "dependent_count": 89,
+      "stable_id": "D271"
+    },
+    {
+      "dependent_count": 82,
+      "stable_id": "D220"
+    },
+    {
+      "dependent_count": 80,
+      "stable_id": "D90"
+    },
+    {
+      "dependent_count": 80,
+      "stable_id": "D211"
+    },
+    {
+      "dependent_count": 77,
+      "stable_id": "D451"
+    },
+    {
+      "dependent_count": 77,
+      "stable_id": "D541"
+    },
+    {
+      "dependent_count": 71,
+      "stable_id": "D289"
+    },
+    {
+      "dependent_count": 70,
+      "stable_id": "D290"
+    },
+    {
+      "dependent_count": 64,
+      "stable_id": "D430"
+    },
+    {
+      "dependent_count": 64,
+      "stable_id": "D431"
+    },
+    {
+      "dependent_count": 64,
+      "stable_id": "D450"
+    },
+    {
+      "dependent_count": 63,
+      "stable_id": "D361"
+    },
+    {
+      "dependent_count": 35,
+      "stable_id": "D476"
+    },
+    {
+      "dependent_count": 35,
+      "stable_id": "D477"
+    }
+  ],
+  "human_adjudicated_task98": 12,
+  "identity_counts": {
+    "ALGORITHM_OR_WORKFLOW": 83,
+    "CONJECTURE_OR_PENDING_CLAIM": 121,
+    "GATE_OR_DECISION_RULE": 18,
+    "HEURISTIC": 24,
+    "INVALID_OR_PSEUDO_FUNCTION": 6779,
+    "PARAMETRIC_MODEL": 72,
+    "RELATION_OR_CONSTRAINT": 227,
+    "SCORE_OR_INDEX": 72,
+    "STRUCTURAL_METAPHOR": 4
+  },
+  "implicit_named_assets": 5932,
+  "math_maturity_counts": {
+    "M0": 6779,
+    "M1": 616,
+    "M3": 1,
+    "M4": 3,
+    "M6": 1
+  },
+  "queued_for_human_review": 7388,
+  "registered_assets": 622,
+  "scanner_version": "2.0.0",
+  "snapshot": "function-census-v2-20260729",
+  "source_mentions": 71457,
+  "source_occurrence_records": 32944,
+  "tracked_text_files_scanned": 3427
+}
