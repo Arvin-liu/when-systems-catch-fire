@@ -13,6 +13,7 @@ from .contract import (
     CASE_STATES,
     EVIDENCE_STATES,
     MODES,
+    OWNER_BOUNDARIES,
     OBLIGATION_STATES,
     PRIVACY_CLASSES,
     REVIEW_VERDICTS,
@@ -711,7 +712,8 @@ def _collect_case_errors(document: Any) -> list[ValidationIssue]:
     _id(case.get("case_id"), "$.case.case_id", issues)
     _validate_activation(case.get("activation"), "$.case.activation", issues)
     _validate_question(case.get("question_contract"), "$.case.question_contract", issues)
-    _nonempty_string(case.get("owner_boundary"), "$.case.owner_boundary", issues)
+    if case.get("owner_boundary") not in OWNER_BOUNDARIES:
+        _issue(issues, "OWNER_BOUNDARY", "$.case.owner_boundary", "R1 permits review-only Owner routing; acceptance is external")
     _validate_budget_contract(case.get("budget_contract"), "$.case.budget_contract", issues)
     _strings(case.get("stop_conditions"), "$.case.stop_conditions", issues)
     case_state = case.get("case_state")

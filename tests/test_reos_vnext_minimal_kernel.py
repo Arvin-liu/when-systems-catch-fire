@@ -286,6 +286,9 @@ class MinimalKernelTests(unittest.TestCase):
         success = copy.deepcopy(make_case())
         success["case"]["case_state"] = "SUCCESS"
         self.assertCode(success, "GENERIC_SUCCESS")
+        owner_acceptance = copy.deepcopy(make_case())
+        owner_acceptance["case"]["owner_boundary"] = "OWNER_ACCEPTED"
+        self.assertCode(owner_acceptance, "OWNER_BOUNDARY")
 
     def test_cross_record_refs_and_nonfinite_values_are_rejected(self):
         malformed = copy.deepcopy(make_case())

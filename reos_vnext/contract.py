@@ -72,6 +72,7 @@ REVIEW_VERDICTS = frozenset(
 )
 
 PRIVACY_CLASSES = frozenset({"PRIVATE", "INTERNAL", "PUBLIC_SAFE_CANDIDATE", "PUBLIC"})
+OWNER_BOUNDARIES = frozenset({"GPT_OWNER_REVIEW_ONLY"})
 
 
 def _clean(value: Any) -> Any:

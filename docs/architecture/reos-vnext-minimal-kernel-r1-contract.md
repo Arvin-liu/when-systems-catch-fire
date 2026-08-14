@@ -63,19 +63,20 @@ No state named `SUCCESS` is legal. Case, obligation, evidence and review states 
 ## Required invariants
 
 1. `case_state` is not an obligation, retrieval or review state.
-2. Obligation dependencies are acyclic and never imply truth inheritance.
-3. Question amendments append `{from_digest, to_digest, reason, version}` against the compact validation-summary digest chain; silent replacement is invalid.
-4. Artifact references require thin provenance (`kind` and `retrieved_at`), scope and privacy/publication class; REOS stores no source blob or evidence maturity.
-5. Evidence retrieval state cannot set truth, proof, causal identification, external validity, claim ceiling or acceptance.
-6. Claim candidates are explicitly `NONCANONICAL` and cannot be promoted by REOS.
-7. Review decisions require a named question and independence declaration; `ABSTAIN` is legal; a decision is append-only and cannot overwrite an earlier decision; reviewer agreement cannot set Owner acceptance.
-8. A material review finding must reference a repair obligation or remain an explicit residual.
-9. Handoff projections require receiving authority, provenance/object refs, current noncanonical status where applicable, scope/ceiling, residuals and prohibited inference.
-10. Provider/model identifiers are telemetry only and cannot be required capabilities in R1.
-11. Privacy classes and prohibited inference are validated locally; public publication remains the existing Results Book/publication authority.
-12. Validators and JSON loaders are fail-closed for malformed state, including duplicate object keys, and do not adjudicate external truth.
-13. Budget contracts are closed to the bounded operator-accounted fields; nested canonical or evidence stores are rejected.
-14. Handoff `allowed_claims` cannot contradict its noncanonical/prohibited-inference boundary.
+2. `owner_boundary` is exactly `GPT_OWNER_REVIEW_ONLY`; Owner acceptance remains external to REOS.
+3. Obligation dependencies are acyclic and never imply truth inheritance.
+4. Question amendments append `{from_digest, to_digest, reason, version}` against the compact validation-summary digest chain; silent replacement is invalid.
+5. Artifact references require thin provenance (`kind` and `retrieved_at`), scope and privacy/publication class; REOS stores no source blob or evidence maturity.
+6. Evidence retrieval state cannot set truth, proof, causal identification, external validity, claim ceiling or acceptance.
+7. Claim candidates are explicitly `NONCANONICAL` and cannot be promoted by REOS.
+8. Review decisions require a named question and independence declaration; `ABSTAIN` is legal; a decision is append-only and cannot overwrite an earlier decision; reviewer agreement cannot set Owner acceptance.
+9. A material review finding must reference a repair obligation or remain an explicit residual.
+10. Handoff projections require receiving authority, provenance/object refs, current noncanonical status where applicable, scope/ceiling, residuals and prohibited inference.
+11. Provider/model identifiers are telemetry only and cannot be required capabilities in R1.
+12. Privacy classes and prohibited inference are validated locally; public publication remains the existing Results Book/publication authority.
+13. Validators and JSON loaders are fail-closed for malformed state, including duplicate object keys, and do not adjudicate external truth.
+14. Budget contracts are closed to the bounded operator-accounted fields; nested canonical or evidence stores are rejected.
+15. Handoff `allowed_claims` cannot contradict its noncanonical/prohibited-inference boundary.
 
 ## Deliberately absent from R1
 
