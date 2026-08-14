@@ -58,7 +58,8 @@ provenance 约束。详见[开放问题](./RESULTS/OPEN-QUESTIONS.md)。
 知识入口是[KNOWLEDGE](./KNOWLEDGE/README.md)，机器入口是[llms.txt](./llms.txt)。
 能力入口还包括 [MCF](./docs/architecture/multiscale-causal-fabric.md)、
 [PSD](./docs/architecture/probabilistic-system-dynamics.md)、
-[ARN](./docs/architecture/adaptive-relational-network.md) 和
+[ARN](./docs/architecture/adaptive-relational-network.md)、
+[REOS vNext LIGHT](./docs/architecture/reos-vnext-light.md) 和
 [点火迭代操作法](./ITERATION.md)。
 
 ## 1. 点火现状
@@ -92,6 +93,8 @@ provenance 约束。详见[开放问题](./RESULTS/OPEN-QUESTIONS.md)。
 ## 5. 完整系统架构
 
 完整架构仍按 L0—L6 组织：来源与证据 → 受控语义命题 → 形式对象 → 逻辑论证 → 数学模型与证明 → 验证与有效性 → 解释、应用与出版。语言—思维逻辑平面横穿这些层，但不增加 L7；之元写作法位于公共表达层并接受来源、版本、证据与残余约束。本 R1 还把已经分散运行的资格、ceiling、悬置、降级与撤回接口显式化为[认识论治理内核与联邦平面 R1](./docs/architecture/epistemic-governance-kernel-and-federated-planes.md)（状态为 `OWNER_ACCEPTED_WITH_EXPLICIT_RESIDUALS`）：它是 `FEDERATED_ARCHITECTURE_ONLY` 的引用/约束投影，不是新的真值层。
+
+[REOS vNext LIGHT](./docs/architecture/reos-vnext-light.md) 是研究执行控制的有界内核：它记录 recoverable research obligations、引用、审查和 projection-only handoff，但不新增 L7、真值 authority 或公共成果权威；其首次真实 pilot 的公开边界见[研究综合](./reports/research/reos-vnext-light-pilot-r1.md)。
 
 进入[Foundation 文档](./docs/foundation/README.md)、[MCF](./docs/architecture/multiscale-causal-fabric.md)、[PSD](./docs/architecture/probabilistic-system-dynamics.md)、[ARN](./docs/architecture/adaptive-relational-network.md)、[语言—思维逻辑平面](./docs/architecture/language-thought-logic-plane.md)、[自我纠错引擎](./docs/governance/self-correction-engine.md)和[Evidence Program](./evidence-program/README.md)。所有架构、状态和证据义务都可以在未来被修订、降级或撤回。
 
