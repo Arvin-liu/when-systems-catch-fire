@@ -1,0 +1,477 @@
+{
+  "audit_kind": "PRE_MIGRATION_ROOT_INVENTORY",
+  "audit_version": "1.0.0",
+  "base_commit": "f8976749c6ddd78e11ce6572048f94c7383642c1",
+  "repository_root_entries": [
+    {
+      "action": "RETAIN_ROOT_PLATFORM_SHELL",
+      "destination": ".github",
+      "entry": ".github",
+      "kind": "directory",
+      "reason": "GitHub, Codex, license or ignore contract remains repository-root scoped.",
+      "tracked": true,
+      "tracked_descendant_count": 10
+    },
+    {
+      "action": "RETAIN_ROOT_PLATFORM_SHELL",
+      "destination": ".gitignore",
+      "entry": ".gitignore",
+      "kind": "file",
+      "reason": "GitHub, Codex, license or ignore contract remains repository-root scoped.",
+      "tracked": true,
+      "tracked_descendant_count": 1
+    },
+    {
+      "action": "MOVE_TO_IGNITION_NAMESPACE",
+      "destination": "ignition/ACKNOWLEDGEMENTS.md",
+      "entry": "ACKNOWLEDGEMENTS.md",
+      "kind": "file",
+      "reason": "Ordinary project entity; move below the single project namespace.",
+      "tracked": true,
+      "tracked_descendant_count": 1
+    },
+    {
+      "action": "RETAIN_ROOT_PLATFORM_SHELL",
+      "destination": "AGENTS.md",
+      "entry": "AGENTS.md",
+      "kind": "file",
+      "reason": "GitHub, Codex, license or ignore contract remains repository-root scoped.",
+      "tracked": true,
+      "tracked_descendant_count": 1
+    },
+    {
+      "action": "MOVE_TO_IGNITION_NAMESPACE",
+      "destination": "ignition/AI-HANDOFF.md",
+      "entry": "AI-HANDOFF.md",
+      "kind": "file",
+      "reason": "Ordinary project entity; move below the single project namespace.",
+      "tracked": true,
+      "tracked_descendant_count": 1
+    },
+    {
+      "action": "MOVE_TO_IGNITION_NAMESPACE",
+      "destination": "ignition/AI-START-HERE.md",
+      "entry": "AI-START-HERE.md",
+      "kind": "file",
+      "reason": "Ordinary project entity; move below the single project namespace.",
+      "tracked": true,
+      "tracked_descendant_count": 1
+    },
+    {
+      "action": "MOVE_TO_IGNITION_NAMESPACE",
+      "destination": "ignition/ARCHITECTURE.md",
+      "entry": "ARCHITECTURE.md",
+      "kind": "file",
+      "reason": "Ordinary project entity; move below the single project namespace.",
+      "tracked": true,
+      "tracked_descendant_count": 1
+    },
+    {
+      "action": "MOVE_TO_IGNITION_NAMESPACE",
+      "destination": "ignition/CHANGELOG.md",
+      "entry": "CHANGELOG.md",
+      "kind": "file",
+      "reason": "Ordinary project entity; move below the single project namespace.",
+      "tracked": true,
+      "tracked_descendant_count": 1
+    },
+    {
+      "action": "MOVE_TO_IGNITION_NAMESPACE",
+      "destination": "ignition/COMMERCIAL-LICENSING.md",
+      "entry": "COMMERCIAL-LICENSING.md",
+      "kind": "file",
+      "reason": "Ordinary project entity; move below the single project namespace.",
+      "tracked": true,
+      "tracked_descendant_count": 1
+    },
+    {
+      "action": "MOVE_TO_GITHUB_COMMUNITY_SURFACE",
+      "destination": ".github/CONTRIBUTING.md",
+      "entry": "CONTRIBUTING.md",
+      "kind": "file",
+      "reason": "GitHub-supported community file; keep under the platform surface.",
+      "tracked": true,
+      "tracked_descendant_count": 1
+    },
+    {
+      "action": "MOVE_TO_IGNITION_NAMESPACE",
+      "destination": "ignition/CONTRIBUTOR-LICENSE-CANDIDATE.md",
+      "entry": "CONTRIBUTOR-LICENSE-CANDIDATE.md",
+      "kind": "file",
+      "reason": "Ordinary project entity; move below the single project namespace.",
+      "tracked": true,
+      "tracked_descendant_count": 1
+    },
+    {
+      "action": "MOVE_TO_IGNITION_NAMESPACE",
+      "destination": "ignition/FOUNDATION-64-PROPAGATION.jsonl",
+      "entry": "FOUNDATION-64-PROPAGATION.jsonl",
+      "kind": "file",
+      "reason": "Ordinary project entity; move below the single project namespace.",
+      "tracked": true,
+      "tracked_descendant_count": 1
+    },
+    {
+      "action": "MOVE_TO_IGNITION_NAMESPACE",
+      "destination": "ignition/FOUNDATION.md",
+      "entry": "FOUNDATION.md",
+      "kind": "file",
+      "reason": "Ordinary project entity; move below the single project namespace.",
+      "tracked": true,
+      "tracked_descendant_count": 1
+    },
+    {
+      "action": "MOVE_TO_IGNITION_NAMESPACE",
+      "destination": "ignition/GET-BRAIN-LATEST.md",
+      "entry": "GET-BRAIN-LATEST.md",
+      "kind": "file",
+      "reason": "Ordinary project entity; move below the single project namespace.",
+      "tracked": true,
+      "tracked_descendant_count": 1
+    },
+    {
+      "action": "MOVE_TO_IGNITION_NAMESPACE",
+      "destination": "ignition/HUMAN-READING.md",
+      "entry": "HUMAN-READING.md",
+      "kind": "file",
+      "reason": "Ordinary project entity; move below the single project namespace.",
+      "tracked": true,
+      "tracked_descendant_count": 1
+    },
+    {
+      "action": "MOVE_TO_IGNITION_NAMESPACE",
+      "destination": "ignition/ITERATION.md",
+      "entry": "ITERATION.md",
+      "kind": "file",
+      "reason": "Ordinary project entity; move below the single project namespace.",
+      "tracked": true,
+      "tracked_descendant_count": 1
+    },
+    {
+      "action": "MOVE_TO_IGNITION_NAMESPACE",
+      "destination": "ignition/KNOWLEDGE",
+      "entry": "KNOWLEDGE",
+      "kind": "directory",
+      "reason": "Ordinary project entity; move below the single project namespace.",
+      "tracked": true,
+      "tracked_descendant_count": 79
+    },
+    {
+      "action": "RETAIN_ROOT_PLATFORM_SHELL",
+      "destination": "LICENSE",
+      "entry": "LICENSE",
+      "kind": "file",
+      "reason": "GitHub, Codex, license or ignore contract remains repository-root scoped.",
+      "tracked": true,
+      "tracked_descendant_count": 1
+    },
+    {
+      "action": "MOVE_TO_IGNITION_NAMESPACE",
+      "destination": "ignition/LICENSES",
+      "entry": "LICENSES",
+      "kind": "directory",
+      "reason": "Ordinary project entity; move below the single project namespace.",
+      "tracked": true,
+      "tracked_descendant_count": 11
+    },
+    {
+      "action": "MOVE_TO_IGNITION_NAMESPACE",
+      "destination": "ignition/PUBLICATIONS",
+      "entry": "PUBLICATIONS",
+      "kind": "directory",
+      "reason": "Ordinary project entity; move below the single project namespace.",
+      "tracked": true,
+      "tracked_descendant_count": 22
+    },
+    {
+      "action": "MOVE_TO_GITHUB_REPOSITORY_LANDING",
+      "destination": ".github/README.md",
+      "entry": "README.md",
+      "kind": "file",
+      "reason": "GitHub officially surfaces a repository README from .github, root or docs; use the platform surface to keep the root shell minimal.",
+      "tracked": true,
+      "tracked_descendant_count": 1
+    },
+    {
+      "action": "MOVE_TO_IGNITION_NAMESPACE",
+      "destination": "ignition/RESULTS",
+      "entry": "RESULTS",
+      "kind": "directory",
+      "reason": "Ordinary project entity; move below the single project namespace.",
+      "tracked": true,
+      "tracked_descendant_count": 11
+    },
+    {
+      "action": "MOVE_TO_IGNITION_NAMESPACE",
+      "destination": "ignition/STATE-CHANGELOG.md",
+      "entry": "STATE-CHANGELOG.md",
+      "kind": "file",
+      "reason": "Ordinary project entity; move below the single project namespace.",
+      "tracked": true,
+      "tracked_descendant_count": 1
+    },
+    {
+      "action": "MOVE_TO_IGNITION_NAMESPACE",
+      "destination": "ignition/SUMMARY.md",
+      "entry": "SUMMARY.md",
+      "kind": "file",
+      "reason": "Ordinary project entity; move below the single project namespace.",
+      "tracked": true,
+      "tracked_descendant_count": 1
+    },
+    {
+      "action": "MOVE_TO_GITHUB_COMMUNITY_SURFACE",
+      "destination": ".github/SUPPORT.md",
+      "entry": "SUPPORT.md",
+      "kind": "file",
+      "reason": "GitHub-supported community file; keep under the platform surface.",
+      "tracked": true,
+      "tracked_descendant_count": 1
+    },
+    {
+      "action": "MOVE_TO_IGNITION_NAMESPACE",
+      "destination": "ignition/SUSTAINABILITY.md",
+      "entry": "SUSTAINABILITY.md",
+      "kind": "file",
+      "reason": "Ordinary project entity; move below the single project namespace.",
+      "tracked": true,
+      "tracked_descendant_count": 1
+    },
+    {
+      "action": "MOVE_TO_IGNITION_NAMESPACE",
+      "destination": "ignition/TRADEMARKS.md",
+      "entry": "TRADEMARKS.md",
+      "kind": "file",
+      "reason": "Ordinary project entity; move below the single project namespace.",
+      "tracked": true,
+      "tracked_descendant_count": 1
+    },
+    {
+      "action": "MOVE_TO_IGNITION_NAMESPACE",
+      "destination": "ignition/agent-results",
+      "entry": "agent-results",
+      "kind": "directory",
+      "reason": "Ordinary project entity; move below the single project namespace.",
+      "tracked": true,
+      "tracked_descendant_count": 1
+    },
+    {
+      "action": "MOVE_TO_IGNITION_NAMESPACE",
+      "destination": "ignition/analysis",
+      "entry": "analysis",
+      "kind": "directory",
+      "reason": "Ordinary project entity; move below the single project namespace.",
+      "tracked": true,
+      "tracked_descendant_count": 11
+    },
+    {
+      "action": "MOVE_TO_IGNITION_NAMESPACE",
+      "destination": "ignition/canonical",
+      "entry": "canonical",
+      "kind": "directory",
+      "reason": "Ordinary project entity; move below the single project namespace.",
+      "tracked": true,
+      "tracked_descendant_count": 7
+    },
+    {
+      "action": "MOVE_TO_IGNITION_NAMESPACE",
+      "destination": "ignition/case_failures",
+      "entry": "case_failures",
+      "kind": "directory",
+      "reason": "Ordinary project entity; move below the single project namespace.",
+      "tracked": true,
+      "tracked_descendant_count": 5
+    },
+    {
+      "action": "MOVE_TO_IGNITION_NAMESPACE",
+      "destination": "ignition/data",
+      "entry": "data",
+      "kind": "directory",
+      "reason": "Ordinary project entity; move below the single project namespace.",
+      "tracked": true,
+      "tracked_descendant_count": 1127
+    },
+    {
+      "action": "MOVE_TO_IGNITION_NAMESPACE",
+      "destination": "ignition/docs",
+      "entry": "docs",
+      "kind": "directory",
+      "reason": "Ordinary project entity; move below the single project namespace.",
+      "tracked": true,
+      "tracked_descendant_count": 184
+    },
+    {
+      "action": "MOVE_TO_IGNITION_NAMESPACE",
+      "destination": "ignition/evidence-program",
+      "entry": "evidence-program",
+      "kind": "directory",
+      "reason": "Ordinary project entity; move below the single project namespace.",
+      "tracked": true,
+      "tracked_descendant_count": 31
+    },
+    {
+      "action": "MOVE_TO_IGNITION_NAMESPACE",
+      "destination": "ignition/formal",
+      "entry": "formal",
+      "kind": "directory",
+      "reason": "Ordinary project entity; move below the single project namespace.",
+      "tracked": true,
+      "tracked_descendant_count": 7
+    },
+    {
+      "action": "MOVE_TO_IGNITION_NAMESPACE",
+      "destination": "ignition/function-os-candidate",
+      "entry": "function-os-candidate",
+      "kind": "directory",
+      "reason": "Ordinary project entity; move below the single project namespace.",
+      "tracked": true,
+      "tracked_descendant_count": 92
+    },
+    {
+      "action": "MOVE_TO_IGNITION_NAMESPACE",
+      "destination": "ignition/inputs",
+      "entry": "inputs",
+      "kind": "directory",
+      "reason": "Ordinary project entity; move below the single project namespace.",
+      "tracked": true,
+      "tracked_descendant_count": 13
+    },
+    {
+      "action": "MOVE_TO_IGNITION_NAMESPACE",
+      "destination": "ignition/llms.txt",
+      "entry": "llms.txt",
+      "kind": "file",
+      "reason": "Ordinary project entity; move below the single project namespace.",
+      "tracked": true,
+      "tracked_descendant_count": 1
+    },
+    {
+      "action": "MOVE_TO_IGNITION_NAMESPACE",
+      "destination": "ignition/outputs",
+      "entry": "outputs",
+      "kind": "directory",
+      "reason": "Ordinary project entity; move below the single project namespace.",
+      "tracked": true,
+      "tracked_descendant_count": 93
+    },
+    {
+      "action": "MOVE_TO_IGNITION_NAMESPACE",
+      "destination": "ignition/reos_vnext",
+      "entry": "reos_vnext",
+      "kind": "directory",
+      "reason": "Ordinary project entity; move below the single project namespace.",
+      "tracked": true,
+      "tracked_descendant_count": 6
+    },
+    {
+      "action": "MOVE_TO_IGNITION_NAMESPACE",
+      "destination": "ignition/reports",
+      "entry": "reports",
+      "kind": "directory",
+      "reason": "Ordinary project entity; move below the single project namespace.",
+      "tracked": true,
+      "tracked_descendant_count": 170
+    },
+    {
+      "action": "MOVE_TO_IGNITION_NAMESPACE",
+      "destination": "ignition/requirements-foundation.txt",
+      "entry": "requirements-foundation.txt",
+      "kind": "file",
+      "reason": "Ordinary project entity; move below the single project namespace.",
+      "tracked": true,
+      "tracked_descendant_count": 1
+    },
+    {
+      "action": "MOVE_TO_IGNITION_NAMESPACE",
+      "destination": "ignition/requirements-q33.txt",
+      "entry": "requirements-q33.txt",
+      "kind": "file",
+      "reason": "Ordinary project entity; move below the single project namespace.",
+      "tracked": true,
+      "tracked_descendant_count": 1
+    },
+    {
+      "action": "MOVE_TO_IGNITION_NAMESPACE",
+      "destination": "ignition/schemas",
+      "entry": "schemas",
+      "kind": "directory",
+      "reason": "Ordinary project entity; move below the single project namespace.",
+      "tracked": true,
+      "tracked_descendant_count": 73
+    },
+    {
+      "action": "MOVE_TO_IGNITION_NAMESPACE",
+      "destination": "ignition/scripts",
+      "entry": "scripts",
+      "kind": "directory",
+      "reason": "Ordinary project entity; move below the single project namespace.",
+      "tracked": true,
+      "tracked_descendant_count": 11
+    },
+    {
+      "action": "MOVE_TO_IGNITION_NAMESPACE",
+      "destination": "ignition/templates",
+      "entry": "templates",
+      "kind": "directory",
+      "reason": "Ordinary project entity; move below the single project namespace.",
+      "tracked": true,
+      "tracked_descendant_count": 15
+    },
+    {
+      "action": "MOVE_TO_IGNITION_NAMESPACE",
+      "destination": "ignition/tests",
+      "entry": "tests",
+      "kind": "directory",
+      "reason": "Ordinary project entity; move below the single project namespace.",
+      "tracked": true,
+      "tracked_descendant_count": 88
+    },
+    {
+      "action": "MOVE_TO_IGNITION_NAMESPACE",
+      "destination": "ignition/tools",
+      "entry": "tools",
+      "kind": "directory",
+      "reason": "Ordinary project entity; move below the single project namespace.",
+      "tracked": true,
+      "tracked_descendant_count": 116
+    },
+    {
+      "action": "MOVE_TO_IGNITION_NAMESPACE",
+      "destination": "ignition/views",
+      "entry": "views",
+      "kind": "directory",
+      "reason": "Ordinary project entity; move below the single project namespace.",
+      "tracked": true,
+      "tracked_descendant_count": 6
+    },
+    {
+      "action": "MOVE_TO_IGNITION_NAMESPACE",
+      "destination": "ignition/新故事",
+      "entry": "新故事",
+      "kind": "directory",
+      "reason": "Ordinary project entity; move below the single project namespace.",
+      "tracked": true,
+      "tracked_descendant_count": 2
+    },
+    {
+      "action": "MOVE_TO_IGNITION_NAMESPACE",
+      "destination": "ignition/统一函数总表",
+      "entry": "统一函数总表",
+      "kind": "directory",
+      "reason": "Ordinary project entity; move below the single project namespace.",
+      "tracked": true,
+      "tracked_descendant_count": 624
+    },
+    {
+      "action": "MOVE_TO_IGNITION_NAMESPACE",
+      "destination": "ignition/统一案例总表",
+      "entry": "统一案例总表",
+      "kind": "directory",
+      "reason": "Ordinary project entity; move below the single project namespace.",
+      "tracked": true,
+      "tracked_descendant_count": 807
+    }
+  ],
+  "root_entry_count": 52,
+  "tracked_path_count": 3647
+}
