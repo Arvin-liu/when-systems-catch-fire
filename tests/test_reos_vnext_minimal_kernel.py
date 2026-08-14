@@ -136,6 +136,9 @@ class MinimalKernelTests(unittest.TestCase):
             coordinated["case"]["question_contract"]["current_validation_summary"]
         )
         self.assertCode(coordinated, "QUESTION_MUTATION")
+        bool_version = copy.deepcopy(make_case())
+        bool_version["case"]["question_contract"]["version"] = True
+        self.assertCode(bool_version, "QUESTION_MUTATION")
         with self.assertRaises(ContractError) as context:
             amend_question(
                 amended,
@@ -231,7 +234,19 @@ class MinimalKernelTests(unittest.TestCase):
 
     def test_provider_full_state_namespace_and_generic_success_are_rejected(self):
         document = make_case()
-        for capability in ("provider:example-model", "model:example", "openai/gpt-5", "gpt-5", "anthropic/claude-3"):
+        for capability in (
+            "provider:example-model",
+            "model:example",
+            "openai/gpt-5",
+            "gpt-5",
+            "anthropic/claude-3",
+            "azure-openai",
+            "provider_openai",
+            "model.foo",
+            "vertex-ai",
+            "bedrock-claude",
+            "ollama-llama3",
+        ):
             provider = obligation().as_dict()
             provider["required_capabilities"] = [capability]
             document["case"]["obligations"] = [provider]

@@ -21,6 +21,28 @@ from .contract import (
 
 _ID_RE = re.compile(r"^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$")
 _SHA256_RE = re.compile(r"^[0-9a-f]{64}$")
+_PROVIDER_MODEL_CAPABILITY_MARKERS = (
+    "provider",
+    "model",
+    "openai",
+    "anthropic",
+    "azure",
+    "vertex",
+    "bedrock",
+    "ollama",
+    "huggingface",
+    "hugging-face",
+    "gpt",
+    "claude",
+    "gemini",
+    "llama",
+    "qwen",
+    "mistral",
+    "deepseek",
+    "sonnet",
+    "haiku",
+    "opus",
+)
 _PROVIDER_MODEL_CAPABILITY_RE = re.compile(
     r"^(?:provider:|model:|"
     r"(?:openai|anthropic|google|meta|microsoft|xai|cohere|mistral|deepseek|qwen)(?:[/_:.\-]|$)|"
@@ -263,7 +285,7 @@ def _validate_question(question: Any, path: str, issues: list[ValidationIssue]) 
         if expected is not None and record.get("validation_summary_digest") != expected:
             _issue(issues, "QUESTION_MUTATION", f"{path}.validation_summary_digest", "digest does not match the current validation summary")
     version = record.get("version")
-    if not isinstance(version, int) or version < 1:
+    if isinstance(version, bool) or not isinstance(version, int) or version < 1:
         _issue(issues, "QUESTION_MUTATION", f"{path}.version", "version must be a positive integer")
     amendments = _list(record.get("amendments"), f"{path}.amendments", issues)
     if amendments is None:
@@ -303,7 +325,7 @@ def _validate_question(question: Any, path: str, issues: list[ValidationIssue]) 
             _issue(issues, "QUESTION_MUTATION", f"{path}.initial_validation_summary_digest", "unamended summary must have equal initial/current digest")
         if frozen_summary is not None and current_summary is not None and frozen_summary != current_summary:
             _issue(issues, "QUESTION_MUTATION", f"{path}.current_validation_summary", "unamended question cannot replace the frozen validation summary")
-    if isinstance(version, int) and version != len(amendments) + 1:
+    if isinstance(version, int) and not isinstance(version, bool) and version != len(amendments) + 1:
         _issue(issues, "QUESTION_MUTATION", f"{path}.version", "version does not match amendment count")
 
 
@@ -359,7 +381,10 @@ def _validate_obligations(
             for capability in capabilities:
                 if (
                     isinstance(capability, str)
-                    and ("/" in capability or _PROVIDER_MODEL_CAPABILITY_RE.search(capability))
+                    and (
+                        "/" in capability
+                        or any(marker in capability.casefold() for marker in _PROVIDER_MODEL_CAPABILITY_MARKERS)
+                    )
                 ):
                     _issue(issues, "PROVIDER_HARD_DEPENDENCY", f"{item_path}.required_capabilities", "provider/model names are telemetry only")
     for index, record in enumerate(records):
