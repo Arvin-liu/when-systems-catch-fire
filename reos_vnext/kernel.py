@@ -44,8 +44,42 @@ def _dict(value: Any) -> dict[str, Any]:
     if hasattr(value, "as_dict"):
         return copy.deepcopy(value.as_dict())
     if not isinstance(value, Mapping):
-        raise TypeError("REOS record must be a mapping or frozen contract object")
+        raise ContractError(
+            [ValidationIssue("MALFORMED_STATE", "$", "REOS record must be a mapping or frozen contract object")]
+        )
     return copy.deepcopy(dict(value))
+
+
+def _frozen_summary_anchor_digest(
+    preregistration_ref: str,
+    preregistration_digest: str,
+    frozen_validation_summary: Mapping[str, Any],
+) -> str:
+    return sha256_json(
+        {
+            "preregistration_ref": preregistration_ref,
+            "preregistration_digest": preregistration_digest,
+            "frozen_validation_summary": frozen_validation_summary,
+        }
+    )
+
+
+def _reject_duplicate_object_keys(pairs: list[tuple[str, Any]]) -> dict[str, Any]:
+    result: dict[str, Any] = {}
+    for key, value in pairs:
+        if key in result:
+            raise ValueError(f"duplicate JSON object key: {key}")
+        result[key] = value
+    return result
+
+
+def parse_json(text: str) -> Any:
+    try:
+        return json.loads(text, object_pairs_hook=_reject_duplicate_object_keys)
+    except (json.JSONDecodeError, ValueError, TypeError) as exc:
+        raise ContractError(
+            [ValidationIssue("MALFORMED_STATE", "$", f"invalid or non-canonical JSON ({type(exc).__name__})")]
+        ) from exc
 
 
 def new_case(
@@ -63,6 +97,12 @@ def new_case(
     stop_conditions: list[str] | tuple[str, ...],
     owner_boundary: str = "GPT_OWNER_REVIEW_ONLY",
 ) -> dict[str, Any]:
+    if not isinstance(frozen_validation_summary, Mapping):
+        raise ContractError(
+            [ValidationIssue("MALFORMED_STATE", "$.frozen_validation_summary", "must be an object")]
+        )
+    if not isinstance(budget_contract, Mapping):
+        raise ContractError([ValidationIssue("MALFORMED_STATE", "$.budget_contract", "must be an object")])
     summary = copy.deepcopy(dict(frozen_validation_summary))
     summary_digest = sha256_json(summary)
     question = QuestionContract(
@@ -70,6 +110,11 @@ def new_case(
         preregistration_digest=preregistration_digest,
         frozen_validation_summary=summary,
         current_validation_summary=summary,
+        frozen_validation_summary_anchor_digest=_frozen_summary_anchor_digest(
+            preregistration_ref,
+            preregistration_digest,
+            summary,
+        ),
         initial_validation_summary_digest=summary_digest,
         validation_summary_digest=summary_digest,
     )
@@ -94,7 +139,7 @@ def new_case(
 
 
 def load_case(path: str | Path) -> dict[str, Any]:
-    document = json.loads(Path(path).read_text(encoding="utf-8"))
+    document = parse_json(Path(path).read_text(encoding="utf-8"))
     validate_case(document)
     return document
 
@@ -153,6 +198,10 @@ def record_review(
                 ValidationIssue("UNKNOWN_REF", "$.case.reviews", "review decision has no unique request")
             ]
         )
+    if matching[0].get("decision") is not None:
+        raise ContractError(
+            [ValidationIssue("DUPLICATE_ID", "$.case.reviews", "review decision is append-only and cannot be overwritten")]
+        )
     if repair_obligations:
         for repair in repair_obligations:
             result = add_obligation(result, repair)
@@ -175,6 +224,10 @@ def amend_question(
     validate_case(document)
     result = copy.deepcopy(dict(document))
     question = result["case"]["question_contract"]
+    if not isinstance(frozen_validation_summary, Mapping):
+        raise ContractError(
+            [ValidationIssue("MALFORMED_STATE", "$.frozen_validation_summary", "must be an object")]
+        )
     new_summary = copy.deepcopy(dict(frozen_validation_summary))
     current_digest = question["validation_summary_digest"]
     next_digest = sha256_json(new_summary)
@@ -246,6 +299,8 @@ def prepare_handoff(
     independent_review_required: bool = True,
 ) -> dict[str, Any]:
     validate_case(document)
+    if not isinstance(object_refs, (list, tuple)) or any(not isinstance(ref, str) for ref in object_refs):
+        raise ContractError([ValidationIssue("MALFORMED_STATE", "$.object_refs", "must contain only strings")])
     case = document["case"]
     known = {
         case["case_id"],

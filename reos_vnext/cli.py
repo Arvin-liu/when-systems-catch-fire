@@ -3,7 +3,6 @@
 from __future__ import annotations
 
 import argparse
-import json
 import sys
 from pathlib import Path
 from typing import Any
@@ -12,6 +11,7 @@ from .kernel import (
     add_obligation,
     load_case,
     new_case,
+    parse_json,
     prepare_handoff,
     record_artifact,
     record_claim_candidate,
@@ -26,7 +26,7 @@ from .validation import ContractError, canonical_json, validate_case
 
 
 def _json_file(path: str) -> Any:
-    return json.loads(Path(path).read_text(encoding="utf-8"))
+    return parse_json(Path(path).read_text(encoding="utf-8"))
 
 
 def _write_output(path: str, value: Any) -> None:
@@ -169,4 +169,3 @@ def main(argv: list[str] | None = None) -> int:
     except (OSError, ValueError, TypeError, KeyError) as exc:
         print(canonical_json({"valid": False, "error": str(exc)}), file=sys.stderr)
         return 2
-

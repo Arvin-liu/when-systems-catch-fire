@@ -112,6 +112,7 @@ class QuestionContract:
     preregistration_digest: str
     frozen_validation_summary: Mapping[str, Any]
     current_validation_summary: Mapping[str, Any]
+    frozen_validation_summary_anchor_digest: str
     initial_validation_summary_digest: str
     validation_summary_digest: str
     version: int = 1

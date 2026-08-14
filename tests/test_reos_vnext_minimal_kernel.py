@@ -19,6 +19,7 @@ from reos_vnext import (
     add_obligation,
     amend_question,
     compute_case_status,
+    load_case,
     new_case,
     prepare_handoff,
     record_artifact,
@@ -136,6 +137,13 @@ class MinimalKernelTests(unittest.TestCase):
             coordinated["case"]["question_contract"]["current_validation_summary"]
         )
         self.assertCode(coordinated, "QUESTION_MUTATION")
+        coordinated_frozen = copy.deepcopy(make_case())
+        replacement = {**SUMMARY, "scope": "coordinated frozen replacement"}
+        coordinated_frozen["case"]["question_contract"]["frozen_validation_summary"] = replacement
+        coordinated_frozen["case"]["question_contract"]["current_validation_summary"] = replacement
+        coordinated_frozen["case"]["question_contract"]["initial_validation_summary_digest"] = sha256_json(replacement)
+        coordinated_frozen["case"]["question_contract"]["validation_summary_digest"] = sha256_json(replacement)
+        self.assertCode(coordinated_frozen, "QUESTION_MUTATION")
         bool_version = copy.deepcopy(make_case())
         bool_version["case"]["question_contract"]["version"] = True
         self.assertCode(bool_version, "QUESTION_MUTATION")
@@ -364,6 +372,34 @@ class MinimalKernelTests(unittest.TestCase):
             residuals=["independent source-family review remains scoped to this pilot"],
         )
         self.assertEqual(handoff["receiving_authority"], "Foundation L0")
+        with self.assertRaises(ContractError) as context:
+            prepare_handoff(
+                reloaded,
+                bundle_id="handoff:malformed",
+                bundle_type="FOUNDATION_SOURCE_HANDOFF",
+                receiving_authority="Foundation L0",
+                object_refs=[[]],
+                allowed_claims=["bounded scope only"],
+                noncanonical_status="CANDIDATE_NOT_CANONICAL",
+                scope="pilot scope",
+                prohibited_inference=["does not prove truth, causality, external validity, Owner acceptance or epistemic acceptance"],
+                residuals=["malformed ref fixture"],
+            )
+        self.assertIn("MALFORMED_STATE", {issue.code for issue in context.exception.issues})
+        with self.assertRaises(ContractError) as context:
+            record_review(
+                reloaded,
+                ReviewDecision(
+                    review_id="review:repair",
+                    reviewer_ref="role-h",
+                    exact_input_refs=("art:source-a",),
+                    independent=True,
+                    verdict="ABSTAIN",
+                    residuals=("replacement must not overwrite prior decision",),
+                    scope_ceiling="pilot scope only",
+                ),
+            )
+        self.assertIn("DUPLICATE_ID", {issue.code for issue in context.exception.issues})
         missing_boundary = copy.deepcopy(handoff)
         missing_boundary["prohibited_inference"] = []
         with self.assertRaises(ContractError):
@@ -424,6 +460,14 @@ class MinimalKernelTests(unittest.TestCase):
                 check=False,
             )
             self.assertEqual(checked.returncode, 0, checked.stderr)
+            duplicate_case_path = directory_path / "duplicate-case.json"
+            duplicate_case_path.write_text(
+                serialize_case(make_case()).replace('"case_state":"OPEN"', '"case_state":"SUCCESS","case_state":"OPEN"', 1),
+                encoding="utf-8",
+            )
+            with self.assertRaises(ContractError) as context:
+                load_case(duplicate_case_path)
+            self.assertIn("MALFORMED_STATE", {issue.code for issue in context.exception.issues})
             status = subprocess.run(
                 [sys.executable, "-m", "reos_vnext", "status", str(case_path)],
                 cwd=ROOT,

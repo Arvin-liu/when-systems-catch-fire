@@ -38,7 +38,7 @@ case.reviews[]                   # one append-only review stream
 QuestionContract is intentionally compact. It persists:
 - `preregistration_ref` and `preregistration_digest` for the external frozen preregistration;
 - immutable `frozen_validation_summary` and `current_validation_summary`, each with exactly `question`, `scope`, `estimand`, `measurement_boundaries`, `claim_ceiling` and `stop_conditions`;
-- the current and initial summary digests plus an append-only amendment chain. The current summary may differ from the frozen summary only through a versioned amendment.
+- a preregistration-bound `frozen_validation_summary_anchor_digest`, the current and initial summary digests, plus an append-only amendment chain. The current summary may differ from the frozen summary only through a versioned amendment; replacing the frozen summary and its local digests without changing the external preregistration binding is invalid.
 
 The full preregistration, source ledger and claim registry remain outside the REOS case. The summary is a validation boundary, not a second canonical research record.
 
@@ -66,12 +66,12 @@ No state named `SUCCESS` is legal. Case, obligation, evidence and review states 
 4. Artifact references require thin provenance (`kind` and `retrieved_at`), scope and privacy/publication class; REOS stores no source blob or evidence maturity.
 5. Evidence retrieval state cannot set truth, proof, causal identification, external validity, claim ceiling or acceptance.
 6. Claim candidates are explicitly `NONCANONICAL` and cannot be promoted by REOS.
-7. Review decisions require a named question and independence declaration; `ABSTAIN` is legal; reviewer agreement cannot set Owner acceptance.
+7. Review decisions require a named question and independence declaration; `ABSTAIN` is legal; a decision is append-only and cannot overwrite an earlier decision; reviewer agreement cannot set Owner acceptance.
 8. A material review finding must reference a repair obligation or remain an explicit residual.
 9. Handoff projections require receiving authority, provenance/object refs, current noncanonical status where applicable, scope/ceiling, residuals and prohibited inference.
 10. Provider/model identifiers are telemetry only and cannot be required capabilities in R1.
 11. Privacy classes and prohibited inference are validated locally; public publication remains the existing Results Book/publication authority.
-12. Validators are fail-closed for malformed state and do not adjudicate external truth.
+12. Validators and JSON loaders are fail-closed for malformed state, including duplicate object keys, and do not adjudicate external truth.
 13. Budget contracts are closed to the bounded operator-accounted fields; nested canonical or evidence stores are rejected.
 14. Handoff `allowed_claims` cannot contradict its noncanonical/prohibited-inference boundary.
 
