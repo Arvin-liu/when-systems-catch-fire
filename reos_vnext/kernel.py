@@ -202,6 +202,10 @@ def record_review(
     repair_obligations: list[ResearchObligation | Mapping[str, Any]] | None = None,
 ) -> dict[str, Any]:
     validate_case(document)
+    if repair_obligations is not None and not isinstance(repair_obligations, (list, tuple)):
+        raise ContractError(
+            [ValidationIssue("MALFORMED_STATE", "$.repair_obligations", "must be a list or tuple")]
+        )
     result = copy.deepcopy(dict(document))
     decision_record = _dict(decision)
     review_id = decision_record.get("review_id")

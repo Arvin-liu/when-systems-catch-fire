@@ -396,6 +396,10 @@ class MinimalKernelTests(unittest.TestCase):
         reloaded = json.loads(serialize_case(document))
         validate_case(reloaded)
         self.assertEqual(compute_case_status(reloaded), "HANDOFF_READY_WITH_BOUNDED_RESULTS")
+        for malformed_repairs in (1, {}):
+            with self.assertRaises(ContractError) as context:
+                record_review(reloaded, {}, malformed_repairs)
+            self.assertIn("MALFORMED_STATE", {issue.code for issue in context.exception.issues})
         handoff = prepare_handoff(
             reloaded,
             bundle_id="handoff:foundation-l0",
