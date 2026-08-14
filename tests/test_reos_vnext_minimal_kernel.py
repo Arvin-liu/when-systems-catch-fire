@@ -463,6 +463,19 @@ class MinimalKernelTests(unittest.TestCase):
 
             validate_handoff(contradictory_claim)
         self.assertIn("HANDOFF_PROHIBITED_INFERENCE", {issue.code for issue in context.exception.issues})
+        for field, value in (
+            ("receiving_authority", "Owner accepted"),
+            ("bundle_type", "OWNER_ACCEPTED"),
+            ("scope", "owner_acceptance"),
+            ("allowed_claims", ["OWNER_ACCEPTANCE"]),
+        ):
+            encoded_authority = copy.deepcopy(handoff)
+            encoded_authority[field] = value
+            with self.assertRaises(ContractError) as context:
+                from reos_vnext import validate_handoff
+
+                validate_handoff(encoded_authority)
+            self.assertIn("HANDOFF_PROHIBITED_INFERENCE", {issue.code for issue in context.exception.issues})
 
     def test_cli_init_validate_status(self):
         with tempfile.TemporaryDirectory() as directory:

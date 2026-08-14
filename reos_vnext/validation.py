@@ -58,6 +58,7 @@ _HANDOFF_FORBIDDEN_CLAIM_MARKERS = (
     "caus",
     "external validity",
     "owner acceptance",
+    "owner accepted",
     "epistemic",
     "proof",
     "canonical",
@@ -158,6 +159,16 @@ def _strings(value: Any, path: str, issues: list[ValidationIssue]) -> None:
     if values is not None:
         for index, item in enumerate(values):
             _nonempty_string(item, f"{path}[{index}]", issues)
+
+
+def _handoff_forbidden_markers(value: str) -> list[str]:
+    normalized = re.sub(r"[^a-z0-9]+", " ", value.casefold()).strip()
+    compact = normalized.replace(" ", "")
+    return [
+        marker
+        for marker in _HANDOFF_FORBIDDEN_CLAIM_MARKERS
+        if marker in normalized or marker.replace(" ", "") in compact
+    ]
 
 
 def _check_forbidden_keys(value: Any, path: str, issues: list[ValidationIssue]) -> None:
@@ -780,9 +791,19 @@ def _validate_handoff(bundle: Any) -> None:
         _issue(issues, "HANDOFF_STATUS", "$.noncanonical_status", "handoff must remain a noncanonical research-stage status")
     for name in ("object_refs", "allowed_claims", "prohibited_inference", "residuals"):
         _strings(record.get(name), f"$.{name}", issues)
+    for name in ("bundle_type", "receiving_authority", "scope"):
+        value = record.get(name)
+        if isinstance(value, str):
+            matched = _handoff_forbidden_markers(value)
+            if matched:
+                _issue(
+                    issues,
+                    "HANDOFF_PROHIBITED_INFERENCE",
+                    f"$.{name}",
+                    f"handoff metadata encodes a prohibited authority marker: {matched}",
+                )
     for index, claim in enumerate(record.get("allowed_claims", []) if isinstance(record.get("allowed_claims"), list) else []):
-        claim_text = claim.lower() if isinstance(claim, str) else ""
-        matched = [marker for marker in _HANDOFF_FORBIDDEN_CLAIM_MARKERS if marker in claim_text]
+        matched = _handoff_forbidden_markers(claim) if isinstance(claim, str) else []
         if matched:
             _issue(
                 issues,
