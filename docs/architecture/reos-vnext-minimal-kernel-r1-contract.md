@@ -36,9 +36,9 @@ case.reviews[]                   # one append-only review stream
 `HandoffBundle` is a deterministic projection returned by the API/CLI from the validated case; it is not a case-owned acceptance or publication state.
 
 QuestionContract is intentionally compact. It persists:
-- `preregistration_ref` and `preregistration_digest` for the external frozen preregistration;
+- `preregistration_ref` and an external `preregistration_digest` that binds that reference to the compact frozen validation summary;
 - immutable `frozen_validation_summary` and `current_validation_summary`, each with exactly `question`, `scope`, `estimand`, `measurement_boundaries`, `claim_ceiling` and `stop_conditions`;
-- a preregistration-bound `frozen_validation_summary_anchor_digest`, the current and initial summary digests, plus an append-only amendment chain. The current summary may differ from the frozen summary only through a versioned amendment; replacing the frozen summary and its local digests without changing the external preregistration binding is invalid.
+- the current and initial summary digests plus an append-only amendment chain. The current summary may differ from the frozen summary only through a versioned amendment; replacing the frozen summary and its local digests without changing the external preregistration binding is invalid.
 
 The full preregistration, source ledger and claim registry remain outside the REOS case. The summary is a validation boundary, not a second canonical research record.
 

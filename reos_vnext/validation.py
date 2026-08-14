@@ -239,7 +239,6 @@ def _validate_question(question: Any, path: str, issues: list[ValidationIssue]) 
         "preregistration_digest",
         "frozen_validation_summary",
         "current_validation_summary",
-        "frozen_validation_summary_anchor_digest",
         "initial_validation_summary_digest",
         "validation_summary_digest",
         "version",
@@ -250,7 +249,6 @@ def _validate_question(question: Any, path: str, issues: list[ValidationIssue]) 
     _nonempty_string(record.get("preregistration_ref"), f"{path}.preregistration_ref", issues)
     for digest_name in (
         "preregistration_digest",
-        "frozen_validation_summary_anchor_digest",
         "initial_validation_summary_digest",
         "validation_summary_digest",
     ):
@@ -283,21 +281,20 @@ def _validate_question(question: Any, path: str, issues: list[ValidationIssue]) 
             _issue(issues, "QUESTION_MUTATION", f"{path}.validation_summary_digest", "digest does not match the current validation summary")
     if frozen_summary is not None:
         try:
-            expected_anchor = sha256_json(
+            expected_binding = sha256_json(
                 {
                     "preregistration_ref": record.get("preregistration_ref"),
-                    "preregistration_digest": record.get("preregistration_digest"),
                     "frozen_validation_summary": frozen_summary,
                 }
             )
         except ValueError:
-            expected_anchor = None
-        if expected_anchor is not None and record.get("frozen_validation_summary_anchor_digest") != expected_anchor:
+            expected_binding = None
+        if expected_binding is not None and record.get("preregistration_digest") != expected_binding:
             _issue(
                 issues,
                 "QUESTION_MUTATION",
-                f"{path}.frozen_validation_summary_anchor_digest",
-                "anchor does not match the immutable preregistration-bound frozen validation summary",
+                f"{path}.preregistration_digest",
+                "external preregistration digest does not bind the immutable frozen validation summary",
             )
     version = record.get("version")
     if isinstance(version, bool) or not isinstance(version, int) or version < 1:

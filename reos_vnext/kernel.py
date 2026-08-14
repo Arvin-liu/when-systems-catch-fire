@@ -50,15 +50,13 @@ def _dict(value: Any) -> dict[str, Any]:
     return copy.deepcopy(dict(value))
 
 
-def _frozen_summary_anchor_digest(
+def _preregistration_binding_digest(
     preregistration_ref: str,
-    preregistration_digest: str,
     frozen_validation_summary: Mapping[str, Any],
 ) -> str:
     return sha256_json(
         {
             "preregistration_ref": preregistration_ref,
-            "preregistration_digest": preregistration_digest,
             "frozen_validation_summary": frozen_validation_summary,
         }
     )
@@ -105,16 +103,21 @@ def new_case(
         raise ContractError([ValidationIssue("MALFORMED_STATE", "$.budget_contract", "must be an object")])
     summary = copy.deepcopy(dict(frozen_validation_summary))
     summary_digest = sha256_json(summary)
+    if preregistration_digest != _preregistration_binding_digest(preregistration_ref, summary):
+        raise ContractError(
+            [
+                ValidationIssue(
+                    "QUESTION_MUTATION",
+                    "$.question_contract.preregistration_digest",
+                    "must bind the external preregistration reference to the compact frozen validation summary",
+                )
+            ]
+        )
     question = QuestionContract(
         preregistration_ref=preregistration_ref,
         preregistration_digest=preregistration_digest,
         frozen_validation_summary=summary,
         current_validation_summary=summary,
-        frozen_validation_summary_anchor_digest=_frozen_summary_anchor_digest(
-            preregistration_ref,
-            preregistration_digest,
-            summary,
-        ),
         initial_validation_summary_digest=summary_digest,
         validation_summary_digest=summary_digest,
     )
@@ -154,6 +157,7 @@ def save_case(path: str | Path, document: Mapping[str, Any]) -> None:
 
 
 def _append(document: Mapping[str, Any], field: str, value: Any) -> dict[str, Any]:
+    validate_case(document)
     result = copy.deepcopy(dict(document))
     result["case"][field].append(_dict(value))
     validate_case(result)
@@ -248,6 +252,7 @@ def amend_question(
 
 
 def set_case_state(document: Mapping[str, Any], state: str) -> dict[str, Any]:
+    validate_case(document)
     result = copy.deepcopy(dict(document))
     result["case"]["case_state"] = state
     validate_case(result)

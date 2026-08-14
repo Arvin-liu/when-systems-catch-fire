@@ -5,7 +5,7 @@ from __future__ import annotations
 import argparse
 import sys
 from pathlib import Path
-from typing import Any
+from typing import Any, Mapping
 
 from .kernel import (
     add_obligation,
@@ -22,7 +22,7 @@ from .kernel import (
     serialize_case,
     status_snapshot,
 )
-from .validation import ContractError, canonical_json, validate_case
+from .validation import ContractError, ValidationIssue, canonical_json, validate_case
 
 
 def _json_file(path: str) -> Any:
@@ -53,7 +53,11 @@ def build_parser() -> argparse.ArgumentParser:
     init.add_argument("--simpler-baseline", required=True)
     init.add_argument("--unnecessary-module", action="append", default=[])
     init.add_argument("--preregistration-ref", required=True, help="external preregistration reference; full text stays outside the case")
-    init.add_argument("--preregistration-digest", required=True, help="sha256 of the external preregistration")
+    init.add_argument(
+        "--preregistration-digest",
+        required=True,
+        help="external frozen binding digest of the preregistration reference plus compact validation summary",
+    )
     init.add_argument("--frozen-validation-summary", required=True, help="JSON file containing only the compact frozen validation summary")
     init.add_argument("--budget-json", default=None)
     init.add_argument("--stop-condition", action="append", default=[])
@@ -138,6 +142,10 @@ def main(argv: list[str] | None = None) -> int:
         if args.command == "record-review":
             document = load_case(args.case)
             payload = _json_file(args.record)
+            if not isinstance(payload, Mapping):
+                raise ContractError(
+                    [ValidationIssue("MALFORMED_STATE", "$.record", "record-review payload must be an object")]
+                )
             decision = payload.get("decision", payload)
             repairs = payload.get("repair_obligations", [])
             updated = record_review(document, decision, repairs)

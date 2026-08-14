@@ -28,6 +28,7 @@ from reos_vnext import (
     record_review,
     request_review,
     serialize_case,
+    set_case_state,
     sha256_json,
     validate_case,
 )
@@ -35,7 +36,6 @@ from reos_vnext import (
 
 ROOT = Path(__file__).resolve().parents[1]
 PREREG_REF = "pilot/preregistration.md@18dbd49c259cf4685d8a40491a539260c3c3a28c"
-PREREG_DIGEST = "b" * 64
 SUMMARY = {
     "question": "Does the bounded pilot proposition hold under its stated scope?",
     "scope": "public non-high-stakes pilot",
@@ -44,6 +44,7 @@ SUMMARY = {
     "claim_ceiling": "source-scoped descriptive result only",
     "stop_conditions": ["missing primary evidence", "scope exceeded"],
 }
+PREREG_DIGEST = sha256_json({"preregistration_ref": PREREG_REF, "frozen_validation_summary": SUMMARY})
 
 
 def make_case():
@@ -293,6 +294,18 @@ class MinimalKernelTests(unittest.TestCase):
         malformed_mode = copy.deepcopy(make_case())
         malformed_mode["case"]["activation"]["mode"] = []
         self.assertCode(malformed_mode, "MALFORMED_STATE")
+        malformed_document = {"schema_version": "reos.vnext.minimal-kernel.r1", "case": {}}
+        for mutator in (
+            lambda value: add_obligation(value, obligation()),
+            lambda value: record_artifact(value, artifact()),
+            lambda value: record_evidence_request(value, {}),
+            lambda value: record_claim_candidate(value, {}),
+            lambda value: request_review(value, {}),
+            lambda value: set_case_state(value, "OPEN"),
+        ):
+            with self.assertRaises(ContractError) as context:
+                mutator(malformed_document)
+            self.assertTrue(context.exception.issues)
         document = add_obligation(make_case(), obligation())
         document["case"]["obligations"][0]["output_artifact_refs"] = ["art:missing"]
         self.assertCode(document, "UNKNOWN_REF")
@@ -460,6 +473,25 @@ class MinimalKernelTests(unittest.TestCase):
                 check=False,
             )
             self.assertEqual(checked.returncode, 0, checked.stderr)
+            malformed_review_path = directory_path / "malformed-review.json"
+            malformed_review_path.write_text("[]", encoding="utf-8")
+            malformed_review = subprocess.run(
+                [
+                    sys.executable,
+                    "-m",
+                    "reos_vnext",
+                    "record-review",
+                    str(case_path),
+                    "--record",
+                    str(malformed_review_path),
+                ],
+                cwd=ROOT,
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+            self.assertEqual(malformed_review.returncode, 2)
+            self.assertNotIn("Traceback", malformed_review.stderr)
             duplicate_case_path = directory_path / "duplicate-case.json"
             duplicate_case_path.write_text(
                 serialize_case(make_case()).replace('"case_state":"OPEN"', '"case_state":"SUCCESS","case_state":"OPEN"', 1),
