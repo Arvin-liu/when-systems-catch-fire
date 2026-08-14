@@ -4,6 +4,42 @@
 
 [返回索引](README.md) · [上一页](page-021.md) · [下一页](page-023.md)
 
+### NFC-415b7599f094731a · 从D183门控面合并统一函数推导。大统一是门控面合并的第二个成功实例,μ_GUT≈10¹⁶GeV是大统一门槛。大统一预言质子衰变,是门槛碾压(D169)在高能域的表现。
+
+这是 canonical nonfunction-claims registry 中的原子登记。claim class 为 `PREDICTION_OR_FORECAST`，断言类型为 `EMPIRICAL`，最终处置为 `HISTORICAL_ONLY`。
+
+M 轴 `M0`；E 轴 `E1`；复现状态 `NO_REPLICATION_CLAIMED`。
+
+范围：Historical source wording only；量词状态：`BOUNDED_OR_NO_UNIVERSAL_QUANTIFIER_DETECTED`。Claim ceiling：Historical source wording only; it is not a current repository endorsement.
+
+来源锚点：[统一函数总表/0225-D189-大统一门槛函数.md](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0225-D189-%E5%A4%A7%E7%BB%9F%E4%B8%80%E9%97%A8%E6%A7%9B%E5%87%BD%E6%95%B0.md)
+
+> 浏览器只投影 canonical 记录。显式处置或 quarantine 只闭合登记与谱系，不等于数学证明、外部证据、普遍有效或现实真值。
+
+### NFC-415cf4c685b2f40d · 跨域结构性推论的**元工具**（meta-tool），不是物理理论、不是数学证明工具、不是学科替代品。
+
+这是 canonical nonfunction-claims registry 中的原子登记。claim class 为 `THEOREM_OR_MATHEMATICAL_CLAIM`，断言类型为 `MATHEMATICAL`，最终处置为 `ACCEPTED_AS_DEFINITION`。
+
+M 轴 `M1`；E 轴 `E0`；复现状态 `NOT_APPLICABLE`。
+
+范围：Exact source-defined repository scope；量词状态：`BOUNDED_OR_NO_UNIVERSAL_QUANTIFIER_DETECTED`。Claim ceiling：May be stated only as a repository definition, policy, status record or explicitly scoped convention; it is not external truth.
+
+来源锚点：[outputs/audit/agent-project-understanding-20260708.md](../../../outputs/audit/agent-project-understanding-20260708.md)
+
+> 浏览器只投影 canonical 记录。显式处置或 quarantine 只闭合登记与谱系，不等于数学证明、外部证据、普遍有效或现实真值。
+
+### NFC-415db1ea36162c46 · for raw, expected in document.get("evidence_basis", {}).items() if isinstance(document.get("evidence_basis"), dict) else
+
+这是 canonical nonfunction-claims registry 中的原子登记。claim class 为 `EMPIRICAL_OR_LITERATURE_CLAIM`，断言类型为 `EMPIRICAL`，最终处置为 `PENDING_LITERATURE_ADJUDICATION`。
+
+M 轴 `M0`；E 轴 `E0`；复现状态 `NO_REPLICATION_CLAIMED`。
+
+范围：Exact source-defined repository scope；量词状态：`BOUNDED_OR_NO_UNIVERSAL_QUANTIFIER_DETECTED`。Claim ceiling：Source or literature-dependent assertion only; support, novelty and exact scope remain unadjudicated.
+
+来源锚点：[tools/operations/validate_phase_d_closeout.py](../../../tools/operations/validate_phase_d_closeout.py)
+
+> 浏览器只投影 canonical 记录。显式处置或 quarantine 只闭合登记与谱系，不等于数学证明、外部证据、普遍有效或现实真值。
+
 ### NFC-415ff3de7f32281d · 从这条案例看，中文：案例说明："先防守后进攻"数学必然 — 模拟8步资源投入：前3步β>0.3（级联防御，补门槛附近维度），后5步β<0.1（贪心优化，… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
 
 这是 canonical nonfunction-claims registry 中的原子登记。claim class 为 `CROSS_DOMAIN_CORRESPONDENCE`，断言类型为 `INTERPRETIVE`，最终处置为 `HISTORICAL_ONLY`。
@@ -2965,41 +3001,5 @@ M 轴 `M0`；E 轴 `E1`；复现状态 `NO_REPLICATION_CLAIMED`。
 范围：Historical source wording only；量词状态：`BOUNDED_OR_NO_UNIVERSAL_QUANTIFIER_DETECTED`。Claim ceiling：Historical source wording only; it is not a current repository endorsement.
 
 来源锚点：[统一函数总表/0583-D573-财务决策不完备性.md](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0583-D573-%E8%B4%A2%E5%8A%A1%E5%86%B3%E7%AD%96%E4%B8%8D%E5%AE%8C%E5%A4%87%E6%80%A7.md)
-
-> 浏览器只投影 canonical 记录。显式处置或 quarantine 只闭合登记与谱系，不等于数学证明、外部证据、普遍有效或现实真值。
-
-### NFC-44c28cf281e40796 · title: "D69自举激活归零验证"
-
-这是 canonical nonfunction-claims registry 中的原子登记。claim class 为 `UNRESOLVED_CLAIM`，断言类型为 `UNRESOLVED`，最终处置为 `HISTORICAL_ONLY`。
-
-M 轴 `M0`；E 轴 `E1`；复现状态 `NO_REPLICATION_CLAIMED`。
-
-范围：Historical source wording only；量词状态：`BOUNDED_OR_NO_UNIVERSAL_QUANTIFIER_DETECTED`。Claim ceiling：Historical source wording only; it is not a current repository endorsement.
-
-来源锚点：[统一案例总表/0272-C-272-D69自举激活归零验证.md](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0272-C-272-D69%E8%87%AA%E4%B8%BE%E6%BF%80%E6%B4%BB%E5%BD%92%E9%9B%B6%E9%AA%8C%E8%AF%81.md)
-
-> 浏览器只投影 canonical 记录。显式处置或 quarantine 只闭合登记与谱系，不等于数学证明、外部证据、普遍有效或现实真值。
-
-### NFC-44c504cad4483c00 · "075-truth-audit-20260712.md":f"# 075 truth audit\n\nStatus: PARTIAL_UNVERIFIED_COUNTS. Recomputed: {len(objects)} forma
-
-这是 canonical nonfunction-claims registry 中的原子登记。claim class 为 `THEOREM_OR_MATHEMATICAL_CLAIM`，断言类型为 `MATHEMATICAL`，最终处置为 `ACCEPTED_AS_DEFINITION`。
-
-M 轴 `M1`；E 轴 `E0`；复现状态 `NOT_APPLICABLE`。
-
-范围：Exact source-defined repository scope；量词状态：`BOUNDED_OR_NO_UNIVERSAL_QUANTIFIER_DETECTED`。Claim ceiling：May be stated only as a repository definition, policy, status record or explicitly scoped convention; it is not external truth.
-
-来源锚点：[tools/foundation/migrate_legacy.py](../../../tools/foundation/migrate_legacy.py)
-
-> 浏览器只投影 canonical 记录。显式处置或 quarantine 只闭合登记与谱系，不等于数学证明、外部证据、普遍有效或现实真值。
-
-### NFC-44c5118052905f26 · title: "完全统一条件函数"
-
-这是 canonical nonfunction-claims registry 中的原子登记。claim class 为 `UNRESOLVED_CLAIM`，断言类型为 `UNRESOLVED`，最终处置为 `HISTORICAL_ONLY`。
-
-M 轴 `M0`；E 轴 `E1`；复现状态 `NO_REPLICATION_CLAIMED`。
-
-范围：Historical source wording only；量词状态：`BOUNDED_OR_NO_UNIVERSAL_QUANTIFIER_DETECTED`。Claim ceiling：Historical source wording only; it is not a current repository endorsement.
-
-来源锚点：[统一函数总表/0253-D217-完全统一条件函数.md](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0253-D217-%E5%AE%8C%E5%85%A8%E7%BB%9F%E4%B8%80%E6%9D%A1%E4%BB%B6%E5%87%BD%E6%95%B0.md)
 
 > 浏览器只投影 canonical 记录。显式处置或 quarantine 只闭合登记与谱系，不等于数学证明、外部证据、普遍有效或现实真值。

@@ -4,6 +4,42 @@
 
 [返回索引](README.md) · [上一页](page-051.md) · [下一页](page-053.md)
 
+### NFC-afabaa20ab975902 · 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0242-C-242-跨域词典簇.md`
+
+这是 canonical nonfunction-claims registry 中的原子登记。claim class 为 `UNRESOLVED_CLAIM`，断言类型为 `UNRESOLVED`，最终处置为 `HISTORICAL_ONLY`。
+
+M 轴 `M0`；E 轴 `E1`；复现状态 `NO_REPLICATION_CLAIMED`。
+
+范围：Historical source wording only；量词状态：`BOUNDED_OR_NO_UNIVERSAL_QUANTIFIER_DETECTED`。Claim ceiling：Historical source wording only; it is not a current repository endorsement.
+
+来源锚点：[统一案例总表/0242-C-242-跨域词典簇.md](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0242-C-242-%E8%B7%A8%E5%9F%9F%E8%AF%8D%E5%85%B8%E7%B0%87.md)
+
+> 浏览器只投影 canonical 记录。显式处置或 quarantine 只闭合登记与谱系，不等于数学证明、外部证据、普遍有效或现实真值。
+
+### NFC-afafff54af9ea43e · 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一函数总表/0530-D533-Banach算子不变子空间函数.md`
+
+这是 canonical nonfunction-claims registry 中的原子登记。claim class 为 `UNRESOLVED_CLAIM`，断言类型为 `UNRESOLVED`，最终处置为 `HISTORICAL_ONLY`。
+
+M 轴 `M0`；E 轴 `E1`；复现状态 `NO_REPLICATION_CLAIMED`。
+
+范围：Historical source wording only；量词状态：`BOUNDED_OR_NO_UNIVERSAL_QUANTIFIER_DETECTED`。Claim ceiling：Historical source wording only; it is not a current repository endorsement.
+
+来源锚点：[统一函数总表/0530-D533-Banach算子不变子空间函数.md](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0530-D533-Banach%E7%AE%97%E5%AD%90%E4%B8%8D%E5%8F%98%E5%AD%90%E7%A9%BA%E9%97%B4%E5%87%BD%E6%95%B0.md)
+
+> 浏览器只投影 canonical 记录。显式处置或 quarantine 只闭合登记与谱系，不等于数学证明、外部证据、普遍有效或现实真值。
+
+### NFC-afb287ede8df5ffd · 补丁证据就绪状态
+
+这是 canonical nonfunction-claims registry 中的原子登记。claim class 为 `EMPIRICAL_OR_LITERATURE_CLAIM`，断言类型为 `EMPIRICAL`，最终处置为 `HISTORICAL_ONLY`。
+
+M 轴 `M0`；E 轴 `E1`；复现状态 `NO_REPLICATION_CLAIMED`。
+
+范围：Historical source wording only；量词状态：`BOUNDED_OR_NO_UNIVERSAL_QUANTIFIER_DETECTED`。Claim ceiling：Historical source wording only; it is not a current repository endorsement.
+
+来源锚点：[reports/external-research/104-dual-088-reconciliation.md](../../../reports/external-research/104-dual-088-reconciliation.md)
+
+> 浏览器只投影 canonical 记录。显式处置或 quarantine 只闭合登记与谱系，不等于数学证明、外部证据、普遍有效或现实真值。
+
 ### NFC-afb432e88cab3d36 · "dependencies", "proof_artifacts", "related_cases", "evidence_status", "semantic_status", "formal_status",
 
 这是 canonical nonfunction-claims registry 中的原子登记。claim class 为 `THEOREM_OR_MATHEMATICAL_CLAIM`，断言类型为 `MATHEMATICAL`，最终处置为 `PENDING_PROOF`。
@@ -2965,41 +3001,5 @@ M 轴 `M0`；E 轴 `E0`；复现状态 `NOT_APPLICABLE`。
 范围：Exact source-defined repository scope；量词状态：`BOUNDED_OR_NO_UNIVERSAL_QUANTIFIER_DETECTED`。Claim ceiling：May be stated only as a repository definition, policy, status record or explicitly scoped convention; it is not external truth.
 
 来源锚点：[outputs/stories/20260712-disobedience-subjectivity/story-structure-map.md](../../../outputs/stories/20260712-disobedience-subjectivity/story-structure-map.md)
-
-> 浏览器只投影 canonical 记录。显式处置或 quarantine 只闭合登记与谱系，不等于数学证明、外部证据、普遍有效或现实真值。
-
-### NFC-b3700256dc4dd577 · 统一函数总表/0385-D349-过分散相图函数.md
-
-这是 canonical nonfunction-claims registry 中的原子登记。claim class 为 `UNRESOLVED_CLAIM`，断言类型为 `UNRESOLVED`，最终处置为 `QUARANTINED_AMBIGUOUS`。
-
-M 轴 `M0`；E 轴 `E0`；复现状态 `NO_REPLICATION_CLAIMED`。
-
-范围：Exact source-defined repository scope；量词状态：`BOUNDED_OR_NO_UNIVERSAL_QUANTIFIER_DETECTED`。Claim ceiling：Unresolved historical or current claim candidate; it cannot appear as current knowledge.
-
-来源锚点：[data/math-foundation/function-provenance-ledger.csv](../../../data/math-foundation/function-provenance-ledger.csv)
-
-> 浏览器只投影 canonical 记录。显式处置或 quarantine 只闭合登记与谱系，不等于数学证明、外部证据、普遍有效或现实真值。
-
-### NFC-b370e8bdbe9421b6 · 最小因果：强执行 + 现实反馈反驳旧计划 + 允许承认失效 → 克服沉没成本 → 主动刹车/重选（A10/B5/A9）。
-
-这是 canonical nonfunction-claims registry 中的原子登记。claim class 为 `MECHANISM_OR_CAUSAL_CLAIM`，断言类型为 `EMPIRICAL`，最终处置为 `PENDING_EMPIRICAL_TEST`。
-
-M 轴 `M0`；E 轴 `E0`；复现状态 `NO_REPLICATION_CLAIMED`。
-
-范围：Exact source-defined repository scope；量词状态：`BOUNDED_OR_NO_UNIVERSAL_QUANTIFIER_DETECTED`。Claim ceiling：Testable candidate only; no causal, predictive or established-fact wording until evidence and replication obligations are met.
-
-来源锚点：[outputs/collisions/20260711-disobedience-subjectivity/independent-second-angle-audit-056.md](../../../outputs/collisions/20260711-disobedience-subjectivity/independent-second-angle-audit-056.md)
-
-> 浏览器只投影 canonical 记录。显式处置或 quarantine 只闭合登记与谱系，不等于数学证明、外部证据、普遍有效或现实真值。
-
-### NFC-b37182c120da7b22 · 非同构边界
-
-这是 canonical nonfunction-claims registry 中的原子登记。claim class 为 `CROSS_DOMAIN_CORRESPONDENCE`，断言类型为 `INTERPRETIVE`，最终处置为 `RETAINED_AS_STRUCTURAL_METAPHOR`。
-
-M 轴 `M0`；E 轴 `E0`；复现状态 `NOT_APPLICABLE`。
-
-范围：Exact source-defined repository scope；量词状态：`BOUNDED_OR_NO_UNIVERSAL_QUANTIFIER_DETECTED`。Claim ceiling：Analogy or structural metaphor only; no homomorphism, isomorphism or causal identity is established.
-
-来源锚点：[docs/narrative-story-template.md](../../../docs/narrative-story-template.md)
 
 > 浏览器只投影 canonical 记录。显式处置或 quarantine 只闭合登记与谱系，不等于数学证明、外部证据、普遍有效或现实真值。

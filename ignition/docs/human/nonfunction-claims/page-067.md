@@ -4,6 +4,42 @@
 
 [返回索引](README.md) · [上一页](page-066.md) · [下一页](page-068.md)
 
+### NFC-e575e207ba5bf285 · if reconciled_decision not in ["PROVED_ORIGINAL_CLAIM_WITH_ARTIFACT"]:
+
+这是 canonical nonfunction-claims registry 中的原子登记。claim class 为 `THEOREM_OR_MATHEMATICAL_CLAIM`，断言类型为 `MATHEMATICAL`，最终处置为 `ACCEPTED_AS_DEFINITION`。
+
+M 轴 `M1`；E 轴 `E0`；复现状态 `NOT_APPLICABLE`。
+
+范围：Exact source-defined repository scope；量词状态：`BOUNDED_OR_NO_UNIVERSAL_QUANTIFIER_DETECTED`。Claim ceiling：May be stated only as a repository definition, policy, status record or explicitly scoped convention; it is not external truth.
+
+来源锚点：[tools/foundation/process_084_batch.py](../../../tools/foundation/process_084_batch.py)
+
+> 浏览器只投影 canonical 记录。显式处置或 quarantine 只闭合登记与谱系，不等于数学证明、外部证据、普遍有效或现实真值。
+
+### NFC-e579c0b5aa5a708f · 从这条案例看，中文：案例说明：经济学弹性守恒 — Cobb-Douglas生产函数Y=∏Kᵢ^αᵢ，维度置换对称→∑αᵢ=1守恒，均等分配αᵢ=1/n是… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+
+这是 canonical nonfunction-claims registry 中的原子登记。claim class 为 `CROSS_DOMAIN_CORRESPONDENCE`，断言类型为 `INTERPRETIVE`，最终处置为 `HISTORICAL_ONLY`。
+
+M 轴 `M0`；E 轴 `E1`；复现状态 `NOT_APPLICABLE`。
+
+范围：Historical source wording only；量词状态：`BOUNDED_OR_NO_UNIVERSAL_QUANTIFIER_DETECTED`。Claim ceiling：Historical source wording only; it is not a current repository endorsement.
+
+来源锚点：[统一案例总表/0465-C-466-经济学弹性守恒 — Cobb-Douglas生产函数Y=∏Ki^αi,维度置换对称→∑αi=1守恒,均等分配αi=1.md](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0465-C-466-%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%BC%B9%E6%80%A7%E5%AE%88%E6%81%92%20%E2%80%94%20Cobb-Douglas%E7%94%9F%E4%BA%A7%E5%87%BD%E6%95%B0Y%3D%E2%88%8FKi%5E%CE%B1i%2C%E7%BB%B4%E5%BA%A6%E7%BD%AE%E6%8D%A2%E5%AF%B9%E7%A7%B0%E2%86%92%E2%88%91%CE%B1i%3D1%E5%AE%88%E6%81%92%2C%E5%9D%87%E7%AD%89%E5%88%86%E9%85%8D%CE%B1i%3D1.md)
+
+> 浏览器只投影 canonical 记录。显式处置或 quarantine 只闭合登记与谱系，不等于数学证明、外部证据、普遍有效或现实真值。
+
+### NFC-e579e7252be208af · P1-5 初版：由 outputs/getbrain/evidence-regime-library-draft-20260706.md 半自动抽取，后续可继续人工精修字段。
+
+这是 canonical nonfunction-claims registry 中的原子登记。claim class 为 `EMPIRICAL_OR_LITERATURE_CLAIM`，断言类型为 `EMPIRICAL`，最终处置为 `PENDING_LITERATURE_ADJUDICATION`。
+
+M 轴 `M0`；E 轴 `E0`；复现状态 `NO_REPLICATION_CLAIMED`。
+
+范围：Exact source-defined repository scope；量词状态：`BOUNDED_OR_NO_UNIVERSAL_QUANTIFIER_DETECTED`。Claim ceiling：Source or literature-dependent assertion only; support, novelty and exact scope remain unadjudicated.
+
+来源锚点：[data/evidence_regimes.csv](../../../data/evidence_regimes.csv)
+
+> 浏览器只投影 canonical 记录。显式处置或 quarantine 只闭合登记与谱系，不等于数学证明、外部证据、普遍有效或现实真值。
+
 ### NFC-e57a1eba481cef7c · 最弱因子决定生存域
 
 这是 canonical nonfunction-claims registry 中的原子登记。claim class 为 `MECHANISM_OR_CAUSAL_CLAIM`，断言类型为 `EMPIRICAL`，最终处置为 `PENDING_EMPIRICAL_TEST`。
@@ -2965,41 +3001,5 @@ M 轴 `M0`；E 轴 `E0`；复现状态 `NO_REPLICATION_CLAIMED`。
 范围：Exact source-defined repository scope；量词状态：`BOUNDED_OR_NO_UNIVERSAL_QUANTIFIER_DETECTED`。Claim ceiling：May be stated only as a repository definition, policy, status record or explicitly scoped convention; it is not external truth.
 
 来源锚点：[outputs/getbrain/classic-problems-benchmark-draft-20260706.md](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
-
-> 浏览器只投影 canonical 记录。显式处置或 quarantine 只闭合登记与谱系，不等于数学证明、外部证据、普遍有效或现实真值。
-
-### NFC-e90ac4259b06951b · 与 D312 边界：机制不同构（D312 数学正反馈噪声放大 vs NF-X3 评价系统数量指标忽视不确定性导致的低质累积），但跨域材料不足，继续 pending。
-
-这是 canonical nonfunction-claims registry 中的原子登记。claim class 为 `MECHANISM_OR_CAUSAL_CLAIM`，断言类型为 `EMPIRICAL`，最终处置为 `ACCEPTED_AS_DEFINITION`。
-
-M 轴 `M0`；E 轴 `E0`；复现状态 `NO_REPLICATION_CLAIMED`。
-
-范围：Exact source-defined repository scope；量词状态：`BOUNDED_OR_NO_UNIVERSAL_QUANTIFIER_DETECTED`。Claim ceiling：May be stated only as a repository definition, policy, status record or explicitly scoped convention; it is not external truth.
-
-来源锚点：[outputs/audit/cross-domain-candidate-function-small-batch-backfill-audit-20260708.md](../../../outputs/audit/cross-domain-candidate-function-small-batch-backfill-audit-20260708.md)
-
-> 浏览器只投影 canonical 记录。显式处置或 quarantine 只闭合登记与谱系，不等于数学证明、外部证据、普遍有效或现实真值。
-
-### NFC-e90c8f7a4616c746 · [C-0742｜何刚财务观点](../统一案例总表/0737-C-0742-何刚财务观点.md)（原笔记编号：C573-2）
-
-这是 canonical nonfunction-claims registry 中的原子登记。claim class 为 `UNRESOLVED_CLAIM`，断言类型为 `UNRESOLVED`，最终处置为 `HISTORICAL_ONLY`。
-
-M 轴 `M0`；E 轴 `E1`；复现状态 `NO_REPLICATION_CLAIMED`。
-
-范围：Historical source wording only；量词状态：`BOUNDED_OR_NO_UNIVERSAL_QUANTIFIER_DETECTED`。Claim ceiling：Historical source wording only; it is not a current repository endorsement.
-
-来源锚点：[统一函数总表/0583-D573-财务决策不完备性.md](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0583-D573-%E8%B4%A2%E5%8A%A1%E5%86%B3%E7%AD%96%E4%B8%8D%E5%AE%8C%E5%A4%87%E6%80%A7.md)
-
-> 浏览器只投影 canonical 记录。显式处置或 quarantine 只闭合登记与谱系，不等于数学证明、外部证据、普遍有效或现实真值。
-
-### NFC-e91c0099e1079761 · The value charter remains the highest normative boundary. Ψ0 remains a workflow orchestrator / algorithm protocol. Funct
-
-这是 canonical nonfunction-claims registry 中的原子登记。claim class 为 `DESCRIPTIVE_REPOSITORY_CLAIM`，断言类型为 `DESCRIPTIVE`，最终处置为 `HISTORICAL_ONLY`。
-
-M 轴 `M0`；E 轴 `E1`；复现状态 `NOT_APPLICABLE`。
-
-范围：Historical source wording only；量词状态：`BOUNDED_OR_NO_UNIVERSAL_QUANTIFIER_DETECTED`。Claim ceiling：Historical source wording only; it is not a current repository endorsement.
-
-来源锚点：[reports/architecture/121Q12-baseline-audit.md](../../../reports/architecture/121Q12-baseline-audit.md)
 
 > 浏览器只投影 canonical 记录。显式处置或 quarantine 只闭合登记与谱系，不等于数学证明、外部证据、普遍有效或现实真值。

@@ -718,7 +718,14 @@ class ChangePropagationTests(unittest.TestCase):
         gaps = diff_files - fake_covered
         # The gap must be non-empty (the removed path should show up)
         self.assertTrue(len(gaps) > 0, "removing a seed should create a coverage gap")
-        self.assertIn("tests/test_change_propagation.py", gaps)
+        # Root normalization keeps the logical application path in the seed
+        # registry while Git records it under the formal ``ignition/``
+        # namespace. The attack must still expose the removed seed in either
+        # spelling.
+        self.assertTrue(
+            {"tests/test_change_propagation.py", "ignition/tests/test_change_propagation.py"} & gaps,
+            f"removed seed did not surface in diff coverage gaps: {sorted(gaps)}",
+        )
 
 
     # ── F6: generated-output authority adversarial tests ─────────────────────

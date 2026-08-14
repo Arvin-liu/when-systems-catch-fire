@@ -4,6 +4,42 @@
 
 [返回索引](README.md) · [上一页](page-048.md) · [下一页](page-050.md)
 
+### NFC-a4ba70b5783a838a · Redlines verified:** Ψ₀, 085 frozen v1, function table, case table — all unmodified
+
+这是 canonical nonfunction-claims registry 中的原子登记。claim class 为 `IMPOSSIBILITY_OR_UNIVERSAL_CLAIM`，断言类型为 `UNRESOLVED`，最终处置为 `HISTORICAL_ONLY`。
+
+M 轴 `M0`；E 轴 `E1`；复现状态 `NO_REPLICATION_CLAIMED`。
+
+范围：Historical source wording only；量词状态：`UNRESOLVED_OR_OVERBROAD`。Claim ceiling：Historical source wording only; it is not a current repository endorsement.
+
+来源锚点：[reports/external-research/121A-night-recovery-report.md](../../../reports/external-research/121A-night-recovery-report.md)
+
+> 浏览器只投影 canonical 记录。显式处置或 quarantine 只闭合登记与谱系，不等于数学证明、外部证据、普遍有效或现实真值。
+
+### NFC-a4bcf387b424fcc5 · 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0183-C-183-三种个人商业模式×三种公司商业模式.md`
+
+这是 canonical nonfunction-claims registry 中的原子登记。claim class 为 `UNRESOLVED_CLAIM`，断言类型为 `UNRESOLVED`，最终处置为 `HISTORICAL_ONLY`。
+
+M 轴 `M0`；E 轴 `E1`；复现状态 `NO_REPLICATION_CLAIMED`。
+
+范围：Historical source wording only；量词状态：`BOUNDED_OR_NO_UNIVERSAL_QUANTIFIER_DETECTED`。Claim ceiling：Historical source wording only; it is not a current repository endorsement.
+
+来源锚点：[统一案例总表/0183-C-183-三种个人商业模式×三种公司商业模式.md](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0183-C-183-%E4%B8%89%E7%A7%8D%E4%B8%AA%E4%BA%BA%E5%95%86%E4%B8%9A%E6%A8%A1%E5%BC%8F%C3%97%E4%B8%89%E7%A7%8D%E5%85%AC%E5%8F%B8%E5%95%86%E4%B8%9A%E6%A8%A1%E5%BC%8F.md)
+
+> 浏览器只投影 canonical 记录。显式处置或 quarantine 只闭合登记与谱系，不等于数学证明、外部证据、普遍有效或现实真值。
+
+### NFC-a4bd0df439f09340 · E3. 高执行力是否普遍导致世界模型窄化（需发展心理学/认知科学）。
+
+这是 canonical nonfunction-claims registry 中的原子登记。claim class 为 `MECHANISM_OR_CAUSAL_CLAIM`，断言类型为 `EMPIRICAL`，最终处置为 `PENDING_EMPIRICAL_TEST`。
+
+M 轴 `M0`；E 轴 `E0`；复现状态 `NO_REPLICATION_CLAIMED`。
+
+范围：Exact source-defined repository scope；量词状态：`UNRESOLVED_OR_OVERBROAD`。Claim ceiling：Testable candidate only; no causal, predictive or established-fact wording until evidence and replication obligations are met.
+
+来源锚点：[outputs/collisions/20260711-disobedience-subjectivity/source-layer-map.md](../../../outputs/collisions/20260711-disobedience-subjectivity/source-layer-map.md)
+
+> 浏览器只投影 canonical 记录。显式处置或 quarantine 只闭合登记与谱系，不等于数学证明、外部证据、普遍有效或现实真值。
+
 ### NFC-a4bd33e6139f469a · def causal_fabric_diff(before: dict, after: dict) -> dict:
 
 这是 canonical nonfunction-claims registry 中的原子登记。claim class 为 `MECHANISM_OR_CAUSAL_CLAIM`，断言类型为 `EMPIRICAL`，最终处置为 `PENDING_EMPIRICAL_TEST`。
@@ -2965,41 +3001,5 @@ M 轴 `M0`；E 轴 `E0`；复现状态 `NO_REPLICATION_CLAIMED`。
 范围：Exact source-defined repository scope；量词状态：`BOUNDED_OR_NO_UNIVERSAL_QUANTIFIER_DETECTED`。Claim ceiling：May be stated only as a repository definition, policy, status record or explicitly scoped convention; it is not external truth.
 
 来源锚点：[outputs/getbrain/evidence-regime-library-draft-20260706.md](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
-
-> 浏览器只投影 canonical 记录。显式处置或 quarantine 只闭合登记与谱系，不等于数学证明、外部证据、普遍有效或现实真值。
-
-### NFC-a881f86809c0dbd8 · Verified PR #44 truth from GitHub, created isolated branch from exact HEAD, and initialized 121Q8 control plane.
-
-这是 canonical nonfunction-claims registry 中的原子登记。claim class 为 `UNRESOLVED_CLAIM`，断言类型为 `UNRESOLVED`，最终处置为 `QUARANTINED_AMBIGUOUS`。
-
-M 轴 `M0`；E 轴 `E0`；复现状态 `NO_REPLICATION_CLAIMED`。
-
-范围：Exact source-defined repository scope；量词状态：`BOUNDED_OR_NO_UNIVERSAL_QUANTIFIER_DETECTED`。Claim ceiling：Unresolved historical or current claim candidate; it cannot appear as current knowledge.
-
-来源锚点：[data/foundation/121q8-step-ledger.jsonl](../../../data/foundation/121q8-step-ledger.jsonl)
-
-> 浏览器只投影 canonical 记录。显式处置或 quarantine 只闭合登记与谱系，不等于数学证明、外部证据、普遍有效或现实真值。
-
-### NFC-a8852219d585dcca · but be explicit so a leading empty segment is never tolerated)
-
-这是 canonical nonfunction-claims registry 中的原子登记。claim class 为 `IMPOSSIBILITY_OR_UNIVERSAL_CLAIM`，断言类型为 `UNRESOLVED`，最终处置为 `ACCEPTED_AS_DEFINITION`。
-
-M 轴 `M0`；E 轴 `E0`；复现状态 `NO_REPLICATION_CLAIMED`。
-
-范围：Exact source-defined repository scope；量词状态：`BOUNDED_OR_NO_UNIVERSAL_QUANTIFIER_DETECTED`。Claim ceiling：May be stated only as a repository definition, policy, status record or explicitly scoped convention; it is not external truth.
-
-来源锚点：[tools/operations/compute_change_propagation.py](../../../tools/operations/compute_change_propagation.py)
-
-> 浏览器只投影 canonical 记录。显式处置或 quarantine 只闭合登记与谱系，不等于数学证明、外部证据、普遍有效或现实真值。
-
-### NFC-a8882e2904f0ee42 · f"**证据：** [正式 PR]({source['pull_request_url']}) / [1111 回执 PR #{evidence['relay_pull_request']}]({evidence['relay_pull_r
-
-这是 canonical nonfunction-claims registry 中的原子登记。claim class 为 `EMPIRICAL_OR_LITERATURE_CLAIM`，断言类型为 `EMPIRICAL`，最终处置为 `PENDING_LITERATURE_ADJUDICATION`。
-
-M 轴 `M0`；E 轴 `E0`；复现状态 `NO_REPLICATION_CLAIMED`。
-
-范围：Exact source-defined repository scope；量词状态：`BOUNDED_OR_NO_UNIVERSAL_QUANTIFIER_DETECTED`。Claim ceiling：Source or literature-dependent assertion only; support, novelty and exact scope remain unadjudicated.
-
-来源锚点：[tools/operations/stage_snapshot_contract.py](../../../tools/operations/stage_snapshot_contract.py)
 
 > 浏览器只投影 canonical 记录。显式处置或 quarantine 只闭合登记与谱系，不等于数学证明、外部证据、普遍有效或现实真值。

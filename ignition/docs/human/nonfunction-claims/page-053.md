@@ -4,6 +4,42 @@
 
 [返回索引](README.md) · [上一页](page-052.md) · [下一页](page-054.md)
 
+### NFC-b3700256dc4dd577 · 统一函数总表/0385-D349-过分散相图函数.md
+
+这是 canonical nonfunction-claims registry 中的原子登记。claim class 为 `UNRESOLVED_CLAIM`，断言类型为 `UNRESOLVED`，最终处置为 `QUARANTINED_AMBIGUOUS`。
+
+M 轴 `M0`；E 轴 `E0`；复现状态 `NO_REPLICATION_CLAIMED`。
+
+范围：Exact source-defined repository scope；量词状态：`BOUNDED_OR_NO_UNIVERSAL_QUANTIFIER_DETECTED`。Claim ceiling：Unresolved historical or current claim candidate; it cannot appear as current knowledge.
+
+来源锚点：[data/math-foundation/function-provenance-ledger.csv](../../../data/math-foundation/function-provenance-ledger.csv)
+
+> 浏览器只投影 canonical 记录。显式处置或 quarantine 只闭合登记与谱系，不等于数学证明、外部证据、普遍有效或现实真值。
+
+### NFC-b370e8bdbe9421b6 · 最小因果：强执行 + 现实反馈反驳旧计划 + 允许承认失效 → 克服沉没成本 → 主动刹车/重选（A10/B5/A9）。
+
+这是 canonical nonfunction-claims registry 中的原子登记。claim class 为 `MECHANISM_OR_CAUSAL_CLAIM`，断言类型为 `EMPIRICAL`，最终处置为 `PENDING_EMPIRICAL_TEST`。
+
+M 轴 `M0`；E 轴 `E0`；复现状态 `NO_REPLICATION_CLAIMED`。
+
+范围：Exact source-defined repository scope；量词状态：`BOUNDED_OR_NO_UNIVERSAL_QUANTIFIER_DETECTED`。Claim ceiling：Testable candidate only; no causal, predictive or established-fact wording until evidence and replication obligations are met.
+
+来源锚点：[outputs/collisions/20260711-disobedience-subjectivity/independent-second-angle-audit-056.md](../../../outputs/collisions/20260711-disobedience-subjectivity/independent-second-angle-audit-056.md)
+
+> 浏览器只投影 canonical 记录。显式处置或 quarantine 只闭合登记与谱系，不等于数学证明、外部证据、普遍有效或现实真值。
+
+### NFC-b37182c120da7b22 · 非同构边界
+
+这是 canonical nonfunction-claims registry 中的原子登记。claim class 为 `CROSS_DOMAIN_CORRESPONDENCE`，断言类型为 `INTERPRETIVE`，最终处置为 `RETAINED_AS_STRUCTURAL_METAPHOR`。
+
+M 轴 `M0`；E 轴 `E0`；复现状态 `NOT_APPLICABLE`。
+
+范围：Exact source-defined repository scope；量词状态：`BOUNDED_OR_NO_UNIVERSAL_QUANTIFIER_DETECTED`。Claim ceiling：Analogy or structural metaphor only; no homomorphism, isomorphism or causal identity is established.
+
+来源锚点：[docs/narrative-story-template.md](../../../docs/narrative-story-template.md)
+
+> 浏览器只投影 canonical 记录。显式处置或 quarantine 只闭合登记与谱系，不等于数学证明、外部证据、普遍有效或现实真值。
+
 ### NFC-b3781c6696426f10 · M(B_n)：三领域稳定复现，机制清晰可稳定成函数。
 
 这是 canonical nonfunction-claims registry 中的原子登记。claim class 为 `MECHANISM_OR_CAUSAL_CLAIM`，断言类型为 `EMPIRICAL`，最终处置为 `PENDING_EMPIRICAL_TEST`。
@@ -2965,41 +3001,5 @@ M 轴 `M1`；E 轴 `E1`；复现状态 `NOT_APPLICABLE`。
 范围：Historical source wording only；量词状态：`BOUNDED_OR_NO_UNIVERSAL_QUANTIFIER_DETECTED`。Claim ceiling：Historical source wording only; it is not a current repository endorsement.
 
 来源锚点：[统一函数总表/0430-D394-慢性消耗-波动累积同构检验.md](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0430-D394-%E6%85%A2%E6%80%A7%E6%B6%88%E8%80%97-%E6%B3%A2%E5%8A%A8%E7%B4%AF%E7%A7%AF%E5%90%8C%E6%9E%84%E6%A3%80%E9%AA%8C.md)
-
-> 浏览器只投影 canonical 记录。显式处置或 quarantine 只闭合登记与谱系，不等于数学证明、外部证据、普遍有效或现实真值。
-
-### NFC-b716c7f3c858c406 · Refinement reflection strengthens a total function's output type with an equality to its definition, so dependent applic
-
-这是 canonical nonfunction-claims registry 中的原子登记。claim class 为 `THEOREM_OR_MATHEMATICAL_CLAIM`，断言类型为 `MATHEMATICAL`，最终处置为 `PENDING_PROOF`。
-
-M 轴 `M1`；E 轴 `E0`；复现状态 `NOT_APPLICABLE`。
-
-范围：Exact source-defined repository scope；量词状态：`UNRESOLVED_OR_OVERBROAD`。Claim ceiling：Candidate mathematical statement only; no theorem or proved-result wording until a scoped proof passes review.
-
-来源锚点：[data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl) · [data/external-research/121-fulltext-resolver/121cx/evidence-cards-extreme/S120-050.json](../../../data/external-research/121-fulltext-resolver/121cx/evidence-cards-extreme/S120-050.json)
-
-> 浏览器只投影 canonical 记录。显式处置或 quarantine 只闭合登记与谱系，不等于数学证明、外部证据、普遍有效或现实真值。
-
-### NFC-b718c062780181d7 · 统一函数总表/0535-D538-潜意识-觉知-意识函数.md
-
-这是 canonical nonfunction-claims registry 中的原子登记。claim class 为 `ONTOLOGICAL_OR_METAPHYSICAL_CLAIM`，断言类型为 `METAPHYSICAL`，最终处置为 `RETAINED_AS_RESEARCH_HYPOTHESIS`。
-
-M 轴 `M0`；E 轴 `E0`；复现状态 `NO_REPLICATION_CLAIMED`。
-
-范围：Exact source-defined repository scope；量词状态：`BOUNDED_OR_NO_UNIVERSAL_QUANTIFIER_DETECTED`。Claim ceiling：Open research hypothesis only; external truth and novelty remain unestablished.
-
-来源锚点：[data/math-foundation/function-provenance-ledger.csv](../../../data/math-foundation/function-provenance-ledger.csv)
-
-> 浏览器只投影 canonical 记录。显式处置或 quarantine 只闭合登记与谱系，不等于数学证明、外部证据、普遍有效或现实真值。
-
-### NFC-b7198efecea222db · The output is a materialized single-model parameter artifact.
-
-这是 canonical nonfunction-claims registry 中的原子登记。claim class 为 `INTERPRETATION_OR_FRAMEWORK_CLAIM`，断言类型为 `INTERPRETIVE`，最终处置为 `RETAINED_AS_HEURISTIC`。
-
-M 轴 `M0`；E 轴 `E0`；复现状态 `NOT_APPLICABLE`。
-
-范围：Exact source-defined repository scope；量词状态：`BOUNDED_OR_NO_UNIVERSAL_QUANTIFIER_DETECTED`。Claim ceiling：Heuristic or framework-internal reading only; no theorem, causal or external-truth wording.
-
-来源锚点：[data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl) · [data/external-research/121-fulltext-resolver/121cx/evidence-cards-extreme/S120-040.json](../../../data/external-research/121-fulltext-resolver/121cx/evidence-cards-extreme/S120-040.json)
 
 > 浏览器只投影 canonical 记录。显式处置或 quarantine 只闭合登记与谱系，不等于数学证明、外部证据、普遍有效或现实真值。

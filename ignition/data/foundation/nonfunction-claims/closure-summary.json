@@ -3,17 +3,17 @@
   "assertion_type_distribution": {
     "DESCRIPTIVE": 370,
     "EMPIRICAL": 4940,
-    "INTERPRETIVE": 2734,
+    "INTERPRETIVE": 2737,
     "MATHEMATICAL": 2811,
     "METAPHYSICAL": 873,
     "NORMATIVE": 188,
     "UNRESOLVED": 6432
   },
   "blocked_conclusion_rebounds": 5,
-  "candidate_fragments": 31393,
-  "canonical_claims": 18348,
+  "candidate_fragments": 31396,
+  "canonical_claims": 18351,
   "claim_class_distribution": {
-    "CROSS_DOMAIN_CORRESPONDENCE": 2263,
+    "CROSS_DOMAIN_CORRESPONDENCE": 2266,
     "DESCRIPTIVE_REPOSITORY_CLAIM": 370,
     "EMPIRICAL_OR_LITERATURE_CLAIM": 2461,
     "IMPOSSIBILITY_OR_UNIVERSAL_CLAIM": 753,
@@ -30,7 +30,7 @@
   "conclusion_rebound_candidates": 78,
   "dependency_edges": 5770,
   "disposition_distribution": {
-    "ACCEPTED_AS_DEFINITION": 3714,
+    "ACCEPTED_AS_DEFINITION": 3716,
     "ACCEPTED_AS_PROVED_MATHEMATICAL_RESULT": 1,
     "HISTORICAL_ONLY": 6634,
     "PENDING_EMPIRICAL_TEST": 1031,
@@ -40,7 +40,7 @@
     "REJECTED_FALSE_OR_INVALID": 1,
     "RETAINED_AS_HEURISTIC": 639,
     "RETAINED_AS_RESEARCH_HYPOTHESIS": 465,
-    "RETAINED_AS_STRUCTURAL_METAPHOR": 808,
+    "RETAINED_AS_STRUCTURAL_METAPHOR": 809,
     "RETAINED_AS_TOY_MODEL": 3,
     "REWRITE_AND_RETEST": 1,
     "WITHDRAWN_UNSUPPORTED": 5
@@ -49,11 +49,11 @@
   "explicit_quarantine_or_pending": 6084,
   "explicitly_unresolved_dependency_edges": 52,
   "external_evidence_distribution": {
-    "E0": 11708,
+    "E0": 11711,
     "E1": 6640
   },
   "mathematical_maturity_distribution": {
-    "M0": 15289,
+    "M0": 15292,
     "M1": 3054,
     "M3": 1,
     "M4": 3,
@@ -64,8 +64,8 @@
   "registry_closed": true,
   "source_base_commit": "ebe723fbf544f3fa1a87706e82493319d9f0af7e",
   "source_coverage_distribution": {
-    "EXCLUDED_GENERATED_OR_FUNCTION_ASSET_REGISTRY": 299,
-    "EXCLUDED_NON_AUTHORITATIVE_RECORD": 549,
+    "EXCLUDED_GENERATED_OR_FUNCTION_ASSET_REGISTRY": 303,
+    "EXCLUDED_NON_AUTHORITATIVE_RECORD": 545,
     "EXCLUDED_NON_TEXT_SUFFIX": 5,
     "EXCLUDED_NON_UTF8_OR_UNREADABLE": 4,
     "EXPLICIT_CANONICAL_IMPORT": 1,

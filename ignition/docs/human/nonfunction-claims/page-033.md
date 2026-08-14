@@ -4,6 +4,42 @@
 
 [返回索引](README.md) · [上一页](page-032.md) · [下一页](page-034.md)
 
+### NFC-691b276d7ea1ec7c · 从原文看，涨落-耗散定理-门槛函数，涨落-耗散定理⟨x²⟩∝χ描述门控面Λ的涨落与响应。 更像是一个用于把局部现象拉到跨域统一结构上的函数。
+
+这是 canonical nonfunction-claims registry 中的原子登记。claim class 为 `THEOREM_OR_MATHEMATICAL_CLAIM`，断言类型为 `MATHEMATICAL`，最终处置为 `HISTORICAL_ONLY`。
+
+M 轴 `M1`；E 轴 `E1`；复现状态 `NOT_APPLICABLE`。
+
+范围：Historical source wording only；量词状态：`BOUNDED_OR_NO_UNIVERSAL_QUANTIFIER_DETECTED`。Claim ceiling：Historical source wording only; it is not a current repository endorsement.
+
+来源锚点：[统一函数总表/0241-D205-涨落-耗散定理-门槛函数.md](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0241-D205-%E6%B6%A8%E8%90%BD-%E8%80%97%E6%95%A3%E5%AE%9A%E7%90%86-%E9%97%A8%E6%A7%9B%E5%87%BD%E6%95%B0.md)
+
+> 浏览器只投影 canonical 记录。显式处置或 quarantine 只闭合登记与谱系，不等于数学证明、外部证据、普遍有效或现实真值。
+
+### NFC-691c14896bea69be · 原文来源 / Source**：`/Users/zhiyuan/我的笔记/统一案例总表/0354-C-355-组织层级=信息保真度结构 — CEO→VP→执行层每层内部同层沟通非对称退化最小,扁平化ηfidelity断崖下降.md`
+
+这是 canonical nonfunction-claims registry 中的原子登记。claim class 为 `UNRESOLVED_CLAIM`，断言类型为 `UNRESOLVED`，最终处置为 `HISTORICAL_ONLY`。
+
+M 轴 `M0`；E 轴 `E1`；复现状态 `NO_REPLICATION_CLAIMED`。
+
+范围：Historical source wording only；量词状态：`BOUNDED_OR_NO_UNIVERSAL_QUANTIFIER_DETECTED`。Claim ceiling：Historical source wording only; it is not a current repository endorsement.
+
+来源锚点：[统一案例总表/0354-C-355-组织层级=信息保真度结构 — CEO→VP→执行层每层内部同层沟通非对称退化最小,扁平化ηfidelity断崖下降.md](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0354-C-355-%E7%BB%84%E7%BB%87%E5%B1%82%E7%BA%A7%3D%E4%BF%A1%E6%81%AF%E4%BF%9D%E7%9C%9F%E5%BA%A6%E7%BB%93%E6%9E%84%20%E2%80%94%20CEO%E2%86%92VP%E2%86%92%E6%89%A7%E8%A1%8C%E5%B1%82%E6%AF%8F%E5%B1%82%E5%86%85%E9%83%A8%E5%90%8C%E5%B1%82%E6%B2%9F%E9%80%9A%E9%9D%9E%E5%AF%B9%E7%A7%B0%E9%80%80%E5%8C%96%E6%9C%80%E5%B0%8F%2C%E6%89%81%E5%B9%B3%E5%8C%96%CE%B7fidelity%E6%96%AD%E5%B4%96%E4%B8%8B%E9%99%8D.md)
+
+> 浏览器只投影 canonical 记录。显式处置或 quarantine 只闭合登记与谱系，不等于数学证明、外部证据、普遍有效或现实真值。
+
+### NFC-69236f47f87a1707 · [D403｜δ_c-相变点统一函数](docs/zh/functions/items/D403.md)
+
+这是 canonical nonfunction-claims registry 中的原子登记。claim class 为 `UNRESOLVED_CLAIM`，断言类型为 `UNRESOLVED`，最终处置为 `HISTORICAL_ONLY`。
+
+M 轴 `M0`；E 轴 `E1`；复现状态 `NO_REPLICATION_CLAIMED`。
+
+范围：Historical source wording only；量词状态：`BOUNDED_OR_NO_UNIVERSAL_QUANTIFIER_DETECTED`。Claim ceiling：Historical source wording only; it is not a current repository endorsement.
+
+来源锚点：[统一函数总表/0439-D403-δ_c-相变点统一函数.md](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0439-D403-%CE%B4_c-%E7%9B%B8%E5%8F%98%E7%82%B9%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0.md)
+
+> 浏览器只投影 canonical 记录。显式处置或 quarantine 只闭合登记与谱系，不等于数学证明、外部证据、普遍有效或现实真值。
+
 ### NFC-692e97bffb60a1a4 · def test_d4_07_markdown_digest_and_facts_are_verified(self):
 
 这是 canonical nonfunction-claims registry 中的原子登记。claim class 为 `UNRESOLVED_CLAIM`，断言类型为 `UNRESOLVED`，最终处置为 `QUARANTINED_AMBIGUOUS`。
@@ -2965,41 +3001,5 @@ M 轴 `M0`；E 轴 `E0`；复现状态 `NO_REPLICATION_CLAIMED`。
 范围：Exact source-defined repository scope；量词状态：`BOUNDED_OR_NO_UNIVERSAL_QUANTIFIER_DETECTED`。Claim ceiling：Unresolved historical or current claim candidate; it cannot appear as current knowledge.
 
 来源锚点：[outputs/getbrain/classic-problems-benchmark-draft-20260706.md](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md) · [outputs/getbrain/classic-problems-benchmark-supplement-20260707.md](../../../outputs/getbrain/classic-problems-benchmark-supplement-20260707.md)
-
-> 浏览器只投影 canonical 记录。显式处置或 quarantine 只闭合登记与谱系，不等于数学证明、外部证据、普遍有效或现实真值。
-
-### NFC-6ccae284d9ff6c50 · | [C-414](<./0413-C-414-器官排斥的门槛翻转——异质组织降低Λ_immune导致自身免疫.md>) | [器官排斥的门槛翻转——异质组织降低Λ_immune导致自身免疫](<./0413-C-414-器官排斥的门槛翻转
-
-这是 canonical nonfunction-claims registry 中的原子登记。claim class 为 `MECHANISM_OR_CAUSAL_CLAIM`，断言类型为 `EMPIRICAL`，最终处置为 `HISTORICAL_ONLY`。
-
-M 轴 `M0`；E 轴 `E1`；复现状态 `NO_REPLICATION_CLAIMED`。
-
-范围：Historical source wording only；量词状态：`BOUNDED_OR_NO_UNIVERSAL_QUANTIFIER_DETECTED`。Claim ceiling：Historical source wording only; it is not a current repository endorsement.
-
-来源锚点：[统一案例总表/INDEX.md](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/INDEX.md)
-
-> 浏览器只投影 canonical 记录。显式处置或 quarantine 只闭合登记与谱系，不等于数学证明、外部证据、普遍有效或现实真值。
-
-### NFC-6cce37ecda487b05 · UnmappedCausalResidue
-
-这是 canonical nonfunction-claims registry 中的原子登记。claim class 为 `MECHANISM_OR_CAUSAL_CLAIM`，断言类型为 `EMPIRICAL`，最终处置为 `PENDING_EMPIRICAL_TEST`。
-
-M 轴 `M0`；E 轴 `E0`；复现状态 `NO_REPLICATION_CLAIMED`。
-
-范围：Exact source-defined repository scope；量词状态：`BOUNDED_OR_NO_UNIVERSAL_QUANTIFIER_DETECTED`。Claim ceiling：Testable candidate only; no causal, predictive or established-fact wording until evidence and replication obligations are met.
-
-来源锚点：[docs/architecture/multiscale-causal-fabric.md](../../../docs/architecture/multiscale-causal-fabric.md)
-
-> 浏览器只投影 canonical 记录。显式处置或 quarantine 只闭合登记与谱系，不等于数学证明、外部证据、普遍有效或现实真值。
-
-### NFC-6cd5f9fc00871df8 · Evidence entrance and claim ceiling:
-
-这是 canonical nonfunction-claims registry 中的原子登记。claim class 为 `EMPIRICAL_OR_LITERATURE_CLAIM`，断言类型为 `EMPIRICAL`，最终处置为 `PENDING_LITERATURE_ADJUDICATION`。
-
-M 轴 `M0`；E 轴 `E0`；复现状态 `NO_REPLICATION_CLAIMED`。
-
-范围：Exact source-defined repository scope；量词状态：`BOUNDED_OR_NO_UNIVERSAL_QUANTIFIER_DETECTED`。Claim ceiling：Source or literature-dependent assertion only; support, novelty and exact scope remain unadjudicated.
-
-来源锚点：[templates/operations/task-command-template.md](../../../templates/operations/task-command-template.md)
 
 > 浏览器只投影 canonical 记录。显式处置或 quarantine 只闭合登记与谱系，不等于数学证明、外部证据、普遍有效或现实真值。

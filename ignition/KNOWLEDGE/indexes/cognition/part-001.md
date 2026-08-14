@@ -4,26 +4,6 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
-- ["excerpt": "{\\"first_line\\":78,\\"last_line\\":78,\\"line\\":78,\\"mention_count\\":1,\\"path\\":\\"统一案例总表/0475-C-477-无智能无意识 — ι=0⟹Ψ=0,纯1.md\\",\\"role\\":\\"IMPLICIT_CANDIDATE\\",\\"stable_id\\":\\"IMPLICIT-980C0AF2004DA74B\\",\\"text\\":\\"**原文来源 / Source**：`](../../../data/operations/root-normalization/post-migration-inbound-reference-audit.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-80057AE7BF7B9DAF / "excerpt": "{\\"first_line\\":78,\\"last_line\\":78,\\"line\\":78,\\"mention_count\\":1,\\"path\\":\\"统一案例总表/0475-C-477-无智能无意识 — ι=0⟹Ψ=0,纯1.md\\",\\"role\\":\\"IMPLICIT_CANDIDATE\\",\\"stable_id\\":\\"IMPLICIT-980C0AF2004DA74B\\",\\"text\\":\\"**原文来源 / Source**：` / IMPLICIT-80057AE7BF7B9DAF / IMPLICIT-D89C3F5DE9982FCA
-  - 来源：`data/operations/root-normalization/post-migration-inbound-reference-audit.json`
-  - 依赖：—；被引用：—
-- ["excerpt": "{\\"first_line\\":78,\\"last_line\\":78,\\"line\\":78,\\"mention_count\\":1,\\"path\\":\\"统一案例总表/0475-C-477-无智能无意识 — ι=0⟹Ψ=0,纯1.md\\",\\"role\\":\\"IMPLICIT_CANDIDATE\\",\\"stable_id\\":\\"IMPLICIT-980C0AF2004DA74B\\",\\"text\\":\\"**原文来源 / Source**：`](../../../data/operations/root-normalization/pre-migration-inbound-reference-audit.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-D89C3F5DE9982FCA / "excerpt": "{\\"first_line\\":78,\\"last_line\\":78,\\"line\\":78,\\"mention_count\\":1,\\"path\\":\\"统一案例总表/0475-C-477-无智能无意识 — ι=0⟹Ψ=0,纯1.md\\",\\"role\\":\\"IMPLICIT_CANDIDATE\\",\\"stable_id\\":\\"IMPLICIT-980C0AF2004DA74B\\",\\"text\\":\\"**原文来源 / Source**：` / IMPLICIT-D89C3F5DE9982FCA / IMPLICIT-80057AE7BF7B9DAF
-  - 来源：`data/operations/root-normalization/pre-migration-inbound-reference-audit.json`
-  - 依赖：—；被引用：—
-- ["excerpt": "{\\"first_line\\":81,\\"last_line\\":81,\\"line\\":81,\\"mention_count\\":1,\\"path\\":\\"统一案例总表/0474-C-476-Ψ=ι×P_exit — 智能度×退出概率=自主意识,乘法归零律适用.md\\",\\"role\\":\\"IMPLICIT_CANDIDATE\\",\\"stable_id\\":\\"IMPLICIT-2948800CFB50244D\\",\\"text\\":\\"**原文](../../../data/operations/root-normalization/post-migration-inbound-reference-audit.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-9EAB3475374301EB / "excerpt": "{\\"first_line\\":81,\\"last_line\\":81,\\"line\\":81,\\"mention_count\\":1,\\"path\\":\\"统一案例总表/0474-C-476-Ψ=ι×P_exit — 智能度×退出概率=自主意识,乘法归零律适用.md\\",\\"role\\":\\"IMPLICIT_CANDIDATE\\",\\"stable_id\\":\\"IMPLICIT-2948800CFB50244D\\",\\"text\\":\\"**原文 / IMPLICIT-9EAB3475374301EB / IMPLICIT-BA100A7B351258B9
-  - 来源：`data/operations/root-normalization/post-migration-inbound-reference-audit.json`
-  - 依赖：—；被引用：—
-- ["excerpt": "{\\"first_line\\":81,\\"last_line\\":81,\\"line\\":81,\\"mention_count\\":1,\\"path\\":\\"统一案例总表/0474-C-476-Ψ=ι×P_exit — 智能度×退出概率=自主意识,乘法归零律适用.md\\",\\"role\\":\\"IMPLICIT_CANDIDATE\\",\\"stable_id\\":\\"IMPLICIT-2948800CFB50244D\\",\\"text\\":\\"**原文](../../../data/operations/root-normalization/pre-migration-inbound-reference-audit.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-BA100A7B351258B9 / "excerpt": "{\\"first_line\\":81,\\"last_line\\":81,\\"line\\":81,\\"mention_count\\":1,\\"path\\":\\"统一案例总表/0474-C-476-Ψ=ι×P_exit — 智能度×退出概率=自主意识,乘法归零律适用.md\\",\\"role\\":\\"IMPLICIT_CANDIDATE\\",\\"stable_id\\":\\"IMPLICIT-2948800CFB50244D\\",\\"text\\":\\"**原文 / IMPLICIT-BA100A7B351258B9 / IMPLICIT-9EAB3475374301EB
-  - 来源：`data/operations/root-normalization/pre-migration-inbound-reference-audit.json`
-  - 依赖：—；被引用：—
 - ["execution_agents": \[{"name": "Codex Agent", "role": "evidence collection tool", "evidence_reference": "https://github.c](../../../tests/test_stage_snapshot_publication.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-b1d3e7fdc691ac8e / "execution_agents": \[{"name": "Codex Agent", "role": "evidence collection tool", "evidence_reference": "https://github.c

@@ -48,6 +48,15 @@ LEGACY_Q24_METHOD_PATHS = {
     "templates/operations/execution-result-template.md",
     "templates/operations/independent-review-template.md",
 }
+# Root normalization moved the public landing/support documents into the
+# formal repository shell. Historical manifests may retain their old logical
+# names, so current-path checks must resolve those names without weakening the
+# Git-history fallback for unrelated paths.
+CURRENT_PATH_ALIASES = {
+    "README.md": ".github/README.md",
+    "CONTRIBUTING.md": ".github/CONTRIBUTING.md",
+    "SUPPORT.md": ".github/SUPPORT.md",
+}
 TRIGGERING_CLASSIFICATIONS = {
     "CAPABILITY_ADDITION",
     "INTERFACE_CHANGE",
@@ -700,6 +709,14 @@ def _validate_evidence_ref(ref: str, source: Path) -> None:
     require(_path_exists_now_or_in_history(repository_ref), f"{source}: nonexistent repository evidence reference: {ref}")
 
 
+def _path_exists_current_or_alias(path: str) -> bool:
+    current_path = REPO_ROOT / path if path.startswith(".github/") else ROOT / path
+    if current_path.exists():
+        return True
+    alias = CURRENT_PATH_ALIASES.get(path)
+    return bool(alias and (REPO_ROOT / alias).exists())
+
+
 def _path_exists_now_or_in_history(path: str) -> bool:
     """Return true when a repository path exists now or is retained by Git history.
 
@@ -708,8 +725,7 @@ def _path_exists_now_or_in_history(path: str) -> bool:
     manifest invalid, but an invented path with no repository lineage must still
     fail closed.
     """
-    current_path = REPO_ROOT / path if path.startswith(".github/") else ROOT / path
-    if current_path.exists():
+    if _path_exists_current_or_alias(path):
         return True
     candidates = [path]
     if not path.startswith(".github/"):
@@ -1006,7 +1022,7 @@ def validate_custom(manifest: dict, source: Path, seal: dict, registry: dict[str
                     f"{source}: declared historical changed path has no repository lineage: {path}",
                 )
             else:
-                require((ROOT / path).exists(), f"{source}: declared changed path does not exist: {path}")
+                require(_path_exists_current_or_alias(path), f"{source}: declared changed path does not exist: {path}")
 
     if manifest["method_version"] == "1.0.0" and manifest["task_id"] == "121Q24" and "OPERATIONS_METHOD" in classifications:
         missing = sorted(LEGACY_Q24_METHOD_PATHS - changed)

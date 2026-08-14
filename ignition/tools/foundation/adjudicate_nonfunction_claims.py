@@ -95,6 +95,9 @@ MACHINE_EXCLUDE_PREFIXES = (
     # serialized paths and categories to create registry claims.
     "data/foundation/repository-path-classification/",
     "data/governance/",
+    # Generated root-layout inventories are structural projections, not
+    # authoritative natural-language claim sources.
+    "data/operations/root-normalization/",
     "KNOWLEDGE/",
     "docs/human/",
     "data/publication/fire-seeds/",

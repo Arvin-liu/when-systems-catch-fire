@@ -120,7 +120,7 @@ M 轴 `M1`；E 轴 `E0`。状态记录：dimensional=`REQUIRES_HUMAN_REVIEW`, ex
 
 Claim ceiling：Automatic discovery only; no mathematical or external truth is conferred.
 
-来源出现 242 次；当前可回链来源：[FOUNDATION-64-PROPAGATION.jsonl](../../../FOUNDATION-64-PROPAGATION.jsonl) · [analysis/corpus-relation/cluster_source_briefs/C000.md](../../../analysis/corpus-relation/cluster_source_briefs/C000.md) · [analysis/corpus-relation/corpus_relation_graph.json](../../../analysis/corpus-relation/corpus_relation_graph.json)
+来源出现 232 次；当前可回链来源：[FOUNDATION-64-PROPAGATION.jsonl](../../../FOUNDATION-64-PROPAGATION.jsonl) · [analysis/corpus-relation/cluster_source_briefs/C000.md](../../../analysis/corpus-relation/cluster_source_briefs/C000.md) · [analysis/corpus-relation/corpus_relation_graph.json](../../../analysis/corpus-relation/corpus_relation_graph.json)
 
 > 浏览器只投影 canonical 记录。自动 census、内部测试和登记闭合不构成外部真理、证明或独立复现。
 
@@ -252,7 +252,7 @@ M 轴 `M1`；E 轴 `E0`。状态记录：dimensional=`REQUIRES_HUMAN_REVIEW`, ex
 
 Claim ceiling：Automatic discovery only; no mathematical or external truth is conferred.
 
-来源出现 128 次；当前可回链来源：[analysis/corpus-relation/cluster_source_briefs/C000.md](../../../analysis/corpus-relation/cluster_source_briefs/C000.md) · [analysis/corpus-relation/corpus_relation_graph.json](../../../analysis/corpus-relation/corpus_relation_graph.json) · [data/collisions/20260711-disobedience-subjectivity.json](../../../data/collisions/20260711-disobedience-subjectivity.json)
+来源出现 122 次；当前可回链来源：[analysis/corpus-relation/cluster_source_briefs/C000.md](../../../analysis/corpus-relation/cluster_source_briefs/C000.md) · [analysis/corpus-relation/corpus_relation_graph.json](../../../analysis/corpus-relation/corpus_relation_graph.json) · [data/collisions/20260711-disobedience-subjectivity.json](../../../data/collisions/20260711-disobedience-subjectivity.json)
 
 > 浏览器只投影 canonical 记录。自动 census、内部测试和登记闭合不构成外部真理、证明或独立复现。
 
@@ -288,7 +288,7 @@ M 轴 `M1`；E 轴 `E0`。状态记录：dimensional=`REQUIRES_HUMAN_REVIEW`, ex
 
 Claim ceiling：Automatic discovery only; no mathematical or external truth is conferred.
 
-来源出现 171 次；当前可回链来源：[FOUNDATION-64-PROPAGATION.jsonl](../../../FOUNDATION-64-PROPAGATION.jsonl) · [data/collisions/20260711-disobedience-subjectivity.json](../../../data/collisions/20260711-disobedience-subjectivity.json) · [data/collisions/20260712-disobedience-audit-056.json](../../../data/collisions/20260712-disobedience-audit-056.json)
+来源出现 165 次；当前可回链来源：[FOUNDATION-64-PROPAGATION.jsonl](../../../FOUNDATION-64-PROPAGATION.jsonl) · [data/collisions/20260711-disobedience-subjectivity.json](../../../data/collisions/20260711-disobedience-subjectivity.json) · [data/collisions/20260712-disobedience-audit-056.json](../../../data/collisions/20260712-disobedience-audit-056.json)
 
 > 浏览器只投影 canonical 记录。自动 census、内部测试和登记闭合不构成外部真理、证明或独立复现。
 
@@ -300,7 +300,7 @@ M 轴 `M1`；E 轴 `E0`。状态记录：dimensional=`REQUIRES_HUMAN_REVIEW`, ex
 
 Claim ceiling：Automatic discovery only; no mathematical or external truth is conferred.
 
-来源出现 105 次；当前可回链来源：[analysis/corpus-relation/cluster_source_briefs/C000.md](../../../analysis/corpus-relation/cluster_source_briefs/C000.md) · [analysis/corpus-relation/corpus_relation_graph.json](../../../analysis/corpus-relation/corpus_relation_graph.json) · [data/collisions/20260711-disobedience-subjectivity.json](../../../data/collisions/20260711-disobedience-subjectivity.json)
+来源出现 99 次；当前可回链来源：[analysis/corpus-relation/cluster_source_briefs/C000.md](../../../analysis/corpus-relation/cluster_source_briefs/C000.md) · [analysis/corpus-relation/corpus_relation_graph.json](../../../analysis/corpus-relation/corpus_relation_graph.json) · [data/collisions/20260711-disobedience-subjectivity.json](../../../data/collisions/20260711-disobedience-subjectivity.json)
 
 > 浏览器只投影 canonical 记录。自动 census、内部测试和登记闭合不构成外部真理、证明或独立复现。
 
@@ -312,7 +312,7 @@ M 轴 `M1`；E 轴 `E0`。状态记录：dimensional=`REQUIRES_HUMAN_REVIEW`, ex
 
 Claim ceiling：Automatic discovery only; no mathematical or external truth is conferred.
 
-来源出现 361 次；当前可回链来源：[FOUNDATION-64-PROPAGATION.jsonl](../../../FOUNDATION-64-PROPAGATION.jsonl) · [analysis/corpus-relation/cluster_source_briefs/C000.md](../../../analysis/corpus-relation/cluster_source_briefs/C000.md) · [analysis/corpus-relation/corpus_relation_graph.json](../../../analysis/corpus-relation/corpus_relation_graph.json)
+来源出现 355 次；当前可回链来源：[FOUNDATION-64-PROPAGATION.jsonl](../../../FOUNDATION-64-PROPAGATION.jsonl) · [analysis/corpus-relation/cluster_source_briefs/C000.md](../../../analysis/corpus-relation/cluster_source_briefs/C000.md) · [analysis/corpus-relation/corpus_relation_graph.json](../../../analysis/corpus-relation/corpus_relation_graph.json)
 
 > 浏览器只投影 canonical 记录。自动 census、内部测试和登记闭合不构成外部真理、证明或独立复现。
 

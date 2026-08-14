@@ -51,6 +51,11 @@ GENERATED_PREFIXES = (
     # rows back into function discovery.
     "data/foundation/repository-path-classification/",
     "data/governance/",
+    # Root-normalization inventories and inbound-reference audits are
+    # generated projections of repository layout, not function-asset sources.
+    # Excluding this projection prevents base-commit refreshes from feeding
+    # back into the deterministic census.
+    "data/operations/root-normalization/",
     "KNOWLEDGE/",
     # Maintained human-reading publications are reference surfaces, not
     # authoritative function-asset discovery inputs.

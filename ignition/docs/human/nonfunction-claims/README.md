@@ -2,7 +2,7 @@
 
 从 canonical nonfunction-claims registry 生成的按页人类浏览层。它保留原子文本、类型、M/E、处置、范围、复现和来源锚点，不是第二份断言数据库。
 
-canonical source: `data/foundation/nonfunction-claims/claim-registry.jsonl`；记录数：`18348`；每页：`250`。
+canonical source: `data/foundation/nonfunction-claims/claim-registry.jsonl`；记录数：`18351`；每页：`250`。
 
 > 这里的文字由生成器确定性投影。不要手改页面；若对象状态变化，先更新 canonical asset，再重新生成并运行 `--check`。
 
@@ -81,7 +81,7 @@ canonical source: `data/foundation/nonfunction-claims/claim-registry.jsonl`；�
 - [第 071 页](page-071.md)：记录 17501–17750
 - [第 072 页](page-072.md)：记录 17751–18000
 - [第 073 页](page-073.md)：记录 18001–18250
-- [第 074 页](page-074.md)：记录 18251–18348
+- [第 074 页](page-074.md)：记录 18251–18351
 
 ## 解释边界
 

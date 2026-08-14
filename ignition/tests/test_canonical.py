@@ -218,9 +218,8 @@ check("T29_S2_ratification_ready_false", s2_live["ratification_ready"] is False,
 # ---- summary ----
 passed = sum(1 for _, p, _ in results if p)
 failed = [r for r in results if not r[1]]
-print(f"TOTAL {len(results)} | PASS {passed} | FAIL {len(failed)}")
-for name, ok, detail in results:
-    print(f"  [{'PASS' if ok else 'FAIL'}] {name} {('' if ok else '-> '+detail)}")
-if failed:
-    sys.exit(1)
-sys.exit(0)
+if __name__ == "__main__":
+    print(f"TOTAL {len(results)} | PASS {passed} | FAIL {len(failed)}")
+    for name, ok, detail in results:
+        print(f"  [{'PASS' if ok else 'FAIL'}] {name} {('' if ok else '-> '+detail)}")
+    raise SystemExit(1 if failed else 0)

@@ -3014,6 +3014,7 @@ NFC-212b7d5ab35420fe,MECHANISM_OR_CAUSAL_CLAIM,EMPIRICAL,M0,E0,NO_REPLICATION_CL
 NFC-212bee76f6c2d2aa,UNRESOLVED_CLAIM,UNRESOLVED,M0,E1,NO_REPLICATION_CLAIMED,HISTORICAL_ONLY,1,definition_audit,Historical source wording only; it is not a current repository endorsement.
 NFC-212e37343326cb95,MECHANISM_OR_CAUSAL_CLAIM,EMPIRICAL,M0,E0,NO_REPLICATION_CLAIMED,ACCEPTED_AS_DEFINITION,1,evidence_audit,"May be stated only as a repository definition, policy, status record or explicitly scoped convention; it is not external truth."
 NFC-21303f1903343ff4,UNRESOLVED_CLAIM,UNRESOLVED,M0,E1,NO_REPLICATION_CLAIMED,HISTORICAL_ONLY,1,definition_audit,Historical source wording only; it is not a current repository endorsement.
+NFC-213150ab45c55f06,CROSS_DOMAIN_CORRESPONDENCE,INTERPRETIVE,M0,E0,NOT_APPLICABLE,ACCEPTED_AS_DEFINITION,1,,"May be stated only as a repository definition, policy, status record or explicitly scoped convention; it is not external truth."
 NFC-21336275697b58f7,THEOREM_OR_MATHEMATICAL_CLAIM,MATHEMATICAL,M1,E1,NOT_APPLICABLE,HISTORICAL_ONLY,1,proof_audit,Historical source wording only; it is not a current repository endorsement.
 NFC-2135dbd7444a64f2,IMPOSSIBILITY_OR_UNIVERSAL_CLAIM,UNRESOLVED,M0,E1,NO_REPLICATION_CLAIMED,HISTORICAL_ONLY,1,,Historical source wording only; it is not a current repository endorsement.
 NFC-2135e5407310efa0,UNRESOLVED_CLAIM,UNRESOLVED,M0,E0,NO_REPLICATION_CLAIMED,ACCEPTED_AS_DEFINITION,1,,"May be stated only as a repository definition, policy, status record or explicitly scoped convention; it is not external truth."
@@ -4988,6 +4989,7 @@ NFC-3dad8569ce8bc08e,INTERPRETATION_OR_FRAMEWORK_CLAIM,INTERPRETIVE,M0,E0,NOT_AP
 NFC-3dae4d0013262bf9,IMPOSSIBILITY_OR_UNIVERSAL_CLAIM,UNRESOLVED,M0,E0,NO_REPLICATION_CLAIMED,WITHDRAWN_UNSUPPORTED,1,quantifier_audit;conclusion_rebound_audit,Withdrawn unsupported conclusion retained for lineage only; aliases and renamed structural forms are prohibited.
 NFC-3db1682118f77bb5,THEOREM_OR_MATHEMATICAL_CLAIM,MATHEMATICAL,M1,E1,NOT_APPLICABLE,HISTORICAL_ONLY,1,proof_audit,Historical source wording only; it is not a current repository endorsement.
 NFC-3db2ac90ba9260a8,IMPOSSIBILITY_OR_UNIVERSAL_CLAIM,UNRESOLVED,M0,E1,NO_REPLICATION_CLAIMED,HISTORICAL_ONLY,1,quantifier_audit;evidence_audit,Historical source wording only; it is not a current repository endorsement.
+NFC-3db4c2056cab7cf0,CROSS_DOMAIN_CORRESPONDENCE,INTERPRETIVE,M0,E0,NOT_APPLICABLE,ACCEPTED_AS_DEFINITION,1,,"May be stated only as a repository definition, policy, status record or explicitly scoped convention; it is not external truth."
 NFC-3db74db0006268bc,ONTOLOGICAL_OR_METAPHYSICAL_CLAIM,METAPHYSICAL,M0,E1,NO_REPLICATION_CLAIMED,HISTORICAL_ONLY,1,evidence_audit,Historical source wording only; it is not a current repository endorsement.
 NFC-3dbb68ea9d738292,UNRESOLVED_CLAIM,UNRESOLVED,M0,E1,NO_REPLICATION_CLAIMED,HISTORICAL_ONLY,2,definition_audit,Historical source wording only; it is not a current repository endorsement.
 NFC-3dbd447810046fbe,UNRESOLVED_CLAIM,UNRESOLVED,M0,E1,NO_REPLICATION_CLAIMED,HISTORICAL_ONLY,1,definition_audit,Historical source wording only; it is not a current repository endorsement.
@@ -5006,6 +5008,7 @@ NFC-3de78d821ecd388e,UNRESOLVED_CLAIM,UNRESOLVED,M0,E0,NO_REPLICATION_CLAIMED,AC
 NFC-3de96e76c0889775,UNRESOLVED_CLAIM,UNRESOLVED,M0,E1,NO_REPLICATION_CLAIMED,HISTORICAL_ONLY,1,definition_audit,Historical source wording only; it is not a current repository endorsement.
 NFC-3df3db0092eea1e2,CROSS_DOMAIN_CORRESPONDENCE,INTERPRETIVE,M0,E0,NOT_APPLICABLE,ACCEPTED_AS_DEFINITION,1,,"May be stated only as a repository definition, policy, status record or explicitly scoped convention; it is not external truth."
 NFC-3df4cb434823d1ae,ONTOLOGICAL_OR_METAPHYSICAL_CLAIM,METAPHYSICAL,M0,E0,NO_REPLICATION_CLAIMED,RETAINED_AS_RESEARCH_HYPOTHESIS,1,internal_external_audit;evidence_audit,Open research hypothesis only; external truth and novelty remain unestablished.
+NFC-3df6451419667784,CROSS_DOMAIN_CORRESPONDENCE,INTERPRETIVE,M0,E0,NOT_APPLICABLE,RETAINED_AS_STRUCTURAL_METAPHOR,1,,"Analogy or structural metaphor only; no homomorphism, isomorphism or causal identity is established."
 NFC-3dfa9adae5ee5d6f,THEOREM_OR_MATHEMATICAL_CLAIM,MATHEMATICAL,M1,E1,NOT_APPLICABLE,HISTORICAL_ONLY,1,proof_audit,Historical source wording only; it is not a current repository endorsement.
 NFC-3dfc64c8e3dd7fab,UNRESOLVED_CLAIM,UNRESOLVED,M0,E1,NO_REPLICATION_CLAIMED,HISTORICAL_ONLY,1,definition_audit,Historical source wording only; it is not a current repository endorsement.
 NFC-3e01ecfbc087f393,CROSS_DOMAIN_CORRESPONDENCE,INTERPRETIVE,M0,E1,NOT_APPLICABLE,HISTORICAL_ONLY,1,,Historical source wording only; it is not a current repository endorsement.

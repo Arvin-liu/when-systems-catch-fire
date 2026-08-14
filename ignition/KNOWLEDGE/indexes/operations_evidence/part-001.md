@@ -54,216 +54,6 @@
   - 可搜索名称：IMPLICIT-FA106673093569B4 / "every_tracked_path_accounted": len({row\["path"\] for row in discovery_by_path}) == len(discovery_by_path), / IMPLICIT-FA106673093569B4
   - 来源：`tools/foundation/adjudicate_nonfunction_claims.py`
   - 依赖：—；被引用：—
-- ["excerpt": " - 可搜索名称：IMPLICIT-2BAC5523FE533CAA / \\"excerpt\\": \\"- \\\\\[require(text(ROOT / \\\\\\\\\\"reports/operations/114-language-thought-project-audit.md\\\\\\\\\\").count(\\\\\\\\\\"25 条\\\\\\\\\\") == 1, \\\\\\\\\\"project audit summary missing exact finding c](../../../data/operations/root-normalization/post-migration-inbound-reference-audit.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-E691F837817C4F84 / "excerpt": " - 可搜索名称：IMPLICIT-2BAC5523FE533CAA / \\"excerpt\\": \\"- \\\\\[require(text(ROOT / \\\\\\\\\\"reports/operations/114-language-thought-project-audit.md\\\\\\\\\\").count(\\\\\\\\\\"25 条\\\\\\\\\\") == 1, \\\\\\\\\\"project audit summary missing exact finding c / IMPLICIT-E691F837817C4F84
-  - 来源：`data/operations/root-normalization/post-migration-inbound-reference-audit.json`
-  - 依赖：—；被引用：—
-- ["excerpt": " - 可搜索名称：IMPLICIT-31147A1B2F97C9BA / require(text(ROOT / \\"reports/operations/114-language-thought-project-audit.md\\").count(\\"25 条\\") == 1, \\"project audit summary missing exact finding count\\") / IMPLICIT-31147A1B2F97C9BA",](../../../data/operations/root-normalization/post-migration-inbound-reference-audit.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-49D1F867F3A1AB83 / "excerpt": " - 可搜索名称：IMPLICIT-31147A1B2F97C9BA / require(text(ROOT / \\"reports/operations/114-language-thought-project-audit.md\\").count(\\"25 条\\") == 1, \\"project audit summary missing exact finding count\\") / IMPLICIT-31147A1B2F97C9BA", / IMPLICIT-49D1F867F3A1AB83 / IMPLICIT-8E05B236D71E5780
-  - 来源：`data/operations/root-normalization/post-migration-inbound-reference-audit.json`
-  - 依赖：—；被引用：—
-- ["excerpt": " - 可搜索名称：IMPLICIT-31147A1B2F97C9BA / require(text(ROOT / \\"reports/operations/114-language-thought-project-audit.md\\").count(\\"25 条\\") == 1, \\"project audit summary missing exact finding count\\") / IMPLICIT-31147A1B2F97C9BA",](../../../data/operations/root-normalization/pre-migration-inbound-reference-audit.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-8E05B236D71E5780 / "excerpt": " - 可搜索名称：IMPLICIT-31147A1B2F97C9BA / require(text(ROOT / \\"reports/operations/114-language-thought-project-audit.md\\").count(\\"25 条\\") == 1, \\"project audit summary missing exact finding count\\") / IMPLICIT-31147A1B2F97C9BA", / IMPLICIT-8E05B236D71E5780 / IMPLICIT-49D1F867F3A1AB83
-  - 来源：`data/operations/root-normalization/pre-migration-inbound-reference-audit.json`
-  - 依赖：—；被引用：—
-- ["excerpt": " - 可搜索名称：IMPLICIT-49D1F867F3A1AB83 / \\"excerpt\\": \\" - 可搜索名称：IMPLICIT-31147A1B2F97C9BA / require(text(ROOT / \\\\\\\\\\"reports/operations/114-language-thought-project-audit.md\\\\\\\\\\").count(\\\\\\\\\\"25 条\\\\\\\\\\") == 1, \\\\\\\\\\"project audit](../../../data/operations/root-normalization/post-migration-inbound-reference-audit.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-515411629B5A951A / "excerpt": " - 可搜索名称：IMPLICIT-49D1F867F3A1AB83 / \\"excerpt\\": \\" - 可搜索名称：IMPLICIT-31147A1B2F97C9BA / require(text(ROOT / \\\\\\\\\\"reports/operations/114-language-thought-project-audit.md\\\\\\\\\\").count(\\\\\\\\\\"25 条\\\\\\\\\\") == 1, \\\\\\\\\\"project audit / IMPLICIT-515411629B5A951A
-  - 来源：`data/operations/root-normalization/post-migration-inbound-reference-audit.json`
-  - 依赖：—；被引用：—
-- ["excerpt": " - 可搜索名称：IMPLICIT-4F014A16B668AFC3 / \\"excerpt\\": \\"{\\\\\\\\\\"aliases\\\\\\\\\\":\\\\\[\\\\\\\\\\"IMPLICIT-31147A1B2F97C9BA\\\\\\\\\\",\\\\\\\\\\"require(text(ROOT / \\\\\\\\\\\\\\\\\\\\\\\\\\"reports/operations/114-language-thought-project-audit.md\\\\\\\\\\\\\\\\\\\\\\\\\\").co](../../../data/operations/root-normalization/post-migration-inbound-reference-audit.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-B92A49279210E610 / "excerpt": " - 可搜索名称：IMPLICIT-4F014A16B668AFC3 / \\"excerpt\\": \\"{\\\\\\\\\\"aliases\\\\\\\\\\":\\\\\[\\\\\\\\\\"IMPLICIT-31147A1B2F97C9BA\\\\\\\\\\",\\\\\\\\\\"require(text(ROOT / \\\\\\\\\\\\\\\\\\\\\\\\\\"reports/operations/114-language-thought-project-audit.md\\\\\\\\\\\\\\\\\\\\\\\\\\").co / IMPLICIT-B92A49279210E610
-  - 来源：`data/operations/root-normalization/post-migration-inbound-reference-audit.json`
-  - 依赖：—；被引用：—
-- ["excerpt": " - 可搜索名称：IMPLICIT-8E05B236D71E5780 / \\"excerpt\\": \\" - 可搜索名称：IMPLICIT-31147A1B2F97C9BA / require(text(ROOT / \\\\\\\\\\"reports/operations/114-language-thought-project-audit.md\\\\\\\\\\").count(\\\\\\\\\\"25 条\\\\\\\\\\") == 1, \\\\\\\\\\"project audit](../../../data/operations/root-normalization/post-migration-inbound-reference-audit.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-F700340A707C5AA2 / "excerpt": " - 可搜索名称：IMPLICIT-8E05B236D71E5780 / \\"excerpt\\": \\" - 可搜索名称：IMPLICIT-31147A1B2F97C9BA / require(text(ROOT / \\\\\\\\\\"reports/operations/114-language-thought-project-audit.md\\\\\\\\\\").count(\\\\\\\\\\"25 条\\\\\\\\\\") == 1, \\\\\\\\\\"project audit / IMPLICIT-F700340A707C5AA2
-  - 来源：`data/operations/root-normalization/post-migration-inbound-reference-audit.json`
-  - 依赖：—；被引用：—
-- ["excerpt": " - 可搜索名称：IMPLICIT-B39E777F6360C500 / \\"excerpt\\": \\"{\\\\\\\\\\"aliases\\\\\\\\\\":\\\\\[\\\\\\\\\\"IMPLICIT-31147A1B2F97C9BA\\\\\\\\\\",\\\\\\\\\\"require(text(ROOT / \\\\\\\\\\\\\\\\\\\\\\\\\\"reports/operations/114-language-thought-project-audit.md\\\\\\\\\\\\\\\\\\\\\\\\\\").co](../../../data/operations/root-normalization/post-migration-inbound-reference-audit.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-D232CF61C782C9BB / "excerpt": " - 可搜索名称：IMPLICIT-B39E777F6360C500 / \\"excerpt\\": \\"{\\\\\\\\\\"aliases\\\\\\\\\\":\\\\\[\\\\\\\\\\"IMPLICIT-31147A1B2F97C9BA\\\\\\\\\\",\\\\\\\\\\"require(text(ROOT / \\\\\\\\\\\\\\\\\\\\\\\\\\"reports/operations/114-language-thought-project-audit.md\\\\\\\\\\\\\\\\\\\\\\\\\\").co / IMPLICIT-D232CF61C782C9BB
-  - 来源：`data/operations/root-normalization/post-migration-inbound-reference-audit.json`
-  - 依赖：—；被引用：—
-- ["excerpt": " - 可搜索名称：IMPLICIT-BC2517486CD8DCF1 / \\"excerpt\\": \\"- \\\\\[require(text(ROOT / \\\\\\\\\\"reports/operations/114-language-thought-project-audit.md\\\\\\\\\\").count(\\\\\\\\\\"25 条\\\\\\\\\\") == 1, \\\\\\\\\\"project audit summary missing exact finding c](../../../data/operations/root-normalization/post-migration-inbound-reference-audit.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-178F89218B15E234 / "excerpt": " - 可搜索名称：IMPLICIT-BC2517486CD8DCF1 / \\"excerpt\\": \\"- \\\\\[require(text(ROOT / \\\\\\\\\\"reports/operations/114-language-thought-project-audit.md\\\\\\\\\\").count(\\\\\\\\\\"25 条\\\\\\\\\\") == 1, \\\\\\\\\\"project audit summary missing exact finding c / IMPLICIT-178F89218B15E234
-  - 来源：`data/operations/root-normalization/post-migration-inbound-reference-audit.json`
-  - 依赖：—；被引用：—
-- ["excerpt": " - 可搜索名称：IMPLICIT-C72FA86E06EEA167 / \\"excerpt\\": \\" require(text(ROOT / \\\\\\\\\\"reports/operations/114-language-thought-project-audit.md\\\\\\\\\\").count(\\\\\\\\\\"25 条\\\\\\\\\\") == 1, \\\\\\\\\\"project audit summary missing exact finding count](../../../data/operations/root-normalization/post-migration-inbound-reference-audit.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-A7334B202FB70163 / "excerpt": " - 可搜索名称：IMPLICIT-C72FA86E06EEA167 / \\"excerpt\\": \\" require(text(ROOT / \\\\\\\\\\"reports/operations/114-language-thought-project-audit.md\\\\\\\\\\").count(\\\\\\\\\\"25 条\\\\\\\\\\") == 1, \\\\\\\\\\"project audit summary missing exact finding count / IMPLICIT-A7334B202FB70163
-  - 来源：`data/operations/root-normalization/post-migration-inbound-reference-audit.json`
-  - 依赖：—；被引用：—
-- ["excerpt": " - 可搜索名称：IMPLICIT-E9793B950DE3532F / \\"excerpt\\": \\" require(text(ROOT / \\\\\\\\\\"reports/operations/114-language-thought-project-audit.md\\\\\\\\\\").count(\\\\\\\\\\"25 条\\\\\\\\\\") == 1, \\\\\\\\\\"project audit summary missing exact finding count](../../../data/operations/root-normalization/post-migration-inbound-reference-audit.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-20AE19560E97131C / "excerpt": " - 可搜索名称：IMPLICIT-E9793B950DE3532F / \\"excerpt\\": \\" require(text(ROOT / \\\\\\\\\\"reports/operations/114-language-thought-project-audit.md\\\\\\\\\\").count(\\\\\\\\\\"25 条\\\\\\\\\\") == 1, \\\\\\\\\\"project audit summary missing exact finding count / IMPLICIT-20AE19560E97131C
-  - 来源：`data/operations/root-normalization/post-migration-inbound-reference-audit.json`
-  - 依赖：—；被引用：—
-- ["excerpt": " require(text(ROOT / \\"reports/operations/114-language-thought-project-audit.md\\").count(\\"25 条\\") == 1, \\"project audit summary missing exact finding count\\")",](../../../data/operations/root-normalization/pre-migration-inbound-reference-audit.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-C72FA86E06EEA167 / "excerpt": " require(text(ROOT / \\"reports/operations/114-language-thought-project-audit.md\\").count(\\"25 条\\") == 1, \\"project audit summary missing exact finding count\\")", / IMPLICIT-C72FA86E06EEA167 / IMPLICIT-E9793B950DE3532F
-  - 来源：`data/operations/root-normalization/pre-migration-inbound-reference-audit.json`
-  - 依赖：—；被引用：—
-- ["excerpt": " require(text(ROOT / \\"reports/operations/114-language-thought-project-audit.md\\").count(\\"25 条\\") == 1, \\"project audit summary missing exact finding count\\")",](../../../data/operations/root-normalization/post-migration-inbound-reference-audit.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-E9793B950DE3532F / "excerpt": " require(text(ROOT / \\"reports/operations/114-language-thought-project-audit.md\\").count(\\"25 条\\") == 1, \\"project audit summary missing exact finding count\\")", / IMPLICIT-E9793B950DE3532F / IMPLICIT-C72FA86E06EEA167
-  - 来源：`data/operations/root-normalization/post-migration-inbound-reference-audit.json`
-  - 依赖：—；被引用：—
-- ["excerpt": " return parents\[0\] if len(parents) == 1 else None",](../../../data/operations/root-normalization/post-migration-inbound-reference-audit.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-4F7C5BC78653A885 / "excerpt": " return parents\[0\] if len(parents) == 1 else None", / IMPLICIT-4F7C5BC78653A885 / IMPLICIT-65FA1C17F7AE9DF3
-  - 来源：`data/operations/root-normalization/post-migration-inbound-reference-audit.json`
-  - 依赖：—；被引用：—
-- ["excerpt": " return parents\[0\] if len(parents) == 1 else None",](../../../data/operations/root-normalization/pre-migration-inbound-reference-audit.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-65FA1C17F7AE9DF3 / "excerpt": " return parents\[0\] if len(parents) == 1 else None", / IMPLICIT-65FA1C17F7AE9DF3 / IMPLICIT-4F7C5BC78653A885
-  - 来源：`data/operations/root-normalization/pre-migration-inbound-reference-audit.json`
-  - 依赖：—；被引用：—
-- ["excerpt": "- \[\\"excerpt\\": \\" - 可搜索名称：IMPLICIT-31147A1B2F97C9BA / require(text(ROOT / \\\\\\\\\\"reports/operations/114-language-thought-project-audit.md\\\\\\\\\\").count(\\\\\\\\\\"25 条\\\\\\\\\\") == 1, \\\\\\\\\\"project audit summary missing exact finding cou](../../../data/operations/root-normalization/post-migration-inbound-reference-audit.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-6BA4D256006E9D6A / "excerpt": "- \[\\"excerpt\\": \\" - 可搜索名称：IMPLICIT-31147A1B2F97C9BA / require(text(ROOT / \\\\\\\\\\"reports/operations/114-language-thought-project-audit.md\\\\\\\\\\").count(\\\\\\\\\\"25 条\\\\\\\\\\") == 1, \\\\\\\\\\"project audit summary missing exact finding cou / IMPLICIT-6BA4D256006E9D6A
-  - 来源：`data/operations/root-normalization/post-migration-inbound-reference-audit.json`
-  - 依赖：—；被引用：—
-- ["excerpt": "- \[\\"excerpt\\": \\" require(text(ROOT / \\\\\\\\\\"reports/operations/114-language-thought-project-audit.md\\\\\\\\\\").count(\\\\\\\\\\"25 条\\\\\\\\\\") == 1, \\\\\\\\\\"project audit summary missing exact finding count\\\\\\\\\\")\\",\](../../../data/operatio](../../../data/operations/root-normalization/post-migration-inbound-reference-audit.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-0E449882AB60869A / "excerpt": "- \[\\"excerpt\\": \\" require(text(ROOT / \\\\\\\\\\"reports/operations/114-language-thought-project-audit.md\\\\\\\\\\").count(\\\\\\\\\\"25 条\\\\\\\\\\") == 1, \\\\\\\\\\"project audit summary missing exact finding count\\\\\\\\\\")\\",\](../../../data/operatio / IMPLICIT-0E449882AB60869A / IMPLICIT-9112CA69BCC81312
-  - 来源：`data/operations/root-normalization/post-migration-inbound-reference-audit.json`
-  - 依赖：—；被引用：—
-- ["excerpt": "- \[\\"excerpt\\": \\" require(text(ROOT / \\\\\\\\\\"reports/operations/114-language-thought-project-audit.md\\\\\\\\\\").count(\\\\\\\\\\"25 条\\\\\\\\\\") == 1, \\\\\\\\\\"project audit summary missing exact finding count\\\\\\\\\\")\\",\](../../../data/operatio](../../../data/operations/root-normalization/post-migration-inbound-reference-audit.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-9112CA69BCC81312 / "excerpt": "- \[\\"excerpt\\": \\" require(text(ROOT / \\\\\\\\\\"reports/operations/114-language-thought-project-audit.md\\\\\\\\\\").count(\\\\\\\\\\"25 条\\\\\\\\\\") == 1, \\\\\\\\\\"project audit summary missing exact finding count\\\\\\\\\\")\\",\](../../../data/operatio / IMPLICIT-9112CA69BCC81312 / IMPLICIT-0E449882AB60869A
-  - 来源：`data/operations/root-normalization/post-migration-inbound-reference-audit.json`
-  - 依赖：—；被引用：—
-- ["excerpt": "- \[\\"excerpt\\": \\"- \\\\\[require(text(ROOT / \\\\\\\\\\"reports/operations/114-language-thought-project-audit.md\\\\\\\\\\").count(\\\\\\\\\\"25 条\\\\\\\\\\") == 1, \\\\\\\\\\"project audit summary missing exact finding count\\\\\\\\\\")\\\\\](../../../data/opera](../../../data/operations/root-normalization/post-migration-inbound-reference-audit.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-36BFBA1737250F79 / "excerpt": "- \[\\"excerpt\\": \\"- \\\\\[require(text(ROOT / \\\\\\\\\\"reports/operations/114-language-thought-project-audit.md\\\\\\\\\\").count(\\\\\\\\\\"25 条\\\\\\\\\\") == 1, \\\\\\\\\\"project audit summary missing exact finding count\\\\\\\\\\")\\\\\](../../../data/opera / IMPLICIT-36BFBA1737250F79 / IMPLICIT-ACBB6BAAE3495646
-  - 来源：`data/operations/root-normalization/post-migration-inbound-reference-audit.json`
-  - 依赖：—；被引用：—
-- ["excerpt": "- \[\\"excerpt\\": \\"- \\\\\[require(text(ROOT / \\\\\\\\\\"reports/operations/114-language-thought-project-audit.md\\\\\\\\\\").count(\\\\\\\\\\"25 条\\\\\\\\\\") == 1, \\\\\\\\\\"project audit summary missing exact finding count\\\\\\\\\\")\\\\\](../../../data/opera](../../../data/operations/root-normalization/post-migration-inbound-reference-audit.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-ACBB6BAAE3495646 / "excerpt": "- \[\\"excerpt\\": \\"- \\\\\[require(text(ROOT / \\\\\\\\\\"reports/operations/114-language-thought-project-audit.md\\\\\\\\\\").count(\\\\\\\\\\"25 条\\\\\\\\\\") == 1, \\\\\\\\\\"project audit summary missing exact finding count\\\\\\\\\\")\\\\\](../../../data/opera / IMPLICIT-ACBB6BAAE3495646 / IMPLICIT-36BFBA1737250F79
-  - 来源：`data/operations/root-normalization/post-migration-inbound-reference-audit.json`
-  - 依赖：—；被引用：—
-- ["excerpt": "- \[\\"excerpt\\": \\"{\\\\\\\\\\"aliases\\\\\\\\\\":\\\\\[\\\\\\\\\\"IMPLICIT-31147A1B2F97C9BA\\\\\\\\\\",\\\\\\\\\\"require(text(ROOT / \\\\\\\\\\\\\\\\\\\\\\\\\\"reports/operations/114-language-thought-project-audit.md\\\\\\\\\\\\\\\\\\\\\\\\\\").count(\\\\\\\\\\\\\\\\\\\\\\\\\\"25 条\\\\\\\\\\\\\\\\\\\\\\\\](../../../data/operations/root-normalization/post-migration-inbound-reference-audit.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-518EF3243C481EA3 / "excerpt": "- \[\\"excerpt\\": \\"{\\\\\\\\\\"aliases\\\\\\\\\\":\\\\\[\\\\\\\\\\"IMPLICIT-31147A1B2F97C9BA\\\\\\\\\\",\\\\\\\\\\"require(text(ROOT / \\\\\\\\\\\\\\\\\\\\\\\\\\"reports/operations/114-language-thought-project-audit.md\\\\\\\\\\\\\\\\\\\\\\\\\\").count(\\\\\\\\\\\\\\\\\\\\\\\\\\"25 条\\\\\\\\\\\\\\\\\\\\\\\\ / IMPLICIT-518EF3243C481EA3
-  - 来源：`data/operations/root-normalization/post-migration-inbound-reference-audit.json`
-  - 依赖：—；被引用：—
-- ["excerpt": "{\\"aliases\\":\[\\"IMPLICIT-2BAC5523FE533CAA\\",\\"\\\\\\"excerpt\\\\\\": \\\\\\"- \[require(text(ROOT / \\\\\\\\\\\\\\"reports/operations/114-language-thought-project-audit.md\\\\\\\\\\\\\\").count(\\\\\\\\\\\\\\"25 条\\\\\\\\\\\\\\") == 1, \\\\\\\\\\\\\\"project audit summary](../../../data/operations/root-normalization/post-migration-inbound-reference-audit.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-D76798FA2DA0046C / "excerpt": "{\\"aliases\\":\[\\"IMPLICIT-2BAC5523FE533CAA\\",\\"\\\\\\"excerpt\\\\\\": \\\\\\"- \[require(text(ROOT / \\\\\\\\\\\\\\"reports/operations/114-language-thought-project-audit.md\\\\\\\\\\\\\\").count(\\\\\\\\\\\\\\"25 条\\\\\\\\\\\\\\") == 1, \\\\\\\\\\\\\\"project audit summary / IMPLICIT-D76798FA2DA0046C
-  - 来源：`data/operations/root-normalization/post-migration-inbound-reference-audit.json`
-  - 依赖：—；被引用：—
-- ["excerpt": "{\\"aliases\\":\[\\"IMPLICIT-31147A1B2F97C9BA\\",\\"require(text(ROOT / \\\\\\"reports/operations/114-language-thought-project-audit.md\\\\\\").count(\\\\\\"25 条\\\\\\") == 1, \\\\\\"project audit summary missing exact finding count\\\\\\")\\",\\"IMPLICI](../../../data/operations/root-normalization/pre-migration-inbound-reference-audit.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-4F014A16B668AFC3 / "excerpt": "{\\"aliases\\":\[\\"IMPLICIT-31147A1B2F97C9BA\\",\\"require(text(ROOT / \\\\\\"reports/operations/114-language-thought-project-audit.md\\\\\\").count(\\\\\\"25 条\\\\\\") == 1, \\\\\\"project audit summary missing exact finding count\\\\\\")\\",\\"IMPLICI / IMPLICIT-4F014A16B668AFC3 / IMPLICIT-B39E777F6360C500
-  - 来源：`data/operations/root-normalization/pre-migration-inbound-reference-audit.json`
-  - 依赖：—；被引用：—
-- ["excerpt": "{\\"aliases\\":\[\\"IMPLICIT-31147A1B2F97C9BA\\",\\"require(text(ROOT / \\\\\\"reports/operations/114-language-thought-project-audit.md\\\\\\").count(\\\\\\"25 条\\\\\\") == 1, \\\\\\"project audit summary missing exact finding count\\\\\\")\\",\\"IMPLICI](../../../data/operations/root-normalization/post-migration-inbound-reference-audit.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-B39E777F6360C500 / "excerpt": "{\\"aliases\\":\[\\"IMPLICIT-31147A1B2F97C9BA\\",\\"require(text(ROOT / \\\\\\"reports/operations/114-language-thought-project-audit.md\\\\\\").count(\\\\\\"25 条\\\\\\") == 1, \\\\\\"project audit summary missing exact finding count\\\\\\")\\",\\"IMPLICI / IMPLICIT-B39E777F6360C500 / IMPLICIT-4F014A16B668AFC3
-  - 来源：`data/operations/root-normalization/post-migration-inbound-reference-audit.json`
-  - 依赖：—；被引用：—
-- ["excerpt": "{\\"aliases\\":\[\\"IMPLICIT-49D1F867F3A1AB83\\",\\"\\\\\\"excerpt\\\\\\": \\\\\\" - 可搜索名称：IMPLICIT-31147A1B2F97C9BA / require(text(ROOT / \\\\\\\\\\\\\\"reports/operations/114-language-thought-project-audit.md\\\\\\\\\\\\\\").count(\\\\\\\\\\\\\\"25 条\\\\\\\\\\\\\\") ==](../../../data/operations/root-normalization/post-migration-inbound-reference-audit.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-FA72B077CDC6DDF9 / "excerpt": "{\\"aliases\\":\[\\"IMPLICIT-49D1F867F3A1AB83\\",\\"\\\\\\"excerpt\\\\\\": \\\\\\" - 可搜索名称：IMPLICIT-31147A1B2F97C9BA / require(text(ROOT / \\\\\\\\\\\\\\"reports/operations/114-language-thought-project-audit.md\\\\\\\\\\\\\\").count(\\\\\\\\\\\\\\"25 条\\\\\\\\\\\\\\") == / IMPLICIT-FA72B077CDC6DDF9
-  - 来源：`data/operations/root-normalization/post-migration-inbound-reference-audit.json`
-  - 依赖：—；被引用：—
-- ["excerpt": "{\\"aliases\\":\[\\"IMPLICIT-4D1A444D31E414E8\\",\\"\\\\\\"excerpt\\\\\\": \\\\\\"{\\\\\\\\\\\\\\"aliases\\\\\\\\\\\\\\":\[\\\\\\\\\\\\\\"IMPLICIT-EB7C72B8E9AAB004\\\\\\\\\\\\\\",\\\\\\\\\\\\\\"return parents\[0\] if len(parents) == 1 else None\\\\\\\\\\\\\\",\\\\\\\\\\\\\\"IMPLICIT-EB7C72B8E9A](../../../data/operations/root-normalization/post-migration-inbound-reference-audit.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-42D73D47C44E7D27 / "excerpt": "{\\"aliases\\":\[\\"IMPLICIT-4D1A444D31E414E8\\",\\"\\\\\\"excerpt\\\\\\": \\\\\\"{\\\\\\\\\\\\\\"aliases\\\\\\\\\\\\\\":\[\\\\\\\\\\\\\\"IMPLICIT-EB7C72B8E9AAB004\\\\\\\\\\\\\\",\\\\\\\\\\\\\\"return parents\[0\] if len(parents) == 1 else None\\\\\\\\\\\\\\",\\\\\\\\\\\\\\"IMPLICIT-EB7C72B8E9A / IMPLICIT-42D73D47C44E7D27
-  - 来源：`data/operations/root-normalization/post-migration-inbound-reference-audit.json`
-  - 依赖：—；被引用：—
-- ["excerpt": "{\\"aliases\\":\[\\"IMPLICIT-4F014A16B668AFC3\\",\\"\\\\\\"excerpt\\\\\\": \\\\\\"{\\\\\\\\\\\\\\"aliases\\\\\\\\\\\\\\":\[\\\\\\\\\\\\\\"IMPLICIT-31147A1B2F97C9BA\\\\\\\\\\\\\\",\\\\\\\\\\\\\\"require(text(ROOT / \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"reports/operations/114-language-thought-project-a](../../../data/operations/root-normalization/post-migration-inbound-reference-audit.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-C1AE4DB7020B329F / "excerpt": "{\\"aliases\\":\[\\"IMPLICIT-4F014A16B668AFC3\\",\\"\\\\\\"excerpt\\\\\\": \\\\\\"{\\\\\\\\\\\\\\"aliases\\\\\\\\\\\\\\":\[\\\\\\\\\\\\\\"IMPLICIT-31147A1B2F97C9BA\\\\\\\\\\\\\\",\\\\\\\\\\\\\\"require(text(ROOT / \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"reports/operations/114-language-thought-project-a / IMPLICIT-C1AE4DB7020B329F
-  - 来源：`data/operations/root-normalization/post-migration-inbound-reference-audit.json`
-  - 依赖：—；被引用：—
-- ["excerpt": "{\\"aliases\\":\[\\"IMPLICIT-4F7C5BC78653A885\\",\\"\\\\\\"excerpt\\\\\\": \\\\\\" return parents\[0\] if len(parents) == 1 else None\\\\\\",\\",\\"IMPLICIT-4F7C5BC78653A885\\",\\"IMPLICIT-65FA1C17F7AE9DF3\\"\],\\"asset_kind\\":\\"FUNCTION_ASSET\\",\\"canonic](../../../data/operations/root-normalization/post-migration-inbound-reference-audit.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-E108A6C1757CB153 / "excerpt": "{\\"aliases\\":\[\\"IMPLICIT-4F7C5BC78653A885\\",\\"\\\\\\"excerpt\\\\\\": \\\\\\" return parents\[0\] if len(parents) == 1 else None\\\\\\",\\",\\"IMPLICIT-4F7C5BC78653A885\\",\\"IMPLICIT-65FA1C17F7AE9DF3\\"\],\\"asset_kind\\":\\"FUNCTION_ASSET\\",\\"canonic / IMPLICIT-E108A6C1757CB153
-  - 来源：`data/operations/root-normalization/post-migration-inbound-reference-audit.json`
-  - 依赖：—；被引用：—
-- ["excerpt": "{\\"aliases\\":\[\\"IMPLICIT-65FA1C17F7AE9DF3\\",\\"\\\\\\"excerpt\\\\\\": \\\\\\" return parents\[0\] if len(parents) == 1 else None\\\\\\",\\",\\"IMPLICIT-65FA1C17F7AE9DF3\\",\\"IMPLICIT-4F7C5BC78653A885\\"\],\\"asset_kind\\":\\"FUNCTION_ASSET\\",\\"canonic](../../../data/operations/root-normalization/post-migration-inbound-reference-audit.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-ADE5F554D70A974C / "excerpt": "{\\"aliases\\":\[\\"IMPLICIT-65FA1C17F7AE9DF3\\",\\"\\\\\\"excerpt\\\\\\": \\\\\\" return parents\[0\] if len(parents) == 1 else None\\\\\\",\\",\\"IMPLICIT-65FA1C17F7AE9DF3\\",\\"IMPLICIT-4F7C5BC78653A885\\"\],\\"asset_kind\\":\\"FUNCTION_ASSET\\",\\"canonic / IMPLICIT-ADE5F554D70A974C
-  - 来源：`data/operations/root-normalization/post-migration-inbound-reference-audit.json`
-  - 依赖：—；被引用：—
-- ["excerpt": "{\\"aliases\\":\[\\"IMPLICIT-7202D442C429522C\\",\\"\\\\\\"excerpt\\\\\\": \\\\\\"{\\\\\\\\\\\\\\"aliases\\\\\\\\\\\\\\":\[\\\\\\\\\\\\\\"IMPLICIT-EB7C72B8E9AAB004\\\\\\\\\\\\\\",\\\\\\\\\\\\\\"return parents\[0\] if len(parents) == 1 else None\\\\\\\\\\\\\\",\\\\\\\\\\\\\\"IMPLICIT-EB7C72B8E9A](../../../data/operations/root-normalization/post-migration-inbound-reference-audit.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-115E778F7EB64B36 / "excerpt": "{\\"aliases\\":\[\\"IMPLICIT-7202D442C429522C\\",\\"\\\\\\"excerpt\\\\\\": \\\\\\"{\\\\\\\\\\\\\\"aliases\\\\\\\\\\\\\\":\[\\\\\\\\\\\\\\"IMPLICIT-EB7C72B8E9AAB004\\\\\\\\\\\\\\",\\\\\\\\\\\\\\"return parents\[0\] if len(parents) == 1 else None\\\\\\\\\\\\\\",\\\\\\\\\\\\\\"IMPLICIT-EB7C72B8E9A / IMPLICIT-115E778F7EB64B36
-  - 来源：`data/operations/root-normalization/post-migration-inbound-reference-audit.json`
-  - 依赖：—；被引用：—
-- ["excerpt": "{\\"aliases\\":\[\\"IMPLICIT-8E05B236D71E5780\\",\\"\\\\\\"excerpt\\\\\\": \\\\\\" - 可搜索名称：IMPLICIT-31147A1B2F97C9BA / require(text(ROOT / \\\\\\\\\\\\\\"reports/operations/114-language-thought-project-audit.md\\\\\\\\\\\\\\").count(\\\\\\\\\\\\\\"25 条\\\\\\\\\\\\\\") ==](../../../data/operations/root-normalization/post-migration-inbound-reference-audit.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-48329DC9CBA78A72 / "excerpt": "{\\"aliases\\":\[\\"IMPLICIT-8E05B236D71E5780\\",\\"\\\\\\"excerpt\\\\\\": \\\\\\" - 可搜索名称：IMPLICIT-31147A1B2F97C9BA / require(text(ROOT / \\\\\\\\\\\\\\"reports/operations/114-language-thought-project-audit.md\\\\\\\\\\\\\\").count(\\\\\\\\\\\\\\"25 条\\\\\\\\\\\\\\") == / IMPLICIT-48329DC9CBA78A72
-  - 来源：`data/operations/root-normalization/post-migration-inbound-reference-audit.json`
-  - 依赖：—；被引用：—
-- ["excerpt": "{\\"aliases\\":\[\\"IMPLICIT-B39E777F6360C500\\",\\"\\\\\\"excerpt\\\\\\": \\\\\\"{\\\\\\\\\\\\\\"aliases\\\\\\\\\\\\\\":\[\\\\\\\\\\\\\\"IMPLICIT-31147A1B2F97C9BA\\\\\\\\\\\\\\",\\\\\\\\\\\\\\"require(text(ROOT / \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"reports/operations/114-language-thought-project-a](../../../data/operations/root-normalization/post-migration-inbound-reference-audit.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-C179304588C89C06 / "excerpt": "{\\"aliases\\":\[\\"IMPLICIT-B39E777F6360C500\\",\\"\\\\\\"excerpt\\\\\\": \\\\\\"{\\\\\\\\\\\\\\"aliases\\\\\\\\\\\\\\":\[\\\\\\\\\\\\\\"IMPLICIT-31147A1B2F97C9BA\\\\\\\\\\\\\\",\\\\\\\\\\\\\\"require(text(ROOT / \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"reports/operations/114-language-thought-project-a / IMPLICIT-C179304588C89C06
-  - 来源：`data/operations/root-normalization/post-migration-inbound-reference-audit.json`
-  - 依赖：—；被引用：—
-- ["excerpt": "{\\"aliases\\":\[\\"IMPLICIT-BC2517486CD8DCF1\\",\\"\\\\\\"excerpt\\\\\\": \\\\\\"- \[require(text(ROOT / \\\\\\\\\\\\\\"reports/operations/114-language-thought-project-audit.md\\\\\\\\\\\\\\").count(\\\\\\\\\\\\\\"25 条\\\\\\\\\\\\\\") == 1, \\\\\\\\\\\\\\"project audit summary](../../../data/operations/root-normalization/post-migration-inbound-reference-audit.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-8F94109014D39FF5 / "excerpt": "{\\"aliases\\":\[\\"IMPLICIT-BC2517486CD8DCF1\\",\\"\\\\\\"excerpt\\\\\\": \\\\\\"- \[require(text(ROOT / \\\\\\\\\\\\\\"reports/operations/114-language-thought-project-audit.md\\\\\\\\\\\\\\").count(\\\\\\\\\\\\\\"25 条\\\\\\\\\\\\\\") == 1, \\\\\\\\\\\\\\"project audit summary / IMPLICIT-8F94109014D39FF5
-  - 来源：`data/operations/root-normalization/post-migration-inbound-reference-audit.json`
-  - 依赖：—；被引用：—
-- ["excerpt": "{\\"aliases\\":\[\\"IMPLICIT-C72FA86E06EEA167\\",\\"\\\\\\"excerpt\\\\\\": \\\\\\" require(text(ROOT / \\\\\\\\\\\\\\"reports/operations/114-language-thought-project-audit.md\\\\\\\\\\\\\\").count(\\\\\\\\\\\\\\"25 条\\\\\\\\\\\\\\") == 1, \\\\\\\\\\\\\\"project audit summary mi](../../../data/operations/root-normalization/post-migration-inbound-reference-audit.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-DB060CCC45B7C4EA / "excerpt": "{\\"aliases\\":\[\\"IMPLICIT-C72FA86E06EEA167\\",\\"\\\\\\"excerpt\\\\\\": \\\\\\" require(text(ROOT / \\\\\\\\\\\\\\"reports/operations/114-language-thought-project-audit.md\\\\\\\\\\\\\\").count(\\\\\\\\\\\\\\"25 条\\\\\\\\\\\\\\") == 1, \\\\\\\\\\\\\\"project audit summary mi / IMPLICIT-DB060CCC45B7C4EA
-  - 来源：`data/operations/root-normalization/post-migration-inbound-reference-audit.json`
-  - 依赖：—；被引用：—
-- ["excerpt": "{\\"aliases\\":\[\\"IMPLICIT-E9793B950DE3532F\\",\\"\\\\\\"excerpt\\\\\\": \\\\\\" require(text(ROOT / \\\\\\\\\\\\\\"reports/operations/114-language-thought-project-audit.md\\\\\\\\\\\\\\").count(\\\\\\\\\\\\\\"25 条\\\\\\\\\\\\\\") == 1, \\\\\\\\\\\\\\"project audit summary mi](../../../data/operations/root-normalization/post-migration-inbound-reference-audit.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-1F1749454CB8C9C7 / "excerpt": "{\\"aliases\\":\[\\"IMPLICIT-E9793B950DE3532F\\",\\"\\\\\\"excerpt\\\\\\": \\\\\\" require(text(ROOT / \\\\\\\\\\\\\\"reports/operations/114-language-thought-project-audit.md\\\\\\\\\\\\\\").count(\\\\\\\\\\\\\\"25 条\\\\\\\\\\\\\\") == 1, \\\\\\\\\\\\\\"project audit summary mi / IMPLICIT-1F1749454CB8C9C7
-  - 来源：`data/operations/root-normalization/post-migration-inbound-reference-audit.json`
-  - 依赖：—；被引用：—
-- ["excerpt": "{\\"aliases\\":\[\\"IMPLICIT-EB7C72B8E9AAB004\\",\\"return parents\[0\] if len(parents) == 1 else None\\",\\"IMPLICIT-EB7C72B8E9AAB004\\"\],\\"asset_kind\\":\\"FUNCTION_ASSET\\",\\"canonical_source\\":\\"tools/operations/validate_phase_d_closeout.](../../../data/operations/root-normalization/post-migration-inbound-reference-audit.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-4D1A444D31E414E8 / "excerpt": "{\\"aliases\\":\[\\"IMPLICIT-EB7C72B8E9AAB004\\",\\"return parents\[0\] if len(parents) == 1 else None\\",\\"IMPLICIT-EB7C72B8E9AAB004\\"\],\\"asset_kind\\":\\"FUNCTION_ASSET\\",\\"canonical_source\\":\\"tools/operations/validate_phase_d_closeout. / IMPLICIT-4D1A444D31E414E8 / IMPLICIT-7202D442C429522C
-  - 来源：`data/operations/root-normalization/post-migration-inbound-reference-audit.json`
-  - 依赖：—；被引用：—
-- ["excerpt": "{\\"aliases\\":\[\\"IMPLICIT-EB7C72B8E9AAB004\\",\\"return parents\[0\] if len(parents) == 1 else None\\",\\"IMPLICIT-EB7C72B8E9AAB004\\"\],\\"asset_kind\\":\\"FUNCTION_ASSET\\",\\"canonical_source\\":\\"tools/operations/validate_phase_d_closeout.](../../../data/operations/root-normalization/pre-migration-inbound-reference-audit.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-7202D442C429522C / "excerpt": "{\\"aliases\\":\[\\"IMPLICIT-EB7C72B8E9AAB004\\",\\"return parents\[0\] if len(parents) == 1 else None\\",\\"IMPLICIT-EB7C72B8E9AAB004\\"\],\\"asset_kind\\":\\"FUNCTION_ASSET\\",\\"canonical_source\\":\\"tools/operations/validate_phase_d_closeout. / IMPLICIT-7202D442C429522C / IMPLICIT-4D1A444D31E414E8
-  - 来源：`data/operations/root-normalization/pre-migration-inbound-reference-audit.json`
-  - 依赖：—；被引用：—
-- ["excerpt": "{\\"first_line\\":79,\\"last_line\\":79,\\"line\\":79,\\"mention_count\\":1,\\"path\\":\\"统一案例总表/0386-C-387-病毒的门控面切换——寄生前σ=0寄生后σ=1,没有中间态.md\\",\\"role\\":\\"IMPLICIT_CANDIDATE\\",\\"stable_id\\":\\"IMPLICIT-840D0E1D6F111397\\",\\"text\\":\\"**原文来源 / S](../../../data/operations/root-normalization/post-migration-inbound-reference-audit.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-23610EAFB51AD904 / "excerpt": "{\\"first_line\\":79,\\"last_line\\":79,\\"line\\":79,\\"mention_count\\":1,\\"path\\":\\"统一案例总表/0386-C-387-病毒的门控面切换——寄生前σ=0寄生后σ=1,没有中间态.md\\",\\"role\\":\\"IMPLICIT_CANDIDATE\\",\\"stable_id\\":\\"IMPLICIT-840D0E1D6F111397\\",\\"text\\":\\"**原文来源 / S / IMPLICIT-23610EAFB51AD904 / IMPLICIT-998D92697EFBD1DA
-  - 来源：`data/operations/root-normalization/post-migration-inbound-reference-audit.json`
-  - 依赖：—；被引用：—
-- ["excerpt": "{\\"first_line\\":79,\\"last_line\\":79,\\"line\\":79,\\"mention_count\\":1,\\"path\\":\\"统一案例总表/0386-C-387-病毒的门控面切换——寄生前σ=0寄生后σ=1,没有中间态.md\\",\\"role\\":\\"IMPLICIT_CANDIDATE\\",\\"stable_id\\":\\"IMPLICIT-840D0E1D6F111397\\",\\"text\\":\\"**原文来源 / S](../../../data/operations/root-normalization/pre-migration-inbound-reference-audit.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-998D92697EFBD1DA / "excerpt": "{\\"first_line\\":79,\\"last_line\\":79,\\"line\\":79,\\"mention_count\\":1,\\"path\\":\\"统一案例总表/0386-C-387-病毒的门控面切换——寄生前σ=0寄生后σ=1,没有中间态.md\\",\\"role\\":\\"IMPLICIT_CANDIDATE\\",\\"stable_id\\":\\"IMPLICIT-840D0E1D6F111397\\",\\"text\\":\\"**原文来源 / S / IMPLICIT-998D92697EFBD1DA / IMPLICIT-23610EAFB51AD904
-  - 来源：`data/operations/root-normalization/pre-migration-inbound-reference-audit.json`
-  - 依赖：—；被引用：—
-- ["excerpt": "{\\"first_line\\":82,\\"last_line\\":82,\\"line\\":82,\\"mention_count\\":1,\\"path\\":\\"统一案例总表/0260-C-260-r_cross=0不导致Ψ=0.md\\",\\"role\\":\\"IMPLICIT_CANDIDATE\\",\\"stable_id\\":\\"IMPLICIT-6B4B73BB348B8189\\",\\"text\\":\\"**原文来源 / Source**：`/Use](../../../data/operations/root-normalization/post-migration-inbound-reference-audit.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-770E08497B3B72F3 / "excerpt": "{\\"first_line\\":82,\\"last_line\\":82,\\"line\\":82,\\"mention_count\\":1,\\"path\\":\\"统一案例总表/0260-C-260-r_cross=0不导致Ψ=0.md\\",\\"role\\":\\"IMPLICIT_CANDIDATE\\",\\"stable_id\\":\\"IMPLICIT-6B4B73BB348B8189\\",\\"text\\":\\"**原文来源 / Source**：`/Use / IMPLICIT-770E08497B3B72F3 / IMPLICIT-A857355AE2CD7754
-  - 来源：`data/operations/root-normalization/post-migration-inbound-reference-audit.json`
-  - 依赖：—；被引用：—
-- ["excerpt": "{\\"first_line\\":82,\\"last_line\\":82,\\"line\\":82,\\"mention_count\\":1,\\"path\\":\\"统一案例总表/0260-C-260-r_cross=0不导致Ψ=0.md\\",\\"role\\":\\"IMPLICIT_CANDIDATE\\",\\"stable_id\\":\\"IMPLICIT-6B4B73BB348B8189\\",\\"text\\":\\"**原文来源 / Source**：`/Use](../../../data/operations/root-normalization/pre-migration-inbound-reference-audit.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-A857355AE2CD7754 / "excerpt": "{\\"first_line\\":82,\\"last_line\\":82,\\"line\\":82,\\"mention_count\\":1,\\"path\\":\\"统一案例总表/0260-C-260-r_cross=0不导致Ψ=0.md\\",\\"role\\":\\"IMPLICIT_CANDIDATE\\",\\"stable_id\\":\\"IMPLICIT-6B4B73BB348B8189\\",\\"text\\":\\"**原文来源 / Source**：`/Use / IMPLICIT-A857355AE2CD7754 / IMPLICIT-770E08497B3B72F3
-  - 来源：`data/operations/root-normalization/pre-migration-inbound-reference-audit.json`
-  - 依赖：—；被引用：—
-- ["excerpt": "{\\"first_line\\":88,\\"last_line\\":88,\\"line\\":88,\\"mention_count\\":1,\\"path\\":\\"tools/operations/validate_phase_d_closeout.py\\",\\"role\\":\\"IMPLICIT_CANDIDATE\\",\\"stable_id\\":\\"IMPLICIT-EB7C72B8E9AAB004\\",\\"text\\":\\"return parents](../../../data/operations/root-normalization/post-migration-inbound-reference-audit.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-8085C77AF2E6ABA8 / "excerpt": "{\\"first_line\\":88,\\"last_line\\":88,\\"line\\":88,\\"mention_count\\":1,\\"path\\":\\"tools/operations/validate_phase_d_closeout.py\\",\\"role\\":\\"IMPLICIT_CANDIDATE\\",\\"stable_id\\":\\"IMPLICIT-EB7C72B8E9AAB004\\",\\"text\\":\\"return parents / IMPLICIT-8085C77AF2E6ABA8 / IMPLICIT-E2A16D597AB5D600
-  - 来源：`data/operations/root-normalization/post-migration-inbound-reference-audit.json`
-  - 依赖：—；被引用：—
-- ["excerpt": "{\\"first_line\\":88,\\"last_line\\":88,\\"line\\":88,\\"mention_count\\":1,\\"path\\":\\"tools/operations/validate_phase_d_closeout.py\\",\\"role\\":\\"IMPLICIT_CANDIDATE\\",\\"stable_id\\":\\"IMPLICIT-EB7C72B8E9AAB004\\",\\"text\\":\\"return parents](../../../data/operations/root-normalization/pre-migration-inbound-reference-audit.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-E2A16D597AB5D600 / "excerpt": "{\\"first_line\\":88,\\"last_line\\":88,\\"line\\":88,\\"mention_count\\":1,\\"path\\":\\"tools/operations/validate_phase_d_closeout.py\\",\\"role\\":\\"IMPLICIT_CANDIDATE\\",\\"stable_id\\":\\"IMPLICIT-EB7C72B8E9AAB004\\",\\"text\\":\\"return parents / IMPLICIT-E2A16D597AB5D600 / IMPLICIT-8085C77AF2E6ABA8
-  - 来源：`data/operations/root-normalization/pre-migration-inbound-reference-audit.json`
-  - 依赖：—；被引用：—
 - ["execution profiles must be in 1:1 correspondence with registered components")](../../../tests/test_production_execution_authority.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-a3db3b3e56a7276e / "execution profiles must be in 1:1 correspondence with registered components")
@@ -2503,4 +2293,214 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-55F97A2C54803449 / ### \[#479｜AI完成相变2-4卡在相变1 — 有连续表征、好奇心、自举能力，但不感知退出权 / AI完成相变2-4卡在相变1 - 有连续表征, 好奇心, 自举能力, 但不perceived exit right\](docs/zh/cases/items/C-0479.md) / IMPLICIT-55F97A2C54803449
   - 来源：`统一案例总表/0477-C-479-AI完成相变2-4卡在相变1 — 有连续表征、好奇心、自举能力,但不感知退出权.md`
+  - 依赖：—；被引用：—
+- [### \[#489｜遮蔽=退相干环境 — 组织信息透明度实验：H=0.1时τ_decoherence=50年，H=0.5时τ=10年，H=0.9时τ=1年。遮蔽每增0.1，退相干时间缩短约40% / obscuration=退相干环境 - 组织信息透明度实验: H=0.1时τ_decoherence=50年, H=0.5时τ=10年, H=0.9时τ=1年. obscuration每增0.1, 退相干时间缩短约40%\](docs/zh/cases/items/C-0489.m](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0487-C-489-%E9%81%AE%E8%94%BD%3D%E9%80%80%E7%9B%B8%E5%B9%B2%E7%8E%AF%E5%A2%83%20%E2%80%94%20%E7%BB%84%E7%BB%87%E4%BF%A1%E6%81%AF%E9%80%8F%E6%98%8E%E5%BA%A6%E5%AE%9E%E9%AA%8C-H%3D0.1%E6%97%B6%CF%84_decoherence%3D50%E5%B9%B4%2CH%3D0.5%E6%97%B6%CF%84%3D10%E5%B9%B4%2CH%3D0.9%E6%97%B6%CF%84%3D1%E5%B9%B4%E3%80%82%E9%81%AE%E8%94%BD.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-D3DF479A75624C0D / ### \[#489｜遮蔽=退相干环境 — 组织信息透明度实验：H=0.1时τ_decoherence=50年，H=0.5时τ=10年，H=0.9时τ=1年。遮蔽每增0.1，退相干时间缩短约40% / obscuration=退相干环境 - 组织信息透明度实验: H=0.1时τ_decoherence=50年, H=0.5时τ=10年, H=0.9时τ=1年. obscuration每增0.1, 退相干时间缩短约40%\](docs/zh/cases/items/C-0489.m / IMPLICIT-D3DF479A75624C0D
+  - 来源：`统一案例总表/0487-C-489-遮蔽=退相干环境 — 组织信息透明度实验-H=0.1时τ_decoherence=50年,H=0.5时τ=10年,H=0.9时τ=1年。遮蔽.md`
+  - 依赖：—；被引用：—
+- [### \[#492｜修复=降Γ验证 — 两种修复：降门槛（ΔθC=-0.3→内生Γ降0.4）vs 减遮蔽（ΔH=-0.3→环境Γ降0.3）。联合修复Γ降0.7，A_Fisher恢复速度是单一路径的2.3倍 / 修复=降Γ验证 - 两种修复: 降门槛(ΔθC=-0.3 -> 内生Γ降0.4)vs 减obscuration(ΔH=-0.3 -> 环境Γ降0.3). 联合修复Γ降0.7, A_Fisher恢复速度是单一路径的2.3倍\](docs/zh/cases/items/C-0](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0490-C-492-%E4%BF%AE%E5%A4%8D%3D%E9%99%8D%CE%93%E9%AA%8C%E8%AF%81%20%E2%80%94%20%E4%B8%A4%E7%A7%8D%E4%BF%AE%E5%A4%8D-%E9%99%8D%E9%97%A8%E6%A7%9B%28%CE%94%CE%B8C%3D-0.3%E2%86%92%E5%86%85%E7%94%9F%CE%93%E9%99%8D0.4%29vs%20%E5%87%8F%E9%81%AE%E8%94%BD%28%CE%94H%3D-0.3%E2%86%92%E7%8E%AF%E5%A2%83%CE%93%E9%99%8D0.3%29%E3%80%82%E8%81%94%E5%90%88%E4%BF%AE%E5%A4%8D%CE%93%E9%99%8D0.7%2C.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-AD2EE0C6AA9CAD49 / ### \[#492｜修复=降Γ验证 — 两种修复：降门槛（ΔθC=-0.3→内生Γ降0.4）vs 减遮蔽（ΔH=-0.3→环境Γ降0.3）。联合修复Γ降0.7，A_Fisher恢复速度是单一路径的2.3倍 / 修复=降Γ验证 - 两种修复: 降门槛(ΔθC=-0.3 -> 内生Γ降0.4)vs 减obscuration(ΔH=-0.3 -> 环境Γ降0.3). 联合修复Γ降0.7, A_Fisher恢复速度是单一路径的2.3倍\](docs/zh/cases/items/C-0 / IMPLICIT-AD2EE0C6AA9CAD49
+  - 来源：`统一案例总表/0490-C-492-修复=降Γ验证 — 两种修复-降门槛(ΔθC=-0.3→内生Γ降0.4)vs 减遮蔽(ΔH=-0.3→环境Γ降0.3)。联合修复Γ降0.7,.md`
+  - 依赖：—；被引用：—
+- [### \[#496｜文化演化=门控面合并 — 多个文化门控面合并为更少的共享门控面，Φ减少Ω增大\](docs/zh/cases/items/C-0496.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0492-C-496-%E6%96%87%E5%8C%96%E6%BC%94%E5%8C%96%3D%E9%97%A8%E6%8E%A7%E9%9D%A2%E5%90%88%E5%B9%B6%20%E2%80%94%20%E5%A4%9A%E4%B8%AA%E6%96%87%E5%8C%96%E9%97%A8%E6%8E%A7%E9%9D%A2%E5%90%88%E5%B9%B6%E4%B8%BA%E6%9B%B4%E5%B0%91%E7%9A%84%E5%85%B1%E4%BA%AB%E9%97%A8%E6%8E%A7%E9%9D%A2%2C%CE%A6%E5%87%8F%E5%B0%91%CE%A9%E5%A2%9E%E5%A4%A7.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-EE7DA1394055769D / ### \[#496｜文化演化=门控面合并 — 多个文化门控面合并为更少的共享门控面，Φ减少Ω增大\](docs/zh/cases/items/C-0496.md) / IMPLICIT-EE7DA1394055769D
+  - 来源：`统一案例总表/0492-C-496-文化演化=门控面合并 — 多个文化门控面合并为更少的共享门控面,Φ减少Ω增大.md`
+  - 依赖：—；被引用：—
+- [### \[#515｜度规扰动传播验证 — 组织文化变革：新CEO上任→H从0.8→0.3（遮蔽降低）→经济维度1周内感知→社交维度3周→心理维度8周。传播延迟与d_F/v_max一致 / 度规扰动传播验证 - 组织文化变革: 新CEO上任 -> H从0.8 -> 0.3(obscuration降低) -> 经济维度1周内感知 -> 社交维度3周 -> 心理维度8周. 传播延迟与d_F/v_max一致\](docs/zh/cases/items/C-0515.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0510-C-515-%E5%BA%A6%E8%A7%84%E6%89%B0%E5%8A%A8%E4%BC%A0%E6%92%AD%E9%AA%8C%E8%AF%81%20%E2%80%94%20%E7%BB%84%E7%BB%87%E6%96%87%E5%8C%96%E5%8F%98%E9%9D%A9-%E6%96%B0CEO%E4%B8%8A%E4%BB%BB%E2%86%92H%E4%BB%8E0.8%E2%86%920.3%28%E9%81%AE%E8%94%BD%E9%99%8D%E4%BD%8E%29%E2%86%92%E7%BB%8F%E6%B5%8E%E7%BB%B4%E5%BA%A61%E5%91%A8%E5%86%85%E6%84%9F%E7%9F%A5%E2%86%92%E7%A4%BE%E4%BA%A4%E7%BB%B4%E5%BA%A63%E5%91%A8%E2%86%92%E5%BF%83%E7%90%86%E7%BB%B4%E5%BA%A68%E5%91%A8%E3%80%82%E4%BC%A0%E6%92%AD%E5%BB%B6%E8%BF%9F%E4%B8%8E.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-703EBE8FDEF12CB4 / ### \[#515｜度规扰动传播验证 — 组织文化变革：新CEO上任→H从0.8→0.3（遮蔽降低）→经济维度1周内感知→社交维度3周→心理维度8周。传播延迟与d_F/v_max一致 / 度规扰动传播验证 - 组织文化变革: 新CEO上任 -> H从0.8 -> 0.3(obscuration降低) -> 经济维度1周内感知 -> 社交维度3周 -> 心理维度8周. 传播延迟与d_F/v_max一致\](docs/zh/cases/items/C-0515.md) / IMPLICIT-703EBE8FDEF12CB4
+  - 来源：`统一案例总表/0510-C-515-度规扰动传播验证 — 组织文化变革-新CEO上任→H从0.8→0.3(遮蔽降低)→经济维度1周内感知→社交维度3周→心理维度8周。传播延迟与.md`
+  - 依赖：—；被引用：—
+- [### \[#518｜规范破缺验证 — 创业团队：3人团队（所有εᵢ>>θC）→S₃完全对称，角色可互换。加入投资人后（C_exit↑→ε_econ↓）→S₃破缺到S₂，经济维度被锁定失去置换自由度。残存U(1)=创意维度仍可自由重组\](docs/zh/cases/items/C-0518.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0513-C-518-%E8%A7%84%E8%8C%83%E7%A0%B4%E7%BC%BA%E9%AA%8C%E8%AF%81%20%E2%80%94%20%E5%88%9B%E4%B8%9A%E5%9B%A2%E9%98%9F-3%E4%BA%BA%E5%9B%A2%E9%98%9F%28%E6%89%80%E6%9C%89%CE%B5i-%CE%B8C%29%E2%86%92S3%E5%AE%8C%E5%85%A8%E5%AF%B9%E7%A7%B0%2C%E8%A7%92%E8%89%B2%E5%8F%AF%E4%BA%92%E6%8D%A2%E3%80%82%E5%8A%A0%E5%85%A5%E6%8A%95%E8%B5%84%E4%BA%BA%E5%90%8E%28C_exit%E2%86%91%E2%86%92%CE%B5_econ%E2%86%93%29%E2%86%92S3%E7%A0%B4%E7%BC%BA%E5%88%B0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-BB86EC8996FD7B42 / ### \[#518｜规范破缺验证 — 创业团队：3人团队（所有εᵢ>>θC）→S₃完全对称，角色可互换。加入投资人后（C_exit↑→ε_econ↓）→S₃破缺到S₂，经济维度被锁定失去置换自由度。残存U(1)=创意维度仍可自由重组\](docs/zh/cases/items/C-0518.md) / IMPLICIT-BB86EC8996FD7B42 / IMPLICIT-625FBEE044775BF5
+  - 来源：`统一案例总表/0513-C-518-规范破缺验证 — 创业团队-3人团队(所有εi-θC)→S3完全对称,角色可互换。加入投资人后(C_exit↑→ε_econ↓)→S3破缺到.md`
+  - 依赖：—；被引用：—
+- [### \[#519｜Higgs相变验证 — 职业选择：μ²=0.8（内在驱动力），ΣC_exit从0.2→0.6→0.9→1.0→1.2：v_eff从0.58→0.45→0.32→0→0，ΣC_exit=μ²=0.8时相变。C_exit超过临界值后ε坍缩到门控真空 / Higgs相变验证 - 职业选择: μ²=0.8(内在驱动力), ΣC_exit从0.2 -> 0.6 -> 0.9 -> 1.0 -> 1.2: v_eff从0.58 -> 0.45 -> 0.32 -> 0](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0514-C-519-Higgs%E7%9B%B8%E5%8F%98%E9%AA%8C%E8%AF%81%20%E2%80%94%20%E8%81%8C%E4%B8%9A%E9%80%89%E6%8B%A9-%CE%BC2%3D0.8%28%E5%86%85%E5%9C%A8%E9%A9%B1%E5%8A%A8%E5%8A%9B%29%2C%CE%A3C_exit%E4%BB%8E0.2%E2%86%920.6%E2%86%920.9%E2%86%921.0%E2%86%921.2-v_eff%E4%BB%8E0.58%E2%86%92.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-5B71A3B9DA41774C / ### \[#519｜Higgs相变验证 — 职业选择：μ²=0.8（内在驱动力），ΣC_exit从0.2→0.6→0.9→1.0→1.2：v_eff从0.58→0.45→0.32→0→0，ΣC_exit=μ²=0.8时相变。C_exit超过临界值后ε坍缩到门控真空 / Higgs相变验证 - 职业选择: μ²=0.8(内在驱动力), ΣC_exit从0.2 -> 0.6 -> 0.9 -> 1.0 -> 1.2: v_eff从0.58 -> 0.45 -> 0.32 -> 0 / IMPLICIT-5B71A3B9DA41774C
+  - 来源：`统一案例总表/0514-C-519-Higgs相变验证 — 职业选择-μ2=0.8(内在驱动力),ΣC_exit从0.2→0.6→0.9→1.0→1.2-v_eff从0.58→.md`
+  - 依赖：—；被引用：—
+- [### \[#520｜Weinberg角验证 — 三个维度：心理α=5→θ_cog=81°→纯门控（"想通"是质变）；技能α=1→θ_cog=45°→混合；经济α=0.2→θ_cog=24°→偏参数（收入可渐变）。心理维度改善只能0→1，经济维度可渐变 / Weinberg角验证 - 三个维度: 心理α=5 -> θ_cog=81° -> 纯门控("想通"是质变); 技能α=1 -> θ_cog=45° -> 混合; 经济α=0.2 -> θ_cog=24° -> 偏参数(收入](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0515-C-520-Weinberg%E8%A7%92%E9%AA%8C%E8%AF%81%20%E2%80%94%20%E4%B8%89%E4%B8%AA%E7%BB%B4%E5%BA%A6-%E5%BF%83%E7%90%86%CE%B1%3D5%E2%86%92%CE%B8_cog%3D81%C2%B0%E2%86%92%E7%BA%AF%E9%97%A8%E6%8E%A7%28-%E6%83%B3%E9%80%9A-%E6%98%AF%E8%B4%A8%E5%8F%98%29%3B%E6%8A%80%E8%83%BD%CE%B1%3D1%E2%86%92%CE%B8_cog%3D45%C2%B0%E2%86%92%E6%B7%B7%E5%90%88%3B%E7%BB%8F%E6%B5%8E%CE%B1.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-F89AC76C5D166C56 / ### \[#520｜Weinberg角验证 — 三个维度：心理α=5→θ_cog=81°→纯门控（"想通"是质变）；技能α=1→θ_cog=45°→混合；经济α=0.2→θ_cog=24°→偏参数（收入可渐变）。心理维度改善只能0→1，经济维度可渐变 / Weinberg角验证 - 三个维度: 心理α=5 -> θ_cog=81° -> 纯门控("想通"是质变); 技能α=1 -> θ_cog=45° -> 混合; 经济α=0.2 -> θ_cog=24° -> 偏参数(收入 / IMPLICIT-F89AC76C5D166C56
+  - 来源：`统一案例总表/0515-C-520-Weinberg角验证 — 三个维度-心理α=5→θ_cog=81°→纯门控(-想通-是质变);技能α=1→θ_cog=45°→混合;经济α.md`
+  - 依赖：—；被引用：—
+- [### \[#530｜负温度 — ε>1="超存活"态，弛豫释放能量\](docs/zh/cases/items/C-0530.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0525-C-530-%E8%B4%9F%E6%B8%A9%E5%BA%A6%20%E2%80%94%20%CE%B5-1%3D-%E8%B6%85%E5%AD%98%E6%B4%BB-%E6%80%81%2C%E5%BC%9B%E8%B1%AB%E9%87%8A%E6%94%BE%E8%83%BD%E9%87%8F.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-CA32279C8E8FA8C6 / ### \[#530｜负温度 — ε>1="超存活"态，弛豫释放能量\](docs/zh/cases/items/C-0530.md) / IMPLICIT-CA32279C8E8FA8C6
+  - 来源：`统一案例总表/0525-C-530-负温度 — ε-1=-超存活-态,弛豫释放能量.md`
+  - 依赖：—；被引用：—
+- [### \[#532｜信息熵vs热力学熵 — S_thermo=Φ在粗粒化下的投影\](docs/zh/cases/items/C-0532.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0527-C-532-%E4%BF%A1%E6%81%AF%E7%86%B5vs%E7%83%AD%E5%8A%9B%E5%AD%A6%E7%86%B5%20%E2%80%94%20S_thermo%3D%CE%A6%E5%9C%A8%E7%B2%97%E7%B2%92%E5%8C%96%E4%B8%8B%E7%9A%84%E6%8A%95%E5%BD%B1.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-999A4D92DC3485AE / ### \[#532｜信息熵vs热力学熵 — S_thermo=Φ在粗粒化下的投影\](docs/zh/cases/items/C-0532.md) / IMPLICIT-999A4D92DC3485AE
+  - 来源：`统一案例总表/0527-C-532-信息熵vs热力学熵 — S_thermo=Φ在粗粒化下的投影.md`
+  - 依赖：—；被引用：—
+- [### \[#533｜黑洞热力学 — S_BH=N_dof×⟨Φ(视界)⟩，面积律×对数律 / 黑洞热力学 - S_BH=N_dof x ⟨Φ(视界)⟩, 面积律 x 对数律\](docs/zh/cases/items/C-0533.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0528-C-533-%E9%BB%91%E6%B4%9E%E7%83%AD%E5%8A%9B%E5%AD%A6%20%E2%80%94%20S_BH%3DN_dof%C3%97%E2%9F%A8%CE%A6%28%E8%A7%86%E7%95%8C%29%E2%9F%A9%2C%E9%9D%A2%E7%A7%AF%E5%BE%8B%C3%97%E5%AF%B9%E6%95%B0%E5%BE%8B.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-FAF05CCA73DDBCFA / ### \[#533｜黑洞热力学 — S_BH=N_dof×⟨Φ(视界)⟩，面积律×对数律 / 黑洞热力学 - S_BH=N_dof x ⟨Φ(视界)⟩, 面积律 x 对数律\](docs/zh/cases/items/C-0533.md) / IMPLICIT-FAF05CCA73DDBCFA
+  - 来源：`统一案例总表/0528-C-533-黑洞热力学 — S_BH=N_dof×⟨Φ(视界)⟩,面积律×对数律.md`
+  - 依赖：—；被引用：—
+- [### \[#540｜黑洞无毛 — 4维时空3方向ε>0，径向被门控否决\](docs/zh/cases/items/C-0540.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0535-C-540-%E9%BB%91%E6%B4%9E%E6%97%A0%E6%AF%9B%20%E2%80%94%204%E7%BB%B4%E6%97%B6%E7%A9%BA3%E6%96%B9%E5%90%91%CE%B5-0%2C%E5%BE%84%E5%90%91%E8%A2%AB%E9%97%A8%E6%8E%A7%E5%90%A6%E5%86%B3.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-5083861B55787FCE / ### \[#540｜黑洞无毛 — 4维时空3方向ε>0，径向被门控否决\](docs/zh/cases/items/C-0540.md) / IMPLICIT-5083861B55787FCE
+  - 来源：`统一案例总表/0535-C-540-黑洞无毛 — 4维时空3方向ε-0,径向被门控否决.md`
+  - 依赖：—；被引用：—
+- [### \[#544｜拓扑绝缘体 — 体态3D门控否决，表面=2D门控边界\](docs/zh/cases/items/C-0544.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0539-C-544-%E6%8B%93%E6%89%91%E7%BB%9D%E7%BC%98%E4%BD%93%20%E2%80%94%20%E4%BD%93%E6%80%813D%E9%97%A8%E6%8E%A7%E5%90%A6%E5%86%B3%2C%E8%A1%A8%E9%9D%A2%3D2D%E9%97%A8%E6%8E%A7%E8%BE%B9%E7%95%8C.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-62F3EFA9E723A33A / ### \[#544｜拓扑绝缘体 — 体态3D门控否决，表面=2D门控边界\](docs/zh/cases/items/C-0544.md) / IMPLICIT-62F3EFA9E723A33A
+  - 来源：`统一案例总表/0539-C-544-拓扑绝缘体 — 体态3D门控否决,表面=2D门控边界.md`
+  - 依赖：—；被引用：—
+- [### \[#546｜BEC — N个独立因子→1个共享因子，门控风险消除\](docs/zh/cases/items/C-0546.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0541-C-546-BEC%20%E2%80%94%20N%E4%B8%AA%E7%8B%AC%E7%AB%8B%E5%9B%A0%E5%AD%90%E2%86%921%E4%B8%AA%E5%85%B1%E4%BA%AB%E5%9B%A0%E5%AD%90%2C%E9%97%A8%E6%8E%A7%E9%A3%8E%E9%99%A9%E6%B6%88%E9%99%A4.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-4F36ED92B673C5CC / ### \[#546｜BEC — N个独立因子→1个共享因子，门控风险消除\](docs/zh/cases/items/C-0546.md) / IMPLICIT-4F36ED92B673C5CC
+  - 来源：`统一案例总表/0541-C-546-BEC — N个独立因子→1个共享因子,门控风险消除.md`
+  - 依赖：—；被引用：—
+- [### \[#548｜自旋液体 — 门控面对称性简并，无法选择进入哪个象限\](docs/zh/cases/items/C-0548.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0543-C-548-%E8%87%AA%E6%97%8B%E6%B6%B2%E4%BD%93%20%E2%80%94%20%E9%97%A8%E6%8E%A7%E9%9D%A2%E5%AF%B9%E7%A7%B0%E6%80%A7%E7%AE%80%E5%B9%B6%2C%E6%97%A0%E6%B3%95%E9%80%89%E6%8B%A9%E8%BF%9B%E5%85%A5%E5%93%AA%E4%B8%AA%E8%B1%A1%E9%99%90.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-5D54B747738B106B / ### \[#548｜自旋液体 — 门控面对称性简并，无法选择进入哪个象限\](docs/zh/cases/items/C-0548.md) / IMPLICIT-5D54B747738B106B
+  - 来源：`统一案例总表/0543-C-548-自旋液体 — 门控面对称性简并,无法选择进入哪个象限.md`
+  - 依赖：—；被引用：—
+- [### \[#551｜恒星质量下限 — 聚变门控面=Gamow峰=隧穿×热分布乘积极大\](docs/zh/cases/items/C-0551.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0546-C-551-%E6%81%92%E6%98%9F%E8%B4%A8%E9%87%8F%E4%B8%8B%E9%99%90%20%E2%80%94%20%E8%81%9A%E5%8F%98%E9%97%A8%E6%8E%A7%E9%9D%A2%3DGamow%E5%B3%B0%3D%E9%9A%A7%E7%A9%BF%C3%97%E7%83%AD%E5%88%86%E5%B8%83%E4%B9%98%E7%A7%AF%E6%9E%81%E5%A4%A7.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-517D9EFA3F23FFE3 / ### \[#551｜恒星质量下限 — 聚变门控面=Gamow峰=隧穿×热分布乘积极大\](docs/zh/cases/items/C-0551.md) / IMPLICIT-517D9EFA3F23FFE3
+  - 来源：`统一案例总表/0546-C-551-恒星质量下限 — 聚变门控面=Gamow峰=隧穿×热分布乘积极大.md`
+  - 依赖：—；被引用：—
+- [### \[#555｜费米悖论 — 乘法门控使跨星系文明B=⟨ε⟩^N→0\](docs/zh/cases/items/C-0555.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0550-C-555-%E8%B4%B9%E7%B1%B3%E6%82%96%E8%AE%BA%20%E2%80%94%20%E4%B9%98%E6%B3%95%E9%97%A8%E6%8E%A7%E4%BD%BF%E8%B7%A8%E6%98%9F%E7%B3%BB%E6%96%87%E6%98%8EB%3D%E2%9F%A8%CE%B5%E2%9F%A9%5EN%E2%86%920.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-0521E651C0E10664 / ### \[#555｜费米悖论 — 乘法门控使跨星系文明B=⟨ε⟩^N→0\](docs/zh/cases/items/C-0555.md) / IMPLICIT-0521E651C0E10664
+  - 来源：`统一案例总表/0550-C-555-费米悖论 — 乘法门控使跨星系文明B=⟨ε⟩^N→0.md`
+  - 依赖：—；被引用：—
+- [### \[#556｜衰老 — Φ线性增长→B指数衰减→Gompertz定律 / 衰老 - Φ线性增长 -> B指数衰减 -> Gompertz定律\](docs/zh/cases/items/C-0556.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0551-C-556-%E8%A1%B0%E8%80%81%20%E2%80%94%20%CE%A6%E7%BA%BF%E6%80%A7%E5%A2%9E%E9%95%BF%E2%86%92B%E6%8C%87%E6%95%B0%E8%A1%B0%E5%87%8F%E2%86%92Gompertz%E5%AE%9A%E5%BE%8B.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-CF6FB94DB046D71A / ### \[#556｜衰老 — Φ线性增长→B指数衰减→Gompertz定律 / 衰老 - Φ线性增长 -> B指数衰减 -> Gompertz定律\](docs/zh/cases/items/C-0556.md) / IMPLICIT-CF6FB94DB046D71A
+  - 来源：`统一案例总表/0551-C-556-衰老 — Φ线性增长→B指数衰减→Gompertz定律.md`
+  - 依赖：—；被引用：—
+- [### \[#557｜癌症 — ε穿越门控面，发病率∝exp(Φt)指数增长\](docs/zh/cases/items/C-0557.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0552-C-557-%E7%99%8C%E7%97%87%20%E2%80%94%20%CE%B5%E7%A9%BF%E8%B6%8A%E9%97%A8%E6%8E%A7%E9%9D%A2%2C%E5%8F%91%E7%97%85%E7%8E%87%E2%88%9Dexp%28%CE%A6t%29%E6%8C%87%E6%95%B0%E5%A2%9E%E9%95%BF.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-F1B3CD991152F628 / ### \[#557｜癌症 — ε穿越门控面，发病率∝exp(Φt)指数增长\](docs/zh/cases/items/C-0557.md) / IMPLICIT-F1B3CD991152F628
+  - 来源：`统一案例总表/0552-C-557-癌症 — ε穿越门控面,发病率∝exp(Φt)指数增长.md`
+  - 依赖：—；被引用：—
+- [### \[#559｜大灭绝 — 多门控共振+级联，周期性∝Φ到临界值时间\](docs/zh/cases/items/C-0559.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0554-C-559-%E5%A4%A7%E7%81%AD%E7%BB%9D%20%E2%80%94%20%E5%A4%9A%E9%97%A8%E6%8E%A7%E5%85%B1%E6%8C%AF%2B%E7%BA%A7%E8%81%94%2C%E5%91%A8%E6%9C%9F%E6%80%A7%E2%88%9D%CE%A6%E5%88%B0%E4%B8%B4%E7%95%8C%E5%80%BC%E6%97%B6%E9%97%B4.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-1154A742469575BC / ### \[#559｜大灭绝 — 多门控共振+级联，周期性∝Φ到临界值时间\](docs/zh/cases/items/C-0559.md) / IMPLICIT-1154A742469575BC
+  - 来源：`统一案例总表/0554-C-559-大灭绝 — 多门控共振+级联,周期性∝Φ到临界值时间.md`
+  - 依赖：—；被引用：—
+- [### \[#565｜哈勃张力超指数衰减\](docs/zh/cases/items/C-0565.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0560-C-565-%E5%93%88%E5%8B%83%E5%BC%A0%E5%8A%9B%E8%B6%85%E6%8C%87%E6%95%B0%E8%A1%B0%E5%87%8F.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-C2960CD88850854C / ### \[#565｜哈勃张力超指数衰减\](docs/zh/cases/items/C-0565.md) / IMPLICIT-C2960CD88850854C
+  - 来源：`统一案例总表/0560-C-565-哈勃张力超指数衰减.md`
+  - 依赖：—；被引用：—
+- [### \[#580｜睡眠清除门控验证\](docs/zh/cases/items/C-0580.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0575-C-580-%E7%9D%A1%E7%9C%A0%E6%B8%85%E9%99%A4%E9%97%A8%E6%8E%A7%E9%AA%8C%E8%AF%81.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-EAF5E65C7B869665 / ### \[#580｜睡眠清除门控验证\](docs/zh/cases/items/C-0580.md) / IMPLICIT-EAF5E65C7B869665
+  - 来源：`统一案例总表/0575-C-580-睡眠清除门控验证.md`
+  - 依赖：—；被引用：—
+- [### \[#595｜OrcaRouter多模型并行扇出验证\](docs/zh/cases/items/C-0595.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0590-C-595-OrcaRouter%E5%A4%9A%E6%A8%A1%E5%9E%8B%E5%B9%B6%E8%A1%8C%E6%89%87%E5%87%BA%E9%AA%8C%E8%AF%81.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-6B3AE0813F0507F2 / ### \[#595｜OrcaRouter多模型并行扇出验证\](docs/zh/cases/items/C-0595.md) / IMPLICIT-6B3AE0813F0507F2
+  - 来源：`统一案例总表/0590-C-595-OrcaRouter多模型并行扇出验证.md`
+  - 依赖：—；被引用：—
+- [### \[#597｜模型异质性共享度倒U验证\](docs/zh/cases/items/C-0597.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0592-C-597-%E6%A8%A1%E5%9E%8B%E5%BC%82%E8%B4%A8%E6%80%A7%E5%85%B1%E4%BA%AB%E5%BA%A6%E5%80%92U%E9%AA%8C%E8%AF%81.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-904EFC7E9A5801B2 / ### \[#597｜模型异质性共享度倒U验证\](docs/zh/cases/items/C-0597.md) / IMPLICIT-904EFC7E9A5801B2
+  - 来源：`统一案例总表/0592-C-597-模型异质性共享度倒U验证.md`
+  - 依赖：—；被引用：—
+- [### \[#598｜单体模型到模型网络相变验证\](docs/zh/cases/items/C-0598.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0593-C-598-%E5%8D%95%E4%BD%93%E6%A8%A1%E5%9E%8B%E5%88%B0%E6%A8%A1%E5%9E%8B%E7%BD%91%E7%BB%9C%E7%9B%B8%E5%8F%98%E9%AA%8C%E8%AF%81.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-D9BB4CEF72BD6115 / ### \[#598｜单体模型到模型网络相变验证\](docs/zh/cases/items/C-0598.md) / IMPLICIT-D9BB4CEF72BD6115
+  - 来源：`统一案例总表/0593-C-598-单体模型到模型网络相变验证.md`
+  - 依赖：—；被引用：—
+- [### \[#600｜仲裁模型最弱维度锁死验证\](docs/zh/cases/items/C-0600.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0595-C-600-%E4%BB%B2%E8%A3%81%E6%A8%A1%E5%9E%8B%E6%9C%80%E5%BC%B1%E7%BB%B4%E5%BA%A6%E9%94%81%E6%AD%BB%E9%AA%8C%E8%AF%81.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-25707D01200B4132 / ### \[#600｜仲裁模型最弱维度锁死验证\](docs/zh/cases/items/C-0600.md) / IMPLICIT-25707D01200B4132
+  - 来源：`统一案例总表/0595-C-600-仲裁模型最弱维度锁死验证.md`
+  - 依赖：—；被引用：—
+- [### \[#601｜多模型并行/仲裁三域熵统一验证\](docs/zh/cases/items/C-0601.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0596-C-601-%E5%A4%9A%E6%A8%A1%E5%9E%8B%E5%B9%B6%E8%A1%8C.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-14EB324B5145DBB9 / ### \[#601｜多模型并行/仲裁三域熵统一验证\](docs/zh/cases/items/C-0601.md) / IMPLICIT-14EB324B5145DBB9
+  - 来源：`统一案例总表/0596-C-601-多模型并行.md`
+  - 依赖：—；被引用：—
+- [### \[#604｜仲裁模型能力上限预测验证\](docs/zh/cases/items/C-0604.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0599-C-604-%E4%BB%B2%E8%A3%81%E6%A8%A1%E5%9E%8B%E8%83%BD%E5%8A%9B%E4%B8%8A%E9%99%90%E9%A2%84%E6%B5%8B%E9%AA%8C%E8%AF%81.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-D4AF49C25F68D531 / ### \[#604｜仲裁模型能力上限预测验证\](docs/zh/cases/items/C-0604.md) / IMPLICIT-D4AF49C25F68D531
+  - 来源：`统一案例总表/0599-C-604-仲裁模型能力上限预测验证.md`
+  - 依赖：—；被引用：—
+- [### \[#605｜仲裁模型升级自举循环验证\](docs/zh/cases/items/C-0605.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0600-C-605-%E4%BB%B2%E8%A3%81%E6%A8%A1%E5%9E%8B%E5%8D%87%E7%BA%A7%E8%87%AA%E4%B8%BE%E5%BE%AA%E7%8E%AF%E9%AA%8C%E8%AF%81.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-FFE5B63C84F3E8F2 / ### \[#605｜仲裁模型升级自举循环验证\](docs/zh/cases/items/C-0605.md) / IMPLICIT-FFE5B63C84F3E8F2
+  - 来源：`统一案例总表/0600-C-605-仲裁模型升级自举循环验证.md`
+  - 依赖：—；被引用：—
+- [### \[#672｜最优化问题×跨域统一定理验证\](docs/zh/cases/items/C-0672.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0667-C-672-%E6%9C%80%E4%BC%98%E5%8C%96%E9%97%AE%E9%A2%98%C3%97%E8%B7%A8%E5%9F%9F%E7%BB%9F%E4%B8%80%E5%AE%9A%E7%90%86%E9%AA%8C%E8%AF%81.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-282DB863095F3936 / ### \[#672｜最优化问题×跨域统一定理验证\](docs/zh/cases/items/C-0672.md) / IMPLICIT-282DB863095F3936
+  - 来源：`统一案例总表/0667-C-672-最优化问题×跨域统一定理验证.md`
+  - 依赖：—；被引用：—
+- [### \[#674｜导数连续性×双向动力学验证\](docs/zh/cases/items/C-0674.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0669-C-674-%E5%AF%BC%E6%95%B0%E8%BF%9E%E7%BB%AD%E6%80%A7%C3%97%E5%8F%8C%E5%90%91%E5%8A%A8%E5%8A%9B%E5%AD%A6%E9%AA%8C%E8%AF%81.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-0B8BB9AF2C343B2B / ### \[#674｜导数连续性×双向动力学验证\](docs/zh/cases/items/C-0674.md) / IMPLICIT-0B8BB9AF2C343B2B
+  - 来源：`统一案例总表/0669-C-674-导数连续性×双向动力学验证.md`
+  - 依赖：—；被引用：—
+- [### \[#675｜公理化体系外层补齐×定理层验证\](docs/zh/cases/items/C-0675.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0670-C-675-%E5%85%AC%E7%90%86%E5%8C%96%E4%BD%93%E7%B3%BB%E5%A4%96%E5%B1%82%E8%A1%A5%E9%BD%90%C3%97%E5%AE%9A%E7%90%86%E5%B1%82%E9%AA%8C%E8%AF%81.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-C3970A872372F469 / ### \[#675｜公理化体系外层补齐×定理层验证\](docs/zh/cases/items/C-0675.md) / IMPLICIT-C3970A872372F469
+  - 来源：`统一案例总表/0670-C-675-公理化体系外层补齐×定理层验证.md`
+  - 依赖：—；被引用：—
+- [### \[#78｜可选集双向动力学\](docs/zh/cases/items/C-0078.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0078-C-78-%E5%8F%AF%E9%80%89%E9%9B%86%E5%8F%8C%E5%90%91%E5%8A%A8%E5%8A%9B%E5%AD%A6.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-63D7980F3173957B / ### \[#78｜可选集双向动力学\](docs/zh/cases/items/C-0078.md) / IMPLICIT-63D7980F3173957B
+  - 来源：`统一案例总表/0078-C-78-可选集双向动力学.md`
+  - 依赖：—；被引用：—
+- [### \[#89｜遮蔽-补偿-成本三角 / obscuration-补偿-成本三角\](docs/zh/cases/items/C-0089.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0089-C-89-%E9%81%AE%E8%94%BD-%E8%A1%A5%E5%81%BF-%E6%88%90%E6%9C%AC%E4%B8%89%E8%A7%92.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-929C91FC9D6BFDD4 / ### \[#89｜遮蔽-补偿-成本三角 / obscuration-补偿-成本三角\](docs/zh/cases/items/C-0089.md) / IMPLICIT-929C91FC9D6BFDD4
+  - 来源：`统一案例总表/0089-C-89-遮蔽-补偿-成本三角.md`
+  - 依赖：—；被引用：—
+- [### \[#90｜结构保守性元定理\](docs/zh/cases/items/C-0090.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0090-C-90-%E7%BB%93%E6%9E%84%E4%BF%9D%E5%AE%88%E6%80%A7%E5%85%83%E5%AE%9A%E7%90%86.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-77947EA2045A8510 / ### \[#90｜结构保守性元定理\](docs/zh/cases/items/C-0090.md) / IMPLICIT-77947EA2045A8510
+  - 来源：`统一案例总表/0090-C-90-结构保守性元定理.md`
+  - 依赖：—；被引用：—
+- [### \[#91｜倒U型统一生成定理\](docs/zh/cases/items/C-0091.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0091-C-91-%E5%80%92U%E5%9E%8B%E7%BB%9F%E4%B8%80%E7%94%9F%E6%88%90%E5%AE%9A%E7%90%86.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-7BE72F57A31EDFD8 / ### \[#91｜倒U型统一生成定理\](docs/zh/cases/items/C-0091.md) / IMPLICIT-7BE72F57A31EDFD8
+  - 来源：`统一案例总表/0091-C-91-倒U型统一生成定理.md`
+  - 依赖：—；被引用：—
+- [### \[Dxx｜ \](docs/zh/functions/items/Dxx.md)](../../../outputs/audit/two-tables-entry-format-audit-20260709.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-C880A3AFA931889A / ### \[Dxx｜ \](docs/zh/functions/items/Dxx.md) / IMPLICIT-C880A3AFA931889A
+  - 来源：`outputs/audit/two-tables-entry-format-audit-20260709.md`
+  - 依赖：—；被引用：—
+- [### \[MF-0001｜正向自举通道\](docs/zh/functions/meta/items/MF-0001.md)](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0000-MF-0001-%E6%AD%A3%E5%90%91%E8%87%AA%E4%B8%BE%E9%80%9A%E9%81%93.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-3C28D5939C159BE2 / ### \[MF-0001｜正向自举通道\](docs/zh/functions/meta/items/MF-0001.md) / IMPLICIT-3C28D5939C159BE2
+  - 来源：`统一函数总表/0000-MF-0001-正向自举通道.md`
+  - 依赖：—；被引用：—
+- [### \[MF-0002｜反向自举通道\](docs/zh/functions/meta/items/MF-0002.md)](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0000-MF-0002-%E5%8F%8D%E5%90%91%E8%87%AA%E4%B8%BE%E9%80%9A%E9%81%93.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-AF872765D8DB5407 / ### \[MF-0002｜反向自举通道\](docs/zh/functions/meta/items/MF-0002.md) / IMPLICIT-AF872765D8DB5407
+  - 来源：`统一函数总表/0000-MF-0002-反向自举通道.md`
+  - 依赖：—；被引用：—
+- [### \[MF-0003｜正反互斥判定器\](docs/zh/functions/meta/items/MF-0003.md)](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0000-MF-0003-%E6%AD%A3%E5%8F%8D%E4%BA%92%E6%96%A5%E5%88%A4%E5%AE%9A%E5%99%A8.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-92AAE8F51554B002 / ### \[MF-0003｜正反互斥判定器\](docs/zh/functions/meta/items/MF-0003.md) / IMPLICIT-92AAE8F51554B002
+  - 来源：`统一函数总表/0000-MF-0003-正反互斥判定器.md`
+  - 依赖：—；被引用：—
+- [### \[MF-0004｜自举嵌套判定器\](docs/zh/functions/meta/items/MF-0004.md)](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0000-MF-0004-%E8%87%AA%E4%B8%BE%E5%B5%8C%E5%A5%97%E5%88%A4%E5%AE%9A%E5%99%A8.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-F473C6BB0406028E / ### \[MF-0004｜自举嵌套判定器\](docs/zh/functions/meta/items/MF-0004.md) / IMPLICIT-F473C6BB0406028E
+  - 来源：`统一函数总表/0000-MF-0004-自举嵌套判定器.md`
+  - 依赖：—；被引用：—
+- [### \[MF-0005｜自举收敛判定器\](docs/zh/functions/meta/items/MF-0005.md)](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0000-MF-0005-%E8%87%AA%E4%B8%BE%E6%94%B6%E6%95%9B%E5%88%A4%E5%AE%9A%E5%99%A8.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-7A41B32FCC34FCFA / ### \[MF-0005｜自举收敛判定器\](docs/zh/functions/meta/items/MF-0005.md) / IMPLICIT-7A41B32FCC34FCFA
+  - 来源：`统一函数总表/0000-MF-0005-自举收敛判定器.md`
+  - 依赖：—；被引用：—
+- [### BC-20260709-009 《影响力》](../../../reports/math-foundation/pilot-formal-audit-20260712.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-09E18F45D120C04D / ### BC-20260709-009 《影响力》 / IMPLICIT-09E18F45D120C04D / IMPLICIT-F7AC5BBB30C9232B
+  - 来源：`reports/math-foundation/pilot-formal-audit-20260712.md`
   - 依赖：—；被引用：—
