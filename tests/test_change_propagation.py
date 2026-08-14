@@ -63,6 +63,16 @@ class ChangePropagationTests(unittest.TestCase):
     def request(self, **updates):
         request = copy.deepcopy(BASE_REQUEST)
         request.update(updates)
+        # The live registry now includes the AI-first state delta surface. These
+        # synthetic propagation fixtures do not represent a formal main merge,
+        # so they must carry the explicit non-impact decision required by the
+        # current registry without pretending that a state delta was written.
+        if not any(item["item_id"] == "release.state_changelog" for item in request["surface_decisions"]):
+            request["surface_decisions"].append({
+                "item_id": "release.state_changelog",
+                "decision": "NO_CHANGE_WITH_REASON",
+                "reason": "Synthetic fixture is not a formal main merge; state-delta obligation is not triggered.",
+            })
         return request
 
     def test_a_method_version_change_reaches_front_doors_and_map(self):

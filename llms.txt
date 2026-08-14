@@ -1,6 +1,7 @@
 Current project state:
 At the current commit, Ignition is an evidence-traceable, object-typed, inference-checkable and audit-graded formal mechanism discovery and modelling system for cross-domain material. This is a versioned current-state description, not a permanent project identity or fixed final form. It is not a unified mathematical theory, a physical theory, a universal prover, or a purely literary or philosophical knowledge base.
 Current-state authority: docs/project-current-state.md.
+AI-first recent-state delta authority: STATE-CHANGELOG.md (navigation only; it does not replace current-state, registry, claim, evidence or Results Book authority).
 Current version: the 2026-07-12 mathematical and logical dual-foundation seven-layer architecture plus the subsequently merged current operation overlays, iteration method 1.4.0 (Current) and registry-derived system map 0.5.0 (Current).
 
 Current: iteration method 1.4.0 (Continuous Stage Snapshot Publication). Read data/operations/stage-snapshots.json and docs/operations/stage-snapshot-publication.md. Snapshot or homepage visibility never implies Accepted, Current, Activated, capability availability, or candidate payload merge.
@@ -41,6 +42,7 @@ data/foundation/project-state.json and migration-summary.json are the reproducib
 
 Independent axes:
 workflow, semantic, formal, logic, proof, evidence, scope, provenance and migration statuses never auto-upgrade one another.
+K13_ASSERTION_NON_ESCALATION: project scale, engineering maturity, writing/summaries/results books/system maps, repeated citation, cross-domain correspondence, model elegance and Agent consensus cannot auto-upgrade assertion status; M/E remains orthogonal.
 CONVERGED or CLOSED is not truth.
 MACHINE_CHECKED_PROOF is not empirical truth.
 MULTI_CASE is not a theorem.
@@ -64,6 +66,7 @@ Key paths:
 - views/ : generated legacy compatibility views
 - docs/PROJECT-ARCHITECTURE.md : stable compatibility summary
 - docs/GET-BRAIN-WORKFLOW.md : Get 笔记 collaboration
+- STATE-CHANGELOG.md : AI-first baseline and append-only project-state deltas; one validated delta per formal main merge
 
 Red lines for agents:
 - Preserve Ψ0 legacy source text; do not silently overwrite it or treat it as current proof/function authority.
@@ -75,6 +78,7 @@ Red lines for agents:
 - Formalization, computability, internal consistency, AI numbering and passing tests do not establish external truth. The current gate model does not unify the four interactions, and the physics unification problem remains open; do not restore the withdrawn universal-impossibility claim under a new label.
 - Do not call Get 笔记 to perform mathematical reasoning, logical adjudication or architecture decisions.
 - Do not claim content-proof completion from architecture migration completion.
+- Do not let workflow, engineering completion, writing, repeated citation, cross-domain resemblance, model beauty or consensus inflate a claim; withdrawn, downgraded or quarantined conclusions cannot rebound.
 - Do not infer universal impossibility from one model failure, call analogy an isomorphism without the required mapping proof, or revive a withdrawn conclusion through structural/meta renaming.
 - 121Q12 effectual action and mechanism adjudication are operation overlays, not new truth layers.
 - Effectual action proposes bounded next actions under affordable loss; it does not prove claims.
@@ -101,3 +105,4 @@ Validation before commit:
 - python3 -m unittest discover -s tests/foundation -p test_*.py
 - python3 tools/validate_meta_protocols.py
 - python3 tools/validate_data.py
+- python3 tools/validate_state_changelog.py

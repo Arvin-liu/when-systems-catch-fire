@@ -5,15 +5,16 @@
 ## 读取顺序
 
 1. README.md：人类入口、价值边界与当前结论。
-2. KNOWLEDGE/README.md：无需预知路径的最新变化、主题地图、搜索、资产卡与分层阅读入口。
-3. docs/project-current-state.md：版本化、可演化、非终局的当前状态。
-4. ITERATION.md：点火迭代操作法；状态改变任务必须先恢复远端真相、确认缺口和 claim ceiling。
-5. ARCHITECTURE.md：现行七层架构权威；121Q12 双环是跨层操作 overlay，不是新真值层。
-6. FOUNDATION.md：数学与逻辑双地基。
-7. llms.txt：机器可读边界。
-8. AI-HANDOFF.md：当前权威、兼容和任务交接。
-9. data/foundation/project-state.json 与 registry-manifest.json：机器状态。
-10. 当前任务命令与相关 source/schema。
+2. STATE-CHANGELOG.md：baseline 与最近的正式 delta；它是 AI 状态恢复的高优先级导航，不替代下列权威资产。
+3. KNOWLEDGE/README.md：无需预知路径的最新变化、主题地图、搜索、资产卡与分层阅读入口。
+4. docs/project-current-state.md：版本化、可演化、非终局的当前状态。
+5. ITERATION.md：点火迭代操作法；状态改变任务必须先恢复远端真相、确认缺口和 claim ceiling。
+6. ARCHITECTURE.md：现行七层架构权威；121Q12 双环是跨层操作 overlay，不是新真值层。
+7. FOUNDATION.md：数学与逻辑双地基。
+8. llms.txt：机器可读边界。
+9. AI-HANDOFF.md：当前权威、兼容和任务交接。
+10. data/foundation/project-state.json 与 registry-manifest.json：机器状态。
+11. 当前任务命令与相关 source/schema。
 
 若任务涉及函数、模型、定理、公式、律、跨域类比或现实强断言，在读取 Foundation 后立即读取 `docs/foundation/claim-governance-and-function-identity.md`、`data/foundation/function-assets/corrections.jsonl`、对应 `identity-cards.jsonl` 记录及其 quarantine/obligation 状态。M 与 E 不得互推，自动 census 不能覆盖专项纠偏；task 99 的 registry closure 也不能被解释为全部证明或外部验证完成。
 
@@ -39,6 +40,7 @@
 - 公式化、可计算、内部自洽、AI 编号和单元测试通过都不等于外部真实；当前门控模型没有统一四力，也没有证明大一统普遍不可能。
 - object type 与 claim type 分开。
 - workflow、semantic、formal、logic、proof、evidence、scope、provenance、migration 九轴分开。
+- `ASSERTION_INFLATION_GUARD` 是仓库级常驻不变量：工程、写作、总结、成果册、系统图、重复引用、跨域对应、模型美感和 Agent 共识都不能自动抬升断言地位；长期风险“从自我克制滑向大断言”必须持续登记和检查。
 - Ψ₀ 是 workflow orchestrator / algorithm protocol；旧乘积表达只作 legacy source。
 - J+ / J- 是内部审议通道。
 - 12 元协议不是自动成立的数学公理；64 组合不是证明空间。
@@ -68,6 +70,7 @@
 ## 最小验证
 
 执行 tools/foundation 下的 migration check、strict validator、benchmarks 和 tests/foundation；任何失败都保留为 blocker，不得用散文覆盖。
+状态日志的结构、main tip 绑定和仓库内链接另执行 `python3 tools/validate_state_changelog.py`。
 ## 许可边界
 
 当前分发版本采用分层许可。核心可执行软件为 BUSL-1.1 并在 Change Date 后转为 AGPL-3.0-or-later；原创文档/报告为 CC BY-NC-SA 4.0；价值宪章和一般治理原则为 CC BY-SA 4.0；公开接口与互操作 schema 为 Apache-2.0。许可作用域以根 LICENSE 与 LICENSES/README.md 为准；历史 MIT 版本权利不追溯撤销。

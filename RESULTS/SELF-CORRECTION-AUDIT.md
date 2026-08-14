@@ -6,8 +6,8 @@
 |---|---|---:|
 |`proof_obligation`|`REVIEW`|78|
 |`empirical_obligation`|`REVIEW`|15|
-|`cross_domain_mapping`|`REVIEW`|66|
-|`quantifier_inflation`|`REVIEW`|193|
+|`cross_domain_mapping`|`REVIEW`|71|
+|`quantifier_inflation`|`REVIEW`|194|
 |`circular_reasoning`|`PASS`|0|
 |`analogy_as_isomorphism`|`PASS`|1|
 |`model_failure_to_universal_impossibility`|`PASS`|15|

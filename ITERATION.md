@@ -30,7 +30,7 @@ Before planning, recover the actual repository state:
 
 - fetch current `main`;
 - inspect open PRs, branches and exact HEADs;
-- read `README.md`, `docs/project-current-state.md`, `AI-HANDOFF.md`, `AI-START-HERE.md`, `llms.txt`, `SUMMARY.md` and this file;
+- read `README.md`, `STATE-CHANGELOG.md` baseline/recent deltas, `docs/project-current-state.md`, `AI-HANDOFF.md`, `AI-START-HERE.md`, `llms.txt`, `SUMMARY.md` and this file;
 - inspect schemas, tools, tests and workflows relevant to the requested area;
 - inspect frozen assets and explicit forbidden surfaces;
 - read recent reports, completion seals and current-state records;
@@ -84,6 +84,8 @@ Examples:
 
 Never raise the claim ceiling because the prose is convincing, the maintainer wants the result, CI is green, or multiple AI systems agree.
 
+`K13_ASSERTION_NON_ESCALATION` is a repository-level invariant: project scale, engineering maturity, writing completion, summary/results-book/system-map completion, repeated citation, cross-domain correspondence, model elegance and Agent consensus cannot auto-upgrade a claim. Workflow, semantic, formal, logic, proof, evidence, scope, provenance and migration remain independent; M/E remains orthogonal. Insufficient evidence defaults to hold, downgrade, open-problem status or explicit uncertainty.
+
 For any function, model, theorem, formula, law, decision rule or cross-domain claim, apply `docs/foundation/claim-governance-and-function-identity.md` before publication. Mathematical maturity M0—M7 and external evidence E0—E7 are independent; a high M level never raises E. Run the ten audit gates. Any gate that cannot be automated reliably must return `REQUIRES_HUMAN_REVIEW`, never an inferred pass. A withdrawn strong claim must change its text, scope, allowed inference direction, dependencies, public projection and test expectation; renaming it cannot restore the conclusion.
 
 The task-99 function-asset registry is closed only when every discovery has one canonical identity card and a final disposition. `UNRESOLVED_IDENTITY` plus `QUARANTINE_UNTIL_DEFINED` is an explicit bounded outcome, not a validator pass. Removing quarantine requires evidence that discharges the recorded proof or empirical obligation and a dependency/public-claim propagation review.
@@ -103,6 +105,7 @@ For each iteration, decide whether these surfaces change:
 - `docs/project-current-state.md`;
 - `AI-HANDOFF.md`, `AI-START-HERE.md`, `llms.txt` and `SUMMARY.md`;
 - versioning and changelog;
+- `STATE-CHANGELOG.md` AI-first state delta;
 - governance, sustainability and licensing;
 - frozen assets, legacy tables and historical evidence.
 
@@ -118,7 +121,9 @@ Not every registered surface must change. Every applicable surface must receive 
 
 Every method 1.1.0 iteration declares state-transition subjects, prior/proposed states, changed dimensions, source references and a claim boundary. Required assessments are derived from the synchronization registry and follow its declared dependency/derivation relations until the closure has no missing decision.
 
-Human-visible entrances are first-class project surfaces. Capability, identity, current-state, usage, handoff or rendering changes must assess `README.md`, `HUMAN-READING.md`, `KNOWLEDGE/`, the relevant `RESULTS/` pages, `docs/project-current-state.md`, `SUMMARY.md`, `docs/USAGE.md`, `docs/ai-assistant-usage-reference.md`, `CHANGELOG.md`, `docs/VERSIONING.md`, `AI-START-HERE.md`, `AI-HANDOFF.md`, `llms.txt` and relevant operation templates whenever the registry triggers them.
+Human-visible entrances are first-class project surfaces. Capability, identity, current-state, usage, handoff or rendering changes must assess `README.md`, `HUMAN-READING.md`, `KNOWLEDGE/`, the relevant `RESULTS/` pages, `docs/project-current-state.md`, `SUMMARY.md`, `docs/USAGE.md`, `docs/ai-assistant-usage-reference.md`, `CHANGELOG.md`, `STATE-CHANGELOG.md`, `docs/VERSIONING.md`, `AI-START-HERE.md`, `AI-HANDOFF.md`, `llms.txt` and relevant operation templates whenever the registry triggers them.
+
+Every formal iteration merged to `main` must append exactly one short, structured delta to `STATE-CHANGELOG.md` in the same change set. The delta records the main baseline/transition, authority changes, epistemic changes, obligations, stale knowledge and next reads; it never replaces the underlying authority.
 
 Derived and external surfaces remain distinct from repository sources. Current human result projections are repository files generated from declared machine sources and checked for freshness; external systems, if a future task introduces one, require a separate registry entry and evidence. Local validation never proves an undeclared live external state.
 
@@ -163,6 +168,8 @@ Any meaningful new or changed conclusion, correction, article, experiment, audit
 Use an isolated branch and Draft PR unless the task is an exact-head merge closeout.
 
 Commits should be atomic and semantic. Four commits are useful for many macro tasks, but not a dogma. Do not amend, rebase, squash or force-push after external review unless the task explicitly allows it.
+
+Before a formal `main` merge, write the new iteration's own `STATE-CHANGELOG.md` delta. After merge, report and verify the exact Git tip separately; do not edit a prior delta in place.
 
 ## 7. Minimum State-Changing Action
 

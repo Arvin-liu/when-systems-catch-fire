@@ -1,5 +1,5 @@
 {
-  "registry_version": "1.4.0",
+  "registry_version": "1.5.0",
   "purpose": "Canonical synchronization topology and obligations only; not a substantive project truth store.",
   "surfaces": [
     {
@@ -423,6 +423,46 @@
       "trigger_classifications": [
         "CAPABILITY_ADDITION",
         "RELEASE_OR_CURRENT_STATE_SYNC",
+        "OPERATIONS_METHOD"
+      ],
+      "allowed_decisions": [
+        "CHANGE",
+        "NO_CHANGE_WITH_REASON",
+        "NOT_APPLICABLE"
+      ],
+      "validation_mode": "repository_semantic_validation",
+      "blocks": [
+        "ready",
+        "current",
+        "closed"
+      ]
+    },
+    {
+      "surface_id": "release.state_changelog",
+      "surface_type": "repository_source",
+      "locator": "STATE-CHANGELOG.md",
+      "roles": [
+        "release_history",
+        "ai_state_recovery"
+      ],
+      "authority": "canonical",
+      "derived_from": [],
+      "trigger_dimensions": [
+        "capability",
+        "identity",
+        "handoff",
+        "lifecycle_current_state",
+        "governance",
+        "operations_method"
+      ],
+      "trigger_classifications": [
+        "REPAIR",
+        "CAPABILITY_ADDITION",
+        "INTERFACE_CHANGE",
+        "EVIDENCE_UPDATE",
+        "GOVERNANCE_CHANGE",
+        "RELEASE_OR_CURRENT_STATE_SYNC",
+        "HISTORICAL_ONLY",
         "OPERATIONS_METHOD"
       ],
       "allowed_decisions": [

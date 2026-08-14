@@ -16,6 +16,8 @@
     "docs/architecture/mechanism-adjudication-plane.md": "2026-07-15",
     "docs/architecture/multiscale-causal-fabric.md": "2026-07-16",
     "docs/architecture/probabilistic-system-dynamics.md": "2026-07-16",
+    "docs/architecture/reos-vnext-light.md": "2026-08-14",
+    "docs/architecture/reos-vnext-minimal-kernel-r1-contract.md": "2026-08-14",
     "docs/architecture/typed-change-propagation.md": "2026-07-17",
     "docs/foundation/README.md": "2026-07-13",
     "docs/foundation/architecture-structure-freeze-v1.md": "2026-07-13",
@@ -303,11 +305,12 @@
     "reports/releases/121Q15-q12-q14-cumulative-preflight.md": "2026-07-15",
     "reports/research/121Q22-probability-systems-source-map.md": "2026-07-16",
     "reports/research/121Q23-network-theory-source-map.md": "2026-07-16",
+    "reports/research/reos-vnext-light-pilot-r1.md": "2026-08-14",
     "reports/validation/pointfire-seven-track-current-main-maintenance-r1-20260813.md": "2026-08-14",
     "新故事/0001-S1-比刀剑更持久的，是共享观念.md": "2026-07-06",
     "新故事/INDEX.md": "2026-07-06"
   },
-  "entry_count": 305,
+  "entry_count": 308,
   "history_requirement": "FULL",
   "schema_version": "1.0.0"
 }

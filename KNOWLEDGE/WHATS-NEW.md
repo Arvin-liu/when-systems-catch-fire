@@ -4,6 +4,15 @@
 
 ## 2026
 
+<a id="change-src-hr-ecc4e92db835c50c"></a>
+### 2026-08-14 · REOS vNext LIGHT pilot R1 — public-safe synthesis
+
+- **类型：** `RESEARCH_OR_SOURCE_REVIEW`
+- **状态：** `HISTORICAL_COMPLETION_RECORD`
+- **变化：** Status: OWNERACCEPTEDBOUNDEDREOSLIGHTCAPABILITYWITHEXPLICITRESIDUALS Architecture disposition: KEEPLIGHTONLY
+- **来源：** [reos-vnext-light-pilot-r1.md](../reports/research/reos-vnext-light-pilot-r1.md)
+- **资产卡：** [HR-ECC4E92DB835C50C](./ASSET-CARDS.md#asset-hr-ecc4e92db835c50c)
+
 <a id="change-src-hr-deb3e834ad440e87"></a>
 ### 2026-08-14 · 认知迁移编辑修订：Owner 决定与独立审查入口
 
@@ -48,6 +57,24 @@
 - **变化：** Status: OWNERACCEPTEDBOUNDEDCALIBRATIONEVIDENCEWITHEXPLICITRESIDUALS
 - **来源：** [STEP09-EXECUTION.md](../reports/architecture-calibration/STEP09-EXECUTION.md)
 - **资产卡：** [HR-728801B4D8A22D85](./ASSET-CARDS.md#asset-hr-728801b4d8a22d85)
+
+<a id="change-src-hr-4f4fea21691de2b0"></a>
+### 2026-08-14 · REOS vNext LIGHT
+
+- **类型：** `MODEL_OR_ARCHITECTURE`
+- **状态：** `HISTORICAL_COMPLETION_RECORD`
+- **变化：** Status: OWNERACCEPTEDWITHEXPLICITRESIDUALS Runtime disposition: KEEPLIGHTONLY
+- **来源：** [reos-vnext-light.md](../docs/architecture/reos-vnext-light.md)
+- **资产卡：** [HR-4F4FEA21691DE2B0](./ASSET-CARDS.md#asset-hr-4f4fea21691de2b0)
+
+<a id="change-src-hr-33ad343f3a815941"></a>
+### 2026-08-14 · REOS vNext minimal kernel R1 — frozen contract
+
+- **类型：** `MODEL_OR_ARCHITECTURE`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** Status: CONTRACTFROZENBEFOREIMPLEMENTATION
+- **来源：** [reos-vnext-minimal-kernel-r1-contract.md](../docs/architecture/reos-vnext-minimal-kernel-r1-contract.md)
+- **资产卡：** [HR-33AD343F3A815941](./ASSET-CARDS.md#asset-hr-33ad343f3a815941)
 
 <a id="change-src-hr-3254690d89efc00d"></a>
 ### 2026-08-14 · Pointfire seven-track external cross-domain replay — repaired governed pass

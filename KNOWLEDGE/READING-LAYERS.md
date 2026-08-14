@@ -1231,6 +1231,28 @@ Status: OWNERACCEPTEDBOUNDEDREPLAYRESULTWITHEXPLICITRESIDUALS 边界：This is a
 
 [outputs/audit/d597-index-visibility-check-20260708.md](../outputs/audit/d597-index-visibility-check-20260708.md)
 
+<a id="reading-hr-33ad343f3a815941"></a>
+## REOS vNext minimal kernel R1 — frozen contract
+
+**状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · **主题：** `ARCHITECTURE_GOVERNANCE`
+
+### 1 分钟
+
+Status: CONTRACTFROZENBEFOREIMPLEMENTATION 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+
+### 5 分钟
+
+- 来源要点（导航摘录，不得视为当前断言）：主题：REOS vNext minimal kernel R1 — frozen contract
+- 来源要点（导航摘录，不得视为当前断言）：Status: CONTRACTFROZENBEFOREIMPLEMENTATION
+- 来源要点（导航摘录，不得视为当前断言）：This contract is scoped to one bounded REOSLIGHT research case. It is a research-execution control surface, not a source, claim, evidence, proof, ceiling, normative, publication or epistemic authority.
+- 来源要点（导航摘录，不得视为当前断言）：主题：Identifiers and serialization
+- 来源要点（导航摘录，不得视为当前断言）：schema version: reos.vnext.minimal-kernel.r1;
+- 来源要点（导航摘录，不得视为当前断言）：serialization: UTF-8 canonical JSON, sortkeys=true, compact separators, ensureascii=false, one trailing newline;
+
+### 完整阅读
+
+[docs/architecture/reos-vnext-minimal-kernel-r1-contract.md](../docs/architecture/reos-vnext-minimal-kernel-r1-contract.md)
+
 <a id="reading-hr-3611a9bf0615b4e7"></a>
 ## Foundation documentation
 
@@ -2007,6 +2029,28 @@ Task: IGNITION-ITERATION-METHOD-1.4-CONTINUOUS-STAGE-SNAPSHOT-PUBLICATION-R1-202
 ### 完整阅读
 
 [reports/operations/IGNITION-ITERATION-METHOD-1.4-homepage-comparison.md](../reports/operations/IGNITION-ITERATION-METHOD-1.4-homepage-comparison.md)
+
+<a id="reading-hr-4f4fea21691de2b0"></a>
+## REOS vNext LIGHT
+
+**状态：** `HISTORICAL_COMPLETION_RECORD` · **主题：** `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+
+### 1 分钟
+
+Status: OWNERACCEPTEDWITHEXPLICITRESIDUALS Runtime disposition: KEEPLIGHTONLY 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+
+### 5 分钟
+
+- 来源要点（导航摘录，不得视为当前断言）：主题：REOS vNext LIGHT
+- 来源要点（导航摘录，不得视为当前断言）：Status: OWNERACCEPTEDWITHEXPLICITRESIDUALS Runtime disposition: KEEPLIGHTONLY
+- 来源要点（导航摘录，不得视为当前断言）：REOS is a research-execution control system. It records recoverable research obligations, bounded case state, references, review work and typed handoff. It is not a second knowledge-truth system and it does not decide whether a proposition is true.
+- 来源要点（导航摘录，不得视为当前断言）：Use DIRECTRESEARCH when ordinary notes, a source ledger and a human review are sufficient.
+- 来源要点（导航摘录，不得视为当前断言）：Use REOSLIGHT when a bounded question benefits from explicit obligations, dependency checks, source-family/access references, measurement boundaries, independent review and committed case reload. LIGHT adds process control; it does not add epistemic authority.
+- 来源要点（导航摘录，不得视为当前断言）：There is no available REOSFULL runtime. No recovery layer is implied by this document.
+
+### 完整阅读
+
+[docs/architecture/reos-vnext-light.md](../docs/architecture/reos-vnext-light.md)
 
 <a id="reading-hr-52173a553c421e11"></a>
 ## 跨协议一致性红队（外部治理记录）
@@ -6302,6 +6346,28 @@ Status: REALHISTORYOPERATIONALPROOFREGENERATEDWITHPATHSTATEANDREFERENCECONTRACT 
 ### 完整阅读
 
 [reports/architecture/121Q23C-operational-arn-real-history-validation.md](../reports/architecture/121Q23C-operational-arn-real-history-validation.md)
+
+<a id="reading-hr-ecc4e92db835c50c"></a>
+## REOS vNext LIGHT pilot R1 — public-safe synthesis
+
+**状态：** `HISTORICAL_COMPLETION_RECORD` · **主题：** `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
+
+### 1 分钟
+
+Status: OWNERACCEPTEDBOUNDEDREOSLIGHTCAPABILITYWITHEXPLICITRESIDUALS Architecture disposition: KEEPLIGHTONLY 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+
+### 5 分钟
+
+- 来源要点（导航摘录，不得视为当前断言）：主题：REOS vNext LIGHT pilot R1 — public-safe synthesis
+- 来源要点（导航摘录，不得视为当前断言）：Status: OWNERACCEPTEDBOUNDEDREOSLIGHTCAPABILITYWITHEXPLICITRESIDUALS Architecture disposition: KEEPLIGHTONLY
+- 来源要点（导航摘录，不得视为当前断言）：This is a public-safe method and process result. It does not publish private relay paths, reviewer/session identifiers, local worktree paths, raw private receipts or private environment details.
+- 来源要点（导航摘录，不得视为当前断言）：主题：Question and frozen boundary
+- 来源要点（导航摘录，不得视为当前断言）：In adults self-studying a fixed set of unfamiliar factual items, with total learning time and retrieval count held equal, does spaced retrieval versus one massed session increase mean proportion correct on a seven-day delayed test?
+- 来源要点（导航摘录，不得视为当前断言）：The frozen boundary was:
+
+### 完整阅读
+
+[reports/research/reos-vnext-light-pilot-r1.md](../reports/research/reos-vnext-light-pilot-r1.md)
 
 <a id="reading-hr-ef6e1d0860ae3fef"></a>
 ## 事实 Pending 总表（外部治理记录）

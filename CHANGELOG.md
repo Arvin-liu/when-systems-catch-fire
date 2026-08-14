@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-08-15 — AI-first state delta and assertion non-escalation guard
+
+- Added [`STATE-CHANGELOG.md`](./STATE-CHANGELOG.md) as the Agent-first baseline/recent-delta surface; its structured entries and links are validated, while canonical state and claim registries remain authoritative.
+- Registered `K13_ASSERTION_NON_ESCALATION` in the existing epistemic governance kernel and validation chain; it prevents workflow, engineering, writing, repetition, cross-domain resemblance or consensus from auto-upgrading claims.
+
 ## 2026-08-14 — Pointfire seven-track evidence evolution R1 Owner-accepted publication
 
 - Published the seven-track bounded result set into the canonical

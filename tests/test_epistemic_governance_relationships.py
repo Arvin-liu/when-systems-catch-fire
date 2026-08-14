@@ -35,6 +35,10 @@ class Tests(unittest.TestCase):
  def test_charter_required_for_action_release(self): self.bad(lambda d:d["responsibility_federations"][1]["authorities"].remove("charter.normative"),"Charter")
  def test_human_review_not_machine_maturity(self): self.bad(lambda d:next(o for o in d["obligation_inventory"] if o["id"]=="K4_SOURCE_FAMILY_INDEPENDENCE").update({"coverage":"MACHINE_ENFORCED"}),"may not be machine")
  def test_unbound_ceiling_order_preserved(self): self.bad(lambda d:next(o for o in d["obligation_inventory"] if o["id"]=="UNIVERSAL_CEILING_ORDER").update({"coverage":"MACHINE_ENFORCED"}),"UNBOUND")
+ def test_assertion_non_escalation_is_machine_bound(self):
+  row=next(o for o in SPEC["obligation_inventory"] if o["id"]=="K13_ASSERTION_NON_ESCALATION")
+  self.assertEqual(("MACHINE_ENFORCED","claim ceiling, provenance/adjudication and prohibited upgrade effects"),(row["coverage"],row["binding"]))
+ def test_assertion_non_escalation_cannot_be_downgraded(self): self.bad(lambda d:next(o for o in d["obligation_inventory"] if o["id"]=="K13_ASSERTION_NON_ESCALATION").update({"coverage":"HUMAN_REVIEW_ONLY"}),"machine-bound")
  def test_profile_joint_rewrite(self):
   def m(d): d["negative_permission_profiles"]["permissive"]=["truth","owner_acceptance"]; d["authorities"][0].update({"profile":"permissive","cannot_decide":["truth","owner_acceptance"]})
   self.bad(m,"canonical profile map")

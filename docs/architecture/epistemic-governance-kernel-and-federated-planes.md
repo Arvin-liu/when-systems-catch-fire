@@ -109,6 +109,25 @@ Gate 回答某个转换或公开动作是否被允许。它包括来源/隐私�
 11. feedback 只能作为 provenance-bound L0 candidate material 回流。
 12. relation 必须声明 namespace、domain、codomain、authority 与 prohibited inference。
 
+### K13_ASSERTION_NON-ESCALATION / ASSERTION_INFLATION_GUARD
+
+点火允许知识增长，但禁止“断言地位”因为项目规模、叙事力量、工程成熟度、重复引用、跨域对应、模型美感、写作完成度或 Agent 共识而自动膨胀。`claim` 的 scope、evidence、proof、logic、M/E、provenance、disposition 和 public ceiling 只能由其真实记录及相应的 canonical authority 改变；最新叙事不是状态迁移器。
+
+这是既有 Claim Ceiling、九状态轴独立、M/E 正交、回弹阻断和 provenance-gated adjudication 的仓库级组合不变量，不是新的真值层或第二套 claim registry。它在研究、裁决、写作、出版和系统总结中持续生效：
+
+1. workflow 完成不能推出 semantic、formal、logic、proof 或 evidence 完成。
+2. 工程基础设施成熟不能提升具体命题的科学地位。
+3. 写作、总结、成果册、系统图和 AI 画像不得反向成为原命题的新证据。
+4. 同一断言被更多文档重复引用，不增加其证据等级或独立 source family。
+5. 跨域对应、结构相似和模型投影默认只产生启发或待检验假设；解释力不能自动升级。
+6. M 轴和 E 轴独立推进；任何一轴不能冒充另一轴。
+7. claim ceiling 由 scope、evidence、proof、logic 等真实记录的最窄适用上限决定，而不是由最新叙事决定。
+8. 被撤回、降级或 quarantine 的结论不得通过改名、换表述或写入上层综合文档回弹。
+9. 新证据可以触发升级，但升级必须留下可审计的 provenance、adjudication 和 validation 记录。
+10. 证据不足时，默认保持、降级、开放问题化或显式声明 uncertainty；不得为了完整叙事补足结论。
+
+机器侧只检查可确定的状态越界：既有 negative-permission profiles、typed relations、claim-governance validator、non-function closure/rebound validator、public-route ceiling 和本页 K13 obligation 必须保持封闭；它们不以字符串匹配自动判断自然语言真理。语义等价、source-family 独立性和外部有效性仍需相应的人工/独立证据裁决。
+
 ## 生命周期：对象 automata 的组合，不是一条总传送带
 
 内容对象的常见 partial order 是：

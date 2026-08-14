@@ -4,13 +4,14 @@
 
 |资产|直接断言|传递影响|是否需人工建边|
 |---|---:|---:|---|
-|`AI-HANDOFF.md`|21|0|否|
-|`AI-START-HERE.md`|22|0|否|
+|`AI-HANDOFF.md`|22|0|否|
+|`AI-START-HERE.md`|23|0|否|
 |`ARCHITECTURE.md`|49|0|否|
 |`CONTRIBUTING.md`|16|0|否|
+|`FOUNDATION.md`|13|0|否|
 |`HUMAN-READING.md`|12|0|否|
-|`ITERATION.md`|94|0|否|
-|`README.md`|21|0|否|
+|`ITERATION.md`|96|0|否|
+|`README.md`|22|0|否|
 |`RESULTS/ADJUDICATION-SUMMARY.md`|19|0|否|
 |`RESULTS/CORRECTIONS.md`|8|0|否|
 |`RESULTS/LATEST.md`|43|0|否|
@@ -18,14 +19,18 @@
 |`RESULTS/README.md`|5|0|否|
 |`RESULTS/RESEARCH-AND-ARTICLES.md`|18|0|否|
 |`SUMMARY.md`|8|0|否|
+|`docs/AGENT-GUIDE.md`|11|0|否|
+|`docs/GET-BRAIN-WORKFLOW.md`|3|0|否|
 |`docs/USAGE.md`|23|0|否|
-|`docs/VERSIONING.md`|15|0|否|
+|`docs/VERSIONING.md`|16|0|否|
 |`docs/ai-assistant-usage-reference.md`|27|0|否|
-|`docs/architecture/epistemic-governance-kernel-and-federated-planes.md`|68|0|否|
+|`docs/architecture/epistemic-governance-kernel-and-federated-planes.md`|77|0|否|
 |`docs/architecture/getnote-1329-epistemic-governance-pressure-test.md`|28|0|否|
 |`docs/architecture/incremental-execution.md`|17|0|否|
 |`docs/architecture/interactive-system-map.md`|8|0|否|
 |`docs/architecture/language-thought-logic-plane.md`|13|0|否|
+|`docs/architecture/reos-vnext-light.md`|13|0|否|
+|`docs/architecture/reos-vnext-minimal-kernel-r1-contract.md`|17|0|否|
 |`docs/architecture/typed-change-propagation.md`|10|0|否|
 |`docs/editorial/MANIFEST.md`|0|0|是|
 |`docs/editorial/QUALITY-REPORT.md`|0|0|是|
@@ -68,7 +73,7 @@
 |`docs/language-thought/validation-and-audit.md`|8|0|否|
 |`docs/operations/lifecycle-readme.md`|0|0|是|
 |`docs/operations/stage-snapshot-publication.md`|21|0|否|
-|`docs/project-current-state.md`|49|0|否|
+|`docs/project-current-state.md`|50|0|否|
 |`docs/publication/cases/jin-rise-case-source.md`|5|0|否|
 |`docs/publication/cases/song-huizong-taoism-1117-source.md`|8|0|否|
 |`docs/publication/method-sources/cognitive-migration-editorial-revision-source.md`|5|0|否|
@@ -79,7 +84,7 @@
 |`docs/publication/zhiyuan-writing-examples.md`|28|0|否|
 |`docs/publication/zhiyuan-writing-method.md`|65|0|否|
 |`docs/publication/zhiyuan-writing-showcase.md`|8|0|否|
-|`llms.txt`|46|0|否|
+|`llms.txt`|49|0|否|
 |`reports/architecture-calibration/STEP08-PREREGISTRATION.md`|6|0|否|
 |`reports/architecture-calibration/STEP09-EXECUTION.md`|8|0|否|
 |`reports/external-research/pointfire-getnote-external-verification-r1-20260813-sources.jsonl`|0|0|是|
@@ -94,4 +99,5 @@
 |`reports/operations/lifecycle-audit-108.md`|0|0|是|
 |`reports/publication/song-huizong-taoism-point-fire-analysis.md`|33|0|否|
 |`reports/publication/zhiyuan-writing-cognitive-migration-editorial-revision-review.md`|7|0|否|
+|`reports/research/reos-vnext-light-pilot-r1.md`|14|0|否|
 |`reports/validation/pointfire-seven-track-current-main-maintenance-r1-20260813.md`|9|0|否|

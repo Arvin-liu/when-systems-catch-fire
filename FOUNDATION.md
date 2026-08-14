@@ -61,4 +61,5 @@ Lean 4 固定为 v4.19.0，SymPy 固定为 1.14.0，Z3 固定为 4.16.0。T2 的
 - [历史函数资产深度裁决与注册表闭合](docs/foundation/historical-function-deep-adjudication-20260729.md)
 - [全语料非函数断言裁决索引](docs/foundation/nonfunction-claim-adjudication-index.md)
 - [未来断言准入协议](docs/foundation/future-claim-admission-protocol.md)
+- [认识论治理内核与 K13 断言非晋级不变量](docs/architecture/epistemic-governance-kernel-and-federated-planes.md#k13_assertion_non-escalation--assertion_inflation_guard)
 - [AI 使用入口](AI-START-HERE.md)

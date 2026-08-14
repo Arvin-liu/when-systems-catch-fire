@@ -6,6 +6,7 @@
 
 ## 权威链
 
+- AI 状态恢复：先读 [STATE-CHANGELOG.md](./STATE-CHANGELOG.md) 的 baseline 与最近 delta，再回到下面的当前状态和对象权威；日志只记录增量，不是第二真相源。
 - 当前状态：docs/project-current-state.md（版本化现状，不是固定定位）
 - 统一知识入口：KNOWLEDGE/README.md；机器配对与 freshness：data/governance/knowledge-experience/manifest.json
 
@@ -28,6 +29,8 @@
 
 新增或修改知识资产时，必须把 Claim Delta/impact/lineage 与任务 102 的 What's New、主题、资产卡、分层阅读、别名/supersession、来源、依赖和反向依赖一起重算。`KNOWLEDGE/` 是生成的人类探索层，不是新的真值权威；机器-only 也不等于删除或否定。
 
+每次正式迭代合并 `main`，必须在同一轮向 [STATE-CHANGELOG.md](./STATE-CHANGELOG.md) append 一条 delta，并绑定该轮的 main 基线 tip、权威资产变化、认识论状态变化、开放义务、失效认知和下一步阅读；没有 delta 的正式合并不得称为状态已同步。
+
 当前架构状态只能是 ARCHITECTURE_COMPLETE_PENDING_CONTENT_PROOFS；不得改写成全量数学证明完成。
 
 方法 1.4.0 是 Current。看到首页阶段成果时，逐项读取显式布尔量和来源 HEAD；`PUBLISHED_SNAPSHOT` 不等于 Accepted、Current 或 Activated，首页可见不等于能力可用。Agent 只能生成 stage snapshot request，不能自行声称已进入 Main。
@@ -46,6 +49,8 @@
 - docs/governance/non-sycophancy-output-protocol.md
 
 正向结论必须说明对象、判据、版本、证据和边界；不能因维护者或提案者的期待而提高结论等级。
+
+所有研究、裁决、写作、出版和系统总结都继承 `K13_ASSERTION_NON_ESCALATION`：工作流完成不推出 semantic/logic/proof/evidence 完成，M/E 独立，写作或重复引用不成为新证据，撤回/降级/quarantine 不得回弹；证据不足时保持、降级、开放问题化或声明 uncertainty。
 121Q13 新增注意力、分布与压缩控制 overlay。若任务涉及循环推进、多个 AI/人类输出、行动截止期或新术语进入 canonical 文档，必须读取：
 
 - docs/architecture/attention-attractor-control-plane.md

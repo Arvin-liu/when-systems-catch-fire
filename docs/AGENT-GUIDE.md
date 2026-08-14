@@ -5,13 +5,14 @@
 ## 1. 执行前阅读顺序
 
 1. README.md
-2. docs/project-current-state.md
-3. ARCHITECTURE.md
-3. FOUNDATION.md
-4. llms.txt 与本文
-5. 任务对应的 1111/agent-commands/IGNITION-*.md
-6. data/foundation/registry-manifest.json 与 project-state.json
-7. 任务涉及的 schema、来源和历史材料
+2. STATE-CHANGELOG.md（baseline 与最近 delta，用于恢复最近状态）
+3. docs/project-current-state.md
+4. ARCHITECTURE.md
+5. FOUNDATION.md
+6. llms.txt 与本文
+7. 任务对应的 1111/agent-commands/IGNITION-*.md
+8. data/foundation/registry-manifest.json 与 project-state.json
+9. 任务涉及的 schema、来源和历史材料
 
 只有任务实际涉及元协议时，才继续读取相关 docs/meta-protocols/ 和 data/meta-protocols/。
 
@@ -21,6 +22,7 @@
 - 函数类资产还必须读取 `data/foundation/function-assets/identity-cards.jsonl`、义务、依赖和 quarantine；自动 census 只负责发现，registry closure 不代表数学或外部真实性完成。
 - Legacy source / compatibility view：统一函数总表、统一案例总表和 views。保留旧 ID 与正文，不可删除、重编号、不可逆覆盖或独立生长。
 - 候选：book collisions、candidate_only、pending 和未完成形式化的材料。候选不得冒充权威、证明或正式案例。
+- `STATE-CHANGELOG.md` 是 AI 优先的状态增量导航；它必须与 canonical current-state、registry、claim 和 evidence 资产交叉核对，不能成为第二套真相源。
 
 ## 3. 使用 1111 中转
 
@@ -48,6 +50,9 @@ python3 tools/foundation/run_benchmarks.py --check
 python3 -m unittest discover -s tests/foundation -p "test_*.py"
 python3 tools/validate_meta_protocols.py
 python3 tools/validate_data.py
+python3 tools/validate_state_changelog.py
+
+正式迭代合并 `main` 前，必须先在 `STATE-CHANGELOG.md` 追加本轮唯一、简短且可验证的 delta；提交后的 main tip 以 Git 回执为准，不把日志文本当作真值证明。
 ~~~
 
 检查 diff，确认 legacy 正文没有人工或不可逆覆盖，生成的 registry/view 与脚本一致，且没有凭据写入。
@@ -60,6 +65,7 @@ python3 tools/validate_data.py
 - converged 或 workflow closed 不代表数学真、逻辑有效或经验真实。
 - 未定义、缺来源、缺字段和关键词命中都不是 counterexample。
 - 不给 book candidate 分配 C ID，不新增或删除函数/案例，不自动合并 PR。
+- 研究、裁决、写作、出版和系统总结都受 `K13_ASSERTION_NON_ESCALATION` 约束：工程/叙事完成不能提升 claim，M/E 与九状态轴独立，撤回、降级和 quarantine 不能回弹。
 
 ## 8. 完成汇报
 

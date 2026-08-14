@@ -39,7 +39,9 @@
   - 可搜索名称：IMPLICIT-8466D2546DBBC8D3 / 其中 v(n) = ΔB_n / ΔB_{n-1} 为收敛速度 / IMPLICIT-8466D2546DBBC8D3
   - 来源：`统一函数总表/0001-Ψ₀元统一律完整定义.md`
   - 依赖：—；被引用：—
-- [切换到对应领域证据制度。](../../../data/failure_typology.csv)
+- [冷启动先读 \[README\](../../README.md)，再读本日志的 baseline 和最近几条 delta；随后回到\[当前项目现状\](../../../docs/project-current-state.md)、\[迭代操作法\](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-1b50d50ebce1bc84 / 冷启动先读 \[README\](../../README.md)，再读本日志的 baseline 和最近几条 delta；随后回到\[当前项目现状\](../../../docs/project-current-state.md)、\[迭代操作法\](../../../data/failure_typology.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-06749f2e7e90f888 / 切换到对应领域证据制度。
   - 来源：`data/failure_typology.csv`

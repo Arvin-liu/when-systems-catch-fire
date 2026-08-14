@@ -266,6 +266,7 @@
       "path_patterns": [
         "docs/project-current-state.md",
         "CHANGELOG.md",
+        "STATE-CHANGELOG.md",
         "docs/VERSIONING.md"
       ]
     },

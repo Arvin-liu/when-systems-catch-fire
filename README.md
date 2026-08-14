@@ -55,7 +55,7 @@ provenance 约束。详见[开放问题](./RESULTS/OPEN-QUESTIONS.md)。
 ## 项目内容入口
 
 人类入口是[十分钟阅读路线](./HUMAN-READING.md)，结果入口是[RESULTS](./RESULTS/README.md)，
-知识入口是[KNOWLEDGE](./KNOWLEDGE/README.md)，机器入口是[llms.txt](./llms.txt)。
+知识入口是[KNOWLEDGE](./KNOWLEDGE/README.md)，机器入口是[llms.txt](./llms.txt)，AI 最近状态入口是[STATE-CHANGELOG](./STATE-CHANGELOG.md)。
 能力入口还包括 [MCF](./docs/architecture/multiscale-causal-fabric.md)、
 [PSD](./docs/architecture/probabilistic-system-dynamics.md)、
 [ARN](./docs/architecture/adaptive-relational-network.md)、
@@ -72,7 +72,7 @@ provenance 约束。详见[开放问题](./RESULTS/OPEN-QUESTIONS.md)。
 
 ## 2. 使用说明书
 
-第一次阅读请打开[十分钟人类阅读路线](./HUMAN-READING.md)，再按目的进入[统一知识入口](./KNOWLEDGE/README.md)。需要执行或协作时，读[使用说明](./docs/USAGE.md)、[AI 冷启动](./AI-START-HERE.md)、[AI 交接契约](./AI-HANDOFF.md)和[贡献指南](./CONTRIBUTING.md)。
+第一次阅读请打开[十分钟人类阅读路线](./HUMAN-READING.md)，再按目的进入[统一知识入口](./KNOWLEDGE/README.md)。需要执行或协作时，读[使用说明](./docs/USAGE.md)、[AI 冷启动](./AI-START-HERE.md)、[AI 状态增量日志](./STATE-CHANGELOG.md)、[AI 交接契约](./AI-HANDOFF.md)和[贡献指南](./CONTRIBUTING.md)。
 
 保留的公共入口包括：[成果书架](./PUBLICATIONS/README.md)、[RESULTS 结果层](./RESULTS/README.md)、[知识地图](./KNOWLEDGE/MAP.md)、[搜索](./KNOWLEDGE/SEARCH.md)、[分层阅读](./KNOWLEDGE/READING-LAYERS.md)、[Foundation](./FOUNDATION.md)、[Function OS](./function-os-candidate/v0.2/README.md)、[当前项目架构](./ARCHITECTURE.md)和[许可说明](./LICENSE)。机器使用者可从 [llms.txt](./llms.txt) 开始，但机器记录不能替代人类结果。
 
@@ -92,7 +92,7 @@ provenance 约束。详见[开放问题](./RESULTS/OPEN-QUESTIONS.md)。
 
 ## 5. 完整系统架构
 
-完整架构仍按 L0—L6 组织：来源与证据 → 受控语义命题 → 形式对象 → 逻辑论证 → 数学模型与证明 → 验证与有效性 → 解释、应用与出版。语言—思维逻辑平面横穿这些层，但不增加 L7；之元写作法位于公共表达层并接受来源、版本、证据与残余约束。本 R1 还把已经分散运行的资格、ceiling、悬置、降级与撤回接口显式化为[认识论治理内核与联邦平面 R1](./docs/architecture/epistemic-governance-kernel-and-federated-planes.md)（状态为 `OWNER_ACCEPTED_WITH_EXPLICIT_RESIDUALS`）：它是 `FEDERATED_ARCHITECTURE_ONLY` 的引用/约束投影，不是新的真值层。
+完整架构仍按 L0—L6 组织：来源与证据 → 受控语义命题 → 形式对象 → 逻辑论证 → 数学模型与证明 → 验证与有效性 → 解释、应用与出版。语言—思维逻辑平面横穿这些层，但不增加 L7；之元写作法位于公共表达层并接受来源、版本、证据与残余约束。本 R1 还把已经分散运行的资格、ceiling、悬置、降级与撤回接口显式化为[认识论治理内核与联邦平面 R1](./docs/architecture/epistemic-governance-kernel-and-federated-planes.md)（状态为 `OWNER_ACCEPTED_WITH_EXPLICIT_RESIDUALS`）：它是 `FEDERATED_ARCHITECTURE_ONLY` 的引用/约束投影，不是新的真值层。其 K13 `ASSERTION_NON_ESCALATION` 把“防断言膨胀”固化为仓库级不变量。
 
 [REOS vNext LIGHT](./docs/architecture/reos-vnext-light.md) 是研究执行控制的有界内核：它记录 recoverable research obligations、引用、审查和 projection-only handoff，但不新增 L7、真值 authority 或公共成果权威；其首次真实 pilot 的公开边界见[研究综合](./reports/research/reos-vnext-light-pilot-r1.md)。
 

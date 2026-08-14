@@ -68,6 +68,7 @@
     {"id":"K10_NO_SECOND_AUTHORITY","coverage":"MACHINE_ENFORCED","binding":"strict schema and REFERENTIAL_ONLY"},
     {"id":"K11_FEEDBACK_RETURNS_TO_L0","coverage":"MACHINE_ENFORCED","binding":"r-feedback"},
     {"id":"K12_TYPED_RELATIONS","coverage":"MACHINE_ENFORCED","binding":"closed relation/effect schema"},
+    {"id":"K13_ASSERTION_NON_ESCALATION","coverage":"MACHINE_ENFORCED","binding":"claim ceiling, provenance/adjudication and prohibited upgrade effects"},
     {"id":"EXTERNAL_VALIDITY","coverage":"HUMAN_REVIEW_ONLY","binding":"independent evidence review absent"},
     {"id":"UNIVERSAL_CEILING_ORDER","coverage":"UNBOUND","binding":"local vocabularies remain incomparable"}
   ]

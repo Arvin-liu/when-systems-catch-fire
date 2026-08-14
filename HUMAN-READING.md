@@ -28,7 +28,7 @@
 |查看物理复算与边界|[物理资产纠偏](./docs/foundation/physics-asset-correction-20260729.md)|[开放问题](./RESULTS/OPEN-QUESTIONS.md)|
 |阅读研究、文章和迭代成果|[研究与文章](./RESULTS/RESEARCH-AND-ARTICLES.md)|[按时间台账](./RESULTS/CHRONOLOGY.md)|
 |贡献新知识资产|[贡献指南](./CONTRIBUTING.md)|[未来断言准入协议](./docs/foundation/future-claim-admission-protocol.md)、[自纠错引擎](./docs/governance/self-correction-engine.md)|
-|让 AI 协助阅读|[AI 助手使用参考](./docs/ai-assistant-usage-reference.md)|[AI 冷启动](./AI-START-HERE.md)、[AI 交接](./AI-HANDOFF.md)|
+|让 AI 协助阅读|[AI 助手使用参考](./docs/ai-assistant-usage-reference.md)|[AI 冷启动](./AI-START-HERE.md)、[AI 状态增量日志](./STATE-CHANGELOG.md)、[AI 交接](./AI-HANDOFF.md)|
 
 ## 结果记录怎样读
 
@@ -54,3 +54,5 @@
 4. 历史报告、旧表和旧措辞，仅作为来源与变更证据。
 
 独立 GitHub Pages 阅读站已退出维护，不再是权威或同步面。仓库 Markdown 与其中的相对链接是唯一持续维护的人类阅读层。
+
+面向 Agent 的最近状态恢复入口是 [STATE-CHANGELOG.md](./STATE-CHANGELOG.md)；它只记录相对于上一主线状态的增量，不取代本页的人类阅读路线或任何权威资产。

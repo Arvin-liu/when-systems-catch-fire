@@ -27,6 +27,8 @@ Q32I closed iteration method `1.3.0` and registry-derived system map `0.3.0` aft
 
 Iteration method `1.4.0 — Continuous Stage Snapshot Publication` is Current. It adds a separate publication-status axis and a machine registry for public stage summaries; snapshot visibility never raises Accepted/Current/Activated. Task 101 adds machine/human dual outputs, repository-native result surfaces and self-correction CI, while retiring the former independent deployed reader from current and future completion gates.
 
+当前方法 `1.4.0`、系统图 `0.5.0` 与之元写作法 `0.5.0` 均以各自权威资产为准；旧版本只作为历史证据。面向 AI 的最近状态增量见 [`STATE-CHANGELOG.md`](../STATE-CHANGELOG.md)，它是恢复导航，不取代 `docs/project-current-state.md`、registry、claim/evidence 或 Results Book。
+
 Charter System R1（`docs/governance/charter-system-r1.md`，元治理层）经独立 exact-head acceptance（PR #137 head `669c9f8c` → merge commit `0e7c032`）收口为 Current（non-Activated），并经 front-door / 系统注册表 / VERSIONING 三表面同步（PR #139 → `09bf6400`，方法 `IGNITION-CHARTER-SYSTEM-R1-CURRENT-FRONT-DOOR-REGISTRY-AND-VERSIONING-SYNCHRONIZATION-R1-20260726`）完成 Current 收口的逐表面 attestation。它保持 `activated=false`、`publication_status=UNPUBLISHED`：Current 不等于 Activated，亦不构成任何已发布快照（满足 `PUBLISHED_SNAPSHOT != ACCEPTED/CURRENT/ACTIVATED`）。本同步不改变价值宪章、七层架构、Foundation 或迭代操作法版本。
 
 IGNITION-HOMEPAGE-USAGE-CHARTER-SYNC-EXACT-HEAD-ACCEPTANCE-AND-PAGES-CLOSEOUT-R1-20260727 将 PR #143（head `77fc5f95777a3b7d2c5fd2f269541f35d45c4f34`）独立验收并以普通 merge 合入 `main`：首页／使用说明／系统图／宪章体系统一同步收口，系统图 `0.4.0` 由候选提升为 Current，`0.3.0` 与 `0.2.0` 为 Historical，`0.1.0` 为更早 Historical；Charter System R1 维持 `activated=false` / `publication_status=UNPUBLISHED`（Current 不等于 Activated，未发布快照）。本收口只改变系统图版本生命周期与前门表面 attestation，不激活任何能力／运行时／执行器，不改变七层架构、Foundation、迭代操作法 1.4.0、价值宪章或阶段快照历史。
@@ -47,8 +49,9 @@ IGNITION-HOMEPAGE-USAGE-CHARTER-SYNC-EXACT-HEAD-ACCEPTANCE-AND-PAGES-CLOSEOUT-R1
 - tools/foundation/、tests/foundation/、formal/、views/
 - .github/workflows/、reports/foundation-architecture/
 - CHANGELOG.md 与对应审计记录
+- STATE-CHANGELOG.md（每次正式 `main` 合并的一条 AI 状态 delta）
 
-任何影响项目身份、能力、使用方式、当前状态或 Agent 交接的迭代，必须按 `ITERATION.md` 和 `tools/validate_iteration_sync.py` 同步这些表面；纯修复若不更新，必须记录可验证的 `NO_CHANGE_WITH_REASON`。
+任何影响项目身份、能力、使用方式、当前状态或 Agent 交接的迭代，必须按 `ITERATION.md` 和 `tools/validate_iteration_sync.py` 同步这些表面；纯修复若不更新，必须记录可验证的 `NO_CHANGE_WITH_REASON`。每次正式迭代合并 `main` 都必须在同一轮向 `STATE-CHANGELOG.md` append 一条简短 delta，并由结构/链接 validator 检查；普通软件 `CHANGELOG.md` 继续记录面向人类的发布历史，二者不互相替代。
 
 ## 审计要求
 

@@ -15,6 +15,9 @@
 ## 点火主仓库作为正式版本层
 `Arvin-liu/when-systems-catch-fire` 是正式版本层，接受审核后的资产。分支策略：维护在 `version/*` 分支，经 GPT 审核后再合并 main。
 
+## Agent 状态恢复优先级
+新 Agent 进入正式仓库时，先读仓库根目录的 [`STATE-CHANGELOG.md`](../STATE-CHANGELOG.md) baseline 与最近若干条 delta，再按其中的 `next_read` 回到 `docs/project-current-state.md`、`ITERATION.md`、Foundation、claim/evidence registry 和任务资产。每次正式迭代合并 `main` 必须追加一条 delta；该日志只提供最近状态的增量导航，不替代任何权威记录。
+
 ## 书籍碰撞输出如何进入候选区
 1. 得到大脑产出书籍碰撞笔记 → 进入 1111 批次目录。
 2. Agent 读取并抽取 → 生成 `data/meta-protocols/book-validation-cases-20260709.json` 与 `docs/meta-protocols/book-validation-22-cases-20260709.md`。
