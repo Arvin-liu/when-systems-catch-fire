@@ -141,6 +141,7 @@ def record_review(
     decision: ReviewDecision | Mapping[str, Any],
     repair_obligations: list[ResearchObligation | Mapping[str, Any]] | None = None,
 ) -> dict[str, Any]:
+    validate_case(document)
     result = copy.deepcopy(dict(document))
     decision_record = _dict(decision)
     review_id = decision_record.get("review_id")
@@ -171,6 +172,7 @@ def amend_question(
     reason: str,
     amendment_id: str,
 ) -> dict[str, Any]:
+    validate_case(document)
     result = copy.deepcopy(dict(document))
     question = result["case"]["question_contract"]
     new_summary = copy.deepcopy(dict(frozen_validation_summary))

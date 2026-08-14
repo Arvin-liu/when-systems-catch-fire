@@ -43,12 +43,7 @@ _PROVIDER_MODEL_CAPABILITY_MARKERS = (
     "haiku",
     "opus",
 )
-_PROVIDER_MODEL_CAPABILITY_RE = re.compile(
-    r"^(?:provider:|model:|"
-    r"(?:openai|anthropic|google|meta|microsoft|xai|cohere|mistral|deepseek|qwen)(?:[/_:.\-]|$)|"
-    r"(?:gpt|claude|gemini|llama|qwen|mistral|deepseek|o[1-9])(?:[/_:.\-]|$))",
-    re.IGNORECASE,
-)
+_R1_PROVIDER_NEUTRAL_CAPABILITIES = frozenset({"public-web-read"})
 _HANDOFF_NONCANONICAL_STATUSES = frozenset({"CANDIDATE_NOT_CANONICAL", "NONCANONICAL", "RESEARCH_STAGE_ONLY"})
 _HANDOFF_REQUIRED_BOUNDARIES = (
     "truth",
@@ -382,11 +377,17 @@ def _validate_obligations(
                 if (
                     isinstance(capability, str)
                     and (
-                        "/" in capability
+                        capability not in _R1_PROVIDER_NEUTRAL_CAPABILITIES
+                        or "/" in capability
                         or any(marker in capability.casefold() for marker in _PROVIDER_MODEL_CAPABILITY_MARKERS)
                     )
                 ):
-                    _issue(issues, "PROVIDER_HARD_DEPENDENCY", f"{item_path}.required_capabilities", "provider/model names are telemetry only")
+                    _issue(
+                        issues,
+                        "PROVIDER_HARD_DEPENDENCY",
+                        f"{item_path}.required_capabilities",
+                        "R1 required capabilities must use the narrow provider-neutral pilot vocabulary",
+                    )
     for index, record in enumerate(records):
         for dependency in record.get("depends_on", []) if isinstance(record.get("depends_on"), list) else []:
             if dependency not in ids:
@@ -648,6 +649,19 @@ def _validate_budget_contract(budget: Any, path: str, issues: list[ValidationIss
 
 
 def collect_case_errors(document: Any) -> list[ValidationIssue]:
+    try:
+        return _collect_case_errors(document)
+    except (AttributeError, KeyError, TypeError, ValueError) as exc:
+        return [
+            ValidationIssue(
+                "MALFORMED_STATE",
+                "$",
+                f"validator rejected malformed JSON-compatible state ({type(exc).__name__})",
+            )
+        ]
+
+
+def _collect_case_errors(document: Any) -> list[ValidationIssue]:
     issues: list[ValidationIssue] = []
     if not isinstance(document, Mapping):
         return [ValidationIssue("TYPE", "$", "case document must be an object")]
@@ -720,7 +734,7 @@ def validate_case(document: Any) -> None:
         raise ContractError(issues)
 
 
-def validate_handoff(bundle: Any) -> None:
+def _validate_handoff(bundle: Any) -> None:
     issues: list[ValidationIssue] = []
     record = _mapping(bundle, "$", issues)
     if record is None:
@@ -768,3 +782,20 @@ def validate_handoff(bundle: Any) -> None:
         _issue(issues, "TYPE", "$.independent_review_required", "must be boolean")
     if issues:
         raise ContractError(issues)
+
+
+def validate_handoff(bundle: Any) -> None:
+    try:
+        _validate_handoff(bundle)
+    except ContractError:
+        raise
+    except (AttributeError, KeyError, TypeError, ValueError) as exc:
+        raise ContractError(
+            [
+                ValidationIssue(
+                    "MALFORMED_STATE",
+                    "$",
+                    f"handoff validator rejected malformed JSON-compatible state ({type(exc).__name__})",
+                )
+            ]
+        ) from exc

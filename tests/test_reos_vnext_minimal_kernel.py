@@ -141,6 +141,14 @@ class MinimalKernelTests(unittest.TestCase):
         self.assertCode(bool_version, "QUESTION_MUTATION")
         with self.assertRaises(ContractError) as context:
             amend_question(
+                bool_version,
+                frozen_validation_summary={**SUMMARY, "scope": "repair input"},
+                reason="must not normalize malformed version",
+                amendment_id="amend:bad",
+            )
+        self.assertIn("QUESTION_MUTATION", {issue.code for issue in context.exception.issues})
+        with self.assertRaises(ContractError) as context:
+            amend_question(
                 amended,
                 frozen_validation_summary={**SUMMARY, "scope": "third scope"},
                 reason="second bounded amendment",
@@ -246,6 +254,15 @@ class MinimalKernelTests(unittest.TestCase):
             "vertex-ai",
             "bedrock-claude",
             "ollama-llama3",
+            "acme-llm-42",
+            "acme-inference-engine-v2",
+            "vendor:acme",
+            "deployment:acme",
+            "backend:acme",
+            "acme-7b-instruct",
+            "xai:grok",
+            "cohere-command",
+            "o1-mini",
         ):
             provider = obligation().as_dict()
             provider["required_capabilities"] = [capability]
@@ -262,6 +279,12 @@ class MinimalKernelTests(unittest.TestCase):
         self.assertCode(success, "GENERIC_SUCCESS")
 
     def test_cross_record_refs_and_nonfinite_values_are_rejected(self):
+        malformed = copy.deepcopy(make_case())
+        malformed["case"]["case_id"] = []
+        self.assertCode(malformed, "MALFORMED_STATE")
+        malformed_mode = copy.deepcopy(make_case())
+        malformed_mode["case"]["activation"]["mode"] = []
+        self.assertCode(malformed_mode, "MALFORMED_STATE")
         document = add_obligation(make_case(), obligation())
         document["case"]["obligations"][0]["output_artifact_refs"] = ["art:missing"]
         self.assertCode(document, "UNKNOWN_REF")
