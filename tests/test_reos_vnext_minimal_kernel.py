@@ -294,6 +294,16 @@ class MinimalKernelTests(unittest.TestCase):
         malformed_mode = copy.deepcopy(make_case())
         malformed_mode["case"]["activation"]["mode"] = []
         self.assertCode(malformed_mode, "MALFORMED_STATE")
+        nonfinite_summary = copy.deepcopy(SUMMARY)
+        nonfinite_summary["stop_conditions"] = [float("nan")]
+        with self.assertRaises(ContractError) as context:
+            amend_question(
+                make_case(),
+                frozen_validation_summary=nonfinite_summary,
+                reason="non-finite fixture",
+                amendment_id="amend:nan",
+            )
+        self.assertIn("MALFORMED_STATE", {issue.code for issue in context.exception.issues})
         malformed_document = {"schema_version": "reos.vnext.minimal-kernel.r1", "case": {}}
         for mutator in (
             lambda value: add_obligation(value, obligation()),
@@ -323,6 +333,20 @@ class MinimalKernelTests(unittest.TestCase):
                 forbidden_assumptions=(),
             ),
         )
+        malformed_decision = {
+            "review_id": "review:refs",
+            "reviewer_ref": "role-g",
+            "exact_input_refs": ["art:source-a"],
+            "independent": True,
+            "verdict": "MATERIAL_REPAIR_REQUIRED",
+            "material_findings": [],
+            "repair_obligation_ids": "not-a-list",
+            "residuals": [],
+            "scope_ceiling": "pilot scope",
+        }
+        with self.assertRaises(ContractError) as context:
+            record_review(document, malformed_decision, [obligation("obl:repair")])
+        self.assertIn("MALFORMED_STATE", {issue.code for issue in context.exception.issues})
         document["case"]["reviews"][0]["decision"] = {
             "review_id": "review:refs",
             "reviewer_ref": "role-g",

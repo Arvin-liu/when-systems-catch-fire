@@ -42,6 +42,8 @@ QuestionContract is intentionally compact. It persists:
 
 The full preregistration, source ledger and claim registry remain outside the REOS case. The summary is a validation boundary, not a second canonical research record.
 
+For deterministic R1 validation, the binding digest is the SHA-256 of canonical JSON containing exactly `preregistration_ref` and `frozen_validation_summary`; the full preregistration bytes remain external and are not copied into the case.
+
 ## Typed state sets
 
 Activation modes: `DIRECT_RESEARCH`, `REOS_LIGHT`, `REOS_FULL`.

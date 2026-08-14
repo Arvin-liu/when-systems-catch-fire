@@ -42,12 +42,18 @@ def utc_now() -> str:
 
 def _dict(value: Any) -> dict[str, Any]:
     if hasattr(value, "as_dict"):
-        return copy.deepcopy(value.as_dict())
+        value = value.as_dict()
     if not isinstance(value, Mapping):
         raise ContractError(
             [ValidationIssue("MALFORMED_STATE", "$", "REOS record must be a mapping or frozen contract object")]
         )
     return copy.deepcopy(dict(value))
+
+
+def _string_sequence(value: Any, path: str) -> tuple[str, ...]:
+    if not isinstance(value, (list, tuple)) or any(not isinstance(item, str) for item in value):
+        raise ContractError([ValidationIssue("MALFORMED_STATE", path, "must be a sequence of strings")])
+    return tuple(value)
 
 
 def _preregistration_binding_digest(
@@ -102,7 +108,12 @@ def new_case(
     if not isinstance(budget_contract, Mapping):
         raise ContractError([ValidationIssue("MALFORMED_STATE", "$.budget_contract", "must be an object")])
     summary = copy.deepcopy(dict(frozen_validation_summary))
-    summary_digest = sha256_json(summary)
+    try:
+        summary_digest = sha256_json(summary)
+    except (TypeError, ValueError) as exc:
+        raise ContractError(
+            [ValidationIssue("MALFORMED_STATE", "$.frozen_validation_summary", f"not canonical JSON ({type(exc).__name__})")]
+        ) from exc
     if preregistration_digest != _preregistration_binding_digest(preregistration_ref, summary):
         raise ContractError(
             [
@@ -124,9 +135,9 @@ def new_case(
     activation = ActivationDecision(
         mode=mode,
         reason=activation_reason,
-        observed_need=tuple(observed_need),
+        observed_need=_string_sequence(observed_need, "$.activation.observed_need"),
         simpler_baseline=simpler_baseline,
-        unnecessary_modules=tuple(unnecessary_modules),
+        unnecessary_modules=_string_sequence(unnecessary_modules, "$.activation.unnecessary_modules"),
     )
     case = ResearchCase(
         case_id=case_id,
@@ -134,7 +145,7 @@ def new_case(
         question_contract=question,
         owner_boundary=owner_boundary,
         budget_contract=copy.deepcopy(dict(budget_contract)),
-        stop_conditions=tuple(stop_conditions),
+        stop_conditions=_string_sequence(stop_conditions, "$.stop_conditions"),
     )
     document = case.as_document()
     validate_case(document)
@@ -194,6 +205,11 @@ def record_review(
     result = copy.deepcopy(dict(document))
     decision_record = _dict(decision)
     review_id = decision_record.get("review_id")
+    existing_repair_ids = decision_record.get("repair_obligation_ids")
+    if existing_repair_ids is not None and not isinstance(existing_repair_ids, list):
+        raise ContractError(
+            [ValidationIssue("MALFORMED_STATE", "$.decision.repair_obligation_ids", "must be a list")]
+        )
     entries = result["case"]["reviews"]
     matching = [entry for entry in entries if entry.get("request", {}).get("review_id") == review_id]
     if len(matching) != 1:
@@ -207,9 +223,11 @@ def record_review(
             [ValidationIssue("DUPLICATE_ID", "$.case.reviews", "review decision is append-only and cannot be overwritten")]
         )
     if repair_obligations:
+        if existing_repair_ids is None:
+            decision_record["repair_obligation_ids"] = []
         for repair in repair_obligations:
             result = add_obligation(result, repair)
-            decision_record.setdefault("repair_obligation_ids", []).append(_dict(repair)["obligation_id"])
+            decision_record["repair_obligation_ids"].append(_dict(repair)["obligation_id"])
     for entry in result["case"]["reviews"]:
         if entry.get("request", {}).get("review_id") == review_id:
             entry["decision"] = decision_record
@@ -234,7 +252,12 @@ def amend_question(
         )
     new_summary = copy.deepcopy(dict(frozen_validation_summary))
     current_digest = question["validation_summary_digest"]
-    next_digest = sha256_json(new_summary)
+    try:
+        next_digest = sha256_json(new_summary)
+    except (TypeError, ValueError) as exc:
+        raise ContractError(
+            [ValidationIssue("MALFORMED_STATE", "$.frozen_validation_summary", f"not canonical JSON ({type(exc).__name__})")]
+        ) from exc
     question["current_validation_summary"] = new_summary
     question["validation_summary_digest"] = next_digest
     question["version"] += 1
@@ -304,8 +327,10 @@ def prepare_handoff(
     independent_review_required: bool = True,
 ) -> dict[str, Any]:
     validate_case(document)
-    if not isinstance(object_refs, (list, tuple)) or any(not isinstance(ref, str) for ref in object_refs):
-        raise ContractError([ValidationIssue("MALFORMED_STATE", "$.object_refs", "must contain only strings")])
+    object_refs = _string_sequence(object_refs, "$.object_refs")
+    allowed_claims = _string_sequence(allowed_claims, "$.allowed_claims")
+    prohibited_inference = _string_sequence(prohibited_inference, "$.prohibited_inference")
+    residuals = _string_sequence(residuals, "$.residuals")
     case = document["case"]
     known = {
         case["case_id"],
