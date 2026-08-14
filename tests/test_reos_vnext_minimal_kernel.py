@@ -209,6 +209,40 @@ class MinimalKernelTests(unittest.TestCase):
         success["case"]["case_state"] = "SUCCESS"
         self.assertCode(success, "GENERIC_SUCCESS")
 
+    def test_cross_record_refs_and_nonfinite_values_are_rejected(self):
+        document = add_obligation(make_case(), obligation())
+        document["case"]["obligations"][0]["output_artifact_refs"] = ["art:missing"]
+        self.assertCode(document, "UNKNOWN_REF")
+        document = record_artifact(make_case(), artifact())
+        document["case"]["artifact_refs"][0]["derivation_refs"] = ["art:missing"]
+        self.assertCode(document, "UNKNOWN_REF")
+        document = record_artifact(make_case(), artifact())
+        document = request_review(
+            document,
+            ReviewRequest(
+                review_id="review:refs",
+                named_question="Are the artifact references inspectable?",
+                input_refs=["art:source-a"],
+                independence_requirement="fresh reviewer",
+                forbidden_assumptions=(),
+            ),
+        )
+        document["case"]["reviews"][0]["decision"] = {
+            "review_id": "review:refs",
+            "reviewer_ref": "role-g",
+            "exact_input_refs": ["art:missing"],
+            "independent": True,
+            "verdict": "ABSTAIN",
+            "material_findings": [],
+            "repair_obligation_ids": [],
+            "residuals": ["missing input"],
+            "scope_ceiling": "pilot scope",
+        }
+        self.assertCode(document, "UNKNOWN_REF")
+        nonfinite = copy.deepcopy(make_case())
+        nonfinite["case"]["question_contract"]["summary"]["bad_number"] = float("nan")
+        self.assertCode(nonfinite, "NON_DETERMINISTIC_VALUE")
+
     def test_review_repair_reload_and_typed_handoff(self):
         document = add_obligation(make_case(), obligation(status="SATISFIED_WITH_SCOPE"))
         document = record_artifact(document, artifact())
@@ -251,7 +285,7 @@ class MinimalKernelTests(unittest.TestCase):
             allowed_claims=["source identity and bounded scope only"],
             noncanonical_status="CANDIDATE_NOT_CANONICAL",
             scope="pilot scope",
-            prohibited_inference=["does not prove truth, causality, external validity or Owner acceptance"],
+            prohibited_inference=["does not prove truth, causality, external validity, Owner acceptance or epistemic acceptance"],
             residuals=["independent source-family review remains scoped to this pilot"],
         )
         self.assertEqual(handoff["receiving_authority"], "Foundation L0")
@@ -261,6 +295,12 @@ class MinimalKernelTests(unittest.TestCase):
             from reos_vnext import validate_handoff
 
             validate_handoff(missing_boundary)
+        bad_status = copy.deepcopy(handoff)
+        bad_status["noncanonical_status"] = "CANONICAL"
+        with self.assertRaises(ContractError):
+            from reos_vnext import validate_handoff
+
+            validate_handoff(bad_status)
 
     def test_cli_init_validate_status(self):
         with tempfile.TemporaryDirectory() as directory:

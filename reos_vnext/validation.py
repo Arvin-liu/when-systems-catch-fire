@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import math
 import re
 from dataclasses import dataclass
 from typing import Any, Iterable, Mapping
@@ -20,6 +21,14 @@ from .contract import (
 
 _ID_RE = re.compile(r"^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$")
 _SHA256_RE = re.compile(r"^[0-9a-f]{64}$")
+_HANDOFF_NONCANONICAL_STATUSES = frozenset({"CANDIDATE_NOT_CANONICAL", "NONCANONICAL", "RESEARCH_STAGE_ONLY"})
+_HANDOFF_REQUIRED_BOUNDARIES = (
+    "truth",
+    "caus",
+    "external validity",
+    "owner acceptance",
+    "epistemic",
+)
 
 _FORBIDDEN_KEYS = frozenset(
     {
@@ -65,7 +74,7 @@ class ContractError(ValueError):
 
 
 def canonical_json(value: Any) -> str:
-    return json.dumps(value, ensure_ascii=False, sort_keys=True, separators=(",", ":"))
+    return json.dumps(value, ensure_ascii=False, sort_keys=True, separators=(",", ":"), allow_nan=False)
 
 
 def sha256_json(value: Any) -> str:
@@ -137,6 +146,17 @@ def _check_forbidden_keys(value: Any, path: str, issues: list[ValidationIssue]) 
             _check_forbidden_keys(child, f"{path}[{index}]", issues)
 
 
+def _check_json_values(value: Any, path: str, issues: list[ValidationIssue]) -> None:
+    if isinstance(value, float) and not math.isfinite(value):
+        _issue(issues, "NON_DETERMINISTIC_VALUE", path, "NaN and Infinity are not legal canonical JSON values")
+    elif isinstance(value, Mapping):
+        for key, child in value.items():
+            _check_json_values(child, f"{path}.{key}", issues)
+    elif isinstance(value, list):
+        for index, child in enumerate(value):
+            _check_json_values(child, f"{path}[{index}]", issues)
+
+
 def _validate_activation(activation: Any, path: str, issues: list[ValidationIssue]) -> None:
     record = _mapping(activation, path, issues)
     if record is None:
@@ -165,8 +185,11 @@ def _validate_question(question: Any, path: str, issues: list[ValidationIssue]) 
     _nonempty_string(record.get("question_ref"), f"{path}.question_ref", issues)
     summary = _mapping(record.get("summary"), f"{path}.summary", issues)
     if summary is not None:
-        expected = sha256_json(summary)
-        if record.get("question_digest") != expected:
+        try:
+            expected = sha256_json(summary)
+        except ValueError:
+            expected = None
+        if expected is not None and record.get("question_digest") != expected:
             _issue(issues, "QUESTION_MUTATION", f"{path}.question_digest", "digest does not match the frozen summary")
     for digest_name in ("question_digest", "root_digest"):
         value = record.get(digest_name)
@@ -475,6 +498,11 @@ def _validate_reviews(
             _issue(issues, "REVIEW_ID", f"{item_path}.decision.review_id", "decision must match request")
         _nonempty_string(decision_record.get("reviewer_ref"), f"{item_path}.decision.reviewer_ref", issues)
         _strings(decision_record.get("exact_input_refs"), f"{item_path}.decision.exact_input_refs", issues)
+        exact_input_refs = decision_record.get("exact_input_refs")
+        if isinstance(exact_input_refs, list):
+            for ref in exact_input_refs:
+                if ref not in known_refs:
+                    _issue(issues, "UNKNOWN_REF", f"{item_path}.decision.exact_input_refs", "review input reference is unknown")
         if not isinstance(decision_record.get("independent"), bool) or not decision_record.get("independent"):
             _issue(issues, "REVIEW_INDEPENDENCE", f"{item_path}.decision.independent", "independent review is required")
         if decision_record.get("verdict") not in REVIEW_VERDICTS:
@@ -496,6 +524,7 @@ def collect_case_errors(document: Any) -> list[ValidationIssue]:
     issues: list[ValidationIssue] = []
     if not isinstance(document, Mapping):
         return [ValidationIssue("TYPE", "$", "case document must be an object")]
+    _check_json_values(document, "$", issues)
     _check_forbidden_keys(document, "$", issues)
     allowed_top = {"schema_version", "case"}
     _required(document, allowed_top, "$", issues)
@@ -540,6 +569,18 @@ def collect_case_errors(document: Any) -> list[ValidationIssue]:
     question_ref = question.get("question_ref", "")
     obligations, obligation_ids = _validate_obligations(case.get("obligations"), question_ref, "$.case.obligations", issues)
     artifacts, artifact_ids = _validate_artifacts(case.get("artifact_refs"), "$.case.artifact_refs", issues)
+    for index, obligation in enumerate(obligations):
+        output_refs = obligation.get("output_artifact_refs")
+        if isinstance(output_refs, list):
+            for ref in output_refs:
+                if ref not in artifact_ids:
+                    _issue(issues, "UNKNOWN_REF", f"$.case.obligations[{index}].output_artifact_refs", "output artifact reference is unknown")
+    for index, artifact in enumerate(artifacts):
+        derivation_refs = artifact.get("derivation_refs")
+        if isinstance(derivation_refs, list):
+            for ref in derivation_refs:
+                if ref not in artifact_ids:
+                    _issue(issues, "UNKNOWN_REF", f"$.case.artifact_refs[{index}].derivation_refs", "derivation artifact reference is unknown")
     _validate_evidence(case.get("evidence_requests"), obligation_ids, artifact_ids, "$.case.evidence_requests", issues)
     claim_ids = _validate_claims(case.get("claim_candidates"), artifact_ids, "$.case.claim_candidates", issues)
     known_refs = {case.get("case_id"), *obligation_ids, *artifact_ids, *claim_ids}
@@ -576,10 +617,17 @@ def validate_handoff(bundle: Any) -> None:
     _id(record.get("bundle_id"), "$.bundle_id", issues)
     for name in ("bundle_type", "receiving_authority", "noncanonical_status", "scope"):
         _nonempty_string(record.get(name), f"$.{name}", issues)
+    if record.get("noncanonical_status") not in _HANDOFF_NONCANONICAL_STATUSES:
+        _issue(issues, "HANDOFF_STATUS", "$.noncanonical_status", "handoff must remain a noncanonical research-stage status")
     for name in ("object_refs", "allowed_claims", "prohibited_inference", "residuals"):
         _strings(record.get(name), f"$.{name}", issues)
     if not record.get("prohibited_inference"):
         _issue(issues, "HANDOFF_PROHIBITED_INFERENCE", "$.prohibited_inference", "handoff must state forbidden inference")
+    else:
+        boundary_text = " ".join(record.get("prohibited_inference", [])).lower()
+        missing_boundaries = [marker for marker in _HANDOFF_REQUIRED_BOUNDARIES if marker not in boundary_text]
+        if missing_boundaries:
+            _issue(issues, "HANDOFF_PROHIBITED_INFERENCE", "$.prohibited_inference", f"missing boundary markers: {missing_boundaries}")
     if not isinstance(record.get("independent_review_required"), bool):
         _issue(issues, "TYPE", "$.independent_review_required", "must be boolean")
     if issues:
