@@ -1209,6 +1209,11 @@
   - 可搜索名称：IMPLICIT-2E8A2F551430F78D / # Preregistration — Task 110 OpenAlex Independent Replication Pilot (C-03) / IMPLICIT-2E8A2F551430F78D
   - 来源：`data/operations/iterations/110/openalex/PREREGISTRATION.md`
   - 依赖：—；被引用：—
+- [# REOS vNext minimal kernel R1 — frozen contract](../../../docs/architecture/reos-vnext-minimal-kernel-r1-contract.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-21D15A652CDB124C / # REOS vNext minimal kernel R1 — frozen contract / IMPLICIT-21D15A652CDB124C
+  - 来源：`docs/architecture/reos-vnext-minimal-kernel-r1-contract.md`
+  - 依赖：—；被引用：—
 - [# sub(10,4)=6 (feed add output as 'a')](../../../function-os-candidate/v0.2/tests/test_n8_real_router.py)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-88B8E7E37A33D533 / # sub(10,4)=6 (feed add output as 'a') / IMPLICIT-88B8E7E37A33D533
@@ -1493,6 +1498,11 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-69500BE4D2CE8875 / ## Metrics / IMPLICIT-69500BE4D2CE8875 / IMPLICIT-64F26D3379EFC8AB
   - 来源：`function-os-candidate/v0.2/benchmark/30_EXECUTION_LOG.md`
+  - 依赖：—；被引用：—
+- [## Minimal persisted kernel](../../../docs/architecture/reos-vnext-light.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-A2ECE5CCBA050698 / ## Minimal persisted kernel / IMPLICIT-A2ECE5CCBA050698
+  - 来源：`docs/architecture/reos-vnext-light.md`
   - 依赖：—；被引用：—
 - [## Model Identity](../../../data/external-research/121-fulltext-resolver/121q6/pr41-body.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -2493,14 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-09E18F45D120C04D / ### BC-20260709-009 《影响力》 / IMPLICIT-09E18F45D120C04D / IMPLICIT-F7AC5BBB30C9232B
   - 来源：`reports/math-foundation/pilot-formal-audit-20260712.md`
-  - 依赖：—；被引用：—
-- [### D. 执行：Function OS 能做什么](../../../data/operations/iterations/112/publication/r0-original/03-%E7%A0%94%E7%A9%B6%E9%97%AE%E9%A2%98%E8%B0%B1%E7%B3%BB.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-7DA9656059AA2661 / ### D. 执行：Function OS 能做什么 / IMPLICIT-7DA9656059AA2661
-  - 来源：`data/operations/iterations/112/publication/r0-original/03-研究问题谱系.md`
-  - 依赖：—；被引用：—
-- [### FORCED STOP — Awaiting GPT Verification](../../../reports/external-research/121Q3-night-final-report.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-409452B95E2E4B58 / ### FORCED STOP — Awaiting GPT Verification / IMPLICIT-409452B95E2E4B58
-  - 来源：`reports/external-research/121Q3-night-final-report.md`
   - 依赖：—；被引用：—

@@ -55,7 +55,7 @@ RULES: list[tuple[str, tuple[str, ...]]] = [
     # 2. Operations / receipt / history records.
     ("RECEIPT_HISTORY_OPERATIONS", ("data/operations/", "data/ops/")),
     # 3. Tools, scripts, workflows.
-    ("TOOL_OR_WORKFLOW", ("tools/", "scripts/", ".github/")),
+    ("TOOL_OR_WORKFLOW", ("tools/", "scripts/", ".github/", "reos_vnext/")),
     # 4. Schemas.
     ("SCHEMA", ("schemas/",)),
     # 5. Test fixtures.

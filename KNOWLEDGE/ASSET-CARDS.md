@@ -114,6 +114,8 @@
 - [active queue 排除；同一冻结评分模型的 task-110 projection 保留 C-03 作为已执行的](./cards/part-002.md#asset-nfc-d1eb87089fada196) — `NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR` · `NFC-d1eb87089fada196`
 <a id="asset-nfc-d30b79cb6b607ade"></a>
 - [撤回“已经证明物理大一统不可能”，禁止通过“结构性定理”“框架判定”或内部定义回弹。](./cards/part-002.md#asset-nfc-d30b79cb6b607ade) — `NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION` · `NFC-d30b79cb6b607ade`
+<a id="asset-nfc-e7cfbcbf7de77aab"></a>
+- [\[REOS vNext LIGHT\](../docs/architecture/reos-vnext-light.md) 是研究执行控制的有界内核：它记录 recoverable research obligations、引用、审查和 pro](./cards/part-002.md#asset-nfc-e7cfbcbf7de77aab) — `NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR` · `NFC-e7cfbcbf7de77aab`
 <a id="asset-nfc-ea55d13b7ba7aeff"></a>
 - [\[任务 106 合并后真相传播与当前真相调和\](../ITERATION.md)（规范化 ledger / 9 维 impact 引擎 / current-truth 投影 / fail-closed 验证器）。](./cards/part-002.md#asset-nfc-ea55d13b7ba7aeff) — `NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR` · `NFC-ea55d13b7ba7aeff`
 <a id="asset-nfc-f0606e5b1529e0f8"></a>
@@ -201,7 +203,7 @@
 <a id="asset-hr-252ed61cfaf40f35"></a>
 - [Agent 碰撞阶段收口审计（2026-07-08 23:55）](./cards/part-002.md#asset-hr-252ed61cfaf40f35) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-252ED61CFAF40F35`
 <a id="asset-hr-259784cecbb2dc49"></a>
-- [121Q13 Baseline And Overlap Audit](./cards/part-002.md#asset-hr-259784cecbb2dc49) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-259784CECBB2DC49`
+- [121Q13 Baseline And Overlap Audit](./cards/part-003.md#asset-hr-259784cecbb2dc49) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-259784CECBB2DC49`
 <a id="asset-hr-25ccad6cef81cbea"></a>
 - [当一支军队开始相信自己的背影](./cards/part-003.md#asset-hr-25ccad6cef81cbea) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-25CCAD6CEF81CBEA`
 <a id="asset-hr-25db71123fa1cbc7"></a>
@@ -301,7 +303,7 @@
 <a id="asset-hr-4910d221a74d1112"></a>
 - [E2 规范性审核 - 非线性演化协议 (Nonlinear-Evolution Protocol)](./cards/part-003.md#asset-hr-4910d221a74d1112) — `RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `HR-4910D221A74D1112`
 <a id="asset-hr-49dd491e1cd0cf42"></a>
-- [角色—身份碰撞批次路线](./cards/part-003.md#asset-hr-49dd491e1cd0cf42) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-49DD491E1CD0CF42`
+- [角色—身份碰撞批次路线](./cards/part-004.md#asset-hr-49dd491e1cd0cf42) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-49DD491E1CD0CF42`
 <a id="asset-hr-4a7f6b204cdcb0ee"></a>
 - [Validation summary](./cards/part-004.md#asset-hr-4a7f6b204cdcb0ee) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-4A7F6B204CDCB0EE`
 <a id="asset-hr-4b5539f6a578f48d"></a>
@@ -401,7 +403,7 @@
 <a id="asset-hr-728439cfb210ca75"></a>
 - [NC-001 职称硬门槛裹挟青年教师回填审计](./cards/part-004.md#asset-hr-728439cfb210ca75) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-728439CFB210CA75`
 <a id="asset-hr-728801b4d8a22d85"></a>
-- [STEP09 MCF / PSD / ARN / Function OS execution result](./cards/part-004.md#asset-hr-728801b4d8a22d85) — `RESULT_OR_ARTICLE` · `HISTORICAL_COMPLETION_RECORD` · `HR-728801B4D8A22D85`
+- [STEP09 MCF / PSD / ARN / Function OS execution result](./cards/part-005.md#asset-hr-728801b4d8a22d85) — `RESULT_OR_ARTICLE` · `HISTORICAL_COMPLETION_RECORD` · `HR-728801B4D8A22D85`
 <a id="asset-hr-72e8a74d5d2cba68"></a>
 - [Logic validation report](./cards/part-005.md#asset-hr-72e8a74d5d2cba68) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-72E8A74D5D2CBA68`
 <a id="asset-hr-741abc37fd9e4409"></a>
@@ -501,7 +503,7 @@
 <a id="asset-hr-933d6ba7d34f8014"></a>
 - [121C01: First Batch GLM-5.2 Max Semantic Review Report](./cards/part-005.md#asset-hr-933d6ba7d34f8014) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-933D6BA7D34F8014`
 <a id="asset-hr-94decfed90ce354c"></a>
-- [赛课机制碰撞候选回填复核](./cards/part-005.md#asset-hr-94decfed90ce354c) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-94DECFED90CE354C`
+- [赛课机制碰撞候选回填复核](./cards/part-006.md#asset-hr-94decfed90ce354c) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-94DECFED90CE354C`
 <a id="asset-hr-9516507750851228"></a>
 - [IGNITION-106: GAP-001 接口就绪度评估](./cards/part-006.md#asset-hr-9516507750851228) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-9516507750851228`
 <a id="asset-hr-95f4d0b3d4dd2b7d"></a>
@@ -601,7 +603,7 @@
 <a id="asset-hr-b7cf68ed12ba8b82"></a>
 - [两张表单条条目结构审计与统一模板草案](./cards/part-006.md#asset-hr-b7cf68ed12ba8b82) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-B7CF68ED12BA8B82`
 <a id="asset-hr-b9ed64291673acbc"></a>
-- [MF-0001~0005 补入审计记录（2026-07-08）](./cards/part-006.md#asset-hr-b9ed64291673acbc) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-B9ED64291673ACBC`
+- [MF-0001~0005 补入审计记录（2026-07-08）](./cards/part-007.md#asset-hr-b9ed64291673acbc) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-B9ED64291673ACBC`
 <a id="asset-hr-bbf31ff3f05d22fe"></a>
 - [两张表全量碰撞报告（two-tables-full-collision-report）](./cards/part-007.md#asset-hr-bbf31ff3f05d22fe) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-BBF31FF3F05D22FE`
 <a id="asset-hr-bcc48ae7649ea4fe"></a>
@@ -701,7 +703,7 @@
 <a id="asset-hr-e628768805f5eb1d"></a>
 - [Counterexample replay audit](./cards/part-007.md#asset-hr-e628768805f5eb1d) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-E628768805F5EB1D`
 <a id="asset-hr-e7a557e011cab937"></a>
-- [第57期故事样稿｜当一个名字变成接口](./cards/part-007.md#asset-hr-e7a557e011cab937) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-E7A557E011CAB937`
+- [第57期故事样稿｜当一个名字变成接口](./cards/part-008.md#asset-hr-e7a557e011cab937) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-E7A557E011CAB937`
 <a id="asset-hr-e815f8ad25cfc77e"></a>
 - [IGNITION 059 next collision roadmap](./cards/part-008.md#asset-hr-e815f8ad25cfc77e) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-E815F8AD25CFC77E`
 <a id="asset-hr-ea120e5d0d0fa5ff"></a>

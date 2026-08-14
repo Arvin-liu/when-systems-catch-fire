@@ -4,6 +4,66 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [点火框架提供了因果链分析、制度变迁路径、跨域同构识别、退出权分析和门控分析，但不能替代调查、统计、田野、实验和反事实识别。教育不平等的具体因果判定必须 pending。](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-346ac87abca4ed21 / 点火框架提供了因果链分析、制度变迁路径、跨域同构识别、退出权分析和门控分析，但不能替代调查、统计、田野、实验和反事实识别。教育不平等的具体因果判定必须 pending。
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [点火框架提供了因果链分析、制度变迁路径、跨域同构识别、退出权分析和门控分析，但不能替代调查、统计、田野、实验和反事实识别。社会阶层固化的具体因果判定必须 pending。](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-eb5452363e32b3ea / 点火框架提供了因果链分析、制度变迁路径、跨域同构识别、退出权分析和门控分析，但不能替代调查、统计、田野、实验和反事实识别。社会阶层固化的具体因果判定必须 pending。
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [点火框架提供了因果链分析、模型收敛路径、跨域同构识别和乘法临界漂移分析，但不能替代代码、实验、benchmark、可复现评测。大模型涌现的具体因果判定必须 pending。](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-9274086501af220e / 点火框架提供了因果链分析、模型收敛路径、跨域同构识别和乘法临界漂移分析，但不能替代代码、实验、benchmark、可复现评测。大模型涌现的具体因果判定必须 pending。
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [点火框架提供了因果链分析、模型收敛路径、跨域同构识别和元协议分析，但不能替代代码、实验、benchmark、可复现评测。AI 对齐困难的具体因果判定必须 pending。](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a66df6bc83279373 / 点火框架提供了因果链分析、模型收敛路径、跨域同构识别和元协议分析，但不能替代代码、实验、benchmark、可复现评测。AI 对齐困难的具体因果判定必须 pending。
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [点火框架提供了因果链分析、模型收敛路径、跨域同构识别和门控分析，但不能替代代码、实验、benchmark、可复现评测。AI 泛化能力的具体因果判定必须 pending。](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-0eb2e8c870a97187 / 点火框架提供了因果链分析、模型收敛路径、跨域同构识别和门控分析，但不能替代代码、实验、benchmark、可复现评测。AI 泛化能力的具体因果判定必须 pending。
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [点火框架提供了因果链分析、认知收敛路径、跨域同构识别和退出权分析，但不能替代实验、量表、纵向研究、临床证据。动机形成的具体因果判定必须 pending。](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-775e6e87695ca21c / 点火框架提供了因果链分析、认知收敛路径、跨域同构识别和退出权分析，但不能替代实验、量表、纵向研究、临床证据。动机形成的具体因果判定必须 pending。
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [点火框架提供了因果链分析、认知收敛路径、跨域同构识别和退出权分析，但不能替代实验、量表、纵向研究、临床证据。学生动机形成的具体因果判定必须 pending。](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-ae4fa2b1253be155 / 点火框架提供了因果链分析、认知收敛路径、跨域同构识别和退出权分析，但不能替代实验、量表、纵向研究、临床证据。学生动机形成的具体因果判定必须 pending。
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [点火框架提供了因果链分析、认知收敛路径、跨域同构识别和门控分析，但不能替代实验、量表、纵向研究、临床证据。习惯改变的具体因果判定必须 pending。](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-77a4588a1dc51d1b / 点火框架提供了因果链分析、认知收敛路径、跨域同构识别和门控分析，但不能替代实验、量表、纵向研究、临床证据。习惯改变的具体因果判定必须 pending。
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [点火框架提供了因果链分析、认知收敛路径、跨域同构识别和门控分析，但不能替代实验、量表、纵向研究、临床证据。偏见形成的具体因果判定必须 pending。](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-e24695c6deb53e15 / 点火框架提供了因果链分析、认知收敛路径、跨域同构识别和门控分析，但不能替代实验、量表、纵向研究、临床证据。偏见形成的具体因果判定必须 pending。
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [点火框架提供了因果链分析、认知收敛路径、跨域同构识别和门控分析，但不能替代教育实验、长期追踪、个体评估。学习迁移的具体因果判定必须 pending。](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a728fd90aa554516 / 点火框架提供了因果链分析、认知收敛路径、跨域同构识别和门控分析，但不能替代教育实验、长期追踪、个体评估。学习迁移的具体因果判定必须 pending。
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [点火框架提供了因果链分析、跨域同构识别、门控分析和乘法临界漂移分析，但不能替代计量检验和反事实推断。市场失灵的具体因果判定必须 pending。](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-d47264d9bb98e364 / 点火框架提供了因果链分析、跨域同构识别、门控分析和乘法临界漂移分析，但不能替代计量检验和反事实推断。市场失灵的具体因果判定必须 pending。
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [点火框架提供了因果链分析、跨域同构识别和叙事结构收敛，但不能替代文本细读、文学共同体讨论。文学作品跨时代有效性的具体判定必须 pending。](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-25d24960fc0d6664 / 点火框架提供了因果链分析、跨域同构识别和叙事结构收敛，但不能替代文本细读、文学共同体讨论。文学作品跨时代有效性的具体判定必须 pending。
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
 - [点火框架提供了因果链分析、跨域同构识别和审美判断收敛，但不能替代形式分析、媒介分析、观看情境分析、历史语境分析、解释共同体共识。审美判断客观性的具体判定必须 pending。](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-fbaa0de0b4cf3116 / 点火框架提供了因果链分析、跨域同构识别和审美判断收敛，但不能替代形式分析、媒介分析、观看情境分析、历史语境分析、解释共同体共识。审美判断客观性的具体判定必须 pending。

@@ -884,6 +884,11 @@
   - 可搜索名称：NFC-186bc7e44d16f0a7 / "proof_or_evidence_requirement": "typed formalization and proof for mathematical content; independent empirical evidence
   - 来源：`tools/foundation/verify_079.py`
   - 依赖：—；被引用：—
+- ["proof_result",](../../../reos_vnext/validation.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-1b5da0a9744c24f1 / "proof_result",
+  - 来源：`reos_vnext/validation.py`
+  - 依赖：—；被引用：—
 - ["proof_status": "DEFINITION_ONLY",](../../../tools/math_foundation_audit.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-99cab700994f528f / "proof_status": "DEFINITION_ONLY",
@@ -2498,9 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-A74DDB7F7587CB1B / ## 关联函数 / Related Functions / IMPLICIT-A74DDB7F7587CB1B / IMPLICIT-0026301F130FD562
   - 来源：`统一案例总表/0764-C-0769-《写作是门手艺》段落控制≤10行.md`
-  - 依赖：—；被引用：—
-- [## 关联函数 / Related Functions](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0700-C-0705-%E5%8F%AF%E9%80%89%E9%9B%86%E5%8A%A8%E5%8A%9B%E5%AD%A6%C3%97%E5%95%86%E4%B8%9A%E6%A8%A1%E5%BC%8F.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-AB177EBEC1562BA2 / ## 关联函数 / Related Functions / IMPLICIT-AB177EBEC1562BA2 / IMPLICIT-0026301F130FD562
-  - 来源：`统一案例总表/0700-C-0705-可选集动力学×商业模式.md`
   - 依赖：—；被引用：—

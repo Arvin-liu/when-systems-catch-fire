@@ -774,10 +774,20 @@
   - 可搜索名称：NFC-cd204f3b9199e6f2 / if "isomorphism" in str(strong_terms).lower() and reconciled_decision != "RETAIN_SCOPED_DEFINITION":
   - 来源：`tools/foundation/process_084_batch.py`
   - 依赖：—；被引用：—
+- [if decision and decision.get("verdict") == "MATERIAL_REPAIR_REQUIRED":](../../../reos_vnext/kernel.py)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-7C10A5864A563371 / if decision and decision.get("verdict") == "MATERIAL_REPAIR_REQUIRED": / IMPLICIT-7C10A5864A563371
+  - 来源：`reos_vnext/kernel.py`
+  - 依赖：—；被引用：—
 - [if decision.get("provenance_verified") is True:](../../../tools/governance/fail_closed_publication_gate.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-83e81270a12a9b1d / if decision.get("provenance_verified") is True:
   - 来源：`tools/governance/fail_closed_publication_gate.py`
+  - 依赖：—；被引用：—
+- [if decision_record.get("verdict") == "MATERIAL_REPAIR_REQUIRED" and not repair_ids and not decision_record.get("residuals"):](../../../reos_vnext/validation.py)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-77101720C3FADD52 / if decision_record.get("verdict") == "MATERIAL_REPAIR_REQUIRED" and not repair_ids and not decision_record.get("residuals"): / IMPLICIT-77101720C3FADD52
+  - 来源：`reos_vnext/validation.py`
   - 依赖：—；被引用：—
 - [IGNITION-121Q6C 执行结果](../../ASSET-CARDS.md#asset-hr-1437a5c9924f3c9e)
   - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`

@@ -119,6 +119,11 @@
   - 可搜索名称：NFC-cf8dc29ff5f5b1da / "causal", "causes", "implies", "necessary", "sufficient", "unique",
   - 来源：`tools/foundation/process_084_batch.py`
   - 依赖：—；被引用：—
+- ["causal_identification",](../../../reos_vnext/validation.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-d97f386e710fb374 / "causal_identification",
+  - 来源：`reos_vnext/validation.py`
+  - 依赖：—；被引用：—
 - ["CAUSAL_MODEL": "PARAMETRIC_MODEL",](../../../tools/foundation/build_function_asset_census.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-2c182f7b1feece5f / "CAUSAL_MODEL": "PARAMETRIC_MODEL",
@@ -1921,6 +1926,11 @@
   - 可搜索名称：NFC-3f4a10a3161a18f7 / A single higher-order language can express causal Bayes-style models, infinite mixture/relational models, stochastic tra
   - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
   - 依赖：—；被引用：—
+- [a source-scoped ceiling only, with no universal education, long-term achievement or unqualified causal claim.](../../../reports/research/reos-vnext-light-pilot-r1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-38808436b332060e / a source-scoped ceiling only, with no universal education, long-term achievement or unqualified causal claim.
+  - 来源：`reports/research/reos-vnext-light-pilot-r1.md`
+  - 依赖：—；被引用：—
 - [A standard network forward pass or cosine classifier is an execution mechanism, not an interpreter for a function langua](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-0ad457f06f80ede9 / A standard network forward pass or cosine classifier is an execution mechanism, not an interpreter for a function langua
@@ -1985,6 +1995,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-727874bbde48f6c4 / Adjacency, similarity, centrality, community or embedding distance is not truth, value, importance or causality.
   - 来源：`docs/architecture/adaptive-relational-network.md`
+  - 依赖：—；被引用：—
+- [adults learning non-high-stakes unfamiliar factual items;](../../../reports/research/reos-vnext-light-pilot-r1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-52bf966f2f5aa6e4 / adults learning non-high-stakes unfamiliar factual items;
+  - 来源：`reports/research/reos-vnext-light-pilot-r1.md`
   - 依赖：—；被引用：—
 - [adversarial sequence `A -> B`, `B -- C`, `B -> D` is rejected because edge 2 must arrive at `C`, so edge 3 cannot depart](../../../reports/architecture/121Q23-adaptive-relational-network-validation.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
@@ -2485,19 +2500,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-438a68c6d211cc99 / Causal inference to scope environmental impact assessment of renewable energy projects
   - 来源：`data/external-research/106-105-correction/106-corrected-source-pack.jsonl`
-  - 依赖：—；被引用：—
-- [CAUSAL 必须有结构因果模型、干预语义与识别依据；否则是机制假说。](../../../FOUNDATION.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-a21481e5bba1112e / CAUSAL 必须有结构因果模型、干预语义与识别依据；否则是机制假说。
-  - 来源：`FOUNDATION.md`
-  - 依赖：—；被引用：—
-- [causal_identification: 250/250 PARTIAL](../../../data/discipline-projection/087-execution-report.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-a04b9437a289ec5b / causal_identification: 250/250 PARTIAL
-  - 来源：`data/discipline-projection/087-execution-report.md`
-  - 依赖：—；被引用：—
-- [causal_inference_method_boundary](../../../reports/external-research/pointfire-getnote-external-verification-r1-20260813.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-15cad65cd728ae23 / causal_inference_method_boundary
-  - 来源：`reports/external-research/pointfire-getnote-external-verification-r1-20260813.jsonl`
   - 依赖：—；被引用：—

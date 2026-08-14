@@ -124,6 +124,26 @@
 - **主题：** `PHYSICS`, `ARCHITECTURE_GOVERNANCE`
 - **可搜索名称：** `NFC-d30b79cb6b607ade`, `撤回“已经证明物理大一统不可能”，禁止通过“结构性定理”“框架判定”或内部定义回弹。`, `- 撤回“已经证明物理大一统不可能”，禁止通过“结构性定理”“框架判定”或内部定义回弹。`
 
+<a id="asset-nfc-e7cfbcbf7de77aab"></a>
+## [REOS vNext LIGHT](../../docs/architecture/reos-vnext-light.md) 是研究执行控制的有界内核：它记录 recoverable research obligations、引用、审查和 pro
+
+- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-e7cfbcbf7de77aab` · [README.md](../../README.md)
+- **为什么产生：** Expose a materially public CROSS_DOMAIN_CORRESPONDENCE and its correction or evidence boundary.
+- **当前状态：** `RETAINED_AS_STRUCTURAL_METAPHOR`
+- **当前结果：** [REOS vNext LIGHT](../../docs/architecture/reos-vnext-light.md) 是研究执行控制的有界内核：它记录 recoverable research obligations、引用、审查和 projection-only handoff，但不新增 L7、真值 authority 或公共成果权威；其首次真实 pilot 的公开边界见[研究综合](../../reports/research/reos-vnext-light-pilot-r1.md)。
+- **双成熟度：** 数学 `M0`；外部证据 `E0`
+- **假设与表述上限：** Analogy or structural metaphor only; no homomorphism, isomorphism or causal identity is established.
+- **未建立：** Do not present registry presence, internal tests, AI agreement or formal appearance as proof, external validation, novelty, peer review or replication.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `README.md`
+- **演化历史：** Lineage: NO_NAMED_LINEAGE；Lineage status: CURRENT_SCOPED_RECORD；Reviewer state: SOURCE_TEXT_RULE_ADJUDICATED
+- **最近变化：** Task 100 disposition: RETAINED_AS_STRUCTURAL_METAPHOR
+- **下一步：** No open obligation was recorded.
+- **主题：** `ARCHITECTURE_GOVERNANCE`
+- **可搜索名称：** `NFC-e7cfbcbf7de77aab`, `[REOS vNext LIGHT](../../docs/architecture/reos-vnext-light.md) 是研究执行控制的有界内核：它记录 recoverable research obligations、引用、审查和 pro`, `[REOS vNext LIGHT](../../docs/architecture/reos-vnext-light.md) 是研究执行控制的有界内核：它记录 recoverable research obligations、引用、审查和 projection-only handoff，但不新增 L7、真值 authority 或公共成果权威；其首次真实 pilot 的公开边界见[研究综合](../../reports/research/reos-vnext-light-pilot-r1.md)。`
+
 <a id="asset-nfc-ea55d13b7ba7aeff"></a>
 ## [任务 106 合并后真相传播与当前真相调和](../../ITERATION.md)（规范化 ledger / 9 维 impact 引擎 / current-truth 投影 / fail-closed 验证器）。
 
@@ -983,23 +1003,3 @@
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `COGNITION`, `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `Agent 碰撞阶段收口审计（2026-07-08 23:55）`, `agent-collision-phase-closeout-20260708`
-
-<a id="asset-hr-259784cecbb2dc49"></a>
-## 121Q13 Baseline And Overlap Audit
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-259784CECBB2DC49` · [reports/architecture/121Q13-baseline-overlap-audit.md](../../reports/architecture/121Q13-baseline-overlap-audit.md)
-- **为什么产生：** 此来源记录了什么：121Q13 Baseline And Overlap Audit？
-- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **当前结果：** 121Q13 starts from 121Q12 Draft PR 47 head 338cfff999e26dce623c6c55d810587db4a668ba.
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `reports/architecture/121Q13-baseline-overlap-audit.md`, `121Q13-BASELINE-OVERLAP-AUDIT`
-- **演化历史：** 2026-07-15: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `121Q13 Baseline And Overlap Audit`, `121Q13-baseline-overlap-audit`
