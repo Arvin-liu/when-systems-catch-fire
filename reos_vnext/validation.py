@@ -21,6 +21,12 @@ from .contract import (
 
 _ID_RE = re.compile(r"^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$")
 _SHA256_RE = re.compile(r"^[0-9a-f]{64}$")
+_PROVIDER_MODEL_CAPABILITY_RE = re.compile(
+    r"^(?:provider:|model:|"
+    r"(?:openai|anthropic|google|meta|microsoft|xai|cohere|mistral|deepseek|qwen)(?:[/_:.\-]|$)|"
+    r"(?:gpt|claude|gemini|llama|qwen|mistral|deepseek|o[1-9])(?:[/_:.\-]|$))",
+    re.IGNORECASE,
+)
 _HANDOFF_NONCANONICAL_STATUSES = frozenset({"CANDIDATE_NOT_CANONICAL", "NONCANONICAL", "RESEARCH_STAGE_ONLY"})
 _HANDOFF_REQUIRED_BOUNDARIES = (
     "truth",
@@ -351,7 +357,10 @@ def _validate_obligations(
         capabilities = record.get("required_capabilities")
         if isinstance(capabilities, list):
             for capability in capabilities:
-                if isinstance(capability, str) and capability.lower().startswith(("provider:", "model:")):
+                if (
+                    isinstance(capability, str)
+                    and ("/" in capability or _PROVIDER_MODEL_CAPABILITY_RE.search(capability))
+                ):
                     _issue(issues, "PROVIDER_HARD_DEPENDENCY", f"{item_path}.required_capabilities", "provider/model names are telemetry only")
     for index, record in enumerate(records):
         for dependency in record.get("depends_on", []) if isinstance(record.get("depends_on"), list) else []:

@@ -231,10 +231,11 @@ class MinimalKernelTests(unittest.TestCase):
 
     def test_provider_full_state_namespace_and_generic_success_are_rejected(self):
         document = make_case()
-        provider = obligation().as_dict()
-        provider["required_capabilities"] = ["provider:example-model"]
-        document["case"]["obligations"] = [provider]
-        self.assertCode(document, "PROVIDER_HARD_DEPENDENCY")
+        for capability in ("provider:example-model", "model:example", "openai/gpt-5", "gpt-5", "anthropic/claude-3"):
+            provider = obligation().as_dict()
+            provider["required_capabilities"] = [capability]
+            document["case"]["obligations"] = [provider]
+            self.assertCode(document, "PROVIDER_HARD_DEPENDENCY")
         full = copy.deepcopy(make_case())
         full["case"]["activation"]["mode"] = "REOS_FULL"
         self.assertCode(full, "FULL_UNAVAILABLE")
