@@ -21,7 +21,7 @@ The document contains:
 schema_version
 case.case_id
 case.activation                  # embedded ActivationDecision
-case.question_contract           # preregistration ref/digest + compact frozen validation summary
+case.question_contract           # preregistration ref/digest + compact frozen/current validation summaries
 case.owner_boundary
 case.budget_contract
 case.stop_conditions
@@ -37,8 +37,8 @@ case.reviews[]                   # one append-only review stream
 
 QuestionContract is intentionally compact. It persists:
 - `preregistration_ref` and `preregistration_digest` for the external frozen preregistration;
-- `frozen_validation_summary` with exactly `question`, `scope`, `estimand`, `measurement_boundaries`, `claim_ceiling` and `stop_conditions`;
-- the current and initial summary digests plus an append-only amendment chain.
+- immutable `frozen_validation_summary` and `current_validation_summary`, each with exactly `question`, `scope`, `estimand`, `measurement_boundaries`, `claim_ceiling` and `stop_conditions`;
+- the current and initial summary digests plus an append-only amendment chain. The current summary may differ from the frozen summary only through a versioned amendment.
 
 The full preregistration, source ledger and claim registry remain outside the REOS case. The summary is a validation boundary, not a second canonical research record.
 
@@ -63,7 +63,7 @@ No state named `SUCCESS` is legal. Case, obligation, evidence and review states 
 1. `case_state` is not an obligation, retrieval or review state.
 2. Obligation dependencies are acyclic and never imply truth inheritance.
 3. Question amendments append `{from_digest, to_digest, reason, version}` against the compact validation-summary digest chain; silent replacement is invalid.
-4. Artifact references require provenance, scope and privacy/publication class; REOS stores no source blob or evidence maturity.
+4. Artifact references require thin provenance (`kind` and `retrieved_at`), scope and privacy/publication class; REOS stores no source blob or evidence maturity.
 5. Evidence retrieval state cannot set truth, proof, causal identification, external validity, claim ceiling or acceptance.
 6. Claim candidates are explicitly `NONCANONICAL` and cannot be promoted by REOS.
 7. Review decisions require a named question and independence declaration; `ABSTAIN` is legal; reviewer agreement cannot set Owner acceptance.
@@ -72,6 +72,8 @@ No state named `SUCCESS` is legal. Case, obligation, evidence and review states 
 10. Provider/model identifiers are telemetry only and cannot be required capabilities in R1.
 11. Privacy classes and prohibited inference are validated locally; public publication remains the existing Results Book/publication authority.
 12. Validators are fail-closed for malformed state and do not adjudicate external truth.
+13. Budget contracts are closed to the bounded operator-accounted fields; nested canonical or evidence stores are rejected.
+14. Handoff `allowed_claims` cannot contradict its noncanonical/prohibited-inference boundary.
 
 ## Deliberately absent from R1
 
@@ -84,4 +86,3 @@ The negative fixture manifest at `tests/fixtures/reos_vnext/negative_cases.json`
 `CYCLE`, `UNKNOWN_DEPENDENCY`, `QUESTION_MUTATION`, `EVIDENCE_TRUTH_UPGRADE`, `REVIEW_OWNER_ACCEPTANCE`, `CANONICAL_CLAIM_MASQUERADE`, `HANDOFF_PROHIBITED_INFERENCE`, `PROVIDER_HARD_DEPENDENCY`, `FULL_UNAVAILABLE`, `ARTIFACT_PROVENANCE`, `CONFLICTING_STATE_NAMESPACE`, `GENERIC_SUCCESS`.
 
 The pilot may produce `NO_INCREMENTAL_VALUE_OBSERVED`; this is a permitted bounded process conclusion and not generic completion.
-

@@ -29,6 +29,15 @@ _HANDOFF_REQUIRED_BOUNDARIES = (
     "owner acceptance",
     "epistemic",
 )
+_HANDOFF_FORBIDDEN_CLAIM_MARKERS = (
+    "truth",
+    "caus",
+    "external validity",
+    "owner acceptance",
+    "epistemic",
+    "proof",
+    "canonical",
+)
 
 _FORBIDDEN_KEYS = frozenset(
     {
@@ -175,6 +184,29 @@ def _validate_activation(activation: Any, path: str, issues: list[ValidationIssu
     _strings(record.get("unnecessary_modules"), f"{path}.unnecessary_modules", issues)
 
 
+_COMPACT_SUMMARY_FIELDS = {
+    "question",
+    "scope",
+    "estimand",
+    "measurement_boundaries",
+    "claim_ceiling",
+    "stop_conditions",
+}
+
+
+def _validate_compact_validation_summary(summary: Any, path: str, issues: list[ValidationIssue]) -> Mapping[str, Any] | None:
+    record = _mapping(summary, path, issues)
+    if record is None:
+        return None
+    _required(record, _COMPACT_SUMMARY_FIELDS, path, issues)
+    _keys(record, _COMPACT_SUMMARY_FIELDS, path, issues)
+    for name in ("question", "scope", "estimand", "claim_ceiling"):
+        _nonempty_string(record.get(name), f"{path}.{name}", issues)
+    for name in ("measurement_boundaries", "stop_conditions"):
+        _strings(record.get(name), f"{path}.{name}", issues)
+    return record
+
+
 def _validate_question(question: Any, path: str, issues: list[ValidationIssue]) -> None:
     record = _mapping(question, path, issues)
     if record is None:
@@ -183,6 +215,7 @@ def _validate_question(question: Any, path: str, issues: list[ValidationIssue]) 
         "preregistration_ref",
         "preregistration_digest",
         "frozen_validation_summary",
+        "current_validation_summary",
         "initial_validation_summary_digest",
         "validation_summary_digest",
         "version",
@@ -199,28 +232,30 @@ def _validate_question(question: Any, path: str, issues: list[ValidationIssue]) 
         value = record.get(digest_name)
         if not isinstance(value, str) or not _SHA256_RE.fullmatch(value):
             _issue(issues, "QUESTION_MUTATION", f"{path}.{digest_name}", "must be a sha256 digest")
-    summary = _mapping(record.get("frozen_validation_summary"), f"{path}.frozen_validation_summary", issues)
-    if summary is not None:
-        summary_allowed = {
-            "question",
-            "scope",
-            "estimand",
-            "measurement_boundaries",
-            "claim_ceiling",
-            "stop_conditions",
-        }
-        _required(summary, summary_allowed, f"{path}.frozen_validation_summary", issues)
-        _keys(summary, summary_allowed, f"{path}.frozen_validation_summary", issues)
-        for name in ("question", "scope", "estimand", "claim_ceiling"):
-            _nonempty_string(summary.get(name), f"{path}.frozen_validation_summary.{name}", issues)
-        for name in ("measurement_boundaries", "stop_conditions"):
-            _strings(summary.get(name), f"{path}.frozen_validation_summary.{name}", issues)
+    frozen_summary = _validate_compact_validation_summary(
+        record.get("frozen_validation_summary"),
+        f"{path}.frozen_validation_summary",
+        issues,
+    )
+    current_summary = _validate_compact_validation_summary(
+        record.get("current_validation_summary"),
+        f"{path}.current_validation_summary",
+        issues,
+    )
+    if frozen_summary is not None:
         try:
-            expected = sha256_json(summary)
+            expected = sha256_json(frozen_summary)
+        except ValueError:
+            expected = None
+        if expected is not None and record.get("initial_validation_summary_digest") != expected:
+            _issue(issues, "QUESTION_MUTATION", f"{path}.initial_validation_summary_digest", "digest does not match the immutable frozen validation summary")
+    if current_summary is not None:
+        try:
+            expected = sha256_json(current_summary)
         except ValueError:
             expected = None
         if expected is not None and record.get("validation_summary_digest") != expected:
-            _issue(issues, "QUESTION_MUTATION", f"{path}.validation_summary_digest", "digest does not match the frozen validation summary")
+            _issue(issues, "QUESTION_MUTATION", f"{path}.validation_summary_digest", "digest does not match the current validation summary")
     version = record.get("version")
     if not isinstance(version, int) or version < 1:
         _issue(issues, "QUESTION_MUTATION", f"{path}.version", "version must be a positive integer")
@@ -228,6 +263,7 @@ def _validate_question(question: Any, path: str, issues: list[ValidationIssue]) 
     if amendments is None:
         return
     previous = record.get("initial_validation_summary_digest")
+    amendment_ids: set[str] = set()
     for index, amendment in enumerate(amendments):
         amendment_path = f"{path}.amendments[{index}]"
         item = _mapping(amendment, amendment_path, issues)
@@ -237,6 +273,11 @@ def _validate_question(question: Any, path: str, issues: list[ValidationIssue]) 
         _required(item, allowed_amendment, amendment_path, issues)
         _keys(item, allowed_amendment, amendment_path, issues)
         _id(item.get("amendment_id"), f"{amendment_path}.amendment_id", issues)
+        amendment_id = item.get("amendment_id")
+        if isinstance(amendment_id, str) and amendment_id in amendment_ids:
+            _issue(issues, "DUPLICATE_ID", f"{amendment_path}.amendment_id", "amendment id is not unique")
+        if isinstance(amendment_id, str):
+            amendment_ids.add(amendment_id)
         for digest_name in ("from_digest", "to_digest"):
             value = item.get(digest_name)
             if not isinstance(value, str) or not _SHA256_RE.fullmatch(value):
@@ -251,8 +292,11 @@ def _validate_question(question: Any, path: str, issues: list[ValidationIssue]) 
         previous = item.get("to_digest")
     if amendments and previous != record.get("validation_summary_digest"):
         _issue(issues, "QUESTION_MUTATION", f"{path}.amendments", "last amendment does not reach current validation summary digest")
-    if not amendments and record.get("initial_validation_summary_digest") != record.get("validation_summary_digest"):
-        _issue(issues, "QUESTION_MUTATION", f"{path}.initial_validation_summary_digest", "unamended summary must have equal initial/current digest")
+    if not amendments:
+        if record.get("initial_validation_summary_digest") != record.get("validation_summary_digest"):
+            _issue(issues, "QUESTION_MUTATION", f"{path}.initial_validation_summary_digest", "unamended summary must have equal initial/current digest")
+        if frozen_summary is not None and current_summary is not None and frozen_summary != current_summary:
+            _issue(issues, "QUESTION_MUTATION", f"{path}.current_validation_summary", "unamended question cannot replace the frozen validation summary")
     if isinstance(version, int) and version != len(amendments) + 1:
         _issue(issues, "QUESTION_MUTATION", f"{path}.version", "version does not match amendment count")
 
@@ -367,8 +411,14 @@ def _validate_artifacts(artifacts: Any, path: str, issues: list[ValidationIssue]
         if not isinstance(sha, str) or not _SHA256_RE.fullmatch(sha):
             _issue(issues, "ARTIFACT_IDENTITY", f"{item_path}.sha256", "artifact must carry a sha256 identity")
         provenance = record.get("provenance")
+        provenance_allowed = {"kind", "retrieved_at"}
         if not isinstance(provenance, Mapping) or not provenance:
             _issue(issues, "ARTIFACT_PROVENANCE", f"{item_path}.provenance", "artifact provenance is required")
+        else:
+            _required(provenance, provenance_allowed, f"{item_path}.provenance", issues)
+            _keys(provenance, provenance_allowed, f"{item_path}.provenance", issues)
+            for name in provenance_allowed:
+                _nonempty_string(provenance.get(name), f"{item_path}.provenance.{name}", issues)
         _nonempty_string(record.get("scope"), f"{item_path}.scope", issues)
         if record.get("privacy_class") not in PRIVACY_CLASSES:
             _issue(issues, "PRIVACY_CLASS", f"{item_path}.privacy_class", "unknown privacy/publication class")
@@ -550,6 +600,19 @@ def _validate_reviews(
     return ids
 
 
+def _validate_budget_contract(budget: Any, path: str, issues: list[ValidationIssue]) -> None:
+    record = _mapping(budget, path, issues)
+    if record is None:
+        return
+    allowed = {"max_minutes", "method"}
+    _required(record, allowed, path, issues)
+    _keys(record, allowed, path, issues)
+    max_minutes = record.get("max_minutes")
+    if isinstance(max_minutes, bool) or not isinstance(max_minutes, int) or max_minutes < 0:
+        _issue(issues, "BUDGET_CONTRACT", f"{path}.max_minutes", "max_minutes must be a non-negative integer")
+    _nonempty_string(record.get("method"), f"{path}.method", issues)
+
+
 def collect_case_errors(document: Any) -> list[ValidationIssue]:
     issues: list[ValidationIssue] = []
     if not isinstance(document, Mapping):
@@ -584,8 +647,7 @@ def collect_case_errors(document: Any) -> list[ValidationIssue]:
     _validate_activation(case.get("activation"), "$.case.activation", issues)
     _validate_question(case.get("question_contract"), "$.case.question_contract", issues)
     _nonempty_string(case.get("owner_boundary"), "$.case.owner_boundary", issues)
-    if not isinstance(case.get("budget_contract"), Mapping):
-        _issue(issues, "TYPE", "$.case.budget_contract", "budget contract must be an object")
+    _validate_budget_contract(case.get("budget_contract"), "$.case.budget_contract", issues)
     _strings(case.get("stop_conditions"), "$.case.stop_conditions", issues)
     case_state = case.get("case_state")
     if case_state == "SUCCESS":
@@ -651,6 +713,16 @@ def validate_handoff(bundle: Any) -> None:
         _issue(issues, "HANDOFF_STATUS", "$.noncanonical_status", "handoff must remain a noncanonical research-stage status")
     for name in ("object_refs", "allowed_claims", "prohibited_inference", "residuals"):
         _strings(record.get(name), f"$.{name}", issues)
+    for index, claim in enumerate(record.get("allowed_claims", []) if isinstance(record.get("allowed_claims"), list) else []):
+        claim_text = claim.lower() if isinstance(claim, str) else ""
+        matched = [marker for marker in _HANDOFF_FORBIDDEN_CLAIM_MARKERS if marker in claim_text]
+        if matched:
+            _issue(
+                issues,
+                "HANDOFF_PROHIBITED_INFERENCE",
+                f"$.allowed_claims[{index}]",
+                f"allowed claim contradicts the noncanonical boundary: {matched}",
+            )
     if not record.get("prohibited_inference"):
         _issue(issues, "HANDOFF_PROHIBITED_INFERENCE", "$.prohibited_inference", "handoff must state forbidden inference")
     else:

@@ -125,12 +125,29 @@ class MinimalKernelTests(unittest.TestCase):
         validate_case(amended)
         self.assertEqual(amended["case"]["question_contract"]["version"], 2)
         mutated = copy.deepcopy(make_case())
-        mutated["case"]["question_contract"]["frozen_validation_summary"]["scope"] = "silent mutation"
+        mutated["case"]["question_contract"]["current_validation_summary"]["scope"] = "silent mutation"
         self.assertCode(mutated, "QUESTION_MUTATION")
+        coordinated = copy.deepcopy(make_case())
+        coordinated["case"]["question_contract"]["current_validation_summary"]["scope"] = "silent replacement"
+        coordinated["case"]["question_contract"]["initial_validation_summary_digest"] = sha256_json(
+            coordinated["case"]["question_contract"]["current_validation_summary"]
+        )
+        coordinated["case"]["question_contract"]["validation_summary_digest"] = sha256_json(
+            coordinated["case"]["question_contract"]["current_validation_summary"]
+        )
+        self.assertCode(coordinated, "QUESTION_MUTATION")
+        with self.assertRaises(ContractError) as context:
+            amend_question(
+                amended,
+                frozen_validation_summary={**SUMMARY, "scope": "third scope"},
+                reason="second bounded amendment",
+                amendment_id="amend:1",
+            )
+        self.assertIn("DUPLICATE_ID", {issue.code for issue in context.exception.issues})
 
     def test_question_contract_does_not_copy_full_preregistration(self):
         expanded = copy.deepcopy(make_case())
-        expanded["case"]["question_contract"]["frozen_validation_summary"]["source_rules"] = {
+        expanded["case"]["question_contract"]["current_validation_summary"]["source_rules"] = {
             "include": "external preregistration detail"
         }
         self.assertCode(expanded, "UNKNOWN_FIELD")
@@ -201,6 +218,16 @@ class MinimalKernelTests(unittest.TestCase):
         missing["case"]["artifact_refs"] = [artifact().as_dict()]
         missing["case"]["artifact_refs"][0]["provenance"] = {}
         self.assertCode(missing, "ARTIFACT_PROVENANCE")
+        nested = copy.deepcopy(missing)
+        nested["case"]["artifact_refs"][0]["provenance"] = {
+            "kind": "public-primary",
+            "retrieved_at": "2026-08-14T00:00:00Z",
+            "evidence": {"body": "copied source text"},
+        }
+        self.assertCode(nested, "UNKNOWN_FIELD")
+        budget_store = copy.deepcopy(make_case())
+        budget_store["case"]["budget_contract"]["canonical_truth"] = {"status": "accepted"}
+        self.assertCode(budget_store, "UNKNOWN_FIELD")
 
     def test_provider_full_state_namespace_and_generic_success_are_rejected(self):
         document = make_case()
@@ -249,7 +276,7 @@ class MinimalKernelTests(unittest.TestCase):
         }
         self.assertCode(document, "UNKNOWN_REF")
         nonfinite = copy.deepcopy(make_case())
-        nonfinite["case"]["question_contract"]["frozen_validation_summary"]["measurement_boundaries"].append(float("nan"))
+        nonfinite["case"]["question_contract"]["current_validation_summary"]["measurement_boundaries"].append(float("nan"))
         self.assertCode(nonfinite, "NON_DETERMINISTIC_VALUE")
 
     def test_review_repair_reload_and_typed_handoff(self):
@@ -310,6 +337,13 @@ class MinimalKernelTests(unittest.TestCase):
             from reos_vnext import validate_handoff
 
             validate_handoff(bad_status)
+        contradictory_claim = copy.deepcopy(handoff)
+        contradictory_claim["allowed_claims"] = ["truth is established"]
+        with self.assertRaises(ContractError) as context:
+            from reos_vnext import validate_handoff
+
+            validate_handoff(contradictory_claim)
+        self.assertIn("HANDOFF_PROHIBITED_INFERENCE", {issue.code for issue in context.exception.issues})
 
     def test_cli_init_validate_status(self):
         with tempfile.TemporaryDirectory() as directory:

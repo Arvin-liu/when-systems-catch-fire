@@ -69,6 +69,7 @@ def new_case(
         preregistration_ref=preregistration_ref,
         preregistration_digest=preregistration_digest,
         frozen_validation_summary=summary,
+        current_validation_summary=summary,
         initial_validation_summary_digest=summary_digest,
         validation_summary_digest=summary_digest,
     )
@@ -175,7 +176,7 @@ def amend_question(
     new_summary = copy.deepcopy(dict(frozen_validation_summary))
     current_digest = question["validation_summary_digest"]
     next_digest = sha256_json(new_summary)
-    question["frozen_validation_summary"] = new_summary
+    question["current_validation_summary"] = new_summary
     question["validation_summary_digest"] = next_digest
     question["version"] += 1
     question["amendments"].append(
