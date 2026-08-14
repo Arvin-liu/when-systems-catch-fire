@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [If upstream objects D_{D185} exist, compose F_{D185}=N(⊕_{g∈D_{D185}} g); otherwise treat F_{D185} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0221-D185-%E7%9B%B8%E5%AF%B9%E8%AE%BA%E9%97%A8%E6%A7%9B%E5%87%BD%E6%95%B0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-aec4809861f5f53c / If upstream objects D_{D185} exist, compose F_{D185}=N(⊕_{g∈D_{D185}} g); otherwise treat F_{D185} as an axiom seed.
+  - 来源：`统一函数总表/0221-D185-相对论门槛函数.md`
+  - 依赖：D185；被引用：—
 - [If upstream objects D_{D186} exist, compose F_{D186}=N(⊕_{g∈D_{D186}} g); otherwise treat F_{D186} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0222-D186-%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6%E9%97%A8%E6%A7%9B%E8%81%9A%E9%9B%86%E5%87%BD%E6%95%B0.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-78f4e37e306e5231 / If upstream objects D_{D186} exist, compose F_{D186}=N(⊕_{g∈D_{D186}} g); otherwise treat F_{D186} as an axiom seed.
@@ -2268,11 +2273,6 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-a90bf39c560561bc / Legacy theorem, axiom, isomorphism, causal and proved language was not promoted. All proof obligations remain open unles
   - 来源：`reports/foundation-architecture/strong-claim-gate-audit-20260712.md`
-  - 依赖：—；被引用：—
-- [legacy_diff=subprocess.run(\["git","diff","--quiet","fc3f2ae309ad3dd485716ab5675948a6a46cd75d","--","统一函数总表","统一案例总表"\],cw](../../../tools/foundation/validate_foundation.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-610815a0aa03b83c / legacy_diff=subprocess.run(\["git","diff","--quiet","fc3f2ae309ad3dd485716ab5675948a6a46cd75d","--","统一函数总表","统一案例总表"\],cw
-  - 来源：`tools/foundation/validate_foundation.py`
   - 依赖：—；被引用：—
 - [legacy_label = "AXIOM_LAYER" if oid.startswith("A") else "THEOREM_LAYER" if oid.startswith("T") else "LEGACY_FUNCTION"](../../../tools/foundation/adjudicate_core.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`

@@ -1,8 +1,368 @@
 # 函数资产人类浏览器 · 第 30/30 页
 
-来源：[`data/foundation/function-assets/census.jsonl`](../../../data/foundation/function-assets/census.jsonl)；本页记录 7251–7400。
+来源：[`data/foundation/function-assets/census.jsonl`](../../../data/foundation/function-assets/census.jsonl)；本页记录 7251–7430。
 
 [返回索引](README.md) · [上一页](page-029.md) · 
+
+### T10826 · data/operations/iterations/110/openalex/first-run-20260801/raw/GAP010-M13.json
+
+这是 canonical function-assets census 中的一个登记对象，身份为 `INVALID_OR_PSEUDO_FUNCTION`，处置为 `KEEP`，review state 为 `QUEUED`。
+
+M 轴 `M0`；E 轴 `E0`。状态记录：dimensional=`REQUIRES_HUMAN_REVIEW`, external_reality=`REQUIRES_HUMAN_REVIEW`, internal_model=`REQUIRES_HUMAN_REVIEW`, logical=`UNASSESSED`, mathematical=`UNASSESSED`, numerical=`REQUIRES_HUMAN_REVIEW`.
+
+Claim ceiling：Automatic discovery only; no mathematical or external truth is conferred.
+
+来源出现 1 次；当前可回链来源：[data/operations/iterations/110/openalex/first-run-20260801/raw/GAP010-M13.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP010-M13.json)
+
+> 浏览器只投影 canonical 记录。自动 census、内部测试和登记闭合不构成外部真理、证明或独立复现。
+
+### T10845 · data/operations/iterations/110/openalex/first-run-20260801/raw/GAP001-01.json
+
+这是 canonical function-assets census 中的一个登记对象，身份为 `INVALID_OR_PSEUDO_FUNCTION`，处置为 `KEEP`，review state 为 `QUEUED`。
+
+M 轴 `M0`；E 轴 `E0`。状态记录：dimensional=`REQUIRES_HUMAN_REVIEW`, external_reality=`REQUIRES_HUMAN_REVIEW`, internal_model=`REQUIRES_HUMAN_REVIEW`, logical=`UNASSESSED`, mathematical=`UNASSESSED`, numerical=`REQUIRES_HUMAN_REVIEW`.
+
+Claim ceiling：Automatic discovery only; no mathematical or external truth is conferred.
+
+来源出现 17 次；当前可回链来源：[data/operations/iterations/110/openalex/first-run-20260801/raw/GAP001-01.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP001-01.json) · [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP001-02.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP001-02.json) · [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP001-04.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP001-04.json)
+
+> 浏览器只投影 canonical 记录。自动 census、内部测试和登记闭合不构成外部真理、证明或独立复现。
+
+### T10848 · data/operations/iterations/110/openalex/first-run-20260801/raw/GAP005-01.json
+
+这是 canonical function-assets census 中的一个登记对象，身份为 `INVALID_OR_PSEUDO_FUNCTION`，处置为 `KEEP`，review state 为 `QUEUED`。
+
+M 轴 `M0`；E 轴 `E0`。状态记录：dimensional=`REQUIRES_HUMAN_REVIEW`, external_reality=`REQUIRES_HUMAN_REVIEW`, internal_model=`REQUIRES_HUMAN_REVIEW`, logical=`UNASSESSED`, mathematical=`UNASSESSED`, numerical=`REQUIRES_HUMAN_REVIEW`.
+
+Claim ceiling：Automatic discovery only; no mathematical or external truth is conferred.
+
+来源出现 6 次；当前可回链来源：[data/operations/iterations/110/openalex/first-run-20260801/raw/GAP005-01.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP005-01.json) · [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP005-03.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP005-03.json) · [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP005-04.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP005-04.json)
+
+> 浏览器只投影 canonical 记录。自动 census、内部测试和登记闭合不构成外部真理、证明或独立复现。
+
+### T10887 · data/operations/iterations/110/openalex/first-run-20260801/raw/GAP002-07.json
+
+这是 canonical function-assets census 中的一个登记对象，身份为 `INVALID_OR_PSEUDO_FUNCTION`，处置为 `KEEP`，review state 为 `QUEUED`。
+
+M 轴 `M0`；E 轴 `E0`。状态记录：dimensional=`REQUIRES_HUMAN_REVIEW`, external_reality=`REQUIRES_HUMAN_REVIEW`, internal_model=`REQUIRES_HUMAN_REVIEW`, logical=`UNASSESSED`, mathematical=`UNASSESSED`, numerical=`REQUIRES_HUMAN_REVIEW`.
+
+Claim ceiling：Automatic discovery only; no mathematical or external truth is conferred.
+
+来源出现 1 次；当前可回链来源：[data/operations/iterations/110/openalex/first-run-20260801/raw/GAP002-07.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP002-07.json)
+
+> 浏览器只投影 canonical 记录。自动 census、内部测试和登记闭合不构成外部真理、证明或独立复现。
+
+### T10906 · data/operations/iterations/110/openalex/first-run-20260801/raw/GAP007-05.json
+
+这是 canonical function-assets census 中的一个登记对象，身份为 `INVALID_OR_PSEUDO_FUNCTION`，处置为 `KEEP`，review state 为 `QUEUED`。
+
+M 轴 `M0`；E 轴 `E0`。状态记录：dimensional=`REQUIRES_HUMAN_REVIEW`, external_reality=`REQUIRES_HUMAN_REVIEW`, internal_model=`REQUIRES_HUMAN_REVIEW`, logical=`UNASSESSED`, mathematical=`UNASSESSED`, numerical=`REQUIRES_HUMAN_REVIEW`.
+
+Claim ceiling：Automatic discovery only; no mathematical or external truth is conferred.
+
+来源出现 1 次；当前可回链来源：[data/operations/iterations/110/openalex/first-run-20260801/raw/GAP007-05.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP007-05.json)
+
+> 浏览器只投影 canonical 记录。自动 census、内部测试和登记闭合不构成外部真理、证明或独立复现。
+
+### T10928 · data/operations/iterations/110/openalex/first-run-20260801/raw/GAP004-04.json
+
+这是 canonical function-assets census 中的一个登记对象，身份为 `INVALID_OR_PSEUDO_FUNCTION`，处置为 `KEEP`，review state 为 `QUEUED`。
+
+M 轴 `M0`；E 轴 `E0`。状态记录：dimensional=`REQUIRES_HUMAN_REVIEW`, external_reality=`REQUIRES_HUMAN_REVIEW`, internal_model=`REQUIRES_HUMAN_REVIEW`, logical=`UNASSESSED`, mathematical=`UNASSESSED`, numerical=`REQUIRES_HUMAN_REVIEW`.
+
+Claim ceiling：Automatic discovery only; no mathematical or external truth is conferred.
+
+来源出现 4 次；当前可回链来源：[data/operations/iterations/110/openalex/first-run-20260801/raw/GAP004-04.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP004-04.json) · [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP005-01.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP005-01.json) · [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP005-04.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP005-04.json)
+
+> 浏览器只投影 canonical 记录。自动 census、内部测试和登记闭合不构成外部真理、证明或独立复现。
+
+### T10932 · data/operations/iterations/110/openalex/first-run-20260801/raw/GAP002-07.json
+
+这是 canonical function-assets census 中的一个登记对象，身份为 `INVALID_OR_PSEUDO_FUNCTION`，处置为 `KEEP`，review state 为 `QUEUED`。
+
+M 轴 `M0`；E 轴 `E0`。状态记录：dimensional=`REQUIRES_HUMAN_REVIEW`, external_reality=`REQUIRES_HUMAN_REVIEW`, internal_model=`REQUIRES_HUMAN_REVIEW`, logical=`UNASSESSED`, mathematical=`UNASSESSED`, numerical=`REQUIRES_HUMAN_REVIEW`.
+
+Claim ceiling：Automatic discovery only; no mathematical or external truth is conferred.
+
+来源出现 1 次；当前可回链来源：[data/operations/iterations/110/openalex/first-run-20260801/raw/GAP002-07.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP002-07.json)
+
+> 浏览器只投影 canonical 记录。自动 census、内部测试和登记闭合不构成外部真理、证明或独立复现。
+
+### T10942 · data/operations/iterations/110/openalex/first-run-20260801/raw/GAP006-10.json
+
+这是 canonical function-assets census 中的一个登记对象，身份为 `INVALID_OR_PSEUDO_FUNCTION`，处置为 `KEEP`，review state 为 `QUEUED`。
+
+M 轴 `M0`；E 轴 `E0`。状态记录：dimensional=`REQUIRES_HUMAN_REVIEW`, external_reality=`REQUIRES_HUMAN_REVIEW`, internal_model=`REQUIRES_HUMAN_REVIEW`, logical=`UNASSESSED`, mathematical=`UNASSESSED`, numerical=`REQUIRES_HUMAN_REVIEW`.
+
+Claim ceiling：Automatic discovery only; no mathematical or external truth is conferred.
+
+来源出现 1 次；当前可回链来源：[data/operations/iterations/110/openalex/first-run-20260801/raw/GAP006-10.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP006-10.json)
+
+> 浏览器只投影 canonical 记录。自动 census、内部测试和登记闭合不构成外部真理、证明或独立复现。
+
+### T10963 · data/operations/iterations/110/openalex/first-run-20260801/raw/GAP005-04.json
+
+这是 canonical function-assets census 中的一个登记对象，身份为 `INVALID_OR_PSEUDO_FUNCTION`，处置为 `KEEP`，review state 为 `QUEUED`。
+
+M 轴 `M0`；E 轴 `E0`。状态记录：dimensional=`REQUIRES_HUMAN_REVIEW`, external_reality=`REQUIRES_HUMAN_REVIEW`, internal_model=`REQUIRES_HUMAN_REVIEW`, logical=`UNASSESSED`, mathematical=`UNASSESSED`, numerical=`REQUIRES_HUMAN_REVIEW`.
+
+Claim ceiling：Automatic discovery only; no mathematical or external truth is conferred.
+
+来源出现 1 次；当前可回链来源：[data/operations/iterations/110/openalex/first-run-20260801/raw/GAP005-04.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP005-04.json)
+
+> 浏览器只投影 canonical 记录。自动 census、内部测试和登记闭合不构成外部真理、证明或独立复现。
+
+### T10969 · data/operations/iterations/110/openalex/first-run-20260801/raw/GAP005-08.json
+
+这是 canonical function-assets census 中的一个登记对象，身份为 `INVALID_OR_PSEUDO_FUNCTION`，处置为 `KEEP`，review state 为 `QUEUED`。
+
+M 轴 `M0`；E 轴 `E0`。状态记录：dimensional=`REQUIRES_HUMAN_REVIEW`, external_reality=`REQUIRES_HUMAN_REVIEW`, internal_model=`REQUIRES_HUMAN_REVIEW`, logical=`UNASSESSED`, mathematical=`UNASSESSED`, numerical=`REQUIRES_HUMAN_REVIEW`.
+
+Claim ceiling：Automatic discovery only; no mathematical or external truth is conferred.
+
+来源出现 1 次；当前可回链来源：[data/operations/iterations/110/openalex/first-run-20260801/raw/GAP005-08.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP005-08.json)
+
+> 浏览器只投影 canonical 记录。自动 census、内部测试和登记闭合不构成外部真理、证明或独立复现。
+
+### T11 · 生存域函数
+
+这是 canonical function-assets census 中的一个登记对象，身份为 `CONJECTURE_OR_PENDING_CLAIM`，处置为 `KEEP`，review state 为 `QUEUED`。
+
+M 轴 `M1`；E 轴 `E0`。状态记录：dimensional=`REQUIRES_HUMAN_REVIEW`, external_reality=`REQUIRES_HUMAN_REVIEW`, internal_model=`REQUIRES_HUMAN_REVIEW`, logical=`HIDDEN_PREMISE`, mathematical=`FORMALIZATION_INCOMPLETE`, numerical=`REQUIRES_HUMAN_REVIEW`.
+
+Claim ceiling：Automatic discovery only; no mathematical or external truth is conferred.
+
+来源出现 65 次；当前可回链来源：[analysis/corpus-relation/cluster_source_briefs/C000.md](../../../analysis/corpus-relation/cluster_source_briefs/C000.md) · [data/external-research/120-function-paradigm-atlas/120-internal-function-asset-inventory.jsonl](../../../data/external-research/120-function-paradigm-atlas/120-internal-function-asset-inventory.jsonl) · [data/external-research/121-fulltext-resolver/121q3/assets/asset-inventory-35.json](../../../data/external-research/121-fulltext-resolver/121q3/assets/asset-inventory-35.json)
+
+> 浏览器只投影 canonical 记录。自动 census、内部测试和登记闭合不构成外部真理、证明或独立复现。
+
+### T11024 · data/operations/iterations/110/openalex/first-run-20260801/raw/GAP011-M26.json
+
+这是 canonical function-assets census 中的一个登记对象，身份为 `INVALID_OR_PSEUDO_FUNCTION`，处置为 `KEEP`，review state 为 `QUEUED`。
+
+M 轴 `M0`；E 轴 `E0`。状态记录：dimensional=`REQUIRES_HUMAN_REVIEW`, external_reality=`REQUIRES_HUMAN_REVIEW`, internal_model=`REQUIRES_HUMAN_REVIEW`, logical=`UNASSESSED`, mathematical=`UNASSESSED`, numerical=`REQUIRES_HUMAN_REVIEW`.
+
+Claim ceiling：Automatic discovery only; no mathematical or external truth is conferred.
+
+来源出现 1 次；当前可回链来源：[data/operations/iterations/110/openalex/first-run-20260801/raw/GAP011-M26.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP011-M26.json)
+
+> 浏览器只投影 canonical 记录。自动 census、内部测试和登记闭合不构成外部真理、证明或独立复现。
+
+### T11031 · data/operations/iterations/110/openalex/first-run-20260801/raw/GAP005-07.json
+
+这是 canonical function-assets census 中的一个登记对象，身份为 `INVALID_OR_PSEUDO_FUNCTION`，处置为 `KEEP`，review state 为 `QUEUED`。
+
+M 轴 `M0`；E 轴 `E0`。状态记录：dimensional=`REQUIRES_HUMAN_REVIEW`, external_reality=`REQUIRES_HUMAN_REVIEW`, internal_model=`REQUIRES_HUMAN_REVIEW`, logical=`UNASSESSED`, mathematical=`UNASSESSED`, numerical=`REQUIRES_HUMAN_REVIEW`.
+
+Claim ceiling：Automatic discovery only; no mathematical or external truth is conferred.
+
+来源出现 1 次；当前可回链来源：[data/operations/iterations/110/openalex/first-run-20260801/raw/GAP005-07.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP005-07.json)
+
+> 浏览器只投影 canonical 记录。自动 census、内部测试和登记闭合不构成外部真理、证明或独立复现。
+
+### T11040 · data/operations/iterations/110/openalex/first-run-20260801/raw/GAP010-M17.json
+
+这是 canonical function-assets census 中的一个登记对象，身份为 `INVALID_OR_PSEUDO_FUNCTION`，处置为 `KEEP`，review state 为 `QUEUED`。
+
+M 轴 `M0`；E 轴 `E0`。状态记录：dimensional=`REQUIRES_HUMAN_REVIEW`, external_reality=`REQUIRES_HUMAN_REVIEW`, internal_model=`REQUIRES_HUMAN_REVIEW`, logical=`UNASSESSED`, mathematical=`UNASSESSED`, numerical=`REQUIRES_HUMAN_REVIEW`.
+
+Claim ceiling：Automatic discovery only; no mathematical or external truth is conferred.
+
+来源出现 2 次；当前可回链来源：[data/operations/iterations/110/openalex/first-run-20260801/raw/GAP010-M17.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP010-M17.json) · [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP010-M18.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP010-M18.json)
+
+> 浏览器只投影 canonical 记录。自动 census、内部测试和登记闭合不构成外部真理、证明或独立复现。
+
+### T11053 · data/operations/iterations/110/openalex/first-run-20260801/raw/GAP005-06.json
+
+这是 canonical function-assets census 中的一个登记对象，身份为 `INVALID_OR_PSEUDO_FUNCTION`，处置为 `KEEP`，review state 为 `QUEUED`。
+
+M 轴 `M0`；E 轴 `E0`。状态记录：dimensional=`REQUIRES_HUMAN_REVIEW`, external_reality=`REQUIRES_HUMAN_REVIEW`, internal_model=`REQUIRES_HUMAN_REVIEW`, logical=`UNASSESSED`, mathematical=`UNASSESSED`, numerical=`REQUIRES_HUMAN_REVIEW`.
+
+Claim ceiling：Automatic discovery only; no mathematical or external truth is conferred.
+
+来源出现 1 次；当前可回链来源：[data/operations/iterations/110/openalex/first-run-20260801/raw/GAP005-06.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP005-06.json)
+
+> 浏览器只投影 canonical 记录。自动 census、内部测试和登记闭合不构成外部真理、证明或独立复现。
+
+### T11056 · data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-11.json
+
+这是 canonical function-assets census 中的一个登记对象，身份为 `INVALID_OR_PSEUDO_FUNCTION`，处置为 `KEEP`，review state 为 `QUEUED`。
+
+M 轴 `M0`；E 轴 `E0`。状态记录：dimensional=`REQUIRES_HUMAN_REVIEW`, external_reality=`REQUIRES_HUMAN_REVIEW`, internal_model=`REQUIRES_HUMAN_REVIEW`, logical=`UNASSESSED`, mathematical=`UNASSESSED`, numerical=`REQUIRES_HUMAN_REVIEW`.
+
+Claim ceiling：Automatic discovery only; no mathematical or external truth is conferred.
+
+来源出现 1 次；当前可回链来源：[data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-11.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-11.json)
+
+> 浏览器只投影 canonical 记录。自动 census、内部测试和登记闭合不构成外部真理、证明或独立复现。
+
+### T11063 · data/operations/iterations/110/openalex/first-run-20260801/raw/GAP007-04.json
+
+这是 canonical function-assets census 中的一个登记对象，身份为 `INVALID_OR_PSEUDO_FUNCTION`，处置为 `KEEP`，review state 为 `QUEUED`。
+
+M 轴 `M0`；E 轴 `E0`。状态记录：dimensional=`REQUIRES_HUMAN_REVIEW`, external_reality=`REQUIRES_HUMAN_REVIEW`, internal_model=`REQUIRES_HUMAN_REVIEW`, logical=`UNASSESSED`, mathematical=`UNASSESSED`, numerical=`REQUIRES_HUMAN_REVIEW`.
+
+Claim ceiling：Automatic discovery only; no mathematical or external truth is conferred.
+
+来源出现 2 次；当前可回链来源：[data/operations/iterations/110/openalex/first-run-20260801/raw/GAP007-04.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP007-04.json) · [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP007-08.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP007-08.json)
+
+> 浏览器只投影 canonical 记录。自动 census、内部测试和登记闭合不构成外部真理、证明或独立复现。
+
+### T11152 · data/operations/iterations/110/openalex/first-run-20260801/raw/GAP002-02.json
+
+这是 canonical function-assets census 中的一个登记对象，身份为 `INVALID_OR_PSEUDO_FUNCTION`，处置为 `KEEP`，review state 为 `QUEUED`。
+
+M 轴 `M0`；E 轴 `E0`。状态记录：dimensional=`REQUIRES_HUMAN_REVIEW`, external_reality=`REQUIRES_HUMAN_REVIEW`, internal_model=`REQUIRES_HUMAN_REVIEW`, logical=`UNASSESSED`, mathematical=`UNASSESSED`, numerical=`REQUIRES_HUMAN_REVIEW`.
+
+Claim ceiling：Automatic discovery only; no mathematical or external truth is conferred.
+
+来源出现 4 次；当前可回链来源：[data/operations/iterations/110/openalex/first-run-20260801/raw/GAP002-02.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP002-02.json) · [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP009-M08.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP009-M08.json) · [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP009-M09.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP009-M09.json)
+
+> 浏览器只投影 canonical 记录。自动 census、内部测试和登记闭合不构成外部真理、证明或独立复现。
+
+### T11168 · data/operations/iterations/110/openalex/first-run-20260801/raw/GAP006-09.json
+
+这是 canonical function-assets census 中的一个登记对象，身份为 `INVALID_OR_PSEUDO_FUNCTION`，处置为 `KEEP`，review state 为 `QUEUED`。
+
+M 轴 `M0`；E 轴 `E0`。状态记录：dimensional=`REQUIRES_HUMAN_REVIEW`, external_reality=`REQUIRES_HUMAN_REVIEW`, internal_model=`REQUIRES_HUMAN_REVIEW`, logical=`UNASSESSED`, mathematical=`UNASSESSED`, numerical=`REQUIRES_HUMAN_REVIEW`.
+
+Claim ceiling：Automatic discovery only; no mathematical or external truth is conferred.
+
+来源出现 1 次；当前可回链来源：[data/operations/iterations/110/openalex/first-run-20260801/raw/GAP006-09.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP006-09.json)
+
+> 浏览器只投影 canonical 记录。自动 census、内部测试和登记闭合不构成外部真理、证明或独立复现。
+
+### T11182 · data/operations/iterations/110/openalex/first-run-20260801/raw/GAP005-07.json
+
+这是 canonical function-assets census 中的一个登记对象，身份为 `INVALID_OR_PSEUDO_FUNCTION`，处置为 `KEEP`，review state 为 `QUEUED`。
+
+M 轴 `M0`；E 轴 `E0`。状态记录：dimensional=`REQUIRES_HUMAN_REVIEW`, external_reality=`REQUIRES_HUMAN_REVIEW`, internal_model=`REQUIRES_HUMAN_REVIEW`, logical=`UNASSESSED`, mathematical=`UNASSESSED`, numerical=`REQUIRES_HUMAN_REVIEW`.
+
+Claim ceiling：Automatic discovery only; no mathematical or external truth is conferred.
+
+来源出现 1 次；当前可回链来源：[data/operations/iterations/110/openalex/first-run-20260801/raw/GAP005-07.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP005-07.json)
+
+> 浏览器只投影 canonical 记录。自动 census、内部测试和登记闭合不构成外部真理、证明或独立复现。
+
+### T11185 · data/operations/iterations/110/openalex/first-run-20260801/raw/GAP006-08.json
+
+这是 canonical function-assets census 中的一个登记对象，身份为 `INVALID_OR_PSEUDO_FUNCTION`，处置为 `KEEP`，review state 为 `QUEUED`。
+
+M 轴 `M0`；E 轴 `E0`。状态记录：dimensional=`REQUIRES_HUMAN_REVIEW`, external_reality=`REQUIRES_HUMAN_REVIEW`, internal_model=`REQUIRES_HUMAN_REVIEW`, logical=`UNASSESSED`, mathematical=`UNASSESSED`, numerical=`REQUIRES_HUMAN_REVIEW`.
+
+Claim ceiling：Automatic discovery only; no mathematical or external truth is conferred.
+
+来源出现 1 次；当前可回链来源：[data/operations/iterations/110/openalex/first-run-20260801/raw/GAP006-08.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP006-08.json)
+
+> 浏览器只投影 canonical 记录。自动 census、内部测试和登记闭合不构成外部真理、证明或独立复现。
+
+### T11235 · data/operations/iterations/110/openalex/first-run-20260801/raw/GAP001-01.json
+
+这是 canonical function-assets census 中的一个登记对象，身份为 `INVALID_OR_PSEUDO_FUNCTION`，处置为 `KEEP`，review state 为 `QUEUED`。
+
+M 轴 `M0`；E 轴 `E0`。状态记录：dimensional=`REQUIRES_HUMAN_REVIEW`, external_reality=`REQUIRES_HUMAN_REVIEW`, internal_model=`REQUIRES_HUMAN_REVIEW`, logical=`UNASSESSED`, mathematical=`UNASSESSED`, numerical=`REQUIRES_HUMAN_REVIEW`.
+
+Claim ceiling：Automatic discovery only; no mathematical or external truth is conferred.
+
+来源出现 3 次；当前可回链来源：[data/operations/iterations/110/openalex/first-run-20260801/raw/GAP001-01.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP001-01.json) · [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP001-05.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP001-05.json) · [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP010-M21.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP010-M21.json)
+
+> 浏览器只投影 canonical 记录。自动 census、内部测试和登记闭合不构成外部真理、证明或独立复现。
+
+### T11244 · data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-09.json
+
+这是 canonical function-assets census 中的一个登记对象，身份为 `INVALID_OR_PSEUDO_FUNCTION`，处置为 `KEEP`，review state 为 `QUEUED`。
+
+M 轴 `M0`；E 轴 `E0`。状态记录：dimensional=`REQUIRES_HUMAN_REVIEW`, external_reality=`REQUIRES_HUMAN_REVIEW`, internal_model=`REQUIRES_HUMAN_REVIEW`, logical=`UNASSESSED`, mathematical=`UNASSESSED`, numerical=`REQUIRES_HUMAN_REVIEW`.
+
+Claim ceiling：Automatic discovery only; no mathematical or external truth is conferred.
+
+来源出现 1 次；当前可回链来源：[data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-09.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-09.json)
+
+> 浏览器只投影 canonical 记录。自动 census、内部测试和登记闭合不构成外部真理、证明或独立复现。
+
+### T11270 · data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-01.json
+
+这是 canonical function-assets census 中的一个登记对象，身份为 `INVALID_OR_PSEUDO_FUNCTION`，处置为 `KEEP`，review state 为 `QUEUED`。
+
+M 轴 `M0`；E 轴 `E0`。状态记录：dimensional=`REQUIRES_HUMAN_REVIEW`, external_reality=`REQUIRES_HUMAN_REVIEW`, internal_model=`REQUIRES_HUMAN_REVIEW`, logical=`UNASSESSED`, mathematical=`UNASSESSED`, numerical=`REQUIRES_HUMAN_REVIEW`.
+
+Claim ceiling：Automatic discovery only; no mathematical or external truth is conferred.
+
+来源出现 5 次；当前可回链来源：[data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-01.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-01.json) · [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-03.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-03.json) · [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-05.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-05.json)
+
+> 浏览器只投影 canonical 记录。自动 census、内部测试和登记闭合不构成外部真理、证明或独立复现。
+
+### T11303 · data/operations/iterations/110/openalex/first-run-20260801/raw/GAP004-08.json
+
+这是 canonical function-assets census 中的一个登记对象，身份为 `INVALID_OR_PSEUDO_FUNCTION`，处置为 `KEEP`，review state 为 `QUEUED`。
+
+M 轴 `M0`；E 轴 `E0`。状态记录：dimensional=`REQUIRES_HUMAN_REVIEW`, external_reality=`REQUIRES_HUMAN_REVIEW`, internal_model=`REQUIRES_HUMAN_REVIEW`, logical=`UNASSESSED`, mathematical=`UNASSESSED`, numerical=`REQUIRES_HUMAN_REVIEW`.
+
+Claim ceiling：Automatic discovery only; no mathematical or external truth is conferred.
+
+来源出现 3 次；当前可回链来源：[data/operations/iterations/110/openalex/first-run-20260801/raw/GAP004-08.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP004-08.json) · [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP010-M19.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP010-M19.json) · [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP012-M27.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP012-M27.json)
+
+> 浏览器只投影 canonical 记录。自动 census、内部测试和登记闭合不构成外部真理、证明或独立复现。
+
+### T11379 · data/operations/iterations/110/openalex/first-run-20260801/raw/GAP009-M03.json
+
+这是 canonical function-assets census 中的一个登记对象，身份为 `INVALID_OR_PSEUDO_FUNCTION`，处置为 `KEEP`，review state 为 `QUEUED`。
+
+M 轴 `M0`；E 轴 `E0`。状态记录：dimensional=`REQUIRES_HUMAN_REVIEW`, external_reality=`REQUIRES_HUMAN_REVIEW`, internal_model=`REQUIRES_HUMAN_REVIEW`, logical=`UNASSESSED`, mathematical=`UNASSESSED`, numerical=`REQUIRES_HUMAN_REVIEW`.
+
+Claim ceiling：Automatic discovery only; no mathematical or external truth is conferred.
+
+来源出现 1 次；当前可回链来源：[data/operations/iterations/110/openalex/first-run-20260801/raw/GAP009-M03.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP009-M03.json)
+
+> 浏览器只投影 canonical 记录。自动 census、内部测试和登记闭合不构成外部真理、证明或独立复现。
+
+### T11405 · data/operations/iterations/110/openalex/first-run-20260801/raw/GAP004-06.json
+
+这是 canonical function-assets census 中的一个登记对象，身份为 `INVALID_OR_PSEUDO_FUNCTION`，处置为 `KEEP`，review state 为 `QUEUED`。
+
+M 轴 `M0`；E 轴 `E0`。状态记录：dimensional=`REQUIRES_HUMAN_REVIEW`, external_reality=`REQUIRES_HUMAN_REVIEW`, internal_model=`REQUIRES_HUMAN_REVIEW`, logical=`UNASSESSED`, mathematical=`UNASSESSED`, numerical=`REQUIRES_HUMAN_REVIEW`.
+
+Claim ceiling：Automatic discovery only; no mathematical or external truth is conferred.
+
+来源出现 1 次；当前可回链来源：[data/operations/iterations/110/openalex/first-run-20260801/raw/GAP004-06.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP004-06.json)
+
+> 浏览器只投影 canonical 记录。自动 census、内部测试和登记闭合不构成外部真理、证明或独立复现。
+
+### T11437 · data/operations/iterations/110/openalex/first-run-20260801/raw/GAP006-06.json
+
+这是 canonical function-assets census 中的一个登记对象，身份为 `INVALID_OR_PSEUDO_FUNCTION`，处置为 `KEEP`，review state 为 `QUEUED`。
+
+M 轴 `M0`；E 轴 `E0`。状态记录：dimensional=`REQUIRES_HUMAN_REVIEW`, external_reality=`REQUIRES_HUMAN_REVIEW`, internal_model=`REQUIRES_HUMAN_REVIEW`, logical=`UNASSESSED`, mathematical=`UNASSESSED`, numerical=`REQUIRES_HUMAN_REVIEW`.
+
+Claim ceiling：Automatic discovery only; no mathematical or external truth is conferred.
+
+来源出现 1 次；当前可回链来源：[data/operations/iterations/110/openalex/first-run-20260801/raw/GAP006-06.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP006-06.json)
+
+> 浏览器只投影 canonical 记录。自动 census、内部测试和登记闭合不构成外部真理、证明或独立复现。
+
+### T11445 · data/operations/iterations/110/openalex/first-run-20260801/raw/GAP002-06.json
+
+这是 canonical function-assets census 中的一个登记对象，身份为 `INVALID_OR_PSEUDO_FUNCTION`，处置为 `KEEP`，review state 为 `QUEUED`。
+
+M 轴 `M0`；E 轴 `E0`。状态记录：dimensional=`REQUIRES_HUMAN_REVIEW`, external_reality=`REQUIRES_HUMAN_REVIEW`, internal_model=`REQUIRES_HUMAN_REVIEW`, logical=`UNASSESSED`, mathematical=`UNASSESSED`, numerical=`REQUIRES_HUMAN_REVIEW`.
+
+Claim ceiling：Automatic discovery only; no mathematical or external truth is conferred.
+
+来源出现 1 次；当前可回链来源：[data/operations/iterations/110/openalex/first-run-20260801/raw/GAP002-06.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP002-06.json)
+
+> 浏览器只投影 canonical 记录。自动 census、内部测试和登记闭合不构成外部真理、证明或独立复现。
+
+### T11474 · data/operations/iterations/110/openalex/first-run-20260801/raw/GAP006-10.json
+
+这是 canonical function-assets census 中的一个登记对象，身份为 `INVALID_OR_PSEUDO_FUNCTION`，处置为 `KEEP`，review state 为 `QUEUED`。
+
+M 轴 `M0`；E 轴 `E0`。状态记录：dimensional=`REQUIRES_HUMAN_REVIEW`, external_reality=`REQUIRES_HUMAN_REVIEW`, internal_model=`REQUIRES_HUMAN_REVIEW`, logical=`UNASSESSED`, mathematical=`UNASSESSED`, numerical=`REQUIRES_HUMAN_REVIEW`.
+
+Claim ceiling：Automatic discovery only; no mathematical or external truth is conferred.
+
+来源出现 1 次；当前可回链来源：[data/operations/iterations/110/openalex/first-run-20260801/raw/GAP006-10.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP006-10.json)
+
+> 浏览器只投影 canonical 记录。自动 census、内部测试和登记闭合不构成外部真理、证明或独立复现。
 
 ### T11492 · data/operations/iterations/110/openalex/first-run-20260801/raw/GAP014-M40.json
 

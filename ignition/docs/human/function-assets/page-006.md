@@ -2068,6 +2068,18 @@ Claim ceiling：Automatic discovery only; no mathematical or external truth is c
 
 > 浏览器只投影 canonical 记录。自动 census、内部测试和登记闭合不构成外部真理、证明或独立复现。
 
+### IMPLICIT-0E449882AB60869A · "excerpt": "- [\"excerpt\": \" require(text(ROOT / \\\\\"reports/operations/114-language-thought-project-audit.md\\\\\").count(\\\\\"25 条\\\\\") == 1, \\\\\"project audit summary missing exact finding count\\\\\")\",](../../../data/operatio
+
+这是 canonical function-assets census 中的一个登记对象，身份为 `INVALID_OR_PSEUDO_FUNCTION`，处置为 `KEEP`，review state 为 `QUEUED`。
+
+M 轴 `M0`；E 轴 `E0`。状态记录：dimensional=`REQUIRES_HUMAN_REVIEW`, external_reality=`REQUIRES_HUMAN_REVIEW`, internal_model=`REQUIRES_HUMAN_REVIEW`, logical=`UNASSESSED`, mathematical=`UNASSESSED`, numerical=`REQUIRES_HUMAN_REVIEW`.
+
+Claim ceiling：Automatic discovery only; no mathematical or external truth is conferred.
+
+来源出现 1 次；当前可回链来源：[data/operations/root-normalization/post-migration-inbound-reference-audit.json](../../../data/operations/root-normalization/post-migration-inbound-reference-audit.json)
+
+> 浏览器只投影 canonical 记录。自动 census、内部测试和登记闭合不构成外部真理、证明或独立复现。
+
 ### IMPLICIT-0E44B83F7566075D · title: "定投指数基金"
 
 这是 canonical function-assets census 中的一个登记对象，身份为 `INVALID_OR_PSEUDO_FUNCTION`，处置为 `KEEP`，review state 为 `QUEUED`。
@@ -2989,17 +3001,5 @@ M 轴 `M0`；E 轴 `E0`。状态记录：dimensional=`REQUIRES_HUMAN_REVIEW`, ex
 Claim ceiling：Automatic discovery only; no mathematical or external truth is conferred.
 
 来源出现 1 次；当前可回链来源：[tests/test_canonical.py](../../../tests/test_canonical.py)
-
-> 浏览器只投影 canonical 记录。自动 census、内部测试和登记闭合不构成外部真理、证明或独立复现。
-
-### IMPLICIT-11509C8F52EAE015 · title: "幽灵跳变阻尼函数"
-
-这是 canonical function-assets census 中的一个登记对象，身份为 `INVALID_OR_PSEUDO_FUNCTION`，处置为 `KEEP`，review state 为 `QUEUED`。
-
-M 轴 `M0`；E 轴 `E0`。状态记录：dimensional=`REQUIRES_HUMAN_REVIEW`, external_reality=`REQUIRES_HUMAN_REVIEW`, internal_model=`REQUIRES_HUMAN_REVIEW`, logical=`UNASSESSED`, mathematical=`UNASSESSED`, numerical=`REQUIRES_HUMAN_REVIEW`.
-
-Claim ceiling：Automatic discovery only; no mathematical or external truth is conferred.
-
-来源出现 1 次；当前可回链来源：[统一函数总表/0468-D470-幽灵跳变阻尼函数.md](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0468-D470-%E5%B9%BD%E7%81%B5%E8%B7%B3%E5%8F%98%E9%98%BB%E5%B0%BC%E5%87%BD%E6%95%B0.md)
 
 > 浏览器只投影 canonical 记录。自动 census、内部测试和登记闭合不构成外部真理、证明或独立复现。

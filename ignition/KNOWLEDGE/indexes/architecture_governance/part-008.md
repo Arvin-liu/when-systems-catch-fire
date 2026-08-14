@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [def validate_request(request: dict\[str, Any\], actor_registry: dict\[str, Any\] \| None = None) -> None:](../../../tools/operations/stage_snapshot_contract.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-79D8FC882AD121DF / def validate_request(request: dict\[str, Any\], actor_registry: dict\[str, Any\] \| None = None) -> None: / IMPLICIT-79D8FC882AD121DF
+  - 来源：`tools/operations/stage_snapshot_contract.py`
+  - 依赖：—；被引用：—
+- [def validate_required(schema: dict, data: dict) -> None:](../../../tools/validate_narrative_output.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-7F8EBC73D87686D5 / def validate_required(schema: dict, data: dict) -> None: / IMPLICIT-7F8EBC73D87686D5
+  - 来源：`tools/validate_narrative_output.py`
+  - 依赖：—；被引用：—
+- [def validate_required_and_extra(name: str, rows: list\[dict\[str, Any\]\], schema_path: Path) -> None:](../../../tools/validate_data.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-A6E3A1CE7808C6D8 / def validate_required_and_extra(name: str, rows: list\[dict\[str, Any\]\], schema_path: Path) -> None: / IMPLICIT-A6E3A1CE7808C6D8
+  - 来源：`tools/validate_data.py`
+  - 依赖：—；被引用：—
 - [def validate_run_state() -> None:](../../../tools/validate_effectual_mechanism_overlay.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-3089A24E7B856EBB / def validate_run_state() -> None: / IMPLICIT-3089A24E7B856EBB / IMPLICIT-4ECC280AA885B4BD
@@ -2488,19 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-1767e8409c47de8c / gates.append(gate("G22", "PASS" if get("boundary_evidence") or get("boundaries") else "PENDING", "semi_automatic",
   - 来源：`tools/validate_protocol_canonical.py`
-  - 依赖：—；被引用：—
-- [gates.append(gate("G25", "PASS", "automatic", doc_path, f"section:{pid}", "证据路径可指向", "无"))](../../../tools/validate_protocol_canonical.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-2fb3dc229b0ab26e / gates.append(gate("G25", "PASS", "automatic", doc_path, f"section:{pid}", "证据路径可指向", "无"))
-  - 来源：`tools/validate_protocol_canonical.py`
-  - 依赖：—；被引用：—
-- [Generate evidence cards with `claim_support_status`](../../../reports/external-research/121b-handoff-to-121c.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-607fa5f311696442 / Generate evidence cards with `claim_support_status`
-  - 来源：`reports/external-research/121b-handoff-to-121c.md`
-  - 依赖：—；被引用：—
-- [Generate source-specific evidence statements (not generic summaries)](../../../data/external-research/121A-night-recovery/121A-resume-plan-121B-121C.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-005711876c843f5c / Generate source-specific evidence statements (not generic summaries)
-  - 来源：`data/external-research/121A-night-recovery/121A-resume-plan-121B-121C.md`
   - 依赖：—；被引用：—

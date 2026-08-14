@@ -4,6 +4,234 @@
 
 [返回索引](README.md) · [上一页](page-021.md) · [下一页](page-023.md)
 
+### IMPLICIT-B4365F4F6FF2C8CC · def test_dimension_fixture_reference_fails_closed(self):
+
+这是 canonical function-assets census 中的一个登记对象，身份为 `INVALID_OR_PSEUDO_FUNCTION`，处置为 `KEEP`，review state 为 `QUEUED`。
+
+M 轴 `M0`；E 轴 `E0`。状态记录：dimensional=`REQUIRES_HUMAN_REVIEW`, external_reality=`REQUIRES_HUMAN_REVIEW`, internal_model=`REQUIRES_HUMAN_REVIEW`, logical=`UNASSESSED`, mathematical=`UNASSESSED`, numerical=`REQUIRES_HUMAN_REVIEW`.
+
+Claim ceiling：Automatic discovery only; no mathematical or external truth is conferred.
+
+来源出现 1 次；当前可回链来源：[tests/test_language_thought_plane.py](../../../tests/test_language_thought_plane.py)
+
+> 浏览器只投影 canonical 记录。自动 census、内部测试和登记闭合不构成外部真理、证明或独立复现。
+
+### IMPLICIT-B43F2C74EBDDBEEB · def cand(cid, claim=None, source="fixture", title="x"):
+
+这是 canonical function-assets census 中的一个登记对象，身份为 `INVALID_OR_PSEUDO_FUNCTION`，处置为 `KEEP`，review state 为 `QUEUED`。
+
+M 轴 `M0`；E 轴 `E0`。状态记录：dimensional=`REQUIRES_HUMAN_REVIEW`, external_reality=`REQUIRES_HUMAN_REVIEW`, internal_model=`REQUIRES_HUMAN_REVIEW`, logical=`UNASSESSED`, mathematical=`UNASSESSED`, numerical=`REQUIRES_HUMAN_REVIEW`.
+
+Claim ceiling：Automatic discovery only; no mathematical or external truth is conferred.
+
+来源出现 1 次；当前可回链来源：[tests/iteration_planner/test_completion_reconciliation.py](../../../tests/iteration_planner/test_completion_reconciliation.py)
+
+> 浏览器只投影 canonical 记录。自动 census、内部测试和登记闭合不构成外部真理、证明或独立复现。
+
+### IMPLICIT-B4521BCCF7E7B945 · title: "犹豫域退化函数"
+
+这是 canonical function-assets census 中的一个登记对象，身份为 `INVALID_OR_PSEUDO_FUNCTION`，处置为 `KEEP`，review state 为 `QUEUED`。
+
+M 轴 `M0`；E 轴 `E0`。状态记录：dimensional=`REQUIRES_HUMAN_REVIEW`, external_reality=`REQUIRES_HUMAN_REVIEW`, internal_model=`REQUIRES_HUMAN_REVIEW`, logical=`UNASSESSED`, mathematical=`UNASSESSED`, numerical=`REQUIRES_HUMAN_REVIEW`.
+
+Claim ceiling：Automatic discovery only; no mathematical or external truth is conferred.
+
+来源出现 1 次；当前可回链来源：[统一案例总表/0077-C-77-犹豫域退化函数.md](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0077-C-77-%E7%8A%B9%E8%B1%AB%E5%9F%9F%E9%80%80%E5%8C%96%E5%87%BD%E6%95%B0.md)
+
+> 浏览器只投影 canonical 记录。自动 census、内部测试和登记闭合不构成外部真理、证明或独立复现。
+
+### IMPLICIT-B4567A9E30B0E8DC · def test_g4_windows_drive_rejected(self):
+
+这是 canonical function-assets census 中的一个登记对象，身份为 `INVALID_OR_PSEUDO_FUNCTION`，处置为 `KEEP`，review state 为 `QUEUED`。
+
+M 轴 `M0`；E 轴 `E0`。状态记录：dimensional=`REQUIRES_HUMAN_REVIEW`, external_reality=`REQUIRES_HUMAN_REVIEW`, internal_model=`REQUIRES_HUMAN_REVIEW`, logical=`UNASSESSED`, mathematical=`UNASSESSED`, numerical=`REQUIRES_HUMAN_REVIEW`.
+
+Claim ceiling：Automatic discovery only; no mathematical or external truth is conferred.
+
+来源出现 1 次；当前可回链来源：[tests/test_change_propagation.py](../../../tests/test_change_propagation.py)
+
+> 浏览器只投影 canonical 记录。自动 census、内部测试和登记闭合不构成外部真理、证明或独立复现。
+
+### IMPLICIT-B45EF2E2257997BB · ## 二、边界扩展候选（不新增编号，回写已有函数）
+
+这是 canonical function-assets census 中的一个登记对象，身份为 `INVALID_OR_PSEUDO_FUNCTION`，处置为 `KEEP`，review state 为 `QUEUED`。
+
+M 轴 `M0`；E 轴 `E0`。状态记录：dimensional=`REQUIRES_HUMAN_REVIEW`, external_reality=`REQUIRES_HUMAN_REVIEW`, internal_model=`REQUIRES_HUMAN_REVIEW`, logical=`UNASSESSED`, mathematical=`UNASSESSED`, numerical=`REQUIRES_HUMAN_REVIEW`.
+
+Claim ceiling：Automatic discovery only; no mathematical or external truth is conferred.
+
+来源出现 1 次；当前可回链来源：[outputs/collisions/20260711-disobedience-subjectivity/psi0-decision-matrix.md](../../../outputs/collisions/20260711-disobedience-subjectivity/psi0-decision-matrix.md)
+
+> 浏览器只投影 canonical 记录。自动 census、内部测试和登记闭合不构成外部真理、证明或独立复现。
+
+### IMPLICIT-B471C812B4556D2E · title: "信息门效率统一函数 / information-gate efficiency unification函数"
+
+这是 canonical function-assets census 中的一个登记对象，身份为 `INVALID_OR_PSEUDO_FUNCTION`，处置为 `KEEP`，review state 为 `QUEUED`。
+
+M 轴 `M0`；E 轴 `E0`。状态记录：dimensional=`REQUIRES_HUMAN_REVIEW`, external_reality=`REQUIRES_HUMAN_REVIEW`, internal_model=`REQUIRES_HUMAN_REVIEW`, logical=`UNASSESSED`, mathematical=`UNASSESSED`, numerical=`REQUIRES_HUMAN_REVIEW`.
+
+Claim ceiling：Automatic discovery only; no mathematical or external truth is conferred.
+
+来源出现 1 次；当前可回链来源：[统一函数总表/0179-D142-信息门效率统一函数.md](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0179-D142-%E4%BF%A1%E6%81%AF%E9%97%A8%E6%95%88%E7%8E%87%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0.md)
+
+> 浏览器只投影 canonical 记录。自动 census、内部测试和登记闭合不构成外部真理、证明或独立复现。
+
+### IMPLICIT-B485910BEC200A78 · with open("data/discipline-projection/087-discipline-registry.jsonl", "w", encoding="utf-8") as f:
+
+这是 canonical function-assets census 中的一个登记对象，身份为 `INVALID_OR_PSEUDO_FUNCTION`，处置为 `KEEP`，review state 为 `QUEUED`。
+
+M 轴 `M0`；E 轴 `E0`。状态记录：dimensional=`REQUIRES_HUMAN_REVIEW`, external_reality=`REQUIRES_HUMAN_REVIEW`, internal_model=`REQUIRES_HUMAN_REVIEW`, logical=`UNASSESSED`, mathematical=`UNASSESSED`, numerical=`REQUIRES_HUMAN_REVIEW`.
+
+Claim ceiling：Automatic discovery only; no mathematical or external truth is conferred.
+
+来源出现 1 次；当前可回链来源：[tools/foundation/parse_087_registry.py](../../../tools/foundation/parse_087_registry.py)
+
+> 浏览器只投影 canonical 记录。自动 census、内部测试和登记闭合不构成外部真理、证明或独立复现。
+
+### IMPLICIT-B4921394939F1495 · title: "退出概率=阿伦尼乌斯方程 / exit probability=阿伦尼乌斯方程"
+
+这是 canonical function-assets census 中的一个登记对象，身份为 `INVALID_OR_PSEUDO_FUNCTION`，处置为 `KEEP`，review state 为 `QUEUED`。
+
+M 轴 `M0`；E 轴 `E0`。状态记录：dimensional=`REQUIRES_HUMAN_REVIEW`, external_reality=`REQUIRES_HUMAN_REVIEW`, internal_model=`REQUIRES_HUMAN_REVIEW`, logical=`UNASSESSED`, mathematical=`UNASSESSED`, numerical=`REQUIRES_HUMAN_REVIEW`.
+
+Claim ceiling：Automatic discovery only; no mathematical or external truth is conferred.
+
+来源出现 1 次；当前可回链来源：[统一案例总表/0224-C-224-退出概率=阿伦尼乌斯方程.md](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0224-C-224-%E9%80%80%E5%87%BA%E6%A6%82%E7%8E%87%3D%E9%98%BF%E4%BC%A6%E5%B0%BC%E4%B9%8C%E6%96%AF%E6%96%B9%E7%A8%8B.md)
+
+> 浏览器只投影 canonical 记录。自动 census、内部测试和登记闭合不构成外部真理、证明或独立复现。
+
+### IMPLICIT-B4A39B581B706375 · def test_f10_generated_output_authority_key_files_must_exist(self):
+
+这是 canonical function-assets census 中的一个登记对象，身份为 `INVALID_OR_PSEUDO_FUNCTION`，处置为 `KEEP`，review state 为 `QUEUED`。
+
+M 轴 `M0`；E 轴 `E0`。状态记录：dimensional=`REQUIRES_HUMAN_REVIEW`, external_reality=`REQUIRES_HUMAN_REVIEW`, internal_model=`REQUIRES_HUMAN_REVIEW`, logical=`UNASSESSED`, mathematical=`UNASSESSED`, numerical=`REQUIRES_HUMAN_REVIEW`.
+
+Claim ceiling：Automatic discovery only; no mathematical or external truth is conferred.
+
+来源出现 1 次；当前可回链来源：[tests/test_change_propagation.py](../../../tests/test_change_propagation.py)
+
+> 浏览器只投影 canonical 记录。自动 census、内部测试和登记闭合不构成外部真理、证明或独立复现。
+
+### IMPLICIT-B4B7F6001984E209 · require(set(source_frame) == set(target_frame), f"{prefix}: source and target frames must annotate the same dimensions", errors)
+
+这是 canonical function-assets census 中的一个登记对象，身份为 `INVALID_OR_PSEUDO_FUNCTION`，处置为 `KEEP`，review state 为 `QUEUED`。
+
+M 轴 `M0`；E 轴 `E0`。状态记录：dimensional=`REQUIRES_HUMAN_REVIEW`, external_reality=`REQUIRES_HUMAN_REVIEW`, internal_model=`REQUIRES_HUMAN_REVIEW`, logical=`UNASSESSED`, mathematical=`UNASSESSED`, numerical=`REQUIRES_HUMAN_REVIEW`.
+
+Claim ceiling：Automatic discovery only; no mathematical or external truth is conferred.
+
+来源出现 1 次；当前可回链来源：[tools/language_thought/validate_language_thought.py](../../../tools/language_thought/validate_language_thought.py)
+
+> 浏览器只投影 canonical 记录。自动 census、内部测试和登记闭合不构成外部真理、证明或独立复现。
+
+### IMPLICIT-B4C5782CA3A1F7B8 · def check_duplicate_semantic_authority(authority: dict) -> None:
+
+这是 canonical function-assets census 中的一个登记对象，身份为 `INVALID_OR_PSEUDO_FUNCTION`，处置为 `KEEP`，review state 为 `QUEUED`。
+
+M 轴 `M0`；E 轴 `E0`。状态记录：dimensional=`REQUIRES_HUMAN_REVIEW`, external_reality=`REQUIRES_HUMAN_REVIEW`, internal_model=`REQUIRES_HUMAN_REVIEW`, logical=`UNASSESSED`, mathematical=`UNASSESSED`, numerical=`REQUIRES_HUMAN_REVIEW`.
+
+Claim ceiling：Automatic discovery only; no mathematical or external truth is conferred.
+
+来源出现 1 次；当前可回链来源：[tools/operations/validate_generated_output_authority.py](../../../tools/operations/validate_generated_output_authority.py)
+
+> 浏览器只投影 canonical 记录。自动 census、内部测试和登记闭合不构成外部真理、证明或独立复现。
+
+### IMPLICIT-B4D28E3981E826D1 · def _string(value: Any) -> bool:
+
+这是 canonical function-assets census 中的一个登记对象，身份为 `INVALID_OR_PSEUDO_FUNCTION`，处置为 `KEEP`，review state 为 `QUEUED`。
+
+M 轴 `M0`；E 轴 `E0`。状态记录：dimensional=`REQUIRES_HUMAN_REVIEW`, external_reality=`REQUIRES_HUMAN_REVIEW`, internal_model=`REQUIRES_HUMAN_REVIEW`, logical=`UNASSESSED`, mathematical=`UNASSESSED`, numerical=`REQUIRES_HUMAN_REVIEW`.
+
+Claim ceiling：Automatic discovery only; no mathematical or external truth is conferred.
+
+来源出现 1 次；当前可回链来源：[tools/failure_case_evidence_gate.py](../../../tools/failure_case_evidence_gate.py)
+
+> 浏览器只投影 canonical 记录。自动 census、内部测试和登记闭合不构成外部真理、证明或独立复现。
+
+### IMPLICIT-B4EADEA7033934B0 · def test_current_log_is_valid(self):
+
+这是 canonical function-assets census 中的一个登记对象，身份为 `INVALID_OR_PSEUDO_FUNCTION`，处置为 `KEEP`，review state 为 `QUEUED`。
+
+M 轴 `M0`；E 轴 `E0`。状态记录：dimensional=`REQUIRES_HUMAN_REVIEW`, external_reality=`REQUIRES_HUMAN_REVIEW`, internal_model=`REQUIRES_HUMAN_REVIEW`, logical=`UNASSESSED`, mathematical=`UNASSESSED`, numerical=`REQUIRES_HUMAN_REVIEW`.
+
+Claim ceiling：Automatic discovery only; no mathematical or external truth is conferred.
+
+来源出现 1 次；当前可回链来源：[tests/test_state_changelog.py](../../../tests/test_state_changelog.py)
+
+> 浏览器只投影 canonical 记录。自动 census、内部测试和登记闭合不构成外部真理、证明或独立复现。
+
+### IMPLICIT-B4F0F4B9E363A89B · - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0159})=1].
+
+这是 canonical function-assets census 中的一个登记对象，身份为 `INVALID_OR_PSEUDO_FUNCTION`，处置为 `KEEP`，review state 为 `QUEUED`。
+
+M 轴 `M0`；E 轴 `E0`。状态记录：dimensional=`REQUIRES_HUMAN_REVIEW`, external_reality=`REQUIRES_HUMAN_REVIEW`, internal_model=`REQUIRES_HUMAN_REVIEW`, logical=`UNASSESSED`, mathematical=`UNASSESSED`, numerical=`REQUIRES_HUMAN_REVIEW`.
+
+Claim ceiling：Automatic discovery only; no mathematical or external truth is conferred.
+
+来源出现 1 次；当前可回链来源：[统一案例总表/0159-C-159-财富自证循环.md](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0159-C-159-%E8%B4%A2%E5%AF%8C%E8%87%AA%E8%AF%81%E5%BE%AA%E7%8E%AF.md)
+
+> 浏览器只投影 canonical 记录。自动 census、内部测试和登记闭合不构成外部真理、证明或独立复现。
+
+### IMPLICIT-B4F4CDA8EFBC41A4 · title: "双临界n统一函数"
+
+这是 canonical function-assets census 中的一个登记对象，身份为 `INVALID_OR_PSEUDO_FUNCTION`，处置为 `KEEP`，review state 为 `QUEUED`。
+
+M 轴 `M0`；E 轴 `E0`。状态记录：dimensional=`REQUIRES_HUMAN_REVIEW`, external_reality=`REQUIRES_HUMAN_REVIEW`, internal_model=`REQUIRES_HUMAN_REVIEW`, logical=`UNASSESSED`, mathematical=`UNASSESSED`, numerical=`REQUIRES_HUMAN_REVIEW`.
+
+Claim ceiling：Automatic discovery only; no mathematical or external truth is conferred.
+
+来源出现 1 次；当前可回链来源：[统一函数总表/0440-D404-双临界n统一函数.md](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0440-D404-%E5%8F%8C%E4%B8%B4%E7%95%8Cn%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0.md)
+
+> 浏览器只投影 canonical 记录。自动 census、内部测试和登记闭合不构成外部真理、证明或独立复现。
+
+### IMPLICIT-B4FB6BDCD31941D1 · def mk(fid, name, post):
+
+这是 canonical function-assets census 中的一个登记对象，身份为 `INVALID_OR_PSEUDO_FUNCTION`，处置为 `KEEP`，review state 为 `QUEUED`。
+
+M 轴 `M0`；E 轴 `E0`。状态记录：dimensional=`REQUIRES_HUMAN_REVIEW`, external_reality=`REQUIRES_HUMAN_REVIEW`, internal_model=`REQUIRES_HUMAN_REVIEW`, logical=`UNASSESSED`, mathematical=`UNASSESSED`, numerical=`REQUIRES_HUMAN_REVIEW`.
+
+Claim ceiling：Automatic discovery only; no mathematical or external truth is conferred.
+
+来源出现 1 次；当前可回链来源：[function-os-candidate/v0.2/benchmark/run.py](../../../function-os-candidate/v0.2/benchmark/run.py)
+
+> 浏览器只投影 canonical 记录。自动 census、内部测试和登记闭合不构成外部真理、证明或独立复现。
+
+### IMPLICIT-B4FE1F219CAABDB6 · title: "退出权时变空间函数"
+
+这是 canonical function-assets census 中的一个登记对象，身份为 `INVALID_OR_PSEUDO_FUNCTION`，处置为 `KEEP`，review state 为 `QUEUED`。
+
+M 轴 `M0`；E 轴 `E0`。状态记录：dimensional=`REQUIRES_HUMAN_REVIEW`, external_reality=`REQUIRES_HUMAN_REVIEW`, internal_model=`REQUIRES_HUMAN_REVIEW`, logical=`UNASSESSED`, mathematical=`UNASSESSED`, numerical=`REQUIRES_HUMAN_REVIEW`.
+
+Claim ceiling：Automatic discovery only; no mathematical or external truth is conferred.
+
+来源出现 1 次；当前可回链来源：[统一函数总表/0506-D508-退出权时变空间函数.md](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0506-D508-%E9%80%80%E5%87%BA%E6%9D%83%E6%97%B6%E5%8F%98%E7%A9%BA%E9%97%B4%E5%87%BD%E6%95%B0.md)
+
+> 浏览器只投影 canonical 记录。自动 census、内部测试和登记闭合不构成外部真理、证明或独立复现。
+
+### IMPLICIT-B4FF02EA0A0FE47E · def test_encode(self):
+
+这是 canonical function-assets census 中的一个登记对象，身份为 `INVALID_OR_PSEUDO_FUNCTION`，处置为 `KEEP`，review state 为 `QUEUED`。
+
+M 轴 `M0`；E 轴 `E0`。状态记录：dimensional=`REQUIRES_HUMAN_REVIEW`, external_reality=`REQUIRES_HUMAN_REVIEW`, internal_model=`REQUIRES_HUMAN_REVIEW`, logical=`UNASSESSED`, mathematical=`UNASSESSED`, numerical=`REQUIRES_HUMAN_REVIEW`.
+
+Claim ceiling：Automatic discovery only; no mathematical or external truth is conferred.
+
+来源出现 1 次；当前可回链来源：[function-os-candidate/v0.2/tests/test_n1_through_n4.py](../../../function-os-candidate/v0.2/tests/test_n1_through_n4.py)
+
+> 浏览器只投影 canonical 记录。自动 census、内部测试和登记闭合不构成外部真理、证明或独立复现。
+
+### IMPLICIT-B502285521FCB96F · - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0122})=1].
+
+这是 canonical function-assets census 中的一个登记对象，身份为 `INVALID_OR_PSEUDO_FUNCTION`，处置为 `KEEP`，review state 为 `QUEUED`。
+
+M 轴 `M0`；E 轴 `E0`。状态记录：dimensional=`REQUIRES_HUMAN_REVIEW`, external_reality=`REQUIRES_HUMAN_REVIEW`, internal_model=`REQUIRES_HUMAN_REVIEW`, logical=`UNASSESSED`, mathematical=`UNASSESSED`, numerical=`REQUIRES_HUMAN_REVIEW`.
+
+Claim ceiling：Automatic discovery only; no mathematical or external truth is conferred.
+
+来源出现 1 次；当前可回链来源：[统一案例总表/0122-C-122-认知-群体映射.md](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0122-C-122-%E8%AE%A4%E7%9F%A5-%E7%BE%A4%E4%BD%93%E6%98%A0%E5%B0%84.md)
+
+> 浏览器只投影 canonical 记录。自动 census、内部测试和登记闭合不构成外部真理、证明或独立复现。
+
 ### IMPLICIT-B50AF1EDA1E11D9A · def executor_fixture(self, specs):
 
 这是 canonical function-assets census 中的一个登记对象，身份为 `INVALID_OR_PSEUDO_FUNCTION`，处置为 `KEEP`，review state 为 `QUEUED`。
@@ -1153,6 +1381,18 @@ M 轴 `M0`；E 轴 `E0`。状态记录：dimensional=`REQUIRES_HUMAN_REVIEW`, ex
 Claim ceiling：Automatic discovery only; no mathematical or external truth is conferred.
 
 来源出现 1 次；当前可回链来源：[function-os-candidate/v0.2/function_os/n6_execution_trace.py](../../../function-os-candidate/v0.2/function_os/n6_execution_trace.py)
+
+> 浏览器只投影 canonical 记录。自动 census、内部测试和登记闭合不构成外部真理、证明或独立复现。
+
+### IMPLICIT-B92A49279210E610 · "excerpt": " - 可搜索名称：IMPLICIT-4F014A16B668AFC3 / \"excerpt\": \"{\\\\\"aliases\\\\\":\\[\\\\\"IMPLICIT-31147A1B2F97C9BA\\\\\",\\\\\"require(text(ROOT / \\\\\\\\\\\\\"reports/operations/114-language-thought-project-audit.md\\\\\\\\\\\\\").co
+
+这是 canonical function-assets census 中的一个登记对象，身份为 `INVALID_OR_PSEUDO_FUNCTION`，处置为 `KEEP`，review state 为 `QUEUED`。
+
+M 轴 `M0`；E 轴 `E0`。状态记录：dimensional=`REQUIRES_HUMAN_REVIEW`, external_reality=`REQUIRES_HUMAN_REVIEW`, internal_model=`REQUIRES_HUMAN_REVIEW`, logical=`UNASSESSED`, mathematical=`UNASSESSED`, numerical=`REQUIRES_HUMAN_REVIEW`.
+
+Claim ceiling：Automatic discovery only; no mathematical or external truth is conferred.
+
+来源出现 1 次；当前可回链来源：[data/operations/root-normalization/post-migration-inbound-reference-audit.json](../../../data/operations/root-normalization/post-migration-inbound-reference-audit.json)
 
 > 浏览器只投影 canonical 记录。自动 census、内部测试和登记闭合不构成外部真理、证明或独立复现。
 
@@ -2761,245 +3001,5 @@ M 轴 `M0`；E 轴 `E0`。状态记录：dimensional=`REQUIRES_HUMAN_REVIEW`, ex
 Claim ceiling：Automatic discovery only; no mathematical or external truth is conferred.
 
 来源出现 1 次；当前可回链来源：[tools/language_thought/validate_language_thought.py](../../../tools/language_thought/validate_language_thought.py)
-
-> 浏览器只投影 canonical 记录。自动 census、内部测试和登记闭合不构成外部真理、证明或独立复现。
-
-### IMPLICIT-BE28A25F51335BBE · "title": "Fourier Neural Operator for Parametric Partial Differential Equations",
-
-这是 canonical function-assets census 中的一个登记对象，身份为 `INVALID_OR_PSEUDO_FUNCTION`，处置为 `KEEP`，review state 为 `QUEUED`。
-
-M 轴 `M0`；E 轴 `E0`。状态记录：dimensional=`REQUIRES_HUMAN_REVIEW`, external_reality=`REQUIRES_HUMAN_REVIEW`, internal_model=`REQUIRES_HUMAN_REVIEW`, logical=`UNASSESSED`, mathematical=`UNASSESSED`, numerical=`REQUIRES_HUMAN_REVIEW`.
-
-Claim ceiling：Automatic discovery only; no mathematical or external truth is conferred.
-
-来源出现 1 次；当前可回链来源：[data/external-research/121-fulltext-resolver/121q2/family-synthesis/F4.json](../../../data/external-research/121-fulltext-resolver/121q2/family-synthesis/F4.json)
-
-> 浏览器只投影 canonical 记录。自动 census、内部测试和登记闭合不构成外部真理、证明或独立复现。
-
-### IMPLICIT-BE6D82E6E5ED2FB7 · 中文：案例说明：维护成本M(t)=M₀·e^αt vs 信息产出I(t)
-
-这是 canonical function-assets census 中的一个登记对象，身份为 `INVALID_OR_PSEUDO_FUNCTION`，处置为 `KEEP`，review state 为 `QUEUED`。
-
-M 轴 `M0`；E 轴 `E0`。状态记录：dimensional=`REQUIRES_HUMAN_REVIEW`, external_reality=`REQUIRES_HUMAN_REVIEW`, internal_model=`REQUIRES_HUMAN_REVIEW`, logical=`UNASSESSED`, mathematical=`UNASSESSED`, numerical=`REQUIRES_HUMAN_REVIEW`.
-
-Claim ceiling：Automatic discovery only; no mathematical or external truth is conferred.
-
-来源出现 1 次；当前可回链来源：[统一案例总表/0113-C-113-人体忒修斯.md](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0113-C-113-%E4%BA%BA%E4%BD%93%E5%BF%92%E4%BF%AE%E6%96%AF.md)
-
-> 浏览器只投影 canonical 记录。自动 census、内部测试和登记闭合不构成外部真理、证明或独立复现。
-
-### IMPLICIT-BE74E5C8BA2332A4 · "title": "Editing Models with Task Arithmetic",
-
-这是 canonical function-assets census 中的一个登记对象，身份为 `INVALID_OR_PSEUDO_FUNCTION`，处置为 `KEEP`，review state 为 `QUEUED`。
-
-M 轴 `M0`；E 轴 `E0`。状态记录：dimensional=`REQUIRES_HUMAN_REVIEW`, external_reality=`REQUIRES_HUMAN_REVIEW`, internal_model=`REQUIRES_HUMAN_REVIEW`, logical=`UNASSESSED`, mathematical=`UNASSESSED`, numerical=`REQUIRES_HUMAN_REVIEW`.
-
-Claim ceiling：Automatic discovery only; no mathematical or external truth is conferred.
-
-来源出现 1 次；当前可回链来源：[data/external-research/121-fulltext-resolver/121q2/acceptance/S120-045.json](../../../data/external-research/121-fulltext-resolver/121q2/acceptance/S120-045.json)
-
-> 浏览器只投影 canonical 记录。自动 census、内部测试和登记闭合不构成外部真理、证明或独立复现。
-
-### IMPLICIT-BE867A74A3071414 · title: "学科点火指数"
-
-这是 canonical function-assets census 中的一个登记对象，身份为 `INVALID_OR_PSEUDO_FUNCTION`，处置为 `KEEP`，review state 为 `QUEUED`。
-
-M 轴 `M0`；E 轴 `E0`。状态记录：dimensional=`REQUIRES_HUMAN_REVIEW`, external_reality=`REQUIRES_HUMAN_REVIEW`, internal_model=`REQUIRES_HUMAN_REVIEW`, logical=`UNASSESSED`, mathematical=`UNASSESSED`, numerical=`REQUIRES_HUMAN_REVIEW`.
-
-Claim ceiling：Automatic discovery only; no mathematical or external truth is conferred.
-
-来源出现 1 次；当前可回链来源：[统一函数总表/0604-D594-学科点火指数.md](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0604-D594-%E5%AD%A6%E7%A7%91%E7%82%B9%E7%81%AB%E6%8C%87%E6%95%B0.md)
-
-> 浏览器只投影 canonical 记录。自动 census、内部测试和登记闭合不构成外部真理、证明或独立复现。
-
-### IMPLICIT-BE935628CFB51EFC · "title": "Execution Guided Line-by-Line Code Generation"
-
-这是 canonical function-assets census 中的一个登记对象，身份为 `INVALID_OR_PSEUDO_FUNCTION`，处置为 `KEEP`，review state 为 `QUEUED`。
-
-M 轴 `M0`；E 轴 `E0`。状态记录：dimensional=`REQUIRES_HUMAN_REVIEW`, external_reality=`REQUIRES_HUMAN_REVIEW`, internal_model=`REQUIRES_HUMAN_REVIEW`, logical=`UNASSESSED`, mathematical=`UNASSESSED`, numerical=`REQUIRES_HUMAN_REVIEW`.
-
-Claim ceiling：Automatic discovery only; no mathematical or external truth is conferred.
-
-来源出现 1 次；当前可回链来源：[data/external-research/121-fulltext-resolver/121q3/function-os/nodes/N5.json](../../../data/external-research/121-fulltext-resolver/121q3/function-os/nodes/N5.json)
-
-> 浏览器只投影 canonical 记录。自动 census、内部测试和登记闭合不构成外部真理、证明或独立复现。
-
-### IMPLICIT-BEACB6A928466B42 · def main() -> int:
-
-这是 canonical function-assets census 中的一个登记对象，身份为 `INVALID_OR_PSEUDO_FUNCTION`，处置为 `KEEP`，review state 为 `QUEUED`。
-
-M 轴 `M0`；E 轴 `E0`。状态记录：dimensional=`REQUIRES_HUMAN_REVIEW`, external_reality=`REQUIRES_HUMAN_REVIEW`, internal_model=`REQUIRES_HUMAN_REVIEW`, logical=`UNASSESSED`, mathematical=`UNASSESSED`, numerical=`REQUIRES_HUMAN_REVIEW`.
-
-Claim ceiling：Automatic discovery only; no mathematical or external truth is conferred.
-
-来源出现 1 次；当前可回链来源：[tools/generate_interactive_system_map.py](../../../tools/generate_interactive_system_map.py)
-
-> 浏览器只投影 canonical 记录。自动 census、内部测试和登记闭合不构成外部真理、证明或独立复现。
-
-### IMPLICIT-BEB3D9797C3B615E · if item.get("semantic_type") == "posterior" and "physical randomness" in ceiling and "not physical randomness" not in ceiling:
-
-这是 canonical function-assets census 中的一个登记对象，身份为 `INVALID_OR_PSEUDO_FUNCTION`，处置为 `KEEP`，review state 为 `QUEUED`。
-
-M 轴 `M0`；E 轴 `E0`。状态记录：dimensional=`REQUIRES_HUMAN_REVIEW`, external_reality=`REQUIRES_HUMAN_REVIEW`, internal_model=`REQUIRES_HUMAN_REVIEW`, logical=`UNASSESSED`, mathematical=`UNASSESSED`, numerical=`REQUIRES_HUMAN_REVIEW`.
-
-Claim ceiling：Automatic discovery only; no mathematical or external truth is conferred.
-
-来源出现 1 次；当前可回链来源：[tools/probabilistic_system_dynamics/validator.py](../../../tools/probabilistic_system_dynamics/validator.py)
-
-> 浏览器只投影 canonical 记录。自动 census、内部测试和登记闭合不构成外部真理、证明或独立复现。
-
-### IMPLICIT-BEB9EDAAD90E335B · ### [#324｜跨学科团队的高效 — 物理学家和生物学家合作，G≈0.3，H≈0.1，ηgate≈0.27，比同质团队高5倍 / 跨学科团队的高效 - 物理学家和生物学家合作, G≈0.3, H≈0.1, ηgate≈0.27, 比同质团队高5倍](docs/zh/cases/items/C-0324.md)
-
-这是 canonical function-assets census 中的一个登记对象，身份为 `INVALID_OR_PSEUDO_FUNCTION`，处置为 `KEEP`，review state 为 `QUEUED`。
-
-M 轴 `M0`；E 轴 `E0`。状态记录：dimensional=`REQUIRES_HUMAN_REVIEW`, external_reality=`REQUIRES_HUMAN_REVIEW`, internal_model=`REQUIRES_HUMAN_REVIEW`, logical=`UNASSESSED`, mathematical=`UNASSESSED`, numerical=`REQUIRES_HUMAN_REVIEW`.
-
-Claim ceiling：Automatic discovery only; no mathematical or external truth is conferred.
-
-来源出现 1 次；当前可回链来源：[统一案例总表/0324-C-324-跨学科团队的高效 — 物理学家和生物学家合作,G≈0.3,H≈0.1,ηgate≈0.27,比同质团队高5倍.md](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0324-C-324-%E8%B7%A8%E5%AD%A6%E7%A7%91%E5%9B%A2%E9%98%9F%E7%9A%84%E9%AB%98%E6%95%88%20%E2%80%94%20%E7%89%A9%E7%90%86%E5%AD%A6%E5%AE%B6%E5%92%8C%E7%94%9F%E7%89%A9%E5%AD%A6%E5%AE%B6%E5%90%88%E4%BD%9C%2CG%E2%89%880.3%2CH%E2%89%880.1%2C%CE%B7gate%E2%89%880.27%2C%E6%AF%94%E5%90%8C%E8%B4%A8%E5%9B%A2%E9%98%9F%E9%AB%985%E5%80%8D.md)
-
-> 浏览器只投影 canonical 记录。自动 census、内部测试和登记闭合不构成外部真理、证明或独立复现。
-
-### IMPLICIT-BECA2DF58901AFA0 · def authority_fingerprint(registry_path: Path, topology_path: Path, profiles_path: Path) -> str:
-
-这是 canonical function-assets census 中的一个登记对象，身份为 `INVALID_OR_PSEUDO_FUNCTION`，处置为 `KEEP`，review state 为 `QUEUED`。
-
-M 轴 `M0`；E 轴 `E0`。状态记录：dimensional=`REQUIRES_HUMAN_REVIEW`, external_reality=`REQUIRES_HUMAN_REVIEW`, internal_model=`REQUIRES_HUMAN_REVIEW`, logical=`UNASSESSED`, mathematical=`UNASSESSED`, numerical=`REQUIRES_HUMAN_REVIEW`.
-
-Claim ceiling：Automatic discovery only; no mathematical or external truth is conferred.
-
-来源出现 1 次；当前可回链来源：[tools/operations/validate_incremental_execution.py](../../../tools/operations/validate_incremental_execution.py)
-
-> 浏览器只投影 canonical 记录。自动 census、内部测试和登记闭合不构成外部真理、证明或独立复现。
-
-### IMPLICIT-BECE48404838D0FE · def test_temporally_version_aware_validation_preserves_sealed_early_iterations_and_current_candidate(self):
-
-这是 canonical function-assets census 中的一个登记对象，身份为 `INVALID_OR_PSEUDO_FUNCTION`，处置为 `KEEP`，review state 为 `QUEUED`。
-
-M 轴 `M0`；E 轴 `E0`。状态记录：dimensional=`REQUIRES_HUMAN_REVIEW`, external_reality=`REQUIRES_HUMAN_REVIEW`, internal_model=`REQUIRES_HUMAN_REVIEW`, logical=`UNASSESSED`, mathematical=`UNASSESSED`, numerical=`REQUIRES_HUMAN_REVIEW`.
-
-Claim ceiling：Automatic discovery only; no mathematical or external truth is conferred.
-
-来源出现 1 次；当前可回链来源：[tests/test_iteration_sync.py](../../../tests/test_iteration_sync.py)
-
-> 浏览器只投影 canonical 记录。自动 census、内部测试和登记闭合不构成外部真理、证明或独立复现。
-
-### IMPLICIT-BED4AB766E9EC408 · def test_renderer_summary_contains_claim_ceiling():
-
-这是 canonical function-assets census 中的一个登记对象，身份为 `INVALID_OR_PSEUDO_FUNCTION`，处置为 `KEEP`，review state 为 `QUEUED`。
-
-M 轴 `M0`；E 轴 `E0`。状态记录：dimensional=`REQUIRES_HUMAN_REVIEW`, external_reality=`REQUIRES_HUMAN_REVIEW`, internal_model=`REQUIRES_HUMAN_REVIEW`, logical=`UNASSESSED`, mathematical=`UNASSESSED`, numerical=`REQUIRES_HUMAN_REVIEW`.
-
-Claim ceiling：Automatic discovery only; no mathematical or external truth is conferred.
-
-来源出现 1 次；当前可回链来源：[tests/test_adaptive_relational_network.py](../../../tests/test_adaptive_relational_network.py)
-
-> 浏览器只投影 canonical 记录。自动 census、内部测试和登记闭合不构成外部真理、证明或独立复现。
-
-### IMPLICIT-BEE17D764CDA66F1 · #107发现瓶颈→变量闭包定律：单域闭包不产生跨域变量。
-
-这是 canonical function-assets census 中的一个登记对象，身份为 `INVALID_OR_PSEUDO_FUNCTION`，处置为 `KEEP`，review state 为 `QUEUED`。
-
-M 轴 `M0`；E 轴 `E0`。状态记录：dimensional=`REQUIRES_HUMAN_REVIEW`, external_reality=`REQUIRES_HUMAN_REVIEW`, internal_model=`REQUIRES_HUMAN_REVIEW`, logical=`UNASSESSED`, mathematical=`UNASSESSED`, numerical=`REQUIRES_HUMAN_REVIEW`.
-
-Claim ceiling：Automatic discovery only; no mathematical or external truth is conferred.
-
-来源出现 1 次；当前可回链来源：[统一函数总表/0146-D107-发现瓶颈,变量闭包定律.md](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0146-D107-%E5%8F%91%E7%8E%B0%E7%93%B6%E9%A2%88%2C%E5%8F%98%E9%87%8F%E9%97%AD%E5%8C%85%E5%AE%9A%E5%BE%8B.md)
-
-> 浏览器只投影 canonical 记录。自动 census、内部测试和登记闭合不构成外部真理、证明或独立复现。
-
-### IMPLICIT-BEE6070E305C6320 · G₆(x) := σ(x-θ) = 1/(1+e^{-(x-θ)})
-
-这是 canonical function-assets census 中的一个登记对象，身份为 `INVALID_OR_PSEUDO_FUNCTION`，处置为 `KEEP`，review state 为 `QUEUED`。
-
-M 轴 `M0`；E 轴 `E0`。状态记录：dimensional=`REQUIRES_HUMAN_REVIEW`, external_reality=`REQUIRES_HUMAN_REVIEW`, internal_model=`REQUIRES_HUMAN_REVIEW`, logical=`UNASSESSED`, mathematical=`UNASSESSED`, numerical=`REQUIRES_HUMAN_REVIEW`.
-
-Claim ceiling：Automatic discovery only; no mathematical or external truth is conferred.
-
-来源出现 1 次；当前可回链来源：[统一函数总表/0001-Ψ₀元函数完整数学定义.md](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0001-%CE%A8%E2%82%80%E5%85%83%E5%87%BD%E6%95%B0%E5%AE%8C%E6%95%B4%E6%95%B0%E5%AD%A6%E5%AE%9A%E4%B9%89.md)
-
-> 浏览器只投影 canonical 记录。自动 census、内部测试和登记闭合不构成外部真理、证明或独立复现。
-
-### IMPLICIT-BEE64FE3E459C5D4 · def main() -> int:
-
-这是 canonical function-assets census 中的一个登记对象，身份为 `INVALID_OR_PSEUDO_FUNCTION`，处置为 `KEEP`，review state 为 `QUEUED`。
-
-M 轴 `M0`；E 轴 `E0`。状态记录：dimensional=`REQUIRES_HUMAN_REVIEW`, external_reality=`REQUIRES_HUMAN_REVIEW`, internal_model=`REQUIRES_HUMAN_REVIEW`, logical=`UNASSESSED`, mathematical=`UNASSESSED`, numerical=`REQUIRES_HUMAN_REVIEW`.
-
-Claim ceiling：Automatic discovery only; no mathematical or external truth is conferred.
-
-来源出现 1 次；当前可回链来源：[tools/propagation/validate_reconciliation.py](../../../tools/propagation/validate_reconciliation.py)
-
-> 浏览器只投影 canonical 记录。自动 census、内部测试和登记闭合不构成外部真理、证明或独立复现。
-
-### IMPLICIT-BEE8034AA9EFE206 · "title": "Parsel: Algorithmic Reasoning with Language Models by Composing Decompositions"
-
-这是 canonical function-assets census 中的一个登记对象，身份为 `INVALID_OR_PSEUDO_FUNCTION`，处置为 `KEEP`，review state 为 `QUEUED`。
-
-M 轴 `M0`；E 轴 `E0`。状态记录：dimensional=`REQUIRES_HUMAN_REVIEW`, external_reality=`REQUIRES_HUMAN_REVIEW`, internal_model=`REQUIRES_HUMAN_REVIEW`, logical=`UNASSESSED`, mathematical=`UNASSESSED`, numerical=`REQUIRES_HUMAN_REVIEW`.
-
-Claim ceiling：Automatic discovery only; no mathematical or external truth is conferred.
-
-来源出现 1 次；当前可回链来源：[data/external-research/121-fulltext-resolver/121q3/function-os/nodes/N7.json](../../../data/external-research/121-fulltext-resolver/121q3/function-os/nodes/N7.json)
-
-> 浏览器只投影 canonical 记录。自动 census、内部测试和登记闭合不构成外部真理、证明或独立复现。
-
-### IMPLICIT-BEEE3DB557775896 · title: "耦合正反馈统一函数"
-
-这是 canonical function-assets census 中的一个登记对象，身份为 `INVALID_OR_PSEUDO_FUNCTION`，处置为 `KEEP`，review state 为 `QUEUED`。
-
-M 轴 `M0`；E 轴 `E0`。状态记录：dimensional=`REQUIRES_HUMAN_REVIEW`, external_reality=`REQUIRES_HUMAN_REVIEW`, internal_model=`REQUIRES_HUMAN_REVIEW`, logical=`UNASSESSED`, mathematical=`UNASSESSED`, numerical=`REQUIRES_HUMAN_REVIEW`.
-
-Claim ceiling：Automatic discovery only; no mathematical or external truth is conferred.
-
-来源出现 1 次；当前可回链来源：[统一函数总表/0212-D175-耦合正反馈统一函数.md](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0212-D175-%E8%80%A6%E5%90%88%E6%AD%A3%E5%8F%8D%E9%A6%88%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0.md)
-
-> 浏览器只投影 canonical 记录。自动 census、内部测试和登记闭合不构成外部真理、证明或独立复现。
-
-### IMPLICIT-BEF2F94278D4E039 · "title": "Program-as-Weights: A Programming Paradigm for Fuzzy Functions",
-
-这是 canonical function-assets census 中的一个登记对象，身份为 `INVALID_OR_PSEUDO_FUNCTION`，处置为 `KEEP`，review state 为 `QUEUED`。
-
-M 轴 `M0`；E 轴 `E0`。状态记录：dimensional=`REQUIRES_HUMAN_REVIEW`, external_reality=`REQUIRES_HUMAN_REVIEW`, internal_model=`REQUIRES_HUMAN_REVIEW`, logical=`UNASSESSED`, mathematical=`UNASSESSED`, numerical=`REQUIRES_HUMAN_REVIEW`.
-
-Claim ceiling：Automatic discovery only; no mathematical or external truth is conferred.
-
-来源出现 1 次；当前可回链来源：[data/external-research/121-fulltext-resolver/121q2/family-synthesis/F10.json](../../../data/external-research/121-fulltext-resolver/121q2/family-synthesis/F10.json)
-
-> 浏览器只投影 canonical 记录。自动 census、内部测试和登记闭合不构成外部真理、证明或独立复现。
-
-### IMPLICIT-BEFEF898A9F985CB · def __init__(self, code: str, message: str) -> None:
-
-这是 canonical function-assets census 中的一个登记对象，身份为 `INVALID_OR_PSEUDO_FUNCTION`，处置为 `KEEP`，review state 为 `QUEUED`。
-
-M 轴 `M0`；E 轴 `E0`。状态记录：dimensional=`REQUIRES_HUMAN_REVIEW`, external_reality=`REQUIRES_HUMAN_REVIEW`, internal_model=`REQUIRES_HUMAN_REVIEW`, logical=`UNASSESSED`, mathematical=`UNASSESSED`, numerical=`REQUIRES_HUMAN_REVIEW`.
-
-Claim ceiling：Automatic discovery only; no mathematical or external truth is conferred.
-
-来源出现 1 次；当前可回链来源：[tools/operations/run_incremental_execution.py](../../../tools/operations/run_incremental_execution.py)
-
-> 浏览器只投影 canonical 记录。自动 census、内部测试和登记闭合不构成外部真理、证明或独立复现。
-
-### IMPLICIT-BF04C980FDDAE8D1 · ## 心智引力中心
-
-这是 canonical function-assets census 中的一个登记对象，身份为 `INVALID_OR_PSEUDO_FUNCTION`，处置为 `KEEP`，review state 为 `QUEUED`。
-
-M 轴 `M0`；E 轴 `E0`。状态记录：dimensional=`REQUIRES_HUMAN_REVIEW`, external_reality=`REQUIRES_HUMAN_REVIEW`, internal_model=`REQUIRES_HUMAN_REVIEW`, logical=`UNASSESSED`, mathematical=`UNASSESSED`, numerical=`REQUIRES_HUMAN_REVIEW`.
-
-Claim ceiling：Automatic discovery only; no mathematical or external truth is conferred.
-
-来源出现 1 次；当前可回链来源：[templates/publication/zhiyuan-writing-spec.md](../../../templates/publication/zhiyuan-writing-spec.md)
-
-> 浏览器只投影 canonical 记录。自动 census、内部测试和登记闭合不构成外部真理、证明或独立复现。
-
-### IMPLICIT-BF09891B527886B4 · def verify_z3():
-
-这是 canonical function-assets census 中的一个登记对象，身份为 `INVALID_OR_PSEUDO_FUNCTION`，处置为 `KEEP`，review state 为 `QUEUED`。
-
-M 轴 `M0`；E 轴 `E0`。状态记录：dimensional=`REQUIRES_HUMAN_REVIEW`, external_reality=`REQUIRES_HUMAN_REVIEW`, internal_model=`REQUIRES_HUMAN_REVIEW`, logical=`UNASSESSED`, mathematical=`UNASSESSED`, numerical=`REQUIRES_HUMAN_REVIEW`.
-
-Claim ceiling：Automatic discovery only; no mathematical or external truth is conferred.
-
-来源出现 1 次；当前可回链来源：[tools/foundation/verify_core_claims.py](../../../tools/foundation/verify_core_claims.py)
 
 > 浏览器只投影 canonical 记录。自动 census、内部测试和登记闭合不构成外部真理、证明或独立复现。

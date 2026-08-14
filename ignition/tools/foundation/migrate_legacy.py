@@ -11,6 +11,8 @@ from collections import Counter
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
+REPO_ROOT = ROOT.parent
+GIT_ROOT = ROOT if (ROOT / ".git").exists() else REPO_ROOT
 OUT = ROOT / "data/foundation"
 ARCH = ROOT / "data/foundation-architecture"
 VIEWS = ROOT / "views"
@@ -43,10 +45,17 @@ def load_classification_overrides():
     return {row["stable_id"]: row for row in load_jsonl(path)}
 
 def git_blob(path: str):
-    try:
-        return subprocess.check_output(["git", "rev-parse", f"{BASE}:{path}"], cwd=ROOT, text=True).strip()
-    except subprocess.CalledProcessError:
-        return None
+    candidates = [path]
+    if path.startswith("ignition/"):
+        candidates.append(path.removeprefix("ignition/"))
+    else:
+        candidates.append(f"ignition/{path}")
+    for candidate in dict.fromkeys(candidates):
+        try:
+            return subprocess.check_output(["git", "rev-parse", f"{BASE}:{candidate}"], cwd=GIT_ROOT, text=True).strip()
+        except subprocess.CalledProcessError:
+            continue
+    return None
 
 def oid_from_name(name: str):
     if "Ψ" in name:

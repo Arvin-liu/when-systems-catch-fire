@@ -11,8 +11,10 @@
   - 依赖：—；被引用：—
 - ["excerpt": "- \[require(text(ROOT / \\"reports/operations/114-language-thought-project-audit.md\\").count(\\"25 条\\") == 1, \\"project audit summary missing exact finding count\\")\](../../../data/operations/iterations/114/publication/tools/validat](../../../data/operations/root-normalization/pre-migration-inbound-reference-audit.json)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-BC2517486CD8DCF1 / "excerpt": "- \[require(text(ROOT / \\"reports/operations/114-language-thought-project-audit.md\\").count(\\"25 条\\") == 1, \\"project audit summary missing exact finding count\\")\](../../../data/operations/iterations/114/publication/tools/validat / IMPLICIT-BC2517486CD8DCF1 / IMPLICIT-2BAC5523FE533CAA
-  - 来源：`data/operations/root-normalization/pre-migration-inbound-reference-audit.json`
+  - 可搜索名称：IMPLICIT-BC2517486CD8DCF1 / "excerpt": "- \[require(text(ROOT / \\"reports/operations/114-language-thought-project-audit.md\\").count(\\"25 条\\") == 1, \\"project audit summary missing exact finding count\\")\](../../cards/part-001.md)：1—125；\\"excerpt\\": \\"- \\\\\[require(text(ROOT / \\\\\\\\\\"reports/operations/114-language-thought-project-audit.md\\\\\\\\\\").count(\\\\\\\\\\"25 条\\\\\\\\\\") == 1, \\\\\\\\\\"project audit summary missing](../../../data/operations/root-normalization/post-migration-inbound-reference-audit.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-67E47B09D97C0CCC / "excerpt": "- \[第 001 片\](part-001.md)：1—125；\\"excerpt\\": \\"- \\\\\[require(text(ROOT / \\\\\\\\\\"reports/operations/114-language-thought-project-audit.md\\\\\\\\\\").count(\\\\\\\\\\"25 条\\\\\\\\\\") == 1, \\\\\\\\\\"project audit summary missing / IMPLICIT-67E47B09D97C0CCC
+  - 来源：`data/operations/root-normalization/post-migration-inbound-reference-audit.json`
   - 依赖：—；被引用：—
 - ["title": "Current: iteration method 1.4.0 (Continuous Stage Snapshot Publication). Read data/operations/stage-snapshots.json and d",](../../../analysis/corpus-relation/article_cluster_candidates.json)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`

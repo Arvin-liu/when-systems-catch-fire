@@ -4,18 +4,6 @@
 
 [返回索引](README.md) · [上一页](page-043.md) · [下一页](page-045.md)
 
-### NFC-92372ec37d21c433 · for row in all_rows["evidence_regimes"]:
-
-这是 canonical nonfunction-claims registry 中的原子登记。claim class 为 `EMPIRICAL_OR_LITERATURE_CLAIM`，断言类型为 `EMPIRICAL`，最终处置为 `PENDING_LITERATURE_ADJUDICATION`。
-
-M 轴 `M0`；E 轴 `E0`；复现状态 `NO_REPLICATION_CLAIMED`。
-
-范围：Exact source-defined repository scope；量词状态：`UNRESOLVED_OR_OVERBROAD`。Claim ceiling：Source or literature-dependent assertion only; support, novelty and exact scope remain unadjudicated.
-
-来源锚点：[tools/validate_data.py](../../../tools/validate_data.py)
-
-> 浏览器只投影 canonical 记录。显式处置或 quarantine 只闭合登记与谱系，不等于数学证明、外部证据、普遍有效或现实真值。
-
 ### NFC-923ac585023a18be · J⁺(x)=0, J⁻(x)=0 → underdetermined / pending（证据不足，状态待定）
 
 这是 canonical nonfunction-claims registry 中的原子登记。claim class 为 `EMPIRICAL_OR_LITERATURE_CLAIM`，断言类型为 `EMPIRICAL`，最终处置为 `ACCEPTED_AS_DEFINITION`。
@@ -1813,6 +1801,18 @@ M 轴 `M0`；E 轴 `E0`；复现状态 `NOT_APPLICABLE`。
 范围：Exact source-defined repository scope；量词状态：`BOUNDED_OR_NO_UNIVERSAL_QUANTIFIER_DETECTED`。Claim ceiling：Analogy or structural metaphor only; no homomorphism, isomorphism or causal identity is established.
 
 来源锚点：[data/foundation/evidence/evidence.jsonl](../../../data/foundation/evidence/evidence.jsonl) · [views/legacy-cases.jsonl](../../../views/legacy-cases.jsonl)
+
+> 浏览器只投影 canonical 记录。显式处置或 quarantine 只闭合登记与谱系，不等于数学证明、外部证据、普遍有效或现实真值。
+
+### NFC-94a9a5bc7e1bbfbb · for table in ("统一函数总表", "统一案例总表"):
+
+这是 canonical nonfunction-claims registry 中的原子登记。claim class 为 `UNRESOLVED_CLAIM`，断言类型为 `UNRESOLVED`，最终处置为 `QUARANTINED_AMBIGUOUS`。
+
+M 轴 `M0`；E 轴 `E0`；复现状态 `NO_REPLICATION_CLAIMED`。
+
+范围：Exact source-defined repository scope；量词状态：`BOUNDED_OR_NO_UNIVERSAL_QUANTIFIER_DETECTED`。Claim ceiling：Unresolved historical or current claim candidate; it cannot appear as current knowledge.
+
+来源锚点：[tools/foundation/validate_foundation.py](../../../tools/foundation/validate_foundation.py)
 
 > 浏览器只投影 canonical 记录。显式处置或 quarantine 只闭合登记与谱系，不等于数学证明、外部证据、普遍有效或现实真值。
 

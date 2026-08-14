@@ -4,10 +4,10 @@
 
 索引按固定 500 条分片，避免单页过大而无法在 GitHub 渲染。分片连续覆盖本主题主归属资产，未按重要性删减。
 
-- [第 001 片](./operations_evidence/part-001.md)：1—500；"""Compatibility entry point for deterministic stage snapshot projection.""" → ### \[#601｜多模型并行/仲裁三域熵统一验证\](docs/zh/cases/items/C-0601.md)
-- [第 002 片](./operations_evidence/part-002.md)：501—1000；### \[#604｜仲裁模型能力上限预测验证\](docs/zh/cases/items/C-0604.md) → - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0426})=1\].
-- [第 003 片](./operations_evidence/part-003.md)：1001—1500；- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0427})=1\]. → data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-01.json
-- [第 004 片](./operations_evidence/part-004.md)：1501—2000；data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-01.json → data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json
-- [第 005 片](./operations_evidence/part-005.md)：2001—2500；data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json → require(len(components) == len(components_doc\["components"\]), "duplicate component id")
-- [第 006 片](./operations_evidence/part-006.md)：2501—3000；require(len(declared) == len(set(declared)), f"{prefix}: duplicate framing delta dimension", errors) → 事件、内容合并、终端化投影、annotated tag 和全新克隆 resolver 分层确认；不以旧候选
-- [第 007 片](./operations_evidence/part-007.md)：3001—3200；仅凭表面相似就判定同构； → （对应条目 / 注释内容 / 类型 / 来源 / 是否入表）
+- [第 001 片](./operations_evidence/part-001.md)：1—500；"""Compatibility entry point for deterministic stage snapshot projection.""" → ### \[#479｜AI完成相变2-4卡在相变1 — 有连续表征、好奇心、自举能力，但不感知退出权 / AI完成相变2-4卡在相变1 - 有连续表征, 好奇心, 自举能力, 但不perceived exit right\](docs/zh/cases/items/C-0479.md)
+- [第 002 片](./operations_evidence/part-002.md)：501—1000；### \[#489｜遮蔽=退相干环境 — 组织信息透明度实验：H=0.1时τ_decoherence=50年，H=0.5时τ=10年，H=0.9时τ=1年。遮蔽每增0.1，退相干时间缩短约40% / obscuration=退相干环境 - 组织信息透明度实验: H=0.1时τ_decoherence=50年, H=0.5时τ=10年, H=0.9时τ=1年. obscuration每增0.1, 退相干时间缩短约40%\](docs/zh/cases/items/C-0489.m → - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0400})=1\].
+- [第 003 片](./operations_evidence/part-003.md)：1001—1500；- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0401})=1\]. → data/operations/iterations/110/openalex/first-run-20260801/raw/GAP002-05.json
+- [第 004 片](./operations_evidence/part-004.md)：1501—2000；data/operations/iterations/110/openalex/first-run-20260801/raw/GAP002-05.json → data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json
+- [第 005 片](./operations_evidence/part-005.md)：2001—2500；data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json → require(all(_persisted_delta.get(k) == delta.get(k) for k in _delta_fields),
+- [第 006 片](./operations_evidence/part-006.md)：2501—3000；require(args.output.read_bytes() == rendered, "generated SVG is stale; run the generator") → 中文：案例说明：短内容降低获得奖励的时间成本，提高预测误差频率，使策略更偏向即时奖励。
+- [第 007 片](./operations_evidence/part-007.md)：3001—3226；中文：案例说明：维护成本M(t)=M₀·e^αt vs 信息产出I(t) → （对应条目 / 注释内容 / 类型 / 来源 / 是否入表）

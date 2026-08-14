@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [验证结论：** J⁺=1, J⁻=0 → 智能契约在博弈论中成立](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-2d29cd2991c1f877 / 验证结论：** J⁺=1, J⁻=0 → 智能契约在博弈论中成立
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [验证结论：** J⁺=1, J⁻=0 → 智能契约在开源开发中成立](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-7afa95bab26cdb95 / 验证结论：** J⁺=1, J⁻=0 → 智能契约在开源开发中成立
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [验证结论：** J⁺=1, J⁻=0 → 智能契约在心智中成立](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-97d290463bbb1710 / 验证结论：** J⁺=1, J⁻=0 → 智能契约在心智中成立
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
 - [验证结论：** J⁺=1, J⁻=0 → 智能契约在植物智能中成立](../../../docs/phi_meta_law.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-7209263aa53136d7 / 验证结论：** J⁺=1, J⁻=0 → 智能契约在植物智能中成立

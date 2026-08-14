@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [def load_evidence_map(path: Path) -> dict\[str, dict\[str, Any\]\]:](../../../tools/build_unesco_coverage.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-da44947a611c1814 / def load_evidence_map(path: Path) -> dict\[str, dict\[str, Any\]\]:
+  - 来源：`tools/build_unesco_coverage.py`
+  - 依赖：—；被引用：—
+- [def load_evolution(root, by_lower):](../../../tools/build_corpus_relation_graph.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-CCBE9E93DF641B54 / def load_evolution(root, by_lower): / IMPLICIT-CCBE9E93DF641B54
+  - 来源：`tools/build_corpus_relation_graph.py`
+  - 依赖：—；被引用：—
 - [def load_fabric(path: Path) -> dict:](../../../tools/causal_fabric/validator.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-263F955335C9289D / def load_fabric(path: Path) -> dict: / IMPLICIT-263F955335C9289D
@@ -1774,6 +1784,11 @@
   - 可搜索名称：IMPLICIT-8910C6596F200A77 / def repo_path(path: str) -> Path: / IMPLICIT-8910C6596F200A77 / IMPLICIT-70B05EC11CA2FC67
   - 来源：`tools/foundation/adjudicate_nonfunction_claims.py`
   - 依赖：—；被引用：—
+- [def repo_path(rel):](../../../tools/foundation/validate_foundation.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-FF914FAC84A98669 / def repo_path(rel): / IMPLICIT-FF914FAC84A98669
+  - 来源：`tools/foundation/validate_foundation.py`
+  - 依赖：—；被引用：—
 - [def repo_path(relative: str) -> Path:](../../../tools/foundation/build_function_asset_census.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-B73E46A997B0057A / def repo_path(relative: str) -> Path: / IMPLICIT-B73E46A997B0057A
@@ -2488,19 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-9E5F2DF19B3F35C9 / def sha256_bytes(data: bytes) -> str: / IMPLICIT-9E5F2DF19B3F35C9
   - 来源：`data/operations/iterations/112/publication/tools/r0_intake.py`
-  - 依赖：—；被引用：—
-- [def sha256_bytes(value: bytes) -> str:](../../../data/operations/iterations/110/openalex/run_first_census.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-5EFFA036988D8E9C / def sha256_bytes(value: bytes) -> str: / IMPLICIT-5EFFA036988D8E9C / IMPLICIT-727D41A57381B6FF
-  - 来源：`data/operations/iterations/110/openalex/run_first_census.py`
-  - 依赖：—；被引用：—
-- [def sha256_bytes(value: bytes) -> str:](../../../tools/operations/validate_phase_d_closeout.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-727D41A57381B6FF / def sha256_bytes(value: bytes) -> str: / IMPLICIT-727D41A57381B6FF / IMPLICIT-5EFFA036988D8E9C
-  - 来源：`tools/operations/validate_phase_d_closeout.py`
-  - 依赖：—；被引用：—
-- [def sha256_file(path: Path) -> str:](../../../tools/operations/validate_phase_d_closeout.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-1ADA2D50B284B38B / def sha256_file(path: Path) -> str: / IMPLICIT-1ADA2D50B284B38B / IMPLICIT-BC4CA257C0412B4C
-  - 来源：`tools/operations/validate_phase_d_closeout.py`
   - 依赖：—；被引用：—

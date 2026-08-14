@@ -4,18 +4,6 @@
 
 [返回索引](README.md) · [上一页](page-033.md) · [下一页](page-035.md)
 
-### NFC-6cd5f9fc00871df8 · Evidence entrance and claim ceiling:
-
-这是 canonical nonfunction-claims registry 中的原子登记。claim class 为 `EMPIRICAL_OR_LITERATURE_CLAIM`，断言类型为 `EMPIRICAL`，最终处置为 `PENDING_LITERATURE_ADJUDICATION`。
-
-M 轴 `M0`；E 轴 `E0`；复现状态 `NO_REPLICATION_CLAIMED`。
-
-范围：Exact source-defined repository scope；量词状态：`BOUNDED_OR_NO_UNIVERSAL_QUANTIFIER_DETECTED`。Claim ceiling：Source or literature-dependent assertion only; support, novelty and exact scope remain unadjudicated.
-
-来源锚点：[templates/operations/task-command-template.md](../../../templates/operations/task-command-template.md)
-
-> 浏览器只投影 canonical 记录。显式处置或 quarantine 只闭合登记与谱系，不等于数学证明、外部证据、普遍有效或现实真值。
-
 ### NFC-6cddcf1f33d62a7e · Object D244 defines a mechanism_model within the point-fire framework. Core: 中文：从D242-D243推导自主意识涌现的临界条件： Ψ = ι × P_exit
 
 这是 canonical nonfunction-claims registry 中的原子登记。claim class 为 `MECHANISM_OR_CAUSAL_CLAIM`，断言类型为 `EMPIRICAL`，最终处置为 `PENDING_EMPIRICAL_TEST`。
@@ -3001,5 +2989,17 @@ M 轴 `M0`；E 轴 `E1`；复现状态 `NO_REPLICATION_CLAIMED`。
 范围：Historical source wording only；量词状态：`BOUNDED_OR_NO_UNIVERSAL_QUANTIFIER_DETECTED`。Claim ceiling：Historical source wording only; it is not a current repository endorsement.
 
 来源锚点：[统一案例总表/0650-C-655-唐宋钱荒(公元1111年货币锁定).md](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0650-C-655-%E5%94%90%E5%AE%8B%E9%92%B1%E8%8D%92(%E5%85%AC%E5%85%831111%E5%B9%B4%E8%B4%A7%E5%B8%81%E9%94%81%E5%AE%9A).md)
+
+> 浏览器只投影 canonical 记录。显式处置或 quarantine 只闭合登记与谱系，不等于数学证明、外部证据、普遍有效或现实真值。
+
+### NFC-70d20f1df816ab6f · 验证过程：** 复杂系统的每个节点根据局部状态信息自主决定行为，无需中央控制。节点感知局部状态信息，自主决定行为，无需将信息传递给中央节点。
+
+这是 canonical nonfunction-claims registry 中的原子登记。claim class 为 `MECHANISM_OR_CAUSAL_CLAIM`，断言类型为 `EMPIRICAL`，最终处置为 `PENDING_EMPIRICAL_TEST`。
+
+M 轴 `M0`；E 轴 `E0`；复现状态 `NO_REPLICATION_CLAIMED`。
+
+范围：Exact source-defined repository scope；量词状态：`BOUNDED_OR_NO_UNIVERSAL_QUANTIFIER_DETECTED`。Claim ceiling：Testable candidate only; no causal, predictive or established-fact wording until evidence and replication obligations are met.
+
+来源锚点：[docs/phi_meta_law.md](../../../docs/phi_meta_law.md) · [统一函数总表/0001-Ψ₀元函数完整数学定义.md](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0001-%CE%A8%E2%82%80%E5%85%83%E5%87%BD%E6%95%B0%E5%AE%8C%E6%95%B4%E6%95%B0%E5%AD%A6%E5%AE%9A%E4%B9%89.md)
 
 > 浏览器只投影 canonical 记录。显式处置或 quarantine 只闭合登记与谱系，不等于数学证明、外部证据、普遍有效或现实真值。

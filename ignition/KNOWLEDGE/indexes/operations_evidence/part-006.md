@@ -4,6 +4,136 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [require(args.output.read_bytes() == rendered, "generated SVG is stale; run the generator")](../../../tools/generate_interactive_system_map.py)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-EA49511B06D61B79 / require(args.output.read_bytes() == rendered, "generated SVG is stale; run the generator") / IMPLICIT-EA49511B06D61B79
+  - 来源：`tools/generate_interactive_system_map.py`
+  - 依赖：—；被引用：—
+- [require(authority.get("propagation_topology") == "data/operations/change-propagation-topology.json", "map projection has wrong topology authority")](../../../tools/generate_interactive_system_map.py)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-ADF0CA9B1219FD1D / require(authority.get("propagation_topology") == "data/operations/change-propagation-topology.json", "map projection has wrong topology authority") / IMPLICIT-ADF0CA9B1219FD1D
+  - 来源：`tools/generate_interactive_system_map.py`
+  - 依赖：—；被引用：—
+- [require(branch_pr.get("merge_commit") == "0a13c246172c0338bf8dda5dc08db5a574a8b23f", "E_PHASE_E_MERGE", "Current lifecycle has wrong merge commit")](../../../tools/operations/validate_phase_e_candidate.py)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-BBDFC8EB6E78D1B5 / require(branch_pr.get("merge_commit") == "0a13c246172c0338bf8dda5dc08db5a574a8b23f", "E_PHASE_E_MERGE", "Current lifecycle has wrong merge commit") / IMPLICIT-BBDFC8EB6E78D1B5
+  - 来源：`tools/operations/validate_phase_e_candidate.py`
+  - 依赖：—；被引用：—
+- [require(candidate.get("status") == "CANDIDATE_PROJECTION_NOT_NEUTRAL_MEANING", f"{prefix}: normalized meaning must decla](../../../tools/language_thought/validate_language_thought.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-018b6886aea0b267 / require(candidate.get("status") == "CANDIDATE_PROJECTION_NOT_NEUTRAL_MEANING", f"{prefix}: normalized meaning must decla
+  - 来源：`tools/language_thought/validate_language_thought.py`
+  - 依赖：—；被引用：—
+- [require(candidate.get("status") == "CANDIDATE_PROJECTION_NOT_NEUTRAL_MEANING", f"{prefix}: normalized meaning must declare candidate status", errors)](../../../tools/language_thought/validate_language_thought.py)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-E9F65F770FA8FFE3 / require(candidate.get("status") == "CANDIDATE_PROJECTION_NOT_NEUTRAL_MEANING", f"{prefix}: normalized meaning must declare candidate status", errors) / IMPLICIT-E9F65F770FA8FFE3
+  - 来源：`tools/language_thought/validate_language_thought.py`
+  - 依赖：—；被引用：—
+- [require(contract.get("full_required_fields_authority") == "validator",](../../../tools/validate_iteration_sync.py)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-2A36709689811ECC / require(contract.get("full_required_fields_authority") == "validator", / IMPLICIT-2A36709689811ECC
+  - 来源：`tools/validate_iteration_sync.py`
+  - 依赖：—；被引用：—
+- [require(contract.get("schema_version") == "1.0.0",](../../../tools/validate_iteration_sync.py)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-C853B70A52BF7FB7 / require(contract.get("schema_version") == "1.0.0", / IMPLICIT-C853B70A52BF7FB7
+  - 来源：`tools/validate_iteration_sync.py`
+  - 依赖：—；被引用：—
+- [require(contract.get("validator_path") == "tools/validate_external_attestation.py",](../../../tools/validate_iteration_sync.py)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-F77D74F61425076A / require(contract.get("validator_path") == "tools/validate_external_attestation.py", / IMPLICIT-F77D74F61425076A
+  - 来源：`tools/validate_iteration_sync.py`
+  - 依赖：—；被引用：—
+- [require(delta.get("source_value") == source_frame\[dimension_id\], f"{delta_prefix}: source_value does not match source_frame", errors)](../../../tools/language_thought/validate_language_thought.py)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-52887C2C355B3689 / require(delta.get("source_value") == source_frame\[dimension_id\], f"{delta_prefix}: source_value does not match source_frame", errors) / IMPLICIT-52887C2C355B3689
+  - 来源：`tools/language_thought/validate_language_thought.py`
+  - 依赖：—；被引用：—
+- [require(delta.get("target_value") == target_frame\[dimension_id\], f"{delta_prefix}: target_value does not match target_frame", errors)](../../../tools/language_thought/validate_language_thought.py)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-552CA443406E6159 / require(delta.get("target_value") == target_frame\[dimension_id\], f"{delta_prefix}: target_value does not match target_frame", errors) / IMPLICIT-552CA443406E6159
+  - 来源：`tools/language_thought/validate_language_thought.py`
+  - 依赖：—；被引用：—
+- [require(demo.get("authority_fingerprint") == _expected_authority, "E_PHASE_E_AUTHORITY", "authority fingerprint mismatch")](../../../tools/operations/validate_phase_e_candidate.py)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-63009F9897AE5CD3 / require(demo.get("authority_fingerprint") == _expected_authority, "E_PHASE_E_AUTHORITY", "authority fingerprint mismatch") / IMPLICIT-63009F9897AE5CD3
+  - 来源：`tools/operations/validate_phase_e_candidate.py`
+  - 依赖：—；被引用：—
+- [require(demo.get("planner_output") == actual_plan, "E_PHASE_E_STALE_PLAN", "demonstration is not the real deterministic planner output")](../../../tools/operations/validate_phase_e_candidate.py)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-D4AD74399EB1A80E / require(demo.get("planner_output") == actual_plan, "E_PHASE_E_STALE_PLAN", "demonstration is not the real deterministic planner output") / IMPLICIT-D4AD74399EB1A80E
+  - 来源：`tools/operations/validate_phase_e_candidate.py`
+  - 依赖：—；被引用：—
+- [require(demo.get("validator_result") == {"status": "PASS", "error_code": None}, "E_PHASE_E_VALIDATOR", "demonstration validator result is not PASS")](../../../tools/operations/validate_phase_e_candidate.py)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-5B7A89E3416212DB / require(demo.get("validator_result") == {"status": "PASS", "error_code": None}, "E_PHASE_E_VALIDATOR", "demonstration validator result is not PASS") / IMPLICIT-5B7A89E3416212DB
+  - 来源：`tools/operations/validate_phase_e_candidate.py`
+  - 依赖：—；被引用：—
+- [require(document.get("schema_version") == "1.0.0", "dimensions: wrong schema_version", errors)](../../../tools/language_thought/validate_language_thought.py)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-8610B67EA52173F8 / require(document.get("schema_version") == "1.0.0", "dimensions: wrong schema_version", errors) / IMPLICIT-8610B67EA52173F8
+  - 来源：`tools/language_thought/validate_language_thought.py`
+  - 依赖：—；被引用：—
+- [require(isinstance(actor_ref, dict) and set(actor_ref) == {"actor_ref"}, f"{context}: final responsibility must use only actor_ref")](../../../tools/operations/stage_snapshot_contract.py)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-66144F8F4E2F0B7A / require(isinstance(actor_ref, dict) and set(actor_ref) == {"actor_ref"}, f"{context}: final responsibility must use only actor_ref") / IMPLICIT-66144F8F4E2F0B7A
+  - 来源：`tools/operations/stage_snapshot_contract.py`
+  - 依赖：—；被引用：—
+- [require(isinstance(dimensions, list) and len(dimensions) == 12, "dimensions: exactly twelve dimensions required", errors)](../../../tools/language_thought/validate_language_thought.py)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-47A4F6BF1CF03817 / require(isinstance(dimensions, list) and len(dimensions) == 12, "dimensions: exactly twelve dimensions required", errors) / IMPLICIT-47A4F6BF1CF03817
+  - 来源：`tools/language_thought/validate_language_thought.py`
+  - 依赖：—；被引用：—
+- [require(isinstance(items, list) and len(items) == 12, f"{prefix}: exact twelve-dimensional coverage required", errors)](../../../tools/language_thought/validate_language_thought.py)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-8114133C117DFB7F / require(isinstance(items, list) and len(items) == 12, f"{prefix}: exact twelve-dimensional coverage required", errors) / IMPLICIT-8114133C117DFB7F
+  - 来源：`tools/language_thought/validate_language_thought.py`
+  - 依赖：—；被引用：—
+- [require(isinstance(profiles, list) and len(profiles) == 4, "manifest: exactly four pilot profiles are required", errors)](../../../tools/language_thought/validate_language_thought.py)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-C9589FABB9DC192A / require(isinstance(profiles, list) and len(profiles) == 4, "manifest: exactly four pilot profiles are required", errors) / IMPLICIT-C9589FABB9DC192A
+  - 来源：`tools/language_thought/validate_language_thought.py`
+  - 依赖：—；被引用：—
+- [require(item.get("accepted_text_sha256") == HISTORICAL_HASHES\[path\], f"historical acceptance overwritten: {path}")](../../../data/operations/iterations/114/publication/tools/validate_publication.py)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-C8C60FC7F4882A50 / require(item.get("accepted_text_sha256") == HISTORICAL_HASHES\[path\], f"historical acceptance overwritten: {path}") / IMPLICIT-C8C60FC7F4882A50
+  - 来源：`data/operations/iterations/114/publication/tools/validate_publication.py`
+  - 依赖：—；被引用：—
+- [require(item.get("conclusion", "").lower() == "success", f"{source}: remote validation {item\['name'\]} conclusion not success")](../../../tools/validate_iteration_sync.py)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-79E9319E6D40A31B / require(item.get("conclusion", "").lower() == "success", f"{source}: remote validation {item\['name'\]} conclusion not success") / IMPLICIT-79E9319E6D40A31B
+  - 来源：`tools/validate_iteration_sync.py`
+  - 依赖：—；被引用：—
+- [require(item.get("current_method_version") == "0.5.0", f"current method version missing: {path}")](../../../data/operations/iterations/114/publication/tools/validate_publication.py)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-9243413E59DF982D / require(item.get("current_method_version") == "0.5.0", f"current method version missing: {path}") / IMPLICIT-9243413E59DF982D
+  - 来源：`data/operations/iterations/114/publication/tools/validate_publication.py`
+  - 依赖：—；被引用：—
+- [require(item.get("current_revision_sha256") == FINAL_HASHES\[path\], f"current revision not bound: {path}")](../../../data/operations/iterations/114/publication/tools/validate_publication.py)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-9731E65665C76DFE / require(item.get("current_revision_sha256") == FINAL_HASHES\[path\], f"current revision not bound: {path}") / IMPLICIT-9731E65665C76DFE
+  - 来源：`data/operations/iterations/114/publication/tools/validate_publication.py`
+  - 依赖：—；被引用：—
+- [require(language_profile is not None and language_profile.get("execution_capability") == "manual", "language-thought component execution profile is missing or inflated")](../../../data/operations/iterations/114/publication/tools/validate_publication.py)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-998858336877DEFA / require(language_profile is not None and language_profile.get("execution_capability") == "manual", "language-thought component execution profile is missing or inflated") / IMPLICIT-998858336877DEFA
+  - 来源：`data/operations/iterations/114/publication/tools/validate_publication.py`
+  - 依赖：—；被引用：—
+- [require(len(actor_ids) == len(set(actor_ids)), "duplicate responsibility actor ID")](../../../tools/operations/stage_snapshot_contract.py)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-7B3BB2DF8239EECC / require(len(actor_ids) == len(set(actor_ids)), "duplicate responsibility actor ID") / IMPLICIT-7B3BB2DF8239EECC
+  - 来源：`tools/operations/stage_snapshot_contract.py`
+  - 依赖：—；被引用：—
+- [require(len(candidates) == 1, "Task 114 must have exactly one content candidate event")](../../../data/operations/iterations/114/publication/tools/validate_publication.py)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-EC4D8A58E2C046EE / require(len(candidates) == 1, "Task 114 must have exactly one content candidate event") / IMPLICIT-EC4D8A58E2C046EE
+  - 来源：`data/operations/iterations/114/publication/tools/validate_publication.py`
+  - 依赖：—；被引用：—
+- [require(len(components) == len(components_doc\["components"\]), "duplicate component id")](../../../tools/operations/compute_change_propagation.py)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-8E873D282147BBBE / require(len(components) == len(components_doc\["components"\]), "duplicate component id") / IMPLICIT-8E873D282147BBBE
+  - 来源：`tools/operations/compute_change_propagation.py`
+  - 依赖：—；被引用：—
 - [require(len(declared) == len(set(declared)), f"{prefix}: duplicate framing delta dimension", errors)](../../../tools/language_thought/validate_language_thought.py)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-46D25CC4F3927EB3 / require(len(declared) == len(set(declared)), f"{prefix}: duplicate framing delta dimension", errors) / IMPLICIT-46D25CC4F3927EB3
@@ -2373,134 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-8fa460d1e9a474dc / 中文：案例说明：短内容降低获得奖励的时间成本，提高预测误差频率，使策略更偏向即时奖励。
   - 来源：`统一案例总表/0588-C-593-短视频奖励压缩验证.md`
-  - 依赖：—；被引用：—
-- [中文：案例说明：维护成本M(t)=M₀·e^αt vs 信息产出I(t)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0113-C-113-%E4%BA%BA%E4%BD%93%E5%BF%92%E4%BF%AE%E6%96%AF.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-BE6D82E6E5ED2FB7 / 中文：案例说明：维护成本M(t)=M₀·e^αt vs 信息产出I(t) / IMPLICIT-BE6D82E6E5ED2FB7
-  - 来源：`统一案例总表/0113-C-113-人体忒修斯.md`
-  - 依赖：—；被引用：—
-- [中文：案例说明：预测编码回路——AI多轨的最可能路径](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0216-C-216-%E9%A2%84%E6%B5%8B%E7%BC%96%E7%A0%81%E5%9B%9E%E8%B7%AF.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-3fecd2fafa8eef4c / 中文：案例说明：预测编码回路——AI多轨的最可能路径
-  - 来源：`统一案例总表/0216-C-216-预测编码回路.md`
-  - 依赖：—；被引用：—
-- [中文：沃尔顿的"智慧干预"= 在关键节点做最小注入，逆转D-X52→D-X53→D-X31的闭环。这是D-X38种子激活在心理干预维度的场景展开。 P_intervene(t) = σ(Q_unresolved(t) × (1-D_immune(t))) × W(t) × η_delivery - Q_unresolved × (1-D_immune)：疑问未解但退化免疫未锁死——种子可激活条件 - W(t)：窗口宽度（D-X54）——时机条件 - η_delivery ∈](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0109-D60-%E6%99%BA%E6%85%A7%E5%B9%B2%E9%A2%84%E6%95%88%E5%8A%9B%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-DF5F4AA4482FBEEF / 中文：沃尔顿的"智慧干预"= 在关键节点做最小注入，逆转D-X52→D-X53→D-X31的闭环。这是D-X38种子激活在心理干预维度的场景展开。 P_intervene(t) = σ(Q_unresolved(t) × (1-D_immune(t))) × W(t) × η_delivery - Q_unresolved × (1-D_immune)：疑问未解但退化免疫未锁死——种子可激活条件 - W(t)：窗口宽度（D-X54）——时机条件 - η_delivery ∈ / IMPLICIT-DF5F4AA4482FBEEF
-  - 来源：`统一函数总表/0109-D60-智慧干预效力函数.md`
-  - 依赖：—；被引用：—
-- [中文：热力学第二定律的终态：热寂 = 所有能量均匀分布 = 没有结构 = 没有力 在高斯门控框架下： 热寂 ⟹ μ_available → 0 ⟹ 对所有Λᵢ：μ < Λᵢ ⟹ gᵢ = exp\[-(ln(μ/Λᵢ))²/(2σᵢ²)\] → 0（μ→0时ln(μ/Λᵢ)→-∞，exp→0） ⟹ Φ = Σgᵢ → 0 ⟹ Ω = e^{-Φ} → 1](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0257-D221-%E7%83%AD%E5%AF%82-%E5%AE%8C%E5%85%A8%E7%BB%9F%E4%B8%80%E5%90%8C%E6%9E%84%E5%AE%9A%E7%90%86.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-3E813E681FA10CA1 / 中文：热力学第二定律的终态：热寂 = 所有能量均匀分布 = 没有结构 = 没有力 在高斯门控框架下： 热寂 ⟹ μ_available → 0 ⟹ 对所有Λᵢ：μ < Λᵢ ⟹ gᵢ = exp\[-(ln(μ/Λᵢ))²/(2σᵢ²)\] → 0（μ→0时ln(μ/Λᵢ)→-∞，exp→0） ⟹ Φ = Σgᵢ → 0 ⟹ Ω = e^{-Φ} → 1 / IMPLICIT-3E813E681FA10CA1
-  - 来源：`统一函数总表/0257-D221-热寂-完全统一同构定理.md`
-  - 依赖：—；被引用：—
-- [中文：理财的几何本质——收益投影拉宽×风险投影压窄](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0184-C-184-%E7%90%86%E8%B4%A2%E7%9A%84%E5%87%A0%E4%BD%95%E6%9C%AC%E8%B4%A8.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-6eb0a7745fbaa6d2 / 中文：理财的几何本质——收益投影拉宽×风险投影压窄
-  - 来源：`统一案例总表/0184-C-184-理财的几何本质.md`
-  - 依赖：—；被引用：—
-- [中文：理财的几何本质——收益投影拉宽×风险投影压窄 English: Rule-based English rendering pending human r…](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0184-C-184-%E7%90%86%E8%B4%A2%E7%9A%84%E5%87%A0%E4%BD%95%E6%9C%AC%E8%B4%A8.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-29c4fee5ef8dc942 / 中文：理财的几何本质——收益投影拉宽×风险投影压窄 English: Rule-based English rendering pending human r…
-  - 来源：`统一案例总表/0184-C-184-理财的几何本质.md`
-  - 依赖：—；被引用：—
-- [中文：电弱统一是电磁力和弱核力在高能μ>μ_EW时的门控面合并。μ μ_EW时合并为Λ_EW,Φ = 1/ln(μ/Λ_EW)。统一度Ω_after > Ω_before。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0223-D187-%E7%94%B5%E5%BC%B1%E7%BB%9F%E4%B8%80%E8%A7%84%E8%8C%83%E7%A0%B4%E7%BC%BA%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-2D2F752E1B7D42E5 / 中文：电弱统一是电磁力和弱核力在高能μ>μ_EW时的门控面合并。μ μ_EW时合并为Λ_EW,Φ = 1/ln(μ/Λ_EW)。统一度Ω_after > Ω_before。 / IMPLICIT-2D2F752E1B7D42E5
-  - 来源：`统一函数总表/0223-D187-电弱统一规范破缺函数.md`
-  - 依赖：—；被引用：—
-- [中文：相变序参量φ=门控面Λ的序参量。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0235-D199-%E7%9B%B8%E5%8F%98%E5%BA%8F%E5%8F%82%E9%87%8F-%E9%97%A8%E6%A7%9B%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-FCE597834442D685 / 中文：相变序参量φ=门控面Λ的序参量。 / IMPLICIT-FCE597834442D685
-  - 来源：`统一函数总表/0235-D199-相变序参量-门槛函数.md`
-  - 依赖：—；被引用：—
-- [中文：该案例围绕 +D123深层同构 展开。](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0276-C-276-D127%2BD123%E6%B7%B1%E5%B1%82%E5%90%8C%E6%9E%84.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-28604ee436a4b404 / 中文：该案例围绕 +D123深层同构 展开。
-  - 来源：`统一案例总表/0276-C-276-D127+D123深层同构.md`
-  - 依赖：D123；被引用：—
-- [中文：该案例围绕 +D123深层同构 展开。 English: Rule-based English rendering pending human revi…](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0276-C-276-D127%2BD123%E6%B7%B1%E5%B1%82%E5%90%8C%E6%9E%84.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-28164d765bbf2a32 / 中文：该案例围绕 +D123深层同构 展开。 English: Rule-based English rendering pending human revi…
-  - 来源：`统一案例总表/0276-C-276-D127+D123深层同构.md`
-  - 依赖：D123；被引用：—
-- [中文：该案例围绕 =0不导致Ψ=0 展开。](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0260-C-260-r_cross%3D0%E4%B8%8D%E5%AF%BC%E8%87%B4%CE%A8%3D0.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-3ECE357BD54366BB / 中文：该案例围绕 =0不导致Ψ=0 展开。 / IMPLICIT-3ECE357BD54366BB
-  - 来源：`统一案例总表/0260-C-260-r_cross=0不导致Ψ=0.md`
-  - 依赖：—；被引用：—
-- [中文：该案例围绕 =0不导致Ψ=0 展开。 English: Rule-based English rendering pending human revie…](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0260-C-260-r_cross%3D0%E4%B8%8D%E5%AF%BC%E8%87%B4%CE%A8%3D0.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-5F6B03A37EB47946 / 中文：该案例围绕 =0不导致Ψ=0 展开。 English: Rule-based English rendering pending human revie… / IMPLICIT-5F6B03A37EB47946
-  - 来源：`统一案例总表/0260-C-260-r_cross=0不导致Ψ=0.md`
-  - 依赖：—；被引用：—
-- [中文：该案例围绕 与D126时间尺度同构 展开。](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0278-C-278-D124%E4%B8%8ED126%E6%97%B6%E9%97%B4%E5%B0%BA%E5%BA%A6%E5%90%8C%E6%9E%84.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-89bbe066d6f29566 / 中文：该案例围绕 与D126时间尺度同构 展开。
-  - 来源：`统一案例总表/0278-C-278-D124与D126时间尺度同构.md`
-  - 依赖：D126；被引用：—
-- [中文：该案例围绕 与D126时间尺度同构 展开。 English: Rule-based English rendering pending human re…](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0278-C-278-D124%E4%B8%8ED126%E6%97%B6%E9%97%B4%E5%B0%BA%E5%BA%A6%E5%90%8C%E6%9E%84.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-de0e93254add5d38 / 中文：该案例围绕 与D126时间尺度同构 展开。 English: Rule-based English rendering pending human re…
-  - 来源：`统一案例总表/0278-C-278-D124与D126时间尺度同构.md`
-  - 依赖：D126；被引用：—
-- [中文：该案例围绕 与D36倒U型同构 展开。](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0277-C-277-D123%E4%B8%8ED36%E5%80%92U%E5%9E%8B%E5%90%8C%E6%9E%84.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-38ba1e0baf6e85aa / 中文：该案例围绕 与D36倒U型同构 展开。
-  - 来源：`统一案例总表/0277-C-277-D123与D36倒U型同构.md`
-  - 依赖：D36；被引用：—
-- [中文：该案例围绕 与D36倒U型同构 展开。 English: Rule-based English rendering pending human revi…](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0277-C-277-D123%E4%B8%8ED36%E5%80%92U%E5%9E%8B%E5%90%8C%E6%9E%84.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-7a0ec7a87b16c77d / 中文：该案例围绕 与D36倒U型同构 展开。 English: Rule-based English rendering pending human revi…
-  - 来源：`统一案例总表/0277-C-277-D123与D36倒U型同构.md`
-  - 依赖：D36；被引用：—
-- [中文：该案例围绕 预测编码回路自生成 展开。](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0257-C-257-%E9%A2%84%E6%B5%8B%E7%BC%96%E7%A0%81%E5%9B%9E%E8%B7%AF%E8%87%AA%E7%94%9F%E6%88%90.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-03f7219b55f2f8d9 / 中文：该案例围绕 预测编码回路自生成 展开。
-  - 来源：`统一案例总表/0257-C-257-预测编码回路自生成.md`
-  - 依赖：—；被引用：—
-- [中文：该案例围绕 预测编码回路自生成 展开。 English: Rule-based English rendering pending human revi…](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0257-C-257-%E9%A2%84%E6%B5%8B%E7%BC%96%E7%A0%81%E5%9B%9E%E8%B7%AF%E8%87%AA%E7%94%9F%E6%88%90.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-b729f16f8e8a053c / 中文：该案例围绕 预测编码回路自生成 展开。 English: Rule-based English rendering pending human revi…
-  - 来源：`统一案例总表/0257-C-257-预测编码回路自生成.md`
-  - 依赖：—；被引用：—
-- [中文：该案例围绕 预测编码组块化 展开。](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0254-C-254-%E9%A2%84%E6%B5%8B%E7%BC%96%E7%A0%81%E7%BB%84%E5%9D%97%E5%8C%96.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-f6da0dbc532580d3 / 中文：该案例围绕 预测编码组块化 展开。
-  - 来源：`统一案例总表/0254-C-254-预测编码组块化.md`
-  - 依赖：—；被引用：—
-- [中文：该案例围绕 预测编码组块化 展开。 English: Rule-based English rendering pending human review.](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0254-C-254-%E9%A2%84%E6%B5%8B%E7%BC%96%E7%A0%81%E7%BB%84%E5%9D%97%E5%8C%96.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-e439481a70b61316 / 中文：该案例围绕 预测编码组块化 展开。 English: Rule-based English rendering pending human review.
-  - 来源：`统一案例总表/0254-C-254-预测编码组块化.md`
-  - 依赖：—；被引用：—
-- [中文：该案例把显态粘性锁定从叙事问题提升为跨域同构问题，说明热力学与天文学中的稳定/滞留结构可以投影到角色困境上。](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0173-C-173-%E5%BF%86%E7%A7%A6%E5%A8%A5%E4%B8%BB%E8%A7%92%E5%9B%B0%E5%A2%83%28%E6%98%BE%E6%80%81%E7%B2%98%E6%80%A7%E9%94%81%E5%AE%9A%29.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-8e891ce0b7db1996 / 中文：该案例把显态粘性锁定从叙事问题提升为跨域同构问题，说明热力学与天文学中的稳定/滞留结构可以投影到角色困境上。
-  - 来源：`统一案例总表/0173-C-173-忆秦娥主角困境(显态粘性锁定).md`
-  - 依赖：—；被引用：—
-- [中文：跑步训练σ=1.2→Ω太小→P_exit低；API成本σ=2.0→Ω太大→P_exit低。](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0621-C-626-%E9%80%80%E5%87%BA%E6%9D%83%E7%A9%BA%E9%97%B4%E6%A1%88%E4%BE%8B06.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-AA3A53DA4DC5E3D5 / 中文：跑步训练σ=1.2→Ω太小→P_exit低；API成本σ=2.0→Ω太大→P_exit低。 / IMPLICIT-AA3A53DA4DC5E3D5
-  - 来源：`统一案例总表/0621-C-626-退出权空间案例06.md`
-  - 依赖：—；被引用：—
-- [中文：预测编码回路——AI多轨的最可能路径](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0216-C-216-%E9%A2%84%E6%B5%8B%E7%BC%96%E7%A0%81%E5%9B%9E%E8%B7%AF.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-87c14b81ecf3eef4 / 中文：预测编码回路——AI多轨的最可能路径
-  - 来源：`统一案例总表/0216-C-216-预测编码回路.md`
-  - 依赖：—；被引用：—
-- [中文：预测编码回路——AI多轨的最可能路径 English: Rule-based English rendering pending human revie…](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0216-C-216-%E9%A2%84%E6%B5%8B%E7%BC%96%E7%A0%81%E5%9B%9E%E8%B7%AF.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-38b02f2631430ae4 / 中文：预测编码回路——AI多轨的最可能路径 English: Rule-based English rendering pending human revie…
-  - 来源：`统一案例总表/0216-C-216-预测编码回路.md`
-  - 依赖：—；被引用：—
-- [中文：高斯门控下的两种信息量度： Shannon信息熵（带宽）： H(σ) = ½ln(2πeσ²) Fisher信息（分辨率）： I_Fisher(σ) = 1/σ²（高斯分布的Fisher信息） σ递减时：](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0269-D233-Shannon-Fisher%E8%B7%B7%E8%B7%B7%E6%9D%BF%E5%AE%9A%E7%90%86.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-001A56A0D7E4C3D6 / 中文：高斯门控下的两种信息量度： Shannon信息熵（带宽）： H(σ) = ½ln(2πeσ²) Fisher信息（分辨率）： I_Fisher(σ) = 1/σ²（高斯分布的Fisher信息） σ递减时： / IMPLICIT-001A56A0D7E4C3D6
-  - 来源：`统一函数总表/0269-D233-Shannon-Fisher跷跷板定理.md`
-  - 依赖：—；被引用：—
-- [事件、内容合并、终端化投影、annotated tag 和全新克隆 resolver 分层确认；不以旧候选](../../ASSET-CARDS.md#asset-nfc-8b5cd2066783ecf6)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-8b5cd2066783ecf6 / 事件、内容合并、终端化投影、annotated tag 和全新克隆 resolver 分层确认；不以旧候选 / 事件、内容合并、终端化投影、annotated tag 和全新克隆 resolver 分层确认；不以旧候选
-  - 来源：`docs/project-current-state.md`
   - 依赖：—；被引用：—

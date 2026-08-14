@@ -849,6 +849,11 @@
   - 可搜索名称：NFC-1bb5679a51b4e6a8 / for row in unproved:
   - 来源：`tools/foundation/verify_079.py`
   - 依赖：—；被引用：—
+- [for table in ("统一函数总表", "统一案例总表"):](../../../tools/foundation/validate_foundation.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-94a9a5bc7e1bbfbb / for table in ("统一函数总表", "统一案例总表"):
+  - 来源：`tools/foundation/validate_foundation.py`
+  - 依赖：—；被引用：—
 - [for task_number, state in lifecycle_view.get("resolved", {}).items()](../../../tools/propagation/validate_reconciliation.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
   - 可搜索名称：NFC-e6bcacfdc304a906 / for task_number, state in lifecycle_view.get("resolved", {}).items()
@@ -2499,8 +2504,3 @@
   - 可搜索名称：NFC-1741ea043f4d8ddb / If upstream objects D_{D184} exist, compose F_{D184}=N(⊕_{g∈D_{D184}} g); otherwise treat F_{D184} as an axiom seed.
   - 来源：`统一函数总表/0220-D184-熵增门槛碾压函数.md`
   - 依赖：D184；被引用：—
-- [If upstream objects D_{D185} exist, compose F_{D185}=N(⊕_{g∈D_{D185}} g); otherwise treat F_{D185} as an axiom seed.](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0221-D185-%E7%9B%B8%E5%AF%B9%E8%AE%BA%E9%97%A8%E6%A7%9B%E5%87%BD%E6%95%B0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-aec4809861f5f53c / If upstream objects D_{D185} exist, compose F_{D185}=N(⊕_{g∈D_{D185}} g); otherwise treat F_{D185} as an axiom seed.
-  - 来源：`统一函数总表/0221-D185-相对论门槛函数.md`
-  - 依赖：D185；被引用：—

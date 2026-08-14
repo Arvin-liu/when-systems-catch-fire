@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [def test_list_by_spec(self):](../../../function-os-candidate/v0.2/tests/test_n6_robust.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-44C224ACA8E97964 / def test_list_by_spec(self): / IMPLICIT-44C224ACA8E97964
+  - 来源：`function-os-candidate/v0.2/tests/test_n6_robust.py`
+  - 依赖：—；被引用：—
+- [def test_list_one(self):](../../../function-os-candidate/v0.2/tests/test_n9_robust.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-72AD2E170CDE9A8E / def test_list_one(self): / IMPLICIT-72AD2E170CDE9A8E
+  - 来源：`function-os-candidate/v0.2/tests/test_n9_robust.py`
+  - 依赖：—；被引用：—
+- [def test_live_authority_bundle_differs_from_q32i_era(self):](../../../tests/test_phase_e_candidate.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-37942AD6E99F8416 / def test_live_authority_bundle_differs_from_q32i_era(self): / IMPLICIT-37942AD6E99F8416
+  - 来源：`tests/test_phase_e_candidate.py`
+  - 依赖：—；被引用：—
 - [def test_live_iteration_resolves_to_none_era_ref(self):](../../../tests/test_era_resolver_generalization.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-3214CBCF606A2A7F / def test_live_iteration_resolves_to_none_era_ref(self): / IMPLICIT-3214CBCF606A2A7F
@@ -2488,19 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-13ABB33207F7FEFC / def validate_repository_location(path: Path, root: Path, label: str) -> Path: / IMPLICIT-13ABB33207F7FEFC
   - 来源：`tools/operations/run_incremental_execution.py`
-  - 依赖：—；被引用：—
-- [def validate_request(request: dict\[str, Any\], actor_registry: dict\[str, Any\] \| None = None) -> None:](../../../tools/operations/stage_snapshot_contract.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-79D8FC882AD121DF / def validate_request(request: dict\[str, Any\], actor_registry: dict\[str, Any\] \| None = None) -> None: / IMPLICIT-79D8FC882AD121DF
-  - 来源：`tools/operations/stage_snapshot_contract.py`
-  - 依赖：—；被引用：—
-- [def validate_required(schema: dict, data: dict) -> None:](../../../tools/validate_narrative_output.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-7F8EBC73D87686D5 / def validate_required(schema: dict, data: dict) -> None: / IMPLICIT-7F8EBC73D87686D5
-  - 来源：`tools/validate_narrative_output.py`
-  - 依赖：—；被引用：—
-- [def validate_required_and_extra(name: str, rows: list\[dict\[str, Any\]\], schema_path: Path) -> None:](../../../tools/validate_data.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-A6E3A1CE7808C6D8 / def validate_required_and_extra(name: str, rows: list\[dict\[str, Any\]\], schema_path: Path) -> None: / IMPLICIT-A6E3A1CE7808C6D8
-  - 来源：`tools/validate_data.py`
   - 依赖：—；被引用：—

@@ -2,7 +2,7 @@
 
 从 canonical function-assets census 生成的按页人类浏览层。它保留身份、M/E、处置、状态和来源回链，不是第二份函数数据库。
 
-canonical source: `data/foundation/function-assets/census.jsonl`；记录数：`7400`；每页：`250`。
+canonical source: `data/foundation/function-assets/census.jsonl`；记录数：`7430`；每页：`250`。
 
 > 这里的文字由生成器确定性投影。不要手改页面；若对象状态变化，先更新 canonical asset，再重新生成并运行 `--check`。
 
@@ -37,7 +37,7 @@ canonical source: `data/foundation/function-assets/census.jsonl`；记录数：`
 - [第 027 页](page-027.md)：记录 6501–6750
 - [第 028 页](page-028.md)：记录 6751–7000
 - [第 029 页](page-029.md)：记录 7001–7250
-- [第 030 页](page-030.md)：记录 7251–7400
+- [第 030 页](page-030.md)：记录 7251–7430
 
 ## 解释边界
 

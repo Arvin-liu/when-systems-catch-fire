@@ -4,18 +4,6 @@
 
 [返回索引](README.md) · [上一页](page-030.md) · [下一页](page-032.md)
 
-### NFC-6216a1b78dc4c635 · 文字说明：** 元同构函数是Ψ₀在"同构维度"的完整表达，包含14个内部算子，覆盖参数空间、对数、势函数、统一同构、四象限、跨域、尺度七个维度。
-
-这是 canonical nonfunction-claims registry 中的原子登记。claim class 为 `CROSS_DOMAIN_CORRESPONDENCE`，断言类型为 `INTERPRETIVE`，最终处置为 `RETAINED_AS_STRUCTURAL_METAPHOR`。
-
-M 轴 `M0`；E 轴 `E0`；复现状态 `NOT_APPLICABLE`。
-
-范围：Exact source-defined repository scope；量词状态：`BOUNDED_OR_NO_UNIVERSAL_QUANTIFIER_DETECTED`。Claim ceiling：Analogy or structural metaphor only; no homomorphism, isomorphism or causal identity is established.
-
-来源锚点：[docs/phi_meta_law.md](../../../docs/phi_meta_law.md) · [统一函数总表/0001-Ψ₀元函数完整数学定义.md](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0001-%CE%A8%E2%82%80%E5%85%83%E5%87%BD%E6%95%B0%E5%AE%8C%E6%95%B4%E6%95%B0%E5%AD%A6%E5%AE%9A%E4%B9%89.md)
-
-> 浏览器只投影 canonical 记录。显式处置或 quarantine 只闭合登记与谱系，不等于数学证明、外部证据、普遍有效或现实真值。
-
 ### NFC-62192f0014603ff5 · | 新物种 | analogy_only | 抹平制度连续性与族群复杂性 |
 
 这是 canonical nonfunction-claims registry 中的原子登记。claim class 为 `CROSS_DOMAIN_CORRESPONDENCE`，断言类型为 `INTERPRETIVE`，最终处置为 `HISTORICAL_ONLY`。
@@ -3001,5 +2989,17 @@ M 轴 `M0`；E 轴 `E1`；复现状态 `NOT_APPLICABLE`。
 范围：Historical source wording only；量词状态：`BOUNDED_OR_NO_UNIVERSAL_QUANTIFIER_DETECTED`。Claim ceiling：Historical source wording only; it is not a current repository endorsement.
 
 来源锚点：[reports/foundation-architecture/085-backlog-prioritization.md](../../../reports/foundation-architecture/085-backlog-prioritization.md)
+
+> 浏览器只投影 canonical 记录。显式处置或 quarantine 只闭合登记与谱系，不等于数学证明、外部证据、普遍有效或现实真值。
+
+### NFC-65a687980e16b646 · Causal claims delegate to MCF.
+
+这是 canonical nonfunction-claims registry 中的原子登记。claim class 为 `MECHANISM_OR_CAUSAL_CLAIM`，断言类型为 `EMPIRICAL`，最终处置为 `PENDING_EMPIRICAL_TEST`。
+
+M 轴 `M0`；E 轴 `E0`；复现状态 `NO_REPLICATION_CLAIMED`。
+
+范围：Exact source-defined repository scope；量词状态：`BOUNDED_OR_NO_UNIVERSAL_QUANTIFIER_DETECTED`。Claim ceiling：Testable candidate only; no causal, predictive or established-fact wording until evidence and replication obligations are met.
+
+来源锚点：[docs/architecture/adaptive-relational-network.md](../../../docs/architecture/adaptive-relational-network.md)
 
 > 浏览器只投影 canonical 记录。显式处置或 quarantine 只闭合登记与谱系，不等于数学证明、外部证据、普遍有效或现实真值。

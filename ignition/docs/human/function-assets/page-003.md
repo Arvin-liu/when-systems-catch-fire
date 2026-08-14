@@ -792,7 +792,7 @@ M 轴 `M1`；E 轴 `E1`。状态记录：dimensional=`UNDEFINED`, external_reali
 
 Claim ceiling：Structural metaphor and argument schema only; no mathematical path integral and no cross-domain equivalence is established.
 
-来源出现 201 次；当前可回链来源：[AI-HANDOFF.md](../../../AI-HANDOFF.md) · [CHANGELOG.md](../../../CHANGELOG.md) · [RESULTS/CORRECTIONS.md](../../../RESULTS/CORRECTIONS.md)
+来源出现 200 次；当前可回链来源：[AI-HANDOFF.md](../../../AI-HANDOFF.md) · [CHANGELOG.md](../../../CHANGELOG.md) · [RESULTS/CORRECTIONS.md](../../../RESULTS/CORRECTIONS.md)
 
 > 浏览器只投影 canonical 记录。自动 census、内部测试和登记闭合不构成外部真理、证明或独立复现。
 
@@ -1524,7 +1524,7 @@ M 轴 `M4`；E 轴 `E0`。状态记录：dimensional=`PASS_ONLY_FOR_DIMENSIONLES
 
 Claim ceiling：The scalar limit is valid; no theorem connecting it to classical mechanics or determinism is supplied.
 
-来源出现 129 次；当前可回链来源：[AI-HANDOFF.md](../../../AI-HANDOFF.md) · [CHANGELOG.md](../../../CHANGELOG.md) · [analysis/corpus-relation/cluster_source_briefs/C000.md](../../../analysis/corpus-relation/cluster_source_briefs/C000.md)
+来源出现 128 次；当前可回链来源：[AI-HANDOFF.md](../../../AI-HANDOFF.md) · [CHANGELOG.md](../../../CHANGELOG.md) · [analysis/corpus-relation/cluster_source_briefs/C000.md](../../../analysis/corpus-relation/cluster_source_briefs/C000.md)
 
 > 浏览器只投影 canonical 记录。自动 census、内部测试和登记闭合不构成外部真理、证明或独立复现。
 
@@ -1632,7 +1632,7 @@ M 轴 `M1`；E 轴 `E0`。状态记录：dimensional=`REQUIRES_DIMENSIONLESS_RAT
 
 Claim ceiling：The current Ignition multiplicative gate model fails to unify the four interactions. The physical unification problem remains open; neither possibility nor impossibility is proved.
 
-来源出现 98 次；当前可回链来源：[AI-HANDOFF.md](../../../AI-HANDOFF.md) · [CHANGELOG.md](../../../CHANGELOG.md) · [analysis/corpus-relation/cluster_source_briefs/C000.md](../../../analysis/corpus-relation/cluster_source_briefs/C000.md)
+来源出现 97 次；当前可回链来源：[AI-HANDOFF.md](../../../AI-HANDOFF.md) · [CHANGELOG.md](../../../CHANGELOG.md) · [analysis/corpus-relation/cluster_source_briefs/C000.md](../../../analysis/corpus-relation/cluster_source_briefs/C000.md)
 
 > 浏览器只投影 canonical 记录。自动 census、内部测试和登记闭合不构成外部真理、证明或独立复现。
 
@@ -2568,7 +2568,7 @@ M 轴 `M4`；E 轴 `E0`。状态记录：dimensional=`PASS_IF_P_IS_DIMENSIONLESS
 
 Claim ceiling：A monotone rational score only; p=0.5 is not a real-world controllability threshold without independent calibration.
 
-来源出现 166 次；当前可回链来源：[AI-HANDOFF.md](../../../AI-HANDOFF.md) · [CHANGELOG.md](../../../CHANGELOG.md) · [RESULTS/CORRECTIONS.md](../../../RESULTS/CORRECTIONS.md)
+来源出现 165 次；当前可回链来源：[AI-HANDOFF.md](../../../AI-HANDOFF.md) · [CHANGELOG.md](../../../CHANGELOG.md) · [RESULTS/CORRECTIONS.md](../../../RESULTS/CORRECTIONS.md)
 
 > 浏览器只投影 canonical 记录。自动 census、内部测试和登记闭合不构成外部真理、证明或独立复现。
 

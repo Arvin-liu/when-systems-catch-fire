@@ -4,18 +4,6 @@
 
 [返回索引](README.md) · [上一页](page-037.md) · [下一页](page-039.md)
 
-### NFC-7bdb7a5ca637982d · [EVIDENCE-LINEAGE.md](./EVIDENCE-LINEAGE.md)：证据谱系变化。
-
-这是 canonical nonfunction-claims registry 中的原子登记。claim class 为 `EMPIRICAL_OR_LITERATURE_CLAIM`，断言类型为 `EMPIRICAL`，最终处置为 `PENDING_LITERATURE_ADJUDICATION`。
-
-M 轴 `M0`；E 轴 `E0`；复现状态 `NO_REPLICATION_CLAIMED`。
-
-范围：Exact source-defined repository scope；量词状态：`BOUNDED_OR_NO_UNIVERSAL_QUANTIFIER_DETECTED`。Claim ceiling：Source or literature-dependent assertion only; support, novelty and exact scope remain unadjudicated.
-
-来源锚点：[RESULTS/README.md](../../../RESULTS/README.md)
-
-> 浏览器只投影 canonical 记录。显式处置或 quarantine 只闭合登记与谱系，不等于数学证明、外部证据、普遍有效或现实真值。
-
 ### NFC-7be9dfa4014f0e9c · 注意力控制只判断循环是否有信息增量，不证明结论更深。
 
 这是 canonical nonfunction-claims registry 中的原子登记。claim class 为 `THEOREM_OR_MATHEMATICAL_CLAIM`，断言类型为 `MATHEMATICAL`，最终处置为 `PENDING_PROOF`。
@@ -3001,5 +2989,17 @@ M 轴 `M0`；E 轴 `E0`；复现状态 `NOT_APPLICABLE`。
 范围：Exact source-defined repository scope；量词状态：`BOUNDED_OR_NO_UNIVERSAL_QUANTIFIER_DETECTED`。Claim ceiling：May be stated only as a repository definition, policy, status record or explicitly scoped convention; it is not external truth.
 
 来源锚点：[tools/governance/run_self_correction.py](../../../tools/governance/run_self_correction.py)
+
+> 浏览器只投影 canonical 记录。显式处置或 quarantine 只闭合登记与谱系，不等于数学证明、外部证据、普遍有效或现实真值。
+
+### NFC-7f5173d7407fd34a · | “理论生成器” | `DOWNGRADED` | candidate-generation aid，不生成 proof/truth |
+
+这是 canonical nonfunction-claims registry 中的原子登记。claim class 为 `THEOREM_OR_MATHEMATICAL_CLAIM`，断言类型为 `MATHEMATICAL`，最终处置为 `ACCEPTED_AS_DEFINITION`。
+
+M 轴 `M1`；E 轴 `E0`；复现状态 `NOT_APPLICABLE`。
+
+范围：Exact source-defined repository scope；量词状态：`BOUNDED_OR_NO_UNIVERSAL_QUANTIFIER_DETECTED`。Claim ceiling：May be stated only as a repository definition, policy, status record or explicitly scoped convention; it is not external truth.
+
+来源锚点：[docs/architecture/epistemic-governance-kernel-and-federated-planes.md](../../../docs/architecture/epistemic-governance-kernel-and-federated-planes.md)
 
 > 浏览器只投影 canonical 记录。显式处置或 quarantine 只闭合登记与谱系，不等于数学证明、外部证据、普遍有效或现实真值。

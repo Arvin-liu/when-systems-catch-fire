@@ -4,18 +4,6 @@
 
 [返回索引](README.md) · [上一页](page-032.md) · [下一页](page-034.md)
 
-### NFC-69236f47f87a1707 · [D403｜δ_c-相变点统一函数](docs/zh/functions/items/D403.md)
-
-这是 canonical nonfunction-claims registry 中的原子登记。claim class 为 `UNRESOLVED_CLAIM`，断言类型为 `UNRESOLVED`，最终处置为 `HISTORICAL_ONLY`。
-
-M 轴 `M0`；E 轴 `E1`；复现状态 `NO_REPLICATION_CLAIMED`。
-
-范围：Historical source wording only；量词状态：`BOUNDED_OR_NO_UNIVERSAL_QUANTIFIER_DETECTED`。Claim ceiling：Historical source wording only; it is not a current repository endorsement.
-
-来源锚点：[统一函数总表/0439-D403-δ_c-相变点统一函数.md](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0439-D403-%CE%B4_c-%E7%9B%B8%E5%8F%98%E7%82%B9%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0.md)
-
-> 浏览器只投影 canonical 记录。显式处置或 quarantine 只闭合登记与谱系，不等于数学证明、外部证据、普遍有效或现实真值。
-
 ### NFC-692e97bffb60a1a4 · def test_d4_07_markdown_digest_and_facts_are_verified(self):
 
 这是 canonical nonfunction-claims registry 中的原子登记。claim class 为 `UNRESOLVED_CLAIM`，断言类型为 `UNRESOLVED`，最终处置为 `QUARANTINED_AMBIGUOUS`。
@@ -3001,5 +2989,17 @@ M 轴 `M0`；E 轴 `E0`；复现状态 `NO_REPLICATION_CLAIMED`。
 范围：Exact source-defined repository scope；量词状态：`BOUNDED_OR_NO_UNIVERSAL_QUANTIFIER_DETECTED`。Claim ceiling：Testable candidate only; no causal, predictive or established-fact wording until evidence and replication obligations are met.
 
 来源锚点：[docs/architecture/multiscale-causal-fabric.md](../../../docs/architecture/multiscale-causal-fabric.md)
+
+> 浏览器只投影 canonical 记录。显式处置或 quarantine 只闭合登记与谱系，不等于数学证明、外部证据、普遍有效或现实真值。
+
+### NFC-6cd5f9fc00871df8 · Evidence entrance and claim ceiling:
+
+这是 canonical nonfunction-claims registry 中的原子登记。claim class 为 `EMPIRICAL_OR_LITERATURE_CLAIM`，断言类型为 `EMPIRICAL`，最终处置为 `PENDING_LITERATURE_ADJUDICATION`。
+
+M 轴 `M0`；E 轴 `E0`；复现状态 `NO_REPLICATION_CLAIMED`。
+
+范围：Exact source-defined repository scope；量词状态：`BOUNDED_OR_NO_UNIVERSAL_QUANTIFIER_DETECTED`。Claim ceiling：Source or literature-dependent assertion only; support, novelty and exact scope remain unadjudicated.
+
+来源锚点：[templates/operations/task-command-template.md](../../../templates/operations/task-command-template.md)
 
 > 浏览器只投影 canonical 记录。显式处置或 quarantine 只闭合登记与谱系，不等于数学证明、外部证据、普遍有效或现实真值。

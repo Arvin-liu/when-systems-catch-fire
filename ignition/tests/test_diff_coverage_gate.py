@@ -119,7 +119,11 @@ class DiffCoverageGateTests(unittest.TestCase):
         # current tree. They must exist in either the current tree or the sealed
         # era tree; this preserves history without requiring obsolete products
         # such as Pages to remain maintained forever.
-        extra = sorted((seeds | generated) - (self.live_repo_files | self.era_repo_files))
+        repository_paths = self.live_repo_files | self.era_repo_files
+        extra = sorted(
+            path for path in (seeds | generated)
+            if not any(candidate in repository_paths for candidate in self._git_path_variants(path))
+        )
         self.assertEqual(extra, [], f"Declared paths not in repo: {extra}")
 
     def test_seed_generated_disjoint(self):
@@ -152,6 +156,13 @@ class DiffCoverageGateTests(unittest.TestCase):
         if path.startswith(".github/"):
             candidates.append(REPO_ROOT / path)
         return list(dict.fromkeys(candidates))
+
+    @staticmethod
+    def _git_path_variants(path: str) -> list[str]:
+        """Accept legacy app-root and current ``ignition/`` Git spellings."""
+        if path.startswith("ignition/"):
+            return [path, path.removeprefix("ignition/")]
+        return [path, f"ignition/{path}"]
 
 
 if __name__ == "__main__":

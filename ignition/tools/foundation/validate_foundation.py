@@ -10,6 +10,8 @@ from pathlib import Path
 import jsonschema
 
 ROOT=Path(__file__).resolve().parents[2]
+REPO_ROOT=ROOT.parent
+GIT_ROOT=ROOT if (ROOT/".git").exists() else REPO_ROOT
 checks=[]
 
 def check(name, ok, detail=""):
@@ -21,6 +23,28 @@ def load(rel):
     if p.exists():
         rows=[json.loads(x) for x in p.read_text(encoding="utf-8").splitlines() if x.strip()]
     return rows
+
+def repo_path(rel):
+    """Resolve app-root and split-root paths in production and fixtures."""
+    if rel.startswith(".github/") or rel in {"AGENTS.md", "LICENSE"}:
+        candidates=[REPO_ROOT/rel, ROOT/rel]
+    else:
+        candidates=[ROOT/rel, REPO_ROOT/"ignition"/rel, REPO_ROOT/rel]
+    return next((path for path in candidates if path.exists()), candidates[0])
+
+def legacy_tables_preserved():
+    """Compare pre-root-normalization table blobs with current app-root files."""
+    base="fc3f2ae309ad3dd485716ab5675948a6a46cd75d"
+    for table in ("统一函数总表", "统一案例总表"):
+        listing=subprocess.run(["git","-c","core.quotePath=false","ls-tree","-r","--name-only",base,"--",table],cwd=GIT_ROOT,text=True,capture_output=True)
+        if listing.returncode != 0:
+            return False
+        for old_rel in [line for line in listing.stdout.splitlines() if line]:
+            old_blob=subprocess.run(["git","show",f"{base}:{old_rel}"],cwd=GIT_ROOT,capture_output=True).stdout
+            current=ROOT/old_rel
+            if not current.is_file() or current.read_bytes()!=old_blob:
+                return False
+    return True
 
 def schema_ok(schema_rel, rows):
     schema=json.loads((ROOT/schema_rel).read_text(encoding="utf-8"))
@@ -100,11 +124,10 @@ def main():
     check("079:proof-dossiers-forty",len(dossiers_079)==40 and len({x["id"] for x in dossiers_079})==40)
     required_ce={"target_claim","domain","assumptions","input","derivation","violated_conclusion","source","replay","expected_result"}
     check("counterexample:replay-contract",all(required_ce <= set(x) for x in counterexamples))
-    legacy_diff=subprocess.run(["git","diff","--quiet","fc3f2ae309ad3dd485716ab5675948a6a46cd75d","--","统一函数总表","统一案例总表"],cwd=ROOT).returncode
-    check("migration:legacy-byte-preservation",legacy_diff==0)
+    check("migration:legacy-byte-preservation",legacy_tables_preserved())
     check("schemas:count",len(list((ROOT/"schemas/foundation").glob("*.json")))>=7)
     required=["ARCHITECTURE.md","FOUNDATION.md","AI-START-HERE.md","AI-HANDOFF.md",".github/workflows/foundation-validation.yml","formal/lean/Foundation.lean","views/manifest.json","data/foundation/project-state.json"]
-    for rel in required: check(f"file:{rel}",(ROOT/rel).is_file())
+    for rel in required: check(f"file:{rel}",repo_path(rel).is_file())
     check("generator:adjudication-deterministic",subprocess.run([sys.executable,"tools/foundation/adjudicate_core.py","--check"],cwd=ROOT,stdout=subprocess.DEVNULL).returncode==0)
     check("generator:migration-deterministic",subprocess.run([sys.executable,"tools/foundation/migrate_legacy.py","--check"],cwd=ROOT,stdout=subprocess.DEVNULL).returncode==0)
     claim_governance=subprocess.run([sys.executable,"tools/foundation/validate_claim_governance.py"],cwd=ROOT,text=True,capture_output=True)

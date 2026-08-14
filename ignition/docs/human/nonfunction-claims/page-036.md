@@ -4,18 +4,6 @@
 
 [返回索引](README.md) · [上一页](page-035.md) · [下一页](page-037.md)
 
-### NFC-74d30151a49ec09c · D221：热寂=完全统一=Ω→1=无物理；D222：dΦ/dt≤0，Φ单调递减。因此物理存在是一个有时间窗口的暂态：Φ(t)从Φ₀单调递减到0，Ω(t)=e^{-Φ(t)}从Ω₀<1单调递增到1。物理存在的时间窗口：0 < t < t_he
-
-这是 canonical nonfunction-claims registry 中的原子登记。claim class 为 `UNRESOLVED_CLAIM`，断言类型为 `UNRESOLVED`，最终处置为 `HISTORICAL_ONLY`。
-
-M 轴 `M0`；E 轴 `E1`；复现状态 `NO_REPLICATION_CLAIMED`。
-
-范围：Historical source wording only；量词状态：`BOUNDED_OR_NO_UNIVERSAL_QUANTIFIER_DETECTED`。Claim ceiling：Historical source wording only; it is not a current repository endorsement.
-
-来源锚点：[统一函数总表/0259-D223-物理存在的时间窗口定理.md](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0259-D223-%E7%89%A9%E7%90%86%E5%AD%98%E5%9C%A8%E7%9A%84%E6%97%B6%E9%97%B4%E7%AA%97%E5%8F%A3%E5%AE%9A%E7%90%86.md)
-
-> 浏览器只投影 canonical 记录。显式处置或 quarantine 只闭合登记与谱系，不等于数学证明、外部证据、普遍有效或现实真值。
-
 ### NFC-74dafc97d9ef018e · 中文：经典表述：dS/dt ≥ 0 Φ表述：dΦ/dt ≤ 0（门控贡献随时间单调递减） 证明： D184熵增门槛碾压函数：Λ_disorder(t) = Λ₀ × e^(σ_entropy × t)，μ_available(t) = μ₀
 
 这是 canonical nonfunction-claims registry 中的原子登记。claim class 为 `THEOREM_OR_MATHEMATICAL_CLAIM`，断言类型为 `MATHEMATICAL`，最终处置为 `HISTORICAL_ONLY`。
@@ -3001,5 +2989,17 @@ M 轴 `M0`；E 轴 `E0`；复现状态 `NO_REPLICATION_CLAIMED`。
 范围：Exact source-defined repository scope；量词状态：`BOUNDED_OR_NO_UNIVERSAL_QUANTIFIER_DETECTED`。Claim ceiling：Testable candidate only; no causal, predictive or established-fact wording until evidence and replication obligations are met.
 
 来源锚点：[tests/test_multiscale_causal_fabric.py](../../../tests/test_multiscale_causal_fabric.py)
+
+> 浏览器只投影 canonical 记录。显式处置或 quarantine 只闭合登记与谱系，不等于数学证明、外部证据、普遍有效或现实真值。
+
+### NFC-783c1635da981a6b · """Current valid F12 seal (no pages_artifacts, with contract) must pass."""
+
+这是 canonical nonfunction-claims registry 中的原子登记。claim class 为 `NORMATIVE_OR_GOVERNANCE_CLAIM`，断言类型为 `NORMATIVE`，最终处置为 `ACCEPTED_AS_DEFINITION`。
+
+M 轴 `M0`；E 轴 `E0`；复现状态 `NOT_APPLICABLE`。
+
+范围：Exact source-defined repository scope；量词状态：`BOUNDED_OR_NO_UNIVERSAL_QUANTIFIER_DETECTED`。Claim ceiling：May be stated only as a repository definition, policy, status record or explicitly scoped convention; it is not external truth.
+
+来源锚点：[tests/test_seal_freshness.py](../../../tests/test_seal_freshness.py)
 
 > 浏览器只投影 canonical 记录。显式处置或 quarantine 只闭合登记与谱系，不等于数学证明、外部证据、普遍有效或现实真值。

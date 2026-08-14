@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [def _scan(obj, path: str = "") -> None:](../../../tools/validate_iteration_sync.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-DD153F81907176AC / def _scan(obj, path: str = "") -> None: / IMPLICIT-DD153F81907176AC
+  - 来源：`tools/validate_iteration_sync.py`
+  - 依赖：—；被引用：—
 - [def _schema_actor_ref_ids(schema: dict\[str, Any\]) -> list\[str\]:](../../../tools/operations/stage_snapshot_contract.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-910856834AF71BA5 / def _schema_actor_ref_ids(schema: dict\[str, Any\]) -> list\[str\]: / IMPLICIT-910856834AF71BA5
@@ -2364,6 +2369,11 @@
   - 可搜索名称：IMPLICIT-D817A3C1CE0EABD1 / def legacy_free_text_actor(name: str) -> dict\[str, Any\]: / IMPLICIT-D817A3C1CE0EABD1
   - 来源：`tools/operations/run_stage_snapshot_responsibility_cases.py`
   - 依赖：—；被引用：—
+- [def legacy_tables_preserved():](../../../tools/foundation/validate_foundation.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-3931913495C7AC8E / def legacy_tables_preserved(): / IMPLICIT-3931913495C7AC8E
+  - 来源：`tools/foundation/validate_foundation.py`
+  - 依赖：—；被引用：—
 - [def list(self) -> dict:](../../../function-os-candidate/v0.1/function_os/n9_registry_store.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-7B6A01393977F76F / def list(self) -> dict: / IMPLICIT-7B6A01393977F76F
@@ -2493,14 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-5614719371CD04CB / def load_evidence_map(path: Path) -> dict\[str, dict\[str, Any\]\]: / IMPLICIT-5614719371CD04CB
   - 来源：`tools/build_unesco_coverage.py`
-  - 依赖：—；被引用：—
-- [def load_evidence_map(path: Path) -> dict\[str, dict\[str, Any\]\]:](../../../tools/build_unesco_coverage.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-da44947a611c1814 / def load_evidence_map(path: Path) -> dict\[str, dict\[str, Any\]\]:
-  - 来源：`tools/build_unesco_coverage.py`
-  - 依赖：—；被引用：—
-- [def load_evolution(root, by_lower):](../../../tools/build_corpus_relation_graph.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-CCBE9E93DF641B54 / def load_evolution(root, by_lower): / IMPLICIT-CCBE9E93DF641B54
-  - 来源：`tools/build_corpus_relation_graph.py`
   - 依赖：—；被引用：—

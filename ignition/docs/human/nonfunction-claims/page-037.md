@@ -4,18 +4,6 @@
 
 [返回索引](README.md) · [上一页](page-036.md) · [下一页](page-038.md)
 
-### NFC-783c1635da981a6b · """Current valid F12 seal (no pages_artifacts, with contract) must pass."""
-
-这是 canonical nonfunction-claims registry 中的原子登记。claim class 为 `NORMATIVE_OR_GOVERNANCE_CLAIM`，断言类型为 `NORMATIVE`，最终处置为 `ACCEPTED_AS_DEFINITION`。
-
-M 轴 `M0`；E 轴 `E0`；复现状态 `NOT_APPLICABLE`。
-
-范围：Exact source-defined repository scope；量词状态：`BOUNDED_OR_NO_UNIVERSAL_QUANTIFIER_DETECTED`。Claim ceiling：May be stated only as a repository definition, policy, status record or explicitly scoped convention; it is not external truth.
-
-来源锚点：[tests/test_seal_freshness.py](../../../tests/test_seal_freshness.py)
-
-> 浏览器只投影 canonical 记录。显式处置或 quarantine 只闭合登记与谱系，不等于数学证明、外部证据、普遍有效或现实真值。
-
 ### NFC-783cc19f5742fb82 · [D225｜引力B型必要性定理](docs/zh/functions/items/D225.md)
 
 这是 canonical nonfunction-claims registry 中的原子登记。claim class 为 `THEOREM_OR_MATHEMATICAL_CLAIM`，断言类型为 `MATHEMATICAL`，最终处置为 `HISTORICAL_ONLY`。
@@ -3001,5 +2989,17 @@ M 轴 `M0`；E 轴 `E0`；复现状态 `NOT_APPLICABLE`。
 范围：Exact source-defined repository scope；量词状态：`BOUNDED_OR_NO_UNIVERSAL_QUANTIFIER_DETECTED`。Claim ceiling：Analogy or structural metaphor only; no homomorphism, isomorphism or causal identity is established.
 
 来源锚点：[outputs/getbrain/classic-problems-benchmark-supplement-20260707.md](../../../outputs/getbrain/classic-problems-benchmark-supplement-20260707.md)
+
+> 浏览器只投影 canonical 记录。显式处置或 quarantine 只闭合登记与谱系，不等于数学证明、外部证据、普遍有效或现实真值。
+
+### NFC-7bdb7a5ca637982d · [EVIDENCE-LINEAGE.md](./EVIDENCE-LINEAGE.md)：证据谱系变化。
+
+这是 canonical nonfunction-claims registry 中的原子登记。claim class 为 `EMPIRICAL_OR_LITERATURE_CLAIM`，断言类型为 `EMPIRICAL`，最终处置为 `PENDING_LITERATURE_ADJUDICATION`。
+
+M 轴 `M0`；E 轴 `E0`；复现状态 `NO_REPLICATION_CLAIMED`。
+
+范围：Exact source-defined repository scope；量词状态：`BOUNDED_OR_NO_UNIVERSAL_QUANTIFIER_DETECTED`。Claim ceiling：Source or literature-dependent assertion only; support, novelty and exact scope remain unadjudicated.
+
+来源锚点：[RESULTS/README.md](../../../RESULTS/README.md)
 
 > 浏览器只投影 canonical 记录。显式处置或 quarantine 只闭合登记与谱系，不等于数学证明、外部证据、普遍有效或现实真值。

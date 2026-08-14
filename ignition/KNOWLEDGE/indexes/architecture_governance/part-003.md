@@ -1909,6 +1909,11 @@
   - 可搜索名称：IMPLICIT-5EB1122C62C0D1C1 / def _count_symbols(text: str) -> int: / IMPLICIT-5EB1122C62C0D1C1
   - 来源：`function-os-candidate/v0.2/function_os/importer/legacy_asset_importer.py`
   - 依赖：—；被引用：—
+- [def _current_candidates(path: str) -> list\[Path\]:](../../../tests/test_diff_coverage_gate.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-98CC74EA1DF1E16C / def _current_candidates(path: str) -> list\[Path\]: / IMPLICIT-98CC74EA1DF1E16C
+  - 来源：`tests/test_diff_coverage_gate.py`
+  - 依赖：—；被引用：—
 - [def _current_head() -> str:](../../../tests/test_seal_freshness.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-95D9E03BBF338329 / def _current_head() -> str: / IMPLICIT-95D9E03BBF338329
@@ -2498,9 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-41E499F077993B95 / def _safety_scan(self, expr: str): / IMPLICIT-41E499F077993B95
   - 来源：`function-os-candidate/v0.1/function_os/n1_safe_expression_dsl.py`
-  - 依赖：—；被引用：—
-- [def _scan(obj, path: str = "") -> None:](../../../tools/validate_iteration_sync.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-DD153F81907176AC / def _scan(obj, path: str = "") -> None: / IMPLICIT-DD153F81907176AC
-  - 来源：`tools/validate_iteration_sync.py`
   - 依赖：—；被引用：—

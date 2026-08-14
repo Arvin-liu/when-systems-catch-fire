@@ -4,18 +4,6 @@
 
 [返回索引](README.md) · [上一页](page-041.md) · [下一页](page-043.md)
 
-### NFC-8a7a155a776228a4 · [#166｜小资金恐惧锁定向下螺旋（验证D67）](docs/zh/cases/items/C-0166.md)
-
-这是 canonical nonfunction-claims registry 中的原子登记。claim class 为 `UNRESOLVED_CLAIM`，断言类型为 `UNRESOLVED`，最终处置为 `HISTORICAL_ONLY`。
-
-M 轴 `M0`；E 轴 `E1`；复现状态 `NO_REPLICATION_CLAIMED`。
-
-范围：Historical source wording only；量词状态：`BOUNDED_OR_NO_UNIVERSAL_QUANTIFIER_DETECTED`。Claim ceiling：Historical source wording only; it is not a current repository endorsement.
-
-来源锚点：[统一函数总表/0116-D67-资金量-恐惧锁定正反馈函数.md](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0116-D67-%E8%B5%84%E9%87%91%E9%87%8F-%E6%81%90%E6%83%A7%E9%94%81%E5%AE%9A%E6%AD%A3%E5%8F%8D%E9%A6%88%E5%87%BD%E6%95%B0.md) · [统一案例总表/0166-C-166-小资金恐惧锁定向下螺旋(验证D67).md](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0166-C-166-%E5%B0%8F%E8%B5%84%E9%87%91%E6%81%90%E6%83%A7%E9%94%81%E5%AE%9A%E5%90%91%E4%B8%8B%E8%9E%BA%E6%97%8B(%E9%AA%8C%E8%AF%81D67).md)
-
-> 浏览器只投影 canonical 记录。显式处置或 quarantine 只闭合登记与谱系，不等于数学证明、外部证据、普遍有效或现实真值。
-
 ### NFC-8a8854f415877f75 · D240-意识的智能必要条件.md
 
 这是 canonical nonfunction-claims registry 中的原子登记。claim class 为 `ONTOLOGICAL_OR_METAPHYSICAL_CLAIM`，断言类型为 `METAPHYSICAL`，最终处置为 `RETAINED_AS_RESEARCH_HYPOTHESIS`。
@@ -3001,5 +2989,17 @@ M 轴 `M0`；E 轴 `E0`；复现状态 `NO_REPLICATION_CLAIMED`。
 范围：Exact source-defined repository scope；量词状态：`BOUNDED_OR_NO_UNIVERSAL_QUANTIFIER_DETECTED`。Claim ceiling：Source or literature-dependent assertion only; support, novelty and exact scope remain unadjudicated.
 
 来源锚点：[tools/build_corpus_relation_graph.py](../../../tools/build_corpus_relation_graph.py)
+
+> 浏览器只投影 canonical 记录。显式处置或 quarantine 只闭合登记与谱系，不等于数学证明、外部证据、普遍有效或现实真值。
+
+### NFC-8e5bd0e390289731 · | 时制／体貌／终点 | 过去／非过去、`ている` 等与动词类别、语境互动。 | `ている` 不可统一映射英语 progressive 或中文 `在`。 |
+
+这是 canonical nonfunction-claims registry 中的原子登记。claim class 为 `UNRESOLVED_CLAIM`，断言类型为 `UNRESOLVED`，最终处置为 `ACCEPTED_AS_DEFINITION`。
+
+M 轴 `M0`；E 轴 `E0`；复现状态 `NO_REPLICATION_CLAIMED`。
+
+范围：Exact source-defined repository scope；量词状态：`BOUNDED_OR_NO_UNIVERSAL_QUANTIFIER_DETECTED`。Claim ceiling：May be stated only as a repository definition, policy, status record or explicitly scoped convention; it is not external truth.
+
+来源锚点：[docs/language-thought/profiles/ja.md](../../../docs/language-thought/profiles/ja.md)
 
 > 浏览器只投影 canonical 记录。显式处置或 quarantine 只闭合登记与谱系，不等于数学证明、外部证据、普遍有效或现实真值。

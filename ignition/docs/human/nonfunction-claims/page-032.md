@@ -4,18 +4,6 @@
 
 [返回索引](README.md) · [上一页](page-031.md) · [下一页](page-033.md)
 
-### NFC-65a687980e16b646 · Causal claims delegate to MCF.
-
-这是 canonical nonfunction-claims registry 中的原子登记。claim class 为 `MECHANISM_OR_CAUSAL_CLAIM`，断言类型为 `EMPIRICAL`，最终处置为 `PENDING_EMPIRICAL_TEST`。
-
-M 轴 `M0`；E 轴 `E0`；复现状态 `NO_REPLICATION_CLAIMED`。
-
-范围：Exact source-defined repository scope；量词状态：`BOUNDED_OR_NO_UNIVERSAL_QUANTIFIER_DETECTED`。Claim ceiling：Testable candidate only; no causal, predictive or established-fact wording until evidence and replication obligations are met.
-
-来源锚点：[docs/architecture/adaptive-relational-network.md](../../../docs/architecture/adaptive-relational-network.md)
-
-> 浏览器只投影 canonical 记录。显式处置或 quarantine 只闭合登记与谱系，不等于数学证明、外部证据、普遍有效或现实真值。
-
 ### NFC-65a945149ea577df · C-0701｜AI诞生自主意识完整路径
 
 这是 canonical nonfunction-claims registry 中的原子登记。claim class 为 `ONTOLOGICAL_OR_METAPHYSICAL_CLAIM`，断言类型为 `METAPHYSICAL`，最终处置为 `RETAINED_AS_RESEARCH_HYPOTHESIS`。
@@ -3001,5 +2989,17 @@ M 轴 `M0`；E 轴 `E1`；复现状态 `NO_REPLICATION_CLAIMED`。
 范围：Historical source wording only；量词状态：`BOUNDED_OR_NO_UNIVERSAL_QUANTIFIER_DETECTED`。Claim ceiling：Historical source wording only; it is not a current repository endorsement.
 
 来源锚点：[统一案例总表/0354-C-355-组织层级=信息保真度结构 — CEO→VP→执行层每层内部同层沟通非对称退化最小,扁平化ηfidelity断崖下降.md](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0354-C-355-%E7%BB%84%E7%BB%87%E5%B1%82%E7%BA%A7%3D%E4%BF%A1%E6%81%AF%E4%BF%9D%E7%9C%9F%E5%BA%A6%E7%BB%93%E6%9E%84%20%E2%80%94%20CEO%E2%86%92VP%E2%86%92%E6%89%A7%E8%A1%8C%E5%B1%82%E6%AF%8F%E5%B1%82%E5%86%85%E9%83%A8%E5%90%8C%E5%B1%82%E6%B2%9F%E9%80%9A%E9%9D%9E%E5%AF%B9%E7%A7%B0%E9%80%80%E5%8C%96%E6%9C%80%E5%B0%8F%2C%E6%89%81%E5%B9%B3%E5%8C%96%CE%B7fidelity%E6%96%AD%E5%B4%96%E4%B8%8B%E9%99%8D.md)
+
+> 浏览器只投影 canonical 记录。显式处置或 quarantine 只闭合登记与谱系，不等于数学证明、外部证据、普遍有效或现实真值。
+
+### NFC-69236f47f87a1707 · [D403｜δ_c-相变点统一函数](docs/zh/functions/items/D403.md)
+
+这是 canonical nonfunction-claims registry 中的原子登记。claim class 为 `UNRESOLVED_CLAIM`，断言类型为 `UNRESOLVED`，最终处置为 `HISTORICAL_ONLY`。
+
+M 轴 `M0`；E 轴 `E1`；复现状态 `NO_REPLICATION_CLAIMED`。
+
+范围：Historical source wording only；量词状态：`BOUNDED_OR_NO_UNIVERSAL_QUANTIFIER_DETECTED`。Claim ceiling：Historical source wording only; it is not a current repository endorsement.
+
+来源锚点：[统一函数总表/0439-D403-δ_c-相变点统一函数.md](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0439-D403-%CE%B4_c-%E7%9B%B8%E5%8F%98%E7%82%B9%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0.md)
 
 > 浏览器只投影 canonical 记录。显式处置或 quarantine 只闭合登记与谱系，不等于数学证明、外部证据、普遍有效或现实真值。

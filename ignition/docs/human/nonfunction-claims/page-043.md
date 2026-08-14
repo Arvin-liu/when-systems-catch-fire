@@ -4,18 +4,6 @@
 
 [返回索引](README.md) · [上一页](page-042.md) · [下一页](page-044.md)
 
-### NFC-8e5bd0e390289731 · | 时制／体貌／终点 | 过去／非过去、`ている` 等与动词类别、语境互动。 | `ている` 不可统一映射英语 progressive 或中文 `在`。 |
-
-这是 canonical nonfunction-claims registry 中的原子登记。claim class 为 `UNRESOLVED_CLAIM`，断言类型为 `UNRESOLVED`，最终处置为 `ACCEPTED_AS_DEFINITION`。
-
-M 轴 `M0`；E 轴 `E0`；复现状态 `NO_REPLICATION_CLAIMED`。
-
-范围：Exact source-defined repository scope；量词状态：`BOUNDED_OR_NO_UNIVERSAL_QUANTIFIER_DETECTED`。Claim ceiling：May be stated only as a repository definition, policy, status record or explicitly scoped convention; it is not external truth.
-
-来源锚点：[docs/language-thought/profiles/ja.md](../../../docs/language-thought/profiles/ja.md)
-
-> 浏览器只投影 canonical 记录。显式处置或 quarantine 只闭合登记与谱系，不等于数学证明、外部证据、普遍有效或现实真值。
-
 ### NFC-8e5ddf73c4760d87 · if isinstance(item.get("non_impact_proof"), dict):
 
 这是 canonical nonfunction-claims registry 中的原子登记。claim class 为 `THEOREM_OR_MATHEMATICAL_CLAIM`，断言类型为 `MATHEMATICAL`，最终处置为 `PENDING_PROOF`。
@@ -3001,5 +2989,17 @@ M 轴 `M0`；E 轴 `E1`；复现状态 `NOT_APPLICABLE`。
 范围：Historical source wording only；量词状态：`BOUNDED_OR_NO_UNIVERSAL_QUANTIFIER_DETECTED`。Claim ceiling：Historical source wording only; it is not a current repository endorsement.
 
 来源锚点：[统一案例总表/INDEX.md](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/INDEX.md)
+
+> 浏览器只投影 canonical 记录。显式处置或 quarantine 只闭合登记与谱系，不等于数学证明、外部证据、普遍有效或现实真值。
+
+### NFC-92372ec37d21c433 · for row in all_rows["evidence_regimes"]:
+
+这是 canonical nonfunction-claims registry 中的原子登记。claim class 为 `EMPIRICAL_OR_LITERATURE_CLAIM`，断言类型为 `EMPIRICAL`，最终处置为 `PENDING_LITERATURE_ADJUDICATION`。
+
+M 轴 `M0`；E 轴 `E0`；复现状态 `NO_REPLICATION_CLAIMED`。
+
+范围：Exact source-defined repository scope；量词状态：`UNRESOLVED_OR_OVERBROAD`。Claim ceiling：Source or literature-dependent assertion only; support, novelty and exact scope remain unadjudicated.
+
+来源锚点：[tools/validate_data.py](../../../tools/validate_data.py)
 
 > 浏览器只投影 canonical 记录。显式处置或 quarantine 只闭合登记与谱系，不等于数学证明、外部证据、普遍有效或现实真值。

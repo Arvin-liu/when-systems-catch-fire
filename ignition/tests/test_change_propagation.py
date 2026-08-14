@@ -17,6 +17,8 @@ from tools.operations.compute_change_propagation import (
 )
 from tools.validate_iteration_sync import _era_aware_recompute
 
+REPO_ROOT = ROOT.parent
+
 
 def _git(repo: Path, *args: str) -> str:
     return subprocess.run(["git", "-C", str(repo), *args], check=True,
@@ -1013,7 +1015,7 @@ class ChangePropagationTests(unittest.TestCase):
 
     def test_f10_both_lineage_endpoints_are_ancestors(self):
         """Both known lineage endpoints (117d8508 and 56b83ae8) must be ancestors of current HEAD."""
-        repo_root = str(ROOT)
+        repo_root = str(REPO_ROOT)
         head = subprocess.run(["git", "-C", repo_root, "rev-parse", "HEAD"],
                               check=True, capture_output=True, text=True).stdout.strip()
         for sha, label in [
@@ -1029,7 +1031,7 @@ class ChangePropagationTests(unittest.TestCase):
 
     def test_f10_diff_coverage_does_not_shrink_critical_assets(self):
         """Critical security asset files must exist in the diff coverage from base main to HEAD."""
-        repo_root = str(ROOT)
+        repo_root = str(REPO_ROOT)
         head = subprocess.run(["git", "-C", repo_root, "rev-parse", "HEAD"],
                               check=True, capture_output=True, text=True).stdout.strip()
         diff_files = subprocess.run(
@@ -1039,13 +1041,13 @@ class ChangePropagationTests(unittest.TestCase):
         ).stdout.strip().splitlines()
         diff_set = set(diff_files)
         critical_assets = [
-            "data/operations/generated-output-authority.json",
-            "tests/test_human_visibility_gate.py",
-            "tools/operations/validate_generated_output_authority.py",
+            {"data/operations/generated-output-authority.json", "ignition/data/operations/generated-output-authority.json"},
+            {"tests/test_human_visibility_gate.py", "ignition/tests/test_human_visibility_gate.py"},
+            {"tools/operations/validate_generated_output_authority.py", "ignition/tools/operations/validate_generated_output_authority.py"},
         ]
-        for asset in critical_assets:
-            self.assertIn(asset, diff_set,
-                          f"Critical security asset '{asset}' missing from diff coverage")
+        for aliases in critical_assets:
+            self.assertTrue(aliases & diff_set,
+                            f"Critical security asset aliases {sorted(aliases)} missing from diff coverage")
 
     def test_f10_generated_output_authority_key_files_must_exist(self):
         """Generated-output authority key files must exist in the repository."""
