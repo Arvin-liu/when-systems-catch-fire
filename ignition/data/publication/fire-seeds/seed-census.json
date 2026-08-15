@@ -2846,7 +2846,7 @@
       "title": "STATE-CHANGELOG",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "3b6f9e808cbbfebeb20122d52e60e8035e448e13b6c5c29e59b7625bade8fbc8",
+      "source_sha256": "85aaa777a3aba8b4eaa65ea3827c74f851e76e29215b617dd417c840b14d3b32",
       "disposition": "MERGED_INTO_SEED",
       "seed_ids": [
         "FS-23"
@@ -2904,7 +2904,7 @@
       "title": "closure-summary",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "2a4db8203407efb146633819dd5844244ac06a70d2ec0d791546e78e3b1264b1",
+      "source_sha256": "9ca6944801ab08e9ff2c51571dd2ce07252b216b7a6a68f71d01cfa0bf755445",
       "disposition": "MERGED_INTO_SEED",
       "seed_ids": [
         "FS-07"
@@ -3477,7 +3477,7 @@
       "title": "全语料非函数型断言裁决索引",
       "knowledge_status": "CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS",
       "subject": null,
-      "source_sha256": "dbf2925ccdcd388d83b67a414f22ea8ccd09d2cc87dcd98b3b745762c8997d73",
+      "source_sha256": "35c272dbf122141350aa481fee2635eb004a676538fc09d13071b8f55b485650",
       "disposition": "NO_SEED_DELTA",
       "seed_ids": [],
       "review_basis": "KNOWLEDGE_LAYERED_READING_TRIAGE",
