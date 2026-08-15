@@ -7,7 +7,7 @@
     "compute_change_propagation": {
       "generator_id": "compute_change_propagation",
       "canonical_tool": "tools/operations/compute_change_propagation.py",
-      "canonical_tool_digest_sha256": "086d642877a9801417e60a22069e24e11a8c226d08a6f4fc193ea461493e8c6a",
+      "canonical_tool_digest_sha256": "3a6472bce6ac56c9549061ac5466f347146da1dae00885375a94f59d792dc0ca",
       "allowed_output_paths": [
         "data/operations/propagation/121Q32I-report.json"
       ],
@@ -16,6 +16,23 @@
         "data/operations/project-components.json",
         "data/operations/change-propagation-topology.json",
         "data/operations/synchronization-surfaces.json"
+      ],
+      "freshness_mode": "byte_level_recompute",
+      "lifecycle_status": "active",
+      "authority_schema_version": "1.0.0"
+    },
+    "agent_platform_r2_blast_radius": {
+      "generator_id": "agent_platform_r2_blast_radius",
+      "canonical_tool": "tools/propagation/agent_platform_blast_radius.py",
+      "canonical_tool_digest_sha256": "8be143e8eda453a1ab944d690f445d4b8b0b9ff2053806802453982a5e5624f2",
+      "allowed_output_paths": [
+        "data/operations/propagation/121-agent-platform-r2-blast-radius-report.json"
+      ],
+      "required_input_authorities": [
+        "data/operations/propagation/agent-platform-r2-propagation-contract.json",
+        "data/operations/change-propagation-topology.json",
+        "data/operations/project-components.json",
+        "tools/propagation/impact_contract.py"
       ],
       "freshness_mode": "byte_level_recompute",
       "lifecycle_status": "active",

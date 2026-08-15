@@ -1,0 +1,216 @@
+{
+  "contract_version": "1.0.0",
+  "task_id": "IGNITION-20260816-121",
+  "claim_boundary": "Declared repository projection boundaries only; a matching path is not real-world causality, truth, Owner acceptance, or epistemic acceptance.",
+  "projection_classes": [
+    "agent_platform.runtime",
+    "agent_platform.supervisor",
+    "agent_platform.memory",
+    "agent_platform.reasoner_gateway",
+    "agent_platform.pack_routing",
+    "knowledge.function_census",
+    "knowledge.nonfunction_registry",
+    "knowledge.experience",
+    "knowledge.fire_seeds",
+    "writing.human_surface",
+    "writing.publication_registry",
+    "human.front_door",
+    "pack.registry",
+    "pack.manifest_validation"
+  ],
+  "source_domains": {
+    "agent_runtime": {
+      "source_paths": [
+        "agent_runtime/",
+        "agent_kernel/",
+        "schemas/agent-runtime/",
+        "docs/architecture/agent-runtime-r0.md",
+        "docs/architecture/agent-runtime-r1.md"
+      ],
+      "affected_projections": [
+        "agent_platform.runtime",
+        "agent_platform.supervisor",
+        "agent_platform.memory",
+        "agent_platform.reasoner_gateway",
+        "agent_platform.pack_routing"
+      ],
+      "forbidden_projections": [
+        "knowledge.function_census",
+        "knowledge.nonfunction_registry",
+        "knowledge.experience",
+        "knowledge.fire_seeds",
+        "writing.human_surface",
+        "writing.publication_registry",
+        "human.front_door",
+        "pack.registry",
+        "pack.manifest_validation"
+      ]
+    },
+    "knowledge": {
+      "source_paths": [
+        "data/foundation/claims/",
+        "data/foundation/evidence/",
+        "data/foundation/nonfunction-claims/"
+      ],
+      "affected_projections": [
+        "knowledge.function_census",
+        "knowledge.nonfunction_registry",
+        "knowledge.experience",
+        "knowledge.fire_seeds"
+      ],
+      "forbidden_projections": [
+        "agent_platform.runtime",
+        "agent_platform.supervisor",
+        "agent_platform.memory",
+        "agent_platform.reasoner_gateway",
+        "agent_platform.pack_routing",
+        "writing.human_surface",
+        "writing.publication_registry",
+        "human.front_door",
+        "pack.registry",
+        "pack.manifest_validation"
+      ]
+    },
+    "writing": {
+      "source_paths": [
+        "docs/publication/",
+        "data/publication/",
+        "templates/publication/"
+      ],
+      "affected_projections": [
+        "writing.human_surface",
+        "writing.publication_registry",
+        "human.front_door"
+      ],
+      "forbidden_projections": [
+        "agent_platform.runtime",
+        "agent_platform.supervisor",
+        "agent_platform.memory",
+        "agent_platform.reasoner_gateway",
+        "agent_platform.pack_routing",
+        "knowledge.function_census",
+        "knowledge.nonfunction_registry",
+        "knowledge.experience",
+        "knowledge.fire_seeds",
+        "pack.registry",
+        "pack.manifest_validation"
+      ]
+    },
+    "pack_manifest": {
+      "source_paths": [
+        "packs/knowledge/manifest.json",
+        "packs/research/manifest.json",
+        "packs/writing/manifest.json",
+        "packs/maintenance/manifest.json"
+      ],
+      "affected_projections": [
+        "pack.registry",
+        "pack.manifest_validation",
+        "agent_platform.pack_routing"
+      ],
+      "forbidden_projections": [
+        "agent_platform.runtime",
+        "agent_platform.supervisor",
+        "agent_platform.memory",
+        "agent_platform.reasoner_gateway",
+        "knowledge.function_census",
+        "knowledge.nonfunction_registry",
+        "knowledge.experience",
+        "knowledge.fire_seeds",
+        "writing.human_surface",
+        "writing.publication_registry",
+        "human.front_door"
+      ]
+    }
+  },
+  "fixtures": {
+    "runtime_only": {
+      "changed_paths": ["agent_runtime/fixtures/runtime-only-helper.py"],
+      "expected_source_domains": ["agent_runtime"],
+      "expected_affected_projections": [
+        "agent_platform.memory",
+        "agent_platform.pack_routing",
+        "agent_platform.reasoner_gateway",
+        "agent_platform.runtime",
+        "agent_platform.supervisor"
+      ],
+      "forbidden_affected_projections": [
+        "knowledge.experience",
+        "knowledge.function_census",
+        "knowledge.nonfunction_registry",
+        "knowledge.fire_seeds",
+        "writing.human_surface",
+        "writing.publication_registry",
+        "human.front_door",
+        "pack.registry",
+        "pack.manifest_validation"
+      ]
+    },
+    "knowledge_claim": {
+      "changed_paths": ["data/foundation/claims/claims.jsonl"],
+      "expected_source_domains": ["knowledge"],
+      "expected_affected_projections": [
+        "knowledge.experience",
+        "knowledge.fire_seeds",
+        "knowledge.function_census",
+        "knowledge.nonfunction_registry"
+      ],
+      "forbidden_affected_projections": [
+        "agent_platform.runtime",
+        "agent_platform.supervisor",
+        "agent_platform.memory",
+        "agent_platform.reasoner_gateway",
+        "agent_platform.pack_routing",
+        "writing.human_surface",
+        "writing.publication_registry",
+        "human.front_door",
+        "pack.registry",
+        "pack.manifest_validation"
+      ]
+    },
+    "writing_surface": {
+      "changed_paths": ["docs/publication/zhiyuan-writing-method.md"],
+      "expected_source_domains": ["writing"],
+      "expected_affected_projections": [
+        "human.front_door",
+        "writing.human_surface",
+        "writing.publication_registry"
+      ],
+      "forbidden_affected_projections": [
+        "agent_platform.runtime",
+        "agent_platform.supervisor",
+        "agent_platform.memory",
+        "agent_platform.reasoner_gateway",
+        "agent_platform.pack_routing",
+        "knowledge.function_census",
+        "knowledge.nonfunction_registry",
+        "knowledge.experience",
+        "knowledge.fire_seeds",
+        "pack.registry",
+        "pack.manifest_validation"
+      ]
+    },
+    "pack_manifest": {
+      "changed_paths": ["packs/maintenance/manifest.json"],
+      "expected_source_domains": ["pack_manifest"],
+      "expected_affected_projections": [
+        "agent_platform.pack_routing",
+        "pack.manifest_validation",
+        "pack.registry"
+      ],
+      "forbidden_affected_projections": [
+        "agent_platform.runtime",
+        "agent_platform.supervisor",
+        "agent_platform.memory",
+        "agent_platform.reasoner_gateway",
+        "knowledge.function_census",
+        "knowledge.nonfunction_registry",
+        "knowledge.experience",
+        "knowledge.fire_seeds",
+        "writing.human_surface",
+        "writing.publication_registry",
+        "human.front_door"
+      ]
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "claim_boundary": "Declared repository projection boundaries only; a matching path is not real-world causality, truth, Owner acceptance, or epistemic acceptance.",
+  "contract_version": "1.0.0",
+  "fixtures": {
+    "knowledge_claim": {
+      "affected_projections": [
+        "knowledge.experience",
+        "knowledge.fire_seeds",
+        "knowledge.function_census",
+        "knowledge.nonfunction_registry"
+      ],
+      "changed_paths": [
+        "data/foundation/claims/claims.jsonl"
+      ],
+      "forbidden_reached": [],
+      "source_domains": [
+        "knowledge"
+      ],
+      "status": "PASS"
+    },
+    "pack_manifest": {
+      "affected_projections": [
+        "agent_platform.pack_routing",
+        "pack.manifest_validation",
+        "pack.registry"
+      ],
+      "changed_paths": [
+        "packs/maintenance/manifest.json"
+      ],
+      "forbidden_reached": [],
+      "source_domains": [
+        "pack_manifest"
+      ],
+      "status": "PASS"
+    },
+    "runtime_only": {
+      "affected_projections": [
+        "agent_platform.memory",
+        "agent_platform.pack_routing",
+        "agent_platform.reasoner_gateway",
+        "agent_platform.runtime",
+        "agent_platform.supervisor"
+      ],
+      "changed_paths": [
+        "agent_runtime/fixtures/runtime-only-helper.py"
+      ],
+      "forbidden_reached": [],
+      "source_domains": [
+        "agent_runtime"
+      ],
+      "status": "PASS"
+    },
+    "writing_surface": {
+      "affected_projections": [
+        "human.front_door",
+        "writing.human_surface",
+        "writing.publication_registry"
+      ],
+      "changed_paths": [
+        "docs/publication/zhiyuan-writing-method.md"
+      ],
+      "forbidden_reached": [],
+      "source_domains": [
+        "writing"
+      ],
+      "status": "PASS"
+    }
+  },
+  "generator_id": "agent_platform_r2_blast_radius",
+  "source_authority_sha256": {
+    "data/operations/change-propagation-topology.json": "909bca99eeca3d1cb52437135bc45df989180337c892be5888b45b3cf16fd683",
+    "data/operations/project-components.json": "25298001041235dd9e32cdb5bab411058b846a2399ca9f5146578f4b755fb5c8",
+    "data/operations/propagation/agent-platform-r2-propagation-contract.json": "384708342789c6ab8c746e0bd7a6d02ead013eb57b97102d9b97304242e1247b",
+    "tools/propagation/impact_contract.py": "491b86958519832a3b24db19d68dd7a6f8097dcb3746ce41b0dfa4afa6b08432"
+  },
+  "status": "PASS",
+  "task_id": "IGNITION-20260816-121"
+}

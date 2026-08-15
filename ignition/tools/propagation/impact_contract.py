@@ -91,6 +91,79 @@ GOVERNED_SOURCES = {
     ],
 }
 
+# R2 keeps the existing nine-dimension impact contract stable for historical
+# iterations and adds a separate, source-driven blast-radius contract for the
+# Agent Platform domains. This prevents a new runtime helper from being
+# silently interpreted as a Knowledge or publication source while avoiding a
+# retroactive rewrite of older iteration baselines.
+BLAST_RADIUS_CONTRACT_RELATIVE = (
+    "data/operations/propagation/agent-platform-r2-propagation-contract.json"
+)
+BLAST_RADIUS_SOURCE_AUTHORITIES = [
+    BLAST_RADIUS_CONTRACT_RELATIVE,
+    "data/operations/change-propagation-topology.json",
+    "data/operations/project-components.json",
+    "tools/propagation/impact_contract.py",
+]
+
+# These specs are append-only historical artifacts. R2 intentionally evolves
+# the component registry and propagation topology after their merge points;
+# their SYSTEM_MAP decision must therefore be checked against their recorded
+# baseline for those two sources, not retroactively rewritten by the new task.
+HISTORICAL_SEALED_TASKS = {104, 105, 106}
+HISTORICAL_SEALED_SOURCES = {
+    "data/operations/project-components.json",
+    "data/operations/change-propagation-topology.json",
+}
+
+
+def load_blast_radius_contract(repo_root: str) -> Dict:
+    """Load the R2 domain-boundary contract from a repository root."""
+    path = os.path.join(repo_root, BLAST_RADIUS_CONTRACT_RELATIVE)
+    with open(path, "r", encoding="utf-8") as fh:
+        return json.load(fh)
+
+
+def _blast_path_matches(path: str, pattern: str) -> bool:
+    """Match only exact paths or declared repository-relative prefixes."""
+    return path.startswith(pattern) if pattern.endswith("/") else path == pattern
+
+
+def derive_blast_radius(changed_paths: List[str], contract: Dict) -> Dict:
+    """Derive source domains and projection set without executing generators.
+
+    A path matching zero or multiple source domains is returned as residue. The
+    caller decides whether that residue blocks a fixture or a commit.
+    """
+    domains = contract.get("source_domains", {})
+    source_domains: Dict[str, List[str]] = {}
+    unmapped: List[str] = []
+    ambiguous: Dict[str, List[str]] = {}
+    affected: set[str] = set()
+    for raw_path in changed_paths:
+        path = str(raw_path)
+        hits = sorted(
+            domain_id
+            for domain_id, domain in domains.items()
+            if any(_blast_path_matches(path, pattern) for pattern in domain.get("source_paths", []))
+        )
+        if not hits:
+            unmapped.append(path)
+            continue
+        if len(hits) > 1:
+            ambiguous[path] = hits
+            continue
+        domain_id = hits[0]
+        source_domains.setdefault(domain_id, []).append(path)
+        affected.update(domains[domain_id].get("affected_projections", []))
+    return {
+        "changed_paths": sorted(changed_paths),
+        "source_domains": {key: sorted(value) for key, value in sorted(source_domains.items())},
+        "unmapped_paths": sorted(unmapped),
+        "ambiguous_paths": {key: value for key, value in sorted(ambiguous.items())},
+        "affected_projections": sorted(affected),
+    }
+
 
 def _sha256(path: str) -> Optional[str]:
     if not os.path.exists(path):
@@ -102,7 +175,12 @@ def _sha256(path: str) -> Optional[str]:
     return h.hexdigest()
 
 
-def compute_dimension(dimension: str, repo_root: str, baseline: Dict[str, str]) -> Dict:
+def compute_dimension(
+    dimension: str,
+    repo_root: str,
+    baseline: Dict[str, str],
+    sealed_sources: Optional[set[str]] = None,
+) -> Dict:
     """Independently derive a dimension's decision from actual file state.
 
     ``baseline`` maps governed-source relative path -> expected sha256 at the
@@ -113,6 +191,8 @@ def compute_dimension(dimension: str, repo_root: str, baseline: Dict[str, str]) 
     current: Dict[str, Optional[str]] = {}
     changed: List[str] = []
     missing: List[str] = []
+    sealed_sources = sealed_sources or set()
+    sealed_drift: List[str] = []
     for src in sources:
         abs_path = os.path.join(repo_root, src)
         cur = _sha256(abs_path)
@@ -123,6 +203,13 @@ def compute_dimension(dimension: str, repo_root: str, baseline: Dict[str, str]) 
         if src not in baseline:
             # New governed source not present at baseline -> cannot assert no-impact.
             changed.append(src)
+            continue
+        if src in sealed_sources:
+            if baseline[src] != cur:
+                sealed_drift.append(src)
+            # A historical sealed source is judged at its own recorded
+            # merge-point hash. Drift is recorded, but cannot mutate the
+            # historical iteration's declared impact decision.
             continue
         if baseline[src] != cur:
             changed.append(src)
@@ -136,6 +223,7 @@ def compute_dimension(dimension: str, repo_root: str, baseline: Dict[str, str]) 
         "dimension": dimension,
         "decision": decision,
         "changed_sources": changed,
+        "sealed_source_drift": sealed_drift,
         "missing_sources": missing,
         "current_hashes": current,
     }
@@ -148,13 +236,19 @@ def verify_impact_spec(spec_path: str, repo_root: str) -> List[str]:
         spec = json.load(fh)
     problems: List[str] = []
     declared = spec.get("dimensions", {})
+    task_number = spec.get("task_number")
+    sealed_sources = (
+        HISTORICAL_SEALED_SOURCES
+        if task_number in HISTORICAL_SEALED_TASKS
+        else set()
+    )
     for dim in DIMENSIONS:
         if dim not in declared:
             problems.append(f"{spec.get('task_number')}: dimension {dim} missing from declared spec")
             continue
         entry = declared[dim]
         baseline = entry.get("baseline_sha256", {})
-        derived = compute_dimension(dim, repo_root, baseline)
+        derived = compute_dimension(dim, repo_root, baseline, sealed_sources=sealed_sources)
         if derived["decision"] != entry.get("declared"):
             problems.append(
                 f"{spec.get('task_number')}: dimension {dim} declared "

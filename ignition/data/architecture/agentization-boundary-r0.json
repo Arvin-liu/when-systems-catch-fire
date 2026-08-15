@@ -887,6 +887,17 @@
       "reason": "is an optional bounded capability/feedback pack consumed by the runtime; adapter/reference only in R0, existing source tree remains in place"
     },
     {
+      "component_id": "maintenance_pack",
+      "current_path": "packs/maintenance/manifest.json",
+      "canonical_ref": "packs/maintenance/manifest.json",
+      "primary_role": "DOMAIN_PACK",
+      "secondary_roles": [],
+      "domain_binding": "knowledge",
+      "kernel_dependency_direction": "CONSUMES_GENERIC_CONTRACT",
+      "current_move_disposition": "REF_ONLY_NO_MOVE",
+      "reason": "is an optional bounded capability/feedback pack consumed by the runtime; adapter/reference only in R0, existing source tree remains in place"
+    },
+    {
       "component_id": "nonknowledge_pilot",
       "current_path": "agent_runtime/pilots/non_knowledge_manifest.py",
       "canonical_ref": "agent_runtime/pilots/non_knowledge_manifest.py",

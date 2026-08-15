@@ -169,6 +169,34 @@ Policy and provenance-preserving migration. No failure repair round was needed.
 - One deterministic repair round corrected a validator entrypoint to match the
   live Knowledge Pack manifest; no cross-domain authority was added.
 
+## Step 08 — COMPLETE
+
+- Added the source-driven `agent-platform-r2-propagation-contract.json` and
+  strict schema. Its four fixtures have explicit source domains, affected
+  projections and forbidden projections for runtime-only, Knowledge claim,
+  Writing surface and Pack manifest changes.
+- Updated the declared propagation topology to `1.5.0` with non-map-visible
+  R2 Runtime/Pack relations. The component registry is `1.5.0`, the R2 Runtime
+  node now names the bounded R2 surface, and the registered maintenance Pack is
+  represented by the visible Domain Pack Contract rather than added as a new
+  public architecture layer. The derived system map remains `64` visible
+  nodes / `70` typed edges.
+- Added `impact_contract.py` blast-radius derivation and historical sealed-source
+  handling. Tasks 104/105/106 retain their own append-only system-map baselines;
+  their old NO_IMPACT decisions are not rewritten by the R2 topology change.
+- Added the generator source contract/schema, registered
+  `agent_platform_r2_blast_radius`, deterministic report and standalone
+  validators. The stale pre-existing `compute_change_propagation` registry
+  digest was repaired to the live canonical tool digest.
+- Gates: blast-radius fixtures `5/5 PASS`; change-propagation regression
+  `57/57 PASS` (one historical skip); reconciliation `16/16 PASS`; all five
+  changed JSON contracts schema-valid; system-map generator, blast-radius
+  report, generator-source contract and reconciliation checks `PASS`.
+- Two deterministic repair rounds handled historical impact-spec drift and
+  regenerated the report after source-authority hash changes. No network,
+  remote mutation, Knowledge claim, Owner, truth or epistemic authority was
+  introduced.
+
 ## Step ledger
 
 | Step | State | Commit | Remote SHA | Gate summary |
@@ -180,8 +208,8 @@ Policy and provenance-preserving migration. No failure repair round was needed.
 | 04 | COMPLETE | `f6d93c119bde1049aaf032b0871479fa2fc86510` | `f6d93c119bde1049aaf032b0871479fa2fc86510` | Supervisor R0 DAG, budgets, approvals, bounded retry/handoff, recovery and regression gates PASS |
 | 05 | COMPLETE | `a16c2c3ed61e825ec3e7e14d24cd85f205f027bc` | `a16c2c3ed61e825ec3e7e14d24cd85f205f027bc` | Agent Profile R1 registry, legal scope projection, Pack selection and profile-driven approval gates PASS |
 | 06 | COMPLETE | `b1710307f17160cb820fb54876c0ff75ee285f3f` | `b1710307f17160cb820fb54876c0ff75ee285f3f` | Reasoner Gateway R1 schema, digest, bounded capsule, provider-neutral adapters and adversarial gates PASS |
-| 07 | COMPLETE | pending until checkpoint commit | pending | Pack-aware catalog/provenance/routing and three cross-Pack authority negative gates PASS |
-| 08 | PENDING | — | — | — |
+| 07 | COMPLETE | `64e20ef250397a9aebefa5a6f6cf475c279d67a1` | `64e20ef250397a9aebefa5a6f6cf475c279d67a1` | Pack-aware catalog/provenance/routing and three cross-Pack authority negative gates PASS |
+| 08 | COMPLETE | pending until checkpoint commit | pending | Four source-contract blast-radius fixtures, topology/impact/generator updates, historical reconciliation and map gates PASS |
 | 09 | PENDING | — | — | — |
 | 10 | PENDING | — | — | — |
 | 11 | PENDING | — | — | — |

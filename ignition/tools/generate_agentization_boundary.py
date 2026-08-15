@@ -43,6 +43,7 @@ PACK_IDS = {
     "knowledge_domain_pack",
     "research_pack_reos_light",
     "writing_pack",
+    "maintenance_pack",
     "nonknowledge_pilot",
 }
 ADDED_R0_IDS = {
@@ -110,7 +111,7 @@ def classify(component: dict) -> tuple[str, list[str], str, str, str]:
 
     if cid in ADDED_R0_IDS:
         disposition = "ADD_R0_COMPONENT"
-    elif cid in {"knowledge_domain_pack", "research_pack_reos_light", "writing_pack", "nonknowledge_pilot"}:
+    elif cid in {"knowledge_domain_pack", "research_pack_reos_light", "writing_pack", "maintenance_pack", "nonknowledge_pilot"}:
         disposition = "REF_ONLY_NO_MOVE"
     elif primary == "HISTORICAL_OR_LEGACY":
         disposition = "HISTORICAL_NO_MOVE"
@@ -138,7 +139,7 @@ def build() -> dict:
         disposition = "KEEP_CURRENT_PATH_R0"
         if cid in ADDED_R0_IDS:
             disposition = "ADD_R0_COMPONENT"
-        elif cid in {"knowledge_domain_pack", "research_pack_reos_light", "writing_pack", "nonknowledge_pilot"}:
+        elif cid in {"knowledge_domain_pack", "research_pack_reos_light", "writing_pack", "maintenance_pack", "nonknowledge_pilot"}:
             disposition = "REF_ONLY_NO_MOVE"
         elif primary == "HISTORICAL_OR_LEGACY":
             disposition = "HISTORICAL_NO_MOVE"
@@ -160,7 +161,7 @@ def build() -> dict:
     for record in records:
         if record["component_id"] in ADDED_R0_IDS:
             record["reason"] += "; newly added R0 boundary asset, no existing domain tree was moved"
-        elif record["component_id"] in {"knowledge_domain_pack", "research_pack_reos_light", "writing_pack", "nonknowledge_pilot"}:
+        elif record["component_id"] in {"knowledge_domain_pack", "research_pack_reos_light", "writing_pack", "maintenance_pack", "nonknowledge_pilot"}:
             record["reason"] += "; adapter/reference only in R0, existing source tree remains in place"
     return {
         "manifest_version": "R0",

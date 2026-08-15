@@ -10,8 +10,8 @@
     "component_registry": "data/operations/project-components.json",
     "propagation_topology": "data/operations/change-propagation-topology.json",
     "layout_overlay": "data/architecture/interactive-system-map-layout.json",
-    "component_registry_version": "1.4.0",
-    "topology_version": "1.4.0",
+    "component_registry_version": "1.5.0",
+    "topology_version": "1.5.0",
     "layout_version": "1.3.0"
   },
   "layout": {
@@ -556,10 +556,10 @@
     },
     {
       "id": "agent_runtime_r0",
-      "label": "Agent Runtime R1 (R0 base)",
+      "label": "Agent Runtime R2 (R0 base)",
       "group": "agentization",
       "target": "agent_runtime/README.md",
-      "description": "R0 typed loop 加上 R1 的真实本地行动、批准、lease、journal、恢复与 bounded rollback；仍保持领域无关。",
+      "description": "R0 typed loop 加上 R1 真实本地行动与 R2 的 Pack、Memory、Supervisor、Profile、Gateway、Routing 边界；仍保持领域无关。",
       "lifecycle_status": "current"
     },
     {
@@ -1190,9 +1190,9 @@
     }
   ],
   "component_coverage": {
-    "registry_components": 75,
+    "registry_components": 76,
     "visible_nodes": 64,
-    "hidden_components": 11,
+    "hidden_components": 12,
     "hidden_representatives": {
       "foundation_data": "foundation",
       "historical_reports": "current_state",
@@ -1204,7 +1204,8 @@
       "propagation_topology": "sync",
       "system_map": "current_state",
       "system_map_layout": "sync",
-      "system_map_projection": "sync"
+      "system_map_projection": "sync",
+      "maintenance_pack": "domain_pack_contract"
     },
     "orphan_components": []
   }

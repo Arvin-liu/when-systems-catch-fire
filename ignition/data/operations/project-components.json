@@ -940,8 +940,13 @@
         ".github/workflows/foundation-validation.yml",
         "tests/fixtures/",
         "data/operations/generated-output-authority.json",
+        "data/operations/generator-source-contracts.json",
         "schemas/operations/generated-output-authority.schema.json",
+        "schemas/operations/generator-source-contract.schema.json",
+        "tests/test_agent_platform_blast_radius.py",
         "tools/operations/validate_generated_output_authority.py",
+        "tools/propagation/",
+        "schemas/operations/agent-platform-r2-propagation-contract.schema.json",
         ".gitignore"
       ]
     },
@@ -1585,10 +1590,10 @@
       "canonical_target": "agent_runtime/README.md",
       "component_id": "agent_runtime_r0",
       "component_type": "operation_control",
-      "description": "R0 typed loop 加上 R1 的真实本地行动、批准、lease、journal、恢复与 bounded rollback；仍保持领域无关。",
-      "label": "Agent Runtime R1 (R0 base)",
+      "description": "R0 typed loop 加上 R1 真实本地行动与 R2 的 Pack、Memory、Supervisor、Profile、Gateway、Routing 边界；仍保持领域无关。",
+      "label": "Agent Runtime R2 (R0 base)",
       "layer_or_overlay": "overlay",
-      "lifecycle": {"source": "agent_runtime/", "status": "current", "version": "EXPERIMENTAL_RUNTIME_R1_WITH_OPEN_OBLIGATIONS"},
+      "lifecycle": {"source": "agent_runtime/", "status": "current", "version": "EXPERIMENTAL_RUNTIME_R2_WITH_OPEN_OBLIGATIONS"},
       "map_projection": {"group": "agentization", "visible": true},
       "path_patterns": ["agent_runtime/", "data/agent-runtime/pilots/r1-real-local/", "docs/architecture/agent-runtime-r1.md", "tools/validate_agent_runtime_boundary.py", "tests/test_agent_runtime_r0.py", "tests/test_agent_runtime_r1.py"]
     },
@@ -1602,7 +1607,7 @@
       "layer_or_overlay": "governance",
       "lifecycle": {"source": "schemas/agent-runtime/agent-profile.schema.json", "status": "current", "version": "R0"},
       "map_projection": {"group": "agentization", "visible": true},
-      "path_patterns": ["data/agent-runtime/agent-profile-r0.json", "schemas/agent-runtime/agent-profile.schema.json"]
+      "path_patterns": ["data/agent-runtime/agent-profile-r0.json", "data/agent-runtime/agent-profiles-r1.json", "schemas/agent-runtime/agent-profile.schema.json", "schemas/agent-runtime/agent-profile-r1.schema.json"]
     },
     {
       "authority": "canonical",
@@ -1677,6 +1682,18 @@
       "path_patterns": ["docs/publication/zhiyuan-writing-method.md", "templates/publication/zhiyuan-writing-spec.md"]
     },
     {
+      "authority": "canonical",
+      "canonical_target": "packs/maintenance/manifest.json",
+      "component_id": "maintenance_pack",
+      "component_type": "architecture_layer",
+      "description": "最小仓库维护 Pack 的 manifest；由 Pack Registry 声明能力，不获得通用 Owner、truth 或远端写权限。",
+      "label": "Maintenance Pack",
+      "layer_or_overlay": "infrastructure",
+      "lifecycle": {"source": "packs/maintenance/manifest.json", "status": "current", "version": "bounded-pack"},
+      "map_projection": {"represented_by": "domain_pack_contract", "no_change_reason": "Maintenance Pack is a bounded manifest projection represented by the visible Domain Pack Contract node.", "visible": false},
+      "path_patterns": ["packs/maintenance/manifest.json", "packs/maintenance/README.md"]
+    },
+    {
       "authority": "derived",
       "canonical_target": "agent_runtime/pilots/non_knowledge_manifest.py",
       "component_id": "nonknowledge_pilot",
@@ -1690,5 +1707,5 @@
     }
   ],
   "purpose": "Canonical project-component identity, target and lifecycle registry for declared change propagation and system-map projection; it does not establish real-world causality.",
-  "registry_version": "1.4.0"
+  "registry_version": "1.5.0"
 }

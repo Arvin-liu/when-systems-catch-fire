@@ -666,11 +666,11 @@
         <tspan x="658.0" dy="18">R0</tspan>
       </text>
     </a>
-    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/agent_runtime/README.md" target="_top" data-node-id="agent_runtime_r0" data-group="agentization" data-target="agent_runtime/README.md" aria-label="Agent Runtime R1 (R0 base)：R0 typed loop 加上 R1 的真实本地行动、批准、lease、journal、恢复与 bounded rollback；仍保持领域无关。">
-      <title>Agent Runtime R1 (R0 base) — R0 typed loop 加上 R1 的真实本地行动、批准、lease、journal、恢复与 bounded rollback；仍保持领域无关。</title>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/agent_runtime/README.md" target="_top" data-node-id="agent_runtime_r0" data-group="agentization" data-target="agent_runtime/README.md" aria-label="Agent Runtime R2 (R0 base)：R0 typed loop 加上 R1 真实本地行动与 R2 的 Pack、Memory、Supervisor、Profile、Gateway、Routing 边界；仍保持领域无关。">
+      <title>Agent Runtime R2 (R0 base) — R0 typed loop 加上 R1 真实本地行动与 R2 的 Pack、Memory、Supervisor、Profile、Gateway、Routing 边界；仍保持领域无关。</title>
       <rect class="node" x="642.0" y="2934.0" width="516.0" height="54.0" rx="10" />
       <text class="node-label" x="658.0" y="2956.0">
-        <tspan x="658.0" dy="0">Agent Runtime R1 (R0</tspan>
+        <tspan x="658.0" dy="0">Agent Runtime R2 (R0</tspan>
         <tspan x="658.0" dy="18">base)</tspan>
       </text>
     </a>
