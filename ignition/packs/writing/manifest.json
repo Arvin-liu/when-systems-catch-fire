@@ -1,78 +1,68 @@
 {
   "schema_version": "1.0.0",
-  "pack_id": "knowledge.r0",
+  "pack_id": "writing.zhiyuan",
   "version": "1.0.0",
-  "display_name": "Knowledge Domain Pack R0",
-  "domain": "knowledge",
+  "display_name": "之元 Writing and Publication Pack",
+  "domain": "writing",
   "compatibility": {
     "kernel_api": "r0",
     "runtime_api": "r1",
     "schema": "1.0.0"
   },
   "capabilities_provided": [
-    "knowledge.read_foundation",
-    "knowledge.validate_claim",
-    "knowledge.validate_evidence_link",
-    "knowledge.project_results"
+    "writing.apply_editorial_method",
+    "writing.validate_publication_surface"
   ],
   "required_kernel_capabilities": [
     "read_declared",
-    "run_validator",
-    "write_declared"
+    "run_validator"
   ],
   "required_runtime_capabilities": [
     "runtime.pack_registry",
     "runtime.pack_bus"
   ],
   "object_types": [
-    "foundation_object",
-    "claim",
-    "evidence_link",
-    "proof_obligation",
-    "function_asset",
-    "nonfunction_assertion",
-    "result_record",
-    "epistemic_correction"
+    "editorial_source",
+    "publication_draft",
+    "publication_review",
+    "human_surface_entry"
   ],
   "validator_entrypoints": [
-    "tools/validate_knowledge_corpus_admission.py",
-    "tools/governance/validate_knowledge_experience.py",
-    "tools/validate_epistemic_governance_relationships.py"
+    "tools/publication/validate_fire_seeds.py",
+    "tools/governance/validate_human_surface_contract.py"
   ],
   "action_hooks": [
-    "knowledge.read_declared",
-    "knowledge.project_declared"
+    "writing.render_declared_surface",
+    "writing.record_editorial_review"
   ],
   "planning_hooks": [
-    "knowledge.plan_validation"
+    "writing.plan_source_bounded_revision"
   ],
   "human_entries": [
-    "FOUNDATION.md",
-    "KNOWLEDGE/README.md",
-    "RESULTS/README.md",
-    "packs/knowledge/README.md"
+    "docs/publication/zhiyuan-writing-method.md",
+    "PUBLICATIONS/README.md",
+    "packs/writing/README.md"
   ],
   "machine_entries": [
-    "data/foundation",
-    "data/governance/knowledge-experience",
-    "data/publication/fire-seeds",
-    "data/foundation/knowledge-corpus-admission-policy.json"
+    "docs/publication",
+    "data/publication",
+    "data/governance/human-surface"
   ],
   "permissions_requested": {
     "read_paths": [
-      "FOUNDATION.md",
-      "KNOWLEDGE",
-      "data/foundation",
-      "data/governance/knowledge-experience"
+      "docs/publication",
+      "PUBLICATIONS",
+      "data/publication"
     ],
     "write_paths": [
-      "data/governance/knowledge-experience"
+      "PUBLICATIONS",
+      "data/publication"
     ],
     "command_classes": [
       "read-only-validator"
     ],
     "tool_classes": [
-      "declared-knowledge-validator"
+      "declared-publication-validator"
     ],
     "network": false
   },

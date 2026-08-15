@@ -1,78 +1,66 @@
 {
   "schema_version": "1.0.0",
-  "pack_id": "knowledge.r0",
+  "pack_id": "research.reos-light",
   "version": "1.0.0",
-  "display_name": "Knowledge Domain Pack R0",
-  "domain": "knowledge",
+  "display_name": "REOS LIGHT Research Pack",
+  "domain": "research",
   "compatibility": {
     "kernel_api": "r0",
     "runtime_api": "r1",
     "schema": "1.0.0"
   },
   "capabilities_provided": [
-    "knowledge.read_foundation",
-    "knowledge.validate_claim",
-    "knowledge.validate_evidence_link",
-    "knowledge.project_results"
+    "research.coordinate_obligations",
+    "research.validate_reos_light"
   ],
   "required_kernel_capabilities": [
     "read_declared",
-    "run_validator",
-    "write_declared"
+    "run_validator"
   ],
   "required_runtime_capabilities": [
     "runtime.pack_registry",
     "runtime.pack_bus"
   ],
   "object_types": [
-    "foundation_object",
-    "claim",
-    "evidence_link",
-    "proof_obligation",
-    "function_asset",
-    "nonfunction_assertion",
-    "result_record",
-    "epistemic_correction"
+    "research_obligation",
+    "evidence_request",
+    "negative_result",
+    "reos_light_run"
   ],
   "validator_entrypoints": [
-    "tools/validate_knowledge_corpus_admission.py",
-    "tools/governance/validate_knowledge_experience.py",
-    "tools/validate_epistemic_governance_relationships.py"
+    "reos_vnext/validation.py",
+    "tests/test_reos_vnext_minimal_kernel.py"
   ],
   "action_hooks": [
-    "knowledge.read_declared",
-    "knowledge.project_declared"
+    "research.record_obligation",
+    "research.record_negative_result"
   ],
   "planning_hooks": [
-    "knowledge.plan_validation"
+    "research.plan_obligation_dag"
   ],
   "human_entries": [
-    "FOUNDATION.md",
-    "KNOWLEDGE/README.md",
-    "RESULTS/README.md",
-    "packs/knowledge/README.md"
+    "docs/architecture/reos-vnext-light.md",
+    "packs/research/README.md"
   ],
   "machine_entries": [
-    "data/foundation",
-    "data/governance/knowledge-experience",
-    "data/publication/fire-seeds",
-    "data/foundation/knowledge-corpus-admission-policy.json"
+    "reos_vnext",
+    "tests/fixtures/reos_vnext",
+    "data/operations/iterations/121"
   ],
   "permissions_requested": {
     "read_paths": [
-      "FOUNDATION.md",
-      "KNOWLEDGE",
-      "data/foundation",
-      "data/governance/knowledge-experience"
+      "reos_vnext",
+      "tests/fixtures/reos_vnext",
+      "data/operations/iterations/121"
     ],
     "write_paths": [
-      "data/governance/knowledge-experience"
+      "data/operations/iterations/121"
     ],
     "command_classes": [
       "read-only-validator"
     ],
     "tool_classes": [
-      "declared-knowledge-validator"
+      "declared-research-validator"
     ],
     "network": false
   },

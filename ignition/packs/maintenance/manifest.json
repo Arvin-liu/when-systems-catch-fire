@@ -1,0 +1,88 @@
+{
+  "schema_version": "1.0.0",
+  "pack_id": "maintenance.repository",
+  "version": "1.0.0",
+  "display_name": "Repository Maintenance Pack",
+  "domain": "maintenance",
+  "compatibility": {
+    "kernel_api": "r0",
+    "runtime_api": "r1",
+    "schema": "1.0.0"
+  },
+  "capabilities_provided": [
+    "maintenance.inspect_repository",
+    "maintenance.validate_checkpoint"
+  ],
+  "required_kernel_capabilities": [
+    "read_declared",
+    "run_validator"
+  ],
+  "required_runtime_capabilities": [
+    "runtime.pack_registry",
+    "runtime.pack_bus"
+  ],
+  "object_types": [
+    "repository_snapshot",
+    "checkpoint_receipt",
+    "offline_maintenance_proposal"
+  ],
+  "validator_entrypoints": [
+    "tools/validate_agent_runtime_boundary.py",
+    "tools/validate_state_changelog.py",
+    "tools/validate_knowledge_corpus_admission.py",
+    "tools/validate_pack_registry.py"
+  ],
+  "action_hooks": [
+    "maintenance.inspect_declared",
+    "maintenance.validate_declared"
+  ],
+  "planning_hooks": [
+    "maintenance.plan_bounded_repository_check"
+  ],
+  "human_entries": [
+    "agent_runtime/README.md",
+    "reports/operations/ignition-121-nightshift-progress.md",
+    "packs/maintenance/README.md"
+  ],
+  "machine_entries": [
+    "agent_runtime",
+    "data/operations/iterations/121"
+  ],
+  "permissions_requested": {
+    "read_paths": [
+      "agent_runtime",
+      "data/operations/iterations/121"
+    ],
+    "write_paths": [
+      "data/operations/iterations/121"
+    ],
+    "command_classes": [
+      "read-only-git",
+      "read-only-validator"
+    ],
+    "tool_classes": [
+      "declared-maintenance-validator"
+    ],
+    "network": false
+  },
+  "prohibited_authority_upgrades": [
+    "agent_lifecycle",
+    "executor_selection",
+    "generic_permission",
+    "checkpoint_resume",
+    "owner_acceptance",
+    "kernel_definition",
+    "truth_authority",
+    "epistemic_upgrade",
+    "charter_mutation",
+    "remote_git_mutation"
+  ],
+  "load_policy": "EXPLICIT_ACTIVATION",
+  "unload_policy": "SAFE_IF_NO_ACTIVE_RUNS",
+  "optional_dependencies": [],
+  "health_check": {
+    "kind": "DECLARATIVE_MANIFEST",
+    "expected": "PASS",
+    "side_effects": false
+  }
+}

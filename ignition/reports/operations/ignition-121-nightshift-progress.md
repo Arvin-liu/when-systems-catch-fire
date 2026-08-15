@@ -44,13 +44,30 @@ Policy and provenance-preserving migration. No failure repair round was needed.
 - Claim ceilings remain unchanged; this is a repository-scoped projection and
   provenance result, not external truth or epistemic acceptance.
 
+## Step 02 — COMPLETE
+
+- Added provider-neutral `PackRegistry`, `PackLoader`, `CapabilityRoute` and
+  `PackBus` under `agent_runtime/pack_registry.py`.
+- Registered four manifests: `knowledge.r0`, `research.reos-light`,
+  `writing.zhiyuan`, and `maintenance.repository`; validation reports `4/4`
+  healthy Packs and `10` deterministic capability routes.
+- Added CLI `agent-runtime packs list/show/validate` and a standalone
+  `validate_pack_registry.py` gate.
+- Loading is declarative metadata only: no Pack import or hook execution;
+  routing returns a proposal digest and cannot grant permission, executor,
+  Owner, truth, or epistemic authority. Active Pack unload is bounded.
+- Gates: Pack tests `6/6 PASS`; R0/R1 runtime regression `16/16 PASS`; Pack
+  validator, runtime boundary, agentization boundary, and diff check `PASS`.
+- Claim ceilings, `EPISTEMICALLY_ACCEPTED=0`, and the deferred live-provider /
+  daemon / network boundaries remain unchanged.
+
 ## Step ledger
 
 | Step | State | Commit | Remote SHA | Gate summary |
 | --- | --- | --- | --- | --- |
 | 00 | COMPLETE | `8cc9291c0af9d3df686628bfd7dbae365523e327` | `8cc9291c0af9d3df686628bfd7dbae365523e327` | 16 runtime tests and boundary gates PASS |
-| 01 | COMPLETE | pending until checkpoint commit | pending | Admission policy, provenance migration, projection rebuild, and closure gates PASS |
-| 02 | PENDING | — | — | — |
+| 01 | COMPLETE | `94a74caf0bcda84cccb60f820f9f1abbbf068615` | `94a74caf0bcda84cccb60f820f9f1abbbf068615` | Admission policy, provenance migration, projection rebuild, and closure gates PASS |
+| 02 | COMPLETE | pending until checkpoint commit | pending | Pack Registry/Bus, four Pack manifests, CLI and runtime regression gates PASS |
 | 03 | PENDING | — | — | — |
 | 04 | PENDING | — | — | — |
 | 05 | PENDING | — | — | — |

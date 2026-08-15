@@ -16,6 +16,20 @@ R1 把 R0 的编排接口接到一个受声明 workspace policy 约束的本地�
 - provider-neutral JSONL-over-stdio Reasoner 接口；R1 不要求某个 provider、模型名、API key、向量服务或 daemon。
 - `run-spec` 必须显式声明 profile、goal、workspace policy、capability scope、Reasoner adapter、`local_workspace` Executor adapter 和 Validator；缺字段不会从外部上下文补齐。
 
+## Pack Registry / Bus R1
+
+`agent_runtime.pack_registry` provides a declarative `PackRegistry`,
+`PackLoader`, `CapabilityRoute` and `PackBus`. The registry discovers the four
+current manifests under `packs/`; the loader validates and loads metadata only,
+without importing Pack modules or executing hooks; the Bus returns typed
+`ROUTED_PROPOSAL` records and never performs domain actions.
+
+The CLI exposes `agent-runtime packs list`, `show` and `validate`. Pack
+manifests request bounded paths/tools and must explicitly prohibit Kernel
+authority upgrades. The current registry is offline and provider-neutral; it
+does not grant network, Owner, executor, permission, truth, or epistemic
+authority.
+
 R1 的 terminal state 新增 `FAILED_VALIDATION_ROLLED_BACK`、`ROLLBACK_FAILED` 和 `REQUIRES_RECONCILIATION`。后一个状态表示 durable journal 无法证明“未执行”或“已达到预期 postimage”；运行时不会猜测或自动升级为完成。
 
 真实离线 pilot 位于 `agent_runtime/pilots/r1_real_local.py`：Pilot A 验证批准后真实写入和 allowlisted command validator；Pilot B 验证跨 executor 重启、post-execute crash 的 postimage reconcile、lease/idempotency 记录和失败后的文件回滚。

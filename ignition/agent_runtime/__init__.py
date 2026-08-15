@@ -34,6 +34,7 @@ from .control import (
 )
 from .r1_runtime import AgentRuntimeR1, R1RunSpec, RuntimeR1Error
 from .transport import JsonlReasonerTransport, ReasonerRequest, ReasonerResponse, ScriptedReasoner
+from .pack_registry import CapabilityRoute, LoadedPack, PackBus, PackLoader, PackManifest, PackRegistry, PackRegistryError
 
 __all__ = [
     "ActionObservation",
@@ -72,4 +73,11 @@ __all__ = [
     "ScriptedReasoner",
     "WorkspacePolicy",
     "WorkspaceViolation",
+    "CapabilityRoute",
+    "LoadedPack",
+    "PackBus",
+    "PackLoader",
+    "PackManifest",
+    "PackRegistry",
+    "PackRegistryError",
 ]

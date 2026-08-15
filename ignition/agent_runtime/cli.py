@@ -9,6 +9,7 @@ import sys
 
 from .actions import CrashInjected
 from .control import ControlConflict
+from .pack_registry import PackRegistry, PackRegistryError
 from .r1_runtime import AgentRuntimeR1, R1RunSpec, RuntimeR1Error
 
 
@@ -51,12 +52,37 @@ def _parser() -> argparse.ArgumentParser:
     approve.add_argument("--authority-type", default="human", choices=("human", "operator", "synthetic_pilot", "cli"))
     approve.add_argument("--reason", default="explicit typed approval decision")
     approve.add_argument("--json", action="store_true", dest="json_mode")
+
+    packs = sub.add_parser("packs")
+    pack_sub = packs.add_subparsers(dest="pack_command", required=True)
+    for name in ("list", "validate"):
+        command = pack_sub.add_parser(name)
+        command.add_argument("--packs-root", default=Path("packs"), type=Path)
+        command.add_argument("--json", action="store_true", dest="json_mode")
+    show = pack_sub.add_parser("show")
+    show.add_argument("--pack-id", required=True)
+    show.add_argument("--packs-root", default=Path("packs"), type=Path)
+    show.add_argument("--json", action="store_true", dest="json_mode")
     return parser
 
 
 def main(argv: list[str] | None = None) -> int:
     args = _parser().parse_args(argv)
     try:
+        if args.command == "packs":
+            registry = PackRegistry.discover(args.packs_root)
+            if args.pack_command == "list":
+                value = [registry.get(pack_id).to_dict() for pack_id in registry.pack_ids]
+                status = 0
+            elif args.pack_command == "show":
+                manifest = registry.get(args.pack_id)
+                value = {"status": "PASS", "pack": manifest.to_dict(), "routes": [route.to_dict() for route in registry.routes() if route.pack_id == args.pack_id]}
+                status = 0
+            else:
+                value = registry.validate()
+                status = 0 if value["status"] == "PASS" else 2
+            _emit(value, args.json_mode)
+            return status
         if args.command == "run":
             spec = R1RunSpec.from_dict(json.loads(args.spec.read_text(encoding="utf-8")))
             value = AgentRuntimeR1(args.run_dir).start(spec)
@@ -83,7 +109,7 @@ def main(argv: list[str] | None = None) -> int:
             pass
         _emit(value, args.json_mode)
         return 75
-    except (RuntimeR1Error, ControlConflict, ValueError, OSError, json.JSONDecodeError) as exc:
+    except (RuntimeR1Error, ControlConflict, PackRegistryError, ValueError, OSError, json.JSONDecodeError) as exc:
         value = {"status": "ERROR", "error_type": type(exc).__name__, "summary": str(exc)}
         _emit(value, args.json_mode)
         return 2
