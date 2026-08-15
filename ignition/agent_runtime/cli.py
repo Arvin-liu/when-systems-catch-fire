@@ -9,6 +9,7 @@ import sys
 
 from .actions import CrashInjected
 from .control import ControlConflict
+from .memory import MEMORY_TYPES, MemoryEntry, MemoryStoreError, OperationalMemoryStore
 from .pack_registry import PackRegistry, PackRegistryError
 from .r1_runtime import AgentRuntimeR1, R1RunSpec, RuntimeR1Error
 
@@ -63,6 +64,65 @@ def _parser() -> argparse.ArgumentParser:
     show.add_argument("--pack-id", required=True)
     show.add_argument("--packs-root", default=Path("packs"), type=Path)
     show.add_argument("--json", action="store_true", dest="json_mode")
+
+    memory = sub.add_parser("memory")
+    memory_sub = memory.add_subparsers(dest="memory_command", required=True)
+
+    add_memory = memory_sub.add_parser("add")
+    add_memory.add_argument("--store", required=True, type=Path)
+    add_memory.add_argument("--memory-id", required=True)
+    add_memory.add_argument("--memory-type", required=True, choices=sorted(MEMORY_TYPES))
+    add_memory.add_argument("--source-run-id", required=True)
+    add_memory.add_argument("--summary", required=True)
+    add_memory.add_argument("--provenance-ref", action="append", default=[])
+    add_memory.add_argument("--owner-feedback-ref", action="append", default=[])
+    add_memory.add_argument("--tag", action="append", default=[])
+    add_memory.add_argument("--retention-class", default="LONG")
+    add_memory.add_argument("--visibility", default="SHARED_OPERATIONAL")
+    add_memory.add_argument("--sensitivity-class", default="INTERNAL_OPERATIONAL")
+    add_memory.add_argument("--forget-policy", default="MANUAL")
+    add_memory.add_argument("--expires-at")
+    add_memory.add_argument("--related-ref", action="append", default=[])
+    add_memory.add_argument("--json", action="store_true", dest="json_mode")
+
+    query_memory = memory_sub.add_parser("query")
+    query_memory.add_argument("--store", required=True, type=Path)
+    query_memory.add_argument("--memory-type")
+    query_memory.add_argument("--source-run-id")
+    query_memory.add_argument("--tag")
+    query_memory.add_argument("--visibility")
+    query_memory.add_argument("--include-inactive", action="store_true")
+    query_memory.add_argument("--json", action="store_true", dest="json_mode")
+
+    show_memory = memory_sub.add_parser("show")
+    show_memory.add_argument("--store", required=True, type=Path)
+    show_memory.add_argument("--memory-id", required=True)
+    show_memory.add_argument("--json", action="store_true", dest="json_mode")
+
+    forget_memory = memory_sub.add_parser("forget")
+    forget_memory.add_argument("--store", required=True, type=Path)
+    forget_memory.add_argument("--memory-id", required=True)
+    forget_memory.add_argument("--reason", default="explicit forget request")
+    forget_memory.add_argument("--json", action="store_true", dest="json_mode")
+
+    supersede_memory = memory_sub.add_parser("supersede")
+    supersede_memory.add_argument("--store", required=True, type=Path)
+    supersede_memory.add_argument("--memory-id", required=True)
+    supersede_memory.add_argument("--replacement-id", required=True)
+    supersede_memory.add_argument("--summary", required=True)
+    supersede_memory.add_argument("--json", action="store_true", dest="json_mode")
+
+    export_memory = memory_sub.add_parser("export")
+    export_memory.add_argument("--store", required=True, type=Path)
+    export_memory.add_argument("--max-entries", type=int, default=16)
+    export_memory.add_argument("--max-chars", type=int, default=4000)
+    export_memory.add_argument("--source-run-id")
+    export_memory.add_argument("--tag", action="append", default=[])
+    export_memory.add_argument("--json", action="store_true", dest="json_mode")
+
+    audit_memory = memory_sub.add_parser("audit")
+    audit_memory.add_argument("--store", required=True, type=Path)
+    audit_memory.add_argument("--json", action="store_true", dest="json_mode")
     return parser
 
 
@@ -83,6 +143,61 @@ def main(argv: list[str] | None = None) -> int:
                 status = 0 if value["status"] == "PASS" else 2
             _emit(value, args.json_mode)
             return status
+        if args.command == "memory":
+            store = OperationalMemoryStore(args.store)
+            if args.memory_command == "add":
+                value = store.append(MemoryEntry.create(
+                    memory_id=args.memory_id,
+                    memory_type=args.memory_type,
+                    source_run_id=args.source_run_id,
+                    summary=args.summary,
+                    provenance_refs=args.provenance_ref,
+                    owner_feedback_refs=args.owner_feedback_ref,
+                    tags=args.tag,
+                    retention_class=args.retention_class,
+                    visibility=args.visibility,
+                    sensitivity_class=args.sensitivity_class,
+                    forget_policy=args.forget_policy,
+                    expires_at=args.expires_at,
+                    related_refs=args.related_ref,
+                )).to_dict()
+            elif args.memory_command == "query":
+                value = [entry.to_dict() for entry in store.query(
+                    memory_type=args.memory_type,
+                    source_run_id=args.source_run_id,
+                    tag=args.tag,
+                    visibility=args.visibility,
+                    active_only=not args.include_inactive,
+                )]
+            elif args.memory_command == "show":
+                value = store.show(args.memory_id).to_dict()
+            elif args.memory_command == "forget":
+                value = store.forget(args.memory_id, reason=args.reason)
+            elif args.memory_command == "supersede":
+                old = store.show(args.memory_id)
+                replacement = MemoryEntry.create(
+                    memory_id=args.replacement_id,
+                    memory_type=old.memory_type,
+                    source_run_id=old.source_run_id,
+                    summary=args.summary,
+                    provenance_refs=old.provenance_refs,
+                    owner_feedback_refs=old.owner_feedback_refs,
+                    tags=old.tags,
+                    retention_class=old.retention_class,
+                    visibility=old.visibility,
+                    sensitivity_class=old.sensitivity_class,
+                    forget_policy=old.forget_policy,
+                    expires_at=old.expires_at,
+                    supersedes=old.memory_id,
+                    related_refs=old.related_refs,
+                )
+                value = store.supersede(old.memory_id, replacement).to_dict()
+            elif args.memory_command == "export":
+                value = store.export_capsule(max_entries=args.max_entries, max_chars=args.max_chars, source_run_id=args.source_run_id, tags=args.tag)
+            else:
+                value = store.audit()
+            _emit(value, args.json_mode)
+            return 0
         if args.command == "run":
             spec = R1RunSpec.from_dict(json.loads(args.spec.read_text(encoding="utf-8")))
             value = AgentRuntimeR1(args.run_dir).start(spec)
@@ -109,7 +224,7 @@ def main(argv: list[str] | None = None) -> int:
             pass
         _emit(value, args.json_mode)
         return 75
-    except (RuntimeR1Error, ControlConflict, PackRegistryError, ValueError, OSError, json.JSONDecodeError) as exc:
+    except (RuntimeR1Error, ControlConflict, PackRegistryError, MemoryStoreError, ValueError, OSError, json.JSONDecodeError) as exc:
         value = {"status": "ERROR", "error_type": type(exc).__name__, "summary": str(exc)}
         _emit(value, args.json_mode)
         return 2

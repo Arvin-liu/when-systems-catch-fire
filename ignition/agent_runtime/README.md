@@ -30,6 +30,20 @@ authority upgrades. The current registry is offline and provider-neutral; it
 does not grant network, Owner, executor, permission, truth, or epistemic
 authority.
 
+## Operational Memory R1
+
+`agent_runtime.memory.OperationalMemoryStore` is a locked JSON store for typed
+episodic, procedural, feedback, failure, rollback, approval, Pack-usage and
+unresolved-continuation summaries. Every entry carries its source run,
+retention/visibility/sensitivity policy, provenance and owner-feedback refs,
+expiry/forget policy, supersession lineage and integrity digest.
+
+The store supports typed query, supersede, redacting forget/expire tombstones,
+and bounded context-capsule export. It rejects secret, prompt and hidden
+reasoning material; repeated memory is not evidence and memory cannot mutate
+Charter or permissions. It is operational recall only, not a Knowledge truth
+registry.
+
 R1 的 terminal state 新增 `FAILED_VALIDATION_ROLLED_BACK`、`ROLLBACK_FAILED` 和 `REQUIRES_RECONCILIATION`。后一个状态表示 durable journal 无法证明“未执行”或“已达到预期 postimage”；运行时不会猜测或自动升级为完成。
 
 真实离线 pilot 位于 `agent_runtime/pilots/r1_real_local.py`：Pilot A 验证批准后真实写入和 allowlisted command validator；Pilot B 验证跨 executor 重启、post-execute crash 的 postimage reconcile、lease/idempotency 记录和失败后的文件回滚。

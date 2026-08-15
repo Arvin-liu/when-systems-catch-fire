@@ -30,7 +30,8 @@
     "tools/validate_agent_runtime_boundary.py",
     "tools/validate_state_changelog.py",
     "tools/validate_knowledge_corpus_admission.py",
-    "tools/validate_pack_registry.py"
+    "tools/validate_pack_registry.py",
+    "tools/validate_operational_memory.py"
   ],
   "action_hooks": [
     "maintenance.inspect_declared",

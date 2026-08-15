@@ -61,14 +61,33 @@ Policy and provenance-preserving migration. No failure repair round was needed.
 - Claim ceilings, `EPISTEMICALLY_ACCEPTED=0`, and the deferred live-provider /
   daemon / network boundaries remain unchanged.
 
+## Step 03 — COMPLETE
+
+- Added locked `OperationalMemoryStore` and typed `MemoryEntry` with eight
+  operational types: episodic, procedural, owner feedback, failure, rollback,
+  approval, Pack usage, and unresolved continuation.
+- Each entry carries source run, timestamp, retention, visibility, sensitivity,
+  provenance/owner-feedback refs, summary, tags, expiry/forget policy,
+  supersession lineage and integrity SHA-256.
+- Added append/query/show/supersede/forget/expire/export/audit APIs and CLI
+  `memory add/query/show/supersede/forget/export/audit`.
+- Secret, prompt and hidden-reasoning material is rejected; forget/expire
+  redacts body and references while retaining a bounded tombstone audit;
+  capsules are count/character bounded and explicitly not Knowledge truth.
+- Gates: operational-memory tests `6/6 PASS`; memory validator, Pack Registry
+  regression `6/6`, R0/R1 runtime regression `16/16`, runtime/agentization
+  boundaries and diff check `PASS`.
+- One targeted repair round fixed prompt-marker rejection and a test fixture
+  tag override; no data was persisted outside temporary fixtures.
+
 ## Step ledger
 
 | Step | State | Commit | Remote SHA | Gate summary |
 | --- | --- | --- | --- | --- |
 | 00 | COMPLETE | `8cc9291c0af9d3df686628bfd7dbae365523e327` | `8cc9291c0af9d3df686628bfd7dbae365523e327` | 16 runtime tests and boundary gates PASS |
 | 01 | COMPLETE | `94a74caf0bcda84cccb60f820f9f1abbbf068615` | `94a74caf0bcda84cccb60f820f9f1abbbf068615` | Admission policy, provenance migration, projection rebuild, and closure gates PASS |
-| 02 | COMPLETE | pending until checkpoint commit | pending | Pack Registry/Bus, four Pack manifests, CLI and runtime regression gates PASS |
-| 03 | PENDING | — | — | — |
+| 02 | COMPLETE | `b8f1b76c11a80e9e6b6bb320789f92ca6b4317e1` | `b8f1b76c11a80e9e6b6bb320789f92ca6b4317e1` | Pack Registry/Bus, four Pack manifests, CLI and runtime regression gates PASS |
+| 03 | COMPLETE | pending until checkpoint commit | pending | Cross-run operational memory, bounded capsule, redacting forget and regression gates PASS |
 | 04 | PENDING | — | — | — |
 | 05 | PENDING | — | — | — |
 | 06 | PENDING | — | — | — |
