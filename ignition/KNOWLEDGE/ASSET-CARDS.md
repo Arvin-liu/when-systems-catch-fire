@@ -40,12 +40,10 @@
 - [Q14 Ignition Atlas maps are versioned derived projections, not a permanent total map and not a second canonical truth so](./cards/part-001.md#asset-nfc-1e10227f1b51e4d0) — `NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR` · `NFC-1e10227f1b51e4d0`
 <a id="asset-nfc-1ead70b9f991a2b8"></a>
 - [任务 106（本迭代）建立了合并后真相传播基础设施：规范化 merged-iteration ledger、9 维 impact 引擎、确定性 current-truth 投影、fail-closed 验证器、编辑文章 stale/revi](./cards/part-001.md#asset-nfc-1ead70b9f991a2b8) — `NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR` · `NFC-1ead70b9f991a2b8`
+<a id="asset-nfc-242e5f74ef834a0b"></a>
+- [方法 `1.3.0` 与系统图 `0.4.0`、`0.5.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0`、`0.2.0`、`0.3.0` 为更早 Historical。当前方法要求从构件 registry、类](./cards/part-001.md#asset-nfc-242e5f74ef834a0b) — `NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION` · `NFC-242e5f74ef834a0b`
 <a id="asset-nfc-2843222a849fe77e"></a>
 - [任务 102 对新增源语料重新运行任务 100 生成器并排除生成投影，当前登记 **17,333** 个 canonical claim。主要类别包括：](./cards/part-001.md#asset-nfc-2843222a849fe77e) — `NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR` · `NFC-2843222a849fe77e`
-<a id="asset-nfc-2d220e92f7b73dd3"></a>
-- [Iteration method 1.3.0 and system map 0.3.0, 0.4.0 are Historical; method 1.2.0 and maps 0.1.0, 0.2.0 are earlier Histor](./cards/part-001.md#asset-nfc-2d220e92f7b73dd3) — `NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION` · `NFC-2d220e92f7b73dd3`
-<a id="asset-nfc-3462f5f134c76b5b"></a>
-- [方法 `1.3.0` 与系统图 `0.3.0`、`0.4.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0`、`0.2.0` 为更早 Historical。当前方法要求从构件 registry、类型化 topol](./cards/part-001.md#asset-nfc-3462f5f134c76b5b) — `NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION` · `NFC-3462f5f134c76b5b`
 <a id="asset-nfc-3d9ffb2206406fcc"></a>
 - [为全部恢复的结果/文章来源生成统一卡片和 1 分钟、5 分钟、完整阅读，并为全部函数/断言 registry 建立可回链来源、状态、依赖、反向依赖和历史的分片搜索索引。](./cards/part-001.md#asset-nfc-3d9ffb2206406fcc) — `NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION` · `NFC-3d9ffb2206406fcc`
 <a id="asset-nfc-4a20f20c22587a46"></a>
@@ -80,6 +78,8 @@
 - [对任务 102 排除生成投影回灌后重算的 5,663 个历史函数资产建立 identity card、M/E 双轴、义务、依赖、处置与 quarantine。](./cards/part-001.md#asset-nfc-85688f0030875f4e) — `NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR` · `NFC-85688f0030875f4e`
 <a id="asset-nfc-8b5cd2066783ecf6"></a>
 - [事件、内容合并、终端化投影、annotated tag 和全新克隆 resolver 分层确认；不以旧候选](./cards/part-001.md#asset-nfc-8b5cd2066783ecf6) — `NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR` · `NFC-8b5cd2066783ecf6`
+<a id="asset-nfc-90acb3bc50218f58"></a>
+- [Iteration method 1.3.0 and system map 0.4.0, 0.5.0 are Historical; method 1.2.0 and maps 0.1.0, 0.2.0, 0.3.0 are earlier](./cards/part-001.md#asset-nfc-90acb3bc50218f58) — `NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION` · `NFC-90acb3bc50218f58`
 <a id="asset-nfc-921e43a466f461f8"></a>
 - [非函数型资产交接必须保留 task 100 的规范 ID、原子文本、十三门、证据与复现状态、依赖和下游影响、M/E、处置、公开上限及 supersession lineage。自动发现只生成待裁决记录；一个模型失败不能推出普遍不可能，类比不](./cards/part-001.md#asset-nfc-921e43a466f461f8) — `NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR` · `NFC-921e43a466f461f8`
 <a id="asset-nfc-9379ce5377b8455f"></a>

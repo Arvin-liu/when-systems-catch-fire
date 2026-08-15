@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [link: "已迁移的历史案例来源/0695-C-0700-因果光锥×马拉松×高山滑雪.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-1774151dca31940f / link: "已迁移的历史案例来源/0695-C-0700-因果光锥×马拉松×高山滑雪.md"
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [link: "已迁移的历史案例来源/0699-C-0704-因果光锥×马拉松×高山滑雪.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-bc7b024ae273aff3 / link: "已迁移的历史案例来源/0699-C-0704-因果光锥×马拉松×高山滑雪.md"
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
 - [link: "已迁移的历史案例来源/0704-C-0709-空降CEO失败机制.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-6319a37936a48e0d / link: "已迁移的历史案例来源/0704-C-0709-空降CEO失败机制.md"
@@ -2417,6 +2427,11 @@
   - 可搜索名称：NFC-a39191947d19d37d / rules = " ".join(projection.get("projection_rules", \[\])).lower()
   - 来源：`tools/causal_fabric/validator.py`
   - 依赖：—；被引用：—
+- [Runtime 只编排 typed records，不决定领域真值。Reasoner、Executor 和 Validator 是显式接口；运行时不要求模型名称、provider 名称、网络或常驻 daemon。每个动作先经过 Kernel](../../../agent_runtime/README.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-b3b1c6f407004d9f / Runtime 只编排 typed records，不决定领域真值。Reasoner、Executor 和 Validator 是显式接口；运行时不要求模型名称、provider 名称、网络或常驻 daemon。每个动作先经过 Kernel
+  - 来源：`agent_runtime/README.md`
+  - 依赖：—；被引用：—
 - [S1 规范性审核 - 封闭边界协议 (Closed-Boundary Protocol)](../../ASSET-CARDS.md#asset-hr-9ce0dfb3a119bc53)
   - 类型/状态：`RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
   - 可搜索名称：S1 规范性审核 - 封闭边界协议 (Closed-Boundary Protocol) / S1
@@ -2476,19 +2491,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-e875864ae950f89f / SCC_DOMAIN = "substantive_causal_candidate"
   - 来源：`tools/operations/compute_change_propagation.py`
-  - 依赖：—；被引用：—
-- [scc_in_paths = any(tp\["relation_domain"\] == "substantive_causal_candidate" for tp in closure\["typed_paths"\])](../../../tests/test_change_propagation.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-6c41820386c70a1b / scc_in_paths = any(tp\["relation_domain"\] == "substantive_causal_candidate" for tp in closure\["typed_paths"\])
-  - 来源：`tests/test_change_propagation.py`
-  - 依赖：—；被引用：—
-- [Scenario**：一种普遍假设认为新技术（自动化、人工智能等）必然促进经济增长，改善社会福祉。我们用此案例检验该假设在复杂现实中的适用性。](../../../case_failures/examples/technology_economic_growth_failure.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-8052f8bd99bf0fe2 / Scenario**：一种普遍假设认为新技术（自动化、人工智能等）必然促进经济增长，改善社会福祉。我们用此案例检验该假设在复杂现实中的适用性。
-  - 来源：`case_failures/examples/technology_economic_growth_failure.md`
-  - 依赖：—；被引用：—
-- [Scenario**：我们常认为跨学科合作产生新的突破，如生命科学与计算机科学催生生物信息学。然而也有协同导致系统性失败的历史案例，如 2008 年金融危机。该案例源于工程学（复杂算法）、统计学（风险模型）和金融学的交汇——复杂的衍生品设计](../../../case_failures/examples/cross_domain_synergy_risk.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-070561c1814b29a7 / Scenario**：我们常认为跨学科合作产生新的突破，如生命科学与计算机科学催生生物信息学。然而也有协同导致系统性失败的历史案例，如 2008 年金融危机。该案例源于工程学（复杂算法）、统计学（风险模型）和金融学的交汇——复杂的衍生品设计
-  - 来源：`case_failures/examples/cross_domain_synergy_risk.md`
   - 依赖：—；被引用：—

@@ -59,6 +59,11 @@
   - 可搜索名称：NFC-ef066134dae913b1 / "- 类比不是同构；同构必须给出对象、映射、双射与结构保持证明。",
   - 来源：`tools/foundation/adjudicate_nonfunction_claims.py`
   - 依赖：—；被引用：—
+- ["- 该结果只证明一个确定性 control-plane 闭环，不证明模型智能、现实自主性或通用 AGI。\\n",](../../../agent_runtime/pilots/non_knowledge_manifest.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-39477cc13e6aa2b2 / "- 该结果只证明一个确定性 control-plane 闭环，不证明模型智能、现实自主性或通用 AGI。\\n",
+  - 来源：`agent_runtime/pilots/non_knowledge_manifest.py`
+  - 依赖：—；被引用：—
 - [".github/workflows/iteration-lifecycle-validation.yml",](../../../tools/foundation/adjudicate_nonfunction_claims.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
   - 可搜索名称：NFC-27a359fd9e570457 / ".github/workflows/iteration-lifecycle-validation.yml",
@@ -98,6 +103,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-c6a3d44ef07bba25 / "ACCEPTED_AS_PROVED_MATHEMATICAL_RESULT": "May be stated only with its declared carrier, assumptions and proof scope; it
   - 来源：`tools/foundation/adjudicate_nonfunction_claims.py`
+  - 依赖：—；被引用：—
+- ["agent_lifecycle",](../../../agent_kernel/contracts.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-4d209046463724ad / "agent_lifecycle",
+  - 来源：`agent_kernel/contracts.py`
   - 依赖：—；被引用：—
 - ["algebra_and_analysis": {"result": "PASS" if corr and mathematical_maturity in {"M4", "M6"} else "NOT_APPLICABLE" if not](../../../tools/foundation/adjudicate_function_assets.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -469,6 +479,16 @@
   - 可搜索名称：NFC-a0586ebd9f1e19bc / "KEEP_AS_ESTABLISHED_MATH": "ACCEPTED_AS_PROVED_MATHEMATICAL_RESULT",
   - 来源：`tools/foundation/adjudicate_nonfunction_claims.py`
   - 依赖：—；被引用：—
+- ["KERNEL_NON_ESCALATION blocks lifecycle, executor selection, generic permission, checkpoint/resume, Owner acceptance and](../../../tools/generate_agentization_boundary.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-20ffc6c19d7aea6a / "KERNEL_NON_ESCALATION blocks lifecycle, executor selection, generic permission, checkpoint/resume, Owner acceptance and
+  - 来源：`tools/generate_agentization_boundary.py`
+  - 依赖：—；被引用：—
+- ["KNOWLEDGE_DOMAIN": "contains knowledge-specific objects, evidence, formal semantics or their existing governance",](../../../tools/generate_agentization_boundary.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-843977d06414c721 / "KNOWLEDGE_DOMAIN": "contains knowledge-specific objects, evidence, formal semantics or their existing governance",
+  - 来源：`tools/generate_agentization_boundary.py`
+  - 依赖：—；被引用：—
 - ["known_limitations": \["Formula images without searchable text cannot be semantically recovered.", "Regex discovery can o](../../../tools/foundation/adjudicate_function_assets.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-5909f0dc670d6111 / "known_limitations": \["Formula images without searchable text cannot be semantically recovered.", "Regex discovery can o
@@ -713,6 +733,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-9b29c4ddd53433cb / "NO_CHANGE_WITH_PROOF",
   - 来源：`tools/operations/validate_incremental_execution.py`
+  - 依赖：—；被引用：—
+- ["no_totality_proof",](../../../tools/generate_agentization_boundary.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-d16dc0cbcf8f3409 / "no_totality_proof",
+  - 来源：`tools/generate_agentization_boundary.py`
   - 依赖：—；被引用：—
 - ["no_totality_proof": \[("python3", "tools/validate_human_front_door.py")\],](../../../tools/operations/generate_component_profiles.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
@@ -2477,30 +2502,5 @@
 - [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-95373A07149F87CB / ## 关联函数 / Related Functions / IMPLICIT-95373A07149F87CB / IMPLICIT-0026301F130FD562
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-96B0D98EAD8A497C / ## 关联函数 / Related Functions / IMPLICIT-96B0D98EAD8A497C / IMPLICIT-0026301F130FD562
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-98590738D8F27EE7 / ## 关联函数 / Related Functions / IMPLICIT-98590738D8F27EE7 / IMPLICIT-0026301F130FD562
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-9C1BA92630BB400C / ## 关联函数 / Related Functions / IMPLICIT-9C1BA92630BB400C / IMPLICIT-0026301F130FD562
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-A5154D2A83CC52FC / ## 关联函数 / Related Functions / IMPLICIT-A5154D2A83CC52FC / IMPLICIT-0026301F130FD562
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-A74DDB7F7587CB1B / ## 关联函数 / Related Functions / IMPLICIT-A74DDB7F7587CB1B / IMPLICIT-0026301F130FD562
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—

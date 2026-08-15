@@ -961,6 +961,11 @@
   - 可搜索名称：NFC-c5d973681062fdeb / Object D516 defines a optimization_problem within the point-fire framework. Core: 中文：∂Φ/∂N_gate\|physics < 0（物理域合并方向）→ ∂Φ
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D516；被引用：—
+- [obligations: Task 115 Draft 不合并；真实 provider/API、daemon、Telegram/OpenClaw、多 agent scheduler、向量/embedding memory、Pack 物理拆分](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-4d053d063d964071 / obligations: Task 115 Draft 不合并；真实 provider/API、daemon、Telegram/OpenClaw、多 agent scheduler、向量/embedding memory、Pack 物理拆分
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [omega, phi_zero, no_constraints, no_physics, physical_exists = z3.Bools(](../../../tools/foundation/verify_core_claims.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-347cdcb7d5b701d9 / omega, phi_zero, no_constraints, no_physics, physical_exists = z3.Bools(
@@ -1020,6 +1025,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-552ad551594d7db3 / Rejected the prior card after proving its arXiv:2407.18295 identifier is an unrelated 40-page general-relativity paper a
   - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl`
+  - 依赖：—；被引用：—
+- [REOS vNext LIGHT 仅作为边界清楚的 `research` Pack；之元写作法与出版面仅作为 `writing`/publication Pack。R0 不把课程内容或旧知识树物理搬入 Kernel。](../../../docs/architecture/agentization-boundary-r0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a640c798726e2407 / REOS vNext LIGHT 仅作为边界清楚的 `research` Pack；之元写作法与出版面仅作为 `writing`/publication Pack。R0 不把课程内容或旧知识树物理搬入 Kernel。
+  - 来源：`docs/architecture/agentization-boundary-r0.md`
   - 依赖：—；被引用：—
 - [right = self.adjudicator.semantic_rebound_text("Structural grand unification proved impossible")](../../../tests/foundation/test_nonfunction_claim_closure.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `WITHDRAWN_UNSUPPORTED`
@@ -2481,14 +2491,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-ba43e240b155e917 / 物理实验与数值预测；
   - 来源：`docs/roadmap_v0.2.md`
-  - 依赖：—；被引用：—
-- [物理界的同行审查](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-dcb6956d4d957ca6 / 物理界的同行审查
-  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [统一规范群；](../../../docs/physics_boundary.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-458f2cc35550de4e / 统一规范群；
-  - 来源：`docs/physics_boundary.md`
   - 依赖：—；被引用：—

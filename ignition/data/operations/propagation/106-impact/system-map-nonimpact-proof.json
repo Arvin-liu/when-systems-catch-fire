@@ -1,9 +1,9 @@
 {
   "changed_sources": [],
   "current_hashes": {
-    "data/architecture/interactive-system-map-layout.json": "4d08f43c4827914cc163e798d87cb51373c902d5ce10c2de02a98692b80006dd",
-    "data/operations/change-propagation-topology.json": "80bc07f2767554026aa8dd4fc3678a72c869397584ec629c903bfb463b6107a9",
-    "data/operations/project-components.json": "46b58da89d062f0a185091aafe42627d6d9c1d10043a3989b43212db93baa24f",
+    "data/architecture/interactive-system-map-layout.json": "de90effb976558e9eb185fda17b7f2e354a428df17f678d95f087a804efa846c",
+    "data/operations/change-propagation-topology.json": "5c8393efadb8876a37904f54f77ff44dd872d2ee52a16682c5e5f403e1e4a8cc",
+    "data/operations/project-components.json": "74e42f7e1acd3641601e7ef4abb6095b6b0198592fe1db281936712e4fe3ab50",
     "tools/generate_interactive_system_map.py": "f52c31a9f2fa1e68b4e96a15fd4fa8ba53395a3fe47d26121e4f087d2e40fa06"
   },
   "decision": "NO_IMPACT_JUSTIFIED",
