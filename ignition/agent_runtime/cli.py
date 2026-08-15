@@ -11,6 +11,7 @@ from .actions import CrashInjected
 from .control import ControlConflict
 from .memory import MEMORY_TYPES, MemoryEntry, MemoryStoreError, OperationalMemoryStore
 from .pack_registry import PackRegistry, PackRegistryError
+from .profile import load_profile_registry, ProfileProjectionError
 from .r1_runtime import AgentRuntimeR1, R1RunSpec, RuntimeR1Error
 from .supervisor import EpisodeSpec, Supervisor, SupervisorError
 
@@ -130,6 +131,7 @@ def _parser() -> argparse.ArgumentParser:
     start_episode = episode_sub.add_parser("start")
     start_episode.add_argument("--spec", required=True, type=Path)
     start_episode.add_argument("--run-dir", required=True, type=Path)
+    start_episode.add_argument("--profiles", type=Path)
     start_episode.add_argument("--json", action="store_true", dest="json_mode")
     for name in ("status", "resume", "trace", "pending-approval"):
         command = episode_sub.add_parser(name)
@@ -228,7 +230,8 @@ def main(argv: list[str] | None = None) -> int:
         if args.command == "episode":
             supervisor = Supervisor(args.run_dir)
             if args.episode_command == "start":
-                value = supervisor.start(EpisodeSpec.from_dict(json.loads(args.spec.read_text(encoding="utf-8"))))
+                profiles = load_profile_registry(args.profiles) if args.profiles else None
+                value = supervisor.start(EpisodeSpec.from_dict(json.loads(args.spec.read_text(encoding="utf-8"))), profiles=profiles)
             elif args.episode_command == "status":
                 value = supervisor.status()
             elif args.episode_command == "resume":
@@ -280,7 +283,7 @@ def main(argv: list[str] | None = None) -> int:
             pass
         _emit(value, args.json_mode)
         return 75
-    except (RuntimeR1Error, SupervisorError, ControlConflict, PackRegistryError, MemoryStoreError, ValueError, OSError, json.JSONDecodeError) as exc:
+    except (RuntimeR1Error, SupervisorError, ProfileProjectionError, ControlConflict, PackRegistryError, MemoryStoreError, ValueError, OSError, json.JSONDecodeError) as exc:
         value = {"status": "ERROR", "error_type": type(exc).__name__, "summary": str(exc)}
         _emit(value, args.json_mode)
         return 2

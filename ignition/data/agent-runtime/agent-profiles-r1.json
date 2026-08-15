@@ -1,0 +1,79 @@
+{
+  "schema": "agent-profile-r1",
+  "profiles": [
+    {
+      "stable_agent_id": "repository-maintainer",
+      "owner_ref": "owner:human",
+      "authority_refs": ["docs/governance/charter-system-r1.md", "docs/architecture/agent-platform-r2.md"],
+      "charter_refs": ["charter:life-community"],
+      "role": "repository-maintenance-capability-profile",
+      "allowed_capability_classes": ["git.read", "read.directories", "read.files", "run.commands", "write.files"],
+      "mutable_preference_refs": ["profile:maintenance-output-format"],
+      "update_policy": "Owner-only; create a new versioned profile before changing capability selection",
+      "memory_policy": "Operational summaries, failure and rollback refs, approvals and unresolved continuation only",
+      "prohibited_self_escalation": true,
+      "allowed_packs": ["maintenance.repository", "knowledge.r0"],
+      "preferred_tool_classes": ["maintenance.inspect_repository", "maintenance.validate_checkpoint", "git.read"],
+      "forbidden_tool_classes": ["network", "remote_git_mutation", "owner_acceptance", "truth_authority"],
+      "approval_thresholds": {
+        "write.files": "BOUNDED_WRITE_REQUIRES_APPROVAL",
+        "run.commands": "COMMAND_REQUIRES_APPROVAL"
+      },
+      "budget_defaults": {
+        "max_actions": 16,
+        "max_output_bytes": 65536,
+        "max_writes": 8
+      },
+      "update_authority": "owner-only",
+      "prohibited_authority_upgrades": ["agent_lifecycle", "checkpoint_resume", "executor_selection", "generic_permission", "kernel_definition", "owner_acceptance"]
+    },
+    {
+      "stable_agent_id": "bounded-researcher",
+      "owner_ref": "owner:human",
+      "authority_refs": ["docs/governance/charter-system-r1.md", "docs/architecture/agent-platform-r2.md"],
+      "charter_refs": ["charter:life-community"],
+      "role": "bounded-research-obligation-profile",
+      "allowed_capability_classes": ["git.read", "read.directories", "read.files"],
+      "mutable_preference_refs": ["profile:evidence-summary-format"],
+      "update_policy": "Owner-only; no self-authored permission changes",
+      "memory_policy": "Procedural and unresolved operational summaries with provenance refs; no hidden reasoning",
+      "prohibited_self_escalation": true,
+      "allowed_packs": ["research.reos-light", "knowledge.r0"],
+      "preferred_tool_classes": ["research.coordinate_obligations", "research.validate_reos_light", "git.read"],
+      "forbidden_tool_classes": ["write.files", "run.commands", "network", "truth_authority", "epistemic_upgrade"],
+      "approval_thresholds": {},
+      "budget_defaults": {
+        "max_actions": 12,
+        "max_output_bytes": 32768,
+        "max_writes": 1
+      },
+      "update_authority": "owner-only",
+      "prohibited_authority_upgrades": ["agent_lifecycle", "checkpoint_resume", "executor_selection", "generic_permission", "kernel_definition", "owner_acceptance"]
+    },
+    {
+      "stable_agent_id": "human-surface-writer",
+      "owner_ref": "owner:human",
+      "authority_refs": ["docs/governance/charter-system-r1.md", "docs/architecture/agent-platform-r2.md"],
+      "charter_refs": ["charter:life-community"],
+      "role": "human-surface-publication-capability-profile",
+      "allowed_capability_classes": ["git.read", "read.directories", "read.files", "write.files"],
+      "mutable_preference_refs": ["profile:human-entry-style"],
+      "update_policy": "Owner-only; publication wording remains reviewable and reversible",
+      "memory_policy": "Editorial workflow summaries and owner feedback refs only",
+      "prohibited_self_escalation": true,
+      "allowed_packs": ["writing.zhiyuan", "knowledge.r0"],
+      "preferred_tool_classes": ["writing.apply_editorial_method", "writing.validate_publication_surface"],
+      "forbidden_tool_classes": ["run.commands", "network", "owner_acceptance", "truth_authority", "epistemic_upgrade"],
+      "approval_thresholds": {
+        "write.files": "BOUNDED_WRITE_REQUIRES_APPROVAL"
+      },
+      "budget_defaults": {
+        "max_actions": 10,
+        "max_output_bytes": 49152,
+        "max_writes": 4
+      },
+      "update_authority": "owner-only",
+      "prohibited_authority_upgrades": ["agent_lifecycle", "checkpoint_resume", "executor_selection", "generic_permission", "kernel_definition", "owner_acceptance"]
+    }
+  ]
+}

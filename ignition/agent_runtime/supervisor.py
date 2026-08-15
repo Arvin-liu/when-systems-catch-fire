@@ -281,9 +281,15 @@ class Supervisor:
             raise SupervisorError("episode is not loaded")
         return self._state
 
-    def start(self, spec: EpisodeSpec) -> dict[str, Any]:
+    def start(self, spec: EpisodeSpec, *, profiles: Mapping[str, Any] | None = None) -> dict[str, Any]:
         if self.spec_path.exists() or self.state_path.exists():
             raise SupervisorError("episode directory already contains a spec or state")
+        if profiles is not None:
+            try:
+                from .profile import apply_profiles_to_episode
+                spec = apply_profiles_to_episode(spec, profiles)
+            except (KeyError, TypeError, ValueError) as exc:
+                raise SupervisorError(f"profile projection failed closed: {exc}") from exc
         self.episode_dir.mkdir(parents=True, exist_ok=True)
         self._spec = spec
         _atomic_json(self.spec_path, spec.to_dict())
@@ -292,6 +298,7 @@ class Supervisor:
             "episode_id": spec.episode_id,
             "job_id": spec.job_id,
             "policy": spec.policy,
+            "profile_refs": {child.run_id: child.run_spec.profile_ref for child in spec.children},
             "phase": "SUPERVISE",
             "terminal": None,
             "started_at": utc_now(),

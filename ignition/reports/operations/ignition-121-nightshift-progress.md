@@ -103,6 +103,30 @@ Policy and provenance-preserving migration. No failure repair round was needed.
   checkpoint stop/resume behavior and recovery scheduling; no external or
   network action was introduced.
 
+## Step 05 — COMPLETE
+
+- Extended the generic `AgentProfile` contract with allowed Packs,
+  preferred/forbidden tool classes, typed approval thresholds, bounded budget
+  defaults, update authority and explicit prohibited authority upgrades. The
+  legacy R0 profile remains parseable without personality fields.
+- Added the three capability profiles `repository-maintainer`,
+  `bounded-researcher` and `human-surface-writer` in
+  `data/agent-runtime/agent-profiles-r1.json`, with the matching strict schema.
+  They are capability configurations, not personality or identity replicas.
+- Added `agent_runtime.profile` projection. It intersects declared and Profile
+  capabilities, can lower action/write/output budgets, can only strengthen
+  typed approval classes, and rebinds the action-plan digest after a legal
+  approval tightening. Pack selection is allowlist-only.
+- Wired Profile projection into `Supervisor.start(..., profiles=...)` and CLI
+  `episode start --profiles`; a real projected write waits for typed approval,
+  while the bounded researcher cannot acquire write capability.
+- Gates: Profile tests `5/5 PASS`; Profile validator, Supervisor validator,
+  Pack Registry regression, operational-memory regression, R0/R1 runtime
+  regression `16/16`, runtime boundary, Agentization boundary and diff check
+  `PASS`.
+- One deterministic repair round canonicalized Pack ordering and tightened the
+  action-plan digest assertion; no permission or Charter authority was added.
+
 ## Step ledger
 
 | Step | State | Commit | Remote SHA | Gate summary |
@@ -111,8 +135,8 @@ Policy and provenance-preserving migration. No failure repair round was needed.
 | 01 | COMPLETE | `94a74caf0bcda84cccb60f820f9f1abbbf068615` | `94a74caf0bcda84cccb60f820f9f1abbbf068615` | Admission policy, provenance migration, projection rebuild, and closure gates PASS |
 | 02 | COMPLETE | `b8f1b76c11a80e9e6b6bb320789f92ca6b4317e1` | `b8f1b76c11a80e9e6b6bb320789f92ca6b4317e1` | Pack Registry/Bus, four Pack manifests, CLI and runtime regression gates PASS |
 | 03 | COMPLETE | `7e8ac52122e815751870ed9b7d3354f7787d787e` | `7e8ac52122e815751870ed9b7d3354f7787d787e` | Cross-run operational memory, bounded capsule, redacting forget and regression gates PASS |
-| 04 | COMPLETE | pending until checkpoint commit | pending | Supervisor R0 DAG, budgets, approvals, bounded retry/handoff, recovery and regression gates PASS |
-| 05 | PENDING | — | — | — |
+| 04 | COMPLETE | `f6d93c119bde1049aaf032b0871479fa2fc86510` | `f6d93c119bde1049aaf032b0871479fa2fc86510` | Supervisor R0 DAG, budgets, approvals, bounded retry/handoff, recovery and regression gates PASS |
+| 05 | COMPLETE | pending until checkpoint commit | pending | Agent Profile R1 registry, legal scope projection, Pack selection and profile-driven approval gates PASS |
 | 06 | PENDING | — | — | — |
 | 07 | PENDING | — | — | — |
 | 08 | PENDING | — | — | — |
