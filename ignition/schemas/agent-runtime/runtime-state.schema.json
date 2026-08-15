@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ignition/agent-runtime/runtime-state.schema.json",
+  "type": "object",
+  "additionalProperties": true,
+  "required": ["runtime_version", "run_identity", "goal", "environment", "phase", "trace", "memory_events", "state_sha256"],
+  "properties": {
+    "runtime_version": {"const": "agent-runtime-r0"},
+    "phase": {"enum": ["OBSERVE", "FRAME", "PLAN", "AUTHORIZE", "ACT", "VALIDATE", "REMEMBER", "CONTINUE", "STOP"]},
+    "trace": {"type": "array", "items": {"$ref": "execution-trace-event.schema.json"}},
+    "memory_events": {"type": "array", "items": {"type": "object"}},
+    "state_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  }
+}

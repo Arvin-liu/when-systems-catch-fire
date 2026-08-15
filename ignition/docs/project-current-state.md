@@ -16,6 +16,14 @@
 
 之元写作法 `0.5.0` 是当前 L6 使用者，`0.4.0`、`0.3.0` 为历史已合并版本。两个当前作品均由任务 114 冻结旧 SHA-256、执行全篇语言审计、四类角色复核和实质修订；机器 registry 分开保存历史接受哈希与当前修订哈希。自动 validator 只证明结构化框架差异账本一致，不证明人类级语言理解或文学质量。
 
+## Task 119 current agentization boundary
+
+任务 119 在 118 的正式基线 `4f4358ef09d1871a48d7e32575a63453130b333c` 之上建立 `Agentization Boundary R0`。新增的 Generic Kernel 只承载身份、状态、来源引用、capability、授权、审计、checkpoint、handoff、resume lineage、结构化记忆事件和不变量；Agent Runtime 只编排 `Observe → Frame → Plan → Authorize → Act → Validate → Remember → Continue/Stop`。Kernel 不导入 Foundation、claims、Evidence、Functions、Non-Functions、Results、Knowledge、REOS 或 writing；Runtime 不要求 provider、model、网络或常驻 daemon。
+
+现有知识治理系统被登记为第一个 `Knowledge Domain Pack`，REOS vNext LIGHT 与之元写作法分别作为有界 research/writing Pack 引用；R0 没有全仓物理迁移。机器边界以 [`agentization-boundary-r0.json`](../data/architecture/agentization-boundary-r0.json)、`DomainPackManifest`、Agent Profile 和唯一系统图 `0.6.0` 为准。非知识 pilot 只读取两个 fixture 文本、生成排序 SHA-256 manifest，在不同 executor 间 checkpoint/resume，并在 validator 通过后进入 `COMPLETED_VALIDATED`；它是仓库范围隔离证据，不是 AGI、长期自主性或知识真值证据。
+
+Task 119 保持 `CURRENT_WITH_OPEN_OBLIGATIONS`：Task 115 Draft prior art 仅完成采纳审计，真实 provider/API、daemon、多 agent scheduler、向量记忆、Pack 物理拆分和外部 Owner acceptance 均未实现或未证明。
+
 ## 当前形态
 
 点火是一个仓库原生、版本化、证据可追溯、对象有类型、推断可检查、结论可降级的跨领域研究与行动基础设施原型。这个描述只绑定当前提交，不是永久项目身份。

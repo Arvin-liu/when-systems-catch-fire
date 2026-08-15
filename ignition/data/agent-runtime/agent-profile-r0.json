@@ -1,0 +1,25 @@
+{
+  "stable_agent_id": "ignition-agent-r0",
+  "owner_ref": "owner:human",
+  "authority_refs": [
+    "docs/governance/charter-system-r1.md",
+    "docs/governance/life-community-value-charter.md"
+  ],
+  "charter_refs": [
+    "charter:life-community"
+  ],
+  "role": "bounded-runtime-coordinator",
+  "allowed_capability_classes": [
+    "read_declared",
+    "write_declared",
+    "run_validator",
+    "checkpoint_resume"
+  ],
+  "mutable_preference_refs": [
+    "profile:output-format",
+    "profile:checkpoint-frequency"
+  ],
+  "update_policy": "Owner-only; changes require a new versioned profile and explicit authorization",
+  "memory_policy": "Structured run events, public summaries, checkpoints and resume capsules only",
+  "prohibited_self_escalation": true
+}

@@ -10,6 +10,8 @@
 
 项目的规范性方向由[生命共同体价值宪章](../ignition/docs/governance/life-community-value-charter.md)约束；宪章是价值边界，不是经验事实、数学证明或外部真值来源。点火当前总上限仍是 `CURRENT_WITH_OPEN_OBLIGATIONS`。工程完成、写作完成、测试通过、重复引用、跨域对应、模型美感或 Agent 共识都不能自动抬升命题的断言地位。
 
+点火正在从知识治理系统抽出领域无关的 Agent Kernel/Runtime；现有知识系统成为第一个可加载的 Domain Pack，详见[智能体化边界 R0](../ignition/docs/architecture/agentization-boundary-r0.md)。
+
 ## 2. 如何使用
 
 点火同时提供人类和机器两个通道：普通读者从[十分钟人类阅读路线](../ignition/HUMAN-READING.md)开始；Agent 从[AI 冷启动](../ignition/AI-START-HERE.md)开始，先读[项目状态增量日志](../ignition/STATE-CHANGELOG.md)的 baseline 与最近 delta，再回到[当前项目现状](../ignition/docs/project-current-state.md)、[迭代操作法](../ignition/ITERATION.md)和任务相关的 canonical registry。机器使用者还可读 [llms.txt](../ignition/llms.txt)；机器入口不能替代人类结果或对象权威。

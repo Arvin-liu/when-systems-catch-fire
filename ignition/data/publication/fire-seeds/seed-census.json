@@ -3041,7 +3041,7 @@
       "title": "点火仓库原生系统图",
       "knowledge_status": "HISTORICAL_OR_SUPERSEDED_SOURCE",
       "subject": null,
-      "source_sha256": "76e4a1f76203475f6c8faa69a41773c46efb961801dc35282dd71f80b2e16934",
+      "source_sha256": "bd3edd805d2196627e921a37a221cf06a13361aded4010df73e84cf7f6aa6692",
       "disposition": "SEED_CREATED",
       "seed_ids": [
         "FS-12"

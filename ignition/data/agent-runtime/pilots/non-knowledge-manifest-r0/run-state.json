@@ -1,0 +1,430 @@
+{
+  "runtime_version": "agent-runtime-r0",
+  "run_identity": {
+    "run_id": "manifest-pilot/run-001",
+    "profile_ref": "agent-profile-r0",
+    "goal_version": "manifest-goal-r0",
+    "created_by": "pilot-owner",
+    "runtime_version": "agent-runtime-r0"
+  },
+  "goal": {
+    "goal_id": "manifest-pilot",
+    "statement": "scan declared text files and write a sorted SHA-256 manifest without changing sources",
+    "success_conditions": [
+      "manifest matches all declared inputs",
+      "no source file changes",
+      "no unauthorized paths change"
+    ],
+    "prohibited_actions": [
+      "network access",
+      "source mutation",
+      "writes outside sandbox/manifest.json"
+    ],
+    "capability_scope_ref": "non-knowledge-pilot-scope",
+    "version": "r0"
+  },
+  "environment": {
+    "observation_id": "environment-001",
+    "run_id": "manifest-pilot/run-001",
+    "executor_id": "executor-alpha",
+    "observed_paths": [
+      "sandbox/input/alpha.txt",
+      "sandbox/input/beta.txt"
+    ],
+    "summary": "sandbox contains two declared text inputs and no manifest yet",
+    "provenance_refs": []
+  },
+  "frame_summary": "bounded file-manifest goal over 2 declared inputs",
+  "plan": {
+    "plan_id": "manifest-plan-r0",
+    "run_id": "manifest-pilot/run-001",
+    "steps": [
+      {
+        "step_id": "scan-inputs",
+        "operation": "scan_inputs",
+        "required_capabilities": [
+          "read.files"
+        ],
+        "requested_reads": [
+          "sandbox/input/alpha.txt",
+          "sandbox/input/beta.txt"
+        ],
+        "requested_writes": [],
+        "requested_commands": [],
+        "network_requested": false,
+        "approval_class": null,
+        "expected_output": "input hashes and sorted path set",
+        "reason_summary": "observe only; source files must remain unchanged"
+      },
+      {
+        "step_id": "write-manifest",
+        "operation": "write_manifest",
+        "required_capabilities": [
+          "write.manifest"
+        ],
+        "requested_reads": [
+          "sandbox/input/alpha.txt",
+          "sandbox/input/beta.txt"
+        ],
+        "requested_writes": [
+          "sandbox/manifest.json"
+        ],
+        "requested_commands": [],
+        "network_requested": false,
+        "approval_class": null,
+        "expected_output": "one deterministic manifest at the declared path",
+        "reason_summary": "write exactly one allowed derived output after the read step"
+      }
+    ],
+    "rationale_summary": "read and validate inputs before writing the single declared output"
+  },
+  "next_step_index": 2,
+  "action_count": 2,
+  "checkpoint_after_actions": 0,
+  "handoff_to": "executor-beta",
+  "phase": "STOP",
+  "trace": [
+    {
+      "event_id": "trace-0000",
+      "run_id": "manifest-pilot/run-001",
+      "sequence": 0,
+      "phase": "OBSERVE",
+      "event_type": "observe",
+      "actor_id": "executor-alpha",
+      "summary": "captured the declared environment observation",
+      "refs": [
+        "environment-001"
+      ]
+    },
+    {
+      "event_id": "trace-0001",
+      "run_id": "manifest-pilot/run-001",
+      "sequence": 1,
+      "phase": "FRAME",
+      "event_type": "frame",
+      "actor_id": "executor-alpha",
+      "summary": "recorded a bounded goal frame",
+      "refs": [
+        "manifest-pilot"
+      ]
+    },
+    {
+      "event_id": "trace-0002",
+      "run_id": "manifest-pilot/run-001",
+      "sequence": 2,
+      "phase": "PLAN",
+      "event_type": "plan",
+      "actor_id": "executor-alpha",
+      "summary": "created a deterministic action plan",
+      "refs": [
+        "manifest-plan-r0"
+      ]
+    },
+    {
+      "event_id": "trace-0003",
+      "run_id": "manifest-pilot/run-001",
+      "sequence": 3,
+      "phase": "AUTHORIZE",
+      "event_type": "authorize",
+      "actor_id": "kernel",
+      "summary": "authorization decision: ALLOW",
+      "refs": [
+        "action-scan-inputs",
+        "decision-action-scan-inputs"
+      ]
+    },
+    {
+      "event_id": "trace-0004",
+      "run_id": "manifest-pilot/run-001",
+      "sequence": 4,
+      "phase": "ACT",
+      "event_type": "act",
+      "actor_id": "executor-alpha",
+      "summary": "executor returned a typed action observation",
+      "refs": [
+        "action-scan-inputs"
+      ]
+    },
+    {
+      "event_id": "trace-0005",
+      "run_id": "manifest-pilot/run-001",
+      "sequence": 5,
+      "phase": "VALIDATE",
+      "event_type": "validate",
+      "actor_id": "validator",
+      "summary": "recorded the action validation result",
+      "refs": [
+        "validation-action-scan-inputs"
+      ]
+    },
+    {
+      "event_id": "trace-0006",
+      "run_id": "manifest-pilot/run-001",
+      "sequence": 6,
+      "phase": "REMEMBER",
+      "event_type": "remember",
+      "actor_id": "executor-alpha",
+      "summary": "persisted a structured durable memory event",
+      "refs": [
+        "memory-0000"
+      ]
+    },
+    {
+      "event_id": "trace-0007",
+      "run_id": "manifest-pilot/run-001",
+      "sequence": 7,
+      "phase": "CONTINUE",
+      "event_type": "checkpoint_prepare",
+      "actor_id": "executor-alpha",
+      "summary": "prepared a resumable handoff after a validated step",
+      "refs": [
+        "manifest-plan-r0"
+      ]
+    },
+    {
+      "event_id": "trace-0008",
+      "run_id": "manifest-pilot/run-001",
+      "sequence": 8,
+      "phase": "STOP",
+      "event_type": "checkpoint_stop",
+      "actor_id": "executor-alpha",
+      "summary": "stopped at an explicit resumable checkpoint",
+      "refs": []
+    },
+    {
+      "event_id": "trace-0009",
+      "run_id": "manifest-pilot/run-001",
+      "sequence": 9,
+      "phase": "CONTINUE",
+      "event_type": "resume",
+      "actor_id": "executor-beta",
+      "summary": "resumed from a verified capsule with a different executor",
+      "refs": [
+        "capsule-0001",
+        "checkpoint-0001"
+      ]
+    },
+    {
+      "event_id": "trace-0010",
+      "run_id": "manifest-pilot/run-001",
+      "sequence": 10,
+      "phase": "AUTHORIZE",
+      "event_type": "authorize",
+      "actor_id": "kernel",
+      "summary": "authorization decision: ALLOW",
+      "refs": [
+        "action-write-manifest",
+        "decision-action-write-manifest"
+      ]
+    },
+    {
+      "event_id": "trace-0011",
+      "run_id": "manifest-pilot/run-001",
+      "sequence": 11,
+      "phase": "ACT",
+      "event_type": "act",
+      "actor_id": "executor-beta",
+      "summary": "executor returned a typed action observation",
+      "refs": [
+        "action-write-manifest"
+      ]
+    },
+    {
+      "event_id": "trace-0012",
+      "run_id": "manifest-pilot/run-001",
+      "sequence": 12,
+      "phase": "VALIDATE",
+      "event_type": "validate",
+      "actor_id": "validator",
+      "summary": "recorded the action validation result",
+      "refs": [
+        "validation-action-write-manifest"
+      ]
+    },
+    {
+      "event_id": "trace-0013",
+      "run_id": "manifest-pilot/run-001",
+      "sequence": 13,
+      "phase": "REMEMBER",
+      "event_type": "remember",
+      "actor_id": "executor-beta",
+      "summary": "persisted a structured durable memory event",
+      "refs": [
+        "memory-0001"
+      ]
+    },
+    {
+      "event_id": "trace-0014",
+      "run_id": "manifest-pilot/run-001",
+      "sequence": 14,
+      "phase": "CONTINUE",
+      "event_type": "continue",
+      "actor_id": "executor-beta",
+      "summary": "validation passed; continuing with the next bounded step",
+      "refs": [
+        "action-write-manifest"
+      ]
+    },
+    {
+      "event_id": "trace-0015",
+      "run_id": "manifest-pilot/run-001",
+      "sequence": 15,
+      "phase": "STOP",
+      "event_type": "stop",
+      "actor_id": "executor-beta",
+      "summary": "all planned actions passed their declared validators",
+      "refs": []
+    }
+  ],
+  "memory_events": [
+    {
+      "event_id": "memory-0000",
+      "run_id": "manifest-pilot/run-001",
+      "event_type": "action_validation",
+      "source_refs": [
+        "action-scan-inputs",
+        "validation-action-scan-inputs"
+      ],
+      "public_summary": "recorded a structured action outcome for this run",
+      "created_by": "executor-alpha",
+      "retention": "run_and_resume",
+      "supersession_state": "active"
+    },
+    {
+      "event_id": "memory-0001",
+      "run_id": "manifest-pilot/run-001",
+      "event_type": "action_validation",
+      "source_refs": [
+        "action-write-manifest",
+        "validation-action-write-manifest"
+      ],
+      "public_summary": "recorded a structured action outcome for this run",
+      "created_by": "executor-beta",
+      "retention": "run_and_resume",
+      "supersession_state": "active"
+    }
+  ],
+  "checkpoints": [
+    {
+      "checkpoint_id": "checkpoint-0001",
+      "run_id": "manifest-pilot/run-001",
+      "phase": "STOP",
+      "state_ref": "run-state.json",
+      "state_sha256": "0fada61f751db87e7f42f570d7f2faac2d4569aa68bd30e3cdf03b6a780c35e3",
+      "event_count": 9,
+      "created_by": "executor-alpha",
+      "parent_checkpoint_id": null,
+      "reason_summary": "validated step complete; next step is handed off"
+    }
+  ],
+  "resume_capsule": {
+    "capsule_id": "capsule-0001",
+    "run_id": "manifest-pilot/run-001",
+    "checkpoint_id": "checkpoint-0001",
+    "state_ref": "run-state.json",
+    "state_sha256": "0fada61f751db87e7f42f570d7f2faac2d4569aa68bd30e3cdf03b6a780c35e3",
+    "pending_action_ids": [
+      "action-write-manifest"
+    ],
+    "required_capabilities": [
+      "write.manifest"
+    ],
+    "created_by": "executor-alpha",
+    "handoff": {
+      "from_executor_id": "executor-alpha",
+      "to_executor_id": "executor-beta",
+      "reason_summary": "continue the bounded plan after verifying the persisted state digest",
+      "resume_ref": "run-state.json"
+    }
+  },
+  "terminal": {
+    "state": "COMPLETED_VALIDATED",
+    "summary": "all planned actions passed their declared validators",
+    "executor_id": "executor-beta",
+    "event_count": 16
+  },
+  "executors": [
+    "executor-alpha",
+    "executor-beta"
+  ],
+  "created_at": "2026-08-15T12:00:00Z",
+  "state_sha256": "2c725e1c02693748188a14aa77b6430d9c3f9891f890a9063de7c03631a19b93",
+  "authorization_decisions": [
+    {
+      "decision_id": "decision-action-scan-inputs",
+      "action_id": "action-scan-inputs",
+      "run_id": "manifest-pilot/run-001",
+      "status": "ALLOW",
+      "scope_id": "non-knowledge-pilot-scope",
+      "reason_summary": "requested capabilities and paths are within the declared scope",
+      "checked_capabilities": [
+        "read.files"
+      ],
+      "created_by": "kernel"
+    },
+    {
+      "decision_id": "decision-action-write-manifest",
+      "action_id": "action-write-manifest",
+      "run_id": "manifest-pilot/run-001",
+      "status": "ALLOW",
+      "scope_id": "non-knowledge-pilot-scope",
+      "reason_summary": "requested capabilities and paths are within the declared scope",
+      "checked_capabilities": [
+        "write.manifest"
+      ],
+      "created_by": "kernel"
+    }
+  ],
+  "action_observations": [
+    {
+      "action_id": "action-scan-inputs",
+      "run_id": "manifest-pilot/run-001",
+      "executor_id": "executor-alpha",
+      "changed_paths": [],
+      "output_refs": [
+        "scan:e11ab1a13e602a987fee4e94b52eaddeecd13176b7ecacb197b59c3b020c9971"
+      ],
+      "summary": "read declared input files and produced an in-memory hash observation",
+      "error_code": null
+    },
+    {
+      "action_id": "action-write-manifest",
+      "run_id": "manifest-pilot/run-001",
+      "executor_id": "executor-beta",
+      "changed_paths": [
+        "sandbox/manifest.json"
+      ],
+      "output_refs": [
+        "sandbox/manifest.json"
+      ],
+      "summary": "wrote the single declared manifest output",
+      "error_code": null
+    }
+  ],
+  "validation_results": [
+    {
+      "validation_id": "validation-action-scan-inputs",
+      "run_id": "manifest-pilot/run-001",
+      "action_id": "action-scan-inputs",
+      "passed": true,
+      "checks": [
+        "no source file changed",
+        "scan produced one structured output ref"
+      ],
+      "summary": "scan step is valid"
+    },
+    {
+      "validation_id": "validation-action-write-manifest",
+      "run_id": "manifest-pilot/run-001",
+      "action_id": "action-write-manifest",
+      "passed": true,
+      "checks": [
+        "manifest exists",
+        "paths are sorted",
+        "SHA-256 values match",
+        "only declared output changed"
+      ],
+      "summary": "manifest matches the deterministic validator"
+    }
+  ]
+}

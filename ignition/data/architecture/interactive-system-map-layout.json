@@ -1,5 +1,5 @@
 {
-  "current_map_version": "0.5.0",
+  "current_map_version": "0.6.0",
   "geometry": {
     "columns": 3,
     "group_gap": 28,
@@ -89,10 +89,18 @@
       "id": "language_thought",
       "label": "语言—思维逻辑平面",
       "row": 3
+    },
+    {
+      "color": "#7c2d12",
+      "column": 1,
+      "description": "Owner/Human 与 Value Charter 之下的通用 Kernel、Runtime、环境和可加载 Domain Pack；Kernel ≠ Knowledge",
+      "id": "agentization",
+      "label": "智能体化边界 R0",
+      "row": 4
     }
   ],
-  "historical_map_version": "0.4.0",
-  "layout_version": "1.2.0",
+  "historical_map_version": "0.5.0",
+  "layout_version": "1.3.0",
   "node_order": {
     "boundaries": [
       "no_l7",
@@ -143,6 +151,20 @@
     "language_thought": [
       "language_thought_plane"
     ],
+    "agentization": [
+      "owner_human",
+      "agentization_boundary_r0",
+      "agent_kernel_r0",
+      "agent_runtime_r0",
+      "agent_profile_r0",
+      "runtime_environment",
+      "runtime_memory_loop",
+      "domain_pack_contract",
+      "knowledge_domain_pack",
+      "research_pack_reos_light",
+      "writing_pack",
+      "nonknowledge_pilot"
+    ],
     "models": [
       "mcf",
       "psd",
@@ -168,6 +190,6 @@
     ]
   },
   "repository_url": "https://github.com/Arvin-liu/when-systems-catch-fire",
-  "subtitle": "唯一完整总架构图；0.5.0 Current 派生投影，0.4.0 为 Historical。语言—思维横穿 L0—L6，不增加 L7；连线是仓库关系、同步义务或候选反馈，不自动表示现实因果。",
+  "subtitle": "唯一完整总架构图；0.6.0 Current 派生投影，0.5.0 为 Historical。Owner/Human 与 Value Charter 位于 escalation 之上；Kernel ≠ Knowledge，Runtime ≠ Research，Pack 可加载但不拥有通用 authority；语言—思维横穿 L0—L6，不增加 L7。连线是仓库关系、同步义务或候选反馈，不自动表示现实因果。",
   "title": "点火唯一完整可点击总架构图"
 }

@@ -27,7 +27,7 @@ Q32I closed iteration method `1.3.0` and registry-derived system map `0.3.0` aft
 
 Iteration method `1.4.0 — Continuous Stage Snapshot Publication` is Current. It adds a separate publication-status axis and a machine registry for public stage summaries; snapshot visibility never raises Accepted/Current/Activated. Task 101 adds machine/human dual outputs, repository-native result surfaces and self-correction CI, while retiring the former independent deployed reader from current and future completion gates.
 
-当前方法 `1.4.0`、系统图 `0.5.0` 与之元写作法 `0.5.0` 均以各自权威资产为准；旧版本只作为历史证据。面向 AI 的最近状态增量见 [`STATE-CHANGELOG.md`](../STATE-CHANGELOG.md)，它是恢复导航，不取代 `docs/project-current-state.md`、registry、claim/evidence 或 Results Book。
+当前方法 `1.4.0`、系统图 `0.6.0` 与之元写作法 `0.5.0` 均以各自权威资产为准；系统图 `0.5.0`、`0.4.0` 及更早版本只作为历史证据。面向 AI 的最近状态增量见 [`STATE-CHANGELOG.md`](../STATE-CHANGELOG.md)，它是恢复导航，不取代 `docs/project-current-state.md`、registry、claim/evidence 或 Results Book。
 
 Charter System R1（`docs/governance/charter-system-r1.md`，元治理层）经独立 exact-head acceptance（PR #137 head `669c9f8c` → merge commit `0e7c032`）收口为 Current（non-Activated），并经 front-door / 系统注册表 / VERSIONING 三表面同步（PR #139 → `09bf6400`，方法 `IGNITION-CHARTER-SYSTEM-R1-CURRENT-FRONT-DOOR-REGISTRY-AND-VERSIONING-SYNCHRONIZATION-R1-20260726`）完成 Current 收口的逐表面 attestation。它保持 `activated=false`、`publication_status=UNPUBLISHED`：Current 不等于 Activated，亦不构成任何已发布快照（满足 `PUBLISHED_SNAPSHOT != ACCEPTED/CURRENT/ACTIVATED`）。本同步不改变价值宪章、七层架构、Foundation 或迭代操作法版本。
 

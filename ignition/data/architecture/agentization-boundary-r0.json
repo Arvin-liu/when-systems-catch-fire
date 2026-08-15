@@ -1,0 +1,917 @@
+{
+  "manifest_version": "R0",
+  "task_id": "IGNITION-20260815-119",
+  "baseline": {
+    "repository": "Arvin-liu/when-systems-catch-fire",
+    "main_sha": "4f4358ef09d1871a48d7e32575a63453130b333c",
+    "registry_ref": "data/operations/project-components.json"
+  },
+  "role_vocabulary": [
+    "GENERIC_KERNEL",
+    "AGENT_RUNTIME",
+    "KNOWLEDGE_DOMAIN",
+    "DOMAIN_PACK",
+    "HUMAN_PUBLICATION",
+    "PLATFORM_TOOLING",
+    "HISTORICAL_OR_LEGACY"
+  ],
+  "components": [
+    {
+      "component_id": "accepted_work",
+      "current_path": "docs/publication/works/when-an-army-believes-its-own-back.md",
+      "canonical_ref": "docs/publication/works/when-an-army-believes-its-own-back.md",
+      "primary_role": "HUMAN_PUBLICATION",
+      "secondary_roles": [],
+      "domain_binding": "publication",
+      "kernel_dependency_direction": "CONSUMES_DOMAIN_OUTPUT",
+      "current_move_disposition": "KEEP_CURRENT_PATH_R0",
+      "reason": "is an owner-facing or reader-facing expression and navigation surface"
+    },
+    {
+      "component_id": "ai_guide",
+      "current_path": "docs/ai-assistant-usage-reference.md",
+      "canonical_ref": "docs/ai-assistant-usage-reference.md",
+      "primary_role": "HUMAN_PUBLICATION",
+      "secondary_roles": [
+        "GENERIC_KERNEL"
+      ],
+      "domain_binding": "publication",
+      "kernel_dependency_direction": "CONSUMES_DOMAIN_OUTPUT",
+      "current_move_disposition": "KEEP_CURRENT_PATH_R0",
+      "reason": "is an owner-facing or reader-facing expression and navigation surface"
+    },
+    {
+      "component_id": "arn",
+      "current_path": "docs/architecture/adaptive-relational-network.md",
+      "canonical_ref": "docs/architecture/adaptive-relational-network.md",
+      "primary_role": "DOMAIN_PACK",
+      "secondary_roles": [],
+      "domain_binding": "knowledge",
+      "kernel_dependency_direction": "CONSUMES_GENERIC_CONTRACT",
+      "current_move_disposition": "KEEP_CURRENT_PATH_R0",
+      "reason": "is an optional bounded capability/feedback pack consumed by the runtime"
+    },
+    {
+      "component_id": "candidate_return",
+      "current_path": "data/operations/feedback-return/",
+      "canonical_ref": "docs/publication/zhiyuan-writing-method.md#返回点火",
+      "primary_role": "DOMAIN_PACK",
+      "secondary_roles": [],
+      "domain_binding": "knowledge",
+      "kernel_dependency_direction": "CONSUMES_GENERIC_CONTRACT",
+      "current_move_disposition": "KEEP_CURRENT_PATH_R0",
+      "reason": "is an optional bounded capability/feedback pack consumed by the runtime"
+    },
+    {
+      "component_id": "case_source",
+      "current_path": "docs/publication/cases/jin-rise-case-source.md",
+      "canonical_ref": "docs/publication/cases/jin-rise-case-source.md",
+      "primary_role": "HUMAN_PUBLICATION",
+      "secondary_roles": [],
+      "domain_binding": "publication",
+      "kernel_dependency_direction": "CONSUMES_DOMAIN_OUTPUT",
+      "current_move_disposition": "KEEP_CURRENT_PATH_R0",
+      "reason": "is an owner-facing or reader-facing expression and navigation surface"
+    },
+    {
+      "component_id": "charter",
+      "current_path": "docs/governance/life-community-value-charter.md",
+      "canonical_ref": "docs/governance/life-community-value-charter.md",
+      "primary_role": "GENERIC_KERNEL",
+      "secondary_roles": [
+        "PLATFORM_TOOLING"
+      ],
+      "domain_binding": "domain_neutral",
+      "kernel_dependency_direction": "OWNS_GENERIC_CONTRACT",
+      "current_move_disposition": "KEEP_CURRENT_PATH_R0",
+      "reason": "keeps a domain-neutral authority, boundary or non-escalation contract; it does not own domain semantics"
+    },
+    {
+      "component_id": "current_state",
+      "current_path": "docs/project-current-state.md",
+      "canonical_ref": "docs/project-current-state.md",
+      "primary_role": "HUMAN_PUBLICATION",
+      "secondary_roles": [
+        "GENERIC_KERNEL"
+      ],
+      "domain_binding": "publication",
+      "kernel_dependency_direction": "CONSUMES_DOMAIN_OUTPUT",
+      "current_move_disposition": "KEEP_CURRENT_PATH_R0",
+      "reason": "is an owner-facing or reader-facing expression and navigation surface"
+    },
+    {
+      "component_id": "external_input",
+      "current_path": "docs/publication/cases/",
+      "canonical_ref": "docs/publication/zhiyuan-writing-method.md#双来源写作素材池",
+      "primary_role": "HUMAN_PUBLICATION",
+      "secondary_roles": [],
+      "domain_binding": "publication",
+      "kernel_dependency_direction": "CONSUMES_DOMAIN_OUTPUT",
+      "current_move_disposition": "KEEP_CURRENT_PATH_R0",
+      "reason": "is an owner-facing or reader-facing expression and navigation surface"
+    },
+    {
+      "component_id": "feedback_routes",
+      "current_path": "data/operations/feedback-routes/",
+      "canonical_ref": "docs/publication/zhiyuan-writing-method.md#返回点火",
+      "primary_role": "DOMAIN_PACK",
+      "secondary_roles": [],
+      "domain_binding": "knowledge",
+      "kernel_dependency_direction": "CONSUMES_GENERIC_CONTRACT",
+      "current_move_disposition": "KEEP_CURRENT_PATH_R0",
+      "reason": "is an optional bounded capability/feedback pack consumed by the runtime"
+    },
+    {
+      "component_id": "foundation",
+      "current_path": "FOUNDATION.md",
+      "canonical_ref": "FOUNDATION.md",
+      "primary_role": "KNOWLEDGE_DOMAIN",
+      "secondary_roles": [
+        "DOMAIN_PACK"
+      ],
+      "domain_binding": "knowledge",
+      "kernel_dependency_direction": "CONSUMES_GENERIC_CONTRACT",
+      "current_move_disposition": "KEEP_CURRENT_PATH_R0",
+      "reason": "contains knowledge-specific objects, evidence, formal semantics or their existing governance"
+    },
+    {
+      "component_id": "foundation_data",
+      "current_path": "FOUNDATION.md",
+      "canonical_ref": "FOUNDATION.md",
+      "primary_role": "GENERIC_KERNEL",
+      "secondary_roles": [],
+      "domain_binding": "domain_neutral",
+      "kernel_dependency_direction": "OWNS_GENERIC_CONTRACT",
+      "current_move_disposition": "KEEP_CURRENT_PATH_R0",
+      "reason": "keeps a domain-neutral authority, boundary or non-escalation contract; it does not own domain semantics"
+    },
+    {
+      "component_id": "function_os",
+      "current_path": "function-os-candidate/",
+      "canonical_ref": "function-os-candidate/v0.2/README.md",
+      "primary_role": "KNOWLEDGE_DOMAIN",
+      "secondary_roles": [
+        "DOMAIN_PACK"
+      ],
+      "domain_binding": "knowledge",
+      "kernel_dependency_direction": "CONSUMES_GENERIC_CONTRACT",
+      "current_move_disposition": "KEEP_CURRENT_PATH_R0",
+      "reason": "contains knowledge-specific objects, evidence, formal semantics or their existing governance"
+    },
+    {
+      "component_id": "historical_reports",
+      "current_path": "reports/operations/",
+      "canonical_ref": "reports/operations/",
+      "primary_role": "HISTORICAL_OR_LEGACY",
+      "secondary_roles": [],
+      "domain_binding": "historical",
+      "kernel_dependency_direction": "NO_CURRENT_DEPENDENCY",
+      "current_move_disposition": "HISTORICAL_NO_MOVE",
+      "reason": "is retained for provenance or historical compatibility and does not define the current runtime"
+    },
+    {
+      "component_id": "ignition_increment",
+      "current_path": "reports/publication/",
+      "canonical_ref": "docs/publication/zhiyuan-writing-method.md#双来源写作素材池",
+      "primary_role": "HUMAN_PUBLICATION",
+      "secondary_roles": [],
+      "domain_binding": "publication",
+      "kernel_dependency_direction": "CONSUMES_DOMAIN_OUTPUT",
+      "current_move_disposition": "KEEP_CURRENT_PATH_R0",
+      "reason": "is an owner-facing or reader-facing expression and navigation surface"
+    },
+    {
+      "component_id": "incremental_execution",
+      "current_path": "data/operations/component-execution-profile-policies.json",
+      "canonical_ref": "docs/architecture/incremental-execution.md",
+      "primary_role": "PLATFORM_TOOLING",
+      "secondary_roles": [],
+      "domain_binding": "platform",
+      "kernel_dependency_direction": "SUPPORTS_MULTIPLE_COMPONENTS",
+      "current_move_disposition": "KEEP_CURRENT_PATH_R0",
+      "reason": "supports repository generation, validation or synchronization without being domain authority"
+    },
+    {
+      "component_id": "iteration",
+      "current_path": "ITERATION.md",
+      "canonical_ref": "ITERATION.md",
+      "primary_role": "PLATFORM_TOOLING",
+      "secondary_roles": [],
+      "domain_binding": "platform",
+      "kernel_dependency_direction": "SUPPORTS_MULTIPLE_COMPONENTS",
+      "current_move_disposition": "KEEP_CURRENT_PATH_R0",
+      "reason": "supports repository generation, validation or synchronization without being domain authority"
+    },
+    {
+      "component_id": "stage_snapshot_publication",
+      "current_path": "docs/operations/stage-snapshot-publication.md",
+      "canonical_ref": "docs/operations/stage-snapshot-publication.md",
+      "primary_role": "PLATFORM_TOOLING",
+      "secondary_roles": [],
+      "domain_binding": "platform",
+      "kernel_dependency_direction": "SUPPORTS_MULTIPLE_COMPONENTS",
+      "current_move_disposition": "KEEP_CURRENT_PATH_R0",
+      "reason": "supports repository generation, validation or synchronization without being domain authority"
+    },
+    {
+      "component_id": "iteration_manifest_contract",
+      "current_path": "schemas/operations/iteration-manifest.schema.json",
+      "canonical_ref": "schemas/operations/iteration-manifest.schema.json",
+      "primary_role": "PLATFORM_TOOLING",
+      "secondary_roles": [],
+      "domain_binding": "platform",
+      "kernel_dependency_direction": "SUPPORTS_MULTIPLE_COMPONENTS",
+      "current_move_disposition": "KEEP_CURRENT_PATH_R0",
+      "reason": "supports repository generation, validation or synchronization without being domain authority"
+    },
+    {
+      "component_id": "l0",
+      "current_path": "data/evidence/",
+      "canonical_ref": "ARCHITECTURE.md#七层关系",
+      "primary_role": "KNOWLEDGE_DOMAIN",
+      "secondary_roles": [
+        "DOMAIN_PACK"
+      ],
+      "domain_binding": "knowledge",
+      "kernel_dependency_direction": "CONSUMES_GENERIC_CONTRACT",
+      "current_move_disposition": "KEEP_CURRENT_PATH_R0",
+      "reason": "contains knowledge-specific objects, evidence, formal semantics or their existing governance"
+    },
+    {
+      "component_id": "l1",
+      "current_path": "data/foundation/claims.jsonl",
+      "canonical_ref": "ARCHITECTURE.md#七层关系",
+      "primary_role": "KNOWLEDGE_DOMAIN",
+      "secondary_roles": [
+        "DOMAIN_PACK"
+      ],
+      "domain_binding": "knowledge",
+      "kernel_dependency_direction": "CONSUMES_GENERIC_CONTRACT",
+      "current_move_disposition": "KEEP_CURRENT_PATH_R0",
+      "reason": "contains knowledge-specific objects, evidence, formal semantics or their existing governance"
+    },
+    {
+      "component_id": "l2",
+      "current_path": "data/foundation/formal-objects.jsonl",
+      "canonical_ref": "ARCHITECTURE.md#七层关系",
+      "primary_role": "KNOWLEDGE_DOMAIN",
+      "secondary_roles": [
+        "DOMAIN_PACK"
+      ],
+      "domain_binding": "knowledge",
+      "kernel_dependency_direction": "CONSUMES_GENERIC_CONTRACT",
+      "current_move_disposition": "KEEP_CURRENT_PATH_R0",
+      "reason": "contains knowledge-specific objects, evidence, formal semantics or their existing governance"
+    },
+    {
+      "component_id": "l3",
+      "current_path": "data/foundation/arguments.jsonl",
+      "canonical_ref": "ARCHITECTURE.md#七层关系",
+      "primary_role": "KNOWLEDGE_DOMAIN",
+      "secondary_roles": [
+        "DOMAIN_PACK"
+      ],
+      "domain_binding": "knowledge",
+      "kernel_dependency_direction": "CONSUMES_GENERIC_CONTRACT",
+      "current_move_disposition": "KEEP_CURRENT_PATH_R0",
+      "reason": "contains knowledge-specific objects, evidence, formal semantics or their existing governance"
+    },
+    {
+      "component_id": "l4",
+      "current_path": "formal/",
+      "canonical_ref": "ARCHITECTURE.md#七层关系",
+      "primary_role": "KNOWLEDGE_DOMAIN",
+      "secondary_roles": [
+        "DOMAIN_PACK"
+      ],
+      "domain_binding": "knowledge",
+      "kernel_dependency_direction": "CONSUMES_GENERIC_CONTRACT",
+      "current_move_disposition": "KEEP_CURRENT_PATH_R0",
+      "reason": "contains knowledge-specific objects, evidence, formal semantics or their existing governance"
+    },
+    {
+      "component_id": "l5",
+      "current_path": "tests/foundation/",
+      "canonical_ref": "ARCHITECTURE.md#七层关系",
+      "primary_role": "KNOWLEDGE_DOMAIN",
+      "secondary_roles": [
+        "DOMAIN_PACK"
+      ],
+      "domain_binding": "knowledge",
+      "kernel_dependency_direction": "CONSUMES_GENERIC_CONTRACT",
+      "current_move_disposition": "KEEP_CURRENT_PATH_R0",
+      "reason": "contains knowledge-specific objects, evidence, formal semantics or their existing governance"
+    },
+    {
+      "component_id": "l6",
+      "current_path": "docs/publication/",
+      "canonical_ref": "ARCHITECTURE.md#七层关系",
+      "primary_role": "KNOWLEDGE_DOMAIN",
+      "secondary_roles": [
+        "DOMAIN_PACK"
+      ],
+      "domain_binding": "knowledge",
+      "kernel_dependency_direction": "CONSUMES_GENERIC_CONTRACT",
+      "current_move_disposition": "KEEP_CURRENT_PATH_R0",
+      "reason": "contains knowledge-specific objects, evidence, formal semantics or their existing governance"
+    },
+    {
+      "component_id": "language_thought_plane",
+      "current_path": "docs/architecture/language-thought-logic-plane.md",
+      "canonical_ref": "docs/architecture/language-thought-logic-plane.md",
+      "primary_role": "DOMAIN_PACK",
+      "secondary_roles": [],
+      "domain_binding": "knowledge",
+      "kernel_dependency_direction": "CONSUMES_GENERIC_CONTRACT",
+      "current_move_disposition": "KEEP_CURRENT_PATH_R0",
+      "reason": "is an optional bounded capability/feedback pack consumed by the runtime"
+    },
+    {
+      "component_id": "licensing",
+      "current_path": "LICENSE",
+      "canonical_ref": "docs/governance/licensing-rights-inventory.md",
+      "primary_role": "GENERIC_KERNEL",
+      "secondary_roles": [
+        "PLATFORM_TOOLING"
+      ],
+      "domain_binding": "domain_neutral",
+      "kernel_dependency_direction": "OWNS_GENERIC_CONTRACT",
+      "current_move_disposition": "KEEP_CURRENT_PATH_R0",
+      "reason": "keeps a domain-neutral authority, boundary or non-escalation contract; it does not own domain semantics"
+    },
+    {
+      "component_id": "mcf",
+      "current_path": "docs/architecture/multiscale-causal-fabric.md",
+      "canonical_ref": "docs/architecture/multiscale-causal-fabric.md",
+      "primary_role": "DOMAIN_PACK",
+      "secondary_roles": [],
+      "domain_binding": "knowledge",
+      "kernel_dependency_direction": "CONSUMES_GENERIC_CONTRACT",
+      "current_move_disposition": "KEEP_CURRENT_PATH_R0",
+      "reason": "is an optional bounded capability/feedback pack consumed by the runtime"
+    },
+    {
+      "component_id": "no_l7",
+      "current_path": "ARCHITECTURE.md",
+      "canonical_ref": "ARCHITECTURE.md#七层关系",
+      "primary_role": "GENERIC_KERNEL",
+      "secondary_roles": [],
+      "domain_binding": "domain_neutral",
+      "kernel_dependency_direction": "OWNS_GENERIC_CONTRACT",
+      "current_move_disposition": "KEEP_CURRENT_PATH_R0",
+      "reason": "keeps a domain-neutral authority, boundary or non-escalation contract; it does not own domain semantics"
+    },
+    {
+      "component_id": "no_totality_proof",
+      "current_path": "docs/project-current-state.md",
+      "canonical_ref": "docs/project-current-state.md",
+      "primary_role": "GENERIC_KERNEL",
+      "secondary_roles": [],
+      "domain_binding": "domain_neutral",
+      "kernel_dependency_direction": "OWNS_GENERIC_CONTRACT",
+      "current_move_disposition": "KEEP_CURRENT_PATH_R0",
+      "reason": "keeps a domain-neutral authority, boundary or non-escalation contract; it does not own domain semantics"
+    },
+    {
+      "component_id": "no_truth_upgrade",
+      "current_path": "FOUNDATION.md",
+      "canonical_ref": "FOUNDATION.md",
+      "primary_role": "GENERIC_KERNEL",
+      "secondary_roles": [],
+      "domain_binding": "domain_neutral",
+      "kernel_dependency_direction": "OWNS_GENERIC_CONTRACT",
+      "current_move_disposition": "KEEP_CURRENT_PATH_R0",
+      "reason": "keeps a domain-neutral authority, boundary or non-escalation contract; it does not own domain semantics"
+    },
+    {
+      "component_id": "human_knowledge_surfaces",
+      "current_path": "HUMAN-READING.md",
+      "canonical_ref": "KNOWLEDGE/README.md",
+      "primary_role": "PLATFORM_TOOLING",
+      "secondary_roles": [],
+      "domain_binding": "platform",
+      "kernel_dependency_direction": "SUPPORTS_MULTIPLE_COMPONENTS",
+      "current_move_disposition": "KEEP_CURRENT_PATH_R0",
+      "reason": "supports repository generation, validation or synchronization without being domain authority"
+    },
+    {
+      "component_id": "point_fire_analysis",
+      "current_path": "reports/publication/jin-rise-point-fire-analysis.md",
+      "canonical_ref": "reports/publication/jin-rise-point-fire-analysis.md",
+      "primary_role": "HUMAN_PUBLICATION",
+      "secondary_roles": [],
+      "domain_binding": "publication",
+      "kernel_dependency_direction": "CONSUMES_DOMAIN_OUTPUT",
+      "current_move_disposition": "KEEP_CURRENT_PATH_R0",
+      "reason": "is an owner-facing or reader-facing expression and navigation surface"
+    },
+    {
+      "component_id": "project_component_registry",
+      "current_path": "data/operations/project-components.json",
+      "canonical_ref": "data/operations/project-components.json",
+      "primary_role": "PLATFORM_TOOLING",
+      "secondary_roles": [],
+      "domain_binding": "platform",
+      "kernel_dependency_direction": "SUPPORTS_MULTIPLE_COMPONENTS",
+      "current_move_disposition": "KEEP_CURRENT_PATH_R0",
+      "reason": "supports repository generation, validation or synchronization without being domain authority"
+    },
+    {
+      "component_id": "propagation_calculator",
+      "current_path": "tools/operations/compute_change_propagation.py",
+      "canonical_ref": "tools/operations/compute_change_propagation.py",
+      "primary_role": "PLATFORM_TOOLING",
+      "secondary_roles": [],
+      "domain_binding": "platform",
+      "kernel_dependency_direction": "SUPPORTS_MULTIPLE_COMPONENTS",
+      "current_move_disposition": "KEEP_CURRENT_PATH_R0",
+      "reason": "supports repository generation, validation or synchronization without being domain authority"
+    },
+    {
+      "component_id": "propagation_topology",
+      "current_path": "data/operations/change-propagation-topology.json",
+      "canonical_ref": "data/operations/change-propagation-topology.json",
+      "primary_role": "PLATFORM_TOOLING",
+      "secondary_roles": [],
+      "domain_binding": "platform",
+      "kernel_dependency_direction": "SUPPORTS_MULTIPLE_COMPONENTS",
+      "current_move_disposition": "KEEP_CURRENT_PATH_R0",
+      "reason": "supports repository generation, validation or synchronization without being domain authority"
+    },
+    {
+      "component_id": "provenance_capture",
+      "current_path": "data/publication/provenance/",
+      "canonical_ref": "docs/publication/zhiyuan-writing-method.md#返回点火",
+      "primary_role": "DOMAIN_PACK",
+      "secondary_roles": [],
+      "domain_binding": "knowledge",
+      "kernel_dependency_direction": "CONSUMES_GENERIC_CONTRACT",
+      "current_move_disposition": "KEEP_CURRENT_PATH_R0",
+      "reason": "is an optional bounded capability/feedback pack consumed by the runtime"
+    },
+    {
+      "component_id": "psd",
+      "current_path": "docs/architecture/probabilistic-system-dynamics.md",
+      "canonical_ref": "docs/architecture/probabilistic-system-dynamics.md",
+      "primary_role": "DOMAIN_PACK",
+      "secondary_roles": [],
+      "domain_binding": "knowledge",
+      "kernel_dependency_direction": "CONSUMES_GENERIC_CONTRACT",
+      "current_move_disposition": "KEEP_CURRENT_PATH_R0",
+      "reason": "is an optional bounded capability/feedback pack consumed by the runtime"
+    },
+    {
+      "component_id": "public_response",
+      "current_path": "data/publication/feedback/",
+      "canonical_ref": "docs/publication/zhiyuan-writing-method.md#返回点火",
+      "primary_role": "DOMAIN_PACK",
+      "secondary_roles": [],
+      "domain_binding": "knowledge",
+      "kernel_dependency_direction": "CONSUMES_GENERIC_CONTRACT",
+      "current_move_disposition": "KEEP_CURRENT_PATH_R0",
+      "reason": "is an optional bounded capability/feedback pack consumed by the runtime"
+    },
+    {
+      "component_id": "q12",
+      "current_path": "docs/architecture/effectual-action-plane.md",
+      "canonical_ref": "docs/architecture/effectual-action-plane.md",
+      "primary_role": "PLATFORM_TOOLING",
+      "secondary_roles": [],
+      "domain_binding": "platform",
+      "kernel_dependency_direction": "SUPPORTS_MULTIPLE_COMPONENTS",
+      "current_move_disposition": "KEEP_CURRENT_PATH_R0",
+      "reason": "supports repository generation, validation or synchronization without being domain authority"
+    },
+    {
+      "component_id": "q13",
+      "current_path": "docs/architecture/attention-attractor-control-plane.md",
+      "canonical_ref": "docs/architecture/attention-attractor-control-plane.md",
+      "primary_role": "PLATFORM_TOOLING",
+      "secondary_roles": [],
+      "domain_binding": "platform",
+      "kernel_dependency_direction": "SUPPORTS_MULTIPLE_COMPONENTS",
+      "current_move_disposition": "KEEP_CURRENT_PATH_R0",
+      "reason": "supports repository generation, validation or synchronization without being domain authority"
+    },
+    {
+      "component_id": "q14",
+      "current_path": "docs/architecture/ignition-atlas.md",
+      "canonical_ref": "docs/architecture/ignition-atlas.md",
+      "primary_role": "PLATFORM_TOOLING",
+      "secondary_roles": [],
+      "domain_binding": "platform",
+      "kernel_dependency_direction": "SUPPORTS_MULTIPLE_COMPONENTS",
+      "current_move_disposition": "KEEP_CURRENT_PATH_R0",
+      "reason": "supports repository generation, validation or synchronization without being domain authority"
+    },
+    {
+      "component_id": "readme",
+      "current_path": ".github/README.md",
+      "canonical_ref": ".github/README.md",
+      "primary_role": "HUMAN_PUBLICATION",
+      "secondary_roles": [
+        "GENERIC_KERNEL"
+      ],
+      "domain_binding": "publication",
+      "kernel_dependency_direction": "CONSUMES_DOMAIN_OUTPUT",
+      "current_move_disposition": "KEEP_CURRENT_PATH_R0",
+      "reason": "is an owner-facing or reader-facing expression and navigation surface"
+    },
+    {
+      "component_id": "showcase",
+      "current_path": "docs/publication/zhiyuan-writing-showcase.md",
+      "canonical_ref": "docs/publication/zhiyuan-writing-showcase.md",
+      "primary_role": "HUMAN_PUBLICATION",
+      "secondary_roles": [],
+      "domain_binding": "publication",
+      "kernel_dependency_direction": "CONSUMES_DOMAIN_OUTPUT",
+      "current_move_disposition": "KEEP_CURRENT_PATH_R0",
+      "reason": "is an owner-facing or reader-facing expression and navigation surface"
+    },
+    {
+      "component_id": "showcase_registry",
+      "current_path": "data/publication/zhiyuan-writing-showcase.json",
+      "canonical_ref": "data/publication/zhiyuan-writing-showcase.json",
+      "primary_role": "HUMAN_PUBLICATION",
+      "secondary_roles": [],
+      "domain_binding": "publication",
+      "kernel_dependency_direction": "CONSUMES_DOMAIN_OUTPUT",
+      "current_move_disposition": "KEEP_CURRENT_PATH_R0",
+      "reason": "is an owner-facing or reader-facing expression and navigation surface"
+    },
+    {
+      "component_id": "source_pool",
+      "current_path": "templates/publication/zhiyuan-writing-spec.md",
+      "canonical_ref": "templates/publication/zhiyuan-writing-spec.md#双来源素材池",
+      "primary_role": "HUMAN_PUBLICATION",
+      "secondary_roles": [],
+      "domain_binding": "publication",
+      "kernel_dependency_direction": "CONSUMES_DOMAIN_OUTPUT",
+      "current_move_disposition": "KEEP_CURRENT_PATH_R0",
+      "reason": "is an owner-facing or reader-facing expression and navigation surface"
+    },
+    {
+      "component_id": "summary",
+      "current_path": "SUMMARY.md",
+      "canonical_ref": "SUMMARY.md",
+      "primary_role": "HUMAN_PUBLICATION",
+      "secondary_roles": [],
+      "domain_binding": "publication",
+      "kernel_dependency_direction": "CONSUMES_DOMAIN_OUTPUT",
+      "current_move_disposition": "KEEP_CURRENT_PATH_R0",
+      "reason": "is an owner-facing or reader-facing expression and navigation surface"
+    },
+    {
+      "component_id": "sustainability",
+      "current_path": "reports/atlas/maps/map-maintainer-sustainability-economics.md",
+      "canonical_ref": "reports/atlas/maps/map-maintainer-sustainability-economics.md",
+      "primary_role": "GENERIC_KERNEL",
+      "secondary_roles": [
+        "PLATFORM_TOOLING"
+      ],
+      "domain_binding": "domain_neutral",
+      "kernel_dependency_direction": "OWNS_GENERIC_CONTRACT",
+      "current_move_disposition": "KEEP_CURRENT_PATH_R0",
+      "reason": "keeps a domain-neutral authority, boundary or non-escalation contract; it does not own domain semantics"
+    },
+    {
+      "component_id": "sync",
+      "current_path": "data/operations/synchronization-surfaces.json",
+      "canonical_ref": "data/operations/synchronization-surfaces.json",
+      "primary_role": "PLATFORM_TOOLING",
+      "secondary_roles": [],
+      "domain_binding": "platform",
+      "kernel_dependency_direction": "SUPPORTS_MULTIPLE_COMPONENTS",
+      "current_move_disposition": "KEEP_CURRENT_PATH_R0",
+      "reason": "supports repository generation, validation or synchronization without being domain authority"
+    },
+    {
+      "component_id": "system_map",
+      "current_path": "data/architecture/interactive-system-map.json",
+      "canonical_ref": "data/architecture/interactive-system-map.json",
+      "primary_role": "GENERIC_KERNEL",
+      "secondary_roles": [],
+      "domain_binding": "domain_neutral",
+      "kernel_dependency_direction": "OWNS_GENERIC_CONTRACT",
+      "current_move_disposition": "KEEP_CURRENT_PATH_R0",
+      "reason": "keeps a domain-neutral authority, boundary or non-escalation contract; it does not own domain semantics"
+    },
+    {
+      "component_id": "system_map_layout",
+      "current_path": "data/architecture/interactive-system-map-layout.json",
+      "canonical_ref": "data/architecture/interactive-system-map-layout.json",
+      "primary_role": "PLATFORM_TOOLING",
+      "secondary_roles": [],
+      "domain_binding": "platform",
+      "kernel_dependency_direction": "SUPPORTS_MULTIPLE_COMPONENTS",
+      "current_move_disposition": "KEEP_CURRENT_PATH_R0",
+      "reason": "supports repository generation, validation or synchronization without being domain authority"
+    },
+    {
+      "component_id": "system_map_projection",
+      "current_path": "data/architecture/interactive-system-map.json",
+      "canonical_ref": "data/architecture/interactive-system-map.json",
+      "primary_role": "PLATFORM_TOOLING",
+      "secondary_roles": [],
+      "domain_binding": "platform",
+      "kernel_dependency_direction": "SUPPORTS_MULTIPLE_COMPONENTS",
+      "current_move_disposition": "KEEP_CURRENT_PATH_R0",
+      "reason": "supports repository generation, validation or synchronization without being domain authority"
+    },
+    {
+      "component_id": "usage",
+      "current_path": "docs/USAGE.md",
+      "canonical_ref": "docs/USAGE.md",
+      "primary_role": "HUMAN_PUBLICATION",
+      "secondary_roles": [],
+      "domain_binding": "publication",
+      "kernel_dependency_direction": "CONSUMES_DOMAIN_OUTPUT",
+      "current_move_disposition": "KEEP_CURRENT_PATH_R0",
+      "reason": "is an owner-facing or reader-facing expression and navigation surface"
+    },
+    {
+      "component_id": "zhiyuan_method",
+      "current_path": "docs/publication/zhiyuan-writing-method.md",
+      "canonical_ref": "docs/publication/zhiyuan-writing-method.md",
+      "primary_role": "HUMAN_PUBLICATION",
+      "secondary_roles": [],
+      "domain_binding": "publication",
+      "kernel_dependency_direction": "CONSUMES_DOMAIN_OUTPUT",
+      "current_move_disposition": "KEEP_CURRENT_PATH_R0",
+      "reason": "is an owner-facing or reader-facing expression and navigation surface"
+    },
+    {
+      "component_id": "copyright_governance_jurisdiction_registry",
+      "current_path": "data/governance/jurisdiction-rule-registry.json",
+      "canonical_ref": "data/governance/jurisdiction-rule-registry.json",
+      "primary_role": "GENERIC_KERNEL",
+      "secondary_roles": [
+        "PLATFORM_TOOLING"
+      ],
+      "domain_binding": "domain_neutral",
+      "kernel_dependency_direction": "OWNS_GENERIC_CONTRACT",
+      "current_move_disposition": "KEEP_CURRENT_PATH_R0",
+      "reason": "keeps a domain-neutral authority, boundary or non-escalation contract; it does not own domain semantics"
+    },
+    {
+      "component_id": "copyright_governance_source_rights",
+      "current_path": "data/governance/source-rights-registry.json",
+      "canonical_ref": "data/governance/source-rights-registry.json",
+      "primary_role": "GENERIC_KERNEL",
+      "secondary_roles": [
+        "PLATFORM_TOOLING"
+      ],
+      "domain_binding": "domain_neutral",
+      "kernel_dependency_direction": "OWNS_GENERIC_CONTRACT",
+      "current_move_disposition": "KEEP_CURRENT_PATH_R0",
+      "reason": "keeps a domain-neutral authority, boundary or non-escalation contract; it does not own domain semantics"
+    },
+    {
+      "component_id": "copyright_governance_material_classification",
+      "current_path": "data/governance/material-classification.json",
+      "canonical_ref": "data/governance/material-classification.json",
+      "primary_role": "GENERIC_KERNEL",
+      "secondary_roles": [
+        "PLATFORM_TOOLING"
+      ],
+      "domain_binding": "domain_neutral",
+      "kernel_dependency_direction": "OWNS_GENERIC_CONTRACT",
+      "current_move_disposition": "KEEP_CURRENT_PATH_R0",
+      "reason": "keeps a domain-neutral authority, boundary or non-escalation contract; it does not own domain semantics"
+    },
+    {
+      "component_id": "copyright_governance_history_remediation",
+      "current_path": "data/governance/history-remediation-register.json",
+      "canonical_ref": "data/governance/history-remediation-register.json",
+      "primary_role": "GENERIC_KERNEL",
+      "secondary_roles": [
+        "PLATFORM_TOOLING"
+      ],
+      "domain_binding": "domain_neutral",
+      "kernel_dependency_direction": "OWNS_GENERIC_CONTRACT",
+      "current_move_disposition": "KEEP_CURRENT_PATH_R0",
+      "reason": "keeps a domain-neutral authority, boundary or non-escalation contract; it does not own domain semantics"
+    },
+    {
+      "component_id": "copyright_governance_publication_gate_validator",
+      "current_path": "tools/governance/fail_closed_publication_gate.py",
+      "canonical_ref": "tools/governance/fail_closed_publication_gate.py",
+      "primary_role": "GENERIC_KERNEL",
+      "secondary_roles": [
+        "PLATFORM_TOOLING"
+      ],
+      "domain_binding": "domain_neutral",
+      "kernel_dependency_direction": "OWNS_GENERIC_CONTRACT",
+      "current_move_disposition": "KEEP_CURRENT_PATH_R0",
+      "reason": "keeps a domain-neutral authority, boundary or non-escalation contract; it does not own domain semantics"
+    },
+    {
+      "component_id": "copyright_governance_non_republication_principle",
+      "current_path": "docs/governance/external-input-non-republication-principle.md",
+      "canonical_ref": "docs/governance/external-input-non-republication-principle.md",
+      "primary_role": "GENERIC_KERNEL",
+      "secondary_roles": [
+        "PLATFORM_TOOLING"
+      ],
+      "domain_binding": "domain_neutral",
+      "kernel_dependency_direction": "OWNS_GENERIC_CONTRACT",
+      "current_move_disposition": "KEEP_CURRENT_PATH_R0",
+      "reason": "keeps a domain-neutral authority, boundary or non-escalation contract; it does not own domain semantics"
+    },
+    {
+      "component_id": "copyright_governance_tests",
+      "current_path": "tests/test_q33_governance_infrastructure.py",
+      "canonical_ref": "tests/test_q33_governance_infrastructure.py",
+      "primary_role": "GENERIC_KERNEL",
+      "secondary_roles": [
+        "PLATFORM_TOOLING"
+      ],
+      "domain_binding": "domain_neutral",
+      "kernel_dependency_direction": "OWNS_GENERIC_CONTRACT",
+      "current_move_disposition": "KEEP_CURRENT_PATH_R0",
+      "reason": "keeps a domain-neutral authority, boundary or non-escalation contract; it does not own domain semantics"
+    },
+    {
+      "component_id": "charter_system_r1",
+      "current_path": "docs/governance/charter-system-r1.md",
+      "canonical_ref": "docs/governance/charter-system-r1.md",
+      "primary_role": "GENERIC_KERNEL",
+      "secondary_roles": [
+        "PLATFORM_TOOLING"
+      ],
+      "domain_binding": "domain_neutral",
+      "kernel_dependency_direction": "OWNS_GENERIC_CONTRACT",
+      "current_move_disposition": "KEEP_CURRENT_PATH_R0",
+      "reason": "keeps a domain-neutral authority, boundary or non-escalation contract; it does not own domain semantics"
+    },
+    {
+      "component_id": "epistemic_governance_kernel",
+      "current_path": "docs/architecture/epistemic-governance-kernel-and-federated-planes.md",
+      "canonical_ref": "docs/architecture/epistemic-governance-kernel-and-federated-planes.md",
+      "primary_role": "GENERIC_KERNEL",
+      "secondary_roles": [
+        "PLATFORM_TOOLING"
+      ],
+      "domain_binding": "domain_neutral",
+      "kernel_dependency_direction": "OWNS_GENERIC_CONTRACT",
+      "current_move_disposition": "KEEP_CURRENT_PATH_R0",
+      "reason": "keeps a domain-neutral authority, boundary or non-escalation contract; it does not own domain semantics"
+    },
+    {
+      "component_id": "owner_human",
+      "current_path": ".github/README.md",
+      "canonical_ref": ".github/README.md#1. 项目与价值",
+      "primary_role": "GENERIC_KERNEL",
+      "secondary_roles": [],
+      "domain_binding": "domain_neutral",
+      "kernel_dependency_direction": "OWNS_GENERIC_CONTRACT",
+      "current_move_disposition": "KEEP_CURRENT_PATH_R0",
+      "reason": "keeps a domain-neutral authority, boundary or non-escalation contract; it does not own domain semantics"
+    },
+    {
+      "component_id": "agentization_boundary_r0",
+      "current_path": "data/architecture/agentization-boundary-r0.json",
+      "canonical_ref": "docs/architecture/agentization-boundary-r0.md",
+      "primary_role": "GENERIC_KERNEL",
+      "secondary_roles": [],
+      "domain_binding": "domain_neutral",
+      "kernel_dependency_direction": "OWNS_GENERIC_CONTRACT",
+      "current_move_disposition": "ADD_R0_COMPONENT",
+      "reason": "keeps a domain-neutral authority, boundary or non-escalation contract; it does not own domain semantics; newly added R0 boundary asset, no existing domain tree was moved"
+    },
+    {
+      "component_id": "agent_kernel_r0",
+      "current_path": "agent_kernel/",
+      "canonical_ref": "agent_kernel/README.md",
+      "primary_role": "GENERIC_KERNEL",
+      "secondary_roles": [],
+      "domain_binding": "domain_neutral",
+      "kernel_dependency_direction": "OWNS_GENERIC_CONTRACT",
+      "current_move_disposition": "ADD_R0_COMPONENT",
+      "reason": "keeps a domain-neutral authority, boundary or non-escalation contract; it does not own domain semantics; newly added R0 boundary asset, no existing domain tree was moved"
+    },
+    {
+      "component_id": "agent_runtime_r0",
+      "current_path": "agent_runtime/",
+      "canonical_ref": "agent_runtime/README.md",
+      "primary_role": "AGENT_RUNTIME",
+      "secondary_roles": [],
+      "domain_binding": "domain_neutral",
+      "kernel_dependency_direction": "CONSUMES_GENERIC_CONTRACT",
+      "current_move_disposition": "ADD_R0_COMPONENT",
+      "reason": "owns the provider-neutral execution loop while delegating domain work to packs; newly added R0 boundary asset, no existing domain tree was moved"
+    },
+    {
+      "component_id": "agent_profile_r0",
+      "current_path": "data/agent-runtime/agent-profile-r0.json",
+      "canonical_ref": "data/agent-runtime/agent-profile-r0.json",
+      "primary_role": "GENERIC_KERNEL",
+      "secondary_roles": [
+        "PLATFORM_TOOLING"
+      ],
+      "domain_binding": "domain_neutral",
+      "kernel_dependency_direction": "OWNS_GENERIC_CONTRACT",
+      "current_move_disposition": "ADD_R0_COMPONENT",
+      "reason": "keeps a domain-neutral authority, boundary or non-escalation contract; it does not own domain semantics; newly added R0 boundary asset, no existing domain tree was moved"
+    },
+    {
+      "component_id": "runtime_environment",
+      "current_path": "docs/architecture/agent-runtime-r0.md",
+      "canonical_ref": "docs/architecture/agent-runtime-r0.md",
+      "primary_role": "AGENT_RUNTIME",
+      "secondary_roles": [],
+      "domain_binding": "domain_neutral",
+      "kernel_dependency_direction": "CONSUMES_GENERIC_CONTRACT",
+      "current_move_disposition": "ADD_R0_COMPONENT",
+      "reason": "owns the provider-neutral execution loop while delegating domain work to packs; newly added R0 boundary asset, no existing domain tree was moved"
+    },
+    {
+      "component_id": "runtime_memory_loop",
+      "current_path": "agent_runtime/runtime.py",
+      "canonical_ref": "agent_runtime/README.md#Memory R0",
+      "primary_role": "AGENT_RUNTIME",
+      "secondary_roles": [],
+      "domain_binding": "domain_neutral",
+      "kernel_dependency_direction": "CONSUMES_GENERIC_CONTRACT",
+      "current_move_disposition": "ADD_R0_COMPONENT",
+      "reason": "owns the provider-neutral execution loop while delegating domain work to packs; newly added R0 boundary asset, no existing domain tree was moved"
+    },
+    {
+      "component_id": "domain_pack_contract",
+      "current_path": "agent_kernel/domain_pack.py",
+      "canonical_ref": "agent_kernel/domain_pack.py",
+      "primary_role": "GENERIC_KERNEL",
+      "secondary_roles": [],
+      "domain_binding": "domain_neutral",
+      "kernel_dependency_direction": "OWNS_GENERIC_CONTRACT",
+      "current_move_disposition": "ADD_R0_COMPONENT",
+      "reason": "keeps a domain-neutral authority, boundary or non-escalation contract; it does not own domain semantics; newly added R0 boundary asset, no existing domain tree was moved"
+    },
+    {
+      "component_id": "knowledge_domain_pack",
+      "current_path": "packs/knowledge/manifest.json",
+      "canonical_ref": "packs/knowledge/manifest.json",
+      "primary_role": "DOMAIN_PACK",
+      "secondary_roles": [
+        "AGENT_RUNTIME"
+      ],
+      "domain_binding": "knowledge",
+      "kernel_dependency_direction": "CONSUMES_GENERIC_CONTRACT",
+      "current_move_disposition": "REF_ONLY_NO_MOVE",
+      "reason": "is an optional bounded capability/feedback pack consumed by the runtime; adapter/reference only in R0, existing source tree remains in place"
+    },
+    {
+      "component_id": "research_pack_reos_light",
+      "current_path": "docs/architecture/reos-vnext-light.md",
+      "canonical_ref": "docs/architecture/reos-vnext-light.md#Navigation boundary",
+      "primary_role": "DOMAIN_PACK",
+      "secondary_roles": [
+        "AGENT_RUNTIME"
+      ],
+      "domain_binding": "research",
+      "kernel_dependency_direction": "CONSUMES_GENERIC_CONTRACT",
+      "current_move_disposition": "REF_ONLY_NO_MOVE",
+      "reason": "is an optional bounded capability/feedback pack consumed by the runtime; adapter/reference only in R0, existing source tree remains in place"
+    },
+    {
+      "component_id": "writing_pack",
+      "current_path": "docs/publication/zhiyuan-writing-method.md",
+      "canonical_ref": "docs/publication/zhiyuan-writing-method.md#双向接口契约",
+      "primary_role": "DOMAIN_PACK",
+      "secondary_roles": [
+        "AGENT_RUNTIME"
+      ],
+      "domain_binding": "writing",
+      "kernel_dependency_direction": "CONSUMES_GENERIC_CONTRACT",
+      "current_move_disposition": "REF_ONLY_NO_MOVE",
+      "reason": "is an optional bounded capability/feedback pack consumed by the runtime; adapter/reference only in R0, existing source tree remains in place"
+    },
+    {
+      "component_id": "nonknowledge_pilot",
+      "current_path": "agent_runtime/pilots/non_knowledge_manifest.py",
+      "canonical_ref": "agent_runtime/pilots/non_knowledge_manifest.py",
+      "primary_role": "DOMAIN_PACK",
+      "secondary_roles": [],
+      "domain_binding": "knowledge",
+      "kernel_dependency_direction": "CONSUMES_GENERIC_CONTRACT",
+      "current_move_disposition": "ADD_R0_COMPONENT",
+      "reason": "is an optional bounded capability/feedback pack consumed by the runtime; newly added R0 boundary asset, no existing domain tree was moved"
+    }
+  ],
+  "physical_migration": {
+    "performed": false,
+    "scope": "new boundary/runtime contracts and pilots only",
+    "residual": [
+      "Foundation, Evidence, REOS, writing and publication trees remain at their current paths",
+      "future physical pack extraction requires a separately authorized task"
+    ]
+  },
+  "invariants": [
+    "Kernel does not import a domain pack",
+    "Runtime does not require a provider or model brand",
+    "Permission is checked before every action and unknown capability fails closed",
+    "Checkpoint/resume does not upgrade a blocked or failed validation state",
+    "KERNEL_NON_ESCALATION blocks lifecycle, executor selection, generic permission, checkpoint/resume, Owner acceptance and Kernel definition upgrades",
+    "K13_ASSERTION_NON_ESCALATION remains the knowledge-specific assertion projection"
+  ]
+}

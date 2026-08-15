@@ -1,6 +1,6 @@
 # AI 助手使用参考
 
-版本事实：当前迭代方法为 `1.4.0 Continuous Stage Snapshot Publication`，当前系统图为 `0.5.0`；系统图 `0.4.0`、`0.3.0` 与更早版本均为 Historical。Q32I 已独立接受、由 PR #62 普通合并并 Closed；其 execution capability 与 validation capability 必须分离，manual/external 不得调用本地 validator。`docs/generated/recent-stage-results.md` 的“正在炼化”只投影阶段摘要；可见不等于 Accepted、Current、Activated 或能力可用。
+版本事实：当前迭代方法为 `1.4.0 Continuous Stage Snapshot Publication`，当前系统图为 `0.6.0`；系统图 `0.5.0`、`0.4.0`、`0.3.0` 与更早版本均为 Historical。Q32I 已独立接受、由 PR #62 普通合并并 Closed；其 execution capability 与 validation capability 必须分离，manual/external 不得调用本地 validator。`docs/generated/recent-stage-results.md` 的“正在炼化”只投影阶段摘要；可见不等于 Accepted、Current、Activated 或能力可用。
 
 这页给第一次接触点火项目的人使用。你不必先读完整仓库，可以先把下面的提示词复制给自己常用的 AI 助手，让它帮你做第一轮阅读。
 

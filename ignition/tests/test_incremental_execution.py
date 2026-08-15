@@ -48,6 +48,15 @@ class PhaseD2EndToEndAcceptance(unittest.TestCase):
             "component-execution-profiles.json",
         ):
             shutil.copyfile(ROOT / "data/operations" / name, repo / "data/operations" / name)
+        for relative in (
+            "tools/foundation/validate_foundation.py",
+            "tools/governance/validate_human_visibility.py",
+            "tools/validate_human_front_door.py",
+            "tools/generate_interactive_system_map.py",
+        ):
+            destination = repo / relative
+            destination.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copyfile(ROOT / relative, destination)
         return temp, repo
 
     def executor_fixture(self, specs):
@@ -152,9 +161,9 @@ class PhaseD2EndToEndAcceptance(unittest.TestCase):
             "change_classifications": ["EVIDENCE_UPDATE"],
         })
         self.assertFalse(document["full_rebuild_reasons"])
-        self.assertEqual(document["q32_affected_component_closure"], ["readme"])
+        self.assertEqual(document["q32_affected_component_closure"], ["owner_human", "readme"])
         changed = [item for item in document["component_decisions"] if item["decision"] != "NO_CHANGE_WITH_PROOF"]
-        self.assertEqual([(item["component_id"], item["decision"]) for item in changed], [("readme", "REVALIDATE")])
+        self.assertEqual([(item["component_id"], item["decision"]) for item in changed], [("owner_human", "REVALIDATE"), ("readme", "REVALIDATE")])
 
     def test_d2_05_registry_and_core_schema_force_full_rebuild(self):
         for changed_path in (

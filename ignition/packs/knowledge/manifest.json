@@ -1,0 +1,56 @@
+{
+  "pack_id": "knowledge.r0",
+  "display_name": "Knowledge Domain Pack R0",
+  "domain": "knowledge",
+  "capabilities_provided": [
+    "knowledge.read_foundation",
+    "knowledge.validate_claim",
+    "knowledge.validate_evidence_link",
+    "knowledge.project_results"
+  ],
+  "object_types": [
+    "foundation_object",
+    "claim",
+    "evidence_link",
+    "proof_obligation",
+    "function_asset",
+    "nonfunction_assertion",
+    "result_record",
+    "epistemic_correction"
+  ],
+  "validators": [
+    "tools/validate_foundation.py",
+    "tools/validate_claims.py",
+    "tools/validate_epistemic_governance_relationships.py"
+  ],
+  "human_entries": [
+    "FOUNDATION.md",
+    "KNOWLEDGE/README.md",
+    "RESULTS/README.md",
+    "packs/knowledge/README.md"
+  ],
+  "machine_entries": [
+    "data/foundation/",
+    "data/claims/",
+    "data/evidence/",
+    "data/results/",
+    "data/governance/"
+  ],
+  "required_kernel_capabilities": [
+    "read_declared",
+    "run_validator",
+    "write_declared"
+  ],
+  "prohibited_authority_upgrades": [
+    "agent_lifecycle",
+    "executor_selection",
+    "generic_permission",
+    "checkpoint_resume",
+    "owner_acceptance",
+    "kernel_definition"
+  ],
+  "optional_runtime_hooks": [
+    "before_domain_validation",
+    "after_domain_validation"
+  ]
+}

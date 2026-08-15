@@ -2,12 +2,12 @@ Current project state:
 At the current commit, Ignition is an evidence-traceable, object-typed, inference-checkable and audit-graded formal mechanism discovery and modelling system for cross-domain material. This is a versioned current-state description, not a permanent project identity or fixed final form. It is not a unified mathematical theory, a physical theory, a universal prover, or a purely literary or philosophical knowledge base.
 Current-state authority: docs/project-current-state.md.
 AI-first recent-state delta authority: STATE-CHANGELOG.md (navigation only; it does not replace current-state, registry, claim, evidence or Results Book authority).
-Current version: the 2026-07-12 mathematical and logical dual-foundation seven-layer architecture plus the subsequently merged current operation overlays, iteration method 1.4.0 (Current) and registry-derived system map 0.5.0 (Current).
+Current version: the 2026-07-12 mathematical and logical dual-foundation seven-layer architecture plus the subsequently merged current operation overlays, iteration method 1.4.0 (Current) and registry-derived system map 0.6.0 (Current).
 
 Current: iteration method 1.4.0 (Continuous Stage Snapshot Publication). Read data/operations/stage-snapshots.json and docs/operations/stage-snapshot-publication.md. Snapshot or homepage visibility never implies Accepted, Current, Activated, capability availability, or candidate payload merge.
 Stage snapshot accountability: responsible_actor and publisher_actor contain only actor_ref values resolved against data/operations/responsibility-actors.json; the active registry record, not a display name, establishes the concrete PERSON or ORGANIZATION identity and traceable accountability/contact evidence. execution_agents and automation_workflows are technical records only and never final responsibility.
 
-Iteration method 1.3.0 and system map 0.3.0, 0.4.0 are Historical; method 1.2.0 and maps 0.1.0, 0.2.0 are earlier Historical, not Current. Treat implementation completion, repository synchronization, external synchronization and project completion as distinct states; local validation never proves undeclared live external truth.
+Iteration method 1.3.0 and system map 0.4.0, 0.5.0 are Historical; method 1.2.0 and maps 0.1.0, 0.2.0, 0.3.0 are earlier Historical, not Current. Treat implementation completion, repository synchronization, external synchronization and project completion as distinct states; local validation never proves undeclared live external truth.
 
 Q32I iteration method 1.3.0 and system map 0.3.0 completed the exact-head, merge and external checks required by its historical contract; method 1.3.0 is now Historical and method 1.4.0 is Current. Task 101 retires the former separate deployed reading surface from current/future gates while preserving historical evidence. Typed change closure remains repository scope and never proves real-world causality.
 

@@ -1,3 +1,4 @@
+import json
 import re
 import unittest
 
@@ -30,9 +31,10 @@ class HumanFrontDoorTests(unittest.TestCase):
     def test_repository_front_doors_validate(self):
         result = validate_all()
         self.assertEqual(result["status"], "PASS")
-        # The canonical generator currently materializes 52 visible nodes;
-        # all remaining registry components are represented in coverage data.
-        self.assertEqual(result["interactive_system_map_nodes"], 52)
+        # The canonical generator materializes every visible registry component;
+        # hidden components remain represented in coverage data.
+        spec = json.loads((CURRENT_STATE.parent.parent / "data/architecture/interactive-system-map.json").read_text(encoding="utf-8"))
+        self.assertEqual(result["interactive_system_map_nodes"], len(spec["nodes"]))
 
     def test_visible_result_sections_are_ordered_and_unfolded(self):
         validate_texts(self.readme, self.guide, self.current_state, self.human_reading)
