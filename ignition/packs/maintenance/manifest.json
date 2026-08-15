@@ -35,7 +35,8 @@
     "tools/validate_supervisor.py",
     "tools/validate_agent_profiles.py",
     "tools/validate_reasoner_gateway.py",
-    "tools/validate_pack_aware_routing.py"
+    "tools/validate_pack_aware_routing.py",
+    "tools/validate_r2_offline_repository_maintenance.py"
   ],
   "action_hooks": [
     "maintenance.inspect_declared",
@@ -51,7 +52,8 @@
   ],
   "machine_entries": [
     "agent_runtime",
-    "data/operations/iterations/121"
+    "data/operations/iterations/121",
+    "data/agent-runtime/pilots/r2-offline-repository-maintenance"
   ],
   "permissions_requested": {
     "read_paths": [

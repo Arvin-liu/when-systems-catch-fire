@@ -105,6 +105,15 @@ R1 的 terminal state 新增 `FAILED_VALIDATION_ROLLED_BACK`、`ROLLBACK_FAILED`
 
 真实离线 pilot 位于 `agent_runtime/pilots/r1_real_local.py`：Pilot A 验证批准后真实写入和 allowlisted command validator；Pilot B 验证跨 executor 重启、post-execute crash 的 postimage reconcile、lease/idempotency 记录和失败后的文件回滚。
 
+R2 夜班的真实离线多 Run episode 位于
+`agent_runtime/pilots/r2_repository_maintenance.py`：它先建立 disposable
+source repository，再用 fresh local clone 驱动 `audit → repair → validate`
+依赖 DAG；修复动作在 post-execute/pre-persist 故障点暂停为
+`EPISODE_CHECKPOINTED_RESUMABLE`，随后由不同 executor instance 恢复。提交的
+receipt 还保留 typed approvals、operational-memory FAILURE/EPISODIC 摘要、
+对抗性独立失败和 `network_allowed=false`/`remote_mutation=false` 边界；这
+是离线仓库维护观察，不是外部效果或一般智能证明。
+
 ## R0 历史边界
 
 Agent Runtime R0 实现最小的通用循环：

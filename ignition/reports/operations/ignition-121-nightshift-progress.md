@@ -197,6 +197,43 @@ Policy and provenance-preserving migration. No failure repair round was needed.
   remote mutation, Knowledge claim, Owner, truth or epistemic authority was
   introduced.
 
+## Step 09 — COMPLETE
+
+- Added the real offline R2 pilot at
+  `agent_runtime/pilots/r2_repository_maintenance.py`. It creates a disposable
+  source repository, makes a fresh local clone before supervision, and drives
+  the `audit → repair → validate` dependency DAG through the checked-in
+  `repository-maintainer` Profile.
+- The audit recorded one typed `MISSING_HASH` finding. The approved repair
+  added the local README SHA-256 and a repair receipt; validation produced a
+  typed PASS report. The main episode reached
+  `EPISODE_COMPLETED_VALIDATED` with `FAIL_FAST`, four typed approvals, one
+  checkpoint and a handoff from `instance-1` to
+  `repair-executor-instance-2`.
+- A `post_execute_before_persist` repair fault was captured at the Supervisor
+  approval boundary as `EPISODE_CHECKPOINTED_RESUMABLE`; resume reconciled the
+  durable postimage without duplicating the repair. The approval-path capture
+  closes the R0/R1 integration gap found by the first pilot attempt.
+- The adversarial `CONTINUE_INDEPENDENT` episode retained two independent
+  `CAPABILITY_UNAVAILABLE` child failures for a denied network request and
+  denied remote Git mutation. Gateway probes for permission expansion and
+  forged completion were rejected; the protected local file was preserved.
+- `durable-memory.jsonl` contains typed FAILURE and EPISODIC records, and the
+  exported capsule is bounded operational recall only. The committed receipt
+  proves only this offline fixture: `network_allowed=false`,
+  `remote_mutation=false`, `git_push_invoked=false`, and sanitized paths.
+- Gates: R2 pilot plus Supervisor tests `7/7 PASS`; pilot receipt validator,
+  Supervisor validator, Pack Registry validator and Operational Memory
+  validator `PASS`; the committed Human Report preserves the observation
+  ceiling and does not claim production safety, Owner acceptance, truth or
+  epistemic acceptance.
+
+### Step 09 decision
+
+`STEP_09_OFFLINE_MULTI_RUN_EPISODE_COMPLETE`; proceed to Step 10, whole-repo
+Agent-first/Human Surface convergence. The commit and exact remote SHA are
+recorded in the ledger at the Step 09 checkpoint below.
+
 ## Step ledger
 
 | Step | State | Commit | Remote SHA | Gate summary |
@@ -209,8 +246,8 @@ Policy and provenance-preserving migration. No failure repair round was needed.
 | 05 | COMPLETE | `a16c2c3ed61e825ec3e7e14d24cd85f205f027bc` | `a16c2c3ed61e825ec3e7e14d24cd85f205f027bc` | Agent Profile R1 registry, legal scope projection, Pack selection and profile-driven approval gates PASS |
 | 06 | COMPLETE | `b1710307f17160cb820fb54876c0ff75ee285f3f` | `b1710307f17160cb820fb54876c0ff75ee285f3f` | Reasoner Gateway R1 schema, digest, bounded capsule, provider-neutral adapters and adversarial gates PASS |
 | 07 | COMPLETE | `64e20ef250397a9aebefa5a6f6cf475c279d67a1` | `64e20ef250397a9aebefa5a6f6cf475c279d67a1` | Pack-aware catalog/provenance/routing and three cross-Pack authority negative gates PASS |
-| 08 | COMPLETE | pending until checkpoint commit | pending | Four source-contract blast-radius fixtures, topology/impact/generator updates, historical reconciliation and map gates PASS |
-| 09 | PENDING | — | — | — |
+| 08 | COMPLETE | `71ffd9aa5e185d0eddc53e185f2cfc931f16a0df` | `71ffd9aa5e185d0eddc53e185f2cfc931f16a0df` | Four source-contract blast-radius fixtures, topology/impact/generator updates, historical reconciliation and map gates PASS |
+| 09 | COMPLETE | pending until checkpoint commit | pending | Offline fresh-clone A/B/C episode, approval-path fault checkpoint, executor handoff, operational memory and adversarial episode PASS |
 | 10 | PENDING | — | — | — |
 | 11 | PENDING | — | — | — |
 | 12 | PENDING | — | — | — |

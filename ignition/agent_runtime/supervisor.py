@@ -362,13 +362,30 @@ class Supervisor:
         if child["status"] != "WAITING_FOR_APPROVAL":
             raise SupervisorError("child run is not waiting for approval")
         runtime = self._runtime(child)
-        result = runtime.approve(
-            request_id,
-            decision,
-            authority_id=authority_id,
-            authority_type=authority_type,
-            reason_summary=reason_summary,
-        )
+        try:
+            result = runtime.approve(
+                request_id,
+                decision,
+                authority_id=authority_id,
+                authority_type=authority_type,
+                reason_summary=reason_summary,
+            )
+        except CrashInjected:
+            child["status"] = "CHECKPOINTED_RESUMABLE"
+            child["terminal_state"] = "CHECKPOINTED_RESUMABLE"
+            child["terminal_summary"] = "child approval path crashed after bounded execution and left a durable checkpoint"
+            self.state["checkpoint_count"] += 1
+            self.state["approval_events"].append({
+                "run_id": run_id,
+                "request_id": request_id,
+                "decision": decision.upper(),
+                "authority_type": authority_type,
+                "status": "CHECKPOINTED_RESUMABLE",
+                "recorded_at": utc_now(),
+            })
+            self._record_child_history(child)
+            self._event("child_checkpoint", "captured an approved child crash without promoting it to completion", [run_id, request_id])
+            return self._stop_episode("EPISODE_CHECKPOINTED_RESUMABLE", "one or more child runs have restartable durable checkpoints")
         self._sync_child(child, result)
         self.state["approval_events"].append({
             "run_id": run_id,
