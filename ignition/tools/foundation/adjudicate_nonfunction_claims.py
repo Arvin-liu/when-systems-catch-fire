@@ -43,6 +43,7 @@ SELF_EXCLUDES = {
     "tools/generate_overall_architecture.py",
     "tools/governance/build_claim_browsers.py",
     "tools/publication/validate_fire_seeds.py",
+    "tools/publication/build_fire_seed_census.py",
     "tests/test_overall_architecture.py",
     "tests/test_fire_seeds.py",
     "data/architecture/overall-architecture.json",

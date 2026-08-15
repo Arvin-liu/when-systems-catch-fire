@@ -38,3 +38,13 @@
 - obligations: 已关闭当前入口/路径迁移、当前 Pages 引用、浏览器/整体图/火种确定性投影与仓库内链接校验；历史记录仍需保留其原始 provenance。继续开放：每次正式 main 合并追加 delta、火种按 `SEED_DELTA`/`NO_SEED_DELTA` 协议更新、外部页面验证只以发布后 live receipt 为准，以及项目既有证明/实证/开放问题义务。
 - stale_knowledge: 根目录 `README.md` 不再是当前入口，`.github/README.md` 才是当前首页；函数/非函数 closure JSON 不是首要人类阅读路由；旧 Pages URL 只在带历史标记的 121Q32 记录与负向测试中存在；“工程完成即断言升级”的认知继续失效。
 - next_read: 先读 [首页](../.github/README.md)、本日志最近条目，再按目的读 [火种](./PUBLICATIONS/pointfire-results-book/12-火种：点火跑出来的发现、问题与写作种子.md)、[函数浏览器](./docs/human/function-assets/README.md)、[非函数浏览器](./docs/human/nonfunction-claims/README.md)、[整体架构图](./docs/generated/ignition-overall-architecture.svg)和 [当前项目现状](./docs/project-current-state.md)。
+
+## 2026-08-15 — IGNITION-20260815-117-FIRE-SEED-CONTENT-ARCHAEOLOGY — main transition from 89b005566bdfe266414c850871793b9dd10ba0af
+
+- main_state: CURRENT_WITH_OPEN_OBLIGATIONS; 本轮正式内容考古从远端 main 基线 89b005566bdfe266414c850871793b9dd10ba0af 开始，最终发布 tip 由 Git 提交与远端回执确定。
+- delta: 将《火种》从上一轮 24 条方法论入口扩展为 40 条内容火种加 24 条方法论火种；内容回到文章、案例、GetNote 主题、函数族、研究报告、写作片段、失败与负结果，source census 覆盖知识体验层 308 个 source origins 加 1489 条补充人类语料。
+- authority_changes: [火种](./PUBLICATIONS/pointfire-results-book/12-火种：点火跑出来的发现、问题与写作种子.md)、[火种 source census](./data/publication/fire-seeds/seed-census.json)、[火种更新协议](./data/publication/fire-seeds/UPDATE-PROTOCOL.md)、[成果册入口](./PUBLICATIONS/pointfire-results-book/README.md)和[成果册变更记录](./PUBLICATIONS/pointfire-results-book/CHANGELOG.md)记录本轮内容层增量；根目录、首页、系统图和治理结构不在本轮范围。
+- epistemic_state: 本轮不改变各权威对象的既有状态轴、范围、出处、记录期限或公开边界；外部新颖性未核验，EPISTEMICALLY_ACCEPTED=0 不变。内容火种只表示内部来源链上的研究问题、重组、反例或写作入口。
+- obligations: 40 条内容入口仍需各自回到所链接文件、原有状态和开放义务；GetNote 未分配、ABSTAIN、未核证和 source recovery blocked 状态不被本轮内容化关闭；历史、withdrawn、quarantine、negative result、方法与外部核证缺口继续保留。
+- stale_knowledge: 旧的 24 条 seed-census 仍是历史快照，不再覆盖本轮完整内容层；seed 数量不是独立依据数量，source census 不是新的登记权威，知识体验层的 308 也不是永久计数。
+- next_read: 先读[内容火种](./PUBLICATIONS/pointfire-results-book/12-火种：点火跑出来的发现、问题与写作种子.md)、[机器清册](./data/publication/fire-seeds/seed-census.json)和[更新协议](./data/publication/fire-seeds/UPDATE-PROTOCOL.md)，再按主题回到[成果册](./PUBLICATIONS/pointfire-results-book/README.md)、[当前结果](./RESULTS/LATEST.md)和[开放问题](./RESULTS/OPEN-QUESTIONS.md)。

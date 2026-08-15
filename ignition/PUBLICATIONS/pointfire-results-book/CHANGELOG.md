@@ -1,5 +1,11 @@
 # 成果册公共出版变更
 
+## 2026-08-15 · IGNITION-20260815-117 内容考古与火种扩展
+
+- 把《火种》的主入口从上一轮的方法论盘点扩展为 40 条内容火种与保留的 24 条方法论火种；内容按人与行动、协作与权力、身份与共同体、历史与制度、AI 与技术、知识与认知、复杂系统、生命与维护、写作传播、失败与负结果分组。
+- 新增完整 source census 与 seed registry：读取当前知识体验层 308 个 source origins，并补读成果册、文章、案例、研究报告、函数/案例表、碰撞和结果页；每个来源标记 SEED_CREATED、MERGED_INTO_SEED、NO_SEED_DELTA 或 EXCLUDED_NONCONTENT。
+- 保留撤回、quarantine、不可识别、外部核证缺口和原始失败；external_novelty_status 固定为 NOT_CHECKED，不把内部内容增量写成外部原创性或已证命题。
+
 ## 2026-08-14 · seven-track evidence evolution R1 Owner-accepted publication
 
 - 新增第十章，将七轨窄修复整理为可读的知识结果、负结果、Owner 决策和残余，而不是执行日志。
