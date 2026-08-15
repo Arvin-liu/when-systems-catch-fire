@@ -4,6 +4,23 @@ Read `ignition/AI-START-HERE.md`, `ignition/STATE-CHANGELOG.md` (baseline and re
 
 Current iteration method is `1.4.0` and Current system map is `0.6.0`. Method `1.3.0` and maps `0.5.0`/`0.4.0`/`0.3.0`/`0.2.0` are Historical; method `1.2.0` and map `0.1.0` are earlier Historical.
 
+## Task 121 Agent Platform R2 cold start
+
+The current task-branch engineering projection is a bounded, auditable and
+recoverable Agent Platform prototype. Knowledge Governance is its first large
+Domain Pack, not the whole system. Before acting, read
+`ignition/docs/architecture/agent-platform-r2.md`, the Kernel and Runtime
+READMEs, all four `ignition/packs/*/manifest.json` files, the R2 pilot receipt,
+the propagation contract and the night-shift ledger. Until Step 12 fast-forward,
+fresh-clone replay and formal receipt close, this is not a claim that `main` has
+moved. `EPISTEMICALLY_ACCEPTED=0` remains unchanged.
+
+Keep these boundaries explicit: `Kernel ≠ Knowledge`, `Reasoner ≠ Executor`,
+`Pack ≠ truth authority`, and `pilot ≠ general intelligence`. R2 does not
+authorize live providers, daemons, multi-Agent concurrency, vector memory,
+network/browser actions, automatic Git mutation, physical Pack migration,
+Owner acceptance or external validity.
+
 For Q32I profiles, keep authority, execution capability and validation capability separate. Manual or external validation must not invoke a local validator. A local `validator_argv` is permitted only when it is complete, exists, runs successfully and validates the declared component responsibility. Never substitute the incomplete generic `python3 ignition/tools/validate_protocol_canonical.py --check` command.
 
 Tests, CI, cache and artifacts are repository evidence only. They do not perform independent review, merge a PR, establish Current state or prove real-world truth or causality.

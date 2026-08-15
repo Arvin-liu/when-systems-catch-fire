@@ -26,7 +26,7 @@ Define operational variables, intervention or identification assumptions, datase
 
 - 机器 ID：`NFC-154bdc1ff37c47f6`；断言类别：`MECHANISM_OR_CAUSAL_CLAIM`；断言类型：`EMPIRICAL`。
 - M/E：数学成熟度 `M0`；外部证据成熟度 `E0`；复现：`NO_REPLICATION_CLAIMED`。
-- 处置：`ACCEPTED_AS_DEFINITION`；机器记录指纹：`ab7f13bbf86c6bfe3276f1d06985183f8d615aff45546261a97210fd8c8bd297`；来源指纹：`9eb5b107f139c402141bb3cfb9e3670778d0ba586269d5d7e33c0d94a1ae8476`。
+- 处置：`ACCEPTED_AS_DEFINITION`；机器记录指纹：`ab7f13bbf86c6bfe3276f1d06985183f8d615aff45546261a97210fd8c8bd297`；来源指纹：`fbf703ea35b007e71a903e197247ea64fa1a685be79c8d0d861e6652c7540e71`。
 - 来源：[docs/project-current-state.md](../../../docs/project-current-state.md)；机器权威：[claim registry](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)；生成方法：[之元写作法 0.5.0](../../../docs/publication/zhiyuan-writing-method.md)。
 
 > 这页是可读解释，不是第二份断言数据库。任何状态变化都必须先发生在 canonical registry，并通过生成器重新投影。

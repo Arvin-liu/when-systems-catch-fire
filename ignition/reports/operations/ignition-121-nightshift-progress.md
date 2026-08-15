@@ -234,6 +234,45 @@ Policy and provenance-preserving migration. No failure repair round was needed.
 Agent-first/Human Surface convergence. The commit and exact remote SHA are
 recorded in the ledger at the Step 09 checkpoint below.
 
+## Step 10 — COMPLETE
+
+- Synchronized the root `AGENTS.md`, `.github/README.md`, AI cold-start and
+  handoff surfaces, `llms.txt`, `ARCHITECTURE.md`, current-state, Human Reading,
+  Results and Results Book identity chapter around the bounded Agent Platform
+  R2 sentence. The final main identity remains pending Step 12; the task-branch
+  pre-release state is explicitly not a main merge receipt.
+- Added the R2 architecture spine and red-line explanation across Kernel,
+  Runtime, Supervisor, Memory, Reasoner Gateway, Profile, four Pack READMEs and
+  the agentization boundary. Knowledge is positioned as the first large Domain
+  Pack, not the system本体; no L7 or truth/Owner/epistemic authority was added.
+- Kept the existing unique registry-derived system map as the only complete
+  graph: map `0.6.0`, `76` registry components, `64` visible nodes, `70` typed
+  edges and `12` hidden components represented by visible nodes. No second map
+  or parallel governance surface was introduced.
+- Rebuilt affected deterministic projections with their official generators:
+  Human Surface materiality now has `48` active entries and `4` retained
+  `PLATFORM_CODE_EXCLUDED` provenance withdrawals; Knowledge Experience has
+  `367` cards, `292` changes, `308` layered readings, `21,175` search records
+  and `22,556` checked links. The claim-browser generator now preserves prior
+  withdrawal provenance on full rebuilds.
+- Gates: Human Surface structure `48/48` entries PASS; Front Door and
+  Visibility PASS; R2 Human Surface validator/test `1/1 PASS`; system-map
+  derived check PASS; Knowledge Experience audit PASS; Knowledge Experience
+  two-pass determinism PASS (`308` sources, `75` outputs); materiality and
+  claim-browser generator checks PASS; Runtime/Agentization boundary PASS;
+  state changelog and `git diff --check` PASS.
+- Claim ceilings remain unchanged: this is repository navigation and generated
+  projection evidence only. It does not establish general intelligence,
+  long-term autonomy, production safety, external validity, Owner acceptance,
+  causality or `EPISTEMICALLY_ACCEPTED=0` upgrade.
+
+### Step 10 decision
+
+`STEP_10_AGENT_PLATFORM_HUMAN_SURFACE_CONVERGENCE_COMPLETE`; proceed to Step 11,
+adversarial, fault-injection and full regression review. This task-branch
+checkpoint is committed and pushed only after the ledger and exact SHA are
+written below.
+
 ## Step ledger
 
 | Step | State | Commit | Remote SHA | Gate summary |
@@ -247,8 +286,8 @@ recorded in the ledger at the Step 09 checkpoint below.
 | 06 | COMPLETE | `b1710307f17160cb820fb54876c0ff75ee285f3f` | `b1710307f17160cb820fb54876c0ff75ee285f3f` | Reasoner Gateway R1 schema, digest, bounded capsule, provider-neutral adapters and adversarial gates PASS |
 | 07 | COMPLETE | `64e20ef250397a9aebefa5a6f6cf475c279d67a1` | `64e20ef250397a9aebefa5a6f6cf475c279d67a1` | Pack-aware catalog/provenance/routing and three cross-Pack authority negative gates PASS |
 | 08 | COMPLETE | `71ffd9aa5e185d0eddc53e185f2cfc931f16a0df` | `71ffd9aa5e185d0eddc53e185f2cfc931f16a0df` | Four source-contract blast-radius fixtures, topology/impact/generator updates, historical reconciliation and map gates PASS |
-| 09 | COMPLETE | pending until checkpoint commit | pending | Offline fresh-clone A/B/C episode, approval-path fault checkpoint, executor handoff, operational memory and adversarial episode PASS |
-| 10 | PENDING | — | — | — |
+| 09 | COMPLETE | `983aff0b280313c79d82484f609e5a45d721fd63` | `983aff0b280313c79d82484f609e5a45d721fd63` | Offline fresh-clone A/B/C episode, approval-path fault checkpoint, executor handoff, operational memory and adversarial episode PASS |
+| 10 | COMPLETE | pending until checkpoint commit | pending | Human/AI surface R2 convergence, deterministic projection rebuilds, unique map and Knowledge/Front Door/boundary gates PASS |
 | 11 | PENDING | — | — | — |
 | 12 | PENDING | — | — | — |
 

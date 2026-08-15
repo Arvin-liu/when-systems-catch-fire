@@ -2,6 +2,35 @@
 
 状态：`CORE_KERNEL_ADJUDICATED_REMAINING_CONTENT_QUEUE`。迁移覆盖为 622/622；registry 语义审定为 621/622，另有 9 个 Y1/MF-0000 内部组件记录。该状态不表示 622 个对象全部被证明。
 
+## 当前工程主干：Agent Platform R2
+
+点火当前的工程脊柱是一个有界、可审计、可恢复的 Agent Platform 原型；
+知识治理是第一个大型 Domain Pack，而不是整个系统本体。这个表述描述仓库
+内的职责与运行接口，不是通用智能、长期自主性、现实世界普适安全性或外部
+有效性的结论。`CURRENT_WITH_OPEN_OBLIGATIONS` 与 `EPISTEMICALLY_ACCEPTED=0`
+保持不变。
+
+```mermaid
+flowchart LR
+  HUMAN[Owner / Human / Value Charter] --> KERNEL[Generic Kernel]
+  KERNEL --> RUNTIME[Agent Runtime R1]
+  RUNTIME --> PROFILE[Agent Profile narrowing]
+  RUNTIME --> GATEWAY[Reasoner Gateway proposals only]
+  RUNTIME --> SUP[Supervisor multi-Run DAG]
+  RUNTIME --> MEMORY[Operational Memory R1]
+  RUNTIME --> PACKS[Knowledge / Research / Writing / Maintenance Packs]
+  PACKS --> DOMAIN[Declared domain validators and projections]
+  DOMAIN --> HUMAN_SURFACE[Human Surface and Results navigation]
+```
+
+Kernel 不导入 Knowledge，Reasoner 不执行动作，Profile 只能收窄既有 scope，
+Pack validator 只能作用于 manifest 声明范围，Operational Memory 不是知识真值
+库，Supervisor 不能扩大 child permission。详细人话契约见
+[Agent Platform R2](docs/architecture/agent-platform-r2.md)，机器边界见
+`data/operations/project-components.json`、
+`data/operations/change-propagation-topology.json`、Pack manifests 和
+`data/architecture/agentization-boundary-r0.json`。
+
 ## 迁移与审定分层
 
 ```mermaid
@@ -89,7 +118,7 @@ flowchart LR
 
 Q32I 收口后系统图 0.3.0 为 Current；0727 homepage/usage/charter-system-map sync 收口后系统图 0.4.0 为 Current；后续 registry-derived 系统图 0.5.0 为 Current，0.4.0、0.3.0 与 0.2.0 为 Historical，0.1.0 为更早 Historical。节点身份、canonical target 与生命周期从 `data/operations/project-components.json` 派生；可见关系及其权限域从 `data/operations/change-propagation-topology.json` 派生；`data/architecture/interactive-system-map-layout.json` 只保留布局。生成器产生 materialized spec 与同一 interactive SVG，再由 README 与仓库 Markdown 投影。
 
-该链由当前迭代操作法 1.4.0 继承并保留声明关系下的变更传播闭包。`substantive_causal_candidate`、`repository_dependency` 与 `synchronization_obligation` 权限分离；只有后两者按声明规则触发自动或必要评估。Git diff、依赖、可达路径与视觉位置不构成现实因果识别。它覆盖现有 L0—L6、核心、模型、操作、规范、公共表达与反馈环，不增加架构层；当前投影为 9 组、41 节点和 37 边。
+该链由当前迭代操作法 1.4.0 继承并保留声明关系下的变更传播闭包。`substantive_causal_candidate`、`repository_dependency` 与 `synchronization_obligation` 权限分离；只有后两者按声明规则触发自动或必要评估。Git diff、依赖、可达路径与视觉位置不构成现实因果识别。它覆盖现有 L0—L6、核心、模型、操作、规范、公共表达、Agent Platform 与反馈环，不增加架构层；当前 registry-derived 投影为 `0.6.0`，包含 `76` 个 registry components、`64` 个可见节点和 `70` 条 typed edges，另有 `12` 个由代表节点承载的隐藏组件。
 
 ## 目录权威
 

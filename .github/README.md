@@ -10,7 +10,15 @@
 
 项目的规范性方向由[生命共同体价值宪章](../ignition/docs/governance/life-community-value-charter.md)约束；宪章是价值边界，不是经验事实、数学证明或外部真值来源。点火当前总上限仍是 `CURRENT_WITH_OPEN_OBLIGATIONS`。工程完成、写作完成、测试通过、重复引用、跨域对应、模型美感或 Agent 共识都不能自动抬升命题的断言地位。
 
-点火正在从知识治理系统抽出领域无关的 Agent Kernel/Runtime；现有知识系统成为第一个可加载的 Domain Pack，详见[智能体化边界 R0](../ignition/docs/architecture/agentization-boundary-r0.md)。
+点火当前主干以一个有界、可审计、可恢复的 Agent Platform 原型为工程脊柱；知识治理是它的第一个大型 Domain Pack，而不是整个系统本体。R2 的仓库内能力、边界和未完成义务见[Agent Platform R2](../ignition/docs/architecture/agent-platform-r2.md)与[智能体化边界](../ignition/docs/architecture/agentization-boundary-r0.md)。这不表示已经证明通用智能、长期自主性、现实世界普适安全性或外部有效性；`EPISTEMICALLY_ACCEPTED=0` 保持不变。
+
+### 当前主干怎样理解
+
+- **它说什么：** Kernel、Runtime、Profile、Reasoner Gateway、Supervisor、Operational Memory 和四个声明式 Domain Pack 已形成一条仓库内可检查的 Agent Platform R2 结构；当前唯一完整系统图仍是 registry/topology/layout 的确定性导航投影。
+- **为什么重要：** 行动、批准、恢复、记忆、Pack 路由和知识治理的职责被分开记录，Agent 可以提出和执行有界动作，但不能自行扩大权限、改写真值或替代 Owner。
+- **怎样使用：** 人类先读[十分钟阅读路线](../ignition/HUMAN-READING.md)与[当前结果](../ignition/RESULTS/LATEST.md)；Agent 先读[AI 冷启动](../ignition/AI-START-HERE.md)、[状态增量日志](../ignition/STATE-CHANGELOG.md)和[R2 架构契约](../ignition/docs/architecture/agent-platform-r2.md)。
+- **它不能证明什么：** 通过测试、Pack 加载、checkpoint、pilot 或系统图，都不等于外部真值、现实因果、生产安全、Owner acceptance 或 epistemic acceptance。
+- **仍然开放：** live provider、daemon、多 Agent 并发、向量记忆、网络/浏览、外部仓库 mutation、物理 Pack 拆分和现实世界效果仍不在本轮授权范围内。
 
 ## 2. 如何使用
 
@@ -30,7 +38,7 @@
 
 ![点火唯一完整总架构图](../ignition/docs/generated/ignition-system-architecture.svg)
 
-[打开透明可点击完整总架构图 SVG](../ignition/docs/generated/ignition-system-architecture.svg) · [查看 Human Surface 编辑契约](../ignition/docs/governance/human-surface-editorial-contract.md) · [查看架构维护说明](../ignition/docs/architecture/interactive-system-map.md)
+[打开透明可点击完整总架构图 SVG](../ignition/docs/generated/ignition-system-architecture.svg) · [查看 Agent Platform R2 架构](../ignition/docs/architecture/agent-platform-r2.md) · [查看 Human Surface 编辑契约](../ignition/docs/governance/human-surface-editorial-contract.md) · [查看架构维护说明](../ignition/docs/architecture/interactive-system-map.md)
 
 整体架构图是确定性导航投影：它表达仓库内的来源、状态、治理、执行、验证、人类阅读和出版之间的声明关系，不表达现实因果、严格同构、理论完备性或任何具体命题的新证据。图的 registry、topology 和 layout 仍是机器维护输入；总架构图不是新的真值层。
 

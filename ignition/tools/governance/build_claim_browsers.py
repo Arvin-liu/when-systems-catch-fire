@@ -321,6 +321,8 @@ def render_readme(kind: str, rows: list[dict], selected: list[dict], themes: dic
 
 def expected_outputs(functions: list[dict], claims: list[dict]) -> tuple[dict[Path, str], dict]:
     migrated = migration_hashes()
+    prior_manifest = json.loads(MATERIALITY.read_text(encoding="utf-8")) if MATERIALITY.is_file() else {}
+    prior_withdrawn = prior_manifest.get("withdrawn_entries", [])
     selected = {"function": select_material(functions, "function", MAX_FUNCTION_ENTRIES), "nonfunction": select_material(claims, "nonfunction", MAX_NONFUNCTION_ENTRIES)}
     all_rows = {"function": functions, "nonfunction": claims}
     products: dict[Path, str] = {}
@@ -364,6 +366,14 @@ def expected_outputs(functions: list[dict], claims: list[dict]) -> tuple[dict[Pa
         "machine_human_boundary": "Human prose is a deterministic explanation and never a state authority.",
         "counts": {"function_machine": len(functions), "function_human": len(selected["function"]), "nonfunction_machine": len(claims), "nonfunction_human": len(selected["nonfunction"])},
         "entries": sorted(manifest_rows, key=lambda row: (row["asset_kind"], row["machine_id"])),
+        # A full rebuild must not erase the provenance of entries deliberately
+        # withdrawn from the human projection (for example platform-code
+        # candidates excluded from the Knowledge surface). If a record is
+        # selected again by current policy, it is no longer withdrawn.
+        "withdrawn_entries": [
+            entry for entry in prior_withdrawn
+            if entry.get("machine_id") not in {row["machine_id"] for row in manifest_rows}
+        ],
     }
     products[MATERIALITY] = json.dumps(manifest, ensure_ascii=False, indent=2, sort_keys=True) + "\n"
     return products, manifest

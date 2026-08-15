@@ -35,4 +35,18 @@ SVG 现在位于 `docs/generated/ignition-system-architecture.svg`，通过 READ
 - 图的边、可达性、视觉邻近或 map delta 不证明经验因果、严格同构或理论完整性。
 - “完整”只指当前声明构件的投影覆盖；未来发现缺口时必须更新 registry，而不是把图当永久总图。
 
+## Agent Platform R2 在图中的位置
+
+R2 把 Generic Kernel、Agent Runtime、Profile、Reasoner Gateway、Supervisor、
+Operational Memory 与四个 Domain Pack 作为现有 `agentization` overlay 的当前
+工程脊柱。它们不新增 L7，也不替代 L0—L6、Foundation、claim/evidence registry
+或 Human Surface；Knowledge、REOS LIGHT Research、之元 Writing 和 Maintenance
+仍由各自 manifest 声明能力、对象类型、validator 与禁止的 authority upgrade。
+
+当前机器投影以 `76` 个 registry components、`64` 个可见节点、`70` 条 typed
+edges 和 `12` 个代表节点承载的隐藏 components 为准。R2 的 source-domain 与
+blast-radius 规则见
+[`agent-platform-r2-propagation-contract.json`](../../data/operations/propagation/agent-platform-r2-propagation-contract.json)。
+这些数字是仓库导航与生成器覆盖计数，不是现实系统规模、因果图或能力证明。
+
 本轮退役了独立阅读站及其专用工作流。旧部署工件和验证记录继续保留在 Git 历史与历史报告中，仅作历史证据。

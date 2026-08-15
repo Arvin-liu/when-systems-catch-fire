@@ -1,6 +1,6 @@
 # 点火项目现状
 
-更新时间：2026-08-15。当前状态包含任务 98—103 的断言/函数治理、证据程序与人类可读知识表面，任务 104 的编辑叙事层与语料关系分析，任务 105 的 Function OS v0.2 有界能力基准，任务 110 的完成状态与 OpenAlex 书目复制，任务 111 的失败案例证据门禁与恢复终态，任务 112 的百轮成果出版层，任务 113 的宋徽宗作品，任务 114 的语言—思维逻辑平面与当前作品修订，以及面向 AI 的状态增量日志和 K13 断言非晋级不变量。本段描述正式仓库当前接口；出版层和语言研究的结论仍受各自来源、版本和证据上限约束。
+更新时间：2026-08-16。当前状态包含任务 98—103 的断言/函数治理、证据程序与人类可读知识表面，任务 104 的编辑叙事层与语料关系分析，任务 105 的 Function OS v0.2 有界能力基准，任务 110 的完成状态与 OpenAlex 书目复制，任务 111 的失败案例证据门禁与恢复终态，任务 112 的百轮成果出版层，任务 113 的宋徽宗作品，任务 114 的语言—思维逻辑平面与当前作品修订，以及任务 119—121 的 Agent Platform 边界、R1 行动层和 R2 工程脊柱。本段描述正式仓库当前接口；出版层、语言研究与 Agent Platform 的结论仍受各自来源、版本和证据上限约束。
 
 ## Task 112 current publication layer
 
@@ -24,11 +24,36 @@
 
 Task 119 保持 `CURRENT_WITH_OPEN_OBLIGATIONS`：Task 115 Draft prior art 仅完成采纳审计，真实 provider/API、daemon、多 agent scheduler、向量记忆、Pack 物理拆分和外部 Owner acceptance 均未实现或未证明。
 
+## Task 121 current Agent Platform R2 spine
+
+任务 121 在 R0/R1 边界上完成了仓库内 Agent Platform R2 的主要工程连接：
+Pack Registry/Bus、四个声明式 Domain Pack、跨运行非向量 operational memory、
+Supervisor multi-Run DAG、Profile narrowing、Reasoner Gateway、Pack-aware
+routing、source-driven propagation blast-radius，以及一个真实离线的 fresh-clone
+`audit → repair → validate` episode。机器入口是
+[`Agent Platform R2 架构`](./architecture/agent-platform-r2.md)、
+[`夜班 ledger`](../data/operations/iterations/121/nightshift-progress.jsonl)、
+[`Agentization boundary`](../data/architecture/agentization-boundary-r0.json)和
+[R2 pilot receipt](../data/agent-runtime/pilots/r2-offline-repository-maintenance/pilot-receipt.json)。
+
+这使点火的工程主干可以被准确地描述为：**一个有界、可审计、可恢复的 Agent
+Platform 原型；知识治理是第一个大型 Domain Pack，而不是整个系统本体。**
+Reasoner 只提出 proposal，Profile 只能收窄，Pack 不能获得 truth/Owner/generic
+permission，Memory 不是 Knowledge truth registry，Supervisor 不能扩大 child
+scope。R2 pilot 的 `COMPLETED_VALIDATED` 和对抗 episode 的独立失败只表示这组
+仓库合同在 disposable offline fixture 上被观察到，不表示通用智能、长期自主性、
+生产安全、现实世界普适性、外部有效性或 `EPISTEMICALLY_ACCEPTED`。
+
+R2 仍保留开放义务：live provider/API、daemon、并发 multi-Agent 调度、向量记忆、
+网络/浏览、外部 Git mutation、物理 Pack 拆分、真实 Owner acceptance 和现实效果
+尚未实现或证明。R2 的工程完成不得覆盖 Foundation、M/E、claim ceiling、九状态
+轴、既有研究结果或之元写作法的独立来源边界。
+
 ## 当前形态
 
 点火是一个仓库原生、版本化、证据可追溯、对象有类型、推断可检查、结论可降级的跨领域研究与行动基础设施原型。这个描述只绑定当前提交，不是永久项目身份。
 
-现行组织包括 L0—L6 架构、横穿其间的语言—思维逻辑平面、Foundation registries、Function OS 候选、MCF、PSD、ARN、效果与机制平面、注意力/分布/压缩控制、地图集、迭代与同步系统、生命共同体价值宪章、Charter System R1、之元写作法和现实反馈入口。
+现行组织包括 L0—L6 架构、横穿其间的语言—思维逻辑平面、Agent Platform R2 工程脊柱、Foundation registries、Function OS 候选、MCF、PSD、ARN、效果与机制平面、注意力/分布/压缩控制、地图集、迭代与同步系统、生命共同体价值宪章、Charter System R1、之元写作法和现实反馈入口。
 
 ## 当前已实现能力
 
@@ -42,6 +67,7 @@ Task 119 保持 `CURRENT_WITH_OPEN_OBLIGATIONS`：Task 115 Draft prior art 仅�
 - 对语言敏感转换保存来源／候选意义／目标形式、十二维框架差异、未映射残余和 claim ceiling；认识相关静默变化失败关闭，中文自然度与文学标记性进入人工门。
 - 从统一入口按时间、研究问题、自然语言词、旧称和阅读时长探索知识，不要求读者预知目录或资产编号。
 - 为全部恢复的结果/文章来源生成统一卡片和 1 分钟、5 分钟、完整阅读，并为全部函数/断言 registry 建立可回链来源、状态、依赖、反向依赖和历史的分片搜索索引。
+- 以 Kernel、Runtime、Profile、Gateway、Supervisor、Memory 和声明式 Domain Pack 形成有界 Agent Platform R2 工程脊柱；各组件的能力与禁止 authority upgrade 由 manifest/schema/validator/receipt 分开记录。
 
 ## 当前人类阅读面
 

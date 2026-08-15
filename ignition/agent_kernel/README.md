@@ -7,3 +7,9 @@ Kernel R0 不读取或导入 Foundation、claims、Evidence、Functions、Non-Fu
 `contracts.py` 是机器可用的最小契约，`profile.py` 是 provider-neutral Agent Profile，`domain_pack.py` 只定义可加载 Pack 的边界。它们不保存隐藏思维过程；只保留可复核的公共摘要和结构化运行事件。
 
 状态：`CURRENT_BOUNDED_R0`。这不是完整自治系统，也不构成 AGI、人格或意识声明。
+
+在 Agent Platform R2 中，Kernel 仍是最小、领域无关的契约层：Pack Registry、
+Reasoner Gateway、Operational Memory 和 Supervisor 都消费 Kernel contract，
+但不能把 Knowledge、Research、Writing、Owner 或远程仓库 authority 反向写入
+Kernel。R2 的扩展仍受 `KERNEL_NON_ESCALATION` 约束；详见
+[`Agent Platform R2`](../docs/architecture/agent-platform-r2.md)。

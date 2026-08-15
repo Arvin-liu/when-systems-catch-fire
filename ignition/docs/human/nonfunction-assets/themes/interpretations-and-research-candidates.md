@@ -13,3 +13,7 @@
 ## Within the source-defined scope, 万有理论门槛函数 is adjudicated as METRIC: 万有理论门槛函数,万有理论ToE是所有基本力在高能μ>μ_ToE时的门控面合并。μ<μ_ToE时四个门控
 
 它是一条需要同时阅读来源、处置和 claim ceiling 的说法登记。 [打开人话说明](../entries/claim-d190.md)
+
+## 任务 110 关闭的是候选生命周期缺口，不是开放科学问题。`C-01` 的 Crossref 义务和
+
+它是一条需要同时阅读来源、处置和 claim ceiling 的说法登记。 [打开人话说明](../entries/nfc-037598111338be3f.md)

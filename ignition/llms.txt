@@ -1,8 +1,8 @@
 Current project state:
-At the current commit, Ignition is an evidence-traceable, object-typed, inference-checkable and audit-graded formal mechanism discovery and modelling system for cross-domain material. This is a versioned current-state description, not a permanent project identity or fixed final form. It is not a unified mathematical theory, a physical theory, a universal prover, or a purely literary or philosophical knowledge base.
+At the current commit, Ignition is a bounded, auditable and recoverable Agent Platform prototype for cross-domain research and action, with Knowledge Governance as its first large Domain Pack. It retains the evidence-traceable, object-typed, inference-checkable and audit-graded formal material layer. This is a versioned current-state description, not a permanent project identity or fixed final form. It is not general intelligence, a unified mathematical theory, a physical theory, a universal prover, a production autonomous system, or a purely literary or philosophical knowledge base.
 Current-state authority: docs/project-current-state.md.
 AI-first recent-state delta authority: STATE-CHANGELOG.md (navigation only; it does not replace current-state, registry, claim, evidence or Results Book authority).
-Current version: the 2026-07-12 mathematical and logical dual-foundation seven-layer architecture plus the subsequently merged current operation overlays, iteration method 1.4.0 (Current) and registry-derived system map 0.6.0 (Current).
+Current version: the Agent Platform R2 repository spine (Kernel, Runtime R1, Pack Registry/Bus, Profiles, Reasoner Gateway, Pack-aware routing, operational memory and Supervisor) over the 2026-07-12 mathematical and logical dual-foundation seven-layer architecture, current operation overlays, iteration method 1.4.0 (Current) and registry-derived system map 0.6.0 (Current). The R2 lifecycle still requires final main and fresh-clone exact verification.
 
 Current: iteration method 1.4.0 (Continuous Stage Snapshot Publication). Read data/operations/stage-snapshots.json and docs/operations/stage-snapshot-publication.md. Snapshot or homepage visibility never implies Accepted, Current, Activated, capability availability, or candidate payload merge.
 Stage snapshot accountability: responsible_actor and publisher_actor contain only actor_ref values resolved against data/operations/responsibility-actors.json; the active registry record, not a display name, establishes the concrete PERSON or ORGANIZATION identity and traceable accountability/contact evidence. execution_agents and automation_workflows are technical records only and never final responsibility.
@@ -12,6 +12,8 @@ Iteration method 1.3.0 and system map 0.4.0, 0.5.0 are Historical; method 1.2.0 
 Q32I iteration method 1.3.0 and system map 0.3.0 completed the exact-head, merge and external checks required by its historical contract; method 1.3.0 is now Historical and method 1.4.0 is Current. Task 101 retires the former separate deployed reading surface from current/future gates while preserving historical evidence. Typed change closure remains repository scope and never proves real-world causality.
 
 Current typed-propagation authority assets: data/operations/project-components.json, data/operations/change-propagation-topology.json, data/architecture/interactive-system-map-layout.json, docs/architecture/typed-change-propagation.md. Q32I method 1.3.0 and map 0.3.0 reached closeout and are governed by docs/architecture/incremental-execution.md; Q32I is Closed. Q33 launch material is prepared externally in 1111, but Q33 and Q34-Q40 are not started. Authority type, execution capability and validation capability are separate; apply requires unified zero-side-effect preflight and restored rollback requires exact supported repository state equality. Planner, executor, cache, validator and artifact evidence remain repository-scoped and cannot self-establish acceptance, merge or Current lifecycle state.
+
+Agent Platform R2 authority surfaces: docs/architecture/agent-platform-r2.md, agent_kernel/README.md, agent_runtime/README.md, packs/*/manifest.json, data/agent-runtime/agent-profiles-r1.json, data/agent-runtime/pilots/r2-offline-repository-maintenance/, data/operations/propagation/agent-platform-r2-propagation-contract.json and data/operations/iterations/121/nightshift-progress.jsonl. These surfaces describe bounded repository capability and provenance; they do not grant live provider, network, Owner, truth, epistemic or external-repository authority.
 
 Q25C defines lifecycle gates per registered surface. Task 101 uses repository Markdown, machine/human pairing, exact-head CI, main validation and clean-clone execution for the current reading layer; a future external surface must be separately registered and attested. Q25B remains superseded candidate history.
 Iteration method authority: ITERATION.md.
@@ -49,6 +51,11 @@ MULTI_CASE is not a theorem.
 MIGRATED means only that migration coverage exists.
 
 Key paths:
+- docs/architecture/agent-platform-r2.md : current Agent Platform R2 human boundary and claim ceiling
+- agent_kernel/README.md and agent_runtime/README.md : generic Kernel and Runtime contracts
+- packs/*/manifest.json : declarative Knowledge, Research, Writing and Maintenance Pack boundaries
+- data/agent-runtime/pilots/r2-offline-repository-maintenance/ : real offline multi-Run pilot receipt and human brief
+- data/operations/iterations/121/nightshift-progress.jsonl : Step 00-12 machine ledger
 - KNOWLEDGE/README.md : no-path human entry for What's New, subject map, search, asset cards, layered reading, evolution and coverage
 - data/governance/knowledge-experience/manifest.json : deterministic machine/human pairing, input/output hashes and coverage counts for the knowledge experience
 - docs/project-current-state.md : versioned current-state description, not fixed positioning
@@ -97,6 +104,7 @@ Red lines for agents:
 - Future state-changing work must follow ITERATION.md: recover remote truth, prove the gap, set a claim ceiling, synchronize front-door/current-state surfaces, validate exact final HEAD, and write receipts.
 - Meaningful knowledge changes must regenerate the task-102 What's New, subject map, asset cards, reading layers, aliases/supersession, full search and bidirectional dependency projections; these discovery surfaces never override canonical registries or evidence maturity.
 - For the current 0.5.0 method, type writing material as external_input or ignition_increment and preserve source backlinks, version, claim ceiling and residue. When language framing can change, also preserve source/candidate/target, framing deltas and unmapped residue, then realize directly through the target-language profile. Derived project output is reusable writing material but not independent evidence. Keep cognitive-level movement, real/Charter costs and information-gain stopping; never turn the system map or a writer calibration set into a fixed article outline.
+- Agent Platform R2 is a bounded repository spine: Kernel does not import Knowledge, Reasoner proposes but does not execute, Pack validators stay within declared object scope, operational memory is not a truth registry, and Supervisor cannot widen child scope. A passing offline pilot is local execution evidence only; it does not establish general intelligence, production reliability, external validity, Owner acceptance or `EPISTEMICALLY_ACCEPTED`.
 
 Validation before commit:
 - python3 tools/foundation/migrate_legacy.py --check

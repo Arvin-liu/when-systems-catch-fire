@@ -2,6 +2,14 @@
 
 无需预知路径的 canonical 入口已经迁移到[点火知识入口](./KNOWLEDGE/README.md)。本页保留十分钟阅读路线；它与机器注册表并行，但不要求读者先理解 JSON、JSONL、schema 或 CI。任何机器记录都必须有可发现的人类对应物；人类摘要不得改变原记录的成熟度和断言上限。
 
+## 当前身份一句话
+
+点火当前主干是一个有界、可审计、可恢复的 Agent Platform 原型；知识治理是
+第一个大型 Domain Pack，而不是整个系统本体。要理解这句话的工程含义，读
+[Agent Platform R2](./docs/architecture/agent-platform-r2.md)；要核对当前公开
+结果，读[当前结果](./RESULTS/LATEST.md)。测试、pilot、图和工作流回执都不等于
+通用智能、现实因果、生产安全、Owner acceptance 或 `EPISTEMICALLY_ACCEPTED`。
+
 ## 十分钟了解当前状态
 
 1. 先读唯一[《点火成果册》](./PUBLICATIONS/pointfire-results-book/README.md)；需要百轮历史层时再读[成果书架](./PUBLICATIONS/README.md)或[一页全景](./PUBLICATIONS/what-pointfire-knows-now.md)，不需要理解内部目录就能看见全局。
@@ -23,6 +31,7 @@
 |不知道名称或路径，只想探索|[知识地图](./KNOWLEDGE/MAP.md)|[最新变化](./KNOWLEDGE/WHATS-NEW.md)、[搜索](./KNOWLEDGE/SEARCH.md)|
 |快速读懂一篇长文|[分层阅读](./KNOWLEDGE/READING-LAYERS.md)|对应完整来源、[统一资产卡](./KNOWLEDGE/ASSET-CARDS.md)|
 |判断点火是什么、当前做到哪里|[当前结果](./RESULTS/LATEST.md)|[项目现状](./docs/project-current-state.md)、[架构](./ARCHITECTURE.md)|
+|理解 Agent Platform、Pack、Memory 与 Supervisor|[Agent Platform R2](./docs/architecture/agent-platform-r2.md)|[Runtime](./agent_runtime/README.md)、[四个 Pack](./packs/)、[离线 pilot 简报](./data/agent-runtime/pilots/r2-offline-repository-maintenance/HUMAN-REPORT.md)|
 |查看历史错误怎样修正|[纠正与撤回](./RESULTS/CORRECTIONS.md)|[历史纠正日志](./docs/foundation/historical-correction-log.md)|
 |查看函数、断言资产裁决|[裁决总结](./RESULTS/ADJUDICATION-SUMMARY.md)|[函数深度裁决](./docs/foundation/historical-function-deep-adjudication-20260729.md)、[非函数断言索引](./docs/foundation/nonfunction-claim-adjudication-index.md)|
 |查看物理复算与边界|[物理资产纠偏](./docs/foundation/physics-asset-correction-20260729.md)|[开放问题](./RESULTS/OPEN-QUESTIONS.md)|

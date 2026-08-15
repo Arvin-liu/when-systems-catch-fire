@@ -2,7 +2,23 @@
 
 ## 当前版本
 
-2026-07-12 数学与逻辑双地基七层架构版本（IGNITION-20260709-076）。
+Agent Platform R2 夜班实现（IGNITION-20260816-121）叠加在数学与逻辑双地基
+七层架构和当前操作 overlay 之上。R2 的正式 lifecycle 只有在 Step 12 的
+fast-forward、远端、全新克隆和 1111 receipt 全部精确闭合后，才可称为 main
+当前状态；本页的工程边界不构成外部能力或 epistemic acceptance，
+`EPISTEMICALLY_ACCEPTED=0` 保持不变。
+
+### R2 工程脊柱
+
+- `agent_kernel/`：领域无关 identity、capability、approval、audit、checkpoint、handoff 与 non-escalation 契约。
+- `agent_runtime/`：R1 本地行动层、R2 Pack Registry/Bus、Pack-aware routing、Reasoner Gateway、Profile 投影、Operational Memory 与 Supervisor。
+- `packs/`：Knowledge、REOS LIGHT Research、之元 Writing、Repository Maintenance 四个有界 Domain Pack；manifest 不能越权。
+- `data/agent-runtime/pilots/r2-offline-repository-maintenance/`：fresh-clone、A/B/C、故障恢复、对抗拒绝和 bounded memory 的离线观察回执。
+- `data/operations/propagation/agent-platform-r2-propagation-contract.json`：R2 source-domain 与 blast-radius 机器契约；唯一系统图仍由 registry/topology/layout 派生。
+
+R2 仍不包括 live provider、daemon、multi-Agent 并发、vector memory、网络/浏览、
+外部仓库 mutation、人格/意识或普适安全证明。`Kernel ≠ Knowledge`、
+`Reasoner ≠ Executor`、`Pack ≠ truth authority`、`pilot ≠ general intelligence`。
 
 ## 权威链
 

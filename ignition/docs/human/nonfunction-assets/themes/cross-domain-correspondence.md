@@ -17,3 +17,7 @@
 ## Within the source-defined scope, 电弱统一规范破缺函数 is adjudicated as RELATION: 电弱统一规范破缺函数，电弱统一是电磁力和弱核力在高能μ>μ_EW时的门控面合并。μ<μ_EW时两
 
 它是一条需要同时阅读来源、处置和 claim ceiling 的说法登记。 [打开人话说明](../entries/claim-d187.md)
+
+## The normative candidate contract is `docs/operations/stage-snapshot-publication.md`. This section, its schemas, tools, t
+
+它是一条需要同时阅读来源、处置和 claim ceiling 的说法登记。 [打开人话说明](../entries/nfc-038e96bba3393be9.md)

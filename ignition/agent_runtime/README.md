@@ -1,4 +1,4 @@
-# Agent Runtime R0 / R1
+# Agent Platform Runtime R0 / R1 with R2 coordination
 
 ## R1 当前能力
 
@@ -130,6 +130,16 @@ Memory R0 只记录 run 内可追溯的 `MemoryEvent`、checkpoint、resume caps
 
 非知识 pilot 位于 `agent_runtime/pilots/non_knowledge_manifest.py`：它只读取声明的 fixture，生成排序后的 SHA-256 manifest，并通过第二 executor 恢复完成。这个 pilot 是隔离证明，不是生产 daemon 或真实外部工具接入。
 
-状态：`EXPERIMENTAL_RUNTIME_WITH_OPEN_OBLIGATIONS`。
+## R2 当前总边界
 
-R1 仍是实验性安全执行框架，不是常驻服务、自治人格、multi-agent scheduler、长期向量 memory 或现实世界效果证明；正式仓库状态继续保持 `CURRENT_WITH_OPEN_OBLIGATIONS`，且 `EPISTEMICALLY_ACCEPTED=0`。
+R2 把上述 R1 行动层接到 Pack Registry/Bus、Profile narrowing、Reasoner
+Gateway、Pack-aware routing、非向量 operational memory 和 Supervisor R0
+multi-Run DAG。四个 Pack 的 manifest 只声明 capability、object type、validator
+和 hook proposal；它们不能获得通用 permission、Owner、truth、executor 或
+epistemic authority。Supervisor 只顺序调度有依赖 child Runs，所有 child scope
+必须是 episode scope 的子集。
+
+这仍是 `EXPERIMENTAL_AGENT_PLATFORM_R2_WITH_OPEN_OBLIGATIONS`：不是常驻服务、
+自治人格、并发 multi-agent scheduler、长期向量 memory、live provider、网络
+自动化、外部 Git mutation 或现实世界效果证明；正式 claim ceiling 继续是
+`CURRENT_WITH_OPEN_OBLIGATIONS`，且 `EPISTEMICALLY_ACCEPTED=0`。

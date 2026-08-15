@@ -1,5 +1,23 @@
 # 当前结果
 
+## 当前工程主干：Agent Platform R2
+
+点火当前主干是一个有界、可审计、可恢复的 Agent Platform 原型；知识治理是
+第一个大型 Domain Pack，而不是整个系统本体。R2 将 Kernel、R1 本地行动层、
+Pack Registry/Bus、Profiles、Reasoner Gateway、Pack-aware routing、非向量
+operational memory 和 Supervisor multi-Run DAG 接成仓库内工程脊柱。
+
+这项工程结果的上限是仓库范围的 capability、provenance、approval、recovery、
+routing 和 offline pilot 观察。Reasoner 没有执行权，Pack 没有 generic/truth/
+Owner authority，Memory 不是 Knowledge truth registry，Supervisor 不能扩大
+child scope。它不证明通用智能、长期自主性、现实世界普适安全性、外部有效性、
+生产安全或 `EPISTEMICALLY_ACCEPTED`；后者仍为 `0`。
+
+入口：[Agent Platform R2 架构](../docs/architecture/agent-platform-r2.md) ·
+[离线多 Run pilot 简报](../data/agent-runtime/pilots/r2-offline-repository-maintenance/HUMAN-REPORT.md) ·
+[机器 receipt](../data/agent-runtime/pilots/r2-offline-repository-maintenance/pilot-receipt.json) ·
+[夜班 ledger](../data/operations/iterations/121/nightshift-progress.jsonl)。
+
 ## 任务 112：百轮成果出版层
 
 任务 112 将既有百轮材料整理为可直接阅读的出版层，当前入口是[成果书架](../PUBLICATIONS/README.md)。书架包含[第一卷](../PUBLICATIONS/volumes/001-pointfire-after-one-hundred-iterations.md)、[研究笔记第一辑](../PUBLICATIONS/notes/001-pointfire-research-notes.md)、[一页全景](../PUBLICATIONS/what-pointfire-knows-now.md)和[百轮成果台账](../PUBLICATIONS/hundred-iteration-achievement-ledger.md)。

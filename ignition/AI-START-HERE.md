@@ -2,6 +2,11 @@
 
 这是点火项目的零背景 AI 冷启动入口。
 
+当前工程身份：点火主干是一个有界、可审计、可恢复的 Agent Platform
+原型；Knowledge 是第一个大型 Domain Pack。读取这句话时必须同时保留
+`CURRENT_WITH_OPEN_OBLIGATIONS`、`EPISTEMICALLY_ACCEPTED=0` 和“仓库回执不等于
+外部真值”的边界。
+
 ## 读取顺序
 
 1. `../.github/README.md`：人类入口、价值边界与当前结论。
@@ -9,12 +14,23 @@
 3. KNOWLEDGE/README.md：无需预知路径的最新变化、主题地图、搜索、资产卡与分层阅读入口。
 4. docs/project-current-state.md：版本化、可演化、非终局的当前状态。
 5. ITERATION.md：点火迭代操作法；状态改变任务必须先恢复远端真相、确认缺口和 claim ceiling。
-6. ARCHITECTURE.md：现行七层架构权威；121Q12 双环是跨层操作 overlay，不是新真值层。
-7. FOUNDATION.md：数学与逻辑双地基。
-8. llms.txt：机器可读边界。
-9. AI-HANDOFF.md：当前权威、兼容和任务交接。
-10. data/foundation/project-state.json 与 registry-manifest.json：机器状态。
-11. 当前任务命令与相关 source/schema。
+6. docs/architecture/agent-platform-r2.md、agent_kernel/README.md、agent_runtime/README.md 与 packs/*/README.md：当前 Agent Platform、Kernel、Runtime 和 Domain Pack 人话边界。
+7. ARCHITECTURE.md：现行七层架构权威；Agent Platform 是跨层工程脊柱，不是新增 L7 或真值层。
+8. FOUNDATION.md：数学与逻辑双地基。
+9. llms.txt：机器可读边界。
+10. AI-HANDOFF.md：当前权威、兼容和任务交接。
+11. data/foundation/project-state.json、data/architecture/agentization-boundary-r0.json 与 registry-manifest.json：机器状态与边界投影。
+12. 当前任务命令、data/operations/iterations/121/nightshift-progress.jsonl 与相关 source/schema。
+
+## R2 冷启动补充
+
+R2 的 Runtime 负责声明式 Pack discovery/load、Pack-aware proposal routing、
+跨运行 operational memory 和 Supervisor multi-Run DAG；Reasoner 仍只能提出
+typed proposal，Local Workspace Executor 才是实际行动者。四个 Pack 是
+Knowledge、REOS LIGHT Research、之元 Writing 和 Repository Maintenance。
+它们的 manifest 是 capability 与 validator 的声明，不是网络、Owner、executor、
+truth 或 epistemic authority 的授予。真实离线 episode 的机器回执位于
+`data/agent-runtime/pilots/r2-offline-repository-maintenance/`。
 
 若任务涉及函数、模型、定理、公式、律、跨域类比或现实强断言，在读取 Foundation 后立即读取 `docs/foundation/claim-governance-and-function-identity.md`、`data/foundation/function-assets/corrections.jsonl`、对应 `identity-cards.jsonl` 记录及其 quarantine/obligation 状态。M 与 E 不得互推，自动 census 不能覆盖专项纠偏；task 99 的 registry closure 也不能被解释为全部证明或外部验证完成。
 
