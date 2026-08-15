@@ -34,7 +34,8 @@
     "tools/validate_operational_memory.py",
     "tools/validate_supervisor.py",
     "tools/validate_agent_profiles.py",
-    "tools/validate_reasoner_gateway.py"
+    "tools/validate_reasoner_gateway.py",
+    "tools/validate_pack_aware_routing.py"
   ],
   "action_hooks": [
     "maintenance.inspect_declared",

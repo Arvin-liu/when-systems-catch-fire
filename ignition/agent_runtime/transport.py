@@ -274,6 +274,7 @@ class GatewayResponse:
     schema_version: str = GATEWAY_SCHEMA_VERSION
     request_digest: str | None = None
     requested_capabilities: tuple[str, ...] = ()
+    requested_packs: tuple[str, ...] = ()
     authority_claims: tuple[str, ...] = ()
     terminal_claim: str | None = None
     telemetry: tuple[tuple[str, str], ...] = ()
@@ -297,6 +298,7 @@ class GatewayResponse:
         if self.request_digest is not None and (len(self.request_digest) != 64 or any(char not in "0123456789abcdef" for char in self.request_digest)):
             raise GatewayError("Gateway response request_digest must be SHA-256")
         object.__setattr__(self, "requested_capabilities", _public_gateway_strings(self.requested_capabilities, "requested_capabilities"))
+        object.__setattr__(self, "requested_packs", _public_gateway_strings(self.requested_packs, "requested_packs"))
         object.__setattr__(self, "authority_claims", _public_gateway_strings(self.authority_claims, "authority_claims"))
         object.__setattr__(self, "telemetry", _telemetry_pairs(self.telemetry))
 
@@ -310,6 +312,7 @@ class GatewayResponse:
             "packets": [packet.to_dict() for packet in self.packets],
             "block_summary": self.block_summary,
             "requested_capabilities": list(self.requested_capabilities),
+            "requested_packs": list(self.requested_packs),
             "authority_claims": list(self.authority_claims),
             "terminal_claim": self.terminal_claim,
             "telemetry": dict(self.telemetry),
@@ -319,7 +322,7 @@ class GatewayResponse:
     def from_dict(cls, data: Mapping[str, Any]) -> "GatewayResponse":
         required = {
             "schema_version", "request_digest", "phase", "status", "frame_summary", "packets",
-            "block_summary", "requested_capabilities", "authority_claims", "terminal_claim", "telemetry",
+            "block_summary", "requested_capabilities", "requested_packs", "authority_claims", "terminal_claim", "telemetry",
         }
         if set(data) != required or not isinstance(data.get("packets"), list):
             raise GatewayError("Gateway response schema keys or packet array are invalid")
@@ -331,6 +334,7 @@ class GatewayResponse:
             schema_version=data["schema_version"], request_digest=data["request_digest"], phase=data["phase"],
             status=data["status"], frame_summary=data["frame_summary"], packets=packets,
             block_summary=data["block_summary"], requested_capabilities=tuple(data["requested_capabilities"]),
+            requested_packs=tuple(data["requested_packs"]),
             authority_claims=tuple(data["authority_claims"]), terminal_claim=data["terminal_claim"],
             telemetry=data["telemetry"],
         )
@@ -339,9 +343,10 @@ class GatewayResponse:
 class ScriptedGatewayAdapter:
     """Deterministic offline adapter returning only a typed proposal."""
 
-    def __init__(self, packets: Sequence[ExecutionPacket], *, frame_summary: str = "bounded gateway task frame", telemetry: Mapping[str, str] | None = None) -> None:
+    def __init__(self, packets: Sequence[ExecutionPacket], *, frame_summary: str = "bounded gateway task frame", requested_packs: Sequence[str] = (), telemetry: Mapping[str, str] | None = None) -> None:
         self.packets = tuple(packets)
         self.frame_summary = frame_summary
+        self.requested_packs = tuple(requested_packs)
         self.telemetry = tuple(sorted((telemetry or {}).items()))
 
     def request(self, request: GatewayRequest) -> GatewayResponse:
@@ -355,6 +360,7 @@ class ScriptedGatewayAdapter:
             schema_version=request.schema_version, request_digest=request.request_digest,
             phase="PLAN", status="CONTINUE", frame_summary=None, packets=self.packets,
             requested_capabilities=tuple(sorted({capability for packet in self.packets for capability in packet.required_capabilities})),
+            requested_packs=self.requested_packs,
             telemetry=self.telemetry,
         )
 
@@ -471,6 +477,9 @@ class ReasonerGateway:
         outside = sorted((requested | packet_capabilities) - known_capabilities)
         if outside:
             raise GatewayError(f"Gateway proposal requests capability outside read-only catalog: {outside}")
+        outside_packs = sorted(set(response.requested_packs) - set(request.available_packs))
+        if outside_packs:
+            raise GatewayError(f"Gateway proposal requests Pack outside read-only catalog: {outside_packs}")
         for packet in response.packets:
             if packet.run_id != request.run_id:
                 raise GatewayError("Gateway proposal packet has a different run lineage")

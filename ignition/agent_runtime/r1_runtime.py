@@ -336,7 +336,11 @@ class AgentRuntimeR1:
             return ScriptedReasoner(configured, frame_summary=self.spec.reasoner.get("frame_summary", "bounded local task frame"))
         if reasoner_type == "gateway-scripted":
             gateway = ReasonerGateway(
-                ScriptedGatewayAdapter(configured, frame_summary=self.spec.reasoner.get("frame_summary", "bounded gateway task frame")),
+                ScriptedGatewayAdapter(
+                    configured,
+                    frame_summary=self.spec.reasoner.get("frame_summary", "bounded gateway task frame"),
+                    requested_packs=tuple(self.spec.reasoner.get("requested_packs", ())),
+                ),
                 max_context_chars=int(self.spec.reasoner.get("max_context_chars", 12000)),
             )
             return GatewayReasonerAdapter(

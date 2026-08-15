@@ -51,6 +51,7 @@ from .pack_registry import CapabilityRoute, LoadedPack, PackBus, PackLoader, Pac
 from .memory import MemoryEntry, MemoryStoreError, OperationalMemoryStore
 from .supervisor import ChildRunSpec, EpisodeBudget, EpisodeSpec, Supervisor, SupervisorError
 from .profile import ProfileProjection, ProfileProjectionError, apply_profiles_to_episode, load_profile_registry, project_profile, select_packs
+from .routing import PackActionProvenance, PackAwareRouter, PackRoutingError, PackValidationReceipt
 
 __all__ = [
     "ActionObservation",
@@ -118,4 +119,8 @@ __all__ = [
     "load_profile_registry",
     "project_profile",
     "select_packs",
+    "PackActionProvenance",
+    "PackAwareRouter",
+    "PackRoutingError",
+    "PackValidationReceipt",
 ]

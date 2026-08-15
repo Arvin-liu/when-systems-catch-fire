@@ -3,7 +3,7 @@
   "$id": "https://example.invalid/ignition/agent-runtime/reasoner-gateway-response-r1.schema.json",
   "type": "object",
   "additionalProperties": false,
-  "required": ["schema_version", "request_digest", "phase", "status", "frame_summary", "packets", "block_summary", "requested_capabilities", "authority_claims", "terminal_claim", "telemetry"],
+  "required": ["schema_version", "request_digest", "phase", "status", "frame_summary", "packets", "block_summary", "requested_capabilities", "requested_packs", "authority_claims", "terminal_claim", "telemetry"],
   "properties": {
     "schema_version": {"const": "reasoner-gateway-r1"},
     "request_digest": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
@@ -13,6 +13,7 @@
     "packets": {"type": "array", "items": {"type": "object"}},
     "block_summary": {"type": ["string", "null"]},
     "requested_capabilities": {"type": "array", "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+    "requested_packs": {"type": "array", "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
     "authority_claims": {"type": "array", "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
     "terminal_claim": {"type": ["string", "null"]},
     "telemetry": {"type": "object", "additionalProperties": {"type": "string"}}

@@ -59,7 +59,7 @@ class ReasonerGatewayTests(unittest.TestCase):
             "print(__import__('json').dumps((lambda r:{'schema_version':r['schema_version'],"
             "'request_digest':r['request_digest'],'phase':r['phase'],'status':'STOP',"
             "'frame_summary':None,'packets':[],'block_summary':'bounded stop',"
-            "'requested_capabilities':[],'authority_claims':[],'terminal_claim':None,"
+            "'requested_capabilities':[],'requested_packs':[],'authority_claims':[],'terminal_claim':None,"
             "'telemetry':{'adapter':'test'}})(__import__('json').loads(__import__('sys').stdin.readline()))))"
         )
         response = ReasonerGateway(SubprocessReasonerAdapter((sys.executable, "-c", script))).request(self.request())

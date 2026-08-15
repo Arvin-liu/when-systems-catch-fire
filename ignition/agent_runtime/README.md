@@ -30,6 +30,14 @@ authority upgrades. The current registry is offline and provider-neutral; it
 does not grant network, Owner, executor, permission, truth, or epistemic
 authority.
 
+`agent_runtime.routing.PackAwareRouter` adds the legal connection to planning
+and validation: each action provenance names one loaded manifest capability,
+object type, validator and optional hook; validator receipts are constrained to
+the Pack's declared object types and entrypoints. A scoped router can only see
+Profile-allowed loaded Packs. Knowledge validation cannot grant runtime
+permission or truth authority, writing quality cannot establish facts, and a
+REOS LIGHT workflow cannot create Owner acceptance or epistemic acceptance.
+
 ## Operational Memory R1
 
 `agent_runtime.memory.OperationalMemoryStore` is a locked JSON store for typed

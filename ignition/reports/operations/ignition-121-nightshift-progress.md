@@ -149,6 +149,26 @@ Policy and provenance-preserving migration. No failure repair round was needed.
   no live provider, API key, network action or provider-specific dependency was
   introduced (`OPTIONAL_LIVE_SMOKE=NOT_RUN`).
 
+## Step 07 — COMPLETE
+
+- Added `PackAwareRouter`, `PackActionProvenance` and
+  `PackValidationReceipt`. Plans now name a unique loaded manifest route,
+  declared object type, validator and optional hook; validator and hook calls
+  remain proposals and never import or execute domain code through the Bus.
+- Gateway responses now carry `requested_packs`; the read-only catalog check
+  rejects a Pack outside the available catalog before any load or action.
+  Profile-scoped routers expose only selected loaded Packs.
+- Added three cross-Pack negative boundaries: Knowledge claim validation cannot
+  assert truth or runtime authority; Writing surface quality cannot assert
+  epistemic acceptance; REOS LIGHT workflow validation cannot assert Owner
+  acceptance. All results remain declared-scope receipts.
+- Gates: Pack-aware routing tests `4/4 PASS`; Gateway tests `4/4 PASS`; focused
+  Step 00–06 regression `47/47 PASS`; routing, Gateway, Profile, Supervisor,
+  Pack, Memory, runtime boundary, Agentization boundary and diff validators
+  `PASS`.
+- One deterministic repair round corrected a validator entrypoint to match the
+  live Knowledge Pack manifest; no cross-domain authority was added.
+
 ## Step ledger
 
 | Step | State | Commit | Remote SHA | Gate summary |
@@ -159,8 +179,8 @@ Policy and provenance-preserving migration. No failure repair round was needed.
 | 03 | COMPLETE | `7e8ac52122e815751870ed9b7d3354f7787d787e` | `7e8ac52122e815751870ed9b7d3354f7787d787e` | Cross-run operational memory, bounded capsule, redacting forget and regression gates PASS |
 | 04 | COMPLETE | `f6d93c119bde1049aaf032b0871479fa2fc86510` | `f6d93c119bde1049aaf032b0871479fa2fc86510` | Supervisor R0 DAG, budgets, approvals, bounded retry/handoff, recovery and regression gates PASS |
 | 05 | COMPLETE | `a16c2c3ed61e825ec3e7e14d24cd85f205f027bc` | `a16c2c3ed61e825ec3e7e14d24cd85f205f027bc` | Agent Profile R1 registry, legal scope projection, Pack selection and profile-driven approval gates PASS |
-| 06 | COMPLETE | pending until checkpoint commit | pending | Reasoner Gateway R1 schema, digest, bounded capsule, provider-neutral adapters and adversarial gates PASS |
-| 07 | PENDING | — | — | — |
+| 06 | COMPLETE | `b1710307f17160cb820fb54876c0ff75ee285f3f` | `b1710307f17160cb820fb54876c0ff75ee285f3f` | Reasoner Gateway R1 schema, digest, bounded capsule, provider-neutral adapters and adversarial gates PASS |
+| 07 | COMPLETE | pending until checkpoint commit | pending | Pack-aware catalog/provenance/routing and three cross-Pack authority negative gates PASS |
 | 08 | PENDING | — | — | — |
 | 09 | PENDING | — | — | — |
 | 10 | PENDING | — | — | — |
