@@ -4,10 +4,10 @@
 
 索引按固定 500 条分片，避免单页过大而无法在 GitHub 渲染。分片连续覆盖本主题主归属资产，未按重要性删减。
 
-- [第 001 片](./operations_evidence/part-001.md)：1—500；"""Compatibility entry point for deterministic stage snapshot projection.""" → ### \[MF-0005｜自举收敛判定器\](docs/zh/functions/meta/items/MF-0005.md)
-- [第 002 片](./operations_evidence/part-002.md)：501—1000；### BC-20260709-009 《影响力》 → - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0441})=1\].
-- [第 003 片](./operations_evidence/part-003.md)：1001—1500；- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0442})=1\]. → data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-02.json
-- [第 004 片](./operations_evidence/part-004.md)：1501—2000；data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-03.json → data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json
-- [第 005 片](./operations_evidence/part-005.md)：2001—2500；data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json → require(manifest.get("required_dimensions") == REQUIRED_DIMENSIONS, "manifest: required_dimensions must be exact ordered d01-d12", errors)
-- [第 006 片](./operations_evidence/part-006.md)：2501—3000；require(manifest.get("review_state") == "FOUR_ROLE_REVIEW_COMPLETE_SUBSTANTIVE_REWRITE_COMPLETE", "four-role review is not complete") → 生命共同体价值审查（life-community-value-audit）
-- [第 007 片](./operations_evidence/part-007.md)：3001—3061；生命周期审计 · 任务 108（双相迭代终态化与自闭合当前真相 R1） → （对应条目 / 注释内容 / 类型 / 来源 / 是否入表）
+- [第 001 片](./operations_evidence/part-001.md)：1—500；"""Compatibility entry point for deterministic stage snapshot projection.""" → ### \[MF-0004｜自举嵌套判定器\](docs/zh/functions/meta/items/MF-0004.md)
+- [第 002 片](./operations_evidence/part-002.md)：501—1000；### \[MF-0005｜自举收敛判定器\](docs/zh/functions/meta/items/MF-0005.md) → - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0440})=1\].
+- [第 003 片](./operations_evidence/part-003.md)：1001—1500；- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0441})=1\]. → data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-02.json
+- [第 004 片](./operations_evidence/part-004.md)：1501—2000；data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-02.json → data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json
+- [第 005 片](./operations_evidence/part-005.md)：2001—2500；data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json → require(len(state\["steps"\]) == 4, "run-state must contain four steps")
+- [第 006 片](./operations_evidence/part-006.md)：2501—3000；require(len(state\["steps"\]) == 4, "run-state must contain four steps") → 核心案例：破坏性创新与点火框架门控面演化的同构性。大公司受旧维度拖累（1/ln为负），边缘玩家无旧维度负担，验证了创新在边缘的拖累效应。
+- [第 007 片](./operations_evidence/part-007.md)：3001—3069；框架发现能力，Φ = dim(V)×\|推导规则\|×r_cross(framework)。 → （对应条目 / 注释内容 / 类型 / 来源 / 是否入表）

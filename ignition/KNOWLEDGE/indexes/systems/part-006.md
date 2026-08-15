@@ -4,6 +4,26 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [改名不是表面装饰。一个人被怎样称呼，决定他在什么制度里出现；一座寺院被怎样登记，决定谁能管理它、谁能从中取得资源。道教的国家化因此不能只从皇帝的宇宙观来写，也要从被重新分类的僧尼、地方信众和行政执行者身上来写。](../../../docs/publication/works/when-an-emperor-manufactures-heaven.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-4613725296c49b22 / 改名不是表面装饰。一个人被怎样称呼，决定他在什么制度里出现；一座寺院被怎样登记，决定谁能管理它、谁能从中取得资源。道教的国家化因此不能只从皇帝的宇宙观来写，也要从被重新分类的僧尼、地方信众和行政执行者身上来写。
+  - 来源：`docs/publication/works/when-an-emperor-manufactures-heaven.md`
+  - 依赖：—；被引用：—
+- [政权内部叛乱和中枢撤动导致小敌快速胜利、但胜者并无特别基层制度的案例；若匹配，辽崩溃模型上升。](../../../reports/publication/jin-rise-point-fire-analysis.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-808569c0c473b749 / 政权内部叛乱和中枢撤动导致小敌快速胜利、但胜者并无特别基层制度的案例；若匹配，辽崩溃模型上升。
+  - 来源：`reports/publication/jin-rise-point-fire-analysis.md`
+  - 依赖：—；被引用：—
+- [政治学界和国际关系学界通过史料考证、理论分析、比较研究等方法研究战争发生问题。主流观点认为战争是由利益、恐惧、制度等多重因素共同导致。](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-f7381f527589e95c / 政治学界和国际关系学界通过史料考证、理论分析、比较研究等方法研究战争发生问题。主流观点认为战争是由利益、恐惧、制度等多重因素共同导致。
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [政治学界和经济学界通过实证研究、理论分析、比较研究等方法研究制度锁定问题。主流观点认为制度锁定是由路径依赖、利益集团、认知等多重因素共同导致。](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-da454e269b3675ec / 政治学界和经济学界通过实证研究、理论分析、比较研究等方法研究制度锁定问题。主流观点认为制度锁定是由路径依赖、利益集团、认知等多重因素共同导致。
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
 - [政治学界通过实证研究、理论分析、比较研究等方法研究威权体制稳定性问题。主流观点认为威权体制的稳定性是由制度、经济、军事等多重因素共同决定。](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-3537654e5e88f4eb / 政治学界通过实证研究、理论分析、比较研究等方法研究威权体制稳定性问题。主流观点认为威权体制的稳定性是由制度、经济、军事等多重因素共同决定。

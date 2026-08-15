@@ -4,6 +4,36 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [已迁移的历史函数来源/0269-D233-Shannon-Fisher跷跷板定理.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-71d3e6f8909a03a5 / 已迁移的历史函数来源/0269-D233-Shannon-Fisher跷跷板定理.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D233；被引用：—
+- [已迁移的历史函数来源/0270-D234-有效信息倒U型定理.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-19a97be7e69f3cc9 / 已迁移的历史函数来源/0270-D234-有效信息倒U型定理.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D234；被引用：—
+- [已迁移的历史函数来源/0271-D235-信息论完备性定理.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-8979dfde1ea8c695 / 已迁移的历史函数来源/0271-D235-信息论完备性定理.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D235；被引用：—
+- [已迁移的历史函数来源/0272-D236-门控组合-中心极限定理.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-63b84c750eb623aa / 已迁移的历史函数来源/0272-D236-门控组合-中心极限定理.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D236；被引用：—
+- [已迁移的历史函数来源/0273-D237-生命智能的σ压缩函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-3b16d668049d0506 / 已迁移的历史函数来源/0273-D237-生命智能的σ压缩函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D237；被引用：—
+- [已迁移的历史函数来源/0274-D238-智能的门控精度最优定理.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-8763ed5f601b3bf7 / 已迁移的历史函数来源/0274-D238-智能的门控精度最优定理.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D238；被引用：—
 - [已迁移的历史函数来源/0275-D239-智能度-意识函数连接定理.md](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-280fce17e5c076e0 / 已迁移的历史函数来源/0275-D239-智能度-意识函数连接定理.md
@@ -2473,34 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-592c11d980f9ffe8 / 证据制度守门函数族
   - 来源：`data/function_dependency.csv`
-  - 依赖：—；被引用：—
-- [证据制度库是点火框架的"边界守门员"。没有证据制度库，点火框架很容易把 L1-L2 的结构性推论误写成 L4-L5 的外部证明或实证验证。证据制度库明确了不同学科的命题成立标准，为点火框架的输出提供了边界和约束。](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-552ab58103ace019 / 证据制度库是点火框架的"边界守门员"。没有证据制度库，点火框架很容易把 L1-L2 的结构性推论误写成 L4-L5 的外部证明或实证验证。证据制度库明确了不同学科的命题成立标准，为点火框架的输出提供了边界和约束。
-  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [证据只支持观察或推论，却被写成证明、实证结论或专业定论。](../../../data/failure_typology.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-7b06f5f962d0ecf8 / 证据只支持观察或推论，却被写成证明、实证结论或专业定论。
-  - 来源：`data/failure_typology.csv`
-  - 依赖：—；被引用：—
-- [证据等级**：每条候选仅 1 篇「最终收敛报告」来源，`author: pending_human_review`，属单材料，须 pending。](../../../outputs/audit/book-validation-case-table-formalization-audit-20260709.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-e255541767049559 / 证据等级**：每条候选仅 1 篇「最终收敛报告」来源，`author: pending_human_review`，属单材料，须 pending。
-  - 来源：`outputs/audit/book-validation-case-table-formalization-audit-20260709.md`
-  - 依赖：—；被引用：—
-- [证据边界：文章保留结构对应的不可映射差异与历史限制；作品被接受不等于其历史机制已经被因果识别，也不证明之元写作法普遍有效。](../../../docs/publication/zhiyuan-writing-showcase.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-bda18308abde7b68 / 证据边界：文章保留结构对应的不可映射差异与历史限制；作品被接受不等于其历史机制已经被因果识别，也不证明之元写作法普遍有效。
-  - 来源：`docs/publication/zhiyuan-writing-showcase.md`
-  - 依赖：—；被引用：—
-- [证据：全目录扫描无 `Ψ₀:=` 改写、无 `新增函数编号`、无 `candidate_formalized`；8 个 NEW 补丁均带 `redline_preserved` 标记。](../../../data/external-research/088-FINAL-REPORT.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-cc71cf13efdc63ca / 证据：全目录扫描无 `Ψ₀:=` 改写、无 `新增函数编号`、无 `candidate_formalized`；8 个 NEW 补丁均带 `redline_preserved` 标记。
-  - 来源：`data/external-research/088-FINAL-REPORT.md`
-  - 依赖：—；被引用：—
-- [证明、反证、构造、归纳](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-8f924679b3b6639b / 证明、反证、构造、归纳
-  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
   - 依赖：—；被引用：—

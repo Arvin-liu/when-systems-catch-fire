@@ -4,6 +4,36 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [证据制度库是点火框架的"边界守门员"。没有证据制度库，点火框架很容易把 L1-L2 的结构性推论误写成 L4-L5 的外部证明或实证验证。证据制度库明确了不同学科的命题成立标准，为点火框架的输出提供了边界和约束。](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-552ab58103ace019 / 证据制度库是点火框架的"边界守门员"。没有证据制度库，点火框架很容易把 L1-L2 的结构性推论误写成 L4-L5 的外部证明或实证验证。证据制度库明确了不同学科的命题成立标准，为点火框架的输出提供了边界和约束。
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [证据只支持观察或推论，却被写成证明、实证结论或专业定论。](../../../data/failure_typology.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-7b06f5f962d0ecf8 / 证据只支持观察或推论，却被写成证明、实证结论或专业定论。
+  - 来源：`data/failure_typology.csv`
+  - 依赖：—；被引用：—
+- [证据等级**：每条候选仅 1 篇「最终收敛报告」来源，`author: pending_human_review`，属单材料，须 pending。](../../../outputs/audit/book-validation-case-table-formalization-audit-20260709.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-e255541767049559 / 证据等级**：每条候选仅 1 篇「最终收敛报告」来源，`author: pending_human_review`，属单材料，须 pending。
+  - 来源：`outputs/audit/book-validation-case-table-formalization-audit-20260709.md`
+  - 依赖：—；被引用：—
+- [证据边界：文章保留结构对应的不可映射差异与历史限制；作品被接受不等于其历史机制已经被因果识别，也不证明之元写作法普遍有效。](../../../docs/publication/zhiyuan-writing-showcase.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-bda18308abde7b68 / 证据边界：文章保留结构对应的不可映射差异与历史限制；作品被接受不等于其历史机制已经被因果识别，也不证明之元写作法普遍有效。
+  - 来源：`docs/publication/zhiyuan-writing-showcase.md`
+  - 依赖：—；被引用：—
+- [证据：全目录扫描无 `Ψ₀:=` 改写、无 `新增函数编号`、无 `candidate_formalized`；8 个 NEW 补丁均带 `redline_preserved` 标记。](../../../data/external-research/088-FINAL-REPORT.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-cc71cf13efdc63ca / 证据：全目录扫描无 `Ψ₀:=` 改写、无 `新增函数编号`、无 `candidate_formalized`；8 个 NEW 补丁均带 `redline_preserved` 标记。
+  - 来源：`data/external-research/088-FINAL-REPORT.md`
+  - 依赖：—；被引用：—
+- [证明、反证、构造、归纳](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-8f924679b3b6639b / 证明、反证、构造、归纳
+  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
+  - 依赖：—；被引用：—
 - [证明与证据义务](../../../reports/foundation-architecture/084-max-adjudication-report.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-463e8b5755dc9282 / 证明与证据义务

@@ -556,10 +556,10 @@
     },
     {
       "id": "agent_runtime_r0",
-      "label": "Agent Runtime R0",
+      "label": "Agent Runtime R1 (R0 base)",
       "group": "agentization",
       "target": "agent_runtime/README.md",
-      "description": "Observe → Frame → Plan → Authorize → Act → Validate → Remember → Continue/Stop 的最小运行时。",
+      "description": "R0 typed loop 加上 R1 的真实本地行动、批准、lease、journal、恢复与 bounded rollback；仍保持领域无关。",
       "lifecycle_status": "current"
     },
     {

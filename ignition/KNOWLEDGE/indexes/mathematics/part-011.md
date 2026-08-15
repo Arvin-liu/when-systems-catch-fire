@@ -4,6 +4,31 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Within the source-defined scope, 基本常数-容斥约束函数 is adjudicated as RELATION: M6的d=4稳定性约束基本物理常数：α增大~100倍→pᵢ>p*→极小点消失。精细结构常数α≈](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D297 / Within the source-defined scope, 基本常数-容斥约束函数 is adjudicated as RELATION: M6的d=4稳定性约束基本物理常数：α增大~100倍→pᵢ>p*→极小点消失。精细结构常数α≈
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 基础空间函数 is adjudicated as RELATION: Ω = {x \| C₁(x) ∧ C₂(x) ∧ ... ∧ Cₙ(x)}. This is a mod](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D476 / Within the source-defined scope, 基础空间函数 is adjudicated as RELATION: Ω = {x \| C₁(x) ∧ C₂(x) ∧ ... ∧ Cₙ(x)}. This is a mod
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 复活代价n无关性起源函数 is adjudicated as RELATION: M2的复活总代价∝Φ(拐点)与n无关的原因：Φ(拐点)是全局量已包含n信息。每个门控面平均代](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D385 / Within the source-defined scope, 复活代价n无关性起源函数 is adjudicated as RELATION: M2的复活总代价∝Φ(拐点)与n无关的原因：Φ(拐点)是全局量已包含n信息。每个门控面平均代
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 多因子乘法相变函数(推论级) is adjudicated as STATE_TRANSITION: 17域词典簇碰撞，涵盖17个领域的函数投影。. This is a mo](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D110 / Within the source-defined scope, 多因子乘法相变函数(推论级) is adjudicated as STATE_TRANSITION: 17域词典簇碰撞，涵盖17个领域的函数投影。. This is a mo
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 多极小点竞争函数 is adjudicated as NATURAL_LANGUAGE_CANDIDATE: M2的Φ(μ)在多个门控面参数差异大时可出现多个极小点。竞争规则](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：CLAIM-D315 / Within the source-defined scope, 多极小点竞争函数 is adjudicated as NATURAL_LANGUAGE_CANDIDATE: M2的Φ(μ)在多个门控面参数差异大时可出现多个极小点。竞争规则
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
 - [Within the source-defined scope, 多频叠加阶段响应函数 is adjudicated as NATURAL_LANGUAGE_CANDIDATE: M9的多频扰动叠加：低频+高频时高频被缓冲过滤，低频驱动过渡](../../../data/foundation/adjudications/core-kernel.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：CLAIM-D336 / Within the source-defined scope, 多频叠加阶段响应函数 is adjudicated as NATURAL_LANGUAGE_CANDIDATE: M9的多频扰动叠加：低频+高频时高频被缓冲过滤，低频驱动过渡
@@ -2467,28 +2492,3 @@
   - 可搜索名称：NFC-d711a1e68582cf80 / \| \[D149\]( ) \| \[结构保守性元定理\]( ) \| F_{D149}(x) := 设计结构让估计不必要 > 估计准确后保守执行。 \|
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D149；被引用：—
-- [\| \[D150\]( ) \| \[倒U型统一生成定理\]( ) \| F_{D150}(x) := Φ = f₁(↑)×f₂(↓)必然倒U型。 \|](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-154125d9a450e244 / \| \[D150\]( ) \| \[倒U型统一生成定理\]( ) \| F_{D150}(x) := Φ = f₁(↑)×f₂(↓)必然倒U型。 \|
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D150；被引用：—
-- [\| \[D169\]( ) \| \[门槛碾压函数\]( ) \| F_{D169}(x) := Λ(t) = Λ₀ × e^(σ×t)，μ(t) = μ₀ × e](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-6c2b9e5b46abb3d9 / \| \[D169\]( ) \| \[门槛碾压函数\]( ) \| F_{D169}(x) := Λ(t) = Λ₀ × e^(σ×t)，μ(t) = μ₀ × e
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D169；被引用：—
-- [\| \[D170\]( ) \| \[定投凯利保守性验证\]( ) \| F_{D170}(x) := 定投天然具备结构保守性，自动满足凯利公式下注要求](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-5e7646c4775f58b8 / \| \[D170\]( ) \| \[定投凯利保守性验证\]( ) \| F_{D170}(x) := 定投天然具备结构保守性，自动满足凯利公式下注要求
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D170；被引用：—
-- [\| \[D173\]( ) \| \[显态粘性函数\]( ) \| F_{D173}(x) := μ = R_retreat / C_exit。显态是外部驱动力主导](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-00014d440f9edb9b / \| \[D173\]( ) \| \[显态粘性函数\]( ) \| F_{D173}(x) := μ = R_retreat / C_exit。显态是外部驱动力主导
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D173；被引用：—
-- [\| \[D174\]( ) \| \[纯拉力上位衰减函数\]( ) \| F_{D174}(x) := t_window = f(R_retreat,](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-bb6c432943af4f3f / \| \[D174\]( ) \| \[纯拉力上位衰减函数\]( ) \| F_{D174}(x) := t_window = f(R_retreat,
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D174；被引用：—

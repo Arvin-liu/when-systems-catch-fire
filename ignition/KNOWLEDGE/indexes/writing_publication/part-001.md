@@ -84,6 +84,11 @@
   - 可搜索名称：NFC-8d10fe1f765dbbee / `FACT` 和 `ANALOGY` 没有混写
   - 来源：`docs/narrative-story-validation.md`
   - 依赖：—；被引用：—
+- [`knowledge_domain_pack --publishes / repository_dependency--> human_knowledge_surfaces` — human publication projection o](../../../reports/operations/IGNITION-20260815-120-change-propagation-impact.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-54f5819ec948f04d / `knowledge_domain_pack --publishes / repository_dependency--> human_knowledge_surfaces` — human publication projection o
+  - 来源：`reports/operations/IGNITION-20260815-120-change-propagation-impact.md`
+  - 依赖：—；被引用：—
 - [`normalized_meaning_candidate`（必须标明候选投影，不是真义）：](../../../templates/publication/zhiyuan-writing-spec.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-669d97a762b49aa9 / `normalized_meaning_candidate`（必须标明候选投影，不是真义）：

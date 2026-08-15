@@ -338,12 +338,13 @@
         "group": "core",
         "visible": true
       },
-      "path_patterns": [
-        "FOUNDATION.md",
-        "data/foundation/",
-        "tools/foundation/",
-        "tests/foundation/",
-        "formal/lean/"
+    "path_patterns": [
+      "FOUNDATION.md",
+      "data/foundation/",
+      "docs/foundation/",
+      "tools/foundation/",
+      "tests/foundation/",
+      "formal/lean/"
       ]
     },
     {
@@ -699,10 +700,11 @@
         "group": "layers",
         "visible": true
       },
-      "path_patterns": [
-        "docs/publication/",
-        "reports/publication/"
-      ]
+    "path_patterns": [
+      "docs/publication/",
+      "reports/publication/",
+      "data/publication/fire-seeds/"
+    ]
     },
     {
       "authority": "canonical",
@@ -1299,10 +1301,11 @@
       "path_patterns": [
         "data/architecture/interactive-system-map.json",
         "docs/generated/ignition-system-architecture.svg",
-        "tools/generate_interactive_system_map.py",
-        "tools/validate_human_front_door.py",
-        "tests/test_human_front_door.py",
-        "tests/test_generated_output_authority.py",
+      "tools/generate_interactive_system_map.py",
+      "tools/validate_human_front_door.py",
+      "tests/test_human_front_door.py",
+      "tests/test_overall_architecture.py",
+      "tests/test_generated_output_authority.py",
         "docs/architecture/interactive-system-map.md"
       ]
     },
@@ -1582,12 +1585,12 @@
       "canonical_target": "agent_runtime/README.md",
       "component_id": "agent_runtime_r0",
       "component_type": "operation_control",
-      "description": "Observe → Frame → Plan → Authorize → Act → Validate → Remember → Continue/Stop 的最小运行时。",
-      "label": "Agent Runtime R0",
+      "description": "R0 typed loop 加上 R1 的真实本地行动、批准、lease、journal、恢复与 bounded rollback；仍保持领域无关。",
+      "label": "Agent Runtime R1 (R0 base)",
       "layer_or_overlay": "overlay",
-      "lifecycle": {"source": "agent_runtime/", "status": "current", "version": "EXPERIMENTAL_RUNTIME_WITH_OPEN_OBLIGATIONS"},
+      "lifecycle": {"source": "agent_runtime/", "status": "current", "version": "EXPERIMENTAL_RUNTIME_R1_WITH_OPEN_OBLIGATIONS"},
       "map_projection": {"group": "agentization", "visible": true},
-      "path_patterns": ["agent_runtime/", "tools/validate_agent_runtime_boundary.py", "tests/test_agent_runtime_r0.py"]
+      "path_patterns": ["agent_runtime/", "data/agent-runtime/pilots/r1-real-local/", "docs/architecture/agent-runtime-r1.md", "tools/validate_agent_runtime_boundary.py", "tests/test_agent_runtime_r0.py", "tests/test_agent_runtime_r1.py"]
     },
     {
       "authority": "canonical",

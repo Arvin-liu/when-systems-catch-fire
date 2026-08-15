@@ -4,6 +4,36 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [点火框架通常只能达到 L1-L3，L4-L5 需要外部形式证明、工程验证、benchmark 和实验评估。](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-0b4a8fc67eed2f23 / 点火框架通常只能达到 L1-L3，L4-L5 需要外部形式证明、工程验证、benchmark 和实验评估。
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [点火框架通常只能达到 L1-L3，L4-L5 需要外部数学证明。](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-35b0cb04610efef8 / 点火框架通常只能达到 L1-L3，L4-L5 需要外部数学证明。
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [点火没有证明“大一统普遍不可能”。模型失败、哥德尔类比、跨域相似或旧编号不能充当普遍 no-go theorem。](../../ASSET-CARDS.md#asset-nfc-61546854af53780b)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-61546854af53780b / 点火没有证明“大一统普遍不可能”。模型失败、哥德尔类比、跨域相似或旧编号不能充当普遍 no-go theorem。 / - 点火没有证明“大一统普遍不可能”。模型失败、哥德尔类比、跨域相似或旧编号不能充当普遍 no-go theorem。
+  - 来源：`docs/project-current-state.md`
+  - 依赖：—；被引用：—
+- [点火现有乘法门控模型不能完成数学和物理上充分的四种相互作用统一。四力统一问题本身保持开放。项目没有证明“大一统普遍不可能”，也没有给出物理统一点。](../../ASSET-CARDS.md#asset-nfc-7ba5ae6b5efe40a7)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-7ba5ae6b5efe40a7 / 点火现有乘法门控模型不能完成数学和物理上充分的四种相互作用统一。四力统一问题本身保持开放。项目没有证明“大一统普遍不可能”，也没有给出物理统一点。 / 点火现有乘法门控模型不能完成数学和物理上充分的四种相互作用统一。四力统一问题本身保持开放。项目没有证明“大一统普遍不可能”，也没有给出物理统一点。
+  - 来源：`docs/foundation/physics-asset-correction-20260729.md`
+  - 依赖：—；被引用：—
+- [点火的生命共同体价值宪章怎样约束“什么值得做”，](../../../docs/ai-assistant-usage-reference.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-e1fda68f53271ed2 / 点火的生命共同体价值宪章怎样约束“什么值得做”，
+  - 来源：`docs/ai-assistant-usage-reference.md`
+  - 依赖：—；被引用：—
+- [点火窗口关闭动力学函数](../../../data/foundation/adjudications/079-method-audit.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D47 / 点火窗口关闭动力学函数 / D47
+  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
+  - 依赖：D1, D49, D90；被引用：NFC-28ce74ab64a59be9, NFC-7549ca8cf46fd23e, NFC-7deb77c2cc5946ab, NFC-84275f873c6ae027
 - [点火窗口函数](../../../FOUNDATION-64-PROPAGATION.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：D10 / 点火窗口函数 / D10
@@ -2468,33 +2498,3 @@
   - 可搜索名称：NFC-42a55e9f0c3c1e79 / 已迁移的历史函数来源/0268-D232-信息守恒-衰减悖论与黑洞.md
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：D232；被引用：—
-- [已迁移的历史函数来源/0269-D233-Shannon-Fisher跷跷板定理.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-71d3e6f8909a03a5 / 已迁移的历史函数来源/0269-D233-Shannon-Fisher跷跷板定理.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D233；被引用：—
-- [已迁移的历史函数来源/0270-D234-有效信息倒U型定理.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-19a97be7e69f3cc9 / 已迁移的历史函数来源/0270-D234-有效信息倒U型定理.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D234；被引用：—
-- [已迁移的历史函数来源/0271-D235-信息论完备性定理.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-8979dfde1ea8c695 / 已迁移的历史函数来源/0271-D235-信息论完备性定理.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D235；被引用：—
-- [已迁移的历史函数来源/0272-D236-门控组合-中心极限定理.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-63b84c750eb623aa / 已迁移的历史函数来源/0272-D236-门控组合-中心极限定理.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D236；被引用：—
-- [已迁移的历史函数来源/0273-D237-生命智能的σ压缩函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-3b16d668049d0506 / 已迁移的历史函数来源/0273-D237-生命智能的σ压缩函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D237；被引用：—
-- [已迁移的历史函数来源/0274-D238-智能的门控精度最优定理.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-8763ed5f601b3bf7 / 已迁移的历史函数来源/0274-D238-智能的门控精度最优定理.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D238；被引用：—

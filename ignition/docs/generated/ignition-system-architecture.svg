@@ -666,11 +666,12 @@
         <tspan x="658.0" dy="18">R0</tspan>
       </text>
     </a>
-    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/agent_runtime/README.md" target="_top" data-node-id="agent_runtime_r0" data-group="agentization" data-target="agent_runtime/README.md" aria-label="Agent Runtime R0：Observe → Frame → Plan → Authorize → Act → Validate → Remember → Continue/Stop 的最小运行时。">
-      <title>Agent Runtime R0 — Observe → Frame → Plan → Authorize → Act → Validate → Remember → Continue/Stop 的最小运行时。</title>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/agent_runtime/README.md" target="_top" data-node-id="agent_runtime_r0" data-group="agentization" data-target="agent_runtime/README.md" aria-label="Agent Runtime R1 (R0 base)：R0 typed loop 加上 R1 的真实本地行动、批准、lease、journal、恢复与 bounded rollback；仍保持领域无关。">
+      <title>Agent Runtime R1 (R0 base) — R0 typed loop 加上 R1 的真实本地行动、批准、lease、journal、恢复与 bounded rollback；仍保持领域无关。</title>
       <rect class="node" x="642.0" y="2934.0" width="516.0" height="54.0" rx="10" />
-      <text class="node-label" x="658.0" y="2967.0">
-        <tspan x="658.0" dy="0">Agent Runtime R0</tspan>
+      <text class="node-label" x="658.0" y="2956.0">
+        <tspan x="658.0" dy="0">Agent Runtime R1 (R0</tspan>
+        <tspan x="658.0" dy="18">base)</tspan>
       </text>
     </a>
     <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/data/agent-runtime/agent-profile-r0.json" target="_top" data-node-id="agent_profile_r0" data-group="agentization" data-target="data/agent-runtime/agent-profile-r0.json" aria-label="Agent Profile R0：可持久 Agent 身份、Owner/Charter 引用、能力类和禁止自我升级策略。">

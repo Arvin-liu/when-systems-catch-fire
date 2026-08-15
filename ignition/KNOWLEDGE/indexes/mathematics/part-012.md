@@ -4,6 +4,31 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [\| \[D150\]( ) \| \[倒U型统一生成定理\]( ) \| F_{D150}(x) := Φ = f₁(↑)×f₂(↓)必然倒U型。 \|](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-154125d9a450e244 / \| \[D150\]( ) \| \[倒U型统一生成定理\]( ) \| F_{D150}(x) := Φ = f₁(↑)×f₂(↓)必然倒U型。 \|
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D150；被引用：—
+- [\| \[D169\]( ) \| \[门槛碾压函数\]( ) \| F_{D169}(x) := Λ(t) = Λ₀ × e^(σ×t)，μ(t) = μ₀ × e](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-6c2b9e5b46abb3d9 / \| \[D169\]( ) \| \[门槛碾压函数\]( ) \| F_{D169}(x) := Λ(t) = Λ₀ × e^(σ×t)，μ(t) = μ₀ × e
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D169；被引用：—
+- [\| \[D170\]( ) \| \[定投凯利保守性验证\]( ) \| F_{D170}(x) := 定投天然具备结构保守性，自动满足凯利公式下注要求](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-5e7646c4775f58b8 / \| \[D170\]( ) \| \[定投凯利保守性验证\]( ) \| F_{D170}(x) := 定投天然具备结构保守性，自动满足凯利公式下注要求
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D170；被引用：—
+- [\| \[D173\]( ) \| \[显态粘性函数\]( ) \| F_{D173}(x) := μ = R_retreat / C_exit。显态是外部驱动力主导](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-00014d440f9edb9b / \| \[D173\]( ) \| \[显态粘性函数\]( ) \| F_{D173}(x) := μ = R_retreat / C_exit。显态是外部驱动力主导
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D173；被引用：—
+- [\| \[D174\]( ) \| \[纯拉力上位衰减函数\]( ) \| F_{D174}(x) := t_window = f(R_retreat,](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-bb6c432943af4f3f / \| \[D174\]( ) \| \[纯拉力上位衰减函数\]( ) \| F_{D174}(x) := t_window = f(R_retreat,
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D174；被引用：—
 - [\| \[D175\]( ) \| \[耦合正反馈统一函数\]( ) \| F_{D175}(x) := 同一耦合正反馈方程在三个参数区间的不同表现 α_](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-e08bea9bde2e438e / \| \[D175\]( ) \| \[耦合正反馈统一函数\]( ) \| F_{D175}(x) := 同一耦合正反馈方程在三个参数区间的不同表现 α_
@@ -2459,30 +2484,5 @@
 - [✅ proof obligations (353) 与 empirical obligations (351) 完整生成](../../../reports/foundation-architecture/084-architecture-truth-freeze-readiness.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-6aff602eb9b55b45 / ✅ proof obligations (353) 与 empirical obligations (351) 完整生成
-  - 来源：`reports/foundation-architecture/084-architecture-truth-freeze-readiness.md`
-  - 依赖：—；被引用：—
-- [✅ strict isomorphism、causal、proved、impossible、unique、exact 等强标签均通过各自门或被明确降级](../../../reports/foundation-architecture/084-architecture-truth-freeze-readiness.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-d6cedbb8843c604e / ✅ strict isomorphism、causal、proved、impossible、unique、exact 等强标签均通过各自门或被明确降级
-  - 来源：`reports/foundation-architecture/084-architecture-truth-freeze-readiness.md`
-  - 依赖：—；被引用：—
-- [✅ 未修改历史函数来源和历史案例来源](../../../data/discipline-projection/087-execution-report.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-e2143df931cf6d29 / ✅ 未修改历史函数来源和历史案例来源
-  - 来源：`data/discipline-projection/087-execution-report.md`
-  - 依赖：—；被引用：—
-- [✅ 未将投影称为同构或真值证明](../../../data/discipline-projection/087-execution-report.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-061e155b7bd9257d / ✅ 未将投影称为同构或真值证明
-  - 来源：`data/discipline-projection/087-execution-report.md`
-  - 依赖：—；被引用：—
-- [✅ 没有把 max 模型判断冒充机器证明或经验事实](../../../reports/foundation-architecture/084-architecture-truth-freeze-readiness.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-d16f32ae40e883b7 / ✅ 没有把 max 模型判断冒充机器证明或经验事实
-  - 来源：`reports/foundation-architecture/084-architecture-truth-freeze-readiness.md`
-  - 依赖：—；被引用：—
-- [✅ 项目状态明确区分"架构真值层冻结候选"和"内容证明/经验验证未完成"](../../../reports/foundation-architecture/084-architecture-truth-freeze-readiness.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-34376592c5ca2b8a / ✅ 项目状态明确区分"架构真值层冻结候选"和"内容证明/经验验证未完成"
   - 来源：`reports/foundation-architecture/084-architecture-truth-freeze-readiness.md`
   - 依赖：—；被引用：—

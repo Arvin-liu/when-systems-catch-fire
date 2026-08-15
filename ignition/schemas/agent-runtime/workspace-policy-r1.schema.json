@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ignition/agent-runtime/workspace-policy-r1.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["workspace_root", "allowed_read_roots", "allowed_write_roots", "allowed_executables", "allowed_argv_prefixes", "timeout_seconds", "max_output_bytes", "env_allowlist", "max_actions", "max_writes", "network_allowed", "max_preimage_bytes"],
+  "properties": {
+    "workspace_root": {"type": "string", "minLength": 1},
+    "allowed_read_roots": {"type": "array", "items": {"type": "string"}},
+    "allowed_write_roots": {"type": "array", "items": {"type": "string"}},
+    "allowed_executables": {"type": "array", "items": {"type": "string"}},
+    "allowed_argv_prefixes": {"type": "array", "items": {"type": "array", "items": {"type": "string"}}},
+    "timeout_seconds": {"type": "number", "exclusiveMinimum": 0},
+    "max_output_bytes": {"type": "integer", "minimum": 1},
+    "env_allowlist": {"type": "array", "items": {"type": "string"}},
+    "max_actions": {"type": "integer", "minimum": 1},
+    "max_writes": {"type": "integer", "minimum": 1},
+    "network_allowed": {"const": false},
+    "max_preimage_bytes": {"type": "integer", "minimum": 1}
+  }
+}

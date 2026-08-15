@@ -68,3 +68,13 @@
 - obligations: Task 115 Draft 不合并；真实 provider/API、daemon、Telegram/OpenClaw、多 agent scheduler、向量/embedding memory、Pack 物理拆分、外部 Owner acceptance 和跨领域实质效用仍开放。历史 Foundation、claims、M/E、Evidence、REOS、写作与出版路径继续由原有权威资产管理。
 - stale_knowledge: 工程门禁、runtime trace、系统图可见性、仓库回执和 Agent 共识都不等于知识真值、现实因果、AGI、人格或意识；Pack 可加载不表示 Pack 获得通用权限。系统图 `0.5.0` 及更早版本降为 Historical，`0.6.0` 才是当前 registry-derived projection。
 - next_read: 先读[首页](../.github/README.md)、本条与[当前项目现状](./docs/project-current-state.md)，再读[智能体化边界 R0](./docs/architecture/agentization-boundary-r0.md)、[Kernel](./agent_kernel/README.md)、[Runtime](./agent_runtime/README.md)、[pilot receipt](./data/agent-runtime/pilots/non-knowledge-manifest-r0/pilot-receipt.json)和[机器边界清单](./data/architecture/agentization-boundary-r0.json)。
+
+## 2026-08-15 — IGNITION-20260815-120-AGENT-RUNTIME-R1 — main transition from 834fce29afdadb47adda08a95631303ad0d94fc7
+
+- main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; 本轮从任务 119 的正式 main 基线 `834fce29afdadb47adda08a95631303ad0d94fc7` 开始，最终发布 tip 由 Git、远端和全新克隆精确回执确定。
+- delta: 在 R0 typed loop 之上增加真实本地文件/命令行动层、workspace path/symlink/special-file/allowlist 边界、execution packet/source-plan digest、locked lease/idempotency、typed approval、action journal、崩溃恢复、allowlisted JSONL Reasoner transport、CLI 和 bounded local rollback；不做全仓物理拆分。
+- authority_changes: [Agent Runtime R1](./docs/architecture/agent-runtime-r1.md)、[R1 action schemas](./schemas/agent-runtime/)、[R1 local pilots](./agent_runtime/pilots/r1_real_local.py)和 [R1 tests](./tests/test_agent_runtime_r1.py)记录当前执行面；R0 的 Kernel、Runtime、非知识 pilot 和 Task 115 audit 仍是历史/回归入口。
+- epistemic_state: `COMPLETED_VALIDATED` 只表示一条本地 bounded run 的 typed validation 通过；`FAILED_VALIDATION_ROLLED_BACK` 只表示失败后 whole-file preimage 恢复通过。工程回执、CLI、lease、pilot 和跨 executor 恢复不提升 M/E、proof、scope、provenance、claim ceiling、Owner acceptance、外部真值或因果效果；`EPISTEMICALLY_ACCEPTED=0` 不变。
+- obligations: 真实 provider/model 接入、multi-agent、vector/embedding memory、persona、scheduler/daemon、Telegram/OpenClaw/Hermes、网络/浏览、物理 Domain Pack migration、Git mutation、外部 Owner acceptance 和现实效果仍开放；unsupported rollback actions 只能进入明确 residual/stop state。
+- stale_knowledge: R0 的 abstract Reasoner/Executor/Validator 只是历史边界，不应被写成已接入真实 provider；R1 的本地 pilot 也不应被改写成通用自治或生产 daemon 证明。
+- next_read: 先读本条、[Agent Runtime R1](./docs/architecture/agent-runtime-r1.md)、[Runtime README](./agent_runtime/README.md)、[R1 schemas](./schemas/agent-runtime/)和 [R1 tests](./tests/test_agent_runtime_r1.py)，再回到 [R0 boundary](./docs/architecture/agentization-boundary-r0.md)；Task 119 的 1111 receipt 只在 1111 relay worktree 中读取。

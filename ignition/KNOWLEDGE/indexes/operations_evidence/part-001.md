@@ -1544,6 +1544,11 @@
   - 可搜索名称：IMPLICIT-450DF8C5163A6219 / ## Phase 5: Function OS Nine Nodes / IMPLICIT-450DF8C5163A6219
   - 来源：`reports/external-research/121c01-max-semantic-review-batch-01.md`
   - 依赖：—；被引用：—
+- [## R1 当前能力](../../../agent_runtime/README.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-D2C04FF2FDB7BE55 / ## R1 当前能力 / IMPLICIT-D2C04FF2FDB7BE55
+  - 来源：`agent_runtime/README.md`
+  - 依赖：—；被引用：—
 - [## Rationale](../../../docs/governance/licensing-model-candidate.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-E16BAD1B164DB0CF / ## Rationale / IMPLICIT-E16BAD1B164DB0CF
@@ -2497,10 +2502,5 @@
 - [### \[MF-0004｜自举嵌套判定器\](docs/zh/functions/meta/items/MF-0004.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-F473C6BB0406028E / ### \[MF-0004｜自举嵌套判定器\](docs/zh/functions/meta/items/MF-0004.md) / IMPLICIT-F473C6BB0406028E
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [### \[MF-0005｜自举收敛判定器\](docs/zh/functions/meta/items/MF-0005.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-7A41B32FCC34FCFA / ### \[MF-0005｜自举收敛判定器\](docs/zh/functions/meta/items/MF-0005.md) / IMPLICIT-7A41B32FCC34FCFA
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—

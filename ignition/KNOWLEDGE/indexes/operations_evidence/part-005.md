@@ -6,6 +6,11 @@
 
 - [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：A5114727944 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json / A5114727944 / A5001316926
+  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json`
+  - 依赖：—；被引用：—
+- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：A5120294612 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json / A5120294612 / A5001316926
   - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json`
   - 依赖：—；被引用：—
@@ -1254,6 +1259,11 @@
   - 可搜索名称：IMPLICIT-367E5F014FF57B5F / if not anchors or (isinstance(anchors, list) and len(anchors) == 0): / IMPLICIT-367E5F014FF57B5F
   - 来源：`data/external-research/106-105-correction/106-validator.py`
   - 依赖：—；被引用：—
+- [if not any(item.get("action_id") == packet.action_id for item in self.state\["validations"\]):](../../../agent_runtime/r1_runtime.py)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-C7D5236AE475B1EC / if not any(item.get("action_id") == packet.action_id for item in self.state\["validations"\]): / IMPLICIT-C7D5236AE475B1EC
+  - 来源：`agent_runtime/r1_runtime.py`
+  - 依赖：—；被引用：—
 - [if not any(p.get("provider") == "blocked_libgen" for p in blocked):](../../../data/external-research/121-fulltext-resolver/121-validator.py)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-2D00A956864BD99F / if not any(p.get("provider") == "blocked_libgen" for p in blocked): / IMPLICIT-2D00A956864BD99F
@@ -1329,6 +1339,11 @@
   - 可搜索名称：IMPLICIT-60C9E5E7C42A2E60 / if paw.get("semantic_review_status") == "FULLTEXT_FETCH_AND_EXTRACTION_VERIFIED_PENDING_SEMANTIC_REVIEW": / IMPLICIT-60C9E5E7C42A2E60
   - 来源：`data/external-research/121A-night-recovery/121A-validator.py`
   - 依赖：—；被引用：—
+- [if point and self.state.get("fault_injection_consumed", {}).get(action_id) == point:](../../../agent_runtime/r1_runtime.py)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-33604F807BA1FE74 / if point and self.state.get("fault_injection_consumed", {}).get(action_id) == point: / IMPLICIT-33604F807BA1FE74
+  - 来源：`agent_runtime/r1_runtime.py`
+  - 依赖：—；被引用：—
 - [if proc.stdout.strip() == "true":](../../../tools/governance/gen_source_first_seen.py)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-0747D0CFDB578A5C / if proc.stdout.strip() == "true": / IMPLICIT-0747D0CFDB578A5C / IMPLICIT-5E128A42B3929BBA
@@ -1369,6 +1384,21 @@
   - 可搜索名称：IMPLICIT-6FBE405D692CE7B2 / if rec.get("task_number") == task_number: / IMPLICIT-6FBE405D692CE7B2
   - 来源：`tools/propagation/ledger.py`
   - 依赖：—；被引用：—
+- [if record.get("action_id") == action_id:](../../../agent_runtime/control.py)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-5D671CA106F07D2D / if record.get("action_id") == action_id: / IMPLICIT-5D671CA106F07D2D
+  - 来源：`agent_runtime/control.py`
+  - 依赖：—；被引用：—
+- [if records\[index\].get("action_id") == action_id:](../../../agent_runtime/control.py)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-836675FB5B5FD5AE / if records\[index\].get("action_id") == action_id: / IMPLICIT-836675FB5B5FD5AE
+  - 来源：`agent_runtime/control.py`
+  - 依赖：—；被引用：—
+- [if rollback.get("status") == "RESTORED":](../../../agent_runtime/r1_runtime.py)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-BD5D11444C44C0B1 / if rollback.get("status") == "RESTORED": / IMPLICIT-BD5D11444C44C0B1
+  - 来源：`agent_runtime/r1_runtime.py`
+  - 依赖：—；被引用：—
 - [if row.get("acquisition_status") == "OK":](../../../evidence-program/tools/validate_evidence_program.py)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-CE96FA70666D5518 / if row.get("acquisition_status") == "OK": / IMPLICIT-CE96FA70666D5518
@@ -1394,6 +1424,11 @@
   - 可搜索名称：IMPLICIT-125B69A7D65CAA06 / if schema.get("type") == "object" and isinstance(inst, dict): / IMPLICIT-125B69A7D65CAA06
   - 来源：`evidence-program/tools/validate_evidence_program.py`
   - 依赖：—；被引用：—
+- [if self.spec.reasoner.get("type", "scripted") == "scripted":](../../../agent_runtime/r1_runtime.py)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-04A0175F4B13E281 / if self.spec.reasoner.get("type", "scripted") == "scripted": / IMPLICIT-04A0175F4B13E281
+  - 来源：`agent_runtime/r1_runtime.py`
+  - 依赖：—；被引用：—
 - [if smoke.get("overall_status") == "ALL_TESTS_PASS":](../../../data/external-research/121A-night-recovery/121A-validator.py)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-C1A378857C1D2403 / if smoke.get("overall_status") == "ALL_TESTS_PASS": / IMPLICIT-C1A378857C1D2403
@@ -1413,6 +1448,11 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-E52226143CC87F5D / if spec.get('spec_version') == '0.0.0': / IMPLICIT-E52226143CC87F5D
   - 来源：`function-os-candidate/v0.2/function_os/n1_functionspec_parser.py`
+  - 依赖：—；被引用：—
+- [if terminal and terminal.get("state") == StopState.WAITING_FOR_APPROVAL.value:](../../../agent_runtime/r1_runtime.py)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-F83698EED13FF12D / if terminal and terminal.get("state") == StopState.WAITING_FOR_APPROVAL.value: / IMPLICIT-F83698EED13FF12D
+  - 来源：`agent_runtime/r1_runtime.py`
   - 依赖：—；被引用：—
 - [IGNITION 059 next collision roadmap](../../ASSET-CARDS.md#asset-hr-e815f8ad25cfc77e)
   - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
@@ -2463,44 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-A071022C19CB3D51 / require(len(state\["steps"\]) == 4, "run-state must contain four steps") / IMPLICIT-A071022C19CB3D51 / IMPLICIT-F9F05CF92A3FF685
   - 来源：`tools/validate_attention_distribution_compression.py`
-  - 依赖：—；被引用：—
-- [require(len(state\["steps"\]) == 4, "run-state must contain four steps")](../../../tools/validate_ignition_atlas.py)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-F9F05CF92A3FF685 / require(len(state\["steps"\]) == 4, "run-state must contain four steps") / IMPLICIT-F9F05CF92A3FF685 / IMPLICIT-A071022C19CB3D51
-  - 来源：`tools/validate_ignition_atlas.py`
-  - 依赖：—；被引用：—
-- [require(len(state\["steps"\]) == 5, "run-state must contain five macro steps")](../../../tools/validate_effectual_mechanism_overlay.py)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-88F606AED2D7083E / require(len(state\["steps"\]) == 5, "run-state must contain five macro steps") / IMPLICIT-88F606AED2D7083E
-  - 来源：`tools/validate_effectual_mechanism_overlay.py`
-  - 依赖：—；被引用：—
-- [require(lifecycle.get(key) == manifest\["status"\]\[key\], f"{source}: seal lifecycle mismatch for {key}")](../../../tools/validate_iteration_sync.py)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-8795F1395DD75A1E / require(lifecycle.get(key) == manifest\["status"\]\[key\], f"{source}: seal lifecycle mismatch for {key}") / IMPLICIT-8795F1395DD75A1E
-  - 来源：`tools/validate_iteration_sync.py`
-  - 依赖：—；被引用：—
-- [require(manifest.get("cross_layer_coverage") == REQUIRED_LAYERS, "manifest: cross_layer_coverage must be exact ordered L0-L6", errors)](../../../tools/language_thought/validate_language_thought.py)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-EBEA8B0A7C9C9D0F / require(manifest.get("cross_layer_coverage") == REQUIRED_LAYERS, "manifest: cross_layer_coverage must be exact ordered L0-L6", errors) / IMPLICIT-EBEA8B0A7C9C9D0F
-  - 来源：`tools/language_thought/validate_language_thought.py`
-  - 依赖：—；被引用：—
-- [require(manifest.get("head_binding", {}).get("review_receipt_commit") == "e4178f4310822d085ce8201b95236bc2ebc48d69", "E_PHASE_E_REVIEW", "independent review receipt is absent")](../../../tools/operations/validate_phase_e_candidate.py)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-E736F7F7698EFC99 / require(manifest.get("head_binding", {}).get("review_receipt_commit") == "e4178f4310822d085ce8201b95236bc2ebc48d69", "E_PHASE_E_REVIEW", "independent review receipt is absent") / IMPLICIT-E736F7F7698EFC99
-  - 来源：`tools/operations/validate_phase_e_candidate.py`
-  - 依赖：—；被引用：—
-- [require(manifest.get("method_version") == "1.3.0" and seal.get("method_version") == "1.3.0", "E_PHASE_E_VERSION", "method version must be 1.3.0")](../../../tools/operations/validate_phase_e_candidate.py)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-A9908F874F612A78 / require(manifest.get("method_version") == "1.3.0" and seal.get("method_version") == "1.3.0", "E_PHASE_E_VERSION", "method version must be 1.3.0") / IMPLICIT-A9908F874F612A78
-  - 来源：`tools/operations/validate_phase_e_candidate.py`
-  - 依赖：—；被引用：—
-- [require(manifest.get("q29r", {}).get("sha256") == Q29R_SHA256 == seal.get("q29r", {}).get("sha256") == q29r_historical_sha, "E_PHASE_E_Q29R", "Q29R frozen hash mismatch")](../../../tools/operations/validate_phase_e_candidate.py)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-85FB778381BF0270 / require(manifest.get("q29r", {}).get("sha256") == Q29R_SHA256 == seal.get("q29r", {}).get("sha256") == q29r_historical_sha, "E_PHASE_E_Q29R", "Q29R frozen hash mismatch") / IMPLICIT-85FB778381BF0270
-  - 来源：`tools/operations/validate_phase_e_candidate.py`
-  - 依赖：—；被引用：—
-- [require(manifest.get("required_dimensions") == REQUIRED_DIMENSIONS, "manifest: required_dimensions must be exact ordered d01-d12", errors)](../../../tools/language_thought/validate_language_thought.py)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-3D6DEF2A1B07B4EF / require(manifest.get("required_dimensions") == REQUIRED_DIMENSIONS, "manifest: required_dimensions must be exact ordered d01-d12", errors) / IMPLICIT-3D6DEF2A1B07B4EF
-  - 来源：`tools/language_thought/validate_language_thought.py`
   - 依赖：—；被引用：—

@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [lines = \["# 影响分析", "", "影响沿任务 100 依赖图双向计算，只代表仓库依赖与复核范围，不代表现实因果。", "", "\|资产\|直接断言\|传递影响\|是否需人工建边\|", "\|---\|---:\|---:\|---\|"\]](../../../tools/governance/run_self_correction.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-7748b1401ab52184 / lines = \["# 影响分析", "", "影响沿任务 100 依赖图双向计算，只代表仓库依赖与复核范围，不代表现实因果。", "", "\|资产\|直接断言\|传递影响\|是否需人工建边\|", "\|---\|---:\|---:\|---\|"\]
+  - 来源：`tools/governance/run_self_correction.py`
+  - 依赖：—；被引用：—
+- [lines = \[f"# {subject\['label'\]}：检索索引", "", f"引导问题：{subject\['question'\]}", "", "此页按 canonical title 排列。状态与关系来自当前注册表；`被引用`](../../../tools/governance/build_knowledge_experience.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-75027d36e3583598 / lines = \[f"# {subject\['label'\]}：检索索引", "", f"引导问题：{subject\['question'\]}", "", "此页按 canonical title 排列。状态与关系来自当前注册表；`被引用`
+  - 来源：`tools/governance/build_knowledge_experience.py`
+  - 依赖：—；被引用：—
+- [lines.extend(\["", "This rendering is a projection, not canonical evidence, truth, value or causality."\])](../../../tools/adaptive_relational_network/renderer.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-392f0f68b185addc / lines.extend(\["", "This rendering is a projection, not canonical evidence, truth, value or causality."\])
+  - 来源：`tools/adaptive_relational_network/renderer.py`
+  - 依赖：—；被引用：—
 - [link: "已迁移的历史案例来源/0695-C-0700-因果光锥×马拉松×高山滑雪.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-1774151dca31940f / link: "已迁移的历史案例来源/0695-C-0700-因果光锥×马拉松×高山滑雪.md"
@@ -1967,6 +1982,11 @@
   - 可搜索名称：NFC-cc34af28baa74901 / r"普遍\|万能\|永远\|从不\|因果\|导致\|决定\|机制\|同构\|同态\|对应\|投影\|类比\|预测\|预言\|"
   - 来源：`tools/foundation/adjudicate_nonfunction_claims.py`
   - 依赖：—；被引用：—
+- [R1 不包含 multi-agent、vector/embedding memory、persona、scheduler/daemon、Telegram/OpenClaw/Hermes、网络浏览、真实 provider/model pilo](../../../docs/architecture/agent-runtime-r1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-093b2f9e3fd99f5d / R1 不包含 multi-agent、vector/embedding memory、persona、scheduler/daemon、Telegram/OpenClaw/Hermes、网络浏览、真实 provider/model pilo
+  - 来源：`docs/architecture/agent-runtime-r1.md`
+  - 依赖：—；被引用：—
 - [R6 回滚条件**：哪些事实 / 伤害 / 失败 / 治理异议触发撤回。](../../../docs/governance/charter-system-r1.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-73e710213743fe10 / R6 回滚条件**：哪些事实 / 伤害 / 失败 / 治理异议触发撤回。
@@ -2471,24 +2491,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-0259488e111aeb1b / SB 之所以上一轮是 0，不是 backlog 真为 0，而是旧审计脚本只认“卡片”标题；任务 H 原稿实际以三段编号列表呈现 30 个条目，导致脚本未命中。
   - 来源：`outputs/audit/v0.2-id-preflight-discrepancy-20260707.md`
-  - 依赖：—；被引用：—
-- [Scale transitions are not automatically faithful. They need bridge mechanisms, evidence, or explicit residue.](../../../docs/architecture/multiscale-causal-fabric.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-d2f27d120a85b7f6 / Scale transitions are not automatically faithful. They need bridge mechanisms, evidence, or explicit residue.
-  - 来源：`docs/architecture/multiscale-causal-fabric.md`
-  - 依赖：—；被引用：—
-- [scale transitions include bridge mechanisms or remain analogy/residue;](../../../reports/architecture/121Q21R-multiscale-causal-fabric-validation.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-571ba8fee0286cb8 / scale transitions include bridge mechanisms or remain analogy/residue;
-  - 来源：`reports/architecture/121Q21R-multiscale-causal-fabric-validation.md`
-  - 依赖：—；被引用：—
-- [Scale transitions without bridge mechanisms.](../../../reports/architecture/121Q21R-causal-asset-audit.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-191bb8d61df56c48 / Scale transitions without bridge mechanisms.
-  - 来源：`reports/architecture/121Q21R-causal-asset-audit.md`
-  - 依赖：—；被引用：—
-- [SCC_DOMAIN = "substantive_causal_candidate"](../../../tools/operations/compute_change_propagation.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-e875864ae950f89f / SCC_DOMAIN = "substantive_causal_candidate"
-  - 来源：`tools/operations/compute_change_propagation.py`
   - 依赖：—；被引用：—

@@ -1877,7 +1877,7 @@
       "creates_sync_obligation": true,
       "map_visible": true,
       "label": "Kernel 提供授权与 lineage 契约",
-      "declaration_source": "agent_runtime/runtime.py",
+      "declaration_source": "agent_runtime/r1_runtime.py",
       "claim_ceiling": "runtime dependency only; no domain truth authority",
       "residue": []
     },
@@ -1894,7 +1894,7 @@
       "creates_sync_obligation": false,
       "map_visible": true,
       "label": "Runtime 读取声明环境",
-      "declaration_source": "docs/architecture/agent-runtime-r0.md",
+      "declaration_source": "docs/architecture/agent-runtime-r1.md",
       "claim_ceiling": "declared environment observation only",
       "residue": []
     },
@@ -1911,7 +1911,7 @@
       "creates_sync_obligation": false,
       "map_visible": true,
       "label": "Runtime 记录结构化记忆事件",
-      "declaration_source": "agent_runtime/runtime.py",
+      "declaration_source": "agent_runtime/r1_runtime.py",
       "claim_ceiling": "run trace and resume material only; not knowledge truth",
       "residue": []
     },

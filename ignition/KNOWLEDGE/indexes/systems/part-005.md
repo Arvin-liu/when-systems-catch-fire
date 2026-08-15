@@ -4,6 +4,26 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [中文：\[D468\](docs/zh/functions/items/D468.md)×M14碰撞——吸引子-陷阱等价导致系统在"优化→锁定→降势垒→重新优化"之间周期性循环： $$\\sigma(t) \\sim \\sigma_{opt} +](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-b4619d4227e14f59 / 中文：\[D468\](docs/zh/functions/items/D468.md)×M14碰撞——吸引子-陷阱等价导致系统在"优化→锁定→降势垒→重新优化"之间周期性循环： $$\\sigma(t) \\sim \\sigma_{opt} +
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D468；被引用：—
+- [中文：C=0（认知能力最低）→P_exit=0。认知能力为零导致退出权归零。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-ba268434dd7bd80c / 中文：C=0（认知能力最低）→P_exit=0。认知能力为零导致退出权归零。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [中文：C是最小值→C成为卡点→P_exit由C决定。最弱维度决定退出权。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-30ad032a3e3426bc / 中文：C是最小值→C成为卡点→P_exit由C决定。最弱维度决定退出权。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [中文：D258的正反馈有逆过程：p分布集中化→g_eff↑→p*↑→耦合增强→p分布更集中→g_eff↑↑。良性循环条件：至少一个pᵢ减小（门槛被降低或绕过）。恶性循环（\[D258\](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-1af659d0058d7b85 / 中文：D258的正反馈有逆过程：p分布集中化→g_eff↑→p*↑→耦合增强→p分布更集中→g_eff↑↑。良性循环条件：至少一个pᵢ减小（门槛被降低或绕过）。恶性循环（\[D258\](docs/zh/functions/items/D258
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D258, D259；被引用：—
 - [中文：D384精确化——极小点消失后的势能面残余不是简单指数衰减，而是超指数衰减： $$\\Delta\\Phi_{ghost}(t) = \\Delta\\Phi_{max} \\cdot \\exp\\left(-\\kappa \\cdot \\left](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-34386ae10b2cd48b / 中文：D384精确化——极小点消失后的势能面残余不是简单指数衰减，而是超指数衰减： $$\\Delta\\Phi_{ghost}(t) = \\Delta\\Phi_{max} \\cdot \\exp\\left(-\\kappa \\cdot \\left
@@ -2483,24 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-9f7416f0b76f52cb / 收敛状态：** 扩展注释归零，元层面收敛。虽然ΔB>0，但结构性增量已收敛。元同构率在9个系统的元层面验证完成。
   - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [改名不是表面装饰。一个人被怎样称呼，决定他在什么制度里出现；一座寺院被怎样登记，决定谁能管理它、谁能从中取得资源。道教的国家化因此不能只从皇帝的宇宙观来写，也要从被重新分类的僧尼、地方信众和行政执行者身上来写。](../../../docs/publication/works/when-an-emperor-manufactures-heaven.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-4613725296c49b22 / 改名不是表面装饰。一个人被怎样称呼，决定他在什么制度里出现；一座寺院被怎样登记，决定谁能管理它、谁能从中取得资源。道教的国家化因此不能只从皇帝的宇宙观来写，也要从被重新分类的僧尼、地方信众和行政执行者身上来写。
-  - 来源：`docs/publication/works/when-an-emperor-manufactures-heaven.md`
-  - 依赖：—；被引用：—
-- [政权内部叛乱和中枢撤动导致小敌快速胜利、但胜者并无特别基层制度的案例；若匹配，辽崩溃模型上升。](../../../reports/publication/jin-rise-point-fire-analysis.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-808569c0c473b749 / 政权内部叛乱和中枢撤动导致小敌快速胜利、但胜者并无特别基层制度的案例；若匹配，辽崩溃模型上升。
-  - 来源：`reports/publication/jin-rise-point-fire-analysis.md`
-  - 依赖：—；被引用：—
-- [政治学界和国际关系学界通过史料考证、理论分析、比较研究等方法研究战争发生问题。主流观点认为战争是由利益、恐惧、制度等多重因素共同导致。](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-f7381f527589e95c / 政治学界和国际关系学界通过史料考证、理论分析、比较研究等方法研究战争发生问题。主流观点认为战争是由利益、恐惧、制度等多重因素共同导致。
-  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [政治学界和经济学界通过实证研究、理论分析、比较研究等方法研究制度锁定问题。主流观点认为制度锁定是由路径依赖、利益集团、认知等多重因素共同导致。](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-da454e269b3675ec / 政治学界和经济学界通过实证研究、理论分析、比较研究等方法研究制度锁定问题。主流观点认为制度锁定是由路径依赖、利益集团、认知等多重因素共同导致。
-  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
   - 依赖：—；被引用：—

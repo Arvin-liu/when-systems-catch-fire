@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ignition/agent-runtime/action-packet-r1.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["run_id", "step_id", "action_id", "kind", "required_capabilities", "requested_reads", "requested_writes", "argv", "approval_class", "expected_side_effects", "validator_refs", "timeout_seconds", "max_output_bytes", "idempotency_key", "rollback_class", "reason_summary", "source_plan_hash", "payload", "network_requested"],
+  "properties": {
+    "run_id": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:/-]{0,127}$"},
+    "step_id": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:/-]{0,127}$"},
+    "action_id": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:/-]{0,127}$"},
+    "kind": {"enum": ["READ_FILE", "LIST_DIR", "WRITE_FILE", "CREATE_FILE", "PATCH_TEXT_FILE", "HASH_FILE", "RUN_COMMAND", "GIT_STATUS", "GIT_DIFF"]},
+    "required_capabilities": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string"}},
+    "requested_reads": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
+    "requested_writes": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
+    "argv": {"type": "array", "items": {"type": "string"}},
+    "approval_class": {"enum": ["AUTO_ALLOWED_SAFE", "BOUNDED_WRITE_REQUIRES_APPROVAL", "COMMAND_REQUIRES_APPROVAL", "DESTRUCTIVE_NOT_AVAILABLE_R1"]},
+    "expected_side_effects": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
+    "validator_refs": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
+    "timeout_seconds": {"type": "number", "exclusiveMinimum": 0},
+    "max_output_bytes": {"type": "integer", "minimum": 1},
+    "idempotency_key": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:/-]{0,127}$"},
+    "rollback_class": {"enum": ["NONE", "ROLLBACKABLE_LOCAL_FILE", "NOT_SUPPORTED_R1"]},
+    "reason_summary": {"type": "string", "minLength": 1},
+    "source_plan_hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "payload": {"type": "object"},
+    "network_requested": {"type": "boolean"}
+  }
+}

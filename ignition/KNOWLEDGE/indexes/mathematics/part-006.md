@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [identifiers that older lifecycle records already cite.](../../../tools/propagation/generate_editorial_manifest.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-dac435c65f676a3b / identifiers that older lifecycle records already cite.
+  - 来源：`tools/propagation/generate_editorial_manifest.py`
+  - 依赖：—；被引用：—
+- [Identity lock: formal main identifies the multiplication-zero asset as T2, while D127 is the cognitive-path-integral ana](../../../reports/foundation-architecture/098-remote-truth-and-gap.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-d196cf8167ba2621 / Identity lock: formal main identifies the multiplication-zero asset as T2, while D127 is the cognitive-path-integral ana
+  - 来源：`reports/foundation-architecture/098-remote-truth-and-gap.md`
+  - 依赖：D127, D260, T2；被引用：—
 - [IDs, topic paths, provenance, statuses, timestamps, update logs and Git provide lifecycle primitives, but immutable vers](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
   - 可搜索名称：NFC-5592458e0eb7fb8d / IDs, topic paths, provenance, statuses, timestamps, update logs and Git provide lifecycle primitives, but immutable vers
@@ -2494,13 +2504,3 @@
   - 可搜索名称：NFC-f92a8de245cec139 / If upstream objects D_{D75} exist, compose F_{D75}=N(⊕_{g∈D_{D75}} g); otherwise treat F_{D75} as an axiom seed.
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D75；被引用：—
-- [If upstream objects D_{D76} exist, compose F_{D76}=N(⊕_{g∈D_{D76}} g); otherwise treat F_{D76} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-a08fb983dd7a01ed / If upstream objects D_{D76} exist, compose F_{D76}=N(⊕_{g∈D_{D76}} g); otherwise treat F_{D76} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D76；被引用：—
-- [If upstream objects D_{D77} exist, compose F_{D77}=N(⊕_{g∈D_{D77}} g); otherwise treat F_{D77} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-c557b9658bc918d4 / If upstream objects D_{D77} exist, compose F_{D77}=N(⊕_{g∈D_{D77}} g); otherwise treat F_{D77} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D77；被引用：—

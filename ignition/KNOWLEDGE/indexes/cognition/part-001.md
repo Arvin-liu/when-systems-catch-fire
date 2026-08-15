@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- ["""A process-level lock whose lock file is never removed."""](../../../agent_runtime/control.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-733e8be29bb990ba / """A process-level lock whose lock file is never removed."""
+  - 来源：`agent_runtime/control.py`
+  - 依赖：—；被引用：—
+- ["""Locked approval records; a decision never mutates the packet."""](../../../agent_runtime/control.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-67a2cfb79f3ed18f / """Locked approval records; a decision never mutates the packet."""
+  - 来源：`agent_runtime/control.py`
+  - 依赖：—；被引用：—
 - ["execution_agents": \[{"name": "Codex Agent", "role": "evidence collection tool", "evidence_reference": "https://github.c](../../../tests/test_stage_snapshot_publication.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-b1d3e7fdc691ac8e / "execution_agents": \[{"name": "Codex Agent", "role": "evidence collection tool", "evidence_reference": "https://github.c
@@ -279,6 +289,26 @@
   - 可搜索名称：NFC-532a35848e59dc23 / `agent_claims_published_to_main` 永远必须为 false。Agent 提交请求不等于发布；只有独立轻量同步任务核验远端真值、公开边界和生成结果后，才能提出把快照记录合并进 Main。
   - 来源：`docs/operations/stage-snapshot-publication.md`
   - 依赖：—；被引用：—
+- [`agent_kernel_r0 --constraint / synchronization_obligation--> no_truth_upgrade` — negative permission and invariant only](../../../reports/operations/IGNITION-20260815-120-change-propagation-impact.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-2c382d08ee53ed89 / `agent_kernel_r0 --constraint / synchronization_obligation--> no_truth_upgrade` — negative permission and invariant only
+  - 来源：`reports/operations/IGNITION-20260815-120-change-propagation-impact.md`
+  - 依赖：—；被引用：—
+- [`agent_kernel_r0 --enabling_condition / repository_dependency--> agent_runtime_r0` — runtime dependency only; no domain](../../../reports/operations/IGNITION-20260815-120-change-propagation-impact.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-32b553ef1f6a7d76 / `agent_kernel_r0 --enabling_condition / repository_dependency--> agent_runtime_r0` — runtime dependency only; no domain
+  - 来源：`reports/operations/IGNITION-20260815-120-change-propagation-impact.md`
+  - 依赖：—；被引用：—
+- [`agent_runtime_r0 --generates / repository_dependency--> runtime_memory_loop` — run trace and resume material only; not](../../../reports/operations/IGNITION-20260815-120-change-propagation-impact.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-a65bfc41a0dac9d9 / `agent_runtime_r0 --generates / repository_dependency--> runtime_memory_loop` — run trace and resume material only; not
+  - 来源：`reports/operations/IGNITION-20260815-120-change-propagation-impact.md`
+  - 依赖：—；被引用：—
+- [`agent_runtime_r0 --validates / repository_dependency--> nonknowledge_pilot` — repository pilot evidence only; no genera](../../../reports/operations/IGNITION-20260815-120-change-propagation-impact.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-080b3376e77c1b5c / `agent_runtime_r0 --validates / repository_dependency--> nonknowledge_pilot` — repository pilot evidence only; no genera
+  - 来源：`reports/operations/IGNITION-20260815-120-change-propagation-impact.md`
+  - 依赖：—；被引用：—
 - [`CHANGE` decisions and evidence:](../../../templates/operations/task-command-template.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-dd94a122f2c55256 / `CHANGE` decisions and evidence:
@@ -323,6 +353,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-1620b4d7a9f111f4 / `STATE-CHANGELOG.md` 是 AI 优先的状态增量导航；它必须与 canonical current-state、registry、claim 和 evidence 资产交叉核对，不能成为第二套真相源。
   - 来源：`docs/AGENT-GUIDE.md`
+  - 依赖：—；被引用：—
+- [`tests/test_agent_runtime_r1.py` 覆盖 path/symlink/special-file、executable/argv、timeout/output bound、packet expansion、stal](../../../docs/architecture/agent-runtime-r1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-565cc869a9344fb0 / `tests/test_agent_runtime_r1.py` 覆盖 path/symlink/special-file、executable/argv、timeout/output bound、packet expansion、stal
+  - 来源：`docs/architecture/agent-runtime-r1.md`
   - 依赖：—；被引用：—
 - [`已迁移的历史案例来源/`](../../../docs/agent-trigger-phrases-20260708.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
@@ -624,6 +659,11 @@
   - 可搜索名称：IMPLICIT-3AE6ECB59154DBD9 / def from_dict(cls, data: Mapping\[str, Any\]) -> "AgentProfile": / IMPLICIT-3AE6ECB59154DBD9
   - 来源：`agent_kernel/profile.py`
   - 依赖：—；被引用：—
+- [def from_dict(cls, data: Mapping\[str, Any\]) -> "ApprovalDecisionR1":](../../../agent_runtime/control.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-0FB8157437874D06 / def from_dict(cls, data: Mapping\[str, Any\]) -> "ApprovalDecisionR1": / IMPLICIT-0FB8157437874D06
+  - 来源：`agent_runtime/control.py`
+  - 依赖：—；被引用：—
 - [def load_existing_decisions(self):](../../../tools/governance/fail_closed_publication_gate.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-2B4231EF71C308CC / def load_existing_decisions(self): / IMPLICIT-2B4231EF71C308CC
@@ -638,6 +678,11 @@
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-DBD5314741491FCA / def record_gate_decision(self, decision): / IMPLICIT-DBD5314741491FCA
   - 来源：`tools/governance/fail_closed_publication_gate.py`
+  - 依赖：—；被引用：—
+- [def submit(self, decision: ApprovalDecisionR1) -> tuple\[ApprovalRequestR1, ApprovalDecisionR1\]:](../../../agent_runtime/control.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-6E907F9F5E5120A8 / def submit(self, decision: ApprovalDecisionR1) -> tuple\[ApprovalRequestR1, ApprovalDecisionR1\]: / IMPLICIT-6E907F9F5E5120A8
+  - 来源：`agent_runtime/control.py`
   - 依赖：—；被引用：—
 - [def technical_agent_as_final() -> None:](../../../tools/operations/run_stage_snapshot_responsibility_cases.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
@@ -763,6 +808,11 @@
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-6C5F49FBD8304707 / def validate_self_review(self_review_path, decisions_path): / IMPLICIT-6C5F49FBD8304707
   - 来源：`tools/foundation/validate_084_max_adjudication.py`
+  - 依赖：—；被引用：—
+- [delta: 在 R0 typed loop 之上增加真实本地文件/命令行动层、workspace path/symlink/special-file/allowlist 边界、execution packet/source-plan di](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-7472f4fef793f23b / delta: 在 R0 typed loop 之上增加真实本地文件/命令行动层、workspace path/symlink/special-file/allowlist 边界、execution packet/source-plan di
+  - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
 - [delta: 把仓库人类入口迁到 `.github/README.md` 并收敛为五个首页部件；根目录归一为 `.github/`、`.gitignore`、`AGENTS.md`、`LICENSE`、`ignition/` 五个条目；新增](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -929,6 +979,11 @@
   - 可搜索名称：NFC-15a4fd609ce14faf / if (completed.get("terminal") or {}).get("state") != StopState.COMPLETED_VALIDATED.value:
   - 来源：`agent_runtime/pilots/non_knowledge_manifest.py`
   - 依赖：—；被引用：—
+- [if a\["final_state"\] != StopState.COMPLETED_VALIDATED.value or b\["final_state"\] != StopState.FAILED_VALIDATION_ROLLED_BAC](../../../agent_runtime/pilots/r1_real_local.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-e0ff13e02d8c7813 / if a\["final_state"\] != StopState.COMPLETED_VALIDATED.value or b\["final_state"\] != StopState.FAILED_VALIDATION_ROLLED_BAC
+  - 来源：`agent_runtime/pilots/r1_real_local.py`
+  - 依赖：—；被引用：—
 - [if decision and decision.get("verdict") == "MATERIAL_REPAIR_REQUIRED":](../../../reos_vnext/kernel.py)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-7C10A5864A563371 / if decision and decision.get("verdict") == "MATERIAL_REPAIR_REQUIRED": / IMPLICIT-7C10A5864A563371
@@ -943,6 +998,11 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-77101720C3FADD52 / if decision_record.get("verdict") == "MATERIAL_REPAIR_REQUIRED" and not repair_ids and not decision_record.get("residuals"): / IMPLICIT-77101720C3FADD52
   - 来源：`reos_vnext/validation.py`
+  - 依赖：—；被引用：—
+- [if final\["terminal"\]\["state"\] != StopState.COMPLETED_VALIDATED.value:](../../../agent_runtime/pilots/r1_real_local.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-082f624bbdccc5b7 / if final\["terminal"\]\["state"\] != StopState.COMPLETED_VALIDATED.value:
+  - 来源：`agent_runtime/pilots/r1_real_local.py`
   - 依赖：—；被引用：—
 - [if receipt\["final_state"\] != StopState.COMPLETED_VALIDATED.value or state\["terminal"\]\["state"\] != receipt\["final_state"\]](../../../agent_runtime/pilots/non_knowledge_manifest.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
@@ -1084,6 +1144,11 @@
   - 可搜索名称：NFC-bb8917823f4fffcd / Object D535 defines a optimization_problem within the point-fire framework. Core: 中文：死亡分三个层次：生物学死亡（身体机能终止）→社会学死亡（社会关系中断）
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D535；被引用：—
+- [obligations: 真实 provider/model 接入、multi-agent、vector/embedding memory、persona、scheduler/daemon、Telegram/OpenClaw/Hermes、](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：NFC-8b977b5448ee58c6 / obligations: 真实 provider/model 接入、multi-agent、vector/embedding memory、persona、scheduler/daemon、Telegram/OpenClaw/Hermes、
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [open_questions=\["which variables in the cognition setting correspond to E\[r\] and Var(r\]?"\],](../../../tools/foundation/build_080_queue.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-d23a055d6e0eb6e1 / open_questions=\["which variables in the cognition setting correspond to E\[r\] and Var(r\]?"\],
@@ -1314,6 +1379,41 @@
   - 可搜索名称：NFC-1c1bf585d9ada592 / resumed from a verified capsule with a different executor
   - 来源：`data/agent-runtime/pilots/non-knowledge-manifest-r0/machine-trace.json`
   - 依赖：—；被引用：—
+- [return self._stop(StopState.BLOCKED_WITH_EVIDENCE.value, "reasoner frame response was not a bounded frame")](../../../agent_runtime/r1_runtime.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-79a68ed01410a11b / return self._stop(StopState.BLOCKED_WITH_EVIDENCE.value, "reasoner frame response was not a bounded frame")
+  - 来源：`agent_runtime/r1_runtime.py`
+  - 依赖：—；被引用：—
+- [return self._stop(StopState.BLOCKED_WITH_EVIDENCE.value, "reasoner plan response had the wrong phase")](../../../agent_runtime/r1_runtime.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-667bbb78c8749fc6 / return self._stop(StopState.BLOCKED_WITH_EVIDENCE.value, "reasoner plan response had the wrong phase")
+  - 来源：`agent_runtime/r1_runtime.py`
+  - 依赖：—；被引用：—
+- [return self._stop(StopState.BLOCKED_WITH_EVIDENCE.value, "the typed approval decision denied the action")](../../../agent_runtime/r1_runtime.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-9e0c085492c2a531 / return self._stop(StopState.BLOCKED_WITH_EVIDENCE.value, "the typed approval decision denied the action")
+  - 来源：`agent_runtime/r1_runtime.py`
+  - 依赖：—；被引用：—
+- [return self._stop(StopState.BLOCKED_WITH_EVIDENCE.value, "the typed approval request is no longer actionable")](../../../agent_runtime/r1_runtime.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-7560240713910e39 / return self._stop(StopState.BLOCKED_WITH_EVIDENCE.value, "the typed approval request is no longer actionable")
+  - 来源：`agent_runtime/r1_runtime.py`
+  - 依赖：—；被引用：—
+- [return self._stop(StopState.BLOCKED_WITH_EVIDENCE.value, f"reasoner transport failed closed: {exc}")](../../../agent_runtime/r1_runtime.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-3a11421e65e0c9e4 / return self._stop(StopState.BLOCKED_WITH_EVIDENCE.value, f"reasoner transport failed closed: {exc}")
+  - 来源：`agent_runtime/r1_runtime.py`
+  - 依赖：—；被引用：—
+- [return self._stop(StopState.BLOCKED_WITH_EVIDENCE.value, plan.block_summary or "reasoner did not provide an executable p](../../../agent_runtime/r1_runtime.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-754382c758b8c4d0 / return self._stop(StopState.BLOCKED_WITH_EVIDENCE.value, plan.block_summary or "reasoner did not provide an executable p
+  - 来源：`agent_runtime/r1_runtime.py`
+  - 依赖：—；被引用：—
+- [return self._stop(StopState.COMPLETED_VALIDATED.value, "all declared local actions passed validation")](../../../agent_runtime/r1_runtime.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-c8a3433659654187 / return self._stop(StopState.COMPLETED_VALIDATED.value, "all declared local actions passed validation")
+  - 来源：`agent_runtime/r1_runtime.py`
+  - 依赖：—；被引用：—
 - [return self._stop(StopState.COMPLETED_VALIDATED.value, "all planned actions passed their declared validators")](../../../agent_runtime/runtime.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-38782b73788cc668 / return self._stop(StopState.COMPLETED_VALIDATED.value, "all planned actions passed their declared validators")
@@ -1339,6 +1439,11 @@
   - 可搜索名称：NFC-9fd0c0d484693a94 / Schema for recording a publication gate decision for a specific material. Fail-closed: the recorded decision is derived
   - 来源：`schemas/governance/publication-gate-decision.schema.json`
   - 依赖：—；被引用：—
+- [Seeds: `agent_kernel_r0, agent_runtime_r0, current_state, historical_reports, human_knowledge_surfaces, incremental_exec](../../../reports/operations/IGNITION-20260815-120-change-propagation-impact.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-501c3fa9394524dc / Seeds: `agent_kernel_r0, agent_runtime_r0, current_state, historical_reports, human_knowledge_surfaces, incremental_exec
+  - 来源：`reports/operations/IGNITION-20260815-120-change-propagation-impact.md`
+  - 依赖：—；被引用：—
 - [seek external evidence;](../../../docs/architecture/attention-attractor-control-plane.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-999a87a59cc019c9 / seek external evidence;
@@ -1354,10 +1459,25 @@
   - 可搜索名称：NFC-1895f251939c8efa / self._event(Phase.CONTINUE.value, "resume", executor_id, "resumed from a verified capsule with a different executor", \[c
   - 来源：`agent_runtime/runtime.py`
   - 依赖：—；被引用：—
+- [self._stop(StopState.BLOCKED_WITH_EVIDENCE.value, "the typed approval request is expired or denied")](../../../agent_runtime/r1_runtime.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-e90b45ce708bd8d3 / self._stop(StopState.BLOCKED_WITH_EVIDENCE.value, "the typed approval request is expired or denied")
+  - 来源：`agent_runtime/r1_runtime.py`
+  - 依赖：—；被引用：—
+- [self.assertEqual(a\["final_state"\], StopState.COMPLETED_VALIDATED.value)](../../../tests/test_agent_runtime_r1.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-c51627e59ef5a086 / self.assertEqual(a\["final_state"\], StopState.COMPLETED_VALIDATED.value)
+  - 来源：`tests/test_agent_runtime_r1.py`
+  - 依赖：—；被引用：—
 - [self.assertEqual(receipt\["final_state"\], StopState.COMPLETED_VALIDATED.value)](../../../tests/test_agent_runtime_r0.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-f07744ceed882293 / self.assertEqual(receipt\["final_state"\], StopState.COMPLETED_VALIDATED.value)
   - 来源：`tests/test_agent_runtime_r0.py`
+  - 依赖：—；被引用：—
+- [self.assertEqual(state\["terminal"\]\["state"\], StopState.COMPLETED_VALIDATED.value)](../../../tests/test_agent_runtime_r1.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-9668b0d49a23b7aa / self.assertEqual(state\["terminal"\]\["state"\], StopState.COMPLETED_VALIDATED.value)
+  - 来源：`tests/test_agent_runtime_r1.py`
   - 依赖：—；被引用：—
 - [self.assertEqual(validate_artifact(Path(temp))\["state_sha256"\], receipt\["state_sha256"\])](../../../tests/test_agent_runtime_r0.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
@@ -1373,6 +1493,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-bf2c4830e3353a43 / self.assertTrue(ok\["success"\], f"VERIFIED decision with correct digest must be recorded: {ok}")
   - 来源：`tests/test_source_rights_gate_enum_consistency.py`
+  - 依赖：—；被引用：—
+- [self.state\["memories"\].append(f"validated {packet.action_id}: {summary}")](../../../agent_runtime/r1_runtime.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-6350db75ada8f2b1 / self.state\["memories"\].append(f"validated {packet.action_id}: {summary}")
+  - 来源：`agent_runtime/r1_runtime.py`
   - 依赖：—；被引用：—
 - [Set by the gate (not the caller): true only when the submitted content_digest_sha256 matched a VERIFIED registry entry's](../../../schemas/governance/publication-gate-decision.schema.json)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -2375,129 +2500,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-f69459e02ed2cbf5 / 教育学界和心理学界通过实验研究、理论分析、跨学科研究等方法研究学习迁移问题。主流观点认为学习迁移是由认知、情境、动机等多重因素共同促成。
   - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [教育学界和心理学界通过实验研究、理论分析、跨学科研究等方法研究学生动机形成问题。主流观点认为学生动机是由认知、情感、社会等多重因素共同塑造。](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-b57931d02595344e / 教育学界和心理学界通过实验研究、理论分析、跨学科研究等方法研究学生动机形成问题。主流观点认为学生动机是由认知、情感、社会等多重因素共同塑造。
-  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [新 Agent 先读 \[STATE-CHANGELOG.md\](../../../STATE-CHANGELOG.md) 的 baseline 与最近 delta，再回到本页、`ITERATION.md`、Foundation、claim/eviden](../../../docs/project-current-state.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-14866124cc1a2cae / 新 Agent 先读 \[STATE-CHANGELOG.md\](../../../STATE-CHANGELOG.md) 的 baseline 与最近 delta，再回到本页、`ITERATION.md`、Foundation、claim/eviden
-  - 来源：`docs/project-current-state.md`
-  - 依赖：—；被引用：—
-- [新 Agent 必须先读取 `docs/project-current-state.md` 与 `ITERATION.md`，再重新核验远端、分支、HEAD、开放 PR 和验证结果，不得把聊天记忆当权威。统计必须写出去重键、范围、单位和生成](../../../AI-HANDOFF.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-9a720a9cf5a0073e / 新 Agent 必须先读取 `docs/project-current-state.md` 与 `ITERATION.md`，再重新核验远端、分支、HEAD、开放 PR 和验证结果，不得把聊天记忆当权威。统计必须写出去重键、范围、单位和生成
-  - 来源：`AI-HANDOFF.md`
-  - 依赖：—；被引用：—
-- [新 Agent 进入正式仓库时，先读项目的 \[`STATE-CHANGELOG.md`\](../../../STATE-CHANGELOG.md) baseline 与最近若干条 delta，再按其中的 `next_read` 回到 `docs/pro](../../../docs/GET-BRAIN-WORKFLOW.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-5be529ef5a4a35ae / 新 Agent 进入正式仓库时，先读项目的 \[`STATE-CHANGELOG.md`\](../../../STATE-CHANGELOG.md) baseline 与最近若干条 delta，再按其中的 `next_read` 回到 `docs/pro
-  - 来源：`docs/GET-BRAIN-WORKFLOW.md`
-  - 依赖：—；被引用：—
-- [更新必要索引；](../../../docs/agent-trigger-phrases-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-ddcfe279a5dd0ad8 / 更新必要索引；
-  - 来源：`docs/agent-trigger-phrases-20260708.md`
-  - 依赖：—；被引用：—
-- [本收口只改变 121Q30 的生命周期表述：README、ARCHITECTURE、项目现状、导航、使用、AI/Agent/机器入口、版本记录和机器 registry 将成果展示描述为当前 L6 presentation/provenanc](../../../reports/operations/121Q30T-homepage-showcase-merge-current-closeout-audit.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-093756c25746815b / 本收口只改变 121Q30 的生命周期表述：README、ARCHITECTURE、项目现状、导航、使用、AI/Agent/机器入口、版本记录和机器 registry 将成果展示描述为当前 L6 presentation/provenanc
-  - 来源：`reports/operations/121Q30T-homepage-showcase-merge-current-closeout-audit.md`
-  - 依赖：—；被引用：—
-- [本次公开作品没有复制原笔记，也没有沿用其“自我神化—政治用途—祥瑞景观—民间道教—行动主义—富兰克林”的排列。原文中无法在本轮独立定位、且不是成稿所必需的细节，例如“千道会”赏钱、人工驯鹤、九鼎与祥瑞目录、符箓步骤、安慰剂比例及富兰克林类比](../../../docs/publication/cases/song-huizong-taoism-1117-source.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-649b9397abfdce53 / 本次公开作品没有复制原笔记，也没有沿用其“自我神化—政治用途—祥瑞景观—民间道教—行动主义—富兰克林”的排列。原文中无法在本轮独立定位、且不是成稿所必需的细节，例如“千道会”赏钱、人工驯鹤、九鼎与祥瑞目录、符箓步骤、安慰剂比例及富兰克林类比
-  - 来源：`docs/publication/cases/song-huizong-taoism-1117-source.md`
-  - 依赖：—；被引用：—
-- [某个具体叙事一定会改变某个人的理解：`pending`（需要个体认知实验）](../../../outputs/getbrain/classic-problems-benchmark-supplement-20260707.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-7f68177dd6e6332f / 某个具体叙事一定会改变某个人的理解：`pending`（需要个体认知实验）
-  - 来源：`outputs/getbrain/classic-problems-benchmark-supplement-20260707.md`
-  - 依赖：—；被引用：—
-- [查重不充分；](../../../docs/agent-trigger-phrases-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-56c46bf9983fe369 / 查重不充分；
-  - 来源：`docs/agent-trigger-phrases-20260708.md`
-  - 依赖：—；被引用：—
-- [点火与之元写作法的同源认知投影及 L6 双向反馈](../../../ARCHITECTURE.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-143c82aa34fd886b / 点火与之元写作法的同源认知投影及 L6 双向反馈
-  - 来源：`ARCHITECTURE.md`
-  - 依赖：—；被引用：—
-- [点火与之元写作法被维护者声明为同一认知运动在不同任务约束下形成的投影：点火把材料、残余、跨尺度联系、语义修订、行动后回照、历史保存和停止条件约束成可审计的来源、模型、验证和迭代；之元写作法让相近运动在公共语言中被读者经历，并把作品暴露的误解](../../../ARCHITECTURE.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-784542389018e63e / 点火与之元写作法被维护者声明为同一认知运动在不同任务约束下形成的投影：点火把材料、残余、跨尺度联系、语义修订、行动后回照、历史保存和停止条件约束成可审计的来源、模型、验证和迭代；之元写作法让相近运动在公共语言中被读者经历，并把作品暴露的误解
-  - 来源：`ARCHITECTURE.md`
-  - 依赖：—；被引用：—
-- [点火是一个仓库原生、版本化、证据可追溯、对象有类型、推断可检查、结论可降级的跨领域研究与行动基础设施原型。这个描述只绑定当前提交，不是永久项目身份。](../../../docs/project-current-state.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-f55a20f12a5d3af2 / 点火是一个仓库原生、版本化、证据可追溯、对象有类型、推断可检查、结论可降级的跨领域研究与行动基础设施原型。这个描述只绑定当前提交，不是永久项目身份。
-  - 来源：`docs/project-current-state.md`
-  - 依赖：—；被引用：—
-- [点火框架可分析叙事的结构作用，不能替代认知科学实证](../../../data/foundation/arguments/arguments.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-c9aa3f39b8b251a8 / 点火框架可分析叙事的结构作用，不能替代认知科学实证
-  - 来源：`data/foundation/arguments/arguments.jsonl`
-  - 依赖：—；被引用：—
-- [点火框架解决了集体行动问题](../../../data/pending_claims.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：NFC-394c40f570ca8604 / 点火框架解决了集体行动问题
-  - 来源：`data/pending_claims.csv`
-  - 依赖：—；被引用：—
-- [状态：`EXPERIMENTAL_RUNTIME_WITH_OPEN_OBLIGATIONS`。](../../../agent_runtime/README.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-318bbd866412e7ad / 状态：`EXPERIMENTAL_RUNTIME_WITH_OPEN_OBLIGATIONS`。
-  - 来源：`agent_runtime/README.md`
-  - 依赖：—；被引用：—
-- [电力级联失效×认知平方衰减×AI共震——跨域同构](../../../data/foundation/evidence/evidence.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-407db5d9b0b75dce / 电力级联失效×认知平方衰减×AI共震——跨域同构
-  - 来源：`data/foundation/evidence/evidence.jsonl`
-  - 依赖：—；被引用：—
-- [社会科学界和政治学界通过博弈论、实证研究、理论分析等方法研究集体行动问题。主流观点认为集体行动是由激励、协调、信任等多重因素共同促成。](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-27da9a71d97c37d0 / 社会科学界和政治学界通过博弈论、实证研究、理论分析等方法研究集体行动问题。主流观点认为集体行动是由激励、协调、信任等多重因素共同促成。
-  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [社会科学：3 个（社会信任如何形成、社会阶层为何固化、集体行动如何可能）](../../../outputs/getbrain/classic-problems-benchmark-supplement-20260707.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-4e40cffcd6dcafcd / 社会科学：3 个（社会信任如何形成、社会阶层为何固化、集体行动如何可能）
-  - 来源：`outputs/getbrain/classic-problems-benchmark-supplement-20260707.md`
-  - 依赖：—；被引用：—
-- [第二个 executor：`executor-beta`，通过 resume capsule 继续并达到 `COMPLETED_VALIDATED`。](../../../data/agent-runtime/pilots/non-knowledge-manifest-r0/HUMAN-REPORT.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-ecc64bf546d3081c / 第二个 executor：`executor-beta`，通过 resume capsule 继续并达到 `COMPLETED_VALIDATED`。
-  - 来源：`data/agent-runtime/pilots/non-knowledge-manifest-r0/HUMAN-REPORT.md`
-  - 依赖：—；被引用：—
-- [糖域实验×认知螺旋](../../../data/foundation/evidence/evidence.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-0a91660a64edb6e5 / 糖域实验×认知螺旋
-  - 来源：`data/foundation/evidence/evidence.jsonl`
-  - 依赖：—；被引用：—
-- [索引可见性验证（*-index-visibility-check）；](../../../outputs/audit/agent-project-understanding-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-f87b0d445fa121a0 / 索引可见性验证（*-index-visibility-check）；
-  - 来源：`outputs/audit/agent-project-understanding-20260708.md`
-  - 依赖：—；被引用：—
-- [历史案例来源**（`已迁移的历史案例来源/`）：790 条案例（`C-xxxx`，如 C-11 英国光荣革命、C-26 戈尔巴乔夫改革、C-50 华为员工持股）。](../../../outputs/audit/agent-project-understanding-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-62d5009364d21905 / 历史案例来源**（`已迁移的历史案例来源/`）：790 条案例（`C-xxxx`，如 C-11 英国光荣革命、C-26 戈尔巴乔夫改革、C-50 华为员工持股）。
-  - 来源：`outputs/audit/agent-project-understanding-20260708.md`
-  - 依赖：—；被引用：—
-- [补齐原 121Q6 未完成的 Step 019–024：35 项资产桥接审计、只读导入器、资产 E2E、Function OS 专属 CI（py3.10/3.11/3.12）、严格验证、最终报告/seal。](../../../agent-results/IGNITION-121Q6C-result.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-0804f51728f535c7 / 补齐原 121Q6 未完成的 Step 019–024：35 项资产桥接审计、只读导入器、资产 E2E、Function OS 专属 CI（py3.10/3.11/3.12）、严格验证、最终报告/seal。
-  - 来源：`agent-results/IGNITION-121Q6C-result.md`
-  - 依赖：—；被引用：—
-- [触发词 6：索引可见性验证](../../../docs/agent-trigger-phrases-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-e161128856f2f8c2 / 触发词 6：索引可见性验证
-  - 来源：`docs/agent-trigger-phrases-20260708.md`
-  - 依赖：—；被引用：—
-- [认知光锥验证 — 职业锁定-3维锁定(n_lock=3)的工程师v_max降低60%→5年可达状态减少75%→光锥严重收缩。解锁1维后v_m](../../../data/foundation/evidence/evidence.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-22c3c3b693c2f408 / 认知光锥验证 — 职业锁定-3维锁定(n_lock=3)的工程师v_max降低60%→5年可达状态减少75%→光锥严重收缩。解锁1维后v_m
-  - 来源：`data/foundation/evidence/evidence.jsonl`
   - 依赖：—；被引用：—

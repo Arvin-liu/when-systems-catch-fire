@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [C(x,y) := ∫(cause × effect × temporal_order × counterfactual) / causal_topology](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-87D06B93E89C5189 / C(x,y) := ∫(cause × effect × temporal_order × counterfactual) / causal_topology / IMPLICIT-87D06B93E89C5189 / IMPLICIT-26B3881C69A6D5EC
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [C(x,y) := ∫(cause × effect × temporal_order × counterfactual) / causal_topology](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-0efd59aa2d4e4e1e / C(x,y) := ∫(cause × effect × temporal_order × counterfactual) / causal_topology
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
 - [C(x,y) := ∫(cause × effect × temporal_order × counterfactual) / causal_topology — legacy candidate; not causal identific](../../../docs/phi_meta_law.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-8ab8b88498323b3e / C(x,y) := ∫(cause × effect × temporal_order × counterfactual) / causal_topology — legacy candidate; not causal identific
@@ -2324,6 +2334,11 @@
   - 可搜索名称：NFC-f5221d99ca4acd3e / It is not a FUNCTION or PARTIAL_FUNCTION because the displayed multiplicative score does not declare a set-theoretic dom
   - 来源：`reports/foundation-architecture/D598-final-adjudication-20260713.md`
   - 依赖：—；被引用：—
+- [It never enables shell parsing, network access, deletion, remote Git](../../../agent_runtime/actions.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-14a80b3f6ea8cedf / It never enables shell parsing, network access, deletion, remote Git
+  - 来源：`agent_runtime/actions.py`
+  - 依赖：—；被引用：—
 - [Iteration method 1.3.0 and system map 0.4.0, 0.5.0 are Historical; method 1.2.0 and maps 0.1.0, 0.2.0, 0.3.0 are earlier](../../ASSET-CARDS.md#asset-nfc-90acb3bc50218f58)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-90acb3bc50218f58 / Iteration method 1.3.0 and system map 0.4.0, 0.5.0 are Historical; method 1.2.0 and maps 0.1.0, 0.2.0, 0.3.0 are earlier / Iteration method 1.3.0 and system map 0.4.0, 0.5.0 are Historical; method 1.2.0 and maps 0.1.0, 0.2.0, 0.3.0 are earlier Historical, not Current. Treat implementation completion, repository synchronization, external synchronization and project completion as distinct states; local validation never proves undeclared live external truth.
@@ -2485,19 +2500,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-c25efe09ae835f78 / Light-cone reachability means possible reachability under declared assumptions. It does not prove an actual causal mecha
   - 来源：`docs/architecture/multiscale-causal-fabric.md`
-  - 依赖：—；被引用：—
-- [lines = \["# 影响分析", "", "影响沿任务 100 依赖图双向计算，只代表仓库依赖与复核范围，不代表现实因果。", "", "\|资产\|直接断言\|传递影响\|是否需人工建边\|", "\|---\|---:\|---:\|---\|"\]](../../../tools/governance/run_self_correction.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-7748b1401ab52184 / lines = \["# 影响分析", "", "影响沿任务 100 依赖图双向计算，只代表仓库依赖与复核范围，不代表现实因果。", "", "\|资产\|直接断言\|传递影响\|是否需人工建边\|", "\|---\|---:\|---:\|---\|"\]
-  - 来源：`tools/governance/run_self_correction.py`
-  - 依赖：—；被引用：—
-- [lines = \[f"# {subject\['label'\]}：检索索引", "", f"引导问题：{subject\['question'\]}", "", "此页按 canonical title 排列。状态与关系来自当前注册表；`被引用`](../../../tools/governance/build_knowledge_experience.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-75027d36e3583598 / lines = \[f"# {subject\['label'\]}：检索索引", "", f"引导问题：{subject\['question'\]}", "", "此页按 canonical title 排列。状态与关系来自当前注册表；`被引用`
-  - 来源：`tools/governance/build_knowledge_experience.py`
-  - 依赖：—；被引用：—
-- [lines.extend(\["", "This rendering is a projection, not canonical evidence, truth, value or causality."\])](../../../tools/adaptive_relational_network/renderer.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-392f0f68b185addc / lines.extend(\["", "This rendering is a projection, not canonical evidence, truth, value or causality."\])
-  - 来源：`tools/adaptive_relational_network/renderer.py`
   - 依赖：—；被引用：—

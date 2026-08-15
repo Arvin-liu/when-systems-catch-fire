@@ -163,7 +163,7 @@ def detect_tracked_symlink_escapes(repo_root: Path = ROOT, revision: str = "HEAD
         path = line[len("120000 "):].strip()
         try:
             target = subprocess.run(
-                ["git", "-C", str(repo_root), "show", f"{revision}:{path}"],
+                ["git", "-C", str(repo_root), "show", f"{revision}:./{path}"],
                 check=True, capture_output=True, text=True,
             ).stdout.strip()
         except subprocess.CalledProcessError as exc:
@@ -362,8 +362,40 @@ def map_delta(base: dict, current: dict) -> dict:
 
 
 def git_json(revision: str, path: str) -> dict:
-    completed = subprocess.run(["git", "show", f"{revision}:{path}"], cwd=ROOT, check=True, capture_output=True, text=True)
-    return json.loads(completed.stdout)
+    # ``ROOT`` may be the application directory inside a larger Git worktree
+    # (the production checkout is ``<worktree>/ignition``).  Git tree paths
+    # are relative to the actual worktree root, not the process cwd, so derive
+    # the tree path explicitly instead of relying on ``:./`` pathspec magic.
+    git_root = Path(subprocess.run(
+        ["git", "rev-parse", "--show-toplevel"],
+        cwd=ROOT,
+        check=True,
+        capture_output=True,
+        text=True,
+    ).stdout.strip())
+    tree_path = (ROOT / path).resolve().relative_to(git_root).as_posix()
+    # Historical commits may predate the repository-root normalization and
+    # store the same application path without the current ``ignition/``
+    # prefix.  Try the current tree spelling first, then the logical path.
+    candidates = [tree_path]
+    logical_path = Path(path).as_posix()
+    if logical_path not in candidates:
+        candidates.append(logical_path)
+    last_error: subprocess.CalledProcessError | None = None
+    for candidate in candidates:
+        completed = subprocess.run(
+            ["git", "show", f"{revision}:{candidate}"],
+            cwd=ROOT,
+            capture_output=True,
+            text=True,
+        )
+        if completed.returncode == 0:
+            return json.loads(completed.stdout)
+        last_error = subprocess.CalledProcessError(
+            completed.returncode, completed.args, completed.stdout, completed.stderr
+        )
+    assert last_error is not None
+    raise last_error
 
 
 def decisions_by_id(items: list[dict]) -> dict[str, dict]:

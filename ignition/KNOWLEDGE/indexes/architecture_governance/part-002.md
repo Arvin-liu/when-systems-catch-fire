@@ -2399,6 +2399,11 @@
   - 可搜索名称：NFC-3d6204bcfeed4fcc / `docs/v0.2_summary.md` 有机器可读数据入口；
   - 来源：`docs/machine_readable_data_plan.md`
   - 依赖：—；被引用：—
+- [`domain_pack_contract --documents / repository_dependency--> writing_pack` — bounded publication interface only; no inde](../../../reports/operations/IGNITION-20260815-120-change-propagation-impact.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-f8e0f504d7a59e65 / `domain_pack_contract --documents / repository_dependency--> writing_pack` — bounded publication interface only; no inde
+  - 来源：`reports/operations/IGNITION-20260815-120-change-propagation-impact.md`
+  - 依赖：—；被引用：—
 - [`domain`：跨 pending_claims / evidence_regimes 的学科桥接键](../../../docs/p1-data-index-map-20260708.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-13a86ba1b1ba6862 / `domain`：跨 pending_claims / evidence_regimes 的学科桥接键
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-a50c57f69fda8e2c / `inputs/collisions/20260708-cross-domain-smoke-test/social.md`（社会学·邻里积分制）
   - 来源：`outputs/audit/cross-domain-smoke-test-audit-20260708.md`
-  - 依赖：—；被引用：—
-- [`inputs/collisions/20260708-cross-domain-smoke-test/social.md`（邻里积分制）](../../../outputs/collisions/20260708-cross-domain-smoke-test/social/collision-report.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-5d011d6c0916b82a / `inputs/collisions/20260708-cross-domain-smoke-test/social.md`（邻里积分制）
-  - 来源：`outputs/collisions/20260708-cross-domain-smoke-test/social/collision-report.md`
   - 依赖：—；被引用：—

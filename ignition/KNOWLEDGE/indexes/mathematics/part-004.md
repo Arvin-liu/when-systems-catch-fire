@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [`BC-20260709-003` 《枪炮、病菌与钢铁》: SOURCE_NOT_FOUND; missing=direct source artifact unresolved](../../../reports/math-foundation/provenance-audit-20260712.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-0b4b49cc5870066e / `BC-20260709-003` 《枪炮、病菌与钢铁》: SOURCE_NOT_FOUND; missing=direct source artifact unresolved
+  - 来源：`reports/math-foundation/provenance-audit-20260712.md`
+  - 依赖：—；被引用：—
 - [`BC-20260709-004` 《国家为什么会失败》: SOURCE_NOT_FOUND; missing=direct source artifact unresolved](../../../reports/math-foundation/provenance-audit-20260712.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-aaa4a31fcb799752 / `BC-20260709-004` 《国家为什么会失败》: SOURCE_NOT_FOUND; missing=direct source artifact unresolved
@@ -2496,8 +2501,3 @@
   - 可搜索名称：NFC-35e27227c09bd06d / D233-Shannon-Fisher跷跷板定理.md
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：D233；被引用：—
-- [D234-有效信息倒U型定理.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-e28ac446a5d2733b / D234-有效信息倒U型定理.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D234；被引用：—

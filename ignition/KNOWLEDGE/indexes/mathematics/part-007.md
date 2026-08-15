@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [If upstream objects D_{D76} exist, compose F_{D76}=N(⊕_{g∈D_{D76}} g); otherwise treat F_{D76} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-a08fb983dd7a01ed / If upstream objects D_{D76} exist, compose F_{D76}=N(⊕_{g∈D_{D76}} g); otherwise treat F_{D76} as an axiom seed.
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D76；被引用：—
+- [If upstream objects D_{D77} exist, compose F_{D77}=N(⊕_{g∈D_{D77}} g); otherwise treat F_{D77} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-c557b9658bc918d4 / If upstream objects D_{D77} exist, compose F_{D77}=N(⊕_{g∈D_{D77}} g); otherwise treat F_{D77} as an axiom seed.
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D77；被引用：—
 - [If upstream objects D_{D7} exist, compose F_{D7}=N(⊕_{g∈D_{D7}} g); otherwise treat F_{D7} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-4a75bbc5af1a479b / If upstream objects D_{D7} exist, compose F_{D7}=N(⊕_{g∈D_{D7}} g); otherwise treat F_{D7} as an axiom seed.
@@ -2490,14 +2500,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-c2697f66cb1123bf / Observer：准备下一轮史料核验的研究者。Decision question：哪项外部材料最可能改变机制排序？地图版本 `JIN-ATLAS-v0.1`；地图位置和中心性不构成证明。
   - 来源：`reports/publication/jin-rise-point-fire-analysis.md`
-  - 依赖：—；被引用：—
-- [one official causal-inference methodological record.](../../../reports/external-research/pointfire-seven-track-replay-r1/REPLAY-REPORT.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-0ae47acb1dca9f43 / one official causal-inference methodological record.
-  - 来源：`reports/external-research/pointfire-seven-track-replay-r1/REPLAY-REPORT.md`
-  - 依赖：—；被引用：—
-- [Only tasks whose lifecycle resolver reports TERMINAL_SUCCESS are folded in,](../../../tools/propagation/current_truth_projection.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-cc948fb6f274dcc0 / Only tasks whose lifecycle resolver reports TERMINAL_SUCCESS are folded in,
-  - 来源：`tools/propagation/current_truth_projection.py`
   - 依赖：—；被引用：—

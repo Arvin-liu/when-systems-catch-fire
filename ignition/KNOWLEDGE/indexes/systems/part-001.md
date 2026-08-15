@@ -1866,6 +1866,11 @@
   - 可搜索名称：NFC-28b3a443fc3da44c / `incremental_execution --projects / repository_dependency--> system_map_projection` — declared repository materializatio
   - 来源：`reports/operations/121Q32I-change-propagation-impact.md`
   - 依赖：—；被引用：—
+- [`incremental_execution --publishes / repository_dependency--> human_knowledge_surfaces` — declared repository materializ](../../../reports/operations/IGNITION-20260815-120-change-propagation-impact.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-afd2ec73a9f8541f / `incremental_execution --publishes / repository_dependency--> human_knowledge_surfaces` — declared repository materializ
+  - 来源：`reports/operations/IGNITION-20260815-120-change-propagation-impact.md`
+  - 依赖：—；被引用：—
 - [`incremental_execution --publishes / repository_dependency--> pages_pipeline` — declared repository materialization rela](../../../reports/operations/121Q32I-change-propagation-impact.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-d7a42c4d5f6d88ed / `incremental_execution --publishes / repository_dependency--> pages_pipeline` — declared repository materialization rela
@@ -2005,6 +2010,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-02f8fc65c04cfa53 / `system_map_projection --deployment_depends_on / repository_dependency--> pages_pipeline` — deployment dependency only
   - 来源：`reports/operations/121Q32-change-propagation-impact.md`
+  - 依赖：—；被引用：—
+- [`system_map_projection --publishes / repository_dependency--> human_knowledge_surfaces` — repository navigation projecti](../../../reports/operations/IGNITION-20260815-120-change-propagation-impact.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-8b54aaed122b1bf4 / `system_map_projection --publishes / repository_dependency--> human_knowledge_surfaces` — repository navigation projecti
+  - 来源：`reports/operations/IGNITION-20260815-120-change-propagation-impact.md`
   - 依赖：—；被引用：—
 - [`TemporalActivation.target_ref` is limited to `node_id` and `relation_id`. Layers, states, perturbations, embedding evid](../../../docs/architecture/adaptive-relational-network.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -2490,14 +2500,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-26C24FF1A37D2867 / C(x,y) := ∫(cause × effect × temporal_order × counterfactual) / causal_topology / IMPLICIT-26C24FF1A37D2867 / IMPLICIT-26B3881C69A6D5EC
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [C(x,y) := ∫(cause × effect × temporal_order × counterfactual) / causal_topology](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-87D06B93E89C5189 / C(x,y) := ∫(cause × effect × temporal_order × counterfactual) / causal_topology / IMPLICIT-87D06B93E89C5189 / IMPLICIT-26B3881C69A6D5EC
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [C(x,y) := ∫(cause × effect × temporal_order × counterfactual) / causal_topology](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-0efd59aa2d4e4e1e / C(x,y) := ∫(cause × effect × temporal_order × counterfactual) / causal_topology
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—

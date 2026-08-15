@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ignition/agent-runtime/approval-request-r1.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["request_id", "run_id", "action_id", "action_digest", "impact_summary", "risk_class", "requested_capabilities", "requested_reads", "requested_writes", "expires_at", "lease_id", "status", "created_at"],
+  "properties": {
+    "request_id": {"type": "string", "minLength": 1},
+    "run_id": {"type": "string", "minLength": 1},
+    "action_id": {"type": "string", "minLength": 1},
+    "action_digest": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "impact_summary": {"type": "string", "minLength": 1},
+    "risk_class": {"type": "string", "minLength": 1},
+    "requested_capabilities": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string"}},
+    "requested_reads": {"type": "array", "items": {"type": "string"}},
+    "requested_writes": {"type": "array", "items": {"type": "string"}},
+    "expires_at": {"type": "number"},
+    "lease_id": {"type": ["string", "null"]},
+    "status": {"enum": ["PENDING", "ALLOWED", "DENIED", "EXPIRED"]},
+    "created_at": {"type": "string"}
+  }
+}

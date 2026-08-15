@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ignition/agent-runtime/r1-run-state.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["runtime_version", "run_id", "profile_ref", "goal", "phase", "frame_summary", "packets", "plan_digest", "next_action_index", "action_count", "terminal", "pending_approval", "approval_events", "executions", "validations", "rollback_events", "memories", "trace", "executor_history", "fault_injection", "fault_injection_consumed", "created_at", "state_sha256"],
+  "properties": {
+    "runtime_version": {"const": "agent-runtime-r1"},
+    "run_id": {"type": "string"},
+    "profile_ref": {"type": "string"},
+    "goal": {"type": "object"},
+    "phase": {"enum": ["OBSERVE", "FRAME", "PLAN", "AUTHORIZE", "ACT", "VALIDATE", "REMEMBER", "CONTINUE", "STOP"]},
+    "frame_summary": {"type": ["string", "null"]},
+    "packets": {"type": "array", "items": {"$ref": "action-packet-r1.schema.json"}},
+    "plan_digest": {"type": ["string", "null"]},
+    "next_action_index": {"type": "integer", "minimum": 0},
+    "action_count": {"type": "integer", "minimum": 0},
+    "terminal": {"type": ["object", "null"]},
+    "pending_approval": {"type": ["object", "null"]},
+    "approval_events": {"type": "array"},
+    "executions": {"type": "array"},
+    "validations": {"type": "array"},
+    "rollback_events": {"type": "array"},
+    "memories": {"type": "array"},
+    "trace": {"type": "array"},
+    "executor_history": {"type": "array", "items": {"type": "string"}},
+    "fault_injection": {"type": "object"},
+    "fault_injection_consumed": {"type": "object"},
+    "created_at": {"type": "string"},
+    "state_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  }
+}

@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [one official causal-inference methodological record.](../../../reports/external-research/pointfire-seven-track-replay-r1/REPLAY-REPORT.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-0ae47acb1dca9f43 / one official causal-inference methodological record.
+  - 来源：`reports/external-research/pointfire-seven-track-replay-r1/REPLAY-REPORT.md`
+  - 依赖：—；被引用：—
+- [Only tasks whose lifecycle resolver reports TERMINAL_SUCCESS are folded in,](../../../tools/propagation/current_truth_projection.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-cc948fb6f274dcc0 / Only tasks whose lifecycle resolver reports TERMINAL_SUCCESS are folded in,
+  - 来源：`tools/propagation/current_truth_projection.py`
+  - 依赖：—；被引用：—
 - [ONTOLOGY = re.compile(r"(?:ontology\|metaphys\|essence\|conscious\|life\|本体\|形而上\|本质\|意识\|生命)", re.IGNORECASE)](../../../tools/foundation/adjudicate_nonfunction_claims.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
   - 可搜索名称：NFC-55a295cbb6af6ba9 / ONTOLOGY = re.compile(r"(?:ontology\|metaphys\|essence\|conscious\|life\|本体\|形而上\|本质\|意识\|生命)", re.IGNORECASE)
@@ -1231,10 +1241,20 @@
   - 可搜索名称：A3 / R(t,L,C) 应约者退出权 / A3
   - 来源：`FOUNDATION-64-PROPAGATION.jsonl`
   - 依赖：A1, A8；被引用：A1, A2, A4, A5
+- [R1 仍是实验性安全执行框架，不是常驻服务、自治人格、multi-agent scheduler、长期向量 memory 或现实世界效果证明；正式仓库状态继续保持 `CURRENT_WITH_OPEN_OBLIGATIONS`，且 `EPI](../../../agent_runtime/README.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-ab20b388cf1e581f / R1 仍是实验性安全执行框架，不是常驻服务、自治人格、multi-agent scheduler、长期向量 memory 或现实世界效果证明；正式仓库状态继续保持 `CURRENT_WITH_OPEN_OBLIGATIONS`，且 `EPI
+  - 来源：`agent_runtime/README.md`
+  - 依赖：—；被引用：—
 - [R1 已通过独立 exact-head acceptance（PR #137 head `669c9f8c`；merge commit `0e7c032`）并由所有者提升为 Current（non-Activated）。作为 Current](../../../docs/governance/charter-system-r1.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-fbb7d3d5bd0725ea / R1 已通过独立 exact-head acceptance（PR #137 head `669c9f8c`；merge commit `0e7c032`）并由所有者提升为 Current（non-Activated）。作为 Current
   - 来源：`docs/governance/charter-system-r1.md`
+  - 依赖：—；被引用：—
+- [R1 的 terminal state 新增 `FAILED_VALIDATION_ROLLED_BACK`、`ROLLBACK_FAILED` 和 `REQUIRES_RECONCILIATION`。后一个状态表示 durable jou](../../../agent_runtime/README.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-ca3960aaa89d5280 / R1 的 terminal state 新增 `FAILED_VALIDATION_ROLLED_BACK`、`ROLLBACK_FAILED` 和 `REQUIRES_RECONCILIATION`。后一个状态表示 durable jou
+  - 来源：`agent_runtime/README.md`
   - 依赖：—；被引用：—
 - [r_cross优先性定理](../../../analysis/corpus-relation/cluster_source_briefs/C000.md)
   - 类型/状态：`FUNCTION_ASSET` · `DOWNGRADE_TO_CONJECTURE`
@@ -2116,6 +2136,11 @@
   - 可搜索名称：NFC-3ba198259241e813 / Stability(Φ)=∃μ*:Φ(μ*)=min。D224是T23的证明——T23说"极小点存在"，D224给出了存在性的充分条件（A+B型共存）。T23是更弱的陈述，D224是更强的定理。 **扩展注释 / Extended Anno
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：D224, T23；被引用：—
+- [stale_knowledge: R0 的 abstract Reasoner/Executor/Validator 只是历史边界，不应被写成已接入真实 provider；R1 的本地 pilot 也不应被改写成通用自治或生产 daemon](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-c4abb97fdf164030 / stale_knowledge: R0 的 abstract Reasoner/Executor/Validator 只是历史边界，不应被写成已接入真实 provider；R1 的本地 pilot 也不应被改写成通用自治或生产 daemon
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [STATE-CHANGELOG.md : AI-first baseline and append-only project-state deltas; one validated delta per formal main merge](../../../llms.txt)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-50ecd813c2638948 / STATE-CHANGELOG.md : AI-first baseline and append-only project-state deltas; one validated delta per formal main merge
@@ -2476,28 +2501,3 @@
   - 可搜索名称：T51 / T51｜植物信号传递函数 / T51
   - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
   - 依赖：—；被引用：CLAIM-T51, NFC-ac8633361e32cae3, NFC-b07b8eb05e198997, NFC-e24821839129571a
-- [T52｜植物菌根网络函数](../../../data/foundation/adjudications/079-method-audit.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：T52 / T52｜植物菌根网络函数 / T52
-  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
-  - 依赖：—；被引用：D554, D555, CLAIM-T52, NFC-402b9d83ad52d039
-- [T53｜植物表观遗传函数](../../../data/foundation/adjudications/079-method-audit.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：T53 / T53｜植物表观遗传函数 / T53
-  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
-  - 依赖：—；被引用：D557, CLAIM-T53, NFC-c36cedf62a553c37, NFC-e2f2acbb95d9d487
-- [T54｜植物生态系统函数](../../../data/foundation/adjudications/079-method-audit.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：T54 / T54｜植物生态系统函数 / T54
-  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
-  - 依赖：—；被引用：D545, CLAIM-T54, NFC-775a3c29a371e26e, NFC-8b149952377c2fa6
-- [T55-植物意识函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-eb74fe1c7bfe83b2 / T55-植物意识函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：T55；被引用：—
-- [T55｜植物意识函数](../../../data/foundation/formal-objects/objects.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-42f65dffe3cd86ca / T55｜植物意识函数
-  - 来源：`data/foundation/formal-objects/objects.jsonl`
-  - 依赖：T55；被引用：—

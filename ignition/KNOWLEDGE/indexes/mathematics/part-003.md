@@ -2484,6 +2484,11 @@
   - 可搜索名称：NFC-7e93adfa49ec8740 / `ACCEPTED_AS_ESTABLISHED_EXTERNAL_FACT` or `ACCEPTED_AS_PROVED_MATHEMATICAL_RESULT`.
   - 来源：`docs/foundation/task-107-incident-report.md`
   - 依赖：—；被引用：—
+- [`agent_runtime_r0 --lifecycle_depends_on / repository_dependency--> domain_pack_contract` — loadable interface only; Pac](../../../reports/operations/IGNITION-20260815-120-change-propagation-impact.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-95e477750ed4dbe0 / `agent_runtime_r0 --lifecycle_depends_on / repository_dependency--> domain_pack_contract` — loadable interface only; Pac
+  - 来源：`reports/operations/IGNITION-20260815-120-change-propagation-impact.md`
+  - 依赖：—；被引用：—
 - [`ASSET-CARDS.md`：结果/文章、重点函数和重点断言的统一卡片；](../../../docs/governance/knowledge-experience-layer.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-e443a754e96dcc79 / `ASSET-CARDS.md`：结果/文章、重点函数和重点断言的统一卡片；
@@ -2497,10 +2502,5 @@
 - [`BC-20260709-002` 《第五项修炼》: SOURCE_NOT_FOUND; missing=direct source artifact unresolved](../../../reports/math-foundation/provenance-audit-20260712.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-e776d03954e72fab / `BC-20260709-002` 《第五项修炼》: SOURCE_NOT_FOUND; missing=direct source artifact unresolved
-  - 来源：`reports/math-foundation/provenance-audit-20260712.md`
-  - 依赖：—；被引用：—
-- [`BC-20260709-003` 《枪炮、病菌与钢铁》: SOURCE_NOT_FOUND; missing=direct source artifact unresolved](../../../reports/math-foundation/provenance-audit-20260712.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-0b4b49cc5870066e / `BC-20260709-003` 《枪炮、病菌与钢铁》: SOURCE_NOT_FOUND; missing=direct source artifact unresolved
   - 来源：`reports/math-foundation/provenance-audit-20260712.md`
   - 依赖：—；被引用：—

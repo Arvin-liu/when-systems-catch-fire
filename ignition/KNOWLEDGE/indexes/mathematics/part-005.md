@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [D234-有效信息倒U型定理.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-e28ac446a5d2733b / D234-有效信息倒U型定理.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D234；被引用：—
 - [D235-信息论完备性定理.md](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-6bea96c68d79a602 / D235-信息论完备性定理.md
@@ -1406,6 +1411,11 @@
   - 可搜索名称：NFC-cfff7e47788302fd / English: Ψ = ι × P_exit. Autonomous consciousness = intelligence × exit-right. ι=0→Ψ=0, P_exit=0→Ψ=0.
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
+- [epistemic_state: `COMPLETED_VALIDATED` 只表示一条本地 bounded run 的 typed validation 通过；`FAILED_VALIDATION_ROLLED_BACK` 只表示失败后](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-6d6f3bf9b2028e05 / epistemic_state: `COMPLETED_VALIDATED` 只表示一条本地 bounded run 的 typed validation 通过；`FAILED_VALIDATION_ROLLED_BACK` 只表示失败后
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [epistemic_state: 不提升任何 claim 的 `M/E`、proof、evidence、scope、provenance、claim ceiling、Owner acceptance 或外部真值；非知识 pilot 的 `C](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-678e631cc2f6b9e8 / epistemic_state: 不提升任何 claim 的 `M/E`、proof、evidence、scope、provenance、claim ceiling、Owner acceptance 或外部真值；非知识 pilot 的 `C
@@ -2491,13 +2501,3 @@
   - 可搜索名称：NFC-e6d0a569c36d5581 / ICFP Refinement Types for Haskell full technical-report review: the lazy-evaluation counterexample, Div/Wnf/Fin strata,
   - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl`
   - 依赖：—；被引用：—
-- [identifiers that older lifecycle records already cite.](../../../tools/propagation/generate_editorial_manifest.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-dac435c65f676a3b / identifiers that older lifecycle records already cite.
-  - 来源：`tools/propagation/generate_editorial_manifest.py`
-  - 依赖：—；被引用：—
-- [Identity lock: formal main identifies the multiplication-zero asset as T2, while D127 is the cognitive-path-integral ana](../../../reports/foundation-architecture/098-remote-truth-and-gap.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-d196cf8167ba2621 / Identity lock: formal main identifies the multiplication-zero asset as T2, while D127 is the cognitive-path-integral ana
-  - 来源：`reports/foundation-architecture/098-remote-truth-and-gap.md`
-  - 依赖：D127, D260, T2；被引用：—
