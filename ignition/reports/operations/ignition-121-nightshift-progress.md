@@ -80,6 +80,29 @@ Policy and provenance-preserving migration. No failure repair round was needed.
 - One targeted repair round fixed prompt-marker rejection and a test fixture
   tag override; no data was persisted outside temporary fixtures.
 
+## Step 04 — COMPLETE
+
+- Added persisted `Supervisor R0`, `EpisodeSpec`, `ChildRunSpec` and
+  `EpisodeBudget` around independent R1 child run directories. The Supervisor
+  validates DAG acyclicity, child-to-episode capability ceilings and offline
+  network boundaries before any child starts.
+- Added sequential scheduling with global action/time/output budgets,
+  `FAIL_FAST` and `CONTINUE_INDEPENDENT` policies, bounded retries capped at
+  three, approval aggregation, explicit executor-instance handoff, durable
+  checkpoint/resume and typed episode roll-ups. It never emits generic
+  `SUCCESS` and cannot replace a child executor adapter or widen permissions.
+- Added CLI `episode start/status/resume/trace/pending-approval`, typed
+  `episode approve` and `episode handoff`, plus the Supervisor validator and
+  six targeted tests. Recovery preserves R1 journal/idempotency evidence and
+  only promotes a child after the R1 terminal state is explicit.
+- Gates: Supervisor tests `6/6 PASS`; Supervisor validator, Pack Registry
+  regression `6/6`, operational-memory regression `6/6`, R0/R1 runtime
+  regression `16/16`, runtime boundary, Agentization boundary and diff check
+  `PASS`.
+- Three deterministic repair rounds corrected roll-up precedence, explicit
+  checkpoint stop/resume behavior and recovery scheduling; no external or
+  network action was introduced.
+
 ## Step ledger
 
 | Step | State | Commit | Remote SHA | Gate summary |
@@ -87,8 +110,8 @@ Policy and provenance-preserving migration. No failure repair round was needed.
 | 00 | COMPLETE | `8cc9291c0af9d3df686628bfd7dbae365523e327` | `8cc9291c0af9d3df686628bfd7dbae365523e327` | 16 runtime tests and boundary gates PASS |
 | 01 | COMPLETE | `94a74caf0bcda84cccb60f820f9f1abbbf068615` | `94a74caf0bcda84cccb60f820f9f1abbbf068615` | Admission policy, provenance migration, projection rebuild, and closure gates PASS |
 | 02 | COMPLETE | `b8f1b76c11a80e9e6b6bb320789f92ca6b4317e1` | `b8f1b76c11a80e9e6b6bb320789f92ca6b4317e1` | Pack Registry/Bus, four Pack manifests, CLI and runtime regression gates PASS |
-| 03 | COMPLETE | pending until checkpoint commit | pending | Cross-run operational memory, bounded capsule, redacting forget and regression gates PASS |
-| 04 | PENDING | — | — | — |
+| 03 | COMPLETE | `7e8ac52122e815751870ed9b7d3354f7787d787e` | `7e8ac52122e815751870ed9b7d3354f7787d787e` | Cross-run operational memory, bounded capsule, redacting forget and regression gates PASS |
+| 04 | COMPLETE | pending until checkpoint commit | pending | Supervisor R0 DAG, budgets, approvals, bounded retry/handoff, recovery and regression gates PASS |
 | 05 | PENDING | — | — | — |
 | 06 | PENDING | — | — | — |
 | 07 | PENDING | — | — | — |

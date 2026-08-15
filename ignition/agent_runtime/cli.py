@@ -12,6 +12,7 @@ from .control import ControlConflict
 from .memory import MEMORY_TYPES, MemoryEntry, MemoryStoreError, OperationalMemoryStore
 from .pack_registry import PackRegistry, PackRegistryError
 from .r1_runtime import AgentRuntimeR1, R1RunSpec, RuntimeR1Error
+from .supervisor import EpisodeSpec, Supervisor, SupervisorError
 
 
 def _emit(value: object, json_mode: bool) -> None:
@@ -123,6 +124,32 @@ def _parser() -> argparse.ArgumentParser:
     audit_memory = memory_sub.add_parser("audit")
     audit_memory.add_argument("--store", required=True, type=Path)
     audit_memory.add_argument("--json", action="store_true", dest="json_mode")
+
+    episode = sub.add_parser("episode")
+    episode_sub = episode.add_subparsers(dest="episode_command", required=True)
+    start_episode = episode_sub.add_parser("start")
+    start_episode.add_argument("--spec", required=True, type=Path)
+    start_episode.add_argument("--run-dir", required=True, type=Path)
+    start_episode.add_argument("--json", action="store_true", dest="json_mode")
+    for name in ("status", "resume", "trace", "pending-approval"):
+        command = episode_sub.add_parser(name)
+        command.add_argument("--run-dir", required=True, type=Path)
+        command.add_argument("--json", action="store_true", dest="json_mode")
+    approve_episode = episode_sub.add_parser("approve")
+    approve_episode.add_argument("--run-dir", required=True, type=Path)
+    approve_episode.add_argument("--run-id", required=True)
+    approve_episode.add_argument("--request-id", required=True)
+    approve_episode.add_argument("--decision", required=True, choices=("allow", "deny"))
+    approve_episode.add_argument("--authority", required=True)
+    approve_episode.add_argument("--authority-type", default="human", choices=("human", "operator", "synthetic_pilot", "cli"))
+    approve_episode.add_argument("--reason", default="explicit typed episode approval decision")
+    approve_episode.add_argument("--json", action="store_true", dest="json_mode")
+    handoff_episode = episode_sub.add_parser("handoff")
+    handoff_episode.add_argument("--run-dir", required=True, type=Path)
+    handoff_episode.add_argument("--run-id", required=True)
+    handoff_episode.add_argument("--executor-instance-id", required=True)
+    handoff_episode.add_argument("--executor-class-id")
+    handoff_episode.add_argument("--json", action="store_true", dest="json_mode")
     return parser
 
 
@@ -198,6 +225,35 @@ def main(argv: list[str] | None = None) -> int:
                 value = store.audit()
             _emit(value, args.json_mode)
             return 0
+        if args.command == "episode":
+            supervisor = Supervisor(args.run_dir)
+            if args.episode_command == "start":
+                value = supervisor.start(EpisodeSpec.from_dict(json.loads(args.spec.read_text(encoding="utf-8"))))
+            elif args.episode_command == "status":
+                value = supervisor.status()
+            elif args.episode_command == "resume":
+                value = supervisor.resume()
+            elif args.episode_command == "trace":
+                value = supervisor.trace()
+            elif args.episode_command == "pending-approval":
+                value = supervisor.pending_approvals()
+            elif args.episode_command == "approve":
+                value = supervisor.approve(
+                    args.run_id,
+                    args.request_id,
+                    args.decision,
+                    authority_id=args.authority,
+                    authority_type=args.authority_type,
+                    reason_summary=args.reason,
+                )
+            else:
+                value = supervisor.handoff(
+                    args.run_id,
+                    args.executor_instance_id,
+                    executor_class_id=args.executor_class_id,
+                )
+            _emit(value, args.json_mode)
+            return 0
         if args.command == "run":
             spec = R1RunSpec.from_dict(json.loads(args.spec.read_text(encoding="utf-8")))
             value = AgentRuntimeR1(args.run_dir).start(spec)
@@ -224,7 +280,7 @@ def main(argv: list[str] | None = None) -> int:
             pass
         _emit(value, args.json_mode)
         return 75
-    except (RuntimeR1Error, ControlConflict, PackRegistryError, MemoryStoreError, ValueError, OSError, json.JSONDecodeError) as exc:
+    except (RuntimeR1Error, SupervisorError, ControlConflict, PackRegistryError, MemoryStoreError, ValueError, OSError, json.JSONDecodeError) as exc:
         value = {"status": "ERROR", "error_type": type(exc).__name__, "summary": str(exc)}
         _emit(value, args.json_mode)
         return 2

@@ -36,6 +36,7 @@ from .r1_runtime import AgentRuntimeR1, R1RunSpec, RuntimeR1Error
 from .transport import JsonlReasonerTransport, ReasonerRequest, ReasonerResponse, ScriptedReasoner
 from .pack_registry import CapabilityRoute, LoadedPack, PackBus, PackLoader, PackManifest, PackRegistry, PackRegistryError
 from .memory import MemoryEntry, MemoryStoreError, OperationalMemoryStore
+from .supervisor import ChildRunSpec, EpisodeBudget, EpisodeSpec, Supervisor, SupervisorError
 
 __all__ = [
     "ActionObservation",
@@ -84,4 +85,9 @@ __all__ = [
     "MemoryEntry",
     "MemoryStoreError",
     "OperationalMemoryStore",
+    "ChildRunSpec",
+    "EpisodeBudget",
+    "EpisodeSpec",
+    "Supervisor",
+    "SupervisorError",
 ]

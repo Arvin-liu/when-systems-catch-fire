@@ -44,6 +44,22 @@ reasoning material; repeated memory is not evidence and memory cannot mutate
 Charter or permissions. It is operational recall only, not a Knowledge truth
 registry.
 
+## Supervisor R0
+
+`agent_runtime.supervisor.Supervisor` persists an offline, sequential episode
+DAG around independent R1 child run directories. It validates dependencies and
+the episode-wide capability ceiling, enforces action/time/output budgets,
+aggregates approval requests, supports bounded retries and executor-instance
+handoff, and records explicit episode roll-ups such as
+`EPISODE_COMPLETED_VALIDATED`, `EPISODE_WAITING_FOR_APPROVAL`,
+`EPISODE_CHECKPOINTED_RESUMABLE` and `EPISODE_FAILED_FAST`.
+
+The Supervisor can resume a persisted episode after process restart. It never
+widens a child `capability_scope`, changes the declared executor adapter,
+grants Owner or truth authority, or uses a generic `SUCCESS` terminal state.
+The CLI exposes `episode start/status/resume/trace/pending-approval`, plus
+typed `episode approve` and `episode handoff` commands.
+
 R1 的 terminal state 新增 `FAILED_VALIDATION_ROLLED_BACK`、`ROLLBACK_FAILED` 和 `REQUIRES_RECONCILIATION`。后一个状态表示 durable journal 无法证明“未执行”或“已达到预期 postimage”；运行时不会猜测或自动升级为完成。
 
 真实离线 pilot 位于 `agent_runtime/pilots/r1_real_local.py`：Pilot A 验证批准后真实写入和 allowlisted command validator；Pilot B 验证跨 executor 重启、post-execute crash 的 postimage reconcile、lease/idempotency 记录和失败后的文件回滚。
