@@ -2174,7 +2174,7 @@
 
 - **类型：** `AUDIT_OR_ADJUDICATION`
 - **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **变化：** 本目录是 22 本书籍验证案例的候选暂存，不直接进入统一案例总表。
+- **变化：** 本目录是 22 本书籍验证案例的候选暂存，不直接进入历史案例来源。
 - **来源：** [README.md](../outputs/book-collisions/20260709-22-book-validation/README.md)
 - **资产卡：** [HR-9A0447FE84ECBC5F](./ASSET-CARDS.md#asset-hr-9a0447fe84ecbc5f)
 
@@ -2246,7 +2246,7 @@
 
 - **类型：** `AUDIT_OR_ADJUDICATION`
 - **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **变化：** 复核对象：NF-X1 指标排名隐性分层、NF-X2 刷分博弈、NF-X3 指标驱动噪声累积 来源：outputs/collisions/20260708-cross-domain-smoke-test/、outputs/audit/cross-domain-smoke-test-audit-20260708.md 基线函数：D597 量化指标替代真实价值（统一函数总表/0607-D597-量化指标替代真实价值.md） 判定框架：Ψ₀ 六维（C / M / Iiso / Lmeta / Gδ / Pmeta）
+- **变化：** 复核对象：NF-X1 指标排名隐性分层、NF-X2 刷分博弈、NF-X3 指标驱动噪声累积 来源：outputs/collisions/20260708-cross-domain-smoke-test/、outputs/audit/cross-domain-smoke-test-audit-20260708.md 基线函数：D597 量化指标替代真实价值（已迁移的历史函数来源/0607-D597-量化指标替代真实价值.md） 判定框架：Ψ₀ 六维（C / M / Iiso / Lmeta / Gδ / Pmeta）
 - **来源：** [cross-domain-candidate-function-review-20260708.md](../outputs/audit/cross-domain-candidate-function-review-20260708.md)
 - **资产卡：** [HR-B03FAB6963DCB9E5](./ASSET-CARDS.md#asset-hr-b03fab6963dcb9e5)
 
@@ -2291,7 +2291,7 @@
 
 - **类型：** `AUDIT_OR_ADJUDICATION`
 - **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **变化：** 生成时间：2026-07-08 21:25 (GMT+8) 任务来源：用户发来的「点火项目整体认知初始化」指令（.md 附件） 执行方式：只读阅读 GitHub 主仓库（README / docs / outputs/audit / 统一函数总表 / 统一案例总表 / data / schemas / tools），未修改任何核心资产。 主仓库路径：PRIVATE_PROVENANCE_WITHHELD
+- **变化：** 生成时间：2026-07-08 21:25 (GMT+8) 任务来源：用户发来的「点火项目整体认知初始化」指令（.md 附件） 执行方式：只读阅读 GitHub 主仓库（README / docs / outputs/audit / 历史函数来源 / 历史案例来源 / data / schemas / tools），未修改任何核心资产。 主仓库路径：PRIVATE_PROVENANCE_WITHHELD
 - **来源：** [agent-project-understanding-20260708.md](../outputs/audit/agent-project-understanding-20260708.md)
 - **资产卡：** [HR-8FAEED857E0F9416](./ASSET-CARDS.md#asset-hr-8faeed857e0f9416)
 
@@ -2408,7 +2408,7 @@
 
 - **类型：** `AUDIT_OR_ADJUDICATION`
 - **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **变化：** 对应文件：统一函数总表/0607-D597-量化指标替代真实价值.md
+- **变化：** 对应文件：已迁移的历史函数来源/0607-D597-量化指标替代真实价值.md
 - **来源：** [d597-index-visibility-check-20260708.md](../outputs/audit/d597-index-visibility-check-20260708.md)
 - **资产卡：** [HR-32EEBB16DB448F9C](./ASSET-CARDS.md#asset-hr-32eebb16db448f9c)
 

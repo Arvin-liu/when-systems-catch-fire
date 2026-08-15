@@ -4,7 +4,7 @@
       "baseline_sha256": {
         "HUMAN-READING.md": "8c2a7504c4732c56618dfd16640fddbeaadcae1489b9d04ccd64dffb81233ad7",
         "RESULTS/LATEST.md": "d7a068adda0ae4adc7cba93141df358f80a97d1f89f0e1c5f20e7d07bcdc2d9e",
-        "docs/project-current-state.md": "adfe760fcf64f7588fbdb299a511fb3e3d6e2abdb148d253c5c5bed69e1e32ca"
+        "docs/project-current-state.md": "a1044dabe284b1db2d4cf67a9f09ed392925da896ba4bb972f2aa7d18e507f75"
       },
       "declared": "UNRESOLVED_REVIEW_REQUIRED",
       "governed_sources": [
@@ -74,7 +74,7 @@
     "PROJECT_STATE_IMPACT": {
       "baseline_sha256": {
         "ITERATION.md": "b313d82f90768a88aceb589172a24ea72654e50c60a47161bc47ac461b76f1e1",
-        "docs/project-current-state.md": "adfe760fcf64f7588fbdb299a511fb3e3d6e2abdb148d253c5c5bed69e1e32ca"
+        "docs/project-current-state.md": "a1044dabe284b1db2d4cf67a9f09ed392925da896ba4bb972f2aa7d18e507f75"
       },
       "declared": "NO_IMPACT_JUSTIFIED",
       "governed_sources": [
@@ -84,7 +84,7 @@
     },
     "REFERENCE_SURFACE_IMPACT": {
       "baseline_sha256": {
-        "docs/architecture/interactive-system-map.md": "fb5dcc250b3b906e4562560fb9364f133f3462836fbcb3d3eba03beda6352f54",
+        "docs/architecture/interactive-system-map.md": "76e4a1f76203475f6c8faa69a41773c46efb961801dc35282dd71f80b2e16934",
         "function-os-candidate/v0.2/README.md": "ab80c23b895b66ff490ac81c6c687948e928743ba5c648f6acf36029d8b861c1"
       },
       "declared": "NO_IMPACT_JUSTIFIED",
@@ -95,10 +95,10 @@
     },
     "SYSTEM_MAP_IMPACT": {
       "baseline_sha256": {
-        "data/architecture/interactive-system-map-layout.json": "7d30087760f8ee7bbab0158c3e57741f3803783753099d54686c3e397bcf0f7d",
-        "data/operations/change-propagation-topology.json": "7b7922da27b7570bd4c95ae0ac755adf4e5287779db6c488d20bbe40410ba426",
-        "data/operations/project-components.json": "4e74822ec5cf084331839eca6803bce3904a7f2808b816af1b626f7e358fa1ef",
-        "tools/generate_interactive_system_map.py": "fbbf0f9d73cd9045f7e007d557688fa661150ce1cd205c6174fde8b1c8319b70"
+        "data/architecture/interactive-system-map-layout.json": "4d08f43c4827914cc163e798d87cb51373c902d5ce10c2de02a98692b80006dd",
+        "data/operations/change-propagation-topology.json": "80bc07f2767554026aa8dd4fc3678a72c869397584ec629c903bfb463b6107a9",
+        "data/operations/project-components.json": "46b58da89d062f0a185091aafe42627d6d9c1d10043a3989b43212db93baa24f",
+        "tools/generate_interactive_system_map.py": "f52c31a9f2fa1e68b4e96a15fd4fa8ba53395a3fe47d26121e4f087d2e40fa06"
       },
       "declared": "NO_IMPACT_JUSTIFIED",
       "governed_sources": [

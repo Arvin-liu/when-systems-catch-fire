@@ -1831,7 +1831,7 @@
         "human_knowledge_surfaces"
       ],
       "path_patterns": [
-        "docs/generated/ignition-system-map.svg"
+        "docs/generated/ignition-system-architecture.svg"
       ],
       "rationale": "The generated repository SVG is both a human-readable navigation asset and a system-map projection product."
     },

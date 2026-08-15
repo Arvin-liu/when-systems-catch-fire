@@ -20,6 +20,8 @@ from collections import Counter, defaultdict
 from pathlib import Path
 from typing import Iterable
 
+from legacy_table_migration import current_or_archived_text, migration_paths
+
 ROOT = Path(__file__).resolve().parents[2]
 REPO_ROOT = ROOT.parent
 # See the corresponding boundary in the function census: production fixtures
@@ -38,10 +40,13 @@ PUBLIC_SURFACES = {
 }
 TEXT_SUFFIXES = {".md", ".txt", ".rst", ".json", ".jsonl", ".csv", ".yml", ".yaml", ".toml", ".py", ".sage", ".lean", ".js", ".jsx", ".ts", ".tsx", ".sh", ".html"}
 SELF_EXCLUDES = {
+    # The archive reader is a deterministic migration tool, not a claim source.
+    "tools/foundation/legacy_table_migration.py",
     ".github/README.md",
     ".github/CONTRIBUTING.md",
     "tools/generate_overall_architecture.py",
     "tools/governance/build_claim_browsers.py",
+    "tools/governance/validate_human_surface_contract.py",
     "tools/publication/validate_fire_seeds.py",
     "tools/publication/build_fire_seed_census.py",
     "tests/test_overall_architecture.py",
@@ -91,6 +96,7 @@ SELF_EXCLUDES = {
 MACHINE_EXCLUDE_PREFIXES = (
     "data/foundation/nonfunction-claims/",
     "data/foundation/function-assets/",
+    "data/foundation/migrations/",
     # The manifest is a path-accounting projection, not an authoritative claim
     # source.  Keep it accounted for by its own validator without allowing its
     # serialized paths and categories to create registry claims.
@@ -199,7 +205,8 @@ def semantic_rebound_text(text: str) -> str:
 
 def tracked_paths() -> list[str]:
     raw = subprocess.check_output(["git", "ls-files", "--cached", "--others", "--exclude-standard", "-z"], cwd=GIT_ROOT)
-    return sorted(item.decode("utf-8")[len("ignition/"):] if item.decode("utf-8").startswith("ignition/") else item.decode("utf-8") for item in raw.split(b"\0") if item)
+    paths = [item.decode("utf-8")[len("ignition/"):] if item.decode("utf-8").startswith("ignition/") else item.decode("utf-8") for item in raw.split(b"\0") if item]
+    return sorted(set(paths) | set(migration_paths()))
 
 
 def repo_path(path: str) -> Path:
@@ -241,9 +248,11 @@ def text_fragments(path: str) -> tuple[list[dict], str]:
     source = repo_path(path)
     suffix = source.suffix.casefold()
     try:
-        raw = source.read_text(encoding="utf-8")
+        raw = source.read_text(encoding="utf-8") if source.is_file() else current_or_archived_text(path)
     except (UnicodeDecodeError, OSError):
-        return [], "EXCLUDED_NON_UTF8_OR_UNREADABLE"
+        raw = None
+    if raw is None:
+        return [], "EXCLUDED_MIGRATED_SOURCE_UNAVAILABLE"
     fragments: list[dict] = []
     if path in EXPLICIT_IMPORTS:
         return fragments, "EXPLICIT_CANONICAL_IMPORT"

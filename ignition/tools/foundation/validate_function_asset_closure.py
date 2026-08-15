@@ -12,6 +12,8 @@ from pathlib import Path
 
 import jsonschema
 
+from legacy_table_migration import source_exists as migrated_source_exists
+
 ROOT = Path(__file__).resolve().parents[2]
 ASSETS = ROOT / "data/foundation/function-assets"
 EXPECTED_TASK98 = {"T2", "D127", *(f"D{i}" for i in range(182, 191)), "D260"}
@@ -30,6 +32,9 @@ def record_hash(row: dict) -> str:
     payload = dict(row)
     payload.pop("record_sha256", None)
     return hashlib.sha256(canonical_json(payload).encode("utf-8")).hexdigest()
+
+
+source_exists = lambda path: (ROOT / path).is_file() or migrated_source_exists(path)
 
 
 def load_generator():
@@ -88,7 +93,7 @@ def main() -> int:
     check("closure:summary-closed", summary["registry_closed"] is True)
     check("closure:coverage-not-regressed", len(cards) >= 2033, f"cards={len(cards)}")
     check("closure:source-anchor-present", all(card["source_anchors"] for card in cards))
-    check("closure:source-files-exist", all((ROOT / anchor["path"]).is_file() for card in cards for anchor in card["source_anchors"]))
+    check("closure:source-files-exist", all(source_exists(anchor["path"]) for card in cards for anchor in card["source_anchors"]))
     check("closure:line-ranges-valid", all(anchor["first_line"] <= anchor["last_line"] for card in cards for anchor in card["source_anchors"]))
     check("closure:record-hashes", all(card["record_sha256"] == record_hash(card) for card in cards))
 
@@ -113,7 +118,7 @@ def main() -> int:
     check("quarantine:complete", quarantine_ids == expected_quarantine)
     check("quarantine:reasons-and-resume-keys", all(row["reason"] and row["resume_key"] == f"task99:{row['canonical_id']}" for row in quarantine))
 
-    check("public:every-claim-traceable", all((ROOT / row["source_path"]).is_file() and row["line"] >= 1 for row in public_claims))
+    check("public:every-claim-traceable", all(source_exists(row["source_path"]) and row["line"] >= 1 for row in public_claims))
     check("public:withdrawn-lineage-present", any(row["lineage"] == "PHYSICS_UNIFICATION_NOGO" for row in withdrawn))
     check("public:no-blocked-rebound", all(row["status"] != "BLOCKED_REBOUND" for row in rebounds), canonical_json([row for row in rebounds if row["status"] == "BLOCKED_REBOUND"]))
     check("public:open-unification-boundary", "remains open" in card_by_id["D190"]["claim_ceiling"])

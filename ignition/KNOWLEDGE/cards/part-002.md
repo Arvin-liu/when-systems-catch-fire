@@ -4,26 +4,6 @@
 
 [返回资产卡总索引](../ASSET-CARDS.md)
 
-<a id="asset-nfc-c349fbdc470b50ab"></a>
-## Meaningful knowledge changes must regenerate the task-102 What's New, subject map, asset cards, reading layers, aliases/
-
-- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-c349fbdc470b50ab` · [llms.txt](../../llms.txt)
-- **为什么产生：** Expose a materially public CROSS_DOMAIN_CORRESPONDENCE and its correction or evidence boundary.
-- **当前状态：** `RETAINED_AS_STRUCTURAL_METAPHOR`
-- **当前结果：** - Meaningful knowledge changes must regenerate the task-102 What's New, subject map, asset cards, reading layers, aliases/supersession, full search and bidirectional dependency projections; these discovery surfaces never override canonical registries or evidence maturity.
-- **双成熟度：** 数学 `M0`；外部证据 `E0`
-- **假设与表述上限：** Analogy or structural metaphor only; no homomorphism, isomorphism or causal identity is established.
-- **未建立：** Do not present registry presence, internal tests, AI agreement or formal appearance as proof, external validation, novelty, peer review or replication.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `llms.txt`
-- **演化历史：** Lineage: NO_NAMED_LINEAGE；Lineage status: CURRENT_SCOPED_RECORD；Reviewer state: SOURCE_TEXT_RULE_ADJUDICATED
-- **最近变化：** Task 100 disposition: RETAINED_AS_STRUCTURAL_METAPHOR
-- **下一步：** No open obligation was recorded.
-- **主题：** `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `NFC-c349fbdc470b50ab`, `Meaningful knowledge changes must regenerate the task-102 What's New, subject map, asset cards, reading layers, aliases/`, `- Meaningful knowledge changes must regenerate the task-102 What's New, subject map, asset cards, reading layers, aliases/supersession, full search and bidirectional dependency projections; these discovery surfaces never override canonical registries or evidence maturity.`
-
 <a id="asset-nfc-c55e34db613b6c41"></a>
 ## K13_ASSERTION_NON_ESCALATION: project scale, engineering maturity, writing/summaries/results books/system maps, repeated
 
@@ -103,6 +83,26 @@
 - **下一步：** State typed definitions, assumptions and quantifiers; provide a checkable proof or delimit the statement as conjectural.；Search for countermodels inside and outside the declared model class.
 - **主题：** `PHYSICS`, `ARCHITECTURE_GOVERNANCE`
 - **可搜索名称：** `NFC-d30b79cb6b607ade`, `撤回“已经证明物理大一统不可能”，禁止通过“结构性定理”“框架判定”或内部定义回弹。`, `- 撤回“已经证明物理大一统不可能”，禁止通过“结构性定理”“框架判定”或内部定义回弹。`
+
+<a id="asset-nfc-d64522bd6b0c9ee7"></a>
+## The retired function and case tables are preserved only through the migration manifest, Git history and canonical regist
+
+- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-d64522bd6b0c9ee7` · [llms.txt](../../llms.txt)
+- **为什么产生：** Expose a materially public IMPOSSIBILITY_OR_UNIVERSAL_CLAIM and its correction or evidence boundary.
+- **当前状态：** `QUARANTINED_AMBIGUOUS`
+- **当前结果：** The retired function and case tables are preserved only through the migration manifest, Git history and canonical registries. Never use an archived header as current count authority; use the function-assets and nonfunction-assets human entries for reading.
+- **双成熟度：** 数学 `M0`；外部证据 `E0`
+- **假设与表述上限：** Unresolved historical or current claim candidate; it cannot appear as current knowledge.
+- **未建立：** Do not present registry presence, internal tests, AI agreement or formal appearance as proof, external validation, novelty, peer review or replication.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `llms.txt`
+- **演化历史：** Lineage: NO_NAMED_LINEAGE；Lineage status: CURRENT_SCOPED_RECORD；Reviewer state: EXPLICITLY_QUARANTINED
+- **最近变化：** Task 100 disposition: QUARANTINED_AMBIGUOUS
+- **下一步：** State typed definitions, assumptions and quantifiers; provide a checkable proof or delimit the statement as conjectural.；Search for countermodels inside and outside the declared model class.
+- **主题：** `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`
+- **可搜索名称：** `NFC-d64522bd6b0c9ee7`, `The retired function and case tables are preserved only through the migration manifest, Git history and canonical regist`, `The retired function and case tables are preserved only through the migration manifest, Git history and canonical registries. Never use an archived header as current count authority; use the function-assets and nonfunction-assets human entries for reading.`
 
 <a id="asset-nfc-ea55d13b7ba7aeff"></a>
 ## [任务 106 合并后真相传播与当前真相调和](../../ITERATION.md)（规范化 ledger / 9 维 impact 引擎 / current-truth 投影 / fail-closed 验证器）。

@@ -1,0 +1,171 @@
+# 物理与统一问题：检索索引
+
+引导问题：门控模型能支持什么有界物理投影，哪些统一与观测义务仍未完成？
+
+此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
+
+- [统一规范群；](../../../docs/physics_boundary.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-d072aeb57f20596e / 统一规范群；
+  - 来源：`docs/physics_boundary.md`
+  - 依赖：—；被引用：—
+- [行动以前，人们通常先找证据，再作判断。可在某些回路里，行动本身会产生下一步所依据的证据。士兵退了，后来的人便更相信前线已败；扩音器发出啸叫，声音又回到麦克风，替下一轮啸叫增加强度。两者一个包含恐惧和求生，一个只是物理过程，却都提示我们：反应](../../../docs/publication/works/when-an-army-believes-its-own-back.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-e1b12023b685cde0 / 行动以前，人们通常先找证据，再作判断。可在某些回路里，行动本身会产生下一步所依据的证据。士兵退了，后来的人便更相信前线已败；扩音器发出啸叫，声音又回到麦克风，替下一轮啸叫增加强度。两者一个包含恐惧和求生，一个只是物理过程，却都提示我们：反应
+  - 来源：`docs/publication/works/when-an-army-believes-its-own-back.md`
+  - 依赖：—；被引用：—
+- [表达强度受约束：「统一 / 不可能 / 解决 / 证明」默认指**结构层面**，非物理机制；证据不足必须标 `pending`。](../../../outputs/audit/agent-project-understanding-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-01636e17888d500c / 表达强度受约束：「统一 / 不可能 / 解决 / 证明」默认指**结构层面**，非物理机制；证据不足必须标 `pending`。
+  - 来源：`outputs/audit/agent-project-understanding-20260708.md`
+  - 依赖：—；被引用：—
+- [要成为物理学意义上的统一候选理论，至少需要给出：](../../../docs/physics_boundary.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-0be8f82dfe8debba / 要成为物理学意义上的统一候选理论，至少需要给出：
+  - 来源：`docs/physics_boundary.md`
+  - 依赖：—；被引用：—
+- [认知引力波验证 — 2008金融危机-金融维度ε_fin突然下降→Fisher度规跳变→1个月后实体经济感知→3个月后就业市场受影响→6个月](../../../data/foundation/evidence/evidence.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-65e874b906ce7095 / 认知引力波验证 — 2008金融危机-金融维度ε_fin突然下降→Fisher度规跳变→1个月后实体经济感知→3个月后就业市场受影响→6个月
+  - 来源：`data/foundation/evidence/evidence.jsonl`
+  - 依赖：—；被引用：—
+- [认知引力波验证 — 大规模裁员事件-经济维度ε_econ突然下降→Fisher度规在经济方向跳变→1个月后社交维度感知到变化(v_max限制](../../../data/foundation/evidence/evidence.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-3ebb727b629bca38 / 认知引力波验证 — 大规模裁员事件-经济维度ε_econ突然下降→Fisher度规在经济方向跳变→1个月后社交维度感知到变化(v_max限制
+  - 来源：`data/foundation/evidence/evidence.jsonl`
+  - 依赖：—；被引用：—
+- [证据制度卡片：物理学](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-9cd34373426d83b6 / 证据制度卡片：物理学
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [证据资格与队列误标问题，不是苹果历史、点火物理或 Function OS 外部真理问题。完整裁定](../../../RESULTS/LATEST.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-b603544a5a56e0e6 / 证据资格与队列误标问题，不是苹果历史、点火物理或 Function OS 外部真理问题。完整裁定
+  - 来源：`RESULTS/LATEST.md`
+  - 依赖：—；被引用：—
+- [该说明用于避免将点火项目误读为"野心驱动的大一统理论"或"解释一切的终极框架"。项目更准确的定位是：好奇心驱动的跨域结构化分析工具。](../../../docs/v0.2_summary.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：NFC-7f2fe7bb7f0204a8 / 该说明用于避免将点火项目误读为"野心驱动的大一统理论"或"解释一切的终极框架"。项目更准确的定位是：好奇心驱动的跨域结构化分析工具。
+  - 来源：`docs/v0.2_summary.md`
+  - 依赖：—；被引用：—
+- [说明它对应外部物理学中的哪些对象：](../../../docs/templates/physics_claim_review.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-9e9068781ff63a95 / 说明它对应外部物理学中的哪些对象：
+  - 来源：`docs/templates/physics_claim_review.md`
+  - 依赖：—；被引用：—
+- [质子衰变、LHC、宇宙学或其他实验约束；](../../../docs/physics_boundary.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-c21ed38511433016 / 质子衰变、LHC、宇宙学或其他实验约束；
+  - 来源：`docs/physics_boundary.md`
+  - 依赖：—；被引用：—
+- [跨域同构识别（工程案例×物理案例×社会案例）](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-e829cc0c2271cde5 / 跨域同构识别（工程案例×物理案例×社会案例）
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [跨域枢纽案例（20条），验证了跨域枢纽在物理、生物、社会、认知系统中的普适性。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-1702fc730fe65e1d / 跨域枢纽案例（20条），验证了跨域枢纽在物理、生物、社会、认知系统中的普适性。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [跨学科团队的高效 — 物理学家和生物学家合作,G≈0.3,H≈0.1,ηgate≈0.27,比同质团队高5倍](../../../data/foundation/evidence/evidence.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-6c12a76cfbd56d4e / 跨学科团队的高效 — 物理学家和生物学家合作,G≈0.3,H≈0.1,ηgate≈0.27,比同质团队高5倍
+  - 来源：`data/foundation/evidence/evidence.jsonl`
+  - 依赖：—；被引用：—
+- [这是一个好奇心驱动的跨域结构化分析项目，而不是一个野心驱动的大一统理论项目。](../../../docs/author_motivation_and_boundary_note.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-b38724160da81e06 / 这是一个好奇心驱动的跨域结构化分析项目，而不是一个野心驱动的大一统理论项目。
+  - 来源：`docs/author_motivation_and_boundary_note.md`
+  - 依赖：—；被引用：—
+- [量子引力](../../../data/foundation/claims/claims.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：CLAIM-PEND-005 / 量子引力
+  - 来源：`data/foundation/claims/claims.jsonl`
+  - 依赖：—；被引用：—
+- [量子引力和四力统一是两个不同能标上的事件](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-637e12c7593904d1 / 量子引力和四力统一是两个不同能标上的事件
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [量子引力问题本身：**pending**（需要外部物理理论和实验验证）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-0606d7148d6a526d / 量子引力问题本身：**pending**（需要外部物理理论和实验验证）
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [量子相变是门槛聚集导致的平滑相变，与相对论的一阶相变（门槛分散）形成对比。相变分类=门槛聚集度分类。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-d5b91a9b4d650ae0 / 量子相变是门槛聚集导致的平滑相变，与相对论的一阶相变（门槛分散）形成对比。相变分类=门槛聚集度分类。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [量子统计分布门槛案例验证。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-d600be81b8951a69 / 量子统计分布门槛案例验证。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [量子退相干门槛锁定案例验证。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-6abb71265d2c269c / 量子退相干门槛锁定案例验证。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [量子隧穿是D160超敏感区的量子版本。隧穿概率由门控面形状Λ(x)和能量μ决定。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-31b0a42aa5ecbb59 / 量子隧穿是D160超敏感区的量子版本。隧穿概率由门控面形状Λ(x)和能量μ决定。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D160；被引用：—
+- [量子隧穿门槛突破案例验证。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-63ee41b9d9c049cf / 量子隧穿门槛突破案例验证。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [金融危机中的反馈链条类似物理系统中的级联失稳。](../../../docs/claim_levels.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-4507d0ad540bc31f / 金融危机中的反馈链条类似物理系统中的级联失稳。
+  - 来源：`docs/claim_levels.md`
+  - 依赖：—；被引用：—
+- [需要外部物理理论（如大统一理论）和实验验证（如质子衰变）。](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-ca0b1ade6476dcfc / 需要外部物理理论（如大统一理论）和实验验证（如质子衰变）。
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [需要外部物理理论（如弦论、圈量子引力）和实验验证（如引力波、量子引力效应）。](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-84e74f6b9191f5ba / 需要外部物理理论（如弦论、圈量子引力）和实验验证（如引力波、量子引力效应）。
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [需要外部观测验证（如暗物质探测、宇宙学观测）。](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-72f6b34b4ed67fc6 / 需要外部观测验证（如暗物质探测、宇宙学观测）。
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [需要的验证步骤](../../../docs/templates/physics_claim_review.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-3e599587ce7ff5b3 / 需要的验证步骤
+  - 来源：`docs/templates/physics_claim_review.md`
+  - 依赖：—；被引用：—
+- [预测命题（如：引力波存在）](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-3eb30b371e58b868 / 预测命题（如：引力波存在）
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [首批物理资产纠偏（2026-07-29）](../../ASSET-CARDS.md#asset-hr-279683b750652ac6)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `CURRENT_CORRECTION_RECORD`
+  - 可搜索名称：首批物理资产纠偏（2026-07-29） / physics-asset-correction-20260729
+  - 来源：`docs/foundation/physics-asset-correction-20260729.md`
+  - 依赖：—；被引用：—
+- [首批物理资产纠偏（2026-07-29）](../../../docs/foundation/physics-asset-correction-20260729.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-3050d0677419215a / 首批物理资产纠偏（2026-07-29）
+  - 来源：`docs/foundation/physics-asset-correction-20260729.md`
+  - 依赖：—；被引用：—
+- [验证物理、社会、认知三域的一致性](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-8b2124776d251258 / 验证物理、社会、认知三域的一致性
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [（未物理删除——GAP002-08 被 104 外部研究生态多处引用）并移交 104 数据负责人（同层级数据修正，非降级）。](../../../RESULTS/LATEST.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-391f80f6063292f1 / （未物理删除——GAP002-08 被 104 外部研究生态多处引用）并移交 104 数据负责人（同层级数据修正，非降级）。
+  - 来源：`RESULTS/LATEST.md`
+  - 依赖：—；被引用：—

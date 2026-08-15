@@ -7,6 +7,7 @@ import hashlib
 import json
 import re
 import subprocess
+import sys
 from collections import Counter
 from pathlib import Path
 
@@ -306,4 +307,18 @@ def build(check=False):
 if __name__ == "__main__":
     ap=argparse.ArgumentParser()
     ap.add_argument("--check",action="store_true")
-    raise SystemExit(build(ap.parse_args().check))
+    args = ap.parse_args()
+    if not (ROOT / "统一函数总表").exists() and not (ROOT / "统一案例总表").exists():
+        manifest_check = subprocess.run(
+            [sys.executable, str(Path(__file__).with_name("legacy_table_migration.py")), "--check"],
+            cwd=ROOT,
+            text=True,
+            capture_output=True,
+        )
+        print(manifest_check.stdout, end="")
+        if manifest_check.returncode != 0:
+            print(manifest_check.stderr, end="")
+            raise SystemExit(manifest_check.returncode)
+        print("LEGACY_GENERATOR_RETIRED manifest=legacy-table-migration.jsonl")
+        raise SystemExit(0)
+    raise SystemExit(build(args.check))

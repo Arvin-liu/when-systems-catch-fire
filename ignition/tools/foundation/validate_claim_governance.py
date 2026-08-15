@@ -10,6 +10,8 @@ from pathlib import Path
 
 import jsonschema
 
+from legacy_table_migration import source_exists as migrated_source_exists
+
 ROOT = Path(__file__).resolve().parents[2]
 ASSETS = ROOT / "data/foundation/function-assets"
 EXPECTED_CORRECTIONS = {"T2", "D127", *(f"D{i}" for i in range(182, 191)), "D260"}
@@ -106,7 +108,10 @@ def main() -> int:
     ids = [row["stable_id"] for row in census]
     check("census:unique-stable-id", len(ids) == len(set(ids)), f"rows={len(ids)} unique={len(set(ids))}")
     check("census:registered-coverage", {row["id"] for row in objects} <= set(ids))
-    check("census:all-sources-exist", all((ROOT / path).is_file() for row in census for path in row["source_evidence"]["occurrence_paths"]))
+    check(
+        "census:all-sources-exist",
+        all((ROOT / path).is_file() or migrated_source_exists(path) for row in census for path in row["source_evidence"]["occurrence_paths"]),
+    )
     check("census:summary-count", summary["deduplicated_assets"] == len(census))
     check("census:discovery-count", summary["source_occurrence_records"] == len(discovery))
     check("census:queue-one-per-asset", {row["stable_id"] for row in queue} == set(ids))

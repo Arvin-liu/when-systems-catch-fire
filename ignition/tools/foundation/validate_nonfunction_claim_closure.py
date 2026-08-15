@@ -11,6 +11,8 @@ from pathlib import Path
 
 import jsonschema
 
+from legacy_table_migration import migration_paths, source_exists as migrated_source_exists
+
 ROOT = Path(__file__).resolve().parents[2]
 REPO_ROOT = ROOT.parent
 # Keep Git history/path enumeration correct when an isolated production
@@ -32,6 +34,9 @@ QUARANTINE = {
 
 def repo_file(path: str) -> Path:
     return REPO_ROOT / path if path.startswith(".github/") else ROOT / path
+
+
+source_exists = lambda path: repo_file(path).is_file() or migrated_source_exists(path)
 
 
 def rows(name: str) -> list[dict]:
@@ -88,7 +93,7 @@ def main() -> int:
     check("closure:one-evidence-lineage-per-claim", [row["canonical_id"] for row in evidence] == ids)
     check("closure:one-graph-record-per-claim", [row["canonical_id"] for row in graph] == ids)
     check("closure:source-anchor-present", all(row["source_anchors"] for row in claims))
-    check("closure:source-files-exist", all(repo_file(anchor["path"]).is_file() for row in claims for anchor in row["source_anchors"]))
+    check("closure:source-files-exist", all(source_exists(anchor["path"]) for row in claims for anchor in row["source_anchors"]))
     check("closure:source-lines-valid", all(anchor["first_line"] >= 1 and anchor["last_line"] >= anchor["first_line"] for row in claims for anchor in row["source_anchors"]))
     check("closure:record-hashes", all(row["record_sha256"] == record_hash(row) for row in claims))
     check("closure:all-thirteen-audits", all(set(row["audit_gates"]) == AUDITS for row in claims))
@@ -96,7 +101,13 @@ def main() -> int:
 
     listed_paths = [row["path"] for row in discovery]
     tracked_raw = subprocess.check_output(["git", "ls-files", "--cached", "--others", "--exclude-standard", "-z"], cwd=GIT_ROOT)
-    tracked_paths = sorted(item.decode("utf-8")[len("ignition/"):] if item.decode("utf-8").startswith("ignition/") else item.decode("utf-8") for item in tracked_raw.split(b"\0") if item)
+    tracked_paths = sorted(
+        set(
+            item.decode("utf-8")[len("ignition/"):] if item.decode("utf-8").startswith("ignition/") else item.decode("utf-8")
+            for item in tracked_raw.split(b"\0") if item
+        )
+        | set(migration_paths())
+    )
     check("discovery:every-repository-path-accounted", sorted(listed_paths) == tracked_paths and len(listed_paths) == len(set(listed_paths)), f"listed={len(listed_paths)} tracked={len(tracked_paths)}")
     check("discovery:every-candidate-maps", all(set(row["canonical_claim_ids"]) <= id_set for row in discovery))
     check("discovery:no-silent-exclusion", all(not row["coverage_status"].startswith("EXCLUDED") or row["exclusion_reason"] for row in discovery))
@@ -133,7 +144,7 @@ def main() -> int:
     check("inference:analogy-not-isomorphism", all(row["final_disposition"] not in {"ACCEPTED_AS_PROVED_MATHEMATICAL_RESULT", "ACCEPTED_AS_ESTABLISHED_EXTERNAL_FACT"} for row in claims if row["audit_gates"]["cross_domain_audit"] == "FAIL"))
     check("inference:risk-records-blocked", all(row["blocked_by_disposition"] for row in risks if any(value == "FAIL" for value in row["risk_gates"].values())))
 
-    check("public:front-doors-traceable", all(repo_file(row["source_path"]).is_file() and row["line"] >= 1 for row in public))
+    check("public:front-doors-traceable", all(source_exists(row["source_path"]) and row["line"] >= 1 for row in public))
     check("public:no-claim-ceiling-violations", not any(row["current_violation"] for row in public))
     check("public:summary-agrees", summary["public_surface_violations"] == 0)
     check("history:supersession-preserved", bool(supersession) and all(row["source_anchors"] for row in supersession))

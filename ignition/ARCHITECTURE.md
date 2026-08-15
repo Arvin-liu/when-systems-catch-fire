@@ -105,7 +105,7 @@ flowchart TD
   CI[tests 与 CI] --> T
 ```
 
-`data/foundation/` 是状态与映射的机器权威；`统一函数总表/`、`统一案例总表/` 是冻结的 legacy source；`views/` 是可重建兼容投影。
+`data/foundation/` 是状态与映射的机器权威；旧函数表与旧案例表的来源证据、路径、Git blob 与转换记录由 `data/foundation/migrations/legacy-table-migration.jsonl` 承接；当前人类入口由 `docs/human/function-assets/` 与 `docs/human/nonfunction-assets/` 确定性派生。
 
 ## 数据流
 
@@ -143,10 +143,10 @@ stateDiagram-v2
 
 ```mermaid
 flowchart TB
-  OLD1[统一函数总表: legacy source] --> O[formal-objects]
+  OLD1[历史函数来源归档] --> O[formal-objects]
   OLD1 --> C[claims]
   OLD1 --> A[arguments]
-  OLD2[统一案例总表] --> E[evidence]
+  OLD2[历史案例来源归档] --> E[evidence]
   BC[candidate_only] --> E
   PD[pending] --> C
   O --> M[mappings]

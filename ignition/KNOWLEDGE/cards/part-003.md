@@ -310,7 +310,7 @@
 - **身份/来源：** `RESULT_OR_ARTICLE` · `HR-32EEBB16DB448F9C` · [outputs/audit/d597-index-visibility-check-20260708.md](../../outputs/audit/d597-index-visibility-check-20260708.md)
 - **为什么产生：** 此来源记录了什么：D597 量化指标替代真实价值索引可见性验证？
 - **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **当前结果：** 对应文件：统一函数总表/0607-D597-量化指标替代真实价值.md
+- **当前结果：** 对应文件：已迁移的历史函数来源/0607-D597-量化指标替代真实价值.md
 - **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
 - **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
 - **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.

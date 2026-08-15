@@ -11,9 +11,11 @@ from pathlib import Path
 try:
     from tools.generate_interactive_system_map import build_projection, load_spec, render_svg, validate_spec
     from tools.governance.validate_human_visibility import validate as validate_human_visibility
+    from tools.governance.validate_human_surface_contract import validate as validate_human_surface_contract
 except ModuleNotFoundError:
     from generate_interactive_system_map import build_projection, load_spec, render_svg, validate_spec
     from governance.validate_human_visibility import validate as validate_human_visibility
+    from governance.validate_human_surface_contract import validate as validate_human_surface_contract
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -26,7 +28,7 @@ AI_HANDOFF = ROOT / "AI-HANDOFF.md"
 LLMS = ROOT / "llms.txt"
 HUMAN_READING = ROOT / "HUMAN-READING.md"
 SYSTEM_MAP_SPEC = ROOT / "data/architecture/interactive-system-map.json"
-SYSTEM_MAP_SVG = ROOT / "docs/generated/ignition-system-map.svg"
+SYSTEM_MAP_SVG = ROOT / "docs/generated/ignition-system-architecture.svg"
 
 CAPABILITIES = {
     "MCF": "docs/architecture/multiscale-causal-fabric.md",
@@ -56,7 +58,8 @@ def validate_texts(readme: str, guide: str, current_state: str, human_reading: s
     require("<details" not in readme.lower(), "README hides essential content")
     require("HUMAN-READING.md" in readme and "RESULTS/LATEST.md" in readme, "README lacks current human result entrances")
     require("火种" in readme and "价值宪章" in readme and "STATE-CHANGELOG" in readme, "README lacks the value, Fire Seeds and AI recovery routes")
-    require("透明可点击整体架构 SVG" in readme and "ignition-overall-architecture.svg" in readme, "README lacks conceptual architecture entry")
+    require("透明可点击完整总架构图 SVG" in readme and "ignition-system-architecture.svg" in readme, "README lacks the single complete architecture entry")
+    require("human-surface-editorial-contract.md" in readme or "Human Surface" in readme, "README lacks the Human Surface editorial contract route")
     require("任务 101" in current_state, "current state omits task 101")
     require("机器记录" in human_reading and "人类" in human_reading, "human reading page omits machine-human boundary")
     for name, path in CAPABILITIES.items():
@@ -99,8 +102,9 @@ def validate_all(root: Path = ROOT) -> dict[str, object]:
     validate_texts(README.read_text(encoding="utf-8"), GUIDE.read_text(encoding="utf-8"), CURRENT_STATE.read_text(encoding="utf-8"), HUMAN_READING.read_text(encoding="utf-8"))
     validate_version_front_doors(AI_START.read_text(encoding="utf-8"), AI_HANDOFF.read_text(encoding="utf-8"), LLMS.read_text(encoding="utf-8"), README.read_text(encoding="utf-8"), CURRENT_STATE.read_text(encoding="utf-8"))
     visibility = validate_human_visibility()
+    human_surface = validate_human_surface_contract()
     nodes = validate_system_map(root)
-    return {"status": "PASS", "scope": "repository_native_human_surfaces_only", "interactive_system_map_nodes": nodes, "human_visibility": visibility, "external_truth_verified": False}
+    return {"status": "PASS", "scope": "repository_native_human_surfaces_only", "interactive_system_map_nodes": nodes, "human_visibility": visibility, "human_surface_contract": human_surface, "external_truth_verified": False}
 
 
 if __name__ == "__main__":

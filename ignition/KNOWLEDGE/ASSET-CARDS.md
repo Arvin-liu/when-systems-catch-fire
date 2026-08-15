@@ -46,8 +46,6 @@
 - [Iteration method 1.3.0 and system map 0.3.0, 0.4.0 are Historical; method 1.2.0 and maps 0.1.0, 0.2.0 are earlier Histor](./cards/part-001.md#asset-nfc-2d220e92f7b73dd3) — `NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION` · `NFC-2d220e92f7b73dd3`
 <a id="asset-nfc-3462f5f134c76b5b"></a>
 - [方法 `1.3.0` 与系统图 `0.3.0`、`0.4.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0`、`0.2.0` 为更早 Historical。当前方法要求从构件 registry、类型化 topol](./cards/part-001.md#asset-nfc-3462f5f134c76b5b) — `NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION` · `NFC-3462f5f134c76b5b`
-<a id="asset-nfc-390d533e6aa565c0"></a>
-- [统一函数总表/ and 统一案例总表/ are immutable legacy sources and compatibility views. Never use their hand-written headers as curren](./cards/part-001.md#asset-nfc-390d533e6aa565c0) — `NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS` · `NFC-390d533e6aa565c0`
 <a id="asset-nfc-3d9ffb2206406fcc"></a>
 - [为全部恢复的结果/文章来源生成统一卡片和 1 分钟、5 分钟、完整阅读，并为全部函数/断言 registry 建立可回链来源、状态、依赖、反向依赖和历史的分片搜索索引。](./cards/part-001.md#asset-nfc-3d9ffb2206406fcc) — `NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION` · `NFC-3d9ffb2206406fcc`
 <a id="asset-nfc-4a20f20c22587a46"></a>
@@ -103,7 +101,7 @@
 <a id="asset-nfc-c15234f1546c00ea"></a>
 - [任务边界：1111 中对应的 IGNITION command、progress 与 result](./cards/part-001.md#asset-nfc-c15234f1546c00ea) — `NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR` · `NFC-c15234f1546c00ea`
 <a id="asset-nfc-c349fbdc470b50ab"></a>
-- [Meaningful knowledge changes must regenerate the task-102 What's New, subject map, asset cards, reading layers, aliases/](./cards/part-002.md#asset-nfc-c349fbdc470b50ab) — `NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR` · `NFC-c349fbdc470b50ab`
+- [Meaningful knowledge changes must regenerate the task-102 What's New, subject map, asset cards, reading layers, aliases/](./cards/part-001.md#asset-nfc-c349fbdc470b50ab) — `NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR` · `NFC-c349fbdc470b50ab`
 <a id="asset-nfc-c55e34db613b6c41"></a>
 - [K13_ASSERTION_NON_ESCALATION: project scale, engineering maturity, writing/summaries/results books/system maps, repeated](./cards/part-002.md#asset-nfc-c55e34db613b6c41) — `NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR` · `NFC-c55e34db613b6c41`
 <a id="asset-nfc-d12a007686070f3d"></a>
@@ -112,6 +110,8 @@
 - [active queue 排除；同一冻结评分模型的 task-110 projection 保留 C-03 作为已执行的](./cards/part-002.md#asset-nfc-d1eb87089fada196) — `NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR` · `NFC-d1eb87089fada196`
 <a id="asset-nfc-d30b79cb6b607ade"></a>
 - [撤回“已经证明物理大一统不可能”，禁止通过“结构性定理”“框架判定”或内部定义回弹。](./cards/part-002.md#asset-nfc-d30b79cb6b607ade) — `NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION` · `NFC-d30b79cb6b607ade`
+<a id="asset-nfc-d64522bd6b0c9ee7"></a>
+- [The retired function and case tables are preserved only through the migration manifest, Git history and canonical regist](./cards/part-002.md#asset-nfc-d64522bd6b0c9ee7) — `NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS` · `NFC-d64522bd6b0c9ee7`
 <a id="asset-nfc-ea55d13b7ba7aeff"></a>
 - [\[任务 106 合并后真相传播与当前真相调和\](../ITERATION.md)（规范化 ledger / 9 维 impact 引擎 / current-truth 投影 / fail-closed 验证器）。](./cards/part-002.md#asset-nfc-ea55d13b7ba7aeff) — `NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR` · `NFC-ea55d13b7ba7aeff`
 <a id="asset-nfc-f31cd02c40b70cc7"></a>

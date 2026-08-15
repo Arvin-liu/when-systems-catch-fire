@@ -20,6 +20,7 @@ HUMAN = ROOT / "PUBLICATIONS/pointfire-results-book/12-火种：点火跑出来�
 CENSUS = ROOT / "data/publication/fire-seeds/seed-census.json"
 LOG = ROOT / "data/publication/fire-seeds/CHANGELOG.jsonl"
 LAYERED = ROOT / "data/governance/knowledge-experience/layered-reading.jsonl"
+MIGRATION = ROOT / "data/foundation/migrations/legacy-table-migration.jsonl"
 HEADING_RE = re.compile(r"^## ((?:CF|FS)-\d+) (.+)$", re.MULTILINE)
 LINK_RE = re.compile(r"\[[^\]]+\]\(([^)]+)\)")
 DISPOSITIONS = {
@@ -60,6 +61,11 @@ def validate() -> dict[str, int]:
         errors.append(f"missing machine Fire Seeds census: {CENSUS}")
         raise AssertionError("\n".join(errors))
     census = json.loads(CENSUS.read_text(encoding="utf-8"))
+    migration = {
+        row["legacy_path"]: row["content_sha256"]
+        for row in (json.loads(line) for line in MIGRATION.read_text(encoding="utf-8").splitlines() if line.strip())
+        if row.get("legacy_path") and row.get("content_sha256")
+    } if MIGRATION.is_file() else {}
     text = HUMAN.read_text(encoding="utf-8")
     blocks = _blocks(text)
     ids = [item[0] for item in blocks]
@@ -123,7 +129,7 @@ def validate() -> dict[str, int]:
             errors.append(f"seed has no source links: {seed_id}")
         for source in links:
             source_to_seeds.setdefault(source, set()).add(seed_id)
-            if not (ROOT / source).is_file():
+            if not (ROOT / source).is_file() and source not in migration:
                 errors.append(f"seed source link is not app-relative/current: {source}")
         if sorted(seed.get("source_chain", [])) != sorted(links):
             errors.append(f"source chain diverges from source links: {seed_id}")
@@ -138,13 +144,13 @@ def validate() -> dict[str, int]:
         if not path or path in seen_sources:
             errors.append(f"duplicate or blank source census path: {path}")
         seen_sources.add(path)
-        if not (ROOT / str(path)).is_file():
+        if not (ROOT / str(path)).is_file() and str(path) not in migration:
             errors.append(f"missing source census path: {path}")
         if source.get("disposition") not in DISPOSITIONS:
             errors.append(f"invalid source disposition: {path}")
         disposition_counts[source.get("disposition")] += 1
         if source.get("source_kind") == "KNOWLEDGE_EXPERIENCE_LAYERED_READING":
-            actual = hashlib.sha256((ROOT / path).read_bytes()).hexdigest()
+            actual = hashlib.sha256((ROOT / path).read_bytes()).hexdigest() if (ROOT / path).is_file() else migration.get(path)
             if actual != source.get("source_sha256"):
                 errors.append(f"source hash drift: {path}")
     summary = census.get("source_census_summary", {})

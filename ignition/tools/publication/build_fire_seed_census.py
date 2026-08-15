@@ -21,6 +21,7 @@ REPO_ROOT = ROOT.parent
 HUMAN = ROOT / "PUBLICATIONS/pointfire-results-book/12-火种：点火跑出来的发现、问题与写作种子.md"
 LAYERED = ROOT / "data/governance/knowledge-experience/layered-reading.jsonl"
 MANIFEST = ROOT / "data/governance/knowledge-experience/manifest.json"
+MIGRATION = ROOT / "data/foundation/migrations/legacy-table-migration.jsonl"
 OUT = ROOT / "data/publication/fire-seeds/seed-census.json"
 
 SUPPLEMENTAL_GLOBS = [
@@ -36,8 +37,6 @@ SUPPLEMENTAL_GLOBS = [
     "outputs/collisions/**/*.md",
     "RESULTS/*.md",
     "KNOWLEDGE/*.md",
-    "统一函数总表/*.md",
-    "统一案例总表/*.md",
 ]
 
 CONFLICTS = [
@@ -94,6 +93,21 @@ CONFLICTS = [
 
 def sha256(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def migrated_hashes() -> dict[str, str]:
+    if not MIGRATION.is_file():
+        return {}
+    return {
+        row["legacy_path"]: row["content_sha256"]
+        for row in (json.loads(line) for line in MIGRATION.read_text(encoding="utf-8").splitlines() if line.strip())
+        if row.get("legacy_path") and row.get("content_sha256")
+    }
+
+
+def source_hash(relative: str, migration: dict[str, str]) -> str:
+    path = ROOT / relative
+    return sha256(path) if path.is_file() else migration.get(relative, "MISSING_SOURCE_HASH")
 
 
 def relative_source(target: str) -> str | None:
@@ -176,6 +190,7 @@ def main() -> int:
     }
     seed_links: dict[str, list[str]] = {}
     first_source: dict[str, str] = {}
+    migration = migrated_hashes()
     for seed in seeds:
         for position, source in enumerate(seed["source_links"]):
             seed_links.setdefault(source, []).append(seed["id"])
@@ -231,7 +246,7 @@ def main() -> int:
             "title": row.get("title") or path.stem,
             "knowledge_status": row.get("status"),
             "subject": row.get("subject"),
-            "source_sha256": sha256(path),
+            "source_sha256": source_hash(source, migration),
             "disposition": disposition,
             "seed_ids": linked_seed_ids,
             "review_basis": review_basis,

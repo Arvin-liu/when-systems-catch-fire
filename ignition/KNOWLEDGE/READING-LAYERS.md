@@ -343,7 +343,7 @@ Status: migration coverage is complete; semantic adjudication was incomplete at 
 - 来源要点（导航摘录，不得视为当前断言）：碰撞候选：outputs/collisions/20260708-teacher-competition/new-functions.md（NF-004）
 - 来源要点（导航摘录，不得视为当前断言）：原始材料：inputs/collisions/20260708-teacher-competition/source.md
 - 来源要点（导航摘录，不得视为当前断言）：第一批回填审计：outputs/audit/teacher-competition-small-batch-backfill-audit-20260708.md（C-0807 已将 NF-004 标为「暂未入表」关联）
-- 来源要点（导航摘录，不得视为当前断言）：路径：统一函数总表/0400-D364-实际不可逆判据函数.md
+- 来源要点（导航摘录，不得视为当前断言）：路径：已迁移的历史函数来源/0400-D364-实际不可逆判据函数.md
 
 ### 完整阅读
 
@@ -364,7 +364,7 @@ Status: migration coverage is complete; semantic adjudication was incomplete at 
 - 来源要点（导航摘录，不得视为当前断言）：回填复核报告：outputs/audit/teacher-competition-backfill-review-20260708.md（NF-002 建议入表，但需先与 D244 查重边界）
 - 来源要点（导航摘录，不得视为当前断言）：碰撞候选：outputs/collisions/20260708-teacher-competition/new-functions.md（NF-002）
 - 来源要点（导航摘录，不得视为当前断言）：原始材料：inputs/collisions/20260708-teacher-competition/source.md
-- 来源要点（导航摘录，不得视为当前断言）：实际定位：统一函数总表/0280-D244-自主意识涌现的临界条件.md
+- 来源要点（导航摘录，不得视为当前断言）：实际定位：已迁移的历史函数来源/0280-D244-自主意识涌现的临界条件.md
 - 来源要点（导航摘录，不得视为当前断言）：关键纠正：D244 不是「指标化」相关函数。其定义为 Ψ = ι × Pexit > 0（自主意识涌现的临界条件：智能度超阈值且退出概率为正）。grep 命中仅因元数据含 "D244" 与一处「条件1的量化」。
 
 ### 完整阅读
@@ -428,10 +428,10 @@ D595 条目文件 + INDEX 均命中，机制表达式可被检索 ✓ 边界：T
 
 - 来源要点（导航摘录，不得视为当前断言）：主题：赛课机制第一批回填索引可见性验证
 - 来源要点（导航摘录，不得视为当前断言）：C-0807 系统性钝化与教室避风港
-- 来源要点（导航摘录，不得视为当前断言）：统一函数总表/0605-D595-绩效绑定裹挟.md
-- 来源要点（导航摘录，不得视为当前断言）：统一函数总表/0606-D596-避风港.md
-- 来源要点（导航摘录，不得视为当前断言）：统一案例总表/0802-C-0807-系统性钝化与教室避风港.md
-- 来源要点（导航摘录，不得视为当前断言）：索引文件：统一函数总表/INDEX.md、统一案例总表/INDEX.md（两张表各一个 INDEX，无其他总览/目录/README）。
+- 来源要点（导航摘录，不得视为当前断言）：已迁移的历史函数来源/0605-D595-绩效绑定裹挟.md
+- 来源要点（导航摘录，不得视为当前断言）：已迁移的历史函数来源/0606-D596-避风港.md
+- 来源要点（导航摘录，不得视为当前断言）：已迁移的历史案例来源/0802-C-0807-系统性钝化与教室避风港.md
+- 来源要点（导航摘录，不得视为当前断言）：索引文件：已迁移的历史函数来源/INDEX.md、已迁移的历史案例来源/INDEX.md（两张表各一个 INDEX，无其他总览/目录/README）。
 
 ### 完整阅读
 
@@ -1115,8 +1115,8 @@ D598 能被以下全部语义关键词召回（命中位置见下）： 边界�
 ### 5 分钟
 
 - 来源要点（导航摘录，不得视为当前断言）：主题：D598 系统性钝化索引可见性验证
-- 来源要点（导航摘录，不得视为当前断言）：文件：统一函数总表/0608-D598-系统性钝化.md
-- 来源要点（导航摘录，不得视为当前断言）：索引文件：统一函数总表/INDEX.md
+- 来源要点（导航摘录，不得视为当前断言）：文件：已迁移的历史函数来源/0608-D598-系统性钝化.md
+- 来源要点（导航摘录，不得视为当前断言）：索引文件：已迁移的历史函数来源/INDEX.md
 - 来源要点（导航摘录，不得视为当前断言）：D598 能通过编号搜到：INDEX 第 618 行 D598 ✓
 - 来源要点（导航摘录，不得视为当前断言）：D598 能通过标题搜到：INDEX 第 618 行 系统性钝化 ✓
 - 来源要点（导航摘录，不得视为当前断言）：INDEX 头部函数总数已更新：605 → 606
@@ -1216,13 +1216,13 @@ Status: OWNERACCEPTEDBOUNDEDREPLAYRESULTWITHEXPLICITRESIDUALS 边界：This is a
 
 ### 1 分钟
 
-对应文件：统一函数总表/0607-D597-量化指标替代真实价值.md 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+对应文件：已迁移的历史函数来源/0607-D597-量化指标替代真实价值.md 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 
 ### 5 分钟
 
 - 来源要点（导航摘录，不得视为当前断言）：主题：D597 量化指标替代真实价值索引可见性验证
-- 来源要点（导航摘录，不得视为当前断言）：对应文件：统一函数总表/0607-D597-量化指标替代真实价值.md
-- 来源要点（导航摘录，不得视为当前断言）：索引文件：统一函数总表/INDEX.md
+- 来源要点（导航摘录，不得视为当前断言）：对应文件：已迁移的历史函数来源/0607-D597-量化指标替代真实价值.md
+- 来源要点（导航摘录，不得视为当前断言）：索引文件：已迁移的历史函数来源/INDEX.md
 - 来源要点（导航摘录，不得视为当前断言）：D597 能通过编号搜到：INDEX 第 617 行 D597 ✓
 - 来源要点（导航摘录，不得视为当前断言）：D597 能通过标题搜到：量化指标替代真实价值 在 INDEX 第 617 行 ✓
 - 来源要点（导航摘录，不得视为当前断言）：INDEX 头部函数总数已更新：604 → 605
@@ -2132,8 +2132,8 @@ Status: OWNERACCEPTEDWITHEXPLICITRESIDUALS Runtime disposition: KEEPLIGHTONLY �
 - 来源要点（导航摘录，不得视为当前断言）：本文件为 smoke test，仅验证 P1 机器数据接入碰撞流程是否可运行，不追求高质量洞见，不回填正式两张表。
 - 来源要点（导航摘录，不得视为当前断言）：本地文件：inputs/collisions/20260708-smoke-test/task.md
 - 来源要点（导航摘录，不得视为当前断言）：无网页链接，符合「默认得到大脑读不了网页链接」的输入原则。
-- 来源要点（导航摘录，不得视为当前断言）：函数表目录：存在（统一函数总表/），本轮未读全量正文。
-- 来源要点（导航摘录，不得视为当前断言）：案例表目录：存在（统一案例总表/），本轮未读全量正文。
+- 来源要点（导航摘录，不得视为当前断言）：函数表目录：存在（已迁移的历史函数来源/），本轮未读全量正文。
+- 来源要点（导航摘录，不得视为当前断言）：案例表目录：存在（已迁移的历史案例来源/），本轮未读全量正文。
 
 ### 完整阅读
 
@@ -3528,7 +3528,7 @@ These sources are used as modeling references and boundary checks. They are not 
 ### 5 分钟
 
 - 来源要点（导航摘录，不得视为当前断言）：主题：C-0809 表演化假课与量化指标消解温度索引可见性验证
-- 来源要点（导航摘录，不得视为当前断言）：索引文件：统一案例总表/INDEX.md
+- 来源要点（导航摘录，不得视为当前断言）：索引文件：已迁移的历史案例来源/INDEX.md
 - 来源要点（导航摘录，不得视为当前断言）：C-0809 出现在 INDEX 第 811 行：
 - 来源要点（导航摘录，不得视为当前断言）：| C-0809 | 表演化假课与量化指标消解温度 | 指标化评价使可量化项替代真实价值，表演态排除临场生成。 |
 - 来源要点（导航摘录，不得视为当前断言）：案例总数已同步：792 → 793（INDEX 头部计数）
@@ -3962,12 +3962,12 @@ Q25B correctly separated completion states but incorrectly required projectsynch
 
 ### 1 分钟
 
-生成时间：2026-07-08 21:25 (GMT+8) 任务来源：用户发来的「点火项目整体认知初始化」指令（.md 附件） 执行方式：只读阅读 GitHub 主仓库（README / docs / outputs/audit / 统一函数总表 / 统一案例总表 / data / schemas / tools），未修改任何核心资产。 主仓库路径：PRIVATE_PROVENANCE_WITHHELD
+生成时间：2026-07-08 21:25 (GMT+8) 任务来源：用户发来的「点火项目整体认知初始化」指令（.md 附件） 执行方式：只读阅读 GitHub 主仓库（README / docs / outputs/audit / 历史函数来源 / 历史案例来源 / data / schemas / tools），未修改任何核心资产。 主仓库路径：PRIVATE_PROVENANCE_WITHHELD
 
 ### 5 分钟
 
 - 来源要点（导航摘录，不得视为当前断言）：主题：点火项目整体认知初始化 — Agent 认知报告
-- 来源要点（导航摘录，不得视为当前断言）：生成时间：2026-07-08 21:25 (GMT+8) 任务来源：用户发来的「点火项目整体认知初始化」指令（.md 附件） 执行方式：只读阅读 GitHub 主仓库（README / docs / outputs/audit / 统一函数总表 / 统一案例总表 / data / schemas / tools），未修改任何核心资产。 主仓库路径：PRIVATE_PROVENANCE_WITHHELD
+- 来源要点（导航摘录，不得视为当前断言）：生成时间：2026-07-08 21:25 (GMT+8) 任务来源：用户发来的「点火项目整体认知初始化」指令（.md 附件） 执行方式：只读阅读 GitHub 主仓库（README / docs / outputs/audit / 历史函数来源 / 历史案例来源 / data / schemas / tools），未修改任何核心资产。 主仓库路径：PRIVATE_PROVENANCE_WITHHELD
 - 来源要点（导航摘录，不得视为当前断言）：一句话：点火（When Systems Catch Fire）是一个跨学科系统相变的生成模型——把现象映射为函数与案例，分析系统何时被「点燃」，输出 true / false / contradiction / pending 四象限结论。
 - 来源要点（导航摘录，不得视为当前断言）：跨域结构性推论的元工具（meta-tool），不是物理理论、不是数学证明工具、不是学科替代品。
 - 来源要点（导航摘录，不得视为当前断言）：通过六组件（C / M / Iiso / Lmeta / Gδ / Pmeta）帮助人和 AI 发现不同领域共享的结构性规律。
@@ -4096,8 +4096,8 @@ Task: IGNITION-20260709-121C01 Reviewer: qclaw/pool-glm-5.2 (reasoning: high) No
 - 来源要点（导航摘录，不得视为当前断言）：上一轮碰撞目录：outputs/collisions/20260708-teacher-competition/
 - 来源要点（导航摘录，不得视为当前断言）：原始材料：inputs/collisions/20260708-teacher-competition/source.md（Get 笔记《赛课机制下的教师生存困境》）
 - 来源要点（导航摘录，不得视为当前断言）：校验器结果：python3 tools/validatedata.py → ALLP1DATAVALID
-- 来源要点（导航摘录，不得视为当前断言）：Ψ₀ 元函数基准：统一函数总表/0001-Ψ₀元函数完整数学定义.md（六大组件：C / M / Iiso / Lmeta / Gδ / Pmeta）
-- 来源要点（导航摘录，不得视为当前断言）：全量两张表查重：统一函数总表/（614 文件）、统一案例总表/（802 文件），按 18 个重点关键词检索。
+- 来源要点（导航摘录，不得视为当前断言）：Ψ₀ 元函数基准：已迁移的历史函数来源/0001-Ψ₀元函数完整数学定义.md（六大组件：C / M / Iiso / Lmeta / Gδ / Pmeta）
+- 来源要点（导航摘录，不得视为当前断言）：全量两张表查重：已迁移的历史函数来源/（614 文件）、已迁移的历史案例来源/（802 文件），按 18 个重点关键词检索。
 
 ### 完整阅读
 
@@ -4236,16 +4236,16 @@ v0.2 的 P0 阶段已经完成编号、风险检查与 pending 登记等基础�
 
 ### 1 分钟
 
-本目录是 22 本书籍验证案例的候选暂存，不直接进入统一案例总表。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+本目录是 22 本书籍验证案例的候选暂存，不直接进入历史案例来源。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 
 ### 5 分钟
 
 - 来源要点（导航摘录，不得视为当前断言）：主题：22 本书籍验证案例候选 · 暂存层
-- 来源要点（导航摘录，不得视为当前断言）：本目录是 22 本书籍验证案例的候选暂存，不直接进入统一案例总表。
+- 来源要点（导航摘录，不得视为当前断言）：本目录是 22 本书籍验证案例的候选暂存，不直接进入历史案例来源。
 - 来源要点（导航摘录，不得视为当前断言）：book-case-candidates.md：可读版 22 候选。
 - 来源要点（导航摘录，不得视为当前断言）：source-manifest.md：来源文件清单。
 - 来源要点（导航摘录，不得视为当前断言）：extraction-audit.md：抽取审计（计数核对）。
-- 来源要点（导航摘录，不得视为当前断言）：下一步（待 GPT 指令）：逐本复核后，给通过者分配 C 编号、写入 统一案例总表/。
+- 来源要点（导航摘录，不得视为当前断言）：下一步（待 GPT 指令）：逐本复核后，给通过者分配 C 编号、写入 已迁移的历史案例来源/。
 
 ### 完整阅读
 
@@ -4585,7 +4585,7 @@ Task 99 reuses the task-98 governance layer and expands discovery to executable 
 ### 5 分钟
 
 - 来源要点（导航摘录，不得视为当前断言）：主题：C-0808 职称硬门槛裹挟青年教师索引可见性验证
-- 来源要点（导航摘录，不得视为当前断言）：索引文件：统一案例总表/INDEX.md
+- 来源要点（导航摘录，不得视为当前断言）：索引文件：已迁移的历史案例来源/INDEX.md
 - 来源要点（导航摘录，不得视为当前断言）：C-0808 出现在 INDEX 第 810 行：
 - 来源要点（导航摘录，不得视为当前断言）：| C-0808 | 职称硬门槛裹挟青年教师 | 职称硬门槛使青年教师可拒绝性趋零，结构裹挟大于主观意愿。 |
 - 来源要点（导航摘录，不得视为当前断言）：案例总数已同步：791 → 792（INDEX 头部计数）
@@ -4945,11 +4945,11 @@ D598's complete legacy body was recovered and read. It describes prolonged high 
 
 ### 1 分钟
 
-复核对象：NF-X1 指标排名隐性分层、NF-X2 刷分博弈、NF-X3 指标驱动噪声累积 来源：outputs/collisions/20260708-cross-domain-smoke-test/、outputs/audit/cross-domain-smoke-test-audit-20260708.md 基线函数：D597 量化指标替代真实价值（统一函数总表/0607-D597-量化指标替代真实价值.md） 判定框架：Ψ₀ 六维（C / M / Iiso / Lmeta / Gδ / Pmeta） 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+复核对象：NF-X1 指标排名隐性分层、NF-X2 刷分博弈、NF-X3 指标驱动噪声累积 来源：outputs/collisions/20260708-cross-domain-smoke-test/、outputs/audit/cross-domain-smoke-test-audit-20260708.md 基线函数：D597 量化指标替代真实价值（已迁移的历史函数来源/0607-D597-量化指标替代真实价值.md） 判定框架：Ψ₀ 六维（C / M / Iiso / Lmeta / Gδ / Pmeta） 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 
 ### 5 分钟
 
-- 来源要点（导航摘录，不得视为当前断言）：复核对象：NF-X1 指标排名隐性分层、NF-X2 刷分博弈、NF-X3 指标驱动噪声累积 来源：outputs/collisions/20260708-cross-domain-smoke-test/、outputs/audit/cross-domain-smoke-test-audit-20260708.md 基线函数：D597 量化指标替代真实价值（统一函数总表/0607-D597-量化指标替代真实价值.md） 判定框架：Ψ₀ 六维（C / M / Iiso / Lmeta / Gδ / Pmeta）
+- 来源要点（导航摘录，不得视为当前断言）：复核对象：NF-X1 指标排名隐性分层、NF-X2 刷分博弈、NF-X3 指标驱动噪声累积 来源：outputs/collisions/20260708-cross-domain-smoke-test/、outputs/audit/cross-domain-smoke-test-audit-20260708.md 基线函数：D597 量化指标替代真实价值（已迁移的历史函数来源/0607-D597-量化指标替代真实价值.md） 判定框架：Ψ₀ 六维（C / M / Iiso / Lmeta / Gδ / Pmeta）
 - 来源要点（导航摘录，不得视为当前断言）：主题：查重结果（全函数表 618 条）
 - 来源要点（导航摘录，不得视为当前断言）：模糊相关命中（已逐条核对边界，均非同构）：
 - 来源要点（导航摘录，不得视为当前断言）：「分层」命中 D94（向下兼容长期损耗，兼容成本）、D154（分层编码优于扁平化，信息保真中继）、D17（情绪信号分层）等——均不描述"量化排名制造隐性社会/组织分层"。
@@ -5130,7 +5130,7 @@ D583 文件中含有历史遗留的 macOS 本机绝对路径，作为原始来�
 - 来源要点（导航摘录，不得视为当前断言）：仓库：Arvin-liu/when-systems-catch-fire
 - 来源要点（导航摘录，不得视为当前断言）：基线 main SHA：895c9895b7f7587a0db26f00619bbdd272204df1
 - 来源要点（导航摘录，不得视为当前断言）：分支：fix/d583-portable-source-reference-20260711
-- 来源要点（导航摘录，不得视为当前断言）：目标文件：统一函数总表/0593-D583-认知肌肉锻炼.md
+- 来源要点（导航摘录，不得视为当前断言）：目标文件：已迁移的历史函数来源/0593-D583-认知肌肉锻炼.md
 
 ### 完整阅读
 
@@ -5151,7 +5151,7 @@ D583 文件中含有历史遗留的 macOS 本机绝对路径，作为原始来�
 - 来源要点（导航摘录，不得视为当前断言）：两张表版本同步维护已完成（提交 aa307e61，2026-07-09 00:30）。
 - 来源要点（导航摘录，不得视为当前断言）：当前入口统计：函数表 617 个正式函数，案例表 804 个正式案例，更新时间 2026-07-09 00:30。
 - 来源要点（导航摘录，不得视为当前断言）：已确认：D595-D599 已入函数表；C-0807-C-0809 已入案例表；README、函数 INDEX、案例 INDEX 已同步。
-- 来源要点（导航摘录，不得视为当前断言）：本轮任务：只读审计统一函数总表与统一案例总表的单条 MD 写作结构，比较旧条目与 2026-07-08 新增条目差异，产出统一模板草案。
+- 来源要点（导航摘录，不得视为当前断言）：本轮任务：只读审计历史函数来源与历史案例来源的单条 MD 写作结构，比较旧条目与 2026-07-08 新增条目差异，产出统一模板草案。
 - 来源要点（导航摘录，不得视为当前断言）：不修改函数表、案例表、README、INDEX、data、schema、P1 数据、历史审计、碰撞流程；不新增函数/案例；不迁移格式、不回填。
 
 ### 完整阅读
@@ -5174,7 +5174,7 @@ MF-0001~0005 是 Codespace 救援函数表中 Section 0 自举元函数（MF-000
 - 来源要点（导航摘录，不得视为当前断言）：正式函数表目录搜索 5 个关键词（正向自举通道/反向自举通道/正反互斥判定器/自举嵌套判定器/自举收敛判定器）全部 0 命中；
 - 来源要点（导航摘录，不得视为当前断言）：D141（0190-D141-自举元函数.md）仅对自身函数做正反向收敛检查，并未以独立条目或等价命名定义这 5 个内部子通道；
 - 来源要点（导航摘录，不得视为当前断言）：因此这 5 个是 MF-0000 的内部结构件，而非普通重复函数，具备独立结构价值，应补入 Section 0。
-- 来源要点（导航摘录，不得视为当前断言）：统一函数总表/ 下新增 5 个独立条目（采用 0000- 前缀以归入 Section 0 内部层，不与 D/A/T 层编号撞车）：
+- 来源要点（导航摘录，不得视为当前断言）：已迁移的历史函数来源/ 下新增 5 个独立条目（采用 0000- 前缀以归入 Section 0 内部层，不与 D/A/T 层编号撞车）：
 
 ### 完整阅读
 
@@ -5646,7 +5646,7 @@ Status: candidate derived representation. 边界：This is a conservative naviga
 - 来源要点（导航摘录，不得视为当前断言）：outputs/audit/cross-domain-smoke-test-audit-20260708.md（跨域 smoke test 流程审计）
 - 来源要点（导航摘录，不得视为当前断言）：outputs/audit/cross-domain-candidate-function-review-20260708.md（候选函数 Ψ₀ 六维复核报告）
 - 来源要点（导航摘录，不得视为当前断言）：outputs/collisions/20260708-cross-domain-smoke-test/（社会学/自然科学/历史学三领域碰撞报告及跨域合成）
-- 来源要点（导航摘录，不得视为当前断言）：统一函数总表/0607-D597-量化指标替代真实价值.md（基线函数）
+- 来源要点（导航摘录，不得视为当前断言）：已迁移的历史函数来源/0607-D597-量化指标替代真实价值.md（基线函数）
 - 来源要点（导航摘录，不得视为当前断言）：当前最大 D 编号为 D598（0608-D598-系统性钝化），D599 空缺 → NF-X2 顺延为 D599。
 
 ### 完整阅读
@@ -5969,7 +5969,7 @@ Status: 121Q32THISTORICAL. Iteration method 1.3.0 and interactive system map 0.3
 - 来源要点（导航摘录，不得视为当前断言）：状态：0.5.0 Current registry-derived navigation projection；0.4.0 与更早版本为 Historical。
 - 来源要点（导航摘录，不得视为当前断言）：project component registry + typed propagation topology + layout overlay → deterministic generator → materialized spec + repository SVG → .github/README.md / ordinary Markdown navigation
 - 来源要点（导航摘录，不得视为当前断言）：不要手改 materialized spec 或 SVG：
-- 来源要点（导航摘录，不得视为当前断言）：SVG 现在位于 docs/generated/ignition-system-map.svg，通过 README 和普通 Markdown 直接访问，不依赖独立部署站点。SVG 节点链接指向 GitHub 仓库 canonical 文件；若客户端不支持 SVG 内部热点，可使用本页的文本入口。
+- 来源要点（导航摘录，不得视为当前断言）：SVG 现在位于 docs/generated/ignition-system-architecture.svg，通过 README 和普通 Markdown 直接访问，不依赖独立部署站点。SVG 节点链接指向 GitHub 仓库 canonical 文件；若客户端不支持 SVG 内部热点，可使用本页的文本入口。它是当前唯一完整总架构图，不再并列维护另一张图。
 - 来源要点（导航摘录，不得视为当前断言）：节点身份、canonical target 与生命周期来自 component registry。
 - 来源要点（导航摘录，不得视为当前断言）：边的 relation class/domain 来自 propagation topology。
 

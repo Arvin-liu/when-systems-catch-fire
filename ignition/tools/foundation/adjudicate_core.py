@@ -9,6 +9,11 @@ import subprocess
 from collections import Counter
 from pathlib import Path
 
+try:
+    from tools.foundation.legacy_table_migration import current_or_archived_text
+except ModuleNotFoundError:
+    from legacy_table_migration import current_or_archived_text
+
 ROOT = Path(__file__).resolve().parents[2]
 OUT = ROOT / "data/foundation"
 REPORTS = ROOT / "reports/foundation-architecture"
@@ -336,7 +341,7 @@ def obligations_for(oid: str, object_type: str, claim_type: str):
 def make_record(obj: dict, first_seen: dict):
     oid = obj["id"]
     path = obj["legacy_path"]
-    text = (ROOT / path).read_text(encoding="utf-8", errors="replace")
+    text = current_or_archived_text(path) or ""
     title = obj["title"]
     expression = extract_expression(text)
     statement = extract_statement(text, title)
@@ -455,7 +460,7 @@ COMPONENTS = {
 
 
 def component_records(first_seen: dict):
-    text = (ROOT / ROOT_SOURCE).read_text(encoding="utf-8", errors="replace")
+    text = current_or_archived_text(ROOT_SOURCE) or ""
     first_commit = first_seen.get(ROOT_SOURCE)
     rows = []
     for stable_id, (title, object_type, claim_type, controlled) in COMPONENTS.items():
@@ -608,7 +613,7 @@ def build(check=False):
     for obj in objects:
         if not obj["id"].startswith("D"):
             continue
-        text = (ROOT / obj["legacy_path"]).read_text(encoding="utf-8", errors="replace")
+        text = current_or_archived_text(obj["legacy_path"]) or ""
         if matched_terms(obj["title"]) or matched_terms(text):
             high_risk_ids.add(obj["id"])
     required_ids |= high_risk_ids

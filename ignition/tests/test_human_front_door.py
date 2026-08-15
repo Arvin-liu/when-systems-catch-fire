@@ -30,9 +30,9 @@ class HumanFrontDoorTests(unittest.TestCase):
     def test_repository_front_doors_validate(self):
         result = validate_all()
         self.assertEqual(result["status"], "PASS")
-        # The canonical generator currently materializes 51 nodes.  This test
-        # must track the live projection rather than the retired 50-node count.
-        self.assertEqual(result["interactive_system_map_nodes"], 51)
+        # The canonical generator currently materializes 52 visible nodes;
+        # all remaining registry components are represented in coverage data.
+        self.assertEqual(result["interactive_system_map_nodes"], 52)
 
     def test_visible_result_sections_are_ordered_and_unfolded(self):
         validate_texts(self.readme, self.guide, self.current_state, self.human_reading)

@@ -4,6 +4,1051 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [def test_deterministic_packaging(self):](../../../function-os-candidate/v0.2/tests/test_n4_robust.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-6F22969A540D5AC8 / def test_deterministic_packaging(self): / IMPLICIT-6F22969A540D5AC8
+  - 来源：`function-os-candidate/v0.2/tests/test_n4_robust.py`
+  - 依赖：—；被引用：—
+- [def test_deterministic_rebuild_same_hashes(self):](../../../function-os-candidate/v0.2/tests/test_integration_full_chain.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-1FCA26E9A7E07EFB / def test_deterministic_rebuild_same_hashes(self): / IMPLICIT-1FCA26E9A7E07EFB
+  - 来源：`function-os-candidate/v0.2/tests/test_integration_full_chain.py`
+  - 依赖：—；被引用：—
+- [def test_diff_detects_relation_class_change_without_truth_upgrade():](../../../tests/test_multiscale_causal_fabric.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-35F3A5BDB676FCB2 / def test_diff_detects_relation_class_change_without_truth_upgrade(): / IMPLICIT-35F3A5BDB676FCB2
+  - 来源：`tests/test_multiscale_causal_fabric.py`
+  - 依赖：—；被引用：—
+- [def test_diff_external_refs_reject_duplicates_conflicts_and_local_collisions():](../../../tests/test_adaptive_relational_network_validation_contract.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-4E2DA5773F5DE45F / def test_diff_external_refs_reject_duplicates_conflicts_and_local_collisions(): / IMPLICIT-4E2DA5773F5DE45F
+  - 来源：`tests/test_adaptive_relational_network_validation_contract.py`
+  - 依赖：—；被引用：—
+- [def test_diff_local_reference_namespace_must_not_collide():](../../../tests/test_adaptive_relational_network_validation_contract.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-C10F7F9D85EEB9E9 / def test_diff_local_reference_namespace_must_not_collide(): / IMPLICIT-C10F7F9D85EEB9E9
+  - 来源：`tests/test_adaptive_relational_network_validation_contract.py`
+  - 依赖：—；被引用：—
+- [def test_diff_refs_must_be_local_or_declared_external_refs():](../../../tests/test_adaptive_relational_network_validation_contract.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-01C39B8DCC899E79 / def test_diff_refs_must_be_local_or_declared_external_refs(): / IMPLICIT-01C39B8DCC899E79
+  - 来源：`tests/test_adaptive_relational_network_validation_contract.py`
+  - 依赖：—；被引用：—
+- [def test_digest_mismatch_for_verified_source_rejected(self):](../../../tests/test_publication_provenance_attack.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-4FFDC2E16F7CA5B5 / def test_digest_mismatch_for_verified_source_rejected(self): / IMPLICIT-4FFDC2E16F7CA5B5
+  - 来源：`tests/test_publication_provenance_attack.py`
+  - 依赖：—；被引用：—
+- [def test_digest_mismatch_for_verified_source_rejected(self):](../../../tests/test_publication_provenance_attack.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-a5ca73f2382a5aee / def test_digest_mismatch_for_verified_source_rejected(self):
+  - 来源：`tests/test_publication_provenance_attack.py`
+  - 依赖：—；被引用：—
+- [def test_dimension_fixture_reference_fails_closed(self):](../../../tests/test_language_thought_plane.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-B4365F4F6FF2C8CC / def test_dimension_fixture_reference_fails_closed(self): / IMPLICIT-B4365F4F6FF2C8CC
+  - 来源：`tests/test_language_thought_plane.py`
+  - 依赖：—；被引用：—
+- [def test_directory_placement_is_not_evidence():](../../../tests/test_failure_case_evidence_gate.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-AE64AE68431BE5DE / def test_directory_placement_is_not_evidence(): / IMPLICIT-AE64AE68431BE5DE
+  - 来源：`tests/test_failure_case_evidence_gate.py`
+  - 依赖：—；被引用：—
+- [def test_directory_placement_is_not_evidence():](../../../tests/test_failure_case_evidence_gate.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-904f7d01198d0e57 / def test_directory_placement_is_not_evidence():
+  - 来源：`tests/test_failure_case_evidence_gate.py`
+  - 依赖：—；被引用：—
+- [def test_discovery_authoritative_is_two_cjk_tables(self) -> None:](../../../tests/foundation/test_trigger_coverage.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-200FFFFCED71C7DC / def test_discovery_authoritative_is_two_cjk_tables(self) -> None: / IMPLICIT-200FFFFCED71C7DC
+  - 来源：`tests/foundation/test_trigger_coverage.py`
+  - 依赖：—；被引用：—
+- [def test_discovery_nonauthoritative_disjoint_from_authoritative(self) -> None:](../../../tests/foundation/test_trigger_coverage.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-12F618B4375CBD37 / def test_discovery_nonauthoritative_disjoint_from_authoritative(self) -> None: / IMPLICIT-12F618B4375CBD37
+  - 来源：`tests/foundation/test_trigger_coverage.py`
+  - 依赖：—；被引用：—
+- [def test_discovery_v2_sentinels(self):](../../../tests/foundation/test_function_asset_closure.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-E117B9B170E54672 / def test_discovery_v2_sentinels(self): / IMPLICIT-E117B9B170E54672
+  - 来源：`tests/foundation/test_function_asset_closure.py`
+  - 依赖：—；被引用：—
+- [def test_do_not_schedule_blocked():](../../../tests/iteration_planner/test_planner.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-29D95CC3A2B7A2DE / def test_do_not_schedule_blocked(): / IMPLICIT-29D95CC3A2B7A2DE
+  - 来源：`tests/iteration_planner/test_planner.py`
+  - 依赖：—；被引用：—
+- [def test_domain_unsupported(self):](../../../function-os-candidate/v0.2/tests/test_n3_robust.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-49F3FCB80FB70951 / def test_domain_unsupported(self): / IMPLICIT-49F3FCB80FB70951
+  - 来源：`function-os-candidate/v0.2/tests/test_n3_robust.py`
+  - 依赖：—；被引用：—
+- [def test_draft_cannot_be_current(self):](../../../tests/test_iteration_sync.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-974CBF9C0C5A26A1 / def test_draft_cannot_be_current(self): / IMPLICIT-974CBF9C0C5A26A1
+  - 来源：`tests/test_iteration_sync.py`
+  - 依赖：—；被引用：—
+- [def test_draft_cannot_claim_post_merge_production_attestation(self):](../../../tests/test_iteration_sync.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-85EC7E4E02620138 / def test_draft_cannot_claim_post_merge_production_attestation(self): / IMPLICIT-85EC7E4E02620138
+  - 来源：`tests/test_iteration_sync.py`
+  - 依赖：—；被引用：—
+- [def test_dual_authorization(self):](../../../tests/test_registered_generator_attack.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-7286B0141AE1E9CF / def test_dual_authorization(self): / IMPLICIT-7286B0141AE1E9CF
+  - 来源：`tests/test_registered_generator_attack.py`
+  - 依赖：—；被引用：—
+- [def test_duplicate_action_rejected(self): self.bad(lambda d:d.update({"responsibility_federations":\[copy.deepcopy(d\["responsibility_federations"\]\[1\]),copy.deepcopy(d\["responsibility_federations"\]\[1\])\]}),"exactly once")](../../../tests/test_epistemic_governance_relationships.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-6D8DC9B6CBA60EA5 / def test_duplicate_action_rejected(self): self.bad(lambda d:d.update({"responsibility_federations":\[copy.deepcopy(d\["responsibility_federations"\]\[1\]),copy.deepcopy(d\["responsibility_federations"\]\[1\])\]}),"exactly once") / IMPLICIT-6D8DC9B6CBA60EA5
+  - 来源：`tests/test_epistemic_governance_relationships.py`
+  - 依赖：—；被引用：—
+- [def test_duplicate_archive_overwrites(self):](../../../function-os-candidate/v0.2/tests/test_n6_robust.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-E6F5972C4CCCC27B / def test_duplicate_archive_overwrites(self): / IMPLICIT-E6F5972C4CCCC27B
+  - 来源：`function-os-candidate/v0.2/tests/test_n6_robust.py`
+  - 依赖：—；被引用：—
+- [def test_duplicate_authority_injection(self): self.bad(lambda d:d\["authorities"\].append(copy.deepcopy(d\["authorities"\]\[0\])),"unique and inventory exact")](../../../tests/test_epistemic_governance_relationships.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-414D25B6D817B803 / def test_duplicate_authority_injection(self): self.bad(lambda d:d\["authorities"\].append(copy.deepcopy(d\["authorities"\]\[0\])),"unique and inventory exact") / IMPLICIT-414D25B6D817B803
+  - 来源：`tests/test_epistemic_governance_relationships.py`
+  - 依赖：—；被引用：—
+- [def test_duplicate_create_rejected(self):](../../../function-os-candidate/v0.2/tests/test_n9_robust.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-5A0D36222E8CCAC8 / def test_duplicate_create_rejected(self): / IMPLICIT-5A0D36222E8CCAC8
+  - 来源：`function-os-candidate/v0.2/tests/test_n9_robust.py`
+  - 依赖：—；被引用：—
+- [def test_duplicate_ids_are_not_hidden_by_sets():](../../../tests/test_adaptive_relational_network_validation_contract.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-57F108BBCA9FFCA0 / def test_duplicate_ids_are_not_hidden_by_sets(): / IMPLICIT-57F108BBCA9FFCA0
+  - 来源：`tests/test_adaptive_relational_network_validation_contract.py`
+  - 依赖：—；被引用：—
+- [def test_duplicate_impact_surface_is_rejected(self):](../../../tests/test_iteration_sync.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-5115CA4777B2F98F / def test_duplicate_impact_surface_is_rejected(self): / IMPLICIT-5115CA4777B2F98F
+  - 来源：`tests/test_iteration_sync.py`
+  - 依赖：—；被引用：—
+- [def test_duplicate_non_action_cannot_replace_action(self): self.bad(lambda d:d.update({"responsibility_federations":\[copy.deepcopy(d\["responsibility_federations"\]\[0\]),copy.deepcopy(d\["responsibility_federations"\]\[0\])\]}),"exactly once")](../../../tests/test_epistemic_governance_relationships.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-AD034D17895E3996 / def test_duplicate_non_action_cannot_replace_action(self): self.bad(lambda d:d.update({"responsibility_federations":\[copy.deepcopy(d\["responsibility_federations"\]\[0\]),copy.deepcopy(d\["responsibility_federations"\]\[0\])\]}),"exactly once") / IMPLICIT-AD034D17895E3996
+  - 来源：`tests/test_epistemic_governance_relationships.py`
+  - 依赖：—；被引用：—
+- [def test_duplicate_public_route(self): self.bad(lambda d:d\["public_surface_routes"\].append(copy.deepcopy(d\["public_surface_routes"\]\[0\])),"unique and inventory exact")](../../../tests/test_epistemic_governance_relationships.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-44489837FE77FA3B / def test_duplicate_public_route(self): self.bad(lambda d:d\["public_surface_routes"\].append(copy.deepcopy(d\["public_surface_routes"\]\[0\])),"unique and inventory exact") / IMPLICIT-44489837FE77FA3B
+  - 来源：`tests/test_epistemic_governance_relationships.py`
+  - 依赖：—；被引用：—
+- [def test_duplicate_relation_id(self): self.bad(lambda d:d\["relationships"\]\[1\].update({"id":"r-provenance"}),"unique and inventory exact")](../../../tests/test_epistemic_governance_relationships.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-355AF7B825968D5C / def test_duplicate_relation_id(self): self.bad(lambda d:d\["relationships"\]\[1\].update({"id":"r-provenance"}),"unique and inventory exact") / IMPLICIT-355AF7B825968D5C
+  - 来源：`tests/test_epistemic_governance_relationships.py`
+  - 依赖：—；被引用：—
+- [def test_duplicate_relation_injection(self): self.bad(lambda d:d\["relationships"\].append(copy.deepcopy(d\["relationships"\]\[0\])),"unique and inventory exact")](../../../tests/test_epistemic_governance_relationships.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-300139491C12ED31 / def test_duplicate_relation_injection(self): self.bad(lambda d:d\["relationships"\].append(copy.deepcopy(d\["relationships"\]\[0\])),"unique and inventory exact") / IMPLICIT-300139491C12ED31
+  - 来源：`tests/test_epistemic_governance_relationships.py`
+  - 依赖：—；被引用：—
+- [def test_duplicate_seal_binding_is_rejected(self):](../../../tests/test_iteration_sync.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-1297C8B3F3752E75 / def test_duplicate_seal_binding_is_rejected(self): / IMPLICIT-1297C8B3F3752E75
+  - 来源：`tests/test_iteration_sync.py`
+  - 依赖：—；被引用：—
+- [def test_duplicate_semantic_authority_rejected(self):](../../../tests/test_generated_output_authority_negative.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-5CAF21283A11E81F / def test_duplicate_semantic_authority_rejected(self): / IMPLICIT-5CAF21283A11E81F
+  - 来源：`tests/test_generated_output_authority_negative.py`
+  - 依赖：—；被引用：—
+- [def test_duplicate_task_binding_is_rejected(self):](../../../tests/test_iteration_sync.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-CB935FE6723ED659 / def test_duplicate_task_binding_is_rejected(self): / IMPLICIT-CB935FE6723ED659
+  - 来源：`tests/test_iteration_sync.py`
+  - 依赖：—；被引用：—
+- [def test_duplicate_unknown_and_wrong_authority_attestations_are_rejected(self):](../../../tests/test_iteration_sync.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-3B74E478A4A3DBFB / def test_duplicate_unknown_and_wrong_authority_attestations_are_rejected(self): / IMPLICIT-3B74E478A4A3DBFB
+  - 来源：`tests/test_iteration_sync.py`
+  - 依赖：—；被引用：—
+- [def test_e2e():](../../../function-os-candidate/v0.1/tests/test_e2e_pipeline.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-645FBBD53386E265 / def test_e2e(): / IMPLICIT-645FBBD53386E265
+  - 来源：`function-os-candidate/v0.1/tests/test_e2e_pipeline.py`
+  - 依赖：—；被引用：—
+- [def test_e_historical_typo_allows_machine_checked_map_no_change(self):](../../../tests/test_change_propagation.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-EB7E9D40DF967A66 / def test_e_historical_typo_allows_machine_checked_map_no_change(self): / IMPLICIT-EB7E9D40DF967A66
+  - 来源：`tests/test_change_propagation.py`
+  - 依赖：—；被引用：—
+- [def test_e_to_m_laundering(self): self.bad(lambda d:d\["relationships"\]\[0\].update({"allowed_effect":"M_UPGRADE"}),"schema")](../../../tests/test_epistemic_governance_relationships.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-BA9F9F2D62905992 / def test_e_to_m_laundering(self): self.bad(lambda d:d\["relationships"\]\[0\].update({"allowed_effect":"M_UPGRADE"}),"schema") / IMPLICIT-BA9F9F2D62905992
+  - 来源：`tests/test_epistemic_governance_relationships.py`
+  - 依赖：—；被引用：—
+- [def test_each_capability_has_direct_readme_link(self):](../../../tests/test_human_front_door.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-875D29899F0DF0B9 / def test_each_capability_has_direct_readme_link(self): / IMPLICIT-875D29899F0DF0B9
+  - 来源：`tests/test_human_front_door.py`
+  - 依赖：—；被引用：—
+- [def test_embedded_current_head_claim_is_rejected(self):](../../../tests/test_iteration_sync.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-56C595E09F053F03 / def test_embedded_current_head_claim_is_rejected(self): / IMPLICIT-56C595E09F053F03
+  - 来源：`tests/test_iteration_sync.py`
+  - 依赖：—；被引用：—
+- [def test_embedding_probe_has_independent_strict_contract():](../../../tests/test_adaptive_relational_network_validation_contract.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-45102726620E6D9C / def test_embedding_probe_has_independent_strict_contract(): / IMPLICIT-45102726620E6D9C
+  - 来源：`tests/test_adaptive_relational_network_validation_contract.py`
+  - 依赖：—；被引用：—
+- [def test_embedding_summary_keeps_axes_independent():](../../../tests/test_adaptive_relational_network_operational.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-176773E5A7441C9B / def test_embedding_summary_keeps_axes_independent(): / IMPLICIT-176773E5A7441C9B
+  - 来源：`tests/test_adaptive_relational_network_operational.py`
+  - 依赖：—；被引用：—
+- [def test_empty_candidates(self):](../../../function-os-candidate/v0.2/tests/test_n8_robust.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-0CF018E9B475C9D0 / def test_empty_candidates(self): / IMPLICIT-0CF018E9B475C9D0
+  - 来源：`function-os-candidate/v0.2/tests/test_n8_robust.py`
+  - 依赖：—；被引用：—
+- [def test_empty_claim_ceiling_provenance_alternatives_and_residue_are_rejected():](../../../tests/test_adaptive_relational_network_validation_contract.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-B09A02857053779C / def test_empty_claim_ceiling_provenance_alternatives_and_residue_are_rejected(): / IMPLICIT-B09A02857053779C
+  - 来源：`tests/test_adaptive_relational_network_validation_contract.py`
+  - 依赖：—；被引用：—
+- [def test_empty_effects_declared(self):](../../../function-os-candidate/v0.2/tests/test_n1_robust.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-16217B712706C39C / def test_empty_effects_declared(self): / IMPLICIT-16217B712706C39C
+  - 来源：`function-os-candidate/v0.2/tests/test_n1_robust.py`
+  - 依赖：—；被引用：—
+- [def test_empty_path_false_and_single_edge_true():](../../../tests/test_adaptive_relational_network_validation_contract.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-DAAADFC67F5CE491 / def test_empty_path_false_and_single_edge_true(): / IMPLICIT-DAAADFC67F5CE491
+  - 来源：`tests/test_adaptive_relational_network_validation_contract.py`
+  - 依赖：—；被引用：—
+- [def test_encode(self):](../../../function-os-candidate/v0.2/tests/test_n1_through_n4.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-B4FF02EA0A0FE47E / def test_encode(self): / IMPLICIT-B4FF02EA0A0FE47E
+  - 来源：`function-os-candidate/v0.2/tests/test_n1_through_n4.py`
+  - 依赖：—；被引用：—
+- [def test_encode_basic(self):](../../../function-os-candidate/v0.2/tests/test_n2_robust.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-597E75500300B423 / def test_encode_basic(self): / IMPLICIT-597E75500300B423
+  - 来源：`function-os-candidate/v0.2/tests/test_n2_robust.py`
+  - 依赖：—；被引用：—
+- [def test_entry_id_must_equal_source_category(self):](../../../tests/test_publication_provenance_attack.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-A96CD17697D78997 / def test_entry_id_must_equal_source_category(self): / IMPLICIT-A96CD17697D78997
+  - 来源：`tests/test_publication_provenance_attack.py`
+  - 依赖：—；被引用：—
+- [def test_entry_id_must_exist_in_registry(self):](../../../tests/test_publication_provenance_attack.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-4F49223BF2EC5C98 / def test_entry_id_must_exist_in_registry(self): / IMPLICIT-4F49223BF2EC5C98
+  - 来源：`tests/test_publication_provenance_attack.py`
+  - 依赖：—；被引用：—
+- [def test_era_aware_recompute_q32i_matches_persisted_not_live(self):](../../../tests/test_iteration_sync.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-F0FC3FB8ED76267F / def test_era_aware_recompute_q32i_matches_persisted_not_live(self): / IMPLICIT-F0FC3FB8ED76267F
+  - 来源：`tests/test_iteration_sync.py`
+  - 依赖：—；被引用：—
+- [def test_era_resolution_fails_closed_on_tampered_demo(self):](../../../tests/test_phase_e_candidate.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-922CDE905758BADC / def test_era_resolution_fails_closed_on_tampered_demo(self): / IMPLICIT-922CDE905758BADC
+  - 来源：`tests/test_phase_e_candidate.py`
+  - 依赖：—；被引用：—
+- [def test_every_declared_seed_exists_in_repo(self):](../../../tests/test_diff_coverage_gate.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-31F5F512FFC5919F / def test_every_declared_seed_exists_in_repo(self): / IMPLICIT-31F5F512FFC5919F
+  - 来源：`tests/test_diff_coverage_gate.py`
+  - 依赖：—；被引用：—
+- [def test_every_entry_sovereignty_not_asserted(self):](../../../tests/test_jurisdiction_sovereignty_neutral.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-7CEE4F2B57873A22 / def test_every_entry_sovereignty_not_asserted(self): / IMPLICIT-7CEE4F2B57873A22
+  - 来源：`tests/test_jurisdiction_sovereignty_neutral.py`
+  - 依赖：—；被引用：—
+- [def test_every_example_has_human_readable_companion():](../../../tests/test_multiscale_causal_fabric.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-5622415CAA7B3318 / def test_every_example_has_human_readable_companion(): / IMPLICIT-5622415CAA7B3318
+  - 来源：`tests/test_multiscale_causal_fabric.py`
+  - 依赖：—；被引用：—
+- [def test_every_generated_output_exists_in_repo(self):](../../../tests/test_diff_coverage_gate.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-62F799DEDDBA2E5F / def test_every_generated_output_exists_in_repo(self): / IMPLICIT-62F799DEDDBA2E5F
+  - 来源：`tests/test_diff_coverage_gate.py`
+  - 依赖：—；被引用：—
+- [def test_every_id_bearing_collection_rejects_duplicates():](../../../tests/test_adaptive_relational_network_validation_contract.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-C4EB615BBB2861F5 / def test_every_id_bearing_collection_rejects_duplicates(): / IMPLICIT-C4EB615BBB2861F5
+  - 来源：`tests/test_adaptive_relational_network_validation_contract.py`
+  - 依赖：—；被引用：—
+- [def test_every_jurisdiction_treaty_platform_has_provenance(self):](../../../tests/test_source_rights_gate_enum_consistency.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-3141F7008540C583 / def test_every_jurisdiction_treaty_platform_has_provenance(self): / IMPLICIT-3141F7008540C583
+  - 来源：`tests/test_source_rights_gate_enum_consistency.py`
+  - 依赖：—；被引用：—
+- [def test_every_registry_category_resolves_via_gate(self):](../../../tests/test_source_rights_gate_enum_consistency.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-F93FD1334C8900E5 / def test_every_registry_category_resolves_via_gate(self): / IMPLICIT-F93FD1334C8900E5
+  - 来源：`tests/test_source_rights_gate_enum_consistency.py`
+  - 依赖：—；被引用：—
+- [def test_every_source_rights_category_has_provenance(self):](../../../tests/test_source_rights_gate_enum_consistency.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-19CF2316DECB3934 / def test_every_source_rights_category_has_provenance(self): / IMPLICIT-19CF2316DECB3934
+  - 来源：`tests/test_source_rights_gate_enum_consistency.py`
+  - 依赖：—；被引用：—
+- [def test_evidence_retrieval_cannot_upgrade_truth(self):](../../../tests/test_reos_vnext_minimal_kernel.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-0B422A828691B513 / def test_evidence_retrieval_cannot_upgrade_truth(self): / IMPLICIT-0B422A828691B513
+  - 来源：`tests/test_reos_vnext_minimal_kernel.py`
+  - 依赖：—；被引用：—
+- [def test_evidence_retrieval_cannot_upgrade_truth(self):](../../../tests/test_reos_vnext_minimal_kernel.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-07079331a3d4fead / def test_evidence_retrieval_cannot_upgrade_truth(self):
+  - 来源：`tests/test_reos_vnext_minimal_kernel.py`
+  - 依赖：—；被引用：—
+- [def test_execute_ok(self):](../../../function-os-candidate/v0.2/tests/test_n5_robust.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-22339B1D4AA00DD2 / def test_execute_ok(self): / IMPLICIT-22339B1D4AA00DD2
+  - 来源：`function-os-candidate/v0.2/tests/test_n5_robust.py`
+  - 依赖：—；被引用：—
+- [def test_expression_extraction(self):](../../../function-os-candidate/v0.2/tests/test_n2_robust.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-8B8274A72DE9696A / def test_expression_extraction(self): / IMPLICIT-8B8274A72DE9696A
+  - 来源：`function-os-candidate/v0.2/tests/test_n2_robust.py`
+  - 依赖：—；被引用：—
+- [def test_external_surface_cannot_be_repository_changed_path(self):](../../../tests/test_iteration_sync.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-BAD55663EFA900A7 / def test_external_surface_cannot_be_repository_changed_path(self): / IMPLICIT-BAD55663EFA900A7
+  - 来源：`tests/test_iteration_sync.py`
+  - 依赖：—；被引用：—
+- [def test_external_surface_that_blocks_accepted_rejects_pending(self):](../../../tests/test_iteration_sync.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-CE4ECB826478B559 / def test_external_surface_that_blocks_accepted_rejects_pending(self): / IMPLICIT-CE4ECB826478B559
+  - 来源：`tests/test_iteration_sync.py`
+  - 依赖：—；被引用：—
+- [def test_external_validity_machine_launder(self): self.bad(lambda d:next(o for o in d\["obligation_inventory"\] if o\["id"\]=="EXTERNAL_VALIDITY").update({"coverage":"MACHINE_ENFORCED"}),"exactly match canonical obligation")](../../../tests/test_epistemic_governance_relationships.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-840579BA35812683 / def test_external_validity_machine_launder(self): self.bad(lambda d:next(o for o in d\["obligation_inventory"\] if o\["id"\]=="EXTERNAL_VALIDITY").update({"coverage":"MACHINE_ENFORCED"}),"exactly match canonical obligation") / IMPLICIT-840579BA35812683
+  - 来源：`tests/test_epistemic_governance_relationships.py`
+  - 依赖：—；被引用：—
+- [def test_extra_unknown_field_rejected_by_schema(self):](../../../tests/test_publication_gate_fail_closed.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-02EF0A1114601345 / def test_extra_unknown_field_rejected_by_schema(self): / IMPLICIT-02EF0A1114601345
+  - 来源：`tests/test_publication_gate_fail_closed.py`
+  - 依赖：—；被引用：—
+- [def test_f10_both_lineage_endpoints_are_ancestors(self):](../../../tests/test_change_propagation.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-91218F8882B953DF / def test_f10_both_lineage_endpoints_are_ancestors(self): / IMPLICIT-91218F8882B953DF
+  - 来源：`tests/test_change_propagation.py`
+  - 依赖：—；被引用：—
+- [def test_f10_diff_coverage_does_not_shrink_critical_assets(self):](../../../tests/test_change_propagation.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-430540857EDAB403 / def test_f10_diff_coverage_does_not_shrink_critical_assets(self): / IMPLICIT-430540857EDAB403
+  - 来源：`tests/test_change_propagation.py`
+  - 依赖：—；被引用：—
+- [def test_f10_generated_output_authority_key_files_must_exist(self):](../../../tests/test_change_propagation.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-B4A39B581B706375 / def test_f10_generated_output_authority_key_files_must_exist(self): / IMPLICIT-B4A39B581B706375
+  - 来源：`tests/test_change_propagation.py`
+  - 依赖：—；被引用：—
+- [def test_f10_seal_must_bind_current_head(self):](../../../tests/test_change_propagation.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-83D74B449B785AD1 / def test_f10_seal_must_bind_current_head(self): / IMPLICIT-83D74B449B785AD1
+  - 来源：`tests/test_change_propagation.py`
+  - 依赖：—；被引用：—
+- [def test_f11_attack_conflicting_digest_fields(self):](../../../tests/test_seal_freshness.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-9E8FB1369BF780EF / def test_f11_attack_conflicting_digest_fields(self): / IMPLICIT-9E8FB1369BF780EF
+  - 来源：`tests/test_seal_freshness.py`
+  - 依赖：—；被引用：—
+- [def test_f11_attack_historical_head_as_live_final(self):](../../../tests/test_seal_freshness.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-BB5CAD6F0D5C5574 / def test_f11_attack_historical_head_as_live_final(self): / IMPLICIT-BB5CAD6F0D5C5574
+  - 来源：`tests/test_seal_freshness.py`
+  - 依赖：—；被引用：—
+- [def test_f11_attack_no_self_sha_embedding(self):](../../../tests/test_seal_freshness.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-4B9022AFF63830D9 / def test_f11_attack_no_self_sha_embedding(self): / IMPLICIT-4B9022AFF63830D9
+  - 来源：`tests/test_seal_freshness.py`
+  - 依赖：—；被引用：—
+- [def test_f11_attack_seal_closure_hash_matches_manifest(self):](../../../tests/test_seal_freshness.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-A056D33B5048935C / def test_f11_attack_seal_closure_hash_matches_manifest(self): / IMPLICIT-A056D33B5048935C
+  - 来源：`tests/test_seal_freshness.py`
+  - 依赖：—；被引用：—
+- [def test_f11_attack_seal_map_edge_count_drift(self):](../../../tests/test_seal_freshness.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-39890F9668D45708 / def test_f11_attack_seal_map_edge_count_drift(self): / IMPLICIT-39890F9668D45708
+  - 来源：`tests/test_seal_freshness.py`
+  - 依赖：—；被引用：—
+- [def test_f11_attack_stale_manifest_closure_hash(self):](../../../tests/test_seal_freshness.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-BC3A7DB1D58C182F / def test_f11_attack_stale_manifest_closure_hash(self): / IMPLICIT-BC3A7DB1D58C182F
+  - 来源：`tests/test_seal_freshness.py`
+  - 依赖：—；被引用：—
+- [def test_f11_attack_stale_resolved_components(self):](../../../tests/test_seal_freshness.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-C983396CB0A05072 / def test_f11_attack_stale_resolved_components(self): / IMPLICIT-C983396CB0A05072
+  - 来源：`tests/test_seal_freshness.py`
+  - 依赖：—；被引用：—
+- [def test_f11_attack_stale_resolved_components(self):](../../../tests/test_seal_freshness.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-518a6785e49670d5 / def test_f11_attack_stale_resolved_components(self):
+  - 来源：`tests/test_seal_freshness.py`
+  - 依赖：—；被引用：—
+- [def test_f11_attack_stale_seed_paths(self):](../../../tests/test_seal_freshness.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-506EDB903A483620 / def test_f11_attack_stale_seed_paths(self): / IMPLICIT-506EDB903A483620
+  - 来源：`tests/test_seal_freshness.py`
+  - 依赖：—；被引用：—
+- [def test_f11_current_manifest_seal_consistent(self):](../../../tests/test_seal_freshness.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-014B97BDE1950478 / def test_f11_current_manifest_seal_consistent(self): / IMPLICIT-014B97BDE1950478
+  - 来源：`tests/test_seal_freshness.py`
+  - 依赖：—；被引用：—
+- [def test_f11_historical_digest_evidence_labeled(self):](../../../tests/test_seal_freshness.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-CC25BC2267814668 / def test_f11_historical_digest_evidence_labeled(self): / IMPLICIT-CC25BC2267814668
+  - 来源：`tests/test_seal_freshness.py`
+  - 依赖：—；被引用：—
+- [def test_f11_historical_digest_evidence_labeled(self):](../../../tests/test_seal_freshness.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-037c828e3c597924 / def test_f11_historical_digest_evidence_labeled(self):
+  - 来源：`tests/test_seal_freshness.py`
+  - 依赖：—；被引用：—
+- [def test_f12_attack_candidate_seal_accepted(self):](../../../tests/test_seal_freshness.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-0898E032C1A311BD / def test_f12_attack_candidate_seal_accepted(self): / IMPLICIT-0898E032C1A311BD
+  - 来源：`tests/test_seal_freshness.py`
+  - 依赖：—；被引用：—
+- [def test_f12_attack_candidate_seal_current(self):](../../../tests/test_seal_freshness.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-1C4EAB6E371C60BC / def test_f12_attack_candidate_seal_current(self): / IMPLICIT-1C4EAB6E371C60BC
+  - 来源：`tests/test_seal_freshness.py`
+  - 依赖：—；被引用：—
+- [def test_f12_attack_contract_embedded_live_digest_true(self):](../../../tests/test_seal_freshness.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-C786F45A80A6B2FA / def test_f12_attack_contract_embedded_live_digest_true(self): / IMPLICIT-C786F45A80A6B2FA
+  - 来源：`tests/test_seal_freshness.py`
+  - 依赖：—；被引用：—
+- [def test_f12_attack_contract_missing_required_field(self):](../../../tests/test_seal_freshness.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-BD0ED2542F3A7391 / def test_f12_attack_contract_missing_required_field(self): / IMPLICIT-BD0ED2542F3A7391
+  - 来源：`tests/test_seal_freshness.py`
+  - 依赖：—；被引用：—
+- [def test_f12_attack_historical_missing_pages_run(self):](../../../tests/test_seal_freshness.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-C392D8F8A0ABE133 / def test_f12_attack_historical_missing_pages_run(self): / IMPLICIT-C392D8F8A0ABE133
+  - 来源：`tests/test_seal_freshness.py`
+  - 依赖：—；被引用：—
+- [def test_f12_attack_historical_missing_subject_head(self):](../../../tests/test_seal_freshness.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-DD7A7B316FD2257B / def test_f12_attack_historical_missing_subject_head(self): / IMPLICIT-DD7A7B316FD2257B
+  - 来源：`tests/test_seal_freshness.py`
+  - 依赖：—；被引用：—
+- [def test_f12_attack_identical_dual_digests(self):](../../../tests/test_seal_freshness.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-EEF56A1187ECC00F / def test_f12_attack_identical_dual_digests(self): / IMPLICIT-EEF56A1187ECC00F
+  - 来源：`tests/test_seal_freshness.py`
+  - 依赖：—；被引用：—
+- [def test_f12_attack_pages_artifacts_unbound_digest(self):](../../../tests/test_seal_freshness.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-C413E8CBE0240809 / def test_f12_attack_pages_artifacts_unbound_digest(self): / IMPLICIT-C413E8CBE0240809
+  - 来源：`tests/test_seal_freshness.py`
+  - 依赖：—；被引用：—
+- [def test_f12_attack_pages_artifacts_unbound_digest(self):](../../../tests/test_seal_freshness.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-f84c01b843d7252f / def test_f12_attack_pages_artifacts_unbound_digest(self):
+  - 来源：`tests/test_seal_freshness.py`
+  - 依赖：—；被引用：—
+- [def test_f12_attack_self_sha_embedding(self):](../../../tests/test_seal_freshness.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-480CB40462FB1E4D / def test_f12_attack_self_sha_embedding(self): / IMPLICIT-480CB40462FB1E4D
+  - 来源：`tests/test_seal_freshness.py`
+  - 依赖：—；被引用：—
+- [def test_f12_valid_seal_passes(self):](../../../tests/test_seal_freshness.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-B10708FA0FFF4B8A / def test_f12_valid_seal_passes(self): / IMPLICIT-B10708FA0FFF4B8A
+  - 来源：`tests/test_seal_freshness.py`
+  - 依赖：—；被引用：—
+- [def test_f12c_attack_contract_deprecated_required_fields(self):](../../../tests/test_seal_freshness.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-F688647E4B6CBBDE / def test_f12c_attack_contract_deprecated_required_fields(self): / IMPLICIT-F688647E4B6CBBDE
+  - 来源：`tests/test_seal_freshness.py`
+  - 依赖：—；被引用：—
+- [def test_f12c_attack_contract_missing_schema_version(self):](../../../tests/test_seal_freshness.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-BFD96315A333045A / def test_f12c_attack_contract_missing_schema_version(self): / IMPLICIT-BFD96315A333045A
+  - 来源：`tests/test_seal_freshness.py`
+  - 依赖：—；被引用：—
+- [def test_f12c_attack_contract_missing_validator_path(self):](../../../tests/test_seal_freshness.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-377016140A3AC810 / def test_f12c_attack_contract_missing_validator_path(self): / IMPLICIT-377016140A3AC810
+  - 来源：`tests/test_seal_freshness.py`
+  - 依赖：—；被引用：—
+- [def test_f12c_attack_seal_map_edges_drift(self):](../../../tests/test_seal_freshness.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-E355A43554A72736 / def test_f12c_attack_seal_map_edges_drift(self): / IMPLICIT-E355A43554A72736
+  - 来源：`tests/test_seal_freshness.py`
+  - 依赖：—；被引用：—
+- [def test_f12c_attack_seal_map_groups_drift(self):](../../../tests/test_seal_freshness.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-53034BED0AD4CF35 / def test_f12c_attack_seal_map_groups_drift(self): / IMPLICIT-53034BED0AD4CF35
+  - 来源：`tests/test_seal_freshness.py`
+  - 依赖：—；被引用：—
+- [def test_f12c_attack_seal_map_nodes_drift(self):](../../../tests/test_seal_freshness.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-3BB446ED5B8424AA / def test_f12c_attack_seal_map_nodes_drift(self): / IMPLICIT-3BB446ED5B8424AA
+  - 来源：`tests/test_seal_freshness.py`
+  - 依赖：—；被引用：—
+- [def test_f12c_attack_stale_changed_paths_count(self):](../../../tests/test_seal_freshness.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-DD32366B7C2D1F48 / def test_f12c_attack_stale_changed_paths_count(self): / IMPLICIT-DD32366B7C2D1F48
+  - 来源：`tests/test_seal_freshness.py`
+  - 依赖：—；被引用：—
+- [def test_f12c_attack_wrong_diff_count(self):](../../../tests/test_seal_freshness.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-0DFCE0D82064B8F4 / def test_f12c_attack_wrong_diff_count(self): / IMPLICIT-0DFCE0D82064B8F4
+  - 来源：`tests/test_seal_freshness.py`
+  - 依赖：—；被引用：—
+- [def test_f12c_attack_wrong_seed_count(self):](../../../tests/test_seal_freshness.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-D9A77E4FC298D53A / def test_f12c_attack_wrong_seed_count(self): / IMPLICIT-D9A77E4FC298D53A
+  - 来源：`tests/test_seal_freshness.py`
+  - 依赖：—；被引用：—
+- [def test_f12c_valid_seal_passes(self):](../../../tests/test_seal_freshness.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-50E36BF8C985B6A9 / def test_f12c_valid_seal_passes(self): / IMPLICIT-50E36BF8C985B6A9
+  - 来源：`tests/test_seal_freshness.py`
+  - 依赖：—；被引用：—
+- [def test_f5_audit_report_hash_matches_closure(self):](../../../tests/test_change_propagation.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-048423E097BC5386 / def test_f5_audit_report_hash_matches_closure(self): / IMPLICIT-048423E097BC5386
+  - 来源：`tests/test_change_propagation.py`
+  - 依赖：—；被引用：—
+- [def test_f5_diff_fully_covered_by_seeds_and_generated_outputs(self):](../../../tests/test_change_propagation.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-A669DCB18F63B0E8 / def test_f5_diff_fully_covered_by_seeds_and_generated_outputs(self): / IMPLICIT-A669DCB18F63B0E8
+  - 来源：`tests/test_change_propagation.py`
+  - 依赖：—；被引用：—
+- [def test_f5_seal_closure_hash_is_fresh(self):](../../../tests/test_change_propagation.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-CE650D636104F597 / def test_f5_seal_closure_hash_is_fresh(self): / IMPLICIT-CE650D636104F597
+  - 来源：`tests/test_change_propagation.py`
+  - 依赖：—；被引用：—
+- [def test_f5_uncovered_diff_path_attack(self):](../../../tests/test_change_propagation.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-29F306FBA56DB16D / def test_f5_uncovered_diff_path_attack(self): / IMPLICIT-29F306FBA56DB16D
+  - 来源：`tests/test_change_propagation.py`
+  - 依赖：—；被引用：—
+- [def test_f6_arbitrary_path_in_allowlist_without_producer_fails(self):](../../../tests/test_change_propagation.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-32AEB8433613FAE0 / def test_f6_arbitrary_path_in_allowlist_without_producer_fails(self): / IMPLICIT-32AEB8433613FAE0
+  - 来源：`tests/test_change_propagation.py`
+  - 依赖：—；被引用：—
+- [def test_f6_declared_output_is_authored_fixture_fails(self):](../../../tests/test_change_propagation.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-3A5D803E7B57CADA / def test_f6_declared_output_is_authored_fixture_fails(self): / IMPLICIT-3A5D803E7B57CADA
+  - 来源：`tests/test_change_propagation.py`
+  - 依赖：—；被引用：—
+- [def test_f6_duplicate_semantic_authority_rejected(self):](../../../tests/test_change_propagation.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-CFFD038FFB9CBB6A / def test_f6_duplicate_semantic_authority_rejected(self): / IMPLICIT-CFFD038FFB9CBB6A
+  - 来源：`tests/test_change_propagation.py`
+  - 依赖：—；被引用：—
+- [def test_f6_generated_output_manually_edited_detected_stale(self):](../../../tests/test_change_propagation.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-25EC59BEE6702EDD / def test_f6_generated_output_manually_edited_detected_stale(self): / IMPLICIT-25EC59BEE6702EDD
+  - 来源：`tests/test_change_propagation.py`
+  - 依赖：—；被引用：—
+- [def test_f6_missing_producer_command_fails(self):](../../../tests/test_change_propagation.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-702D9D013DFE3393 / def test_f6_missing_producer_command_fails(self): / IMPLICIT-702D9D013DFE3393
+  - 来源：`tests/test_change_propagation.py`
+  - 依赖：—；被引用：—
+- [def test_f6_path_both_seed_and_generated_without_rule_fails(self):](../../../tests/test_change_propagation.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-D2FAADFBE85C7365 / def test_f6_path_both_seed_and_generated_without_rule_fails(self): / IMPLICIT-D2FAADFBE85C7365
+  - 来源：`tests/test_change_propagation.py`
+  - 依赖：—；被引用：—
+- [def test_f6_real_diff_path_omitted_detected(self):](../../../tests/test_change_propagation.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-57490CF5471D6F4F / def test_f6_real_diff_path_omitted_detected(self): / IMPLICIT-57490CF5471D6F4F
+  - 来源：`tests/test_change_propagation.py`
+  - 依赖：—；被引用：—
+- [def test_f_unmapped_path_and_cycle_are_explicit_blocking_residue(self):](../../../tests/test_change_propagation.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-E15838AAF7CA0742 / def test_f_unmapped_path_and_cycle_are_explicit_blocking_residue(self): / IMPLICIT-E15838AAF7CA0742
+  - 来源：`tests/test_change_propagation.py`
+  - 依赖：—；被引用：—
+- [def test_failed_fixtures_rejected(self):](../../../tests/test_q33_fail_closed_fixtures.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-2A4EE5817D124560 / def test_failed_fixtures_rejected(self): / IMPLICIT-2A4EE5817D124560
+  - 来源：`tests/test_q33_fail_closed_fixtures.py`
+  - 依赖：—；被引用：—
+- [def test_fake_repository_evidence_reference_is_rejected(self):](../../../tests/test_iteration_sync.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-6BE07B432B376417 / def test_fake_repository_evidence_reference_is_rejected(self): / IMPLICIT-6BE07B432B376417
+  - 来源：`tests/test_iteration_sync.py`
+  - 依赖：—；被引用：—
+- [def test_fake_repository_evidence_reference_is_rejected(self):](../../../tests/test_iteration_sync.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-1ca2f4cad0a50f2b / def test_fake_repository_evidence_reference_is_rejected(self):
+  - 来源：`tests/test_iteration_sync.py`
+  - 依赖：—；被引用：—
+- [def test_false_current_final_ci_claim_after_merge_is_rejected(self):](../../../tests/test_iteration_sync.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-60EB14B5893FDAE9 / def test_false_current_final_ci_claim_after_merge_is_rejected(self): / IMPLICIT-60EB14B5893FDAE9
+  - 来源：`tests/test_iteration_sync.py`
+  - 依赖：—；被引用：—
+- [def test_federation_deleted(self): self.bad(lambda d:d.update({"responsibility_federations":\[\]}),"schema")](../../../tests/test_epistemic_governance_relationships.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-DAF3810DB81DAFD3 / def test_federation_deleted(self): self.bad(lambda d:d.update({"responsibility_federations":\[\]}),"schema") / IMPLICIT-DAF3810DB81DAFD3
+  - 来源：`tests/test_epistemic_governance_relationships.py`
+  - 依赖：—；被引用：—
+- [def test_fixpoint_and_hash_are_deterministic(self):](../../../tests/test_change_propagation.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-BD3406883C99C6AB / def test_fixpoint_and_hash_are_deterministic(self): / IMPLICIT-BD3406883C99C6AB
+  - 来源：`tests/test_change_propagation.py`
+  - 依赖：—；被引用：—
+- [def test_fixture_draft_then_n1_blocks(self):](../../../function-os-candidate/v0.2/tests/test_asset_import_e2e.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-C7F1FEC16D9EBFB0 / def test_fixture_draft_then_n1_blocks(self): / IMPLICIT-C7F1FEC16D9EBFB0
+  - 来源：`function-os-candidate/v0.2/tests/test_asset_import_e2e.py`
+  - 依赖：—；被引用：—
+- [def test_fixture_metrics_report_permissions_rejections_and_unsupported(self):](../../../tests/test_language_thought_plane.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-DDA52A351318342C / def test_fixture_metrics_report_permissions_rejections_and_unsupported(self): / IMPLICIT-DDA52A351318342C
+  - 来源：`tests/test_language_thought_plane.py`
+  - 依赖：—；被引用：—
+- [def test_fixtures_valid_against_schemas():](../../../evidence-program/tests/test_evidence_program.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-80C212D141C63D13 / def test_fixtures_valid_against_schemas(): / IMPLICIT-80C212D141C63D13
+  - 来源：`evidence-program/tests/test_evidence_program.py`
+  - 依赖：—；被引用：—
+- [def test_forged_classification_level_rejected(self):](../../../tests/test_publication_gate_fail_closed.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-8A899B7C5465AD25 / def test_forged_classification_level_rejected(self): / IMPLICIT-8A899B7C5465AD25
+  - 来源：`tests/test_publication_gate_fail_closed.py`
+  - 依赖：—；被引用：—
+- [def test_free_string_generator_rejected(self):](../../../tests/test_generated_output_authority_negative.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-D337DCD52312300F / def test_free_string_generator_rejected(self): / IMPLICIT-D337DCD52312300F
+  - 来源：`tests/test_generated_output_authority_negative.py`
+  - 依赖：—；被引用：—
+- [def test_free_text_effect_removed(self): self.bad(lambda d:d\["relationships"\]\[0\].update({"allowed_inference":"Publication confirms reality"}),"schema")](../../../tests/test_epistemic_governance_relationships.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-3633656D05047FEC / def test_free_text_effect_removed(self): self.bad(lambda d:d\["relationships"\]\[0\].update({"allowed_inference":"Publication confirms reality"}),"schema") / IMPLICIT-3633656D05047FEC
+  - 来源：`tests/test_epistemic_governance_relationships.py`
+  - 依赖：—；被引用：—
+- [def test_frozen_iterations_resolve_to_era_ref(self):](../../../tests/test_era_resolver_generalization.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-F777841F050A7623 / def test_frozen_iterations_resolve_to_era_ref(self): / IMPLICIT-F777841F050A7623
+  - 来源：`tests/test_era_resolver_generalization.py`
+  - 依赖：—；被引用：—
+- [def test_full_chain_pass(self):](../../../function-os-candidate/v0.2/tests/test_n7_robust.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-79E80B6B664EC906 / def test_full_chain_pass(self): / IMPLICIT-79E80B6B664EC906
+  - 来源：`function-os-candidate/v0.2/tests/test_n7_robust.py`
+  - 依赖：—；被引用：—
+- [def test_fully_nonblank_required_lists_pass():](../../../tests/test_adaptive_relational_network_validation_contract.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-97947B0703F0DF20 / def test_fully_nonblank_required_lists_pass(): / IMPLICIT-97947B0703F0DF20
+  - 来源：`tests/test_adaptive_relational_network_validation_contract.py`
+  - 依赖：—；被引用：—
+- [def test_function_not_found_skipped(self):](../../../function-os-candidate/v0.2/tests/test_n8_robust.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-F41D4A3A3A3F7633 / def test_function_not_found_skipped(self): / IMPLICIT-F41D4A3A3A3F7633
+  - 来源：`function-os-candidate/v0.2/tests/test_n8_robust.py`
+  - 依赖：—；被引用：—
+- [def test_g1_scc_blocks_on_residue_blocked(self):](../../../tests/test_change_propagation.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-995B364F58673159 / def test_g1_scc_blocks_on_residue_blocked(self): / IMPLICIT-995B364F58673159
+  - 来源：`tests/test_change_propagation.py`
+  - 依赖：—；被引用：—
+- [def test_g1_scc_creates_sync_obligation_true_blocked(self):](../../../tests/test_change_propagation.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-7B92B7DAA503682E / def test_g1_scc_creates_sync_obligation_true_blocked(self): / IMPLICIT-7B92B7DAA503682E
+  - 来源：`tests/test_change_propagation.py`
+  - 依赖：—；被引用：—
+- [def test_g1_scc_never_enters_traversal(self):](../../../tests/test_change_propagation.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-F64A03323B33ACC8 / def test_g1_scc_never_enters_traversal(self): / IMPLICIT-F64A03323B33ACC8
+  - 来源：`tests/test_change_propagation.py`
+  - 依赖：—；被引用：—
+- [def test_g1_scc_never_enters_traversal(self):](../../../tests/test_change_propagation.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-09fc37a879e2f428 / def test_g1_scc_never_enters_traversal(self):
+  - 来源：`tests/test_change_propagation.py`
+  - 依赖：—；被引用：—
+- [def test_g1_scc_required_assessment_blocked(self):](../../../tests/test_change_propagation.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-A0C8154EDBA0CC48 / def test_g1_scc_required_assessment_blocked(self): / IMPLICIT-A0C8154EDBA0CC48
+  - 来源：`tests/test_change_propagation.py`
+  - 依赖：—；被引用：—
+- [def test_g1_scc_required_evaluation_true_blocked(self):](../../../tests/test_change_propagation.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-D5C323039293BC22 / def test_g1_scc_required_evaluation_true_blocked(self): / IMPLICIT-D5C323039293BC22
+  - 来源：`tests/test_change_propagation.py`
+  - 依赖：—；被引用：—
+- [def test_g2_declared_overlap_allows_resolution(self):](../../../tests/test_change_propagation.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-4B73AA954D288AFF / def test_g2_declared_overlap_allows_resolution(self): / IMPLICIT-4B73AA954D288AFF
+  - 来源：`tests/test_change_propagation.py`
+  - 依赖：—；被引用：—
+- [def test_g2_undeclared_overlap_produces_blocking_residue(self):](../../../tests/test_change_propagation.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-18BA54CB9CAC178E / def test_g2_undeclared_overlap_produces_blocking_residue(self): / IMPLICIT-18BA54CB9CAC178E
+  - 来源：`tests/test_change_propagation.py`
+  - 依赖：—；被引用：—
+- [def test_g3_explicit_seed_mapping_conflict_detected(self):](../../../tests/test_change_propagation.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-DC555C3C73ACA2D0 / def test_g3_explicit_seed_mapping_conflict_detected(self): / IMPLICIT-DC555C3C73ACA2D0
+  - 来源：`tests/test_change_propagation.py`
+  - 依赖：—；被引用：—
+- [def test_g3_explicit_seed_with_evidence_no_residue(self):](../../../tests/test_change_propagation.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-E02F130A31010F96 / def test_g3_explicit_seed_with_evidence_no_residue(self): / IMPLICIT-E02F130A31010F96
+  - 来源：`tests/test_change_propagation.py`
+  - 依赖：—；被引用：—
+- [def test_g3_explicit_seed_with_evidence_no_residue(self):](../../../tests/test_change_propagation.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-5a87ec2d50d6bc46 / def test_g3_explicit_seed_with_evidence_no_residue(self):
+  - 来源：`tests/test_change_propagation.py`
+  - 依赖：—；被引用：—
+- [def test_g3_unsubstantiated_explicit_seed_produces_residue(self):](../../../tests/test_change_propagation.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-C0982D496F65F782 / def test_g3_unsubstantiated_explicit_seed_produces_residue(self): / IMPLICIT-C0982D496F65F782
+  - 来源：`tests/test_change_propagation.py`
+  - 依赖：—；被引用：—
+- [def test_g4_absolute_path_rejected(self):](../../../tests/test_change_propagation.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-300D8D0E78887E6A / def test_g4_absolute_path_rejected(self): / IMPLICIT-300D8D0E78887E6A
+  - 来源：`tests/test_change_propagation.py`
+  - 依赖：—；被引用：—
+- [def test_g4_backslash_rejected(self):](../../../tests/test_change_propagation.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-9346BDC7A11952A8 / def test_g4_backslash_rejected(self): / IMPLICIT-9346BDC7A11952A8
+  - 来源：`tests/test_change_propagation.py`
+  - 依赖：—；被引用：—
+- [def test_g4_base_head_symlink_scan_fail_closed(self):](../../../tests/test_change_propagation.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-E99841D5EA102610 / def test_g4_base_head_symlink_scan_fail_closed(self): / IMPLICIT-E99841D5EA102610
+  - 来源：`tests/test_change_propagation.py`
+  - 依赖：—；被引用：—
+- [def test_g4_control_char_rejected(self):](../../../tests/test_change_propagation.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-5D78176C0169D4E2 / def test_g4_control_char_rejected(self): / IMPLICIT-5D78176C0169D4E2
+  - 来源：`tests/test_change_propagation.py`
+  - 依赖：—；被引用：—
+- [def test_g4_dot_segment_rejected(self):](../../../tests/test_change_propagation.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-4CA2ED6103CD82CB / def test_g4_dot_segment_rejected(self): / IMPLICIT-4CA2ED6103CD82CB
+  - 来源：`tests/test_change_propagation.py`
+  - 依赖：—；被引用：—
+- [def test_g4_duplicate_slash_rejected(self):](../../../tests/test_change_propagation.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-62FC47EE453FA58A / def test_g4_duplicate_slash_rejected(self): / IMPLICIT-62FC47EE453FA58A
+  - 来源：`tests/test_change_propagation.py`
+  - 依赖：—；被引用：—
+- [def test_g4_file_uri_rejected(self):](../../../tests/test_change_propagation.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-9396B94F7195A125 / def test_g4_file_uri_rejected(self): / IMPLICIT-9396B94F7195A125
+  - 来源：`tests/test_change_propagation.py`
+  - 依赖：—；被引用：—
+- [def test_g4_invalid_revision_fails_closed(self):](../../../tests/test_change_propagation.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-2C5CF3B9BD92961C / def test_g4_invalid_revision_fails_closed(self): / IMPLICIT-2C5CF3B9BD92961C
+  - 来源：`tests/test_change_propagation.py`
+  - 依赖：—；被引用：—
+- [def test_g4_parent_traversal_rejected(self):](../../../tests/test_change_propagation.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-ABFB2E988CA46D22 / def test_g4_parent_traversal_rejected(self): / IMPLICIT-ABFB2E988CA46D22
+  - 来源：`tests/test_change_propagation.py`
+  - 依赖：—；被引用：—
+- [def test_g4_plain_text_file_not_flagged(self):](../../../tests/test_change_propagation.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-0000B6147CD77F36 / def test_g4_plain_text_file_not_flagged(self): / IMPLICIT-0000B6147CD77F36
+  - 来源：`tests/test_change_propagation.py`
+  - 依赖：—；被引用：—
+- [def test_g4_suffix_injection_produces_unmapped(self):](../../../tests/test_change_propagation.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-E48AB3B6ED220163 / def test_g4_suffix_injection_produces_unmapped(self): / IMPLICIT-E48AB3B6ED220163
+  - 来源：`tests/test_change_propagation.py`
+  - 依赖：—；被引用：—
+- [def test_g4_symlink_escape_rejected(self):](../../../tests/test_change_propagation.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-B9C89B4EDB60BEE0 / def test_g4_symlink_escape_rejected(self): / IMPLICIT-B9C89B4EDB60BEE0
+  - 来源：`tests/test_change_propagation.py`
+  - 依赖：—；被引用：—
+- [def test_g4_tracked_internal_symlink_not_flagged(self):](../../../tests/test_change_propagation.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-D273328E2B50938C / def test_g4_tracked_internal_symlink_not_flagged(self): / IMPLICIT-D273328E2B50938C
+  - 来源：`tests/test_change_propagation.py`
+  - 依赖：—；被引用：—
+- [def test_g4_tracked_symlink_escape_detected(self):](../../../tests/test_change_propagation.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-3E249BFA2E7025FB / def test_g4_tracked_symlink_escape_detected(self): / IMPLICIT-3E249BFA2E7025FB
+  - 来源：`tests/test_change_propagation.py`
+  - 依赖：—；被引用：—
+- [def test_g4_tracked_symlink_escape_empty(self):](../../../tests/test_change_propagation.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-67F57753ADBDE23E / def test_g4_tracked_symlink_escape_empty(self): / IMPLICIT-67F57753ADBDE23E
+  - 来源：`tests/test_change_propagation.py`
+  - 依赖：—；被引用：—
+- [def test_g4_trailing_slash_rejected(self):](../../../tests/test_change_propagation.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-74887F763B870D8F / def test_g4_trailing_slash_rejected(self): / IMPLICIT-74887F763B870D8F
+  - 来源：`tests/test_change_propagation.py`
+  - 依赖：—；被引用：—
+- [def test_g4_windows_drive_rejected(self):](../../../tests/test_change_propagation.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-B4567A9E30B0E8DC / def test_g4_windows_drive_rejected(self): / IMPLICIT-B4567A9E30B0E8DC
+  - 来源：`tests/test_change_propagation.py`
+  - 依赖：—；被引用：—
+- [def test_g4_windows_unc_rejected(self):](../../../tests/test_change_propagation.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-DC993A772AAED226 / def test_g4_windows_unc_rejected(self): / IMPLICIT-DC993A772AAED226
+  - 来源：`tests/test_change_propagation.py`
+  - 依赖：—；被引用：—
+- [def test_g_q29r_historical_acceptance_is_frozen_while_task114_revision_is_current(self):](../../../tests/test_change_propagation.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-9CAEEF474AAF4931 / def test_g_q29r_historical_acceptance_is_frozen_while_task114_revision_is_current(self): / IMPLICIT-9CAEEF474AAF4931
+  - 来源：`tests/test_change_propagation.py`
+  - 依赖：—；被引用：—
+- [def test_gate_levelmap_rights_status_in_schema_enum(self):](../../../tests/test_source_rights_gate_enum_consistency.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-DEB002B726D2375F / def test_gate_levelmap_rights_status_in_schema_enum(self): / IMPLICIT-DEB002B726D2375F
+  - 来源：`tests/test_source_rights_gate_enum_consistency.py`
+  - 依赖：—；被引用：—
+- [def test_gate_source_category_enum_matches_registry(self):](../../../tests/test_source_rights_gate_enum_consistency.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-BBAC41A8423BD937 / def test_gate_source_category_enum_matches_registry(self): / IMPLICIT-BBAC41A8423BD937
+  - 来源：`tests/test_source_rights_gate_enum_consistency.py`
+  - 依赖：—；被引用：—
+- [def test_generated_data_is_current(self):](../../../tests/foundation/test_foundation.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-FAB85A62B982EE11 / def test_generated_data_is_current(self): / IMPLICIT-FAB85A62B982EE11
+  - 来源：`tests/foundation/test_foundation.py`
+  - 依赖：—；被引用：—
+- [def test_generated_experience_cannot_reenter_canonical_census(self):](../../../tests/test_knowledge_experience.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-068C0ACDEC9DD772 / def test_generated_experience_cannot_reenter_canonical_census(self): / IMPLICIT-068C0ACDEC9DD772
+  - 来源：`tests/test_knowledge_experience.py`
+  - 依赖：—；被引用：—
+- [def test_generated_profiles_have_safe_structured_producers(self):](../../../tests/test_component_profiles.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-75CA37B87C4161D6 / def test_generated_profiles_have_safe_structured_producers(self): / IMPLICIT-75CA37B87C4161D6
+  - 来源：`tests/test_component_profiles.py`
+  - 依赖：—；被引用：—
+- [def test_generator_fail_closed_validator_contract(self):](../../../tests/test_component_profiles.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-5ED1DE4B2D9C0796 / def test_generator_fail_closed_validator_contract(self): / IMPLICIT-5ED1DE4B2D9C0796
+  - 来源：`tests/test_component_profiles.py`
+  - 依赖：—；被引用：—
+- [def test_generator_is_deterministic(self):](../../../tests/foundation/test_nonfunction_claim_closure.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-FAD8F85309099198 / def test_generator_is_deterministic(self): / IMPLICIT-FAD8F85309099198
+  - 来源：`tests/foundation/test_nonfunction_claim_closure.py`
+  - 依赖：—；被引用：—
+- [def test_generator_not_allowed_for_path_rejected(self):](../../../tests/test_generated_output_authority_negative.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-183D1782AE95CFB1 / def test_generator_not_allowed_for_path_rejected(self): / IMPLICIT-183D1782AE95CFB1
+  - 来源：`tests/test_generated_output_authority_negative.py`
+  - 依赖：—；被引用：—
+- [def test_generator_registry_is_schema_valid(self):](../../../tests/test_generated_output_authority_negative.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-41497AC0A21F3369 / def test_generator_registry_is_schema_valid(self): / IMPLICIT-41497AC0A21F3369
+  - 来源：`tests/test_generated_output_authority_negative.py`
+  - 依赖：—；被引用：—
+- [def test_generators_are_deterministic(self):](../../../tests/foundation/test_function_asset_closure.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-2E40972B37BA3F44 / def test_generators_are_deterministic(self): / IMPLICIT-2E40972B37BA3F44
+  - 来源：`tests/foundation/test_function_asset_closure.py`
+  - 依赖：—；被引用：—
+- [def test_getnote_external_validity_forbidden(self): self.bad(lambda d:d\["relationships"\]\[7\]\["prohibited_effects"\].remove("EXTERNAL_VALIDITY_INFERENCE"),"relationship coverage")](../../../tests/test_epistemic_governance_relationships.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-86D00701C2DFD2B1 / def test_getnote_external_validity_forbidden(self): self.bad(lambda d:d\["relationships"\]\[7\]\["prohibited_effects"\].remove("EXTERNAL_VALIDITY_INFERENCE"),"relationship coverage") / IMPLICIT-86D00701C2DFD2B1
+  - 来源：`tests/test_epistemic_governance_relationships.py`
+  - 依赖：—；被引用：—
+- [def test_global_attested_true_with_pending_surface_is_rejected(self):](../../../tests/test_iteration_sync.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-3F4FA14F13DC4939 / def test_global_attested_true_with_pending_surface_is_rejected(self): / IMPLICIT-3F4FA14F13DC4939
+  - 来源：`tests/test_iteration_sync.py`
+  - 依赖：—；被引用：—
+- [def test_governance_documents_exist():](../../../tests/test_q33_governance_infrastructure.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-96846D0D7CD309DA / def test_governance_documents_exist(): / IMPLICIT-96846D0D7CD309DA
+  - 来源：`tests/test_q33_governance_infrastructure.py`
+  - 依赖：—；被引用：—
+- [def test_grand_does_not_beat_bounded():](../../../tests/iteration_planner/test_planner.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-C90E6CDD34695863 / def test_grand_does_not_beat_bounded(): / IMPLICIT-C90E6CDD34695863
+  - 来源：`tests/iteration_planner/test_planner.py`
+  - 依赖：—；被引用：—
+- [def test_happy_path_end_to_end(self):](../../../function-os-candidate/v0.2/tests/test_integration_full_chain.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-957D4038F28FE854 / def test_happy_path_end_to_end(self): / IMPLICIT-957D4038F28FE854
+  - 来源：`function-os-candidate/v0.2/tests/test_integration_full_chain.py`
+  - 依赖：—；被引用：—
+- [def test_hash_mismatch(self):](../../../function-os-candidate/v0.2/tests/test_n3_robust.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-2D0ED15814C6DD34 / def test_hash_mismatch(self): / IMPLICIT-2D0ED15814C6DD34
+  - 来源：`function-os-candidate/v0.2/tests/test_n3_robust.py`
+  - 依赖：—；被引用：—
+- [def test_head_hash_volatile_flagged(self):](../../../tests/test_pr_front_door_audit.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-FCAB7E6F4E0CB0D9 / def test_head_hash_volatile_flagged(self): / IMPLICIT-FCAB7E6F4E0CB0D9
+  - 来源：`tests/test_pr_front_door_audit.py`
+  - 依赖：—；被引用：—
+- [def test_hidden_essential_content_blocks(self):](../../../tests/test_self_correction_engine.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-8756D33074CE4DB7 / def test_hidden_essential_content_blocks(self): / IMPLICIT-8756D33074CE4DB7
+  - 来源：`tests/test_self_correction_engine.py`
+  - 依赖：—；被引用：—
+- [def test_higher_order_pairwise_projection_records_residue():](../../../tests/test_adaptive_relational_network_operational.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-2F3D5F6927966420 / def test_higher_order_pairwise_projection_records_residue(): / IMPLICIT-2F3D5F6927966420
+  - 来源：`tests/test_adaptive_relational_network_operational.py`
+  - 依赖：—；被引用：—
+- [def test_historical_record_cannot_claim_current(self):](../../../tests/test_generated_output_authority_negative.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-C8A6CF0B8045063D / def test_historical_record_cannot_claim_current(self): / IMPLICIT-C8A6CF0B8045063D
+  - 来源：`tests/test_generated_output_authority_negative.py`
+  - 依赖：—；被引用：—
+- [def test_history(self):](../../../function-os-candidate/v0.2/tests/test_n5_through_n9.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-13E3DADBDF373080 / def test_history(self): / IMPLICIT-13E3DADBDF373080 / IMPLICIT-4D55C7D6D57FAE61
+  - 来源：`function-os-candidate/v0.2/tests/test_n5_through_n9.py`
+  - 依赖：—；被引用：—
+- [def test_history(self):](../../../function-os-candidate/v0.2/tests/test_n9_robust.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-4D55C7D6D57FAE61 / def test_history(self): / IMPLICIT-4D55C7D6D57FAE61 / IMPLICIT-13E3DADBDF373080
+  - 来源：`function-os-candidate/v0.2/tests/test_n9_robust.py`
+  - 依赖：—；被引用：—
+- [def test_human_review_not_machine_maturity(self): self.bad(lambda d:next(o for o in d\["obligation_inventory"\] if o\["id"\]=="K4_SOURCE_FAMILY_INDEPENDENCE").update({"coverage":"MACHINE_ENFORCED"}),"may not be machine")](../../../tests/test_epistemic_governance_relationships.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-511A78543519CA79 / def test_human_review_not_machine_maturity(self): self.bad(lambda d:next(o for o in d\["obligation_inventory"\] if o\["id"\]=="K4_SOURCE_FAMILY_INDEPENDENCE").update({"coverage":"MACHINE_ENFORCED"}),"may not be machine") / IMPLICIT-511A78543519CA79
+  - 来源：`tests/test_epistemic_governance_relationships.py`
+  - 依赖：—；被引用：—
+- [def test_hyperrelation_repeated_and_nonexistent_members_are_rejected():](../../../tests/test_adaptive_relational_network_validation_contract.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-E1480D67D5FF199C / def test_hyperrelation_repeated_and_nonexistent_members_are_rejected(): / IMPLICIT-E1480D67D5FF199C
+  - 来源：`tests/test_adaptive_relational_network_validation_contract.py`
+  - 依赖：—；被引用：—
+- [def test_hypothetical_phrase_without_gate_fails():](../../../tests/test_failure_case_evidence_gate.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-C22E7E7D16D0E478 / def test_hypothetical_phrase_without_gate_fails(): / IMPLICIT-C22E7E7D16D0E478
+  - 来源：`tests/test_failure_case_evidence_gate.py`
+  - 依赖：—；被引用：—
+- [def test_identity_examples_cover_ten_types(self):](../../../tests/foundation/test_claim_governance.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-6504CB05A39E36A0 / def test_identity_examples_cover_ten_types(self): / IMPLICIT-6504CB05A39E36A0
+  - 来源：`tests/foundation/test_claim_governance.py`
+  - 依赖：—；被引用：—
+- [def test_implementation_complete_but_repository_incomplete_cannot_be_ready(self):](../../../tests/test_iteration_sync.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-62FAE68C3A806DD0 / def test_implementation_complete_but_repository_incomplete_cannot_be_ready(self): / IMPLICIT-62FAE68C3A806DD0
+  - 来源：`tests/test_iteration_sync.py`
+  - 依赖：—；被引用：—
+- [def test_importable_yields_draft_with_provenance(self):](../../../function-os-candidate/v0.2/tests/test_legacy_asset_importer.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-14422185FF871AA1 / def test_importable_yields_draft_with_provenance(self): / IMPLICIT-14422185FF871AA1
+  - 来源：`function-os-candidate/v0.2/tests/test_legacy_asset_importer.py`
+  - 依赖：—；被引用：—
+- [def test_indirect_authority_cycle(self):](../../../tests/test_registered_generator_attack.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-BDC0BA2A400EC0AF / def test_indirect_authority_cycle(self): / IMPLICIT-BDC0BA2A400EC0AF
+  - 来源：`tests/test_registered_generator_attack.py`
+  - 依赖：—；被引用：—
+- [def test_input_authorities_exist(self):](../../../tests/test_generated_output_authority.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-AD7D39B78594100F / def test_input_authorities_exist(self): / IMPLICIT-AD7D39B78594100F
+  - 来源：`tests/test_generated_output_authority.py`
+  - 依赖：—；被引用：—
+- [def test_input_authority_drift_rejected(self):](../../../tests/test_generated_output_authority_negative.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-BF53C50D93ACB89C / def test_input_authority_drift_rejected(self): / IMPLICIT-BF53C50D93ACB89C
+  - 来源：`tests/test_generated_output_authority_negative.py`
+  - 依赖：—；被引用：—
+- [def test_input_output_symbol_consistency_ok(self):](../../../function-os-candidate/v0.2/tests/test_n1_robust.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-AE70C2329DA08A44 / def test_input_output_symbol_consistency_ok(self): / IMPLICIT-AE70C2329DA08A44
+  - 来源：`function-os-candidate/v0.2/tests/test_n1_robust.py`
+  - 依赖：—；被引用：—
+- [def test_inputs_from_and_on_failure_propagated(self):](../../../function-os-candidate/v0.2/tests/test_n8_robust.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-24F67A70059ECD50 / def test_inputs_from_and_on_failure_propagated(self): / IMPLICIT-24F67A70059ECD50
+  - 来源：`function-os-candidate/v0.2/tests/test_n8_robust.py`
+  - 依赖：—；被引用：—
+- [def test_integrity_validator(self):](../../../tests/foundation/test_foundation.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-DBD927B842DB6BCF / def test_integrity_validator(self): / IMPLICIT-DBD927B842DB6BCF
+  - 来源：`tests/foundation/test_foundation.py`
+  - 依赖：—；被引用：—
+- [def test_intervention_and_observation_are_distinct_in_ai_example():](../../../tests/test_probabilistic_system_dynamics.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-B22D3B02A4785CF2 / def test_intervention_and_observation_are_distinct_in_ai_example(): / IMPLICIT-B22D3B02A4785CF2
+  - 来源：`tests/test_probabilistic_system_dynamics.py`
+  - 依赖：—；被引用：—
+- [def test_invalid_function_id_format(self):](../../../function-os-candidate/v0.2/tests/test_n9_robust.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-86B2FA45171561E6 / def test_invalid_function_id_format(self): / IMPLICIT-86B2FA45171561E6
+  - 来源：`function-os-candidate/v0.2/tests/test_n9_robust.py`
+  - 依赖：—；被引用：—
+- [def test_invalid_function_id_short(self):](../../../function-os-candidate/v0.2/tests/test_n9_robust.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-E511408094FB26AA / def test_invalid_function_id_short(self): / IMPLICIT-E511408094FB26AA
+  - 来源：`function-os-candidate/v0.2/tests/test_n9_robust.py`
+  - 依赖：—；被引用：—
+- [def test_invalid_revision_produces_residue(self):](../../../tests/test_tracked_symlink_gate.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-AAB7C2F338952354 / def test_invalid_revision_produces_residue(self): / IMPLICIT-AAB7C2F338952354
+  - 来源：`tests/test_tracked_symlink_gate.py`
+  - 依赖：—；被引用：—
+- [def test_ir_input_incompleteness(self):](../../../function-os-candidate/v0.2/tests/test_n2_robust.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-AED35E15FC4C729D / def test_ir_input_incompleteness(self): / IMPLICIT-AED35E15FC4C729D
+  - 来源：`function-os-candidate/v0.2/tests/test_n2_robust.py`
+  - 依赖：—；被引用：—
+- [def test_ir_output_incompleteness(self):](../../../function-os-candidate/v0.2/tests/test_n2_robust.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-ABD5E8808BB5D960 / def test_ir_output_incompleteness(self): / IMPLICIT-ABD5E8808BB5D960
+  - 来源：`function-os-candidate/v0.2/tests/test_n2_robust.py`
+  - 依赖：—；被引用：—
+- [def test_iteration_sync_manifest_validates(self):](../../../tests/test_iteration_sync.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-3B42C51A87ACE2E4 / def test_iteration_sync_manifest_validates(self): / IMPLICIT-3B42C51A87ACE2E4
+  - 来源：`tests/test_iteration_sync.py`
+  - 依赖：—；被引用：—
+- [def test_jurisdiction_registry():](../../../tests/test_q33_governance_infrastructure.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-917C8D26E323AA54 / def test_jurisdiction_registry(): / IMPLICIT-917C8D26E323AA54
+  - 来源：`tests/test_q33_governance_infrastructure.py`
+  - 依赖：—；被引用：—
+- [def test_kernel_and_trajectory_probability():](../../../tests/test_probabilistic_system_dynamics.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-D26CB6749459820D / def test_kernel_and_trajectory_probability(): / IMPLICIT-D26CB6749459820D
+  - 来源：`tests/test_probabilistic_system_dynamics.py`
+  - 依赖：—；被引用：—
+- [def test_language_l7(self): self.bad(lambda d:d\["relationships"\]\[1\]\["prohibited_effects"\].remove("CREATE_L7"),"relationship coverage")](../../../tests/test_epistemic_governance_relationships.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-B246839B38F608C5 / def test_language_l7(self): self.bad(lambda d:d\["relationships"\]\[1\]\["prohibited_effects"\].remove("CREATE_L7"),"relationship coverage") / IMPLICIT-B246839B38F608C5
+  - 来源：`tests/test_epistemic_governance_relationships.py`
+  - 依赖：—；被引用：—
+- [def test_layer_b_triggers_on_authoritative_change(self) -> None:](../../../tests/foundation/test_trigger_coverage.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-3A664CD6BA67F775 / def test_layer_b_triggers_on_authoritative_change(self) -> None: / IMPLICIT-3A664CD6BA67F775
+  - 来源：`tests/foundation/test_trigger_coverage.py`
+  - 依赖：—；被引用：—
+- [def test_leakage_no_unregistered_metrics():](../../../evidence-program/tests/test_evidence_program.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-B72DF745603F5C85 / def test_leakage_no_unregistered_metrics(): / IMPLICIT-B72DF745603F5C85
+  - 来源：`evidence-program/tests/test_evidence_program.py`
+  - 依赖：—；被引用：—
+- [def test_ledger_valid_and_terminal_105_present(self):](../../../tests/test_propagation_reconciliation.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-556269A2DEFDC51B / def test_ledger_valid_and_terminal_105_present(self): / IMPLICIT-556269A2DEFDC51B
+  - 来源：`tests/test_propagation_reconciliation.py`
+  - 依赖：—；被引用：—
 - [def test_lifecycle_inflation_is_rejected(self):](../../../tests/test_phase_e_candidate.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-69E8036C694C6C2E / def test_lifecycle_inflation_is_rejected(self): / IMPLICIT-69E8036C694C6C2E
@@ -1458,1049 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-57230C8847D7E655 / def test_status_mapping_failed(self): / IMPLICIT-57230C8847D7E655
   - 来源：`function-os-candidate/v0.2/tests/test_n6_robust.py`
-  - 依赖：—；被引用：—
-- [def test_status_mapping_ok(self):](../../../function-os-candidate/v0.2/tests/test_n6_robust.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-7A4D6B225799F3F9 / def test_status_mapping_ok(self): / IMPLICIT-7A4D6B225799F3F9
-  - 来源：`function-os-candidate/v0.2/tests/test_n6_robust.py`
-  - 依赖：—；被引用：—
-- [def test_suspension_authority_cannot_drift(self): self.bad(lambda d:next(s for s in d\["suspension_contracts"\] if s\["name"\]=="ABSTAIN").update({"authority":"foundation.lifecycle"}),"canonical contract")](../../../tests/test_epistemic_governance_relationships.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-8D864526CE8F343C / def test_suspension_authority_cannot_drift(self): self.bad(lambda d:next(s for s in d\["suspension_contracts"\] if s\["name"\]=="ABSTAIN").update({"authority":"foundation.lifecycle"}),"canonical contract") / IMPLICIT-8D864526CE8F343C
-  - 来源：`tests/test_epistemic_governance_relationships.py`
-  - 依赖：—；被引用：—
-- [def test_swapped_federation_condition_rejected(self): self.bad(lambda d:d\["responsibility_federations"\]\[0\].update({"condition":"ACTION_LINKED_STATEMENT"}),"Charter")](../../../tests/test_epistemic_governance_relationships.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-F07AD79537EF68A3 / def test_swapped_federation_condition_rejected(self): self.bad(lambda d:d\["responsibility_federations"\]\[0\].update({"condition":"ACTION_LINKED_STATEMENT"}),"Charter") / IMPLICIT-F07AD79537EF68A3
-  - 来源：`tests/test_epistemic_governance_relationships.py`
-  - 依赖：—；被引用：—
-- [def test_symbolic_subset_allowed(self):](../../../function-os-candidate/v0.2/tests/test_n1_robust.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-137C2A434870A4B6 / def test_symbolic_subset_allowed(self): / IMPLICIT-137C2A434870A4B6
-  - 来源：`function-os-candidate/v0.2/tests/test_n1_robust.py`
-  - 依赖：—；被引用：—
-- [def test_synth_alpha_positive(self):](../../../tests/test_generated_output_authority_generic.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-84045E7AD51AD1C5 / def test_synth_alpha_positive(self): / IMPLICIT-84045E7AD51AD1C5
-  - 来源：`tests/test_generated_output_authority_generic.py`
-  - 依赖：—；被引用：—
-- [def test_synth_alpha_tamper_negative(self):](../../../tests/test_generated_output_authority_generic.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-C366E1E798E44C4E / def test_synth_alpha_tamper_negative(self): / IMPLICIT-C366E1E798E44C4E
-  - 来源：`tests/test_generated_output_authority_generic.py`
-  - 依赖：—；被引用：—
-- [def test_synth_beta_positive(self):](../../../tests/test_generated_output_authority_generic.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-B53E79425527478B / def test_synth_beta_positive(self): / IMPLICIT-B53E79425527478B
-  - 来源：`tests/test_generated_output_authority_generic.py`
-  - 依赖：—；被引用：—
-- [def test_synthetic_escape_detected(self):](../../../tests/test_tracked_symlink_gate.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-85692B895EBBC33C / def test_synthetic_escape_detected(self): / IMPLICIT-85692B895EBBC33C
-  - 来源：`tests/test_tracked_symlink_gate.py`
-  - 依赖：—；被引用：—
-- [def test_synthetic_legalization_runs_but_is_excluded(self):](../../../function-os-candidate/v0.2/tests/test_asset_import_e2e.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-E033B380FBE98394 / def test_synthetic_legalization_runs_but_is_excluded(self): / IMPLICIT-E033B380FBE98394
-  - 来源：`function-os-candidate/v0.2/tests/test_asset_import_e2e.py`
-  - 依赖：—；被引用：—
-- [def test_synthetic_safe_symlink_not_flagged(self):](../../../tests/test_tracked_symlink_gate.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-8D1469B19706FF64 / def test_synthetic_safe_symlink_not_flagged(self): / IMPLICIT-8D1469B19706FF64
-  - 来源：`tests/test_tracked_symlink_gate.py`
-  - 依赖：—；被引用：—
-- [def test_tamper_artifact_hash(self):](../../../function-os-candidate/v0.2/tests/test_n4_robust.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-C14175A232EE2BB7 / def test_tamper_artifact_hash(self): / IMPLICIT-C14175A232EE2BB7
-  - 来源：`function-os-candidate/v0.2/tests/test_n4_robust.py`
-  - 依赖：—；被引用：—
-- [def test_tamper_content_hash(self):](../../../function-os-candidate/v0.2/tests/test_n4_robust.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-AE74C47A7DDBD3EF / def test_tamper_content_hash(self): / IMPLICIT-AE74C47A7DDBD3EF
-  - 来源：`function-os-candidate/v0.2/tests/test_n4_robust.py`
-  - 依赖：—；被引用：—
-- [def test_tamper_payload(self):](../../../function-os-candidate/v0.2/tests/test_n4_robust.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-595625A44CF0506D / def test_tamper_payload(self): / IMPLICIT-595625A44CF0506D
-  - 来源：`function-os-candidate/v0.2/tests/test_n4_robust.py`
-  - 依赖：—；被引用：—
-- [def test_target_is_n5(self):](../../../function-os-candidate/v0.2/tests/test_n3_robust.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-B51CB5EC08DAD973 / def test_target_is_n5(self): / IMPLICIT-B51CB5EC08DAD973
-  - 来源：`function-os-candidate/v0.2/tests/test_n3_robust.py`
-  - 依赖：—；被引用：—
-- [def test_task111_case_status_document_passes():](../../../tests/test_failure_case_evidence_gate.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-097DA74396526C69 / def test_task111_case_status_document_passes(): / IMPLICIT-097DA74396526C69
-  - 来源：`tests/test_failure_case_evidence_gate.py`
-  - 依赖：—；被引用：—
-- [def test_task99_identity_examples_cover_twelve(self):](../../../tests/foundation/test_function_asset_closure.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-90C32AD077980533 / def test_task99_identity_examples_cover_twelve(self): / IMPLICIT-90C32AD077980533
-  - 来源：`tests/foundation/test_function_asset_closure.py`
-  - 依赖：—；被引用：—
-- [def test_temporal_activation_rejects_non_node_relation_targets():](../../../tests/test_adaptive_relational_network_validation_contract.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-F5B3801365157BC7 / def test_temporal_activation_rejects_non_node_relation_targets(): / IMPLICIT-F5B3801365157BC7
-  - 来源：`tests/test_adaptive_relational_network_validation_contract.py`
-  - 依赖：—；被引用：—
-- [def test_temporal_valid_and_static_false_positive_paths():](../../../tests/test_adaptive_relational_network_operational.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-E6BBD9C6FBEEB076 / def test_temporal_valid_and_static_false_positive_paths(): / IMPLICIT-E6BBD9C6FBEEB076
-  - 来源：`tests/test_adaptive_relational_network_operational.py`
-  - 依赖：—；被引用：—
-- [def test_temporally_version_aware_validation_preserves_sealed_early_iterations_and_current_candidate(self):](../../../tests/test_iteration_sync.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-BECE48404838D0FE / def test_temporally_version_aware_validation_preserves_sealed_early_iterations_and_current_candidate(self): / IMPLICIT-BECE48404838D0FE
-  - 来源：`tests/test_iteration_sync.py`
-  - 依赖：—；被引用：—
-- [def test_three_ai_front_doors_share_version_truth(self):](../../../tests/test_human_front_door.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-75580414D344614A / def test_three_ai_front_doors_share_version_truth(self): / IMPLICIT-75580414D344614A
-  - 来源：`tests/test_human_front_door.py`
-  - 依赖：—；被引用：—
-- [def test_three_ai_front_doors_share_version_truth(self):](../../../tests/test_human_front_door.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-3c391af92af688bf / def test_three_ai_front_doors_share_version_truth(self):
-  - 来源：`tests/test_human_front_door.py`
-  - 依赖：—；被引用：—
-- [def test_time_respecting_path():](../../../tests/test_adaptive_relational_network.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-BDA27C3D5ACB588B / def test_time_respecting_path(): / IMPLICIT-BDA27C3D5ACB588B
-  - 来源：`tests/test_adaptive_relational_network.py`
-  - 依赖：—；被引用：—
-- [def test_tool_digest_tamper(self):](../../../tests/test_registered_generator_attack.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-2CED81A05772E40A / def test_tool_digest_tamper(self): / IMPLICIT-2CED81A05772E40A
-  - 来源：`tests/test_registered_generator_attack.py`
-  - 依赖：—；被引用：—
-- [def test_trace_hash_deterministic(self):](../../../function-os-candidate/v0.2/tests/test_n6_robust.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-4B91530E0B8159E4 / def test_trace_hash_deterministic(self): / IMPLICIT-4B91530E0B8159E4
-  - 来源：`function-os-candidate/v0.2/tests/test_n6_robust.py`
-  - 依赖：—；被引用：—
-- [def test_tw_and_cn_are_distinct_legal_regimes(self):](../../../tests/test_jurisdiction_sovereignty_neutral.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-21BE0F8486179AA6 / def test_tw_and_cn_are_distinct_legal_regimes(self): / IMPLICIT-21BE0F8486179AA6
-  - 来源：`tests/test_jurisdiction_sovereignty_neutral.py`
-  - 依赖：—；被引用：—
-- [def test_two_external_surfaces_require_both_attested_for_current(self):](../../../tests/test_iteration_sync.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-CAFA6E996560163E / def test_two_external_surfaces_require_both_attested_for_current(self): / IMPLICIT-CAFA6E996560163E
-  - 来源：`tests/test_iteration_sync.py`
-  - 依赖：—；被引用：—
-- [def test_two_pass_fixed_point(self) -> None:](../../../tests/foundation/test_generator_reconciliation_staleness.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-DF1C75ED61509A29 / def test_two_pass_fixed_point(self) -> None: / IMPLICIT-DF1C75ED61509A29
-  - 来源：`tests/foundation/test_generator_reconciliation_staleness.py`
-  - 依赖：—；被引用：—
-- [def test_type_error_float_for_integer(self):](../../../function-os-candidate/v0.2/tests/test_n5_robust.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-79117F3D5113E2C8 / def test_type_error_float_for_integer(self): / IMPLICIT-79117F3D5113E2C8
-  - 来源：`function-os-candidate/v0.2/tests/test_n5_robust.py`
-  - 依赖：—；被引用：—
-- [def test_type_error_missing_input(self):](../../../function-os-candidate/v0.2/tests/test_n5_robust.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-9225D68A6DA5846F / def test_type_error_missing_input(self): / IMPLICIT-9225D68A6DA5846F
-  - 来源：`function-os-candidate/v0.2/tests/test_n5_robust.py`
-  - 依赖：—；被引用：—
-- [def test_type_error_wrong_type(self):](../../../function-os-candidate/v0.2/tests/test_n5_robust.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-339D699BB600B08A / def test_type_error_wrong_type(self): / IMPLICIT-339D699BB600B08A
-  - 来源：`function-os-candidate/v0.2/tests/test_n5_robust.py`
-  - 依赖：—；被引用：—
-- [def test_type_mismatch(self):](../../../function-os-candidate/v0.2/tests/test_n5_through_n9.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-E4CD4C82F3BF4AB3 / def test_type_mismatch(self): / IMPLICIT-E4CD4C82F3BF4AB3
-  - 来源：`function-os-candidate/v0.2/tests/test_n5_through_n9.py`
-  - 依赖：—；被引用：—
-- [def test_type_mismatch_input(self):](../../../function-os-candidate/v0.2/tests/test_n3_robust.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-223E672DB6F5DE45 / def test_type_mismatch_input(self): / IMPLICIT-223E672DB6F5DE45
-  - 来源：`function-os-candidate/v0.2/tests/test_n3_robust.py`
-  - 依赖：—；被引用：—
-- [def test_unaccepted_ready_non_draft_is_rejected(self):](../../../tests/test_iteration_sync.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-2E8DA46614128225 / def test_unaccepted_ready_non_draft_is_rejected(self): / IMPLICIT-2E8DA46614128225
-  - 来源：`tests/test_iteration_sync.py`
-  - 依赖：—；被引用：—
-- [def test_unbound_ceiling_order_preserved(self): self.bad(lambda d:next(o for o in d\["obligation_inventory"\] if o\["id"\]==](../../../tests/test_epistemic_governance_relationships.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-27cec1ec74069ec6 / def test_unbound_ceiling_order_preserved(self): self.bad(lambda d:next(o for o in d\["obligation_inventory"\] if o\["id"\]==
-  - 来源：`tests/test_epistemic_governance_relationships.py`
-  - 依赖：—；被引用：—
-- [def test_unbound_ceiling_order_preserved(self): self.bad(lambda d:next(o for o in d\["obligation_inventory"\] if o\["id"\]=="UNIVERSAL_CEILING_ORDER").update({"coverage":"MACHINE_ENFORCED"}),"UNBOUND")](../../../tests/test_epistemic_governance_relationships.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-9C33568531D3D732 / def test_unbound_ceiling_order_preserved(self): self.bad(lambda d:next(o for o in d\["obligation_inventory"\] if o\["id"\]=="UNIVERSAL_CEILING_ORDER").update({"coverage":"MACHINE_ENFORCED"}),"UNBOUND") / IMPLICIT-9C33568531D3D732
-  - 来源：`tests/test_epistemic_governance_relationships.py`
-  - 依赖：—；被引用：—
-- [def test_undeclared_symbol_in_expression(self):](../../../function-os-candidate/v0.2/tests/test_n3_robust.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-CF40978A2257DC1F / def test_undeclared_symbol_in_expression(self): / IMPLICIT-CF40978A2257DC1F
-  - 来源：`function-os-candidate/v0.2/tests/test_n3_robust.py`
-  - 依赖：—；被引用：—
-- [def test_undefined_symbol_in_postcondition(self):](../../../function-os-candidate/v0.2/tests/test_n1_robust.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-B600754148D32040 / def test_undefined_symbol_in_postcondition(self): / IMPLICIT-B600754148D32040
-  - 来源：`function-os-candidate/v0.2/tests/test_n1_robust.py`
-  - 依赖：—；被引用：—
-- [def test_undefined_symbol_in_precondition(self):](../../../function-os-candidate/v0.2/tests/test_n1_robust.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-0F5D15EBFBE63D39 / def test_undefined_symbol_in_precondition(self): / IMPLICIT-0F5D15EBFBE63D39
-  - 来源：`function-os-candidate/v0.2/tests/test_n1_robust.py`
-  - 依赖：—；被引用：—
-- [def test_undefined_symbol_rejected(self):](../../../function-os-candidate/v0.2/tests/test_n1_robust.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-FE3646A333D3F25D / def test_undefined_symbol_rejected(self): / IMPLICIT-FE3646A333D3F25D
-  - 来源：`function-os-candidate/v0.2/tests/test_n1_robust.py`
-  - 依赖：—；被引用：—
-- [def test_unknown_category_fails_closed(self):](../../../tests/test_publication_gate_fail_closed.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-C32105AB0B358EE0 / def test_unknown_category_fails_closed(self): / IMPLICIT-C32105AB0B358EE0
-  - 来源：`tests/test_publication_gate_fail_closed.py`
-  - 依赖：—；被引用：—
-- [def test_unknown_direction_breaks_stateful_path():](../../../tests/test_adaptive_relational_network_validation_contract.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-49088B526ABD0389 / def test_unknown_direction_breaks_stateful_path(): / IMPLICIT-49088B526ABD0389
-  - 来源：`tests/test_adaptive_relational_network_validation_contract.py`
-  - 依赖：—；被引用：—
-- [def test_unknown_out_of_scope_blocked(self):](../../../function-os-candidate/v0.2/tests/test_legacy_asset_importer.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-E796FB4959FE637C / def test_unknown_out_of_scope_blocked(self): / IMPLICIT-E796FB4959FE637C
-  - 来源：`function-os-candidate/v0.2/tests/test_legacy_asset_importer.py`
-  - 依赖：—；被引用：—
-- [def test_unknown_path_fails_closed(self):](../../../tests/test_incremental_planner.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-810F98730C406B6B / def test_unknown_path_fails_closed(self): / IMPLICIT-810F98730C406B6B
-  - 来源：`tests/test_incremental_planner.py`
-  - 依赖：—；被引用：—
-- [def test_unknown_top_state_laundering(self): self.bad(lambda d:d.update({"semantic_acceptance":"CONFIRMED"}),"schema")](../../../tests/test_epistemic_governance_relationships.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-EC9BBBAE218AEE15 / def test_unknown_top_state_laundering(self): self.bad(lambda d:d.update({"semantic_acceptance":"CONFIRMED"}),"schema") / IMPLICIT-EC9BBBAE218AEE15
-  - 来源：`tests/test_epistemic_governance_relationships.py`
-  - 依赖：—；被引用：—
-- [def test_unknown_typed_effect(self): self.bad(lambda d:d\["relationships"\]\[0\].update({"allowed_effect":"CONFIRM_REALITY"}),"schema")](../../../tests/test_epistemic_governance_relationships.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-299BA0E979A04E93 / def test_unknown_typed_effect(self): self.bad(lambda d:d\["relationships"\]\[0\].update({"allowed_effect":"CONFIRM_REALITY"}),"schema") / IMPLICIT-299BA0E979A04E93
-  - 来源：`tests/test_epistemic_governance_relationships.py`
-  - 依赖：—；被引用：—
-- [def test_unrecoverable_policy_never_reports_restored(self):](../../../tests/test_production_execution_authority.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-8A3AD44E12EF5194 / def test_unrecoverable_policy_never_reports_restored(self): / IMPLICIT-8A3AD44E12EF5194
-  - 来源：`tests/test_production_execution_authority.py`
-  - 依赖：—；被引用：—
-- [def test_unrecoverable_policy_never_reports_restored(self):](../../../tests/test_production_execution_authority.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-f4c19d790ef3a0fe / def test_unrecoverable_policy_never_reports_restored(self):
-  - 来源：`tests/test_production_execution_authority.py`
-  - 依赖：—；被引用：—
-- [def test_unregistered_generator_id_rejected(self):](../../../tests/test_generated_output_authority_negative.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-20D49320DAB2DA13 / def test_unregistered_generator_id_rejected(self): / IMPLICIT-20D49320DAB2DA13
-  - 来源：`tests/test_generated_output_authority_negative.py`
-  - 依赖：—；被引用：—
-- [def test_unresolved_prerequisite_blocked():](../../../tests/iteration_planner/test_planner.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-EFE57419D7582BFB / def test_unresolved_prerequisite_blocked(): / IMPLICIT-EFE57419D7582BFB
-  - 来源：`tests/iteration_planner/test_planner.py`
-  - 依赖：—；被引用：—
-- [def test_unresolved_prerequisite_blocked():](../../../tests/iteration_planner/test_planner.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-9702493ecd22c72c / def test_unresolved_prerequisite_blocked():
-  - 来源：`tests/iteration_planner/test_planner.py`
-  - 依赖：—；被引用：—
-- [def test_update_increment(self):](../../../function-os-candidate/v0.2/tests/test_n5_through_n9.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-EA5A3CE5DDDDB985 / def test_update_increment(self): / IMPLICIT-EA5A3CE5DDDDB985
-  - 来源：`function-os-candidate/v0.2/tests/test_n5_through_n9.py`
-  - 依赖：—；被引用：—
-- [def test_update_increments_revision(self):](../../../function-os-candidate/v0.2/tests/test_n9_robust.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-121CFEAC5CAE9783 / def test_update_increments_revision(self): / IMPLICIT-121CFEAC5CAE9783
-  - 来源：`function-os-candidate/v0.2/tests/test_n9_robust.py`
-  - 依赖：—；被引用：—
-- [def test_update_missing_function(self):](../../../function-os-candidate/v0.2/tests/test_n9_robust.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-86B63A96B42C9114 / def test_update_missing_function(self): / IMPLICIT-86B63A96B42C9114
-  - 来源：`function-os-candidate/v0.2/tests/test_n9_robust.py`
-  - 依赖：—；被引用：—
-- [def test_update_nonexistent(self):](../../../function-os-candidate/v0.2/tests/test_n5_through_n9.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-FDC8FF8C8659DF8C / def test_update_nonexistent(self): / IMPLICIT-FDC8FF8C8659DF8C
-  - 来源：`function-os-candidate/v0.2/tests/test_n5_through_n9.py`
-  - 依赖：—；被引用：—
-- [def test_us_fair_use_claim_not_absolute(self):](../../../tests/test_source_rights_gate_enum_consistency.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-0EF06A247EDE6B0B / def test_us_fair_use_claim_not_absolute(self): / IMPLICIT-0EF06A247EDE6B0B
-  - 来源：`tests/test_source_rights_gate_enum_consistency.py`
-  - 依赖：—；被引用：—
-- [def test_valid(self): self.assertEqual(\[\],v.validate(SPEC,ROOT))](../../../tests/test_epistemic_governance_relationships.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-838397079B30058B / def test_valid(self): self.assertEqual(\[\],v.validate(SPEC,ROOT)) / IMPLICIT-838397079B30058B
-  - 来源：`tests/test_epistemic_governance_relationships.py`
-  - 依赖：—；被引用：—
-- [def test_valid_cumulative_current_lifecycle(self):](../../../tests/test_iteration_sync.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-E8C67482CED02491 / def test_valid_cumulative_current_lifecycle(self): / IMPLICIT-E8C67482CED02491
-  - 来源：`tests/test_iteration_sync.py`
-  - 依赖：—；被引用：—
-- [def test_valid_fixture_accepted(self):](../../../tests/test_q33_fail_closed_fixtures.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-BFC3FAE528B91ADC / def test_valid_fixture_accepted(self): / IMPLICIT-BFC3FAE528B91ADC
-  - 来源：`tests/test_q33_fail_closed_fixtures.py`
-  - 依赖：—；被引用：—
-- [def test_valid_reproduced_defect_passes():](../../../tests/test_failure_case_evidence_gate.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-493595AEC7D804B9 / def test_valid_reproduced_defect_passes(): / IMPLICIT-493595AEC7D804B9
-  - 来源：`tests/test_failure_case_evidence_gate.py`
-  - 依赖：—；被引用：—
-- [def test_validate(self):](../../../function-os-candidate/v0.2/tests/test_n5_through_n9.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-3B301ADFCED49345 / def test_validate(self): / IMPLICIT-3B301ADFCED49345
-  - 来源：`function-os-candidate/v0.2/tests/test_n5_through_n9.py`
-  - 依赖：—；被引用：—
-- [def test_validate_clean(self):](../../../function-os-candidate/v0.2/tests/test_n9_robust.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-B5DD14E046A21B13 / def test_validate_clean(self): / IMPLICIT-B5DD14E046A21B13
-  - 来源：`function-os-candidate/v0.2/tests/test_n9_robust.py`
-  - 依赖：—；被引用：—
-- [def test_validate_detects_duplicate_active(self):](../../../function-os-candidate/v0.2/tests/test_n9_robust.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-5E43A40F38B049AF / def test_validate_detects_duplicate_active(self): / IMPLICIT-5E43A40F38B049AF
-  - 来源：`function-os-candidate/v0.2/tests/test_n9_robust.py`
-  - 依赖：—；被引用：—
-- [def test_validate_duplicate_fails(self):](../../../function-os-candidate/v0.2/tests/test_n5_through_n9.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-8EF61A7063A4F4B3 / def test_validate_duplicate_fails(self): / IMPLICIT-8EF61A7063A4F4B3
-  - 来源：`function-os-candidate/v0.2/tests/test_n5_through_n9.py`
-  - 依赖：—；被引用：—
-- [def test_validate_fail_tampered(self):](../../../function-os-candidate/v0.2/tests/test_n5_through_n9.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-56A226325FEFBAF4 / def test_validate_fail_tampered(self): / IMPLICIT-56A226325FEFBAF4
-  - 来源：`function-os-candidate/v0.2/tests/test_n5_through_n9.py`
-  - 依赖：—；被引用：—
-- [def test_validate_hash_mismatch(self):](../../../function-os-candidate/v0.2/tests/test_n1_through_n4.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-CDA3817D4458177C / def test_validate_hash_mismatch(self): / IMPLICIT-CDA3817D4458177C
-  - 来源：`function-os-candidate/v0.2/tests/test_n1_through_n4.py`
-  - 依赖：—；被引用：—
-- [def test_validate_missing_required_field(self):](../../../function-os-candidate/v0.2/tests/test_n9_robust.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-E23D6D8F48F911DB / def test_validate_missing_required_field(self): / IMPLICIT-E23D6D8F48F911DB
-  - 来源：`function-os-candidate/v0.2/tests/test_n9_robust.py`
-  - 依赖：—；被引用：—
-- [def test_validate_ok(self):](../../../function-os-candidate/v0.2/tests/test_n1_through_n4.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-0EE034DB03F0F54F / def test_validate_ok(self): / IMPLICIT-0EE034DB03F0F54F
-  - 来源：`function-os-candidate/v0.2/tests/test_n1_through_n4.py`
-  - 依赖：—；被引用：—
-- [def test_validate_pass(self):](../../../function-os-candidate/v0.2/tests/test_n5_through_n9.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-7D3FBF018D5818B7 / def test_validate_pass(self): / IMPLICIT-7D3FBF018D5818B7
-  - 来源：`function-os-candidate/v0.2/tests/test_n5_through_n9.py`
-  - 依赖：—；被引用：—
-- [def test_validator(self):](../../../tests/foundation/test_claim_governance.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-62C8B00AF7A2DC71 / def test_validator(self): / IMPLICIT-62C8B00AF7A2DC71
-  - 来源：`tests/foundation/test_claim_governance.py`
-  - 依赖：—；被引用：—
-- [def test_validator_end_to_end_on_fixtures(tmp_path):](../../../evidence-program/tests/test_evidence_program.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-C21C35A93FA162FF / def test_validator_end_to_end_on_fixtures(tmp_path): / IMPLICIT-C21C35A93FA162FF
-  - 来源：`evidence-program/tests/test_evidence_program.py`
-  - 依赖：—；被引用：—
-- [def test_validator_tool_exists():](../../../tests/test_q33_governance_infrastructure.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-B6D1CF3831D5141B / def test_validator_tool_exists(): / IMPLICIT-B6D1CF3831D5141B
-  - 来源：`tests/test_q33_governance_infrastructure.py`
-  - 依赖：—；被引用：—
-- [def test_verdicts_absent_from_public_wording(self):](../../../tests/test_propagation_reconciliation.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-01F2708AF78B0863 / def test_verdicts_absent_from_public_wording(self): / IMPLICIT-01F2708AF78B0863
-  - 来源：`tests/test_propagation_reconciliation.py`
-  - 依赖：—；被引用：—
-- [def test_verified_source_gate_enforces_real_pinned_digest(self):](../../../tests/test_source_rights_gate_enum_consistency.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-21DD103392CC66F8 / def test_verified_source_gate_enforces_real_pinned_digest(self): / IMPLICIT-21DD103392CC66F8
-  - 来源：`tests/test_source_rights_gate_enum_consistency.py`
-  - 依赖：—；被引用：—
-- [def test_verified_source_gate_enforces_real_pinned_digest(self):](../../../tests/test_source_rights_gate_enum_consistency.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-c36069412516911e / def test_verified_source_gate_enforces_real_pinned_digest(self):
-  - 来源：`tests/test_source_rights_gate_enum_consistency.py`
-  - 依赖：—；被引用：—
-- [def test_verified_source_rights_must_have_pinned_digest(self):](../../../tests/test_source_rights_gate_enum_consistency.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-E727BF28CAC8D9A1 / def test_verified_source_rights_must_have_pinned_digest(self): / IMPLICIT-E727BF28CAC8D9A1
-  - 来源：`tests/test_source_rights_gate_enum_consistency.py`
-  - 依赖：—；被引用：—
-- [def test_verified_source_rights_must_have_pinned_digest(self):](../../../tests/test_source_rights_gate_enum_consistency.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-f619005c4aada159 / def test_verified_source_rights_must_have_pinned_digest(self):
-  - 来源：`tests/test_source_rights_gate_enum_consistency.py`
-  - 依赖：—；被引用：—
-- [def test_verify_tampered(self):](../../../function-os-candidate/v0.2/tests/test_n1_through_n4.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-7A6EEE09BA4C337B / def test_verify_tampered(self): / IMPLICIT-7A6EEE09BA4C337B
-  - 来源：`function-os-candidate/v0.2/tests/test_n1_through_n4.py`
-  - 依赖：—；被引用：—
-- [def test_verify_valid(self):](../../../function-os-candidate/v0.2/tests/test_n1_through_n4.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-228F6122AA5AC371 / def test_verify_valid(self): / IMPLICIT-228F6122AA5AC371 / IMPLICIT-53730033D93B6A4A
-  - 来源：`function-os-candidate/v0.2/tests/test_n1_through_n4.py`
-  - 依赖：—；被引用：—
-- [def test_verify_valid(self):](../../../function-os-candidate/v0.2/tests/test_n4_robust.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-53730033D93B6A4A / def test_verify_valid(self): / IMPLICIT-53730033D93B6A4A / IMPLICIT-228F6122AA5AC371
-  - 来源：`function-os-candidate/v0.2/tests/test_n4_robust.py`
-  - 依赖：—；被引用：—
-- [def test_visible_result_sections_are_ordered_and_unfolded(self):](../../../tests/test_human_front_door.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-C023C601D7C13BC5 / def test_visible_result_sections_are_ordered_and_unfolded(self): / IMPLICIT-C023C601D7C13BC5
-  - 来源：`tests/test_human_front_door.py`
-  - 依赖：—；被引用：—
-- [def test_withdrawal_anti_rebound_required(self): self.bad(lambda d:d\["relationships"\]\[6\]\["prohibited_effects"\].remove("SILENT_REVIVAL"),"relationship coverage")](../../../tests/test_epistemic_governance_relationships.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-F98008190A6271C8 / def test_withdrawal_anti_rebound_required(self): self.bad(lambda d:d\["relationships"\]\[6\]\["prohibited_effects"\].remove("SILENT_REVIVAL"),"relationship coverage") / IMPLICIT-F98008190A6271C8
-  - 来源：`tests/test_epistemic_governance_relationships.py`
-  - 依赖：—；被引用：—
-- [def test_withdrawn_alias_cannot_disappear(self):](../../../tests/test_knowledge_experience.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-CB21873FAAD17FD6 / def test_withdrawn_alias_cannot_disappear(self): / IMPLICIT-CB21873FAAD17FD6
-  - 来源：`tests/test_knowledge_experience.py`
-  - 依赖：—；被引用：—
-- [def test_wrong_effect_for_relation(self): self.bad(lambda d:d\["relationships"\]\[0\].update({"allowed_effect":"REPORT_INTERNAL_PRESSURE_TEST_ONLY"}),"allowed effect must match")](../../../tests/test_epistemic_governance_relationships.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-97D24862922DFB28 / def test_wrong_effect_for_relation(self): self.bad(lambda d:d\["relationships"\]\[0\].update({"allowed_effect":"REPORT_INTERNAL_PRESSURE_TEST_ONLY"}),"allowed effect must match") / IMPLICIT-97D24862922DFB28
-  - 来源：`tests/test_epistemic_governance_relationships.py`
-  - 依赖：—；被引用：—
-- [def test_wrong_semantic_target_fails_closed():](../../../tests/test_failure_case_evidence_gate.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-C8886C4078DCBD89 / def test_wrong_semantic_target_fails_closed(): / IMPLICIT-C8886C4078DCBD89
-  - 来源：`tests/test_failure_case_evidence_gate.py`
-  - 依赖：—；被引用：—
-- [def test_zero_product_converse_fails_with_zero_divisors(self):](../../../tests/foundation/test_claim_governance.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-371D7BCC961A719E / def test_zero_product_converse_fails_with_zero_divisors(self): / IMPLICIT-371D7BCC961A719E
-  - 来源：`tests/foundation/test_claim_governance.py`
-  - 依赖：—；被引用：—
-- [def test_zero_spec_version_rejected(self):](../../../function-os-candidate/v0.2/tests/test_n1_robust.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-FC3715D19CA64C60 / def test_zero_spec_version_rejected(self): / IMPLICIT-FC3715D19CA64C60
-  - 来源：`function-os-candidate/v0.2/tests/test_n1_robust.py`
-  - 依赖：—；被引用：—
-- [def text(path: Path) -> str:](../../../data/operations/iterations/114/publication/tools/validate_publication.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-428E5C96DC397329 / def text(path: Path) -> str: / IMPLICIT-428E5C96DC397329
-  - 来源：`data/operations/iterations/114/publication/tools/validate_publication.py`
-  - 依赖：—；被引用：—
-- [def text(self) -> str:](../../../tests/foundation/test_repository_path_classification.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-9844730476871C66 / def text(self) -> str: / IMPLICIT-9844730476871C66
-  - 来源：`tests/foundation/test_repository_path_classification.py`
-  - 依赖：—；被引用：—
-- [def text_fragments(path: str) -> tuple\[list\[dict\], str\]:](../../../tools/foundation/adjudicate_nonfunction_claims.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-C5C580D1A325C098 / def text_fragments(path: str) -> tuple\[list\[dict\], str\]: / IMPLICIT-C5C580D1A325C098
-  - 来源：`tools/foundation/adjudicate_nonfunction_claims.py`
-  - 依赖：—；被引用：—
-- [def title_and_summary(path: str) -> tuple\[str, str\]:](../../../tools/governance/build_human_results.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-D6236DA72D83562B / def title_and_summary(path: str) -> tuple\[str, str\]: / IMPLICIT-D6236DA72D83562B
-  - 来源：`tools/governance/build_human_results.py`
-  - 依赖：—；被引用：—
-- [def title_from_file(path: Path):](../../../tools/foundation/migrate_legacy.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-BA22483F2D02CC5B / def title_from_file(path: Path): / IMPLICIT-BA22483F2D02CC5B
-  - 来源：`tools/foundation/migrate_legacy.py`
-  - 依赖：—；被引用：—
-- [def title_ratio(left: str, right: str) -> float:](../../../data/operations/iterations/110/openalex/adjudicate_first_run.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-3FBC8C33AA6C71A3 / def title_ratio(left: str, right: str) -> float: / IMPLICIT-3FBC8C33AA6C71A3
-  - 来源：`data/operations/iterations/110/openalex/adjudicate_first_run.py`
-  - 依赖：—；被引用：—
-- [def to_compact(self, trace: dict) -> str:](../../../function-os-candidate/v0.1/function_os/n8_trace_archiver.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-8806B3283D376931 / def to_compact(self, trace: dict) -> str: / IMPLICIT-8806B3283D376931
-  - 来源：`function-os-candidate/v0.1/function_os/n8_trace_archiver.py`
-  - 依赖：—；被引用：—
-- [def to_dict(self) -> dict:](../../../function-os-candidate/v0.1/function_os/n3_expression_interpreter.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-E1D67FB9648CE248 / def to_dict(self) -> dict: / IMPLICIT-E1D67FB9648CE248
-  - 来源：`function-os-candidate/v0.1/function_os/n3_expression_interpreter.py`
-  - 依赖：—；被引用：—
-- [def to_json(self) -> str:](../../../scripts/external-research/fulltext_resolver.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-5949B7E3ABA49D36 / def to_json(self) -> str: / IMPLICIT-5949B7E3ABA49D36
-  - 来源：`scripts/external-research/fulltext_resolver.py`
-  - 依赖：—；被引用：—
-- [def to_json(self, trace: dict) -> str:](../../../function-os-candidate/v0.1/function_os/n8_trace_archiver.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-47D83F9054F423B3 / def to_json(self, trace: dict) -> str: / IMPLICIT-47D83F9054F423B3
-  - 来源：`function-os-candidate/v0.1/function_os/n8_trace_archiver.py`
-  - 依赖：—；被引用：—
-- [def tokenize(text):](../../../tools/build_corpus_relation_graph.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-D3818429AB96260D / def tokenize(text): / IMPLICIT-D3818429AB96260D
-  - 来源：`tools/build_corpus_relation_graph.py`
-  - 依赖：—；被引用：—
-- [def tracked_and_untracked() -> set\[str\]:](../../../tools/governance/run_self_correction.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-F35A44C0749CD0C8 / def tracked_and_untracked() -> set\[str\]: / IMPLICIT-F35A44C0749CD0C8
-  - 来源：`tools/governance/run_self_correction.py`
-  - 依赖：—；被引用：—
-- [def tracked_files() -> list\[str\]:](../../../tools/validate_license_scope.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-0368A74962748C91 / def tracked_files() -> list\[str\]: / IMPLICIT-0368A74962748C91
-  - 来源：`tools/validate_license_scope.py`
-  - 依赖：—；被引用：—
-- [def tracked_paths() -> list\[str\]:](../../../tools/foundation/validate_repository_path_classification.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-35499F25CF96E782 / def tracked_paths() -> list\[str\]: / IMPLICIT-35499F25CF96E782 / IMPLICIT-7721245D1E82B287
-  - 来源：`tools/foundation/validate_repository_path_classification.py`
-  - 依赖：—；被引用：—
-- [def tracked_paths() -> list\[str\]:](../../../tools/operations/root_normalization_audit.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-7721245D1E82B287 / def tracked_paths() -> list\[str\]: / IMPLICIT-7721245D1E82B287 / IMPLICIT-35499F25CF96E782
-  - 来源：`tools/operations/root_normalization_audit.py`
-  - 依赖：—；被引用：—
-- [def tracked_paths() -> list\[str\]:](../../../tools/governance/build_human_results.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-96FD668942E651CD / def tracked_paths() -> list\[str\]: / IMPLICIT-96FD668942E651CD / IMPLICIT-35499F25CF96E782
-  - 来源：`tools/governance/build_human_results.py`
-  - 依赖：—；被引用：—
-- [def tracked_paths() -> list\[str\]:](../../../tools/foundation/adjudicate_nonfunction_claims.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-EB86E05A1EE8A640 / def tracked_paths() -> list\[str\]: / IMPLICIT-EB86E05A1EE8A640 / IMPLICIT-35499F25CF96E782
-  - 来源：`tools/foundation/adjudicate_nonfunction_claims.py`
-  - 依赖：—；被引用：—
-- [def tracked_text_files() -> list\[str\]:](../../../tools/foundation/build_function_asset_census.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-52FF1A2FFED9D4E3 / def tracked_text_files() -> list\[str\]: / IMPLICIT-52FF1A2FFED9D4E3
-  - 来源：`tools/foundation/build_function_asset_census.py`
-  - 依赖：—；被引用：—
-- [def trajectory_probability(kernel: list\[list\[float\]\], path: list\[int\]) -> float:](../../../tools/probabilistic_system_dynamics/calculations.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-518CD028BF3A9EE7 / def trajectory_probability(kernel: list\[list\[float\]\], path: list\[int\]) -> float: / IMPLICIT-518CD028BF3A9EE7
-  - 来源：`tools/probabilistic_system_dynamics/calculations.py`
-  - 依赖：—；被引用：—
-- [def traverse_fixpoint(seed_components: set\[str\], topology: dict, dimensions: set\[str\], classifications: set\[str\]) -> tuple\[set\[str\], list\[dict\], int, list\[dict\]\]:](../../../tools/operations/compute_change_propagation.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-1F563375B3509C34 / def traverse_fixpoint(seed_components: set\[str\], topology: dict, dimensions: set\[str\], classifications: set\[str\]) -> tuple\[set\[str\], list\[dict\], int, list\[dict\]\]: / IMPLICIT-1F563375B3509C34
-  - 来源：`tools/operations/compute_change_propagation.py`
-  - 依赖：—；被引用：—
-- [def typed_variables(expression: str \| None):](../../../tools/foundation/adjudicate_core.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-150067A0D1BFF1C8 / def typed_variables(expression: str \| None): / IMPLICIT-150067A0D1BFF1C8
-  - 来源：`tools/foundation/adjudicate_core.py`
-  - 依赖：—；被引用：—
-- [def update(self, function_id: str, new_record: dict) -> dict:](../../../function-os-candidate/v0.2/function_os/n9_registry.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-F7BFCF3C46C86D13 / def update(self, function_id: str, new_record: dict) -> dict: / IMPLICIT-F7BFCF3C46C86D13
-  - 来源：`function-os-candidate/v0.2/function_os/n9_registry.py`
-  - 依赖：—；被引用：—
-- [def update(self, function_id: str, updated_record: dict) -> dict:](../../../function-os-candidate/v0.1/function_os/n9_registry_updater.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-F458FC7B29947374 / def update(self, function_id: str, updated_record: dict) -> dict: / IMPLICIT-F458FC7B29947374
-  - 来源：`function-os-candidate/v0.1/function_os/n9_registry_updater.py`
-  - 依赖：—；被引用：—
-- [def update_queue_status(queue: list\[dict\], completed_ids: set\[str\]) -> list\[dict\]:](../../../tools/foundation/process_081_batch.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-926DC902E7879622 / def update_queue_status(queue: list\[dict\], completed_ids: set\[str\]) -> list\[dict\]: / IMPLICIT-926DC902E7879622
-  - 来源：`tools/foundation/process_081_batch.py`
-  - 依赖：—；被引用：—
-- [def utc8_now() -> str:](../../../tools/foundation/build_080_queue.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-7849027FF1B87E45 / def utc8_now() -> str: / IMPLICIT-7849027FF1B87E45
-  - 来源：`tools/foundation/build_080_queue.py`
-  - 依赖：—；被引用：—
-- [def utc_now() -> str:](../../../reos_vnext/kernel.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-023EB811D9839610 / def utc_now() -> str: / IMPLICIT-023EB811D9839610 / IMPLICIT-161F770068EB5603
-  - 来源：`reos_vnext/kernel.py`
-  - 依赖：—；被引用：—
-- [def utc_now() -> str:](../../../data/operations/iterations/110/openalex/run_first_census.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-161F770068EB5603 / def utc_now() -> str: / IMPLICIT-161F770068EB5603 / IMPLICIT-023EB811D9839610
-  - 来源：`data/operations/iterations/110/openalex/run_first_census.py`
-  - 依赖：—；被引用：—
-- [def valid_cache(self):](../../../tests/test_incremental_execution_validator.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-C2348DC31B3D707B / def valid_cache(self): / IMPLICIT-C2348DC31B3D707B
-  - 来源：`tests/test_incremental_execution_validator.py`
-  - 依赖：—；被引用：—
-- [def valid_cache(self, plan=None):](../../../tests/test_incremental_execution_defensive_rejections.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-85BF6F5D2E3779DB / def valid_cache(self, plan=None): / IMPLICIT-85BF6F5D2E3779DB
-  - 来源：`tests/test_incremental_execution_defensive_rejections.py`
-  - 依赖：—；被引用：—
-- [def valid_current_manifest():](../../../tests/test_iteration_sync.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-53658A14B6A7B10E / def valid_current_manifest(): / IMPLICIT-53658A14B6A7B10E
-  - 来源：`tests/test_iteration_sync.py`
-  - 依赖：—；被引用：—
-- [def valid_current_seal():](../../../tests/test_iteration_sync.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-850DFDC8358E2816 / def valid_current_seal(): / IMPLICIT-850DFDC8358E2816
-  - 来源：`tests/test_iteration_sync.py`
-  - 依赖：—；被引用：—
-- [def valid_manifest():](../../../tests/test_iteration_sync.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-81BF3E3EB4B8E505 / def valid_manifest(): / IMPLICIT-81BF3E3EB4B8E505
-  - 来源：`tests/test_iteration_sync.py`
-  - 依赖：—；被引用：—
-- [def valid_record():](../../../tests/test_failure_case_evidence_gate.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-C83B436BCDEB11D3 / def valid_record(): / IMPLICIT-C83B436BCDEB11D3
-  - 来源：`tests/test_failure_case_evidence_gate.py`
-  - 依赖：—；被引用：—
-- [def valid_seal():](../../../tests/test_iteration_sync.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-17199D3AD3274429 / def valid_seal(): / IMPLICIT-17199D3AD3274429
-  - 来源：`tests/test_iteration_sync.py`
-  - 依赖：—；被引用：—
-- [def validate() -> dict:](../../../tools/governance/validate_human_visibility.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-703EA7BB7C74BEC6 / def validate() -> dict: / IMPLICIT-703EA7BB7C74BEC6 / IMPLICIT-F1FB3318A2F6D881
-  - 来源：`tools/governance/validate_human_visibility.py`
-  - 依赖：—；被引用：—
-- [def validate() -> dict:](../../../tools/governance/validate_knowledge_experience.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-F1FB3318A2F6D881 / def validate() -> dict: / IMPLICIT-F1FB3318A2F6D881 / IMPLICIT-703EA7BB7C74BEC6
-  - 来源：`tools/governance/validate_knowledge_experience.py`
-  - 依赖：—；被引用：—
-- [def validate() -> dict\[str, Any\]:](../../../data/external-research/121-fulltext-resolver/121-validator.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-9B563394C07667BA / def validate() -> dict\[str, Any\]: / IMPLICIT-9B563394C07667BA
-  - 来源：`data/external-research/121-fulltext-resolver/121-validator.py`
-  - 依赖：—；被引用：—
-- [def validate() -> None:](../../../tools/foundation/build_080_queue.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-9F083367470DB75C / def validate() -> None: / IMPLICIT-9F083367470DB75C
-  - 来源：`tools/foundation/build_080_queue.py`
-  - 依赖：—；被引用：—
-- [def validate():](../../../tools/foundation/verify_079.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-A467C48ABB5E07BE / def validate(): / IMPLICIT-A467C48ABB5E07BE / IMPLICIT-D34792D513A614DE
-  - 来源：`tools/foundation/verify_079.py`
-  - 依赖：—；被引用：—
-- [def validate():](../../../tools/operations/validate_component_profiles.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-D34792D513A614DE / def validate(): / IMPLICIT-D34792D513A614DE / IMPLICIT-A467C48ABB5E07BE
-  - 来源：`tools/operations/validate_component_profiles.py`
-  - 依赖：—；被引用：—
-- [def validate(doc, repo_root, schema=None):](../../../tools/validate_epistemic_governance_relationships.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-17AE02FC25272F8F / def validate(doc, repo_root, schema=None): / IMPLICIT-17AE02FC25272F8F
-  - 来源：`tools/validate_epistemic_governance_relationships.py`
-  - 依赖：—；被引用：—
-- [def validate(path: Path = PATH) -> list\[str\]:](../../../tools/validate_state_changelog.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-29C5F63F64A526E3 / def validate(path: Path = PATH) -> list\[str\]: / IMPLICIT-29C5F63F64A526E3
-  - 来源：`tools/validate_state_changelog.py`
-  - 依赖：—；被引用：—
-- [def validate(root: Path = ROOT) -> dict:](../../../tools/operations/validate_phase_e_candidate.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-3377B0310E96D2F2 / def validate(root: Path = ROOT) -> dict: / IMPLICIT-3377B0310E96D2F2
-  - 来源：`tools/operations/validate_phase_e_candidate.py`
-  - 依赖：—；被引用：—
-- [def validate(self, document=None):](../../../tests/test_phase_d_closeout.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-E46FBA92864ABF29 / def validate(self, document=None): / IMPLICIT-E46FBA92864ABF29
-  - 来源：`tests/test_phase_d_closeout.py`
-  - 依赖：—；被引用：—
-- [def validate(self, plan=None, **kwargs):](../../../tests/test_incremental_execution_validator.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-84ACD50BD75FB709 / def validate(self, plan=None, **kwargs): / IMPLICIT-84ACD50BD75FB709 / IMPLICIT-BB7CB7F338146E20
-  - 来源：`tests/test_incremental_execution_validator.py`
-  - 依赖：—；被引用：—
-- [def validate(self, plan=None, **kwargs):](../../../tests/test_incremental_execution_defensive_rejections.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-BB7CB7F338146E20 / def validate(self, plan=None, **kwargs): / IMPLICIT-BB7CB7F338146E20 / IMPLICIT-84ACD50BD75FB709
-  - 来源：`tests/test_incremental_execution_defensive_rejections.py`
-  - 依赖：—；被引用：—
-- [def validate(self, representation: dict, spec: dict) -> list:](../../../function-os-candidate/v0.2/function_os/n2_representation.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-6E2A589997BF1CF2 / def validate(self, representation: dict, spec: dict) -> list: / IMPLICIT-6E2A589997BF1CF2
-  - 来源：`function-os-candidate/v0.2/function_os/n2_representation.py`
-  - 依赖：—；被引用：—
-- [def validate(self, spec: dict, representation: dict, artifact: dict,](../../../function-os-candidate/v0.2/function_os/n7_validator.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-E1E417622751A4BC / def validate(self, spec: dict, representation: dict, artifact: dict, / IMPLICIT-E1E417622751A4BC
-  - 来源：`function-os-candidate/v0.2/function_os/n7_validator.py`
-  - 依赖：—；被引用：—
-- [def validate(self, store: N9RegistryStore) -> dict:](../../../function-os-candidate/v0.2/function_os/n9_registry.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-C59327CD6FCDA2CF / def validate(self, store: N9RegistryStore) -> dict: / IMPLICIT-C59327CD6FCDA2CF
-  - 来源：`function-os-candidate/v0.2/function_os/n9_registry.py`
-  - 依赖：—；被引用：—
-- [def validate(source_pack_path, coverage_matrix_path, evidence_cards_path,](../../../data/external-research/106-105-correction/106-validator.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-BFBD1315E8270A75 / def validate(source_pack_path, coverage_matrix_path, evidence_cards_path, / IMPLICIT-BFBD1315E8270A75
-  - 来源：`data/external-research/106-105-correction/106-validator.py`
-  - 依赖：—；被引用：—
-- [def validate(source_pack_path, coverage_matrix_path, evidence_cards_path,](../../../data/external-research/106-105-correction/106-validator.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-71a5beefceed69a9 / def validate(source_pack_path, coverage_matrix_path, evidence_cards_path,
-  - 来源：`data/external-research/106-105-correction/106-validator.py`
-  - 依赖：—；被引用：—
-- [def validate_actor_contract_sources(](../../../tools/operations/stage_snapshot_contract.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-65EB05C3DC020462 / def validate_actor_contract_sources( / IMPLICIT-65EB05C3DC020462
-  - 来源：`tools/operations/stage_snapshot_contract.py`
-  - 依赖：—；被引用：—
-- [def validate_actor_registry(actor_registry: dict\[str, Any\] \| None = None) -> dict\[str, dict\[str, Any\]\]:](../../../tools/operations/stage_snapshot_contract.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-8977C8BC99BAF678 / def validate_actor_registry(actor_registry: dict\[str, Any\] \| None = None) -> dict\[str, dict\[str, Any\]\]: / IMPLICIT-8977C8BC99BAF678
-  - 来源：`tools/operations/stage_snapshot_contract.py`
-  - 依赖：—；被引用：—
-- [def validate_all() -> dict:](../../../tools/validate_iteration_sync.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-24CCCED179605AB4 / def validate_all() -> dict: / IMPLICIT-24CCCED179605AB4 / IMPLICIT-25D7AE701AD65D99
-  - 来源：`tools/validate_iteration_sync.py`
-  - 依赖：—；被引用：—
-- [def validate_all() -> dict:](../../../tools/adaptive_relational_network/validator.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-25D7AE701AD65D99 / def validate_all() -> dict: / IMPLICIT-25D7AE701AD65D99 / IMPLICIT-24CCCED179605AB4
-  - 来源：`tools/adaptive_relational_network/validator.py`
-  - 依赖：—；被引用：—
-- [def validate_all(paths: list\[Path\] \| None = None) -> dict:](../../../tools/probabilistic_system_dynamics/validator.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-14A77BFDC00ED61E / def validate_all(paths: list\[Path\] \| None = None) -> dict: / IMPLICIT-14A77BFDC00ED61E / IMPLICIT-ED70441F567675C2
-  - 来源：`tools/probabilistic_system_dynamics/validator.py`
-  - 依赖：—；被引用：—
-- [def validate_all(paths: list\[Path\] \| None = None) -> dict:](../../../tools/causal_fabric/validator.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-ED70441F567675C2 / def validate_all(paths: list\[Path\] \| None = None) -> dict: / IMPLICIT-ED70441F567675C2 / IMPLICIT-14A77BFDC00ED61E
-  - 来源：`tools/causal_fabric/validator.py`
-  - 依赖：—；被引用：—
-- [def validate_all(repo: Path) -> dict\[str, Any\]:](../../../inputs/020/validate_formal_protocol.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-66296A7E31796E5A / def validate_all(repo: Path) -> dict\[str, Any\]: / IMPLICIT-66296A7E31796E5A
-  - 来源：`inputs/020/validate_formal_protocol.py`
-  - 依赖：—；被引用：—
-- [def validate_all(root: Path = ROOT) -> dict\[str, object\]:](../../../tools/validate_human_front_door.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-1E280DDE8D0169A9 / def validate_all(root: Path = ROOT) -> dict\[str, object\]: / IMPLICIT-1E280DDE8D0169A9
-  - 来源：`tools/validate_human_front_door.py`
-  - 依赖：—；被引用：—
-- [def validate_all(self) -> List\[Dict\]:](../../../function-os-candidate/v0.1/function_os/n9_registry_validator.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-CA97585443F5C9F9 / def validate_all(self) -> List\[Dict\]: / IMPLICIT-CA97585443F5C9F9
-  - 来源：`function-os-candidate/v0.1/function_os/n9_registry_validator.py`
-  - 依赖：—；被引用：—
-- [def validate_argv(argv: object) -> list\[str\]:](../../../tools/operations/run_incremental_execution.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-7049FDA14BCC06A7 / def validate_argv(argv: object) -> list\[str\]: / IMPLICIT-7049FDA14BCC06A7
-  - 来源：`tools/operations/run_incremental_execution.py`
-  - 依赖：—；被引用：—
-- [def validate_attestation_file(path: Path) -> dict:](../../../tools/validate_external_attestation.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-B3584683B4B8577E / def validate_attestation_file(path: Path) -> dict: / IMPLICIT-B3584683B4B8577E
-  - 来源：`tools/validate_external_attestation.py`
-  - 依赖：—；被引用：—
-- [def validate_attestation_schema(doc: dict, source: str = "attestation") -> list\[str\]:](../../../tools/validate_external_attestation.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-8323496EBBA8238B / def validate_attestation_schema(doc: dict, source: str = "attestation") -> list\[str\]: / IMPLICIT-8323496EBBA8238B
-  - 来源：`tools/validate_external_attestation.py`
-  - 依赖：—；被引用：—
-- [def validate_audit(population: dict\[str, Any\], findings: list\[dict\[str, Any\]\], errors: list\[str\]) -> None:](../../../tools/language_thought/validate_language_thought.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-48CA8CFCC26CDABE / def validate_audit(population: dict\[str, Any\], findings: list\[dict\[str, Any\]\], errors: list\[str\]) -> None: / IMPLICIT-48CA8CFCC26CDABE
-  - 来源：`tools/language_thought/validate_language_thought.py`
-  - 依赖：—；被引用：—
-- [def validate_baseline() -> None:](../../../tools/validate_effectual_mechanism_overlay.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-3A3DFFF7AC81720A / def validate_baseline() -> None: / IMPLICIT-3A3DFFF7AC81720A / IMPLICIT-473916C766C7288B
-  - 来源：`tools/validate_effectual_mechanism_overlay.py`
-  - 依赖：—；被引用：—
-- [def validate_baseline() -> None:](../../../tools/validate_ignition_atlas.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-473916C766C7288B / def validate_baseline() -> None: / IMPLICIT-473916C766C7288B / IMPLICIT-3A3DFFF7AC81720A
-  - 来源：`tools/validate_ignition_atlas.py`
-  - 依赖：—；被引用：—
-- [def validate_baseline() -> None:](../../../tools/validate_attention_distribution_compression.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-C00AA35D101169EA / def validate_baseline() -> None: / IMPLICIT-C00AA35D101169EA / IMPLICIT-3A3DFFF7AC81720A
-  - 来源：`tools/validate_attention_distribution_compression.py`
-  - 依赖：—；被引用：—
-- [def validate_calibration() -> None:](../../../tools/validate_effectual_mechanism_overlay.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-D1775F4CCDB67107 / def validate_calibration() -> None: / IMPLICIT-D1775F4CCDB67107
-  - 来源：`tools/validate_effectual_mechanism_overlay.py`
-  - 依赖：—；被引用：—
-- [def validate_case(document: Any) -> None:](../../../reos_vnext/validation.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-6F3B33B6222E601D / def validate_case(document: Any) -> None: / IMPLICIT-6F3B33B6222E601D
-  - 来源：`reos_vnext/validation.py`
-  - 依赖：—；被引用：—
-- [def validate_case(record: dict\[str, Any\]) -> list\[str\]:](../../../tools/failure_case_evidence_gate.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-3D58A23871184FF4 / def validate_case(record: dict\[str, Any\]) -> list\[str\]: / IMPLICIT-3D58A23871184FF4
-  - 来源：`tools/failure_case_evidence_gate.py`
-  - 依赖：—；被引用：—
-- [def validate_chunks() -> None:](../../../tools/validate_attention_distribution_compression.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-6C6EC719FB903D28 / def validate_chunks() -> None: / IMPLICIT-6C6EC719FB903D28
-  - 来源：`tools/validate_attention_distribution_compression.py`
-  - 依赖：—；被引用：—
-- [def validate_claims(data: dict) -> None:](../../../tools/validate_narrative_output.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-62A87A6D7252200B / def validate_claims(data: dict) -> None: / IMPLICIT-62A87A6D7252200B
-  - 来源：`tools/validate_narrative_output.py`
-  - 依赖：—；被引用：—
-- [def validate_closeout(document: dict\[str, Any\], *, root: Path = ROOT, markdown_path: Path \| None = None) -> dict\[str, Any\]:](../../../tools/operations/validate_phase_d_closeout.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-57CB7595D450656D / def validate_closeout(document: dict\[str, Any\], *, root: Path = ROOT, markdown_path: Path \| None = None) -> dict\[str, Any\]: / IMPLICIT-57CB7595D450656D
-  - 来源：`tools/operations/validate_phase_d_closeout.py`
-  - 依赖：—；被引用：—
-- [def validate_common_fields(name: str, rows: list\[dict\[str, Any\]\]) -> None:](../../../tools/validate_data.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-F140F1427D07EE45 / def validate_common_fields(name: str, rows: list\[dict\[str, Any\]\]) -> None: / IMPLICIT-F140F1427D07EE45
-  - 来源：`tools/validate_data.py`
-  - 依赖：—；被引用：—
-- [def validate_count(name: str, rows: list\[dict\[str, Any\]\], csv_rows: list\[dict\[str, str\]\], config: dict\[str, Any\]) -> None:](../../../tools/validate_data.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-7D37E49453EDCBA1 / def validate_count(name: str, rows: list\[dict\[str, Any\]\], csv_rows: list\[dict\[str, str\]\], config: dict\[str, Any\]) -> None: / IMPLICIT-7D37E49453EDCBA1
-  - 来源：`tools/validate_data.py`
-  - 依赖：—；被引用：—
-- [def validate_csv_json_ids(name: str, rows: list\[dict\[str, Any\]\], csv_rows: list\[dict\[str, str\]\]) -> None:](../../../tools/validate_data.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-E7DDE6F01092D031 / def validate_csv_json_ids(name: str, rows: list\[dict\[str, Any\]\], csv_rows: list\[dict\[str, str\]\]) -> None: / IMPLICIT-E7DDE6F01092D031
-  - 来源：`tools/validate_data.py`
-  - 依赖：—；被引用：—
-- [def validate_custom(manifest: dict, source: Path, seal: dict, registry: dict\[str, dict\] \| None = None) -> None:](../../../tools/validate_iteration_sync.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-04EB5B28C5CCEA17 / def validate_custom(manifest: dict, source: Path, seal: dict, registry: dict\[str, dict\] \| None = None) -> None: / IMPLICIT-04EB5B28C5CCEA17
-  - 来源：`tools/validate_iteration_sync.py`
-  - 依赖：—；被引用：—
-- [def validate_data(data: dict, config: dict) -> None:](../../../tools/governance/build_knowledge_experience.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-3554C6C88F6F1267 / def validate_data(data: dict, config: dict) -> None: / IMPLICIT-3554C6C88F6F1267
-  - 来源：`tools/governance/build_knowledge_experience.py`
-  - 依赖：—；被引用：—
-- [def validate_dataset(name: str, config: dict\[str, Any\]) -> list\[dict\[str, Any\]\]:](../../../tools/validate_data.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-00FD37150671FE07 / def validate_dataset(name: str, config: dict\[str, Any\]) -> list\[dict\[str, Any\]\]: / IMPLICIT-00FD37150671FE07
-  - 来源：`tools/validate_data.py`
-  - 依赖：—；被引用：—
-- [def validate_dataset(name: str, config: dict\[str, Any\]) -> list\[dict\[str, Any\]\]:](../../../tools/validate_data.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-83d7c87b2bf6abac / def validate_dataset(name: str, config: dict\[str, Any\]) -> list\[dict\[str, Any\]\]:
-  - 来源：`tools/validate_data.py`
-  - 依赖：—；被引用：—
-- [def validate_dimensions(document: dict\[str, Any\], evidence_ids: set\[str\], errors: list\[str\]) -> set\[str\]:](../../../tools/language_thought/validate_language_thought.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-717351A8B2870377 / def validate_dimensions(document: dict\[str, Any\], evidence_ids: set\[str\], errors: list\[str\]) -> set\[str\]: / IMPLICIT-717351A8B2870377
-  - 来源：`tools/language_thought/validate_language_thought.py`
-  - 依赖：—；被引用：—
-- [def validate_dimensions(document: dict\[str, Any\], evidence_ids: set\[str\], errors: list\[str\]) -> set\[str\]:](../../../tools/language_thought/validate_language_thought.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-f00cf34ee4a4bcea / def validate_dimensions(document: dict\[str, Any\], evidence_ids: set\[str\], errors: list\[str\]) -> set\[str\]:
-  - 来源：`tools/language_thought/validate_language_thought.py`
-  - 依赖：—；被引用：—
-- [def validate_distribution() -> None:](../../../tools/validate_attention_distribution_compression.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-80CBF3693BFC050C / def validate_distribution() -> None: / IMPLICIT-80CBF3693BFC050C
-  - 来源：`tools/validate_attention_distribution_compression.py`
-  - 依赖：—；被引用：—
-- [def validate_document(payload: dict\[str, Any\]) -> list\[str\]:](../../../tools/failure_case_evidence_gate.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-10A34F92B00119A9 / def validate_document(payload: dict\[str, Any\]) -> list\[str\]: / IMPLICIT-10A34F92B00119A9
-  - 来源：`tools/failure_case_evidence_gate.py`
-  - 依赖：—；被引用：—
-- [def validate_effectual_record(record: dict, source: str) -> None:](../../../tools/validate_effectual_mechanism_overlay.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-206995602B89ECAB / def validate_effectual_record(record: dict, source: str) -> None: / IMPLICIT-206995602B89ECAB
-  - 来源：`tools/validate_effectual_mechanism_overlay.py`
-  - 依赖：—；被引用：—
-- [def validate_embedding_probe_contract(probe: dict) -> list\[str\]:](../../../tools/adaptive_relational_network/validator.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-25285426E443374E / def validate_embedding_probe_contract(probe: dict) -> list\[str\]: / IMPLICIT-25285426E443374E
-  - 来源：`tools/adaptive_relational_network/validator.py`
-  - 依赖：—；被引用：—
-- [def validate_entry(entry):](../../../tools/iteration_planner/completion_state.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-0FF912CA5B98AD97 / def validate_entry(entry): / IMPLICIT-0FF912CA5B98AD97
-  - 来源：`tools/iteration_planner/completion_state.py`
-  - 依赖：—；被引用：—
-- [def validate_entry(entry: dict) -> list\[str\]:](../../../tools/validate_math_foundation.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-AAD4C52E6FCDD714 / def validate_entry(entry: dict) -> list\[str\]: / IMPLICIT-AAD4C52E6FCDD714 / IMPLICIT-1A24B1C7178FED96
-  - 来源：`tools/validate_math_foundation.py`
-  - 依赖：—；被引用：—
-- [def validate_evidence(records: list\[dict\[str, Any\]\], errors: list\[str\]) -> set\[str\]:](../../../tools/language_thought/validate_language_thought.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-AC567B3E203E45E1 / def validate_evidence(records: list\[dict\[str, Any\]\], errors: list\[str\]) -> set\[str\]: / IMPLICIT-AC567B3E203E45E1
-  - 来源：`tools/language_thought/validate_language_thought.py`
-  - 依赖：—；被引用：—
-- [def validate_evidence(records: list\[dict\[str, Any\]\], errors: list\[str\]) -> set\[str\]:](../../../tools/language_thought/validate_language_thought.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-8a019fb27c3b08af / def validate_evidence(records: list\[dict\[str, Any\]\], errors: list\[str\]) -> set\[str\]:
-  - 来源：`tools/language_thought/validate_language_thought.py`
-  - 依赖：—；被引用：—
-- [def validate_fabric(fabric: dict) -> list\[str\]:](../../../tools/causal_fabric/validator.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-2F2F15E70C3B540C / def validate_fabric(fabric: dict) -> list\[str\]: / IMPLICIT-2F2F15E70C3B540C
-  - 来源：`tools/causal_fabric/validator.py`
-  - 依赖：—；被引用：—
-- [def validate_fixture(self, repo, execution_plan, **kwargs):](../../../tests/test_incremental_execution.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-06F72F593E58544F / def validate_fixture(self, repo, execution_plan, **kwargs): / IMPLICIT-06F72F593E58544F
-  - 来源：`tests/test_incremental_execution.py`
-  - 依赖：—；被引用：—
-- [def validate_fixture_references(](../../../tools/language_thought/validate_language_thought.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-BE1EA8E7D123E5A6 / def validate_fixture_references( / IMPLICIT-BE1EA8E7D123E5A6
-  - 来源：`tools/language_thought/validate_language_thought.py`
-  - 依赖：—；被引用：—
-- [def validate_forbidden_content() -> None:](../../../tools/validate_sustainability_signal_interface.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-F0BB97F2A4F6143A / def validate_forbidden_content() -> None: / IMPLICIT-F0BB97F2A4F6143A
-  - 来源：`tools/validate_sustainability_signal_interface.py`
-  - 依赖：—；被引用：—
-- [def validate_gap_matrix() -> None:](../../../tools/validate_attention_distribution_compression.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-A29BCF42132D1D00 / def validate_gap_matrix() -> None: / IMPLICIT-A29BCF42132D1D00
-  - 来源：`tools/validate_attention_distribution_compression.py`
-  - 依赖：—；被引用：—
-- [def validate_handoff(bundle: Any) -> None:](../../../reos_vnext/validation.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-2FD60C80DBA07C9F / def validate_handoff(bundle: Any) -> None: / IMPLICIT-2FD60C80DBA07C9F / IMPLICIT-7AB1CD94AC628554
-  - 来源：`reos_vnext/validation.py`
-  - 依赖：—；被引用：—
-- [def validate_ids(name: str, rows: list\[dict\[str, Any\]\], config: dict\[str, Any\]) -> None:](../../../tools/validate_data.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-64C1A3BB9E5A04BD / def validate_ids(name: str, rows: list\[dict\[str, Any\]\], config: dict\[str, Any\]) -> None: / IMPLICIT-64C1A3BB9E5A04BD
-  - 来源：`tools/validate_data.py`
-  - 依赖：—；被引用：—
-- [def validate_incremental_execution(](../../../tools/operations/validate_incremental_execution.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-0DECA92839EBAC1C / def validate_incremental_execution( / IMPLICIT-0DECA92839EBAC1C
-  - 来源：`tools/operations/validate_incremental_execution.py`
-  - 依赖：—；被引用：—
-- [def validate_instance(name, inst, label):](../../../evidence-program/tools/validate_evidence_program.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-E8E710FB982DD223 / def validate_instance(name, inst, label): / IMPLICIT-E8E710FB982DD223
-  - 来源：`evidence-program/tools/validate_evidence_program.py`
-  - 依赖：—；被引用：—
-- [def validate_issue_forms() -> None:](../../../tools/validate_sustainability_signal_interface.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-9813A86CE456E052 / def validate_issue_forms() -> None: / IMPLICIT-9813A86CE456E052
-  - 来源：`tools/validate_sustainability_signal_interface.py`
-  - 依赖：—；被引用：—
-- [def validate_json(document: dict, schema_path: Path, label: str) -> None:](../../../tools/operations/compute_change_propagation.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-53960E412A8613B1 / def validate_json(document: dict, schema_path: Path, label: str) -> None: / IMPLICIT-53960E412A8613B1
-  - 来源：`tools/operations/compute_change_propagation.py`
-  - 依赖：—；被引用：—
-- [def validate_ledger(records: List\[Dict\]) -> List\[str\]:](../../../tools/propagation/ledger.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-4FC2E00DC1B1E1B0 / def validate_ledger(records: List\[Dict\]) -> List\[str\]: / IMPLICIT-4FC2E00DC1B1E1B0
-  - 来源：`tools/propagation/ledger.py`
-  - 依赖：—；被引用：—
-- [def validate_local_validator(cid, argv):](../../../tools/operations/generate_component_profiles.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-61A28B8E359F3BFA / def validate_local_validator(cid, argv): / IMPLICIT-61A28B8E359F3BFA
-  - 来源：`tools/operations/generate_component_profiles.py`
-  - 依赖：—；被引用：—
-- [def validate_manifest(manifest: dict\[str, Any\], errors: list\[str\]) -> None:](../../../tools/language_thought/validate_language_thought.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-FC52E0D0C0B0F34C / def validate_manifest(manifest: dict\[str, Any\], errors: list\[str\]) -> None: / IMPLICIT-FC52E0D0C0B0F34C
-  - 来源：`tools/language_thought/validate_language_thought.py`
-  - 依赖：—；被引用：—
-- [def validate_manifest(manifest_path: str, repo_root: str) -> List\[str\]:](../../../tools/propagation/editorial_lifecycle.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-8245295A7EA6E74C / def validate_manifest(manifest_path: str, repo_root: str) -> List\[str\]: / IMPLICIT-8245295A7EA6E74C
-  - 来源：`tools/propagation/editorial_lifecycle.py`
-  - 依赖：—；被引用：—
-- [def validate_manifest_bindings(documents: list\[tuple\[Path, dict\]\]) -> list\[tuple\[Path, dict, Path\]\]:](../../../tools/validate_iteration_sync.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-2AAAC03148B4BA50 / def validate_manifest_bindings(documents: list\[tuple\[Path, dict\]\]) -> list\[tuple\[Path, dict, Path\]\]: / IMPLICIT-2AAAC03148B4BA50
-  - 来源：`tools/validate_iteration_sync.py`
-  - 依赖：—；被引用：—
-- [def validate_manifest_schema(manifest: dict, source: Path) -> None:](../../../tools/validate_iteration_sync.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-DFB80BB55AE9AE21 / def validate_manifest_schema(manifest: dict, source: Path) -> None: / IMPLICIT-DFB80BB55AE9AE21
-  - 来源：`tools/validate_iteration_sync.py`
-  - 依赖：—；被引用：—
-- [def validate_materialized_projection(registry: dict\[str, Any\], projection_doc: str) -> None:](../../../tools/operations/stage_snapshot_contract.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-BBA67CD73F08E9EE / def validate_materialized_projection(registry: dict\[str, Any\], projection_doc: str) -> None: / IMPLICIT-BBA67CD73F08E9EE
-  - 来源：`tools/operations/stage_snapshot_contract.py`
-  - 依赖：—；被引用：—
-- [def validate_materialized_projection(registry: dict\[str, Any\], projection_doc: str) -> None:](../../../tools/operations/stage_snapshot_contract.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-82b7d18a176b5ef1 / def validate_materialized_projection(registry: dict\[str, Any\], projection_doc: str) -> None:
-  - 来源：`tools/operations/stage_snapshot_contract.py`
-  - 依赖：—；被引用：—
-- [def validate_observation_plan() -> None:](../../../tools/validate_sustainability_signal_interface.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-23BD010735BD722F / def validate_observation_plan() -> None: / IMPLICIT-23BD010735BD722F
-  - 来源：`tools/validate_sustainability_signal_interface.py`
-  - 依赖：—；被引用：—
-- [def validate_overlap_declarations(components: dict\[str, dict\], allowed_overlaps: list\[dict\]) -> list\[dict\]:](../../../tools/operations/compute_change_propagation.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-75045C0632F9A79B / def validate_overlap_declarations(components: dict\[str, dict\], allowed_overlaps: list\[dict\]) -> list\[dict\]: / IMPLICIT-75045C0632F9A79B
-  - 来源：`tools/operations/compute_change_propagation.py`
-  - 依赖：—；被引用：—
-- [def validate_pilots() -> None:](../../../tools/validate_effectual_mechanism_overlay.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-73B31AA47FF0CE55 / def validate_pilots() -> None: / IMPLICIT-73B31AA47FF0CE55
-  - 来源：`tools/validate_effectual_mechanism_overlay.py`
-  - 依赖：—；被引用：—
-- [def validate_profile(profile: dict\[str, Any\], dimension_ids: set\[str\], evidence_ids: set\[str\], errors: list\[str\]) -> Non](../../../tools/language_thought/validate_language_thought.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-89275808eceb96b1 / def validate_profile(profile: dict\[str, Any\], dimension_ids: set\[str\], evidence_ids: set\[str\], errors: list\[str\]) -> Non
-  - 来源：`tools/language_thought/validate_language_thought.py`
-  - 依赖：—；被引用：—
-- [def validate_profile(profile: dict\[str, Any\], dimension_ids: set\[str\], evidence_ids: set\[str\], errors: list\[str\]) -> None:](../../../tools/language_thought/validate_language_thought.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-2FC6A19D8B06F93D / def validate_profile(profile: dict\[str, Any\], dimension_ids: set\[str\], evidence_ids: set\[str\], errors: list\[str\]) -> None: / IMPLICIT-2FC6A19D8B06F93D
-  - 来源：`tools/language_thought/validate_language_thought.py`
-  - 依赖：—；被引用：—
-- [def validate_protocol_record(record: dict\[str, Any\], repo: Path) -> list\[GateResult\]:](../../../inputs/020/validate_formal_protocol.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-C09DB0938D3B602E / def validate_protocol_record(record: dict\[str, Any\], repo: Path) -> list\[GateResult\]: / IMPLICIT-C09DB0938D3B602E
-  - 来源：`inputs/020/validate_formal_protocol.py`
-  - 依赖：—；被引用：—
-- [def validate_record(rec: dict, repo: Optional\[Path\], gate_reg: dict, strict: bool) -> dict:](../../../tools/validate_protocol_canonical.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-9935C5D7AEF60AEA / def validate_record(rec: dict, repo: Optional\[Path\], gate_reg: dict, strict: bool) -> dict: / IMPLICIT-9935C5D7AEF60AEA
-  - 来源：`tools/validate_protocol_canonical.py`
-  - 依赖：—；被引用：—
-- [def validate_record(record: dict) -> list\[str\]:](../../../tools/probabilistic_system_dynamics/validator.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-04FA6972BA181493 / def validate_record(record: dict) -> list\[str\]: / IMPLICIT-04FA6972BA181493
-  - 来源：`tools/probabilistic_system_dynamics/validator.py`
-  - 依赖：—；被引用：—
-- [def validate_registry(](../../../tools/operations/stage_snapshot_contract.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-DA4037D2DB143294 / def validate_registry( / IMPLICIT-DA4037D2DB143294
-  - 来源：`tools/operations/stage_snapshot_contract.py`
-  - 依赖：—；被引用：—
-- [def validate_registry(registry: dict, source: Path = REGISTRY_PATH) -> dict\[str, dict\]:](../../../tools/validate_iteration_sync.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-4480B49A8B56E86F / def validate_registry(registry: dict, source: Path = REGISTRY_PATH) -> dict\[str, dict\]: / IMPLICIT-4480B49A8B56E86F
-  - 来源：`tools/validate_iteration_sync.py`
-  - 依赖：—；被引用：—
-- [def validate_relation_authority(relation: dict) -> None:](../../../tools/operations/compute_change_propagation.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-C3FDFE555AEFBFA8 / def validate_relation_authority(relation: dict) -> None: / IMPLICIT-C3FDFE555AEFBFA8
-  - 来源：`tools/operations/compute_change_propagation.py`
-  - 依赖：—；被引用：—
-- [def validate_relative_path(raw: str, root: Path) -> Path:](../../../tools/operations/run_incremental_execution.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-0F9D3D8A2660A5B3 / def validate_relative_path(raw: str, root: Path) -> Path: / IMPLICIT-0F9D3D8A2660A5B3
-  - 来源：`tools/operations/run_incremental_execution.py`
-  - 依赖：—；被引用：—
-- [def validate_repo_path(raw: object, root: Path) -> Path:](../../../tools/operations/validate_incremental_execution.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-FBAB1F36F88BBB41 / def validate_repo_path(raw: object, root: Path) -> Path: / IMPLICIT-FBAB1F36F88BBB41
-  - 来源：`tools/operations/validate_incremental_execution.py`
-  - 依赖：—；被引用：—
-- [def validate_report_and_seal() -> None:](../../../tools/validate_sustainability_signal_interface.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-BA7F79167C2370CA / def validate_report_and_seal() -> None: / IMPLICIT-BA7F79167C2370CA
-  - 来源：`tools/validate_sustainability_signal_interface.py`
   - 依赖：—；被引用：—

@@ -1,44 +1,38 @@
-# 函数资产人类浏览器
+# 函数资产
 
-从 canonical function-assets census 生成的按页人类浏览层。它保留身份、M/E、处置、状态和来源回链，不是第二份函数数据库。
+这是函数资产的人类入口。把公式、算法、关系、指标和待澄清对象从长语料中分离出来，供人先理解用途和边界。
 
-canonical source: `data/foundation/function-assets/census.jsonl`；记录数：`7371`；每页：`250`。
+## 普通读者从这里开始
 
-> 这里的文字由生成器确定性投影。不要手改页面；若对象状态变化，先更新 canonical asset，再重新生成并运行 `--check`。
+先按主题进入一组，再打开少量有独立说明的材料；如果你要查全量 ID、来源锚点或精确处置，直接进入机器登记。这里没有把机器 registry 伪装成文章，也没有用分页代替阅读结构。
 
-## 分页
+- [按主题与处置阅读](themes/README.md)
+- [打开 materiality 说明与机器 bulk 入口](bulk-explanation.md)
+- [查看 Human Surface 编辑契约](../../../docs/governance/human-surface-editorial-contract.md)
 
-- [第 001 页](page-001.md)：记录 1–250
-- [第 002 页](page-002.md)：记录 251–500
-- [第 003 页](page-003.md)：记录 501–750
-- [第 004 页](page-004.md)：记录 751–1000
-- [第 005 页](page-005.md)：记录 1001–1250
-- [第 006 页](page-006.md)：记录 1251–1500
-- [第 007 页](page-007.md)：记录 1501–1750
-- [第 008 页](page-008.md)：记录 1751–2000
-- [第 009 页](page-009.md)：记录 2001–2250
-- [第 010 页](page-010.md)：记录 2251–2500
-- [第 011 页](page-011.md)：记录 2501–2750
-- [第 012 页](page-012.md)：记录 2751–3000
-- [第 013 页](page-013.md)：记录 3001–3250
-- [第 014 页](page-014.md)：记录 3251–3500
-- [第 015 页](page-015.md)：记录 3501–3750
-- [第 016 页](page-016.md)：记录 3751–4000
-- [第 017 页](page-017.md)：记录 4001–4250
-- [第 018 页](page-018.md)：记录 4251–4500
-- [第 019 页](page-019.md)：记录 4501–4750
-- [第 020 页](page-020.md)：记录 4751–5000
-- [第 021 页](page-021.md)：记录 5001–5250
-- [第 022 页](page-022.md)：记录 5251–5500
-- [第 023 页](page-023.md)：记录 5501–5750
-- [第 024 页](page-024.md)：记录 5751–6000
-- [第 025 页](page-025.md)：记录 6001–6250
-- [第 026 页](page-026.md)：记录 6251–6500
-- [第 027 页](page-027.md)：记录 6501–6750
-- [第 028 页](page-028.md)：记录 6751–7000
-- [第 029 页](page-029.md)：记录 7001–7250
-- [第 030 页](page-030.md)：记录 7251–7371
+## 这轮覆盖了什么
+
+机器记录规模：**7374** 条；独立人话说明：**24** 条。前一个数字是当前登记量，不是本轮发现量；后一个数字是按 materiality policy 选出的可读样本，不代表其余记录无价值。
+
+主题层同时保留对象类型、处置和边界的分组；条目层才展开“它在说什么 / 为什么值得看 / 可以怎么用 / 不能推出什么 / 还缺什么”。精确的 ID、M/E、处置和 claim ceiling 放在每条说明的技术记录段落。
+
+## 主题入口
+
+- [关系与约束](themes/relations-and-constraints.md)：2 条人话说明
+- [判断与门槛](themes/decisions-and-thresholds.md)：5 条人话说明
+- [待澄清的登记](themes/records-needing-clarification.md)：8 条人话说明
+- [待研究问题](themes/open-research-questions.md)：2 条人话说明
+- [指标与信号](themes/metrics-and-signals.md)：2 条人话说明
+- [模型与参数](themes/models-and-parameters.md)：2 条人话说明
+- [步骤与操作](themes/steps-and-operations.md)：2 条人话说明
+- [经验性工具](themes/heuristics.md)：1 条人话说明
+
+## 机器权威与新鲜度
+
+- 当前机器权威：[data/foundation/function-assets/census.jsonl](../../../data/foundation/function-assets/census.jsonl)
+- 本轮 materiality manifest：[materiality-manifest.json](../../../data/governance/human-surface/materiality-manifest.json)
+- 每条人话说明都记录机器记录指纹与来源指纹；指纹变化时，本页必须重新生成。人话说明本身不改变来源状态。
 
 ## 解释边界
 
-机器登记、自动提取、内部测试、重复出现次数、M/E 标签和 registry closure 都不能单独抬升断言地位。需要裁决时回到 canonical registry、adjudication、evidence、proof、scope 和 provenance 资产。
+登记闭合、自动提取、重复出现、内部测试、工程通过或读者共鸣，都不能单独抬升数学成熟度、外部证据或现实真值。撤回、降级、隔离和开放问题继续可见。

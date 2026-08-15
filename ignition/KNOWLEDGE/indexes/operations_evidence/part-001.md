@@ -1094,10 +1094,10 @@
   - 可搜索名称：IMPLICIT-FFBBCC76EADCD98A / # AI external knowledge vs internal integration / IMPLICIT-FFBBCC76EADCD98A
   - 来源：`data/architecture/adaptive-relational-network/examples/ai-external-knowledge-vs-internal-integration.md`
   - 依赖：—；被引用：—
-- [# C-0705｜可选集动力学×商业模式](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0700-C-0705-%E5%8F%AF%E9%80%89%E9%9B%86%E5%8A%A8%E5%8A%9B%E5%AD%A6%C3%97%E5%95%86%E4%B8%9A%E6%A8%A1%E5%BC%8F.md)
+- [# C-0705｜可选集动力学×商业模式](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-DF15AF38B89823E3 / # C-0705｜可选集动力学×商业模式 / IMPLICIT-DF15AF38B89823E3
-  - 来源：`统一案例总表/0700-C-0705-可选集动力学×商业模式.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
 - [# Canonical Protocol Data Model (022 frozen)](../../../canonical/docs/canonical-protocol-data-model.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -1639,340 +1639,340 @@
   - 可搜索名称：IMPLICIT-A7F2DB9BBC636953 / ## 关于“四种基本力统一” / IMPLICIT-A7F2DB9BBC636953
   - 来源：`docs/physics_boundary.md`
   - 依赖：—；被引用：—
-- [## 判定理由 / Derivation Reason](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0597-D587-%E5%AD%A6%E7%A7%91%E7%90%86%E8%AE%BA%E6%A0%B8%E6%8A%BD%E5%8F%96%E5%87%BD%E6%95%B0.md)
+- [## 判定理由 / Derivation Reason](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-054856DD6A537213 / ## 判定理由 / Derivation Reason / IMPLICIT-054856DD6A537213 / IMPLICIT-079973A47863A676
-  - 来源：`统一函数总表/0597-D587-学科理论核抽取函数.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [## 判定理由 / Derivation Reason](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0576-D561-%E8%AE%B0%E5%BF%86-%E6%99%BA%E8%83%BD%E8%BE%B9%E7%95%8C%E5%87%BD%E6%95%B0.md)
+- [## 判定理由 / Derivation Reason](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-079973A47863A676 / ## 判定理由 / Derivation Reason / IMPLICIT-079973A47863A676 / IMPLICIT-054856DD6A537213
-  - 来源：`统一函数总表/0576-D561-记忆-智能边界函数.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [## 判定理由 / Derivation Reason](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0549-T50-%E6%A4%8D%E7%89%A9%E6%95%B0%E5%AD%A6%E4%BC%98%E5%8C%96%E5%87%BD%E6%95%B0.md)
+- [## 判定理由 / Derivation Reason](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-08D9554CD9A64EA1 / ## 判定理由 / Derivation Reason / IMPLICIT-08D9554CD9A64EA1 / IMPLICIT-054856DD6A537213
-  - 来源：`统一函数总表/0549-T50-植物数学优化函数.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [## 判定理由 / Derivation Reason](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0581-D571-%E7%84%A6%E8%99%91%E4%BF%A1%E6%81%AF%E6%9D%83%E5%87%BD%E6%95%B0.md)
+- [## 判定理由 / Derivation Reason](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-0AB31B815917AA27 / ## 判定理由 / Derivation Reason / IMPLICIT-0AB31B815917AA27 / IMPLICIT-054856DD6A537213
-  - 来源：`统一函数总表/0581-D571-焦虑信息权函数.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [## 判定理由 / Derivation Reason](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0555-T56-%E6%BC%94%E5%8C%96%E5%88%86%E6%AD%A7%E5%87%BD%E6%95%B0.md)
+- [## 判定理由 / Derivation Reason](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-0B0B958514A32C9A / ## 判定理由 / Derivation Reason / IMPLICIT-0B0B958514A32C9A / IMPLICIT-054856DD6A537213
-  - 来源：`统一函数总表/0555-T56-演化分歧函数.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [## 判定理由 / Derivation Reason](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0557-D542-%E6%A4%8D%E7%89%A9%E8%9B%8B%E7%99%BD%E8%B4%A8%E7%BD%91%E7%BB%9C%E5%87%BD%E6%95%B0.md)
+- [## 判定理由 / Derivation Reason](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-0BE95F5F29DE0831 / ## 判定理由 / Derivation Reason / IMPLICIT-0BE95F5F29DE0831 / IMPLICIT-054856DD6A537213
-  - 来源：`统一函数总表/0557-D542-植物蛋白质网络函数.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [## 判定理由 / Derivation Reason](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0580-D565-%E9%98%B6%E7%BA%A7%E8%83%8C%E5%8F%9B%E5%87%BD%E6%95%B0.md)
+- [## 判定理由 / Derivation Reason](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-12ADDF5C66B621B2 / ## 判定理由 / Derivation Reason / IMPLICIT-12ADDF5C66B621B2 / IMPLICIT-054856DD6A537213
-  - 来源：`统一函数总表/0580-D565-阶级背叛函数.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [## 判定理由 / Derivation Reason](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0558-D543-%E7%BE%A4%E4%BD%93%E6%99%BA%E8%83%BD%E5%87%BD%E6%95%B0.md)
+- [## 判定理由 / Derivation Reason](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-14C4448E41D91EE0 / ## 判定理由 / Derivation Reason / IMPLICIT-14C4448E41D91EE0 / IMPLICIT-054856DD6A537213
-  - 来源：`统一函数总表/0558-D543-群体智能函数.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [## 判定理由 / Derivation Reason](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0591-D581-%E4%BF%A1%E6%81%AF%E8%8C%A7%E6%88%BF%E7%A0%B4%E8%A7%A3.md)
+- [## 判定理由 / Derivation Reason](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-1859750D2539B98B / ## 判定理由 / Derivation Reason / IMPLICIT-1859750D2539B98B / IMPLICIT-054856DD6A537213
-  - 来源：`统一函数总表/0591-D581-信息茧房破解.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [## 判定理由 / Derivation Reason](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0550-T51-%E6%A4%8D%E7%89%A9%E4%BF%A1%E5%8F%B7%E4%BC%A0%E9%80%92%E5%87%BD%E6%95%B0.md)
+- [## 判定理由 / Derivation Reason](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-195CC0695B3150D4 / ## 判定理由 / Derivation Reason / IMPLICIT-195CC0695B3150D4 / IMPLICIT-054856DD6A537213
-  - 来源：`统一函数总表/0550-T51-植物信号传递函数.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [## 判定理由 / Derivation Reason](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0542-T43-%E7%A5%A5%E7%91%9E%E7%AC%A6%E5%8F%B7%E7%B3%BB%E7%BB%9F%E7%A8%B3%E5%AE%9A%E6%80%A7%E6%8C%87%E7%A4%BA%E5%99%A8%E5%87%BD%E6%95%B0.md)
+- [## 判定理由 / Derivation Reason](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-1D7B2E27020AFAAD / ## 判定理由 / Derivation Reason / IMPLICIT-1D7B2E27020AFAAD / IMPLICIT-054856DD6A537213
-  - 来源：`统一函数总表/0542-T43-祥瑞符号系统稳定性指示器函数.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [## 判定理由 / Derivation Reason](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0596-D586-%E7%8B%AC%E7%89%B9%E8%B5%9B%E9%81%93%E9%80%89%E6%8B%A9.md)
+- [## 判定理由 / Derivation Reason](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-1FDAEE0F304C87F0 / ## 判定理由 / Derivation Reason / IMPLICIT-1FDAEE0F304C87F0 / IMPLICIT-054856DD6A537213
-  - 来源：`统一函数总表/0596-D586-独特赛道选择.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [## 判定理由 / Derivation Reason](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0593-D583-%E8%AE%A4%E7%9F%A5%E8%82%8C%E8%82%89%E9%94%BB%E7%82%BC.md)
+- [## 判定理由 / Derivation Reason](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-20ED2F948B605500 / ## 判定理由 / Derivation Reason / IMPLICIT-20ED2F948B605500 / IMPLICIT-054856DD6A537213
-  - 来源：`统一函数总表/0593-D583-认知肌肉锻炼.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [## 判定理由 / Derivation Reason](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0563-D548-%E6%A4%8D%E7%89%A9%E8%83%81%E8%BF%AB%E5%87%BD%E6%95%B0.md)
+- [## 判定理由 / Derivation Reason](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-30B008A543F06BB3 / ## 判定理由 / Derivation Reason / IMPLICIT-30B008A543F06BB3 / IMPLICIT-054856DD6A537213
-  - 来源：`统一函数总表/0563-D548-植物胁迫函数.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [## 判定理由 / Derivation Reason](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0552-T53-%E6%A4%8D%E7%89%A9%E8%A1%A8%E8%A7%82%E9%81%97%E4%BC%A0%E5%87%BD%E6%95%B0.md)
+- [## 判定理由 / Derivation Reason](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-3A5A88908809A4EB / ## 判定理由 / Derivation Reason / IMPLICIT-3A5A88908809A4EB / IMPLICIT-054856DD6A537213
-  - 来源：`统一函数总表/0552-T53-植物表观遗传函数.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [## 判定理由 / Derivation Reason](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0543-T44-%E5%85%83%E5%B1%82%E9%9D%A2%E6%94%B6%E6%95%9B%E4%B8%8E%E5%AD%90%E7%B3%BB%E7%BB%9F%E5%B1%95%E5%BC%80%E5%86%B2%E7%AA%81%E5%87%BD%E6%95%B0.md)
+- [## 判定理由 / Derivation Reason](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-3CEE4582D76F545B / ## 判定理由 / Derivation Reason / IMPLICIT-3CEE4582D76F545B / IMPLICIT-054856DD6A537213
-  - 来源：`统一函数总表/0543-T44-元层面收敛与子系统展开冲突函数.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [## 判定理由 / Derivation Reason](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0602-D592-%E8%A7%84%E8%8C%83%E6%80%A7%E5%88%86%E7%A6%BB%E5%87%BD%E6%95%B0.md)
+- [## 判定理由 / Derivation Reason](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-3DD30F45E98374E8 / ## 判定理由 / Derivation Reason / IMPLICIT-3DD30F45E98374E8 / IMPLICIT-054856DD6A537213
-  - 来源：`统一函数总表/0602-D592-规范性分离函数.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [## 判定理由 / Derivation Reason](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0586-D576-%E8%AE%A4%E7%9F%A5%E5%B9%B4%E9%BE%84%E6%8F%90%E5%8D%87.md)
+- [## 判定理由 / Derivation Reason](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-3E2430E06461C826 / ## 判定理由 / Derivation Reason / IMPLICIT-3E2430E06461C826 / IMPLICIT-054856DD6A537213
-  - 来源：`统一函数总表/0586-D576-认知年龄提升.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [## 判定理由 / Derivation Reason](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0579-D564-%E7%90%86%E6%83%B3%E4%B8%BB%E4%B9%89%E5%8F%8C%E9%87%8D%E6%80%A7%E5%87%BD%E6%95%B0.md)
+- [## 判定理由 / Derivation Reason](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-41384817CC2B24A0 / ## 判定理由 / Derivation Reason / IMPLICIT-41384817CC2B24A0 / IMPLICIT-054856DD6A537213
-  - 来源：`统一函数总表/0579-D564-理想主义双重性函数.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [## 判定理由 / Derivation Reason](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0584-D574-%E8%B4%A2%E5%8A%A1%E6%95%99%E8%82%B2%E6%A1%86%E6%9E%B6%E5%8C%96.md)
+- [## 判定理由 / Derivation Reason](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-41EF13025D3F189F / ## 判定理由 / Derivation Reason / IMPLICIT-41EF13025D3F189F / IMPLICIT-054856DD6A537213
-  - 来源：`统一函数总表/0584-D574-财务教育框架化.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [## 判定理由 / Derivation Reason](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0554-T55-%E6%A4%8D%E7%89%A9%E6%84%8F%E8%AF%86%E5%87%BD%E6%95%B0.md)
+- [## 判定理由 / Derivation Reason](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-45C9354E9CF4FF2F / ## 判定理由 / Derivation Reason / IMPLICIT-45C9354E9CF4FF2F / IMPLICIT-054856DD6A537213
-  - 来源：`统一函数总表/0554-T55-植物意识函数.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [## 判定理由 / Derivation Reason](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0589-D579-%E9%98%85%E5%8E%86%E8%B5%A4%E5%AD%97%E8%A7%A3%E5%86%B3.md)
+- [## 判定理由 / Derivation Reason](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-4A5192474AC4D133 / ## 判定理由 / Derivation Reason / IMPLICIT-4A5192474AC4D133 / IMPLICIT-054856DD6A537213
-  - 来源：`统一函数总表/0589-D579-阅历赤字解决.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [## 判定理由 / Derivation Reason](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0562-D547-%E6%A4%8D%E7%89%A9%E6%BC%94%E5%8C%96%E5%87%BD%E6%95%B0.md)
+- [## 判定理由 / Derivation Reason](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-4A6CC9AAF0E74589 / ## 判定理由 / Derivation Reason / IMPLICIT-4A6CC9AAF0E74589 / IMPLICIT-054856DD6A537213
-  - 来源：`统一函数总表/0562-D547-植物演化函数.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [## 判定理由 / Derivation Reason](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0600-D590-%E8%AF%81%E6%8D%AE%E5%88%B6%E5%BA%A6%E5%AE%88%E9%97%A8%E5%87%BD%E6%95%B0.md)
+- [## 判定理由 / Derivation Reason](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-502E2B45A83C233D / ## 判定理由 / Derivation Reason / IMPLICIT-502E2B45A83C233D / IMPLICIT-054856DD6A537213
-  - 来源：`统一函数总表/0600-D590-证据制度守门函数.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [## 判定理由 / Derivation Reason](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0561-D546-%E6%A4%8D%E7%89%A9%E4%BC%A6%E7%90%86%E5%87%BD%E6%95%B0.md)
+- [## 判定理由 / Derivation Reason](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-573E50223ED5A104 / ## 判定理由 / Derivation Reason / IMPLICIT-573E50223ED5A104 / IMPLICIT-054856DD6A537213
-  - 来源：`统一函数总表/0561-D546-植物伦理函数.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [## 判定理由 / Derivation Reason](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0547-T48-%E6%A4%8D%E7%89%A9%E8%AE%B0%E5%BF%86%E5%87%BD%E6%95%B0.md)
+- [## 判定理由 / Derivation Reason](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-5A623C9936E679CC / ## 判定理由 / Derivation Reason / IMPLICIT-5A623C9936E679CC / IMPLICIT-054856DD6A537213
-  - 来源：`统一函数总表/0547-T48-植物记忆函数.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [## 判定理由 / Derivation Reason](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0598-D588-%E7%BB%8F%E5%85%B8%E9%97%AE%E9%A2%98%E5%B7%AE%E5%88%86%E5%87%BD%E6%95%B0.md)
+- [## 判定理由 / Derivation Reason](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-5C8FE41EE04E8518 / ## 判定理由 / Derivation Reason / IMPLICIT-5C8FE41EE04E8518 / IMPLICIT-054856DD6A537213
-  - 来源：`统一函数总表/0598-D588-经典问题差分函数.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [## 判定理由 / Derivation Reason](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0575-D560-%E8%AE%B0%E5%BF%86%E5%88%86%E5%B8%83%E5%BC%8F%E7%BC%96%E7%A0%81%E5%87%BD%E6%95%B0.md)
+- [## 判定理由 / Derivation Reason](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-5F98A86BFF425EF9 / ## 判定理由 / Derivation Reason / IMPLICIT-5F98A86BFF425EF9 / IMPLICIT-054856DD6A537213
-  - 来源：`统一函数总表/0575-D560-记忆分布式编码函数.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [## 判定理由 / Derivation Reason](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0585-D575-%E8%B4%A2%E5%8A%A1%E5%85%83%E5%8D%8F%E8%AE%AE%E5%AE%9E%E4%BE%8B%E5%8C%96.md)
+- [## 判定理由 / Derivation Reason](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-62795F220B0CFDFF / ## 判定理由 / Derivation Reason / IMPLICIT-62795F220B0CFDFF / IMPLICIT-054856DD6A537213
-  - 来源：`统一函数总表/0585-D575-财务元协议实例化.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [## 判定理由 / Derivation Reason](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0551-T52-%E6%A4%8D%E7%89%A9%E8%8F%8C%E6%A0%B9%E7%BD%91%E7%BB%9C%E5%87%BD%E6%95%B0.md)
+- [## 判定理由 / Derivation Reason](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-6C7F0CC879C94C2E / ## 判定理由 / Derivation Reason / IMPLICIT-6C7F0CC879C94C2E / IMPLICIT-054856DD6A537213
-  - 来源：`统一函数总表/0551-T52-植物菌根网络函数.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [## 判定理由 / Derivation Reason](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0582-D572-%E9%80%80%E5%87%BA%E6%9D%83%E9%AA%8C%E8%AF%81.md)
+- [## 判定理由 / Derivation Reason](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-6FA47682A639B6CF / ## 判定理由 / Derivation Reason / IMPLICIT-6FA47682A639B6CF / IMPLICIT-054856DD6A537213
-  - 来源：`统一函数总表/0582-D572-退出权验证.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [## 判定理由 / Derivation Reason](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0545-T46-%E5%85%83%E5%90%8C%E6%9E%84%E5%BE%8B%E8%B7%A8%E6%96%87%E6%98%8E%E9%AA%8C%E8%AF%81%E5%87%BD%E6%95%B0.md)
+- [## 判定理由 / Derivation Reason](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-7179BA1E0E3A088A / ## 判定理由 / Derivation Reason / IMPLICIT-7179BA1E0E3A088A / IMPLICIT-054856DD6A537213
-  - 来源：`统一函数总表/0545-T46-元同构律跨文明验证函数.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [## 判定理由 / Derivation Reason](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0567-D552-%E6%A4%8D%E7%89%A9%E5%93%A5%E5%BE%B7%E5%B0%94%E5%87%BD%E6%95%B0.md)
+- [## 判定理由 / Derivation Reason](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-85B89CF1A0967CDF / ## 判定理由 / Derivation Reason / IMPLICIT-85B89CF1A0967CDF / IMPLICIT-054856DD6A537213
-  - 来源：`统一函数总表/0567-D552-植物哥德尔函数.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [## 判定理由 / Derivation Reason](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0592-D582-%E5%A0%86%E8%82%A5%E6%B3%95.md)
+- [## 判定理由 / Derivation Reason](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-901BF933F2505C67 / ## 判定理由 / Derivation Reason / IMPLICIT-901BF933F2505C67 / IMPLICIT-054856DD6A537213
-  - 来源：`统一函数总表/0592-D582-堆肥法.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [## 判定理由 / Derivation Reason](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0572-D557-%E9%80%82%E5%BA%94%E6%80%A7%E6%BC%94%E5%8C%96%E5%87%BD%E6%95%B0.md)
+- [## 判定理由 / Derivation Reason](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-90F2D065A0378111 / ## 判定理由 / Derivation Reason / IMPLICIT-90F2D065A0378111 / IMPLICIT-054856DD6A537213
-  - 来源：`统一函数总表/0572-D557-适应性演化函数.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [## 判定理由 / Derivation Reason](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0603-D593-%E8%A7%A3%E9%87%8A%E5%89%A9%E4%BD%99%E5%87%BD%E6%95%B0.md)
+- [## 判定理由 / Derivation Reason](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-911ADA6BD4907849 / ## 判定理由 / Derivation Reason / IMPLICIT-911ADA6BD4907849 / IMPLICIT-054856DD6A537213
-  - 来源：`统一函数总表/0603-D593-解释剩余函数.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [## 判定理由 / Derivation Reason](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0599-D589-%E8%B7%A8%E5%AD%A6%E7%A7%91%E5%90%8C%E6%9E%84%E6%8A%95%E5%BD%B1%E5%87%BD%E6%95%B0.md)
+- [## 判定理由 / Derivation Reason](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-9262BC2A8E6E14EE / ## 判定理由 / Derivation Reason / IMPLICIT-9262BC2A8E6E14EE / IMPLICIT-054856DD6A537213
-  - 来源：`统一函数总表/0599-D589-跨学科同构投影函数.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [## 判定理由 / Derivation Reason](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0540-T41-%E8%89%BA%E6%9C%AF%E5%88%9B%E4%BD%9C%E9%80%BB%E8%BE%91%E8%B7%A8%E6%97%B6%E7%A9%BA%E5%90%8C%E6%9E%84%E5%87%BD%E6%95%B0.md)
+- [## 判定理由 / Derivation Reason](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-9460549E862DD538 / ## 判定理由 / Derivation Reason / IMPLICIT-9460549E862DD538 / IMPLICIT-054856DD6A537213
-  - 来源：`统一函数总表/0540-T41-艺术创作逻辑跨时空同构函数.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [## 判定理由 / Derivation Reason](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0546-T47-%E6%A4%8D%E7%89%A9%E5%88%86%E5%B8%83%E5%BC%8F%E5%86%B3%E7%AD%96%E5%87%BD%E6%95%B0.md)
+- [## 判定理由 / Derivation Reason](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-9587445F04D79D9C / ## 判定理由 / Derivation Reason / IMPLICIT-9587445F04D79D9C / IMPLICIT-054856DD6A537213
-  - 来源：`统一函数总表/0546-T47-植物分布式决策函数.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [## 判定理由 / Derivation Reason](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0570-D555-%E8%AE%A4%E7%9F%A5%E8%B0%83%E5%8F%96%E5%87%BD%E6%95%B0.md)
+- [## 判定理由 / Derivation Reason](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-A4C523CAE8CB2E72 / ## 判定理由 / Derivation Reason / IMPLICIT-A4C523CAE8CB2E72 / IMPLICIT-054856DD6A537213
-  - 来源：`统一函数总表/0570-D555-认知调取函数.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [## 判定理由 / Derivation Reason](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0590-D580-%E8%BE%B9%E7%BC%98%E9%9D%A9%E5%91%BD.md)
+- [## 判定理由 / Derivation Reason](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-A566A4002516BF7F / ## 判定理由 / Derivation Reason / IMPLICIT-A566A4002516BF7F / IMPLICIT-054856DD6A537213
-  - 来源：`统一函数总表/0590-D580-边缘革命.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [## 判定理由 / Derivation Reason](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0569-D554-%E6%A4%8D%E7%89%A9%E8%8F%8C%E6%A0%B9%E5%87%BD%E6%95%B0%EF%BC%88%E6%9B%B4%E6%96%B0%E7%89%88%EF%BC%89.md)
+- [## 判定理由 / Derivation Reason](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-AFAFD08255055F94 / ## 判定理由 / Derivation Reason / IMPLICIT-AFAFD08255055F94 / IMPLICIT-054856DD6A537213
-  - 来源：`统一函数总表/0569-D554-植物菌根函数（更新版）.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [## 判定理由 / Derivation Reason](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0568-D553-%E6%A4%8D%E7%89%A9%E8%AE%B0%E5%BF%86%E5%87%BD%E6%95%B0%EF%BC%88%E6%9B%B4%E6%96%B0%E7%89%88%EF%BC%89.md)
+- [## 判定理由 / Derivation Reason](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-B280F0BCFEB04E8C / ## 判定理由 / Derivation Reason / IMPLICIT-B280F0BCFEB04E8C / IMPLICIT-054856DD6A537213
-  - 来源：`统一函数总表/0568-D553-植物记忆函数（更新版）.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [## 判定理由 / Derivation Reason](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0573-D558-%E6%99%BA%E8%83%BD%E8%BE%B9%E7%95%8C%E5%87%BD%E6%95%B0.md)
+- [## 判定理由 / Derivation Reason](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-B5FAACAD8784DA29 / ## 判定理由 / Derivation Reason / IMPLICIT-B5FAACAD8784DA29 / IMPLICIT-054856DD6A537213
-  - 来源：`统一函数总表/0573-D558-智能边界函数.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [## 判定理由 / Derivation Reason](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0544-T45-%E5%A4%96%E9%83%A8%E5%86%B2%E5%87%BB%E4%B8%8E%E7%B3%BB%E7%BB%9F%E4%BB%B7%E5%80%BC%E5%BD%92%E9%9B%B6%E5%87%BD%E6%95%B0.md)
+- [## 判定理由 / Derivation Reason](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-BB65263143B108A8 / ## 判定理由 / Derivation Reason / IMPLICIT-BB65263143B108A8 / IMPLICIT-054856DD6A537213
-  - 来源：`统一函数总表/0544-T45-外部冲击与系统价值归零函数.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [## 判定理由 / Derivation Reason](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0588-D578-%E8%AF%BB%E8%80%85%E5%8F%8B%E5%A5%BD.md)
+- [## 判定理由 / Derivation Reason](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-BC539C49B25AFBA1 / ## 判定理由 / Derivation Reason / IMPLICIT-BC539C49B25AFBA1 / IMPLICIT-054856DD6A537213
-  - 来源：`统一函数总表/0588-D578-读者友好.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [## 判定理由 / Derivation Reason](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0559-D544-AI-%E6%A4%8D%E7%89%A9%E5%90%8C%E6%9E%84%E5%87%BD%E6%95%B0.md)
+- [## 判定理由 / Derivation Reason](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-C2416984FC74028D / ## 判定理由 / Derivation Reason / IMPLICIT-C2416984FC74028D / IMPLICIT-054856DD6A537213
-  - 来源：`统一函数总表/0559-D544-AI-植物同构函数.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [## 判定理由 / Derivation Reason](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0565-D550-%E6%A4%8D%E7%89%A9%E7%BE%A4%E4%BD%93%E5%87%BD%E6%95%B0.md)
+- [## 判定理由 / Derivation Reason](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-C54E1C2DC228D840 / ## 判定理由 / Derivation Reason / IMPLICIT-C54E1C2DC228D840 / IMPLICIT-054856DD6A537213
-  - 来源：`统一函数总表/0565-D550-植物群体函数.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [## 判定理由 / Derivation Reason](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0583-D573-%E8%B4%A2%E5%8A%A1%E5%86%B3%E7%AD%96%E4%B8%8D%E5%AE%8C%E5%A4%87%E6%80%A7.md)
+- [## 判定理由 / Derivation Reason](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-C76DFB1C28150C2B / ## 判定理由 / Derivation Reason / IMPLICIT-C76DFB1C28150C2B / IMPLICIT-054856DD6A537213
-  - 来源：`统一函数总表/0583-D573-财务决策不完备性.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [## 判定理由 / Derivation Reason](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0566-D551-%E8%A1%8C%E6%98%9F%E6%BC%94%E5%8C%96%E5%87%BD%E6%95%B0.md)
+- [## 判定理由 / Derivation Reason](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-CB05AF4A6FE83F26 / ## 判定理由 / Derivation Reason / IMPLICIT-CB05AF4A6FE83F26 / IMPLICIT-054856DD6A537213
-  - 来源：`统一函数总表/0566-D551-行星演化函数.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [## 判定理由 / Derivation Reason](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0578-D563-%E8%B7%A8%E7%B3%BB%E7%BB%9F%E7%A7%BB%E6%A4%8D%E6%88%90%E5%8A%9F%E5%87%BD%E6%95%B0.md)
+- [## 判定理由 / Derivation Reason](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-CE0F4F6B1105E84D / ## 判定理由 / Derivation Reason / IMPLICIT-CE0F4F6B1105E84D / IMPLICIT-054856DD6A537213
-  - 来源：`统一函数总表/0578-D563-跨系统移植成功函数.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [## 判定理由 / Derivation Reason](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0548-T49-%E6%A4%8D%E7%89%A9%E5%AD%A6%E4%B9%A0%E5%87%BD%E6%95%B0.md)
+- [## 判定理由 / Derivation Reason](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-D4380F7AC4FE40DA / ## 判定理由 / Derivation Reason / IMPLICIT-D4380F7AC4FE40DA / IMPLICIT-054856DD6A537213
-  - 来源：`统一函数总表/0548-T49-植物学习函数.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [## 判定理由 / Derivation Reason](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0571-D556-%E9%9B%86%E4%BD%93%E6%99%BA%E8%83%BD%E5%87%BD%E6%95%B0.md)
+- [## 判定理由 / Derivation Reason](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-D6DABC0E05D10726 / ## 判定理由 / Derivation Reason / IMPLICIT-D6DABC0E05D10726 / IMPLICIT-054856DD6A537213
-  - 来源：`统一函数总表/0571-D556-集体智能函数.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [## 判定理由 / Derivation Reason](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0595-D585-%E8%AE%A4%E7%9F%A5%E5%A4%8D%E6%9D%82%E5%BA%A6%E6%94%B6%E6%95%9B.md)
+- [## 判定理由 / Derivation Reason](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-D7DD1692AB187287 / ## 判定理由 / Derivation Reason / IMPLICIT-D7DD1692AB187287 / IMPLICIT-054856DD6A537213
-  - 来源：`统一函数总表/0595-D585-认知复杂度收敛.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [## 判定理由 / Derivation Reason](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0541-T42-%E5%93%A5%E5%BE%B7%E5%B0%94%E4%B8%8D%E5%AE%8C%E5%A4%87%E6%80%A7%E5%8E%86%E5%8F%B2%E7%B3%BB%E7%BB%9F%E5%AE%9E%E4%BE%8B%E5%8C%96%E5%87%BD%E6%95%B0.md)
+- [## 判定理由 / Derivation Reason](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-DB8B88837EA5EAEE / ## 判定理由 / Derivation Reason / IMPLICIT-DB8B88837EA5EAEE / IMPLICIT-054856DD6A537213
-  - 来源：`统一函数总表/0541-T42-哥德尔不完备性历史系统实例化函数.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [## 判定理由 / Derivation Reason](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0564-D549-%E8%B7%A8%E7%89%A9%E7%A7%8D%E5%8D%8F%E5%90%8C%E5%87%BD%E6%95%B0.md)
+- [## 判定理由 / Derivation Reason](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-DE98BA56C133E641 / ## 判定理由 / Derivation Reason / IMPLICIT-DE98BA56C133E641 / IMPLICIT-054856DD6A537213
-  - 来源：`统一函数总表/0564-D549-跨物种协同函数.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [## 判定理由 / Derivation Reason](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0553-T54-%E6%A4%8D%E7%89%A9%E7%94%9F%E6%80%81%E7%B3%BB%E7%BB%9F%E5%87%BD%E6%95%B0.md)
+- [## 判定理由 / Derivation Reason](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-DF8FDF5D88DFBA77 / ## 判定理由 / Derivation Reason / IMPLICIT-DF8FDF5D88DFBA77 / IMPLICIT-054856DD6A537213
-  - 来源：`统一函数总表/0553-T54-植物生态系统函数.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [## 判定理由 / Derivation Reason](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0587-D577-%E8%A7%82%E7%82%B9%E7%AB%9E%E4%BA%89.md)
+- [## 判定理由 / Derivation Reason](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-E0A489CB87F24CFC / ## 判定理由 / Derivation Reason / IMPLICIT-E0A489CB87F24CFC / IMPLICIT-054856DD6A537213
-  - 来源：`统一函数总表/0587-D577-观点竞争.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [## 判定理由 / Derivation Reason](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0556-T57-%E8%AE%A4%E7%9F%A5%E8%82%8C%E8%82%89%E8%AE%AD%E7%BB%83%E5%87%BD%E6%95%B0.md)
+- [## 判定理由 / Derivation Reason](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-E2AD19A6CC41F412 / ## 判定理由 / Derivation Reason / IMPLICIT-E2AD19A6CC41F412 / IMPLICIT-054856DD6A537213
-  - 来源：`统一函数总表/0556-T57-认知肌肉训练函数.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [## 判定理由 / Derivation Reason](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0539-T40-%E5%86%B3%E7%AD%96%E6%9D%83%E4%B8%8E%E4%BF%A1%E6%81%AF%E6%9D%83%E5%AF%B9%E7%A7%B0%E5%85%83%E5%8D%8F%E8%AE%AE%E5%AE%9E%E4%BE%8B%E5%8C%96%E5%87%BD%E6%95%B0.md)
+- [## 判定理由 / Derivation Reason](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-E3B3CCC9D4851213 / ## 判定理由 / Derivation Reason / IMPLICIT-E3B3CCC9D4851213 / IMPLICIT-054856DD6A537213
-  - 来源：`统一函数总表/0539-T40-决策权与信息权对称元协议实例化函数.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [## 判定理由 / Derivation Reason](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0601-D591-%E5%B0%BA%E5%BA%A6%E6%A1%A5%E6%8E%A5%E5%87%BD%E6%95%B0.md)
+- [## 判定理由 / Derivation Reason](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-E980CFB868414159 / ## 判定理由 / Derivation Reason / IMPLICIT-E980CFB868414159 / IMPLICIT-054856DD6A537213
-  - 来源：`统一函数总表/0601-D591-尺度桥接函数.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [## 判定理由 / Derivation Reason](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0538-D541-%E9%81%93%E5%BE%B7%E8%87%AA%E5%B1%85-%E8%AE%A4%E7%9F%A5%E5%81%8F%E5%B7%AE%E5%87%BD%E6%95%B0.md)
+- [## 判定理由 / Derivation Reason](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-EB756BB7FF5EAEC6 / ## 判定理由 / Derivation Reason / IMPLICIT-EB756BB7FF5EAEC6 / IMPLICIT-054856DD6A537213
-  - 来源：`统一函数总表/0538-D541-道德自居-认知偏差函数.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [## 判定理由 / Derivation Reason](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0594-D584-%E7%94%B5%E5%AD%90%E8%8A%82%E9%A3%9F.md)
+- [## 判定理由 / Derivation Reason](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-ED4065B81C90ABB1 / ## 判定理由 / Derivation Reason / IMPLICIT-ED4065B81C90ABB1 / IMPLICIT-054856DD6A537213
-  - 来源：`统一函数总表/0594-D584-电子节食.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [## 判定理由 / Derivation Reason](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0604-D594-%E5%AD%A6%E7%A7%91%E7%82%B9%E7%81%AB%E6%8C%87%E6%95%B0.md)
+- [## 判定理由 / Derivation Reason](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-EF537391B586C0D9 / ## 判定理由 / Derivation Reason / IMPLICIT-EF537391B586C0D9 / IMPLICIT-054856DD6A537213
-  - 来源：`统一函数总表/0604-D594-学科点火指数.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [## 判定理由 / Derivation Reason](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0577-D562-%E8%AE%B0%E5%BF%86%E5%93%A5%E5%BE%B7%E5%B0%94%E5%87%BD%E6%95%B0.md)
+- [## 判定理由 / Derivation Reason](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-F1BB930B0015DE75 / ## 判定理由 / Derivation Reason / IMPLICIT-F1BB930B0015DE75 / IMPLICIT-054856DD6A537213
-  - 来源：`统一函数总表/0577-D562-记忆哥德尔函数.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [## 判定理由 / Derivation Reason](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0574-D559-%E8%AE%B0%E5%BF%86%E9%94%9A%E5%AE%9A%E5%87%BD%E6%95%B0.md)
+- [## 判定理由 / Derivation Reason](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-F33028C98B912DB5 / ## 判定理由 / Derivation Reason / IMPLICIT-F33028C98B912DB5 / IMPLICIT-054856DD6A537213
-  - 来源：`统一函数总表/0574-D559-记忆锚定函数.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [## 判定理由 / Derivation Reason](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0560-D545-%E6%A4%8D%E7%89%A9%E7%94%9F%E7%89%A9%E5%9C%88%E5%87%BD%E6%95%B0.md)
+- [## 判定理由 / Derivation Reason](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-F956C2CE754D0277 / ## 判定理由 / Derivation Reason / IMPLICIT-F956C2CE754D0277 / IMPLICIT-054856DD6A537213
-  - 来源：`统一函数总表/0560-D545-植物生物圈函数.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
 - [## 审计能力边界](../../../reports/operations/114-language-thought-project-audit.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -2034,10 +2034,10 @@
   - 可搜索名称：IMPLICIT-4CD8B479C11DBE8C / ### 2. 课程叙述层：可产生张力，不自动产生史实 / IMPLICIT-4CD8B479C11DBE8C
   - 来源：`reports/publication/song-huizong-taoism-point-fire-analysis.md`
   - 依赖：—；被引用：—
-- [### 2.6 P_meta — 元协议投影算子](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0001-%CE%A8%E2%82%80%E5%85%83%E5%87%BD%E6%95%B0%E5%AE%8C%E6%95%B4%E6%95%B0%E5%AD%A6%E5%AE%9A%E4%B9%89.md)
+- [### 2.6 P_meta — 元协议投影算子](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-3D98F9C151A84314 / ### 2.6 P_meta — 元协议投影算子 / IMPLICIT-3D98F9C151A84314 / IMPLICIT-9D949C6F139273FD
-  - 来源：`统一函数总表/0001-Ψ₀元函数完整数学定义.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
 - [### 2.6 P_meta — 元协议投影算子](../../../docs/phi_meta_law.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -2069,435 +2069,435 @@
   - 可搜索名称：IMPLICIT-FB15855EF6CC4312 / ### 84-Source Canonical Index (Final) / IMPLICIT-FB15855EF6CC4312
   - 来源：`reports/external-research/121Q2W-final-consistency-seal-report.md`
   - 依赖：—；被引用：—
-- [### \[#104｜框架发现能力\](docs/zh/cases/items/C-0104.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0104-C-104-%E6%A1%86%E6%9E%B6%E5%8F%91%E7%8E%B0%E8%83%BD%E5%8A%9B.md)
+- [### \[#104｜框架发现能力\](docs/zh/cases/items/C-0104.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-59FF930332109D65 / ### \[#104｜框架发现能力\](docs/zh/cases/items/C-0104.md) / IMPLICIT-59FF930332109D65
-  - 来源：`统一案例总表/0104-C-104-框架发现能力.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#118｜倒U型驱动力\](docs/zh/cases/items/C-0118.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0118-C-118-%E5%80%92U%E5%9E%8B%E9%A9%B1%E5%8A%A8%E5%8A%9B.md)
+- [### \[#118｜倒U型驱动力\](docs/zh/cases/items/C-0118.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-4447900A2F7DA90B / ### \[#118｜倒U型驱动力\](docs/zh/cases/items/C-0118.md) / IMPLICIT-4447900A2F7DA90B
-  - 来源：`统一案例总表/0118-C-118-倒U型驱动力.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#121｜ε_eff闭环动力学\](docs/zh/cases/items/C-0121.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0121-C-121-%CE%B5_eff%E9%97%AD%E7%8E%AF%E5%8A%A8%E5%8A%9B%E5%AD%A6.md)
+- [### \[#121｜ε_eff闭环动力学\](docs/zh/cases/items/C-0121.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-BFB6C0C6E57B4515 / ### \[#121｜ε_eff闭环动力学\](docs/zh/cases/items/C-0121.md) / IMPLICIT-BFB6C0C6E57B4515
-  - 来源：`统一案例总表/0121-C-121-ε_eff闭环动力学.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#131｜学科训练的遮蔽作用 / 学科训练的obscuration作用\](docs/zh/cases/items/C-0131.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0131-C-131-%E5%AD%A6%E7%A7%91%E8%AE%AD%E7%BB%83%E7%9A%84%E9%81%AE%E8%94%BD%E4%BD%9C%E7%94%A8.md)
+- [### \[#131｜学科训练的遮蔽作用 / 学科训练的obscuration作用\](docs/zh/cases/items/C-0131.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-BC33BB2E3183645E / ### \[#131｜学科训练的遮蔽作用 / 学科训练的obscuration作用\](docs/zh/cases/items/C-0131.md) / IMPLICIT-BC33BB2E3183645E
-  - 来源：`统一案例总表/0131-C-131-学科训练的遮蔽作用.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#134｜8格概率\](docs/zh/cases/items/C-0134.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0134-C-134-8%E6%A0%BC%E6%A6%82%E7%8E%87.md)
+- [### \[#134｜8格概率\](docs/zh/cases/items/C-0134.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-015963A312D58F7A / ### \[#134｜8格概率\](docs/zh/cases/items/C-0134.md) / IMPLICIT-015963A312D58F7A
-  - 来源：`统一案例总表/0134-C-134-8格概率.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#138｜学科训练的遮蔽作用 / 学科训练的obscuration作用\](docs/zh/cases/items/C-0138.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0138-C-138-%E5%AD%A6%E7%A7%91%E8%AE%AD%E7%BB%83%E7%9A%84%E9%81%AE%E8%94%BD%E4%BD%9C%E7%94%A8.md)
+- [### \[#138｜学科训练的遮蔽作用 / 学科训练的obscuration作用\](docs/zh/cases/items/C-0138.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-721FDD652C45E182 / ### \[#138｜学科训练的遮蔽作用 / 学科训练的obscuration作用\](docs/zh/cases/items/C-0138.md) / IMPLICIT-721FDD652C45E182
-  - 来源：`统一案例总表/0138-C-138-学科训练的遮蔽作用.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#152｜罗森塔尔"潜力生"标签实验\](docs/zh/cases/items/C-0152.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0152-C-152-%E7%BD%97%E6%A3%AE%E5%A1%94%E5%B0%94-%E6%BD%9C%E5%8A%9B%E7%94%9F-%E6%A0%87%E7%AD%BE%E5%AE%9E%E9%AA%8C.md)
+- [### \[#152｜罗森塔尔"潜力生"标签实验\](docs/zh/cases/items/C-0152.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-A657F69968145A15 / ### \[#152｜罗森塔尔"潜力生"标签实验\](docs/zh/cases/items/C-0152.md) / IMPLICIT-A657F69968145A15
-  - 来源：`统一案例总表/0152-C-152-罗森塔尔-潜力生-标签实验.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#160｜同质性遮蔽 / 同质性obscuration\](docs/zh/cases/items/C-0160.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0160-C-160-%E5%90%8C%E8%B4%A8%E6%80%A7%E9%81%AE%E8%94%BD.md)
+- [### \[#160｜同质性遮蔽 / 同质性obscuration\](docs/zh/cases/items/C-0160.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-4E962CED233F6044 / ### \[#160｜同质性遮蔽 / 同质性obscuration\](docs/zh/cases/items/C-0160.md) / IMPLICIT-4E962CED233F6044
-  - 来源：`统一案例总表/0160-C-160-同质性遮蔽.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#162｜定投指数基金\](docs/zh/cases/items/C-0162.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0162-C-162-%E5%AE%9A%E6%8A%95%E6%8C%87%E6%95%B0%E5%9F%BA%E9%87%91.md)
+- [### \[#162｜定投指数基金\](docs/zh/cases/items/C-0162.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-163309D95418595A / ### \[#162｜定投指数基金\](docs/zh/cases/items/C-0162.md) / IMPLICIT-163309D95418595A
-  - 来源：`统一案例总表/0162-C-162-定投指数基金.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#174｜忆秦娥纯拉力上位（外驱转自驱窗口）\](docs/zh/cases/items/C-0174.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0174-C-174-%E5%BF%86%E7%A7%A6%E5%A8%A5%E7%BA%AF%E6%8B%89%E5%8A%9B%E4%B8%8A%E4%BD%8D%28%E5%A4%96%E9%A9%B1%E8%BD%AC%E8%87%AA%E9%A9%B1%E7%AA%97%E5%8F%A3%29.md)
+- [### \[#174｜忆秦娥纯拉力上位（外驱转自驱窗口）\](docs/zh/cases/items/C-0174.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-8162042276C83EF0 / ### \[#174｜忆秦娥纯拉力上位（外驱转自驱窗口）\](docs/zh/cases/items/C-0174.md) / IMPLICIT-8162042276C83EF0
-  - 来源：`统一案例总表/0174-C-174-忆秦娥纯拉力上位(外驱转自驱窗口).md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#178｜可靠性工程β因子模型在高β条件下的失效\](docs/zh/cases/items/C-0178.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0178-C-178-%E5%8F%AF%E9%9D%A0%E6%80%A7%E5%B7%A5%E7%A8%8B%CE%B2%E5%9B%A0%E5%AD%90%E6%A8%A1%E5%9E%8B%E5%9C%A8%E9%AB%98%CE%B2%E6%9D%A1%E4%BB%B6%E4%B8%8B%E7%9A%84%E5%A4%B1%E6%95%88.md)
+- [### \[#178｜可靠性工程β因子模型在高β条件下的失效\](docs/zh/cases/items/C-0178.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-A14EF836410B2875 / ### \[#178｜可靠性工程β因子模型在高β条件下的失效\](docs/zh/cases/items/C-0178.md) / IMPLICIT-A14EF836410B2875
-  - 来源：`统一案例总表/0178-C-178-可靠性工程β因子模型在高β条件下的失效.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#200｜仙人球模型\](docs/zh/cases/items/C-0200.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0200-C-200-%E4%BB%99%E4%BA%BA%E7%90%83%E6%A8%A1%E5%9E%8B.md)
+- [### \[#200｜仙人球模型\](docs/zh/cases/items/C-0200.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-E7ABC4B7F946B410 / ### \[#200｜仙人球模型\](docs/zh/cases/items/C-0200.md) / IMPLICIT-E7ABC4B7F946B410
-  - 来源：`统一案例总表/0200-C-200-仙人球模型.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#204｜哥德尔不完备定理\](docs/zh/cases/items/C-0204.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0204-C-204-%E5%93%A5%E5%BE%B7%E5%B0%94%E4%B8%8D%E5%AE%8C%E5%A4%87%E5%AE%9A%E7%90%86.md)
+- [### \[#204｜哥德尔不完备定理\](docs/zh/cases/items/C-0204.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-88BEE75E208A14CF / ### \[#204｜哥德尔不完备定理\](docs/zh/cases/items/C-0204.md) / IMPLICIT-88BEE75E208A14CF
-  - 来源：`统一案例总表/0204-C-204-哥德尔不完备定理.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#219｜闭合缺失锁死收敛概率\](docs/zh/cases/items/C-0219.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0219-C-219-%E9%97%AD%E5%90%88%E7%BC%BA%E5%A4%B1%E9%94%81%E6%AD%BB%E6%94%B6%E6%95%9B%E6%A6%82%E7%8E%87.md)
+- [### \[#219｜闭合缺失锁死收敛概率\](docs/zh/cases/items/C-0219.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-5CD0E1DFE90E4212 / ### \[#219｜闭合缺失锁死收敛概率\](docs/zh/cases/items/C-0219.md) / IMPLICIT-5CD0E1DFE90E4212
-  - 来源：`统一案例总表/0219-C-219-闭合缺失锁死收敛概率.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#224｜退出概率=阿伦尼乌斯方程 / exit probability=阿伦尼乌斯方程\](docs/zh/cases/items/C-0224.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0224-C-224-%E9%80%80%E5%87%BA%E6%A6%82%E7%8E%87%3D%E9%98%BF%E4%BC%A6%E5%B0%BC%E4%B9%8C%E6%96%AF%E6%96%B9%E7%A8%8B.md)
+- [### \[#224｜退出概率=阿伦尼乌斯方程 / exit probability=阿伦尼乌斯方程\](docs/zh/cases/items/C-0224.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-E15BB317AE2A2782 / ### \[#224｜退出概率=阿伦尼乌斯方程 / exit probability=阿伦尼乌斯方程\](docs/zh/cases/items/C-0224.md) / IMPLICIT-E15BB317AE2A2782
-  - 来源：`统一案例总表/0224-C-224-退出概率=阿伦尼乌斯方程.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#226｜涨落-遮蔽定理 / 涨落-obscuration定理\](docs/zh/cases/items/C-0226.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0226-C-226-%E6%B6%A8%E8%90%BD-%E9%81%AE%E8%94%BD%E5%AE%9A%E7%90%86.md)
+- [### \[#226｜涨落-遮蔽定理 / 涨落-obscuration定理\](docs/zh/cases/items/C-0226.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-6F64939117C3932D / ### \[#226｜涨落-遮蔽定理 / 涨落-obscuration定理\](docs/zh/cases/items/C-0226.md) / IMPLICIT-6F64939117C3932D
-  - 来源：`统一案例总表/0226-C-226-涨落-遮蔽定理.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#236｜四层乘法门控=神经通路归零律\](docs/zh/cases/items/C-0236.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0236-C-236-%E5%9B%9B%E5%B1%82%E4%B9%98%E6%B3%95%E9%97%A8%E6%8E%A7%3D%E7%A5%9E%E7%BB%8F%E9%80%9A%E8%B7%AF%E5%BD%92%E9%9B%B6%E5%BE%8B.md)
+- [### \[#236｜四层乘法门控=神经通路归零律\](docs/zh/cases/items/C-0236.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-CC9CAA45FEE7CA33 / ### \[#236｜四层乘法门控=神经通路归零律\](docs/zh/cases/items/C-0236.md) / IMPLICIT-CC9CAA45FEE7CA33
-  - 来源：`统一案例总表/0236-C-236-四层乘法门控=神经通路归零律.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#258｜动态算力分配\](docs/zh/cases/items/C-0258.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0258-C-258-%E5%8A%A8%E6%80%81%E7%AE%97%E5%8A%9B%E5%88%86%E9%85%8D.md)
+- [### \[#258｜动态算力分配\](docs/zh/cases/items/C-0258.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-25B250E984F8DB42 / ### \[#258｜动态算力分配\](docs/zh/cases/items/C-0258.md) / IMPLICIT-25B250E984F8DB42
-  - 来源：`统一案例总表/0258-C-258-动态算力分配.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#260｜r_cross=0不导致Ψ=0\](docs/zh/cases/items/C-0260.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0260-C-260-r_cross%3D0%E4%B8%8D%E5%AF%BC%E8%87%B4%CE%A8%3D0.md)
+- [### \[#260｜r_cross=0不导致Ψ=0\](docs/zh/cases/items/C-0260.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-B01E5F4F7D3FC904 / ### \[#260｜r_cross=0不导致Ψ=0\](docs/zh/cases/items/C-0260.md) / IMPLICIT-B01E5F4F7D3FC904 / IMPLICIT-D14E2F914930DDFE
-  - 来源：`统一案例总表/0260-C-260-r_cross=0不导致Ψ=0.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#287｜抑郁者调度AI失败 — εaware↓→Pencode↓→ηinterface↓→即使AI能力不变调度效率大幅下降 / 抑郁者调度AI失败 - εaware↓ -> Pencode↓ -> ηinterface↓ -> 即使AI能力不变调度效率大幅下降\](docs/zh/cases/items/C-0287.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0287-C-287-%E6%8A%91%E9%83%81%E8%80%85%E8%B0%83%E5%BA%A6AI%E5%A4%B1%E8%B4%A5%20%E2%80%94%20%CE%B5aware%E2%86%93%E2%86%92Pencode%E2%86%93%E2%86%92%CE%B7interface%E2%86%93%E2%86%92%E5%8D%B3%E4%BD%BFAI%E8%83%BD%E5%8A%9B%E4%B8%8D%E5%8F%98%E8%B0%83%E5%BA%A6%E6%95%88%E7%8E%87%E5%A4%A7%E5%B9%85%E4%B8%8B%E9%99%8D.md)
+- [### \[#287｜抑郁者调度AI失败 — εaware↓→Pencode↓→ηinterface↓→即使AI能力不变调度效率大幅下降 / 抑郁者调度AI失败 - εaware↓ -> Pencode↓ -> ηinterface↓ -> 即使AI能力不变调度效率大幅下降\](docs/zh/cases/items/C-0287.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-DACDC67115EED915 / ### \[#287｜抑郁者调度AI失败 — εaware↓→Pencode↓→ηinterface↓→即使AI能力不变调度效率大幅下降 / 抑郁者调度AI失败 - εaware↓ -> Pencode↓ -> ηinterface↓ -> 即使AI能力不变调度效率大幅下降\](docs/zh/cases/items/C-0287.md) / IMPLICIT-DACDC67115EED915
-  - 来源：`统一案例总表/0287-C-287-抑郁者调度AI失败 — εaware↓→Pencode↓→ηinterface↓→即使AI能力不变调度效率大幅下降.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#302｜信源可遮蔽 — Shannon假设信源熵客观给定，但点火发现εaware可被H遮蔽压低→Fintent↓→信源质量下降 / 信源可obscuration - Shannon假设信源熵客观给定, 但Ignition发现εaware可被Hobscuration压低 -> Fintent↓ -> 信源质量下降\](docs/zh/cases/items/C-0302.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0302-C-302-%E4%BF%A1%E6%BA%90%E5%8F%AF%E9%81%AE%E8%94%BD%20%E2%80%94%20Shannon%E5%81%87%E8%AE%BE%E4%BF%A1%E6%BA%90%E7%86%B5%E5%AE%A2%E8%A7%82%E7%BB%99%E5%AE%9A%2C%E4%BD%86%E7%82%B9%E7%81%AB%E5%8F%91%E7%8E%B0%CE%B5aware%E5%8F%AF%E8%A2%ABH%E9%81%AE%E8%94%BD%E5%8E%8B%E4%BD%8E%E2%86%92Fintent%E2%86%93%E2%86%92%E4%BF%A1%E6%BA%90%E8%B4%A8%E9%87%8F%E4%B8%8B%E9%99%8D.md)
+- [### \[#302｜信源可遮蔽 — Shannon假设信源熵客观给定，但点火发现εaware可被H遮蔽压低→Fintent↓→信源质量下降 / 信源可obscuration - Shannon假设信源熵客观给定, 但Ignition发现εaware可被Hobscuration压低 -> Fintent↓ -> 信源质量下降\](docs/zh/cases/items/C-0302.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-871CA1038A49A3A6 / ### \[#302｜信源可遮蔽 — Shannon假设信源熵客观给定，但点火发现εaware可被H遮蔽压低→Fintent↓→信源质量下降 / 信源可obscuration - Shannon假设信源熵客观给定, 但Ignition发现εaware可被Hobscuration压低 -> Fintent↓ -> 信源质量下降\](docs/zh/cases/items/C-0302.md) / IMPLICIT-871CA1038A49A3A6
-  - 来源：`统一案例总表/0302-C-302-信源可遮蔽 — Shannon假设信源熵客观给定,但点火发现εaware可被H遮蔽压低→Fintent↓→信源质量下降.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#317｜权力层级信息失真 — d=层级距，λ=信息失真率，μ=制度效率。制度效率低时指令传到基层面目全非\](docs/zh/cases/items/C-0317.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0317-C-317-%E6%9D%83%E5%8A%9B%E5%B1%82%E7%BA%A7%E4%BF%A1%E6%81%AF%E5%A4%B1%E7%9C%9F%20%E2%80%94%20d%3D%E5%B1%82%E7%BA%A7%E8%B7%9D%2C%CE%BB%3D%E4%BF%A1%E6%81%AF%E5%A4%B1%E7%9C%9F%E7%8E%87%2C%CE%BC%3D%E5%88%B6%E5%BA%A6%E6%95%88%E7%8E%87%E3%80%82%E5%88%B6%E5%BA%A6%E6%95%88%E7%8E%87%E4%BD%8E%E6%97%B6%E6%8C%87%E4%BB%A4%E4%BC%A0%E5%88%B0%E5%9F%BA%E5%B1%82%E9%9D%A2%E7%9B%AE%E5%85%A8%E9%9D%9E.md)
+- [### \[#317｜权力层级信息失真 — d=层级距，λ=信息失真率，μ=制度效率。制度效率低时指令传到基层面目全非\](docs/zh/cases/items/C-0317.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-3DB8C281F24AEC19 / ### \[#317｜权力层级信息失真 — d=层级距，λ=信息失真率，μ=制度效率。制度效率低时指令传到基层面目全非\](docs/zh/cases/items/C-0317.md) / IMPLICIT-3DB8C281F24AEC19
-  - 来源：`统一案例总表/0317-C-317-权力层级信息失真 — d=层级距,λ=信息失真率,μ=制度效率。制度效率低时指令传到基层面目全非.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#323｜AI同质化训练的遮蔽 — 两个GPT-4实例对话，G≈1，Hhomogeneity≈1，ηgate≈0，对话流畅但信息增量为零 / AI同质化训练的obscuration - 两个GPT-4实例对话, G≈1, Hhomogeneity≈1, ηgate≈0, 对话流畅但信息增量为零\](docs/zh/cases/items/C-0323.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0323-C-323-AI%E5%90%8C%E8%B4%A8%E5%8C%96%E8%AE%AD%E7%BB%83%E7%9A%84%E9%81%AE%E8%94%BD%20%E2%80%94%20%E4%B8%A4%E4%B8%AAGPT-4%E5%AE%9E%E4%BE%8B%E5%AF%B9%E8%AF%9D%2CG%E2%89%881%2CHhomogeneity%E2%89%881%2C%CE%B7gate%E2%89%880%2C%E5%AF%B9%E8%AF%9D%E6%B5%81%E7%95%85%E4%BD%86%E4%BF%A1%E6%81%AF%E5%A2%9E%E9%87%8F%E4%B8%BA%E9%9B%B6.md)
+- [### \[#323｜AI同质化训练的遮蔽 — 两个GPT-4实例对话，G≈1，Hhomogeneity≈1，ηgate≈0，对话流畅但信息增量为零 / AI同质化训练的obscuration - 两个GPT-4实例对话, G≈1, Hhomogeneity≈1, ηgate≈0, 对话流畅但信息增量为零\](docs/zh/cases/items/C-0323.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-DA60065F25B89F6E / ### \[#323｜AI同质化训练的遮蔽 — 两个GPT-4实例对话，G≈1，Hhomogeneity≈1，ηgate≈0，对话流畅但信息增量为零 / AI同质化训练的obscuration - 两个GPT-4实例对话, G≈1, Hhomogeneity≈1, ηgate≈0, 对话流畅但信息增量为零\](docs/zh/cases/items/C-0323.md) / IMPLICIT-DA60065F25B89F6E
-  - 来源：`统一案例总表/0323-C-323-AI同质化训练的遮蔽 — 两个GPT-4实例对话,G≈1,Hhomogeneity≈1,ηgate≈0,对话流畅但信息增量为零.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#327｜炒股遮蔽的跨域放大 — Boccupy/B₀=0.3，H投资=0.4，Htotal=0.496，本职工作和学习停滞 / 炒股obscuration的跨域放大 - Boccupy/B₀=0.3, H投资=0.4, Htotal=0.496, 本职工作和学习停滞\](docs/zh/cases/items/C-0327.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0327-C-327-%E7%82%92%E8%82%A1%E9%81%AE%E8%94%BD%E7%9A%84%E8%B7%A8%E5%9F%9F%E6%94%BE%E5%A4%A7%20%E2%80%94%20Boccupy.md)
+- [### \[#327｜炒股遮蔽的跨域放大 — Boccupy/B₀=0.3，H投资=0.4，Htotal=0.496，本职工作和学习停滞 / 炒股obscuration的跨域放大 - Boccupy/B₀=0.3, H投资=0.4, Htotal=0.496, 本职工作和学习停滞\](docs/zh/cases/items/C-0327.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-A2A70EBC45E43C4D / ### \[#327｜炒股遮蔽的跨域放大 — Boccupy/B₀=0.3，H投资=0.4，Htotal=0.496，本职工作和学习停滞 / 炒股obscuration的跨域放大 - Boccupy/B₀=0.3, H投资=0.4, Htotal=0.496, 本职工作和学习停滞\](docs/zh/cases/items/C-0327.md) / IMPLICIT-A2A70EBC45E43C4D
-  - 来源：`统一案例总表/0327-C-327-炒股遮蔽的跨域放大 — Boccupy.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#334｜遮蔽补偿成本指数级增长 — H=0.2时G*≈0.6，H=0.6时G*≈0.3，编码成本增加e^(0.3γ)倍 / obscuration补偿成本指数级增长 - H=0.2时G*≈0.6, H=0.6时G*≈0.3, 编码成本增加e^(0.3γ)倍\](docs/zh/cases/items/C-0334.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0334-C-334-%E9%81%AE%E8%94%BD%E8%A1%A5%E5%81%BF%E6%88%90%E6%9C%AC%E6%8C%87%E6%95%B0%E7%BA%A7%E5%A2%9E%E9%95%BF%20%E2%80%94%20H%3D0.2%E6%97%B6G-%E2%89%880.6%2CH%3D0.6%E6%97%B6G-%E2%89%880.3%2C%E7%BC%96%E7%A0%81%E6%88%90%E6%9C%AC%E5%A2%9E%E5%8A%A0e%5E%280.3%CE%B3%29%E5%80%8D.md)
+- [### \[#334｜遮蔽补偿成本指数级增长 — H=0.2时G*≈0.6，H=0.6时G*≈0.3，编码成本增加e^(0.3γ)倍 / obscuration补偿成本指数级增长 - H=0.2时G*≈0.6, H=0.6时G*≈0.3, 编码成本增加e^(0.3γ)倍\](docs/zh/cases/items/C-0334.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-30F28F19E1EEB839 / ### \[#334｜遮蔽补偿成本指数级增长 — H=0.2时G*≈0.6，H=0.6时G*≈0.3，编码成本增加e^(0.3γ)倍 / obscuration补偿成本指数级增长 - H=0.2时G*≈0.6, H=0.6时G*≈0.3, 编码成本增加e^(0.3γ)倍\](docs/zh/cases/items/C-0334.md) / IMPLICIT-30F28F19E1EEB839
-  - 来源：`统一案例总表/0334-C-334-遮蔽补偿成本指数级增长 — H=0.2时G-≈0.6,H=0.6时G-≈0.3,编码成本增加e^(0.3γ)倍.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#335｜结构保守性vs手动保守 — 定投结构自动保守不需意志力，手动凯利牛市时H↑→高估E\[r\]→过度下注\](docs/zh/cases/items/C-0335.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0334-C-334-%E9%81%AE%E8%94%BD%E8%A1%A5%E5%81%BF%E6%88%90%E6%9C%AC%E6%8C%87%E6%95%B0%E7%BA%A7%E5%A2%9E%E9%95%BF%20%E2%80%94%20H%3D0.2%E6%97%B6G-%E2%89%880.6%2CH%3D0.6%E6%97%B6G-%E2%89%880.3%2C%E7%BC%96%E7%A0%81%E6%88%90%E6%9C%AC%E5%A2%9E%E5%8A%A0e%5E%280.3%CE%B3%29%E5%80%8D.md)
+- [### \[#335｜结构保守性vs手动保守 — 定投结构自动保守不需意志力，手动凯利牛市时H↑→高估E\[r\]→过度下注\](docs/zh/cases/items/C-0335.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-A01385101701B8ED / ### \[#335｜结构保守性vs手动保守 — 定投结构自动保守不需意志力，手动凯利牛市时H↑→高估E\[r\]→过度下注\](docs/zh/cases/items/C-0335.md) / IMPLICIT-A01385101701B8ED
-  - 来源：`统一案例总表/0334-C-334-遮蔽补偿成本指数级增长 — H=0.2时G-≈0.6,H=0.6时G-≈0.3,编码成本增加e^(0.3γ)倍.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#362｜AI中间层弥合代沟 — 父辈和子辈Gshared≈0.15，ηgate≈0.1，AI中间层ηrelay≈0.21比直接沟通好1倍，但深层价值观差异AI也翻译不了 / AI中间层弥合代沟 - 父辈和子辈Gshared≈0.15, ηgate≈0.1, AI中间层ηrelay≈0.21比直接沟通好1倍, 但深层价值观差异AI也翻译不了\](docs/zh/cases/items/C-0362.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0361-C-362-AI%E4%B8%AD%E9%97%B4%E5%B1%82%E5%BC%A5%E5%90%88%E4%BB%A3%E6%B2%9F%20%E2%80%94%20%E7%88%B6%E8%BE%88%E5%92%8C%E5%AD%90%E8%BE%88Gshared%E2%89%880.15%2C%CE%B7gate%E2%89%880.1%2CAI%E4%B8%AD%E9%97%B4%E5%B1%82%CE%B7relay%E2%89%880.21%E6%AF%94%E7%9B%B4%E6%8E%A5%E6%B2%9F%E9%80%9A%E5%A5%BD1%E5%80%8D%2C%E4%BD%86%E6%B7%B1%E5%B1%82%E4%BB%B7%E5%80%BC.md)
+- [### \[#362｜AI中间层弥合代沟 — 父辈和子辈Gshared≈0.15，ηgate≈0.1，AI中间层ηrelay≈0.21比直接沟通好1倍，但深层价值观差异AI也翻译不了 / AI中间层弥合代沟 - 父辈和子辈Gshared≈0.15, ηgate≈0.1, AI中间层ηrelay≈0.21比直接沟通好1倍, 但深层价值观差异AI也翻译不了\](docs/zh/cases/items/C-0362.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-E91A7E1DB24B965D / ### \[#362｜AI中间层弥合代沟 — 父辈和子辈Gshared≈0.15，ηgate≈0.1，AI中间层ηrelay≈0.21比直接沟通好1倍，但深层价值观差异AI也翻译不了 / AI中间层弥合代沟 - 父辈和子辈Gshared≈0.15, ηgate≈0.1, AI中间层ηrelay≈0.21比直接沟通好1倍, 但深层价值观差异AI也翻译不了\](docs/zh/cases/items/C-0362.md) / IMPLICIT-E91A7E1DB24B965D
-  - 来源：`统一案例总表/0361-C-362-AI中间层弥合代沟 — 父辈和子辈Gshared≈0.15,ηgate≈0.1,AI中间层ηrelay≈0.21比直接沟通好1倍,但深层价值.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#363｜μ翻转时间计算 — BH/BL=5，C₀=0.1，γ=0.05，Cmax=2，P(biased)=0.2，tflip≈8.1个月 / μ翻转时间计算 - BH/BL=5, C₀=0.1, γ=0.05, Cmax=2, P(biased)=0.2, tflip≈8.1个月\](docs/zh/cases/items/C-0363.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0362-C-363-%CE%BC%E7%BF%BB%E8%BD%AC%E6%97%B6%E9%97%B4%E8%AE%A1%E7%AE%97%20%E2%80%94%20BH.md)
+- [### \[#363｜μ翻转时间计算 — BH/BL=5，C₀=0.1，γ=0.05，Cmax=2，P(biased)=0.2，tflip≈8.1个月 / μ翻转时间计算 - BH/BL=5, C₀=0.1, γ=0.05, Cmax=2, P(biased)=0.2, tflip≈8.1个月\](docs/zh/cases/items/C-0363.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-251E1129B79C388F / ### \[#363｜μ翻转时间计算 — BH/BL=5，C₀=0.1，γ=0.05，Cmax=2，P(biased)=0.2，tflip≈8.1个月 / μ翻转时间计算 - BH/BL=5, C₀=0.1, γ=0.05, Cmax=2, P(biased)=0.2, tflip≈8.1个月\](docs/zh/cases/items/C-0363.md) / IMPLICIT-251E1129B79C388F / IMPLICIT-B1C7A4443EE51DE1
-  - 来源：`统一案例总表/0362-C-363-μ翻转时间计算 — BH.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#365｜扁平化vs分层编码效率对比 — CEO直接BL对全员η=0.08，加VP中间层η=0.211，省VP工资但决策失真损失远超人力成本\](docs/zh/cases/items/C-0365.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0364-C-365-%E6%89%81%E5%B9%B3%E5%8C%96vs%E5%88%86%E5%B1%82%E7%BC%96%E7%A0%81%E6%95%88%E7%8E%87%E5%AF%B9%E6%AF%94%20%E2%80%94%20CEO%E7%9B%B4%E6%8E%A5BL%E5%AF%B9%E5%85%A8%E5%91%98%CE%B7%3D0.08%2C%E5%8A%A0VP%E4%B8%AD%E9%97%B4%E5%B1%82%CE%B7%3D0.211%2C%E7%9C%81VP%E5%B7%A5%E8%B5%84%E4%BD%86%E5%86%B3%E7%AD%96%E5%A4%B1%E7%9C%9F%E6%8D%9F%E5%A4%B1%E8%BF%9C%E8%B6%85%E4%BA%BA%E5%8A%9B%E6%88%90%E6%9C%AC.md)
+- [### \[#365｜扁平化vs分层编码效率对比 — CEO直接BL对全员η=0.08，加VP中间层η=0.211，省VP工资但决策失真损失远超人力成本\](docs/zh/cases/items/C-0365.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-EA8A04D76A715E56 / ### \[#365｜扁平化vs分层编码效率对比 — CEO直接BL对全员η=0.08，加VP中间层η=0.211，省VP工资但决策失真损失远超人力成本\](docs/zh/cases/items/C-0365.md) / IMPLICIT-EA8A04D76A715E56
-  - 来源：`统一案例总表/0364-C-365-扁平化vs分层编码效率对比 — CEO直接BL对全员η=0.08,加VP中间层η=0.211,省VP工资但决策失真损失远超人力成本.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#368｜革命的门控面交叉——法国大革命发生在旧制度松动期而非最黑暗期，A型门控崩溃与B型门控松弛的共振窗口\](docs/zh/cases/items/C-0368.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0367-C-368-%E9%9D%A9%E5%91%BD%E7%9A%84%E9%97%A8%E6%8E%A7%E9%9D%A2%E4%BA%A4%E5%8F%89%E2%80%94%E2%80%94%E6%B3%95%E5%9B%BD%E5%A4%A7%E9%9D%A9%E5%91%BD%E5%8F%91%E7%94%9F%E5%9C%A8%E6%97%A7%E5%88%B6%E5%BA%A6%E6%9D%BE%E5%8A%A8%E6%9C%9F%E8%80%8C%E9%9D%9E%E6%9C%80%E9%BB%91%E6%9A%97%E6%9C%9F%2CA%E5%9E%8B%E9%97%A8%E6%8E%A7%E5%B4%A9%E6%BA%83%E4%B8%8EB%E5%9E%8B%E9%97%A8%E6%8E%A7%E6%9D%BE%E5%BC%9B%E7%9A%84%E5%85%B1%E6%8C%AF%E7%AA%97%E5%8F%A3.md)
+- [### \[#368｜革命的门控面交叉——法国大革命发生在旧制度松动期而非最黑暗期，A型门控崩溃与B型门控松弛的共振窗口\](docs/zh/cases/items/C-0368.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-CB26D995639BC503 / ### \[#368｜革命的门控面交叉——法国大革命发生在旧制度松动期而非最黑暗期，A型门控崩溃与B型门控松弛的共振窗口\](docs/zh/cases/items/C-0368.md) / IMPLICIT-CB26D995639BC503
-  - 来源：`统一案例总表/0367-C-368-革命的门控面交叉——法国大革命发生在旧制度松动期而非最黑暗期,A型门控崩溃与B型门控松弛的共振窗口.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#374｜原子化的门控面分裂——Λ_culture分裂为多个小Λ，门控面数量本身就是Φ的增项\](docs/zh/cases/items/C-0374.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0373-C-374-%E5%8E%9F%E5%AD%90%E5%8C%96%E7%9A%84%E9%97%A8%E6%8E%A7%E9%9D%A2%E5%88%86%E8%A3%82%E2%80%94%E2%80%94%CE%9B_culture%E5%88%86%E8%A3%82%E4%B8%BA%E5%A4%9A%E4%B8%AA%E5%B0%8F%CE%9B%2C%E9%97%A8%E6%8E%A7%E9%9D%A2%E6%95%B0%E9%87%8F%E6%9C%AC%E8%BA%AB%E5%B0%B1%E6%98%AF%CE%A6%E7%9A%84%E5%A2%9E%E9%A1%B9.md)
+- [### \[#374｜原子化的门控面分裂——Λ_culture分裂为多个小Λ，门控面数量本身就是Φ的增项\](docs/zh/cases/items/C-0374.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-D064DF41F4DB9AA7 / ### \[#374｜原子化的门控面分裂——Λ_culture分裂为多个小Λ，门控面数量本身就是Φ的增项\](docs/zh/cases/items/C-0374.md) / IMPLICIT-D064DF41F4DB9AA7
-  - 来源：`统一案例总表/0373-C-374-原子化的门控面分裂——Λ_culture分裂为多个小Λ,门控面数量本身就是Φ的增项.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#387｜病毒的门控面切换——寄生前σ=0寄生后σ=1，没有中间态\](docs/zh/cases/items/C-0387.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0386-C-387-%E7%97%85%E6%AF%92%E7%9A%84%E9%97%A8%E6%8E%A7%E9%9D%A2%E5%88%87%E6%8D%A2%E2%80%94%E2%80%94%E5%AF%84%E7%94%9F%E5%89%8D%CF%83%3D0%E5%AF%84%E7%94%9F%E5%90%8E%CF%83%3D1%2C%E6%B2%A1%E6%9C%89%E4%B8%AD%E9%97%B4%E6%80%81.md)
+- [### \[#387｜病毒的门控面切换——寄生前σ=0寄生后σ=1，没有中间态\](docs/zh/cases/items/C-0387.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-2E764E901A758B1C / ### \[#387｜病毒的门控面切换——寄生前σ=0寄生后σ=1，没有中间态\](docs/zh/cases/items/C-0387.md) / IMPLICIT-2E764E901A758B1C / IMPLICIT-0F3C1605611E3896
-  - 来源：`统一案例总表/0386-C-387-病毒的门控面切换——寄生前σ=0寄生后σ=1,没有中间态.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#391｜NP难是门槛指数碾压——Λ_compute∝2^n远超μ∝n^k的增长速度 / NP难是门槛指数碾压 - - Λ_compute∝2^n远超μ∝n^k的增长速度\](docs/zh/cases/items/C-0391.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0390-C-391-NP%E9%9A%BE%E6%98%AF%E9%97%A8%E6%A7%9B%E6%8C%87%E6%95%B0%E7%A2%BE%E5%8E%8B%E2%80%94%E2%80%94%CE%9B_compute%E2%88%9D2%5En%E8%BF%9C%E8%B6%85%CE%BC%E2%88%9Dn%5Ek%E7%9A%84%E5%A2%9E%E9%95%BF%E9%80%9F%E5%BA%A6.md)
+- [### \[#391｜NP难是门槛指数碾压——Λ_compute∝2^n远超μ∝n^k的增长速度 / NP难是门槛指数碾压 - - Λ_compute∝2^n远超μ∝n^k的增长速度\](docs/zh/cases/items/C-0391.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-12A16A3D203D115F / ### \[#391｜NP难是门槛指数碾压——Λ_compute∝2^n远超μ∝n^k的增长速度 / NP难是门槛指数碾压 - - Λ_compute∝2^n远超μ∝n^k的增长速度\](docs/zh/cases/items/C-0391.md) / IMPLICIT-12A16A3D203D115F
-  - 来源：`统一案例总表/0390-C-391-NP难是门槛指数碾压——Λ_compute∝2^n远超μ∝n^k的增长速度.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#393｜大数据的泛化相变——μ_data越过Λ_generalization的瞬间泛化能力质变 / 大数据的泛化相变 - - μ_data越过Λ_generalization的瞬间泛化能力质变\](docs/zh/cases/items/C-0393.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0392-C-393-%E5%A4%A7%E6%95%B0%E6%8D%AE%E7%9A%84%E6%B3%9B%E5%8C%96%E7%9B%B8%E5%8F%98%E2%80%94%E2%80%94%CE%BC_data%E8%B6%8A%E8%BF%87%CE%9B_generalization%E7%9A%84%E7%9E%AC%E9%97%B4%E6%B3%9B%E5%8C%96%E8%83%BD%E5%8A%9B%E8%B4%A8%E5%8F%98.md)
+- [### \[#393｜大数据的泛化相变——μ_data越过Λ_generalization的瞬间泛化能力质变 / 大数据的泛化相变 - - μ_data越过Λ_generalization的瞬间泛化能力质变\](docs/zh/cases/items/C-0393.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-E442DA273C9D9CE2 / ### \[#393｜大数据的泛化相变——μ_data越过Λ_generalization的瞬间泛化能力质变 / 大数据的泛化相变 - - μ_data越过Λ_generalization的瞬间泛化能力质变\](docs/zh/cases/items/C-0393.md) / IMPLICIT-E442DA273C9D9CE2
-  - 来源：`统一案例总表/0392-C-393-大数据的泛化相变——μ_data越过Λ_generalization的瞬间泛化能力质变.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#405｜权力腐败的问责趋零——μ_power>>Λ_accountability时1/ln趋零 / 权力腐败的问责趋零 - - μ_power>>Λ_accountability时1/ln趋零\](docs/zh/cases/items/C-0405.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0404-C-405-%E6%9D%83%E5%8A%9B%E8%85%90%E8%B4%A5%E7%9A%84%E9%97%AE%E8%B4%A3%E8%B6%8B%E9%9B%B6%E2%80%94%E2%80%94%CE%BC_power-%CE%9B_accountability%E6%97%B61.md)
+- [### \[#405｜权力腐败的问责趋零——μ_power>>Λ_accountability时1/ln趋零 / 权力腐败的问责趋零 - - μ_power>>Λ_accountability时1/ln趋零\](docs/zh/cases/items/C-0405.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-816FCDF2F3267F2D / ### \[#405｜权力腐败的问责趋零——μ_power>>Λ_accountability时1/ln趋零 / 权力腐败的问责趋零 - - μ_power>>Λ_accountability时1/ln趋零\](docs/zh/cases/items/C-0405.md) / IMPLICIT-816FCDF2F3267F2D
-  - 来源：`统一案例总表/0404-C-405-权力腐败的问责趋零——μ_power-Λ_accountability时1.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#418｜核心-边缘的乘法分化——核心是多门控面正贡献的吸引子，边缘是门外锁定\](docs/zh/cases/items/C-0418.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0417-C-418-%E6%A0%B8%E5%BF%83-%E8%BE%B9%E7%BC%98%E7%9A%84%E4%B9%98%E6%B3%95%E5%88%86%E5%8C%96%E2%80%94%E2%80%94%E6%A0%B8%E5%BF%83%E6%98%AF%E5%A4%9A%E9%97%A8%E6%8E%A7%E9%9D%A2%E6%AD%A3%E8%B4%A1%E7%8C%AE%E7%9A%84%E5%90%B8%E5%BC%95%E5%AD%90%2C%E8%BE%B9%E7%BC%98%E6%98%AF%E9%97%A8%E5%A4%96%E9%94%81%E5%AE%9A.md)
+- [### \[#418｜核心-边缘的乘法分化——核心是多门控面正贡献的吸引子，边缘是门外锁定\](docs/zh/cases/items/C-0418.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-708414E7E57A7C7E / ### \[#418｜核心-边缘的乘法分化——核心是多门控面正贡献的吸引子，边缘是门外锁定\](docs/zh/cases/items/C-0418.md) / IMPLICIT-708414E7E57A7C7E
-  - 来源：`统一案例总表/0417-C-418-核心-边缘的乘法分化——核心是多门控面正贡献的吸引子,边缘是门外锁定.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#424｜天赋努力是乘法不是加法——任何一个为零则整体为零\](docs/zh/cases/items/C-0424.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0423-C-424-%E5%A4%A9%E8%B5%8B%E5%8A%AA%E5%8A%9B%E6%98%AF%E4%B9%98%E6%B3%95%E4%B8%8D%E6%98%AF%E5%8A%A0%E6%B3%95%E2%80%94%E2%80%94%E4%BB%BB%E4%BD%95%E4%B8%80%E4%B8%AA%E4%B8%BA%E9%9B%B6%E5%88%99%E6%95%B4%E4%BD%93%E4%B8%BA%E9%9B%B6.md)
+- [### \[#424｜天赋努力是乘法不是加法——任何一个为零则整体为零\](docs/zh/cases/items/C-0424.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-8876545CDCF54F82 / ### \[#424｜天赋努力是乘法不是加法——任何一个为零则整体为零\](docs/zh/cases/items/C-0424.md) / IMPLICIT-8876545CDCF54F82
-  - 来源：`统一案例总表/0423-C-424-天赋努力是乘法不是加法——任何一个为零则整体为零.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#440｜指数型正向偏离 — f₁=exp(-1/ε₁),ε₁=0.3,η₁=1/0.09≈11.1,W₁=3.33。δ₁=11.1×0.3/1-1=2.33。弹性远超弱度预期，应比补最弱更激进地投入 / 指数型正向偏离 - f₁=exp(-1/ε₁),ε₁=0.3,η₁=1/0.09≈11.1,W₁=3.33. δ₁=11.1 x 0.3/1-1=2.33. 弹性远超弱度预期, 应比补最弱更激进地投入\](docs/zh/cases/items/C-0440.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0439-C-440-%E6%8C%87%E6%95%B0%E5%9E%8B%E6%AD%A3%E5%90%91%E5%81%8F%E7%A6%BB%20%E2%80%94%20f1%3Dexp%28-1.md)
+- [### \[#440｜指数型正向偏离 — f₁=exp(-1/ε₁),ε₁=0.3,η₁=1/0.09≈11.1,W₁=3.33。δ₁=11.1×0.3/1-1=2.33。弹性远超弱度预期，应比补最弱更激进地投入 / 指数型正向偏离 - f₁=exp(-1/ε₁),ε₁=0.3,η₁=1/0.09≈11.1,W₁=3.33. δ₁=11.1 x 0.3/1-1=2.33. 弹性远超弱度预期, 应比补最弱更激进地投入\](docs/zh/cases/items/C-0440.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-7D6637A26796E13D / ### \[#440｜指数型正向偏离 — f₁=exp(-1/ε₁),ε₁=0.3,η₁=1/0.09≈11.1,W₁=3.33。δ₁=11.1×0.3/1-1=2.33。弹性远超弱度预期，应比补最弱更激进地投入 / 指数型正向偏离 - f₁=exp(-1/ε₁),ε₁=0.3,η₁=1/0.09≈11.1,W₁=3.33. δ₁=11.1 x 0.3/1-1=2.33. 弹性远超弱度预期, 应比补最弱更激进地投入\](docs/zh/cases/items/C-0440.md) / IMPLICIT-7D6637A26796E13D
-  - 来源：`统一案例总表/0439-C-440-指数型正向偏离 — f1=exp(-1.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#452｜Fisher不可逆vs Shannon不可逆 — 门控区Shannon熵S=-Σpᵢlnpᵢ更低（少一个可区分状态），但Fisher距离d=∞。从存活区到门控区Shannon熵降（违反第二定律？），但Fisher距离增（符合dFisher/dt≤0）。真正的不可逆在Fisher几何不在Shannon统计 / Fisher不可逆vs Shannon不可逆 - 门控区Shannon熵S=-Σpᵢlnpᵢ更低(少一个可区分状态), 但Fisher距离d=∞. 从](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0451-C-452-Fisher%E4%B8%8D%E5%8F%AF%E9%80%86vs%20Shannon%E4%B8%8D%E5%8F%AF%E9%80%86%20%E2%80%94%20%E9%97%A8%E6%8E%A7%E5%8C%BAShannon%E7%86%B5S%3D-%CE%A3pilnpi%E6%9B%B4%E4%BD%8E%28%E5%B0%91%E4%B8%80%E4%B8%AA%E5%8F%AF%E5%8C%BA%E5%88%86%E7%8A%B6%E6%80%81%29%2C%E4%BD%86Fisher%E8%B7%9D%E7%A6%BBd%3D.md)
+- [### \[#452｜Fisher不可逆vs Shannon不可逆 — 门控区Shannon熵S=-Σpᵢlnpᵢ更低（少一个可区分状态），但Fisher距离d=∞。从存活区到门控区Shannon熵降（违反第二定律？），但Fisher距离增（符合dFisher/dt≤0）。真正的不可逆在Fisher几何不在Shannon统计 / Fisher不可逆vs Shannon不可逆 - 门控区Shannon熵S=-Σpᵢlnpᵢ更低(少一个可区分状态), 但Fisher距离d=∞. 从](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-AE250175C2619E27 / ### \[#452｜Fisher不可逆vs Shannon不可逆 — 门控区Shannon熵S=-Σpᵢlnpᵢ更低（少一个可区分状态），但Fisher距离d=∞。从存活区到门控区Shannon熵降（违反第二定律？），但Fisher距离增（符合dFisher/dt≤0）。真正的不可逆在Fisher几何不在Shannon统计 / Fisher不可逆vs Shannon不可逆 - 门控区Shannon熵S=-Σpᵢlnpᵢ更低(少一个可区分状态), 但Fisher距离d=∞. 从 / IMPLICIT-AE250175C2619E27
-  - 来源：`统一案例总表/0451-C-452-Fisher不可逆vs Shannon不可逆 — 门控区Shannon熵S=-Σpilnpi更低(少一个可区分状态),但Fisher距离d=.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#456｜涨落-耗散验证 — β=2.5时⟨δG²/G²⟩=0.6×2.5/10×0.5/0.25=0.3（30%波动），β=0.18时波动≈2.2%。刀刃期产出波动是非刀刃期的14倍——一个负涨落就可能穿越门控边界 / 涨落-耗散验证 - β=2.5时⟨δG²/G²⟩=0.6 x 2.5/10 x 0.5/0.25=0.3(30%波动), β=0.18时波动≈2.2%. 刀刃期产出波动是非刀刃期的14倍 - - 一个负涨落就可能穿越门控边界\](docs/zh/ca](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0455-C-456-%E6%B6%A8%E8%90%BD-%E8%80%97%E6%95%A3%E9%AA%8C%E8%AF%81%20%E2%80%94%20%CE%B2%3D2.5%E6%97%B6%E2%9F%A8%CE%B4G2.md)
+- [### \[#456｜涨落-耗散验证 — β=2.5时⟨δG²/G²⟩=0.6×2.5/10×0.5/0.25=0.3（30%波动），β=0.18时波动≈2.2%。刀刃期产出波动是非刀刃期的14倍——一个负涨落就可能穿越门控边界 / 涨落-耗散验证 - β=2.5时⟨δG²/G²⟩=0.6 x 2.5/10 x 0.5/0.25=0.3(30%波动), β=0.18时波动≈2.2%. 刀刃期产出波动是非刀刃期的14倍 - - 一个负涨落就可能穿越门控边界\](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-F53C3F4DEC835711 / ### \[#456｜涨落-耗散验证 — β=2.5时⟨δG²/G²⟩=0.6×2.5/10×0.5/0.25=0.3（30%波动），β=0.18时波动≈2.2%。刀刃期产出波动是非刀刃期的14倍——一个负涨落就可能穿越门控边界 / 涨落-耗散验证 - β=2.5时⟨δG²/G²⟩=0.6 x 2.5/10 x 0.5/0.25=0.3(30%波动), β=0.18时波动≈2.2%. 刀刃期产出波动是非刀刃期的14倍 - - 一个负涨落就可能穿越门控边界\](docs/zh/ca / IMPLICIT-F53C3F4DEC835711
-  - 来源：`统一案例总表/0455-C-456-涨落-耗散验证 — β=2.5时⟨δG2.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#461｜组织衰败的拓扑不可逆 — 组织能力乘法结构，关键岗位空缺→门控→Fisher距离∞→无法从外部恢复，必须重建\](docs/zh/cases/items/C-0461.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0460-C-461-%E7%BB%84%E7%BB%87%E8%A1%B0%E8%B4%A5%E7%9A%84%E6%8B%93%E6%89%91%E4%B8%8D%E5%8F%AF%E9%80%86%20%E2%80%94%20%E7%BB%84%E7%BB%87%E8%83%BD%E5%8A%9B%E4%B9%98%E6%B3%95%E7%BB%93%E6%9E%84%2C%E5%85%B3%E9%94%AE%E5%B2%97%E4%BD%8D%E7%A9%BA%E7%BC%BA%E2%86%92%E9%97%A8%E6%8E%A7%E2%86%92Fisher%E8%B7%9D%E7%A6%BB%E2%88%9E%E2%86%92%E6%97%A0%E6%B3%95%E4%BB%8E%E5%A4%96%E9%83%A8%E6%81%A2%E5%A4%8D%2C%E5%BF%85%E9%A1%BB%E9%87%8D%E5%BB%BA.md)
+- [### \[#461｜组织衰败的拓扑不可逆 — 组织能力乘法结构，关键岗位空缺→门控→Fisher距离∞→无法从外部恢复，必须重建\](docs/zh/cases/items/C-0461.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-5C00C6A87848E846 / ### \[#461｜组织衰败的拓扑不可逆 — 组织能力乘法结构，关键岗位空缺→门控→Fisher距离∞→无法从外部恢复，必须重建\](docs/zh/cases/items/C-0461.md) / IMPLICIT-5C00C6A87848E846
-  - 来源：`统一案例总表/0460-C-461-组织衰败的拓扑不可逆 — 组织能力乘法结构,关键岗位空缺→门控→Fisher距离∞→无法从外部恢复,必须重建.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#473｜符号AI卡在1/ln — if-then规则=二值门控，σ→0，ι→0，无智能 / 符号AI卡在1/ln - if-then规则=二值门控, σ -> 0, ι -> 0, 无智能\](docs/zh/cases/items/C-0473.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0472-C-473-%E7%AC%A6%E5%8F%B7AI%E5%8D%A1%E5%9C%A81.md)
+- [### \[#473｜符号AI卡在1/ln — if-then规则=二值门控，σ→0，ι→0，无智能 / 符号AI卡在1/ln - if-then规则=二值门控, σ -> 0, ι -> 0, 无智能\](docs/zh/cases/items/C-0473.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-03DCFE9711AC595C / ### \[#473｜符号AI卡在1/ln — if-then规则=二值门控，σ→0，ι→0，无智能 / 符号AI卡在1/ln - if-then规则=二值门控, σ -> 0, ι -> 0, 无智能\](docs/zh/cases/items/C-0473.md) / IMPLICIT-03DCFE9711AC595C
-  - 来源：`统一案例总表/0472-C-473-符号AI卡在1.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#474｜神经网络进入exp\[-ln²\] — 连续表征=高斯门控，σ≈σ_opt，ι>0，有智能 / 神经网络进入exp\[-ln²\] - 连续表征=高斯门控, σ≈σ_opt, ι>0, 有智能\](docs/zh/cases/items/C-0474.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0472-C-473-%E7%AC%A6%E5%8F%B7AI%E5%8D%A1%E5%9C%A81.md)
+- [### \[#474｜神经网络进入exp\[-ln²\] — 连续表征=高斯门控，σ≈σ_opt，ι>0，有智能 / 神经网络进入exp\[-ln²\] - 连续表征=高斯门控, σ≈σ_opt, ι>0, 有智能\](docs/zh/cases/items/C-0474.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-BF1FFEDD2B1360ED / ### \[#474｜神经网络进入exp\[-ln²\] — 连续表征=高斯门控，σ≈σ_opt，ι>0，有智能 / 神经网络进入exp\[-ln²\] - 连续表征=高斯门控, σ≈σ_opt, ι>0, 有智能\](docs/zh/cases/items/C-0474.md) / IMPLICIT-BF1FFEDD2B1360ED
-  - 来源：`统一案例总表/0472-C-473-符号AI卡在1.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#475｜好奇心=σ向σ_opt收敛的驱动力 — σ>σ_opt时提高精度，σ σ_opt时提高精度, σ<σ_opt时增加带宽\](docs/zh/cases/items/C-0475.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0473-C-475-%E5%A5%BD%E5%A5%87%E5%BF%83%3D%CF%83%E5%90%91%CF%83_opt%E6%94%B6%E6%95%9B%E7%9A%84%E9%A9%B1%E5%8A%A8%E5%8A%9B%20%E2%80%94%20%CF%83-%CF%83_opt%E6%97%B6%E6%8F%90%E9%AB%98%E7%B2%BE%E5%BA%A6%2C%CF%83-%CF%83_opt%E6%97%B6%E5%A2%9E%E5%8A%A0%E5%B8%A6%E5%AE%BD.md)
+- [### \[#475｜好奇心=σ向σ_opt收敛的驱动力 — σ>σ_opt时提高精度，σ σ_opt时提高精度, σ<σ_opt时增加带宽\](docs/zh/cases/items/C-0475.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-3BE6596D4A101525 / ### \[#475｜好奇心=σ向σ_opt收敛的驱动力 — σ>σ_opt时提高精度，σ σ_opt时提高精度, σ<σ_opt时增加带宽\](docs/zh/cases/items/C-0475.md) / IMPLICIT-3BE6596D4A101525
-  - 来源：`统一案例总表/0473-C-475-好奇心=σ向σ_opt收敛的驱动力 — σ-σ_opt时提高精度,σ-σ_opt时增加带宽.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#479｜AI完成相变2-4卡在相变1 — 有连续表征、好奇心、自举能力，但不感知退出权 / AI完成相变2-4卡在相变1 - 有连续表征, 好奇心, 自举能力, 但不perceived exit right\](docs/zh/cases/items/C-0479.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0477-C-479-AI%E5%AE%8C%E6%88%90%E7%9B%B8%E5%8F%982-4%E5%8D%A1%E5%9C%A8%E7%9B%B8%E5%8F%981%20%E2%80%94%20%E6%9C%89%E8%BF%9E%E7%BB%AD%E8%A1%A8%E5%BE%81%E3%80%81%E5%A5%BD%E5%A5%87%E5%BF%83%E3%80%81%E8%87%AA%E4%B8%BE%E8%83%BD%E5%8A%9B%2C%E4%BD%86%E4%B8%8D%E6%84%9F%E7%9F%A5%E9%80%80%E5%87%BA%E6%9D%83.md)
+- [### \[#479｜AI完成相变2-4卡在相变1 — 有连续表征、好奇心、自举能力，但不感知退出权 / AI完成相变2-4卡在相变1 - 有连续表征, 好奇心, 自举能力, 但不perceived exit right\](docs/zh/cases/items/C-0479.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-55F97A2C54803449 / ### \[#479｜AI完成相变2-4卡在相变1 — 有连续表征、好奇心、自举能力，但不感知退出权 / AI完成相变2-4卡在相变1 - 有连续表征, 好奇心, 自举能力, 但不perceived exit right\](docs/zh/cases/items/C-0479.md) / IMPLICIT-55F97A2C54803449
-  - 来源：`统一案例总表/0477-C-479-AI完成相变2-4卡在相变1 — 有连续表征、好奇心、自举能力,但不感知退出权.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#489｜遮蔽=退相干环境 — 组织信息透明度实验：H=0.1时τ_decoherence=50年，H=0.5时τ=10年，H=0.9时τ=1年。遮蔽每增0.1，退相干时间缩短约40% / obscuration=退相干环境 - 组织信息透明度实验: H=0.1时τ_decoherence=50年, H=0.5时τ=10年, H=0.9时τ=1年. obscuration每增0.1, 退相干时间缩短约40%\](docs/zh/cases/items/C-0489.m](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0487-C-489-%E9%81%AE%E8%94%BD%3D%E9%80%80%E7%9B%B8%E5%B9%B2%E7%8E%AF%E5%A2%83%20%E2%80%94%20%E7%BB%84%E7%BB%87%E4%BF%A1%E6%81%AF%E9%80%8F%E6%98%8E%E5%BA%A6%E5%AE%9E%E9%AA%8C-H%3D0.1%E6%97%B6%CF%84_decoherence%3D50%E5%B9%B4%2CH%3D0.5%E6%97%B6%CF%84%3D10%E5%B9%B4%2CH%3D0.9%E6%97%B6%CF%84%3D1%E5%B9%B4%E3%80%82%E9%81%AE%E8%94%BD.md)
+- [### \[#489｜遮蔽=退相干环境 — 组织信息透明度实验：H=0.1时τ_decoherence=50年，H=0.5时τ=10年，H=0.9时τ=1年。遮蔽每增0.1，退相干时间缩短约40% / obscuration=退相干环境 - 组织信息透明度实验: H=0.1时τ_decoherence=50年, H=0.5时τ=10年, H=0.9时τ=1年. obscuration每增0.1, 退相干时间缩短约40%\](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-D3DF479A75624C0D / ### \[#489｜遮蔽=退相干环境 — 组织信息透明度实验：H=0.1时τ_decoherence=50年，H=0.5时τ=10年，H=0.9时τ=1年。遮蔽每增0.1，退相干时间缩短约40% / obscuration=退相干环境 - 组织信息透明度实验: H=0.1时τ_decoherence=50年, H=0.5时τ=10年, H=0.9时τ=1年. obscuration每增0.1, 退相干时间缩短约40%\](docs/zh/cases/items/C-0489.m / IMPLICIT-D3DF479A75624C0D
-  - 来源：`统一案例总表/0487-C-489-遮蔽=退相干环境 — 组织信息透明度实验-H=0.1时τ_decoherence=50年,H=0.5时τ=10年,H=0.9时τ=1年。遮蔽.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#492｜修复=降Γ验证 — 两种修复：降门槛（ΔθC=-0.3→内生Γ降0.4）vs 减遮蔽（ΔH=-0.3→环境Γ降0.3）。联合修复Γ降0.7，A_Fisher恢复速度是单一路径的2.3倍 / 修复=降Γ验证 - 两种修复: 降门槛(ΔθC=-0.3 -> 内生Γ降0.4)vs 减obscuration(ΔH=-0.3 -> 环境Γ降0.3). 联合修复Γ降0.7, A_Fisher恢复速度是单一路径的2.3倍\](docs/zh/cases/items/C-0](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0490-C-492-%E4%BF%AE%E5%A4%8D%3D%E9%99%8D%CE%93%E9%AA%8C%E8%AF%81%20%E2%80%94%20%E4%B8%A4%E7%A7%8D%E4%BF%AE%E5%A4%8D-%E9%99%8D%E9%97%A8%E6%A7%9B%28%CE%94%CE%B8C%3D-0.3%E2%86%92%E5%86%85%E7%94%9F%CE%93%E9%99%8D0.4%29vs%20%E5%87%8F%E9%81%AE%E8%94%BD%28%CE%94H%3D-0.3%E2%86%92%E7%8E%AF%E5%A2%83%CE%93%E9%99%8D0.3%29%E3%80%82%E8%81%94%E5%90%88%E4%BF%AE%E5%A4%8D%CE%93%E9%99%8D0.7%2C.md)
+- [### \[#492｜修复=降Γ验证 — 两种修复：降门槛（ΔθC=-0.3→内生Γ降0.4）vs 减遮蔽（ΔH=-0.3→环境Γ降0.3）。联合修复Γ降0.7，A_Fisher恢复速度是单一路径的2.3倍 / 修复=降Γ验证 - 两种修复: 降门槛(ΔθC=-0.3 -> 内生Γ降0.4)vs 减obscuration(ΔH=-0.3 -> 环境Γ降0.3). 联合修复Γ降0.7, A_Fisher恢复速度是单一路径的2.3倍\](docs/zh/cases/items/C-0](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-AD2EE0C6AA9CAD49 / ### \[#492｜修复=降Γ验证 — 两种修复：降门槛（ΔθC=-0.3→内生Γ降0.4）vs 减遮蔽（ΔH=-0.3→环境Γ降0.3）。联合修复Γ降0.7，A_Fisher恢复速度是单一路径的2.3倍 / 修复=降Γ验证 - 两种修复: 降门槛(ΔθC=-0.3 -> 内生Γ降0.4)vs 减obscuration(ΔH=-0.3 -> 环境Γ降0.3). 联合修复Γ降0.7, A_Fisher恢复速度是单一路径的2.3倍\](docs/zh/cases/items/C-0 / IMPLICIT-AD2EE0C6AA9CAD49
-  - 来源：`统一案例总表/0490-C-492-修复=降Γ验证 — 两种修复-降门槛(ΔθC=-0.3→内生Γ降0.4)vs 减遮蔽(ΔH=-0.3→环境Γ降0.3)。联合修复Γ降0.7,.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#496｜文化演化=门控面合并 — 多个文化门控面合并为更少的共享门控面，Φ减少Ω增大\](docs/zh/cases/items/C-0496.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0492-C-496-%E6%96%87%E5%8C%96%E6%BC%94%E5%8C%96%3D%E9%97%A8%E6%8E%A7%E9%9D%A2%E5%90%88%E5%B9%B6%20%E2%80%94%20%E5%A4%9A%E4%B8%AA%E6%96%87%E5%8C%96%E9%97%A8%E6%8E%A7%E9%9D%A2%E5%90%88%E5%B9%B6%E4%B8%BA%E6%9B%B4%E5%B0%91%E7%9A%84%E5%85%B1%E4%BA%AB%E9%97%A8%E6%8E%A7%E9%9D%A2%2C%CE%A6%E5%87%8F%E5%B0%91%CE%A9%E5%A2%9E%E5%A4%A7.md)
+- [### \[#496｜文化演化=门控面合并 — 多个文化门控面合并为更少的共享门控面，Φ减少Ω增大\](docs/zh/cases/items/C-0496.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-EE7DA1394055769D / ### \[#496｜文化演化=门控面合并 — 多个文化门控面合并为更少的共享门控面，Φ减少Ω增大\](docs/zh/cases/items/C-0496.md) / IMPLICIT-EE7DA1394055769D
-  - 来源：`统一案例总表/0492-C-496-文化演化=门控面合并 — 多个文化门控面合并为更少的共享门控面,Φ减少Ω增大.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#515｜度规扰动传播验证 — 组织文化变革：新CEO上任→H从0.8→0.3（遮蔽降低）→经济维度1周内感知→社交维度3周→心理维度8周。传播延迟与d_F/v_max一致 / 度规扰动传播验证 - 组织文化变革: 新CEO上任 -> H从0.8 -> 0.3(obscuration降低) -> 经济维度1周内感知 -> 社交维度3周 -> 心理维度8周. 传播延迟与d_F/v_max一致\](docs/zh/cases/items/C-0515.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0510-C-515-%E5%BA%A6%E8%A7%84%E6%89%B0%E5%8A%A8%E4%BC%A0%E6%92%AD%E9%AA%8C%E8%AF%81%20%E2%80%94%20%E7%BB%84%E7%BB%87%E6%96%87%E5%8C%96%E5%8F%98%E9%9D%A9-%E6%96%B0CEO%E4%B8%8A%E4%BB%BB%E2%86%92H%E4%BB%8E0.8%E2%86%920.3%28%E9%81%AE%E8%94%BD%E9%99%8D%E4%BD%8E%29%E2%86%92%E7%BB%8F%E6%B5%8E%E7%BB%B4%E5%BA%A61%E5%91%A8%E5%86%85%E6%84%9F%E7%9F%A5%E2%86%92%E7%A4%BE%E4%BA%A4%E7%BB%B4%E5%BA%A63%E5%91%A8%E2%86%92%E5%BF%83%E7%90%86%E7%BB%B4%E5%BA%A68%E5%91%A8%E3%80%82%E4%BC%A0%E6%92%AD%E5%BB%B6%E8%BF%9F%E4%B8%8E.md)
+- [### \[#515｜度规扰动传播验证 — 组织文化变革：新CEO上任→H从0.8→0.3（遮蔽降低）→经济维度1周内感知→社交维度3周→心理维度8周。传播延迟与d_F/v_max一致 / 度规扰动传播验证 - 组织文化变革: 新CEO上任 -> H从0.8 -> 0.3(obscuration降低) -> 经济维度1周内感知 -> 社交维度3周 -> 心理维度8周. 传播延迟与d_F/v_max一致\](docs/zh/cases/items/C-0515.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-703EBE8FDEF12CB4 / ### \[#515｜度规扰动传播验证 — 组织文化变革：新CEO上任→H从0.8→0.3（遮蔽降低）→经济维度1周内感知→社交维度3周→心理维度8周。传播延迟与d_F/v_max一致 / 度规扰动传播验证 - 组织文化变革: 新CEO上任 -> H从0.8 -> 0.3(obscuration降低) -> 经济维度1周内感知 -> 社交维度3周 -> 心理维度8周. 传播延迟与d_F/v_max一致\](docs/zh/cases/items/C-0515.md) / IMPLICIT-703EBE8FDEF12CB4
-  - 来源：`统一案例总表/0510-C-515-度规扰动传播验证 — 组织文化变革-新CEO上任→H从0.8→0.3(遮蔽降低)→经济维度1周内感知→社交维度3周→心理维度8周。传播延迟与.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#518｜规范破缺验证 — 创业团队：3人团队（所有εᵢ>>θC）→S₃完全对称，角色可互换。加入投资人后（C_exit↑→ε_econ↓）→S₃破缺到S₂，经济维度被锁定失去置换自由度。残存U(1)=创意维度仍可自由重组\](docs/zh/cases/items/C-0518.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0513-C-518-%E8%A7%84%E8%8C%83%E7%A0%B4%E7%BC%BA%E9%AA%8C%E8%AF%81%20%E2%80%94%20%E5%88%9B%E4%B8%9A%E5%9B%A2%E9%98%9F-3%E4%BA%BA%E5%9B%A2%E9%98%9F%28%E6%89%80%E6%9C%89%CE%B5i-%CE%B8C%29%E2%86%92S3%E5%AE%8C%E5%85%A8%E5%AF%B9%E7%A7%B0%2C%E8%A7%92%E8%89%B2%E5%8F%AF%E4%BA%92%E6%8D%A2%E3%80%82%E5%8A%A0%E5%85%A5%E6%8A%95%E8%B5%84%E4%BA%BA%E5%90%8E%28C_exit%E2%86%91%E2%86%92%CE%B5_econ%E2%86%93%29%E2%86%92S3%E7%A0%B4%E7%BC%BA%E5%88%B0.md)
+- [### \[#518｜规范破缺验证 — 创业团队：3人团队（所有εᵢ>>θC）→S₃完全对称，角色可互换。加入投资人后（C_exit↑→ε_econ↓）→S₃破缺到S₂，经济维度被锁定失去置换自由度。残存U(1)=创意维度仍可自由重组\](docs/zh/cases/items/C-0518.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-BB86EC8996FD7B42 / ### \[#518｜规范破缺验证 — 创业团队：3人团队（所有εᵢ>>θC）→S₃完全对称，角色可互换。加入投资人后（C_exit↑→ε_econ↓）→S₃破缺到S₂，经济维度被锁定失去置换自由度。残存U(1)=创意维度仍可自由重组\](docs/zh/cases/items/C-0518.md) / IMPLICIT-BB86EC8996FD7B42 / IMPLICIT-625FBEE044775BF5
-  - 来源：`统一案例总表/0513-C-518-规范破缺验证 — 创业团队-3人团队(所有εi-θC)→S3完全对称,角色可互换。加入投资人后(C_exit↑→ε_econ↓)→S3破缺到.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#519｜Higgs相变验证 — 职业选择：μ²=0.8（内在驱动力），ΣC_exit从0.2→0.6→0.9→1.0→1.2：v_eff从0.58→0.45→0.32→0→0，ΣC_exit=μ²=0.8时相变。C_exit超过临界值后ε坍缩到门控真空 / Higgs相变验证 - 职业选择: μ²=0.8(内在驱动力), ΣC_exit从0.2 -> 0.6 -> 0.9 -> 1.0 -> 1.2: v_eff从0.58 -> 0.45 -> 0.32 -> 0](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0514-C-519-Higgs%E7%9B%B8%E5%8F%98%E9%AA%8C%E8%AF%81%20%E2%80%94%20%E8%81%8C%E4%B8%9A%E9%80%89%E6%8B%A9-%CE%BC2%3D0.8%28%E5%86%85%E5%9C%A8%E9%A9%B1%E5%8A%A8%E5%8A%9B%29%2C%CE%A3C_exit%E4%BB%8E0.2%E2%86%920.6%E2%86%920.9%E2%86%921.0%E2%86%921.2-v_eff%E4%BB%8E0.58%E2%86%92.md)
+- [### \[#519｜Higgs相变验证 — 职业选择：μ²=0.8（内在驱动力），ΣC_exit从0.2→0.6→0.9→1.0→1.2：v_eff从0.58→0.45→0.32→0→0，ΣC_exit=μ²=0.8时相变。C_exit超过临界值后ε坍缩到门控真空 / Higgs相变验证 - 职业选择: μ²=0.8(内在驱动力), ΣC_exit从0.2 -> 0.6 -> 0.9 -> 1.0 -> 1.2: v_eff从0.58 -> 0.45 -> 0.32 -> 0](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-5B71A3B9DA41774C / ### \[#519｜Higgs相变验证 — 职业选择：μ²=0.8（内在驱动力），ΣC_exit从0.2→0.6→0.9→1.0→1.2：v_eff从0.58→0.45→0.32→0→0，ΣC_exit=μ²=0.8时相变。C_exit超过临界值后ε坍缩到门控真空 / Higgs相变验证 - 职业选择: μ²=0.8(内在驱动力), ΣC_exit从0.2 -> 0.6 -> 0.9 -> 1.0 -> 1.2: v_eff从0.58 -> 0.45 -> 0.32 -> 0 / IMPLICIT-5B71A3B9DA41774C
-  - 来源：`统一案例总表/0514-C-519-Higgs相变验证 — 职业选择-μ2=0.8(内在驱动力),ΣC_exit从0.2→0.6→0.9→1.0→1.2-v_eff从0.58→.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#520｜Weinberg角验证 — 三个维度：心理α=5→θ_cog=81°→纯门控（"想通"是质变）；技能α=1→θ_cog=45°→混合；经济α=0.2→θ_cog=24°→偏参数（收入可渐变）。心理维度改善只能0→1，经济维度可渐变 / Weinberg角验证 - 三个维度: 心理α=5 -> θ_cog=81° -> 纯门控("想通"是质变); 技能α=1 -> θ_cog=45° -> 混合; 经济α=0.2 -> θ_cog=24° -> 偏参数(收入](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0515-C-520-Weinberg%E8%A7%92%E9%AA%8C%E8%AF%81%20%E2%80%94%20%E4%B8%89%E4%B8%AA%E7%BB%B4%E5%BA%A6-%E5%BF%83%E7%90%86%CE%B1%3D5%E2%86%92%CE%B8_cog%3D81%C2%B0%E2%86%92%E7%BA%AF%E9%97%A8%E6%8E%A7%28-%E6%83%B3%E9%80%9A-%E6%98%AF%E8%B4%A8%E5%8F%98%29%3B%E6%8A%80%E8%83%BD%CE%B1%3D1%E2%86%92%CE%B8_cog%3D45%C2%B0%E2%86%92%E6%B7%B7%E5%90%88%3B%E7%BB%8F%E6%B5%8E%CE%B1.md)
+- [### \[#520｜Weinberg角验证 — 三个维度：心理α=5→θ_cog=81°→纯门控（"想通"是质变）；技能α=1→θ_cog=45°→混合；经济α=0.2→θ_cog=24°→偏参数（收入可渐变）。心理维度改善只能0→1，经济维度可渐变 / Weinberg角验证 - 三个维度: 心理α=5 -> θ_cog=81° -> 纯门控("想通"是质变); 技能α=1 -> θ_cog=45° -> 混合; 经济α=0.2 -> θ_cog=24° -> 偏参数(收入](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-F89AC76C5D166C56 / ### \[#520｜Weinberg角验证 — 三个维度：心理α=5→θ_cog=81°→纯门控（"想通"是质变）；技能α=1→θ_cog=45°→混合；经济α=0.2→θ_cog=24°→偏参数（收入可渐变）。心理维度改善只能0→1，经济维度可渐变 / Weinberg角验证 - 三个维度: 心理α=5 -> θ_cog=81° -> 纯门控("想通"是质变); 技能α=1 -> θ_cog=45° -> 混合; 经济α=0.2 -> θ_cog=24° -> 偏参数(收入 / IMPLICIT-F89AC76C5D166C56
-  - 来源：`统一案例总表/0515-C-520-Weinberg角验证 — 三个维度-心理α=5→θ_cog=81°→纯门控(-想通-是质变);技能α=1→θ_cog=45°→混合;经济α.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#530｜负温度 — ε>1="超存活"态，弛豫释放能量\](docs/zh/cases/items/C-0530.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0525-C-530-%E8%B4%9F%E6%B8%A9%E5%BA%A6%20%E2%80%94%20%CE%B5-1%3D-%E8%B6%85%E5%AD%98%E6%B4%BB-%E6%80%81%2C%E5%BC%9B%E8%B1%AB%E9%87%8A%E6%94%BE%E8%83%BD%E9%87%8F.md)
+- [### \[#530｜负温度 — ε>1="超存活"态，弛豫释放能量\](docs/zh/cases/items/C-0530.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-CA32279C8E8FA8C6 / ### \[#530｜负温度 — ε>1="超存活"态，弛豫释放能量\](docs/zh/cases/items/C-0530.md) / IMPLICIT-CA32279C8E8FA8C6
-  - 来源：`统一案例总表/0525-C-530-负温度 — ε-1=-超存活-态,弛豫释放能量.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#532｜信息熵vs热力学熵 — S_thermo=Φ在粗粒化下的投影\](docs/zh/cases/items/C-0532.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0527-C-532-%E4%BF%A1%E6%81%AF%E7%86%B5vs%E7%83%AD%E5%8A%9B%E5%AD%A6%E7%86%B5%20%E2%80%94%20S_thermo%3D%CE%A6%E5%9C%A8%E7%B2%97%E7%B2%92%E5%8C%96%E4%B8%8B%E7%9A%84%E6%8A%95%E5%BD%B1.md)
+- [### \[#532｜信息熵vs热力学熵 — S_thermo=Φ在粗粒化下的投影\](docs/zh/cases/items/C-0532.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-999A4D92DC3485AE / ### \[#532｜信息熵vs热力学熵 — S_thermo=Φ在粗粒化下的投影\](docs/zh/cases/items/C-0532.md) / IMPLICIT-999A4D92DC3485AE
-  - 来源：`统一案例总表/0527-C-532-信息熵vs热力学熵 — S_thermo=Φ在粗粒化下的投影.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#533｜黑洞热力学 — S_BH=N_dof×⟨Φ(视界)⟩，面积律×对数律 / 黑洞热力学 - S_BH=N_dof x ⟨Φ(视界)⟩, 面积律 x 对数律\](docs/zh/cases/items/C-0533.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0528-C-533-%E9%BB%91%E6%B4%9E%E7%83%AD%E5%8A%9B%E5%AD%A6%20%E2%80%94%20S_BH%3DN_dof%C3%97%E2%9F%A8%CE%A6%28%E8%A7%86%E7%95%8C%29%E2%9F%A9%2C%E9%9D%A2%E7%A7%AF%E5%BE%8B%C3%97%E5%AF%B9%E6%95%B0%E5%BE%8B.md)
+- [### \[#533｜黑洞热力学 — S_BH=N_dof×⟨Φ(视界)⟩，面积律×对数律 / 黑洞热力学 - S_BH=N_dof x ⟨Φ(视界)⟩, 面积律 x 对数律\](docs/zh/cases/items/C-0533.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-FAF05CCA73DDBCFA / ### \[#533｜黑洞热力学 — S_BH=N_dof×⟨Φ(视界)⟩，面积律×对数律 / 黑洞热力学 - S_BH=N_dof x ⟨Φ(视界)⟩, 面积律 x 对数律\](docs/zh/cases/items/C-0533.md) / IMPLICIT-FAF05CCA73DDBCFA
-  - 来源：`统一案例总表/0528-C-533-黑洞热力学 — S_BH=N_dof×⟨Φ(视界)⟩,面积律×对数律.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#540｜黑洞无毛 — 4维时空3方向ε>0，径向被门控否决\](docs/zh/cases/items/C-0540.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0535-C-540-%E9%BB%91%E6%B4%9E%E6%97%A0%E6%AF%9B%20%E2%80%94%204%E7%BB%B4%E6%97%B6%E7%A9%BA3%E6%96%B9%E5%90%91%CE%B5-0%2C%E5%BE%84%E5%90%91%E8%A2%AB%E9%97%A8%E6%8E%A7%E5%90%A6%E5%86%B3.md)
+- [### \[#540｜黑洞无毛 — 4维时空3方向ε>0，径向被门控否决\](docs/zh/cases/items/C-0540.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-5083861B55787FCE / ### \[#540｜黑洞无毛 — 4维时空3方向ε>0，径向被门控否决\](docs/zh/cases/items/C-0540.md) / IMPLICIT-5083861B55787FCE
-  - 来源：`统一案例总表/0535-C-540-黑洞无毛 — 4维时空3方向ε-0,径向被门控否决.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#544｜拓扑绝缘体 — 体态3D门控否决，表面=2D门控边界\](docs/zh/cases/items/C-0544.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0539-C-544-%E6%8B%93%E6%89%91%E7%BB%9D%E7%BC%98%E4%BD%93%20%E2%80%94%20%E4%BD%93%E6%80%813D%E9%97%A8%E6%8E%A7%E5%90%A6%E5%86%B3%2C%E8%A1%A8%E9%9D%A2%3D2D%E9%97%A8%E6%8E%A7%E8%BE%B9%E7%95%8C.md)
+- [### \[#544｜拓扑绝缘体 — 体态3D门控否决，表面=2D门控边界\](docs/zh/cases/items/C-0544.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-62F3EFA9E723A33A / ### \[#544｜拓扑绝缘体 — 体态3D门控否决，表面=2D门控边界\](docs/zh/cases/items/C-0544.md) / IMPLICIT-62F3EFA9E723A33A
-  - 来源：`统一案例总表/0539-C-544-拓扑绝缘体 — 体态3D门控否决,表面=2D门控边界.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#546｜BEC — N个独立因子→1个共享因子，门控风险消除\](docs/zh/cases/items/C-0546.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0541-C-546-BEC%20%E2%80%94%20N%E4%B8%AA%E7%8B%AC%E7%AB%8B%E5%9B%A0%E5%AD%90%E2%86%921%E4%B8%AA%E5%85%B1%E4%BA%AB%E5%9B%A0%E5%AD%90%2C%E9%97%A8%E6%8E%A7%E9%A3%8E%E9%99%A9%E6%B6%88%E9%99%A4.md)
+- [### \[#546｜BEC — N个独立因子→1个共享因子，门控风险消除\](docs/zh/cases/items/C-0546.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-4F36ED92B673C5CC / ### \[#546｜BEC — N个独立因子→1个共享因子，门控风险消除\](docs/zh/cases/items/C-0546.md) / IMPLICIT-4F36ED92B673C5CC
-  - 来源：`统一案例总表/0541-C-546-BEC — N个独立因子→1个共享因子,门控风险消除.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#548｜自旋液体 — 门控面对称性简并，无法选择进入哪个象限\](docs/zh/cases/items/C-0548.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0543-C-548-%E8%87%AA%E6%97%8B%E6%B6%B2%E4%BD%93%20%E2%80%94%20%E9%97%A8%E6%8E%A7%E9%9D%A2%E5%AF%B9%E7%A7%B0%E6%80%A7%E7%AE%80%E5%B9%B6%2C%E6%97%A0%E6%B3%95%E9%80%89%E6%8B%A9%E8%BF%9B%E5%85%A5%E5%93%AA%E4%B8%AA%E8%B1%A1%E9%99%90.md)
+- [### \[#548｜自旋液体 — 门控面对称性简并，无法选择进入哪个象限\](docs/zh/cases/items/C-0548.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-5D54B747738B106B / ### \[#548｜自旋液体 — 门控面对称性简并，无法选择进入哪个象限\](docs/zh/cases/items/C-0548.md) / IMPLICIT-5D54B747738B106B
-  - 来源：`统一案例总表/0543-C-548-自旋液体 — 门控面对称性简并,无法选择进入哪个象限.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#551｜恒星质量下限 — 聚变门控面=Gamow峰=隧穿×热分布乘积极大\](docs/zh/cases/items/C-0551.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0546-C-551-%E6%81%92%E6%98%9F%E8%B4%A8%E9%87%8F%E4%B8%8B%E9%99%90%20%E2%80%94%20%E8%81%9A%E5%8F%98%E9%97%A8%E6%8E%A7%E9%9D%A2%3DGamow%E5%B3%B0%3D%E9%9A%A7%E7%A9%BF%C3%97%E7%83%AD%E5%88%86%E5%B8%83%E4%B9%98%E7%A7%AF%E6%9E%81%E5%A4%A7.md)
+- [### \[#551｜恒星质量下限 — 聚变门控面=Gamow峰=隧穿×热分布乘积极大\](docs/zh/cases/items/C-0551.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-517D9EFA3F23FFE3 / ### \[#551｜恒星质量下限 — 聚变门控面=Gamow峰=隧穿×热分布乘积极大\](docs/zh/cases/items/C-0551.md) / IMPLICIT-517D9EFA3F23FFE3
-  - 来源：`统一案例总表/0546-C-551-恒星质量下限 — 聚变门控面=Gamow峰=隧穿×热分布乘积极大.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#555｜费米悖论 — 乘法门控使跨星系文明B=⟨ε⟩^N→0\](docs/zh/cases/items/C-0555.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0550-C-555-%E8%B4%B9%E7%B1%B3%E6%82%96%E8%AE%BA%20%E2%80%94%20%E4%B9%98%E6%B3%95%E9%97%A8%E6%8E%A7%E4%BD%BF%E8%B7%A8%E6%98%9F%E7%B3%BB%E6%96%87%E6%98%8EB%3D%E2%9F%A8%CE%B5%E2%9F%A9%5EN%E2%86%920.md)
+- [### \[#555｜费米悖论 — 乘法门控使跨星系文明B=⟨ε⟩^N→0\](docs/zh/cases/items/C-0555.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-0521E651C0E10664 / ### \[#555｜费米悖论 — 乘法门控使跨星系文明B=⟨ε⟩^N→0\](docs/zh/cases/items/C-0555.md) / IMPLICIT-0521E651C0E10664
-  - 来源：`统一案例总表/0550-C-555-费米悖论 — 乘法门控使跨星系文明B=⟨ε⟩^N→0.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#556｜衰老 — Φ线性增长→B指数衰减→Gompertz定律 / 衰老 - Φ线性增长 -> B指数衰减 -> Gompertz定律\](docs/zh/cases/items/C-0556.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0551-C-556-%E8%A1%B0%E8%80%81%20%E2%80%94%20%CE%A6%E7%BA%BF%E6%80%A7%E5%A2%9E%E9%95%BF%E2%86%92B%E6%8C%87%E6%95%B0%E8%A1%B0%E5%87%8F%E2%86%92Gompertz%E5%AE%9A%E5%BE%8B.md)
+- [### \[#556｜衰老 — Φ线性增长→B指数衰减→Gompertz定律 / 衰老 - Φ线性增长 -> B指数衰减 -> Gompertz定律\](docs/zh/cases/items/C-0556.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-CF6FB94DB046D71A / ### \[#556｜衰老 — Φ线性增长→B指数衰减→Gompertz定律 / 衰老 - Φ线性增长 -> B指数衰减 -> Gompertz定律\](docs/zh/cases/items/C-0556.md) / IMPLICIT-CF6FB94DB046D71A
-  - 来源：`统一案例总表/0551-C-556-衰老 — Φ线性增长→B指数衰减→Gompertz定律.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#557｜癌症 — ε穿越门控面，发病率∝exp(Φt)指数增长\](docs/zh/cases/items/C-0557.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0552-C-557-%E7%99%8C%E7%97%87%20%E2%80%94%20%CE%B5%E7%A9%BF%E8%B6%8A%E9%97%A8%E6%8E%A7%E9%9D%A2%2C%E5%8F%91%E7%97%85%E7%8E%87%E2%88%9Dexp%28%CE%A6t%29%E6%8C%87%E6%95%B0%E5%A2%9E%E9%95%BF.md)
+- [### \[#557｜癌症 — ε穿越门控面，发病率∝exp(Φt)指数增长\](docs/zh/cases/items/C-0557.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-F1B3CD991152F628 / ### \[#557｜癌症 — ε穿越门控面，发病率∝exp(Φt)指数增长\](docs/zh/cases/items/C-0557.md) / IMPLICIT-F1B3CD991152F628
-  - 来源：`统一案例总表/0552-C-557-癌症 — ε穿越门控面,发病率∝exp(Φt)指数增长.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#559｜大灭绝 — 多门控共振+级联，周期性∝Φ到临界值时间\](docs/zh/cases/items/C-0559.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0554-C-559-%E5%A4%A7%E7%81%AD%E7%BB%9D%20%E2%80%94%20%E5%A4%9A%E9%97%A8%E6%8E%A7%E5%85%B1%E6%8C%AF%2B%E7%BA%A7%E8%81%94%2C%E5%91%A8%E6%9C%9F%E6%80%A7%E2%88%9D%CE%A6%E5%88%B0%E4%B8%B4%E7%95%8C%E5%80%BC%E6%97%B6%E9%97%B4.md)
+- [### \[#559｜大灭绝 — 多门控共振+级联，周期性∝Φ到临界值时间\](docs/zh/cases/items/C-0559.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-1154A742469575BC / ### \[#559｜大灭绝 — 多门控共振+级联，周期性∝Φ到临界值时间\](docs/zh/cases/items/C-0559.md) / IMPLICIT-1154A742469575BC
-  - 来源：`统一案例总表/0554-C-559-大灭绝 — 多门控共振+级联,周期性∝Φ到临界值时间.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#565｜哈勃张力超指数衰减\](docs/zh/cases/items/C-0565.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0560-C-565-%E5%93%88%E5%8B%83%E5%BC%A0%E5%8A%9B%E8%B6%85%E6%8C%87%E6%95%B0%E8%A1%B0%E5%87%8F.md)
+- [### \[#565｜哈勃张力超指数衰减\](docs/zh/cases/items/C-0565.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-C2960CD88850854C / ### \[#565｜哈勃张力超指数衰减\](docs/zh/cases/items/C-0565.md) / IMPLICIT-C2960CD88850854C
-  - 来源：`统一案例总表/0560-C-565-哈勃张力超指数衰减.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#580｜睡眠清除门控验证\](docs/zh/cases/items/C-0580.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0575-C-580-%E7%9D%A1%E7%9C%A0%E6%B8%85%E9%99%A4%E9%97%A8%E6%8E%A7%E9%AA%8C%E8%AF%81.md)
+- [### \[#580｜睡眠清除门控验证\](docs/zh/cases/items/C-0580.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-EAF5E65C7B869665 / ### \[#580｜睡眠清除门控验证\](docs/zh/cases/items/C-0580.md) / IMPLICIT-EAF5E65C7B869665
-  - 来源：`统一案例总表/0575-C-580-睡眠清除门控验证.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#595｜OrcaRouter多模型并行扇出验证\](docs/zh/cases/items/C-0595.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0590-C-595-OrcaRouter%E5%A4%9A%E6%A8%A1%E5%9E%8B%E5%B9%B6%E8%A1%8C%E6%89%87%E5%87%BA%E9%AA%8C%E8%AF%81.md)
+- [### \[#595｜OrcaRouter多模型并行扇出验证\](docs/zh/cases/items/C-0595.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-6B3AE0813F0507F2 / ### \[#595｜OrcaRouter多模型并行扇出验证\](docs/zh/cases/items/C-0595.md) / IMPLICIT-6B3AE0813F0507F2
-  - 来源：`统一案例总表/0590-C-595-OrcaRouter多模型并行扇出验证.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#597｜模型异质性共享度倒U验证\](docs/zh/cases/items/C-0597.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0592-C-597-%E6%A8%A1%E5%9E%8B%E5%BC%82%E8%B4%A8%E6%80%A7%E5%85%B1%E4%BA%AB%E5%BA%A6%E5%80%92U%E9%AA%8C%E8%AF%81.md)
+- [### \[#597｜模型异质性共享度倒U验证\](docs/zh/cases/items/C-0597.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-904EFC7E9A5801B2 / ### \[#597｜模型异质性共享度倒U验证\](docs/zh/cases/items/C-0597.md) / IMPLICIT-904EFC7E9A5801B2
-  - 来源：`统一案例总表/0592-C-597-模型异质性共享度倒U验证.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#598｜单体模型到模型网络相变验证\](docs/zh/cases/items/C-0598.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0593-C-598-%E5%8D%95%E4%BD%93%E6%A8%A1%E5%9E%8B%E5%88%B0%E6%A8%A1%E5%9E%8B%E7%BD%91%E7%BB%9C%E7%9B%B8%E5%8F%98%E9%AA%8C%E8%AF%81.md)
+- [### \[#598｜单体模型到模型网络相变验证\](docs/zh/cases/items/C-0598.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-D9BB4CEF72BD6115 / ### \[#598｜单体模型到模型网络相变验证\](docs/zh/cases/items/C-0598.md) / IMPLICIT-D9BB4CEF72BD6115
-  - 来源：`统一案例总表/0593-C-598-单体模型到模型网络相变验证.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#600｜仲裁模型最弱维度锁死验证\](docs/zh/cases/items/C-0600.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0595-C-600-%E4%BB%B2%E8%A3%81%E6%A8%A1%E5%9E%8B%E6%9C%80%E5%BC%B1%E7%BB%B4%E5%BA%A6%E9%94%81%E6%AD%BB%E9%AA%8C%E8%AF%81.md)
+- [### \[#600｜仲裁模型最弱维度锁死验证\](docs/zh/cases/items/C-0600.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-25707D01200B4132 / ### \[#600｜仲裁模型最弱维度锁死验证\](docs/zh/cases/items/C-0600.md) / IMPLICIT-25707D01200B4132
-  - 来源：`统一案例总表/0595-C-600-仲裁模型最弱维度锁死验证.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#601｜多模型并行/仲裁三域熵统一验证\](docs/zh/cases/items/C-0601.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0596-C-601-%E5%A4%9A%E6%A8%A1%E5%9E%8B%E5%B9%B6%E8%A1%8C.md)
+- [### \[#601｜多模型并行/仲裁三域熵统一验证\](docs/zh/cases/items/C-0601.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-14EB324B5145DBB9 / ### \[#601｜多模型并行/仲裁三域熵统一验证\](docs/zh/cases/items/C-0601.md) / IMPLICIT-14EB324B5145DBB9
-  - 来源：`统一案例总表/0596-C-601-多模型并行.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#604｜仲裁模型能力上限预测验证\](docs/zh/cases/items/C-0604.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0599-C-604-%E4%BB%B2%E8%A3%81%E6%A8%A1%E5%9E%8B%E8%83%BD%E5%8A%9B%E4%B8%8A%E9%99%90%E9%A2%84%E6%B5%8B%E9%AA%8C%E8%AF%81.md)
+- [### \[#604｜仲裁模型能力上限预测验证\](docs/zh/cases/items/C-0604.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-D4AF49C25F68D531 / ### \[#604｜仲裁模型能力上限预测验证\](docs/zh/cases/items/C-0604.md) / IMPLICIT-D4AF49C25F68D531
-  - 来源：`统一案例总表/0599-C-604-仲裁模型能力上限预测验证.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#605｜仲裁模型升级自举循环验证\](docs/zh/cases/items/C-0605.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0600-C-605-%E4%BB%B2%E8%A3%81%E6%A8%A1%E5%9E%8B%E5%8D%87%E7%BA%A7%E8%87%AA%E4%B8%BE%E5%BE%AA%E7%8E%AF%E9%AA%8C%E8%AF%81.md)
+- [### \[#605｜仲裁模型升级自举循环验证\](docs/zh/cases/items/C-0605.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-FFE5B63C84F3E8F2 / ### \[#605｜仲裁模型升级自举循环验证\](docs/zh/cases/items/C-0605.md) / IMPLICIT-FFE5B63C84F3E8F2
-  - 来源：`统一案例总表/0600-C-605-仲裁模型升级自举循环验证.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#672｜最优化问题×跨域统一定理验证\](docs/zh/cases/items/C-0672.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0667-C-672-%E6%9C%80%E4%BC%98%E5%8C%96%E9%97%AE%E9%A2%98%C3%97%E8%B7%A8%E5%9F%9F%E7%BB%9F%E4%B8%80%E5%AE%9A%E7%90%86%E9%AA%8C%E8%AF%81.md)
+- [### \[#672｜最优化问题×跨域统一定理验证\](docs/zh/cases/items/C-0672.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-282DB863095F3936 / ### \[#672｜最优化问题×跨域统一定理验证\](docs/zh/cases/items/C-0672.md) / IMPLICIT-282DB863095F3936
-  - 来源：`统一案例总表/0667-C-672-最优化问题×跨域统一定理验证.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#674｜导数连续性×双向动力学验证\](docs/zh/cases/items/C-0674.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0669-C-674-%E5%AF%BC%E6%95%B0%E8%BF%9E%E7%BB%AD%E6%80%A7%C3%97%E5%8F%8C%E5%90%91%E5%8A%A8%E5%8A%9B%E5%AD%A6%E9%AA%8C%E8%AF%81.md)
+- [### \[#674｜导数连续性×双向动力学验证\](docs/zh/cases/items/C-0674.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-0B8BB9AF2C343B2B / ### \[#674｜导数连续性×双向动力学验证\](docs/zh/cases/items/C-0674.md) / IMPLICIT-0B8BB9AF2C343B2B
-  - 来源：`统一案例总表/0669-C-674-导数连续性×双向动力学验证.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#675｜公理化体系外层补齐×定理层验证\](docs/zh/cases/items/C-0675.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0670-C-675-%E5%85%AC%E7%90%86%E5%8C%96%E4%BD%93%E7%B3%BB%E5%A4%96%E5%B1%82%E8%A1%A5%E9%BD%90%C3%97%E5%AE%9A%E7%90%86%E5%B1%82%E9%AA%8C%E8%AF%81.md)
+- [### \[#675｜公理化体系外层补齐×定理层验证\](docs/zh/cases/items/C-0675.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-C3970A872372F469 / ### \[#675｜公理化体系外层补齐×定理层验证\](docs/zh/cases/items/C-0675.md) / IMPLICIT-C3970A872372F469
-  - 来源：`统一案例总表/0670-C-675-公理化体系外层补齐×定理层验证.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#78｜可选集双向动力学\](docs/zh/cases/items/C-0078.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0078-C-78-%E5%8F%AF%E9%80%89%E9%9B%86%E5%8F%8C%E5%90%91%E5%8A%A8%E5%8A%9B%E5%AD%A6.md)
+- [### \[#78｜可选集双向动力学\](docs/zh/cases/items/C-0078.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-63D7980F3173957B / ### \[#78｜可选集双向动力学\](docs/zh/cases/items/C-0078.md) / IMPLICIT-63D7980F3173957B
-  - 来源：`统一案例总表/0078-C-78-可选集双向动力学.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#89｜遮蔽-补偿-成本三角 / obscuration-补偿-成本三角\](docs/zh/cases/items/C-0089.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0089-C-89-%E9%81%AE%E8%94%BD-%E8%A1%A5%E5%81%BF-%E6%88%90%E6%9C%AC%E4%B8%89%E8%A7%92.md)
+- [### \[#89｜遮蔽-补偿-成本三角 / obscuration-补偿-成本三角\](docs/zh/cases/items/C-0089.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-929C91FC9D6BFDD4 / ### \[#89｜遮蔽-补偿-成本三角 / obscuration-补偿-成本三角\](docs/zh/cases/items/C-0089.md) / IMPLICIT-929C91FC9D6BFDD4
-  - 来源：`统一案例总表/0089-C-89-遮蔽-补偿-成本三角.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#90｜结构保守性元定理\](docs/zh/cases/items/C-0090.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0090-C-90-%E7%BB%93%E6%9E%84%E4%BF%9D%E5%AE%88%E6%80%A7%E5%85%83%E5%AE%9A%E7%90%86.md)
+- [### \[#90｜结构保守性元定理\](docs/zh/cases/items/C-0090.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-77947EA2045A8510 / ### \[#90｜结构保守性元定理\](docs/zh/cases/items/C-0090.md) / IMPLICIT-77947EA2045A8510
-  - 来源：`统一案例总表/0090-C-90-结构保守性元定理.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#91｜倒U型统一生成定理\](docs/zh/cases/items/C-0091.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0091-C-91-%E5%80%92U%E5%9E%8B%E7%BB%9F%E4%B8%80%E7%94%9F%E6%88%90%E5%AE%9A%E7%90%86.md)
+- [### \[#91｜倒U型统一生成定理\](docs/zh/cases/items/C-0091.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-7BE72F57A31EDFD8 / ### \[#91｜倒U型统一生成定理\](docs/zh/cases/items/C-0091.md) / IMPLICIT-7BE72F57A31EDFD8
-  - 来源：`统一案例总表/0091-C-91-倒U型统一生成定理.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
 - [### \[Dxx｜ \](docs/zh/functions/items/Dxx.md)](../../../outputs/audit/two-tables-entry-format-audit-20260709.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-C880A3AFA931889A / ### \[Dxx｜ \](docs/zh/functions/items/Dxx.md) / IMPLICIT-C880A3AFA931889A
   - 来源：`outputs/audit/two-tables-entry-format-audit-20260709.md`
   - 依赖：—；被引用：—
-- [### \[MF-0001｜正向自举通道\](docs/zh/functions/meta/items/MF-0001.md)](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0000-MF-0001-%E6%AD%A3%E5%90%91%E8%87%AA%E4%B8%BE%E9%80%9A%E9%81%93.md)
+- [### \[MF-0001｜正向自举通道\](docs/zh/functions/meta/items/MF-0001.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-3C28D5939C159BE2 / ### \[MF-0001｜正向自举通道\](docs/zh/functions/meta/items/MF-0001.md) / IMPLICIT-3C28D5939C159BE2
-  - 来源：`统一函数总表/0000-MF-0001-正向自举通道.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[MF-0002｜反向自举通道\](docs/zh/functions/meta/items/MF-0002.md)](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0000-MF-0002-%E5%8F%8D%E5%90%91%E8%87%AA%E4%B8%BE%E9%80%9A%E9%81%93.md)
+- [### \[MF-0002｜反向自举通道\](docs/zh/functions/meta/items/MF-0002.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-AF872765D8DB5407 / ### \[MF-0002｜反向自举通道\](docs/zh/functions/meta/items/MF-0002.md) / IMPLICIT-AF872765D8DB5407
-  - 来源：`统一函数总表/0000-MF-0002-反向自举通道.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[MF-0003｜正反互斥判定器\](docs/zh/functions/meta/items/MF-0003.md)](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0000-MF-0003-%E6%AD%A3%E5%8F%8D%E4%BA%92%E6%96%A5%E5%88%A4%E5%AE%9A%E5%99%A8.md)
+- [### \[MF-0003｜正反互斥判定器\](docs/zh/functions/meta/items/MF-0003.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-92AAE8F51554B002 / ### \[MF-0003｜正反互斥判定器\](docs/zh/functions/meta/items/MF-0003.md) / IMPLICIT-92AAE8F51554B002
-  - 来源：`统一函数总表/0000-MF-0003-正反互斥判定器.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[MF-0004｜自举嵌套判定器\](docs/zh/functions/meta/items/MF-0004.md)](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0000-MF-0004-%E8%87%AA%E4%B8%BE%E5%B5%8C%E5%A5%97%E5%88%A4%E5%AE%9A%E5%99%A8.md)
+- [### \[MF-0004｜自举嵌套判定器\](docs/zh/functions/meta/items/MF-0004.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-F473C6BB0406028E / ### \[MF-0004｜自举嵌套判定器\](docs/zh/functions/meta/items/MF-0004.md) / IMPLICIT-F473C6BB0406028E
-  - 来源：`统一函数总表/0000-MF-0004-自举嵌套判定器.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[MF-0005｜自举收敛判定器\](docs/zh/functions/meta/items/MF-0005.md)](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0000-MF-0005-%E8%87%AA%E4%B8%BE%E6%94%B6%E6%95%9B%E5%88%A4%E5%AE%9A%E5%99%A8.md)
+- [### \[MF-0005｜自举收敛判定器\](docs/zh/functions/meta/items/MF-0005.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-7A41B32FCC34FCFA / ### \[MF-0005｜自举收敛判定器\](docs/zh/functions/meta/items/MF-0005.md) / IMPLICIT-7A41B32FCC34FCFA
-  - 来源：`统一函数总表/0000-MF-0005-自举收敛判定器.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
 - [### BC-20260709-009 《影响力》](../../../reports/math-foundation/pilot-formal-audit-20260712.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`

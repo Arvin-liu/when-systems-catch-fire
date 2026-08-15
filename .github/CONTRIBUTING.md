@@ -37,7 +37,7 @@ python3 ignition/tools/governance/validate_knowledge_experience.py
 
 ## 如何提交案例 / 函数
 
-- 新故事和新案例遵循各自现行 registry/模板入口。`统一函数总表/` 与 `统一案例总表/` 是冻结 legacy source，不直接新增、重编号或覆盖；新的函数类候选先提交 canonical identity-card 提案。
+- 新故事和新案例遵循各自现行 registry/模板入口。旧函数/案例表已在任务 118 中完成迁移并退役；其路径、blob、commit、原文 hash 和映射只在 `data/foundation/migrations/legacy-table-migration.jsonl` 与 Git 历史中保留。新的函数类候选先提交 canonical identity-card 提案。
 - 文件名尽量保持简洁、可检索，并尽量沿用现有编号风格。
 - 每个函数类条目必须先按[函数资产作者指南](../ignition/docs/foundation/function-asset-authoring-guide.md)在十二类主身份中选择一个，并写清输入、输出、定义域、陪域、类型、参数、单位、边界、奇点、反例、依赖、证明/实证义务、M/E 双轴、claim ceiling、允许和禁止用途；定义不足时只能进入 quarantine。
 - 如果是强主张，请同时标注断言等级，并说明它属于结构性推论、候选解释，还是已经过外部验证的命题。参阅 [断言等级说明](../ignition/docs/claim_levels.md)。

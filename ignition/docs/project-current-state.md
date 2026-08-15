@@ -54,7 +54,7 @@ GitHub 仓库 Markdown 是唯一持续维护的人类阅读层：
 - [裁决总结](../RESULTS/ADJUDICATION-SUMMARY.md)
 - [研究与文章](../RESULTS/RESEARCH-AND-ARTICLES.md)
 
-此前独立部署的阅读站已退出产品与同步面，独有系统图迁移到 [仓库内 SVG](./generated/ignition-system-map.svg)。历史部署证据仍留在 Git 与旧报告，不再构成当前完成门禁。
+此前独立部署的阅读站已退出产品与同步面，独有系统图迁移到 [仓库内唯一完整 SVG](./generated/ignition-system-architecture.svg)。历史部署证据仍留在 Git 与旧报告，不再构成当前完成门禁。
 
 ## 当前治理结论
 

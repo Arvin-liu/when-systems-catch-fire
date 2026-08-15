@@ -4,7 +4,7 @@
 
 ## 打开与生成
 
-- [仓库内完整 SVG](../generated/ignition-system-map.svg)
+- [仓库内唯一完整可点击 SVG](../generated/ignition-system-architecture.svg)
 - [机器可读投影](../../data/architecture/interactive-system-map.json)
 - [构件 registry](../../data/operations/project-components.json)
 - [类型化传播 topology](../../data/operations/change-propagation-topology.json)
@@ -21,7 +21,7 @@ python3 tools/generate_interactive_system_map.py
 python3 tools/generate_interactive_system_map.py --check
 ```
 
-SVG 现在位于 `docs/generated/ignition-system-map.svg`，通过 README 和普通 Markdown 直接访问，不依赖独立部署站点。SVG 节点链接指向 GitHub 仓库 canonical 文件；若客户端不支持 SVG 内部热点，可使用本页的文本入口。
+SVG 现在位于 `docs/generated/ignition-system-architecture.svg`，通过 README 和普通 Markdown 直接访问，不依赖独立部署站点。SVG 节点链接指向 GitHub 仓库 canonical 文件；若客户端不支持 SVG 内部热点，可使用本页的文本入口。它是当前唯一完整总架构图，不再并列维护另一张图。
 
 ## 权威与边界
 

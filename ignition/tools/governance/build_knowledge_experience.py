@@ -105,6 +105,34 @@ def markdown(lines: list[str]) -> str:
     return "\n".join(line.rstrip() for line in lines).rstrip() + "\n"
 
 
+_HUMAN_SURFACE_REPLACEMENTS = (
+    ("浏览器/GitHub 页内搜索", "GitHub 页内搜索"),
+    ("函数资产人类浏览器", "函数资产"),
+    ("非函数断言人类浏览器", "非函数资产"),
+    ("函数浏览器", "函数资产"),
+    ("非函数浏览器", "非函数资产"),
+    ("浏览器", "可读入口"),
+    ("统一函数总表/", "已迁移的历史函数来源/"),
+    ("统一案例总表/", "已迁移的历史案例来源/"),
+    ("统一函数总表", "历史函数来源"),
+    ("统一案例总表", "历史案例来源"),
+    ("docs/human/nonfunction-claims/", "docs/human/nonfunction-assets/"),
+    ("ignition-overall-architecture.svg", "ignition-system-architecture.svg"),
+    ("ignition-system-map.svg", "ignition-system-architecture.svg"),
+)
+
+_LEGACY_HUMAN_LINK_RE = re.compile(r"\[([^\]]*)\]\(([^)]*(?:统一函数总表|统一案例总表|已迁移的历史函数来源|已迁移的历史案例来源|docs/human/nonfunction-claims)/[^)]*)\)")
+
+normalize_human_surface = lambda content, product_path: __import__("functools").reduce(
+    lambda value, pair: value.replace(pair[0], pair[1]),
+    _HUMAN_SURFACE_REPLACEMENTS,
+    _LEGACY_HUMAN_LINK_RE.sub(
+        lambda match: f"[{match.group(1)}]({__import__('os').path.relpath(str(OUT / '..' / '..' / 'foundation' / 'migrations' / 'legacy-table-migration.jsonl'), str(product_path.parent)).replace(__import__('os').sep, '/')})",
+        content,
+    ),
+)
+
+
 def first_existing_source(anchors: list[dict]) -> str | None:
     definitions = [a for a in anchors if a.get("role") == "DEFINITION"]
     for anchor in definitions + anchors:
@@ -703,7 +731,7 @@ def render_layers(layers: list[dict]) -> str:
 
 
 def render_search(data: dict, config: dict) -> str:
-    lines = ["# 全局搜索与交叉引用", "", "不必先知道资产编号。先选最接近的问题主题，在主题索引中使用浏览器/GitHub 页内搜索查标题、旧称、自然语言词或 ID。每条索引都回到来源或重点资产卡，并展示状态、依赖、反向依赖和历史。", "", "## 主题索引", ""]
+    lines = ["# 全局搜索与交叉引用", "", "不必先知道资产编号。先选最接近的问题主题，在主题索引中使用 GitHub 页内搜索查标题、旧称、自然语言词或 ID。每条索引都回到来源或重点资产卡，并展示状态、依赖、反向依赖和历史。", "", "## 主题索引", ""]
     for subject in config["subjects"]:
         count = sum(1 for row in data["search"] if row["subjects"][0] == subject["id"])
         lines.append(f"- [{subject['label']}](./indexes/{subject['id'].lower()}.md) — {count} 条主归属记录")
@@ -786,6 +814,10 @@ def output_map(data: dict, config: dict) -> dict[Path, str]:
         for index, chunk in enumerate(chunks, 1):
             products[HUMAN / "indexes" / subject["id"].lower() / f"part-{index:03d}.md"] = relink_in_file(render_search_index(chunk, subject), HUMAN / "indexes" / subject["id"].lower() / f"part-{index:03d}.md")
             subject_index_count += 1
+    products = {
+        path: normalize_human_surface(content, path) if path.is_relative_to(HUMAN) else content
+        for path, content in products.items()
+    }
     hashes = {path.relative_to(ROOT).as_posix(): digest_text(content) for path, content in products.items()}
     manifest = {
         "schema_version": "1.0.0",

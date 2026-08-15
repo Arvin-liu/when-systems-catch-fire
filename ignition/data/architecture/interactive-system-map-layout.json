@@ -111,6 +111,7 @@
     ],
     "front_doors": [
       "readme",
+      "human_knowledge_surfaces",
       "summary",
       "usage",
       "ai_guide",
@@ -167,6 +168,6 @@
     ]
   },
   "repository_url": "https://github.com/Arvin-liu/when-systems-catch-fire",
-  "subtitle": "0.5.0 Current 派生投影；0.4.0 为 Historical。语言—思维是横穿 L0—L6 的 overlay，不是 L7。路径、邻近与声明依赖不自动表示现实因果。",
-  "title": "点火完整可点击系统图"
+  "subtitle": "唯一完整总架构图；0.5.0 Current 派生投影，0.4.0 为 Historical。语言—思维横穿 L0—L6，不增加 L7；连线是仓库关系、同步义务或候选反馈，不自动表示现实因果。",
+  "title": "点火唯一完整可点击总架构图"
 }

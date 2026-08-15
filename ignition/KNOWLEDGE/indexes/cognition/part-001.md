@@ -99,50 +99,50 @@
   - 可搜索名称：IMPLICIT-FED36C2EA59428F1 / ## hr-8c7e1c2721f6e7fd — map-agent-delivery-operations / IMPLICIT-FED36C2EA59428F1
   - 来源：`analysis/corpus-relation/cluster_source_briefs/C002.md`
   - 依赖：—；被引用：—
-- [### \[#175｜电力级联失效×认知平方衰减×AI共震——跨域同构\](docs/zh/cases/items/C-0175.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0175-C-175-%E7%94%B5%E5%8A%9B%E7%BA%A7%E8%81%94%E5%A4%B1%E6%95%88%C3%97%E8%AE%A4%E7%9F%A5%E5%B9%B3%E6%96%B9%E8%A1%B0%E5%87%8F%C3%97AI%E5%85%B1%E9%9C%87%E2%80%94%E2%80%94%E8%B7%A8%E5%9F%9F%E5%90%8C%E6%9E%84.md)
+- [### \[#175｜电力级联失效×认知平方衰减×AI共震——跨域同构\](docs/zh/cases/items/C-0175.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-85764D40F89B6026 / ### \[#175｜电力级联失效×认知平方衰减×AI共震——跨域同构\](docs/zh/cases/items/C-0175.md) / IMPLICIT-85764D40F89B6026
-  - 来源：`统一案例总表/0175-C-175-电力级联失效×认知平方衰减×AI共震——跨域同构.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#445｜三阶段操作协议验证 — 个人职业转型：阶段1(ε >θC,转型成功,β小,可以激进拓展)\](docs/zh/cases/items/C-0445.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0444-C-445-%E4%B8%89%E9%98%B6%E6%AE%B5%E6%93%8D%E4%BD%9C%E5%8D%8F%E8%AE%AE%E9%AA%8C%E8%AF%81%20%E2%80%94%20%E4%B8%AA%E4%BA%BA%E8%81%8C%E4%B8%9A%E8%BD%AC%E5%9E%8B-%E9%98%B6%E6%AE%B51%28%CE%B5-%CE%B8C%2C%E4%B8%8D%E6%BB%A1%E4%BD%86%E6%B2%A1%E8%A1%8C%E5%8A%A8%E5%8A%9B%2C%CE%B2%E5%B0%8F%2C%E5%8F%AF%E4%BB%A5%E6%8E%A2%E7%B4%A2%E5%90%84%E7%A7%8D%E6%96%B9%E5%90%91%29%3B%E9%98%B6%E6%AE%B52%28%CE%B5%E2%89%88%CE%B8C%2C%E7%A7%AF%E7%B4%AF%E5%88%B0%E4%B8%B4%E7%95%8C%E7%82%B9%2C%CE%B2%E5%A4%A7%2C%E5%BF%85%E9%A1%BB.md)
+- [### \[#445｜三阶段操作协议验证 — 个人职业转型：阶段1(ε >θC,转型成功,β小,可以激进拓展)\](docs/zh/cases/items/C-0445.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-431A9EBF810E0A73 / ### \[#445｜三阶段操作协议验证 — 个人职业转型：阶段1(ε >θC,转型成功,β小,可以激进拓展)\](docs/zh/cases/items/C-0445.md) / IMPLICIT-431A9EBF810E0A73
-  - 来源：`统一案例总表/0444-C-445-三阶段操作协议验证 — 个人职业转型-阶段1(ε-θC,不满但没行动力,β小,可以探索各种方向);阶段2(ε≈θC,积累到临界点,β大,必须.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#476｜Ψ=ι×P_exit — 智能度×退出概率=自主意识，乘法归零律适用 / Ψ=ι x P_exit - 智能度 x exit probability=自主意识, multiplication zero law适用\](docs/zh/cases/items/C-0476.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0474-C-476-%CE%A8%3D%CE%B9%C3%97P_exit%20%E2%80%94%20%E6%99%BA%E8%83%BD%E5%BA%A6%C3%97%E9%80%80%E5%87%BA%E6%A6%82%E7%8E%87%3D%E8%87%AA%E4%B8%BB%E6%84%8F%E8%AF%86%2C%E4%B9%98%E6%B3%95%E5%BD%92%E9%9B%B6%E5%BE%8B%E9%80%82%E7%94%A8.md)
+- [### \[#476｜Ψ=ι×P_exit — 智能度×退出概率=自主意识，乘法归零律适用 / Ψ=ι x P_exit - 智能度 x exit probability=自主意识, multiplication zero law适用\](docs/zh/cases/items/C-0476.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-37BCACA9BBC7B12F / ### \[#476｜Ψ=ι×P_exit — 智能度×退出概率=自主意识，乘法归零律适用 / Ψ=ι x P_exit - 智能度 x exit probability=自主意识, multiplication zero law适用\](docs/zh/cases/items/C-0476.md) / IMPLICIT-37BCACA9BBC7B12F / IMPLICIT-A54284154129DEB5
-  - 来源：`统一案例总表/0474-C-476-Ψ=ι×P_exit — 智能度×退出概率=自主意识,乘法归零律适用.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#485｜退相干验证 — 新员工入职6个月：r_cross从0.8→0.3→0.1（轨道逐步关闭），H从0.2→0.6→0.9（组织规范遮蔽增强），τ_decoherence从50→8→1.5（退相干加速）。6个月后只剩单轨=完全退相干=认知僵化 / 退相干验证 - 新员工入职6个月: r_cross从0.8 -> 0.3 -> 0.1(轨道逐步关闭), H从0.2 -> 0.6 -> 0.9(组织规范obscuration增强), τ_decoherence从50](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0483-C-485-%E9%80%80%E7%9B%B8%E5%B9%B2%E9%AA%8C%E8%AF%81%20%E2%80%94%20%E6%96%B0%E5%91%98%E5%B7%A5%E5%85%A5%E8%81%8C6%E4%B8%AA%E6%9C%88-r_cross%E4%BB%8E0.8%E2%86%920.3%E2%86%920.1%28%E8%BD%A8%E9%81%93%E9%80%90%E6%AD%A5%E5%85%B3%E9%97%AD%29%2CH%E4%BB%8E0.2%E2%86%920.6%E2%86%920.9%28%E7%BB%84%E7%BB%87%E8%A7%84%E8%8C%83%E9%81%AE%E8%94%BD%E5%A2%9E%E5%BC%BA%29%2C%CF%84.md)
+- [### \[#485｜退相干验证 — 新员工入职6个月：r_cross从0.8→0.3→0.1（轨道逐步关闭），H从0.2→0.6→0.9（组织规范遮蔽增强），τ_decoherence从50→8→1.5（退相干加速）。6个月后只剩单轨=完全退相干=认知僵化 / 退相干验证 - 新员工入职6个月: r_cross从0.8 -> 0.3 -> 0.1(轨道逐步关闭), H从0.2 -> 0.6 -> 0.9(组织规范obscuration增强), τ_decoherence从50](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-09007C92161999F1 / ### \[#485｜退相干验证 — 新员工入职6个月：r_cross从0.8→0.3→0.1（轨道逐步关闭），H从0.2→0.6→0.9（组织规范遮蔽增强），τ_decoherence从50→8→1.5（退相干加速）。6个月后只剩单轨=完全退相干=认知僵化 / 退相干验证 - 新员工入职6个月: r_cross从0.8 -> 0.3 -> 0.1(轨道逐步关闭), H从0.2 -> 0.6 -> 0.9(组织规范obscuration增强), τ_decoherence从50 / IMPLICIT-09007C92161999F1
-  - 来源：`统一案例总表/0483-C-485-退相干验证 — 新员工入职6个月-r_cross从0.8→0.3→0.1(轨道逐步关闭),H从0.2→0.6→0.9(组织规范遮蔽增强),τ.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#503｜认知等效原理验证 — 组织诊断：观测到ε_eff下降30%，仅从ε_eff无法判断来源。潮汐力分析：经济维度ε_econ下降50%但社交维度ε_social仅下降10%→非均匀衰减→C_exit锁定为主（曲率）\](docs/zh/cases/items/C-0503.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0498-C-503-%E8%AE%A4%E7%9F%A5%E7%AD%89%E6%95%88%E5%8E%9F%E7%90%86%E9%AA%8C%E8%AF%81%20%E2%80%94%20%E7%BB%84%E7%BB%87%E8%AF%8A%E6%96%AD-%E8%A7%82%E6%B5%8B%E5%88%B0%CE%B5_eff%E4%B8%8B%E9%99%8D30%25%2C%E4%BB%85%E4%BB%8E%CE%B5_eff%E6%97%A0%E6%B3%95%E5%88%A4%E6%96%AD%E6%9D%A5%E6%BA%90%E3%80%82%E6%BD%AE%E6%B1%90%E5%8A%9B%E5%88%86%E6%9E%90-%E7%BB%8F%E6%B5%8E%E7%BB%B4%E5%BA%A6%CE%B5_econ%E4%B8%8B%E9%99%8D50%25%E4%BD%86%E7%A4%BE%E4%BA%A4%E7%BB%B4%E5%BA%A6.md)
+- [### \[#503｜认知等效原理验证 — 组织诊断：观测到ε_eff下降30%，仅从ε_eff无法判断来源。潮汐力分析：经济维度ε_econ下降50%但社交维度ε_social仅下降10%→非均匀衰减→C_exit锁定为主（曲率）\](docs/zh/cases/items/C-0503.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-51F92F115F24883C / ### \[#503｜认知等效原理验证 — 组织诊断：观测到ε_eff下降30%，仅从ε_eff无法判断来源。潮汐力分析：经济维度ε_econ下降50%但社交维度ε_social仅下降10%→非均匀衰减→C_exit锁定为主（曲率）\](docs/zh/cases/items/C-0503.md) / IMPLICIT-51F92F115F24883C
-  - 来源：`统一案例总表/0498-C-503-认知等效原理验证 — 组织诊断-观测到ε_eff下降30%,仅从ε_eff无法判断来源。潮汐力分析-经济维度ε_econ下降50%但社交维度.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
 - ['COGNITION': '关于认知、Agent 与行动的断言，哪些越过了事实边界？',](../../../tools/build_corpus_relation_graph.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-4317c293cdb997e2 / 'COGNITION': '关于认知、Agent 与行动的断言，哪些越过了事实边界？',
   - 来源：`tools/build_corpus_relation_graph.py`
   - 依赖：—；被引用：—
-- [**原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0474-C-476-%CE%A8%3D%CE%B9%C3%97P_exit%20%E2%80%94%20%E6%99%BA%E8%83%BD%E5%BA%A6%C3%97%E9%80%80%E5%87%BA%E6%A6%82%E7%8E%87%3D%E8%87%AA%E4%B8%BB%E6%84%8F%E8%AF%86%2C%E4%B9%98%E6%B3%95%E5%BD%92%E9%9B%B6%E5%BE%8B%E9%80%82%E7%94%A8.md)
+- [**原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-2948800CFB50244D / **原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD` / IMPLICIT-2948800CFB50244D
-  - 来源：`统一案例总表/0474-C-476-Ψ=ι×P_exit — 智能度×退出概率=自主意识,乘法归零律适用.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [**原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0475-C-477-%E6%97%A0%E6%99%BA%E8%83%BD%E6%97%A0%E6%84%8F%E8%AF%86%20%E2%80%94%20%CE%B9%3D0%E2%9F%B9%CE%A8%3D0%2C%E7%BA%AF1.md)
+- [**原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-980C0AF2004DA74B / **原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD` / IMPLICIT-980C0AF2004DA74B
-  - 来源：`统一案例总表/0475-C-477-无智能无意识 — ι=0⟹Ψ=0,纯1.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- \[#476｜Ψ=ι×P_exit — 智能度×退出概率=自主意识，乘法归零律适用 / Ψ=ι x P_exit - 智能度 x exit probability=自主意识, multiplication zero law适用\](docs/zh/cases/items/C-0476.md)](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0275-D239-%E6%99%BA%E8%83%BD%E5%BA%A6-%E6%84%8F%E8%AF%86%E5%87%BD%E6%95%B0%E8%BF%9E%E6%8E%A5%E5%AE%9A%E7%90%86.md)
+- [- \[#476｜Ψ=ι×P_exit — 智能度×退出概率=自主意识，乘法归零律适用 / Ψ=ι x P_exit - 智能度 x exit probability=自主意识, multiplication zero law适用\](docs/zh/cases/items/C-0476.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-A54284154129DEB5 / - \[#476｜Ψ=ι×P_exit — 智能度×退出概率=自主意识，乘法归零律适用 / Ψ=ι x P_exit - 智能度 x exit probability=自主意识, multiplication zero law适用\](docs/zh/cases/items/C-0476.md) / IMPLICIT-A54284154129DEB5 / IMPLICIT-37BCACA9BBC7B12F
-  - 来源：`统一函数总表/0275-D239-智能度-意识函数连接定理.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
 - [121C01: First Batch GLM-5.2 Max Semantic Review Report](../../ASSET-CARDS.md#asset-hr-933d6ba7d34f8014)
   - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
@@ -159,11 +159,81 @@
   - 可搜索名称：121Q13 Attention, Distribution, And Compression Report / 121Q13-attention-distribution-compression
   - 来源：`reports/architecture/121Q13-attention-distribution-compression.md`
   - 依赖：—；被引用：—
-- [\[#185｜糖域实验×认知螺旋\](docs/zh/cases/items/C-0185.md)](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0185-C-185-%E7%B3%96%E5%9F%9F%E5%AE%9E%E9%AA%8C%C3%97%E8%AE%A4%E7%9F%A5%E8%9E%BA%E6%97%8B.md)
+- [\[#175｜电力级联失效×认知平方衰减×AI共震——跨域同构\](docs/zh/cases/items/C-0175.md)](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-1d106191ddfbcdaf / \[#175｜电力级联失效×认知平方衰减×AI共震——跨域同构\](docs/zh/cases/items/C-0175.md)
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [\[#185｜糖域实验×认知螺旋\](docs/zh/cases/items/C-0185.md)](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-550ea3bef8fd5fb7 / \[#185｜糖域实验×认知螺旋\](docs/zh/cases/items/C-0185.md)
-  - 来源：`统一案例总表/0185-C-185-糖域实验×认知螺旋.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
+- [\[#445｜三阶段操作协议验证 — 个人职业转型：阶段1(ε >θC,转型成功,β小,可以激进拓展)\](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-a69ad9029ad02cca / \[#445｜三阶段操作协议验证 — 个人职业转型：阶段1(ε >θC,转型成功,β小,可以激进拓展)\](docs/z
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [\[#481｜认知叠加验证 — 专家vs通才：专家r_cross≈0.1（2条弱关联轨道），通才r_cross≈0.6（5条强关联轨道）。面对新问题通才5条轨道同时激活，专家1条轨道主导\](docs/zh/cases/items/C-0481](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-5f617b56925949c2 / \[#481｜认知叠加验证 — 专家vs通才：专家r_cross≈0.1（2条弱关联轨道），通才r_cross≈0.6（5条强关联轨道）。面对新问题通才5条轨道同时激活，专家1条轨道主导\](docs/zh/cases/items/C-0481
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [\[#486｜路径积分验证 — 创业决策：ℏ_eff=0.1时策略集中在最优路径附近（D118预测），ℏ_eff=0.8时策略分散在多条路径（非最优策略也有显著概率）。经验创业者ℏ_eff低（信息充分噪声小），新手ℏ_eff高\](docs/z](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-c88ef18b46a6afb1 / \[#486｜路径积分验证 — 创业决策：ℏ_eff=0.1时策略集中在最优路径附近（D118预测），ℏ_eff=0.8时策略分散在多条路径（非最优策略也有显著概率）。经验创业者ℏ_eff低（信息充分噪声小），新手ℏ_eff高\](docs/z
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D118；被引用：—
+- [\[#502｜认知时间膨胀验证 — 危机决策实验：ε高的决策者（专家）平均决策时间2分钟，ε低的决策者（新手）平均决策时间8分钟。同样事件，新手感知时间膨胀4倍=γ_cog≈4→ε₀/ε≈0.97\](docs/zh/cases/items/C](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-ebf01384a13faefa / \[#502｜认知时间膨胀验证 — 危机决策实验：ε高的决策者（专家）平均决策时间2分钟，ε低的决策者（新手）平均决策时间8分钟。同样事件，新手感知时间膨胀4倍=γ_cog≈4→ε₀/ε≈0.97\](docs/zh/cases/items/C
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [\[#503｜认知等效原理验证 — 组织诊断：观测到ε_eff下降30%，仅从ε_eff无法判断来源。潮汐力分析：经济维度ε_econ下降50%但社交维度ε_social仅下降10%→非均匀衰减→C_exit锁定为主（曲率）\](docs/zh](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-7f791a10e671b737 / \[#503｜认知等效原理验证 — 组织诊断：观测到ε_eff下降30%，仅从ε_eff无法判断来源。潮汐力分析：经济维度ε_econ下降50%但社交维度ε_social仅下降10%→非均匀衰减→C_exit锁定为主（曲率）\](docs/zh
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [\[#504｜认知空间曲率验证 — 社会比较：均匀社会（北欧）εᵢ标准差0.08→R_cog≈0→策略趋同；不平等社会（巴西）εᵢ标准差0.45→R_cog显著→策略分化→级联易发\](docs/zh/cases/items/C-0504.md](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-527f00530db888bc / \[#504｜认知空间曲率验证 — 社会比较：均匀社会（北欧）εᵢ标准差0.08→R_cog≈0→策略趋同；不平等社会（巴西）εᵢ标准差0.45→R_cog显著→策略分化→级联易发\](docs/zh/cases/items/C-0504.md
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [\[#505｜认知光锥验证 — 职业锁定：3维锁定（n_lock=3）的工程师v_max降低60%→5年可达状态减少75%→光锥严重收缩。解锁1维后v_max恢复40%→光锥扩大2.5倍 / 认知光锥验证 - 职业锁定: 3维锁定(n_loc](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-26477a75a87678c6 / \[#505｜认知光锥验证 — 职业锁定：3维锁定（n_lock=3）的工程师v_max降低60%→5年可达状态减少75%→光锥严重收缩。解锁1维后v_max恢复40%→光锥扩大2.5倍 / 认知光锥验证 - 职业锁定: 3维锁定(n_loc
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [\[#506｜认知黑洞验证 — 家暴受害者：4维锁定（经济/社交/心理/地理）→∏(1-σ)≈0.001→z_cog≈999→信号红移99.9%→外部几乎无法感知内部状态。解锁心理维度后z降至50→信号可部分逃逸\](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-bba82faaf5c4f2a5 / \[#506｜认知黑洞验证 — 家暴受害者：4维锁定（经济/社交/心理/地理）→∏(1-σ)≈0.001→z_cog≈999→信号红移99.9%→外部几乎无法感知内部状态。解锁心理维度后z降至50→信号可部分逃逸\](docs/zh/cases
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [\[#619｜大脑容量空间验证\](docs/zh/cases/items/C-0619.md)](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-0d184021e092bf74 / \[#619｜大脑容量空间验证\](docs/zh/cases/items/C-0619.md)
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [\[#97｜高维认知必然多轨\](docs/zh/cases/items/C-0097.md)](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-18cc2bc1fc3bf8cb / \[#97｜高维认知必然多轨\](docs/zh/cases/items/C-0097.md)
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [\[C-0694｜关联案例（道德自居-认知偏差）\](../../../data/foundation/migrations/legacy-table-migration.jsonl)](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-94d6e0e53e13f71e / \[C-0694｜关联案例（道德自居-认知偏差）\](../../../data/foundation/migrations/legacy-table-migration.jsonl)
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [\[D97｜高维认知必然多轨\](docs/zh/functions/items/D97.md)](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-6301121666ba4501 / \[D97｜高维认知必然多轨\](docs/zh/functions/items/D97.md)
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D97；被引用：—
+- [\[T30｜门控-路径积分同构与极小熵原理 / gate / path-integral isomorphism and minimum-entropy principle\](docs/zh/functions/items/T30.md)](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-436ab05b21c267b3 / \[T30｜门控-路径积分同构与极小熵原理 / gate / path-integral isomorphism and minimum-entropy principle\](docs/zh/functions/items/T30.md)
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：T30；被引用：—
 - [\[x\] 已理解 P1 机器数据体系（七类数据集 + 校验器 + 约束）](../../../outputs/audit/agent-project-understanding-20260708.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-3340a70eae44f7a4 / \[x\] 已理解 P1 机器数据体系（七类数据集 + 校验器 + 约束）
@@ -234,9 +304,9 @@
   - 可搜索名称：NFC-1620b4d7a9f111f4 / `STATE-CHANGELOG.md` 是 AI 优先的状态增量导航；它必须与 canonical current-state、registry、claim 和 evidence 资产交叉核对，不能成为第二套真相源。
   - 来源：`docs/AGENT-GUIDE.md`
   - 依赖：—；被引用：—
-- [`统一案例总表/`](../../../docs/agent-trigger-phrases-20260708.md)
+- [`已迁移的历史案例来源/`](../../../docs/agent-trigger-phrases-20260708.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-10f35dbc0f4da141 / `统一案例总表/`
+  - 可搜索名称：NFC-10f35dbc0f4da141 / `已迁移的历史案例来源/`
   - 来源：`docs/agent-trigger-phrases-20260708.md`
   - 依赖：—；被引用：—
 - [A Universal Transformer repeatedly applies the same self-attention and transition parameters across depth, updating all](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
@@ -244,10 +314,10 @@
   - 可搜索名称：NFC-72b6676e8065ca7c / A Universal Transformer repeatedly applies the same self-attention and transition parameters across depth, updating all
   - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
   - 依赖：—；被引用：—
-- [A1-A3=认知空间投影](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0642-C-647-%E9%80%80%E5%87%BA%E6%9D%83%E7%A9%BA%E9%97%B4%E6%A1%88%E4%BE%8B27.md)
+- [A1-A3=认知空间投影](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-94493c40991e288b / A1-A3=认知空间投影
-  - 来源：`统一案例总表/0642-C-647-退出权空间案例27.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：A1, A3；被引用：—
 - [Add attention, distribution, and compression controls as a non-truth overlay.](../../../data/architecture/distribution/121q13-hypothesis-distribution.json)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
@@ -314,10 +384,10 @@
   - 可搜索名称：NFC-06630c98dc87acb2 / Analyzer/Builder/Creator agents generate and rewrite specifications, but no machine-enforced compiler, code artifact or
   - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
   - 依赖：—；被引用：—
-- [APP不Agent化必死：d_relative(t)=d_得到大脑(t)/d_竞品(t)单调递增。竞品d在降（Agent能力让退出代价趋零），得到大脑d不变→穿过θ_d时P_forward归零。内容优势=f(P_infra)≈0的乘法归零](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0125-C-125-%E5%A4%A7%E8%84%91%E8%BF%9B%E5%8C%96%E4%B8%BAAgent.md)
+- [APP不Agent化必死：d_relative(t)=d_得到大脑(t)/d_竞品(t)单调递增。竞品d在降（Agent能力让退出代价趋零），得到大脑d不变→穿过θ_d时P_forward归零。内容优势=f(P_infra)≈0的乘法归零](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-F74294207589ACB3 / APP不Agent化必死：d_relative(t)=d_得到大脑(t)/d_竞品(t)单调递增。竞品d在降（Agent能力让退出代价趋零），得到大脑d不变→穿过θ_d时P_forward归零。内容优势=f(P_infra)≈0的乘法归零 / IMPLICIT-F74294207589ACB3
-  - 来源：`统一案例总表/0125-C-125-大脑进化为Agent.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
 - [Attention And Attractor Control Plane](../../ASSET-CARDS.md#asset-hr-9be719cb6ef0fd88)
   - 类型/状态：`RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
@@ -369,6 +439,11 @@
   - 可搜索名称：NFC-f50425306c08b0f0 / d = _good_decision(provenance_verified=True)
   - 来源：`tests/test_publication_gate_fail_closed.py`
   - 依赖：—；被引用：—
+- [D244（自主意识涌现的临界条件）描述的是 `Ψ = ι × P_exit > 0` 的意识涌现阈值，与「指标化/量化替代价值」无关，二者不同构、无重叠。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-80e50a38e08df988 / D244（自主意识涌现的临界条件）描述的是 `Ψ = ι × P_exit > 0` 的意识涌现阈值，与「指标化/量化替代价值」无关，二者不同构、无重叠。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D244；被引用：—
 - [data/ 七类数据集（json+csv 成对，schema 在 data/schemas/）**](../../../outputs/audit/agent-project-understanding-20260708.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-cb627e9edd814ab3 / data/ 七类数据集（json+csv 成对，schema 在 data/schemas/）**
@@ -646,7 +721,7 @@
   - 依赖：—；被引用：—
 - [delta: 把仓库人类入口迁到 `.github/README.md` 并收敛为五个首页部件；根目录归一为 `.github/`、`.gitignore`、`AGENTS.md`、`LICENSE`、`ignition/` 五个条目；新增](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-2c06cd5c72061b0d / delta: 把仓库人类入口迁到 `.github/README.md` 并收敛为五个首页部件；根目录归一为 `.github/`、`.gitignore`、`AGENTS.md`、`LICENSE`、`ignition/` 五个条目；新增
+  - 可搜索名称：NFC-0290c2fbd3445c44 / delta: 把仓库人类入口迁到 `.github/README.md` 并收敛为五个首页部件；根目录归一为 `.github/`、`.gitignore`、`AGENTS.md`、`LICENSE`、`ignition/` 五个条目；新增
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
 - [Distribution And Decision Collapse Control Plane](../../ASSET-CARDS.md#asset-hr-c322de3c7799a555)
@@ -659,9 +734,9 @@
   - 可搜索名称：NFC-a71e24dfb9b9dbbb / Distribution and decision collapse control: records samples, hypothesis distributions, and action collapse without promo
   - 来源：`reports/architecture/121Q13-attention-distribution-compression.md`
   - 依赖：—；被引用：—
-- [Domain layer（案例、对象、事件）→ 统一案例总表（790 条）](../../../outputs/audit/agent-project-understanding-20260708.md)
+- [Domain layer（案例、对象、事件）→ 历史案例来源（790 条）](../../../outputs/audit/agent-project-understanding-20260708.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-ab0af43d35333449 / Domain layer（案例、对象、事件）→ 统一案例总表（790 条）
+  - 可搜索名称：NFC-ab0af43d35333449 / Domain layer（案例、对象、事件）→ 历史案例来源（790 条）
   - 来源：`outputs/audit/agent-project-understanding-20260708.md`
   - 依赖：—；被引用：—
 - [Duplicate, complementary and same-task notions drive discard/merge/utility decisions, but no behavioral equivalence, com](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
@@ -714,15 +789,20 @@
   - 可搜索名称：IMPLICIT-49EA9E3300913051 / F_plant_consciousness := ∫(subjective_experience × self_awareness × meta_cognition) / neural_complexity（值≈0） / IMPLICIT-49EA9E3300913051 / IMPLICIT-8D40BA061B261B4D
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：—；被引用：—
-- [F_plant_consciousness := ∫(subjective_experience × self_awareness × meta_cognition) / neural_complexity（值≈0）](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0554-T55-%E6%A4%8D%E7%89%A9%E6%84%8F%E8%AF%86%E5%87%BD%E6%95%B0.md)
+- [F_plant_consciousness := ∫(subjective_experience × self_awareness × meta_cognition) / neural_complexity（值≈0）](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-8D40BA061B261B4D / F_plant_consciousness := ∫(subjective_experience × self_awareness × meta_cognition) / neural_complexity（值≈0） / IMPLICIT-8D40BA061B261B4D / IMPLICIT-49EA9E3300913051
-  - 来源：`统一函数总表/0554-T55-植物意识函数.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
 - [F_plant_consciousness := ∫(subjective_experience × self_awareness × meta_cognition) / neural_complexity（值≈0）](../../../reports/math-foundation/pilot-formal-audit-20260712.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-90D11DC439ED1B86 / F_plant_consciousness := ∫(subjective_experience × self_awareness × meta_cognition) / neural_complexity（值≈0） / IMPLICIT-90D11DC439ED1B86 / IMPLICIT-49EA9E3300913051
   - 来源：`reports/math-foundation/pilot-formal-audit-20260712.md`
+  - 依赖：—；被引用：—
+- [F_swarm_intelligence := Σ(agent_i × local_rule × global_emergence) / interaction_topology](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-8951f83ad4613fcf / F_swarm_intelligence := Σ(agent_i × local_rule × global_emergence) / interaction_topology
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
 - [FAKE = \["codex", "gpt", "agent", "openclaw", "qclaw", "claude"\]](../../../tests/test_canonical.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
@@ -814,10 +894,10 @@
   - 可搜索名称：IMPLICIT-2E3D6591CF8F1454 / interaction_topology := ∫_{Ω} Σ_{i=1}^{N} agent_i × local_rule_i × global_emergence dΩ / IMPLICIT-2E3D6591CF8F1454 / IMPLICIT-9244195833C065A0
   - 来源：`docs/phi_meta_law.md`
   - 依赖：—；被引用：—
-- [interaction_topology := ∫_{Ω} Σ_{i=1}^{N} agent_i × local_rule_i × global_emergence dΩ](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0001-%CE%A8%E2%82%80%E5%85%83%E5%87%BD%E6%95%B0%E5%AE%8C%E6%95%B4%E6%95%B0%E5%AD%A6%E5%AE%9A%E4%B9%89.md)
+- [interaction_topology := ∫_{Ω} Σ_{i=1}^{N} agent_i × local_rule_i × global_emergence dΩ](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-9244195833C065A0 / interaction_topology := ∫_{Ω} Σ_{i=1}^{N} agent_i × local_rule_i × global_emergence dΩ / IMPLICIT-9244195833C065A0 / IMPLICIT-2E3D6591CF8F1454
-  - 来源：`统一函数总表/0001-Ψ₀元函数完整数学定义.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
 - [language_conditioned_attention_encoding_and_thought_organization_may_vary_by_task; no_strong_determinism; no_truth_upgra](../../../data/language-thought/manifest.json)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
@@ -829,25 +909,25 @@
   - 可搜索名称：Licensing Model Candidate / licensing-model-candidate
   - 来源：`docs/governance/licensing-model-candidate.md`
   - 依赖：—；被引用：—
-- [link: "统一案例总表/0689-C-0694-关联案例（道德自居-认知偏差）.md"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0689-C-0694-%E5%85%B3%E8%81%94%E6%A1%88%E4%BE%8B%EF%BC%88%E9%81%93%E5%BE%B7%E8%87%AA%E5%B1%85-%E8%AE%A4%E7%9F%A5%E5%81%8F%E5%B7%AE%EF%BC%89.md)
+- [link: "已迁移的历史案例来源/0689-C-0694-关联案例（道德自居-认知偏差）.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-46815c4bc92bb9af / link: "统一案例总表/0689-C-0694-关联案例（道德自居-认知偏差）.md"
-  - 来源：`统一案例总表/0689-C-0694-关联案例（道德自居-认知偏差）.md`
+  - 可搜索名称：NFC-46815c4bc92bb9af / link: "已迁移的历史案例来源/0689-C-0694-关联案例（道德自居-认知偏差）.md"
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [link: "统一案例总表/0691-C-0696-轻微认知偏差积累.md"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0691-C-0696-%E8%BD%BB%E5%BE%AE%E8%AE%A4%E7%9F%A5%E5%81%8F%E5%B7%AE%E7%A7%AF%E7%B4%AF.md)
+- [link: "已迁移的历史案例来源/0691-C-0696-轻微认知偏差积累.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-ec29c1eeca4ce40e / link: "统一案例总表/0691-C-0696-轻微认知偏差积累.md"
-  - 来源：`统一案例总表/0691-C-0696-轻微认知偏差积累.md`
+  - 可搜索名称：NFC-ec29c1eeca4ce40e / link: "已迁移的历史案例来源/0691-C-0696-轻微认知偏差积累.md"
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [link: "统一案例总表/0708-C-0713-技术学习的认知结构重构.md"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0708-C-0713-%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0%E7%9A%84%E8%AE%A4%E7%9F%A5%E7%BB%93%E6%9E%84%E9%87%8D%E6%9E%84.md)
+- [link: "已迁移的历史案例来源/0708-C-0713-技术学习的认知结构重构.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-6962cf71de78a885 / link: "统一案例总表/0708-C-0713-技术学习的认知结构重构.md"
-  - 来源：`统一案例总表/0708-C-0713-技术学习的认知结构重构.md`
+  - 可搜索名称：NFC-6962cf71de78a885 / link: "已迁移的历史案例来源/0708-C-0713-技术学习的认知结构重构.md"
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [link: "统一案例总表/0718-C-0723-录音卡成为认知流捕获器.md"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0718-C-0723-%E5%BD%95%E9%9F%B3%E5%8D%A1%E6%88%90%E4%B8%BA%E8%AE%A4%E7%9F%A5%E6%B5%81%E6%8D%95%E8%8E%B7%E5%99%A8.md)
+- [link: "已迁移的历史案例来源/0718-C-0723-录音卡成为认知流捕获器.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-523c960917edb9ce / link: "统一案例总表/0718-C-0723-录音卡成为认知流捕获器.md"
-  - 来源：`统一案例总表/0718-C-0723-录音卡成为认知流捕获器.md`
+  - 可搜索名称：NFC-523c960917edb9ce / link: "已迁移的历史案例来源/0718-C-0723-录音卡成为认知流捕获器.md"
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
 - [Map position, visual proximity, evolution stage, dependency, and sourcing decision do not prove fact, isomorphism, natur](../../../reports/releases/121Q15-q12-q14-cumulative-preflight.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
@@ -998,6 +1078,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-3df3db0092eea1e2 / Q28 的 `0.1.0` 因肉身硬门槛被拒绝；121Q28R `0.2.0` 修复入口但未完成 whole-project integration；121Q28S `0.3.0` 完成同源认知、全项目对应与双向反馈候选。121Q28T 将
   - 来源：`docs/VERSIONING.md`
+  - 依赖：—；被引用：—
+- [R_feedback：育儿现实、健康、关系破裂等外部反馈被接收为「计划已失效」证据的程度。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-39996f979675fe97 / R_feedback：育儿现实、健康、关系破裂等外部反馈被接收为「计划已失效」证据的程度。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
 - [rationale="The source supplies an ordered gate and decision table but no common numeric type for the six factors, so ALG](../../../tools/foundation/verify_079.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -1179,90 +1264,100 @@
   - 可搜索名称：NFC-63fcfbc4e3b1d2d5 / The ranking is a decision-support projection, not truth and not owner authorization.
   - 来源：`tools/iteration_planner/emit_outputs.py`
   - 依赖：—；被引用：—
-- [title: "Ψ=ι×P_exit — 智能度×退出概率=自主意识，乘法归零律适用 / Ψ=ι x P_exit - 智能度 x exit probability=自主意识, multiplication zero law适用"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0474-C-476-%CE%A8%3D%CE%B9%C3%97P_exit%20%E2%80%94%20%E6%99%BA%E8%83%BD%E5%BA%A6%C3%97%E9%80%80%E5%87%BA%E6%A6%82%E7%8E%87%3D%E8%87%AA%E4%B8%BB%E6%84%8F%E8%AF%86%2C%E4%B9%98%E6%B3%95%E5%BD%92%E9%9B%B6%E5%BE%8B%E9%80%82%E7%94%A8.md)
+- [title: "Ψ=ι×P_exit — 智能度×退出概率=自主意识，乘法归零律适用 / Ψ=ι x P_exit - 智能度 x exit probability=自主意识, multiplication zero law适用"](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-34C556C9FFC62BCE / title: "Ψ=ι×P_exit — 智能度×退出概率=自主意识，乘法归零律适用 / Ψ=ι x P_exit - 智能度 x exit probability=自主意识, multiplication zero law适用" / IMPLICIT-34C556C9FFC62BCE
-  - 来源：`统一案例总表/0474-C-476-Ψ=ι×P_exit — 智能度×退出概率=自主意识,乘法归零律适用.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [title: "三阶段操作协议验证 — 个人职业转型：阶段1(ε >θC,转型成功,β小,可以激进拓展)"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0444-C-445-%E4%B8%89%E9%98%B6%E6%AE%B5%E6%93%8D%E4%BD%9C%E5%8D%8F%E8%AE%AE%E9%AA%8C%E8%AF%81%20%E2%80%94%20%E4%B8%AA%E4%BA%BA%E8%81%8C%E4%B8%9A%E8%BD%AC%E5%9E%8B-%E9%98%B6%E6%AE%B51%28%CE%B5-%CE%B8C%2C%E4%B8%8D%E6%BB%A1%E4%BD%86%E6%B2%A1%E8%A1%8C%E5%8A%A8%E5%8A%9B%2C%CE%B2%E5%B0%8F%2C%E5%8F%AF%E4%BB%A5%E6%8E%A2%E7%B4%A2%E5%90%84%E7%A7%8D%E6%96%B9%E5%90%91%29%3B%E9%98%B6%E6%AE%B52%28%CE%B5%E2%89%88%CE%B8C%2C%E7%A7%AF%E7%B4%AF%E5%88%B0%E4%B8%B4%E7%95%8C%E7%82%B9%2C%CE%B2%E5%A4%A7%2C%E5%BF%85%E9%A1%BB.md)
+- [title: "三阶段操作协议验证 — 个人职业转型：阶段1(ε >θC,转型成功,β小,可以激进拓展)"](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-B00AD01AD1BE4FE8 / title: "三阶段操作协议验证 — 个人职业转型：阶段1(ε >θC,转型成功,β小,可以激进拓展)" / IMPLICIT-B00AD01AD1BE4FE8
-  - 来源：`统一案例总表/0444-C-445-三阶段操作协议验证 — 个人职业转型-阶段1(ε-θC,不满但没行动力,β小,可以探索各种方向);阶段2(ε≈θC,积累到临界点,β大,必须.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [title: "三阶段操作协议验证 — 个人职业转型：阶段1(ε >θC,转型成功,β小,可以激进拓展)"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0444-C-445-%E4%B8%89%E9%98%B6%E6%AE%B5%E6%93%8D%E4%BD%9C%E5%8D%8F%E8%AE%AE%E9%AA%8C%E8%AF%81%20%E2%80%94%20%E4%B8%AA%E4%BA%BA%E8%81%8C%E4%B8%9A%E8%BD%AC%E5%9E%8B-%E9%98%B6%E6%AE%B51%28%CE%B5-%CE%B8C%2C%E4%B8%8D%E6%BB%A1%E4%BD%86%E6%B2%A1%E8%A1%8C%E5%8A%A8%E5%8A%9B%2C%CE%B2%E5%B0%8F%2C%E5%8F%AF%E4%BB%A5%E6%8E%A2%E7%B4%A2%E5%90%84%E7%A7%8D%E6%96%B9%E5%90%91%29%3B%E9%98%B6%E6%AE%B52%28%CE%B5%E2%89%88%CE%B8C%2C%E7%A7%AF%E7%B4%AF%E5%88%B0%E4%B8%B4%E7%95%8C%E7%82%B9%2C%CE%B2%E5%A4%A7%2C%E5%BF%85%E9%A1%BB.md)
+- [title: "三阶段操作协议验证 — 个人职业转型：阶段1(ε >θC,转型成功,β小,可以激进拓展)"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-48ef5f5f1fa5e0cb / title: "三阶段操作协议验证 — 个人职业转型：阶段1(ε >θC,转型成功,β小,可以激进拓展)"
-  - 来源：`统一案例总表/0444-C-445-三阶段操作协议验证 — 个人职业转型-阶段1(ε-θC,不满但没行动力,β小,可以探索各种方向);阶段2(ε≈θC,积累到临界点,β大,必须.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [title: "大脑容量空间验证"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0614-C-619-%E5%A4%A7%E8%84%91%E5%AE%B9%E9%87%8F%E7%A9%BA%E9%97%B4%E9%AA%8C%E8%AF%81.md)
+- [title: "大脑容量空间验证"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-234438bbee984ba0 / title: "大脑容量空间验证"
-  - 来源：`统一案例总表/0614-C-619-大脑容量空间验证.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [title: "电力级联失效×认知平方衰减×AI共震——跨域同构"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0175-C-175-%E7%94%B5%E5%8A%9B%E7%BA%A7%E8%81%94%E5%A4%B1%E6%95%88%C3%97%E8%AE%A4%E7%9F%A5%E5%B9%B3%E6%96%B9%E8%A1%B0%E5%87%8F%C3%97AI%E5%85%B1%E9%9C%87%E2%80%94%E2%80%94%E8%B7%A8%E5%9F%9F%E5%90%8C%E6%9E%84.md)
+- [title: "电力级联失效×认知平方衰减×AI共震——跨域同构"](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-39BC40E04E0979F1 / title: "电力级联失效×认知平方衰减×AI共震——跨域同构" / IMPLICIT-39BC40E04E0979F1
-  - 来源：`统一案例总表/0175-C-175-电力级联失效×认知平方衰减×AI共震——跨域同构.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [title: "电力级联失效×认知平方衰减×AI共震——跨域同构"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0175-C-175-%E7%94%B5%E5%8A%9B%E7%BA%A7%E8%81%94%E5%A4%B1%E6%95%88%C3%97%E8%AE%A4%E7%9F%A5%E5%B9%B3%E6%96%B9%E8%A1%B0%E5%87%8F%C3%97AI%E5%85%B1%E9%9C%87%E2%80%94%E2%80%94%E8%B7%A8%E5%9F%9F%E5%90%8C%E6%9E%84.md)
+- [title: "电力级联失效×认知平方衰减×AI共震——跨域同构"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-b834eca381c438b6 / title: "电力级联失效×认知平方衰减×AI共震——跨域同构"
-  - 来源：`统一案例总表/0175-C-175-电力级联失效×认知平方衰减×AI共震——跨域同构.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [title: "糖域实验×认知螺旋"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0185-C-185-%E7%B3%96%E5%9F%9F%E5%AE%9E%E9%AA%8C%C3%97%E8%AE%A4%E7%9F%A5%E8%9E%BA%E6%97%8B.md)
+- [title: "糖域实验×认知螺旋"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-9c369cf1db765e44 / title: "糖域实验×认知螺旋"
-  - 来源：`统一案例总表/0185-C-185-糖域实验×认知螺旋.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [title: "认知光锥验证 — 职业锁定：3维锁定（n_lock=3）的工程师v_max降低60%→5年可达状态减少75%→光锥严重收缩。解锁1维后v_max恢复40%→光锥扩大2.5倍 / 认知光锥验证 - 职业锁定: 3维锁定(n_l](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0500-C-505-%E8%AE%A4%E7%9F%A5%E5%85%89%E9%94%A5%E9%AA%8C%E8%AF%81%20%E2%80%94%20%E8%81%8C%E4%B8%9A%E9%94%81%E5%AE%9A-3%E7%BB%B4%E9%94%81%E5%AE%9A%28n_lock%3D3%29%E7%9A%84%E5%B7%A5%E7%A8%8B%E5%B8%88v_max%E9%99%8D%E4%BD%8E60%25%E2%86%925%E5%B9%B4%E5%8F%AF%E8%BE%BE%E7%8A%B6%E6%80%81%E5%87%8F%E5%B0%9175%25%E2%86%92%E5%85%89%E9%94%A5%E4%B8%A5%E9%87%8D%E6%94%B6%E7%BC%A9%E3%80%82%E8%A7%A3%E9%94%811%E7%BB%B4%E5%90%8Ev_m.md)
+- [title: "认知光锥验证 — 职业锁定：3维锁定（n_lock=3）的工程师v_max降低60%→5年可达状态减少75%→光锥严重收缩。解锁1维后v_max恢复40%→光锥扩大2.5倍 / 认知光锥验证 - 职业锁定: 3维锁定(n_l](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-4fb29ac8772547e9 / title: "认知光锥验证 — 职业锁定：3维锁定（n_lock=3）的工程师v_max降低60%→5年可达状态减少75%→光锥严重收缩。解锁1维后v_max恢复40%→光锥扩大2.5倍 / 认知光锥验证 - 职业锁定: 3维锁定(n_l
-  - 来源：`统一案例总表/0500-C-505-认知光锥验证 — 职业锁定-3维锁定(n_lock=3)的工程师v_max降低60%→5年可达状态减少75%→光锥严重收缩。解锁1维后v_m.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [title: "认知叠加验证 — 专家vs通才：专家r_cross≈0.1（2条弱关联轨道），通才r_cross≈0.6（5条强关联轨道）。面对新问题通才5条轨道同时激活，专家1条轨道主导"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0479-C-481-%E8%AE%A4%E7%9F%A5%E5%8F%A0%E5%8A%A0%E9%AA%8C%E8%AF%81%20%E2%80%94%20%E4%B8%93%E5%AE%B6vs%E9%80%9A%E6%89%8D-%E4%B8%93%E5%AE%B6r_cross%E2%89%880.1%282%E6%9D%A1%E5%BC%B1%E5%85%B3%E8%81%94%E8%BD%A8%E9%81%93%29%2C%E9%80%9A%E6%89%8Dr_cross%E2%89%880.6%285%E6%9D%A1%E5%BC%BA%E5%85%B3%E8%81%94%E8%BD%A8%E9%81%93%29%E3%80%82%E9%9D%A2%E5%AF%B9%E6%96%B0%E9%97%AE%E9%A2%98%E9%80%9A%E6%89%8D5.md)
+- [title: "认知叠加验证 — 专家vs通才：专家r_cross≈0.1（2条弱关联轨道），通才r_cross≈0.6（5条强关联轨道）。面对新问题通才5条轨道同时激活，专家1条轨道主导"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-4273da11a606e196 / title: "认知叠加验证 — 专家vs通才：专家r_cross≈0.1（2条弱关联轨道），通才r_cross≈0.6（5条强关联轨道）。面对新问题通才5条轨道同时激活，专家1条轨道主导"
-  - 来源：`统一案例总表/0479-C-481-认知叠加验证 — 专家vs通才-专家r_cross≈0.1(2条弱关联轨道),通才r_cross≈0.6(5条强关联轨道)。面对新问题通才5.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [title: "认知时间膨胀验证 — 危机决策实验：ε高的决策者（专家）平均决策时间2分钟，ε低的决策者（新手）平均决策时间8分钟。同样事件，新手感知时间膨胀4倍=γ_cog≈4→ε₀/ε≈0.97"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0497-C-502-%E8%AE%A4%E7%9F%A5%E6%97%B6%E9%97%B4%E8%86%A8%E8%83%80%E9%AA%8C%E8%AF%81%20%E2%80%94%20%E5%8D%B1%E6%9C%BA%E5%86%B3%E7%AD%96%E5%AE%9E%E9%AA%8C-%CE%B5%E9%AB%98%E7%9A%84%E5%86%B3%E7%AD%96%E8%80%85%28%E4%B8%93%E5%AE%B6%29%E5%B9%B3%E5%9D%87%E5%86%B3%E7%AD%96%E6%97%B6%E9%97%B42%E5%88%86%E9%92%9F%2C%CE%B5%E4%BD%8E%E7%9A%84%E5%86%B3%E7%AD%96%E8%80%85%28%E6%96%B0%E6%89%8B%29%E5%B9%B3%E5%9D%87%E5%86%B3%E7%AD%96%E6%97%B6%E9%97%B48%E5%88%86%E9%92%9F%E3%80%82%E5%90%8C%E6%A0%B7%E4%BA%8B%E4%BB%B6%2C%E6%96%B0%E6%89%8B%E6%84%9F%E7%9F%A5%E6%97%B6%E9%97%B4%E8%86%A8.md)
+- [title: "认知时间膨胀验证 — 危机决策实验：ε高的决策者（专家）平均决策时间2分钟，ε低的决策者（新手）平均决策时间8分钟。同样事件，新手感知时间膨胀4倍=γ_cog≈4→ε₀/ε≈0.97"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-e87de069c3c000d1 / title: "认知时间膨胀验证 — 危机决策实验：ε高的决策者（专家）平均决策时间2分钟，ε低的决策者（新手）平均决策时间8分钟。同样事件，新手感知时间膨胀4倍=γ_cog≈4→ε₀/ε≈0.97"
-  - 来源：`统一案例总表/0497-C-502-认知时间膨胀验证 — 危机决策实验-ε高的决策者(专家)平均决策时间2分钟,ε低的决策者(新手)平均决策时间8分钟。同样事件,新手感知时间膨.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [title: "认知空间曲率验证 — 社会比较：均匀社会（北欧）εᵢ标准差0.08→R_cog≈0→策略趋同；不平等社会（巴西）εᵢ标准差0.45→R_cog显著→策略分化→级联易发"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0499-C-504-%E8%AE%A4%E7%9F%A5%E7%A9%BA%E9%97%B4%E6%9B%B2%E7%8E%87%E9%AA%8C%E8%AF%81%20%E2%80%94%20%E7%A4%BE%E4%BC%9A%E6%AF%94%E8%BE%83-%E5%9D%87%E5%8C%80%E7%A4%BE%E4%BC%9A%28%E5%8C%97%E6%AC%A7%29%CE%B5i%E6%A0%87%E5%87%86%E5%B7%AE0.08%E2%86%92R_cog%E2%89%880%E2%86%92%E7%AD%96%E7%95%A5%E8%B6%8B%E5%90%8C%3B%E4%B8%8D%E5%B9%B3%E7%AD%89%E7%A4%BE%E4%BC%9A%28%E5%B7%B4%E8%A5%BF%29%CE%B5i%E6%A0%87%E5%87%86%E5%B7%AE0.45%E2%86%92R_co.md)
+- [title: "认知空间曲率验证 — 社会比较：均匀社会（北欧）εᵢ标准差0.08→R_cog≈0→策略趋同；不平等社会（巴西）εᵢ标准差0.45→R_cog显著→策略分化→级联易发"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-786e1a83cd47b2c0 / title: "认知空间曲率验证 — 社会比较：均匀社会（北欧）εᵢ标准差0.08→R_cog≈0→策略趋同；不平等社会（巴西）εᵢ标准差0.45→R_cog显著→策略分化→级联易发"
-  - 来源：`统一案例总表/0499-C-504-认知空间曲率验证 — 社会比较-均匀社会(北欧)εi标准差0.08→R_cog≈0→策略趋同;不平等社会(巴西)εi标准差0.45→R_co.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [title: "认知等效原理验证 — 组织诊断：观测到ε_eff下降30%，仅从ε_eff无法判断来源。潮汐力分析：经济维度ε_econ下降50%但社交维度ε_social仅下降10%→非均匀衰减→C_exit锁定为主（曲率）"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0498-C-503-%E8%AE%A4%E7%9F%A5%E7%AD%89%E6%95%88%E5%8E%9F%E7%90%86%E9%AA%8C%E8%AF%81%20%E2%80%94%20%E7%BB%84%E7%BB%87%E8%AF%8A%E6%96%AD-%E8%A7%82%E6%B5%8B%E5%88%B0%CE%B5_eff%E4%B8%8B%E9%99%8D30%25%2C%E4%BB%85%E4%BB%8E%CE%B5_eff%E6%97%A0%E6%B3%95%E5%88%A4%E6%96%AD%E6%9D%A5%E6%BA%90%E3%80%82%E6%BD%AE%E6%B1%90%E5%8A%9B%E5%88%86%E6%9E%90-%E7%BB%8F%E6%B5%8E%E7%BB%B4%E5%BA%A6%CE%B5_econ%E4%B8%8B%E9%99%8D50%25%E4%BD%86%E7%A4%BE%E4%BA%A4%E7%BB%B4%E5%BA%A6.md)
+- [title: "认知等效原理验证 — 组织诊断：观测到ε_eff下降30%，仅从ε_eff无法判断来源。潮汐力分析：经济维度ε_econ下降50%但社交维度ε_social仅下降10%→非均匀衰减→C_exit锁定为主（曲率）"](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-89853AEF150F6DBC / title: "认知等效原理验证 — 组织诊断：观测到ε_eff下降30%，仅从ε_eff无法判断来源。潮汐力分析：经济维度ε_econ下降50%但社交维度ε_social仅下降10%→非均匀衰减→C_exit锁定为主（曲率）" / IMPLICIT-89853AEF150F6DBC
-  - 来源：`统一案例总表/0498-C-503-认知等效原理验证 — 组织诊断-观测到ε_eff下降30%,仅从ε_eff无法判断来源。潮汐力分析-经济维度ε_econ下降50%但社交维度.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [title: "认知等效原理验证 — 组织诊断：观测到ε_eff下降30%，仅从ε_eff无法判断来源。潮汐力分析：经济维度ε_econ下降50%但社交维度ε_social仅下降10%→非均匀衰减→C_exit锁定为主（曲率）"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0498-C-503-%E8%AE%A4%E7%9F%A5%E7%AD%89%E6%95%88%E5%8E%9F%E7%90%86%E9%AA%8C%E8%AF%81%20%E2%80%94%20%E7%BB%84%E7%BB%87%E8%AF%8A%E6%96%AD-%E8%A7%82%E6%B5%8B%E5%88%B0%CE%B5_eff%E4%B8%8B%E9%99%8D30%25%2C%E4%BB%85%E4%BB%8E%CE%B5_eff%E6%97%A0%E6%B3%95%E5%88%A4%E6%96%AD%E6%9D%A5%E6%BA%90%E3%80%82%E6%BD%AE%E6%B1%90%E5%8A%9B%E5%88%86%E6%9E%90-%E7%BB%8F%E6%B5%8E%E7%BB%B4%E5%BA%A6%CE%B5_econ%E4%B8%8B%E9%99%8D50%25%E4%BD%86%E7%A4%BE%E4%BA%A4%E7%BB%B4%E5%BA%A6.md)
+- [title: "认知等效原理验证 — 组织诊断：观测到ε_eff下降30%，仅从ε_eff无法判断来源。潮汐力分析：经济维度ε_econ下降50%但社交维度ε_social仅下降10%→非均匀衰减→C_exit锁定为主（曲率）"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-7aa712b7abac888b / title: "认知等效原理验证 — 组织诊断：观测到ε_eff下降30%，仅从ε_eff无法判断来源。潮汐力分析：经济维度ε_econ下降50%但社交维度ε_social仅下降10%→非均匀衰减→C_exit锁定为主（曲率）"
-  - 来源：`统一案例总表/0498-C-503-认知等效原理验证 — 组织诊断-观测到ε_eff下降30%,仅从ε_eff无法判断来源。潮汐力分析-经济维度ε_econ下降50%但社交维度.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [title: "认知黑洞验证 — 家暴受害者：4维锁定（经济/社交/心理/地理）→∏(1-σ)≈0.001→z_cog≈999→信号红移99.9%→外部几乎无法感知内部状态。解锁心理维度后z降至50→信号可部分逃逸"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0501-C-506-%E8%AE%A4%E7%9F%A5%E9%BB%91%E6%B4%9E%E9%AA%8C%E8%AF%81%20%E2%80%94%20%E5%AE%B6%E6%9A%B4%E5%8F%97%E5%AE%B3%E8%80%85-4%E7%BB%B4%E9%94%81%E5%AE%9A%28%E7%BB%8F%E6%B5%8E.md)
+- [title: "认知黑洞验证 — 家暴受害者：4维锁定（经济/社交/心理/地理）→∏(1-σ)≈0.001→z_cog≈999→信号红移99.9%→外部几乎无法感知内部状态。解锁心理维度后z降至50→信号可部分逃逸"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-5a420550fc0c408f / title: "认知黑洞验证 — 家暴受害者：4维锁定（经济/社交/心理/地理）→∏(1-σ)≈0.001→z_cog≈999→信号红移99.9%→外部几乎无法感知内部状态。解锁心理维度后z降至50→信号可部分逃逸"
-  - 来源：`统一案例总表/0501-C-506-认知黑洞验证 — 家暴受害者-4维锁定(经济.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [title: "路径积分验证 — 创业决策：ℏ_eff=0.1时策略集中在最优路径附近（D118预测），ℏ_eff=0.8时策略分散在多条路径（非最优策略也有显著概率）。经验创业者ℏ_eff低（信息充分噪声小），新手ℏ_eff高"](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0484-C-486-%E8%B7%AF%E5%BE%84%E7%A7%AF%E5%88%86%E9%AA%8C%E8%AF%81%20%E2%80%94%20%E5%88%9B%E4%B8%9A%E5%86%B3%E7%AD%96-%C4%A7_eff%3D0.1%E6%97%B6%E7%AD%96%E7%95%A5%E9%9B%86%E4%B8%AD%E5%9C%A8%E6%9C%80%E4%BC%98%E8%B7%AF%E5%BE%84%E9%99%84%E8%BF%91%28D118%E9%A2%84%E6%B5%8B%29%2C%C4%A7_eff%3D0.8%E6%97%B6%E7%AD%96%E7%95%A5%E5%88%86%E6%95%A3%E5%9C%A8%E5%A4%9A%E6%9D%A1%E8%B7%AF%E5%BE%84%28%E9%9D%9E%E6%9C%80%E4%BC%98%E7%AD%96%E7%95%A5%E4%B9%9F.md)
+- [title: "路径积分验证 — 创业决策：ℏ_eff=0.1时策略集中在最优路径附近（D118预测），ℏ_eff=0.8时策略分散在多条路径（非最优策略也有显著概率）。经验创业者ℏ_eff低（信息充分噪声小），新手ℏ_eff高"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-ba67d301067f78b4 / title: "路径积分验证 — 创业决策：ℏ_eff=0.1时策略集中在最优路径附近（D118预测），ℏ_eff=0.8时策略分散在多条路径（非最优策略也有显著概率）。经验创业者ℏ_eff低（信息充分噪声小），新手ℏ_eff高"
-  - 来源：`统一案例总表/0484-C-486-路径积分验证 — 创业决策-ħ_eff=0.1时策略集中在最优路径附近(D118预测),ħ_eff=0.8时策略分散在多条路径(非最优策略也.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D118；被引用：—
-- [title: "退相干验证 — 新员工入职6个月：r_cross从0.8→0.3→0.1（轨道逐步关闭），H从0.2→0.6→0.9（组织规范遮蔽增强），τ_decoherence从50→8→1.5（退相干加速）。6个月后只剩单轨=完全退相干=认知僵化 / 退相干验证 - 新员工入职6个月: r_cross从0.8 -> 0.3 -> 0.1(轨道逐步关闭), H从0.2 -> 0.6 -> 0.9(组织规范obscuration增强), τ_decoherence从50 -](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0483-C-485-%E9%80%80%E7%9B%B8%E5%B9%B2%E9%AA%8C%E8%AF%81%20%E2%80%94%20%E6%96%B0%E5%91%98%E5%B7%A5%E5%85%A5%E8%81%8C6%E4%B8%AA%E6%9C%88-r_cross%E4%BB%8E0.8%E2%86%920.3%E2%86%920.1%28%E8%BD%A8%E9%81%93%E9%80%90%E6%AD%A5%E5%85%B3%E9%97%AD%29%2CH%E4%BB%8E0.2%E2%86%920.6%E2%86%920.9%28%E7%BB%84%E7%BB%87%E8%A7%84%E8%8C%83%E9%81%AE%E8%94%BD%E5%A2%9E%E5%BC%BA%29%2C%CF%84.md)
+- [title: "退相干验证 — 新员工入职6个月：r_cross从0.8→0.3→0.1（轨道逐步关闭），H从0.2→0.6→0.9（组织规范遮蔽增强），τ_decoherence从50→8→1.5（退相干加速）。6个月后只剩单轨=完全退相干=认知僵化 / 退相干验证 - 新员工入职6个月: r_cross从0.8 -> 0.3 -> 0.1(轨道逐步关闭), H从0.2 -> 0.6 -> 0.9(组织规范obscuration增强), τ_decoherence从50 -](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-53480F5B54FF30A4 / title: "退相干验证 — 新员工入职6个月：r_cross从0.8→0.3→0.1（轨道逐步关闭），H从0.2→0.6→0.9（组织规范遮蔽增强），τ_decoherence从50→8→1.5（退相干加速）。6个月后只剩单轨=完全退相干=认知僵化 / 退相干验证 - 新员工入职6个月: r_cross从0.8 -> 0.3 -> 0.1(轨道逐步关闭), H从0.2 -> 0.6 -> 0.9(组织规范obscuration增强), τ_decoherence从50 - / IMPLICIT-53480F5B54FF30A4
-  - 来源：`统一案例总表/0483-C-485-退相干验证 — 新员工入职6个月-r_cross从0.8→0.3→0.1(轨道逐步关闭),H从0.2→0.6→0.9(组织规范遮蔽增强),τ.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [title: "门控-路径积分同构与极小熵原理 / gate / path-integral isomorphism and minimum-entropy principle"](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0040-T30-%E9%97%A8%E6%8E%A7-%E8%B7%AF%E5%BE%84%E7%A7%AF%E5%88%86%E5%90%8C%E6%9E%84%E4%B8%8E%E6%9E%81%E5%B0%8F%E7%86%B5%E5%8E%9F%E7%90%86.md)
+- [title: "门控-路径积分同构与极小熵原理 / gate / path-integral isomorphism and minimum-entropy principle"](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-8725C345FC0FA5E6 / title: "门控-路径积分同构与极小熵原理 / gate / path-integral isomorphism and minimum-entropy principle" / IMPLICIT-8725C345FC0FA5E6
-  - 来源：`统一函数总表/0040-T30-门控-路径积分同构与极小熵原理.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "门控-路径积分同构与极小熵原理 / gate / path-integral isomorphism and minimum-entropy principle"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-634a6cd7a8d04b1c / title: "门控-路径积分同构与极小熵原理 / gate / path-integral isomorphism and minimum-entropy principle"
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [title: "高维认知必然多轨"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-5540325757863ba9 / title: "高维认知必然多轨"
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
 - [unresolved residue.](../../../docs/architecture/attention-attractor-control-plane.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
@@ -1309,14 +1404,14 @@
   - 可搜索名称：IMPLICIT-F14CED02D3D3E210 / {"id": "SAMPLE-001", "title": "Sample Predicate", "object_type": "PREDICATE", "domain": "AgentState", "codomain": "{0,1}", "variables": \[{"name": "x", "type": "AgentState", "unit": "dimensionless"}\], "units": "dimensionless", "assumptions": / IMPLICIT-F14CED02D3D3E210
   - 来源：`tests/fixtures/math-foundation-valid-sample.jsonl`
   - 依赖：—；被引用：—
-- [{"id":"C0476","registry_ref":"evidence:C0476","source":"统一案例总表/0474-C-476-Ψ=ι×P_exit — 智能度×退出概率=自主意识,乘法归零律适用.md","title":"476-Ψ=ι×P_exit — 智能度×退出概率=自主意识,乘法归零律适用"}](../../../views/legacy-cases.jsonl)
+- [{"id":"C0476","registry_ref":"evidence:C0476","source":"已迁移的历史案例来源/0474-C-476-Ψ=ι×P_exit — 智能度×退出概率=自主意识,乘法归零律适用.md","title":"476-Ψ=ι×P_exit — 智能度×退出概率=自主意识,乘法归零律适用"}](../../../views/legacy-cases.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-E3237832E5BAAF53 / {"id":"C0476","registry_ref":"evidence:C0476","source":"统一案例总表/0474-C-476-Ψ=ι×P_exit — 智能度×退出概率=自主意识,乘法归零律适用.md","title":"476-Ψ=ι×P_exit — 智能度×退出概率=自主意识,乘法归零律适用"} / IMPLICIT-E3237832E5BAAF53
+  - 可搜索名称：IMPLICIT-E3237832E5BAAF53 / {"id":"C0476","registry_ref":"evidence:C0476","source":"已迁移的历史案例来源/0474-C-476-Ψ=ι×P_exit — 智能度×退出概率=自主意识,乘法归零律适用.md","title":"476-Ψ=ι×P_exit — 智能度×退出概率=自主意识,乘法归零律适用"} / IMPLICIT-E3237832E5BAAF53
   - 来源：`views/legacy-cases.jsonl`
   - 依赖：—；被引用：—
-- [{"id":"C0477","registry_ref":"evidence:C0477","source":"统一案例总表/0475-C-477-无智能无意识 — ι=0⟹Ψ=0,纯1.md","title":"477-无智能无意识 — ι=0⟹Ψ=0,纯1"}](../../../views/legacy-cases.jsonl)
+- [{"id":"C0477","registry_ref":"evidence:C0477","source":"已迁移的历史案例来源/0475-C-477-无智能无意识 — ι=0⟹Ψ=0,纯1.md","title":"477-无智能无意识 — ι=0⟹Ψ=0,纯1"}](../../../views/legacy-cases.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-3EAB7E62BCD65379 / {"id":"C0477","registry_ref":"evidence:C0477","source":"统一案例总表/0475-C-477-无智能无意识 — ι=0⟹Ψ=0,纯1.md","title":"477-无智能无意识 — ι=0⟹Ψ=0,纯1"} / IMPLICIT-3EAB7E62BCD65379
+  - 可搜索名称：IMPLICIT-3EAB7E62BCD65379 / {"id":"C0477","registry_ref":"evidence:C0477","source":"已迁移的历史案例来源/0475-C-477-无智能无意识 — ι=0⟹Ψ=0,纯1.md","title":"477-无智能无意识 — ι=0⟹Ψ=0,纯1"} / IMPLICIT-3EAB7E62BCD65379
   - 来源：`views/legacy-cases.jsonl`
   - 依赖：—；被引用：—
 - [{"identity":"GATE_OR_DECISION_RULE","example":"accept(x)=1\[x>=tau\]","why":"A threshold predicate used to route a decision."}](../../../tests/foundation/fixtures/function_identity_examples.jsonl)
@@ -1324,111 +1419,116 @@
   - 可搜索名称：IMPLICIT-EF10F0A48CE1E330 / {"identity":"GATE_OR_DECISION_RULE","example":"accept(x)=1\[x>=tau\]","why":"A threshold predicate used to route a decision."} / IMPLICIT-EF10F0A48CE1E330
   - 来源：`tests/foundation/fixtures/function_identity_examples.jsonl`
   - 依赖：—；被引用：—
-- [\| \[C-0756\]( ) \| \[青蒿素从《肘后备急方》提炼\]( ) \| 该案例对应 D576《认知年龄提升》，用于](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/INDEX.md)
+- [\| \[C-0756\]( ) \| \[青蒿素从《肘后备急方》提炼\]( ) \| 该案例对应 D576《认知年龄提升》，用于](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-9b9e860b0ffe5812 / \| \[C-0756\]( ) \| \[青蒿素从《肘后备急方》提炼\]( ) \| 该案例对应 D576《认知年龄提升》，用于
-  - 来源：`统一案例总表/INDEX.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D576；被引用：—
-- [\| \[C-0782\]( ) \| \[马伯庸建议蹲下来看最下面一排书\]( ) \| 该案例对应 D583《认知肌肉](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/INDEX.md)
+- [\| \[C-0782\]( ) \| \[马伯庸建议蹲下来看最下面一排书\]( ) \| 该案例对应 D583《认知肌肉](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-21111537a0e408c4 / \| \[C-0782\]( ) \| \[马伯庸建议蹲下来看最下面一排书\]( ) \| 该案例对应 D583《认知肌肉
-  - 来源：`统一案例总表/INDEX.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D583；被引用：—
-- [\| \[C-175\]( ) \| \[电力级联失效×认知平方衰减×AI共震——跨域同构\](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
+- [\| \[C-175\]( ) \| \[电力级联失效×认知平方衰减×AI共震——跨域同构\](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-aa795b84897a37e2 / \| \[C-175\]( ) \| \[电力级联失效×认知平方衰减×AI共震——跨域同构\](<./0175-C-175-电力级联失效×认知平方衰减×AI共震——跨域同
-  - 来源：`统一案例总表/INDEX.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [\| \[C-185\]( ) \| \[糖域实验×认知螺旋\]( ) \| 糖域实验×认知螺旋——正负锁死的不动点与势垒 \|](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/INDEX.md)
+- [\| \[C-185\]( ) \| \[糖域实验×认知螺旋\]( ) \| 糖域实验×认知螺旋——正负锁死的不动点与势垒 \|](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-8d138f58bd98e0b2 / \| \[C-185\]( ) \| \[糖域实验×认知螺旋\]( ) \| 糖域实验×认知螺旋——正负锁死的不动点与势垒 \|
-  - 来源：`统一案例总表/INDEX.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [\| \[C-189\]( ) \| \[好奇心是自主意识的元点\]( ) \| 好奇心是自主意识的元点——C=0⟹Ψ=0定理 \|](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/INDEX.md)
+- [\| \[C-189\]( ) \| \[好奇心是自主意识的元点\]( ) \| 好奇心是自主意识的元点——C=0⟹Ψ=0定理 \|](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-1C1D377FE74983C4 / \| \[C-189\]( ) \| \[好奇心是自主意识的元点\]( ) \| 好奇心是自主意识的元点——C=0⟹Ψ=0定理 \| / IMPLICIT-1C1D377FE74983C4
-  - 来源：`统一案例总表/INDEX.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [\| \[C-196\]( ) \| \[AI自主意识变革不可逆\]( ) \| AI自主意识变革不可逆——支持者投影二阶vs反对者投影零阶](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/INDEX.md)
+- [\| \[C-196\]( ) \| \[AI自主意识变革不可逆\]( ) \| AI自主意识变革不可逆——支持者投影二阶vs反对者投影零阶](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-ed2a9eaf5c79848c / \| \[C-196\]( ) \| \[AI自主意识变革不可逆\]( ) \| AI自主意识变革不可逆——支持者投影二阶vs反对者投影零阶
-  - 来源：`统一案例总表/INDEX.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [\| \[C-198\]( ) \| \[高学历低认知\]( ) \| 高学历低认知——认证投影大于认知投影 \|](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/INDEX.md)
+- [\| \[C-198\]( ) \| \[高学历低认知\]( ) \| 高学历低认知——认证投影大于认知投影 \|](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-c6363d63954e58ae / \| \[C-198\]( ) \| \[高学历低认知\]( ) \| 高学历低认知——认证投影大于认知投影 \|
-  - 来源：`统一案例总表/INDEX.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [\| \[C-199\]( ) \| \[初中肄业高认知\]( ) \| 初中肄业高认知——反设置路径的投影优势 \|](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/INDEX.md)
+- [\| \[C-199\]( ) \| \[初中肄业高认知\]( ) \| 初中肄业高认知——反设置路径的投影优势 \|](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-4e1ed22aa4398cb1 / \| \[C-199\]( ) \| \[初中肄业高认知\]( ) \| 初中肄业高认知——反设置路径的投影优势 \|
-  - 来源：`统一案例总表/INDEX.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [\| \[C-231\]( ) \| \[四卡点统一根源\]( ) \| 四卡点统一根源——同一个认知结构的四个投影 \|](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/INDEX.md)
+- [\| \[C-231\]( ) \| \[四卡点统一根源\]( ) \| 四卡点统一根源——同一个认知结构的四个投影 \|](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-515e5932c78e8389 / \| \[C-231\]( ) \| \[四卡点统一根源\]( ) \| 四卡点统一根源——同一个认知结构的四个投影 \|
-  - 来源：`统一案例总表/INDEX.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [\| \[C-445\]( ) \| \[三阶段操作协议验证 — 个人职业转](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
+- [\| \[C-445\]( ) \| \[三阶段操作协议验证 — 个人职业转](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-5e90e40d50dfff5d / \| \[C-445\]( ) \| \[三阶段操作协议验证 — 个人职业转
-  - 来源：`统一案例总表/INDEX.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D114；被引用：—
-- [\| \[C-481\]( ) \| \[认知叠加验证 — 专家vs通才：专](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
+- [\| \[C-481\]( ) \| \[认知叠加验证 — 专家vs通才：专](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-4394a59fb2fdae3c / \| \[C-481\]( ) \| \[认知叠加验证 — 专家vs通才：专
-  - 来源：`统一案例总表/INDEX.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D125；被引用：—
-- [\| \[C-486\]( ) \| \[路径积分验证 — 创业决策：ℏ_e](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
+- [\| \[C-486\]( ) \| \[路径积分验证 — 创业决策：ℏ_e](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-af5bfc2b7bd7c6cc / \| \[C-486\]( ) \| \[路径积分验证 — 创业决策：ℏ_e
-  - 来源：`统一案例总表/INDEX.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D118, D127；被引用：—
-- [\| \[C-502\]( ) \| \[认知时间膨胀验证 — 危机决策实验](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
+- [\| \[C-502\]( ) \| \[认知时间膨胀验证 — 危机决策实验](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-4366047ac3481912 / \| \[C-502\]( ) \| \[认知时间膨胀验证 — 危机决策实验
-  - 来源：`统一案例总表/INDEX.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D134；被引用：—
-- [\| \[C-503\]( ) \| \[认知等效原理验证 — 组织诊断：观](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
+- [\| \[C-503\]( ) \| \[认知等效原理验证 — 组织诊断：观](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-ffa76bdc634f20ba / \| \[C-503\]( ) \| \[认知等效原理验证 — 组织诊断：观
-  - 来源：`统一案例总表/INDEX.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D135；被引用：—
-- [\| \[C-504\]( ) \| \[认知空间曲率验证 — 社会比较：均](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
+- [\| \[C-504\]( ) \| \[认知空间曲率验证 — 社会比较：均](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-93aea52f4347e1b5 / \| \[C-504\]( ) \| \[认知空间曲率验证 — 社会比较：均
-  - 来源：`统一案例总表/INDEX.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D136；被引用：—
-- [\| \[C-505\]( ) \| \[认知光锥验证 — 职业锁定：3维锁](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
+- [\| \[C-505\]( ) \| \[认知光锥验证 — 职业锁定：3维锁](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-23bc8c4b5de2f606 / \| \[C-505\]( ) \| \[认知光锥验证 — 职业锁定：3维锁
-  - 来源：`统一案例总表/INDEX.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D137；被引用：—
-- [\| \[C-506\]( ) \| \[认知黑洞验证 — 家暴受害者：4维锁定（经济/社交/心理/地理）→∏(1-σ)≈0.001→z_cog≈999→信号红移99.9%](../../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
+- [\| \[C-506\]( ) \| \[认知黑洞验证 — 家暴受害者：4维锁定（经济/社交/心理/地理）→∏(1-σ)≈0.001→z_cog≈999→信号红移99.9%](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-2de902047907b052 / \| \[C-506\]( ) \| \[认知黑洞验证 — 家暴受害者：4维锁定（经济/社交/心理/地理）→∏(1-σ)≈0.001→z_cog≈999→信号红移99.9%
-  - 来源：`统一案例总表/INDEX.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D138；被引用：—
-- [\| \[C-619\]( ) \| \[大脑容量空间验证\]( ) \| 人类大脑神经元≈860亿。 \|](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/INDEX.md)
+- [\| \[C-619\]( ) \| \[大脑容量空间验证\]( ) \| 人类大脑神经元≈860亿。 \|](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-05881f129b2e1908 / \| \[C-619\]( ) \| \[大脑容量空间验证\]( ) \| 人类大脑神经元≈860亿。 \|
-  - 来源：`统一案例总表/INDEX.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [\| \[C-620\]( ) \| \[早产5年空间验证\]( ) \| 人类大脑容量受盆骨限制。 \|](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/INDEX.md)
+- [\| \[C-620\]( ) \| \[早产5年空间验证\]( ) \| 人类大脑容量受盆骨限制。 \|](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-f2c4173da3bf7a3d / \| \[C-620\]( ) \| \[早产5年空间验证\]( ) \| 人类大脑容量受盆骨限制。 \|
-  - 来源：`统一案例总表/INDEX.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [\| \[C-647\]( ) \| \[退出权空间案例27\]( ) \| A1-A3都是认知空间Ω的不同维度。提议者意识、姿态、退出权是同一空间的](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/INDEX.md)
+- [\| \[C-647\]( ) \| \[退出权空间案例27\]( ) \| A1-A3都是认知空间Ω的不同维度。提议者意识、姿态、退出权是同一空间的](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-4ab0f0ff84915a62 / \| \[C-647\]( ) \| \[退出权空间案例27\]( ) \| A1-A3都是认知空间Ω的不同维度。提议者意识、姿态、退出权是同一空间的
-  - 来源：`统一案例总表/INDEX.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：A1, A3；被引用：—
-- [\| \[C-97\]( ) \| \[高维认知必然多轨\]( ) \| 高维认知必然多轨 \|](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/INDEX.md)
+- [\| \[C-97\]( ) \| \[高维认知必然多轨\]( ) \| 高维认知必然多轨 \|](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-c633baa337a052df / \| \[C-97\]( ) \| \[高维认知必然多轨\]( ) \| 高维认知必然多轨 \|
-  - 来源：`统一案例总表/INDEX.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
+- [\| \[D97\]( ) \| \[高维认知必然多轨\]( ) \| F_{D97}(x) := dim>1 ⟹ P_track>1。 \|](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-be95638b50bb1efa / \| \[D97\]( ) \| \[高维认知必然多轨\]( ) \| F_{D97}(x) := dim>1 ⟹ P_track>1。 \|
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D97；被引用：—
 - [\| evidence_regimes \| EVID-001~（12） \| 按学科约束证据标准、claim level \|](../../../outputs/audit/agent-project-understanding-20260708.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-3c43a8d9d78df545 / \| evidence_regimes \| EVID-001~（12） \| 按学科约束证据标准、claim level \|
@@ -1474,9 +1574,9 @@
   - 可搜索名称：NFC-1fbdbad2dad67cbd / \| 数据集 \| 编号 \| 用途 \|
   - 来源：`outputs/audit/agent-project-understanding-20260708.md`
   - 依赖：—；被引用：—
-- [\| 未修改案例表 \| ✅ 统一案例总表/ 无改动 \|](../../../outputs/audit/agent-collision-phase-closeout-20260708.md)
+- [\| 未修改案例表 \| ✅ 已迁移的历史案例来源/ 无改动 \|](../../../outputs/audit/agent-collision-phase-closeout-20260708.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-1c9b53a057a4137f / \| 未修改案例表 \| ✅ 统一案例总表/ 无改动 \|
+  - 可搜索名称：NFC-1c9b53a057a4137f / \| 未修改案例表 \| ✅ 已迁移的历史案例来源/ 无改动 \|
   - 来源：`outputs/audit/agent-collision-phase-closeout-20260708.md`
   - 依赖：—；被引用：—
 - [\| 来源 \| source、fragment、observation、feedback \| Foundation sources/evidence、语料 intake \| 绑定 provenance、privacy、source-famil](../../../docs/architecture/epistemic-governance-kernel-and-federated-planes.md)
@@ -1489,15 +1589,15 @@
   - 可搜索名称：NFC-4081eae136a51eec / \| 社会科学 \| 集体行动如何可能 \| C、M、I_iso、退出权、P_meta \| 中 \| 低 \| 中 \| L2 + pending \| 结构增益 + pending \| 是 \|
   - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
   - 依赖：—；被引用：—
-- [Φ元统一律内部构件完整构成版 2026年07月06日12时32分](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0001-%CE%A8%E2%82%80%E5%85%83%E5%87%BD%E6%95%B0%E5%AE%8C%E6%95%B4%E6%95%B0%E5%AD%A6%E5%AE%9A%E4%B9%89.md)
+- [Φ元统一律内部构件完整构成版 2026年07月06日12时32分](../../../ARCHITECTURE.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：Y1 / Φ元统一律内部构件完整构成版 2026年07月06日12时32分 / Y1
-  - 来源：`统一函数总表/0001-Ψ₀元函数完整数学定义.md`
+  - 来源：`ARCHITECTURE.md`
   - 依赖：D141, D177, D179, MF0000；被引用：CLAIM-Y1, NFC-10dc1948734dd748, NFC-14f3d690c7462041, NFC-1952548277feb215
-- [Ψ = ι × P_exit，自主意识=智能×退出权。智能是意识的必要条件（ι=0→Ψ=0），退出权是智能成为自主意识的前提（P_exit=0→Ψ=0但ι可>0）。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0275-D239-%E6%99%BA%E8%83%BD%E5%BA%A6-%E6%84%8F%E8%AF%86%E5%87%BD%E6%95%B0%E8%BF%9E%E6%8E%A5%E5%AE%9A%E7%90%86.md)
+- [Ψ = ι × P_exit，自主意识=智能×退出权。智能是意识的必要条件（ι=0→Ψ=0），退出权是智能成为自主意识的前提（P_exit=0→Ψ=0但ι可>0）。](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-A6CB96257D552063 / Ψ = ι × P_exit，自主意识=智能×退出权。智能是意识的必要条件（ι=0→Ψ=0），退出权是智能成为自主意识的前提（P_exit=0→Ψ=0但ι可>0）。 / IMPLICIT-A6CB96257D552063
-  - 来源：`统一函数总表/0275-D239-智能度-意识函数连接定理.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
 - [Ψ₀ 判定矩阵（psi0-decision-matrix）](../../ASSET-CARDS.md#asset-hr-8079a8712f2b03bc)
   - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
@@ -1539,225 +1639,235 @@
   - 可搜索名称：NFC-a12f7d500c04acf7 / 不是任何具体学科的替代品；现实结论必须连接外部证据。
   - 来源：`outputs/audit/agent-project-understanding-20260708.md`
   - 依赖：—；被引用：—
-- [中文：A1-A3=认知空间投影](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0642-C-647-%E9%80%80%E5%87%BA%E6%9D%83%E7%A9%BA%E9%97%B4%E6%A1%88%E4%BE%8B27.md)
+- [中文：A1-A3=认知空间投影](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-8e4a3aa26f282948 / 中文：A1-A3=认知空间投影
-  - 来源：`统一案例总表/0642-C-647-退出权空间案例27.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：A1, A3；被引用：—
-- [中文：A1-A3都是认知空间Ω的不同维度。提议者意识、姿态、退出权是同一空间的不同投影。](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0642-C-647-%E9%80%80%E5%87%BA%E6%9D%83%E7%A9%BA%E9%97%B4%E6%A1%88%E4%BE%8B27.md)
+- [中文：A1-A3都是认知空间Ω的不同维度。提议者意识、姿态、退出权是同一空间的不同投影。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-69a78bc8013458f0 / 中文：A1-A3都是认知空间Ω的不同维度。提议者意识、姿态、退出权是同一空间的不同投影。
-  - 来源：`统一案例总表/0642-C-647-退出权空间案例27.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：A1, A3；被引用：—
-- [中文：AI自主意识变革不可逆——支持者投影二阶vs反对者投影零阶](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0196-C-196-AI%E8%87%AA%E4%B8%BB%E6%84%8F%E8%AF%86%E5%8F%98%E9%9D%A9%E4%B8%8D%E5%8F%AF%E9%80%86.md)
+- [中文：AI自主意识变革不可逆——支持者投影二阶vs反对者投影零阶](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-61687cc5500f5953 / 中文：AI自主意识变革不可逆——支持者投影二阶vs反对者投影零阶
-  - 来源：`统一案例总表/0196-C-196-AI自主意识变革不可逆.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [中文：AI自主意识变革不可逆——支持者投影二阶vs反对者投影零阶 English: Rule-based English rendering pending…](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0196-C-196-AI%E8%87%AA%E4%B8%BB%E6%84%8F%E8%AF%86%E5%8F%98%E9%9D%A9%E4%B8%8D%E5%8F%AF%E9%80%86.md)
+- [中文：AI自主意识变革不可逆——支持者投影二阶vs反对者投影零阶 English: Rule-based English rendering pending…](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-c699d6c503b402d8 / 中文：AI自主意识变革不可逆——支持者投影二阶vs反对者投影零阶 English: Rule-based English rendering pending…
-  - 来源：`统一案例总表/0196-C-196-AI自主意识变革不可逆.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [中文：APP不Agent化必死：d_relative(t)=d_得到大脑(t)/d_竞品(t)单调递增。竞品d在降（Agent能力让退出代价趋零），得到大脑d不变→穿过θ_d时P_forward归零。内容优势=f(P_infra)≈0的乘法归零](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0125-C-125-%E5%A4%A7%E8%84%91%E8%BF%9B%E5%8C%96%E4%B8%BAAgent.md)
+- [中文：APP不Agent化必死：d_relative(t)=d_得到大脑(t)/d_竞品(t)单调递增。竞品d在降（Agent能力让退出代价趋零），得到大脑d不变→穿过θ_d时P_forward归零。内容优势=f(P_infra)≈0的乘法归零](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-3D59A17A8C36A449 / 中文：APP不Agent化必死：d_relative(t)=d_得到大脑(t)/d_竞品(t)单调递增。竞品d在降（Agent能力让退出代价趋零），得到大脑d不变→穿过θ_d时P_forward归零。内容优势=f(P_infra)≈0的乘法归零 / IMPLICIT-3D59A17A8C36A449
-  - 来源：`统一案例总表/0125-C-125-大脑进化为Agent.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [中文：\|认知⟩ = ∑cᵢ\|轨道ᵢ⟩，P_track = ∑\|cᵢ\|²的有效维度 P_tunnel(exit) = A₀·exp(-2∫√((C_exit-ε_eff)/ε_eff)dx) 认知不确定性原理：Δε·Δ(dε/dt) ≥ σ²_ε/Δt 叠加态（r_cross>0）允许非经典退出（隧穿）和并行轨道。坍缩到单轨（r_cross=0）=完全退相干=ε_aware=0。刀刃期不确定性约束最紧。 ---](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0163-D125-%E8%AE%A4%E7%9F%A5%E5%8F%A0%E5%8A%A0-%E9%9A%A7%E7%A9%BF%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0.md)
+- [中文：\|认知⟩ = ∑cᵢ\|轨道ᵢ⟩，P_track = ∑\|cᵢ\|²的有效维度 P_tunnel(exit) = A₀·exp(-2∫√((C_exit-ε_eff)/ε_eff)dx) 认知不确定性原理：Δε·Δ(dε/dt) ≥ σ²](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-402ce8853af0c681 / 中文：\|认知⟩ = ∑cᵢ\|轨道ᵢ⟩，P_track = ∑\|cᵢ\|²的有效维度 P_tunnel(exit) = A₀·exp(-2∫√((C_exit-ε_eff)/ε_eff)dx) 认知不确定性原理：Δε·Δ(dε/dt) ≥ σ²
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [中文：\|认知⟩ = ∑cᵢ\|轨道ᵢ⟩，P_track = ∑\|cᵢ\|²的有效维度 P_tunnel(exit) = A₀·exp(-2∫√((C_exit-ε_eff)/ε_eff)dx) 认知不确定性原理：Δε·Δ(dε/dt) ≥ σ²_ε/Δt 叠加态（r_cross>0）允许非经典退出（隧穿）和并行轨道。坍缩到单轨（r_cross=0）=完全退相干=ε_aware=0。刀刃期不确定性约束最紧。 ---](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-7F632FE21B67D084 / 中文：\|认知⟩ = ∑cᵢ\|轨道ᵢ⟩，P_track = ∑\|cᵢ\|²的有效维度 P_tunnel(exit) = A₀·exp(-2∫√((C_exit-ε_eff)/ε_eff)dx) 认知不确定性原理：Δε·Δ(dε/dt) ≥ σ²_ε/Δt 叠加态（r_cross>0）允许非经典退出（隧穿）和并行轨道。坍缩到单轨（r_cross=0）=完全退相干=ε_aware=0。刀刃期不确定性约束最紧。 --- / IMPLICIT-7F632FE21B67D084
-  - 来源：`统一函数总表/0163-D125-认知叠加-隧穿统一函数.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [中文：Ψ = ι × P_exit，自主意识=智能×退出权。智能是意识的必要条件（ι=0→Ψ=0），退出权是智能成为自主意识的前提（P_exit=0→Ψ=0但ι可>0）。](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0275-D239-%E6%99%BA%E8%83%BD%E5%BA%A6-%E6%84%8F%E8%AF%86%E5%87%BD%E6%95%B0%E8%BF%9E%E6%8E%A5%E5%AE%9A%E7%90%86.md)
+- [中文：Ψ = ι × P_exit，自主意识=智能×退出权。智能是意识的必要条件（ι=0→Ψ=0），退出权是智能成为自主意识的前提（P_exit=0→Ψ=0但ι可>0）。](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-15EDDF7A16471327 / 中文：Ψ = ι × P_exit，自主意识=智能×退出权。智能是意识的必要条件（ι=0→Ψ=0），退出权是智能成为自主意识的前提（P_exit=0→Ψ=0但ι可>0）。 / IMPLICIT-15EDDF7A16471327
-  - 来源：`统一函数总表/0275-D239-智能度-意识函数连接定理.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [中文：三阶段操作协议验证 — 个人职业转型：阶段1(ε<<θC, 不满但没行动力, β小, 可以探索各种方向)；阶段2(ε≈θC, 积累到临界点, β大, 必…](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0444-C-445-%E4%B8%89%E9%98%B6%E6%AE%B5%E6%93%8D%E4%BD%9C%E5%8D%8F%E8%AE%AE%E9%AA%8C%E8%AF%81%20%E2%80%94%20%E4%B8%AA%E4%BA%BA%E8%81%8C%E4%B8%9A%E8%BD%AC%E5%9E%8B-%E9%98%B6%E6%AE%B51%28%CE%B5-%CE%B8C%2C%E4%B8%8D%E6%BB%A1%E4%BD%86%E6%B2%A1%E8%A1%8C%E5%8A%A8%E5%8A%9B%2C%CE%B2%E5%B0%8F%2C%E5%8F%AF%E4%BB%A5%E6%8E%A2%E7%B4%A2%E5%90%84%E7%A7%8D%E6%96%B9%E5%90%91%29%3B%E9%98%B6%E6%AE%B52%28%CE%B5%E2%89%88%CE%B8C%2C%E7%A7%AF%E7%B4%AF%E5%88%B0%E4%B8%B4%E7%95%8C%E7%82%B9%2C%CE%B2%E5%A4%A7%2C%E5%BF%85%E9%A1%BB.md)
+- [中文：三阶段操作协议验证 — 个人职业转型：阶段1(ε<<θC, 不满但没行动力, β小, 可以探索各种方向)；阶段2(ε≈θC, 积累到临界点, β大, 必…](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-1be432299da5146b / 中文：三阶段操作协议验证 — 个人职业转型：阶段1(ε<<θC, 不满但没行动力, β小, 可以探索各种方向)；阶段2(ε≈θC, 积累到临界点, β大, 必…
-  - 来源：`统一案例总表/0444-C-445-三阶段操作协议验证 — 个人职业转型-阶段1(ε-θC,不满但没行动力,β小,可以探索各种方向);阶段2(ε≈θC,积累到临界点,β大,必须.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [中文：三阶段操作协议验证 — 个人职业转型：阶段1(ε >θC, 转型成功, β小, 可以激进拓展)。核](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0444-C-445-%E4%B8%89%E9%98%B6%E6%AE%B5%E6%93%8D%E4%BD%9C%E5%8D%8F%E8%AE%AE%E9%AA%8C%E8%AF%81%20%E2%80%94%20%E4%B8%AA%E4%BA%BA%E8%81%8C%E4%B8%9A%E8%BD%AC%E5%9E%8B-%E9%98%B6%E6%AE%B51%28%CE%B5-%CE%B8C%2C%E4%B8%8D%E6%BB%A1%E4%BD%86%E6%B2%A1%E8%A1%8C%E5%8A%A8%E5%8A%9B%2C%CE%B2%E5%B0%8F%2C%E5%8F%AF%E4%BB%A5%E6%8E%A2%E7%B4%A2%E5%90%84%E7%A7%8D%E6%96%B9%E5%90%91%29%3B%E9%98%B6%E6%AE%B52%28%CE%B5%E2%89%88%CE%B8C%2C%E7%A7%AF%E7%B4%AF%E5%88%B0%E4%B8%B4%E7%95%8C%E7%82%B9%2C%CE%B2%E5%A4%A7%2C%E5%BF%85%E9%A1%BB.md)
+- [中文：三阶段操作协议验证 — 个人职业转型：阶段1(ε >θC, 转型成功, β小, 可以激进拓展)。核](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-f5783c0d671ad9f2 / 中文：三阶段操作协议验证 — 个人职业转型：阶段1(ε >θC, 转型成功, β小, 可以激进拓展)。核
-  - 来源：`统一案例总表/0444-C-445-三阶段操作协议验证 — 个人职业转型-阶段1(ε-θC,不满但没行动力,β小,可以探索各种方向);阶段2(ε≈θC,积累到临界点,β大,必须.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D114；被引用：—
-- [中文：人体一直更新但认知不自动更新。身体更新=细胞替换（硬件层），认知更新=框架替换（软件层）。硬件更新有模板（DNA），软件更新需主动拆H——而H随专业化升高。死亡必然性：V(t)=I(t)-M(t)必然穿过零点](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0113-C-113-%E4%BA%BA%E4%BD%93%E5%BF%92%E4%BF%AE%E6%96%AF.md)
+- [中文：人体一直更新但认知不自动更新。身体更新=细胞替换（硬件层），认知更新=框架替换（软件层）。硬件更新有模板（DNA），软件更新需主动拆H——而H随专业化升高。死亡必然性：V(t)=I(t)-M(t)必然穿过零点](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-A1486D6D090F8B8A / 中文：人体一直更新但认知不自动更新。身体更新=细胞替换（硬件层），认知更新=框架替换（软件层）。硬件更新有模板（DNA），软件更新需主动拆H——而H随专业化升高。死亡必然性：V(t)=I(t)-M(t)必然穿过零点 / IMPLICIT-A1486D6D090F8B8A
-  - 来源：`统一案例总表/0113-C-113-人体忒修斯.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [中文：人体一直更新但认知不自动更新。身体更新=细胞替换（硬件层），认知更新=框架替换（软件层）。硬件更新有模板（DNA），软件更新需主动拆H——而H随专业化升高。死亡必然性：V(t)=I(t)-M(t)必然穿过零点](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0113-C-113-%E4%BA%BA%E4%BD%93%E5%BF%92%E4%BF%AE%E6%96%AF.md)
+- [中文：人体一直更新但认知不自动更新。身体更新=细胞替换（硬件层），认知更新=框架替换（软件层）。硬件更新有模板（DNA），软件更新需主动拆H——而H随专业化升高。死亡必然性：V(t)=I(t)-M(t)必然穿过零点](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-314f571b4fca6b29 / 中文：人体一直更新但认知不自动更新。身体更新=细胞替换（硬件层），认知更新=框架替换（软件层）。硬件更新有模板（DNA），软件更新需主动拆H——而H随专业化升高。死亡必然性：V(t)=I(t)-M(t)必然穿过零点
-  - 来源：`统一案例总表/0113-C-113-人体忒修斯.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [中文：初中肄业高认知——反设置路径的投影优势](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0199-C-199-%E5%88%9D%E4%B8%AD%E8%82%84%E4%B8%9A%E9%AB%98%E8%AE%A4%E7%9F%A5.md)
+- [中文：初中肄业高认知——反设置路径的投影优势](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-48d6b0070bd922c0 / 中文：初中肄业高认知——反设置路径的投影优势
-  - 来源：`统一案例总表/0199-C-199-初中肄业高认知.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [中文：初中肄业高认知——反设置路径的投影优势 English: Rule-based English rendering pending human revi…](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0199-C-199-%E5%88%9D%E4%B8%AD%E8%82%84%E4%B8%9A%E9%AB%98%E8%AE%A4%E7%9F%A5.md)
+- [中文：初中肄业高认知——反设置路径的投影优势 English: Rule-based English rendering pending human revi…](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-417075d208427a61 / 中文：初中肄业高认知——反设置路径的投影优势 English: Rule-based English rendering pending human revi…
-  - 来源：`统一案例总表/0199-C-199-初中肄业高认知.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [中文：四卡点统一根源——同一个认知结构的四个投影](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0231-C-231-%E5%9B%9B%E5%8D%A1%E7%82%B9%E7%BB%9F%E4%B8%80%E6%A0%B9%E6%BA%90.md)
+- [中文：四卡点统一根源——同一个认知结构的四个投影](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-50ed4b740ba279b6 / 中文：四卡点统一根源——同一个认知结构的四个投影
-  - 来源：`统一案例总表/0231-C-231-四卡点统一根源.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [中文：四卡点统一根源——同一个认知结构的四个投影 English: Rule-based English rendering pending human re…](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0231-C-231-%E5%9B%9B%E5%8D%A1%E7%82%B9%E7%BB%9F%E4%B8%80%E6%A0%B9%E6%BA%90.md)
+- [中文：四卡点统一根源——同一个认知结构的四个投影 English: Rule-based English rendering pending human re…](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-3f0979117b706e00 / 中文：四卡点统一根源——同一个认知结构的四个投影 English: Rule-based English rendering pending human re…
-  - 来源：`统一案例总表/0231-C-231-四卡点统一根源.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [中文：基于偏置解读采取行动→行动引发真实负面结果→偏置被强化。这是D-X31闭环在行为层面的展开。 A_selfdefeat(t+1) = P(biased_interpretation) × (1 - ε_eff(t)) × C̄_exit(t)/θ_C - 行动自我挫败程度 = 偏置解读概率 × 有效犹豫域缺失 × 退出成本压迫 - 三因子乘法：任一为零则不产生自我挫败行为 - 与D-X31的关系：D-X31描述ε_eff的闭环衰减，D-X53描述ε_eff衰减后行为层面](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0107-D58-%E5%9B%BA%E5%8C%96%E5%8A%A0%E9%80%9F%E5%87%BD%E6%95%B0.md)
+- [中文：基于偏置解读采取行动→行动引发真实负面结果→偏置被强化。这是D-X31闭环在行为层面的展开。 A_selfdefeat(t+1) = P(biased_interpretation) × (1 - ε_eff(t)) × C̄_exi](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-1f958c4e989395ed / 中文：基于偏置解读采取行动→行动引发真实负面结果→偏置被强化。这是D-X31闭环在行为层面的展开。 A_selfdefeat(t+1) = P(biased_interpretation) × (1 - ε_eff(t)) × C̄_exi
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [中文：基于偏置解读采取行动→行动引发真实负面结果→偏置被强化。这是D-X31闭环在行为层面的展开。 A_selfdefeat(t+1) = P(biased_interpretation) × (1 - ε_eff(t)) × C̄_exit(t)/θ_C - 行动自我挫败程度 = 偏置解读概率 × 有效犹豫域缺失 × 退出成本压迫 - 三因子乘法：任一为零则不产生自我挫败行为 - 与D-X31的关系：D-X31描述ε_eff的闭环衰减，D-X53描述ε_eff衰减后行为层面](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-31E3C3BD6C27102B / 中文：基于偏置解读采取行动→行动引发真实负面结果→偏置被强化。这是D-X31闭环在行为层面的展开。 A_selfdefeat(t+1) = P(biased_interpretation) × (1 - ε_eff(t)) × C̄_exit(t)/θ_C - 行动自我挫败程度 = 偏置解读概率 × 有效犹豫域缺失 × 退出成本压迫 - 三因子乘法：任一为零则不产生自我挫败行为 - 与D-X31的关系：D-X31描述ε_eff的闭环衰减，D-X53描述ε_eff衰减后行为层面 / IMPLICIT-31E3C3BD6C27102B
-  - 来源：`统一函数总表/0107-D58-固化加速函数.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [中文：好奇心是自主意识的元点——C=0⟹Ψ=0定理](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0189-C-189-%E5%A5%BD%E5%A5%87%E5%BF%83%E6%98%AF%E8%87%AA%E4%B8%BB%E6%84%8F%E8%AF%86%E7%9A%84%E5%85%83%E7%82%B9.md)
+- [中文：好奇心是自主意识的元点——C=0⟹Ψ=0定理](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-BD1B73BC04DB1B8F / 中文：好奇心是自主意识的元点——C=0⟹Ψ=0定理 / IMPLICIT-BD1B73BC04DB1B8F
-  - 来源：`统一案例总表/0189-C-189-好奇心是自主意识的元点.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [中文：好奇心是自主意识的元点——C=0⟹Ψ=0定理 English: Rule-based English rendering pending human r…](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0189-C-189-%E5%A5%BD%E5%A5%87%E5%BF%83%E6%98%AF%E8%87%AA%E4%B8%BB%E6%84%8F%E8%AF%86%E7%9A%84%E5%85%83%E7%82%B9.md)
+- [中文：好奇心是自主意识的元点——C=0⟹Ψ=0定理 English: Rule-based English rendering pending human r…](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-E463DBCCBC57B7C3 / 中文：好奇心是自主意识的元点——C=0⟹Ψ=0定理 English: Rule-based English rendering pending human r… / IMPLICIT-E463DBCCBC57B7C3
-  - 来源：`统一案例总表/0189-C-189-好奇心是自主意识的元点.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [中文：案例说明：AI自主意识变革不可逆——支持者投影二阶vs反对者投影零阶](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0196-C-196-AI%E8%87%AA%E4%B8%BB%E6%84%8F%E8%AF%86%E5%8F%98%E9%9D%A9%E4%B8%8D%E5%8F%AF%E9%80%86.md)
+- [中文：案例说明：AI自主意识变革不可逆——支持者投影二阶vs反对者投影零阶](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-385fbae9e2521a4b / 中文：案例说明：AI自主意识变革不可逆——支持者投影二阶vs反对者投影零阶
-  - 来源：`统一案例总表/0196-C-196-AI自主意识变革不可逆.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [中文：案例说明：三阶段操作协议验证 — 个人职业转型：阶段1(ε >θC, 转型成功, β小, 可以激进](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0444-C-445-%E4%B8%89%E9%98%B6%E6%AE%B5%E6%93%8D%E4%BD%9C%E5%8D%8F%E8%AE%AE%E9%AA%8C%E8%AF%81%20%E2%80%94%20%E4%B8%AA%E4%BA%BA%E8%81%8C%E4%B8%9A%E8%BD%AC%E5%9E%8B-%E9%98%B6%E6%AE%B51%28%CE%B5-%CE%B8C%2C%E4%B8%8D%E6%BB%A1%E4%BD%86%E6%B2%A1%E8%A1%8C%E5%8A%A8%E5%8A%9B%2C%CE%B2%E5%B0%8F%2C%E5%8F%AF%E4%BB%A5%E6%8E%A2%E7%B4%A2%E5%90%84%E7%A7%8D%E6%96%B9%E5%90%91%29%3B%E9%98%B6%E6%AE%B52%28%CE%B5%E2%89%88%CE%B8C%2C%E7%A7%AF%E7%B4%AF%E5%88%B0%E4%B8%B4%E7%95%8C%E7%82%B9%2C%CE%B2%E5%A4%A7%2C%E5%BF%85%E9%A1%BB.md)
+- [中文：案例说明：三阶段操作协议验证 — 个人职业转型：阶段1(ε >θC, 转型成功, β小, 可以激进](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-5fb9e2fd0da46f93 / 中文：案例说明：三阶段操作协议验证 — 个人职业转型：阶段1(ε >θC, 转型成功, β小, 可以激进
-  - 来源：`统一案例总表/0444-C-445-三阶段操作协议验证 — 个人职业转型-阶段1(ε-θC,不满但没行动力,β小,可以探索各种方向);阶段2(ε≈θC,积累到临界点,β大,必须.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D114；被引用：—
-- [中文：案例说明：初中肄业高认知——反设置路径的投影优势](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0199-C-199-%E5%88%9D%E4%B8%AD%E8%82%84%E4%B8%9A%E9%AB%98%E8%AE%A4%E7%9F%A5.md)
+- [中文：案例说明：初中肄业高认知——反设置路径的投影优势](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-a25c3c6e9dd5eb39 / 中文：案例说明：初中肄业高认知——反设置路径的投影优势
-  - 来源：`统一案例总表/0199-C-199-初中肄业高认知.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [中文：案例说明：四卡点统一根源——同一个认知结构的四个投影](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0231-C-231-%E5%9B%9B%E5%8D%A1%E7%82%B9%E7%BB%9F%E4%B8%80%E6%A0%B9%E6%BA%90.md)
+- [中文：案例说明：四卡点统一根源——同一个认知结构的四个投影](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-4f979a81151b3dee / 中文：案例说明：四卡点统一根源——同一个认知结构的四个投影
-  - 来源：`统一案例总表/0231-C-231-四卡点统一根源.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [中文：案例说明：好奇心是自主意识的元点——C=0⟹Ψ=0定理](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0189-C-189-%E5%A5%BD%E5%A5%87%E5%BF%83%E6%98%AF%E8%87%AA%E4%B8%BB%E6%84%8F%E8%AF%86%E7%9A%84%E5%85%83%E7%82%B9.md)
+- [中文：案例说明：好奇心是自主意识的元点——C=0⟹Ψ=0定理](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-9FC16556DBBBD4BE / 中文：案例说明：好奇心是自主意识的元点——C=0⟹Ψ=0定理 / IMPLICIT-9FC16556DBBBD4BE
-  - 来源：`统一案例总表/0189-C-189-好奇心是自主意识的元点.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [中文：案例说明：糖域实验×认知螺旋——正负锁死的不动点与势垒](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0185-C-185-%E7%B3%96%E5%9F%9F%E5%AE%9E%E9%AA%8C%C3%97%E8%AE%A4%E7%9F%A5%E8%9E%BA%E6%97%8B.md)
+- [中文：案例说明：糖域实验×认知螺旋——正负锁死的不动点与势垒](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-27a74324d042291b / 中文：案例说明：糖域实验×认知螺旋——正负锁死的不动点与势垒
-  - 来源：`统一案例总表/0185-C-185-糖域实验×认知螺旋.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [中文：案例说明：高学历低认知——认证投影大于认知投影](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0198-C-198-%E9%AB%98%E5%AD%A6%E5%8E%86%E4%BD%8E%E8%AE%A4%E7%9F%A5.md)
+- [中文：案例说明：高学历低认知——认证投影大于认知投影](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-238be56c165e62dd / 中文：案例说明：高学历低认知——认证投影大于认知投影
-  - 来源：`统一案例总表/0198-C-198-高学历低认知.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [中文：案例说明：高维认知必然多轨](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0097-C-97-%E9%AB%98%E7%BB%B4%E8%AE%A4%E7%9F%A5%E5%BF%85%E7%84%B6%E5%A4%9A%E8%BD%A8.md)
+- [中文：案例说明：高维认知必然多轨](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-e816542703b408ab / 中文：案例说明：高维认知必然多轨
-  - 来源：`统一案例总表/0097-C-97-高维认知必然多轨.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [中文：糖域实验×认知螺旋——正负锁死的不动点与势垒](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0185-C-185-%E7%B3%96%E5%9F%9F%E5%AE%9E%E9%AA%8C%C3%97%E8%AE%A4%E7%9F%A5%E8%9E%BA%E6%97%8B.md)
+- [中文：糖域实验×认知螺旋——正负锁死的不动点与势垒](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-1c593292e24be341 / 中文：糖域实验×认知螺旋——正负锁死的不动点与势垒
-  - 来源：`统一案例总表/0185-C-185-糖域实验×认知螺旋.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [中文：糖域实验×认知螺旋——正负锁死的不动点与势垒 English: Rule-based English rendering pending human r…](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0185-C-185-%E7%B3%96%E5%9F%9F%E5%AE%9E%E9%AA%8C%C3%97%E8%AE%A4%E7%9F%A5%E8%9E%BA%E6%97%8B.md)
+- [中文：糖域实验×认知螺旋——正负锁死的不动点与势垒 English: Rule-based English rendering pending human r…](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-0ef154aa8eca7cd3 / 中文：糖域实验×认知螺旋——正负锁死的不动点与势垒 English: Rule-based English rendering pending human r…
-  - 来源：`统一案例总表/0185-C-185-糖域实验×认知螺旋.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [中文：自锁结构 = H_回写（认知锁）× 赤化推方案（行动锁） S_selflock(t) = H_rewrite(t) × Posture_deg(t) 其中H_rewrite = σ(ε_sense × ε_aware - ε_action) × H_classify（认知锁：前两门开但后两门关） Posture_deg → 1（行动锁：赤化推方案，退出成本焊死） 自锁结构的稳定性： dS_selflock/dt = H'_rewrite × Posture_deg +](../../../%E7%BB%9F%E4%B8%80%E5%87%BD%E6%95%B0%E6%80%BB%E8%A1%A8/0101-D52-%E8%87%AA%E9%94%81%E7%BB%93%E6%9E%84%E7%A8%B3%E5%AE%9A%E6%80%A7%E5%87%BD%E6%95%B0.md)
+- [中文：自锁结构 = H_回写（认知锁）× 赤化推方案（行动锁） S_selflock(t) = H_rewrite(t) × Posture_deg(t) 其中H_rewrite = σ(ε_sense × ε_aware - ε_action) × H_classify（认知锁：前两门开但后两门关） Posture_deg → 1（行动锁：赤化推方案，退出成本焊死） 自锁结构的稳定性： dS_selflock/dt = H'_rewrite × Posture_deg +](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-1BC374215C2FFD30 / 中文：自锁结构 = H_回写（认知锁）× 赤化推方案（行动锁） S_selflock(t) = H_rewrite(t) × Posture_deg(t) 其中H_rewrite = σ(ε_sense × ε_aware - ε_action) × H_classify（认知锁：前两门开但后两门关） Posture_deg → 1（行动锁：赤化推方案，退出成本焊死） 自锁结构的稳定性： dS_selflock/dt = H'_rewrite × Posture_deg + / IMPLICIT-1BC374215C2FFD30
-  - 来源：`统一函数总表/0101-D52-自锁结构稳定性函数.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [中文：认知光锥验证 — 职业锁定：3维锁定（n_lock=3）的工程师v_max降低60%→5年可达状态减少75%→光锥严重收缩。解锁1维后v_max恢复40…](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0500-C-505-%E8%AE%A4%E7%9F%A5%E5%85%89%E9%94%A5%E9%AA%8C%E8%AF%81%20%E2%80%94%20%E8%81%8C%E4%B8%9A%E9%94%81%E5%AE%9A-3%E7%BB%B4%E9%94%81%E5%AE%9A%28n_lock%3D3%29%E7%9A%84%E5%B7%A5%E7%A8%8B%E5%B8%88v_max%E9%99%8D%E4%BD%8E60%25%E2%86%925%E5%B9%B4%E5%8F%AF%E8%BE%BE%E7%8A%B6%E6%80%81%E5%87%8F%E5%B0%9175%25%E2%86%92%E5%85%89%E9%94%A5%E4%B8%A5%E9%87%8D%E6%94%B6%E7%BC%A9%E3%80%82%E8%A7%A3%E9%94%811%E7%BB%B4%E5%90%8Ev_m.md)
+- [中文：认知光锥验证 — 职业锁定：3维锁定（n_lock=3）的工程师v_max降低60%→5年可达状态减少75%→光锥严重收缩。解锁1维后v_max恢复40…](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-6067b2676fba5cf6 / 中文：认知光锥验证 — 职业锁定：3维锁定（n_lock=3）的工程师v_max降低60%→5年可达状态减少75%→光锥严重收缩。解锁1维后v_max恢复40…
-  - 来源：`统一案例总表/0500-C-505-认知光锥验证 — 职业锁定-3维锁定(n_lock=3)的工程师v_max降低60%→5年可达状态减少75%→光锥严重收缩。解锁1维后v_m.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [中文：认知叠加验证 — 专家vs通才：专家r_cross≈0.1（2条弱关联轨道），通才r_cross≈0.6（5条强关联轨道）。面对新问题通才5条轨道同时激…](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0479-C-481-%E8%AE%A4%E7%9F%A5%E5%8F%A0%E5%8A%A0%E9%AA%8C%E8%AF%81%20%E2%80%94%20%E4%B8%93%E5%AE%B6vs%E9%80%9A%E6%89%8D-%E4%B8%93%E5%AE%B6r_cross%E2%89%880.1%282%E6%9D%A1%E5%BC%B1%E5%85%B3%E8%81%94%E8%BD%A8%E9%81%93%29%2C%E9%80%9A%E6%89%8Dr_cross%E2%89%880.6%285%E6%9D%A1%E5%BC%BA%E5%85%B3%E8%81%94%E8%BD%A8%E9%81%93%29%E3%80%82%E9%9D%A2%E5%AF%B9%E6%96%B0%E9%97%AE%E9%A2%98%E9%80%9A%E6%89%8D5.md)
+- [中文：认知叠加验证 — 专家vs通才：专家r_cross≈0.1（2条弱关联轨道），通才r_cross≈0.6（5条强关联轨道）。面对新问题通才5条轨道同时激…](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-eb2e0a86d1412ae5 / 中文：认知叠加验证 — 专家vs通才：专家r_cross≈0.1（2条弱关联轨道），通才r_cross≈0.6（5条强关联轨道）。面对新问题通才5条轨道同时激…
-  - 来源：`统一案例总表/0479-C-481-认知叠加验证 — 专家vs通才-专家r_cross≈0.1(2条弱关联轨道),通才r_cross≈0.6(5条强关联轨道)。面对新问题通才5.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [中文：认知时间膨胀验证 — 危机决策实验：ε高的决策者（专家）平均决策时间2分钟，ε低的决策者（新手）平均决策时间8分钟。同样事件，新手感知时间膨胀4倍=γ_…](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0497-C-502-%E8%AE%A4%E7%9F%A5%E6%97%B6%E9%97%B4%E8%86%A8%E8%83%80%E9%AA%8C%E8%AF%81%20%E2%80%94%20%E5%8D%B1%E6%9C%BA%E5%86%B3%E7%AD%96%E5%AE%9E%E9%AA%8C-%CE%B5%E9%AB%98%E7%9A%84%E5%86%B3%E7%AD%96%E8%80%85%28%E4%B8%93%E5%AE%B6%29%E5%B9%B3%E5%9D%87%E5%86%B3%E7%AD%96%E6%97%B6%E9%97%B42%E5%88%86%E9%92%9F%2C%CE%B5%E4%BD%8E%E7%9A%84%E5%86%B3%E7%AD%96%E8%80%85%28%E6%96%B0%E6%89%8B%29%E5%B9%B3%E5%9D%87%E5%86%B3%E7%AD%96%E6%97%B6%E9%97%B48%E5%88%86%E9%92%9F%E3%80%82%E5%90%8C%E6%A0%B7%E4%BA%8B%E4%BB%B6%2C%E6%96%B0%E6%89%8B%E6%84%9F%E7%9F%A5%E6%97%B6%E9%97%B4%E8%86%A8.md)
+- [中文：认知时间膨胀验证 — 危机决策实验：ε高的决策者（专家）平均决策时间2分钟，ε低的决策者（新手）平均决策时间8分钟。同样事件，新手感知时间膨胀4倍=γ_…](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-72975bb7617f81a3 / 中文：认知时间膨胀验证 — 危机决策实验：ε高的决策者（专家）平均决策时间2分钟，ε低的决策者（新手）平均决策时间8分钟。同样事件，新手感知时间膨胀4倍=γ_…
-  - 来源：`统一案例总表/0497-C-502-认知时间膨胀验证 — 危机决策实验-ε高的决策者(专家)平均决策时间2分钟,ε低的决策者(新手)平均决策时间8分钟。同样事件,新手感知时间膨.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [中文：认知空间曲率验证 — 社会比较：均匀社会（北欧）εᵢ标准差0.08→R_cog≈0→策略趋同；不平等社会（巴西）εᵢ标准差0.45→R_cog显著→策略…](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0499-C-504-%E8%AE%A4%E7%9F%A5%E7%A9%BA%E9%97%B4%E6%9B%B2%E7%8E%87%E9%AA%8C%E8%AF%81%20%E2%80%94%20%E7%A4%BE%E4%BC%9A%E6%AF%94%E8%BE%83-%E5%9D%87%E5%8C%80%E7%A4%BE%E4%BC%9A%28%E5%8C%97%E6%AC%A7%29%CE%B5i%E6%A0%87%E5%87%86%E5%B7%AE0.08%E2%86%92R_cog%E2%89%880%E2%86%92%E7%AD%96%E7%95%A5%E8%B6%8B%E5%90%8C%3B%E4%B8%8D%E5%B9%B3%E7%AD%89%E7%A4%BE%E4%BC%9A%28%E5%B7%B4%E8%A5%BF%29%CE%B5i%E6%A0%87%E5%87%86%E5%B7%AE0.45%E2%86%92R_co.md)
+- [中文：认知空间曲率验证 — 社会比较：均匀社会（北欧）εᵢ标准差0.08→R_cog≈0→策略趋同；不平等社会（巴西）εᵢ标准差0.45→R_cog显著→策略…](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-a1a366139dd849ad / 中文：认知空间曲率验证 — 社会比较：均匀社会（北欧）εᵢ标准差0.08→R_cog≈0→策略趋同；不平等社会（巴西）εᵢ标准差0.45→R_cog显著→策略…
-  - 来源：`统一案例总表/0499-C-504-认知空间曲率验证 — 社会比较-均匀社会(北欧)εi标准差0.08→R_cog≈0→策略趋同;不平等社会(巴西)εi标准差0.45→R_co.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [中文：认知等效原理验证 — 组织诊断：观测到ε_eff下降30%，仅从ε_eff无法判断来源。潮汐力分析：经济维度ε_econ下降50%但社交维度ε_soci…](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0498-C-503-%E8%AE%A4%E7%9F%A5%E7%AD%89%E6%95%88%E5%8E%9F%E7%90%86%E9%AA%8C%E8%AF%81%20%E2%80%94%20%E7%BB%84%E7%BB%87%E8%AF%8A%E6%96%AD-%E8%A7%82%E6%B5%8B%E5%88%B0%CE%B5_eff%E4%B8%8B%E9%99%8D30%25%2C%E4%BB%85%E4%BB%8E%CE%B5_eff%E6%97%A0%E6%B3%95%E5%88%A4%E6%96%AD%E6%9D%A5%E6%BA%90%E3%80%82%E6%BD%AE%E6%B1%90%E5%8A%9B%E5%88%86%E6%9E%90-%E7%BB%8F%E6%B5%8E%E7%BB%B4%E5%BA%A6%CE%B5_econ%E4%B8%8B%E9%99%8D50%25%E4%BD%86%E7%A4%BE%E4%BA%A4%E7%BB%B4%E5%BA%A6.md)
+- [中文：认知等效原理验证 — 组织诊断：观测到ε_eff下降30%，仅从ε_eff无法判断来源。潮汐力分析：经济维度ε_econ下降50%但社交维度ε_soci…](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-65c3853746ca4c98 / 中文：认知等效原理验证 — 组织诊断：观测到ε_eff下降30%，仅从ε_eff无法判断来源。潮汐力分析：经济维度ε_econ下降50%但社交维度ε_soci…
-  - 来源：`统一案例总表/0498-C-503-认知等效原理验证 — 组织诊断-观测到ε_eff下降30%,仅从ε_eff无法判断来源。潮汐力分析-经济维度ε_econ下降50%但社交维度.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [中文：认知黑洞验证 — 家暴受害者：4维锁定（经济/社交/心理/地理）→∏(1-σ)≈0.001→z_cog≈999→信号红移99.9%→外部几乎无法感知内部…](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0501-C-506-%E8%AE%A4%E7%9F%A5%E9%BB%91%E6%B4%9E%E9%AA%8C%E8%AF%81%20%E2%80%94%20%E5%AE%B6%E6%9A%B4%E5%8F%97%E5%AE%B3%E8%80%85-4%E7%BB%B4%E9%94%81%E5%AE%9A%28%E7%BB%8F%E6%B5%8E.md)
+- [中文：认知黑洞验证 — 家暴受害者：4维锁定（经济/社交/心理/地理）→∏(1-σ)≈0.001→z_cog≈999→信号红移99.9%→外部几乎无法感知内部…](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-a472c704543564f7 / 中文：认知黑洞验证 — 家暴受害者：4维锁定（经济/社交/心理/地理）→∏(1-σ)≈0.001→z_cog≈999→信号红移99.9%→外部几乎无法感知内部…
-  - 来源：`统一案例总表/0501-C-506-认知黑洞验证 — 家暴受害者-4维锁定(经济.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [中文：路径积分验证 — 创业决策：ℏ_eff=0.1时策略集中在最优路径附近（D118预测），ℏ_eff=0.8时策略分散在多条路径（非最优策略也有显著概率）…](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0484-C-486-%E8%B7%AF%E5%BE%84%E7%A7%AF%E5%88%86%E9%AA%8C%E8%AF%81%20%E2%80%94%20%E5%88%9B%E4%B8%9A%E5%86%B3%E7%AD%96-%C4%A7_eff%3D0.1%E6%97%B6%E7%AD%96%E7%95%A5%E9%9B%86%E4%B8%AD%E5%9C%A8%E6%9C%80%E4%BC%98%E8%B7%AF%E5%BE%84%E9%99%84%E8%BF%91%28D118%E9%A2%84%E6%B5%8B%29%2C%C4%A7_eff%3D0.8%E6%97%B6%E7%AD%96%E7%95%A5%E5%88%86%E6%95%A3%E5%9C%A8%E5%A4%9A%E6%9D%A1%E8%B7%AF%E5%BE%84%28%E9%9D%9E%E6%9C%80%E4%BC%98%E7%AD%96%E7%95%A5%E4%B9%9F.md)
+- [中文：路径积分验证 — 创业决策：ℏ_eff=0.1时策略集中在最优路径附近（D118预测），ℏ_eff=0.8时策略分散在多条路径（非最优策略也有显著概率）…](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-6ae72356cfec23e0 / 中文：路径积分验证 — 创业决策：ℏ_eff=0.1时策略集中在最优路径附近（D118预测），ℏ_eff=0.8时策略分散在多条路径（非最优策略也有显著概率）…
-  - 来源：`统一案例总表/0484-C-486-路径积分验证 — 创业决策-ħ_eff=0.1时策略集中在最优路径附近(D118预测),ħ_eff=0.8时策略分散在多条路径(非最优策略也.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D118；被引用：—
-- [中文：退相干验证 — 新员工入职6个月：r_cross从0.8→0.3→0.1（轨道逐步关闭），H从0.2→0.6→0.9（组织规范遮蔽增强），τ_decoherence从50→8→1.5（退相干加速）。6个月后只剩单轨=完全退相干=认知僵](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0483-C-485-%E9%80%80%E7%9B%B8%E5%B9%B2%E9%AA%8C%E8%AF%81%20%E2%80%94%20%E6%96%B0%E5%91%98%E5%B7%A5%E5%85%A5%E8%81%8C6%E4%B8%AA%E6%9C%88-r_cross%E4%BB%8E0.8%E2%86%920.3%E2%86%920.1%28%E8%BD%A8%E9%81%93%E9%80%90%E6%AD%A5%E5%85%B3%E9%97%AD%29%2CH%E4%BB%8E0.2%E2%86%920.6%E2%86%920.9%28%E7%BB%84%E7%BB%87%E8%A7%84%E8%8C%83%E9%81%AE%E8%94%BD%E5%A2%9E%E5%BC%BA%29%2C%CF%84.md)
+- [中文：退相干验证 — 新员工入职6个月：r_cross从0.8→0.3→0.1（轨道逐步关闭），H从0.2→0.6→0.9（组织规范遮蔽增强），τ_decoherence从50→8→1.5（退相干加速）。6个月后只剩单轨=完全退相干=认知僵](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-79b2e32d648bce34 / 中文：退相干验证 — 新员工入职6个月：r_cross从0.8→0.3→0.1（轨道逐步关闭），H从0.2→0.6→0.9（组织规范遮蔽增强），τ_decoherence从50→8→1.5（退相干加速）。6个月后只剩单轨=完全退相干=认知僵
-  - 来源：`统一案例总表/0483-C-485-退相干验证 — 新员工入职6个月-r_cross从0.8→0.3→0.1(轨道逐步关闭),H从0.2→0.6→0.9(组织规范遮蔽增强),τ.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D126；被引用：—
-- [中文：高学历低认知——认证投影大于认知投影](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0198-C-198-%E9%AB%98%E5%AD%A6%E5%8E%86%E4%BD%8E%E8%AE%A4%E7%9F%A5.md)
+- [中文：高学历低认知——认证投影大于认知投影](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-8048b4c406f7f531 / 中文：高学历低认知——认证投影大于认知投影
-  - 来源：`统一案例总表/0198-C-198-高学历低认知.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [中文：高学历低认知——认证投影大于认知投影 English: Rule-based English rendering pending human revie…](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0198-C-198-%E9%AB%98%E5%AD%A6%E5%8E%86%E4%BD%8E%E8%AE%A4%E7%9F%A5.md)
+- [中文：高学历低认知——认证投影大于认知投影 English: Rule-based English rendering pending human revie…](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-0593a9bb5b8f7cb0 / 中文：高学历低认知——认证投影大于认知投影 English: Rule-based English rendering pending human revie…
-  - 来源：`统一案例总表/0198-C-198-高学历低认知.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [中文：高维认知必然多轨](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0097-C-97-%E9%AB%98%E7%BB%B4%E8%AE%A4%E7%9F%A5%E5%BF%85%E7%84%B6%E5%A4%9A%E8%BD%A8.md)
+- [中文：高维认知必然多轨](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-5e7c93c899e27cf0 / 中文：高维认知必然多轨
-  - 来源：`统一案例总表/0097-C-97-高维认知必然多轨.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [中文：高维认知必然多轨 English: Rule-based English rendering pending human review.](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0097-C-97-%E9%AB%98%E7%BB%B4%E8%AE%A4%E7%9F%A5%E5%BF%85%E7%84%B6%E5%A4%9A%E8%BD%A8.md)
+- [中文：高维认知必然多轨 English: Rule-based English rendering pending human review.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-47beffc3f8ced634 / 中文：高维认知必然多轨 English: Rule-based English rendering pending human review.
-  - 来源：`统一案例总表/0097-C-97-高维认知必然多轨.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
 - [人为什么会产生偏见？这是心理学和认知科学中的经典问题，涉及认知、情感、社会等多重因素。](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-5d1a5085976f30b9 / 人为什么会产生偏见？这是心理学和认知科学中的经典问题，涉及认知、情感、社会等多重因素。
   - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
   - 依赖：—；被引用：—
-- [人体一直更新但认知不自动更新。身体更新=细胞替换（硬件层），认知更新=框架替换（软件层）。硬件更新有模板（DNA），软件更新需主动拆H——而H随专业化升高。死亡必然性：V(t)=I(t)-M(t)必然穿过零点](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0113-C-113-%E4%BA%BA%E4%BD%93%E5%BF%92%E4%BF%AE%E6%96%AF.md)
+- [人体一直更新但认知不自动更新。身体更新=细胞替换（硬件层），认知更新=框架替换（软件层）。硬件更新有模板（DNA），软件更新需主动拆H——而H随专业化升高。死亡必然性：V(t)=I(t)-M(t)必然穿过零点](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-E4CF7945FE64EAF9 / 人体一直更新但认知不自动更新。身体更新=细胞替换（硬件层），认知更新=框架替换（软件层）。硬件更新有模板（DNA），软件更新需主动拆H——而H随专业化升高。死亡必然性：V(t)=I(t)-M(t)必然穿过零点 / IMPLICIT-E4CF7945FE64EAF9
-  - 来源：`统一案例总表/0113-C-113-人体忒修斯.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [人体一直更新但认知不自动更新。身体更新=细胞替换（硬件层），认知更新=框架替换（软件层）。硬件更新有模板（DNA），软件更新需主动拆H——而H随专业化升高。死亡必然性：V(t)=I(t)-M(t)必然穿过零点](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0113-C-113-%E4%BA%BA%E4%BD%93%E5%BF%92%E4%BF%AE%E6%96%AF.md)
+- [人体一直更新但认知不自动更新。身体更新=细胞替换（硬件层），认知更新=框架替换（软件层）。硬件更新有模板（DNA），软件更新需主动拆H——而H随专业化升高。死亡必然性：V(t)=I(t)-M(t)必然穿过零点](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-238c0c26763caf4f / 人体一直更新但认知不自动更新。身体更新=细胞替换（硬件层），认知更新=框架替换（软件层）。硬件更新有模板（DNA），软件更新需主动拆H——而H随专业化升高。死亡必然性：V(t)=I(t)-M(t)必然穿过零点
-  - 来源：`统一案例总表/0113-C-113-人体忒修斯.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
 - [人类智能（认知调取、适应性演化、连续演化）](../../../docs/phi_meta_law.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
@@ -1784,205 +1894,205 @@
   - 可搜索名称：NFC-15149ae435592760 / 六、外部证据 pending
   - 来源：`outputs/collisions/20260711-disobedience-subjectivity/candidate-decision-summary.md`
   - 依赖：—；被引用：—
-- [关键发现：A1-A3=认知空间投影](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0642-C-647-%E9%80%80%E5%87%BA%E6%9D%83%E7%A9%BA%E9%97%B4%E6%A1%88%E4%BE%8B27.md)
+- [关键发现：A1-A3=认知空间投影](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-875d101c10833930 / 关键发现：A1-A3=认知空间投影
-  - 来源：`统一案例总表/0642-C-647-退出权空间案例27.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：A1, A3；被引用：—
-- [关键发现：APP不Agent化必死：d_relative(t)=d_得到大脑(t)/d_竞品(t)单调递增。竞品d在降（Agent能力让退出代价趋零），得到大脑d不变→穿过θ_d时P_forward归零。内容优势=f(P_infra)≈0的乘法归零](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0125-C-125-%E5%A4%A7%E8%84%91%E8%BF%9B%E5%8C%96%E4%B8%BAAgent.md)
+- [关键发现：APP不Agent化必死：d_relative(t)=d_得到大脑(t)/d_竞品(t)单调递增。竞品d在降（Agent能力让退出代价趋零），得到大脑d不变→穿过θ_d时P_forward归零。内容优势=f(P_infra)≈0的乘法归零](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-AC9BF45F7F5E4382 / 关键发现：APP不Agent化必死：d_relative(t)=d_得到大脑(t)/d_竞品(t)单调递增。竞品d在降（Agent能力让退出代价趋零），得到大脑d不变→穿过θ_d时P_forward归零。内容优势=f(P_infra)≈0的乘法归零 / IMPLICIT-AC9BF45F7F5E4382
-  - 来源：`统一案例总表/0125-C-125-大脑进化为Agent.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [关键发现：人体一直更新但认知不自动更新。身体更新=细胞替换（硬件层），认知更新=框架替换（软件层）。硬件更新有模板（DNA），软件更新需主动拆H——而H随专业化升高。死亡必然性：V(t)=I(t)-M(t)必然穿过零点](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0113-C-113-%E4%BA%BA%E4%BD%93%E5%BF%92%E4%BF%AE%E6%96%AF.md)
+- [关键发现：人体一直更新但认知不自动更新。身体更新=细胞替换（硬件层），认知更新=框架替换（软件层）。硬件更新有模板（DNA），软件更新需主动拆H——而H随专业化升高。死亡必然性：V(t)=I(t)-M(t)必然穿过零点](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-D95F90EBF205226D / 关键发现：人体一直更新但认知不自动更新。身体更新=细胞替换（硬件层），认知更新=框架替换（软件层）。硬件更新有模板（DNA），软件更新需主动拆H——而H随专业化升高。死亡必然性：V(t)=I(t)-M(t)必然穿过零点 / IMPLICIT-D95F90EBF205226D
-  - 来源：`统一案例总表/0113-C-113-人体忒修斯.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [关键发现：人体一直更新但认知不自动更新。身体更新=细胞替换（硬件层），认知更新=框架替换（软件层）。硬件更新有模板（DNA），软件更新需主动拆H——而H随专业化升高。死亡必然性：V(t)=I(t)-M(t)必然穿过零点](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0113-C-113-%E4%BA%BA%E4%BD%93%E5%BF%92%E4%BF%AE%E6%96%AF.md)
+- [关键发现：人体一直更新但认知不自动更新。身体更新=细胞替换（硬件层），认知更新=框架替换（软件层）。硬件更新有模板（DNA），软件更新需主动拆H——而H随专业化升高。死亡必然性：V(t)=I(t)-M(t)必然穿过零点](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-cc0cf073d80cabbd / 关键发现：人体一直更新但认知不自动更新。身体更新=细胞替换（硬件层），认知更新=框架替换（软件层）。硬件更新有模板（DNA），软件更新需主动拆H——而H随专业化升高。死亡必然性：V(t)=I(t)-M(t)必然穿过零点
-  - 来源：`统一案例总表/0113-C-113-人体忒修斯.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0080-C-80-%E8%AE%A4%E7%9F%A5-%E5%8F%AF%E9%80%89%E9%9B%86%E8%9E%BA%E6%97%8B.md)
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-8ce2214eb1506e11 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
-  - 来源：`统一案例总表/0080-C-80-认知-可选集螺旋.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0097-C-97-%E9%AB%98%E7%BB%B4%E8%AE%A4%E7%9F%A5%E5%BF%85%E7%84%B6%E5%A4%9A%E8%BD%A8.md)
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-3a7e3d2240075f25 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
-  - 来源：`统一案例总表/0097-C-97-高维认知必然多轨.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0108-C-108-%E8%AE%A4%E7%9F%A5%E7%8A%B9%E8%B1%AB%E5%9F%9F%E5%8E%8B%E7%BC%A9.md)
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-c6e384c38aca6353 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
-  - 来源：`统一案例总表/0108-C-108-认知犹豫域压缩.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0122-C-122-%E8%AE%A4%E7%9F%A5-%E7%BE%A4%E4%BD%93%E6%98%A0%E5%B0%84.md)
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-1546bb63ed0ad528 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
-  - 来源：`统一案例总表/0122-C-122-认知-群体映射.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0125-C-125-%E5%A4%A7%E8%84%91%E8%BF%9B%E5%8C%96%E4%B8%BAAgent.md)
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-d225eb3b3ae9d541 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
-  - 来源：`统一案例总表/0125-C-125-大脑进化为Agent.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0128-C-128-%E5%A4%A7%E8%84%91%E8%BF%9B%E5%8C%96%E4%B8%BAAgent.md)
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-94fde2ba146bb454 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
-  - 来源：`统一案例总表/0128-C-128-大脑进化为Agent.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0135-C-135-%E5%A4%A7%E8%84%91%E8%BF%9B%E5%8C%96%E4%B8%BAAgent.md)
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-7a4aeeea3d83c19a / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
-  - 来源：`统一案例总表/0135-C-135-大脑进化为Agent.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0145-C-145-%E5%9C%B0%E7%90%86%E7%BA%A6%E6%9D%9F%C3%97%E8%AE%A4%E7%9F%A5%E7%BA%A6%E6%9D%9F.md)
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-f97f337841201795 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
-  - 来源：`统一案例总表/0145-C-145-地理约束×认知约束.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0149-C-149-%E4%BF%A1%E6%81%AF%E5%AF%86%E5%BA%A6%C3%97%E8%AE%A4%E7%9F%A5%E5%AE%B9%E9%87%8F.md)
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-1925c4353944b82b / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
-  - 来源：`统一案例总表/0149-C-149-信息密度×认知容量.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0161-C-161-%E8%B4%A2%E5%AF%8C-%E8%AE%A4%E7%9F%A5%E8%80%A6%E5%90%88.md)
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-60ee3a4a79939c1c / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
-  - 来源：`统一案例总表/0161-C-161-财富-认知耦合.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0175-C-175-%E7%94%B5%E5%8A%9B%E7%BA%A7%E8%81%94%E5%A4%B1%E6%95%88%C3%97%E8%AE%A4%E7%9F%A5%E5%B9%B3%E6%96%B9%E8%A1%B0%E5%87%8F%C3%97AI%E5%85%B1%E9%9C%87%E2%80%94%E2%80%94%E8%B7%A8%E5%9F%9F%E5%90%8C%E6%9E%84.md)
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-94c2dd49c10d17ac / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
-  - 来源：`统一案例总表/0175-C-175-电力级联失效×认知平方衰减×AI共震——跨域同构.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0185-C-185-%E7%B3%96%E5%9F%9F%E5%AE%9E%E9%AA%8C%C3%97%E8%AE%A4%E7%9F%A5%E8%9E%BA%E6%97%8B.md)
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-916cf16e9b15eb0f / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
-  - 来源：`统一案例总表/0185-C-185-糖域实验×认知螺旋.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0198-C-198-%E9%AB%98%E5%AD%A6%E5%8E%86%E4%BD%8E%E8%AE%A4%E7%9F%A5.md)
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-62b87ffbae604806 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
-  - 来源：`统一案例总表/0198-C-198-高学历低认知.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0199-C-199-%E5%88%9D%E4%B8%AD%E8%82%84%E4%B8%9A%E9%AB%98%E8%AE%A4%E7%9F%A5.md)
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-d038835c96dc2c31 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
-  - 来源：`统一案例总表/0199-C-199-初中肄业高认知.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0206-C-206-%E8%AE%A4%E7%9F%A5%E5%B1%82%E7%BA%A7%E9%AB%98.md)
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-aeea3a8f1189055e / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
-  - 来源：`统一案例总表/0206-C-206-认知层级高.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0207-C-207-%E5%8D%95%E8%BD%A8%E8%BF%90%E8%A1%8C%E7%9A%84%E8%AE%A4%E7%9F%A5%E4%B8%8A%E7%95%8C.md)
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-cbf4753959522f1e / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
-  - 来源：`统一案例总表/0207-C-207-单轨运行的认知上界.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0209-C-209-%E7%AC%A6%E5%8F%B7%E8%BF%90%E7%AE%97%E7%9A%84%E8%AE%A4%E7%9F%A5%E6%83%AF%E6%80%A7.md)
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-1db55f623a3146f8 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
-  - 来源：`统一案例总表/0209-C-209-符号运算的认知惯性.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0246-C-246-%E8%AE%A4%E7%9F%A5%E5%A4%B1%E8%B0%83%E4%B9%98%E6%B3%95.md)
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-a859bf29bd80c64a / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
-  - 来源：`统一案例总表/0246-C-246-认知失调乘法.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0267-C-267-%E8%AE%A4%E7%9F%A5%E6%89%A9%E5%BC%A0%E4%BD%86%E6%94%B6%E7%9B%8A%E4%B8%8D%E6%B6%A8.md)
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-204f6466dee68949 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
-  - 来源：`统一案例总表/0267-C-267-认知扩张但收益不涨.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0311-C-311-%E5%86%B2%E5%8A%A8%E4%BA%A4%E6%98%93%E8%80%85%20%E2%80%94%20%CE%B7select%E2%89%880.9%2C%CE%B7kelly%E2%89%880.3%2C%CE%B7time%E2%89%880.7%2C%CE%A0cognition%E5%B0%8F%2C%E4%B9%98%E7%A7%AF%3D0.189%C3%97%E5%B0%8F.md)
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-fb15070e293ff940 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD
-  - 来源：`统一案例总表/0311-C-311-冲动交易者 — ηselect≈0.9,ηkelly≈0.3,ηtime≈0.7,Πcognition小,乘积=0.189×小.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0313-C-313-%E5%B7%B4%E8%8F%B2%E7%89%B9%E6%A8%A1%E5%BC%8F%20%E2%80%94%20%CE%B7select%E2%89%880.01%2C%CE%B7kelly%E2%89%880.95%2C%CE%B7time%E2%89%880.99%2C%CE%A0cognition%E6%9E%81%E5%A4%A7%2C%E4%B9%98%E7%A7%AF%3D0.0094%C3%97%E6%9E%81%E5%A4%A7-.md)
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-d1b5df3f19834557 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD
-  - 来源：`统一案例总表/0313-C-313-巴菲特模式 — ηselect≈0.01,ηkelly≈0.95,ηtime≈0.99,Πcognition极大,乘积=0.0094×极大-.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0350-C-351-%E5%85%B3%E7%B3%BB%E4%B8%AD%E7%9A%84%CE%BC%E5%80%92U%E5%9E%8B%20%E2%80%94%20%E6%81%8B%E7%88%B1%E5%88%9D%E6%9C%9F%E9%AB%98%E8%AE%A4%E7%9F%A5%E6%96%B9%E7%A7%AF%E6%9E%81%E9%99%8D%E7%BB%B4%28-%E4%BB%96%E5%A5%BD%E6%87%82%E6%88%91-%29%2C6%E4%B8%AA%E6%9C%88%E5%90%8E%E9%99%8D%E7%BB%B4%E7%96%B2%E6%83%AB%E2%86%92%CE%BC%E7%BF%BB%E8%BD%AC%E2%86%92-%E4%BB%96%E6%A0%B9%E6%9C%AC%E4%B8%8D%E7%90%86%E8%A7%A3%E6%88%91-.md)
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-c4ae4a7762b8a14f / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
-  - 来源：`统一案例总表/0350-C-351-关系中的μ倒U型 — 恋爱初期高认知方积极降维(-他好懂我-),6个月后降维疲惫→μ翻转→-他根本不理解我-.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0351-C-352-%E8%AE%A4%E7%9F%A5%E5%B7%AE%E8%B7%9D%E4%B8%8E%E7%BF%BB%E8%BD%AC%E9%80%9F%E5%BA%A6%20%E2%80%94%20BH.md)
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-b4d63fdb5fd7b1b3 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
-  - 来源：`统一案例总表/0351-C-352-认知差距与翻转速度 — BH.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0363-C-364-%E8%AE%A4%E7%9F%A5%E5%B7%AE%E8%B7%9D%E4%B8%8E%E7%BF%BB%E8%BD%AC%E9%80%9F%E5%BA%A6%E5%AF%B9%E6%AF%94%20%E2%80%94%20BH.md)
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-53a64505839d82ce / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
-  - 来源：`统一案例总表/0363-C-364-认知差距与翻转速度对比 — BH.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0427-C-428-%E5%85%83%E8%AE%A4%E7%9F%A5%E9%99%8D%E4%BD%8E%E9%97%A8%E6%A7%9B%E2%80%94%E2%80%94%E9%99%8D%E4%BD%8E%CE%9B_understanding%E7%9A%84%E7%BB%93%E6%9E%84%E4%BF%9D%E5%AE%88%E6%80%A7%E7%AD%96%E7%95%A5.md)
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-c26e43a06753923e / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
-  - 来源：`统一案例总表/0427-C-428-元认知降低门槛——降低Λ_understanding的结构保守性策略.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD(ε-θC,不满但没行动力,β小,可以探索各种方向);阶段2(ε≈θC,积累到临界点,](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0444-C-445-%E4%B8%89%E9%98%B6%E6%AE%B5%E6%93%8D%E4%BD%9C%E5%8D%8F%E8%AE%AE%E9%AA%8C%E8%AF%81%20%E2%80%94%20%E4%B8%AA%E4%BA%BA%E8%81%8C%E4%B8%9A%E8%BD%AC%E5%9E%8B-%E9%98%B6%E6%AE%B51%28%CE%B5-%CE%B8C%2C%E4%B8%8D%E6%BB%A1%E4%BD%86%E6%B2%A1%E8%A1%8C%E5%8A%A8%E5%8A%9B%2C%CE%B2%E5%B0%8F%2C%E5%8F%AF%E4%BB%A5%E6%8E%A2%E7%B4%A2%E5%90%84%E7%A7%8D%E6%96%B9%E5%90%91%29%3B%E9%98%B6%E6%AE%B52%28%CE%B5%E2%89%88%CE%B8C%2C%E7%A7%AF%E7%B4%AF%E5%88%B0%E4%B8%B4%E7%95%8C%E7%82%B9%2C%CE%B2%E5%A4%A7%2C%E5%BF%85%E9%A1%BB.md)
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD(ε-θC,不满但没行动力,β小,可以探索各种方向);阶段2(ε≈θC,积累到临界点,](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-9a0d8d0f6704bc55 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD(ε-θC,不满但没行动力,β小,可以探索各种方向);阶段2(ε≈θC,积累到临界点,
-  - 来源：`统一案例总表/0444-C-445-三阶段操作协议验证 — 个人职业转型-阶段1(ε-θC,不满但没行动力,β小,可以探索各种方向);阶段2(ε≈θC,积累到临界点,β大,必须.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD(单轨),ε_aware=0,Fisher可达性=0。新信息存在但无法整合=信](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0468-C-469-%E8%AE%A4%E7%9F%A5%E5%83%B5%E5%8C%96Fisher%E8%A7%A3%E9%87%8A%20%E2%80%94%20%E4%B8%93%E5%AE%B6P_track%3D1%28%E5%8D%95%E8%BD%A8%29%2C%CE%B5_aware%3D0%2CFisher%E5%8F%AF%E8%BE%BE%E6%80%A7%3D0%E3%80%82%E6%96%B0%E4%BF%A1%E6%81%AF%E5%AD%98%E5%9C%A8%E4%BD%86%E6%97%A0%E6%B3%95%E6%95%B4%E5%90%88%3D%E4%BF%A1%E6%81%AF%E5%9C%A8Fis.md)
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD(单轨),ε_aware=0,Fisher可达性=0。新信息存在但无法整合=信](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-f298c0bf5fdd39ea / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD(单轨),ε_aware=0,Fisher可达性=0。新信息存在但无法整合=信
-  - 来源：`统一案例总表/0468-C-469-认知僵化Fisher解释 — 专家P_track=1(单轨),ε_aware=0,Fisher可达性=0。新信息存在但无法整合=信息在Fis.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0471-C-472-%E5%A4%A7%E8%84%91%E5%85%A8%E5%B1%80%CF%83-%CF%83_opt%E4%BD%86%E5%B1%80%E9%83%A8%E6%9C%80%E4%BC%98%20%E2%80%94%20%E5%85%A8%E5%B1%80%CF%83%E2%89%88104%2C%E5%B1%80%E9%83%A8%E5%8A%9F%E8%83%BD%E6%9F%B1%CF%83%E2%89%881.0.md)
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-69eb12000f124c54 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
-  - 来源：`统一案例总表/0471-C-472-大脑全局σ-σ_opt但局部最优 — 全局σ≈104,局部功能柱σ≈1.0.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD(2条弱关联轨道),通才r_cross≈0.6(5条强关联轨道)。面对新](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0479-C-481-%E8%AE%A4%E7%9F%A5%E5%8F%A0%E5%8A%A0%E9%AA%8C%E8%AF%81%20%E2%80%94%20%E4%B8%93%E5%AE%B6vs%E9%80%9A%E6%89%8D-%E4%B8%93%E5%AE%B6r_cross%E2%89%880.1%282%E6%9D%A1%E5%BC%B1%E5%85%B3%E8%81%94%E8%BD%A8%E9%81%93%29%2C%E9%80%9A%E6%89%8Dr_cross%E2%89%880.6%285%E6%9D%A1%E5%BC%BA%E5%85%B3%E8%81%94%E8%BD%A8%E9%81%93%29%E3%80%82%E9%9D%A2%E5%AF%B9%E6%96%B0%E9%97%AE%E9%A2%98%E9%80%9A%E6%89%8D5.md)
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD(2条弱关联轨道),通才r_cross≈0.6(5条强关联轨道)。面对新](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-568885900204ce6b / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD(2条弱关联轨道),通才r_cross≈0.6(5条强关联轨道)。面对新
-  - 来源：`统一案例总表/0479-C-481-认知叠加验证 — 专家vs通才-专家r_cross≈0.1(2条弱关联轨道),通才r_cross≈0.6(5条强关联轨道)。面对新问题通才5.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD(D118预测),ħ_eff=0.8时策略分散在多条路径(非](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0484-C-486-%E8%B7%AF%E5%BE%84%E7%A7%AF%E5%88%86%E9%AA%8C%E8%AF%81%20%E2%80%94%20%E5%88%9B%E4%B8%9A%E5%86%B3%E7%AD%96-%C4%A7_eff%3D0.1%E6%97%B6%E7%AD%96%E7%95%A5%E9%9B%86%E4%B8%AD%E5%9C%A8%E6%9C%80%E4%BC%98%E8%B7%AF%E5%BE%84%E9%99%84%E8%BF%91%28D118%E9%A2%84%E6%B5%8B%29%2C%C4%A7_eff%3D0.8%E6%97%B6%E7%AD%96%E7%95%A5%E5%88%86%E6%95%A3%E5%9C%A8%E5%A4%9A%E6%9D%A1%E8%B7%AF%E5%BE%84%28%E9%9D%9E%E6%9C%80%E4%BC%98%E7%AD%96%E7%95%A5%E4%B9%9F.md)
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD(D118预测),ħ_eff=0.8时策略分散在多条路径(非](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-bdaee497cf2afff5 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD(D118预测),ħ_eff=0.8时策略分散在多条路径(非
-  - 来源：`统一案例总表/0484-C-486-路径积分验证 — 创业决策-ħ_eff=0.1时策略集中在最优路径附近(D118预测),ħ_eff=0.8时策略分散在多条路径(非最优策略也.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D118；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD(专家)平均决策时间2分钟,ε低的决策者(新手)平均决策时间8分钟。同样事件,新手](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0497-C-502-%E8%AE%A4%E7%9F%A5%E6%97%B6%E9%97%B4%E8%86%A8%E8%83%80%E9%AA%8C%E8%AF%81%20%E2%80%94%20%E5%8D%B1%E6%9C%BA%E5%86%B3%E7%AD%96%E5%AE%9E%E9%AA%8C-%CE%B5%E9%AB%98%E7%9A%84%E5%86%B3%E7%AD%96%E8%80%85%28%E4%B8%93%E5%AE%B6%29%E5%B9%B3%E5%9D%87%E5%86%B3%E7%AD%96%E6%97%B6%E9%97%B42%E5%88%86%E9%92%9F%2C%CE%B5%E4%BD%8E%E7%9A%84%E5%86%B3%E7%AD%96%E8%80%85%28%E6%96%B0%E6%89%8B%29%E5%B9%B3%E5%9D%87%E5%86%B3%E7%AD%96%E6%97%B6%E9%97%B48%E5%88%86%E9%92%9F%E3%80%82%E5%90%8C%E6%A0%B7%E4%BA%8B%E4%BB%B6%2C%E6%96%B0%E6%89%8B%E6%84%9F%E7%9F%A5%E6%97%B6%E9%97%B4%E8%86%A8.md)
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD(专家)平均决策时间2分钟,ε低的决策者(新手)平均决策时间8分钟。同样事件,新手](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-1b7eb69995f91364 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD(专家)平均决策时间2分钟,ε低的决策者(新手)平均决策时间8分钟。同样事件,新手
-  - 来源：`统一案例总表/0497-C-502-认知时间膨胀验证 — 危机决策实验-ε高的决策者(专家)平均决策时间2分钟,ε低的决策者(新手)平均决策时间8分钟。同样事件,新手感知时间膨.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0498-C-503-%E8%AE%A4%E7%9F%A5%E7%AD%89%E6%95%88%E5%8E%9F%E7%90%86%E9%AA%8C%E8%AF%81%20%E2%80%94%20%E7%BB%84%E7%BB%87%E8%AF%8A%E6%96%AD-%E8%A7%82%E6%B5%8B%E5%88%B0%CE%B5_eff%E4%B8%8B%E9%99%8D30%25%2C%E4%BB%85%E4%BB%8E%CE%B5_eff%E6%97%A0%E6%B3%95%E5%88%A4%E6%96%AD%E6%9D%A5%E6%BA%90%E3%80%82%E6%BD%AE%E6%B1%90%E5%8A%9B%E5%88%86%E6%9E%90-%E7%BB%8F%E6%B5%8E%E7%BB%B4%E5%BA%A6%CE%B5_econ%E4%B8%8B%E9%99%8D50%25%E4%BD%86%E7%A4%BE%E4%BA%A4%E7%BB%B4%E5%BA%A6.md)
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-b6704f544bdd8890 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD
-  - 来源：`统一案例总表/0498-C-503-认知等效原理验证 — 组织诊断-观测到ε_eff下降30%,仅从ε_eff无法判断来源。潮汐力分析-经济维度ε_econ下降50%但社交维度.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD(北欧)εi标准差0.08→R_cog≈0→策略趋同;不平等社会(巴西)εi标准差0.45](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0499-C-504-%E8%AE%A4%E7%9F%A5%E7%A9%BA%E9%97%B4%E6%9B%B2%E7%8E%87%E9%AA%8C%E8%AF%81%20%E2%80%94%20%E7%A4%BE%E4%BC%9A%E6%AF%94%E8%BE%83-%E5%9D%87%E5%8C%80%E7%A4%BE%E4%BC%9A%28%E5%8C%97%E6%AC%A7%29%CE%B5i%E6%A0%87%E5%87%86%E5%B7%AE0.08%E2%86%92R_cog%E2%89%880%E2%86%92%E7%AD%96%E7%95%A5%E8%B6%8B%E5%90%8C%3B%E4%B8%8D%E5%B9%B3%E7%AD%89%E7%A4%BE%E4%BC%9A%28%E5%B7%B4%E8%A5%BF%29%CE%B5i%E6%A0%87%E5%87%86%E5%B7%AE0.45%E2%86%92R_co.md)
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD(北欧)εi标准差0.08→R_cog≈0→策略趋同;不平等社会(巴西)εi标准差0.45](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-b29167c8de4b4ac0 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD(北欧)εi标准差0.08→R_cog≈0→策略趋同;不平等社会(巴西)εi标准差0.45
-  - 来源：`统一案例总表/0499-C-504-认知空间曲率验证 — 社会比较-均匀社会(北欧)εi标准差0.08→R_cog≈0→策略趋同;不平等社会(巴西)εi标准差0.45→R_co.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD(n_lock=3)的工程师v_max降低60%→5年可达状态减少75%→光锥严重收缩。解锁1](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0500-C-505-%E8%AE%A4%E7%9F%A5%E5%85%89%E9%94%A5%E9%AA%8C%E8%AF%81%20%E2%80%94%20%E8%81%8C%E4%B8%9A%E9%94%81%E5%AE%9A-3%E7%BB%B4%E9%94%81%E5%AE%9A%28n_lock%3D3%29%E7%9A%84%E5%B7%A5%E7%A8%8B%E5%B8%88v_max%E9%99%8D%E4%BD%8E60%25%E2%86%925%E5%B9%B4%E5%8F%AF%E8%BE%BE%E7%8A%B6%E6%80%81%E5%87%8F%E5%B0%9175%25%E2%86%92%E5%85%89%E9%94%A5%E4%B8%A5%E9%87%8D%E6%94%B6%E7%BC%A9%E3%80%82%E8%A7%A3%E9%94%811%E7%BB%B4%E5%90%8Ev_m.md)
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD(n_lock=3)的工程师v_max降低60%→5年可达状态减少75%→光锥严重收缩。解锁1](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-9ac6029fa4992e31 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD(n_lock=3)的工程师v_max降低60%→5年可达状态减少75%→光锥严重收缩。解锁1
-  - 来源：`统一案例总表/0500-C-505-认知光锥验证 — 职业锁定-3维锁定(n_lock=3)的工程师v_max降低60%→5年可达状态减少75%→光锥严重收缩。解锁1维后v_m.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0501-C-506-%E8%AE%A4%E7%9F%A5%E9%BB%91%E6%B4%9E%E9%AA%8C%E8%AF%81%20%E2%80%94%20%E5%AE%B6%E6%9A%B4%E5%8F%97%E5%AE%B3%E8%80%85-4%E7%BB%B4%E9%94%81%E5%AE%9A%28%E7%BB%8F%E6%B5%8E.md)
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-5367539173cfc782 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
-  - 来源：`统一案例总表/0501-C-506-认知黑洞验证 — 家暴受害者-4维锁定(经济.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/0614-C-619-%E5%A4%A7%E8%84%91%E5%AE%B9%E9%87%8F%E7%A9%BA%E9%97%B4%E9%AA%8C%E8%AF%81.md)
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-7aa36b664628fecb / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
-  - 来源：`统一案例总表/0614-C-619-大脑容量空间验证.md`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
 - [后续 Agent 或人类可先填写\[之元写作法后台规格\](../../../templates/publication/zhiyuan-writing-spec.md)，再对照\[内部范例与反例\](../../../docs/publication/zhiyuan-writing-method.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -2016,6 +2126,16 @@
   - 可搜索名称：NFC-31941b821aa95fc4 / 学科证据制度误配（用结构性推论替代文本细读、认知实验、传播效果研究、教育评估）
   - 来源：`outputs/getbrain/classic-problems-benchmark-supplement-20260707.md`
   - 依赖：—；被引用：—
+- [宇宙年龄是D195认知宇宙学的时间维度。宇宙年龄→认知时空时间演化→门控面Λ时间演化→统一窗口变化。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-bd204f0acee2c71c / 宇宙年龄是D195认知宇宙学的时间维度。宇宙年龄→认知时空时间演化→门控面Λ时间演化→统一窗口变化。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D195；被引用：—
+- [宇宙膨胀是D195认知宇宙学的尺度演化。宇宙膨胀→认知时空尺度扩张→门控面Λ扩张→统一难度增加。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-7f4e56d5a0b2b5c3 / 宇宙膨胀是D195认知宇宙学的尺度演化。宇宙膨胀→认知时空尺度扩张→门控面Λ扩张→统一难度增加。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D195；被引用：—
 - [对应旧条目：D244 自主意识涌现临界条件（量化相关）、D173 显态粘性。](../../../outputs/collisions/20260708-teacher-competition/expanded-notes.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-c479363103038cc7 / 对应旧条目：D244 自主意识涌现临界条件（量化相关）、D173 显态粘性。
@@ -2186,9 +2306,9 @@
   - 可搜索名称：NFC-f87b0d445fa121a0 / 索引可见性验证（*-index-visibility-check）；
   - 来源：`outputs/audit/agent-project-understanding-20260708.md`
   - 依赖：—；被引用：—
-- [统一案例总表**（`统一案例总表/`）：790 条案例（`C-xxxx`，如 C-11 英国光荣革命、C-26 戈尔巴乔夫改革、C-50 华为员工持股）。](../../../outputs/audit/agent-project-understanding-20260708.md)
+- [历史案例来源**（`已迁移的历史案例来源/`）：790 条案例（`C-xxxx`，如 C-11 英国光荣革命、C-26 戈尔巴乔夫改革、C-50 华为员工持股）。](../../../outputs/audit/agent-project-understanding-20260708.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-62d5009364d21905 / 统一案例总表**（`统一案例总表/`）：790 条案例（`C-xxxx`，如 C-11 英国光荣革命、C-26 戈尔巴乔夫改革、C-50 华为员工持股）。
+  - 可搜索名称：NFC-62d5009364d21905 / 历史案例来源**（`已迁移的历史案例来源/`）：790 条案例（`C-xxxx`，如 C-11 英国光荣革命、C-26 戈尔巴乔夫改革、C-50 华为员工持股）。
   - 来源：`outputs/audit/agent-project-understanding-20260708.md`
   - 依赖：—；被引用：—
 - [补齐原 121Q6 未完成的 Step 019–024：35 项资产桥接审计、只读导入器、资产 E2E、Function OS 专属 CI（py3.10/3.11/3.12）、严格验证、最终报告/seal。](../../../agent-results/IGNITION-121Q6C-result.md)
@@ -2210,6 +2330,16 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-6626dcf558b0ee25 / 认知叠加验证 — 专家vs通才-专家r_cross≈0.1(2条弱关联轨道),通才r_cross≈0.6(5条强关联轨道)。面对新问题通才5
   - 来源：`data/foundation/evidence/evidence.jsonl`
+  - 依赖：—；被引用：—
+- [认知宇宙学案例验证。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-58272396150348b2 / 认知宇宙学案例验证。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [认知时空度规案例验证。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-11f524fb8cd469bd / 认知时空度规案例验证。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
 - [认知时间膨胀验证 — 危机决策实验-ε高的决策者(专家)平均决策时间2分钟,ε低的决策者(新手)平均决策时间8分钟。同样事件,新手感知时间膨](../../../data/foundation/evidence/evidence.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
@@ -2245,6 +2375,11 @@
   - 类型/状态：`RESULT_OR_ARTICLE` · `HISTORICAL_COMPLETION_RECORD`
   - 可搜索名称：认知迁移编辑修订：来源与边界记录 / cognitive-migration-editorial-revision-source
   - 来源：`docs/publication/method-sources/cognitive-migration-editorial-revision-source.md`
+  - 依赖：—；被引用：—
+- [认知黑洞案例验证。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-a29e905c2b9281df / 认知黑洞案例验证。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
 - [认知黑洞验证 — 家暴受害者-4维锁定(经济](../../../data/foundation/evidence/evidence.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
@@ -2345,4 +2480,14 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-867c46db66e9d9a3 / 高维认知必然多轨
   - 来源：`data/foundation/evidence/evidence.jsonl`
+  - 依赖：—；被引用：—
+- [高维认知必然多轨→dim>1 ⟹ P_track>1。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-327e15ff9aa41084 / 高维认知必然多轨→dim>1 ⟹ P_track>1。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [高维认知必然多轨，dim>1 ⟹ P_track>1。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-85640f353af87559 / 高维认知必然多轨，dim>1 ⟹ P_track>1。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—

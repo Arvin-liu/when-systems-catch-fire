@@ -36,7 +36,8 @@ CORE = [
     "RESULTS/SELF-CORRECTION-AUDIT.md",
     "PUBLICATIONS/pointfire-results-book/12-火种：点火跑出来的发现、问题与写作种子.md",
     "docs/human/function-assets/README.md",
-    "docs/human/nonfunction-claims/README.md",
+    "docs/human/nonfunction-assets/README.md",
+    "docs/governance/human-surface-editorial-contract.md",
 ]
 CRITICAL_DESTINATIONS = {
     "ignition/RESULTS/LATEST.md",
@@ -57,7 +58,8 @@ CRITICAL_DESTINATIONS = {
     "ignition/data/foundation/nonfunction-claims/closure-summary.json",
     "ignition/PUBLICATIONS/pointfire-results-book/12-火种：点火跑出来的发现、问题与写作种子.md",
     "ignition/docs/human/function-assets/README.md",
-    "ignition/docs/human/nonfunction-claims/README.md",
+    "ignition/docs/human/nonfunction-assets/README.md",
+    "ignition/docs/governance/human-surface-editorial-contract.md",
 }
 
 
@@ -115,6 +117,7 @@ def validate() -> dict:
         "AI-HANDOFF.md",
         "llms.txt",
         "docs/architecture/interactive-system-map.md",
+        "docs/governance/human-surface-editorial-contract.md",
         "docs/operations/stage-snapshot-publication.md",
         "data/operations/synchronization-surfaces.json",
         "data/operations/project-components.json",
@@ -126,6 +129,8 @@ def validate() -> dict:
         ".github/workflows/pages.yml",
         "pages/system-map.html",
         "pages/generated/ignition-system-map.svg",
+        "docs/generated/ignition-overall-architecture.svg",
+        "docs/generated/ignition-system-map.svg",
         "human.pages_source",
         "external.pages_homepage",
         "pages_pipeline",

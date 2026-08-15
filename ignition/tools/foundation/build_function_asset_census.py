@@ -16,6 +16,8 @@ import tempfile
 from collections import Counter, defaultdict
 from pathlib import Path
 
+from legacy_table_migration import current_or_archived_text, migration_paths
+
 ROOT = Path(__file__).resolve().parents[2]
 REPO_ROOT = ROOT.parent
 # In production ``ROOT`` is the application directory under the Git root;
@@ -46,6 +48,7 @@ EXPRESSION_ASSET = re.compile(
 GENERATED_PREFIXES = (
     "data/foundation/function-assets/",
     "data/foundation/nonfunction-claims/",
+    "data/foundation/migrations/",
     # Repository path accounting is a governed projection.  It must remain
     # visible to the path-accounting validator but cannot feed its serialized
     # rows back into function discovery.
@@ -66,8 +69,14 @@ GENERATED_PREFIXES = (
     "tools/publication/",
 )
 GENERATED_EXACT_PATHS = {
+    # Task 118 migration machinery is a deterministic archive reader/writer,
+    # not a function-asset source.  Keeping it outside the census prevents the
+    # migration implementation from feeding its own field names back into the
+    # foundation registry.
+    "tools/foundation/legacy_table_migration.py",
     "tools/generate_overall_architecture.py",
     "tools/governance/build_claim_browsers.py",
+    "tools/governance/validate_human_surface_contract.py",
     "tests/test_overall_architecture.py",
     "tests/test_fire_seeds.py",
     "data/architecture/overall-architecture.json",
@@ -126,6 +135,9 @@ def repo_path(relative: str) -> Path:
     return REPO_ROOT / relative if relative.startswith(".github/") else ROOT / relative
 
 
+migrated_source_text = lambda relative: current_or_archived_text(relative)
+
+
 def tracked_text_files() -> list[str]:
     raw = subprocess.check_output(["git", "ls-files", "--cached", "--others", "--exclude-standard", "-z"], cwd=GIT_ROOT).decode("utf-8")
     paths = []
@@ -133,7 +145,8 @@ def tracked_text_files() -> list[str]:
         item = raw_item[len("ignition/"):] if raw_item.startswith("ignition/") else raw_item
         if item and item not in GENERATED_EXACT_PATHS and not item.startswith(GENERATED_PREFIXES) and Path(item).suffix.lower() in TEXT_EXTENSIONS:
             paths.append(item)
-    return sorted(paths)
+    paths.extend(migration_paths())
+    return sorted(set(paths))
 
 
 def implicit_candidate(relative: str, line: str) -> bool:
@@ -241,12 +254,10 @@ def build(destination: Path) -> dict:
 
     for relative in files:
         source = repo_path(relative)
-        if not source.is_file():
+        raw = source.read_text(encoding="utf-8") if source.is_file() else migrated_source_text(relative)
+        if raw is None:
             continue
-        try:
-            lines = source.read_text(encoding="utf-8").splitlines()
-        except UnicodeDecodeError:
-            continue
+        lines = raw.splitlines()
         per_id: dict[str, list[int]] = defaultdict(list)
         for number, line in enumerate(lines, 1):
             for asset_id in sorted(set(EXPLICIT_ID.findall(line))):

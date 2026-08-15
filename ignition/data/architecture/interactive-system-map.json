@@ -3,8 +3,8 @@
   "map_version": "0.5.0",
   "historical_map_version": "0.4.0",
   "projection_status": "CURRENT_DERIVED_PROJECTION",
-  "title": "点火完整可点击系统图",
-  "subtitle": "0.5.0 Current 派生投影；0.4.0 为 Historical。语言—思维是横穿 L0—L6 的 overlay，不是 L7。路径、邻近与声明依赖不自动表示现实因果。",
+  "title": "点火唯一完整可点击总架构图",
+  "subtitle": "唯一完整总架构图；0.5.0 Current 派生投影，0.4.0 为 Historical。语言—思维横穿 L0—L6，不增加 L7；连线是仓库关系、同步义务或候选反馈，不自动表示现实因果。",
   "repository_url": "https://github.com/Arvin-liu/when-systems-catch-fire",
   "projection_authority": {
     "component_registry": "data/operations/project-components.json",
@@ -112,6 +112,14 @@
       "group": "front_doors",
       "target": ".github/README.md",
       "description": "项目现状、成果、价值约束、完整系统图与使用入口。",
+      "lifecycle_status": "current"
+    },
+    {
+      "id": "human_knowledge_surfaces",
+      "label": "知识体验入口与人类可读表面",
+      "group": "front_doors",
+      "target": "KNOWLEDGE/README.md",
+      "description": "机器记录与人类结果成对生成，并通过统一入口、What's New、主题地图、资产卡、分层阅读、全量搜索、别名与双向依赖在两步内可达。",
       "lifecycle_status": "current"
     },
     {
@@ -972,5 +980,24 @@
       "relation_class": "constraint",
       "relation_domain": "synchronization_obligation"
     }
-  ]
+  ],
+  "component_coverage": {
+    "registry_components": 63,
+    "visible_nodes": 52,
+    "hidden_components": 11,
+    "hidden_representatives": {
+      "foundation_data": "foundation",
+      "historical_reports": "current_state",
+      "incremental_execution": "iteration",
+      "stage_snapshot_publication": "iteration",
+      "iteration_manifest_contract": "iteration",
+      "project_component_registry": "sync",
+      "propagation_calculator": "iteration",
+      "propagation_topology": "sync",
+      "system_map": "current_state",
+      "system_map_layout": "sync",
+      "system_map_projection": "sync"
+    },
+    "orphan_components": []
+  }
 }

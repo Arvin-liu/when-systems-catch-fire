@@ -78,7 +78,7 @@
         "system_map_projection"
       ],
       "path_patterns": [
-        "docs/generated/ignition-system-map.svg"
+        "docs/generated/ignition-system-architecture.svg"
       ],
       "reason": "human_knowledge_surfaces owns readable repository navigation while system_map_projection owns the generated SVG under docs/generated/."
     },
@@ -832,9 +832,8 @@
         "status": "current"
       },
       "map_projection": {
-        "no_change_reason": "README 节点已经代表 HUMAN-READING 与 RESULTS 导航；不增加重复可见节点。",
-        "represented_by": "readme",
-        "visible": false
+        "group": "front_doors",
+        "visible": true
       },
       "path_patterns": [
         "HUMAN-READING.md",
@@ -843,7 +842,10 @@
         "data/governance/human-results/",
         "data/governance/knowledge-experience/",
         "data/governance/self-correction/",
-        "docs/generated/ignition-system-map.svg",
+        "docs/generated/ignition-system-architecture.svg",
+        "docs/governance/human-surface-editorial-contract.md",
+        "docs/human/function-assets/",
+        "docs/human/nonfunction-assets/",
         "docs/governance/knowledge-experience-layer.md",
         "schemas/governance/knowledge-asset-card.schema.json",
         "schemas/governance/knowledge-change.schema.json",
@@ -1270,13 +1272,13 @@
       "canonical_target": "data/architecture/interactive-system-map.json",
       "component_id": "system_map_projection",
       "component_type": "repository_infrastructure",
-      "description": "由 component registry、topology 与 layout overlay 确定性派生；0.4.0 当前投影延续 0.3.0、0.2.0 Historical 权威链。",
-      "label": "系统图 0.4 候选投影派生基础设施",
+      "description": "由 component registry、topology 与 layout overlay 确定性派生；0.5.0 是当前唯一完整可点击总架构图，0.4.0 与 0.3.0 为 Historical 权威链。",
+      "label": "系统图 0.5 唯一完整投影派生基础设施",
       "layer_or_overlay": "infrastructure",
       "lifecycle": {
         "source": "tools/generate_interactive_system_map.py",
         "status": "current",
-        "version": "0.4.0"
+        "version": "0.5.0"
       },
       "map_projection": {
         "no_change_reason": "完整 SVG 自身是全图投影，不应再作为图中的自指节点。",
@@ -1285,7 +1287,7 @@
       },
       "path_patterns": [
         "data/architecture/interactive-system-map.json",
-        "docs/generated/ignition-system-map.svg",
+        "docs/generated/ignition-system-architecture.svg",
         "tools/generate_interactive_system_map.py",
         "tools/validate_human_front_door.py",
         "tests/test_human_front_door.py",

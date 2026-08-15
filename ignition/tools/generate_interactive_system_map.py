@@ -15,7 +15,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_SPEC = ROOT / "data/architecture/interactive-system-map.json"
-DEFAULT_OUTPUT = ROOT / "docs/generated/ignition-system-map.svg"
+DEFAULT_OUTPUT = ROOT / "docs/generated/ignition-system-architecture.svg"
 COMPONENT_REGISTRY = ROOT / "data/operations/project-components.json"
 PROPAGATION_TOPOLOGY = ROOT / "data/operations/change-propagation-topology.json"
 LAYOUT_OVERLAY = ROOT / "data/architecture/interactive-system-map-layout.json"
@@ -88,6 +88,11 @@ def build_projection(
         if relation["map_visible"]
     ]
     require(all(edge["source"] in visible and edge["target"] in visible for edge in edges), "visible map relation references hidden component")
+    hidden_representatives = {
+        component_id: component["map_projection"]["represented_by"]
+        for component_id, component in components.items()
+        if not component["map_projection"]["visible"]
+    }
     return {
         "schema_version": "2.0.0",
         "map_version": layout_doc["current_map_version"],
@@ -108,6 +113,13 @@ def build_projection(
         "groups": layout_doc["groups"],
         "nodes": nodes,
         "edges": edges,
+        "component_coverage": {
+            "registry_components": len(components),
+            "visible_nodes": len(nodes),
+            "hidden_components": len(hidden_representatives),
+            "hidden_representatives": hidden_representatives,
+            "orphan_components": sorted(set(components) - visible - set(hidden_representatives)),
+        },
     }
 
 
@@ -158,6 +170,13 @@ def validate_spec(spec: dict, root: Path = ROOT) -> None:
     require(isinstance(groups, list) and groups, "system-map spec requires groups")
     require(isinstance(nodes, list) and nodes, "system-map spec requires nodes")
     require(isinstance(edges, list), "system-map spec requires edges")
+
+    if spec.get("schema_version") == "2.0.0":
+        coverage = spec.get("component_coverage", {})
+        require(coverage.get("registry_components") == len(nodes) + coverage.get("hidden_components", -1), "system-map component coverage counts are inconsistent")
+        require(coverage.get("visible_nodes") == len(nodes), "system-map component coverage has stale visible-node count")
+        require(coverage.get("orphan_components") == [], "system-map component coverage has orphan components")
+        require(isinstance(coverage.get("hidden_representatives"), dict), "system-map component coverage lacks hidden representatives")
 
     group_ids = [group.get("id") for group in groups]
     require(len(group_ids) == len(set(group_ids)), "duplicate system-map group id")

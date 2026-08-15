@@ -22,15 +22,15 @@
 
 先看[《火种：点火跑出来的发现、问题与写作种子》](../ignition/PUBLICATIONS/pointfire-results-book/12-火种：点火跑出来的发现、问题与写作种子.md)：它把现有成果、失败、边界和仍值得继续写作/研究的问题整理成可继续追踪的人类条目，不增加外部新颖性，也不替代来源、registry、M/E、proof、evidence 或 claim ceiling。
 
-随后按目的进入唯一[点火成果册](../ignition/PUBLICATIONS/pointfire-results-book/README.md)、[当前结果](../ignition/RESULTS/LATEST.md)、[开放问题](../ignition/RESULTS/OPEN-QUESTIONS.md)、[函数资产人类浏览器](../ignition/docs/human/function-assets/README.md)或[非函数断言人类浏览器](../ignition/docs/human/nonfunction-claims/README.md)。机器闭合摘要仍是机器记录入口；闭合只表示状态已被记录，不表示证明、外部证据、复制或现实真值已完成。
+随后按目的进入唯一[点火成果册](../ignition/PUBLICATIONS/pointfire-results-book/README.md)、[当前结果](../ignition/RESULTS/LATEST.md)、[开放问题](../ignition/RESULTS/OPEN-QUESTIONS.md)、[函数资产](../ignition/docs/human/function-assets/README.md)或[非函数资产](../ignition/docs/human/nonfunction-assets/README.md)。机器闭合摘要仍是机器记录入口；闭合只表示状态已被记录，不表示证明、外部证据、复制或现实真值已完成。
 
 ## 4. 整体架构
 
-![点火整体架构](../ignition/docs/generated/ignition-overall-architecture.svg)
+![点火唯一完整总架构图](../ignition/docs/generated/ignition-system-architecture.svg)
 
-[打开透明可点击整体架构 SVG](../ignition/docs/generated/ignition-overall-architecture.svg) · [查看详细技术系统图](../ignition/docs/generated/ignition-system-map.svg) · [查看架构维护说明](../ignition/docs/architecture/interactive-system-map.md)
+[打开透明可点击完整总架构图 SVG](../ignition/docs/generated/ignition-system-architecture.svg) · [查看 Human Surface 编辑契约](../ignition/docs/governance/human-surface-editorial-contract.md) · [查看架构维护说明](../ignition/docs/architecture/interactive-system-map.md)
 
-整体架构图是确定性导航投影：它表达仓库内的来源、状态、治理、执行、验证、人类阅读和出版之间的声明关系，不表达现实因果、严格同构、理论完备性或任何具体命题的新证据。详细技术系统图继续承担 registry、topology 和 layout 的技术导航职责；两张图都不是新的真值层。
+整体架构图是确定性导航投影：它表达仓库内的来源、状态、治理、执行、验证、人类阅读和出版之间的声明关系，不表达现实因果、严格同构、理论完备性或任何具体命题的新证据。图的 registry、topology 和 layout 仍是机器维护输入；总架构图不是新的真值层。
 
 ## 5. 致谢
 

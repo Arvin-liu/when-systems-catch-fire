@@ -21,7 +21,7 @@
 
 ## 兼容链
 
-统一函数总表和统一案例总表保留为 legacy source / compatibility view。不得删除、重编号、不可逆覆盖或独立生长。views/ 是从新 registry 生成的兼容视图。
+旧函数表与旧案例表已完成迁移并退役；原始路径、Git blob、提交、哈希、处置与转换说明统一保存在 `data/foundation/migrations/legacy-table-migration.jsonl`，canonical registry 与人类资产入口是当前阅读路由。不得从归档重新生长第二套当前表。
 
 ## 交接规则
 

@@ -33,18 +33,9 @@ def repo_path(rel):
     return next((path for path in candidates if path.exists()), candidates[0])
 
 def legacy_tables_preserved():
-    """Compare pre-root-normalization table blobs with current app-root files."""
-    base="fc3f2ae309ad3dd485716ab5675948a6a46cd75d"
-    for table in ("统一函数总表", "统一案例总表"):
-        listing=subprocess.run(["git","-c","core.quotePath=false","ls-tree","-r","--name-only",base,"--",table],cwd=GIT_ROOT,text=True,capture_output=True)
-        if listing.returncode != 0:
-            return False
-        for old_rel in [line for line in listing.stdout.splitlines() if line]:
-            old_blob=subprocess.run(["git","show",f"{base}:{old_rel}"],cwd=GIT_ROOT,capture_output=True).stdout
-            current=ROOT/old_rel
-            if not current.is_file() or current.read_bytes()!=old_blob:
-                return False
-    return True
+    """Verify the retired tables through the task-118 migration manifest."""
+    checker = ROOT / "tools/foundation/legacy_table_migration.py"
+    return subprocess.run([sys.executable, str(checker), "--check"], cwd=ROOT, stdout=subprocess.DEVNULL).returncode == 0
 
 def schema_ok(schema_rel, rows):
     schema=json.loads((ROOT/schema_rel).read_text(encoding="utf-8"))
