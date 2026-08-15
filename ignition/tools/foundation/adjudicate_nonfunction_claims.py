@@ -21,6 +21,7 @@ from pathlib import Path
 from typing import Iterable
 
 from legacy_table_migration import current_or_archived_text, migration_paths
+from knowledge_corpus_admission import admission_for_path
 
 ROOT = Path(__file__).resolve().parents[2]
 REPO_ROOT = ROOT.parent
@@ -92,6 +93,9 @@ SELF_EXCLUDES = {
     # foundation generators or current_truth_projection.py remain scanned; their
     # edits regenerate deterministic foundation outputs per the task-107 pattern.)
     ".github/workflows/iteration-lifecycle-validation.yml",
+    "data/foundation/knowledge-corpus-admission-policy.json",
+    "reports/architecture/agent-platform-r2-gap-audit.md",
+    "reports/operations/ignition-121-nightshift-progress.md",
 }
 MACHINE_EXCLUDE_PREFIXES = (
     "data/foundation/nonfunction-claims/",
@@ -256,6 +260,9 @@ def text_fragments(path: str) -> tuple[list[dict], str]:
     fragments: list[dict] = []
     if path in EXPLICIT_IMPORTS:
         return fragments, "EXPLICIT_CANONICAL_IMPORT"
+    admission = admission_for_path(path)
+    if not admission.auto_discovery:
+        return [], f"EXCLUDED_{admission.classification}"
     if path in SELF_EXCLUDES or path.startswith(MACHINE_EXCLUDE_PREFIXES):
         return fragments, "EXCLUDED_GENERATED_OR_FUNCTION_ASSET_REGISTRY"
     if path.startswith(NON_AUTHORITATIVE_PREFIXES):

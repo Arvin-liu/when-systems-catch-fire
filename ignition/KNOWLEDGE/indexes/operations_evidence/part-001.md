@@ -4,65 +4,10 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
-- ["""Compatibility entry point for deterministic stage snapshot projection."""](../../../tools/operations/generate_stage_snapshot_projection.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-a633eb80acc6dee9 / """Compatibility entry point for deterministic stage snapshot projection."""
-  - 来源：`tools/operations/generate_stage_snapshot_projection.py`
-  - 依赖：—；被引用：—
-- ["""Deterministic current-truth projection (task 106, contract §6).](../../../tools/propagation/current_truth_projection.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-454407ac044b9a4e / """Deterministic current-truth projection (task 106, contract §6).
-  - 来源：`tools/propagation/current_truth_projection.py`
-  - 依赖：—；被引用：—
-- ["""Fail-closed validation and deterministic projection for stage snapshots."""](../../../tools/operations/stage_snapshot_contract.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-6b77dab6d428fb48 / """Fail-closed validation and deterministic projection for stage snapshots."""
-  - 来源：`tools/operations/stage_snapshot_contract.py`
-  - 依赖：—；被引用：—
-- ["""Fold terminal tasks from the event-sourced lifecycle into the projection.](../../../tools/propagation/current_truth_projection.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-4aaa3d34ec7d237a / """Fold terminal tasks from the event-sourced lifecycle into the projection.
-  - 来源：`tools/propagation/current_truth_projection.py`
-  - 依赖：—；被引用：—
-- ["## 覆盖项（对应 §14 的 28 项要求）\\n"](../../../tools/build_reports.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-1642e6374cea059f / "## 覆盖项（对应 §14 的 28 项要求）\\n"
-  - 来源：`tools/build_reports.py`
-  - 依赖：—；被引用：—
 - ["compiler_or_generator": "The compiler flattens aligned task deltas, retains top-k magnitude coordinates per task, elects sign(gamma_p)=sign(sum_t trimmed_tau_t,p), selects nonzero entries of that sign, averages them coordinate-wise, applie](../../../data/external-research/121-fulltext-resolver/121cx/evidence-cards-extreme/S120-046.json)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-46C134628D2B35B0 / "compiler_or_generator": "The compiler flattens aligned task deltas, retains top-k magnitude coordinates per task, elects sign(gamma_p)=sign(sum_t trimmed_tau_t,p), selects nonzero entries of that sign, averages them coordinate-wise, applie / IMPLICIT-46C134628D2B35B0
   - 来源：`data/external-research/121-fulltext-resolver/121cx/evidence-cards-extreme/S120-046.json`
-  - 依赖：—；被引用：—
-- ["coverage_assertions": {"every_discovery_has_card": len(cards) == len(census), "every_card_has_source_anchor": all(card\["source_anchors"\] for card in cards)},](../../../tools/foundation/adjudicate_function_assets.py)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-530FE5A6E7BEFE61 / "coverage_assertions": {"every_discovery_has_card": len(cards) == len(census), "every_card_has_source_anchor": all(card\["source_anchors"\] for card in cards)}, / IMPLICIT-530FE5A6E7BEFE61
-  - 来源：`tools/foundation/adjudicate_function_assets.py`
-  - 依赖：—；被引用：—
-- ["current-truth-projection.json",](../../../tools/propagation/current_truth_projection.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-17b170e44fa069bf / "current-truth-projection.json",
-  - 来源：`tools/propagation/current_truth_projection.py`
-  - 依赖：—；被引用：—
-- ["dossiers_40": len(dossiers)==40 and len({r\['id'\] for r in dossiers})==40,](../../../tools/foundation/verify_079.py)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-15C4F1A722378A9F / "dossiers_40": len(dossiers)==40 and len({r\['id'\] for r in dossiers})==40, / IMPLICIT-15C4F1A722378A9F
-  - 来源：`tools/foundation/verify_079.py`
-  - 依赖：—；被引用：—
-- ["every_tracked_path_accounted": len({row\["path"\] for row in discovery_by_path}) == len(discovery_by_path),](../../../tools/foundation/adjudicate_nonfunction_claims.py)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-FA106673093569B4 / "every_tracked_path_accounted": len({row\["path"\] for row in discovery_by_path}) == len(discovery_by_path), / IMPLICIT-FA106673093569B4
-  - 来源：`tools/foundation/adjudicate_nonfunction_claims.py`
-  - 依赖：—；被引用：—
-- ["execution profiles must be in 1:1 correspondence with registered components")](../../../tests/test_production_execution_authority.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-a3db3b3e56a7276e / "execution profiles must be in 1:1 correspondence with registered components")
-  - 来源：`tests/test_production_execution_authority.py`
-  - 依赖：—；被引用：—
-- ["expression": "P(x)=1",](../../../tools/math_foundation_audit.py)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-FBEAA9335F17C7E6 / "expression": "P(x)=1", / IMPLICIT-FBEAA9335F17C7E6
-  - 来源：`tools/math_foundation_audit.py`
   - 依赖：—；被引用：—
 - ["final_is_descendant_of_stage_seven": run("git", "merge-base", "--is-ancestor", STAGE_SEVEN, FINAL) == "",](../../../data/operations/iterations/112/publication/tools/r0_intake.py)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -74,30 +19,10 @@
   - 可搜索名称：IMPLICIT-2DCA32DC8BA07D5C / "function_concept_used_by_paper": "The central function is an input-conditioned mixture MoE(x)=sum_{i in I_D} w_i M_i(x): a gating function computes scores or probabilities, selects a subset of expert functions, dispatches the input and com / IMPLICIT-2DCA32DC8BA07D5C
   - 来源：`data/external-research/121-fulltext-resolver/121cx/evidence-cards-extreme/S120-078.json`
   - 依赖：—；被引用：—
-- ["is_draft_derived": raw.get("draft_status") == "candidate_draft",](../../../tools/validate_protocol_canonical.py)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-C953BEAC90DC36C2 / "is_draft_derived": raw.get("draft_status") == "candidate_draft", / IMPLICIT-C953BEAC90DC36C2 / IMPLICIT-E03E7CBC757E1BA2
-  - 来源：`tools/validate_protocol_canonical.py`
-  - 依赖：—；被引用：—
-- ["is_draft_derived": raw.get("draft_status") == "candidate_draft",](../../../tools/migrate_legacy_protocol_record.py)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-E03E7CBC757E1BA2 / "is_draft_derived": raw.get("draft_status") == "candidate_draft", / IMPLICIT-E03E7CBC757E1BA2 / IMPLICIT-C953BEAC90DC36C2
-  - 来源：`tools/migrate_legacy_protocol_record.py`
-  - 依赖：—；被引用：—
 - ["LoRA freezes pre-trained weights and injects trainable rank decomposition W = W0 + BA where rank(BA) = r << d",](../../../data/external-research/121-fulltext-resolver/121q2/acceptance/S120-035.json)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-C6D6F159E4505D55 / "LoRA freezes pre-trained weights and injects trainable rank decomposition W = W0 + BA where rank(BA) = r << d", / IMPLICIT-C6D6F159E4505D55
   - 来源：`data/external-research/121-fulltext-resolver/121q2/acceptance/S120-035.json`
-  - 依赖：—；被引用：—
-- ["method_622": len(method)==len(objects)==622,](../../../tools/foundation/verify_079.py)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-A9BC9F486404CB7B / "method_622": len(method)==len(objects)==622, / IMPLICIT-A9BC9F486404CB7B
-  - 来源：`tools/foundation/verify_079.py`
-  - 依赖：—；被引用：—
-- ["method_ids_unique": len({r\['id'\] for r in method})==622,](../../../tools/foundation/verify_079.py)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-170311E9967FB653 / "method_ids_unique": len({r\['id'\] for r in method})==622, / IMPLICIT-170311E9967FB653
-  - 来源：`tools/foundation/verify_079.py`
   - 依赖：—；被引用：—
 - ["missing": missing_families, "pass": len(missing_families) == 0}](../../../data/external-research/106-105-correction/106-validator.py)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -188,16 +113,6 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-3813754424EECE1D / "name": "two-pass fixed-point regeneration", / IMPLICIT-3813754424EECE1D
   - 来源：`docs/foundation/task-107-verification-ladder.json`
-  - 依赖：—；被引用：—
-- ["output_type": "materialized_projection",](../../../tests/test_generated_output_authority_generic.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-efb064959bb52b81 / "output_type": "materialized_projection",
-  - 来源：`tests/test_generated_output_authority_generic.py`
-  - 依赖：—；被引用：—
-- ["output_type": "materialized_projection", "freshness_mode": "byte_level_recompute",](../../../tests/test_generated_output_authority_negative.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-8374eb1fde2fe6da / "output_type": "materialized_projection", "freshness_mode": "byte_level_recompute",
-  - 来源：`tests/test_generated_output_authority_negative.py`
   - 依赖：—；被引用：—
 - ["pass": len(card_issues) == 0}](../../../data/external-research/106-105-correction/106-validator.py)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -338,11 +253,6 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-B33F79DBF3F44907 / "title": "AI 泛化能力从何而来", / IMPLICIT-B33F79DBF3F44907 / IMPLICIT-07E05004ADD40632
   - 来源：`data/classic_problems_benchmark.json`
-  - 依赖：—；被引用：—
-- ["title": "Calibration Record",](../../../schemas/architecture/calibration-record.schema.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-05C4C6902AF614F2 / "title": "Calibration Record", / IMPLICIT-05C4C6902AF614F2
-  - 来源：`schemas/architecture/calibration-record.schema.json`
   - 依赖：—；被引用：—
 - ["title": "Compression Integrity Gate",](../../../analysis/corpus-relation/corpus_relation_graph.json)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -546,28 +456,13 @@
   - 依赖：—；被引用：—
 - ["title": "Ignition Function Asset Census Record",](../../../data/foundation/schemas/function-asset.schema.json)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-92745D3501EA0EDD / "title": "Ignition Function Asset Census Record", / IMPLICIT-92745D3501EA0EDD / IMPLICIT-F509509EEF24291E
+  - 可搜索名称：IMPLICIT-92745D3501EA0EDD / "title": "Ignition Function Asset Census Record", / IMPLICIT-92745D3501EA0EDD
   - 来源：`data/foundation/schemas/function-asset.schema.json`
-  - 依赖：—；被引用：—
-- ["title": "Ignition Function Asset Census Record",](../../../schemas/foundation/function-asset.schema.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-F509509EEF24291E / "title": "Ignition Function Asset Census Record", / IMPLICIT-F509509EEF24291E / IMPLICIT-92745D3501EA0EDD
-  - 来源：`schemas/foundation/function-asset.schema.json`
-  - 依赖：—；被引用：—
-- ["title": "Ignition Iteration Manifest",](../../../schemas/operations/iteration-manifest.schema.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-866DE2BAC8042F23 / "title": "Ignition Iteration Manifest", / IMPLICIT-866DE2BAC8042F23
-  - 来源：`schemas/operations/iteration-manifest.schema.json`
   - 依赖：—；被引用：—
 - ["title": "Ignition Task 99 Canonical Function Asset Identity Card",](../../../data/foundation/schemas/function-asset-identity-card.schema.json)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-4EBAF399B0C4D1AD / "title": "Ignition Task 99 Canonical Function Asset Identity Card", / IMPLICIT-4EBAF399B0C4D1AD / IMPLICIT-60A02FAD73AD41BF
+  - 可搜索名称：IMPLICIT-4EBAF399B0C4D1AD / "title": "Ignition Task 99 Canonical Function Asset Identity Card", / IMPLICIT-4EBAF399B0C4D1AD
   - 来源：`data/foundation/schemas/function-asset-identity-card.schema.json`
-  - 依赖：—；被引用：—
-- ["title": "Ignition Task 99 Canonical Function Asset Identity Card",](../../../schemas/foundation/function-asset-identity-card.schema.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-60A02FAD73AD41BF / "title": "Ignition Task 99 Canonical Function Asset Identity Card", / IMPLICIT-60A02FAD73AD41BF / IMPLICIT-4EBAF399B0C4D1AD
-  - 来源：`schemas/foundation/function-asset-identity-card.schema.json`
   - 依赖：—；被引用：—
 - ["title": "IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-GATE-NARROW-REPAIR-R1-20260726 typed change-propagation impact report",](../../../analysis/corpus-relation/article_cluster_candidates.json)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -588,11 +483,6 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-DB200B12EEC65655 / "title": "IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-NORMALIZED-SCHEMA-AND-AUTOMATION-VARIANT-NARROW-REPAIR-R2-20260726 typed change-propagation impact report", / IMPLICIT-DB200B12EEC65655 / IMPLICIT-2498B06D04ED2CD4
   - 来源：`analysis/corpus-relation/corpus_relation_graph.json`
-  - 依赖：—；被引用：—
-- ["title": "Iteration Delta",](../../../schemas/architecture/iteration-delta.schema.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-4A8EF1FCD7E58D51 / "title": "Iteration Delta", / IMPLICIT-4A8EF1FCD7E58D51
-  - 来源：`schemas/architecture/iteration-delta.schema.json`
   - 依赖：—；被引用：—
 - ["title": "Licensing Model Candidate",](../../../analysis/corpus-relation/article_cluster_candidates.json)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -1069,21 +959,6 @@
   - 可搜索名称：IMPLICIT-5708CF3148EFF85C / # === CHECK 3: Fulltext reviewed threshold (after downgrades) === / IMPLICIT-5708CF3148EFF85C
   - 来源：`data/external-research/106-105-correction/106-validator.py`
   - 依赖：—；被引用：—
-- [# ============================ MUTATION TESTS (§6) ============================](../../../tests/iteration_planner/test_completion_reconciliation.py)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-C3E60CAE54072AD4 / # ============================ MUTATION TESTS (§6) ============================ / IMPLICIT-C3E60CAE54072AD4
-  - 来源：`tests/iteration_planner/test_completion_reconciliation.py`
-  - 依赖：—；被引用：—
-- [# ============================ NEGATIVE TESTS (§6) ============================](../../../tests/iteration_planner/test_completion_reconciliation.py)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-94757C7561FFFF99 / # ============================ NEGATIVE TESTS (§6) ============================ / IMPLICIT-94757C7561FFFF99
-  - 来源：`tests/iteration_planner/test_completion_reconciliation.py`
-  - 依赖：—；被引用：—
-- [# `len(profiles) == 52` (now 59 components; the count is not the contract — the bijection is).](../../../tests/test_production_execution_authority.py)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-7603AC928A7EB5C1 / # `len(profiles) == 52` (now 59 components; the count is not the contract — the bijection is). / IMPLICIT-7603AC928A7EB5C1
-  - 来源：`tests/test_production_execution_authority.py`
-  - 依赖：—；被引用：—
 - [# add(3,7)=10](../../../function-os-candidate/v0.2/tests/test_n8_real_router.py)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-5318C366492F2A11 / # add(3,7)=10 / IMPLICIT-5318C366492F2A11
@@ -1153,11 +1028,6 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-6DF1244E0F4E1F5D / # Gate Semantics (022 frozen) / IMPLICIT-6DF1244E0F4E1F5D
   - 来源：`canonical/docs/gate-semantics.md`
-  - 依赖：—；被引用：—
-- [# Ignition Generic Kernel R0](../../../agent_kernel/README.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-3FF05372CFA4CE26 / # Ignition Generic Kernel R0 / IMPLICIT-3FF05372CFA4CE26
-  - 来源：`agent_kernel/README.md`
   - 依赖：—；被引用：—
 - [# IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-GATE-NARROW-REPAIR-R1-20260726 typed change-propagation impact report](../../../reports/operations/IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-GATE-NARROW-REPAIR-R1-20260726-change-propagation-impact.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -1543,11 +1413,6 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-450DF8C5163A6219 / ## Phase 5: Function OS Nine Nodes / IMPLICIT-450DF8C5163A6219
   - 来源：`reports/external-research/121c01-max-semantic-review-batch-01.md`
-  - 依赖：—；被引用：—
-- [## R1 当前能力](../../../agent_runtime/README.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-D2C04FF2FDB7BE55 / ## R1 当前能力 / IMPLICIT-D2C04FF2FDB7BE55
-  - 来源：`agent_runtime/README.md`
   - 依赖：—；被引用：—
 - [## Rationale](../../../docs/governance/licensing-model-candidate.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -2503,4 +2368,139 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-F473C6BB0406028E / ### \[MF-0004｜自举嵌套判定器\](docs/zh/functions/meta/items/MF-0004.md) / IMPLICIT-F473C6BB0406028E
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [### \[MF-0005｜自举收敛判定器\](docs/zh/functions/meta/items/MF-0005.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-7A41B32FCC34FCFA / ### \[MF-0005｜自举收敛判定器\](docs/zh/functions/meta/items/MF-0005.md) / IMPLICIT-7A41B32FCC34FCFA
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [### BC-20260709-009 《影响力》](../../../reports/math-foundation/pilot-formal-audit-20260712.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-09E18F45D120C04D / ### BC-20260709-009 《影响力》 / IMPLICIT-09E18F45D120C04D / IMPLICIT-F7AC5BBB30C9232B
+  - 来源：`reports/math-foundation/pilot-formal-audit-20260712.md`
+  - 依赖：—；被引用：—
+- [### D. 执行：Function OS 能做什么](../../../data/operations/iterations/112/publication/r0-original/03-%E7%A0%94%E7%A9%B6%E9%97%AE%E9%A2%98%E8%B0%B1%E7%B3%BB.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-7DA9656059AA2661 / ### D. 执行：Function OS 能做什么 / IMPLICIT-7DA9656059AA2661
+  - 来源：`data/operations/iterations/112/publication/r0-original/03-研究问题谱系.md`
+  - 依赖：—；被引用：—
+- [### FORCED STOP — Awaiting GPT Verification](../../../reports/external-research/121Q3-night-final-report.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-409452B95E2E4B58 / ### FORCED STOP — Awaiting GPT Verification / IMPLICIT-409452B95E2E4B58
+  - 来源：`reports/external-research/121Q3-night-final-report.md`
+  - 依赖：—；被引用：—
+- [### Function OS Node Statuses](../../../reports/external-research/121Q3-night-final-report.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-CD58E122AAA2AC87 / ### Function OS Node Statuses / IMPLICIT-CD58E122AAA2AC87
+  - 来源：`reports/external-research/121Q3-night-final-report.md`
+  - 依赖：—；被引用：—
+- [### Function OS: NOT FROZEN](../../../reports/external-research/121Q3-night-final-report.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-DB8343FB5279B3CE / ### Function OS: NOT FROZEN / IMPLICIT-DB8343FB5279B3CE
+  - 来源：`reports/external-research/121Q3-night-final-report.md`
+  - 依赖：—；被引用：—
+- [### function_dependency](../../../outputs/collisions/20260708-teacher-competition/collision-report.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-2D1690A54E16E990 / ### function_dependency / IMPLICIT-2D1690A54E16E990 / IMPLICIT-FFF1DCEF8CC17C17
+  - 来源：`outputs/collisions/20260708-teacher-competition/collision-report.md`
+  - 依赖：—；被引用：—
+- [### function_dependency](../../../docs/p1-data-index-map-20260708.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-FFF1DCEF8CC17C17 / ### function_dependency / IMPLICIT-FFF1DCEF8CC17C17 / IMPLICIT-2D1690A54E16E990
+  - 来源：`docs/p1-data-index-map-20260708.md`
+  - 依赖：—；被引用：—
+- [### G12 Not a Plain Function Rename](../../../inputs/020/formal-protocol-promotion-standard.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-75DAEF27BAF5E003 / ### G12 Not a Plain Function Rename / IMPLICIT-75DAEF27BAF5E003
+  - 来源：`inputs/020/formal-protocol-promotion-standard.md`
+  - 依赖：—；被引用：—
+- [### G18 Function Layer Relation Clear](../../../inputs/020/formal-protocol-promotion-standard.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-07D6B42B0153B62A / ### G18 Function Layer Relation Clear / IMPLICIT-07D6B42B0153B62A
+  - 来源：`inputs/020/formal-protocol-promotion-standard.md`
+  - 依赖：—；被引用：—
+- [### G19 Not Counted as Function](../../../inputs/020/formal-protocol-promotion-standard.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-2B37DB30942D1C67 / ### G19 Not Counted as Function / IMPLICIT-2B37DB30942D1C67
+  - 来源：`inputs/020/formal-protocol-promotion-standard.md`
+  - 依赖：—；被引用：—
+- [### G20 Not a Duplicate of Existing Function](../../../inputs/020/formal-protocol-promotion-standard.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-006E83309FF50E81 / ### G20 Not a Duplicate of Existing Function / IMPLICIT-006E83309FF50E81
+  - 来源：`inputs/020/formal-protocol-promotion-standard.md`
+  - 依赖：—；被引用：—
+- [### G28 Index Entry Exists](../../../inputs/020/formal-protocol-promotion-standard.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-3F11C4308505B8BF / ### G28 Index Entry Exists / IMPLICIT-3F11C4308505B8BF
+  - 来源：`inputs/020/formal-protocol-promotion-standard.md`
+  - 依赖：—；被引用：—
+- [### Gates](../../../docs/architecture/epistemic-governance-kernel-and-federated-planes.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-9C08BBED1A4380A8 / ### Gates / IMPLICIT-9C08BBED1A4380A8
+  - 来源：`docs/architecture/epistemic-governance-kernel-and-federated-planes.md`
+  - 依赖：—；被引用：—
+- [### MF-0003 正反互斥判定器](../../../reports/math-foundation/pilot-formal-audit-20260712.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-5E73B99AABC09852 / ### MF-0003 正反互斥判定器 / IMPLICIT-5E73B99AABC09852
+  - 来源：`reports/math-foundation/pilot-formal-audit-20260712.md`
+  - 依赖：—；被引用：—
+- [### MF-0004 自举嵌套判定器](../../../reports/math-foundation/pilot-formal-audit-20260712.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-A80FE733FE28698B / ### MF-0004 自举嵌套判定器 / IMPLICIT-A80FE733FE28698B
+  - 来源：`reports/math-foundation/pilot-formal-audit-20260712.md`
+  - 依赖：—；被引用：—
+- [### MF-0005 自举收敛判定器](../../../reports/math-foundation/pilot-formal-audit-20260712.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-6B887CBD6FD75DC1 / ### MF-0005 自举收敛判定器 / IMPLICIT-6B887CBD6FD75DC1
+  - 来源：`reports/math-foundation/pilot-formal-audit-20260712.md`
+  - 依赖：—；被引用：—
+- [### N06｜生成能力为何会制造证据赤字](../../../data/operations/iterations/112/publication/r0-original/notes/%E7%82%B9%E7%81%AB%E7%A0%94%E7%A9%B6%E7%AC%94%E8%AE%B0-%E7%AC%AC%E4%B8%80%E8%BE%91.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-BD755F360DB72770 / ### N06｜生成能力为何会制造证据赤字 / IMPLICIT-BD755F360DB72770
+  - 来源：`data/operations/iterations/112/publication/r0-original/notes/点火研究笔记-第一辑.md`
+  - 依赖：—；被引用：—
+- [### N41｜Function OS 的小世界为何必要](../../../data/operations/iterations/112/publication/r0-original/notes/%E7%82%B9%E7%81%AB%E7%A0%94%E7%A9%B6%E7%AC%94%E8%AE%B0-%E7%AC%AC%E4%B8%80%E8%BE%91.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-13F655E96C11D8AC / ### N41｜Function OS 的小世界为何必要 / IMPLICIT-13F655E96C11D8AC
+  - 来源：`data/operations/iterations/112/publication/r0-original/notes/点火研究笔记-第一辑.md`
+  - 依赖：—；被引用：—
+- [### N42｜第一失败比平均成功率有解释力](../../../data/operations/iterations/112/publication/r0-original/notes/%E7%82%B9%E7%81%AB%E7%A0%94%E7%A9%B6%E7%AC%94%E8%AE%B0-%E7%AC%AC%E4%B8%80%E8%BE%91.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-E4D6D5A3CD0363D5 / ### N42｜第一失败比平均成功率有解释力 / IMPLICIT-E4D6D5A3CD0363D5
+  - 来源：`data/operations/iterations/112/publication/r0-original/notes/点火研究笔记-第一辑.md`
+  - 依赖：—；被引用：—
+- [### Newly forced or more sharply specified](../../../docs/architecture/getnote-1329-epistemic-governance-pressure-test.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-DBFAD75C0272CC04 / ### Newly forced or more sharply specified / IMPLICIT-DBFAD75C0272CC04
+  - 来源：`docs/architecture/getnote-1329-epistemic-governance-pressure-test.md`
+  - 依赖：—；被引用：—
+- [### Reinforced or made operationally visible in GetNote](../../../docs/architecture/getnote-1329-epistemic-governance-pressure-test.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-01E84B21408175B8 / ### Reinforced or made operationally visible in GetNote / IMPLICIT-01E84B21408175B8
+  - 来源：`docs/architecture/getnote-1329-epistemic-governance-pressure-test.md`
+  - 依赖：—；被引用：—
+- [### target gate 为什么要放在案例最前面](../../../data/operations/iterations/112/publication/r0-original/volume/%E7%AC%AC%E4%B8%80%E5%8D%B7-%E7%AC%AC%E4%BA%8C%E7%A8%BF.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-47FA4A1D0308120B / ### target gate 为什么要放在案例最前面 / IMPLICIT-47FA4A1D0308120B
+  - 来源：`data/operations/iterations/112/publication/r0-original/volume/第一卷-第二稿.md`
+  - 依赖：—；被引用：—
+- [### 它不知道 Function OS 能否走出小世界](../../../data/operations/iterations/112/publication/r0-original/volume/%E7%AC%AC%E4%B8%80%E5%8D%B7-%E7%AC%AC%E4%BA%8C%E7%A8%BF.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-141328621AD715FD / ### 它不知道 Function OS 能否走出小世界 / IMPLICIT-141328621AD715FD
+  - 来源：`data/operations/iterations/112/publication/r0-original/volume/第一卷-第二稿.md`
+  - 依赖：—；被引用：—
+- [### 方向四：把 Function OS 从符号小世界带到更难的边界](../../../data/operations/iterations/112/publication/r0-original/volume/%E7%AC%AC%E4%B8%80%E5%8D%B7-%E7%AC%AC%E4%BA%8C%E7%A8%BF.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-81A1AD3B0D8DC712 / ### 方向四：把 Function OS 从符号小世界带到更难的边界 / IMPLICIT-81A1AD3B0D8DC712
+  - 来源：`data/operations/iterations/112/publication/r0-original/volume/第一卷-第二稿.md`
+  - 依赖：—；被引用：—
+- [### 案例表 INDEX.md](../../../outputs/audit/two-tables-version-sync-audit-20260708.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-004F80C40DD95D7E / ### 案例表 INDEX.md / IMPLICIT-004F80C40DD95D7E
+  - 来源：`outputs/audit/two-tables-version-sync-audit-20260708.md`
+  - 依赖：—；被引用：—
+- [### 模型 A：真诚的宗教世界化](../../../reports/publication/song-huizong-taoism-point-fire-analysis.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-7F9D129F44993865 / ### 模型 A：真诚的宗教世界化 / IMPLICIT-7F9D129F44993865
+  - 来源：`reports/publication/song-huizong-taoism-point-fire-analysis.md`
   - 依赖：—；被引用：—

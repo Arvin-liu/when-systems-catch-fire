@@ -4,2503 +4,2497 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
-- [identifiers that older lifecycle records already cite.](../../../tools/propagation/generate_editorial_manifest.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-dac435c65f676a3b / identifiers that older lifecycle records already cite.
-  - 来源：`tools/propagation/generate_editorial_manifest.py`
+- [label: I understand this use report is not independent proof that the project's claims are true.](../../../../.github/ISSUE_TEMPLATE/noncommercial-use-report.yml)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-6547f8eef9d120b6 / label: I understand this use report is not independent proof that the project's claims are true.
+  - 来源：`.github/ISSUE_TEMPLATE/noncommercial-use-report.yml`
   - 依赖：—；被引用：—
-- [Identity lock: formal main identifies the multiplication-zero asset as T2, while D127 is the cognitive-path-integral ana](../../../reports/foundation-architecture/098-remote-truth-and-gap.md)
+- [Latent execution is probabilistic — no formal verification that synthesized programs are correct. Validation is empirica](../../../data/external-research/121-fulltext-resolver/121q2/acceptance/S120-017.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-3c793af0b348488b / Latent execution is probabilistic — no formal verification that synthesized programs are correct. Validation is empirica
+  - 来源：`data/external-research/121-fulltext-resolver/121q2/acceptance/S120-017.json`
+  - 依赖：—；被引用：—
+- [Latent topics may remain unnamed and must be changed by material, not locked first and proved afterward.](../../../reports/operations/121Q28R-cognitive-level-leap-writing-method-audit.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-d196cf8167ba2621 / Identity lock: formal main identifies the multiplication-zero asset as T2, while D127 is the cognitive-path-integral ana
-  - 来源：`reports/foundation-architecture/098-remote-truth-and-gap.md`
-  - 依赖：D127, D260, T2；被引用：—
-- [IDs, topic paths, provenance, statuses, timestamps, update logs and Git provide lifecycle primitives, but immutable vers](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-5592458e0eb7fb8d / IDs, topic paths, provenance, statuses, timestamps, update logs and Git provide lifecycle primitives, but immutable vers
+  - 可搜索名称：NFC-64585ffd3e06f765 / Latent topics may remain unnamed and must be changed by material, not locked first and proved afterward.
+  - 来源：`reports/operations/121Q28R-cognitive-level-leap-writing-method-audit.md`
+  - 依赖：—；被引用：—
+- [Lean 4 固定为 v4.19.0，SymPy 固定为 1.14.0，Z3 固定为 4.16.0。T2 的 Nat 范围命题同时通过 Lean 与 Z3；T16 有可重放 SymPy 反例；D220 有可重放 Z3 反模型；T23 保持](../../../FOUNDATION.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-aa6304f4195d3998 / Lean 4 固定为 v4.19.0，SymPy 固定为 1.14.0，Z3 固定为 4.16.0。T2 的 Nat 范围命题同时通过 Lean 与 Z3；T16 有可重放 SymPy 反例；D220 有可重放 Z3 反模型；T23 保持
+  - 来源：`FOUNDATION.md`
+  - 依赖：D220, T16, T2, T23；被引用：—
+- [Lean 4 是首选机器证明后端，但当前机器未安装 Lean。本目录只提供可复现骨架和最小定理样例；其存在不等于 proof passed。安装后运行 `lake build`，并将成功产物、工具版本和提交 SHA 写入 proof art](../../../formal/README.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-554e74003933d121 / Lean 4 是首选机器证明后端，但当前机器未安装 Lean。本目录只提供可复现骨架和最小定理样例；其存在不等于 proof passed。安装后运行 `lake build`，并将成功产物、工具版本和提交 SHA 写入 proof art
+  - 来源：`formal/README.md`
+  - 依赖：—；被引用：—
+- [Lean 4, SymPy and Z3 were not available locally. A deterministic Python normalization proof fixture, a rational countere](../../../reports/foundation-architecture/math-proof-backend-report-20260712.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-5945aa8af7556703 / Lean 4, SymPy and Z3 were not available locally. A deterministic Python normalization proof fixture, a rational countere
+  - 来源：`reports/foundation-architecture/math-proof-backend-report-20260712.md`
+  - 依赖：—；被引用：—
+- [Learning nonlinear operators via DeepONet based on the universal approximation theorem of operators](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-6006530fc0d66641 / Learning nonlinear operators via DeepONet based on the universal approximation theorem of operators
   - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
   - 依赖：—；被引用：—
-- [if "high probability proves" in entropy_text or "高概率证明" in entropy_text:](../../../tools/probabilistic_system_dynamics/validator.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-ea191fbf165aa892 / if "high probability proves" in entropy_text or "高概率证明" in entropy_text:
-  - 来源：`tools/probabilistic_system_dynamics/validator.py`
-  - 依赖：—；被引用：—
-- [if "isomorphic" in claim and (not record.get("maps") or not record.get("preservation_proofs")):](../../../tools/foundation/validate_claim_governance.py)
+- [Legacy source / compatibility view：历史函数来源、历史案例来源和 views。保留旧 ID 与正文，不可删除、重编号、不可逆覆盖或独立生长。](../../../docs/AGENT-GUIDE.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-9a5ceb7ef4296ad9 / if "isomorphic" in claim and (not record.get("maps") or not record.get("preservation_proofs")):
-  - 来源：`tools/foundation/validate_claim_governance.py`
+  - 可搜索名称：NFC-a18833849342697c / Legacy source / compatibility view：历史函数来源、历史案例来源和 views。保留旧 ID 与正文，不可删除、重编号、不可逆覆盖或独立生长。
+  - 来源：`docs/AGENT-GUIDE.md`
   - 依赖：—；被引用：—
-- [if "light cone proves" in text or "光锥证明" in text:](../../../tools/causal_fabric/validator.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-4d0203de89828531 / if "light cone proves" in text or "光锥证明" in text:
-  - 来源：`tools/causal_fabric/validator.py`
+- [Legacy T2 is `PARTIALLY_FORMALIZED` and remains unproved as stated. The two-factor zero-absorption lemma remains machine](../../../reports/foundation-architecture/T2-proof-equivalence-audit-20260713.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-db570a0984372582 / Legacy T2 is `PARTIALLY_FORMALIZED` and remains unproved as stated. The two-factor zero-absorption lemma remains machine
+  - 来源：`reports/foundation-architecture/T2-proof-equivalence-audit-20260713.md`
+  - 依赖：T2；被引用：—
+- [Legacy theorem, axiom, isomorphism, causal and proved language was not promoted. All proof obligations remain open unles](../../../reports/foundation-architecture/strong-claim-gate-audit-20260712.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-a90bf39c560561bc / Legacy theorem, axiom, isomorphism, causal and proved language was not promoted. All proof obligations remain open unles
+  - 来源：`reports/foundation-architecture/strong-claim-gate-audit-20260712.md`
   - 依赖：—；被引用：—
-- [if "mathematical" in strong_type.lower() or "proof" in strong_type.lower():](../../../tools/foundation/process_084_batch.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-1cb4b712e690f7ee / if "mathematical" in strong_type.lower() or "proof" in strong_type.lower():
-  - 来源：`tools/foundation/process_084_batch.py`
-  - 依赖：—；被引用：—
-- [if "proved" in str(strong_terms).lower() or "证明" in str(strong_terms):](../../../tools/foundation/process_084_batch.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-e9f1a7d6242e2fae / if "proved" in str(strong_terms).lower() or "证明" in str(strong_terms):
-  - 来源：`tools/foundation/process_084_batch.py`
-  - 依赖：—；被引用：—
-- [if "without" in record.get("current_formalization", "").lower() or "analogy" in record.get("current_formalization", "").](../../../tools/foundation/process_084_batch.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-992167d40dc41ace / if "without" in record.get("current_formalization", "").lower() or "analogy" in record.get("current_formalization", "").
-  - 来源：`tools/foundation/process_084_batch.py`
-  - 依赖：—；被引用：—
-- [if "关系" in title or "同构" in title:](../../../tools/math_foundation_audit.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-fa2653466a3fb110 / if "关系" in title or "同构" in title:
-  - 来源：`tools/math_foundation_audit.py`
-  - 依赖：—；被引用：—
-- [if "命题" in blob or "定理" in blob or "猜想" in blob:](../../../tools/math_foundation_audit.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-0490af3bf951979d / if "命题" in blob or "定理" in blob or "猜想" in blob:
-  - 来源：`tools/math_foundation_audit.py`
-  - 依赖：—；被引用：—
-- [if "因果" in blob:](../../../tools/math_foundation_audit.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-f39d61dbcef4fc30 / if "因果" in blob:
-  - 来源：`tools/math_foundation_audit.py`
-  - 依赖：—；被引用：—
-- [if any(isinstance(value, str) and value.strip().lower() in {"accepted", "merged", "current"} for value in lifecycle_valu](../../../tools/operations/validate_incremental_execution.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-d7c9948c541a3257 / if any(isinstance(value, str) and value.strip().lower() in {"accepted", "merged", "current"} for value in lifecycle_valu
-  - 来源：`tools/operations/validate_incremental_execution.py`
-  - 依赖：—；被引用：—
-- [if any(path.startswith(("已迁移的历史函数来源/", "已迁移的历史案例来源/")) for path in paths):](../../../tools/foundation/adjudicate_function_assets.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-40cbde23c2aa249e / if any(path.startswith(("已迁移的历史函数来源/", "已迁移的历史案例来源/")) for path in paths):
-  - 来源：`tools/foundation/adjudicate_function_assets.py`
-  - 依赖：—；被引用：—
-- [if any(word in entry.get("semantics", "") for word in \["证明了", "解决了", "唯一真理"\]) and entry.get("proof_status") not in {"PRO](../../../tools/math_foundation_audit.py)
+- [Liell-Cock-Staton full arXiv v2, source and publication-metadata review: named one-use Knightian choices, FinStochSurj g](../../../data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-0ddf4f2b22c6bc9d / if any(word in entry.get("semantics", "") for word in \["证明了", "解决了", "唯一真理"\]) and entry.get("proof_status") not in {"PRO
-  - 来源：`tools/math_foundation_audit.py`
+  - 可搜索名称：NFC-47429135cf17e64c / Liell-Cock-Staton full arXiv v2, source and publication-metadata review: named one-use Knightian choices, FinStochSurj g
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl`
   - 依赖：—；被引用：—
-- [if any(x in title for x in \["定理", "同构律", "因果律"\]): return "RELATION"](../../../tools/foundation/migrate_legacy.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-1ed4fa23dc51e5d4 / if any(x in title for x in \["定理", "同构律", "因果律"\]): return "RELATION"
-  - 来源：`tools/foundation/migrate_legacy.py`
-  - 依赖：—；被引用：—
-- [If approved, prepare a separate formal change set.](../../../inputs/020/formal-protocol-promotion-standard.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-8512e50a00b432e2 / If approved, prepare a separate formal change set.
-  - 来源：`inputs/020/formal-protocol-promotion-standard.md`
-  - 依赖：—；被引用：—
-- [if args.write_proof:](../../../tools/propagation/system_map_audit.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-9f39927fc8e78194 / if args.write_proof:
-  - 来源：`tools/propagation/system_map_audit.py`
-  - 依赖：—；被引用：—
-- [if c not in ("no_totality_proof", "no_truth_upgrade")](../../../tests/test_seal_freshness.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-acf69e2094c7b4c6 / if c not in ("no_totality_proof", "no_truth_upgrade")
-  - 来源：`tests/test_seal_freshness.py`
-  - 依赖：—；被引用：—
-- [if c.get("lifecycle_state") in CS.LIFECYCLE_TERMINAL\],](../../../tools/iteration_planner/planner.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-4ef9e71339083329 / if c.get("lifecycle_state") in CS.LIFECYCLE_TERMINAL\],
-  - 来源：`tools/iteration_planner/planner.py`
-  - 依赖：—；被引用：—
-- [if choice != "NO_CHANGE_WITH_PROOF":](../../../tools/operations/validate_incremental_execution.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-db2c98564727ea7f / if choice != "NO_CHANGE_WITH_PROOF":
-  - 来源：`tools/operations/validate_incremental_execution.py`
-  - 依赖：—；被引用：—
-- [if cid in affected and choice == "NO_CHANGE_WITH_PROOF":](../../../tools/operations/validate_incremental_execution.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-b5d1c06baef2bfdc / if cid in affected and choice == "NO_CHANGE_WITH_PROOF":
-  - 来源：`tools/operations/validate_incremental_execution.py`
-  - 依赖：—；被引用：—
-- [if claim.startswith("all ") and not record.get("proof_artifact"):](../../../tools/foundation/validate_claim_governance.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-1cb2d480239b1e3b / if claim.startswith("all ") and not record.get("proof_artifact"):
-  - 来源：`tools/foundation/validate_claim_governance.py`
-  - 依赖：—；被引用：—
-- [if claim_class in {"EMPIRICAL_OR_LITERATURE_CLAIM", "ONTOLOGICAL_OR_METAPHYSICAL_CLAIM"}:](../../../tools/foundation/adjudicate_nonfunction_claims.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-d688bfc3e899629a / if claim_class in {"EMPIRICAL_OR_LITERATURE_CLAIM", "ONTOLOGICAL_OR_METAPHYSICAL_CLAIM"}:
-  - 来源：`tools/foundation/adjudicate_nonfunction_claims.py`
-  - 依赖：—；被引用：—
-- [if claim_class in {"THEOREM_OR_MATHEMATICAL_CLAIM", "LAW_OR_PRINCIPLE_CLAIM", "IMPOSSIBILITY_OR_UNIVERSAL_CLAIM"}:](../../../tools/foundation/adjudicate_nonfunction_claims.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-3dc625f95b869b6d / if claim_class in {"THEOREM_OR_MATHEMATICAL_CLAIM", "LAW_OR_PRINCIPLE_CLAIM", "IMPOSSIBILITY_OR_UNIVERSAL_CLAIM"}:
-  - 来源：`tools/foundation/adjudicate_nonfunction_claims.py`
-  - 依赖：—；被引用：—
-- [if d\["evidence_obligation"\] and d\["evidence_obligation"\] != "Not applicable for P1 (proof-type claim).":](../../../tools/foundation/process_084_batch.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-8ec3f6cdfc0ba5f1 / if d\["evidence_obligation"\] and d\["evidence_obligation"\] != "Not applicable for P1 (proof-type claim).":
-  - 来源：`tools/foundation/process_084_batch.py`
-  - 依赖：P1；被引用：—
-- [if d\["proof_obligation"\]:](../../../tools/foundation/process_084_batch.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-0c41efd4f87aa63a / if d\["proof_obligation"\]:
-  - 来源：`tools/foundation/process_084_batch.py`
-  - 依赖：—；被引用：—
-- [if entry.get("evidence_status") not in EVIDENCE_STATUS:](../../../tools/math_foundation_audit.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-5d0c104f521ca3f8 / if entry.get("evidence_status") not in EVIDENCE_STATUS:
-  - 来源：`tools/math_foundation_audit.py`
-  - 依赖：—；被引用：—
-- [if entry.get("lifecycle_state") != derived:](../../../tools/iteration_planner/completion_state.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-d1a28ab3369c10d5 / if entry.get("lifecycle_state") != derived:
-  - 来源：`tools/iteration_planner/completion_state.py`
-  - 依赖：—；被引用：—
-- [if entry.get("proof_status") not in PROOF_STATUS:](../../../tools/math_foundation_audit.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-2ef70661a7a82cbc / if entry.get("proof_status") not in PROOF_STATUS:
-  - 来源：`tools/math_foundation_audit.py`
-  - 依赖：—；被引用：—
-- [if full: decision='FULL_REBUILD_REQUIRED'; proof=None](../../../tools/operations/plan_incremental_execution.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-2a45a9be5e319918 / if full: decision='FULL_REBUILD_REQUIRED'; proof=None
-  - 来源：`tools/operations/plan_incremental_execution.py`
-  - 依赖：—；被引用：—
-- [if has_artifact and "proved" in record.get("current_formalization", "").lower():](../../../tools/foundation/process_084_batch.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-df8c431592feddfe / if has_artifact and "proved" in record.get("current_formalization", "").lower():
-  - 来源：`tools/foundation/process_084_batch.py`
-  - 依赖：—；被引用：—
-- [if has_proof:](../../../tools/foundation/process_084_batch.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-3ee9e9feec4771c8 / if has_proof:
-  - 来源：`tools/foundation/process_084_batch.py`
-  - 依赖：—；被引用：—
-- [if isinstance(c.get("lifecycle"), dict) and c\["lifecycle"\].get("status") == "draft_candidate"](../../../tests/test_production_execution_authority.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-8008b5c287878538 / if isinstance(c.get("lifecycle"), dict) and c\["lifecycle"\].get("status") == "draft_candidate"
-  - 来源：`tests/test_production_execution_authority.py`
-  - 依赖：—；被引用：—
-- [if isinstance(item.get("non_impact_proof"), dict):](../../../tests/test_incremental_execution_validator.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-8e5ddf73c4760d87 / if isinstance(item.get("non_impact_proof"), dict):
-  - 来源：`tests/test_incremental_execution_validator.py`
-  - 依赖：—；被引用：—
-- [if isinstance(proof, dict) and "plan_hash" in proof:](../../../tools/operations/validate_incremental_execution.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-f3847dd05ed9e31a / if isinstance(proof, dict) and "plan_hash" in proof:
-  - 来源：`tools/operations/validate_incremental_execution.py`
-  - 依赖：—；被引用：—
-- [if isinstance(proof, dict):](../../../tests/test_incremental_execution.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-153aa341803b1a91 / if isinstance(proof, dict):
-  - 来源：`tests/test_incremental_execution.py`
-  - 依赖：—；被引用：—
-- [if item.get("lifecycle_status") != "active":](../../../tools/operations/validate_generated_output_authority.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-be2fdc5e797af010 / if item.get("lifecycle_status") != "active":
-  - 来源：`tools/operations/validate_generated_output_authority.py`
-  - 依赖：—；被引用：—
-- [if item\["lifecycle_state"\] == "CURRENT":](../../../tools/operations/stage_snapshot_contract.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-29955c39626781df / if item\["lifecycle_state"\] == "CURRENT":
-  - 来源：`tools/operations/stage_snapshot_contract.py`
-  - 依赖：—；被引用：—
-- [if item\["lifecycle_state"\] == "REJECTED":](../../../tools/operations/stage_snapshot_contract.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-224522c9ae3fbd81 / if item\["lifecycle_state"\] == "REJECTED":
-  - 来源：`tools/operations/stage_snapshot_contract.py`
-  - 依赖：—；被引用：—
-- [if item\["lifecycle_state"\] == "WITHDRAWN":](../../../tools/operations/stage_snapshot_contract.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-9fa0e409e0cf5715 / if item\["lifecycle_state"\] == "WITHDRAWN":
-  - 来源：`tools/operations/stage_snapshot_contract.py`
-  - 依赖：—；被引用：—
-- [if item\["lifecycle_state"\] in preaccepted_states:](../../../tools/operations/stage_snapshot_contract.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-cc019646095c91f5 / if item\["lifecycle_state"\] in preaccepted_states:
-  - 来源：`tools/operations/stage_snapshot_contract.py`
-  - 依赖：—；被引用：—
-- [if item\["lifecycle_state"\] in {"ACCEPTED", "MERGED_CAPABILITY", "CURRENT", "CLOSED"}:](../../../tools/operations/stage_snapshot_contract.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-dcc30e574b394aa0 / if item\["lifecycle_state"\] in {"ACCEPTED", "MERGED_CAPABILITY", "CURRENT", "CLOSED"}:
-  - 来源：`tools/operations/stage_snapshot_contract.py`
-  - 依赖：—；被引用：—
-- [if item\['non_impact_proof'\] is not None: item\['non_impact_proof'\]\['plan_hash'\]=result\['plan_hash'\]](../../../tools/operations/plan_incremental_execution.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-945981bafb0c2851 / if item\['non_impact_proof'\] is not None: item\['non_impact_proof'\]\['plan_hash'\]=result\['plan_hash'\]
-  - 来源：`tools/operations/plan_incremental_execution.py`
-  - 依赖：—；被引用：—
-- [if key not in {"semantic_status", "formal_status", "logic_status", "proof_status", "evidence_status"}:](../../../tools/foundation/migrate_legacy.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-b5c922cab7eb8fad / if key not in {"semantic_status", "formal_status", "logic_status", "proof_status", "evidence_status"}:
-  - 来源：`tools/foundation/migrate_legacy.py`
-  - 依赖：—；被引用：—
-- [if len(proved) == 0:](../../../tools/foundation/verify_085_architecture_freeze.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-d9acd89253162ba0 / if len(proved) == 0:
-  - 来源：`tools/foundation/verify_085_architecture_freeze.py`
-  - 依赖：—；被引用：—
-- [if lifecycle != {"state": "candidate_only", "accepted": False, "merged": False, "current": False}:](../../../tools/operations/validate_phase_d_closeout.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-5a5fab43ee1e0898 / if lifecycle != {"state": "candidate_only", "accepted": False, "merged": False, "current": False}:
-  - 来源：`tools/operations/validate_phase_d_closeout.py`
-  - 依赖：—；被引用：—
-- [if lifecycle == "historical" or ctype == "historical_asset":](../../../tools/generate_agentization_boundary.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-d659ba9c352f41cd / if lifecycle == "historical" or ctype == "historical_asset":
-  - 来源：`tools/generate_agentization_boundary.py`
-  - 依赖：—；被引用：—
-- [if lifecycle == candidate_lifecycle:](../../../tools/operations/validate_phase_e_candidate.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-1eeedbf639b86ce0 / if lifecycle == candidate_lifecycle:
-  - 来源：`tools/operations/validate_phase_e_candidate.py`
-  - 依赖：—；被引用：—
-- [if lifecycle == current_lifecycle:](../../../tools/operations/validate_phase_e_candidate.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-c9149b5e277b5644 / if lifecycle == current_lifecycle:
-  - 来源：`tools/operations/validate_phase_e_candidate.py`
-  - 依赖：—；被引用：—
-- [if lifecycle.get("ready_for_gpt_verification") is True:](../../../tools/validate_iteration_sync.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-733c9420d3d56735 / if lifecycle.get("ready_for_gpt_verification") is True:
-  - 来源：`tools/validate_iteration_sync.py`
-  - 依赖：—；被引用：—
-- [if not (ROOT / "历史函数来源").exists() and not (ROOT / "历史案例来源").exists():](../../../tools/foundation/migrate_legacy.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-a1734cff891a47fb / if not (ROOT / "历史函数来源").exists() and not (ROOT / "历史案例来源").exists():
-  - 来源：`tools/foundation/migrate_legacy.py`
-  - 依赖：—；被引用：—
-- [if not exists or not ancestor: errors.append("formal reviewed baseline must resolve and be an ancestor of validated work](../../../tools/validate_epistemic_governance_relationships.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-646678e7004b8a0c / if not exists or not ancestor: errors.append("formal reviewed baseline must resolve and be an ancestor of validated work
-  - 来源：`tools/validate_epistemic_governance_relationships.py`
-  - 依赖：—；被引用：—
-- [if not isinstance(proof, dict):](../../../tools/operations/validate_incremental_execution.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-23e05c3cd4414441 / if not isinstance(proof, dict):
-  - 来源：`tools/operations/validate_incremental_execution.py`
-  - 依赖：—；被引用：—
-- [if not os.path.exists(proof_file):](../../../tools/propagation/validate_reconciliation.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-9f42b21fc6dc5b03 / if not os.path.exists(proof_file):
-  - 来源：`tools/propagation/validate_reconciliation.py`
-  - 依赖：—；被引用：—
-- [if not proof.get("expiry_or_recheck_condition"):](../../../tools/operations/validate_incremental_execution.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-cc06e8ef222be986 / if not proof.get("expiry_or_recheck_condition"):
-  - 来源：`tools/operations/validate_incremental_execution.py`
-  - 依赖：—；被引用：—
-- [if not proof.get("explanation"):](../../../tools/propagation/validate_reconciliation.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-1e7abe9bc04a8ab9 / if not proof.get("explanation"):
-  - 来源：`tools/propagation/validate_reconciliation.py`
-  - 依赖：—；被引用：—
-- [if oid in {"T16", "D220"} or claim_type in {"STRUCTURAL_ANALOGY", "EXTERNAL_THEOREM_REFERENCE"}:](../../../tools/foundation/adjudicate_core.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-30e55649eb7b1370 / if oid in {"T16", "D220"} or claim_type in {"STRUCTURAL_ANALOGY", "EXTERNAL_THEOREM_REFERENCE"}:
-  - 来源：`tools/foundation/adjudicate_core.py`
-  - 依赖：D220, T16；被引用：—
-- [if ONTOLOGY.search(text):](../../../tools/foundation/adjudicate_nonfunction_claims.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-8ff6a769271c7b37 / if ONTOLOGY.search(text):
-  - 来源：`tools/foundation/adjudicate_nonfunction_claims.py`
-  - 依赖：—；被引用：—
-- [if os.path.exists(lifecycle_path):](../../../tools/propagation/validate_reconciliation.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-51bcd8d11fceb921 / if os.path.exists(lifecycle_path):
-  - 来源：`tools/propagation/validate_reconciliation.py`
-  - 依赖：—；被引用：—
-- [if path.startswith(("已迁移的历史函数来源/", "已迁移的历史案例来源/", "reports/", "archive/", "data/foundation/migrations/", "data/foundation/audits](../../../tools/foundation/adjudicate_nonfunction_claims.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-24cc1d3b88295055 / if path.startswith(("已迁移的历史函数来源/", "已迁移的历史案例来源/", "reports/", "archive/", "data/foundation/migrations/", "data/foundation/audits
-  - 来源：`tools/foundation/adjudicate_nonfunction_claims.py`
-  - 依赖：—；被引用：—
-- [if pri_label == "P1_proof_equivalence":](../../../tools/foundation/process_084_batch.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-035570fa3760f561 / if pri_label == "P1_proof_equivalence":
-  - 来源：`tools/foundation/process_084_batch.py`
-  - 依赖：—；被引用：—
-- [if proof is not None:](../../../tools/operations/validate_incremental_execution.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-c941f33434d7656b / if proof is not None:
-  - 来源：`tools/operations/validate_incremental_execution.py`
-  - 依赖：—；被引用：—
-- [if proof.get("authority_fingerprint") != authority:](../../../tools/operations/validate_incremental_execution.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-4785788c8dd4d692 / if proof.get("authority_fingerprint") != authority:
-  - 来源：`tools/operations/validate_incremental_execution.py`
-  - 依赖：—；被引用：—
-- [if proof.get("component_id") != cid:](../../../tools/operations/validate_incremental_execution.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-0ab15af37d61d935 / if proof.get("component_id") != cid:
-  - 来源：`tools/operations/validate_incremental_execution.py`
-  - 依赖：—；被引用：—
-- [if proof.get("plan_hash") != plan.get("plan_hash"):](../../../tools/operations/validate_incremental_execution.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-f87a45b8fd361941 / if proof.get("plan_hash") != plan.get("plan_hash"):
-  - 来源：`tools/operations/validate_incremental_execution.py`
-  - 依赖：—；被引用：—
-- [if proof\["decision"\] != "NO_IMPACT_JUSTIFIED":](../../../tools/propagation/validate_reconciliation.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-cb0ac1c14bdf7fb4 / if proof\["decision"\] != "NO_IMPACT_JUSTIFIED":
-  - 来源：`tools/propagation/validate_reconciliation.py`
-  - 依赖：—；被引用：—
-- [if proof_path.exists():](../../../tools/foundation/validate_084_max_adjudication.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-cc1bd11c4fb318fc / if proof_path.exists():
-  - 来源：`tools/foundation/validate_084_max_adjudication.py`
-  - 依赖：—；被引用：—
-- [if re.search(r"定理\|证明\|公理\|因果\|必然\|唯一\|精确\|解析解\|不可能", title):](../../../tools/foundation/adjudicate_core.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-12f3888fb23a9b85 / if re.search(r"定理\|证明\|公理\|因果\|必然\|唯一\|精确\|解析解\|不可能", title):
-  - 来源：`tools/foundation/adjudicate_core.py`
-  - 依赖：—；被引用：—
-- [if re.search(r"定理\|证明\|必然\|唯一\|精确\|解析解\|不可能\|必要条件\|充分条件", title):](../../../tools/foundation/adjudicate_core.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-7ba31b00428f0b17 / if re.search(r"定理\|证明\|必然\|唯一\|精确\|解析解\|不可能\|必要条件\|充分条件", title):
-  - 来源：`tools/foundation/adjudicate_core.py`
-  - 依赖：—；被引用：—
-- [if re.search(r"系统\|生态\|意识\|社会\|认知\|权力\|治理\|冲击\|影响\|植物\|组织\|记忆\|学习\|智能\|模型", title):](../../../tools/foundation/adjudicate_core.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-ea0b61bd52fcc8f9 / if re.search(r"系统\|生态\|意识\|社会\|认知\|权力\|治理\|冲击\|影响\|植物\|组织\|记忆\|学习\|智能\|模型", title):
-  - 来源：`tools/foundation/adjudicate_core.py`
-  - 依赖：—；被引用：—
-- [if reconciled_decision in \["RETAIN_FORMAL_PROPOSITION_UNPROVED", "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE"\]:](../../../tools/foundation/process_084_batch.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-173df2de4e76f172 / if reconciled_decision in \["RETAIN_FORMAL_PROPOSITION_UNPROVED", "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE"\]:
-  - 来源：`tools/foundation/process_084_batch.py`
-  - 依赖：—；被引用：—
-- [if reconciled_decision not in \["PROVED_ORIGINAL_CLAIM_WITH_ARTIFACT", "RETAIN_SCOPED_DEFINITION"\]:](../../../tools/foundation/process_084_batch.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-7998539751198357 / if reconciled_decision not in \["PROVED_ORIGINAL_CLAIM_WITH_ARTIFACT", "RETAIN_SCOPED_DEFINITION"\]:
-  - 来源：`tools/foundation/process_084_batch.py`
-  - 依赖：—；被引用：—
-- [if reconciled_decision not in \["PROVED_ORIGINAL_CLAIM_WITH_ARTIFACT"\]:](../../../tools/foundation/process_084_batch.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-e575e207ba5bf285 / if reconciled_decision not in \["PROVED_ORIGINAL_CLAIM_WITH_ARTIFACT"\]:
-  - 来源：`tools/foundation/process_084_batch.py`
-  - 依赖：—；被引用：—
-- [if record.get("universal_claim") and not record.get("counterexample") and not record.get("counterexample_search"):](../../../tools/foundation/validate_claim_governance.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-f323b234dbb62732 / if record.get("universal_claim") and not record.get("counterexample") and not record.get("counterexample_search"):
-  - 来源：`tools/foundation/validate_claim_governance.py`
-  - 依赖：—；被引用：—
-- [if rel.get("relation_class") != "causal_delegated_to_mcf" and "causal proof" in text:](../../../tools/adaptive_relational_network/validator.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-d9e22a0a6440db74 / if rel.get("relation_class") != "causal_delegated_to_mcf" and "causal proof" in text:
-  - 来源：`tools/adaptive_relational_network/validator.py`
-  - 依赖：—；被引用：—
-- [if seal.get("method_version") in {"1.2.0", "1.3.0"} and lifecycle.get("candidate") is True:](../../../tools/validate_iteration_sync.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-53961150de627029 / if seal.get("method_version") in {"1.2.0", "1.3.0"} and lifecycle.get("candidate") is True:
-  - 来源：`tools/validate_iteration_sync.py`
-  - 依赖：—；被引用：—
-- [if src != {"formal_baseline":{"commit":"87b723be0ab314454303627dd6b8e266b60403f2","verification":"MUST_EXIST_AND_BE_ANCE](../../../tools/validate_epistemic_governance_relationships.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-16d36e2edda1eb7d / if src != {"formal_baseline":{"commit":"87b723be0ab314454303627dd6b8e266b60403f2","verification":"MUST_EXIST_AND_BE_ANCE
-  - 来源：`tools/validate_epistemic_governance_relationships.py`
-  - 依赖：—；被引用：—
-- [if state in LIFECYCLE_TERMINAL or state == UNKNOWN_STATE:](../../../tools/iteration_planner/completion_state.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-be3dfdafed3a99a8 / if state in LIFECYCLE_TERMINAL or state == UNKNOWN_STATE:
-  - 来源：`tools/iteration_planner/completion_state.py`
-  - 依赖：—；被引用：—
-- [if state in LIFECYCLE_TERMINAL:](../../../tools/iteration_planner/completion_state.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-69831f97070f15d4 / if state in LIFECYCLE_TERMINAL:
-  - 来源：`tools/iteration_planner/completion_state.py`
-  - 依赖：—；被引用：—
-- [if status.get("formal_status") == "WELL_TYPED":](../../../tools/foundation/build_function_asset_census.py)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-9A4496374426754B / if status.get("formal_status") == "WELL_TYPED": / IMPLICIT-9A4496374426754B
-  - 来源：`tools/foundation/build_function_asset_census.py`
-  - 依赖：—；被引用：—
-- [if status.get("proof_status") == "PROVED":](../../../tools/foundation/build_function_asset_census.py)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-976DE574CF6B79C3 / if status.get("proof_status") == "PROVED": / IMPLICIT-976DE574CF6B79C3
-  - 来源：`tools/foundation/build_function_asset_census.py`
-  - 依赖：—；被引用：—
-- [if status.get("proof_status") == "PROVED":](../../../tools/foundation/build_function_asset_census.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-1f5c623a49090831 / if status.get("proof_status") == "PROVED":
-  - 来源：`tools/foundation/build_function_asset_census.py`
-  - 依赖：—；被引用：—
-- [if text is None or surface_id in (nonimpact_proofs or set()):](../../../tools/validate_human_front_door.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-f239475fe6f1b2f4 / if text is None or surface_id in (nonimpact_proofs or set()):
-  - 来源：`tools/validate_human_front_door.py`
-  - 依赖：—；被引用：—
-- [if THEOREM.search(text):](../../../tools/foundation/adjudicate_nonfunction_claims.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-30d7f7c7be05b268 / if THEOREM.search(text):
-  - 来源：`tools/foundation/adjudicate_nonfunction_claims.py`
-  - 依赖：—；被引用：—
-- [If upstream objects D_{A1} exist, compose F_{A1}=N(⊕_{g∈D_{A1}} g); otherwise treat F_{A1} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+- [Life(S)=1 iff M_self*Boundary*Energy*Reproduction_active*Selection > theta_life。生命式系统至少要有自维持、边界、能量/资源代谢、主动复制或变体生成、选择反馈；被](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-7e37e70ff93cf193 / If upstream objects D_{A1} exist, compose F_{A1}=N(⊕_{g∈D_{A1}} g); otherwise treat F_{A1} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：A1；被引用：—
-- [If upstream objects D_{A2} exist, compose F_{A2}=N(⊕_{g∈D_{A2}} g); otherwise treat F_{A2} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-ef6f31ee4bb42e30 / If upstream objects D_{A2} exist, compose F_{A2}=N(⊕_{g∈D_{A2}} g); otherwise treat F_{A2} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：A2；被引用：—
-- [If upstream objects D_{A3} exist, compose F_{A3}=N(⊕_{g∈D_{A3}} g); otherwise treat F_{A3} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-8902a630b3afd47e / If upstream objects D_{A3} exist, compose F_{A3}=N(⊕_{g∈D_{A3}} g); otherwise treat F_{A3} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：A3；被引用：—
-- [If upstream objects D_{A4} exist, compose F_{A4}=N(⊕_{g∈D_{A4}} g); otherwise treat F_{A4} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-1ed598110c420856 / If upstream objects D_{A4} exist, compose F_{A4}=N(⊕_{g∈D_{A4}} g); otherwise treat F_{A4} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：A4；被引用：—
-- [If upstream objects D_{A5} exist, compose F_{A5}=N(⊕_{g∈D_{A5}} g); otherwise treat F_{A5} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-9c37e4f1d4e48839 / If upstream objects D_{A5} exist, compose F_{A5}=N(⊕_{g∈D_{A5}} g); otherwise treat F_{A5} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：A5；被引用：—
-- [If upstream objects D_{A6} exist, compose F_{A6}=N(⊕_{g∈D_{A6}} g); otherwise treat F_{A6} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-6d4d1f74a61aefa2 / If upstream objects D_{A6} exist, compose F_{A6}=N(⊕_{g∈D_{A6}} g); otherwise treat F_{A6} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：A6；被引用：—
-- [If upstream objects D_{A7} exist, compose F_{A7}=N(⊕_{g∈D_{A7}} g); otherwise treat F_{A7} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-59ad7765e0ccc7e4 / If upstream objects D_{A7} exist, compose F_{A7}=N(⊕_{g∈D_{A7}} g); otherwise treat F_{A7} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：A7；被引用：—
-- [If upstream objects D_{A8} exist, compose F_{A8}=N(⊕_{g∈D_{A8}} g); otherwise treat F_{A8} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-85d9b809c17873e3 / If upstream objects D_{A8} exist, compose F_{A8}=N(⊕_{g∈D_{A8}} g); otherwise treat F_{A8} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：A8；被引用：—
-- [If upstream objects D_{A9} exist, compose F_{A9}=N(⊕_{g∈D_{A9}} g); otherwise treat F_{A9} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-d1a923bf29814af0 / If upstream objects D_{A9} exist, compose F_{A9}=N(⊕_{g∈D_{A9}} g); otherwise treat F_{A9} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：A9；被引用：—
-- [If upstream objects D_{D100} exist, compose F_{D100}=N(⊕_{g∈D_{D100}} g); otherwise treat F_{D100} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-7ff9b8d80a727562 / If upstream objects D_{D100} exist, compose F_{D100}=N(⊕_{g∈D_{D100}} g); otherwise treat F_{D100} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D100；被引用：—
-- [If upstream objects D_{D101} exist, compose F_{D101}=N(⊕_{g∈D_{D101}} g); otherwise treat F_{D101} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-b55abd9637e87a8a / If upstream objects D_{D101} exist, compose F_{D101}=N(⊕_{g∈D_{D101}} g); otherwise treat F_{D101} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D101；被引用：—
-- [If upstream objects D_{D102} exist, compose F_{D102}=N(⊕_{g∈D_{D102}} g); otherwise treat F_{D102} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-4286cc105b9abfc6 / If upstream objects D_{D102} exist, compose F_{D102}=N(⊕_{g∈D_{D102}} g); otherwise treat F_{D102} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D102；被引用：—
-- [If upstream objects D_{D103} exist, compose F_{D103}=N(⊕_{g∈D_{D103}} g); otherwise treat F_{D103} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-f189c7933b1d99dd / If upstream objects D_{D103} exist, compose F_{D103}=N(⊕_{g∈D_{D103}} g); otherwise treat F_{D103} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D103；被引用：—
-- [If upstream objects D_{D104} exist, compose F_{D104}=N(⊕_{g∈D_{D104}} g); otherwise treat F_{D104} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-aaa6ac75290a7a99 / If upstream objects D_{D104} exist, compose F_{D104}=N(⊕_{g∈D_{D104}} g); otherwise treat F_{D104} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D104；被引用：—
-- [If upstream objects D_{D105} exist, compose F_{D105}=N(⊕_{g∈D_{D105}} g); otherwise treat F_{D105} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-3e42cb34ee983f6a / If upstream objects D_{D105} exist, compose F_{D105}=N(⊕_{g∈D_{D105}} g); otherwise treat F_{D105} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D105；被引用：—
-- [If upstream objects D_{D106} exist, compose F_{D106}=N(⊕_{g∈D_{D106}} g); otherwise treat F_{D106} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-2776b36ccc119334 / If upstream objects D_{D106} exist, compose F_{D106}=N(⊕_{g∈D_{D106}} g); otherwise treat F_{D106} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D106；被引用：—
-- [If upstream objects D_{D107} exist, compose F_{D107}=N(⊕_{g∈D_{D107}} g); otherwise treat F_{D107} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-ce705917b6b06277 / If upstream objects D_{D107} exist, compose F_{D107}=N(⊕_{g∈D_{D107}} g); otherwise treat F_{D107} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D107；被引用：—
-- [If upstream objects D_{D108} exist, compose F_{D108}=N(⊕_{g∈D_{D108}} g); otherwise treat F_{D108} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-659c0089d263a57d / If upstream objects D_{D108} exist, compose F_{D108}=N(⊕_{g∈D_{D108}} g); otherwise treat F_{D108} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D108；被引用：—
-- [If upstream objects D_{D109} exist, compose F_{D109}=N(⊕_{g∈D_{D109}} g); otherwise treat F_{D109} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-78e6d28830d18cf2 / If upstream objects D_{D109} exist, compose F_{D109}=N(⊕_{g∈D_{D109}} g); otherwise treat F_{D109} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D109；被引用：—
-- [If upstream objects D_{D10} exist, compose F_{D10}=N(⊕_{g∈D_{D10}} g); otherwise treat F_{D10} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-18f831cdbf905af4 / If upstream objects D_{D10} exist, compose F_{D10}=N(⊕_{g∈D_{D10}} g); otherwise treat F_{D10} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D10；被引用：—
-- [If upstream objects D_{D110} exist, compose F_{D110}=N(⊕_{g∈D_{D110}} g); otherwise treat F_{D110} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-f7e86f57fd7bc2fe / If upstream objects D_{D110} exist, compose F_{D110}=N(⊕_{g∈D_{D110}} g); otherwise treat F_{D110} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D110；被引用：—
-- [If upstream objects D_{D111} exist, compose F_{D111}=N(⊕_{g∈D_{D111}} g); otherwise treat F_{D111} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-ffcf8f84d582f5a2 / If upstream objects D_{D111} exist, compose F_{D111}=N(⊕_{g∈D_{D111}} g); otherwise treat F_{D111} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D111；被引用：—
-- [If upstream objects D_{D112} exist, compose F_{D112}=N(⊕_{g∈D_{D112}} g); otherwise treat F_{D112} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-3600cacc20f13f01 / If upstream objects D_{D112} exist, compose F_{D112}=N(⊕_{g∈D_{D112}} g); otherwise treat F_{D112} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D112；被引用：—
-- [If upstream objects D_{D113} exist, compose F_{D113}=N(⊕_{g∈D_{D113}} g); otherwise treat F_{D113} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-b7339479cffcf43a / If upstream objects D_{D113} exist, compose F_{D113}=N(⊕_{g∈D_{D113}} g); otherwise treat F_{D113} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D113；被引用：—
-- [If upstream objects D_{D114} exist, compose F_{D114}=N(⊕_{g∈D_{D114}} g); otherwise treat F_{D114} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-97d3479676472710 / If upstream objects D_{D114} exist, compose F_{D114}=N(⊕_{g∈D_{D114}} g); otherwise treat F_{D114} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D114；被引用：—
-- [If upstream objects D_{D115} exist, compose F_{D115}=N(⊕_{g∈D_{D115}} g); otherwise treat F_{D115} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-61de00e640b08018 / If upstream objects D_{D115} exist, compose F_{D115}=N(⊕_{g∈D_{D115}} g); otherwise treat F_{D115} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D115；被引用：—
-- [If upstream objects D_{D116} exist, compose F_{D116}=N(⊕_{g∈D_{D116}} g); otherwise treat F_{D116} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-20e28ba3b734de9e / If upstream objects D_{D116} exist, compose F_{D116}=N(⊕_{g∈D_{D116}} g); otherwise treat F_{D116} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D116；被引用：—
-- [If upstream objects D_{D117} exist, compose F_{D117}=N(⊕_{g∈D_{D117}} g); otherwise treat F_{D117} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-f8bc52885ff24d66 / If upstream objects D_{D117} exist, compose F_{D117}=N(⊕_{g∈D_{D117}} g); otherwise treat F_{D117} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D117；被引用：—
-- [If upstream objects D_{D118} exist, compose F_{D118}=N(⊕_{g∈D_{D118}} g); otherwise treat F_{D118} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-058ea65fbaa3ade5 / If upstream objects D_{D118} exist, compose F_{D118}=N(⊕_{g∈D_{D118}} g); otherwise treat F_{D118} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D118；被引用：—
-- [If upstream objects D_{D119} exist, compose F_{D119}=N(⊕_{g∈D_{D119}} g); otherwise treat F_{D119} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-922abbaa78f8edb9 / If upstream objects D_{D119} exist, compose F_{D119}=N(⊕_{g∈D_{D119}} g); otherwise treat F_{D119} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D119；被引用：—
-- [If upstream objects D_{D11} exist, compose F_{D11}=N(⊕_{g∈D_{D11}} g); otherwise treat F_{D11} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-44bbe1903d41ca30 / If upstream objects D_{D11} exist, compose F_{D11}=N(⊕_{g∈D_{D11}} g); otherwise treat F_{D11} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D11；被引用：—
-- [If upstream objects D_{D120} exist, compose F_{D120}=N(⊕_{g∈D_{D120}} g); otherwise treat F_{D120} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-90de22f13c1413e5 / If upstream objects D_{D120} exist, compose F_{D120}=N(⊕_{g∈D_{D120}} g); otherwise treat F_{D120} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D120；被引用：—
-- [If upstream objects D_{D121} exist, compose F_{D121}=N(⊕_{g∈D_{D121}} g); otherwise treat F_{D121} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-9ca1aef851634f2e / If upstream objects D_{D121} exist, compose F_{D121}=N(⊕_{g∈D_{D121}} g); otherwise treat F_{D121} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D121；被引用：—
-- [If upstream objects D_{D122} exist, compose F_{D122}=N(⊕_{g∈D_{D122}} g); otherwise treat F_{D122} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-cda7fc3a96c287ab / If upstream objects D_{D122} exist, compose F_{D122}=N(⊕_{g∈D_{D122}} g); otherwise treat F_{D122} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D122；被引用：—
-- [If upstream objects D_{D123} exist, compose F_{D123}=N(⊕_{g∈D_{D123}} g); otherwise treat F_{D123} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-9a933aefb7fbaf3f / If upstream objects D_{D123} exist, compose F_{D123}=N(⊕_{g∈D_{D123}} g); otherwise treat F_{D123} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D123；被引用：—
-- [If upstream objects D_{D124} exist, compose F_{D124}=N(⊕_{g∈D_{D124}} g); otherwise treat F_{D124} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-222650addc2ea7b1 / If upstream objects D_{D124} exist, compose F_{D124}=N(⊕_{g∈D_{D124}} g); otherwise treat F_{D124} as an axiom seed.
+  - 可搜索名称：NFC-64f90a105ff850d4 / Life(S)=1 iff M_self*Boundary*Energy*Reproduction_active*Selection > theta_life。生命式系统至少要有自维持、边界、能量/资源代谢、主动复制或变体生成、选择反馈；被
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D124；被引用：—
-- [If upstream objects D_{D125} exist, compose F_{D125}=N(⊕_{g∈D_{D125}} g); otherwise treat F_{D125} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+- [Life(S)=1 iff M_self*Boundary*Energy*Reproduction_active*Selection > theta_life。生命式系统至少要有自维持、边界、能量/资源代谢、主动复制或变体生成、选择反馈；被](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-dcb5d81cdbc5f5e9 / Life(S)=1 iff M_self*Boundary*Energy*Reproduction_active*Selection > theta_life。生命式系统至少要有自维持、边界、能量/资源代谢、主动复制或变体生成、选择反馈；被
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D124；被引用：—
+- [Lifecycle and external boundary](../../../reports/operations/121Q32-typed-change-propagation-and-self-updating-system-map-audit.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-35c4bb0bb3bad105 / If upstream objects D_{D125} exist, compose F_{D125}=N(⊕_{g∈D_{D125}} g); otherwise treat F_{D125} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D125；被引用：—
-- [If upstream objects D_{D126} exist, compose F_{D126}=N(⊕_{g∈D_{D126}} g); otherwise treat F_{D126} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-85d2274529d6a02c / If upstream objects D_{D126} exist, compose F_{D126}=N(⊕_{g∈D_{D126}} g); otherwise treat F_{D126} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D126；被引用：—
-- [If upstream objects D_{D127} exist, compose F_{D127}=N(⊕_{g∈D_{D127}} g); otherwise treat F_{D127} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-83176b221c48034a / If upstream objects D_{D127} exist, compose F_{D127}=N(⊕_{g∈D_{D127}} g); otherwise treat F_{D127} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D127；被引用：—
-- [If upstream objects D_{D128} exist, compose F_{D128}=N(⊕_{g∈D_{D128}} g); otherwise treat F_{D128} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-cecf18a5ff93f611 / If upstream objects D_{D128} exist, compose F_{D128}=N(⊕_{g∈D_{D128}} g); otherwise treat F_{D128} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D128；被引用：—
-- [If upstream objects D_{D129} exist, compose F_{D129}=N(⊕_{g∈D_{D129}} g); otherwise treat F_{D129} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-81e97c9160fe0327 / If upstream objects D_{D129} exist, compose F_{D129}=N(⊕_{g∈D_{D129}} g); otherwise treat F_{D129} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D129；被引用：—
-- [If upstream objects D_{D12} exist, compose F_{D12}=N(⊕_{g∈D_{D12}} g); otherwise treat F_{D12} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-ea1ccca73f041da5 / If upstream objects D_{D12} exist, compose F_{D12}=N(⊕_{g∈D_{D12}} g); otherwise treat F_{D12} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D12；被引用：—
-- [If upstream objects D_{D130} exist, compose F_{D130}=N(⊕_{g∈D_{D130}} g); otherwise treat F_{D130} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-4816b5b00468385e / If upstream objects D_{D130} exist, compose F_{D130}=N(⊕_{g∈D_{D130}} g); otherwise treat F_{D130} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D130；被引用：—
-- [If upstream objects D_{D131} exist, compose F_{D131}=N(⊕_{g∈D_{D131}} g); otherwise treat F_{D131} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-b8eb1e27aa77687b / If upstream objects D_{D131} exist, compose F_{D131}=N(⊕_{g∈D_{D131}} g); otherwise treat F_{D131} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D131；被引用：—
-- [If upstream objects D_{D132} exist, compose F_{D132}=N(⊕_{g∈D_{D132}} g); otherwise treat F_{D132} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-5772f9a23a0b7e68 / If upstream objects D_{D132} exist, compose F_{D132}=N(⊕_{g∈D_{D132}} g); otherwise treat F_{D132} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D132；被引用：—
-- [If upstream objects D_{D133} exist, compose F_{D133}=N(⊕_{g∈D_{D133}} g); otherwise treat F_{D133} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-88c0f7cfba3f6973 / If upstream objects D_{D133} exist, compose F_{D133}=N(⊕_{g∈D_{D133}} g); otherwise treat F_{D133} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D133；被引用：—
-- [If upstream objects D_{D134} exist, compose F_{D134}=N(⊕_{g∈D_{D134}} g); otherwise treat F_{D134} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-1dcc09ced861a454 / If upstream objects D_{D134} exist, compose F_{D134}=N(⊕_{g∈D_{D134}} g); otherwise treat F_{D134} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D134；被引用：—
-- [If upstream objects D_{D135} exist, compose F_{D135}=N(⊕_{g∈D_{D135}} g); otherwise treat F_{D135} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-0ee859b885dac52f / If upstream objects D_{D135} exist, compose F_{D135}=N(⊕_{g∈D_{D135}} g); otherwise treat F_{D135} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D135；被引用：—
-- [If upstream objects D_{D136} exist, compose F_{D136}=N(⊕_{g∈D_{D136}} g); otherwise treat F_{D136} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-6a2f881d3adedf0e / If upstream objects D_{D136} exist, compose F_{D136}=N(⊕_{g∈D_{D136}} g); otherwise treat F_{D136} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D136；被引用：—
-- [If upstream objects D_{D137} exist, compose F_{D137}=N(⊕_{g∈D_{D137}} g); otherwise treat F_{D137} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-344c4380c4fe4d64 / If upstream objects D_{D137} exist, compose F_{D137}=N(⊕_{g∈D_{D137}} g); otherwise treat F_{D137} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D137；被引用：—
-- [If upstream objects D_{D138} exist, compose F_{D138}=N(⊕_{g∈D_{D138}} g); otherwise treat F_{D138} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-4d3dd328db8951ed / If upstream objects D_{D138} exist, compose F_{D138}=N(⊕_{g∈D_{D138}} g); otherwise treat F_{D138} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D138；被引用：—
-- [If upstream objects D_{D139} exist, compose F_{D139}=N(⊕_{g∈D_{D139}} g); otherwise treat F_{D139} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-8cba97f920d5e083 / If upstream objects D_{D139} exist, compose F_{D139}=N(⊕_{g∈D_{D139}} g); otherwise treat F_{D139} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D139；被引用：—
-- [If upstream objects D_{D13} exist, compose F_{D13}=N(⊕_{g∈D_{D13}} g); otherwise treat F_{D13} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-8e39fb89c1202e26 / If upstream objects D_{D13} exist, compose F_{D13}=N(⊕_{g∈D_{D13}} g); otherwise treat F_{D13} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D13；被引用：—
-- [If upstream objects D_{D140} exist, compose F_{D140}=N(⊕_{g∈D_{D140}} g); otherwise treat F_{D140} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-7362f1be14265525 / If upstream objects D_{D140} exist, compose F_{D140}=N(⊕_{g∈D_{D140}} g); otherwise treat F_{D140} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D140；被引用：—
-- [If upstream objects D_{D141} exist, compose F_{D141}=N(⊕_{g∈D_{D141}} g); otherwise treat F_{D141} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-d110ff995b7070ee / If upstream objects D_{D141} exist, compose F_{D141}=N(⊕_{g∈D_{D141}} g); otherwise treat F_{D141} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D141；被引用：—
-- [If upstream objects D_{D142} exist, compose F_{D142}=N(⊕_{g∈D_{D142}} g); otherwise treat F_{D142} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-d64d911ccf1e0f0c / If upstream objects D_{D142} exist, compose F_{D142}=N(⊕_{g∈D_{D142}} g); otherwise treat F_{D142} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D142；被引用：—
-- [If upstream objects D_{D143} exist, compose F_{D143}=N(⊕_{g∈D_{D143}} g); otherwise treat F_{D143} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-e0eb48b1a1d9f3b0 / If upstream objects D_{D143} exist, compose F_{D143}=N(⊕_{g∈D_{D143}} g); otherwise treat F_{D143} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D143；被引用：—
-- [If upstream objects D_{D144} exist, compose F_{D144}=N(⊕_{g∈D_{D144}} g); otherwise treat F_{D144} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-e469618b707bff80 / If upstream objects D_{D144} exist, compose F_{D144}=N(⊕_{g∈D_{D144}} g); otherwise treat F_{D144} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D144；被引用：—
-- [If upstream objects D_{D145} exist, compose F_{D145}=N(⊕_{g∈D_{D145}} g); otherwise treat F_{D145} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-f02b8223350db3c9 / If upstream objects D_{D145} exist, compose F_{D145}=N(⊕_{g∈D_{D145}} g); otherwise treat F_{D145} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D145；被引用：—
-- [If upstream objects D_{D146} exist, compose F_{D146}=N(⊕_{g∈D_{D146}} g); otherwise treat F_{D146} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-adeacdb33fe97f36 / If upstream objects D_{D146} exist, compose F_{D146}=N(⊕_{g∈D_{D146}} g); otherwise treat F_{D146} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D146；被引用：—
-- [If upstream objects D_{D147} exist, compose F_{D147}=N(⊕_{g∈D_{D147}} g); otherwise treat F_{D147} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-4678206d9a3e5682 / If upstream objects D_{D147} exist, compose F_{D147}=N(⊕_{g∈D_{D147}} g); otherwise treat F_{D147} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D147；被引用：—
-- [If upstream objects D_{D148} exist, compose F_{D148}=N(⊕_{g∈D_{D148}} g); otherwise treat F_{D148} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-c217a05b05ef16d6 / If upstream objects D_{D148} exist, compose F_{D148}=N(⊕_{g∈D_{D148}} g); otherwise treat F_{D148} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D148；被引用：—
-- [If upstream objects D_{D149} exist, compose F_{D149}=N(⊕_{g∈D_{D149}} g); otherwise treat F_{D149} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-8f13703de80ccc53 / If upstream objects D_{D149} exist, compose F_{D149}=N(⊕_{g∈D_{D149}} g); otherwise treat F_{D149} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D149；被引用：—
-- [If upstream objects D_{D14} exist, compose F_{D14}=N(⊕_{g∈D_{D14}} g); otherwise treat F_{D14} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-21336275697b58f7 / If upstream objects D_{D14} exist, compose F_{D14}=N(⊕_{g∈D_{D14}} g); otherwise treat F_{D14} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D14；被引用：—
-- [If upstream objects D_{D150} exist, compose F_{D150}=N(⊕_{g∈D_{D150}} g); otherwise treat F_{D150} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-40c777b89a0c33e2 / If upstream objects D_{D150} exist, compose F_{D150}=N(⊕_{g∈D_{D150}} g); otherwise treat F_{D150} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D150；被引用：—
-- [If upstream objects D_{D151} exist, compose F_{D151}=N(⊕_{g∈D_{D151}} g); otherwise treat F_{D151} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-4fec1e7e681f90c9 / If upstream objects D_{D151} exist, compose F_{D151}=N(⊕_{g∈D_{D151}} g); otherwise treat F_{D151} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D151；被引用：—
-- [If upstream objects D_{D152} exist, compose F_{D152}=N(⊕_{g∈D_{D152}} g); otherwise treat F_{D152} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-358bd06497e791ca / If upstream objects D_{D152} exist, compose F_{D152}=N(⊕_{g∈D_{D152}} g); otherwise treat F_{D152} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D152；被引用：—
-- [If upstream objects D_{D153} exist, compose F_{D153}=N(⊕_{g∈D_{D153}} g); otherwise treat F_{D153} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-100e60808cfac68e / If upstream objects D_{D153} exist, compose F_{D153}=N(⊕_{g∈D_{D153}} g); otherwise treat F_{D153} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D153；被引用：—
-- [If upstream objects D_{D154} exist, compose F_{D154}=N(⊕_{g∈D_{D154}} g); otherwise treat F_{D154} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-0c9b45822b9adc52 / If upstream objects D_{D154} exist, compose F_{D154}=N(⊕_{g∈D_{D154}} g); otherwise treat F_{D154} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D154；被引用：—
-- [If upstream objects D_{D155} exist, compose F_{D155}=N(⊕_{g∈D_{D155}} g); otherwise treat F_{D155} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-ebf0826f4e7498a5 / If upstream objects D_{D155} exist, compose F_{D155}=N(⊕_{g∈D_{D155}} g); otherwise treat F_{D155} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D155；被引用：—
-- [If upstream objects D_{D156} exist, compose F_{D156}=N(⊕_{g∈D_{D156}} g); otherwise treat F_{D156} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-9bc53a4b409f4b0e / If upstream objects D_{D156} exist, compose F_{D156}=N(⊕_{g∈D_{D156}} g); otherwise treat F_{D156} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D156；被引用：—
-- [If upstream objects D_{D157} exist, compose F_{D157}=N(⊕_{g∈D_{D157}} g); otherwise treat F_{D157} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-7f3faba9574ae195 / If upstream objects D_{D157} exist, compose F_{D157}=N(⊕_{g∈D_{D157}} g); otherwise treat F_{D157} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D157；被引用：—
-- [If upstream objects D_{D158} exist, compose F_{D158}=N(⊕_{g∈D_{D158}} g); otherwise treat F_{D158} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-e8c8e20cfe0ef923 / If upstream objects D_{D158} exist, compose F_{D158}=N(⊕_{g∈D_{D158}} g); otherwise treat F_{D158} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D158；被引用：—
-- [If upstream objects D_{D159} exist, compose F_{D159}=N(⊕_{g∈D_{D159}} g); otherwise treat F_{D159} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-9171edd6b9297348 / If upstream objects D_{D159} exist, compose F_{D159}=N(⊕_{g∈D_{D159}} g); otherwise treat F_{D159} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D159；被引用：—
-- [If upstream objects D_{D15} exist, compose F_{D15}=N(⊕_{g∈D_{D15}} g); otherwise treat F_{D15} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-e647df8fab17e927 / If upstream objects D_{D15} exist, compose F_{D15}=N(⊕_{g∈D_{D15}} g); otherwise treat F_{D15} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D15；被引用：—
-- [If upstream objects D_{D160} exist, compose F_{D160}=N(⊕_{g∈D_{D160}} g); otherwise treat F_{D160} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-ecfa1a23bb5b172f / If upstream objects D_{D160} exist, compose F_{D160}=N(⊕_{g∈D_{D160}} g); otherwise treat F_{D160} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D160；被引用：—
-- [If upstream objects D_{D161} exist, compose F_{D161}=N(⊕_{g∈D_{D161}} g); otherwise treat F_{D161} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-ad2852dd65848986 / If upstream objects D_{D161} exist, compose F_{D161}=N(⊕_{g∈D_{D161}} g); otherwise treat F_{D161} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D161；被引用：—
-- [If upstream objects D_{D162} exist, compose F_{D162}=N(⊕_{g∈D_{D162}} g); otherwise treat F_{D162} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-12c8f24772eb1cdf / If upstream objects D_{D162} exist, compose F_{D162}=N(⊕_{g∈D_{D162}} g); otherwise treat F_{D162} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D162；被引用：—
-- [If upstream objects D_{D163} exist, compose F_{D163}=N(⊕_{g∈D_{D163}} g); otherwise treat F_{D163} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-80e70ee2ed49f8a5 / If upstream objects D_{D163} exist, compose F_{D163}=N(⊕_{g∈D_{D163}} g); otherwise treat F_{D163} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D163；被引用：—
-- [If upstream objects D_{D164} exist, compose F_{D164}=N(⊕_{g∈D_{D164}} g); otherwise treat F_{D164} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-7fdc49f47e27247c / If upstream objects D_{D164} exist, compose F_{D164}=N(⊕_{g∈D_{D164}} g); otherwise treat F_{D164} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D164；被引用：—
-- [If upstream objects D_{D165} exist, compose F_{D165}=N(⊕_{g∈D_{D165}} g); otherwise treat F_{D165} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-1076094596540840 / If upstream objects D_{D165} exist, compose F_{D165}=N(⊕_{g∈D_{D165}} g); otherwise treat F_{D165} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D165；被引用：—
-- [If upstream objects D_{D166} exist, compose F_{D166}=N(⊕_{g∈D_{D166}} g); otherwise treat F_{D166} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-7df665278ece7b87 / If upstream objects D_{D166} exist, compose F_{D166}=N(⊕_{g∈D_{D166}} g); otherwise treat F_{D166} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D166；被引用：—
-- [If upstream objects D_{D167} exist, compose F_{D167}=N(⊕_{g∈D_{D167}} g); otherwise treat F_{D167} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-b39c4d9a727e5dd7 / If upstream objects D_{D167} exist, compose F_{D167}=N(⊕_{g∈D_{D167}} g); otherwise treat F_{D167} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D167；被引用：—
-- [If upstream objects D_{D168} exist, compose F_{D168}=N(⊕_{g∈D_{D168}} g); otherwise treat F_{D168} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-bbc52d0e1a3c225f / If upstream objects D_{D168} exist, compose F_{D168}=N(⊕_{g∈D_{D168}} g); otherwise treat F_{D168} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D168；被引用：—
-- [If upstream objects D_{D169} exist, compose F_{D169}=N(⊕_{g∈D_{D169}} g); otherwise treat F_{D169} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-83cf9d541abba215 / If upstream objects D_{D169} exist, compose F_{D169}=N(⊕_{g∈D_{D169}} g); otherwise treat F_{D169} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D169；被引用：—
-- [If upstream objects D_{D16} exist, compose F_{D16}=N(⊕_{g∈D_{D16}} g); otherwise treat F_{D16} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-f5cd025125a28295 / If upstream objects D_{D16} exist, compose F_{D16}=N(⊕_{g∈D_{D16}} g); otherwise treat F_{D16} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D16；被引用：—
-- [If upstream objects D_{D170} exist, compose F_{D170}=N(⊕_{g∈D_{D170}} g); otherwise treat F_{D170} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-268c911b81ebd8e2 / If upstream objects D_{D170} exist, compose F_{D170}=N(⊕_{g∈D_{D170}} g); otherwise treat F_{D170} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D170；被引用：—
-- [If upstream objects D_{D171} exist, compose F_{D171}=N(⊕_{g∈D_{D171}} g); otherwise treat F_{D171} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-4a89ae653e17c7c0 / If upstream objects D_{D171} exist, compose F_{D171}=N(⊕_{g∈D_{D171}} g); otherwise treat F_{D171} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D171；被引用：—
-- [If upstream objects D_{D172} exist, compose F_{D172}=N(⊕_{g∈D_{D172}} g); otherwise treat F_{D172} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-83f29c684828bc36 / If upstream objects D_{D172} exist, compose F_{D172}=N(⊕_{g∈D_{D172}} g); otherwise treat F_{D172} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D172；被引用：—
-- [If upstream objects D_{D173} exist, compose F_{D173}=N(⊕_{g∈D_{D173}} g); otherwise treat F_{D173} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-85ce9684ceb2dac1 / If upstream objects D_{D173} exist, compose F_{D173}=N(⊕_{g∈D_{D173}} g); otherwise treat F_{D173} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D173；被引用：—
-- [If upstream objects D_{D174} exist, compose F_{D174}=N(⊕_{g∈D_{D174}} g); otherwise treat F_{D174} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-ef0f6e95e4209cc2 / If upstream objects D_{D174} exist, compose F_{D174}=N(⊕_{g∈D_{D174}} g); otherwise treat F_{D174} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D174；被引用：—
-- [If upstream objects D_{D175} exist, compose F_{D175}=N(⊕_{g∈D_{D175}} g); otherwise treat F_{D175} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-7e4a0000f16b3368 / If upstream objects D_{D175} exist, compose F_{D175}=N(⊕_{g∈D_{D175}} g); otherwise treat F_{D175} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D175；被引用：—
-- [If upstream objects D_{D176} exist, compose F_{D176}=N(⊕_{g∈D_{D176}} g); otherwise treat F_{D176} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-2ed1ebb7a23ba6cf / If upstream objects D_{D176} exist, compose F_{D176}=N(⊕_{g∈D_{D176}} g); otherwise treat F_{D176} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D176；被引用：—
-- [If upstream objects D_{D177} exist, compose F_{D177}=N(⊕_{g∈D_{D177}} g); otherwise treat F_{D177} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-962e144b0db1c052 / If upstream objects D_{D177} exist, compose F_{D177}=N(⊕_{g∈D_{D177}} g); otherwise treat F_{D177} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D177；被引用：—
-- [If upstream objects D_{D178} exist, compose F_{D178}=N(⊕_{g∈D_{D178}} g); otherwise treat F_{D178} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-ef7fd0814be46da2 / If upstream objects D_{D178} exist, compose F_{D178}=N(⊕_{g∈D_{D178}} g); otherwise treat F_{D178} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D178；被引用：—
-- [If upstream objects D_{D179} exist, compose F_{D179}=N(⊕_{g∈D_{D179}} g); otherwise treat F_{D179} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-c1bfec353e428277 / If upstream objects D_{D179} exist, compose F_{D179}=N(⊕_{g∈D_{D179}} g); otherwise treat F_{D179} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D179；被引用：—
-- [If upstream objects D_{D17} exist, compose F_{D17}=N(⊕_{g∈D_{D17}} g); otherwise treat F_{D17} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-44d63ebea2ca8046 / If upstream objects D_{D17} exist, compose F_{D17}=N(⊕_{g∈D_{D17}} g); otherwise treat F_{D17} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D17；被引用：—
-- [If upstream objects D_{D180} exist, compose F_{D180}=N(⊕_{g∈D_{D180}} g); otherwise treat F_{D180} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-eefcad9e74f53992 / If upstream objects D_{D180} exist, compose F_{D180}=N(⊕_{g∈D_{D180}} g); otherwise treat F_{D180} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D180；被引用：—
-- [If upstream objects D_{D181} exist, compose F_{D181}=N(⊕_{g∈D_{D181}} g); otherwise treat F_{D181} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-d262d6a24562b0e7 / If upstream objects D_{D181} exist, compose F_{D181}=N(⊕_{g∈D_{D181}} g); otherwise treat F_{D181} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D181；被引用：—
-- [If upstream objects D_{D182} exist, compose F_{D182}=N(⊕_{g∈D_{D182}} g); otherwise treat F_{D182} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-9182ad442505406c / If upstream objects D_{D182} exist, compose F_{D182}=N(⊕_{g∈D_{D182}} g); otherwise treat F_{D182} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D182；被引用：—
-- [If upstream objects D_{D183} exist, compose F_{D183}=N(⊕_{g∈D_{D183}} g); otherwise treat F_{D183} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-46916d90cc701837 / If upstream objects D_{D183} exist, compose F_{D183}=N(⊕_{g∈D_{D183}} g); otherwise treat F_{D183} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D183；被引用：—
-- [If upstream objects D_{D184} exist, compose F_{D184}=N(⊕_{g∈D_{D184}} g); otherwise treat F_{D184} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-1741ea043f4d8ddb / If upstream objects D_{D184} exist, compose F_{D184}=N(⊕_{g∈D_{D184}} g); otherwise treat F_{D184} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D184；被引用：—
-- [If upstream objects D_{D185} exist, compose F_{D185}=N(⊕_{g∈D_{D185}} g); otherwise treat F_{D185} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-aec4809861f5f53c / If upstream objects D_{D185} exist, compose F_{D185}=N(⊕_{g∈D_{D185}} g); otherwise treat F_{D185} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D185；被引用：—
-- [If upstream objects D_{D186} exist, compose F_{D186}=N(⊕_{g∈D_{D186}} g); otherwise treat F_{D186} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-78f4e37e306e5231 / If upstream objects D_{D186} exist, compose F_{D186}=N(⊕_{g∈D_{D186}} g); otherwise treat F_{D186} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D186；被引用：—
-- [If upstream objects D_{D187} exist, compose F_{D187}=N(⊕_{g∈D_{D187}} g); otherwise treat F_{D187} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-801e98dbe05777db / If upstream objects D_{D187} exist, compose F_{D187}=N(⊕_{g∈D_{D187}} g); otherwise treat F_{D187} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D187；被引用：—
-- [If upstream objects D_{D188} exist, compose F_{D188}=N(⊕_{g∈D_{D188}} g); otherwise treat F_{D188} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-8360e2372ebc5f5e / If upstream objects D_{D188} exist, compose F_{D188}=N(⊕_{g∈D_{D188}} g); otherwise treat F_{D188} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D188；被引用：—
-- [If upstream objects D_{D189} exist, compose F_{D189}=N(⊕_{g∈D_{D189}} g); otherwise treat F_{D189} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-1ef114f538c31d2d / If upstream objects D_{D189} exist, compose F_{D189}=N(⊕_{g∈D_{D189}} g); otherwise treat F_{D189} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D189；被引用：—
-- [If upstream objects D_{D18} exist, compose F_{D18}=N(⊕_{g∈D_{D18}} g); otherwise treat F_{D18} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-4a00666b748b2837 / If upstream objects D_{D18} exist, compose F_{D18}=N(⊕_{g∈D_{D18}} g); otherwise treat F_{D18} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D18；被引用：—
-- [If upstream objects D_{D190} exist, compose F_{D190}=N(⊕_{g∈D_{D190}} g); otherwise treat F_{D190} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-96b6126f9da87bb0 / If upstream objects D_{D190} exist, compose F_{D190}=N(⊕_{g∈D_{D190}} g); otherwise treat F_{D190} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D190；被引用：—
-- [If upstream objects D_{D191} exist, compose F_{D191}=N(⊕_{g∈D_{D191}} g); otherwise treat F_{D191} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-fcedc72cf9317c5f / If upstream objects D_{D191} exist, compose F_{D191}=N(⊕_{g∈D_{D191}} g); otherwise treat F_{D191} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D191；被引用：—
-- [If upstream objects D_{D192} exist, compose F_{D192}=N(⊕_{g∈D_{D192}} g); otherwise treat F_{D192} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-dfacb202305726a0 / If upstream objects D_{D192} exist, compose F_{D192}=N(⊕_{g∈D_{D192}} g); otherwise treat F_{D192} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D192；被引用：—
-- [If upstream objects D_{D193} exist, compose F_{D193}=N(⊕_{g∈D_{D193}} g); otherwise treat F_{D193} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-a9fedfe1a6a367f1 / If upstream objects D_{D193} exist, compose F_{D193}=N(⊕_{g∈D_{D193}} g); otherwise treat F_{D193} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D193；被引用：—
-- [If upstream objects D_{D194} exist, compose F_{D194}=N(⊕_{g∈D_{D194}} g); otherwise treat F_{D194} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-482c0d72d642c094 / If upstream objects D_{D194} exist, compose F_{D194}=N(⊕_{g∈D_{D194}} g); otherwise treat F_{D194} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D194；被引用：—
-- [If upstream objects D_{D195} exist, compose F_{D195}=N(⊕_{g∈D_{D195}} g); otherwise treat F_{D195} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-cdf4c8a2301af638 / If upstream objects D_{D195} exist, compose F_{D195}=N(⊕_{g∈D_{D195}} g); otherwise treat F_{D195} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D195；被引用：—
-- [If upstream objects D_{D196} exist, compose F_{D196}=N(⊕_{g∈D_{D196}} g); otherwise treat F_{D196} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-96a1c93db5345c88 / If upstream objects D_{D196} exist, compose F_{D196}=N(⊕_{g∈D_{D196}} g); otherwise treat F_{D196} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D196；被引用：—
-- [If upstream objects D_{D197} exist, compose F_{D197}=N(⊕_{g∈D_{D197}} g); otherwise treat F_{D197} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-3db1682118f77bb5 / If upstream objects D_{D197} exist, compose F_{D197}=N(⊕_{g∈D_{D197}} g); otherwise treat F_{D197} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D197；被引用：—
-- [If upstream objects D_{D198} exist, compose F_{D198}=N(⊕_{g∈D_{D198}} g); otherwise treat F_{D198} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-358c3ff341f70be5 / If upstream objects D_{D198} exist, compose F_{D198}=N(⊕_{g∈D_{D198}} g); otherwise treat F_{D198} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D198；被引用：—
-- [If upstream objects D_{D199} exist, compose F_{D199}=N(⊕_{g∈D_{D199}} g); otherwise treat F_{D199} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-43c36efc7513c9bc / If upstream objects D_{D199} exist, compose F_{D199}=N(⊕_{g∈D_{D199}} g); otherwise treat F_{D199} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D199；被引用：—
-- [If upstream objects D_{D19} exist, compose F_{D19}=N(⊕_{g∈D_{D19}} g); otherwise treat F_{D19} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-c77d71568e70ea04 / If upstream objects D_{D19} exist, compose F_{D19}=N(⊕_{g∈D_{D19}} g); otherwise treat F_{D19} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D19；被引用：—
-- [If upstream objects D_{D1} exist, compose F_{D1}=N(⊕_{g∈D_{D1}} g); otherwise treat F_{D1} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-d863d3d51bf90317 / If upstream objects D_{D1} exist, compose F_{D1}=N(⊕_{g∈D_{D1}} g); otherwise treat F_{D1} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D1；被引用：—
-- [If upstream objects D_{D200} exist, compose F_{D200}=N(⊕_{g∈D_{D200}} g); otherwise treat F_{D200} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-ef04726aa9092f4b / If upstream objects D_{D200} exist, compose F_{D200}=N(⊕_{g∈D_{D200}} g); otherwise treat F_{D200} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D200；被引用：—
-- [If upstream objects D_{D201} exist, compose F_{D201}=N(⊕_{g∈D_{D201}} g); otherwise treat F_{D201} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-e390fff1e7baba44 / If upstream objects D_{D201} exist, compose F_{D201}=N(⊕_{g∈D_{D201}} g); otherwise treat F_{D201} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D201；被引用：—
-- [If upstream objects D_{D202} exist, compose F_{D202}=N(⊕_{g∈D_{D202}} g); otherwise treat F_{D202} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-d9f3840c5cab3339 / If upstream objects D_{D202} exist, compose F_{D202}=N(⊕_{g∈D_{D202}} g); otherwise treat F_{D202} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D202；被引用：—
-- [If upstream objects D_{D203} exist, compose F_{D203}=N(⊕_{g∈D_{D203}} g); otherwise treat F_{D203} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-aa27e3ead12b283a / If upstream objects D_{D203} exist, compose F_{D203}=N(⊕_{g∈D_{D203}} g); otherwise treat F_{D203} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D203；被引用：—
-- [If upstream objects D_{D204} exist, compose F_{D204}=N(⊕_{g∈D_{D204}} g); otherwise treat F_{D204} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-9cb2f1390911b964 / If upstream objects D_{D204} exist, compose F_{D204}=N(⊕_{g∈D_{D204}} g); otherwise treat F_{D204} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D204；被引用：—
-- [If upstream objects D_{D205} exist, compose F_{D205}=N(⊕_{g∈D_{D205}} g); otherwise treat F_{D205} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-99575160bd8f0e0c / If upstream objects D_{D205} exist, compose F_{D205}=N(⊕_{g∈D_{D205}} g); otherwise treat F_{D205} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D205；被引用：—
-- [If upstream objects D_{D206} exist, compose F_{D206}=N(⊕_{g∈D_{D206}} g); otherwise treat F_{D206} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-14999e6ca25040d5 / If upstream objects D_{D206} exist, compose F_{D206}=N(⊕_{g∈D_{D206}} g); otherwise treat F_{D206} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D206；被引用：—
-- [If upstream objects D_{D207} exist, compose F_{D207}=N(⊕_{g∈D_{D207}} g); otherwise treat F_{D207} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-79dc865dbd8fa6e5 / If upstream objects D_{D207} exist, compose F_{D207}=N(⊕_{g∈D_{D207}} g); otherwise treat F_{D207} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D207；被引用：—
-- [If upstream objects D_{D208} exist, compose F_{D208}=N(⊕_{g∈D_{D208}} g); otherwise treat F_{D208} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-870721326b63a33b / If upstream objects D_{D208} exist, compose F_{D208}=N(⊕_{g∈D_{D208}} g); otherwise treat F_{D208} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D208；被引用：—
-- [If upstream objects D_{D209} exist, compose F_{D209}=N(⊕_{g∈D_{D209}} g); otherwise treat F_{D209} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-e80a278e5fef441b / If upstream objects D_{D209} exist, compose F_{D209}=N(⊕_{g∈D_{D209}} g); otherwise treat F_{D209} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D209；被引用：—
-- [If upstream objects D_{D20} exist, compose F_{D20}=N(⊕_{g∈D_{D20}} g); otherwise treat F_{D20} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-cb31927bde8d1cf0 / If upstream objects D_{D20} exist, compose F_{D20}=N(⊕_{g∈D_{D20}} g); otherwise treat F_{D20} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D20；被引用：—
-- [If upstream objects D_{D210} exist, compose F_{D210}=N(⊕_{g∈D_{D210}} g); otherwise treat F_{D210} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-dcb0440e5c52b3a4 / If upstream objects D_{D210} exist, compose F_{D210}=N(⊕_{g∈D_{D210}} g); otherwise treat F_{D210} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D210；被引用：—
-- [If upstream objects D_{D211} exist, compose F_{D211}=N(⊕_{g∈D_{D211}} g); otherwise treat F_{D211} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-edcd285c089b0653 / If upstream objects D_{D211} exist, compose F_{D211}=N(⊕_{g∈D_{D211}} g); otherwise treat F_{D211} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D211；被引用：—
-- [If upstream objects D_{D212} exist, compose F_{D212}=N(⊕_{g∈D_{D212}} g); otherwise treat F_{D212} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-651b81cb3c600d7c / If upstream objects D_{D212} exist, compose F_{D212}=N(⊕_{g∈D_{D212}} g); otherwise treat F_{D212} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D212；被引用：—
-- [If upstream objects D_{D213} exist, compose F_{D213}=N(⊕_{g∈D_{D213}} g); otherwise treat F_{D213} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-68ccb3e06d73535e / If upstream objects D_{D213} exist, compose F_{D213}=N(⊕_{g∈D_{D213}} g); otherwise treat F_{D213} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D213；被引用：—
-- [If upstream objects D_{D214} exist, compose F_{D214}=N(⊕_{g∈D_{D214}} g); otherwise treat F_{D214} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-a8b43c23f9b875cb / If upstream objects D_{D214} exist, compose F_{D214}=N(⊕_{g∈D_{D214}} g); otherwise treat F_{D214} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D214；被引用：—
-- [If upstream objects D_{D215} exist, compose F_{D215}=N(⊕_{g∈D_{D215}} g); otherwise treat F_{D215} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-09ce528669595eb1 / If upstream objects D_{D215} exist, compose F_{D215}=N(⊕_{g∈D_{D215}} g); otherwise treat F_{D215} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D215；被引用：—
-- [If upstream objects D_{D216} exist, compose F_{D216}=N(⊕_{g∈D_{D216}} g); otherwise treat F_{D216} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-7b835c2ab17c9285 / If upstream objects D_{D216} exist, compose F_{D216}=N(⊕_{g∈D_{D216}} g); otherwise treat F_{D216} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D216；被引用：—
-- [If upstream objects D_{D217} exist, compose F_{D217}=N(⊕_{g∈D_{D217}} g); otherwise treat F_{D217} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-597793d9881d1030 / If upstream objects D_{D217} exist, compose F_{D217}=N(⊕_{g∈D_{D217}} g); otherwise treat F_{D217} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D217；被引用：—
-- [If upstream objects D_{D218} exist, compose F_{D218}=N(⊕_{g∈D_{D218}} g); otherwise treat F_{D218} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-5b3c397277814027 / If upstream objects D_{D218} exist, compose F_{D218}=N(⊕_{g∈D_{D218}} g); otherwise treat F_{D218} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D218；被引用：—
-- [If upstream objects D_{D219} exist, compose F_{D219}=N(⊕_{g∈D_{D219}} g); otherwise treat F_{D219} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-fba676a9e2f53d54 / If upstream objects D_{D219} exist, compose F_{D219}=N(⊕_{g∈D_{D219}} g); otherwise treat F_{D219} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D219；被引用：—
-- [If upstream objects D_{D21} exist, compose F_{D21}=N(⊕_{g∈D_{D21}} g); otherwise treat F_{D21} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-9cf0d81de70853b0 / If upstream objects D_{D21} exist, compose F_{D21}=N(⊕_{g∈D_{D21}} g); otherwise treat F_{D21} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D21；被引用：—
-- [If upstream objects D_{D220} exist, compose F_{D220}=N(⊕_{g∈D_{D220}} g); otherwise treat F_{D220} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-d84aae3c95fc8c38 / If upstream objects D_{D220} exist, compose F_{D220}=N(⊕_{g∈D_{D220}} g); otherwise treat F_{D220} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D220；被引用：—
-- [If upstream objects D_{D221} exist, compose F_{D221}=N(⊕_{g∈D_{D221}} g); otherwise treat F_{D221} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-4287a245a92b49fb / If upstream objects D_{D221} exist, compose F_{D221}=N(⊕_{g∈D_{D221}} g); otherwise treat F_{D221} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D221；被引用：—
-- [If upstream objects D_{D222} exist, compose F_{D222}=N(⊕_{g∈D_{D222}} g); otherwise treat F_{D222} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-41930c6165b958e7 / If upstream objects D_{D222} exist, compose F_{D222}=N(⊕_{g∈D_{D222}} g); otherwise treat F_{D222} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D222；被引用：—
-- [If upstream objects D_{D223} exist, compose F_{D223}=N(⊕_{g∈D_{D223}} g); otherwise treat F_{D223} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-cacdbaf9bdbd2223 / If upstream objects D_{D223} exist, compose F_{D223}=N(⊕_{g∈D_{D223}} g); otherwise treat F_{D223} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D223；被引用：—
-- [If upstream objects D_{D224} exist, compose F_{D224}=N(⊕_{g∈D_{D224}} g); otherwise treat F_{D224} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-c6fbc9fce0ca2254 / If upstream objects D_{D224} exist, compose F_{D224}=N(⊕_{g∈D_{D224}} g); otherwise treat F_{D224} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D224；被引用：—
-- [If upstream objects D_{D225} exist, compose F_{D225}=N(⊕_{g∈D_{D225}} g); otherwise treat F_{D225} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-e5f776dfd33c8330 / If upstream objects D_{D225} exist, compose F_{D225}=N(⊕_{g∈D_{D225}} g); otherwise treat F_{D225} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D225；被引用：—
-- [If upstream objects D_{D226} exist, compose F_{D226}=N(⊕_{g∈D_{D226}} g); otherwise treat F_{D226} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-ae051b22e3fc1ee3 / If upstream objects D_{D226} exist, compose F_{D226}=N(⊕_{g∈D_{D226}} g); otherwise treat F_{D226} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D226；被引用：—
-- [If upstream objects D_{D227} exist, compose F_{D227}=N(⊕_{g∈D_{D227}} g); otherwise treat F_{D227} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-ec10ca2e333e43cf / If upstream objects D_{D227} exist, compose F_{D227}=N(⊕_{g∈D_{D227}} g); otherwise treat F_{D227} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D227；被引用：—
-- [If upstream objects D_{D228} exist, compose F_{D228}=N(⊕_{g∈D_{D228}} g); otherwise treat F_{D228} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-d66ca162913dcff8 / If upstream objects D_{D228} exist, compose F_{D228}=N(⊕_{g∈D_{D228}} g); otherwise treat F_{D228} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D228；被引用：—
-- [If upstream objects D_{D229} exist, compose F_{D229}=N(⊕_{g∈D_{D229}} g); otherwise treat F_{D229} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-23b8d97c7a5ad5fc / If upstream objects D_{D229} exist, compose F_{D229}=N(⊕_{g∈D_{D229}} g); otherwise treat F_{D229} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D229；被引用：—
-- [If upstream objects D_{D22} exist, compose F_{D22}=N(⊕_{g∈D_{D22}} g); otherwise treat F_{D22} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-6d828ad8c0d22870 / If upstream objects D_{D22} exist, compose F_{D22}=N(⊕_{g∈D_{D22}} g); otherwise treat F_{D22} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D22；被引用：—
-- [If upstream objects D_{D230} exist, compose F_{D230}=N(⊕_{g∈D_{D230}} g); otherwise treat F_{D230} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-b26b91aa5934cfff / If upstream objects D_{D230} exist, compose F_{D230}=N(⊕_{g∈D_{D230}} g); otherwise treat F_{D230} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D230；被引用：—
-- [If upstream objects D_{D231} exist, compose F_{D231}=N(⊕_{g∈D_{D231}} g); otherwise treat F_{D231} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-91863cddedd440c9 / If upstream objects D_{D231} exist, compose F_{D231}=N(⊕_{g∈D_{D231}} g); otherwise treat F_{D231} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D231；被引用：—
-- [If upstream objects D_{D232} exist, compose F_{D232}=N(⊕_{g∈D_{D232}} g); otherwise treat F_{D232} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-49a3514bb694e26a / If upstream objects D_{D232} exist, compose F_{D232}=N(⊕_{g∈D_{D232}} g); otherwise treat F_{D232} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D232；被引用：—
-- [If upstream objects D_{D233} exist, compose F_{D233}=N(⊕_{g∈D_{D233}} g); otherwise treat F_{D233} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-097e85aafee2bf63 / If upstream objects D_{D233} exist, compose F_{D233}=N(⊕_{g∈D_{D233}} g); otherwise treat F_{D233} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D233；被引用：—
-- [If upstream objects D_{D234} exist, compose F_{D234}=N(⊕_{g∈D_{D234}} g); otherwise treat F_{D234} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-b30b74e98775ff0f / If upstream objects D_{D234} exist, compose F_{D234}=N(⊕_{g∈D_{D234}} g); otherwise treat F_{D234} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D234；被引用：—
-- [If upstream objects D_{D235} exist, compose F_{D235}=N(⊕_{g∈D_{D235}} g); otherwise treat F_{D235} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-c1a4db42a0bb5f70 / If upstream objects D_{D235} exist, compose F_{D235}=N(⊕_{g∈D_{D235}} g); otherwise treat F_{D235} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D235；被引用：—
-- [If upstream objects D_{D236} exist, compose F_{D236}=N(⊕_{g∈D_{D236}} g); otherwise treat F_{D236} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-e94db479234f54c4 / If upstream objects D_{D236} exist, compose F_{D236}=N(⊕_{g∈D_{D236}} g); otherwise treat F_{D236} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D236；被引用：—
-- [If upstream objects D_{D237} exist, compose F_{D237}=N(⊕_{g∈D_{D237}} g); otherwise treat F_{D237} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-86b305b6f8fa43b5 / If upstream objects D_{D237} exist, compose F_{D237}=N(⊕_{g∈D_{D237}} g); otherwise treat F_{D237} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D237；被引用：—
-- [If upstream objects D_{D238} exist, compose F_{D238}=N(⊕_{g∈D_{D238}} g); otherwise treat F_{D238} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-2ea693f720e41958 / If upstream objects D_{D238} exist, compose F_{D238}=N(⊕_{g∈D_{D238}} g); otherwise treat F_{D238} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D238；被引用：—
-- [If upstream objects D_{D239} exist, compose F_{D239}=N(⊕_{g∈D_{D239}} g); otherwise treat F_{D239} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-a77a9111d73ed74b / If upstream objects D_{D239} exist, compose F_{D239}=N(⊕_{g∈D_{D239}} g); otherwise treat F_{D239} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D239；被引用：—
-- [If upstream objects D_{D23} exist, compose F_{D23}=N(⊕_{g∈D_{D23}} g); otherwise treat F_{D23} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-2980e690778e38cf / If upstream objects D_{D23} exist, compose F_{D23}=N(⊕_{g∈D_{D23}} g); otherwise treat F_{D23} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D23；被引用：—
-- [If upstream objects D_{D240} exist, compose F_{D240}=N(⊕_{g∈D_{D240}} g); otherwise treat F_{D240} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-93652d99b069374c / If upstream objects D_{D240} exist, compose F_{D240}=N(⊕_{g∈D_{D240}} g); otherwise treat F_{D240} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D240；被引用：—
-- [If upstream objects D_{D241} exist, compose F_{D241}=N(⊕_{g∈D_{D241}} g); otherwise treat F_{D241} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-9cb9f44ee7627767 / If upstream objects D_{D241} exist, compose F_{D241}=N(⊕_{g∈D_{D241}} g); otherwise treat F_{D241} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D241；被引用：—
-- [If upstream objects D_{D242} exist, compose F_{D242}=N(⊕_{g∈D_{D242}} g); otherwise treat F_{D242} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-8cf1f7c85009273a / If upstream objects D_{D242} exist, compose F_{D242}=N(⊕_{g∈D_{D242}} g); otherwise treat F_{D242} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D242；被引用：—
-- [If upstream objects D_{D243} exist, compose F_{D243}=N(⊕_{g∈D_{D243}} g); otherwise treat F_{D243} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-4163c5f34bdea63b / If upstream objects D_{D243} exist, compose F_{D243}=N(⊕_{g∈D_{D243}} g); otherwise treat F_{D243} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D243；被引用：—
-- [If upstream objects D_{D244} exist, compose F_{D244}=N(⊕_{g∈D_{D244}} g); otherwise treat F_{D244} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-f5453f737e21597e / If upstream objects D_{D244} exist, compose F_{D244}=N(⊕_{g∈D_{D244}} g); otherwise treat F_{D244} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D244；被引用：—
-- [If upstream objects D_{D245} exist, compose F_{D245}=N(⊕_{g∈D_{D245}} g); otherwise treat F_{D245} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-85fa7b81ce861c79 / If upstream objects D_{D245} exist, compose F_{D245}=N(⊕_{g∈D_{D245}} g); otherwise treat F_{D245} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D245；被引用：—
-- [If upstream objects D_{D246} exist, compose F_{D246}=N(⊕_{g∈D_{D246}} g); otherwise treat F_{D246} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-6a9f5e6940de9849 / If upstream objects D_{D246} exist, compose F_{D246}=N(⊕_{g∈D_{D246}} g); otherwise treat F_{D246} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D246；被引用：—
-- [If upstream objects D_{D247} exist, compose F_{D247}=N(⊕_{g∈D_{D247}} g); otherwise treat F_{D247} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-d24ec1d27b01554f / If upstream objects D_{D247} exist, compose F_{D247}=N(⊕_{g∈D_{D247}} g); otherwise treat F_{D247} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D247；被引用：—
-- [If upstream objects D_{D248} exist, compose F_{D248}=N(⊕_{g∈D_{D248}} g); otherwise treat F_{D248} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-3c753b3999bd45c1 / If upstream objects D_{D248} exist, compose F_{D248}=N(⊕_{g∈D_{D248}} g); otherwise treat F_{D248} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D248；被引用：—
-- [If upstream objects D_{D249} exist, compose F_{D249}=N(⊕_{g∈D_{D249}} g); otherwise treat F_{D249} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-eeea105293830097 / If upstream objects D_{D249} exist, compose F_{D249}=N(⊕_{g∈D_{D249}} g); otherwise treat F_{D249} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D249；被引用：—
-- [If upstream objects D_{D24} exist, compose F_{D24}=N(⊕_{g∈D_{D24}} g); otherwise treat F_{D24} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-19b4028d4f087db1 / If upstream objects D_{D24} exist, compose F_{D24}=N(⊕_{g∈D_{D24}} g); otherwise treat F_{D24} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D24；被引用：—
-- [If upstream objects D_{D250} exist, compose F_{D250}=N(⊕_{g∈D_{D250}} g); otherwise treat F_{D250} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-fe2d969bede3042e / If upstream objects D_{D250} exist, compose F_{D250}=N(⊕_{g∈D_{D250}} g); otherwise treat F_{D250} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D250；被引用：—
-- [If upstream objects D_{D251} exist, compose F_{D251}=N(⊕_{g∈D_{D251}} g); otherwise treat F_{D251} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 可搜索名称：NFC-68954a926ba98c92 / Lifecycle and external boundary
+  - 来源：`reports/operations/121Q32-typed-change-propagation-and-self-updating-system-map-audit.md`
+  - 依赖：—；被引用：—
+- [Lifecycle at this report: Candidate=true; Ready for GPT verification=true; Accepted=false; Merged=false; Current=false.](../../../reports/operations/121Q28-embodied-cognitive-leap-writing-method-audit.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-07b1331442873dd5 / If upstream objects D_{D251} exist, compose F_{D251}=N(⊕_{g∈D_{D251}} g); otherwise treat F_{D251} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D251；被引用：—
-- [If upstream objects D_{D252} exist, compose F_{D252}=N(⊕_{g∈D_{D252}} g); otherwise treat F_{D252} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-a2e818aabade22b8 / If upstream objects D_{D252} exist, compose F_{D252}=N(⊕_{g∈D_{D252}} g); otherwise treat F_{D252} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D252；被引用：—
-- [If upstream objects D_{D253} exist, compose F_{D253}=N(⊕_{g∈D_{D253}} g); otherwise treat F_{D253} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-c530e4035aacf742 / If upstream objects D_{D253} exist, compose F_{D253}=N(⊕_{g∈D_{D253}} g); otherwise treat F_{D253} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D253；被引用：—
-- [If upstream objects D_{D254} exist, compose F_{D254}=N(⊕_{g∈D_{D254}} g); otherwise treat F_{D254} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 可搜索名称：NFC-54ec2752beef52e3 / Lifecycle at this report: Candidate=true; Ready for GPT verification=true; Accepted=false; Merged=false; Current=false.
+  - 来源：`reports/operations/121Q28-embodied-cognitive-leap-writing-method-audit.md`
+  - 依赖：—；被引用：—
+- [Lifecycle state and claim ceiling:](../../../templates/operations/execution-result-template.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-bfb15a8fa99ad087 / Lifecycle state and claim ceiling:
+  - 来源：`templates/operations/execution-result-template.md`
+  - 依赖：—；被引用：—
+- [Lifecycle 图](../../../docs/architecture/epistemic-governance-kernel-and-federated-planes.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-379f578b953cdade / Lifecycle 图
+  - 来源：`docs/architecture/epistemic-governance-kernel-and-federated-planes.md`
+  - 依赖：—；被引用：—
+- [light-cone reachability not written as proof;](../../../reports/architecture/121Q21R-multiscale-causal-fabric-validation.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-cdf0f1721159bb4f / If upstream objects D_{D254} exist, compose F_{D254}=N(⊕_{g∈D_{D254}} g); otherwise treat F_{D254} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D254；被引用：—
-- [If upstream objects D_{D255} exist, compose F_{D255}=N(⊕_{g∈D_{D255}} g); otherwise treat F_{D255} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-b533f0071e3a27e0 / If upstream objects D_{D255} exist, compose F_{D255}=N(⊕_{g∈D_{D255}} g); otherwise treat F_{D255} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D255；被引用：—
-- [If upstream objects D_{D256} exist, compose F_{D256}=N(⊕_{g∈D_{D256}} g); otherwise treat F_{D256} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-f0def9af93e46a04 / If upstream objects D_{D256} exist, compose F_{D256}=N(⊕_{g∈D_{D256}} g); otherwise treat F_{D256} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D256；被引用：—
-- [If upstream objects D_{D257} exist, compose F_{D257}=N(⊕_{g∈D_{D257}} g); otherwise treat F_{D257} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 可搜索名称：NFC-4d899ddf425545ca / light-cone reachability not written as proof;
+  - 来源：`reports/architecture/121Q21R-multiscale-causal-fabric-validation.md`
+  - 依赖：—；被引用：—
+- [Likelihood on specification/held-out examples and benchmark tests provide bounded behavioral checks without proof, exhau](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-47f1ce441f5dae42 / Likelihood on specification/held-out examples and benchmark tests provide bounded behavioral checks without proof, exhau
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [Lin et al. exact full arXiv v2 paper, all-page visual review, complete LaTeX source and linked FDABench aggregate audit:](../../../data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-1013abf2c5e34da7 / Lin et al. exact full arXiv v2 paper, all-page visual review, complete LaTeX source and linked FDABench aggregate audit:
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl`
+  - 依赖：—；被引用：—
+- [link: "已迁移的历史函数来源/0538-D541-道德自居-认知偏差函数.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-d647a6ba84393d0d / If upstream objects D_{D257} exist, compose F_{D257}=N(⊕_{g∈D_{D257}} g); otherwise treat F_{D257} as an axiom seed.
+  - 可搜索名称：NFC-b72438130c0c9685 / link: "已迁移的历史函数来源/0538-D541-道德自居-认知偏差函数.md"
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D257；被引用：—
-- [If upstream objects D_{D258} exist, compose F_{D258}=N(⊕_{g∈D_{D258}} g); otherwise treat F_{D258} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 依赖：D541；被引用：—
+- [link: "已迁移的历史函数来源/0539-T40-决策权与信息权对称元协议实例化函数.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-8bf90e6bf60b1ecb / If upstream objects D_{D258} exist, compose F_{D258}=N(⊕_{g∈D_{D258}} g); otherwise treat F_{D258} as an axiom seed.
+  - 可搜索名称：NFC-7d2911cc32631fee / link: "已迁移的历史函数来源/0539-T40-决策权与信息权对称元协议实例化函数.md"
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D258；被引用：—
-- [If upstream objects D_{D259} exist, compose F_{D259}=N(⊕_{g∈D_{D259}} g); otherwise treat F_{D259} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 依赖：T40；被引用：—
+- [link: "已迁移的历史函数来源/0540-T41-艺术创作逻辑跨时空同构函数.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-a7e695456b06ebc1 / If upstream objects D_{D259} exist, compose F_{D259}=N(⊕_{g∈D_{D259}} g); otherwise treat F_{D259} as an axiom seed.
+  - 可搜索名称：NFC-6199b37cb22e365a / link: "已迁移的历史函数来源/0540-T41-艺术创作逻辑跨时空同构函数.md"
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D259；被引用：—
-- [If upstream objects D_{D25} exist, compose F_{D25}=N(⊕_{g∈D_{D25}} g); otherwise treat F_{D25} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 依赖：T41；被引用：—
+- [link: "已迁移的历史函数来源/0541-T42-哥德尔不完备性历史系统实例化函数.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-6c3a8a8a59ff2739 / If upstream objects D_{D25} exist, compose F_{D25}=N(⊕_{g∈D_{D25}} g); otherwise treat F_{D25} as an axiom seed.
+  - 可搜索名称：NFC-78968db00581a9dd / link: "已迁移的历史函数来源/0541-T42-哥德尔不完备性历史系统实例化函数.md"
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D25；被引用：—
-- [If upstream objects D_{D260} exist, compose F_{D260}=N(⊕_{g∈D_{D260}} g); otherwise treat F_{D260} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 依赖：T42；被引用：—
+- [link: "已迁移的历史函数来源/0542-T43-祥瑞符号系统稳定性指示器函数.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-e3db90163ce7009a / If upstream objects D_{D260} exist, compose F_{D260}=N(⊕_{g∈D_{D260}} g); otherwise treat F_{D260} as an axiom seed.
+  - 可搜索名称：NFC-d836212f8d40aa7f / link: "已迁移的历史函数来源/0542-T43-祥瑞符号系统稳定性指示器函数.md"
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D260；被引用：—
-- [If upstream objects D_{D261} exist, compose F_{D261}=N(⊕_{g∈D_{D261}} g); otherwise treat F_{D261} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 依赖：T43；被引用：—
+- [link: "已迁移的历史函数来源/0543-T44-元层面收敛与子系统展开冲突函数.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-8cd4f25da12ef889 / If upstream objects D_{D261} exist, compose F_{D261}=N(⊕_{g∈D_{D261}} g); otherwise treat F_{D261} as an axiom seed.
+  - 可搜索名称：NFC-fc6cea56add9dc86 / link: "已迁移的历史函数来源/0543-T44-元层面收敛与子系统展开冲突函数.md"
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D261；被引用：—
-- [If upstream objects D_{D262} exist, compose F_{D262}=N(⊕_{g∈D_{D262}} g); otherwise treat F_{D262} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 依赖：T44；被引用：—
+- [link: "已迁移的历史函数来源/0544-T45-外部冲击与系统价值归零函数.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-0bfe4c3f89c1a451 / If upstream objects D_{D262} exist, compose F_{D262}=N(⊕_{g∈D_{D262}} g); otherwise treat F_{D262} as an axiom seed.
+  - 可搜索名称：NFC-ef556e1cbc06dacb / link: "已迁移的历史函数来源/0544-T45-外部冲击与系统价值归零函数.md"
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D262；被引用：—
-- [If upstream objects D_{D263} exist, compose F_{D263}=N(⊕_{g∈D_{D263}} g); otherwise treat F_{D263} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 依赖：T45；被引用：—
+- [link: "已迁移的历史函数来源/0545-T46-元同构律跨文明验证函数.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-be3e0df2c133bd64 / If upstream objects D_{D263} exist, compose F_{D263}=N(⊕_{g∈D_{D263}} g); otherwise treat F_{D263} as an axiom seed.
+  - 可搜索名称：NFC-1e974eed18413987 / link: "已迁移的历史函数来源/0545-T46-元同构律跨文明验证函数.md"
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D263；被引用：—
-- [If upstream objects D_{D264} exist, compose F_{D264}=N(⊕_{g∈D_{D264}} g); otherwise treat F_{D264} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 依赖：T46；被引用：—
+- [link: "已迁移的历史函数来源/0546-T47-植物分布式决策函数.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-2d4a269de530ad9c / If upstream objects D_{D264} exist, compose F_{D264}=N(⊕_{g∈D_{D264}} g); otherwise treat F_{D264} as an axiom seed.
+  - 可搜索名称：NFC-62e976d451553393 / link: "已迁移的历史函数来源/0546-T47-植物分布式决策函数.md"
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D264；被引用：—
-- [If upstream objects D_{D265} exist, compose F_{D265}=N(⊕_{g∈D_{D265}} g); otherwise treat F_{D265} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 依赖：T47；被引用：—
+- [link: "已迁移的历史函数来源/0547-T48-植物记忆函数.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-e58c4bf39bb692d3 / If upstream objects D_{D265} exist, compose F_{D265}=N(⊕_{g∈D_{D265}} g); otherwise treat F_{D265} as an axiom seed.
+  - 可搜索名称：NFC-c8926a15c19af8f3 / link: "已迁移的历史函数来源/0547-T48-植物记忆函数.md"
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D265；被引用：—
-- [If upstream objects D_{D266} exist, compose F_{D266}=N(⊕_{g∈D_{D266}} g); otherwise treat F_{D266} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 依赖：T48；被引用：—
+- [link: "已迁移的历史函数来源/0548-T49-植物学习函数.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-7dac69b8fe0f7220 / If upstream objects D_{D266} exist, compose F_{D266}=N(⊕_{g∈D_{D266}} g); otherwise treat F_{D266} as an axiom seed.
+  - 可搜索名称：NFC-d9b6fde54e644ca7 / link: "已迁移的历史函数来源/0548-T49-植物学习函数.md"
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D266；被引用：—
-- [If upstream objects D_{D267} exist, compose F_{D267}=N(⊕_{g∈D_{D267}} g); otherwise treat F_{D267} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 依赖：T49；被引用：—
+- [link: "已迁移的历史函数来源/0549-T50-植物数学优化函数.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-19a5161c41ef81f3 / If upstream objects D_{D267} exist, compose F_{D267}=N(⊕_{g∈D_{D267}} g); otherwise treat F_{D267} as an axiom seed.
+  - 可搜索名称：NFC-fcb8b87755ab6ad8 / link: "已迁移的历史函数来源/0549-T50-植物数学优化函数.md"
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D267；被引用：—
-- [If upstream objects D_{D268} exist, compose F_{D268}=N(⊕_{g∈D_{D268}} g); otherwise treat F_{D268} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 依赖：T50；被引用：—
+- [link: "已迁移的历史函数来源/0550-T51-植物信号传递函数.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-097d77c346c7506b / If upstream objects D_{D268} exist, compose F_{D268}=N(⊕_{g∈D_{D268}} g); otherwise treat F_{D268} as an axiom seed.
+  - 可搜索名称：NFC-e24821839129571a / link: "已迁移的历史函数来源/0550-T51-植物信号传递函数.md"
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D268；被引用：—
-- [If upstream objects D_{D269} exist, compose F_{D269}=N(⊕_{g∈D_{D269}} g); otherwise treat F_{D269} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 依赖：T51；被引用：—
+- [link: "已迁移的历史函数来源/0551-T52-植物菌根网络函数.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-809cf5b3af3ce58b / If upstream objects D_{D269} exist, compose F_{D269}=N(⊕_{g∈D_{D269}} g); otherwise treat F_{D269} as an axiom seed.
+  - 可搜索名称：NFC-f537c088148f8a6c / link: "已迁移的历史函数来源/0551-T52-植物菌根网络函数.md"
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D269；被引用：—
-- [If upstream objects D_{D26} exist, compose F_{D26}=N(⊕_{g∈D_{D26}} g); otherwise treat F_{D26} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 依赖：T52；被引用：—
+- [link: "已迁移的历史函数来源/0552-T53-植物表观遗传函数.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-e7ae2f416242821c / If upstream objects D_{D26} exist, compose F_{D26}=N(⊕_{g∈D_{D26}} g); otherwise treat F_{D26} as an axiom seed.
+  - 可搜索名称：NFC-e2f2acbb95d9d487 / link: "已迁移的历史函数来源/0552-T53-植物表观遗传函数.md"
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D26；被引用：—
-- [If upstream objects D_{D270} exist, compose F_{D270}=N(⊕_{g∈D_{D270}} g); otherwise treat F_{D270} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 依赖：T53；被引用：—
+- [link: "已迁移的历史函数来源/0553-T54-植物生态系统函数.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-a27bfdcc507b3be6 / If upstream objects D_{D270} exist, compose F_{D270}=N(⊕_{g∈D_{D270}} g); otherwise treat F_{D270} as an axiom seed.
+  - 可搜索名称：NFC-d4fba7da1ac2bf02 / link: "已迁移的历史函数来源/0553-T54-植物生态系统函数.md"
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D270；被引用：—
-- [If upstream objects D_{D271} exist, compose F_{D271}=N(⊕_{g∈D_{D271}} g); otherwise treat F_{D271} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 依赖：T54；被引用：—
+- [link: "已迁移的历史函数来源/0554-T55-植物意识函数.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-ea238263fea8c687 / If upstream objects D_{D271} exist, compose F_{D271}=N(⊕_{g∈D_{D271}} g); otherwise treat F_{D271} as an axiom seed.
+  - 可搜索名称：NFC-8977140342204b91 / link: "已迁移的历史函数来源/0554-T55-植物意识函数.md"
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D271；被引用：—
-- [If upstream objects D_{D272} exist, compose F_{D272}=N(⊕_{g∈D_{D272}} g); otherwise treat F_{D272} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 依赖：T55；被引用：—
+- [link: "已迁移的历史函数来源/0555-T56-演化分歧函数.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-f9ba1af6cd4bf749 / If upstream objects D_{D272} exist, compose F_{D272}=N(⊕_{g∈D_{D272}} g); otherwise treat F_{D272} as an axiom seed.
+  - 可搜索名称：NFC-972214d499b198ce / link: "已迁移的历史函数来源/0555-T56-演化分歧函数.md"
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D272；被引用：—
-- [If upstream objects D_{D273} exist, compose F_{D273}=N(⊕_{g∈D_{D273}} g); otherwise treat F_{D273} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 依赖：T56；被引用：—
+- [link: "已迁移的历史函数来源/0556-T57-认知肌肉训练函数.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-e71ec25a5a6b5e77 / If upstream objects D_{D273} exist, compose F_{D273}=N(⊕_{g∈D_{D273}} g); otherwise treat F_{D273} as an axiom seed.
+  - 可搜索名称：NFC-28001725c64ee2d9 / link: "已迁移的历史函数来源/0556-T57-认知肌肉训练函数.md"
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D273；被引用：—
-- [If upstream objects D_{D274} exist, compose F_{D274}=N(⊕_{g∈D_{D274}} g); otherwise treat F_{D274} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 依赖：T57；被引用：—
+- [link: "已迁移的历史函数来源/0557-D542-植物蛋白质网络函数.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-19173eaff2bcd534 / If upstream objects D_{D274} exist, compose F_{D274}=N(⊕_{g∈D_{D274}} g); otherwise treat F_{D274} as an axiom seed.
+  - 可搜索名称：NFC-2b011a41baa3ec0d / link: "已迁移的历史函数来源/0557-D542-植物蛋白质网络函数.md"
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D274；被引用：—
-- [If upstream objects D_{D275} exist, compose F_{D275}=N(⊕_{g∈D_{D275}} g); otherwise treat F_{D275} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 依赖：D542；被引用：—
+- [link: "已迁移的历史函数来源/0558-D543-群体智能函数.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-a41332f87f472983 / If upstream objects D_{D275} exist, compose F_{D275}=N(⊕_{g∈D_{D275}} g); otherwise treat F_{D275} as an axiom seed.
+  - 可搜索名称：NFC-0eed99e01e1281a5 / link: "已迁移的历史函数来源/0558-D543-群体智能函数.md"
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D275；被引用：—
-- [If upstream objects D_{D276} exist, compose F_{D276}=N(⊕_{g∈D_{D276}} g); otherwise treat F_{D276} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 依赖：D543；被引用：—
+- [link: "已迁移的历史函数来源/0559-D544-AI-植物同构函数.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-7c603fb13575c5c3 / If upstream objects D_{D276} exist, compose F_{D276}=N(⊕_{g∈D_{D276}} g); otherwise treat F_{D276} as an axiom seed.
+  - 可搜索名称：NFC-d6785f1ad6d800c8 / link: "已迁移的历史函数来源/0559-D544-AI-植物同构函数.md"
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D276；被引用：—
-- [If upstream objects D_{D277} exist, compose F_{D277}=N(⊕_{g∈D_{D277}} g); otherwise treat F_{D277} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 依赖：D544；被引用：—
+- [link: "已迁移的历史函数来源/0560-D545-植物生物圈函数.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-8e25ea8478c3efa6 / If upstream objects D_{D277} exist, compose F_{D277}=N(⊕_{g∈D_{D277}} g); otherwise treat F_{D277} as an axiom seed.
+  - 可搜索名称：NFC-b138e9762f1b67bf / link: "已迁移的历史函数来源/0560-D545-植物生物圈函数.md"
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D277；被引用：—
-- [If upstream objects D_{D278} exist, compose F_{D278}=N(⊕_{g∈D_{D278}} g); otherwise treat F_{D278} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 依赖：D545；被引用：—
+- [link: "已迁移的历史函数来源/0561-D546-植物伦理函数.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-501e2723278bbd70 / If upstream objects D_{D278} exist, compose F_{D278}=N(⊕_{g∈D_{D278}} g); otherwise treat F_{D278} as an axiom seed.
+  - 可搜索名称：NFC-5b268ba940bb2076 / link: "已迁移的历史函数来源/0561-D546-植物伦理函数.md"
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D278；被引用：—
-- [If upstream objects D_{D279} exist, compose F_{D279}=N(⊕_{g∈D_{D279}} g); otherwise treat F_{D279} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 依赖：D546；被引用：—
+- [link: "已迁移的历史函数来源/0562-D547-植物演化函数.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-b531f563d235068b / If upstream objects D_{D279} exist, compose F_{D279}=N(⊕_{g∈D_{D279}} g); otherwise treat F_{D279} as an axiom seed.
+  - 可搜索名称：NFC-de907f371464fc39 / link: "已迁移的历史函数来源/0562-D547-植物演化函数.md"
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D279；被引用：—
-- [If upstream objects D_{D27} exist, compose F_{D27}=N(⊕_{g∈D_{D27}} g); otherwise treat F_{D27} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 依赖：D547；被引用：—
+- [link: "已迁移的历史函数来源/0563-D548-植物胁迫函数.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-f9d52ddf6e4e56a4 / If upstream objects D_{D27} exist, compose F_{D27}=N(⊕_{g∈D_{D27}} g); otherwise treat F_{D27} as an axiom seed.
+  - 可搜索名称：NFC-14cc00de9dc853c1 / link: "已迁移的历史函数来源/0563-D548-植物胁迫函数.md"
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D27；被引用：—
-- [If upstream objects D_{D280} exist, compose F_{D280}=N(⊕_{g∈D_{D280}} g); otherwise treat F_{D280} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 依赖：D548；被引用：—
+- [link: "已迁移的历史函数来源/0564-D549-跨物种协同函数.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-7507a54f3999ee18 / If upstream objects D_{D280} exist, compose F_{D280}=N(⊕_{g∈D_{D280}} g); otherwise treat F_{D280} as an axiom seed.
+  - 可搜索名称：NFC-6b6dc96d50a71ad4 / link: "已迁移的历史函数来源/0564-D549-跨物种协同函数.md"
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D280；被引用：—
-- [If upstream objects D_{D281} exist, compose F_{D281}=N(⊕_{g∈D_{D281}} g); otherwise treat F_{D281} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 依赖：D549；被引用：—
+- [link: "已迁移的历史函数来源/0565-D550-植物群体函数.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-92c310048be318f6 / If upstream objects D_{D281} exist, compose F_{D281}=N(⊕_{g∈D_{D281}} g); otherwise treat F_{D281} as an axiom seed.
+  - 可搜索名称：NFC-3294795f40b087f5 / link: "已迁移的历史函数来源/0565-D550-植物群体函数.md"
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D281；被引用：—
-- [If upstream objects D_{D282} exist, compose F_{D282}=N(⊕_{g∈D_{D282}} g); otherwise treat F_{D282} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 依赖：D550；被引用：—
+- [link: "已迁移的历史函数来源/0566-D551-行星演化函数.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-862c0e1d6540be66 / If upstream objects D_{D282} exist, compose F_{D282}=N(⊕_{g∈D_{D282}} g); otherwise treat F_{D282} as an axiom seed.
+  - 可搜索名称：NFC-10b78453e0c49d4b / link: "已迁移的历史函数来源/0566-D551-行星演化函数.md"
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D282；被引用：—
-- [If upstream objects D_{D283} exist, compose F_{D283}=N(⊕_{g∈D_{D283}} g); otherwise treat F_{D283} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 依赖：D551；被引用：—
+- [link: "已迁移的历史函数来源/0567-D552-植物哥德尔函数.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-c270836aa00271b9 / If upstream objects D_{D283} exist, compose F_{D283}=N(⊕_{g∈D_{D283}} g); otherwise treat F_{D283} as an axiom seed.
+  - 可搜索名称：NFC-35c5b33565cb9dce / link: "已迁移的历史函数来源/0567-D552-植物哥德尔函数.md"
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D283；被引用：—
-- [If upstream objects D_{D284} exist, compose F_{D284}=N(⊕_{g∈D_{D284}} g); otherwise treat F_{D284} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 依赖：D552；被引用：—
+- [link: "已迁移的历史函数来源/0568-D553-植物记忆函数（更新版）.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-e3f6c00e8530efa4 / If upstream objects D_{D284} exist, compose F_{D284}=N(⊕_{g∈D_{D284}} g); otherwise treat F_{D284} as an axiom seed.
+  - 可搜索名称：NFC-14b3c18d3ff59f23 / link: "已迁移的历史函数来源/0568-D553-植物记忆函数（更新版）.md"
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D284；被引用：—
-- [If upstream objects D_{D285} exist, compose F_{D285}=N(⊕_{g∈D_{D285}} g); otherwise treat F_{D285} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 依赖：D553；被引用：—
+- [link: "已迁移的历史函数来源/0569-D554-植物菌根函数（更新版）.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-66db409768967e9b / If upstream objects D_{D285} exist, compose F_{D285}=N(⊕_{g∈D_{D285}} g); otherwise treat F_{D285} as an axiom seed.
+  - 可搜索名称：NFC-8f119d01bcb66563 / link: "已迁移的历史函数来源/0569-D554-植物菌根函数（更新版）.md"
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D285；被引用：—
-- [If upstream objects D_{D286} exist, compose F_{D286}=N(⊕_{g∈D_{D286}} g); otherwise treat F_{D286} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 依赖：D554；被引用：—
+- [link: "已迁移的历史函数来源/0570-D555-认知调取函数.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-f87898a652534ada / If upstream objects D_{D286} exist, compose F_{D286}=N(⊕_{g∈D_{D286}} g); otherwise treat F_{D286} as an axiom seed.
+  - 可搜索名称：NFC-93b27601c9b2af52 / link: "已迁移的历史函数来源/0570-D555-认知调取函数.md"
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D286；被引用：—
-- [If upstream objects D_{D287} exist, compose F_{D287}=N(⊕_{g∈D_{D287}} g); otherwise treat F_{D287} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 依赖：D555；被引用：—
+- [link: "已迁移的历史函数来源/0571-D556-集体智能函数.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-4a1310e3e5a2d998 / If upstream objects D_{D287} exist, compose F_{D287}=N(⊕_{g∈D_{D287}} g); otherwise treat F_{D287} as an axiom seed.
+  - 可搜索名称：NFC-0ca69c0f5a2b6869 / link: "已迁移的历史函数来源/0571-D556-集体智能函数.md"
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D287；被引用：—
-- [If upstream objects D_{D288} exist, compose F_{D288}=N(⊕_{g∈D_{D288}} g); otherwise treat F_{D288} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 依赖：D556；被引用：—
+- [link: "已迁移的历史函数来源/0572-D557-适应性演化函数.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-6b581909a238c8c6 / If upstream objects D_{D288} exist, compose F_{D288}=N(⊕_{g∈D_{D288}} g); otherwise treat F_{D288} as an axiom seed.
+  - 可搜索名称：NFC-af9579a00399fe9f / link: "已迁移的历史函数来源/0572-D557-适应性演化函数.md"
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D288；被引用：—
-- [If upstream objects D_{D289} exist, compose F_{D289}=N(⊕_{g∈D_{D289}} g); otherwise treat F_{D289} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 依赖：D557；被引用：—
+- [link: "已迁移的历史函数来源/0573-D558-智能边界函数.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-3dfa9adae5ee5d6f / If upstream objects D_{D289} exist, compose F_{D289}=N(⊕_{g∈D_{D289}} g); otherwise treat F_{D289} as an axiom seed.
+  - 可搜索名称：NFC-4b248dd25bc25616 / link: "已迁移的历史函数来源/0573-D558-智能边界函数.md"
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D289；被引用：—
-- [If upstream objects D_{D28} exist, compose F_{D28}=N(⊕_{g∈D_{D28}} g); otherwise treat F_{D28} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 依赖：D558；被引用：—
+- [link: "已迁移的历史函数来源/0574-D559-记忆锚定函数.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-769f625a8fb22ed4 / If upstream objects D_{D28} exist, compose F_{D28}=N(⊕_{g∈D_{D28}} g); otherwise treat F_{D28} as an axiom seed.
+  - 可搜索名称：NFC-ec6efaa9ad5a401c / link: "已迁移的历史函数来源/0574-D559-记忆锚定函数.md"
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D28；被引用：—
-- [If upstream objects D_{D290} exist, compose F_{D290}=N(⊕_{g∈D_{D290}} g); otherwise treat F_{D290} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 依赖：D559；被引用：—
+- [link: "已迁移的历史函数来源/0575-D560-记忆分布式编码函数.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-7069b474ab6919b4 / If upstream objects D_{D290} exist, compose F_{D290}=N(⊕_{g∈D_{D290}} g); otherwise treat F_{D290} as an axiom seed.
+  - 可搜索名称：NFC-62dfb69df3e84a0f / link: "已迁移的历史函数来源/0575-D560-记忆分布式编码函数.md"
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D290；被引用：—
-- [If upstream objects D_{D291} exist, compose F_{D291}=N(⊕_{g∈D_{D291}} g); otherwise treat F_{D291} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 依赖：D560；被引用：—
+- [link: "已迁移的历史函数来源/0576-D561-记忆-智能边界函数.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-db506494d7286f41 / If upstream objects D_{D291} exist, compose F_{D291}=N(⊕_{g∈D_{D291}} g); otherwise treat F_{D291} as an axiom seed.
+  - 可搜索名称：NFC-f996d7c9891cd3cf / link: "已迁移的历史函数来源/0576-D561-记忆-智能边界函数.md"
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D291；被引用：—
-- [If upstream objects D_{D292} exist, compose F_{D292}=N(⊕_{g∈D_{D292}} g); otherwise treat F_{D292} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 依赖：D561；被引用：—
+- [link: "已迁移的历史函数来源/0577-D562-记忆哥德尔函数.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-19a7b7ea50d1d290 / If upstream objects D_{D292} exist, compose F_{D292}=N(⊕_{g∈D_{D292}} g); otherwise treat F_{D292} as an axiom seed.
+  - 可搜索名称：NFC-4a2cd75e952faf1f / link: "已迁移的历史函数来源/0577-D562-记忆哥德尔函数.md"
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D292；被引用：—
-- [If upstream objects D_{D293} exist, compose F_{D293}=N(⊕_{g∈D_{D293}} g); otherwise treat F_{D293} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 依赖：D562；被引用：—
+- [link: "已迁移的历史函数来源/0578-D563-跨系统移植成功函数.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-cec3b0fa15e3405a / If upstream objects D_{D293} exist, compose F_{D293}=N(⊕_{g∈D_{D293}} g); otherwise treat F_{D293} as an axiom seed.
+  - 可搜索名称：NFC-235f4d9e87aa41af / link: "已迁移的历史函数来源/0578-D563-跨系统移植成功函数.md"
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D293；被引用：—
-- [If upstream objects D_{D294} exist, compose F_{D294}=N(⊕_{g∈D_{D294}} g); otherwise treat F_{D294} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 依赖：D563；被引用：—
+- [link: "已迁移的历史函数来源/0579-D564-理想主义双重性函数.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-27d10049bcbf146b / If upstream objects D_{D294} exist, compose F_{D294}=N(⊕_{g∈D_{D294}} g); otherwise treat F_{D294} as an axiom seed.
+  - 可搜索名称：NFC-47cc1a1ab95792bc / link: "已迁移的历史函数来源/0579-D564-理想主义双重性函数.md"
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D294；被引用：—
-- [If upstream objects D_{D295} exist, compose F_{D295}=N(⊕_{g∈D_{D295}} g); otherwise treat F_{D295} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 依赖：D564；被引用：—
+- [link: "已迁移的历史函数来源/0580-D565-阶级背叛函数.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-d5c0b744ce5c77e1 / If upstream objects D_{D295} exist, compose F_{D295}=N(⊕_{g∈D_{D295}} g); otherwise treat F_{D295} as an axiom seed.
+  - 可搜索名称：NFC-a96f3f48a132a32c / link: "已迁移的历史函数来源/0580-D565-阶级背叛函数.md"
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D295；被引用：—
-- [If upstream objects D_{D296} exist, compose F_{D296}=N(⊕_{g∈D_{D296}} g); otherwise treat F_{D296} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 依赖：D565；被引用：—
+- [link: "已迁移的历史函数来源/0581-D571-焦虑信息权函数.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-35b0d99e11f87e4b / If upstream objects D_{D296} exist, compose F_{D296}=N(⊕_{g∈D_{D296}} g); otherwise treat F_{D296} as an axiom seed.
+  - 可搜索名称：NFC-c90fa0c9d5129142 / link: "已迁移的历史函数来源/0581-D571-焦虑信息权函数.md"
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D296；被引用：—
-- [If upstream objects D_{D297} exist, compose F_{D297}=N(⊕_{g∈D_{D297}} g); otherwise treat F_{D297} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 依赖：D571；被引用：—
+- [link: "已迁移的历史函数来源/0582-D572-退出权验证.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-080bb0779ec596b4 / If upstream objects D_{D297} exist, compose F_{D297}=N(⊕_{g∈D_{D297}} g); otherwise treat F_{D297} as an axiom seed.
+  - 可搜索名称：NFC-926aecbdc5780625 / link: "已迁移的历史函数来源/0582-D572-退出权验证.md"
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D297；被引用：—
-- [If upstream objects D_{D298} exist, compose F_{D298}=N(⊕_{g∈D_{D298}} g); otherwise treat F_{D298} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 依赖：D572；被引用：—
+- [link: "已迁移的历史函数来源/0583-D573-财务决策不完备性.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-dadb56b1bf44aace / If upstream objects D_{D298} exist, compose F_{D298}=N(⊕_{g∈D_{D298}} g); otherwise treat F_{D298} as an axiom seed.
+  - 可搜索名称：NFC-08b165647f0498a8 / link: "已迁移的历史函数来源/0583-D573-财务决策不完备性.md"
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D298；被引用：—
-- [If upstream objects D_{D299} exist, compose F_{D299}=N(⊕_{g∈D_{D299}} g); otherwise treat F_{D299} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 依赖：D573；被引用：—
+- [link: "已迁移的历史函数来源/0584-D574-财务教育框架化.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-1f12042b12925d60 / If upstream objects D_{D299} exist, compose F_{D299}=N(⊕_{g∈D_{D299}} g); otherwise treat F_{D299} as an axiom seed.
+  - 可搜索名称：NFC-0661006fbaaaa755 / link: "已迁移的历史函数来源/0584-D574-财务教育框架化.md"
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D299；被引用：—
-- [If upstream objects D_{D29} exist, compose F_{D29}=N(⊕_{g∈D_{D29}} g); otherwise treat F_{D29} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 依赖：D574；被引用：—
+- [link: "已迁移的历史函数来源/0585-D575-财务元协议实例化.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-a003ff4c1e341129 / If upstream objects D_{D29} exist, compose F_{D29}=N(⊕_{g∈D_{D29}} g); otherwise treat F_{D29} as an axiom seed.
+  - 可搜索名称：NFC-feff4d076398984a / link: "已迁移的历史函数来源/0585-D575-财务元协议实例化.md"
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D29；被引用：—
-- [If upstream objects D_{D2} exist, compose F_{D2}=N(⊕_{g∈D_{D2}} g); otherwise treat F_{D2} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 依赖：D575；被引用：—
+- [link: "已迁移的历史函数来源/0586-D576-认知年龄提升.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-aa74f9df9c3fe3b0 / If upstream objects D_{D2} exist, compose F_{D2}=N(⊕_{g∈D_{D2}} g); otherwise treat F_{D2} as an axiom seed.
+  - 可搜索名称：NFC-b40dc737b44a1c04 / link: "已迁移的历史函数来源/0586-D576-认知年龄提升.md"
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D2；被引用：—
-- [If upstream objects D_{D300} exist, compose F_{D300}=N(⊕_{g∈D_{D300}} g); otherwise treat F_{D300} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 依赖：D576；被引用：—
+- [link: "已迁移的历史函数来源/0587-D577-观点竞争.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-fabb57cbe7ff69b1 / If upstream objects D_{D300} exist, compose F_{D300}=N(⊕_{g∈D_{D300}} g); otherwise treat F_{D300} as an axiom seed.
+  - 可搜索名称：NFC-ad4332de20d0c378 / link: "已迁移的历史函数来源/0587-D577-观点竞争.md"
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D300；被引用：—
-- [If upstream objects D_{D301} exist, compose F_{D301}=N(⊕_{g∈D_{D301}} g); otherwise treat F_{D301} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 依赖：D577；被引用：—
+- [link: "已迁移的历史函数来源/0588-D578-读者友好.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-03697aa40046e43b / If upstream objects D_{D301} exist, compose F_{D301}=N(⊕_{g∈D_{D301}} g); otherwise treat F_{D301} as an axiom seed.
+  - 可搜索名称：NFC-c89a07e013d1bb96 / link: "已迁移的历史函数来源/0588-D578-读者友好.md"
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D301；被引用：—
-- [If upstream objects D_{D302} exist, compose F_{D302}=N(⊕_{g∈D_{D302}} g); otherwise treat F_{D302} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 依赖：D578；被引用：—
+- [link: "已迁移的历史函数来源/0589-D579-阅历赤字解决.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-1bf875a633b8d5f7 / If upstream objects D_{D302} exist, compose F_{D302}=N(⊕_{g∈D_{D302}} g); otherwise treat F_{D302} as an axiom seed.
+  - 可搜索名称：NFC-80f35b5d9dcb9333 / link: "已迁移的历史函数来源/0589-D579-阅历赤字解决.md"
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D302；被引用：—
-- [If upstream objects D_{D303} exist, compose F_{D303}=N(⊕_{g∈D_{D303}} g); otherwise treat F_{D303} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 依赖：D579；被引用：—
+- [link: "已迁移的历史函数来源/0590-D580-边缘革命.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-c2b56079a71de2ab / If upstream objects D_{D303} exist, compose F_{D303}=N(⊕_{g∈D_{D303}} g); otherwise treat F_{D303} as an axiom seed.
+  - 可搜索名称：NFC-dfb094a1e3944dc2 / link: "已迁移的历史函数来源/0590-D580-边缘革命.md"
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D303；被引用：—
-- [If upstream objects D_{D304} exist, compose F_{D304}=N(⊕_{g∈D_{D304}} g); otherwise treat F_{D304} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 依赖：D580；被引用：—
+- [link: "已迁移的历史函数来源/0591-D581-信息茧房破解.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-9de3875fa0a5a289 / If upstream objects D_{D304} exist, compose F_{D304}=N(⊕_{g∈D_{D304}} g); otherwise treat F_{D304} as an axiom seed.
+  - 可搜索名称：NFC-6dd155df43953b4a / link: "已迁移的历史函数来源/0591-D581-信息茧房破解.md"
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D304；被引用：—
-- [If upstream objects D_{D305} exist, compose F_{D305}=N(⊕_{g∈D_{D305}} g); otherwise treat F_{D305} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 依赖：D581；被引用：—
+- [link: "已迁移的历史函数来源/0592-D582-堆肥法.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-16a6adda8f86bb61 / If upstream objects D_{D305} exist, compose F_{D305}=N(⊕_{g∈D_{D305}} g); otherwise treat F_{D305} as an axiom seed.
+  - 可搜索名称：NFC-221614e2a7f6a0a1 / link: "已迁移的历史函数来源/0592-D582-堆肥法.md"
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D305；被引用：—
-- [If upstream objects D_{D306} exist, compose F_{D306}=N(⊕_{g∈D_{D306}} g); otherwise treat F_{D306} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 依赖：D582；被引用：—
+- [link: "已迁移的历史函数来源/0593-D583-认知肌肉锻炼.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-68964228c1b1f4eb / If upstream objects D_{D306} exist, compose F_{D306}=N(⊕_{g∈D_{D306}} g); otherwise treat F_{D306} as an axiom seed.
+  - 可搜索名称：NFC-9008845dcee229d2 / link: "已迁移的历史函数来源/0593-D583-认知肌肉锻炼.md"
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D306；被引用：—
-- [If upstream objects D_{D307} exist, compose F_{D307}=N(⊕_{g∈D_{D307}} g); otherwise treat F_{D307} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 依赖：D583；被引用：—
+- [link: "已迁移的历史函数来源/0594-D584-电子节食.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-793a1bf7f1260cc0 / If upstream objects D_{D307} exist, compose F_{D307}=N(⊕_{g∈D_{D307}} g); otherwise treat F_{D307} as an axiom seed.
+  - 可搜索名称：NFC-38282cf1c63727e7 / link: "已迁移的历史函数来源/0594-D584-电子节食.md"
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D307；被引用：—
-- [If upstream objects D_{D308} exist, compose F_{D308}=N(⊕_{g∈D_{D308}} g); otherwise treat F_{D308} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 依赖：D584；被引用：—
+- [link: "已迁移的历史函数来源/0595-D585-认知复杂度收敛.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-484b615fd7b617d3 / If upstream objects D_{D308} exist, compose F_{D308}=N(⊕_{g∈D_{D308}} g); otherwise treat F_{D308} as an axiom seed.
+  - 可搜索名称：NFC-cf7ee85017cdb930 / link: "已迁移的历史函数来源/0595-D585-认知复杂度收敛.md"
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D308；被引用：—
-- [If upstream objects D_{D309} exist, compose F_{D309}=N(⊕_{g∈D_{D309}} g); otherwise treat F_{D309} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 依赖：D585；被引用：—
+- [link: "已迁移的历史函数来源/0596-D586-独特赛道选择.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-9fcf1690e16f4778 / If upstream objects D_{D309} exist, compose F_{D309}=N(⊕_{g∈D_{D309}} g); otherwise treat F_{D309} as an axiom seed.
+  - 可搜索名称：NFC-b6273e4c0e0cc7b6 / link: "已迁移的历史函数来源/0596-D586-独特赛道选择.md"
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D309；被引用：—
-- [If upstream objects D_{D30} exist, compose F_{D30}=N(⊕_{g∈D_{D30}} g); otherwise treat F_{D30} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 依赖：D586；被引用：—
+- [link: "已迁移的历史函数来源/0597-D587-学科理论核抽取函数.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-b359f629a722c00b / If upstream objects D_{D30} exist, compose F_{D30}=N(⊕_{g∈D_{D30}} g); otherwise treat F_{D30} as an axiom seed.
+  - 可搜索名称：NFC-e2991f340748a39b / link: "已迁移的历史函数来源/0597-D587-学科理论核抽取函数.md"
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D30；被引用：—
-- [If upstream objects D_{D310} exist, compose F_{D310}=N(⊕_{g∈D_{D310}} g); otherwise treat F_{D310} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 依赖：D587；被引用：—
+- [link: "已迁移的历史函数来源/0598-D588-经典问题差分函数.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-1d5cbe52816a4c01 / If upstream objects D_{D310} exist, compose F_{D310}=N(⊕_{g∈D_{D310}} g); otherwise treat F_{D310} as an axiom seed.
+  - 可搜索名称：NFC-c6222fdc1f5ef334 / link: "已迁移的历史函数来源/0598-D588-经典问题差分函数.md"
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D310；被引用：—
-- [If upstream objects D_{D311} exist, compose F_{D311}=N(⊕_{g∈D_{D311}} g); otherwise treat F_{D311} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 依赖：D588；被引用：—
+- [link: "已迁移的历史函数来源/0599-D589-跨学科同构投影函数.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-01ce4e8acc1fd565 / If upstream objects D_{D311} exist, compose F_{D311}=N(⊕_{g∈D_{D311}} g); otherwise treat F_{D311} as an axiom seed.
+  - 可搜索名称：NFC-721ccacf91f877c3 / link: "已迁移的历史函数来源/0599-D589-跨学科同构投影函数.md"
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D311；被引用：—
-- [If upstream objects D_{D312} exist, compose F_{D312}=N(⊕_{g∈D_{D312}} g); otherwise treat F_{D312} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 依赖：D589；被引用：—
+- [link: "已迁移的历史函数来源/0600-D590-证据制度守门函数.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-8c5534a5554116f3 / If upstream objects D_{D312} exist, compose F_{D312}=N(⊕_{g∈D_{D312}} g); otherwise treat F_{D312} as an axiom seed.
+  - 可搜索名称：NFC-0ac21e53a2703c0f / link: "已迁移的历史函数来源/0600-D590-证据制度守门函数.md"
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D312；被引用：—
-- [If upstream objects D_{D313} exist, compose F_{D313}=N(⊕_{g∈D_{D313}} g); otherwise treat F_{D313} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 依赖：D590；被引用：—
+- [link: "已迁移的历史函数来源/0601-D591-尺度桥接函数.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-17acde05a5c89ff0 / If upstream objects D_{D313} exist, compose F_{D313}=N(⊕_{g∈D_{D313}} g); otherwise treat F_{D313} as an axiom seed.
+  - 可搜索名称：NFC-2ab24a534e4ac4a0 / link: "已迁移的历史函数来源/0601-D591-尺度桥接函数.md"
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D313；被引用：—
-- [If upstream objects D_{D314} exist, compose F_{D314}=N(⊕_{g∈D_{D314}} g); otherwise treat F_{D314} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 依赖：D591；被引用：—
+- [link: "已迁移的历史函数来源/0602-D592-规范性分离函数.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-f746576e7f3bb69b / If upstream objects D_{D314} exist, compose F_{D314}=N(⊕_{g∈D_{D314}} g); otherwise treat F_{D314} as an axiom seed.
+  - 可搜索名称：NFC-34eccadbc5d930a2 / link: "已迁移的历史函数来源/0602-D592-规范性分离函数.md"
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D314；被引用：—
-- [If upstream objects D_{D315} exist, compose F_{D315}=N(⊕_{g∈D_{D315}} g); otherwise treat F_{D315} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 依赖：D592；被引用：—
+- [link: "已迁移的历史函数来源/0603-D593-解释剩余函数.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-444df03c93ad9550 / If upstream objects D_{D315} exist, compose F_{D315}=N(⊕_{g∈D_{D315}} g); otherwise treat F_{D315} as an axiom seed.
+  - 可搜索名称：NFC-a3ba34e1dfd17429 / link: "已迁移的历史函数来源/0603-D593-解释剩余函数.md"
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D315；被引用：—
-- [If upstream objects D_{D316} exist, compose F_{D316}=N(⊕_{g∈D_{D316}} g); otherwise treat F_{D316} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 依赖：D593；被引用：—
+- [link: "已迁移的历史函数来源/0604-D594-学科点火指数.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-e37d6e8b1aba482f / If upstream objects D_{D316} exist, compose F_{D316}=N(⊕_{g∈D_{D316}} g); otherwise treat F_{D316} as an axiom seed.
+  - 可搜索名称：NFC-ce2d18c4009ac654 / link: "已迁移的历史函数来源/0604-D594-学科点火指数.md"
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D316；被引用：—
-- [If upstream objects D_{D317} exist, compose F_{D317}=N(⊕_{g∈D_{D317}} g); otherwise treat F_{D317} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 依赖：D594；被引用：—
+- [link: "已迁移的历史函数来源/0610-D600-资源托举退化为路径控制.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-fc62f23b58e4fa44 / If upstream objects D_{D317} exist, compose F_{D317}=N(⊕_{g∈D_{D317}} g); otherwise treat F_{D317} as an axiom seed.
+  - 可搜索名称：NFC-b60667d2f9233dd5 / link: "已迁移的历史函数来源/0610-D600-资源托举退化为路径控制.md"
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D317；被引用：—
-- [If upstream objects D_{D318} exist, compose F_{D318}=N(⊕_{g∈D_{D318}} g); otherwise treat F_{D318} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 依赖：D600；被引用：—
+- [link: "已迁移的历史函数来源/0611-D601-角色覆盖主体身份.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-e26c73a213fbbd11 / If upstream objects D_{D318} exist, compose F_{D318}=N(⊕_{g∈D_{D318}} g); otherwise treat F_{D318} as an axiom seed.
+  - 可搜索名称：NFC-fc6d56324712a4d9 / link: "已迁移的历史函数来源/0611-D601-角色覆盖主体身份.md"
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D318；被引用：—
-- [If upstream objects D_{D319} exist, compose F_{D319}=N(⊕_{g∈D_{D319}} g); otherwise treat F_{D319} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 依赖：D601；被引用：—
+- [link: "已迁移的历史函数来源/0612-D602-价值创造权与决策权错配与回收.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-75dd0a7cd5e50732 / If upstream objects D_{D319} exist, compose F_{D319}=N(⊕_{g∈D_{D319}} g); otherwise treat F_{D319} as an axiom seed.
+  - 可搜索名称：NFC-e7b29fbf44644535 / link: "已迁移的历史函数来源/0612-D602-价值创造权与决策权错配与回收.md"
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D319；被引用：—
-- [If upstream objects D_{D31} exist, compose F_{D31}=N(⊕_{g∈D_{D31}} g); otherwise treat F_{D31} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 依赖：D602；被引用：—
+- [link: "已迁移的历史函数来源/0613-D603-计划过期识别与主动刹车.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-b87c5821c1161cb2 / If upstream objects D_{D31} exist, compose F_{D31}=N(⊕_{g∈D_{D31}} g); otherwise treat F_{D31} as an axiom seed.
+  - 可搜索名称：NFC-688b226b6c121dc1 / link: "已迁移的历史函数来源/0613-D603-计划过期识别与主动刹车.md"
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D31；被引用：—
-- [If upstream objects D_{D320} exist, compose F_{D320}=N(⊕_{g∈D_{D320}} g); otherwise treat F_{D320} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 依赖：D603；被引用：—
+- [link: "已迁移的历史函数来源/0614-D604-模糊需求显性化与协作排序.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-9631523a4ce127e9 / If upstream objects D_{D320} exist, compose F_{D320}=N(⊕_{g∈D_{D320}} g); otherwise treat F_{D320} as an axiom seed.
+  - 可搜索名称：NFC-8944e76a044982b3 / link: "已迁移的历史函数来源/0614-D604-模糊需求显性化与协作排序.md"
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D320；被引用：—
-- [If upstream objects D_{D321} exist, compose F_{D321}=N(⊕_{g∈D_{D321}} g); otherwise treat F_{D321} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 依赖：D604；被引用：—
+- [link: "已迁移的历史案例来源/0696-C-0701-AI诞生自主意识完整路径.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-145ad4d153608e85 / If upstream objects D_{D321} exist, compose F_{D321}=N(⊕_{g∈D_{D321}} g); otherwise treat F_{D321} as an axiom seed.
+  - 可搜索名称：NFC-714ca74b2f3c24ef / link: "已迁移的历史案例来源/0696-C-0701-AI诞生自主意识完整路径.md"
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D321；被引用：—
-- [If upstream objects D_{D322} exist, compose F_{D322}=N(⊕_{g∈D_{D322}} g); otherwise treat F_{D322} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 依赖：—；被引用：—
+- [link: "已迁移的历史案例来源/0710-C-0715-凯利公式的认知边界.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-3bcb8134d890d19e / If upstream objects D_{D322} exist, compose F_{D322}=N(⊕_{g∈D_{D322}} g); otherwise treat F_{D322} as an axiom seed.
+  - 可搜索名称：NFC-94e45f1ee17e61b4 / link: "已迁移的历史案例来源/0710-C-0715-凯利公式的认知边界.md"
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D322；被引用：—
-- [If upstream objects D_{D323} exist, compose F_{D323}=N(⊕_{g∈D_{D323}} g); otherwise treat F_{D323} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 依赖：—；被引用：—
+- [link: "已迁移的历史案例来源/0720-C-0725-自举循环操作手册纯数学化.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-e25509354ca42985 / If upstream objects D_{D323} exist, compose F_{D323}=N(⊕_{g∈D_{D323}} g); otherwise treat F_{D323} as an axiom seed.
+  - 可搜索名称：NFC-2e0c4ccaaa9a0c2f / link: "已迁移的历史案例来源/0720-C-0725-自举循环操作手册纯数学化.md"
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D323；被引用：—
-- [If upstream objects D_{D324} exist, compose F_{D324}=N(⊕_{g∈D_{D324}} g); otherwise treat F_{D324} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 依赖：—；被引用：—
+- [link: "已迁移的历史案例来源/0794-C-0799-生命起源与自组织.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-d6a29ce302c028be / If upstream objects D_{D324} exist, compose F_{D324}=N(⊕_{g∈D_{D324}} g); otherwise treat F_{D324} as an axiom seed.
+  - 可搜索名称：NFC-dfffd0354e82ac1f / link: "已迁移的历史案例来源/0794-C-0799-生命起源与自组织.md"
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [Local Note Sync Report](../../ASSET-CARDS.md#asset-hr-a2f6b1bf53bb9239)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：Local Note Sync Report / local-note-sync-report-20260712
+  - 来源：`reports/math-foundation/local-note-sync-report-20260712.md`
+  - 依赖：—；被引用：—
+- [Local source and recovery audit](../../ASSET-CARDS.md#asset-hr-6d4c8f2164bcd7cb)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：Local source and recovery audit / local-source-recovery-audit-20260712
+  - 来源：`reports/foundation-architecture/local-source-recovery-audit-20260712.md`
+  - 依赖：—；被引用：—
+- [Logic validation report](../../ASSET-CARDS.md#asset-hr-72e8a74d5d2cba68)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：Logic validation report / logic-validation-report-20260712
+  - 来源：`reports/foundation-architecture/logic-validation-report-20260712.md`
+  - 依赖：—；被引用：—
+- [Logical relations establish compiler correspondence and measure notions are precise, but no general equivalence decision](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-12b9d8cc9e4ba668 / Logical relations establish compiler correspondence and measure notions are precise, but no general equivalence decision
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [Lowering, slot replacement, symbolic execution, branch interpolation and gradient fitting define a concrete hybrid compi](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-e3793cb8e0aa70ef / Lowering, slot replacement, symbolic execution, branch interpolation and gradient fitting define a concrete hybrid compi
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [M 与 E 正交。M6/E0 完全可能：形式证明状态与现实映射证据相互独立。](../../../docs/foundation/claim-governance-and-function-identity.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-61600add7c22f062 / M 与 E 正交。M6/E0 完全可能：形式证明状态与现实映射证据相互独立。
+  - 来源：`docs/foundation/claim-governance-and-function-identity.md`
+  - 依赖：—；被引用：—
+- [M(B_n) 自举收敛判定 → 理论收敛路径（公理→定理→推论）](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-905b11ff64caa5f9 / M(B_n) 自举收敛判定 → 理论收敛路径（公理→定理→推论）
+  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
+  - 依赖：—；被引用：—
+- [M(B_n)：三领域稳定复现，机制可稳定成函数，收敛性良好。](../../../outputs/audit/cross-domain-candidate-function-review-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-975c84d15d8e37df / M(B_n)：三领域稳定复现，机制可稳定成函数，收敛性良好。
+  - 来源：`outputs/audit/cross-domain-candidate-function-review-20260708.md`
+  - 依赖：—；被引用：—
+- [M(B_n)：三领域稳定复现，机制清晰可稳定成函数。](../../../outputs/audit/cross-domain-candidate-function-review-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-b3781c6696426f10 / M(B_n)：三领域稳定复现，机制清晰可稳定成函数。
+  - 来源：`outputs/audit/cross-domain-candidate-function-review-20260708.md`
+  - 依赖：—；被引用：—
+- [M(B_n)：仅单领域强复现，社会学/历史学弱，跨域收敛性不足，暂不能稳定成函数。](../../../outputs/audit/cross-domain-candidate-function-review-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-6f6f15b132c826f9 / M(B_n)：仅单领域强复现，社会学/历史学弱，跨域收敛性不足，暂不能稳定成函数。
+  - 来源：`outputs/audit/cross-domain-candidate-function-review-20260708.md`
+  - 依赖：—；被引用：—
+- [M/E independence and proof/evidence/type separation;](../../../docs/architecture/getnote-1329-epistemic-governance-pressure-test.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-2864be469b797640 / M/E independence and proof/evidence/type separation;
+  - 来源：`docs/architecture/getnote-1329-epistemic-governance-pressure-test.md`
+  - 依赖：—；被引用：—
+- [M10的溢出是传染的物理通道。统一传染链：高p恶化→溢出消耗低p缓冲(\[D379\](docs/zh/functions/items/D379.md))→低p缓冲<g_critical(\[D309\](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-a09ffac283909a9b / M10的溢出是传染的物理通道。统一传染链：高p恶化→溢出消耗低p缓冲(\[D379\](docs/zh/functions/items/D379.md))→低p缓冲<g_critical(\[D309\](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-cdbf11810bd9b709 / M11的**τ_min=τ_delay**——最小响应时间等于反馈延迟时间。延迟决定系统能多快响应噪声。 **扩展注释 / Extended Annotation**
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：—；被引用：—
+- [M11的D380与D342不同构——D342是时间域累积效应，D380是频率域穿透效应。但极限情况下等价：无限长时间慢性消耗=无限多次小波动累积。统一：慢性消耗是波动累积在连续时间极限下的表现。 **扩展注释 / Extended Anno](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-cdb3c327a454272d / M11的D380与D342不同构——D342是时间域累积效应，D380是频率域穿透效应。但极限情况下等价：无限长时间慢性消耗=无限多次小波动累积。统一：慢性消耗是波动累积在连续时间极限下的表现。 **扩展注释 / Extended Anno
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D342, D380；被引用：—
+- [M11的w₂∝(√n-1)/(n·ḡ)。n→∞时w₂→0——门控面越多缓冲期越短。但ḡ∝√n以上增长可补偿。社会系统"改革窗口"是否关闭取决于ḡ增长能否跟上n。 **扩展注释 / Extended Annotation**](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-c885f416169c4623 / M11的w₂∝(√n-1)/(n·ḡ)。n→∞时w₂→0——门控面越多缓冲期越短。但ḡ∝√n以上增长可补偿。社会系统"改革窗口"是否关闭取决于ḡ增长能否跟上n。 **扩展注释 / Extended Annotation**
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：—；被引用：—
+- [M11的w₂决定共振频率ω_resonance∝1/w₂。窄缓冲区→高频共振。w₂缩窄（\[D324\](docs/zh/functions/items/D324.md) n增大）使系统从"怕低频共振"变成"怕高频共振"——复杂系统的脆弱频率随](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-79b87c8e78118ee2 / M11的w₂决定共振频率ω_resonance∝1/w₂。窄缓冲区→高频共振。w₂缩窄（\[D324\](docs/zh/functions/items/D324.md) n增大）使系统从"怕低频共振"变成"怕高频共振"——复杂系统的脆弱频率随
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：D324；被引用：—
-- [If upstream objects D_{D325} exist, compose F_{D325}=N(⊕_{g∈D_{D325}} g); otherwise treat F_{D325} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+- [M11的w₂随T_eff升高而展宽：w₂(T)∝w₂(0)·(1+kT_eff/Φ_min)。高温使阶段边界模糊→缓冲期延长，但缓冲质量降低→更宽但更薄的缓冲。社会"流动性高"→改革窗口更宽但缓冲更弱→看似灵活实则脆弱。 **扩展注释 /](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-1a735eb6d7191146 / M11的w₂随T_eff升高而展宽：w₂(T)∝w₂(0)·(1+kT_eff/Φ_min)。高温使阶段边界模糊→缓冲期延长，但缓冲质量降低→更宽但更薄的缓冲。社会"流动性高"→改革窗口更宽但缓冲更弱→看似灵活实则脆弱。 **扩展注释 /
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：—；被引用：—
+- [M12的僵尸态中自发涨落δg_eff∝√(kT_eff/n)。涨落踢出僵尸态的概率∝e^{-n(g_critical-g_eff)²/kT_eff}——n越大概率越小。小系统可能自修复，大系统几乎不可能。组织越大越容易永久僵尸化。 **扩展](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-5a2c7e6741f57c8f / M12的僵尸态中自发涨落δg_eff∝√(kT_eff/n)。涨落踢出僵尸态的概率∝e^{-n(g_critical-g_eff)²/kT_eff}——n越大概率越小。小系统可能自修复，大系统几乎不可能。组织越大越容易永久僵尸化。 **扩展
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：—；被引用：—
+- [M12的大系统传染临界→n/2是容斥主导不可逆在传染维度的投影。D388和D395描述同一现象的不同方面——完全一致。 **扩展注释 / Extended Annotation**](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-946ecf5570988d76 / M12的大系统传染临界→n/2是容斥主导不可逆在传染维度的投影。D388和D395描述同一现象的不同方面——完全一致。 **扩展注释 / Extended Annotation**
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D388, D395；被引用：—
+- [M13的K·τ_delay 1时自激振荡主导（延迟有害），=1为临界。弱正反馈系统中延迟可以有益（过滤噪声），强正反馈系统中延迟必然有害（引发振荡）。 **扩展注释 / Extended Annotation](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-2718acdf9731545d / M13的K·τ_delay 1时自激振荡主导（延迟有害），=1为临界。弱正反馈系统中延迟可以有益（过滤噪声），强正反馈系统中延迟必然有害（引发振荡）。 **扩展注释 / Extended Annotation
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：—；被引用：—
+- [M13的正反馈K^k饱和来自p_max的物理下界p_min>0。K^k有效值=K^k/(1+(K^k-1)·p_min/p_max)，K^k·p_min≈p_max时饱和。饱和后稳态p_max≈p_min·K/(K-1)。K越大稳态越低——](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-3979438989062caf / M13的正反馈K^k饱和来自p_max的物理下界p_min>0。K^k有效值=K^k/(1+(K^k-1)·p_min/p_max)，K^k·p_min≈p_max时饱和。饱和后稳态p_max≈p_min·K/(K-1)。K越大稳态越低——
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D242, D312；被引用：—
+- [M13的正反馈回路放大噪声：δp_max经过k轮反馈后放大为δp_max·K^k，K为反馈增益(\[D274\](docs/zh/functions/items/D274.md))。K>1时噪声指数放大→系统对初始条件极度敏感→蝴蝶效应。K<1](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-5d66c4f0333db4d2 / M13的正反馈回路放大噪声：δp_max经过k轮反馈后放大为δp_max·K^k，K为反馈增益(\[D274\](docs/zh/functions/items/D274.md))。K>1时噪声指数放大→系统对初始条件极度敏感→蝴蝶效应。K<1
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D274, D295；被引用：—
+- [M14的K_benign≈α_exclusion时良性恶性周期震荡：良性增长→p_max↓→容斥减弱→恶性增长→p_max↑→良性被压→恶性受限→良性再增长。震荡周期T_osc∝2π/√(K_benign·α_exclusion)，振幅∝\|](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-344ea478d71d2789 / M14的K_benign≈α_exclusion时良性恶性周期震荡：良性增长→p_max↓→容斥减弱→恶性增长→p_max↑→良性被压→恶性受限→良性再增长。震荡周期T_osc∝2π/√(K_benign·α_exclusion)，振幅∝\|
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：—；被引用：—
+- [M14的共存震荡中随机偏移δK∝√(kT_eff)·T_osc。偏移累积为随机游走，最终方向由累积符号决定。预期决定时间T_decision∝(ΔK/δK)²·T_osc——初始偏置越大决定越快，ΔK≈0时可能长期震荡。改革派和保守派差距越](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-32967d5e4d3b4ed3 / M14的共存震荡中随机偏移δK∝√(kT_eff)·T_osc。偏移累积为随机游走，最终方向由累积符号决定。预期决定时间T_decision∝(ΔK/δK)²·T_osc——初始偏置越大决定越快，ΔK≈0时可能长期震荡。改革派和保守派差距越
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：—；被引用：—
+- [M14的良性-恶性共存(\[D299\](docs/zh/functions/items/D299.md))能持续的条件：良性子循环的反馈增益K_benign必须大于恶性子循环的容斥加速因子α_exclusion。K_benign<α_excl](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-edaacaac9d9c97fa / M14的良性-恶性共存(\[D299\](docs/zh/functions/items/D299.md))能持续的条件：良性子循环的反馈增益K_benign必须大于恶性子循环的容斥加速因子α_exclusion。K_benign<α_excl
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D274, D299；被引用：—
+- [M14的逃逸速度v_escape∝λ·p_max²·g_eff。p_max≈0.5是最佳逃逸窗口（黄金逃逸点）。p_max 0.8几乎不可能逃逸。D279干预时机悖论的精确化。 **扩展注释 / Exte](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-21a7ffb89be07a25 / M14的逃逸速度v_escape∝λ·p_max²·g_eff。p_max≈0.5是最佳逃逸窗口（黄金逃逸点）。p_max 0.8几乎不可能逃逸。D279干预时机悖论的精确化。 **扩展注释 / Exte
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D279；被引用：—
+- [M14的阻尼影响步长：高阻尼→步长小→决定慢但方向确定；低阻尼→步长大→决定快但方向随机。T_decision∝\|K_benign-α_exclusion\|·T_osc。改革力量明显占优时方向确定但推进慢，势均力敌时推进快但方向不确定——速](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-fde41844267aff17 / M14的阻尼影响步长：高阻尼→步长小→决定慢但方向确定；低阻尼→步长大→决定快但方向随机。T_decision∝\|K_benign-α_exclusion\|·T_osc。改革力量明显占优时方向确定但推进慢，势均力敌时推进快但方向不确定——速
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：—；被引用：—
+- [M14良性循环收敛速度由反馈增益K∝\|∂g_eff/∂p_max\|·∂p*/∂g_eff·β决定。K>1→自加速快速收敛，K<1→衰减缓慢收敛。干预力度β是K的线性因子。 **扩展注释 / Extended Annotation**](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-c77aea9150003133 / M14良性循环收敛速度由反馈增益K∝\|∂g_eff/∂p_max\|·∂p*/∂g_eff·β决定。K>1→自加速快速收敛，K<1→衰减缓慢收敛。干预力度β是K的线性因子。 **扩展注释 / Extended Annotation**
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：—；被引用：—
+- [M1的D370与D348不同构：D370是方差修正（二阶），D348是均值修正（一阶）。联合效果：趋势加速×波动加速=总加速∝1/(1+a_excl·τ)·(1+Σpᵢpⱼ/ΣVar(ΔΦᵢ))——趋势和波动的双重双重加速。 **扩展注释](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-67b4833d3aecfefa / M1的D370与D348不同构：D370是方差修正（二阶），D348是均值修正（一阶）。联合效果：趋势加速×波动加速=总加速∝1/(1+a_excl·τ)·(1+Σpᵢpⱼ/ΣVar(ΔΦᵢ))——趋势和波动的双重双重加速。 **扩展注释
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D348, D370；被引用：—
+- [M1的ΔΦ导致D158预测误差\|e^{ΔΦ}-1\|：ΔΦ=1→误差172%→预测失效。pᵢ 0.8不可信。 **扩展注释 / Extended Annotation**](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-00c45d89b4a76e72 / M1的ΔΦ导致D158预测误差\|e^{ΔΦ}-1\|：ΔΦ=1→误差172%→预测失效。pᵢ 0.8不可信。 **扩展注释 / Extended Annotation**
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D158；被引用：—
+- [M1的ΔΦ通过P_survival=e^{-Φ}传导。ΔΦ 1时P变化≈e^{-ΔΦ}（指数区），0.1<ΔΦ<1为过渡区。非线性阈值ΔΦ_c≈0.3——低于此值D158线性近似可用，高于此值必须用指数](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-2284884c034e6109 / M1的ΔΦ通过P_survival=e^{-Φ}传导。ΔΦ 1时P变化≈e^{-ΔΦ}（指数区），0.1<ΔΦ<1为过渡区。非线性阈值ΔΦ_c≈0.3——低于此值D158线性近似可用，高于此值必须用指数
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D158, D260, D296；被引用：—
+- [M1的不同门控面ΔΦᵢ差异大时，总ΔΦ由最大ΔΦ主导：ΔΦ_total≈max(ΔΦᵢ)·(1+ln(Σe^{ΔΦᵢ}/max(ΔΦᵢ)))。极端异质性下ΔΦ_total≈ΔΦ_max·(1+ln(n-1))。系统退化由最弱门控面决定——不](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-463e05382866a29b / M1的不同门控面ΔΦᵢ差异大时，总ΔΦ由最大ΔΦ主导：ΔΦ_total≈max(ΔΦᵢ)·(1+ln(Σe^{ΔΦᵢ}/max(ΔΦᵢ)))。极端异质性下ΔΦ_total≈ΔΦ_max·(1+ln(n-1))。系统退化由最弱门控面决定——不
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D280；被引用：—
+- [M1的不同门控面ΔΦ的时间交叉相关∝pᵢpⱼ·e^{-τ/τ_relax}。容斥项使高p门控面之间有正交叉相关。一个门控面恶化预测其他门控面随后恶化——"坏消息成群来"的数学根源不是运气差而是容斥交叉相关。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-7e58db463902b291 / If upstream objects D_{D325} exist, compose F_{D325}=N(⊕_{g∈D_{D325}} g); otherwise treat F_{D325} as an axiom seed.
+  - 可搜索名称：NFC-f90904786f04c9b6 / M1的不同门控面ΔΦ的时间交叉相关∝pᵢpⱼ·e^{-τ/τ_relax}。容斥项使高p门控面之间有正交叉相关。一个门控面恶化预测其他门控面随后恶化——"坏消息成群来"的数学根源不是运气差而是容斥交叉相关。
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D325；被引用：—
-- [If upstream objects D_{D326} exist, compose F_{D326}=N(⊕_{g∈D_{D326}} g); otherwise treat F_{D326} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-95129f745edaedda / If upstream objects D_{D326} exist, compose F_{D326}=N(⊕_{g∈D_{D326}} g); otherwise treat F_{D326} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D326；被引用：—
-- [If upstream objects D_{D327} exist, compose F_{D327}=N(⊕_{g∈D_{D327}} g); otherwise treat F_{D327} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-5a3edb1445b2b6c4 / If upstream objects D_{D327} exist, compose F_{D327}=N(⊕_{g∈D_{D327}} g); otherwise treat F_{D327} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D327；被引用：—
-- [If upstream objects D_{D328} exist, compose F_{D328}=N(⊕_{g∈D_{D328}} g); otherwise treat F_{D328} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-d5737dbfe4615f76 / If upstream objects D_{D328} exist, compose F_{D328}=N(⊕_{g∈D_{D328}} g); otherwise treat F_{D328} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D328；被引用：—
-- [If upstream objects D_{D329} exist, compose F_{D329}=N(⊕_{g∈D_{D329}} g); otherwise treat F_{D329} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-cf2fc6e09435a534 / If upstream objects D_{D329} exist, compose F_{D329}=N(⊕_{g∈D_{D329}} g); otherwise treat F_{D329} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D329；被引用：—
-- [If upstream objects D_{D32} exist, compose F_{D32}=N(⊕_{g∈D_{D32}} g); otherwise treat F_{D32} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-e390829576915e56 / If upstream objects D_{D32} exist, compose F_{D32}=N(⊕_{g∈D_{D32}} g); otherwise treat F_{D32} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D32；被引用：—
-- [If upstream objects D_{D330} exist, compose F_{D330}=N(⊕_{g∈D_{D330}} g); otherwise treat F_{D330} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-a52bad2b9477a648 / If upstream objects D_{D330} exist, compose F_{D330}=N(⊕_{g∈D_{D330}} g); otherwise treat F_{D330} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D330；被引用：—
-- [If upstream objects D_{D331} exist, compose F_{D331}=N(⊕_{g∈D_{D331}} g); otherwise treat F_{D331} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-6a8da4c423367616 / If upstream objects D_{D331} exist, compose F_{D331}=N(⊕_{g∈D_{D331}} g); otherwise treat F_{D331} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D331；被引用：—
-- [If upstream objects D_{D332} exist, compose F_{D332}=N(⊕_{g∈D_{D332}} g); otherwise treat F_{D332} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-193d8a9eda690531 / If upstream objects D_{D332} exist, compose F_{D332}=N(⊕_{g∈D_{D332}} g); otherwise treat F_{D332} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D332；被引用：—
-- [If upstream objects D_{D333} exist, compose F_{D333}=N(⊕_{g∈D_{D333}} g); otherwise treat F_{D333} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-99a03caa656521ab / If upstream objects D_{D333} exist, compose F_{D333}=N(⊕_{g∈D_{D333}} g); otherwise treat F_{D333} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D333；被引用：—
-- [If upstream objects D_{D334} exist, compose F_{D334}=N(⊕_{g∈D_{D334}} g); otherwise treat F_{D334} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-d87ea28ccf6179ae / If upstream objects D_{D334} exist, compose F_{D334}=N(⊕_{g∈D_{D334}} g); otherwise treat F_{D334} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D334；被引用：—
-- [If upstream objects D_{D335} exist, compose F_{D335}=N(⊕_{g∈D_{D335}} g); otherwise treat F_{D335} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-a383e257f72c092d / If upstream objects D_{D335} exist, compose F_{D335}=N(⊕_{g∈D_{D335}} g); otherwise treat F_{D335} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D335；被引用：—
-- [If upstream objects D_{D336} exist, compose F_{D336}=N(⊕_{g∈D_{D336}} g); otherwise treat F_{D336} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-8983010f26c4c6e7 / If upstream objects D_{D336} exist, compose F_{D336}=N(⊕_{g∈D_{D336}} g); otherwise treat F_{D336} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D336；被引用：—
-- [If upstream objects D_{D337} exist, compose F_{D337}=N(⊕_{g∈D_{D337}} g); otherwise treat F_{D337} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-cf9f5bcb5ce19eea / If upstream objects D_{D337} exist, compose F_{D337}=N(⊕_{g∈D_{D337}} g); otherwise treat F_{D337} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D337；被引用：—
-- [If upstream objects D_{D338} exist, compose F_{D338}=N(⊕_{g∈D_{D338}} g); otherwise treat F_{D338} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-056d55d7e9c92d51 / If upstream objects D_{D338} exist, compose F_{D338}=N(⊕_{g∈D_{D338}} g); otherwise treat F_{D338} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D338；被引用：—
-- [If upstream objects D_{D339} exist, compose F_{D339}=N(⊕_{g∈D_{D339}} g); otherwise treat F_{D339} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-cdb111354a18085f / If upstream objects D_{D339} exist, compose F_{D339}=N(⊕_{g∈D_{D339}} g); otherwise treat F_{D339} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D339；被引用：—
-- [If upstream objects D_{D33} exist, compose F_{D33}=N(⊕_{g∈D_{D33}} g); otherwise treat F_{D33} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-33275c9c3c770344 / If upstream objects D_{D33} exist, compose F_{D33}=N(⊕_{g∈D_{D33}} g); otherwise treat F_{D33} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D33；被引用：—
-- [If upstream objects D_{D340} exist, compose F_{D340}=N(⊕_{g∈D_{D340}} g); otherwise treat F_{D340} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-7e326edf975f697a / If upstream objects D_{D340} exist, compose F_{D340}=N(⊕_{g∈D_{D340}} g); otherwise treat F_{D340} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D340；被引用：—
-- [If upstream objects D_{D341} exist, compose F_{D341}=N(⊕_{g∈D_{D341}} g); otherwise treat F_{D341} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-048fde41c0913ee7 / If upstream objects D_{D341} exist, compose F_{D341}=N(⊕_{g∈D_{D341}} g); otherwise treat F_{D341} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D341；被引用：—
-- [If upstream objects D_{D342} exist, compose F_{D342}=N(⊕_{g∈D_{D342}} g); otherwise treat F_{D342} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-8d90a664be1d2370 / If upstream objects D_{D342} exist, compose F_{D342}=N(⊕_{g∈D_{D342}} g); otherwise treat F_{D342} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [M1的不同门控面ΔΦ的时间交叉相关∝pᵢpⱼ·e^{-τ/τ_relax}。容斥项使高p门控面之间有正交叉相关。一个门控面恶化预测其他门控面随后恶化——"坏消息成群来"的数学根源不是运气差而是容斥交叉相关。 **扩展注释 / Extende](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-602b751d459383b5 / M1的不同门控面ΔΦ的时间交叉相关∝pᵢpⱼ·e^{-τ/τ_relax}。容斥项使高p门控面之间有正交叉相关。一个门控面恶化预测其他门控面随后恶化——"坏消息成群来"的数学根源不是运气差而是容斥交叉相关。 **扩展注释 / Extende
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：—；被引用：—
+- [M1的容斥交叉相关增强D342波动累积：交叉相关项Cov∝pᵢpⱼ使总方差增大→波动累积更严重。增强因子∝1+Σᵢ<ⱼpᵢpⱼ/ΣVar(ΔΦᵢ)。"坏消息成群来"不只预测恶化还放大"折腾有害"——双重打击。 **扩展注释 / Extend](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-e01e711387b3c6dc / M1的容斥交叉相关增强D342波动累积：交叉相关项Cov∝pᵢpⱼ使总方差增大→波动累积更严重。增强因子∝1+Σᵢ<ⱼpᵢpⱼ/ΣVar(ΔΦᵢ)。"坏消息成群来"不只预测恶化还放大"折腾有害"——双重打击。 **扩展注释 / Extend
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：D342；被引用：—
-- [If upstream objects D_{D343} exist, compose F_{D343}=N(⊕_{g∈D_{D343}} g); otherwise treat F_{D343} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+- [M2的Φ(μ)在多个门控面参数差异大时可出现多个极小点。竞争规则：全局极小点由min(Φ(μ_k))决定，但系统可能被困在局部极小点（亚稳态）。逃逸条件：热涨落或外部驱动使Φ跨越鞍点Φ_saddle。鞍点高度∝min(Δpᵢ²)——最接近的](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-e9a5790b5df7f27d / M2的Φ(μ)在多个门控面参数差异大时可出现多个极小点。竞争规则：全局极小点由min(Φ(μ_k))决定，但系统可能被困在局部极小点（亚稳态）。逃逸条件：热涨落或外部驱动使Φ跨越鞍点Φ_saddle。鞍点高度∝min(Δpᵢ²)——最接近的
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：—；被引用：—
+- [M2的两个极小点在门槛参数变化时可以合并。合并条件：Φ(μ_saddle)-Φ(μ₁)<δΦ_thermal。合并后系统从双稳态变为单稳态——失去"退路"。合并方向：浅极小点被深极小点吸收。社会改革中"次优方案"极小点被吸收进"最优方案"后](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-d2d59087c3725e8c / M2的两个极小点在门槛参数变化时可以合并。合并条件：Φ(μ_saddle)-Φ(μ₁)<δΦ_thermal。合并后系统从双稳态变为单稳态——失去"退路"。合并方向：浅极小点被深极小点吸收。社会改革中"次优方案"极小点被吸收进"最优方案"后
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D315；被引用：—
+- [M2的复活总代价∝Φ(拐点)与n无关的原因：Φ(拐点)是全局量已包含n信息。每个门控面平均代价∝Φ/n随n减小，但总代价守恒。类比：修复桥的总成本取决于损坏程度而非构件数——构件越多每个修复量越少但总量不变。守恒律：复活总代价=拐点处Φ值。](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-2fad1bee40549333 / M2的复活总代价∝Φ(拐点)与n无关的原因：Φ(拐点)是全局量已包含n信息。每个门控面平均代价∝Φ/n随n减小，但总代价守恒。类比：修复桥的总成本取决于损坏程度而非构件数——构件越多每个修复量越少但总量不变。守恒律：复活总代价=拐点处Φ值。
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：—；被引用：—
+- [M2的极小点漂移对鲁棒性影响取决于Φ三阶导数符号。学习新技能→δμ<0→极小点下移→无论偏斜方向都提升鲁棒性。物理大统一d³Φ/dμ³≈0→漂移影响极小。 **扩展注释 / Extended Annotation**](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-d23f644852e8975e / M2的极小点漂移对鲁棒性影响取决于Φ三阶导数符号。学习新技能→δμ<0→极小点下移→无论偏斜方向都提升鲁棒性。物理大统一d³Φ/dμ³≈0→漂移影响极小。 **扩展注释 / Extended Annotation**
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：—；被引用：—
+- [M2的漂移速率dμ/dt=-(Σᵢ αᵢ/(1-pᵢ)²)/(d²Φ/dμ²)。分母是Φ曲率——平坦区（物理大统一d²Φ/dμ²≈0）漂移极快，尖锐区漂移极慢。平坦=稳定但漂移快，是D292"强吸引域失稳更致命"的速率版本。 **扩展注释](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-951fba8de5e80fe7 / M2的漂移速率dμ/dt=-(Σᵢ αᵢ/(1-pᵢ)²)/(d²Φ/dμ²)。分母是Φ曲率——平坦区（物理大统一d²Φ/dμ²≈0）漂移极快，尖锐区漂移极慢。平坦=稳定但漂移快，是D292"强吸引域失稳更致命"的速率版本。 **扩展注释
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D292；被引用：—
+- [M3的(i,j)和(j,i)在pᵢ≠pⱼ时贡献不同：低p门控面受高p门控面影响大，高p受低p影响小。容斥关联的不对称性是阶层固化的数学机制之一——弱者受强者的容斥影响远大于强者受弱者。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-86ef7cefc2c5a3ec / If upstream objects D_{D343} exist, compose F_{D343}=N(⊕_{g∈D_{D343}} g); otherwise treat F_{D343} as an axiom seed.
+  - 可搜索名称：NFC-fd82749f6f502db1 / M3的(i,j)和(j,i)在pᵢ≠pⱼ时贡献不同：低p门控面受高p门控面影响大，高p受低p影响小。容斥关联的不对称性是阶层固化的数学机制之一——弱者受强者的容斥影响远大于强者受弱者。
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D343；被引用：—
-- [If upstream objects D_{D344} exist, compose F_{D344}=N(⊕_{g∈D_{D344}} g); otherwise treat F_{D344} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 依赖：—；被引用：—
+- [M3的(i,j)和(j,i)在pᵢ≠pⱼ时贡献不同：低p门控面受高p门控面影响大，高p受低p影响小。容斥关联的不对称性是阶层固化的数学机制之一——弱者受强者的容斥影响远大于强者受弱者。 **扩展注释 / Extended Annotatio](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-397db03c18c81635 / M3的(i,j)和(j,i)在pᵢ≠pⱼ时贡献不同：低p门控面受高p门控面影响大，高p受低p影响小。容斥关联的不对称性是阶层固化的数学机制之一——弱者受强者的容斥影响远大于强者受弱者。 **扩展注释 / Extended Annotatio
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：—；被引用：—
+- [M3的D372与D328是同一现象不同表述。统一指标I_concentration = max(ΔΦᵢ)/ΣΔΦᵢ·(1+ln(n))。I→1完全集中，I→0完全分散。I随p_max/p̄单调递增——降p_max不只降Φ还降低集中性→容斥从](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-3417287fc126e678 / M3的D372与D328是同一现象不同表述。统一指标I_concentration = max(ΔΦᵢ)/ΣΔΦᵢ·(1+ln(n))。I→1完全集中，I→0完全分散。I随p_max/p̄单调递增——降p_max不只降Φ还降低集中性→容斥从
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D328, D372；被引用：—
+- [M3的dΦ/dt=Σᵢ αᵢ/(1-pᵢ) + Σᵢⱼ d(pᵢpⱼ)/dt。早期pᵢ小时容斥项占比≈0，中后期容斥项占比∝(Σpᵢ)²急剧上升。转折点在Σpᵢ≈0.5——此后容斥项主导dΦ/dt。社会系统"突然变坏"的数学根源：容斥项占比](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-86e35231865eb32d / If upstream objects D_{D344} exist, compose F_{D344}=N(⊕_{g∈D_{D344}} g); otherwise treat F_{D344} as an axiom seed.
+  - 可搜索名称：NFC-42c10352fc2d7c1b / M3的dΦ/dt=Σᵢ αᵢ/(1-pᵢ) + Σᵢⱼ d(pᵢpⱼ)/dt。早期pᵢ小时容斥项占比≈0，中后期容斥项占比∝(Σpᵢ)²急剧上升。转折点在Σpᵢ≈0.5——此后容斥项主导dΦ/dt。社会系统"突然变坏"的数学根源：容斥项占比
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D344；被引用：—
-- [If upstream objects D_{D345} exist, compose F_{D345}=N(⊕_{g∈D_{D345}} g); otherwise treat F_{D345} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 依赖：—；被引用：—
+- [M3的dΦ/dt=Σᵢ αᵢ/(1-pᵢ) + Σᵢⱼ d(pᵢpⱼ)/dt。早期pᵢ小时容斥项占比≈0，中后期容斥项占比∝(Σpᵢ)²急剧上升。转折点在Σpᵢ≈0.5——此后容斥项主导dΦ/dt。社会系统"突然变坏"的数学根源：容斥项占比](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-b27590dc1ff7eb3b / M3的dΦ/dt=Σᵢ αᵢ/(1-pᵢ) + Σᵢⱼ d(pᵢpⱼ)/dt。早期pᵢ小时容斥项占比≈0，中后期容斥项占比∝(Σpᵢ)²急剧上升。转折点在Σpᵢ≈0.5——此后容斥项主导dΦ/dt。社会系统"突然变坏"的数学根源：容斥项占比
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：—；被引用：—
+- [M3的I=(1+m)/2在有限n时有O(1/n)修正。有限系统比平均场预测更集中。修正量∝1/√n——与D331 p*涨落同量级，同一有限尺寸效应的两个方面。 **扩展注释 / Extended Annotation**](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-2e46296a373bafb4 / M3的I=(1+m)/2在有限n时有O(1/n)修正。有限系统比平均场预测更集中。修正量∝1/√n——与D331 p*涨落同量级，同一有限尺寸效应的两个方面。 **扩展注释 / Extended Annotation**
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D331；被引用：—
+- [M3的I_concentration正是D387配分函数的序参量——磁化强度m的线性映射I=(1+m)/2。降p_max既降Φ也降低m→降低I→容斥从有序变无序。D386和D387完全统一。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-7999f46d31a4e41c / If upstream objects D_{D345} exist, compose F_{D345}=N(⊕_{g∈D_{D345}} g); otherwise treat F_{D345} as an axiom seed.
+  - 可搜索名称：NFC-e6fc2c1d5acb9211 / M3的I_concentration正是D387配分函数的序参量——磁化强度m的线性映射I=(1+m)/2。降p_max既降Φ也降低m→降低I→容斥从有序变无序。D386和D387完全统一。
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D345；被引用：—
-- [If upstream objects D_{D346} exist, compose F_{D346}=N(⊕_{g∈D_{D346}} g); otherwise treat F_{D346} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 依赖：D386, D387；被引用：—
+- [M3的I_concentration正是D387配分函数的序参量——磁化强度m的线性映射I=(1+m)/2。降p_max既降Φ也降低m→降低I→容斥从有序变无序。D386和D387完全统一。 **扩展注释 / Extended Annota](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-a171cfc3d6eeab96 / M3的I_concentration正是D387配分函数的序参量——磁化强度m的线性映射I=(1+m)/2。降p_max既降Φ也降低m→降低I→容斥从有序变无序。D386和D387完全统一。 **扩展注释 / Extended Annota
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D386, D387；被引用：—
+- [M4的Ising同构意味着配分函数Z = Σ e^{-β_H·H}，H = -ḡ·Σsᵢsⱼ + Σpᵢ·sᵢ，sᵢ=±1。ḡ对应Ising的J，pᵢ对应外场h。临界温度T_c ∝ ḡ·√n。容斥-耦合竞争的全部统计性质可由标准统计力学方法](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-28779e085091737a / M4的Ising同构意味着配分函数Z = Σ e^{-β_H·H}，H = -ḡ·Σsᵢsⱼ + Σpᵢ·sᵢ，sᵢ=±1。ḡ对应Ising的J，pᵢ对应外场h。临界温度T_c ∝ ḡ·√n。容斥-耦合竞争的全部统计性质可由标准统计力学方法
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：—；被引用：—
+- [M4的Ising同构意味着配分函数Z = Σ e^{-β_H·H}，H = -ḡ·Σsᵢsⱼ + Σpᵢ·sᵢ，sᵢ=±1。ḡ对应Ising的J，pᵢ对应外场h。临界温度T_c ∝ ḡ·√n。容斥-耦合竞争的全部统计性质可由标准统计力学方法](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-f508e30bf9686b73 / If upstream objects D_{D346} exist, compose F_{D346}=N(⊕_{g∈D_{D346}} g); otherwise treat F_{D346} as an axiom seed.
+  - 可搜索名称：NFC-50f7920498f2bcef / M4的Ising同构意味着配分函数Z = Σ e^{-β_H·H}，H = -ḡ·Σsᵢsⱼ + Σpᵢ·sᵢ，sᵢ=±1。ḡ对应Ising的J，pᵢ对应外场h。临界温度T_c ∝ ḡ·√n。容斥-耦合竞争的全部统计性质可由标准统计力学方法
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D346；被引用：—
-- [If upstream objects D_{D347} exist, compose F_{D347}=N(⊕_{g∈D_{D347}} g); otherwise treat F_{D347} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 依赖：—；被引用：—
+- [M4的K=√n临界附近标度律：涨落方差∝1/\|K-√n\|，关联时间∝1/\|K-√n\|。临界指数β=1/2（平均场），γ=1。与Ising模型同构——容斥-耦合竞争临界点是平均场相变，普适类与Ising相同。 **扩展注释 / Extende](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-6efc10337d6c261b / M4的K=√n临界附近标度律：涨落方差∝1/\|K-√n\|，关联时间∝1/\|K-√n\|。临界指数β=1/2（平均场），γ=1。与Ising模型同构——容斥-耦合竞争临界点是平均场相变，普适类与Ising相同。 **扩展注释 / Extende
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：—；被引用：—
+- [M5的容斥主导不只约束α，还约束弱混合角θ_W：sin²θ_W≈0.23必须使弱力否决概率p_weak<p*。θ_W过大→弱力否决概率超p*→电弱统一尺度极小点消失→d=4不稳定。与D297形成"基本常数容斥约束群"——α、θ_W、Λ_CD](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-0012607dab8afb7e / M5的容斥主导不只约束α，还约束弱混合角θ_W：sin²θ_W≈0.23必须使弱力否决概率p_weak<p*。θ_W过大→弱力否决概率超p*→电弱统一尺度极小点消失→d=4不稳定。与D297形成"基本常数容斥约束群"——α、θ_W、Λ_CD
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D283, D297；被引用：—
+- [M5的容斥主导有可检验签名：实际量子引力修正>>标准预测。如果实验观测到量子引力效应显著强于标准模型预测，是容斥主导的证据。新判据：不只看"有没有"，还看"是否比独立假设预测的更强"。 **扩展注释 / Extended Annotatio](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-942278c4ede10e0c / M5的容斥主导有可检验签名：实际量子引力修正>>标准预测。如果实验观测到量子引力效应显著强于标准模型预测，是容斥主导的证据。新判据：不只看"有没有"，还看"是否比独立假设预测的更强"。 **扩展注释 / Extended Annotatio
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：—；被引用：—
+- [M5的容斥从可忽略变主导的临界尺度μ_c由max(pᵢ(μ))=p*决定。μ μ_c时容斥主导（量子引力区）。μ_c对应量子引力能标~10¹⁸ GeV。容斥主导不是渐变而是在μ_c处突变——D293阶段](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-1b8a4f907970180e / M5的容斥从可忽略变主导的临界尺度μ_c由max(pᵢ(μ))=p*决定。μ μ_c时容斥主导（量子引力区）。μ_c对应量子引力能标~10¹⁸ GeV。容斥主导不是渐变而是在μ_c处突变——D293阶段
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D293；被引用：—
+- [M5的量子引力无极小点可能通过增加低p门控面（新基本力）来修复。p*∝√n→增加n提高p*→如果新门控面p₅<<p*→极小点可能恢复。可检验物理预测。 **扩展注释 / Extended Annotation**](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-44fb7dac255a6b0c / M5的量子引力无极小点可能通过增加低p门控面（新基本力）来修复。p*∝√n→增加n提高p*→如果新门控面p₅<<p*→极小点可能恢复。可检验物理预测。 **扩展注释 / Extended Annotation**
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：—；被引用：—
+- [M6的d=4不仅使所有pᵢ<p*，而且稳定性裕度最大（p_max/p*≈2-7倍）。d=3裕度<0，d=5裕度减小，d=4是裕度峰值。物理定律的鲁棒性不是碰巧——d=4是稳定性裕度的全局最大值。 **扩展注释 / Extended Anno](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-8e432ca4d5305314 / M6的d=4不仅使所有pᵢ<p*，而且稳定性裕度最大（p_max/p*≈2-7倍）。d=3裕度<0，d=5裕度减小，d=4是裕度峰值。物理定律的鲁棒性不是碰巧——d=4是稳定性裕度的全局最大值。 **扩展注释 / Extended Anno
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：—；被引用：—
+- [M6的d=4稳定性约束基本物理常数：α增大~100倍→pᵢ>p*→极小点消失。精细结构常数α≈1/137不能太大→否则电磁否决概率超p*→d=4不稳定。常数不是任意的，必须让d=4稳定。 **扩展注释 / Extended Annotati](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-462debd26ae92a14 / M6的d=4稳定性约束基本物理常数：α增大~100倍→pᵢ>p*→极小点消失。精细结构常数α≈1/137不能太大→否则电磁否决概率超p*→d=4不稳定。常数不是任意的，必须让d=4稳定。 **扩展注释 / Extended Annotati
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：—；被引用：—
+- [M6的d_eff在4附近振荡时阻尼γ∝Σαᵢ/(1-pᵢ)²。γ>0衰减→d=4稳定吸引子；γ >0（强阻尼），社会系统γ≈0（弱阻尼，长期振荡）。宇宙d=4不是恰好卡在4，而是衰减振荡后停在4。](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-be038858b6d22858 / M6的d_eff在4附近振荡时阻尼γ∝Σαᵢ/(1-pᵢ)²。γ>0衰减→d=4稳定吸引子；γ >0（强阻尼），社会系统γ≈0（弱阻尼，长期振荡）。宇宙d=4不是恰好卡在4，而是衰减振荡后停在4。
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：—；被引用：—
+- [M6的δ_c对应配分函数中耦合-容斥相变的临界场强h_c。h_c∝T_c∝ḡ·√n→δ_c∝1/(ḡ·√n)——与D389完全一致。δ_c就是统计力学相变的临界场强。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-9736d4898a1892ec / If upstream objects D_{D347} exist, compose F_{D347}=N(⊕_{g∈D_{D347}} g); otherwise treat F_{D347} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D347；被引用：—
-- [If upstream objects D_{D348} exist, compose F_{D348}=N(⊕_{g∈D_{D348}} g); otherwise treat F_{D348} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-cff2ffb9622e2aeb / If upstream objects D_{D348} exist, compose F_{D348}=N(⊕_{g∈D_{D348}} g); otherwise treat F_{D348} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D348；被引用：—
-- [If upstream objects D_{D349} exist, compose F_{D349}=N(⊕_{g∈D_{D349}} g); otherwise treat F_{D349} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-093364dedf78655c / If upstream objects D_{D349} exist, compose F_{D349}=N(⊕_{g∈D_{D349}} g); otherwise treat F_{D349} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D349；被引用：—
-- [If upstream objects D_{D34} exist, compose F_{D34}=N(⊕_{g∈D_{D34}} g); otherwise treat F_{D34} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-f4dc7fd47f847308 / If upstream objects D_{D34} exist, compose F_{D34}=N(⊕_{g∈D_{D34}} g); otherwise treat F_{D34} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D34；被引用：—
-- [If upstream objects D_{D350} exist, compose F_{D350}=N(⊕_{g∈D_{D350}} g); otherwise treat F_{D350} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-1a777c9c056394c4 / If upstream objects D_{D350} exist, compose F_{D350}=N(⊕_{g∈D_{D350}} g); otherwise treat F_{D350} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D350；被引用：—
-- [If upstream objects D_{D351} exist, compose F_{D351}=N(⊕_{g∈D_{D351}} g); otherwise treat F_{D351} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-a5323289eaebf9d0 / If upstream objects D_{D351} exist, compose F_{D351}=N(⊕_{g∈D_{D351}} g); otherwise treat F_{D351} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D351；被引用：—
-- [If upstream objects D_{D352} exist, compose F_{D352}=N(⊕_{g∈D_{D352}} g); otherwise treat F_{D352} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-27853e15d488e3e7 / If upstream objects D_{D352} exist, compose F_{D352}=N(⊕_{g∈D_{D352}} g); otherwise treat F_{D352} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D352；被引用：—
-- [If upstream objects D_{D353} exist, compose F_{D353}=N(⊕_{g∈D_{D353}} g); otherwise treat F_{D353} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-8b7286776b5665ed / If upstream objects D_{D353} exist, compose F_{D353}=N(⊕_{g∈D_{D353}} g); otherwise treat F_{D353} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D353；被引用：—
-- [If upstream objects D_{D354} exist, compose F_{D354}=N(⊕_{g∈D_{D354}} g); otherwise treat F_{D354} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-a78c199d06f48a49 / If upstream objects D_{D354} exist, compose F_{D354}=N(⊕_{g∈D_{D354}} g); otherwise treat F_{D354} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D354；被引用：—
-- [If upstream objects D_{D355} exist, compose F_{D355}=N(⊕_{g∈D_{D355}} g); otherwise treat F_{D355} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-09af678d025c1da4 / If upstream objects D_{D355} exist, compose F_{D355}=N(⊕_{g∈D_{D355}} g); otherwise treat F_{D355} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D355；被引用：—
-- [If upstream objects D_{D356} exist, compose F_{D356}=N(⊕_{g∈D_{D356}} g); otherwise treat F_{D356} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-bfa99acb309c3c8d / If upstream objects D_{D356} exist, compose F_{D356}=N(⊕_{g∈D_{D356}} g); otherwise treat F_{D356} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D356；被引用：—
-- [If upstream objects D_{D357} exist, compose F_{D357}=N(⊕_{g∈D_{D357}} g); otherwise treat F_{D357} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-12b297c426bd7dfb / If upstream objects D_{D357} exist, compose F_{D357}=N(⊕_{g∈D_{D357}} g); otherwise treat F_{D357} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D357；被引用：—
-- [If upstream objects D_{D358} exist, compose F_{D358}=N(⊕_{g∈D_{D358}} g); otherwise treat F_{D358} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-d2b77793438d87cb / If upstream objects D_{D358} exist, compose F_{D358}=N(⊕_{g∈D_{D358}} g); otherwise treat F_{D358} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D358；被引用：—
-- [If upstream objects D_{D359} exist, compose F_{D359}=N(⊕_{g∈D_{D359}} g); otherwise treat F_{D359} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-e5b22f00db4b2ac4 / If upstream objects D_{D359} exist, compose F_{D359}=N(⊕_{g∈D_{D359}} g); otherwise treat F_{D359} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D359；被引用：—
-- [If upstream objects D_{D35} exist, compose F_{D35}=N(⊕_{g∈D_{D35}} g); otherwise treat F_{D35} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-5609ffc32c5135db / If upstream objects D_{D35} exist, compose F_{D35}=N(⊕_{g∈D_{D35}} g); otherwise treat F_{D35} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D35；被引用：—
-- [If upstream objects D_{D360} exist, compose F_{D360}=N(⊕_{g∈D_{D360}} g); otherwise treat F_{D360} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-223f0af3b2e1c117 / If upstream objects D_{D360} exist, compose F_{D360}=N(⊕_{g∈D_{D360}} g); otherwise treat F_{D360} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D360；被引用：—
-- [If upstream objects D_{D361} exist, compose F_{D361}=N(⊕_{g∈D_{D361}} g); otherwise treat F_{D361} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-6559eedcb340f2a4 / If upstream objects D_{D361} exist, compose F_{D361}=N(⊕_{g∈D_{D361}} g); otherwise treat F_{D361} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D361；被引用：—
-- [If upstream objects D_{D362} exist, compose F_{D362}=N(⊕_{g∈D_{D362}} g); otherwise treat F_{D362} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-bb34d8b4c9b0a3aa / If upstream objects D_{D362} exist, compose F_{D362}=N(⊕_{g∈D_{D362}} g); otherwise treat F_{D362} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D362；被引用：—
-- [If upstream objects D_{D363} exist, compose F_{D363}=N(⊕_{g∈D_{D363}} g); otherwise treat F_{D363} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-3609c654615f151f / If upstream objects D_{D363} exist, compose F_{D363}=N(⊕_{g∈D_{D363}} g); otherwise treat F_{D363} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D363；被引用：—
-- [If upstream objects D_{D364} exist, compose F_{D364}=N(⊕_{g∈D_{D364}} g); otherwise treat F_{D364} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-861c60dba75db0ae / If upstream objects D_{D364} exist, compose F_{D364}=N(⊕_{g∈D_{D364}} g); otherwise treat F_{D364} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D364；被引用：—
-- [If upstream objects D_{D365} exist, compose F_{D365}=N(⊕_{g∈D_{D365}} g); otherwise treat F_{D365} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-8e4e2ac935f3100b / If upstream objects D_{D365} exist, compose F_{D365}=N(⊕_{g∈D_{D365}} g); otherwise treat F_{D365} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D365；被引用：—
-- [If upstream objects D_{D366} exist, compose F_{D366}=N(⊕_{g∈D_{D366}} g); otherwise treat F_{D366} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-db6c5daa7cf7eb3d / If upstream objects D_{D366} exist, compose F_{D366}=N(⊕_{g∈D_{D366}} g); otherwise treat F_{D366} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D366；被引用：—
-- [If upstream objects D_{D367} exist, compose F_{D367}=N(⊕_{g∈D_{D367}} g); otherwise treat F_{D367} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-db3bde2f9460fd63 / If upstream objects D_{D367} exist, compose F_{D367}=N(⊕_{g∈D_{D367}} g); otherwise treat F_{D367} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D367；被引用：—
-- [If upstream objects D_{D368} exist, compose F_{D368}=N(⊕_{g∈D_{D368}} g); otherwise treat F_{D368} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-1114c97b68898875 / If upstream objects D_{D368} exist, compose F_{D368}=N(⊕_{g∈D_{D368}} g); otherwise treat F_{D368} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D368；被引用：—
-- [If upstream objects D_{D369} exist, compose F_{D369}=N(⊕_{g∈D_{D369}} g); otherwise treat F_{D369} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-5679d01168477e4e / If upstream objects D_{D369} exist, compose F_{D369}=N(⊕_{g∈D_{D369}} g); otherwise treat F_{D369} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D369；被引用：—
-- [If upstream objects D_{D36} exist, compose F_{D36}=N(⊕_{g∈D_{D36}} g); otherwise treat F_{D36} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-1ff07284653bb6cd / If upstream objects D_{D36} exist, compose F_{D36}=N(⊕_{g∈D_{D36}} g); otherwise treat F_{D36} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D36；被引用：—
-- [If upstream objects D_{D370} exist, compose F_{D370}=N(⊕_{g∈D_{D370}} g); otherwise treat F_{D370} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-b712c3a347882b41 / If upstream objects D_{D370} exist, compose F_{D370}=N(⊕_{g∈D_{D370}} g); otherwise treat F_{D370} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D370；被引用：—
-- [If upstream objects D_{D371} exist, compose F_{D371}=N(⊕_{g∈D_{D371}} g); otherwise treat F_{D371} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-4064373954790317 / If upstream objects D_{D371} exist, compose F_{D371}=N(⊕_{g∈D_{D371}} g); otherwise treat F_{D371} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D371；被引用：—
-- [If upstream objects D_{D372} exist, compose F_{D372}=N(⊕_{g∈D_{D372}} g); otherwise treat F_{D372} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-6a8c69b60ab630b2 / If upstream objects D_{D372} exist, compose F_{D372}=N(⊕_{g∈D_{D372}} g); otherwise treat F_{D372} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D372；被引用：—
-- [If upstream objects D_{D373} exist, compose F_{D373}=N(⊕_{g∈D_{D373}} g); otherwise treat F_{D373} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-f2ff8cfaa0891635 / If upstream objects D_{D373} exist, compose F_{D373}=N(⊕_{g∈D_{D373}} g); otherwise treat F_{D373} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D373；被引用：—
-- [If upstream objects D_{D374} exist, compose F_{D374}=N(⊕_{g∈D_{D374}} g); otherwise treat F_{D374} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-04baabd48e47b882 / If upstream objects D_{D374} exist, compose F_{D374}=N(⊕_{g∈D_{D374}} g); otherwise treat F_{D374} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D374；被引用：—
-- [If upstream objects D_{D375} exist, compose F_{D375}=N(⊕_{g∈D_{D375}} g); otherwise treat F_{D375} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-64e95d02b0a221b4 / If upstream objects D_{D375} exist, compose F_{D375}=N(⊕_{g∈D_{D375}} g); otherwise treat F_{D375} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D375；被引用：—
-- [If upstream objects D_{D376} exist, compose F_{D376}=N(⊕_{g∈D_{D376}} g); otherwise treat F_{D376} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-aa067719615d8ee8 / If upstream objects D_{D376} exist, compose F_{D376}=N(⊕_{g∈D_{D376}} g); otherwise treat F_{D376} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D376；被引用：—
-- [If upstream objects D_{D377} exist, compose F_{D377}=N(⊕_{g∈D_{D377}} g); otherwise treat F_{D377} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-fa9586964c8ebfda / If upstream objects D_{D377} exist, compose F_{D377}=N(⊕_{g∈D_{D377}} g); otherwise treat F_{D377} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D377；被引用：—
-- [If upstream objects D_{D378} exist, compose F_{D378}=N(⊕_{g∈D_{D378}} g); otherwise treat F_{D378} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-23c14de6afad42d8 / If upstream objects D_{D378} exist, compose F_{D378}=N(⊕_{g∈D_{D378}} g); otherwise treat F_{D378} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D378；被引用：—
-- [If upstream objects D_{D379} exist, compose F_{D379}=N(⊕_{g∈D_{D379}} g); otherwise treat F_{D379} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-3094364b23cb1aa6 / If upstream objects D_{D379} exist, compose F_{D379}=N(⊕_{g∈D_{D379}} g); otherwise treat F_{D379} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D379；被引用：—
-- [If upstream objects D_{D37} exist, compose F_{D37}=N(⊕_{g∈D_{D37}} g); otherwise treat F_{D37} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-501f62725223d3ad / If upstream objects D_{D37} exist, compose F_{D37}=N(⊕_{g∈D_{D37}} g); otherwise treat F_{D37} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D37；被引用：—
-- [If upstream objects D_{D380} exist, compose F_{D380}=N(⊕_{g∈D_{D380}} g); otherwise treat F_{D380} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-1395b350a78ec011 / If upstream objects D_{D380} exist, compose F_{D380}=N(⊕_{g∈D_{D380}} g); otherwise treat F_{D380} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D380；被引用：—
-- [If upstream objects D_{D381} exist, compose F_{D381}=N(⊕_{g∈D_{D381}} g); otherwise treat F_{D381} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-92749c5c06f264de / If upstream objects D_{D381} exist, compose F_{D381}=N(⊕_{g∈D_{D381}} g); otherwise treat F_{D381} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D381；被引用：—
-- [If upstream objects D_{D382} exist, compose F_{D382}=N(⊕_{g∈D_{D382}} g); otherwise treat F_{D382} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-6a3936646bfbe896 / If upstream objects D_{D382} exist, compose F_{D382}=N(⊕_{g∈D_{D382}} g); otherwise treat F_{D382} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D382；被引用：—
-- [If upstream objects D_{D383} exist, compose F_{D383}=N(⊕_{g∈D_{D383}} g); otherwise treat F_{D383} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-919924b85a07d346 / If upstream objects D_{D383} exist, compose F_{D383}=N(⊕_{g∈D_{D383}} g); otherwise treat F_{D383} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D383；被引用：—
-- [If upstream objects D_{D384} exist, compose F_{D384}=N(⊕_{g∈D_{D384}} g); otherwise treat F_{D384} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-1a0d525e94e7b981 / If upstream objects D_{D384} exist, compose F_{D384}=N(⊕_{g∈D_{D384}} g); otherwise treat F_{D384} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D384；被引用：—
-- [If upstream objects D_{D385} exist, compose F_{D385}=N(⊕_{g∈D_{D385}} g); otherwise treat F_{D385} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-a9032e0a2f2e575c / If upstream objects D_{D385} exist, compose F_{D385}=N(⊕_{g∈D_{D385}} g); otherwise treat F_{D385} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D385；被引用：—
-- [If upstream objects D_{D386} exist, compose F_{D386}=N(⊕_{g∈D_{D386}} g); otherwise treat F_{D386} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-e9574c34285db876 / If upstream objects D_{D386} exist, compose F_{D386}=N(⊕_{g∈D_{D386}} g); otherwise treat F_{D386} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D386；被引用：—
-- [If upstream objects D_{D387} exist, compose F_{D387}=N(⊕_{g∈D_{D387}} g); otherwise treat F_{D387} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-ed9980b33c8aaf66 / If upstream objects D_{D387} exist, compose F_{D387}=N(⊕_{g∈D_{D387}} g); otherwise treat F_{D387} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D387；被引用：—
-- [If upstream objects D_{D388} exist, compose F_{D388}=N(⊕_{g∈D_{D388}} g); otherwise treat F_{D388} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-a0096b8ed83c1fa2 / If upstream objects D_{D388} exist, compose F_{D388}=N(⊕_{g∈D_{D388}} g); otherwise treat F_{D388} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D388；被引用：—
-- [If upstream objects D_{D389} exist, compose F_{D389}=N(⊕_{g∈D_{D389}} g); otherwise treat F_{D389} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-f623a5061f9a3b0b / If upstream objects D_{D389} exist, compose F_{D389}=N(⊕_{g∈D_{D389}} g); otherwise treat F_{D389} as an axiom seed.
+  - 可搜索名称：NFC-f389c788217bc64a / M6的δ_c对应配分函数中耦合-容斥相变的临界场强h_c。h_c∝T_c∝ḡ·√n→δ_c∝1/(ḡ·√n)——与D389完全一致。δ_c就是统计力学相变的临界场强。
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D389；被引用：—
-- [If upstream objects D_{D38} exist, compose F_{D38}=N(⊕_{g∈D_{D38}} g); otherwise treat F_{D38} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+- [M6的δ_c对应配分函数中耦合-容斥相变的临界场强h_c。h_c∝T_c∝ḡ·√n→δ_c∝1/(ḡ·√n)——与D389完全一致。δ_c就是统计力学相变的临界场强。 **扩展注释 / Extended Annotation**](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-4d892ea82ee81af5 / M6的δ_c对应配分函数中耦合-容斥相变的临界场强h_c。h_c∝T_c∝ḡ·√n→δ_c∝1/(ḡ·√n)——与D389完全一致。δ_c就是统计力学相变的临界场强。 **扩展注释 / Extended Annotation**
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D389；被引用：—
+- [M6的大偏离使阻尼也非线性：γ_eff = γ₀·(1-δ²/δ_c²)。δ→δ_c时γ_eff→0→振荡加剧→偏离更大→正反馈。δ_c是维度回复的"不归点"——与D295 p_max不可逆点同构。 **扩展注释 / Extended An](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-473940ae3454ebb1 / M6的大偏离使阻尼也非线性：γ_eff = γ₀·(1-δ²/δ_c²)。δ→δ_c时γ_eff→0→振荡加剧→偏离更大→正反馈。δ_c是维度回复的"不归点"——与D295 p_max不可逆点同构。 **扩展注释 / Extended An
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D295；被引用：—
+- [M7的n*∝β/(p̄·Σαᵢ)依赖干预力度β，n_c由系统内在参数决定。β够大时n*<n_c——强干预使大系统在容斥主导不可逆之前就恢复。 **扩展注释 / Extended Annotation**](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-b00e5b19679f9b33 / M7的n*∝β/(p̄·Σαᵢ)依赖干预力度β，n_c由系统内在参数决定。β够大时n*<n_c——强干预使大系统在容斥主导不可逆之前就恢复。 **扩展注释 / Extended Annotation**
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：—；被引用：—
+- [M7的容斥加速度a_excl∝n²·σ²·ḡ在不同域的标度：物理n小σ小→a_excl小，生物n大σ中→a_excl中，社会n大σ大→a_excl大。a_excl(社会)/a_excl(物理)∝(n_社会/n_物理)²·(σ_社会/σ_物理](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-6ec0627dcf28a769 / M7的容斥加速度a_excl∝n²·σ²·ḡ在不同域的标度：物理n小σ小→a_excl小，生物n大σ中→a_excl中，社会n大σ大→a_excl大。a_excl(社会)/a_excl(物理)∝(n_社会/n_物理)²·(σ_社会/σ_物理
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：—；被引用：—
+- [M8 努力—结果—自我价值解耦**：材料中「努力羞耻/紧绷美学」（B6/A11/A12）提出「努力是策略非人格证明」的额外层。该层与 D597（量化指标替代真实价值）+ D598（系统性钝化）高度相邻，是否构成不可约原语需跨评价文化外部材料](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-823aaea213ef0c2e / If upstream objects D_{D38} exist, compose F_{D38}=N(⊕_{g∈D_{D38}} g); otherwise treat F_{D38} as an axiom seed.
+  - 可搜索名称：NFC-5abf841692a47f61 / M8 努力—结果—自我价值解耦**：材料中「努力羞耻/紧绷美学」（B6/A11/A12）提出「努力是策略非人格证明」的额外层。该层与 D597（量化指标替代真实价值）+ D598（系统性钝化）高度相邻，是否构成不可约原语需跨评价文化外部材料
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D38；被引用：—
-- [If upstream objects D_{D390} exist, compose F_{D390}=N(⊕_{g∈D_{D390}} g); otherwise treat F_{D390} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 依赖：A11, A12, D597, D598；被引用：—
+- [M8的(d_opt,σ_opt)平衡点在σ σ_opt时不稳定——过分散的系统无法自发回到最优配置。σ>σ_opt的恢复需要外部干预（\[D306\](docs/zh/functions/items/D306.md)）。社](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-e2e33e3a8182216f / M8的(d_opt,σ_opt)平衡点在σ σ_opt时不稳定——过分散的系统无法自发回到最优配置。σ>σ_opt的恢复需要外部干预（\[D306\](docs/zh/functions/items/D306.md)）。社
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D306；被引用：—
+- [M8的d_opt漂移时σ_opt跟着动：d_opt右移（学习升级）时σ_opt先升后降——初期新门控面增加分散度，后期门控面成熟降低分散度。σ_opt响应滞后于d_opt，调整时间τ_σ∝n/ḡ。n大ḡ低的系统σ调整慢——社会系统的"最优配](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-b0bb30400c455a81 / M8的d_opt漂移时σ_opt跟着动：d_opt右移（学习升级）时σ_opt先升后降——初期新门控面增加分散度，后期门控面成熟降低分散度。σ_opt响应滞后于d_opt，调整时间τ_σ∝n/ḡ。n大ḡ低的系统σ调整慢——社会系统的"最优配
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：—；被引用：—
+- [M8的σ>σ_opt时系统进入"维度饥渴"状态——需要更多维度补偿分散度但d不能无限增长。维度饥渴的结局：要么外部增加d（学习/改革），要么内部崩溃（Φ持续增长）。社会分化过度需要更多元化但做不到→僵局。 **扩展注释 / Extended](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-9ce48f30a05f9ec0 / M8的σ>σ_opt时系统进入"维度饥渴"状态——需要更多维度补偿分散度但d不能无限增长。维度饥渴的结局：要么外部增加d（学习/改革），要么内部崩溃（Φ持续增长）。社会分化过度需要更多元化但做不到→僵局。 **扩展注释 / Extended
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：—；被引用：—
+- [M9三阶段各有健康指标：阶段1=平坦度⁻¹，阶段2=C_buffer，阶段3=1/ΔΦ。统一H=min(三指标)→最小值决定最弱环节。H=0时崩溃。可用于实时监测和预警。 **扩展注释 / Extended Annotation**](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-159e9c1e3b841504 / M9三阶段各有健康指标：阶段1=平坦度⁻¹，阶段2=C_buffer，阶段3=1/ΔΦ。统一H=min(三指标)→最小值决定最弱环节。H=0时崩溃。可用于实时监测和预警。 **扩展注释 / Extended Annotation**
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：—；被引用：—
+- [M9三阶段对应相变分类：阶段1→2≈二级相变（连续过渡→还有救），阶段2→3≈一级相变（突变→没救）。新相变分类：二级="还能缓冲"，一级="缓冲耗尽"。干预在二级相变区有效，一级相变区无效。 **扩展注释 / Extended Annot](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-5e11c054e0a447f5 / M9三阶段对应相变分类：阶段1→2≈二级相变（连续过渡→还有救），阶段2→3≈一级相变（突变→没救）。新相变分类：二级="还能缓冲"，一级="缓冲耗尽"。干预在二级相变区有效，一级相变区无效。 **扩展注释 / Extended Annot
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：—；被引用：—
+- [M9的g_eff_macro = (1-R_irreversible)·g_eff。R→1时g_eff_macro→0但>0。与D311微观僵尸态完全同构——宏观僵尸态是微观僵尸态在n→∞极限下的连续版本。 **扩展注释 / Extende](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-96fcbcc5f877dc4f / M9的g_eff_macro = (1-R_irreversible)·g_eff。R→1时g_eff_macro→0但>0。与D311微观僵尸态完全同构——宏观僵尸态是微观僵尸态在n→∞极限下的连续版本。 **扩展注释 / Extende
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D311；被引用：—
+- [M9的实际不可逆=理论可逆但重建时间超过剩余寿命：τ_rebuild > T_remaining。条件：n²·p̄/β > 1/(Σαᵢ)——n大p̄高β低时几乎必然实际不可逆。大系统高负担弱改革的组合=实际不可逆。 **扩展注释 / Ex](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-21b823431af0e853 / M9的实际不可逆=理论可逆但重建时间超过剩余寿命：τ_rebuild > T_remaining。条件：n²·p̄/β > 1/(Σαᵢ)——n大p̄高β低时几乎必然实际不可逆。大系统高负担弱改革的组合=实际不可逆。 **扩展注释 / Ex
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：—；被引用：—
+- [M9的阶段过渡存在滞后：从阶段2退回阶段1的条件（缓冲恢复）比从阶段1进入阶段2的条件（缓冲消耗）更严格。滞后量Δh∝\|d³Φ/dμ³\|——三阶导数越大滞后越大。物理相变滞后小（d³Φ/dμ³小），社会系统滞后大（路径依赖使d³Φ/dμ³大](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-af1e795556ab6c15 / M9的阶段过渡存在滞后：从阶段2退回阶段1的条件（缓冲恢复）比从阶段1进入阶段2的条件（缓冲消耗）更严格。滞后量Δh∝\|d³Φ/dμ³\|——三阶导数越大滞后越大。物理相变滞后小（d³Φ/dμ³小），社会系统滞后大（路径依赖使d³Φ/dμ³大
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：—；被引用：—
+- [M9的阶段过渡锐度由Φ高阶导数决定：阶段1→2∝\|d³Φ/dμ³\|，阶段2→3∝\|d²g_eff/dt²\|。高阶导数大→突变，小→渐变。物理相变→突变，生物衰老→渐变。 **扩展注释 / Extended Annotation**](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-94a4dd93974186a0 / M9的阶段过渡锐度由Φ高阶导数决定：阶段1→2∝\|d³Φ/dμ³\|，阶段2→3∝\|d²g_eff/dt²\|。高阶导数大→突变，小→渐变。物理相变→突变，生物衰老→渐变。 **扩展注释 / Extended Annotation**
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：—；被引用：—
+- [Macfarlane et al. exact arXiv v1/ICLR paper, all-26-page visual review and complete LaTeX/source audit: finite I/O speci](../../../data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-f2541e0fd0664f91 / Macfarlane et al. exact arXiv v1/ICLR paper, all-26-page visual review and complete LaTeX/source audit: finite I/O speci
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl`
+  - 依赖：—；被引用：—
+- [Machine artifacts: `formal/lean/Foundation.lean`, `formal/z3/T2-zero-factor.smt2`, and `tools/foundation/verify_core_cla](../../../reports/foundation-architecture/core-proof-and-countermodel-report-20260713.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-e07b13e88c620400 / If upstream objects D_{D390} exist, compose F_{D390}=N(⊕_{g∈D_{D390}} g); otherwise treat F_{D390} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D390；被引用：—
-- [If upstream objects D_{D391} exist, compose F_{D391}=N(⊕_{g∈D_{D391}} g); otherwise treat F_{D391} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 可搜索名称：NFC-e50a9c97e00239a8 / Machine artifacts: `formal/lean/Foundation.lean`, `formal/z3/T2-zero-factor.smt2`, and `tools/foundation/verify_core_cla
+  - 来源：`reports/foundation-architecture/core-proof-and-countermodel-report-20260713.md`
+  - 依赖：T2；被引用：—
+- [MACHINE_CHECKED_PROOF is not empirical truth.](../../../llms.txt)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-d0f26feb7cf4a5d2 / MACHINE_CHECKED_PROOF is not empirical truth.
+  - 来源：`llms.txt`
+  - 依赖：—；被引用：—
+- [Map delta: 41 nodes and 37 edges gain derived lifecycle/relation-domain metadata; nodes added: 0, nodes removed: 0, edge](../../../reports/operations/121Q32-typed-change-propagation-and-self-updating-system-map-audit.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-a28de704bcfbed8e / If upstream objects D_{D391} exist, compose F_{D391}=N(⊕_{g∈D_{D391}} g); otherwise treat F_{D391} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D391；被引用：—
-- [If upstream objects D_{D392} exist, compose F_{D392}=N(⊕_{g∈D_{D392}} g); otherwise treat F_{D392} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 可搜索名称：NFC-a3c29a6d83f1f59e / Map delta: 41 nodes and 37 edges gain derived lifecycle/relation-domain metadata; nodes added: 0, nodes removed: 0, edge
+  - 来源：`reports/operations/121Q32-typed-change-propagation-and-self-updating-system-map-audit.md`
+  - 依赖：—；被引用：—
+- [Map position is not proof. Visual proximity is not isomorphism. Evolution stage is not a natural law. Dependency is not](../../../reports/atlas/121Q14-dynamic-atlas.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-0370d31da3d1052e / If upstream objects D_{D392} exist, compose F_{D392}=N(⊕_{g∈D_{D392}} g); otherwise treat F_{D392} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D392；被引用：—
-- [If upstream objects D_{D393} exist, compose F_{D393}=N(⊕_{g∈D_{D393}} g); otherwise treat F_{D393} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 可搜索名称：NFC-19aa443580ac847e / Map position is not proof. Visual proximity is not isomorphism. Evolution stage is not a natural law. Dependency is not
+  - 来源：`reports/atlas/121Q14-dynamic-atlas.md`
+  - 依赖：—；被引用：—
+- [Map position is not proof. Visual proximity is not isomorphism. Evolution stage is not a natural law. Dependency is not](../../../docs/architecture/ignition-atlas.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-7b285a316163aeb4 / Map position is not proof. Visual proximity is not isomorphism. Evolution stage is not a natural law. Dependency is not
+  - 来源：`docs/architecture/ignition-atlas.md`
+  - 依赖：—；被引用：—
+- [Map position, visual proximity, evolution stage, dependency, and sourcing decision are navigation judgments, not proof,](../../../llms.txt)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-53823018a3edfe78 / Map position, visual proximity, evolution stage, dependency, and sourcing decision are navigation judgments, not proof,
+  - 来源：`llms.txt`
+  - 依赖：—；被引用：—
+- [map/network proof overclaims are rejected;](../../../reports/architecture/121Q21R-multiscale-causal-fabric-validation.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-9faf99fc87e74310 / If upstream objects D_{D393} exist, compose F_{D393}=N(⊕_{g∈D_{D393}} g); otherwise treat F_{D393} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D393；被引用：—
-- [If upstream objects D_{D394} exist, compose F_{D394}=N(⊕_{g∈D_{D394}} g); otherwise treat F_{D394} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 可搜索名称：NFC-dd867eb3ef40c8f5 / map/network proof overclaims are rejected;
+  - 来源：`reports/architecture/121Q21R-multiscale-causal-fabric-validation.md`
+  - 依赖：—；被引用：—
+- [Math proof backend report](../../ASSET-CARDS.md#asset-hr-7bd95d9ed567d84b)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：Math proof backend report / math-proof-backend-report-20260712
+  - 来源：`reports/foundation-architecture/math-proof-backend-report-20260712.md`
+  - 依赖：—；被引用：—
+- [Math proof backend report](../../../reports/foundation-architecture/math-proof-backend-report-20260712.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-b714f20f99d06146 / If upstream objects D_{D394} exist, compose F_{D394}=N(⊕_{g∈D_{D394}} g); otherwise treat F_{D394} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D394；被引用：—
-- [If upstream objects D_{D395} exist, compose F_{D395}=N(⊕_{g∈D_{D395}} g); otherwise treat F_{D395} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 可搜索名称：NFC-879a7065944be047 / Math proof backend report
+  - 来源：`reports/foundation-architecture/math-proof-backend-report-20260712.md`
+  - 依赖：—；被引用：—
+- [Mathematical layer and encoder/decoder composition is strong; runtime selection among artifacts is not addressed.](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-ede25e78bd458d80 / Mathematical layer and encoder/decoder composition is strong; runtime selection among artifacts is not addressed.
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [Mathematics and logic constrain each other. Formula, logical validity, proof, evidence and workflow completion are diffe](../../../llms.txt)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-c1693750795f0ba1 / Mathematics and logic constrain each other. Formula, logical validity, proof, evidence and workflow completion are diffe
+  - 来源：`llms.txt`
+  - 依赖：—；被引用：—
+- [MAX_REQUIRED increase (+10):** Items with proof_status=REQUIRES_HIGHEST_MODEL_VERIFICATION or isomorphism/equivalence in](../../../reports/foundation-architecture/083-escalation-routing-report.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-70864801ba0e05c0 / If upstream objects D_{D395} exist, compose F_{D395}=N(⊕_{g∈D_{D395}} g); otherwise treat F_{D395} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D395；被引用：—
-- [If upstream objects D_{D396} exist, compose F_{D396}=N(⊕_{g∈D_{D396}} g); otherwise treat F_{D396} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 可搜索名称：NFC-55b65ffb69b11801 / MAX_REQUIRED increase (+10):** Items with proof_status=REQUIRES_HIGHEST_MODEL_VERIFICATION or isomorphism/equivalence in
+  - 来源：`reports/foundation-architecture/083-escalation-routing-report.md`
+  - 依赖：—；被引用：—
+- [MCF、PSD 和 ARN 不是新的真值层，请不要把表示能力写成事实证明。](../../../docs/ai-assistant-usage-reference.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-14ae46e37cb052af / MCF、PSD 和 ARN 不是新的真值层，请不要把表示能力写成事实证明。
+  - 来源：`docs/ai-assistant-usage-reference.md`
+  - 依赖：—；被引用：—
+- [Measures, noise, Bayesian estimation, risks, and sample complexity supply statistical semantics, but not a general calib](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-8d4a7e9a586f8964 / Measures, noise, Bayesian estimation, risks, and sample complexity supply statistical semantics, but not a general calib
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [MetaGPT EMNLP full-text and proof audit: norm-weighted static task-vector composition supports bounded representation, c](../../../data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-a1d84ed2a4d12786 / MetaGPT EMNLP full-text and proof audit: norm-weighted static task-vector composition supports bounded representation, c
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl`
+  - 依赖：—；被引用：—
+- [Method 1.1.0 and map 0.1.0 remain Current. This candidate adds no L7, truth layer, causal proof, completeness proof or b](../../../reports/operations/121Q32-typed-change-propagation-and-self-updating-system-map-audit.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-f581233ca2eee9fc / If upstream objects D_{D396} exist, compose F_{D396}=N(⊕_{g∈D_{D396}} g); otherwise treat F_{D396} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D396；被引用：—
-- [If upstream objects D_{D397} exist, compose F_{D397}=N(⊕_{g∈D_{D397}} g); otherwise treat F_{D397} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 可搜索名称：NFC-22c58aaea5af9ad7 / Method 1.1.0 and map 0.1.0 remain Current. This candidate adds no L7, truth layer, causal proof, completeness proof or b
+  - 来源：`reports/operations/121Q32-typed-change-propagation-and-self-updating-system-map-audit.md`
+  - 依赖：—；被引用：—
+- [Method 1.2.0 remains Historical and auditable; method 1.3.0 is Current. Critical gates may always force full rebuild. Ma](../../../docs/architecture/incremental-execution.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-3cf9ff5e48b99d88 / Method 1.2.0 remains Historical and auditable; method 1.3.0 is Current. Critical gates may always force full rebuild. Ma
+  - 来源：`docs/architecture/incremental-execution.md`
+  - 依赖：—；被引用：—
+- [Method 1.2.0 was proposed by 121Q32 and became Current after independent exact-HEAD acceptance (R4), merge and closeout](../../../ITERATION.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-732cd8a33f3105ba / Method 1.2.0 was proposed by 121Q32 and became Current after independent exact-HEAD acceptance (R4), merge and closeout
+  - 来源：`ITERATION.md`
+  - 依赖：—；被引用：—
+- [MF-0000 入口文件 `已迁移的历史函数来源/0001-Ψ₀元函数完整数学定义.md` **追加**了一节「内部子算子（Section 0 自举元函数结构件）」，列出 MF-0001~0005 并说明与 D141 的层级差异。未改动其原有正文。](../../../outputs/audit/mf-0001-0005-integration-audit-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-5c71e436c1079b65 / MF-0000 入口文件 `已迁移的历史函数来源/0001-Ψ₀元函数完整数学定义.md` **追加**了一节「内部子算子（Section 0 自举元函数结构件）」，列出 MF-0001~0005 并说明与 D141 的层级差异。未改动其原有正文。
+  - 来源：`outputs/audit/mf-0001-0005-integration-audit-20260708.md`
+  - 依赖：D141；被引用：—
+- [MF-0001~0005 Codespace 救援复核](../../ASSET-CARDS.md#asset-hr-ea120e5d0d0fa5ff)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：MF-0001~0005 Codespace 救援复核 / mf-0001-0005-rescue-review-20260708
+  - 来源：`outputs/audit/mf-0001-0005-rescue-review-20260708.md`
+  - 依赖：—；被引用：—
+- [MF-0001~0005 补入审计记录（2026-07-08）](../../ASSET-CARDS.md#asset-hr-b9ed64291673acbc)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：MF-0001~0005 补入审计记录（2026-07-08） / mf-0001-0005-integration-audit-20260708
+  - 来源：`outputs/audit/mf-0001-0005-integration-audit-20260708.md`
+  - 依赖：—；被引用：—
+- [MF-0003,正反互斥判定器,已迁移的历史函数来源/0000-MF-0003-正反互斥判定器.md,formal_existing,MF,formal_table,OPERATOR,MULTIPLE_CONFLICTING_SOURCES,2026-07-11,0000-MF-0003-正反互斥判定器.md,c71188646d476623b3181013cf01625270f6f1be,,,,repo_formalization,`E(x)=1 ⇔ ¬(J⁺(x)=1 ∧ J⁻(](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-ACF9B08B34FD7156 / MF-0003,正反互斥判定器,已迁移的历史函数来源/0000-MF-0003-正反互斥判定器.md,formal_existing,MF,formal_table,OPERATOR,MULTIPLE_CONFLICTING_SOURCES,2026-07-11,0000-MF-0003-正反互斥判定器.md,c71188646d476623b3181013cf01625270f6f1be,,,,repo_formalization,`E(x)=1 ⇔ ¬(J⁺(x)=1 ∧ J⁻( / IMPLICIT-ACF9B08B34FD7156
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：—；被引用：—
+- [Missing evidence is never treated as `PASS`.](../../../inputs/020/formal-protocol-promotion-standard.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-ff0d9668e70344c9 / Missing evidence is never treated as `PASS`.
+  - 来源：`inputs/020/formal-protocol-promotion-standard.md`
+  - 依赖：—；被引用：—
+- [MoE output-space gating and expert selection are not a weight-space composition algebra; the survey defines no parameter](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-aecf94840e10779f / MoE output-space gating and expert selection are not a weight-space composition algebra; the survey defines no parameter
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [MULTI_CASE is not a theorem.](../../../llms.txt)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-e782ee07f42122cd / MULTI_CASE is not a theorem.
+  - 来源：`llms.txt`
+  - 依赖：—；被引用：—
+- [Multiple model sizes and task tables are reported, but proof defects, missing code, undefined normalized metric, absent](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-7c4ee233f4055587 / Multiple model sizes and task tables are reported, but proof defects, missing code, undefined normalized metric, absent
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [MUSE-Autoskill treats skills as structured, long-lived assets governed by a unified creation, memory, management, evalua](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-10d141da100e08e6 / MUSE-Autoskill treats skills as structured, long-lived assets governed by a unified creation, memory, management, evalua
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [Must use FORMAL_SEMANTIC_EQUIVALENCE with proof, or specify lower level](../../../data/external-research/120-function-paradigm-atlas/120-forbidden-wording.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-119118db9bb7bef0 / Must use FORMAL_SEMANTIC_EQUIVALENCE with proof, or specify lower level
+  - 来源：`data/external-research/120-function-paradigm-atlas/120-forbidden-wording.jsonl`
+  - 依赖：—；被引用：—
+- [M≅∪_i M_i，每个M_i配备8种标准几何之一，Perelman用Ricci流证明](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-8b90128be0f92695 / If upstream objects D_{D397} exist, compose F_{D397}=N(⊕_{g∈D_{D397}} g); otherwise treat F_{D397} as an axiom seed.
+  - 可搜索名称：NFC-d24622ba77e3cab8 / M≅∪_i M_i，每个M_i配备8种标准几何之一，Perelman用Ricci流证明
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D397；被引用：—
-- [If upstream objects D_{D398} exist, compose F_{D398}=N(⊕_{g∈D_{D398}} g); otherwise treat F_{D398} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 依赖：—；被引用：—
+- [M≅∪_i M_i，每个M_i配备8种标准几何之一，Perelman用Ricci流证明 **扩展注释 / Extended Annotation**](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-27ee2542eb3c4d88 / M≅∪_i M_i，每个M_i配备8种标准几何之一，Perelman用Ricci流证明 **扩展注释 / Extended Annotation**
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：—；被引用：—
+- [n=2已证明，n≥3部分收敛，极小点存在性0.8](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-7bf2eccf003b1163 / If upstream objects D_{D398} exist, compose F_{D398}=N(⊕_{g∈D_{D398}} g); otherwise treat F_{D398} as an axiom seed.
+  - 可搜索名称：NFC-3b92140e148e7f81 / n=2已证明，n≥3部分收敛，极小点存在性0.8
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D398；被引用：—
-- [If upstream objects D_{D399} exist, compose F_{D399}=N(⊕_{g∈D_{D399}} g); otherwise treat F_{D399} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 依赖：—；被引用：—
+- [Natural-language task descriptions, examples, style images and architecture/LoRA constraints act as conditioning fragmen](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-bc8997d246c959d7 / Natural-language task descriptions, examples, style images and architecture/LoRA constraints act as conditioning fragmen
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [NC-001 职称硬门槛裹挟青年教师回填审计](../../ASSET-CARDS.md#asset-hr-728439cfb210ca75)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：NC-001 职称硬门槛裹挟青年教师回填审计 / nc-001-title-barrier-backfill-audit-20260708
+  - 来源：`outputs/audit/nc-001-title-barrier-backfill-audit-20260708.md`
+  - 依赖：—；被引用：—
+- [NC-002 表演化假课与量化指标消解温度回填审计](../../ASSET-CARDS.md#asset-hr-29d94a1a94170774)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：NC-002 表演化假课与量化指标消解温度回填审计 / nc-002-performed-fake-class-backfill-audit-20260708
+  - 来源：`outputs/audit/nc-002-performed-fake-class-backfill-audit-20260708.md`
+  - 依赖：—；被引用：—
+- [Network representation is not ontology.](../../../docs/architecture/adaptive-relational-network.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-96ceaa198ff2738d / Network representation is not ontology.
+  - 来源：`docs/architecture/adaptive-relational-network.md`
+  - 依赖：—；被引用：—
+- [NetworkDiff is representation diff only, not proof that reality changed.](../../../data/architecture/adaptive-relational-network/real-history/network-diff.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-fb0faad5eb64198f / NetworkDiff is representation diff only, not proof that reality changed.
+  - 来源：`data/architecture/adaptive-relational-network/real-history/network-diff.json`
+  - 依赖：—；被引用：—
+- [Neural Operator full-text review: Banach-space operator specification, finite parameter artifacts, discretization-invari](../../../data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-e47d4d1a201eec02 / Neural Operator full-text review: Banach-space operator specification, finite parameter artifacts, discretization-invari
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl`
+  - 依赖：—；被引用：—
+- [Never write an unmerged candidate into the formal function table or case table.](../../../GET-BRAIN-LATEST.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-9eedc8be5e47195d / Never write an unmerged candidate into the formal function table or case table.
+  - 来源：`GET-BRAIN-LATEST.md`
+  - 依赖：—；被引用：—
+- [NF-001 绩效绑定裹挟**（函数，清晰机制链，挂 EXIT 族）](../../../outputs/audit/teacher-competition-backfill-review-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-631ac2f299777459 / NF-001 绩效绑定裹挟**（函数，清晰机制链，挂 EXIT 族）
+  - 来源：`outputs/audit/teacher-competition-backfill-review-20260708.md`
+  - 依赖：—；被引用：—
+- [NF-001 绩效绑定裹挟已以 **D595** 入正式函数表，复核建议的「对应」关系已成立。](../../../outputs/audit/nc-001-title-barrier-backfill-audit-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-16fd4960fb65a6ca / NF-001 绩效绑定裹挟已以 **D595** 入正式函数表，复核建议的「对应」关系已成立。
+  - 来源：`outputs/audit/nc-001-title-barrier-backfill-audit-20260708.md`
+  - 依赖：D595；被引用：—
+- [NF-001：函数表对「绩效绑定/职称绑定/可拒绝性/绑定强度」精确术语 **0 命中**（退出权族 77 文件为上游相关，无独立等价机制）→ 允许新增](../../../outputs/audit/teacher-competition-small-batch-backfill-audit-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-0d6511158ac9299a / NF-001：函数表对「绩效绑定/职称绑定/可拒绝性/绑定强度」精确术语 **0 命中**（退出权族 77 文件为上游相关，无独立等价机制）→ 允许新增
+  - 来源：`outputs/audit/teacher-competition-small-batch-backfill-audit-20260708.md`
+  - 依赖：—；被引用：—
+- [NF-002 经与 D244 及全表指标化/形式主义相关函数边界确认后，判定为**真新增机制**，已以 D597 入表并完成最小索引追加。原「需与 D244 指标化族查重」的前提因 D244 实为自主意识涌现函数而不成立，但全量查重反而更强](../../../outputs/audit/nf-002-quantified-metric-backfill-audit-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-0914f98183c043d6 / NF-002 经与 D244 及全表指标化/形式主义相关函数边界确认后，判定为**真新增机制**，已以 D597 入表并完成最小索引追加。原「需与 D244 指标化族查重」的前提因 D244 实为自主意识涌现函数而不成立，但全量查重反而更强
+  - 来源：`outputs/audit/nf-002-quantified-metric-backfill-audit-20260708.md`
+  - 依赖：D244, D597；被引用：—
+- [NF-002 量化指标替代真实价值回填审计](../../ASSET-CARDS.md#asset-hr-0e7b7e2d16e773be)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：NF-002 量化指标替代真实价值回填审计 / nf-002-quantified-metric-backfill-audit-20260708
+  - 来源：`outputs/audit/nf-002-quantified-metric-backfill-audit-20260708.md`
+  - 依赖：—；被引用：—
+- [NF-004 系统性钝化回填审计](../../ASSET-CARDS.md#asset-hr-0dd59e3bbd5eeb55)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：NF-004 系统性钝化回填审计 / nf-004-systemic-numbing-backfill-audit-20260708
+  - 来源：`outputs/audit/nf-004-systemic-numbing-backfill-audit-20260708.md`
+  - 依赖：—；被引用：—
+- [NF-004 经与 D364/D423 及全表不可逆相关函数边界确认后，判定为**真新增社会心理群体结构**，已以 D598 入表并完成最小索引追加；C-0807 关联标注同步闭环。后续建议做 D598 索引可见性验证。](../../../outputs/audit/nf-004-systemic-numbing-backfill-audit-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-20999fdcbaca3d53 / NF-004 经与 D364/D423 及全表不可逆相关函数边界确认后，判定为**真新增社会心理群体结构**，已以 D598 入表并完成最小索引追加；C-0807 关联标注同步闭环。后续建议做 D598 索引可见性验证。
+  - 来源：`outputs/audit/nf-004-systemic-numbing-backfill-audit-20260708.md`
+  - 依赖：D364, D423, D598；被引用：—
+- [NF-X3 与 D312 的本质区别：D312 是数学正反馈噪声放大（δp_max·K^k），NF-X3 是评价系统内数量指标忽视不确定性导致的低质累积；机制不同且跨域证据弱，故暂缓。](../../../outputs/audit/cross-domain-candidate-function-review-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-f66f0c7f9681e1a6 / NF-X3 与 D312 的本质区别：D312 是数学正反馈噪声放大（δp_max·K^k），NF-X3 是评价系统内数量指标忽视不确定性导致的低质累积；机制不同且跨域证据弱，故暂缓。
+  - 来源：`outputs/audit/cross-domain-candidate-function-review-20260708.md`
+  - 依赖：D312；被引用：—
+- [No cross-representation equivalence proofs](../../../reports/external-research/121Q4-final-report.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-aefd206d9eb7c4d9 / If upstream objects D_{D399} exist, compose F_{D399}=N(⊕_{g∈D_{D399}} g); otherwise treat F_{D399} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D399；被引用：—
-- [If upstream objects D_{D39} exist, compose F_{D39}=N(⊕_{g∈D_{D39}} g); otherwise treat F_{D39} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 可搜索名称：NFC-af17761ef2c552f2 / No cross-representation equivalence proofs
+  - 来源：`reports/external-research/121Q4-final-report.md`
+  - 依赖：—；被引用：—
+- [No expert capability registry, compatible base/version matrix, immutable release or lifecycle governance is defined.](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-e8014657a11561e6 / No expert capability registry, compatible base/version matrix, immutable release or lifecycle governance is defined.
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [No formal equivalence checking between different operator approximations. Only empirical error metrics (relative L2 erro](../../../data/external-research/121-fulltext-resolver/121q2/acceptance/S120-030.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-46909934f90ad1a1 / No formal equivalence checking between different operator approximations. Only empirical error metrics (relative L2 erro
+  - 来源：`data/external-research/121-fulltext-resolver/121q2/acceptance/S120-030.json`
+  - 依赖：—；被引用：—
+- [No formal verification of solution correctness. Empirical error metrics only (relative L2 error, spectral analysis). Sol](../../../data/external-research/121-fulltext-resolver/121q2/acceptance/S120-030.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-86848f08e924303a / No formal verification of solution correctness. Empirical error metrics only (relative L2 error, spectral analysis). Sol
+  - 来源：`data/external-research/121-fulltext-resolver/121q2/acceptance/S120-030.json`
+  - 依赖：—；被引用：—
+- [No formal verification. Adaptation quality measured empirically.](../../../data/external-research/121-fulltext-resolver/121q2/acceptance/S120-035.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-5160d73cd47227d7 / No formal verification. Adaptation quality measured empirically.
+  - 来源：`data/external-research/121-fulltext-resolver/121q2/acceptance/S120-035.json`
+  - 依赖：—；被引用：—
+- [No formal verification. Correctness only checked via test cases. Execution traces provide debugging information but not](../../../data/external-research/121-fulltext-resolver/121q2/acceptance/S120-021.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-fa61529258a33860 / No formal verification. Correctness only checked via test cases. Execution traces provide debugging information but not
+  - 来源：`data/external-research/121-fulltext-resolver/121q2/acceptance/S120-021.json`
+  - 依赖：—；被引用：—
+- [No formal verification. Empirical accuracy only.](../../../data/external-research/121-fulltext-resolver/121q2/acceptance/S120-036.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-688fe2d7191d2fee / No formal verification. Empirical accuracy only.
+  - 来源：`data/external-research/121-fulltext-resolver/121q2/acceptance/S120-036.json`
+  - 依赖：—；被引用：—
+- [No formal verification. Program correctness is only checked empirically via test cases. No proof of correctness, no edge](../../../data/external-research/121-fulltext-resolver/121q2/acceptance/S120-018.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-ad3864e4864504e5 / No formal verification. Program correctness is only checked empirically via test cases. No proof of correctness, no edge
+  - 来源：`data/external-research/121-fulltext-resolver/121q2/acceptance/S120-018.json`
+  - 依赖：—；被引用：—
+- [No immutable artifact identity or lifecycle governance is defined.](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-7d8d4445a0977636 / No immutable artifact identity or lifecycle governance is defined.
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [No machine-readable function/memory capability registry, immutable release, compatibility matrix, monitoring or lifecycl](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-9123baf842aad743 / No machine-readable function/memory capability registry, immutable release, compatibility matrix, monitoring or lifecycl
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [No probability calibration record, rare-event tail record, or rule that high probability is not causal proof.](../../../data/architecture/probabilistic-system-dynamics/gap-ledger.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-608ddd8b619e6387 / No probability calibration record, rare-event tail record, or rule that high probability is not causal proof.
+  - 来源：`data/architecture/probabilistic-system-dynamics/gap-ledger.json`
+  - 依赖：—；被引用：—
+- [No source provides formal algebra guaranteeing composed weights correspond to composed functions. Empirical only.](../../../data/external-research/121-fulltext-resolver/121q3/gaps/GAP-016.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-0597ce7dafe3f32d / No source provides formal algebra guaranteeing composed weights correspond to composed functions. Empirical only.
+  - 来源：`data/external-research/121-fulltext-resolver/121q3/gaps/GAP-016.json`
+  - 依赖：—；被引用：—
+- [No source provides formal precondition/postcondition language for neural-weight functions. Refinement types apply to sym](../../../data/external-research/121-fulltext-resolver/121q3/gaps/GAP-015.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a50b185b1cdcee46 / No source provides formal precondition/postcondition language for neural-weight functions. Refinement types apply to sym
+  - 来源：`data/external-research/121-fulltext-resolver/121q3/gaps/GAP-015.json`
+  - 依赖：—；被引用：—
+- [No validation mechanism beyond training/validation loss. No formal checking of adaptation quality.](../../../data/external-research/121-fulltext-resolver/121q2/acceptance/S120-035.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-501dae02b520ea17 / No validation mechanism beyond training/validation loss. No formal checking of adaptation quality.
+  - 来源：`data/external-research/121-fulltext-resolver/121q2/acceptance/S120-035.json`
+  - 依赖：—；被引用：—
+- [No versioned DSL/model/program registry or lifecycle governance is defined, and no implementation/data artifacts are rel](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-685ac93f82009355 / No versioned DSL/model/program registry or lifecycle governance is defined, and no implementation/data artifacts are rel
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [No versioned learned-program registry, dependency graph, compatibility model or rollback lifecycle is defined or release](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a7b89b7a86bb61fb / No versioned learned-program registry, dependency graph, compatibility model or rollback lifecycle is defined or release
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [No versioned registry, compatibility model, provenance-complete task artifact or rollback lifecycle is defined.](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-72f87db8ce1af328 / No versioned registry, compatibility model, provenance-complete task artifact or rollback lifecycle is defined.
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [No versioned/provenance-complete function registry or operational artifact lifecycle is supplied.](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-351b76b7ed267e02 / No versioned/provenance-complete function registry or operational artifact lifecycle is supplied.
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [None. This means declared closure is complete, not that substantive causality is proved.](../../../reports/operations/121Q32-change-propagation-impact.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-7d531549cb67c033 / If upstream objects D_{D39} exist, compose F_{D39}=N(⊕_{g∈D_{D39}} g); otherwise treat F_{D39} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D39；被引用：—
-- [If upstream objects D_{D3} exist, compose F_{D3}=N(⊕_{g∈D_{D3}} g); otherwise treat F_{D3} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 可搜索名称：NFC-d2d827bc20d389bd / None. This means declared closure is complete, not that substantive causality is proved.
+  - 来源：`reports/operations/121Q32-change-propagation-impact.md`
+  - 依赖：—；被引用：—
+- [Norms, coefficients and table metrics are inspectable, while approximation residuals, uncertainty, durable traces, priva](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-333ab75720914e51 / Norms, coefficients and table metrics are inspectable, while approximation residuals, uncertainty, durable traces, priva
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [Not proved here (requires remote CI):** that the *remote* GitHub Actions run reaches and passes the task-106](../../../docs/foundation/task-107-incident-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-c8b04ce6f7eb36ae / Not proved here (requires remote CI):** that the *remote* GitHub Actions run reaches and passes the task-106
+  - 来源：`docs/foundation/task-107-incident-report.md`
+  - 依赖：—；被引用：—
+- [Notes**：提醒分析者不能简单套用单通道函数，也要关注社会结构与反馈机制。对复杂经济现象使用点火框架时，应特别注明假设条件和范围。](../../../case_failures/examples/technology_economic_growth_failure.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-c9c95f2e490862d7 / Notes**：提醒分析者不能简单套用单通道函数，也要关注社会结构与反馈机制。对复杂经济现象使用点火框架时，应特别注明假设条件和范围。
+  - 来源：`case_failures/examples/technology_economic_growth_failure.md`
+  - 依赖：—；被引用：—
+- [N个独立的1/ln门控面（二值判断）的组合行为： 单个门控面：gᵢ(μ) = σ(μ-Λᵢ) ∈ {0,1}，σ_individual ≈ 0（纯二值） N个门控面的和：G(μ) = Σᵢ gᵢ(μ)/N 由中心极限定理：当N→∞时，G(μ](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-2b42d953315e7e84 / N个独立的1/ln门控面（二值判断）的组合行为： 单个门控面：gᵢ(μ) = σ(μ-Λᵢ) ∈ {0,1}，σ_individual ≈ 0（纯二值） N个门控面的和：G(μ) = Σᵢ gᵢ(μ)/N 由中心极限定理：当N→∞时，G(μ
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：—；被引用：—
+- [N个独立的1/ln门控面（二值判断）的组合行为： 单个门控面：gᵢ(μ) = σ(μ-Λᵢ) ∈ {0,1}，σ_individual ≈ 0（纯二值） N个门控面的和：G(μ) = Σᵢ gᵢ(μ)/N 由中心极限定理：当N→∞时，G(μ](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-8810290fb0fc9d1f / If upstream objects D_{D3} exist, compose F_{D3}=N(⊕_{g∈D_{D3}} g); otherwise treat F_{D3} as an axiom seed.
+  - 可搜索名称：NFC-5343cf23d3df9ae6 / N个独立的1/ln门控面（二值判断）的组合行为： 单个门控面：gᵢ(μ) = σ(μ-Λᵢ) ∈ {0,1}，σ_individual ≈ 0（纯二值） N个门控面的和：G(μ) = Σᵢ gᵢ(μ)/N 由中心极限定理：当N→∞时，G(μ
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D3；被引用：—
-- [If upstream objects D_{D400} exist, compose F_{D400}=N(⊕_{g∈D_{D400}} g); otherwise treat F_{D400} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-77c39305752b575b / If upstream objects D_{D400} exist, compose F_{D400}=N(⊕_{g∈D_{D400}} g); otherwise treat F_{D400} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D400；被引用：—
-- [If upstream objects D_{D401} exist, compose F_{D401}=N(⊕_{g∈D_{D401}} g); otherwise treat F_{D401} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-0532596f2a7cd9f0 / If upstream objects D_{D401} exist, compose F_{D401}=N(⊕_{g∈D_{D401}} g); otherwise treat F_{D401} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D401；被引用：—
-- [If upstream objects D_{D402} exist, compose F_{D402}=N(⊕_{g∈D_{D402}} g); otherwise treat F_{D402} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-ae1caa33a7617e5c / If upstream objects D_{D402} exist, compose F_{D402}=N(⊕_{g∈D_{D402}} g); otherwise treat F_{D402} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D402；被引用：—
-- [If upstream objects D_{D403} exist, compose F_{D403}=N(⊕_{g∈D_{D403}} g); otherwise treat F_{D403} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-a198b81efff43bed / If upstream objects D_{D403} exist, compose F_{D403}=N(⊕_{g∈D_{D403}} g); otherwise treat F_{D403} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D403；被引用：—
-- [If upstream objects D_{D404} exist, compose F_{D404}=N(⊕_{g∈D_{D404}} g); otherwise treat F_{D404} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-135a5ef5d5d21821 / If upstream objects D_{D404} exist, compose F_{D404}=N(⊕_{g∈D_{D404}} g); otherwise treat F_{D404} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D404；被引用：—
-- [If upstream objects D_{D405} exist, compose F_{D405}=N(⊕_{g∈D_{D405}} g); otherwise treat F_{D405} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-cfac543d357b66b6 / If upstream objects D_{D405} exist, compose F_{D405}=N(⊕_{g∈D_{D405}} g); otherwise treat F_{D405} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D405；被引用：—
-- [If upstream objects D_{D406} exist, compose F_{D406}=N(⊕_{g∈D_{D406}} g); otherwise treat F_{D406} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-7aa505467f425d69 / If upstream objects D_{D406} exist, compose F_{D406}=N(⊕_{g∈D_{D406}} g); otherwise treat F_{D406} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D406；被引用：—
-- [If upstream objects D_{D407} exist, compose F_{D407}=N(⊕_{g∈D_{D407}} g); otherwise treat F_{D407} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-f18ee7c67651f094 / If upstream objects D_{D407} exist, compose F_{D407}=N(⊕_{g∈D_{D407}} g); otherwise treat F_{D407} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D407；被引用：—
-- [If upstream objects D_{D408} exist, compose F_{D408}=N(⊕_{g∈D_{D408}} g); otherwise treat F_{D408} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-da8a322bd0130082 / If upstream objects D_{D408} exist, compose F_{D408}=N(⊕_{g∈D_{D408}} g); otherwise treat F_{D408} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D408；被引用：—
-- [If upstream objects D_{D409} exist, compose F_{D409}=N(⊕_{g∈D_{D409}} g); otherwise treat F_{D409} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-38f51de5a549d115 / If upstream objects D_{D409} exist, compose F_{D409}=N(⊕_{g∈D_{D409}} g); otherwise treat F_{D409} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D409；被引用：—
-- [If upstream objects D_{D40} exist, compose F_{D40}=N(⊕_{g∈D_{D40}} g); otherwise treat F_{D40} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-85e01a61e51c7c15 / If upstream objects D_{D40} exist, compose F_{D40}=N(⊕_{g∈D_{D40}} g); otherwise treat F_{D40} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [N个独立的1/ln门控面（二值判断）的组合行为： 单个门控面：gᵢ(μ) = σ(μ-Λᵢ) ∈ {0,1}，σ_individual ≈ 0（纯二值） N个门控面的和：G(μ) = Σᵢ gᵢ(μ)/N 由中心极限定理：当N→∞时，G(μ)的分布趋近高斯 σ_combined = √N × σ_individual / N = σ_individual / √N 但这是均值的分布。门控函数本身的行为：](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-2B23AC25F5388C0C / N个独立的1/ln门控面（二值判断）的组合行为： 单个门控面：gᵢ(μ) = σ(μ-Λᵢ) ∈ {0,1}，σ_individual ≈ 0（纯二值） N个门控面的和：G(μ) = Σᵢ gᵢ(μ)/N 由中心极限定理：当N→∞时，G(μ)的分布趋近高斯 σ_combined = √N × σ_individual / N = σ_individual / √N 但这是均值的分布。门控函数本身的行为： / IMPLICIT-2B23AC25F5388C0C
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [Object classification](../../ASSET-CARDS.md#asset-hr-2e47aae701252c3e)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：Object classification / object-classification-20260712
+  - 来源：`reports/foundation-architecture/object-classification-20260712.md`
+  - 依赖：—；被引用：—
+- [Object D114 defines a formal_proposition within the point-fire framework. Core: 中文：Φ d i s c o. Annotation: 17域词典簇碰撞，涵盖1](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-c9071f49aa981e41 / Object D114 defines a formal_proposition within the point-fire framework. Core: 中文：Φ d i s c o. Annotation: 17域词典簇碰撞，涵盖1
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：A6, D114；被引用：—
+- [Object D115 defines a formal_proposition within the point-fire framework. Core: 中文：r_cross = 0 ⟹ ε_aware = 0（通过D84三条安装路径](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-455bdb2d53886010 / Object D115 defines a formal_proposition within the point-fire framework. Core: 中文：r_cross = 0 ⟹ ε_aware = 0（通过D84三条安装路径
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：D115, D84；被引用：—
+- [Object D116 defines a formal_proposition within the point-fire framework. Core: 中文：. Annotation: 17域词典簇碰撞，涵盖17个领域的函数投影。.](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-9169109ff09ac0b9 / Object D116 defines a formal_proposition within the point-fire framework. Core: 中文：. Annotation: 17域词典簇碰撞，涵盖17个领域的函数投影。.
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：A6, D116；被引用：—
+- [Object D118 defines a formal_proposition within the point-fire framework. Core: 中文：S_ignition = ∫\[ln G - γ·P(cascade)\]dt](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a1a3b787bbaed6d3 / Object D118 defines a formal_proposition within the point-fire framework. Core: 中文：S_ignition = ∫\[ln G - γ·P(cascade)\]dt
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：D111, D118；被引用：—
+- [Object D131 defines a formal_proposition within the point-fire framework. Core: 中文：AI编码能力完整推导，给出CAI涌现四阶段不可跳跃定理。. Annotat](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-ccfe54d4f43f74e1 / Object D131 defines a formal_proposition within the point-fire framework. Core: 中文：AI编码能力完整推导，给出CAI涌现四阶段不可跳跃定理。. Annotat
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：D131；被引用：—
+- [Object D132 defines a formal_proposition within the point-fire framework. Core: 中文：AI编码能力完整推导，给出CAI涌现四阶段不可跳跃定理。. Annotat](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-15813a70a7079b93 / Object D132 defines a formal_proposition within the point-fire framework. Core: 中文：AI编码能力完整推导，给出CAI涌现四阶段不可跳跃定理。. Annotat
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：D132；被引用：—
+- [Object D133 defines a formal_proposition within the point-fire framework. Core: 中文：AI编码能力完整推导，给出CAI涌现四阶段不可跳跃定理。. Annotat](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-3656a7b9f4933f6d / Object D133 defines a formal_proposition within the point-fire framework. Core: 中文：AI编码能力完整推导，给出CAI涌现四阶段不可跳跃定理。. Annotat
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：D133；被引用：—
+- [Object D134 defines a formal_proposition within the point-fire framework. Core: 中文：物理大统一推导、电弱理论碰撞等。. Annotation: 物理大统一路径](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-5056ffcc9c5105fe / Object D134 defines a formal_proposition within the point-fire framework. Core: 中文：物理大统一推导、电弱理论碰撞等。. Annotation: 物理大统一路径
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：D134；被引用：—
+- [Object D135 defines a formal_proposition within the point-fire framework. Core: 中文：物理大统一推导、电弱理论碰撞等。. Annotation: 物理大统一路径](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-1b1560afe6159f3f / Object D135 defines a formal_proposition within the point-fire framework. Core: 中文：物理大统一推导、电弱理论碰撞等。. Annotation: 物理大统一路径
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：D135；被引用：—
+- [Object D136 defines a formal_proposition within the point-fire framework. Core: 中文：物理大统一推导、电弱理论碰撞等。. Annotation: 物理大统一路径](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-7e1adf014978e238 / Object D136 defines a formal_proposition within the point-fire framework. Core: 中文：物理大统一推导、电弱理论碰撞等。. Annotation: 物理大统一路径
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：D136；被引用：—
+- [Object D137 defines a formal_proposition within the point-fire framework. Core: 中文：物理大统一推导、电弱理论碰撞等。. Annotation: 物理大统一路径](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-792752afc789c0de / Object D137 defines a formal_proposition within the point-fire framework. Core: 中文：物理大统一推导、电弱理论碰撞等。. Annotation: 物理大统一路径
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：D137；被引用：—
+- [Object D149 defines a formal_proposition within the point-fire framework. Core: 中文：设计结构让估计不必要 > 估计准确后保守执行。. Annotation:](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-2041370237e9f3a1 / Object D149 defines a formal_proposition within the point-fire framework. Core: 中文：设计结构让估计不必要 > 估计准确后保守执行。. Annotation:
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：D149；被引用：—
+- [Object D150 defines a formal_proposition within the point-fire framework. Core: 中文：Φ = f₁(↑)×f₂(↓)必然倒U型。. Annotation: 倒U](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-d6f434661b21d0a9 / Object D150 defines a formal_proposition within the point-fire framework. Core: 中文：Φ = f₁(↑)×f₂(↓)必然倒U型。. Annotation: 倒U
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：D150, T16；被引用：—
+- [Object D177 defines a mechanism_model within the point-fire framework. Core: 中文：不同系统在参数空间映射到点火框架后，展现相同的数学结构。深层同构不是现象相似，而](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-f3e745d402b5372c / Object D177 defines a mechanism_model within the point-fire framework. Core: 中文：不同系统在参数空间映射到点火框架后，展现相同的数学结构。深层同构不是现象相似，而
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：D177；被引用：—
+- [Object D179 defines a mechanism_model within the point-fire framework. Core: 中文：. Annotation: 因果光锥统一函数，信息传播速度限制导致的因果约束在物](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-37a0d1ebf793d0fb / Object D179 defines a mechanism_model within the point-fire framework. Core: 中文：. Annotation: 因果光锥统一函数，信息传播速度限制导致的因果约束在物
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：D13, D179；被引用：—
+- [Object D182 defines a mechanism_model within the point-fire framework. Core: 中文：Classical(μ, Λ) = lim_{μ/Λ→∞} 1/ln(μ/Λ)](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-37f7481b0d6e1ca3 / Object D182 defines a mechanism_model within the point-fire framework. Core: 中文：Classical(μ, Λ) = lim_{μ/Λ→∞} 1/ln(μ/Λ)
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：D182；被引用：—
+- [Object D183 defines a mechanism_model within the point-fire framework. Core: 中文：当两个门控面Λ_A和Λ_B在μ以上合并为Λ_AB时 Φ_before = 1/l](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-27b9f32b94ba8431 / Object D183 defines a mechanism_model within the point-fire framework. Core: 中文：当两个门控面Λ_A和Λ_B在μ以上合并为Λ_AB时 Φ_before = 1/l
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：D183；被引用：—
+- [Object D184 defines a mechanism_model within the point-fire framework. Core: 中文：Λ_disorder(t) = Λ₀ × e^(σ_entropy × t)，σ](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-7e7ee43f081a30ab / Object D184 defines a mechanism_model within the point-fire framework. Core: 中文：Λ_disorder(t) = Λ₀ × e^(σ_entropy × t)，σ
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：D184；被引用：—
+- [Object D185 defines a mechanism_model within the point-fire framework. Core: 中文：相对论是单门槛系统的特例，Λ = c（光速）是唯一门槛。当v << c时，μ/Λ](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-f2f4305b73cd492a / Object D185 defines a mechanism_model within the point-fire framework. Core: 中文：相对论是单门槛系统的特例，Λ = c（光速）是唯一门槛。当v << c时，μ/Λ
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：D182, D185；被引用：—
+- [Object D186 defines a mechanism_model within the point-fire framework. Core: 中文：量子力学是多门槛系统，门槛Λ_i（能级）高度聚集。门槛聚集度ḡ高→阶段2宽→临界](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-47b1598a44d2ffb9 / Object D186 defines a mechanism_model within the point-fire framework. Core: 中文：量子力学是多门槛系统，门槛Λ_i（能级）高度聚集。门槛聚集度ḡ高→阶段2宽→临界
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：D186；被引用：—
+- [Object D187 defines a mechanism_model within the point-fire framework. Core: 中文：电弱统一是电磁力和弱核力在高能μ>μ_EW时的门控面合并。μ<μ_EW时两个门控](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-511518eaae0d9028 / Object D187 defines a mechanism_model within the point-fire framework. Core: 中文：电弱统一是电磁力和弱核力在高能μ>μ_EW时的门控面合并。μ<μ_EW时两个门控
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：D187；被引用：—
+- [Object D188 defines a mechanism_model within the point-fire framework. Core: 中文：强核力Λ_QCD在高能μ>μ_QCD时门控效应显著,μ<μ_QCD时Λ_QCD→](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-9b01054d22427151 / Object D188 defines a mechanism_model within the point-fire framework. Core: 中文：强核力Λ_QCD在高能μ>μ_QCD时门控效应显著,μ<μ_QCD时Λ_QCD→
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：D188；被引用：—
+- [Object D189 defines a mechanism_model within the point-fire framework. Core: 中文：大统一GUT是电磁力、弱核力、强核力在高能μ>μ_GUT时的门控面合并。μ<μ_](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-b96c5067fe826ee3 / Object D189 defines a mechanism_model within the point-fire framework. Core: 中文：大统一GUT是电磁力、弱核力、强核力在高能μ>μ_GUT时的门控面合并。μ<μ_
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：D189；被引用：—
+- [Object D190 defines a mechanism_model within the point-fire framework. Core: 中文：万有理论ToE是所有基本力在高能μ>μ_ToE时的门控面合并。μ<μ_ToE时四](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-1574130dc36ee02b / Object D190 defines a mechanism_model within the point-fire framework. Core: 中文：万有理论ToE是所有基本力在高能μ>μ_ToE时的门控面合并。μ<μ_ToE时四
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：D190；被引用：—
+- [Object D191 defines a mechanism_model within the point-fire framework. Core: 中文：规范破缺真空选择=陷阱选择。. Annotation: 认知规范破缺函数，规范破](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-ce7efd548b67fcb1 / Object D191 defines a mechanism_model within the point-fire framework. Core: 中文：规范破缺真空选择=陷阱选择。. Annotation: 认知规范破缺函数，规范破
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：D191, D467, D468；被引用：—
+- [Object D199 defines a mechanism_model within the point-fire framework. Core: 中文：相变序参量φ=门控面Λ的序参量。. Annotation: 相变序参量-门槛函数](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-65cedcbf5b6f6671 / Object D199 defines a mechanism_model within the point-fire framework. Core: 中文：相变序参量φ=门控面Λ的序参量。. Annotation: 相变序参量-门槛函数
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：D150, D199；被引用：—
+- [Object D203 defines a mechanism_model within the point-fire framework. Core: 中文：配分函数Z=Σe^{-βE}描述门控面Λ的全局统计性质。. Annotation](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-8906fc57b7dfd80b / Object D203 defines a mechanism_model within the point-fire framework. Core: 中文：配分函数Z=Σe^{-βE}描述门控面Λ的全局统计性质。. Annotation
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：D203, T17；被引用：—
+- [Object D205 defines a mechanism_model within the point-fire framework. Core: 中文：涨落-耗散定理⟨x²⟩∝χ描述门控面Λ的涨落与响应。. Annotation:](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-4561b997408794af / Object D205 defines a mechanism_model within the point-fire framework. Core: 中文：涨落-耗散定理⟨x²⟩∝χ描述门控面Λ的涨落与响应。. Annotation:
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：D186, D205；被引用：—
+- [Object D223 defines a formal_proposition within the point-fire framework. Core: 中文：D221：热寂=完全统一=Ω→1=无物理；D222：dΦ/dt≤0，Φ单调](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：NFC-70d5a3d429fefd71 / Object D223 defines a formal_proposition within the point-fire framework. Core: 中文：D221：热寂=完全统一=Ω→1=无物理；D222：dΦ/dt≤0，Φ单调
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：D221, D222, D223；被引用：—
+- [Object D228 defines a mechanism_model within the point-fire framework. Core: 中文：A-B型门控面的方向冲突是Φ极小点存在的数学机制，不是缺陷。冲突=张力的制造者=](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-f3616bb318ced719 / Object D228 defines a mechanism_model within the point-fire framework. Core: 中文：A-B型门控面的方向冲突是Φ极小点存在的数学机制，不是缺陷。冲突=张力的制造者=
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：D228, T33；被引用：—
+- [Object D236 defines a formal_proposition within the point-fire framework. Core: 中文：N个独立的1/ln门控面（二值判断）的组合行为： 单个门控面：gᵢ(μ)](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-61902d9e697a1c72 / Object D236 defines a formal_proposition within the point-fire framework. Core: 中文：N个独立的1/ln门控面（二值判断）的组合行为： 单个门控面：gᵢ(μ)
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：D236；被引用：—
+- [Object D260 defines a mechanism_model within the point-fire framework. Core: 中文：M1的ΔΦ敏感度dΔΦ/dpᵢ=pᵢ/(1-pᵢ)在pᵢ=0.5时=1（单位敏感](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-2820e2d6c1bd1f95 / Object D260 defines a mechanism_model within the point-fire framework. Core: 中文：M1的ΔΦ敏感度dΔΦ/dpᵢ=pᵢ/(1-pᵢ)在pᵢ=0.5时=1（单位敏感
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：D260；被引用：—
+- [Object D387 defines a mechanism_model within the point-fire framework. Core: 中文：M4的Ising同构意味着配分函数Z = Σ e^{-β_H·H}，H = -ḡ](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-ee69fb4687a717c7 / Object D387 defines a mechanism_model within the point-fire framework. Core: 中文：M4的Ising同构意味着配分函数Z = Σ e^{-β_H·H}，H = -ḡ
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：D387；被引用：—
+- [Object D40 defines a formal_proposition within the point-fire framework. Core: 中文：P_survive = 1 - (1-D_immune) × (1-R_pe](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-8e1b542b9008e699 / Object D40 defines a formal_proposition within the point-fire framework. Core: 中文：P_survive = 1 - (1-D_immune) × (1-R_pe
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D40；被引用：—
-- [If upstream objects D_{D410} exist, compose F_{D410}=N(⊕_{g∈D_{D410}} g); otherwise treat F_{D410} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-c3eee53329ec8ad3 / If upstream objects D_{D410} exist, compose F_{D410}=N(⊕_{g∈D_{D410}} g); otherwise treat F_{D410} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D410；被引用：—
-- [If upstream objects D_{D411} exist, compose F_{D411}=N(⊕_{g∈D_{D411}} g); otherwise treat F_{D411} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-6e9ceca6b9f8dab8 / If upstream objects D_{D411} exist, compose F_{D411}=N(⊕_{g∈D_{D411}} g); otherwise treat F_{D411} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D411；被引用：—
-- [If upstream objects D_{D412} exist, compose F_{D412}=N(⊕_{g∈D_{D412}} g); otherwise treat F_{D412} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-089ab7720e8a899d / If upstream objects D_{D412} exist, compose F_{D412}=N(⊕_{g∈D_{D412}} g); otherwise treat F_{D412} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D412；被引用：—
-- [If upstream objects D_{D413} exist, compose F_{D413}=N(⊕_{g∈D_{D413}} g); otherwise treat F_{D413} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-42f1fa62e67ea280 / If upstream objects D_{D413} exist, compose F_{D413}=N(⊕_{g∈D_{D413}} g); otherwise treat F_{D413} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D413；被引用：—
-- [If upstream objects D_{D414} exist, compose F_{D414}=N(⊕_{g∈D_{D414}} g); otherwise treat F_{D414} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-a81514f1b9dec989 / If upstream objects D_{D414} exist, compose F_{D414}=N(⊕_{g∈D_{D414}} g); otherwise treat F_{D414} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D414；被引用：—
-- [If upstream objects D_{D415} exist, compose F_{D415}=N(⊕_{g∈D_{D415}} g); otherwise treat F_{D415} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-72c2b38e85358b05 / If upstream objects D_{D415} exist, compose F_{D415}=N(⊕_{g∈D_{D415}} g); otherwise treat F_{D415} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D415；被引用：—
-- [If upstream objects D_{D416} exist, compose F_{D416}=N(⊕_{g∈D_{D416}} g); otherwise treat F_{D416} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-c24e99aad87fa3a2 / If upstream objects D_{D416} exist, compose F_{D416}=N(⊕_{g∈D_{D416}} g); otherwise treat F_{D416} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D416；被引用：—
-- [If upstream objects D_{D417} exist, compose F_{D417}=N(⊕_{g∈D_{D417}} g); otherwise treat F_{D417} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-e76a11f1cefa3716 / If upstream objects D_{D417} exist, compose F_{D417}=N(⊕_{g∈D_{D417}} g); otherwise treat F_{D417} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D417；被引用：—
-- [If upstream objects D_{D418} exist, compose F_{D418}=N(⊕_{g∈D_{D418}} g); otherwise treat F_{D418} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-491a754c97780912 / If upstream objects D_{D418} exist, compose F_{D418}=N(⊕_{g∈D_{D418}} g); otherwise treat F_{D418} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D418；被引用：—
-- [If upstream objects D_{D419} exist, compose F_{D419}=N(⊕_{g∈D_{D419}} g); otherwise treat F_{D419} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-9f370aaf703fc917 / If upstream objects D_{D419} exist, compose F_{D419}=N(⊕_{g∈D_{D419}} g); otherwise treat F_{D419} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D419；被引用：—
-- [If upstream objects D_{D41} exist, compose F_{D41}=N(⊕_{g∈D_{D41}} g); otherwise treat F_{D41} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-98b13a3f2e45853f / If upstream objects D_{D41} exist, compose F_{D41}=N(⊕_{g∈D_{D41}} g); otherwise treat F_{D41} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+- [Object D400 defines a mechanism_model within the point-fire framework. Core: 中文：M3的I_concentration正是D387配分函数的序参量——磁化强度m的](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-f7809df04d70495f / Object D400 defines a mechanism_model within the point-fire framework. Core: 中文：M3的I_concentration正是D387配分函数的序参量——磁化强度m的
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：D386, D387, D400；被引用：—
+- [Object D403 defines a mechanism_model within the point-fire framework. Core: 中文：M6的δ_c对应配分函数中耦合-容斥相变的临界场强h_c。h_c∝T_c∝ḡ·√](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-c3445b4cbb5085a1 / Object D403 defines a mechanism_model within the point-fire framework. Core: 中文：M6的δ_c对应配分函数中耦合-容斥相变的临界场强h_c。h_c∝T_c∝ḡ·√
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：D389, D403；被引用：—
+- [Object D41 defines a formal_proposition within the point-fire framework. Core: 中文：t_critical=(1/(m_β×α_C×C̄/θ_C))×ln(ε₀/](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-89cd020ae8a82815 / Object D41 defines a formal_proposition within the point-fire framework. Core: 中文：t_critical=(1/(m_β×α_C×C̄/θ_C))×ln(ε₀/
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D41；被引用：—
-- [If upstream objects D_{D420} exist, compose F_{D420}=N(⊕_{g∈D_{D420}} g); otherwise treat F_{D420} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-7bf428b618ea93bb / If upstream objects D_{D420} exist, compose F_{D420}=N(⊕_{g∈D_{D420}} g); otherwise treat F_{D420} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D420；被引用：—
-- [If upstream objects D_{D421} exist, compose F_{D421}=N(⊕_{g∈D_{D421}} g); otherwise treat F_{D421} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-f005bb233f2e844f / If upstream objects D_{D421} exist, compose F_{D421}=N(⊕_{g∈D_{D421}} g); otherwise treat F_{D421} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D421；被引用：—
-- [If upstream objects D_{D422} exist, compose F_{D422}=N(⊕_{g∈D_{D422}} g); otherwise treat F_{D422} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-dd5ec4dfa74c8da6 / If upstream objects D_{D422} exist, compose F_{D422}=N(⊕_{g∈D_{D422}} g); otherwise treat F_{D422} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D422；被引用：—
-- [If upstream objects D_{D423} exist, compose F_{D423}=N(⊕_{g∈D_{D423}} g); otherwise treat F_{D423} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-665b0e15f07ebbcb / If upstream objects D_{D423} exist, compose F_{D423}=N(⊕_{g∈D_{D423}} g); otherwise treat F_{D423} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D423；被引用：—
-- [If upstream objects D_{D424} exist, compose F_{D424}=N(⊕_{g∈D_{D424}} g); otherwise treat F_{D424} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-3dc14d0bf7d3bf2b / If upstream objects D_{D424} exist, compose F_{D424}=N(⊕_{g∈D_{D424}} g); otherwise treat F_{D424} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D424；被引用：—
-- [If upstream objects D_{D42} exist, compose F_{D42}=N(⊕_{g∈D_{D42}} g); otherwise treat F_{D42} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-6aa54f845a26db69 / If upstream objects D_{D42} exist, compose F_{D42}=N(⊕_{g∈D_{D42}} g); otherwise treat F_{D42} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+- [Object D42 defines a formal_proposition within the point-fire framework. Core: 中文：H_narrative = σ(ε_sense×ε_aware - ε_ac](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-89b54f26aad6b156 / Object D42 defines a formal_proposition within the point-fire framework. Core: 中文：H_narrative = σ(ε_sense×ε_aware - ε_ac
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D42；被引用：—
-- [If upstream objects D_{D43} exist, compose F_{D43}=N(⊕_{g∈D_{D43}} g); otherwise treat F_{D43} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-f3415110e2046113 / If upstream objects D_{D43} exist, compose F_{D43}=N(⊕_{g∈D_{D43}} g); otherwise treat F_{D43} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+- [Object D43 defines a formal_proposition within the point-fire framework. Core: 中文：P_survive = 1 - (1-D_immune) × (1-R_pe](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-5fb6f5f2b5091fed / Object D43 defines a formal_proposition within the point-fire framework. Core: 中文：P_survive = 1 - (1-D_immune) × (1-R_pe
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D43；被引用：—
-- [If upstream objects D_{D44} exist, compose F_{D44}=N(⊕_{g∈D_{D44}} g); otherwise treat F_{D44} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-6cfc0b93c5673cb3 / If upstream objects D_{D44} exist, compose F_{D44}=N(⊕_{g∈D_{D44}} g); otherwise treat F_{D44} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+- [Object D44 defines a formal_proposition within the point-fire framework. Core: 中文：M_certainty = ν × (1 - π/π₀). Annotati](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-669882f03a53b8da / Object D44 defines a formal_proposition within the point-fire framework. Core: 中文：M_certainty = ν × (1 - π/π₀). Annotati
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D44；被引用：—
-- [If upstream objects D_{D45} exist, compose F_{D45}=N(⊕_{g∈D_{D45}} g); otherwise treat F_{D45} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-ac983fa080650d03 / If upstream objects D_{D45} exist, compose F_{D45}=N(⊕_{g∈D_{D45}} g); otherwise treat F_{D45} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+- [Object D45 defines a formal_proposition within the point-fire framework. Core: 中文：中间稳态存在 ⟺ 至少一条正反馈回路存在负反馈抵消. Annotation:](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-09bdd5604899982c / Object D45 defines a formal_proposition within the point-fire framework. Core: 中文：中间稳态存在 ⟺ 至少一条正反馈回路存在负反馈抵消. Annotation:
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D45；被引用：—
-- [If upstream objects D_{D463} exist, compose F_{D463}=N(⊕_{g∈D_{D463}} g); otherwise treat F_{D463} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-27f1db7dab012ca2 / If upstream objects D_{D463} exist, compose F_{D463}=N(⊕_{g∈D_{D463}} g); otherwise treat F_{D463} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D463；被引用：—
-- [If upstream objects D_{D464} exist, compose F_{D464}=N(⊕_{g∈D_{D464}} g); otherwise treat F_{D464} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-4d158b4c9d1498d1 / If upstream objects D_{D464} exist, compose F_{D464}=N(⊕_{g∈D_{D464}} g); otherwise treat F_{D464} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D464；被引用：—
-- [If upstream objects D_{D465} exist, compose F_{D465}=N(⊕_{g∈D_{D465}} g); otherwise treat F_{D465} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-d6fcf2e4a1ab6691 / If upstream objects D_{D465} exist, compose F_{D465}=N(⊕_{g∈D_{D465}} g); otherwise treat F_{D465} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D465；被引用：—
-- [If upstream objects D_{D466} exist, compose F_{D466}=N(⊕_{g∈D_{D466}} g); otherwise treat F_{D466} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-85c1737c2885eca1 / If upstream objects D_{D466} exist, compose F_{D466}=N(⊕_{g∈D_{D466}} g); otherwise treat F_{D466} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D466；被引用：—
-- [If upstream objects D_{D467} exist, compose F_{D467}=N(⊕_{g∈D_{D467}} g); otherwise treat F_{D467} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-d0acc9bddc009ef3 / If upstream objects D_{D467} exist, compose F_{D467}=N(⊕_{g∈D_{D467}} g); otherwise treat F_{D467} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D467；被引用：—
-- [If upstream objects D_{D468} exist, compose F_{D468}=N(⊕_{g∈D_{D468}} g); otherwise treat F_{D468} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-284164118fdb63d1 / If upstream objects D_{D468} exist, compose F_{D468}=N(⊕_{g∈D_{D468}} g); otherwise treat F_{D468} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D468；被引用：—
-- [If upstream objects D_{D469} exist, compose F_{D469}=N(⊕_{g∈D_{D469}} g); otherwise treat F_{D469} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-67c0cdf4c388abcb / If upstream objects D_{D469} exist, compose F_{D469}=N(⊕_{g∈D_{D469}} g); otherwise treat F_{D469} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D469；被引用：—
-- [If upstream objects D_{D46} exist, compose F_{D46}=N(⊕_{g∈D_{D46}} g); otherwise treat F_{D46} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-79adc671d3f906e1 / If upstream objects D_{D46} exist, compose F_{D46}=N(⊕_{g∈D_{D46}} g); otherwise treat F_{D46} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+- [Object D46 defines a formal_proposition within the point-fire framework. Core: 中文：P(grid_k \| L) = f(H_total, C_exit, D_i](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-5d459241beadd0df / Object D46 defines a formal_proposition within the point-fire framework. Core: 中文：P(grid_k \| L) = f(H_total, C_exit, D_i
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D46；被引用：—
-- [If upstream objects D_{D470} exist, compose F_{D470}=N(⊕_{g∈D_{D470}} g); otherwise treat F_{D470} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-bbe39573b1c85c00 / If upstream objects D_{D470} exist, compose F_{D470}=N(⊕_{g∈D_{D470}} g); otherwise treat F_{D470} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D470；被引用：—
-- [If upstream objects D_{D471} exist, compose F_{D471}=N(⊕_{g∈D_{D471}} g); otherwise treat F_{D471} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-cdc4d9bc5660b487 / If upstream objects D_{D471} exist, compose F_{D471}=N(⊕_{g∈D_{D471}} g); otherwise treat F_{D471} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D471；被引用：—
-- [If upstream objects D_{D472} exist, compose F_{D472}=N(⊕_{g∈D_{D472}} g); otherwise treat F_{D472} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-941beaf446206279 / If upstream objects D_{D472} exist, compose F_{D472}=N(⊕_{g∈D_{D472}} g); otherwise treat F_{D472} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D472；被引用：—
-- [If upstream objects D_{D473} exist, compose F_{D473}=N(⊕_{g∈D_{D473}} g); otherwise treat F_{D473} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-4fa8498dd032d5c6 / If upstream objects D_{D473} exist, compose F_{D473}=N(⊕_{g∈D_{D473}} g); otherwise treat F_{D473} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D473；被引用：—
-- [If upstream objects D_{D474} exist, compose F_{D474}=N(⊕_{g∈D_{D474}} g); otherwise treat F_{D474} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-2b7d7ba9b265270c / If upstream objects D_{D474} exist, compose F_{D474}=N(⊕_{g∈D_{D474}} g); otherwise treat F_{D474} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D474；被引用：—
-- [If upstream objects D_{D475} exist, compose F_{D475}=N(⊕_{g∈D_{D475}} g); otherwise treat F_{D475} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-9914d6f962994ea2 / If upstream objects D_{D475} exist, compose F_{D475}=N(⊕_{g∈D_{D475}} g); otherwise treat F_{D475} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D475；被引用：—
-- [If upstream objects D_{D47} exist, compose F_{D47}=N(⊕_{g∈D_{D47}} g); otherwise treat F_{D47} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-28ce74ab64a59be9 / If upstream objects D_{D47} exist, compose F_{D47}=N(⊕_{g∈D_{D47}} g); otherwise treat F_{D47} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+- [Object D47 defines a formal_proposition within the point-fire framework. Core: 中文：dW/dt = -θ_resist×(dE/dt)/E² - dε_awar](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-84275f873c6ae027 / Object D47 defines a formal_proposition within the point-fire framework. Core: 中文：dW/dt = -θ_resist×(dE/dt)/E² - dε_awar
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D47；被引用：—
-- [If upstream objects D_{D48} exist, compose F_{D48}=N(⊕_{g∈D_{D48}} g); otherwise treat F_{D48} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-7d4932b812af636e / If upstream objects D_{D48} exist, compose F_{D48}=N(⊕_{g∈D_{D48}} g); otherwise treat F_{D48} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+- [Object D472 defines a optimization_problem within the point-fire framework. Core: 中文：E_{Q_0003}=1 iff d*(O)=argmin_d\[L(M](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-7cc8a5bf166d25d5 / Object D472 defines a optimization_problem within the point-fire framework. Core: 中文：E_{Q_0003}=1 iff d*(O)=argmin_d\[L(M
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：D472；被引用：—
+- [Object D474 defines a optimization_problem within the point-fire framework. Core: 中文：Life(S)=1 iff M_self*Boundary*Energ](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-ca44591fd5e87cf8 / Object D474 defines a optimization_problem within the point-fire framework. Core: 中文：Life(S)=1 iff M_self*Boundary*Energ
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：D474；被引用：—
+- [Object D475 defines a optimization_problem within the point-fire framework. Core: 中文：classify_A(p) in {provable, refutab](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-8760696592211c31 / Object D475 defines a optimization_problem within the point-fire framework. Core: 中文：classify_A(p) in {provable, refutab
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：D475；被引用：—
+- [Object D48 defines a formal_proposition within the point-fire framework. Core: 中文：t_critical = (1/(m_β×α_C×C̄/θ_C)) × ln](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-6c58b2d831c68878 / Object D48 defines a formal_proposition within the point-fire framework. Core: 中文：t_critical = (1/(m_β×α_C×C̄/θ_C)) × ln
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D48；被引用：—
-- [If upstream objects D_{D49} exist, compose F_{D49}=N(⊕_{g∈D_{D49}} g); otherwise treat F_{D49} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-ca165eeeca5b088a / If upstream objects D_{D49} exist, compose F_{D49}=N(⊕_{g∈D_{D49}} g); otherwise treat F_{D49} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+- [Object D49 defines a formal_proposition within the point-fire framework. Core: 中文：P₁(不足), P₂(窗口), P₃(过度)，D_immune为关键调节器.](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-10caf4afa66f7844 / Object D49 defines a formal_proposition within the point-fire framework. Core: 中文：P₁(不足), P₂(窗口), P₃(过度)，D_immune为关键调节器.
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D49；被引用：—
-- [If upstream objects D_{D4} exist, compose F_{D4}=N(⊕_{g∈D_{D4}} g); otherwise treat F_{D4} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-74148f005e15386a / If upstream objects D_{D4} exist, compose F_{D4}=N(⊕_{g∈D_{D4}} g); otherwise treat F_{D4} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D4；被引用：—
-- [If upstream objects D_{D50} exist, compose F_{D50}=N(⊕_{g∈D_{D50}} g); otherwise treat F_{D50} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-3e5c233a1fb6307a / If upstream objects D_{D50} exist, compose F_{D50}=N(⊕_{g∈D_{D50}} g); otherwise treat F_{D50} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+- [Object D50 defines a formal_proposition within the point-fire framework. Core: 中文：N_output = ⌈α × dim(domain) × (1-overl](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-990072449e45539c / Object D50 defines a formal_proposition within the point-fire framework. Core: 中文：N_output = ⌈α × dim(domain) × (1-overl
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D50；被引用：—
-- [If upstream objects D_{D51} exist, compose F_{D51}=N(⊕_{g∈D_{D51}} g); otherwise treat F_{D51} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-53e00a3edff69f8a / If upstream objects D_{D51} exist, compose F_{D51}=N(⊕_{g∈D_{D51}} g); otherwise treat F_{D51} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D51；被引用：—
-- [If upstream objects D_{D52} exist, compose F_{D52}=N(⊕_{g∈D_{D52}} g); otherwise treat F_{D52} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-e1cdd7dc34877c38 / If upstream objects D_{D52} exist, compose F_{D52}=N(⊕_{g∈D_{D52}} g); otherwise treat F_{D52} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D52；被引用：—
-- [If upstream objects D_{D53} exist, compose F_{D53}=N(⊕_{g∈D_{D53}} g); otherwise treat F_{D53} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-bc5bf327f3ae55ec / If upstream objects D_{D53} exist, compose F_{D53}=N(⊕_{g∈D_{D53}} g); otherwise treat F_{D53} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+- [Object D523 defines a optimization_problem within the point-fire framework. Core: 中文：dim_H(K_n)=n，其中K_n包含单位线段所有方向，n=2已严格](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-126ddc5e7c1d50f2 / Object D523 defines a optimization_problem within the point-fire framework. Core: 中文：dim_H(K_n)=n，其中K_n包含单位线段所有方向，n=2已严格
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：D523, T39；被引用：—
+- [Object D525 defines a optimization_problem within the point-fire framework. Core: 中文：M≅∪_i M_i，每个M_i配备8种标准几何之一，Perelman用](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-7b48faa2fa1c5db2 / Object D525 defines a optimization_problem within the point-fire framework. Core: 中文：M≅∪_i M_i，每个M_i配备8种标准几何之一，Perelman用
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：D525；被引用：—
+- [Object D53 defines a mechanism_model within the point-fire framework. Core: 中文：凯利公式 f* = (bp-q)/b 映射： - f* ↔ ε信号最优流速 v*](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-a46d9d800ad5ba5a / Object D53 defines a mechanism_model within the point-fire framework. Core: 中文：凯利公式 f* = (bp-q)/b 映射： - f* ↔ ε信号最优流速 v*
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D53；被引用：—
-- [If upstream objects D_{D54} exist, compose F_{D54}=N(⊕_{g∈D_{D54}} g); otherwise treat F_{D54} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-89bee09c41cf40c8 / If upstream objects D_{D54} exist, compose F_{D54}=N(⊕_{g∈D_{D54}} g); otherwise treat F_{D54} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+- [Object D538 defines a optimization_problem within the point-fire framework. Core: 中文：潜意识内容S通过觉知阈值θ_a进入意识域C：C(x)=1\[φ(S(x)](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-8e61a3f281a8e73f / Object D538 defines a optimization_problem within the point-fire framework. Core: 中文：潜意识内容S通过觉知阈值θ_a进入意识域C：C(x)=1\[φ(S(x)
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：D538；被引用：—
+- [Object D54 defines a formal_proposition within the point-fire framework. Core: 中文：地形切割度×人口密度^(-α)×通勤半径^β×气候约束，乘法结构。广州、重庆](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-936b0f55ba97d53d / Object D54 defines a formal_proposition within the point-fire framework. Core: 中文：地形切割度×人口密度^(-α)×通勤半径^β×气候约束，乘法结构。广州、重庆
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D54；被引用：—
-- [If upstream objects D_{D55} exist, compose F_{D55}=N(⊕_{g∈D_{D55}} g); otherwise treat F_{D55} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-e23bbcf4a92ef07f / If upstream objects D_{D55} exist, compose F_{D55}=N(⊕_{g∈D_{D55}} g); otherwise treat F_{D55} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D55；被引用：—
-- [If upstream objects D_{D56} exist, compose F_{D56}=N(⊕_{g∈D_{D56}} g); otherwise treat F_{D56} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-8833460b8b4548f0 / If upstream objects D_{D56} exist, compose F_{D56}=N(⊕_{g∈D_{D56}} g); otherwise treat F_{D56} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D56；被引用：—
-- [If upstream objects D_{D57} exist, compose F_{D57}=N(⊕_{g∈D_{D57}} g); otherwise treat F_{D57} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-91a2b10d57cfd9a9 / If upstream objects D_{D57} exist, compose F_{D57}=N(⊕_{g∈D_{D57}} g); otherwise treat F_{D57} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+- [Object D57 defines a formal_proposition within the point-fire framework. Core: 中文：沃尔顿的"解读"机制：核心疑问悬而未决时，个体对中性事件的解读被疑问偏置。这](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-b6ace5bcfff293f9 / Object D57 defines a formal_proposition within the point-fire framework. Core: 中文：沃尔顿的"解读"机制：核心疑问悬而未决时，个体对中性事件的解读被疑问偏置。这
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D57；被引用：—
-- [If upstream objects D_{D58} exist, compose F_{D58}=N(⊕_{g∈D_{D58}} g); otherwise treat F_{D58} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-8304e1778d7ec0b4 / If upstream objects D_{D58} exist, compose F_{D58}=N(⊕_{g∈D_{D58}} g); otherwise treat F_{D58} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D58；被引用：—
-- [If upstream objects D_{D59} exist, compose F_{D59}=N(⊕_{g∈D_{D59}} g); otherwise treat F_{D59} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-b01168b175dd20ed / If upstream objects D_{D59} exist, compose F_{D59}=N(⊕_{g∈D_{D59}} g); otherwise treat F_{D59} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+- [Object D59 defines a formal_proposition within the point-fire framework. Core: 中文：沃尔顿反复观察到干预在过渡期有效、稳定后失效，但未给出数学解释。本函数给出精](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-4bc29050b1a3683d / Object D59 defines a formal_proposition within the point-fire framework. Core: 中文：沃尔顿反复观察到干预在过渡期有效、稳定后失效，但未给出数学解释。本函数给出精
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D59；被引用：—
-- [If upstream objects D_{D5} exist, compose F_{D5}=N(⊕_{g∈D_{D5}} g); otherwise treat F_{D5} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-41b455eed852b5a7 / If upstream objects D_{D5} exist, compose F_{D5}=N(⊕_{g∈D_{D5}} g); otherwise treat F_{D5} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D5；被引用：—
-- [If upstream objects D_{D60} exist, compose F_{D60}=N(⊕_{g∈D_{D60}} g); otherwise treat F_{D60} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-a86b93a87d60d485 / If upstream objects D_{D60} exist, compose F_{D60}=N(⊕_{g∈D_{D60}} g); otherwise treat F_{D60} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+- [Object D60 defines a formal_proposition within the point-fire framework. Core: 中文：沃尔顿的"智慧干预"= 在关键节点做最小注入，逆转D-X52→D-X53→D](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：NFC-e61e62bf9d49e788 / Object D60 defines a formal_proposition within the point-fire framework. Core: 中文：沃尔顿的"智慧干预"= 在关键节点做最小注入，逆转D-X52→D-X53→D
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D60；被引用：—
-- [If upstream objects D_{D61} exist, compose F_{D61}=N(⊕_{g∈D_{D61}} g); otherwise treat F_{D61} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+- [Object D73 defines a mechanism_model within the point-fire framework. Core: 中文：ε→0时dim从3退化到2。. Annotation: 犹豫域维度函数，ε→0时d](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-bc8e74b809fc49b2 / Object D73 defines a mechanism_model within the point-fire framework. Core: 中文：ε→0时dim从3退化到2。. Annotation: 犹豫域维度函数，ε→0时d
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：A8, D73；被引用：—
+- [Object D85 defines a formal_proposition within the point-fire framework. Core: 中文：当ε_aware从0变正时，触发五个级联相变，五个相变是同一个相变的五个投影](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-b98a82eaf753b3c6 / Object D85 defines a formal_proposition within the point-fire framework. Core: 中文：当ε_aware从0变正时，触发五个级联相变，五个相变是同一个相变的五个投影
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：D85；被引用：—
+- [Object D90 defines a formal_proposition within the point-fire framework. Core: 中文：设计结构让估计不必要 > 估计准确后保守执行。. Annotation: 结](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-038af7b2793da039 / Object D90 defines a formal_proposition within the point-fire framework. Core: 中文：设计结构让估计不必要 > 估计准确后保守执行。. Annotation: 结
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：D90；被引用：—
+- [Object D91 defines a formal_proposition within the point-fire framework. Core: 中文：Φ = f₁(↑)×f₂(↓)必然倒U型。. Annotation: 倒U型](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-ab3539bc29540b30 / Object D91 defines a formal_proposition within the point-fire framework. Core: 中文：Φ = f₁(↑)×f₂(↓)必然倒U型。. Annotation: 倒U型
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：D91, T16；被引用：—
+- [Object T20 defines a formal_proposition within the point-fire framework. Core expression: σ_opt = √e ≈ 1.649，是独立性-充分性权衡的](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-46b426b3a9f606aa / Object T20 defines a formal_proposition within the point-fire framework. Core expression: σ_opt = √e ≈ 1.649，是独立性-充分性权衡的
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：T20；被引用：—
+- [Object T26 defines a mechanism_model within the point-fire framework. Core expression: 门控面从多到少的级联合并，每次统一减少Φ项数、增大Ω. Annot](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-e85fbb8fd7d8feef / Object T26 defines a mechanism_model within the point-fire framework. Core expression: 门控面从多到少的级联合并，每次统一减少Φ项数、增大Ω. Annot
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：T26；被引用：—
+- [Object T30 defines a mechanism_model within the point-fire framework. Core expression: 门控函数极值点展开=路径积分经典路径展开，高斯=极小熵选择. An](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-4d1674df3a136291 / Object T30 defines a mechanism_model within the point-fire framework. Core expression: 门控函数极值点展开=路径积分经典路径展开，高斯=极小熵选择. An
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：T30；被引用：—
+- [Object T34 defines a formal_proposition within the point-fire framework. Core expression: T34说Φ_QG在M_Planck附近无稳定极小点。D225](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：NFC-3ce146523623f7bf / Object T34 defines a formal_proposition within the point-fire framework. Core expression: T34说Φ_QG在M_Planck附近无稳定极小点。D225
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：D225, T34；被引用：—
+- [Object T35 defines a formal_proposition within the point-fire framework. Core expression: σ_Planck≈6.9，由高斯门控退化条件精确确定. An](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-dd2f8a9720d5a99e / Object T35 defines a formal_proposition within the point-fire framework. Core expression: σ_Planck≈6.9，由高斯门控退化条件精确确定. An
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：T35；被引用：—
+- [Object T38 defines a mechanism_model within the point-fire framework. Core expression: 量子引力和四力统一是两个不同能标上的事件. Annotation:](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-02e366ef7c4fcf3f / Object T38 defines a mechanism_model within the point-fire framework. Core expression: 量子引力和四力统一是两个不同能标上的事件. Annotation:
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：T38；被引用：—
+- [Object T39 defines a formal_proposition within the point-fire framework. Core: Φ在不同域中展现统一结构：物理Φ=零温自由能、社会Φ=权力熵、认知Φ=认知势能。三](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-8bfc6549868beb2f / Object T39 defines a formal_proposition within the point-fire framework. Core: Φ在不同域中展现统一结构：物理Φ=零温自由能、社会Φ=权力熵、认知Φ=认知势能。三
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：T39；被引用：—
+- [Object T50 defines a formal_proposition within the point-fire framework. Core: . Annotation: 植物数学优化函数. Extended: 仅依赖C(x,](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-68e08b44970d466b / Object T50 defines a formal_proposition within the point-fire framework. Core: . Annotation: 植物数学优化函数. Extended: 仅依赖C(x,
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：T50；被引用：—
+- [Object T55 defines a formal_proposition within the point-fire framework. Core: . Annotation: 植物意识函数. Extended: 仅依赖C(x,y)](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-5905450a6d06d105 / Object T55 defines a formal_proposition within the point-fire framework. Core: . Annotation: 植物意识函数. Extended: 仅依赖C(x,y)
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：T55；被引用：—
+- [Object-type counts (registry objects only): `{"ALGORITHM":1,"ARGUMENT_SCHEMA":25,"FORMAL_PROPOSITION":43,"MECHANISM_MODE](../../../reports/foundation-architecture/core-kernel-adjudication-20260713.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-ae28f9a588905bee / If upstream objects D_{D61} exist, compose F_{D61}=N(⊕_{g∈D_{D61}} g); otherwise treat F_{D61} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D61；被引用：—
-- [If upstream objects D_{D62} exist, compose F_{D62}=N(⊕_{g∈D_{D62}} g); otherwise treat F_{D62} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 可搜索名称：NFC-a80ca6285a8ffe72 / Object-type counts (registry objects only): `{"ALGORITHM":1,"ARGUMENT_SCHEMA":25,"FORMAL_PROPOSITION":43,"MECHANISM_MODE
+  - 来源：`reports/foundation-architecture/core-kernel-adjudication-20260713.md`
+  - 依赖：—；被引用：—
+- [Object: `boundary_evidence`](../../../inputs/020/formal-protocol-promotion-standard.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-0001cb466fef0c94 / Object: `boundary_evidence`
+  - 来源：`inputs/020/formal-protocol-promotion-standard.md`
+  - 依赖：—；被引用：—
+- [Object: `positive_evidence`](../../../inputs/020/formal-protocol-promotion-standard.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-19d87f68a2daf99a / Object: `positive_evidence`
+  - 来源：`inputs/020/formal-protocol-promotion-standard.md`
+  - 依赖：—；被引用：—
+- [obligation inventory 将每项承诺明确标为 `MACHINE_ENFORCED`、`HUMAN_REVIEW_ONLY` 或 `UNBOUND`。前者只表示 schema、引用、封闭 effect、路由和禁止边可执行；后两](../../../docs/architecture/epistemic-governance-kernel-and-federated-planes.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-c203134fa704303b / obligation inventory 将每项承诺明确标为 `MACHINE_ENFORCED`、`HUMAN_REVIEW_ONLY` 或 `UNBOUND`。前者只表示 schema、引用、封闭 effect、路由和禁止边可执行；后两
+  - 来源：`docs/architecture/epistemic-governance-kernel-and-federated-planes.md`
+  - 依赖：—；被引用：—
+- [obligations: \[开放问题\](../../../RESULTS/OPEN-QUESTIONS.md)、\[纠正与撤回\](../../../RESULTS/CORRECTIONS.md)、Foundation 的证明/实证义务和 Results Book 的显式](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-abd4cac951f2a101 / obligations: \[开放问题\](../../../RESULTS/OPEN-QUESTIONS.md)、\[纠正与撤回\](../../../RESULTS/CORRECTIONS.md)、Foundation 的证明/实证义务和 Results Book 的显式
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [obligations: 已关闭当前入口/路径迁移、当前 Pages 引用、人类资产/整体图/火种确定性投影与仓库内链接校验；历史记录仍需保留其原始 provenance。继续开放：每次正式 main 合并追加 delta、火种按 `SEE](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-4a538e6dd38aba52 / obligations: 已关闭当前入口/路径迁移、当前 Pages 引用、人类资产/整体图/火种确定性投影与仓库内链接校验；历史记录仍需保留其原始 provenance。继续开放：每次正式 main 合并追加 delta、火种按 `SEE
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [obligations: 旧来源的 Git 历史、原始路径、ID、blob、处置和归档内容继续由迁移清册承载；人类文字仍需回到机器记录、M/E、证据、proof、claim ceiling 与开放义务；机器专属批量记录、人工散文审校、外部证](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-f5d729eeb08bb532 / obligations: 旧来源的 Git 历史、原始路径、ID、blob、处置和归档内容继续由迁移清册承载；人类文字仍需回到机器记录、M/E、证据、proof、claim ceiling 与开放义务；机器专属批量记录、人工散文审校、外部证
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [Observer：准备下一轮史料核验的研究者。Decision question：哪项外部材料最可能改变机制排序？地图版本 `JIN-ATLAS-v0.1`；地图位置和中心性不构成证明。](../../../reports/publication/jin-rise-point-fire-analysis.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-722fdd8b844c4ba2 / If upstream objects D_{D62} exist, compose F_{D62}=N(⊕_{g∈D_{D62}} g); otherwise treat F_{D62} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D62；被引用：—
-- [If upstream objects D_{D63} exist, compose F_{D63}=N(⊕_{g∈D_{D63}} g); otherwise treat F_{D63} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 可搜索名称：NFC-c2697f66cb1123bf / Observer：准备下一轮史料核验的研究者。Decision question：哪项外部材料最可能改变机制排序？地图版本 `JIN-ATLAS-v0.1`；地图位置和中心性不构成证明。
+  - 来源：`reports/publication/jin-rise-point-fire-analysis.md`
+  - 依赖：—；被引用：—
+- [one official causal-inference methodological record.](../../../reports/external-research/pointfire-seven-track-replay-r1/REPLAY-REPORT.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-9fa2fc32761d67cd / If upstream objects D_{D63} exist, compose F_{D63}=N(⊕_{g∈D_{D63}} g); otherwise treat F_{D63} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D63；被引用：—
-- [If upstream objects D_{D64} exist, compose F_{D64}=N(⊕_{g∈D_{D64}} g); otherwise treat F_{D64} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 可搜索名称：NFC-0ae47acb1dca9f43 / one official causal-inference methodological record.
+  - 来源：`reports/external-research/pointfire-seven-track-replay-r1/REPLAY-REPORT.md`
+  - 依赖：—；被引用：—
+- [Ontology learning towards expressiveness* — `10.1016/j.cosrev.2024.100693`](../../../data/external-research/088-FINAL-REPORT.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-fefaa50b58b9a6c8 / Ontology learning towards expressiveness* — `10.1016/j.cosrev.2024.100693`
+  - 来源：`data/external-research/088-FINAL-REPORT.md`
+  - 依赖：—；被引用：—
+- [Ontology learning towards expressiveness: A survey](../../../data/external-research/088-external-source-atlas-v1.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-b2c2d3783de2e89b / Ontology learning towards expressiveness: A survey
+  - 来源：`data/external-research/088-external-source-atlas-v1.jsonl`
+  - 依赖：—；被引用：—
+- [Ontology-Based Process Modelling* — `10.3390/pr9040592`](../../../data/external-research/088-FINAL-REPORT.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-827b94e8811d2126 / Ontology-Based Process Modelling* — `10.3390/pr9040592`
+  - 来源：`data/external-research/088-FINAL-REPORT.md`
+  - 依赖：—；被引用：—
+- [Ontology-Based Process Modelling-with Examples of Physical Topologies](../../../data/external-research/088-external-source-atlas-medium.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-f29fb6016e4047b7 / Ontology-Based Process Modelling-with Examples of Physical Topologies
+  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
+  - 依赖：—；被引用：—
+- [ontology: 250/250 PARTIAL](../../../data/discipline-projection/087-execution-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-c7032f1561d00cfe / ontology: 250/250 PARTIAL
+  - 来源：`data/discipline-projection/087-execution-report.md`
+  - 依赖：—；被引用：—
+- [Open system boundary example; not an ecological causal proof.](../../../data/architecture/probabilistic-system-dynamics/examples/open-ecosystem.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-50b64d12de36921e / Open system boundary example; not an ecological causal proof.
+  - 来源：`data/architecture/probabilistic-system-dynamics/examples/open-ecosystem.json`
+  - 依赖：—；被引用：—
+- [O₂(x,y) := T245(对数同构)**](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-42c46e6d9e71880b / O₂(x,y) := T245(对数同构)**
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：T245；被引用：—
+- [O₃(x,y) := Φ势函数同构**](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-03475250d82bd371 / O₃(x,y) := Φ势函数同构**
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [O₈(x,y) := 统一因果元函数同构**](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-9554a568312a3a08 / O₈(x,y) := 统一因果元函数同构**
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [P vs NP 问题 → **pending**（需要外部数学证明）](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-65f838578bcfc919 / P vs NP 问题 → **pending**（需要外部数学证明）
+  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
+  - 依赖：—；被引用：—
+- [P vs NP 问题本身：**pending**（需要外部数学证明）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-edf26fcea5ea8a3d / P vs NP 问题本身：**pending**（需要外部数学证明）
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [P vs NP 问题（需要外部数学证明）](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-08e7724219a278c9 / P vs NP 问题（需要外部数学证明）
+  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
+  - 依赖：—；被引用：—
+- [P vs NP 问题：外部数学证明（被数学界同行审查通过）](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-cda287148ec9c1f7 / P vs NP 问题：外部数学证明（被数学界同行审查通过）
+  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
+  - 依赖：—；被引用：—
+- [p--分布形态函数](../../../data/foundation/adjudications/079-method-audit.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D286 / p--分布形态函数 / D286
+  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
+  - 依赖：D271, D360；被引用：NFC-27ad58f60d836d4c, NFC-47e269728ab10afb, NFC-f2a6f1528a7911a9, NFC-f87898a652534ada
+- [p-临界标度函数](../../../data/foundation/adjudications/079-method-audit.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D373 / p-临界标度函数 / D373
+  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
+  - 依赖：D361, D430, D431, D450；被引用：NFC-06cd519b18d30ab3, NFC-0e7379ff7ce423c3, NFC-4767551889089918, NFC-6dde9351dfa1e655
+- [p-放大涨落-有限n联合函数](../../../data/foundation/adjudications/079-method-audit.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D359 / p-放大涨落-有限n联合函数 / D359
+  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
+  - 依赖：D271, D289, D290, D360；被引用：CLAIM-D402, NFC-05ff7ce0a1f4a050, NFC-59c69e4dbb2f1de5, NFC-665b10e3b5eb6c3b
+- [p-敏感度函数](../../../data/foundation/adjudications/079-method-audit.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D317 / p-敏感度函数 / D317
+  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
+  - 依赖：D271, D289, D290, D306；被引用：NFC-3caa48a7de425dd4, NFC-4443d135b510c32f, NFC-a827ec01ffe2405c, NFC-fc62f23b58e4fa44
+- [p-涨落-噪声耦合函数](../../../data/foundation/adjudications/079-method-audit.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D345 / p-涨落-噪声耦合函数 / D345
+  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
+  - 依赖：D271, D289, D290, D360；被引用：NFC-07fbb377e82826b0, NFC-19bcb570d50e250f, NFC-7999f46d31a4e41c, NFC-b186ca02dad4c2b5
+- [p-涨落函数](../../../data/foundation/adjudications/079-method-audit.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D331 / p-涨落函数 / D331
+  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
+  - 依赖：D271, D289, D290, D334；被引用：CLAIM-D331, CLAIM-D414, NFC-078ed76335ef101b, NFC-2e46296a373bafb4
+- [P1 proof/equivalence（2 条）— 形式证明直接需要](../../../reports/foundation-architecture/085-backlog-prioritization.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-a7255c7b06ec4add / If upstream objects D_{D64} exist, compose F_{D64}=N(⊕_{g∈D_{D64}} g); otherwise treat F_{D64} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D64；被引用：—
-- [If upstream objects D_{D65} exist, compose F_{D65}=N(⊕_{g∈D_{D65}} g); otherwise treat F_{D65} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 可搜索名称：NFC-bacc07c85c282b64 / P1 proof/equivalence（2 条）— 形式证明直接需要
+  - 来源：`reports/foundation-architecture/085-backlog-prioritization.md`
+  - 依赖：P1；被引用：—
+- [P1 proof/equivalence（2 条）— 影响基础架构](../../../reports/foundation-architecture/085-backlog-prioritization.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-e85d0e3386614c00 / If upstream objects D_{D65} exist, compose F_{D65}=N(⊕_{g∈D_{D65}} g); otherwise treat F_{D65} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D65；被引用：—
-- [If upstream objects D_{D66} exist, compose F_{D66}=N(⊕_{g∈D_{D66}} g); otherwise treat F_{D66} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 可搜索名称：NFC-f22227461a2836e8 / P1 proof/equivalence（2 条）— 影响基础架构
+  - 来源：`reports/foundation-architecture/085-backlog-prioritization.md`
+  - 依赖：P1；被引用：—
+- [P1: proof/equivalence (2 条)](../../../reports/foundation-architecture/084-max-adjudication-report.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-85a03b021524d2e2 / If upstream objects D_{D66} exist, compose F_{D66}=N(⊕_{g∈D_{D66}} g); otherwise treat F_{D66} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D66；被引用：—
-- [If upstream objects D_{D67} exist, compose F_{D67}=N(⊕_{g∈D_{D67}} g); otherwise treat F_{D67} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 可搜索名称：NFC-2b286037f74011a5 / P1: proof/equivalence (2 条)
+  - 来源：`reports/foundation-architecture/084-max-adjudication-report.md`
+  - 依赖：P1；被引用：—
+- [P4 已降级为 DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE 的 172 条 — 不值得证明](../../../reports/foundation-architecture/085-backlog-prioritization.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-b0f9b18ab76799b6 / If upstream objects D_{D67} exist, compose F_{D67}=N(⊕_{g∈D_{D67}} g); otherwise treat F_{D67} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D67；被引用：—
-- [If upstream objects D_{D6} exist, compose F_{D6}=N(⊕_{g∈D_{D6}} g); otherwise treat F_{D6} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 可搜索名称：NFC-222eddd4831a5871 / P4 已降级为 DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE 的 172 条 — 不值得证明
+  - 来源：`reports/foundation-architecture/085-backlog-prioritization.md`
+  - 依赖：P4；被引用：—
+- [P5 已降级为 DOWNGRADE_TO_EMPIRICAL_ASSOCIATION 的 53 条 — 不是证明问题](../../../reports/foundation-architecture/085-backlog-prioritization.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-60e0b72999f6044f / If upstream objects D_{D6} exist, compose F_{D6}=N(⊕_{g∈D_{D6}} g); otherwise treat F_{D6} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D6；被引用：—
-- [If upstream objects D_{D72} exist, compose F_{D72}=N(⊕_{g∈D_{D72}} g); otherwise treat F_{D72} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 可搜索名称：NFC-6cfbd166b444906c / P5 已降级为 DOWNGRADE_TO_EMPIRICAL_ASSOCIATION 的 53 条 — 不是证明问题
+  - 来源：`reports/foundation-architecture/085-backlog-prioritization.md`
+  - 依赖：P5；被引用：—
+- [P7 裁决要点：3 条精确跨域声明均缺少单位/量纲验证、参数来源或跨领域外推合法性证明。](../../../reports/foundation-architecture/084-max-adjudication-report.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-c47bda5a16c1a11a / If upstream objects D_{D72} exist, compose F_{D72}=N(⊕_{g∈D_{D72}} g); otherwise treat F_{D72} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D72；被引用：—
-- [If upstream objects D_{D73} exist, compose F_{D73}=N(⊕_{g∈D_{D73}} g); otherwise treat F_{D73} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 可搜索名称：NFC-7c98de892c450ab5 / P7 裁决要点：3 条精确跨域声明均缺少单位/量纲验证、参数来源或跨领域外推合法性证明。
+  - 来源：`reports/foundation-architecture/084-max-adjudication-report.md`
+  - 依赖：P7；被引用：—
+- [P8 无 formal-type strong terms 的 82 条 — 不需要形式化证明](../../../reports/foundation-architecture/085-backlog-prioritization.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-97432ae5f6b9dccc / If upstream objects D_{D73} exist, compose F_{D73}=N(⊕_{g∈D_{D73}} g); otherwise treat F_{D73} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D73；被引用：—
-- [If upstream objects D_{D74} exist, compose F_{D74}=N(⊕_{g∈D_{D74}} g); otherwise treat F_{D74} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 可搜索名称：NFC-640a998e20708e39 / P8 无 formal-type strong terms 的 82 条 — 不需要形式化证明
+  - 来源：`reports/foundation-architecture/085-backlog-prioritization.md`
+  - 依赖：P8；被引用：—
+- [P_exit = f(ε_aware, C_exit, R_perceived)（D9展开） AI与人类的对比： \| 参数 \| 人类 \| 当前AI \| \|------\|------\|--------\| \| C_exit（退出成本） \| 高（](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a1145af087c4bfbb / P_exit = f(ε_aware, C_exit, R_perceived)（D9展开） AI与人类的对比： \| 参数 \| 人类 \| 当前AI \| \|------\|------\|--------\| \| C_exit（退出成本） \| 高（
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D9；被引用：—
+- [P_exit(t,L,C) 退出概率](../../../FOUNDATION-64-PROPAGATION.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：A9 / P_exit(t,L,C) 退出概率 / A9
+  - 来源：`FOUNDATION-64-PROPAGATION.jsonl`
+  - 依赖：A1, A3, A5, A8；被引用：D481, D482, D483, D484
+- [P_meta 元协议投影 → 历史制度的元协议（契约协议、对称性协议、分布式学习等）](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-1fe986333eab8632 / P_meta 元协议投影 → 历史制度的元协议（契约协议、对称性协议、分布式学习等）
+  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
+  - 依赖：—；被引用：—
+- [P_meta：作为 D597 的跨域扩展注释最合适——记录"当量化排名与公共资格/晋升/荣誉挂钩时，会固化新的隐性分层"，并将三领域复现作为 D597 pending 解除的支撑证据。不再单列独立函数，避免与 D597 重复计数。](../../../outputs/audit/cross-domain-candidate-function-review-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-4b714970c5b59232 / P_meta：作为 D597 的跨域扩展注释最合适——记录"当量化排名与公共资格/晋升/荣誉挂钩时，会固化新的隐性分层"，并将三领域复现作为 D597 pending 解除的支撑证据。不再单列独立函数，避免与 D597 重复计数。
+  - 来源：`outputs/audit/cross-domain-candidate-function-review-20260708.md`
+  - 依赖：D597；被引用：—
+- [P_sustain空间互补函数](../../../data/foundation/adjudications/079-method-audit.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D481 / P_sustain空间互补函数 / D481
+  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
+  - 依赖：A5, A9, D451, D476；被引用：NFC-8209408472af7d54, NFC-83f1df80cdced375, NFC-b448549dae005910
+- [Pack 不拥有 Agent lifecycle、executor 选择、generic permission、checkpoint/resume、Owner acceptance 或 Kernel definition。知识 Pack 的](../../../packs/knowledge/README.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-de93541e9ed018e0 / Pack 不拥有 Agent lifecycle、executor 选择、generic permission、checkpoint/resume、Owner acceptance 或 Kernel definition。知识 Pack 的
+  - 来源：`packs/knowledge/README.md`
+  - 依赖：—；被引用：—
+- [Pages 的仓库外启用状态不是本分支文件能够证明的事实；普通合并后须通过 GitHub API 停用并在 1111 回执记录前后状态。](../../../reports/foundation-architecture/101-human-readable-surfaces-self-correction-closeout.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-7fd85794c5e39264 / If upstream objects D_{D74} exist, compose F_{D74}=N(⊕_{g∈D_{D74}} g); otherwise treat F_{D74} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D74；被引用：—
-- [If upstream objects D_{D75} exist, compose F_{D75}=N(⊕_{g∈D_{D75}} g); otherwise treat F_{D75} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 可搜索名称：NFC-08a46a44cbd41754 / Pages 的仓库外启用状态不是本分支文件能够证明的事实；普通合并后须通过 GitHub API 停用并在 1111 回执记录前后状态。
+  - 来源：`reports/foundation-architecture/101-human-readable-surfaces-self-correction-closeout.md`
+  - 依赖：—；被引用：—
+- [Passing this gate is not proof of external fact, mechanism truth, or theory upgrade.](../../../docs/architecture/compression-integrity-gate.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-0c7147e16248f5b8 / Passing this gate is not proof of external fact, mechanism truth, or theory upgrade.
+  - 来源：`docs/architecture/compression-integrity-gate.md`
+  - 依赖：—；被引用：—
+- [Peer Review Report For: A Bioconductor workflow for the Bayesian analysis of spatial proteomics \[version 1; peer review:](../../../data/external-research/088-external-source-atlas-v1.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-89ab8297b43a14c3 / Peer Review Report For: A Bioconductor workflow for the Bayesian analysis of spatial proteomics \[version 1; peer review:
+  - 来源：`data/external-research/088-external-source-atlas-v1.jsonl`
+  - 依赖：—；被引用：—
+- [pending 项不进入函数新增，只作为未来验证锚点](../../../docs/getnote-collision-workflow-final-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-2bcbb3ab500240dc / pending 项不进入函数新增，只作为未来验证锚点
+  - 来源：`docs/getnote-collision-workflow-final-20260708.md`
+  - 依赖：—；被引用：—
+- [Per-surface external attestations and lifecycle blockers:](../../../templates/operations/execution-result-template.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-ebd47c26575ab0c3 / Per-surface external attestations and lifecycle blockers:
+  - 来源：`templates/operations/execution-result-template.md`
+  - 依赖：—；被引用：—
+- [Per-task latent programs are ephemeral and have no registry, provenance, version, approval, deprecation or rollback life](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-0e307d57f43f54c5 / Per-task latent programs are ephemeral and have no registry, provenance, version, approval, deprecation or rollback life
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [perception := P(state) = {perceived information}（感知函数）](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-53608C960F3B1928 / perception := P(state) = {perceived information}（感知函数） / IMPLICIT-53608C960F3B1928 / IMPLICIT-6768A17E7FDFDFD0
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [perception := P(state) = {perceived information}（感知函数）](../../../docs/phi_meta_law.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-6768A17E7FDFDFD0 / perception := P(state) = {perceived information}（感知函数） / IMPLICIT-6768A17E7FDFDFD0 / IMPLICIT-53608C960F3B1928
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [Perelman用Ricci流证明，8种几何是"原子"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-f92a8de245cec139 / If upstream objects D_{D75} exist, compose F_{D75}=N(⊕_{g∈D_{D75}} g); otherwise treat F_{D75} as an axiom seed.
+  - 可搜索名称：NFC-4b01213ce039eedf / Perelman用Ricci流证明，8种几何是"原子"
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D75；被引用：—
+  - 依赖：—；被引用：—
+- [Persistent checkpoints, code/descriptions, vectors, events and overwrite files support lifecycle, but provenance, versio](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-e57ec7dd1bb7ba21 / Persistent checkpoints, code/descriptions, vectors, events and overwrite files support lifecycle, but provenance, versio
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [Phase B planner and NonImpactProof: 3/3 PASS.](../../../reports/operations/121Q32I-phase-d-validation-closeout.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-5088a3cf7d1198f1 / Phase B planner and NonImpactProof: 3/3 PASS.
+  - 来源：`reports/operations/121Q32I-phase-d-validation-closeout.md`
+  - 依赖：—；被引用：—
+- [Pilot Formal Audit](../../ASSET-CARDS.md#asset-hr-d4b5c8e581f06e23)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：Pilot Formal Audit / pilot-formal-audit-20260712
+  - 来源：`reports/math-foundation/pilot-formal-audit-20260712.md`
+  - 依赖：—；被引用：—
+- [Planner and NonImpactProof](../../../docs/architecture/incremental-execution.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-998c952769dc3883 / Planner and NonImpactProof
+  - 来源：`docs/architecture/incremental-execution.md`
+  - 依赖：—；被引用：—
+- [PLE repeatedly unfolds enabled guarded definitions and is sound, complete for the paper's equational-proof relation, and](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-11472a69a417c679 / PLE repeatedly unfolds enabled guarded definitions and is sound, complete for the paper's equational-proof relation, and
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [PR #56 / 121Q24 已在验收后合并：迭代操作法与同步验证契约是当前仓库操作能力。它约束状态改变任务怎样记录 gap、claim ceiling、同步矩阵、验证和回执，但不证明任何结论的真理、价值、因果、完整性或正确性。](../../../docs/VERSIONING.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-9d7557ed4d174405 / PR #56 / 121Q24 已在验收后合并：迭代操作法与同步验证契约是当前仓库操作能力。它约束状态改变任务怎样记录 gap、claim ceiling、同步矩阵、验证和回执，但不证明任何结论的真理、价值、因果、完整性或正确性。
+  - 来源：`docs/VERSIONING.md`
+  - 依赖：—；被引用：—
+- [PR #57 / Q25 / Q25C were independently accepted, merged and closed as current through Q25D. Human front doors now expose](../../../CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-d83b03121730eeb9 / PR #57 / Q25 / Q25C were independently accepted, merged and closed as current through Q25D. Human front doors now expose
+  - 来源：`CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [Practical scientific deployment still lacks robust interpretability metrics, cross-domain benchmarks, reproducible stoch](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-1a4da30233b6186c / Practical scientific deployment still lacks robust interpretability metrics, cross-domain benchmarks, reproducible stoch
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [Preserve Ψ0 legacy source text; do not silently overwrite it or treat it as current proof/function authority.](../../../llms.txt)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-0e93a2503e706f89 / Preserve Ψ0 legacy source text; do not silently overwrite it or treat it as current proof/function authority.
+  - 来源：`llms.txt`
+  - 依赖：—；被引用：—
+- [Prioritize MF predicates, Y1 operational semantics, protocol typing, theorem candidates, then high-risk D records. Each](../../../reports/foundation-architecture/formalization-roadmap-20260712.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-e30bb9bda4280e8e / Prioritize MF predicates, Y1 operational semantics, protocol typing, theorem candidates, then high-risk D records. Each
+  - 来源：`reports/foundation-architecture/formalization-roadmap-20260712.md`
+  - 依赖：Y1；被引用：—
+- [Priority ordering ensures proof equivalence (P1) and isomorphism (P4) items are processed first](../../../reports/foundation-architecture/083-escalation-routing-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-cc8f68c20c0d702d / Priority ordering ensures proof equivalence (P1) and isomorphism (P4) items are processed first
+  - 来源：`reports/foundation-architecture/083-escalation-routing-report.md`
+  - 依赖：P1, P4；被引用：—
+- [Project Ontology](../../../docs/math-foundation/00-project-ontology.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-5110e7ba0aa6cd68 / Project Ontology
+  - 来源：`docs/math-foundation/00-project-ontology.md`
+  - 依赖：—；被引用：—
+- [projection response, not learning proof](../../../data/architecture/adaptive-relational-network/real-history/after-projection.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a9c27aa5ac827f7c / projection response, not learning proof
+  - 来源：`data/architecture/adaptive-relational-network/real-history/after-projection.json`
+  - 依赖：—；被引用：—
+- [proof and circularity;](../../../docs/foundation/future-claim-admission-protocol.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-402c07fdc33d29fc / proof and circularity;
+  - 来源：`docs/foundation/future-claim-admission-protocol.md`
+  - 依赖：—；被引用：—
+- [Proof and function composition are explicit; no input-dependent router or cross-carrier composer is supplied.](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-25d844266ed1d996 / Proof and function composition are explicit; no input-dependent router or cross-carrier composer is supplied.
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [Proof Artifact 与 Evidence Obligation 接口](../../../docs/foundation/architecture-structure-freeze-v1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-006e3aaead918363 / Proof Artifact 与 Evidence Obligation 接口
+  - 来源：`docs/foundation/architecture-structure-freeze-v1.md`
+  - 依赖：—；被引用：—
+- [Proof artifact 与 evidence obligation 接口** — 输入/输出/要求](../../../reports/foundation-architecture/085-architecture-structure-freeze.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-15fd6c928fba1cda / Proof artifact 与 evidence obligation 接口** — 输入/输出/要求
+  - 来源：`reports/foundation-architecture/085-architecture-structure-freeze.md`
+  - 依赖：—；被引用：—
+- [Proof Artifact 接口](../../../docs/foundation/architecture-structure-freeze-v1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-ecd720e26eb342f1 / Proof Artifact 接口
+  - 来源：`docs/foundation/architecture-structure-freeze-v1.md`
+  - 依赖：—；被引用：—
+- [Proof artifacts: 1 claim with Lean/Z3 realizations. Replayable counterexample/countermodel records: 2.](../../../reports/foundation-architecture/core-proof-and-countermodel-report-20260713.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-b3f1e131d7276816 / Proof artifacts: 1 claim with Lean/Z3 realizations. Replayable counterexample/countermodel records: 2.
+  - 来源：`reports/foundation-architecture/core-proof-and-countermodel-report-20260713.md`
+  - 依赖：—；被引用：—
+- [Proof Boundary](../../../reports/architecture/121Q23C-operational-arn-real-history-validation.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-750832eb8ca39a6c / Proof Boundary
+  - 来源：`reports/architecture/121Q23C-operational-arn-real-history-validation.md`
+  - 依赖：—；被引用：—
+- [Proof combinators, dependent application, unfolding and algebraic constraints provide explicit symbolic composition rule](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-3797e2c9a03a9411 / Proof combinators, dependent application, unfolding and algebraic constraints provide explicit symbolic composition rule
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [Proof Obligation](../../../data/foundation/schemas/proof-obligation.schema.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-e6a57d58ca2258d4 / Proof Obligation
+  - 来源：`data/foundation/schemas/proof-obligation.schema.json`
+  - 依赖：—；被引用：—
+- [Proof Obligations](../../../docs/math-foundation/04-proof-obligations.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-9a3be8cd0806c9aa / Proof Obligations
+  - 来源：`docs/math-foundation/04-proof-obligations.md`
+  - 依赖：—；被引用：—
+- [Proof obligations and termination labels are observable, while probabilistic uncertainty, durable provenance and lifecyc](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-32ddebddd2da9f4a / Proof obligations and termination labels are observable, while probabilistic uncertainty, durable provenance and lifecyc
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [Proof obligations: 353 条](../../../reports/foundation-architecture/084-max-adjudication-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-7ab3b75ea7af6432 / Proof obligations: 353 条
+  - 来源：`reports/foundation-architecture/084-max-adjudication-report.md`
+  - 依赖：—；被引用：—
+- [Proof Priority Queue](../../../reports/foundation-architecture/085-backlog-prioritization.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-f118d722978b9e49 / Proof Priority Queue
+  - 来源：`reports/foundation-architecture/085-backlog-prioritization.md`
+  - 依赖：—；被引用：—
+- [Proof sketches and prototype figures validate feasibility, while incomplete central features, one-run plots, omitted dia](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-cb9180e60f588385 / Proof sketches and prototype figures validate feasibility, while incomplete central features, one-run plots, omitted dia
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [proof 不自动提升 E；evidence 不修复 ill-typed object。](../../../docs/architecture/epistemic-governance-kernel-and-federated-planes.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-f1a5f7bd7dc99a51 / proof 不自动提升 E；evidence 不修复 ill-typed object。
+  - 来源：`docs/architecture/epistemic-governance-kernel-and-federated-planes.md`
+  - 依赖：—；被引用：—
+- [proof(p) := ∃sequence(s_1, s_2, ..., s_n), s_n = p ∧ ∀i, s_{i+1} ⊢ s_i（证明序列）](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-52cb60bdde473505 / proof(p) := ∃sequence(s_1, s_2, ..., s_n), s_n = p ∧ ∀i, s_{i+1} ⊢ s_i（证明序列）
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [Proof/evidence obligation 引用完整性: ✅ 通过](../../../reports/foundation-architecture/084-max-adjudication-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-15249928ae514b6f / Proof/evidence obligation 引用完整性: ✅ 通过
+  - 来源：`reports/foundation-architecture/084-max-adjudication-report.md`
+  - 依赖：—；被引用：—
+- [proof;](../../../docs/architecture/effectual-action-plane.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-c1cda26362828b69 / proof;
+  - 来源：`docs/architecture/effectual-action-plane.md`
+  - 依赖：—；被引用：—
+- [proof_obligation, evidence_obligation](../../../docs/foundation/architecture-structure-freeze-v1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-e9dfd688c139ee36 / proof_obligation, evidence_obligation
+  - 来源：`docs/foundation/architecture-structure-freeze-v1.md`
+  - 依赖：—；被引用：—
+- [proof_status, evidence_status, scope_status, provenance_status](../../../docs/foundation/architecture-structure-freeze-v1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-b6e97add692eb9ba / proof_status, evidence_status, scope_status, provenance_status
+  - 来源：`docs/foundation/architecture-structure-freeze-v1.md`
+  - 依赖：—；被引用：—
+- [Proof（34条）**：低优先 — 形式化证明（除 P1 外）](../../../reports/foundation-architecture/085-backlog-prioritization.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-fbb24b418a8b710e / Proof（34条）**：低优先 — 形式化证明（除 P1 外）
+  - 来源：`reports/foundation-architecture/085-backlog-prioritization.md`
+  - 依赖：P1；被引用：—
+- [propagation step end-to-end. That is the §6 proof and is established by opening PR #163 and letting the remote](../../../docs/foundation/task-107-incident-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-88adf9e6dd896430 / propagation step end-to-end. That is the §6 proof and is established by opening PR #163 and letting the remote
+  - 来源：`docs/foundation/task-107-incident-report.md`
+  - 依赖：—；被引用：—
+- [Propositions-as-types plus dependent functions, pairs and sums can encode natural-deduction proofs while SMT handles qua](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-29348d26495a6b82 / Propositions-as-types plus dependent functions, pairs and sums can encode natural-deduction proofs while SMT handles qua
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [Protocol 层描述生成规则；案例验证的是函数与框架，而非协议本身作为独立资产被采纳。](../../../docs/protocols/protocol-architecture.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：NFC-845322a9cf4838f2 / Protocol 层描述生成规则；案例验证的是函数与框架，而非协议本身作为独立资产被采纳。
+  - 来源：`docs/protocols/protocol-architecture.md`
+  - 依赖：—；被引用：—
+- [PROVED 必须链接受支持后端或完整、待审的人类证明工件。](../../../FOUNDATION.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-2f240aeb81d1ece5 / PROVED 必须链接受支持后端或完整、待审的人类证明工件。
+  - 来源：`FOUNDATION.md`
+  - 依赖：—；被引用：—
+- [Proved:** the latent Foundation drift is repaired; every Git path is now governed by a fast, always-on](../../../docs/foundation/task-107-incident-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-32099ff811b71c26 / Proved:** the latent Foundation drift is repaired; every Git path is now governed by a fast, always-on
+  - 来源：`docs/foundation/task-107-incident-report.md`
+  - 依赖：—；被引用：—
+- [PROVED_THEOREM** — claim is a provable theorem; update proof_status and confidence](../../../reports/foundation-architecture/083-max-queue-readiness.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-8635c6847b124d4e / PROVED_THEOREM** — claim is a provable theorem; update proof_status and confidence
+  - 来源：`reports/foundation-architecture/083-max-queue-readiness.md`
+  - 依赖：—；被引用：—
+- [Provenance Audit](../../ASSET-CARDS.md#asset-hr-71ceb8486b492bc9)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：Provenance Audit / provenance-audit-20260712
+  - 来源：`reports/math-foundation/provenance-audit-20260712.md`
+  - 依赖：—；被引用：—
+- [Pseudocode serves as informal line-level specification. Each pseudocode line corresponds to ~1-2 code statements. Howeve](../../../data/external-research/121-fulltext-resolver/121q2/acceptance/S120-018.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-41f77511ccb27cb9 / Pseudocode serves as informal line-level specification. Each pseudocode line corresponds to ~1-2 code statements. Howeve
+  - 来源：`data/external-research/121-fulltext-resolver/121q2/acceptance/S120-018.json`
+  - 依赖：—；被引用：—
+- [psi0_path = os.path.join(BASE_DIR, "已迁移的历史函数来源/0001-Ψ₀元函数完整数学定义.md")](../../../data/external-research/120-function-paradigm-atlas/120-validator.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-d3573051fd95b15c / psi0_path = os.path.join(BASE_DIR, "已迁移的历史函数来源/0001-Ψ₀元函数完整数学定义.md")
+  - 来源：`data/external-research/120-function-paradigm-atlas/120-validator.py`
+  - 依赖：—；被引用：—
+- [psychological facts, or causal effects.](../../../reports/external-research/pointfire-getnote-external-verification-r1-20260813.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-9f000409d590a215 / psychological facts, or causal effects.
+  - 来源：`reports/external-research/pointfire-getnote-external-verification-r1-20260813.md`
+  - 依赖：—；被引用：—
+- [Publication and code provenance are available, but no artifact registry lifecycle or version-state machine is specified.](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-f7268ad6a0f5a094 / Publication and code provenance are available, but no artifact registry lifecycle or version-state machine is specified.
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [Purpose: avoid overstating evidence.](../../../inputs/020/formal-protocol-promotion-standard.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-ebbc0fcacc6aff97 / Purpose: avoid overstating evidence.
+  - 来源：`inputs/020/formal-protocol-promotion-standard.md`
+  - 依赖：—；被引用：—
+- [Purpose: keep lifecycle states unambiguous.](../../../inputs/020/formal-protocol-promotion-standard.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-5073f711e39eef84 / Purpose: keep lifecycle states unambiguous.
+  - 来源：`inputs/020/formal-protocol-promotion-standard.md`
+  - 依赖：—；被引用：—
+- [Purpose: separate internal inference from external proof.](../../../inputs/020/formal-protocol-promotion-standard.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-3d33b7f5f3c0611f / Purpose: separate internal inference from external proof.
+  - 来源：`inputs/020/formal-protocol-promotion-standard.md`
+  - 依赖：—；被引用：—
+- [Python APIs, configs, tensor carriers, and artifact files are concrete, but formal function semantics and shape/effect c](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-d67672c56b4883bb / Python APIs, configs, tensor carriers, and artifact files are concrete, but formal function semantics and shape/effect c
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [Q-0025 补充 \[D160\](docs/zh/functions/items/D160.md) 的强化学习统一案例：偏好、愉悦、选择和成瘾可写成同一奖励势函数的不同实例。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-1f7b6ac6de829f13 / Q-0025 补充 \[D160\](docs/zh/functions/items/D160.md) 的强化学习统一案例：偏好、愉悦、选择和成瘾可写成同一奖励势函数的不同实例。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D160；被引用：—
+- [Q-0032 将植物人醒不来抽象为唤醒-意识网络自举循环未闭合。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-9753cd90736e873d / Q-0032 将植物人醒不来抽象为唤醒-意识网络自举循环未闭合。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [Q12 separates action and mechanism; Q13 controls distributions and attractors; Q14 prevents maps from becoming proof.](../../../reports/architecture/121Q22-probability-system-gap-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-c02deed87f087eef / Q12 separates action and mechanism; Q13 controls distributions and attractors; Q14 prevents maps from becoming proof.
+  - 来源：`reports/architecture/121Q22-probability-system-gap-audit.md`
+  - 依赖：—；被引用：—
+- [Q14 Atlas can project MCF views, but map position is not causal proof.](../../../docs/architecture/multiscale-causal-fabric.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-d6a25f6b733b080e / Q14 Atlas can project MCF views, but map position is not causal proof.
+  - 来源：`docs/architecture/multiscale-causal-fabric.md`
+  - 依赖：—；被引用：—
+- [Q14 can project PSD maps, but visual position and numbers are not proof.](../../../reports/architecture/121Q22-probabilistic-system-dynamics-validation.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-cf4d7f6d3794c1b9 / Q14 can project PSD maps, but visual position and numbers are not proof.
+  - 来源：`reports/architecture/121Q22-probabilistic-system-dynamics-validation.md`
+  - 依赖：—；被引用：—
+- [Q14: Atlas may project fabric views, but map position, edge presence, stage, visual proximity, and centrality are not pr](../../../reports/architecture/121Q21R-multiscale-causal-fabric-validation.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-2cb07bdebe9cccac / Q14: Atlas may project fabric views, but map position, edge presence, stage, visual proximity, and centrality are not pr
+  - 来源：`reports/architecture/121Q21R-multiscale-causal-fabric-validation.md`
+  - 依赖：—；被引用：—
+- [Q24 建立的迭代操作法已在 PR #56 验收并合并后成为当前仓库操作能力；未来状态改变任务必须按 `ITERATION.md` 记录 gap、claim ceiling、同步矩阵、验证和回执。遵循该方法不证明真理、价值、因果、完整性或正](../../../AI-HANDOFF.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-6d1897b5f5388c60 / Q24 建立的迭代操作法已在 PR #56 验收并合并后成为当前仓库操作能力；未来状态改变任务必须按 `ITERATION.md` 记录 gap、claim ceiling、同步矩阵、验证和回执。遵循该方法不证明真理、价值、因果、完整性或正
+  - 来源：`AI-HANDOFF.md`
+  - 依赖：—；被引用：—
+- [Q25 and Q25C are current repository capabilities. Q25B remains superseded non-ready candidate history. Method 1.1.0 deri](../../../reports/operations/121Q25D-current-closeout.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-66fe347795a4cc3a / Q25 and Q25C are current repository capabilities. Q25B remains superseded non-ready candidate history. Method 1.1.0 deri
+  - 来源：`reports/operations/121Q25D-current-closeout.md`
+  - 依赖：—；被引用：—
+- [Q25B remains superseded non-ready candidate history. Q25C, not Q25B, is the accepted lifecycle-gated method increment.](../../../CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-0545fe4659f737b5 / Q25B remains superseded non-ready candidate history. Q25C, not Q25B, is the accepted lifecycle-gated method increment.
+  - 来源：`CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [Q25B 已因生命周期死锁降为 superseded non-ready 历史候选；Q25C 是 PR #57 中被接受的方法增量。它确立的逐表面 `blocks` 原则继续有效；任务 101 已把旧独立阅读站从当前表面注册表移除。](../../../docs/VERSIONING.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-866b4bcb3795a540 / Q25B 已因生命周期死锁降为 superseded non-ready 历史候选；Q25C 是 PR #57 中被接受的方法增量。它确立的逐表面 `blocks` 原则继续有效；任务 101 已把旧独立阅读站从当前表面注册表移除。
+  - 来源：`docs/VERSIONING.md`
+  - 依赖：—；被引用：—
+- [Q25C defines lifecycle gates per registered surface. Task 101 uses repository Markdown, machine/human pairing, exact-hea](../../../llms.txt)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-efea68e5e95b653f / Q25C defines lifecycle gates per registered surface. Task 101 uses repository Markdown, machine/human pairing, exact-hea
+  - 来源：`llms.txt`
+  - 依赖：—；被引用：—
+- [Q25C Lifecycle-Gate Deadlock Repair](../../../reports/operations/121Q25C-lifecycle-gate-deadlock-repair.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-b8f9aa14aec90d95 / Q25C Lifecycle-Gate Deadlock Repair
+  - 来源：`reports/operations/121Q25C-lifecycle-gate-deadlock-repair.md`
+  - 依赖：—；被引用：—
+- [Q25C 的每表面 `blocks` 生命周期原则继续有效；任务 101 退役独立阅读站表面，当前人类层由仓库内机器/人类双输出、main 验证和全新克隆复验收口。未来外部表面必须单独登记与 attestation。](../../../AI-HANDOFF.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-bc7ed91420b0b929 / Q25C 的每表面 `blocks` 生命周期原则继续有效；任务 101 退役独立阅读站表面，当前人类层由仓库内机器/人类双输出、main 验证和全新克隆复验收口。未来外部表面必须单独登记与 attestation。
+  - 来源：`AI-HANDOFF.md`
+  - 依赖：—；被引用：—
+- [Q27 说明跨域同构有价值，但它只是应用类型，不能自动证明纵向升层；](../../../docs/publication/zhiyuan-writing-examples.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-c08e8d4c281a0c2c / Q27 说明跨域同构有价值，但它只是应用类型，不能自动证明纵向升层；
+  - 来源：`docs/publication/zhiyuan-writing-examples.md`
+  - 依赖：—；被引用：—
+- [Q28S revises Draft-only `Zhiyuan Writing Method` to 0.3.0 as 点火's shared-provenance L6 public-expression and provenance-](../../../CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a06aa21cfe06012c / Q28S revises Draft-only `Zhiyuan Writing Method` to 0.3.0 as 点火's shared-provenance L6 public-expression and provenance-
+  - 来源：`CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [Q29R 正文 SHA-256 继续为 `c135acd35a2232f0a6b3f933db482932a9fe5d5add51f870af97901faac90d4b`，未修改一个字节。没有公开第三方课程原文，没有合并 main，没有增](../../../reports/operations/121Q31-interactive-system-map-and-writing-source-pool-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-9c021436e1c6a0dc / Q29R 正文 SHA-256 继续为 `c135acd35a2232f0a6b3f933db482932a9fe5d5add51f870af97901faac90d4b`，未修改一个字节。没有公开第三方课程原文，没有合并 main，没有增
+  - 来源：`reports/operations/121Q31-interactive-system-map-and-writing-source-pool-audit.md`
+  - 依赖：—；被引用：—
+- [Q29R 的正式接受正文已进入\[之元写作法成果索引\](../../../docs/publication/zhiyuan-writing-showcase.md)，并与\[起始案例\](../../../docs/publication/cases/jin-rise-case-source.md)、\[Q26 点火分析\](../../rep](../../../docs/publication/zhiyuan-writing-examples.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-16b25318fc08301f / Q29R 的正式接受正文已进入\[之元写作法成果索引\](../../../docs/publication/zhiyuan-writing-showcase.md)，并与\[起始案例\](../../../docs/publication/cases/jin-rise-case-source.md)、\[Q26 点火分析\](../../../llms.txt)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-d31f9259ced3f177 / Q31T established the repository-native system map generated from data/architecture/interactive-system-map.json. Task 101
+  - 来源：`llms.txt`
+  - 依赖：—；被引用：—
+- [Q32 proposes iteration method 1.2.0 and interactive system map 0.2.0 as Draft candidates: canonical component and typed-](../../../CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-51e0fb559346ddef / Q32 proposes iteration method 1.2.0 and interactive system map 0.2.0 as Draft candidates: canonical component and typed-
+  - 来源：`CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [Q32I lifecycle: Accepted, Merged by PR #62, Current and Closed. Q33 launch packet ready externally; Q33 and Q34—Q40 not](../../../ITERATION.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-520a1f920306fe68 / Q32I lifecycle: Accepted, Merged by PR #62, Current and Closed. Q33 launch packet ready externally; Q33 and Q34—Q40 not
+  - 来源：`ITERATION.md`
+  - 依赖：—；被引用：—
+- [Q32I 的 1.3.0 增量执行现为 Historical，但其 authority / execution / validation 分离、统一预检、完整 rollback、NonImpactProof 与 cache identity](../../../docs/ai-assistant-usage-reference.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a5dc5872eb254bf2 / Q32I 的 1.3.0 增量执行现为 Historical，但其 authority / execution / validation 分离、统一预检、完整 rollback、NonImpactProof 与 cache identity
+  - 来源：`docs/ai-assistant-usage-reference.md`
+  - 依赖：—；被引用：—
+- [Q32T 已将迭代方法 1.2.0 与系统图 0.2.0 收口为 Current。AI 必须从构件 registry、传播 topology 和同步 registry 重算 fixpoint，核对逐构件／逐表面决定、map delta、re](../../../docs/ai-assistant-usage-reference.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-01fe6358309b5b65 / Q32T 已将迭代方法 1.2.0 与系统图 0.2.0 收口为 Current。AI 必须从构件 registry、传播 topology 和同步 registry 重算 fixpoint，核对逐构件／逐表面决定、map delta、re
+  - 来源：`docs/ai-assistant-usage-reference.md`
+  - 依赖：—；被引用：—
+- [Q33 lifecycle closeout (I2): PR #63 was independently accepted and merged (merge commit cf321f9); the 7 copyright risk a](../../../CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-e47b8ee8de6fe879 / Q33 lifecycle closeout (I2): PR #63 was independently accepted and merged (merge commit cf321f9); the 7 copyright risk a
+  - 来源：`CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [Quasiquoters generate concrete effect infrastructure and GHC compiles it, but this is not a general function/weight comp](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-edeff4ab7953fe82 / Quasiquoters generate concrete effect infrastructure and GHC compiles it, but this is not a general function/weight comp
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [Queue path: `data/foundation/work-queues/content-proof-queue.jsonl`.](../../../reports/foundation-architecture/remaining-content-work-queue-20260713.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-240599fc40fff8c6 / Queue path: `data/foundation/work-queues/content-proof-queue.jsonl`.
+  - 来源：`reports/foundation-architecture/remaining-content-work-queue-20260713.md`
+  - 依赖：—；被引用：—
+- [R --> P\[formal 证明项目\]](../../../ARCHITECTURE.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-c25f0a6aee78079e / R --> P\[formal 证明项目\]
+  - 来源：`ARCHITECTURE.md`
+  - 依赖：—；被引用：—
+- [R(t,L,C) 应约者退出权](../../../FOUNDATION-64-PROPAGATION.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：A3 / R(t,L,C) 应约者退出权 / A3
+  - 来源：`FOUNDATION-64-PROPAGATION.jsonl`
+  - 依赖：A1, A8；被引用：A1, A2, A4, A5
+- [R1 已通过独立 exact-head acceptance（PR #137 head `669c9f8c`；merge commit `0e7c032`）并由所有者提升为 Current（non-Activated）。作为 Current](../../../docs/governance/charter-system-r1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-fbb7d3d5bd0725ea / R1 已通过独立 exact-head acceptance（PR #137 head `669c9f8c`；merge commit `0e7c032`）并由所有者提升为 Current（non-Activated）。作为 Current
+  - 来源：`docs/governance/charter-system-r1.md`
+  - 依赖：—；被引用：—
+- [r_cross优先性定理](../../../analysis/corpus-relation/cluster_source_briefs/C000.md)
+  - 类型/状态：`FUNCTION_ASSET` · `DOWNGRADE_TO_CONJECTURE`
+  - 可搜索名称：D115 / r_cross优先性定理 / D115
+  - 来源：`analysis/corpus-relation/cluster_source_briefs/C000.md`
+  - 依赖：D180, D91；被引用：NFC-0272dd64c9bd597f, NFC-065c33ae84ded36d, NFC-0ea202d1c7ca1d7b, NFC-0f97f3d1b1b76870
+- [r_cross优先性定理](../../../data/foundation/formal-objects/objects.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-ad65f0492f72e21d / r_cross优先性定理
+  - 来源：`data/foundation/formal-objects/objects.jsonl`
+  - 依赖：—；被引用：—
+- [R_perceived(t,L,C) 应约者感知退出权](../../../analysis/corpus-relation/cluster_source_briefs/C000.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：A4 / R_perceived(t,L,C) 应约者感知退出权 / A4
+  - 来源：`analysis/corpus-relation/cluster_source_briefs/C000.md`
+  - 依赖：A1, A3, A8；被引用：D600, NFC-1ed598110c420856, NFC-2bbde2f2b3b4b7bc, NFC-765e71a034abdae2
+- [R_upgrade升级路径函数](../../../data/foundation/adjudications/079-method-audit.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D56 / R_upgrade升级路径函数 / D56
+  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
+  - 依赖：D1, D90；被引用：NFC-8833460b8b4548f0, NFC-c7b091cb1660a130
+- [Raghu et al. exact registered arXiv v2/ICLR paper, all-21-page visual/full-text/TeX/equation/table/appendix review plus](../../../data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-160a1da332893a4e / Raghu et al. exact registered arXiv v2/ICLR paper, all-21-page visual/full-text/TeX/equation/table/appendix review plus
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl`
+  - 依赖：—；被引用：—
+- [ratification_ready：content_machine_eligible 且 semantic_review_status=approved 且 governance_status≠approved。](../../../canonical/docs/canonical-protocol-data-model.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-ab43da3a273ecf3f / ratification_ready：content_machine_eligible 且 semantic_review_status=approved 且 governance_status≠approved。
+  - 来源：`canonical/docs/canonical-protocol-data-model.md`
+  - 依赖：—；被引用：—
+- [re-classified in 083 based on claim_type=DEFINITION, proof_status=NOT_APPLICABLE_DEFINITION](../../../data/foundation/work-queues/082-escalation-routing.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-394ea6b846a13aab / re-classified in 083 based on claim_type=DEFINITION, proof_status=NOT_APPLICABLE_DEFINITION
+  - 来源：`data/foundation/work-queues/082-escalation-routing.jsonl`
+  - 依赖：—；被引用：—
+- [re-classified in 083 based on claim_type=EXPLANATORY_HYPOTHESIS, proof_status=REQUIRES_HIGHEST_MODEL_VERIFICATION](../../../data/foundation/work-queues/082-escalation-routing.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-380e6b92ff6d36f9 / re-classified in 083 based on claim_type=EXPLANATORY_HYPOTHESIS, proof_status=REQUIRES_HIGHEST_MODEL_VERIFICATION
+  - 来源：`data/foundation/work-queues/082-escalation-routing.jsonl`
+  - 依赖：—；被引用：—
+- [re-classified in 083 based on claim_type=MATHEMATICAL_PROPOSITION, proof_status=REQUIRES_HIGHEST_MODEL_VERIFICATION](../../../data/foundation/work-queues/082-escalation-routing.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-366db6caa55b9691 / re-classified in 083 based on claim_type=MATHEMATICAL_PROPOSITION, proof_status=REQUIRES_HIGHEST_MODEL_VERIFICATION
+  - 来源：`data/foundation/work-queues/082-escalation-routing.jsonl`
+  - 依赖：—；被引用：—
+- [re-classified in 083 based on claim_type=MATHEMATICAL_PROPOSITION, proof_status=UNPROVED_PROPOSITION](../../../data/foundation/work-queues/082-escalation-routing.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-fa132748980d3571 / re-classified in 083 based on claim_type=MATHEMATICAL_PROPOSITION, proof_status=UNPROVED_PROPOSITION
+  - 来源：`data/foundation/work-queues/082-escalation-routing.jsonl`
+  - 依赖：—；被引用：—
+- [re-classified in 083 based on claim_type=STRUCTURAL_ANALOGY, proof_status=NO_EQUIVALENCE_PROOF](../../../data/foundation/work-queues/082-escalation-routing.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-abb0a77ca868a075 / re-classified in 083 based on claim_type=STRUCTURAL_ANALOGY, proof_status=NO_EQUIVALENCE_PROOF
+  - 来源：`data/foundation/work-queues/082-escalation-routing.jsonl`
+  - 依赖：—；被引用：—
+- [re-classified in 083 based on claim_type=STRUCTURAL_ANALOGY, proof_status=REQUIRES_HIGHEST_MODEL_VERIFICATION](../../../data/foundation/work-queues/082-escalation-routing.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-4effe9f37e16a10e / re-classified in 083 based on claim_type=STRUCTURAL_ANALOGY, proof_status=REQUIRES_HIGHEST_MODEL_VERIFICATION
+  - 来源：`data/foundation/work-queues/082-escalation-routing.jsonl`
+  - 依赖：—；被引用：—
+- [README top-level content is constrained to four classes: project current state, life-community value charter, AI assista](../../../reports/readme/121Q19-readme-frontdoor-validation.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-79f05750f76f0642 / README top-level content is constrained to four classes: project current state, life-community value charter, AI assista
+  - 来源：`reports/readme/121Q19-readme-frontdoor-validation.md`
+  - 依赖：—；被引用：—
+- [README 中图位于生命共同体价值宪章之后、使用指南之前。方法、后台规格、架构、项目现状、SUMMARY、USAGE、AI 参考、AI START、Agent handoff、llms、Changelog 与 Versioning 已同步](../../../reports/operations/121Q31-interactive-system-map-and-writing-source-pool-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-93e8bffa25ee5e99 / README 中图位于生命共同体价值宪章之后、使用指南之前。方法、后台规格、架构、项目现状、SUMMARY、USAGE、AI 参考、AI START、Agent handoff、llms、Changelog 与 Versioning 已同步
+  - 来源：`reports/operations/121Q31-interactive-system-map-and-writing-source-pool-audit.md`
+  - 依赖：—；被引用：—
+- [Real-history proof: `reports/architecture/121Q23C-operational-arn-real-history-validation.md` and `data/architecture/ada](../../../reports/architecture/121Q23-adaptive-relational-network-validation.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-c15f34c78a3de2e9 / Real-history proof: `reports/architecture/121Q23C-operational-arn-real-history-validation.md` and `data/architecture/ada
+  - 来源：`reports/architecture/121Q23-adaptive-relational-network-validation.md`
+  - 依赖：—；被引用：—
+- [Record mathematical maturity `M0`–`M7` and external-evidence maturity `E0`–`E7` independently. A proof does not raise E.](../../../docs/foundation/future-claim-admission-protocol.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-908ab8d1dfb46de0 / Record mathematical maturity `M0`–`M7` and external-evidence maturity `E0`–`E7` independently. A proof does not raise E.
+  - 来源：`docs/foundation/future-claim-admission-protocol.md`
+  - 依赖：—；被引用：—
+- [recorded as normative requirements, not proof of compliance or effectiveness.](../../../reports/external-research/pointfire-getnote-external-verification-r1-20260813.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-3fca45d555c0f78d / recorded as normative requirements, not proof of compliance or effectiveness.
+  - 来源：`reports/external-research/pointfire-getnote-external-verification-r1-20260813.md`
+  - 依赖：—；被引用：—
+- [Records origin event, spacetime scope, reachability semantics, horizon/boundary, coordinate/frame assumptions, and sourc](../../../docs/architecture/multiscale-causal-fabric.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-db1d7afa59aee930 / Records origin event, spacetime scope, reachability semantics, horizon/boundary, coordinate/frame assumptions, and sourc
+  - 来源：`docs/architecture/multiscale-causal-fabric.md`
+  - 依赖：—；被引用：—
+- [records. A historical path or commit is evidence of lineage, not proof of a](../../../reports/foundation-architecture/local-source-recovery-audit-20260712.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-4df04944e4ff9361 / records. A historical path or commit is evidence of lineage, not proof of a
+  - 来源：`reports/foundation-architecture/local-source-recovery-audit-20260712.md`
+  - 依赖：—；被引用：—
+- [recovery function table: PRIVATE_PROVENANCE_WITHHELD](../../../reports/foundation-architecture/local-source-recovery-audit-20260712.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-2e692dcfccc62790 / recovery function table: PRIVATE_PROVENANCE_WITHHELD
+  - 来源：`reports/foundation-architecture/local-source-recovery-audit-20260712.md`
+  - 依赖：—；被引用：—
+- [Refinement propositions specify total pure functions and algebraic laws precisely.](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-073c5c3e9e14eae7 / Refinement propositions specify total pure functions and algebraic laws precisely.
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [Refinement Reflection full paper, extended-proof and exact artifact review: total-function reflection, dependent proof p](../../../data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-cc2a00c57b3c128b / Refinement Reflection full paper, extended-proof and exact artifact review: total-function reflection, dependent proof p
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl`
+  - 依赖：—；被引用：—
+- [Refinement reflection strengthens a total function's output type with an equality to its definition, so dependent applic](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-b716c7f3c858c406 / Refinement reflection strengthens a total function's output type with an equality to its definition, so dependent applic
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [Reflector and Tool-Smith generate coordinated diffs/code/tests without released prompts, static enforcement or preservat](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-8848265aa4a3e88d / Reflector and Tool-Smith generate coordinated diffs/code/tests without released prompts, static enforcement or preservat
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [REG --> GATE\[术语与证明门禁\]](../../../ARCHITECTURE.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-58333919e4413ac2 / REG --> GATE\[术语与证明门禁\]
+  - 来源：`ARCHITECTURE.md`
+  - 依赖：—；被引用：—
+- [Relation domains preserve authority separation; no Git diff, dependency, traversal or map edge is treated as substantive](../../../templates/operations/independent-review-template.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-3f672b64070b6aab / Relation domains preserve authority separation; no Git diff, dependency, traversal or map edge is treated as substantive
+  - 来源：`templates/operations/independent-review-template.md`
+  - 依赖：—；被引用：—
+- [Repositories and some checkpoints exist without complete immutable lineage or lifecycle governance.](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-ca161973e34a9752 / Repositories and some checkpoints exist without complete immutable lineage or lifecycle governance.
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [Repository does not supply a formal quantum information proof.](../../../data/architecture/multiscale-causal-fabric/examples/quantum-entanglement-negative.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-9e14f47c19f4b6bb / Repository does not supply a formal quantum information proof.
+  - 来源：`data/architecture/multiscale-causal-fabric/examples/quantum-entanglement-negative.json`
+  - 依赖：—；被引用：—
+- [Repository names are present without revisions, hashes, health or lifecycle governance.](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-61754da197d3475e / Repository names are present without revisions, hashes, health or lifecycle governance.
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [Repository-local manifests and seals validate only deterministic content: identifiers, lifecycle, impact decisions, path](../../../reports/operations/121Q24-current-state-reconciliation.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-e750c61d2a0f9602 / Repository-local manifests and seals validate only deterministic content: identifiers, lifecycle, impact decisions, path
+  - 来源：`reports/operations/121Q24-current-state-reconciliation.md`
+  - 依赖：—；被引用：—
+- [Resolve ambiguities or collect missing evidence.](../../../inputs/020/formal-protocol-promotion-standard.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-ca636455e920ce5b / Resolve ambiguities or collect missing evidence.
+  - 来源：`inputs/020/formal-protocol-promotion-standard.md`
+  - 依赖：—；被引用：—
+- [response classification, not psychological proof](../../../data/architecture/adaptive-relational-network/examples/ai-external-knowledge-vs-internal-integration.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-ad6026db341ecafb / response classification, not psychological proof
+  - 来源：`data/architecture/adaptive-relational-network/examples/ai-external-knowledge-vs-internal-integration.json`
+  - 依赖：—；被引用：—
+- [retrieval or self-report mislabeled as integration/behavior proof;](../../../reports/architecture/121Q23-adaptive-relational-network-validation.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-1804ae744eb647a1 / retrieval or self-report mislabeled as integration/behavior proof;
+  - 来源：`reports/architecture/121Q23-adaptive-relational-network-validation.md`
+  - 依赖：—；被引用：—
+- [Retrieval, repetition, activation and diffusion are not proof of integration.](../../../docs/architecture/adaptive-relational-network.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-278a6bee18dc5aa4 / Retrieval, repetition, activation and diffusion are not proof of integration.
+  - 来源：`docs/architecture/adaptive-relational-network.md`
+  - 依赖：—；被引用：—
+- [Review evidence paths.](../../../inputs/020/formal-protocol-promotion-standard.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-7fe33aab52a677b3 / Review evidence paths.
+  - 来源：`inputs/020/formal-protocol-promotion-standard.md`
+  - 依赖：—；被引用：—
+- [Routing and scale signals are inspectable, but calibration, repeated-run uncertainty, durable traces and lifecycle gover](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-fdf67705e387b3b0 / Routing and scale signals are inspectable, but calibration, repeated-run uncertainty, durable traces and lifecycle gover
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [Rule: at least one supporting case, material, or structure evidence exists, or a valid PENDING explanation is provided.](../../../inputs/020/formal-protocol-promotion-standard.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-53ea9b3e276b0c88 / Rule: at least one supporting case, material, or structure evidence exists, or a valid PENDING explanation is provided.
+  - 来源：`inputs/020/formal-protocol-promotion-standard.md`
+  - 依赖：—；被引用：—
+- [Rule: conclusion must not conflate framework inference, external fact, mathematical proof, and field consensus.](../../../inputs/020/formal-protocol-promotion-standard.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-1d54ae0ca34f1a93 / Rule: conclusion must not conflate framework inference, external fact, mathematical proof, and field consensus.
+  - 来源：`inputs/020/formal-protocol-promotion-standard.md`
+  - 依赖：—；被引用：—
+- [Rule: conflict handling is explicit or unresolved conflict is explicitly documented.](../../../inputs/020/formal-protocol-promotion-standard.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-c5f1228b4daf7396 / Rule: conflict handling is explicit or unresolved conflict is explicitly documented.
+  - 来源：`inputs/020/formal-protocol-promotion-standard.md`
+  - 依赖：—；被引用：—
+- [Rule: no unresolved ID, definition, status, hierarchy, or evidence conflicts.](../../../inputs/020/formal-protocol-promotion-standard.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-c5bdd700ebad806f / Rule: no unresolved ID, definition, status, hierarchy, or evidence conflicts.
+  - 来源：`inputs/020/formal-protocol-promotion-standard.md`
+  - 依赖：—；被引用：—
+- [Rule: the item must be a constraint/permission/prohibition/meta-rule, not a mechanism function renamed.](../../../inputs/020/formal-protocol-promotion-standard.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-09eaf046cc164784 / Rule: the item must be a constraint/permission/prohibition/meta-rule, not a mechanism function renamed.
+  - 来源：`inputs/020/formal-protocol-promotion-standard.md`
+  - 依赖：—；被引用：—
+- [Rule: validator can point to file path and field or line evidence.](../../../inputs/020/formal-protocol-promotion-standard.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-a14174dd96ba4da6 / Rule: validator can point to file path and field or line evidence.
+  - 来源：`inputs/020/formal-protocol-promotion-standard.md`
+  - 依赖：—；被引用：—
+- [Runtime contexts and Criterion measurements give limited observability; uncertainty, receipts, lineage health and lifecy](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-7e7636b50177caa4 / Runtime contexts and Criterion measurements give limited observability; uncertainty, receipts, lineage health and lifecy
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [s conjecture verified via gate threshold.    数学推导过程 / Mathematical Derivation  - 对象 / Object:](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-6ece82f52c34b4d9 / s conjecture verified via gate threshold.    数学推导过程 / Mathematical Derivation  - 对象 / Object:
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：—；被引用：—
+- [S120-047 (Generic Refinement Types):** SMT-decidable formal specification with preconditions/postconditions. Strongest e](../../../reports/external-research/121c01-max-semantic-review-batch-01.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-4790652cf608aae8 / S120-047 (Generic Refinement Types):** SMT-decidable formal specification with preconditions/postconditions. Strongest e
+  - 来源：`reports/external-research/121c01-max-semantic-review-batch-01.md`
+  - 依赖：—；被引用：—
+- [S120-053 (Algebraic Effects, JLC 2009, VERIFIED) provides effect handlers separating effect signatures from interpreters](../../../data/external-research/121-fulltext-resolver/121q3/gaps/GAP-018.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：NFC-ea0cfb95cbaae2ea / S120-053 (Algebraic Effects, JLC 2009, VERIFIED) provides effect handlers separating effect signatures from interpreters
+  - 来源：`data/external-research/121-fulltext-resolver/121q3/gaps/GAP-018.json`
+  - 依赖：—；被引用：—
+- [S120-053 (Handlers of Algebraic Effects):** Definitive theoretical framework for effect tracking. Algebraic theories as](../../../reports/external-research/121c01-max-semantic-review-batch-01.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-04c18c91d6b9d7ce / S120-053 (Handlers of Algebraic Effects):** Definitive theoretical framework for effect tracking. Algebraic theories as
+  - 来源：`reports/external-research/121c01-max-semantic-review-batch-01.md`
+  - 依赖：—；被引用：—
+- [S120-053** (Handlers of Algebraic Effects, JLC 2009): PARTIAL, identity VERIFIED](../../../reports/external-research/121Q2R-final-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-01547c846d09fa70 / S120-053** (Handlers of Algebraic Effects, JLC 2009): PARTIAL, identity VERIFIED
+  - 来源：`reports/external-research/121Q2R-final-report.md`
+  - 依赖：—；被引用：—
+- [Sage：徽宗道教注疏、神霄运动、宫观／学校制度、林灵素失势后网络延续，以及无法从文本直接证明私人信念的讨论。](../../../reports/publication/song-huizong-taoism-point-fire-analysis.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-a911b967a750ced5 / Sage：徽宗道教注疏、神霄运动、宫观／学校制度、林灵素失势后网络延续，以及无法从文本直接证明私人信念的讨论。
+  - 来源：`reports/publication/song-huizong-taoism-point-fire-analysis.md`
+  - 依赖：—；被引用：—
+- [Sampling and caching do not amount to lifecycle/provenance governance or probabilistic/fuzzy semantics.](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-cd92afad75c73962 / Sampling and caching do not amount to lifecycle/provenance governance or probabilistic/fuzzy semantics.
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [Sampling and top-k voting do not constitute calibrated stochastic semantics or lifecycle and provenance governance.](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a76cc74fb07d3e40 / Sampling and top-k voting do not constitute calibrated stochastic semantics or lifecycle and provenance governance.
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [Saving a program string rather than a checkpoint is lightweight adaptation, not a versioned registry or lifecycle state](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-72cfbbfff351ccfe / Saving a program string rather than a checkpoint is lightweight adaptation, not a versioned registry or lifecycle state
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [schema**: { complexity_class, computability_boundary, approximation_scheme, hardness_proof, reduction }](../../../data/discipline-projection/087-v1-1-overlay.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-d3d58080cd4ce493 / schema**: { complexity_class, computability_boundary, approximation_scheme, hardness_proof, reduction }
+  - 来源：`data/discipline-projection/087-v1-1-overlay.md`
+  - 依赖：—；被引用：—
+- [Scores and correlations are observable; uncertainty, provenance and lifecycle traces are absent.](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-65590ad649e39334 / Scores and correlations are observable; uncertainty, provenance and lifecycle traces are absent.
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [Self-hosting proves deterministic planning over declared repository dependencies only; it is not real-world causal proof](../../../reports/operations/121Q32I-incremental-execution-demonstration.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-8f70a92e1af10533 / Self-hosting proves deterministic planning over declared repository dependencies only; it is not real-world causal proof
+  - 来源：`reports/operations/121Q32I-incremental-execution-demonstration.json`
+  - 依赖：—；被引用：—
+- [self_review 文件由 `build_self_review()` 函数从 decision 直接派生，不构成独立验证](../../../reports/foundation-architecture/085-084-truth-status-correction.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-fd40a6e2cb1d951a / self_review 文件由 `build_self_review()` 函数从 decision 直接派生，不构成独立验证
+  - 来源：`reports/foundation-architecture/085-084-truth-status-correction.md`
+  - 依赖：—；被引用：—
+- [Semantic adjudication verification](../../ASSET-CARDS.md#asset-hr-9fad496317a3b73c)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：Semantic adjudication verification / semantic-adjudication-verification-20260713
+  - 来源：`reports/foundation-architecture/semantic-adjudication-verification-20260713.md`
+  - 依赖：—；被引用：—
+- [Semantic proof sketches and prototype examples check bounded claims without mechanization, complete inference coverage o](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-dcd8a24206cb1777 / Semantic proof sketches and prototype examples check bounded claims without mechanization, complete inference coverage o
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [Serializable .ncg graphs, code, accepted programs and LFS-backed results are concrete artifacts, though their lifecycle](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-d0f6dcbdf15bb2a7 / Serializable .ncg graphs, code, accepted programs and LFS-backed results are concrete artifacts, though their lifecycle
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [Shannon-Fisher跷跷板定理](../../../data/foundation/adjudications/079-method-audit.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `DOWNGRADE_TO_CONJECTURE`
+  - 可搜索名称：D233 / Shannon-Fisher跷跷板定理 / D233
+  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
+  - 依赖：D181, D211, D220, D270；被引用：D235, CLAIM-D235, NFC-08ddafe1158d8b81, NFC-097e85aafee2bf63
+- [Shannon-Fisher跷跷板定理](../../../data/foundation/formal-objects/objects.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-14dd47508dafef24 / Shannon-Fisher跷跷板定理
+  - 来源：`data/foundation/formal-objects/objects.jsonl`
+  - 依赖：—；被引用：—

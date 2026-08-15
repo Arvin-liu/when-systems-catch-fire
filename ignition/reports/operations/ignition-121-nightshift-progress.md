@@ -18,12 +18,38 @@
 `STEP_00_BASELINE_COMPLETE`; proceed to Step 01, Knowledge Corpus Admission
 Policy and provenance-preserving migration. No failure repair round was needed.
 
+## Step 01 — COMPLETE
+
+- Admission policy: `KNOWLEDGE_CORPUS_ADMISSION_R1`, with five typed classes and
+  a narrow architecture/Knowledge Pack explicit allowlist.
+- Provenance migration: `5,202` platform-only baseline rows preserved in the
+  append-only report (`2,187` function and `3,015` nonfunction), with original
+  record hashes, source hashes, baseline Git provenance, and no claim-ceiling
+  changes.
+- Projection counts: function `7,588 → 5,401`, nonfunction `18,476 → 15,466`,
+  Knowledge search `26,372 → 21,175`; Fire Seed candidates `64 → 64` and
+  source records `369 → 370`.
+- Human Surface materiality was refreshed to `44` current entries; `4` test-path
+  presentation entries were withdrawn from the current surface and retained in
+  `materiality-manifest.json` as provenance-only withdrawals.
+- Gates: policy unit tests `4/4 PASS`; function closure `46/46 PASS`; nonfunction
+  evidence-lineage closure `54/54 PASS`; Knowledge Experience audit and
+  determinism `PASS`; Human Surface materiality, Human Surface, Front Door and
+  Visibility `PASS`; Fire Seed validation `PASS`; migration validation `PASS`.
+- Two deterministic repair rounds were recorded: the migration first
+  attempted to read the post-withdrawal projection, then was corrected to read
+  the frozen Step 00 commit; then the downstream Human Surface fingerprints and
+  four withdrawn test-path entries were refreshed. The final migration report
+  contains `5,202` rows.
+- Claim ceilings remain unchanged; this is a repository-scoped projection and
+  provenance result, not external truth or epistemic acceptance.
+
 ## Step ledger
 
 | Step | State | Commit | Remote SHA | Gate summary |
 | --- | --- | --- | --- | --- |
-| 00 | COMPLETE | pending until checkpoint commit | pending | 16 runtime tests and boundary gates PASS |
-| 01 | PENDING | — | — | — |
+| 00 | COMPLETE | `8cc9291c0af9d3df686628bfd7dbae365523e327` | `8cc9291c0af9d3df686628bfd7dbae365523e327` | 16 runtime tests and boundary gates PASS |
+| 01 | COMPLETE | pending until checkpoint commit | pending | Admission policy, provenance migration, projection rebuild, and closure gates PASS |
 | 02 | PENDING | — | — | — |
 | 03 | PENDING | — | — | — |
 | 04 | PENDING | — | — | — |

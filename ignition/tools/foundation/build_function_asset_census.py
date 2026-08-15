@@ -17,6 +17,7 @@ from collections import Counter, defaultdict
 from pathlib import Path
 
 from legacy_table_migration import current_or_archived_text, migration_paths
+from knowledge_corpus_admission import is_auto_discovery_allowed
 
 ROOT = Path(__file__).resolve().parents[2]
 REPO_ROOT = ROOT.parent
@@ -115,6 +116,9 @@ GENERATED_EXACT_PATHS = {
     # Task 108 CI workflow: new in this PR; tooling/spec, not a function-asset
     # source. Excluded so the census stays deterministic.
     ".github/workflows/iteration-lifecycle-validation.yml",
+    "data/foundation/knowledge-corpus-admission-policy.json",
+    "reports/architecture/agent-platform-r2-gap-audit.md",
+    "reports/operations/ignition-121-nightshift-progress.md",
 }
 SCANNER_VERSION = "2.0.0"
 SNAPSHOT = "function-census-v2-20260729"
@@ -143,7 +147,7 @@ def tracked_text_files() -> list[str]:
     paths = []
     for raw_item in raw.split("\0"):
         item = raw_item[len("ignition/"):] if raw_item.startswith("ignition/") else raw_item
-        if item and item not in GENERATED_EXACT_PATHS and not item.startswith(GENERATED_PREFIXES) and Path(item).suffix.lower() in TEXT_EXTENSIONS:
+        if item and item not in GENERATED_EXACT_PATHS and not item.startswith(GENERATED_PREFIXES) and is_auto_discovery_allowed(item) and Path(item).suffix.lower() in TEXT_EXTENSIONS:
             paths.append(item)
     paths.extend(migration_paths())
     return sorted(set(paths))

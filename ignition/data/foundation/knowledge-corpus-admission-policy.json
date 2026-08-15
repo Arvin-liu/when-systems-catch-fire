@@ -1,0 +1,92 @@
+{
+  "schema_version": "1.0.0",
+  "policy_id": "KNOWLEDGE_CORPUS_ADMISSION_R1",
+  "default_classification": "KNOWLEDGE_SOURCE_ELIGIBLE",
+  "classes": {
+    "KNOWLEDGE_SOURCE_ELIGIBLE": {
+      "auto_discovery": true,
+      "meaning": "A domain source may enter the Knowledge Pack through its declared source contract."
+    },
+    "KNOWLEDGE_SOURCE_EXPLICIT_ONLY": {
+      "auto_discovery": false,
+      "meaning": "A project or architecture document enters only through an explicit source registration."
+    },
+    "PLATFORM_CODE_EXCLUDED": {
+      "auto_discovery": false,
+      "meaning": "Kernel, runtime, tests, schemas, CI, tooling, and operational traces are platform provenance, not knowledge assets."
+    },
+    "GENERATED_PROJECTION_EXCLUDED": {
+      "auto_discovery": false,
+      "meaning": "A deterministic projection is validated by its generator and cannot feed its own rows back into Knowledge."
+    },
+    "HISTORICAL_PROVENANCE_ONLY": {
+      "auto_discovery": true,
+      "provenance_only": true,
+      "meaning": "Historical or audit material may be retained for source lineage, but its presence cannot upgrade a claim."
+    }
+  },
+  "explicit_allowlist": [
+    "docs/architecture/agentization-boundary-r0.md",
+    "docs/architecture/agent-runtime-r0.md",
+    "docs/architecture/agent-runtime-r1.md",
+    "docs/architecture/agent-platform-r2.md",
+    "packs/knowledge/README.md"
+  ],
+  "rules": [
+    {
+      "classification": "PLATFORM_CODE_EXCLUDED",
+      "prefixes": [
+        "agent_kernel/",
+        "agent_runtime/",
+        "data/agent-runtime/",
+        "schemas/",
+        "tests/",
+        "tools/",
+        ".github/workflows/"
+      ],
+      "exact_paths": []
+    },
+    {
+      "classification": "GENERATED_PROJECTION_EXCLUDED",
+      "prefixes": [
+        "data/foundation/function-assets/",
+        "data/foundation/nonfunction-claims/",
+        "data/foundation/migrations/",
+        "data/governance/",
+        "data/publication/fire-seeds/",
+        "KNOWLEDGE/",
+        "docs/human/",
+        "data/operations/iterations/121/"
+      ],
+      "exact_paths": [
+        "data/foundation/knowledge-corpus-admission-policy.json",
+        "reports/architecture/agent-platform-r2-gap-audit.md",
+        "reports/operations/ignition-121-nightshift-progress.md"
+      ]
+    },
+    {
+      "classification": "KNOWLEDGE_SOURCE_EXPLICIT_ONLY",
+      "prefixes": [
+        "packs/"
+      ],
+      "exact_paths": [
+        "docs/architecture/agentization-boundary-r0.md",
+        "docs/architecture/agent-runtime-r0.md",
+        "docs/architecture/agent-runtime-r1.md",
+        "docs/architecture/agent-platform-r2.md",
+        "packs/knowledge/README.md"
+      ]
+    },
+    {
+      "classification": "HISTORICAL_PROVENANCE_ONLY",
+      "prefixes": [
+        "archive/",
+        "reports/",
+        "data/old_tables/",
+        "统一函数总表/",
+        "统一案例总表/"
+      ],
+      "exact_paths": []
+    }
+  ]
+}

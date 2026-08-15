@@ -4,7 +4,7 @@
 
 - [仓库事实与约定](repository-facts-and-conventions.md)：1 条人话说明
 - [尚未闭合的问题](unfinished-questions.md)：4 条人话说明
-- [撤回、历史与边界](withdrawals-history-and-boundaries.md)：5 条人话说明
+- [撤回、历史与边界](withdrawals-history-and-boundaries.md)：1 条人话说明
 - [数学与形式化](mathematics-and-formalization.md)：4 条人话说明
 - [机制与因果候选](mechanism-and-causal-candidates.md)：1 条人话说明
 - [治理与规范](governance-and-norms.md)：1 条人话说明

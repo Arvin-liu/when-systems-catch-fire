@@ -41,8 +41,8 @@
       "cards": 367,
       "changes": 292,
       "layered_readings": 308,
-      "search_records": 26372,
-      "subject_indexes": 64
+      "search_records": 21175,
+      "subject_indexes": 52
     },
     "layered_reading_source_origins": 308,
     "layered_reading_status_counts": {
@@ -2346,7 +2346,7 @@
       "title": "COVERAGE",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "fb4e5d1195f14af007380b536c03020a0ebc2308be3ea0c532607abcc8068107",
+      "source_sha256": "452f7eb2ceb2db4218f3da0ed40784cb436967385bda97dabbc638b8c0469a2e",
       "disposition": "EXCLUDED_NONCONTENT",
       "seed_ids": [],
       "review_basis": "INDEX_OR_GENERATED_PROJECTION",
@@ -2372,7 +2372,7 @@
       "title": "MAP",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "ffc97d842c2ad107367943486ad2eaf769659fd1b9f7d38ef149ebf65dc0d82a",
+      "source_sha256": "72e450ec4cbff6604321f2bd14a4c17672380b463ebe2c8e171ee114f0164795",
       "disposition": "EXCLUDED_NONCONTENT",
       "seed_ids": [],
       "review_basis": "INDEX_OR_GENERATED_PROJECTION",
@@ -2398,7 +2398,7 @@
       "title": "README",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "4ec1185d3f5cca15ffb442fa049791eefa882e4042c6ed739338c96db9d92286",
+      "source_sha256": "d7fe7eabe18505bd8ffef6bd1c46df6e96da947dab4533de6cd622169d857477",
       "disposition": "SEED_CREATED",
       "seed_ids": [
         "CF-25",
@@ -2414,7 +2414,7 @@
       "title": "SEARCH",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "7e8aa1c037ce2c754d7c6df0b3479e35b43b6dd8409071b8bea74530dbbfbbef",
+      "source_sha256": "99a65ec8241404ac56acc793ec73ebcbf5e2e9ebe387b8e17a4b6bbec0e04634",
       "disposition": "EXCLUDED_NONCONTENT",
       "seed_ids": [],
       "review_basis": "INDEX_OR_GENERATED_PROJECTION",
@@ -2874,7 +2874,7 @@
       "title": "closure-summary",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "4a0d6c7b7bcfae1cb33e48d810e45eec66a5935c2fceb49c2656f96b8e5c2bc9",
+      "source_sha256": "c51fac194cf569f9ccc06ff1b0d68b9629966f4c79b521c58e1d13f85d170ed7",
       "disposition": "MERGED_INTO_SEED",
       "seed_ids": [
         "FS-06"
@@ -2889,7 +2889,7 @@
       "title": "identity-cards",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "d41286f75efc172577f84d46e70c80a073acae8b676e48696cc95b8d8ef0973d",
+      "source_sha256": "fa57f0334edf2df0bc013a37c8b1453d51a53a0ff21ed6e464437e1d2cecd36b",
       "disposition": "MERGED_INTO_SEED",
       "seed_ids": [
         "FS-08"
@@ -2904,7 +2904,7 @@
       "title": "closure-summary",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "22e8d6791c665ecd0d4373f14d743e81c0148174b2e88923fabfe41be43c6bad",
+      "source_sha256": "edf9af4772e2bfff532f3b1501ccc2d1e24d5f92eed9632f8ee93b03871a858e",
       "disposition": "MERGED_INTO_SEED",
       "seed_ids": [
         "FS-07"
@@ -3477,7 +3477,7 @@
       "title": "全语料非函数型断言裁决索引",
       "knowledge_status": "CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS",
       "subject": null,
-      "source_sha256": "ca5ebc0cb9041b7a4a02df5ed072baefd23eaaa41857653d0a36863a2160c5c3",
+      "source_sha256": "3a978804f7c2cb3c045e20ae9e9b529bda467dd8d93922ed291ddc1a65a53963",
       "disposition": "NO_SEED_DELTA",
       "seed_ids": [],
       "review_basis": "KNOWLEDGE_LAYERED_READING_TRIAGE",
@@ -5500,6 +5500,19 @@
     },
     {
       "source_id": "ORIGIN-0238",
+      "source_path": "reports/architecture/agent-platform-r2-gap-audit.md",
+      "source_kind": "SUPPLEMENTAL_HUMAN_SOURCE",
+      "title": "agent-platform-r2-gap-audit",
+      "knowledge_status": null,
+      "subject": null,
+      "source_sha256": "d8685bd8ed80ff8dcba4e6768cd5ab94565f459abe8e64133338938c54a3e83e",
+      "disposition": "NO_SEED_DELTA",
+      "seed_ids": [],
+      "review_basis": "SUPPLEMENTAL_HUMAN_CORPUS_TRIAGE",
+      "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
+    },
+    {
+      "source_id": "ORIGIN-0239",
       "source_path": "reports/architecture/task115-runtime-prior-art-adoption-r0.md",
       "source_kind": "SUPPLEMENTAL_HUMAN_SOURCE",
       "title": "task115-runtime-prior-art-adoption-r0",
@@ -5512,7 +5525,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0239",
+      "source_id": "ORIGIN-0240",
       "source_path": "reports/atlas/121Q14-baseline-latent-map-audit.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "121Q14 Baseline And Latent Map Audit",
@@ -5525,7 +5538,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0240",
+      "source_id": "ORIGIN-0241",
       "source_path": "reports/atlas/121Q14-dynamic-atlas.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "121Q14 Dynamic Atlas Report",
@@ -5538,7 +5551,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0241",
+      "source_id": "ORIGIN-0242",
       "source_path": "reports/atlas/maps/map-agent-delivery-operations.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "map-agent-delivery-operations",
@@ -5551,7 +5564,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0242",
+      "source_id": "ORIGIN-0243",
       "source_path": "reports/atlas/maps/map-epistemic-architecture.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "map-epistemic-architecture",
@@ -5564,7 +5577,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0243",
+      "source_id": "ORIGIN-0244",
       "source_path": "reports/atlas/maps/map-maintainer-sustainability-economics.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "map-maintainer-sustainability-economics",
@@ -5577,7 +5590,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0244",
+      "source_id": "ORIGIN-0245",
       "source_path": "reports/external-research/104-dual-088-reconciliation.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "104 双 088 归并与外部证据层定版报告",
@@ -5590,7 +5603,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0245",
+      "source_id": "ORIGIN-0246",
       "source_path": "reports/external-research/104-gap-patch-evidence-readiness.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "104 补丁证据就绪报告",
@@ -5603,7 +5616,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0246",
+      "source_id": "ORIGIN-0247",
       "source_path": "reports/external-research/104-source-quality-audit.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "104 来源质量审计",
@@ -5616,7 +5629,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0247",
+      "source_id": "ORIGIN-0248",
       "source_path": "reports/external-research/106-105-evidence-correction-report.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-106: 105 证据纠错报告",
@@ -5629,7 +5642,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0248",
+      "source_id": "ORIGIN-0249",
       "source_path": "reports/external-research/106-gap001-interface-readiness.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-106: GAP-001 接口就绪度评估",
@@ -5642,7 +5655,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0249",
+      "source_id": "ORIGIN-0250",
       "source_path": "reports/external-research/106-next-task-handoff.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-106: 下一任务交接",
@@ -5655,7 +5668,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0250",
+      "source_id": "ORIGIN-0251",
       "source_path": "reports/external-research/120-function-os-architecture-candidate-report.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "120 — Function OS Architecture Candidate Report",
@@ -5668,7 +5681,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0251",
+      "source_id": "ORIGIN-0252",
       "source_path": "reports/external-research/120-function-paradigm-atlas-report.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "120 — Function Paradigm Atlas Report",
@@ -5681,7 +5694,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0252",
+      "source_id": "ORIGIN-0253",
       "source_path": "reports/external-research/120-source-quality-and-template-risk-audit.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "120 — Source Quality and Template Risk Audit",
@@ -5694,7 +5707,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0253",
+      "source_id": "ORIGIN-0254",
       "source_path": "reports/external-research/121-function-paradigm-fulltext-review-report.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "Function-Paradigm Full-Text Review Report — IGNITION-121",
@@ -5707,7 +5720,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0254",
+      "source_id": "ORIGIN-0255",
       "source_path": "reports/external-research/121-legal-fulltext-resolver-report.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "Legal Full-Text Resolver Report — IGNITION-121",
@@ -5720,7 +5733,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0255",
+      "source_id": "ORIGIN-0256",
       "source_path": "reports/external-research/121A-night-recovery-report.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "121A Night Recovery Report",
@@ -5733,7 +5746,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0256",
+      "source_id": "ORIGIN-0257",
       "source_path": "reports/external-research/121Q2-night-progress.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "121Q2 Night Progress Report",
@@ -5746,7 +5759,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0257",
+      "source_id": "ORIGIN-0258",
       "source_path": "reports/external-research/121Q2R-canonical-reconciliation.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "121Q2R Canonical Reconciliation Report",
@@ -5759,7 +5772,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0258",
+      "source_id": "ORIGIN-0259",
       "source_path": "reports/external-research/121Q2R-final-report.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "121Q2R Final Report",
@@ -5772,7 +5785,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0259",
+      "source_id": "ORIGIN-0260",
       "source_path": "reports/external-research/121Q2V-verification-repair-report.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "121Q2V Verification Repair Report",
@@ -5785,7 +5798,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0260",
+      "source_id": "ORIGIN-0261",
       "source_path": "reports/external-research/121Q2W-final-consistency-seal-report.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "121Q2W Final Consistency Seal Report",
@@ -5798,7 +5811,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0261",
+      "source_id": "ORIGIN-0262",
       "source_path": "reports/external-research/121Q3-night-final-report.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "121Q3 Night Final Report",
@@ -5811,7 +5824,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0262",
+      "source_id": "ORIGIN-0263",
       "source_path": "reports/external-research/121Q3-night-progress.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "121Q3 Night Progress Report",
@@ -5824,7 +5837,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0263",
+      "source_id": "ORIGIN-0264",
       "source_path": "reports/external-research/121Q4-final-report.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "121Q4 Final Report: Function OS v0.1 Symbolic Reference Implementation",
@@ -5837,7 +5850,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0264",
+      "source_id": "ORIGIN-0265",
       "source_path": "reports/external-research/121Q5-final-report.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "121Q5 Final Report — Canonical Function OS v0.2",
@@ -5850,7 +5863,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0265",
+      "source_id": "ORIGIN-0266",
       "source_path": "reports/external-research/121b-fulltext-batch-report.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "121B Fulltext Batch Report",
@@ -5863,7 +5876,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0266",
+      "source_id": "ORIGIN-0267",
       "source_path": "reports/external-research/121b-handoff-to-121c.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "121B → 121C Handoff",
@@ -5876,7 +5889,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0267",
+      "source_id": "ORIGIN-0268",
       "source_path": "reports/external-research/121c01-max-semantic-review-batch-01.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "121C01: First Batch GLM-5.2 Max Semantic Review Report",
@@ -5889,7 +5902,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0268",
+      "source_id": "ORIGIN-0269",
       "source_path": "reports/external-research/pointfire-getnote-external-verification-r1-20260813.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "GetNote external verification R1",
@@ -5902,7 +5915,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0269",
+      "source_id": "ORIGIN-0270",
       "source_path": "reports/external-research/pointfire-seven-track-replay-r1/BASELINE-VS-GOVERNED.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "STEP03 blinded baseline versus governed replay",
@@ -5915,7 +5928,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0270",
+      "source_id": "ORIGIN-0271",
       "source_path": "reports/external-research/pointfire-seven-track-replay-r1/REPLAY-REPORT.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "Pointfire seven-track external cross-domain replay — repaired governed pass",
@@ -5928,7 +5941,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0271",
+      "source_id": "ORIGIN-0272",
       "source_path": "reports/foundation-architecture/075-truth-audit-20260712.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "075 truth audit",
@@ -5941,7 +5954,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0272",
+      "source_id": "ORIGIN-0273",
       "source_path": "reports/foundation-architecture/076-adversarial-acceptance-audit-20260713.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "076 adversarial acceptance audit",
@@ -5954,7 +5967,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0273",
+      "source_id": "ORIGIN-0274",
       "source_path": "reports/foundation-architecture/078-truth-audit-20260713.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "078 truth audit",
@@ -5967,7 +5980,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0274",
+      "source_id": "ORIGIN-0275",
       "source_path": "reports/foundation-architecture/080-full-semantic-adjudication-report-20260713.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "080 Full Semantic Adjudication Report",
@@ -5980,7 +5993,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0275",
+      "source_id": "ORIGIN-0276",
       "source_path": "reports/foundation-architecture/080-highest-model-escalation-summary-20260713.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "080 Highest Model Escalation Summary",
@@ -5993,7 +6006,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0276",
+      "source_id": "ORIGIN-0277",
       "source_path": "reports/foundation-architecture/080-resume-instructions-20260713.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "080 Resume Instructions",
@@ -6006,7 +6019,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0277",
+      "source_id": "ORIGIN-0278",
       "source_path": "reports/foundation-architecture/082-independent-acceptance-audit.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "082 Independent Acceptance Audit Report",
@@ -6019,7 +6032,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0278",
+      "source_id": "ORIGIN-0279",
       "source_path": "reports/foundation-architecture/083-escalation-routing-report.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "083 Escalation Routing Report",
@@ -6032,7 +6045,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0279",
+      "source_id": "ORIGIN-0280",
       "source_path": "reports/foundation-architecture/083-glm-high-repair-summary.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "083 GLM High Repair Summary",
@@ -6045,7 +6058,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0280",
+      "source_id": "ORIGIN-0281",
       "source_path": "reports/foundation-architecture/083-max-queue-readiness.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "083 Max Queue Readiness Report",
@@ -6058,7 +6071,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0281",
+      "source_id": "ORIGIN-0282",
       "source_path": "reports/foundation-architecture/083-quality-window-report.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "083 Quality Window Report",
@@ -6071,7 +6084,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0282",
+      "source_id": "ORIGIN-0283",
       "source_path": "reports/foundation-architecture/084-architecture-truth-freeze-readiness.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "084 Architecture Truth Freeze Readiness Assessment",
@@ -6084,7 +6097,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0283",
+      "source_id": "ORIGIN-0284",
       "source_path": "reports/foundation-architecture/084-max-adjudication-report.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-084 Max Adjudication Report",
@@ -6097,7 +6110,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0284",
+      "source_id": "ORIGIN-0285",
       "source_path": "reports/foundation-architecture/085-084-truth-status-correction.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "085: 084 Truth Status Correction",
@@ -6110,7 +6123,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0285",
+      "source_id": "ORIGIN-0286",
       "source_path": "reports/foundation-architecture/085-architecture-structure-freeze.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "085: Architecture Structure Freeze Report",
@@ -6123,7 +6136,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0286",
+      "source_id": "ORIGIN-0287",
       "source_path": "reports/foundation-architecture/085-backlog-prioritization.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "085: Backlog Prioritization",
@@ -6136,7 +6149,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0287",
+      "source_id": "ORIGIN-0288",
       "source_path": "reports/foundation-architecture/088-087-count-and-denominator-audit.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "088 阶段1：087 计数与分母审计",
@@ -6149,7 +6162,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0288",
+      "source_id": "ORIGIN-0289",
       "source_path": "reports/foundation-architecture/098-claim-governance-implementation.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "Task 98 claim-governance implementation record",
@@ -6162,7 +6175,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0289",
+      "source_id": "ORIGIN-0290",
       "source_path": "reports/foundation-architecture/098-dependency-impact.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "Task 98 dependency impact",
@@ -6175,7 +6188,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0290",
+      "source_id": "ORIGIN-0291",
       "source_path": "reports/foundation-architecture/098-remote-truth-and-gap.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "Task 98 remote truth and gap lock",
@@ -6188,7 +6201,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0291",
+      "source_id": "ORIGIN-0292",
       "source_path": "reports/foundation-architecture/099-function-asset-registry-closure.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "099 Function Asset Registry Closure",
@@ -6201,7 +6214,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0292",
+      "source_id": "ORIGIN-0293",
       "source_path": "reports/foundation-architecture/100-nonfunction-claim-evidence-lineage-closure.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "Task 100 — corpus-wide non-function claim adjudication and evidence-lineage closure",
@@ -6214,7 +6227,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0293",
+      "source_id": "ORIGIN-0294",
       "source_path": "reports/foundation-architecture/101-human-readable-surfaces-self-correction-closeout.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "101 人类可读知识表面与持续自我纠错引擎",
@@ -6227,7 +6240,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0294",
+      "source_id": "ORIGIN-0295",
       "source_path": "reports/foundation-architecture/40-proof-obligation-triage-20260713.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "Forty proof-obligation dossiers",
@@ -6240,7 +6253,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0295",
+      "source_id": "ORIGIN-0296",
       "source_path": "reports/foundation-architecture/D220-countermodel-equivalence-audit-20260713.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "D220 countermodel-equivalence audit",
@@ -6253,7 +6266,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0296",
+      "source_id": "ORIGIN-0297",
       "source_path": "reports/foundation-architecture/D598-final-adjudication-20260713.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "D598 final adjudication",
@@ -6266,7 +6279,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0297",
+      "source_id": "ORIGIN-0298",
       "source_path": "reports/foundation-architecture/T16-counterexample-equivalence-audit-20260713.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "T16 counterexample-equivalence audit",
@@ -6279,7 +6292,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0298",
+      "source_id": "ORIGIN-0299",
       "source_path": "reports/foundation-architecture/T2-proof-equivalence-audit-20260713.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "T2 proof-equivalence audit",
@@ -6292,7 +6305,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0299",
+      "source_id": "ORIGIN-0300",
       "source_path": "reports/foundation-architecture/ai-entrypoint-audit-20260712.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "AI entrypoint audit",
@@ -6305,7 +6318,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0300",
+      "source_id": "ORIGIN-0301",
       "source_path": "reports/foundation-architecture/architecture-rebuild-summary-20260712.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "Architecture rebuild summary",
@@ -6318,7 +6331,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0301",
+      "source_id": "ORIGIN-0302",
       "source_path": "reports/foundation-architecture/claim-argument-evidence-audit-20260712.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "Claim argument evidence audit",
@@ -6331,7 +6344,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0302",
+      "source_id": "ORIGIN-0303",
       "source_path": "reports/foundation-architecture/core-kernel-adjudication-20260713.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "Core kernel adjudication",
@@ -6344,7 +6357,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0303",
+      "source_id": "ORIGIN-0304",
       "source_path": "reports/foundation-architecture/core-proof-and-countermodel-report-20260713.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "Core proof and countermodel report",
@@ -6357,7 +6370,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0304",
+      "source_id": "ORIGIN-0305",
       "source_path": "reports/foundation-architecture/core-strong-claim-audit-20260713.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "Core strong-claim audit",
@@ -6370,7 +6383,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0305",
+      "source_id": "ORIGIN-0306",
       "source_path": "reports/foundation-architecture/core-system-reclassification-20260712.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "Core system reclassification",
@@ -6383,7 +6396,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0306",
+      "source_id": "ORIGIN-0307",
       "source_path": "reports/foundation-architecture/count-reconciliation-20260712.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "Count reconciliation",
@@ -6396,7 +6409,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0307",
+      "source_id": "ORIGIN-0308",
       "source_path": "reports/foundation-architecture/counterexample-replay-audit-20260712.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "Counterexample replay audit",
@@ -6409,7 +6422,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0308",
+      "source_id": "ORIGIN-0309",
       "source_path": "reports/foundation-architecture/formalization-roadmap-20260712.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "Formalization roadmap",
@@ -6422,7 +6435,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0309",
+      "source_id": "ORIGIN-0310",
       "source_path": "reports/foundation-architecture/full-migration-coverage-20260712.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "Full migration coverage",
@@ -6435,7 +6448,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0310",
+      "source_id": "ORIGIN-0311",
       "source_path": "reports/foundation-architecture/legacy-compatibility-report-20260712.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "Legacy compatibility report",
@@ -6448,7 +6461,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0311",
+      "source_id": "ORIGIN-0312",
       "source_path": "reports/foundation-architecture/local-source-recovery-audit-20260712.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "Local source and recovery audit",
@@ -6461,7 +6474,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0312",
+      "source_id": "ORIGIN-0313",
       "source_path": "reports/foundation-architecture/logic-validation-report-20260712.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "Logic validation report",
@@ -6474,7 +6487,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0313",
+      "source_id": "ORIGIN-0314",
       "source_path": "reports/foundation-architecture/math-proof-backend-report-20260712.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "Math proof backend report",
@@ -6487,7 +6500,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0314",
+      "source_id": "ORIGIN-0315",
       "source_path": "reports/foundation-architecture/migration-and-rollback-20260712.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "Migration and rollback",
@@ -6500,7 +6513,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0315",
+      "source_id": "ORIGIN-0316",
       "source_path": "reports/foundation-architecture/object-classification-20260712.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "Object classification",
@@ -6513,7 +6526,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0316",
+      "source_id": "ORIGIN-0317",
       "source_path": "reports/foundation-architecture/pointfire-seven-track-foundation-high-impact-frontier-r1-20260813.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "Foundation high-impact frontier R1",
@@ -6526,7 +6539,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0317",
+      "source_id": "ORIGIN-0318",
       "source_path": "reports/foundation-architecture/remaining-content-work-queue-20260713.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "Remaining content work queue",
@@ -6539,7 +6552,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0318",
+      "source_id": "ORIGIN-0319",
       "source_path": "reports/foundation-architecture/schema-and-integrity-audit-20260712.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "Schema and integrity audit",
@@ -6552,7 +6565,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0319",
+      "source_id": "ORIGIN-0320",
       "source_path": "reports/foundation-architecture/semantic-adjudication-verification-20260713.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "Semantic adjudication verification",
@@ -6565,7 +6578,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0320",
+      "source_id": "ORIGIN-0321",
       "source_path": "reports/foundation-architecture/strong-claim-gate-audit-20260712.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "Strong claim gate audit",
@@ -6578,7 +6591,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0321",
+      "source_id": "ORIGIN-0322",
       "source_path": "reports/foundation-architecture/strong-term-audit-20260712.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "Strong-term audit",
@@ -6591,7 +6604,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0322",
+      "source_id": "ORIGIN-0323",
       "source_path": "reports/foundation-architecture/unresolved-obligations-20260712.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "Unresolved obligations",
@@ -6604,7 +6617,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0323",
+      "source_id": "ORIGIN-0324",
       "source_path": "reports/foundation-architecture/validation-summary-20260712.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "Validation summary",
@@ -6617,7 +6630,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0324",
+      "source_id": "ORIGIN-0325",
       "source_path": "reports/governance/121Q8-final-report.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "121Q8 Final Report",
@@ -6630,7 +6643,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0325",
+      "source_id": "ORIGIN-0326",
       "source_path": "reports/math-foundation/blockers-20260712.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "Blockers",
@@ -6643,7 +6656,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0326",
+      "source_id": "ORIGIN-0327",
       "source_path": "reports/math-foundation/full-object-inventory-20260712.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "Full Object Inventory",
@@ -6656,7 +6669,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0327",
+      "source_id": "ORIGIN-0328",
       "source_path": "reports/math-foundation/local-note-sync-report-20260712.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "Local Note Sync Report",
@@ -6669,7 +6682,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0328",
+      "source_id": "ORIGIN-0329",
       "source_path": "reports/math-foundation/pilot-formal-audit-20260712.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "Pilot Formal Audit",
@@ -6682,7 +6695,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0329",
+      "source_id": "ORIGIN-0330",
       "source_path": "reports/math-foundation/provenance-audit-20260712.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "Provenance Audit",
@@ -6695,7 +6708,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0330",
+      "source_id": "ORIGIN-0331",
       "source_path": "reports/operations/102-knowledge-experience-audit.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "任务 102 知识体验层缺口与覆盖审计",
@@ -6708,7 +6721,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0331",
+      "source_id": "ORIGIN-0332",
       "source_path": "reports/operations/114-language-thought-project-audit.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "任务 114 项目级语言—思维风险审计",
@@ -6721,7 +6734,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0332",
+      "source_id": "ORIGIN-0333",
       "source_path": "reports/operations/121Q24-current-state-reconciliation.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "121Q24 Current-State Reconciliation",
@@ -6734,7 +6747,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0333",
+      "source_id": "ORIGIN-0334",
       "source_path": "reports/operations/121Q25-front-door-audit.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "121Q25 Human Front-Door Audit",
@@ -6747,7 +6760,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0334",
+      "source_id": "ORIGIN-0335",
       "source_path": "reports/operations/121Q25B-whole-project-synchronization-contract.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "121Q25B Whole-Project Synchronization Contract",
@@ -6760,7 +6773,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0335",
+      "source_id": "ORIGIN-0336",
       "source_path": "reports/operations/121Q25C-lifecycle-gate-deadlock-repair.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "121Q25C Lifecycle-Gate Deadlock Repair",
@@ -6773,7 +6786,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0336",
+      "source_id": "ORIGIN-0337",
       "source_path": "reports/operations/121Q25D-current-closeout.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "121Q25D current closeout",
@@ -6786,7 +6799,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0337",
+      "source_id": "ORIGIN-0338",
       "source_path": "reports/operations/121Q28-embodied-cognitive-leap-writing-method-audit.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "121Q28 肉身锚定的心智层级跃迁写作法审计",
@@ -6799,7 +6812,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0338",
+      "source_id": "ORIGIN-0339",
       "source_path": "reports/operations/121Q28R-cognitive-level-leap-writing-method-audit.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "121Q28R 之元写作法 0.2.0 修订审计",
@@ -6812,7 +6825,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0339",
+      "source_id": "ORIGIN-0340",
       "source_path": "reports/operations/121Q28S-zhiyuan-writing-method-whole-project-integration-audit.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "121Q28S 之元写作法 0.3.0 全项目整合审计",
@@ -6825,7 +6838,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0340",
+      "source_id": "ORIGIN-0341",
       "source_path": "reports/operations/121Q28T-zhiyuan-writing-method-merge-current-closeout-audit.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "121Q28T｜之元写作法 0.3.0 Current 收口",
@@ -6838,7 +6851,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0341",
+      "source_id": "ORIGIN-0342",
       "source_path": "reports/operations/121Q30-homepage-architecture-and-zhiyuan-writing-showcase-audit.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "121Q30｜首页架构与之元写作法成果展示审计",
@@ -6851,7 +6864,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0342",
+      "source_id": "ORIGIN-0343",
       "source_path": "reports/operations/121Q30T-homepage-showcase-merge-current-closeout-audit.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "121Q30T｜首页与之元写作法成果展示合并收口审计",
@@ -6864,7 +6877,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0343",
+      "source_id": "ORIGIN-0344",
       "source_path": "reports/operations/121Q31-interactive-system-map-and-writing-source-pool-audit.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "121Q31｜完整可点击系统图与双来源写作素材池审计",
@@ -6877,7 +6890,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0344",
+      "source_id": "ORIGIN-0345",
       "source_path": "reports/operations/121Q31T-interactive-system-map-and-writing-pool-merge-current-closeout-audit.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "121Q31T｜交互系统总图与双来源写作素材池合并收口审计",
@@ -6890,7 +6903,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0345",
+      "source_id": "ORIGIN-0346",
       "source_path": "reports/operations/121Q32-change-propagation-impact.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "121Q32 typed change-propagation impact report",
@@ -6903,7 +6916,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0346",
+      "source_id": "ORIGIN-0347",
       "source_path": "reports/operations/121Q32-typed-change-propagation-and-self-updating-system-map-audit.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "121Q32 类型化变更传播与自更新系统图审计",
@@ -6916,7 +6929,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0347",
+      "source_id": "ORIGIN-0348",
       "source_path": "reports/operations/121Q32I-change-propagation-impact.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "121Q32I typed change-propagation impact report",
@@ -6929,7 +6942,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0348",
+      "source_id": "ORIGIN-0349",
       "source_path": "reports/operations/121Q32I-phase-d-validation-closeout.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "121Q32I Phase D integrated validation closeout",
@@ -6942,7 +6955,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0349",
+      "source_id": "ORIGIN-0350",
       "source_path": "reports/operations/IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-GATE-NARROW-REPAIR-R1-20260726-change-propagation-impact.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-GATE-NARROW-REPAIR-R1-20260726 typed change-propagation impact report",
@@ -6955,7 +6968,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0350",
+      "source_id": "ORIGIN-0351",
       "source_path": "reports/operations/IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-NORMALIZED-SCHEMA-AND-AUTOMATION-VARIANT-NARROW-REPAIR-R2-20260726-change-propagation-impact.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-NORMALIZED-SCHEMA-AND-AUTOMATION-VARIANT-NARROW-REPAIR-R2-20260726 typed change-propagation impact report",
@@ -6968,7 +6981,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0351",
+      "source_id": "ORIGIN-0352",
       "source_path": "reports/operations/IGNITION-ITERATION-METHOD-1.4-change-propagation-impact.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-ITERATION-METHOD-1.4-CONTINUOUS-STAGE-SNAPSHOT-PUBLICATION-R1-20260726 typed change-propagation impact report",
@@ -6981,7 +6994,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0352",
+      "source_id": "ORIGIN-0353",
       "source_path": "reports/operations/IGNITION-ITERATION-METHOD-1.4-homepage-comparison.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "Current Main vs 1.4 Candidate Homepage Comparison",
@@ -6994,7 +7007,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0353",
+      "source_id": "ORIGIN-0354",
       "source_path": "reports/operations/lifecycle-audit-108.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "生命周期审计 · 任务 108（双相迭代终态化与自闭合当前真相 R1）",
@@ -7007,7 +7020,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0354",
+      "source_id": "ORIGIN-0355",
       "source_path": "reports/publication/jin-rise-point-fire-analysis.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "1. 标题与机器可读前言",
@@ -7022,7 +7035,7 @@
       "review_note": "由正文继续阅读路径直接回链到内容或方法火种。"
     },
     {
-      "source_id": "ORIGIN-0355",
+      "source_id": "ORIGIN-0356",
       "source_path": "reports/publication/song-huizong-taoism-point-fire-analysis.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "任务 113：宋徽宗道教笔记的点火分析",
@@ -7035,7 +7048,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0356",
+      "source_id": "ORIGIN-0357",
       "source_path": "reports/publication/zhiyuan-writing-cognitive-migration-editorial-revision-review.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "认知迁移编辑修订：Owner 决定与独立审查入口",
@@ -7048,7 +7061,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0357",
+      "source_id": "ORIGIN-0358",
       "source_path": "reports/reality/121Q16-action-selection.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "121Q16 Action Selection",
@@ -7061,7 +7074,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0358",
+      "source_id": "ORIGIN-0359",
       "source_path": "reports/reality/121Q16-sustainability-signal-pilot.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "121Q16 Sustainability Signal Pilot",
@@ -7074,7 +7087,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0359",
+      "source_id": "ORIGIN-0360",
       "source_path": "reports/release/121Q10-emergent-state-license-finalization.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "121Q10 Emergent Current State and License Text Finalization",
@@ -7087,7 +7100,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0360",
+      "source_id": "ORIGIN-0361",
       "source_path": "reports/release/121Q9-cumulative-baseline.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "121Q9 Cumulative Baseline",
@@ -7100,7 +7113,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0361",
+      "source_id": "ORIGIN-0362",
       "source_path": "reports/release/121Q9-final-release-candidate.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "121Q9 Final Release Candidate",
@@ -7113,7 +7126,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0362",
+      "source_id": "ORIGIN-0363",
       "source_path": "reports/release/121Q9-global-validation.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "121Q9 Global Validation",
@@ -7126,7 +7139,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0363",
+      "source_id": "ORIGIN-0364",
       "source_path": "reports/releases/121Q15-q12-q14-cumulative-preflight.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "121Q15 Q12-Q14 Cumulative Preflight",
@@ -7139,7 +7152,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0364",
+      "source_id": "ORIGIN-0365",
       "source_path": "reports/research/121Q22-probability-systems-source-map.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "121Q22 Probability and Systems Source Map",
@@ -7152,7 +7165,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0365",
+      "source_id": "ORIGIN-0366",
       "source_path": "reports/research/121Q23-network-theory-source-map.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "121Q23 Network Theory Source Map",
@@ -7165,7 +7178,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0366",
+      "source_id": "ORIGIN-0367",
       "source_path": "reports/research/reos-vnext-light-pilot-r1.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "REOS vNext LIGHT pilot R1 — public-safe synthesis",
@@ -7181,7 +7194,7 @@
       "review_note": "由正文继续阅读路径直接回链到内容或方法火种。"
     },
     {
-      "source_id": "ORIGIN-0367",
+      "source_id": "ORIGIN-0368",
       "source_path": "reports/validation/pointfire-seven-track-current-main-maintenance-r1-20260813.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "Pointfire seven-track current-main maintenance integration R1",
@@ -7194,7 +7207,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0368",
+      "source_id": "ORIGIN-0369",
       "source_path": "新故事/0001-S1-比刀剑更持久的，是共享观念.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "比刀剑更持久的，是共享观念",
@@ -7207,7 +7220,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0369",
+      "source_id": "ORIGIN-0370",
       "source_path": "新故事/INDEX.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "新故事索引表（2026年07月06日03时06分，故事总数 1）",
@@ -7221,13 +7234,13 @@
     }
   ],
   "source_census_summary": {
-    "source_count": 369,
+    "source_count": 370,
     "knowledge_experience_source_origins": 308,
-    "supplemental_source_count": 61,
+    "supplemental_source_count": 62,
     "disposition_counts": {
       "EXCLUDED_NONCONTENT": 72,
       "MERGED_INTO_SEED": 24,
-      "NO_SEED_DELTA": 234,
+      "NO_SEED_DELTA": 235,
       "SEED_CREATED": 39
     }
   },

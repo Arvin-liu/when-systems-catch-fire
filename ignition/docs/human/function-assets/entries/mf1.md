@@ -27,7 +27,7 @@ treating automatic extraction or an internal test as truth。
 - 机器 ID：`MF1`；身份标签：`GATE_OR_DECISION_RULE`。
 - M/E：数学成熟度 `M1`；外部证据成熟度 `E0`。
 - 处置：`KEEP`；claim ceiling：Automatic discovery only; no mathematical or external truth is conferred.
-- 机器记录指纹：`64b32e4423f73337a853b9b2edc867c067009036b503911a57dcfc59b38729b0`；来源指纹：`abde602a04192d1facb7b3c6b4dbbf48dfd9cfacfdf74d207f7525b87cfbf2de`。来源：[data/foundation/adjudications/079-method-audit.jsonl](../../../data/foundation/adjudications/079-method-audit.jsonl)。
+- 机器记录指纹：`b75f195e04c0815de2201d19a79c7bbb51842ee5ee83f9df36d933871b5e98ab`；来源指纹：`abde602a04192d1facb7b3c6b4dbbf48dfd9cfacfdf74d207f7525b87cfbf2de`。来源：[data/foundation/adjudications/079-method-audit.jsonl](../../../data/foundation/adjudications/079-method-audit.jsonl)。
 - 机器权威：[identity cards](../../../data/foundation/function-assets/identity-cards.jsonl)；生成方法：[之元写作法 0.5.0](../../../docs/publication/zhiyuan-writing-method.md)。
 
 > 这页是人类可读的解释入口，不改变机器登记的状态，也不把人话摘要当成新的来源。来源文件变化时，先更新 canonical registry，再重新生成本页。
