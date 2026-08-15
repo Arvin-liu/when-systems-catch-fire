@@ -33,7 +33,20 @@ from .control import (
     LeaseStore,
 )
 from .r1_runtime import AgentRuntimeR1, R1RunSpec, RuntimeR1Error
-from .transport import JsonlReasonerTransport, ReasonerRequest, ReasonerResponse, ScriptedReasoner
+from .transport import (
+    AdversarialGatewayAdapter,
+    GatewayError,
+    GatewayReasonerAdapter,
+    GatewayRequest,
+    GatewayResponse,
+    JsonlReasonerTransport,
+    ReasonerGateway,
+    ReasonerRequest,
+    ReasonerResponse,
+    ScriptedGatewayAdapter,
+    ScriptedReasoner,
+    SubprocessReasonerAdapter,
+)
 from .pack_registry import CapabilityRoute, LoadedPack, PackBus, PackLoader, PackManifest, PackRegistry, PackRegistryError
 from .memory import MemoryEntry, MemoryStoreError, OperationalMemoryStore
 from .supervisor import ChildRunSpec, EpisodeBudget, EpisodeSpec, Supervisor, SupervisorError
@@ -66,6 +79,12 @@ __all__ = [
     "ExecutionLease",
     "ExecutionPacket",
     "JsonlReasonerTransport",
+    "AdversarialGatewayAdapter",
+    "GatewayError",
+    "GatewayReasonerAdapter",
+    "GatewayRequest",
+    "GatewayResponse",
+    "ReasonerGateway",
     "LeaseStore",
     "LocalWorkspaceExecutor",
     "R1RunSpec",
@@ -74,6 +93,8 @@ __all__ = [
     "RollbackClass",
     "RuntimeR1Error",
     "ScriptedReasoner",
+    "ScriptedGatewayAdapter",
+    "SubprocessReasonerAdapter",
     "WorkspacePolicy",
     "WorkspaceViolation",
     "CapabilityRoute",

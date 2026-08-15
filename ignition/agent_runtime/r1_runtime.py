@@ -34,10 +34,14 @@ from .control import (
     utc_now,
 )
 from .transport import (
+    GatewayReasonerAdapter,
+    ReasonerGateway,
     JsonlReasonerTransport,
     ReasonerRequest,
     ReasonerResponse,
+    ScriptedGatewayAdapter,
     ScriptedReasoner,
+    SubprocessReasonerAdapter,
     TransportError,
     action_plan_hash,
 )
@@ -104,8 +108,8 @@ class R1RunSpec:
             raise RuntimeR1Error("write count exceeds workspace policy")
         if not isinstance(self.reasoner, Mapping) or not isinstance(self.executor, Mapping) or not isinstance(self.validator, Mapping):
             raise RuntimeR1Error("reasoner, executor and validator must be objects")
-        if self.reasoner.get("type", "scripted") not in {"scripted", "jsonl"}:
-            raise RuntimeR1Error("reasoner.type must be scripted or jsonl")
+        if self.reasoner.get("type", "scripted") not in {"scripted", "jsonl", "gateway-scripted", "gateway-jsonl"}:
+            raise RuntimeR1Error("reasoner.type must be scripted, jsonl, gateway-scripted or gateway-jsonl")
         if set(self.executor) != {"type", "class_id"} or self.executor.get("type") != "local_workspace":
             raise RuntimeR1Error("executor must be the declared local_workspace adapter")
         _id(self.executor["class_id"], "executor.class_id")
@@ -327,8 +331,37 @@ class AgentRuntimeR1:
         return list(self.state["trace"])
 
     def _reasoner(self, configured: Sequence[ExecutionPacket]) -> Any:
-        if self.spec.reasoner.get("type", "scripted") == "scripted":
+        reasoner_type = self.spec.reasoner.get("type", "scripted")
+        if reasoner_type == "scripted":
             return ScriptedReasoner(configured, frame_summary=self.spec.reasoner.get("frame_summary", "bounded local task frame"))
+        if reasoner_type == "gateway-scripted":
+            gateway = ReasonerGateway(
+                ScriptedGatewayAdapter(configured, frame_summary=self.spec.reasoner.get("frame_summary", "bounded gateway task frame")),
+                max_context_chars=int(self.spec.reasoner.get("max_context_chars", 12000)),
+            )
+            return GatewayReasonerAdapter(
+                gateway,
+                available_packs=tuple(self.spec.reasoner.get("available_packs", ())),
+                context_capsule=tuple(self.spec.reasoner.get("context_capsule", ())),
+            )
+        if reasoner_type == "gateway-jsonl":
+            argv = self.spec.reasoner.get("argv")
+            if not isinstance(argv, list):
+                raise RuntimeR1Error("gateway-jsonl reasoner requires a literal argv array")
+            gateway = ReasonerGateway(
+                SubprocessReasonerAdapter(
+                    argv,
+                    timeout_seconds=float(self.spec.reasoner.get("timeout_seconds", 30.0)),
+                    max_output_bytes=int(self.spec.reasoner.get("max_output_bytes", 65536)),
+                    cwd=self.spec.reasoner.get("cwd"),
+                ),
+                max_context_chars=int(self.spec.reasoner.get("max_context_chars", 12000)),
+            )
+            return GatewayReasonerAdapter(
+                gateway,
+                available_packs=tuple(self.spec.reasoner.get("available_packs", ())),
+                context_capsule=tuple(self.spec.reasoner.get("context_capsule", ())),
+            )
         argv = self.spec.reasoner.get("argv")
         if not isinstance(argv, list):
             raise RuntimeR1Error("jsonl reasoner requires a literal argv array")

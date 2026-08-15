@@ -75,6 +75,24 @@ executable, Pack, network permission, Charter authority or executor adapter.
 `Supervisor.start(..., profiles=...)` applies this projection before persisting
 the episode; `episode start --profiles` exposes the same boundary on the CLI.
 
+## Reasoner Gateway R1
+
+`agent_runtime.transport.ReasonerGateway` adds the versioned
+`reasoner-gateway-r1` request/response contract around the existing R1
+Reasoner interface. Requests carry a deterministic SHA-256 digest, bounded
+context capsule, and read-only Pack/capability catalog. Responses can only
+propose typed packets; the Gateway rejects schema mismatch, digest mismatch,
+unknown capabilities, self-approved authority claims, forged completion
+claims, malformed/oversized/crashed/timed-out subprocess output and any
+generic `SUCCESS` status.
+
+The deterministic `ScriptedGatewayAdapter`, literal-argv
+`SubprocessReasonerAdapter` and `AdversarialGatewayAdapter` are all offline.
+Provider/model fields are telemetry only; no API key, live provider or
+execution authority is stored or inferred. R1 specs may select
+`gateway-scripted` or `gateway-jsonl`, and the existing runtime remains the
+only executor.
+
 R1 的 terminal state 新增 `FAILED_VALIDATION_ROLLED_BACK`、`ROLLBACK_FAILED` 和 `REQUIRES_RECONCILIATION`。后一个状态表示 durable journal 无法证明“未执行”或“已达到预期 postimage”；运行时不会猜测或自动升级为完成。
 
 真实离线 pilot 位于 `agent_runtime/pilots/r1_real_local.py`：Pilot A 验证批准后真实写入和 allowlisted command validator；Pilot B 验证跨 executor 重启、post-execute crash 的 postimage reconcile、lease/idempotency 记录和失败后的文件回滚。

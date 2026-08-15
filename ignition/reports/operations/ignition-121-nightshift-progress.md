@@ -127,6 +127,28 @@ Policy and provenance-preserving migration. No failure repair round was needed.
 - One deterministic repair round canonicalized Pack ordering and tightened the
   action-plan digest assertion; no permission or Charter authority was added.
 
+## Step 06 — COMPLETE
+
+- Added versioned `GatewayRequest` / `GatewayResponse` schemas for
+  `reasoner-gateway-r1`, deterministic request digests, bounded context
+  capsules, and read-only available Pack/capability catalogs.
+- Added `ReasonerGateway` validation around deterministic scripted,
+  literal-argv subprocess and adversarial offline adapters. The Gateway only
+  accepts typed plan/action proposals, verifies packet lineage and plan hash,
+  rejects unknown capabilities, self-approved authority, forged completion and
+  generic `SUCCESS`, and treats provider/model metadata as telemetry only.
+- Added typed handling for schema mismatch, digest mismatch, malformed JSON,
+  oversized output, timeout, subprocess crash and secret/prompt/hidden-
+  reasoning material. R1 supports `gateway-scripted` and `gateway-jsonl` while
+  the existing local executor remains the sole action authority.
+- Gates: Gateway tests `4/4 PASS`; Gateway validator, Profile/Agent Runtime
+  regression `43/43 PASS` across the Step 00–05 focused suite, Pack Registry,
+  operational-memory, Supervisor, runtime boundary, Agentization boundary and
+  diff check `PASS`.
+- One deterministic repair round tightened subprocess start failure typing;
+  no live provider, API key, network action or provider-specific dependency was
+  introduced (`OPTIONAL_LIVE_SMOKE=NOT_RUN`).
+
 ## Step ledger
 
 | Step | State | Commit | Remote SHA | Gate summary |
@@ -136,8 +158,8 @@ Policy and provenance-preserving migration. No failure repair round was needed.
 | 02 | COMPLETE | `b8f1b76c11a80e9e6b6bb320789f92ca6b4317e1` | `b8f1b76c11a80e9e6b6bb320789f92ca6b4317e1` | Pack Registry/Bus, four Pack manifests, CLI and runtime regression gates PASS |
 | 03 | COMPLETE | `7e8ac52122e815751870ed9b7d3354f7787d787e` | `7e8ac52122e815751870ed9b7d3354f7787d787e` | Cross-run operational memory, bounded capsule, redacting forget and regression gates PASS |
 | 04 | COMPLETE | `f6d93c119bde1049aaf032b0871479fa2fc86510` | `f6d93c119bde1049aaf032b0871479fa2fc86510` | Supervisor R0 DAG, budgets, approvals, bounded retry/handoff, recovery and regression gates PASS |
-| 05 | COMPLETE | pending until checkpoint commit | pending | Agent Profile R1 registry, legal scope projection, Pack selection and profile-driven approval gates PASS |
-| 06 | PENDING | — | — | — |
+| 05 | COMPLETE | `a16c2c3ed61e825ec3e7e14d24cd85f205f027bc` | `a16c2c3ed61e825ec3e7e14d24cd85f205f027bc` | Agent Profile R1 registry, legal scope projection, Pack selection and profile-driven approval gates PASS |
+| 06 | COMPLETE | pending until checkpoint commit | pending | Reasoner Gateway R1 schema, digest, bounded capsule, provider-neutral adapters and adversarial gates PASS |
 | 07 | PENDING | — | — | — |
 | 08 | PENDING | — | — | — |
 | 09 | PENDING | — | — | — |

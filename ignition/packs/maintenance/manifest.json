@@ -33,7 +33,8 @@
     "tools/validate_pack_registry.py",
     "tools/validate_operational_memory.py",
     "tools/validate_supervisor.py",
-    "tools/validate_agent_profiles.py"
+    "tools/validate_agent_profiles.py",
+    "tools/validate_reasoner_gateway.py"
   ],
   "action_hooks": [
     "maintenance.inspect_declared",
