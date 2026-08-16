@@ -2279,11 +2279,6 @@
   - 可搜索名称：NFC-0cf6cb3970c142cf / At that candidate commit, method 1.2.0 and map 0.2.0 remained Current and review was pending; the newer closeout entry a
   - 来源：`CHANGELOG.md`
   - 依赖：—；被引用：—
-- [At the current commit, Ignition is an evidence-traceable, object-typed, inference-checkable and audit-graded formal mech](../../../llms.txt)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-a5d20412373ffb28 / At the current commit, Ignition is an evidence-traceable, object-typed, inference-checkable and audit-graded formal mech
-  - 来源：`llms.txt`
-  - 依赖：—；被引用：—
 - [authority_changes: \[Human Surface 编辑契约\](../../../docs/governance/human-surface-editorial-contract.md)、\[函数资产\](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-619066387ab384c0 / authority_changes: \[Human Surface 编辑契约\](../../../docs/governance/human-surface-editorial-contract.md)、\[函数资产\](../../../docs/foundation/future-claim-admission-protocol.md)
@@ -2500,4 +2495,9 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-b75b2c8d5d38aca0 / Categorical/Bernoulli training choices are formal stochastic mechanisms, but no calibrated uncertainty, probabilistic fu
   - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [Causal reachability is not actual causation; high probability is not strong causality; network adjacency, similarity, ce](../../../llms.txt)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-5fff1f05b5b59177 / Causal reachability is not actual causation; high probability is not strong causality; network adjacency, similarity, ce
+  - 来源：`llms.txt`
   - 依赖：—；被引用：—

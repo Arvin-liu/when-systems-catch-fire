@@ -2,9 +2,9 @@
   "dimensions": {
     "CURRENT_PUBLIC_WORDING_IMPACT": {
       "baseline_sha256": {
-        "HUMAN-READING.md": "8c2a7504c4732c56618dfd16640fddbeaadcae1489b9d04ccd64dffb81233ad7",
-        "RESULTS/LATEST.md": "d7a068adda0ae4adc7cba93141df358f80a97d1f89f0e1c5f20e7d07bcdc2d9e",
-        "docs/project-current-state.md": "9eb5b107f139c402141bb3cfb9e3670778d0ba586269d5d7e33c0d94a1ae8476"
+        "HUMAN-READING.md": "7938843ef96d0eedd205710ac68e64effee31363df3b0d5f579cccf5cfba9e53",
+        "RESULTS/LATEST.md": "b86c91f816cc4b0ecb58a5876c40dbd5849409f7d407895ce1fa3fb2590e8514",
+        "docs/project-current-state.md": "fbf703ea35b007e71a903e197247ea64fa1a685be79c8d0d861e6652c7540e71"
       },
       "declared": "UNRESOLVED_REVIEW_REQUIRED",
       "governed_sources": [
@@ -74,7 +74,7 @@
     "PROJECT_STATE_IMPACT": {
       "baseline_sha256": {
         "ITERATION.md": "b313d82f90768a88aceb589172a24ea72654e50c60a47161bc47ac461b76f1e1",
-        "docs/project-current-state.md": "9eb5b107f139c402141bb3cfb9e3670778d0ba586269d5d7e33c0d94a1ae8476"
+        "docs/project-current-state.md": "fbf703ea35b007e71a903e197247ea64fa1a685be79c8d0d861e6652c7540e71"
       },
       "declared": "NO_IMPACT_JUSTIFIED",
       "governed_sources": [
@@ -84,7 +84,7 @@
     },
     "REFERENCE_SURFACE_IMPACT": {
       "baseline_sha256": {
-        "docs/architecture/interactive-system-map.md": "bd3edd805d2196627e921a37a221cf06a13361aded4010df73e84cf7f6aa6692",
+        "docs/architecture/interactive-system-map.md": "f49f21ad1c133d97a1ef2ea54b9fc57a84188df5b83bec9da31d4d60b9e96752",
         "function-os-candidate/v0.2/README.md": "ab80c23b895b66ff490ac81c6c687948e928743ba5c648f6acf36029d8b861c1"
       },
       "declared": "NO_IMPACT_JUSTIFIED",
@@ -96,8 +96,8 @@
     "SYSTEM_MAP_IMPACT": {
       "baseline_sha256": {
         "data/architecture/interactive-system-map-layout.json": "de90effb976558e9eb185fda17b7f2e354a428df17f678d95f087a804efa846c",
-        "data/operations/change-propagation-topology.json": "5c8393efadb8876a37904f54f77ff44dd872d2ee52a16682c5e5f403e1e4a8cc",
-        "data/operations/project-components.json": "74e42f7e1acd3641601e7ef4abb6095b6b0198592fe1db281936712e4fe3ab50",
+        "data/operations/change-propagation-topology.json": "909bca99eeca3d1cb52437135bc45df989180337c892be5888b45b3cf16fd683",
+        "data/operations/project-components.json": "25298001041235dd9e32cdb5bab411058b846a2399ca9f5146578f4b755fb5c8",
         "tools/generate_interactive_system_map.py": "f52c31a9f2fa1e68b4e96a15fd4fa8ba53395a3fe47d26121e4f087d2e40fa06"
       },
       "declared": "NO_IMPACT_JUSTIFIED",

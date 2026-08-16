@@ -252,8 +252,8 @@ recorded in the ledger at the Step 09 checkpoint below.
 - Rebuilt affected deterministic projections with their official generators:
   Human Surface materiality now has `48` active entries and `4` retained
   `PLATFORM_CODE_EXCLUDED` provenance withdrawals; Knowledge Experience has
-  `367` cards, `292` changes, `308` layered readings, `21,175` search records
-  and `22,556` checked links. The claim-browser generator now preserves prior
+  `368` cards, `292` changes, `308` layered readings, `21,228` search records
+  and `22,608` checked links. The claim-browser generator now preserves prior
   withdrawal provenance on full rebuilds.
 - Gates: Human Surface structure `48/48` entries PASS; Front Door and
   Visibility PASS; R2 Human Surface validator/test `1/1 PASS`; system-map
@@ -273,6 +273,51 @@ adversarial, fault-injection and full regression review. This task-branch
 checkpoint is committed and pushed only after the ledger and exact SHA are
 written below.
 
+## Step 11 — COMPLETE WITH ENVIRONMENTAL RESIDUAL
+
+- Reclassified `agent_kernel/` and `agent_runtime/` as platform tooling and
+  `packs/` as reference/Knowledge input in repository path accounting. The
+  current manifest is closed at `2,418` paths with `0` unresolved entries;
+  platform code is excluded from Knowledge census and Pack references remain
+  source-bounded.
+- Rebuilt the function and nonfunction censuses and all downstream projections:
+  `5,401` function assets, `15,519` nonfunction claims, `368` Knowledge
+  Experience cards, `292` changes, `308` layered readings, `21,228` search
+  records, `22,608` checked links, `64` Fire Seeds, and `48` active Human
+  Surface entries. Direct closure, Human Front Door/Visibility, unique system
+  map, Agent Platform Human Surface, propagation reconciliation and generator
+  checks were all PASS at the final fixed point.
+- Targeted adversarial coverage passed: R2 core/runtime group `54/54`,
+  propagation and related tests `24/24`, incremental execution/validator
+  tests `50/50`, defensive rejection tests `26/26`, and the production
+  capability contract probe `1/1`. The R2 group includes symlink/special-file
+  handling, shell/executable rejection, stale/forged approval and digest
+  rejection, idempotency/lease/recovery crash points, rollback success/failure,
+  memory expiry/forget/tombstones, Pack tamper/capability escalation,
+  Supervisor continuation and failure, and Reasoner malformed/timeout/crash
+  boundaries.
+- Full regression completed with `665` tests, `1` skip, and `1` classified
+  environmental failure: `foundation.test_foundation.FoundationTests.test_core_claims`
+  reports `T16_SYMPY_COUNTEREXAMPLE SYMPY_UNAVAILABLE:ModuleNotFoundError`.
+  The other four core checks pass; this is an environment dependency residual,
+  not silently counted as PASS and not repaired by changing claim logic.
+- Repaired test isolation in `tests/test_production_execution_authority.py`
+  by mirroring deletions into its detached checkout, and in
+  `tests/test_canonical.py` by moving script-style scratch outputs into a
+  temporary directory. Canonical `40/40` and Canonical-to-Knowledge `5/5`
+  checks now pass without mutating tracked validation or Knowledge outputs.
+- Claim ceilings remain unchanged. This checkpoint records repository-local
+  implementation, test and projection evidence only; it does not establish
+  external truth, causality, Owner acceptance, production safety, general
+  intelligence, or epistemic acceptance.
+
+### Step 11 decision
+
+`STEP_11_ADVERSARIAL_FULL_REGRESSION_COMPLETE_WITH_ENVIRONMENTAL_SYMPY_RESIDUAL`;
+proceed to Step 12 fresh-clone replay, final fast-forward publication and exact
+remote/control-receipt verification. No false PASS is recorded for the missing
+`sympy` dependency.
+
 ## Step ledger
 
 | Step | State | Commit | Remote SHA | Gate summary |
@@ -287,7 +332,7 @@ written below.
 | 07 | COMPLETE | `64e20ef250397a9aebefa5a6f6cf475c279d67a1` | `64e20ef250397a9aebefa5a6f6cf475c279d67a1` | Pack-aware catalog/provenance/routing and three cross-Pack authority negative gates PASS |
 | 08 | COMPLETE | `71ffd9aa5e185d0eddc53e185f2cfc931f16a0df` | `71ffd9aa5e185d0eddc53e185f2cfc931f16a0df` | Four source-contract blast-radius fixtures, topology/impact/generator updates, historical reconciliation and map gates PASS |
 | 09 | COMPLETE | `983aff0b280313c79d82484f609e5a45d721fd63` | `983aff0b280313c79d82484f609e5a45d721fd63` | Offline fresh-clone A/B/C episode, approval-path fault checkpoint, executor handoff, operational memory and adversarial episode PASS |
-| 10 | COMPLETE | pending until checkpoint commit | pending | Human/AI surface R2 convergence, deterministic projection rebuilds, unique map and Knowledge/Front Door/boundary gates PASS |
+| 10 | COMPLETE | `d94200e9c623265463955272bbcff488f76311a8` | `d94200e9c623265463955272bbcff488f76311a8` | Human/AI surface R2 convergence, deterministic projection rebuilds, unique map and Knowledge/Front Door/boundary gates PASS |
 | 11 | PENDING | — | — | — |
 | 12 | PENDING | — | — | — |
 

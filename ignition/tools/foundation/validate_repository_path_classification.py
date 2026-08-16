@@ -56,7 +56,10 @@ RULES: list[tuple[str, tuple[str, ...]]] = [
     # 2. Operations / receipt / history records.
     ("RECEIPT_HISTORY_OPERATIONS", ("data/operations/", "data/ops/")),
     # 3. Tools, scripts, workflows.
-    ("TOOL_OR_WORKFLOW", ("tools/", "scripts/", ".github/", "reos_vnext/")),
+    # Agent Kernel/Runtime implementation is platform provenance, not a
+    # Knowledge source.  Keep it in the non-authoritative tool/workflow plane
+    # so path accounting and the Knowledge admission policy agree.
+    ("TOOL_OR_WORKFLOW", ("tools/", "scripts/", ".github/", "reos_vnext/", "agent_kernel/", "agent_runtime/")),
     # 4. Schemas.
     ("SCHEMA", ("schemas/",)),
     # 5. Test fixtures.
@@ -70,7 +73,7 @@ RULES: list[tuple[str, tuple[str, ...]]] = [
     # 9. Reference surfaces / knowledge / templates / views / inputs / canonical / formal.
     # PUBLICATIONS/ is a maintained human-reading/reference surface; it is not
     # an authoritative claim input and must not flow back into Foundation discovery.
-    ("REFERENCE_OR_KNOWLEDGE", ("KNOWLEDGE/", "PUBLICATIONS/", "templates/", "views/", "inputs/", "canonical/", "formal/")),
+    ("REFERENCE_OR_KNOWLEDGE", ("KNOWLEDGE/", "PUBLICATIONS/", "templates/", "views/", "inputs/", "canonical/", "formal/", "packs/")),
     # 10. Editorial articles / analyses / stories / results / licenses / agent-results.
     ("EDITORIAL_ARTICLE", ("docs/", "analysis/", "新故事/", "RESULTS/", "LICENSES/", "agent-results/")),
     # 11. All remaining data/ machine records.  Must come after the operations exception.

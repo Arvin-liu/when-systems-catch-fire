@@ -5,14 +5,14 @@
 索引按固定 500 条分片，避免单页过大而无法在 GitHub 渲染。分片连续覆盖本主题主归属资产，未按重要性删减。
 
 - [第 001 片](./architecture_governance/part-001.md)：1—500；"""121-validator.py — Validate 121 fulltext artifacts by actually reading files. → `active/CC-BY-SA-4.0.md`: life-community value charter and general governance principle texts.
-- [第 002 片](./architecture_governance/part-002.md)：501—1000；`ARCHITECTURE_STRUCTURE_FROZEN_CLAIM_TRUTH_PROVISIONAL` → def _stages_completed(self, event_types: dict) -> list:
-- [第 003 片](./architecture_governance/part-003.md)：1001—1500；def _string_sequence(value: Any, path: str) -> tuple\[str, ...\]: → Disclaimer of Warranty. Unless required by applicable law or agreed to in writing, Licensor provides the Work (and each
-- [第 004 片](./architecture_governance/part-004.md)：1501—2000；Do not reuse withdrawn or superseded statistics as current fact. → link: "已迁移的历史案例来源/0760-C-0765-双周访谈打破信息茧房.md"
-- [第 005 片](./architecture_governance/part-005.md)：2001—2500；link: "已迁移的历史案例来源/0761-C-0766-快闪阅读反算法.md" → Syntax has a rigorous denotational interpretation and convex-image projection, but no compiler, elaborator, generator or
-- [第 006 片](./architecture_governance/part-006.md)：2501—3000；Synthesized C++ programs are executable artifacts. SPoC dataset provides reusable artifact collection. But no persistent → \| \[C-0757\]( ) \| \[《写作是门手艺》段落控制≤10行\]( ) \| 该案例对应 D577《观
-- [第 007 片](./architecture_governance/part-007.md)：3001—3500；\| \[C-0758\]( ) \| \[马伯庸建议蹲下来看最下面一排书\]( ) \| 该案例对应 D577《观点竞争 → 三域熵统一
-- [第 008 片](./architecture_governance/part-008.md)：3501—4000；三层结构必然性 → 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
+- [第 002 片](./architecture_governance/part-002.md)：501—1000；`ARCHITECTURE_STRUCTURE_FROZEN_CLAIM_TRUTH_PROVISIONAL` → def _source_hash(text: str) -> str:
+- [第 003 片](./architecture_governance/part-003.md)：1001—1500；def _stages_completed(self, event_types: dict) -> list: → Direct evidence for separating novice/API specification, cAST intermediate representation, Python AST, and executable so
+- [第 004 片](./architecture_governance/part-004.md)：1501—2000；Disclaimer of Warranty. Unless required by applicable law or agreed to in writing, Licensor provides the Work (and each → link: "已迁移的历史案例来源/0759-C-0764-博士期间换十个选题.md"
+- [第 005 片](./architecture_governance/part-005.md)：2001—2500；link: "已迁移的历史案例来源/0760-C-0765-双周访谈打破信息茧房.md" → Sun et al. corrected exact arXiv v2/NeurIPS AI for Science perspective, all-11-page visual/source review plus source-bin
+- [第 006 片](./architecture_governance/part-006.md)：2501—3000；supersession 追加 successor edge，并更新 projection 而不删除前身； → \| \[C-0716\]( ) \| \[笔记格式实验的语义点火\]( ) \| 待补：当前报告只给出编号或统计结论，未找到完整正文。
+- [第 007 片](./architecture_governance/part-007.md)：3001—3500；\| \[C-0722\]( ) \| \[链接笔记统一归集管理\]( ) \| 待补：当前报告只给出编号或统计结论，未找到完整正文。 \| → 一步变成了消息。第二个人并没有获得更多战场事实，只获得了第一个人的判断；第三个人甚至看不见敌军，他看见的是前两个人。越靠后，关于敌人的信息越少，关于自己人的信息越多。到了某一刻，军队不再看敌军做了什么，只盯着自己人：谁在退，谁还站着。战局如
+- [第 008 片](./architecture_governance/part-008.md)：3501—4000；七层主权最低门槛(验证A7财富维度) → 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
 - [第 009 片](./architecture_governance/part-009.md)：4001—4500；原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD` → 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
-- [第 010 片](./architecture_governance/part-010.md)：4501—5000；原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD` → 来源报告：PRIVATE_PROVENANCE_WITHHELD
-- [第 011 片](./architecture_governance/part-011.md)：5001—5500；来源类别、版本／下层事实与点火派生结构： → 预测命题（如：某个社会现象的预测）
-- [第 012 片](./architecture_governance/part-012.md)：5501—5609；预测命题（如：某个经济现象的预测） → （证据不足、需外部验证、待人工复核）
+- [第 010 片](./architecture_governance/part-010.md)：4501—5000；原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD` → 材料错误（实验数据错误）
+- [第 011 片](./architecture_governance/part-011.md)：5001—5500；材料错误（数据错误） → 需要外部验证或等待现实反馈？
+- [第 012 片](./architecture_governance/part-012.md)：5501—5619；需要实验、量表、纵向研究、临床证据。 → （证据不足、需外部验证、待人工复核）

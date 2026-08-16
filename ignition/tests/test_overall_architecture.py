@@ -22,7 +22,7 @@ class OverallArchitectureTest(unittest.TestCase):
         self.assertEqual(len(spec["nodes"]), 64)
         self.assertIn("map-bg", svg)
         self.assertEqual(svg.count('class="node-link"'), 64)
-        self.assertEqual(spec["component_coverage"]["registry_components"], 75)
+        self.assertEqual(spec["component_coverage"]["registry_components"], 76)
         self.assertEqual(spec["component_coverage"]["visible_nodes"], 64)
 
 

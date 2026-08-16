@@ -6,9 +6,13 @@ import unittest
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(ROOT / "tools"))
+sys.path.insert(0, str(ROOT))
 
-from foundation.knowledge_corpus_admission import admission_for_path
+# Use the repository-qualified namespace.  The discovery suite also contains
+# ``tests/foundation``; importing the tool as top-level ``foundation`` would
+# therefore depend on module-discovery order and can resolve to the test
+# package instead of the shared admission policy implementation.
+from tools.foundation.knowledge_corpus_admission import admission_for_path
 
 
 class KnowledgeCorpusAdmissionTests(unittest.TestCase):

@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [ΔΘ = Θ - min Φ = 0](../../../docs/phi_meta_law.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-1A9DA4161A0E8200 / ΔΘ = Θ - min Φ = 0 / IMPLICIT-1A9DA4161A0E8200 / IMPLICIT-0923FD51EF01A1CB
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [ΔΩ_n := Ω_n - Ω_{n-1}（同构增量）](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-eb331219144035f3 / ΔΩ_n := Ω_n - Ω_{n-1}（同构增量）
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
 - [Θ := argmin_x \[∫_{Ω} V(x) dΩ - T·(-k_B ∫_{Ω} p(x) ln p(x) dΩ)\]](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-6899092547602833 / Θ := argmin_x \[∫_{Ω} V(x) dΩ - T·(-k_B ∫_{Ω} p(x) ln p(x) dΩ)\] / IMPLICIT-6899092547602833 / IMPLICIT-E51AC76294648D92

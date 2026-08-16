@@ -29,6 +29,41 @@ def copy_production_authority(destination: Path) -> None:
         shutil.copy2(ROOT / raw, target)
 
 
+def mirror_current_repository(source: Path, destination: Path) -> None:
+    """Overlay the current repository without resurrecting deleted paths.
+
+    ``git worktree add`` seeds ``destination`` from ``HEAD``.  A plain
+    ``copytree(..., dirs_exist_ok=True)`` overlays the working tree but leaves
+    files that were deleted in the source checkout behind.  Those stale files
+    are especially harmful to source-discovery validators: they change the
+    apparent corpus while Git's cached/other path counts can still look equal.
+    Keep the worktree metadata, remove only destination paths absent from the
+    current source, then perform the same symlink-preserving copy.
+    """
+    for root, dirs, files in os.walk(destination, topdown=False):
+        current = Path(root)
+        relative = current.relative_to(destination)
+        if relative.parts and relative.parts[0] == ".git":
+            continue
+        source_root = source / relative
+        for name in (*files, *dirs):
+            candidate = current / name
+            source_candidate = source_root / name
+            if source_candidate.exists() or source_candidate.is_symlink():
+                continue
+            if candidate.is_dir() and not candidate.is_symlink():
+                shutil.rmtree(candidate)
+            else:
+                candidate.unlink()
+    shutil.copytree(
+        source,
+        destination,
+        dirs_exist_ok=True,
+        ignore=shutil.ignore_patterns(".git", ".cache", "__pycache__", "*.pyc"),
+        symlinks=True,
+    )
+
+
 def copy_human_front_door_shell(destination: Path) -> None:
     """Keep an app-root fixture compatible with the split root shell.
 
@@ -127,7 +162,7 @@ class ProductionProfileProbe(unittest.TestCase):
                 # but the formal repository root owns the Git history and the
                 # split .github shell. Copy the complete current repository so
                 # the fixture exercises the same two-root layout as main.
-                shutil.copytree(ROOT.parent, checkout, dirs_exist_ok=True, ignore=shutil.ignore_patterns(".git", ".cache", "__pycache__", "*.pyc"), symlinks=True)
+                mirror_current_repository(ROOT.parent, checkout)
                 for p in local:
                     with self.subTest(component=p["component_id"]):
                         completed = subprocess.run(p["validator_argv"], cwd=checkout / "ignition", text=True, capture_output=True)

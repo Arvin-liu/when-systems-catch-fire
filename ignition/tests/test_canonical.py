@@ -6,7 +6,7 @@ several related items). Run: python3 tests/test_canonical.py
 Exit code 0 = all passed; 1 = failures present; 2 = harness error.
 """
 from __future__ import annotations
-import json, sys, subprocess
+import json, sys, subprocess, tempfile
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -16,6 +16,11 @@ GATE = ROOT / "canonical/data/gate-registry.json"
 MAP = ROOT / "canonical/mappings/legacy-to-canonical-field-map.json"
 REPO = ROOT
 FAKE = ["codex", "gpt", "agent", "openclaw", "qclaw", "claude"]
+
+# Keep this script-style test's scratch inputs and validator outputs out of
+# tracked repository paths so later tests observe stable source hashes.
+_TEST_TMP = tempfile.TemporaryDirectory(prefix="canonical-test-")
+TMP = Path(_TEST_TMP.name)
 
 results = []  # (name, passed, detail)
 def check(name, cond, detail=""):
@@ -74,13 +79,13 @@ check("T6_one_to_many", legacy["constraint_result"] == ["constraint_result", "ro
 check("T7_many_to_one", legacy["psi0_mapping"] == ["psi0_mapping", "relation_to_Psi0"])
 
 # ---- Run validator on SOURCE data (migrated via legacy map) ----
-migrated_out = ROOT / "canonical/data/protocols-canonical.json"
+migrated_out = TMP / "protocols-canonical.json"
 subprocess.run([sys.executable, str(ROOT/"tools/migrate_legacy_protocol_record.py"),
                 "--input", str(REPO / "data/meta-protocols/meta-protocols.json"),
                 "--source-label", "ignition_source", "--output", str(migrated_out)], check=True)
 
-val_json = ROOT / "data/protocol-canonical-validation-results.json"
-val_md = ROOT / "outputs/protocol-canonical-validation-results.md"
+val_json = TMP / "protocol-canonical-validation-results.json"
+val_md = TMP / "protocol-canonical-validation-results.md"
 rc = subprocess.run([sys.executable, str(VALIDATOR),
     "--input", str(migrated_out), "--repo", REPO, "--schema", str(SCHEMA),
     "--gate-registry", str(GATE), "--legacy-map", str(MAP),
@@ -103,12 +108,12 @@ empty_rec = {"protocol_id": "V1", "title_zh": "", "title_en": "", "source_status
              "gate_results": [], "provenance": {}, "version_metadata": {}}
 PSI0_OK = {"primary": ["P_meta"], "secondary": [], "relation": "projection"}
 empty_rec["psi0_mapping"] = PSI0_OK
-ep = ROOT / "tests/fixtures/empty.json"
+ep = TMP / "empty.json"
 ep.write_text(json.dumps([empty_rec], ensure_ascii=False))
-emp_out = ROOT / "tests/fixtures/empty-result.json"
+emp_out = TMP / "empty-result.json"
 rce = subprocess.run([sys.executable, str(VALIDATOR), "--input", str(ep), "--schema", str(SCHEMA),
     "--gate-registry", str(GATE), "--legacy-map", str(MAP),
-    "--json-output", str(emp_out), "--markdown-output", str(ROOT/"tests/fixtures/empty.md")],
+    "--json-output", str(emp_out), "--markdown-output", str(TMP / "empty.md")],
     capture_output=True, text=True)
 emp_data = json.loads(emp_out.read_text())
 empty_g05 = next(g for g in emp_data["results"][0]["gate_results"] if g["gate_id"] == "G05")
@@ -122,12 +127,12 @@ fake_rec = dict(empty_rec)
 fake_rec["psi0_mapping"] = PSI0_OK
 fake_rec["protocol_id"] = "V2"
 fake_rec["review"] = {"reviewer": "Codex", "review_date": "2026-07-10", "review_decision": "approved", "review_notes": "x"}
-fr = ROOT / "tests/fixtures/fake.json"
+fr = TMP / "fake.json"
 fr.write_text(json.dumps([fake_rec], ensure_ascii=False))
-fr_out = ROOT / "tests/fixtures/fake-result.json"
+fr_out = TMP / "fake-result.json"
 subprocess.run([sys.executable, str(VALIDATOR), "--input", str(fr), "--schema", str(SCHEMA),
     "--gate-registry", str(GATE), "--legacy-map", str(MAP),
-    "--json-output", str(fr_out), "--markdown-output", str(ROOT/"tests/fixtures/fake.md")], capture_output=True, text=True)
+    "--json-output", str(fr_out), "--markdown-output", str(TMP / "fake.md")], capture_output=True, text=True)
 fr_data = json.loads(fr_out.read_text())
 g33 = next(g for g in fr_data["results"][0]["gate_results"] if g["gate_id"] == "G33")
 check("T18_fake_reviewer_fail", g33["result"] == "FAIL", f"G33={g33['result']}")
@@ -136,11 +141,11 @@ check("T18_fake_reviewer_fail", g33["result"] == "FAIL", f"G33={g33['result']}")
 # simulate conflict by source_status=formal_protocol but semantic not reviewed
 conf = dict(empty_rec); conf["psi0_mapping"] = PSI0_OK; conf["protocol_id"]="S1"; conf["source_status"]="formal_protocol"
 conf["review"]={"reviewer":"人(示例)", "review_date":"2026-07-10","review_decision":"approved","review_notes":"x"}
-cf = ROOT/"tests/fixtures/conflict.json"; cf.write_text(json.dumps([conf], ensure_ascii=False))
-cf_out = ROOT/"tests/fixtures/conflict-result.json"
+cf = TMP / "conflict.json"; cf.write_text(json.dumps([conf], ensure_ascii=False))
+cf_out = TMP / "conflict-result.json"
 subprocess.run([sys.executable, str(VALIDATOR), "--input", str(cf), "--schema", str(SCHEMA),
     "--gate-registry", str(GATE), "--legacy-map", str(MAP),
-    "--json-output", str(cf_out), "--markdown-output", str(ROOT/"tests/fixtures/conflict.md")], capture_output=True, text=True)
+    "--json-output", str(cf_out), "--markdown-output", str(TMP / "conflict.md")], capture_output=True, text=True)
 cf_data = json.loads(cf_out.read_text())
 check("T19_source_draft_conflict_detectable", cf_data["results"][0]["governance_status"] == "approved")
 
@@ -154,11 +159,11 @@ for r in data["results"]:
 # ---- T22: formal_protocol but governance not approved => not ratification_ready ----
 fp = dict(empty_rec); fp["psi0_mapping"] = PSI0_OK; fp["protocol_id"]="E1"; fp["source_status"]="formal_protocol"
 fp["review"]={"reviewer":"人","review_date":"x","review_decision":"approved","review_notes":"x"}
-fpj = ROOT/"tests/fixtures/fp.json"; fpj.write_text(json.dumps([fp], ensure_ascii=False))
-fpo = ROOT/"tests/fixtures/fp-result.json"
+fpj = TMP / "fp.json"; fpj.write_text(json.dumps([fp], ensure_ascii=False))
+fpo = TMP / "fp-result.json"
 subprocess.run([sys.executable, str(VALIDATOR), "--input", str(fpj), "--schema", str(SCHEMA),
     "--gate-registry", str(GATE), "--legacy-map", str(MAP),
-    "--json-output", str(fpo), "--markdown-output", str(ROOT/"tests/fixtures/fp.md")], capture_output=True, text=True)
+    "--json-output", str(fpo), "--markdown-output", str(TMP / "fp.md")], capture_output=True, text=True)
 fpd = json.loads(fpo.read_text())
 check("T22_formal_without_governance", fpd["results"][0]["ratification_ready"] is False or
       fpd["results"][0]["governance_status"]=="approved")
@@ -178,10 +183,10 @@ check("T28_021_draft_compatible", all(k in d0 for k in ["protocol_id","title_zh"
 # ---- T29: S2 persisted derived status must match validator on canonical release records ----
 persisted = json.loads((ROOT/"data/meta-protocols/protocols-canonical.json").read_text())
 persisted_records = persisted["protocols"]
-persisted_input = ROOT/"tests/fixtures/persisted-release.json"
+persisted_input = TMP / "persisted-release.json"
 persisted_input.write_text(json.dumps(persisted_records, ensure_ascii=False), encoding="utf-8")
-persisted_out = ROOT/"tests/fixtures/persisted-release-result.json"
-persisted_md = ROOT/"tests/fixtures/persisted-release.md"
+persisted_out = TMP / "persisted-release-result.json"
+persisted_md = TMP / "persisted-release.md"
 rcp = subprocess.run([sys.executable, str(VALIDATOR), "--input", str(persisted_input),
     "--repo", str(ROOT), "--schema", str(SCHEMA), "--gate-registry", str(GATE), "--legacy-map", str(MAP),
     "--json-output", str(persisted_out), "--markdown-output", str(persisted_md)],

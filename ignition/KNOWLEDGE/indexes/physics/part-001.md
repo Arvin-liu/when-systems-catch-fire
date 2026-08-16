@@ -2219,6 +2219,11 @@
   - 可搜索名称：NFC-c03291da4bc79894 / 现有知识治理系统被登记为第一个 `Knowledge Domain Pack`，REOS vNext LIGHT 与之元写作法分别作为有界 research/writing Pack 引用；R0 没有全仓物理迁移。机器边界以 \[`agent
   - 来源：`docs/project-current-state.md`
   - 依赖：—；被引用：—
+- [真实离线维护 pilot，仍不做全仓物理大搬家。唯一可点击总架构图继续由 registry、](../../../docs/architecture/agentization-boundary-r0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-c04720d847c20c5d / 真实离线维护 pilot，仍不做全仓物理大搬家。唯一可点击总架构图继续由 registry、
+  - 来源：`docs/architecture/agentization-boundary-r0.md`
+  - 依赖：—；被引用：—
 - [统一规范群；](../../../docs/physics_boundary.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-458f2cc35550de4e / 统一规范群；
@@ -2228,6 +2233,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-d072aeb57f20596e / 统一规范群；
   - 来源：`docs/physics_boundary.md`
+  - 依赖：—；被引用：—
+- [网络/浏览、外部 Git mutation、物理 Pack 拆分、真实 Owner acceptance 和现实效果](../../../docs/project-current-state.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-dde1f27f2ed83b51 / 网络/浏览、外部 Git mutation、物理 Pack 拆分、真实 Owner acceptance 和现实效果
+  - 来源：`docs/project-current-state.md`
   - 依赖：—；被引用：—
 - [行动以前，人们通常先找证据，再作判断。可在某些回路里，行动本身会产生下一步所依据的证据。士兵退了，后来的人便更相信前线已败；扩音器发出啸叫，声音又回到麦克风，替下一轮啸叫增加强度。两者一个包含恐惧和求生，一个只是物理过程，却都提示我们：反应](../../../docs/publication/works/when-an-army-believes-its-own-back.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
