@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://when-systems-catch-fire.invalid/schemas/agent-federation/build-vs-integrate-policy-r1.schema.json",
+  "title": "Build Versus Integrate Policy R1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "policy_id", "task_id", "default_decision", "exception_triggers", "non_reasons", "required_exception_fields", "protected_external_capabilities", "exceptions"],
+  "properties": {
+    "schema_version": { "const": "build-vs-integrate-policy-r1" },
+    "policy_id": { "const": "BUILD_VS_INTEGRATE_POLICY" },
+    "task_id": { "const": "IGNITION-20260816-122" },
+    "default_decision": { "const": "INTEGRATE_EXISTING_EXECUTOR" },
+    "exception_triggers": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+    "non_reasons": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+    "required_exception_fields": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+    "protected_external_capabilities": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+    "exceptions": { "type": "array", "items": { "type": "object" } }
+  }
+}

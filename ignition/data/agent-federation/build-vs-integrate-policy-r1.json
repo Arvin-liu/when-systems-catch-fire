@@ -1,0 +1,49 @@
+{
+  "schema_version": "build-vs-integrate-policy-r1",
+  "policy_id": "BUILD_VS_INTEGRATE_POLICY",
+  "task_id": "IGNITION-20260816-122",
+  "default_decision": "INTEGRATE_EXISTING_EXECUTOR",
+  "exception_triggers": [
+    "external executor cannot express a required permission boundary",
+    "external executor cannot provide required checkpoint, resume or handoff semantics",
+    "external executor cannot produce verifiable provenance or result receipt",
+    "external executor is irreducibly bound to one provider and violates executor neutrality",
+    "Ignition cannot validate the final action result through the public interface",
+    "external interface would implicitly widen permission or cannot fail closed",
+    "data or privacy boundary is unacceptable",
+    "observed performance or reliability bottleneck crosses a predeclared threshold",
+    "external project is unmaintained or its public interface is unavailable",
+    "an external architecture cannot carry a genuinely new required paradigm"
+  ],
+  "non_reasons": [
+    "we can write it ourselves",
+    "a custom implementation feels more uniform",
+    "we do not want to write an adapter",
+    "a local shell would be aesthetically simpler"
+  ],
+  "required_exception_fields": [
+    "exception_id",
+    "capability_scope",
+    "external_options_considered",
+    "reproduction_steps",
+    "observed_failure",
+    "threshold_or_boundary",
+    "least_privilege_impact",
+    "reversibility",
+    "owner_review_ref",
+    "decision"
+  ],
+  "protected_external_capabilities": [
+    "browser",
+    "gateway",
+    "channel",
+    "messaging",
+    "model_provider",
+    "subagent",
+    "daemon",
+    "scheduler",
+    "remote_git",
+    "device"
+  ],
+  "exceptions": []
+}

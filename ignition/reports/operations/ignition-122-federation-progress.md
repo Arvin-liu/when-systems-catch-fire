@@ -24,10 +24,26 @@ external truth, Owner acceptance, production safety or epistemic acceptance.
 - Residuals: inherited environmental `T16_SYMPY_COUNTEREXAMPLE`; broad
   unittest discovery deferred to Step 12 after a no-output baseline probe.
 
+## Step 01 — COMPLETE
+
+- Result: `STEP_01_OWNERSHIP_CONTRACT_AND_REFERENCE_FREEZE_COMPLETE`.
+- Contracts: `data/agent-federation/os-executor-ownership-r1.json`,
+  `build-vs-integrate-policy-r1.json` and
+  `executor-component-ownership-r1.json`.
+- Human Surface: `docs/architecture/external-agent-federation-r1.md`.
+- Gate: `python3 tools/validate_federation_ownership.py` = `PASS`;
+  protected new runtime path negative fixture = `PASS`;
+  121 core plus inventory/ownership tests = `66/66 PASS`.
+- Reference Executor stays existing, bounded and provider-neutral; no browser,
+  network, messaging, provider/model, daemon, subagent or remote-Git layer was
+  added.
+- Residual: no build-vs-integrate exception is recorded; future protected
+  runtime layers remain deferred.
+
 | Step | Status | Commit | Remote | Targeted gate |
 | --- | --- | --- | --- | --- |
-| 00 | COMPLETE | pending self commit binding | pending `ls-remote` binding | inventory schema + 121 core = PASS |
-| 01 | PENDING | — | — | — |
+| 00 | COMPLETE | `05ac54db` | `05ac54db` | inventory schema + 121 core = PASS |
+| 01 | COMPLETE | pending self commit binding | pending `ls-remote` binding | ownership + freeze + 66 tests = PASS |
 | 02 | PENDING | — | — | — |
 | 03 | PENDING | — | — | — |
 | 04 | PENDING | — | — | — |

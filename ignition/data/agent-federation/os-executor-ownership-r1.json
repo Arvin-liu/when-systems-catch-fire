@@ -1,0 +1,69 @@
+{
+  "schema_version": "os-executor-ownership-r1",
+  "contract_id": "OS_EXECUTOR_OWNERSHIP_R1",
+  "task_id": "IGNITION-20260816-122",
+  "status": "CURRENT_WITH_OPEN_OBLIGATIONS",
+  "roles": {
+    "OS_OWNED": [
+      "Value Charter and Owner authority reference",
+      "goal, task and episode contracts with success criteria",
+      "capability and permission policy",
+      "Agent Profile and Pack Registry",
+      "cross-run operational memory",
+      "cross-executor routing and dispatch policy",
+      "approval policy and least-privilege intersection",
+      "canonical task state, checkpoint and handoff bundle",
+      "validation, acceptance, provenance, audit and receipt contracts",
+      "result absorption, failure recording and long-term updates"
+    ],
+    "EXTERNAL_AGENT_OWNED": [
+      "model loop and prompt assembly",
+      "internal plan and tool loop",
+      "terminal, browser, device and tool wiring",
+      "channel gateway and messaging integrations",
+      "session UI, TUI and daemon",
+      "internal subagents",
+      "provider and model integrations",
+      "external tool ecosystem and update mechanism"
+    ],
+    "ADAPTER_BOUNDARY": [
+      "capability discovery and mapping",
+      "Task Envelope serialization",
+      "approval bridge",
+      "process and session lifecycle translation",
+      "structured progress and result translation",
+      "timeout, cancel, resume and handoff translation",
+      "health and compatibility probes",
+      "external session reference to canonical OS state mapping"
+    ],
+    "REFERENCE_ONLY": [
+      "deterministic protocol conformance execution",
+      "offline fallback when external executors are unavailable",
+      "safe fault injection and regression fixture execution",
+      "bounded local action plane retained for existing R1 tests"
+    ],
+    "DEFERRED": [
+      "new browser automation in the Reference Executor",
+      "new messaging or gateway implementation in the Reference Executor",
+      "new provider/model client in the Reference Executor",
+      "new daemon, scheduler or general subagent framework",
+      "remote Git push or merge as an executor action"
+    ]
+  },
+  "reference_executor": {
+    "identity": "REFERENCE_EXECUTOR / CONFORMANCE_EXECUTOR / FALLBACK_MINIMAL",
+    "canonical_paths": ["agent_runtime/actions.py", "agent_runtime/r1_runtime.py", "agent_runtime/pilots/"],
+    "allowed_reason": "The existing bounded local action plane is needed to test the protocol deterministically and provide offline fallback.",
+    "new_capability_rule": "Any new capability outside the reference scope requires a recorded build_vs_integrate_exception before implementation.",
+    "forbidden_runtime_layers": ["browser", "network", "messaging", "provider", "model_client", "daemon", "subagent", "remote_git"]
+  },
+  "invariants": [
+    "Adapter code translates observable boundaries; it does not copy an external agent runtime.",
+    "Canonical OS state remains authoritative; external session state is a pointer only.",
+    "No engineering gate or executor result upgrades claim, M/E, Owner acceptance or epistemic acceptance.",
+    "The Reference Executor remains bounded and provider-neutral.",
+    "OS deny cannot be overridden by external approval; the effective permission is the strict intersection."
+  ],
+  "component_registry_ref": "data/agent-federation/executor-component-ownership-r1.json",
+  "human_core_sentence": "点火负责“为什么做、做到哪里、由谁做、怎样证明、怎样记住”；外部智能体负责“具体怎么动手”。"
+}

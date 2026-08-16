@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://when-systems-catch-fire.invalid/schemas/agent-federation/executor-component-ownership-r1.schema.json",
+  "title": "Executor Component Ownership Registry R1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "registry_id", "task_id", "components"],
+  "properties": {
+    "schema_version": { "const": "executor-component-ownership-r1" },
+    "registry_id": { "const": "EXECUTOR_COMPONENT_OWNERSHIP_R1" },
+    "task_id": { "const": "IGNITION-20260816-122" },
+    "components": {
+      "type": "array",
+      "minItems": 4,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["component_id", "role", "canonical_paths", "authority", "description"],
+        "properties": {
+          "component_id": { "type": "string", "minLength": 1 },
+          "role": { "enum": ["OS_OWNED", "EXTERNAL_AGENT_OWNED", "ADAPTER_BOUNDARY", "REFERENCE_ONLY", "DEFERRED"] },
+          "canonical_paths": { "type": "array", "items": { "type": "string" } },
+          "authority": { "type": "string", "minLength": 1 },
+          "description": { "type": "string", "minLength": 1 }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "schema_version": "executor-component-ownership-r1",
+  "registry_id": "EXECUTOR_COMPONENT_OWNERSHIP_R1",
+  "task_id": "IGNITION-20260816-122",
+  "components": [
+    {
+      "component_id": "ignition-os-contract",
+      "role": "OS_OWNED",
+      "canonical_paths": ["agent_kernel/", "agent_runtime/", "data/agent-runtime/", "packs/"],
+      "authority": "Ignition OS",
+      "description": "Goals, policy, state, profiles, packs, memory, routing, validation, provenance and result absorption."
+    },
+    {
+      "component_id": "external-executor-family",
+      "role": "EXTERNAL_AGENT_OWNED",
+      "canonical_paths": [],
+      "authority": "The independently maintained external agent project",
+      "description": "Model/tool loops, channels, sessions, providers, daemons, subagents and their own tool ecosystems."
+    },
+    {
+      "component_id": "executor-adapter-boundary",
+      "role": "ADAPTER_BOUNDARY",
+      "canonical_paths": ["agent_federation/", "schemas/agent-federation/", "tools/validate_federation_ownership.py"],
+      "authority": "Ignition contract boundary",
+      "description": "Discovery, mapping, serialization, lifecycle translation, health probes and receipt construction only."
+    },
+    {
+      "component_id": "reference-executor",
+      "role": "REFERENCE_ONLY",
+      "canonical_paths": ["agent_runtime/actions.py", "agent_runtime/r1_runtime.py", "agent_runtime/pilots/"],
+      "authority": "Ignition conformance and fallback fixture",
+      "description": "Existing bounded local execution retained for deterministic protocol testing, safe fault injection and offline fallback."
+    },
+    {
+      "component_id": "new-executor-shell-capabilities",
+      "role": "DEFERRED",
+      "canonical_paths": ["agent_runtime/browser*", "agent_runtime/gateway*", "agent_runtime/messaging*", "agent_runtime/model*", "agent_runtime/daemon*"],
+      "authority": "BUILD_VS_INTEGRATE_POLICY exception process",
+      "description": "New external-agent runtime layers are forbidden until a specific, reproducible exception is accepted."
+    }
+  ]
+}
