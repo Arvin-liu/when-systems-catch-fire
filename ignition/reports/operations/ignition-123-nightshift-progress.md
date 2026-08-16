@@ -116,3 +116,27 @@ Step 02 receipt 保持 `architecture_identity_impact=PRESENTATION_ONLY`，所有
 本步 claim ceiling：deterministic repository-derived current facts and navigation support only；不推导 external truth、Owner acceptance、production safety 或 epistemic upgrade。精确 Step 02 commit/remote SHA 待本步独立提交、push、`ls-remote` 核验后由最终闭合回执绑定。
 
 下一步：依据 contract + current-facts，修订 `project-current-state.md` 的 Current 区域、清除首页重复 identity 描述，并把历史数字显式留在历史语境。
+
+## Step 03 — COMPLETE
+
+### Current State re-convergence
+
+`docs/project-current-state.md` 现在先回答当前系统是什么，再保留 Task 112—122 的可回链历史。Current 主体明确：点火是长期状态、价值、任务、权限、记忆、验证、provenance、handoff 与 executor 协同的 OS / orchestration-governance layer 和 driver；OpenClaw、Hermes、Codex 是可替换执行器；Knowledge 是第一个大型 Domain Pack；本地执行层冻结为 `REFERENCE_EXECUTOR / CONFORMANCE_EXECUTOR / FALLBACK_MINIMAL`。
+
+Current 区域不再使用旧的 `5,663 / 17,333` 与 `3,887 / 5,581` 作为当前数字；它改为指向确定性 `current-facts.json`，并使用 `5,603 / 15,899` canonical counts 与 `4,804 / 4,615` quarantine/pending。旧任务史仍保留在明确的历史上下文中，不再承担 Current 数字权威。Current 限制同时明确 live provider/inference、daemon、multi-Agent、vector memory、network/browser、external Git mutation、物理 Pack 拆分与真实外部效果的开放边界。
+
+### Front-door and AI identity repair
+
+- `.github/README.md` 删除重复的“它说什么”条目，并把 OS/driver 与 replaceable executor 关系、Reference/Conformance/Fallback 冻结和 facts pointer 说清楚。
+- `AI-START-HERE.md`、`AI-HANDOFF.md` 和 `llms.txt` 都指向 identity contract/current facts；handoff 不再把已正式闭合的 Task 122 误写成仍待正式 main 的 pre-release。
+- 因 `AI-HANDOFF.md`、`project-current-state.md`、`llms.txt` 和 Step 01 的 `ITERATION.md` 是 Human Surface materiality 的声明来源，manifest 中对应 source SHA-256 已按实际字节刷新；没有改写任何 claim/content registry。
+
+本步 receipt 明确标为 `PRESENTATION_ONLY`：五个受影响 surface 为 `CHANGE` + evidence，其余 architecture/map/Federation/state-changelog surface 各有 `NO_CHANGE_WITH_REASON`。`PRESENTATION_ONLY` 现在允许有证据的 scoped presentation change，但仍禁止 `surface_sync_complete=true`；只有真正的 architecture identity change 才触发全 surface closure。这样保持了“解释同步”与“架构语义变更”的边界。
+
+### Targeted gates and boundary
+
+Current-state validator、current-facts determinism、Human Surface contract、Human front door、Human visibility、State Changelog 和 7 个 unit/negative tests 均为 `PASS`，`git diff --check` 通过。未读取 secret，未改外部配置，未安装/升级，未执行真实外部 Agent invocation；本步 live 状态为 `NOT_RUN_STEP_03`。正式 main 仍保持 `d60ec8687fb1cc6b972e831a8f0dcd348ba0e83e`。
+
+本步 claim ceiling：Current State/front-door presentation synchronization plus deterministic derived facts and materiality fingerprints only；不推导 architecture-content closure、external truth、Owner acceptance、production safety 或 epistemic upgrade。精确 Step 03 commit/remote SHA 待本步独立提交、push、`ls-remote` 核验后由最终闭合回执绑定。
+
+下一步：重构唯一系统图的布局根因，从 row-max 改为紧凑、关系导向的 packing，并保留单一可点击总图。

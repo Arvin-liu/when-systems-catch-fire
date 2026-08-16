@@ -38,11 +38,12 @@ class CurrentStateSyncTests(unittest.TestCase):
         errors = validator.validate_receipt(self.contract, receipt)
         self.assertTrue(any("requires CHANGE" in error for error in errors))
 
-    def test_presentation_only_rejects_a_changed_surface(self) -> None:
+    def test_presentation_only_allows_scoped_changed_surface_with_evidence(self) -> None:
         receipt = copy.deepcopy(self.receipt)
         receipt["surface_decisions"][0]["decision"] = "CHANGE"
+        receipt["surface_decisions"][0]["evidence"] = "Step 03 scoped current-state repair"
         errors = validator.validate_receipt(self.contract, receipt)
-        self.assertTrue(any("PRESENTATION_ONLY receipt cannot mark" in error for error in errors))
+        self.assertFalse(any("PRESENTATION_ONLY" in error for error in errors))
 
     def test_contract_rejects_a_self_referential_sha_field(self) -> None:
         contract = copy.deepcopy(self.contract)

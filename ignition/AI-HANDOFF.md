@@ -2,11 +2,15 @@
 
 ## 当前版本
 
-Agent Platform R2 夜班实现（IGNITION-20260816-121）叠加在数学与逻辑双地基
-七层架构和当前操作 overlay 之上。R2 的正式 lifecycle 只有在 Step 12 的
-fast-forward、远端、全新克隆和 1111 receipt 全部精确闭合后，才可称为 main
-当前状态；本页的工程边界不构成外部能力或 epistemic acceptance，
-`EPISTEMICALLY_ACCEPTED=0` 保持不变。
+Agent Platform R2 与 External Agent Federation R1 已在 Task 122 正式 main
+基线上闭合；Task 123 的 branch work 仍必须经过最终 Step 12 fast-forward、
+远端、全新克隆和 1111 receipt 才能称为 main 当前状态。本页的工程边界不构成
+外部能力或 epistemic acceptance，`CURRENT_WITH_OPEN_OBLIGATIONS` 与
+`EPISTEMICALLY_ACCEPTED=0` 保持不变。当前身份 contract/facts 见
+`data/architecture/current-system-identity.json`、`data/architecture/current-facts.json`：
+点火是 OS / orchestration-governance layer 与 driver，外部 Agent 是可替换
+executor，本地执行层是 `REFERENCE_EXECUTOR / CONFORMANCE_EXECUTOR /
+FALLBACK_MINIMAL`。
 
 ### R2 工程脊柱
 
@@ -48,7 +52,8 @@ R2 仍不包括 live provider、daemon、multi-Agent 并发、vector memory、�
 
 每次正式迭代合并 `main`，必须在同一轮向 [STATE-CHANGELOG.md](./STATE-CHANGELOG.md) append 一条 delta，并绑定该轮的 main 基线 tip、权威资产变化、认识论状态变化、开放义务、失效认知和下一步阅读；没有 delta 的正式合并不得称为状态已同步。
 
-当前架构状态只能是 ARCHITECTURE_COMPLETE_PENDING_CONTENT_PROOFS；不得改写成全量数学证明完成。
+当前架构状态保持 `CURRENT_WITH_OPEN_OBLIGATIONS`；不得改写成全量数学证明完成、
+生产安全、外部有效性或 `EPISTEMICALLY_ACCEPTED`。
 
 方法 1.4.0 是 Current。看到首页阶段成果时，逐项读取显式布尔量和来源 HEAD；`PUBLISHED_SNAPSHOT` 不等于 Accepted、Current 或 Activated，首页可见不等于能力可用。Agent 只能生成 stage snapshot request，不能自行声称已进入 Main。
 

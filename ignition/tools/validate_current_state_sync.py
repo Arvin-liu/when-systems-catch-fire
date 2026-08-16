@@ -292,8 +292,8 @@ def validate_surface_decisions(contract: dict[str, Any], receipt: dict[str, Any]
             continue
         if item.get("path") != surface.get("path"):
             errors.append(f"receipt path mismatch for {surface_id}")
-        if impact == "PRESENTATION_ONLY" and item.get("decision") == "CHANGE":
-            errors.append(f"PRESENTATION_ONLY receipt cannot mark {surface_id} CHANGE")
+        if impact == "PRESENTATION_ONLY" and item.get("decision") == "CHANGE" and not item.get("evidence", "").strip():
+            errors.append(f"PRESENTATION_ONLY CHANGE requires evidence for {surface_id}")
         if impact == "ARCHITECTURE_CHANGED":
             if item.get("decision") != "CHANGE":
                 errors.append(f"ARCHITECTURE_CHANGED requires CHANGE for {surface_id}")

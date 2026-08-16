@@ -5,7 +5,11 @@
 当前工程身份：点火主干是一个有界、可审计、可恢复的 Agent Platform
 原型；Knowledge 是第一个大型 Domain Pack。读取这句话时必须同时保留
 `CURRENT_WITH_OPEN_OBLIGATIONS`、`EPISTEMICALLY_ACCEPTED=0` 和“仓库回执不等于
-外部真值”的边界。
+外部真值”的边界。当前身份 contract 与确定性事实投影见
+`data/architecture/current-system-identity.json`、`data/architecture/current-facts.json`
+和 `docs/architecture/current-facts.md`：点火是 OS / orchestration-governance
+layer 与 driver，OpenClaw、Hermes、Codex 是可替换 external executors；本地层
+仍是 `REFERENCE_EXECUTOR / CONFORMANCE_EXECUTOR / FALLBACK_MINIMAL`。
 
 ## 读取顺序
 

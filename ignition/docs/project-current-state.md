@@ -1,6 +1,39 @@
 # 点火项目现状
 
-更新时间：2026-08-16。当前状态包含任务 98—103 的断言/函数治理、证据程序与人类可读知识表面，任务 104 的编辑叙事层与语料关系分析，任务 105 的 Function OS v0.2 有界能力基准，任务 110 的完成状态与 OpenAlex 书目复制，任务 111 的失败案例证据门禁与恢复终态，任务 112 的百轮成果出版层，任务 113 的宋徽宗作品，任务 114 的语言—思维逻辑平面与当前作品修订，以及任务 119—122 的 Agent Platform 边界、R1 行动层、R2 工程脊柱和 External Agent Federation。本段描述正式仓库当前接口；出版层、语言研究与 Agent Platform/Federation 的结论仍受各自来源、版本和证据上限约束。
+更新时间：2026-08-17。以下 Current 摘要先回答“现在是什么”；任务史保留为可回链证据，不再承担 Current 数字权威。
+
+## 当前形态
+
+点火当前是一个仓库原生、版本化、可审计、可恢复的跨领域研究与行动 Agent
+Platform 原型。它负责长期状态、价值边界、目标与任务、权限、记忆、验证、
+provenance、handoff 和结果吸收；它是 OS / orchestration-governance layer，
+也是动作与外部 executor 的司机。OpenClaw、Hermes、Codex 是可替换执行器，
+不是点火的替代系统；现有自研执行层冻结为
+`REFERENCE_EXECUTOR / CONFORMANCE_EXECUTOR / FALLBACK_MINIMAL`。
+Knowledge 是第一个大型 Domain Pack，不是整个系统本体；Research、Writing、
+Maintenance 也各自受 manifest、schema、validator 和 authority ceiling 约束。
+
+当前工程状态仍为 `CURRENT_WITH_OPEN_OBLIGATIONS`，并保持
+`EPISTEMICALLY_ACCEPTED=0`。这段话描述仓库接口，不是产品成熟度、市场唯一性、
+AGI、生产安全、现实因果、外部有效性或 Owner acceptance 证明。
+
+## 当前已实现能力
+
+- 由 Kernel、Runtime、Supervisor、Operational Memory、Profile、Reasoner Gateway、Federation 和四个 Domain Pack 形成有界的仓库内协同骨架；Reasoner 提议，Profile 收窄，Pack 按声明范围验证，执行器在权限交集内行动。
+- 从 canonical registries 保留来源、命题、形式对象、论证、证据、证明义务、反例、验证、迁移和人类结果的独立谱系；工程闭合不升级内容真值。
+- 通过 `current-facts.json` 确定性投影同步可复算事实；本页不手抄第二份数量表。[Current Facts](../data/architecture/current-facts.json) 与[人读 facts block](./architecture/current-facts.md) 是窄范围派生入口。
+- 以唯一 registry/topology/layout 生成系统图；图是可点击的仓库导航与依赖投影，不是现实因果图、严格同构或完备性证明。
+- 只在 disposable local fixture 上观察过 R2/Federation conformance；真实外部 invocation 的当前 ceiling 仍是 `NOT_RUN_LIVE_EXTERNAL_INVOCATION`。
+
+## 当前限制与开放义务
+
+- 当前 closure summaries 可推导出 function identity cards `5,603`、non-function claims `15,899`；显式 quarantine/pending 分别为 `4,804` 和 `4,615`。这些数字来自 current-facts projection，历史任务数字仍只在历史语境出现。
+- live provider/inference、daemon、多 Agent 并发、向量记忆、网络/浏览、外部 Git mutation、物理 Pack 拆分和真实外部效果仍未被本仓库证明；OpenClaw、Hermes、Codex 后续可在安全边界内 `SKIPPED` 或做有界 smoke，但不能为绿灯扩大权限。
+- 大量资产仍缺精确定义、类型、量纲、证明、反例、外部来源、数据或复现；MCF、PSD、ARN、Function OS 与现实使用效用仍需独立证据和失败条件。
+- 四力统一、量子引力、暗物质、暗能量、宇宙常数和测量问题没有被本项目解决；任何模型失败、相似性、工程完成或 Agent 共识都不能推出普遍 no-go theorem。
+- 自动审计、系统图、Pack pilot、CI、fresh clone 和 receipt 都是仓库证据；它们不等于专家裁决、同行评审、外部真值、生产安全、Owner acceptance 或 epistemic acceptance。
+
+## 历史任务上下文（可回链，不是 Current 数字权威）
 
 ## Task 112 current publication layer
 
@@ -76,8 +109,8 @@ Pack registry；若要改变这些表面，仍须由各自 canonical source 独�
 ## 当前已实现能力
 
 - 保存来源、命题、形式对象、论证、证据、证明义务、反例、验证和迁移历史。
-- 对任务 102 排除生成投影回灌后重算的 5,663 个历史函数资产建立 identity card、M/E 双轴、义务、依赖、处置与 quarantine。
-- 对同次重算的 17,333 个非函数断言建立类别、来源、证据谱系、十三道门禁、依赖、M/E、处置与公开表述上限。
+- 对任务 102 排除生成投影回灌后重算的 function identity cards 建立 identity card、M/E 双轴、义务、依赖、处置与 quarantine；当前可复算数量见 current-facts projection（`5,603`）。
+- 对同次重算的 non-function claims 建立类别、来源、证据谱系、十三道门禁、依赖、M/E、处置与公开表述上限；当前可复算数量见 current-facts projection（`15,899`）。
 - 自动发现本轮知识资产变化并生成 Claim Delta、影响分析、证据谱系变化、审计发现和整改计划。
 - 检测证明/实证义务、跨域越界、量词膨胀、循环论证、类比冒充同构、单模型失败推出普遍不可能和撤回结论回弹。
 - 检查机器记录与人类结果成对存在、`.github/README.md` 两次点击可达、重要内容不被默认折叠、当前状态不残留退役阅读面。
@@ -127,7 +160,7 @@ GitHub 仓库 Markdown 是唯一持续维护的人类阅读层：
 
 ## 当前限制与开放义务
 
-- 函数资产中 3,887 项仍 quarantine/pending；非函数断言中 5,581 项仍 quarantine/pending。
+- 函数资产中 `4,804` 项仍 quarantine/pending；非函数断言中 `4,615` 项仍 quarantine/pending；数字来自 current-facts projection，不能解释为内容验证完成。
 - 大量资产仍缺精确定义、类型、量纲、证明、反例、外部来源、数据或复现。
 - MCF、PSD、ARN、Function OS 与现实使用效用尚需独立证据和失败条件。
 - 四力统一、量子引力、暗物质、暗能量、宇宙常数和测量问题没有被本项目解决。
