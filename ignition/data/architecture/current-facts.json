@@ -7,7 +7,7 @@
       "current_map_version": "0.7.0",
       "hidden_components": 12,
       "historical_map_version": "0.6.0",
-      "layout_version": "1.4.0",
+      "layout_version": "1.5.0",
       "registry_components": 82,
       "typed_topology_relations": 107,
       "visible_map_nodes": 70,
@@ -104,7 +104,7 @@
     },
     {
       "path": "ignition/data/architecture/interactive-system-map-layout.json",
-      "sha256": "8a24bdfb0565b38acc06392d8406020f09e8615542b70533aab23578aff9ab09"
+      "sha256": "95130b99d463d94e6824adceda31cd1af8fe7b1ff77885e04c8a5d7b2e54ed2b"
     },
     {
       "path": "ignition/data/foundation/function-assets/closure-summary.json",

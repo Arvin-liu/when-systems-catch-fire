@@ -4,7 +4,7 @@
   "historical_map_version": "0.6.0",
   "projection_status": "CURRENT_DERIVED_PROJECTION",
   "title": "点火唯一完整可点击总架构图",
-  "subtitle": "唯一完整总架构图；0.6.0 Current 派生投影，0.5.0 为 Historical。Owner/Human 与 Value Charter 位于 escalation 之上；Kernel ≠ Knowledge，Runtime ≠ Research，Pack 可加载但不拥有通用 authority；语言—思维横穿 L0—L6，不增加 L7。连线是仓库关系、同步义务或候选反馈，不自动表示现实因果。",
+  "subtitle": "唯一完整总架构图；0.7.0 Current 派生投影，0.6.0 为 Historical。Owner/Human 与 Value Charter 位于 escalation 之上；Kernel ≠ Knowledge，Runtime ≠ Research，Pack 可加载但不拥有通用 authority；语言—思维横穿 L0—L6，不增加 L7。连线是仓库关系、同步义务或候选反馈，不自动表示现实因果。",
   "repository_url": "https://github.com/Arvin-liu/when-systems-catch-fire",
   "projection_authority": {
     "component_registry": "data/operations/project-components.json",
@@ -12,7 +12,7 @@
     "layout_overlay": "data/architecture/interactive-system-map-layout.json",
     "component_registry_version": "1.6.0",
     "topology_version": "1.6.0",
-    "layout_version": "1.4.0"
+    "layout_version": "1.5.0"
   },
   "layout": {
     "columns": 3,
@@ -21,7 +21,10 @@
     "group_width": 560,
     "node_gap": 12,
     "node_height": 54,
-    "outer_padding": 32
+    "outer_padding": 32,
+    "packing_algorithm": "deterministic-scc-ranked-column-packing-r1",
+    "top_offset": 122,
+    "vertical_gap": 28
   },
   "groups": [
     {

@@ -140,3 +140,21 @@ Current-state validator、current-facts determinism、Human Surface contract、H
 本步 claim ceiling：Current State/front-door presentation synchronization plus deterministic derived facts and materiality fingerprints only；不推导 architecture-content closure、external truth、Owner acceptance、production safety 或 epistemic upgrade。精确 Step 03 commit/remote SHA 待本步独立提交、push、`ls-remote` 核验后由最终闭合回执绑定。
 
 下一步：重构唯一系统图的布局根因，从 row-max 改为紧凑、关系导向的 packing，并保留单一可点击总图。
+
+## Step 04 — COMPLETE
+
+### Compact layout refactor
+
+`generate_interactive_system_map.py` 已移除 row-max 共享行游标：现在从 typed visible relation graph 构造 group dependency graph，先做确定性 SCC condensation/topological rank，再在每个 semantic column 内按 rank、声明 row、group id 排序；每个 column 使用自身 cursor 和自身 group height，组间使用显式 `vertical_gap`。布局契约把算法固定为 `deterministic-scc-ranked-column-packing-r1`，并把 `top_offset`、`vertical_gap` 与全部几何尺寸纳入 schema 和生成器校验。
+
+唯一物化图已从 layout `1.4.0` 更新为 `1.5.0`，当前 SVG canvas 从基线 `1800×3988` 压缩为 `1800×2978`，高度减少约 `25.3261%`。`models` 不再作为底部孤立模块，`agentization` 虽然仍是高组但不再以 row-max 机制把其他列整体向下撑开；节点身份、typed edges、canonical targets 和单一图入口保持不变。
+
+### Targeted gates and boundary
+
+`generate_interactive_system_map.py --check` 输出 `SYSTEM_MAP_DERIVED_OK nodes=70 edges=77`；新增确定性几何测试 3 项全部通过：两次 projection/render byte-identical、canvas 高度显著低于 row-max baseline、同列 group 不重叠且每个 visible node 仍有 clickable target。SVG 保留一个 solid background rect 和 70 个 links。current-facts projection 已重生成并通过 check，Current State sync validator 通过，`git diff --check` 通过。
+
+未读取 secret，未改外部 Agent 配置，未安装/升级，未进行真实外部 Agent invocation；本步 live 状态为 `NOT_RUN_STEP_04`。正式 main 仍保持 `d60ec8687fb1cc6b972e831a8f0dcd348ba0e83e`。
+
+本步 claim ceiling：deterministic repository layout/projection and accessibility evidence only；不推导 architecture-content、external truth、Owner acceptance、production safety 或 epistemic upgrade。
+
+下一步：在紧凑图上固定语义主干、关系类型和阅读路径，继续保持 geometry 与 semantic projection 分离。

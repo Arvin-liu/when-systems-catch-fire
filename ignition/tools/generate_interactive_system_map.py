@@ -167,9 +167,16 @@ def validate_spec(spec: dict, root: Path = ROOT) -> None:
     groups = spec.get("groups")
     nodes = spec.get("nodes")
     edges = spec.get("edges")
+    layout = spec.get("layout")
     require(isinstance(groups, list) and groups, "system-map spec requires groups")
     require(isinstance(nodes, list) and nodes, "system-map spec requires nodes")
     require(isinstance(edges, list), "system-map spec requires edges")
+    require(isinstance(layout, dict), "system-map spec requires layout geometry")
+    required_geometry = ("columns", "group_gap", "group_header_height", "group_width", "node_gap", "node_height", "outer_padding", "packing_algorithm", "top_offset", "vertical_gap")
+    require(all(key in layout for key in required_geometry), "system-map layout geometry is incomplete")
+    require(layout["packing_algorithm"] == "deterministic-scc-ranked-column-packing-r1", "system-map layout has unsupported packing algorithm")
+    require(all(isinstance(layout[key], int) and layout[key] >= 0 for key in required_geometry if key not in {"packing_algorithm"}), "system-map layout geometry has invalid numeric value")
+    require(layout["columns"] >= 1 and layout["group_width"] >= 1 and layout["group_header_height"] >= 1 and layout["node_height"] >= 1, "system-map layout geometry has non-positive dimension")
 
     if spec.get("schema_version") == "2.0.0":
         coverage = spec.get("component_coverage", {})
@@ -181,6 +188,7 @@ def validate_spec(spec: dict, root: Path = ROOT) -> None:
     group_ids = [group.get("id") for group in groups]
     require(len(group_ids) == len(set(group_ids)), "duplicate system-map group id")
     require(all(group_ids), "every system-map group requires an id")
+    require(all(0 <= int(group["column"]) < layout["columns"] for group in groups), "system-map group column is outside the geometry")
     node_ids = [node.get("id") for node in nodes]
     require(len(node_ids) == len(set(node_ids)), "duplicate system-map node id")
     require(all(node_ids), "every system-map node requires an id")
@@ -224,6 +232,92 @@ def svg_element(tag: str, attributes: dict[str, str] | None = None, text: str | 
     return element
 
 
+def ranked_group_order(spec: dict) -> dict[int, list[str]]:
+    """Rank group dependencies through SCCs, then pack each column independently.
+
+    The old renderer aligned all groups in a declared row and advanced every
+    column by the tallest group in that row.  This helper keeps the semantic
+    column assignment but derives vertical order from the typed relation graph.
+    Strongly connected groups share a rank; declared row and group id are only
+    deterministic tie-breakers inside a rank.
+    """
+    groups = {group["id"]: group for group in spec["groups"]}
+    adjacency: dict[str, set[str]] = {group_id: set() for group_id in groups}
+    for edge in spec["edges"]:
+        source = next(node["group"] for node in spec["nodes"] if node["id"] == edge["source"])
+        target = next(node["group"] for node in spec["nodes"] if node["id"] == edge["target"])
+        if source != target:
+            adjacency[source].add(target)
+
+    index = 0
+    indices: dict[str, int] = {}
+    lowlinks: dict[str, int] = {}
+    stack: list[str] = []
+    on_stack: set[str] = set()
+    components: list[list[str]] = []
+
+    def strongconnect(node: str) -> None:
+        nonlocal index
+        indices[node] = index
+        lowlinks[node] = index
+        index += 1
+        stack.append(node)
+        on_stack.add(node)
+        for successor in sorted(adjacency[node]):
+            if successor not in indices:
+                strongconnect(successor)
+                lowlinks[node] = min(lowlinks[node], lowlinks[successor])
+            elif successor in on_stack:
+                lowlinks[node] = min(lowlinks[node], indices[successor])
+        if lowlinks[node] == indices[node]:
+            component: list[str] = []
+            while True:
+                member = stack.pop()
+                on_stack.remove(member)
+                component.append(member)
+                if member == node:
+                    break
+            components.append(sorted(component))
+
+    for group_id in sorted(groups):
+        if group_id not in indices:
+            strongconnect(group_id)
+
+    component_of = {group_id: component_index for component_index, members in enumerate(components) for group_id in members}
+    dag: dict[int, set[int]] = {component_index: set() for component_index in range(len(components))}
+    indegree: dict[int, int] = {component_index: 0 for component_index in range(len(components))}
+    for source, targets in adjacency.items():
+        for target in targets:
+            source_component = component_of[source]
+            target_component = component_of[target]
+            if source_component != target_component and target_component not in dag[source_component]:
+                dag[source_component].add(target_component)
+                indegree[target_component] += 1
+
+    component_key = lambda component_index: min(components[component_index])
+    queue = sorted((component_index for component_index, degree in indegree.items() if degree == 0), key=component_key)
+    rank = {component_index: 0 for component_index in range(len(components))}
+    processed: list[int] = []
+    while queue:
+        component_index = queue.pop(0)
+        processed.append(component_index)
+        for successor in sorted(dag[component_index], key=component_key):
+            rank[successor] = max(rank[successor], rank[component_index] + 1)
+            indegree[successor] -= 1
+            if indegree[successor] == 0:
+                queue.append(successor)
+                queue.sort(key=component_key)
+    require(len(processed) == len(components), "group dependency condensation must be acyclic")
+
+    ordered: dict[int, list[str]] = {}
+    for group_id, group in groups.items():
+        column = int(group["column"])
+        ordered.setdefault(column, []).append(group_id)
+    for column, group_ids in ordered.items():
+        group_ids.sort(key=lambda group_id: (rank[component_of[group_id]], int(groups[group_id]["row"]), group_id))
+    return ordered
+
+
 def render_svg(spec: dict, root_path: Path = ROOT) -> bytes:
     validate_spec(spec, root_path)
     layout = spec["layout"]
@@ -234,7 +328,11 @@ def render_svg(spec: dict, root_path: Path = ROOT) -> bytes:
     header_height = int(layout["group_header_height"])
     node_height = int(layout["node_height"])
     node_gap = int(layout["node_gap"])
-    top_offset = 122
+    top_offset = int(layout.get("top_offset", 122))
+    vertical_gap = int(layout.get("vertical_gap", gap))
+    packing_algorithm = layout.get("packing_algorithm", "deterministic-scc-ranked-column-packing-r1")
+    require(packing_algorithm == "deterministic-scc-ranked-column-packing-r1", "unsupported map packing algorithm")
+    require(vertical_gap >= 0 and top_offset >= 0, "map packing offsets must be non-negative")
 
     nodes_by_group: dict[str, list[dict]] = {group["id"]: [] for group in spec["groups"]}
     for node in spec["nodes"]:
@@ -244,19 +342,18 @@ def render_svg(spec: dict, root_path: Path = ROOT) -> bytes:
         group_id: header_height + len(items) * (node_height + node_gap) + outer
         for group_id, items in nodes_by_group.items()
     }
-    rows = max(int(group["row"]) for group in spec["groups"]) + 1
-    row_heights = [
-        max(group_heights[group["id"]] for group in spec["groups"] if int(group["row"]) == row)
-        for row in range(rows)
-    ]
-    row_y: list[int] = []
-    cursor = top_offset
-    for height in row_heights:
-        row_y.append(cursor)
-        cursor += height + gap
-
     width = outer * 2 + columns * group_width + (columns - 1) * gap
-    height = cursor - gap + outer
+    ordered_groups = ranked_group_order(spec)
+    group_positions: dict[str, tuple[int, int, int]] = {}
+    column_cursors = {column: top_offset for column in range(columns)}
+    group_lookup = {group["id"]: group for group in spec["groups"]}
+    for column in range(columns):
+        for group_id in ordered_groups.get(column, []):
+            group = group_lookup[group_id]
+            y = column_cursors[column]
+            group_positions[group_id] = (outer + column * (group_width + gap), y, group_heights[group_id])
+            column_cursors[column] = y + group_heights[group_id] + vertical_gap
+    height = max(column_cursors.values()) - vertical_gap + outer
     root = svg_element(
         "svg",
         {
@@ -296,14 +393,10 @@ def render_svg(spec: dict, root_path: Path = ROOT) -> bytes:
     root.append(svg_element("text", {"class": "map-subtitle", "x": str(outer), "y": "72"}, spec["subtitle"]))
     root.append(svg_element("text", {"class": "boundary-note", "x": str(outer), "y": "98"}, "点击任一构件打开 canonical 目标；视觉邻近与连线不自动表示因果、严格同构或理论完备。"))
 
-    group_positions: dict[str, tuple[int, int, int]] = {}
     node_positions: dict[str, tuple[float, float, float, float, str]] = {}
-    group_lookup = {group["id"]: group for group in spec["groups"]}
     for group in spec["groups"]:
-        x = outer + int(group["column"]) * (group_width + gap)
-        y = row_y[int(group["row"])]
-        group_positions[group["id"]] = (x, y, group_heights[group["id"]])
-        root.append(svg_element("rect", {"class": "cluster", "x": str(x), "y": str(y), "width": str(group_width), "height": str(group_heights[group["id"]]), "rx": "16", "stroke": group["color"]}))
+        x, y, group_height = group_positions[group["id"]]
+        root.append(svg_element("rect", {"class": "cluster", "x": str(x), "y": str(y), "width": str(group_width), "height": str(group_height), "rx": "16", "stroke": group["color"]}))
         root.append(svg_element("text", {"class": "cluster-title", "x": str(x + 22), "y": str(y + 32), "fill": group["color"]}, group["label"]))
         root.append(svg_element("text", {"class": "cluster-desc", "x": str(x + 22), "y": str(y + 58)}, group["description"]))
         for index, node in enumerate(nodes_by_group[group["id"]]):
