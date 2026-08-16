@@ -342,7 +342,8 @@ class OpenClawAdapter:
             payload.get("progress_fraction") if isinstance(payload.get("progress_fraction"), (int, float)) else None,
         )
         self._events[envelope.federation_task_id] = event
-        self._responses[envelope.federation_task_id] = dict(payload)
+        public_payload = _safe_public(payload)
+        self._responses[envelope.federation_task_id] = public_payload if isinstance(public_payload, Mapping) else {}
         return event
 
     def _session_ref_from_payload(self, payload: Mapping[str, Any]) -> ExternalSessionRef | None:

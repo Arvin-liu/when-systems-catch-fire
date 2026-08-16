@@ -118,6 +118,31 @@ external truth, Owner acceptance, production safety or epistemic acceptance.
 - Live smoke: `LIVE_SMOKE_NOT_RUN`; no inference, provider/config/auth change,
   memory read, Gateway, message, installation or upgrade was performed.
 
+## Step 06 — COMPLETE
+
+- Result: `STEP_06_CODEX_ADAPTER_COMPLETE`.
+- Adapter: `agent_federation/adapters/codex.py`; fixture:
+  `tests/fixtures/federation/codex-exec-jsonl-response.jsonl`.
+- Current local help confirmed `codex exec --json`, `--ephemeral`,
+  `--ignore-user-config`, `--ignore-rules`, `--sandbox`, `--cd` and the
+  `exec resume` command family. The adapter uses the JSONL machine surface,
+  config/rules isolation, an explicit default `read-only` sandbox and an
+  optional explicit absolute workspace scope.
+- Codex permission is the intersection of the OS envelope, sandbox and
+  approval policy. `workspace-write` requires explicit adapter construction and
+  an envelope that permits external execution; dangerous bypass flags are
+  never emitted. The default adapter cannot satisfy `repo.write` or
+  `repo.test`.
+- JSONL events are reduced to a bounded public summary, optional progress
+  fraction and pointer-only `codex-thread-id`; raw event history and token
+  usage are not retained as OS state. Completion remains
+  `COMPLETED_UNVALIDATED` / `REQUIRES_RECONCILIATION`.
+- Gates: Codex fixture/JSONL/sandbox/pointer/receipt tests plus Hermes,
+  OpenClaw and 121 core set = `94/94 PASS`; inventory, ownership and
+  runtime-boundary validators = `PASS`.
+- Live smoke: `LIVE_SMOKE_NOT_RUN`; nested Codex formal-repository
+  modification was explicitly forbidden.
+
 | Step | Status | Commit | Remote | Targeted gate |
 | --- | --- | --- | --- | --- |
 | 00 | COMPLETE | `05ac54db` | `05ac54db` | inventory schema + 121 core = PASS |
@@ -125,8 +150,8 @@ external truth, Owner acceptance, production safety or epistemic acceptance.
 | 02 | COMPLETE | `53585047` | `53585047` | federation core + 71 tests = PASS |
 | 03 | COMPLETE | `43af8300` | `43af8300` | SDK/conformance + 76 tests = PASS |
 | 04 | COMPLETE | `fa0a6890` | `fa0a6890` | OpenClaw adapter + 82 tests = PASS |
-| 05 | COMPLETE | pending self commit binding | pending `ls-remote` binding | Hermes adapter + 88 tests = PASS |
-| 06 | PENDING | — | — | — |
+| 05 | COMPLETE | `1e5d3590` | `1e5d3590` | Hermes adapter + 88 tests = PASS |
+| 06 | COMPLETE | pending self commit binding | pending `ls-remote` binding | Codex adapter + 94 tests = PASS |
 | 07 | PENDING | — | — | — |
 | 08 | PENDING | — | — | — |
 | 09 | PENDING | — | — | — |
