@@ -26,6 +26,9 @@ REPO_ROOT = ROOT.parent
 CONTRACT_PATH = ROOT / "data/architecture/current-system-identity.json"
 SCHEMA_PATH = ROOT / "schemas/architecture/current-system-identity.schema.json"
 RECEIPT_SCHEMA_PATH = ROOT / "schemas/architecture/current-state-sync-receipt.schema.json"
+FACTS_SCHEMA_PATH = ROOT / "schemas/architecture/current-facts.schema.json"
+FACTS_PATH = ROOT / "data/architecture/current-facts.json"
+FACTS_MARKDOWN_PATH = ROOT / "docs/architecture/current-facts.md"
 FIXTURE_PATH = ROOT / "data/operations/iterations/123/fixtures/current-state-sync-fixtures-r1.json"
 ALLOWED_IMPACTS = {"NONE", "PRESENTATION_ONLY", "ARCHITECTURE_CHANGED"}
 HEX_SHA_RE = re.compile(r"^[0-9a-f]{40,64}$")
@@ -140,6 +143,7 @@ def validate_contract(contract: dict[str, Any] | None = None) -> tuple[list[str]
     errors.extend(_require(contract, (
         "schema_version", "contract_id", "identity_epoch", "current_iteration_boundary",
         "current_architecture_identity", "current_map", "current_method", "derived_metrics",
+        "current_facts_projection",
         "known_open_obligations", "authority_ceilings", "architecture_impact_handshake",
         "required_sync_surfaces", "concept_requirements",
     ), "contract"))
@@ -195,28 +199,33 @@ def validate_contract(contract: dict[str, Any] | None = None) -> tuple[list[str]
 
     metrics, metric_errors = derive_metrics(contract)
     errors.extend(metric_errors)
-    expected_metrics = {
-        "registry_components": 82,
-        "visible_map_nodes": 70,
-        "hidden_components": 12,
-        "typed_topology_relations": 107,
-        "visible_typed_edges": 77,
-        "function_identity_cards": 5603,
-        "function_quarantine_or_pending": 4804,
-        "nonfunction_claims": 15899,
-        "nonfunction_quarantine_or_pending": 4615,
-        "knowledge_cards": 370,
-        "knowledge_changes": 292,
-        "knowledge_layered_readings": 308,
-        "knowledge_search_records": 21810,
-        "knowledge_aliases": 779,
-        "fire_seeds": 64,
-        "fire_seed_sources": 371,
-    }
-    for metric_id, expected in expected_metrics.items():
-        if metric_id in metrics and metrics[metric_id] != expected:
-            errors.append(f"derived metric {metric_id}={metrics[metric_id]!r} does not match live source {expected!r}")
     return errors, metrics
+
+
+def validate_current_facts(contract: dict[str, Any]) -> list[str]:
+    errors: list[str] = []
+    projection_ref = contract.get("current_facts_projection", {})
+    if projection_ref.get("json_path") != "ignition/data/architecture/current-facts.json":
+        errors.append("current_facts_projection.json_path is not canonical")
+    if projection_ref.get("markdown_path") != "ignition/docs/architecture/current-facts.md":
+        errors.append("current_facts_projection.markdown_path is not canonical")
+    if not FACTS_SCHEMA_PATH.is_file():
+        errors.append("current facts schema is missing")
+    if not FACTS_PATH.is_file() or not FACTS_MARKDOWN_PATH.is_file():
+        return errors + ["current facts projection or bounded markdown block is missing"]
+    try:
+        facts = load_json(FACTS_PATH)
+        errors.extend(schema_errors(facts, FACTS_SCHEMA_PATH))
+        from generate_current_facts import build_projection, render_json, render_markdown
+
+        expected = build_projection(contract)
+        if FACTS_PATH.read_bytes() != render_json(expected):
+            errors.append("current-facts.json is stale relative to its declared canonical sources")
+        if FACTS_MARKDOWN_PATH.read_bytes() != render_markdown(expected):
+            errors.append("current-facts.md is stale relative to current-facts.json")
+    except Exception as exc:
+        errors.append(f"cannot validate current facts projection: {exc}")
+    return errors
 
 
 def concept_satisfied(text: str, concept_id: str, contract: dict[str, Any]) -> bool:
@@ -372,11 +381,12 @@ def run_check(receipt_path: Path | None = None, check_fixtures: bool = True) -> 
     errors: list[str] = []
     if not CONTRACT_PATH.is_file():
         return [f"missing contract: {CONTRACT_PATH}"]
-    if not SCHEMA_PATH.is_file() or not RECEIPT_SCHEMA_PATH.is_file():
+    if not SCHEMA_PATH.is_file() or not RECEIPT_SCHEMA_PATH.is_file() or not FACTS_SCHEMA_PATH.is_file():
         errors.append("current-state sync schema file is missing")
     contract = load_json(CONTRACT_PATH)
     contract_errors, metrics = validate_contract(contract)
     errors.extend(contract_errors)
+    errors.extend(validate_current_facts(contract))
     if receipt_path is None:
         receipts = discover_receipts()
         if not receipts:

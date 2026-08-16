@@ -34,6 +34,13 @@
     "required_marker": "1.4.0",
     "status": "Current"
   },
+  "current_facts_projection": {
+    "json_path": "ignition/data/architecture/current-facts.json",
+    "markdown_path": "ignition/docs/architecture/current-facts.md",
+    "schema_path": "ignition/schemas/architecture/current-facts.schema.json",
+    "generator_path": "ignition/tools/generate_current_facts.py",
+    "schema_version": "current-facts-r1"
+  },
   "derived_metrics": [
     {
       "metric_id": "registry_components",

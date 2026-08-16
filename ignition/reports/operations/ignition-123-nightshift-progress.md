@@ -94,3 +94,25 @@ JSON parse、current-state sync validator、6 个 unit/negative tests 和 `git d
 本步 claim ceiling：repository synchronization contract and merge gate only；不推导 architecture-content synchronization、external truth、Owner acceptance、production safety 或 epistemic upgrade。精确 Step 01 commit/remote SHA 待本步独立提交、push、`ls-remote` 核验后由最终闭合回执绑定。
 
 下一步：生成唯一 current-facts projection，并将当前数量从 contract recipe 投影到可审计机器事实源，继续保持历史快照不被覆盖。
+
+## Step 02 — COMPLETE
+
+### Deterministic projection
+
+已建立 [`current-facts.json`](../../data/architecture/current-facts.json) 与其窄范围人读 block [`current-facts.md`](../../docs/architecture/current-facts.md)。生成器 [`generate_current_facts.py`](../../tools/generate_current_facts.py) 只读取并指纹化 canonical registry、topology、map/method、四个 Pack manifest、Federation executor inventory、Foundation closure summaries、Knowledge Experience manifest、Fire Seeds census、Human Surface materiality/config/synchronization registry，以及 contract/generator/schema 输入；不覆盖 `project-state.json` 等历史快照。
+
+当前 projection 事实为：82 components、70 visible map nodes、12 hidden represented components、107 typed relations、77 visible typed edges；map `0.7.0` Current、method `1.4.0` Current；4 Packs/10 capability routes；3 external adapter inventory entries，live ceiling 仍为 `NOT_RUN_LIVE_EXTERNAL_INVOCATION`；function/non-function `5,603 / 15,899` canonical records 和 `4,804 / 4,615` quarantine/pending；Knowledge Experience `370 / 292 / 308 / 21,810 / 779`；Fire Seeds `64 / 371`；Human Surface materiality entries `48`、registered sync surfaces `20`、machine/human pairs `14`。环境残余仍逐字保留为来源 inventory 的声明，不被解释为真值或 proof status。
+
+### Determinism and authority boundary
+
+- `current-facts.schema.json` 锁定 projection 结构；`current-system-identity.json` 现在声明 JSON、Markdown、schema 和 generator 的 canonical projection 路径。
+- `generate_current_facts.py --check` 与 `validate_current_state_sync.py --check` 均为 `PASS`。
+- 同一输入连续两次生成的 JSON 和 Markdown 都 byte-identical；7 个 current-state sync unit/negative tests 为 `PASS`。
+- JSON 记录所有 canonical 输入及 generator/schema 的 SHA-256 source fingerprints；没有生成时间、self-referential commit SHA 或手工期望数量表。
+- 人读 block 只承载 bounded current-facts marker，Step 03 再将其作为 Current State 的事实锚点；本步没有把 `project-current-state.md` 变成机器模板，也没有修写历史章节。
+
+Step 02 receipt 保持 `architecture_identity_impact=PRESENTATION_ONLY`，所有十个已声明 identity surface 仍有明确的 `NO_CHANGE_WITH_REASON`；本步是确定性 derived projection，不是 architecture-content closure。未读取 secret，未改外部配置，未安装/升级，未执行真实外部 Agent invocation；本步 live 状态为 `NOT_RUN_STEP_02`。正式 main 仍保持 `d60ec8687fb1cc6b972e831a8f0dcd348ba0e83e`。
+
+本步 claim ceiling：deterministic repository-derived current facts and navigation support only；不推导 external truth、Owner acceptance、production safety 或 epistemic upgrade。精确 Step 02 commit/remote SHA 待本步独立提交、push、`ls-remote` 核验后由最终闭合回执绑定。
+
+下一步：依据 contract + current-facts，修订 `project-current-state.md` 的 Current 区域、清除首页重复 identity 描述，并把历史数字显式留在历史语境。

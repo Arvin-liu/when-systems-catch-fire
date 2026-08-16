@@ -13,6 +13,7 @@ from pathlib import Path
 IGNITION_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(IGNITION_ROOT / "tools"))
 import validate_current_state_sync as validator  # noqa: E402
+import generate_current_facts as facts_generator  # noqa: E402
 
 
 class CurrentStateSyncTests(unittest.TestCase):
@@ -53,6 +54,12 @@ class CurrentStateSyncTests(unittest.TestCase):
         fixture = json.loads(validator.FIXTURE_PATH.read_text(encoding="utf-8"))
         self.assertEqual(fixture["task_id"], "IGNITION-20260816-123")
         self.assertTrue(all(row["expected_status"] in {"PASS", "FAIL"} for row in fixture["fixtures"]))
+
+    def test_current_facts_two_generations_are_byte_identical(self) -> None:
+        first = facts_generator.build_projection(self.contract)
+        second = facts_generator.build_projection(self.contract)
+        self.assertEqual(facts_generator.render_json(first), facts_generator.render_json(second))
+        self.assertEqual(facts_generator.render_markdown(first), facts_generator.render_markdown(second))
 
 
 if __name__ == "__main__":

@@ -1,0 +1,174 @@
+{
+  "claim_ceiling": "Deterministic repository-derived current facts and navigation support only; no external truth, Owner acceptance, production safety or epistemic upgrade.",
+  "contract_id": "CURRENT_STATE_SYNC_INVARIANT",
+  "current_iteration_boundary": 122,
+  "facts": {
+    "architecture": {
+      "current_map_version": "0.7.0",
+      "hidden_components": 12,
+      "historical_map_version": "0.6.0",
+      "layout_version": "1.4.0",
+      "registry_components": 82,
+      "typed_topology_relations": 107,
+      "visible_map_nodes": 70,
+      "visible_typed_edges": 77
+    },
+    "environmental_residuals": [
+      "Full unittest discovery was deferred to Step 12 after the baseline probe produced no output for several minutes; the 121 targeted core gate completed separately.",
+      "T16_SYMPY_COUNTEREXAMPLE is explicitly classified as an environmental SymPy-unavailable residual from Task 121; this inventory does not change claim or proof status."
+    ],
+    "federation": {
+      "adapter_ids": [
+        "external.codex",
+        "external.hermes",
+        "external.openclaw"
+      ],
+      "adapter_inventory_count": 3,
+      "live_invocation_ceiling": "NOT_RUN_LIVE_EXTERNAL_INVOCATION",
+      "live_status_by_executor": {
+        "external.codex": "NOT_RUN_STEP_00",
+        "external.hermes": "NOT_RUN_STEP_00",
+        "external.openclaw": "NOT_RUN_STEP_00"
+      },
+      "reference_executor_identity": "REFERENCE_EXECUTOR / CONFORMANCE_EXECUTOR / FALLBACK_MINIMAL"
+    },
+    "fire_seeds": {
+      "seed_count": 64,
+      "source_census_count": 371
+    },
+    "foundation": {
+      "function_identity_cards": 5603,
+      "function_quarantine_or_pending": 4804,
+      "nonfunction_claims": 15899,
+      "nonfunction_quarantine_or_pending": 4615
+    },
+    "human_surface": {
+      "function_human_entries": 24,
+      "machine_human_pairs": 14,
+      "materiality_entries": 48,
+      "nonfunction_human_entries": 24,
+      "registered_synchronization_surfaces": 20,
+      "surface_role_counts": {
+        "agent_handoff": 6,
+        "ai_cold_start": 3,
+        "ai_state_recovery": 1,
+        "governance_gate": 1,
+        "governance_policy": 1,
+        "human_exploration": 1,
+        "human_front_door": 4,
+        "human_guide": 5,
+        "human_result": 1,
+        "machine_human_counterpart": 2,
+        "machine_state": 5,
+        "release_history": 3
+      }
+    },
+    "iteration": {
+      "current_iteration_boundary": 122,
+      "current_map_version": "0.7.0",
+      "method_status": "Current",
+      "method_version": "1.4.0"
+    },
+    "knowledge_experience": {
+      "aliases": 779,
+      "cards": 370,
+      "changes": 292,
+      "layered_readings": 308,
+      "search_records": 21810
+    },
+    "packs": {
+      "capability_route_count": 10,
+      "count": 4,
+      "pack_ids": [
+        "knowledge.r0",
+        "maintenance.repository",
+        "research.reos-light",
+        "writing.zhiyuan"
+      ]
+    }
+  },
+  "identity_epoch": "agent-platform-federation-r1",
+  "schema_version": "current-facts-r1",
+  "source_fingerprints": [
+    {
+      "path": "ignition/ITERATION.md",
+      "sha256": "47dc3d6f52fd465427baf897c82272c92e3121ef2684f8f4a8b1f2007a59c6ca"
+    },
+    {
+      "path": "ignition/data/agent-federation/executor-inventory-r1.json",
+      "sha256": "1db5fbe2f4535cdcc0878aac71fdec4e35be23705934e29eb73025c58a4a923a"
+    },
+    {
+      "path": "ignition/data/architecture/current-system-identity.json",
+      "sha256": "dd8b28c7c207d32db1d8e93562e739e34c06223dfc8209c0e7146a3b64f1c50c"
+    },
+    {
+      "path": "ignition/data/architecture/interactive-system-map-layout.json",
+      "sha256": "8a24bdfb0565b38acc06392d8406020f09e8615542b70533aab23578aff9ab09"
+    },
+    {
+      "path": "ignition/data/foundation/function-assets/closure-summary.json",
+      "sha256": "c44f432a845e6f9d6636db4746669b3d16420bef7ff98284258902bd64ee0086"
+    },
+    {
+      "path": "ignition/data/foundation/nonfunction-claims/closure-summary.json",
+      "sha256": "1e61356b106f2f95f7767ee0cb4cf57ec2d55338fa46359dd0dca969df85b2b6"
+    },
+    {
+      "path": "ignition/data/governance/human-results/config.json",
+      "sha256": "9452ae86f6ce151ac7c08ae16300aeae9a086445651e821eb40aa79f29af6b47"
+    },
+    {
+      "path": "ignition/data/governance/human-surface/materiality-manifest.json",
+      "sha256": "5b3a6c6045bcf0146b3451641a3be22097bb71eea405b4cfa6e1f52ec3e7d6c4"
+    },
+    {
+      "path": "ignition/data/governance/knowledge-experience/manifest.json",
+      "sha256": "932a8c3f310b914db2b10a8aaece5c0cfe1ecbf72da37ace98fe79bf60f6f989"
+    },
+    {
+      "path": "ignition/data/operations/change-propagation-topology.json",
+      "sha256": "a8a68cac1f683562e758383d870e78878308cc73d3b7eec34a6c80d7ba31314b"
+    },
+    {
+      "path": "ignition/data/operations/project-components.json",
+      "sha256": "f0f90ca8223ef07087aca3d871812a1e8b185b3dd032e5225455597837591404"
+    },
+    {
+      "path": "ignition/data/operations/synchronization-surfaces.json",
+      "sha256": "46f0932cc8fad63469acb8ec5f3af579d841addc8064a128b60697b3960ad118"
+    },
+    {
+      "path": "ignition/data/publication/fire-seeds/seed-census.json",
+      "sha256": "b476d92765a0c38bea289aa4c89a40a2b462e11ceef42a6513d79c7ec98fe5eb"
+    },
+    {
+      "path": "ignition/packs/knowledge/manifest.json",
+      "sha256": "6e5a77f25796ce189e73f02026be1b1544f4c3f736b1a67153134c1fa181bff1"
+    },
+    {
+      "path": "ignition/packs/maintenance/manifest.json",
+      "sha256": "a4cc420eb74a773fd0f85e7d8e883b756e1ebdd8f2980a45524832235725e9e7"
+    },
+    {
+      "path": "ignition/packs/research/manifest.json",
+      "sha256": "73f6f1e8f4c4c552ca88388294b5b5c3a5079403161e2ec848aaa58bac174875"
+    },
+    {
+      "path": "ignition/packs/writing/manifest.json",
+      "sha256": "e4a751104a42b2ee72fdff660b2bf9b84fddd3016dae65e6ea4c49d40ba46d43"
+    },
+    {
+      "path": "ignition/schemas/architecture/current-facts.schema.json",
+      "sha256": "19b9929f534fd4a8800c54b98b0ba88e08e56dc4f055fb04aea100b326b3ee2b"
+    },
+    {
+      "path": "ignition/schemas/architecture/current-system-identity.schema.json",
+      "sha256": "edd428e346a58fadcb6aedf23d99a04305bc7140a471226c93ba1d7bf0e82c5a"
+    },
+    {
+      "path": "ignition/tools/generate_current_facts.py",
+      "sha256": "35876d45d48ff6b8fb65f2713c77bdcccae4e36f13d4a28e77226ef9f1fc3c75"
+    }
+  ]
+}

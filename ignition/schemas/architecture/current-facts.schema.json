@@ -1,0 +1,107 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ignition/architecture/current-facts.schema.json",
+  "title": "Ignition deterministic current facts projection",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "contract_id", "identity_epoch", "current_iteration_boundary", "facts", "source_fingerprints", "claim_ceiling"],
+  "properties": {
+    "schema_version": {"const": "current-facts-r1"},
+    "contract_id": {"const": "CURRENT_STATE_SYNC_INVARIANT"},
+    "identity_epoch": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]+$"},
+    "current_iteration_boundary": {"type": "integer", "minimum": 0},
+    "facts": {"$ref": "#/$defs/facts"},
+    "source_fingerprints": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["path", "sha256"],
+        "properties": {
+          "path": {"type": "string", "minLength": 1, "pattern": "\\S"},
+          "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+        }
+      }
+    },
+    "claim_ceiling": {"type": "string", "minLength": 1, "pattern": "\\S"}
+  },
+  "$defs": {
+    "nonblank": {"type": "string", "minLength": 1, "pattern": "\\S"},
+    "facts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["architecture", "packs", "federation", "foundation", "knowledge_experience", "fire_seeds", "human_surface", "iteration", "environmental_residuals"],
+      "properties": {
+        "architecture": {
+          "type": "object", "additionalProperties": false,
+          "required": ["registry_components", "visible_map_nodes", "hidden_components", "typed_topology_relations", "visible_typed_edges", "current_map_version", "historical_map_version", "layout_version"],
+          "properties": {
+            "registry_components": {"type": "integer", "minimum": 0},
+            "visible_map_nodes": {"type": "integer", "minimum": 0},
+            "hidden_components": {"type": "integer", "minimum": 0},
+            "typed_topology_relations": {"type": "integer", "minimum": 0},
+            "visible_typed_edges": {"type": "integer", "minimum": 0},
+            "current_map_version": {"$ref": "#/$defs/nonblank"},
+            "historical_map_version": {"$ref": "#/$defs/nonblank"},
+            "layout_version": {"$ref": "#/$defs/nonblank"}
+          }
+        },
+        "packs": {
+          "type": "object", "additionalProperties": false,
+          "required": ["count", "capability_route_count", "pack_ids"],
+          "properties": {"count": {"type": "integer", "minimum": 0}, "capability_route_count": {"type": "integer", "minimum": 0}, "pack_ids": {"type": "array", "items": {"$ref": "#/$defs/nonblank"}, "uniqueItems": true}}
+        },
+        "federation": {
+          "type": "object", "additionalProperties": false,
+          "required": ["adapter_inventory_count", "adapter_ids", "live_status_by_executor", "live_invocation_ceiling", "reference_executor_identity"],
+          "properties": {
+            "adapter_inventory_count": {"type": "integer", "minimum": 0},
+            "adapter_ids": {"type": "array", "items": {"$ref": "#/$defs/nonblank"}, "uniqueItems": true},
+            "live_status_by_executor": {"type": "object", "additionalProperties": {"$ref": "#/$defs/nonblank"}},
+            "live_invocation_ceiling": {"$ref": "#/$defs/nonblank"},
+            "reference_executor_identity": {"$ref": "#/$defs/nonblank"}
+          }
+        },
+        "foundation": {
+          "type": "object", "additionalProperties": false,
+          "required": ["function_identity_cards", "function_quarantine_or_pending", "nonfunction_claims", "nonfunction_quarantine_or_pending"],
+          "properties": {
+            "function_identity_cards": {"type": "integer", "minimum": 0},
+            "function_quarantine_or_pending": {"type": "integer", "minimum": 0},
+            "nonfunction_claims": {"type": "integer", "minimum": 0},
+            "nonfunction_quarantine_or_pending": {"type": "integer", "minimum": 0}
+          }
+        },
+        "knowledge_experience": {
+          "type": "object", "additionalProperties": false,
+          "required": ["cards", "changes", "layered_readings", "search_records", "aliases"],
+          "properties": {"cards": {"type": "integer", "minimum": 0}, "changes": {"type": "integer", "minimum": 0}, "layered_readings": {"type": "integer", "minimum": 0}, "search_records": {"type": "integer", "minimum": 0}, "aliases": {"type": "integer", "minimum": 0}}
+        },
+        "fire_seeds": {
+          "type": "object", "additionalProperties": false,
+          "required": ["seed_count", "source_census_count"],
+          "properties": {"seed_count": {"type": "integer", "minimum": 0}, "source_census_count": {"type": "integer", "minimum": 0}}
+        },
+        "human_surface": {
+          "type": "object", "additionalProperties": false,
+          "required": ["materiality_entries", "function_human_entries", "nonfunction_human_entries", "registered_synchronization_surfaces", "machine_human_pairs", "surface_role_counts"],
+          "properties": {
+            "materiality_entries": {"type": "integer", "minimum": 0},
+            "function_human_entries": {"type": "integer", "minimum": 0},
+            "nonfunction_human_entries": {"type": "integer", "minimum": 0},
+            "registered_synchronization_surfaces": {"type": "integer", "minimum": 0},
+            "machine_human_pairs": {"type": "integer", "minimum": 0},
+            "surface_role_counts": {"type": "object", "additionalProperties": {"type": "integer", "minimum": 0}}
+          }
+        },
+        "iteration": {
+          "type": "object", "additionalProperties": false,
+          "required": ["current_iteration_boundary", "method_version", "method_status", "current_map_version"],
+          "properties": {"current_iteration_boundary": {"type": "integer", "minimum": 0}, "method_version": {"$ref": "#/$defs/nonblank"}, "method_status": {"const": "Current"}, "current_map_version": {"$ref": "#/$defs/nonblank"}}
+        },
+        "environmental_residuals": {"type": "array", "items": {"$ref": "#/$defs/nonblank"}}
+      }
+    }
+  }
+}
