@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [\| 机制关键词 职称 / 硬门槛 / 裹挟 \| 正文第 5/9/21 行 ✓ \|](../../../outputs/audit/c0808-index-visibility-check-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-662de597490540ff / \| 机制关键词 职称 / 硬门槛 / 裹挟 \| 正文第 5/9/21 行 ✓ \|
+  - 来源：`outputs/audit/c0808-index-visibility-check-20260708.md`
+  - 依赖：—；被引用：—
 - [\| 校准对象 \| 只提取的机制 \| 防止哪种误判 \|](../../../docs/language-thought/chinese-literary-calibration.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-8c56ece1eb4ed309 / \| 校准对象 \| 只提取的机制 \| 防止哪种误判 \|
@@ -2497,10 +2502,5 @@
 - [把不同时间、空间、层级或组织尺度上的机制直接类比。](../../../data/failure_typology.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-b1a336243ac174da / 把不同时间、空间、层级或组织尺度上的机制直接类比。
-  - 来源：`data/failure_typology.csv`
-  - 依赖：—；被引用：—
-- [把历史叙事误写成因果定律](../../../data/failure_typology.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-15584316309876a8 / 把历史叙事误写成因果定律
   - 来源：`data/failure_typology.csv`
   - 依赖：—；被引用：—

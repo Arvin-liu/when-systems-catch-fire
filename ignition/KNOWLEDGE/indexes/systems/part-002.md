@@ -174,6 +174,11 @@
   - 可搜索名称：NFC-89ae726a335e4440 / entropy arrow separated from causal order;
   - 来源：`reports/architecture/121Q21R-multiscale-causal-fabric-validation.md`
   - 依赖：—；被引用：—
+- [epistemic_state: `CURRENT_WITH_OPEN_OBLIGATIONS` and `EPISTEMICALLY_ACCEPTED=0` remain unchanged. Tests, receipts, gener](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-c153968802c96116 / epistemic_state: `CURRENT_WITH_OPEN_OBLIGATIONS` and `EPISTEMICALLY_ACCEPTED=0` remain unchanged. Tests, receipts, gener
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [epistemic_state: R2 tests, validators, Pack load, checkpoint/resume, operational memory and offline pilot are repository](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-a9da52aedd653308 / epistemic_state: R2 tests, validators, Pack load, checkpoint/resume, operational memory and offline pilot are repository
@@ -2483,9 +2488,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-51ce8beffd8e000b / Q12 selects state-changing actions and adjudicates mechanisms.
   - 来源：`docs/architecture/multiscale-causal-fabric.md`
-  - 依赖：—；被引用：—
-- [Q12 selects state-changing actions and mechanism sketches.](../../../reports/architecture/121Q22-probabilistic-system-dynamics-validation.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-731030d3c4de4435 / Q12 selects state-changing actions and mechanism sketches.
-  - 来源：`reports/architecture/121Q22-probabilistic-system-dynamics-validation.md`
   - 依赖：—；被引用：—

@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [把历史叙事误写成因果定律](../../../data/failure_typology.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-15584316309876a8 / 把历史叙事误写成因果定律
+  - 来源：`data/failure_typology.csv`
+  - 依赖：—；被引用：—
 - [把历史叙事误写成因果定律](../../../docs/failure_typology.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-fcccc072eaf9f98a / 把历史叙事误写成因果定律

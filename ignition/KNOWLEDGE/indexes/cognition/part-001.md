@@ -431,7 +431,12 @@
   - 依赖：—；被引用：—
 - [authority_changes: \[Agent Platform R2\](../../../docs/architecture/agent-platform-r2.md), \[Agent Runtime\](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-4c4b8edeb9155525 / authority_changes: \[Agent Platform R2\](../../../docs/architecture/agent-platform-r2.md), \[Agent Runtime\](../../../outputs/audit/two-tables-entry-format-audit-20260709.md)
+  - 可搜索名称：NFC-4c4b8edeb9155525 / authority_changes: \[Agent Platform R2\](../../../docs/architecture/agent-platform-r2.md), \[Agent Runtime\](../../../docs/architecture/agent-platform-r2.md), \[Kernel\](../../../agent_kernel/README.md), \[R](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-f0c798edf653ea29 / authority_changes: \[Agent Platform R2\](../../../docs/architecture/agent-platform-r2.md), \[Kernel\](../../../agent_kernel/README.md), \[R
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [C-4 孝文帝汉化（认知/社会）](../../../outputs/audit/two-tables-entry-format-audit-20260709.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-198571f884c4f692 / C-4 孝文帝汉化（认知/社会）
   - 来源：`outputs/audit/two-tables-entry-format-audit-20260709.md`
@@ -540,6 +545,11 @@
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-4BD77D9E7B37EA95 / def test_feedback_suggests(self): / IMPLICIT-4BD77D9E7B37EA95
   - 来源：`function-os-candidate/v0.2/tests/test_n5_through_n9.py`
+  - 依赖：—；被引用：—
+- [delta: closes the bounded Agent Platform R2 night-shift candidate across Kernel/Runtime, Pack Registry/Bus, operational](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-b4b563e12a5e62bd / delta: closes the bounded Agent Platform R2 night-shift candidate across Kernel/Runtime, Pack Registry/Bus, operational
+  - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
 - [delta: 在 R0 typed loop 之上增加真实本地文件/命令行动层、workspace path/symlink/special-file/allowlist 边界、execution packet/source-plan di](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`

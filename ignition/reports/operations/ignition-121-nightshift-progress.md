@@ -318,6 +318,52 @@ proceed to Step 12 fresh-clone replay, final fast-forward publication and exact
 remote/control-receipt verification. No false PASS is recorded for the missing
 `sympy` dependency.
 
+## Step 12 — RELEASE CANDIDATE READY FOR FINAL FAST-FORWARD
+
+- A fresh clone made from the pushed Step 11 branch at
+  `79ed5d61c4af79f4ef9543d298269cb6b9288031` reproduced the branch exactly and
+  started clean. The R2 offline pilot and receipt validator passed; the R2
+  focused group passed `54/54`.
+- The first committed-tree replay exposed one real `NEW_REGRESSION_REPAIRED`:
+  the Step 11 path-classification manifest had been generated while the
+  replacement Human Surface entry was untracked and the retired entry was
+  still present in the index. A clean clone therefore reported `2417` paths
+  against a stale `2418`-row manifest. Step 12 regenerated the manifest from
+  the actual committed-tree view, removed the stale path, and regenerated the
+  affected Nonfunction discovery/closure and deterministic downstream
+  projections. No claim, M/E, provenance ceiling or authority changed.
+- The repaired working tree now reports path classification `2417/2417` with
+  `0` unresolved and `0` stale paths; Nonfunction generator determinism passes
+  with `15,524` canonical claims and `tracked_files_accounted=3848`; Knowledge
+  Experience determinism and audit pass at `368` cards, `292` changes, `308`
+  layers, `21,233` search
+  records, `22,614` links, `774` aliases and `8` two-click pages.
+- Fresh-clone preflight also passed Pack Registry (`4` Packs / `10` routes),
+  Supervisor persistence validator, R2 pilot receipt validator, CLI memory
+  append/query/forget/audit with tombstone, Knowledge corpus boundary plus
+  R0/R1 runtime tests `20/20`, Fire Seeds, Human Front Door/Surface/Visibility,
+  Agent Platform Human Surface, propagation reconciliation, and the full R2
+  focused group. The pilot retained approval, crash/resume, executor handoff,
+  independent adversarial failure, `network_allowed=false`,
+  `remote_mutation=false`, and no private paths in receipts.
+- The formal Step 11 full regression result remains truthful: `665` tests,
+  `1` skip, and one environmental `sympy` residual; it is not upgraded to a
+  full-suite PASS. `origin/main` remains the untouched baseline until the
+  final post-checkpoint clone and exact fast-forward checks complete.
+- This release candidate preserves `CURRENT_WITH_OPEN_OBLIGATIONS` and
+  `EPISTEMICALLY_ACCEPTED=0`. It is repository-local engineering, replay and
+  synchronization evidence only, not external truth, production safety,
+  causality, Owner acceptance or general intelligence.
+
+### Step 12 decision
+
+`STEP_12_RELEASE_CANDIDATE_READY_FOR_FINAL_FAST_FORWARD`; commit and push this
+checkpoint, perform the final remote fresh-clone replay, verify that
+`origin/main` is still the Step 00 baseline, then publish exactly once by
+ordinary fast-forward. The exact Step 12 checkpoint SHA and final main SHA are
+bound by the post-commit Git and independent 1111 receipt rather than written
+into their own commit.
+
 ## Step ledger
 
 | Step | State | Commit | Remote SHA | Gate summary |
@@ -333,7 +379,7 @@ remote/control-receipt verification. No false PASS is recorded for the missing
 | 08 | COMPLETE | `71ffd9aa5e185d0eddc53e185f2cfc931f16a0df` | `71ffd9aa5e185d0eddc53e185f2cfc931f16a0df` | Four source-contract blast-radius fixtures, topology/impact/generator updates, historical reconciliation and map gates PASS |
 | 09 | COMPLETE | `983aff0b280313c79d82484f609e5a45d721fd63` | `983aff0b280313c79d82484f609e5a45d721fd63` | Offline fresh-clone A/B/C episode, approval-path fault checkpoint, executor handoff, operational memory and adversarial episode PASS |
 | 10 | COMPLETE | `d94200e9c623265463955272bbcff488f76311a8` | `d94200e9c623265463955272bbcff488f76311a8` | Human/AI surface R2 convergence, deterministic projection rebuilds, unique map and Knowledge/Front Door/boundary gates PASS |
-| 11 | PENDING | — | — | — |
+| 11 | COMPLETE | `79ed5d61c4af79f4ef9543d298269cb6b9288031` | `79ed5d61c4af79f4ef9543d298269cb6b9288031` | Adversarial/full regression complete with one explicitly classified environmental SymPy residual; closure and projection gates PASS |
 | 12 | PENDING | — | — | — |
 
 All step rows are updated only as part of the corresponding step checkpoint;

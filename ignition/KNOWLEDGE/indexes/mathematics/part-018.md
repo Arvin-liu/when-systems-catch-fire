@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [已迁移的历史函数来源/0249-D213-暗能量-门槛扩张函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-a1e9ae7fd5e1388e / 已迁移的历史函数来源/0249-D213-暗能量-门槛扩张函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D213；被引用：—
 - [已迁移的历史函数来源/0250-D214-宇宙膨胀-门槛扩张函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-715d49ec597df4dc / 已迁移的历史函数来源/0250-D214-宇宙膨胀-门槛扩张函数.md
@@ -2499,8 +2504,3 @@
   - 可搜索名称：NFC-de75c2645194ef38 / 认知宇宙学函数，认知宇宙的演化由认知势能面的膨胀/收缩决定。 **扩展注释 / Extended Annotation**
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：—；被引用：—
-- [认知宇宙学是D183门控面合并在宇宙尺度的投影。暗能量=认知势能面的膨胀驱动力。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-3e450dcef587c26d / 认知宇宙学是D183门控面合并在宇宙尺度的投影。暗能量=认知势能面的膨胀驱动力。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D183；被引用：—
