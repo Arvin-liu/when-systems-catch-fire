@@ -199,7 +199,7 @@ def redact_public_mapping(value: Mapping[str, Any]) -> dict[str, Any]:
     redacted_fields = 0
     for key, item in value.items():
         normalized = str(key).casefold()
-        if any(marker in normalized for marker in ("token", "secret", "cookie", "authorization", "api_key", "password")):
+        if any(marker in normalized for marker in ("prompt", "system_prompt", "chain_of_thought", "cot", "thoughts", "reasoning", "token", "secret", "cookie", "authorization", "api_key", "password")):
             redacted_fields += 1
         elif isinstance(item, str):
             result[str(key)] = redact_text(item)

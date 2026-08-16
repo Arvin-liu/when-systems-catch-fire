@@ -16,7 +16,7 @@ external truth, Owner acceptance, production safety or epistemic acceptance.
 - Audit: `reports/architecture/external-agent-interface-audit-r1.md`.
 - Inventory validator: `python3 tools/validate_executor_inventory.py`.
 - Local executors: OpenClaw `2026.7.1-2`, Hermes `v0.20.0`, Codex `0.144.4`.
-- Targeted 121 core regression: `60/60 PASS` across Runtime, Pack, Profile,
+- Targeted 121 core regression: `63/63 PASS` across Runtime, Pack, Profile,
   Memory, Supervisor, Gateway, routing, R2 pilot and propagation.
 - Live smoke: `NOT_RUN_STEP_00` for all external executors.
 - Safety: no secret content read; no external configuration changed; no
@@ -72,13 +72,35 @@ external truth, Owner acceptance, production safety or epistemic acceptance.
 - Residual: SDK cancellation/output caps are boundary utilities, not runtime
   permissions.
 
+## Step 04 — COMPLETE
+
+- Result: `STEP_04_OPENCLAW_ADAPTER_COMPLETE`.
+- Adapter: `agent_federation/adapters/openclaw.py`; fixture:
+  `tests/fixtures/federation/openclaw-agent-json-response.json`.
+- Observed public invocation: `openclaw agent --json --message-file
+  <disposable UTF-8 envelope> --timeout <seconds>`, with optional observed
+  `--agent` and `--session-key` arguments. argv is literal and the default
+  runner is `shell=False` through the adapter SDK.
+- Descriptor is derived from the real version/help shape. The adapter declares
+  only `long_task`; it does not infer progress, cancellation, native resume,
+  workspace authority, Gateway/channel/device access, or structured validation
+  from OpenClaw's internal behavior.
+- Executor completion is represented as `COMPLETED_UNVALIDATED`; the receipt
+  remains `REQUIRES_RECONCILIATION` with `OS_VALIDATION_NOT_PERFORMED` until
+  Ignition validators establish evidence. Session values are pointer-only.
+- Gates: OpenClaw fixture/CLI/redaction/receipt tests plus the 121 core set =
+  `82/82 PASS`; inventory, ownership and runtime-boundary validators = `PASS`.
+- Live smoke: `LIVE_SMOKE_NOT_RUN`; no external inference, Gateway, private
+  SQLite/session inspection, configuration change, channel action, install or
+  upgrade was performed.
+
 | Step | Status | Commit | Remote | Targeted gate |
 | --- | --- | --- | --- | --- |
 | 00 | COMPLETE | `05ac54db` | `05ac54db` | inventory schema + 121 core = PASS |
 | 01 | COMPLETE | `a8b0cadd` | `a8b0cadd` | ownership + freeze + 66 tests = PASS |
 | 02 | COMPLETE | `53585047` | `53585047` | federation core + 71 tests = PASS |
-| 03 | COMPLETE | pending self commit binding | pending `ls-remote` binding | SDK/conformance + 76 tests = PASS |
-| 04 | PENDING | — | — | — |
+| 03 | COMPLETE | `43af8300` | `43af8300` | SDK/conformance + 76 tests = PASS |
+| 04 | COMPLETE | pending self commit binding | pending `ls-remote` binding | OpenClaw adapter + 82 tests = PASS |
 | 05 | PENDING | — | — | — |
 | 06 | PENDING | — | — | — |
 | 07 | PENDING | — | — | — |

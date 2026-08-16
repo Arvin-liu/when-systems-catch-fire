@@ -1,0 +1,10 @@
+{
+  "status": "completed",
+  "session_id": "fixture-openclaw-session-001",
+  "summary": "Read-only disposable fixture response",
+  "refs": ["fixture://openclaw/manifest.json"],
+  "result": {
+    "observed": "fixture",
+    "validation_required": true
+  }
+}
