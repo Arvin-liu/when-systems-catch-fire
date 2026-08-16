@@ -55,12 +55,29 @@ external truth, Owner acceptance, production safety or epistemic acceptance.
 - Residual: external session state is a pointer only; no vendor history,
   prompt, hidden reasoning, token or private memory is canonical OS state.
 
+## Step 03 — COMPLETE
+
+- Result: `STEP_03_ADAPTER_SDK_AND_CONFORMANCE_COMPLETE`.
+- Package: `agent_federation/sdk.py` and `agent_federation/conformance.py`;
+  taxonomy: `data/agent-federation/capability-taxonomy-r1.json`.
+- Boundary utilities cover `shell=False` argv execution, executable discovery,
+  version matching, timeout/output caps, JSON/JSONL parsing, secret redaction,
+  capability mapping, cancellation, pointer refs and receipt construction.
+- `FederationConformanceSuite` exercises probe/descriptor, unsupported
+  capability denial, dispatch/progress, status ordering, cancel, optional
+  resume and idempotency without a hidden agent loop.
+- One redaction repair round removed sensitive field names from canonical
+  telemetry and retained only a `redacted_fields` count; targeted regression is
+  `76/76 PASS`.
+- Residual: SDK cancellation/output caps are boundary utilities, not runtime
+  permissions.
+
 | Step | Status | Commit | Remote | Targeted gate |
 | --- | --- | --- | --- | --- |
 | 00 | COMPLETE | `05ac54db` | `05ac54db` | inventory schema + 121 core = PASS |
 | 01 | COMPLETE | `a8b0cadd` | `a8b0cadd` | ownership + freeze + 66 tests = PASS |
-| 02 | COMPLETE | pending self commit binding | pending `ls-remote` binding | federation core + 71 tests = PASS |
-| 03 | PENDING | — | — | — |
+| 02 | COMPLETE | `53585047` | `53585047` | federation core + 71 tests = PASS |
+| 03 | COMPLETE | pending self commit binding | pending `ls-remote` binding | SDK/conformance + 76 tests = PASS |
 | 04 | PENDING | — | — | — |
 | 05 | PENDING | — | — | — |
 | 06 | PENDING | — | — | — |

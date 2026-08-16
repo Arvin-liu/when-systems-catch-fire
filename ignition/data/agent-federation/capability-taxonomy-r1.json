@@ -1,0 +1,21 @@
+{
+  "schema_version": "capability-taxonomy-r1",
+  "taxonomy_id": "FEDERATION_CAPABILITY_TAXONOMY_R1",
+  "tokens": [
+    "repo.read",
+    "repo.write",
+    "repo.test",
+    "terminal.run",
+    "browser.read",
+    "browser.act",
+    "web.read",
+    "messaging.send",
+    "long_task",
+    "native_resume",
+    "structured_progress",
+    "subagents",
+    "scheduler",
+    "device.action"
+  ],
+  "note": "Routing tokens describe compatibility only; they do not grant permission."
+}
