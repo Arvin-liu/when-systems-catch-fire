@@ -42,6 +42,21 @@ from .approval_handoff import (
     build_handoff_bundle,
     decide_failover,
 )
+from .convergence import (
+    AbsorptionResult,
+    ConvergenceError,
+    FederationConvergence,
+    FederationMemoryAbsorber,
+    MemoryProjection,
+    ProgressIngestResult,
+    ProgressLedger,
+    ReceiptIngestResult,
+    ReceiptRegistry,
+    project_approval,
+    project_progress,
+    project_receipt,
+    project_recovery,
+)
 
 __all__ = [
     "ApprovalPolicy", "ArtifactRef", "BudgetContract", "ExecutorDescriptor", "ExecutorHealth",
@@ -53,4 +68,7 @@ __all__ = [
     "ApprovalBridge", "ApprovalBridgeDecision", "ApprovalHandoffError", "ExternalApprovalObservation",
     "FailoverContext", "FailoverDecision", "HandoffTakeoverDecision", "accept_handoff",
     "build_handoff_bundle", "decide_failover",
+    "AbsorptionResult", "ConvergenceError", "FederationConvergence", "FederationMemoryAbsorber", "MemoryProjection",
+    "ProgressIngestResult", "ProgressLedger", "ReceiptIngestResult", "ReceiptRegistry", "project_approval",
+    "project_progress", "project_receipt", "project_recovery",
 ]

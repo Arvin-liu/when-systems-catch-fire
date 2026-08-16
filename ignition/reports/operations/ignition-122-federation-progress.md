@@ -188,6 +188,27 @@ external truth, Owner acceptance, production safety or epistemic acceptance.
 - Residual: cross-executor progress/memory deduplication and disposable
   federation pilots remain for Steps 09–10.
 
+## Step 09 — COMPLETE
+
+- Result: `STEP_09_CROSS_EXECUTOR_CONVERGENCE_COMPLETE`.
+- Convergence: `agent_federation/convergence.py`; fixtures:
+  `tests/fixtures/federation/streaming-progress-events.jsonl` and
+  `malformed-event.txt`.
+- `ProgressLedger` gives public progress stable ordering, duplicate keys,
+  late-event/late-terminal classification and non-regressing canonical state.
+  `ReceiptRegistry` stores only digest/status/validator refs/artifact refs;
+  `COMPLETED_VALIDATED` without validator refs remains unverified.
+- `MemoryProjection` is the narrow bridge into the existing
+  `OperationalMemoryStore`. It accepts public summaries, validated receipt
+  evidence, failures, approval and recovery decisions, and the absorber
+  rejects hidden markers and deduplicates event keys/memory IDs. Vendor
+  telemetry, prompts, CoT, token data and private session history remain out.
+- Gates: streaming/partial/malformed parser, ordering, duplicate, receipt,
+  memory and hidden-state tests plus the prior set = `116/116 PASS`;
+  inventory, ownership and runtime-boundary validators = `PASS`.
+- Residual: the absorber's exactly-once dedup index is process-local in R1;
+  persistent integrity/tombstones remain owned by the existing memory store.
+
 | Step | Status | Commit | Remote | Targeted gate |
 | --- | --- | --- | --- | --- |
 | 00 | COMPLETE | `05ac54db` | `05ac54db` | inventory schema + 121 core = PASS |
@@ -198,8 +219,8 @@ external truth, Owner acceptance, production safety or epistemic acceptance.
 | 05 | COMPLETE | `1e5d3590` | `1e5d3590` | Hermes adapter + 88 tests = PASS |
 | 06 | COMPLETE | `74796f6a` | `74796f6a` | Codex adapter + 94 tests = PASS |
 | 07 | COMPLETE | `1ac6880e` | `1ac6880e` | router + 101 tests = PASS |
-| 08 | COMPLETE | pending self commit binding | pending `ls-remote` binding | approval/handoff/failover + 109 tests = PASS |
-| 09 | PENDING | — | — | — |
+| 08 | COMPLETE | `5dbbdfa9` | `5dbbdfa9` | approval/handoff/failover + 109 tests = PASS |
+| 09 | COMPLETE | pending self commit binding | pending `ls-remote` binding | convergence + 116 tests = PASS |
 | 10 | PENDING | — | — | — |
 | 11 | PENDING | — | — | — |
 | 12 | PENDING | — | — | — |
