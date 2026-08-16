@@ -71,7 +71,11 @@
     "ignition/tools/validate_federation_ownership.py",
     "ignition/tests/test_federation_ownership.py",
     "ignition/data/operations/iterations/123/external-conformance-smoke-r1.json",
-    "ignition/schemas/operations/external-conformance-smoke-r1.schema.json"
+    "ignition/schemas/operations/external-conformance-smoke-r1.schema.json",
+    "ignition/data/operations/iterations/123/cross-executor-driver-pilot-r1.json",
+    "ignition/schemas/operations/cross-executor-driver-pilot-r1.schema.json",
+    "ignition/tools/run_cross_executor_driver_pilot.py",
+    "ignition/tests/test_cross_executor_driver_pilot.py"
   ],
   "identity_contract_changed": true,
   "surface_sync_complete": false,

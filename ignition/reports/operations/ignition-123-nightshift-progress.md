@@ -315,3 +315,39 @@ evidence，不是 live provider success、生产可靠性、外部有效性或 e
 
 下一步：用点火 OS 做 routing、validation、failover 与 handoff driver，运行一个
 disposable cross-executor episode，并保留 external completion 与 OS acceptance 的分离。
+
+## Step 10 — COMPLETE
+
+### Cross-Executor Driver Pilot
+
+在一次 disposable temporary workspace episode 中，Ignition 读取只读 fixture 的
+capability/effect 要求并先按 Step 09 的 public probe 投影选择 `external.hermes`。
+Step 09 已经明确 Hermes/Codex 为 bounded timeout、OpenClaw 为 unsafe-surface skip，
+因此本步没有重复任何 vendor live invocation；路由把不可用的外部候选 failover 到
+`reference.executor`，审批交集为 `APPROVED`，failover decision 为
+`AUTO_FAILOVER_ELIGIBLE`。
+
+Reference Executor 只返回 `COMPLETED_UNVALIDATED` 的局部读取观察。Ignition-owned
+validator 独立复算 manifest hash 与 Markdown link，前后两次都发现相同的 2 个
+deterministic issues；随后以已验证 receipt 构造 handoff bundle，另一个 bounded
+Reference recovery instance 重新观察 workspace 并以 `ACCEPTED` 接班。最终只有 OS
+validator 生成的 `COMPLETED_VALIDATED` receipts 进入 convergence；canonical state
+仍在 Ignition，memory sink 只吸收 7 条 bounded public operational projections。
+
+对抗性分支让 `external.codex` 声称 issue count 为 0，但 OS 实际观察为 2。validator
+给出 `REJECTED_FAILED_VALIDATION`，receipt 以 `UNVERIFIED / REQUIRES_RECONCILIATION`
+保存，绝不升级为 OS acceptance。机器证据在
+[`cross-executor-driver-pilot-r1.json`](../../data/operations/iterations/123/cross-executor-driver-pilot-r1.json)，
+可重放实现与 schema 分别为 `tools/run_cross_executor_driver_pilot.py` 与
+`schemas/operations/cross-executor-driver-pilot-r1.schema.json`。
+
+本步没有使用正式仓库作为 live target，没有安装/升级/修改 external auth 或配置，
+没有读取或保留 prompt、token、private session 或 provider telemetry。claim ceiling
+仍是当前机器上的 bounded routing/failover/handoff/OS-validation evidence，不是
+live provider success、Agent 普遍能力、生产可靠性、Owner acceptance 或 epistemic
+acceptance。
+
+正式 `main` 仍为 `d60ec8687fb1cc6b972e831a8f0dcd348ba0e83e`。
+
+下一步：冻结最终代码与 projections，执行 Current-State、compact-map、Federation、
+Reference freeze、legacy/core 与 full unittest regression，并逐项分类 residual。
