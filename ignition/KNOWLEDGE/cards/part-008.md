@@ -4,6 +4,46 @@
 
 [返回资产卡总索引](../ASSET-CARDS.md)
 
+<a id="asset-hr-e5c82087cc19191e"></a>
+## 121Q14 Baseline And Latent Map Audit
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-E5C82087CC19191E` · [reports/atlas/121Q14-baseline-latent-map-audit.md](../../reports/atlas/121Q14-baseline-latent-map-audit.md)
+- **为什么产生：** 此来源记录了什么：121Q14 Baseline And Latent Map Audit？
+- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **当前结果：** 121Q14 starts from 121Q13 Draft PR 48 head 5297fe6c4c3aa36519b2e0a4d751be43dee09441.
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `reports/atlas/121Q14-baseline-latent-map-audit.md`, `121Q14-BASELINE-LATENT-MAP-AUDIT`
+- **演化历史：** 2026-07-15: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `SYSTEMS`, `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `121Q14 Baseline And Latent Map Audit`, `121Q14-baseline-latent-map-audit`
+
+<a id="asset-hr-e628768805f5eb1d"></a>
+## Counterexample replay audit
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-E628768805F5EB1D` · [reports/foundation-architecture/counterexample-replay-audit-20260712.md](../../reports/foundation-architecture/counterexample-replay-audit-20260712.md)
+- **为什么产生：** 此来源记录了什么：Counterexample replay audit？
+- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **当前结果：** No 075 keyword hit satisfied the replay contract. Two new 076 benchmark counterexamples are concrete and replayable; neither is presented as a legacy counterexample.
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `reports/foundation-architecture/counterexample-replay-audit-20260712.md`, `REPOSITORY_HISTORY_SOURCE`
+- **演化历史：** 2026-07-12: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `Counterexample replay audit`, `counterexample-replay-audit-20260712`
+
 <a id="asset-hr-e7a557e011cab937"></a>
 ## 第57期故事样稿｜当一个名字变成接口
 

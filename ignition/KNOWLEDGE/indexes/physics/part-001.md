@@ -2216,7 +2216,7 @@
   - 依赖：—；被引用：—
 - [现有知识治理系统被登记为第一个 `Knowledge Domain Pack`，REOS vNext LIGHT 与之元写作法分别作为有界 research/writing Pack 引用；R0 没有全仓物理迁移。机器边界以 \[`agent](../../../docs/project-current-state.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-c03291da4bc79894 / 现有知识治理系统被登记为第一个 `Knowledge Domain Pack`，REOS vNext LIGHT 与之元写作法分别作为有界 research/writing Pack 引用；R0 没有全仓物理迁移。机器边界以 \[`agent
+  - 可搜索名称：NFC-c8f6526bab29b82c / 现有知识治理系统被登记为第一个 `Knowledge Domain Pack`，REOS vNext LIGHT 与之元写作法分别作为有界 research/writing Pack 引用；R0 没有全仓物理迁移。机器边界以 \[`agent
   - 来源：`docs/project-current-state.md`
   - 依赖：—；被引用：—
 - [真实离线维护 pilot，仍不做全仓物理大搬家。唯一可点击总架构图继续由 registry、](../../../docs/architecture/agentization-boundary-r0.md)

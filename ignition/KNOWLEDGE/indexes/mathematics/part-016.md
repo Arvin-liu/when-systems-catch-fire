@@ -4,6 +4,101 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [数学表达 / Expression: `F_D535(h) := (β,σ,ε) where β=biological_death, σ=social_death, ε=existential_death, ¬β⇒¬σ⇒¬ε`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-fcd99ceca546ddc8 / 数学表达 / Expression: `F_D535(h) := (β,σ,ε) where β=biological_death, σ=social_death, ε=existential_death, ¬β⇒¬σ⇒¬ε`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [数学表达 / Expression: `F_evidence_guard=SourceQuality × Replicability × ExternalValidation × DomainRisk`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-525c90025f7fe7e4 / 数学表达 / Expression: `F_evidence_guard=SourceQuality × Replicability × ExternalValidation × DomainRisk`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [数学表达 / Expression: `F_intelligence_boundary := ∫(mathematical_constraint · godel_incompleteness · system_limitation) / b](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-c6579dff769e6ec0 / 数学表达 / Expression: `F_intelligence_boundary := ∫(mathematical_constraint · godel_incompleteness · system_limitation) / b
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [数学表达 / Expression: `F_iso_map(A,B)=I_iso(A,B) × L_meta × EvidenceRegime(A,B)`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-cf14939358653723 / 数学表达 / Expression: `F_iso_map(A,B)=I_iso(A,B) × L_meta × EvidenceRegime(A,B)`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [数学表达 / Expression: `F_plant_consciousness := ∫(subjective_experience × self_awareness × meta_cognition) / neural_complex](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-57ba4d9e9476cf64 / 数学表达 / Expression: `F_plant_consciousness := ∫(subjective_experience × self_awareness × meta_cognition) / neural_complex
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [数学表达 / Expression: `F_plant_ethics := ∫(moral_status × intrinsic_value × ethical_consideration) / consciousness_threshol](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-e86f31f1e298361f / 数学表达 / Expression: `F_plant_ethics := ∫(moral_status × intrinsic_value × ethical_consideration) / consciousness_threshol
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [数学表达 / Expression: `F_plant_godel := ∫(axiom_system × provable_propositions × unprovable_propositions) / incompleteness_](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-12421a3b0bd78ccb / 数学表达 / Expression: `F_plant_godel := ∫(axiom_system × provable_propositions × unprovable_propositions) / incompleteness_
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [数学表达 / Expression: `F_plant_swarm := ∫(local_interaction × indirect_communication × emergent_intelligence) / distributed](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-31fb9e5843f924a7 / 数学表达 / Expression: `F_plant_swarm := ∫(local_interaction × indirect_communication × emergent_intelligence) / distributed
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [数学表达 / Expression: `F_problem(d)=Mismatch(Model_d, Phenomenon_d, Evidence_d, Scale_d, Value_d)`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-d7ebcbd054a0301e / 数学表达 / Expression: `F_problem(d)=Mismatch(Model_d, Phenomenon_d, Evidence_d, Scale_d, Value_d)`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [数学表达 / Expression: `F_scale_bridge=MicroMechanism × MesoStructure × MacroPattern × CrossScaleFeedback`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-b068d6eb6c30d05c / 数学表达 / Expression: `F_scale_bridge=MicroMechanism × MesoStructure × MacroPattern × CrossScaleFeedback`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [数学表达 / Expression: `F_swarm_intelligence := Σ(agent_i × local_rule × global_emergence) / interaction_topology`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-3e2a8bd5602ac591 / 数学表达 / Expression: `F_swarm_intelligence := Σ(agent_i × local_rule × global_emergence) / interaction_topology`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [数学表达 / Expression: `F_{A3}(x) := R ∈ {真实,事实,心理,象征}`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-f2ed061f44322f88 / 数学表达 / Expression: `F_{A3}(x) := R ∈ {真实,事实,心理,象征}`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：A3；被引用：—
+- [数学表达 / Expression: `F_{A5}(x) := 八维度（经济/社会/身份/信息/时间/地理/生态/身体）连续值。n_lock = Σᵢ step(C_exit(i) θ_C(i))。`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-79f3a3ec2ad00c82 / 数学表达 / Expression: `F_{A5}(x) := 八维度（经济/社会/身份/信息/时间/地理/生态/身体）连续值。n_lock = Σᵢ step(C_exit(i) θ_C(i))。`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：A5；被引用：—
+- [数学表达 / Expression: `F_{D103}(x) := 覆盖度 = \|投影变量∩点火变量\|/\|点火变量\|。`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-07b3f8ea12f95c6f / 数学表达 / Expression: `F_{D103}(x) := 覆盖度 = \|投影变量∩点火变量\|/\|点火变量\|。`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D103；被引用：—
+- [数学表达 / Expression: `F_{D108}(x) := $$S_{unified}(domain) = k_{domain} \\cdot \\ln \\Omega_{effective}(domain)$$ - 物理域：$\\Ome](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-eb0bccc041d1bb90 / 数学表达 / Expression: `F_{D108}(x) := $$S_{unified}(domain) = k_{domain} \\cdot \\ln \\Omega_{effective}(domain)$$ - 物理域：$\\Ome
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D101, D108；被引用：—
+- [数学表达 / Expression: `F_{D109}(x) := 给定总资源R和初始状态ε，最优分配使所有因子终值相等：ε̄=(Σεᵢ+R)/n。贪心策略（先补最弱到次弱，再同时补到第三弱，...）是最优路径。脆弱度降低比=ε̄/min](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-0ff82990557b29bb / 数学表达 / Expression: `F_{D109}(x) := 给定总资源R和初始状态ε，最优分配使所有因子终值相等：ε̄=(Σεᵢ+R)/n。贪心策略（先补最弱到次弱，再同时补到第三弱，...）是最优路径。脆弱度降低比=ε̄/min
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D102, D109；被引用：—
+- [数学表达 / Expression: `F_{D110}(x) := $$P_{transition} = \\sigma\\left(\\prod_{i=1}^{n} f_i - \\theta\\right)$$ - $f_i$：第i个驱动因子（](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-ca3912b196089794 / 数学表达 / Expression: `F_{D110}(x) := $$P_{transition} = \\sigma\\left(\\prod_{i=1}^{n} f_i - \\theta\\right)$$ - $f_i$：第i个驱动因子（
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D110；被引用：—
+- [数学表达 / Expression: `F_{D111}(x) := $$\\text{Noether}: G \\xrightarrow{\\text{对称}} \\text{Conservation} \\quad \\Longleftrighta](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-4b5b830fdadfc1e2 / 数学表达 / Expression: `F_{D111}(x) := $$\\text{Noether}: G \\xrightarrow{\\text{对称}} \\text{Conservation} \\quad \\Longleftrighta
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D111；被引用：—
+- [数学表达 / Expression: `F_{D115}(x) := r_cross = 0 ⟹ ε_aware = 0（通过D84三条安装路径全部依赖P_track>1） **证明：** 1. D84三条安装路径（预测编码回路、分轨并行、](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-c4909a5913552b7c / 数学表达 / Expression: `F_{D115}(x) := r_cross = 0 ⟹ ε_aware = 0（通过D84三条安装路径全部依赖P_track>1） **证明：** 1. D84三条安装路径（预测编码回路、分轨并行、
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D115, D84；被引用：—
 - [数学表达 / Expression: `F_{D116}(x) := Clos_bootstrap(V, R, n) = Clos_standard(V, R_n) ∪ ⋃_{k=0}^{n} f_reassemble(V_k, R_k)](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-a55ebe7dbb3cbd44 / 数学表达 / Expression: `F_{D116}(x) := Clos_bootstrap(V, R, n) = Clos_standard(V, R_n) ∪ ⋃_{k=0}^{n} f_reassemble(V_k, R_k)
@@ -1024,9 +1119,9 @@
   - 可搜索名称：NFC-0f567eda478c18a0 / 方括号步骤按对象可选。来源、行动、公开投影、历史记录和执行 receipt 使用不同 automata。合法 shortcut 包括：来源不产生 claim；semantic claim 不形式化；proof 保持 E0；negative/
   - 来源：`docs/architecture/epistemic-governance-kernel-and-federated-planes.md`
   - 依赖：—；被引用：—
-- [方法 `1.3.0` 与系统图 `0.4.0`、`0.5.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0`、`0.2.0`、`0.3.0` 为更早 Historical。当前方法要求读取 `data/opera](../../../AI-START-HERE.md)
+- [方法 `1.3.0` 与系统图 `0.5.0`、`0.6.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0`、`0.2.0`、`0.3.0`、`0.4.0` 为更早 Historical。当前方法要求读取 `da](../../../AI-START-HERE.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-98a4b013afdba369 / 方法 `1.3.0` 与系统图 `0.4.0`、`0.5.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0`、`0.2.0`、`0.3.0` 为更早 Historical。当前方法要求读取 `data/opera
+  - 可搜索名称：NFC-d0a9c7d634db962f / 方法 `1.3.0` 与系统图 `0.5.0`、`0.6.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0`、`0.2.0`、`0.3.0`、`0.4.0` 为更早 Historical。当前方法要求读取 `da
   - 来源：`AI-START-HERE.md`
   - 依赖：—；被引用：—
 - [方法转换收益函数：解释了问题转换的价值\\n\\n**跨域验证：**\\n- 数学领域：孪生素数猜想、庞加莱猜想、黎曼猜想、P/NP问题\\n- 密码学领域：恩尼格玛机破解\\n- 技术革命：蒸汽机→电力→信息技术\\n- 个人成长：框架发现过程\\n-](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
@@ -1411,7 +1506,7 @@
   - 依赖：—；被引用：—
 - [更新时间：2026-08-16。当前状态包含任务 98—103 的断言/函数治理、证据程序与人类可读知识表面，任务 104 的编辑叙事层与语料关系分析，任务 105 的 Function OS v0.2 有界能力基准，任务 110 的完成状](../../../docs/project-current-state.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-0ba94828c2965ccf / 更新时间：2026-08-16。当前状态包含任务 98—103 的断言/函数治理、证据程序与人类可读知识表面，任务 104 的编辑叙事层与语料关系分析，任务 105 的 Function OS v0.2 有界能力基准，任务 110 的完成状
+  - 可搜索名称：NFC-76ea99d7cfd84769 / 更新时间：2026-08-16。当前状态包含任务 98—103 的断言/函数治理、证据程序与人类可读知识表面，任务 104 的编辑叙事层与语料关系分析，任务 105 的 Function OS v0.2 有界能力基准，任务 110 的完成状
   - 来源：`docs/project-current-state.md`
   - 依赖：—；被引用：—
 - [最优化问题×跨域统一定理验证](../../../data/foundation/evidence/evidence.jsonl)
@@ -2402,99 +2497,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-1261DE538057B2F6 / 潜意识内容S通过觉知阈值θ_a进入意识域C：C(x)=1\[φ(S(x))>θ_a\]，其中φ为映射函数，觉知过程是可训练的（dφ/dT>0） / IMPLICIT-1261DE538057B2F6
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [潜意识内容S通过觉知阈值θ_a进入意识域C：C(x)=1\[φ(S(x))>θ_a\]，其中φ为映射函数，觉知过程是可训练的（dφ/dT>0）](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-db093a081c4fd76d / 潜意识内容S通过觉知阈值θ_a进入意识域C：C(x)=1\[φ(S(x))>θ_a\]，其中φ为映射函数，觉知过程是可训练的（dφ/dT>0）
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [潜意识内容S通过觉知阈值θ_a进入意识域C：C(x)=1\[φ(S(x))>θ_a\]，其中φ为映射函数，觉知过程是可训练的（dφ/dT>0） **扩展注释 / Extended Annotation**](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-4ca83f9cf38f2cae / 潜意识内容S通过觉知阈值θ_a进入意识域C：C(x)=1\[φ(S(x))>θ_a\]，其中φ为映射函数，觉知过程是可训练的（dφ/dT>0） **扩展注释 / Extended Annotation**
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：—；被引用：—
-- [点火不是万能证明器；只有有可检查工件的具体命题才可获得相应 proof 状态。](../../../docs/USAGE.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-6460b499ca3d4462 / 点火不是万能证明器；只有有可检查工件的具体命题才可获得相应 proof 状态。
-  - 来源：`docs/USAGE.md`
-  - 依赖：—；被引用：—
-- [点火以 L0 来源与证据、L1 受控命题、L2 形式对象、L3 逻辑论证、L4 数学模型与证明、L5 验证与有效性、L6 解释/应用/出版组织仓库。L6 只能引用 L0—L5，不能反向制造真值。](../../../SUMMARY.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-88b7385f8ba2981c / 点火以 L0 来源与证据、L1 受控命题、L2 形式对象、L3 逻辑论证、L4 数学模型与证明、L5 验证与有效性、L6 解释/应用/出版组织仓库。L6 只能引用 L0—L5，不能反向制造真值。
-  - 来源：`SUMMARY.md`
-  - 依赖：—；被引用：—
-- [点火允许知识增长，但禁止“断言地位”因为项目规模、叙事力量、工程成熟度、重复引用、跨域对应、模型美感、写作完成度或 Agent 共识而自动膨胀。`claim` 的 scope、evidence、proof、logic、M/E、provena](../../../docs/architecture/epistemic-governance-kernel-and-federated-planes.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-6e3a48806186e06b / 点火允许知识增长，但禁止“断言地位”因为项目规模、叙事力量、工程成熟度、重复引用、跨域对应、模型美感、写作完成度或 Agent 共识而自动膨胀。`claim` 的 scope、evidence、proof、logic、M/E、provena
-  - 来源：`docs/architecture/epistemic-governance-kernel-and-federated-planes.md`
-  - 依赖：—；被引用：—
-- [点火充要条件](../../../analysis/corpus-relation/cluster_source_briefs/C000.md)
-  - 类型/状态：`FUNCTION_ASSET` · `DOWNGRADE_TO_CONJECTURE`
-  - 可搜索名称：T1 / 点火充要条件 / T1
-  - 来源：`analysis/corpus-relation/cluster_source_briefs/C000.md`
-  - 依赖：A2, A3；被引用：NFC-1848bc7b7e9cb24d, NFC-1a474a499ae646c9, NFC-2dc62de181c811cf, NFC-3471d032e8287ce3
-- [点火充要条件 / ignition necessary and sufficient condition](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-ef7b76842aa90d29 / 点火充要条件 / ignition necessary and sufficient condition
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：—；被引用：—
-- [点火可以和真实数据一起用，这样函数不是只停留在语言上，而是可以被验证或推翻。](../../../docs/data_integration.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-45ad34c8ce993a5a / 点火可以和真实数据一起用，这样函数不是只停留在语言上，而是可以被验证或推翻。
-  - 来源：`docs/data_integration.md`
-  - 依赖：—；被引用：—
-- [点火增量输出包括 claim、argument、formal object、mechanism、map、gap、residue、Q12—Q14 输出、MCF／PSD／ARN／Atlas 投影、分析报告与完成 provenance captu](../../../reports/operations/121Q31-interactive-system-map-and-writing-source-pool-audit.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-4bc39c46539712c2 / 点火增量输出包括 claim、argument、formal object、mechanism、map、gap、residue、Q12—Q14 输出、MCF／PSD／ARN／Atlas 投影、分析报告与完成 provenance captu
-  - 来源：`reports/operations/121Q31-interactive-system-map-and-writing-source-pool-audit.md`
-  - 依赖：—；被引用：—
-- [点火对冲函数](../../../data/foundation/adjudications/079-method-audit.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：D37 / 点火对冲函数 / D37
-  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
-  - 依赖：A7, D1, D90；被引用：NFC-501f62725223d3ad, NFC-b6a32a782ddcf3a3
-- [点火对冲，意识、退出权信号、退化免疫、抵抗的平衡。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-a85502dad9c432b1 / 点火对冲，意识、退出权信号、退化免疫、抵抗的平衡。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [点火对冲，意识、退出权信号、退化免疫、抵抗的平衡。 **扩展注释 / Extended Annotation**](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-856bff04b40c153e / 点火对冲，意识、退出权信号、退化免疫、抵抗的平衡。 **扩展注释 / Extended Annotation**
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：—；被引用：—
-- [点火把一次变更拆成可审计的传播、执行与阶段记录三步，不提升生命周期、不制造新的真值层：](../../../docs/USAGE.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-9d8f7f3b0d445bfb / 点火把一次变更拆成可审计的传播、执行与阶段记录三步，不提升生命周期、不制造新的真值层：
-  - 来源：`docs/USAGE.md`
-  - 依赖：—；被引用：—
-- [点火是一套面向跨领域材料的、证据可追溯、对象类型明确、推理过程可检查、结论等级可审计的形式化机制发现与建模系统。它不是现成的统一数学理论、物理理论、万能证明器，也不是纯文学或纯哲学知识库。](../../../docs/PROJECT-ARCHITECTURE.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-34d32c1dddfb21a8 / 点火是一套面向跨领域材料的、证据可追溯、对象类型明确、推理过程可检查、结论等级可审计的形式化机制发现与建模系统。它不是现成的统一数学理论、物理理论、万能证明器，也不是纯文学或纯哲学知识库。
-  - 来源：`docs/PROJECT-ARCHITECTURE.md`
-  - 依赖：—；被引用：—
-- [点火框架不能替代公理系统内证明；](../../../docs/discipline_kernel_pilot.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-a0ee0c7c6d4237ff / 点火框架不能替代公理系统内证明；
-  - 来源：`docs/discipline_kernel_pilot.md`
-  - 依赖：—；被引用：—
-- [点火框架中的结论分为不同层级。为了避免把结构性推论误读为外部学科证明，所有重要结论应尽量标注断言等级。](../../../docs/claim_levels.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-078d2c3db9140985 / 点火框架中的结论分为不同层级。为了避免把结构性推论误读为外部学科证明，所有重要结论应尽量标注断言等级。
-  - 来源：`docs/claim_levels.md`
-  - 依赖：—；被引用：—
-- [点火框架可分析该问题的结构张力，但不能给出复杂性理论证明](../../../data/foundation/arguments/arguments.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-6a0e3a134bcc9854 / 点火框架可分析该问题的结构张力，但不能给出复杂性理论证明
-  - 来源：`data/foundation/arguments/arguments.jsonl`
-  - 依赖：—；被引用：—
-- [点火框架可对黎曼猜想进行结构性重写，但不能替代数学证明](../../../data/foundation/arguments/arguments.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-35efb664f971e015 / 点火框架可对黎曼猜想进行结构性重写，但不能替代数学证明
-  - 来源：`data/foundation/arguments/arguments.jsonl`
-  - 依赖：—；被引用：—
-- [点火框架在这里提供的是结构性解释路径，而不是学科内证明。](../../../docs/publication_risk_checklist.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-5743609f748b2c7a / 点火框架在这里提供的是结构性解释路径，而不是学科内证明。
-  - 来源：`docs/publication_risk_checklist.md`
   - 依赖：—；被引用：—

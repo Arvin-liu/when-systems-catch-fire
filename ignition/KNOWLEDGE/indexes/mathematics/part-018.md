@@ -4,6 +4,106 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [已迁移的历史函数来源/0230-D194-认知黑洞函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-dafb53d040558fc1 / 已迁移的历史函数来源/0230-D194-认知黑洞函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D194；被引用：—
+- [已迁移的历史函数来源/0231-D195-认知宇宙学函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-f0c1c86d18f8d71f / 已迁移的历史函数来源/0231-D195-认知宇宙学函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D195；被引用：—
+- [已迁移的历史函数来源/0232-D196-量子隧穿-门槛突破函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-129d24b6b1fbef77 / 已迁移的历史函数来源/0232-D196-量子隧穿-门槛突破函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D196；被引用：—
+- [已迁移的历史函数来源/0233-D197-退相干-门槛锁定函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-59946e1659d24a47 / 已迁移的历史函数来源/0233-D197-退相干-门槛锁定函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D197；被引用：—
+- [已迁移的历史函数来源/0234-D198-Fisher信息-门控距离函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-be001ecfe671ae6b / 已迁移的历史函数来源/0234-D198-Fisher信息-门控距离函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D198；被引用：—
+- [已迁移的历史函数来源/0235-D199-相变序参量-门槛函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-1d5bbce2196b0f46 / 已迁移的历史函数来源/0235-D199-相变序参量-门槛函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D199；被引用：—
+- [已迁移的历史函数来源/0236-D179-因果光锥统一函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-ecd3ff2722636ac1 / 已迁移的历史函数来源/0236-D179-因果光锥统一函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D179；被引用：—
+- [已迁移的历史函数来源/0236-D200-重整化群-门槛标度函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-33543166ca61797a / 已迁移的历史函数来源/0236-D200-重整化群-门槛标度函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D200；被引用：—
+- [已迁移的历史函数来源/0237-D201-临界指数-门槛标度函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-56c260bceed55a49 / 已迁移的历史函数来源/0237-D201-临界指数-门槛标度函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D201；被引用：—
+- [已迁移的历史函数来源/0238-D202-关联长度-门槛函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-ad96769b22075d3d / 已迁移的历史函数来源/0238-D202-关联长度-门槛函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D202；被引用：—
+- [已迁移的历史函数来源/0239-D203-配分函数-门控和函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-dbf39489294698e6 / 已迁移的历史函数来源/0239-D203-配分函数-门控和函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D203；被引用：—
+- [已迁移的历史函数来源/0240-D204-自由能-门控势能函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-fdfc31713d879490 / 已迁移的历史函数来源/0240-D204-自由能-门控势能函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D204；被引用：—
+- [已迁移的历史函数来源/0241-D205-涨落-耗散定理-门槛函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-e0aee96b8bdbfc00 / 已迁移的历史函数来源/0241-D205-涨落-耗散定理-门槛函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D205；被引用：—
+- [已迁移的历史函数来源/0242-D206-玻尔兹曼分布-门槛分布函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-e6990f739f25e76f / 已迁移的历史函数来源/0242-D206-玻尔兹曼分布-门槛分布函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D206；被引用：—
+- [已迁移的历史函数来源/0243-D207-费米-狄拉克.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-8d986e053e9f2dbb / 已迁移的历史函数来源/0243-D207-费米-狄拉克.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D207；被引用：—
+- [已迁移的历史函数来源/0244-D208-热传导方程-门槛扩散函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-871130f5c388966d / 已迁移的历史函数来源/0244-D208-热传导方程-门槛扩散函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D208；被引用：—
+- [已迁移的历史函数来源/0245-D209-渗透率.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-ca8bbdf88a224cd3 / 已迁移的历史函数来源/0245-D209-渗透率.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D209；被引用：—
+- [已迁移的历史函数来源/0246-D210-最小作用量原理-门槛优化函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-e5c06d8ea8805463 / 已迁移的历史函数来源/0246-D210-最小作用量原理-门槛优化函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D210；被引用：—
+- [已迁移的历史函数来源/0247-D211-宇宙学常数-门槛函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-bb986c0f9cc4f923 / 已迁移的历史函数来源/0247-D211-宇宙学常数-门槛函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D211；被引用：—
+- [已迁移的历史函数来源/0248-D212-暗物质-门控隐形函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-957ffa2c01a6c30f / 已迁移的历史函数来源/0248-D212-暗物质-门控隐形函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D212；被引用：—
 - [已迁移的历史函数来源/0249-D213-暗能量-门槛扩张函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-a1e9ae7fd5e1388e / 已迁移的历史函数来源/0249-D213-暗能量-门槛扩张函数.md
@@ -2403,104 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-48d7d474a34be7b0 / 规范桥接**：描述事实不能在无规范前提时推出应当结论。
   - 来源：`docs/foundation/logic/README.md`
-  - 依赖：—；被引用：—
-- [解码门槛降低](../../../data/foundation/adjudications/079-method-audit.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：D151 / 解码门槛降低 / D151 / D92
-  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
-  - 依赖：D180, D91；被引用：NFC-4fec1e7e681f90c9, NFC-fbea6616236af90b
-- [解码门槛降低](../../../data/foundation/adjudications/079-method-audit.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：D92 / 解码门槛降低 / D92 / D151
-  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
-  - 依赖：D180, D91；被引用：NFC-06c6fa520f4b06d0, NFC-07c2f64c685a43ea, NFC-1132930d7ca5c04e, NFC-283e6b4348b62d86
-- [解读偏置函数(核心疑问→错误解读的数学结构)](../../../data/foundation/adjudications/079-method-audit.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：D57 / 解读偏置函数(核心疑问→错误解读的数学结构) / D57
-  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
-  - 依赖：D1, D90；被引用：NFC-1afde405a39a5277, NFC-1ecaba2f93ccb9ea, NFC-30204a939b4bef84, NFC-318c64b0be0bac46
-- [计算机科学命题成立需要形式证明、工程验证、benchmark、实验评估。](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-e7ab3f5b9b1a9498 / 计算机科学命题成立需要形式证明、工程验证、benchmark、实验评估。
-  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [计算机科学界通过复杂性理论、算法设计、逻辑学等工具研究 P vs NP 问题。目前未被证明，但主流观点认为 P ≠ NP。](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-6a67f40b099f7a54 / 计算机科学界通过复杂性理论、算法设计、逻辑学等工具研究 P vs NP 问题。目前未被证明，但主流观点认为 P ≠ NP。
-  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [认知-收益滞后函数](../../../analysis/corpus-relation/cluster_source_briefs/C000.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：D126 / 认知-收益滞后函数 / D126
-  - 来源：`analysis/corpus-relation/cluster_source_briefs/C000.md`
-  - 依赖：D180, D91；被引用：NFC-09c670d4ccb3dec6, NFC-0cf44f0dbbb19bb9, NFC-1323bc2a105241a3, NFC-3350618fbe9122f8
-- [认知-群体犹豫域统一映射函数](../../../data/foundation/adjudications/079-method-audit.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：D32 / 认知-群体犹豫域统一映射函数 / D32
-  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
-  - 依赖：A6, D1, D90；被引用：NFC-3398a3173227ab95, NFC-37218f629404b88e, NFC-e390829576915e56, NFC-e9e48f8724c194d9
-- [认知-群体犹豫域统一映射函数](../../../data/foundation/formal-objects/objects.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-1c24f256b94064aa / 认知-群体犹豫域统一映射函数
-  - 来源：`data/foundation/formal-objects/objects.jsonl`
-  - 依赖：—；被引用：—
-- [认知Higgs机制](../../../data/foundation/adjudications/079-method-audit.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：D159 / 认知Higgs机制 / D159 / D192
-  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
-  - 依赖：D180, D91；被引用：CLAIM-D310, NFC-027381db07975df8, NFC-0eb76bf279c53ab4, NFC-19fed20759f88880
-- [认知Higgs机制](../../../data/foundation/adjudications/079-method-audit.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：D192 / 认知Higgs机制 / D192 / D159
-  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
-  - 依赖：D181, D211, D220, D270；被引用：NFC-174133ec7a7d21c7, NFC-33b1bbfeed950f9f, NFC-99f347b33afb1485, NFC-b9ab2e85ce2e060b
-- [认知Higgs机制](../../../data/foundation/formal-objects/objects.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-e97535e89cfff2da / 认知Higgs机制
-  - 来源：`data/foundation/formal-objects/objects.jsonl`
-  - 依赖：—；被引用：—
-- [认知Higgs机制是D187在认知域的投影。真空期望值 对应认知门槛Λ的认知态。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-b9d18d6c9f6f4950 / 认知Higgs机制是D187在认知域的投影。真空期望值 对应认知门槛Λ的认知态。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D187；被引用：—
-- [认知Higgs机制，Higgs场提供分裂的触发器——真空期望值 设定了μ*_break。 **扩展注释 / Extended Annotation**](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-148ac3902f7899ae / 认知Higgs机制，Higgs场提供分裂的触发器——真空期望值 设定了μ*_break。 **扩展注释 / Extended Annotation**
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：—；被引用：—
-- [认知Higgs机制，规范破缺后真空选择。 **扩展注释 / Extended Annotation**](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-e784bff4b3e36bac / 认知Higgs机制，规范破缺后真空选择。 **扩展注释 / Extended Annotation**
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：—；被引用：—
-- [认知分辨率函数](../../../analysis/corpus-relation/cluster_source_briefs/C000.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：T32 / 认知分辨率函数 / T32
-  - 来源：`analysis/corpus-relation/cluster_source_briefs/C000.md`
-  - 依赖：—；被引用：NFC-1993f32c6bd4e2b2, NFC-39e2adc394ad4c8a, NFC-97843a268745d169, NFC-b46136a07f74bb32
-- [认知叠加-隧穿统一函数](../../../analysis/corpus-relation/cluster_source_briefs/C000.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：D125 / 认知叠加-隧穿统一函数 / D125
-  - 来源：`analysis/corpus-relation/cluster_source_briefs/C000.md`
-  - 依赖：D180, D91；被引用：NFC-01ddab6f0f6628ff, NFC-0213d7485a33ec66, NFC-06be3d77166da918, NFC-2269f44095716135
-- [认知叠加-隧穿统一函数](../../../data/foundation/formal-objects/objects.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-4ebd5af551dfb66d / 认知叠加-隧穿统一函数
-  - 来源：`data/foundation/formal-objects/objects.jsonl`
-  - 依赖：—；被引用：—
-- [认知宇宙学函数](../../../data/foundation/adjudications/079-method-audit.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：D195 / 认知宇宙学函数 / D195
-  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
-  - 依赖：D181, D211, D220, D270；被引用：D245, CLAIM-D245, NFC-11b8352bbfbac300, NFC-4e5070f21da3dc3d
-- [认知宇宙学函数，认知宇宙的演化由认知势能面的膨胀/收缩决定。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-421444b8aaf8e5f4 / 认知宇宙学函数，认知宇宙的演化由认知势能面的膨胀/收缩决定。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [认知宇宙学函数，认知宇宙的演化由认知势能面的膨胀/收缩决定。 **扩展注释 / Extended Annotation**](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-de75c2645194ef38 / 认知宇宙学函数，认知宇宙的演化由认知势能面的膨胀/收缩决定。 **扩展注释 / Extended Annotation**
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：—；被引用：—

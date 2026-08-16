@@ -4,6 +4,61 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [感染力、读者共鸣、模板完成或“像作者”不能提高事实、因果、同构或价值 claim。该方法不是普遍最优审美定律，也不是文学质量验证器。](../../../docs/publication/zhiyuan-writing-method.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-60bb689c9d30fe23 / 感染力、读者共鸣、模板完成或“像作者”不能提高事实、因果、同构或价值 claim。该方法不是普遍最优审美定律，也不是文学质量验证器。
+  - 来源：`docs/publication/zhiyuan-writing-method.md`
+  - 依赖：—；被引用：—
+- [战争发生的具体因果判定：**pending**（需要史料考证和解释共同体共识）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-d2545886bee556f2 / 战争发生的具体因果判定：**pending**（需要史料考证和解释共同体共识）
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [所以她第一次真正“不听话”，不是因为想反叛，而是因为她终于要替自己决定一件事。她坚持结婚，不回老家做那份已经替她准备好的工作。那一刻并不壮烈。它甚至不像很多英雄叙事那样响亮。它更像一个人第一次承认: 原来我可以不顺着那条已经被命名为“为你好](../../../outputs/stories/20260712-disobedience-subjectivity/story-longform.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-f613affde98284fd / 所以她第一次真正“不听话”，不是因为想反叛，而是因为她终于要替自己决定一件事。她坚持结婚，不回老家做那份已经替她准备好的工作。那一刻并不壮烈。它甚至不像很多英雄叙事那样响亮。它更像一个人第一次承认: 原来我可以不顺着那条已经被命名为“为你好
+  - 来源：`outputs/stories/20260712-disobedience-subjectivity/story-longform.md`
+  - 依赖：—；被引用：—
+- [所有 353 条记录的 primary_reasoning 均以 `P{1,4,5,7,8} check:` 开头，由固定代码分支决定。](../../../reports/foundation-architecture/085-084-truth-status-correction.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-f915cf2359bbb60d / 所有 353 条记录的 primary_reasoning 均以 `P{1,4,5,7,8} check:` 开头，由固定代码分支决定。
+  - 来源：`reports/foundation-architecture/085-084-truth-status-correction.md`
+  - 依赖：—；被引用：—
+- [所有事实、因果和强术语仍受 L0-L5 约束。抽象保留来源限制、不可映射差异、现实成本和受损／沉默主体。](../../../docs/publication/zhiyuan-writing-method.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-c829367494c98501 / 所有事实、因果和强术语仍受 L0-L5 约束。抽象保留来源限制、不可映射差异、现实成本和受损／沉默主体。
+  - 来源：`docs/publication/zhiyuan-writing-method.md`
+  - 依赖：—；被引用：—
+- [扩展注释 · 赛课机制下的教师生存困境](../../ASSET-CARDS.md#asset-hr-70edc5860a2e57c8)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：扩展注释 · 赛课机制下的教师生存困境 / expanded-notes
+  - 来源：`outputs/collisions/20260708-teacher-competition/expanded-notes.md`
+  - 依赖：—；被引用：—
+- [扩展注释 · 赛课机制下的教师生存困境](../../../outputs/collisions/20260708-teacher-competition/expanded-notes.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-bff142b0f75519a0 / 扩展注释 · 赛课机制下的教师生存困境
+  - 来源：`outputs/collisions/20260708-teacher-competition/expanded-notes.md`
+  - 依赖：—；被引用：—
+- [扩展注释核心：指标排名隐性分层不是独立于 D597 的新因果原语，而是 D597 在跨域材料中的下游表现（量化指标替代真实价值 → 排名成为显性价值入口 → 不可量化贡献被压低 → 主体被隐性分层）。](../../../outputs/audit/cross-domain-candidate-function-small-batch-backfill-audit-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-0859b282ede536b1 / 扩展注释核心：指标排名隐性分层不是独立于 D597 的新因果原语，而是 D597 在跨域材料中的下游表现（量化指标替代真实价值 → 排名成为显性价值入口 → 不可量化贡献被压低 → 主体被隐性分层）。
+  - 来源：`outputs/audit/cross-domain-candidate-function-small-batch-backfill-audit-20260708.md`
+  - 依赖：D597；被引用：—
+- [技术决定论与点火框架元协议组合的映射。技术作为元协议实例，重塑社会结构，验证了技术与社会演化的同构性。](../../../data/foundation/arguments/arguments.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：CLAIM-BC-20260709-015 / 技术决定论与点火框架元协议组合的映射。技术作为元协议实例，重塑社会结构，验证了技术与社会演化的同构性。
+  - 来源：`data/foundation/arguments/arguments.jsonl`
+  - 依赖：—；被引用：—
+- [把“局部机制”保留为候选而非定律。](../../../outputs/getbrain/failure-typology-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-d78f51de146aa3ba / 把“局部机制”保留为候选而非定律。
+  - 来源：`outputs/getbrain/failure-typology-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [把不同时间、空间、层级或组织尺度上的机制直接类比。](../../../data/failure_typology.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-b1a336243ac174da / 把不同时间、空间、层级或组织尺度上的机制直接类比。
+  - 来源：`data/failure_typology.csv`
+  - 依赖：—；被引用：—
 - [把历史叙事误写成因果定律](../../../data/failure_typology.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-15584316309876a8 / 把历史叙事误写成因果定律
@@ -584,9 +639,9 @@
   - 可搜索名称：NFC-8160454521535f71 / 新条目**逻辑信息完整**（定义/机制/边界/来源/pending 齐），但**结构表达与旧条目不统一**：
   - 来源：`outputs/audit/two-tables-entry-format-audit-20260709.md`
   - 依赖：—；被引用：—
-- [方法 `1.3.0` 与系统图 `0.4.0`、`0.5.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0`、`0.2.0`、`0.3.0` 为更早 Historical。当前方法要求从构件 registry、类](../../ASSET-CARDS.md#asset-nfc-242e5f74ef834a0b)
+- [方法 `1.3.0` 与系统图 `0.5.0`、`0.6.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0`、`0.2.0`、`0.3.0`、`0.4.0` 为更早 Historical。当前方法要求从构件 re](../../ASSET-CARDS.md#asset-nfc-2bfd9e0b5531b098)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-242e5f74ef834a0b / 方法 `1.3.0` 与系统图 `0.4.0`、`0.5.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0`、`0.2.0`、`0.3.0` 为更早 Historical。当前方法要求从构件 registry、类 / 方法 `1.3.0` 与系统图 `0.4.0`、`0.5.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0`、`0.2.0`、`0.3.0` 为更早 Historical。当前方法要求从构件 registry、类型化 topology 与 `data/operations/synchronization-surfaces.json` 计算全项目传播闭包。README、`HUMAN-READING.md`、`RESULTS/`、项目现状、人类 AI 指南、AI 冷启动、Agent 交接、机器入口和版本历史都是必须评估的项目表面。实现完成不能替代仓库同步完成；本地验证也不能声称任何未登记的实时外部状态已验证。
+  - 可搜索名称：NFC-2bfd9e0b5531b098 / 方法 `1.3.0` 与系统图 `0.5.0`、`0.6.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0`、`0.2.0`、`0.3.0`、`0.4.0` 为更早 Historical。当前方法要求从构件 re / 方法 `1.3.0` 与系统图 `0.5.0`、`0.6.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0`、`0.2.0`、`0.3.0`、`0.4.0` 为更早 Historical。当前方法要求从构件 registry、类型化 topology 与 `data/operations/synchronization-surfaces.json` 计算全项目传播闭包。README、`HUMAN-READING.md`、`RESULTS/`、项目现状、人类 AI 指南、AI 冷启动、Agent 交接、机器入口和版本历史都是必须评估的项目表面。实现完成不能替代仓库同步完成；本地验证也不能声称任何未登记的实时外部状态已验证。
   - 来源：`AI-HANDOFF.md`
   - 依赖：—；被引用：—
 - [无限性问题：点火框架处理有限系统内的演化规律\\n2.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
@@ -688,6 +743,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-76d49b77f1d4f4c7 / 未删除 pending 机制：是
   - 来源：`outputs/audit/project-body-version-upgrade-audit-20260709.md`
+  - 依赖：—；被引用：—
+- [未来执行器的声明式插槽；必须先满足统一 contract、最小权限、独立验证、可回执和隐私边界，不能以品牌或智能表现扩大协议。](../../../data/architecture/interactive-system-map.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-6fb45a84046101f2 / 未来执行器的声明式插槽；必须先满足统一 contract、最小权限、独立验证、可回执和隐私边界，不能以品牌或智能表现扩大协议。
+  - 来源：`data/architecture/interactive-system-map.json`
   - 依赖：—；被引用：—
 - [本收口将之元写作法 `0.4.0` 和系统图 `0.1.0` 更新为 Current。`0.3.0` 保留为历史已合并版本；Q29R 和第一条成果 registry 继续绑定真实生成版本 `0.3.0`。`external_input \|](../../../reports/operations/121Q31T-interactive-system-map-and-writing-pool-merge-current-closeout-audit.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
@@ -1004,6 +1064,11 @@
   - 可搜索名称：NFC-cdbcaf551ac87804 / 激活窗口：1114 起兵网络；1115 建国与主要战役；1116—1125 占领/投附/治理重构；1125—1127 宋金关系与北宋危机。扰动事件包括辽内部叛乱、重大胜利、城池易手、联盟变化；重构记录包括新增投附节点、指挥跨度扩大、合法性叙
   - 来源：`reports/publication/jin-rise-point-fire-analysis.md`
   - 依赖：—；被引用：—
+- [点火 OS 与可替换外部执行器之间的统一协议、权限、验证、handoff、receipt 与记忆吸收边界；不复制任何供应商 runtime。](../../../data/architecture/interactive-system-map.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-c17355e212a6bf96 / 点火 OS 与可替换外部执行器之间的统一协议、权限、验证、handoff、receipt 与记忆吸收边界；不复制任何供应商 runtime。
+  - 来源：`data/architecture/interactive-system-map.json`
+  - 依赖：—；被引用：—
 - [点火与之元写作法都从维护者之元反复出现的认知运动中生长：从材料进入，暴露当前定义不能容纳的残余，跨尺度或跨领域建立有边界的候选联系，保留差异与历史，再用行动、反例和反馈回照旧定义。点火把这类运动约束成来源、命题、形式对象、机制、行动、验证、](../../../docs/publication/zhiyuan-writing-method.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-f5bba7791cf2d28f / 点火与之元写作法都从维护者之元反复出现的认知运动中生长：从材料进入，暴露当前定义不能容纳的残余，跨尺度或跨领域建立有边界的候选联系，保留差异与历史，再用行动、反例和反馈回照旧定义。点火把这类运动约束成来源、命题、形式对象、机制、行动、验证、
@@ -1199,9 +1264,9 @@
   - 可搜索名称：NFC-d186d31663cc9741 / 版本事实：当前迭代方法为 `1.4.0 Continuous Stage Snapshot Publication`，当前系统图为 `0.6.0`；系统图 `0.5.0`、`0.4.0`、`0.3.0` 与更早版本均为 Historical
   - 来源：`docs/ai-assistant-usage-reference.md`
   - 依赖：—；被引用：—
-- [状态：`0.6.0 Current registry-derived navigation projection`；`0.5.0`、`0.4.0` 与更早版本为 Historical。](../../../docs/architecture/interactive-system-map.md)
+- [状态：`0.7.0 Current registry-derived navigation projection`；`0.6.0`、`0.5.0`、`0.4.0` 与更早版本为 Historical。](../../../docs/architecture/interactive-system-map.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-0ee1b3abaf9bc2bc / 状态：`0.6.0 Current registry-derived navigation projection`；`0.5.0`、`0.4.0` 与更早版本为 Historical。
+  - 可搜索名称：NFC-eb4c815a11057bb2 / 状态：`0.7.0 Current registry-derived navigation projection`；`0.6.0`、`0.5.0`、`0.4.0` 与更早版本为 Historical。
   - 来源：`docs/architecture/interactive-system-map.md`
   - 依赖：—；被引用：—
 - [状态：`CURRENT_BOUNDED_R0_BASE_WITH_R2_PROJECTION_AND_OPEN_OBLIGATIONS`。这仍不构成通用智能、长期自主性、现实因果、生产安全或 `EPISTEMICALLY_ACCEPTED`](../../../docs/architecture/agentization-boundary-r0.md)
@@ -1209,9 +1274,14 @@
   - 可搜索名称：NFC-fbc942d0532d5b91 / 状态：`CURRENT_BOUNDED_R0_BASE_WITH_R2_PROJECTION_AND_OPEN_OBLIGATIONS`。这仍不构成通用智能、长期自主性、现实因果、生产安全或 `EPISTEMICALLY_ACCEPTED`
   - 来源：`docs/architecture/agentization-boundary-r0.md`
   - 依赖：—；被引用：—
-- [现行组织包括 L0—L6 架构、横穿其间的语言—思维逻辑平面、Agent Platform R2 工程脊柱、Foundation registries、Function OS 候选、MCF、PSD、ARN、效果与机制平面、注意力/分布/压缩](../../../docs/project-current-state.md)
+- [现有本地 action plane 的冻结 Reference / Conformance / Fallback 角色；它验证协议，不向万能 Agent 壳、provider、daemon 或远端执行层扩张。](../../../data/architecture/interactive-system-map.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-feaf102c8d9d916a / 现有本地 action plane 的冻结 Reference / Conformance / Fallback 角色；它验证协议，不向万能 Agent 壳、provider、daemon 或远端执行层扩张。
+  - 来源：`data/architecture/interactive-system-map.json`
+  - 依赖：—；被引用：—
+- [现行组织包括 L0—L6 架构、横穿其间的语言—思维逻辑平面、Agent Platform R2 工程脊柱、External Agent Federation R1、Foundation registries、Function OS 候选、](../../../docs/project-current-state.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-5a30d4d7dd55f6bb / 现行组织包括 L0—L6 架构、横穿其间的语言—思维逻辑平面、Agent Platform R2 工程脊柱、Foundation registries、Function OS 候选、MCF、PSD、ARN、效果与机制平面、注意力/分布/压缩
+  - 可搜索名称：NFC-7409fb17e6b92bbe / 现行组织包括 L0—L6 架构、横穿其间的语言—思维逻辑平面、Agent Platform R2 工程脊柱、External Agent Federation R1、Foundation registries、Function OS 候选、
   - 来源：`docs/project-current-state.md`
   - 依赖：—；被引用：—
 - [理论”等更强命题。当前仓库的 Function OS v0.1/v0.2 没有历史因果 target，因此苹果案例](../../../ITERATION.md)
@@ -1549,6 +1619,11 @@
   - 可搜索名称：NFC-b4860c8e5be9f00f / 罗马帝国衰亡的具体因果判定：**pending**（需要史料考证和解释共同体共识）
   - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
   - 依赖：—；被引用：—
+- [联邦连接是执行器互操作的 repository dependency，不是新增 L7 或现实因果边；](../../../ARCHITECTURE.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-6d6204a792ff009d / 联邦连接是执行器互操作的 repository dependency，不是新增 L7 或现实因果边；
+  - 来源：`ARCHITECTURE.md`
+  - 依赖：—；被引用：—
 - [脱不花在财务决策中长期被动，真实退出权不足，导致个人财务契约始终失衡。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-ad38908c51428dd0 / 脱不花在财务决策中长期被动，真实退出权不足，导致个人财务契约始终失衡。
@@ -1731,7 +1806,7 @@
   - 依赖：—；被引用：—
 - [该链由当前迭代操作法 1.4.0 继承并保留声明关系下的变更传播闭包。`substantive_causal_candidate`、`repository_dependency` 与 `synchronization_obligation`](../../../ARCHITECTURE.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-2f01ccb1a09b3368 / 该链由当前迭代操作法 1.4.0 继承并保留声明关系下的变更传播闭包。`substantive_causal_candidate`、`repository_dependency` 与 `synchronization_obligation`
+  - 可搜索名称：NFC-4e60b7226dde3c6e / 该链由当前迭代操作法 1.4.0 继承并保留声明关系下的变更传播闭包。`substantive_causal_candidate`、`repository_dependency` 与 `synchronization_obligation`
   - 来源：`ARCHITECTURE.md`
   - 依赖：—；被引用：—
 - [误导后续机制生成。](../../../outputs/getbrain/failure-typology-draft-20260706.md)

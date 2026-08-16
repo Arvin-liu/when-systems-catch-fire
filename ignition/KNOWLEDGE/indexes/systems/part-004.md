@@ -4,6 +4,61 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [\| 候选编号 \| 名称 \| 查重结果 \| C 因果结构 \| M 收敛判定 \| I_iso 同构判定 \| L_meta 层级判定 \| G_δ 未完备性 \| P_meta 投影 \| 最终建议 \|](../../../outputs/audit/teacher-competition-backfill-review-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-7f09ea4d63fca99e / \| 候选编号 \| 名称 \| 查重结果 \| C 因果结构 \| M 收敛判定 \| I_iso 同构判定 \| L_meta 层级判定 \| G_δ 未完备性 \| P_meta 投影 \| 最终建议 \|
+  - 来源：`outputs/audit/teacher-competition-backfill-review-20260708.md`
+  - 依赖：—；被引用：—
+- [\| 元协议 \| 植物智能 \| 人类智能 \| 蚁群社会 \| ChatGPT \| 市场机制 \| 开源开发 \| 博弈论 \| 复杂系统 \| 心智 \|](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-dc1626b28b1adf83 / \| 元协议 \| 植物智能 \| 人类智能 \| 蚁群社会 \| ChatGPT \| 市场机制 \| 开源开发 \| 博弈论 \| 复杂系统 \| 心智 \|
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [\| 公开投影 \| result unit、public statement、知识/系统图投影 \| Results Book、RESULTS/KNOWLEDGE、系统图输入 \| 要求 provenance/ceiling 路由，禁止反向升级](../../../docs/architecture/epistemic-governance-kernel-and-federated-planes.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-e78ae2597a058c67 / \| 公开投影 \| result unit、public statement、知识/系统图投影 \| Results Book、RESULTS/KNOWLEDGE、系统图输入 \| 要求 provenance/ceiling 路由，禁止反向升级
+  - 来源：`docs/architecture/epistemic-governance-kernel-and-federated-planes.md`
+  - 依赖：—；被引用：—
+- [\| 决定 \| 采纳内容 \| 当前处理 \|](../../../reports/architecture/task115-runtime-prior-art-adoption-r0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-0b7c62959d38c529 / \| 决定 \| 采纳内容 \| 当前处理 \|
+  - 来源：`reports/architecture/task115-runtime-prior-art-adoption-r0.md`
+  - 依赖：—；被引用：—
+- [\| 分句连接 \| 从属标记和显式连接资源丰富；文学并置同样合法。 \| 因为目标句需要完整结构而补出来源没有的因果／让步。 \|](../../../docs/language-thought/profiles/en.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-2b2628b071e8fdec / \| 分句连接 \| 从属标记和显式连接资源丰富；文学并置同样合法。 \| 因为目标句需要完整结构而补出来源没有的因果／让步。 \|
+  - 来源：`docs/language-thought/profiles/en.md`
+  - 依赖：—；被引用：—
+- [\| 分句连接 \| 并置、语序、节奏和显性连词共同表达关系；因果可明说也可留给语境。 \| 为英语完整性发明因果词；反向也不能把无连词误判为无论证。 \|](../../../docs/language-thought/profiles/zh-hans.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-832e23ec6ffc3af5 / \| 分句连接 \| 并置、语序、节奏和显性连词共同表达关系；因果可明说也可留给语境。 \| 为英语完整性发明因果词；反向也不能把无连词误判为无论证。 \|
+  - 来源：`docs/language-thought/profiles/zh-hans.md`
+  - 依赖：—；被引用：—
+- [\| 叙事写因果 \| 故事代替证据 \| 历史/社会科学模块 \| 回到史料互证 \|](../../../outputs/getbrain/failure-typology-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-dfbdea113811aff3 / \| 叙事写因果 \| 故事代替证据 \| 历史/社会科学模块 \| 回到史料互证 \|
+  - 来源：`outputs/getbrain/failure-typology-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [\| 回照增义 \| Q12 M1 机制裁决、MapDiff、NetworkDiff、行动后解释 \| 后状态重新解释先前材料 \| 后见之明不能伪造前因 \|](../../../docs/publication/zhiyuan-writing-method.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-d9c1396076a99dc9 / \| 回照增义 \| Q12 M1 机制裁决、MapDiff、NetworkDiff、行动后解释 \| 后状态重新解释先前材料 \| 后见之明不能伪造前因 \|
+  - 来源：`docs/publication/zhiyuan-writing-method.md`
+  - 依赖：—；被引用：—
+- [\| 失败案例反向修正机制缺失 \| 任务 F：失败类型学初稿 \|](../../../docs/structural_gap_audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-4ff3b45bdba3780c / \| 失败案例反向修正机制缺失 \| 任务 F：失败类型学初稿 \|
+  - 来源：`docs/structural_gap_audit.md`
+  - 依赖：—；被引用：—
+- [\| 新物种 \| analogy_only \| 抹平制度连续性与族群复杂性 \|](../../../reports/publication/jin-rise-point-fire-analysis.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-62192f0014603ff5 / \| 新物种 \| analogy_only \| 抹平制度连续性与族群复杂性 \|
+  - 来源：`reports/publication/jin-rise-point-fire-analysis.md`
+  - 依赖：—；被引用：—
+- [\| 机制 \| 判定 \| 关联现有 \| 说明 \|](../../../outputs/collisions/20260711-disobedience-subjectivity/two-tables-full-collision-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-f655bfd3bb35884d / \| 机制 \| 判定 \| 关联现有 \| 说明 \|
+  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/two-tables-full-collision-report.md`
+  - 依赖：—；被引用：—
 - [\| 机制关键词 职称 / 硬门槛 / 裹挟 \| 正文第 5/9/21 行 ✓ \|](../../../outputs/audit/c0808-index-visibility-check-20260708.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-662de597490540ff / \| 机制关键词 职称 / 硬门槛 / 裹挟 \| 正文第 5/9/21 行 ✓ \|
@@ -2339,9 +2394,9 @@
   - 可搜索名称：NFC-3bf9f8910a2df6b7 / 当前方法 `1.4.0`、系统图 `0.6.0` 与之元写作法 `0.5.0` 均以各自权威资产为准；系统图 `0.5.0`、`0.4.0` 及更早版本只作为历史证据。面向 AI 的最近状态增量见 \[`STATE-CHANGELOG.md`
   - 来源：`docs/VERSIONING.md`
   - 依赖：—；被引用：—
-- [当前机器投影以 `76` 个 registry components、`64` 个可见节点、`70` 条 typed](../../../docs/architecture/interactive-system-map.md)
+- [当前机器投影以 `82` 个 registry components、`70` 个可见节点、`77` 条 typed](../../../docs/architecture/interactive-system-map.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-6b204958e677c8ac / 当前机器投影以 `76` 个 registry components、`64` 个可见节点、`70` 条 typed
+  - 可搜索名称：NFC-414ec2e2ad5c007f / 当前机器投影以 `82` 个 registry components、`70` 个可见节点、`77` 条 typed
   - 来源：`docs/architecture/interactive-system-map.md`
   - 依赖：—；被引用：—
 - [当前树删除 Pages workflow、Jekyll 配置/布局/样式、Pages HTML、Pages 路径的派生 SVG，以及两组 Pages 专用测试。系统图迁移到 `docs/generated/ignition-system-m](../../../reports/foundation-architecture/101-human-readable-surfaces-self-correction-closeout.md)
@@ -2449,58 +2504,3 @@
   - 可搜索名称：NFC-cfba71cba0cd2a9d / 恢复力验证 — 从D111偏离10%投入,S_ignition增大0.8%,梯度指向D111方向,系统自动回归
   - 来源：`data/foundation/evidence/evidence.jsonl`
   - 依赖：D111；被引用：—
-- [感染力、读者共鸣、模板完成或“像作者”不能提高事实、因果、同构或价值 claim。该方法不是普遍最优审美定律，也不是文学质量验证器。](../../../docs/publication/zhiyuan-writing-method.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-60bb689c9d30fe23 / 感染力、读者共鸣、模板完成或“像作者”不能提高事实、因果、同构或价值 claim。该方法不是普遍最优审美定律，也不是文学质量验证器。
-  - 来源：`docs/publication/zhiyuan-writing-method.md`
-  - 依赖：—；被引用：—
-- [战争发生的具体因果判定：**pending**（需要史料考证和解释共同体共识）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-d2545886bee556f2 / 战争发生的具体因果判定：**pending**（需要史料考证和解释共同体共识）
-  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [所以她第一次真正“不听话”，不是因为想反叛，而是因为她终于要替自己决定一件事。她坚持结婚，不回老家做那份已经替她准备好的工作。那一刻并不壮烈。它甚至不像很多英雄叙事那样响亮。它更像一个人第一次承认: 原来我可以不顺着那条已经被命名为“为你好](../../../outputs/stories/20260712-disobedience-subjectivity/story-longform.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-f613affde98284fd / 所以她第一次真正“不听话”，不是因为想反叛，而是因为她终于要替自己决定一件事。她坚持结婚，不回老家做那份已经替她准备好的工作。那一刻并不壮烈。它甚至不像很多英雄叙事那样响亮。它更像一个人第一次承认: 原来我可以不顺着那条已经被命名为“为你好
-  - 来源：`outputs/stories/20260712-disobedience-subjectivity/story-longform.md`
-  - 依赖：—；被引用：—
-- [所有 353 条记录的 primary_reasoning 均以 `P{1,4,5,7,8} check:` 开头，由固定代码分支决定。](../../../reports/foundation-architecture/085-084-truth-status-correction.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-f915cf2359bbb60d / 所有 353 条记录的 primary_reasoning 均以 `P{1,4,5,7,8} check:` 开头，由固定代码分支决定。
-  - 来源：`reports/foundation-architecture/085-084-truth-status-correction.md`
-  - 依赖：—；被引用：—
-- [所有事实、因果和强术语仍受 L0-L5 约束。抽象保留来源限制、不可映射差异、现实成本和受损／沉默主体。](../../../docs/publication/zhiyuan-writing-method.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-c829367494c98501 / 所有事实、因果和强术语仍受 L0-L5 约束。抽象保留来源限制、不可映射差异、现实成本和受损／沉默主体。
-  - 来源：`docs/publication/zhiyuan-writing-method.md`
-  - 依赖：—；被引用：—
-- [扩展注释 · 赛课机制下的教师生存困境](../../ASSET-CARDS.md#asset-hr-70edc5860a2e57c8)
-  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-  - 可搜索名称：扩展注释 · 赛课机制下的教师生存困境 / expanded-notes
-  - 来源：`outputs/collisions/20260708-teacher-competition/expanded-notes.md`
-  - 依赖：—；被引用：—
-- [扩展注释 · 赛课机制下的教师生存困境](../../../outputs/collisions/20260708-teacher-competition/expanded-notes.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-bff142b0f75519a0 / 扩展注释 · 赛课机制下的教师生存困境
-  - 来源：`outputs/collisions/20260708-teacher-competition/expanded-notes.md`
-  - 依赖：—；被引用：—
-- [扩展注释核心：指标排名隐性分层不是独立于 D597 的新因果原语，而是 D597 在跨域材料中的下游表现（量化指标替代真实价值 → 排名成为显性价值入口 → 不可量化贡献被压低 → 主体被隐性分层）。](../../../outputs/audit/cross-domain-candidate-function-small-batch-backfill-audit-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-0859b282ede536b1 / 扩展注释核心：指标排名隐性分层不是独立于 D597 的新因果原语，而是 D597 在跨域材料中的下游表现（量化指标替代真实价值 → 排名成为显性价值入口 → 不可量化贡献被压低 → 主体被隐性分层）。
-  - 来源：`outputs/audit/cross-domain-candidate-function-small-batch-backfill-audit-20260708.md`
-  - 依赖：D597；被引用：—
-- [技术决定论与点火框架元协议组合的映射。技术作为元协议实例，重塑社会结构，验证了技术与社会演化的同构性。](../../../data/foundation/arguments/arguments.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：CLAIM-BC-20260709-015 / 技术决定论与点火框架元协议组合的映射。技术作为元协议实例，重塑社会结构，验证了技术与社会演化的同构性。
-  - 来源：`data/foundation/arguments/arguments.jsonl`
-  - 依赖：—；被引用：—
-- [把“局部机制”保留为候选而非定律。](../../../outputs/getbrain/failure-typology-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-d78f51de146aa3ba / 把“局部机制”保留为候选而非定律。
-  - 来源：`outputs/getbrain/failure-typology-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [把不同时间、空间、层级或组织尺度上的机制直接类比。](../../../data/failure_typology.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-b1a336243ac174da / 把不同时间、空间、层级或组织尺度上的机制直接类比。
-  - 来源：`data/failure_typology.csv`
-  - 依赖：—；被引用：—

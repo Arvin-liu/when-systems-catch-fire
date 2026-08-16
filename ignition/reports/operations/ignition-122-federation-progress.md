@@ -266,6 +266,38 @@ external truth, Owner acceptance, production safety or epistemic acceptance.
 - Residual: Step 12 adversarial/full discovery, fresh-clone replay, final normal
   fast-forward and independent 1111 receipt remain open. `main` has not moved.
 
+## Step 12 — COMPLETE
+
+- Result: `STEP_12_EXTERNAL_AGENT_FEDERATION_ADVERSARIAL_AND_CLOSURE_COMPLETE`.
+- Adversarial suite: `tests.test_federation_step12_adversarial` = `6/6 PASS`; the
+  federation/architecture regression bundle covering contracts, SDK, adapters,
+  router, approval/handoff, convergence, pilots, platform surfaces and runtime
+  boundaries = `91/91 PASS`.
+- Covered negative boundaries: fake capability, malformed/oversized/partial
+  output, missing binaries, unsupported versions, timeout/crash classification,
+  duplicate and late progress, forged terminal/Owner approval, OS deny versus
+  external allow, stale session/receipt, idempotency, incapable handoff,
+  pointer-only memory deduplication, Reference Executor freeze and forbidden
+  Knowledge/Writing/Human/Pack backflow.
+- Deterministic closure: foundation `63/63 PASS`; nonfunction claim closure
+  `54/54 PASS`; repository path classification `9/9 PASS` across `3908` paths;
+  Knowledge Experience audit `cards=370, changes=292, layers=308, search=21810,
+  aliases=779, links=23196, two_click_pages=8`, two-pass determinism `PASS`;
+  Fire Seeds `64/64 PASS` over `371` sources; Human Surface/front-door and
+  production capability fresh-checkout core `1/1 PASS`.
+- Full discovery evidence: the complete run recorded `734 tests` with `8
+  failures`, `0 errors`, `1 skipped`. One failure is the inherited environmental
+  `T16_SYMPY_COUNTEREXAMPLE` (`ModuleNotFoundError`). The other seven were
+  deterministic projection/path-accounting drift caused by the new generated
+  Knowledge partition and uncovered `agent_federation/` paths; the narrow repair
+  added the existing non-authoritative `TOOL_OR_WORKFLOW` classification and
+  regenerated path/nonfunction projections. The affected closure and production
+  gates above were rerun and passed; the full suite was not rerun after that
+  final manifest-only repair.
+- Fresh-clone replay is the next release gate. `main` remains unchanged until
+  the task branch is pushed, fresh-clone evidence is recorded, and the ordinary
+  fast-forward plus independent `1111` receipt is complete.
+
 | Step | Status | Commit | Remote | Targeted gate |
 | --- | --- | --- | --- | --- |
 | 00 | COMPLETE | `05ac54db` | `05ac54db` | inventory schema + 121 core = PASS |
@@ -279,5 +311,5 @@ external truth, Owner acceptance, production safety or epistemic acceptance.
 | 08 | COMPLETE | `5dbbdfa9` | `5dbbdfa9` | approval/handoff/failover + 109 tests = PASS |
 | 09 | COMPLETE | `954a5bad` | `954a5bad` | convergence + 116 tests = PASS |
 | 10 | COMPLETE | `2773c303` | `2773c303` | pilots + 122 tests = PASS |
-| 11 | COMPLETE | pending self commit binding | pending `ls-remote` binding | architecture/Human Surface + 132 tests = PASS |
-| 12 | PENDING | — | — | — |
+| 11 | COMPLETE | `02eee73e` | `02eee73e` | architecture/Human Surface + 132 tests = PASS |
+| 12 | COMPLETE | pending self commit binding | pending `ls-remote` binding | adversarial + closure gates PASS; full discovery residual recorded |

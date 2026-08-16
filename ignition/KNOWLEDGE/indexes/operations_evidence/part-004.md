@@ -4,6 +4,36 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-10.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-10.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D003657 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-10.json / D003657 / A5015269440
+  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-10.json`
+  - 依赖：—；被引用：—
+- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-10.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-10.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：T11810 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-10.json / T11810 / A5015269440
+  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-10.json`
+  - 依赖：—；被引用：—
+- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-11.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-11.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：A5068815228 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-11.json / A5068815228 / T11056
+  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-11.json`
+  - 依赖：—；被引用：—
+- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-11.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-11.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：T11056 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-11.json / T11056 / A5068815228
+  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-11.json`
+  - 依赖：—；被引用：—
+- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-11.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-11.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：T11764 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-11.json / T11764 / A5068815228
+  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-11.json`
+  - 依赖：—；被引用：—
+- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-12.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-12.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：A5008919649 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-12.json / A5008919649 / P4310315853
+  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-12.json`
+  - 依赖：—；被引用：—
 - [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-12.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-12.json)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：P4310315853 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-12.json / P4310315853 / A5008919649
@@ -2473,34 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：P4310320448 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP014-M43.json / P4310320448 / A5061251386
   - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP014-M43.json`
-  - 依赖：—；被引用：—
-- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP014-M43.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP014-M43.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：T10508 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP014-M43.json / T10508 / A5061251386
-  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP014-M43.json`
-  - 依赖：—；被引用：—
-- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP014-M43.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP014-M43.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：T12339 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP014-M43.json / T12339 / A5061251386
-  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP014-M43.json`
-  - 依赖：—；被引用：—
-- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP014-M43.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP014-M43.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：T13690 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP014-M43.json / T13690 / A5061251386
-  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP014-M43.json`
-  - 依赖：—；被引用：—
-- [def build():](../../../formal/sage/function_asset_task99_checks.sage)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-90D25659E0C448D9 / def build(): / IMPLICIT-90D25659E0C448D9
-  - 来源：`formal/sage/function_asset_task99_checks.sage`
-  - 依赖：—；被引用：—
-- [Derived and external surfaces remain distinct from repository sources. Current human result projections are repository f](../../../ITERATION.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-d6c99a7d27958737 / Derived and external surfaces remain distinct from repository sources. Current human result projections are repository f
-  - 来源：`ITERATION.md`
-  - 依赖：—；被引用：—
-- [docs/language-thought/dimensional-basis.md](../../../docs/language-thought/dimensional-basis.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：D01 / docs/language-thought/dimensional-basis.md / D01 / D02
-  - 来源：`docs/language-thought/dimensional-basis.md`
   - 依赖：—；被引用：—

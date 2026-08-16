@@ -4,6 +4,36 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP014-M43.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP014-M43.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：T10508 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP014-M43.json / T10508 / A5061251386
+  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP014-M43.json`
+  - 依赖：—；被引用：—
+- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP014-M43.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP014-M43.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：T12339 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP014-M43.json / T12339 / A5061251386
+  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP014-M43.json`
+  - 依赖：—；被引用：—
+- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP014-M43.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP014-M43.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：T13690 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP014-M43.json / T13690 / A5061251386
+  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP014-M43.json`
+  - 依赖：—；被引用：—
+- [def build():](../../../formal/sage/function_asset_task99_checks.sage)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-90D25659E0C448D9 / def build(): / IMPLICIT-90D25659E0C448D9
+  - 来源：`formal/sage/function_asset_task99_checks.sage`
+  - 依赖：—；被引用：—
+- [Derived and external surfaces remain distinct from repository sources. Current human result projections are repository f](../../../ITERATION.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-d6c99a7d27958737 / Derived and external surfaces remain distinct from repository sources. Current human result projections are repository f
+  - 来源：`ITERATION.md`
+  - 依赖：—；被引用：—
+- [docs/language-thought/dimensional-basis.md](../../../docs/language-thought/dimensional-basis.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D01 / docs/language-thought/dimensional-basis.md / D01 / D02
+  - 来源：`docs/language-thought/dimensional-basis.md`
+  - 依赖：—；被引用：—
 - [docs/language-thought/dimensional-basis.md](../../../docs/language-thought/dimensional-basis.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：D02 / docs/language-thought/dimensional-basis.md / D02 / D01
@@ -443,6 +473,11 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-AB92BA4DD527D2D4 / F_theory(d)=O_d × R_d × E_d × Δ_t × Θ_d × V_d / IMPLICIT-AB92BA4DD527D2D4 / IMPLICIT-09037C50D537ABDA
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [for append-only map/current-state projections and regenerated the blast-radius](../../../reports/operations/ignition-122-federation-progress.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-08f4edf44f1fd5b5 / for append-only map/current-state projections and regenerated the blast-radius
+  - 来源：`reports/operations/ignition-122-federation-progress.md`
   - 依赖：—；被引用：—
 - [function ids (`req_real`), not symbolic names. Failure propagation requires](../../../function-os-candidate/v0.2/benchmark/PREREGISTRATION.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -1408,6 +1443,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-a74c4c9a3f0087b9 / Re-run the privacy/secret, disguised-failure, succession, responsibility and deterministic-projection attack cases indiv
   - 来源：`templates/operations/independent-review-template.md`
+  - 依赖：—；被引用：—
+- [regenerated path/nonfunction projections. The affected closure and production](../../../reports/operations/ignition-122-federation-progress.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-c5990da092ac42f2 / regenerated path/nonfunction projections. The affected closure and production
+  - 来源：`reports/operations/ignition-122-federation-progress.md`
   - 依赖：—；被引用：—
 - [registries remain unchanged and the projection validator fails closed.](../../../reports/validation/pointfire-seven-track-current-main-maintenance-r1-20260813.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
@@ -2463,44 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-72f52859f1469402 / \| 分类／词汇粒度 \| 量词、复合词、成语、专业术语和语境共同调节类别；无一词对应时可解释。 \| 用一个目标词压平多个历史／制度术语，或把量词选择本体化。 \|
   - 来源：`docs/language-thought/profiles/zh-hans.md`
-  - 依赖：—；被引用：—
-- [\| 同构误判 \| 弱类比冒充同构 \| I_iso \| 降级为类比 \|](../../../outputs/getbrain/failure-typology-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-98bce4c901d5ab64 / \| 同构误判 \| 弱类比冒充同构 \| I_iso \| 降级为类比 \|
-  - 来源：`outputs/getbrain/failure-typology-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [\| 数据 schema \| `data/schemas/` \| 上述七类数据对应的 JSON schema \|](../../../docs/getbrain-handoff-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-64e695d4f8ddf838 / \| 数据 schema \| `data/schemas/` \| 上述七类数据对应的 JSON schema \|
-  - 来源：`docs/getbrain-handoff-20260708.md`
-  - 依赖：—；被引用：—
-- [\| 时制／体貌／终点 \| 时间主要由体标记、时间词、词汇和语境组织；`了、着、过、在` 不一一对应英语时制。 \| `了` 被机械当过去完成，或过程被翻成已达终点。 \|](../../../docs/language-thought/profiles/zh-hans.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-9fba56df0def3204 / \| 时制／体貌／终点 \| 时间主要由体标记、时间词、词汇和语境组织；`了、着、过、在` 不一一对应英语时制。 \| `了` 被机械当过去完成，或过程被翻成已达终点。 \|
-  - 来源：`docs/language-thought/profiles/zh-hans.md`
-  - 依赖：—；被引用：—
-- [\| 结构性统一 \| 多领域共享同构、门控、约束、收敛结构 \| 可以（L1-L2） \|](../../../outputs/getbrain/project-position-update-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-17af45cc473c3c81 / \| 结构性统一 \| 多领域共享同构、门控、约束、收敛结构 \| 可以（L1-L2） \|
-  - 来源：`outputs/getbrain/project-position-update-20260706.md`
-  - 依赖：—；被引用：—
-- [\| 输出跨域同构汇总 \| ✓ \|](../../../outputs/audit/cross-domain-smoke-test-audit-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-9026bf124ab59f6a / \| 输出跨域同构汇总 \| ✓ \|
-  - 来源：`outputs/audit/cross-domain-smoke-test-audit-20260708.md`
-  - 依赖：—；被引用：—
-- [\|快速读懂一篇长文\|\[分层阅读\](../../READING-LAYERS.md)\|对应完整来源、\[统一资产卡\](../../ASSET-CARDS.md)\|](../../../HUMAN-READING.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-cd3d0bb56dce01f7 / \|快速读懂一篇长文\|\[分层阅读\](../../READING-LAYERS.md)\|对应完整来源、\[统一资产卡\](../../ASSET-CARDS.md)\|
-  - 来源：`HUMAN-READING.md`
-  - 依赖：—；被引用：—
-- [\|跨域映射\|大量对应只达到结构隐喻或研究假设。\|对象集合、映射、双射/同态条件、保持结构与反例。\|相似性不能稳定保持时不得称同构。\|](../../../RESULTS/OPEN-QUESTIONS.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-850ad71b7466f040 / \|跨域映射\|大量对应只达到结构隐喻或研究假设。\|对象集合、映射、双射/同态条件、保持结构与反例。\|相似性不能稳定保持时不得称同构。\|
-  - 来源：`RESULTS/OPEN-QUESTIONS.md`
-  - 依赖：—；被引用：—
-- [ΔΘ = Θ - min Φ = 0](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-0923FD51EF01A1CB / ΔΘ = Θ - min Φ = 0 / IMPLICIT-0923FD51EF01A1CB / IMPLICIT-1A9DA4161A0E8200
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—

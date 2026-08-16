@@ -4,6 +4,46 @@
 
 [返回资产卡总索引](../ASSET-CARDS.md)
 
+<a id="asset-hr-4910d221a74d1112"></a>
+## E2 规范性审核 - 非线性演化协议 (Nonlinear-Evolution Protocol)
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-4910D221A74D1112` · [docs/governance/meta-protocol-reviews/protocols/E2.md](../../docs/governance/meta-protocol-reviews/protocols/E2.md)
+- **为什么产生：** 此来源记录了什么：E2 规范性审核 - 非线性演化协议 (Nonlinear-Evolution Protocol)？
+- **当前状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **当前结果：** 价值：承认临界点、放大、涌现与不确定性，是对复杂系统的诚实描述，支撑预防原则。条件：仅当配套预防原则、沙盒、风险上限、可逆操作与实时反馈时才有价值。伤害：当以“不可预测”为由放弃约束、制造不可逆风险时会伤害共同体。不可缺少的约束：预防原则、沙盒、风险上限、可逆操作、实时反馈、区分良性/恶性涌现。
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `docs/governance/meta-protocol-reviews/protocols/E2.md`, `REPOSITORY_HISTORY_SOURCE`
+- **演化历史：** 2026-07-11: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`
+- **可搜索名称：** `E2 规范性审核 - 非线性演化协议 (Nonlinear-Evolution Protocol)`, `E2`
+
+<a id="asset-hr-49dd491e1cd0cf42"></a>
+## 角色—身份碰撞批次路线
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-49DD491E1CD0CF42` · [outputs/research/role-identity-collision-batches-20260712.md](../../outputs/research/role-identity-collision-batches-20260712.md)
+- **为什么产生：** 此来源记录了什么：角色—身份碰撞批次路线？
+- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **当前结果：** 原文件保存该项结果的完整问题、过程与边界。
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** `D601`, `D600`
+- **来源与证据：** `outputs/research/role-identity-collision-batches-20260712.md`, `REPOSITORY_HISTORY_SOURCE`
+- **演化历史：** 2026-07-12: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `角色—身份碰撞批次路线`, `role-identity-collision-batches-20260712`
+
 <a id="asset-hr-4a7f6b204cdcb0ee"></a>
 ## Validation summary
 
@@ -963,43 +1003,3 @@
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `121Q30｜首页架构与之元写作法成果展示审计`, `121Q30-homepage-architecture-and-zhiyuan-writing-showcase-audit`
-
-<a id="asset-hr-71ceb8486b492bc9"></a>
-## Provenance Audit
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-71CEB8486B492BC9` · [reports/math-foundation/provenance-audit-20260712.md](../../reports/math-foundation/provenance-audit-20260712.md)
-- **为什么产生：** 此来源记录了什么：Provenance Audit？
-- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **当前结果：** 原文件保存该项结果的完整问题、过程与边界。
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** `D126`, `D128`, `D129`, `D225`, `D228`, `T33`, `D583`, `D595`, `D596`, `D597`, `D598`, `D599`, `D600`, `D601`, `D602`, `D603`, `D604`, `T10`, `T13`, `T44`
-- **来源与证据：** `reports/math-foundation/provenance-audit-20260712.md`, `REPOSITORY_HISTORY_SOURCE`
-- **演化历史：** 2026-07-12: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `Provenance Audit`, `provenance-audit-20260712`
-
-<a id="asset-hr-728439cfb210ca75"></a>
-## NC-001 职称硬门槛裹挟青年教师回填审计
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-728439CFB210CA75` · [outputs/audit/nc-001-title-barrier-backfill-audit-20260708.md](../../outputs/audit/nc-001-title-barrier-backfill-audit-20260708.md)
-- **为什么产生：** 此来源记录了什么：NC-001 职称硬门槛裹挟青年教师回填审计？
-- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **当前结果：** 理由：案例表无等价条目；对应函数 D595 已入表；复核明确「建议入表」；Ψ₀ 六维均通过。
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** `D595`
-- **来源与证据：** `outputs/audit/nc-001-title-barrier-backfill-audit-20260708.md`, `REPOSITORY_HISTORY_SOURCE`
-- **演化历史：** 2026-07-08: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `MATHEMATICS`, `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `NC-001 职称硬门槛裹挟青年教师回填审计`, `nc-001-title-barrier-backfill-audit-20260708`

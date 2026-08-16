@@ -1566,11 +1566,6 @@
   - 可搜索名称：NFC-c7c5c1d70c5dec44 / artifact;
   - 来源：`docs/architecture/mechanism-adjudication-plane.md`
   - 依赖：—；被引用：—
-- [Artifacts](../../../reports/architecture/121Q23C-operational-arn-real-history-validation.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-0f50505ce224077f / Artifacts
-  - 来源：`reports/architecture/121Q23C-operational-arn-real-history-validation.md`
-  - 依赖：—；被引用：—
 - [Atlas explicitly records not_causality=true and says map position, visual proximity, stage, and dependency do not prove](../../../data/architecture/causal-asset-inventory.json)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-d0728276d573fb9b / Atlas explicitly records not_causality=true and says map position, visual proximity, stage, and dependency do not prove
@@ -1605,6 +1600,21 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-15817de8b7893cff / Because diff references are represented as strings, the allowed local reference namespace must be unambiguous: `network_
   - 来源：`docs/architecture/adaptive-relational-network.md`
+  - 依赖：—；被引用：—
+- [Because Hermes one-shot approvals are auto-bypassed and final stdout is text,](../../../docs/architecture/hermes-adapter-r1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-0244e3bdea28f9a2 / Because Hermes one-shot approvals are auto-bypassed and final stdout is text,
+  - 来源：`docs/architecture/hermes-adapter-r1.md`
+  - 依赖：—；被引用：—
+- [Because Hermes one-shot approvals are auto-bypassed and stdout is final](../../../reports/operations/ignition-122-federation-progress.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-0b0b673dd238f29e / Because Hermes one-shot approvals are auto-bypassed and stdout is final
+  - 来源：`reports/operations/ignition-122-federation-progress.md`
+  - 依赖：—；被引用：—
+- [because the observed `agent --help` did not prove those operations.](../../../docs/architecture/openclaw-adapter-r1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-f8405b5c0f8f666f / because the observed `agent --help` did not prove those operations.
+  - 来源：`docs/architecture/openclaw-adapter-r1.md`
   - 依赖：—；被引用：—
 - [Because the training targets are produced by reference solvers, the trained surrogate cannot exceed those solvers' accur](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -1810,6 +1820,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-b3c0d89dde8bd56c / candidate mechanism paths;
   - 来源：`docs/architecture/mechanism-adjudication-plane.md`
+  - 依赖：—；被引用：—
+- [captured JSON fixtures and injected runners; `LIVE_SMOKE_NOT_RUN` because no](../../../docs/architecture/openclaw-adapter-r1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-5fe1b731a1f5d566 / captured JSON fixtures and injected runners; `LIVE_SMOKE_NOT_RUN` because no
+  - 来源：`docs/architecture/openclaw-adapter-r1.md`
   - 依赖：—；被引用：—
 - [cards often reused phrasing that could apply to multiple papers (e.g., 'supports neural functions as weights'). The supp](../../../data/external-research/121-fulltext-resolver/121-template-risk-reaudit.json)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -2484,20 +2499,5 @@
 - [def test_input_mismatch_warning(self):](../../../function-os-candidate/v0.2/tests/test_n7_robust.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-52EE774FC81CBD97 / def test_input_mismatch_warning(self): / IMPLICIT-52EE774FC81CBD97
-  - 来源：`function-os-candidate/v0.2/tests/test_n7_robust.py`
-  - 依赖：—；被引用：—
-- [def test_no_effects_warning(self):](../../../function-os-candidate/v0.2/tests/test_n3_robust.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-75D6591BEF373D39 / def test_no_effects_warning(self): / IMPLICIT-75D6591BEF373D39
-  - 来源：`function-os-candidate/v0.2/tests/test_n3_robust.py`
-  - 依赖：—；被引用：—
-- [def test_provenance_missing_encoder_warning(self):](../../../function-os-candidate/v0.2/tests/test_n2_robust.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-BDC35E753906152B / def test_provenance_missing_encoder_warning(self): / IMPLICIT-BDC35E753906152B
-  - 来源：`function-os-candidate/v0.2/tests/test_n2_robust.py`
-  - 依赖：—；被引用：—
-- [def test_trace_artifact_inconsistency_warning(self):](../../../function-os-candidate/v0.2/tests/test_n7_robust.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-B0A2512C096ACF58 / def test_trace_artifact_inconsistency_warning(self): / IMPLICIT-B0A2512C096ACF58
   - 来源：`function-os-candidate/v0.2/tests/test_n7_robust.py`
   - 依赖：—；被引用：—

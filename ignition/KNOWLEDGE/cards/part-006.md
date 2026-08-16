@@ -4,6 +4,46 @@
 
 [返回资产卡总索引](../ASSET-CARDS.md)
 
+<a id="asset-hr-930fdb2770ec5121"></a>
+## Legacy compatibility report
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-930FDB2770EC5121` · [reports/foundation-architecture/legacy-compatibility-report-20260712.md](../../reports/foundation-architecture/legacy-compatibility-report-20260712.md)
+- **为什么产生：** 此来源记录了什么：Legacy compatibility report？
+- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **当前结果：** The old tables are byte-preserved and mapped to generated compatibility views. Legacy IDs remain stable; new truth/status authority is data/foundation.
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `reports/foundation-architecture/legacy-compatibility-report-20260712.md`, `REPOSITORY_HISTORY_SOURCE`
+- **演化历史：** 2026-07-12: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `ARCHITECTURE_GOVERNANCE`
+- **可搜索名称：** `Legacy compatibility report`, `legacy-compatibility-report-20260712`
+
+<a id="asset-hr-933d6ba7d34f8014"></a>
+## 121C01: First Batch GLM-5.2 Max Semantic Review Report
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-933D6BA7D34F8014` · [reports/external-research/121c01-max-semantic-review-batch-01.md](../../reports/external-research/121c01-max-semantic-review-batch-01.md)
+- **为什么产生：** 此来源记录了什么：121C01: First Batch GLM-5.2 Max Semantic Review Report？
+- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **当前结果：** Task: IGNITION-20260709-121C01 Reviewer: qclaw/pool-glm-5.2 (reasoning: high) Note: Task specified max reasoning; subagent environment supports high only. Main session supports max. Date: 2026-07-14 Baseline: 66c6efdf673dc486fbf10373edbcf2eab67a528c (121B HEAD) Status: 121C01MAXSEMANTICBATCHCOMPL…
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `reports/external-research/121c01-max-semantic-review-batch-01.md`, `121`
+- **演化历史：** 2026-07-14: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `COGNITION`, `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `121C01: First Batch GLM-5.2 Max Semantic Review Report`, `121c01-max-semantic-review-batch-01`
+
 <a id="asset-hr-94decfed90ce354c"></a>
 ## 赛课机制碰撞候选回填复核
 
@@ -963,43 +1003,3 @@
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `WRITING_PUBLICATION`
 - **可搜索名称：** `第57期故事结构图`, `story-structure-map`
-
-<a id="asset-hr-b72bf8b27748c5e3"></a>
-## D583 可移植来源引用清理审计报告（IGNITION-20260709-055）
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-B72BF8B27748C5E3` · [outputs/audit/d583-portable-source-reference-audit-20260711.md](../../outputs/audit/d583-portable-source-reference-audit-20260711.md)
-- **为什么产生：** 此来源记录了什么：D583 可移植来源引用清理审计报告（IGNITION-20260709-055）？
-- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **当前结果：** D583 文件中含有历史遗留的 macOS 本机绝对路径，作为原始来源锚点写入 3 处：
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** `D583`
-- **来源与证据：** `outputs/audit/d583-portable-source-reference-audit-20260711.md`, `REPOSITORY_HISTORY_SOURCE`
-- **演化历史：** 2026-07-11: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `D583 可移植来源引用清理审计报告（IGNITION-20260709-055）`, `d583-portable-source-reference-audit-20260711`
-
-<a id="asset-hr-b7cf68ed12ba8b82"></a>
-## 两张表单条条目结构审计与统一模板草案
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-B7CF68ED12BA8B82` · [outputs/audit/two-tables-entry-format-audit-20260709.md](../../outputs/audit/two-tables-entry-format-audit-20260709.md)
-- **为什么产生：** 此来源记录了什么：两张表单条条目结构审计与统一模板草案？
-- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **当前结果：** 结构更规范：基本信息 / 数学表达 / 判定理由 / 数学推导过程 / 关联案例 / 原文捞回，含变量解释与推导，是旧条目中离模板最近的形态。
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** `D595`, `D599`, `D1`, `D52`, `D20`, `D17`, `D25`, `T43`, `D2`, `D15`, `D596`, `D597`, `D598`, `D59`, `D244`, `D364`, `D423`, `D312`
-- **来源与证据：** `outputs/audit/two-tables-entry-format-audit-20260709.md`, `REPOSITORY_HISTORY_SOURCE`
-- **演化历史：** 2026-07-09: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `MATHEMATICS`, `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `两张表单条条目结构审计与统一模板草案`, `two-tables-entry-format-audit-20260709`

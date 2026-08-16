@@ -4,6 +4,26 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0465})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-810C673EFBB69399 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0465})=1\]. / IMPLICIT-810C673EFBB69399
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0466})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-C1E5F29C6C9711F8 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0466})=1\]. / IMPLICIT-C1E5F29C6C9711F8
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0467})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-2B910F8DF5C3D947 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0467})=1\]. / IMPLICIT-2B910F8DF5C3D947
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0468})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-231392993D4FC49E / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0468})=1\]. / IMPLICIT-231392993D4FC49E
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
 - [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0469})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-548BC38BB115FBEE / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0469})=1\]. / IMPLICIT-548BC38BB115FBEE
@@ -889,6 +909,11 @@
   - 可搜索名称：NFC-4f1fb1f466592de9 / `I_iso(A,B)` 同构判定：现代艺术与科学范式转移、制度变迁、媒介变化之间的结构同构
   - 来源：`outputs/getbrain/classic-problems-benchmark-supplement-20260707.md`
   - 依赖：—；被引用：—
+- [`MemoryProjection` is the narrow bridge into the existing](../../../reports/operations/ignition-122-federation-progress.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-e003460aad6fbea1 / `MemoryProjection` is the narrow bridge into the existing
+  - 来源：`reports/operations/ignition-122-federation-progress.md`
+  - 依赖：—；被引用：—
 - [`NO_REPRODUCTION_POSSIBLE_WITH_CURRENT_TARGET`。三个案例在 task-111 队列投影中继续可](../../ASSET-CARDS.md#asset-nfc-4a20f20c22587a46)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-4a20f20c22587a46 / `NO_REPRODUCTION_POSSIBLE_WITH_CURRENT_TARGET`。三个案例在 task-111 队列投影中继续可 / `NO_REPRODUCTION_POSSIBLE_WITH_CURRENT_TARGET`。三个案例在 task-111 队列投影中继续可
@@ -973,6 +998,11 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-0960D69217B2803A / assert V.canon(used) == V.canon(pre_subset) / IMPLICIT-0960D69217B2803A
   - 来源：`evidence-program/tests/test_evidence_program.py`
+  - 依赖：—；被引用：—
+- [authority_changes: the OS↔executor contract, adapter/conformance surfaces, Reference Executor freeze, routing/approval/h](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-8cf94a29e84bf719 / authority_changes: the OS↔executor contract, adapter/conformance surfaces, Reference Executor freeze, routing/approval/h
+  - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
 - [benchmark 通过"结构增益 + 重述 + 失败 + pending"四类结果，测试点火框架是否真的有结构增益。如果点火框架只是重述，说明没有新增解释力；如果点火框架发生失败，说明边界选错或同构误判；如果点火框架只能 pending，](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -2473,34 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：A5086493258 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-10.json / A5086493258 / A5015269440
   - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-10.json`
-  - 依赖：—；被引用：—
-- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-10.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-10.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：D003657 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-10.json / D003657 / A5015269440
-  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-10.json`
-  - 依赖：—；被引用：—
-- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-10.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-10.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：T11810 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-10.json / T11810 / A5015269440
-  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-10.json`
-  - 依赖：—；被引用：—
-- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-11.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-11.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：A5068815228 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-11.json / A5068815228 / T11056
-  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-11.json`
-  - 依赖：—；被引用：—
-- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-11.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-11.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：T11056 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-11.json / T11056 / A5068815228
-  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-11.json`
-  - 依赖：—；被引用：—
-- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-11.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-11.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：T11764 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-11.json / T11764 / A5068815228
-  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-11.json`
-  - 依赖：—；被引用：—
-- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-12.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-12.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：A5008919649 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-12.json / A5008919649 / P4310315853
-  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-12.json`
   - 依赖：—；被引用：—

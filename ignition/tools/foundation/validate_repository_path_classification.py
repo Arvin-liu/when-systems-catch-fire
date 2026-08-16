@@ -59,7 +59,7 @@ RULES: list[tuple[str, tuple[str, ...]]] = [
     # Agent Kernel/Runtime implementation is platform provenance, not a
     # Knowledge source.  Keep it in the non-authoritative tool/workflow plane
     # so path accounting and the Knowledge admission policy agree.
-    ("TOOL_OR_WORKFLOW", ("tools/", "scripts/", ".github/", "reos_vnext/", "agent_kernel/", "agent_runtime/")),
+    ("TOOL_OR_WORKFLOW", ("tools/", "scripts/", ".github/", "reos_vnext/", "agent_kernel/", "agent_runtime/", "agent_federation/")),
     # 4. Schemas.
     ("SCHEMA", ("schemas/",)),
     # 5. Test fixtures.

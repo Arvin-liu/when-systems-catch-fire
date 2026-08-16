@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [## 调用的下游函数](../../../docs/templates/function_dependency_review.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-EFD8251D482A8486 / ## 调用的下游函数 / IMPLICIT-EFD8251D482A8486
+  - 来源：`docs/templates/function_dependency_review.md`
+  - 依赖：—；被引用：—
 - [## 跨域复现的新候选函数（3 个）](../../../outputs/collisions/20260708-cross-domain-smoke-test/cross-domain-synthesis.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-EE0572AF8085E344 / ## 跨域复现的新候选函数（3 个） / IMPLICIT-EE0572AF8085E344
@@ -2499,8 +2504,3 @@
   - 可搜索名称：NFC-ff07aaa9bee30827 / PRIVATE_PROVENANCE_WITHHELD
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：D515；被引用：—
-- [PRIVATE_PROVENANCE_WITHHELD](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-5289b98b96ad34b7 / PRIVATE_PROVENANCE_WITHHELD
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D516；被引用：—

@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [def test_no_effects_warning(self):](../../../function-os-candidate/v0.2/tests/test_n3_robust.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-75D6591BEF373D39 / def test_no_effects_warning(self): / IMPLICIT-75D6591BEF373D39
+  - 来源：`function-os-candidate/v0.2/tests/test_n3_robust.py`
+  - 依赖：—；被引用：—
+- [def test_provenance_missing_encoder_warning(self):](../../../function-os-candidate/v0.2/tests/test_n2_robust.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-BDC35E753906152B / def test_provenance_missing_encoder_warning(self): / IMPLICIT-BDC35E753906152B
+  - 来源：`function-os-candidate/v0.2/tests/test_n2_robust.py`
+  - 依赖：—；被引用：—
+- [def test_trace_artifact_inconsistency_warning(self):](../../../function-os-candidate/v0.2/tests/test_n7_robust.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-B0A2512C096ACF58 / def test_trace_artifact_inconsistency_warning(self): / IMPLICIT-B0A2512C096ACF58
+  - 来源：`function-os-candidate/v0.2/tests/test_n7_robust.py`
+  - 依赖：—；被引用：—
 - [def test_trace_spec_inconsistency_warning(self):](../../../function-os-candidate/v0.2/tests/test_n7_robust.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-FAE91030CAE07F24 / def test_trace_spec_inconsistency_warning(self): / IMPLICIT-FAE91030CAE07F24
@@ -54,10 +69,20 @@
   - 可搜索名称：NFC-303c989377ca1a49 / Deterministic dynamics example; probability is not forced onto causal evolution.
   - 来源：`data/architecture/probabilistic-system-dynamics/examples/deterministic-system.json`
   - 依赖：—；被引用：—
+- [deterministic projection/path-accounting drift caused by the new generated](../../../reports/operations/ignition-122-federation-progress.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-6e2c017b50b9e796 / deterministic projection/path-accounting drift caused by the new generated
+  - 来源：`reports/operations/ignition-122-federation-progress.md`
+  - 依赖：—；被引用：—
 - [deterministic repository-source projection;](../../../reports/architecture/121Q23-adaptive-relational-network-validation.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-9d689f8f39e51922 / deterministic repository-source projection;
   - 来源：`reports/architecture/121Q23-adaptive-relational-network-validation.md`
+  - 依赖：—；被引用：—
+- [device, gateway, network and other non-read actions. It never passes](../../../reports/operations/ignition-122-federation-progress.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-d3df319b666ed22e / device, gateway, network and other non-read actions. It never passes
+  - 来源：`reports/operations/ignition-122-federation-progress.md`
   - 依赖：—；被引用：—
 - [diff reference integrity now requires local network/state/projection references or typed external refs;](../../../reports/architecture/121Q23-adaptive-relational-network-validation.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
@@ -174,6 +199,16 @@
   - 可搜索名称：NFC-89ae726a335e4440 / entropy arrow separated from causal order;
   - 来源：`reports/architecture/121Q21R-multiscale-causal-fabric-validation.md`
   - 依赖：—；被引用：—
+- [epistemic_state: `CURRENT_WITH_OPEN_OBLIGATIONS` and `EPISTEMICALLY_ACCEPTED=0` remain unchanged. Adapter conformance, d](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-f1ac94af17ab87e0 / epistemic_state: `CURRENT_WITH_OPEN_OBLIGATIONS` and `EPISTEMICALLY_ACCEPTED=0` remain unchanged. Adapter conformance, d
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [epistemic_state: `CURRENT_WITH_OPEN_OBLIGATIONS` and `EPISTEMICALLY_ACCEPTED=0` remain unchanged. Adapter fixtures, adve](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-18271fc08919b145 / epistemic_state: `CURRENT_WITH_OPEN_OBLIGATIONS` and `EPISTEMICALLY_ACCEPTED=0` remain unchanged. Adapter fixtures, adve
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [epistemic_state: `CURRENT_WITH_OPEN_OBLIGATIONS` and `EPISTEMICALLY_ACCEPTED=0` remain unchanged. Tests, receipts, gener](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-c153968802c96116 / epistemic_state: `CURRENT_WITH_OPEN_OBLIGATIONS` and `EPISTEMICALLY_ACCEPTED=0` remain unchanged. Tests, receipts, gener
@@ -253,6 +288,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-a94e68c603e0cb00 / example mechanism hypothesis
   - 来源：`data/architecture/multiscale-causal-fabric/examples/vehicle-ownership.json`
+  - 依赖：—；被引用：—
+- [existing adapters. OpenClaw is denied because its observed descriptor does](../../../reports/operations/ignition-122-federation-progress.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-a141a0bdb58849de / existing adapters. OpenClaw is denied because its observed descriptor does
+  - 来源：`reports/operations/ignition-122-federation-progress.md`
   - 依赖：—；被引用：—
 - [Existing assets do not provide explicit scale-domain and scale-translation fields from quantum/atomic through social, pl](../../../data/architecture/causal-gap-ledger.json)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -584,6 +624,11 @@
   - 可搜索名称：NFC-63c865905b988771 / Held-out benchmark accuracy, task orders, baselines and targeted ablations validate the bounded routing mechanism.
   - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
   - 依赖：—；被引用：—
+- [Hermes 的受限 text bridge adapter；仅允许声明的低风险读取 envelope，文本输出必须经过 typed parse、redaction 与独立验证。](../../../data/architecture/interactive-system-map.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-05110b2285138586 / Hermes 的受限 text bridge adapter；仅允许声明的低风险读取 envelope，文本输出必须经过 typed parse、redaction 与独立验证。
+  - 来源：`data/architecture/interactive-system-map.json`
+  - 依赖：—；被引用：—
 - [High probability is not strong causality. Low probability is not absence of causality.](../../../docs/architecture/probabilistic-system-dynamics.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-774e22ce877135c6 / High probability is not strong causality. Low probability is not absence of causality.
@@ -764,9 +809,9 @@
   - 可搜索名称：NFC-f5221d99ca4acd3e / It is not a FUNCTION or PARTIAL_FUNCTION because the displayed multiplicative score does not declare a set-theoretic dom
   - 来源：`reports/foundation-architecture/D598-final-adjudication-20260713.md`
   - 依赖：—；被引用：—
-- [Iteration method 1.3.0 and system map 0.4.0, 0.5.0 are Historical; method 1.2.0 and maps 0.1.0, 0.2.0, 0.3.0 are earlier](../../ASSET-CARDS.md#asset-nfc-90acb3bc50218f58)
+- [Iteration method 1.3.0 and system maps 0.5.0, 0.6.0 are Historical; method 1.2.0 and maps 0.1.0, 0.2.0, 0.3.0, 0.4.0 are](../../ASSET-CARDS.md#asset-nfc-f7f2df6507c18908)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-90acb3bc50218f58 / Iteration method 1.3.0 and system map 0.4.0, 0.5.0 are Historical; method 1.2.0 and maps 0.1.0, 0.2.0, 0.3.0 are earlier / Iteration method 1.3.0 and system map 0.4.0, 0.5.0 are Historical; method 1.2.0 and maps 0.1.0, 0.2.0, 0.3.0 are earlier Historical, not Current. Treat implementation completion, repository synchronization, external synchronization and project completion as distinct states; local validation never proves undeclared live external truth.
+  - 可搜索名称：NFC-f7f2df6507c18908 / Iteration method 1.3.0 and system maps 0.5.0, 0.6.0 are Historical; method 1.2.0 and maps 0.1.0, 0.2.0, 0.3.0, 0.4.0 are / Iteration method 1.3.0 and system maps 0.5.0, 0.6.0 are Historical; method 1.2.0 and maps 0.1.0, 0.2.0, 0.3.0, 0.4.0 are earlier Historical, not Current. Treat implementation completion, repository synchronization, external synchronization and project completion as distinct states; local validation never proves undeclared live external truth.
   - 来源：`llms.txt`
   - 依赖：—；被引用：—
 - [Its critique identifies comparability and systems-measurement requirements for validation, while providing no semantic/b](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
@@ -2189,6 +2234,11 @@
   - 可搜索名称：NFC-ec30b440216281ca / Only `system_map_projection` is currently automatic: its deterministic producer materializes both the JSON projection an
   - 来源：`docs/architecture/incremental-execution.md`
   - 依赖：—；被引用：—
+- [OpenClaw 的 provider-neutral public CLI adapter；只暴露可观察 envelope、能力、健康和 pointer-only session，不把 Gateway、channel 或 daemon 带](../../../data/architecture/interactive-system-map.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-794046119666f476 / OpenClaw 的 provider-neutral public CLI adapter；只暴露可观察 envelope、能力、健康和 pointer-only session，不把 Gateway、channel 或 daemon 带
+  - 来源：`data/architecture/interactive-system-map.json`
+  - 依赖：—；被引用：—
 - [Operation/continuation chains expose a conceptual execution structure, but no durable trace schema, log, causal receipt](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-21eac89e219c2a7d / Operation/continuation chains expose a conceptual execution structure, but no durable trace schema, log, causal receipt
@@ -2438,54 +2488,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-4915cc994b1a05fd / Published efficient-Transformer results are difficult to compare because models use different modes, benchmarks, sizes,
   - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
-  - 依赖：—；被引用：—
-- [Pyro: Deep Universal Probabilistic Programming](../../../data/external-research/120-function-paradigm-atlas/120-function-paradigm-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-79b65e451427cdcb / Pyro: Deep Universal Probabilistic Programming
-  - 来源：`data/external-research/120-function-paradigm-atlas/120-function-paradigm-cards.jsonl`
-  - 依赖：—；被引用：—
-- [python3 scripts/external-research/anysearch_client.py "causal inference survey 2024" 5](../../../docs/external-research/anysearch-usage.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-494f0510cf7d1ceb / python3 scripts/external-research/anysearch_client.py "causal inference survey 2024" 5
-  - 来源：`docs/external-research/anysearch-usage.md`
-  - 依赖：—；被引用：—
-- [Q-0002 将下一代机制解释为从当前适应死锁中逃逸的随机重采样。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-32a494e6eb13abeb / Q-0002 将下一代机制解释为从当前适应死锁中逃逸的随机重采样。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [Q-0007 给出民族、国家、物种差异的路径分叉机制。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-d8dfe667a2fd0156 / Q-0007 给出民族、国家、物种差异的路径分叉机制。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [Q-0026 提供内源输出再输入导致系统完备性下降的案例化机制。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-53d32a6166d8a472 / Q-0026 提供内源输出再输入导致系统完备性下降的案例化机制。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [Q12 creates an operation overlay for effectual action and mechanism adjudication without changing L0-L6 truth relationsh](../../../data/architecture/calibration/121q12-output-calibration.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-9f5a22137a21fec1 / Q12 creates an operation overlay for effectual action and mechanism adjudication without changing L0-L6 truth relationsh
-  - 来源：`data/architecture/calibration/121q12-output-calibration.json`
-  - 依赖：—；被引用：—
-- [Q12 effectual action and mechanism adjudication are operation overlays, not new truth layers.](../../../llms.txt)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-d4e7fd261893a8bf / Q12 effectual action and mechanism adjudication are operation overlays, not new truth layers.
-  - 来源：`llms.txt`
-  - 依赖：—；被引用：—
-- [Q12 effectual-action and mechanism-adjudication overlay.](../../../reports/releases/121Q15-q12-q14-cumulative-preflight.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-cc703a0c561cd81a / Q12 effectual-action and mechanism-adjudication overlay.
-  - 来源：`reports/releases/121Q15-q12-q14-cumulative-preflight.md`
-  - 依赖：—；被引用：—
-- [Q12 Effectual-Mechanism Dual-Loop Report](../../../reports/architecture/121Q12-effectual-mechanism-dual-loop.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-d46f06fc42bf58ac / Q12 Effectual-Mechanism Dual-Loop Report
-  - 来源：`reports/architecture/121Q12-effectual-mechanism-dual-loop.md`
-  - 依赖：—；被引用：—
-- [Q12 selects state-changing actions and adjudicates mechanisms.](../../../docs/architecture/multiscale-causal-fabric.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-51ce8beffd8e000b / Q12 selects state-changing actions and adjudicates mechanisms.
-  - 来源：`docs/architecture/multiscale-causal-fabric.md`
   - 依赖：—；被引用：—

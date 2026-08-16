@@ -4,6 +4,66 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [L4 mathematical models and proofs.](../../../reports/architecture/121Q12-baseline-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-2ca37934f8a897f9 / L4 mathematical models and proofs.
+  - 来源：`reports/architecture/121Q12-baseline-audit.md`
+  - 依赖：—；被引用：—
+- [L4**：外部形式证明/工程验证验证（形式证明、工程验证）](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-ea38728dd339b766 / L4**：外部形式证明/工程验证验证（形式证明、工程验证）
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [L4**：外部数学证明（公理系统内可复核证明）](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-bd67179c22007b7c / L4**：外部数学证明（公理系统内可复核证明）
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [L4**：外部数学证明（理论数学形式化）](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-36241f3bf2ed263c / L4**：外部数学证明（理论数学形式化）
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [L4/L5 外部证明或验证：**](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-df17c8bf217b4632 / L4/L5 外部证明或验证：**
+  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
+  - 依赖：—；被引用：—
+- [l4_proofs -->\|evidence_flow\| l5_validation](../../../reports/atlas/maps/map-epistemic-architecture.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-6cb3b57bbcdbac38 / l4_proofs -->\|evidence_flow\| l5_validation
+  - 来源：`reports/atlas/maps/map-epistemic-architecture.md`
+  - 依赖：—；被引用：—
+- [l4_proofs\["L4 Proofs and Models PRODUCT_RENTAL rent"\]](../../../reports/atlas/maps/map-epistemic-architecture.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-7dc1821aba5d637d / l4_proofs\["L4 Proofs and Models PRODUCT_RENTAL rent"\]
+  - 来源：`reports/atlas/maps/map-epistemic-architecture.md`
+  - 依赖：—；被引用：—
+- [L4：外部数学证明](../../../docs/claim_levels.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-d1906f5ea1beb783 / L4：外部数学证明
+  - 来源：`docs/claim_levels.md`
+  - 依赖：—；被引用：—
+- [L4：建立数学模型、proof obligation 与 proof artifact；缺失内容保持 pending。](../../../docs/USAGE.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-4b10406213a756e4 / L4：建立数学模型、proof obligation 与 proof artifact；缺失内容保持 pending。
+  - 来源：`docs/USAGE.md`
+  - 依赖：—；被引用：—
+- [L4：数学或专业证明，除非已有外部证明；](../../../docs/pending_claims_register.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-638445170260ebd6 / L4：数学或专业证明，除非已有外部证明；
+  - 来源：`docs/pending_claims_register.md`
+  - 依赖：—；被引用：—
+- [L5：分别验证 formal、logic、proof、evidence、scope 和 provenance。](../../../docs/USAGE.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-0ebb2ff6f9ffa2ff / L5：分别验证 formal、logic、proof、evidence、scope 和 provenance。
+  - 来源：`docs/USAGE.md`
+  - 依赖：—；被引用：—
+- [L6 must cite L0-L5 and cannot create mathematical truth.](../../../llms.txt)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-c6aca24d17aada3e / L6 must cite L0-L5 and cannot create mathematical truth.
+  - 来源：`llms.txt`
+  - 依赖：—；被引用：—
 - [L_meta：不是 D597 的指标体系替代价值的另一种说法，而是主体对指标激励的二阶博弈反应，应作为独立机制停在函数层。](../../../outputs/audit/cross-domain-candidate-function-review-20260708.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-a0c2367a11d55022 / L_meta：不是 D597 的指标体系替代价值的另一种说法，而是主体对指标激励的二阶博弈反应，应作为独立机制停在函数层。
@@ -544,6 +604,11 @@
   - 可搜索名称：NFC-2864be469b797640 / M/E independence and proof/evidence/type separation;
   - 来源：`docs/architecture/getnote-1329-epistemic-governance-pressure-test.md`
   - 依赖：—；被引用：—
+- [M/E, scope, provenance, lifecycle or epistemic state.](../../../reports/architecture/external-agent-interface-audit-r1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-2155aca979f6b171 / M/E, scope, provenance, lifecycle or epistemic state.
+  - 来源：`reports/architecture/external-agent-interface-audit-r1.md`
+  - 依赖：—；被引用：—
 - [M10的溢出是传染的物理通道。统一传染链：高p恶化→溢出消耗低p缓冲(\[D379\](docs/zh/functions/items/D379.md))→低p缓冲<g_critical(\[D309\](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-a09ffac283909a9b / M10的溢出是传染的物理通道。统一传染链：高p恶化→溢出消耗低p缓冲(\[D379\](docs/zh/functions/items/D379.md))→低p缓冲<g_critical(\[D309\](../../../data/math-foundation/function-provenance-ledger.csv)
@@ -865,6 +930,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-d0f26feb7cf4a5d2 / MACHINE_CHECKED_PROOF is not empirical truth.
   - 来源：`llms.txt`
+  - 依赖：—；被引用：—
+- [manifest hash and a broken Markdown link. The formal repository is never the](../../../docs/architecture/federation-pilots-r1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-4ce4ae101370276c / manifest hash and a broken Markdown link. The formal repository is never the
+  - 来源：`docs/architecture/federation-pilots-r1.md`
   - 依赖：—；被引用：—
 - [Map delta: 41 nodes and 37 edges gain derived lifecycle/relation-domain metadata; nodes added: 0, nodes removed: 0, edge](../../../reports/operations/121Q32-typed-change-propagation-and-self-updating-system-map-audit.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
@@ -1594,6 +1664,11 @@
 - [obligations: the environmental `T16_SYMPY_COUNTEREXAMPLE` residual remains explicitly classified from full regression; l](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-2877dba3fbca5a39 / obligations: the environmental `T16_SYMPY_COUNTEREXAMPLE` residual remains explicitly classified from full regression; l
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [obligations: the full discovery record retains the environmental `T16_SYMPY_COUNTEREXAMPLE` residual; live provider infe](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-49cb117d9bae4a73 / obligations: the full discovery record retains the environmental `T16_SYMPY_COUNTEREXAMPLE` residual; live provider infe
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
 - [obligations: 已关闭当前入口/路径迁移、当前 Pages 引用、人类资产/整体图/火种确定性投影与仓库内链接校验；历史记录仍需保留其原始 provenance。继续开放：每次正式 main 合并追加 delta、火种按 `SEE](../../../STATE-CHANGELOG.md)
@@ -2383,6 +2458,11 @@
   - 可搜索名称：NFC-278a6bee18dc5aa4 / Retrieval, repetition, activation and diffusion are not proof of integration.
   - 来源：`docs/architecture/adaptive-relational-network.md`
   - 依赖：—；被引用：—
+- [return ApprovalBridgeDecision("APPROVED", "OS approval and any required external gate intersect without widening capabil](../../../agent_federation/approval_handoff.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-8e442ea459ce84c3 / return ApprovalBridgeDecision("APPROVED", "OS approval and any required external gate intersect without widening capabil
+  - 来源：`agent_federation/approval_handoff.py`
+  - 依赖：—；被引用：—
 - [Review evidence paths.](../../../inputs/020/formal-protocol-promotion-standard.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-7fe33aab52a677b3 / Review evidence paths.
@@ -2417,84 +2497,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-09eaf046cc164784 / Rule: the item must be a constraint/permission/prohibition/meta-rule, not a mechanism function renamed.
   - 来源：`inputs/020/formal-protocol-promotion-standard.md`
-  - 依赖：—；被引用：—
-- [Rule: validator can point to file path and field or line evidence.](../../../inputs/020/formal-protocol-promotion-standard.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-a14174dd96ba4da6 / Rule: validator can point to file path and field or line evidence.
-  - 来源：`inputs/020/formal-protocol-promotion-standard.md`
-  - 依赖：—；被引用：—
-- [Runtime contexts and Criterion measurements give limited observability; uncertainty, receipts, lineage health and lifecy](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-7e7636b50177caa4 / Runtime contexts and Criterion measurements give limited observability; uncertainty, receipts, lineage health and lifecy
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
-  - 依赖：—；被引用：—
-- [s conjecture verified via gate threshold.    数学推导过程 / Mathematical Derivation  - 对象 / Object:](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-6ece82f52c34b4d9 / s conjecture verified via gate threshold.    数学推导过程 / Mathematical Derivation  - 对象 / Object:
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：—；被引用：—
-- [S120-047 (Generic Refinement Types):** SMT-decidable formal specification with preconditions/postconditions. Strongest e](../../../reports/external-research/121c01-max-semantic-review-batch-01.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-4790652cf608aae8 / S120-047 (Generic Refinement Types):** SMT-decidable formal specification with preconditions/postconditions. Strongest e
-  - 来源：`reports/external-research/121c01-max-semantic-review-batch-01.md`
-  - 依赖：—；被引用：—
-- [S120-053 (Algebraic Effects, JLC 2009, VERIFIED) provides effect handlers separating effect signatures from interpreters](../../../data/external-research/121-fulltext-resolver/121q3/gaps/GAP-018.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：NFC-ea0cfb95cbaae2ea / S120-053 (Algebraic Effects, JLC 2009, VERIFIED) provides effect handlers separating effect signatures from interpreters
-  - 来源：`data/external-research/121-fulltext-resolver/121q3/gaps/GAP-018.json`
-  - 依赖：—；被引用：—
-- [S120-053 (Handlers of Algebraic Effects):** Definitive theoretical framework for effect tracking. Algebraic theories as](../../../reports/external-research/121c01-max-semantic-review-batch-01.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-04c18c91d6b9d7ce / S120-053 (Handlers of Algebraic Effects):** Definitive theoretical framework for effect tracking. Algebraic theories as
-  - 来源：`reports/external-research/121c01-max-semantic-review-batch-01.md`
-  - 依赖：—；被引用：—
-- [S120-053** (Handlers of Algebraic Effects, JLC 2009): PARTIAL, identity VERIFIED](../../../reports/external-research/121Q2R-final-report.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-01547c846d09fa70 / S120-053** (Handlers of Algebraic Effects, JLC 2009): PARTIAL, identity VERIFIED
-  - 来源：`reports/external-research/121Q2R-final-report.md`
-  - 依赖：—；被引用：—
-- [Sage：徽宗道教注疏、神霄运动、宫观／学校制度、林灵素失势后网络延续，以及无法从文本直接证明私人信念的讨论。](../../../reports/publication/song-huizong-taoism-point-fire-analysis.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-a911b967a750ced5 / Sage：徽宗道教注疏、神霄运动、宫观／学校制度、林灵素失势后网络延续，以及无法从文本直接证明私人信念的讨论。
-  - 来源：`reports/publication/song-huizong-taoism-point-fire-analysis.md`
-  - 依赖：—；被引用：—
-- [Sampling and caching do not amount to lifecycle/provenance governance or probabilistic/fuzzy semantics.](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-cd92afad75c73962 / Sampling and caching do not amount to lifecycle/provenance governance or probabilistic/fuzzy semantics.
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
-  - 依赖：—；被引用：—
-- [Sampling and top-k voting do not constitute calibrated stochastic semantics or lifecycle and provenance governance.](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-a76cc74fb07d3e40 / Sampling and top-k voting do not constitute calibrated stochastic semantics or lifecycle and provenance governance.
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
-  - 依赖：—；被引用：—
-- [Saving a program string rather than a checkpoint is lightweight adaptation, not a versioned registry or lifecycle state](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-72cfbbfff351ccfe / Saving a program string rather than a checkpoint is lightweight adaptation, not a versioned registry or lifecycle state
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
-  - 依赖：—；被引用：—
-- [schema**: { complexity_class, computability_boundary, approximation_scheme, hardness_proof, reduction }](../../../data/discipline-projection/087-v1-1-overlay.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-d3d58080cd4ce493 / schema**: { complexity_class, computability_boundary, approximation_scheme, hardness_proof, reduction }
-  - 来源：`data/discipline-projection/087-v1-1-overlay.md`
-  - 依赖：—；被引用：—
-- [Scores and correlations are observable; uncertainty, provenance and lifecycle traces are absent.](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-65590ad649e39334 / Scores and correlations are observable; uncertainty, provenance and lifecycle traces are absent.
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
-  - 依赖：—；被引用：—
-- [Self-hosting proves deterministic planning over declared repository dependencies only; it is not real-world causal proof](../../../reports/operations/121Q32I-incremental-execution-demonstration.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-8f70a92e1af10533 / Self-hosting proves deterministic planning over declared repository dependencies only; it is not real-world causal proof
-  - 来源：`reports/operations/121Q32I-incremental-execution-demonstration.json`
-  - 依赖：—；被引用：—
-- [self_review 文件由 `build_self_review()` 函数从 decision 直接派生，不构成独立验证](../../../reports/foundation-architecture/085-084-truth-status-correction.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-fd40a6e2cb1d951a / self_review 文件由 `build_self_review()` 函数从 decision 直接派生，不构成独立验证
-  - 来源：`reports/foundation-architecture/085-084-truth-status-correction.md`
-  - 依赖：—；被引用：—
-- [Semantic adjudication verification](../../ASSET-CARDS.md#asset-hr-9fad496317a3b73c)
-  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-  - 可搜索名称：Semantic adjudication verification / semantic-adjudication-verification-20260713
-  - 来源：`reports/foundation-architecture/semantic-adjudication-verification-20260713.md`
   - 依赖：—；被引用：—

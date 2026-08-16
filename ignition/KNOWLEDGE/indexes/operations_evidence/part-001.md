@@ -999,6 +999,11 @@
   - 可搜索名称：IMPLICIT-9EF128E85508A61D / # Energy Supply Chain Fabric / IMPLICIT-9EF128E85508A61D
   - 来源：`data/architecture/multiscale-causal-fabric/examples/energy-supply-chain.md`
   - 依赖：—；被引用：—
+- [# Federation Router R1](../../../docs/architecture/federation-router-r1.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-FFC2BD5D3B3429D6 / # Federation Router R1 / IMPLICIT-FFC2BD5D3B3429D6
+  - 来源：`docs/architecture/federation-router-r1.md`
+  - 依赖：—；被引用：—
 - [# focus vs exploration tension](../../../data/architecture/adaptive-relational-network/examples/focus-vs-exploration-context-gated.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-757F2BD6602B56C2 / # focus vs exploration tension / IMPLICIT-757F2BD6602B56C2
@@ -1028,6 +1033,11 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-6DF1244E0F4E1F5D / # Gate Semantics (022 frozen) / IMPLICIT-6DF1244E0F4E1F5D
   - 来源：`canonical/docs/gate-semantics.md`
+  - 依赖：—；被引用：—
+- [# IGNITION-20260816-122 Federation R1 Progress](../../../reports/operations/ignition-122-federation-progress.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-BE8F655E45B6CCA2 / # IGNITION-20260816-122 Federation R1 Progress / IMPLICIT-BE8F655E45B6CCA2
+  - 来源：`reports/operations/ignition-122-federation-progress.md`
   - 依赖：—；被引用：—
 - [# IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-GATE-NARROW-REPAIR-R1-20260726 typed change-propagation impact report](../../../reports/operations/IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-GATE-NARROW-REPAIR-R1-20260726-change-propagation-impact.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -1063,6 +1073,11 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-06FE193A056CB70D / # Next Iteration Recommendation — Task 109 / IMPLICIT-06FE193A056CB70D
   - 来源：`data/operations/iterations/109/next_iteration_recommendation.md`
+  - 依赖：—；被引用：—
+- [# OpenClaw Adapter R1](../../../docs/architecture/openclaw-adapter-r1.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-C512C3987F290CA5 / # OpenClaw Adapter R1 / IMPLICIT-C512C3987F290CA5
+  - 来源：`docs/architecture/openclaw-adapter-r1.md`
   - 依赖：—；被引用：—
 - [# point-fire project integration from audit through CI](../../../data/architecture/adaptive-relational-network/examples/point-fire-project-integration.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -2474,6 +2489,11 @@
   - 可搜索名称：IMPLICIT-DBFAD75C0272CC04 / ### Newly forced or more sharply specified / IMPLICIT-DBFAD75C0272CC04
   - 来源：`docs/architecture/getnote-1329-epistemic-governance-pressure-test.md`
   - 依赖：—；被引用：—
+- [### OpenClaw adapter boundary](../../../docs/architecture/external-agent-federation-r1.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-C701DC67046560BF / ### OpenClaw adapter boundary / IMPLICIT-C701DC67046560BF
+  - 来源：`docs/architecture/external-agent-federation-r1.md`
+  - 依赖：—；被引用：—
 - [### Reinforced or made operationally visible in GetNote](../../../docs/architecture/getnote-1329-epistemic-governance-pressure-test.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-01E84B21408175B8 / ### Reinforced or made operationally visible in GetNote / IMPLICIT-01E84B21408175B8
@@ -2483,24 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-47FA4A1D0308120B / ### target gate 为什么要放在案例最前面 / IMPLICIT-47FA4A1D0308120B
   - 来源：`data/operations/iterations/112/publication/r0-original/volume/第一卷-第二稿.md`
-  - 依赖：—；被引用：—
-- [### 它不知道 Function OS 能否走出小世界](../../../data/operations/iterations/112/publication/r0-original/volume/%E7%AC%AC%E4%B8%80%E5%8D%B7-%E7%AC%AC%E4%BA%8C%E7%A8%BF.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-141328621AD715FD / ### 它不知道 Function OS 能否走出小世界 / IMPLICIT-141328621AD715FD
-  - 来源：`data/operations/iterations/112/publication/r0-original/volume/第一卷-第二稿.md`
-  - 依赖：—；被引用：—
-- [### 方向四：把 Function OS 从符号小世界带到更难的边界](../../../data/operations/iterations/112/publication/r0-original/volume/%E7%AC%AC%E4%B8%80%E5%8D%B7-%E7%AC%AC%E4%BA%8C%E7%A8%BF.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-81A1AD3B0D8DC712 / ### 方向四：把 Function OS 从符号小世界带到更难的边界 / IMPLICIT-81A1AD3B0D8DC712
-  - 来源：`data/operations/iterations/112/publication/r0-original/volume/第一卷-第二稿.md`
-  - 依赖：—；被引用：—
-- [### 案例表 INDEX.md](../../../outputs/audit/two-tables-version-sync-audit-20260708.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-004F80C40DD95D7E / ### 案例表 INDEX.md / IMPLICIT-004F80C40DD95D7E
-  - 来源：`outputs/audit/two-tables-version-sync-audit-20260708.md`
-  - 依赖：—；被引用：—
-- [### 模型 A：真诚的宗教世界化](../../../reports/publication/song-huizong-taoism-point-fire-analysis.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-7F9D129F44993865 / ### 模型 A：真诚的宗教世界化 / IMPLICIT-7F9D129F44993865
-  - 来源：`reports/publication/song-huizong-taoism-point-fire-analysis.md`
   - 依赖：—；被引用：—

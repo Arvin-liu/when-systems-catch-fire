@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- ["""An adapter does not claim an optional lifecycle operation."""](../../../agent_federation/contracts.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-f84c059268ae7a97 / """An adapter does not claim an optional lifecycle operation."""
+  - 来源：`agent_federation/contracts.py`
+  - 依赖：—；被引用：—
 - ["353 条均已生成 proof obligation；351 条生成 empirical obligation"](../../../reports/foundation-architecture/085-084-truth-status-correction.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-20f4f9ba9e4bec66 / "353 条均已生成 proof obligation；351 条生成 empirical obligation"
@@ -2498,9 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-EB9129FBDAFB01B6 / ## 统一函数条目模板草案 / IMPLICIT-EB9129FBDAFB01B6
   - 来源：`outputs/audit/two-tables-entry-format-audit-20260709.md`
-  - 依赖：—；被引用：—
-- [## 调用的下游函数](../../../docs/templates/function_dependency_review.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-EFD8251D482A8486 / ## 调用的下游函数 / IMPLICIT-EFD8251D482A8486
-  - 来源：`docs/templates/function_dependency_review.md`
   - 依赖：—；被引用：—

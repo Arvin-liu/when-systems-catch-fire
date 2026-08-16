@@ -5966,7 +5966,7 @@ Status: 121Q32THISTORICAL. Iteration method 1.3.0 and interactive system map 0.3
 
 ### 5 分钟
 
-- 来源要点（导航摘录，不得视为当前断言）：状态：0.6.0 Current registry-derived navigation projection；0.5.0、0.4.0 与更早版本为 Historical。
+- 来源要点（导航摘录，不得视为当前断言）：状态：0.7.0 Current registry-derived navigation projection；0.6.0、0.5.0、0.4.0 与更早版本为 Historical。
 - 来源要点（导航摘录，不得视为当前断言）：project component registry + typed propagation topology + layout overlay → deterministic generator → materialized spec + repository SVG → .github/README.md / ordinary Markdown navigation
 - 来源要点（导航摘录，不得视为当前断言）：不要手改 materialized spec 或 SVG：
 - 来源要点（导航摘录，不得视为当前断言）：SVG 现在位于 docs/generated/ignition-system-architecture.svg，通过 README 和普通 Markdown 直接访问，不依赖独立部署站点。SVG 节点链接指向 GitHub 仓库 canonical 文件；若客户端不支持 SVG 内部热点，可使用本页的文本入口。它是当前唯一完整总架构图，不再并列维护另一张图。

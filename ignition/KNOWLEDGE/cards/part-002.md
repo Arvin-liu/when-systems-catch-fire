@@ -4,6 +4,26 @@
 
 [返回资产卡总索引](../ASSET-CARDS.md)
 
+<a id="asset-nfc-c15234f1546c00ea"></a>
+## 任务边界：1111 中对应的 IGNITION command、progress 与 result
+
+- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-c15234f1546c00ea` · [AI-HANDOFF.md](../../AI-HANDOFF.md)
+- **为什么产生：** Expose a materially public CROSS_DOMAIN_CORRESPONDENCE and its correction or evidence boundary.
+- **当前状态：** `RETAINED_AS_STRUCTURAL_METAPHOR`
+- **当前结果：** - 任务边界：1111 中对应的 IGNITION command、progress 与 result
+- **双成熟度：** 数学 `M0`；外部证据 `E0`
+- **假设与表述上限：** Analogy or structural metaphor only; no homomorphism, isomorphism or causal identity is established.
+- **未建立：** Do not present registry presence, internal tests, AI agreement or formal appearance as proof, external validation, novelty, peer review or replication.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `AI-HANDOFF.md`
+- **演化历史：** Lineage: NO_NAMED_LINEAGE；Lineage status: CURRENT_SCOPED_RECORD；Reviewer state: SOURCE_TEXT_RULE_ADJUDICATED
+- **最近变化：** Task 100 disposition: RETAINED_AS_STRUCTURAL_METAPHOR
+- **下一步：** No open obligation was recorded.
+- **主题：** `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `NFC-c15234f1546c00ea`, `任务边界：1111 中对应的 IGNITION command、progress 与 result`, `- 任务边界：1111 中对应的 IGNITION command、progress 与 result`
+
 <a id="asset-nfc-c349fbdc470b50ab"></a>
 ## Meaningful knowledge changes must regenerate the task-102 What's New, subject map, asset cards, reading layers, aliases/
 
@@ -163,6 +183,26 @@
 - **下一步：** No open obligation was recorded.
 - **主题：** `ARCHITECTURE_GOVERNANCE`
 - **可搜索名称：** `NFC-f31cd02c40b70cc7`, `跨域对应 2,178；`, `- 跨域对应 2,178；`
+
+<a id="asset-nfc-f7f2df6507c18908"></a>
+## Iteration method 1.3.0 and system maps 0.5.0, 0.6.0 are Historical; method 1.2.0 and maps 0.1.0, 0.2.0, 0.3.0, 0.4.0 are
+
+- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-f7f2df6507c18908` · [llms.txt](../../llms.txt)
+- **为什么产生：** Expose a materially public IMPOSSIBILITY_OR_UNIVERSAL_CLAIM and its correction or evidence boundary.
+- **当前状态：** `ACCEPTED_AS_DEFINITION`
+- **当前结果：** Iteration method 1.3.0 and system maps 0.5.0, 0.6.0 are Historical; method 1.2.0 and maps 0.1.0, 0.2.0, 0.3.0, 0.4.0 are earlier Historical, not Current. Treat implementation completion, repository synchronization, external synchronization and project completion as distinct states; local validation never proves undeclared live external truth.
+- **双成熟度：** 数学 `M0`；外部证据 `E0`
+- **假设与表述上限：** May be stated only as a repository definition, policy, status record or explicitly scoped convention; it is not external truth.
+- **未建立：** Do not present registry presence, internal tests, AI agreement or formal appearance as proof, external validation, novelty, peer review or replication.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `llms.txt`
+- **演化历史：** Lineage: NO_NAMED_LINEAGE；Lineage status: CURRENT_SCOPED_RECORD；Reviewer state: SOURCE_TEXT_RULE_ADJUDICATED
+- **最近变化：** Task 100 disposition: ACCEPTED_AS_DEFINITION
+- **下一步：** State typed definitions, assumptions and quantifiers; provide a checkable proof or delimit the statement as conjectural.；Search for countermodels inside and outside the declared model class.
+- **主题：** `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `NFC-f7f2df6507c18908`, `Iteration method 1.3.0 and system maps 0.5.0, 0.6.0 are Historical; method 1.2.0 and maps 0.1.0, 0.2.0, 0.3.0, 0.4.0 are`, `Iteration method 1.3.0 and system maps 0.5.0, 0.6.0 are Historical; method 1.2.0 and maps 0.1.0, 0.2.0, 0.3.0, 0.4.0 are earlier Historical, not Current. Treat implementation completion, repository synchronization, external synchronization and project completion as distinct states; local validation never proves undeclared live external truth.`
 
 <a id="asset-nfc-fa7f908615d24682"></a>
 ## 公式化、可计算、内部自洽、AI 编号和单元测试通过都不等于外部真实；当前门控模型没有统一四力，也没有证明大一统普遍不可能。
@@ -963,43 +1003,3 @@
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `COGNITION`, `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `Agent 碰撞阶段收口审计（2026-07-08 23:55）`, `agent-collision-phase-closeout-20260708`
-
-<a id="asset-hr-259784cecbb2dc49"></a>
-## 121Q13 Baseline And Overlap Audit
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-259784CECBB2DC49` · [reports/architecture/121Q13-baseline-overlap-audit.md](../../reports/architecture/121Q13-baseline-overlap-audit.md)
-- **为什么产生：** 此来源记录了什么：121Q13 Baseline And Overlap Audit？
-- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **当前结果：** 121Q13 starts from 121Q12 Draft PR 47 head 338cfff999e26dce623c6c55d810587db4a668ba.
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `reports/architecture/121Q13-baseline-overlap-audit.md`, `121Q13-BASELINE-OVERLAP-AUDIT`
-- **演化历史：** 2026-07-15: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `121Q13 Baseline And Overlap Audit`, `121Q13-baseline-overlap-audit`
-
-<a id="asset-hr-25ccad6cef81cbea"></a>
-## 当一支军队开始相信自己的背影
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-25CCAD6CEF81CBEA` · [docs/publication/works/when-an-army-believes-its-own-back.md](../../docs/publication/works/when-an-army-believes-its-own-back.md)
-- **为什么产生：** 此来源记录了什么：当一支军队开始相信自己的背影？
-- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **当前结果：** 他可能只是看见前方的旗变了方向，几匹马逆着队列奔来。也许那是传令，也许主将正在调动一支小队，也许真正的战斗还远没有分出胜负。但他站得太低，看不见全局；箭矢和马蹄也不会给他时间核实。他后退一步，想为自己留下半息余地。
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `docs/publication/works/when-an-army-believes-its-own-back.md`, `REPOSITORY_HISTORY_SOURCE`
-- **演化历史：** 2026-07-16: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `WRITING_PUBLICATION`
-- **可搜索名称：** `当一支军队开始相信自己的背影`, `when-an-army-believes-its-own-back`

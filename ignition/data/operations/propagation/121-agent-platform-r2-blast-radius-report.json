@@ -70,7 +70,7 @@
   "source_authority_sha256": {
     "data/operations/change-propagation-topology.json": "a8a68cac1f683562e758383d870e78878308cc73d3b7eec34a6c80d7ba31314b",
     "data/operations/project-components.json": "f0f90ca8223ef07087aca3d871812a1e8b185b3dd032e5225455597837591404",
-    "data/operations/propagation/agent-platform-r2-propagation-contract.json": "cbf22e721551ec44ea7572bd0da513a2264f1cbb927bf97493ad4bf2a3be7859",
+    "data/operations/propagation/agent-platform-r2-propagation-contract.json": "6ece56835f87a2ca4ca7f4ec96134e3ad0d10cf839628ba37b116fa24e917656",
     "tools/propagation/impact_contract.py": "508343ed447547856c734f12e86e8955746f86c870236a61acdfc6272854bfc5"
   },
   "status": "PASS",

@@ -6,6 +6,11 @@
 
 - [PRIVATE_PROVENANCE_WITHHELD](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-5289b98b96ad34b7 / PRIVATE_PROVENANCE_WITHHELD
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D516；被引用：—
+- [PRIVATE_PROVENANCE_WITHHELD](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-e4c9afab38c18555 / PRIVATE_PROVENANCE_WITHHELD
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：D517；被引用：—
@@ -1869,6 +1874,11 @@
   - 可搜索名称：NFC-ead8868c2aa4f1b2 / `STRUCTURALLY_VALID`**: the projection satisfied a structural/formal condition. Structure does not establish empirical s
   - 来源：`docs/architecture/getnote-1329-epistemic-governance-pressure-test.md`
   - 依赖：—；被引用：—
+- [`SymPy unavailable` residual. This audit does not alter any proof, claim,](../../../reports/architecture/external-agent-interface-audit-r1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-f0f293e1ddb31697 / `SymPy unavailable` residual. This audit does not alter any proof, claim,
+  - 来源：`reports/architecture/external-agent-interface-audit-r1.md`
+  - 依赖：—；被引用：—
 - [`T10` 缓存倒U型 / cache inverted-U curve: MULTIPLE_CONFLICTING_SOURCES; missing=direct local note path or raw source artifac](../../../reports/math-foundation/provenance-audit-20260712.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-e60d95dad4ee659a / `T10` 缓存倒U型 / cache inverted-U curve: MULTIPLE_CONFLICTING_SOURCES; missing=direct local note path or raw source artifac
@@ -2229,6 +2239,16 @@
   - 可搜索名称：NFC-496c6570c58ef110 / An iterative NP lifecycle and library learning are explicit, but artifact identity, provenance, versions, approvals, dep
   - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
   - 依赖：—；被引用：—
+- [APPROVAL_DECISION_STATES = frozenset({"APPROVED", "WAITING_FOR_APPROVAL", "WAITING_EXTERNAL_APPROVAL", "BLOCKED_WITH_EVI](../../../agent_federation/approval_handoff.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-f30d1b3ac74f5dfd / APPROVAL_DECISION_STATES = frozenset({"APPROVED", "WAITING_FOR_APPROVAL", "WAITING_EXTERNAL_APPROVAL", "BLOCKED_WITH_EVI
+  - 来源：`agent_federation/approval_handoff.py`
+  - 依赖：—；被引用：—
+- [APPROVAL_OBSERVATION_STATES = frozenset({"NOT_REQUESTED", "WAITING", "APPROVED", "DENIED"})](../../../agent_federation/approval_handoff.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-7e22d2e68970a3de / APPROVAL_OBSERVATION_STATES = frozenset({"NOT_REQUESTED", "WAITING", "APPROVED", "DENIED"})
+  - 来源：`agent_federation/approval_handoff.py`
+  - 依赖：—；被引用：—
 - [Architecture rebuild summary](../../ASSET-CARDS.md#asset-hr-9ba686d027762485)
   - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
   - 可搜索名称：Architecture rebuild summary / architecture-rebuild-summary-20260712
@@ -2480,24 +2500,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-ba4c28434ca131bf / Case layer remains separate evidence space.
   - 来源：`inputs/020/formal-protocol-promotion-standard.md`
-  - 依赖：—；被引用：—
-- [Case 层** 是已验证的现实/跨域案例（C 编号），由函数层实例化支撑。](../../../docs/protocols/protocol-architecture.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-25e7d361b52c6084 / Case 层** 是已验证的现实/跨域案例（C 编号），由函数层实例化支撑。
-  - 来源：`docs/protocols/protocol-architecture.md`
-  - 依赖：—；被引用：—
-- [Case 层是已验证实例（C 编号，current 至 C-809 级），由函数层支撑。](../../../docs/protocols/protocol-architecture.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-eb4d95b43ec98128 / Case 层是已验证实例（C 编号，current 至 C-809 级），由函数层支撑。
-  - 来源：`docs/protocols/protocol-architecture.md`
-  - 依赖：—；被引用：—
-- [Categorical/Bernoulli training choices are formal stochastic mechanisms, but no calibrated uncertainty, probabilistic fu](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-b75b2c8d5d38aca0 / Categorical/Bernoulli training choices are formal stochastic mechanisms, but no calibrated uncertainty, probabilistic fu
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
-  - 依赖：—；被引用：—
-- [Causal reachability is not actual causation; high probability is not strong causality; network adjacency, similarity, ce](../../../llms.txt)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-5fff1f05b5b59177 / Causal reachability is not actual causation; high probability is not strong causality; network adjacency, similarity, ce
-  - 来源：`llms.txt`
   - 依赖：—；被引用：—

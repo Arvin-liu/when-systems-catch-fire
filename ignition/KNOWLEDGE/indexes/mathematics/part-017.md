@@ -4,6 +4,101 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [潜意识内容S通过觉知阈值θ_a进入意识域C：C(x)=1\[φ(S(x))>θ_a\]，其中φ为映射函数，觉知过程是可训练的（dφ/dT>0）](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-db093a081c4fd76d / 潜意识内容S通过觉知阈值θ_a进入意识域C：C(x)=1\[φ(S(x))>θ_a\]，其中φ为映射函数，觉知过程是可训练的（dφ/dT>0）
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [潜意识内容S通过觉知阈值θ_a进入意识域C：C(x)=1\[φ(S(x))>θ_a\]，其中φ为映射函数，觉知过程是可训练的（dφ/dT>0） **扩展注释 / Extended Annotation**](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-4ca83f9cf38f2cae / 潜意识内容S通过觉知阈值θ_a进入意识域C：C(x)=1\[φ(S(x))>θ_a\]，其中φ为映射函数，觉知过程是可训练的（dφ/dT>0） **扩展注释 / Extended Annotation**
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：—；被引用：—
+- [点火不是万能证明器；只有有可检查工件的具体命题才可获得相应 proof 状态。](../../../docs/USAGE.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-6460b499ca3d4462 / 点火不是万能证明器；只有有可检查工件的具体命题才可获得相应 proof 状态。
+  - 来源：`docs/USAGE.md`
+  - 依赖：—；被引用：—
+- [点火以 L0 来源与证据、L1 受控命题、L2 形式对象、L3 逻辑论证、L4 数学模型与证明、L5 验证与有效性、L6 解释/应用/出版组织仓库。L6 只能引用 L0—L5，不能反向制造真值。](../../../SUMMARY.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-88b7385f8ba2981c / 点火以 L0 来源与证据、L1 受控命题、L2 形式对象、L3 逻辑论证、L4 数学模型与证明、L5 验证与有效性、L6 解释/应用/出版组织仓库。L6 只能引用 L0—L5，不能反向制造真值。
+  - 来源：`SUMMARY.md`
+  - 依赖：—；被引用：—
+- [点火允许知识增长，但禁止“断言地位”因为项目规模、叙事力量、工程成熟度、重复引用、跨域对应、模型美感、写作完成度或 Agent 共识而自动膨胀。`claim` 的 scope、evidence、proof、logic、M/E、provena](../../../docs/architecture/epistemic-governance-kernel-and-federated-planes.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-6e3a48806186e06b / 点火允许知识增长，但禁止“断言地位”因为项目规模、叙事力量、工程成熟度、重复引用、跨域对应、模型美感、写作完成度或 Agent 共识而自动膨胀。`claim` 的 scope、evidence、proof、logic、M/E、provena
+  - 来源：`docs/architecture/epistemic-governance-kernel-and-federated-planes.md`
+  - 依赖：—；被引用：—
+- [点火充要条件](../../../analysis/corpus-relation/cluster_source_briefs/C000.md)
+  - 类型/状态：`FUNCTION_ASSET` · `DOWNGRADE_TO_CONJECTURE`
+  - 可搜索名称：T1 / 点火充要条件 / T1
+  - 来源：`analysis/corpus-relation/cluster_source_briefs/C000.md`
+  - 依赖：A2, A3；被引用：NFC-1848bc7b7e9cb24d, NFC-1a474a499ae646c9, NFC-2dc62de181c811cf, NFC-3471d032e8287ce3
+- [点火充要条件 / ignition necessary and sufficient condition](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-ef7b76842aa90d29 / 点火充要条件 / ignition necessary and sufficient condition
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：—；被引用：—
+- [点火可以和真实数据一起用，这样函数不是只停留在语言上，而是可以被验证或推翻。](../../../docs/data_integration.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-45ad34c8ce993a5a / 点火可以和真实数据一起用，这样函数不是只停留在语言上，而是可以被验证或推翻。
+  - 来源：`docs/data_integration.md`
+  - 依赖：—；被引用：—
+- [点火增量输出包括 claim、argument、formal object、mechanism、map、gap、residue、Q12—Q14 输出、MCF／PSD／ARN／Atlas 投影、分析报告与完成 provenance captu](../../../reports/operations/121Q31-interactive-system-map-and-writing-source-pool-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-4bc39c46539712c2 / 点火增量输出包括 claim、argument、formal object、mechanism、map、gap、residue、Q12—Q14 输出、MCF／PSD／ARN／Atlas 投影、分析报告与完成 provenance captu
+  - 来源：`reports/operations/121Q31-interactive-system-map-and-writing-source-pool-audit.md`
+  - 依赖：—；被引用：—
+- [点火对冲函数](../../../data/foundation/adjudications/079-method-audit.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D37 / 点火对冲函数 / D37
+  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
+  - 依赖：A7, D1, D90；被引用：NFC-501f62725223d3ad, NFC-b6a32a782ddcf3a3
+- [点火对冲，意识、退出权信号、退化免疫、抵抗的平衡。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-a85502dad9c432b1 / 点火对冲，意识、退出权信号、退化免疫、抵抗的平衡。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [点火对冲，意识、退出权信号、退化免疫、抵抗的平衡。 **扩展注释 / Extended Annotation**](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-856bff04b40c153e / 点火对冲，意识、退出权信号、退化免疫、抵抗的平衡。 **扩展注释 / Extended Annotation**
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：—；被引用：—
+- [点火把一次变更拆成可审计的传播、执行与阶段记录三步，不提升生命周期、不制造新的真值层：](../../../docs/USAGE.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-9d8f7f3b0d445bfb / 点火把一次变更拆成可审计的传播、执行与阶段记录三步，不提升生命周期、不制造新的真值层：
+  - 来源：`docs/USAGE.md`
+  - 依赖：—；被引用：—
+- [点火是一套面向跨领域材料的、证据可追溯、对象类型明确、推理过程可检查、结论等级可审计的形式化机制发现与建模系统。它不是现成的统一数学理论、物理理论、万能证明器，也不是纯文学或纯哲学知识库。](../../../docs/PROJECT-ARCHITECTURE.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-34d32c1dddfb21a8 / 点火是一套面向跨领域材料的、证据可追溯、对象类型明确、推理过程可检查、结论等级可审计的形式化机制发现与建模系统。它不是现成的统一数学理论、物理理论、万能证明器，也不是纯文学或纯哲学知识库。
+  - 来源：`docs/PROJECT-ARCHITECTURE.md`
+  - 依赖：—；被引用：—
+- [点火框架不能替代公理系统内证明；](../../../docs/discipline_kernel_pilot.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a0ee0c7c6d4237ff / 点火框架不能替代公理系统内证明；
+  - 来源：`docs/discipline_kernel_pilot.md`
+  - 依赖：—；被引用：—
+- [点火框架中的结论分为不同层级。为了避免把结构性推论误读为外部学科证明，所有重要结论应尽量标注断言等级。](../../../docs/claim_levels.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-078d2c3db9140985 / 点火框架中的结论分为不同层级。为了避免把结构性推论误读为外部学科证明，所有重要结论应尽量标注断言等级。
+  - 来源：`docs/claim_levels.md`
+  - 依赖：—；被引用：—
+- [点火框架可分析该问题的结构张力，但不能给出复杂性理论证明](../../../data/foundation/arguments/arguments.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-6a0e3a134bcc9854 / 点火框架可分析该问题的结构张力，但不能给出复杂性理论证明
+  - 来源：`data/foundation/arguments/arguments.jsonl`
+  - 依赖：—；被引用：—
+- [点火框架可对黎曼猜想进行结构性重写，但不能替代数学证明](../../../data/foundation/arguments/arguments.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-35efb664f971e015 / 点火框架可对黎曼猜想进行结构性重写，但不能替代数学证明
+  - 来源：`data/foundation/arguments/arguments.jsonl`
+  - 依赖：—；被引用：—
+- [点火框架在这里提供的是结构性解释路径，而不是学科内证明。](../../../docs/publication_risk_checklist.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-5743609f748b2c7a / 点火框架在这里提供的是结构性解释路径，而不是学科内证明。
+  - 来源：`docs/publication_risk_checklist.md`
+  - 依赖：—；被引用：—
 - [点火框架提供了结构性边界推论和理论收敛方向，但不能替代数学证明。P vs NP 问题本身必须 pending。](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-e730bef6803894b6 / 点火框架提供了结构性边界推论和理论收敛方向，但不能替代数学证明。P vs NP 问题本身必须 pending。
@@ -129,6 +224,11 @@
   - 可搜索名称：D10 / 点火窗口函数 / D10
   - 来源：`FOUNDATION-64-PROPAGATION.jsonl`
   - 依赖：D1, D90；被引用：T39, NFC-18f831cdbf905af4, NFC-1da382c21fae87df
+- [点火负责“为什么做、做到哪里、由谁做、怎样证明、怎样记住”；外部智能体负责“具体怎么动手”。](../../../docs/architecture/external-agent-federation-r1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-0c1be1902cbe7fd8 / 点火负责“为什么做、做到哪里、由谁做、怎样证明、怎样记住”；外部智能体负责“具体怎么动手”。
+  - 来源：`docs/architecture/external-agent-federation-r1.md`
+  - 依赖：—；被引用：—
 - [点火项目不是大一统理论，也不是解释一切的终极框架。它是一个好奇心驱动的跨域结构化分析工具：把诗歌、摄影、阅读、学习和现实观察中产生的跨域问题感，约束到函数、案例、证据制度、失败类型和 pending 机制中，使复杂问题的分析更可检查、更克制](../../../docs/author_motivation_and_boundary_note.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-5098919d3fded60e / 点火项目不是大一统理论，也不是解释一切的终极框架。它是一个好奇心驱动的跨域结构化分析工具：把诗歌、摄影、阅读、学习和现实观察中产生的跨域问题感，约束到函数、案例、证据制度、失败类型和 pending 机制中，使复杂问题的分析更可检查、更克制
@@ -863,9 +963,9 @@
   - 可搜索名称：NFC-3e2731dada5cce5b / 第一个大型 Domain Pack，而不是整个系统本体。R2 将 Kernel、R1 本地行动层、
   - 来源：`RESULTS/LATEST.md`
   - 依赖：—；被引用：—
-- [第一个大型 Domain Pack，而不是整个系统本体。要理解这句话的工程含义，读](../../../HUMAN-READING.md)
+- [第一个大型 Domain Pack，而不是整个系统本体。Task 122 的 External Agent](../../../HUMAN-READING.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-7386cca9cbf0080c / 第一个大型 Domain Pack，而不是整个系统本体。要理解这句话的工程含义，读
+  - 可搜索名称：NFC-e3c9a18cbc5db659 / 第一个大型 Domain Pack，而不是整个系统本体。Task 122 的 External Agent
   - 来源：`HUMAN-READING.md`
   - 依赖：—；被引用：—
 - [第三步：在第二步（元协议生成层数据/文档）基础上，对点火项目本体做整体版本升级。指令：IGNITION-20260709-003。](../../../outputs/audit/project-body-version-upgrade-audit-20260709.md)
@@ -2398,103 +2498,3 @@
   - 可搜索名称：NFC-ddd838efa015622d / 已迁移的历史函数来源/0229-D193-认知时空度规函数.md
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：D193；被引用：—
-- [已迁移的历史函数来源/0230-D194-认知黑洞函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-dafb53d040558fc1 / 已迁移的历史函数来源/0230-D194-认知黑洞函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D194；被引用：—
-- [已迁移的历史函数来源/0231-D195-认知宇宙学函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-f0c1c86d18f8d71f / 已迁移的历史函数来源/0231-D195-认知宇宙学函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D195；被引用：—
-- [已迁移的历史函数来源/0232-D196-量子隧穿-门槛突破函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-129d24b6b1fbef77 / 已迁移的历史函数来源/0232-D196-量子隧穿-门槛突破函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D196；被引用：—
-- [已迁移的历史函数来源/0233-D197-退相干-门槛锁定函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-59946e1659d24a47 / 已迁移的历史函数来源/0233-D197-退相干-门槛锁定函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D197；被引用：—
-- [已迁移的历史函数来源/0234-D198-Fisher信息-门控距离函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-be001ecfe671ae6b / 已迁移的历史函数来源/0234-D198-Fisher信息-门控距离函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D198；被引用：—
-- [已迁移的历史函数来源/0235-D199-相变序参量-门槛函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-1d5bbce2196b0f46 / 已迁移的历史函数来源/0235-D199-相变序参量-门槛函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D199；被引用：—
-- [已迁移的历史函数来源/0236-D179-因果光锥统一函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-ecd3ff2722636ac1 / 已迁移的历史函数来源/0236-D179-因果光锥统一函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D179；被引用：—
-- [已迁移的历史函数来源/0236-D200-重整化群-门槛标度函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-33543166ca61797a / 已迁移的历史函数来源/0236-D200-重整化群-门槛标度函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D200；被引用：—
-- [已迁移的历史函数来源/0237-D201-临界指数-门槛标度函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-56c260bceed55a49 / 已迁移的历史函数来源/0237-D201-临界指数-门槛标度函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D201；被引用：—
-- [已迁移的历史函数来源/0238-D202-关联长度-门槛函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-ad96769b22075d3d / 已迁移的历史函数来源/0238-D202-关联长度-门槛函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D202；被引用：—
-- [已迁移的历史函数来源/0239-D203-配分函数-门控和函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-dbf39489294698e6 / 已迁移的历史函数来源/0239-D203-配分函数-门控和函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D203；被引用：—
-- [已迁移的历史函数来源/0240-D204-自由能-门控势能函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-fdfc31713d879490 / 已迁移的历史函数来源/0240-D204-自由能-门控势能函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D204；被引用：—
-- [已迁移的历史函数来源/0241-D205-涨落-耗散定理-门槛函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-e0aee96b8bdbfc00 / 已迁移的历史函数来源/0241-D205-涨落-耗散定理-门槛函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D205；被引用：—
-- [已迁移的历史函数来源/0242-D206-玻尔兹曼分布-门槛分布函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-e6990f739f25e76f / 已迁移的历史函数来源/0242-D206-玻尔兹曼分布-门槛分布函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D206；被引用：—
-- [已迁移的历史函数来源/0243-D207-费米-狄拉克.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-8d986e053e9f2dbb / 已迁移的历史函数来源/0243-D207-费米-狄拉克.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D207；被引用：—
-- [已迁移的历史函数来源/0244-D208-热传导方程-门槛扩散函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-871130f5c388966d / 已迁移的历史函数来源/0244-D208-热传导方程-门槛扩散函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D208；被引用：—
-- [已迁移的历史函数来源/0245-D209-渗透率.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-ca8bbdf88a224cd3 / 已迁移的历史函数来源/0245-D209-渗透率.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D209；被引用：—
-- [已迁移的历史函数来源/0246-D210-最小作用量原理-门槛优化函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-e5c06d8ea8805463 / 已迁移的历史函数来源/0246-D210-最小作用量原理-门槛优化函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D210；被引用：—
-- [已迁移的历史函数来源/0247-D211-宇宙学常数-门槛函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-bb986c0f9cc4f923 / 已迁移的历史函数来源/0247-D211-宇宙学常数-门槛函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D211；被引用：—
-- [已迁移的历史函数来源/0248-D212-暗物质-门控隐形函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-957ffa2c01a6c30f / 已迁移的历史函数来源/0248-D212-暗物质-门控隐形函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D212；被引用：—

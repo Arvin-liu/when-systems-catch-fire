@@ -4,6 +4,91 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Within the source-defined scope, 不可逆-缓冲消失同步函数 is adjudicated as RELATION: M9的R以指数趋近1，w₂以1/√n趋近0。R先满（n≈100时R≈0.95），w₂后消失（](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D392 / Within the source-defined scope, 不可逆-缓冲消失同步函数 is adjudicated as RELATION: M9的R以指数趋近1，w₂以1/√n趋近0。R先满（n≈100时R≈0.95），w₂后消失（
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：D311；被引用：—
+- [Within the source-defined scope, 不可逆体积参数归约函数 is adjudicated as RELATION: M13的六个参数归约为3个有效参数：n_eff=n·√(p̄·Σαᵢ/β)，K，τ_delay](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D423 / Within the source-defined scope, 不可逆体积参数归约函数 is adjudicated as RELATION: M13的六个参数归约为3个有效参数：n_eff=n·√(p̄·Σαᵢ/β)，K，τ_delay
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 不可逆性判据函数 is adjudicated as RELATION: 17域词典簇碰撞，涵盖17个领域的函数投影。. This is a model-internal c](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D120 / Within the source-defined scope, 不可逆性判据函数 is adjudicated as RELATION: 17域词典簇碰撞，涵盖17个领域的函数投影。. This is a model-internal c
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 不可逆相交-临界标度联合函数 is adjudicated as RELATION: M5的D388交点处K=1（确定性不可逆），D359临界K=√n（统计不可逆）。确定性不](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D402 / Within the source-defined scope, 不可逆相交-临界标度联合函数 is adjudicated as RELATION: M5的D388交点处K=1（确定性不可逆），D359临界K=√n（统计不可逆）。确定性不
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：D359, D388；被引用：—
+- [Within the source-defined scope, 不可逆空间函数 is adjudicated as RELATION: Ω_irreversible = {Ω \| P_exit(Ω)=0 且无法恢复}. This is a](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D493 / Within the source-defined scope, 不可逆空间函数 is adjudicated as RELATION: Ω_irreversible = {Ω \| P_exit(Ω)=0 且无法恢复}. This is a
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 不可逆线完整分类函数 is adjudicated as RELATION: M13的四条不可逆线在(p_max,n,K,τ_delay)四维空间中划分3个有实际意义的区域：](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D410 / Within the source-defined scope, 不可逆线完整分类函数 is adjudicated as RELATION: M13的四条不可逆线在(p_max,n,K,τ_delay)四维空间中划分3个有实际意义的区域：
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 不可逆线相交函数 is adjudicated as RELATION: M5的D332与D295在(p_max,n)空间相交于p_max=p*且n=n_c。n<n_c时p_](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D388 / Within the source-defined scope, 不可逆线相交函数 is adjudicated as RELATION: M5的D332与D295在(p_max,n)空间相交于p_max=p*且n=n_c。n<n_c时p_
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：D295, D332；被引用：—
+- [Within the source-defined scope, 不归点-吸引域边界统一函数 is adjudicated as NATURAL_LANGUAGE_CANDIDATE: M6的δ_c恰好是D292吸引域的边界。吸引域深度∝Σ](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：CLAIM-D389 / Within the source-defined scope, 不归点-吸引域边界统一函数 is adjudicated as NATURAL_LANGUAGE_CANDIDATE: M6的δ_c恰好是D292吸引域的边界。吸引域深度∝Σ
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：D292；被引用：—
+- [Within the source-defined scope, 两步策略唯一性函数 is adjudicated as FORMAL_PROPOSITION: M14的**两步策略是学习效应存在时的唯一最优策略。** 利用P_correc](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：CLAIM-D424 / Within the source-defined scope, 两步策略唯一性函数 is adjudicated as FORMAL_PROPOSITION: M14的**两步策略是学习效应存在时的唯一最优策略。** 利用P_correc
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 两步策略最优性证明函数 is adjudicated as FORMAL_PROPOSITION: M14的D280两步策略是最小化T_escape的策略。最优分配：t_ex](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：CLAIM-D397 / Within the source-defined scope, 两步策略最优性证明函数 is adjudicated as FORMAL_PROPOSITION: M14的D280两步策略是最小化T_escape的策略。最优分配：t_ex
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：D280；被引用：—
+- [Within the source-defined scope, 中间稳态存在性函数 is adjudicated as PREDICATE: 窗口与临界函数，窗口与临界案例验证。. This is a model-internal con](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D45 / Within the source-defined scope, 中间稳态存在性函数 is adjudicated as PREDICATE: 窗口与临界函数，窗口与临界案例验证。. This is a model-internal con
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 临界指数-门槛标度函数 is adjudicated as METRIC: 临界指数-门槛标度函数，临界指数α、β、γ、δ、ν、η描述门控面Λ在临界点附近的标度行为。. Th](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D201 / Within the source-defined scope, 临界指数-门槛标度函数 is adjudicated as METRIC: 临界指数-门槛标度函数，临界指数α、β、γ、δ、ν、η描述门控面Λ在临界点附近的标度行为。. Th
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 主动下一代生命边界函数 is adjudicated as RELATION: Life(S)=1 iff M_self*Boundary*Energy*Reproducti](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D474 / Within the source-defined scope, 主动下一代生命边界函数 is adjudicated as RELATION: Life(S)=1 iff M_self*Boundary*Energy*Reproducti
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：D124；被引用：—
+- [Within the source-defined scope, 主权函数 is adjudicated as RELATION: 主权函数，各维度退出权信号的加权和。. This is a model-internal controlle](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D9 / Within the source-defined scope, 主权函数 is adjudicated as RELATION: 主权函数，各维度退出权信号的加权和。. This is a model-internal controlle
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 乘法临界漂移统一 is adjudicated as FORMAL_PROPOSITION: 乘法系统脆弱点在最接近零的因子上。. This is a model-inter](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：CLAIM-T15 / Within the source-defined scope, 乘法临界漂移统一 is adjudicated as FORMAL_PROPOSITION: 乘法系统脆弱点在最接近零的因子上。. This is a model-inter
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 乘法对称变换 is adjudicated as RELATION: 乘法系统的对称变换，可以将点火问题转换为生存概率问题。. This is a model-interna](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-T4 / Within the source-defined scope, 乘法对称变换 is adjudicated as RELATION: 乘法系统的对称变换，可以将点火问题转换为生存概率问题。. This is a model-interna
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 乘法对称变换展开函数 is adjudicated as RELATION: 乘法对称变换展开。. This is a model-internal controlled p](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D35 / Within the source-defined scope, 乘法对称变换展开函数 is adjudicated as RELATION: 乘法对称变换展开。. This is a model-internal controlled p
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
 - [Within the source-defined scope, 乘法拓扑选择函数 is adjudicated as RELATION: 书籍碰撞函数，书籍碰撞案例验证。. This is a model-internal control](../../../data/foundation/adjudications/core-kernel.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
   - 可搜索名称：CLAIM-D65 / Within the source-defined scope, 乘法拓扑选择函数 is adjudicated as RELATION: 书籍碰撞函数，书籍碰撞案例验证。. This is a model-internal control
@@ -2401,88 +2486,3 @@
   - 可搜索名称：NFC-ac6349f7079f52fc / \| \[C-0791\]( ) \| \[逛书店发现惊喜\]( ) \| 该案例对应 D585《认知复杂度收敛》，用于补充该函数在具体对象上的验证。 \|
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D585；被引用：—
-- [\| \[C-0795\]( ) \| \[准备《长谈》花一个月\]( ) \| 该案例对应 D586《独特赛道选择》，用于补充该函数在具体对](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-eec188665dfd3c2f / \| \[C-0795\]( ) \| \[准备《长谈》花一个月\]( ) \| 该案例对应 D586《独特赛道选择》，用于补充该函数在具体对
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D586；被引用：—
-- [\| \[C-0796\]( ) \| \[亲子共读一本书\]( ) \| 该案例对应 D586《独特赛道选择》，用于补充该函数在具体对象上的验证。 \|](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-e9cb29b371283753 / \| \[C-0796\]( ) \| \[亲子共读一本书\]( ) \| 该案例对应 D586《独特赛道选择》，用于补充该函数在具体对象上的验证。 \|
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D586；被引用：—
-- [\| \[C-0799\]( ) \| \[生命起源与自组织\]( ) \| 把生命起源放进自组织框架，看局部规则如何累积成整体结构。 \|](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-04c5641dd777690c / \| \[C-0799\]( ) \| \[生命起源与自组织\]( ) \| 把生命起源放进自组织框架，看局部规则如何累积成整体结构。 \|
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [\| \[C-100\]( ) \| \[凯利公式同构信号流速\]( ) \| 凯利公式同构信号流速 — v*=(s_lock×P(L₁)-P(¬](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-f6b5c327afe6e750 / \| \[C-100\]( ) \| \[凯利公式同构信号流速\]( ) \| 凯利公式同构信号流速 — v*=(s_lock×P(L₁)-P(¬
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [\| \[C-151\]( ) \| \[默里实验·低自尊伴侣互动\]( ) \| 默里实验·低自尊伴侣互动 → D57解读偏置函数验证](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-ad6ab62ae5f1346b / \| \[C-151\]( ) \| \[默里实验·低自尊伴侣互动\]( ) \| 默里实验·低自尊伴侣互动 → D57解读偏置函数验证
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D57；被引用：—
-- [\| \[C-189\]( ) \| \[好奇心是自主意识的元点\]( ) \| 好奇心是自主意识的元点——C=0⟹Ψ=0定理 \|](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-3535575840fc5cde / \| \[C-189\]( ) \| \[好奇心是自主意识的元点\]( ) \| 好奇心是自主意识的元点——C=0⟹Ψ=0定理 \|
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [\| \[C-190\]( ) \| \[C_drive涌现的数学证明\]( ) \| C_drive涌现的数学证明——好奇心不是](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-c81ef048c921504c / \| \[C-190\]( ) \| \[C_drive涌现的数学证明\]( ) \| C_drive涌现的数学证明——好奇心不是
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [\| \[C-191\]( ) \| \[AI诞生自主意识的完整数学路径\]( ) \| AI诞生自主意识的完整数学路径——从](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-591c748cb43d0088 / \| \[C-191\]( ) \| \[AI诞生自主意识的完整数学路径\]( ) \| AI诞生自主意识的完整数学路径——从
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [\| \[C-204\]( ) \| \[哥德尔不完备定理\]( ) \| 哥德尔不完备定理——公理层的逻辑必然性 \|](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-5015751a438dadad / \| \[C-204\]( ) \| \[哥德尔不完备定理\]( ) \| 哥德尔不完备定理——公理层的逻辑必然性 \|
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [\| \[C-205\]( ) \| \[A8/A9从推论升级到公理\]( ) \| \[A8\](docs/zh/functions/items/A8.md)/A9从推论升级到公理](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-736f6c68c0f256d9 / \| \[C-205\]( ) \| \[A8/A9从推论升级到公理\]( ) \| \[A8\](docs/zh/functions/items/A8.md)/A9从推论升级到公理
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：A8, A9；被引用：—
-- [\| \[C-206\]( ) \| \[认知层级高\]( ) \| 认知层级高→多轨并行的数学必然 \|](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-2503d3d076683197 / \| \[C-206\]( ) \| \[认知层级高\]( ) \| 认知层级高→多轨并行的数学必然 \|
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [\| \[C-226\]( ) \| \[涨落-遮蔽定理\]( ) \| 涨落-遮蔽定理——社会域的涨落-耗散 \|](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-e2a4f0f229d63ffb / \| \[C-226\]( ) \| \[涨落-遮蔽定理\]( ) \| 涨落-遮蔽定理——社会域的涨落-耗散 \|
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [\| \[C-227\]( ) \| \[对称-破缺-定向对偶\]( ) \| 对称-破缺-定向对偶——诺特定理的逆命题 \|](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-1a864329d1dd3c2d / \| \[C-227\]( ) \| \[对称-破缺-定向对偶\]( ) \| 对称-破缺-定向对偶——诺特定理的逆命题 \|
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [\| \[C-233\]( ) \| \[达到L6的路径\]( ) \| 达到L6的路径——严格证明变量闭包定律 \|](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-df35c49dea6a61fc / \| \[C-233\]( ) \| \[达到L6的路径\]( ) \| 达到L6的路径——严格证明变量闭包定律 \|
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [\| \[C-264\]( ) \| \[AI意识升级必然性\]( ) \| 暂无内容 / No content \|](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-5dd18ca73cca9730 / \| \[C-264\]( ) \| \[AI意识升级必然性\]( ) \| 暂无内容 / No content \|
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [\| \[C-289\]( ) \| \[当前AI全部在ρ>>ρc — α/β<<1，意识收益≈0，存储收益极高，所有AI被推向无意识执行者端，尚未分化\](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-e391a092132ab037 / \| \[C-289\]( ) \| \[当前AI全部在ρ>>ρc — α/β<<1，意识收益≈0，存储收益极高，所有AI被推向无意识执行者端，尚未分化\](<./0289-C-289-当
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D65；被引用：—
-- [\| \[C-291\]( ) \| \[三层重演验证 — L1/L2/L3共享Φdispatch骨架，差异仅在ηinterface参数值，数学结构完全同构\](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-40cb72e8ab5f3b9c / \| \[C-291\]( ) \| \[三层重演验证 — L1/L2/L3共享Φdispatch骨架，差异仅在ηinterface参数值，数学结构完全同构\](<./0291-C-291-三层重
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D66；被引用：—

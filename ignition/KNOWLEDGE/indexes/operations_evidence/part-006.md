@@ -4,6 +4,46 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [\| 同构误判 \| 弱类比冒充同构 \| I_iso \| 降级为类比 \|](../../../outputs/getbrain/failure-typology-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-98bce4c901d5ab64 / \| 同构误判 \| 弱类比冒充同构 \| I_iso \| 降级为类比 \|
+  - 来源：`outputs/getbrain/failure-typology-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [\| 数据 schema \| `data/schemas/` \| 上述七类数据对应的 JSON schema \|](../../../docs/getbrain-handoff-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-64e695d4f8ddf838 / \| 数据 schema \| `data/schemas/` \| 上述七类数据对应的 JSON schema \|
+  - 来源：`docs/getbrain-handoff-20260708.md`
+  - 依赖：—；被引用：—
+- [\| 时制／体貌／终点 \| 时间主要由体标记、时间词、词汇和语境组织；`了、着、过、在` 不一一对应英语时制。 \| `了` 被机械当过去完成，或过程被翻成已达终点。 \|](../../../docs/language-thought/profiles/zh-hans.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-9fba56df0def3204 / \| 时制／体貌／终点 \| 时间主要由体标记、时间词、词汇和语境组织；`了、着、过、在` 不一一对应英语时制。 \| `了` 被机械当过去完成，或过程被翻成已达终点。 \|
+  - 来源：`docs/language-thought/profiles/zh-hans.md`
+  - 依赖：—；被引用：—
+- [\| 结构性统一 \| 多领域共享同构、门控、约束、收敛结构 \| 可以（L1-L2） \|](../../../outputs/getbrain/project-position-update-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-17af45cc473c3c81 / \| 结构性统一 \| 多领域共享同构、门控、约束、收敛结构 \| 可以（L1-L2） \|
+  - 来源：`outputs/getbrain/project-position-update-20260706.md`
+  - 依赖：—；被引用：—
+- [\| 输出跨域同构汇总 \| ✓ \|](../../../outputs/audit/cross-domain-smoke-test-audit-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-9026bf124ab59f6a / \| 输出跨域同构汇总 \| ✓ \|
+  - 来源：`outputs/audit/cross-domain-smoke-test-audit-20260708.md`
+  - 依赖：—；被引用：—
+- [\|快速读懂一篇长文\|\[分层阅读\](../../READING-LAYERS.md)\|对应完整来源、\[统一资产卡\](../../ASSET-CARDS.md)\|](../../../HUMAN-READING.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-cd3d0bb56dce01f7 / \|快速读懂一篇长文\|\[分层阅读\](../../READING-LAYERS.md)\|对应完整来源、\[统一资产卡\](../../ASSET-CARDS.md)\|
+  - 来源：`HUMAN-READING.md`
+  - 依赖：—；被引用：—
+- [\|跨域映射\|大量对应只达到结构隐喻或研究假设。\|对象集合、映射、双射/同态条件、保持结构与反例。\|相似性不能稳定保持时不得称同构。\|](../../../RESULTS/OPEN-QUESTIONS.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-850ad71b7466f040 / \|跨域映射\|大量对应只达到结构隐喻或研究假设。\|对象集合、映射、双射/同态条件、保持结构与反例。\|相似性不能稳定保持时不得称同构。\|
+  - 来源：`RESULTS/OPEN-QUESTIONS.md`
+  - 依赖：—；被引用：—
+- [ΔΘ = Θ - min Φ = 0](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-0923FD51EF01A1CB / ΔΘ = Θ - min Φ = 0 / IMPLICIT-0923FD51EF01A1CB / IMPLICIT-1A9DA4161A0E8200
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
 - [ΔΘ = Θ - min Φ = 0](../../../docs/phi_meta_law.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-1A9DA4161A0E8200 / ΔΘ = Θ - min Φ = 0 / IMPLICIT-1A9DA4161A0E8200 / IMPLICIT-0923FD51EF01A1CB

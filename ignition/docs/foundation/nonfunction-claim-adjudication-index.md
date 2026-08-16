@@ -4,11 +4,11 @@
 
 ## 闭合摘要
 
-- 已核算跟踪文件：3848
-- 候选片段：28167
-- 规范断言：15524
+- 已核算跟踪文件：3908
+- 候选片段：28567
+- 规范断言：15899
 - 既有断言映射：678
-- 显式隔离或待决：4432
+- 显式隔离或待决：4615
 - 依赖边：5615
 - 公共表面当前越界：0
 - 活跃结论回弹：0
@@ -17,17 +17,17 @@
 
 |处置|数量|
 |---|---:|
-|ACCEPTED_AS_DEFINITION|2955|
+|ACCEPTED_AS_DEFINITION|3069|
 |ACCEPTED_AS_PROVED_MATHEMATICAL_RESULT|1|
-|HISTORICAL_ONLY|6671|
-|PENDING_EMPIRICAL_TEST|863|
-|PENDING_LITERATURE_ADJUDICATION|897|
-|PENDING_PROOF|638|
-|QUARANTINED_AMBIGUOUS|2031|
+|HISTORICAL_ONLY|6716|
+|PENDING_EMPIRICAL_TEST|864|
+|PENDING_LITERATURE_ADJUDICATION|911|
+|PENDING_PROOF|645|
+|QUARANTINED_AMBIGUOUS|2192|
 |REJECTED_FALSE_OR_INVALID|1|
 |RETAINED_AS_HEURISTIC|620|
 |RETAINED_AS_RESEARCH_HYPOTHESIS|287|
-|RETAINED_AS_STRUCTURAL_METAPHOR|555|
+|RETAINED_AS_STRUCTURAL_METAPHOR|588|
 |RETAINED_AS_TOY_MODEL|3|
 |REWRITE_AND_RETEST|1|
 |WITHDRAWN_UNSUPPORTED|1|
@@ -89,6 +89,7 @@
 |NFC-0f691ce96b1a769d|definition_audit:REQUIRES_HUMAN_REVIEW, quantifier_audit:FAIL, counterexample_audit:REQUIRES_HUMAN_REVIEW, internal_external_audit:FAIL, model_class_audit:REQUIRES_HUMAN_REVIEW, evidence_audit:FAIL|0|true|
 |NFC-1013abf2c5e34da7|definition_audit:REQUIRES_HUMAN_REVIEW, quantifier_audit:FAIL, counterexample_audit:REQUIRES_HUMAN_REVIEW, internal_external_audit:FAIL, model_class_audit:REQUIRES_HUMAN_REVIEW, evidence_audit:FAIL|0|true|
 |NFC-1045f9df9c525b3e|definition_audit:REQUIRES_HUMAN_REVIEW, counterexample_audit:REQUIRES_HUMAN_REVIEW, type_dimension_audit:REQUIRES_HUMAN_REVIEW, internal_external_audit:FAIL, cross_domain_audit:REQUIRES_HUMAN_REVIEW, evidence_audit:FAIL|0|true|
+|NFC-116b76064588ae50|definition_audit:REQUIRES_HUMAN_REVIEW, counterexample_audit:REQUIRES_HUMAN_REVIEW, type_dimension_audit:REQUIRES_HUMAN_REVIEW, internal_external_audit:FAIL, cross_domain_audit:REQUIRES_HUMAN_REVIEW, evidence_audit:FAIL|0|true|
 |NFC-12356ee92d7a544d|definition_audit:REQUIRES_HUMAN_REVIEW, quantifier_audit:FAIL, proof_audit:FAIL, counterexample_audit:REQUIRES_HUMAN_REVIEW, type_dimension_audit:REQUIRES_HUMAN_REVIEW, model_class_audit:REQUIRES_HUMAN_REVIEW|0|true|
 |NFC-126ddc5e7c1d50f2|definition_audit:REQUIRES_HUMAN_REVIEW, quantifier_audit:FAIL, proof_audit:FAIL, counterexample_audit:REQUIRES_HUMAN_REVIEW, type_dimension_audit:REQUIRES_HUMAN_REVIEW, model_class_audit:REQUIRES_HUMAN_REVIEW|0|true|
 |NFC-1377d625079a4b81|definition_audit:REQUIRES_HUMAN_REVIEW, quantifier_audit:FAIL, counterexample_audit:REQUIRES_HUMAN_REVIEW, type_dimension_audit:REQUIRES_HUMAN_REVIEW, model_class_audit:REQUIRES_HUMAN_REVIEW, cross_domain_audit:FAIL|0|true|
@@ -115,7 +116,6 @@
 |NFC-1e68116b161ce83b|definition_audit:REQUIRES_HUMAN_REVIEW, quantifier_audit:FAIL, counterexample_audit:REQUIRES_HUMAN_REVIEW, internal_external_audit:FAIL, model_class_audit:REQUIRES_HUMAN_REVIEW, evidence_audit:FAIL|0|true|
 |NFC-1ea101a0b4342e0e|definition_audit:REQUIRES_HUMAN_REVIEW, quantifier_audit:FAIL, counterexample_audit:REQUIRES_HUMAN_REVIEW, internal_external_audit:FAIL, model_class_audit:REQUIRES_HUMAN_REVIEW, evidence_audit:FAIL|0|true|
 |NFC-1ead70b9f991a2b8|definition_audit:REQUIRES_HUMAN_REVIEW, counterexample_audit:REQUIRES_HUMAN_REVIEW, type_dimension_audit:REQUIRES_HUMAN_REVIEW, internal_external_audit:FAIL, cross_domain_audit:REQUIRES_HUMAN_REVIEW, evidence_audit:FAIL|0|true|
-|NFC-20c33374e04b4eb1|definition_audit:REQUIRES_HUMAN_REVIEW, counterexample_audit:REQUIRES_HUMAN_REVIEW, type_dimension_audit:REQUIRES_HUMAN_REVIEW, internal_external_audit:FAIL, cross_domain_audit:FAIL, evidence_audit:FAIL|0|true|
 
 ## 权威边界
 
