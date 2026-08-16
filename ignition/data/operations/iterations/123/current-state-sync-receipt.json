@@ -1,0 +1,37 @@
+{
+  "schema_version": "current-state-sync-receipt-r1",
+  "task_id": "IGNITION-20260816-123",
+  "architecture_identity_impact": "PRESENTATION_ONLY",
+  "identity_contract_path": "ignition/data/architecture/current-system-identity.json",
+  "identity_epoch": "agent-platform-federation-r1",
+  "current_iteration_boundary": 122,
+  "surface_decisions": [
+    {"surface_id":"homepage-identity","path":".github/README.md","decision":"NO_CHANGE_WITH_REASON","reason":"Step 01 registers the already-described identity and adds the future gate; current prose synchronization is deferred to Step 03/07.","evidence":"Step 00 drift audit and Step 01 governance-only scope"},
+    {"surface_id":"project-current-state","path":"ignition/docs/project-current-state.md","decision":"NO_CHANGE_WITH_REASON","reason":"Step 01 does not repair Current prose; the known stale values remain explicitly recorded for Step 03.","evidence":"current-state-drift-audit-r1.json"},
+    {"surface_id":"ai-cold-start","path":"ignition/AI-START-HERE.md","decision":"NO_CHANGE_WITH_REASON","reason":"The existing cold-start identity is not rewritten before the contract is available to drive the synchronized edit.","evidence":"Step 01 contract and validator"},
+    {"surface_id":"ai-agents-handoff","path":"ignition/AI-HANDOFF.md","decision":"NO_CHANGE_WITH_REASON","reason":"The existing handoff is assessed but not changed in this governance-only step.","evidence":"Step 00 audit CSA-009"},
+    {"surface_id":"architecture","path":"ignition/ARCHITECTURE.md","decision":"NO_CHANGE_WITH_REASON","reason":"No architecture identity content is changed in Step 01.","evidence":"Step 01 architecture impact classification"},
+    {"surface_id":"machine-entry","path":"ignition/llms.txt","decision":"NO_CHANGE_WITH_REASON","reason":"The machine entry will be synchronized with the released identity in Step 07.","evidence":"Step 00 audit CSA-008"},
+    {"surface_id":"system-map-doc","path":"ignition/docs/architecture/interactive-system-map.md","decision":"NO_CHANGE_WITH_REASON","reason":"Layout and map semantic rewrite are deferred to Steps 04–06.","evidence":"system-map-geometry-baseline-r1.json"},
+    {"surface_id":"federation-doc","path":"ignition/docs/architecture/external-agent-federation-r1.md","decision":"NO_CHANGE_WITH_REASON","reason":"The existing Federation boundary is the source identity being registered, not rewritten in Step 01.","evidence":"Task 122 Federation R1 baseline"},
+    {"surface_id":"system-map-json","path":"ignition/data/architecture/interactive-system-map.json","decision":"NO_CHANGE_WITH_REASON","reason":"The current derived map is not regenerated until its source layout/identity changes in later steps.","evidence":"SYSTEM_MAP_DERIVED_OK at Step 00"},
+    {"surface_id":"state-changelog","path":"ignition/STATE-CHANGELOG.md","decision":"NO_CHANGE_WITH_REASON","reason":"This Step 01 governance receipt is not a formal main merge delta; exact main release evidence belongs to Step 12 closure.","evidence":"formal main remains d60ec868 at task start"}
+  ],
+  "system_map_sync": {"decision":"NO_CHANGE_WITH_REASON","reason":"Step 01 does not change map inputs or map identity."},
+  "state_changelog_delta": {"decision":"NO_CHANGE_WITH_REASON","reason":"Task-branch progress is recorded in the 123 nightshift ledger; formal main delta is reserved for final release."},
+  "changed_paths": [
+    "AGENTS.md",
+    ".github/workflows/current-state-sync-validation.yml",
+    "ignition/ITERATION.md",
+    "ignition/data/architecture/current-system-identity.json",
+    "ignition/data/operations/iterations/123/current-state-sync-receipt.json",
+    "ignition/docs/governance/current-state-sync-invariant.md",
+    "ignition/schemas/architecture/current-system-identity.schema.json",
+    "ignition/schemas/architecture/current-state-sync-receipt.schema.json",
+    "ignition/tools/validate_current_state_sync.py",
+    "ignition/tests/test_current_state_sync.py"
+  ],
+  "identity_contract_changed": true,
+  "surface_sync_complete": false,
+  "claim_ceiling": "Governance contract and repository synchronization gate only; no architecture-content, external-agent, production, Owner or epistemic upgrade is inferred."
+}

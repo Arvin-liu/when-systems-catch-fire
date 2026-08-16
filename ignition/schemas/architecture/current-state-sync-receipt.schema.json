@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ignition/architecture/current-state-sync-receipt.schema.json",
+  "title": "Current state synchronization receipt",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "task_id",
+    "architecture_identity_impact",
+    "identity_contract_path",
+    "identity_epoch",
+    "current_iteration_boundary",
+    "surface_decisions",
+    "system_map_sync",
+    "state_changelog_delta",
+    "changed_paths",
+    "claim_ceiling"
+  ],
+  "properties": {
+    "schema_version": {"const": "current-state-sync-receipt-r1"},
+    "task_id": {"type": "string", "pattern": "^IGNITION-[A-Z0-9-]+$"},
+    "architecture_identity_impact": {"enum": ["NONE", "PRESENTATION_ONLY", "ARCHITECTURE_CHANGED"]},
+    "identity_contract_path": {"type": "string", "minLength": 1, "pattern": "\\S"},
+    "identity_epoch": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]+$"},
+    "current_iteration_boundary": {"type": "integer", "minimum": 0},
+    "surface_decisions": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["surface_id", "path", "decision", "reason"],
+        "properties": {
+          "surface_id": {"type": "string", "pattern": "^[a-z][a-z0-9-]+$"},
+          "path": {"type": "string", "minLength": 1, "pattern": "\\S"},
+          "decision": {"enum": ["CHANGE", "NO_CHANGE_WITH_REASON", "NOT_APPLICABLE"]},
+          "reason": {"type": "string", "minLength": 1, "pattern": "\\S"},
+          "evidence": {"type": "string", "minLength": 1, "pattern": "\\S"}
+        }
+      }
+    },
+    "system_map_sync": {"$ref": "#/$defs/decision"},
+    "state_changelog_delta": {"$ref": "#/$defs/decision"},
+    "changed_paths": {"type": "array", "items": {"type": "string", "minLength": 1, "pattern": "\\S"}, "uniqueItems": true},
+    "claim_ceiling": {"type": "string", "minLength": 1, "pattern": "\\S"},
+    "identity_contract_changed": {"type": "boolean"},
+    "surface_sync_complete": {"type": "boolean"}
+  },
+  "$defs": {
+    "decision": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["decision", "reason"],
+      "properties": {
+        "decision": {"enum": ["CHANGE", "NO_CHANGE_WITH_REASON", "NOT_APPLICABLE"]},
+        "reason": {"type": "string", "minLength": 1, "pattern": "\\S"},
+        "evidence": {"type": "string", "minLength": 1, "pattern": "\\S"}
+      }
+    }
+  }
+}

@@ -115,6 +115,26 @@ Use `CHANGE`, `NO_CHANGE_WITH_REASON` or `NOT_APPLICABLE`. A capability, identit
 
 An iteration is a repository state transition, not merely a local file edit. A change to capability, identity, usage, handoff, lifecycle/current state, governance, deployment/rendering or this operation method must propagate to every affected declared surface. The project is not synchronized while any required human, AI, Agent, machine, current-state, version/history or deployment surface still projects the superseded state.
 
+### 5.1.1 CURRENT_STATE_SYNC_INVARIANT
+
+`ignition/data/architecture/current-system-identity.json` is the unique machine
+contract for the current architecture identity and its derived current facts.
+It stores source paths and derivation recipes, not a second hand-maintained
+count store. Every identity/current-state/map iteration records
+`architecture_identity_impact` as `NONE`, `PRESENTATION_ONLY` or
+`ARCHITECTURE_CHANGED` in `current-state-sync-receipt.json` and passes
+`python3 tools/validate_current_state_sync.py --check` from `ignition/`.
+
+For `ARCHITECTURE_CHANGED`, the receipt must provide a `CHANGE` decision and
+evidence for every applicable declared surface, including the Current State,
+front-door identity, AI cold start/handoff, map projection and state delta;
+the validator also checks derived facts, map-version coherence and stale
+Current prose. `PRESENTATION_ONLY` may register or explain a gate without
+claiming architecture-surface closure, and `NONE` records why no sync is
+applicable. Historical task records remain historical evidence and are not
+rewritten merely to satisfy a Current check. Exact commit SHA evidence belongs
+to the task ledger and final release receipt, never to the identity contract.
+
 Not every registered surface must change. Every applicable surface must receive exactly one explicit `CHANGE`, `NO_CHANGE_WITH_REASON` or `NOT_APPLICABLE` decision with evidence. The canonical coverage topology is `data/operations/synchronization-surfaces.json`, validated by `schemas/operations/synchronization-surfaces.schema.json`. That registry describes synchronization obligations only; it is not a second store of substantive project truth.
 
 ### 5.2 Propagation Closure

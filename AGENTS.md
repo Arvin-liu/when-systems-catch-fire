@@ -36,6 +36,27 @@ channel state becomes Knowledge, Human Surface or canonical memory. Live externa
 inference remains `NOT_RUN_LIVE_EXTERNAL_INVOCATION`, and
 `EPISTEMICALLY_ACCEPTED=0` remains unchanged until the formal release gates close.
 
+## Task 123 Current State Sync R1 cold start
+
+The task-123 branch introduces `CURRENT_STATE_SYNC_INVARIANT` as the single
+machine identity contract for the current architecture. Read
+`ignition/docs/governance/current-state-sync-invariant.md`, the contract,
+receipt, schemas and validator before changing identity, current-state prose,
+map projection or the declared handoff surfaces. Current facts are derived
+from canonical registries by recipes in the contract; copied counts in a
+human page are not a source of truth. An `ARCHITECTURE_CHANGED` iteration must
+change every applicable declared surface and provide evidence in its receipt;
+`PRESENTATION_ONLY` must not claim that closure. The validator is a merge gate,
+not an Owner, truth, production, external-validity or epistemic authority.
+
+Task 123 keeps the existing boundary explicit: Ignition is the driver and
+orchestration-governance layer; OpenClaw, Hermes and Codex are replaceable
+external executors; Knowledge is the first large Domain Pack; and the local
+execution layer remains `REFERENCE_EXECUTOR / CONFORMANCE_EXECUTOR /
+FALLBACK_MINIMAL`. Live external invocation may remain `SKIPPED` when the
+safety boundary cannot be satisfied. `CURRENT_WITH_OPEN_OBLIGATIONS` and
+`EPISTEMICALLY_ACCEPTED=0` remain separate.
+
 For Q32I profiles, keep authority, execution capability and validation capability separate. Manual or external validation must not invoke a local validator. A local `validator_argv` is permitted only when it is complete, exists, runs successfully and validates the declared component responsibility. Never substitute the incomplete generic `python3 ignition/tools/validate_protocol_canonical.py --check` command.
 
 Tests, CI, cache and artifacts are repository evidence only. They do not perform independent review, merge a PR, establish Current state or prove real-world truth or causality.

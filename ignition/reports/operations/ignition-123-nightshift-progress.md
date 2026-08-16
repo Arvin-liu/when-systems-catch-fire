@@ -64,3 +64,33 @@
 - 本步精确 commit/remote SHA 待本步独立提交及 `ls-remote` 核验后由最终闭合回执绑定。
 
 下一步：建立 `CURRENT_STATE_SYNC_INVARIANT` 的唯一机器 identity contract、schema、validator 和负向 fixture 门禁。
+
+## Step 01 — COMPLETE
+
+### Contract and handshake
+
+建立了唯一机器身份契约 [`current-system-identity.json`](../../data/architecture/current-system-identity.json)：
+
+- `contract_id=CURRENT_STATE_SYNC_INVARIANT`，identity epoch 为 `agent-platform-federation-r1`，当前边界为 Task 122 正式 main。
+- 当前状态仍是 `CURRENT_WITH_OPEN_OBLIGATIONS`，`EPISTEMICALLY_ACCEPTED=0` 保持不变。
+- 当前身份明确为 Ignition OS / orchestration-governance layer、driver、replaceable external executors；Knowledge 是第一大 Domain Pack；本地执行层冻结为 `REFERENCE_EXECUTOR / CONFORMANCE_EXECUTOR / FALLBACK_MINIMAL`。
+- 16 个 current-facts 指标使用 canonical JSON source + JSON-pointer derivation recipe，契约不复制维护第二份数量真相。
+- 已显式记录 live external invocation、production/external validity、Knowledge proof/replication 三类开放义务和 authority ceiling。
+
+加入了 receipt schema 与本迭代 receipt [`current-state-sync-receipt.json`](../../data/operations/iterations/123/current-state-sync-receipt.json)。Step 01 的影响分类是 `PRESENTATION_ONLY`：本步引入同步门禁和治理说明，不提前改写已在 Step 00 记录的 Current 文案、首页重复描述或 map 内容；所有十个声明 surface 都有 `NO_CHANGE_WITH_REASON`。这不是 architecture-content closure。
+
+### Validator, governance and CI
+
+- `ignition/tools/validate_current_state_sync.py --check` 校验 schema、路径不逃逸、当前 method/map identity、16 个 live-derived metrics、开放义务 source、receipt handshake 和 fixture manifest。
+- 对 `ARCHITECTURE_CHANGED`，校验器要求每个声明 surface `CHANGE` + evidence，并额外检查 Current stale counts、首页重复 identity bullet、map-version coherence 和 bounded concepts。
+- `AGENTS.md`、`ignition/ITERATION.md` 和 [`current-state-sync-invariant.md`](../../docs/governance/current-state-sync-invariant.md) 已把该 invariant 纳入冷启动与迭代规则。
+- `.github/workflows/current-state-sync-validation.yml` 在 pull request/main push/手动运行时执行该 gate。
+- [`test_current_state_sync.py`](../../tests/test_current_state_sync.py) 共 6 个测试：live receipt PASS、fixture 正负覆盖、ARCHITECTURE_CHANGED 缺 surface 失败、PRESENTATION_ONLY 越权 CHANGE 失败、自引用 SHA 失败。
+
+### Targeted gates and boundary
+
+JSON parse、current-state sync validator、6 个 unit/negative tests 和 `git diff --check` 均为 `PASS`。未读取 secret，未改外部配置，未安装/升级，未执行真实外部 Agent invocation；本步 live 状态为 `NOT_RUN_STEP_01`。正式 main 仍保持 `d60ec8687fb1cc6b972e831a8f0dcd348ba0e83e`。
+
+本步 claim ceiling：repository synchronization contract and merge gate only；不推导 architecture-content synchronization、external truth、Owner acceptance、production safety 或 epistemic upgrade。精确 Step 01 commit/remote SHA 待本步独立提交、push、`ls-remote` 核验后由最终闭合回执绑定。
+
+下一步：生成唯一 current-facts projection，并将当前数量从 contract recipe 投影到可审计机器事实源，继续保持历史快照不被覆盖。

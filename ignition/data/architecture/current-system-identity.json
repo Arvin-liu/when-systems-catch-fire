@@ -1,0 +1,199 @@
+{
+  "schema_version": "current-system-identity-r1",
+  "contract_id": "CURRENT_STATE_SYNC_INVARIANT",
+  "identity_epoch": "agent-platform-federation-r1",
+  "current_iteration_boundary": 122,
+  "current_state_status": "CURRENT_WITH_OPEN_OBLIGATIONS",
+  "epistemically_accepted": 0,
+  "current_architecture_identity": {
+    "system_role": "Ignition OS / orchestration-governance layer",
+    "driver_role": "driver",
+    "internal_control_spine": [
+      "Kernel",
+      "Runtime",
+      "Supervisor",
+      "Operational Memory",
+      "Agent Profile",
+      "Domain Pack Registry",
+      "External Agent Federation"
+    ],
+    "external_executor_role": "replaceable executors",
+    "knowledge_role": "Knowledge is the first large Domain Pack, not the whole system.",
+    "reference_executor_role": "REFERENCE_EXECUTOR / CONFORMANCE_EXECUTOR / FALLBACK_MINIMAL",
+    "identity_boundary": "Ignition owns goal, value, policy, permission, durable state, memory, validation, handoff, provenance and result absorption; external Agents perform bounded local actions through adapters.",
+    "authority_ceiling": "This is a repository engineering identity. It grants no Owner authority, truth authority, M/E upgrade, production safety, general intelligence or external validity."
+  },
+  "current_map": {
+    "source_path": "ignition/data/architecture/interactive-system-map-layout.json",
+    "json_pointer": "/current_map_version",
+    "historical_map_version_source_path": "ignition/data/architecture/interactive-system-map-layout.json",
+    "historical_map_version_json_pointer": "/historical_map_version"
+  },
+  "current_method": {
+    "source_path": "ignition/ITERATION.md",
+    "required_marker": "1.4.0",
+    "status": "Current"
+  },
+  "derived_metrics": [
+    {
+      "metric_id": "registry_components",
+      "source_path": "ignition/data/operations/project-components.json",
+      "json_pointer": "/components",
+      "operation": "length"
+    },
+    {
+      "metric_id": "visible_map_nodes",
+      "source_path": "ignition/data/operations/project-components.json",
+      "json_pointer": "/components",
+      "operation": "count_where",
+      "where": {"json_pointer": "/map_projection/visible", "equals": true}
+    },
+    {
+      "metric_id": "hidden_components",
+      "source_path": "ignition/data/operations/project-components.json",
+      "json_pointer": "/components",
+      "operation": "count_where",
+      "where": {"json_pointer": "/map_projection/visible", "equals": false}
+    },
+    {
+      "metric_id": "typed_topology_relations",
+      "source_path": "ignition/data/operations/change-propagation-topology.json",
+      "json_pointer": "/relations",
+      "operation": "length"
+    },
+    {
+      "metric_id": "visible_typed_edges",
+      "source_path": "ignition/data/operations/change-propagation-topology.json",
+      "json_pointer": "/relations",
+      "operation": "count_where",
+      "where": {"json_pointer": "/map_visible", "equals": true}
+    },
+    {
+      "metric_id": "function_identity_cards",
+      "source_path": "ignition/data/foundation/function-assets/closure-summary.json",
+      "json_pointer": "/canonical_identity_cards",
+      "operation": "value"
+    },
+    {
+      "metric_id": "function_quarantine_or_pending",
+      "source_path": "ignition/data/foundation/function-assets/closure-summary.json",
+      "json_pointer": "/explicit_quarantine_or_pending",
+      "operation": "value"
+    },
+    {
+      "metric_id": "nonfunction_claims",
+      "source_path": "ignition/data/foundation/nonfunction-claims/closure-summary.json",
+      "json_pointer": "/canonical_claims",
+      "operation": "value"
+    },
+    {
+      "metric_id": "nonfunction_quarantine_or_pending",
+      "source_path": "ignition/data/foundation/nonfunction-claims/closure-summary.json",
+      "json_pointer": "/explicit_quarantine_or_pending",
+      "operation": "value"
+    },
+    {
+      "metric_id": "knowledge_cards",
+      "source_path": "ignition/data/governance/knowledge-experience/manifest.json",
+      "json_pointer": "/counts/cards",
+      "operation": "value"
+    },
+    {
+      "metric_id": "knowledge_changes",
+      "source_path": "ignition/data/governance/knowledge-experience/manifest.json",
+      "json_pointer": "/counts/changes",
+      "operation": "value"
+    },
+    {
+      "metric_id": "knowledge_layered_readings",
+      "source_path": "ignition/data/governance/knowledge-experience/manifest.json",
+      "json_pointer": "/counts/layered_readings",
+      "operation": "value"
+    },
+    {
+      "metric_id": "knowledge_search_records",
+      "source_path": "ignition/data/governance/knowledge-experience/manifest.json",
+      "json_pointer": "/counts/search_records",
+      "operation": "value"
+    },
+    {
+      "metric_id": "knowledge_aliases",
+      "source_path": "ignition/data/governance/knowledge-experience/manifest.json",
+      "json_pointer": "/counts/aliases",
+      "operation": "value"
+    },
+    {
+      "metric_id": "fire_seeds",
+      "source_path": "ignition/data/publication/fire-seeds/seed-census.json",
+      "json_pointer": "/seed_count",
+      "operation": "value"
+    },
+    {
+      "metric_id": "fire_seed_sources",
+      "source_path": "ignition/data/publication/fire-seeds/seed-census.json",
+      "json_pointer": "/source_census",
+      "operation": "length"
+    }
+  ],
+  "known_open_obligations": [
+    {
+      "obligation_id": "LIVE_EXTERNAL_INVOCATION",
+      "statement": "OpenClaw, Hermes and Codex live invocation remains bounded by safety and may be SKIPPED; current evidence is not a production or general-intelligence claim.",
+      "source_paths": ["ignition/docs/architecture/external-agent-federation-r1.md", "ignition/data/agent-federation/executor-inventory-r1.json"]
+    },
+    {
+      "obligation_id": "PRODUCTION_AND_EXTERNAL_VALIDITY",
+      "statement": "Repository execution evidence does not establish production safety, external validity, Owner acceptance or epistemic acceptance.",
+      "source_paths": ["ignition/AI-START-HERE.md", "ignition/STATE-CHANGELOG.md"]
+    },
+    {
+      "obligation_id": "KNOWLEDGE_PROOF_AND_REPLICATION",
+      "statement": "Function/non-function registry closure leaves proof, evidence, replication and item-level review obligations independent.",
+      "source_paths": ["ignition/data/foundation/function-assets/closure-summary.json", "ignition/data/foundation/nonfunction-claims/closure-summary.json"]
+    }
+  ],
+  "authority_ceilings": [
+    "OS does not become an executor implementation.",
+    "External executors do not own Owner, truth, M/E, Pack, Knowledge or permission authority.",
+    "Reference Executor remains reference/conformance/fallback only.",
+    "Knowledge Domain Pack validators do not grant generic runtime authority.",
+    "System map and propagation are repository navigation/dependency projections, not reality causality or completeness proof.",
+    "CURRENT_WITH_OPEN_OBLIGATIONS remains separate from EPISTEMICALLY_ACCEPTED=0."
+  ],
+  "architecture_impact_handshake": {
+    "field": "architecture_identity_impact",
+    "allowed_values": ["NONE", "PRESENTATION_ONLY", "ARCHITECTURE_CHANGED"],
+    "architecture_changed_requires": [
+      "current-system-identity",
+      "project-current-state",
+      "homepage-identity",
+      "ai-cold-start-and-agents",
+      "system-map-projection",
+      "state-changelog-delta",
+      "current-state-sync-receipt"
+    ],
+    "presentation_only_rule": "Presentation-only changes may alter explanation or navigation without changing the identity epoch, system role, ownership, core relations, runtime model or current map identity.",
+    "no_self_referential_commit_sha": "The contract must not contain a self-referential current commit SHA; exact Git evidence belongs in the release receipt and STATE-CHANGELOG delta."
+  },
+  "required_sync_surfaces": [
+    {"surface_id":"homepage-identity","path":".github/README.md","concepts":["os_driver","replaceable_executors","knowledge_pack","reference_freeze"]},
+    {"surface_id":"project-current-state","path":"ignition/docs/project-current-state.md","concepts":["os_driver","replaceable_executors","knowledge_pack","reference_freeze","current_facts"]},
+    {"surface_id":"ai-cold-start","path":"ignition/AI-START-HERE.md","concepts":["os_driver","replaceable_executors","knowledge_pack","reference_freeze"]},
+    {"surface_id":"ai-agents-handoff","path":"ignition/AI-HANDOFF.md","concepts":["os_driver","replaceable_executors","knowledge_pack","reference_freeze"]},
+    {"surface_id":"architecture","path":"ignition/ARCHITECTURE.md","concepts":["os_driver","replaceable_executors","reference_freeze"]},
+    {"surface_id":"machine-entry","path":"ignition/llms.txt","concepts":["os_driver","replaceable_executors","knowledge_pack","reference_freeze"]},
+    {"surface_id":"system-map-doc","path":"ignition/docs/architecture/interactive-system-map.md","concepts":["os_driver","replaceable_executors","reference_freeze","map_version"]},
+    {"surface_id":"federation-doc","path":"ignition/docs/architecture/external-agent-federation-r1.md","concepts":["os_driver","replaceable_executors","reference_freeze"]},
+    {"surface_id":"system-map-json","path":"ignition/data/architecture/interactive-system-map.json","concepts":["os_driver","replaceable_executors","reference_freeze","map_version"]},
+    {"surface_id":"state-changelog","path":"ignition/STATE-CHANGELOG.md","concepts":["os_driver","replaceable_executors","knowledge_pack","reference_freeze","state_delta"]}
+  ],
+  "concept_requirements": {
+    "os_driver": {"all_of_any_group": [["OS", "操作系统"], ["driver", "司机", "orchestration-governance layer", "治理编排"]]},
+    "replaceable_executors": {"all_of_any_group": [["replaceable executor", "replaceable executors", "可替换执行器", "可替换 adapter"], ["external Agent", "外部 Agent", "external executor", "外部执行器"]]},
+    "knowledge_pack": {"all_of_any_group": [["Knowledge"], ["Domain Pack", "DomainPack", "领域 Pack"]]},
+    "reference_freeze": {"all_of_any_group": [["Reference"], ["Conformance"], ["Fallback"]]},
+    "map_version": {"all_of_any_group": [["0.7.0"]]},
+    "state_delta": {"all_of_any_group": [["CURRENT_WITH_OPEN_OBLIGATIONS"], ["EPISTEMICALLY_ACCEPTED=0"]]},
+    "current_facts": {"all_of_any_group": [["current-facts", "derived facts", "可推导事实", "机器事实"]]}
+  }
+}
