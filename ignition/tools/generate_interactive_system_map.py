@@ -111,6 +111,7 @@ def build_projection(
         },
         "layout": layout_doc["geometry"],
         "groups": layout_doc["groups"],
+        "semantic_trunk": layout_doc["semantic_trunk"],
         "nodes": nodes,
         "edges": edges,
         "component_coverage": {
@@ -168,9 +169,11 @@ def validate_spec(spec: dict, root: Path = ROOT) -> None:
     nodes = spec.get("nodes")
     edges = spec.get("edges")
     layout = spec.get("layout")
+    semantic_trunk = spec.get("semantic_trunk")
     require(isinstance(groups, list) and groups, "system-map spec requires groups")
     require(isinstance(nodes, list) and nodes, "system-map spec requires nodes")
     require(isinstance(edges, list), "system-map spec requires edges")
+    require(isinstance(semantic_trunk, dict), "system-map spec requires semantic trunk")
     require(isinstance(layout, dict), "system-map spec requires layout geometry")
     required_geometry = ("columns", "group_gap", "group_header_height", "group_width", "node_gap", "node_height", "outer_padding", "packing_algorithm", "top_offset", "vertical_gap")
     require(all(key in layout for key in required_geometry), "system-map layout geometry is incomplete")
@@ -215,6 +218,30 @@ def validate_spec(spec: dict, root: Path = ROOT) -> None:
         require(isinstance(edge.get("label"), str) and edge["label"], f"edge lacks label: {edge}")
         if spec.get("schema_version") == "2.0.0":
             require(edge.get("relation_domain") in {"substantive_causal_candidate", "repository_dependency", "synchronization_obligation"}, f"edge lacks typed relation domain: {edge}")
+
+    require(semantic_trunk.get("schema_version") == "semantic-trunk-r1", "system-map semantic trunk has unsupported schema")
+    require(semantic_trunk.get("mode") == "bounded_reading_path", "system-map semantic trunk must be a bounded reading path")
+    route = semantic_trunk.get("route")
+    require(isinstance(route, list) and len(route) >= 6, "system-map semantic trunk requires route stages")
+    route_ids = [stage.get("id") for stage in route]
+    require(route_ids == ["authority", "os_control", "pack_federation_routing", "external_executors", "actions_receipts", "validation_feedback"], "system-map semantic trunk route order is not canonical")
+    require(semantic_trunk.get("loop_target") == "os_control", "system-map semantic trunk must loop to os_control")
+    relation_ids = {edge.get("id") for edge in edges}
+    route_node_ids: list[str] = []
+    for stage in route:
+        require(isinstance(stage.get("label"), str) and stage["label"].strip(), f"semantic trunk stage {stage.get('id')} lacks label")
+        stage_nodes = stage.get("node_ids")
+        stage_relations = stage.get("relation_ids")
+        require(isinstance(stage_nodes, list) and stage_nodes, f"semantic trunk stage {stage.get('id')} lacks nodes")
+        require(isinstance(stage_relations, list) and stage_relations, f"semantic trunk stage {stage.get('id')} lacks relations")
+        require(all(node_id in node_id_set for node_id in stage_nodes), f"semantic trunk stage {stage.get('id')} references unknown node")
+        require(all(relation_id in relation_ids for relation_id in stage_relations), f"semantic trunk stage {stage.get('id')} references unknown relation")
+        route_node_ids.extend(stage_nodes)
+    require(len(route_node_ids) == len(set(route_node_ids)), "semantic trunk route repeats a node")
+    require({"owner_human", "charter", "agent_runtime_r0", "external_agent_federation", "openclaw_adapter", "hermes_adapter", "codex_adapter", "function_os", "foundation", "feedback_routes"}.issubset(set(route_node_ids)), "semantic trunk omits a required control/executor/feedback anchor")
+    non_claims = semantic_trunk.get("non_claims", [])
+    folded_non_claims = " ".join(str(item) for item in non_claims).casefold()
+    require("causal" in folded_non_claims and "acceptance" in folded_non_claims and "authority" in folded_non_claims, "semantic trunk must carry non-claim boundaries")
 
 
 def wrap_label(label: str, width: int = 24) -> list[str]:
@@ -375,6 +402,7 @@ def render_svg(spec: dict, root_path: Path = ROOT) -> bytes:
       .cluster-desc{font:400 13px system-ui,sans-serif;fill:#64748b}
       .node{fill:#fff;stroke:#cbd5e1;stroke-width:1.5;filter:url(#shadow)}
       .node-label{font:600 14px system-ui,sans-serif;fill:#0f172a;pointer-events:none}
+      .semantic-trunk-band{fill:#ecfeff;stroke:#0f766e;stroke-width:1}.semantic-trunk-label{font:600 11px system-ui,sans-serif;fill:#115e59}
       .node-link:hover .node,.node-link:focus .node{stroke-width:3;stroke:#0f172a}
       .edge{fill:none;stroke:#64748b;stroke-width:1.5;stroke-opacity:.34;marker-end:url(#arrow)}
       .boundary-note{font:600 12px system-ui,sans-serif;fill:#334155}
@@ -392,6 +420,11 @@ def render_svg(spec: dict, root_path: Path = ROOT) -> bytes:
     root.append(svg_element("text", {"class": "map-title", "x": str(outer), "y": "42"}, spec["title"]))
     root.append(svg_element("text", {"class": "map-subtitle", "x": str(outer), "y": "72"}, spec["subtitle"]))
     root.append(svg_element("text", {"class": "boundary-note", "x": str(outer), "y": "98"}, "点击任一构件打开 canonical 目标；视觉邻近与连线不自动表示因果、严格同构或理论完备。"))
+    trunk = spec["semantic_trunk"]
+    trunk_group = svg_element("g", {"class": "semantic-trunk", "aria-label": trunk["label"], "data-mode": trunk["mode"], "data-loop-target": trunk["loop_target"]})
+    trunk_group.append(svg_element("rect", {"class": "semantic-trunk-band", "x": str(outer), "y": "103", "width": str(width - outer * 2), "height": "18", "rx": "9"}))
+    trunk_group.append(svg_element("text", {"class": "semantic-trunk-label", "x": str(outer + 12), "y": "116"}, "主干：" + " → ".join(stage["label"] for stage in trunk["route"] ) + " → OS"))
+    root.append(trunk_group)
 
     node_positions: dict[str, tuple[float, float, float, float, str]] = {}
     for group in spec["groups"]:

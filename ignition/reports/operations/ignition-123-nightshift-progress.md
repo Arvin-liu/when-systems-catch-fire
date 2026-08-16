@@ -158,3 +158,23 @@ Current-state validator、current-facts determinism、Human Surface contract、H
 本步 claim ceiling：deterministic repository layout/projection and accessibility evidence only；不推导 architecture-content、external truth、Owner acceptance、production safety 或 epistemic upgrade。
 
 下一步：在紧凑图上固定语义主干、关系类型和阅读路径，继续保持 geometry 与 semantic projection 分离。
+
+## Step 05 — COMPLETE
+
+### Semantic trunk and ownership boundary
+
+当前系统图已从单一底部 `agentization` 长条改为三个有明确职责的投影：中央列的 `os_spine` 包含 Owner/Human、Agent Profile、Kernel、Runtime 与 Memory；右侧 `federation` 明确承载 External Agent Federation、OpenClaw、Hermes、Codex、Reference/Future Executors 与环境接口；`domain_packs` 单独承载 Pack Contract、Knowledge、Research、Writing 与 non-knowledge pilot。原有 70 个可见节点和 77 条 typed edges 均保留，registry 的 map projection group 已同步升至 `1.7.0`。
+
+布局 overlay 现在声明 `semantic-trunk-r1` 的六段有界阅读路径：`Owner / Value Charter → Ignition OS control / governance spine → Pack / Federation routing → External replaceable executors → Actions / observations / receipts → Validation / provenance / state update / feedback → OS`。生成器校验每个阶段的 node/relation ids 来自现有 registry/topology，并在 SVG 顶部渲染同一条可读主干带；它不合成新边、不声明现实因果，且显式保留“外部完成不等于 OS acceptance”和权限不升级边界。
+
+当前 map version 按版本制度推进为 `0.8.0 Current`，`0.7.0` 作为 Historical；layout 为 `1.6.0`。Step 04 的 `1800×2978` canvas 在语义分组后进一步收敛为 `1800×2470`，中央 OS group 位于 `x=620,y=122`，外部 Federation 与 Domain/Skill Pack 不再被误读为 Kernel 或底部孤立平台。
+
+### Targeted gates and boundary
+
+`generate_interactive_system_map.py --check` 输出 `SYSTEM_MAP_DERIVED_OK nodes=70 edges=77`；新增 semantic-trunk/clickability 测试与 Current State sync 回归共 11 项通过。layout schema、current-facts schema、两次 current-facts 生成、Current State sync、`git diff --check` 均为 `PASS`。current-facts 已记录 `semantic-trunk-r1` 与 6 个 route stages；Canonical map guide 已同步 0.8.0 与 OS/Federation/Pack 阅读边界。
+
+未读取 secret，未改外部 Agent 配置，未安装/升级，未进行真实外部 Agent invocation；本步 live 状态为 `NOT_RUN_STEP_05`。正式 main 仍保持 `d60ec8687fb1cc6b972e831a8f0dcd348ba0e83e`；正式 `STATE-CHANGELOG` architecture delta 保留到 Step 12。
+
+本步 claim ceiling：deterministic repository semantic navigation, group projection and current-facts evidence only；不推导 external truth、Owner acceptance、production safety 或 epistemic upgrade。
+
+下一步：把 compact layout 的空白、重叠、越界、点击覆盖、crossing、孤立 group 与移动端 viewport 条件固化为 deterministic geometry quality gate，并加入旧 row-max negative fixture。

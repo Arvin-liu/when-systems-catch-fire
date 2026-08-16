@@ -1,5 +1,5 @@
 {
-  "current_map_version": "0.7.0",
+  "current_map_version": "0.8.0",
   "geometry": {
     "columns": 3,
     "group_gap": 28,
@@ -94,16 +94,32 @@
       "row": 3
     },
     {
-      "color": "#7c2d12",
+      "color": "#1d4ed8",
       "column": 1,
-      "description": "Owner/Human 与 Value Charter 之下的通用 Kernel、Runtime、环境和可加载 Domain Pack；Kernel ≠ Knowledge",
-      "id": "agentization",
-      "label": "智能体化边界 R0",
-      "row": 4
+      "description": "Owner/Human、Profile、Kernel、Runtime 与 Memory 的点火 OS 控制/治理脊柱；不拥有供应商 runtime",
+      "id": "os_spine",
+      "label": "Ignition OS / 控制脊柱",
+      "row": 0
+    },
+    {
+      "color": "#6d28d9",
+      "column": 0,
+      "description": "通过统一 Pack Contract 加载 Knowledge、Research、Writing 与非知识 pilot；Pack 不获得通用 authority",
+      "id": "domain_packs",
+      "label": "Domain / Skill Packs",
+      "row": 1
+    },
+    {
+      "color": "#ea580c",
+      "column": 2,
+      "description": "Federation 与 OpenClaw、Hermes、Codex、Reference/Future Executors 的外部、可替换手脚边界",
+      "id": "federation",
+      "label": "Federation / 外部手脚",
+      "row": 1
     }
   ],
-  "historical_map_version": "0.6.0",
-  "layout_version": "1.5.0",
+  "historical_map_version": "0.7.0",
+  "layout_version": "1.6.0",
   "node_order": {
     "boundaries": [
       "no_l7",
@@ -154,25 +170,29 @@
     "language_thought": [
       "language_thought_plane"
     ],
-    "agentization": [
-      "owner_human",
-      "agentization_boundary_r0",
-      "agent_kernel_r0",
-      "agent_runtime_r0",
+    "domain_packs": [
+      "domain_pack_contract",
+      "knowledge_domain_pack",
+      "research_pack_reos_light",
+      "writing_pack",
+      "nonknowledge_pilot"
+    ],
+    "federation": [
       "external_agent_federation",
       "openclaw_adapter",
       "hermes_adapter",
       "codex_adapter",
       "reference_executor",
       "future_executors",
+      "runtime_environment"
+    ],
+    "os_spine": [
+      "owner_human",
+      "agentization_boundary_r0",
+      "agent_kernel_r0",
+      "agent_runtime_r0",
       "agent_profile_r0",
-      "runtime_environment",
-      "runtime_memory_loop",
-      "domain_pack_contract",
-      "knowledge_domain_pack",
-      "research_pack_reos_light",
-      "writing_pack",
-      "nonknowledge_pilot"
+      "runtime_memory_loop"
     ],
     "models": [
       "mcf",
@@ -199,6 +219,25 @@
     ]
   },
   "repository_url": "https://github.com/Arvin-liu/when-systems-catch-fire",
-  "subtitle": "唯一完整总架构图；0.7.0 Current 派生投影，0.6.0 为 Historical。Owner/Human 与 Value Charter 位于 escalation 之上；Kernel ≠ Knowledge，Runtime ≠ Research，Pack 可加载但不拥有通用 authority；语言—思维横穿 L0—L6，不增加 L7。连线是仓库关系、同步义务或候选反馈，不自动表示现实因果。",
+  "semantic_trunk": {
+    "schema_version": "semantic-trunk-r1",
+    "mode": "bounded_reading_path",
+    "label": "Current semantic trunk：OS 在中间，外部执行器是可替换手脚",
+    "route": [
+      {"id":"authority","label":"Owner / Value Charter","node_ids":["owner_human","charter"],"relation_ids":["map_owner_human_agent_profile","map_charter_agent_profile"]},
+      {"id":"os_control","label":"Ignition OS control / governance spine","node_ids":["agentization_boundary_r0","agent_profile_r0","agent_kernel_r0","agent_runtime_r0","runtime_memory_loop"],"relation_ids":["map_profile_agent_kernel","map_kernel_agent_runtime","map_runtime_memory"]},
+      {"id":"pack_federation_routing","label":"Pack / Federation routing","node_ids":["domain_pack_contract","external_agent_federation"],"relation_ids":["map_runtime_pack_contract","map_runtime_external_agent_federation"]},
+      {"id":"external_executors","label":"External replaceable executors","node_ids":["openclaw_adapter","hermes_adapter","codex_adapter","future_executors"],"relation_ids":["map_federation_openclaw","map_federation_hermes","map_federation_codex","map_federation_future_executors"]},
+      {"id":"actions_receipts","label":"Actions / observations / receipts","node_ids":["reference_executor","function_os","sync"],"relation_ids":["map_federation_reference_executor","map_function_q12","map_iteration_sync"]},
+      {"id":"validation_feedback","label":"Validation / provenance / state update / feedback","node_ids":["foundation","provenance_capture","feedback_routes","candidate_return"],"relation_ids":["map_foundation_no_truth","map_provenance_return","map_return_routes","map_routes_increment"]}
+    ],
+    "loop_target": "os_control",
+    "non_claims": [
+      "This is a bounded navigation reading path, not a new causal edge or completeness proof.",
+      "External executor completion does not establish Ignition OS acceptance.",
+      "External executors do not own Owner, truth, permission or vendor-runtime authority."
+    ]
+  },
+  "subtitle": "唯一完整总架构图；0.8.0 Current 派生投影，0.7.0 为 Historical。主干是 Owner/Value Charter → Ignition OS → Pack/Federation routing → 外部可替换执行器 → Actions/Receipts → Validation/Feedback → OS；Kernel ≠ Knowledge，Runtime ≠ Research，Pack 不拥有通用 authority；语言—思维横穿 L0—L6，不增加 L7。连线是仓库关系、同步义务或候选反馈，不自动表示现实因果。",
   "title": "点火唯一完整可点击总架构图"
 }

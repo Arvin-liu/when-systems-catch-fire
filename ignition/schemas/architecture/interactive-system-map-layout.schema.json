@@ -3,7 +3,7 @@
   "$id": "https://example.invalid/ignition/architecture/interactive-system-map-layout.schema.json",
   "type": "object",
   "additionalProperties": false,
-  "required": ["layout_version", "current_map_version", "historical_map_version", "title", "subtitle", "repository_url", "geometry", "groups", "node_order"],
+  "required": ["layout_version", "current_map_version", "historical_map_version", "title", "subtitle", "repository_url", "geometry", "groups", "node_order", "semantic_trunk"],
   "properties": {
     "layout_version": {"type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$"},
     "current_map_version": {"type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$"},
@@ -29,6 +29,33 @@
       }
     },
     "groups": {"type": "array", "minItems": 1, "items": {"type": "object", "required": ["id", "label", "description", "column", "row", "color"], "additionalProperties": false, "properties": {"id": {"type": "string"}, "label": {"type": "string"}, "description": {"type": "string"}, "column": {"type": "integer", "minimum": 0}, "row": {"type": "integer", "minimum": 0}, "color": {"type": "string"}}}},
-    "node_order": {"type": "object", "additionalProperties": {"type": "array", "items": {"type": "string"}, "uniqueItems": true}}
+    "node_order": {"type": "object", "additionalProperties": {"type": "array", "items": {"type": "string"}, "uniqueItems": true}},
+    "semantic_trunk": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["schema_version", "mode", "label", "route", "loop_target", "non_claims"],
+      "properties": {
+        "schema_version": {"const": "semantic-trunk-r1"},
+        "mode": {"const": "bounded_reading_path"},
+        "label": {"type": "string", "minLength": 1},
+        "route": {
+          "type": "array",
+          "minItems": 6,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["id", "label", "node_ids", "relation_ids"],
+            "properties": {
+              "id": {"type": "string", "pattern": "^[a-z][a-z0-9_]+$"},
+              "label": {"type": "string", "minLength": 1},
+              "node_ids": {"type": "array", "minItems": 1, "items": {"type": "string"}, "uniqueItems": true},
+              "relation_ids": {"type": "array", "minItems": 1, "items": {"type": "string"}, "uniqueItems": true}
+            }
+          }
+        },
+        "loop_target": {"type": "string", "minLength": 1},
+        "non_claims": {"type": "array", "minItems": 3, "items": {"type": "string", "minLength": 1}}
+      }
+    }
   }
 }

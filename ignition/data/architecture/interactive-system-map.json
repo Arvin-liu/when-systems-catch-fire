@@ -1,18 +1,18 @@
 {
   "schema_version": "2.0.0",
-  "map_version": "0.7.0",
-  "historical_map_version": "0.6.0",
+  "map_version": "0.8.0",
+  "historical_map_version": "0.7.0",
   "projection_status": "CURRENT_DERIVED_PROJECTION",
   "title": "点火唯一完整可点击总架构图",
-  "subtitle": "唯一完整总架构图；0.7.0 Current 派生投影，0.6.0 为 Historical。Owner/Human 与 Value Charter 位于 escalation 之上；Kernel ≠ Knowledge，Runtime ≠ Research，Pack 可加载但不拥有通用 authority；语言—思维横穿 L0—L6，不增加 L7。连线是仓库关系、同步义务或候选反馈，不自动表示现实因果。",
+  "subtitle": "唯一完整总架构图；0.8.0 Current 派生投影，0.7.0 为 Historical。主干是 Owner/Value Charter → Ignition OS → Pack/Federation routing → 外部可替换执行器 → Actions/Receipts → Validation/Feedback → OS；Kernel ≠ Knowledge，Runtime ≠ Research，Pack 不拥有通用 authority；语言—思维横穿 L0—L6，不增加 L7。连线是仓库关系、同步义务或候选反馈，不自动表示现实因果。",
   "repository_url": "https://github.com/Arvin-liu/when-systems-catch-fire",
   "projection_authority": {
     "component_registry": "data/operations/project-components.json",
     "propagation_topology": "data/operations/change-propagation-topology.json",
     "layout_overlay": "data/architecture/interactive-system-map-layout.json",
-    "component_registry_version": "1.6.0",
+    "component_registry_version": "1.7.0",
     "topology_version": "1.6.0",
-    "layout_version": "1.5.0"
+    "layout_version": "1.6.0"
   },
   "layout": {
     "columns": 3,
@@ -108,14 +108,129 @@
       "row": 3
     },
     {
-      "color": "#7c2d12",
+      "color": "#1d4ed8",
       "column": 1,
-      "description": "Owner/Human 与 Value Charter 之下的通用 Kernel、Runtime、环境和可加载 Domain Pack；Kernel ≠ Knowledge",
-      "id": "agentization",
-      "label": "智能体化边界 R0",
-      "row": 4
+      "description": "Owner/Human、Profile、Kernel、Runtime 与 Memory 的点火 OS 控制/治理脊柱；不拥有供应商 runtime",
+      "id": "os_spine",
+      "label": "Ignition OS / 控制脊柱",
+      "row": 0
+    },
+    {
+      "color": "#6d28d9",
+      "column": 0,
+      "description": "通过统一 Pack Contract 加载 Knowledge、Research、Writing 与非知识 pilot；Pack 不获得通用 authority",
+      "id": "domain_packs",
+      "label": "Domain / Skill Packs",
+      "row": 1
+    },
+    {
+      "color": "#ea580c",
+      "column": 2,
+      "description": "Federation 与 OpenClaw、Hermes、Codex、Reference/Future Executors 的外部、可替换手脚边界",
+      "id": "federation",
+      "label": "Federation / 外部手脚",
+      "row": 1
     }
   ],
+  "semantic_trunk": {
+    "schema_version": "semantic-trunk-r1",
+    "mode": "bounded_reading_path",
+    "label": "Current semantic trunk：OS 在中间，外部执行器是可替换手脚",
+    "route": [
+      {
+        "id": "authority",
+        "label": "Owner / Value Charter",
+        "node_ids": [
+          "owner_human",
+          "charter"
+        ],
+        "relation_ids": [
+          "map_owner_human_agent_profile",
+          "map_charter_agent_profile"
+        ]
+      },
+      {
+        "id": "os_control",
+        "label": "Ignition OS control / governance spine",
+        "node_ids": [
+          "agentization_boundary_r0",
+          "agent_profile_r0",
+          "agent_kernel_r0",
+          "agent_runtime_r0",
+          "runtime_memory_loop"
+        ],
+        "relation_ids": [
+          "map_profile_agent_kernel",
+          "map_kernel_agent_runtime",
+          "map_runtime_memory"
+        ]
+      },
+      {
+        "id": "pack_federation_routing",
+        "label": "Pack / Federation routing",
+        "node_ids": [
+          "domain_pack_contract",
+          "external_agent_federation"
+        ],
+        "relation_ids": [
+          "map_runtime_pack_contract",
+          "map_runtime_external_agent_federation"
+        ]
+      },
+      {
+        "id": "external_executors",
+        "label": "External replaceable executors",
+        "node_ids": [
+          "openclaw_adapter",
+          "hermes_adapter",
+          "codex_adapter",
+          "future_executors"
+        ],
+        "relation_ids": [
+          "map_federation_openclaw",
+          "map_federation_hermes",
+          "map_federation_codex",
+          "map_federation_future_executors"
+        ]
+      },
+      {
+        "id": "actions_receipts",
+        "label": "Actions / observations / receipts",
+        "node_ids": [
+          "reference_executor",
+          "function_os",
+          "sync"
+        ],
+        "relation_ids": [
+          "map_federation_reference_executor",
+          "map_function_q12",
+          "map_iteration_sync"
+        ]
+      },
+      {
+        "id": "validation_feedback",
+        "label": "Validation / provenance / state update / feedback",
+        "node_ids": [
+          "foundation",
+          "provenance_capture",
+          "feedback_routes",
+          "candidate_return"
+        ],
+        "relation_ids": [
+          "map_foundation_no_truth",
+          "map_provenance_return",
+          "map_return_routes",
+          "map_routes_increment"
+        ]
+      }
+    ],
+    "loop_target": "os_control",
+    "non_claims": [
+      "This is a bounded navigation reading path, not a new causal edge or completeness proof.",
+      "External executor completion does not establish Ignition OS acceptance.",
+      "External executors do not own Owner, truth, permission or vendor-runtime authority."
+    ]
+  },
   "nodes": [
     {
       "id": "readme",
@@ -536,7 +651,7 @@
     {
       "id": "owner_human",
       "label": "Owner / Human",
-      "group": "agentization",
+      "group": "os_spine",
       "target": ".github/README.md#1. 项目与价值",
       "description": "Owner / Human 入口：保留价值、权限和停止边界，不被 Agent 自行改写。",
       "lifecycle_status": "current"
@@ -544,7 +659,7 @@
     {
       "id": "agentization_boundary_r0",
       "label": "智能体化边界 R0",
-      "group": "agentization",
+      "group": "os_spine",
       "target": "docs/architecture/agentization-boundary-r0.md",
       "description": "Agentization Boundary R0 的领域切割、依赖方向与不迁移处置。",
       "lifecycle_status": "current"
@@ -552,7 +667,7 @@
     {
       "id": "agent_kernel_r0",
       "label": "Ignition Generic Kernel R0",
-      "group": "agentization",
+      "group": "os_spine",
       "target": "agent_kernel/README.md",
       "description": "领域无关的身份、权限、状态、审计、checkpoint、handoff 和不变量契约。",
       "lifecycle_status": "current"
@@ -560,79 +675,23 @@
     {
       "id": "agent_runtime_r0",
       "label": "Agent Runtime R2 (R0 base)",
-      "group": "agentization",
+      "group": "os_spine",
       "target": "agent_runtime/README.md",
       "description": "R0 typed loop 加上 R1 真实本地行动与 R2 的 Pack、Memory、Supervisor、Profile、Gateway、Routing 边界；仍保持领域无关。",
       "lifecycle_status": "current"
     },
     {
-      "id": "external_agent_federation",
-      "label": "External Agent Federation R1",
-      "group": "agentization",
-      "target": "docs/architecture/external-agent-federation-r1.md#Architecture hierarchy",
-      "description": "点火 OS 与可替换外部执行器之间的统一协议、权限、验证、handoff、receipt 与记忆吸收边界；不复制任何供应商 runtime。",
-      "lifecycle_status": "current"
-    },
-    {
-      "id": "openclaw_adapter",
-      "label": "OpenClaw Adapter",
-      "group": "agentization",
-      "target": "docs/architecture/external-agent-federation-r1.md#OpenClaw adapter boundary",
-      "description": "OpenClaw 的 provider-neutral public CLI adapter；只暴露可观察 envelope、能力、健康和 pointer-only session，不把 Gateway、channel 或 daemon 带入点火。",
-      "lifecycle_status": "current"
-    },
-    {
-      "id": "hermes_adapter",
-      "label": "Hermes Adapter",
-      "group": "agentization",
-      "target": "docs/architecture/external-agent-federation-r1.md#Hermes adapter boundary",
-      "description": "Hermes 的受限 text bridge adapter；仅允许声明的低风险读取 envelope，文本输出必须经过 typed parse、redaction 与独立验证。",
-      "lifecycle_status": "current"
-    },
-    {
-      "id": "codex_adapter",
-      "label": "Codex Adapter",
-      "group": "agentization",
-      "target": "docs/architecture/external-agent-federation-r1.md#Codex adapter boundary",
-      "description": "Codex 的 JSONL public CLI adapter；默认 read-only、ephemeral、isolated config/rules、pointer-only thread，不保留 hidden reasoning 或危险 bypass。",
-      "lifecycle_status": "current"
-    },
-    {
-      "id": "reference_executor",
-      "label": "Reference Executor",
-      "group": "agentization",
-      "target": "docs/architecture/external-agent-federation-r1.md#Reference Executor freeze",
-      "description": "现有本地 action plane 的冻结 Reference / Conformance / Fallback 角色；它验证协议，不向万能 Agent 壳、provider、daemon 或远端执行层扩张。",
-      "lifecycle_status": "current"
-    },
-    {
-      "id": "future_executors",
-      "label": "Future Executors",
-      "group": "agentization",
-      "target": "docs/architecture/external-agent-federation-r1.md#Future executors",
-      "description": "未来执行器的声明式插槽；必须先满足统一 contract、最小权限、独立验证、可回执和隐私边界，不能以品牌或智能表现扩大协议。",
-      "lifecycle_status": "current"
-    },
-    {
       "id": "agent_profile_r0",
       "label": "Agent Profile R0",
-      "group": "agentization",
+      "group": "os_spine",
       "target": "data/agent-runtime/agent-profile-r0.json",
       "description": "可持久 Agent 身份、Owner/Charter 引用、能力类和禁止自我升级策略。",
       "lifecycle_status": "current"
     },
     {
-      "id": "runtime_environment",
-      "label": "Environment / Tools / Executors",
-      "group": "agentization",
-      "target": "docs/architecture/agent-runtime-r0.md",
-      "description": "Runtime 外部环境、工具能力与执行者接口；provider/model 只可进入 telemetry。",
-      "lifecycle_status": "current"
-    },
-    {
       "id": "runtime_memory_loop",
       "label": "Feedback / Memory / Correction Loop",
-      "group": "agentization",
+      "group": "os_spine",
       "target": "agent_runtime/README.md#Memory R0",
       "description": "Working State 与可追溯 Durable Memory Event 的最小记录回路，不引入向量数据库。",
       "lifecycle_status": "current"
@@ -640,7 +699,7 @@
     {
       "id": "domain_pack_contract",
       "label": "Domain Pack Contract",
-      "group": "agentization",
+      "group": "domain_packs",
       "target": "agent_kernel/domain_pack.py",
       "description": "Domain Pack manifest 与禁止权力升级的挂接契约。",
       "lifecycle_status": "current"
@@ -648,7 +707,7 @@
     {
       "id": "knowledge_domain_pack",
       "label": "Knowledge Domain Pack",
-      "group": "agentization",
+      "group": "domain_packs",
       "target": "packs/knowledge/manifest.json",
       "description": "现有 Foundation、claims、Evidence、函数/非函数资产、Results 与知识体验的第一个 Domain Pack 引用面。",
       "lifecycle_status": "current"
@@ -656,7 +715,7 @@
     {
       "id": "research_pack_reos_light",
       "label": "Research Pack / REOS LIGHT",
-      "group": "agentization",
+      "group": "domain_packs",
       "target": "docs/architecture/reos-vnext-light.md#Navigation boundary",
       "description": "REOS vNext LIGHT 作为有界 research pack 消费 Runtime，不定义 Runtime、权限或 Owner authority。",
       "lifecycle_status": "current"
@@ -664,7 +723,7 @@
     {
       "id": "writing_pack",
       "label": "Writing Pack / 之元写作法",
-      "group": "agentization",
+      "group": "domain_packs",
       "target": "docs/publication/zhiyuan-writing-method.md#双向接口契约",
       "description": "之元写作法作为 L6 writing/publication pack，不进入 Generic Kernel 或提高 Runtime 权限。",
       "lifecycle_status": "current"
@@ -672,9 +731,65 @@
     {
       "id": "nonknowledge_pilot",
       "label": "Non-knowledge Runtime Pilot",
-      "group": "agentization",
+      "group": "domain_packs",
       "target": "agent_runtime/pilots/non_knowledge_manifest.py",
       "description": "不依赖任何知识系统概念的确定性 manifest pilot，证明 Runtime 可在领域包之外闭环。",
+      "lifecycle_status": "current"
+    },
+    {
+      "id": "external_agent_federation",
+      "label": "External Agent Federation R1",
+      "group": "federation",
+      "target": "docs/architecture/external-agent-federation-r1.md#Architecture hierarchy",
+      "description": "点火 OS 与可替换外部执行器之间的统一协议、权限、验证、handoff、receipt 与记忆吸收边界；不复制任何供应商 runtime。",
+      "lifecycle_status": "current"
+    },
+    {
+      "id": "openclaw_adapter",
+      "label": "OpenClaw Adapter",
+      "group": "federation",
+      "target": "docs/architecture/external-agent-federation-r1.md#OpenClaw adapter boundary",
+      "description": "OpenClaw 的 provider-neutral public CLI adapter；只暴露可观察 envelope、能力、健康和 pointer-only session，不把 Gateway、channel 或 daemon 带入点火。",
+      "lifecycle_status": "current"
+    },
+    {
+      "id": "hermes_adapter",
+      "label": "Hermes Adapter",
+      "group": "federation",
+      "target": "docs/architecture/external-agent-federation-r1.md#Hermes adapter boundary",
+      "description": "Hermes 的受限 text bridge adapter；仅允许声明的低风险读取 envelope，文本输出必须经过 typed parse、redaction 与独立验证。",
+      "lifecycle_status": "current"
+    },
+    {
+      "id": "codex_adapter",
+      "label": "Codex Adapter",
+      "group": "federation",
+      "target": "docs/architecture/external-agent-federation-r1.md#Codex adapter boundary",
+      "description": "Codex 的 JSONL public CLI adapter；默认 read-only、ephemeral、isolated config/rules、pointer-only thread，不保留 hidden reasoning 或危险 bypass。",
+      "lifecycle_status": "current"
+    },
+    {
+      "id": "reference_executor",
+      "label": "Reference Executor",
+      "group": "federation",
+      "target": "docs/architecture/external-agent-federation-r1.md#Reference Executor freeze",
+      "description": "现有本地 action plane 的冻结 Reference / Conformance / Fallback 角色；它验证协议，不向万能 Agent 壳、provider、daemon 或远端执行层扩张。",
+      "lifecycle_status": "current"
+    },
+    {
+      "id": "future_executors",
+      "label": "Future Executors",
+      "group": "federation",
+      "target": "docs/architecture/external-agent-federation-r1.md#Future executors",
+      "description": "未来执行器的声明式插槽；必须先满足统一 contract、最小权限、独立验证、可回执和隐私边界，不能以品牌或智能表现扩大协议。",
+      "lifecycle_status": "current"
+    },
+    {
+      "id": "runtime_environment",
+      "label": "Environment / Tools / Executors",
+      "group": "federation",
+      "target": "docs/architecture/agent-runtime-r0.md",
+      "description": "Runtime 外部环境、工具能力与执行者接口；provider/model 只可进入 telemetry。",
       "lifecycle_status": "current"
     }
   ],

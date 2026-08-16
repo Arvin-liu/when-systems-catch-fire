@@ -4,11 +4,13 @@
   "current_iteration_boundary": 122,
   "facts": {
     "architecture": {
-      "current_map_version": "0.7.0",
+      "current_map_version": "0.8.0",
       "hidden_components": 12,
-      "historical_map_version": "0.6.0",
-      "layout_version": "1.5.0",
+      "historical_map_version": "0.7.0",
+      "layout_version": "1.6.0",
       "registry_components": 82,
+      "semantic_trunk_route_steps": 6,
+      "semantic_trunk_version": "semantic-trunk-r1",
       "typed_topology_relations": 107,
       "visible_map_nodes": 70,
       "visible_typed_edges": 77
@@ -65,7 +67,7 @@
     },
     "iteration": {
       "current_iteration_boundary": 122,
-      "current_map_version": "0.7.0",
+      "current_map_version": "0.8.0",
       "method_status": "Current",
       "method_version": "1.4.0"
     },
@@ -100,11 +102,11 @@
     },
     {
       "path": "ignition/data/architecture/current-system-identity.json",
-      "sha256": "dd8b28c7c207d32db1d8e93562e739e34c06223dfc8209c0e7146a3b64f1c50c"
+      "sha256": "80eb5a491134439ddde16acdaf533a9abe658a10e4af656a66de3387a87b4b97"
     },
     {
       "path": "ignition/data/architecture/interactive-system-map-layout.json",
-      "sha256": "95130b99d463d94e6824adceda31cd1af8fe7b1ff77885e04c8a5d7b2e54ed2b"
+      "sha256": "9bd3e5d4c424fdf48fa38e794a77bcdcf6cc590848e740550d57fecb3c0d6ff9"
     },
     {
       "path": "ignition/data/foundation/function-assets/closure-summary.json",
@@ -132,7 +134,7 @@
     },
     {
       "path": "ignition/data/operations/project-components.json",
-      "sha256": "f0f90ca8223ef07087aca3d871812a1e8b185b3dd032e5225455597837591404"
+      "sha256": "1db842c7fda66a03539a975a49ffba97205b2dad73652b20963fd64d046c5eb7"
     },
     {
       "path": "ignition/data/operations/synchronization-surfaces.json",
@@ -160,7 +162,7 @@
     },
     {
       "path": "ignition/schemas/architecture/current-facts.schema.json",
-      "sha256": "19b9929f534fd4a8800c54b98b0ba88e08e56dc4f055fb04aea100b326b3ee2b"
+      "sha256": "ccdbcea2867cbed8d645c7188d178152fe21285939b239cf688fc93a2bdb8a51"
     },
     {
       "path": "ignition/schemas/architecture/current-system-identity.schema.json",
@@ -168,7 +170,7 @@
     },
     {
       "path": "ignition/tools/generate_current_facts.py",
-      "sha256": "35876d45d48ff6b8fb65f2713c77bdcccae4e36f13d4a28e77226ef9f1fc3c75"
+      "sha256": "fb4a02067d6cfac2fb9846951b17ca15091f56ce85be8b9ec671961795cb6d49"
     }
   ]
 }

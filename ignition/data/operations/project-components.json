@@ -1558,7 +1558,7 @@
       "label": "Owner / Human",
       "layer_or_overlay": "governance",
       "lifecycle": {"source": ".github/README.md", "status": "current", "version": "R0"},
-      "map_projection": {"group": "agentization", "visible": true},
+      "map_projection": {"group": "os_spine", "visible": true},
       "path_patterns": [".github/README.md"]
     },
     {
@@ -1570,7 +1570,7 @@
       "label": "智能体化边界 R0",
       "layer_or_overlay": "overlay",
       "lifecycle": {"source": "data/architecture/agentization-boundary-r0.json", "status": "current", "version": "R0"},
-      "map_projection": {"group": "agentization", "visible": true},
+      "map_projection": {"group": "os_spine", "visible": true},
       "path_patterns": ["data/architecture/agentization-boundary-r0.json", "schemas/architecture/agentization-boundary-r0.schema.json", "docs/architecture/agentization-boundary-r0.md", "tools/generate_agentization_boundary.py", "tools/validate_agentization_boundary.py"]
     },
     {
@@ -1582,7 +1582,7 @@
       "label": "Ignition Generic Kernel R0",
       "layer_or_overlay": "overlay",
       "lifecycle": {"source": "agent_kernel/", "status": "current", "version": "CURRENT_BOUNDED_R0"},
-      "map_projection": {"group": "agentization", "visible": true},
+      "map_projection": {"group": "os_spine", "visible": true},
       "path_patterns": ["agent_kernel/", "schemas/agent-runtime/"]
     },
     {
@@ -1594,7 +1594,7 @@
       "label": "Agent Runtime R2 (R0 base)",
       "layer_or_overlay": "overlay",
       "lifecycle": {"source": "agent_runtime/", "status": "current", "version": "EXPERIMENTAL_RUNTIME_R2_WITH_OPEN_OBLIGATIONS"},
-      "map_projection": {"group": "agentization", "visible": true},
+      "map_projection": {"group": "os_spine", "visible": true},
       "path_patterns": ["agent_runtime/", "data/agent-runtime/pilots/r1-real-local/", "docs/architecture/agent-runtime-r1.md", "tools/validate_agent_runtime_boundary.py", "tests/test_agent_runtime_r0.py", "tests/test_agent_runtime_r1.py"]
     },
     {
@@ -1606,7 +1606,7 @@
       "label": "Agent Profile R0",
       "layer_or_overlay": "governance",
       "lifecycle": {"source": "schemas/agent-runtime/agent-profile.schema.json", "status": "current", "version": "R0"},
-      "map_projection": {"group": "agentization", "visible": true},
+      "map_projection": {"group": "os_spine", "visible": true},
       "path_patterns": ["data/agent-runtime/agent-profile-r0.json", "data/agent-runtime/agent-profiles-r1.json", "schemas/agent-runtime/agent-profile.schema.json", "schemas/agent-runtime/agent-profile-r1.schema.json"]
     },
     {
@@ -1618,7 +1618,7 @@
       "label": "Environment / Tools / Executors",
       "layer_or_overlay": "overlay",
       "lifecycle": {"source": "docs/architecture/agent-runtime-r0.md", "status": "current", "version": "R0"},
-      "map_projection": {"group": "agentization", "visible": true},
+      "map_projection": {"group": "federation", "visible": true},
       "path_patterns": ["docs/architecture/agent-runtime-r0.md", "agent_runtime/protocols.py"]
     },
     {
@@ -1630,7 +1630,7 @@
       "label": "Feedback / Memory / Correction Loop",
       "layer_or_overlay": "overlay",
       "lifecycle": {"source": "agent_runtime/runtime.py", "status": "current", "version": "R0"},
-      "map_projection": {"group": "agentization", "visible": true},
+      "map_projection": {"group": "os_spine", "visible": true},
       "path_patterns": ["agent_runtime/runtime.py", "schemas/agent-runtime/runtime-state.schema.json"]
     },
     {
@@ -1642,7 +1642,7 @@
       "label": "Domain Pack Contract",
       "layer_or_overlay": "overlay",
       "lifecycle": {"source": "agent_kernel/domain_pack.py", "status": "current", "version": "R0"},
-      "map_projection": {"group": "agentization", "visible": true},
+      "map_projection": {"group": "domain_packs", "visible": true},
       "path_patterns": ["agent_kernel/domain_pack.py", "schemas/agent-runtime/domain-pack-manifest.schema.json"]
     },
     {
@@ -1654,7 +1654,7 @@
       "label": "Knowledge Domain Pack",
       "layer_or_overlay": "overlay",
       "lifecycle": {"source": "packs/knowledge/manifest.json", "status": "current", "version": "ref-only-R0"},
-      "map_projection": {"group": "agentization", "visible": true},
+      "map_projection": {"group": "domain_packs", "visible": true},
       "path_patterns": ["packs/knowledge/manifest.json", "packs/knowledge/README.md"]
     },
     {
@@ -1666,7 +1666,7 @@
       "label": "Research Pack / REOS LIGHT",
       "layer_or_overlay": "overlay",
       "lifecycle": {"source": "docs/architecture/reos-vnext-light.md", "status": "current", "version": "bounded-pack"},
-      "map_projection": {"group": "agentization", "visible": true},
+      "map_projection": {"group": "domain_packs", "visible": true},
       "path_patterns": ["docs/architecture/reos-vnext-light.md", "reos_vnext/"]
     },
     {
@@ -1678,7 +1678,7 @@
       "label": "Writing Pack / 之元写作法",
       "layer_or_overlay": "publication",
       "lifecycle": {"source": "docs/publication/zhiyuan-writing-method.md", "status": "current", "version": "0.5.0"},
-      "map_projection": {"group": "agentization", "visible": true},
+      "map_projection": {"group": "domain_packs", "visible": true},
       "path_patterns": ["docs/publication/zhiyuan-writing-method.md", "templates/publication/zhiyuan-writing-spec.md"]
     },
     {
@@ -1702,7 +1702,7 @@
       "label": "Non-knowledge Runtime Pilot",
       "layer_or_overlay": "infrastructure",
       "lifecycle": {"source": "data/agent-runtime/pilots/non-knowledge-manifest-r0/", "status": "current", "version": "R0"},
-      "map_projection": {"group": "agentization", "visible": true},
+      "map_projection": {"group": "domain_packs", "visible": true},
       "path_patterns": ["agent_runtime/pilots/non_knowledge_manifest.py", "data/agent-runtime/pilots/non-knowledge-manifest-r0/", "tests/test_agent_runtime_r0.py"]
     },
     {
@@ -1714,7 +1714,7 @@
       "label": "External Agent Federation R1",
       "layer_or_overlay": "overlay",
       "lifecycle": {"source": "data/agent-federation/", "status": "current", "version": "R1"},
-      "map_projection": {"group": "agentization", "visible": true},
+      "map_projection": {"group": "federation", "visible": true},
       "path_patterns": ["agent_federation/", "schemas/agent-federation/", "data/agent-federation/", "docs/architecture/external-agent-federation-r1.md", "tests/test_federation*", "tools/validate_federation*"]
     },
     {
@@ -1726,7 +1726,7 @@
       "label": "OpenClaw Adapter",
       "layer_or_overlay": "overlay",
       "lifecycle": {"source": "agent_federation/adapters/openclaw.py", "status": "current", "version": "R1"},
-      "map_projection": {"group": "agentization", "visible": true},
+      "map_projection": {"group": "federation", "visible": true},
       "path_patterns": ["agent_federation/adapters/openclaw.py", "tests/test_openclaw_adapter.py"]
     },
     {
@@ -1738,7 +1738,7 @@
       "label": "Hermes Adapter",
       "layer_or_overlay": "overlay",
       "lifecycle": {"source": "agent_federation/adapters/hermes.py", "status": "current", "version": "R1"},
-      "map_projection": {"group": "agentization", "visible": true},
+      "map_projection": {"group": "federation", "visible": true},
       "path_patterns": ["agent_federation/adapters/hermes.py", "tests/test_hermes_adapter.py"]
     },
     {
@@ -1750,7 +1750,7 @@
       "label": "Codex Adapter",
       "layer_or_overlay": "overlay",
       "lifecycle": {"source": "agent_federation/adapters/codex.py", "status": "current", "version": "R1"},
-      "map_projection": {"group": "agentization", "visible": true},
+      "map_projection": {"group": "federation", "visible": true},
       "path_patterns": ["agent_federation/adapters/codex.py", "tests/test_codex_adapter.py"]
     },
     {
@@ -1762,7 +1762,7 @@
       "label": "Reference Executor",
       "layer_or_overlay": "overlay",
       "lifecycle": {"source": "agent_federation/pilots.py", "status": "current", "version": "R1-FROZEN"},
-      "map_projection": {"group": "agentization", "visible": true},
+      "map_projection": {"group": "federation", "visible": true},
       "path_patterns": ["agent_federation/pilots.py", "agent_runtime/actions.py", "agent_runtime/r1_runtime.py", "tests/test_federation_pilots.py"]
     },
     {
@@ -1774,10 +1774,10 @@
       "label": "Future Executors",
       "layer_or_overlay": "overlay",
       "lifecycle": {"source": "agent_federation/contracts.py", "status": "current", "version": "deferred"},
-      "map_projection": {"group": "agentization", "visible": true},
+      "map_projection": {"group": "federation", "visible": true},
       "path_patterns": ["agent_federation/contracts.py", "schemas/agent-federation/"]
     }
   ],
   "purpose": "Canonical project-component identity, target and lifecycle registry for declared change propagation and system-map projection; it does not establish real-world causality.",
-  "registry_version": "1.6.0"
+  "registry_version": "1.7.0"
 }

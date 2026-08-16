@@ -199,7 +199,7 @@
     "replaceable_executors": {"all_of_any_group": [["replaceable executor", "replaceable executors", "可替换执行器", "可替换 adapter"], ["external Agent", "外部 Agent", "external executor", "外部执行器"]]},
     "knowledge_pack": {"all_of_any_group": [["Knowledge"], ["Domain Pack", "DomainPack", "领域 Pack"]]},
     "reference_freeze": {"all_of_any_group": [["Reference"], ["Conformance"], ["Fallback"]]},
-    "map_version": {"all_of_any_group": [["0.7.0"]]},
+    "map_version": {"all_of_any_group": [["0.8.0"]]},
     "state_delta": {"all_of_any_group": [["CURRENT_WITH_OPEN_OBLIGATIONS"], ["EPISTEMICALLY_ACCEPTED=0"]]},
     "current_facts": {"all_of_any_group": [["current-facts", "derived facts", "可推导事实", "机器事实"]]}
   }

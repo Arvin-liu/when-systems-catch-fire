@@ -35,7 +35,7 @@
       "properties": {
         "architecture": {
           "type": "object", "additionalProperties": false,
-          "required": ["registry_components", "visible_map_nodes", "hidden_components", "typed_topology_relations", "visible_typed_edges", "current_map_version", "historical_map_version", "layout_version"],
+          "required": ["registry_components", "visible_map_nodes", "hidden_components", "typed_topology_relations", "visible_typed_edges", "current_map_version", "historical_map_version", "layout_version", "semantic_trunk_version", "semantic_trunk_route_steps"],
           "properties": {
             "registry_components": {"type": "integer", "minimum": 0},
             "visible_map_nodes": {"type": "integer", "minimum": 0},
@@ -44,7 +44,9 @@
             "visible_typed_edges": {"type": "integer", "minimum": 0},
             "current_map_version": {"$ref": "#/$defs/nonblank"},
             "historical_map_version": {"$ref": "#/$defs/nonblank"},
-            "layout_version": {"$ref": "#/$defs/nonblank"}
+            "layout_version": {"$ref": "#/$defs/nonblank"},
+            "semantic_trunk_version": {"const": "semantic-trunk-r1"},
+            "semantic_trunk_route_steps": {"type": "integer", "minimum": 6}
           }
         },
         "packs": {

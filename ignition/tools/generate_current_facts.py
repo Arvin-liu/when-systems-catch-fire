@@ -96,6 +96,8 @@ def build_projection(contract: dict[str, Any] | None = None) -> dict[str, Any]:
             "current_map_version": map_layout["current_map_version"],
             "historical_map_version": map_layout["historical_map_version"],
             "layout_version": map_layout["layout_version"],
+            "semantic_trunk_version": map_layout["semantic_trunk"]["schema_version"],
+            "semantic_trunk_route_steps": len(map_layout["semantic_trunk"]["route"]),
         },
         "packs": {
             "count": len(packs),
@@ -175,7 +177,7 @@ def render_markdown(projection: dict[str, Any]) -> bytes:
         "",
         f"- Identity epoch: `{projection['identity_epoch']}`；current iteration boundary: `{projection['current_iteration_boundary']}`。",
         f"- Architecture registry: `{architecture['registry_components']}` components；`{architecture['visible_map_nodes']}` visible map nodes；`{architecture['hidden_components']}` hidden represented components；`{architecture['typed_topology_relations']}` typed relations；`{architecture['visible_typed_edges']}` visible typed edges。",
-        f"- Map/method: map `{architecture['current_map_version']}` Current（historical `{architecture['historical_map_version']}`）；layout `{architecture['layout_version']}`；method `{iteration['method_version']}` `{iteration['method_status']}`。",
+        f"- Map/method: map `{architecture['current_map_version']}` Current（historical `{architecture['historical_map_version']}`）；layout `{architecture['layout_version']}`；semantic trunk `{architecture['semantic_trunk_version']}` with `{architecture['semantic_trunk_route_steps']}` bounded route stages；method `{iteration['method_version']}` `{iteration['method_status']}`。",
         f"- Packs: `{packs['count']}` packs；`{packs['capability_route_count']}` declared capability routes。",
         f"- Federation: `{federation['adapter_inventory_count']}` adapter inventory entries；live ceiling `{federation['live_invocation_ceiling']}`；local boundary `{federation['reference_executor_identity']}`。",
         f"- Foundation: function identity cards `{foundation['function_identity_cards']}`；function quarantine/pending `{foundation['function_quarantine_or_pending']}`；non-function claims `{foundation['nonfunction_claims']}`；non-function quarantine/pending `{foundation['nonfunction_quarantine_or_pending']}`。",

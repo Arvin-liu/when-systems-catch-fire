@@ -69,6 +69,22 @@ class InteractiveSystemMapLayoutTests(unittest.TestCase):
         self.assertEqual(len(backgrounds), 1)
         self.assertTrue(all(link.attrib.get("href", "").startswith("https://github.com/") for link in links))
 
+    def test_semantic_trunk_is_explicit_typed_and_visible(self) -> None:
+        trunk = self.spec["semantic_trunk"]
+        self.assertEqual(trunk["schema_version"], "semantic-trunk-r1")
+        self.assertEqual(trunk["mode"], "bounded_reading_path")
+        self.assertEqual(
+            [stage["id"] for stage in trunk["route"]],
+            ["authority", "os_control", "pack_federation_routing", "external_executors", "actions_receipts", "validation_feedback"],
+        )
+        node_ids = {node["id"] for node in self.spec["nodes"]}
+        edge_ids = {edge["id"] for edge in self.spec["edges"]}
+        for stage in trunk["route"]:
+            self.assertTrue(set(stage["node_ids"]).issubset(node_ids))
+            self.assertTrue(set(stage["relation_ids"]).issubset(edge_ids))
+        self.assertIn("External replaceable executors", trunk["route"][3]["label"])
+        self.assertEqual(len(self.root.findall(f".//{{{SVG_NS}}}g[@class='semantic-trunk']")), 1)
+
 
 if __name__ == "__main__":
     unittest.main()

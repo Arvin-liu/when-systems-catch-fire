@@ -1,6 +1,6 @@
 # 点火仓库原生系统图
 
-状态：`0.7.0 Current registry-derived navigation projection`；`0.6.0`、`0.5.0`、`0.4.0` 与更早版本为 Historical。
+状态：`0.8.0 Current registry-derived navigation projection`；`0.7.0`、`0.6.0`、`0.5.0`、`0.4.0` 与更早版本为 Historical。
 
 ## 打开与生成
 
@@ -28,10 +28,12 @@ SVG 现在位于 `docs/generated/ignition-system-architecture.svg`，通过 READ
 - 节点身份、canonical target 与生命周期来自 component registry。
 - 边的 relation class/domain 来自 propagation topology。
 - 分组、几何、颜色和顺序来自 layout overlay。
+- 当前语义主干是一个有界阅读路径：`Owner / Value Charter → Ignition OS control / governance spine → Pack / Federation routing → External replaceable executors → Actions / observations / receipts → Validation / provenance / state update / feedback → OS`。它是导航阅读顺序，不新增因果边，也不证明完整性。
+- `os_spine` 位于图的中央列；`federation` 明确标为外部、可替换手脚；`domain_packs` 单列表示 Domain/Skill Pack，不把 Knowledge 重新画成系统本体。
 - cluster 只表达导航分组，不增加架构层。
 - `language_thought` 是横穿 L0—L6 的控制平面 overlay；`layers` 组仍严格只有 L0—L6。它与各层的连线表示框架审计和同步义务，不表示语言决定现实因果。
 - `repository_dependency`、`synchronization_obligation` 和 `substantive_causal_candidate` 权限不同。
-- `agentization` overlay 表达 Owner/Human、Value Charter、Generic Kernel、Agent Runtime、External Agent Federation、环境与可加载 Domain Pack 的边界；它不增加 L7。`Kernel ≠ Knowledge`，`Runtime ≠ Research`，`OS ≠ executor`。
+- `os_spine`、`federation` 与 `domain_packs` 三个 overlay 分别表达 Owner/Human、Generic Kernel/Runtime/Memory，External Agent Federation/adapter，以及可加载 Domain/Skill Pack 的边界；它们不增加 L7。`Kernel ≠ Knowledge`，`Runtime ≠ Research`，`OS ≠ executor`。
 - 图的边、可达性、视觉邻近或 map delta 不证明经验因果、严格同构或理论完整性。
 - “完整”只指当前声明构件的投影覆盖；未来发现缺口时必须更新 registry，而不是把图当永久总图。
 
@@ -44,7 +46,8 @@ Operational Memory 与四个 Domain Pack 作为现有 `agentization` overlay 的
 仍由各自 manifest 声明能力、对象类型、validator 与禁止的 authority upgrade。
 
 当前机器投影以 `82` 个 registry components、`70` 个可见节点、`77` 条 typed
-edges 和 `12` 个代表节点承载的隐藏 components 为准。R2 的 source-domain 与
+edges 和 `12` 个代表节点承载的隐藏 components 为准；当前地图为 `0.8.0`，上一版
+`0.7.0` 仅作 Historical。R2 的 source-domain 与
 blast-radius 规则见
 [`agent-platform-r2-propagation-contract.json`](../../data/operations/propagation/agent-platform-r2-propagation-contract.json)。
 联邦 source domain 单独落在 `agent_platform.federation`，不直接生成 Knowledge、
