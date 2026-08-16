@@ -4,7 +4,7 @@
   "title": "Ignition OS Executor Ownership Contract R1",
   "type": "object",
   "additionalProperties": false,
-  "required": ["schema_version", "contract_id", "task_id", "status", "roles", "reference_executor", "invariants", "component_registry_ref", "human_core_sentence"],
+  "required": ["schema_version", "contract_id", "task_id", "status", "roles", "reference_executor", "reference_executor_freeze", "invariants", "component_registry_ref", "human_core_sentence"],
   "properties": {
     "schema_version": { "const": "os-executor-ownership-r1" },
     "contract_id": { "const": "OS_EXECUTOR_OWNERSHIP_R1" },
@@ -22,7 +22,36 @@
         "DEFERRED": { "type": "array", "minItems": 1, "items": { "type": "string" } }
       }
     },
-    "reference_executor": { "type": "object" },
+    "reference_executor": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["identity", "canonical_paths", "test_support_paths", "allowed_reason", "new_capability_rule", "forbidden_runtime_layers"],
+      "properties": {
+        "identity": { "const": "REFERENCE_EXECUTOR / CONFORMANCE_EXECUTOR / FALLBACK_MINIMAL" },
+        "canonical_paths": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+        "test_support_paths": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+        "allowed_reason": { "type": "string", "minLength": 1 },
+        "new_capability_rule": { "type": "string", "minLength": 1 },
+        "forbidden_runtime_layers": { "type": "array", "minItems": 1, "items": { "type": "string" } }
+      }
+    },
+    "reference_executor_freeze": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["schema_version", "freeze_id", "task_id", "allowed_capabilities", "forbidden_capabilities", "product_paths", "test_support_paths", "adapter_upgrade_surface", "kernel_contract_change_requires", "forbidden_adapter_behaviors"],
+      "properties": {
+        "schema_version": { "const": "reference-executor-freeze-r1" },
+        "freeze_id": { "const": "REFERENCE_EXECUTOR_FREEZE_R1" },
+        "task_id": { "const": "IGNITION-20260816-123" },
+        "allowed_capabilities": { "type": "array", "items": { "type": "string" } },
+        "forbidden_capabilities": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+        "product_paths": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+        "test_support_paths": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+        "adapter_upgrade_surface": { "const": "adapter_mapping" },
+        "kernel_contract_change_requires": { "const": "CONTRACT_GAP_RECEIPT" },
+        "forbidden_adapter_behaviors": { "type": "array", "minItems": 1, "items": { "type": "string" } }
+      }
+    },
     "invariants": { "type": "array", "minItems": 1, "items": { "type": "string" } },
     "component_registry_ref": { "const": "data/agent-federation/executor-component-ownership-r1.json" },
     "human_core_sentence": { "type": "string", "minLength": 1 }

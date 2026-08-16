@@ -52,10 +52,45 @@
   },
   "reference_executor": {
     "identity": "REFERENCE_EXECUTOR / CONFORMANCE_EXECUTOR / FALLBACK_MINIMAL",
-    "canonical_paths": ["agent_runtime/actions.py", "agent_runtime/r1_runtime.py", "agent_runtime/pilots/"],
+    "canonical_paths": ["agent_runtime/actions.py", "agent_runtime/r1_runtime.py"],
+    "test_support_paths": ["agent_runtime/pilots/", "tests/", "tests/fixtures/"],
     "allowed_reason": "The existing bounded local action plane is needed to test the protocol deterministically and provide offline fallback.",
     "new_capability_rule": "Any new capability outside the reference scope requires a recorded build_vs_integrate_exception before implementation.",
-    "forbidden_runtime_layers": ["browser", "network", "messaging", "provider", "model_client", "daemon", "subagent", "remote_git"]
+    "forbidden_runtime_layers": ["browser", "network", "messaging", "provider", "model_client", "daemon", "subagent", "mcp_ecosystem", "remote_git"]
+  },
+  "reference_executor_freeze": {
+    "schema_version": "reference-executor-freeze-r1",
+    "freeze_id": "REFERENCE_EXECUTOR_FREEZE_R1",
+    "task_id": "IGNITION-20260816-123",
+    "allowed_capabilities": [
+      "protocol_conformance",
+      "repo.read",
+      "repo.write_allowlisted_local_fixture",
+      "offline_fallback",
+      "safe_fault_injection",
+      "receipt_emission"
+    ],
+    "forbidden_capabilities": [
+      "browser",
+      "network",
+      "messaging",
+      "provider",
+      "model",
+      "daemon",
+      "subagent",
+      "mcp_ecosystem",
+      "remote_git"
+    ],
+    "product_paths": ["agent_runtime/actions.py", "agent_runtime/r1_runtime.py"],
+    "test_support_paths": ["agent_runtime/pilots/", "tests/", "tests/fixtures/"],
+    "adapter_upgrade_surface": "adapter_mapping",
+    "kernel_contract_change_requires": "CONTRACT_GAP_RECEIPT",
+    "forbidden_adapter_behaviors": [
+      "copy_vendor_runtime_loop",
+      "persist_vendor_memory",
+      "bypass_os_approval",
+      "promote_vendor_completion_to_os_validation"
+    ]
   },
   "invariants": [
     "Adapter code translates observable boundaries; it does not copy an external agent runtime.",

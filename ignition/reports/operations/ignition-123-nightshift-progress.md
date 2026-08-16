@@ -240,3 +240,41 @@ review 与 final release 仍开放。
 
 下一步：把 default integrate、Reference/Conformance/Fallback freeze、禁止 runtime
 层扩张和 conformance evidence 做成长期 CI 边界，进入 Step 08。
+
+## Step 08 — COMPLETE
+
+### Reference Executor freeze and integrate-first CI boundary
+
+将 `REFERENCE_EXECUTOR / CONFORMANCE_EXECUTOR / FALLBACK_MINIMAL` 的产品路径收窄
+为 `agent_runtime/actions.py` 与 `agent_runtime/r1_runtime.py`；`agent_runtime/pilots/`、
+`tests/` 和 `tests/fixtures/` 明确标成 test-support，不得因为测试 helper 被误识别为
+产品执行层。冻结契约把 Reference 的允许能力、禁止的 browser/network/messaging/
+provider/model/daemon/subagent/MCP ecosystem/remote-Git 能力、adapter mapping 升级面和
+`CONTRACT_GAP_RECEIPT` kernel 例外要求固定在机器数据与 schema 中。
+
+`build-vs-integrate-policy-r1.json` 的 exception contract 新增 external
+executor/adapter、contract gap、adapter 无法解决的原因、最小自研范围和 sunset/review
+条件字段。校验器对 changed path 做 fail-closed 检查，并用 AST 检查 adapter 不得长出
+vendor runtime `while` loop；普通 adapter 仍是 public boundary translation，不复制
+外部 runtime loop。
+
+新增 5 个 negative fixtures：Reference 增加 browser、daemon、remote Git capability，
+把 test helper 提升为产品路径，以及把 vendor upgrade surface 改为 kernel contract，均
+必须被拒绝。CI 现在在 current-state gate 后执行
+`validate_federation_ownership.py --check-fixtures --scan-git-diff`；本步 ownership
+validator、4 个 Federation unit/negative tests、两份 ownership schema、5 个 fixture
+和 48 个 changed-path 扫描均为 `PASS`。
+
+### Boundary and evidence
+
+本步只强化仓库内 ownership、CI 与负向回归边界；没有安装或升级 OpenClaw/Hermes/Codex，
+没有修改外部配置或 auth，没有读取 secret，没有进行 network/live invocation，也没有
+remote Git mutation。live external invocation 仍为 `NOT_RUN_STEP_08`，正式 `main` 仍为
+`d60ec8687fb1cc6b972e831a8f0dcd348ba0e83e`；formal architecture/state delta 仍保留到
+Step 12。
+
+本步 claim ceiling：repository-local ownership, CI and negative-fixture boundary evidence
+only；不推导 external truth、Owner acceptance、production safety 或 epistemic upgrade。
+
+下一步：在不安装、不改 auth、不触碰真实消息或正式仓库的边界内，对 OpenClaw、Hermes、Codex
+做最多一次短真实 conformance smoke，无法安全调用则保留明确 `SKIPPED`。

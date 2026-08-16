@@ -61,7 +61,15 @@
     "ignition/ARCHITECTURE.md",
     "ignition/STATE-CHANGELOG.md",
     "ignition/tools/validate_agent_platform_human_surface.py",
-    "ignition/tools/validate_human_front_door.py"
+    "ignition/tools/validate_human_front_door.py",
+    "ignition/data/agent-federation/os-executor-ownership-r1.json",
+    "ignition/data/agent-federation/build-vs-integrate-policy-r1.json",
+    "ignition/data/agent-federation/executor-component-ownership-r1.json",
+    "ignition/schemas/agent-federation/os-executor-ownership-r1.schema.json",
+    "ignition/schemas/agent-federation/executor-component-ownership-r1.schema.json",
+    "ignition/data/operations/iterations/123/fixtures/reference-executor-freeze-fixtures-r1.json",
+    "ignition/tools/validate_federation_ownership.py",
+    "ignition/tests/test_federation_ownership.py"
   ],
   "identity_contract_changed": true,
   "surface_sync_complete": false,

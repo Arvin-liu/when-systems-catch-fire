@@ -1,0 +1,37 @@
+{
+  "schema_version": "reference-executor-freeze-fixtures-r1",
+  "task_id": "IGNITION-20260816-123",
+  "contract_path": "ignition/data/agent-federation/os-executor-ownership-r1.json",
+  "fixtures": [
+    {
+      "fixture_id": "reference-browser-capability-rejected",
+      "mutation": {"kind": "append_allowed_capability", "value": "browser"},
+      "expected_status": "FAIL",
+      "expected_error": "forbidden_capability:browser"
+    },
+    {
+      "fixture_id": "reference-daemon-capability-rejected",
+      "mutation": {"kind": "append_allowed_capability", "value": "daemon"},
+      "expected_status": "FAIL",
+      "expected_error": "forbidden_capability:daemon"
+    },
+    {
+      "fixture_id": "reference-remote-push-capability-rejected",
+      "mutation": {"kind": "append_allowed_capability", "value": "remote_git"},
+      "expected_status": "FAIL",
+      "expected_error": "forbidden_capability:remote_git"
+    },
+    {
+      "fixture_id": "runtime-test-helper-promoted-to-product-rejected",
+      "mutation": {"kind": "append_product_path", "value": "tests/helpers/fixture_runner.py"},
+      "expected_status": "FAIL",
+      "expected_error": "test_helper_promoted_to_product"
+    },
+    {
+      "fixture_id": "vendor-upgrade-cannot-change-kernel-directly",
+      "mutation": {"kind": "set_adapter_upgrade_surface", "value": "kernel_contract"},
+      "expected_status": "FAIL",
+      "expected_error": "vendor_upgrade_surface_must_be_adapter_mapping"
+    }
+  ]
+}

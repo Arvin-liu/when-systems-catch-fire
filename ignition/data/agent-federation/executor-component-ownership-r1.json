@@ -27,7 +27,8 @@
     {
       "component_id": "reference-executor",
       "role": "REFERENCE_ONLY",
-      "canonical_paths": ["agent_runtime/actions.py", "agent_runtime/r1_runtime.py", "agent_runtime/pilots/"],
+      "canonical_paths": ["agent_runtime/actions.py", "agent_runtime/r1_runtime.py"],
+      "test_support_paths": ["agent_runtime/pilots/", "tests/", "tests/fixtures/"],
       "authority": "Ignition conformance and fallback fixture",
       "description": "Existing bounded local execution retained for deterministic protocol testing, safe fault injection and offline fallback."
     },

@@ -25,3 +25,6 @@ jobs:
       - name: Validate current-state synchronization
         working-directory: ignition
         run: python3 tools/validate_current_state_sync.py --check
+      - name: Validate Reference Executor freeze and build-versus-integrate fixtures
+        working-directory: ignition
+        run: python3 tools/validate_federation_ownership.py --check-fixtures --scan-git-diff

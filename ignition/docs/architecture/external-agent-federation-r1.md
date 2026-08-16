@@ -105,6 +105,12 @@ The validator is intentionally fail closed for new paths that look like
 browser/gateway/channel/model-provider/subagent/daemon/remote-Git layers unless
 the policy contains a complete `build_vs_integrate_exception` record.
 
+The Reference Executor freeze is machine-checked in CI. Its product paths and
+test-support paths are explicit, vendor capability upgrades must land in
+adapter mapping, and adapters are statically rejected if they grow a runtime
+loop. The CI gate also runs negative fixtures for browser, daemon, remote Git,
+test-helper promotion and kernel-contract bypass; each must remain `FAIL`.
+
 ## Disposable pilot boundary
 
 Step 10 的 Pilot A/B/C 只使用 disposable local fixture 和捕获的 public CLI

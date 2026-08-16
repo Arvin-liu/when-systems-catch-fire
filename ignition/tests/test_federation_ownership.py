@@ -5,7 +5,11 @@ import json
 from pathlib import Path
 import unittest
 
-from tools.validate_federation_ownership import OwnershipValidationError, validate_contracts
+from tools.validate_federation_ownership import (
+    OwnershipValidationError,
+    check_reference_freeze_fixtures,
+    validate_contracts,
+)
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -35,6 +39,11 @@ class FederationOwnershipTests(unittest.TestCase):
         changed["exceptions"] = [{"exception_id": "incomplete"}]
         with self.assertRaises(OwnershipValidationError):
             validate_contracts(ownership, changed, registry)
+
+    def test_reference_freeze_negative_fixtures_are_rejected(self) -> None:
+        result = check_reference_freeze_fixtures()
+        self.assertEqual(result["status"], "PASS")
+        self.assertGreaterEqual(result["negative_fixtures"], 3)
 
 
 if __name__ == "__main__":

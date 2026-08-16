@@ -20,6 +20,7 @@
           "component_id": { "type": "string", "minLength": 1 },
           "role": { "enum": ["OS_OWNED", "EXTERNAL_AGENT_OWNED", "ADAPTER_BOUNDARY", "REFERENCE_ONLY", "DEFERRED"] },
           "canonical_paths": { "type": "array", "items": { "type": "string" } },
+          "test_support_paths": { "type": "array", "items": { "type": "string" } },
           "authority": { "type": "string", "minLength": 1 },
           "description": { "type": "string", "minLength": 1 }
         }

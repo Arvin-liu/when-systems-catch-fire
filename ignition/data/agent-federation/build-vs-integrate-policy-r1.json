@@ -31,7 +31,12 @@
     "least_privilege_impact",
     "reversibility",
     "owner_review_ref",
-    "decision"
+    "decision",
+    "external_executor_or_adapter",
+    "contract_gap",
+    "why_adapter_cannot_solve",
+    "minimal_build_scope",
+    "sunset_or_review_condition"
   ],
   "protected_external_capabilities": [
     "browser",
