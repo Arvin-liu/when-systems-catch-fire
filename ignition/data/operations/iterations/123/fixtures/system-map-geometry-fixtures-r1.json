@@ -1,0 +1,21 @@
+{
+  "schema_version": "system-map-geometry-fixtures-r1",
+  "task_id": "IGNITION-20260816-123",
+  "purpose": "Negative geometry fixtures for the compact map quality gate; they prove that the old row-max layout and overlap compression cannot pass by being merely deterministic.",
+  "fixtures": [
+    {
+      "id": "old-row-max-layout-rejected",
+      "kind": "negative",
+      "mutation": "old_row_max_baseline",
+      "expected_status": "FAIL",
+      "expected_failure_codes": ["blank_area_reduction", "canvas_height_reduction", "max_internal_gap", "node_geometry_missing", "mobile_viewport_fit"]
+    },
+    {
+      "id": "overlap-compression-rejected",
+      "kind": "negative",
+      "mutation": "overlap_first_two_groups",
+      "expected_status": "FAIL",
+      "expected_failure_codes": ["group_box_overlap"]
+    }
+  ]
+}

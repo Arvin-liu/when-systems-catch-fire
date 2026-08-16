@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 2470" width="1800" height="2470" role="img" aria-labelledby="map-title map-description">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 2470" width="1800" height="2470" role="img" preserveAspectRatio="xMidYMin meet" aria-labelledby="map-title map-description">
   <title id="map-title">点火唯一完整可点击总架构图</title>
   <desc id="map-description">唯一完整总架构图；0.8.0 Current 派生投影，0.7.0 为 Historical。主干是 Owner/Value Charter → Ignition OS → Pack/Federation routing → 外部可替换执行器 → Actions/Receipts → Validation/Feedback → OS；Kernel ≠ Knowledge，Runtime ≠ Research，Pack 不拥有通用 authority；语言—思维横穿 L0—L6，不增加 L7。连线是仓库关系、同步义务或候选反馈，不自动表示现实因果。</desc>
   <style>
@@ -30,45 +30,74 @@
     <rect class="semantic-trunk-band" x="32" y="103" width="1736" height="18" rx="9" />
     <text class="semantic-trunk-label" x="44" y="116">主干：Owner / Value Charter → Ignition OS control / governance spine → Pack / Federation routing → External replaceable executors → Actions / observations / receipts → Validation / provenance / state update / feedback → OS</text>
   </g>
-  <rect class="cluster" x="32" y="1918" width="560" height="520" rx="16" stroke="#2563eb" />
+  <rect class="cluster" data-group="front_doors" x="32" y="1918" width="560" height="520" rx="16" stroke="#2563eb" />
   <text class="cluster-title" x="54" y="1950" fill="#2563eb">前门 / 导航</text>
-  <text class="cluster-desc" x="54" y="1976">人类、AI 与机器进入项目的当前入口</text>
-  <rect class="cluster" x="620" y="1568" width="560" height="586" rx="16" stroke="#7c3aed" />
+  <text class="cluster-desc" x="54" y="1976">
+    <tspan x="54" dy="0">人类、AI 与机器进入项目的当前入口</tspan>
+  </text>
+  <rect class="cluster" data-group="layers" x="620" y="1568" width="560" height="586" rx="16" stroke="#7c3aed" />
   <text class="cluster-title" x="642" y="1600" fill="#7c3aed">L0—L6 七层主架构</text>
-  <text class="cluster-desc" x="642" y="1626">来源到解释出版的认识权限链；不存在 L7</text>
-  <rect class="cluster" x="1208" y="122" width="560" height="256" rx="16" stroke="#0f766e" />
+  <text class="cluster-desc" x="642" y="1626">
+    <tspan x="642" dy="0">来源到解释出版的认识权限链；不存在 L7</tspan>
+  </text>
+  <rect class="cluster" data-group="core" x="1208" y="122" width="560" height="256" rx="16" stroke="#0f766e" />
   <text class="cluster-title" x="1230" y="154" fill="#0f766e">基础核心</text>
-  <text class="cluster-desc" x="1230" y="180">权威数据、形式门禁与可执行函数接口</text>
-  <rect class="cluster" x="32" y="122" width="560" height="322" rx="16" stroke="#0891b2" />
+  <text class="cluster-desc" x="1230" y="180">
+    <tspan x="1230" dy="0">权威数据、形式门禁与可执行函数接口</tspan>
+  </text>
+  <rect class="cluster" data-group="models" x="32" y="122" width="560" height="322" rx="16" stroke="#0891b2" />
   <text class="cluster-title" x="54" y="154" fill="#0891b2">模型与投影</text>
-  <text class="cluster-desc" x="54" y="180">多尺度、概率动力学与自适应关系的候选表示</text>
-  <rect class="cluster" x="620" y="670" width="560" height="454" rx="16" stroke="#d97706" />
+  <text class="cluster-desc" x="54" y="180">
+    <tspan x="54" dy="0">多尺度、概率动力学与自适应关系的候选表示</tspan>
+  </text>
+  <rect class="cluster" data-group="operations" x="620" y="670" width="560" height="454" rx="16" stroke="#d97706" />
   <text class="cluster-title" x="642" y="702" fill="#d97706">控制 / 操作层</text>
-  <text class="cluster-desc" x="642" y="728">行动、注意力、地图、迭代与类型化传播闭包</text>
-  <rect class="cluster" x="1208" y="406" width="560" height="916" rx="16" stroke="#be123c" />
+  <text class="cluster-desc" x="642" y="728">
+    <tspan x="642" dy="0">行动、注意力、地图、迭代与类型化传播闭包</tspan>
+  </text>
+  <rect class="cluster" data-group="governance" x="1208" y="406" width="560" height="916" rx="16" stroke="#be123c" />
   <text class="cluster-title" x="1230" y="438" fill="#be123c">规范与约束</text>
-  <text class="cluster-desc" x="1230" y="464">价值、权利许可与维护者可持续性边界</text>
-  <rect class="cluster" x="32" y="690" width="560" height="718" rx="16" stroke="#9333ea" />
+  <text class="cluster-desc" x="1230" y="464">
+    <tspan x="1230" dy="0">价值、权利许可与维护者可持续性边界</tspan>
+  </text>
+  <rect class="cluster" data-group="writing" x="32" y="690" width="560" height="718" rx="16" stroke="#9333ea" />
   <text class="cluster-title" x="54" y="722" fill="#9333ea">之元写作法与成果链</text>
-  <text class="cluster-desc" x="54" y="748">双来源素材池、公共表达与可追溯成果</text>
-  <rect class="cluster" x="620" y="1152" width="560" height="388" rx="16" stroke="#15803d" />
+  <text class="cluster-desc" x="54" y="748">
+    <tspan x="54" dy="0">双来源素材池、公共表达与可追溯成果</tspan>
+  </text>
+  <rect class="cluster" data-group="feedback" x="620" y="1152" width="560" height="388" rx="16" stroke="#15803d" />
   <text class="cluster-title" x="642" y="1184" fill="#15803d">现实反馈环</text>
-  <text class="cluster-desc" x="642" y="1210">作品响应经来源登记后返回适用点火流程</text>
-  <rect class="cluster" x="1208" y="1964" width="560" height="322" rx="16" stroke="#475569" />
+  <text class="cluster-desc" x="642" y="1210">
+    <tspan x="642" dy="0">作品响应经来源登记后返回适用点火流程</tspan>
+  </text>
+  <rect class="cluster" data-group="boundaries" x="1208" y="1964" width="560" height="322" rx="16" stroke="#475569" />
   <text class="cluster-title" x="1230" y="1996" fill="#475569">图的解释边界</text>
-  <text class="cluster-desc" x="1230" y="2022">这是一张导航接口，不是完整性、因果或理论证明</text>
-  <rect class="cluster" x="32" y="472" width="560" height="190" rx="16" stroke="#0369a1" />
+  <text class="cluster-desc" x="1230" y="2022">
+    <tspan x="1230" dy="0">这是一张导航接口，不是完整性、因果或理论证明</tspan>
+  </text>
+  <rect class="cluster" data-group="language_thought" x="32" y="472" width="560" height="190" rx="16" stroke="#0369a1" />
   <text class="cluster-title" x="54" y="504" fill="#0369a1">语言—思维逻辑平面</text>
-  <text class="cluster-desc" x="54" y="530">横穿 L0—L6 保存语言框架差异、残余与目标语言实现；不是 L7</text>
-  <rect class="cluster" x="620" y="122" width="560" height="520" rx="16" stroke="#1d4ed8" />
+  <text class="cluster-desc" x="54" y="530">
+    <tspan x="54" dy="0">横穿 L0—L6 保存语言框架差异、残余与目标语言实现；不是 L7</tspan>
+  </text>
+  <rect class="cluster" data-group="os_spine" x="620" y="122" width="560" height="520" rx="16" stroke="#1d4ed8" />
   <text class="cluster-title" x="642" y="154" fill="#1d4ed8">Ignition OS / 控制脊柱</text>
-  <text class="cluster-desc" x="642" y="180">Owner/Human、Profile、Kernel、Runtime 与 Memory 的点火 OS 控制/治理脊柱；不拥有供应商 runtime</text>
-  <rect class="cluster" x="32" y="1436" width="560" height="454" rx="16" stroke="#6d28d9" />
+  <text class="cluster-desc" x="642" y="180">
+    <tspan x="642" dy="0">Owner/Human、Profile、Kernel、Runtime 与 Memory 的点火 OS</tspan>
+    <tspan x="642" dy="16">控制/治理脊柱；不拥有供应商 runtime</tspan>
+  </text>
+  <rect class="cluster" data-group="domain_packs" x="32" y="1436" width="560" height="454" rx="16" stroke="#6d28d9" />
   <text class="cluster-title" x="54" y="1468" fill="#6d28d9">Domain / Skill Packs</text>
-  <text class="cluster-desc" x="54" y="1494">通过统一 Pack Contract 加载 Knowledge、Research、Writing 与非知识 pilot；Pack 不获得通用 authority</text>
-  <rect class="cluster" x="1208" y="1350" width="560" height="586" rx="16" stroke="#ea580c" />
+  <text class="cluster-desc" x="54" y="1494">
+    <tspan x="54" dy="0">通过统一 Pack Contract 加载 Knowledge、Research、Writing</tspan>
+    <tspan x="54" dy="16">与非知识 pilot；Pack 不获得通用 authority</tspan>
+  </text>
+  <rect class="cluster" data-group="federation" x="1208" y="1350" width="560" height="586" rx="16" stroke="#ea580c" />
   <text class="cluster-title" x="1230" y="1382" fill="#ea580c">Federation / 外部手脚</text>
-  <text class="cluster-desc" x="1230" y="1408">Federation 与 OpenClaw、Hermes、Codex、Reference/Future Executors 的外部、可替换手脚边界</text>
+  <text class="cluster-desc" x="1230" y="1408">
+    <tspan x="1230" dy="0">Federation 与 OpenClaw、Hermes、Codex、Reference/Future</tspan>
+    <tspan x="1230" dy="16">Executors 的外部、可替换手脚边界</tspan>
+  </text>
   <g aria-label="system relations">
     <path class="edge" d="M 312.0 1166.0 C 312.0 1007.0, 312.0 1007.0, 312.0 848.0" data-source="point_fire_analysis" data-target-node="ignition_increment" data-relation-class="generates" data-relation-domain="repository_dependency">
       <title>point_fire_analysis → ignition_increment: 增量输出 [repository_dependency]</title>

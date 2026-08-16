@@ -1,0 +1,1216 @@
+{
+  "bottom_only_groups": [
+    "boundaries",
+    "front_doors",
+    "layers"
+  ],
+  "bottom_only_isolated_groups": [],
+  "canvas": {
+    "height": 2470.0,
+    "preserve_aspect_ratio": "xMidYMin meet",
+    "view_box": "0 0 1800 2470",
+    "width": 1800.0
+  },
+  "checks": {
+    "bottom_only_isolated_groups": [],
+    "clickable_target_count": 70,
+    "clickable_target_coverage": true,
+    "expected_node_count": 70,
+    "group_box_overlap_count": 0,
+    "label_clip_count": 0,
+    "node_box_overlap_count": 0,
+    "node_geometry_count": 70,
+    "nodes_outside_group_count": 0,
+    "solid_background_rect_count": 1
+  },
+  "clickable_target_count": 70,
+  "clickable_target_coverage": true,
+  "edge_crossing_proxy": 160,
+  "edges": [
+    {
+      "id": "map_analysis_increment",
+      "source": "point_fire_analysis",
+      "target": "ignition_increment"
+    },
+    {
+      "id": "map_arn_mcf",
+      "source": "arn",
+      "target": "mcf"
+    },
+    {
+      "id": "map_case_analysis",
+      "source": "case_source",
+      "target": "point_fire_analysis"
+    },
+    {
+      "id": "map_charter_q12",
+      "source": "charter",
+      "target": "q12"
+    },
+    {
+      "id": "map_charter_charter_r1",
+      "source": "charter",
+      "target": "charter_system_r1"
+    },
+    {
+      "id": "map_charter_r1_iteration",
+      "source": "charter_system_r1",
+      "target": "iteration"
+    },
+    {
+      "id": "map_current_state_no_totality",
+      "source": "current_state",
+      "target": "no_totality_proof"
+    },
+    {
+      "id": "map_external_pool",
+      "source": "external_input",
+      "target": "source_pool"
+    },
+    {
+      "id": "map_foundation_l2",
+      "source": "foundation",
+      "target": "l2"
+    },
+    {
+      "id": "map_foundation_no_truth",
+      "source": "foundation",
+      "target": "no_truth_upgrade"
+    },
+    {
+      "id": "map_function_q12",
+      "source": "function_os",
+      "target": "q12"
+    },
+    {
+      "id": "map_increment_pool",
+      "source": "ignition_increment",
+      "target": "source_pool"
+    },
+    {
+      "id": "map_iteration_sync",
+      "source": "iteration",
+      "target": "sync"
+    },
+    {
+      "id": "map_language_thought_l0",
+      "source": "language_thought_plane",
+      "target": "l0"
+    },
+    {
+      "id": "map_language_thought_l1",
+      "source": "language_thought_plane",
+      "target": "l1"
+    },
+    {
+      "id": "map_language_thought_l2",
+      "source": "language_thought_plane",
+      "target": "l2"
+    },
+    {
+      "id": "map_language_thought_l3",
+      "source": "language_thought_plane",
+      "target": "l3"
+    },
+    {
+      "id": "map_language_thought_l4",
+      "source": "language_thought_plane",
+      "target": "l4"
+    },
+    {
+      "id": "map_language_thought_l5",
+      "source": "language_thought_plane",
+      "target": "l5"
+    },
+    {
+      "id": "map_language_thought_l6",
+      "source": "language_thought_plane",
+      "target": "l6"
+    },
+    {
+      "id": "map_language_thought_zhiyuan",
+      "source": "language_thought_plane",
+      "target": "zhiyuan_method"
+    },
+    {
+      "id": "map_l0_l1",
+      "source": "l0",
+      "target": "l1"
+    },
+    {
+      "id": "map_l1_l2",
+      "source": "l1",
+      "target": "l2"
+    },
+    {
+      "id": "map_l2_l3",
+      "source": "l2",
+      "target": "l3"
+    },
+    {
+      "id": "map_l3_l4",
+      "source": "l3",
+      "target": "l4"
+    },
+    {
+      "id": "map_l4_l5",
+      "source": "l4",
+      "target": "l5"
+    },
+    {
+      "id": "map_l5_l6",
+      "source": "l5",
+      "target": "l6"
+    },
+    {
+      "id": "map_licensing_l6",
+      "source": "licensing",
+      "target": "l6"
+    },
+    {
+      "id": "map_mcf_psd",
+      "source": "mcf",
+      "target": "psd"
+    },
+    {
+      "id": "map_method_work",
+      "source": "zhiyuan_method",
+      "target": "accepted_work"
+    },
+    {
+      "id": "map_no_l7_truth",
+      "source": "no_l7",
+      "target": "no_truth_upgrade"
+    },
+    {
+      "id": "map_no_truth_totality",
+      "source": "no_truth_upgrade",
+      "target": "no_totality_proof"
+    },
+    {
+      "id": "map_pool_method",
+      "source": "source_pool",
+      "target": "zhiyuan_method"
+    },
+    {
+      "id": "map_provenance_return",
+      "source": "provenance_capture",
+      "target": "candidate_return"
+    },
+    {
+      "id": "map_q12_q13",
+      "source": "q12",
+      "target": "q13"
+    },
+    {
+      "id": "map_q13_q14",
+      "source": "q13",
+      "target": "q14"
+    },
+    {
+      "id": "map_q14_iteration",
+      "source": "q14",
+      "target": "iteration"
+    },
+    {
+      "id": "map_readme_current",
+      "source": "readme",
+      "target": "current_state"
+    },
+    {
+      "id": "map_readme_l0",
+      "source": "readme",
+      "target": "l0"
+    },
+    {
+      "id": "map_response_provenance",
+      "source": "public_response",
+      "target": "provenance_capture"
+    },
+    {
+      "id": "map_return_pool",
+      "source": "candidate_return",
+      "target": "source_pool"
+    },
+    {
+      "id": "map_return_routes",
+      "source": "candidate_return",
+      "target": "feedback_routes"
+    },
+    {
+      "id": "map_routes_increment",
+      "source": "feedback_routes",
+      "target": "ignition_increment"
+    },
+    {
+      "id": "map_sustain_iteration",
+      "source": "sustainability",
+      "target": "iteration"
+    },
+    {
+      "id": "map_work_registry",
+      "source": "accepted_work",
+      "target": "showcase_registry"
+    },
+    {
+      "id": "map_work_response",
+      "source": "accepted_work",
+      "target": "public_response"
+    },
+    {
+      "id": "map_work_showcase",
+      "source": "accepted_work",
+      "target": "showcase"
+    },
+    {
+      "id": "map_gov_jurisdiction",
+      "source": "copyright_governance_jurisdiction_registry",
+      "target": "charter"
+    },
+    {
+      "id": "map_gov_source_rights",
+      "source": "copyright_governance_source_rights",
+      "target": "external_input"
+    },
+    {
+      "id": "map_gov_publication_gate",
+      "source": "copyright_governance_publication_gate_validator",
+      "target": "current_state"
+    },
+    {
+      "id": "map_gov_non_repub",
+      "source": "copyright_governance_non_republication_principle",
+      "target": "accepted_work"
+    },
+    {
+      "id": "map_gov_material_class",
+      "source": "copyright_governance_material_classification",
+      "target": "source_pool"
+    },
+    {
+      "id": "map_foundation_epistemic_kernel",
+      "source": "foundation",
+      "target": "epistemic_governance_kernel"
+    },
+    {
+      "id": "map_language_epistemic_kernel",
+      "source": "language_thought_plane",
+      "target": "epistemic_governance_kernel"
+    },
+    {
+      "id": "map_charter_epistemic_kernel",
+      "source": "charter",
+      "target": "epistemic_governance_kernel"
+    },
+    {
+      "id": "map_epistemic_kernel_l6",
+      "source": "epistemic_governance_kernel",
+      "target": "l6"
+    },
+    {
+      "id": "map_epistemic_kernel_no_truth",
+      "source": "epistemic_governance_kernel",
+      "target": "no_truth_upgrade"
+    },
+    {
+      "id": "map_owner_human_agent_profile",
+      "source": "owner_human",
+      "target": "agent_profile_r0"
+    },
+    {
+      "id": "map_charter_agent_profile",
+      "source": "charter",
+      "target": "agent_profile_r0"
+    },
+    {
+      "id": "map_profile_agent_kernel",
+      "source": "agent_profile_r0",
+      "target": "agent_kernel_r0"
+    },
+    {
+      "id": "map_kernel_agent_runtime",
+      "source": "agent_kernel_r0",
+      "target": "agent_runtime_r0"
+    },
+    {
+      "id": "map_runtime_environment",
+      "source": "agent_runtime_r0",
+      "target": "runtime_environment"
+    },
+    {
+      "id": "map_runtime_external_agent_federation",
+      "source": "agent_runtime_r0",
+      "target": "external_agent_federation"
+    },
+    {
+      "id": "map_federation_openclaw",
+      "source": "external_agent_federation",
+      "target": "openclaw_adapter"
+    },
+    {
+      "id": "map_federation_hermes",
+      "source": "external_agent_federation",
+      "target": "hermes_adapter"
+    },
+    {
+      "id": "map_federation_codex",
+      "source": "external_agent_federation",
+      "target": "codex_adapter"
+    },
+    {
+      "id": "map_federation_reference_executor",
+      "source": "external_agent_federation",
+      "target": "reference_executor"
+    },
+    {
+      "id": "map_federation_future_executors",
+      "source": "external_agent_federation",
+      "target": "future_executors"
+    },
+    {
+      "id": "map_federation_runtime_environment",
+      "source": "external_agent_federation",
+      "target": "runtime_environment"
+    },
+    {
+      "id": "map_runtime_memory",
+      "source": "agent_runtime_r0",
+      "target": "runtime_memory_loop"
+    },
+    {
+      "id": "map_runtime_pack_contract",
+      "source": "agent_runtime_r0",
+      "target": "domain_pack_contract"
+    },
+    {
+      "id": "map_pack_knowledge",
+      "source": "domain_pack_contract",
+      "target": "knowledge_domain_pack"
+    },
+    {
+      "id": "map_pack_research",
+      "source": "domain_pack_contract",
+      "target": "research_pack_reos_light"
+    },
+    {
+      "id": "map_pack_writing",
+      "source": "domain_pack_contract",
+      "target": "writing_pack"
+    },
+    {
+      "id": "map_knowledge_human_surface",
+      "source": "knowledge_domain_pack",
+      "target": "human_knowledge_surfaces"
+    },
+    {
+      "id": "map_runtime_nonknowledge_pilot",
+      "source": "agent_runtime_r0",
+      "target": "nonknowledge_pilot"
+    },
+    {
+      "id": "map_kernel_no_truth_upgrade",
+      "source": "agent_kernel_r0",
+      "target": "no_truth_upgrade"
+    }
+  ],
+  "expected_node_count": 70,
+  "failures": [],
+  "gap_by_column": {
+    "0": {
+      "groups": [
+        "models",
+        "language_thought",
+        "writing",
+        "domain_packs",
+        "front_doors"
+      ],
+      "internal_gaps": [
+        28.0,
+        28.0,
+        28.0,
+        28.0
+      ],
+      "max_internal_gap": 28.0
+    },
+    "1": {
+      "groups": [
+        "os_spine",
+        "operations",
+        "feedback",
+        "layers"
+      ],
+      "internal_gaps": [
+        28.0,
+        28.0,
+        28.0
+      ],
+      "max_internal_gap": 28.0
+    },
+    "2": {
+      "groups": [
+        "core",
+        "governance",
+        "federation",
+        "boundaries"
+      ],
+      "internal_gaps": [
+        28.0,
+        28.0,
+        28.0
+      ],
+      "max_internal_gap": 28.0
+    }
+  },
+  "group_box_overlap_count": 0,
+  "groups": [
+    {
+      "column": 2,
+      "degree": 4,
+      "height": 322.0,
+      "id": "boundaries",
+      "node_count": 3,
+      "width": 560.0,
+      "x": 1208.0,
+      "y": 1964.0
+    },
+    {
+      "column": 2,
+      "degree": 4,
+      "height": 256.0,
+      "id": "core",
+      "node_count": 2,
+      "width": 560.0,
+      "x": 1208.0,
+      "y": 122.0
+    },
+    {
+      "column": 0,
+      "degree": 3,
+      "height": 454.0,
+      "id": "domain_packs",
+      "node_count": 5,
+      "width": 560.0,
+      "x": 32.0,
+      "y": 1436.0
+    },
+    {
+      "column": 2,
+      "degree": 2,
+      "height": 586.0,
+      "id": "federation",
+      "node_count": 7,
+      "width": 560.0,
+      "x": 1208.0,
+      "y": 1350.0
+    },
+    {
+      "column": 1,
+      "degree": 3,
+      "height": 388.0,
+      "id": "feedback",
+      "node_count": 4,
+      "width": 560.0,
+      "x": 620.0,
+      "y": 1152.0
+    },
+    {
+      "column": 0,
+      "degree": 4,
+      "height": 520.0,
+      "id": "front_doors",
+      "node_count": 6,
+      "width": 560.0,
+      "x": 32.0,
+      "y": 1918.0
+    },
+    {
+      "column": 2,
+      "degree": 13,
+      "height": 916.0,
+      "id": "governance",
+      "node_count": 12,
+      "width": 560.0,
+      "x": 1208.0,
+      "y": 406.0
+    },
+    {
+      "column": 0,
+      "degree": 9,
+      "height": 190.0,
+      "id": "language_thought",
+      "node_count": 1,
+      "width": 560.0,
+      "x": 32.0,
+      "y": 472.0
+    },
+    {
+      "column": 1,
+      "degree": 11,
+      "height": 586.0,
+      "id": "layers",
+      "node_count": 7,
+      "width": 560.0,
+      "x": 620.0,
+      "y": 1568.0
+    },
+    {
+      "column": 0,
+      "degree": 0,
+      "height": 322.0,
+      "id": "models",
+      "node_count": 3,
+      "width": 560.0,
+      "x": 32.0,
+      "y": 122.0
+    },
+    {
+      "column": 1,
+      "degree": 4,
+      "height": 454.0,
+      "id": "operations",
+      "node_count": 5,
+      "width": 560.0,
+      "x": 620.0,
+      "y": 670.0
+    },
+    {
+      "column": 1,
+      "degree": 6,
+      "height": 520.0,
+      "id": "os_spine",
+      "node_count": 6,
+      "width": 560.0,
+      "x": 620.0,
+      "y": 122.0
+    },
+    {
+      "column": 0,
+      "degree": 7,
+      "height": 718.0,
+      "id": "writing",
+      "node_count": 9,
+      "width": 560.0,
+      "x": 32.0,
+      "y": 690.0
+    }
+  ],
+  "internal_blank_area": 156800.0,
+  "label_clip_count": 0,
+  "layout_version": "1.6.0",
+  "map_version": "0.8.0",
+  "max_internal_gap": 28.0,
+  "metrics": {
+    "baseline_canvas_height": 3988.0,
+    "baseline_edge_crossing_proxy": 173.0,
+    "baseline_internal_blank_area": 1245440.0,
+    "blank_area_reduction_vs_baseline": 0.8741007194,
+    "canvas_height": 2470.0,
+    "canvas_height_reduction_vs_baseline": 0.3806419258,
+    "canvas_width": 1800.0,
+    "edge_crossing_proxy": 160,
+    "edge_crossing_ratio_vs_baseline": 0.9248554913,
+    "group_occupancy_ratio": 0.784957265,
+    "internal_blank_area": 156800.0,
+    "max_internal_gap": 28.0,
+    "mobile_viewports_fit": 2
+  },
+  "mobile_viewports": [
+    {
+      "fit_scale": 0.20833333,
+      "fit_without_horizontal_scroll": true,
+      "height": 667,
+      "width": 375
+    },
+    {
+      "fit_scale": 0.21666667,
+      "fit_without_horizontal_scroll": true,
+      "height": 844,
+      "width": 390
+    }
+  ],
+  "node_box_overlap_count": 0,
+  "nodes": [
+    {
+      "group": "writing",
+      "height": 54.0,
+      "id": "accepted_work",
+      "width": 516.0,
+      "x": 54.0,
+      "y": 1178.0
+    },
+    {
+      "group": "os_spine",
+      "height": 54.0,
+      "id": "agent_kernel_r0",
+      "width": 516.0,
+      "x": 642.0,
+      "y": 346.0
+    },
+    {
+      "group": "os_spine",
+      "height": 54.0,
+      "id": "agent_profile_r0",
+      "width": 516.0,
+      "x": 642.0,
+      "y": 478.0
+    },
+    {
+      "group": "os_spine",
+      "height": 54.0,
+      "id": "agent_runtime_r0",
+      "width": 516.0,
+      "x": 642.0,
+      "y": 412.0
+    },
+    {
+      "group": "os_spine",
+      "height": 54.0,
+      "id": "agentization_boundary_r0",
+      "width": 516.0,
+      "x": 642.0,
+      "y": 280.0
+    },
+    {
+      "group": "front_doors",
+      "height": 54.0,
+      "id": "ai_guide",
+      "width": 516.0,
+      "x": 54.0,
+      "y": 2274.0
+    },
+    {
+      "group": "models",
+      "height": 54.0,
+      "id": "arn",
+      "width": 516.0,
+      "x": 54.0,
+      "y": 346.0
+    },
+    {
+      "group": "feedback",
+      "height": 54.0,
+      "id": "candidate_return",
+      "width": 516.0,
+      "x": 642.0,
+      "y": 1376.0
+    },
+    {
+      "group": "writing",
+      "height": 54.0,
+      "id": "case_source",
+      "width": 516.0,
+      "x": 54.0,
+      "y": 1046.0
+    },
+    {
+      "group": "governance",
+      "height": 54.0,
+      "id": "charter",
+      "width": 516.0,
+      "x": 1230.0,
+      "y": 498.0
+    },
+    {
+      "group": "governance",
+      "height": 54.0,
+      "id": "charter_system_r1",
+      "width": 516.0,
+      "x": 1230.0,
+      "y": 564.0
+    },
+    {
+      "group": "federation",
+      "height": 54.0,
+      "id": "codex_adapter",
+      "width": 516.0,
+      "x": 1230.0,
+      "y": 1640.0
+    },
+    {
+      "group": "governance",
+      "height": 54.0,
+      "id": "copyright_governance_history_remediation",
+      "width": 516.0,
+      "x": 1230.0,
+      "y": 696.0
+    },
+    {
+      "group": "governance",
+      "height": 54.0,
+      "id": "copyright_governance_jurisdiction_registry",
+      "width": 516.0,
+      "x": 1230.0,
+      "y": 762.0
+    },
+    {
+      "group": "governance",
+      "height": 54.0,
+      "id": "copyright_governance_material_classification",
+      "width": 516.0,
+      "x": 1230.0,
+      "y": 828.0
+    },
+    {
+      "group": "governance",
+      "height": 54.0,
+      "id": "copyright_governance_non_republication_principle",
+      "width": 516.0,
+      "x": 1230.0,
+      "y": 894.0
+    },
+    {
+      "group": "governance",
+      "height": 54.0,
+      "id": "copyright_governance_publication_gate_validator",
+      "width": 516.0,
+      "x": 1230.0,
+      "y": 960.0
+    },
+    {
+      "group": "governance",
+      "height": 54.0,
+      "id": "copyright_governance_source_rights",
+      "width": 516.0,
+      "x": 1230.0,
+      "y": 1026.0
+    },
+    {
+      "group": "governance",
+      "height": 54.0,
+      "id": "copyright_governance_tests",
+      "width": 516.0,
+      "x": 1230.0,
+      "y": 1092.0
+    },
+    {
+      "group": "front_doors",
+      "height": 54.0,
+      "id": "current_state",
+      "width": 516.0,
+      "x": 54.0,
+      "y": 2340.0
+    },
+    {
+      "group": "domain_packs",
+      "height": 54.0,
+      "id": "domain_pack_contract",
+      "width": 516.0,
+      "x": 54.0,
+      "y": 1528.0
+    },
+    {
+      "group": "governance",
+      "height": 54.0,
+      "id": "epistemic_governance_kernel",
+      "width": 516.0,
+      "x": 1230.0,
+      "y": 630.0
+    },
+    {
+      "group": "federation",
+      "height": 54.0,
+      "id": "external_agent_federation",
+      "width": 516.0,
+      "x": 1230.0,
+      "y": 1442.0
+    },
+    {
+      "group": "writing",
+      "height": 54.0,
+      "id": "external_input",
+      "width": 516.0,
+      "x": 54.0,
+      "y": 782.0
+    },
+    {
+      "group": "feedback",
+      "height": 54.0,
+      "id": "feedback_routes",
+      "width": 516.0,
+      "x": 642.0,
+      "y": 1442.0
+    },
+    {
+      "group": "core",
+      "height": 54.0,
+      "id": "foundation",
+      "width": 516.0,
+      "x": 1230.0,
+      "y": 214.0
+    },
+    {
+      "group": "core",
+      "height": 54.0,
+      "id": "function_os",
+      "width": 516.0,
+      "x": 1230.0,
+      "y": 280.0
+    },
+    {
+      "group": "federation",
+      "height": 54.0,
+      "id": "future_executors",
+      "width": 516.0,
+      "x": 1230.0,
+      "y": 1772.0
+    },
+    {
+      "group": "federation",
+      "height": 54.0,
+      "id": "hermes_adapter",
+      "width": 516.0,
+      "x": 1230.0,
+      "y": 1574.0
+    },
+    {
+      "group": "front_doors",
+      "height": 54.0,
+      "id": "human_knowledge_surfaces",
+      "width": 516.0,
+      "x": 54.0,
+      "y": 2076.0
+    },
+    {
+      "group": "writing",
+      "height": 54.0,
+      "id": "ignition_increment",
+      "width": 516.0,
+      "x": 54.0,
+      "y": 848.0
+    },
+    {
+      "group": "operations",
+      "height": 54.0,
+      "id": "iteration",
+      "width": 516.0,
+      "x": 642.0,
+      "y": 960.0
+    },
+    {
+      "group": "domain_packs",
+      "height": 54.0,
+      "id": "knowledge_domain_pack",
+      "width": 516.0,
+      "x": 54.0,
+      "y": 1594.0
+    },
+    {
+      "group": "layers",
+      "height": 54.0,
+      "id": "l0",
+      "width": 516.0,
+      "x": 642.0,
+      "y": 1660.0
+    },
+    {
+      "group": "layers",
+      "height": 54.0,
+      "id": "l1",
+      "width": 516.0,
+      "x": 642.0,
+      "y": 1726.0
+    },
+    {
+      "group": "layers",
+      "height": 54.0,
+      "id": "l2",
+      "width": 516.0,
+      "x": 642.0,
+      "y": 1792.0
+    },
+    {
+      "group": "layers",
+      "height": 54.0,
+      "id": "l3",
+      "width": 516.0,
+      "x": 642.0,
+      "y": 1858.0
+    },
+    {
+      "group": "layers",
+      "height": 54.0,
+      "id": "l4",
+      "width": 516.0,
+      "x": 642.0,
+      "y": 1924.0
+    },
+    {
+      "group": "layers",
+      "height": 54.0,
+      "id": "l5",
+      "width": 516.0,
+      "x": 642.0,
+      "y": 1990.0
+    },
+    {
+      "group": "layers",
+      "height": 54.0,
+      "id": "l6",
+      "width": 516.0,
+      "x": 642.0,
+      "y": 2056.0
+    },
+    {
+      "group": "language_thought",
+      "height": 54.0,
+      "id": "language_thought_plane",
+      "width": 516.0,
+      "x": 54.0,
+      "y": 564.0
+    },
+    {
+      "group": "governance",
+      "height": 54.0,
+      "id": "licensing",
+      "width": 516.0,
+      "x": 1230.0,
+      "y": 1158.0
+    },
+    {
+      "group": "models",
+      "height": 54.0,
+      "id": "mcf",
+      "width": 516.0,
+      "x": 54.0,
+      "y": 214.0
+    },
+    {
+      "group": "boundaries",
+      "height": 54.0,
+      "id": "no_l7",
+      "width": 516.0,
+      "x": 1230.0,
+      "y": 2056.0
+    },
+    {
+      "group": "boundaries",
+      "height": 54.0,
+      "id": "no_totality_proof",
+      "width": 516.0,
+      "x": 1230.0,
+      "y": 2188.0
+    },
+    {
+      "group": "boundaries",
+      "height": 54.0,
+      "id": "no_truth_upgrade",
+      "width": 516.0,
+      "x": 1230.0,
+      "y": 2122.0
+    },
+    {
+      "group": "domain_packs",
+      "height": 54.0,
+      "id": "nonknowledge_pilot",
+      "width": 516.0,
+      "x": 54.0,
+      "y": 1792.0
+    },
+    {
+      "group": "federation",
+      "height": 54.0,
+      "id": "openclaw_adapter",
+      "width": 516.0,
+      "x": 1230.0,
+      "y": 1508.0
+    },
+    {
+      "group": "os_spine",
+      "height": 54.0,
+      "id": "owner_human",
+      "width": 516.0,
+      "x": 642.0,
+      "y": 214.0
+    },
+    {
+      "group": "writing",
+      "height": 54.0,
+      "id": "point_fire_analysis",
+      "width": 516.0,
+      "x": 54.0,
+      "y": 1112.0
+    },
+    {
+      "group": "feedback",
+      "height": 54.0,
+      "id": "provenance_capture",
+      "width": 516.0,
+      "x": 642.0,
+      "y": 1310.0
+    },
+    {
+      "group": "models",
+      "height": 54.0,
+      "id": "psd",
+      "width": 516.0,
+      "x": 54.0,
+      "y": 280.0
+    },
+    {
+      "group": "feedback",
+      "height": 54.0,
+      "id": "public_response",
+      "width": 516.0,
+      "x": 642.0,
+      "y": 1244.0
+    },
+    {
+      "group": "operations",
+      "height": 54.0,
+      "id": "q12",
+      "width": 516.0,
+      "x": 642.0,
+      "y": 762.0
+    },
+    {
+      "group": "operations",
+      "height": 54.0,
+      "id": "q13",
+      "width": 516.0,
+      "x": 642.0,
+      "y": 828.0
+    },
+    {
+      "group": "operations",
+      "height": 54.0,
+      "id": "q14",
+      "width": 516.0,
+      "x": 642.0,
+      "y": 894.0
+    },
+    {
+      "group": "front_doors",
+      "height": 54.0,
+      "id": "readme",
+      "width": 516.0,
+      "x": 54.0,
+      "y": 2010.0
+    },
+    {
+      "group": "federation",
+      "height": 54.0,
+      "id": "reference_executor",
+      "width": 516.0,
+      "x": 1230.0,
+      "y": 1706.0
+    },
+    {
+      "group": "domain_packs",
+      "height": 54.0,
+      "id": "research_pack_reos_light",
+      "width": 516.0,
+      "x": 54.0,
+      "y": 1660.0
+    },
+    {
+      "group": "federation",
+      "height": 54.0,
+      "id": "runtime_environment",
+      "width": 516.0,
+      "x": 1230.0,
+      "y": 1838.0
+    },
+    {
+      "group": "os_spine",
+      "height": 54.0,
+      "id": "runtime_memory_loop",
+      "width": 516.0,
+      "x": 642.0,
+      "y": 544.0
+    },
+    {
+      "group": "writing",
+      "height": 54.0,
+      "id": "showcase",
+      "width": 516.0,
+      "x": 54.0,
+      "y": 1244.0
+    },
+    {
+      "group": "writing",
+      "height": 54.0,
+      "id": "showcase_registry",
+      "width": 516.0,
+      "x": 54.0,
+      "y": 1310.0
+    },
+    {
+      "group": "writing",
+      "height": 54.0,
+      "id": "source_pool",
+      "width": 516.0,
+      "x": 54.0,
+      "y": 914.0
+    },
+    {
+      "group": "front_doors",
+      "height": 54.0,
+      "id": "summary",
+      "width": 516.0,
+      "x": 54.0,
+      "y": 2142.0
+    },
+    {
+      "group": "governance",
+      "height": 54.0,
+      "id": "sustainability",
+      "width": 516.0,
+      "x": 1230.0,
+      "y": 1224.0
+    },
+    {
+      "group": "operations",
+      "height": 54.0,
+      "id": "sync",
+      "width": 516.0,
+      "x": 642.0,
+      "y": 1026.0
+    },
+    {
+      "group": "front_doors",
+      "height": 54.0,
+      "id": "usage",
+      "width": 516.0,
+      "x": 54.0,
+      "y": 2208.0
+    },
+    {
+      "group": "domain_packs",
+      "height": 54.0,
+      "id": "writing_pack",
+      "width": 516.0,
+      "x": 54.0,
+      "y": 1726.0
+    },
+    {
+      "group": "writing",
+      "height": 54.0,
+      "id": "zhiyuan_method",
+      "width": 516.0,
+      "x": 54.0,
+      "y": 980.0
+    }
+  ],
+  "nodes_outside_group_count": 0,
+  "outer_padding": 32.0,
+  "packing_algorithm": "deterministic-scc-ranked-column-packing-r1",
+  "padding": {
+    "bottom": 32.0,
+    "left": 32.0,
+    "right": 32.0,
+    "top": 122.0
+  },
+  "schema_version": "system-map-geometry-quality-r1",
+  "solid_background_rect_count": 1,
+  "status": "PASS",
+  "task_id": "IGNITION-20260816-123",
+  "thresholds": {
+    "maximum_edge_crossing_ratio_vs_baseline": 1.1,
+    "maximum_internal_gap": 200.0,
+    "minimum_blank_area_reduction_vs_baseline": 0.3,
+    "minimum_canvas_height_reduction_vs_baseline": 0.2,
+    "required_mobile_viewports_without_horizontal_scroll": 2,
+    "required_outer_padding": 32.0
+  },
+  "top_offset": 122.0
+}

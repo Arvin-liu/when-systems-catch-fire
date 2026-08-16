@@ -178,3 +178,23 @@ Current-state validator、current-facts determinism、Human Surface contract、H
 本步 claim ceiling：deterministic repository semantic navigation, group projection and current-facts evidence only；不推导 external truth、Owner acceptance、production safety 或 epistemic upgrade。
 
 下一步：把 compact layout 的空白、重叠、越界、点击覆盖、crossing、孤立 group 与移动端 viewport 条件固化为 deterministic geometry quality gate，并加入旧 row-max negative fixture。
+
+## Step 06 — COMPLETE
+
+### Geometry quality gate
+
+新增 [`system-map-geometry-quality-r1.json`](../../data/architecture/system-map-geometry-quality-r1.json) 与 [`validate_system_map_geometry.py`](../../tools/validate_system_map_geometry.py)。门禁从生成的 canonical SVG 和 typed projection 重新测量 group/node boxes、内部空白、包络 padding、label baseline、click target、solid background、group isolation、edge crossing proxy 与移动端 viewport，不把“文件可生成”当作布局质量。
+
+相对 Step 00 row-max baseline，当前 `1800×2470` canvas 高度下降 `38.0642%`；按实际同列内部 corridor 面积计算的无信息空白下降 `87.4101%`；edge crossing proxy 为 `160`，基线 `173`，比例 `0.9248554913`；最大内部垂直 gap 为 `28`；group occupancy 为 `0.784957265`。13 个 group 与 70 个 visible node 均无重叠、无越界、无 label clip；70/70 clickable targets 覆盖正确；固体背景为 1；两个代表性 mobile viewport 均无需横向拖动才能 fit；底部 group 中没有 degree-zero 孤立组。
+
+加入两个负向 fixture：恢复 Step 00 的旧 row-max baseline 必须因 blank reduction、height reduction、max gap、node geometry 与 mobile-fit 失败；把两个 group 压到同一坐标的“伪紧凑”布局必须因 `group_box_overlap` 失败。质量报告 schema 与 14 项 geometry/map/current-state tests 全部通过。
+
+### Targeted gates and boundary
+
+`SYSTEM_MAP_GEOMETRY_OK height=2470.0 blank_reduction=0.8741007194 crossing=160`、`SYSTEM_MAP_GEOMETRY_FIXTURES_OK`、system-map generator、current-facts、Current State sync、Human Surface/front door/visibility、State Changelog、schema 和 `git diff --check` 均为 `PASS`。生成器同时显式写入 `preserveAspectRatio=xMidYMin meet`、group `data-group` 和两行可验证的 group descriptions。
+
+未读取 secret，未改外部 Agent 配置，未安装/升级，未进行真实外部 Agent invocation；本步 live 状态为 `NOT_RUN_STEP_06`。正式 main 仍保持 `d60ec8687fb1cc6b972e831a8f0dcd348ba0e83e`；正式 `STATE-CHANGELOG` architecture delta 保留到 Step 12。
+
+本步 claim ceiling：deterministic repository geometry, accessibility and regression evidence only；不推导 external truth、Owner acceptance、production safety 或 epistemic upgrade。
+
+下一步：以同一 identity contract 收敛所有 Current Human/AI、Architecture、Federation、Results 与 State Changelog 表面，消除 0.7/0.8 和旧 agentization 叙述残余。

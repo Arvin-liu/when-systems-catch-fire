@@ -17,7 +17,7 @@
     {"surface_id":"system-map-json","path":"ignition/data/architecture/interactive-system-map.json","decision":"CHANGE","reason":"Regenerate the sole derived map after replacing row-max placement with deterministic relation-ranked independent column packing.","evidence":"Step 04 compact-layout generator test; SYSTEM_MAP_DERIVED_OK nodes=70 edges=77"},
     {"surface_id":"state-changelog","path":"ignition/STATE-CHANGELOG.md","decision":"NO_CHANGE_WITH_REASON","reason":"This branch surface repair is not the formal main release delta; the exact main delta is reserved for Step 12 closure.","evidence":"formal main remains d60ec868 during Steps 00–11"}
   ],
-  "system_map_sync": {"decision":"CHANGE","reason":"Step 05 changes the sole map projection groups and semantic reading route, then regenerates the machine projection and canonical SVG.","evidence":"interactive-system-map-layout.json 1.6.0; semantic-trunk-r1; map 0.8.0; 70 visible nodes"},
+  "system_map_sync": {"decision":"CHANGE","reason":"Step 06 adds and passes the deterministic geometry quality gate for the sole compact map, including accessibility and old row-max negative fixtures.","evidence":"system-map-geometry-quality-r1.json; blank reduction 87.4101%; height reduction 38.0642%; crossing proxy 160/173"},
   "state_changelog_delta": {"decision":"NO_CHANGE_WITH_REASON","reason":"Task-branch progress is recorded in the 123 nightshift ledger; formal main delta is reserved for final release."},
   "changed_paths": [
     "AGENTS.md",
@@ -41,15 +41,20 @@
     "ignition/schemas/architecture/current-system-identity.schema.json",
     "ignition/schemas/architecture/current-state-sync-receipt.schema.json",
     "ignition/schemas/architecture/interactive-system-map-layout.schema.json",
+    "ignition/schemas/architecture/system-map-geometry-quality.schema.json",
     "ignition/tools/generate_current_facts.py",
     "ignition/tools/generate_interactive_system_map.py",
+    "ignition/tools/validate_system_map_geometry.py",
     "ignition/tools/validate_current_state_sync.py",
     "ignition/tests/test_current_state_sync.py",
     "ignition/tests/test_interactive_system_map_layout.py",
+    "ignition/tests/test_system_map_geometry.py",
     "ignition/docs/architecture/interactive-system-map.md",
+    "ignition/data/architecture/system-map-geometry-quality-r1.json",
+    "ignition/data/operations/iterations/123/fixtures/system-map-geometry-fixtures-r1.json",
     "ignition/llms.txt"
   ],
   "identity_contract_changed": true,
   "surface_sync_complete": false,
-  "claim_ceiling": "Current State/front-door synchronization plus deterministic map semantic navigation and derived facts only; formal main architecture/state-delta closure, external-agent evidence, production, Owner and epistemic upgrades remain open."
+  "claim_ceiling": "Current State/front-door synchronization plus deterministic map semantic navigation, geometry and accessibility evidence only; formal main architecture/state-delta closure, external-agent evidence, production, Owner and epistemic upgrades remain open."
 }

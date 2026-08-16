@@ -388,6 +388,7 @@ def render_svg(spec: dict, root_path: Path = ROOT) -> bytes:
             "width": str(width),
             "height": str(height),
             "role": "img",
+            "preserveAspectRatio": "xMidYMin meet",
             "aria-labelledby": "map-title map-description",
         },
     )
@@ -429,9 +430,13 @@ def render_svg(spec: dict, root_path: Path = ROOT) -> bytes:
     node_positions: dict[str, tuple[float, float, float, float, str]] = {}
     for group in spec["groups"]:
         x, y, group_height = group_positions[group["id"]]
-        root.append(svg_element("rect", {"class": "cluster", "x": str(x), "y": str(y), "width": str(group_width), "height": str(group_height), "rx": "16", "stroke": group["color"]}))
+        root.append(svg_element("rect", {"class": "cluster", "data-group": group["id"], "x": str(x), "y": str(y), "width": str(group_width), "height": str(group_height), "rx": "16", "stroke": group["color"]}))
         root.append(svg_element("text", {"class": "cluster-title", "x": str(x + 22), "y": str(y + 32), "fill": group["color"]}, group["label"]))
-        root.append(svg_element("text", {"class": "cluster-desc", "x": str(x + 22), "y": str(y + 58)}, group["description"]))
+        description = svg_element("text", {"class": "cluster-desc", "x": str(x + 22), "y": str(y + 58)})
+        description_lines = textwrap.wrap(group["description"], width=52, break_long_words=False, break_on_hyphens=False) or [group["description"]]
+        for offset, line in enumerate(description_lines[:2]):
+            description.append(svg_element("tspan", {"x": str(x + 22), "dy": "0" if offset == 0 else "16"}, line))
+        root.append(description)
         for index, node in enumerate(nodes_by_group[group["id"]]):
             node_x = x + 22
             node_y = y + header_height + index * (node_height + node_gap)
