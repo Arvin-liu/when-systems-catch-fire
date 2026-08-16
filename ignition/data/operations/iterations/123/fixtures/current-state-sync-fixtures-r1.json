@@ -1,0 +1,55 @@
+{
+  "schema_version": "current-state-sync-fixtures-r1",
+  "task_id": "IGNITION-20260816-123",
+  "purpose": "Step 00 negative and positive fixtures for the Step 01 current-state sync validator and later adversarial replay.",
+  "authority_boundary": "Fixtures specify repository synchronization behavior only; they do not establish external truth, Owner acceptance, production readiness or epistemic acceptance.",
+  "fixtures": [
+    {
+      "id": "machine-identity-without-current-state",
+      "kind": "negative",
+      "mutations": ["current_system_identity_changed"],
+      "missing_surfaces": ["ignition/docs/project-current-state.md"],
+      "expected_status": "FAIL",
+      "expected_code": "CURRENT_STATE_SYNC_MISSING"
+    },
+    {
+      "id": "current-state-without-homepage-identity",
+      "kind": "negative",
+      "mutations": ["project_current_state_changed"],
+      "stale_surfaces": [".github/README.md"],
+      "expected_status": "FAIL",
+      "expected_code": "HOMEPAGE_IDENTITY_STALE"
+    },
+    {
+      "id": "architecture-changed-with-old-map",
+      "kind": "negative",
+      "mutations": ["architecture_identity_impact=ARCHITECTURE_CHANGED"],
+      "stale_surfaces": ["ignition/data/architecture/interactive-system-map-layout.json", "ignition/data/architecture/interactive-system-map.json"],
+      "expected_status": "FAIL",
+      "expected_code": "SYSTEM_MAP_SYNC_MISSING"
+    },
+    {
+      "id": "presentation-only-no-epoch-bump",
+      "kind": "positive",
+      "mutations": ["architecture_identity_impact=PRESENTATION_ONLY"],
+      "required_changes": [],
+      "expected_status": "PASS",
+      "expected_code": "PRESENTATION_ONLY_NO_IDENTITY_BUMP"
+    },
+    {
+      "id": "historical-counts-in-sealed-history",
+      "kind": "positive",
+      "mutations": ["historical_task_record_contains_old_counts"],
+      "required_changes": [],
+      "expected_status": "PASS",
+      "expected_code": "HISTORICAL_FACT_EXEMPT"
+    },
+    {
+      "id": "map-subtitle-current-version-contradiction",
+      "kind": "negative",
+      "mutations": ["map_version=0.7.0", "subtitle_says_0.6.0_current"],
+      "expected_status": "FAIL",
+      "expected_code": "CURRENT_IDENTITY_CONFLICT"
+    }
+  ]
+}

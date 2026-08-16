@@ -1,0 +1,85 @@
+{
+  "schema_version": "system-map-geometry-baseline-r1",
+  "task_id": "IGNITION-20260816-123",
+  "step": "00",
+  "source_commit": "d60ec8687fb1cc6b972e831a8f0dcd348ba0e83e",
+  "map_version": "0.7.0",
+  "source_versions": {
+    "component_registry": "1.6.0",
+    "topology": "1.6.0",
+    "layout": "1.4.0"
+  },
+  "source_sha256": {
+    "ignition/data/operations/project-components.json": "f0f90ca8223ef07087aca3d871812a1e8b185b3dd032e5225455597837591404",
+    "ignition/data/operations/change-propagation-topology.json": "a8a68cac1f683562e758383d870e78878308cc73d3b7eec34a6c80d7ba31314b",
+    "ignition/data/architecture/interactive-system-map-layout.json": "8a24bdfb0565b38acc06392d8406020f09e8615542b70533aab23578aff9ab09",
+    "ignition/data/architecture/interactive-system-map.json": "84a0855021f3fa0f78dea261a44cf2ddde506a739c86b11f0ce340c1be655a88",
+    "ignition/docs/generated/ignition-system-architecture.svg": "5224ef256705c826009180ca085d7a34091fef4682f2b58f7dbd6958777e910e"
+  },
+  "measurement_definition": {
+    "occupied_area": "sum of non-overlapping group rectangles",
+    "envelope_area": "axis-aligned envelope from the outermost group rectangles",
+    "row_max_waste": "sum of the unused rectangle below shorter same-row groups caused by row maximum height",
+    "vertical_blank_corridor": "maximum internal vertical gap between consecutive groups in one column; outer margins excluded",
+    "edge_crossing_proxy": "straight line segments between node centers, shared endpoints excluded; used only as a deterministic comparison proxy",
+    "group_isolation": "same-column internal gap and group-level edge degree"
+  },
+  "layout_algorithm": {
+    "name": "row_max_group_layout",
+    "mechanism": "Each row uses the maximum group height; every group in the row receives the same row_y and the next row starts after that maximum plus group_gap.",
+    "structural_consequence": "A tall peer group pushes all shorter same-row groups and later rows downward, creating uninformative vertical bands; the 18-node agentization group also becomes a bottom-only row and drives the canvas height.",
+    "generator_function": "ignition/tools/generate_interactive_system_map.py:render_svg"
+  },
+  "canvas": {
+    "width": 1800,
+    "height": 3988,
+    "area": 7178400,
+    "aspect_ratio_width_over_height": 0.4513540622
+  },
+  "groups": [
+    {"id":"front_doors","column":0,"row":0,"x":32,"y":122,"width":560,"height":520,"node_count":6,"group_degree":4},
+    {"id":"layers","column":1,"row":0,"x":620,"y":122,"width":560,"height":586,"node_count":7,"group_degree":4},
+    {"id":"core","column":2,"row":0,"x":1208,"y":122,"width":560,"height":256,"node_count":2,"group_degree":4},
+    {"id":"models","column":0,"row":1,"x":32,"y":736,"width":560,"height":322,"node_count":3,"group_degree":0},
+    {"id":"operations","column":1,"row":1,"x":620,"y":736,"width":560,"height":454,"node_count":5,"group_degree":2},
+    {"id":"governance","column":2,"row":1,"x":1208,"y":736,"width":560,"height":916,"node_count":12,"group_degree":8},
+    {"id":"writing","column":0,"row":2,"x":32,"y":1680,"width":560,"height":718,"node_count":9,"group_degree":3},
+    {"id":"feedback","column":1,"row":2,"x":620,"y":1680,"width":560,"height":388,"node_count":4,"group_degree":1},
+    {"id":"boundaries","column":2,"row":2,"x":1208,"y":1680,"width":560,"height":322,"node_count":3,"group_degree":4},
+    {"id":"language_thought","column":0,"row":3,"x":32,"y":2426,"width":560,"height":190,"node_count":1,"group_degree":3},
+    {"id":"agentization","column":1,"row":4,"x":620,"y":2644,"width":560,"height":1312,"node_count":18,"group_degree":3}
+  ],
+  "row_heights": [586,916,718,190,1312],
+  "row_y": [122,736,1680,2426,2644],
+  "occupied_area": {
+    "group_union_area": 3351040,
+    "group_union_occupancy_ratio_of_canvas": 0.4668226903,
+    "envelope_width": 1736,
+    "envelope_height": 3834,
+    "envelope_area": 6655824,
+    "group_occupancy_ratio_of_envelope": 0.5034748515,
+    "row_max_waste_area": 1219680,
+    "row_max_waste_ratio_of_canvas": 0.1699097292
+  },
+  "vertical_blank_corridor": {
+    "max_internal_gap": 622,
+    "by_column": {
+      "0": {"groups":["front_doors","models","writing","language_thought"],"internal_gaps":[94,622,28],"max_internal_gap":622},
+      "1": {"groups":["layers","operations","feedback","agentization"],"internal_gaps":[28,490,576],"max_internal_gap":576},
+      "2": {"groups":["core","governance","boundaries"],"internal_gaps":[358,28],"max_internal_gap":358}
+    }
+  },
+  "edge_crossing_proxy": {
+    "count": 173,
+    "method": "straight line segments between node centers; shared endpoints excluded"
+  },
+  "clickability_and_isolation": {
+    "visible_nodes": 70,
+    "svg_clickable_targets": 70,
+    "solid_background_rect_present": true,
+    "groups_without_cross_group_edge_degree": ["models"],
+    "bottom_only_group": "agentization",
+    "bottom_only_group_degree": 3,
+    "bottom_only_group_node_count": 18
+  }
+}
