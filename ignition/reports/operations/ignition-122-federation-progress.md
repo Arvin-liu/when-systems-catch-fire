@@ -94,14 +94,38 @@ external truth, Owner acceptance, production safety or epistemic acceptance.
   SQLite/session inspection, configuration change, channel action, install or
   upgrade was performed.
 
+## Step 05 — COMPLETE
+
+- Result: `STEP_05_HERMES_ADAPTER_COMPLETE`.
+- Adapter: `agent_federation/adapters/hermes.py`; fixture:
+  `tests/fixtures/federation/hermes-oneshot-final-response.txt`.
+- Current local help confirmed Hermes `-z/--oneshot PROMPT`, `--safe-mode`,
+  `--ignore-user-config`, `--ignore-rules`, `--resume` and
+  `--no-restore-cwd`. The adapter uses only the one-shot text surface and
+  passes the bounded task body as one literal argv value.
+- Because Hermes one-shot approvals are auto-bypassed and stdout is final
+  text, the adapter declares only `repo.read`, requires explicit low-risk
+  effects and forbidden effects, and rejects write, send, terminal, browser,
+  device, gateway, network and other non-read actions. It never passes
+  `--yolo` or `--accept-hooks`.
+- Hermes config, memory, rules, skills, subagents, providers, gateways,
+  sessions and auth remain external-owned. Optional resume values are
+  pointer-only. Completion maps to `COMPLETED_UNVALIDATED` and the receipt
+  remains `REQUIRES_RECONCILIATION`.
+- Gates: Hermes fixture/descriptor/read-only/session/receipt tests plus the
+  OpenClaw and 121 core set = `88/88 PASS`; inventory, ownership and
+  runtime-boundary validators = `PASS`.
+- Live smoke: `LIVE_SMOKE_NOT_RUN`; no inference, provider/config/auth change,
+  memory read, Gateway, message, installation or upgrade was performed.
+
 | Step | Status | Commit | Remote | Targeted gate |
 | --- | --- | --- | --- | --- |
 | 00 | COMPLETE | `05ac54db` | `05ac54db` | inventory schema + 121 core = PASS |
 | 01 | COMPLETE | `a8b0cadd` | `a8b0cadd` | ownership + freeze + 66 tests = PASS |
 | 02 | COMPLETE | `53585047` | `53585047` | federation core + 71 tests = PASS |
 | 03 | COMPLETE | `43af8300` | `43af8300` | SDK/conformance + 76 tests = PASS |
-| 04 | COMPLETE | pending self commit binding | pending `ls-remote` binding | OpenClaw adapter + 82 tests = PASS |
-| 05 | PENDING | — | — | — |
+| 04 | COMPLETE | `fa0a6890` | `fa0a6890` | OpenClaw adapter + 82 tests = PASS |
+| 05 | COMPLETE | pending self commit binding | pending `ls-remote` binding | Hermes adapter + 88 tests = PASS |
 | 06 | PENDING | — | — | — |
 | 07 | PENDING | — | — | — |
 | 08 | PENDING | — | — | — |

@@ -1,0 +1,1 @@
+Read-only disposable fixture inspected successfully. Ignition validators must verify any claimed artifact before acceptance.
