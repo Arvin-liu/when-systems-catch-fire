@@ -68,10 +68,10 @@
   },
   "generator_id": "agent_platform_r2_blast_radius",
   "source_authority_sha256": {
-    "data/operations/change-propagation-topology.json": "909bca99eeca3d1cb52437135bc45df989180337c892be5888b45b3cf16fd683",
-    "data/operations/project-components.json": "25298001041235dd9e32cdb5bab411058b846a2399ca9f5146578f4b755fb5c8",
-    "data/operations/propagation/agent-platform-r2-propagation-contract.json": "384708342789c6ab8c746e0bd7a6d02ead013eb57b97102d9b97304242e1247b",
-    "tools/propagation/impact_contract.py": "491b86958519832a3b24db19d68dd7a6f8097dcb3746ce41b0dfa4afa6b08432"
+    "data/operations/change-propagation-topology.json": "a8a68cac1f683562e758383d870e78878308cc73d3b7eec34a6c80d7ba31314b",
+    "data/operations/project-components.json": "f0f90ca8223ef07087aca3d871812a1e8b185b3dd032e5225455597837591404",
+    "data/operations/propagation/agent-platform-r2-propagation-contract.json": "cbf22e721551ec44ea7572bd0da513a2264f1cbb927bf97493ad4bf2a3be7859",
+    "tools/propagation/impact_contract.py": "508343ed447547856c734f12e86e8955746f86c870236a61acdfc6272854bfc5"
   },
   "status": "PASS",
   "task_id": "IGNITION-20260816-121"

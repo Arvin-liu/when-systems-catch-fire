@@ -1,6 +1,6 @@
 # 点火仓库原生系统图
 
-状态：`0.6.0 Current registry-derived navigation projection`；`0.5.0`、`0.4.0` 与更早版本为 Historical。
+状态：`0.7.0 Current registry-derived navigation projection`；`0.6.0`、`0.5.0`、`0.4.0` 与更早版本为 Historical。
 
 ## 打开与生成
 
@@ -31,7 +31,7 @@ SVG 现在位于 `docs/generated/ignition-system-architecture.svg`，通过 READ
 - cluster 只表达导航分组，不增加架构层。
 - `language_thought` 是横穿 L0—L6 的控制平面 overlay；`layers` 组仍严格只有 L0—L6。它与各层的连线表示框架审计和同步义务，不表示语言决定现实因果。
 - `repository_dependency`、`synchronization_obligation` 和 `substantive_causal_candidate` 权限不同。
-- `agentization` overlay 表达 Owner/Human、Value Charter、Generic Kernel、Agent Runtime、环境与可加载 Domain Pack 的边界；它不增加 L7。`Kernel ≠ Knowledge`，`Runtime ≠ Research`。
+- `agentization` overlay 表达 Owner/Human、Value Charter、Generic Kernel、Agent Runtime、External Agent Federation、环境与可加载 Domain Pack 的边界；它不增加 L7。`Kernel ≠ Knowledge`，`Runtime ≠ Research`，`OS ≠ executor`。
 - 图的边、可达性、视觉邻近或 map delta 不证明经验因果、严格同构或理论完整性。
 - “完整”只指当前声明构件的投影覆盖；未来发现缺口时必须更新 registry，而不是把图当永久总图。
 
@@ -43,10 +43,12 @@ Operational Memory 与四个 Domain Pack 作为现有 `agentization` overlay 的
 或 Human Surface；Knowledge、REOS LIGHT Research、之元 Writing 和 Maintenance
 仍由各自 manifest 声明能力、对象类型、validator 与禁止的 authority upgrade。
 
-当前机器投影以 `76` 个 registry components、`64` 个可见节点、`70` 条 typed
+当前机器投影以 `82` 个 registry components、`70` 个可见节点、`77` 条 typed
 edges 和 `12` 个代表节点承载的隐藏 components 为准。R2 的 source-domain 与
 blast-radius 规则见
 [`agent-platform-r2-propagation-contract.json`](../../data/operations/propagation/agent-platform-r2-propagation-contract.json)。
-这些数字是仓库导航与生成器覆盖计数，不是现实系统规模、因果图或能力证明。
+联邦 source domain 单独落在 `agent_platform.federation`，不直接生成 Knowledge、
+Writing、Human front-door 或 Pack registry。上述数字是仓库导航与生成器覆盖计数，
+不是现实系统规模、因果图或能力证明。
 
 本轮退役了独立阅读站及其专用工作流。旧部署工件和验证记录继续保留在 Git 历史与历史报告中，仅作历史证据。

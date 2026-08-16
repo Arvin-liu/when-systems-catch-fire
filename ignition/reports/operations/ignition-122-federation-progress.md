@@ -239,6 +239,33 @@ external truth, Owner acceptance, production safety or epistemic acceptance.
   compatibility and bounded failure behavior do not establish intelligence,
   production autonomy, external approval or universal safety.
 
+## Step 11 — COMPLETE
+
+- Result: `STEP_11_FEDERATION_ARCHITECTURE_AND_HUMAN_SURFACE_SYNC_COMPLETE`.
+- Canonical projection: component registry `1.6.0`, topology `1.6.0`, layout
+  `1.4.0`, current system map `0.7.0`; the deterministic map contains `82`
+  registry components, `70` visible nodes, `77` typed edges and `12` hidden
+  representative components.
+- Federation identity: the map now shows the OS contract, OpenClaw/Hermes/Codex
+  adapters, frozen Reference Executor and deferred Future Executors. The
+  propagation contract isolates `agent_federation/` as
+  `agent_platform.federation` and forbids direct Knowledge, Writing, Human
+  front-door and Pack-registry projection.
+- Human Surface: cold-start, handoff, architecture, current state, Results,
+  Results Book, Pack docs, root README, materiality fingerprints and the
+  append-only STATE-CHANGELOG delta are synchronized. The materiality manifest
+  changed only source fingerprints for the manually updated canonical surfaces;
+  no Knowledge claim or asset was added.
+- Gates: deterministic generators, ownership/routing/runtime validators,
+  blast-radius contract, Human Surface contract/visibility/front-door validators
+  and the targeted federation/architecture regression = `132/132 PASS`; state
+  changelog validator = `PASS`.
+- Repair: one bounded repair round expanded historical sealed-source handling
+  for append-only map/current-state projections and regenerated the blast-radius
+  report after adding the federation source domain.
+- Residual: Step 12 adversarial/full discovery, fresh-clone replay, final normal
+  fast-forward and independent 1111 receipt remain open. `main` has not moved.
+
 | Step | Status | Commit | Remote | Targeted gate |
 | --- | --- | --- | --- | --- |
 | 00 | COMPLETE | `05ac54db` | `05ac54db` | inventory schema + 121 core = PASS |
@@ -251,6 +278,6 @@ external truth, Owner acceptance, production safety or epistemic acceptance.
 | 07 | COMPLETE | `1ac6880e` | `1ac6880e` | router + 101 tests = PASS |
 | 08 | COMPLETE | `5dbbdfa9` | `5dbbdfa9` | approval/handoff/failover + 109 tests = PASS |
 | 09 | COMPLETE | `954a5bad` | `954a5bad` | convergence + 116 tests = PASS |
-| 10 | COMPLETE | pending self commit binding | pending `ls-remote` binding | pilots + 122 tests = PASS |
-| 11 | PENDING | — | — | — |
+| 10 | COMPLETE | `2773c303` | `2773c303` | pilots + 122 tests = PASS |
+| 11 | COMPLETE | pending self commit binding | pending `ls-remote` binding | architecture/Human Surface + 132 tests = PASS |
 | 12 | PENDING | — | — | — |

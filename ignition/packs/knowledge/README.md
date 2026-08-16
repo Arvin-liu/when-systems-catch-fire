@@ -13,3 +13,6 @@ Pack，但不是 Kernel、Supervisor 或 Memory 的所有者。
 [`Knowledge Corpus Admission Policy`](../../data/foundation/knowledge-corpus-admission-policy.json)。
 R0/R2 都不移动既有知识目录；平台代码、测试、schema、tooling 和 pilot trace
 默认是 platform provenance，不会因为存在于仓库而自动成为 Knowledge 资产。
+External Agent Federation 的 adapter、session、vendor telemetry、prompt、token
+和 receipt 也保持 platform/operational provenance；它们不会自动进入 Knowledge
+admission、Experience、Fire Seeds 或 claim registry。

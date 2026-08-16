@@ -907,6 +907,72 @@
       "kernel_dependency_direction": "CONSUMES_GENERIC_CONTRACT",
       "current_move_disposition": "ADD_R0_COMPONENT",
       "reason": "is an optional bounded capability/feedback pack consumed by the runtime; newly added R0 boundary asset, no existing domain tree was moved"
+    },
+    {
+      "component_id": "external_agent_federation",
+      "current_path": "agent_federation/",
+      "canonical_ref": "docs/architecture/external-agent-federation-r1.md#Architecture hierarchy",
+      "primary_role": "PLATFORM_TOOLING",
+      "secondary_roles": [],
+      "domain_binding": "platform",
+      "kernel_dependency_direction": "SUPPORTS_MULTIPLE_COMPONENTS",
+      "current_move_disposition": "KEEP_CURRENT_PATH_R0",
+      "reason": "supports repository generation, validation or synchronization without being domain authority"
+    },
+    {
+      "component_id": "openclaw_adapter",
+      "current_path": "agent_federation/adapters/openclaw.py",
+      "canonical_ref": "docs/architecture/external-agent-federation-r1.md#OpenClaw adapter boundary",
+      "primary_role": "PLATFORM_TOOLING",
+      "secondary_roles": [],
+      "domain_binding": "platform",
+      "kernel_dependency_direction": "SUPPORTS_MULTIPLE_COMPONENTS",
+      "current_move_disposition": "KEEP_CURRENT_PATH_R0",
+      "reason": "supports repository generation, validation or synchronization without being domain authority"
+    },
+    {
+      "component_id": "hermes_adapter",
+      "current_path": "agent_federation/adapters/hermes.py",
+      "canonical_ref": "docs/architecture/external-agent-federation-r1.md#Hermes adapter boundary",
+      "primary_role": "PLATFORM_TOOLING",
+      "secondary_roles": [],
+      "domain_binding": "platform",
+      "kernel_dependency_direction": "SUPPORTS_MULTIPLE_COMPONENTS",
+      "current_move_disposition": "KEEP_CURRENT_PATH_R0",
+      "reason": "supports repository generation, validation or synchronization without being domain authority"
+    },
+    {
+      "component_id": "codex_adapter",
+      "current_path": "agent_federation/adapters/codex.py",
+      "canonical_ref": "docs/architecture/external-agent-federation-r1.md#Codex adapter boundary",
+      "primary_role": "PLATFORM_TOOLING",
+      "secondary_roles": [],
+      "domain_binding": "platform",
+      "kernel_dependency_direction": "SUPPORTS_MULTIPLE_COMPONENTS",
+      "current_move_disposition": "KEEP_CURRENT_PATH_R0",
+      "reason": "supports repository generation, validation or synchronization without being domain authority"
+    },
+    {
+      "component_id": "reference_executor",
+      "current_path": "agent_federation/pilots.py",
+      "canonical_ref": "docs/architecture/external-agent-federation-r1.md#Reference Executor freeze",
+      "primary_role": "PLATFORM_TOOLING",
+      "secondary_roles": [],
+      "domain_binding": "platform",
+      "kernel_dependency_direction": "SUPPORTS_MULTIPLE_COMPONENTS",
+      "current_move_disposition": "KEEP_CURRENT_PATH_R0",
+      "reason": "supports repository generation, validation or synchronization without being domain authority"
+    },
+    {
+      "component_id": "future_executors",
+      "current_path": "agent_federation/contracts.py",
+      "canonical_ref": "docs/architecture/external-agent-federation-r1.md#Future executors",
+      "primary_role": "PLATFORM_TOOLING",
+      "secondary_roles": [],
+      "domain_binding": "platform",
+      "kernel_dependency_direction": "SUPPORTS_MULTIPLE_COMPONENTS",
+      "current_move_disposition": "KEEP_CURRENT_PATH_R0",
+      "reason": "supports repository generation, validation or synchronization without being domain authority"
     }
   ],
   "physical_migration": {

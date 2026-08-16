@@ -2,7 +2,7 @@
 
 Read `ignition/AI-START-HERE.md`, `ignition/STATE-CHANGELOG.md` (baseline and recent deltas), `ignition/AI-HANDOFF.md`, `ignition/llms.txt`, `ignition/ITERATION.md` and the active task command before state-changing work. The state delta log is a high-priority recovery surface: current main merges must append one short delta in the same iteration.
 
-Current iteration method is `1.4.0` and Current system map is `0.6.0`. Method `1.3.0` and maps `0.5.0`/`0.4.0`/`0.3.0`/`0.2.0` are Historical; method `1.2.0` and map `0.1.0` are earlier Historical.
+Current iteration method is `1.4.0` and Current system map is `0.7.0`. Method `1.3.0` and maps `0.6.0`/`0.5.0`/`0.4.0`/`0.3.0`/`0.2.0` are Historical; method `1.2.0` and map `0.1.0` are earlier Historical.
 
 ## Task 121 Agent Platform R2 cold start
 
@@ -16,10 +16,25 @@ fresh-clone replay and formal receipt close, this is not a claim that `main` has
 moved. `EPISTEMICALLY_ACCEPTED=0` remains unchanged.
 
 Keep these boundaries explicit: `Kernel ≠ Knowledge`, `Reasoner ≠ Executor`,
-`Pack ≠ truth authority`, and `pilot ≠ general intelligence`. R2 does not
+`Pack ≠ truth authority`, `OS ≠ executor`, and `pilot ≠ general intelligence`. R2 does not
 authorize live providers, daemons, multi-Agent concurrency, vector memory,
 network/browser actions, automatic Git mutation, physical Pack migration,
 Owner acceptance or external validity.
+
+## Task 122 External Agent Federation R1 cold start
+
+The current task-branch projection adds a provider-neutral OS/executor contract,
+approval intersection, capability/health/granularity/privacy/workspace routing,
+handoff/failover, receipt/memory boundaries and disposable conformance pilots.
+OpenClaw, Hermes and Codex are replaceable adapters; the existing local action
+plane is frozen as Reference / Conformance / Fallback. Read
+`ignition/docs/architecture/external-agent-federation-r1.md`, the inventory and
+ownership records under `ignition/data/agent-federation/`, the contracts/router,
+the adapter tests and the federation propagation domain before modifying it.
+No external session, vendor telemetry, prompt, token, secret, hidden reasoning or
+channel state becomes Knowledge, Human Surface or canonical memory. Live external
+inference remains `NOT_RUN_LIVE_EXTERNAL_INVOCATION`, and
+`EPISTEMICALLY_ACCEPTED=0` remains unchanged until the formal release gates close.
 
 For Q32I profiles, keep authority, execution capability and validation capability separate. Manual or external validation must not invoke a local validator. A local `validator_argv` is permitted only when it is complete, exists, runs successfully and validates the declared component responsibility. Never substitute the incomplete generic `python3 ignition/tools/validate_protocol_canonical.py --check` command.
 

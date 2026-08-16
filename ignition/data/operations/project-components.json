@@ -1704,8 +1704,80 @@
       "lifecycle": {"source": "data/agent-runtime/pilots/non-knowledge-manifest-r0/", "status": "current", "version": "R0"},
       "map_projection": {"group": "agentization", "visible": true},
       "path_patterns": ["agent_runtime/pilots/non_knowledge_manifest.py", "data/agent-runtime/pilots/non-knowledge-manifest-r0/", "tests/test_agent_runtime_r0.py"]
+    },
+    {
+      "authority": "canonical",
+      "canonical_target": "docs/architecture/external-agent-federation-r1.md#Architecture hierarchy",
+      "component_id": "external_agent_federation",
+      "component_type": "operation_control",
+      "description": "点火 OS 与可替换外部执行器之间的统一协议、权限、验证、handoff、receipt 与记忆吸收边界；不复制任何供应商 runtime。",
+      "label": "External Agent Federation R1",
+      "layer_or_overlay": "overlay",
+      "lifecycle": {"source": "data/agent-federation/", "status": "current", "version": "R1"},
+      "map_projection": {"group": "agentization", "visible": true},
+      "path_patterns": ["agent_federation/", "schemas/agent-federation/", "data/agent-federation/", "docs/architecture/external-agent-federation-r1.md", "tests/test_federation*", "tools/validate_federation*"]
+    },
+    {
+      "authority": "canonical",
+      "canonical_target": "docs/architecture/external-agent-federation-r1.md#OpenClaw adapter boundary",
+      "component_id": "openclaw_adapter",
+      "component_type": "operation_control",
+      "description": "OpenClaw 的 provider-neutral public CLI adapter；只暴露可观察 envelope、能力、健康和 pointer-only session，不把 Gateway、channel 或 daemon 带入点火。",
+      "label": "OpenClaw Adapter",
+      "layer_or_overlay": "overlay",
+      "lifecycle": {"source": "agent_federation/adapters/openclaw.py", "status": "current", "version": "R1"},
+      "map_projection": {"group": "agentization", "visible": true},
+      "path_patterns": ["agent_federation/adapters/openclaw.py", "tests/test_openclaw_adapter.py"]
+    },
+    {
+      "authority": "canonical",
+      "canonical_target": "docs/architecture/external-agent-federation-r1.md#Hermes adapter boundary",
+      "component_id": "hermes_adapter",
+      "component_type": "operation_control",
+      "description": "Hermes 的受限 text bridge adapter；仅允许声明的低风险读取 envelope，文本输出必须经过 typed parse、redaction 与独立验证。",
+      "label": "Hermes Adapter",
+      "layer_or_overlay": "overlay",
+      "lifecycle": {"source": "agent_federation/adapters/hermes.py", "status": "current", "version": "R1"},
+      "map_projection": {"group": "agentization", "visible": true},
+      "path_patterns": ["agent_federation/adapters/hermes.py", "tests/test_hermes_adapter.py"]
+    },
+    {
+      "authority": "canonical",
+      "canonical_target": "docs/architecture/external-agent-federation-r1.md#Codex adapter boundary",
+      "component_id": "codex_adapter",
+      "component_type": "operation_control",
+      "description": "Codex 的 JSONL public CLI adapter；默认 read-only、ephemeral、isolated config/rules、pointer-only thread，不保留 hidden reasoning 或危险 bypass。",
+      "label": "Codex Adapter",
+      "layer_or_overlay": "overlay",
+      "lifecycle": {"source": "agent_federation/adapters/codex.py", "status": "current", "version": "R1"},
+      "map_projection": {"group": "agentization", "visible": true},
+      "path_patterns": ["agent_federation/adapters/codex.py", "tests/test_codex_adapter.py"]
+    },
+    {
+      "authority": "canonical",
+      "canonical_target": "docs/architecture/external-agent-federation-r1.md#Reference Executor freeze",
+      "component_id": "reference_executor",
+      "component_type": "operation_control",
+      "description": "现有本地 action plane 的冻结 Reference / Conformance / Fallback 角色；它验证协议，不向万能 Agent 壳、provider、daemon 或远端执行层扩张。",
+      "label": "Reference Executor",
+      "layer_or_overlay": "overlay",
+      "lifecycle": {"source": "agent_federation/pilots.py", "status": "current", "version": "R1-FROZEN"},
+      "map_projection": {"group": "agentization", "visible": true},
+      "path_patterns": ["agent_federation/pilots.py", "agent_runtime/actions.py", "agent_runtime/r1_runtime.py", "tests/test_federation_pilots.py"]
+    },
+    {
+      "authority": "declarative",
+      "canonical_target": "docs/architecture/external-agent-federation-r1.md#Future executors",
+      "component_id": "future_executors",
+      "component_type": "operation_control",
+      "description": "未来执行器的声明式插槽；必须先满足统一 contract、最小权限、独立验证、可回执和隐私边界，不能以品牌或智能表现扩大协议。",
+      "label": "Future Executors",
+      "layer_or_overlay": "overlay",
+      "lifecycle": {"source": "agent_federation/contracts.py", "status": "current", "version": "deferred"},
+      "map_projection": {"group": "agentization", "visible": true},
+      "path_patterns": ["agent_federation/contracts.py", "schemas/agent-federation/"]
     }
   ],
   "purpose": "Canonical project-component identity, target and lifecycle registry for declared change propagation and system-map projection; it does not establish real-world causality.",
-  "registry_version": "1.5.0"
+  "registry_version": "1.6.0"
 }

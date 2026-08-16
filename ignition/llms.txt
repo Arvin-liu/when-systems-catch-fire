@@ -2,12 +2,12 @@ Current project state:
 At the current commit, Ignition is a bounded, auditable and recoverable Agent Platform prototype for cross-domain research and action, with Knowledge Governance as its first large Domain Pack. It retains the evidence-traceable, object-typed, inference-checkable and audit-graded formal material layer. This is a versioned current-state description, not a permanent project identity or fixed final form. It is not general intelligence, a unified mathematical theory, a physical theory, a universal prover, a production autonomous system, or a purely literary or philosophical knowledge base.
 Current-state authority: docs/project-current-state.md.
 AI-first recent-state delta authority: STATE-CHANGELOG.md (navigation only; it does not replace current-state, registry, claim, evidence or Results Book authority).
-Current version: the Agent Platform R2 repository spine (Kernel, Runtime R1, Pack Registry/Bus, Profiles, Reasoner Gateway, Pack-aware routing, operational memory and Supervisor) over the 2026-07-12 mathematical and logical dual-foundation seven-layer architecture, current operation overlays, iteration method 1.4.0 (Current) and registry-derived system map 0.6.0 (Current). The R2 lifecycle still requires final main and fresh-clone exact verification.
+Current version: the Agent Platform R2 repository spine (Kernel, Runtime R1, Pack Registry/Bus, Profiles, Reasoner Gateway, Pack-aware routing, operational memory and Supervisor) plus External Agent Federation R1 (provider-neutral OS/executor contract, replaceable adapters, Reference freeze, receipts and disposable pilots) over the 2026-07-12 mathematical and logical dual-foundation seven-layer architecture, current operation overlays, iteration method 1.4.0 (Current) and registry-derived system map 0.7.0 (Current). The R2/Federation lifecycle still requires final main and fresh-clone exact verification.
 
 Current: iteration method 1.4.0 (Continuous Stage Snapshot Publication). Read data/operations/stage-snapshots.json and docs/operations/stage-snapshot-publication.md. Snapshot or homepage visibility never implies Accepted, Current, Activated, capability availability, or candidate payload merge.
 Stage snapshot accountability: responsible_actor and publisher_actor contain only actor_ref values resolved against data/operations/responsibility-actors.json; the active registry record, not a display name, establishes the concrete PERSON or ORGANIZATION identity and traceable accountability/contact evidence. execution_agents and automation_workflows are technical records only and never final responsibility.
 
-Iteration method 1.3.0 and system map 0.4.0, 0.5.0 are Historical; method 1.2.0 and maps 0.1.0, 0.2.0, 0.3.0 are earlier Historical, not Current. Treat implementation completion, repository synchronization, external synchronization and project completion as distinct states; local validation never proves undeclared live external truth.
+Iteration method 1.3.0 and system maps 0.5.0, 0.6.0 are Historical; method 1.2.0 and maps 0.1.0, 0.2.0, 0.3.0, 0.4.0 are earlier Historical, not Current. Treat implementation completion, repository synchronization, external synchronization and project completion as distinct states; local validation never proves undeclared live external truth.
 
 Q32I iteration method 1.3.0 and system map 0.3.0 completed the exact-head, merge and external checks required by its historical contract; method 1.3.0 is now Historical and method 1.4.0 is Current. Task 101 retires the former separate deployed reading surface from current/future gates while preserving historical evidence. Typed change closure remains repository scope and never proves real-world causality.
 
@@ -31,7 +31,7 @@ Core classifications:
 Ψ0 is a workflow orchestrator / algorithm protocol. Its product notation is a preserved legacy expression, not by itself a mathematical-function or proof claim.
 J+ and J- are internal deliberation channels, not truth or proof oracles.
 The 12 meta-protocols are normative, heuristic or governance protocols unless separately formalized.
-The 64 combinations are a design and generation space, not a proof space or empirical exhaustion.
+The 64 combinations are a design and generation space, not a proof space or empirical exhaustion. `OS != executor`: OpenClaw, Hermes and Codex are adapter boundaries, while the existing local action plane remains Reference / Conformance / Fallback. External sessions, vendor telemetry, prompts, tokens, secrets and hidden reasoning do not become canonical memory or Knowledge.
 
 Authority:
 ARCHITECTURE.md is the architecture authority.

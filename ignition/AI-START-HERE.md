@@ -15,6 +15,7 @@
 4. docs/project-current-state.md：版本化、可演化、非终局的当前状态。
 5. ITERATION.md：点火迭代操作法；状态改变任务必须先恢复远端真相、确认缺口和 claim ceiling。
 6. docs/architecture/agent-platform-r2.md、agent_kernel/README.md、agent_runtime/README.md 与 packs/*/README.md：当前 Agent Platform、Kernel、Runtime 和 Domain Pack 人话边界。
+   任务 122 还必须读取 docs/architecture/external-agent-federation-r1.md、data/agent-federation/ 与 agent_federation/：OS/executor contract、适配器族、Reference freeze 和 disposable pilot 边界。
 7. ARCHITECTURE.md：现行七层架构权威；Agent Platform 是跨层工程脊柱，不是新增 L7 或真值层。
 8. FOUNDATION.md：数学与逻辑双地基。
 9. llms.txt：机器可读边界。
@@ -72,9 +73,9 @@ truth 或 epistemic authority 的授予。真实离线 episode 的机器回执�
 - Multiscale Causal Fabric、Probabilistic System Dynamics 和 Adaptive Relational Network 是当前建模/投影能力，不是新真值层。
 - 关系网络的邻接、相似性、中心性、社群、检索和行为变化不能升级为真理、价值、因果或内部学习机制证明。
 - 迭代方法只能约束操作纪律，不能证明实质结论正确。
-- 当前迭代方法是 `1.4.0`（Current），系统图是 `0.6.0`（Current）。
+- 当前迭代方法是 `1.4.0`（Current），系统图是 `0.7.0`（Current）。
 
-方法 `1.3.0` 与系统图 `0.4.0`、`0.5.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0`、`0.2.0`、`0.3.0` 为更早 Historical。当前方法要求读取 `data/operations/project-components.json` 与 `data/operations/change-propagation-topology.json`，把变更路径解析为构件、遍历声明关系到 fixpoint、绑定决定／map diff／residue，再由 registries 与布局 overlay 派生系统图。不得把 Git diff、依赖或可达性称为现实因果证明。
+方法 `1.3.0` 与系统图 `0.5.0`、`0.6.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0`、`0.2.0`、`0.3.0`、`0.4.0` 为更早 Historical。当前方法要求读取 `data/operations/project-components.json` 与 `data/operations/change-propagation-topology.json`，把变更路径解析为构件、遍历声明关系到 fixpoint、绑定决定／map diff／residue，再由 registries 与布局 overlay 派生系统图。不得把 Git diff、依赖或可达性称为现实因果证明。
 - Q32I 的方法 `1.3.0` 与系统图 `0.3.0` 已独立接受、由 PR #62 普通合并并完成生产收口；其后方法升为 `1.4.0` Current。
 
 `1.3.0` 降为 Historical，Q32I 为 Closed。选择性物化只在完整 profile、authority、plan 与指纹身份一致时选择性物化。Authority 类型、execution capability 与 validation capability 必须分别声明；apply 必须先通过统一预检，rollback（回滚）必须证明整仓字节／类型／symlink／mode 恢复，否则进入 unrecovered 与 recovery package。NonImpactProof 只证明声明关系范围内的非影响；cache 不是真相源；meta-authority 变更强制 full rebuild。Q33 启动包已准备，但 Q33 与 Q34—Q40 均尚未启动。

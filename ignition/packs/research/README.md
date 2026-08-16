@@ -11,5 +11,10 @@ workflow cannot create truth, Owner acceptance or `EPISTEMICALLY_ACCEPTED`.
 
 The runtime may route a declared REOS capability, but the Pack cannot import an
 unlisted module, select an executor, widen a Profile, or mutate the Knowledge
-registry. See [`manifest.json`](./manifest.json) and the
+ registry. See [`manifest.json`](./manifest.json) and the
 [REOS LIGHT boundary](../../docs/architecture/reos-vnext-light.md).
+
+External Agent Federation is a separate OS/executor contract. This Pack may
+produce a bounded research proposal, but it cannot select an adapter, absorb an
+external session into memory, or treat executor output as evidence without the
+declared validation and provenance gates.

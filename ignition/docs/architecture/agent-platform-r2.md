@@ -22,6 +22,12 @@ flowchart LR
   RUNTIME --> SUPERVISOR[Supervisor R0: multi-Run DAG]
   RUNTIME --> MEMORY[Operational Memory R1]
   RUNTIME --> BUS[Pack Registry / Bus]
+  RUNTIME --> FEDERATION[External Agent Federation R1]
+  FEDERATION --> OPENCLAW[OpenClaw adapter]
+  FEDERATION --> HERMES[Hermes adapter]
+  FEDERATION --> CODEX[Codex adapter]
+  FEDERATION --> REFERENCE[Reference / Conformance / Fallback]
+  FEDERATION --> FUTURE[Future executor slots]
   BUS --> KNOWLEDGE[Knowledge Pack]
   BUS --> RESEARCH[REOS LIGHT Research Pack]
   BUS --> WRITING[之元 Writing Pack]
@@ -30,6 +36,7 @@ flowchart LR
   RESEARCH --> SURFACE
   WRITING --> SURFACE
   MAINTENANCE --> SURFACE
+  FEDERATION --> RECEIPT[OS validation / receipt / pointer memory]
 ```
 
 - **Kernel** 保存领域无关 identity、state、capability、approval、audit、
@@ -48,6 +55,11 @@ flowchart LR
 - **Operational Memory** 只保留带来源、保留/可见性/敏感度、supersession 和
   integrity 的运行摘要，支持 bounded capsule、forget/tombstone；它不是
   Knowledge truth registry，也不保存 secret、完整 prompt 或 hidden CoT。
+- **External Agent Federation** 维护点火 OS 与可替换 executor 之间的统一
+  contract、capability/permission/health 路由、approval intersection、
+  handoff、failover、独立 validation、receipt 和 pointer-only memory。OpenClaw、
+  Hermes、Codex 是 adapter family；现有本地行动层只冻结为 Reference /
+  Conformance / Fallback，不再向万能 Agent 壳扩张。
 
 ## Domain Pack 定位
 
@@ -68,6 +80,9 @@ Pack manifest 可被发现、校验和 metadata-load；Pack Bus 只返回
 - `Reasoner ≠ Executor`：Reasoner 只返回 digest-bound proposal，不能直接执行动作。
 - `Pack ≠ truth authority`：Pack 的 validator、hook 和 receipt 不能升级 truth、Owner 或 epistemic authority。
 - `pilot ≠ general intelligence`：离线 pilot 只说明这次仓库 fixture 的观察结果。
+- `OS ≠ executor`：联邦 adapter 只翻译 public boundary；外部 session、vendor
+  telemetry、prompt、token、secret、hidden reasoning 与 channel 状态不进入
+  canonical memory、Knowledge 或 Human Surface。
 
 ## 当前已观察到什么
 
@@ -106,3 +121,13 @@ PYTHONPATH=. python3 tools/validate_r2_offline_repository_maintenance.py
 R2 does not authorize Telegram/OpenClaw/Hermes daemons, browser automation, live
 provider/API secrets, vector databases, network actions, automatic Git push/merge,
 persona or consciousness claims, or a second physical Pack migration.
+
+## External Agent Federation R1
+
+联邦的完整边界、适配器职责、Reference freeze、Future executor 插槽和维护者
+冷启动入口见 [External Agent Federation R1](./external-agent-federation-r1.md)。
+Step 10 的 disposable Pilot A/B/C 比较 protocol compatibility，不比较智能，
+且 live external inference 保持 `NOT_RUN_LIVE_EXTERNAL_INVOCATION`。传播契约把
+`agent_federation/` 单独归入 `agent_platform.federation`，禁止它直接生成
+Knowledge census、Fire Seeds、Writing publication、Human front-door 或 Pack
+registry；这些表面仍由各自 canonical source 管理。

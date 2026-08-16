@@ -10,6 +10,16 @@
 有效性的结论。`CURRENT_WITH_OPEN_OBLIGATIONS` 与 `EPISTEMICALLY_ACCEPTED=0`
 保持不变。
 
+### External Agent Federation R1
+
+在 Agent Platform 之下，点火 OS 通过统一 executor contract 连接可替换的
+OpenClaw、Hermes、Codex adapter、冻结的 Reference / Conformance / Fallback
+Executor 和未来 executor slots。OS 保留目标、policy、approval、workspace、
+handoff、独立 validation、receipt 与 pointer-only operational memory；adapter
+不复制供应商 runtime，也不把外部 session、prompt、token、hidden reasoning、
+channel 或 vendor telemetry 写入 Knowledge、Human Surface 或 canonical memory。
+完整边界见 [External Agent Federation R1](docs/architecture/external-agent-federation-r1.md)。
+
 ```mermaid
 flowchart LR
   HUMAN[Owner / Human / Value Charter] --> KERNEL[Generic Kernel]
@@ -22,6 +32,9 @@ flowchart LR
   PACKS --> DOMAIN[Declared domain validators and projections]
   DOMAIN --> HUMAN_SURFACE[Human Surface and Results navigation]
 ```
+
+联邦连接是执行器互操作的 repository dependency，不是新增 L7 或现实因果边；
+`agent_platform.federation` 的传播契约与 Knowledge/Writing/Pack 投影分离。
 
 Kernel 不导入 Knowledge，Reasoner 不执行动作，Profile 只能收窄既有 scope，
 Pack validator 只能作用于 manifest 声明范围，Operational Memory 不是知识真值
@@ -116,9 +129,9 @@ flowchart LR
 
 ### 完整可点击系统图
 
-Q32I 收口后系统图 0.3.0 为 Current；0727 homepage/usage/charter-system-map sync 收口后系统图 0.4.0 为 Current；后续 registry-derived 系统图 0.5.0 为 Current，0.4.0、0.3.0 与 0.2.0 为 Historical，0.1.0 为更早 Historical。节点身份、canonical target 与生命周期从 `data/operations/project-components.json` 派生；可见关系及其权限域从 `data/operations/change-propagation-topology.json` 派生；`data/architecture/interactive-system-map-layout.json` 只保留布局。生成器产生 materialized spec 与同一 interactive SVG，再由 README 与仓库 Markdown 投影。
+Q32I 收口后系统图 0.3.0 为 Current；0727 homepage/usage/charter-system-map sync 收口后系统图 0.4.0 为 Current；后续 registry-derived 系统图 0.5.0、0.6.0 依次成为 Current，现由 0.7.0 作为 Current，0.6.0、0.5.0、0.4.0、0.3.0 与 0.2.0 为 Historical，0.1.0 为更早 Historical。节点身份、canonical target 与生命周期从 `data/operations/project-components.json` 派生；可见关系及其权限域从 `data/operations/change-propagation-topology.json` 派生；`data/architecture/interactive-system-map-layout.json` 只保留布局。生成器产生 materialized spec 与同一 interactive SVG，再由 README 与仓库 Markdown 投影。
 
-该链由当前迭代操作法 1.4.0 继承并保留声明关系下的变更传播闭包。`substantive_causal_candidate`、`repository_dependency` 与 `synchronization_obligation` 权限分离；只有后两者按声明规则触发自动或必要评估。Git diff、依赖、可达路径与视觉位置不构成现实因果识别。它覆盖现有 L0—L6、核心、模型、操作、规范、公共表达、Agent Platform 与反馈环，不增加架构层；当前 registry-derived 投影为 `0.6.0`，包含 `76` 个 registry components、`64` 个可见节点和 `70` 条 typed edges，另有 `12` 个由代表节点承载的隐藏组件。
+该链由当前迭代操作法 1.4.0 继承并保留声明关系下的变更传播闭包。`substantive_causal_candidate`、`repository_dependency` 与 `synchronization_obligation` 权限分离；只有后两者按声明规则触发自动或必要评估。Git diff、依赖、可达路径与视觉位置不构成现实因果识别。它覆盖现有 L0—L6、核心、模型、操作、规范、公共表达、Agent Platform、External Agent Federation 与反馈环，不增加架构层；当前 registry-derived 投影为 `0.7.0`，包含 `82` 个 registry components、`70` 个可见节点和 `77` 条 typed edges，另有 `12` 个由代表节点承载的隐藏组件。
 
 ## 目录权威
 

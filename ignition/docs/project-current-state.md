@@ -1,6 +1,6 @@
 # 点火项目现状
 
-更新时间：2026-08-16。当前状态包含任务 98—103 的断言/函数治理、证据程序与人类可读知识表面，任务 104 的编辑叙事层与语料关系分析，任务 105 的 Function OS v0.2 有界能力基准，任务 110 的完成状态与 OpenAlex 书目复制，任务 111 的失败案例证据门禁与恢复终态，任务 112 的百轮成果出版层，任务 113 的宋徽宗作品，任务 114 的语言—思维逻辑平面与当前作品修订，以及任务 119—121 的 Agent Platform 边界、R1 行动层和 R2 工程脊柱。本段描述正式仓库当前接口；出版层、语言研究与 Agent Platform 的结论仍受各自来源、版本和证据上限约束。
+更新时间：2026-08-16。当前状态包含任务 98—103 的断言/函数治理、证据程序与人类可读知识表面，任务 104 的编辑叙事层与语料关系分析，任务 105 的 Function OS v0.2 有界能力基准，任务 110 的完成状态与 OpenAlex 书目复制，任务 111 的失败案例证据门禁与恢复终态，任务 112 的百轮成果出版层，任务 113 的宋徽宗作品，任务 114 的语言—思维逻辑平面与当前作品修订，以及任务 119—122 的 Agent Platform 边界、R1 行动层、R2 工程脊柱和 External Agent Federation。本段描述正式仓库当前接口；出版层、语言研究与 Agent Platform/Federation 的结论仍受各自来源、版本和证据上限约束。
 
 ## Task 112 current publication layer
 
@@ -20,7 +20,7 @@
 
 任务 119 在 118 的正式基线 `4f4358ef09d1871a48d7e32575a63453130b333c` 之上建立 `Agentization Boundary R0`。新增的 Generic Kernel 只承载身份、状态、来源引用、capability、授权、审计、checkpoint、handoff、resume lineage、结构化记忆事件和不变量；Agent Runtime 只编排 `Observe → Frame → Plan → Authorize → Act → Validate → Remember → Continue/Stop`。Kernel 不导入 Foundation、claims、Evidence、Functions、Non-Functions、Results、Knowledge、REOS 或 writing；Runtime 不要求 provider、model、网络或常驻 daemon。
 
-现有知识治理系统被登记为第一个 `Knowledge Domain Pack`，REOS vNext LIGHT 与之元写作法分别作为有界 research/writing Pack 引用；R0 没有全仓物理迁移。机器边界以 [`agentization-boundary-r0.json`](../data/architecture/agentization-boundary-r0.json)、`DomainPackManifest`、Agent Profile 和唯一系统图 `0.6.0` 为准。非知识 pilot 只读取两个 fixture 文本、生成排序 SHA-256 manifest，在不同 executor 间 checkpoint/resume，并在 validator 通过后进入 `COMPLETED_VALIDATED`；它是仓库范围隔离证据，不是 AGI、长期自主性或知识真值证据。
+现有知识治理系统被登记为第一个 `Knowledge Domain Pack`，REOS vNext LIGHT 与之元写作法分别作为有界 research/writing Pack 引用；R0 没有全仓物理迁移。机器边界以 [`agentization-boundary-r0.json`](../data/architecture/agentization-boundary-r0.json)、`DomainPackManifest`、Agent Profile 和唯一系统图 `0.7.0` 为准。非知识 pilot 只读取两个 fixture 文本、生成排序 SHA-256 manifest，在不同 executor 间 checkpoint/resume，并在 validator 通过后进入 `COMPLETED_VALIDATED`；它是仓库范围隔离证据，不是 AGI、长期自主性或知识真值证据。
 
 Task 119 保持 `CURRENT_WITH_OPEN_OBLIGATIONS`：Task 115 Draft prior art 仅完成采纳审计，真实 provider/API、daemon、多 agent scheduler、向量记忆、Pack 物理拆分和外部 Owner acceptance 均未实现或未证明。
 
@@ -49,11 +49,29 @@ R2 仍保留开放义务：live provider/API、daemon、并发 multi-Agent 调�
 尚未实现或证明。R2 的工程完成不得覆盖 Foundation、M/E、claim ceiling、九状态
 轴、既有研究结果或之元写作法的独立来源边界。
 
+## Task 122 current External Agent Federation R1 projection
+
+任务 122 在 R2 之下建立点火 OS 与可替换 executor 之间的 provider-neutral
+contract：它保留目标、policy、approval、workspace、capability/health/
+privacy/granularity 路由、handoff/failover、独立 validation、receipt 和
+pointer-only operational memory。OpenClaw、Hermes、Codex 只作为 adapter family
+接入；现有自研 action plane 冻结为 `REFERENCE_EXECUTOR /
+CONFORMANCE_EXECUTOR / FALLBACK_MINIMAL`，未来 executor 只能先满足同一
+contract 才能进入候选槽位。
+
+Step 10 的 Pilot A/B/C 只在 disposable local fixture 上比较 protocol
+compatibility，live external invocation 保持 `NOT_RUN_LIVE_EXTERNAL_INVOCATION`。
+外部 session、vendor telemetry、prompt、token、secret、hidden reasoning 和
+channel 状态不进入 Knowledge、Writing、Human Surface 或 canonical memory。
+传播契约将 `agent_federation/` 单独投影到 `agent_platform.federation`，并禁止
+它直接生成 Knowledge census、Fire Seeds、publication、Human front-door 或
+Pack registry；若要改变这些表面，仍须由各自 canonical source 独立声明与验证。
+
 ## 当前形态
 
 点火是一个仓库原生、版本化、证据可追溯、对象有类型、推断可检查、结论可降级的跨领域研究与行动基础设施原型。这个描述只绑定当前提交，不是永久项目身份。
 
-现行组织包括 L0—L6 架构、横穿其间的语言—思维逻辑平面、Agent Platform R2 工程脊柱、Foundation registries、Function OS 候选、MCF、PSD、ARN、效果与机制平面、注意力/分布/压缩控制、地图集、迭代与同步系统、生命共同体价值宪章、Charter System R1、之元写作法和现实反馈入口。
+现行组织包括 L0—L6 架构、横穿其间的语言—思维逻辑平面、Agent Platform R2 工程脊柱、External Agent Federation R1、Foundation registries、Function OS 候选、MCF、PSD、ARN、效果与机制平面、注意力/分布/压缩控制、地图集、迭代与同步系统、生命共同体价值宪章、Charter System R1、之元写作法和现实反馈入口。
 
 ## 当前已实现能力
 
@@ -67,7 +85,7 @@ R2 仍保留开放义务：live provider/API、daemon、并发 multi-Agent 调�
 - 对语言敏感转换保存来源／候选意义／目标形式、十二维框架差异、未映射残余和 claim ceiling；认识相关静默变化失败关闭，中文自然度与文学标记性进入人工门。
 - 从统一入口按时间、研究问题、自然语言词、旧称和阅读时长探索知识，不要求读者预知目录或资产编号。
 - 为全部恢复的结果/文章来源生成统一卡片和 1 分钟、5 分钟、完整阅读，并为全部函数/断言 registry 建立可回链来源、状态、依赖、反向依赖和历史的分片搜索索引。
-- 以 Kernel、Runtime、Profile、Gateway、Supervisor、Memory 和声明式 Domain Pack 形成有界 Agent Platform R2 工程脊柱；各组件的能力与禁止 authority upgrade 由 manifest/schema/validator/receipt 分开记录。
+- 以 Kernel、Runtime、Federation、Profile、Gateway、Supervisor、Memory 和声明式 Domain Pack 形成有界 Agent Platform R2 工程脊柱；各组件的能力与禁止 authority upgrade 由 manifest/schema/validator/receipt 分开记录。
 
 ## 当前人类阅读面
 

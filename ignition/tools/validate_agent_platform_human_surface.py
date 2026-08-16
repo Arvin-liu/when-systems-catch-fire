@@ -40,8 +40,9 @@ SURFACE_RULES = {
     ),
     "ignition/ARCHITECTURE.md": (
         "Agent Platform R2",
-        "76",
-        "64",
+        "82",
+        "70",
+        "77",
         "70",
         "12",
         "EPISTEMICALLY_ACCEPTED=0",
@@ -75,6 +76,12 @@ SURFACE_RULES = {
         "Agent Platform R2",
         "有界、可审计、可恢复的 Agent Platform 原型",
         "EPISTEMICALLY_ACCEPTED=0",
+    ),
+    "ignition/docs/architecture/external-agent-federation-r1.md": (
+        "External Agent Federation R1",
+        "Reference Executor freeze",
+        "NOT_RUN_LIVE_EXTERNAL_INVOCATION",
+        "agent_platform.federation",
     ),
     "ignition/agent_kernel/README.md": (
         "Agent Platform R2",
@@ -140,17 +147,17 @@ def validate() -> list[str]:
         system_map = json.loads(map_path.read_text(encoding="utf-8"))
         coverage = system_map["component_coverage"]
         expected_coverage = {
-            "registry_components": 76,
-            "visible_nodes": 64,
+            "registry_components": 82,
+            "visible_nodes": 70,
             "hidden_components": 12,
         }
         for key, expected in expected_coverage.items():
             if coverage.get(key) != expected:
                 issues.append(f"system map coverage {key}={coverage.get(key)!r}, expected {expected!r}")
-        if system_map.get("map_version") != "0.6.0":
-            issues.append(f"system map version is {system_map.get('map_version')!r}, expected '0.6.0'")
-        if len(system_map.get("edges", [])) != 70:
-            issues.append(f"system map edge count is {len(system_map.get('edges', []))}, expected 70")
+        if system_map.get("map_version") != "0.7.0":
+            issues.append(f"system map version is {system_map.get('map_version')!r}, expected '0.7.0'")
+        if len(system_map.get("edges", [])) != 77:
+            issues.append(f"system map edge count is {len(system_map.get('edges', []))}, expected 77")
     except (OSError, json.JSONDecodeError, KeyError, TypeError) as exc:
         issues.append(f"system map cannot be read: {exc}")
 
@@ -200,8 +207,8 @@ def main() -> int:
         return 1
     print(
         "AGENT_PLATFORM_HUMAN_SURFACE=PASS "
-        f"surfaces={len(SURFACE_RULES)} map=0.6.0 registry=76 "
-        "visible=64 edges=70 hidden=12 packs=4"
+        f"surfaces={len(SURFACE_RULES)} map=0.7.0 registry=82 "
+        "visible=70 edges=77 hidden=12 packs=4"
     )
     return 0
 

@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0.0",
-  "map_version": "0.6.0",
-  "historical_map_version": "0.5.0",
+  "map_version": "0.7.0",
+  "historical_map_version": "0.6.0",
   "projection_status": "CURRENT_DERIVED_PROJECTION",
   "title": "点火唯一完整可点击总架构图",
   "subtitle": "唯一完整总架构图；0.6.0 Current 派生投影，0.5.0 为 Historical。Owner/Human 与 Value Charter 位于 escalation 之上；Kernel ≠ Knowledge，Runtime ≠ Research，Pack 可加载但不拥有通用 authority；语言—思维横穿 L0—L6，不增加 L7。连线是仓库关系、同步义务或候选反馈，不自动表示现实因果。",
@@ -10,9 +10,9 @@
     "component_registry": "data/operations/project-components.json",
     "propagation_topology": "data/operations/change-propagation-topology.json",
     "layout_overlay": "data/architecture/interactive-system-map-layout.json",
-    "component_registry_version": "1.5.0",
-    "topology_version": "1.5.0",
-    "layout_version": "1.3.0"
+    "component_registry_version": "1.6.0",
+    "topology_version": "1.6.0",
+    "layout_version": "1.4.0"
   },
   "layout": {
     "columns": 3,
@@ -560,6 +560,54 @@
       "group": "agentization",
       "target": "agent_runtime/README.md",
       "description": "R0 typed loop 加上 R1 真实本地行动与 R2 的 Pack、Memory、Supervisor、Profile、Gateway、Routing 边界；仍保持领域无关。",
+      "lifecycle_status": "current"
+    },
+    {
+      "id": "external_agent_federation",
+      "label": "External Agent Federation R1",
+      "group": "agentization",
+      "target": "docs/architecture/external-agent-federation-r1.md#Architecture hierarchy",
+      "description": "点火 OS 与可替换外部执行器之间的统一协议、权限、验证、handoff、receipt 与记忆吸收边界；不复制任何供应商 runtime。",
+      "lifecycle_status": "current"
+    },
+    {
+      "id": "openclaw_adapter",
+      "label": "OpenClaw Adapter",
+      "group": "agentization",
+      "target": "docs/architecture/external-agent-federation-r1.md#OpenClaw adapter boundary",
+      "description": "OpenClaw 的 provider-neutral public CLI adapter；只暴露可观察 envelope、能力、健康和 pointer-only session，不把 Gateway、channel 或 daemon 带入点火。",
+      "lifecycle_status": "current"
+    },
+    {
+      "id": "hermes_adapter",
+      "label": "Hermes Adapter",
+      "group": "agentization",
+      "target": "docs/architecture/external-agent-federation-r1.md#Hermes adapter boundary",
+      "description": "Hermes 的受限 text bridge adapter；仅允许声明的低风险读取 envelope，文本输出必须经过 typed parse、redaction 与独立验证。",
+      "lifecycle_status": "current"
+    },
+    {
+      "id": "codex_adapter",
+      "label": "Codex Adapter",
+      "group": "agentization",
+      "target": "docs/architecture/external-agent-federation-r1.md#Codex adapter boundary",
+      "description": "Codex 的 JSONL public CLI adapter；默认 read-only、ephemeral、isolated config/rules、pointer-only thread，不保留 hidden reasoning 或危险 bypass。",
+      "lifecycle_status": "current"
+    },
+    {
+      "id": "reference_executor",
+      "label": "Reference Executor",
+      "group": "agentization",
+      "target": "docs/architecture/external-agent-federation-r1.md#Reference Executor freeze",
+      "description": "现有本地 action plane 的冻结 Reference / Conformance / Fallback 角色；它验证协议，不向万能 Agent 壳、provider、daemon 或远端执行层扩张。",
+      "lifecycle_status": "current"
+    },
+    {
+      "id": "future_executors",
+      "label": "Future Executors",
+      "group": "agentization",
+      "target": "docs/architecture/external-agent-federation-r1.md#Future executors",
+      "description": "未来执行器的声明式插槽；必须先满足统一 contract、最小权限、独立验证、可回执和隐私边界，不能以品牌或智能表现扩大协议。",
       "lifecycle_status": "current"
     },
     {
@@ -1125,6 +1173,62 @@
       "relation_domain": "repository_dependency"
     },
     {
+      "id": "map_runtime_external_agent_federation",
+      "source": "agent_runtime_r0",
+      "target": "external_agent_federation",
+      "label": "Runtime 通过统一协议连接可替换执行器",
+      "relation_class": "projects",
+      "relation_domain": "repository_dependency"
+    },
+    {
+      "id": "map_federation_openclaw",
+      "source": "external_agent_federation",
+      "target": "openclaw_adapter",
+      "label": "Federation 约束 OpenClaw public adapter",
+      "relation_class": "documents",
+      "relation_domain": "repository_dependency"
+    },
+    {
+      "id": "map_federation_hermes",
+      "source": "external_agent_federation",
+      "target": "hermes_adapter",
+      "label": "Federation 约束 Hermes text bridge",
+      "relation_class": "documents",
+      "relation_domain": "repository_dependency"
+    },
+    {
+      "id": "map_federation_codex",
+      "source": "external_agent_federation",
+      "target": "codex_adapter",
+      "label": "Federation 约束 Codex JSONL adapter",
+      "relation_class": "documents",
+      "relation_domain": "repository_dependency"
+    },
+    {
+      "id": "map_federation_reference_executor",
+      "source": "external_agent_federation",
+      "target": "reference_executor",
+      "label": "Federation 以 Reference Executor 做 conformance",
+      "relation_class": "validates",
+      "relation_domain": "repository_dependency"
+    },
+    {
+      "id": "map_federation_future_executors",
+      "source": "external_agent_federation",
+      "target": "future_executors",
+      "label": "未来执行器必须先满足统一 contract",
+      "relation_class": "enabling_condition",
+      "relation_domain": "repository_dependency"
+    },
+    {
+      "id": "map_federation_runtime_environment",
+      "source": "external_agent_federation",
+      "target": "runtime_environment",
+      "label": "Federation 受 Runtime 工具/环境边界约束",
+      "relation_class": "projects",
+      "relation_domain": "repository_dependency"
+    },
+    {
       "id": "map_runtime_memory",
       "source": "agent_runtime_r0",
       "target": "runtime_memory_loop",
@@ -1190,8 +1294,8 @@
     }
   ],
   "component_coverage": {
-    "registry_components": 76,
-    "visible_nodes": 64,
+    "registry_components": 82,
+    "visible_nodes": 70,
     "hidden_components": 12,
     "hidden_representatives": {
       "foundation_data": "foundation",

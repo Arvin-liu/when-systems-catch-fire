@@ -18,6 +18,22 @@ child scope。它不证明通用智能、长期自主性、现实世界普适安
 [机器 receipt](../data/agent-runtime/pilots/r2-offline-repository-maintenance/pilot-receipt.json) ·
 [夜班 ledger](../data/operations/iterations/121/nightshift-progress.jsonl)。
 
+## 任务 122：External Agent Federation R1
+
+Task 122 建立点火 OS 与可替换 executor 之间的统一 contract、严格 approval
+intersection、capability/health/privacy/workspace 路由、handoff/failover、
+receipt 与 pointer-only memory 边界；OpenClaw、Hermes、Codex 只作为 adapter
+family 接入，现有自研 action plane 冻结为 Reference / Conformance / Fallback。
+Pilot A/B/C 使用 disposable local fixture，比较 protocol compatibility 而非
+intelligence；live external inference 保持
+`NOT_RUN_LIVE_EXTERNAL_INVOCATION`。机器结果见
+[federation pilot results](../data/agent-federation/federation-pilot-results-r1.json)
+与[联邦架构边界](../docs/architecture/external-agent-federation-r1.md)。
+
+这只是仓库 contract、adapter isolation、对抗拒绝、receipt 验证和 fresh-clone
+回归的工程证据，不证明外部 provider、普适安全、现实因果、生产自治、通用智能、
+Owner acceptance 或 `EPISTEMICALLY_ACCEPTED`；后者仍为 `0`。
+
 ## 任务 112：百轮成果出版层
 
 任务 112 将既有百轮材料整理为可直接阅读的出版层，当前入口是[成果书架](../PUBLICATIONS/README.md)。书架包含[第一卷](../PUBLICATIONS/volumes/001-pointfire-after-one-hundred-iterations.md)、[研究笔记第一辑](../PUBLICATIONS/notes/001-pointfire-research-notes.md)、[一页全景](../PUBLICATIONS/what-pointfire-knows-now.md)和[百轮成果台账](../PUBLICATIONS/hundred-iteration-achievement-ledger.md)。

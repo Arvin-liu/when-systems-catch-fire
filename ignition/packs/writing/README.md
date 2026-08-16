@@ -13,3 +13,8 @@ prove facts, causality, literary quality, Owner acceptance or epistemic status.
 See [`manifest.json`](./manifest.json), the
 [之元写作法](../../docs/publication/zhiyuan-writing-method.md) and the
 [publication showcase](../../docs/publication/zhiyuan-writing-showcase.md).
+
+External Agent Federation remains outside the Writing Pack: adapter output,
+vendor telemetry, prompt, token, hidden reasoning and session state are not
+writing evidence or publication provenance unless a separate canonical source
+and validation gate explicitly admits them.

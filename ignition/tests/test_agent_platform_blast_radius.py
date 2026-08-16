@@ -43,6 +43,19 @@ class AgentPlatformBlastRadiusTests(unittest.TestCase):
         self.assertNotIn("agent_platform.runtime", result["affected_projections"])
         self.assertNotIn("agent_platform.pack_routing", result["affected_projections"])
 
+    def test_federation_change_stays_in_federation_projection(self) -> None:
+        result = derive_blast_radius(
+            ["agent_federation/contracts.py", "schemas/agent-federation/federation-core-r1.schema.json"],
+            self.contract,
+        )
+        self.assertEqual(
+            result["source_domains"],
+            {"agent_federation": ["agent_federation/contracts.py", "schemas/agent-federation/federation-core-r1.schema.json"]},
+        )
+        self.assertEqual(result["affected_projections"], ["agent_platform.federation"])
+        forbidden = self.contract["source_domains"]["agent_federation"]["forbidden_projections"]
+        self.assertTrue(set(result["affected_projections"]).isdisjoint(forbidden))
+
     def test_unmapped_or_mixed_paths_fail_closed(self) -> None:
         unmapped = derive_blast_radius(["unregistered/runtime-helper.txt"], self.contract)
         self.assertEqual(unmapped["unmapped_paths"], ["unregistered/runtime-helper.txt"])

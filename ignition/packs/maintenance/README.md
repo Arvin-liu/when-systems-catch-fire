@@ -10,3 +10,9 @@ disposable local episode: audit → approved repair → validation, with a
 persisted crash checkpoint, executor-instance handoff, bounded operational
 memory and independent adversarial failures. Its receipt explicitly records
 `network_allowed=false`, `remote_mutation=false` and `git_push_invoked=false`.
+
+Task 122 keeps executor selection and adapter protocol in the separate
+[External Agent Federation R1](../../docs/architecture/external-agent-federation-r1.md)
+boundary. The Maintenance Pack cannot select OpenClaw, Hermes, Codex or a future
+executor, widen permissions, retain external session state, or turn a pilot
+receipt into a Knowledge or truth claim.

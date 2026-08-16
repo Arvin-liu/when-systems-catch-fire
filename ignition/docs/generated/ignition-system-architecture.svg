@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 3592" width="1800" height="3592" role="img" aria-labelledby="map-title map-description">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 3988" width="1800" height="3988" role="img" aria-labelledby="map-title map-description">
   <title id="map-title">点火唯一完整可点击总架构图</title>
   <desc id="map-description">唯一完整总架构图；0.6.0 Current 派生投影，0.5.0 为 Historical。Owner/Human 与 Value Charter 位于 escalation 之上；Kernel ≠ Knowledge，Runtime ≠ Research，Pack 可加载但不拥有通用 authority；语言—思维横穿 L0—L6，不增加 L7。连线是仓库关系、同步义务或候选反馈，不自动表示现实因果。</desc>
   <style>
@@ -21,7 +21,7 @@
       <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#0f172a" flood-opacity=".10" />
     </filter>
   </defs>
-  <rect class="map-bg" x="0" y="0" width="1800" height="3592" />
+  <rect class="map-bg" x="0" y="0" width="1800" height="3988" />
   <text class="map-title" x="32" y="42">点火唯一完整可点击总架构图</text>
   <text class="map-subtitle" x="32" y="72">唯一完整总架构图；0.6.0 Current 派生投影，0.5.0 为 Historical。Owner/Human 与 Value Charter 位于 escalation 之上；Kernel ≠ Knowledge，Runtime ≠ Research，Pack 可加载但不拥有通用 authority；语言—思维横穿 L0—L6，不增加 L7。连线是仓库关系、同步义务或候选反馈，不自动表示现实因果。</text>
   <text class="boundary-note" x="32" y="98">点击任一构件打开 canonical 目标；视觉邻近与连线不自动表示因果、严格同构或理论完备。</text>
@@ -55,7 +55,7 @@
   <rect class="cluster" x="32" y="2426" width="560" height="190" rx="16" stroke="#0369a1" />
   <text class="cluster-title" x="54" y="2458" fill="#0369a1">语言—思维逻辑平面</text>
   <text class="cluster-desc" x="54" y="2484">横穿 L0—L6 保存语言框架差异、残余与目标语言实现；不是 L7</text>
-  <rect class="cluster" x="620" y="2644" width="560" height="916" rx="16" stroke="#7c2d12" />
+  <rect class="cluster" x="620" y="2644" width="560" height="1312" rx="16" stroke="#7c2d12" />
   <text class="cluster-title" x="642" y="2676" fill="#7c2d12">智能体化边界 R0</text>
   <text class="cluster-desc" x="642" y="2702">Owner/Human 与 Value Charter 之下的通用 Kernel、Runtime、环境和可加载 Domain Pack；Kernel ≠ Knowledge</text>
   <g aria-label="system relations">
@@ -230,40 +230,61 @@
     <path class="edge" d="M 1488.0 987.0 C 1488.0 987.0, 1488.0 1865.0, 1488.0 1865.0" data-source="epistemic_governance_kernel" data-target-node="no_truth_upgrade" data-relation-class="constraint" data-relation-domain="synchronization_obligation">
       <title>epistemic_governance_kernel → no_truth_upgrade: 联邦内核不制造真值 [synchronization_obligation]</title>
     </path>
-    <path class="edge" d="M 900.0 2790.0 C 900.0 2895.0, 900.0 2895.0, 900.0 3000.0" data-source="owner_human" data-target-node="agent_profile_r0" data-relation-class="governance_constrains" data-relation-domain="synchronization_obligation">
+    <path class="edge" d="M 900.0 2790.0 C 900.0 3093.0, 900.0 3093.0, 900.0 3396.0" data-source="owner_human" data-target-node="agent_profile_r0" data-relation-class="governance_constrains" data-relation-domain="synchronization_obligation">
       <title>owner_human → agent_profile_r0: Owner 定义 Profile 边界 [synchronization_obligation]</title>
     </path>
-    <path class="edge" d="M 1488.0 855.0 C 1194.0 855.0, 1194.0 3027.0, 900.0 3027.0" data-source="charter" data-target-node="agent_profile_r0" data-relation-class="governance_constrains" data-relation-domain="synchronization_obligation">
+    <path class="edge" d="M 1488.0 855.0 C 1194.0 855.0, 1194.0 3423.0, 900.0 3423.0" data-source="charter" data-target-node="agent_profile_r0" data-relation-class="governance_constrains" data-relation-domain="synchronization_obligation">
       <title>charter → agent_profile_r0: Value Charter 约束 Profile [synchronization_obligation]</title>
     </path>
-    <path class="edge" d="M 900.0 3054.0 C 900.0 2961.0, 900.0 2961.0, 900.0 2868.0" data-source="agent_profile_r0" data-target-node="agent_kernel_r0" data-relation-class="governance_constrains" data-relation-domain="repository_dependency">
+    <path class="edge" d="M 900.0 3450.0 C 900.0 3159.0, 900.0 3159.0, 900.0 2868.0" data-source="agent_profile_r0" data-target-node="agent_kernel_r0" data-relation-class="governance_constrains" data-relation-domain="repository_dependency">
       <title>agent_profile_r0 → agent_kernel_r0: Profile 进入通用 Kernel 契约 [repository_dependency]</title>
     </path>
     <path class="edge" d="M 900.0 2922.0 C 900.0 2928.0, 900.0 2928.0, 900.0 2934.0" data-source="agent_kernel_r0" data-target-node="agent_runtime_r0" data-relation-class="enabling_condition" data-relation-domain="repository_dependency">
       <title>agent_kernel_r0 → agent_runtime_r0: Kernel 提供授权与 lineage 契约 [repository_dependency]</title>
     </path>
-    <path class="edge" d="M 900.0 2988.0 C 900.0 3027.0, 900.0 3027.0, 900.0 3066.0" data-source="agent_runtime_r0" data-target-node="runtime_environment" data-relation-class="projects" data-relation-domain="repository_dependency">
+    <path class="edge" d="M 900.0 2988.0 C 900.0 3225.0, 900.0 3225.0, 900.0 3462.0" data-source="agent_runtime_r0" data-target-node="runtime_environment" data-relation-class="projects" data-relation-domain="repository_dependency">
       <title>agent_runtime_r0 → runtime_environment: Runtime 读取声明环境 [repository_dependency]</title>
     </path>
-    <path class="edge" d="M 900.0 2988.0 C 900.0 3060.0, 900.0 3060.0, 900.0 3132.0" data-source="agent_runtime_r0" data-target-node="runtime_memory_loop" data-relation-class="generates" data-relation-domain="repository_dependency">
+    <path class="edge" d="M 900.0 2988.0 C 900.0 2994.0, 900.0 2994.0, 900.0 3000.0" data-source="agent_runtime_r0" data-target-node="external_agent_federation" data-relation-class="projects" data-relation-domain="repository_dependency">
+      <title>agent_runtime_r0 → external_agent_federation: Runtime 通过统一协议连接可替换执行器 [repository_dependency]</title>
+    </path>
+    <path class="edge" d="M 900.0 3054.0 C 900.0 3060.0, 900.0 3060.0, 900.0 3066.0" data-source="external_agent_federation" data-target-node="openclaw_adapter" data-relation-class="documents" data-relation-domain="repository_dependency">
+      <title>external_agent_federation → openclaw_adapter: Federation 约束 OpenClaw public adapter [repository_dependency]</title>
+    </path>
+    <path class="edge" d="M 900.0 3054.0 C 900.0 3093.0, 900.0 3093.0, 900.0 3132.0" data-source="external_agent_federation" data-target-node="hermes_adapter" data-relation-class="documents" data-relation-domain="repository_dependency">
+      <title>external_agent_federation → hermes_adapter: Federation 约束 Hermes text bridge [repository_dependency]</title>
+    </path>
+    <path class="edge" d="M 900.0 3054.0 C 900.0 3126.0, 900.0 3126.0, 900.0 3198.0" data-source="external_agent_federation" data-target-node="codex_adapter" data-relation-class="documents" data-relation-domain="repository_dependency">
+      <title>external_agent_federation → codex_adapter: Federation 约束 Codex JSONL adapter [repository_dependency]</title>
+    </path>
+    <path class="edge" d="M 900.0 3054.0 C 900.0 3159.0, 900.0 3159.0, 900.0 3264.0" data-source="external_agent_federation" data-target-node="reference_executor" data-relation-class="validates" data-relation-domain="repository_dependency">
+      <title>external_agent_federation → reference_executor: Federation 以 Reference Executor 做 conformance [repository_dependency]</title>
+    </path>
+    <path class="edge" d="M 900.0 3054.0 C 900.0 3192.0, 900.0 3192.0, 900.0 3330.0" data-source="external_agent_federation" data-target-node="future_executors" data-relation-class="enabling_condition" data-relation-domain="repository_dependency">
+      <title>external_agent_federation → future_executors: 未来执行器必须先满足统一 contract [repository_dependency]</title>
+    </path>
+    <path class="edge" d="M 900.0 3054.0 C 900.0 3258.0, 900.0 3258.0, 900.0 3462.0" data-source="external_agent_federation" data-target-node="runtime_environment" data-relation-class="projects" data-relation-domain="repository_dependency">
+      <title>external_agent_federation → runtime_environment: Federation 受 Runtime 工具/环境边界约束 [repository_dependency]</title>
+    </path>
+    <path class="edge" d="M 900.0 2988.0 C 900.0 3258.0, 900.0 3258.0, 900.0 3528.0" data-source="agent_runtime_r0" data-target-node="runtime_memory_loop" data-relation-class="generates" data-relation-domain="repository_dependency">
       <title>agent_runtime_r0 → runtime_memory_loop: Runtime 记录结构化记忆事件 [repository_dependency]</title>
     </path>
-    <path class="edge" d="M 900.0 2988.0 C 900.0 3093.0, 900.0 3093.0, 900.0 3198.0" data-source="agent_runtime_r0" data-target-node="domain_pack_contract" data-relation-class="lifecycle_depends_on" data-relation-domain="repository_dependency">
+    <path class="edge" d="M 900.0 2988.0 C 900.0 3291.0, 900.0 3291.0, 900.0 3594.0" data-source="agent_runtime_r0" data-target-node="domain_pack_contract" data-relation-class="lifecycle_depends_on" data-relation-domain="repository_dependency">
       <title>agent_runtime_r0 → domain_pack_contract: Runtime 通过 Pack 契约加载领域能力 [repository_dependency]</title>
     </path>
-    <path class="edge" d="M 900.0 3252.0 C 900.0 3258.0, 900.0 3258.0, 900.0 3264.0" data-source="domain_pack_contract" data-target-node="knowledge_domain_pack" data-relation-class="documents" data-relation-domain="repository_dependency">
+    <path class="edge" d="M 900.0 3648.0 C 900.0 3654.0, 900.0 3654.0, 900.0 3660.0" data-source="domain_pack_contract" data-target-node="knowledge_domain_pack" data-relation-class="documents" data-relation-domain="repository_dependency">
       <title>domain_pack_contract → knowledge_domain_pack: 知识系统作为第一个 Domain Pack [repository_dependency]</title>
     </path>
-    <path class="edge" d="M 900.0 3252.0 C 900.0 3291.0, 900.0 3291.0, 900.0 3330.0" data-source="domain_pack_contract" data-target-node="research_pack_reos_light" data-relation-class="documents" data-relation-domain="repository_dependency">
+    <path class="edge" d="M 900.0 3648.0 C 900.0 3687.0, 900.0 3687.0, 900.0 3726.0" data-source="domain_pack_contract" data-target-node="research_pack_reos_light" data-relation-class="documents" data-relation-domain="repository_dependency">
       <title>domain_pack_contract → research_pack_reos_light: REOS LIGHT 作为 research Pack [repository_dependency]</title>
     </path>
-    <path class="edge" d="M 900.0 3252.0 C 900.0 3324.0, 900.0 3324.0, 900.0 3396.0" data-source="domain_pack_contract" data-target-node="writing_pack" data-relation-class="documents" data-relation-domain="repository_dependency">
+    <path class="edge" d="M 900.0 3648.0 C 900.0 3720.0, 900.0 3720.0, 900.0 3792.0" data-source="domain_pack_contract" data-target-node="writing_pack" data-relation-class="documents" data-relation-domain="repository_dependency">
       <title>domain_pack_contract → writing_pack: 写作与出版作为 writing Pack [repository_dependency]</title>
     </path>
-    <path class="edge" d="M 900.0 3291.0 C 606.0 3291.0, 606.0 307.0, 312.0 307.0" data-source="knowledge_domain_pack" data-target-node="human_knowledge_surfaces" data-relation-class="publishes" data-relation-domain="repository_dependency">
+    <path class="edge" d="M 900.0 3687.0 C 606.0 3687.0, 606.0 307.0, 312.0 307.0" data-source="knowledge_domain_pack" data-target-node="human_knowledge_surfaces" data-relation-class="publishes" data-relation-domain="repository_dependency">
       <title>knowledge_domain_pack → human_knowledge_surfaces: 知识 Pack 仍通过 Human Surface 表达 [repository_dependency]</title>
     </path>
-    <path class="edge" d="M 900.0 2988.0 C 900.0 3225.0, 900.0 3225.0, 900.0 3462.0" data-source="agent_runtime_r0" data-target-node="nonknowledge_pilot" data-relation-class="validates" data-relation-domain="repository_dependency">
+    <path class="edge" d="M 900.0 2988.0 C 900.0 3423.0, 900.0 3423.0, 900.0 3858.0" data-source="agent_runtime_r0" data-target-node="nonknowledge_pilot" data-relation-class="validates" data-relation-domain="repository_dependency">
       <title>agent_runtime_r0 → nonknowledge_pilot: 非知识闭环验证 Runtime 隔离 [repository_dependency]</title>
     </path>
     <path class="edge" d="M 900.0 2895.0 C 1194.0 2895.0, 1194.0 1865.0, 1488.0 1865.0" data-source="agent_kernel_r0" data-target-node="no_truth_upgrade" data-relation-class="constraint" data-relation-domain="synchronization_obligation">
@@ -674,63 +695,106 @@
         <tspan x="658.0" dy="18">base)</tspan>
       </text>
     </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/docs/architecture/external-agent-federation-r1.md#Architecture%20hierarchy" target="_top" data-node-id="external_agent_federation" data-group="agentization" data-target="docs/architecture/external-agent-federation-r1.md#Architecture hierarchy" aria-label="External Agent Federation R1：点火 OS 与可替换外部执行器之间的统一协议、权限、验证、handoff、receipt 与记忆吸收边界；不复制任何供应商 runtime。">
+      <title>External Agent Federation R1 — 点火 OS 与可替换外部执行器之间的统一协议、权限、验证、handoff、receipt 与记忆吸收边界；不复制任何供应商 runtime。</title>
+      <rect class="node" x="642.0" y="3000.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="658.0" y="3022.0">
+        <tspan x="658.0" dy="0">External Agent</tspan>
+        <tspan x="658.0" dy="18">Federation R1</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/docs/architecture/external-agent-federation-r1.md#OpenClaw%20adapter%20boundary" target="_top" data-node-id="openclaw_adapter" data-group="agentization" data-target="docs/architecture/external-agent-federation-r1.md#OpenClaw adapter boundary" aria-label="OpenClaw Adapter：OpenClaw 的 provider-neutral public CLI adapter；只暴露可观察 envelope、能力、健康和 pointer-only session，不把 Gateway、channel 或 daemon 带入点火。">
+      <title>OpenClaw Adapter — OpenClaw 的 provider-neutral public CLI adapter；只暴露可观察 envelope、能力、健康和 pointer-only session，不把 Gateway、channel 或 daemon 带入点火。</title>
+      <rect class="node" x="642.0" y="3066.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="658.0" y="3099.0">
+        <tspan x="658.0" dy="0">OpenClaw Adapter</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/docs/architecture/external-agent-federation-r1.md#Hermes%20adapter%20boundary" target="_top" data-node-id="hermes_adapter" data-group="agentization" data-target="docs/architecture/external-agent-federation-r1.md#Hermes adapter boundary" aria-label="Hermes Adapter：Hermes 的受限 text bridge adapter；仅允许声明的低风险读取 envelope，文本输出必须经过 typed parse、redaction 与独立验证。">
+      <title>Hermes Adapter — Hermes 的受限 text bridge adapter；仅允许声明的低风险读取 envelope，文本输出必须经过 typed parse、redaction 与独立验证。</title>
+      <rect class="node" x="642.0" y="3132.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="658.0" y="3165.0">
+        <tspan x="658.0" dy="0">Hermes Adapter</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/docs/architecture/external-agent-federation-r1.md#Codex%20adapter%20boundary" target="_top" data-node-id="codex_adapter" data-group="agentization" data-target="docs/architecture/external-agent-federation-r1.md#Codex adapter boundary" aria-label="Codex Adapter：Codex 的 JSONL public CLI adapter；默认 read-only、ephemeral、isolated config/rules、pointer-only thread，不保留 hidden reasoning 或危险 bypass。">
+      <title>Codex Adapter — Codex 的 JSONL public CLI adapter；默认 read-only、ephemeral、isolated config/rules、pointer-only thread，不保留 hidden reasoning 或危险 bypass。</title>
+      <rect class="node" x="642.0" y="3198.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="658.0" y="3231.0">
+        <tspan x="658.0" dy="0">Codex Adapter</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/docs/architecture/external-agent-federation-r1.md#Reference%20Executor%20freeze" target="_top" data-node-id="reference_executor" data-group="agentization" data-target="docs/architecture/external-agent-federation-r1.md#Reference Executor freeze" aria-label="Reference Executor：现有本地 action plane 的冻结 Reference / Conformance / Fallback 角色；它验证协议，不向万能 Agent 壳、provider、daemon 或远端执行层扩张。">
+      <title>Reference Executor — 现有本地 action plane 的冻结 Reference / Conformance / Fallback 角色；它验证协议，不向万能 Agent 壳、provider、daemon 或远端执行层扩张。</title>
+      <rect class="node" x="642.0" y="3264.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="658.0" y="3297.0">
+        <tspan x="658.0" dy="0">Reference Executor</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/docs/architecture/external-agent-federation-r1.md#Future%20executors" target="_top" data-node-id="future_executors" data-group="agentization" data-target="docs/architecture/external-agent-federation-r1.md#Future executors" aria-label="Future Executors：未来执行器的声明式插槽；必须先满足统一 contract、最小权限、独立验证、可回执和隐私边界，不能以品牌或智能表现扩大协议。">
+      <title>Future Executors — 未来执行器的声明式插槽；必须先满足统一 contract、最小权限、独立验证、可回执和隐私边界，不能以品牌或智能表现扩大协议。</title>
+      <rect class="node" x="642.0" y="3330.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="658.0" y="3363.0">
+        <tspan x="658.0" dy="0">Future Executors</tspan>
+      </text>
+    </a>
     <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/data/agent-runtime/agent-profile-r0.json" target="_top" data-node-id="agent_profile_r0" data-group="agentization" data-target="data/agent-runtime/agent-profile-r0.json" aria-label="Agent Profile R0：可持久 Agent 身份、Owner/Charter 引用、能力类和禁止自我升级策略。">
       <title>Agent Profile R0 — 可持久 Agent 身份、Owner/Charter 引用、能力类和禁止自我升级策略。</title>
-      <rect class="node" x="642.0" y="3000.0" width="516.0" height="54.0" rx="10" />
-      <text class="node-label" x="658.0" y="3033.0">
+      <rect class="node" x="642.0" y="3396.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="658.0" y="3429.0">
         <tspan x="658.0" dy="0">Agent Profile R0</tspan>
       </text>
     </a>
     <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/docs/architecture/agent-runtime-r0.md" target="_top" data-node-id="runtime_environment" data-group="agentization" data-target="docs/architecture/agent-runtime-r0.md" aria-label="Environment / Tools / Executors：Runtime 外部环境、工具能力与执行者接口；provider/model 只可进入 telemetry。">
       <title>Environment / Tools / Executors — Runtime 外部环境、工具能力与执行者接口；provider/model 只可进入 telemetry。</title>
-      <rect class="node" x="642.0" y="3066.0" width="516.0" height="54.0" rx="10" />
-      <text class="node-label" x="658.0" y="3088.0">
+      <rect class="node" x="642.0" y="3462.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="658.0" y="3484.0">
         <tspan x="658.0" dy="0">Environment /</tspan>
         <tspan x="658.0" dy="18">Tools / Executors</tspan>
       </text>
     </a>
     <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/agent_runtime/README.md#Memory%20R0" target="_top" data-node-id="runtime_memory_loop" data-group="agentization" data-target="agent_runtime/README.md#Memory R0" aria-label="Feedback / Memory / Correction Loop：Working State 与可追溯 Durable Memory Event 的最小记录回路，不引入向量数据库。">
       <title>Feedback / Memory / Correction Loop — Working State 与可追溯 Durable Memory Event 的最小记录回路，不引入向量数据库。</title>
-      <rect class="node" x="642.0" y="3132.0" width="516.0" height="54.0" rx="10" />
-      <text class="node-label" x="658.0" y="3154.0">
+      <rect class="node" x="642.0" y="3528.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="658.0" y="3550.0">
         <tspan x="658.0" dy="0">Feedback /</tspan>
         <tspan x="658.0" dy="18">Memory / Correction Loop</tspan>
       </text>
     </a>
     <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/agent_kernel/domain_pack.py" target="_top" data-node-id="domain_pack_contract" data-group="agentization" data-target="agent_kernel/domain_pack.py" aria-label="Domain Pack Contract：Domain Pack manifest 与禁止权力升级的挂接契约。">
       <title>Domain Pack Contract — Domain Pack manifest 与禁止权力升级的挂接契约。</title>
-      <rect class="node" x="642.0" y="3198.0" width="516.0" height="54.0" rx="10" />
-      <text class="node-label" x="658.0" y="3231.0">
+      <rect class="node" x="642.0" y="3594.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="658.0" y="3627.0">
         <tspan x="658.0" dy="0">Domain Pack Contract</tspan>
       </text>
     </a>
     <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/packs/knowledge/manifest.json" target="_top" data-node-id="knowledge_domain_pack" data-group="agentization" data-target="packs/knowledge/manifest.json" aria-label="Knowledge Domain Pack：现有 Foundation、claims、Evidence、函数/非函数资产、Results 与知识体验的第一个 Domain Pack 引用面。">
       <title>Knowledge Domain Pack — 现有 Foundation、claims、Evidence、函数/非函数资产、Results 与知识体验的第一个 Domain Pack 引用面。</title>
-      <rect class="node" x="642.0" y="3264.0" width="516.0" height="54.0" rx="10" />
-      <text class="node-label" x="658.0" y="3297.0">
+      <rect class="node" x="642.0" y="3660.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="658.0" y="3693.0">
         <tspan x="658.0" dy="0">Knowledge Domain Pack</tspan>
       </text>
     </a>
     <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/docs/architecture/reos-vnext-light.md#Navigation%20boundary" target="_top" data-node-id="research_pack_reos_light" data-group="agentization" data-target="docs/architecture/reos-vnext-light.md#Navigation boundary" aria-label="Research Pack / REOS LIGHT：REOS vNext LIGHT 作为有界 research pack 消费 Runtime，不定义 Runtime、权限或 Owner authority。">
       <title>Research Pack / REOS LIGHT — REOS vNext LIGHT 作为有界 research pack 消费 Runtime，不定义 Runtime、权限或 Owner authority。</title>
-      <rect class="node" x="642.0" y="3330.0" width="516.0" height="54.0" rx="10" />
-      <text class="node-label" x="658.0" y="3352.0">
+      <rect class="node" x="642.0" y="3726.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="658.0" y="3748.0">
         <tspan x="658.0" dy="0">Research Pack /</tspan>
         <tspan x="658.0" dy="18">REOS LIGHT</tspan>
       </text>
     </a>
     <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/docs/publication/zhiyuan-writing-method.md#%E5%8F%8C%E5%90%91%E6%8E%A5%E5%8F%A3%E5%A5%91%E7%BA%A6" target="_top" data-node-id="writing_pack" data-group="agentization" data-target="docs/publication/zhiyuan-writing-method.md#双向接口契约" aria-label="Writing Pack / 之元写作法：之元写作法作为 L6 writing/publication pack，不进入 Generic Kernel 或提高 Runtime 权限。">
       <title>Writing Pack / 之元写作法 — 之元写作法作为 L6 writing/publication pack，不进入 Generic Kernel 或提高 Runtime 权限。</title>
-      <rect class="node" x="642.0" y="3396.0" width="516.0" height="54.0" rx="10" />
-      <text class="node-label" x="658.0" y="3418.0">
+      <rect class="node" x="642.0" y="3792.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="658.0" y="3814.0">
         <tspan x="658.0" dy="0">Writing Pack /</tspan>
         <tspan x="658.0" dy="18">之元写作法</tspan>
       </text>
     </a>
     <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/agent_runtime/pilots/non_knowledge_manifest.py" target="_top" data-node-id="nonknowledge_pilot" data-group="agentization" data-target="agent_runtime/pilots/non_knowledge_manifest.py" aria-label="Non-knowledge Runtime Pilot：不依赖任何知识系统概念的确定性 manifest pilot，证明 Runtime 可在领域包之外闭环。">
       <title>Non-knowledge Runtime Pilot — 不依赖任何知识系统概念的确定性 manifest pilot，证明 Runtime 可在领域包之外闭环。</title>
-      <rect class="node" x="642.0" y="3462.0" width="516.0" height="54.0" rx="10" />
-      <text class="node-label" x="658.0" y="3484.0">
+      <rect class="node" x="642.0" y="3858.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="658.0" y="3880.0">
         <tspan x="658.0" dy="0">Non-knowledge Runtime</tspan>
         <tspan x="658.0" dy="18">Pilot</tspan>
       </text>

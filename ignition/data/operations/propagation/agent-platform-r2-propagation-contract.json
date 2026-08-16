@@ -8,6 +8,7 @@
     "agent_platform.memory",
     "agent_platform.reasoner_gateway",
     "agent_platform.pack_routing",
+    "agent_platform.federation",
     "knowledge.function_census",
     "knowledge.nonfunction_registry",
     "knowledge.experience",
@@ -34,6 +35,32 @@
         "agent_platform.reasoner_gateway",
         "agent_platform.pack_routing"
       ],
+      "forbidden_projections": [
+        "knowledge.function_census",
+        "knowledge.nonfunction_registry",
+        "knowledge.experience",
+        "knowledge.fire_seeds",
+        "writing.human_surface",
+        "writing.publication_registry",
+        "human.front_door",
+        "pack.registry",
+        "pack.manifest_validation"
+      ]
+    },
+    "agent_federation": {
+      "source_paths": [
+        "agent_federation/",
+        "schemas/agent-federation/",
+        "data/agent-federation/",
+        "docs/architecture/external-agent-federation-r1.md",
+        "tests/test_federation_pilots.py",
+        "tests/test_federation_core.py",
+        "tests/test_federation_router.py",
+        "tests/test_approval_handoff.py",
+        "tools/validate_federation_ownership.py",
+        "tools/validate_federation_routing.py"
+      ],
+      "affected_projections": ["agent_platform.federation"],
       "forbidden_projections": [
         "knowledge.function_census",
         "knowledge.nonfunction_registry",

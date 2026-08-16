@@ -5,8 +5,11 @@
 ## 当前身份一句话
 
 点火当前主干是一个有界、可审计、可恢复的 Agent Platform 原型；知识治理是
-第一个大型 Domain Pack，而不是整个系统本体。要理解这句话的工程含义，读
-[Agent Platform R2](./docs/architecture/agent-platform-r2.md)；要核对当前公开
+第一个大型 Domain Pack，而不是整个系统本体。Task 122 的 External Agent
+Federation R1 让 OpenClaw、Hermes、Codex 作为可替换 adapter 接入，并把现有
+执行层冻结为 Reference / Conformance / Fallback。要理解这句话的工程含义，读
+[Agent Platform R2](./docs/architecture/agent-platform-r2.md) 与
+[External Agent Federation R1](./docs/architecture/external-agent-federation-r1.md)；要核对当前公开
 结果，读[当前结果](./RESULTS/LATEST.md)。测试、pilot、图和工作流回执都不等于
 通用智能、现实因果、生产安全、Owner acceptance 或 `EPISTEMICALLY_ACCEPTED`。
 
@@ -31,7 +34,7 @@
 |不知道名称或路径，只想探索|[知识地图](./KNOWLEDGE/MAP.md)|[最新变化](./KNOWLEDGE/WHATS-NEW.md)、[搜索](./KNOWLEDGE/SEARCH.md)|
 |快速读懂一篇长文|[分层阅读](./KNOWLEDGE/READING-LAYERS.md)|对应完整来源、[统一资产卡](./KNOWLEDGE/ASSET-CARDS.md)|
 |判断点火是什么、当前做到哪里|[当前结果](./RESULTS/LATEST.md)|[项目现状](./docs/project-current-state.md)、[架构](./ARCHITECTURE.md)|
-|理解 Agent Platform、Pack、Memory 与 Supervisor|[Agent Platform R2](./docs/architecture/agent-platform-r2.md)|[Runtime](./agent_runtime/README.md)、[四个 Pack](./packs/)、[离线 pilot 简报](./data/agent-runtime/pilots/r2-offline-repository-maintenance/HUMAN-REPORT.md)|
+|理解 Agent Platform、Federation、Pack、Memory 与 Supervisor|[Agent Platform R2](./docs/architecture/agent-platform-r2.md)|[External Agent Federation R1](./docs/architecture/external-agent-federation-r1.md)、[Runtime](./agent_runtime/README.md)、[四个 Pack](./packs/)、[离线 pilot 简报](./data/agent-runtime/pilots/r2-offline-repository-maintenance/HUMAN-REPORT.md)|
 |查看历史错误怎样修正|[纠正与撤回](./RESULTS/CORRECTIONS.md)|[历史纠正日志](./docs/foundation/historical-correction-log.md)|
 |查看函数、断言资产裁决|[裁决总结](./RESULTS/ADJUDICATION-SUMMARY.md)|[函数深度裁决](./docs/foundation/historical-function-deep-adjudication-20260729.md)、[非函数断言索引](./docs/foundation/nonfunction-claim-adjudication-index.md)|
 |查看物理复算与边界|[物理资产纠偏](./docs/foundation/physics-asset-correction-20260729.md)|[开放问题](./RESULTS/OPEN-QUESTIONS.md)|
