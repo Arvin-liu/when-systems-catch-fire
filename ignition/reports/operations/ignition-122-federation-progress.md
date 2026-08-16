@@ -40,11 +40,26 @@ external truth, Owner acceptance, production safety or epistemic acceptance.
 - Residual: no build-vs-integrate exception is recorded; future protected
   runtime layers remain deferred.
 
+## Step 02 — COMPLETE
+
+- Result: `STEP_02_FEDERATION_CORE_CONTRACT_COMPLETE`.
+- Package: `agent_federation/contracts.py`; schema:
+  `schemas/agent-federation/federation-core-r1.schema.json`.
+- Typed records: `ExecutorDescriptor`, `FederatedTaskEnvelope`,
+  `FederatedProgressEvent`, `FederatedResultReceipt`, `ExternalSessionRef`,
+  `FederatedHandoffBundle`, health and nested policy/output/validation/budget
+  contracts, plus the narrow `FederatedExecutor` protocol.
+- Gates: typed roundtrip, bounded progress, receipt digest/tamper rejection,
+  pointer-only session refs and hidden-field rejection; 121 core plus new
+  contract tests = `71/71 PASS`.
+- Residual: external session state is a pointer only; no vendor history,
+  prompt, hidden reasoning, token or private memory is canonical OS state.
+
 | Step | Status | Commit | Remote | Targeted gate |
 | --- | --- | --- | --- | --- |
 | 00 | COMPLETE | `05ac54db` | `05ac54db` | inventory schema + 121 core = PASS |
-| 01 | COMPLETE | pending self commit binding | pending `ls-remote` binding | ownership + freeze + 66 tests = PASS |
-| 02 | PENDING | — | — | — |
+| 01 | COMPLETE | `a8b0cadd` | `a8b0cadd` | ownership + freeze + 66 tests = PASS |
+| 02 | COMPLETE | pending self commit binding | pending `ls-remote` binding | federation core + 71 tests = PASS |
 | 03 | PENDING | — | — | — |
 | 04 | PENDING | — | — | — |
 | 05 | PENDING | — | — | — |
