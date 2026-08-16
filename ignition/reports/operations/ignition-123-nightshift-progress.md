@@ -198,3 +198,45 @@ Current-state validator、current-facts determinism、Human Surface contract、H
 本步 claim ceiling：deterministic repository geometry, accessibility and regression evidence only；不推导 external truth、Owner acceptance、production safety 或 epistemic upgrade。
 
 下一步：以同一 identity contract 收敛所有 Current Human/AI、Architecture、Federation、Results 与 State Changelog 表面，消除 0.7/0.8 和旧 agentization 叙述残余。
+
+## Step 07 — COMPLETE
+
+### Current identity surface synchronization
+
+以 `CURRENT_STATE_SYNC_INVARIANT`、`current-system-identity.json` 和确定性
+`current-facts.json` 为同一身份基线，完成 Current Human/AI、Architecture、
+Federation、Results 与系统图维护说明的收敛。当前一致语义为：点火是 OS /
+orchestration-governance layer 与 driver；OpenClaw、Hermes、Codex 是外部可替换
+executors；Knowledge 是第一个大型 Domain Pack；本地执行层冻结为
+`REFERENCE_EXECUTOR / CONFORMANCE_EXECUTOR / FALLBACK_MINIMAL`；外部完成不自动
+成为 OS validation。当前地图是 `0.8.0`，`0.7.0` 及更早版本均为 Historical。
+
+修订了 `AGENTS.md`、首页、`project-current-state.md`、`ARCHITECTURE.md`、AI
+cold-start/handoff、`llms.txt`、Human Reading、Agent Platform/Federation 文档、
+当前 Results、成果册的正式仓库结果章节和 system-map maintenance guide。系统图
+维护说明不再把当前 R2 说成单一旧 `agentization` overlay，而是明确中央 `os_spine`、
+外部 `federation` 与 `domain_packs` 三个有界投影。Current Results/成果册改为
+引用 current-facts 的 `5,603 / 15,899` counts 与 `4,804 / 4,615`
+quarantine/pending；历史报告、生成 Knowledge 索引和 provenance 不被重写。
+
+`STATE-CHANGELOG.md` 新增了明确标注为 task-branch projection 的 Step 07 recovery
+entry，声明正式 `main` 仍为 `d60ec8687fb1cc6b972e831a8f0dcd348ba0e83e`；它不是
+Step 12 的 formal main release delta。相关 materiality source fingerprints 已刷新，
+current-facts JSON/Markdown 重新生成并保持 byte-deterministic。
+
+### Targeted gates and boundary
+
+`CURRENT_FACTS_DETERMINISTIC_OK`、`CURRENT_STATE_SYNC_OK`、
+`AGENT_PLATFORM_HUMAN_SURFACE=PASS surfaces=18 map=0.8.0 registry=82 visible=70
+edges=77 hidden=12`、Human front door/contract/visibility、system-map generator
+和 `git diff --check` 全部为 `PASS`。未读取 secret，未改外部配置，未安装/升级，
+未执行真实 external invocation；本步 live 状态为 `NOT_RUN_STEP_07`。
+
+本步 claim ceiling：Current Human/AI/Architecture/Federation/Results identity
+同步与 deterministic current-facts 导航证据仅限仓库范围；不推导 external truth、Owner
+acceptance、production safety 或 epistemic upgrade。正式 main architecture/state
+delta、Reference Executor 长期 CI 边界、真实外部 smoke/cross-executor pilot、独立
+review 与 final release 仍开放。
+
+下一步：把 default integrate、Reference/Conformance/Fallback freeze、禁止 runtime
+层扩张和 conformance evidence 做成长期 CI 边界，进入 Step 08。

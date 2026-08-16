@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate the Task 121 Agent Platform R2 human/AI surface projection.
+"""Validate the current Agent Platform/Federation human/AI surface projection.
 
 This is a read-only navigation and wording gate.  It does not adjudicate
 truth, causality, prose quality, Owner acceptance, or external validity.
@@ -154,8 +154,8 @@ def validate() -> list[str]:
         for key, expected in expected_coverage.items():
             if coverage.get(key) != expected:
                 issues.append(f"system map coverage {key}={coverage.get(key)!r}, expected {expected!r}")
-        if system_map.get("map_version") != "0.7.0":
-            issues.append(f"system map version is {system_map.get('map_version')!r}, expected '0.7.0'")
+        if system_map.get("map_version") != "0.8.0":
+            issues.append(f"system map version is {system_map.get('map_version')!r}, expected '0.8.0'")
         if len(system_map.get("edges", [])) != 77:
             issues.append(f"system map edge count is {len(system_map.get('edges', []))}, expected 77")
     except (OSError, json.JSONDecodeError, KeyError, TypeError) as exc:
@@ -169,6 +169,8 @@ def validate() -> list[str]:
         "Step 11 adversarial/full regression",
         "Step 12 fresh-clone replay",
         "main merge receipt",
+        "IGNITION-20260816-123",
+        "CURRENT_STATE_SYNC_INVARIANT",
     ):
         if marker not in changelog_text:
             issues.append(f"STATE-CHANGELOG.md: missing pre-release marker {marker!r}")
@@ -207,7 +209,7 @@ def main() -> int:
         return 1
     print(
         "AGENT_PLATFORM_HUMAN_SURFACE=PASS "
-        f"surfaces={len(SURFACE_RULES)} map=0.7.0 registry=82 "
+        f"surfaces={len(SURFACE_RULES)} map=0.8.0 registry=82 "
         "visible=70 edges=77 hidden=12 packs=4"
     )
     return 0

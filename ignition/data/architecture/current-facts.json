@@ -122,7 +122,7 @@
     },
     {
       "path": "ignition/data/governance/human-surface/materiality-manifest.json",
-      "sha256": "d1d88ff0c3c4f6d4f5d24833eff95c20a8a1065d85d0af02289555300e1d283e"
+      "sha256": "843ae6288911087b124e8fbda875e5c4d9f22d5783166bbc1e0835f354563dd0"
     },
     {
       "path": "ignition/data/governance/knowledge-experience/manifest.json",

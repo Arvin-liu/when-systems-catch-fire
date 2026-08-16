@@ -5,12 +5,15 @@
 ## 当前身份一句话
 
 点火当前主干是一个有界、可审计、可恢复的 Agent Platform 原型；知识治理是
-第一个大型 Domain Pack，而不是整个系统本体。Task 122 的 External Agent
-Federation R1 让 OpenClaw、Hermes、Codex 作为可替换 adapter 接入，并把现有
-执行层冻结为 Reference / Conformance / Fallback。要理解这句话的工程含义，读
+第一个大型 Domain Pack，而不是整个系统本体。它是 OS / orchestration-governance
+layer 与 driver；Task 122 的 External Agent Federation R1 让 OpenClaw、Hermes、
+Codex 作为可替换 external executors 通过 adapter 接入，并把现有执行层冻结为
+Reference / Conformance / Fallback。当前唯一完整系统图为 `0.8.0`，上一版 `0.7.0`
+仅作 Historical。要理解这句话的工程含义，读
 [Agent Platform R2](./docs/architecture/agent-platform-r2.md) 与
 [External Agent Federation R1](./docs/architecture/external-agent-federation-r1.md)；要核对当前公开
-结果，读[当前结果](./RESULTS/LATEST.md)。测试、pilot、图和工作流回执都不等于
+结果，读[当前结果](./RESULTS/LATEST.md)；计数、版本和 live ceiling 见
+[Current Facts](./docs/architecture/current-facts.md)。测试、pilot、图和工作流回执都不等于
 通用智能、现实因果、生产安全、Owner acceptance 或 `EPISTEMICALLY_ACCEPTED`。
 
 ## 十分钟了解当前状态

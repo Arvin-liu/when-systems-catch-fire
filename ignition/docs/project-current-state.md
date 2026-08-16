@@ -12,6 +12,10 @@ provenance、handoff 和结果吸收；它是 OS / orchestration-governance laye
 `REFERENCE_EXECUTOR / CONFORMANCE_EXECUTOR / FALLBACK_MINIMAL`。
 Knowledge 是第一个大型 Domain Pack，不是整个系统本体；Research、Writing、
 Maintenance 也各自受 manifest、schema、validator 和 authority ceiling 约束。
+当前唯一完整系统图为 `0.8.0`，`0.7.0` 仅作 Historical；语义主干把中央 OS
+控制脊柱、外部 Federation/replaceable executors 与 Domain/Skill Packs 分开。
+版本、计数和 live ceiling 以 [Current Facts](./architecture/current-facts.md) 及其
+JSON 投影为准。
 
 当前工程状态仍为 `CURRENT_WITH_OPEN_OBLIGATIONS`，并保持
 `EPISTEMICALLY_ACCEPTED=0`。这段话描述仓库接口，不是产品成熟度、市场唯一性、
@@ -53,7 +57,7 @@ AGI、生产安全、现实因果、外部有效性或 Owner acceptance 证明�
 
 任务 119 在 118 的正式基线 `4f4358ef09d1871a48d7e32575a63453130b333c` 之上建立 `Agentization Boundary R0`。新增的 Generic Kernel 只承载身份、状态、来源引用、capability、授权、审计、checkpoint、handoff、resume lineage、结构化记忆事件和不变量；Agent Runtime 只编排 `Observe → Frame → Plan → Authorize → Act → Validate → Remember → Continue/Stop`。Kernel 不导入 Foundation、claims、Evidence、Functions、Non-Functions、Results、Knowledge、REOS 或 writing；Runtime 不要求 provider、model、网络或常驻 daemon。
 
-现有知识治理系统被登记为第一个 `Knowledge Domain Pack`，REOS vNext LIGHT 与之元写作法分别作为有界 research/writing Pack 引用；R0 没有全仓物理迁移。机器边界以 [`agentization-boundary-r0.json`](../data/architecture/agentization-boundary-r0.json)、`DomainPackManifest`、Agent Profile 和唯一系统图 `0.7.0` 为准。非知识 pilot 只读取两个 fixture 文本、生成排序 SHA-256 manifest，在不同 executor 间 checkpoint/resume，并在 validator 通过后进入 `COMPLETED_VALIDATED`；它是仓库范围隔离证据，不是 AGI、长期自主性或知识真值证据。
+现有知识治理系统被登记为第一个 `Knowledge Domain Pack`，REOS vNext LIGHT 与之元写作法分别作为有界 research/writing Pack 引用；R0 没有全仓物理迁移。机器边界以 [`agentization-boundary-r0.json`](../data/architecture/agentization-boundary-r0.json)、`DomainPackManifest`、Agent Profile 和当时的唯一系统图 `0.6.0` 为准；后续 `0.7.0`、`0.8.0` 均是后续历史/当前投影。非知识 pilot 只读取两个 fixture 文本、生成排序 SHA-256 manifest，在不同 executor 间 checkpoint/resume，并在 validator 通过后进入 `COMPLETED_VALIDATED`；它是仓库范围隔离证据，不是 AGI、长期自主性或知识真值证据。
 
 Task 119 保持 `CURRENT_WITH_OPEN_OBLIGATIONS`：Task 115 Draft prior art 仅完成采纳审计，真实 provider/API、daemon、多 agent scheduler、向量记忆、Pack 物理拆分和外部 Owner acceptance 均未实现或未证明。
 

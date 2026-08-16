@@ -2,6 +2,14 @@
 
 状态：`CORE_KERNEL_ADJUDICATED_REMAINING_CONTENT_QUEUE`。迁移覆盖为 622/622；registry 语义审定为 621/622，另有 9 个 Y1/MF-0000 内部组件记录。该状态不表示 622 个对象全部被证明。
 
+当前系统身份以 [`CURRENT_STATE_SYNC_INVARIANT`](docs/governance/current-state-sync-invariant.md)、
+[`current-system-identity.json`](data/architecture/current-system-identity.json) 和
+[`current-facts.json`](data/architecture/current-facts.json) 为准：点火是 OS /
+orchestration-governance layer 与 driver，外部 Agent 是可替换 executors，Knowledge
+是第一个大型 Domain Pack，本地层冻结为 `REFERENCE_EXECUTOR / CONFORMANCE_EXECUTOR /
+FALLBACK_MINIMAL`。当前唯一完整系统图为 `0.8.0`，`0.7.0` 及更早版本仅作 Historical；
+这组仓库身份不升级 Owner、truth、production 或 epistemic authority。
+
 ## 当前工程主干：Agent Platform R2
 
 点火当前的工程脊柱是一个有界、可审计、可恢复的 Agent Platform 原型；
@@ -129,9 +137,9 @@ flowchart LR
 
 ### 完整可点击系统图
 
-Q32I 收口后系统图 0.3.0 为 Current；0727 homepage/usage/charter-system-map sync 收口后系统图 0.4.0 为 Current；后续 registry-derived 系统图 0.5.0、0.6.0 依次成为 Current，现由 0.7.0 作为 Current，0.6.0、0.5.0、0.4.0、0.3.0 与 0.2.0 为 Historical，0.1.0 为更早 Historical。节点身份、canonical target 与生命周期从 `data/operations/project-components.json` 派生；可见关系及其权限域从 `data/operations/change-propagation-topology.json` 派生；`data/architecture/interactive-system-map-layout.json` 只保留布局。生成器产生 materialized spec 与同一 interactive SVG，再由 README 与仓库 Markdown 投影。
+Q32I 收口后系统图 0.3.0 为 Current；0727 homepage/usage/charter-system-map sync 收口后系统图 0.4.0 为 Current；后续 registry-derived 系统图 0.5.0、0.6.0、0.7.0 依次成为历史投影，现由 0.8.0 作为 Current；0.1.0—0.7.0 均为 Historical。节点身份、canonical target 与生命周期从 `data/operations/project-components.json` 派生；可见关系及其权限域从 `data/operations/change-propagation-topology.json` 派生；`data/architecture/interactive-system-map-layout.json` 只保留布局。生成器产生 materialized spec 与同一 interactive SVG，再由 README 与仓库 Markdown 投影。
 
-该链由当前迭代操作法 1.4.0 继承并保留声明关系下的变更传播闭包。`substantive_causal_candidate`、`repository_dependency` 与 `synchronization_obligation` 权限分离；只有后两者按声明规则触发自动或必要评估。Git diff、依赖、可达路径与视觉位置不构成现实因果识别。它覆盖现有 L0—L6、核心、模型、操作、规范、公共表达、Agent Platform、External Agent Federation 与反馈环，不增加架构层；当前 registry-derived 投影为 `0.7.0`，包含 `82` 个 registry components、`70` 个可见节点和 `77` 条 typed edges，另有 `12` 个由代表节点承载的隐藏组件。
+该链由当前迭代操作法 1.4.0 继承并保留声明关系下的变更传播闭包。`substantive_causal_candidate`、`repository_dependency` 与 `synchronization_obligation` 权限分离；只有后两者按声明规则触发自动或必要评估。Git diff、依赖、可达路径与视觉位置不构成现实因果识别。它覆盖现有 L0—L6、核心、模型、操作、规范、公共表达、Agent Platform、External Agent Federation 与反馈环，不增加架构层；当前 registry-derived 投影为 `0.8.0`，包含 `82` 个 registry components、`70` 个可见节点和 `77` 条 typed edges，另有 `12` 个由代表节点承载的隐藏组件。
 
 ## 目录权威
 

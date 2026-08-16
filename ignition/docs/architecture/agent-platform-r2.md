@@ -11,6 +11,12 @@ registry、Value Charter、Results Book 或唯一完整系统图。
 它的第一个大型 Domain Pack，而不是整个系统本体。当前公开上限仍为
 `CURRENT_WITH_OPEN_OBLIGATIONS`，`EPISTEMICALLY_ACCEPTED=0`。
 
+当前身份 contract/facts 见 [`current-system-identity.json`](../../data/architecture/current-system-identity.json)
+和 [`current-facts.json`](../../data/architecture/current-facts.json)：点火是 OS /
+orchestration-governance layer 与 driver，OpenClaw、Hermes、Codex 是外部可替换
+executors，当前唯一完整系统图为 `0.8.0`（`0.7.0` Historical）。默认策略是
+integrate public boundary；本地行动层只保留 Reference / Conformance / Fallback。
+
 ## 组件怎样分工
 
 ```mermaid
@@ -100,7 +106,7 @@ adversarial episode。机器 receipt 位于
 
 ## 机器权威与使用入口
 
-- [Agentization boundary projection](../../data/architecture/agentization-boundary-r0.json)
+- [Agentization boundary projection](../../data/architecture/agentization-boundary-r0.json)（R0 historical boundary）
 - [component registry](../../data/operations/project-components.json)
 - [typed propagation topology](../../data/operations/change-propagation-topology.json)
 - [R2 propagation contract](../../data/operations/propagation/agent-platform-r2-propagation-contract.json)

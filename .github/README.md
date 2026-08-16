@@ -10,7 +10,7 @@
 
 项目的规范性方向由[生命共同体价值宪章](../ignition/docs/governance/life-community-value-charter.md)约束；宪章是价值边界，不是经验事实、数学证明或外部真值来源。点火当前总上限仍是 `CURRENT_WITH_OPEN_OBLIGATIONS`。工程完成、写作完成、测试通过、重复引用、跨域对应、模型美感或 Agent 共识都不能自动抬升命题的断言地位。
 
-点火当前主干以一个有界、可审计、可恢复的 Agent Platform 原型为工程脊柱；它是长期状态、价值、任务、权限、记忆、验证和 executor 协同的 OS / orchestration-governance layer。OpenClaw、Hermes、Codex 是可替换执行器，不是点火的替代系统；知识治理是第一个大型 Domain Pack，而不是整个系统本体。R2 的仓库内能力、边界和未完成义务见[Agent Platform R2](../ignition/docs/architecture/agent-platform-r2.md)与[智能体化边界](../ignition/docs/architecture/agentization-boundary-r0.md)。Task 122 再以[External Agent Federation R1](../ignition/docs/architecture/external-agent-federation-r1.md)把三家接为可替换 adapter，并把现有自研执行层冻结为 `REFERENCE_EXECUTOR / CONFORMANCE_EXECUTOR / FALLBACK_MINIMAL`。真实 external invocation 仍以 [Current Facts](../ignition/docs/architecture/current-facts.md) 的 ceiling 为准；这不表示已经证明通用智能、长期自主性、现实世界普适安全性或外部有效性；`EPISTEMICALLY_ACCEPTED=0` 保持不变。
+点火当前主干以一个有界、可审计、可恢复的 Agent Platform 原型为工程脊柱；它是长期状态、价值、任务、权限、记忆、验证和 executor 协同的 OS / orchestration-governance layer。OpenClaw、Hermes、Codex 是可替换执行器，不是点火的替代系统；知识治理是第一个大型 Domain Pack，而不是整个系统本体。R2 的仓库内能力、边界和未完成义务见[Agent Platform R2](../ignition/docs/architecture/agent-platform-r2.md)与[智能体化边界](../ignition/docs/architecture/agentization-boundary-r0.md)。Task 122 再以[External Agent Federation R1](../ignition/docs/architecture/external-agent-federation-r1.md)把三家接为可替换 adapter，并把现有自研执行层冻结为 `REFERENCE_EXECUTOR / CONFORMANCE_EXECUTOR / FALLBACK_MINIMAL`。当前唯一完整系统图是 `0.8.0`，`0.7.0` 仅作 Historical；真实 external invocation、当前计数和 live ceiling 仍以 [Current Facts](../ignition/docs/architecture/current-facts.md) 的 ceiling 为准；这不表示已经证明通用智能、长期自主性、现实世界普适安全性或外部有效性；`EPISTEMICALLY_ACCEPTED=0` 保持不变。
 
 ### 当前主干怎样理解
 

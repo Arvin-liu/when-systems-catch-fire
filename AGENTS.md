@@ -2,7 +2,7 @@
 
 Read `ignition/AI-START-HERE.md`, `ignition/STATE-CHANGELOG.md` (baseline and recent deltas), `ignition/AI-HANDOFF.md`, `ignition/llms.txt`, `ignition/ITERATION.md` and the active task command before state-changing work. The state delta log is a high-priority recovery surface: current main merges must append one short delta in the same iteration.
 
-Current iteration method is `1.4.0` and Current system map is `0.7.0`. Method `1.3.0` and maps `0.6.0`/`0.5.0`/`0.4.0`/`0.3.0`/`0.2.0` are Historical; method `1.2.0` and map `0.1.0` are earlier Historical.
+Current iteration method is `1.4.0` and Current system map is `0.8.0`. Method `1.3.0` and map `0.7.0` are Historical; maps `0.6.0`/`0.5.0`/`0.4.0`/`0.3.0`/`0.2.0`/`0.1.0` are earlier Historical.
 
 ## Task 121 Agent Platform R2 cold start
 

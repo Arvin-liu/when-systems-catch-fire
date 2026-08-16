@@ -39,11 +39,13 @@ SVG 现在位于 `docs/generated/ignition-system-architecture.svg`，通过 READ
 
 ## Agent Platform R2 在图中的位置
 
-R2 把 Generic Kernel、Agent Runtime、Profile、Reasoner Gateway、Supervisor、
-Operational Memory 与四个 Domain Pack 作为现有 `agentization` overlay 的当前
-工程脊柱。它们不新增 L7，也不替代 L0—L6、Foundation、claim/evidence registry
-或 Human Surface；Knowledge、REOS LIGHT Research、之元 Writing 和 Maintenance
-仍由各自 manifest 声明能力、对象类型、validator 与禁止的 authority upgrade。
+R2 把 Generic Kernel、Agent Runtime、Profile、Reasoner Gateway、Supervisor 与
+Operational Memory 放入中央 `os_spine`；External Agent Federation 与 adapter
+位于 `federation`；四个 Domain Pack 位于 `domain_packs`。这三个当前 overlay
+共同表达 OS/driver、外部可替换 executors 与可加载 Pack 的边界，不新增 L7，也不
+替代 L0—L6、Foundation、claim/evidence registry 或 Human Surface。Knowledge、
+REOS LIGHT Research、之元 Writing 和 Maintenance 仍由各自 manifest 声明能力、
+对象类型、validator 与禁止的 authority upgrade。
 
 当前机器投影以 `82` 个 registry components、`70` 个可见节点、`77` 条 typed
 edges 和 `12` 个代表节点承载的隐藏 components 为准；当前地图为 `0.8.0`，上一版

@@ -35,6 +35,7 @@ class CurrentStateSyncTests(unittest.TestCase):
     def test_architecture_changed_requires_every_surface_to_change(self) -> None:
         receipt = copy.deepcopy(self.receipt)
         receipt["architecture_identity_impact"] = "ARCHITECTURE_CHANGED"
+        receipt["surface_decisions"][0]["decision"] = "NO_CHANGE_WITH_REASON"
         errors = validator.validate_receipt(self.contract, receipt)
         self.assertTrue(any("requires CHANGE" in error for error in errors))
 

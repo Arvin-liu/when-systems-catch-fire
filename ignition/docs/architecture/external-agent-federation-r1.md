@@ -5,6 +5,12 @@
 吸收；外部智能体是可替换执行器。适配器只翻译可观察边界，不复制外部
 Agent 的运行时。
 
+本页与 [`CURRENT_STATE_SYNC_INVARIANT`](../governance/current-state-sync-invariant.md)
+的当前身份保持一致：点火是 driver / orchestration-governance layer，Knowledge
+是第一个大型 Domain Pack，默认决策是 integrate 而不是重造。当前计数、地图版本
+`0.8.0`（`0.7.0` Historical）和 live ceiling 以 [`current-facts.json`](../../data/architecture/current-facts.json)
+为准；真实 live invocation 仍可在安全边界无法满足时明确 `SKIPPED`。
+
 ## Architecture hierarchy
 
 ```mermaid
