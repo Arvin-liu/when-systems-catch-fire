@@ -143,6 +143,29 @@ external truth, Owner acceptance, production safety or epistemic acceptance.
 - Live smoke: `LIVE_SMOKE_NOT_RUN`; nested Codex formal-repository
   modification was explicitly forbidden.
 
+## Step 07 — COMPLETE
+
+- Result: `STEP_07_FEDERATION_ROUTER_COMPLETE`.
+- Router: `agent_federation/router.py`; policy:
+  `data/agent-federation/federation-routing-policy-r1.json`; schema:
+  `schemas/agent-federation/federation-routing-policy-r1.schema.json`.
+- `FederationRouter` evaluates explicit pin priority, declared capability and
+  permission ceiling, approval/effect compatibility, availability/health,
+  granularity, privacy, workspace locality, configured task preference,
+  least-privilege surplus and stable executor/instance ID tie-break in a
+  fixed order.
+- `RoutingDecision` records every candidate, typed rejection reasons, selected
+  executor, effective permission and fallback order. Unavailable candidates
+  may fall back only to an already-compatible candidate; no capability is
+  widened. Preferences are policy data; router code contains no brand branch,
+  marketing ranking or inferred model-quality claim.
+- Gates: routing policy validator plus router/policy/filter/fallback tests and
+  the prior adapter/core set = `101/101 PASS`; inventory, ownership and
+  runtime-boundary validators = `PASS`.
+- Residual: this step produces a vendor-neutral routing plan; approval bridge,
+  handoff/failover and Supervisor execution integration remain the next
+  governed boundaries.
+
 | Step | Status | Commit | Remote | Targeted gate |
 | --- | --- | --- | --- | --- |
 | 00 | COMPLETE | `05ac54db` | `05ac54db` | inventory schema + 121 core = PASS |
@@ -151,8 +174,8 @@ external truth, Owner acceptance, production safety or epistemic acceptance.
 | 03 | COMPLETE | `43af8300` | `43af8300` | SDK/conformance + 76 tests = PASS |
 | 04 | COMPLETE | `fa0a6890` | `fa0a6890` | OpenClaw adapter + 82 tests = PASS |
 | 05 | COMPLETE | `1e5d3590` | `1e5d3590` | Hermes adapter + 88 tests = PASS |
-| 06 | COMPLETE | pending self commit binding | pending `ls-remote` binding | Codex adapter + 94 tests = PASS |
-| 07 | PENDING | — | — | — |
+| 06 | COMPLETE | `74796f6a` | `74796f6a` | Codex adapter + 94 tests = PASS |
+| 07 | COMPLETE | pending self commit binding | pending `ls-remote` binding | router + 101 tests = PASS |
 | 08 | PENDING | — | — | — |
 | 09 | PENDING | — | — | — |
 | 10 | PENDING | — | — | — |
