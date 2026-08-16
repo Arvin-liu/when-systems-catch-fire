@@ -1,0 +1,232 @@
+{
+  "schema_version": "executor-inventory-r1",
+  "inventory_id": "ignition-122-executor-inventory-r1",
+  "task_id": "IGNITION-20260816-122",
+  "accessed_at": "2026-08-16T07:01:31Z",
+  "formal_baseline": {
+    "repository": "Arvin-liu/when-systems-catch-fire",
+    "origin_main_sha": "277ea6c17883d9fe7661a92175a02c3cdfabac9d",
+    "task_branch": "codex/ignition-122-external-agent-federation-r1-20260816",
+    "worktree": "/Users/zhiyuan/Agent 工作区/when-systems-catch-fire-122",
+    "clean": true,
+    "main_divergence": false
+  },
+  "repository_audit": {
+    "prior_task": {
+      "task_id": "IGNITION-20260816-121",
+      "formal_main_tip": "277ea6c17883d9fe7661a92175a02c3cdfabac9d",
+      "progress_report": "ignition/reports/operations/ignition-121-nightshift-progress.md",
+      "state_delta": "ignition/STATE-CHANGELOG.md",
+      "1111_receipt_ref": "relay/receipts/ignition-121-agent-platform-r2-nightshift-20260816",
+      "receipt_location": "1111 control plane; not copied into the target repository"
+    },
+    "components": [
+      { "component": "kernel", "path": "ignition/agent_kernel", "role": "OS contract and non-escalation" },
+      { "component": "runtime", "path": "ignition/agent_runtime", "role": "bounded local/reference execution and R2 coordination" },
+      { "component": "supervisor", "path": "ignition/agent_runtime/supervisor.py", "role": "offline sequential episode coordination" },
+      { "component": "memory", "path": "ignition/agent_runtime/memory.py", "role": "operational memory, not Knowledge truth" },
+      { "component": "packs", "path": "ignition/packs", "role": "domain pack registry and declarations" },
+      { "component": "reasoner_gateway", "path": "ignition/agent_runtime/transport.py", "role": "provider-neutral proposal boundary" }
+    ],
+    "reference_executor": {
+      "identity": "REFERENCE_EXECUTOR / CONFORMANCE_EXECUTOR / FALLBACK_MINIMAL",
+      "implementation": "ignition/agent_runtime/actions.py",
+      "observed_scope": [
+        "bounded local file reads/writes",
+        "directory reads",
+        "literal argv allowlisted commands",
+        "read-only Git observations",
+        "typed approval, lease, idempotency and journal boundaries"
+      ],
+      "forbidden_scope_observed": [
+        "browser or web automation",
+        "messaging gateways",
+        "provider/model clients",
+        "daemon or scheduler",
+        "arbitrary shell",
+        "remote Git mutation"
+      ],
+      "freeze_decision": "No new external-agent capability is added in Step 00."
+    },
+    "surfaces": {
+      "system_map_machine": "ignition/data/architecture/interactive-system-map.json",
+      "system_map_rendered": "ignition/docs/generated/ignition-system-architecture.svg",
+      "human_surface": [
+        "ignition/docs/human/function-assets/README.md",
+        "ignition/docs/human/nonfunction-assets/README.md",
+        "ignition/docs/architecture/agent-platform-r2.md"
+      ],
+      "knowledge_boundary": "ignition/KNOWLEDGE/README.md",
+      "current_state": "ignition/STATE-CHANGELOG.md"
+    },
+    "residuals": [
+      "T16_SYMPY_COUNTEREXAMPLE is explicitly classified as an environmental SymPy-unavailable residual from Task 121; this inventory does not change claim or proof status.",
+      "Full unittest discovery was deferred to Step 12 after the baseline probe produced no output for several minutes; the 121 targeted core gate completed separately."
+    ],
+    "generator_state": {
+      "repo_status": "CLEAN_AT_BASELINE",
+      "tracked_generated_outputs": "PRESENT",
+      "step_00_generator_rebuild": "DEFERRED_UNTIL_GENERATED_SOURCE_CHANGES",
+      "determinism_claim": "NOT_INFERRED_FROM_INVENTORY"
+    }
+  },
+  "executors": [
+    {
+      "executor_id": "external.openclaw",
+      "family": "OpenClaw",
+      "status": "AVAILABLE",
+      "binary_path": "/Users/zhiyuan/.local/bin/openclaw",
+      "version": "OpenClaw 2026.7.1-2 (0790d9f)",
+      "help_surface": "openclaw agent --help",
+      "help_sha256": "b436caaa7b5712b3f596a4f7cd8c3f0f327edee2d240323cf7c7a532b09fc1f8",
+      "transport_kinds": ["CLI_JSON", "GATEWAY", "ACP_BRIDGE"],
+      "interfaces": {
+        "machine_readable": "SUPPORTED_JSON_RESULT",
+        "task_input": "SUPPORTED_MESSAGE_FILE",
+        "workspace_semantics": "UNKNOWN_FROM_HELP",
+        "session_or_task_id": "SUPPORTED_SESSION_KEY_OR_SESSION_ID",
+        "timeout": "SUPPORTED_AGENT_TIMEOUT",
+        "cancel": "UNKNOWN_FROM_AGENT_HELP",
+        "resume": "UNKNOWN_FROM_AGENT_HELP",
+        "structured_output": "SUPPORTED_JSON_RESULT",
+        "progress": "UNKNOWN_FROM_AGENT_HELP",
+        "permission_control": "DECLARED_BY_LOCAL_OR_GATEWAY_POLICY; NOT_GRANTED_BY_INVENTORY",
+        "noninteractive": "SUPPORTED_CLI",
+        "network_semantics": "EXTERNAL_AGENT_OWNED; NOT_ENABLED_BY_STEP_00"
+      },
+      "config_presence": {
+        "/Users/zhiyuan/.openclaw": "PRESENT",
+        "/Users/zhiyuan/.config/openclaw": "ABSENT",
+        "secret_content": "NOT_READ"
+      },
+      "live_smoke": {
+        "status": "NOT_RUN_STEP_00",
+        "reason": "Step 00 is inventory-only; no external inference or channel action was authorized."
+      },
+      "limitations": [
+        "Gateway/session semantics require a separate adapter probe.",
+        "The CLI exposes many channel and tool surfaces owned by OpenClaw; the adapter must not copy them."
+      ]
+    },
+    {
+      "executor_id": "external.hermes",
+      "family": "Hermes Agent",
+      "status": "AVAILABLE",
+      "binary_path": "/Users/zhiyuan/.local/bin/hermes",
+      "version": "Hermes Agent v0.20.0 (2026.8.3)",
+      "help_surface": "hermes --help",
+      "help_sha256": "0fdcfd5b047316e2fbef3873d90dd59c22f06e91fdfa5ae5bae088d83bb2094b",
+      "transport_kinds": ["CLI_TEXT_ONESHOT", "ACP", "CLI_SESSION"],
+      "interfaces": {
+        "machine_readable": "JSON_USAGE_REPORT_ONLY",
+        "task_input": "SUPPORTED_ONESHOT_OR_QUERY",
+        "workspace_semantics": "SUPPORTED_WORKTREE_FLAG; OTHER_WORKSPACE_RULES_EXTERNAL",
+        "session_or_task_id": "SUPPORTED_RESUME_AND_CONTINUE",
+        "timeout": "UNKNOWN_FROM_HELP",
+        "cancel": "UNKNOWN_FROM_HELP",
+        "resume": "SUPPORTED_SESSION_RESUME",
+        "structured_output": "DEGRADED_TEXT_FINAL_RESPONSE",
+        "progress": "UNKNOWN_FROM_HELP",
+        "permission_control": "EXTERNAL_AGENT_APPROVAL_AND_TOOL_POLICY; NOT_GRANTED_BY_INVENTORY",
+        "noninteractive": "SUPPORTED_ONESHOT",
+        "network_semantics": "EXTERNAL_AGENT_OWNED; NOT_ENABLED_BY_STEP_00"
+      },
+      "config_presence": {
+        "/Users/zhiyuan/.hermes": "PRESENT",
+        "secret_content": "NOT_READ"
+      },
+      "live_smoke": {
+        "status": "NOT_RUN_STEP_00",
+        "reason": "Step 00 is inventory-only; no external inference or gateway action was authorized."
+      },
+      "limitations": [
+        "The stable one-shot surface is text-only; it cannot be treated as a structured executor without a later bounded bridge.",
+        "Hermes memory, skills, subagents, gateways and provider configuration remain Hermes-owned."
+      ]
+    },
+    {
+      "executor_id": "external.codex",
+      "family": "Codex CLI",
+      "status": "AVAILABLE",
+      "binary_path": "/Users/zhiyuan/.local/bin/codex",
+      "version": "codex-cli 0.144.4",
+      "help_surface": "codex exec --help",
+      "help_sha256": "9f86f0115238ddde2514587e5f95b0ab0aa6b89495e5912878d49ad26038aa19",
+      "transport_kinds": ["CLI_JSONL", "APP_SERVER", "MCP_SERVER"],
+      "interfaces": {
+        "machine_readable": "SUPPORTED_EXEC_JSONL",
+        "task_input": "SUPPORTED_STDIN_OR_PROMPT",
+        "workspace_semantics": "SUPPORTED_CD_AND_ADD_DIR",
+        "session_or_task_id": "SUPPORTED_EXEC_RESUME_SUBCOMMAND; REF_SHAPE_TO_PROBE",
+        "timeout": "UNKNOWN_FROM_HELP",
+        "cancel": "UNKNOWN_FROM_EXEC_HELP",
+        "resume": "SUPPORTED_EXEC_RESUME",
+        "structured_output": "SUPPORTED_OUTPUT_SCHEMA_AND_JSONL_EVENTS",
+        "progress": "SUPPORTED_JSONL_EVENT_STREAM",
+        "permission_control": "SUPPORTED_SANDBOX_AND_APPROVAL_FLAGS; INTERSECT_WITH_OS",
+        "noninteractive": "SUPPORTED_EXEC",
+        "network_semantics": "OS_AND_CODEX_POLICY_INTERSECTION; NOT_ENABLED_BY_STEP_00"
+      },
+      "config_presence": {
+        "/Users/zhiyuan/.codex": "PRESENT",
+        "secret_content": "NOT_READ"
+      },
+      "live_smoke": {
+        "status": "NOT_RUN_STEP_00",
+        "reason": "Nested live Codex modification is explicitly forbidden by the task; fixture probes are deferred to Step 06/10."
+      },
+      "limitations": [
+        "No long-running nested Codex invocation was started by this audit.",
+        "Codex internal session/thread history is not an OS canonical state source."
+      ]
+    }
+  ],
+  "official_sources": [
+    {
+      "source_id": "openclaw-repository",
+      "project": "openclaw/openclaw",
+      "url": "https://github.com/openclaw/openclaw",
+      "source_type": "OFFICIAL_REPOSITORY",
+      "observed_ref": "refs/heads/main",
+      "commit": "507e8b985e55e4a549a73afcf7d4a4fa7942e1e3",
+      "accessed_at": "2026-08-16T07:01:31Z",
+      "notes": "Read-only git ls-remote; machine-facing CLI reference was also checked at https://github.com/openclaw/openclaw/blob/main/docs/cli/agent.md."
+    },
+    {
+      "source_id": "hermes-repository",
+      "project": "NousResearch/hermes-agent",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "source_type": "OFFICIAL_REPOSITORY",
+      "observed_ref": "refs/heads/main",
+      "commit": "8ad055414bcae75486952c5080d366679e074c1b",
+      "accessed_at": "2026-08-16T07:01:31Z",
+      "notes": "Read-only git ls-remote; official CLI docs were checked at https://github.com/NousResearch/hermes-agent/blob/main/website/docs/user-guide/cli.md."
+    },
+    {
+      "source_id": "codex-repository",
+      "project": "openai/codex",
+      "url": "https://github.com/openai/codex",
+      "source_type": "OFFICIAL_REPOSITORY",
+      "observed_ref": "refs/heads/main",
+      "commit": "9ded177ce7c1c0bd2047f902936c177612ab3434",
+      "accessed_at": "2026-08-16T07:01:31Z",
+      "notes": "Read-only git ls-remote; local codex exec --help was checked before selecting any adapter surface."
+    },
+    {
+      "source_id": "codex-official-cli-reference",
+      "project": "OpenAI Codex",
+      "url": "https://developers.openai.com/codex/cli/reference/",
+      "source_type": "OFFICIAL_DOCUMENTATION",
+      "observed_ref": "current official CLI reference (redirect observed to learn.chatgpt.com)",
+      "commit": "9ded177ce7c1c0bd2047f902936c177612ab3434",
+      "accessed_at": "2026-08-16T07:01:31Z",
+      "notes": "Official documentation states that the reference catalogs Codex CLI commands and flags; local help remains the execution-time authority."
+    }
+  ],
+  "safety_notes": {
+    "secret_content_read": false,
+    "external_configuration_changed": false,
+    "install_or_upgrade_performed": false,
+    "live_smoke_performed": false
+  }
+}
