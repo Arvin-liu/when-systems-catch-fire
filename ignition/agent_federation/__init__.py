@@ -57,6 +57,15 @@ from .convergence import (
     project_receipt,
     project_recovery,
 )
+from .pilots import (
+    FIXTURE_VERSION,
+    LIVE_NOT_RUN,
+    PILOT_ID,
+    ReferenceExecutorAdapter,
+    run_federation_pilots,
+    validate_federation_pilot_report,
+    write_federation_pilot_report,
+)
 
 __all__ = [
     "ApprovalPolicy", "ArtifactRef", "BudgetContract", "ExecutorDescriptor", "ExecutorHealth",
@@ -71,4 +80,6 @@ __all__ = [
     "AbsorptionResult", "ConvergenceError", "FederationConvergence", "FederationMemoryAbsorber", "MemoryProjection",
     "ProgressIngestResult", "ProgressLedger", "ReceiptIngestResult", "ReceiptRegistry", "project_approval",
     "project_progress", "project_receipt", "project_recovery",
+    "FIXTURE_VERSION", "LIVE_NOT_RUN", "PILOT_ID", "ReferenceExecutorAdapter",
+    "run_federation_pilots", "validate_federation_pilot_report", "write_federation_pilot_report",
 ]

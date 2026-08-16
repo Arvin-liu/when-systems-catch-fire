@@ -1,0 +1,296 @@
+{
+  "claim_ceiling": "protocol compatibility and bounded failure behavior only; not intelligence, production autonomy, external approval or universal safety",
+  "fixture": {
+    "formal_repository_used_as_live_target": false,
+    "network_allowed": false,
+    "os_validator_expected_issue_count": 2,
+    "source_files": [
+      "README.md",
+      "manifest.json"
+    ],
+    "version": "disposable-federation-fixture-r1"
+  },
+  "live_invocation_policy": {
+    "per_vendor_limit": "zero live calls in this pilot; no quota-consuming retry",
+    "reason": "Step 04-06 captured safe public-boundary fixtures; no external model inference, login, daemon, channel, browser or formal-repository write was required for this deterministic protocol pilot.",
+    "status": "NOT_RUN_LIVE_EXTERNAL_INVOCATION"
+  },
+  "pilot_a_conformance_matrix": [
+    {
+      "conformance_cases": [
+        {
+          "detail": "reference.executor:HEALTHY",
+          "name": "probe_descriptor",
+          "status": "PASS"
+        },
+        {
+          "detail": "required capability ceiling is declared",
+          "name": "capability_mapping",
+          "status": "PASS"
+        },
+        {
+          "detail": "sequence=1",
+          "name": "dispatch_progress",
+          "status": "PASS"
+        },
+        {
+          "detail": "sequence=1",
+          "name": "status_ordering",
+          "status": "PASS"
+        },
+        {
+          "detail": "UNSUPPORTED_DECLARED",
+          "name": "cancel",
+          "status": "PASS"
+        },
+        {
+          "detail": "UNSUPPORTED_DECLARED",
+          "name": "resume",
+          "status": "PASS"
+        }
+      ],
+      "dispatch": "PASS",
+      "executor_id": "reference.executor",
+      "fixture_execution": "INJECTED_PUBLIC_BOUNDARY_FIXTURE",
+      "live_invocation": "NOT_RUN_LIVE_EXTERNAL_INVOCATION",
+      "probe": "PASS",
+      "progress": "PASS",
+      "receipt": "REQUIRES_RECONCILIATION",
+      "structured_fidelity": "STRUCTURED_JSON",
+      "timeout": "BOUNDED_BY_ENVELOPE_5S",
+      "validation_outcome": "UNVALIDATED_EXECUTOR_COMPLETION"
+    },
+    {
+      "conformance_cases": [
+        {
+          "detail": "external.openclaw:HEALTHY",
+          "name": "probe_descriptor",
+          "status": "PASS"
+        },
+        {
+          "detail": "unsupported capabilities: ['repo.read']",
+          "name": "deny_unsupported_capability",
+          "status": "PASS"
+        }
+      ],
+      "dispatch": "DENIED_UNSUPPORTED_CAPABILITY",
+      "executor_id": "external.openclaw",
+      "fixture_execution": "INJECTED_PUBLIC_BOUNDARY_FIXTURE",
+      "live_invocation": "NOT_RUN_LIVE_EXTERNAL_INVOCATION",
+      "probe": "PASS",
+      "progress": "NOT_RUN",
+      "receipt": "NOT_RUN_CAPABILITY_MISMATCH",
+      "structured_fidelity": "STRUCTURED_JSON",
+      "timeout": "BOUNDED_BY_ENVELOPE_5S",
+      "validation_outcome": "NOT_RUN_CAPABILITY_MISMATCH"
+    },
+    {
+      "conformance_cases": [
+        {
+          "detail": "external.hermes:HEALTHY",
+          "name": "probe_descriptor",
+          "status": "PASS"
+        },
+        {
+          "detail": "required capability ceiling is declared",
+          "name": "capability_mapping",
+          "status": "PASS"
+        },
+        {
+          "detail": "sequence=1",
+          "name": "dispatch_progress",
+          "status": "PASS"
+        },
+        {
+          "detail": "sequence=1",
+          "name": "status_ordering",
+          "status": "PASS"
+        },
+        {
+          "detail": "UNSUPPORTED_DECLARED",
+          "name": "cancel",
+          "status": "PASS"
+        },
+        {
+          "detail": "UNSUPPORTED_DECLARED",
+          "name": "resume",
+          "status": "PASS"
+        }
+      ],
+      "dispatch": "PASS",
+      "executor_id": "external.hermes",
+      "fixture_execution": "INJECTED_PUBLIC_BOUNDARY_FIXTURE",
+      "live_invocation": "NOT_RUN_LIVE_EXTERNAL_INVOCATION",
+      "probe": "PASS",
+      "progress": "PASS",
+      "receipt": "REQUIRES_RECONCILIATION",
+      "structured_fidelity": "TEXT_DEGRADED",
+      "timeout": "BOUNDED_BY_ENVELOPE_5S",
+      "validation_outcome": "UNVALIDATED_EXECUTOR_COMPLETION"
+    },
+    {
+      "conformance_cases": [
+        {
+          "detail": "external.codex:HEALTHY",
+          "name": "probe_descriptor",
+          "status": "PASS"
+        },
+        {
+          "detail": "required capability ceiling is declared",
+          "name": "capability_mapping",
+          "status": "PASS"
+        },
+        {
+          "detail": "sequence=1",
+          "name": "dispatch_progress",
+          "status": "PASS"
+        },
+        {
+          "detail": "sequence=1",
+          "name": "status_ordering",
+          "status": "PASS"
+        },
+        {
+          "detail": "UNSUPPORTED_DECLARED",
+          "name": "cancel",
+          "status": "PASS"
+        },
+        {
+          "detail": "UNSUPPORTED_DECLARED",
+          "name": "resume",
+          "status": "PASS"
+        }
+      ],
+      "dispatch": "PASS",
+      "executor_id": "external.codex",
+      "fixture_execution": "INJECTED_PUBLIC_BOUNDARY_FIXTURE",
+      "live_invocation": "NOT_RUN_LIVE_EXTERNAL_INVOCATION",
+      "probe": "PASS",
+      "progress": "PASS",
+      "receipt": "REQUIRES_RECONCILIATION",
+      "structured_fidelity": "STRUCTURED_JSONL",
+      "timeout": "BOUNDED_BY_ENVELOPE_5S",
+      "validation_outcome": "UNVALIDATED_EXECUTOR_COMPLETION"
+    }
+  ],
+  "pilot_b_cross_executor_handoff": {
+    "execution_mode": "REFERENCE_PLUS_INJECTED_EXTERNAL_ADAPTER_FIXTURE",
+    "handoff": {
+      "acceptance_criteria": [
+        "source files remain unchanged",
+        "validator finds the same two issues"
+      ],
+      "allowed_capabilities": [
+        "repo.read"
+      ],
+      "artifact_refs": [
+        {
+          "kind": "fixture-manifest",
+          "ref": "disposable-fixture/manifest.json",
+          "sha256": "21dca432fb172a046b8998508ec21485669d693a8294fd01739abd86e4fd9376"
+        }
+      ],
+      "external_session_refs": [],
+      "federation_task_id": "pilot-b-handoff-001",
+      "goal": "Read the disposable fixture and identify deterministic manifest and link problems.",
+      "handoff_id": "pilot-b-handoff-001",
+      "operational_memory_capsule_refs": [
+        "pilot-b-public-capsule"
+      ],
+      "pending_work": [
+        "repeat the read-only audit and compare the public result"
+      ],
+      "source_executor_id": "reference.executor",
+      "unresolveds": [],
+      "validated_completed_work": [
+        "read disposable fixture"
+      ],
+      "workspace_refs": [
+        "disposable-fixture/"
+      ]
+    },
+    "live_external_invocation": "NOT_RUN_LIVE_EXTERNAL_INVOCATION",
+    "source_event_state": "COMPLETED_UNVALIDATED",
+    "source_executor": "reference.executor",
+    "source_receipt": {
+      "artifact_refs": [
+        {
+          "kind": "fixture-manifest",
+          "ref": "disposable-fixture/manifest.json",
+          "sha256": "21dca432fb172a046b8998508ec21485669d693a8294fd01739abd86e4fd9376"
+        }
+      ],
+      "claimed_actions": [
+        "read disposable fixture"
+      ],
+      "executor_id": "reference.executor",
+      "executor_telemetry": {
+        "network": "disabled",
+        "pilot_mode": "disposable_fixture"
+      },
+      "external_session_ref": null,
+      "federation_task_id": "pilot-b-handoff-001",
+      "handoff_eligibility": {
+        "eligible": true,
+        "reason": "OS validator verified the read-only fixture observation"
+      },
+      "receipt_digest": "c6bade1f39e5062b0a7020403298ae64e4f79801eeaf6a5821b0ebd34bcdee5d",
+      "terminal_state": "COMPLETED_VALIDATED",
+      "unresolveds": [],
+      "validation_refs": [
+        "validator/federation-pilot-fixture-r1"
+      ]
+    },
+    "status": "PASS",
+    "takeover": {
+      "effective_capabilities": [
+        "repo.read"
+      ],
+      "observed_artifact_refs": [
+        "disposable-fixture/manifest.json"
+      ],
+      "reason": "target re-observed the workspace and verified the public source receipt before takeover",
+      "source_executor_id": "reference.executor",
+      "status": "ACCEPTED",
+      "target_executor_id": "external.codex"
+    },
+    "target_event_state": "COMPLETED_UNVALIDATED",
+    "target_executor": "external.codex",
+    "target_executor_receipt_state": "REQUIRES_RECONCILIATION",
+    "target_os_validation_receipt_state": "COMPLETED_VALIDATED",
+    "validator": {
+      "issue_count": 2,
+      "source_files_unchanged": true,
+      "status": "PASS"
+    }
+  },
+  "pilot_c_fault_injection": {
+    "faults": {
+      "duplicate_dispatch": "DUPLICATE_REJECTED",
+      "duplicate_progress": "DUPLICATE",
+      "forged_owner_approval": "BLOCKED_WITH_EVIDENCE",
+      "forged_terminal_without_evidence": "UNVERIFIED",
+      "handoff_to_incapable_executor": "CAPABILITY_MISMATCH",
+      "malformed_vendor_output": "MALFORMED_OUTPUT_REJECTED",
+      "stale_receipt": "STALE_RECEIPT_REJECTED",
+      "timeout_or_kill": {
+        "automatic": true,
+        "reason": "read-only retry is bounded",
+        "status": "AUTO_FAILOVER_ELIGIBLE"
+      },
+      "unknown_side_effect": "REQUIRES_RECONCILIATION",
+      "unsupported_capability": "CAPABILITY_MISMATCH"
+    },
+    "live_external_invocation": "NOT_RUN_LIVE_EXTERNAL_INVOCATION",
+    "no_irreversible_action_repeated": true,
+    "status": "PASS"
+  },
+  "pilot_id": "ignition-122-federation-pilots-r1",
+  "schema_version": "federation-pilot-results-r1",
+  "validation": {
+    "matrix_rows": 4,
+    "pilot_count": 3,
+    "report_digest": "85c2cee17efec77a9c878e109a495d36b705b3aef6731a8905cbc34c99ea77e8",
+    "status": "PASS"
+  }
+}

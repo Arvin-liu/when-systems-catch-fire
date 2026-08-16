@@ -209,6 +209,36 @@ external truth, Owner acceptance, production safety or epistemic acceptance.
 - Residual: the absorber's exactly-once dedup index is process-local in R1;
   persistent integrity/tombstones remain owned by the existing memory store.
 
+## Step 10 — COMPLETE
+
+- Result: `STEP_10_DISPOSABLE_FEDERATION_PILOTS_COMPLETE`.
+- Pilot A: `agent_federation/pilots.py` runs one `repo.read` envelope against
+  the bounded Reference Executor view and all three inventory `AVAILABLE`
+  adapters. The disposable fixture contains one incorrect manifest hash and
+  one broken Markdown link; the formal repository is not a live target.
+- The vendor rows use captured public CLI boundaries injected into the
+  existing adapters. OpenClaw is denied because its observed descriptor does
+  not claim `repo.read`; Hermes is a text-degraded bridge; Codex exposes JSONL
+  progress. All live calls remain explicitly
+  `NOT_RUN_LIVE_EXTERNAL_INVOCATION`.
+- Pilot B builds a public handoff from a Reference Executor receipt, requires
+  workspace/artifact re-observation, then dispatches the Codex adapter
+  fixture. The target executor completion remains
+  `REQUIRES_RECONCILIATION` until the OS-owned validator independently
+  confirms the same two deterministic issues and source immutability.
+- Pilot C injects timeout, malformed output, unsupported capability, stale
+  receipt, duplicate progress/dispatch, forged terminal/approval, incapable
+  handoff and unknown side effects. Only the bounded read-only timeout is
+  automatically failover-eligible; unknown side effects remain
+  `REQUIRES_RECONCILIATION` and no irreversible action repeats.
+- Machine result: `data/agent-federation/federation-pilot-results-r1.json`;
+  validator status `PASS`. Gates: Pilot A/B/C plus the prior set =
+  `122/122 PASS`; inventory, ownership and runtime-boundary validators =
+  `PASS`.
+- Residual: no live external inference was needed or run; protocol
+  compatibility and bounded failure behavior do not establish intelligence,
+  production autonomy, external approval or universal safety.
+
 | Step | Status | Commit | Remote | Targeted gate |
 | --- | --- | --- | --- | --- |
 | 00 | COMPLETE | `05ac54db` | `05ac54db` | inventory schema + 121 core = PASS |
@@ -220,7 +250,7 @@ external truth, Owner acceptance, production safety or epistemic acceptance.
 | 06 | COMPLETE | `74796f6a` | `74796f6a` | Codex adapter + 94 tests = PASS |
 | 07 | COMPLETE | `1ac6880e` | `1ac6880e` | router + 101 tests = PASS |
 | 08 | COMPLETE | `5dbbdfa9` | `5dbbdfa9` | approval/handoff/failover + 109 tests = PASS |
-| 09 | COMPLETE | pending self commit binding | pending `ls-remote` binding | convergence + 116 tests = PASS |
-| 10 | PENDING | — | — | — |
+| 09 | COMPLETE | `954a5bad` | `954a5bad` | convergence + 116 tests = PASS |
+| 10 | COMPLETE | pending self commit binding | pending `ls-remote` binding | pilots + 122 tests = PASS |
 | 11 | PENDING | — | — | — |
 | 12 | PENDING | — | — | — |
