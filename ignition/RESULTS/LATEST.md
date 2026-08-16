@@ -31,9 +31,11 @@ intersection、capability/health/privacy/workspace 路由、handoff/failover、
 receipt 与 pointer-only memory 边界；OpenClaw、Hermes、Codex 只作为 adapter
 family 接入，现有自研 action plane 冻结为 Reference / Conformance / Fallback。
 Pilot A/B/C 使用 disposable local fixture，比较 protocol compatibility 而非
-intelligence；live external inference 保持
-`NOT_RUN_LIVE_EXTERNAL_INVOCATION`。机器结果见
+intelligence；Step 09 的 fresh probe 与 bounded smoke 只记录了 OpenClaw
+`SKIPPED_UNSAFE_OR_UNAVAILABLE`、Hermes/Codex `TIMEOUT`，没有可接受 live
+completion。机器结果见
 [federation pilot results](../data/agent-federation/federation-pilot-results-r1.json)
+、[Step 09 smoke receipt](../data/operations/iterations/123/external-conformance-smoke-r1.json)
 与[联邦架构边界](../docs/architecture/external-agent-federation-r1.md)。
 
 这只是仓库 contract、adapter isolation、对抗拒绝、receipt 验证和 fresh-clone

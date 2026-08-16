@@ -18,7 +18,7 @@
 - **为什么重要：** 行动、批准、恢复、记忆、Pack 路由和知识治理的职责被分开记录，Agent 可以提出和执行有界动作，但不能自行扩大权限、改写真值或替代 Owner。
 - **怎样使用：** 人类先读[十分钟阅读路线](../ignition/HUMAN-READING.md)与[当前结果](../ignition/RESULTS/LATEST.md)；Agent 先读[AI 冷启动](../ignition/AI-START-HERE.md)、[状态增量日志](../ignition/STATE-CHANGELOG.md)、[R2 架构契约](../ignition/docs/architecture/agent-platform-r2.md)和[联邦契约](../ignition/docs/architecture/external-agent-federation-r1.md)。
 - **它不能证明什么：** 通过测试、Pack 加载、checkpoint、pilot 或系统图，都不等于外部真值、现实因果、生产安全、Owner acceptance 或 epistemic acceptance。
-- **仍然开放：** live provider/inference、daemon、多 Agent 并发、向量记忆、网络/浏览、外部仓库 mutation、物理 Pack 拆分和现实世界效果仍不在本轮授权范围内；Step 10 live external invocation 明确保持 `NOT_RUN_LIVE_EXTERNAL_INVOCATION`。
+- **仍然开放：** live provider/inference、daemon、多 Agent 并发、向量记忆、网络/浏览、外部仓库 mutation、物理 Pack 拆分和现实世界效果仍不在本轮授权范围内；Step 09 的 bounded smoke 只留下 OpenClaw skip 与 Hermes/Codex timeout，没有可接受 live completion，Step 10 pilot 仍保持未运行。
 
 ## 2. 如何使用
 

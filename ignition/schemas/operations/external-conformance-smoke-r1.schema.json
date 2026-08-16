@@ -1,0 +1,72 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://when-systems-catch-fire.invalid/schemas/operations/external-conformance-smoke-r1.schema.json",
+  "title": "External Executor Conformance Smoke R1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "task_id", "step", "recorded_at", "workspace_policy", "formal_repository_used_as_live_target", "smoke_policy", "independent_os_validator", "executors", "claim_ceiling"],
+  "properties": {
+    "schema_version": { "const": "external-conformance-smoke-r1" },
+    "task_id": { "const": "IGNITION-20260816-123" },
+    "step": { "const": "09" },
+    "recorded_at": { "type": "string", "format": "date-time" },
+    "workspace_policy": { "const": "disposable_temp_workspace_only" },
+    "formal_repository_used_as_live_target": { "const": false },
+    "smoke_policy": { "type": "string", "minLength": 1 },
+    "independent_os_validator": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "issue_count", "files", "manifest_sha256", "readme_sha256"],
+      "properties": {
+        "status": { "const": "PASS" },
+        "issue_count": { "const": 0 },
+        "files": { "type": "array", "minItems": 2, "items": { "type": "string", "minLength": 1 } },
+        "manifest_sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+        "readme_sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" }
+      }
+    },
+    "executors": {
+      "type": "array",
+      "minItems": 3,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["executor_id", "probe", "attempted_bounded_smoke", "live_invocation", "outcome", "classification", "external_state", "os_receipt_terminal_state", "os_validation", "timeout_cancel_behavior"],
+        "properties": {
+          "executor_id": { "enum": ["external.openclaw", "external.hermes", "external.codex"] },
+          "probe": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["family", "observed_version", "help_sha256", "transport_kind", "availability", "health_status", "capability_tokens", "structured_output_support", "progress_support", "cancel_support", "workspace_semantics"],
+            "properties": {
+              "family": { "type": "string", "minLength": 1 },
+              "observed_version": { "type": "string", "minLength": 1 },
+              "help_sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+              "transport_kind": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } },
+              "availability": { "const": "AVAILABLE" },
+              "health_status": { "const": "HEALTHY" },
+              "capability_tokens": { "type": "array", "items": { "type": "string" } },
+              "structured_output_support": { "type": "boolean" },
+              "progress_support": { "type": "boolean" },
+              "cancel_support": { "const": false },
+              "workspace_semantics": { "type": "string", "minLength": 1 }
+            }
+          },
+          "attempted_bounded_smoke": { "type": "boolean" },
+          "live_invocation": { "const": "SKIPPED_UNSAFE_OR_UNAVAILABLE" },
+          "outcome": { "const": "SKIPPED_UNSAFE_OR_UNAVAILABLE" },
+          "classification": { "enum": ["UNSAFE_SURFACE", "TIMEOUT", "UNAVAILABLE"] },
+          "task_envelope_digest": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+          "task_envelope_translation": { "type": "string", "minLength": 1 },
+          "external_state": { "const": "NOT_OBSERVED" },
+          "skip_reason": { "type": "string", "minLength": 1 },
+          "terminal_translation": { "type": "string", "minLength": 1 },
+          "os_receipt_terminal_state": { "const": "NOT_EMITTED" },
+          "os_validation": { "type": "string", "minLength": 1 },
+          "timeout_cancel_behavior": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "claim_ceiling": { "type": "string", "minLength": 1 }
+  }
+}

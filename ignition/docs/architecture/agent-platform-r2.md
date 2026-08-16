@@ -132,8 +132,9 @@ persona or consciousness claims, or a second physical Pack migration.
 
 联邦的完整边界、适配器职责、Reference freeze、Future executor 插槽和维护者
 冷启动入口见 [External Agent Federation R1](./external-agent-federation-r1.md)。
-Step 10 的 disposable Pilot A/B/C 比较 protocol compatibility，不比较智能，
-且 live external inference 保持 `NOT_RUN_LIVE_EXTERNAL_INVOCATION`。传播契约把
+Step 09 的 bounded smoke receipt 只记录 fresh CLI probe、OpenClaw skip 和
+Hermes/Codex timeout；没有可接受 live completion。Step 10 的 disposable Pilot
+A/B/C 比较 protocol compatibility，不比较智能。传播契约把
 `agent_federation/` 单独归入 `agent_platform.federation`，禁止它直接生成
 Knowledge census、Fire Seeds、Writing publication、Human front-door 或 Pack
 registry；这些表面仍由各自 canonical source 管理。

@@ -27,12 +27,12 @@ AGI、生产安全、现实因果、外部有效性或 Owner acceptance 证明�
 - 从 canonical registries 保留来源、命题、形式对象、论证、证据、证明义务、反例、验证、迁移和人类结果的独立谱系；工程闭合不升级内容真值。
 - 通过 `current-facts.json` 确定性投影同步可复算事实；本页不手抄第二份数量表。[Current Facts](../data/architecture/current-facts.json) 与[人读 facts block](./architecture/current-facts.md) 是窄范围派生入口。
 - 以唯一 registry/topology/layout 生成系统图；图是可点击的仓库导航与依赖投影，不是现实因果图、严格同构或完备性证明。
-- 只在 disposable local fixture 上观察过 R2/Federation conformance；真实外部 invocation 的当前 ceiling 仍是 `NOT_RUN_LIVE_EXTERNAL_INVOCATION`。
+- R2/Federation conformance 仍以 disposable local fixture 为主；Step 09 只做了 fresh public CLI probe 和安全、有界的临时 workspace smoke 尝试，OpenClaw 明确 `SKIPPED_UNSAFE_OR_UNAVAILABLE`，Hermes/Codex 因 hard timeout 同样未产生可接受 completion。详细记录见 [`external-conformance-smoke-r1.json`](../data/operations/iterations/123/external-conformance-smoke-r1.json)；当前 live provider/inference ceiling 仍未建立。
 
 ## 当前限制与开放义务
 
 - 当前 closure summaries 可推导出 function identity cards `5,603`、non-function claims `15,899`；显式 quarantine/pending 分别为 `4,804` 和 `4,615`。这些数字来自 current-facts projection，历史任务数字仍只在历史语境出现。
-- live provider/inference、daemon、多 Agent 并发、向量记忆、网络/浏览、外部 Git mutation、物理 Pack 拆分和真实外部效果仍未被本仓库证明；OpenClaw、Hermes、Codex 后续可在安全边界内 `SKIPPED` 或做有界 smoke，但不能为绿灯扩大权限。
+- live provider/inference、daemon、多 Agent 并发、向量记忆、网络/浏览、外部 Git mutation、物理 Pack 拆分和真实外部效果仍未被本仓库证明；Step 09 的显式 skip/timeout 不能升级为 live success，后续任何 smoke 仍不能为绿灯扩大权限。
 - 大量资产仍缺精确定义、类型、量纲、证明、反例、外部来源、数据或复现；MCF、PSD、ARN、Function OS 与现实使用效用仍需独立证据和失败条件。
 - 四力统一、量子引力、暗物质、暗能量、宇宙常数和测量问题没有被本项目解决；任何模型失败、相似性、工程完成或 Agent 共识都不能推出普遍 no-go theorem。
 - 自动审计、系统图、Pack pilot、CI、fresh clone 和 receipt 都是仓库证据；它们不等于专家裁决、同行评审、外部真值、生产安全、Owner acceptance 或 epistemic acceptance。

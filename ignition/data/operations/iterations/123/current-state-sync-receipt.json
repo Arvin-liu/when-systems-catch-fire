@@ -6,14 +6,14 @@
   "identity_epoch": "agent-platform-federation-r1",
   "current_iteration_boundary": 122,
   "surface_decisions": [
-    {"surface_id":"homepage-identity","path":".github/README.md","decision":"CHANGE","reason":"Remove duplicate identity bullet and state the bounded OS/driver/executor relationship with a facts pointer.","evidence":"Step 03 current-state repair; current-facts projection"},
-    {"surface_id":"project-current-state","path":"ignition/docs/project-current-state.md","decision":"CHANGE","reason":"Put the Current system summary first, replace stale Current counts with current-facts references and retain task history as historical context.","evidence":"Step 03 current-state repair; current-facts.json"},
+    {"surface_id":"homepage-identity","path":".github/README.md","decision":"CHANGE","reason":"Remove duplicate identity bullet and state the bounded OS/driver/executor relationship with a facts pointer.","evidence":"Step 03 current-state repair; current-facts projection; Step 09 bounded smoke receipt"},
+    {"surface_id":"project-current-state","path":"ignition/docs/project-current-state.md","decision":"CHANGE","reason":"Put the Current system summary first, replace stale Current counts with current-facts references and retain task history as historical context.","evidence":"Step 03 current-state repair; current-facts.json; Step 09 explicit skip/timeout receipt"},
     {"surface_id":"ai-cold-start","path":"ignition/AI-START-HERE.md","decision":"CHANGE","reason":"Point cold start at the identity contract/facts and state the OS/driver versus replaceable executor boundary.","evidence":"Step 03 AI identity synchronization"},
     {"surface_id":"ai-agents-handoff","path":"ignition/AI-HANDOFF.md","decision":"CHANGE","reason":"Replace the stale pre-Task-122 lifecycle framing with the formal baseline plus Task 123 branch boundary and facts pointer.","evidence":"Step 03 AI handoff synchronization"},
     {"surface_id":"architecture","path":"ignition/ARCHITECTURE.md","decision":"CHANGE","reason":"Synchronize the formal architecture page with the current OS/driver, Federation, Domain Pack and 0.8.0 map identity while retaining claim ceilings.","evidence":"Step 07 current identity wording; current-system-identity.json; current-facts.json"},
     {"surface_id":"machine-entry","path":"ignition/llms.txt","decision":"CHANGE","reason":"Update machine current-version wording to the Task 122 formal baseline and link the deterministic current-facts projection.","evidence":"Step 03 machine identity synchronization"},
     {"surface_id":"system-map-doc","path":"ignition/docs/architecture/interactive-system-map.md","decision":"CHANGE","reason":"Document the 0.8.0 semantic trunk, central OS spine, external executor boundary and Domain/Skill Pack separation in the canonical map reading guide.","evidence":"Step 05 semantic-trunk-r1 route; map version 0.8.0"},
-    {"surface_id":"federation-doc","path":"ignition/docs/architecture/external-agent-federation-r1.md","decision":"CHANGE","reason":"Align the Federation explanation with the current identity contract, 0.8.0 map, integrate-first policy and explicit SKIPPED live boundary.","evidence":"Step 07 Federation/current-facts synchronization; Task 122 contract remains unchanged"},
+    {"surface_id":"federation-doc","path":"ignition/docs/architecture/external-agent-federation-r1.md","decision":"CHANGE","reason":"Align the Federation explanation with the current identity contract, 0.8.0 map, integrate-first policy and explicit bounded smoke skip boundary.","evidence":"Step 07 Federation/current-facts synchronization; Step 09 external-conformance-smoke-r1.json; Task 122 contract remains unchanged"},
     {"surface_id":"system-map-json","path":"ignition/data/architecture/interactive-system-map.json","decision":"CHANGE","reason":"Regenerate the sole derived map after replacing row-max placement with deterministic relation-ranked independent column packing.","evidence":"Step 04 compact-layout generator test; SYSTEM_MAP_DERIVED_OK nodes=70 edges=77"},
     {"surface_id":"state-changelog","path":"ignition/STATE-CHANGELOG.md","decision":"CHANGE","reason":"Append a clearly marked Task 123 branch-projection recovery entry; the exact formal main delta remains reserved for Step 12 closure.","evidence":"IGNITION-20260816-123 Step 07 task-branch projection; formal main remains d60ec868"}
   ],
@@ -69,7 +69,9 @@
     "ignition/schemas/agent-federation/executor-component-ownership-r1.schema.json",
     "ignition/data/operations/iterations/123/fixtures/reference-executor-freeze-fixtures-r1.json",
     "ignition/tools/validate_federation_ownership.py",
-    "ignition/tests/test_federation_ownership.py"
+    "ignition/tests/test_federation_ownership.py",
+    "ignition/data/operations/iterations/123/external-conformance-smoke-r1.json",
+    "ignition/schemas/operations/external-conformance-smoke-r1.schema.json"
   ],
   "identity_contract_changed": true,
   "surface_sync_complete": false,

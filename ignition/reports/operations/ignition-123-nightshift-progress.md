@@ -278,3 +278,40 @@ only；不推导 external truth、Owner acceptance、production safety 或 epist
 
 下一步：在不安装、不改 auth、不触碰真实消息或正式仓库的边界内，对 OpenClaw、Hermes、Codex
 做最多一次短真实 conformance smoke，无法安全调用则保留明确 `SKIPPED`。
+
+## Step 09 — COMPLETE
+
+### Fresh public surfaces and bounded smoke
+
+没有沿用 Task 122 的缓存版本，重新探测了本机 public CLI surface：OpenClaw
+`2026.7.1-2 (0790d9f)`、Hermes `v0.20.0 (2026.8.3)`、Codex `0.144.4`；三者
+probe 都是 `HEALTHY`，help SHA-256 与 bounded machine receipt 一并记录在
+[`external-conformance-smoke-r1.json`](../../data/operations/iterations/123/external-conformance-smoke-r1.json)。
+
+OpenClaw 的 agent CLI 没有观察到 disposable workspace binding；默认 Gateway 可能
+触碰外部 session/channel state，`--local` 又需要无法由观察面隔离的 provider credentials，
+所以没有 dispatch，明确记录 `SKIPPED_UNSAFE_OR_UNAVAILABLE / UNSAFE_SURFACE`。
+
+Hermes 和 Codex 各做了一次短的真实只读尝试：Hermes 使用 `--safe-mode`、
+`--ignore-user-config`、`--ignore-rules` 的 text one-shot，Codex 使用 ephemeral、
+config/rules isolation、`read-only` sandbox 和临时本地 git workspace。两者都在 hard
+timeout 内没有产生可接受 completion，均记录为
+`SKIPPED_UNSAFE_OR_UNAVAILABLE / TIMEOUT`；没有 retry、安装、升级、配置/auth 修改或
+外部 effect。
+
+### OS validation boundary
+
+同一 disposable fixture 由本地 OS validator 独立复算，2 个文件、manifest/link 检查
+`PASS`、0 个 issue。任何 vendor completion 都不会直接变成 OS terminal；本步没有保留
+raw prompt、token、credential、private session database、provider telemetry 或完整
+vendor output，只保留 version/help digest、bounded outcome、错误分类和 validator
+摘要。因本步更新了 `project-current-state.md`，3 个 Human Surface materiality source
+fingerprint 已按 canonical bytes 刷新，`current-facts.json`/Markdown 已重建并通过
+determinism check；Human Surface contract、front door 和 visibility 也全部 `PASS`。
+Step 09 的 claim ceiling 仍是 fresh public probe 与 bounded repository-local
+evidence，不是 live provider success、生产可靠性、外部有效性或 epistemic acceptance。
+
+正式 `main` 仍为 `d60ec8687fb1cc6b972e831a8f0dcd348ba0e83e`。
+
+下一步：用点火 OS 做 routing、validation、failover 与 handoff driver，运行一个
+disposable cross-executor episode，并保留 external completion 与 OS acceptance 的分离。

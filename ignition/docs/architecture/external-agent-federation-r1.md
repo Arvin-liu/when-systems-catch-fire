@@ -56,7 +56,8 @@ OpenClaw 适配器只调用可观察的 public CLI boundary，输入为临时 UT
 输出为经过 redaction 的 public response 与 pointer-only session。它不接管
 Gateway、channel、私有数据库、daemon、长期会话或配置/secret；未声明的
 progress、cancel、resume 和外部 effect 一律 fail closed。当前 R1 只记录
-本地 help/version observation，不能推出 live provider 或生产可用性。
+本地 help/version observation；Step 09 的 fresh probe 与 bounded smoke receipt
+另行记录，不能推出 live provider 或生产可用性。
 
 ### Hermes adapter boundary
 
@@ -110,6 +111,22 @@ test-support paths are explicit, vendor capability upgrades must land in
 adapter mapping, and adapters are statically rejected if they grow a runtime
 loop. The CI gate also runs negative fixtures for browser, daemon, remote Git,
 test-helper promotion and kernel-contract bypass; each must remain `FAIL`.
+
+## Step 09 bounded real smoke
+
+Step 09 re-probed the installed public CLI surfaces without trusting the Task 122
+snapshot: OpenClaw `2026.7.1-2`, Hermes `v0.20.0 (2026.8.3)` and Codex
+`0.144.4`. The machine receipt is
+[`external-conformance-smoke-r1.json`](../../data/operations/iterations/123/external-conformance-smoke-r1.json).
+
+OpenClaw was not dispatched because its observed agent surface has no disposable
+workspace binding and the default Gateway could touch external session/channel
+state. Hermes and Codex each received one short read-only task attempt from a
+disposable local workspace; both hit the hard timeout and are recorded as
+`SKIPPED_UNSAFE_OR_UNAVAILABLE` with `TIMEOUT`, not as live success. The
+independent OS fixture validator passed, but no vendor completion was promoted
+to an OS terminal state; prompts, tokens, credentials, provider telemetry and
+private session state were not retained.
 
 ## Disposable pilot boundary
 
