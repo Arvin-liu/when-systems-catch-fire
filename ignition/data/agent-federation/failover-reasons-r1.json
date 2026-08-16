@@ -1,0 +1,14 @@
+{
+  "schema_version": "failover-reasons-r1",
+  "reasons": [
+    "EXECUTOR_UNAVAILABLE",
+    "EXECUTOR_TIMEOUT",
+    "EXECUTOR_CRASH",
+    "EXECUTOR_OUTPUT_INVALID",
+    "EXTERNAL_APPROVAL_BLOCKED",
+    "CAPABILITY_MISMATCH",
+    "RECEIPT_UNVERIFIED"
+  ],
+  "automatic_failover_rule": "ONLY_READ_ONLY_OR_VALIDATED_OR_REPLAYABLE_SIDE_EFFECTS",
+  "unknown_side_effect_rule": "REQUIRES_RECONCILIATION"
+}

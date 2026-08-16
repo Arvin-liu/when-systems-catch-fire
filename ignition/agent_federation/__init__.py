@@ -30,6 +30,18 @@ from .router import (
     RoutingRequest,
     load_routing_policy,
 )
+from .approval_handoff import (
+    ApprovalBridge,
+    ApprovalBridgeDecision,
+    ApprovalHandoffError,
+    ExternalApprovalObservation,
+    FailoverContext,
+    FailoverDecision,
+    HandoffTakeoverDecision,
+    accept_handoff,
+    build_handoff_bundle,
+    decide_failover,
+)
 
 __all__ = [
     "ApprovalPolicy", "ArtifactRef", "BudgetContract", "ExecutorDescriptor", "ExecutorHealth",
@@ -38,4 +50,7 @@ __all__ = [
     "HandoffPolicy", "OutputContract", "UnsupportedExecutorOperation", "ValidationContract", "canonical_digest",
     "CandidateEvaluation", "ExecutorRoutingProfile", "FederationRouter", "RoutingDecision", "RoutingError",
     "RoutingPolicy", "RoutingRequest", "load_routing_policy",
+    "ApprovalBridge", "ApprovalBridgeDecision", "ApprovalHandoffError", "ExternalApprovalObservation",
+    "FailoverContext", "FailoverDecision", "HandoffTakeoverDecision", "accept_handoff",
+    "build_handoff_bundle", "decide_failover",
 ]

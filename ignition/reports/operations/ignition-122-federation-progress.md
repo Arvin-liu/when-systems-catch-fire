@@ -166,6 +166,28 @@ external truth, Owner acceptance, production safety or epistemic acceptance.
   handoff/failover and Supervisor execution integration remain the next
   governed boundaries.
 
+## Step 08 — COMPLETE
+
+- Result: `STEP_08_APPROVAL_HANDOFF_FAILOVER_COMPLETE`.
+- Boundary: `agent_federation/approval_handoff.py`; failover taxonomy:
+  `data/agent-federation/failover-reasons-r1.json`.
+- `ApprovalBridge` applies the strict OS/external intersection: OS `DENY`
+  cannot be overridden; Owner-required policies wait for Owner; external
+  approval remains a typed non-authoritative gate.
+- `build_handoff_bundle` copies only public goal/work/acceptance, validated
+  receipt actions, artifact hashes, capability/workspace refs, operational
+  memory capsule refs and pointer-only sessions. `accept_handoff` requires a
+  different target to re-observe the workspace and verify the source receipt.
+- Failover is automatic only for read-only tasks or validated/replayable side
+  effects with a verified receipt and a target that already satisfies the same
+  capability ceiling. Unknown side effects and unverified receipts become
+  `REQUIRES_RECONCILIATION`.
+- Gates: approval, handoff, takeover, capability and failover tests plus the
+  previous router/adapter/core set = `109/109 PASS`; inventory, ownership and
+  runtime-boundary validators = `PASS`.
+- Residual: cross-executor progress/memory deduplication and disposable
+  federation pilots remain for Steps 09–10.
+
 | Step | Status | Commit | Remote | Targeted gate |
 | --- | --- | --- | --- | --- |
 | 00 | COMPLETE | `05ac54db` | `05ac54db` | inventory schema + 121 core = PASS |
@@ -175,8 +197,8 @@ external truth, Owner acceptance, production safety or epistemic acceptance.
 | 04 | COMPLETE | `fa0a6890` | `fa0a6890` | OpenClaw adapter + 82 tests = PASS |
 | 05 | COMPLETE | `1e5d3590` | `1e5d3590` | Hermes adapter + 88 tests = PASS |
 | 06 | COMPLETE | `74796f6a` | `74796f6a` | Codex adapter + 94 tests = PASS |
-| 07 | COMPLETE | pending self commit binding | pending `ls-remote` binding | router + 101 tests = PASS |
-| 08 | PENDING | — | — | — |
+| 07 | COMPLETE | `1ac6880e` | `1ac6880e` | router + 101 tests = PASS |
+| 08 | COMPLETE | pending self commit binding | pending `ls-remote` binding | approval/handoff/failover + 109 tests = PASS |
 | 09 | PENDING | — | — | — |
 | 10 | PENDING | — | — | — |
 | 11 | PENDING | — | — | — |
