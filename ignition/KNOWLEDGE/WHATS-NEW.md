@@ -4,6 +4,222 @@
 
 ## 2026
 
+<a id="change-src-hr-d7c4ca0bba65194f"></a>
+### 2026-08-17 · IGNITION-20260816-123 架构真相同步 R1 夜班进度
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** 任务分支：codex/ignition-123-current-state-sync-compact-map-federation-r2-20260816 正式基线：d60ec8687fb1cc6b972e831a8f0dcd348ba0e83e 控制面：1111 origin/relay/current = 7a1cfff8
+- **来源：** [ignition-123-nightshift-progress.md](../reports/operations/ignition-123-nightshift-progress.md)
+- **资产卡：** [HR-D7C4CA0BBA65194F](./ASSET-CARDS.md#asset-hr-d7c4ca0bba65194f)
+
+<a id="change-src-hr-641da70bef452b2a"></a>
+### 2026-08-17 · Current Facts（机器推导事实）
+
+- **类型：** `MODEL_OR_ARCHITECTURE`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** Source authority: the JSON projection records SHA-256 fingerprints for the canonical registries, manifests, topology, pack declarations, federation inventory and generator/schema inputs. Human prose may explain these facts but is not a second numeric authority. Claim ceiling: Deterministic reposi…
+- **来源：** [current-facts.md](../docs/architecture/current-facts.md)
+- **资产卡：** [HR-641DA70BEF452B2A](./ASSET-CARDS.md#asset-hr-641da70bef452b2a)
+
+<a id="change-src-hr-545b33bce6b635d1"></a>
+### 2026-08-17 · CURRENTSTATESYNCINVARIANT
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** CURRENTSTATESYNCINVARIANT makes the current architecture identity and its current-state synchronization obligations machine-checkable. It closes the failure mode in which an architecture iteration changes the canonical machine projection while a Current State, home page, AI handoff or map still d…
+- **来源：** [current-state-sync-invariant.md](../docs/governance/current-state-sync-invariant.md)
+- **资产卡：** [HR-545B33BCE6B635D1](./ASSET-CARDS.md#asset-hr-545b33bce6b635d1)
+
+<a id="change-src-hr-3ded720d598ae407"></a>
+### 2026-08-17 · Current-State Drift Audit R1 — IGNITION-20260816-123 Step 00
+
+- **类型：** `AUDIT_OR_ADJUDICATION`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** 基线：d60ec8687fb1cc6b972e831a8f0dcd348ba0e83e
+- **来源：** [current-state-drift-audit-r1.md](../reports/architecture/current-state-drift-audit-r1.md)
+- **资产卡：** [HR-3DED720D598AE407](./ASSET-CARDS.md#asset-hr-3ded720d598ae407)
+
+<a id="change-src-hr-e7e1eaa5ed0b5e25"></a>
+### 2026-08-16 · Agent Platform R2 gap audit — IGNITION-20260816-121 Step 00
+
+- **类型：** `AUDIT_OR_ADJUDICATION`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** This is a repository-scoped baseline audit performed from a fresh worktree at 2becca3ffd93d6ca1e147a75c159e476f4686f5d. It records engineering structure, deterministic projections, and open implementation work. It does not establish external validity, general intelligence, production readiness, O…
+- **来源：** [agent-platform-r2-gap-audit.md](../reports/architecture/agent-platform-r2-gap-audit.md)
+- **资产卡：** [HR-E7E1EAA5ED0B5E25](./ASSET-CARDS.md#asset-hr-e7e1eaa5ed0b5e25)
+
+<a id="change-src-hr-d7cc969a8b1b7ce4"></a>
+### 2026-08-16 · External Agent Federation R1 — ownership boundary
+
+- **类型：** `MODEL_OR_ARCHITECTURE`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** 点火是 OS，不是另一个 OpenClaw、Hermes 或 Codex。它维护目标、价值、 任务契约、权限、长期状态、Pack、记忆、验证、handoff、provenance 和结果 吸收；外部智能体是可替换执行器。适配器只翻译可观察边界，不复制外部 Agent 的运行时。
+- **来源：** [external-agent-federation-r1.md](../docs/architecture/external-agent-federation-r1.md)
+- **资产卡：** [HR-D7CC969A8B1B7CE4](./ASSET-CARDS.md#asset-hr-d7cc969a8b1b7ce4)
+
+<a id="change-src-hr-c893a4870d083875"></a>
+### 2026-08-16 · Agent Platform R2 — 点火工程脊柱与边界
+
+- **类型：** `MODEL_OR_ARCHITECTURE`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** 本页是 R2 的人类架构说明。它回答“这套工程接口怎样分工、为什么存在、怎样 找到机器证据、不能推出什么、还缺什么”；机器契约仍以 registry、schema、 manifest、测试和 receipt 为准。本页不新增 L7，不替代 Foundation、claim/evidence registry、Value Charter、Results Book 或唯一完整系统图。
+- **来源：** [agent-platform-r2.md](../docs/architecture/agent-platform-r2.md)
+- **资产卡：** [HR-C893A4870D083875](./ASSET-CARDS.md#asset-hr-c893a4870d083875)
+
+<a id="change-src-hr-97dacc897de7d3d3"></a>
+### 2026-08-16 · IGNITION-20260816-121 night-shift progress
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Experience validation, and determinism checks: PASS.
+- **来源：** [ignition-121-nightshift-progress.md](../reports/operations/ignition-121-nightshift-progress.md)
+- **资产卡：** [HR-97DACC897DE7D3D3](./ASSET-CARDS.md#asset-hr-97dacc897de7d3d3)
+
+<a id="change-src-hr-8b858103d6938d81"></a>
+### 2026-08-16 · Agent Runtime R1：真实行动层
+
+- **类型：** `MODEL_OR_ARCHITECTURE`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** 本页记录任务 120 的当前工程边界。R0 的 generic kernel、typed loop、checkpoint/resume 和非知识 pilot 继续保留为历史与回归基线；R1 只增加一个受声明 workspace policy 约束的本地执行面。
+- **来源：** [agent-runtime-r1.md](../docs/architecture/agent-runtime-r1.md)
+- **资产卡：** [HR-8B858103D6938D81](./ASSET-CARDS.md#asset-hr-8b858103d6938d81)
+
+<a id="change-src-hr-7dd95da5201b6ec1"></a>
+### 2026-08-16 · Federation Router R1
+
+- **类型：** `MODEL_OR_ARCHITECTURE`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** FederationRouter is a vendor-neutral selection boundary. It evaluates observable ExecutorDescriptor records against a data policy and an OS RoutingRequest in this order:
+- **来源：** [federation-router-r1.md](../docs/architecture/federation-router-r1.md)
+- **资产卡：** [HR-7DD95DA5201B6EC1](./ASSET-CARDS.md#asset-hr-7dd95da5201b6ec1)
+
+<a id="change-src-hr-7b64b7be18a79532"></a>
+### 2026-08-16 · Hermes Adapter R1
+
+- **类型：** `MODEL_OR_ARCHITECTURE`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** Hermes Agent's observed stable non-interactive surface is -z/--oneshot PROMPT. It prints only a final text response; it is not a structured event stream. The adapter therefore exposes a deliberately degraded, read-only bridge and declares only repo.read:
+- **来源：** [hermes-adapter-r1.md](../docs/architecture/hermes-adapter-r1.md)
+- **资产卡：** [HR-7B64B7BE18A79532](./ASSET-CARDS.md#asset-hr-7b64b7be18a79532)
+
+<a id="change-src-hr-6e03f66c845de70f"></a>
+### 2026-08-16 · IGNITION-20260816-122 Federation R1 Progress
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Task branch: codex/ignition-122-external-agent-federation-r1-20260816 Formal baseline: 277ea6c17883d9fe7661a92175a02c3cdfabac9d Control pointer: 1111 origin/relay/current = bb0b2f9ff3d32906ff5aa6fd0642ffb2bee54eba
+- **来源：** [ignition-122-federation-progress.md](../reports/operations/ignition-122-federation-progress.md)
+- **资产卡：** [HR-6E03F66C845DE70F](./ASSET-CARDS.md#asset-hr-6e03f66c845de70f)
+
+<a id="change-src-hr-575fd55d43af78d9"></a>
+### 2026-08-16 · External Agent Federation Core R1
+
+- **类型：** `MODEL_OR_ARCHITECTURE`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** The federation core is a vendor-neutral socket between the Ignition OS and an external executor. ExecutorDescriptor describes observable compatibility; FederatedTaskEnvelope carries OS-owned goal, policy, workspace, validation, budget and handoff rules; FederatedProgressEvent carries public order…
+- **来源：** [federation-core-r1.md](../docs/architecture/federation-core-r1.md)
+- **资产卡：** [HR-575FD55D43AF78D9](./ASSET-CARDS.md#asset-hr-575fd55d43af78d9)
+
+<a id="change-src-hr-44878ef802b3ea38"></a>
+### 2026-08-16 · Codex Adapter R1
+
+- **类型：** `MODEL_OR_ARCHITECTURE`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** Codex is integrated as an external coding executor through its observed public codex exec --json JSONL surface. The adapter assembles literal argv with:
+- **来源：** [codex-adapter-r1.md](../docs/architecture/codex-adapter-r1.md)
+- **资产卡：** [HR-44878EF802B3EA38](./ASSET-CARDS.md#asset-hr-44878ef802b3ea38)
+
+<a id="change-src-hr-37a88e962a6c7af7"></a>
+### 2026-08-16 · Cross-Executor Convergence R1
+
+- **类型：** `MODEL_OR_ARCHITECTURE`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** ProgressLedger sorts public FederatedProgressEvent records by task, sequence, executor and stable event key. Duplicate keys are ignored; late events are retained for audit but cannot regress the canonical highest-sequence view. A late terminal event is explicitly classified as LATETERMINAL, and p…
+- **来源：** [federation-convergence-r1.md](../docs/architecture/federation-convergence-r1.md)
+- **资产卡：** [HR-37A88E962A6C7AF7](./ASSET-CARDS.md#asset-hr-37a88e962a6c7af7)
+
+<a id="change-src-hr-34dde4fff53a582c"></a>
+### 2026-08-16 · Adapter SDK and Conformance Harness R1
+
+- **类型：** `MODEL_OR_ARCHITECTURE`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** The adapter SDK is intentionally thin. It provides safe argv subprocess execution (shell=False, allowlist, timeout and output cap), executable and version discovery, JSON/JSONL parsing, redaction, capability mapping, pointer-only session references, process cancellation and a public receipt build…
+- **来源：** [adapter-sdk-r1.md](../docs/architecture/adapter-sdk-r1.md)
+- **资产卡：** [HR-34DDE4FFF53A582C](./ASSET-CARDS.md#asset-hr-34dde4fff53a582c)
+
+<a id="change-src-hr-3078ad77a2ea0d78"></a>
+### 2026-08-16 · OpenClaw Adapter R1
+
+- **类型：** `MODEL_OR_ARCHITECTURE`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** OpenClawAdapter is a narrow External Agent Federation boundary over the observed public openclaw agent CLI. The Step 00 probe recorded JSON output, UTF-8 message-file input, session-key/session-id pointers, and a bounded timeout. The adapter therefore uses:
+- **来源：** [openclaw-adapter-r1.md](../docs/architecture/openclaw-adapter-r1.md)
+- **资产卡：** [HR-3078AD77A2EA0D78](./ASSET-CARDS.md#asset-hr-3078ad77a2ea0d78)
+
+<a id="change-src-hr-3011881d0fe50e03"></a>
+### 2026-08-16 · External Agent Federation R1 — disposable pilots
+
+- **类型：** `MODEL_OR_ARCHITECTURE`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** The Step 10 pilots compare protocol compatibility, not intelligence. Pilot A uses one repo.read envelope against the existing bounded Reference Executor view and every adapter marked AVAILABLE by the Step 00 inventory. The fixture is a disposable local directory containing a deliberately incorrec…
+- **来源：** [federation-pilots-r1.md](../docs/architecture/federation-pilots-r1.md)
+- **资产卡：** [HR-3011881D0FE50E03](./ASSET-CARDS.md#asset-hr-3011881d0fe50e03)
+
+<a id="change-src-hr-004ccfbca43a4293"></a>
+### 2026-08-16 · External Agent Interface Audit R1
+
+- **类型：** `AUDIT_OR_ADJUDICATION`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Task: IGNITION-20260816-122 Audit mode: read-only inventory, local help, and official-source inspection Accessed: 2026-08-16 15:01 Asia/Shanghai Formal baseline: 277ea6c17883d9fe7661a92175a02c3cdfabac9d
+- **来源：** [external-agent-interface-audit-r1.md](../reports/architecture/external-agent-interface-audit-r1.md)
+- **资产卡：** [HR-004CCFBCA43A4293](./ASSET-CARDS.md#asset-hr-004ccfbca43a4293)
+
+<a id="change-src-hr-c976a8a501c0f94e"></a>
+### 2026-08-15 · Task 115 Runtime Prior-Art Adoption Review R0
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** 审计对象是 Task 115 的公开 Draft prior art，不是当前实现的 merge source。PR 195 Round 1: executor-neutral action/observation boundary schemas (Draft) 仍是 OPEN/Draft，基于旧 main；本轮没有 merge、rebase、cherry-pick 或关闭它。
+- **来源：** [task115-runtime-prior-art-adoption-r0.md](../reports/architecture/task115-runtime-prior-art-adoption-r0.md)
+- **资产卡：** [HR-C976A8A501C0F94E](./ASSET-CARDS.md#asset-hr-c976a8a501c0f94e)
+
+<a id="change-src-hr-9099adc0ce6c7e7c"></a>
+### 2026-08-15 · IGNITION-20260815-120 typed change-propagation impact report
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** 原文件保存该项结果的完整问题、过程与边界。
+- **来源：** [IGNITION-20260815-120-change-propagation-impact.md](../reports/operations/IGNITION-20260815-120-change-propagation-impact.md)
+- **资产卡：** [HR-9099ADC0CE6C7E7C](./ASSET-CARDS.md#asset-hr-9099adc0ce6c7e7c)
+
+<a id="change-src-hr-76c6925c9fcdf852"></a>
+### 2026-08-15 · Human Surface 编辑契约
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `CURRENT_SCOPED_SOURCE`
+- **变化：** 状态：CURRENTWITHOPENOBLIGATIONS · 版本：1.0.0 · 写作方法：之元写作法 0.5.0
+- **来源：** [human-surface-editorial-contract.md](../docs/governance/human-surface-editorial-contract.md)
+- **资产卡：** [HR-76C6925C9FCDF852](./ASSET-CARDS.md#asset-hr-76c6925c9fcdf852)
+
+<a id="change-src-hr-3b9e5023cfd45c90"></a>
+### 2026-08-15 · Agent Runtime R0：环境、工具与 Pack 接口
+
+- **类型：** `MODEL_OR_ARCHITECTURE`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** Runtime R0 是一个离线可测试的编排器。EnvironmentObservation 描述本次运行可见的环境；ActionRequest 声明所需 capability、读取、写入、命令、网络和批准；Kernel 在 Act 之前做 fail-closed 授权；Executor 只返回带 run/action/executor lineage 的 ActionObservation；Validator 只返回带 lineage 的 ValidationResult。
+- **来源：** [agent-runtime-r0.md](../docs/architecture/agent-runtime-r0.md)
+- **资产卡：** [HR-3B9E5023CFD45C90](./ASSET-CARDS.md#asset-hr-3b9e5023cfd45c90)
+
+<a id="change-src-hr-054b4581c405f948"></a>
+### 2026-08-15 · 点火从知识治理系统向智能体运行时抽层
+
+- **类型：** `MODEL_OR_ARCHITECTURE`
+- **状态：** `CURRENT_SCOPED_SOURCE`
+- **变化：** 任务 IGNITION-20260815-119 的 R0 完成了领域切割和依赖解耦；任务 121 的 R2 在这个 generic boundary 上接入 Pack、Memory、Supervisor、Gateway、Profile 和 真实离线维护 pilot，仍不做全仓物理大搬家。唯一可点击总架构图继续由 registry、 typed topology 和 layout 生成；本页是 R0 基础边界的 Human Surface，机器边界以 agentization-boundary-r0.json 和其 schema 为准，R2 总说明见 agent-platform-r2.md。
+- **来源：** [agentization-boundary-r0.md](../docs/architecture/agentization-boundary-r0.md)
+- **资产卡：** [HR-054B4581C405F948](./ASSET-CARDS.md#asset-hr-054b4581c405f948)
+
 <a id="change-src-hr-ecc4e92db835c50c"></a>
 ### 2026-08-14 · REOS vNext LIGHT pilot R1 — public-safe synthesis
 
@@ -545,7 +761,7 @@
 
 - **类型：** `MODEL_OR_ARCHITECTURE`
 - **状态：** `HISTORICAL_OR_SUPERSEDED_SOURCE`
-- **变化：** 状态：0.5.0 Current registry-derived navigation projection；0.4.0 与更早版本为 Historical。
+- **变化：** 状态：0.8.0 Current registry-derived navigation projection；0.7.0、0.6.0、0.5.0、0.4.0 与更早版本为 Historical。
 - **来源：** [interactive-system-map.md](../docs/architecture/interactive-system-map.md)
 - **资产卡：** [HR-DAF1CB45CCD7B5B6](./ASSET-CARDS.md#asset-hr-daf1cb45ccd7b5b6)
 

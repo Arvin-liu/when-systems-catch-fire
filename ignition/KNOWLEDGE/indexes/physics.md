@@ -4,4 +4,4 @@
 
 索引按固定 500 条分片，避免单页过大而无法在 GitHub 渲染。分片连续覆盖本主题主归属资产，未按重要性删减。
 
-- [第 001 片](./physics/part-001.md)：1—482；"title": "Pointfire unifies the four fundamental forces / quantum gravity.", → （未物理删除——GAP002-08 被 104 外部研究生态多处引用）并移交 104 数据负责人（同层级数据修正，非降级）。
+- [第 001 片](./physics/part-001.md)：1—483；"title": "Pointfire unifies the four fundamental forces / quantum gravity.", → （未物理删除——GAP002-08 被 104 外部研究生态多处引用）并移交 104 数据负责人（同层级数据修正，非降级）。

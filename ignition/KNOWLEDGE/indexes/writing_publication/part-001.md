@@ -4,14 +4,14 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
-- ["title": "Current: iteration method 1.4.0 (Continuous Stage Snapshot Publication). Read data/operations/stage-snapshots.json and d",](../../../analysis/corpus-relation/article_cluster_candidates.json)
+- ["title": "Current: iteration method 1.4.0 \(Continuous Stage Snapshot Publication\). Read data/operations/stage-snapshots.json and d",](../../../analysis/corpus-relation/article_cluster_candidates.json)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-B6EAB69ADA37992F / "title": "Current: iteration method 1.4.0 (Continuous Stage Snapshot Publication). Read data/operations/stage-snapshots.json and d", / IMPLICIT-B6EAB69ADA37992F / IMPLICIT-C7AB78FAA93A6244
+  - 可搜索名称：IMPLICIT-B6EAB69ADA37992F / "title": "Current: iteration method 1.4.0 \(Continuous Stage Snapshot Publication\). Read data/operations/stage-snapshots.json and d", / IMPLICIT-B6EAB69ADA37992F / IMPLICIT-C7AB78FAA93A6244
   - 来源：`analysis/corpus-relation/article_cluster_candidates.json`
   - 依赖：—；被引用：—
-- ["title": "Current: iteration method 1.4.0 (Continuous Stage Snapshot Publication). Read data/operations/stage-snapshots.json and d",](../../../analysis/corpus-relation/corpus_relation_graph.json)
+- ["title": "Current: iteration method 1.4.0 \(Continuous Stage Snapshot Publication\). Read data/operations/stage-snapshots.json and d",](../../../analysis/corpus-relation/corpus_relation_graph.json)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-C7AB78FAA93A6244 / "title": "Current: iteration method 1.4.0 (Continuous Stage Snapshot Publication). Read data/operations/stage-snapshots.json and d", / IMPLICIT-C7AB78FAA93A6244 / IMPLICIT-B6EAB69ADA37992F
+  - 可搜索名称：IMPLICIT-C7AB78FAA93A6244 / "title": "Current: iteration method 1.4.0 \(Continuous Stage Snapshot Publication\). Read data/operations/stage-snapshots.json and d", / IMPLICIT-C7AB78FAA93A6244 / IMPLICIT-B6EAB69ADA37992F
   - 来源：`analysis/corpus-relation/corpus_relation_graph.json`
   - 依赖：—；被引用：—
 - ["title": "IGNITION-ITERATION-METHOD-1.4-CONTINUOUS-STAGE-SNAPSHOT-PUBLICATION-R1-20260726 typed change-propagation impact report",](../../../analysis/corpus-relation/corpus_relation_graph.json)
@@ -29,19 +29,19 @@
   - 可搜索名称：IMPLICIT-88D7E6316D5F3876 / # IGNITION-ITERATION-METHOD-1.4-CONTINUOUS-STAGE-SNAPSHOT-PUBLICATION-R1-20260726 typed change-propagation impact report / IMPLICIT-88D7E6316D5F3876
   - 来源：`reports/operations/IGNITION-ITERATION-METHOD-1.4-change-propagation-impact.md`
   - 依赖：—；被引用：—
-- [## nfc-6122e6f96efe210e — Current: iteration method 1.4.0 (Continuous Stage Snapshot Publication). Read data/operations/stage-snapshots.json and d](../../../analysis/corpus-relation/cluster_source_briefs/C007.md)
+- [## nfc-6122e6f96efe210e — Current: iteration method 1.4.0 \(Continuous Stage Snapshot Publication\). Read data/operations/stage-snapshots.json and d](../../../analysis/corpus-relation/cluster_source_briefs/C007.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-8ACF034FD195F618 / ## nfc-6122e6f96efe210e — Current: iteration method 1.4.0 (Continuous Stage Snapshot Publication). Read data/operations/stage-snapshots.json and d / IMPLICIT-8ACF034FD195F618 / IMPLICIT-B9D9DF87E733D634
+  - 可搜索名称：IMPLICIT-8ACF034FD195F618 / ## nfc-6122e6f96efe210e — Current: iteration method 1.4.0 \(Continuous Stage Snapshot Publication\). Read data/operations/stage-snapshots.json and d / IMPLICIT-8ACF034FD195F618 / IMPLICIT-B9D9DF87E733D634
   - 来源：`analysis/corpus-relation/cluster_source_briefs/C007.md`
   - 依赖：—；被引用：—
-- [## nfc-6122e6f96efe210e — Current: iteration method 1.4.0 (Continuous Stage Snapshot Publication). Read data/operations/stage-snapshots.json and d](../../../analysis/corpus-relation/cluster_source_briefs/C001.md)
+- [## nfc-6122e6f96efe210e — Current: iteration method 1.4.0 \(Continuous Stage Snapshot Publication\). Read data/operations/stage-snapshots.json and d](../../../analysis/corpus-relation/cluster_source_briefs/C001.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-B9D9DF87E733D634 / ## nfc-6122e6f96efe210e — Current: iteration method 1.4.0 (Continuous Stage Snapshot Publication). Read data/operations/stage-snapshots.json and d / IMPLICIT-B9D9DF87E733D634 / IMPLICIT-8ACF034FD195F618
+  - 可搜索名称：IMPLICIT-B9D9DF87E733D634 / ## nfc-6122e6f96efe210e — Current: iteration method 1.4.0 \(Continuous Stage Snapshot Publication\). Read data/operations/stage-snapshots.json and d / IMPLICIT-B9D9DF87E733D634 / IMPLICIT-8ACF034FD195F618
   - 来源：`analysis/corpus-relation/cluster_source_briefs/C001.md`
   - 依赖：—；被引用：—
-- [## nfc-6122e6f96efe210e — Current: iteration method 1.4.0 (Continuous Stage Snapshot Publication). Read data/operations/stage-snapshots.json and d](../../../analysis/corpus-relation/cluster_source_briefs/C004.md)
+- [## nfc-6122e6f96efe210e — Current: iteration method 1.4.0 \(Continuous Stage Snapshot Publication\). Read data/operations/stage-snapshots.json and d](../../../analysis/corpus-relation/cluster_source_briefs/C004.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-F5AEAA5901E518AE / ## nfc-6122e6f96efe210e — Current: iteration method 1.4.0 (Continuous Stage Snapshot Publication). Read data/operations/stage-snapshots.json and d / IMPLICIT-F5AEAA5901E518AE / IMPLICIT-8ACF034FD195F618
+  - 可搜索名称：IMPLICIT-F5AEAA5901E518AE / ## nfc-6122e6f96efe210e — Current: iteration method 1.4.0 \(Continuous Stage Snapshot Publication\). Read data/operations/stage-snapshots.json and d / IMPLICIT-F5AEAA5901E518AE / IMPLICIT-8ACF034FD195F618
   - 来源：`analysis/corpus-relation/cluster_source_briefs/C004.md`
   - 依赖：—；被引用：—
 - [121Q25B Whole-Project Synchronization Contract](../../ASSET-CARDS.md#asset-hr-45480c716d721c81)
@@ -169,9 +169,9 @@
   - 可搜索名称：NFC-8aeabce466a6363f / Q30T merges accepted PR #59 at exact HEAD and closes the repository-native Zhiyuan Writing Method showcase as Current: o
   - 来源：`CHANGELOG.md`
   - 依赖：—；被引用：—
-- [require(manifest.get("task_id") == TASK_ID, "publication manifest task identity mismatch")](../../../data/operations/iterations/114/publication/tools/validate_publication.py)
+- [require\(manifest.get\("task_id"\) == TASK_ID, "publication manifest task identity mismatch"\)](../../../data/operations/iterations/114/publication/tools/validate_publication.py)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-DCD595A104850EA5 / require(manifest.get("task_id") == TASK_ID, "publication manifest task identity mismatch") / IMPLICIT-DCD595A104850EA5
+  - 可搜索名称：IMPLICIT-DCD595A104850EA5 / require\(manifest.get\("task_id"\) == TASK_ID, "publication manifest task identity mismatch"\) / IMPLICIT-DCD595A104850EA5
   - 来源：`data/operations/iterations/114/publication/tools/validate_publication.py`
   - 依赖：—；被引用：—
 - [The bounded example uses only short excerpts and structural paraphrase: translated poetry → time cost → remaining life/l](../../../reports/operations/121Q28S-zhiyuan-writing-method-whole-project-integration-audit.md)
@@ -234,9 +234,9 @@
   - 可搜索名称：NFC-4773abe430084587 / \| `JIN-SRC-04` \| S4 \| 点火 `origin/main` 方法资产 \| 分层、审计、模型投影 \| 仅方法出处 \| 不是金史证据 \|
   - 来源：`reports/publication/jin-rise-point-fire-analysis.md`
   - 依赖：—；被引用：—
-- [\| I_iso(A,B) \| 与赛课/邻里/高通量三者强同构 \|](../../../outputs/collisions/20260708-cross-domain-smoke-test/history/collision-report.md)
+- [\| I_iso\(A,B\) \| 与赛课/邻里/高通量三者强同构 \|](../../../outputs/collisions/20260708-cross-domain-smoke-test/history/collision-report.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-c044ee12eeec7907 / \| I_iso(A,B) \| 与赛课/邻里/高通量三者强同构 \|
+  - 可搜索名称：NFC-c044ee12eeec7907 / \| I_iso\(A,B\) \| 与赛课/邻里/高通量三者强同构 \|
   - 来源：`outputs/collisions/20260708-cross-domain-smoke-test/history/collision-report.md`
   - 依赖：—；被引用：—
 - [\| L1 \| 结构类比、初步相似性 \| 可以，但必须标注为类比 \|](../../../docs/publication_risk_checklist.md)
@@ -299,9 +299,12 @@
   - 可搜索名称：之元写作法 / zhiyuan-writing-method
   - 来源：`docs/publication/zhiyuan-writing-method.md`
   - 依赖：—；被引用：—
-- [之元写作法 \[`0.4.0`\](../../../docs/publication/zhiyuan-writing-method.md) 是当前 L6 接口，\[后台规格\](../../../docs/USAGE.md)
+- [之元写作法 \[`0.4.0`\]\(./publication/zhiyuan-writing-method.md\) 是当前 L6 接口，\[后台规格\]\(../templates/publication/zhiyuan-writing-spec.](../../../docs/USAGE.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-cebb58b02acaa1d6 / 之元写作法 \[`0.4.0`\](../../../docs/publication/zhiyuan-writing-method.md) 是当前 L6 接口，\[后台规格\](../../ASSET-CARDS.md#asset-hr-d328ae24912155e2)
+  - 可搜索名称：NFC-cebb58b02acaa1d6 / 之元写作法 \[`0.4.0`\]\(./publication/zhiyuan-writing-method.md\) 是当前 L6 接口，\[后台规格\]\(../templates/publication/zhiyuan-writing-spec.
+  - 来源：`docs/USAGE.md`
+  - 依赖：—；被引用：—
+- [之元写作法成果](../../ASSET-CARDS.md#asset-hr-d328ae24912155e2)
   - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
   - 可搜索名称：之元写作法成果 / zhiyuan-writing-showcase
   - 来源：`docs/publication/zhiyuan-writing-showcase.md`

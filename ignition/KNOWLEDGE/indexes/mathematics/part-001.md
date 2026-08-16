@@ -619,9 +619,9 @@
   - 可搜索名称：IMPLICIT-6B90B1E3DC9476A7 / # DXXX 函数名称 / IMPLICIT-6B90B1E3DC9476A7
   - 来源：`templates/two-tables/unified-function-entry-template.md`
   - 依赖：—；被引用：—
-- [# Synthetic Legacy Theorem Example (TEST FIXTURE — NOT a real 120 asset)](../../../function-os-candidate/v0.2/tests/fixtures/legacy_theorem_example.md)
+- [# Synthetic Legacy Theorem Example \(TEST FIXTURE — NOT a real 120 asset\)](../../../function-os-candidate/v0.2/tests/fixtures/legacy_theorem_example.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-23A47EB2C476D728 / # Synthetic Legacy Theorem Example (TEST FIXTURE — NOT a real 120 asset) / IMPLICIT-23A47EB2C476D728
+  - 可搜索名称：IMPLICIT-23A47EB2C476D728 / # Synthetic Legacy Theorem Example \(TEST FIXTURE — NOT a real 120 asset\) / IMPLICIT-23A47EB2C476D728
   - 来源：`function-os-candidate/v0.2/tests/fixtures/legacy_theorem_example.md`
   - 依赖：—；被引用：—
 - [# v0.2 函数依赖图初稿](../../../outputs/getbrain/v0.2-function-dependency-graph-20260706.md)

@@ -97,7 +97,7 @@ def href(path: str, depth: int = 1) -> str:
 
 def md(value: object) -> str:
     value = re.sub(r"<[^>]+>", " ", str(value))
-    return value.replace("\\", "\\\\").replace("[", "\\[").replace("]", "\\]").replace("|", "\\|").replace("\n", " ").strip()
+    return value.replace("\\", "\\\\").replace("[", "\\[").replace("]", "\\]").replace("(", "\\(").replace(")", "\\)").replace("|", "\\|").replace("\n", " ").strip()
 
 
 def markdown(lines: list[str]) -> str:
@@ -687,7 +687,10 @@ def render_map(data: dict, config: dict) -> str:
         total = sum(1 for row in search if sid in row["subjects"])
         lines.extend([f"<a id=\"subject-{slug(sid)}\"></a>", f"## {subject['label']}", "", f"**引导问题：** {subject['question']}", "", f"当前检索覆盖 {total} 项，重点卡片 {len(subject_cards)} 项。 [打开本主题完整索引](./indexes/{sid.lower()}.md)", ""])
         for row in subject_cards[:18]:
-            lines.append(f"- [{md(row['title'])}](./ASSET-CARDS.md#{row['human_anchor']}) — `{row['current_status']}`；{row['result'][:150]}")
+            # Source fragments can contain Markdown links that are truncated by the
+            # 150-character navigation preview. Escape the preview so a cut link
+            # cannot become a broken public hyperlink in the generated map.
+            lines.append(f"- [{md(row['title'])}](./ASSET-CARDS.md#{row['human_anchor']}) — `{row['current_status']}`；{md(row['result'][:150])}")
         if len(subject_cards) > 18:
             lines.append(f"- 其余 {len(subject_cards) - 18} 张重点卡片可在[资产卡总表](./ASSET-CARDS.md)搜索主题标记 `{sid}`。")
         lines.append("")
@@ -724,9 +727,19 @@ def render_card_chunk(cards: list[dict], index: int) -> str:
 def render_layers(layers: list[dict]) -> str:
     lines = ["# 分层阅读", "", "每项都提供 1 分钟、5 分钟和完整来源。1/5 分钟层由来源文本确定性提取，只用于定位；如与完整来源或现行裁决冲突，以后两者为准。", ""]
     for row in layers:
-        lines.extend([f"<a id=\"{row['human_anchor']}\"></a>", f"## {row['title']}", "", f"**状态：** `{row['status']}` · **主题：** {', '.join(f'`{item}`' for item in row['subjects'])}", "", "### 1 分钟", "", row["one_minute"], "", "### 5 分钟", ""])
-        lines.extend(f"- {point}" for point in row["five_minute_points"])
-        lines.extend(["", "### 完整阅读", "", f"[{row['canonical_source']}]({href(row['full_reading'])})", ""])
+        # Keep all extracted points but render each layer as one compact record.
+        # The knowledge ledger has grown beyond the original corpus size; this
+        # preserves two-click navigation while keeping the human page below its
+        # deterministic render budget.
+        lines.extend([
+            f"<a id=\"{row['human_anchor']}\"></a>",
+            f"## {row['title']}",
+            f"`{row['status']}` · {', '.join(f'`{item}`' for item in row['subjects'])}",
+            f"- 1 分钟：{row['one_minute']}",
+            f"- 5 分钟：{'；'.join(point.replace('来源要点（导航摘录，不得视为当前断言）：', '') for point in row['five_minute_points'])}",
+            f"- 完整阅读：[{row['canonical_source']}]({href(row['full_reading'])})",
+            "",
+        ])
     return markdown(lines)
 
 

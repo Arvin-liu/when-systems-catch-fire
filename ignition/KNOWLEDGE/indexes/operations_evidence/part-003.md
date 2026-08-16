@@ -4,734 +4,739 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0465})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0464}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-810C673EFBB69399 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0465})=1\]. / IMPLICIT-810C673EFBB69399
+  - 可搜索名称：IMPLICIT-23CE566D4A6285EF / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0464}\)=1\]. / IMPLICIT-23CE566D4A6285EF
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0466})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0465}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-C1E5F29C6C9711F8 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0466})=1\]. / IMPLICIT-C1E5F29C6C9711F8
+  - 可搜索名称：IMPLICIT-810C673EFBB69399 / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0465}\)=1\]. / IMPLICIT-810C673EFBB69399
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0467})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0466}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-2B910F8DF5C3D947 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0467})=1\]. / IMPLICIT-2B910F8DF5C3D947
+  - 可搜索名称：IMPLICIT-C1E5F29C6C9711F8 / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0466}\)=1\]. / IMPLICIT-C1E5F29C6C9711F8
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0468})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0467}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-231392993D4FC49E / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0468})=1\]. / IMPLICIT-231392993D4FC49E
+  - 可搜索名称：IMPLICIT-2B910F8DF5C3D947 / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0467}\)=1\]. / IMPLICIT-2B910F8DF5C3D947
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0469})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0468}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-548BC38BB115FBEE / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0469})=1\]. / IMPLICIT-548BC38BB115FBEE
+  - 可搜索名称：IMPLICIT-231392993D4FC49E / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0468}\)=1\]. / IMPLICIT-231392993D4FC49E
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0470})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0469}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-2622403945BE30EE / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0470})=1\]. / IMPLICIT-2622403945BE30EE
+  - 可搜索名称：IMPLICIT-548BC38BB115FBEE / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0469}\)=1\]. / IMPLICIT-548BC38BB115FBEE
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0471})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0470}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-DFD85FD7679229DB / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0471})=1\]. / IMPLICIT-DFD85FD7679229DB
+  - 可搜索名称：IMPLICIT-2622403945BE30EE / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0470}\)=1\]. / IMPLICIT-2622403945BE30EE
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0472})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0471}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-81D08491EDAFC45B / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0472})=1\]. / IMPLICIT-81D08491EDAFC45B
+  - 可搜索名称：IMPLICIT-DFD85FD7679229DB / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0471}\)=1\]. / IMPLICIT-DFD85FD7679229DB
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0473})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0472}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-9B3B62132217547F / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0473})=1\]. / IMPLICIT-9B3B62132217547F
+  - 可搜索名称：IMPLICIT-81D08491EDAFC45B / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0472}\)=1\]. / IMPLICIT-81D08491EDAFC45B
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0474})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0473}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-BC1CA8AE35C39CD6 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0474})=1\]. / IMPLICIT-BC1CA8AE35C39CD6
+  - 可搜索名称：IMPLICIT-9B3B62132217547F / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0473}\)=1\]. / IMPLICIT-9B3B62132217547F
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0475})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0474}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-56858000F1624CC2 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0475})=1\]. / IMPLICIT-56858000F1624CC2
+  - 可搜索名称：IMPLICIT-BC1CA8AE35C39CD6 / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0474}\)=1\]. / IMPLICIT-BC1CA8AE35C39CD6
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0476})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0475}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-56DE5B73DAA3548D / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0476})=1\]. / IMPLICIT-56DE5B73DAA3548D
+  - 可搜索名称：IMPLICIT-56858000F1624CC2 / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0475}\)=1\]. / IMPLICIT-56858000F1624CC2
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0477})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0476}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-876170483E600399 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0477})=1\]. / IMPLICIT-876170483E600399
+  - 可搜索名称：IMPLICIT-56DE5B73DAA3548D / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0476}\)=1\]. / IMPLICIT-56DE5B73DAA3548D
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0478})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0477}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-412FAA38FE37BFC0 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0478})=1\]. / IMPLICIT-412FAA38FE37BFC0
+  - 可搜索名称：IMPLICIT-876170483E600399 / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0477}\)=1\]. / IMPLICIT-876170483E600399
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0479})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0478}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-4CCA4D5322699E57 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0479})=1\]. / IMPLICIT-4CCA4D5322699E57
+  - 可搜索名称：IMPLICIT-412FAA38FE37BFC0 / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0478}\)=1\]. / IMPLICIT-412FAA38FE37BFC0
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0480})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0479}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-7FCED2D138811BF2 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0480})=1\]. / IMPLICIT-7FCED2D138811BF2
+  - 可搜索名称：IMPLICIT-4CCA4D5322699E57 / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0479}\)=1\]. / IMPLICIT-4CCA4D5322699E57
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0481})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0480}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-66163BE5B374DE9B / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0481})=1\]. / IMPLICIT-66163BE5B374DE9B
+  - 可搜索名称：IMPLICIT-7FCED2D138811BF2 / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0480}\)=1\]. / IMPLICIT-7FCED2D138811BF2
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0482})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0481}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-A9B05210A363D02B / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0482})=1\]. / IMPLICIT-A9B05210A363D02B
+  - 可搜索名称：IMPLICIT-66163BE5B374DE9B / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0481}\)=1\]. / IMPLICIT-66163BE5B374DE9B
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0483})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0482}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-DD1BEED96B7C3B4C / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0483})=1\]. / IMPLICIT-DD1BEED96B7C3B4C
+  - 可搜索名称：IMPLICIT-A9B05210A363D02B / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0482}\)=1\]. / IMPLICIT-A9B05210A363D02B
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0484})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0483}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-2887699BEEDACD65 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0484})=1\]. / IMPLICIT-2887699BEEDACD65
+  - 可搜索名称：IMPLICIT-DD1BEED96B7C3B4C / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0483}\)=1\]. / IMPLICIT-DD1BEED96B7C3B4C
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0485})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0484}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-6B3DF817600B2A95 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0485})=1\]. / IMPLICIT-6B3DF817600B2A95
+  - 可搜索名称：IMPLICIT-2887699BEEDACD65 / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0484}\)=1\]. / IMPLICIT-2887699BEEDACD65
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0486})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0485}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-29BA703AEEB4363D / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0486})=1\]. / IMPLICIT-29BA703AEEB4363D
+  - 可搜索名称：IMPLICIT-6B3DF817600B2A95 / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0485}\)=1\]. / IMPLICIT-6B3DF817600B2A95
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0487})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0486}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-387DBDFF72B1086E / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0487})=1\]. / IMPLICIT-387DBDFF72B1086E
+  - 可搜索名称：IMPLICIT-29BA703AEEB4363D / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0486}\)=1\]. / IMPLICIT-29BA703AEEB4363D
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0488})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0487}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-38FC5BA5150544D7 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0488})=1\]. / IMPLICIT-38FC5BA5150544D7
+  - 可搜索名称：IMPLICIT-387DBDFF72B1086E / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0487}\)=1\]. / IMPLICIT-387DBDFF72B1086E
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0489})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0488}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-C5388BBCC3B9938C / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0489})=1\]. / IMPLICIT-C5388BBCC3B9938C
+  - 可搜索名称：IMPLICIT-38FC5BA5150544D7 / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0488}\)=1\]. / IMPLICIT-38FC5BA5150544D7
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0490})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0489}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-2FCF2E73C97F95A0 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0490})=1\]. / IMPLICIT-2FCF2E73C97F95A0
+  - 可搜索名称：IMPLICIT-C5388BBCC3B9938C / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0489}\)=1\]. / IMPLICIT-C5388BBCC3B9938C
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0491})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0490}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-9C60D7F88CD78E23 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0491})=1\]. / IMPLICIT-9C60D7F88CD78E23
+  - 可搜索名称：IMPLICIT-2FCF2E73C97F95A0 / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0490}\)=1\]. / IMPLICIT-2FCF2E73C97F95A0
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0492})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0491}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-5061BF8EDA08CF14 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0492})=1\]. / IMPLICIT-5061BF8EDA08CF14
+  - 可搜索名称：IMPLICIT-9C60D7F88CD78E23 / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0491}\)=1\]. / IMPLICIT-9C60D7F88CD78E23
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0493})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0492}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-40C9466CBD2C1305 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0493})=1\]. / IMPLICIT-40C9466CBD2C1305
+  - 可搜索名称：IMPLICIT-5061BF8EDA08CF14 / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0492}\)=1\]. / IMPLICIT-5061BF8EDA08CF14
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0494})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0493}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-28298008877D543B / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0494})=1\]. / IMPLICIT-28298008877D543B
+  - 可搜索名称：IMPLICIT-40C9466CBD2C1305 / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0493}\)=1\]. / IMPLICIT-40C9466CBD2C1305
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0495})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0494}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-1E16627F9EC8FA4A / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0495})=1\]. / IMPLICIT-1E16627F9EC8FA4A
+  - 可搜索名称：IMPLICIT-28298008877D543B / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0494}\)=1\]. / IMPLICIT-28298008877D543B
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0496})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0495}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-BCDED958EEA98FD2 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0496})=1\]. / IMPLICIT-BCDED958EEA98FD2
+  - 可搜索名称：IMPLICIT-1E16627F9EC8FA4A / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0495}\)=1\]. / IMPLICIT-1E16627F9EC8FA4A
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0497})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0496}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-234A7A504D7A5ECF / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0497})=1\]. / IMPLICIT-234A7A504D7A5ECF
+  - 可搜索名称：IMPLICIT-BCDED958EEA98FD2 / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0496}\)=1\]. / IMPLICIT-BCDED958EEA98FD2
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0498})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0497}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-CC4FFBAAF9F2773E / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0498})=1\]. / IMPLICIT-CC4FFBAAF9F2773E
+  - 可搜索名称：IMPLICIT-234A7A504D7A5ECF / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0497}\)=1\]. / IMPLICIT-234A7A504D7A5ECF
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0499})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0498}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-0D3A519F81ACE8CB / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0499})=1\]. / IMPLICIT-0D3A519F81ACE8CB
+  - 可搜索名称：IMPLICIT-CC4FFBAAF9F2773E / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0498}\)=1\]. / IMPLICIT-CC4FFBAAF9F2773E
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0500})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0499}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-4084562A531475AE / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0500})=1\]. / IMPLICIT-4084562A531475AE
+  - 可搜索名称：IMPLICIT-0D3A519F81ACE8CB / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0499}\)=1\]. / IMPLICIT-0D3A519F81ACE8CB
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0501})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0500}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-F4F89B06F7EB6BD2 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0501})=1\]. / IMPLICIT-F4F89B06F7EB6BD2
+  - 可搜索名称：IMPLICIT-4084562A531475AE / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0500}\)=1\]. / IMPLICIT-4084562A531475AE
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0502})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0501}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-F8D8179C6E092420 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0502})=1\]. / IMPLICIT-F8D8179C6E092420
+  - 可搜索名称：IMPLICIT-F4F89B06F7EB6BD2 / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0501}\)=1\]. / IMPLICIT-F4F89B06F7EB6BD2
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0503})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0502}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-73400977F0A5163B / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0503})=1\]. / IMPLICIT-73400977F0A5163B
+  - 可搜索名称：IMPLICIT-F8D8179C6E092420 / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0502}\)=1\]. / IMPLICIT-F8D8179C6E092420
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0504})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0503}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-E47EFC556D2DBA09 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0504})=1\]. / IMPLICIT-E47EFC556D2DBA09
+  - 可搜索名称：IMPLICIT-73400977F0A5163B / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0503}\)=1\]. / IMPLICIT-73400977F0A5163B
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0505})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0504}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-C01C28C5B497E967 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0505})=1\]. / IMPLICIT-C01C28C5B497E967
+  - 可搜索名称：IMPLICIT-E47EFC556D2DBA09 / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0504}\)=1\]. / IMPLICIT-E47EFC556D2DBA09
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0506})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0505}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-003E23FA42321148 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0506})=1\]. / IMPLICIT-003E23FA42321148
+  - 可搜索名称：IMPLICIT-C01C28C5B497E967 / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0505}\)=1\]. / IMPLICIT-C01C28C5B497E967
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0507})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0506}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-40930906A88C8DFA / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0507})=1\]. / IMPLICIT-40930906A88C8DFA
+  - 可搜索名称：IMPLICIT-003E23FA42321148 / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0506}\)=1\]. / IMPLICIT-003E23FA42321148
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0508})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0507}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-7F9A91D78148C651 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0508})=1\]. / IMPLICIT-7F9A91D78148C651
+  - 可搜索名称：IMPLICIT-40930906A88C8DFA / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0507}\)=1\]. / IMPLICIT-40930906A88C8DFA
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0509})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0508}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-DFF9FA466C6679C5 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0509})=1\]. / IMPLICIT-DFF9FA466C6679C5
+  - 可搜索名称：IMPLICIT-7F9A91D78148C651 / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0508}\)=1\]. / IMPLICIT-7F9A91D78148C651
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0510})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0509}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-C868A6FDEAA0B97D / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0510})=1\]. / IMPLICIT-C868A6FDEAA0B97D
+  - 可搜索名称：IMPLICIT-DFF9FA466C6679C5 / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0509}\)=1\]. / IMPLICIT-DFF9FA466C6679C5
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0511})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0510}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-B31C3138B5220ECF / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0511})=1\]. / IMPLICIT-B31C3138B5220ECF
+  - 可搜索名称：IMPLICIT-C868A6FDEAA0B97D / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0510}\)=1\]. / IMPLICIT-C868A6FDEAA0B97D
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0512})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0511}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-818DAE19E01A8356 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0512})=1\]. / IMPLICIT-818DAE19E01A8356
+  - 可搜索名称：IMPLICIT-B31C3138B5220ECF / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0511}\)=1\]. / IMPLICIT-B31C3138B5220ECF
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0513})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0512}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-39CD95A726834785 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0513})=1\]. / IMPLICIT-39CD95A726834785
+  - 可搜索名称：IMPLICIT-818DAE19E01A8356 / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0512}\)=1\]. / IMPLICIT-818DAE19E01A8356
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0514})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0513}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-29CF90952B1E4310 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0514})=1\]. / IMPLICIT-29CF90952B1E4310
+  - 可搜索名称：IMPLICIT-39CD95A726834785 / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0513}\)=1\]. / IMPLICIT-39CD95A726834785
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0515})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0514}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-6FBDB0339DF9BB98 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0515})=1\]. / IMPLICIT-6FBDB0339DF9BB98
+  - 可搜索名称：IMPLICIT-29CF90952B1E4310 / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0514}\)=1\]. / IMPLICIT-29CF90952B1E4310
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0516})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0515}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-FFDC812355883E1F / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0516})=1\]. / IMPLICIT-FFDC812355883E1F
+  - 可搜索名称：IMPLICIT-6FBDB0339DF9BB98 / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0515}\)=1\]. / IMPLICIT-6FBDB0339DF9BB98
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0517})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0516}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-A6EAD0976076B0B2 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0517})=1\]. / IMPLICIT-A6EAD0976076B0B2
+  - 可搜索名称：IMPLICIT-FFDC812355883E1F / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0516}\)=1\]. / IMPLICIT-FFDC812355883E1F
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0518})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0517}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-FD0D783E49C08B05 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0518})=1\]. / IMPLICIT-FD0D783E49C08B05
+  - 可搜索名称：IMPLICIT-A6EAD0976076B0B2 / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0517}\)=1\]. / IMPLICIT-A6EAD0976076B0B2
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0519})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0518}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-20B9960694FA3B1A / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0519})=1\]. / IMPLICIT-20B9960694FA3B1A
+  - 可搜索名称：IMPLICIT-FD0D783E49C08B05 / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0518}\)=1\]. / IMPLICIT-FD0D783E49C08B05
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0520})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0519}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-0C891351B2333BBA / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0520})=1\]. / IMPLICIT-0C891351B2333BBA
+  - 可搜索名称：IMPLICIT-20B9960694FA3B1A / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0519}\)=1\]. / IMPLICIT-20B9960694FA3B1A
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0521})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0520}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-5EA15F5D6AAB4CC9 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0521})=1\]. / IMPLICIT-5EA15F5D6AAB4CC9
+  - 可搜索名称：IMPLICIT-0C891351B2333BBA / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0520}\)=1\]. / IMPLICIT-0C891351B2333BBA
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0522})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0521}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-052234B5ADB273BB / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0522})=1\]. / IMPLICIT-052234B5ADB273BB
+  - 可搜索名称：IMPLICIT-5EA15F5D6AAB4CC9 / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0521}\)=1\]. / IMPLICIT-5EA15F5D6AAB4CC9
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0523})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0522}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-C6CE6753FBD7EF03 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0523})=1\]. / IMPLICIT-C6CE6753FBD7EF03
+  - 可搜索名称：IMPLICIT-052234B5ADB273BB / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0522}\)=1\]. / IMPLICIT-052234B5ADB273BB
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0524})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0523}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-649265048FD43E77 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0524})=1\]. / IMPLICIT-649265048FD43E77
+  - 可搜索名称：IMPLICIT-C6CE6753FBD7EF03 / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0523}\)=1\]. / IMPLICIT-C6CE6753FBD7EF03
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0525})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0524}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-5824F97C8F99E7C6 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0525})=1\]. / IMPLICIT-5824F97C8F99E7C6
+  - 可搜索名称：IMPLICIT-649265048FD43E77 / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0524}\)=1\]. / IMPLICIT-649265048FD43E77
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0526})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0525}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-626057E7DF0FC23C / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0526})=1\]. / IMPLICIT-626057E7DF0FC23C
+  - 可搜索名称：IMPLICIT-5824F97C8F99E7C6 / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0525}\)=1\]. / IMPLICIT-5824F97C8F99E7C6
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0527})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0526}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-F87AA045BBFDAEC8 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0527})=1\]. / IMPLICIT-F87AA045BBFDAEC8
+  - 可搜索名称：IMPLICIT-626057E7DF0FC23C / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0526}\)=1\]. / IMPLICIT-626057E7DF0FC23C
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0528})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0527}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-DCE49AF8C575F26C / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0528})=1\]. / IMPLICIT-DCE49AF8C575F26C
+  - 可搜索名称：IMPLICIT-F87AA045BBFDAEC8 / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0527}\)=1\]. / IMPLICIT-F87AA045BBFDAEC8
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0529})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0528}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-FDF178CC6CB37CE5 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0529})=1\]. / IMPLICIT-FDF178CC6CB37CE5
+  - 可搜索名称：IMPLICIT-DCE49AF8C575F26C / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0528}\)=1\]. / IMPLICIT-DCE49AF8C575F26C
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0530})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0529}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-06417617AAC7CF4C / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0530})=1\]. / IMPLICIT-06417617AAC7CF4C
+  - 可搜索名称：IMPLICIT-FDF178CC6CB37CE5 / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0529}\)=1\]. / IMPLICIT-FDF178CC6CB37CE5
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0531})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0530}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-22BE948F1BAC4BA2 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0531})=1\]. / IMPLICIT-22BE948F1BAC4BA2
+  - 可搜索名称：IMPLICIT-06417617AAC7CF4C / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0530}\)=1\]. / IMPLICIT-06417617AAC7CF4C
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0532})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0531}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-66D2F7491FAE009F / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0532})=1\]. / IMPLICIT-66D2F7491FAE009F
+  - 可搜索名称：IMPLICIT-22BE948F1BAC4BA2 / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0531}\)=1\]. / IMPLICIT-22BE948F1BAC4BA2
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0533})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0532}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-9E1DFD1644619DEA / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0533})=1\]. / IMPLICIT-9E1DFD1644619DEA
+  - 可搜索名称：IMPLICIT-66D2F7491FAE009F / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0532}\)=1\]. / IMPLICIT-66D2F7491FAE009F
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0534})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0533}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-FF6B8E0E3FD8EFD7 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0534})=1\]. / IMPLICIT-FF6B8E0E3FD8EFD7
+  - 可搜索名称：IMPLICIT-9E1DFD1644619DEA / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0533}\)=1\]. / IMPLICIT-9E1DFD1644619DEA
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0535})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0534}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-76F4ABE3DC5193B5 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0535})=1\]. / IMPLICIT-76F4ABE3DC5193B5
+  - 可搜索名称：IMPLICIT-FF6B8E0E3FD8EFD7 / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0534}\)=1\]. / IMPLICIT-FF6B8E0E3FD8EFD7
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0536})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0535}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-A4074B1FDC2E3AB7 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0536})=1\]. / IMPLICIT-A4074B1FDC2E3AB7
+  - 可搜索名称：IMPLICIT-76F4ABE3DC5193B5 / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0535}\)=1\]. / IMPLICIT-76F4ABE3DC5193B5
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0537})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0536}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-3424038EF0D52A08 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0537})=1\]. / IMPLICIT-3424038EF0D52A08
+  - 可搜索名称：IMPLICIT-A4074B1FDC2E3AB7 / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0536}\)=1\]. / IMPLICIT-A4074B1FDC2E3AB7
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0538})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0537}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-5EAEA1420A0DA082 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0538})=1\]. / IMPLICIT-5EAEA1420A0DA082
+  - 可搜索名称：IMPLICIT-3424038EF0D52A08 / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0537}\)=1\]. / IMPLICIT-3424038EF0D52A08
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0539})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0538}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-F42D35A1050B481C / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0539})=1\]. / IMPLICIT-F42D35A1050B481C
+  - 可搜索名称：IMPLICIT-5EAEA1420A0DA082 / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0538}\)=1\]. / IMPLICIT-5EAEA1420A0DA082
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0540})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0539}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-0FEB2C37B56F90CE / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0540})=1\]. / IMPLICIT-0FEB2C37B56F90CE
+  - 可搜索名称：IMPLICIT-F42D35A1050B481C / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0539}\)=1\]. / IMPLICIT-F42D35A1050B481C
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0541})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0540}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-BBD279CFBE0E67F6 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0541})=1\]. / IMPLICIT-BBD279CFBE0E67F6
+  - 可搜索名称：IMPLICIT-0FEB2C37B56F90CE / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0540}\)=1\]. / IMPLICIT-0FEB2C37B56F90CE
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0542})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0541}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-F63225B1252A220B / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0542})=1\]. / IMPLICIT-F63225B1252A220B
+  - 可搜索名称：IMPLICIT-BBD279CFBE0E67F6 / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0541}\)=1\]. / IMPLICIT-BBD279CFBE0E67F6
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0543})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0542}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-44638F5C49B23D81 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0543})=1\]. / IMPLICIT-44638F5C49B23D81
+  - 可搜索名称：IMPLICIT-F63225B1252A220B / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0542}\)=1\]. / IMPLICIT-F63225B1252A220B
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0544})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0543}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-6F64A4E1CBF1A1D7 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0544})=1\]. / IMPLICIT-6F64A4E1CBF1A1D7
+  - 可搜索名称：IMPLICIT-44638F5C49B23D81 / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0543}\)=1\]. / IMPLICIT-44638F5C49B23D81
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0545})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0544}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-DB3DD2B56774C013 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0545})=1\]. / IMPLICIT-DB3DD2B56774C013
+  - 可搜索名称：IMPLICIT-6F64A4E1CBF1A1D7 / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0544}\)=1\]. / IMPLICIT-6F64A4E1CBF1A1D7
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0546})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0545}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-70C80CD51E6198CA / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0546})=1\]. / IMPLICIT-70C80CD51E6198CA
+  - 可搜索名称：IMPLICIT-DB3DD2B56774C013 / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0545}\)=1\]. / IMPLICIT-DB3DD2B56774C013
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0547})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0546}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-8447A4CB486654AF / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0547})=1\]. / IMPLICIT-8447A4CB486654AF
+  - 可搜索名称：IMPLICIT-70C80CD51E6198CA / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0546}\)=1\]. / IMPLICIT-70C80CD51E6198CA
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0548})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0547}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-91D7A052664A7B66 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0548})=1\]. / IMPLICIT-91D7A052664A7B66
+  - 可搜索名称：IMPLICIT-8447A4CB486654AF / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0547}\)=1\]. / IMPLICIT-8447A4CB486654AF
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0549})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0548}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-D99E0F642E7A7937 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0549})=1\]. / IMPLICIT-D99E0F642E7A7937
+  - 可搜索名称：IMPLICIT-91D7A052664A7B66 / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0548}\)=1\]. / IMPLICIT-91D7A052664A7B66
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0550})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0549}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-10AF26842E0C734C / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0550})=1\]. / IMPLICIT-10AF26842E0C734C
+  - 可搜索名称：IMPLICIT-D99E0F642E7A7937 / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0549}\)=1\]. / IMPLICIT-D99E0F642E7A7937
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0551})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0550}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-55A5A41556929EEF / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0551})=1\]. / IMPLICIT-55A5A41556929EEF
+  - 可搜索名称：IMPLICIT-10AF26842E0C734C / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0550}\)=1\]. / IMPLICIT-10AF26842E0C734C
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0552})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0551}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-FE912A9D1D9A46B2 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0552})=1\]. / IMPLICIT-FE912A9D1D9A46B2
+  - 可搜索名称：IMPLICIT-55A5A41556929EEF / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0551}\)=1\]. / IMPLICIT-55A5A41556929EEF
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0553})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0552}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-0AB6465C1D257739 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0553})=1\]. / IMPLICIT-0AB6465C1D257739
+  - 可搜索名称：IMPLICIT-FE912A9D1D9A46B2 / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0552}\)=1\]. / IMPLICIT-FE912A9D1D9A46B2
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0554})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0553}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-2DD0154642E5004C / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0554})=1\]. / IMPLICIT-2DD0154642E5004C
+  - 可搜索名称：IMPLICIT-0AB6465C1D257739 / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0553}\)=1\]. / IMPLICIT-0AB6465C1D257739
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0555})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0554}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-E9C92355D1FD4468 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0555})=1\]. / IMPLICIT-E9C92355D1FD4468
+  - 可搜索名称：IMPLICIT-2DD0154642E5004C / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0554}\)=1\]. / IMPLICIT-2DD0154642E5004C
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0556})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0555}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-C6D09532AC83BA12 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0556})=1\]. / IMPLICIT-C6D09532AC83BA12
+  - 可搜索名称：IMPLICIT-E9C92355D1FD4468 / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0555}\)=1\]. / IMPLICIT-E9C92355D1FD4468
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0557})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0556}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-8C6C70BDD2D63796 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0557})=1\]. / IMPLICIT-8C6C70BDD2D63796
+  - 可搜索名称：IMPLICIT-C6D09532AC83BA12 / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0556}\)=1\]. / IMPLICIT-C6D09532AC83BA12
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0558})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0557}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-760F4EAD7FCDB691 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0558})=1\]. / IMPLICIT-760F4EAD7FCDB691
+  - 可搜索名称：IMPLICIT-8C6C70BDD2D63796 / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0557}\)=1\]. / IMPLICIT-8C6C70BDD2D63796
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0559})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0558}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-7368A67E6FD37780 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0559})=1\]. / IMPLICIT-7368A67E6FD37780
+  - 可搜索名称：IMPLICIT-760F4EAD7FCDB691 / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0558}\)=1\]. / IMPLICIT-760F4EAD7FCDB691
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0560})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0559}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-E27A8A8E662766CA / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0560})=1\]. / IMPLICIT-E27A8A8E662766CA
+  - 可搜索名称：IMPLICIT-7368A67E6FD37780 / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0559}\)=1\]. / IMPLICIT-7368A67E6FD37780
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0561})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0560}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-04D15E6C52A1D365 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0561})=1\]. / IMPLICIT-04D15E6C52A1D365
+  - 可搜索名称：IMPLICIT-E27A8A8E662766CA / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0560}\)=1\]. / IMPLICIT-E27A8A8E662766CA
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0562})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0561}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-F2BD83C04657BA89 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0562})=1\]. / IMPLICIT-F2BD83C04657BA89
+  - 可搜索名称：IMPLICIT-04D15E6C52A1D365 / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0561}\)=1\]. / IMPLICIT-04D15E6C52A1D365
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0563})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0562}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-999D29C558D07E39 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0563})=1\]. / IMPLICIT-999D29C558D07E39
+  - 可搜索名称：IMPLICIT-F2BD83C04657BA89 / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0562}\)=1\]. / IMPLICIT-F2BD83C04657BA89
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0564})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0563}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-A8EF736464C35762 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0564})=1\]. / IMPLICIT-A8EF736464C35762
+  - 可搜索名称：IMPLICIT-999D29C558D07E39 / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0563}\)=1\]. / IMPLICIT-999D29C558D07E39
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0565})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0564}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-DD046187E465C0C5 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0565})=1\]. / IMPLICIT-DD046187E465C0C5
+  - 可搜索名称：IMPLICIT-A8EF736464C35762 / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0564}\)=1\]. / IMPLICIT-A8EF736464C35762
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0566})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0565}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-E7327DFB15E8D0FD / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0566})=1\]. / IMPLICIT-E7327DFB15E8D0FD
+  - 可搜索名称：IMPLICIT-DD046187E465C0C5 / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0565}\)=1\]. / IMPLICIT-DD046187E465C0C5
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0567})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0566}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-1E07ADA1B015DE2B / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0567})=1\]. / IMPLICIT-1E07ADA1B015DE2B
+  - 可搜索名称：IMPLICIT-E7327DFB15E8D0FD / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0566}\)=1\]. / IMPLICIT-E7327DFB15E8D0FD
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0568})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0567}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-49B8F71990FCBE8B / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0568})=1\]. / IMPLICIT-49B8F71990FCBE8B
+  - 可搜索名称：IMPLICIT-1E07ADA1B015DE2B / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0567}\)=1\]. / IMPLICIT-1E07ADA1B015DE2B
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0569})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0568}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-4A1E41D9A5A6C7E0 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0569})=1\]. / IMPLICIT-4A1E41D9A5A6C7E0
+  - 可搜索名称：IMPLICIT-49B8F71990FCBE8B / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0568}\)=1\]. / IMPLICIT-49B8F71990FCBE8B
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0570})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0569}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-CEAF398A298573AF / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0570})=1\]. / IMPLICIT-CEAF398A298573AF
+  - 可搜索名称：IMPLICIT-4A1E41D9A5A6C7E0 / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0569}\)=1\]. / IMPLICIT-4A1E41D9A5A6C7E0
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0571})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0570}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-0129810237994A27 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0571})=1\]. / IMPLICIT-0129810237994A27
+  - 可搜索名称：IMPLICIT-CEAF398A298573AF / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0570}\)=1\]. / IMPLICIT-CEAF398A298573AF
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0572})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0571}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-A2712B41CA5CE66D / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0572})=1\]. / IMPLICIT-A2712B41CA5CE66D
+  - 可搜索名称：IMPLICIT-0129810237994A27 / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0571}\)=1\]. / IMPLICIT-0129810237994A27
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0573})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0572}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-D6F925720EA46C34 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0573})=1\]. / IMPLICIT-D6F925720EA46C34
+  - 可搜索名称：IMPLICIT-A2712B41CA5CE66D / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0572}\)=1\]. / IMPLICIT-A2712B41CA5CE66D
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0574})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0573}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-94ECBF5B937F366E / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0574})=1\]. / IMPLICIT-94ECBF5B937F366E
+  - 可搜索名称：IMPLICIT-D6F925720EA46C34 / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0573}\)=1\]. / IMPLICIT-D6F925720EA46C34
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0575})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0574}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-81DCE019E4BE4AD2 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0575})=1\]. / IMPLICIT-81DCE019E4BE4AD2
+  - 可搜索名称：IMPLICIT-94ECBF5B937F366E / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0574}\)=1\]. / IMPLICIT-94ECBF5B937F366E
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0576})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0575}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-75AFE5EBE0339B21 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0576})=1\]. / IMPLICIT-75AFE5EBE0339B21
+  - 可搜索名称：IMPLICIT-81DCE019E4BE4AD2 / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0575}\)=1\]. / IMPLICIT-81DCE019E4BE4AD2
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0577})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0576}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-405E43BD6D740AAB / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0577})=1\]. / IMPLICIT-405E43BD6D740AAB
+  - 可搜索名称：IMPLICIT-75AFE5EBE0339B21 / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0576}\)=1\]. / IMPLICIT-75AFE5EBE0339B21
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0578})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0577}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-F37F5E0412D2D10E / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0578})=1\]. / IMPLICIT-F37F5E0412D2D10E
+  - 可搜索名称：IMPLICIT-405E43BD6D740AAB / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0577}\)=1\]. / IMPLICIT-405E43BD6D740AAB
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0579})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0578}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-F5E56160C6DF7A61 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0579})=1\]. / IMPLICIT-F5E56160C6DF7A61
+  - 可搜索名称：IMPLICIT-F37F5E0412D2D10E / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0578}\)=1\]. / IMPLICIT-F37F5E0412D2D10E
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0580})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0579}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-A29F2AAA959A4826 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0580})=1\]. / IMPLICIT-A29F2AAA959A4826
+  - 可搜索名称：IMPLICIT-F5E56160C6DF7A61 / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0579}\)=1\]. / IMPLICIT-F5E56160C6DF7A61
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0581})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0580}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-BDAFE70179130350 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0581})=1\]. / IMPLICIT-BDAFE70179130350
+  - 可搜索名称：IMPLICIT-A29F2AAA959A4826 / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0580}\)=1\]. / IMPLICIT-A29F2AAA959A4826
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0582})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0581}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-AF39FA538A9493B2 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0582})=1\]. / IMPLICIT-AF39FA538A9493B2
+  - 可搜索名称：IMPLICIT-BDAFE70179130350 / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0581}\)=1\]. / IMPLICIT-BDAFE70179130350
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0583})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0582}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-9E230E052D460151 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0583})=1\]. / IMPLICIT-9E230E052D460151
+  - 可搜索名称：IMPLICIT-AF39FA538A9493B2 / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0582}\)=1\]. / IMPLICIT-AF39FA538A9493B2
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0584})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0583}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-8043454489A22539 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0584})=1\]. / IMPLICIT-8043454489A22539
+  - 可搜索名称：IMPLICIT-9E230E052D460151 / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0583}\)=1\]. / IMPLICIT-9E230E052D460151
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0585})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0584}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-F53B1F5539C1ECFD / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0585})=1\]. / IMPLICIT-F53B1F5539C1ECFD
+  - 可搜索名称：IMPLICIT-8043454489A22539 / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0584}\)=1\]. / IMPLICIT-8043454489A22539
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0586})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0585}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-DD12E2907D3FC6F3 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0586})=1\]. / IMPLICIT-DD12E2907D3FC6F3
+  - 可搜索名称：IMPLICIT-F53B1F5539C1ECFD / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0585}\)=1\]. / IMPLICIT-F53B1F5539C1ECFD
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0587})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0586}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-14435EA54ED7441A / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0587})=1\]. / IMPLICIT-14435EA54ED7441A
+  - 可搜索名称：IMPLICIT-DD12E2907D3FC6F3 / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0586}\)=1\]. / IMPLICIT-DD12E2907D3FC6F3
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0588})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0587}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-2D8AF188201CDF81 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0588})=1\]. / IMPLICIT-2D8AF188201CDF81
+  - 可搜索名称：IMPLICIT-14435EA54ED7441A / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0587}\)=1\]. / IMPLICIT-14435EA54ED7441A
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0589})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0588}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-432C5E0C9C93EF56 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0589})=1\]. / IMPLICIT-432C5E0C9C93EF56
+  - 可搜索名称：IMPLICIT-2D8AF188201CDF81 / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0588}\)=1\]. / IMPLICIT-2D8AF188201CDF81
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0590})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0589}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-78CE974807242CDE / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0590})=1\]. / IMPLICIT-78CE974807242CDE
+  - 可搜索名称：IMPLICIT-432C5E0C9C93EF56 / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0589}\)=1\]. / IMPLICIT-432C5E0C9C93EF56
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0591})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0590}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-E6D3A63775F46991 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0591})=1\]. / IMPLICIT-E6D3A63775F46991
+  - 可搜索名称：IMPLICIT-78CE974807242CDE / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0590}\)=1\]. / IMPLICIT-78CE974807242CDE
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0592})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0591}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-1D4D5C437D818129 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0592})=1\]. / IMPLICIT-1D4D5C437D818129
+  - 可搜索名称：IMPLICIT-E6D3A63775F46991 / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0591}\)=1\]. / IMPLICIT-E6D3A63775F46991
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0593})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0592}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-0D481608ED80C1A5 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0593})=1\]. / IMPLICIT-0D481608ED80C1A5
+  - 可搜索名称：IMPLICIT-1D4D5C437D818129 / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0592}\)=1\]. / IMPLICIT-1D4D5C437D818129
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0594})=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0593}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-731497E791249DC4 / - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0594})=1\]. / IMPLICIT-731497E791249DC4
+  - 可搜索名称：IMPLICIT-0D481608ED80C1A5 / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0593}\)=1\]. / IMPLICIT-0D481608ED80C1A5
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. 归约到统一形式 Φ = -Σᵢ sᵢ/ln²(μ/Λᵢ) + C](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0594}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-34E7611E5AF6072D / - 2. 归约到统一形式 Φ = -Σᵢ sᵢ/ln²(μ/Λᵢ) + C / IMPLICIT-34E7611E5AF6072D / IMPLICIT-DDCFCD5E0AE0F3C2
+  - 可搜索名称：IMPLICIT-731497E791249DC4 / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0594}\)=1\]. / IMPLICIT-731497E791249DC4
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 2. 归约到统一形式 Φ = -Σᵢ sᵢ/ln²(μ/Λᵢ) + C](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. 归约到统一形式 Φ = -Σᵢ sᵢ/ln²\(μ/Λᵢ\) + C](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-DDCFCD5E0AE0F3C2 / - 2. 归约到统一形式 Φ = -Σᵢ sᵢ/ln²(μ/Λᵢ) + C / IMPLICIT-DDCFCD5E0AE0F3C2 / IMPLICIT-34E7611E5AF6072D
+  - 可搜索名称：IMPLICIT-34E7611E5AF6072D / - 2. 归约到统一形式 Φ = -Σᵢ sᵢ/ln²\(μ/Λᵢ\) + C / IMPLICIT-34E7611E5AF6072D / IMPLICIT-DDCFCD5E0AE0F3C2
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- \[#260｜r_cross=0不导致Ψ=0\](docs/zh/cases/items/C-0260.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 2. 归约到统一形式 Φ = -Σᵢ sᵢ/ln²\(μ/Λᵢ\) + C](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-D14E2F914930DDFE / - \[#260｜r_cross=0不导致Ψ=0\](docs/zh/cases/items/C-0260.md) / IMPLICIT-D14E2F914930DDFE / IMPLICIT-B01E5F4F7D3FC904
+  - 可搜索名称：IMPLICIT-DDCFCD5E0AE0F3C2 / - 2. 归约到统一形式 Φ = -Σᵢ sᵢ/ln²\(μ/Λᵢ\) + C / IMPLICIT-DDCFCD5E0AE0F3C2 / IMPLICIT-34E7611E5AF6072D
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- \[#363｜μ翻转时间计算 — BH/BL=5，C₀=0.1，γ=0.05，Cmax=2，P(biased)=0.2，tflip≈8.1个月 / μ翻转时间计算 - BH/BL=5, C₀=0.1, γ=0.05, Cmax=2, P(biased)=0.2, tflip≈8.1个月\](docs/zh/cases/items/C-0363.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- \[#260｜r_cross=0不导致Ψ=0\]\(docs/zh/cases/items/C-0260.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-B1C7A4443EE51DE1 / - \[#363｜μ翻转时间计算 — BH/BL=5，C₀=0.1，γ=0.05，Cmax=2，P(biased)=0.2，tflip≈8.1个月 / μ翻转时间计算 - BH/BL=5, C₀=0.1, γ=0.05, Cmax=2, P(biased)=0.2, tflip≈8.1个月\](docs/zh/cases/items/C-0363.md) / IMPLICIT-B1C7A4443EE51DE1 / IMPLICIT-251E1129B79C388F
+  - 可搜索名称：IMPLICIT-D14E2F914930DDFE / - \[#260｜r_cross=0不导致Ψ=0\]\(docs/zh/cases/items/C-0260.md\) / IMPLICIT-D14E2F914930DDFE / IMPLICIT-B01E5F4F7D3FC904
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- \[#387｜病毒的门控面切换——寄生前σ=0寄生后σ=1，没有中间态\](docs/zh/cases/items/C-0387.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- \[#363｜μ翻转时间计算 — BH/BL=5，C₀=0.1，γ=0.05，Cmax=2，P\(biased\)=0.2，tflip≈8.1个月 / μ翻转时间计算 - BH/BL=5, C₀=0.1, γ=0.05, Cmax=2, P\(biased\)=0.2, tflip≈8.1个月\]\(docs/zh/cases/items/C-0363.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-0F3C1605611E3896 / - \[#387｜病毒的门控面切换——寄生前σ=0寄生后σ=1，没有中间态\](docs/zh/cases/items/C-0387.md) / IMPLICIT-0F3C1605611E3896 / IMPLICIT-2E764E901A758B1C
+  - 可搜索名称：IMPLICIT-B1C7A4443EE51DE1 / - \[#363｜μ翻转时间计算 — BH/BL=5，C₀=0.1，γ=0.05，Cmax=2，P\(biased\)=0.2，tflip≈8.1个月 / μ翻转时间计算 - BH/BL=5, C₀=0.1, γ=0.05, Cmax=2, P\(biased\)=0.2, tflip≈8.1个月\]\(docs/zh/cases/items/C-0363.md\) / IMPLICIT-B1C7A4443EE51DE1 / IMPLICIT-251E1129B79C388F
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- \[#387｜病毒的门控面切换——寄生前σ=0寄生后σ=1，没有中间态\](docs/zh/cases/items/C-0387.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- \[#387｜病毒的门控面切换——寄生前σ=0寄生后σ=1，没有中间态\]\(docs/zh/cases/items/C-0387.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-CF150DC45A2817D8 / - \[#387｜病毒的门控面切换——寄生前σ=0寄生后σ=1，没有中间态\](docs/zh/cases/items/C-0387.md) / IMPLICIT-CF150DC45A2817D8 / IMPLICIT-0F3C1605611E3896
+  - 可搜索名称：IMPLICIT-0F3C1605611E3896 / - \[#387｜病毒的门控面切换——寄生前σ=0寄生后σ=1，没有中间态\]\(docs/zh/cases/items/C-0387.md\) / IMPLICIT-0F3C1605611E3896 / IMPLICIT-2E764E901A758B1C
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- \[#452｜Fisher不可逆vs Shannon不可逆 — 门控区Shannon熵S=-Σpᵢlnpᵢ更低（少一个可区分状态），但Fisher距离d=∞。从存活区到门控区Shannon熵降（违反第二定律？），但Fisher距离增（符合dFisher/dt≤0）。真正的不可逆在Fisher几何不在Shannon统计 / Fisher不可逆vs Shannon不可逆 - 门控区Shannon熵S=-Σpᵢlnpᵢ更低(少一个可区分状态), 但Fisher距离d=∞. 从存活](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- \[#387｜病毒的门控面切换——寄生前σ=0寄生后σ=1，没有中间态\]\(docs/zh/cases/items/C-0387.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-86E72A6CF18DEB25 / - \[#452｜Fisher不可逆vs Shannon不可逆 — 门控区Shannon熵S=-Σpᵢlnpᵢ更低（少一个可区分状态），但Fisher距离d=∞。从存活区到门控区Shannon熵降（违反第二定律？），但Fisher距离增（符合dFisher/dt≤0）。真正的不可逆在Fisher几何不在Shannon统计 / Fisher不可逆vs Shannon不可逆 - 门控区Shannon熵S=-Σpᵢlnpᵢ更低(少一个可区分状态), 但Fisher距离d=∞. 从存活 / IMPLICIT-86E72A6CF18DEB25
+  - 可搜索名称：IMPLICIT-CF150DC45A2817D8 / - \[#387｜病毒的门控面切换——寄生前σ=0寄生后σ=1，没有中间态\]\(docs/zh/cases/items/C-0387.md\) / IMPLICIT-CF150DC45A2817D8 / IMPLICIT-0F3C1605611E3896
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- \[#518｜规范破缺验证 — 创业团队：3人团队（所有εᵢ>>θC）→S₃完全对称，角色可互换。加入投资人后（C_exit↑→ε_econ↓）→S₃破缺到S₂，经济维度被锁定失去置换自由度。残存U(1)=创意维度仍可自由重组\](docs/zh/cases/items/C-0518.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- \[#452｜Fisher不可逆vs Shannon不可逆 — 门控区Shannon熵S=-Σpᵢlnpᵢ更低（少一个可区分状态），但Fisher距离d=∞。从存活区到门控区Shannon熵降（违反第二定律？），但Fisher距离增（符合dFisher/dt≤0）。真正的不可逆在Fisher几何不在Shannon统计 / Fisher不可逆vs Shannon不可逆 - 门控区Shannon熵S=-Σpᵢlnpᵢ更低\(少一个可区分状态\), 但Fisher距离d=∞. 从存活](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-625FBEE044775BF5 / - \[#518｜规范破缺验证 — 创业团队：3人团队（所有εᵢ>>θC）→S₃完全对称，角色可互换。加入投资人后（C_exit↑→ε_econ↓）→S₃破缺到S₂，经济维度被锁定失去置换自由度。残存U(1)=创意维度仍可自由重组\](docs/zh/cases/items/C-0518.md) / IMPLICIT-625FBEE044775BF5 / IMPLICIT-BB86EC8996FD7B42
+  - 可搜索名称：IMPLICIT-86E72A6CF18DEB25 / - \[#452｜Fisher不可逆vs Shannon不可逆 — 门控区Shannon熵S=-Σpᵢlnpᵢ更低（少一个可区分状态），但Fisher距离d=∞。从存活区到门控区Shannon熵降（违反第二定律？），但Fisher距离增（符合dFisher/dt≤0）。真正的不可逆在Fisher几何不在Shannon统计 / Fisher不可逆vs Shannon不可逆 - 门控区Shannon熵S=-Σpᵢlnpᵢ更低\(少一个可区分状态\), 但Fisher距离d=∞. 从存活 / IMPLICIT-86E72A6CF18DEB25
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- `g(r)=1/ln(r)` 只在 `r>0, r!=1` 的实数域有定义，在 `r=1` 有极点，在 `0<r<1` 为负。](../../../docs/foundation/physics-asset-correction-20260729.md)
+- [- \[#518｜规范破缺验证 — 创业团队：3人团队（所有εᵢ>>θC）→S₃完全对称，角色可互换。加入投资人后（C_exit↑→ε_econ↓）→S₃破缺到S₂，经济维度被锁定失去置换自由度。残存U\(1\)=创意维度仍可自由重组\]\(docs/zh/cases/items/C-0518.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-5A3ED9F23786B58F / - `g(r)=1/ln(r)` 只在 `r>0, r!=1` 的实数域有定义，在 `r=1` 有极点，在 `0<r<1` 为负。 / IMPLICIT-5A3ED9F23786B58F
+  - 可搜索名称：IMPLICIT-625FBEE044775BF5 / - \[#518｜规范破缺验证 — 创业团队：3人团队（所有εᵢ>>θC）→S₃完全对称，角色可互换。加入投资人后（C_exit↑→ε_econ↓）→S₃破缺到S₂，经济维度被锁定失去置换自由度。残存U\(1\)=创意维度仍可自由重组\]\(docs/zh/cases/items/C-0518.md\) / IMPLICIT-625FBEE044775BF5 / IMPLICIT-BB86EC8996FD7B42
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [- `g\(r\)=1/ln\(r\)` 只在 `r>0, r!=1` 的实数域有定义，在 `r=1` 有极点，在 `0<r<1` 为负。](../../../docs/foundation/physics-asset-correction-20260729.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-5A3ED9F23786B58F / - `g\(r\)=1/ln\(r\)` 只在 `r>0, r!=1` 的实数域有定义，在 `r=1` 有极点，在 `0<r<1` 为负。 / IMPLICIT-5A3ED9F23786B58F
   - 来源：`docs/foundation/physics-asset-correction-20260729.md`
   - 依赖：—；被引用：—
-- [- G₁乘法归零律:约束条件(任一因子=0则Φ=∞)](../../../docs/phi_meta_law.md)
+- [- G₁乘法归零律:约束条件\(任一因子=0则Φ=∞\)](../../../docs/phi_meta_law.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-89D7D84E7E2F5735 / - G₁乘法归零律:约束条件(任一因子=0则Φ=∞) / IMPLICIT-89D7D84E7E2F5735 / IMPLICIT-919FC6EE734D67D1
+  - 可搜索名称：IMPLICIT-89D7D84E7E2F5735 / - G₁乘法归零律:约束条件\(任一因子=0则Φ=∞\) / IMPLICIT-89D7D84E7E2F5735 / IMPLICIT-919FC6EE734D67D1
   - 来源：`docs/phi_meta_law.md`
   - 依赖：—；被引用：—
-- [- G₁乘法归零律:约束条件(任一因子=0则Φ=∞)](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- G₁乘法归零律:约束条件\(任一因子=0则Φ=∞\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-919FC6EE734D67D1 / - G₁乘法归零律:约束条件(任一因子=0则Φ=∞) / IMPLICIT-919FC6EE734D67D1 / IMPLICIT-89D7D84E7E2F5735
+  - 可搜索名称：IMPLICIT-919FC6EE734D67D1 / - G₁乘法归零律:约束条件\(任一因子=0则Φ=∞\) / IMPLICIT-919FC6EE734D67D1 / IMPLICIT-89D7D84E7E2F5735
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 原始命题: `E(x)=1 ⇔ ¬(J⁺(x)=1 ∧ J⁻(x)=1)` ## 语义 / Semantics](../../../reports/math-foundation/pilot-formal-audit-20260712.md)
+- [- 原始命题: `E\(x\)=1 ⇔ ¬\(J⁺\(x\)=1 ∧ J⁻\(x\)=1\)` ## 语义 / Semantics](../../../reports/math-foundation/pilot-formal-audit-20260712.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-59326E85EA8BAE83 / - 原始命题: `E(x)=1 ⇔ ¬(J⁺(x)=1 ∧ J⁻(x)=1)` ## 语义 / Semantics / IMPLICIT-59326E85EA8BAE83
+  - 可搜索名称：IMPLICIT-59326E85EA8BAE83 / - 原始命题: `E\(x\)=1 ⇔ ¬\(J⁺\(x\)=1 ∧ J⁻\(x\)=1\)` ## 语义 / Semantics / IMPLICIT-59326E85EA8BAE83
   - 来源：`reports/math-foundation/pilot-formal-audit-20260712.md`
   - 依赖：—；被引用：—
-- [- 原始命题: σ(Λ)=\|ln(M_Planck/Λ)\|/√(2ln\|ln(M_Planck/Λ)\|) **扩展注释 / Extended Annotation**](../../../reports/math-foundation/pilot-formal-audit-20260712.md)
+- [- 原始命题: σ\(Λ\)=\|ln\(M_Planck/Λ\)\|/√\(2ln\|ln\(M_Planck/Λ\)\|\) **扩展注释 / Extended Annotation**](../../../reports/math-foundation/pilot-formal-audit-20260712.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-5524C863341460F9 / - 原始命题: σ(Λ)=\|ln(M_Planck/Λ)\|/√(2ln\|ln(M_Planck/Λ)\|) **扩展注释 / Extended Annotation** / IMPLICIT-5524C863341460F9
+  - 可搜索名称：IMPLICIT-5524C863341460F9 / - 原始命题: σ\(Λ\)=\|ln\(M_Planck/Λ\)\|/√\(2ln\|ln\(M_Planck/Λ\)\|\) **扩展注释 / Extended Annotation** / IMPLICIT-5524C863341460F9
   - 来源：`reports/math-foundation/pilot-formal-audit-20260712.md`
   - 依赖：—；被引用：—
-- [- 原始命题: σ=√(dim_eff×ℏ_eff/(2μ_eff))，顿悟=1/ln→exp\[-ln²\]的切换点 **扩展注释 / Extended Annotation**](../../../reports/math-foundation/pilot-formal-audit-20260712.md)
+- [- 原始命题: σ=√\(dim_eff×ℏ_eff/\(2μ_eff\)\)，顿悟=1/ln→exp\[-ln²\]的切换点 **扩展注释 / Extended Annotation**](../../../reports/math-foundation/pilot-formal-audit-20260712.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-527CD66A54E606AF / - 原始命题: σ=√(dim_eff×ℏ_eff/(2μ_eff))，顿悟=1/ln→exp\[-ln²\]的切换点 **扩展注释 / Extended Annotation** / IMPLICIT-527CD66A54E606AF
+  - 可搜索名称：IMPLICIT-527CD66A54E606AF / - 原始命题: σ=√\(dim_eff×ℏ_eff/\(2μ_eff\)\)，顿悟=1/ln→exp\[-ln²\]的切换点 **扩展注释 / Extended Annotation** / IMPLICIT-527CD66A54E606AF
   - 来源：`reports/math-foundation/pilot-formal-audit-20260712.md`
   - 依赖：—；被引用：—
-- [- 原始命题: 框架发现能力，Φ = dim(V)×\|推导规则\|×r_cross(framework)。 **扩展注释 / Extended Annotation**](../../../reports/math-foundation/pilot-formal-audit-20260712.md)
+- [- 原始命题: 框架发现能力，Φ = dim\(V\)×\|推导规则\|×r_cross\(framework\)。 **扩展注释 / Extended Annotation**](../../../reports/math-foundation/pilot-formal-audit-20260712.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-AA9CEA43FA91229C / - 原始命题: 框架发现能力，Φ = dim(V)×\|推导规则\|×r_cross(framework)。 **扩展注释 / Extended Annotation** / IMPLICIT-AA9CEA43FA91229C
+  - 可搜索名称：IMPLICIT-AA9CEA43FA91229C / - 原始命题: 框架发现能力，Φ = dim\(V\)×\|推导规则\|×r_cross\(framework\)。 **扩展注释 / Extended Annotation** / IMPLICIT-AA9CEA43FA91229C
   - 来源：`reports/math-foundation/pilot-formal-audit-20260712.md`
   - 依赖：—；被引用：—
-- [- 建议新形式表达: E(x)=1 ⇔ ¬(J⁺(x)=1 ∧ J⁻(x)=1)](../../../reports/math-foundation/pilot-formal-audit-20260712.md)
+- [- 建议新形式表达: E\(x\)=1 ⇔ ¬\(J⁺\(x\)=1 ∧ J⁻\(x\)=1\)](../../../reports/math-foundation/pilot-formal-audit-20260712.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-000F30B6CFE66C18 / - 建议新形式表达: E(x)=1 ⇔ ¬(J⁺(x)=1 ∧ J⁻(x)=1) / IMPLICIT-000F30B6CFE66C18
+  - 可搜索名称：IMPLICIT-000F30B6CFE66C18 / - 建议新形式表达: E\(x\)=1 ⇔ ¬\(J⁺\(x\)=1 ∧ J⁻\(x\)=1\) / IMPLICIT-000F30B6CFE66C18
   - 来源：`reports/math-foundation/pilot-formal-audit-20260712.md`
   - 依赖：—；被引用：—
 - [104 来源质量审计](../../ASSET-CARDS.md#asset-hr-2cf0c16a60d1a3af)
@@ -884,14 +889,14 @@
   - 可搜索名称：NFC-6c1093da1afa57c2 / \["meta-function", "isomorphism"\]
   - 来源：`data/function_dependency.csv`
   - 依赖：—；被引用：—
-- [\[任务 106 合并后真相传播与当前真相调和\](../../../ITERATION.md)（规范化 ledger / 9 维 impact 引擎 / current-truth 投影 / fail-closed 验证器）。](../../ASSET-CARDS.md#asset-nfc-ea55d13b7ba7aeff)
+- [\[任务 106 合并后真相传播与当前真相调和\]\(../ITERATION.md\)（规范化 ledger / 9 维 impact 引擎 / current-truth 投影 / fail-closed 验证器）。](../../ASSET-CARDS.md#asset-nfc-ea55d13b7ba7aeff)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-ea55d13b7ba7aeff / \[任务 106 合并后真相传播与当前真相调和\](../../../ITERATION.md)（规范化 ledger / 9 维 impact 引擎 / current-truth 投影 / fail-closed 验证器）。 / - \[任务 106 合并后真相传播与当前真相调和\](../../../ITERATION.md)（规范化 ledger / 9 维 impact 引擎 / current-truth 投影 / fail-closed 验证器）。
+  - 可搜索名称：NFC-ea55d13b7ba7aeff / \[任务 106 合并后真相传播与当前真相调和\]\(../ITERATION.md\)（规范化 ledger / 9 维 impact 引擎 / current-truth 投影 / fail-closed 验证器）。 / - \[任务 106 合并后真相传播与当前真相调和\]\(../ITERATION.md\)（规范化 ledger / 9 维 impact 引擎 / current-truth 投影 / fail-closed 验证器）。
   - 来源：`RESULTS/RESEARCH-AND-ARTICLES.md`
   - 依赖：—；被引用：—
-- [`E(x)=1 ⇔ ¬(J⁺(x)=1 ∧ J⁻(x)=1)`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [`E\(x\)=1 ⇔ ¬\(J⁺\(x\)=1 ∧ J⁻\(x\)=1\)`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-0DA3E77303FE2388 / `E(x)=1 ⇔ ¬(J⁺(x)=1 ∧ J⁻(x)=1)` / IMPLICIT-0DA3E77303FE2388
+  - 可搜索名称：IMPLICIT-0DA3E77303FE2388 / `E\(x\)=1 ⇔ ¬\(J⁺\(x\)=1 ∧ J⁻\(x\)=1\)` / IMPLICIT-0DA3E77303FE2388
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
 - [`FACT`、`INFERENCE`、`ANALOGY`、`METAPHOR`、`PENDING` 必须可区分。](../../../docs/narrative-output-layer.md)
@@ -899,14 +904,14 @@
   - 可搜索名称：NFC-800d6f6d3aae8817 / `FACT`、`INFERENCE`、`ANALOGY`、`METAPHOR`、`PENDING` 必须可区分。
   - 来源：`docs/narrative-output-layer.md`
   - 依赖：—；被引用：—
-- [`I_iso(A,B)` 同构判定：文学叙事、历史叙事、个人叙事、教育叙事之间的同构](../../../outputs/getbrain/classic-problems-benchmark-supplement-20260707.md)
+- [`I_iso\(A,B\)` 同构判定：文学叙事、历史叙事、个人叙事、教育叙事之间的同构](../../../outputs/getbrain/classic-problems-benchmark-supplement-20260707.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-20a919203126e8ac / `I_iso(A,B)` 同构判定：文学叙事、历史叙事、个人叙事、教育叙事之间的同构
+  - 可搜索名称：NFC-20a919203126e8ac / `I_iso\(A,B\)` 同构判定：文学叙事、历史叙事、个人叙事、教育叙事之间的同构
   - 来源：`outputs/getbrain/classic-problems-benchmark-supplement-20260707.md`
   - 依赖：—；被引用：—
-- [`I_iso(A,B)` 同构判定：现代艺术与科学范式转移、制度变迁、媒介变化之间的结构同构](../../../outputs/getbrain/classic-problems-benchmark-supplement-20260707.md)
+- [`I_iso\(A,B\)` 同构判定：现代艺术与科学范式转移、制度变迁、媒介变化之间的结构同构](../../../outputs/getbrain/classic-problems-benchmark-supplement-20260707.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-4f1fb1f466592de9 / `I_iso(A,B)` 同构判定：现代艺术与科学范式转移、制度变迁、媒介变化之间的结构同构
+  - 可搜索名称：NFC-4f1fb1f466592de9 / `I_iso\(A,B\)` 同构判定：现代艺术与科学范式转移、制度变迁、媒介变化之间的结构同构
   - 来源：`outputs/getbrain/classic-problems-benchmark-supplement-20260707.md`
   - 依赖：—；被引用：—
 - [`MemoryProjection` is the narrow bridge into the existing](../../../reports/operations/ignition-122-federation-progress.md)
@@ -939,14 +944,14 @@
   - 可搜索名称：NFC-9ffcc1453bec31c8 / a typed, projection-only handoff to a named receiving authority.
   - 来源：`reports/research/reos-vnext-light-pilot-r1.md`
   - 依赖：—；被引用：—
-- [abstraction_validity := ∏_{x∈L_n} ∃y∈L_{n+1}, φ(x) = y（抽象有效性）](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [abstraction_validity := ∏_{x∈L_n} ∃y∈L_{n+1}, φ\(x\) = y（抽象有效性）](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-5987C8247FEDA61E / abstraction_validity := ∏_{x∈L_n} ∃y∈L_{n+1}, φ(x) = y（抽象有效性） / IMPLICIT-5987C8247FEDA61E / IMPLICIT-61688DC46EDB42B3
+  - 可搜索名称：IMPLICIT-5987C8247FEDA61E / abstraction_validity := ∏_{x∈L_n} ∃y∈L_{n+1}, φ\(x\) = y（抽象有效性） / IMPLICIT-5987C8247FEDA61E / IMPLICIT-61688DC46EDB42B3
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [abstraction_validity := ∏_{x∈L_n} ∃y∈L_{n+1}, φ(x) = y（抽象有效性）](../../../docs/phi_meta_law.md)
+- [abstraction_validity := ∏_{x∈L_n} ∃y∈L_{n+1}, φ\(x\) = y（抽象有效性）](../../../docs/phi_meta_law.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-61688DC46EDB42B3 / abstraction_validity := ∏_{x∈L_n} ∃y∈L_{n+1}, φ(x) = y（抽象有效性） / IMPLICIT-61688DC46EDB42B3 / IMPLICIT-5987C8247FEDA61E
+  - 可搜索名称：IMPLICIT-61688DC46EDB42B3 / abstraction_validity := ∏_{x∈L_n} ∃y∈L_{n+1}, φ\(x\) = y（抽象有效性） / IMPLICIT-61688DC46EDB42B3 / IMPLICIT-5987C8247FEDA61E
   - 来源：`docs/phi_meta_law.md`
   - 依赖：—；被引用：—
 - [active queue 排除；同一冻结评分模型的 task-110 projection 保留 C-03 作为已执行的](../../ASSET-CARDS.md#asset-nfc-d1eb87089fada196)
@@ -994,9 +999,9 @@
   - 可搜索名称：NFC-76acd555b97be62c / Ann Rev 2025 *From Prediction to Prescription* — `10.1146/annurev-biodatasci-103123-095750`
   - 来源：`data/external-research/088-FINAL-REPORT.md`
   - 依赖：—；被引用：—
-- [assert V.canon(used) == V.canon(pre_subset)](../../../evidence-program/tests/test_evidence_program.py)
+- [assert V.canon\(used\) == V.canon\(pre_subset\)](../../../evidence-program/tests/test_evidence_program.py)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-0960D69217B2803A / assert V.canon(used) == V.canon(pre_subset) / IMPLICIT-0960D69217B2803A
+  - 可搜索名称：IMPLICIT-0960D69217B2803A / assert V.canon\(used\) == V.canon\(pre_subset\) / IMPLICIT-0960D69217B2803A
   - 来源：`evidence-program/tests/test_evidence_program.py`
   - 依赖：—；被引用：—
 - [authority_changes: the OS↔executor contract, adapter/conformance surfaces, Reference Executor freeze, routing/approval/h](../../../STATE-CHANGELOG.md)
@@ -1009,9 +1014,9 @@
   - 可搜索名称：NFC-0532c427e1d01490 / benchmark 通过"结构增益 + 重述 + 失败 + pending"四类结果，测试点火框架是否真的有结构增益。如果点火框架只是重述，说明没有新增解释力；如果点火框架发生失败，说明边界选错或同构误判；如果点火框架只能 pending，
   - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
   - 依赖：—；被引用：—
-- [blocked = \[p for p in providers if p.get("status") == "BLOCKED"\]](../../../data/external-research/121-fulltext-resolver/121-validator.py)
+- [blocked = \[p for p in providers if p.get\("status"\) == "BLOCKED"\]](../../../data/external-research/121-fulltext-resolver/121-validator.py)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-E5D289A8FC58C0BD / blocked = \[p for p in providers if p.get("status") == "BLOCKED"\] / IMPLICIT-E5D289A8FC58C0BD
+  - 可搜索名称：IMPLICIT-E5D289A8FC58C0BD / blocked = \[p for p in providers if p.get\("status"\) == "BLOCKED"\] / IMPLICIT-E5D289A8FC58C0BD
   - 来源：`data/external-research/121-fulltext-resolver/121-validator.py`
   - 依赖：—；被引用：—
 - [bootstrap_topology := ∫_{Ω} ΔB_n / ΔB_{n-1} dΩ（自举拓扑积分）](../../../data/foundation/function-assets/identity-cards.jsonl)
@@ -1039,29 +1044,29 @@
   - 可搜索名称：C-0809 表演化假课与量化指标消解温度索引可见性验证 / c0809-index-visibility-check-20260708
   - 来源：`outputs/audit/c0809-index-visibility-check-20260708.md`
   - 依赖：—；被引用：—
-- [C002_quad_iso(A,B) := quadrant_A(x) = quadrant_B(φ(x))](../../../docs/phi_meta_law.md)
+- [C002_quad_iso\(A,B\) := quadrant_A\(x\) = quadrant_B\(φ\(x\)\)](../../../docs/phi_meta_law.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-78C675C751B125E6 / C002_quad_iso(A,B) := quadrant_A(x) = quadrant_B(φ(x)) / IMPLICIT-78C675C751B125E6 / IMPLICIT-B9AC3FC0D5A2D1D7
+  - 可搜索名称：IMPLICIT-78C675C751B125E6 / C002_quad_iso\(A,B\) := quadrant_A\(x\) = quadrant_B\(φ\(x\)\) / IMPLICIT-78C675C751B125E6 / IMPLICIT-B9AC3FC0D5A2D1D7
   - 来源：`docs/phi_meta_law.md`
   - 依赖：—；被引用：—
-- [C002_quad_iso(A,B) := quadrant_A(x) = quadrant_B(φ(x))](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [C002_quad_iso\(A,B\) := quadrant_A\(x\) = quadrant_B\(φ\(x\)\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-B9AC3FC0D5A2D1D7 / C002_quad_iso(A,B) := quadrant_A(x) = quadrant_B(φ(x)) / IMPLICIT-B9AC3FC0D5A2D1D7 / IMPLICIT-78C675C751B125E6
+  - 可搜索名称：IMPLICIT-B9AC3FC0D5A2D1D7 / C002_quad_iso\(A,B\) := quadrant_A\(x\) = quadrant_B\(φ\(x\)\) / IMPLICIT-B9AC3FC0D5A2D1D7 / IMPLICIT-78C675C751B125E6
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [C_unified_iso(A,B) := C_A(x,y) = C_B(φ(x), φ(y))](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [C_unified_iso\(A,B\) := C_A\(x,y\) = C_B\(φ\(x\), φ\(y\)\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-3FC896A7E95D388D / C_unified_iso(A,B) := C_A(x,y) = C_B(φ(x), φ(y)) / IMPLICIT-3FC896A7E95D388D / IMPLICIT-F2DEDDDE3E0DE46B
+  - 可搜索名称：IMPLICIT-3FC896A7E95D388D / C_unified_iso\(A,B\) := C_A\(x,y\) = C_B\(φ\(x\), φ\(y\)\) / IMPLICIT-3FC896A7E95D388D / IMPLICIT-F2DEDDDE3E0DE46B
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [C_unified_iso(A,B) := C_A(x,y) = C_B(φ(x), φ(y))](../../../docs/phi_meta_law.md)
+- [C_unified_iso\(A,B\) := C_A\(x,y\) = C_B\(φ\(x\), φ\(y\)\)](../../../docs/phi_meta_law.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-F2DEDDDE3E0DE46B / C_unified_iso(A,B) := C_A(x,y) = C_B(φ(x), φ(y)) / IMPLICIT-F2DEDDDE3E0DE46B / IMPLICIT-3FC896A7E95D388D
+  - 可搜索名称：IMPLICIT-F2DEDDDE3E0DE46B / C_unified_iso\(A,B\) := C_A\(x,y\) = C_B\(φ\(x\), φ\(y\)\) / IMPLICIT-F2DEDDDE3E0DE46B / IMPLICIT-3FC896A7E95D388D
   - 来源：`docs/phi_meta_law.md`
   - 依赖：—；被引用：—
-- [candidates = \[event for event in task_events if event.get("event_type") == "ITERATION_CANDIDATE"\]](../../../data/operations/iterations/114/publication/tools/validate_publication.py)
+- [candidates = \[event for event in task_events if event.get\("event_type"\) == "ITERATION_CANDIDATE"\]](../../../data/operations/iterations/114/publication/tools/validate_publication.py)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-F7664F7924081C3A / candidates = \[event for event in task_events if event.get("event_type") == "ITERATION_CANDIDATE"\] / IMPLICIT-F7664F7924081C3A
+  - 可搜索名称：IMPLICIT-F7664F7924081C3A / candidates = \[event for event in task_events if event.get\("event_type"\) == "ITERATION_CANDIDATE"\] / IMPLICIT-F7664F7924081C3A
   - 来源：`data/operations/iterations/114/publication/tools/validate_publication.py`
   - 依赖：—；被引用：—
 - [CHANGELOG.md](../../../CHANGELOG.md)
@@ -1079,134 +1084,134 @@
   - 可搜索名称：NFC-c4dbfb7e080846fc / CHANGELOG.md 与对应审计记录
   - 来源：`docs/VERSIONING.md`
   - 依赖：—；被引用：—
-- [check("anchor_verified = 30", recon.get("content_access_counts", {}).get("ANCHOR_VERIFIED", 0) == 30)](../../../data/external-research/121-fulltext-resolver/121c01/121c01-validator.py)
+- [check\("anchor_verified = 30", recon.get\("content_access_counts", {}\).get\("ANCHOR_VERIFIED", 0\) == 30\)](../../../data/external-research/121-fulltext-resolver/121c01/121c01-validator.py)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-F92BE9E2CEA48699 / check("anchor_verified = 30", recon.get("content_access_counts", {}).get("ANCHOR_VERIFIED", 0) == 30) / IMPLICIT-F92BE9E2CEA48699
+  - 可搜索名称：IMPLICIT-F92BE9E2CEA48699 / check\("anchor_verified = 30", recon.get\("content_access_counts", {}\).get\("ANCHOR_VERIFIED", 0\) == 30\) / IMPLICIT-F92BE9E2CEA48699
   - 来源：`data/external-research/121-fulltext-resolver/121c01/121c01-validator.py`
   - 依赖：—；被引用：—
-- [check("card IDs match selected IDs", set(card_ids) == set(selected_ids))](../../../data/external-research/121-fulltext-resolver/121c01/121c01-validator.py)
+- [check\("card IDs match selected IDs", set\(card_ids\) == set\(selected_ids\)\)](../../../data/external-research/121-fulltext-resolver/121c01/121c01-validator.py)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-4586F1EB64238358 / check("card IDs match selected IDs", set(card_ids) == set(selected_ids)) / IMPLICIT-4586F1EB64238358
+  - 可搜索名称：IMPLICIT-4586F1EB64238358 / check\("card IDs match selected IDs", set\(card_ids\) == set\(selected_ids\)\) / IMPLICIT-4586F1EB64238358
   - 来源：`data/external-research/121-fulltext-resolver/121c01/121c01-validator.py`
   - 依赖：—；被引用：—
-- [check("content_access total = 84", recon.get("content_access_counts", {}).get("LOCATED", 0) == 84)](../../../data/external-research/121-fulltext-resolver/121c01/121c01-validator.py)
+- [check\("content_access total = 84", recon.get\("content_access_counts", {}\).get\("LOCATED", 0\) == 84\)](../../../data/external-research/121-fulltext-resolver/121c01/121c01-validator.py)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-6BE9302FB67754A8 / check("content_access total = 84", recon.get("content_access_counts", {}).get("LOCATED", 0) == 84) / IMPLICIT-6BE9302FB67754A8
+  - 可搜索名称：IMPLICIT-6BE9302FB67754A8 / check\("content_access total = 84", recon.get\("content_access_counts", {}\).get\("LOCATED", 0\) == 84\) / IMPLICIT-6BE9302FB67754A8
   - 来源：`data/external-research/121-fulltext-resolver/121c01/121c01-validator.py`
   - 依赖：—；被引用：—
-- [check("downloaded = 79", recon.get("content_access_counts", {}).get("DOWNLOADED", 0) == 79)](../../../data/external-research/121-fulltext-resolver/121c01/121c01-validator.py)
+- [check\("downloaded = 79", recon.get\("content_access_counts", {}\).get\("DOWNLOADED", 0\) == 79\)](../../../data/external-research/121-fulltext-resolver/121c01/121c01-validator.py)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-C266467303F56181 / check("downloaded = 79", recon.get("content_access_counts", {}).get("DOWNLOADED", 0) == 79) / IMPLICIT-C266467303F56181
+  - 可搜索名称：IMPLICIT-C266467303F56181 / check\("downloaded = 79", recon.get\("content_access_counts", {}\).get\("DOWNLOADED", 0\) == 79\) / IMPLICIT-C266467303F56181
   - 来源：`data/external-research/121-fulltext-resolver/121c01/121c01-validator.py`
   - 依赖：—；被引用：—
-- [check("extracted_full = 72", recon.get("content_access_counts", {}).get("EXTRACTED_FULL", 0) == 72)](../../../data/external-research/121-fulltext-resolver/121c01/121c01-validator.py)
+- [check\("extracted_full = 72", recon.get\("content_access_counts", {}\).get\("EXTRACTED_FULL", 0\) == 72\)](../../../data/external-research/121-fulltext-resolver/121c01/121c01-validator.py)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-0881BE56AD855A26 / check("extracted_full = 72", recon.get("content_access_counts", {}).get("EXTRACTED_FULL", 0) == 72) / IMPLICIT-0881BE56AD855A26
+  - 可搜索名称：IMPLICIT-0881BE56AD855A26 / check\("extracted_full = 72", recon.get\("content_access_counts", {}\).get\("EXTRACTED_FULL", 0\) == 72\) / IMPLICIT-0881BE56AD855A26
   - 来源：`data/external-research/121-fulltext-resolver/121c01/121c01-validator.py`
   - 依赖：—；被引用：—
-- [check("extracted_partial = 7", recon.get("content_access_counts", {}).get("EXTRACTED_PARTIAL", 0) == 7)](../../../data/external-research/121-fulltext-resolver/121c01/121c01-validator.py)
+- [check\("extracted_partial = 7", recon.get\("content_access_counts", {}\).get\("EXTRACTED_PARTIAL", 0\) == 7\)](../../../data/external-research/121-fulltext-resolver/121c01/121c01-validator.py)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-0E8B37A969D5FF15 / check("extracted_partial = 7", recon.get("content_access_counts", {}).get("EXTRACTED_PARTIAL", 0) == 7) / IMPLICIT-0E8B37A969D5FF15
+  - 可搜索名称：IMPLICIT-0E8B37A969D5FF15 / check\("extracted_partial = 7", recon.get\("content_access_counts", {}\).get\("EXTRACTED_PARTIAL", 0\) == 7\) / IMPLICIT-0E8B37A969D5FF15
   - 来源：`data/external-research/121-fulltext-resolver/121c01/121c01-validator.py`
   - 依赖：—；被引用：—
-- [check("failed = 5", recon.get("content_access_counts", {}).get("FAILED_LEGAL_OA_NOT_FOUND", 0) == 5)](../../../data/external-research/121-fulltext-resolver/121c01/121c01-validator.py)
+- [check\("failed = 5", recon.get\("content_access_counts", {}\).get\("FAILED_LEGAL_OA_NOT_FOUND", 0\) == 5\)](../../../data/external-research/121-fulltext-resolver/121c01/121c01-validator.py)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-23DBAC2765E627C7 / check("failed = 5", recon.get("content_access_counts", {}).get("FAILED_LEGAL_OA_NOT_FOUND", 0) == 5) / IMPLICIT-23DBAC2765E627C7
+  - 可搜索名称：IMPLICIT-23DBAC2765E627C7 / check\("failed = 5", recon.get\("content_access_counts", {}\).get\("FAILED_LEGAL_OA_NOT_FOUND", 0\) == 5\) / IMPLICIT-23DBAC2765E627C7
   - 来源：`data/external-research/121-fulltext-resolver/121c01/121c01-validator.py`
   - 依赖：—；被引用：—
-- [check("no duplicate source IDs", len(selected_ids) == len(set(selected_ids)))](../../../data/external-research/121-fulltext-resolver/121c01/121c01-validator.py)
+- [check\("no duplicate source IDs", len\(selected_ids\) == len\(set\(selected_ids\)\)\)](../../../data/external-research/121-fulltext-resolver/121c01/121c01-validator.py)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-0877D9B403B700D3 / check("no duplicate source IDs", len(selected_ids) == len(set(selected_ids))) / IMPLICIT-0877D9B403B700D3
+  - 可搜索名称：IMPLICIT-0877D9B403B700D3 / check\("no duplicate source IDs", len\(selected_ids\) == len\(set\(selected_ids\)\)\) / IMPLICIT-0877D9B403B700D3
   - 来源：`data/external-research/121-fulltext-resolver/121c01/121c01-validator.py`
   - 依赖：—；被引用：—
-- [check("no PDF files in git diff", len(pdf_files) == 0)](../../../data/external-research/121-fulltext-resolver/121c01/121c01-validator.py)
+- [check\("no PDF files in git diff", len\(pdf_files\) == 0\)](../../../data/external-research/121-fulltext-resolver/121c01/121c01-validator.py)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-0D407E3566885054 / check("no PDF files in git diff", len(pdf_files) == 0) / IMPLICIT-0D407E3566885054
+  - 可搜索名称：IMPLICIT-0D407E3566885054 / check\("no PDF files in git diff", len\(pdf_files\) == 0\) / IMPLICIT-0D407E3566885054
   - 来源：`data/external-research/121-fulltext-resolver/121c01/121c01-validator.py`
   - 依赖：—；被引用：—
-- [check("not_reviewed = 49", recon.get("semantic_review_counts", {}).get("NOT_REVIEWED", 0) == 49)](../../../data/external-research/121-fulltext-resolver/121c01/121c01-validator.py)
+- [check\("not_reviewed = 49", recon.get\("semantic_review_counts", {}\).get\("NOT_REVIEWED", 0\) == 49\)](../../../data/external-research/121-fulltext-resolver/121c01/121c01-validator.py)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-C8D957A024C50F76 / check("not_reviewed = 49", recon.get("semantic_review_counts", {}).get("NOT_REVIEWED", 0) == 49) / IMPLICIT-C8D957A024C50F76
+  - 可搜索名称：IMPLICIT-C8D957A024C50F76 / check\("not_reviewed = 49", recon.get\("semantic_review_counts", {}\).get\("NOT_REVIEWED", 0\) == 49\) / IMPLICIT-C8D957A024C50F76
   - 来源：`data/external-research/121-fulltext-resolver/121c01/121c01-validator.py`
   - 依赖：—；被引用：—
-- [check("provisional = 30", recon.get("semantic_review_counts", {}).get("PROVISIONAL_NON_MAX_REVIEW", 0) == 30)](../../../data/external-research/121-fulltext-resolver/121c01/121c01-validator.py)
+- [check\("provisional = 30", recon.get\("semantic_review_counts", {}\).get\("PROVISIONAL_NON_MAX_REVIEW", 0\) == 30\)](../../../data/external-research/121-fulltext-resolver/121c01/121c01-validator.py)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-405B50E68DFBCCF9 / check("provisional = 30", recon.get("semantic_review_counts", {}).get("PROVISIONAL_NON_MAX_REVIEW", 0) == 30) / IMPLICIT-405B50E68DFBCCF9
+  - 可搜索名称：IMPLICIT-405B50E68DFBCCF9 / check\("provisional = 30", recon.get\("semantic_review_counts", {}\).get\("PROVISIONAL_NON_MAX_REVIEW", 0\) == 30\) / IMPLICIT-405B50E68DFBCCF9
   - 来源：`data/external-research/121-fulltext-resolver/121c01/121c01-validator.py`
   - 依赖：—；被引用：—
-- [check("run-state credential_fragments = 0", rs.get("credential_fragments") == 0)](../../../data/external-research/121-fulltext-resolver/121c01/121c01-validator.py)
+- [check\("run-state credential_fragments = 0", rs.get\("credential_fragments"\) == 0\)](../../../data/external-research/121-fulltext-resolver/121c01/121c01-validator.py)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-373622230946AC2C / check("run-state credential_fragments = 0", rs.get("credential_fragments") == 0) / IMPLICIT-373622230946AC2C
+  - 可搜索名称：IMPLICIT-373622230946AC2C / check\("run-state credential_fragments = 0", rs.get\("credential_fragments"\) == 0\) / IMPLICIT-373622230946AC2C
   - 来源：`data/external-research/121-fulltext-resolver/121c01/121c01-validator.py`
   - 依赖：—；被引用：—
-- [check("run-state frozen not modified", rs.get("frozen_files_modified") == False)](../../../data/external-research/121-fulltext-resolver/121c01/121c01-validator.py)
+- [check\("run-state frozen not modified", rs.get\("frozen_files_modified"\) == False\)](../../../data/external-research/121-fulltext-resolver/121c01/121c01-validator.py)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-347B4A1598C39FCD / check("run-state frozen not modified", rs.get("frozen_files_modified") == False) / IMPLICIT-347B4A1598C39FCD
+  - 可搜索名称：IMPLICIT-347B4A1598C39FCD / check\("run-state frozen not modified", rs.get\("frozen_files_modified"\) == False\) / IMPLICIT-347B4A1598C39FCD
   - 来源：`data/external-research/121-fulltext-resolver/121c01/121c01-validator.py`
   - 依赖：—；被引用：—
-- [check("run-state model", rs.get("reviewer_model") == "qclaw/pool-glm-5.2")](../../../data/external-research/121-fulltext-resolver/121c01/121c01-validator.py)
+- [check\("run-state model", rs.get\("reviewer_model"\) == "qclaw/pool-glm-5.2"\)](../../../data/external-research/121-fulltext-resolver/121c01/121c01-validator.py)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-7E7648AB7046C0D8 / check("run-state model", rs.get("reviewer_model") == "qclaw/pool-glm-5.2") / IMPLICIT-7E7648AB7046C0D8
+  - 可搜索名称：IMPLICIT-7E7648AB7046C0D8 / check\("run-state model", rs.get\("reviewer_model"\) == "qclaw/pool-glm-5.2"\) / IMPLICIT-7E7648AB7046C0D8
   - 来源：`data/external-research/121-fulltext-resolver/121c01/121c01-validator.py`
   - 依赖：—；被引用：—
-- [check("run-state no fallback", rs.get("fallback") == False)](../../../data/external-research/121-fulltext-resolver/121c01/121c01-validator.py)
+- [check\("run-state no fallback", rs.get\("fallback"\) == False\)](../../../data/external-research/121-fulltext-resolver/121c01/121c01-validator.py)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-ADEB4F9859B7FC7B / check("run-state no fallback", rs.get("fallback") == False) / IMPLICIT-ADEB4F9859B7FC7B
+  - 可搜索名称：IMPLICIT-ADEB4F9859B7FC7B / check\("run-state no fallback", rs.get\("fallback"\) == False\) / IMPLICIT-ADEB4F9859B7FC7B
   - 来源：`data/external-research/121-fulltext-resolver/121c01/121c01-validator.py`
   - 依赖：—；被引用：—
-- [check("run-state no model switch", rs.get("model_switch") == False)](../../../data/external-research/121-fulltext-resolver/121c01/121c01-validator.py)
+- [check\("run-state no model switch", rs.get\("model_switch"\) == False\)](../../../data/external-research/121-fulltext-resolver/121c01/121c01-validator.py)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-D668B79C3077305C / check("run-state no model switch", rs.get("model_switch") == False) / IMPLICIT-D668B79C3077305C
+  - 可搜索名称：IMPLICIT-D668B79C3077305C / check\("run-state no model switch", rs.get\("model_switch"\) == False\) / IMPLICIT-D668B79C3077305C
   - 来源：`data/external-research/121-fulltext-resolver/121c01/121c01-validator.py`
   - 依赖：—；被引用：—
-- [check("run-state pr_merged = 0", rs.get("pr_merged_or_closed") == 0)](../../../data/external-research/121-fulltext-resolver/121c01/121c01-validator.py)
+- [check\("run-state pr_merged = 0", rs.get\("pr_merged_or_closed"\) == 0\)](../../../data/external-research/121-fulltext-resolver/121c01/121c01-validator.py)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-884EFA095D113ACC / check("run-state pr_merged = 0", rs.get("pr_merged_or_closed") == 0) / IMPLICIT-884EFA095D113ACC
+  - 可搜索名称：IMPLICIT-884EFA095D113ACC / check\("run-state pr_merged = 0", rs.get\("pr_merged_or_closed"\) == 0\) / IMPLICIT-884EFA095D113ACC
   - 来源：`data/external-research/121-fulltext-resolver/121c01/121c01-validator.py`
   - 依赖：—；被引用：—
-- [check("run-state reasoning", rs.get("reviewer_reasoning_level") == "high")](../../../data/external-research/121-fulltext-resolver/121c01/121c01-validator.py)
+- [check\("run-state reasoning", rs.get\("reviewer_reasoning_level"\) == "high"\)](../../../data/external-research/121-fulltext-resolver/121c01/121c01-validator.py)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-FF063408F3E664F6 / check("run-state reasoning", rs.get("reviewer_reasoning_level") == "high") / IMPLICIT-FF063408F3E664F6
+  - 可搜索名称：IMPLICIT-FF063408F3E664F6 / check\("run-state reasoning", rs.get\("reviewer_reasoning_level"\) == "high"\) / IMPLICIT-FF063408F3E664F6
   - 来源：`data/external-research/121-fulltext-resolver/121c01/121c01-validator.py`
   - 依赖：—；被引用：—
-- [check(f"batch manifest entries = 7", len(batches) == 7)](../../../data/external-research/121-fulltext-resolver/121c01/121c01-validator.py)
+- [check\(f"batch manifest entries = 7", len\(batches\) == 7\)](../../../data/external-research/121-fulltext-resolver/121c01/121c01-validator.py)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-962552A210C61E73 / check(f"batch manifest entries = 7", len(batches) == 7) / IMPLICIT-962552A210C61E73
+  - 可搜索名称：IMPLICIT-962552A210C61E73 / check\(f"batch manifest entries = 7", len\(batches\) == 7\) / IMPLICIT-962552A210C61E73
   - 来源：`data/external-research/121-fulltext-resolver/121c01/121c01-validator.py`
   - 依赖：—；被引用：—
-- [check(f"comparison entries = 10", len(comparisons) == 10)](../../../data/external-research/121-fulltext-resolver/121c01/121c01-validator.py)
+- [check\(f"comparison entries = 10", len\(comparisons\) == 10\)](../../../data/external-research/121-fulltext-resolver/121c01/121c01-validator.py)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-3DCF3443981758C1 / check(f"comparison entries = 10", len(comparisons) == 10) / IMPLICIT-3DCF3443981758C1
+  - 可搜索名称：IMPLICIT-3DCF3443981758C1 / check\(f"comparison entries = 10", len\(comparisons\) == 10\) / IMPLICIT-3DCF3443981758C1
   - 来源：`data/external-research/121-fulltext-resolver/121c01/121c01-validator.py`
   - 依赖：—；被引用：—
-- [check(f"Function OS nodes = 9", len(nodes) == 9)](../../../data/external-research/121-fulltext-resolver/121c01/121c01-validator.py)
+- [check\(f"Function OS nodes = 9", len\(nodes\) == 9\)](../../../data/external-research/121-fulltext-resolver/121c01/121c01-validator.py)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-6ABF5564344382BB / check(f"Function OS nodes = 9", len(nodes) == 9) / IMPLICIT-6ABF5564344382BB
+  - 可搜索名称：IMPLICIT-6ABF5564344382BB / check\(f"Function OS nodes = 9", len\(nodes\) == 9\) / IMPLICIT-6ABF5564344382BB
   - 来源：`data/external-research/121-fulltext-resolver/121c01/121c01-validator.py`
   - 依赖：—；被引用：—
-- [check(f"GAP entries = 6", len(gaps) == 6)](../../../data/external-research/121-fulltext-resolver/121c01/121c01-validator.py)
+- [check\(f"GAP entries = 6", len\(gaps\) == 6\)](../../../data/external-research/121-fulltext-resolver/121c01/121c01-validator.py)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-177321658A1A3472 / check(f"GAP entries = 6", len(gaps) == 6) / IMPLICIT-177321658A1A3472
+  - 可搜索名称：IMPLICIT-177321658A1A3472 / check\(f"GAP entries = 6", len\(gaps\) == 6\) / IMPLICIT-177321658A1A3472
   - 来源：`data/external-research/121-fulltext-resolver/121c01/121c01-validator.py`
   - 依赖：—；被引用：—
-- [check(f"selected sources = 10", len(selected) == 10)](../../../data/external-research/121-fulltext-resolver/121c01/121c01-validator.py)
+- [check\(f"selected sources = 10", len\(selected\) == 10\)](../../../data/external-research/121-fulltext-resolver/121c01/121c01-validator.py)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-8BF311E802C0D220 / check(f"selected sources = 10", len(selected) == 10) / IMPLICIT-8BF311E802C0D220
+  - 可搜索名称：IMPLICIT-8BF311E802C0D220 / check\(f"selected sources = 10", len\(selected\) == 10\) / IMPLICIT-8BF311E802C0D220
   - 来源：`data/external-research/121-fulltext-resolver/121c01/121c01-validator.py`
   - 依赖：—；被引用：—
-- [check(f"{sid} reasoning = high", c.get("reviewer_reasoning_level") == "high")](../../../data/external-research/121-fulltext-resolver/121c01/121c01-validator.py)
+- [check\(f"{sid} reasoning = high", c.get\("reviewer_reasoning_level"\) == "high"\)](../../../data/external-research/121-fulltext-resolver/121c01/121c01-validator.py)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-4E4EB94FF7F09D81 / check(f"{sid} reasoning = high", c.get("reviewer_reasoning_level") == "high") / IMPLICIT-4E4EB94FF7F09D81
+  - 可搜索名称：IMPLICIT-4E4EB94FF7F09D81 / check\(f"{sid} reasoning = high", c.get\("reviewer_reasoning_level"\) == "high"\) / IMPLICIT-4E4EB94FF7F09D81
   - 来源：`data/external-research/121-fulltext-resolver/121c01/121c01-validator.py`
   - 依赖：—；被引用：—
-- [check(f"{sid} reviewer = GLM-5.2", c.get("reviewer_model") == "qclaw/pool-glm-5.2")](../../../data/external-research/121-fulltext-resolver/121c01/121c01-validator.py)
+- [check\(f"{sid} reviewer = GLM-5.2", c.get\("reviewer_model"\) == "qclaw/pool-glm-5.2"\)](../../../data/external-research/121-fulltext-resolver/121c01/121c01-validator.py)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-EB2D8345BC44158B / check(f"{sid} reviewer = GLM-5.2", c.get("reviewer_model") == "qclaw/pool-glm-5.2") / IMPLICIT-EB2D8345BC44158B
+  - 可搜索名称：IMPLICIT-EB2D8345BC44158B / check\(f"{sid} reviewer = GLM-5.2", c.get\("reviewer_model"\) == "qclaw/pool-glm-5.2"\) / IMPLICIT-EB2D8345BC44158B
   - 来源：`data/external-research/121-fulltext-resolver/121c01/121c01-validator.py`
   - 依赖：—；被引用：—
-- [Clos_bootstrap(V, R, n) = Clos_standard(V, R_n) ∪ ⋃_{k=0}^{n} f_reassemble(V_k, R_k) R_{k+1} = R_k ∪ Paths(f_reassemble(V_k, R_k)) **自举闭包严格大于标准闭包的证明：** 1. 标准闭包：Clos_standard(V) = V ∪ {推导可达变量}，有限步后收敛（推导不改变R） 2. 自举闭包：Clos_bootstrap(V) = Clos_](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [Clos_bootstrap\(V, R, n\) = Clos_standard\(V, R_n\) ∪ ⋃_{k=0}^{n} f_reassemble\(V_k, R_k\) R_{k+1} = R_k ∪ Paths\(f_reassemble\(V_k, R_k\)\) **自举闭包严格大于标准闭包的证明：** 1. 标准闭包：Clos_standard\(V\) = V ∪ {推导可达变量}，有限步后收敛（推导不改变R） 2. 自举闭包：Clos_bootstrap\(V\) = Clos_](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-9B37242C758F7CA8 / Clos_bootstrap(V, R, n) = Clos_standard(V, R_n) ∪ ⋃_{k=0}^{n} f_reassemble(V_k, R_k) R_{k+1} = R_k ∪ Paths(f_reassemble(V_k, R_k)) **自举闭包严格大于标准闭包的证明：** 1. 标准闭包：Clos_standard(V) = V ∪ {推导可达变量}，有限步后收敛（推导不改变R） 2. 自举闭包：Clos_bootstrap(V) = Clos_ / IMPLICIT-9B37242C758F7CA8
+  - 可搜索名称：IMPLICIT-9B37242C758F7CA8 / Clos_bootstrap\(V, R, n\) = Clos_standard\(V, R_n\) ∪ ⋃_{k=0}^{n} f_reassemble\(V_k, R_k\) R_{k+1} = R_k ∪ Paths\(f_reassemble\(V_k, R_k\)\) **自举闭包严格大于标准闭包的证明：** 1. 标准闭包：Clos_standard\(V\) = V ∪ {推导可达变量}，有限步后收敛（推导不改变R） 2. 自举闭包：Clos_bootstrap\(V\) = Clos_ / IMPLICIT-9B37242C758F7CA8
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
 - [COGEX full-text review: Python-shaped pseudo-programs, LM emulation, intermediate dictionaries, and metric-guided progra](../../../data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl)
@@ -1214,14 +1219,14 @@
   - 可搜索名称：NFC-1d5108fc9cec3665 / COGEX full-text review: Python-shaped pseudo-programs, LM emulation, intermediate dictionaries, and metric-guided progra
   - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl`
   - 依赖：—；被引用：—
-- [composition_consistency := ∫_{A×C} \|\|π_B→C(π_A→B(x)) - π_A→C(x)\|\|² dμ(x)（复合一致性）](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [composition_consistency := ∫_{A×C} \|\|π_B→C\(π_A→B\(x\)\) - π_A→C\(x\)\|\|² dμ\(x\)（复合一致性）](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-583C28DD00CE0077 / composition_consistency := ∫_{A×C} \|\|π_B→C(π_A→B(x)) - π_A→C(x)\|\|² dμ(x)（复合一致性） / IMPLICIT-583C28DD00CE0077 / IMPLICIT-6D83C95A468BC87E
+  - 可搜索名称：IMPLICIT-583C28DD00CE0077 / composition_consistency := ∫_{A×C} \|\|π_B→C\(π_A→B\(x\)\) - π_A→C\(x\)\|\|² dμ\(x\)（复合一致性） / IMPLICIT-583C28DD00CE0077 / IMPLICIT-6D83C95A468BC87E
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [composition_consistency := ∫_{A×C} \|\|π_B→C(π_A→B(x)) - π_A→C(x)\|\|² dμ(x)（复合一致性）](../../../docs/phi_meta_law.md)
+- [composition_consistency := ∫_{A×C} \|\|π_B→C\(π_A→B\(x\)\) - π_A→C\(x\)\|\|² dμ\(x\)（复合一致性）](../../../docs/phi_meta_law.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-6D83C95A468BC87E / composition_consistency := ∫_{A×C} \|\|π_B→C(π_A→B(x)) - π_A→C(x)\|\|² dμ(x)（复合一致性） / IMPLICIT-6D83C95A468BC87E / IMPLICIT-583C28DD00CE0077
+  - 可搜索名称：IMPLICIT-6D83C95A468BC87E / composition_consistency := ∫_{A×C} \|\|π_B→C\(π_A→B\(x\)\) - π_A→C\(x\)\|\|² dμ\(x\)（复合一致性） / IMPLICIT-6D83C95A468BC87E / IMPLICIT-583C28DD00CE0077
   - 来源：`docs/phi_meta_law.md`
   - 依赖：—；被引用：—
 - [consistency_topology := ∫_{Ω} composition_consistency × identity_preservation dΩ](../../../data/foundation/function-assets/identity-cards.jsonl)
@@ -1244,14 +1249,14 @@
   - 可搜索名称：IMPLICIT-CC76978CD5392882 / convergence_topology := ∫_{Ω} ΔΩ_n / ΔΩ_{n-1} dΩ / IMPLICIT-CC76978CD5392882 / IMPLICIT-99A7D27B022BD591
   - 来源：`docs/phi_meta_law.md`
   - 依赖：—；被引用：—
-- [coverage(d) := ∃x∈D_set, dimension(x) = d（维度覆盖判定）](../../../docs/phi_meta_law.md)
+- [coverage\(d\) := ∃x∈D_set, dimension\(x\) = d（维度覆盖判定）](../../../docs/phi_meta_law.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-A70E1C34511AC98E / coverage(d) := ∃x∈D_set, dimension(x) = d（维度覆盖判定） / IMPLICIT-A70E1C34511AC98E / IMPLICIT-B57884491928217F
+  - 可搜索名称：IMPLICIT-A70E1C34511AC98E / coverage\(d\) := ∃x∈D_set, dimension\(x\) = d（维度覆盖判定） / IMPLICIT-A70E1C34511AC98E / IMPLICIT-B57884491928217F
   - 来源：`docs/phi_meta_law.md`
   - 依赖：—；被引用：—
-- [coverage(d) := ∃x∈D_set, dimension(x) = d（维度覆盖判定）](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [coverage\(d\) := ∃x∈D_set, dimension\(x\) = d（维度覆盖判定）](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-B57884491928217F / coverage(d) := ∃x∈D_set, dimension(x) = d（维度覆盖判定） / IMPLICIT-B57884491928217F / IMPLICIT-A70E1C34511AC98E
+  - 可搜索名称：IMPLICIT-B57884491928217F / coverage\(d\) := ∃x∈D_set, dimension\(x\) = d（维度覆盖判定） / IMPLICIT-B57884491928217F / IMPLICIT-A70E1C34511AC98E
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
 - [current-truth 投影无矛盾**，且两次连续生成字节一致（确定性定点）。](../../../ITERATION.md)
@@ -1259,124 +1264,124 @@
   - 可搜索名称：NFC-4d78caa64e1c885e / current-truth 投影无矛盾**，且两次连续生成字节一致（确定性定点）。
   - 来源：`ITERATION.md`
   - 依赖：—；被引用：—
-- [D-meta-S1(A,B) := ∫(structure_A ≅ structure_B × mapping_consistency) / isomorphism_topology](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [D-meta-S1\(A,B\) := ∫\(structure_A ≅ structure_B × mapping_consistency\) / isomorphism_topology](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-39C0087943B8B283 / D-meta-S1(A,B) := ∫(structure_A ≅ structure_B × mapping_consistency) / isomorphism_topology / IMPLICIT-39C0087943B8B283 / IMPLICIT-5F2BFCC6A0B03046
+  - 可搜索名称：IMPLICIT-39C0087943B8B283 / D-meta-S1\(A,B\) := ∫\(structure_A ≅ structure_B × mapping_consistency\) / isomorphism_topology / IMPLICIT-39C0087943B8B283 / IMPLICIT-5F2BFCC6A0B03046
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [D-meta-S1(A,B) := ∫(structure_A ≅ structure_B × mapping_consistency) / isomorphism_topology](../../../docs/phi_meta_law.md)
+- [D-meta-S1\(A,B\) := ∫\(structure_A ≅ structure_B × mapping_consistency\) / isomorphism_topology](../../../docs/phi_meta_law.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-5F2BFCC6A0B03046 / D-meta-S1(A,B) := ∫(structure_A ≅ structure_B × mapping_consistency) / isomorphism_topology / IMPLICIT-5F2BFCC6A0B03046 / IMPLICIT-39C0087943B8B283
+  - 可搜索名称：IMPLICIT-5F2BFCC6A0B03046 / D-meta-S1\(A,B\) := ∫\(structure_A ≅ structure_B × mapping_consistency\) / isomorphism_topology / IMPLICIT-5F2BFCC6A0B03046 / IMPLICIT-39C0087943B8B283
   - 来源：`docs/phi_meta_law.md`
   - 依赖：—；被引用：—
-- [D-meta-S1(A,B) := ∫(structure_A ≅ structure_B × mapping_consistency) / isomorphism_topology](../../../docs/phi_meta_law.md)
+- [D-meta-S1\(A,B\) := ∫\(structure_A ≅ structure_B × mapping_consistency\) / isomorphism_topology](../../../docs/phi_meta_law.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-7b886136c887c9e1 / D-meta-S1(A,B) := ∫(structure_A ≅ structure_B × mapping_consistency) / isomorphism_topology
+  - 可搜索名称：NFC-7b886136c887c9e1 / D-meta-S1\(A,B\) := ∫\(structure_A ≅ structure_B × mapping_consistency\) / isomorphism_topology
   - 来源：`docs/phi_meta_law.md`
   - 依赖：—；被引用：—
-- [D-meta-S2(A,B) := ∫(projection_A→B × inverse_consistency) / projection_topology](../../../docs/phi_meta_law.md)
+- [D-meta-S2\(A,B\) := ∫\(projection_A→B × inverse_consistency\) / projection_topology](../../../docs/phi_meta_law.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-46EBD4625322269D / D-meta-S2(A,B) := ∫(projection_A→B × inverse_consistency) / projection_topology / IMPLICIT-46EBD4625322269D / IMPLICIT-D0CAC3B341DAC29D
+  - 可搜索名称：IMPLICIT-46EBD4625322269D / D-meta-S2\(A,B\) := ∫\(projection_A→B × inverse_consistency\) / projection_topology / IMPLICIT-46EBD4625322269D / IMPLICIT-D0CAC3B341DAC29D
   - 来源：`docs/phi_meta_law.md`
   - 依赖：—；被引用：—
-- [D-meta-S2(A,B) := ∫(projection_A→B × inverse_consistency) / projection_topology](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [D-meta-S2\(A,B\) := ∫\(projection_A→B × inverse_consistency\) / projection_topology](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-D0CAC3B341DAC29D / D-meta-S2(A,B) := ∫(projection_A→B × inverse_consistency) / projection_topology / IMPLICIT-D0CAC3B341DAC29D / IMPLICIT-46EBD4625322269D
+  - 可搜索名称：IMPLICIT-D0CAC3B341DAC29D / D-meta-S2\(A,B\) := ∫\(projection_A→B × inverse_consistency\) / projection_topology / IMPLICIT-D0CAC3B341DAC29D / IMPLICIT-46EBD4625322269D
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [D-meta-S2(A,B) := ∫(projection_A→B × inverse_consistency) / projection_topology](../../../docs/phi_meta_law.md)
+- [D-meta-S2\(A,B\) := ∫\(projection_A→B × inverse_consistency\) / projection_topology](../../../docs/phi_meta_law.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-39dc5795b8c6a0fc / D-meta-S2(A,B) := ∫(projection_A→B × inverse_consistency) / projection_topology
+  - 可搜索名称：NFC-39dc5795b8c6a0fc / D-meta-S2\(A,B\) := ∫\(projection_A→B × inverse_consistency\) / projection_topology
   - 来源：`docs/phi_meta_law.md`
   - 依赖：—；被引用：—
-- [D-meta-S3(A,B) := ∫(composition_consistency × identity_preservation) / consistency_topology](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [D-meta-S3\(A,B\) := ∫\(composition_consistency × identity_preservation\) / consistency_topology](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-78492CD342D5B627 / D-meta-S3(A,B) := ∫(composition_consistency × identity_preservation) / consistency_topology / IMPLICIT-78492CD342D5B627 / IMPLICIT-DA6238182D0286E4
+  - 可搜索名称：IMPLICIT-78492CD342D5B627 / D-meta-S3\(A,B\) := ∫\(composition_consistency × identity_preservation\) / consistency_topology / IMPLICIT-78492CD342D5B627 / IMPLICIT-DA6238182D0286E4
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [D-meta-S3(A,B) := ∫(composition_consistency × identity_preservation) / consistency_topology](../../../docs/phi_meta_law.md)
+- [D-meta-S3\(A,B\) := ∫\(composition_consistency × identity_preservation\) / consistency_topology](../../../docs/phi_meta_law.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-DA6238182D0286E4 / D-meta-S3(A,B) := ∫(composition_consistency × identity_preservation) / consistency_topology / IMPLICIT-DA6238182D0286E4 / IMPLICIT-78492CD342D5B627
+  - 可搜索名称：IMPLICIT-DA6238182D0286E4 / D-meta-S3\(A,B\) := ∫\(composition_consistency × identity_preservation\) / consistency_topology / IMPLICIT-DA6238182D0286E4 / IMPLICIT-78492CD342D5B627
   - 来源：`docs/phi_meta_law.md`
   - 依赖：—；被引用：—
-- [D-meta-S4(L_n, L_{n+1}) := ∫(abstraction_validity × irreducible_properties) / hierarchy_topology](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [D-meta-S4\(L_n, L_{n+1}\) := ∫\(abstraction_validity × irreducible_properties\) / hierarchy_topology](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-36C1648F357B5F8B / D-meta-S4(L_n, L_{n+1}) := ∫(abstraction_validity × irreducible_properties) / hierarchy_topology / IMPLICIT-36C1648F357B5F8B / IMPLICIT-3D50CD6712952202
+  - 可搜索名称：IMPLICIT-36C1648F357B5F8B / D-meta-S4\(L_n, L_{n+1}\) := ∫\(abstraction_validity × irreducible_properties\) / hierarchy_topology / IMPLICIT-36C1648F357B5F8B / IMPLICIT-3D50CD6712952202
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [D-meta-S4(L_n, L_{n+1}) := ∫(abstraction_validity × irreducible_properties) / hierarchy_topology](../../../docs/phi_meta_law.md)
+- [D-meta-S4\(L_n, L_{n+1}\) := ∫\(abstraction_validity × irreducible_properties\) / hierarchy_topology](../../../docs/phi_meta_law.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-3D50CD6712952202 / D-meta-S4(L_n, L_{n+1}) := ∫(abstraction_validity × irreducible_properties) / hierarchy_topology / IMPLICIT-3D50CD6712952202 / IMPLICIT-36C1648F357B5F8B
+  - 可搜索名称：IMPLICIT-3D50CD6712952202 / D-meta-S4\(L_n, L_{n+1}\) := ∫\(abstraction_validity × irreducible_properties\) / hierarchy_topology / IMPLICIT-3D50CD6712952202 / IMPLICIT-36C1648F357B5F8B
   - 来源：`docs/phi_meta_law.md`
   - 依赖：—；被引用：—
-- [D-meta-S5(Ω) := ∫(ΔΩ_n / ΔΩ_{n-1} × convergence_threshold) / convergence_topology](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [D-meta-S5\(Ω\) := ∫\(ΔΩ_n / ΔΩ_{n-1} × convergence_threshold\) / convergence_topology](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-2626FBBC6AA019D3 / D-meta-S5(Ω) := ∫(ΔΩ_n / ΔΩ_{n-1} × convergence_threshold) / convergence_topology / IMPLICIT-2626FBBC6AA019D3 / IMPLICIT-2E9EE92185D911F3
+  - 可搜索名称：IMPLICIT-2626FBBC6AA019D3 / D-meta-S5\(Ω\) := ∫\(ΔΩ_n / ΔΩ_{n-1} × convergence_threshold\) / convergence_topology / IMPLICIT-2626FBBC6AA019D3 / IMPLICIT-2E9EE92185D911F3
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [D-meta-S5(Ω) := ∫(ΔΩ_n / ΔΩ_{n-1} × convergence_threshold) / convergence_topology](../../../docs/phi_meta_law.md)
+- [D-meta-S5\(Ω\) := ∫\(ΔΩ_n / ΔΩ_{n-1} × convergence_threshold\) / convergence_topology](../../../docs/phi_meta_law.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-2E9EE92185D911F3 / D-meta-S5(Ω) := ∫(ΔΩ_n / ΔΩ_{n-1} × convergence_threshold) / convergence_topology / IMPLICIT-2E9EE92185D911F3 / IMPLICIT-2626FBBC6AA019D3
+  - 可搜索名称：IMPLICIT-2E9EE92185D911F3 / D-meta-S5\(Ω\) := ∫\(ΔΩ_n / ΔΩ_{n-1} × convergence_threshold\) / convergence_topology / IMPLICIT-2E9EE92185D911F3 / IMPLICIT-2626FBBC6AA019D3
   - 来源：`docs/phi_meta_law.md`
   - 依赖：—；被引用：—
-- [D179_dynamics_iso(A,B) := ∃φ: A→B, dynamics_A(x) = dynamics_B(φ(x))](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [D179_dynamics_iso\(A,B\) := ∃φ: A→B, dynamics_A\(x\) = dynamics_B\(φ\(x\)\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-6D747C108ACAAAE1 / D179_dynamics_iso(A,B) := ∃φ: A→B, dynamics_A(x) = dynamics_B(φ(x)) / IMPLICIT-6D747C108ACAAAE1 / IMPLICIT-F0E50BDA7998DEA1
+  - 可搜索名称：IMPLICIT-6D747C108ACAAAE1 / D179_dynamics_iso\(A,B\) := ∃φ: A→B, dynamics_A\(x\) = dynamics_B\(φ\(x\)\) / IMPLICIT-6D747C108ACAAAE1 / IMPLICIT-F0E50BDA7998DEA1
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [D179_dynamics_iso(A,B) := ∃φ: A→B, dynamics_A(x) = dynamics_B(φ(x))](../../../docs/phi_meta_law.md)
+- [D179_dynamics_iso\(A,B\) := ∃φ: A→B, dynamics_A\(x\) = dynamics_B\(φ\(x\)\)](../../../docs/phi_meta_law.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-F0E50BDA7998DEA1 / D179_dynamics_iso(A,B) := ∃φ: A→B, dynamics_A(x) = dynamics_B(φ(x)) / IMPLICIT-F0E50BDA7998DEA1 / IMPLICIT-6D747C108ACAAAE1
+  - 可搜索名称：IMPLICIT-F0E50BDA7998DEA1 / D179_dynamics_iso\(A,B\) := ∃φ: A→B, dynamics_A\(x\) = dynamics_B\(φ\(x\)\) / IMPLICIT-F0E50BDA7998DEA1 / IMPLICIT-6D747C108ACAAAE1
   - 来源：`docs/phi_meta_law.md`
   - 依赖：—；被引用：—
-- [D179_energy_iso(A,B) := ∃φ: A→B, energy_A(x) = energy_B(φ(x))](../../../docs/phi_meta_law.md)
+- [D179_energy_iso\(A,B\) := ∃φ: A→B, energy_A\(x\) = energy_B\(φ\(x\)\)](../../../docs/phi_meta_law.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-27B1EE47DCF44466 / D179_energy_iso(A,B) := ∃φ: A→B, energy_A(x) = energy_B(φ(x)) / IMPLICIT-27B1EE47DCF44466 / IMPLICIT-E93275C3AC93B3B7
+  - 可搜索名称：IMPLICIT-27B1EE47DCF44466 / D179_energy_iso\(A,B\) := ∃φ: A→B, energy_A\(x\) = energy_B\(φ\(x\)\) / IMPLICIT-27B1EE47DCF44466 / IMPLICIT-E93275C3AC93B3B7
   - 来源：`docs/phi_meta_law.md`
   - 依赖：—；被引用：—
-- [D179_energy_iso(A,B) := ∃φ: A→B, energy_A(x) = energy_B(φ(x))](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [D179_energy_iso\(A,B\) := ∃φ: A→B, energy_A\(x\) = energy_B\(φ\(x\)\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-E93275C3AC93B3B7 / D179_energy_iso(A,B) := ∃φ: A→B, energy_A(x) = energy_B(φ(x)) / IMPLICIT-E93275C3AC93B3B7 / IMPLICIT-27B1EE47DCF44466
+  - 可搜索名称：IMPLICIT-E93275C3AC93B3B7 / D179_energy_iso\(A,B\) := ∃φ: A→B, energy_A\(x\) = energy_B\(φ\(x\)\) / IMPLICIT-E93275C3AC93B3B7 / IMPLICIT-27B1EE47DCF44466
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [D179_info_iso(A,B) := ∃φ: A→B, info_A(x) = info_B(φ(x))](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [D179_info_iso\(A,B\) := ∃φ: A→B, info_A\(x\) = info_B\(φ\(x\)\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-65693939B1798C0C / D179_info_iso(A,B) := ∃φ: A→B, info_A(x) = info_B(φ(x)) / IMPLICIT-65693939B1798C0C / IMPLICIT-DDB52F2A86DF0A6E
+  - 可搜索名称：IMPLICIT-65693939B1798C0C / D179_info_iso\(A,B\) := ∃φ: A→B, info_A\(x\) = info_B\(φ\(x\)\) / IMPLICIT-65693939B1798C0C / IMPLICIT-DDB52F2A86DF0A6E
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [D179_info_iso(A,B) := ∃φ: A→B, info_A(x) = info_B(φ(x))](../../../docs/phi_meta_law.md)
+- [D179_info_iso\(A,B\) := ∃φ: A→B, info_A\(x\) = info_B\(φ\(x\)\)](../../../docs/phi_meta_law.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-DDB52F2A86DF0A6E / D179_info_iso(A,B) := ∃φ: A→B, info_A(x) = info_B(φ(x)) / IMPLICIT-DDB52F2A86DF0A6E / IMPLICIT-65693939B1798C0C
+  - 可搜索名称：IMPLICIT-DDB52F2A86DF0A6E / D179_info_iso\(A,B\) := ∃φ: A→B, info_A\(x\) = info_B\(φ\(x\)\) / IMPLICIT-DDB52F2A86DF0A6E / IMPLICIT-65693939B1798C0C
   - 来源：`docs/phi_meta_law.md`
   - 依赖：—；被引用：—
-- [D179_phase_iso(A,B) := ∃φ: A→B, phase_A(x) = phase_B(φ(x))](../../../docs/phi_meta_law.md)
+- [D179_phase_iso\(A,B\) := ∃φ: A→B, phase_A\(x\) = phase_B\(φ\(x\)\)](../../../docs/phi_meta_law.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-51EA1FFB0E85D1B7 / D179_phase_iso(A,B) := ∃φ: A→B, phase_A(x) = phase_B(φ(x)) / IMPLICIT-51EA1FFB0E85D1B7 / IMPLICIT-BC76427F94444416
+  - 可搜索名称：IMPLICIT-51EA1FFB0E85D1B7 / D179_phase_iso\(A,B\) := ∃φ: A→B, phase_A\(x\) = phase_B\(φ\(x\)\) / IMPLICIT-51EA1FFB0E85D1B7 / IMPLICIT-BC76427F94444416
   - 来源：`docs/phi_meta_law.md`
   - 依赖：—；被引用：—
-- [D179_phase_iso(A,B) := ∃φ: A→B, phase_A(x) = phase_B(φ(x))](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [D179_phase_iso\(A,B\) := ∃φ: A→B, phase_A\(x\) = phase_B\(φ\(x\)\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-BC76427F94444416 / D179_phase_iso(A,B) := ∃φ: A→B, phase_A(x) = phase_B(φ(x)) / IMPLICIT-BC76427F94444416 / IMPLICIT-51EA1FFB0E85D1B7
+  - 可搜索名称：IMPLICIT-BC76427F94444416 / D179_phase_iso\(A,B\) := ∃φ: A→B, phase_A\(x\) = phase_B\(φ\(x\)\) / IMPLICIT-BC76427F94444416 / IMPLICIT-51EA1FFB0E85D1B7
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [D179_scaling_iso(A,B) := ∃φ: A→B, scaling_A(x) = scaling_B(φ(x))](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [D179_scaling_iso\(A,B\) := ∃φ: A→B, scaling_A\(x\) = scaling_B\(φ\(x\)\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-27658ED457A82F3C / D179_scaling_iso(A,B) := ∃φ: A→B, scaling_A(x) = scaling_B(φ(x)) / IMPLICIT-27658ED457A82F3C / IMPLICIT-5632111310E10A3D
+  - 可搜索名称：IMPLICIT-27658ED457A82F3C / D179_scaling_iso\(A,B\) := ∃φ: A→B, scaling_A\(x\) = scaling_B\(φ\(x\)\) / IMPLICIT-27658ED457A82F3C / IMPLICIT-5632111310E10A3D
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [D179_scaling_iso(A,B) := ∃φ: A→B, scaling_A(x) = scaling_B(φ(x))](../../../docs/phi_meta_law.md)
+- [D179_scaling_iso\(A,B\) := ∃φ: A→B, scaling_A\(x\) = scaling_B\(φ\(x\)\)](../../../docs/phi_meta_law.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-5632111310E10A3D / D179_scaling_iso(A,B) := ∃φ: A→B, scaling_A(x) = scaling_B(φ(x)) / IMPLICIT-5632111310E10A3D / IMPLICIT-27658ED457A82F3C
+  - 可搜索名称：IMPLICIT-5632111310E10A3D / D179_scaling_iso\(A,B\) := ∃φ: A→B, scaling_A\(x\) = scaling_B\(φ\(x\)\) / IMPLICIT-5632111310E10A3D / IMPLICIT-27658ED457A82F3C
   - 来源：`docs/phi_meta_law.md`
   - 依赖：—；被引用：—
-- [D179_space_iso(A,B) := ∃φ: A→B, scale_A(x) = scale_B(φ(x))](../../../docs/phi_meta_law.md)
+- [D179_space_iso\(A,B\) := ∃φ: A→B, scale_A\(x\) = scale_B\(φ\(x\)\)](../../../docs/phi_meta_law.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-10FB38BAF219D048 / D179_space_iso(A,B) := ∃φ: A→B, scale_A(x) = scale_B(φ(x)) / IMPLICIT-10FB38BAF219D048 / IMPLICIT-F703DA2D45C240DF
+  - 可搜索名称：IMPLICIT-10FB38BAF219D048 / D179_space_iso\(A,B\) := ∃φ: A→B, scale_A\(x\) = scale_B\(φ\(x\)\) / IMPLICIT-10FB38BAF219D048 / IMPLICIT-F703DA2D45C240DF
   - 来源：`docs/phi_meta_law.md`
   - 依赖：—；被引用：—
-- [D179_space_iso(A,B) := ∃φ: A→B, scale_A(x) = scale_B(φ(x))](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [D179_space_iso\(A,B\) := ∃φ: A→B, scale_A\(x\) = scale_B\(φ\(x\)\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-F703DA2D45C240DF / D179_space_iso(A,B) := ∃φ: A→B, scale_A(x) = scale_B(φ(x)) / IMPLICIT-F703DA2D45C240DF / IMPLICIT-10FB38BAF219D048
+  - 可搜索名称：IMPLICIT-F703DA2D45C240DF / D179_space_iso\(A,B\) := ∃φ: A→B, scale_A\(x\) = scale_B\(φ\(x\)\) / IMPLICIT-F703DA2D45C240DF / IMPLICIT-10FB38BAF219D048
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
 - [D583 可移植来源引用清理审计报告（IGNITION-20260709-055）](../../ASSET-CARDS.md#asset-hr-b72bf8b27748c5e3)
@@ -1384,9 +1389,9 @@
   - 可搜索名称：D583 可移植来源引用清理审计报告（IGNITION-20260709-055） / d583-portable-source-reference-audit-20260711
   - 来源：`outputs/audit/d583-portable-source-reference-audit-20260711.md`
   - 依赖：—；被引用：—
-- [d_opt由"新门控面降低p"（αᵢ 0）的平衡决定。dΦ/dd=0→Σᵢ αᵢ/(1-pᵢ(d_opt))=0。d_opt是学习收益和维护成本的交叉点。](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [d_opt由"新门控面降低p"（αᵢ 0）的平衡决定。dΦ/dd=0→Σᵢ αᵢ/\(1-pᵢ\(d_opt\)\)=0。d_opt是学习收益和维护成本的交叉点。](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-8064B677F7A2F245 / d_opt由"新门控面降低p"（αᵢ 0）的平衡决定。dΦ/dd=0→Σᵢ αᵢ/(1-pᵢ(d_opt))=0。d_opt是学习收益和维护成本的交叉点。 / IMPLICIT-8064B677F7A2F245
+  - 可搜索名称：IMPLICIT-8064B677F7A2F245 / d_opt由"新门控面降低p"（αᵢ 0）的平衡决定。dΦ/dd=0→Σᵢ αᵢ/\(1-pᵢ\(d_opt\)\)=0。d_opt是学习收益和维护成本的交叉点。 / IMPLICIT-8064B677F7A2F245
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
 - [data/collisions/20260711-disobedience-subjectivity.json](../../../data/collisions/20260711-disobedience-subjectivity.json)
@@ -2497,10 +2502,5 @@
 - [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-10.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-10.json)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：A5049217362 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-10.json / A5049217362 / A5015269440
-  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-10.json`
-  - 依赖：—；被引用：—
-- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-10.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-10.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：A5086493258 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-10.json / A5086493258 / A5015269440
   - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-10.json`
   - 依赖：—；被引用：—

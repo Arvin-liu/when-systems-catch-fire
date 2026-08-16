@@ -4,6 +4,71 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [若任务涉及翻译、命题抽取、跨语言建模或 L6 公共故事、文章与作品反馈，还应读取 `docs/architecture/language-thought-logic-plane.md`、`docs/language-thought/READ](../../../AI-START-HERE.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-d7176361ace31526 / 若任务涉及翻译、命题抽取、跨语言建模或 L6 公共故事、文章与作品反馈，还应读取 `docs/architecture/language-thought-logic-plane.md`、`docs/language-thought/READ
+  - 来源：`AI-START-HERE.md`
+  - 依赖：—；被引用：—
+- [若任务需要全项目导航，读取 `docs/architecture/interactive-system-map.md`、`data/architecture/interactive-system-map.json` 与生成 SVG。图是当前](../../../AI-START-HERE.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-b6f00d6b81ac97c9 / 若任务需要全项目导航，读取 `docs/architecture/interactive-system-map.md`、`data/architecture/interactive-system-map.json` 与生成 SVG。图是当前
+  - 来源：`AI-START-HERE.md`
+  - 依赖：—；被引用：—
+- [若任务需要全项目导航，读取\[完整可点击系统图说明\]\(./architecture/interactive-system-map.md\)及机器 spec。图中节点和连线是当前导航或受约束信息流，不是 L7、因果图、严格同构或理论完整性证明。](../../../docs/ai-assistant-usage-reference.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-9285b83daa7463ed / 若任务需要全项目导航，读取\[完整可点击系统图说明\]\(./architecture/interactive-system-map.md\)及机器 spec。图中节点和连线是当前导航或受约束信息流，不是 L7、因果图、严格同构或理论完整性证明。
+  - 来源：`docs/ai-assistant-usage-reference.md`
+  - 依赖：—；被引用：—
+- [若声称外部定理或实证成立，必须给出外部证据状态。](../../../docs/math-foundation/04-proof-obligations.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-6f5389c2a8ad37f3 / 若声称外部定理或实证成立，必须给出外部证据状态。
+  - 来源：`docs/math-foundation/04-proof-obligations.md`
+  - 依赖：—；被引用：—
+- [若对象是非函数型定理、规律、机制、因果、不可能性、跨域对应、预测、经验或本体断言，还必须读取 `data/foundation/nonfunction-claims/claim-registry.jsonl`、生成索引和未来断言准入协议。t](../../../AI-START-HERE.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a6ebd3479ba6ee46 / 若对象是非函数型定理、规律、机制、因果、不可能性、跨域对应、预测、经验或本体断言，还必须读取 `data/foundation/nonfunction-claims/claim-registry.jsonl`、生成索引和未来断言准入协议。t
+  - 来源：`AI-START-HERE.md`
+  - 依赖：—；被引用：—
+- [范围：数学、物理学、历史学、社会科学、经济学、工程学、医学、法学、文学、艺术、教育学、AI / 计算机科学](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-d67116534eb11a20 / 范围：数学、物理学、历史学、社会科学、经济学、工程学、医学、法学、文学、艺术、教育学、AI / 计算机科学
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [范围：材料错误、边界选错、尺度错配、函数过度泛化、同构误判、证据等级不足、AI 过度解释、L2 推论误写成 L5 结论、学科证据制度误配、观察者位置错误、把局部机制误写成全局规律、把历史叙事误写成因果定律](../../../outputs/getbrain/failure-typology-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-b970e9961bfc36a1 / 范围：材料错误、边界选错、尺度错配、函数过度泛化、同构误判、证据等级不足、AI 过度解释、L2 推论误写成 L5 结论、学科证据制度误配、观察者位置错误、把局部机制误写成全局规律、把历史叙事误写成因果定律
+  - 来源：`outputs/getbrain/failure-typology-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [范围：物理学、数学、历史学三门学科](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-01ec927e633c8ab6 / 范围：物理学、数学、历史学三门学科
+  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
+  - 依赖：—；被引用：—
+- [补齐作者、多材料证据或显式 pending；](../../../outputs/book-collisions/20260709-22-book-validation/formalization-crosswalk.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-5e089fa33a160e14 / 补齐作者、多材料证据或显式 pending；
+  - 来源：`outputs/book-collisions/20260709-22-book-validation/formalization-crosswalk.md`
+  - 依赖：—；被引用：—
+- [衰减率干预函数](../../../data/foundation/adjudications/079-method-audit.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D31 / 衰减率干预函数 / D31
+  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
+  - 依赖：D1, D90；被引用：NFC-9298361a7db7437e, NFC-b87c5821c1161cb2
+- [要求：证明原命题，不允许证明弱化版本](../../../docs/foundation/architecture-structure-freeze-v1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-c354bb0f2af34671 / 要求：证明原命题，不允许证明弱化版本
+  - 来源：`docs/foundation/architecture-structure-freeze-v1.md`
+  - 依赖：—；被引用：—
+- [覆盖领域：数学、物理学、历史学、社会科学与经济学、医学与心理健康、法律、AI 与计算机科学、文学艺术与审美](../../../outputs/audit/p1-extraction-feasibility-audit-20260707.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-b5ea519fc98b411f / 覆盖领域：数学、物理学、历史学、社会科学与经济学、医学与心理健康、法律、AI 与计算机科学、文学艺术与审美
+  - 来源：`outputs/audit/p1-extraction-feasibility-audit-20260707.md`
+  - 依赖：—；被引用：—
+- [规范桥接**：描述事实不能在无规范前提时推出应当结论。](../../../docs/foundation/logic/README.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-48d7d474a34be7b0 / 规范桥接**：描述事实不能在无规范前提时推出应当结论。
+  - 来源：`docs/foundation/logic/README.md`
+  - 依赖：—；被引用：—
 - [解码门槛降低](../../../data/foundation/adjudications/079-method-audit.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：D151 / 解码门槛降低 / D151 / D92
@@ -14,9 +79,9 @@
   - 可搜索名称：D92 / 解码门槛降低 / D92 / D151
   - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
   - 依赖：D180, D91；被引用：NFC-06c6fa520f4b06d0, NFC-07c2f64c685a43ea, NFC-1132930d7ca5c04e, NFC-283e6b4348b62d86
-- [解读偏置函数(核心疑问→错误解读的数学结构)](../../../data/foundation/adjudications/079-method-audit.jsonl)
+- [解读偏置函数\(核心疑问→错误解读的数学结构\)](../../../data/foundation/adjudications/079-method-audit.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：D57 / 解读偏置函数(核心疑问→错误解读的数学结构) / D57
+  - 可搜索名称：D57 / 解读偏置函数\(核心疑问→错误解读的数学结构\) / D57
   - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
   - 依赖：D1, D90；被引用：NFC-1afde405a39a5277, NFC-1ecaba2f93ccb9ea, NFC-30204a939b4bef84, NFC-318c64b0be0bac46
 - [计算机科学命题成立需要形式证明、工程验证、benchmark、实验评估。](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
@@ -444,19 +509,19 @@
   - 可搜索名称：NFC-db9f0bd184a2e1a0 / 请明确区分“当前仓库能力”“候选派生表示”和“已证明的科学理论”。
   - 来源：`docs/ai-assistant-usage-reference.md`
   - 依赖：—；被引用：—
-- [诺特定理验证 — 5维对称系统(fi相同),∑ηi=5×0.25=1.25恒定。打破对称后(1维门槛提高),∑ηi仍=1.25但分布不均](../../../data/foundation/evidence/evidence.jsonl)
+- [诺特定理验证 — 5维对称系统\(fi相同\),∑ηi=5×0.25=1.25恒定。打破对称后\(1维门槛提高\),∑ηi仍=1.25但分布不均](../../../data/foundation/evidence/evidence.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-ac3a47b6054cd2bf / 诺特定理验证 — 5维对称系统(fi相同),∑ηi=5×0.25=1.25恒定。打破对称后(1维门槛提高),∑ηi仍=1.25但分布不均
+  - 可搜索名称：NFC-ac3a47b6054cd2bf / 诺特定理验证 — 5维对称系统\(fi相同\),∑ηi=5×0.25=1.25恒定。打破对称后\(1维门槛提高\),∑ηi仍=1.25但分布不均
   - 来源：`data/foundation/evidence/evidence.jsonl`
   - 依赖：—；被引用：—
-- [读 \[任务 110 的独立复制结果\](../../../evidence-program/runs/IGNITION-EVIDENCE-PILOT-R1-OPENALEX-DOI-REPLICATION-20260801/RESULT.md)，先确认 1](../../../HUMAN-READING.md)
+- [读 \[任务 110 的独立复制结果\]\(./evidence-program/runs/IGNITION-EVIDENCE-PILOT-R1-OPENALEX-DOI-REPLICATION-20260801/RESULT.md\)，先确认 1](../../../HUMAN-READING.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-c168359ba1209aa8 / 读 \[任务 110 的独立复制结果\](../../../evidence-program/runs/IGNITION-EVIDENCE-PILOT-R1-OPENALEX-DOI-REPLICATION-20260801/RESULT.md)，先确认 1
+  - 可搜索名称：NFC-c168359ba1209aa8 / 读 \[任务 110 的独立复制结果\]\(./evidence-program/runs/IGNITION-EVIDENCE-PILOT-R1-OPENALEX-DOI-REPLICATION-20260801/RESULT.md\)，先确认 1
   - 来源：`HUMAN-READING.md`
   - 依赖：—；被引用：—
-- [读 \[开放问题\](../../../RESULTS/OPEN-QUESTIONS.md)，区分完成的治理工作与尚未完成的科学、数学和实证工作。](../../../HUMAN-READING.md)
+- [读 \[开放问题\]\(./RESULTS/OPEN-QUESTIONS.md\)，区分完成的治理工作与尚未完成的科学、数学和实证工作。](../../../HUMAN-READING.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-d1bde9fbd7f31f06 / 读 \[开放问题\](../../../RESULTS/OPEN-QUESTIONS.md)，区分完成的治理工作与尚未完成的科学、数学和实证工作。
+  - 可搜索名称：NFC-d1bde9fbd7f31f06 / 读 \[开放问题\]\(./RESULTS/OPEN-QUESTIONS.md\)，区分完成的治理工作与尚未完成的科学、数学和实证工作。
   - 来源：`HUMAN-READING.md`
   - 依赖：—；被引用：—
 - [读取任务说明 → 2. 确认输入材料完整（本地正文，非仅 URL）→ 3. 跑 `validate_data.py` 确认 `ALL_P1_DATA_VALID` → 4. 加载 P1 七类数据 → 5. 读函数表 → 6. 读案例表 →](../../../outputs/audit/agent-project-understanding-20260708.md)
@@ -744,9 +809,9 @@
   - 可搜索名称：NFC-0b93dd2554ea0a81 / 较早的 `1.3.0` 降为 Historical，Q32I 为 Closed。它明确分离 authority 类型、execution capability 与 validation capability，只允许真实、确定性且完整物化声明
   - 来源：`AI-HANDOFF.md`
   - 依赖：—；被引用：—
-- [输出：artifact_type (Lean/Z3/SymPy) + proof_script + type_check_output](../../../docs/foundation/architecture-structure-freeze-v1.md)
+- [输出：artifact_type \(Lean/Z3/SymPy\) + proof_script + type_check_output](../../../docs/foundation/architecture-structure-freeze-v1.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-481709d0a4fd6b18 / 输出：artifact_type (Lean/Z3/SymPy) + proof_script + type_check_output
+  - 可搜索名称：NFC-481709d0a4fd6b18 / 输出：artifact_type \(Lean/Z3/SymPy\) + proof_script + type_check_output
   - 来源：`docs/foundation/architecture-structure-freeze-v1.md`
   - 依赖：—；被引用：—
 - [输出：提出「紧绷美学」——高努力本身可合理，但不等于人格证明。](../../../outputs/collisions/20260711-disobedience-subjectivity/mechanism-extraction.md)
@@ -769,9 +834,9 @@
   - 可搜索名称：D349 / 过分散相图函数 / D349
   - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
   - 依赖：D271, D289, D290, D360；被引用：NFC-093364dedf78655c, NFC-1f3e5d51beb02e43, NFC-23468eac46a7a6ab, NFC-3316bb6aeab1d2f5
-- [过渡期窗口衰减函数(新发现)](../../../data/foundation/adjudications/079-method-audit.jsonl)
+- [过渡期窗口衰减函数\(新发现\)](../../../data/foundation/adjudications/079-method-audit.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：D59 / 过渡期窗口衰减函数(新发现) / D59
+  - 可搜索名称：D59 / 过渡期窗口衰减函数\(新发现\) / D59
   - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
   - 依赖：D1, D90；被引用：NFC-18390e9aa2fa0245, NFC-1f49275a4076c26d, NFC-4bc29050b1a3683d, NFC-78b828b1bd1c174c
 - [这不是一个今天新发明的“元元协议”。它是对仓库中已经反复运行的接口第一次做整体识别和显式绑定。独立反统一审查裁定：当前证据支持阶段性成熟的 federation，不足以证明一个共享状态机或单一生命周期意义上的统一架构。](../../../docs/architecture/epistemic-governance-kernel-and-federated-planes.md)
@@ -1129,9 +1194,12 @@
   - 可搜索名称：NFC-4cbed646492d157e / 逻辑（命题、谓词、证明、公理系统）
   - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
   - 依赖：—；被引用：—
-- [遇到定理、规律、机制、因果、不可能性、跨域对应、预测或经验断言时，还要核对\[全语料非函数断言索引\](../../../docs/foundation/nonfunction-claim-adjudication-index.md)与\[未来断言准入协议\](../../../docs/ai-assistant-usage-reference.md)
+- [遇到定理、规律、机制、因果、不可能性、跨域对应、预测或经验断言时，还要核对\[全语料非函数断言索引\]\(./foundation/nonfunction-claim-adjudication-index.md\)与\[未来断言准入协议\]\(./fou](../../../docs/ai-assistant-usage-reference.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-9fc223a2bdf5b9e7 / 遇到定理、规律、机制、因果、不可能性、跨域对应、预测或经验断言时，还要核对\[全语料非函数断言索引\](../../../docs/foundation/nonfunction-claim-adjudication-index.md)与\[未来断言准入协议\](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 可搜索名称：NFC-9fc223a2bdf5b9e7 / 遇到定理、规律、机制、因果、不可能性、跨域对应、预测或经验断言时，还要核对\[全语料非函数断言索引\]\(./foundation/nonfunction-claim-adjudication-index.md\)与\[未来断言准入协议\]\(./fou
+  - 来源：`docs/ai-assistant-usage-reference.md`
+  - 依赖：—；被引用：—
+- [道德自居机制通过Sigmoid量化，是认知偏差的数学表达](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-b27016d6f35725b5 / 道德自居机制通过Sigmoid量化，是认知偏差的数学表达
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
@@ -1161,9 +1229,9 @@
   - 可搜索名称：D148 / 遮蔽-补偿-成本三角约束,三角锁死 / D148
   - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
   - 依赖：D180, D91；被引用：NFC-35bdae6c3f841720, NFC-8718860205f23966, NFC-88aa4d3bfe5d76a2, NFC-c217a05b05ef16d6
-- [遮蔽函数，双源：提议者主动遮蔽H_pro + 系统不兼容性Σ_compatibility。退化类型 = argmax(H_pro, Σ_compatibility)。](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [遮蔽函数，双源：提议者主动遮蔽H_pro + 系统不兼容性Σ_compatibility。退化类型 = argmax\(H_pro, Σ_compatibility\)。](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-1D1DCFD3AC5843AD / 遮蔽函数，双源：提议者主动遮蔽H_pro + 系统不兼容性Σ_compatibility。退化类型 = argmax(H_pro, Σ_compatibility)。 / IMPLICIT-1D1DCFD3AC5843AD
+  - 可搜索名称：IMPLICIT-1D1DCFD3AC5843AD / 遮蔽函数，双源：提议者主动遮蔽H_pro + 系统不兼容性Σ_compatibility。退化类型 = argmax\(H_pro, Σ_compatibility\)。 / IMPLICIT-1D1DCFD3AC5843AD
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
 - [配分函数-门控和函数](../../../data/foundation/adjudications/079-method-audit.jsonl)
@@ -1376,14 +1444,14 @@
   - 可搜索名称：NFC-94d1ec4965edaad0 / 门控面合并统一函数
   - 来源：`data/foundation/formal-objects/objects.jsonl`
   - 依赖：—；被引用：—
-- [门控面合并统一函数，当两个门控面Λ_A和Λ_B在μ以上合并为Λ_AB时：Φ_before = 1/ln(μ/Λ_A) + 1/ln(μ/Λ_B) → Φ_after = 1/ln(μ/Λ_AB)。合并条件：Λ_A(μ)和Λ_B(μ)在μ>μ](../../../data/math-foundation/function-provenance-ledger.csv)
+- [门控面合并统一函数，当两个门控面Λ_A和Λ_B在μ以上合并为Λ_AB时：Φ_before = 1/ln\(μ/Λ_A\) + 1/ln\(μ/Λ_B\) → Φ_after = 1/ln\(μ/Λ_AB\)。合并条件：Λ_A\(μ\)和Λ_B\(μ\)在μ>μ](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-67a5ee825c41dcda / 门控面合并统一函数，当两个门控面Λ_A和Λ_B在μ以上合并为Λ_AB时：Φ_before = 1/ln(μ/Λ_A) + 1/ln(μ/Λ_B) → Φ_after = 1/ln(μ/Λ_AB)。合并条件：Λ_A(μ)和Λ_B(μ)在μ>μ
+  - 可搜索名称：NFC-67a5ee825c41dcda / 门控面合并统一函数，当两个门控面Λ_A和Λ_B在μ以上合并为Λ_AB时：Φ_before = 1/ln\(μ/Λ_A\) + 1/ln\(μ/Λ_B\) → Φ_after = 1/ln\(μ/Λ_AB\)。合并条件：Λ_A\(μ\)和Λ_B\(μ\)在μ>μ
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：—；被引用：—
-- [门控面合并统一函数，当两个门控面Λ_A和Λ_B在μ以上合并为Λ_AB时：Φ_before = 1/ln(μ/Λ_A) + 1/ln(μ/Λ_B) → Φ_after = 1/ln(μ/Λ_AB)。合并条件：Λ_A(μ)和Λ_B(μ)在μ>μ](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+- [门控面合并统一函数，当两个门控面Λ_A和Λ_B在μ以上合并为Λ_AB时：Φ_before = 1/ln\(μ/Λ_A\) + 1/ln\(μ/Λ_B\) → Φ_after = 1/ln\(μ/Λ_AB\)。合并条件：Λ_A\(μ\)和Λ_B\(μ\)在μ>μ](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-e5a3cf1d92922099 / 门控面合并统一函数，当两个门控面Λ_A和Λ_B在μ以上合并为Λ_AB时：Φ_before = 1/ln(μ/Λ_A) + 1/ln(μ/Λ_B) → Φ_after = 1/ln(μ/Λ_AB)。合并条件：Λ_A(μ)和Λ_B(μ)在μ>μ
+  - 可搜索名称：NFC-e5a3cf1d92922099 / 门控面合并统一函数，当两个门控面Λ_A和Λ_B在μ以上合并为Λ_AB时：Φ_before = 1/ln\(μ/Λ_A\) + 1/ln\(μ/Λ_B\) → Φ_after = 1/ln\(μ/Λ_AB\)。合并条件：Λ_A\(μ\)和Λ_B\(μ\)在μ>μ
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
 - [门槛碾压函数](../../../analysis/corpus-relation/cluster_source_briefs/C000.md)
@@ -1391,19 +1459,19 @@
   - 可搜索名称：D169 / 门槛碾压函数 / D169
   - 来源：`analysis/corpus-relation/cluster_source_briefs/C000.md`
   - 依赖：D180, D91；被引用：D189, NFC-1ba338693d8bb8fd, NFC-2a0372f3d4c7809f, NFC-415b7599f094731a
-- [门槛碾压函数，Λ(t) = Λ₀ × e^(σ×t)，μ(t) = μ₀ × e^(-γ×t)，碾压时间t_crush = ln(μ₀/Λ₀)/(σ+γ)。当门槛Λ以指数增长而可用资源μ以指数衰减时，系统必然被门槛碾压。门槛增速越大、资源衰](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+- [门槛碾压函数，Λ\(t\) = Λ₀ × e^\(σ×t\)，μ\(t\) = μ₀ × e^\(-γ×t\)，碾压时间t_crush = ln\(μ₀/Λ₀\)/\(σ+γ\)。当门槛Λ以指数增长而可用资源μ以指数衰减时，系统必然被门槛碾压。门槛增速越大、资源衰](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-5234fa8ef6582949 / 门槛碾压函数，Λ(t) = Λ₀ × e^(σ×t)，μ(t) = μ₀ × e^(-γ×t)，碾压时间t_crush = ln(μ₀/Λ₀)/(σ+γ)。当门槛Λ以指数增长而可用资源μ以指数衰减时，系统必然被门槛碾压。门槛增速越大、资源衰
+  - 可搜索名称：NFC-5234fa8ef6582949 / 门槛碾压函数，Λ\(t\) = Λ₀ × e^\(σ×t\)，μ\(t\) = μ₀ × e^\(-γ×t\)，碾压时间t_crush = ln\(μ₀/Λ₀\)/\(σ+γ\)。当门槛Λ以指数增长而可用资源μ以指数衰减时，系统必然被门槛碾压。门槛增速越大、资源衰
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [门槛碾压函数，Λ(t) = Λ₀ × e^(σ×t)，μ(t) = μ₀ × e^(-γ×t)，碾压时间t_crush = ln(μ₀/Λ₀)/(σ+γ)。当门槛Λ以指数增长而可用资源μ以指数衰减时，系统必然被门槛碾压。门槛增速越大、资源衰](../../../data/math-foundation/function-provenance-ledger.csv)
+- [门槛碾压函数，Λ\(t\) = Λ₀ × e^\(σ×t\)，μ\(t\) = μ₀ × e^\(-γ×t\)，碾压时间t_crush = ln\(μ₀/Λ₀\)/\(σ+γ\)。当门槛Λ以指数增长而可用资源μ以指数衰减时，系统必然被门槛碾压。门槛增速越大、资源衰](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-c06e88aa95c4c3eb / 门槛碾压函数，Λ(t) = Λ₀ × e^(σ×t)，μ(t) = μ₀ × e^(-γ×t)，碾压时间t_crush = ln(μ₀/Λ₀)/(σ+γ)。当门槛Λ以指数增长而可用资源μ以指数衰减时，系统必然被门槛碾压。门槛增速越大、资源衰
+  - 可搜索名称：NFC-c06e88aa95c4c3eb / 门槛碾压函数，Λ\(t\) = Λ₀ × e^\(σ×t\)，μ\(t\) = μ₀ × e^\(-γ×t\)，碾压时间t_crush = ln\(μ₀/Λ₀\)/\(σ+γ\)。当门槛Λ以指数增长而可用资源μ以指数衰减时，系统必然被门槛碾压。门槛增速越大、资源衰
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：—；被引用：—
-- [门槛碾压函数，Λ(t) = Λ₀ × e^(σ×t)，μ(t) = μ₀ × e^(-γ×t)，碾压时间t_crush = ln(μ₀/Λ₀)/(σ+γ)。当门槛Λ以指数增长而可用资源μ以指数衰减时，系统必然被门槛碾压。门槛增速越大、资源衰减越快，碾压时间越短。](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [门槛碾压函数，Λ\(t\) = Λ₀ × e^\(σ×t\)，μ\(t\) = μ₀ × e^\(-γ×t\)，碾压时间t_crush = ln\(μ₀/Λ₀\)/\(σ+γ\)。当门槛Λ以指数增长而可用资源μ以指数衰减时，系统必然被门槛碾压。门槛增速越大、资源衰减越快，碾压时间越短。](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-F08B58DD3C022CFF / 门槛碾压函数，Λ(t) = Λ₀ × e^(σ×t)，μ(t) = μ₀ × e^(-γ×t)，碾压时间t_crush = ln(μ₀/Λ₀)/(σ+γ)。当门槛Λ以指数增长而可用资源μ以指数衰减时，系统必然被门槛碾压。门槛增速越大、资源衰减越快，碾压时间越短。 / IMPLICIT-F08B58DD3C022CFF
+  - 可搜索名称：IMPLICIT-F08B58DD3C022CFF / 门槛碾压函数，Λ\(t\) = Λ₀ × e^\(σ×t\)，μ\(t\) = μ₀ × e^\(-γ×t\)，碾压时间t_crush = ln\(μ₀/Λ₀\)/\(σ+γ\)。当门槛Λ以指数增长而可用资源μ以指数衰减时，系统必然被门槛碾压。门槛增速越大、资源衰减越快，碾压时间越短。 / IMPLICIT-F08B58DD3C022CFF
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
 - [门槛距离-耦合强度函数](../../../data/foundation/adjudications/079-method-audit.jsonl)
@@ -1426,9 +1494,12 @@
   - 可搜索名称：NFC-b7070e5469d6dbbb / 问题**：部分判定函数（如 D67、D69、D70）被标记为案例函数（C-201、C-172、C-173），导致函数总数虚高。
   - 来源：`outputs/getbrain/v0.2-function-dependency-graph-20260706.md`
   - 依赖：D67, D69, D70；被引用：—
-- [阅读 \[生命共同体价值宪章\](../../../docs/governance/life-community-value-charter.md) 与 \[Charter System R1 治理系统\](../../../docs/USAGE.md)
+- [阅读 \[生命共同体价值宪章\]\(./governance/life-community-value-charter.md\) 与 \[Charter System R1 治理系统\]\(./governance/charter-system-r1.m](../../../docs/USAGE.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-e7d65f737c4790fc / 阅读 \[生命共同体价值宪章\](../../../docs/governance/life-community-value-charter.md) 与 \[Charter System R1 治理系统\](../../../analysis/corpus-relation/cluster_source_briefs/C000.md)
+  - 可搜索名称：NFC-e7d65f737c4790fc / 阅读 \[生命共同体价值宪章\]\(./governance/life-community-value-charter.md\) 与 \[Charter System R1 治理系统\]\(./governance/charter-system-r1.m
+  - 来源：`docs/USAGE.md`
+  - 依赖：—；被引用：—
+- [防守-进攻相变函数](../../../analysis/corpus-relation/cluster_source_briefs/C000.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：D112 / 防守-进攻相变函数 / D112
   - 来源：`analysis/corpus-relation/cluster_source_briefs/C000.md`
@@ -1553,9 +1624,9 @@
   - 可搜索名称：NFC-b1a8827c52c0f31f / 非人类生命原则
   - 来源：`docs/governance/life-community-value-charter.md`
   - 依赖：—；被引用：—
-- [非函数型定理、规律、机制、因果、不可能性、跨域对应、预测、经验与本体断言必须先按\[未来断言准入协议\](../../../docs/foundation/future-claim-admission-protocol.md)进入 task-100 registry，](../../../docs/USAGE.md)
+- [非函数型定理、规律、机制、因果、不可能性、跨域对应、预测、经验与本体断言必须先按\[未来断言准入协议\]\(./foundation/future-claim-admission-protocol.md\)进入 task-100 registry，](../../../docs/USAGE.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-3bfc6a762714cf9d / 非函数型定理、规律、机制、因果、不可能性、跨域对应、预测、经验与本体断言必须先按\[未来断言准入协议\](../../../docs/foundation/future-claim-admission-protocol.md)进入 task-100 registry，
+  - 可搜索名称：NFC-3bfc6a762714cf9d / 非函数型定理、规律、机制、因果、不可能性、跨域对应、预测、经验与本体断言必须先按\[未来断言准入协议\]\(./foundation/future-claim-admission-protocol.md\)进入 task-100 registry，
   - 来源：`docs/USAGE.md`
   - 依赖：—；被引用：—
 - [非函数型资产交接必须保留 task 100 的规范 ID、原子文本、十三门、证据与复现状态、依赖和下游影响、M/E、处置、公开上限及 supersession lineage。自动发现只生成待裁决记录；一个模型失败不能推出普遍不可能，类比不](../../ASSET-CARDS.md#asset-nfc-921e43a466f461f8)

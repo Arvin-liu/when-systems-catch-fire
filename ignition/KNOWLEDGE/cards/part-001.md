@@ -264,6 +264,26 @@
 - **主题：** `MATHEMATICS`, `PHYSICS`, `ARCHITECTURE_GOVERNANCE`
 - **可搜索名称：** `NFC-00b4be17fb8dc706`, `哥德尔不完备性、霍奇猜想类比、不同能标、不同函数族，以及点火当前模型的失败，都不是大一统不可能的桥接定理。`, `哥德尔不完备性、霍奇猜想类比、不同能标、不同函数族，以及点火当前模型的失败，都不是大一统不可能的桥接定理。`
 
+<a id="asset-nfc-06ddf2b643747a14"></a>
+## 现有知识治理系统被登记为第一个 `Knowledge Domain Pack`，REOS vNext LIGHT 与之元写作法分别作为有界 research/writing Pack 引用；R0 没有全仓物理迁移。机器边界以 [`agent
+
+- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-06ddf2b643747a14` · [docs/project-current-state.md](../../docs/project-current-state.md)
+- **为什么产生：** Expose a materially public CROSS_DOMAIN_CORRESPONDENCE and its correction or evidence boundary.
+- **当前状态：** `ACCEPTED_AS_DEFINITION`
+- **当前结果：** 现有知识治理系统被登记为第一个 `Knowledge Domain Pack`，REOS vNext LIGHT 与之元写作法分别作为有界 research/writing Pack 引用；R0 没有全仓物理迁移。机器边界以 [`agentization-boundary-r0.json`](../../data/architecture/agentization-boundary-r0.json)、`DomainPackManifest`、Agent Profile 和当时的唯一系统图 `0.6.0` 为准；后续 `0.7.0`、`0.8.0` 均是后续历史/当前投影。非知识 pilot 只读取两个 fixture 文本、生成排序 SHA-256 manifest，在不同 executor 间 checkpoint/resume，并在 validator 通过后进入 `COMPLETED_VALIDATED`；它是仓库范围隔离证据，不是 AGI、长期自主性或知识真值证据。
+- **双成熟度：** 数学 `M0`；外部证据 `E0`
+- **假设与表述上限：** May be stated only as a repository definition, policy, status record or explicitly scoped convention; it is not external truth.
+- **未建立：** Do not present registry presence, internal tests, AI agreement or formal appearance as proof, external validation, novelty, peer review or replication.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `docs/project-current-state.md`
+- **演化历史：** Lineage: NO_NAMED_LINEAGE；Lineage status: CURRENT_SCOPED_RECORD；Reviewer state: SOURCE_TEXT_RULE_ADJUDICATED
+- **最近变化：** Task 100 disposition: ACCEPTED_AS_DEFINITION
+- **下一步：** No open obligation was recorded.
+- **主题：** `PHYSICS`, `SYSTEMS`, `COGNITION`, `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `NFC-06ddf2b643747a14`, `现有知识治理系统被登记为第一个 `Knowledge Domain Pack`，REOS vNext LIGHT 与之元写作法分别作为有界 research/writing Pack 引用；R0 没有全仓物理迁移。机器边界以 [`agent`, `现有知识治理系统被登记为第一个 `Knowledge Domain Pack`，REOS vNext LIGHT 与之元写作法分别作为有界 research/writing Pack 引用；R0 没有全仓物理迁移。机器边界以 [`agentization-boundary-r0.json`](../../data/architecture/agentization-boundary-r0.json)、`DomainPackManifest`、Agent Profile 和当时的唯一系统图 `0.6.0` 为准；后续 `0.7.0`、`0.8.0` 均是后续历史/当前投影。非知识 pilot 只读取两个 fixture 文本、生成排序 SHA-256 manifest，在不同 executor 间 checkpoint/resume，并在 validator 通过后进入 `COMPLETED_VALIDATED`；它是仓库范围隔离证据，不是 AGI、长期自主性或知识真值证据。`
+
 <a id="asset-nfc-0b7defaef4efab24"></a>
 ## 历史笔记把 D260 与大一统不可能命题相连；formal main 中 D260 实际为 `p/(1-p)` 偏差敏感度评分。物理断言和评分函数分别处理。
 
@@ -283,6 +303,26 @@
 - **下一步：** State typed definitions, assumptions and quantifiers; provide a checkable proof or delimit the statement as conjectural.；Search for countermodels inside and outside the declared model class.
 - **主题：** `MATHEMATICS`, `PHYSICS`, `ARCHITECTURE_GOVERNANCE`
 - **可搜索名称：** `NFC-0b7defaef4efab24`, `历史笔记把 D260 与大一统不可能命题相连；formal main 中 D260 实际为 `p/(1-p)` 偏差敏感度评分。物理断言和评分函数分别处理。`, `- 历史笔记把 D260 与大一统不可能命题相连；formal main 中 D260 实际为 `p/(1-p)` 偏差敏感度评分。物理断言和评分函数分别处理。`
+
+<a id="asset-nfc-10dc7fb421e66908"></a>
+## 对同次重算的 non-function claims 建立类别、来源、证据谱系、十三道门禁、依赖、M/E、处置与公开表述上限；当前可复算数量见 current-facts projection（`15,899`）。
+
+- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-10dc7fb421e66908` · [docs/project-current-state.md](../../docs/project-current-state.md)
+- **为什么产生：** Expose a materially public CROSS_DOMAIN_CORRESPONDENCE and its correction or evidence boundary.
+- **当前状态：** `RETAINED_AS_STRUCTURAL_METAPHOR`
+- **当前结果：** - 对同次重算的 non-function claims 建立类别、来源、证据谱系、十三道门禁、依赖、M/E、处置与公开表述上限；当前可复算数量见 current-facts projection（`15,899`）。
+- **双成熟度：** 数学 `M0`；外部证据 `E0`
+- **假设与表述上限：** Analogy or structural metaphor only; no homomorphism, isomorphism or causal identity is established.
+- **未建立：** Do not present registry presence, internal tests, AI agreement or formal appearance as proof, external validation, novelty, peer review or replication.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `docs/project-current-state.md`
+- **演化历史：** Lineage: NO_NAMED_LINEAGE；Lineage status: CURRENT_SCOPED_RECORD；Reviewer state: SOURCE_TEXT_RULE_ADJUDICATED
+- **最近变化：** Task 100 disposition: RETAINED_AS_STRUCTURAL_METAPHOR
+- **下一步：** No open obligation was recorded.
+- **主题：** `ARCHITECTURE_GOVERNANCE`
+- **可搜索名称：** `NFC-10dc7fb421e66908`, `对同次重算的 non-function claims 建立类别、来源、证据谱系、十三道门禁、依赖、M/E、处置与公开表述上限；当前可复算数量见 current-facts projection（`15,899`）。`, `- 对同次重算的 non-function claims 建立类别、来源、证据谱系、十三道门禁、依赖、M/E、处置与公开表述上限；当前可复算数量见 current-facts projection（`15,899`）。`
 
 <a id="asset-nfc-156313cd333787a2"></a>
 ## 知识体验层的人类结果、搜索与 Claim Delta 投影；
@@ -404,13 +444,13 @@
 - **主题：** `ARCHITECTURE_GOVERNANCE`
 - **可搜索名称：** `NFC-2843222a849fe77e`, `任务 102 对新增源语料重新运行任务 100 生成器并排除生成投影，当前登记 **17,333** 个 canonical claim。主要类别包括：`, `任务 102 对新增源语料重新运行任务 100 生成器并排除生成投影，当前登记 **17,333** 个 canonical claim。主要类别包括：`
 
-<a id="asset-nfc-2bfd9e0b5531b098"></a>
-## 方法 `1.3.0` 与系统图 `0.5.0`、`0.6.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0`、`0.2.0`、`0.3.0`、`0.4.0` 为更早 Historical。当前方法要求从构件 re
+<a id="asset-nfc-2cfca960b0909c17"></a>
+## 方法 `1.3.0` 与系统图 `0.6.0`、`0.5.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0`、`0.2.0`、`0.3.0`、`0.4.0` 为更早 Historical。当前方法要求从构件 re
 
-- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-2bfd9e0b5531b098` · [AI-HANDOFF.md](../../AI-HANDOFF.md)
+- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-2cfca960b0909c17` · [AI-HANDOFF.md](../../AI-HANDOFF.md)
 - **为什么产生：** Expose a materially public IMPOSSIBILITY_OR_UNIVERSAL_CLAIM and its correction or evidence boundary.
 - **当前状态：** `ACCEPTED_AS_DEFINITION`
-- **当前结果：** 方法 `1.3.0` 与系统图 `0.5.0`、`0.6.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0`、`0.2.0`、`0.3.0`、`0.4.0` 为更早 Historical。当前方法要求从构件 registry、类型化 topology 与 `data/operations/synchronization-surfaces.json` 计算全项目传播闭包。README、`HUMAN-READING.md`、`RESULTS/`、项目现状、人类 AI 指南、AI 冷启动、Agent 交接、机器入口和版本历史都是必须评估的项目表面。实现完成不能替代仓库同步完成；本地验证也不能声称任何未登记的实时外部状态已验证。
+- **当前结果：** 方法 `1.3.0` 与系统图 `0.6.0`、`0.5.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0`、`0.2.0`、`0.3.0`、`0.4.0` 为更早 Historical。当前方法要求从构件 registry、类型化 topology 与 `data/operations/synchronization-surfaces.json` 计算全项目传播闭包。README、`HUMAN-READING.md`、`RESULTS/`、项目现状、人类 AI 指南、AI 冷启动、Agent 交接、机器入口和版本历史都是必须评估的项目表面。实现完成不能替代仓库同步完成；本地验证也不能声称任何未登记的实时外部状态已验证。
 - **双成熟度：** 数学 `M0`；外部证据 `E0`
 - **假设与表述上限：** May be stated only as a repository definition, policy, status record or explicitly scoped convention; it is not external truth.
 - **未建立：** Do not present registry presence, internal tests, AI agreement or formal appearance as proof, external validation, novelty, peer review or replication.
@@ -422,7 +462,7 @@
 - **最近变化：** Task 100 disposition: ACCEPTED_AS_DEFINITION
 - **下一步：** State typed definitions, assumptions and quantifiers; provide a checkable proof or delimit the statement as conjectural.；Search for countermodels inside and outside the declared model class.
 - **主题：** `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`
-- **可搜索名称：** `NFC-2bfd9e0b5531b098`, `方法 `1.3.0` 与系统图 `0.5.0`、`0.6.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0`、`0.2.0`、`0.3.0`、`0.4.0` 为更早 Historical。当前方法要求从构件 re`, `方法 `1.3.0` 与系统图 `0.5.0`、`0.6.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0`、`0.2.0`、`0.3.0`、`0.4.0` 为更早 Historical。当前方法要求从构件 registry、类型化 topology 与 `data/operations/synchronization-surfaces.json` 计算全项目传播闭包。README、`HUMAN-READING.md`、`RESULTS/`、项目现状、人类 AI 指南、AI 冷启动、Agent 交接、机器入口和版本历史都是必须评估的项目表面。实现完成不能替代仓库同步完成；本地验证也不能声称任何未登记的实时外部状态已验证。`
+- **可搜索名称：** `NFC-2cfca960b0909c17`, `方法 `1.3.0` 与系统图 `0.6.0`、`0.5.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0`、`0.2.0`、`0.3.0`、`0.4.0` 为更早 Historical。当前方法要求从构件 re`, `方法 `1.3.0` 与系统图 `0.6.0`、`0.5.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0`、`0.2.0`、`0.3.0`、`0.4.0` 为更早 Historical。当前方法要求从构件 registry、类型化 topology 与 `data/operations/synchronization-surfaces.json` 计算全项目传播闭包。README、`HUMAN-READING.md`、`RESULTS/`、项目现状、人类 AI 指南、AI 冷启动、Agent 交接、机器入口和版本历史都是必须评估的项目表面。实现完成不能替代仓库同步完成；本地验证也不能声称任何未登记的实时外部状态已验证。`
 
 <a id="asset-nfc-3d9ffb2206406fcc"></a>
 ## 为全部恢复的结果/文章来源生成统一卡片和 1 分钟、5 分钟、完整阅读，并为全部函数/断言 registry 建立可回链来源、状态、依赖、反向依赖和历史的分片搜索索引。
@@ -443,6 +483,26 @@
 - **下一步：** State typed definitions, assumptions and quantifiers; provide a checkable proof or delimit the statement as conjectural.；Search for countermodels inside and outside the declared model class.
 - **主题：** `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`
 - **可搜索名称：** `NFC-3d9ffb2206406fcc`, `为全部恢复的结果/文章来源生成统一卡片和 1 分钟、5 分钟、完整阅读，并为全部函数/断言 registry 建立可回链来源、状态、依赖、反向依赖和历史的分片搜索索引。`, `- 为全部恢复的结果/文章来源生成统一卡片和 1 分钟、5 分钟、完整阅读，并为全部函数/断言 registry 建立可回链来源、状态、依赖、反向依赖和历史的分片搜索索引。`
+
+<a id="asset-nfc-49b0b185a29b134e"></a>
+## 对任务 102 排除生成投影回灌后重算的 function identity cards 建立 identity card、M/E 双轴、义务、依赖、处置与 quarantine；当前可复算数量见 current-facts project
+
+- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-49b0b185a29b134e` · [docs/project-current-state.md](../../docs/project-current-state.md)
+- **为什么产生：** Expose a materially public CROSS_DOMAIN_CORRESPONDENCE and its correction or evidence boundary.
+- **当前状态：** `RETAINED_AS_STRUCTURAL_METAPHOR`
+- **当前结果：** - 对任务 102 排除生成投影回灌后重算的 function identity cards 建立 identity card、M/E 双轴、义务、依赖、处置与 quarantine；当前可复算数量见 current-facts projection（`5,603`）。
+- **双成熟度：** 数学 `M0`；外部证据 `E0`
+- **假设与表述上限：** Analogy or structural metaphor only; no homomorphism, isomorphism or causal identity is established.
+- **未建立：** Do not present registry presence, internal tests, AI agreement or formal appearance as proof, external validation, novelty, peer review or replication.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `docs/project-current-state.md`
+- **演化历史：** Lineage: NO_NAMED_LINEAGE；Lineage status: CURRENT_SCOPED_RECORD；Reviewer state: SOURCE_TEXT_RULE_ADJUDICATED
+- **最近变化：** Task 100 disposition: RETAINED_AS_STRUCTURAL_METAPHOR
+- **下一步：** No open obligation was recorded.
+- **主题：** `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `NFC-49b0b185a29b134e`, `对任务 102 排除生成投影回灌后重算的 function identity cards 建立 identity card、M/E 双轴、义务、依赖、处置与 quarantine；当前可复算数量见 current-facts project`, `- 对任务 102 排除生成投影回灌后重算的 function identity cards 建立 identity card、M/E 双轴、义务、依赖、处置与 quarantine；当前可复算数量见 current-facts projection（`5,603`）。`
 
 <a id="asset-nfc-4a20f20c22587a46"></a>
 ## `NO_REPRODUCTION_POSSIBLE_WITH_CURRENT_TARGET`。三个案例在 task-111 队列投影中继续可
@@ -584,6 +644,26 @@
 - **主题：** `COGNITION`
 - **可搜索名称：** `NFC-62e99b964dba467f`, `传播契约将 `agent_federation/` 单独投影到 `agent_platform.federation`，并禁止`, `传播契约将 `agent_federation/` 单独投影到 `agent_platform.federation`，并禁止`
 
+<a id="asset-nfc-6477a95f8bbb8721"></a>
+## OpenClaw, Hermes and Codex are replaceable executors; the local action layer is `REFERENCE_EXECUTOR / CONFORMANCE_EXECUT
+
+- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-6477a95f8bbb8721` · [llms.txt](../../llms.txt)
+- **为什么产生：** Expose a materially public IMPOSSIBILITY_OR_UNIVERSAL_CLAIM and its correction or evidence boundary.
+- **当前状态：** `QUARANTINED_AMBIGUOUS`
+- **当前结果：** OpenClaw, Hermes and Codex are replaceable executors; the local action layer is `REFERENCE_EXECUTOR / CONFORMANCE_EXECUTOR / FALLBACK_MINIMAL`.
+- **双成熟度：** 数学 `M0`；外部证据 `E0`
+- **假设与表述上限：** Unresolved historical or current claim candidate; it cannot appear as current knowledge.
+- **未建立：** Do not present registry presence, internal tests, AI agreement or formal appearance as proof, external validation, novelty, peer review or replication.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `llms.txt`
+- **演化历史：** Lineage: NO_NAMED_LINEAGE；Lineage status: CURRENT_SCOPED_RECORD；Reviewer state: EXPLICITLY_QUARANTINED
+- **最近变化：** Task 100 disposition: QUARANTINED_AMBIGUOUS
+- **下一步：** State typed definitions, assumptions and quantifiers; provide a checkable proof or delimit the statement as conjectural.；Search for countermodels inside and outside the declared model class.
+- **主题：** `ARCHITECTURE_GOVERNANCE`
+- **可搜索名称：** `NFC-6477a95f8bbb8721`, `OpenClaw, Hermes and Codex are replaceable executors; the local action layer is `REFERENCE_EXECUTOR / CONFORMANCE_EXECUT`, `OpenClaw, Hermes and Codex are replaceable executors; the local action layer is `REFERENCE_EXECUTOR / CONFORMANCE_EXECUTOR / FALLBACK_MINIMAL`.`
+
 <a id="asset-nfc-6ca935ca1a4f2a8e"></a>
 ## 撤回、降级或隔离的结论，即使换标题、换编号、改成“结构性定理”或藏入摘要，也继续受原 supersession lineage 与 claim ceiling 约束。CI 检查大一统不可能性、单模型失败推出普遍不可能、类比冒充同构、量词膨胀
 
@@ -663,6 +743,26 @@
 - **下一步：** State typed definitions, assumptions and quantifiers; provide a checkable proof or delimit the statement as conjectural.；Search for countermodels inside and outside the declared model class.
 - **主题：** `MATHEMATICS`, `PHYSICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `NFC-777640d03f719f40`, `原始命题: 引力的B型门控不是偶然属性，是Φ极小点存在的必要条件。若引力为A型，Φ单调递减，大统一在数学上不可能。T33从"冲突"升级为"必要张力"。 **扩展注释 / Extended Annotation**`, `- 原始命题: 引力的B型门控不是偶然属性，是Φ极小点存在的必要条件。若引力为A型，Φ单调递减，大统一在数学上不可能。T33从"冲突"升级为"必要张力"。 **扩展注释 / Extended Annotation**`
+
+<a id="asset-nfc-79e157390b0bf89a"></a>
+## Current facts: data/architecture/current-facts.json and docs/architecture/current-facts.md are deterministic projections
+
+- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-79e157390b0bf89a` · [llms.txt](../../llms.txt)
+- **为什么产生：** Expose a materially public CROSS_DOMAIN_CORRESPONDENCE and its correction or evidence boundary.
+- **当前状态：** `RETAINED_AS_STRUCTURAL_METAPHOR`
+- **当前结果：** Current facts: data/architecture/current-facts.json and docs/architecture/current-facts.md are deterministic projections from canonical registries and manifests; they are navigation/current-facts evidence, not a second truth layer.
+- **双成熟度：** 数学 `M0`；外部证据 `E0`
+- **假设与表述上限：** Analogy or structural metaphor only; no homomorphism, isomorphism or causal identity is established.
+- **未建立：** Do not present registry presence, internal tests, AI agreement or formal appearance as proof, external validation, novelty, peer review or replication.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `llms.txt`
+- **演化历史：** Lineage: NO_NAMED_LINEAGE；Lineage status: CURRENT_SCOPED_RECORD；Reviewer state: SOURCE_TEXT_RULE_ADJUDICATED
+- **最近变化：** Task 100 disposition: RETAINED_AS_STRUCTURAL_METAPHOR
+- **下一步：** No open obligation was recorded.
+- **主题：** `ARCHITECTURE_GOVERNANCE`
+- **可搜索名称：** `NFC-79e157390b0bf89a`, `Current facts: data/architecture/current-facts.json and docs/architecture/current-facts.md are deterministic projections`, `Current facts: data/architecture/current-facts.json and docs/architecture/current-facts.md are deterministic projections from canonical registries and manifests; they are navigation/current-facts evidence, not a second truth layer.`
 
 <a id="asset-nfc-7ba5ae6b5efe40a7"></a>
 ## 点火现有乘法门控模型不能完成数学和物理上充分的四种相互作用统一。四力统一问题本身保持开放。项目没有证明“大一统普遍不可能”，也没有给出物理统一点。
@@ -764,26 +864,6 @@
 - **主题：** `PHYSICS`, `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`
 - **可搜索名称：** `NFC-82ebe95def5bfab1`, `当前物理边界不变：点火现有门控乘积模型没有统一四种基本相互作用；物理统一问题保持开放。当前模型失败既不证明普遍不可能，也不证明其他路线成功。`, `当前物理边界不变：点火现有门控乘积模型没有统一四种基本相互作用；物理统一问题保持开放。当前模型失败既不证明普遍不可能，也不证明其他路线成功。`
 
-<a id="asset-nfc-85688f0030875f4e"></a>
-## 对任务 102 排除生成投影回灌后重算的 5,663 个历史函数资产建立 identity card、M/E 双轴、义务、依赖、处置与 quarantine。
-
-- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-85688f0030875f4e` · [docs/project-current-state.md](../../docs/project-current-state.md)
-- **为什么产生：** Expose a materially public CROSS_DOMAIN_CORRESPONDENCE and its correction or evidence boundary.
-- **当前状态：** `RETAINED_AS_STRUCTURAL_METAPHOR`
-- **当前结果：** - 对任务 102 排除生成投影回灌后重算的 5,663 个历史函数资产建立 identity card、M/E 双轴、义务、依赖、处置与 quarantine。
-- **双成熟度：** 数学 `M0`；外部证据 `E0`
-- **假设与表述上限：** Analogy or structural metaphor only; no homomorphism, isomorphism or causal identity is established.
-- **未建立：** Do not present registry presence, internal tests, AI agreement or formal appearance as proof, external validation, novelty, peer review or replication.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `docs/project-current-state.md`
-- **演化历史：** Lineage: NO_NAMED_LINEAGE；Lineage status: CURRENT_SCOPED_RECORD；Reviewer state: SOURCE_TEXT_RULE_ADJUDICATED
-- **最近变化：** Task 100 disposition: RETAINED_AS_STRUCTURAL_METAPHOR
-- **下一步：** No open obligation was recorded.
-- **主题：** `MATHEMATICS`
-- **可搜索名称：** `NFC-85688f0030875f4e`, `对任务 102 排除生成投影回灌后重算的 5,663 个历史函数资产建立 identity card、M/E 双轴、义务、依赖、处置与 quarantine。`, `- 对任务 102 排除生成投影回灌后重算的 5,663 个历史函数资产建立 identity card、M/E 双轴、义务、依赖、处置与 quarantine。`
-
 <a id="asset-nfc-8b5cd2066783ecf6"></a>
 ## 事件、内容合并、终端化投影、annotated tag 和全新克隆 resolver 分层确认；不以旧候选
 
@@ -884,6 +964,26 @@
 - **主题：** `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `NFC-996c4e8631d40356`, `D220 完全统一不可能定理`, `### D220 完全统一不可能定理`
 
+<a id="asset-nfc-a1a28b3a56bcb64b"></a>
+## 函数资产中 `4,804` 项仍 quarantine/pending；非函数断言中 `4,615` 项仍 quarantine/pending；数字来自 current-facts projection，不能解释为内容验证完成。
+
+- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-a1a28b3a56bcb64b` · [docs/project-current-state.md](../../docs/project-current-state.md)
+- **为什么产生：** Expose a materially public CROSS_DOMAIN_CORRESPONDENCE and its correction or evidence boundary.
+- **当前状态：** `RETAINED_AS_STRUCTURAL_METAPHOR`
+- **当前结果：** - 函数资产中 `4,804` 项仍 quarantine/pending；非函数断言中 `4,615` 项仍 quarantine/pending；数字来自 current-facts projection，不能解释为内容验证完成。
+- **双成熟度：** 数学 `M0`；外部证据 `E0`
+- **假设与表述上限：** Analogy or structural metaphor only; no homomorphism, isomorphism or causal identity is established.
+- **未建立：** Do not present registry presence, internal tests, AI agreement or formal appearance as proof, external validation, novelty, peer review or replication.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `docs/project-current-state.md`
+- **演化历史：** Lineage: NO_NAMED_LINEAGE；Lineage status: CURRENT_SCOPED_RECORD；Reviewer state: SOURCE_TEXT_RULE_ADJUDICATED
+- **最近变化：** Task 100 disposition: RETAINED_AS_STRUCTURAL_METAPHOR
+- **下一步：** No open obligation was recorded.
+- **主题：** `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `NFC-a1a28b3a56bcb64b`, `函数资产中 `4,804` 项仍 quarantine/pending；非函数断言中 `4,615` 项仍 quarantine/pending；数字来自 current-facts projection，不能解释为内容验证完成。`, `- 函数资产中 `4,804` 项仍 quarantine/pending；非函数断言中 `4,615` 项仍 quarantine/pending；数字来自 current-facts projection，不能解释为内容验证完成。`
+
 <a id="asset-nfc-a5870d6c2e430817"></a>
 ## 机器对应物位于 `data/governance/human-results/` 与 `data/governance/self-correction/`。CI 同时检查两层；缺任一层即失败。
 
@@ -903,103 +1003,3 @@
 - **下一步：** No open obligation was recorded.
 - **主题：** `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `NFC-a5870d6c2e430817`, `机器对应物位于 `data/governance/human-results/` 与 `data/governance/self-correction/`。CI 同时检查两层；缺任一层即失败。`, `机器对应物位于 `data/governance/human-results/` 与 `data/governance/self-correction/`。CI 同时检查两层；缺任一层即失败。`
-
-<a id="asset-nfc-a6b80fca608c8c8f"></a>
-## This iteration does not deep-review all 2,033 discovered assets, prove the census exhaustive outside tracked textual Git
-
-- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-a6b80fca608c8c8f` · [reports/foundation-architecture/098-claim-governance-implementation.md](../../reports/foundation-architecture/098-claim-governance-implementation.md)
-- **为什么产生：** Expose a materially public IMPOSSIBILITY_OR_UNIVERSAL_CLAIM and its correction or evidence boundary.
-- **当前状态：** `HISTORICAL_ONLY`
-- **当前结果：** This iteration does not deep-review all 2,033 discovered assets, prove the census exhaustive outside tracked textual Git sources, validate a physical theory, solve the physics clouds, unify the forces, or prove unification possible or impossible.
-- **双成熟度：** 数学 `M0`；外部证据 `E1`
-- **假设与表述上限：** Historical source wording only; it is not a current repository endorsement.
-- **未建立：** Do not present registry presence, internal tests, AI agreement or formal appearance as proof, external validation, novelty, peer review or replication.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `reports/foundation-architecture/098-claim-governance-implementation.md`
-- **演化历史：** Lineage: PHYSICS_UNIFICATION_NOGO；Lineage status: HISTORICAL_PRESERVED；Reviewer state: SOURCE_TEXT_RULE_ADJUDICATED
-- **最近变化：** Task 100 disposition: HISTORICAL_ONLY
-- **下一步：** State typed definitions, assumptions and quantifiers; provide a checkable proof or delimit the statement as conjectural.；Search for countermodels inside and outside the declared model class.
-- **主题：** `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `NFC-a6b80fca608c8c8f`, `This iteration does not deep-review all 2,033 discovered assets, prove the census exhaustive outside tracked textual Git`, `This iteration does not deep-review all 2,033 discovered assets, prove the census exhaustive outside tracked textual Git sources, validate a physical theory, solve the physics clouds, unify the forces, or prove unification possible or impossible.`
-
-<a id="asset-nfc-b3044ed3734222fb"></a>
-## “物理学已经证明大一统不可能”现已正式撤回。它不能仅改名为“结构性边界推论”“框架判定”或“元层机制”后保留同一结论。
-
-- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-b3044ed3734222fb` · [docs/physics_boundary.md](../../docs/physics_boundary.md)
-- **为什么产生：** Expose a materially public IMPOSSIBILITY_OR_UNIVERSAL_CLAIM and its correction or evidence boundary.
-- **当前状态：** `ACCEPTED_AS_DEFINITION`
-- **当前结果：** “物理学已经证明大一统不可能”现已正式撤回。它不能仅改名为“结构性边界推论”“框架判定”或“元层机制”后保留同一结论。
-- **双成熟度：** 数学 `M0`；外部证据 `E0`
-- **假设与表述上限：** May be stated only as a repository definition, policy, status record or explicitly scoped convention; it is not external truth.
-- **未建立：** Do not present registry presence, internal tests, AI agreement or formal appearance as proof, external validation, novelty, peer review or replication.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `docs/physics_boundary.md`
-- **演化历史：** Lineage: PHYSICS_UNIFICATION_NOGO；Lineage status: CURRENT_SCOPED_RECORD；Reviewer state: SOURCE_TEXT_RULE_ADJUDICATED
-- **最近变化：** Task 100 disposition: ACCEPTED_AS_DEFINITION
-- **下一步：** State typed definitions, assumptions and quantifiers; provide a checkable proof or delimit the statement as conjectural.；Search for countermodels inside and outside the declared model class.
-- **主题：** `PHYSICS`, `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`
-- **可搜索名称：** `NFC-b3044ed3734222fb`, `“物理学已经证明大一统不可能”现已正式撤回。它不能仅改名为“结构性边界推论”“框架判定”或“元层机制”后保留同一结论。`, `“物理学已经证明大一统不可能”现已正式撤回。它不能仅改名为“结构性边界推论”“框架判定”或“元层机制”后保留同一结论。`
-
-<a id="asset-nfc-b8317ad5cc6c3230"></a>
-## 使用 0.5.0 时，先标记 `external_input` 与 `ignition_increment`，保存版本、生成路径、claim ceiling、不可映射残余和原始来源回链；涉及语言转换时还须保存 source form、候选意
-
-- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-b8317ad5cc6c3230` · [AI-START-HERE.md](../../AI-START-HERE.md)
-- **为什么产生：** Expose a materially public CROSS_DOMAIN_CORRESPONDENCE and its correction or evidence boundary.
-- **当前状态：** `RETAINED_AS_STRUCTURAL_METAPHOR`
-- **当前结果：** - 使用 0.5.0 时，先标记 `external_input` 与 `ignition_increment`，保存版本、生成路径、claim ceiling、不可映射残余和原始来源回链；涉及语言转换时还须保存 source form、候选意义、target form 与 framing delta。发布反馈必须登记 provenance 后才能成为候选 source／gap。同源只表示维护者声明的设计来源与结构对应候选，不是大脑事实、形式同构或真值许可。
-- **双成熟度：** 数学 `M0`；外部证据 `E0`
-- **假设与表述上限：** Analogy or structural metaphor only; no homomorphism, isomorphism or causal identity is established.
-- **未建立：** Do not present registry presence, internal tests, AI agreement or formal appearance as proof, external validation, novelty, peer review or replication.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `AI-START-HERE.md`
-- **演化历史：** Lineage: NO_NAMED_LINEAGE；Lineage status: CURRENT_SCOPED_RECORD；Reviewer state: SOURCE_TEXT_RULE_ADJUDICATED
-- **最近变化：** Task 100 disposition: RETAINED_AS_STRUCTURAL_METAPHOR
-- **下一步：** No open obligation was recorded.
-- **主题：** `ARCHITECTURE_GOVERNANCE`
-- **可搜索名称：** `NFC-b8317ad5cc6c3230`, `使用 0.5.0 时，先标记 `external_input` 与 `ignition_increment`，保存版本、生成路径、claim ceiling、不可映射残余和原始来源回链；涉及语言转换时还须保存 source form、候选意`, `- 使用 0.5.0 时，先标记 `external_input` 与 `ignition_increment`，保存版本、生成路径、claim ceiling、不可映射残余和原始来源回链；涉及语言转换时还须保存 source form、候选意义、target form 与 framing delta。发布反馈必须登记 provenance 后才能成为候选 source／gap。同源只表示维护者声明的设计来源与结构对应候选，不是大脑事实、形式同构或真值许可。`
-
-<a id="asset-nfc-b84ff0d36d4df547"></a>
-## 响应哈希、adjudication、Evidence Program 投影和生命周期证据位于 task-110 机器记录。
-
-- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-b84ff0d36d4df547` · [RESULTS/LATEST.md](../../RESULTS/LATEST.md)
-- **为什么产生：** Expose a materially public CROSS_DOMAIN_CORRESPONDENCE and its correction or evidence boundary.
-- **当前状态：** `RETAINED_AS_STRUCTURAL_METAPHOR`
-- **当前结果：** 响应哈希、adjudication、Evidence Program 投影和生命周期证据位于 task-110 机器记录。
-- **双成熟度：** 数学 `M0`；外部证据 `E0`
-- **假设与表述上限：** Analogy or structural metaphor only; no homomorphism, isomorphism or causal identity is established.
-- **未建立：** Do not present registry presence, internal tests, AI agreement or formal appearance as proof, external validation, novelty, peer review or replication.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `RESULTS/LATEST.md`
-- **演化历史：** Lineage: NO_NAMED_LINEAGE；Lineage status: CURRENT_SCOPED_RECORD；Reviewer state: SOURCE_TEXT_RULE_ADJUDICATED
-- **最近变化：** Task 100 disposition: RETAINED_AS_STRUCTURAL_METAPHOR
-- **下一步：** No open obligation was recorded.
-- **主题：** `ARCHITECTURE_GOVERNANCE`
-- **可搜索名称：** `NFC-b84ff0d36d4df547`, `响应哈希、adjudication、Evidence Program 投影和生命周期证据位于 task-110 机器记录。`, `响应哈希、adjudication、Evidence Program 投影和生命周期证据位于 task-110 机器记录。`
-
-<a id="asset-nfc-bd6c757f496eff1d"></a>
-## `RESULTS/` 把机器注册表、报告和历史资产投影为可直接阅读的结果。它不复制或提高证据权限；每个结论仍受来源、成熟度、处置和 claim ceiling 约束。
-
-- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-bd6c757f496eff1d` · [RESULTS/README.md](../../RESULTS/README.md)
-- **为什么产生：** Expose a materially public CROSS_DOMAIN_CORRESPONDENCE and its correction or evidence boundary.
-- **当前状态：** `ACCEPTED_AS_DEFINITION`
-- **当前结果：** `RESULTS/` 把机器注册表、报告和历史资产投影为可直接阅读的结果。它不复制或提高证据权限；每个结论仍受来源、成熟度、处置和 claim ceiling 约束。
-- **双成熟度：** 数学 `M0`；外部证据 `E0`
-- **假设与表述上限：** May be stated only as a repository definition, policy, status record or explicitly scoped convention; it is not external truth.
-- **未建立：** Do not present registry presence, internal tests, AI agreement or formal appearance as proof, external validation, novelty, peer review or replication.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `RESULTS/README.md`
-- **演化历史：** Lineage: NO_NAMED_LINEAGE；Lineage status: CURRENT_SCOPED_RECORD；Reviewer state: SOURCE_TEXT_RULE_ADJUDICATED
-- **最近变化：** Task 100 disposition: ACCEPTED_AS_DEFINITION
-- **下一步：** No open obligation was recorded.
-- **主题：** `ARCHITECTURE_GOVERNANCE`
-- **可搜索名称：** `NFC-bd6c757f496eff1d`, ``RESULTS/` 把机器注册表、报告和历史资产投影为可直接阅读的结果。它不复制或提高证据权限；每个结论仍受来源、成熟度、处置和 claim ceiling 约束。`, ``RESULTS/` 把机器注册表、报告和历史资产投影为可直接阅读的结果。它不复制或提高证据权限；每个结论仍受来源、成熟度、处置和 claim ceiling 约束。`

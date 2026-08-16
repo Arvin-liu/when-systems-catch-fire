@@ -4,9 +4,9 @@
 
 索引按固定 500 条分片，避免单页过大而无法在 GitHub 渲染。分片连续覆盖本主题主归属资产，未按重要性删减。
 
-- [第 001 片](./operations_evidence/part-001.md)：1—500；"compiler_or_generator": "The compiler flattens aligned task deltas, retains top-k magnitude coordinates per task, elects sign(gamma_p)=sign(sum_t trimmed_tau_t,p), selects nonzero entries of that sign, averages them coordinate-wise, applie → ### target gate 为什么要放在案例最前面
-- [第 002 片](./operations_evidence/part-002.md)：501—1000；### 它不知道 Function OS 能否走出小世界 → - 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0464})=1\].
-- [第 003 片](./operations_evidence/part-003.md)：1001—1500；- 2. Evaluate each related function on the event state: z_i=1\[F_i(s_{C-0465})=1\]. → data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-10.json
+- [第 001 片](./operations_evidence/part-001.md)：1—500；"compiler_or_generator": "The compiler flattens aligned task deltas, retains top-k magnitude coordinates per task, elects sign\(gamma_p\)=sign\(sum_t trimmed_tau_t,p\), selects nonzero entries of that sign, averages them coordinate-wise, applie → ### Reinforced or made operationally visible in GetNote
+- [第 002 片](./operations_evidence/part-002.md)：501—1000；### target gate 为什么要放在案例最前面 → - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0463}\)=1\].
+- [第 003 片](./operations_evidence/part-003.md)：1001—1500；- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0464}\)=1\]. → data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-10.json
 - [第 004 片](./operations_evidence/part-004.md)：1501—2000；data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-10.json → data/operations/iterations/110/openalex/first-run-20260801/raw/GAP014-M43.json
-- [第 005 片](./operations_evidence/part-005.md)：2001—2500；data/operations/iterations/110/openalex/first-run-20260801/raw/GAP014-M43.json → \| 分类／词汇粒度 \| 量词、复合词、成语、专业术语和语境共同调节类别；无一词对应时可解释。 \| 用一个目标词压平多个历史／制度术语，或把量词选择本体化。 \|
-- [第 006 片](./operations_evidence/part-006.md)：2501—2793；\| 同构误判 \| 弱类比冒充同构 \| I_iso \| 降级为类比 \| → （对应条目 / 注释内容 / 类型 / 来源 / 是否入表）
+- [第 005 片](./operations_evidence/part-005.md)：2001—2500；data/operations/iterations/110/openalex/first-run-20260801/raw/GAP014-M43.json → \| N1 \| 退出权族 FUNC-L1-EXIT \| 退出权族 77 文件存在 \| C：补「绑定致架空」维度；I_iso：非同构，是细分；L_meta：注释级不污染 \| **作为注释并入 EXIT 族** \| 不新建条目，补结构性不可拒绝子
+- [第 006 片](./operations_evidence/part-006.md)：2501—2804；\| N2=Symbolic Compiler \| N2=Representation \(encoder/decoder/validator\) \| → （对应条目 / 注释内容 / 类型 / 来源 / 是否入表）

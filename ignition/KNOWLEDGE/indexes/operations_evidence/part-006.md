@@ -4,6 +4,36 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [\| N2=Symbolic Compiler \| N2=Representation \(encoder/decoder/validator\) \|](../../../reports/external-research/121Q5-final-report.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-342B1819B0C12810 / \| N2=Symbolic Compiler \| N2=Representation \(encoder/decoder/validator\) \| / IMPLICIT-342B1819B0C12810
+  - 来源：`reports/external-research/121Q5-final-report.md`
+  - 依赖：—；被引用：—
+- [\| No external function projection \| ✅ All projections marked EXTERNAL_PARADIGM \|](../../../reports/external-research/120-source-quality-and-template-risk-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-0a69e9ffd2fa04e5 / \| No external function projection \| ✅ All projections marked EXTERNAL_PARADIGM \|
+  - 来源：`reports/external-research/120-source-quality-and-template-risk-audit.md`
+  - 依赖：—；被引用：—
+- [\| SB \| CP \| 某故事化案例对应哪些 benchmark \|](../../../docs/machine_readable_data_plan.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-7328159c2c1d691f / \| SB \| CP \| 某故事化案例对应哪些 benchmark \|
+  - 来源：`docs/machine_readable_data_plan.md`
+  - 依赖：—；被引用：—
+- [\| Surface \| Baseline Main \| 1.4 Candidate exact-branch projection \| Capability effect \|](../../../reports/operations/IGNITION-ITERATION-METHOD-1.4-homepage-comparison.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-58d5b43ea0d1d113 / \| Surface \| Baseline Main \| 1.4 Candidate exact-branch projection \| Capability effect \|
+  - 来源：`reports/operations/IGNITION-ITERATION-METHOD-1.4-homepage-comparison.md`
+  - 依赖：—；被引用：—
+- [\| 信息顺序 \| 基本 SOV 与话题初始、前动词焦点等倾向互动。 \| 不把线性位置机械对应 given/new。 \|](../../../docs/language-thought/profiles/tr.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-f0a3e0fdbfc64237 / \| 信息顺序 \| 基本 SOV 与话题初始、前动词焦点等倾向互动。 \| 不把线性位置机械对应 given/new。 \|
+  - 来源：`docs/language-thought/profiles/tr.md`
+  - 依赖：—；被引用：—
+- [\| 分类／词汇粒度 \| 量词、复合词、成语、专业术语和语境共同调节类别；无一词对应时可解释。 \| 用一个目标词压平多个历史／制度术语，或把量词选择本体化。 \|](../../../docs/language-thought/profiles/zh-hans.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-72f52859f1469402 / \| 分类／词汇粒度 \| 量词、复合词、成语、专业术语和语境共同调节类别；无一词对应时可解释。 \| 用一个目标词压平多个历史／制度术语，或把量词选择本体化。 \|
+  - 来源：`docs/language-thought/profiles/zh-hans.md`
+  - 依赖：—；被引用：—
 - [\| 同构误判 \| 弱类比冒充同构 \| I_iso \| 降级为类比 \|](../../../outputs/getbrain/failure-typology-draft-20260706.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-98bce4c901d5ab64 / \| 同构误判 \| 弱类比冒充同构 \| I_iso \| 降级为类比 \|
@@ -29,9 +59,9 @@
   - 可搜索名称：NFC-9026bf124ab59f6a / \| 输出跨域同构汇总 \| ✓ \|
   - 来源：`outputs/audit/cross-domain-smoke-test-audit-20260708.md`
   - 依赖：—；被引用：—
-- [\|快速读懂一篇长文\|\[分层阅读\](../../READING-LAYERS.md)\|对应完整来源、\[统一资产卡\](../../ASSET-CARDS.md)\|](../../../HUMAN-READING.md)
+- [\|快速读懂一篇长文\|\[分层阅读\]\(./KNOWLEDGE/READING-LAYERS.md\)\|对应完整来源、\[统一资产卡\]\(./KNOWLEDGE/ASSET-CARDS.md\)\|](../../../HUMAN-READING.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-cd3d0bb56dce01f7 / \|快速读懂一篇长文\|\[分层阅读\](../../READING-LAYERS.md)\|对应完整来源、\[统一资产卡\](../../ASSET-CARDS.md)\|
+  - 可搜索名称：NFC-cd3d0bb56dce01f7 / \|快速读懂一篇长文\|\[分层阅读\]\(./KNOWLEDGE/READING-LAYERS.md\)\|对应完整来源、\[统一资产卡\]\(./KNOWLEDGE/ASSET-CARDS.md\)\|
   - 来源：`HUMAN-READING.md`
   - 依赖：—；被引用：—
 - [\|跨域映射\|大量对应只达到结构隐喻或研究假设。\|对象集合、映射、双射/同态条件、保持结构与反例。\|相似性不能稳定保持时不得称同构。\|](../../../RESULTS/OPEN-QUESTIONS.md)
@@ -54,59 +84,59 @@
   - 可搜索名称：NFC-eb331219144035f3 / ΔΩ_n := Ω_n - Ω_{n-1}（同构增量）
   - 来源：`docs/phi_meta_law.md`
   - 依赖：—；被引用：—
-- [Θ := argmin_x \[∫_{Ω} V(x) dΩ - T·(-k_B ∫_{Ω} p(x) ln p(x) dΩ)\]](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [Θ := argmin_x \[∫_{Ω} V\(x\) dΩ - T·\(-k_B ∫_{Ω} p\(x\) ln p\(x\) dΩ\)\]](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-6899092547602833 / Θ := argmin_x \[∫_{Ω} V(x) dΩ - T·(-k_B ∫_{Ω} p(x) ln p(x) dΩ)\] / IMPLICIT-6899092547602833 / IMPLICIT-E51AC76294648D92
+  - 可搜索名称：IMPLICIT-6899092547602833 / Θ := argmin_x \[∫_{Ω} V\(x\) dΩ - T·\(-k_B ∫_{Ω} p\(x\) ln p\(x\) dΩ\)\] / IMPLICIT-6899092547602833 / IMPLICIT-E51AC76294648D92
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [Θ := argmin_x \[∫_{Ω} V(x) dΩ - T·(-k_B ∫_{Ω} p(x) ln p(x) dΩ)\]](../../../docs/phi_meta_law.md)
+- [Θ := argmin_x \[∫_{Ω} V\(x\) dΩ - T·\(-k_B ∫_{Ω} p\(x\) ln p\(x\) dΩ\)\]](../../../docs/phi_meta_law.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-E51AC76294648D92 / Θ := argmin_x \[∫_{Ω} V(x) dΩ - T·(-k_B ∫_{Ω} p(x) ln p(x) dΩ)\] / IMPLICIT-E51AC76294648D92 / IMPLICIT-6899092547602833
+  - 可搜索名称：IMPLICIT-E51AC76294648D92 / Θ := argmin_x \[∫_{Ω} V\(x\) dΩ - T·\(-k_B ∫_{Ω} p\(x\) ln p\(x\) dΩ\)\] / IMPLICIT-E51AC76294648D92 / IMPLICIT-6899092547602833
   - 来源：`docs/phi_meta_law.md`
   - 依赖：—；被引用：—
-- [ΘY1_iso(A,B) := Θ_A(x) = Θ_B(φ(x)) ∧ Y1_A(x) = Y1_B(φ(x))](../../../docs/phi_meta_law.md)
+- [ΘY1_iso\(A,B\) := Θ_A\(x\) = Θ_B\(φ\(x\)\) ∧ Y1_A\(x\) = Y1_B\(φ\(x\)\)](../../../docs/phi_meta_law.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-B6FEBD9550221C76 / ΘY1_iso(A,B) := Θ_A(x) = Θ_B(φ(x)) ∧ Y1_A(x) = Y1_B(φ(x)) / IMPLICIT-B6FEBD9550221C76 / IMPLICIT-C3C8D112801987DA
+  - 可搜索名称：IMPLICIT-B6FEBD9550221C76 / ΘY1_iso\(A,B\) := Θ_A\(x\) = Θ_B\(φ\(x\)\) ∧ Y1_A\(x\) = Y1_B\(φ\(x\)\) / IMPLICIT-B6FEBD9550221C76 / IMPLICIT-C3C8D112801987DA
   - 来源：`docs/phi_meta_law.md`
   - 依赖：—；被引用：—
-- [ΘY1_iso(A,B) := Θ_A(x) = Θ_B(φ(x)) ∧ Y1_A(x) = Y1_B(φ(x))](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [ΘY1_iso\(A,B\) := Θ_A\(x\) = Θ_B\(φ\(x\)\) ∧ Y1_A\(x\) = Y1_B\(φ\(x\)\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-C3C8D112801987DA / ΘY1_iso(A,B) := Θ_A(x) = Θ_B(φ(x)) ∧ Y1_A(x) = Y1_B(φ(x)) / IMPLICIT-C3C8D112801987DA / IMPLICIT-B6FEBD9550221C76
+  - 可搜索名称：IMPLICIT-C3C8D112801987DA / ΘY1_iso\(A,B\) := Θ_A\(x\) = Θ_B\(φ\(x\)\) ∧ Y1_A\(x\) = Y1_B\(φ\(x\)\) / IMPLICIT-C3C8D112801987DA / IMPLICIT-B6FEBD9550221C76
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [σ = f(Posture_deg, H)](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [σ = f\(Posture_deg, H\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-D3CC0B303B40577E / σ = f(Posture_deg, H) / IMPLICIT-D3CC0B303B40577E
+  - 可搜索名称：IMPLICIT-D3CC0B303B40577E / σ = f\(Posture_deg, H\) / IMPLICIT-D3CC0B303B40577E
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [σ(Λ)=\|ln(M_Planck/Λ)\|/√(2ln\|ln(M_Planck/Λ)\|)](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [σ\(Λ\)=\|ln\(M_Planck/Λ\)\|/√\(2ln\|ln\(M_Planck/Λ\)\|\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-3F39071C3EF5FF6F / σ(Λ)=\|ln(M_Planck/Λ)\|/√(2ln\|ln(M_Planck/Λ)\|) / IMPLICIT-3F39071C3EF5FF6F
+  - 可搜索名称：IMPLICIT-3F39071C3EF5FF6F / σ\(Λ\)=\|ln\(M_Planck/Λ\)\|/√\(2ln\|ln\(M_Planck/Λ\)\|\) / IMPLICIT-3F39071C3EF5FF6F
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [σ=√(dim_eff×ℏ_eff/(2μ_eff))，顿悟=1/ln→exp\[-ln²\]的切换点](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [σ=√\(dim_eff×ℏ_eff/\(2μ_eff\)\)，顿悟=1/ln→exp\[-ln²\]的切换点](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-E92EB02A64BB97DD / σ=√(dim_eff×ℏ_eff/(2μ_eff))，顿悟=1/ln→exp\[-ln²\]的切换点 / IMPLICIT-E92EB02A64BB97DD
+  - 可搜索名称：IMPLICIT-E92EB02A64BB97DD / σ=√\(dim_eff×ℏ_eff/\(2μ_eff\)\)，顿悟=1/ln→exp\[-ln²\]的切换点 / IMPLICIT-E92EB02A64BB97DD
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [Φ(x) = E(x) - T·S(x)](../../../docs/phi_meta_law.md)
+- [Φ\(x\) = E\(x\) - T·S\(x\)](../../../docs/phi_meta_law.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-7506B88F1F0D7FCD / Φ(x) = E(x) - T·S(x) / IMPLICIT-7506B88F1F0D7FCD / IMPLICIT-8283AA10BCACD392
+  - 可搜索名称：IMPLICIT-7506B88F1F0D7FCD / Φ\(x\) = E\(x\) - T·S\(x\) / IMPLICIT-7506B88F1F0D7FCD / IMPLICIT-8283AA10BCACD392
   - 来源：`docs/phi_meta_law.md`
   - 依赖：—；被引用：—
-- [Φ(x) = E(x) - T·S(x)](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [Φ\(x\) = E\(x\) - T·S\(x\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-8283AA10BCACD392 / Φ(x) = E(x) - T·S(x) / IMPLICIT-8283AA10BCACD392 / IMPLICIT-7506B88F1F0D7FCD
+  - 可搜索名称：IMPLICIT-8283AA10BCACD392 / Φ\(x\) = E\(x\) - T·S\(x\) / IMPLICIT-8283AA10BCACD392 / IMPLICIT-7506B88F1F0D7FCD
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [Φ_iso(A,B) := ∃φ: A→B, Φ_A(x) = Φ_B(φ(x))](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [Φ_iso\(A,B\) := ∃φ: A→B, Φ_A\(x\) = Φ_B\(φ\(x\)\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-97EDC919D40414E5 / Φ_iso(A,B) := ∃φ: A→B, Φ_A(x) = Φ_B(φ(x)) / IMPLICIT-97EDC919D40414E5 / IMPLICIT-EDA3023ED91EA252
+  - 可搜索名称：IMPLICIT-97EDC919D40414E5 / Φ_iso\(A,B\) := ∃φ: A→B, Φ_A\(x\) = Φ_B\(φ\(x\)\) / IMPLICIT-97EDC919D40414E5 / IMPLICIT-EDA3023ED91EA252
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [Φ_iso(A,B) := ∃φ: A→B, Φ_A(x) = Φ_B(φ(x))](../../../docs/phi_meta_law.md)
+- [Φ_iso\(A,B\) := ∃φ: A→B, Φ_A\(x\) = Φ_B\(φ\(x\)\)](../../../docs/phi_meta_law.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-EDA3023ED91EA252 / Φ_iso(A,B) := ∃φ: A→B, Φ_A(x) = Φ_B(φ(x)) / IMPLICIT-EDA3023ED91EA252 / IMPLICIT-97EDC919D40414E5
+  - 可搜索名称：IMPLICIT-EDA3023ED91EA252 / Φ_iso\(A,B\) := ∃φ: A→B, Φ_A\(x\) = Φ_B\(φ\(x\)\) / IMPLICIT-EDA3023ED91EA252 / IMPLICIT-97EDC919D40414E5
   - 来源：`docs/phi_meta_law.md`
   - 依赖：—；被引用：—
 - [Ψ₀ 元判定框架：负责判定（J⁺/J⁻）、同构识别（I_iso）、收敛审核（L_meta）。](../../../docs/meta-protocols/README.md)
@@ -114,25 +144,30 @@
   - 可搜索名称：NFC-9209575ad3d016e5 / Ψ₀ 元判定框架：负责判定（J⁺/J⁻）、同构识别（I_iso）、收敛审核（L_meta）。
   - 来源：`docs/meta-protocols/README.md`
   - 依赖：—；被引用：—
-- [Ω = {x \| C₁(x) ∧ C₂(x) ∧ ... ∧ Cₙ(x)}](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [Ω = {x \| C₁\(x\) ∧ C₂\(x\) ∧ ... ∧ Cₙ\(x\)}](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-41B66B56E0A0BD47 / Ω = {x \| C₁(x) ∧ C₂(x) ∧ ... ∧ Cₙ(x)} / IMPLICIT-41B66B56E0A0BD47
+  - 可搜索名称：IMPLICIT-41B66B56E0A0BD47 / Ω = {x \| C₁\(x\) ∧ C₂\(x\) ∧ ... ∧ Cₙ\(x\)} / IMPLICIT-41B66B56E0A0BD47
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [Ω(t) = {x \| C₁(x,t) ∧ C₂(x,t) ∧ ... ∧ Cₙ(x,t)}](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [Ω\(t\) = {x \| C₁\(x,t\) ∧ C₂\(x,t\) ∧ ... ∧ Cₙ\(x,t\)}](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-0945A6A6A90EDEC6 / Ω(t) = {x \| C₁(x,t) ∧ C₂(x,t) ∧ ... ∧ Cₙ(x,t)} / IMPLICIT-0945A6A6A90EDEC6
+  - 可搜索名称：IMPLICIT-0945A6A6A90EDEC6 / Ω\(t\) = {x \| C₁\(x,t\) ∧ C₂\(x,t\) ∧ ... ∧ Cₙ\(x,t\)} / IMPLICIT-0945A6A6A90EDEC6
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [Ω_irreversible = {Ω \| P_exit(Ω)=0 且无法恢复}](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [Ω_irreversible = {Ω \| P_exit\(Ω\)=0 且无法恢复}](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-1D67331BDA699B53 / Ω_irreversible = {Ω \| P_exit(Ω)=0 且无法恢复} / IMPLICIT-1D67331BDA699B53
+  - 可搜索名称：IMPLICIT-1D67331BDA699B53 / Ω_irreversible = {Ω \| P_exit\(Ω\)=0 且无法恢复} / IMPLICIT-1D67331BDA699B53
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [Ω_universe(t) = {x \| 所有硬约束 Cᵢ(x,t) 同时满足}](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [Ω_universe\(t\) = {x \| 所有硬约束 Cᵢ\(x,t\) 同时满足}](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-174E36F3415C91F4 / Ω_universe(t) = {x \| 所有硬约束 Cᵢ(x,t) 同时满足} / IMPLICIT-174E36F3415C91F4
+  - 可搜索名称：IMPLICIT-174E36F3415C91F4 / Ω_universe\(t\) = {x \| 所有硬约束 Cᵢ\(x,t\) 同时满足} / IMPLICIT-174E36F3415C91F4
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [— IGNITION-20260816-123-CURRENT-STATE-SYNC-R1-STEP-07 — task-branch projection](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-dadba3221586363a / — IGNITION-20260816-123-CURRENT-STATE-SYNC-R1-STEP-07 — task-branch projection
+  - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
 - [“读起来顺”不自动属于第一类；“逐字对应”也不自动属于保真。](../../../docs/language-thought/translation-and-residue.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -144,19 +179,19 @@
   - 可搜索名称：NFC-141b3da4dd7ebf4c / “门控面合并”只能作为待验证结构类比；
   - 来源：`docs/discipline_kernel_pilot.md`
   - 依赖：—；被引用：—
-- [∂Ω_universe = {x \| Cᵢ(x) = 边界值}](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [∂Ω_universe = {x \| Cᵢ\(x\) = 边界值}](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-36F43D15A5DB25A5 / ∂Ω_universe = {x \| Cᵢ(x) = 边界值} / IMPLICIT-36F43D15A5DB25A5
+  - 可搜索名称：IMPLICIT-36F43D15A5DB25A5 / ∂Ω_universe = {x \| Cᵢ\(x\) = 边界值} / IMPLICIT-36F43D15A5DB25A5
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [∄ 完美财务决策算法 A，使得 ∀ 财务场景 S，A(S) = 最优决策](../../../data/math-foundation/function-provenance-ledger.csv)
+- [∄ 完美财务决策算法 A，使得 ∀ 财务场景 S，A\(S\) = 最优决策](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-8D70A958B15DB468 / ∄ 完美财务决策算法 A，使得 ∀ 财务场景 S，A(S) = 最优决策 / IMPLICIT-8D70A958B15DB468 / IMPLICIT-A92F11F032ACA5E0
+  - 可搜索名称：IMPLICIT-8D70A958B15DB468 / ∄ 完美财务决策算法 A，使得 ∀ 财务场景 S，A\(S\) = 最优决策 / IMPLICIT-8D70A958B15DB468 / IMPLICIT-A92F11F032ACA5E0
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：—；被引用：—
-- [∄ 完美财务决策算法 A，使得 ∀ 财务场景 S，A(S) = 最优决策](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [∄ 完美财务决策算法 A，使得 ∀ 财务场景 S，A\(S\) = 最优决策](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-A92F11F032ACA5E0 / ∄ 完美财务决策算法 A，使得 ∀ 财务场景 S，A(S) = 最优决策 / IMPLICIT-A92F11F032ACA5E0 / IMPLICIT-8D70A958B15DB468
+  - 可搜索名称：IMPLICIT-A92F11F032ACA5E0 / ∄ 完美财务决策算法 A，使得 ∀ 财务场景 S，A\(S\) = 最优决策 / IMPLICIT-A92F11F032ACA5E0 / IMPLICIT-8D70A958B15DB468
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
 - [│ 组件之一：P_meta（元协议投影算子）](../../../docs/protocols/README.md)
@@ -184,64 +219,64 @@
   - 可搜索名称：不采纳项 · P1 接入烟雾测试 / rejected
   - 来源：`outputs/collisions/20260708-smoke-test/rejected.md`
   - 依赖：—；被引用：—
-- [与 Ψ₀ 关系：E1 属于 Ψ₀ 中 P_meta 元协议投影算子展开出的生成层；Ψ₀ 仍负责判定(J⁺/J⁻)、同构识别(I_iso)与收敛审核(L_meta)，不被替代。](../../../docs/meta-protocols/12-meta-protocols.md)
+- [与 Ψ₀ 关系：E1 属于 Ψ₀ 中 P_meta 元协议投影算子展开出的生成层；Ψ₀ 仍负责判定\(J⁺/J⁻\)、同构识别\(I_iso\)与收敛审核\(L_meta\)，不被替代。](../../../docs/meta-protocols/12-meta-protocols.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-183f4e5cc2be7804 / 与 Ψ₀ 关系：E1 属于 Ψ₀ 中 P_meta 元协议投影算子展开出的生成层；Ψ₀ 仍负责判定(J⁺/J⁻)、同构识别(I_iso)与收敛审核(L_meta)，不被替代。
+  - 可搜索名称：NFC-183f4e5cc2be7804 / 与 Ψ₀ 关系：E1 属于 Ψ₀ 中 P_meta 元协议投影算子展开出的生成层；Ψ₀ 仍负责判定\(J⁺/J⁻\)、同构识别\(I_iso\)与收敛审核\(L_meta\)，不被替代。
   - 来源：`docs/meta-protocols/12-meta-protocols.md`
   - 依赖：—；被引用：—
-- [与 Ψ₀ 关系：E2 属于 Ψ₀ 中 P_meta 元协议投影算子展开出的生成层；Ψ₀ 仍负责判定(J⁺/J⁻)、同构识别(I_iso)与收敛审核(L_meta)，不被替代。](../../../docs/meta-protocols/12-meta-protocols.md)
+- [与 Ψ₀ 关系：E2 属于 Ψ₀ 中 P_meta 元协议投影算子展开出的生成层；Ψ₀ 仍负责判定\(J⁺/J⁻\)、同构识别\(I_iso\)与收敛审核\(L_meta\)，不被替代。](../../../docs/meta-protocols/12-meta-protocols.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-8e3568f52c889b44 / 与 Ψ₀ 关系：E2 属于 Ψ₀ 中 P_meta 元协议投影算子展开出的生成层；Ψ₀ 仍负责判定(J⁺/J⁻)、同构识别(I_iso)与收敛审核(L_meta)，不被替代。
+  - 可搜索名称：NFC-8e3568f52c889b44 / 与 Ψ₀ 关系：E2 属于 Ψ₀ 中 P_meta 元协议投影算子展开出的生成层；Ψ₀ 仍负责判定\(J⁺/J⁻\)、同构识别\(I_iso\)与收敛审核\(L_meta\)，不被替代。
   - 来源：`docs/meta-protocols/12-meta-protocols.md`
   - 依赖：—；被引用：—
-- [与 Ψ₀ 关系：E3 属于 Ψ₀ 中 P_meta 元协议投影算子展开出的生成层；Ψ₀ 仍负责判定(J⁺/J⁻)、同构识别(I_iso)与收敛审核(L_meta)，不被替代。](../../../docs/meta-protocols/12-meta-protocols.md)
+- [与 Ψ₀ 关系：E3 属于 Ψ₀ 中 P_meta 元协议投影算子展开出的生成层；Ψ₀ 仍负责判定\(J⁺/J⁻\)、同构识别\(I_iso\)与收敛审核\(L_meta\)，不被替代。](../../../docs/meta-protocols/12-meta-protocols.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-ffe1059ce8d7e896 / 与 Ψ₀ 关系：E3 属于 Ψ₀ 中 P_meta 元协议投影算子展开出的生成层；Ψ₀ 仍负责判定(J⁺/J⁻)、同构识别(I_iso)与收敛审核(L_meta)，不被替代。
+  - 可搜索名称：NFC-ffe1059ce8d7e896 / 与 Ψ₀ 关系：E3 属于 Ψ₀ 中 P_meta 元协议投影算子展开出的生成层；Ψ₀ 仍负责判定\(J⁺/J⁻\)、同构识别\(I_iso\)与收敛审核\(L_meta\)，不被替代。
   - 来源：`docs/meta-protocols/12-meta-protocols.md`
   - 依赖：—；被引用：—
-- [与 Ψ₀ 关系：E4 属于 Ψ₀ 中 P_meta 元协议投影算子展开出的生成层；Ψ₀ 仍负责判定(J⁺/J⁻)、同构识别(I_iso)与收敛审核(L_meta)，不被替代。](../../../docs/meta-protocols/12-meta-protocols.md)
+- [与 Ψ₀ 关系：E4 属于 Ψ₀ 中 P_meta 元协议投影算子展开出的生成层；Ψ₀ 仍负责判定\(J⁺/J⁻\)、同构识别\(I_iso\)与收敛审核\(L_meta\)，不被替代。](../../../docs/meta-protocols/12-meta-protocols.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-05a2b4c55c2f6b95 / 与 Ψ₀ 关系：E4 属于 Ψ₀ 中 P_meta 元协议投影算子展开出的生成层；Ψ₀ 仍负责判定(J⁺/J⁻)、同构识别(I_iso)与收敛审核(L_meta)，不被替代。
+  - 可搜索名称：NFC-05a2b4c55c2f6b95 / 与 Ψ₀ 关系：E4 属于 Ψ₀ 中 P_meta 元协议投影算子展开出的生成层；Ψ₀ 仍负责判定\(J⁺/J⁻\)、同构识别\(I_iso\)与收敛审核\(L_meta\)，不被替代。
   - 来源：`docs/meta-protocols/12-meta-protocols.md`
   - 依赖：—；被引用：—
-- [与 Ψ₀ 关系：S1 属于 Ψ₀ 中 P_meta 元协议投影算子展开出的生成层；Ψ₀ 仍负责判定(J⁺/J⁻)、同构识别(I_iso)与收敛审核(L_meta)，不被替代。](../../../docs/meta-protocols/12-meta-protocols.md)
+- [与 Ψ₀ 关系：S1 属于 Ψ₀ 中 P_meta 元协议投影算子展开出的生成层；Ψ₀ 仍负责判定\(J⁺/J⁻\)、同构识别\(I_iso\)与收敛审核\(L_meta\)，不被替代。](../../../docs/meta-protocols/12-meta-protocols.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-df4c4293324eb840 / 与 Ψ₀ 关系：S1 属于 Ψ₀ 中 P_meta 元协议投影算子展开出的生成层；Ψ₀ 仍负责判定(J⁺/J⁻)、同构识别(I_iso)与收敛审核(L_meta)，不被替代。
+  - 可搜索名称：NFC-df4c4293324eb840 / 与 Ψ₀ 关系：S1 属于 Ψ₀ 中 P_meta 元协议投影算子展开出的生成层；Ψ₀ 仍负责判定\(J⁺/J⁻\)、同构识别\(I_iso\)与收敛审核\(L_meta\)，不被替代。
   - 来源：`docs/meta-protocols/12-meta-protocols.md`
   - 依赖：—；被引用：—
-- [与 Ψ₀ 关系：S2 属于 Ψ₀ 中 P_meta 元协议投影算子展开出的生成层；Ψ₀ 仍负责判定(J⁺/J⁻)、同构识别(I_iso)与收敛审核(L_meta)，不被替代。](../../../docs/meta-protocols/12-meta-protocols.md)
+- [与 Ψ₀ 关系：S2 属于 Ψ₀ 中 P_meta 元协议投影算子展开出的生成层；Ψ₀ 仍负责判定\(J⁺/J⁻\)、同构识别\(I_iso\)与收敛审核\(L_meta\)，不被替代。](../../../docs/meta-protocols/12-meta-protocols.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-80d782857eda9bc2 / 与 Ψ₀ 关系：S2 属于 Ψ₀ 中 P_meta 元协议投影算子展开出的生成层；Ψ₀ 仍负责判定(J⁺/J⁻)、同构识别(I_iso)与收敛审核(L_meta)，不被替代。
+  - 可搜索名称：NFC-80d782857eda9bc2 / 与 Ψ₀ 关系：S2 属于 Ψ₀ 中 P_meta 元协议投影算子展开出的生成层；Ψ₀ 仍负责判定\(J⁺/J⁻\)、同构识别\(I_iso\)与收敛审核\(L_meta\)，不被替代。
   - 来源：`docs/meta-protocols/12-meta-protocols.md`
   - 依赖：—；被引用：—
-- [与 Ψ₀ 关系：S3 属于 Ψ₀ 中 P_meta 元协议投影算子展开出的生成层；Ψ₀ 仍负责判定(J⁺/J⁻)、同构识别(I_iso)与收敛审核(L_meta)，不被替代。](../../../docs/meta-protocols/12-meta-protocols.md)
+- [与 Ψ₀ 关系：S3 属于 Ψ₀ 中 P_meta 元协议投影算子展开出的生成层；Ψ₀ 仍负责判定\(J⁺/J⁻\)、同构识别\(I_iso\)与收敛审核\(L_meta\)，不被替代。](../../../docs/meta-protocols/12-meta-protocols.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-09f0e731a9f0b697 / 与 Ψ₀ 关系：S3 属于 Ψ₀ 中 P_meta 元协议投影算子展开出的生成层；Ψ₀ 仍负责判定(J⁺/J⁻)、同构识别(I_iso)与收敛审核(L_meta)，不被替代。
+  - 可搜索名称：NFC-09f0e731a9f0b697 / 与 Ψ₀ 关系：S3 属于 Ψ₀ 中 P_meta 元协议投影算子展开出的生成层；Ψ₀ 仍负责判定\(J⁺/J⁻\)、同构识别\(I_iso\)与收敛审核\(L_meta\)，不被替代。
   - 来源：`docs/meta-protocols/12-meta-protocols.md`
   - 依赖：—；被引用：—
-- [与 Ψ₀ 关系：S4 属于 Ψ₀ 中 P_meta 元协议投影算子展开出的生成层；Ψ₀ 仍负责判定(J⁺/J⁻)、同构识别(I_iso)与收敛审核(L_meta)，不被替代。](../../../docs/meta-protocols/12-meta-protocols.md)
+- [与 Ψ₀ 关系：S4 属于 Ψ₀ 中 P_meta 元协议投影算子展开出的生成层；Ψ₀ 仍负责判定\(J⁺/J⁻\)、同构识别\(I_iso\)与收敛审核\(L_meta\)，不被替代。](../../../docs/meta-protocols/12-meta-protocols.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-bdec67de4240e00c / 与 Ψ₀ 关系：S4 属于 Ψ₀ 中 P_meta 元协议投影算子展开出的生成层；Ψ₀ 仍负责判定(J⁺/J⁻)、同构识别(I_iso)与收敛审核(L_meta)，不被替代。
+  - 可搜索名称：NFC-bdec67de4240e00c / 与 Ψ₀ 关系：S4 属于 Ψ₀ 中 P_meta 元协议投影算子展开出的生成层；Ψ₀ 仍负责判定\(J⁺/J⁻\)、同构识别\(I_iso\)与收敛审核\(L_meta\)，不被替代。
   - 来源：`docs/meta-protocols/12-meta-protocols.md`
   - 依赖：—；被引用：—
-- [与 Ψ₀ 关系：V1 属于 Ψ₀ 中 P_meta 元协议投影算子展开出的生成层；Ψ₀ 仍负责判定(J⁺/J⁻)、同构识别(I_iso)与收敛审核(L_meta)，不被替代。](../../../docs/meta-protocols/12-meta-protocols.md)
+- [与 Ψ₀ 关系：V1 属于 Ψ₀ 中 P_meta 元协议投影算子展开出的生成层；Ψ₀ 仍负责判定\(J⁺/J⁻\)、同构识别\(I_iso\)与收敛审核\(L_meta\)，不被替代。](../../../docs/meta-protocols/12-meta-protocols.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-9e5fe0a7654e2aca / 与 Ψ₀ 关系：V1 属于 Ψ₀ 中 P_meta 元协议投影算子展开出的生成层；Ψ₀ 仍负责判定(J⁺/J⁻)、同构识别(I_iso)与收敛审核(L_meta)，不被替代。
+  - 可搜索名称：NFC-9e5fe0a7654e2aca / 与 Ψ₀ 关系：V1 属于 Ψ₀ 中 P_meta 元协议投影算子展开出的生成层；Ψ₀ 仍负责判定\(J⁺/J⁻\)、同构识别\(I_iso\)与收敛审核\(L_meta\)，不被替代。
   - 来源：`docs/meta-protocols/12-meta-protocols.md`
   - 依赖：—；被引用：—
-- [与 Ψ₀ 关系：V2 属于 Ψ₀ 中 P_meta 元协议投影算子展开出的生成层；Ψ₀ 仍负责判定(J⁺/J⁻)、同构识别(I_iso)与收敛审核(L_meta)，不被替代。](../../../docs/meta-protocols/12-meta-protocols.md)
+- [与 Ψ₀ 关系：V2 属于 Ψ₀ 中 P_meta 元协议投影算子展开出的生成层；Ψ₀ 仍负责判定\(J⁺/J⁻\)、同构识别\(I_iso\)与收敛审核\(L_meta\)，不被替代。](../../../docs/meta-protocols/12-meta-protocols.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-8e669683c183701a / 与 Ψ₀ 关系：V2 属于 Ψ₀ 中 P_meta 元协议投影算子展开出的生成层；Ψ₀ 仍负责判定(J⁺/J⁻)、同构识别(I_iso)与收敛审核(L_meta)，不被替代。
+  - 可搜索名称：NFC-8e669683c183701a / 与 Ψ₀ 关系：V2 属于 Ψ₀ 中 P_meta 元协议投影算子展开出的生成层；Ψ₀ 仍负责判定\(J⁺/J⁻\)、同构识别\(I_iso\)与收敛审核\(L_meta\)，不被替代。
   - 来源：`docs/meta-protocols/12-meta-protocols.md`
   - 依赖：—；被引用：—
-- [与 Ψ₀ 关系：V3 属于 Ψ₀ 中 P_meta 元协议投影算子展开出的生成层；Ψ₀ 仍负责判定(J⁺/J⁻)、同构识别(I_iso)与收敛审核(L_meta)，不被替代。](../../../docs/meta-protocols/12-meta-protocols.md)
+- [与 Ψ₀ 关系：V3 属于 Ψ₀ 中 P_meta 元协议投影算子展开出的生成层；Ψ₀ 仍负责判定\(J⁺/J⁻\)、同构识别\(I_iso\)与收敛审核\(L_meta\)，不被替代。](../../../docs/meta-protocols/12-meta-protocols.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-58dcc5813003a0ae / 与 Ψ₀ 关系：V3 属于 Ψ₀ 中 P_meta 元协议投影算子展开出的生成层；Ψ₀ 仍负责判定(J⁺/J⁻)、同构识别(I_iso)与收敛审核(L_meta)，不被替代。
+  - 可搜索名称：NFC-58dcc5813003a0ae / 与 Ψ₀ 关系：V3 属于 Ψ₀ 中 P_meta 元协议投影算子展开出的生成层；Ψ₀ 仍负责判定\(J⁺/J⁻\)、同构识别\(I_iso\)与收敛审核\(L_meta\)，不被替代。
   - 来源：`docs/meta-protocols/12-meta-protocols.md`
   - 依赖：—；被引用：—
-- [与 Ψ₀ 关系：V4 属于 Ψ₀ 中 P_meta 元协议投影算子展开出的生成层；Ψ₀ 仍负责判定(J⁺/J⁻)、同构识别(I_iso)与收敛审核(L_meta)，不被替代。](../../../docs/meta-protocols/12-meta-protocols.md)
+- [与 Ψ₀ 关系：V4 属于 Ψ₀ 中 P_meta 元协议投影算子展开出的生成层；Ψ₀ 仍负责判定\(J⁺/J⁻\)、同构识别\(I_iso\)与收敛审核\(L_meta\)，不被替代。](../../../docs/meta-protocols/12-meta-protocols.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-710e5bc34443f156 / 与 Ψ₀ 关系：V4 属于 Ψ₀ 中 P_meta 元协议投影算子展开出的生成层；Ψ₀ 仍负责判定(J⁺/J⁻)、同构识别(I_iso)与收敛审核(L_meta)，不被替代。
+  - 可搜索名称：NFC-710e5bc34443f156 / 与 Ψ₀ 关系：V4 属于 Ψ₀ 中 P_meta 元协议投影算子展开出的生成层；Ψ₀ 仍负责判定\(J⁺/J⁻\)、同构识别\(I_iso\)与收敛审核\(L_meta\)，不被替代。
   - 来源：`docs/meta-protocols/12-meta-protocols.md`
   - 依赖：—；被引用：—
 - [与案例表碰撞（找对应案例、反例、支撑）。](../../../docs/getbrain-operation-guide-20260708.md)
@@ -279,14 +314,14 @@
   - 可搜索名称：IMPLICIT-2721291F515316D6 / 中文：$$\\text{Noether}: G \\xrightarrow{\\text{对称}} \\text{Conservation} \\quad \\Longleftrightarrow \\quad \\text{Ignition}: \\neg G \\xrightarrow{\\text{破缺}} \\text{Directed Evolution}$$ 守恒量变化率： $$\\frac{dQ}{dt} = -\\nabla G \\cdot \\vec{v}_{evolution}$$ $ / IMPLICIT-2721291F515316D6
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [中文：Classical(μ, Λ) = lim_{μ/Λ→∞} 1/ln(μ/Λ) = 0。经典力学是所有门控贡献趋零的极限态，确定性=门控贡献可忽略。牛顿力学不是"更基本的理论"，是μ>>Λ时门控贡献趋零的退化极限。](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [中文：Classical\(μ, Λ\) = lim_{μ/Λ→∞} 1/ln\(μ/Λ\) = 0。经典力学是所有门控贡献趋零的极限态，确定性=门控贡献可忽略。牛顿力学不是"更基本的理论"，是μ>>Λ时门控贡献趋零的退化极限。](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-2F4D1DD5B00C75DE / 中文：Classical(μ, Λ) = lim_{μ/Λ→∞} 1/ln(μ/Λ) = 0。经典力学是所有门控贡献趋零的极限态，确定性=门控贡献可忽略。牛顿力学不是"更基本的理论"，是μ>>Λ时门控贡献趋零的退化极限。 / IMPLICIT-2F4D1DD5B00C75DE
+  - 可搜索名称：IMPLICIT-2F4D1DD5B00C75DE / 中文：Classical\(μ, Λ\) = lim_{μ/Λ→∞} 1/ln\(μ/Λ\) = 0。经典力学是所有门控贡献趋零的极限态，确定性=门控贡献可忽略。牛顿力学不是"更基本的理论"，是μ>>Λ时门控贡献趋零的退化极限。 / IMPLICIT-2F4D1DD5B00C75DE
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [中文：d_opt由"新门控面降低p"（αᵢ 0）的平衡决定。dΦ/dd=0→Σᵢ αᵢ/(1-pᵢ(d_opt))=0。d_opt是学习收益和维护成本的交叉点。](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [中文：d_opt由"新门控面降低p"（αᵢ 0）的平衡决定。dΦ/dd=0→Σᵢ αᵢ/\(1-pᵢ\(d_opt\)\)=0。d_opt是学习收益和维护成本的交叉点。](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-418959E91EE64A93 / 中文：d_opt由"新门控面降低p"（αᵢ 0）的平衡决定。dΦ/dd=0→Σᵢ αᵢ/(1-pᵢ(d_opt))=0。d_opt是学习收益和维护成本的交叉点。 / IMPLICIT-418959E91EE64A93
+  - 可搜索名称：IMPLICIT-418959E91EE64A93 / 中文：d_opt由"新门控面降低p"（αᵢ 0）的平衡决定。dΦ/dd=0→Σᵢ αᵢ/\(1-pᵢ\(d_opt\)\)=0。d_opt是学习收益和维护成本的交叉点。 / IMPLICIT-418959E91EE64A93
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
 - [中文：dP_exit/dΩ = 0 ↔ dΦ/dμ = 0](../../../data/foundation/function-assets/identity-cards.jsonl)
@@ -294,169 +329,169 @@
   - 可搜索名称：IMPLICIT-D89A028B92AAA77C / 中文：dP_exit/dΩ = 0 ↔ dΦ/dμ = 0 / IMPLICIT-D89A028B92AAA77C
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [中文：dW/dt = -θ_resist×(dE/dt)/E² - dε_aware_min/dt](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [中文：dW/dt = -θ_resist×\(dE/dt\)/E² - dε_aware_min/dt](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-AEA6D5687F6D54EA / 中文：dW/dt = -θ_resist×(dE/dt)/E² - dε_aware_min/dt / IMPLICIT-AEA6D5687F6D54EA
+  - 可搜索名称：IMPLICIT-AEA6D5687F6D54EA / 中文：dW/dt = -θ_resist×\(dE/dt\)/E² - dε_aware_min/dt / IMPLICIT-AEA6D5687F6D54EA
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [中文：dε/dt = α·(1-ε)·I·σ(Δv) - β·ε·Posture_deg·H](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [中文：dε/dt = α·\(1-ε\)·I·σ\(Δv\) - β·ε·Posture_deg·H](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-283F04B5DDEA6E6E / 中文：dε/dt = α·(1-ε)·I·σ(Δv) - β·ε·Posture_deg·H / IMPLICIT-283F04B5DDEA6E6E
+  - 可搜索名称：IMPLICIT-283F04B5DDEA6E6E / 中文：dε/dt = α·\(1-ε\)·I·σ\(Δv\) - β·ε·Posture_deg·H / IMPLICIT-283F04B5DDEA6E6E
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [中文：E_signal(t) = {零阶:ε, 一阶:dε/dt, 二阶:d²ε/dt², 交互:εᵢ×εⱼ}](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [中文：E_signal\(t\) = {零阶:ε, 一阶:dε/dt, 二阶:d²ε/dt², 交互:εᵢ×εⱼ}](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-982754AA1547AB4D / 中文：E_signal(t) = {零阶:ε, 一阶:dε/dt, 二阶:d²ε/dt², 交互:εᵢ×εⱼ} / IMPLICIT-982754AA1547AB4D
+  - 可搜索名称：IMPLICIT-982754AA1547AB4D / 中文：E_signal\(t\) = {零阶:ε, 一阶:dε/dt, 二阶:d²ε/dt², 交互:εᵢ×εⱼ} / IMPLICIT-982754AA1547AB4D
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [中文：f(执念,逃避) = σ(θ_escape - ε_fixation) × R_escape²。执念O触发逃避E(O)，逃避本身成为新执念源，形成二阶逃避。第一层逃避现实，第二层逃避逃避行为本身。](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [中文：f\(执念,逃避\) = σ\(θ_escape - ε_fixation\) × R_escape²。执念O触发逃避E\(O\)，逃避本身成为新执念源，形成二阶逃避。第一层逃避现实，第二层逃避逃避行为本身。](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-958523EA5EA33B8D / 中文：f(执念,逃避) = σ(θ_escape - ε_fixation) × R_escape²。执念O触发逃避E(O)，逃避本身成为新执念源，形成二阶逃避。第一层逃避现实，第二层逃避逃避行为本身。 / IMPLICIT-958523EA5EA33B8D
+  - 可搜索名称：IMPLICIT-958523EA5EA33B8D / 中文：f\(执念,逃避\) = σ\(θ_escape - ε_fixation\) × R_escape²。执念O触发逃避E\(O\)，逃避本身成为新执念源，形成二阶逃避。第一层逃避现实，第二层逃避逃避行为本身。 / IMPLICIT-958523EA5EA33B8D
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [中文：I(Ω) = log₂ \|{x \| 所有硬约束 Cᵢ(x) 同时满足}\|](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [中文：I\(Ω\) = log₂ \|{x \| 所有硬约束 Cᵢ\(x\) 同时满足}\|](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-0A7AC0249AAAD7FB / 中文：I(Ω) = log₂ \|{x \| 所有硬约束 Cᵢ(x) 同时满足}\| / IMPLICIT-0A7AC0249AAAD7FB
+  - 可搜索名称：IMPLICIT-0A7AC0249AAAD7FB / 中文：I\(Ω\) = log₂ \|{x \| 所有硬约束 Cᵢ\(x\) 同时满足}\| / IMPLICIT-0A7AC0249AAAD7FB
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [中文：L_net(t) = (1-H_blur) × C_exit_gain - L_rigidity](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [中文：L_net\(t\) = \(1-H_blur\) × C_exit_gain - L_rigidity](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-3516A01BFB0D4B2C / 中文：L_net(t) = (1-H_blur) × C_exit_gain - L_rigidity / IMPLICIT-3516A01BFB0D4B2C
+  - 可搜索名称：IMPLICIT-3516A01BFB0D4B2C / 中文：L_net\(t\) = \(1-H_blur\) × C_exit_gain - L_rigidity / IMPLICIT-3516A01BFB0D4B2C
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [中文：n_lock(Ω) = Σᵢ step(C_exit(Ωᵢ) > θ_C(Ωᵢ))](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [中文：n_lock\(Ω\) = Σᵢ step\(C_exit\(Ωᵢ\) > θ_C\(Ωᵢ\)\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-4EFF694A9341849E / 中文：n_lock(Ω) = Σᵢ step(C_exit(Ωᵢ) > θ_C(Ωᵢ)) / IMPLICIT-4EFF694A9341849E
+  - 可搜索名称：IMPLICIT-4EFF694A9341849E / 中文：n_lock\(Ω\) = Σᵢ step\(C_exit\(Ωᵢ\) > θ_C\(Ωᵢ\)\) / IMPLICIT-4EFF694A9341849E
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [中文：P(grid_k \| L) = f(H_total, C_exit, D_immune)](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [中文：P\(grid_k \| L\) = f\(H_total, C_exit, D_immune\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-E073D5834A7B64C0 / 中文：P(grid_k \| L) = f(H_total, C_exit, D_immune) / IMPLICIT-E073D5834A7B64C0
+  - 可搜索名称：IMPLICIT-E073D5834A7B64C0 / 中文：P\(grid_k \| L\) = f\(H_total, C_exit, D_immune\) / IMPLICIT-E073D5834A7B64C0
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [中文：P_collision(WM) = P_slot × P_priority × P_overlap **三个乘法因子：** P_slot = 1 - N_active/WM - 槽位可用率，随WM↑ - 缓存越大，越容易装下信息 P_priority = σ(α_pri × N_active/WM - θ_pri)](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [中文：P_collision\(WM\) = P_slot × P_priority × P_overlap **三个乘法因子：** P_slot = 1 - N_active/WM - 槽位可用率，随WM↑ - 缓存越大，越容易装下信息 P_priority = σ\(α_pri × N_active/WM - θ_pri\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-DD671816730BAC16 / 中文：P_collision(WM) = P_slot × P_priority × P_overlap **三个乘法因子：** P_slot = 1 - N_active/WM - 槽位可用率，随WM↑ - 缓存越大，越容易装下信息 P_priority = σ(α_pri × N_active/WM - θ_pri) / IMPLICIT-DD671816730BAC16
+  - 可搜索名称：IMPLICIT-DD671816730BAC16 / 中文：P_collision\(WM\) = P_slot × P_priority × P_overlap **三个乘法因子：** P_slot = 1 - N_active/WM - 槽位可用率，随WM↑ - 缓存越大，越容易装下信息 P_priority = σ\(α_pri × N_active/WM - θ_pri\) / IMPLICIT-DD671816730BAC16
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [中文：P_exit(t)=f(Ω(t),T(t),C(t),σ(t))](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [中文：P_exit\(t\)=f\(Ω\(t\),T\(t\),C\(t\),σ\(t\)\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-C8A78C480E7C9DF6 / 中文：P_exit(t)=f(Ω(t),T(t),C(t),σ(t)) / IMPLICIT-C8A78C480E7C9DF6
+  - 可搜索名称：IMPLICIT-C8A78C480E7C9DF6 / 中文：P_exit\(t\)=f\(Ω\(t\),T\(t\),C\(t\),σ\(t\)\) / IMPLICIT-C8A78C480E7C9DF6
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [中文：P_exit(t)=P_exit(Ω,T,C,σ) × e^(-Γ_unified×t)](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [中文：P_exit\(t\)=P_exit\(Ω,T,C,σ\) × e^\(-Γ_unified×t\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-C81EE48F4D8DB9A9 / 中文：P_exit(t)=P_exit(Ω,T,C,σ) × e^(-Γ_unified×t) / IMPLICIT-C81EE48F4D8DB9A9
+  - 可搜索名称：IMPLICIT-C81EE48F4D8DB9A9 / 中文：P_exit\(t\)=P_exit\(Ω,T,C,σ\) × e^\(-Γ_unified×t\) / IMPLICIT-C81EE48F4D8DB9A9
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [中文：P_exit(Ω) = R(Ω) - C(Ω)](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [中文：P_exit\(Ω\) = R\(Ω\) - C\(Ω\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-3239CC7F68833180 / 中文：P_exit(Ω) = R(Ω) - C(Ω) / IMPLICIT-3239CC7F68833180
+  - 可搜索名称：IMPLICIT-3239CC7F68833180 / 中文：P_exit\(Ω\) = R\(Ω\) - C\(Ω\) / IMPLICIT-3239CC7F68833180
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [中文：P_exit(Ω)=f(Ω,T,C,σ)](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [中文：P_exit\(Ω\)=f\(Ω,T,C,σ\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-3FBC7E635D686C61 / 中文：P_exit(Ω)=f(Ω,T,C,σ) / IMPLICIT-3FBC7E635D686C61
+  - 可搜索名称：IMPLICIT-3FBC7E635D686C61 / 中文：P_exit\(Ω\)=f\(Ω,T,C,σ\) / IMPLICIT-3FBC7E635D686C61
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [中文：P_exit_decay(Ω,t) = P_exit(Ω,0) × e^(-λ·t)](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [中文：P_exit_decay\(Ω,t\) = P_exit\(Ω,0\) × e^\(-λ·t\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-4E386C27C382699E / 中文：P_exit_decay(Ω,t) = P_exit(Ω,0) × e^(-λ·t) / IMPLICIT-4E386C27C382699E
+  - 可搜索名称：IMPLICIT-4E386C27C382699E / 中文：P_exit_decay\(Ω,t\) = P_exit\(Ω,0\) × e^\(-λ·t\) / IMPLICIT-4E386C27C382699E
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [中文：P_exit_phase(ε_aware) = {5个相变点}](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [中文：P_exit_phase\(ε_aware\) = {5个相变点}](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-1404AFC2CDA0D45F / 中文：P_exit_phase(ε_aware) = {5个相变点} / IMPLICIT-1404AFC2CDA0D45F
+  - 可搜索名称：IMPLICIT-1404AFC2CDA0D45F / 中文：P_exit_phase\(ε_aware\) = {5个相变点} / IMPLICIT-1404AFC2CDA0D45F
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [中文：P_sustain(Ω) = 1 - P_exit(Ω)](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [中文：P_sustain\(Ω\) = 1 - P_exit\(Ω\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-92285AC7A60A3475 / 中文：P_sustain(Ω) = 1 - P_exit(Ω) / IMPLICIT-92285AC7A60A3475
+  - 可搜索名称：IMPLICIT-92285AC7A60A3475 / 中文：P_sustain\(Ω\) = 1 - P_exit\(Ω\) / IMPLICIT-92285AC7A60A3475
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [中文：Space_Function(Ω) = {I(Ω), D_immune(Ω), R(Ω)}](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [中文：Space_Function\(Ω\) = {I\(Ω\), D_immune\(Ω\), R\(Ω\)}](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-2BC1BFE3536FEAE0 / 中文：Space_Function(Ω) = {I(Ω), D_immune(Ω), R(Ω)} / IMPLICIT-2BC1BFE3536FEAE0
+  - 可搜索名称：IMPLICIT-2BC1BFE3536FEAE0 / 中文：Space_Function\(Ω\) = {I\(Ω\), D_immune\(Ω\), R\(Ω\)} / IMPLICIT-2BC1BFE3536FEAE0
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [中文：W(S)=∫_S H² dA, min_{S:亏格g} W(S)=2π² (g=1)，环面达到Willmore能量极小点。变分法验证通过：J⁺=0.8, J⁻=0.2, C_unified=1。](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [中文：W\(S\)=∫_S H² dA, min_{S:亏格g} W\(S\)=2π² \(g=1\)，环面达到Willmore能量极小点。变分法验证通过：J⁺=0.8, J⁻=0.2, C_unified=1。](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-69FEF86E0A1D6548 / 中文：W(S)=∫_S H² dA, min_{S:亏格g} W(S)=2π² (g=1)，环面达到Willmore能量极小点。变分法验证通过：J⁺=0.8, J⁻=0.2, C_unified=1。 / IMPLICIT-69FEF86E0A1D6548
+  - 可搜索名称：IMPLICIT-69FEF86E0A1D6548 / 中文：W\(S\)=∫_S H² dA, min_{S:亏格g} W\(S\)=2π² \(g=1\)，环面达到Willmore能量极小点。变分法验证通过：J⁺=0.8, J⁻=0.2, C_unified=1。 / IMPLICIT-69FEF86E0A1D6548
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [中文：Window(t) = σ(ε_eff - θ_low) × σ(θ_high - ε_eff)](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [中文：Window\(t\) = σ\(ε_eff - θ_low\) × σ\(θ_high - ε_eff\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-816D0809F882F50E / 中文：Window(t) = σ(ε_eff - θ_low) × σ(θ_high - ε_eff) / IMPLICIT-816D0809F882F50E
+  - 可搜索名称：IMPLICIT-816D0809F882F50E / 中文：Window\(t\) = σ\(ε_eff - θ_low\) × σ\(θ_high - ε_eff\) / IMPLICIT-816D0809F882F50E
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [中文：β(t) = γ × maxⱼ σ'(εⱼ(t)-θC(j))，β先升后降，峰值在最弱维度推过门槛时。 dβ/dt = γ × σ''(εₖ-θC(k)) × dεₖ/dt σ''(x) = σ'(x)(1-2σ(x))，在x=0处变号。 防守阶段（εₖ 0→β随改善而升→级联防御权重增大 进攻阶段（εₖ>θC(k)）：σ''<0→β随改善而降→贪心优化权重增大 切换点：εₖ=θC(k)，β=0.25γ为峰值](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [中文：β\(t\) = γ × maxⱼ σ'\(εⱼ\(t\)-θC\(j\)\)，β先升后降，峰值在最弱维度推过门槛时。 dβ/dt = γ × σ''\(εₖ-θC\(k\)\) × dεₖ/dt σ''\(x\) = σ'\(x\)\(1-2σ\(x\)\)，在x=0处变号。 防守阶段（εₖ 0→β随改善而升→级联防御权重增大 进攻阶段（εₖ>θC\(k\)）：σ''<0→β随改善而降→贪心优化权重增大 切换点：εₖ=θC\(k\)，β=0.25γ为峰值](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-FAB0F9026A6F7731 / 中文：β(t) = γ × maxⱼ σ'(εⱼ(t)-θC(j))，β先升后降，峰值在最弱维度推过门槛时。 dβ/dt = γ × σ''(εₖ-θC(k)) × dεₖ/dt σ''(x) = σ'(x)(1-2σ(x))，在x=0处变号。 防守阶段（εₖ 0→β随改善而升→级联防御权重增大 进攻阶段（εₖ>θC(k)）：σ''<0→β随改善而降→贪心优化权重增大 切换点：εₖ=θC(k)，β=0.25γ为峰值 / IMPLICIT-FAB0F9026A6F7731
+  - 可搜索名称：IMPLICIT-FAB0F9026A6F7731 / 中文：β\(t\) = γ × maxⱼ σ'\(εⱼ\(t\)-θC\(j\)\)，β先升后降，峰值在最弱维度推过门槛时。 dβ/dt = γ × σ''\(εₖ-θC\(k\)\) × dεₖ/dt σ''\(x\) = σ'\(x\)\(1-2σ\(x\)\)，在x=0处变号。 防守阶段（εₖ 0→β随改善而升→级联防御权重增大 进攻阶段（εₖ>θC\(k\)）：σ''<0→β随改善而降→贪心优化权重增大 切换点：εₖ=θC\(k\)，β=0.25γ为峰值 / IMPLICIT-FAB0F9026A6F7731
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [中文：ε_eff = ε₀ × exp(-∫₀ᵗ λ(s)ds) × (1-Posture_deg)](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [中文：ε_eff = ε₀ × exp\(-∫₀ᵗ λ\(s\)ds\) × \(1-Posture_deg\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-85CF3690E427D478 / 中文：ε_eff = ε₀ × exp(-∫₀ᵗ λ(s)ds) × (1-Posture_deg) / IMPLICIT-85CF3690E427D478
+  - 可搜索名称：IMPLICIT-85CF3690E427D478 / 中文：ε_eff = ε₀ × exp\(-∫₀ᵗ λ\(s\)ds\) × \(1-Posture_deg\) / IMPLICIT-85CF3690E427D478
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [中文：ε_eff(t) = ε_eff(0) × e^{-λt} + ε_threshold × (1 - e^{-λt})。种子爆发后退出权信号按指数恢复至阈值水平。](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [中文：ε_eff\(t\) = ε_eff\(0\) × e^{-λt} + ε_threshold × \(1 - e^{-λt}\)。种子爆发后退出权信号按指数恢复至阈值水平。](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-5C6EDD566912150F / 中文：ε_eff(t) = ε_eff(0) × e^{-λt} + ε_threshold × (1 - e^{-λt})。种子爆发后退出权信号按指数恢复至阈值水平。 / IMPLICIT-5C6EDD566912150F
+  - 可搜索名称：IMPLICIT-5C6EDD566912150F / 中文：ε_eff\(t\) = ε_eff\(0\) × e^{-λt} + ε_threshold × \(1 - e^{-λt}\)。种子爆发后退出权信号按指数恢复至阈值水平。 / IMPLICIT-5C6EDD566912150F
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [中文：ε_eff(t+1) = ε_eff(t) × (1-f_表达) × (1-f_感知) × (1-f_免疫)](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [中文：ε_eff\(t+1\) = ε_eff\(t\) × \(1-f_表达\) × \(1-f_感知\) × \(1-f_免疫\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-CC7C5BB4B5F2F59F / 中文：ε_eff(t+1) = ε_eff(t) × (1-f_表达) × (1-f_感知) × (1-f_免疫) / IMPLICIT-CC7C5BB4B5F2F59F / IMPLICIT-CD2582EFD2C1D53C
+  - 可搜索名称：IMPLICIT-CC7C5BB4B5F2F59F / 中文：ε_eff\(t+1\) = ε_eff\(t\) × \(1-f_表达\) × \(1-f_感知\) × \(1-f_免疫\) / IMPLICIT-CC7C5BB4B5F2F59F / IMPLICIT-CD2582EFD2C1D53C
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [中文：ε_eff(t+1) = ε_eff(t) × (1-f_表达) × (1-f_感知) × (1-f_免疫)](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [中文：ε_eff\(t+1\) = ε_eff\(t\) × \(1-f_表达\) × \(1-f_感知\) × \(1-f_免疫\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-CD2582EFD2C1D53C / 中文：ε_eff(t+1) = ε_eff(t) × (1-f_表达) × (1-f_感知) × (1-f_免疫) / IMPLICIT-CD2582EFD2C1D53C / IMPLICIT-CC7C5BB4B5F2F59F
+  - 可搜索名称：IMPLICIT-CD2582EFD2C1D53C / 中文：ε_eff\(t+1\) = ε_eff\(t\) × \(1-f_表达\) × \(1-f_感知\) × \(1-f_免疫\) / IMPLICIT-CD2582EFD2C1D53C / IMPLICIT-CC7C5BB4B5F2F59F
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [中文：σ = f(Posture_deg, H)](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [中文：σ = f\(Posture_deg, H\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-4FF2EFA2E6455C7F / 中文：σ = f(Posture_deg, H) / IMPLICIT-4FF2EFA2E6455C7F
+  - 可搜索名称：IMPLICIT-4FF2EFA2E6455C7F / 中文：σ = f\(Posture_deg, H\) / IMPLICIT-4FF2EFA2E6455C7F
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [中文：σ(Λ)=\|ln(M_Planck/Λ)\|/√(2ln\|ln(M_Planck/Λ)\|)](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [中文：σ\(Λ\)=\|ln\(M_Planck/Λ\)\|/√\(2ln\|ln\(M_Planck/Λ\)\|\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-F816F91A49771D4A / 中文：σ(Λ)=\|ln(M_Planck/Λ)\|/√(2ln\|ln(M_Planck/Λ)\|) / IMPLICIT-F816F91A49771D4A
+  - 可搜索名称：IMPLICIT-F816F91A49771D4A / 中文：σ\(Λ\)=\|ln\(M_Planck/Λ\)\|/√\(2ln\|ln\(M_Planck/Λ\)\|\) / IMPLICIT-F816F91A49771D4A
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [中文：σ=√(dim_eff×ℏ_eff/(2μ_eff))，顿悟=1/ln→exp\[-ln²\]的切换点](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [中文：σ=√\(dim_eff×ℏ_eff/\(2μ_eff\)\)，顿悟=1/ln→exp\[-ln²\]的切换点](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-D5EFB5C8F44D5A9F / 中文：σ=√(dim_eff×ℏ_eff/(2μ_eff))，顿悟=1/ln→exp\[-ln²\]的切换点 / IMPLICIT-D5EFB5C8F44D5A9F
+  - 可搜索名称：IMPLICIT-D5EFB5C8F44D5A9F / 中文：σ=√\(dim_eff×ℏ_eff/\(2μ_eff\)\)，顿悟=1/ln→exp\[-ln²\]的切换点 / IMPLICIT-D5EFB5C8F44D5A9F
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [中文：Φ = dim(V)×\|推导规则\|×r_cross(framework)。](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [中文：Φ = dim\(V\)×\|推导规则\|×r_cross\(framework\)。](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-79C84C31226C9A70 / 中文：Φ = dim(V)×\|推导规则\|×r_cross(framework)。 / IMPLICIT-79C84C31226C9A70
+  - 可搜索名称：IMPLICIT-79C84C31226C9A70 / 中文：Φ = dim\(V\)×\|推导规则\|×r_cross\(framework\)。 / IMPLICIT-79C84C31226C9A70
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [中文：Φ = F_zero_temp = E - T·S\|T=0。Φ与统计力学零温自由能精确等价，有限温修正∝n：Φ(T) = Φ(0) + α·n·T² + O(T³)。](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [中文：Φ = F_zero_temp = E - T·S\|T=0。Φ与统计力学零温自由能精确等价，有限温修正∝n：Φ\(T\) = Φ\(0\) + α·n·T² + O\(T³\)。](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-AB1BF01DF3AD97F4 / 中文：Φ = F_zero_temp = E - T·S\|T=0。Φ与统计力学零温自由能精确等价，有限温修正∝n：Φ(T) = Φ(0) + α·n·T² + O(T³)。 / IMPLICIT-AB1BF01DF3AD97F4
+  - 可搜索名称：IMPLICIT-AB1BF01DF3AD97F4 / 中文：Φ = F_zero_temp = E - T·S\|T=0。Φ与统计力学零温自由能精确等价，有限温修正∝n：Φ\(T\) = Φ\(0\) + α·n·T² + O\(T³\)。 / IMPLICIT-AB1BF01DF3AD97F4
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [中文：Φ = f₁(↑)×f₂(↓)必然倒U型。](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [中文：Φ = f₁\(↑\)×f₂\(↓\)必然倒U型。](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-96F3F25E54B128E9 / 中文：Φ = f₁(↑)×f₂(↓)必然倒U型。 / IMPLICIT-96F3F25E54B128E9 / IMPLICIT-BD05412BF056A5C5
+  - 可搜索名称：IMPLICIT-96F3F25E54B128E9 / 中文：Φ = f₁\(↑\)×f₂\(↓\)必然倒U型。 / IMPLICIT-96F3F25E54B128E9 / IMPLICIT-BD05412BF056A5C5
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [中文：Φ = f₁(↑)×f₂(↓)必然倒U型。](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [中文：Φ = f₁\(↑\)×f₂\(↓\)必然倒U型。](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-BD05412BF056A5C5 / 中文：Φ = f₁(↑)×f₂(↓)必然倒U型。 / IMPLICIT-BD05412BF056A5C5 / IMPLICIT-96F3F25E54B128E9
+  - 可搜索名称：IMPLICIT-BD05412BF056A5C5 / 中文：Φ = f₁\(↑\)×f₂\(↓\)必然倒U型。 / IMPLICIT-BD05412BF056A5C5 / IMPLICIT-96F3F25E54B128E9
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [中文：Ω = {x \| C₁(x) ∧ C₂(x) ∧ ... ∧ Cₙ(x)}](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [中文：Ω = {x \| C₁\(x\) ∧ C₂\(x\) ∧ ... ∧ Cₙ\(x\)}](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-E9DD820855EC5353 / 中文：Ω = {x \| C₁(x) ∧ C₂(x) ∧ ... ∧ Cₙ(x)} / IMPLICIT-E9DD820855EC5353
+  - 可搜索名称：IMPLICIT-E9DD820855EC5353 / 中文：Ω = {x \| C₁\(x\) ∧ C₂\(x\) ∧ ... ∧ Cₙ\(x\)} / IMPLICIT-E9DD820855EC5353
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [中文：Ω(t) = {x \| C₁(x,t) ∧ C₂(x,t) ∧ ... ∧ Cₙ(x,t)}](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [中文：Ω\(t\) = {x \| C₁\(x,t\) ∧ C₂\(x,t\) ∧ ... ∧ Cₙ\(x,t\)}](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-8260E3912F40EDA7 / 中文：Ω(t) = {x \| C₁(x,t) ∧ C₂(x,t) ∧ ... ∧ Cₙ(x,t)} / IMPLICIT-8260E3912F40EDA7
+  - 可搜索名称：IMPLICIT-8260E3912F40EDA7 / 中文：Ω\(t\) = {x \| C₁\(x,t\) ∧ C₂\(x,t\) ∧ ... ∧ Cₙ\(x,t\)} / IMPLICIT-8260E3912F40EDA7
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
 - [中文：Ω=0或Ω→∞→P_exit=0。选择空间为零或无限大都会导致退出权归零。](../../../data/foundation/function-assets/identity-cards.jsonl)
@@ -474,84 +509,84 @@
   - 可搜索名称：IMPLICIT-D0BE2DCD374A0018 / 中文：Ω=1（无选择）→P_exit=0。单一选项意味着无退出权。 / IMPLICIT-D0BE2DCD374A0018
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [中文：Ω_irreversible = {Ω \| P_exit(Ω)=0 且无法恢复}](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [中文：Ω_irreversible = {Ω \| P_exit\(Ω\)=0 且无法恢复}](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-70835ED6D1A6E8DD / 中文：Ω_irreversible = {Ω \| P_exit(Ω)=0 且无法恢复} / IMPLICIT-70835ED6D1A6E8DD
+  - 可搜索名称：IMPLICIT-70835ED6D1A6E8DD / 中文：Ω_irreversible = {Ω \| P_exit\(Ω\)=0 且无法恢复} / IMPLICIT-70835ED6D1A6E8DD
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [中文：Ω_universe(t) = {x \| 所有硬约束 Cᵢ(x,t) 同时满足}](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [中文：Ω_universe\(t\) = {x \| 所有硬约束 Cᵢ\(x,t\) 同时满足}](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-4388CB8EBBD05DCC / 中文：Ω_universe(t) = {x \| 所有硬约束 Cᵢ(x,t) 同时满足} / IMPLICIT-4388CB8EBBD05DCC
+  - 可搜索名称：IMPLICIT-4388CB8EBBD05DCC / 中文：Ω_universe\(t\) = {x \| 所有硬约束 Cᵢ\(x,t\) 同时满足} / IMPLICIT-4388CB8EBBD05DCC
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [中文：∂Ω_universe = {x \| Cᵢ(x) = 边界值}](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [中文：∂Ω_universe = {x \| Cᵢ\(x\) = 边界值}](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-5FEE289B7A3C0AFE / 中文：∂Ω_universe = {x \| Cᵢ(x) = 边界值} / IMPLICIT-5FEE289B7A3C0AFE
+  - 可搜索名称：IMPLICIT-5FEE289B7A3C0AFE / 中文：∂Ω_universe = {x \| Cᵢ\(x\) = 边界值} / IMPLICIT-5FEE289B7A3C0AFE
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [中文：大统一GUT是电磁力、弱核力、强核力在高能μ>μ_GUT时的门控面合并。μ μ_GUT时合并为Λ_GUT,Φ = 1/ln(μ/Λ_GUT)。统一度Ω_after > Ω_before。](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [中文：大统一GUT是电磁力、弱核力、强核力在高能μ>μ_GUT时的门控面合并。μ μ_GUT时合并为Λ_GUT,Φ = 1/ln\(μ/Λ_GUT\)。统一度Ω_after > Ω_before。](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-0C399FB7B821BEB2 / 中文：大统一GUT是电磁力、弱核力、强核力在高能μ>μ_GUT时的门控面合并。μ μ_GUT时合并为Λ_GUT,Φ = 1/ln(μ/Λ_GUT)。统一度Ω_after > Ω_before。 / IMPLICIT-0C399FB7B821BEB2
+  - 可搜索名称：IMPLICIT-0C399FB7B821BEB2 / 中文：大统一GUT是电磁力、弱核力、强核力在高能μ>μ_GUT时的门控面合并。μ μ_GUT时合并为Λ_GUT,Φ = 1/ln\(μ/Λ_GUT\)。统一度Ω_after > Ω_before。 / IMPLICIT-0C399FB7B821BEB2
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [中文：拓扑选择 = argmax{P_collapse, P_sustain} P_collapse = 1 - Πᵢ(1-fᵢ_risk)（风险规避模式） P_sustain = Πⱼfⱼ_cap（能力扩展模式） 选择判据： · 当min(fⱼ_cap) < θ_floor → P_sustain→0 → 选择F_collapse（二选一）](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [中文：拓扑选择 = argmax{P_collapse, P_sustain} P_collapse = 1 - Πᵢ\(1-fᵢ_risk\)（风险规避模式） P_sustain = Πⱼfⱼ_cap（能力扩展模式） 选择判据： · 当min\(fⱼ_cap\) < θ_floor → P_sustain→0 → 选择F_collapse（二选一）](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-DBB9759D53F37174 / 中文：拓扑选择 = argmax{P_collapse, P_sustain} P_collapse = 1 - Πᵢ(1-fᵢ_risk)（风险规避模式） P_sustain = Πⱼfⱼ_cap（能力扩展模式） 选择判据： · 当min(fⱼ_cap) < θ_floor → P_sustain→0 → 选择F_collapse（二选一） / IMPLICIT-DBB9759D53F37174
+  - 可搜索名称：IMPLICIT-DBB9759D53F37174 / 中文：拓扑选择 = argmax{P_collapse, P_sustain} P_collapse = 1 - Πᵢ\(1-fᵢ_risk\)（风险规避模式） P_sustain = Πⱼfⱼ_cap（能力扩展模式） 选择判据： · 当min\(fⱼ_cap\) < θ_floor → P_sustain→0 → 选择F_collapse（二选一） / IMPLICIT-DBB9759D53F37174
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [中文：智能 = 在σ_opt附近运行的能力 定义智能度： ι = I_eff(σ) / I_eff(σ_opt) = I_eff(σ) / I_eff_max ι ∈ \[0, 1\] ι = 1：有效信息最大，最优智能 ι → 0：有效信息趋零，无智能](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [中文：智能 = 在σ_opt附近运行的能力 定义智能度： ι = I_eff\(σ\) / I_eff\(σ_opt\) = I_eff\(σ\) / I_eff_max ι ∈ \[0, 1\] ι = 1：有效信息最大，最优智能 ι → 0：有效信息趋零，无智能](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-60D538CB6C68E0C5 / 中文：智能 = 在σ_opt附近运行的能力 定义智能度： ι = I_eff(σ) / I_eff(σ_opt) = I_eff(σ) / I_eff_max ι ∈ \[0, 1\] ι = 1：有效信息最大，最优智能 ι → 0：有效信息趋零，无智能 / IMPLICIT-60D538CB6C68E0C5
+  - 可搜索名称：IMPLICIT-60D538CB6C68E0C5 / 中文：智能 = 在σ_opt附近运行的能力 定义智能度： ι = I_eff\(σ\) / I_eff\(σ_opt\) = I_eff\(σ\) / I_eff_max ι ∈ \[0, 1\] ι = 1：有效信息最大，最优智能 ι → 0：有效信息趋零，无智能 / IMPLICIT-60D538CB6C68E0C5
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [中文：案例说明：C_exit(geo)=κ×ρ^(-α)×r^β×τ](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [中文：案例说明：C_exit\(geo\)=κ×ρ^\(-α\)×r^β×τ](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-80C4CA8ED525C020 / 中文：案例说明：C_exit(geo)=κ×ρ^(-α)×r^β×τ / IMPLICIT-80C4CA8ED525C020
+  - 可搜索名称：IMPLICIT-80C4CA8ED525C020 / 中文：案例说明：C_exit\(geo\)=κ×ρ^\(-α\)×r^β×τ / IMPLICIT-80C4CA8ED525C020
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [中文：案例说明：P(发现)=P(L₅激活)×P(L₅不退化)](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [中文：案例说明：P\(发现\)=P\(L₅激活\)×P\(L₅不退化\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-57E4B558EB78D577 / 中文：案例说明：P(发现)=P(L₅激活)×P(L₅不退化) / IMPLICIT-57E4B558EB78D577 / IMPLICIT-F3383A2BBF7459EC
+  - 可搜索名称：IMPLICIT-57E4B558EB78D577 / 中文：案例说明：P\(发现\)=P\(L₅激活\)×P\(L₅不退化\) / IMPLICIT-57E4B558EB78D577 / IMPLICIT-F3383A2BBF7459EC
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [中文：案例说明：P(发现)=P(L₅激活)×P(L₅不退化)](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [中文：案例说明：P\(发现\)=P\(L₅激活\)×P\(L₅不退化\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-F3383A2BBF7459EC / 中文：案例说明：P(发现)=P(L₅激活)×P(L₅不退化) / IMPLICIT-F3383A2BBF7459EC / IMPLICIT-57E4B558EB78D577
+  - 可搜索名称：IMPLICIT-F3383A2BBF7459EC / 中文：案例说明：P\(发现\)=P\(L₅激活\)×P\(L₅不退化\) / IMPLICIT-F3383A2BBF7459EC / IMPLICIT-57E4B558EB78D577
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [中文：案例说明：Preference(k,t)=∫\[S_body×R_repeat×(1-H_cultural)\]dt](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [中文：案例说明：Preference\(k,t\)=∫\[S_body×R_repeat×\(1-H_cultural\)\]dt](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-4AAC30FBEABFC46C / 中文：案例说明：Preference(k,t)=∫\[S_body×R_repeat×(1-H_cultural)\]dt / IMPLICIT-4AAC30FBEABFC46C / IMPLICIT-63D758A66FFD78EF
+  - 可搜索名称：IMPLICIT-4AAC30FBEABFC46C / 中文：案例说明：Preference\(k,t\)=∫\[S_body×R_repeat×\(1-H_cultural\)\]dt / IMPLICIT-4AAC30FBEABFC46C / IMPLICIT-63D758A66FFD78EF
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [中文：案例说明：Preference(k,t)=∫\[S_body×R_repeat×(1-H_cultural)\]dt](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [中文：案例说明：Preference\(k,t\)=∫\[S_body×R_repeat×\(1-H_cultural\)\]dt](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-63D758A66FFD78EF / 中文：案例说明：Preference(k,t)=∫\[S_body×R_repeat×(1-H_cultural)\]dt / IMPLICIT-63D758A66FFD78EF / IMPLICIT-4AAC30FBEABFC46C
+  - 可搜索名称：IMPLICIT-63D758A66FFD78EF / 中文：案例说明：Preference\(k,t\)=∫\[S_body×R_repeat×\(1-H_cultural\)\]dt / IMPLICIT-63D758A66FFD78EF / IMPLICIT-4AAC30FBEABFC46C
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [中文：案例说明：R_upgrade=R₀×∫\[α₁Δ(信息可及性)+α₂(-ΔC_exit_eff)+α₃Δε_aware\]dt](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [中文：案例说明：R_upgrade=R₀×∫\[α₁Δ\(信息可及性\)+α₂\(-ΔC_exit_eff\)+α₃Δε_aware\]dt](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-F11B1904A633D87F / 中文：案例说明：R_upgrade=R₀×∫\[α₁Δ(信息可及性)+α₂(-ΔC_exit_eff)+α₃Δε_aware\]dt / IMPLICIT-F11B1904A633D87F
+  - 可搜索名称：IMPLICIT-F11B1904A633D87F / 中文：案例说明：R_upgrade=R₀×∫\[α₁Δ\(信息可及性\)+α₂\(-ΔC_exit_eff\)+α₃Δε_aware\]dt / IMPLICIT-F11B1904A633D87F
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [中文：案例说明：维护成本M(t)=M₀·e^αt vs 信息产出I(t)](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [中文：案例说明：维护成本M\(t\)=M₀·e^αt vs 信息产出I\(t\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-BE6D82E6E5ED2FB7 / 中文：案例说明：维护成本M(t)=M₀·e^αt vs 信息产出I(t) / IMPLICIT-BE6D82E6E5ED2FB7
+  - 可搜索名称：IMPLICIT-BE6D82E6E5ED2FB7 / 中文：案例说明：维护成本M\(t\)=M₀·e^αt vs 信息产出I\(t\) / IMPLICIT-BE6D82E6E5ED2FB7
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [中文：沃尔顿的"智慧干预"= 在关键节点做最小注入，逆转D-X52→D-X53→D-X31的闭环。这是D-X38种子激活在心理干预维度的场景展开。 P_intervene(t) = σ(Q_unresolved(t) × (1-D_immune(t))) × W(t) × η_delivery - Q_unresolved × (1-D_immune)：疑问未解但退化免疫未锁死——种子可激活条件 - W(t)：窗口宽度（D-X54）——时机条件 - η_delivery ∈](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [中文：沃尔顿的"智慧干预"= 在关键节点做最小注入，逆转D-X52→D-X53→D-X31的闭环。这是D-X38种子激活在心理干预维度的场景展开。 P_intervene\(t\) = σ\(Q_unresolved\(t\) × \(1-D_immune\(t\)\)\) × W\(t\) × η_delivery - Q_unresolved × \(1-D_immune\)：疑问未解但退化免疫未锁死——种子可激活条件 - W\(t\)：窗口宽度（D-X54）——时机条件 - η_delivery ∈](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-DF5F4AA4482FBEEF / 中文：沃尔顿的"智慧干预"= 在关键节点做最小注入，逆转D-X52→D-X53→D-X31的闭环。这是D-X38种子激活在心理干预维度的场景展开。 P_intervene(t) = σ(Q_unresolved(t) × (1-D_immune(t))) × W(t) × η_delivery - Q_unresolved × (1-D_immune)：疑问未解但退化免疫未锁死——种子可激活条件 - W(t)：窗口宽度（D-X54）——时机条件 - η_delivery ∈ / IMPLICIT-DF5F4AA4482FBEEF
+  - 可搜索名称：IMPLICIT-DF5F4AA4482FBEEF / 中文：沃尔顿的"智慧干预"= 在关键节点做最小注入，逆转D-X52→D-X53→D-X31的闭环。这是D-X38种子激活在心理干预维度的场景展开。 P_intervene\(t\) = σ\(Q_unresolved\(t\) × \(1-D_immune\(t\)\)\) × W\(t\) × η_delivery - Q_unresolved × \(1-D_immune\)：疑问未解但退化免疫未锁死——种子可激活条件 - W\(t\)：窗口宽度（D-X54）——时机条件 - η_delivery ∈ / IMPLICIT-DF5F4AA4482FBEEF
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [中文：热力学第二定律的终态：热寂 = 所有能量均匀分布 = 没有结构 = 没有力 在高斯门控框架下： 热寂 ⟹ μ_available → 0 ⟹ 对所有Λᵢ：μ < Λᵢ ⟹ gᵢ = exp\[-(ln(μ/Λᵢ))²/(2σᵢ²)\] → 0（μ→0时ln(μ/Λᵢ)→-∞，exp→0） ⟹ Φ = Σgᵢ → 0 ⟹ Ω = e^{-Φ} → 1](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [中文：热力学第二定律的终态：热寂 = 所有能量均匀分布 = 没有结构 = 没有力 在高斯门控框架下： 热寂 ⟹ μ_available → 0 ⟹ 对所有Λᵢ：μ < Λᵢ ⟹ gᵢ = exp\[-\(ln\(μ/Λᵢ\)\)²/\(2σᵢ²\)\] → 0（μ→0时ln\(μ/Λᵢ\)→-∞，exp→0） ⟹ Φ = Σgᵢ → 0 ⟹ Ω = e^{-Φ} → 1](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-3E813E681FA10CA1 / 中文：热力学第二定律的终态：热寂 = 所有能量均匀分布 = 没有结构 = 没有力 在高斯门控框架下： 热寂 ⟹ μ_available → 0 ⟹ 对所有Λᵢ：μ < Λᵢ ⟹ gᵢ = exp\[-(ln(μ/Λᵢ))²/(2σᵢ²)\] → 0（μ→0时ln(μ/Λᵢ)→-∞，exp→0） ⟹ Φ = Σgᵢ → 0 ⟹ Ω = e^{-Φ} → 1 / IMPLICIT-3E813E681FA10CA1
+  - 可搜索名称：IMPLICIT-3E813E681FA10CA1 / 中文：热力学第二定律的终态：热寂 = 所有能量均匀分布 = 没有结构 = 没有力 在高斯门控框架下： 热寂 ⟹ μ_available → 0 ⟹ 对所有Λᵢ：μ < Λᵢ ⟹ gᵢ = exp\[-\(ln\(μ/Λᵢ\)\)²/\(2σᵢ²\)\] → 0（μ→0时ln\(μ/Λᵢ\)→-∞，exp→0） ⟹ Φ = Σgᵢ → 0 ⟹ Ω = e^{-Φ} → 1 / IMPLICIT-3E813E681FA10CA1
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [中文：电弱统一是电磁力和弱核力在高能μ>μ_EW时的门控面合并。μ μ_EW时合并为Λ_EW,Φ = 1/ln(μ/Λ_EW)。统一度Ω_after > Ω_before。](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [中文：电弱统一是电磁力和弱核力在高能μ>μ_EW时的门控面合并。μ μ_EW时合并为Λ_EW,Φ = 1/ln\(μ/Λ_EW\)。统一度Ω_after > Ω_before。](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-2D2F752E1B7D42E5 / 中文：电弱统一是电磁力和弱核力在高能μ>μ_EW时的门控面合并。μ μ_EW时合并为Λ_EW,Φ = 1/ln(μ/Λ_EW)。统一度Ω_after > Ω_before。 / IMPLICIT-2D2F752E1B7D42E5
+  - 可搜索名称：IMPLICIT-2D2F752E1B7D42E5 / 中文：电弱统一是电磁力和弱核力在高能μ>μ_EW时的门控面合并。μ μ_EW时合并为Λ_EW,Φ = 1/ln\(μ/Λ_EW\)。统一度Ω_after > Ω_before。 / IMPLICIT-2D2F752E1B7D42E5
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
 - [中文：相变序参量φ=门控面Λ的序参量。](../../../data/foundation/function-assets/identity-cards.jsonl)
@@ -574,9 +609,9 @@
   - 可搜索名称：IMPLICIT-AA3A53DA4DC5E3D5 / 中文：跑步训练σ=1.2→Ω太小→P_exit低；API成本σ=2.0→Ω太大→P_exit低。 / IMPLICIT-AA3A53DA4DC5E3D5
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [中文：高斯门控下的两种信息量度： Shannon信息熵（带宽）： H(σ) = ½ln(2πeσ²) Fisher信息（分辨率）： I_Fisher(σ) = 1/σ²（高斯分布的Fisher信息） σ递减时：](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [中文：高斯门控下的两种信息量度： Shannon信息熵（带宽）： H\(σ\) = ½ln\(2πeσ²\) Fisher信息（分辨率）： I_Fisher\(σ\) = 1/σ²（高斯分布的Fisher信息） σ递减时：](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-001A56A0D7E4C3D6 / 中文：高斯门控下的两种信息量度： Shannon信息熵（带宽）： H(σ) = ½ln(2πeσ²) Fisher信息（分辨率）： I_Fisher(σ) = 1/σ²（高斯分布的Fisher信息） σ递减时： / IMPLICIT-001A56A0D7E4C3D6
+  - 可搜索名称：IMPLICIT-001A56A0D7E4C3D6 / 中文：高斯门控下的两种信息量度： Shannon信息熵（带宽）： H\(σ\) = ½ln\(2πeσ²\) Fisher信息（分辨率）： I_Fisher\(σ\) = 1/σ²（高斯分布的Fisher信息） σ递减时： / IMPLICIT-001A56A0D7E4C3D6
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
 - [事件、内容合并、终端化投影、annotated tag 和全新克隆 resolver 分层确认；不以旧候选](../../ASSET-CARDS.md#asset-nfc-8b5cd2066783ecf6)
@@ -614,14 +649,14 @@
   - 可搜索名称：NFC-d1cb59c1cdc566fb / 修订说明（重要）**：056 初次审计只读获取的是 0000 知识库中较简短的《脱不花 × 李丹阳长谈：点火碰撞全部增量记录（D600—D602 / C-0810—C-0811）》（note_id 1915319279935456112），
   - 来源：`outputs/collisions/20260711-disobedience-subjectivity/independent-second-angle-audit-056.md`
   - 依赖：D600, D602；被引用：—
-- [倒U型统一生成定理，Φ = f₁(↑)×f₂(↓)必然倒U型。](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [倒U型统一生成定理，Φ = f₁\(↑\)×f₂\(↓\)必然倒U型。](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-A06CE2EE901191CD / 倒U型统一生成定理，Φ = f₁(↑)×f₂(↓)必然倒U型。 / IMPLICIT-A06CE2EE901191CD / IMPLICIT-F66B1ACB440AC1E2
+  - 可搜索名称：IMPLICIT-A06CE2EE901191CD / 倒U型统一生成定理，Φ = f₁\(↑\)×f₂\(↓\)必然倒U型。 / IMPLICIT-A06CE2EE901191CD / IMPLICIT-F66B1ACB440AC1E2
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [倒U型统一生成定理，Φ = f₁(↑)×f₂(↓)必然倒U型。](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [倒U型统一生成定理，Φ = f₁\(↑\)×f₂\(↓\)必然倒U型。](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-F66B1ACB440AC1E2 / 倒U型统一生成定理，Φ = f₁(↑)×f₂(↓)必然倒U型。 / IMPLICIT-F66B1ACB440AC1E2 / IMPLICIT-A06CE2EE901191CD
+  - 可搜索名称：IMPLICIT-F66B1ACB440AC1E2 / 倒U型统一生成定理，Φ = f₁\(↑\)×f₂\(↓\)必然倒U型。 / IMPLICIT-F66B1ACB440AC1E2 / IMPLICIT-A06CE2EE901191CD
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
 - [候选案例：邻里积分制下价值替代与隐性分层（建议对应 D597 + 候选 NF-X1 + NF-X2）](../../../outputs/collisions/20260708-cross-domain-smoke-test/social/collision-report.md)
@@ -629,14 +664,14 @@
   - 可搜索名称：NFC-057b27138eb8f13c / 候选案例：邻里积分制下价值替代与隐性分层（建议对应 D597 + 候选 NF-X1 + NF-X2）
   - 来源：`outputs/collisions/20260708-cross-domain-smoke-test/social/collision-report.md`
   - 依赖：D597；被引用：—
-- [假设存在完美算法 A，则 ∀ S，A(S) = 最优决策](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [假设存在完美算法 A，则 ∀ S，A\(S\) = 最优决策](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-186C1ACFD0D03162 / 假设存在完美算法 A，则 ∀ S，A(S) = 最优决策 / IMPLICIT-186C1ACFD0D03162 / IMPLICIT-5732DC76B0EB983A
+  - 可搜索名称：IMPLICIT-186C1ACFD0D03162 / 假设存在完美算法 A，则 ∀ S，A\(S\) = 最优决策 / IMPLICIT-186C1ACFD0D03162 / IMPLICIT-5732DC76B0EB983A
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [假设存在完美算法 A，则 ∀ S，A(S) = 最优决策](../../../data/math-foundation/function-provenance-ledger.csv)
+- [假设存在完美算法 A，则 ∀ S，A\(S\) = 最优决策](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-5732DC76B0EB983A / 假设存在完美算法 A，则 ∀ S，A(S) = 最优决策 / IMPLICIT-5732DC76B0EB983A / IMPLICIT-186C1ACFD0D03162
+  - 可搜索名称：IMPLICIT-5732DC76B0EB983A / 假设存在完美算法 A，则 ∀ S，A\(S\) = 最优决策 / IMPLICIT-5732DC76B0EB983A / IMPLICIT-186C1ACFD0D03162
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：—；被引用：—
 - [元协议投影 P_meta。](../../../outputs/getbrain/project-position-update-20260706.md)
@@ -669,14 +704,17 @@
   - 可搜索名称：NFC-3f7804552bd81407 / 关键词重合不能单独构成同构。
   - 来源：`docs/narrative-output-layer.md`
   - 依赖：—；被引用：—
-- [其中 v(n) = ΔB_n / ΔB_{n-1} 为收敛速度](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [其中 v\(n\) = ΔB_n / ΔB_{n-1} 为收敛速度](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-8466D2546DBBC8D3 / 其中 v(n) = ΔB_n / ΔB_{n-1} 为收敛速度 / IMPLICIT-8466D2546DBBC8D3
+  - 可搜索名称：IMPLICIT-8466D2546DBBC8D3 / 其中 v\(n\) = ΔB_n / ΔB_{n-1} 为收敛速度 / IMPLICIT-8466D2546DBBC8D3
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [冷启动先读\[仓库首页\](../../../../.github/README.md)，再读本日志的 baseline 和最近几条 delta；随后回到\[当前项目现状\](../../../docs/project-current-state.md)、\[迭代操作法\](../../../STATE-CHANGELOG.md)
+- [冷启动先读\[仓库首页\]\(../.github/README.md\)，再读本日志的 baseline 和最近几条 delta；随后回到\[当前项目现状\]\(./docs/project-current-state.md\)、\[迭代操作法\]\(./IT](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-936cf70c98006b0c / 冷启动先读\[仓库首页\](../../../../.github/README.md)，再读本日志的 baseline 和最近几条 delta；随后回到\[当前项目现状\](../../../docs/project-current-state.md)、\[迭代操作法\](../../../data/failure_typology.csv)
+  - 可搜索名称：NFC-936cf70c98006b0c / 冷启动先读\[仓库首页\]\(../.github/README.md\)，再读本日志的 baseline 和最近几条 delta；随后回到\[当前项目现状\]\(./docs/project-current-state.md\)、\[迭代操作法\]\(./IT
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [切换到对应领域证据制度。](../../../data/failure_typology.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-06749f2e7e90f888 / 切换到对应领域证据制度。
   - 来源：`data/failure_typology.csv`
@@ -776,6 +814,11 @@
   - 可搜索名称：NFC-9f7578b36a470a74 / 固定为以下五类，每一类用对应字段输出：
   - 来源：`docs/getbrain-operation-guide-20260708.md`
   - 依赖：—；被引用：—
+- [外部真值”的边界。当前身份 contract 与确定性事实投影见](../../ASSET-CARDS.md#asset-nfc-b184be56513fdaec)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-b184be56513fdaec / 外部真值”的边界。当前身份 contract 与确定性事实投影见 / 外部真值”的边界。当前身份 contract 与确定性事实投影见
+  - 来源：`AI-START-HERE.md`
+  - 依赖：—；被引用：—
 - [失败类型学初稿](../../ASSET-CARDS.md#asset-hr-d6bbd09179294577)
   - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
   - 可搜索名称：失败类型学初稿 / failure-typology-draft-20260706
@@ -786,24 +829,24 @@
   - 可搜索名称：NFC-bcbbcbf6599e06ba / 如果 benchmark 结果是“结构增益 + 重述”，可作为跨域同构识别样本，但应明确哪些部分只是重述。
   - 来源：`docs/classic_problems_benchmark.md`
   - 依赖：—；被引用：—
-- [如果 G_δ(proposition) = false（命题不可证也不可证伪）→ 触发往元层面收敛](../../../docs/phi_meta_law.md)
+- [如果 G_δ\(proposition\) = false（命题不可证也不可证伪）→ 触发往元层面收敛](../../../docs/phi_meta_law.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-48CD2654B16B8289 / 如果 G_δ(proposition) = false（命题不可证也不可证伪）→ 触发往元层面收敛 / IMPLICIT-48CD2654B16B8289 / IMPLICIT-577FC69E0C2AD536
+  - 可搜索名称：IMPLICIT-48CD2654B16B8289 / 如果 G_δ\(proposition\) = false（命题不可证也不可证伪）→ 触发往元层面收敛 / IMPLICIT-48CD2654B16B8289 / IMPLICIT-577FC69E0C2AD536
   - 来源：`docs/phi_meta_law.md`
   - 依赖：—；被引用：—
-- [如果 G_δ(proposition) = false（命题不可证也不可证伪）→ 触发往元层面收敛](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [如果 G_δ\(proposition\) = false（命题不可证也不可证伪）→ 触发往元层面收敛](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-577FC69E0C2AD536 / 如果 G_δ(proposition) = false（命题不可证也不可证伪）→ 触发往元层面收敛 / IMPLICIT-577FC69E0C2AD536 / IMPLICIT-48CD2654B16B8289
+  - 可搜索名称：IMPLICIT-577FC69E0C2AD536 / 如果 G_δ\(proposition\) = false（命题不可证也不可证伪）→ 触发往元层面收敛 / IMPLICIT-577FC69E0C2AD536 / IMPLICIT-48CD2654B16B8289
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [如果 G_δ(proposition) = true（命题可证或可证伪）→ 继续自举循环](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [如果 G_δ\(proposition\) = true（命题可证或可证伪）→ 继续自举循环](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-446FE748A37EAB86 / 如果 G_δ(proposition) = true（命题可证或可证伪）→ 继续自举循环 / IMPLICIT-446FE748A37EAB86 / IMPLICIT-AA10F8020E1DD1C1
+  - 可搜索名称：IMPLICIT-446FE748A37EAB86 / 如果 G_δ\(proposition\) = true（命题可证或可证伪）→ 继续自举循环 / IMPLICIT-446FE748A37EAB86 / IMPLICIT-AA10F8020E1DD1C1
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [如果 G_δ(proposition) = true（命题可证或可证伪）→ 继续自举循环](../../../docs/phi_meta_law.md)
+- [如果 G_δ\(proposition\) = true（命题可证或可证伪）→ 继续自举循环](../../../docs/phi_meta_law.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-AA10F8020E1DD1C1 / 如果 G_δ(proposition) = true（命题可证或可证伪）→ 继续自举循环 / IMPLICIT-AA10F8020E1DD1C1 / IMPLICIT-446FE748A37EAB86
+  - 可搜索名称：IMPLICIT-AA10F8020E1DD1C1 / 如果 G_δ\(proposition\) = true（命题可证或可证伪）→ 继续自举循环 / IMPLICIT-AA10F8020E1DD1C1 / IMPLICIT-446FE748A37EAB86
   - 来源：`docs/phi_meta_law.md`
   - 依赖：—；被引用：—
 - [完全统一不可能定理](../../../FOUNDATION-64-PROPAGATION.jsonl)
@@ -830,6 +873,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-94d2fb4c3a780241 / 容易把元协议投影误成事实本身。
   - 来源：`outputs/getbrain/failure-typology-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [对任务 102 排除生成投影回灌后重算的 function identity cards 建立 identity card、M/E 双轴、义务、依赖、处置与 quarantine；当前可复算数量见 current-facts project](../../ASSET-CARDS.md#asset-nfc-49b0b185a29b134e)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-49b0b185a29b134e / 对任务 102 排除生成投影回灌后重算的 function identity cards 建立 identity card、M/E 双轴、义务、依赖、处置与 quarantine；当前可复算数量见 current-facts project / - 对任务 102 排除生成投影回灌后重算的 function identity cards 建立 identity card、M/E 双轴、义务、依赖、处置与 quarantine；当前可复算数量见 current-facts projection（`5,603`）。
+  - 来源：`docs/project-current-state.md`
   - 依赖：—；被引用：—
 - [对应 D595、D596；暂关联 NF-004（候选人，本轮不入表）](../../../outputs/audit/teacher-competition-small-batch-backfill-audit-20260708.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -880,6 +928,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-65cfb28bda386e37 / 尺度错配指分析层级与对象层级不对应。
   - 来源：`outputs/getbrain/failure-typology-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [建立 `os_spine`、`federation`、`domain_packs` 三个语义投影和六段 bounded reading path；](../../../reports/operations/ignition-123-nightshift-progress.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-346c03bc965408ba / 建立 `os_spine`、`federation`、`domain_packs` 三个语义投影和六段 bounded reading path；
+  - 来源：`reports/operations/ignition-123-nightshift-progress.md`
   - 依赖：—；被引用：—
 - [扩展注释 · P1 接入烟雾测试](../../ASSET-CARDS.md#asset-hr-7d4413587f58d270)
   - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
@@ -1051,9 +1104,9 @@
   - 可搜索名称：新故事索引表（2026年07月06日03时06分，故事总数 1） / INDEX
   - 来源：`新故事/INDEX.md`
   - 依赖：—；被引用：—
-- [无需预知路径的 canonical 入口已经迁移到\[点火知识入口\](../../README.md)。本页保留十分钟阅读路线；它与机器注册表并行，但不要求读者先理解 JSON、JSONL、schema 或 CI。任何机器记录都必](../../../HUMAN-READING.md)
+- [无需预知路径的 canonical 入口已经迁移到\[点火知识入口\]\(./KNOWLEDGE/README.md\)。本页保留十分钟阅读路线；它与机器注册表并行，但不要求读者先理解 JSON、JSONL、schema 或 CI。任何机器记录都必](../../../HUMAN-READING.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-1884493a96704d23 / 无需预知路径的 canonical 入口已经迁移到\[点火知识入口\](../../README.md)。本页保留十分钟阅读路线；它与机器注册表并行，但不要求读者先理解 JSON、JSONL、schema 或 CI。任何机器记录都必
+  - 可搜索名称：NFC-1884493a96704d23 / 无需预知路径的 canonical 入口已经迁移到\[点火知识入口\]\(./KNOWLEDGE/README.md\)。本页保留十分钟阅读路线；它与机器注册表并行，但不要求读者先理解 JSON、JSONL、schema 或 CI。任何机器记录都必
   - 来源：`HUMAN-READING.md`
   - 依赖：—；被引用：—
 - [旧条目每周维护时逐步补齐**：在碰撞/维护触及时，顺手补齐"边界条件/适用条件/反例/对应案例/版本记录"等缺失字段，不主动大面积重排。](../../../outputs/audit/two-tables-entry-format-audit-20260709.md)
@@ -1071,9 +1124,9 @@
   - 可搜索名称：NFC-00d0e4a98efdc828 / 是（适合作为跨域同构识别的样本）
   - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
   - 依赖：—；被引用：—
-- [智能 = 在σ_opt附近运行的能力 定义智能度： ι = I_eff(σ) / I_eff(σ_opt) = I_eff(σ) / I_eff_max ι ∈ \[0, 1\] ι = 1：有效信息最大，最优智能 ι → 0：有效信息趋零，无智能](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [智能 = 在σ_opt附近运行的能力 定义智能度： ι = I_eff\(σ\) / I_eff\(σ_opt\) = I_eff\(σ\) / I_eff_max ι ∈ \[0, 1\] ι = 1：有效信息最大，最优智能 ι → 0：有效信息趋零，无智能](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-FEF855692D34E196 / 智能 = 在σ_opt附近运行的能力 定义智能度： ι = I_eff(σ) / I_eff(σ_opt) = I_eff(σ) / I_eff_max ι ∈ \[0, 1\] ι = 1：有效信息最大，最优智能 ι → 0：有效信息趋零，无智能 / IMPLICIT-FEF855692D34E196
+  - 可搜索名称：IMPLICIT-FEF855692D34E196 / 智能 = 在σ_opt附近运行的能力 定义智能度： ι = I_eff\(σ\) / I_eff\(σ_opt\) = I_eff\(σ\) / I_eff_max ι ∈ \[0, 1\] ι = 1：有效信息最大，最优智能 ι → 0：有效信息趋零，无智能 / IMPLICIT-FEF855692D34E196
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
 - [最终同构性判定：** J⁺=1, J⁻=0 → 真收敛](../../../docs/phi_meta_law.md)
@@ -1086,6 +1139,11 @@
   - 可搜索名称：NFC-bc3ae5037002d6da / 最近邻反事实：D595 是绩效/待遇/组织资源绑定架空退出权；D600 是代际/亲密关系中**正向支持**退化为控制。给一个富裕但无权无势的父母「为你好」式路径控制，D595 不触发、D600 触发 → 预测不同。不可约差异成立。
   - 来源：`outputs/collisions/20260711-disobedience-subjectivity/independent-second-angle-audit-056.md`
   - 依赖：D595, D600；被引用：—
+- [本步只修复了两个 projection 层缺陷：Knowledge map 的截断 source preview 不再生成假链接；](../../../reports/operations/ignition-123-nightshift-progress.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-a4fcf243f4f3f58c / 本步只修复了两个 projection 层缺陷：Knowledge map 的截断 source preview 不再生成假链接；
+  - 来源：`reports/operations/ignition-123-nightshift-progress.md`
+  - 依赖：—；被引用：—
 - [本目录是点火项目「元协议生成框架」的文档层，对应 `data/meta-protocols/` 数据层、`templates/` 模板层。](../../../docs/meta-protocols/README.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-6c8b6740d3bee543 / 本目录是点火项目「元协议生成框架」的文档层，对应 `data/meta-protocols/` 数据层、`templates/` 模板层。
@@ -1121,9 +1179,9 @@
   - 可搜索名称：NFC-36762869a4ccba39 / 核心案例：破坏性创新与点火框架门控面演化的同构性。大公司受旧维度拖累（1/ln为负），边缘玩家无旧维度负担，验证了创新在边缘的拖累效应。
   - 来源：`outputs/book-collisions/20260709-22-book-validation/book-case-candidates.md`
   - 依赖：—；被引用：—
-- [框架发现能力，Φ = dim(V)×\|推导规则\|×r_cross(framework)。](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [框架发现能力，Φ = dim\(V\)×\|推导规则\|×r_cross\(framework\)。](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-328EDCBB13541AF8 / 框架发现能力，Φ = dim(V)×\|推导规则\|×r_cross(framework)。 / IMPLICIT-328EDCBB13541AF8
+  - 可搜索名称：IMPLICIT-328EDCBB13541AF8 / 框架发现能力，Φ = dim\(V\)×\|推导规则\|×r_cross\(framework\)。 / IMPLICIT-328EDCBB13541AF8
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
 - [框架跨域同构识别能力：**通过**。](../../../outputs/audit/cross-domain-smoke-test-audit-20260708.md)
@@ -1141,9 +1199,9 @@
   - 可搜索名称：NFC-bd21ee94b6df12bc / 点火框架接收外部学科输入时，先按 gap 路由到对应 object_type 接口；接口仅承载外部理论的结构化表示，不参与 Ψ₀ 核心判定；核心判定仍由 Ψ₀ 六组件执行。
   - 来源：`data/external-research/096-clm-alignment-layer-v2.md`
   - 依赖：—；被引用：—
-- [热力学第二定律的终态：热寂 = 所有能量均匀分布 = 没有结构 = 没有力 在高斯门控框架下： 热寂 ⟹ μ_available → 0 ⟹ 对所有Λᵢ：μ < Λᵢ ⟹ gᵢ = exp\[-(ln(μ/Λᵢ))²/(2σᵢ²)\] → 0（μ→0时ln(μ/Λᵢ)→-∞，exp→0） ⟹ Φ = Σgᵢ → 0 ⟹ Ω = e^{-Φ} → 1](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [热力学第二定律的终态：热寂 = 所有能量均匀分布 = 没有结构 = 没有力 在高斯门控框架下： 热寂 ⟹ μ_available → 0 ⟹ 对所有Λᵢ：μ < Λᵢ ⟹ gᵢ = exp\[-\(ln\(μ/Λᵢ\)\)²/\(2σᵢ²\)\] → 0（μ→0时ln\(μ/Λᵢ\)→-∞，exp→0） ⟹ Φ = Σgᵢ → 0 ⟹ Ω = e^{-Φ} → 1](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-868E3234B2BEC52B / 热力学第二定律的终态：热寂 = 所有能量均匀分布 = 没有结构 = 没有力 在高斯门控框架下： 热寂 ⟹ μ_available → 0 ⟹ 对所有Λᵢ：μ < Λᵢ ⟹ gᵢ = exp\[-(ln(μ/Λᵢ))²/(2σᵢ²)\] → 0（μ→0时ln(μ/Λᵢ)→-∞，exp→0） ⟹ Φ = Σgᵢ → 0 ⟹ Ω = e^{-Φ} → 1 / IMPLICIT-868E3234B2BEC52B
+  - 可搜索名称：IMPLICIT-868E3234B2BEC52B / 热力学第二定律的终态：热寂 = 所有能量均匀分布 = 没有结构 = 没有力 在高斯门控框架下： 热寂 ⟹ μ_available → 0 ⟹ 对所有Λᵢ：μ < Λᵢ ⟹ gᵢ = exp\[-\(ln\(μ/Λᵢ\)\)²/\(2σᵢ²\)\] → 0（μ→0时ln\(μ/Λᵢ\)→-∞，exp→0） ⟹ Φ = Σgᵢ → 0 ⟹ Ω = e^{-Φ} → 1 / IMPLICIT-868E3234B2BEC52B
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
 - [独立反事实同构判别（不可依赖 grep 零命中）](../../../docs/material-collision-validation-and-classification.md)
@@ -1191,44 +1249,44 @@
   - 可搜索名称：NFC-cd0369f8c6f3816a / 第一批回填审计：`outputs/audit/teacher-competition-small-batch-backfill-audit-20260708.md`（D595 已将 NF-001 入表，NC-001 可对应）
   - 来源：`outputs/audit/nc-001-title-barrier-backfill-audit-20260708.md`
   - 依赖：D595；被引用：—
-- [约束条件：g_i(x) ≤ 0, h_j(x) = 0](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [约束条件：g_i\(x\) ≤ 0, h_j\(x\) = 0](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-5FA5FC22EE630E05 / 约束条件：g_i(x) ≤ 0, h_j(x) = 0 / IMPLICIT-5FA5FC22EE630E05 / IMPLICIT-80957DA18DE64A01
+  - 可搜索名称：IMPLICIT-5FA5FC22EE630E05 / 约束条件：g_i\(x\) ≤ 0, h_j\(x\) = 0 / IMPLICIT-5FA5FC22EE630E05 / IMPLICIT-80957DA18DE64A01
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [约束条件：g_i(x) ≤ 0, h_j(x) = 0](../../../docs/phi_meta_law.md)
+- [约束条件：g_i\(x\) ≤ 0, h_j\(x\) = 0](../../../docs/phi_meta_law.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-80957DA18DE64A01 / 约束条件：g_i(x) ≤ 0, h_j(x) = 0 / IMPLICIT-80957DA18DE64A01 / IMPLICIT-5FA5FC22EE630E05
+  - 可搜索名称：IMPLICIT-80957DA18DE64A01 / 约束条件：g_i\(x\) ≤ 0, h_j\(x\) = 0 / IMPLICIT-80957DA18DE64A01 / IMPLICIT-5FA5FC22EE630E05
   - 来源：`docs/phi_meta_law.md`
   - 依赖：—；被引用：—
-- [约束：∃i, x_i = 0 ⇒ G₁(x) = 0](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [约束：∃i, x_i = 0 ⇒ G₁\(x\) = 0](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-65B93CCE80652BA5 / 约束：∃i, x_i = 0 ⇒ G₁(x) = 0 / IMPLICIT-65B93CCE80652BA5 / IMPLICIT-B2A81D8E3CB688FF
+  - 可搜索名称：IMPLICIT-65B93CCE80652BA5 / 约束：∃i, x_i = 0 ⇒ G₁\(x\) = 0 / IMPLICIT-65B93CCE80652BA5 / IMPLICIT-B2A81D8E3CB688FF
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [约束：∃i, x_i = 0 ⇒ G₁(x) = 0](../../../docs/phi_meta_law.md)
+- [约束：∃i, x_i = 0 ⇒ G₁\(x\) = 0](../../../docs/phi_meta_law.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-B2A81D8E3CB688FF / 约束：∃i, x_i = 0 ⇒ G₁(x) = 0 / IMPLICIT-B2A81D8E3CB688FF / IMPLICIT-65B93CCE80652BA5
+  - 可搜索名称：IMPLICIT-B2A81D8E3CB688FF / 约束：∃i, x_i = 0 ⇒ G₁\(x\) = 0 / IMPLICIT-B2A81D8E3CB688FF / IMPLICIT-65B93CCE80652BA5
   - 来源：`docs/phi_meta_law.md`
   - 依赖：—；被引用：—
-- [约束：∃i, x_i = 0 ⇒ M₁(x) = 0](../../../docs/phi_meta_law.md)
+- [约束：∃i, x_i = 0 ⇒ M₁\(x\) = 0](../../../docs/phi_meta_law.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-864C55E012FB95BA / 约束：∃i, x_i = 0 ⇒ M₁(x) = 0 / IMPLICIT-864C55E012FB95BA / IMPLICIT-BF396655A112545A
+  - 可搜索名称：IMPLICIT-864C55E012FB95BA / 约束：∃i, x_i = 0 ⇒ M₁\(x\) = 0 / IMPLICIT-864C55E012FB95BA / IMPLICIT-BF396655A112545A
   - 来源：`docs/phi_meta_law.md`
   - 依赖：—；被引用：—
-- [约束：∃i, x_i = 0 ⇒ M₁(x) = 0](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [约束：∃i, x_i = 0 ⇒ M₁\(x\) = 0](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-BF396655A112545A / 约束：∃i, x_i = 0 ⇒ M₁(x) = 0 / IMPLICIT-BF396655A112545A / IMPLICIT-864C55E012FB95BA
+  - 可搜索名称：IMPLICIT-BF396655A112545A / 约束：∃i, x_i = 0 ⇒ M₁\(x\) = 0 / IMPLICIT-BF396655A112545A / IMPLICIT-864C55E012FB95BA
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [约束：∃i, x_i = 0 ⇒ U₁(x) = 0](../../../docs/phi_meta_law.md)
+- [约束：∃i, x_i = 0 ⇒ U₁\(x\) = 0](../../../docs/phi_meta_law.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-6823090CA011969C / 约束：∃i, x_i = 0 ⇒ U₁(x) = 0 / IMPLICIT-6823090CA011969C / IMPLICIT-CE0BA13DBB28DB07
+  - 可搜索名称：IMPLICIT-6823090CA011969C / 约束：∃i, x_i = 0 ⇒ U₁\(x\) = 0 / IMPLICIT-6823090CA011969C / IMPLICIT-CE0BA13DBB28DB07
   - 来源：`docs/phi_meta_law.md`
   - 依赖：—；被引用：—
-- [约束：∃i, x_i = 0 ⇒ U₁(x) = 0](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [约束：∃i, x_i = 0 ⇒ U₁\(x\) = 0](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-CE0BA13DBB28DB07 / 约束：∃i, x_i = 0 ⇒ U₁(x) = 0 / IMPLICIT-CE0BA13DBB28DB07 / IMPLICIT-6823090CA011969C
+  - 可搜索名称：IMPLICIT-CE0BA13DBB28DB07 / 约束：∃i, x_i = 0 ⇒ U₁\(x\) = 0 / IMPLICIT-CE0BA13DBB28DB07 / IMPLICIT-6823090CA011969C
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
 - [经典问题 benchmark 卡片：叙事为什么能改变人的理解](../../ASSET-CARDS.md#asset-hr-d2f7959438110a91)
@@ -1401,9 +1459,9 @@
   - 可搜索名称：NFC-5176582e60f07107 / 适用对象：088-patch-library, 096-clm-alignment-layer, 所有外部理论投影
   - 来源：`data/external-research/101-anti-hallucination-gate.md`
   - 依赖：—；被引用：—
-- [阶段 3：投影矩阵 ✅ COMPLETE (250/250)](../../../data/discipline-projection/087-execution-report.md)
+- [阶段 3：投影矩阵 ✅ COMPLETE \(250/250\)](../../../data/discipline-projection/087-execution-report.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-fa12301fc4aa2533 / 阶段 3：投影矩阵 ✅ COMPLETE (250/250)
+  - 可搜索名称：NFC-fa12301fc4aa2533 / 阶段 3：投影矩阵 ✅ COMPLETE \(250/250\)
   - 来源：`data/discipline-projection/087-execution-report.md`
   - 依赖：—；被引用：—
 - [阻断在 task-111 投影之外，并通过 110 的权威 OpenAlex result 将 C-03 识别为已完成 partial；](../../../ITERATION.md)
@@ -1436,9 +1494,9 @@
   - 可搜索名称：NFC-1f0a411c00f197aa / 高价值修复优先于全库文风清洗。历史版本与接受哈希不回填；新版本通过 revision lineage 指向旧版本。机器投影因当前构件变化而重生成，不等于把历史文本重写。
   - 来源：`docs/language-thought/validation-and-audit.md`
   - 依赖：—；被引用：—
-- [高斯门控下的两种信息量度： Shannon信息熵（带宽）： H(σ) = ½ln(2πeσ²) Fisher信息（分辨率）： I_Fisher(σ) = 1/σ²（高斯分布的Fisher信息） σ递减时：](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [高斯门控下的两种信息量度： Shannon信息熵（带宽）： H\(σ\) = ½ln\(2πeσ²\) Fisher信息（分辨率）： I_Fisher\(σ\) = 1/σ²（高斯分布的Fisher信息） σ递减时：](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-A14E8FA7C17946C4 / 高斯门控下的两种信息量度： Shannon信息熵（带宽）： H(σ) = ½ln(2πeσ²) Fisher信息（分辨率）： I_Fisher(σ) = 1/σ²（高斯分布的Fisher信息） σ递减时： / IMPLICIT-A14E8FA7C17946C4
+  - 可搜索名称：IMPLICIT-A14E8FA7C17946C4 / 高斯门控下的两种信息量度： Shannon信息熵（带宽）： H\(σ\) = ½ln\(2πeσ²\) Fisher信息（分辨率）： I_Fisher\(σ\) = 1/σ²（高斯分布的Fisher信息） σ递减时： / IMPLICIT-A14E8FA7C17946C4
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
 - [高频必备字段**：frontmatter（kind/seq/id/title/source/source_line/link）、标题行（含 docs 链接）、原文捞回段、对应案例回指（命中率极高）、来源回指、收敛状态（版本/收敛记录）。](../../../outputs/audit/two-tables-entry-format-audit-20260709.md)

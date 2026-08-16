@@ -1,16 +1,16 @@
 {
   "all_sources_have_human_record": true,
   "category_distribution": {
-    "ARCHITECTURE_AND_MODEL": 17,
+    "ARCHITECTURE_AND_MODEL": 32,
     "ARTICLE_OR_PUBLICATION": 13,
     "EXTERNAL_RESEARCH": 27,
     "FOUNDATION_AND_ADJUDICATION": 73,
-    "ITERATION_AND_AUDIT": 26,
-    "OTHER_REPOSITORY_RESULT": 152
+    "ITERATION_AND_AUDIT": 30,
+    "OTHER_REPOSITORY_RESULT": 158
   },
   "claim_ceiling": "Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.",
-  "human_records": 308,
+  "human_records": 333,
   "schema_version": "1.0.0",
   "snapshot_date": "2026-07-29",
-  "source_documents": 308
+  "source_documents": 333
 }

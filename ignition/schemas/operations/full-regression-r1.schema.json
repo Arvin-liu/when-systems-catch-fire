@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://when-systems-catch-fire.invalid/schemas/operations/full-regression-r1.schema.json",
+  "title": "IGNITION-123 Full Regression R1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "task_id", "step", "recorded_at", "formal_main", "environment", "projection_snapshot", "map_geometry", "targeted_gates", "full_unittest_discovery", "residual_classification", "privacy_and_external_boundary", "claim_ceiling", "closure_binding", "next_step"],
+  "properties": {
+    "schema_version": {"const": "full-regression-r1"},
+    "task_id": {"const": "IGNITION-20260816-123"},
+    "step": {"const": "11"},
+    "recorded_at": {"type": "string", "format": "date-time"},
+    "formal_main": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["expected_sha", "observed_sha", "modified"],
+      "properties": {
+        "expected_sha": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+        "observed_sha": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+        "modified": {"const": false}
+      }
+    },
+    "environment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["declared_dependency_file", "declared_dependency_install", "isolation", "sympy", "z3_solver", "jsonschema", "external_agent_install_or_upgrade", "external_configuration_changed", "secret_content_read"],
+      "properties": {
+        "declared_dependency_file": {"const": "ignition/requirements-foundation.txt"},
+        "declared_dependency_install": {"const": "PASS"},
+        "isolation": {"const": "temporary_foundation_venv_only"},
+        "sympy": {"const": "1.14.0"},
+        "z3_solver": {"const": "4.16.0.0"},
+        "jsonschema": {"const": "4.26.0"},
+        "external_agent_install_or_upgrade": {"const": false},
+        "external_configuration_changed": {"const": false},
+        "secret_content_read": {"const": false}
+      }
+    },
+    "projection_snapshot": {"type": "object", "additionalProperties": true},
+    "map_geometry": {"type": "object", "additionalProperties": true},
+    "targeted_gates": {"type": "object", "minProperties": 1, "additionalProperties": {"type": "string"}},
+    "full_unittest_discovery": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["command", "runtime", "status", "tests_run", "failures", "errors", "skipped", "clean_tree_verified"],
+      "properties": {
+        "command": {"const": "PYTHONPATH=. python3 -m unittest discover -s tests -v"},
+        "runtime": {"const": "temporary_foundation_venv"},
+        "status": {"enum": ["PENDING_FINAL_CLEAN_TREE", "PASS", "PASS_WITH_CLASSIFIED_RESIDUALS"]},
+        "tests_run": {"type": ["integer", "null"], "minimum": 0},
+        "failures": {"type": ["integer", "null"], "minimum": 0},
+        "errors": {"type": ["integer", "null"], "minimum": 0},
+        "skipped": {"type": ["integer", "null"], "minimum": 0},
+        "clean_tree_verified": {"type": "boolean"}
+      }
+    },
+    "residual_classification": {"type": "array", "items": {"type": "object", "additionalProperties": true}},
+    "privacy_and_external_boundary": {"type": "object", "additionalProperties": true},
+    "claim_ceiling": {"type": "string", "minLength": 1},
+    "closure_binding": {"type": "string", "minLength": 1},
+    "next_step": {"const": "12"}
+  }
+}

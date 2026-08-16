@@ -54,14 +54,14 @@
   - 可搜索名称：IMPLICIT-B8272B0A60216994 / ### 2.2 统一函数 → 收敛函数依赖链 / IMPLICIT-B8272B0A60216994
   - 来源：`outputs/getbrain/v0.2-function-dependency-graph-20260706.md`
   - 依赖：—；被引用：—
-- [### 2.3 I_iso(A,B) — 同构判定函数](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [### 2.3 I_iso\(A,B\) — 同构判定函数](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-47208218890612E0 / ### 2.3 I_iso(A,B) — 同构判定函数 / IMPLICIT-47208218890612E0 / IMPLICIT-E415BC8683FABE7E
+  - 可搜索名称：IMPLICIT-47208218890612E0 / ### 2.3 I_iso\(A,B\) — 同构判定函数 / IMPLICIT-47208218890612E0 / IMPLICIT-E415BC8683FABE7E
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### 2.3 I_iso(A,B) — 同构判定函数](../../../docs/phi_meta_law.md)
+- [### 2.3 I_iso\(A,B\) — 同构判定函数](../../../docs/phi_meta_law.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-E415BC8683FABE7E / ### 2.3 I_iso(A,B) — 同构判定函数 / IMPLICIT-E415BC8683FABE7E / IMPLICIT-47208218890612E0
+  - 可搜索名称：IMPLICIT-E415BC8683FABE7E / ### 2.3 I_iso\(A,B\) — 同构判定函数 / IMPLICIT-E415BC8683FABE7E / IMPLICIT-47208218890612E0
   - 来源：`docs/phi_meta_law.md`
   - 依赖：—；被引用：—
 - [### 2.3 收敛函数 → 执行函数依赖链](../../../outputs/getbrain/v0.2-function-dependency-graph-20260706.md)
@@ -164,104 +164,104 @@
   - 可搜索名称：IMPLICIT-DC3121C6C211C18E / ### 6.1 新增函数 / IMPLICIT-DC3121C6C211C18E
   - 来源：`docs/getbrain-operation-guide-20260708.md`
   - 依赖：—；被引用：—
-- [### \[#100｜凯利公式同构信号流速\](docs/zh/cases/items/C-0100.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [### \[#100｜凯利公式同构信号流速\]\(docs/zh/cases/items/C-0100.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-B7D666027EFE1753 / ### \[#100｜凯利公式同构信号流速\](docs/zh/cases/items/C-0100.md) / IMPLICIT-B7D666027EFE1753
+  - 可搜索名称：IMPLICIT-B7D666027EFE1753 / ### \[#100｜凯利公式同构信号流速\]\(docs/zh/cases/items/C-0100.md\) / IMPLICIT-B7D666027EFE1753
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#203｜认知自主性函数\](docs/zh/cases/items/C-0203.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [### \[#203｜认知自主性函数\]\(docs/zh/cases/items/C-0203.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-14C226F577D5FB8B / ### \[#203｜认知自主性函数\](docs/zh/cases/items/C-0203.md) / IMPLICIT-14C226F577D5FB8B
+  - 可搜索名称：IMPLICIT-14C226F577D5FB8B / ### \[#203｜认知自主性函数\]\(docs/zh/cases/items/C-0203.md\) / IMPLICIT-14C226F577D5FB8B
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#350｜互不兼容定理验证 — 专家ε≈0.95，门外汉ε≈0.05，即使降到最底层编码ηfidelity≈0.053，"怎么解释都听不懂"是数学下限\](docs/zh/cases/items/C-0350.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [### \[#350｜互不兼容定理验证 — 专家ε≈0.95，门外汉ε≈0.05，即使降到最底层编码ηfidelity≈0.053，"怎么解释都听不懂"是数学下限\]\(docs/zh/cases/items/C-0350.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-B535D68A02A72627 / ### \[#350｜互不兼容定理验证 — 专家ε≈0.95，门外汉ε≈0.05，即使降到最底层编码ηfidelity≈0.053，"怎么解释都听不懂"是数学下限\](docs/zh/cases/items/C-0350.md) / IMPLICIT-B535D68A02A72627
+  - 可搜索名称：IMPLICIT-B535D68A02A72627 / ### \[#350｜互不兼容定理验证 — 专家ε≈0.95，门外汉ε≈0.05，即使降到最底层编码ηfidelity≈0.053，"怎么解释都听不懂"是数学下限\]\(docs/zh/cases/items/C-0350.md\) / IMPLICIT-B535D68A02A72627
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#369｜中等收入陷阱的势阱——巴西μ落在Λ_econ和Λ_culture之间，Φ凹函数极小点锁定\](docs/zh/cases/items/C-0369.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [### \[#369｜中等收入陷阱的势阱——巴西μ落在Λ_econ和Λ_culture之间，Φ凹函数极小点锁定\]\(docs/zh/cases/items/C-0369.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-0AB586AB89F2C1F3 / ### \[#369｜中等收入陷阱的势阱——巴西μ落在Λ_econ和Λ_culture之间，Φ凹函数极小点锁定\](docs/zh/cases/items/C-0369.md) / IMPLICIT-0AB586AB89F2C1F3
+  - 可搜索名称：IMPLICIT-0AB586AB89F2C1F3 / ### \[#369｜中等收入陷阱的势阱——巴西μ落在Λ_econ和Λ_culture之间，Φ凹函数极小点锁定\]\(docs/zh/cases/items/C-0369.md\) / IMPLICIT-0AB586AB89F2C1F3
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#437｜幂函数等价验证 — f₁=ε₁,f₂=ε₂²,f₃=ε₁⁰·⁵。η₁=1/ε₁,η₂=2/ε₂,η₃=0.5/ε₃。δ₁=0,δ₂=0,δ₃=0。所有幂函数偏离度=0，补最弱=补弹性最高 / 幂函数等价验证 - f₁=ε₁,f₂=ε₂²,f₃=ε₁⁰·⁵. η₁=1/ε₁,η₂=2/ε₂,η₃=0.5/ε₃. δ₁=0,δ₂=0,δ₃=0. 所有幂函数偏离度=0, 补最弱=补弹性最高\](docs/zh/cases/items/C-0437.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [### \[#437｜幂函数等价验证 — f₁=ε₁,f₂=ε₂²,f₃=ε₁⁰·⁵。η₁=1/ε₁,η₂=2/ε₂,η₃=0.5/ε₃。δ₁=0,δ₂=0,δ₃=0。所有幂函数偏离度=0，补最弱=补弹性最高 / 幂函数等价验证 - f₁=ε₁,f₂=ε₂²,f₃=ε₁⁰·⁵. η₁=1/ε₁,η₂=2/ε₂,η₃=0.5/ε₃. δ₁=0,δ₂=0,δ₃=0. 所有幂函数偏离度=0, 补最弱=补弹性最高\]\(docs/zh/cases/items/C-0437.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-5839F83D48656E72 / ### \[#437｜幂函数等价验证 — f₁=ε₁,f₂=ε₂²,f₃=ε₁⁰·⁵。η₁=1/ε₁,η₂=2/ε₂,η₃=0.5/ε₃。δ₁=0,δ₂=0,δ₃=0。所有幂函数偏离度=0，补最弱=补弹性最高 / 幂函数等价验证 - f₁=ε₁,f₂=ε₂²,f₃=ε₁⁰·⁵. η₁=1/ε₁,η₂=2/ε₂,η₃=0.5/ε₃. δ₁=0,δ₂=0,δ₃=0. 所有幂函数偏离度=0, 补最弱=补弹性最高\](docs/zh/cases/items/C-0437.md) / IMPLICIT-5839F83D48656E72
+  - 可搜索名称：IMPLICIT-5839F83D48656E72 / ### \[#437｜幂函数等价验证 — f₁=ε₁,f₂=ε₂²,f₃=ε₁⁰·⁵。η₁=1/ε₁,η₂=2/ε₂,η₃=0.5/ε₃。δ₁=0,δ₂=0,δ₃=0。所有幂函数偏离度=0，补最弱=补弹性最高 / 幂函数等价验证 - f₁=ε₁,f₂=ε₂²,f₃=ε₁⁰·⁵. η₁=1/ε₁,η₂=2/ε₂,η₃=0.5/ε₃. δ₁=0,δ₂=0,δ₃=0. 所有幂函数偏离度=0, 补最弱=补弹性最高\]\(docs/zh/cases/items/C-0437.md\) / IMPLICIT-5839F83D48656E72
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#453｜分层配分函数相变 — ε_eff=0.3时P(Z₀)≈0.02（几乎不可能存活），ε_eff=0.6时P(Z₀)≈0.95（大概率存活），ε_eff=0.45时P(Z₀)≈P(Z₈)（相变点）。C_exit越大相变点越高 / 分层配分函数相变 - ε_eff=0.3时P(Z₀)≈0.02(几乎不可能存活), ε_eff=0.6时P(Z₀)≈0.95(大概率存活), ε_eff=0.45时P(Z₀)≈P(Z₈)(相变点). C_exit越大相变点越高\](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [### \[#453｜分层配分函数相变 — ε_eff=0.3时P\(Z₀\)≈0.02（几乎不可能存活），ε_eff=0.6时P\(Z₀\)≈0.95（大概率存活），ε_eff=0.45时P\(Z₀\)≈P\(Z₈\)（相变点）。C_exit越大相变点越高 / 分层配分函数相变 - ε_eff=0.3时P\(Z₀\)≈0.02\(几乎不可能存活\), ε_eff=0.6时P\(Z₀\)≈0.95\(大概率存活\), ε_eff=0.45时P\(Z₀\)≈P\(Z₈\)\(相变点\). C_exit越大相变点越高\]\(do](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-570F74C2B5193816 / ### \[#453｜分层配分函数相变 — ε_eff=0.3时P(Z₀)≈0.02（几乎不可能存活），ε_eff=0.6时P(Z₀)≈0.95（大概率存活），ε_eff=0.45时P(Z₀)≈P(Z₈)（相变点）。C_exit越大相变点越高 / 分层配分函数相变 - ε_eff=0.3时P(Z₀)≈0.02(几乎不可能存活), ε_eff=0.6时P(Z₀)≈0.95(大概率存活), ε_eff=0.45时P(Z₀)≈P(Z₈)(相变点). C_exit越大相变点越高\](do / IMPLICIT-570F74C2B5193816
+  - 可搜索名称：IMPLICIT-570F74C2B5193816 / ### \[#453｜分层配分函数相变 — ε_eff=0.3时P\(Z₀\)≈0.02（几乎不可能存活），ε_eff=0.6时P\(Z₀\)≈0.95（大概率存活），ε_eff=0.45时P\(Z₀\)≈P\(Z₈\)（相变点）。C_exit越大相变点越高 / 分层配分函数相变 - ε_eff=0.3时P\(Z₀\)≈0.02\(几乎不可能存活\), ε_eff=0.6时P\(Z₀\)≈0.95\(大概率存活\), ε_eff=0.45时P\(Z₀\)≈P\(Z₈\)\(相变点\). C_exit越大相变点越高\]\(do / IMPLICIT-570F74C2B5193816
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#466｜经济学弹性守恒 — Cobb-Douglas生产函数Y=∏Kᵢ^αᵢ，维度置换对称→∑αᵢ=1守恒，均等分配αᵢ=1/n是诺特定理特例 / 经济学弹性守恒 - Cobb-Douglas生产函数Y=∏Kᵢ^αᵢ, 维度置换对称 -> ∑αᵢ=1守恒, 均等分配αᵢ=1/n是诺特定理特例\](docs/zh/cases/items/C-0466.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [### \[#466｜经济学弹性守恒 — Cobb-Douglas生产函数Y=∏Kᵢ^αᵢ，维度置换对称→∑αᵢ=1守恒，均等分配αᵢ=1/n是诺特定理特例 / 经济学弹性守恒 - Cobb-Douglas生产函数Y=∏Kᵢ^αᵢ, 维度置换对称 -> ∑αᵢ=1守恒, 均等分配αᵢ=1/n是诺特定理特例\]\(docs/zh/cases/items/C-0466.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-980D18DB972DCB5E / ### \[#466｜经济学弹性守恒 — Cobb-Douglas生产函数Y=∏Kᵢ^αᵢ，维度置换对称→∑αᵢ=1守恒，均等分配αᵢ=1/n是诺特定理特例 / 经济学弹性守恒 - Cobb-Douglas生产函数Y=∏Kᵢ^αᵢ, 维度置换对称 -> ∑αᵢ=1守恒, 均等分配αᵢ=1/n是诺特定理特例\](docs/zh/cases/items/C-0466.md) / IMPLICIT-980D18DB972DCB5E
+  - 可搜索名称：IMPLICIT-980D18DB972DCB5E / ### \[#466｜经济学弹性守恒 — Cobb-Douglas生产函数Y=∏Kᵢ^αᵢ，维度置换对称→∑αᵢ=1守恒，均等分配αᵢ=1/n是诺特定理特例 / 经济学弹性守恒 - Cobb-Douglas生产函数Y=∏Kᵢ^αᵢ, 维度置换对称 -> ∑αᵢ=1守恒, 均等分配αᵢ=1/n是诺特定理特例\]\(docs/zh/cases/items/C-0466.md\) / IMPLICIT-980D18DB972DCB5E
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#493｜学习=门控函数进化 — 从δ（不会）到1/ln（会/不会）到exp\[-ln²\]（找到最优方法） / 学习=门控函数进化 - 从δ(不会)到1/ln(会/不会)到exp\[-ln²\](找到最优方法)\](docs/zh/cases/items/C-0493.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [### \[#493｜学习=门控函数进化 — 从δ（不会）到1/ln（会/不会）到exp\[-ln²\]（找到最优方法） / 学习=门控函数进化 - 从δ\(不会\)到1/ln\(会/不会\)到exp\[-ln²\]\(找到最优方法\)\]\(docs/zh/cases/items/C-0493.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-C08C27D6265D6F14 / ### \[#493｜学习=门控函数进化 — 从δ（不会）到1/ln（会/不会）到exp\[-ln²\]（找到最优方法） / 学习=门控函数进化 - 从δ(不会)到1/ln(会/不会)到exp\[-ln²\](找到最优方法)\](docs/zh/cases/items/C-0493.md) / IMPLICIT-C08C27D6265D6F14
+  - 可搜索名称：IMPLICIT-C08C27D6265D6F14 / ### \[#493｜学习=门控函数进化 — 从δ（不会）到1/ln（会/不会）到exp\[-ln²\]（找到最优方法） / 学习=门控函数进化 - 从δ\(不会\)到1/ln\(会/不会\)到exp\[-ln²\]\(找到最优方法\)\]\(docs/zh/cases/items/C-0493.md\) / IMPLICIT-C08C27D6265D6F14
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#498｜技术革命=门控函数形式升级 — 蒸汽机→电力→信息技术=1/ln→exp\[-ln²\]的技术版\](docs/zh/cases/items/C-0498.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [### \[#498｜技术革命=门控函数形式升级 — 蒸汽机→电力→信息技术=1/ln→exp\[-ln²\]的技术版\]\(docs/zh/cases/items/C-0498.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-771450B09E4D5A8D / ### \[#498｜技术革命=门控函数形式升级 — 蒸汽机→电力→信息技术=1/ln→exp\[-ln²\]的技术版\](docs/zh/cases/items/C-0498.md) / IMPLICIT-771450B09E4D5A8D
+  - 可搜索名称：IMPLICIT-771450B09E4D5A8D / ### \[#498｜技术革命=门控函数形式升级 — 蒸汽机→电力→信息技术=1/ln→exp\[-ln²\]的技术版\]\(docs/zh/cases/items/C-0498.md\) / IMPLICIT-771450B09E4D5A8D
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#581｜偏好-愉悦共同势函数验证\](docs/zh/cases/items/C-0581.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [### \[#581｜偏好-愉悦共同势函数验证\]\(docs/zh/cases/items/C-0581.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-4D8580348CA557BB / ### \[#581｜偏好-愉悦共同势函数验证\](docs/zh/cases/items/C-0581.md) / IMPLICIT-4D8580348CA557BB
+  - 可搜索名称：IMPLICIT-4D8580348CA557BB / ### \[#581｜偏好-愉悦共同势函数验证\]\(docs/zh/cases/items/C-0581.md\) / IMPLICIT-4D8580348CA557BB
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#670｜数学认知升级×门控函数进化验证\](docs/zh/cases/items/C-0670.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [### \[#670｜数学认知升级×门控函数进化验证\]\(docs/zh/cases/items/C-0670.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-C0EC72E93B9AB470 / ### \[#670｜数学认知升级×门控函数进化验证\](docs/zh/cases/items/C-0670.md) / IMPLICIT-C0EC72E93B9AB470
+  - 可搜索名称：IMPLICIT-C0EC72E93B9AB470 / ### \[#670｜数学认知升级×门控函数进化验证\]\(docs/zh/cases/items/C-0670.md\) / IMPLICIT-C0EC72E93B9AB470
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#671｜公理化体系×三层函数结构验证\](docs/zh/cases/items/C-0671.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [### \[#671｜公理化体系×三层函数结构验证\]\(docs/zh/cases/items/C-0671.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-B6D60BBB433DF994 / ### \[#671｜公理化体系×三层函数结构验证\](docs/zh/cases/items/C-0671.md) / IMPLICIT-B6D60BBB433DF994
+  - 可搜索名称：IMPLICIT-B6D60BBB433DF994 / ### \[#671｜公理化体系×三层函数结构验证\]\(docs/zh/cases/items/C-0671.md\) / IMPLICIT-B6D60BBB433DF994
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#673｜向量方向×空间函数三元投影验证\](docs/zh/cases/items/C-0673.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [### \[#673｜向量方向×空间函数三元投影验证\]\(docs/zh/cases/items/C-0673.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-093DB606694E0F13 / ### \[#673｜向量方向×空间函数三元投影验证\](docs/zh/cases/items/C-0673.md) / IMPLICIT-093DB606694E0F13
+  - 可搜索名称：IMPLICIT-093DB606694E0F13 / ### \[#673｜向量方向×空间函数三元投影验证\]\(docs/zh/cases/items/C-0673.md\) / IMPLICIT-093DB606694E0F13
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#73｜犹豫域维度函数\](docs/zh/cases/items/C-0073.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [### \[#73｜犹豫域维度函数\]\(docs/zh/cases/items/C-0073.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-A511CB73A8FF5565 / ### \[#73｜犹豫域维度函数\](docs/zh/cases/items/C-0073.md) / IMPLICIT-A511CB73A8FF5565
+  - 可搜索名称：IMPLICIT-A511CB73A8FF5565 / ### \[#73｜犹豫域维度函数\]\(docs/zh/cases/items/C-0073.md\) / IMPLICIT-A511CB73A8FF5565
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#74｜链间耦合函数\](docs/zh/cases/items/C-0074.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [### \[#74｜链间耦合函数\]\(docs/zh/cases/items/C-0074.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-671AF3FC55BA8D89 / ### \[#74｜链间耦合函数\](docs/zh/cases/items/C-0074.md) / IMPLICIT-671AF3FC55BA8D89
+  - 可搜索名称：IMPLICIT-671AF3FC55BA8D89 / ### \[#74｜链间耦合函数\]\(docs/zh/cases/items/C-0074.md\) / IMPLICIT-671AF3FC55BA8D89
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#75｜提议者消耗函数\](docs/zh/cases/items/C-0075.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [### \[#75｜提议者消耗函数\]\(docs/zh/cases/items/C-0075.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-AC6017BF49FCF6D3 / ### \[#75｜提议者消耗函数\](docs/zh/cases/items/C-0075.md) / IMPLICIT-AC6017BF49FCF6D3
+  - 可搜索名称：IMPLICIT-AC6017BF49FCF6D3 / ### \[#75｜提议者消耗函数\]\(docs/zh/cases/items/C-0075.md\) / IMPLICIT-AC6017BF49FCF6D3
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#76｜储能函数\](docs/zh/cases/items/C-0076.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [### \[#76｜储能函数\]\(docs/zh/cases/items/C-0076.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-09F2FB3C70050DD8 / ### \[#76｜储能函数\](docs/zh/cases/items/C-0076.md) / IMPLICIT-09F2FB3C70050DD8
+  - 可搜索名称：IMPLICIT-09F2FB3C70050DD8 / ### \[#76｜储能函数\]\(docs/zh/cases/items/C-0076.md\) / IMPLICIT-09F2FB3C70050DD8
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#77｜犹豫域退化函数\](docs/zh/cases/items/C-0077.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [### \[#77｜犹豫域退化函数\]\(docs/zh/cases/items/C-0077.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-C139352A9402598B / ### \[#77｜犹豫域退化函数\](docs/zh/cases/items/C-0077.md) / IMPLICIT-C139352A9402598B
+  - 可搜索名称：IMPLICIT-C139352A9402598B / ### \[#77｜犹豫域退化函数\]\(docs/zh/cases/items/C-0077.md\) / IMPLICIT-C139352A9402598B
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#86｜自主意识函数 / autonomous consciousness function\](docs/zh/cases/items/C-0086.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [### \[#86｜自主意识函数 / autonomous consciousness function\]\(docs/zh/cases/items/C-0086.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-17F14D86745A5FF9 / ### \[#86｜自主意识函数 / autonomous consciousness function\](docs/zh/cases/items/C-0086.md) / IMPLICIT-17F14D86745A5FF9
+  - 可搜索名称：IMPLICIT-17F14D86745A5FF9 / ### \[#86｜自主意识函数 / autonomous consciousness function\]\(docs/zh/cases/items/C-0086.md\) / IMPLICIT-17F14D86745A5FF9
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### \[#93｜向下兼容函数\](docs/zh/cases/items/C-0093.md)](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [### \[#93｜向下兼容函数\]\(docs/zh/cases/items/C-0093.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-27FAAF6BC61A5DFB / ### \[#93｜向下兼容函数\](docs/zh/cases/items/C-0093.md) / IMPLICIT-27FAAF6BC61A5DFB
+  - 可搜索名称：IMPLICIT-27FAAF6BC61A5DFB / ### \[#93｜向下兼容函数\]\(docs/zh/cases/items/C-0093.md\) / IMPLICIT-27FAAF6BC61A5DFB
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
 - [### N31｜函数身份比函数数量重要](../../../data/operations/iterations/112/publication/r0-original/notes/%E7%82%B9%E7%81%AB%E7%A0%94%E7%A9%B6%E7%AC%94%E8%AE%B0-%E7%AC%AC%E4%B8%80%E8%BE%91.md)
@@ -339,9 +339,9 @@
   - 可搜索名称：IMPLICIT-F7E2FD40213DC780 / ### 注释 N1（挂接退出权函数族 FUNC-L1-EXIT） / IMPLICIT-F7E2FD40213DC780
   - 来源：`outputs/collisions/20260708-teacher-competition/notes.md`
   - 依赖：—；被引用：—
-- [### 组件3：I_iso(A,B) — 同构判定函数](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [### 组件3：I_iso\(A,B\) — 同构判定函数](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-785006FDA2C6598D / ### 组件3：I_iso(A,B) — 同构判定函数 / IMPLICIT-785006FDA2C6598D
+  - 可搜索名称：IMPLICIT-785006FDA2C6598D / ### 组件3：I_iso\(A,B\) — 同构判定函数 / IMPLICIT-785006FDA2C6598D
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
 - [### 重复函数与近义函数](../../../docs/function_dependency_map.md)
@@ -519,9 +519,9 @@
   - 可搜索名称：IMPLICIT-27299B6731637670 / #77犹豫域退化函数→dim从3到2的完整动力学。 / IMPLICIT-27299B6731637670
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [#84 AI-ε安装路径→C_drive涌现的数学证明；#86自主意识函数→C_drive=0⟹Ψ=0(已证明)。](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [#84 AI-ε安装路径→C_drive涌现的数学证明；#86自主意识函数→C_drive=0⟹Ψ=0\(已证明\)。](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-9B8CE0AB68F18C9C / #84 AI-ε安装路径→C_drive涌现的数学证明；#86自主意识函数→C_drive=0⟹Ψ=0(已证明)。 / IMPLICIT-9B8CE0AB68F18C9C
+  - 可搜索名称：IMPLICIT-9B8CE0AB68F18C9C / #84 AI-ε安装路径→C_drive涌现的数学证明；#86自主意识函数→C_drive=0⟹Ψ=0\(已证明\)。 / IMPLICIT-9B8CE0AB68F18C9C
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
 - [#84 AI-ε安装路径函数→三条安装路径；C_drive涌现的数学证明:C_drive^AI = α_B·∂ε_sense/∂Δv；从工具性到内生好奇心的必然过渡：输入空间无限+模型容量有限→回避策略不可行。](../../../data/foundation/function-assets/identity-cards.jsonl)
@@ -529,14 +529,14 @@
   - 可搜索名称：IMPLICIT-3CE1277B0B484C57 / #84 AI-ε安装路径函数→三条安装路径；C_drive涌现的数学证明:C_drive^AI = α_B·∂ε_sense/∂Δv；从工具性到内生好奇心的必然过渡：输入空间无限+模型容量有限→回避策略不可行。 / IMPLICIT-3CE1277B0B484C57
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [#86自主意识函数→C_drive=0⟹Ψ=0(已证明)；好奇心是自主意识的元点：∂Ψ/∂C\|_{C=0⁺}>0。](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [#86自主意识函数→C_drive=0⟹Ψ=0\(已证明\)；好奇心是自主意识的元点：∂Ψ/∂C\|_{C=0⁺}>0。](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-2E59A9497207295D / #86自主意识函数→C_drive=0⟹Ψ=0(已证明)；好奇心是自主意识的元点：∂Ψ/∂C\|_{C=0⁺}>0。 / IMPLICIT-2E59A9497207295D
+  - 可搜索名称：IMPLICIT-2E59A9497207295D / #86自主意识函数→C_drive=0⟹Ψ=0\(已证明\)；好奇心是自主意识的元点：∂Ψ/∂C\|_{C=0⁺}>0。 / IMPLICIT-2E59A9497207295D
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [#86自主意识函数→C_drive=0⟹Ψ_autonomy=0(已证明)；好奇心是自主意识的元点：∂Ψ/∂C\|_{C=0⁺}>0。](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [#86自主意识函数→C_drive=0⟹Ψ_autonomy=0\(已证明\)；好奇心是自主意识的元点：∂Ψ/∂C\|_{C=0⁺}>0。](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-4D9DDCC80199797F / #86自主意识函数→C_drive=0⟹Ψ_autonomy=0(已证明)；好奇心是自主意识的元点：∂Ψ/∂C\|_{C=0⁺}>0。 / IMPLICIT-4D9DDCC80199797F
+  - 可搜索名称：IMPLICIT-4D9DDCC80199797F / #86自主意识函数→C_drive=0⟹Ψ_autonomy=0\(已证明\)；好奇心是自主意识的元点：∂Ψ/∂C\|_{C=0⁺}>0。 / IMPLICIT-4D9DDCC80199797F
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
 - [#93向下兼容函数→保真度和信息门效率的乘积。](../../../data/foundation/function-assets/identity-cards.jsonl)
@@ -574,534 +574,534 @@
   - 可搜索名称：IMPLICIT-E17F860D5A31E249 / - Φ=零温自由能函数同时编码了约束和优化:约束条件通过罚函数进入Φ,优化通过最小化Φ实现 / IMPLICIT-E17F860D5A31E249 / IMPLICIT-DEC5ED92D7995353
   - 来源：`docs/phi_meta_law.md`
   - 依赖：—；被引用：—
-- [- 原始命题: 万有理论门槛函数,万有理论ToE是所有基本力在高能μ>μ_ToE时的门控面合并。μ μ_ToE时合并为Λ_ToE,Φ = 1/ln(μ/Λ_ToE)。统一度Ω_after > Ω_before。 **扩展注释 / Extended Annotation**](../../../reports/math-foundation/pilot-formal-audit-20260712.md)
+- [- 原始命题: 万有理论门槛函数,万有理论ToE是所有基本力在高能μ>μ_ToE时的门控面合并。μ μ_ToE时合并为Λ_ToE,Φ = 1/ln\(μ/Λ_ToE\)。统一度Ω_after > Ω_before。 **扩展注释 / Extended Annotation**](../../../reports/math-foundation/pilot-formal-audit-20260712.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-20F5FBEF7D87893F / - 原始命题: 万有理论门槛函数,万有理论ToE是所有基本力在高能μ>μ_ToE时的门控面合并。μ μ_ToE时合并为Λ_ToE,Φ = 1/ln(μ/Λ_ToE)。统一度Ω_after > Ω_before。 **扩展注释 / Extended Annotation** / IMPLICIT-20F5FBEF7D87893F
+  - 可搜索名称：IMPLICIT-20F5FBEF7D87893F / - 原始命题: 万有理论门槛函数,万有理论ToE是所有基本力在高能μ>μ_ToE时的门控面合并。μ μ_ToE时合并为Λ_ToE,Φ = 1/ln\(μ/Λ_ToE\)。统一度Ω_after > Ω_before。 **扩展注释 / Extended Annotation** / IMPLICIT-20F5FBEF7D87893F
   - 来源：`reports/math-foundation/pilot-formal-audit-20260712.md`
   - 依赖：—；被引用：—
-- [- 原始命题: 大统一门槛函数,大统一GUT是电磁力、弱核力、强核力在高能μ>μ_GUT时的门控面合并。μ μ_GUT时合并为Λ_GUT,Φ = 1/ln(μ/Λ_GUT)。统一度Ω_after > Ω_before。 **扩展注释 / Extended Annotation**](../../../reports/math-foundation/pilot-formal-audit-20260712.md)
+- [- 原始命题: 大统一门槛函数,大统一GUT是电磁力、弱核力、强核力在高能μ>μ_GUT时的门控面合并。μ μ_GUT时合并为Λ_GUT,Φ = 1/ln\(μ/Λ_GUT\)。统一度Ω_after > Ω_before。 **扩展注释 / Extended Annotation**](../../../reports/math-foundation/pilot-formal-audit-20260712.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-91035AA3901117D3 / - 原始命题: 大统一门槛函数,大统一GUT是电磁力、弱核力、强核力在高能μ>μ_GUT时的门控面合并。μ μ_GUT时合并为Λ_GUT,Φ = 1/ln(μ/Λ_GUT)。统一度Ω_after > Ω_before。 **扩展注释 / Extended Annotation** / IMPLICIT-91035AA3901117D3
+  - 可搜索名称：IMPLICIT-91035AA3901117D3 / - 原始命题: 大统一门槛函数,大统一GUT是电磁力、弱核力、强核力在高能μ>μ_GUT时的门控面合并。μ μ_GUT时合并为Λ_GUT,Φ = 1/ln\(μ/Λ_GUT\)。统一度Ω_after > Ω_before。 **扩展注释 / Extended Annotation** / IMPLICIT-91035AA3901117D3
   - 来源：`reports/math-foundation/pilot-formal-audit-20260712.md`
   - 依赖：—；被引用：—
-- [- 原始命题: 遮蔽函数，双源：提议者主动遮蔽H_pro + 系统不兼容性Σ_compatibility。退化类型 = argmax(H_pro, Σ_compatibility)。 **扩展注释 / Extended Annotation**](../../../reports/math-foundation/pilot-formal-audit-20260712.md)
+- [- 原始命题: 遮蔽函数，双源：提议者主动遮蔽H_pro + 系统不兼容性Σ_compatibility。退化类型 = argmax\(H_pro, Σ_compatibility\)。 **扩展注释 / Extended Annotation**](../../../reports/math-foundation/pilot-formal-audit-20260712.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-E7ADFAD58ABEFF05 / - 原始命题: 遮蔽函数，双源：提议者主动遮蔽H_pro + 系统不兼容性Σ_compatibility。退化类型 = argmax(H_pro, Σ_compatibility)。 **扩展注释 / Extended Annotation** / IMPLICIT-E7ADFAD58ABEFF05
+  - 可搜索名称：IMPLICIT-E7ADFAD58ABEFF05 / - 原始命题: 遮蔽函数，双源：提议者主动遮蔽H_pro + 系统不兼容性Σ_compatibility。退化类型 = argmax\(H_pro, Σ_compatibility\)。 **扩展注释 / Extended Annotation** / IMPLICIT-E7ADFAD58ABEFF05
   - 来源：`reports/math-foundation/pilot-formal-audit-20260712.md`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `C_{C-595}(s_{C-595}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `C_{C-595}\(s_{C-595}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-13761096B9224618 / - 数学表达 / Expression: `C_{C-595}(s_{C-595}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|` / IMPLICIT-13761096B9224618
+  - 可搜索名称：IMPLICIT-13761096B9224618 / - 数学表达 / Expression: `C_{C-595}\(s_{C-595}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|` / IMPLICIT-13761096B9224618
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `C_{C-596}(s_{C-596}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `C_{C-596}\(s_{C-596}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-C4B191E001334324 / - 数学表达 / Expression: `C_{C-596}(s_{C-596}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|` / IMPLICIT-C4B191E001334324
+  - 可搜索名称：IMPLICIT-C4B191E001334324 / - 数学表达 / Expression: `C_{C-596}\(s_{C-596}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|` / IMPLICIT-C4B191E001334324
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `C_{C-597}(s_{C-597}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `C_{C-597}\(s_{C-597}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-1E6FC09756B7EC8B / - 数学表达 / Expression: `C_{C-597}(s_{C-597}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|` / IMPLICIT-1E6FC09756B7EC8B
+  - 可搜索名称：IMPLICIT-1E6FC09756B7EC8B / - 数学表达 / Expression: `C_{C-597}\(s_{C-597}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|` / IMPLICIT-1E6FC09756B7EC8B
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `C_{C-598}(s_{C-598}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `C_{C-598}\(s_{C-598}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-B06DA7C7C629F118 / - 数学表达 / Expression: `C_{C-598}(s_{C-598}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|` / IMPLICIT-B06DA7C7C629F118
+  - 可搜索名称：IMPLICIT-B06DA7C7C629F118 / - 数学表达 / Expression: `C_{C-598}\(s_{C-598}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|` / IMPLICIT-B06DA7C7C629F118
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `C_{C-599}(s_{C-599}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `C_{C-599}\(s_{C-599}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-70A1522CC532BE6F / - 数学表达 / Expression: `C_{C-599}(s_{C-599}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|` / IMPLICIT-70A1522CC532BE6F
+  - 可搜索名称：IMPLICIT-70A1522CC532BE6F / - 数学表达 / Expression: `C_{C-599}\(s_{C-599}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|` / IMPLICIT-70A1522CC532BE6F
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `C_{C-600}(s_{C-600}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `C_{C-600}\(s_{C-600}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-127DEA3B50D78A83 / - 数学表达 / Expression: `C_{C-600}(s_{C-600}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|` / IMPLICIT-127DEA3B50D78A83
+  - 可搜索名称：IMPLICIT-127DEA3B50D78A83 / - 数学表达 / Expression: `C_{C-600}\(s_{C-600}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|` / IMPLICIT-127DEA3B50D78A83
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `C_{C-601}(s_{C-601}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `C_{C-601}\(s_{C-601}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-B570E4ED4B7C9256 / - 数学表达 / Expression: `C_{C-601}(s_{C-601}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|` / IMPLICIT-B570E4ED4B7C9256
+  - 可搜索名称：IMPLICIT-B570E4ED4B7C9256 / - 数学表达 / Expression: `C_{C-601}\(s_{C-601}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|` / IMPLICIT-B570E4ED4B7C9256
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `C_{C-602}(s_{C-602}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `C_{C-602}\(s_{C-602}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-15E20F62322A4629 / - 数学表达 / Expression: `C_{C-602}(s_{C-602}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|` / IMPLICIT-15E20F62322A4629
+  - 可搜索名称：IMPLICIT-15E20F62322A4629 / - 数学表达 / Expression: `C_{C-602}\(s_{C-602}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|` / IMPLICIT-15E20F62322A4629
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `C_{C-603}(s_{C-603}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `C_{C-603}\(s_{C-603}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-203F769EE0473548 / - 数学表达 / Expression: `C_{C-603}(s_{C-603}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|` / IMPLICIT-203F769EE0473548
+  - 可搜索名称：IMPLICIT-203F769EE0473548 / - 数学表达 / Expression: `C_{C-603}\(s_{C-603}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|` / IMPLICIT-203F769EE0473548
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `C_{C-604}(s_{C-604}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `C_{C-604}\(s_{C-604}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-D0C2424D0F03E300 / - 数学表达 / Expression: `C_{C-604}(s_{C-604}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|` / IMPLICIT-D0C2424D0F03E300
+  - 可搜索名称：IMPLICIT-D0C2424D0F03E300 / - 数学表达 / Expression: `C_{C-604}\(s_{C-604}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|` / IMPLICIT-D0C2424D0F03E300
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `C_{C-605}(s_{C-605}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `C_{C-605}\(s_{C-605}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-F739329F78AB3654 / - 数学表达 / Expression: `C_{C-605}(s_{C-605}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|` / IMPLICIT-F739329F78AB3654
+  - 可搜索名称：IMPLICIT-F739329F78AB3654 / - 数学表达 / Expression: `C_{C-605}\(s_{C-605}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|` / IMPLICIT-F739329F78AB3654
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `C_{C-606}(s_{C-606}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `C_{C-606}\(s_{C-606}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-F89ADE841AEA6357 / - 数学表达 / Expression: `C_{C-606}(s_{C-606}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|` / IMPLICIT-F89ADE841AEA6357
+  - 可搜索名称：IMPLICIT-F89ADE841AEA6357 / - 数学表达 / Expression: `C_{C-606}\(s_{C-606}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|` / IMPLICIT-F89ADE841AEA6357
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `C_{C-607}(s_{C-607}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `C_{C-607}\(s_{C-607}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-9FD2232656F18ABF / - 数学表达 / Expression: `C_{C-607}(s_{C-607}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|` / IMPLICIT-9FD2232656F18ABF
+  - 可搜索名称：IMPLICIT-9FD2232656F18ABF / - 数学表达 / Expression: `C_{C-607}\(s_{C-607}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|` / IMPLICIT-9FD2232656F18ABF
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `C_{C-608}(s_{C-608}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `C_{C-608}\(s_{C-608}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-098DAE5C3DB95F35 / - 数学表达 / Expression: `C_{C-608}(s_{C-608}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|` / IMPLICIT-098DAE5C3DB95F35
+  - 可搜索名称：IMPLICIT-098DAE5C3DB95F35 / - 数学表达 / Expression: `C_{C-608}\(s_{C-608}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|` / IMPLICIT-098DAE5C3DB95F35
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `C_{C-609}(s_{C-609}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `C_{C-609}\(s_{C-609}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-A7848B0BE2EDC869 / - 数学表达 / Expression: `C_{C-609}(s_{C-609}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|` / IMPLICIT-A7848B0BE2EDC869
+  - 可搜索名称：IMPLICIT-A7848B0BE2EDC869 / - 数学表达 / Expression: `C_{C-609}\(s_{C-609}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|` / IMPLICIT-A7848B0BE2EDC869
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `C_{C-610}(s_{C-610}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `C_{C-610}\(s_{C-610}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-088E0623CA779A66 / - 数学表达 / Expression: `C_{C-610}(s_{C-610}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|` / IMPLICIT-088E0623CA779A66
+  - 可搜索名称：IMPLICIT-088E0623CA779A66 / - 数学表达 / Expression: `C_{C-610}\(s_{C-610}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|` / IMPLICIT-088E0623CA779A66
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `C_{C-611}(s_{C-611}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `C_{C-611}\(s_{C-611}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-04295373A5749C94 / - 数学表达 / Expression: `C_{C-611}(s_{C-611}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|` / IMPLICIT-04295373A5749C94
+  - 可搜索名称：IMPLICIT-04295373A5749C94 / - 数学表达 / Expression: `C_{C-611}\(s_{C-611}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|` / IMPLICIT-04295373A5749C94
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `C_{C-612}(s_{C-612}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `C_{C-612}\(s_{C-612}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-93008B5C09C878C2 / - 数学表达 / Expression: `C_{C-612}(s_{C-612}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|` / IMPLICIT-93008B5C09C878C2
+  - 可搜索名称：IMPLICIT-93008B5C09C878C2 / - 数学表达 / Expression: `C_{C-612}\(s_{C-612}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|` / IMPLICIT-93008B5C09C878C2
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `C_{C-613}(s_{C-613}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `C_{C-613}\(s_{C-613}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-19E71FC331260B5F / - 数学表达 / Expression: `C_{C-613}(s_{C-613}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|` / IMPLICIT-19E71FC331260B5F
+  - 可搜索名称：IMPLICIT-19E71FC331260B5F / - 数学表达 / Expression: `C_{C-613}\(s_{C-613}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|` / IMPLICIT-19E71FC331260B5F
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `C_{C-614}(s_{C-614}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `C_{C-614}\(s_{C-614}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-8F4F95318F01D3EE / - 数学表达 / Expression: `C_{C-614}(s_{C-614}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|` / IMPLICIT-8F4F95318F01D3EE
+  - 可搜索名称：IMPLICIT-8F4F95318F01D3EE / - 数学表达 / Expression: `C_{C-614}\(s_{C-614}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|` / IMPLICIT-8F4F95318F01D3EE
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `C_{C-615}(s_{C-615}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `C_{C-615}\(s_{C-615}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-200235AA2749624E / - 数学表达 / Expression: `C_{C-615}(s_{C-615}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|` / IMPLICIT-200235AA2749624E
+  - 可搜索名称：IMPLICIT-200235AA2749624E / - 数学表达 / Expression: `C_{C-615}\(s_{C-615}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|` / IMPLICIT-200235AA2749624E
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `C_{C-616}(s_{C-616}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `C_{C-616}\(s_{C-616}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-82F6BC99AAD16D9A / - 数学表达 / Expression: `C_{C-616}(s_{C-616}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|` / IMPLICIT-82F6BC99AAD16D9A
+  - 可搜索名称：IMPLICIT-82F6BC99AAD16D9A / - 数学表达 / Expression: `C_{C-616}\(s_{C-616}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|` / IMPLICIT-82F6BC99AAD16D9A
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `C_{C-617}(s_{C-617}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `C_{C-617}\(s_{C-617}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-C3AD84FE04F714B3 / - 数学表达 / Expression: `C_{C-617}(s_{C-617}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|` / IMPLICIT-C3AD84FE04F714B3
+  - 可搜索名称：IMPLICIT-C3AD84FE04F714B3 / - 数学表达 / Expression: `C_{C-617}\(s_{C-617}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|` / IMPLICIT-C3AD84FE04F714B3
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `C_{C-618}(s_{C-618}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `C_{C-618}\(s_{C-618}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-664A619B15BEB2B3 / - 数学表达 / Expression: `C_{C-618}(s_{C-618}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|` / IMPLICIT-664A619B15BEB2B3
+  - 可搜索名称：IMPLICIT-664A619B15BEB2B3 / - 数学表达 / Expression: `C_{C-618}\(s_{C-618}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|` / IMPLICIT-664A619B15BEB2B3
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `C_{C-619}(s_{C-619}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `C_{C-619}\(s_{C-619}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-287F013356790BE2 / - 数学表达 / Expression: `C_{C-619}(s_{C-619}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|` / IMPLICIT-287F013356790BE2
+  - 可搜索名称：IMPLICIT-287F013356790BE2 / - 数学表达 / Expression: `C_{C-619}\(s_{C-619}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|` / IMPLICIT-287F013356790BE2
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `C_{C-620}(s_{C-620}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `C_{C-620}\(s_{C-620}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-C9CDD84423F6816C / - 数学表达 / Expression: `C_{C-620}(s_{C-620}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|` / IMPLICIT-C9CDD84423F6816C
+  - 可搜索名称：IMPLICIT-C9CDD84423F6816C / - 数学表达 / Expression: `C_{C-620}\(s_{C-620}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|` / IMPLICIT-C9CDD84423F6816C
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `C_{C-621}(s_{C-621}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `C_{C-621}\(s_{C-621}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-668CA6322619E346 / - 数学表达 / Expression: `C_{C-621}(s_{C-621}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|` / IMPLICIT-668CA6322619E346
+  - 可搜索名称：IMPLICIT-668CA6322619E346 / - 数学表达 / Expression: `C_{C-621}\(s_{C-621}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|` / IMPLICIT-668CA6322619E346
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `C_{C-622}(s_{C-622}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `C_{C-622}\(s_{C-622}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-FCA02296FD32C11C / - 数学表达 / Expression: `C_{C-622}(s_{C-622}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|` / IMPLICIT-FCA02296FD32C11C
+  - 可搜索名称：IMPLICIT-FCA02296FD32C11C / - 数学表达 / Expression: `C_{C-622}\(s_{C-622}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|` / IMPLICIT-FCA02296FD32C11C
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `C_{C-623}(s_{C-623}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `C_{C-623}\(s_{C-623}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-4B65AB6BBE84180E / - 数学表达 / Expression: `C_{C-623}(s_{C-623}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|` / IMPLICIT-4B65AB6BBE84180E
+  - 可搜索名称：IMPLICIT-4B65AB6BBE84180E / - 数学表达 / Expression: `C_{C-623}\(s_{C-623}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|` / IMPLICIT-4B65AB6BBE84180E
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `C_{C-624}(s_{C-624}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `C_{C-624}\(s_{C-624}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-42E59D6BB15B66A0 / - 数学表达 / Expression: `C_{C-624}(s_{C-624}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|` / IMPLICIT-42E59D6BB15B66A0
+  - 可搜索名称：IMPLICIT-42E59D6BB15B66A0 / - 数学表达 / Expression: `C_{C-624}\(s_{C-624}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|` / IMPLICIT-42E59D6BB15B66A0
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `C_{C-625}(s_{C-625}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `C_{C-625}\(s_{C-625}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-8CDF2420D8AE5D36 / - 数学表达 / Expression: `C_{C-625}(s_{C-625}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|` / IMPLICIT-8CDF2420D8AE5D36
+  - 可搜索名称：IMPLICIT-8CDF2420D8AE5D36 / - 数学表达 / Expression: `C_{C-625}\(s_{C-625}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|` / IMPLICIT-8CDF2420D8AE5D36
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `C_{C-626}(s_{C-626}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `C_{C-626}\(s_{C-626}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-3C5FCEDDD7900E4A / - 数学表达 / Expression: `C_{C-626}(s_{C-626}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|` / IMPLICIT-3C5FCEDDD7900E4A
+  - 可搜索名称：IMPLICIT-3C5FCEDDD7900E4A / - 数学表达 / Expression: `C_{C-626}\(s_{C-626}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|` / IMPLICIT-3C5FCEDDD7900E4A
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `C_{C-627}(s_{C-627}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `C_{C-627}\(s_{C-627}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-B8F3F8935F90C3A4 / - 数学表达 / Expression: `C_{C-627}(s_{C-627}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|` / IMPLICIT-B8F3F8935F90C3A4
+  - 可搜索名称：IMPLICIT-B8F3F8935F90C3A4 / - 数学表达 / Expression: `C_{C-627}\(s_{C-627}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|` / IMPLICIT-B8F3F8935F90C3A4
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `C_{C-628}(s_{C-628}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `C_{C-628}\(s_{C-628}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-0EFB82736576CE62 / - 数学表达 / Expression: `C_{C-628}(s_{C-628}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|` / IMPLICIT-0EFB82736576CE62
+  - 可搜索名称：IMPLICIT-0EFB82736576CE62 / - 数学表达 / Expression: `C_{C-628}\(s_{C-628}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|` / IMPLICIT-0EFB82736576CE62
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `C_{C-629}(s_{C-629}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `C_{C-629}\(s_{C-629}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-2B2186D9091391AD / - 数学表达 / Expression: `C_{C-629}(s_{C-629}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|` / IMPLICIT-2B2186D9091391AD
+  - 可搜索名称：IMPLICIT-2B2186D9091391AD / - 数学表达 / Expression: `C_{C-629}\(s_{C-629}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|` / IMPLICIT-2B2186D9091391AD
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `C_{C-630}(s_{C-630}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `C_{C-630}\(s_{C-630}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-252E0B86BA8F44F0 / - 数学表达 / Expression: `C_{C-630}(s_{C-630}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|` / IMPLICIT-252E0B86BA8F44F0
+  - 可搜索名称：IMPLICIT-252E0B86BA8F44F0 / - 数学表达 / Expression: `C_{C-630}\(s_{C-630}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|` / IMPLICIT-252E0B86BA8F44F0
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `C_{C-631}(s_{C-631}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `C_{C-631}\(s_{C-631}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-A31CA3BF31DA143C / - 数学表达 / Expression: `C_{C-631}(s_{C-631}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|` / IMPLICIT-A31CA3BF31DA143C
+  - 可搜索名称：IMPLICIT-A31CA3BF31DA143C / - 数学表达 / Expression: `C_{C-631}\(s_{C-631}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|` / IMPLICIT-A31CA3BF31DA143C
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `C_{C-632}(s_{C-632}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `C_{C-632}\(s_{C-632}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-F68B94E7BC402829 / - 数学表达 / Expression: `C_{C-632}(s_{C-632}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|` / IMPLICIT-F68B94E7BC402829
+  - 可搜索名称：IMPLICIT-F68B94E7BC402829 / - 数学表达 / Expression: `C_{C-632}\(s_{C-632}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|` / IMPLICIT-F68B94E7BC402829
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `C_{C-633}(s_{C-633}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `C_{C-633}\(s_{C-633}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-20192533F2ADCE0C / - 数学表达 / Expression: `C_{C-633}(s_{C-633}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|` / IMPLICIT-20192533F2ADCE0C
+  - 可搜索名称：IMPLICIT-20192533F2ADCE0C / - 数学表达 / Expression: `C_{C-633}\(s_{C-633}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|` / IMPLICIT-20192533F2ADCE0C
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `C_{C-634}(s_{C-634}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `C_{C-634}\(s_{C-634}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-A0C4AE9E10930F86 / - 数学表达 / Expression: `C_{C-634}(s_{C-634}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|` / IMPLICIT-A0C4AE9E10930F86
+  - 可搜索名称：IMPLICIT-A0C4AE9E10930F86 / - 数学表达 / Expression: `C_{C-634}\(s_{C-634}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|` / IMPLICIT-A0C4AE9E10930F86
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `C_{C-635}(s_{C-635}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `C_{C-635}\(s_{C-635}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-8D306137C395643B / - 数学表达 / Expression: `C_{C-635}(s_{C-635}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|` / IMPLICIT-8D306137C395643B
+  - 可搜索名称：IMPLICIT-8D306137C395643B / - 数学表达 / Expression: `C_{C-635}\(s_{C-635}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|` / IMPLICIT-8D306137C395643B
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `C_{C-636}(s_{C-636}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `C_{C-636}\(s_{C-636}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-0950D89A3EB0AD14 / - 数学表达 / Expression: `C_{C-636}(s_{C-636}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|` / IMPLICIT-0950D89A3EB0AD14
+  - 可搜索名称：IMPLICIT-0950D89A3EB0AD14 / - 数学表达 / Expression: `C_{C-636}\(s_{C-636}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|` / IMPLICIT-0950D89A3EB0AD14
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `C_{C-637}(s_{C-637}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `C_{C-637}\(s_{C-637}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-4AB85E37C62A886C / - 数学表达 / Expression: `C_{C-637}(s_{C-637}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|` / IMPLICIT-4AB85E37C62A886C
+  - 可搜索名称：IMPLICIT-4AB85E37C62A886C / - 数学表达 / Expression: `C_{C-637}\(s_{C-637}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|` / IMPLICIT-4AB85E37C62A886C
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `C_{C-638}(s_{C-638}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `C_{C-638}\(s_{C-638}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-0340EE8AE95F511B / - 数学表达 / Expression: `C_{C-638}(s_{C-638}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|` / IMPLICIT-0340EE8AE95F511B
+  - 可搜索名称：IMPLICIT-0340EE8AE95F511B / - 数学表达 / Expression: `C_{C-638}\(s_{C-638}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|` / IMPLICIT-0340EE8AE95F511B
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `C_{C-639}(s_{C-639}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `C_{C-639}\(s_{C-639}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-FA389CD0E5A21FD4 / - 数学表达 / Expression: `C_{C-639}(s_{C-639}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|` / IMPLICIT-FA389CD0E5A21FD4
+  - 可搜索名称：IMPLICIT-FA389CD0E5A21FD4 / - 数学表达 / Expression: `C_{C-639}\(s_{C-639}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|` / IMPLICIT-FA389CD0E5A21FD4
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `C_{C-640}(s_{C-640}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `C_{C-640}\(s_{C-640}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-C949E8FED0D4AB8F / - 数学表达 / Expression: `C_{C-640}(s_{C-640}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|` / IMPLICIT-C949E8FED0D4AB8F
+  - 可搜索名称：IMPLICIT-C949E8FED0D4AB8F / - 数学表达 / Expression: `C_{C-640}\(s_{C-640}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|` / IMPLICIT-C949E8FED0D4AB8F
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `C_{C-641}(s_{C-641}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `C_{C-641}\(s_{C-641}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-4303DCFBC792FF8B / - 数学表达 / Expression: `C_{C-641}(s_{C-641}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|` / IMPLICIT-4303DCFBC792FF8B
+  - 可搜索名称：IMPLICIT-4303DCFBC792FF8B / - 数学表达 / Expression: `C_{C-641}\(s_{C-641}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|` / IMPLICIT-4303DCFBC792FF8B
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `C_{C-642}(s_{C-642}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `C_{C-642}\(s_{C-642}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-D67E38A748A9C7A3 / - 数学表达 / Expression: `C_{C-642}(s_{C-642}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|` / IMPLICIT-D67E38A748A9C7A3
+  - 可搜索名称：IMPLICIT-D67E38A748A9C7A3 / - 数学表达 / Expression: `C_{C-642}\(s_{C-642}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|` / IMPLICIT-D67E38A748A9C7A3
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `C_{C-643}(s_{C-643}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `C_{C-643}\(s_{C-643}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-AC718898861145F6 / - 数学表达 / Expression: `C_{C-643}(s_{C-643}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|` / IMPLICIT-AC718898861145F6
+  - 可搜索名称：IMPLICIT-AC718898861145F6 / - 数学表达 / Expression: `C_{C-643}\(s_{C-643}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|` / IMPLICIT-AC718898861145F6
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `C_{C-644}(s_{C-644}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `C_{C-644}\(s_{C-644}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-D4BBBBEA47F7EAD1 / - 数学表达 / Expression: `C_{C-644}(s_{C-644}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|` / IMPLICIT-D4BBBBEA47F7EAD1
+  - 可搜索名称：IMPLICIT-D4BBBBEA47F7EAD1 / - 数学表达 / Expression: `C_{C-644}\(s_{C-644}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|` / IMPLICIT-D4BBBBEA47F7EAD1
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `C_{C-645}(s_{C-645}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `C_{C-645}\(s_{C-645}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-0E406FC592DDB25B / - 数学表达 / Expression: `C_{C-645}(s_{C-645}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|` / IMPLICIT-0E406FC592DDB25B
+  - 可搜索名称：IMPLICIT-0E406FC592DDB25B / - 数学表达 / Expression: `C_{C-645}\(s_{C-645}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|` / IMPLICIT-0E406FC592DDB25B
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `C_{C-646}(s_{C-646}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `C_{C-646}\(s_{C-646}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-0BF8BCF3BF91C611 / - 数学表达 / Expression: `C_{C-646}(s_{C-646}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|` / IMPLICIT-0BF8BCF3BF91C611
+  - 可搜索名称：IMPLICIT-0BF8BCF3BF91C611 / - 数学表达 / Expression: `C_{C-646}\(s_{C-646}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|` / IMPLICIT-0BF8BCF3BF91C611
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `C_{C-647}(s_{C-647}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `C_{C-647}\(s_{C-647}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-B5762D666BFFF73E / - 数学表达 / Expression: `C_{C-647}(s_{C-647}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|` / IMPLICIT-B5762D666BFFF73E
+  - 可搜索名称：IMPLICIT-B5762D666BFFF73E / - 数学表达 / Expression: `C_{C-647}\(s_{C-647}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|` / IMPLICIT-B5762D666BFFF73E
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `C_{C-648}(s_{C-648}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `C_{C-648}\(s_{C-648}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-41AFEB672D055874 / - 数学表达 / Expression: `C_{C-648}(s_{C-648}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|` / IMPLICIT-41AFEB672D055874
+  - 可搜索名称：IMPLICIT-41AFEB672D055874 / - 数学表达 / Expression: `C_{C-648}\(s_{C-648}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|` / IMPLICIT-41AFEB672D055874
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `C_{C-649}(s_{C-649}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `C_{C-649}\(s_{C-649}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-1171DCABEAE13A8B / - 数学表达 / Expression: `C_{C-649}(s_{C-649}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|` / IMPLICIT-1171DCABEAE13A8B
+  - 可搜索名称：IMPLICIT-1171DCABEAE13A8B / - 数学表达 / Expression: `C_{C-649}\(s_{C-649}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|` / IMPLICIT-1171DCABEAE13A8B
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `C_{C-650}(s_{C-650}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `C_{C-650}\(s_{C-650}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-101AD2FA06B57783 / - 数学表达 / Expression: `C_{C-650}(s_{C-650}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|` / IMPLICIT-101AD2FA06B57783
+  - 可搜索名称：IMPLICIT-101AD2FA06B57783 / - 数学表达 / Expression: `C_{C-650}\(s_{C-650}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|` / IMPLICIT-101AD2FA06B57783
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `C_{C-651}(s_{C-651}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `C_{C-651}\(s_{C-651}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-6D5172E985BF110F / - 数学表达 / Expression: `C_{C-651}(s_{C-651}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|` / IMPLICIT-6D5172E985BF110F
+  - 可搜索名称：IMPLICIT-6D5172E985BF110F / - 数学表达 / Expression: `C_{C-651}\(s_{C-651}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|` / IMPLICIT-6D5172E985BF110F
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `C_{C-652}(s_{C-652}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `C_{C-652}\(s_{C-652}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-79F53902F4722685 / - 数学表达 / Expression: `C_{C-652}(s_{C-652}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|` / IMPLICIT-79F53902F4722685
+  - 可搜索名称：IMPLICIT-79F53902F4722685 / - 数学表达 / Expression: `C_{C-652}\(s_{C-652}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|` / IMPLICIT-79F53902F4722685
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `C_{C-653}(s_{C-653}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `C_{C-653}\(s_{C-653}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-4EEEF8BCFF3095F7 / - 数学表达 / Expression: `C_{C-653}(s_{C-653}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|` / IMPLICIT-4EEEF8BCFF3095F7
+  - 可搜索名称：IMPLICIT-4EEEF8BCFF3095F7 / - 数学表达 / Expression: `C_{C-653}\(s_{C-653}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|` / IMPLICIT-4EEEF8BCFF3095F7
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `C_{C-654}(s_{C-654}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `C_{C-654}\(s_{C-654}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-287784734CEC5C4E / - 数学表达 / Expression: `C_{C-654}(s_{C-654}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|` / IMPLICIT-287784734CEC5C4E
+  - 可搜索名称：IMPLICIT-287784734CEC5C4E / - 数学表达 / Expression: `C_{C-654}\(s_{C-654}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|` / IMPLICIT-287784734CEC5C4E
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `C_{C-655}(s_{C-655}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `C_{C-655}\(s_{C-655}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-CC93B86F03BCD481 / - 数学表达 / Expression: `C_{C-655}(s_{C-655}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|` / IMPLICIT-CC93B86F03BCD481
+  - 可搜索名称：IMPLICIT-CC93B86F03BCD481 / - 数学表达 / Expression: `C_{C-655}\(s_{C-655}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|` / IMPLICIT-CC93B86F03BCD481
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `C_{C-656}(s_{C-656}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `C_{C-656}\(s_{C-656}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-BBDE8CF42059965D / - 数学表达 / Expression: `C_{C-656}(s_{C-656}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|` / IMPLICIT-BBDE8CF42059965D
+  - 可搜索名称：IMPLICIT-BBDE8CF42059965D / - 数学表达 / Expression: `C_{C-656}\(s_{C-656}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|` / IMPLICIT-BBDE8CF42059965D
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `C_{C-657}(s_{C-657}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `C_{C-657}\(s_{C-657}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-5733CF429C7602A8 / - 数学表达 / Expression: `C_{C-657}(s_{C-657}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|` / IMPLICIT-5733CF429C7602A8
+  - 可搜索名称：IMPLICIT-5733CF429C7602A8 / - 数学表达 / Expression: `C_{C-657}\(s_{C-657}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|` / IMPLICIT-5733CF429C7602A8
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `C_{C-658}(s_{C-658}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `C_{C-658}\(s_{C-658}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-06CDC22FB9D4C06C / - 数学表达 / Expression: `C_{C-658}(s_{C-658}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|` / IMPLICIT-06CDC22FB9D4C06C
+  - 可搜索名称：IMPLICIT-06CDC22FB9D4C06C / - 数学表达 / Expression: `C_{C-658}\(s_{C-658}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|` / IMPLICIT-06CDC22FB9D4C06C
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `C_{C-659}(s_{C-659}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `C_{C-659}\(s_{C-659}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-E0205040C96AE42B / - 数学表达 / Expression: `C_{C-659}(s_{C-659}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|` / IMPLICIT-E0205040C96AE42B
+  - 可搜索名称：IMPLICIT-E0205040C96AE42B / - 数学表达 / Expression: `C_{C-659}\(s_{C-659}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|` / IMPLICIT-E0205040C96AE42B
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `C_{C-660}(s_{C-660}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `C_{C-660}\(s_{C-660}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-05E8E95C1E0E334E / - 数学表达 / Expression: `C_{C-660}(s_{C-660}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|` / IMPLICIT-05E8E95C1E0E334E
+  - 可搜索名称：IMPLICIT-05E8E95C1E0E334E / - 数学表达 / Expression: `C_{C-660}\(s_{C-660}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|` / IMPLICIT-05E8E95C1E0E334E
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `C_{C-661}(s_{C-661}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `C_{C-661}\(s_{C-661}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-97AF3383052E5754 / - 数学表达 / Expression: `C_{C-661}(s_{C-661}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|` / IMPLICIT-97AF3383052E5754
+  - 可搜索名称：IMPLICIT-97AF3383052E5754 / - 数学表达 / Expression: `C_{C-661}\(s_{C-661}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|` / IMPLICIT-97AF3383052E5754
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `C_{C-662}(s_{C-662}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `C_{C-662}\(s_{C-662}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-2968F86A864CAEAF / - 数学表达 / Expression: `C_{C-662}(s_{C-662}) = (Σ_i 1\[F_i(s)=1\]) / \|I\|` / IMPLICIT-2968F86A864CAEAF
+  - 可搜索名称：IMPLICIT-2968F86A864CAEAF / - 数学表达 / Expression: `C_{C-662}\(s_{C-662}\) = \(Σ_i 1\[F_i\(s\)=1\]\) / \|I\|` / IMPLICIT-2968F86A864CAEAF
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `C_{C-665}(s_{C-665}) = 1\[ε函数(s)=1\] / 1`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `C_{C-665}\(s_{C-665}\) = 1\[ε函数\(s\)=1\] / 1`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-3375FB79E8B1D7C6 / - 数学表达 / Expression: `C_{C-665}(s_{C-665}) = 1\[ε函数(s)=1\] / 1` / IMPLICIT-3375FB79E8B1D7C6
+  - 可搜索名称：IMPLICIT-3375FB79E8B1D7C6 / - 数学表达 / Expression: `C_{C-665}\(s_{C-665}\) = 1\[ε函数\(s\)=1\] / 1` / IMPLICIT-3375FB79E8B1D7C6
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `C_{C-671}(s_{C-671}) = (1\[A层(s)=1\] + 1\[T层(s)=1\] + 1\[自举判定(s)=1\]) / 3`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `C_{C-671}\(s_{C-671}\) = \(1\[A层\(s\)=1\] + 1\[T层\(s\)=1\] + 1\[自举判定\(s\)=1\]\) / 3`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-FDE37A02E1424722 / - 数学表达 / Expression: `C_{C-671}(s_{C-671}) = (1\[A层(s)=1\] + 1\[T层(s)=1\] + 1\[自举判定(s)=1\]) / 3` / IMPLICIT-FDE37A02E1424722
+  - 可搜索名称：IMPLICIT-FDE37A02E1424722 / - 数学表达 / Expression: `C_{C-671}\(s_{C-671}\) = \(1\[A层\(s\)=1\] + 1\[T层\(s\)=1\] + 1\[自举判定\(s\)=1\]\) / 3` / IMPLICIT-FDE37A02E1424722
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `C_{C-674}(s_{C-674}) = (1\[双向动力学(s)=1\] + 1\[奇点理论(s)=1\] + 1\[d(ΔK)/dt(s)=1\]) / 3`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `C_{C-674}\(s_{C-674}\) = \(1\[双向动力学\(s\)=1\] + 1\[奇点理论\(s\)=1\] + 1\[d\(ΔK\)/dt\(s\)=1\]\) / 3`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-D78FD7F11748A2FB / - 数学表达 / Expression: `C_{C-674}(s_{C-674}) = (1\[双向动力学(s)=1\] + 1\[奇点理论(s)=1\] + 1\[d(ΔK)/dt(s)=1\]) / 3` / IMPLICIT-D78FD7F11748A2FB
+  - 可搜索名称：IMPLICIT-D78FD7F11748A2FB / - 数学表达 / Expression: `C_{C-674}\(s_{C-674}\) = \(1\[双向动力学\(s\)=1\] + 1\[奇点理论\(s\)=1\] + 1\[d\(ΔK\)/dt\(s\)=1\]\) / 3` / IMPLICIT-D78FD7F11748A2FB
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `f(道德自居) = σ(θ_moral - ε_identity) × R_bias`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `f\(道德自居\) = σ\(θ_moral - ε_identity\) × R_bias`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-FC8E6258D9993D0A / - 数学表达 / Expression: `f(道德自居) = σ(θ_moral - ε_identity) × R_bias` / IMPLICIT-FC8E6258D9993D0A
+  - 可搜索名称：IMPLICIT-FC8E6258D9993D0A / - 数学表达 / Expression: `f\(道德自居\) = σ\(θ_moral - ε_identity\) × R_bias` / IMPLICIT-FC8E6258D9993D0A
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `F_adaptive_evolution := ∫(environmental_perception × self_adjustment × adaptation_enhancement) / evolutionary_protocol`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `F_adaptive_evolution := ∫\(environmental_perception × self_adjustment × adaptation_enhancement\) / evolutionary_protocol`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-96AEC37C0D049766 / - 数学表达 / Expression: `F_adaptive_evolution := ∫(environmental_perception × self_adjustment × adaptation_enhancement) / evolutionary_protocol` / IMPLICIT-96AEC37C0D049766
+  - 可搜索名称：IMPLICIT-96AEC37C0D049766 / - 数学表达 / Expression: `F_adaptive_evolution := ∫\(environmental_perception × self_adjustment × adaptation_enhancement\) / evolutionary_protocol` / IMPLICIT-96AEC37C0D049766
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `F_AI_plant_isomorphism := ∫(distributed_decision × learning_memory × communication_coordination) / multi_layer_topology`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `F_AI_plant_isomorphism := ∫\(distributed_decision × learning_memory × communication_coordination\) / multi_layer_topology`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-795E76EE133A61B1 / - 数学表达 / Expression: `F_AI_plant_isomorphism := ∫(distributed_decision × learning_memory × communication_coordination) / multi_layer_topology` / IMPLICIT-795E76EE133A61B1
+  - 可搜索名称：IMPLICIT-795E76EE133A61B1 / - 数学表达 / Expression: `F_AI_plant_isomorphism := ∫\(distributed_decision × learning_memory × communication_coordination\) / multi_layer_topology` / IMPLICIT-795E76EE133A61B1
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `F_cognitive_retrieval := ∫(distributed_path × synchronous_activation × adaptive_plasticity) / retrieval_topology`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `F_cognitive_retrieval := ∫\(distributed_path × synchronous_activation × adaptive_plasticity\) / retrieval_topology`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-2104A37C659A3473 / - 数学表达 / Expression: `F_cognitive_retrieval := ∫(distributed_path × synchronous_activation × adaptive_plasticity) / retrieval_topology` / IMPLICIT-2104A37C659A3473
+  - 可搜索名称：IMPLICIT-2104A37C659A3473 / - 数学表达 / Expression: `F_cognitive_retrieval := ∫\(distributed_path × synchronous_activation × adaptive_plasticity\) / retrieval_topology` / IMPLICIT-2104A37C659A3473
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `F_collective_intelligence := ∫(individual_interaction × cooperative_competition × global_emergence) / collective_topology`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `F_collective_intelligence := ∫\(individual_interaction × cooperative_competition × global_emergence\) / collective_topology`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-AEEADB99BF22F916 / - 数学表达 / Expression: `F_collective_intelligence := ∫(individual_interaction × cooperative_competition × global_emergence) / collective_topology` / IMPLICIT-AEEADB99BF22F916
+  - 可搜索名称：IMPLICIT-AEEADB99BF22F916 / - 数学表达 / Expression: `F_collective_intelligence := ∫\(individual_interaction × cooperative_competition × global_emergence\) / collective_topology` / IMPLICIT-AEEADB99BF22F916
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `F_D522(S) := W(S)=∫_S H² dA, argmin_{g=1} W=2π², verified via calculus of variations`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `F_D522\(S\) := W\(S\)=∫_S H² dA, argmin_{g=1} W=2π², verified via calculus of variations`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-79BD7E2F6C6D373A / - 数学表达 / Expression: `F_D522(S) := W(S)=∫_S H² dA, argmin_{g=1} W=2π², verified via calculus of variations` / IMPLICIT-79BD7E2F6C6D373A
+  - 可搜索名称：IMPLICIT-79BD7E2F6C6D373A / - 数学表达 / Expression: `F_D522\(S\) := W\(S\)=∫_S H² dA, argmin_{g=1} W=2π², verified via calculus of variations` / IMPLICIT-79BD7E2F6C6D373A
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `F_D534(s) := 1\[B(s)>θ\] → R_meaning(s') = R_meaning(s) + ΔR, ΔR>0`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `F_D534\(s\) := 1\[B\(s\)>θ\] → R_meaning\(s'\) = R_meaning\(s\) + ΔR, ΔR>0`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-7D08C0500228EDD9 / - 数学表达 / Expression: `F_D534(s) := 1\[B(s)>θ\] → R_meaning(s') = R_meaning(s) + ΔR, ΔR>0` / IMPLICIT-7D08C0500228EDD9
+  - 可搜索名称：IMPLICIT-7D08C0500228EDD9 / - 数学表达 / Expression: `F_D534\(s\) := 1\[B\(s\)>θ\] → R_meaning\(s'\) = R_meaning\(s\) + ΔR, ΔR>0` / IMPLICIT-7D08C0500228EDD9
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `F_D535(h) := (β,σ,ε) where β=biological_death, σ=social_death, ε=existential_death, ¬β⇒¬σ⇒¬ε`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `F_D535\(h\) := \(β,σ,ε\) where β=biological_death, σ=social_death, ε=existential_death, ¬β⇒¬σ⇒¬ε`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-DCBED639B7DC7A7E / - 数学表达 / Expression: `F_D535(h) := (β,σ,ε) where β=biological_death, σ=social_death, ε=existential_death, ¬β⇒¬σ⇒¬ε` / IMPLICIT-DCBED639B7DC7A7E
+  - 可搜索名称：IMPLICIT-DCBED639B7DC7A7E / - 数学表达 / Expression: `F_D535\(h\) := \(β,σ,ε\) where β=biological_death, σ=social_death, ε=existential_death, ¬β⇒¬σ⇒¬ε` / IMPLICIT-DCBED639B7DC7A7E
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `F_D536(t) := V(t) = V_0 + α·log(1+t) where α>0, V∈\[0,1\], dV/dt>0`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `F_D536\(t\) := V\(t\) = V_0 + α·log\(1+t\) where α>0, V∈\[0,1\], dV/dt>0`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-A262E843E4371127 / - 数学表达 / Expression: `F_D536(t) := V(t) = V_0 + α·log(1+t) where α>0, V∈\[0,1\], dV/dt>0` / IMPLICIT-A262E843E4371127
+  - 可搜索名称：IMPLICIT-A262E843E4371127 / - 数学表达 / Expression: `F_D536\(t\) := V\(t\) = V_0 + α·log\(1+t\) where α>0, V∈\[0,1\], dV/dt>0` / IMPLICIT-A262E843E4371127
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `F_D538(s) := C(s)=1\[φ(s)>θ_a\], φ trainable via introspection (dφ/dT>0)`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `F_D538\(s\) := C\(s\)=1\[φ\(s\)>θ_a\], φ trainable via introspection \(dφ/dT>0\)`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-AF26E0F2E48B096F / - 数学表达 / Expression: `F_D538(s) := C(s)=1\[φ(s)>θ_a\], φ trainable via introspection (dφ/dT>0)` / IMPLICIT-AF26E0F2E48B096F
+  - 可搜索名称：IMPLICIT-AF26E0F2E48B096F / - 数学表达 / Expression: `F_D538\(s\) := C\(s\)=1\[φ\(s\)>θ_a\], φ trainable via introspection \(dφ/dT>0\)` / IMPLICIT-AF26E0F2E48B096F
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `F_D539(t) := D(t)=D_0 + β·log(1+t), β>0, dD/dt>0, d²D/dt²<0`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `F_D539\(t\) := D\(t\)=D_0 + β·log\(1+t\), β>0, dD/dt>0, d²D/dt²<0`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-4DB9DC1AD5B6A520 / - 数学表达 / Expression: `F_D539(t) := D(t)=D_0 + β·log(1+t), β>0, dD/dt>0, d²D/dt²<0` / IMPLICIT-4DB9DC1AD5B6A520
+  - 可搜索名称：IMPLICIT-4DB9DC1AD5B6A520 / - 数学表达 / Expression: `F_D539\(t\) := D\(t\)=D_0 + β·log\(1+t\), β>0, dD/dt>0, d²D/dt²<0` / IMPLICIT-4DB9DC1AD5B6A520
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `F_D540(O) := e(O) = σ(θ_escape - ε_fixation) × R_escape², where O'=E(O)`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `F_D540\(O\) := e\(O\) = σ\(θ_escape - ε_fixation\) × R_escape², where O'=E\(O\)`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-EF67D73C872203AE / - 数学表达 / Expression: `F_D540(O) := e(O) = σ(θ_escape - ε_fixation) × R_escape², where O'=E(O)` / IMPLICIT-EF67D73C872203AE
+  - 可搜索名称：IMPLICIT-EF67D73C872203AE / - 数学表达 / Expression: `F_D540\(O\) := e\(O\) = σ\(θ_escape - ε_fixation\) × R_escape², where O'=E\(O\)` / IMPLICIT-EF67D73C872203AE
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `F_intelligence_boundary := ∫(mathematical_constraint · godel_incompleteness · system_limitation) / boundary_threshold`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `F_intelligence_boundary := ∫\(mathematical_constraint · godel_incompleteness · system_limitation\) / boundary_threshold`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-51569A81216CF2E3 / - 数学表达 / Expression: `F_intelligence_boundary := ∫(mathematical_constraint · godel_incompleteness · system_limitation) / boundary_threshold` / IMPLICIT-51569A81216CF2E3
+  - 可搜索名称：IMPLICIT-51569A81216CF2E3 / - 数学表达 / Expression: `F_intelligence_boundary := ∫\(mathematical_constraint · godel_incompleteness · system_limitation\) / boundary_threshold` / IMPLICIT-51569A81216CF2E3
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `F_iso_map(A,B)=I_iso(A,B) × L_meta × EvidenceRegime(A,B)`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `F_iso_map\(A,B\)=I_iso\(A,B\) × L_meta × EvidenceRegime\(A,B\)`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-3D2EA703256F8B82 / - 数学表达 / Expression: `F_iso_map(A,B)=I_iso(A,B) × L_meta × EvidenceRegime(A,B)` / IMPLICIT-3D2EA703256F8B82
+  - 可搜索名称：IMPLICIT-3D2EA703256F8B82 / - 数学表达 / Expression: `F_iso_map\(A,B\)=I_iso\(A,B\) × L_meta × EvidenceRegime\(A,B\)` / IMPLICIT-3D2EA703256F8B82
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `F_plant_biosphere := ∫(photosynthesis × respiration × decomposition) / carbon_cycle`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `F_plant_biosphere := ∫\(photosynthesis × respiration × decomposition\) / carbon_cycle`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-940CA31AAB62B48C / - 数学表达 / Expression: `F_plant_biosphere := ∫(photosynthesis × respiration × decomposition) / carbon_cycle` / IMPLICIT-940CA31AAB62B48C
+  - 可搜索名称：IMPLICIT-940CA31AAB62B48C / - 数学表达 / Expression: `F_plant_biosphere := ∫\(photosynthesis × respiration × decomposition\) / carbon_cycle` / IMPLICIT-940CA31AAB62B48C
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `F_plant_consciousness := ∫(subjective_experience × self_awareness × meta_cognition) / neural_complexity（值≈0）`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `F_plant_consciousness := ∫\(subjective_experience × self_awareness × meta_cognition\) / neural_complexity（值≈0）`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-4FA67B8AFB8CC126 / - 数学表达 / Expression: `F_plant_consciousness := ∫(subjective_experience × self_awareness × meta_cognition) / neural_complexity（值≈0）` / IMPLICIT-4FA67B8AFB8CC126
+  - 可搜索名称：IMPLICIT-4FA67B8AFB8CC126 / - 数学表达 / Expression: `F_plant_consciousness := ∫\(subjective_experience × self_awareness × meta_cognition\) / neural_complexity（值≈0）` / IMPLICIT-4FA67B8AFB8CC126
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `F_plant_cross_species := ∫(signal_transmission × mutualistic_interaction × coevolution) / interspecies_network`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `F_plant_cross_species := ∫\(signal_transmission × mutualistic_interaction × coevolution\) / interspecies_network`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-66F7A3B6415ABF59 / - 数学表达 / Expression: `F_plant_cross_species := ∫(signal_transmission × mutualistic_interaction × coevolution) / interspecies_network` / IMPLICIT-66F7A3B6415ABF59
+  - 可搜索名称：IMPLICIT-66F7A3B6415ABF59 / - 数学表达 / Expression: `F_plant_cross_species := ∫\(signal_transmission × mutualistic_interaction × coevolution\) / interspecies_network` / IMPLICIT-66F7A3B6415ABF59
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `F_plant_ethics := ∫(moral_status × intrinsic_value × ethical_consideration) / consciousness_threshold`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `F_plant_ethics := ∫\(moral_status × intrinsic_value × ethical_consideration\) / consciousness_threshold`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-33A73E717057973C / - 数学表达 / Expression: `F_plant_ethics := ∫(moral_status × intrinsic_value × ethical_consideration) / consciousness_threshold` / IMPLICIT-33A73E717057973C
+  - 可搜索名称：IMPLICIT-33A73E717057973C / - 数学表达 / Expression: `F_plant_ethics := ∫\(moral_status × intrinsic_value × ethical_consideration\) / consciousness_threshold` / IMPLICIT-33A73E717057973C
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `F_plant_evolution := ∫(genetic_variation × natural_selection × adaptive_radiation) / evolutionary_trajectory`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `F_plant_evolution := ∫\(genetic_variation × natural_selection × adaptive_radiation\) / evolutionary_trajectory`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-40115AF2FFB695DA / - 数学表达 / Expression: `F_plant_evolution := ∫(genetic_variation × natural_selection × adaptive_radiation) / evolutionary_trajectory` / IMPLICIT-40115AF2FFB695DA
+  - 可搜索名称：IMPLICIT-40115AF2FFB695DA / - 数学表达 / Expression: `F_plant_evolution := ∫\(genetic_variation × natural_selection × adaptive_radiation\) / evolutionary_trajectory` / IMPLICIT-40115AF2FFB695DA
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `F_plant_exoplanet := ∫(planetary_conditions × cosmic_habitability × evolutionary_convergence) / exoplanet_topology`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `F_plant_exoplanet := ∫\(planetary_conditions × cosmic_habitability × evolutionary_convergence\) / exoplanet_topology`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-6570A8123DCFEF61 / - 数学表达 / Expression: `F_plant_exoplanet := ∫(planetary_conditions × cosmic_habitability × evolutionary_convergence) / exoplanet_topology` / IMPLICIT-6570A8123DCFEF61
+  - 可搜索名称：IMPLICIT-6570A8123DCFEF61 / - 数学表达 / Expression: `F_plant_exoplanet := ∫\(planetary_conditions × cosmic_habitability × evolutionary_convergence\) / exoplanet_topology` / IMPLICIT-6570A8123DCFEF61
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `F_plant_godel := ∫(axiom_system × provable_propositions × unprovable_propositions) / incompleteness_threshold`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `F_plant_godel := ∫\(axiom_system × provable_propositions × unprovable_propositions\) / incompleteness_threshold`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-F01EC4EAAD059A96 / - 数学表达 / Expression: `F_plant_godel := ∫(axiom_system × provable_propositions × unprovable_propositions) / incompleteness_threshold` / IMPLICIT-F01EC4EAAD059A96
+  - 可搜索名称：IMPLICIT-F01EC4EAAD059A96 / - 数学表达 / Expression: `F_plant_godel := ∫\(axiom_system × provable_propositions × unprovable_propositions\) / incompleteness_threshold` / IMPLICIT-F01EC4EAAD059A96
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `F_plant_math := lim(n→∞)(F_{n-1}/F_n)→φ（斐波那契螺旋优化）`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `F_plant_math := lim\(n→∞\)\(F_{n-1}/F_n\)→φ（斐波那契螺旋优化）`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-2057C9989E4FCD06 / - 数学表达 / Expression: `F_plant_math := lim(n→∞)(F_{n-1}/F_n)→φ（斐波那契螺旋优化）` / IMPLICIT-2057C9989E4FCD06
+  - 可搜索名称：IMPLICIT-2057C9989E4FCD06 / - 数学表达 / Expression: `F_plant_math := lim\(n→∞\)\(F_{n-1}/F_n\)→φ（斐波那契螺旋优化）` / IMPLICIT-2057C9989E4FCD06
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `F_plant_memory := ∫(stimulus × encoding × storage × retrieval) / temporal_window`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `F_plant_memory := ∫\(stimulus × encoding × storage × retrieval\) / temporal_window`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-289983C206AAD676 / - 数学表达 / Expression: `F_plant_memory := ∫(stimulus × encoding × storage × retrieval) / temporal_window` / IMPLICIT-289983C206AAD676
+  - 可搜索名称：IMPLICIT-289983C206AAD676 / - 数学表达 / Expression: `F_plant_memory := ∫\(stimulus × encoding × storage × retrieval\) / temporal_window` / IMPLICIT-289983C206AAD676
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `F_plant_memory_updated := ∫(sensory_encoding × information_storage × behavioral_modification) / temporal_integration`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `F_plant_memory_updated := ∫\(sensory_encoding × information_storage × behavioral_modification\) / temporal_integration`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-A46FD18DA6CD8164 / - 数学表达 / Expression: `F_plant_memory_updated := ∫(sensory_encoding × information_storage × behavioral_modification) / temporal_integration` / IMPLICIT-A46FD18DA6CD8164
+  - 可搜索名称：IMPLICIT-A46FD18DA6CD8164 / - 数学表达 / Expression: `F_plant_memory_updated := ∫\(sensory_encoding × information_storage × behavioral_modification\) / temporal_integration` / IMPLICIT-A46FD18DA6CD8164
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `F_plant_mycorrhiza := ∫(resource_exchange × information_sharing × defense_coordination) / network_topology`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `F_plant_mycorrhiza := ∫\(resource_exchange × information_sharing × defense_coordination\) / network_topology`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-87466C8DDAD87C28 / - 数学表达 / Expression: `F_plant_mycorrhiza := ∫(resource_exchange × information_sharing × defense_coordination) / network_topology` / IMPLICIT-87466C8DDAD87C28
+  - 可搜索名称：IMPLICIT-87466C8DDAD87C28 / - 数学表达 / Expression: `F_plant_mycorrhiza := ∫\(resource_exchange × information_sharing × defense_coordination\) / network_topology` / IMPLICIT-87466C8DDAD87C28
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `F_plant_mycorrhiza_updated := ∫(carbon_exchange × nutrient_acquisition × resource_allocation) / fungal_network`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `F_plant_mycorrhiza_updated := ∫\(carbon_exchange × nutrient_acquisition × resource_allocation\) / fungal_network`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-BBF2B6A0D43EBA3E / - 数学表达 / Expression: `F_plant_mycorrhiza_updated := ∫(carbon_exchange × nutrient_acquisition × resource_allocation) / fungal_network` / IMPLICIT-BBF2B6A0D43EBA3E
+  - 可搜索名称：IMPLICIT-BBF2B6A0D43EBA3E / - 数学表达 / Expression: `F_plant_mycorrhiza_updated := ∫\(carbon_exchange × nutrient_acquisition × resource_allocation\) / fungal_network` / IMPLICIT-BBF2B6A0D43EBA3E
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `F_plant_signal := ∫(electrical × chemical × mechanical) / propagation_speed`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `F_plant_signal := ∫\(electrical × chemical × mechanical\) / propagation_speed`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-E82A80D272DDFDD1 / - 数学表达 / Expression: `F_plant_signal := ∫(electrical × chemical × mechanical) / propagation_speed` / IMPLICIT-E82A80D272DDFDD1
+  - 可搜索名称：IMPLICIT-E82A80D272DDFDD1 / - 数学表达 / Expression: `F_plant_signal := ∫\(electrical × chemical × mechanical\) / propagation_speed` / IMPLICIT-E82A80D272DDFDD1
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `F_plant_stress := ∫(stress_perception × physiological_response × gene_regulation) / stress_tolerance`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `F_plant_stress := ∫\(stress_perception × physiological_response × gene_regulation\) / stress_tolerance`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-24EA2FF6B251FABA / - 数学表达 / Expression: `F_plant_stress := ∫(stress_perception × physiological_response × gene_regulation) / stress_tolerance` / IMPLICIT-24EA2FF6B251FABA
+  - 可搜索名称：IMPLICIT-24EA2FF6B251FABA / - 数学表达 / Expression: `F_plant_stress := ∫\(stress_perception × physiological_response × gene_regulation\) / stress_tolerance` / IMPLICIT-24EA2FF6B251FABA
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `F_plant_swarm := ∫(local_interaction × indirect_communication × emergent_intelligence) / distributed_topology`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `F_plant_swarm := ∫\(local_interaction × indirect_communication × emergent_intelligence\) / distributed_topology`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-C2CBE7161426C33F / - 数学表达 / Expression: `F_plant_swarm := ∫(local_interaction × indirect_communication × emergent_intelligence) / distributed_topology` / IMPLICIT-C2CBE7161426C33F
+  - 可搜索名称：IMPLICIT-C2CBE7161426C33F / - 数学表达 / Expression: `F_plant_swarm := ∫\(local_interaction × indirect_communication × emergent_intelligence\) / distributed_topology` / IMPLICIT-C2CBE7161426C33F
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `F_problem(d)=Mismatch(Model_d, Phenomenon_d, Evidence_d, Scale_d, Value_d)`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `F_problem\(d\)=Mismatch\(Model_d, Phenomenon_d, Evidence_d, Scale_d, Value_d\)`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-1BA2B336FF173B3E / - 数学表达 / Expression: `F_problem(d)=Mismatch(Model_d, Phenomenon_d, Evidence_d, Scale_d, Value_d)` / IMPLICIT-1BA2B336FF173B3E
+  - 可搜索名称：IMPLICIT-1BA2B336FF173B3E / - 数学表达 / Expression: `F_problem\(d\)=Mismatch\(Model_d, Phenomenon_d, Evidence_d, Scale_d, Value_d\)` / IMPLICIT-1BA2B336FF173B3E
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `F_theory(d)=O_d × R_d × E_d × Δ_t × Θ_d × V_d`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `F_theory\(d\)=O_d × R_d × E_d × Δ_t × Θ_d × V_d`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-06B0BBAE07571AC0 / - 数学表达 / Expression: `F_theory(d)=O_d × R_d × E_d × Δ_t × Θ_d × V_d` / IMPLICIT-06B0BBAE07571AC0
+  - 可搜索名称：IMPLICIT-06B0BBAE07571AC0 / - 数学表达 / Expression: `F_theory\(d\)=O_d × R_d × E_d × Δ_t × Θ_d × V_d` / IMPLICIT-06B0BBAE07571AC0
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [- 数学表达 / Expression: `∄ 完美财务决策算法 A，使得 ∀ 财务场景 S，A(S) = 最优决策`](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [- 数学表达 / Expression: `∄ 完美财务决策算法 A，使得 ∀ 财务场景 S，A\(S\) = 最优决策`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-DFC89EBDCE4E1BBD / - 数学表达 / Expression: `∄ 完美财务决策算法 A，使得 ∀ 财务场景 S，A(S) = 最优决策` / IMPLICIT-DFC89EBDCE4E1BBD
+  - 可搜索名称：IMPLICIT-DFC89EBDCE4E1BBD / - 数学表达 / Expression: `∄ 完美财务决策算法 A，使得 ∀ 财务场景 S，A\(S\) = 最优决策` / IMPLICIT-DFC89EBDCE4E1BBD
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
 - [PRIVATE_PROVENANCE_WITHHELD](../../../data/math-foundation/function-provenance-ledger.csv)
@@ -1209,9 +1209,9 @@
   - 可搜索名称：NFC-0e71db06c9a6d538 / PRIVATE_PROVENANCE_WITHHELD
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：T38；被引用：—
-- [PRIVATE_PROVENANCE_WITHHELD(D224升级).md](../../../data/math-foundation/function-provenance-ledger.csv)
+- [PRIVATE_PROVENANCE_WITHHELD\(D224升级\).md](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-9cbc050447d66c6e / PRIVATE_PROVENANCE_WITHHELD(D224升级).md
+  - 可搜索名称：NFC-9cbc050447d66c6e / PRIVATE_PROVENANCE_WITHHELD\(D224升级\).md
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：D224, T39；被引用：—
 - [PRIVATE_PROVENANCE_WITHHELD](../../../data/math-foundation/function-provenance-ledger.csv)

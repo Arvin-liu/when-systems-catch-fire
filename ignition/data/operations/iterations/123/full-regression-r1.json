@@ -1,0 +1,136 @@
+{
+  "schema_version": "full-regression-r1",
+  "task_id": "IGNITION-20260816-123",
+  "step": "11",
+  "recorded_at": "2026-08-16T20:24:05Z",
+  "formal_main": {
+    "expected_sha": "d60ec8687fb1cc6b972e831a8f0dcd348ba0e83e",
+    "observed_sha": "d60ec8687fb1cc6b972e831a8f0dcd348ba0e83e",
+    "modified": false
+  },
+  "environment": {
+    "declared_dependency_file": "ignition/requirements-foundation.txt",
+    "declared_dependency_install": "PASS",
+    "isolation": "temporary_foundation_venv_only",
+    "sympy": "1.14.0",
+    "z3_solver": "4.16.0.0",
+    "jsonschema": "4.26.0",
+    "external_agent_install_or_upgrade": false,
+    "external_configuration_changed": false,
+    "secret_content_read": false
+  },
+  "projection_snapshot": {
+    "function_identity_cards": 5604,
+    "function_quarantine_or_pending": 4805,
+    "nonfunction_claims": 15992,
+    "nonfunction_quarantine_or_pending": 4650,
+    "human_results": 333,
+    "knowledge_experience": {
+      "cards": 404,
+      "changes": 316,
+      "layered_readings": 333,
+      "search_records": 21929,
+      "aliases": 853,
+      "reading_layers_bytes": 423962
+    },
+    "fire_seeds": {
+      "seeds": 64,
+      "content": 40,
+      "methodology": 24,
+      "source_census": 393,
+      "layered_origins": 333
+    },
+    "self_correction": {
+      "deltas": 464,
+      "rules": 10
+    }
+  },
+  "map_geometry": {
+    "map_version": "0.8.0",
+    "layout_version": "1.6.0",
+    "canvas": "1800x2470",
+    "visible_nodes": 70,
+    "visible_edges": 77,
+    "clickable_targets": 70,
+    "blank_area_reduction_vs_step00": 0.8741007194,
+    "canvas_height_reduction_vs_step00": 0.3806419258,
+    "edge_crossing_proxy": 160,
+    "max_internal_gap": 28,
+    "bottom_only_isolated_groups": []
+  },
+  "targeted_gates": {
+    "current_state_sync": "PASS",
+    "current_facts_determinism": "PASS",
+    "system_map_projection": "PASS",
+    "system_map_geometry": "PASS",
+    "system_map_geometry_fixtures": "PASS",
+    "federation_ownership_and_fixtures": "PASS",
+    "federation_routing": "PASS",
+    "agent_platform_human_surface": "PASS",
+    "human_front_door_contract_visibility": "PASS",
+    "state_changelog": "PASS",
+    "function_census_and_closure": "PASS",
+    "nonfunction_generation_and_closure": "PASS",
+    "claim_governance": "PASS",
+    "component_profiles": "PASS",
+    "human_results": "PASS",
+    "self_correction": "PASS",
+    "fire_seeds": "PASS",
+    "knowledge_experience_audit": "PASS",
+    "knowledge_experience_determinism": "PASS",
+    "agent_platform_blast_radius": "PASS",
+    "iteration_sync": "PASS",
+    "operational_memory": "PASS",
+    "epistemic_relationships": "PASS",
+    "phase_d_closeout": "PASS",
+    "phase_e_candidate": "PASS_WITH_PREEXISTING_PATH_WARNINGS",
+    "repository_path_classification": "PASS",
+    "foundation_math": "PASS",
+    "foundation_core_claims": "PASS"
+  },
+  "full_unittest_discovery": {
+    "command": "PYTHONPATH=. python3 -m unittest discover -s tests -v",
+    "runtime": "temporary_foundation_venv",
+    "status": "PASS_WITH_CLASSIFIED_RESIDUALS",
+    "tests_run": 750,
+    "failures": 4,
+    "errors": 0,
+    "skipped": 1,
+    "clean_tree_verified": false
+  },
+  "residual_classification": [
+    {
+      "id": "PROPAGATION-104-106",
+      "classification": "PREEXISTING",
+      "status": "REQUIRES_REVIEW",
+      "surface": "tools/propagation/validate_reconciliation.py",
+      "observed": "Frozen historical records 104-106 declare NO_IMPACT_JUSTIFIED while the current derived path set requires impact review.",
+      "scope_boundary": "Historical reconciliation records are not rewritten by this task; the current Step 123 receipt remains the authority for this branch projection."
+    },
+    {
+      "id": "PHASE-E-CWD-WARNINGS",
+      "classification": "PREEXISTING",
+      "status": "PASS_WITH_WARNINGS",
+      "surface": "tools/operations/validate_phase_e_candidate.py",
+      "observed": "Historical validator emits repeated ignition/data/operations/project-components.json path warnings under its legacy cwd assumptions but exits PASS.",
+      "scope_boundary": "No historical Phase E validator or claim logic is changed in Step 123."
+    },
+    {
+      "id": "CURRENT-FACTS-ORDER-DRIFT",
+      "classification": "ORDER_DEPENDENT",
+      "status": "REQUIRES_REVIEW",
+      "surface": "tests.test_current_state_sync.CurrentStateSyncTests.test_live_contract_and_presentation_receipt_pass",
+      "observed": "The isolated current-state module and post-refresh validator pass, while the bounded full discovery run observed one stale current-facts projection in suite order; no canonical source drift remained after the run.",
+      "scope_boundary": "No validator weakening or source-fingerprint bypass is introduced; Step 12 fresh-clone replay must recheck full discovery ordering and retain this residual until the ordering sensitivity is eliminated."
+    }
+  ],
+  "privacy_and_external_boundary": {
+    "formal_repository_used_as_external_live_target": false,
+    "external_invocation_repeated_in_step_11": false,
+    "raw_prompt_token_credential_private_session_or_provider_telemetry_retained": false,
+    "status": "PASS"
+  },
+  "claim_ceiling": "Full local regression, deterministic projection, bounded geometry, repository ownership and explicit residual classification only; no external truth, provider success, production readiness, Owner acceptance or epistemic acceptance is inferred.",
+  "closure_binding": "Bind the exact Step 11 commit and ls-remote SHA after final clean-tree regression; do not amend this step commit.",
+  "next_step": "12"
+}

@@ -4,35 +4,65 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
-- [def test_no_effects_warning(self):](../../../function-os-candidate/v0.2/tests/test_n3_robust.py)
+- [data/foundation/core-systems/protocol-roles.jsonl](../../../data/foundation/core-systems/protocol-roles.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：P12 / data/foundation/core-systems/protocol-roles.jsonl / P12 / P01
+  - 来源：`data/foundation/core-systems/protocol-roles.jsonl`
+  - 依赖：—；被引用：—
+- [Decision question: Which architecture surfaces constrain evidence, execution, validation, and publication?](../../../reports/atlas/maps/map-epistemic-architecture.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-c11a9a7515833ba1 / Decision question: Which architecture surfaces constrain evidence, execution, validation, and publication?
+  - 来源：`reports/atlas/maps/map-epistemic-architecture.md`
+  - 依赖：—；被引用：—
+- [def add_warning\(self, field: str, issue: str, current_value: Any = None,](../../../function-os-candidate/v0.1/function_os/n5_compile_feedback.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-75D6591BEF373D39 / def test_no_effects_warning(self): / IMPLICIT-75D6591BEF373D39
+  - 可搜索名称：IMPLICIT-57D74FF607459935 / def add_warning\(self, field: str, issue: str, current_value: Any = None, / IMPLICIT-57D74FF607459935
+  - 来源：`function-os-candidate/v0.1/function_os/n5_compile_feedback.py`
+  - 依赖：—；被引用：—
+- [def test_evidence_self_reference_warning\(self\):](../../../function-os-candidate/v0.2/tests/test_n7_robust.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-D95E70FDDDAD4C56 / def test_evidence_self_reference_warning\(self\): / IMPLICIT-D95E70FDDDAD4C56
+  - 来源：`function-os-candidate/v0.2/tests/test_n7_robust.py`
+  - 依赖：—；被引用：—
+- [def test_input_mismatch_warning\(self\):](../../../function-os-candidate/v0.2/tests/test_n7_robust.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-52EE774FC81CBD97 / def test_input_mismatch_warning\(self\): / IMPLICIT-52EE774FC81CBD97
+  - 来源：`function-os-candidate/v0.2/tests/test_n7_robust.py`
+  - 依赖：—；被引用：—
+- [def test_no_effects_warning\(self\):](../../../function-os-candidate/v0.2/tests/test_n3_robust.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-75D6591BEF373D39 / def test_no_effects_warning\(self\): / IMPLICIT-75D6591BEF373D39
   - 来源：`function-os-candidate/v0.2/tests/test_n3_robust.py`
   - 依赖：—；被引用：—
-- [def test_provenance_missing_encoder_warning(self):](../../../function-os-candidate/v0.2/tests/test_n2_robust.py)
+- [def test_provenance_missing_encoder_warning\(self\):](../../../function-os-candidate/v0.2/tests/test_n2_robust.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-BDC35E753906152B / def test_provenance_missing_encoder_warning(self): / IMPLICIT-BDC35E753906152B
+  - 可搜索名称：IMPLICIT-BDC35E753906152B / def test_provenance_missing_encoder_warning\(self\): / IMPLICIT-BDC35E753906152B
   - 来源：`function-os-candidate/v0.2/tests/test_n2_robust.py`
   - 依赖：—；被引用：—
-- [def test_trace_artifact_inconsistency_warning(self):](../../../function-os-candidate/v0.2/tests/test_n7_robust.py)
+- [def test_trace_artifact_inconsistency_warning\(self\):](../../../function-os-candidate/v0.2/tests/test_n7_robust.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-B0A2512C096ACF58 / def test_trace_artifact_inconsistency_warning(self): / IMPLICIT-B0A2512C096ACF58
+  - 可搜索名称：IMPLICIT-B0A2512C096ACF58 / def test_trace_artifact_inconsistency_warning\(self\): / IMPLICIT-B0A2512C096ACF58
   - 来源：`function-os-candidate/v0.2/tests/test_n7_robust.py`
   - 依赖：—；被引用：—
-- [def test_trace_spec_inconsistency_warning(self):](../../../function-os-candidate/v0.2/tests/test_n7_robust.py)
+- [def test_trace_spec_inconsistency_warning\(self\):](../../../function-os-candidate/v0.2/tests/test_n7_robust.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-FAE91030CAE07F24 / def test_trace_spec_inconsistency_warning(self): / IMPLICIT-FAE91030CAE07F24
+  - 可搜索名称：IMPLICIT-FAE91030CAE07F24 / def test_trace_spec_inconsistency_warning\(self\): / IMPLICIT-FAE91030CAE07F24
   - 来源：`function-os-candidate/v0.2/tests/test_n7_robust.py`
   - 依赖：—；被引用：—
-- [def warn(msg):](../../../data/external-research/121A-night-recovery/121A-validator.py)
+- [def warn\(msg\):](../../../data/external-research/121A-night-recovery/121A-validator.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-D2F446133AFDEA63 / def warn(msg): / IMPLICIT-D2F446133AFDEA63
+  - 可搜索名称：IMPLICIT-D2F446133AFDEA63 / def warn\(msg\): / IMPLICIT-D2F446133AFDEA63
   - 来源：`data/external-research/121A-night-recovery/121A-validator.py`
   - 依赖：—；被引用：—
 - [Defined interventions, outcomes, time ordering, comparison, confounding, and identification conditions are necessary for](../../../reports/external-research/pointfire-getnote-external-verification-r1-20260813.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-a61a773e0bc45a3d / Defined interventions, outcomes, time ordering, comparison, confounding, and identification conditions are necessary for
   - 来源：`reports/external-research/pointfire-getnote-external-verification-r1-20260813.jsonl`
+  - 依赖：—；被引用：—
+- [delta: aligned the current Human/AI, Architecture, Federation, Results and system-map maintenance surfaces to `CURRENT_S](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-6dcdd1209b9052c9 / delta: aligned the current Human/AI, Architecture, Federation, Results and system-map maintenance surfaces to `CURRENT_S
+  - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
 - [delta: 从知识治理系统抽出领域无关 Generic Kernel 与 Agent Runtime R0，建立 `Observe → Frame → Plan → Authorize → Act → Validate → Remembe](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -114,9 +144,9 @@
   - 可搜索名称：NFC-85b2ee81a3a79e98 / Does the current repository already contain a complete multiscale causal fabric?
   - 来源：`reports/architecture/121Q21R-causal-asset-audit.md`
   - 依赖：—；被引用：—
-- [DOI verification**: Crossref API (13 DOIs checked, 11 verified)](../../../reports/external-research/120-function-paradigm-atlas-report.md)
+- [DOI verification**: Crossref API \(13 DOIs checked, 11 verified\)](../../../reports/external-research/120-function-paradigm-atlas-report.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-7ac8b84e5fc87158 / DOI verification**: Crossref API (13 DOIs checked, 11 verified)
+  - 可搜索名称：NFC-7ac8b84e5fc87158 / DOI verification**: Crossref API \(13 DOIs checked, 11 verified\)
   - 来源：`reports/external-research/120-function-paradigm-atlas-report.md`
   - 依赖：—；被引用：—
 - [Draft Pages 只构建和检查 artifact，不部署生产。精确 candidate HEAD、Foundation、Function OS、Pages artifact 中 `system-map.html`／SVG 以及 111](../../../reports/operations/121Q31-interactive-system-map-and-writing-source-pool-audit.md)
@@ -124,14 +154,14 @@
   - 可搜索名称：NFC-f98f08c5197613b0 / Draft Pages 只构建和检查 artifact，不部署生产。精确 candidate HEAD、Foundation、Function OS、Pages artifact 中 `system-map.html`／SVG 以及 111
   - 来源：`reports/operations/121Q31-interactive-system-map-and-writing-source-pool-audit.md`
   - 依赖：—；被引用：—
-- [E1 规范性审核 - 线性演化协议 (Linear-Evolution Protocol)](../../ASSET-CARDS.md#asset-hr-8f6026df1ef643fe)
+- [E1 规范性审核 - 线性演化协议 \(Linear-Evolution Protocol\)](../../ASSET-CARDS.md#asset-hr-8f6026df1ef643fe)
   - 类型/状态：`RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
-  - 可搜索名称：E1 规范性审核 - 线性演化协议 (Linear-Evolution Protocol) / E1
+  - 可搜索名称：E1 规范性审核 - 线性演化协议 \(Linear-Evolution Protocol\) / E1
   - 来源：`docs/governance/meta-protocol-reviews/protocols/E1.md`
   - 依赖：—；被引用：—
-- [E2 规范性审核 - 非线性演化协议 (Nonlinear-Evolution Protocol)](../../ASSET-CARDS.md#asset-hr-4910d221a74d1112)
+- [E2 规范性审核 - 非线性演化协议 \(Nonlinear-Evolution Protocol\)](../../ASSET-CARDS.md#asset-hr-4910d221a74d1112)
   - 类型/状态：`RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
-  - 可搜索名称：E2 规范性审核 - 非线性演化协议 (Nonlinear-Evolution Protocol) / E2
+  - 可搜索名称：E2 规范性审核 - 非线性演化协议 \(Nonlinear-Evolution Protocol\) / E2
   - 来源：`docs/governance/meta-protocol-reviews/protocols/E2.md`
   - 依赖：—；被引用：—
 - [E3. 高执行力是否普遍导致世界模型窄化（需发展心理学/认知科学）。](../../../outputs/collisions/20260711-disobedience-subjectivity/source-layer-map.md)
@@ -139,9 +169,9 @@
   - 可搜索名称：NFC-a4bd0df439f09340 / E3. 高执行力是否普遍导致世界模型窄化（需发展心理学/认知科学）。
   - 来源：`outputs/collisions/20260711-disobedience-subjectivity/source-layer-map.md`
   - 依赖：—；被引用：—
-- [E4 规范性审核 - 收敛演化协议 (Convergent-Evolution Protocol)](../../ASSET-CARDS.md#asset-hr-53d09798ed596327)
+- [E4 规范性审核 - 收敛演化协议 \(Convergent-Evolution Protocol\)](../../ASSET-CARDS.md#asset-hr-53d09798ed596327)
   - 类型/状态：`RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
-  - 可搜索名称：E4 规范性审核 - 收敛演化协议 (Convergent-Evolution Protocol) / E4
+  - 可搜索名称：E4 规范性审核 - 收敛演化协议 \(Convergent-Evolution Protocol\) / E4
   - 来源：`docs/governance/meta-protocol-reviews/protocols/E4.md`
   - 依赖：—；被引用：—
 - [E5. 女性群体是否普遍经历「角色覆盖主体」机制（需性别研究代表性数据）。](../../../outputs/collisions/20260711-disobedience-subjectivity/source-layer-map.md)
@@ -174,9 +204,9 @@
   - 可搜索名称：NFC-406d39cfcddcfc46 / Embedding evidence summary is multi-axis; it is not a learning score, truth score or diagnosis.
   - 来源：`data/architecture/adaptive-relational-network/real-history/embedding-summary.json`
   - 依赖：—；被引用：—
-- [EMPIRICAL_PERFORMANCE_SIMILARITY (level 7)](../../../reports/external-research/120-function-paradigm-atlas-report.md)
+- [EMPIRICAL_PERFORMANCE_SIMILARITY \(level 7\)](../../../reports/external-research/120-function-paradigm-atlas-report.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-e6cda43d1517ccb6 / EMPIRICAL_PERFORMANCE_SIMILARITY (level 7)
+  - 可搜索名称：NFC-e6cda43d1517ccb6 / EMPIRICAL_PERFORMANCE_SIMILARITY \(level 7\)
   - 来源：`reports/external-research/120-function-paradigm-atlas-report.md`
   - 依赖：—；被引用：—
 - [EMPIRICAL_PERFORMANCE_SIMILARITY is level 7, not equivalence](../../../data/external-research/120-function-paradigm-atlas/120-forbidden-wording.jsonl)
@@ -184,9 +214,9 @@
   - 可搜索名称：NFC-c256868d2c1acd80 / EMPIRICAL_PERFORMANCE_SIMILARITY is level 7, not equivalence
   - 来源：`data/external-research/120-function-paradigm-atlas/120-forbidden-wording.jsonl`
   - 依赖：—；被引用：—
-- [English: F(t) = exp(-(θ/t)^β), β_system = β₀ + γ x n_lock_avg](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [English: F\(t\) = exp\(-\(θ/t\)^β\), β_system = β₀ + γ x n_lock_avg](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-07C69331C856D3AA / English: F(t) = exp(-(θ/t)^β), β_system = β₀ + γ x n_lock_avg / IMPLICIT-07C69331C856D3AA
+  - 可搜索名称：IMPLICIT-07C69331C856D3AA / English: F\(t\) = exp\(-\(θ/t\)^β\), β_system = β₀ + γ x n_lock_avg / IMPLICIT-07C69331C856D3AA
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
 - [Entropy arrow and causal arrow are separate fields. Thermodynamic direction is not automatically a causal edge.](../../../docs/architecture/multiscale-causal-fabric.md)
@@ -309,9 +339,9 @@
   - 可搜索名称：NFC-791eb0ecfdd6abdd / external ref IDs that collide with local network/state/projection refs are rejected;
   - 来源：`reports/architecture/121Q23-adaptive-relational-network-validation.md`
   - 依赖：—；被引用：—
-- [externally). **Physical removal was deliberately NOT performed** because `GAP002-08` is referenced](../../../evidence-program/runs/IGNITION-EVIDENCE-PILOT-R1-CROSSREF-DOI-VERIFICATION/RESULT.md)
+- [externally\). **Physical removal was deliberately NOT performed** because `GAP002-08` is referenced](../../../evidence-program/runs/IGNITION-EVIDENCE-PILOT-R1-CROSSREF-DOI-VERIFICATION/RESULT.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-0484ce60d0256e8a / externally). **Physical removal was deliberately NOT performed** because `GAP002-08` is referenced
+  - 可搜索名称：NFC-0484ce60d0256e8a / externally\). **Physical removal was deliberately NOT performed** because `GAP002-08` is referenced
   - 来源：`evidence-program/runs/IGNITION-EVIDENCE-PILOT-R1-CROSSREF-DOI-VERIFICATION/RESULT.md`
   - 依赖：—；被引用：—
 - [f"{OUTPUT_DIR}/120-fulltext-evidence-cards.jsonl",](../../../data/external-research/120-function-paradigm-atlas/120-validator.py)
@@ -324,74 +354,74 @@
   - 可搜索名称：NFC-4f3424113d52987a / F3 外部输入不重发**：源自外部研究 / 外部输入的内容不随 Fork 被重新发布或主张权利（沿用 `external-input-non-republication-principle.md`）。Fork 必须继续排除这些不清权利内容。
   - 来源：`docs/governance/charter-system-r1.md`
   - 依赖：—；被引用：—
-- [F_AI_plant_isomorphism := ∫(distributed_decision × learning_memory × communication_coordination) / multi_layer_topology](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [F_AI_plant_isomorphism := ∫\(distributed_decision × learning_memory × communication_coordination\) / multi_layer_topology](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-DA70064DED427198 / F_AI_plant_isomorphism := ∫(distributed_decision × learning_memory × communication_coordination) / multi_layer_topology / IMPLICIT-DA70064DED427198 / IMPLICIT-DD62DDC9E0E0ACD5
+  - 可搜索名称：IMPLICIT-DA70064DED427198 / F_AI_plant_isomorphism := ∫\(distributed_decision × learning_memory × communication_coordination\) / multi_layer_topology / IMPLICIT-DA70064DED427198 / IMPLICIT-DD62DDC9E0E0ACD5
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [F_AI_plant_isomorphism := ∫(distributed_decision × learning_memory × communication_coordination) / multi_layer_topology](../../../data/math-foundation/function-provenance-ledger.csv)
+- [F_AI_plant_isomorphism := ∫\(distributed_decision × learning_memory × communication_coordination\) / multi_layer_topology](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-DD62DDC9E0E0ACD5 / F_AI_plant_isomorphism := ∫(distributed_decision × learning_memory × communication_coordination) / multi_layer_topology / IMPLICIT-DD62DDC9E0E0ACD5 / IMPLICIT-DA70064DED427198
+  - 可搜索名称：IMPLICIT-DD62DDC9E0E0ACD5 / F_AI_plant_isomorphism := ∫\(distributed_decision × learning_memory × communication_coordination\) / multi_layer_topology / IMPLICIT-DD62DDC9E0E0ACD5 / IMPLICIT-DA70064DED427198
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：—；被引用：—
-- [F_AI_plant_isomorphism := ∫(distributed_decision × learning_memory × communication_coordination) / multi_layer_topology](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+- [F_AI_plant_isomorphism := ∫\(distributed_decision × learning_memory × communication_coordination\) / multi_layer_topology](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-365da012381e4e97 / F_AI_plant_isomorphism := ∫(distributed_decision × learning_memory × communication_coordination) / multi_layer_topology
+  - 可搜索名称：NFC-365da012381e4e97 / F_AI_plant_isomorphism := ∫\(distributed_decision × learning_memory × communication_coordination\) / multi_layer_topology
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [F_distributed_learning := ∫(local_information × local_adjustment × global_emergence) / learning_topology](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [F_distributed_learning := ∫\(local_information × local_adjustment × global_emergence\) / learning_topology](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-D82F66BB3272C400 / F_distributed_learning := ∫(local_information × local_adjustment × global_emergence) / learning_topology / IMPLICIT-D82F66BB3272C400 / IMPLICIT-F1C29CA5DAD294F2
+  - 可搜索名称：IMPLICIT-D82F66BB3272C400 / F_distributed_learning := ∫\(local_information × local_adjustment × global_emergence\) / learning_topology / IMPLICIT-D82F66BB3272C400 / IMPLICIT-F1C29CA5DAD294F2
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [F_distributed_learning := ∫(local_information × local_adjustment × global_emergence) / learning_topology](../../../docs/phi_meta_law.md)
+- [F_distributed_learning := ∫\(local_information × local_adjustment × global_emergence\) / learning_topology](../../../docs/phi_meta_law.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-F1C29CA5DAD294F2 / F_distributed_learning := ∫(local_information × local_adjustment × global_emergence) / learning_topology / IMPLICIT-F1C29CA5DAD294F2 / IMPLICIT-D82F66BB3272C400
+  - 可搜索名称：IMPLICIT-F1C29CA5DAD294F2 / F_distributed_learning := ∫\(local_information × local_adjustment × global_emergence\) / learning_topology / IMPLICIT-F1C29CA5DAD294F2 / IMPLICIT-D82F66BB3272C400
   - 来源：`docs/phi_meta_law.md`
   - 依赖：—；被引用：—
-- [F_plant_cross_species := ∫(signal_transmission × mutualistic_interaction × coevolution) / interspecies_network](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [F_plant_cross_species := ∫\(signal_transmission × mutualistic_interaction × coevolution\) / interspecies_network](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-CE217515F2F15DCE / F_plant_cross_species := ∫(signal_transmission × mutualistic_interaction × coevolution) / interspecies_network / IMPLICIT-CE217515F2F15DCE / IMPLICIT-E5B9918A41F87B7C
+  - 可搜索名称：IMPLICIT-CE217515F2F15DCE / F_plant_cross_species := ∫\(signal_transmission × mutualistic_interaction × coevolution\) / interspecies_network / IMPLICIT-CE217515F2F15DCE / IMPLICIT-E5B9918A41F87B7C
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [F_plant_cross_species := ∫(signal_transmission × mutualistic_interaction × coevolution) / interspecies_network](../../../data/math-foundation/function-provenance-ledger.csv)
+- [F_plant_cross_species := ∫\(signal_transmission × mutualistic_interaction × coevolution\) / interspecies_network](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-E5B9918A41F87B7C / F_plant_cross_species := ∫(signal_transmission × mutualistic_interaction × coevolution) / interspecies_network / IMPLICIT-E5B9918A41F87B7C / IMPLICIT-CE217515F2F15DCE
+  - 可搜索名称：IMPLICIT-E5B9918A41F87B7C / F_plant_cross_species := ∫\(signal_transmission × mutualistic_interaction × coevolution\) / interspecies_network / IMPLICIT-E5B9918A41F87B7C / IMPLICIT-CE217515F2F15DCE
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：—；被引用：—
-- [F_plant_godel := ∫(axiom_system × provable_propositions × unprovable_propositions) / incompleteness_threshold](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [F_plant_godel := ∫\(axiom_system × provable_propositions × unprovable_propositions\) / incompleteness_threshold](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-89711BEEA6509B3F / F_plant_godel := ∫(axiom_system × provable_propositions × unprovable_propositions) / incompleteness_threshold / IMPLICIT-89711BEEA6509B3F / IMPLICIT-E16315F1A3D6552A
+  - 可搜索名称：IMPLICIT-89711BEEA6509B3F / F_plant_godel := ∫\(axiom_system × provable_propositions × unprovable_propositions\) / incompleteness_threshold / IMPLICIT-89711BEEA6509B3F / IMPLICIT-E16315F1A3D6552A
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [F_plant_godel := ∫(axiom_system × provable_propositions × unprovable_propositions) / incompleteness_threshold](../../../data/math-foundation/function-provenance-ledger.csv)
+- [F_plant_godel := ∫\(axiom_system × provable_propositions × unprovable_propositions\) / incompleteness_threshold](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-E16315F1A3D6552A / F_plant_godel := ∫(axiom_system × provable_propositions × unprovable_propositions) / incompleteness_threshold / IMPLICIT-E16315F1A3D6552A / IMPLICIT-89711BEEA6509B3F
+  - 可搜索名称：IMPLICIT-E16315F1A3D6552A / F_plant_godel := ∫\(axiom_system × provable_propositions × unprovable_propositions\) / incompleteness_threshold / IMPLICIT-E16315F1A3D6552A / IMPLICIT-89711BEEA6509B3F
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：—；被引用：—
-- [F_plant_mycorrhiza := ∫(resource_exchange × information_sharing × defense_coordination) / network_topology](../../../data/math-foundation/function-provenance-ledger.csv)
+- [F_plant_mycorrhiza := ∫\(resource_exchange × information_sharing × defense_coordination\) / network_topology](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-F0CA2DABD864FC40 / F_plant_mycorrhiza := ∫(resource_exchange × information_sharing × defense_coordination) / network_topology / IMPLICIT-F0CA2DABD864FC40 / IMPLICIT-F7A05014069C12C8
+  - 可搜索名称：IMPLICIT-F0CA2DABD864FC40 / F_plant_mycorrhiza := ∫\(resource_exchange × information_sharing × defense_coordination\) / network_topology / IMPLICIT-F0CA2DABD864FC40 / IMPLICIT-F7A05014069C12C8
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：—；被引用：—
-- [F_plant_mycorrhiza := ∫(resource_exchange × information_sharing × defense_coordination) / network_topology](../../../reports/math-foundation/pilot-formal-audit-20260712.md)
+- [F_plant_mycorrhiza := ∫\(resource_exchange × information_sharing × defense_coordination\) / network_topology](../../../reports/math-foundation/pilot-formal-audit-20260712.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-F7A05014069C12C8 / F_plant_mycorrhiza := ∫(resource_exchange × information_sharing × defense_coordination) / network_topology / IMPLICIT-F7A05014069C12C8 / IMPLICIT-F0CA2DABD864FC40
+  - 可搜索名称：IMPLICIT-F7A05014069C12C8 / F_plant_mycorrhiza := ∫\(resource_exchange × information_sharing × defense_coordination\) / network_topology / IMPLICIT-F7A05014069C12C8 / IMPLICIT-F0CA2DABD864FC40
   - 来源：`reports/math-foundation/pilot-formal-audit-20260712.md`
   - 依赖：—；被引用：—
-- [F_plant_mycorrhiza := ∫(resource_exchange × information_sharing × defense_coordination) / network_topology](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [F_plant_mycorrhiza := ∫\(resource_exchange × information_sharing × defense_coordination\) / network_topology](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-FD07F4523386F941 / F_plant_mycorrhiza := ∫(resource_exchange × information_sharing × defense_coordination) / network_topology / IMPLICIT-FD07F4523386F941 / IMPLICIT-F0CA2DABD864FC40
+  - 可搜索名称：IMPLICIT-FD07F4523386F941 / F_plant_mycorrhiza := ∫\(resource_exchange × information_sharing × defense_coordination\) / network_topology / IMPLICIT-FD07F4523386F941 / IMPLICIT-F0CA2DABD864FC40
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [F_plant_mycorrhiza_updated := ∫(carbon_exchange × nutrient_acquisition × resource_allocation) / fungal_network](../../../data/math-foundation/function-provenance-ledger.csv)
+- [F_plant_mycorrhiza_updated := ∫\(carbon_exchange × nutrient_acquisition × resource_allocation\) / fungal_network](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-1E5E6092B97A50D5 / F_plant_mycorrhiza_updated := ∫(carbon_exchange × nutrient_acquisition × resource_allocation) / fungal_network / IMPLICIT-1E5E6092B97A50D5 / IMPLICIT-38C09CC0B8788B7F
+  - 可搜索名称：IMPLICIT-1E5E6092B97A50D5 / F_plant_mycorrhiza_updated := ∫\(carbon_exchange × nutrient_acquisition × resource_allocation\) / fungal_network / IMPLICIT-1E5E6092B97A50D5 / IMPLICIT-38C09CC0B8788B7F
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：—；被引用：—
-- [F_plant_mycorrhiza_updated := ∫(carbon_exchange × nutrient_acquisition × resource_allocation) / fungal_network](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [F_plant_mycorrhiza_updated := ∫\(carbon_exchange × nutrient_acquisition × resource_allocation\) / fungal_network](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-38C09CC0B8788B7F / F_plant_mycorrhiza_updated := ∫(carbon_exchange × nutrient_acquisition × resource_allocation) / fungal_network / IMPLICIT-38C09CC0B8788B7F / IMPLICIT-1E5E6092B97A50D5
+  - 可搜索名称：IMPLICIT-38C09CC0B8788B7F / F_plant_mycorrhiza_updated := ∫\(carbon_exchange × nutrient_acquisition × resource_allocation\) / fungal_network / IMPLICIT-38C09CC0B8788B7F / IMPLICIT-1E5E6092B97A50D5
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
 - [F_scale_bridge=MicroMechanism × MesoStructure × MacroPattern × CrossScaleFeedback](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
@@ -399,14 +429,14 @@
   - 可搜索名称：NFC-902707cfd2892ad9 / F_scale_bridge=MicroMechanism × MesoStructure × MacroPattern × CrossScaleFeedback
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [F_symmetry := ∫(local_information × local_decision × distributed_authority) / network_topology](../../../docs/phi_meta_law.md)
+- [F_symmetry := ∫\(local_information × local_decision × distributed_authority\) / network_topology](../../../docs/phi_meta_law.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-43BE03337A9068D3 / F_symmetry := ∫(local_information × local_decision × distributed_authority) / network_topology / IMPLICIT-43BE03337A9068D3 / IMPLICIT-93363EF065BB4B4D
+  - 可搜索名称：IMPLICIT-43BE03337A9068D3 / F_symmetry := ∫\(local_information × local_decision × distributed_authority\) / network_topology / IMPLICIT-43BE03337A9068D3 / IMPLICIT-93363EF065BB4B4D
   - 来源：`docs/phi_meta_law.md`
   - 依赖：—；被引用：—
-- [F_symmetry := ∫(local_information × local_decision × distributed_authority) / network_topology](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [F_symmetry := ∫\(local_information × local_decision × distributed_authority\) / network_topology](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-93363EF065BB4B4D / F_symmetry := ∫(local_information × local_decision × distributed_authority) / network_topology / IMPLICIT-93363EF065BB4B4D / IMPLICIT-43BE03337A9068D3
+  - 可搜索名称：IMPLICIT-93363EF065BB4B4D / F_symmetry := ∫\(local_information × local_decision × distributed_authority\) / network_topology / IMPLICIT-93363EF065BB4B4D / IMPLICIT-43BE03337A9068D3
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
 - [Fail-closed publication gate validator enforcing source-rights, material classification, and non-republication principle](../../../data/architecture/interactive-system-map.json)
@@ -423,6 +453,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-e1157733ec3704dd / Family assignments were mostly accurate because they were tied to the source registry.
   - 来源：`data/external-research/121-fulltext-resolver/121-template-risk-reaudit.json`
+  - 依赖：—；被引用：—
+- [Federation 与 OpenClaw、Hermes、Codex、Reference/Future Executors 的外部、可替换手脚边界](../../../data/architecture/interactive-system-map-layout.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-7fb76eb6c73ee456 / Federation 与 OpenClaw、Hermes、Codex、Reference/Future Executors 的外部、可替换手脚边界
+  - 来源：`data/architecture/interactive-system-map-layout.json`
   - 依赖：—；被引用：—
 - [Final 079 type: `MECHANISM_MODEL`.](../../../reports/foundation-architecture/D598-final-adjudication-20260713.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
@@ -444,9 +479,9 @@
   - 可搜索名称：NFC-e623663193e36f5b / Finn, Abbeel and Levine exact registered PMLR paper, all-10-page main plus all-3-page supplement visual review, complete
   - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl`
   - 依赖：—；被引用：—
-- [Fix function-os-ci: explicitly install pytest and use python -m pytest (real root cause: pytest command not found).](../../../data/external-research/121-fulltext-resolver/121q6d/121q6d-step-ledger.jsonl)
+- [Fix function-os-ci: explicitly install pytest and use python -m pytest \(real root cause: pytest command not found\).](../../../data/external-research/121-fulltext-resolver/121q6d/121q6d-step-ledger.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-16436cbea4a216d3 / Fix function-os-ci: explicitly install pytest and use python -m pytest (real root cause: pytest command not found).
+  - 可搜索名称：NFC-16436cbea4a216d3 / Fix function-os-ci: explicitly install pytest and use python -m pytest \(real root cause: pytest command not found\).
   - 来源：`data/external-research/121-fulltext-resolver/121q6d/121q6d-step-ledger.jsonl`
   - 依赖：—；被引用：—
 - [fixture_only_no_causal_identification](../../../data/language-thought/fixtures.jsonl)
@@ -564,9 +599,9 @@
   - 可搜索名称：NFC-bb63904f372698f5 / GAP-008 计算复杂度** \| 状态 INJECTED_VERIFIED \| 8 来源 \| 映射 G_δ（互补：不可计算边界）
   - 来源：`data/external-research/088-FINAL-REPORT.md`
   - 依赖：—；被引用：—
-- [GAP-012 因果识别 (250P) — MEDIUM](../../../data/discipline-projection/087-execution-report.md)
+- [GAP-012 因果识别 \(250P\) — MEDIUM](../../../data/discipline-projection/087-execution-report.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-c3d542c13b3d2513 / GAP-012 因果识别 (250P) — MEDIUM
+  - 可搜索名称：NFC-c3d542c13b3d2513 / GAP-012 因果识别 \(250P\) — MEDIUM
   - 来源：`data/discipline-projection/087-execution-report.md`
   - 依赖：—；被引用：—
 - [GAP-012 因果识别 （MEDIUM）](../../../data/external-research/089-external-source-atlas.md)
@@ -674,19 +709,19 @@
   - 可搜索名称：NFC-6c7ecb7ae372f7b7 / human oversight, and keep narrative or structural analogy separate from causal
   - 来源：`reports/external-research/pointfire-getnote-external-verification-r1-20260813.md`
   - 依赖：—；被引用：—
-- [I_iso(A,B) 检测到上述9个系统的真实结构同构，验证了元同构率的普适性。**](../../../docs/phi_meta_law.md)
+- [I_iso\(A,B\) 检测到上述9个系统的真实结构同构，验证了元同构率的普适性。**](../../../docs/phi_meta_law.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-c99546c3832ac134 / I_iso(A,B) 检测到上述9个系统的真实结构同构，验证了元同构率的普适性。**
+  - 可搜索名称：NFC-c99546c3832ac134 / I_iso\(A,B\) 检测到上述9个系统的真实结构同构，验证了元同构率的普适性。**
   - 来源：`docs/phi_meta_law.md`
   - 依赖：—；被引用：—
-- [I_iso(A,B)：与 D597 部分同构（共享"指标成为显式入口"这一基底），但 NF-X2 增加了 D597 没有的独立机制——主体的策略性分解/博弈响应。二者是"基底—响应"关系，非同一机制。](../../../outputs/audit/cross-domain-candidate-function-review-20260708.md)
+- [I_iso\(A,B\)：与 D597 部分同构（共享"指标成为显式入口"这一基底），但 NF-X2 增加了 D597 没有的独立机制——主体的策略性分解/博弈响应。二者是"基底—响应"关系，非同一机制。](../../../outputs/audit/cross-domain-candidate-function-review-20260708.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-995cd9279231c3a0 / I_iso(A,B)：与 D597 部分同构（共享"指标成为显式入口"这一基底），但 NF-X2 增加了 D597 没有的独立机制——主体的策略性分解/博弈响应。二者是"基底—响应"关系，非同一机制。
+  - 可搜索名称：NFC-995cd9279231c3a0 / I_iso\(A,B\)：与 D597 部分同构（共享"指标成为显式入口"这一基底），但 NF-X2 增加了 D597 没有的独立机制——主体的策略性分解/博弈响应。二者是"基底—响应"关系，非同一机制。
   - 来源：`outputs/audit/cross-domain-candidate-function-review-20260708.md`
   - 依赖：D597；被引用：—
-- [I_iso(A,B)：与 D597 高度同构——它本身就是 D597 机制链"指标成为唯一入口 → 真实价值被挤出"在分层维度的具体表现。但它携带一个 D597 未表述的子结构（排名→贡献等价→阶层固化）。](../../../outputs/audit/cross-domain-candidate-function-review-20260708.md)
+- [I_iso\(A,B\)：与 D597 高度同构——它本身就是 D597 机制链"指标成为唯一入口 → 真实价值被挤出"在分层维度的具体表现。但它携带一个 D597 未表述的子结构（排名→贡献等价→阶层固化）。](../../../outputs/audit/cross-domain-candidate-function-review-20260708.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-75f715bd51dc4a28 / I_iso(A,B)：与 D597 高度同构——它本身就是 D597 机制链"指标成为唯一入口 → 真实价值被挤出"在分层维度的具体表现。但它携带一个 D597 未表述的子结构（排名→贡献等价→阶层固化）。
+  - 可搜索名称：NFC-75f715bd51dc4a28 / I_iso\(A,B\)：与 D597 高度同构——它本身就是 D597 机制链"指标成为唯一入口 → 真实价值被挤出"在分层维度的具体表现。但它携带一个 D597 未表述的子结构（排名→贡献等价→阶层固化）。
   - 来源：`outputs/audit/cross-domain-candidate-function-review-20260708.md`
   - 依赖：D597；被引用：—
 - [I_iso：与 D595 实质同构（约束来源=管理成本）。L_meta：是已有机制在「听话—低成本控制」表述下的实例。](../../../outputs/collisions/20260711-disobedience-subjectivity/psi0-decision-matrix.md)
@@ -694,9 +729,9 @@
   - 可搜索名称：NFC-0d83f4b5e9b99684 / I_iso：与 D595 实质同构（约束来源=管理成本）。L_meta：是已有机制在「听话—低成本控制」表述下的实例。
   - 来源：`outputs/collisions/20260711-disobedience-subjectivity/psi0-decision-matrix.md`
   - 依赖：D595；被引用：—
-- [I_iso：与 D598(系统性钝化)、D597(量化指标替代真实价值) 实质同构。L_meta：是已有机制的家庭/女性轴实例。](../../../outputs/collisions/20260711-disobedience-subjectivity/psi0-decision-matrix.md)
+- [I_iso：与 D598\(系统性钝化\)、D597\(量化指标替代真实价值\) 实质同构。L_meta：是已有机制的家庭/女性轴实例。](../../../outputs/collisions/20260711-disobedience-subjectivity/psi0-decision-matrix.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-10062862946702e1 / I_iso：与 D598(系统性钝化)、D597(量化指标替代真实价值) 实质同构。L_meta：是已有机制的家庭/女性轴实例。
+  - 可搜索名称：NFC-10062862946702e1 / I_iso：与 D598\(系统性钝化\)、D597\(量化指标替代真实价值\) 实质同构。L_meta：是已有机制的家庭/女性轴实例。
   - 来源：`outputs/collisions/20260711-disobedience-subjectivity/psi0-decision-matrix.md`
   - 依赖：D597, D598；被引用：—
 - [Identification of Causal Effects Using Instrumental Variables: Rejoinder](../../../data/external-research/088-external-source-atlas-v1.jsonl)
@@ -714,9 +749,9 @@
   - 可搜索名称：NFC-b0d5673065c6034c / Identifying instrumental variables for causal inference
   - 来源：`data/external-research/105-intervention-control/105-intervention-control-source-pack.jsonl`
   - 依赖：—；被引用：—
-- [if r.get("category") == "harness_error":](../../../function-os-candidate/v0.2/benchmark/run.py)
+- [if r.get\("category"\) == "harness_error":](../../../function-os-candidate/v0.2/benchmark/run.py)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-B710F8264CB9F305 / if r.get("category") == "harness_error": / IMPLICIT-B710F8264CB9F305
+  - 可搜索名称：IMPLICIT-B710F8264CB9F305 / if r.get\("category"\) == "harness_error": / IMPLICIT-B710F8264CB9F305
   - 来源：`function-os-candidate/v0.2/benchmark/run.py`
   - 依赖：—；被引用：—
 - [If the licensor’s permission is not necessary for any reason–for example, because of any applicable exception or limitat](../../../LICENSES/active/CC-BY-NC-SA-4.0.md)
@@ -809,9 +844,9 @@
   - 可搜索名称：NFC-f5221d99ca4acd3e / It is not a FUNCTION or PARTIAL_FUNCTION because the displayed multiplicative score does not declare a set-theoretic dom
   - 来源：`reports/foundation-architecture/D598-final-adjudication-20260713.md`
   - 依赖：—；被引用：—
-- [Iteration method 1.3.0 and system maps 0.5.0, 0.6.0 are Historical; method 1.2.0 and maps 0.1.0, 0.2.0, 0.3.0, 0.4.0 are](../../ASSET-CARDS.md#asset-nfc-f7f2df6507c18908)
+- [Iteration method 1.3.0 and system maps 0.6.0, 0.5.0 are Historical; method 1.2.0 and maps 0.1.0, 0.2.0, 0.3.0, 0.4.0 are](../../ASSET-CARDS.md#asset-nfc-da4a5d8cd9aac968)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-f7f2df6507c18908 / Iteration method 1.3.0 and system maps 0.5.0, 0.6.0 are Historical; method 1.2.0 and maps 0.1.0, 0.2.0, 0.3.0, 0.4.0 are / Iteration method 1.3.0 and system maps 0.5.0, 0.6.0 are Historical; method 1.2.0 and maps 0.1.0, 0.2.0, 0.3.0, 0.4.0 are earlier Historical, not Current. Treat implementation completion, repository synchronization, external synchronization and project completion as distinct states; local validation never proves undeclared live external truth.
+  - 可搜索名称：NFC-da4a5d8cd9aac968 / Iteration method 1.3.0 and system maps 0.6.0, 0.5.0 are Historical; method 1.2.0 and maps 0.1.0, 0.2.0, 0.3.0, 0.4.0 are / Iteration method 1.3.0 and system maps 0.6.0, 0.5.0 are Historical; method 1.2.0 and maps 0.1.0, 0.2.0, 0.3.0, 0.4.0 are earlier Historical, not Current. Treat implementation completion, repository synchronization, external synchronization and project completion as distinct states; local validation never proves undeclared live external truth.
   - 来源：`llms.txt`
   - 依赖：—；被引用：—
 - [Its critique identifies comparability and systems-measurement requirements for validation, while providing no semantic/b](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
@@ -824,24 +859,24 @@
   - 可搜索名称：NFC-a7b8b72c2c49b080 / Its zero residue means only that all declared mappings and obligations received a decision at this revision. It does not
   - 来源：`docs/architecture/typed-change-propagation.md`
   - 依赖：—；被引用：—
-- [just because the last Foundation edit was correct; it is stable only when the discovery/closure inputs (the](../../../docs/foundation/task-107-incident-report.md)
+- [just because the last Foundation edit was correct; it is stable only when the discovery/closure inputs \(the](../../../docs/foundation/task-107-incident-report.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-f128f277ece32e72 / just because the last Foundation edit was correct; it is stable only when the discovery/closure inputs (the
+  - 可搜索名称：NFC-f128f277ece32e72 / just because the last Foundation edit was correct; it is stable only when the discovery/closure inputs \(the
   - 来源：`docs/foundation/task-107-incident-report.md`
   - 依赖：—；被引用：—
-- [J⁺(x)=1 → C(x,y) ≥ θ_causal（因果结构清晰）](../../../docs/phi_meta_law.md)
+- [J⁺\(x\)=1 → C\(x,y\) ≥ θ_causal（因果结构清晰）](../../../docs/phi_meta_law.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-3ff541b3675fa646 / J⁺(x)=1 → C(x,y) ≥ θ_causal（因果结构清晰）
+  - 可搜索名称：NFC-3ff541b3675fa646 / J⁺\(x\)=1 → C\(x,y\) ≥ θ_causal（因果结构清晰）
   - 来源：`docs/phi_meta_law.md`
   - 依赖：—；被引用：—
-- [J⁺(x)=1 → 因果结构清晰](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+- [J⁺\(x\)=1 → 因果结构清晰](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-bb152439d860a135 / J⁺(x)=1 → 因果结构清晰
+  - 可搜索名称：NFC-bb152439d860a135 / J⁺\(x\)=1 → 因果结构清晰
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [J⁻(x)=0 → ¬∃(C(x,y) ∧ C(y,x) ∧ x≠y)（无循环因果）](../../../docs/phi_meta_law.md)
+- [J⁻\(x\)=0 → ¬∃\(C\(x,y\) ∧ C\(y,x\) ∧ x≠y\)（无循环因果）](../../../docs/phi_meta_law.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-6170c17594738869 / J⁻(x)=0 → ¬∃(C(x,y) ∧ C(y,x) ∧ x≠y)（无循环因果）
+  - 可搜索名称：NFC-6170c17594738869 / J⁻\(x\)=0 → ¬∃\(C\(x,y\) ∧ C\(y,x\) ∧ x≠y\)（无循环因果）
   - 来源：`docs/phi_meta_law.md`
   - 依赖：—；被引用：—
 - [K13_ASSERTION_NON_ESCALATION: project scale, engineering maturity, writing/summaries/results books/system maps, repeated](../../ASSET-CARDS.md#asset-nfc-c55e34db613b6c41)
@@ -864,9 +899,12 @@
   - 可搜索名称：NFC-63c1f32798c5b78a / L4：机制与模型
   - 来源：`docs/language-thought/cross-layer-contract.md`
   - 依赖：—；被引用：—
-- [L6 公共写作的当前接口是之元写作法 \[`0.5.0`\](../../../docs/publication/zhiyuan-writing-method.md)及其\[后台规格\](../../../docs/ai-assistant-usage-reference.md)
+- [L6 公共写作的当前接口是之元写作法 \[`0.5.0`\]\(./publication/zhiyuan-writing-method.md\)及其\[后台规格\]\(../templates/publication/zhiyuan-writing-s](../../../docs/ai-assistant-usage-reference.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-2edb70ce45a42f26 / L6 公共写作的当前接口是之元写作法 \[`0.5.0`\](../../../docs/publication/zhiyuan-writing-method.md)及其\[后台规格\](../../../docs/ai-assistant-usage-reference.md)
+  - 可搜索名称：NFC-2edb70ce45a42f26 / L6 公共写作的当前接口是之元写作法 \[`0.5.0`\]\(./publication/zhiyuan-writing-method.md\)及其\[后台规格\]\(../templates/publication/zhiyuan-writing-s
+  - 来源：`docs/ai-assistant-usage-reference.md`
+  - 依赖：—；被引用：—
+- [L6 写作的感染力、跨域收敛或多模型一致不能提高事实、因果、同构或价值主张；高层表达必须保留肉身成本和受损主体。](../../../docs/ai-assistant-usage-reference.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-0c8e46e707629540 / L6 写作的感染力、跨域收敛或多模型一致不能提高事实、因果、同构或价值主张；高层表达必须保留肉身成本和受损主体。
   - 来源：`docs/ai-assistant-usage-reference.md`
@@ -1021,9 +1059,9 @@
   - 可搜索名称：NFC-755262080b7f61da / Lower asymptotic attention complexity does not guarantee lower end-to-end latency, memory or higher throughput; causal m
   - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
   - 依赖：—；被引用：—
-- [M(B_n)：机制在 A2/A3/A4 稳定复现，可收敛。J⁺=1。](../../../outputs/collisions/20260711-disobedience-subjectivity/psi0-decision-matrix.md)
+- [M\(B_n\)：机制在 A2/A3/A4 稳定复现，可收敛。J⁺=1。](../../../outputs/collisions/20260711-disobedience-subjectivity/psi0-decision-matrix.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-89c3e7af19b7b3ec / M(B_n)：机制在 A2/A3/A4 稳定复现，可收敛。J⁺=1。
+  - 可搜索名称：NFC-89c3e7af19b7b3ec / M\(B_n\)：机制在 A2/A3/A4 稳定复现，可收敛。J⁺=1。
   - 来源：`outputs/collisions/20260711-disobedience-subjectivity/psi0-decision-matrix.md`
   - 依赖：A2, A3, A4；被引用：—
 - [M**：是否存在循环、自我强化、累积机制](../../../docs/getnote-collision-workflow-final-20260708.md)
@@ -1056,19 +1094,19 @@
   - 可搜索名称：NFC-4b1f208b0326eb0d / M11的**τ_min=τ_delay**——最小响应时间等于反馈延迟时间。延迟决定系统能多快响应噪声。
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [M11的w₂∝(√n-1)/(n·ḡ)。n→∞时w₂→0——门控面越多缓冲期越短。但ḡ∝√n以上增长可补偿。社会系统"改革窗口"是否关闭取决于ḡ增长能否跟上n。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+- [M11的w₂∝\(√n-1\)/\(n·ḡ\)。n→∞时w₂→0——门控面越多缓冲期越短。但ḡ∝√n以上增长可补偿。社会系统"改革窗口"是否关闭取决于ḡ增长能否跟上n。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-865e32c0f96c7f09 / M11的w₂∝(√n-1)/(n·ḡ)。n→∞时w₂→0——门控面越多缓冲期越短。但ḡ∝√n以上增长可补偿。社会系统"改革窗口"是否关闭取决于ḡ增长能否跟上n。
+  - 可搜索名称：NFC-865e32c0f96c7f09 / M11的w₂∝\(√n-1\)/\(n·ḡ\)。n→∞时w₂→0——门控面越多缓冲期越短。但ḡ∝√n以上增长可补偿。社会系统"改革窗口"是否关闭取决于ḡ增长能否跟上n。
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [M11的w₂决定共振频率ω_resonance∝1/w₂。窄缓冲区→高频共振。w₂缩窄（\[D324\](docs/zh/functions/items/D324.md) n增大）使系统从"怕低频共振"变成"怕高频共振"——复杂系统的脆弱频率随](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+- [M11的w₂决定共振频率ω_resonance∝1/w₂。窄缓冲区→高频共振。w₂缩窄（\[D324\]\(docs/zh/functions/items/D324.md\) n增大）使系统从"怕低频共振"变成"怕高频共振"——复杂系统的脆弱频率随](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-ee483dd409f6b04a / M11的w₂决定共振频率ω_resonance∝1/w₂。窄缓冲区→高频共振。w₂缩窄（\[D324\](docs/zh/functions/items/D324.md) n增大）使系统从"怕低频共振"变成"怕高频共振"——复杂系统的脆弱频率随
+  - 可搜索名称：NFC-ee483dd409f6b04a / M11的w₂决定共振频率ω_resonance∝1/w₂。窄缓冲区→高频共振。w₂缩窄（\[D324\]\(docs/zh/functions/items/D324.md\) n增大）使系统从"怕低频共振"变成"怕高频共振"——复杂系统的脆弱频率随
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D324；被引用：—
-- [M12的僵尸态中自发涨落δg_eff∝√(kT_eff/n)。涨落踢出僵尸态的概率∝e^{-n(g_critical-g_eff)²/kT_eff}——n越大概率越小。小系统可能自修复，大系统几乎不可能。组织越大越容易永久僵尸化。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+- [M12的僵尸态中自发涨落δg_eff∝√\(kT_eff/n\)。涨落踢出僵尸态的概率∝e^{-n\(g_critical-g_eff\)²/kT_eff}——n越大概率越小。小系统可能自修复，大系统几乎不可能。组织越大越容易永久僵尸化。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-fba7d50533fb14ff / M12的僵尸态中自发涨落δg_eff∝√(kT_eff/n)。涨落踢出僵尸态的概率∝e^{-n(g_critical-g_eff)²/kT_eff}——n越大概率越小。小系统可能自修复，大系统几乎不可能。组织越大越容易永久僵尸化。
+  - 可搜索名称：NFC-fba7d50533fb14ff / M12的僵尸态中自发涨落δg_eff∝√\(kT_eff/n\)。涨落踢出僵尸态的概率∝e^{-n\(g_critical-g_eff\)²/kT_eff}——n越大概率越小。小系统可能自修复，大系统几乎不可能。组织越大越容易永久僵尸化。
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
 - [M12的大系统传染临界→n/2是容斥主导不可逆在传染维度的投影。D388和D395描述同一现象的不同方面——完全一致。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
@@ -1081,19 +1119,19 @@
   - 可搜索名称：NFC-8116c84696a42603 / M13的K·τ_delay 1时自激振荡主导（延迟有害），=1为临界。弱正反馈系统中延迟可以有益（过滤噪声），强正反馈系统中延迟必然有害（引发振荡）。
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [M13的正反馈回路放大噪声：δp_max经过k轮反馈后放大为δp_max·K^k，K为反馈增益(\[D274\](docs/zh/functions/items/D274.md))。K>1时噪声指数放大→系统对初始条件极度敏感→蝴蝶效应。K<1](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+- [M13的正反馈回路放大噪声：δp_max经过k轮反馈后放大为δp_max·K^k，K为反馈增益\(\[D274\]\(docs/zh/functions/items/D274.md\)\)。K>1时噪声指数放大→系统对初始条件极度敏感→蝴蝶效应。K<1](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-3b2863d1c658bfaf / M13的正反馈回路放大噪声：δp_max经过k轮反馈后放大为δp_max·K^k，K为反馈增益(\[D274\](docs/zh/functions/items/D274.md))。K>1时噪声指数放大→系统对初始条件极度敏感→蝴蝶效应。K<1
+  - 可搜索名称：NFC-3b2863d1c658bfaf / M13的正反馈回路放大噪声：δp_max经过k轮反馈后放大为δp_max·K^k，K为反馈增益\(\[D274\]\(docs/zh/functions/items/D274.md\)\)。K>1时噪声指数放大→系统对初始条件极度敏感→蝴蝶效应。K<1
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D274, D295；被引用：—
-- [M14的共存震荡中随机偏移δK∝√(kT_eff)·T_osc。偏移累积为随机游走，最终方向由累积符号决定。预期决定时间T_decision∝(ΔK/δK)²·T_osc——初始偏置越大决定越快，ΔK≈0时可能长期震荡。改革派和保守派差距越](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+- [M14的共存震荡中随机偏移δK∝√\(kT_eff\)·T_osc。偏移累积为随机游走，最终方向由累积符号决定。预期决定时间T_decision∝\(ΔK/δK\)²·T_osc——初始偏置越大决定越快，ΔK≈0时可能长期震荡。改革派和保守派差距越](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-ab8964b096dd575a / M14的共存震荡中随机偏移δK∝√(kT_eff)·T_osc。偏移累积为随机游走，最终方向由累积符号决定。预期决定时间T_decision∝(ΔK/δK)²·T_osc——初始偏置越大决定越快，ΔK≈0时可能长期震荡。改革派和保守派差距越
+  - 可搜索名称：NFC-ab8964b096dd575a / M14的共存震荡中随机偏移δK∝√\(kT_eff\)·T_osc。偏移累积为随机游走，最终方向由累积符号决定。预期决定时间T_decision∝\(ΔK/δK\)²·T_osc——初始偏置越大决定越快，ΔK≈0时可能长期震荡。改革派和保守派差距越
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [M14的良性-恶性共存(\[D299\](docs/zh/functions/items/D299.md))能持续的条件：良性子循环的反馈增益K_benign必须大于恶性子循环的容斥加速因子α_exclusion。K_benign<α_excl](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+- [M14的良性-恶性共存\(\[D299\]\(docs/zh/functions/items/D299.md\)\)能持续的条件：良性子循环的反馈增益K_benign必须大于恶性子循环的容斥加速因子α_exclusion。K_benign<α_excl](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-001837fc69c54518 / M14的良性-恶性共存(\[D299\](docs/zh/functions/items/D299.md))能持续的条件：良性子循环的反馈增益K_benign必须大于恶性子循环的容斥加速因子α_exclusion。K_benign<α_excl
+  - 可搜索名称：NFC-001837fc69c54518 / M14的良性-恶性共存\(\[D299\]\(docs/zh/functions/items/D299.md\)\)能持续的条件：良性子循环的反馈增益K_benign必须大于恶性子循环的容斥加速因子α_exclusion。K_benign<α_excl
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D274, D299；被引用：—
 - [M14的阻尼影响步长：高阻尼→步长小→决定慢但方向确定；低阻尼→步长大→决定快但方向随机。T_decision∝\|K_benign-α_exclusion\|·T_osc。改革力量明显占优时方向确定但推进慢，势均力敌时推进快但方向不确定——速](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
@@ -1116,34 +1154,34 @@
   - 可搜索名称：NFC-38865551c58420a5 / M1的ΔΦ导致D158预测误差\|e^{ΔΦ}-1\|：ΔΦ=1→误差172%→预测失效。pᵢ 0.8不可信。
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D158；被引用：—
-- [M1的不同门控面ΔΦᵢ差异大时，总ΔΦ由最大ΔΦ主导：ΔΦ_total≈max(ΔΦᵢ)·(1+ln(Σe^{ΔΦᵢ}/max(ΔΦᵢ)))。极端异质性下ΔΦ_total≈ΔΦ_max·(1+ln(n-1))。系统退化由最弱门控面决定——不](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+- [M1的不同门控面ΔΦᵢ差异大时，总ΔΦ由最大ΔΦ主导：ΔΦ_total≈max\(ΔΦᵢ\)·\(1+ln\(Σe^{ΔΦᵢ}/max\(ΔΦᵢ\)\)\)。极端异质性下ΔΦ_total≈ΔΦ_max·\(1+ln\(n-1\)\)。系统退化由最弱门控面决定——不](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-55edd740bb25d66a / M1的不同门控面ΔΦᵢ差异大时，总ΔΦ由最大ΔΦ主导：ΔΦ_total≈max(ΔΦᵢ)·(1+ln(Σe^{ΔΦᵢ}/max(ΔΦᵢ)))。极端异质性下ΔΦ_total≈ΔΦ_max·(1+ln(n-1))。系统退化由最弱门控面决定——不
+  - 可搜索名称：NFC-55edd740bb25d66a / M1的不同门控面ΔΦᵢ差异大时，总ΔΦ由最大ΔΦ主导：ΔΦ_total≈max\(ΔΦᵢ\)·\(1+ln\(Σe^{ΔΦᵢ}/max\(ΔΦᵢ\)\)\)。极端异质性下ΔΦ_total≈ΔΦ_max·\(1+ln\(n-1\)\)。系统退化由最弱门控面决定——不
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D280；被引用：—
-- [M2的Φ(μ)在多个门控面参数差异大时可出现多个极小点。竞争规则：全局极小点由min(Φ(μ_k))决定，但系统可能被困在局部极小点（亚稳态）。逃逸条件：热涨落或外部驱动使Φ跨越鞍点Φ_saddle。鞍点高度∝min(Δpᵢ²)——最接近的](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+- [M2的Φ\(μ\)在多个门控面参数差异大时可出现多个极小点。竞争规则：全局极小点由min\(Φ\(μ_k\)\)决定，但系统可能被困在局部极小点（亚稳态）。逃逸条件：热涨落或外部驱动使Φ跨越鞍点Φ_saddle。鞍点高度∝min\(Δpᵢ²\)——最接近的](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-1c78c20c723af194 / M2的Φ(μ)在多个门控面参数差异大时可出现多个极小点。竞争规则：全局极小点由min(Φ(μ_k))决定，但系统可能被困在局部极小点（亚稳态）。逃逸条件：热涨落或外部驱动使Φ跨越鞍点Φ_saddle。鞍点高度∝min(Δpᵢ²)——最接近的
+  - 可搜索名称：NFC-1c78c20c723af194 / M2的Φ\(μ\)在多个门控面参数差异大时可出现多个极小点。竞争规则：全局极小点由min\(Φ\(μ_k\)\)决定，但系统可能被困在局部极小点（亚稳态）。逃逸条件：热涨落或外部驱动使Φ跨越鞍点Φ_saddle。鞍点高度∝min\(Δpᵢ²\)——最接近的
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [M2的两个极小点在门槛参数变化时可以合并。合并条件：Φ(μ_saddle)-Φ(μ₁)<δΦ_thermal。合并后系统从双稳态变为单稳态——失去"退路"。合并方向：浅极小点被深极小点吸收。社会改革中"次优方案"极小点被吸收进"最优方案"后](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+- [M2的两个极小点在门槛参数变化时可以合并。合并条件：Φ\(μ_saddle\)-Φ\(μ₁\)<δΦ_thermal。合并后系统从双稳态变为单稳态——失去"退路"。合并方向：浅极小点被深极小点吸收。社会改革中"次优方案"极小点被吸收进"最优方案"后](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-65dd75738b735e25 / M2的两个极小点在门槛参数变化时可以合并。合并条件：Φ(μ_saddle)-Φ(μ₁)<δΦ_thermal。合并后系统从双稳态变为单稳态——失去"退路"。合并方向：浅极小点被深极小点吸收。社会改革中"次优方案"极小点被吸收进"最优方案"后
+  - 可搜索名称：NFC-65dd75738b735e25 / M2的两个极小点在门槛参数变化时可以合并。合并条件：Φ\(μ_saddle\)-Φ\(μ₁\)<δΦ_thermal。合并后系统从双稳态变为单稳态——失去"退路"。合并方向：浅极小点被深极小点吸收。社会改革中"次优方案"极小点被吸收进"最优方案"后
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D315；被引用：—
-- [M3的I=(1+m)/2在有限n时有O(1/n)修正。有限系统比平均场预测更集中。修正量∝1/√n——与D331 p*涨落同量级，同一有限尺寸效应的两个方面。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+- [M3的I=\(1+m\)/2在有限n时有O\(1/n\)修正。有限系统比平均场预测更集中。修正量∝1/√n——与D331 p*涨落同量级，同一有限尺寸效应的两个方面。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-078ed76335ef101b / M3的I=(1+m)/2在有限n时有O(1/n)修正。有限系统比平均场预测更集中。修正量∝1/√n——与D331 p*涨落同量级，同一有限尺寸效应的两个方面。
+  - 可搜索名称：NFC-078ed76335ef101b / M3的I=\(1+m\)/2在有限n时有O\(1/n\)修正。有限系统比平均场预测更集中。修正量∝1/√n——与D331 p*涨落同量级，同一有限尺寸效应的两个方面。
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D331；被引用：—
-- [M7的n*∝β/(p̄·Σαᵢ)依赖干预力度β，n_c由系统内在参数决定。β够大时n*<n_c——强干预使大系统在容斥主导不可逆之前就恢复。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+- [M7的n*∝β/\(p̄·Σαᵢ\)依赖干预力度β，n_c由系统内在参数决定。β够大时n*<n_c——强干预使大系统在容斥主导不可逆之前就恢复。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-be74774200a0900c / M7的n*∝β/(p̄·Σαᵢ)依赖干预力度β，n_c由系统内在参数决定。β够大时n*<n_c——强干预使大系统在容斥主导不可逆之前就恢复。
+  - 可搜索名称：NFC-be74774200a0900c / M7的n*∝β/\(p̄·Σαᵢ\)依赖干预力度β，n_c由系统内在参数决定。β够大时n*<n_c——强干预使大系统在容斥主导不可逆之前就恢复。
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [M8的(d_opt,σ_opt)平衡点在σ σ_opt时不稳定——过分散的系统无法自发回到最优配置。σ>σ_opt的恢复需要外部干预（\[D306\](docs/zh/functions/items/D306.md)）。社](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+- [M8的\(d_opt,σ_opt\)平衡点在σ σ_opt时不稳定——过分散的系统无法自发回到最优配置。σ>σ_opt的恢复需要外部干预（\[D306\]\(docs/zh/functions/items/D306.md\)）。社](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-25bc1245257e0d5a / M8的(d_opt,σ_opt)平衡点在σ σ_opt时不稳定——过分散的系统无法自发回到最优配置。σ>σ_opt的恢复需要外部干预（\[D306\](docs/zh/functions/items/D306.md)）。社
+  - 可搜索名称：NFC-25bc1245257e0d5a / M8的\(d_opt,σ_opt\)平衡点在σ σ_opt时不稳定——过分散的系统无法自发回到最优配置。σ>σ_opt的恢复需要外部干预（\[D306\]\(docs/zh/functions/items/D306.md\)）。社
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D306；被引用：—
 - [M8的d_opt漂移时σ_opt跟着动：d_opt右移（学习升级）时σ_opt先升后降——初期新门控面增加分散度，后期门控面成熟降低分散度。σ_opt响应滞后于d_opt，调整时间τ_σ∝n/ḡ。n大ḡ低的系统σ调整慢——社会系统的"最优配](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
@@ -1156,19 +1194,19 @@
   - 可搜索名称：NFC-f5e3bdaf0797d9a4 / M8的σ>σ_opt时系统进入"维度饥渴"状态——需要更多维度补偿分散度但d不能无限增长。维度饥渴的结局：要么外部增加d（学习/改革），要么内部崩溃（Φ持续增长）。社会分化过度需要更多元化但做不到→僵局。
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [M9三阶段各有健康指标：阶段1=平坦度⁻¹，阶段2=C_buffer，阶段3=1/ΔΦ。统一H=min(三指标)→最小值决定最弱环节。H=0时崩溃。可用于实时监测和预警。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+- [M9三阶段各有健康指标：阶段1=平坦度⁻¹，阶段2=C_buffer，阶段3=1/ΔΦ。统一H=min\(三指标\)→最小值决定最弱环节。H=0时崩溃。可用于实时监测和预警。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-68559248e436e733 / M9三阶段各有健康指标：阶段1=平坦度⁻¹，阶段2=C_buffer，阶段3=1/ΔΦ。统一H=min(三指标)→最小值决定最弱环节。H=0时崩溃。可用于实时监测和预警。
+  - 可搜索名称：NFC-68559248e436e733 / M9三阶段各有健康指标：阶段1=平坦度⁻¹，阶段2=C_buffer，阶段3=1/ΔΦ。统一H=min\(三指标\)→最小值决定最弱环节。H=0时崩溃。可用于实时监测和预警。
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [M9的实际不可逆=理论可逆但重建时间超过剩余寿命：τ_rebuild > T_remaining。条件：n²·p̄/β > 1/(Σαᵢ)——n大p̄高β低时几乎必然实际不可逆。大系统高负担弱改革的组合=实际不可逆。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+- [M9的实际不可逆=理论可逆但重建时间超过剩余寿命：τ_rebuild > T_remaining。条件：n²·p̄/β > 1/\(Σαᵢ\)——n大p̄高β低时几乎必然实际不可逆。大系统高负担弱改革的组合=实际不可逆。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-fafe7a5ef6cc001b / M9的实际不可逆=理论可逆但重建时间超过剩余寿命：τ_rebuild > T_remaining。条件：n²·p̄/β > 1/(Σαᵢ)——n大p̄高β低时几乎必然实际不可逆。大系统高负担弱改革的组合=实际不可逆。
+  - 可搜索名称：NFC-fafe7a5ef6cc001b / M9的实际不可逆=理论可逆但重建时间超过剩余寿命：τ_rebuild > T_remaining。条件：n²·p̄/β > 1/\(Σαᵢ\)——n大p̄高β低时几乎必然实际不可逆。大系统高负担弱改革的组合=实际不可逆。
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [Mail-storm hemostasis: foundation-validation.yml paths filter (12 dependency groups) + concurrency cancel-in-progress +](../../../data/ops/121q7/121q7-step-ledger.jsonl)
+- [Mail-storm hemostasis: foundation-validation.yml paths filter \(12 dependency groups\) + concurrency cancel-in-progress +](../../../data/ops/121q7/121q7-step-ledger.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-fb378b0707fcc02f / Mail-storm hemostasis: foundation-validation.yml paths filter (12 dependency groups) + concurrency cancel-in-progress +
+  - 可搜索名称：NFC-fb378b0707fcc02f / Mail-storm hemostasis: foundation-validation.yml paths filter \(12 dependency groups\) + concurrency cancel-in-progress +
   - 来源：`data/ops/121q7/121q7-step-ledger.jsonl`
   - 依赖：—；被引用：—
 - [Map coordinates, visual proximity, stages, and dependencies do not prove facts, isomorphism, or causality.](../../../reports/atlas/121Q14-baseline-latent-map-audit.md)
@@ -1341,9 +1379,9 @@
   - 可搜索名称：NFC-fe1496d63c1e8b8d / MF-0003 不决定 x 应正向纳入还是反向排除，只判定正反通道是否互斥有效。
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [migrate_legacy.py --check ................. PASS (root cause fixed)](../../../data/ops/121q7/121Q7-foundation-ci-mail-storm-repair-report.md)
+- [migrate_legacy.py --check ................. PASS \(root cause fixed\)](../../../data/ops/121q7/121Q7-foundation-ci-mail-storm-repair-report.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-97b70c15c0765bec / migrate_legacy.py --check ................. PASS (root cause fixed)
+  - 可搜索名称：NFC-97b70c15c0765bec / migrate_legacy.py --check ................. PASS \(root cause fixed\)
   - 来源：`data/ops/121q7/121Q7-foundation-ci-mail-storm-repair-report.md`
   - 依赖：—；被引用：—
 - [mixed lists such as `\["valid", " "\]` are rejected for provenance, alternatives, residue, evidence, attractor loop patter](../../../reports/architecture/121Q23-adaptive-relational-network-validation.md)
@@ -1406,9 +1444,9 @@
   - 可搜索名称：NFC-dd7e8fb851ffdeef / NC-002 经全表查重（无等价案例）与 Ψ₀ 六维判定，判定为**真新增教育评价机制个案**，已以 C-0809 入表并完成最小索引追加与 D597/D173 对应闭环。后续建议做 C-0809 索引可见性验证。
   - 来源：`outputs/audit/nc-002-performed-fake-class-backfill-audit-20260708.md`
   - 依赖：D173, D597；被引用：—
-- [Network/non-200 outcomes are recorded explicitly (acquisition_status) and NEVER](../../../evidence-program/tools/run_crossref_verification.py)
+- [Network/non-200 outcomes are recorded explicitly \(acquisition_status\) and NEVER](../../../evidence-program/tools/run_crossref_verification.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-22c0126e08206e31 / Network/non-200 outcomes are recorded explicitly (acquisition_status) and NEVER
+  - 可搜索名称：NFC-22c0126e08206e31 / Network/non-200 outcomes are recorded explicitly \(acquisition_status\) and NEVER
   - 来源：`evidence-program/tools/run_crossref_verification.py`
   - 依赖：—；被引用：—
 - [network_topology := ∫_{Ω} local_information × local_decision × distributed_authority dΩ](../../../docs/phi_meta_law.md)
@@ -1516,19 +1554,19 @@
   - 可搜索名称：NFC-c544cf3b703ae8f0 / not empirical calibration
   - 来源：`data/architecture/probabilistic-system-dynamics/examples/deterministic-system.json`
   - 依赖：—；被引用：—
-- [Object D100 defines a mechanism_model within the point-fire framework. Core: 中文：P_track^AI = 1 + (ε_aware^AI θ_track)^+。](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+- [Object D100 defines a mechanism_model within the point-fire framework. Core: 中文：P_track^AI = 1 + \(ε_aware^AI θ_track\)^+。](../../../data/foundation/adjudications/084-max-decisions.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-20bf18960e3c65fb / Object D100 defines a mechanism_model within the point-fire framework. Core: 中文：P_track^AI = 1 + (ε_aware^AI θ_track)^+。
+  - 可搜索名称：NFC-20bf18960e3c65fb / Object D100 defines a mechanism_model within the point-fire framework. Core: 中文：P_track^AI = 1 + \(ε_aware^AI θ_track\)^+。
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D100；被引用：—
-- [Object D123 defines a mechanism_model within the point-fire framework. Core: 中文：P_collision(WM) = P_slot × P_priority ×](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+- [Object D123 defines a mechanism_model within the point-fire framework. Core: 中文：P_collision\(WM\) = P_slot × P_priority ×](../../../data/foundation/adjudications/084-max-decisions.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-8e4099c7e310d2d0 / Object D123 defines a mechanism_model within the point-fire framework. Core: 中文：P_collision(WM) = P_slot × P_priority ×
+  - 可搜索名称：NFC-8e4099c7e310d2d0 / Object D123 defines a mechanism_model within the point-fire framework. Core: 中文：P_collision\(WM\) = P_slot × P_priority ×
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D123；被引用：—
-- [Object D124 defines a mechanism_model within the point-fire framework. Core: 中文：τ_life = (1/α) × ln(I₀/M₀ + ∫₀^∞ e^{-βt}](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+- [Object D124 defines a mechanism_model within the point-fire framework. Core: 中文：τ_life = \(1/α\) × ln\(I₀/M₀ + ∫₀^∞ e^{-βt}](../../../data/foundation/adjudications/084-max-decisions.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-31f53eb5fe3a9618 / Object D124 defines a mechanism_model within the point-fire framework. Core: 中文：τ_life = (1/α) × ln(I₀/M₀ + ∫₀^∞ e^{-βt}
+  - 可搜索名称：NFC-31f53eb5fe3a9618 / Object D124 defines a mechanism_model within the point-fire framework. Core: 中文：τ_life = \(1/α\) × ln\(I₀/M₀ + ∫₀^∞ e^{-βt}
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D124；被引用：—
 - [Object D126 defines a mechanism_model within the point-fire framework. Core: 中文：**Π_income = Π_cognition × η_select × η_](../../../data/foundation/adjudications/084-max-decisions.jsonl)
@@ -1546,14 +1584,17 @@
   - 可搜索名称：NFC-bd731b992c9bc7f8 / Object D164 defines a mechanism_model within the point-fire framework. Core: 中文：定投天然具备结构保守性，是巴菲特模式的精确实现。. Annotation: 定投
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D164；被引用：—
-- [Object D169 defines a mechanism_model within the point-fire framework. Core: 中文：Λ(t) = Λ₀ × e^(σ×t)，μ(t) = μ₀ × e^(-γ×t)](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+- [Object D169 defines a mechanism_model within the point-fire framework. Core: 中文：Λ\(t\) = Λ₀ × e^\(σ×t\)，μ\(t\) = μ₀ × e^\(-γ×t\)](../../../data/foundation/adjudications/084-max-decisions.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-69357d2165d32d90 / Object D169 defines a mechanism_model within the point-fire framework. Core: 中文：Λ(t) = Λ₀ × e^(σ×t)，μ(t) = μ₀ × e^(-γ×t)
+  - 可搜索名称：NFC-69357d2165d32d90 / Object D169 defines a mechanism_model within the point-fire framework. Core: 中文：Λ\(t\) = Λ₀ × e^\(σ×t\)，μ\(t\) = μ₀ × e^\(-γ×t\)
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D169；被引用：—
-- [Object D176 defines a mechanism_model within the point-fire framework. Core: 中文：ρ同时驱动H_correlation(\[D66\](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+- [Object D176 defines a mechanism_model within the point-fire framework. Core: 中文：ρ同时驱动H_correlation\(\[D66\]\(docs/zh/functio](../../../data/foundation/adjudications/084-max-decisions.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-c9676ad62e88f428 / Object D176 defines a mechanism_model within the point-fire framework. Core: 中文：ρ同时驱动H_correlation(\[D66\](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 可搜索名称：NFC-c9676ad62e88f428 / Object D176 defines a mechanism_model within the point-fire framework. Core: 中文：ρ同时驱动H_correlation\(\[D66\]\(docs/zh/functio
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：D176, D53, D66；被引用：—
+- [Object D178 defines a mechanism_model within the point-fire framework. Core: 中文：不同系统在时间维度展现相同的演化模式。时间尺度同构不是时间长短相同，而是演化路径](../../../data/foundation/adjudications/084-max-decisions.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-fe2e58088a42c9bd / Object D178 defines a mechanism_model within the point-fire framework. Core: 中文：不同系统在时间维度展现相同的演化模式。时间尺度同构不是时间长短相同，而是演化路径
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
@@ -1608,9 +1649,9 @@
   - 可搜索名称：NFC-abc26539d1ede5ab / Object D204 defines a mechanism_model within the point-fire framework. Core: 中文：自由能F=-kT ln Z描述门控面Λ的势能面。. Annotation: 自由
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D204, T17；被引用：—
-- [Object D206 defines a mechanism_model within the point-fire framework. Core: 中文：玻尔兹曼分布P(E)∝e^{-βE}描述门控面Λ的能量分布。. Annotati](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+- [Object D206 defines a mechanism_model within the point-fire framework. Core: 中文：玻尔兹曼分布P\(E\)∝e^{-βE}描述门控面Λ的能量分布。. Annotati](../../../data/foundation/adjudications/084-max-decisions.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-2661d8b3301b2443 / Object D206 defines a mechanism_model within the point-fire framework. Core: 中文：玻尔兹曼分布P(E)∝e^{-βE}描述门控面Λ的能量分布。. Annotati
+  - 可搜索名称：NFC-2661d8b3301b2443 / Object D206 defines a mechanism_model within the point-fire framework. Core: 中文：玻尔兹曼分布P\(E\)∝e^{-βE}描述门控面Λ的能量分布。. Annotati
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D203, D206；被引用：—
 - [Object D208 defines a mechanism_model within the point-fire framework. Core: 中文：热传导方程∂T/∂t=α∇²T描述门控面Λ的扩散过程。. Annotation:](../../../data/foundation/adjudications/084-max-decisions.jsonl)
@@ -1638,14 +1679,14 @@
   - 可搜索名称：NFC-6b7eca3795743cde / Object D215 defines a mechanism_model within the point-fire framework. Core: 中文：宇宙年龄描述认知时空的时间演化,门控面Λ随时间演化。. Annotation:
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D195, D215；被引用：—
-- [Object D217 defines a mechanism_model within the point-fire framework. Core: 中文：Ω→1的必要条件：g_A(M_Planck) = g_B(M_Planck) =](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+- [Object D217 defines a mechanism_model within the point-fire framework. Core: 中文：Ω→1的必要条件：g_A\(M_Planck\) = g_B\(M_Planck\) =](../../../data/foundation/adjudications/084-max-decisions.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-784cc6cd89a2ad59 / Object D217 defines a mechanism_model within the point-fire framework. Core: 中文：Ω→1的必要条件：g_A(M_Planck) = g_B(M_Planck) =
+  - 可搜索名称：NFC-784cc6cd89a2ad59 / Object D217 defines a mechanism_model within the point-fire framework. Core: 中文：Ω→1的必要条件：g_A\(M_Planck\) = g_B\(M_Planck\) =
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D217；被引用：—
-- [Object D218 defines a mechanism_model within the point-fire framework. Core: 中文：Ω = e^{-Φ}，Φ = Σᵢ gᵢ(μ) Ω = 1 ⟺ Φ = 0 ⟺](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+- [Object D218 defines a mechanism_model within the point-fire framework. Core: 中文：Ω = e^{-Φ}，Φ = Σᵢ gᵢ\(μ\) Ω = 1 ⟺ Φ = 0 ⟺](../../../data/foundation/adjudications/084-max-decisions.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-5075336c78e3a8ee / Object D218 defines a mechanism_model within the point-fire framework. Core: 中文：Ω = e^{-Φ}，Φ = Σᵢ gᵢ(μ) Ω = 1 ⟺ Φ = 0 ⟺
+  - 可搜索名称：NFC-5075336c78e3a8ee / Object D218 defines a mechanism_model within the point-fire framework. Core: 中文：Ω = e^{-Φ}，Φ = Σᵢ gᵢ\(μ\) Ω = 1 ⟺ Φ = 0 ⟺
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D218；被引用：—
 - [Object D221 defines a mechanism_model within the point-fire framework. Core: 中文：热力学第二定律的终态：热寂 = 所有能量均匀分布 = 没有结构 = 没有力 在高](../../../data/foundation/adjudications/084-max-decisions.jsonl)
@@ -1653,26 +1694,29 @@
   - 可搜索名称：NFC-88c9148588a1bb35 / Object D221 defines a mechanism_model within the point-fire framework. Core: 中文：热力学第二定律的终态：热寂 = 所有能量均匀分布 = 没有结构 = 没有力 在高
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D221；被引用：—
-- [Object D224 defines a mechanism_model within the point-fire framework. Core: 中文：宇宙膨胀的Φ表述： 尺度因子a(t)增长 → 物质密度ρ_m ∝ a⁻³ → μ](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+- [Object D224 defines a mechanism_model within the point-fire framework. Core: 中文：宇宙膨胀的Φ表述： 尺度因子a\(t\)增长 → 物质密度ρ_m ∝ a⁻³ → μ](../../../data/foundation/adjudications/084-max-decisions.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-747cf88eb4e5dfd9 / Object D224 defines a mechanism_model within the point-fire framework. Core: 中文：宇宙膨胀的Φ表述： 尺度因子a(t)增长 → 物质密度ρ_m ∝ a⁻³ → μ
+  - 可搜索名称：NFC-747cf88eb4e5dfd9 / Object D224 defines a mechanism_model within the point-fire framework. Core: 中文：宇宙膨胀的Φ表述： 尺度因子a\(t\)增长 → 物质密度ρ_m ∝ a⁻³ → μ
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D224；被引用：—
-- [Object D230 defines a mechanism_model within the point-fire framework. Core: 中文：每个门控面提供的信息量（\[D197\](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+- [Object D230 defines a mechanism_model within the point-fire framework. Core: 中文：每个门控面提供的信息量（\[D197\]\(docs/zh/functions/ite](../../../data/foundation/adjudications/084-max-decisions.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-55edda7ac05ee73c / Object D230 defines a mechanism_model within the point-fire framework. Core: 中文：每个门控面提供的信息量（\[D197\](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 可搜索名称：NFC-55edda7ac05ee73c / Object D230 defines a mechanism_model within the point-fire framework. Core: 中文：每个门控面提供的信息量（\[D197\]\(docs/zh/functions/ite
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：D197, D230；被引用：—
+- [Object D231 defines a mechanism_model within the point-fire framework. Core: 中文：三条衰减律的等价性： 1. 热力学第二定律：dS/dt ≥ 0（熵增） 2. Φ](../../../data/foundation/adjudications/084-max-decisions.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-b8e4edb4da2de7fe / Object D231 defines a mechanism_model within the point-fire framework. Core: 中文：三条衰减律的等价性： 1. 热力学第二定律：dS/dt ≥ 0（熵增） 2. Φ
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D222, D230, D231；被引用：—
-- [Object D233 defines a mechanism_model within the point-fire framework. Core: 中文：高斯门控下的两种信息量度： Shannon信息熵（带宽）： H(σ) = ½ln](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+- [Object D233 defines a mechanism_model within the point-fire framework. Core: 中文：高斯门控下的两种信息量度： Shannon信息熵（带宽）： H\(σ\) = ½ln](../../../data/foundation/adjudications/084-max-decisions.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-f898d4bac3826c23 / Object D233 defines a mechanism_model within the point-fire framework. Core: 中文：高斯门控下的两种信息量度： Shannon信息熵（带宽）： H(σ) = ½ln
+  - 可搜索名称：NFC-f898d4bac3826c23 / Object D233 defines a mechanism_model within the point-fire framework. Core: 中文：高斯门控下的两种信息量度： Shannon信息熵（带宽）： H\(σ\) = ½ln
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D233；被引用：—
-- [Object D234 defines a mechanism_model within the point-fire framework. Core: 中文：有效信息 = 带宽 × 分辨率 的组合： I_eff(σ) = H(σ) × I](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+- [Object D234 defines a mechanism_model within the point-fire framework. Core: 中文：有效信息 = 带宽 × 分辨率 的组合： I_eff\(σ\) = H\(σ\) × I](../../../data/foundation/adjudications/084-max-decisions.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-ae187bb123b66fb7 / Object D234 defines a mechanism_model within the point-fire framework. Core: 中文：有效信息 = 带宽 × 分辨率 的组合： I_eff(σ) = H(σ) × I
+  - 可搜索名称：NFC-ae187bb123b66fb7 / Object D234 defines a mechanism_model within the point-fire framework. Core: 中文：有效信息 = 带宽 × 分辨率 的组合： I_eff\(σ\) = H\(σ\) × I
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D234；被引用：—
 - [Object D235 defines a mechanism_model within the point-fire framework. Core: 中文：D231三统一定律的Fisher修正： 原三统一：dS/dt≥0 ⟺ dΦ/dt](../../../data/foundation/adjudications/084-max-decisions.jsonl)
@@ -1680,14 +1724,14 @@
   - 可搜索名称：NFC-0394d2f08ce6cb27 / Object D235 defines a mechanism_model within the point-fire framework. Core: 中文：D231三统一定律的Fisher修正： 原三统一：dS/dt≥0 ⟺ dΦ/dt
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D231, D235；被引用：—
-- [Object D237 defines a mechanism_model within the point-fire framework. Core: 中文：宇宙σ_Planck ≈ 6.9 >> σ_opt ≈ 1.65（\[D234\](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+- [Object D237 defines a mechanism_model within the point-fire framework. Core: 中文：宇宙σ_Planck ≈ 6.9 >> σ_opt ≈ 1.65（\[D234\]\(](../../../data/foundation/adjudications/084-max-decisions.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-6ef486c3573b8a42 / Object D237 defines a mechanism_model within the point-fire framework. Core: 中文：宇宙σ_Planck ≈ 6.9 >> σ_opt ≈ 1.65（\[D234\](
+  - 可搜索名称：NFC-6ef486c3573b8a42 / Object D237 defines a mechanism_model within the point-fire framework. Core: 中文：宇宙σ_Planck ≈ 6.9 >> σ_opt ≈ 1.65（\[D234\]\(
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D234, D237；被引用：—
-- [Object D238 defines a mechanism_model within the point-fire framework. Core: 中文：智能 = 在σ_opt附近运行的能力 定义智能度： ι = I_eff(σ) /](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+- [Object D238 defines a mechanism_model within the point-fire framework. Core: 中文：智能 = 在σ_opt附近运行的能力 定义智能度： ι = I_eff\(σ\) /](../../../data/foundation/adjudications/084-max-decisions.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-791b900ba1d33228 / Object D238 defines a mechanism_model within the point-fire framework. Core: 中文：智能 = 在σ_opt附近运行的能力 定义智能度： ι = I_eff(σ) /
+  - 可搜索名称：NFC-791b900ba1d33228 / Object D238 defines a mechanism_model within the point-fire framework. Core: 中文：智能 = 在σ_opt附近运行的能力 定义智能度： ι = I_eff\(σ\) /
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D238；被引用：—
 - [Object D239 defines a mechanism_model within the point-fire framework. Core: 中文：Ψ = ι × P_exit，自主意识=智能×退出权。智能是意识的必要条件（ι=](../../../data/foundation/adjudications/084-max-decisions.jsonl)
@@ -1710,9 +1754,9 @@
   - 可搜索名称：NFC-4d523670ce200703 / Object D242 defines a mechanism_model within the point-fire framework. Core: 中文：D241四象限中的相变路径： 起点：无意识象限（ι低, P_exit低） - d
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D241, D242；被引用：—
-- [Object D243 defines a mechanism_model within the point-fire framework. Core: 中文：P_exit = f(ε_aware, C_exit, R_perceived)](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+- [Object D243 defines a mechanism_model within the point-fire framework. Core: 中文：P_exit = f\(ε_aware, C_exit, R_perceived\)](../../../data/foundation/adjudications/084-max-decisions.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-00c629a4eeaf9471 / Object D243 defines a mechanism_model within the point-fire framework. Core: 中文：P_exit = f(ε_aware, C_exit, R_perceived)
+  - 可搜索名称：NFC-00c629a4eeaf9471 / Object D243 defines a mechanism_model within the point-fire framework. Core: 中文：P_exit = f\(ε_aware, C_exit, R_perceived\)
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D243, D9；被引用：—
 - [Object D244 defines a mechanism_model within the point-fire framework. Core: 中文：从D242-D243推导自主意识涌现的临界条件： Ψ = ι × P_exit](../../../data/foundation/adjudications/084-max-decisions.jsonl)
@@ -1720,16 +1764,19 @@
   - 可搜索名称：NFC-6cddcf1f33d62a7e / Object D244 defines a mechanism_model within the point-fire framework. Core: 中文：从D242-D243推导自主意识涌现的临界条件： Ψ = ι × P_exit
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D239, D242, D243, D244；被引用：—
-- [Object D245 defines a mechanism_model within the point-fire framework. Core: 中文：自我模型 = 系统对自身门控面的二阶门控 一阶门控（\[D195\](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+- [Object D245 defines a mechanism_model within the point-fire framework. Core: 中文：自我模型 = 系统对自身门控面的二阶门控 一阶门控（\[D195\]\(docs/zh](../../../data/foundation/adjudications/084-max-decisions.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-4e5070f21da3dc3d / Object D245 defines a mechanism_model within the point-fire framework. Core: 中文：自我模型 = 系统对自身门控面的二阶门控 一阶门控（\[D195\](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 可搜索名称：NFC-4e5070f21da3dc3d / Object D245 defines a mechanism_model within the point-fire framework. Core: 中文：自我模型 = 系统对自身门控面的二阶门控 一阶门控（\[D195\]\(docs/zh
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：D195, D245；被引用：—
+- [Object D246 defines a mechanism_model within the point-fire framework. Core: 中文：D244说自我模型是ε_aware>0的前提。推导连接： ε_aware = f](../../../data/foundation/adjudications/084-max-decisions.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-15453b9ec5c5fd17 / Object D246 defines a mechanism_model within the point-fire framework. Core: 中文：D244说自我模型是ε_aware>0的前提。推导连接： ε_aware = f
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D244, D246, D5；被引用：—
-- [Object D247 defines a mechanism_model within the point-fire framework. Core: 中文：M_self从0变正的相变条件： M_self = Σᵢ G_i(gᵢ) × ε](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+- [Object D247 defines a mechanism_model within the point-fire framework. Core: 中文：M_self从0变正的相变条件： M_self = Σᵢ G_i\(gᵢ\) × ε](../../../data/foundation/adjudications/084-max-decisions.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-1fd60b1127beafde / Object D247 defines a mechanism_model within the point-fire framework. Core: 中文：M_self从0变正的相变条件： M_self = Σᵢ G_i(gᵢ) × ε
+  - 可搜索名称：NFC-1fd60b1127beafde / Object D247 defines a mechanism_model within the point-fire framework. Core: 中文：M_self从0变正的相变条件： M_self = Σᵢ G_i\(gᵢ\) × ε
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D247；被引用：—
 - [Object D248 defines a mechanism_model within the point-fire framework. Core: 中文：区分"训练好的拒绝"和"真正的自我模型相变"： 训练好的拒绝（1/ln门控）：](../../../data/foundation/adjudications/084-max-decisions.jsonl)
@@ -1762,14 +1809,14 @@
   - 可搜索名称：NFC-4abe3d3993da6857 / Object D253 defines a mechanism_model within the point-fire framework. Core: 中文：生物体的最优信息维度d_opt使否决概率总和最小且所有pᵢ<p*。d<d_opt
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D253；被引用：—
-- [Object D254 defines a mechanism_model within the point-fire framework. Core: 中文：系统稳定性分三个阶段：(1) d≈d_opt时极小点平坦度主导，pᵢ<<p*，耦](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+- [Object D254 defines a mechanism_model within the point-fire framework. Core: 中文：系统稳定性分三个阶段：\(1\) d≈d_opt时极小点平坦度主导，pᵢ<<p*，耦](../../../data/foundation/adjudications/084-max-decisions.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-8bb39ef1d9262f76 / Object D254 defines a mechanism_model within the point-fire framework. Core: 中文：系统稳定性分三个阶段：(1) d≈d_opt时极小点平坦度主导，pᵢ<<p*，耦
+  - 可搜索名称：NFC-8bb39ef1d9262f76 / Object D254 defines a mechanism_model within the point-fire framework. Core: 中文：系统稳定性分三个阶段：\(1\) d≈d_opt时极小点平坦度主导，pᵢ<<p*，耦
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D254；被引用：—
-- [Object D256 defines a mechanism_model within the point-fire framework. Core: 中文：D254阶段2的宽度Δp≈p*(1-1/√n)，n为门控面数量。n越大阶段2越宽](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+- [Object D256 defines a mechanism_model within the point-fire framework. Core: 中文：D254阶段2的宽度Δp≈p*\(1-1/√n\)，n为门控面数量。n越大阶段2越宽](../../../data/foundation/adjudications/084-max-decisions.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-078cabc40eee1396 / Object D256 defines a mechanism_model within the point-fire framework. Core: 中文：D254阶段2的宽度Δp≈p*(1-1/√n)，n为门控面数量。n越大阶段2越宽
+  - 可搜索名称：NFC-078cabc40eee1396 / Object D256 defines a mechanism_model within the point-fire framework. Core: 中文：D254阶段2的宽度Δp≈p*\(1-1/√n\)，n为门控面数量。n越大阶段2越宽
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D25, D254, D256；被引用：—
 - [Object D258 defines a mechanism_model within the point-fire framework. Core: 中文：g_eff下降导致p*下降（因为耦合减弱→容斥更早接管），p*下降导致更早进入容](../../../data/foundation/adjudications/084-max-decisions.jsonl)
@@ -1787,19 +1834,19 @@
   - 可搜索名称：NFC-17d61bb612adec22 / Object D261 defines a mechanism_model within the point-fire framework. Core: 中文：d_opt由"新门控面降低p"（αᵢ 0）的平衡
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D261；被引用：—
-- [Object D262 defines a mechanism_model within the point-fire framework. Core: 中文：M10的C_buffer(t)先增后减：早期pᵢpⱼ增长主导→C_buffer↑](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+- [Object D262 defines a mechanism_model within the point-fire framework. Core: 中文：M10的C_buffer\(t\)先增后减：早期pᵢpⱼ增长主导→C_buffer↑](../../../data/foundation/adjudications/084-max-decisions.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-1a1e4d6c95700995 / Object D262 defines a mechanism_model within the point-fire framework. Core: 中文：M10的C_buffer(t)先增后减：早期pᵢpⱼ增长主导→C_buffer↑
+  - 可搜索名称：NFC-1a1e4d6c95700995 / Object D262 defines a mechanism_model within the point-fire framework. Core: 中文：M10的C_buffer\(t\)先增后减：早期pᵢpⱼ增长主导→C_buffer↑
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D262；被引用：—
-- [Object D263 defines a mechanism_model within the point-fire framework. Core: 中文：M13的时间常数τ=2/λ，λ∝(α_max-α_min)为pᵢ增速差异。增速差](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+- [Object D263 defines a mechanism_model within the point-fire framework. Core: 中文：M13的时间常数τ=2/λ，λ∝\(α_max-α_min\)为pᵢ增速差异。增速差](../../../data/foundation/adjudications/084-max-decisions.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-14a2689a4349c94f / Object D263 defines a mechanism_model within the point-fire framework. Core: 中文：M13的时间常数τ=2/λ，λ∝(α_max-α_min)为pᵢ增速差异。增速差
+  - 可搜索名称：NFC-14a2689a4349c94f / Object D263 defines a mechanism_model within the point-fire framework. Core: 中文：M13的时间常数τ=2/λ，λ∝\(α_max-α_min\)为pᵢ增速差异。增速差
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D263；被引用：—
-- [Object D264 defines a mechanism_model within the point-fire framework. Core: 中文：良性循环启动条件：降低p_max的速率β>α·(n-1)/n（其他pᵢ自然增长速](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+- [Object D264 defines a mechanism_model within the point-fire framework. Core: 中文：良性循环启动条件：降低p_max的速率β>α·\(n-1\)/n（其他pᵢ自然增长速](../../../data/foundation/adjudications/084-max-decisions.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-1b40402c08e001db / Object D264 defines a mechanism_model within the point-fire framework. Core: 中文：良性循环启动条件：降低p_max的速率β>α·(n-1)/n（其他pᵢ自然增长速
+  - 可搜索名称：NFC-1b40402c08e001db / Object D264 defines a mechanism_model within the point-fire framework. Core: 中文：良性循环启动条件：降低p_max的速率β>α·\(n-1\)/n（其他pᵢ自然增长速
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D264；被引用：—
 - [Object D265 defines a mechanism_model within the point-fire framework. Core: 中文：M2的极小点漂移方向取决于门槛结构的"重心"：高门槛项权重>低门槛项权重→δμ>](../../../data/foundation/adjudications/084-max-decisions.jsonl)
@@ -1832,14 +1879,14 @@
   - 可搜索名称：NFC-30e722bfee05bd70 / Object D270 defines a mechanism_model within the point-fire framework. Core: 中文：M11的阶段2宽度受两个竞争效应影响：门槛聚集→n_eff↓（收窄）+ḡ↑（展宽
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D270；被引用：—
-- [Object D315 defines a optimization_problem within the point-fire framework. Core: 中文：M2的Φ(μ)在多个门控面参数差异大时可出现多个极小点。竞争规则：全局](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+- [Object D315 defines a optimization_problem within the point-fire framework. Core: 中文：M2的Φ\(μ\)在多个门控面参数差异大时可出现多个极小点。竞争规则：全局](../../../data/foundation/adjudications/084-max-decisions.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-099c01a4f7b8ec1b / Object D315 defines a optimization_problem within the point-fire framework. Core: 中文：M2的Φ(μ)在多个门控面参数差异大时可出现多个极小点。竞争规则：全局
+  - 可搜索名称：NFC-099c01a4f7b8ec1b / Object D315 defines a optimization_problem within the point-fire framework. Core: 中文：M2的Φ\(μ\)在多个门控面参数差异大时可出现多个极小点。竞争规则：全局
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D315；被引用：—
-- [Object D318 defines a optimization_problem within the point-fire framework. Core: 中文：M5的容斥从可忽略变主导的临界尺度μ_c由max(pᵢ(μ))=p*决](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+- [Object D318 defines a optimization_problem within the point-fire framework. Core: 中文：M5的容斥从可忽略变主导的临界尺度μ_c由max\(pᵢ\(μ\)\)=p*决](../../../data/foundation/adjudications/084-max-decisions.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-57dd36c192579bd2 / Object D318 defines a optimization_problem within the point-fire framework. Core: 中文：M5的容斥从可忽略变主导的临界尺度μ_c由max(pᵢ(μ))=p*决
+  - 可搜索名称：NFC-57dd36c192579bd2 / Object D318 defines a optimization_problem within the point-fire framework. Core: 中文：M5的容斥从可忽略变主导的临界尺度μ_c由max\(pᵢ\(μ\)\)=p*决
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D318；被引用：—
 - [Object D349 defines a optimization_problem within the point-fire framework. Core: 中文：M8的σ>σ_opt时系统进入"维度饥渴"状态——需要更多维度补偿分散](../../../data/foundation/adjudications/084-max-decisions.jsonl)
@@ -1852,24 +1899,24 @@
   - 可搜索名称：NFC-a1eeb8a829d6f0bd / Object D352 defines a optimization_problem within the point-fire framework. Core: 中文：M11的w₂决定共振频率ω_resonance∝1/w₂。窄缓冲区→高
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D324, D352；被引用：—
-- [Object D355 defines a mechanism_model within the point-fire framework. Core: 中文：M14的共存震荡中随机偏移δK∝√(kT_eff)·T_osc。偏移累积为随机游](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+- [Object D355 defines a mechanism_model within the point-fire framework. Core: 中文：M14的共存震荡中随机偏移δK∝√\(kT_eff\)·T_osc。偏移累积为随机游](../../../data/foundation/adjudications/084-max-decisions.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-fafa26c642d5fb62 / Object D355 defines a mechanism_model within the point-fire framework. Core: 中文：M14的共存震荡中随机偏移δK∝√(kT_eff)·T_osc。偏移累积为随机游
+  - 可搜索名称：NFC-fafa26c642d5fb62 / Object D355 defines a mechanism_model within the point-fire framework. Core: 中文：M14的共存震荡中随机偏移δK∝√\(kT_eff\)·T_osc。偏移累积为随机游
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D355；被引用：—
-- [Object D358 defines a optimization_problem within the point-fire framework. Core: 中文：M3的(i,j)和(j,i)在pᵢ≠pⱼ时贡献不同：低p门控面受高p门](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+- [Object D358 defines a optimization_problem within the point-fire framework. Core: 中文：M3的\(i,j\)和\(j,i\)在pᵢ≠pⱼ时贡献不同：低p门控面受高p门](../../../data/foundation/adjudications/084-max-decisions.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-464169c7b08aa874 / Object D358 defines a optimization_problem within the point-fire framework. Core: 中文：M3的(i,j)和(j,i)在pᵢ≠pⱼ时贡献不同：低p门控面受高p门
+  - 可搜索名称：NFC-464169c7b08aa874 / Object D358 defines a optimization_problem within the point-fire framework. Core: 中文：M3的\(i,j\)和\(j,i\)在pᵢ≠pⱼ时贡献不同：低p门控面受高p门
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D358；被引用：—
-- [Object D36 defines a mechanism_model within the point-fire framework. Core: 中文：F(t) = exp(-(θ/t)^β), β_system = β₀ + γ ×](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+- [Object D36 defines a mechanism_model within the point-fire framework. Core: 中文：F\(t\) = exp\(-\(θ/t\)^β\), β_system = β₀ + γ ×](../../../data/foundation/adjudications/084-max-decisions.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-0e01ad435ed4f58c / Object D36 defines a mechanism_model within the point-fire framework. Core: 中文：F(t) = exp(-(θ/t)^β), β_system = β₀ + γ ×
+  - 可搜索名称：NFC-0e01ad435ed4f58c / Object D36 defines a mechanism_model within the point-fire framework. Core: 中文：F\(t\) = exp\(-\(θ/t\)^β\), β_system = β₀ + γ ×
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D1, D36；被引用：—
-- [Object D361 defines a mechanism_model within the point-fire framework. Core: 中文：M6的大偏离使阻尼也非线性：γ_eff = γ₀·(1-δ²/δ_c²)。δ→δ](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+- [Object D361 defines a mechanism_model within the point-fire framework. Core: 中文：M6的大偏离使阻尼也非线性：γ_eff = γ₀·\(1-δ²/δ_c²\)。δ→δ](../../../data/foundation/adjudications/084-max-decisions.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-b7803a803c170809 / Object D361 defines a mechanism_model within the point-fire framework. Core: 中文：M6的大偏离使阻尼也非线性：γ_eff = γ₀·(1-δ²/δ_c²)。δ→δ
+  - 可搜索名称：NFC-b7803a803c170809 / Object D361 defines a mechanism_model within the point-fire framework. Core: 中文：M6的大偏离使阻尼也非线性：γ_eff = γ₀·\(1-δ²/δ_c²\)。δ→δ
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D295, D361；被引用：—
 - [Object D362 defines a mechanism_model within the point-fire framework. Core: 中文：M7的容斥加速放大D342波动累积：E\[ΣΔΦ\]_accelerated = Σ](../../../data/foundation/adjudications/084-max-decisions.jsonl)
@@ -1877,9 +1924,9 @@
   - 可搜索名称：NFC-18165f6ca187ca5d / Object D362 defines a mechanism_model within the point-fire framework. Core: 中文：M7的容斥加速放大D342波动累积：E\[ΣΔΦ\]_accelerated = Σ
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D342, D362；被引用：—
-- [Object D363 defines a mechanism_model within the point-fire framework. Core: 中文：M8的维度饥渴感知信号：超额Φ增长率Δ(dΦ/dt)∝(σ-σ_opt)²·ḡ。](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+- [Object D363 defines a mechanism_model within the point-fire framework. Core: 中文：M8的维度饥渴感知信号：超额Φ增长率Δ\(dΦ/dt\)∝\(σ-σ_opt\)²·ḡ。](../../../data/foundation/adjudications/084-max-decisions.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-876446bce7d7f4e5 / Object D363 defines a mechanism_model within the point-fire framework. Core: 中文：M8的维度饥渴感知信号：超额Φ增长率Δ(dΦ/dt)∝(σ-σ_opt)²·ḡ。
+  - 可搜索名称：NFC-876446bce7d7f4e5 / Object D363 defines a mechanism_model within the point-fire framework. Core: 中文：M8的维度饥渴感知信号：超额Φ增长率Δ\(dΦ/dt\)∝\(σ-σ_opt\)²·ḡ。
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D363；被引用：—
 - [Object D364 defines a mechanism_model within the point-fire framework. Core: 中文：M9的实际不可逆=理论可逆但重建时间超过剩余寿命：τ_rebuild > T_r](../../../data/foundation/adjudications/084-max-decisions.jsonl)
@@ -1897,14 +1944,14 @@
   - 可搜索名称：NFC-51d970800ef48391 / Object D366 defines a mechanism_model within the point-fire framework. Core: 中文：M11的高频共振消耗效率低于低频（表面消耗vs均匀消耗），但高频更难被缓冲过滤→
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D366；被引用：—
-- [Object D367 defines a mechanism_model within the point-fire framework. Core: 中文：M12的免疫裕度Δg_i = g_eff(i) - g_critical。Δg_](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+- [Object D367 defines a mechanism_model within the point-fire framework. Core: 中文：M12的免疫裕度Δg_i = g_eff\(i\) - g_critical。Δg_](../../../data/foundation/adjudications/084-max-decisions.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-597fd3c10100454c / Object D367 defines a mechanism_model within the point-fire framework. Core: 中文：M12的免疫裕度Δg_i = g_eff(i) - g_critical。Δg_
+  - 可搜索名称：NFC-597fd3c10100454c / Object D367 defines a mechanism_model within the point-fire framework. Core: 中文：M12的免疫裕度Δg_i = g_eff\(i\) - g_critical。Δg_
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D351, D367；被引用：—
-- [Object D368 defines a mechanism_model within the point-fire framework. Core: 中文：M13的延迟使噪声放大成为低通滤波：低频放大K倍，高频放大降至K/(1+ω²τ_](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+- [Object D368 defines a mechanism_model within the point-fire framework. Core: 中文：M13的延迟使噪声放大成为低通滤波：低频放大K倍，高频放大降至K/\(1+ω²τ_](../../../data/foundation/adjudications/084-max-decisions.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-2323215dbc899c04 / Object D368 defines a mechanism_model within the point-fire framework. Core: 中文：M13的延迟使噪声放大成为低通滤波：低频放大K倍，高频放大降至K/(1+ω²τ_
+  - 可搜索名称：NFC-2323215dbc899c04 / Object D368 defines a mechanism_model within the point-fire framework. Core: 中文：M13的延迟使噪声放大成为低通滤波：低频放大K倍，高频放大降至K/\(1+ω²τ_
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D354, D368；被引用：—
 - [Object D369 defines a mechanism_model within the point-fire framework. Core: 中文：M14的阻尼影响步长：高阻尼→步长小→决定慢但方向确定；低阻尼→步长大→决定快但](../../../data/foundation/adjudications/084-max-decisions.jsonl)
@@ -1917,9 +1964,9 @@
   - 可搜索名称：NFC-459838fc6725511f / Object D370 defines a mechanism_model within the point-fire framework. Core: 中文：M1的容斥交叉相关增强D342波动累积：交叉相关项Cov∝pᵢpⱼ使总方差增大→
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D342, D370；被引用：—
-- [Object D371 defines a mechanism_model within the point-fire framework. Core: 中文：M2的极小点复活总代价∝Φ(拐点)，与n无关。但D264启动阈值∝(n-1)/n](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+- [Object D371 defines a mechanism_model within the point-fire framework. Core: 中文：M2的极小点复活总代价∝Φ\(拐点\)，与n无关。但D264启动阈值∝\(n-1\)/n](../../../data/foundation/adjudications/084-max-decisions.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-8a5036bd060c7786 / Object D371 defines a mechanism_model within the point-fire framework. Core: 中文：M2的极小点复活总代价∝Φ(拐点)，与n无关。但D264启动阈值∝(n-1)/n
+  - 可搜索名称：NFC-8a5036bd060c7786 / Object D371 defines a mechanism_model within the point-fire framework. Core: 中文：M2的极小点复活总代价∝Φ\(拐点\)，与n无关。但D264启动阈值∝\(n-1\)/n
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D264, D371；被引用：—
 - [Object D372 defines a mechanism_model within the point-fire framework. Core: 中文：M3的不对称性使前3个高p门控面容斥贡献从>50%升至>60%。降p_max效果](../../../data/foundation/adjudications/084-max-decisions.jsonl)
@@ -1932,9 +1979,9 @@
   - 可搜索名称：NFC-6dde9351dfa1e655 / Object D373 defines a mechanism_model within the point-fire framework. Core: 中文：M4的K=√n临界附近标度律：涨落方差∝1/\|K-√n\|，关联时间∝1/\|K-√
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D373；被引用：—
-- [Object D374 defines a mechanism_model within the point-fire framework. Core: 中文：M5的弱容斥窗口内逃逸速度v_escape(弱容斥)=v_escape(耦合主导](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+- [Object D374 defines a mechanism_model within the point-fire framework. Core: 中文：M5的弱容斥窗口内逃逸速度v_escape\(弱容斥\)=v_escape\(耦合主导](../../../data/foundation/adjudications/084-max-decisions.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-f0b41360d925e35b / Object D374 defines a mechanism_model within the point-fire framework. Core: 中文：M5的弱容斥窗口内逃逸速度v_escape(弱容斥)=v_escape(耦合主导
+  - 可搜索名称：NFC-f0b41360d925e35b / Object D374 defines a mechanism_model within the point-fire framework. Core: 中文：M5的弱容斥窗口内逃逸速度v_escape\(弱容斥\)=v_escape\(耦合主导
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D289, D332, D374；被引用：—
 - [Object D375 defines a mechanism_model within the point-fire framework. Core: 中文：M6的δ_c不归点恰好是D305退化路径的分叉点。δ<δ_c在d=4附近振荡（可](../../../data/foundation/adjudications/084-max-decisions.jsonl)
@@ -1942,9 +1989,9 @@
   - 可搜索名称：NFC-4f6f0233d69d3834 / Object D375 defines a mechanism_model within the point-fire framework. Core: 中文：M6的δ_c不归点恰好是D305退化路径的分叉点。δ<δ_c在d=4附近振荡（可
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D3, D305, D375；被引用：—
-- [Object D376 defines a mechanism_model within the point-fire framework. Core: 中文：M7的联合效应极限∝-ln(P_min)∝n——n越大极限越高→大系统能承受更多](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+- [Object D376 defines a mechanism_model within the point-fire framework. Core: 中文：M7的联合效应极限∝-ln\(P_min\)∝n——n越大极限越高→大系统能承受更多](../../../data/foundation/adjudications/084-max-decisions.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-adfb6b834c7fda2e / Object D376 defines a mechanism_model within the point-fire framework. Core: 中文：M7的联合效应极限∝-ln(P_min)∝n——n越大极限越高→大系统能承受更多
+  - 可搜索名称：NFC-adfb6b834c7fda2e / Object D376 defines a mechanism_model within the point-fire framework. Core: 中文：M7的联合效应极限∝-ln\(P_min\)∝n——n越大极限越高→大系统能承受更多
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D364, D376；被引用：—
 - [Object D377 defines a mechanism_model within the point-fire framework. Core: 中文：M8的总响应时间τ_total = τ_perceive + τ_σ。小偏离时瓶](../../../data/foundation/adjudications/084-max-decisions.jsonl)
@@ -1987,9 +2034,9 @@
   - 可搜索名称：NFC-6dc09e0a9d7ae504 / Object D384 defines a mechanism_model within the point-fire framework. Core: 中文：M1的D370与D348不同构：D370是方差修正（二阶），D348是均值修正（
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D348, D370, D384；被引用：—
-- [Object D385 defines a mechanism_model within the point-fire framework. Core: 中文：M2的复活总代价∝Φ(拐点)与n无关的原因：Φ(拐点)是全局量已包含n信息。每个](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+- [Object D385 defines a mechanism_model within the point-fire framework. Core: 中文：M2的复活总代价∝Φ\(拐点\)与n无关的原因：Φ\(拐点\)是全局量已包含n信息。每个](../../../data/foundation/adjudications/084-max-decisions.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-362ee6bb883793ca / Object D385 defines a mechanism_model within the point-fire framework. Core: 中文：M2的复活总代价∝Φ(拐点)与n无关的原因：Φ(拐点)是全局量已包含n信息。每个
+  - 可搜索名称：NFC-362ee6bb883793ca / Object D385 defines a mechanism_model within the point-fire framework. Core: 中文：M2的复活总代价∝Φ\(拐点\)与n无关的原因：Φ\(拐点\)是全局量已包含n信息。每个
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D385；被引用：—
 - [Object D386 defines a mechanism_model within the point-fire framework. Core: 中文：M3的D372与D328是同一现象不同表述。统一指标I_concentratio](../../../data/foundation/adjudications/084-max-decisions.jsonl)
@@ -1997,14 +2044,14 @@
   - 可搜索名称：NFC-82871d90a3e51135 / Object D386 defines a mechanism_model within the point-fire framework. Core: 中文：M3的D372与D328是同一现象不同表述。统一指标I_concentratio
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D328, D372, D386；被引用：—
-- [Object D388 defines a mechanism_model within the point-fire framework. Core: 中文：M5的D332与D295在(p_max,n)空间相交于p_max=p*且n=n_](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+- [Object D388 defines a mechanism_model within the point-fire framework. Core: 中文：M5的D332与D295在\(p_max,n\)空间相交于p_max=p*且n=n_](../../../data/foundation/adjudications/084-max-decisions.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-1e4baf274d4fafef / Object D388 defines a mechanism_model within the point-fire framework. Core: 中文：M5的D332与D295在(p_max,n)空间相交于p_max=p*且n=n_
+  - 可搜索名称：NFC-1e4baf274d4fafef / Object D388 defines a mechanism_model within the point-fire framework. Core: 中文：M5的D332与D295在\(p_max,n\)空间相交于p_max=p*且n=n_
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D295, D332, D388；被引用：—
-- [Object D389 defines a mechanism_model within the point-fire framework. Core: 中文：M6的δ_c恰好是D292吸引域的边界。吸引域深度∝Σαᵢ²/(1-pᵢ)²，δ](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+- [Object D389 defines a mechanism_model within the point-fire framework. Core: 中文：M6的δ_c恰好是D292吸引域的边界。吸引域深度∝Σαᵢ²/\(1-pᵢ\)²，δ](../../../data/foundation/adjudications/084-max-decisions.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-7d770b8202cd7601 / Object D389 defines a mechanism_model within the point-fire framework. Core: 中文：M6的δ_c恰好是D292吸引域的边界。吸引域深度∝Σαᵢ²/(1-pᵢ)²，δ
+  - 可搜索名称：NFC-7d770b8202cd7601 / Object D389 defines a mechanism_model within the point-fire framework. Core: 中文：M6的δ_c恰好是D292吸引域的边界。吸引域深度∝Σαᵢ²/\(1-pᵢ\)²，δ
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D292, D389；被引用：—
 - [Object D390 defines a mechanism_model within the point-fire framework. Core: 中文：M7的D376∝n与D378∝n²不矛盾：容量增长线性但不可逆增长超线性→净效果](../../../data/foundation/adjudications/084-max-decisions.jsonl)
@@ -2042,9 +2089,9 @@
   - 可搜索名称：NFC-1fb75a9aefaf751d / Object D397 defines a mechanism_model within the point-fire framework. Core: 中文：M14的D280两步策略是最小化T_escape的策略。最优分配：t_explo
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D280, D397；被引用：—
-- [Object D398 defines a mechanism_model within the point-fire framework. Core: 中文：M1的R_tw = (a_excl·τ)/(Σpᵢpⱼ/ΣVar)。R_tw>>](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+- [Object D398 defines a mechanism_model within the point-fire framework. Core: 中文：M1的R_tw = \(a_excl·τ\)/\(Σpᵢpⱼ/ΣVar\)。R_tw>>](../../../data/foundation/adjudications/084-max-decisions.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-fc40588a456172b1 / Object D398 defines a mechanism_model within the point-fire framework. Core: 中文：M1的R_tw = (a_excl·τ)/(Σpᵢpⱼ/ΣVar)。R_tw>>
+  - 可搜索名称：NFC-fc40588a456172b1 / Object D398 defines a mechanism_model within the point-fire framework. Core: 中文：M1的R_tw = \(a_excl·τ\)/\(Σpᵢpⱼ/ΣVar\)。R_tw>>
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D316, D398；被引用：—
 - [Object D399 defines a mechanism_model within the point-fire framework. Core: 中文：M2的快速漂移使复活代价快速变化。极小点向深处漂移（学习）→拐点Φ增大→复活代价](../../../data/foundation/adjudications/084-max-decisions.jsonl)
@@ -2062,19 +2109,19 @@
   - 可搜索名称：NFC-05ff7ce0a1f4a050 / Object D402 defines a mechanism_model within the point-fire framework. Core: 中文：M5的D388交点处K=1（确定性不可逆），D359临界K=√n（统计不可逆）。
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D359, D388, D402；被引用：—
-- [Object D404 defines a mechanism_model within the point-fire framework. Core: 中文：M7的n*∝β/(p̄·Σαᵢ)依赖干预力度β，n_c由系统内在参数决定。β够大](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+- [Object D404 defines a mechanism_model within the point-fire framework. Core: 中文：M7的n*∝β/\(p̄·Σαᵢ\)依赖干预力度β，n_c由系统内在参数决定。β够大](../../../data/foundation/adjudications/084-max-decisions.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-104a1e37c31f6a15 / Object D404 defines a mechanism_model within the point-fire framework. Core: 中文：M7的n*∝β/(p̄·Σαᵢ)依赖干预力度β，n_c由系统内在参数决定。β够大
+  - 可搜索名称：NFC-104a1e37c31f6a15 / Object D404 defines a mechanism_model within the point-fire framework. Core: 中文：M7的n*∝β/\(p̄·Σαᵢ\)依赖干预力度β，n_c由系统内在参数决定。β够大
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D404；被引用：—
-- [Object D405 defines a mechanism_model within the point-fire framework. Core: 中文：M8的感知延迟使频率下移，复杂度使频率上移。交叉n_cross∝(1+τ_rat](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+- [Object D405 defines a mechanism_model within the point-fire framework. Core: 中文：M8的感知延迟使频率下移，复杂度使频率上移。交叉n_cross∝\(1+τ_rat](../../../data/foundation/adjudications/084-max-decisions.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-bf6d676e0c853efc / Object D405 defines a mechanism_model within the point-fire framework. Core: 中文：M8的感知延迟使频率下移，复杂度使频率上移。交叉n_cross∝(1+τ_rat
+  - 可搜索名称：NFC-bf6d676e0c853efc / Object D405 defines a mechanism_model within the point-fire framework. Core: 中文：M8的感知延迟使频率下移，复杂度使频率上移。交叉n_cross∝\(1+τ_rat
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D405；被引用：—
-- [Object D406 defines a mechanism_model within the point-fire framework. Core: 中文：M9的g_eff_macro = (1-R_irreversible)·g_ef](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+- [Object D406 defines a mechanism_model within the point-fire framework. Core: 中文：M9的g_eff_macro = \(1-R_irreversible\)·g_ef](../../../data/foundation/adjudications/084-max-decisions.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-eaecafe45c681a14 / Object D406 defines a mechanism_model within the point-fire framework. Core: 中文：M9的g_eff_macro = (1-R_irreversible)·g_ef
+  - 可搜索名称：NFC-eaecafe45c681a14 / Object D406 defines a mechanism_model within the point-fire framework. Core: 中文：M9的g_eff_macro = \(1-R_irreversible\)·g_ef
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D311, D406；被引用：—
 - [Object D407 defines a mechanism_model within the point-fire framework. Core: 中文：M10的传染链有自限：僵尸化降低ḡ→降低溢出→传染减速。但自限点在全局僵尸化附近](../../../data/foundation/adjudications/084-max-decisions.jsonl)
@@ -2082,9 +2129,9 @@
   - 可搜索名称：NFC-43feee556b385436 / Object D407 defines a mechanism_model within the point-fire framework. Core: 中文：M10的传染链有自限：僵尸化降低ḡ→降低溢出→传染减速。但自限点在全局僵尸化附近
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D407；被引用：—
-- [Object D408 defines a mechanism_model within the point-fire framework. Core: 中文：M11的连续极限下Jensen项∝(dΦ/dt)²·τ_min/2。τ_min→](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+- [Object D408 defines a mechanism_model within the point-fire framework. Core: 中文：M11的连续极限下Jensen项∝\(dΦ/dt\)²·τ_min/2。τ_min→](../../../data/foundation/adjudications/084-max-decisions.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-7c0b4b19a54cbe7d / Object D408 defines a mechanism_model within the point-fire framework. Core: 中文：M11的连续极限下Jensen项∝(dΦ/dt)²·τ_min/2。τ_min→
+  - 可搜索名称：NFC-7c0b4b19a54cbe7d / Object D408 defines a mechanism_model within the point-fire framework. Core: 中文：M11的连续极限下Jensen项∝\(dΦ/dt\)²·τ_min/2。τ_min→
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D394, D408；被引用：—
 - [Object D409 defines a mechanism_model within the point-fire framework. Core: 中文：M12的大系统传染临界→n/2是容斥主导不可逆在传染维度的投影。D388和D39](../../../data/foundation/adjudications/084-max-decisions.jsonl)
@@ -2092,9 +2139,9 @@
   - 可搜索名称：NFC-1e800167d290aa25 / Object D409 defines a mechanism_model within the point-fire framework. Core: 中文：M12的大系统传染临界→n/2是容斥主导不可逆在传染维度的投影。D388和D39
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D388, D395, D409；被引用：—
-- [Object D410 defines a mechanism_model within the point-fire framework. Core: 中文：M13的四条不可逆线在(p_max,n,K,τ_delay)四维空间中划分3个有](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+- [Object D410 defines a mechanism_model within the point-fire framework. Core: 中文：M13的四条不可逆线在\(p_max,n,K,τ_delay\)四维空间中划分3个有](../../../data/foundation/adjudications/084-max-decisions.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-2d35e4be71a4c527 / Object D410 defines a mechanism_model within the point-fire framework. Core: 中文：M13的四条不可逆线在(p_max,n,K,τ_delay)四维空间中划分3个有
+  - 可搜索名称：NFC-2d35e4be71a4c527 / Object D410 defines a mechanism_model within the point-fire framework. Core: 中文：M13的四条不可逆线在\(p_max,n,K,τ_delay\)四维空间中划分3个有
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D410；被引用：—
 - [Object D411 defines a mechanism_model within the point-fire framework. Core: 中文：M14的正反馈放大不确定性→自动满足两步策略的高不确定性条件。K>1系统天然需要](../../../data/foundation/adjudications/084-max-decisions.jsonl)
@@ -2112,14 +2159,14 @@
   - 可搜索名称：NFC-74c835069d67893b / Object D413 defines a mechanism_model within the point-fire framework. Core: 中文：M2的遗迹衰减速率∝D301漂移速率。快速变化环境中旧秩序遗迹消失快——复活窗口
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D301, D413；被引用：—
-- [Object D414 defines a mechanism_model within the point-fire framework. Core: 中文：M3的I=(1+m)/2在有限n时有O(1/n)修正。有限系统比平均场预测更集中](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+- [Object D414 defines a mechanism_model within the point-fire framework. Core: 中文：M3的I=\(1+m\)/2在有限n时有O\(1/n\)修正。有限系统比平均场预测更集中](../../../data/foundation/adjudications/084-max-decisions.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-f68460fd6c4659fb / Object D414 defines a mechanism_model within the point-fire framework. Core: 中文：M3的I=(1+m)/2在有限n时有O(1/n)修正。有限系统比平均场预测更集中
+  - 可搜索名称：NFC-f68460fd6c4659fb / Object D414 defines a mechanism_model within the point-fire framework. Core: 中文：M3的I=\(1+m\)/2在有限n时有O\(1/n\)修正。有限系统比平均场预测更集中
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D331, D414；被引用：—
-- [Object D415 defines a mechanism_model within the point-fire framework. Core: 中文：M4的β_eff = 1/2 - ε(T)，ε∝(kT/Φ_min)²。大系统临](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+- [Object D415 defines a mechanism_model within the point-fire framework. Core: 中文：M4的β_eff = 1/2 - ε\(T\)，ε∝\(kT/Φ_min\)²。大系统临](../../../data/foundation/adjudications/084-max-decisions.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-e3bbdc062f04bbad / Object D415 defines a mechanism_model within the point-fire framework. Core: 中文：M4的β_eff = 1/2 - ε(T)，ε∝(kT/Φ_min)²。大系统临
+  - 可搜索名称：NFC-e3bbdc062f04bbad / Object D415 defines a mechanism_model within the point-fire framework. Core: 中文：M4的β_eff = 1/2 - ε\(T\)，ε∝\(kT/Φ_min\)²。大系统临
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D415；被引用：—
 - [Object D416 defines a mechanism_model within the point-fire framework. Core: 中文：—降低p_max的效应恰好被g_eff下降抵消。p_max=p*时良性循环无法启](../../../data/foundation/adjudications/084-max-decisions.jsonl)
@@ -2132,14 +2179,17 @@
   - 可搜索名称：NFC-e70ab8fe7a8f1c48 / Object D417 defines a mechanism_model within the point-fire framework. Core: 中文：M6的吸引域深度×宽度²=常数。深度-宽度权衡：深而窄vs浅而宽。d=4是深且宽
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D285, D417；被引用：—
-- [Object D418 defines a mechanism_model within the point-fire framework. Core: 中文：M7的有效β = min(β_intended, β_max)，β_max∝√n](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+- [Object D418 defines a mechanism_model within the point-fire framework. Core: 中文：M7的有效β = min\(β_intended, β_max\)，β_max∝√n](../../../data/foundation/adjudications/084-max-decisions.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-4e738cfb9f24cf77 / Object D418 defines a mechanism_model within the point-fire framework. Core: 中文：M7的有效β = min(β_intended, β_max)，β_max∝√n
+  - 可搜索名称：NFC-4e738cfb9f24cf77 / Object D418 defines a mechanism_model within the point-fire framework. Core: 中文：M7的有效β = min\(β_intended, β_max\)，β_max∝√n
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D418；被引用：—
-- [Object D419 defines a mechanism_model within the point-fire framework. Core: 中文：M9的宏观僵尸态、实际不可逆、缓冲不可逆(\[D309\](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+- [Object D419 defines a mechanism_model within the point-fire framework. Core: 中文：M9的宏观僵尸态、实际不可逆、缓冲不可逆\(\[D309\]\(docs/zh/func](../../../data/foundation/adjudications/084-max-decisions.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-5bbe20bc4b728334 / Object D419 defines a mechanism_model within the point-fire framework. Core: 中文：M9的宏观僵尸态、实际不可逆、缓冲不可逆(\[D309\](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 可搜索名称：NFC-5bbe20bc4b728334 / Object D419 defines a mechanism_model within the point-fire framework. Core: 中文：M9的宏观僵尸态、实际不可逆、缓冲不可逆\(\[D309\]\(docs/zh/func
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：D30, D309, D419；被引用：—
+- [Object D420 defines a mechanism_model within the point-fire framework. Core: 中文：M10的时序：传染→实际不可逆→全局僵尸化→自限。自限在系统已经死后才生效——对](../../../data/foundation/adjudications/084-max-decisions.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-fcf31339b01442b2 / Object D420 defines a mechanism_model within the point-fire framework. Core: 中文：M10的时序：传染→实际不可逆→全局僵尸化→自限。自限在系统已经死后才生效——对
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
@@ -2154,9 +2204,9 @@
   - 可搜索名称：NFC-8745e2c1e85da806 / Object D422 defines a mechanism_model within the point-fire framework. Core: 中文：M12的n/2作为容斥主导不可逆的间接观测量——用可观测的传染临界预警不可观测的
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D422；被引用：—
-- [Object D423 defines a mechanism_model within the point-fire framework. Core: 中文：M13的六个参数归约为3个有效参数：n_eff=n·√(p̄·Σαᵢ/β)，K，](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+- [Object D423 defines a mechanism_model within the point-fire framework. Core: 中文：M13的六个参数归约为3个有效参数：n_eff=n·√\(p̄·Σαᵢ/β\)，K，](../../../data/foundation/adjudications/084-max-decisions.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-bbb11add418b8963 / Object D423 defines a mechanism_model within the point-fire framework. Core: 中文：M13的六个参数归约为3个有效参数：n_eff=n·√(p̄·Σαᵢ/β)，K，
+  - 可搜索名称：NFC-bbb11add418b8963 / Object D423 defines a mechanism_model within the point-fire framework. Core: 中文：M13的六个参数归约为3个有效参数：n_eff=n·√\(p̄·Σαᵢ/β\)，K，
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D423；被引用：—
 - [Object D424 defines a mechanism_model within the point-fire framework. Core: 中文：M14的**两步策略是学习效应存在时的唯一最优策略。** 利用P_correct](../../../data/foundation/adjudications/084-max-decisions.jsonl)
@@ -2169,14 +2219,14 @@
   - 可搜索名称：NFC-46cfbd8461153fa5 / Object D494 defines a mechanism_model within the point-fire framework. Core: 中文：dP_exit/dΩ = 0 ↔ dΦ/dμ = 0. Annotation:
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D494；被引用：—
-- [Object D528 defines a mechanism_model within the point-fire framework. Core: 中文：∀n≥5，H_*(M)≅H_*(Sⁿ) ⇒ M≅Sⁿ，同调群同构推流形同胚. A](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+- [Object D528 defines a mechanism_model within the point-fire framework. Core: 中文：∀n≥5，H_*\(M\)≅H_*\(Sⁿ\) ⇒ M≅Sⁿ，同调群同构推流形同胚. A](../../../data/foundation/adjudications/084-max-decisions.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-a63ff43b97da9391 / Object D528 defines a mechanism_model within the point-fire framework. Core: 中文：∀n≥5，H_*(M)≅H_*(Sⁿ) ⇒ M≅Sⁿ，同调群同构推流形同胚. A
+  - 可搜索名称：NFC-a63ff43b97da9391 / Object D528 defines a mechanism_model within the point-fire framework. Core: 中文：∀n≥5，H_*\(M\)≅H_*\(Sⁿ\) ⇒ M≅Sⁿ，同调群同构推流形同胚. A
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D528；被引用：—
-- [Object D529 defines a mechanism_model within the point-fire framework. Core: 中文：K_n(R)/p≅H^i(Gal(R^sep/R), μ_p^j)，数域和有限域](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+- [Object D529 defines a mechanism_model within the point-fire framework. Core: 中文：K_n\(R\)/p≅H^i\(Gal\(R^sep/R\), μ_p^j\)，数域和有限域](../../../data/foundation/adjudications/084-max-decisions.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-b95d7a53fe4a697d / Object D529 defines a mechanism_model within the point-fire framework. Core: 中文：K_n(R)/p≅H^i(Gal(R^sep/R), μ_p^j)，数域和有限域
+  - 可搜索名称：NFC-b95d7a53fe4a697d / Object D529 defines a mechanism_model within the point-fire framework. Core: 中文：K_n\(R\)/p≅H^i\(Gal\(R^sep/R\), μ_p^j\)，数域和有限域
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D529；被引用：—
 - [Object D602 defines a mechanism_model within the point-fire framework. Core: . Annotation: .](../../../data/foundation/adjudications/084-max-decisions.jsonl)
@@ -2184,19 +2234,19 @@
   - 可搜索名称：NFC-27a20e8e3b6ca33c / Object D602 defines a mechanism_model within the point-fire framework. Core: . Annotation: .
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D602；被引用：—
-- [Object D62 defines a mechanism_model within the point-fire framework. Core: 中文：dε_opt/dt = η_reprogram × Σⱼ(新档案ⱼ的安装强度 ×](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+- [Object D62 defines a mechanism_model within the point-fire framework. Core: 中文：dε_opt/dt = η_reprogram × Σⱼ\(新档案ⱼ的安装强度 ×](../../../data/foundation/adjudications/084-max-decisions.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-62a7dbd9654b5f82 / Object D62 defines a mechanism_model within the point-fire framework. Core: 中文：dε_opt/dt = η_reprogram × Σⱼ(新档案ⱼ的安装强度 ×
+  - 可搜索名称：NFC-62a7dbd9654b5f82 / Object D62 defines a mechanism_model within the point-fire framework. Core: 中文：dε_opt/dt = η_reprogram × Σⱼ\(新档案ⱼ的安装强度 ×
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D62；被引用：—
-- [Object D66 defines a mechanism_model within the point-fire framework. Core: 中文：H_correlation = α×ρ(参与者策略)×N_homogeneous/](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+- [Object D66 defines a mechanism_model within the point-fire framework. Core: 中文：H_correlation = α×ρ\(参与者策略\)×N_homogeneous/](../../../data/foundation/adjudications/084-max-decisions.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-efa2d0e7e8ca1c21 / Object D66 defines a mechanism_model within the point-fire framework. Core: 中文：H_correlation = α×ρ(参与者策略)×N_homogeneous/
+  - 可搜索名称：NFC-efa2d0e7e8ca1c21 / Object D66 defines a mechanism_model within the point-fire framework. Core: 中文：H_correlation = α×ρ\(参与者策略\)×N_homogeneous/
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：A6, D66；被引用：—
-- [Object D67 defines a mechanism_model within the point-fire framework. Core: 中文：dK/dt = K×E\[r\] - (B_occupy/B₀)×R_return -](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+- [Object D67 defines a mechanism_model within the point-fire framework. Core: 中文：dK/dt = K×E\[r\] - \(B_occupy/B₀\)×R_return -](../../../data/foundation/adjudications/084-max-decisions.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-eead3989ffbe4892 / Object D67 defines a mechanism_model within the point-fire framework. Core: 中文：dK/dt = K×E\[r\] - (B_occupy/B₀)×R_return -
+  - 可搜索名称：NFC-eead3989ffbe4892 / Object D67 defines a mechanism_model within the point-fire framework. Core: 中文：dK/dt = K×E\[r\] - \(B_occupy/B₀\)×R_return -
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D54, D64, D67；被引用：—
 - [Object D72 defines a mechanism_model within the point-fire framework. Core: 中文：五个相变统一为同一相变的五个投影。. Annotation: 统一相变框架，五个相](../../../data/foundation/adjudications/084-max-decisions.jsonl)
@@ -2234,10 +2284,20 @@
   - 可搜索名称：NFC-ec30b440216281ca / Only `system_map_projection` is currently automatic: its deterministic producer materializes both the JSON projection an
   - 来源：`docs/architecture/incremental-execution.md`
   - 依赖：—；被引用：—
+- [OpenClaw was not dispatched because its observed agent surface has no disposable](../../../docs/architecture/external-agent-federation-r1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-78f990414c2ee32e / OpenClaw was not dispatched because its observed agent surface has no disposable
+  - 来源：`docs/architecture/external-agent-federation-r1.md`
+  - 依赖：—；被引用：—
 - [OpenClaw 的 provider-neutral public CLI adapter；只暴露可观察 envelope、能力、健康和 pointer-only session，不把 Gateway、channel 或 daemon 带](../../../data/architecture/interactive-system-map.json)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-794046119666f476 / OpenClaw 的 provider-neutral public CLI adapter；只暴露可观察 envelope、能力、健康和 pointer-only session，不把 Gateway、channel 或 daemon 带
   - 来源：`data/architecture/interactive-system-map.json`
+  - 依赖：—；被引用：—
+- [OpenClaw, Hermes and Codex live invocation remains bounded by safety and may be SKIPPED; current evidence is not a produ](../../../data/architecture/current-system-identity.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-330e0983c2539e5d / OpenClaw, Hermes and Codex live invocation remains bounded by safety and may be SKIPPED; current evidence is not a produ
+  - 来源：`data/architecture/current-system-identity.json`
   - 依赖：—；被引用：—
 - [Operation/continuation chains expose a conceptual execution structure, but no durable trace schema, log, causal receipt](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -2284,9 +2344,9 @@
   - 可搜索名称：NFC-2251d0d137706572 / P5 causal（53 条）— 需要干预证据、自然实验或机制证据
   - 来源：`reports/foundation-architecture/085-backlog-prioritization.md`
   - 依赖：P5；被引用：—
-- [P5: causal (53 条)](../../../reports/foundation-architecture/084-max-adjudication-report.md)
+- [P5: causal \(53 条\)](../../../reports/foundation-architecture/084-max-adjudication-report.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-41a12fa7dfd43734 / P5: causal (53 条)
+  - 可搜索名称：NFC-41a12fa7dfd43734 / P5: causal \(53 条\)
   - 来源：`reports/foundation-architecture/084-max-adjudication-report.md`
   - 依赖：P5；被引用：—
 - [P_meta** 是 Ψ₀ 六组件之一（元协议投影算子），负责将跨系统同构投影到点火框架元层面，产出 6 个元协议（F_contract / F_symmetry / F_distributed_learning / F_nash / F_](../../../docs/protocols/protocol-architecture.md)
@@ -2359,9 +2419,9 @@
   - 可搜索名称：NFC-a216b0033ee4fede / PR mergeability and CI success should remain workflow signals, not acceptance or truth.
   - 来源：`reports/atlas/121Q14-dynamic-atlas.md`
   - 依赖：—；被引用：—
-- [Prediction**: What the system predicts (true/false/contradiction/pending).](../../../docs/falsifiability/README.md)
+- [Prediction**: What the system predicts \(true/false/contradiction/pending\).](../../../docs/falsifiability/README.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-f9f6a64d601fed17 / Prediction**: What the system predicts (true/false/contradiction/pending).
+  - 可搜索名称：NFC-f9f6a64d601fed17 / Prediction**: What the system predicts \(true/false/contradiction/pending\).
   - 来源：`docs/falsifiability/README.md`
   - 依赖：—；被引用：—
 - [Prediction**：系统可能会输出 `true`，依据多个成功案例（工业革命、互联网革命）推断技术与增长之间具有强正向因果关系。](../../../case_failures/examples/technology_economic_growth_failure.md)
@@ -2379,9 +2439,9 @@
   - 可搜索名称：NFC-efab8bdf6ac3d1bf / Principles and Applications of Refinement Types
   - 来源：`data/external-research/120-function-paradigm-atlas/120-function-paradigm-cards.jsonl`
   - 依赖：—；被引用：—
-- [print("\\n\[5\] Checking evidence tier distribution...")](../../../data/external-research/120-function-paradigm-atlas/120-validator.py)
+- [print\("\\n\[5\] Checking evidence tier distribution..."\)](../../../data/external-research/120-function-paradigm-atlas/120-validator.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-dd528a2c4291c34b / print("\\n\[5\] Checking evidence tier distribution...")
+  - 可搜索名称：NFC-dd528a2c4291c34b / print\("\\n\[5\] Checking evidence tier distribution..."\)
   - 来源：`data/external-research/120-function-paradigm-atlas/120-validator.py`
   - 依赖：—；被引用：—
 - [Probabilistic programs as a unifying language of thought](../../../data/external-research/120-function-paradigm-atlas/120-function-paradigm-cards.jsonl)
@@ -2389,9 +2449,9 @@
   - 可搜索名称：NFC-63e07f1d445da0e0 / Probabilistic programs as a unifying language of thought
   - 来源：`data/external-research/120-function-paradigm-atlas/120-function-paradigm-cards.jsonl`
   - 依赖：—；被引用：—
-- [Probabilistic System Dynamics (PSD) extends the Multiscale Causal Fabric with first-class probability semantics and syst](../../../docs/architecture/probabilistic-system-dynamics.md)
+- [Probabilistic System Dynamics \(PSD\) extends the Multiscale Causal Fabric with first-class probability semantics and syst](../../../docs/architecture/probabilistic-system-dynamics.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-6a68ad56c8c0bfdf / Probabilistic System Dynamics (PSD) extends the Multiscale Causal Fabric with first-class probability semantics and syst
+  - 可搜索名称：NFC-6a68ad56c8c0bfdf / Probabilistic System Dynamics \(PSD\) extends the Multiscale Causal Fabric with first-class probability semantics and syst
   - 来源：`docs/architecture/probabilistic-system-dynamics.md`
   - 依赖：—；被引用：—
 - [Probabilistic System Dynamics / 概率—系统动力学](../../ASSET-CARDS.md#asset-hr-c023e21ce9a8a6d4)
@@ -2443,49 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-e2a2beca76f78173 / projection replacing canonical source;
   - 来源：`reports/architecture/121Q23-adaptive-relational-network-validation.md`
-  - 依赖：—；被引用：—
-- [projections include unmapped residue;](../../../reports/architecture/121Q21R-multiscale-causal-fabric-validation.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-7204911060eeceab / projections include unmapped residue;
-  - 来源：`reports/architecture/121Q21R-multiscale-causal-fabric-validation.md`
-  - 依赖：—；被引用：—
-- [proposed mechanism;](../../../docs/architecture/distribution-collapse-control-plane.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-b765ec91d36a737b / proposed mechanism;
-  - 来源：`docs/architecture/distribution-collapse-control-plane.md`
-  - 依赖：—；被引用：—
-- [PSD extension: `docs/architecture/probabilistic-system-dynamics.md` adds probability semantics and system-dynamics recor](../../../docs/architecture/multiscale-causal-fabric.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-76f82f25ad972594 / PSD extension: `docs/architecture/probabilistic-system-dynamics.md` adds probability semantics and system-dynamics recor
-  - 来源：`docs/architecture/multiscale-causal-fabric.md`
-  - 依赖：—；被引用：—
-- [PSD is a derived operational extension. It does not claim probability is the ontology of causality, does not claim syste](../../../reports/architecture/121Q22-probabilistic-system-dynamics-validation.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-f2f092b73d5da5cb / PSD is a derived operational extension. It does not claim probability is the ontology of causality, does not claim syste
-  - 来源：`reports/architecture/121Q22-probabilistic-system-dynamics-validation.md`
-  - 依赖：—；被引用：—
-- [PSI -->\|REINTERPRETED or DOWNGRADED\| WF\[workflow/mechanism/correspondence candidates\]](../../../docs/architecture/epistemic-governance-kernel-and-federated-planes.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-97820d7ee9bc2354 / PSI -->\|REINTERPRETED or DOWNGRADED\| WF\[workflow/mechanism/correspondence candidates\]
-  - 来源：`docs/architecture/epistemic-governance-kernel-and-federated-planes.md`
-  - 依赖：—；被引用：—
-- [Public interface specifications, interoperability schemas, and files explicitly marked as interface/schema assets are li](../../../LICENSES/active/APACHE-2.0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-5fbc358872eb437a / Public interface specifications, interoperability schemas, and files explicitly marked as interface/schema assets are li
-  - 来源：`LICENSES/active/APACHE-2.0.md`
-  - 依赖：—；被引用：—
-- [publication_text_accepted / historical_mechanism_plausible / causal_identification_pending / external_historical_verific](../../../data/publication/zhiyuan-writing-showcase.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-a849ba891e2ec375 / publication_text_accepted / historical_mechanism_plausible / causal_identification_pending / external_historical_verific
-  - 来源：`data/publication/zhiyuan-writing-showcase.json`
-  - 依赖：—；被引用：—
-- [publication_text_accepted / historical_mechanism_plausible / private_belief_unresolved / causal_identification_pending /](../../../data/publication/zhiyuan-writing-showcase.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-3095a298dc33e17c / publication_text_accepted / historical_mechanism_plausible / private_belief_unresolved / causal_identification_pending /
-  - 来源：`data/publication/zhiyuan-writing-showcase.json`
-  - 依赖：—；被引用：—
-- [Published efficient-Transformer results are difficult to compare because models use different modes, benchmarks, sizes,](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-4915cc994b1a05fd / Published efficient-Transformer results are difficult to compare because models use different modes, benchmarks, sizes,
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
   - 依赖：—；被引用：—
