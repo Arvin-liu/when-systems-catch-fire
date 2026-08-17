@@ -124,7 +124,7 @@ externally adjudicated.
 After the repair, the deterministic snapshot is function `5,604`, non-function
 `15,977`, Human Results `333`, Knowledge `403 cards / 332 layers / 21,913 search /
 851 aliases`, Fire Seeds `64` with `392` source-census records, and
-Self-Correction `465 deltas / 10 rules`. The map remains `70` visible nodes and
+Self-Correction `464 deltas / 10 rules`. The map remains `70` visible nodes and
 `77` typed edges on `1800×2470`, with blank reduction `0.8741007194`, height
 reduction `0.3806419258`, crossing proxy `160`, max internal gap `28`, and no
 bottom-only isolated groups.

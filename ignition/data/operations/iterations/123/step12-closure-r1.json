@@ -10,7 +10,7 @@
   },
   "projection_repair": {
     "root_cause": "Generated current-facts projections were being rediscovered as non-function claims, creating a Knowledge/search/manifest hash cycle visible in a fresh clone.",
-    "boundary_change": "data/architecture/current-facts.json and docs/architecture/current-facts.md remain path-accounted but are excluded from authoritative non-function claim discovery and Knowledge result indexing as generated projections, preventing generated-output hash feedback.",
+    "boundary_change": "data/architecture/current-facts.json and docs/architecture/current-facts.md remain path-accounted but are excluded from authoritative non-function claim discovery and Knowledge result indexing as generated projections, preventing generated-output hash feedback. The committed path-classification and downstream generated projections were then rebuilt against the final tracked tree so deleted human entries cannot remain as stale source rows.",
     "nonfunction_claims_before": 15992,
     "nonfunction_claims_after": 15977,
     "knowledge_search_before": 21929,
@@ -31,7 +31,7 @@
     "knowledge_aliases": 851,
     "fire_seeds": 64,
     "fire_seed_source_census": 392,
-    "self_correction_deltas": 465,
+    "self_correction_deltas": 464,
     "self_correction_rules": 10,
     "map_visible_nodes": 70,
     "map_typed_edges": 77,
@@ -89,9 +89,9 @@
     "expected_before_fast_forward": "d60ec8687fb1cc6b972e831a8f0dcd348ba0e83e",
     "modified_during_step12_commit": false,
     "merge_mode": "FAST_FORWARD_ONLY",
-    "final_tip_binding": "Exact task-branch commit, origin/main, local/tracking/ls-remote/fresh-fetch equality and the independent 1111 receipt are bound after this single Step 12 commit; no self-referential SHA is stored here."
+    "final_tip_binding": "Exact final task-branch tip, origin/main, local/tracking/ls-remote/fresh-fetch equality and the independent 1111 receipt are bound after the fast-forward-only projection closure repair; no self-referential SHA is stored here."
   },
   "claim_ceiling": "Repository-scoped current-state synchronization, deterministic projection, geometry/accessibility and bounded executor-conformance evidence only; no external truth, Owner acceptance, production safety or epistemic upgrade is inferred.",
-  "closure_binding": "The final release requires push of this Step 12 commit, fast-forward-only main, fresh-clone replay and an independent durable 1111 receipt with exact SHA/PR evidence.",
+  "closure_binding": "The final release requires push of the final Step 12 task-branch tip, fast-forward-only main, fresh-clone replay and an independent durable 1111 receipt with exact SHA/PR evidence; the post-commit projection closure repair is fast-forward-only and is not a history rewrite.",
   "next_step": "FINAL_FAST_FORWARD_AND_RELAY"
 }
