@@ -9,6 +9,7 @@ formal `main` tip does not move during the task branch run.
 | Step | Status | Commit | Remote | Summary |
 | --- | --- | --- | --- | --- |
 | 00 | COMPLETED | pending closure | pending closure | Fresh baseline, Control Plane gap audit and two-ready-child concurrency experiment. |
+| 01 | COMPLETED | pending closure | pending closure | Canonical typed event ledger with CAS, hash chain, deterministic replay and snapshot-tail recovery. |
 
 ## Boundary
 
@@ -24,3 +25,13 @@ this task.
 - Gap audit: `reports/architecture/os-control-plane-r2-gap-audit.md`
 - Inherited core regression: 143 focused tests passed.
 - Reference/federation and state gates passed; historical reconciliation residuals remain explicitly classified.
+
+## Step 01 evidence
+
+- Event chain implementation: `agent_runtime/event_ledger.py`
+- Targeted unit tests: `tests/test_event_ledger.py` (`3/3`)
+- Adversarial validator: `tools/validate_event_ledger.py` (`PASS`)
+- The ledger rejects stale aggregate writers, duplicate event identities,
+  corrupted chain/payload records and forbidden prompt/secret material. A
+  snapshot may be older than the ledger and is recovered by deterministic tail
+  replay; a snapshot that is not a ledger prefix is rejected.
