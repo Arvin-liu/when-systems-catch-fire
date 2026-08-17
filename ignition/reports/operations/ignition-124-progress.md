@@ -11,6 +11,7 @@ formal `main` tip does not move during the task branch run.
 | 00 | COMPLETED | pending closure | pending closure | Fresh baseline, Control Plane gap audit and two-ready-child concurrency experiment. |
 | 01 | COMPLETED | pending closure | pending closure | Canonical typed event ledger with CAS, hash chain, deterministic replay and snapshot-tail recovery. |
 | 02 | COMPLETED | pending closure | pending closure | Monotonic Effective Policy compiler with digest binding, narrowing proof trace and escalation rejection. |
+| 03 | COMPLETED | pending closure | pending closure | Typed resource intents, hierarchical overlap, atomic multi-resource leases and deterministic conflict arbitration. |
 
 ## Boundary
 
@@ -47,3 +48,14 @@ this task.
   prohibitions use a stronger-restriction union. Pack and executor ceilings
   cannot widen parent scope, and approval is valid only for a predeclared,
   task-bound action.
+
+## Step 03 evidence
+
+- Resource arbiter: `agent_runtime/resource_arbitration.py`
+- Targeted unit tests: `tests/test_resource_arbitration.py` (`3/3`)
+- Adversarial validator: `tools/validate_resource_arbitration.py` (`PASS`)
+- Shared reads may coexist; writes and metadata/external/unknown side effects
+  conflict on exact or hierarchical overlap. Multi-resource acquisition is
+  all-or-nothing and must be in canonical order. Lease expiry is recoverable;
+  unknown side effects remain serialized and are never treated as safe for
+  automatic failover.
