@@ -55,6 +55,7 @@ from .routing import PackActionProvenance, PackAwareRouter, PackRoutingError, Pa
 from .executor_health import ExecutorCapabilityLease, ExecutorHealthError, ExecutorHealthStore, ExecutorLeaseUnavailable
 from .queue_control import QueueAdmissionError, QueueControlError, QueueItem, QueueNotDispatchable, WorkQueue
 from .dispatch_reconciliation import DispatchConflict, DispatchEnvelope, DispatchError, DispatchProgress, DispatchReceipt, DispatchRecord, DurableDispatchStore
+from .concurrent_memory import ConcurrentOperationalMemoryStore, MemoryCASConflict, MemoryDuplicateConflict, MemoryR2Error, MemoryRecord
 
 __all__ = [
     "ActionObservation",
@@ -142,4 +143,9 @@ __all__ = [
     "DispatchReceipt",
     "DispatchRecord",
     "DurableDispatchStore",
+    "ConcurrentOperationalMemoryStore",
+    "MemoryCASConflict",
+    "MemoryDuplicateConflict",
+    "MemoryR2Error",
+    "MemoryRecord",
 ]

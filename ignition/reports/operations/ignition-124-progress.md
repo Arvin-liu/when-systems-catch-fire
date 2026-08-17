@@ -16,6 +16,7 @@ formal `main` tip does not move during the task branch run.
 | 05 | COMPLETED | pending closure | pending closure | Digest-bound executor capability/health leases with expiry, cooldown, stale rejection and deterministic routing candidates. |
 | 06 | COMPLETED | pending closure | pending closure | Durable bounded queue with quota/backpressure, priority/aging, deadline, pause and cancel boundaries. |
 | 07 | COMPLETED | pending closure | pending closure | Durable external dispatch/ack/progress/receipt journal with validation gate and conservative reconciliation. |
+| 08 | COMPLETED | pending closure | pending closure | Concurrent operational memory with generation CAS, duplicate suppression, tombstones, stale capsules and deterministic compaction projection. |
 
 ## Boundary
 
@@ -114,3 +115,15 @@ this task.
   explicitly read-only effect. External and unknown side effects stop at
   `REQUIRES_RECONCILIATION`, with forged, duplicate and out-of-order records
   rejected.
+
+## Step 08 evidence
+
+- Concurrent memory implementation: `agent_runtime/concurrent_memory.py`
+- Targeted unit tests: `tests/test_concurrent_memory.py` (`3/3`)
+- Adversarial validator: `tools/validate_concurrent_memory.py` (`PASS`)
+- Multi-writer append is serialized by a durable generation CAS; identical
+  event/semantic content is idempotently suppressed while conflicting content
+  fails closed. Supersession and redacting tombstones are atomic. Capsules
+  carry the source generation and digest, so later writes make them
+  explicitly stale. Compaction is a deterministic bounded projection and
+  leaves append-only source history intact.
