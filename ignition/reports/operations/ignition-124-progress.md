@@ -12,6 +12,7 @@ formal `main` tip does not move during the task branch run.
 | 01 | COMPLETED | pending closure | pending closure | Canonical typed event ledger with CAS, hash chain, deterministic replay and snapshot-tail recovery. |
 | 02 | COMPLETED | pending closure | pending closure | Monotonic Effective Policy compiler with digest binding, narrowing proof trace and escalation rejection. |
 | 03 | COMPLETED | pending closure | pending closure | Typed resource intents, hierarchical overlap, atomic multi-resource leases and deterministic conflict arbitration. |
+| 04 | COMPLETED | pending closure | pending closure | Bounded concurrent DAG scheduler with budgets, cancellation, deadlines, checkpoint/resume and terminal rollup. |
 
 ## Boundary
 
@@ -59,3 +60,16 @@ this task.
   all-or-nothing and must be in canonical order. Lease expiry is recoverable;
   unknown side effects remain serialized and are never treated as safe for
   automatic failover.
+
+## Step 04 evidence
+
+- Scheduler implementation: `agent_runtime/scheduler.py`
+- Targeted unit tests: `tests/test_scheduler.py` (`4/4`)
+- Adversarial validator: `tools/validate_scheduler.py` (`PASS`)
+- The scheduler validates a dependency DAG, dispatches only ready units,
+  caps both global and per-executor concurrency, orders equal-priority work
+  deterministically, acquires resource leases atomically, and persists state
+  before waiting on worker futures. Time, action and output budgets, deadline
+  expiry, cooperative cancellation, fail-fast/independent policy, and
+  checkpoint-with-explicit-resume are terminally visible. The 39-test
+  event/policy/resource/scheduler/core regression is `PASS`.
