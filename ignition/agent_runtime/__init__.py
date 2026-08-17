@@ -53,6 +53,7 @@ from .supervisor import ChildRunSpec, EpisodeBudget, EpisodeSpec, Supervisor, Su
 from .profile import ProfileProjection, ProfileProjectionError, apply_profiles_to_episode, load_profile_registry, project_profile, select_packs
 from .routing import PackActionProvenance, PackAwareRouter, PackRoutingError, PackValidationReceipt
 from .executor_health import ExecutorCapabilityLease, ExecutorHealthError, ExecutorHealthStore, ExecutorLeaseUnavailable
+from .queue_control import QueueAdmissionError, QueueControlError, QueueItem, QueueNotDispatchable, WorkQueue
 
 __all__ = [
     "ActionObservation",
@@ -128,4 +129,9 @@ __all__ = [
     "ExecutorHealthError",
     "ExecutorHealthStore",
     "ExecutorLeaseUnavailable",
+    "QueueAdmissionError",
+    "QueueControlError",
+    "QueueItem",
+    "QueueNotDispatchable",
+    "WorkQueue",
 ]

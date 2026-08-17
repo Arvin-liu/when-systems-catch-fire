@@ -14,6 +14,7 @@ formal `main` tip does not move during the task branch run.
 | 03 | COMPLETED | pending closure | pending closure | Typed resource intents, hierarchical overlap, atomic multi-resource leases and deterministic conflict arbitration. |
 | 04 | COMPLETED | pending closure | pending closure | Bounded concurrent DAG scheduler with budgets, cancellation, deadlines, checkpoint/resume and terminal rollup. |
 | 05 | COMPLETED | pending closure | pending closure | Digest-bound executor capability/health leases with expiry, cooldown, stale rejection and deterministic routing candidates. |
+| 06 | COMPLETED | pending closure | pending closure | Durable bounded queue with quota/backpressure, priority/aging, deadline, pause and cancel boundaries. |
 
 ## Boundary
 
@@ -86,3 +87,15 @@ this task.
   probe enters cooldown and repeated failures become `UNSAFE_TO_PROBE` until
   a fresh observation replaces the lease. Tampered persisted leases are
   rejected before routing.
+
+## Step 06 evidence
+
+- Queue control implementation: `agent_runtime/queue_control.py`
+- Targeted unit tests: `tests/test_queue_control.py` (`3/3`)
+- Adversarial validator: `tools/validate_queue_control.py` (`PASS`)
+- Admission is bounded by depth and profile/project quotas; rejected items
+  remain as durable `REJECTED_BACKPRESSURE` or `REJECTED_QUOTA` records. Ready
+  items use priority, deterministic FIFO and aging. `not_before` and deadline
+  are checked before admission, pause blocks admission, pre-dispatch cancel
+  becomes `CANCELLED_BEFORE_DISPATCH`, and post-dispatch cancel is explicitly
+  `CANCEL_REQUESTED_REQUIRES_RECONCILIATION`.
