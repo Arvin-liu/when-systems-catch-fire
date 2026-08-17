@@ -17,6 +17,7 @@ formal `main` tip does not move during the task branch run.
 | 06 | COMPLETED | pending closure | pending closure | Durable bounded queue with quota/backpressure, priority/aging, deadline, pause and cancel boundaries. |
 | 07 | COMPLETED | pending closure | pending closure | Durable external dispatch/ack/progress/receipt journal with validation gate and conservative reconciliation. |
 | 08 | COMPLETED | pending closure | pending closure | Concurrent operational memory with generation CAS, duplicate suppression, tombstones, stale capsules and deterministic compaction projection. |
+| 09 | COMPLETED | pending closure | pending closure | Human-readable Driver Console projection with next-action ordering, open obligations and explicit epistemic boundaries. |
 
 ## Boundary
 
@@ -127,3 +128,15 @@ this task.
   carry the source generation and digest, so later writes make them
   explicitly stale. Compaction is a deterministic bounded projection and
   leaves append-only source history intact.
+
+## Step 09 evidence
+
+- Driver Console implementation: `agent_runtime/driver_console.py`
+- Targeted unit tests: `tests/test_driver_console.py` (`2/2`)
+- CLI projection tool: `tools/driver_console.py` (`--json` or human-readable)
+- The console prioritizes reconciliation, stale/unsafe health, resource
+  conflicts, queue pause, and explicit checkpoint resume before routine
+  admission. It explains queue depth, route health, resource policy,
+  dispatch states, memory generation/staleness and policy digest in one
+  bounded view. The boundary text states that the projection cannot establish
+  external completion, truth, Owner acceptance or epistemic acceptance.
