@@ -4,6 +4,26 @@
 
 [返回资产卡总索引](../ASSET-CARDS.md)
 
+<a id="asset-hr-628b84a2327f5c52"></a>
+## 碰撞证据链：不听话的人 × 点火两张表（20260711）
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-628B84A2327F5C52` · [outputs/collisions/20260711-disobedience-subjectivity/README.md](../../outputs/collisions/20260711-disobedience-subjectivity/README.md)
+- **为什么产生：** 此来源记录了什么：碰撞证据链：不听话的人 × 点火两张表（20260711）？
+- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **当前结果：** ee4819880dbbf258a15eb96d572762bc10f16fef8de85f4c41b9dcdfe49fa497
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** `D600`, `D601`, `D602`, `D595`, `D583`, `D598`, `D597`
+- **来源与证据：** `outputs/collisions/20260711-disobedience-subjectivity/README.md`, `202`
+- **演化历史：** 2026-07-11: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `碰撞证据链：不听话的人 × 点火两张表（20260711）`, `README`
+
 <a id="asset-hr-62de12643e577ef4"></a>
 ## 084 Architecture Truth Freeze Readiness Assessment
 
@@ -983,23 +1003,3 @@
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `COGNITION`, `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `Ψ₀ 判定矩阵（psi0-decision-matrix）`, `psi0-decision-matrix`
-
-<a id="asset-hr-814cd0e9847c82e3"></a>
-## 121Q22 Probability and Systems Source Map
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-814CD0E9847C82E3` · [reports/research/121Q22-probability-systems-source-map.md](../../reports/research/121Q22-probability-systems-source-map.md)
-- **为什么产生：** 此来源记录了什么：121Q22 Probability and Systems Source Map？
-- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **当前结果：** These sources are used as modeling references and boundary checks. They are not imported as proved Ignition claims.
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `reports/research/121Q22-probability-systems-source-map.md`, `121Q22-PROBABILITY-SYSTEMS-SOURCE-MAP`
-- **演化历史：** 2026-07-16: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`
-- **可搜索名称：** `121Q22 Probability and Systems Source Map`, `121Q22-probability-systems-source-map`

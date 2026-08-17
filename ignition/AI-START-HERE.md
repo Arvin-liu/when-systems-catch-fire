@@ -85,7 +85,7 @@ operational memory 和 Driver Console 作为独立、有界的 control-plane rec
 - Multiscale Causal Fabric、Probabilistic System Dynamics 和 Adaptive Relational Network 是当前建模/投影能力，不是新真值层。
 - 关系网络的邻接、相似性、中心性、社群、检索和行为变化不能升级为真理、价值、因果或内部学习机制证明。
 - 迭代方法只能约束操作纪律，不能证明实质结论正确。
-- 当前迭代方法是 `1.4.0`（Current），系统图是 `0.9.0`（Current）；`0.8.0` 是上一版 Historical。
+- 当前迭代方法是 `1.4.0`（Current），系统图是 `0.9.0`（Current）；`0.8.0` 是上一版 Historical，`0.7.0` 是更早 Historical。
 
 方法 `1.3.0` 与系统图 `0.6.0`、`0.5.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0`、`0.2.0`、`0.3.0`、`0.4.0` 为更早 Historical。当前方法要求读取 `data/operations/project-components.json` 与 `data/operations/change-propagation-topology.json`，把变更路径解析为构件、遍历声明关系到 fixpoint、绑定决定／map diff／residue，再由 registries 与布局 overlay 派生系统图。不得把 Git diff、依赖或可达性称为现实因果证明。
 - Q32I 的方法 `1.3.0` 与系统图 `0.3.0` 已独立接受、由 PR #62 普通合并并完成生产收口；其后方法升为 `1.4.0` Current。

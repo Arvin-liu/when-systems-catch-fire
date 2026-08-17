@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [### Newly forced or more sharply specified](../../../docs/architecture/getnote-1329-epistemic-governance-pressure-test.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-DBFAD75C0272CC04 / ### Newly forced or more sharply specified / IMPLICIT-DBFAD75C0272CC04
+  - 来源：`docs/architecture/getnote-1329-epistemic-governance-pressure-test.md`
+  - 依赖：—；被引用：—
+- [### OpenClaw adapter boundary](../../../docs/architecture/external-agent-federation-r1.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-C701DC67046560BF / ### OpenClaw adapter boundary / IMPLICIT-C701DC67046560BF
+  - 来源：`docs/architecture/external-agent-federation-r1.md`
+  - 依赖：—；被引用：—
+- [### Reinforced or made operationally visible in GetNote](../../../docs/architecture/getnote-1329-epistemic-governance-pressure-test.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-01E84B21408175B8 / ### Reinforced or made operationally visible in GetNote / IMPLICIT-01E84B21408175B8
+  - 来源：`docs/architecture/getnote-1329-epistemic-governance-pressure-test.md`
+  - 依赖：—；被引用：—
 - [### target gate 为什么要放在案例最前面](../../../data/operations/iterations/112/publication/r0-original/volume/%E7%AC%AC%E4%B8%80%E5%8D%B7-%E7%AC%AC%E4%BA%8C%E7%A8%BF.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-47FA4A1D0308120B / ### target gate 为什么要放在案例最前面 / IMPLICIT-47FA4A1D0308120B
@@ -2487,20 +2502,5 @@
 - [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0460}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-01986F28BB2CE1E0 / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0460}\)=1\]. / IMPLICIT-01986F28BB2CE1E0
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0461}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-7528BE11D5560F55 / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0461}\)=1\]. / IMPLICIT-7528BE11D5560F55
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0462}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-D77A69F426897D66 / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0462}\)=1\]. / IMPLICIT-D77A69F426897D66
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0463}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-222C7E4EB9ECE672 / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0463}\)=1\]. / IMPLICIT-222C7E4EB9ECE672
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—

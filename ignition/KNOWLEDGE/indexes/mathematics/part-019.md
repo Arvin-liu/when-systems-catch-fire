@@ -4,6 +4,26 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [艺术是低风险领域。艺术结论多为 L1-L2，少数可有 L3 框架内判定。不能把审美判断写成客观定理。](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-dcbdb7e6c71f3545 / 艺术是低风险领域。艺术结论多为 L1-L2，少数可有 L3 框架内判定。不能把审美判断写成客观定理。
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [节点身份、canonical target 与生命周期来自 component registry。](../../../docs/architecture/interactive-system-map.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-2b361754a47ba621 / 节点身份、canonical target 与生命周期来自 component registry。
+  - 来源：`docs/architecture/interactive-system-map.md`
+  - 依赖：—；被引用：—
+- [若任务涉及函数、模型、定理、公式、律、跨域类比或现实强断言，在读取 Foundation 后立即读取 `docs/foundation/claim-governance-and-function-identity.md`、`data/fou](../../../AI-START-HERE.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a5c33c6712b1feec / 若任务涉及函数、模型、定理、公式、律、跨域类比或现实强断言，在读取 Foundation 后立即读取 `docs/foundation/claim-governance-and-function-identity.md`、`data/fou
+  - 来源：`AI-START-HERE.md`
+  - 依赖：—；被引用：—
+- [若任务涉及翻译、命题抽取、跨语言建模或 L6 公共故事、文章与作品反馈，还应读取 `docs/architecture/language-thought-logic-plane.md`、`docs/language-thought/READ](../../../AI-START-HERE.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-d7176361ace31526 / 若任务涉及翻译、命题抽取、跨语言建模或 L6 公共故事、文章与作品反馈，还应读取 `docs/architecture/language-thought-logic-plane.md`、`docs/language-thought/READ
+  - 来源：`AI-START-HERE.md`
+  - 依赖：—；被引用：—
 - [若任务需要全项目导航，读取 `docs/architecture/interactive-system-map.md`、`data/architecture/interactive-system-map.json` 与生成 SVG。图是当前](../../../AI-START-HERE.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-b6f00d6b81ac97c9 / 若任务需要全项目导航，读取 `docs/architecture/interactive-system-map.md`、`data/architecture/interactive-system-map.json` 与生成 SVG。图是当前

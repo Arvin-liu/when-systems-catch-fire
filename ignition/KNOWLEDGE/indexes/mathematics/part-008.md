@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [title: "弱容斥-不可逆边界函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-518A9418133B8994 / title: "弱容斥-不可逆边界函数" / IMPLICIT-518A9418133B8994
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "弱容斥窗口-逃逸速度联合函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-36D6E0A4ED8F12E9 / title: "弱容斥窗口-逃逸速度联合函数" / IMPLICIT-36D6E0A4ED8F12E9
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "弱混合角-容斥约束函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-48C2D9BFB5F1EBA9 / title: "弱混合角-容斥约束函数" / IMPLICIT-48C2D9BFB5F1EBA9
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
 - [title: "弹性-弱度偏离函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-BA8A084BB59E205A / title: "弹性-弱度偏离函数" / IMPLICIT-BA8A084BB59E205A
@@ -2487,20 +2502,5 @@
 - [Within the source-defined scope, Φ二阶近似函数 is adjudicated as RELATION: M3的改进近似：Φ_2=Σpᵢ+Σpᵢ²/2在pᵢ<0.8时误差<17%，远优于Φ_approx。推荐](../../../data/foundation/adjudications/core-kernel.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
   - 可搜索名称：CLAIM-D282 / Within the source-defined scope, Φ二阶近似函数 is adjudicated as RELATION: M3的改进近似：Φ_2=Σpᵢ+Σpᵢ²/2在pᵢ<0.8时误差<17%，远优于Φ_approx。推荐
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, Φ跨域稳定性定理 is adjudicated as FORMAL_PROPOSITION: Stability\(Φ\)=∃μ*:Φ\(μ*\)=min。D224是T23的证明——](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：CLAIM-T23 / Within the source-defined scope, Φ跨域稳定性定理 is adjudicated as FORMAL_PROPOSITION: Stability\(Φ\)=∃μ*:Φ\(μ*\)=min。D224是T23的证明——
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：D224, T23；被引用：—
-- [Within the source-defined scope, Φ跨域统一定理\(D224升级\) is adjudicated as RELATION: Φ在不同域中展现统一结构：物理Φ=零温自由能、社会Φ=权力熵、认知Φ=认知势能。三域统](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-T39 / Within the source-defined scope, Φ跨域统一定理\(D224升级\) is adjudicated as RELATION: Φ在不同域中展现统一结构：物理Φ=零温自由能、社会Φ=权力熵、认知Φ=认知势能。三域统
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：D224；被引用：—
-- [Within the source-defined scope, Φ近似阶数选择函数 is adjudicated as RELATION: M3的Φ近似阶数选择：pᵢ<0.5→1阶（误差<13%），0.5-0.8→2阶（<17%），0.8](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D296 / Within the source-defined scope, Φ近似阶数选择函数 is adjudicated as RELATION: M3的Φ近似阶数选择：pᵢ<0.5→1阶（误差<13%），0.5-0.8→2阶（<17%），0.8
   - 来源：`data/foundation/adjudications/core-kernel.jsonl`
   - 依赖：—；被引用：—

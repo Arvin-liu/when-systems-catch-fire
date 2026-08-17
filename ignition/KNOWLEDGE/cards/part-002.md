@@ -364,6 +364,26 @@
 - **主题：** `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `NFC-ea55d13b7ba7aeff`, `[任务 106 合并后真相传播与当前真相调和](../../ITERATION.md)（规范化 ledger / 9 维 impact 引擎 / current-truth 投影 / fail-closed 验证器）。`, `- [任务 106 合并后真相传播与当前真相调和](../../ITERATION.md)（规范化 ledger / 9 维 impact 引擎 / current-truth 投影 / fail-closed 验证器）。`
 
+<a id="asset-nfc-efd2508248c8410a"></a>
+## 控制平面把事件、权限收窄、共享资源、并发 ready-set、健康租约、队列、外部回执和操作记忆分别持久化；Driver Console 只投影下一步与开放义务，不成为第二真相源。
+
+- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-efd2508248c8410a` · [docs/project-current-state.md](../../docs/project-current-state.md)
+- **为什么产生：** Expose a materially public CROSS_DOMAIN_CORRESPONDENCE and its correction or evidence boundary.
+- **当前状态：** `RETAINED_AS_STRUCTURAL_METAPHOR`
+- **当前结果：** - 控制平面把事件、权限收窄、共享资源、并发 ready-set、健康租约、队列、外部回执和操作记忆分别持久化；Driver Console 只投影下一步与开放义务，不成为第二真相源。
+- **双成熟度：** 数学 `M0`；外部证据 `E0`
+- **假设与表述上限：** Analogy or structural metaphor only; no homomorphism, isomorphism or causal identity is established.
+- **未建立：** Do not present registry presence, internal tests, AI agreement or formal appearance as proof, external validation, novelty, peer review or replication.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `docs/project-current-state.md`
+- **演化历史：** Lineage: NO_NAMED_LINEAGE；Lineage status: CURRENT_SCOPED_RECORD；Reviewer state: SOURCE_TEXT_RULE_ADJUDICATED
+- **最近变化：** Task 100 disposition: RETAINED_AS_STRUCTURAL_METAPHOR
+- **下一步：** No open obligation was recorded.
+- **主题：** `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `NFC-efd2508248c8410a`, `控制平面把事件、权限收窄、共享资源、并发 ready-set、健康租约、队列、外部回执和操作记忆分别持久化；Driver Console 只投影下一步与开放义务，不成为第二真相源。`, `- 控制平面把事件、权限收窄、共享资源、并发 ready-set、健康租约、队列、外部回执和操作记忆分别持久化；Driver Console 只投影下一步与开放义务，不成为第二真相源。`
+
 <a id="asset-nfc-f31cd02c40b70cc7"></a>
 ## 跨域对应 2,178；
 
@@ -983,23 +1003,3 @@
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `生命周期审计 · 任务 108（双相迭代终态化与自闭合当前真相 R1）`, `lifecycle-audit-108`
-
-<a id="asset-hr-1c328f9ffe6aee1f"></a>
-## V4 规范性审核 - 可持续性协议 (Sustainability Protocol)
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-1C328F9FFE6AEE1F` · [docs/governance/meta-protocol-reviews/protocols/V4.md](../../docs/governance/meta-protocol-reviews/protocols/V4.md)
-- **为什么产生：** 此来源记录了什么：V4 规范性审核 - 可持续性协议 (Sustainability Protocol)？
-- **当前状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
-- **当前结果：** 价值：在多时间尺度上维持再生能力、承载能力、多样性与代际公平，是共同体长期繁荣的硬边界。条件：仅当它指向再生与公平，而非维持有害现状时才有价值。伤害：当它被用作保护有害系统、压制必要改革或牺牲主体尊严的借口时，会伤害共同体。不可缺少的约束：再生优先于存量维持、不得保护有害系统、代际公平、多样性、不得无限压倒个体。
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `docs/governance/meta-protocol-reviews/protocols/V4.md`, `REPOSITORY_HISTORY_SOURCE`
-- **演化历史：** 2026-07-11: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`
-- **可搜索名称：** `V4 规范性审核 - 可持续性协议 (Sustainability Protocol)`, `V4`

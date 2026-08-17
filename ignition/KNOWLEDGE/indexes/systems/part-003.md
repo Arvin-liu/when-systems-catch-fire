@@ -4,6 +4,36 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Projection does not prove integration, truth, value or causality.](../../../data/architecture/adaptive-relational-network/real-history/after-projection.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-d5c0ed81cf9d0142 / Projection does not prove integration, truth, value or causality.
+  - 来源：`data/architecture/adaptive-relational-network/real-history/after-projection.json`
+  - 依赖：—；被引用：—
+- [projection episode only](../../../data/architecture/adaptive-relational-network/real-history/after-projection.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-499aadc238464993 / projection episode only
+  - 来源：`data/architecture/adaptive-relational-network/real-history/after-projection.json`
+  - 依赖：—；被引用：—
+- [projection from 1f3815538cf56d0f35cc06c6b2396fadf33a34a2; not canonical truth](../../../data/architecture/adaptive-relational-network/real-history/before-projection.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-5d3dd4d3547702f6 / projection from 1f3815538cf56d0f35cc06c6b2396fadf33a34a2; not canonical truth
+  - 来源：`data/architecture/adaptive-relational-network/real-history/before-projection.json`
+  - 依赖：—；被引用：—
+- [projection from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not canonical truth](../../../data/architecture/adaptive-relational-network/real-history/after-projection.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-6da1b63a5fe3f696 / projection from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not canonical truth
+  - 来源：`data/architecture/adaptive-relational-network/real-history/after-projection.json`
+  - 依赖：—；被引用：—
+- [projection only](../../../data/architecture/adaptive-relational-network/examples/ai-external-knowledge-vs-internal-integration.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-db04870476494591 / projection only
+  - 来源：`data/architecture/adaptive-relational-network/examples/ai-external-knowledge-vs-internal-integration.json`
+  - 依赖：—；被引用：—
+- [projection perturbation only](../../../data/architecture/adaptive-relational-network/real-history/after-projection.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-310d37809c7ed938 / projection perturbation only
+  - 来源：`data/architecture/adaptive-relational-network/real-history/after-projection.json`
+  - 依赖：—；被引用：—
 - [projection replacing canonical source;](../../../reports/architecture/121Q23-adaptive-relational-network-validation.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-e2a2beca76f78173 / projection replacing canonical source;
@@ -216,7 +246,7 @@
   - 依赖：—；被引用：—
 - [Q32I 收口后系统图 0.3.0 为 Current；0727 homepage/usage/charter-system-map sync 收口后系统图 0.4.0 为 Current；后续 registry-derived 系统图 0](../../../ARCHITECTURE.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-1ad29b7e656a31f6 / Q32I 收口后系统图 0.3.0 为 Current；0727 homepage/usage/charter-system-map sync 收口后系统图 0.4.0 为 Current；后续 registry-derived 系统图 0
+  - 可搜索名称：NFC-5a95082571cb0b44 / Q32I 收口后系统图 0.3.0 为 Current；0727 homepage/usage/charter-system-map sync 收口后系统图 0.4.0 为 Current；后续 registry-derived 系统图 0
   - 来源：`ARCHITECTURE.md`
   - 依赖：—；被引用：—
 - [Q4 node drift: claim ceiling remains `mechanism_plausible` because the pilot separates dimensions but does not re-adjudi](../../../reports/architecture/121Q12-effectual-mechanism-dual-loop.md)
@@ -2473,34 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-b8bcefec95ac0174 / \| Residue \| partial \| no causal residue taxonomy \|
   - 来源：`reports/architecture/121Q21R-causal-asset-audit.md`
-  - 依赖：—；被引用：—
-- [\| Rumelhart & Norman, accretion/tuning/restructuring \| Distinguish surface addition, tuning and restructuring-like updat](../../../reports/research/121Q23-network-theory-source-map.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-4f254364ef52ec93 / \| Rumelhart & Norman, accretion/tuning/restructuring \| Distinguish surface addition, tuning and restructuring-like updat
-  - 来源：`reports/research/121Q23-network-theory-source-map.md`
-  - 依赖：—；被引用：—
-- [\| Røysland 2011, arXiv `1106.0972` \| Counterfactual distributions in continuous-time stochastic processes under conditio](../../../reports/research/121Q22-probability-systems-source-map.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-0be13002f13af643 / \| Røysland 2011, arXiv `1106.0972` \| Counterfactual distributions in continuous-time stochastic processes under conditio
-  - 来源：`reports/research/121Q22-probability-systems-source-map.md`
-  - 依赖：—；被引用：—
-- [\| S120-008 \| BLOCKED \| UNRESOLVED \| Mixed Precision Weight Networks \|](../../../reports/external-research/121Q2W-final-consistency-seal-report.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-ce9dc6a7d5d2c46a / \| S120-008 \| BLOCKED \| UNRESOLVED \| Mixed Precision Weight Networks \|
-  - 来源：`reports/external-research/121Q2W-final-consistency-seal-report.md`
-  - 依赖：—；被引用：—
-- [\| S120-015 \| BLOCKED \| UNRESOLVED \| Hypernetworks for Specialized Instructions \(UNVERIFIABLE\) \|](../../../reports/external-research/121Q2W-final-consistency-seal-report.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-5332eb187f676408 / \| S120-015 \| BLOCKED \| UNRESOLVED \| Hypernetworks for Specialized Instructions \(UNVERIFIABLE\) \|
-  - 来源：`reports/external-research/121Q2W-final-consistency-seal-report.md`
-  - 依赖：—；被引用：—
-- [\| S3 \| 系统由层级结构组织，上下层存在控制或信息梯度。 \| 为责任清晰、应急协调、专业分工与大规模复杂任务而组织的上下层控制/信息梯度结构；权力须可问责、层级可撤销、决策可复核，底层成员有申诉与退出机制，且不得把服从本身当成价值。 \|](../../../docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-f8e044df3a49921b / \| S3 \| 系统由层级结构组织，上下层存在控制或信息梯度。 \| 为责任清晰、应急协调、专业分工与大规模复杂任务而组织的上下层控制/信息梯度结构；权力须可问责、层级可撤销、决策可复核，底层成员有申诉与退出机制，且不得把服从本身当成价值。 \|
-  - 来源：`docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md`
-  - 依赖：—；被引用：—
-- [\| Source \| Permitted Projection \| Prohibited Inference \|](../../../reports/research/121Q23-network-theory-source-map.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-098040e2061f0843 / \| Source \| Permitted Projection \| Prohibited Inference \|
-  - 来源：`reports/research/121Q23-network-theory-source-map.md`
   - 依赖：—；被引用：—

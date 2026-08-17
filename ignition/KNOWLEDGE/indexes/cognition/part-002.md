@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [\| \[C-481\]\( \) \| \[认知叠加验证 — 专家vs通才：专](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-4394a59fb2fdae3c / \| \[C-481\]\( \) \| \[认知叠加验证 — 专家vs通才：专
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D125；被引用：—
 - [\| \[C-486\]\( \) \| \[路径积分验证 — 创业决策：ℏ_e](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-af5bfc2b7bd7c6cc / \| \[C-486\]\( \) \| \[路径积分验证 — 创业决策：ℏ_e

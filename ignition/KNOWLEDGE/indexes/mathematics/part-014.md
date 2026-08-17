@@ -4,6 +4,26 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [共享层沟通验证 — 物理学家和生物学家在数学框架上沟通η=0.27,物理学家降维到BL沟通η=0.15,共享层优于降维](../../../data/foundation/evidence/evidence.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：NFC-83a5b419e5faf95b / 共享层沟通验证 — 物理学家和生物学家在数学框架上沟通η=0.27,物理学家降维到BL沟通η=0.15,共享层优于降维
+  - 来源：`data/foundation/evidence/evidence.jsonl`
+  - 依赖：—；被引用：—
+- [共享源双重杀伤函数](../../../FOUNDATION-64-PROPAGATION.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D176 / 共享源双重杀伤函数 / D176
+  - 来源：`FOUNDATION-64-PROPAGATION.jsonl`
+  - 依赖：D180, D53, D66, D91；被引用：NFC-0447c7cab4a0cf63, NFC-2ed1ebb7a23ba6cf, NFC-46b8f5f19759876f, NFC-90144990d6582487
+- [共享源双重杀伤函数,ρ同时驱动H_correlation\(D66\)和P\(biased\)\(D53\),联合效应P_sustain∝\(1-ρ\)²而非\(1-ρ\)。共享源让乘法归零从线性变平方,杀伤力指数级增强。与电力级联放大器G∝V²完全同构。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-664342ec0872ea19 / 共享源双重杀伤函数,ρ同时驱动H_correlation\(D66\)和P\(biased\)\(D53\),联合效应P_sustain∝\(1-ρ\)²而非\(1-ρ\)。共享源让乘法归零从线性变平方,杀伤力指数级增强。与电力级联放大器G∝V²完全同构。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D53, D66；被引用：—
+- [共享源双重杀伤函数,ρ同时驱动H_correlation\(D66\)和P\(biased\)\(D53\),联合效应P_sustain∝\(1-ρ\)²而非\(1-ρ\)。共享源让乘法归零从线性变平方,杀伤力指数级增强。与电力级联放大器G∝V²完全同构。 *](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-da92b11d1b5fc48b / 共享源双重杀伤函数,ρ同时驱动H_correlation\(D66\)和P\(biased\)\(D53\),联合效应P_sustain∝\(1-ρ\)²而非\(1-ρ\)。共享源让乘法归零从线性变平方,杀伤力指数级增强。与电力级联放大器G∝V²完全同构。 *
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D53, D66；被引用：—
 - [共同体不是同一化。人类、非人类生命、生态系统、未来世代和可能的新型智能可以在形态、语言、利益、时间尺度和感知方式上彼此不同，仍然需要被置入可回应关系。](../../../docs/governance/life-community-value-charter.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-6e6a86eb19d7bc71 / 共同体不是同一化。人类、非人类生命、生态系统、未来世代和可能的新型智能可以在形态、语言、利益、时间尺度和感知方式上彼此不同，仍然需要被置入可回应关系。
@@ -2484,23 +2504,3 @@
   - 可搜索名称：NFC-9dbdf2c833af4e7b / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D535；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-65d0edc708ea86d6 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D536；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-648088c6d96b54e0 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D537；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-62af76e4285a8816 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D538；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-a470243da7f6c7aa / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D539；被引用：—

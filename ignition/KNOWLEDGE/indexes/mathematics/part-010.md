@@ -4,6 +4,26 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [\| \[C-0775\]\( \) \| \[和孩子聊热点事件\]\( \) \| 该案例对应 D581《信息茧房破解》，用于补充该函数在具体对象上的验证。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-3712e2d03dee77de / \| \[C-0775\]\( \) \| \[和孩子聊热点事件\]\( \) \| 该案例对应 D581《信息茧房破解》，用于补充该函数在具体对象上的验证。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D581；被引用：—
+- [\| \[C-0776\]\( \) \| \[博士期间换十个选题\]\( \) \| 该案例对应 D581《信息茧房破解》，用于补充该函数在具体对象上的](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-c336aa13b41b1608 / \| \[C-0776\]\( \) \| \[博士期间换十个选题\]\( \) \| 该案例对应 D581《信息茧房破解》，用于补充该函数在具体对象上的
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D581；被引用：—
+- [\| \[C-0777\]\( \) \| \[双周访谈打破信息茧房\]\( \) \| 该案例对应 D582《堆肥法》，用于补充该函数在具体对象上的](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-8f9946850e244b55 / \| \[C-0777\]\( \) \| \[双周访谈打破信息茧房\]\( \) \| 该案例对应 D582《堆肥法》，用于补充该函数在具体对象上的
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D582；被引用：—
+- [\| \[C-0778\]\( \) \| \[快闪阅读反算法\]\( \) \| 该案例对应 D582《堆肥法》，用于补充该函数在具体对象上的验证。 \|](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-acbca6cb3a08ae52 / \| \[C-0778\]\( \) \| \[快闪阅读反算法\]\( \) \| 该案例对应 D582《堆肥法》，用于补充该函数在具体对象上的验证。 \|
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D582；被引用：—
 - [\| \[C-0779\]\( \) \| \[逛书店发现惊喜\]\( \) \| 该案例对应 D582《堆肥法》，用于补充该函数在具体对象上的验证。 \|](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-0a9084be96144348 / \| \[C-0779\]\( \) \| \[逛书店发现惊喜\]\( \) \| 该案例对应 D582《堆肥法》，用于补充该函数在具体对象上的验证。 \|
@@ -2483,24 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-33d1e34b4fa57de1 / Φ元统一律内部构件完整构成版 2026年07月06日12时32分
   - 来源：`data/foundation/formal-objects/objects.jsonl`
-  - 依赖：—；被引用：—
-- [Φ在不同域中展现统一结构：物理Φ=零温自由能、社会Φ=权力熵、认知Φ=认知势能。三域统一形式：Φ = -Σᵢ sᵢ/ln²\(μ/Λᵢ\) + C\(退化项\)。 **扩展注释 / Extended Annotation**](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-50a9568627952168 / Φ在不同域中展现统一结构：物理Φ=零温自由能、社会Φ=权力熵、认知Φ=认知势能。三域统一形式：Φ = -Σᵢ sᵢ/ln²\(μ/Λᵢ\) + C\(退化项\)。 **扩展注释 / Extended Annotation**
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：—；被引用：—
-- [Φ跨域稳定性定理](../../../data/foundation/formal-objects/objects.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-922a2cd5d29cfd5f / Φ跨域稳定性定理
-  - 来源：`data/foundation/formal-objects/objects.jsonl`
-  - 依赖：—；被引用：—
-- [Φ跨域稳定性定理](../../../FOUNDATION-64-PROPAGATION.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `DOWNGRADE_TO_CONJECTURE`
-  - 可搜索名称：T23 / Φ跨域稳定性定理 / T23
-  - 来源：`FOUNDATION-64-PROPAGATION.jsonl`
-  - 依赖：—；被引用：CLAIM-T23, NFC-12038a9e66cde328, NFC-2502c1256717e6f0, NFC-3ba198259241e813
-- [Φ跨域稳定性定理 / Φcross-domain stability theorem](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-3b123864a15ad44e / Φ跨域稳定性定理 / Φcross-domain stability theorem
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：—；被引用：—

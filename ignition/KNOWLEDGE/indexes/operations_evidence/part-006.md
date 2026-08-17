@@ -4,6 +4,56 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [\| `12-meta-protocol-projection.md` \| 12 元协议投影（V1–V4、S1/S2、S3/S4、E1–E4），仅作投影与规范边界 \|](../../../outputs/collisions/20260711-disobedience-subjectivity/README.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-e97326e1ac0f168e / \| `12-meta-protocol-projection.md` \| 12 元协议投影（V1–V4、S1/S2、S3/S4、E1–E4），仅作投影与规范边界 \|
+  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/README.md`
+  - 依赖：—；被引用：—
+- [\| BC-20260709-005 \| 《创新者的窘境》 \| 破坏性创新与点火框架门控面演化的同构性。大公司受旧维度拖累（1/ln为负），边缘玩家无旧维度负担，验证了创新在边缘的拖累效应。 \| V3 \| 1/ln \| 《创新者的窘境》最终收](../../../docs/meta-protocols/book-validation-22-cases-20260709.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-af089a75b012e6d1 / \| BC-20260709-005 \| 《创新者的窘境》 \| 破坏性创新与点火框架门控面演化的同构性。大公司受旧维度拖累（1/ln为负），边缘玩家无旧维度负担，验证了创新在边缘的拖累效应。 \| V3 \| 1/ln \| 《创新者的窘境》最终收
+  - 来源：`docs/meta-protocols/book-validation-22-cases-20260709.md`
+  - 依赖：—；被引用：—
+- [\| BC-20260709-021 \| 《原则》 \| 生活和工作原则与点火框架P_meta元协议实例化的映射。原则作为元协议，指导决策门控面，验证了元协议投影算子的有效性。 \| pending \| P_meta \| 《原则》最终收敛报告 2](../../../docs/meta-protocols/book-validation-22-cases-20260709.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-113f0d72e729392f / \| BC-20260709-021 \| 《原则》 \| 生活和工作原则与点火框架P_meta元协议实例化的映射。原则作为元协议，指导决策门控面，验证了元协议投影算子的有效性。 \| pending \| P_meta \| 《原则》最终收敛报告 2
+  - 来源：`docs/meta-protocols/book-validation-22-cases-20260709.md`
+  - 依赖：—；被引用：—
+- [\| E1 \| 线性演化协议 \| Linear-Evolution Protocol \| 沿单一轨迹线性推进，状态可预测 \|](../../../docs/protocols/protocol-index.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-29150c45832abaf9 / \| E1 \| 线性演化协议 \| Linear-Evolution Protocol \| 沿单一轨迹线性推进，状态可预测 \|
+  - 来源：`docs/protocols/protocol-index.md`
+  - 依赖：—；被引用：—
+- [\| Failure handling \| No stage-specific gate \| Schema, semantic, identity/HEAD, privacy, responsibility, succession and b](../../../reports/operations/IGNITION-ITERATION-METHOD-1.4-homepage-comparison.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-02d021373da2e251 / \| Failure handling \| No stage-specific gate \| Schema, semantic, identity/HEAD, privacy, responsibility, succession and b
+  - 来源：`reports/operations/IGNITION-ITERATION-METHOD-1.4-homepage-comparison.md`
+  - 依赖：—；被引用：—
+- [\| I_iso\(A,B\) \| 无同构案例；结构独特（教育评价硬门槛 + 青年教师）。 \|](../../../outputs/audit/nc-001-title-barrier-backfill-audit-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-9bed28cbd66745b1 / \| I_iso\(A,B\) \| 无同构案例；结构独特（教育评价硬门槛 + 青年教师）。 \|
+  - 来源：`outputs/audit/nc-001-title-barrier-backfill-audit-20260708.md`
+  - 依赖：—；被引用：—
+- [\| L_meta \| 社会学实例，提示跨域同构，未越权 \|](../../../outputs/collisions/20260708-cross-domain-smoke-test/social/collision-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-6c27738a4ab6f77f / \| L_meta \| 社会学实例，提示跨域同构，未越权 \|
+  - 来源：`outputs/collisions/20260708-cross-domain-smoke-test/social/collision-report.md`
+  - 依赖：—；被引用：—
+- [\| L_meta \| 自然科学实例，强化跨域同构 \|](../../../outputs/collisions/20260708-cross-domain-smoke-test/science/collision-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-e7f3cdb87f993a19 / \| L_meta \| 自然科学实例，强化跨域同构 \|
+  - 来源：`outputs/collisions/20260708-cross-domain-smoke-test/science/collision-report.md`
+  - 依赖：—；被引用：—
+- [\| M1 听话—低成本控制 \| 边界扩展 \| D595/EXIT 族 \| 约束来源=管理成本，同构；命中 V1 \|](../../../outputs/collisions/20260711-disobedience-subjectivity/two-tables-full-collision-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-63ac227a65b3942e / \| M1 听话—低成本控制 \| 边界扩展 \| D595/EXIT 族 \| 约束来源=管理成本，同构；命中 V1 \|
+  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/two-tables-full-collision-report.md`
+  - 依赖：D595；被引用：—
+- [\| M2 外部评价内化自我规训 \| 已有覆盖 \| D598+D597 \| 实质同构；家庭轴补强 \|](../../../outputs/collisions/20260711-disobedience-subjectivity/two-tables-full-collision-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-0a3da2a3283f13a2 / \| M2 外部评价内化自我规训 \| 已有覆盖 \| D598+D597 \| 实质同构；家庭轴补强 \|
+  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/two-tables-full-collision-report.md`
+  - 依赖：D597, D598；被引用：—
 - [\| N1 \| 退出权族 FUNC-L1-EXIT \| 退出权族 77 文件存在 \| C：补「绑定致架空」维度；I_iso：非同构，是细分；L_meta：注释级不污染 \| **作为注释并入 EXIT 族** \| 不新建条目，补结构性不可拒绝子](../../../outputs/audit/teacher-competition-backfill-review-20260708.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-10bf8a6175e93442 / \| N1 \| 退出权族 FUNC-L1-EXIT \| 退出权族 77 文件存在 \| C：补「绑定致架空」维度；I_iso：非同构，是细分；L_meta：注释级不污染 \| **作为注释并入 EXIT 族** \| 不新建条目，补结构性不可拒绝子
@@ -172,6 +222,11 @@
 - [— IGNITION-20260816-123-CURRENT-STATE-SYNC-R1-STEP-07 — task-branch projection](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-dadba3221586363a / — IGNITION-20260816-123-CURRENT-STATE-SYNC-R1-STEP-07 — task-branch projection
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [— IGNITION-20260817-124-OS-CONTROL-PLANE-R2-STEP-11 — task-branch projection](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-7ea68fb6a1240eaf / — IGNITION-20260817-124-OS-CONTROL-PLANE-R2-STEP-11 — task-branch projection
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
 - [“读起来顺”不自动属于第一类；“逐字对应”也不自动属于保真。](../../../docs/language-thought/translation-and-residue.md)
@@ -948,6 +1003,11 @@
   - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
   - 可搜索名称：抽取审计 / extraction-audit
   - 来源：`outputs/book-collisions/20260709-22-book-validation/extraction-audit.md`
+  - 依赖：—；被引用：—
+- [控制平面把事件、权限收窄、共享资源、并发 ready-set、健康租约、队列、外部回执和操作记忆分别持久化；Driver Console 只投影下一步与开放义务，不成为第二真相源。](../../ASSET-CARDS.md#asset-nfc-efd2508248c8410a)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-efd2508248c8410a / 控制平面把事件、权限收窄、共享资源、并发 ready-set、健康租约、队列、外部回执和操作记忆分别持久化；Driver Console 只投影下一步与开放义务，不成为第二真相源。 / - 控制平面把事件、权限收窄、共享资源、并发 ready-set、健康租约、队列、外部回执和操作记忆分别持久化；Driver Console 只投影下一步与开放义务，不成为第二真相源。
+  - 来源：`docs/project-current-state.md`
   - 依赖：—；被引用：—
 - [提供跨域同构识别：不同 AI 对齐困难的结构相似性（L1）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`

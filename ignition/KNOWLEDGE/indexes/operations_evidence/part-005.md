@@ -4,6 +4,31 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP014-M42.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP014-M42.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：A5045974436 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP014-M42.json / A5045974436 / A5046187244
+  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP014-M42.json`
+  - 依赖：—；被引用：—
+- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP014-M42.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP014-M42.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：A5046187244 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP014-M42.json / A5046187244 / A5045974436
+  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP014-M42.json`
+  - 依赖：—；被引用：—
+- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP014-M42.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP014-M42.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：A5084087215 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP014-M42.json / A5084087215 / A5045974436
+  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP014-M42.json`
+  - 依赖：—；被引用：—
+- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP014-M42.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP014-M42.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：T11649 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP014-M42.json / T11649 / A5045974436
+  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP014-M42.json`
+  - 依赖：—；被引用：—
+- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP014-M43.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP014-M43.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：A5061251386 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP014-M43.json / A5061251386 / P4310320448
+  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP014-M43.json`
+  - 依赖：—；被引用：—
 - [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP014-M43.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP014-M43.json)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：P4310320448 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP014-M43.json / P4310320448 / A5061251386
@@ -33,6 +58,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-d6c99a7d27958737 / Derived and external surfaces remain distinct from repository sources. Current human result projections are repository f
   - 来源：`ITERATION.md`
+  - 依赖：—；被引用：—
+- [Derived projections: `current-facts` now rejects unsorted or duplicate source](../../../reports/operations/ignition-124-progress.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-01d5f26156605355 / Derived projections: `current-facts` now rejects unsorted or duplicate source
+  - 来源：`reports/operations/ignition-124-progress.md`
   - 依赖：—；被引用：—
 - [docs/language-thought/dimensional-basis.md](../../../docs/language-thought/dimensional-basis.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -283,6 +313,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-82fcd15a107c4d44 / Exact registered arXiv v3 hash/size, all-23-page visual/full-text/complete-source and official Tensor2Tensor current/his
   - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl`
+  - 依赖：—；被引用：—
+- [explicitly stale. Compaction is a deterministic bounded projection and](../../../reports/operations/ignition-124-progress.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-9596424330711ccf / explicitly stale. Compaction is a deterministic bounded projection and
+  - 来源：`reports/operations/ignition-124-progress.md`
   - 依赖：—；被引用：—
 - [f\(R, C\) = 0 ⟺ R=0 ∨ C=0](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -2384,6 +2419,21 @@
   - 可搜索名称：IMPLICIT-AC69D5A2E1C2D7CC / \| **U₃ 耦合动力学元律** \| M₄动力学元律 \| 耦合动力学:dx/dt=f\(x₁,x₂,...\)或f\(g\(x\),h\(x\)\) \| / IMPLICIT-AC69D5A2E1C2D7CC / IMPLICIT-AB0AE67F6D7524A9
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
+- [\| 08 \| COMPLETED \| pending closure \| pending closure \| Concurrent operational memory with generation CAS, duplicate supp](../../../reports/operations/ignition-124-progress.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-f60eabd0c27c5413 / \| 08 \| COMPLETED \| pending closure \| pending closure \| Concurrent operational memory with generation CAS, duplicate supp
+  - 来源：`reports/operations/ignition-124-progress.md`
+  - 依赖：—；被引用：—
+- [\| 09 \| COMPLETED \| pending closure \| pending closure \| Human-readable Driver Console projection with next-action orderin](../../../reports/operations/ignition-124-progress.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-18085dc10c82bac5 / \| 09 \| COMPLETED \| pending closure \| pending closure \| Human-readable Driver Console projection with next-action orderin
+  - 来源：`reports/operations/ignition-124-progress.md`
+  - 依赖：—；被引用：—
+- [\| 12 \| COMPLETED \| pending closure \| pending closure \| Full discovery, projection closure rebuild and residual classific](../../../reports/operations/ignition-124-progress.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-e8169a46e377869f / \| 12 \| COMPLETED \| pending closure \| pending closure \| Full discovery, projection closure rebuild and residual classific
+  - 来源：`reports/operations/ignition-124-progress.md`
+  - 依赖：—；被引用：—
 - [\| 6 \| 089 至 103 共 15 产物 \| 投影/闸门/对齐层/可视化/维护 \|](../../../data/external-research/088-FINAL-REPORT.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-9101eccc3c3c791c / \| 6 \| 089 至 103 共 15 产物 \| 投影/闸门/对齐层/可视化/维护 \|
@@ -2454,53 +2504,3 @@
   - 可搜索名称：IMPLICIT-E2C51574C136F47F / \| \[MF-0003\]\( \) \| \[正反互斥判定器\]\( \) \| E\(x\)=1 ⇔ ¬\(J⁺\(x\)=1 ∧ J⁻\(x\)=1\) \| / IMPLICIT-E2C51574C136F47F
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [\| `12-meta-protocol-projection.md` \| 12 元协议投影（V1–V4、S1/S2、S3/S4、E1–E4），仅作投影与规范边界 \|](../../../outputs/collisions/20260711-disobedience-subjectivity/README.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-e97326e1ac0f168e / \| `12-meta-protocol-projection.md` \| 12 元协议投影（V1–V4、S1/S2、S3/S4、E1–E4），仅作投影与规范边界 \|
-  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/README.md`
-  - 依赖：—；被引用：—
-- [\| BC-20260709-005 \| 《创新者的窘境》 \| 破坏性创新与点火框架门控面演化的同构性。大公司受旧维度拖累（1/ln为负），边缘玩家无旧维度负担，验证了创新在边缘的拖累效应。 \| V3 \| 1/ln \| 《创新者的窘境》最终收](../../../docs/meta-protocols/book-validation-22-cases-20260709.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-af089a75b012e6d1 / \| BC-20260709-005 \| 《创新者的窘境》 \| 破坏性创新与点火框架门控面演化的同构性。大公司受旧维度拖累（1/ln为负），边缘玩家无旧维度负担，验证了创新在边缘的拖累效应。 \| V3 \| 1/ln \| 《创新者的窘境》最终收
-  - 来源：`docs/meta-protocols/book-validation-22-cases-20260709.md`
-  - 依赖：—；被引用：—
-- [\| BC-20260709-021 \| 《原则》 \| 生活和工作原则与点火框架P_meta元协议实例化的映射。原则作为元协议，指导决策门控面，验证了元协议投影算子的有效性。 \| pending \| P_meta \| 《原则》最终收敛报告 2](../../../docs/meta-protocols/book-validation-22-cases-20260709.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-113f0d72e729392f / \| BC-20260709-021 \| 《原则》 \| 生活和工作原则与点火框架P_meta元协议实例化的映射。原则作为元协议，指导决策门控面，验证了元协议投影算子的有效性。 \| pending \| P_meta \| 《原则》最终收敛报告 2
-  - 来源：`docs/meta-protocols/book-validation-22-cases-20260709.md`
-  - 依赖：—；被引用：—
-- [\| E1 \| 线性演化协议 \| Linear-Evolution Protocol \| 沿单一轨迹线性推进，状态可预测 \|](../../../docs/protocols/protocol-index.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-29150c45832abaf9 / \| E1 \| 线性演化协议 \| Linear-Evolution Protocol \| 沿单一轨迹线性推进，状态可预测 \|
-  - 来源：`docs/protocols/protocol-index.md`
-  - 依赖：—；被引用：—
-- [\| Failure handling \| No stage-specific gate \| Schema, semantic, identity/HEAD, privacy, responsibility, succession and b](../../../reports/operations/IGNITION-ITERATION-METHOD-1.4-homepage-comparison.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-02d021373da2e251 / \| Failure handling \| No stage-specific gate \| Schema, semantic, identity/HEAD, privacy, responsibility, succession and b
-  - 来源：`reports/operations/IGNITION-ITERATION-METHOD-1.4-homepage-comparison.md`
-  - 依赖：—；被引用：—
-- [\| I_iso\(A,B\) \| 无同构案例；结构独特（教育评价硬门槛 + 青年教师）。 \|](../../../outputs/audit/nc-001-title-barrier-backfill-audit-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-9bed28cbd66745b1 / \| I_iso\(A,B\) \| 无同构案例；结构独特（教育评价硬门槛 + 青年教师）。 \|
-  - 来源：`outputs/audit/nc-001-title-barrier-backfill-audit-20260708.md`
-  - 依赖：—；被引用：—
-- [\| L_meta \| 社会学实例，提示跨域同构，未越权 \|](../../../outputs/collisions/20260708-cross-domain-smoke-test/social/collision-report.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-6c27738a4ab6f77f / \| L_meta \| 社会学实例，提示跨域同构，未越权 \|
-  - 来源：`outputs/collisions/20260708-cross-domain-smoke-test/social/collision-report.md`
-  - 依赖：—；被引用：—
-- [\| L_meta \| 自然科学实例，强化跨域同构 \|](../../../outputs/collisions/20260708-cross-domain-smoke-test/science/collision-report.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-e7f3cdb87f993a19 / \| L_meta \| 自然科学实例，强化跨域同构 \|
-  - 来源：`outputs/collisions/20260708-cross-domain-smoke-test/science/collision-report.md`
-  - 依赖：—；被引用：—
-- [\| M1 听话—低成本控制 \| 边界扩展 \| D595/EXIT 族 \| 约束来源=管理成本，同构；命中 V1 \|](../../../outputs/collisions/20260711-disobedience-subjectivity/two-tables-full-collision-report.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-63ac227a65b3942e / \| M1 听话—低成本控制 \| 边界扩展 \| D595/EXIT 族 \| 约束来源=管理成本，同构；命中 V1 \|
-  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/two-tables-full-collision-report.md`
-  - 依赖：D595；被引用：—
-- [\| M2 外部评价内化自我规训 \| 已有覆盖 \| D598+D597 \| 实质同构；家庭轴补强 \|](../../../outputs/collisions/20260711-disobedience-subjectivity/two-tables-full-collision-report.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-0a3da2a3283f13a2 / \| M2 外部评价内化自我规训 \| 已有覆盖 \| D598+D597 \| 实质同构；家庭轴补强 \|
-  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/two-tables-full-collision-report.md`
-  - 依赖：D597, D598；被引用：—

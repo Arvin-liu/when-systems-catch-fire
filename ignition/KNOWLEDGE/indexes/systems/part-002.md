@@ -6,6 +6,26 @@
 
 - [data/foundation/core-systems/protocol-roles.jsonl](../../../data/foundation/core-systems/protocol-roles.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：P08 / data/foundation/core-systems/protocol-roles.jsonl / P08 / P01
+  - 来源：`data/foundation/core-systems/protocol-roles.jsonl`
+  - 依赖：—；被引用：—
+- [data/foundation/core-systems/protocol-roles.jsonl](../../../data/foundation/core-systems/protocol-roles.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：P09 / data/foundation/core-systems/protocol-roles.jsonl / P09 / P01
+  - 来源：`data/foundation/core-systems/protocol-roles.jsonl`
+  - 依赖：—；被引用：—
+- [data/foundation/core-systems/protocol-roles.jsonl](../../../data/foundation/core-systems/protocol-roles.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：P10 / data/foundation/core-systems/protocol-roles.jsonl / P10 / P01
+  - 来源：`data/foundation/core-systems/protocol-roles.jsonl`
+  - 依赖：—；被引用：—
+- [data/foundation/core-systems/protocol-roles.jsonl](../../../data/foundation/core-systems/protocol-roles.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：P11 / data/foundation/core-systems/protocol-roles.jsonl / P11 / P01
+  - 来源：`data/foundation/core-systems/protocol-roles.jsonl`
+  - 依赖：—；被引用：—
+- [data/foundation/core-systems/protocol-roles.jsonl](../../../data/foundation/core-systems/protocol-roles.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：P12 / data/foundation/core-systems/protocol-roles.jsonl / P12 / P01
   - 来源：`data/foundation/core-systems/protocol-roles.jsonl`
   - 依赖：—；被引用：—
@@ -247,6 +267,11 @@
 - [epistemic_state: `CURRENT_WITH_OPEN_OBLIGATIONS` and `EPISTEMICALLY_ACCEPTED=0` remain unchanged. Tests, receipts, gener](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-c153968802c96116 / epistemic_state: `CURRENT_WITH_OPEN_OBLIGATIONS` and `EPISTEMICALLY_ACCEPTED=0` remain unchanged. Tests, receipts, gener
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [epistemic_state: `CURRENT_WITH_OPEN_OBLIGATIONS` and `EPISTEMICALLY_ACCEPTED=0` remain unchanged. The five-child offline](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-168df44c5da6ce10 / epistemic_state: `CURRENT_WITH_OPEN_OBLIGATIONS` and `EPISTEMICALLY_ACCEPTED=0` remain unchanged. The five-child offline
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
 - [epistemic_state: R2 tests, validators, Pack load, checkpoint/resume, operational memory and offline pilot are repository](../../../STATE-CHANGELOG.md)
@@ -713,6 +738,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-6c7ecb7ae372f7b7 / human oversight, and keep narrative or structural analogy separate from causal
   - 来源：`reports/external-research/pointfire-getnote-external-verification-r1-20260813.md`
+  - 依赖：—；被引用：—
+- [Human-readable Driver Console projection that orders reconciliation, health, conflict, queue and resume obligations with](../../../data/architecture/interactive-system-map.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-aa391eb39193ca1f / Human-readable Driver Console projection that orders reconciliation, health, conflict, queue and resume obligations with
+  - 来源：`data/architecture/interactive-system-map.json`
   - 依赖：—；被引用：—
 - [I_iso\(A,B\) 检测到上述9个系统的真实结构同构，验证了元同构率的普适性。**](../../../docs/phi_meta_law.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
@@ -2473,34 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-b1801132f5985643 / Program-generating meta-programs and library learning suggest generators, but no compiler or neural function transformat
   - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
-  - 依赖：—；被引用：—
-- [Projection does not prove integration, truth, value or causality.](../../../data/architecture/adaptive-relational-network/real-history/after-projection.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-d5c0ed81cf9d0142 / Projection does not prove integration, truth, value or causality.
-  - 来源：`data/architecture/adaptive-relational-network/real-history/after-projection.json`
-  - 依赖：—；被引用：—
-- [projection episode only](../../../data/architecture/adaptive-relational-network/real-history/after-projection.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-499aadc238464993 / projection episode only
-  - 来源：`data/architecture/adaptive-relational-network/real-history/after-projection.json`
-  - 依赖：—；被引用：—
-- [projection from 1f3815538cf56d0f35cc06c6b2396fadf33a34a2; not canonical truth](../../../data/architecture/adaptive-relational-network/real-history/before-projection.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-5d3dd4d3547702f6 / projection from 1f3815538cf56d0f35cc06c6b2396fadf33a34a2; not canonical truth
-  - 来源：`data/architecture/adaptive-relational-network/real-history/before-projection.json`
-  - 依赖：—；被引用：—
-- [projection from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not canonical truth](../../../data/architecture/adaptive-relational-network/real-history/after-projection.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-6da1b63a5fe3f696 / projection from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not canonical truth
-  - 来源：`data/architecture/adaptive-relational-network/real-history/after-projection.json`
-  - 依赖：—；被引用：—
-- [projection only](../../../data/architecture/adaptive-relational-network/examples/ai-external-knowledge-vs-internal-integration.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-db04870476494591 / projection only
-  - 来源：`data/architecture/adaptive-relational-network/examples/ai-external-knowledge-vs-internal-integration.json`
-  - 依赖：—；被引用：—
-- [projection perturbation only](../../../data/architecture/adaptive-relational-network/real-history/after-projection.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-310d37809c7ed938 / projection perturbation only
-  - 来源：`data/architecture/adaptive-relational-network/real-history/after-projection.json`
   - 依赖：—；被引用：—

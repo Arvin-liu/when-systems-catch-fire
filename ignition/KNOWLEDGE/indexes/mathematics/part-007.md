@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Resolve ambiguities or collect missing evidence.](../../../inputs/020/formal-protocol-promotion-standard.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-ca636455e920ce5b / Resolve ambiguities or collect missing evidence.
+  - 来源：`inputs/020/formal-protocol-promotion-standard.md`
+  - 依赖：—；被引用：—
+- [response classification, not psychological proof](../../../data/architecture/adaptive-relational-network/examples/ai-external-knowledge-vs-internal-integration.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-ad6026db341ecafb / response classification, not psychological proof
+  - 来源：`data/architecture/adaptive-relational-network/examples/ai-external-knowledge-vs-internal-integration.json`
+  - 依赖：—；被引用：—
 - [retrieval or self-report mislabeled as integration/behavior proof;](../../../reports/architecture/121Q23-adaptive-relational-network-validation.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-1804ae744eb647a1 / retrieval or self-report mislabeled as integration/behavior proof;
@@ -833,6 +843,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-9483fb9f356ca718 / The evidence set contains seven substantive source families plus two contextual or methodological records
   - 来源：`data/external-research/pointfire-seven-track-replay-r1/claim-ledger.jsonl`
+  - 依赖：—；被引用：—
+- [The final task-branch commit must be freshly cloned and replayed before formal `main` is moved. Then verify local, track](../../../reports/operations/ignition-124-progress.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-42ee3e5413c7df8d / The final task-branch commit must be freshly cloned and replayed before formal `main` is moved. Then verify local, track
+  - 来源：`reports/operations/ignition-124-progress.md`
   - 依赖：—；被引用：—
 - [The formal PLoT hypothesis identifies reusable concepts with stochastic functions in a universal PPL, combining probabil](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
@@ -2488,19 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-7e105c9fcc58c973 / title: "引力B型必要性定理"
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [title: "弱容斥-不可逆边界函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-518A9418133B8994 / title: "弱容斥-不可逆边界函数" / IMPLICIT-518A9418133B8994
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "弱容斥窗口-逃逸速度联合函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-36D6E0A4ED8F12E9 / title: "弱容斥窗口-逃逸速度联合函数" / IMPLICIT-36D6E0A4ED8F12E9
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "弱混合角-容斥约束函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-48C2D9BFB5F1EBA9 / title: "弱混合角-容斥约束函数" / IMPLICIT-48C2D9BFB5F1EBA9
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—

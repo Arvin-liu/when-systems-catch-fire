@@ -6,6 +6,26 @@
 
 - [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-65d0edc708ea86d6 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D536；被引用：—
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-648088c6d96b54e0 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D537；被引用：—
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-62af76e4285a8816 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D538；被引用：—
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-a470243da7f6c7aa / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D539；被引用：—
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-459c6ebed0b37b86 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D540；被引用：—
@@ -1956,7 +1976,7 @@
   - 依赖：—；被引用：—
 - [当前语义主干是一个有界阅读路径：`Owner / Value Charter → Ignition OS control / governance spine → Pack / Federation routing → External r](../../../docs/architecture/interactive-system-map.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-b61ecbc9ed842067 / 当前语义主干是一个有界阅读路径：`Owner / Value Charter → Ignition OS control / governance spine → Pack / Federation routing → External r
+  - 可搜索名称：NFC-c4d388bae84f9be4 / 当前语义主干是一个有界阅读路径：`Owner / Value Charter → Ignition OS control / governance spine → Pack / Federation routing → External r
   - 来源：`docs/architecture/interactive-system-map.md`
   - 依赖：—；被引用：—
 - [当前项目/架构状态为 `OWNER_ACCEPTED_WITH_EXPLICIT_RESIDUALS`。这里的 Owner acceptance 只表示项目、架构边界与正式公开发布资格已获接受；它不是外部真理、`FORMAL_KNOWLED](../../../docs/architecture/epistemic-governance-kernel-and-federated-planes.md)
@@ -2483,24 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-b5fdad51edea2ecf / 数学命题成立需要公理系统内可复核证明。证明必须逻辑严密、无漏洞、被数学界同行审查通过。
   - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [数学地基规则](../../ASSET-CARDS.md#asset-hr-a5759af803aebc01)
-  - 类型/状态：`RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
-  - 可搜索名称：数学地基规则 / README
-  - 来源：`docs/foundation/mathematics/README.md`
-  - 依赖：—；被引用：—
-- [数学工具的边界\\n\\n#### 结论4：可检验的预测（3个）\\n1.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-7affed05825f6dbf / 数学工具的边界\\n\\n#### 结论4：可检验的预测（3个）\\n1.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [数学成熟度与外部证据成熟度，或说明为何不适用；](../../../HUMAN-READING.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-50318b77930dfa05 / 数学成熟度与外部证据成熟度，或说明为何不适用；
-  - 来源：`HUMAN-READING.md`
-  - 依赖：—；被引用：—
-- [数学成熟度和外部证据成熟度独立；任何一轴不能替代另一轴。](../../../docs/project-current-state.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-9a08737959f9be2c / 数学成熟度和外部证据成熟度独立；任何一轴不能替代另一轴。
-  - 来源：`docs/project-current-state.md`
   - 依赖：—；被引用：—

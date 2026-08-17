@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0461}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-7528BE11D5560F55 / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0461}\)=1\]. / IMPLICIT-7528BE11D5560F55
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0462}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-D77A69F426897D66 / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0462}\)=1\]. / IMPLICIT-D77A69F426897D66
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0463}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-222C7E4EB9ECE672 / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0463}\)=1\]. / IMPLICIT-222C7E4EB9ECE672
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
 - [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0464}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-23CE566D4A6285EF / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0464}\)=1\]. / IMPLICIT-23CE566D4A6285EF
@@ -1029,6 +1044,11 @@
   - 可搜索名称：IMPLICIT-442340EC312CC265 / bootstrap_topology := ∫_{Ω} ΔB_n / ΔB_{n-1} dΩ（自举拓扑积分） / IMPLICIT-442340EC312CC265 / IMPLICIT-1FD16E487EA4E24C
   - 来源：`docs/phi_meta_law.md`
   - 依赖：—；被引用：—
+- [bounded view. The boundary text states that the projection cannot establish](../../../reports/operations/ignition-124-progress.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-870f228ba3f7591b / bounded view. The boundary text states that the projection cannot establish
+  - 来源：`reports/operations/ignition-124-progress.md`
+  - 依赖：—；被引用：—
 - [C-0808 索引可见性通过。下一步可进入 NC-002 回填（注意 NF-002 已以 D597 入表，NC-002 应对应 D597）。](../../../outputs/audit/c0808-index-visibility-check-20260708.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-aa3ba3ba5b176fe5 / C-0808 索引可见性通过。下一步可进入 NC-002 回填（注意 NF-002 已以 D597 入表，NC-002 应对应 D597）。
@@ -1208,6 +1228,11 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-EB2D8345BC44158B / check\(f"{sid} reviewer = GLM-5.2", c.get\("reviewer_model"\) == "qclaw/pool-glm-5.2"\) / IMPLICIT-EB2D8345BC44158B
   - 来源：`data/external-research/121-fulltext-resolver/121c01/121c01-validator.py`
+  - 依赖：—；被引用：—
+- [CLI projection tool: `tools/driver_console.py` \(`--json` or human-readable\)](../../../reports/operations/ignition-124-progress.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-2100c00455ab20c9 / CLI projection tool: `tools/driver_console.py` \(`--json` or human-readable\)
+  - 来源：`reports/operations/ignition-124-progress.md`
   - 依赖：—；被引用：—
 - [Clos_bootstrap\(V, R, n\) = Clos_standard\(V, R_n\) ∪ ⋃_{k=0}^{n} f_reassemble\(V_k, R_k\) R_{k+1} = R_k ∪ Paths\(f_reassemble\(V_k, R_k\)\) **自举闭包严格大于标准闭包的证明：** 1. 标准闭包：Clos_standard\(V\) = V ∪ {推导可达变量}，有限步后收敛（推导不改变R） 2. 自举闭包：Clos_bootstrap\(V\) = Clos_](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -2478,29 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：A5058543819 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-09.json / A5058543819 / A5043995720
   - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-09.json`
-  - 依赖：—；被引用：—
-- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-09.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-09.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：A5074307768 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-09.json / A5074307768 / A5043995720
-  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-09.json`
-  - 依赖：—；被引用：—
-- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-09.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-09.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：T11244 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-09.json / T11244 / A5043995720
-  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-09.json`
-  - 依赖：—；被引用：—
-- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-10.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-10.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：A5015269440 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-10.json / A5015269440 / A5027686371
-  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-10.json`
-  - 依赖：—；被引用：—
-- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-10.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-10.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：A5027686371 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-10.json / A5027686371 / A5015269440
-  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-10.json`
-  - 依赖：—；被引用：—
-- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-10.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-10.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：A5049217362 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-10.json / A5049217362 / A5015269440
-  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-10.json`
   - 依赖：—；被引用：—

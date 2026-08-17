@@ -20,6 +20,7 @@ formal `main` tip does not move during the task branch run.
 | 09 | COMPLETED | pending closure | pending closure | Human-readable Driver Console projection with next-action ordering, open obligations and explicit epistemic boundaries. |
 | 10 | COMPLETED | pending closure | pending closure | Five-child offline pilot covering real concurrency, conflicts, stale health, checkpoint/resume, cancel/deadline, forged completion and memory. |
 | 11 | COMPLETED | pending closure | pending closure | Current State/map synchronization, deterministic Current Facts ordering guard, Phase-E CWD path repair and explicit historical propagation residual preservation. |
+| 12 | COMPLETED | pending closure | pending closure | Full discovery, projection closure rebuild and residual classification; fresh-clone replay, fast-forward-only main and 1111 receipt remain final post-commit gates. |
 
 ## Boundary
 
@@ -174,3 +175,11 @@ this task.
   validator still fails only on the historical 104–106 `NO_IMPACT_JUSTIFIED`
   records; those records remain append-only and are preserved as
   `PROPAGATION-104-106 / REQUIRES_REVIEW`, not rewritten into a false PASS.
+
+## Step 12 evidence
+
+- Closure artifact and task-specific schema: `data/operations/iterations/124/step12-closure-r1.json` and `schemas/operations/ignition-124-step12-closure-r1.schema.json`.
+- Final full discovery: `PYTHONPATH=. python3 -m unittest discover -s tests -q` ran `780` tests in `2650.525s`, with `0` errors and `1` skipped. The `4` failures are classified as `1` environmental `SYMPY_UNAVAILABLE` check and `3` test entries over the same historical 104–106 residual; `NEW_REGRESSION=0`, `TIMEOUT=0`.
+- Deterministic closures were rebuilt and checked: function assets `5607` with `46/46` closure checks; non-function claims `16041` with `54/54`; human surface `5607/24` and `16041/24`; Knowledge `404` cards, `315` changes, `332` layered readings and `21980` search records; Fire Seeds `64` with `393` sources; repository path classification `2553` paths and `9/9` checks.
+- Offline Control Plane and architecture focus remained `PASS`: `49` control-plane tests, `29` architecture/human/Knowledge/production tests, five-child adversarial pilot `8/8`, actual max concurrency `2`, Current State `10/10`, map `79` nodes/`84` edges and geometry crossing proxy `187`.
+- The final task-branch commit must be freshly cloned and replayed before formal `main` is moved. Then verify local, tracking, `ls-remote` and fresh-fetch equality, fast-forward only from `266426d7110af9ee921a020a46c3a0347aa364e9`, and publish the independent 1111 receipt Draft PR. No self-referential final SHA is stored in the closure artifact.

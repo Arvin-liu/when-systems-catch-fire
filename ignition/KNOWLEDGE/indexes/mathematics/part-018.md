@@ -4,6 +4,26 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [已迁移的历史函数来源/0214-D177-深层同构函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-ac2f5f844e9cd627 / 已迁移的历史函数来源/0214-D177-深层同构函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D177；被引用：—
+- [已迁移的历史函数来源/0215-D178-时间尺度同构函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-2b5e9012cb7de7bf / 已迁移的历史函数来源/0215-D178-时间尺度同构函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D178；被引用：—
+- [已迁移的历史函数来源/0216-D180-跨域枢纽函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-d9c079f0437e8b13 / 已迁移的历史函数来源/0216-D180-跨域枢纽函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D180；被引用：—
+- [已迁移的历史函数来源/0217-D181-定投跨域验证函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-d3063463a9111f6f / 已迁移的历史函数来源/0217-D181-定投跨域验证函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D181；被引用：—
 - [已迁移的历史函数来源/0218-D182-经典确定性函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-bf953dfd41303ee0 / 已迁移的历史函数来源/0218-D182-经典确定性函数.md
@@ -2483,24 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-b6aa8445feb589b4 / 艺术创作逻辑跨时空同构函数 **扩展注释 / Extended Annotation**
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：—；被引用：—
-- [艺术是低风险领域。艺术结论多为 L1-L2，少数可有 L3 框架内判定。不能把审美判断写成客观定理。](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-dcbdb7e6c71f3545 / 艺术是低风险领域。艺术结论多为 L1-L2，少数可有 L3 框架内判定。不能把审美判断写成客观定理。
-  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [节点身份、canonical target 与生命周期来自 component registry。](../../../docs/architecture/interactive-system-map.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-2b361754a47ba621 / 节点身份、canonical target 与生命周期来自 component registry。
-  - 来源：`docs/architecture/interactive-system-map.md`
-  - 依赖：—；被引用：—
-- [若任务涉及函数、模型、定理、公式、律、跨域类比或现实强断言，在读取 Foundation 后立即读取 `docs/foundation/claim-governance-and-function-identity.md`、`data/fou](../../../AI-START-HERE.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-a5c33c6712b1feec / 若任务涉及函数、模型、定理、公式、律、跨域类比或现实强断言，在读取 Foundation 后立即读取 `docs/foundation/claim-governance-and-function-identity.md`、`data/fou
-  - 来源：`AI-START-HERE.md`
-  - 依赖：—；被引用：—
-- [若任务涉及翻译、命题抽取、跨语言建模或 L6 公共故事、文章与作品反馈，还应读取 `docs/architecture/language-thought-logic-plane.md`、`docs/language-thought/READ](../../../AI-START-HERE.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-d7176361ace31526 / 若任务涉及翻译、命题抽取、跨语言建模或 L6 公共故事、文章与作品反馈，还应读取 `docs/architecture/language-thought-logic-plane.md`、`docs/language-thought/READ
-  - 来源：`AI-START-HERE.md`
   - 依赖：—；被引用：—

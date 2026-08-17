@@ -1309,6 +1309,11 @@
   - 可搜索名称：IMPLICIT-15C42255B1353C73 / ## Candidate Model / IMPLICIT-15C42255B1353C73
   - 来源：`docs/governance/licensing-model-candidate.md`
   - 依赖：—；被引用：—
+- [## Concurrent Operational Memory R2](../../../docs/architecture/os-control-plane-r2.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-8DB79D8289632A85 / ## Concurrent Operational Memory R2 / IMPLICIT-8DB79D8289632A85
+  - 来源：`docs/architecture/os-control-plane-r2.md`
+  - 依赖：—；被引用：—
 - [## Function OS](../../../reports/release/121Q9-global-validation.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-FCACDA8798699E07 / ## Function OS / IMPLICIT-FCACDA8798699E07
@@ -1348,6 +1353,11 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-D6663FBCF1E28240 / ## INDEX / 总览可见性 / IMPLICIT-D6663FBCF1E28240 / IMPLICIT-1280E6BB621CDD00
   - 来源：`outputs/audit/d598-index-visibility-check-20260708.md`
+  - 依赖：—；被引用：—
+- [## Inherited targeted gates](../../../reports/architecture/os-control-plane-r2-gap-audit.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-34FA65D9C65668D5 / ## Inherited targeted gates / IMPLICIT-34FA65D9C65668D5
+  - 来源：`reports/architecture/os-control-plane-r2-gap-audit.md`
   - 依赖：—；被引用：—
 - [## Integration](../../../reports/architecture/121Q21R-multiscale-causal-fabric-validation.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -1458,6 +1468,11 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-EF6B2A9C3EFFF0C6 / ## Required gate scope / IMPLICIT-EF6B2A9C3EFFF0C6
   - 来源：`reports/validation/pointfire-seven-track-current-main-maintenance-r1-20260813.md`
+  - 依赖：—；被引用：—
+- [## Resource Arbitration R1](../../../docs/architecture/os-control-plane-r2.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-8C6C3A3D00D82525 / ## Resource Arbitration R1 / IMPLICIT-8C6C3A3D00D82525
+  - 来源：`docs/architecture/os-control-plane-r2.md`
   - 依赖：—；被引用：—
 - [## Scope and gate boundary](../../../data/operations/iterations/111/historical/EVIDENCE_DOSSIER.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -2488,19 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-E4D6D5A3CD0363D5 / ### N42｜第一失败比平均成功率有解释力 / IMPLICIT-E4D6D5A3CD0363D5
   - 来源：`data/operations/iterations/112/publication/r0-original/notes/点火研究笔记-第一辑.md`
-  - 依赖：—；被引用：—
-- [### Newly forced or more sharply specified](../../../docs/architecture/getnote-1329-epistemic-governance-pressure-test.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-DBFAD75C0272CC04 / ### Newly forced or more sharply specified / IMPLICIT-DBFAD75C0272CC04
-  - 来源：`docs/architecture/getnote-1329-epistemic-governance-pressure-test.md`
-  - 依赖：—；被引用：—
-- [### OpenClaw adapter boundary](../../../docs/architecture/external-agent-federation-r1.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-C701DC67046560BF / ### OpenClaw adapter boundary / IMPLICIT-C701DC67046560BF
-  - 来源：`docs/architecture/external-agent-federation-r1.md`
-  - 依赖：—；被引用：—
-- [### Reinforced or made operationally visible in GetNote](../../../docs/architecture/getnote-1329-epistemic-governance-pressure-test.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-01E84B21408175B8 / ### Reinforced or made operationally visible in GetNote / IMPLICIT-01E84B21408175B8
-  - 来源：`docs/architecture/getnote-1329-epistemic-governance-pressure-test.md`
   - 依赖：—；被引用：—

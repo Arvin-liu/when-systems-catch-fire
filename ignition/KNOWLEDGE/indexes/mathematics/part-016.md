@@ -4,6 +4,26 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [数学地基规则](../../ASSET-CARDS.md#asset-hr-a5759af803aebc01)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+  - 可搜索名称：数学地基规则 / README
+  - 来源：`docs/foundation/mathematics/README.md`
+  - 依赖：—；被引用：—
+- [数学工具的边界\\n\\n#### 结论4：可检验的预测（3个）\\n1.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-7affed05825f6dbf / 数学工具的边界\\n\\n#### 结论4：可检验的预测（3个）\\n1.
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [数学成熟度与外部证据成熟度，或说明为何不适用；](../../../HUMAN-READING.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-50318b77930dfa05 / 数学成熟度与外部证据成熟度，或说明为何不适用；
+  - 来源：`HUMAN-READING.md`
+  - 依赖：—；被引用：—
+- [数学成熟度和外部证据成熟度独立；任何一轴不能替代另一轴。](../../../docs/project-current-state.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-9a08737959f9be2c / 数学成熟度和外部证据成熟度独立；任何一轴不能替代另一轴。
+  - 来源：`docs/project-current-state.md`
+  - 依赖：—；被引用：—
 - [数学是高风险领域。未证明猜想（如黎曼猜想、P vs NP 问题）必须 pending。已被数学界证明的定理，应区分"外部已证明"与"点火框架结构性重解释"。](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-c68a4d4b248bad4e / 数学是高风险领域。未证明猜想（如黎曼猜想、P vs NP 问题）必须 pending。已被数学界证明的定理，应区分"外部已证明"与"点火框架结构性重解释"。
@@ -2484,23 +2504,3 @@
   - 可搜索名称：D205 / 涨落-耗散定理-门槛函数 / D205
   - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
   - 依赖：D181, D211, D220, D270；被引用：NFC-2e81401facc6f412, NFC-4561b997408794af, NFC-99575160bd8f0e0c, NFC-acbf51d4e89cfdfc
-- [涨落-耗散定理-门槛函数](../../../data/foundation/formal-objects/objects.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-0d58d6d04b92f66f / 涨落-耗散定理-门槛函数
-  - 来源：`data/foundation/formal-objects/objects.jsonl`
-  - 依赖：—；被引用：—
-- [涨落-耗散定理-门槛函数，涨落-耗散定理⟨x²⟩∝χ描述门控面Λ的涨落与响应。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-5cf853daa93ecd7d / 涨落-耗散定理-门槛函数，涨落-耗散定理⟨x²⟩∝χ描述门控面Λ的涨落与响应。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [涨落-耗散定理-门槛函数，涨落-耗散定理⟨x²⟩∝χ描述门控面Λ的涨落与响应。 **扩展注释 / Extended Annotation**](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-f9e0ee3a46dd32b4 / 涨落-耗散定理-门槛函数，涨落-耗散定理⟨x²⟩∝χ描述门控面Λ的涨落与响应。 **扩展注释 / Extended Annotation**
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：—；被引用：—
-- [涨落-耗散定理是D186不确定性-超敏感区函数的统计力学表达。涨落→门控面稳定性→相变临界点。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-48d7eb9f561d6060 / 涨落-耗散定理是D186不确定性-超敏感区函数的统计力学表达。涨落→门控面稳定性→相变临界点。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D186；被引用：—

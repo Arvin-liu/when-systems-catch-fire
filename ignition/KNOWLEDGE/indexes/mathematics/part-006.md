@@ -974,6 +974,11 @@
   - 可搜索名称：NFC-d0f26feb7cf4a5d2 / MACHINE_CHECKED_PROOF is not empirical truth.
   - 来源：`llms.txt`
   - 依赖：—；被引用：—
+- [main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; formal `main` remains `266426d7110af9ee921a020a46c3a0347aa364e9`. This is t](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-1adeabdf4a657d15 / main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; formal `main` remains `266426d7110af9ee921a020a46c3a0347aa364e9`. This is t
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; formal `main` remains `d60ec8687fb1cc6b972e831a8f0dcd348ba0e83e`. This is a](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-83ccf8d160c52936 / main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; formal `main` remains `d60ec8687fb1cc6b972e831a8f0dcd348ba0e83e`. This is a
@@ -1303,6 +1308,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
   - 可搜索名称：NFC-333ab75720914e51 / Norms, coefficients and table metrics are inspectable, while approximation residuals, uncertainty, durable traces, priva
   - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [not Knowledge truth, proof, permission or Owner authority.](../../../docs/architecture/os-control-plane-r2.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-8534797ee550401a / not Knowledge truth, proof, permission or Owner authority.
+  - 来源：`docs/architecture/os-control-plane-r2.md`
   - 依赖：—；被引用：—
 - [Not proved here \(requires remote CI\):** that the *remote* GitHub Actions run reaches and passes the task-106](../../../docs/foundation/task-107-incident-report.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -2493,14 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-e750c61d2a0f9602 / Repository-local manifests and seals validate only deterministic content: identifiers, lifecycle, impact decisions, path
   - 来源：`reports/operations/121Q24-current-state-reconciliation.md`
-  - 依赖：—；被引用：—
-- [Resolve ambiguities or collect missing evidence.](../../../inputs/020/formal-protocol-promotion-standard.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-ca636455e920ce5b / Resolve ambiguities or collect missing evidence.
-  - 来源：`inputs/020/formal-protocol-promotion-standard.md`
-  - 依赖：—；被引用：—
-- [response classification, not psychological proof](../../../data/architecture/adaptive-relational-network/examples/ai-external-knowledge-vs-internal-integration.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-ad6026db341ecafb / response classification, not psychological proof
-  - 来源：`data/architecture/adaptive-relational-network/examples/ai-external-knowledge-vs-internal-integration.json`
   - 依赖：—；被引用：—

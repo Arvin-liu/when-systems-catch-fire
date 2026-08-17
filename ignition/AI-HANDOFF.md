@@ -102,7 +102,7 @@ PR #55 已将 121Q23 Adaptive Relational Network 合并进 `main`。涉及关系
 
 121Q24 建立的迭代操作法已在 PR #56 验收并合并后成为当前仓库操作能力；未来状态改变任务必须按 `ITERATION.md` 记录 gap、claim ceiling、同步矩阵、验证和回执。遵循该方法不证明真理、价值、因果、完整性或正确性。
 
-当前方法是 `1.4.0`（Current），系统图是 `0.9.0`（Current）；`0.8.0` 是上一版 Historical。
+当前方法是 `1.4.0`（Current），系统图是 `0.9.0`（Current）；`0.8.0` 是上一版 Historical，`0.7.0` 是更早 Historical。
 
 方法 `1.3.0` 与系统图 `0.6.0`、`0.5.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0`、`0.2.0`、`0.3.0`、`0.4.0` 为更早 Historical。当前方法要求从构件 registry、类型化 topology 与 `data/operations/synchronization-surfaces.json` 计算全项目传播闭包。README、`HUMAN-READING.md`、`RESULTS/`、项目现状、人类 AI 指南、AI 冷启动、Agent 交接、机器入口和版本历史都是必须评估的项目表面。实现完成不能替代仓库同步完成；本地验证也不能声称任何未登记的实时外部状态已验证。
 

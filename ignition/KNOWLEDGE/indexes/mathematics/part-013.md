@@ -4,6 +4,26 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [从这条案例看，中文：案例说明：农民"可以不接受"但计划经济+户籍事实上走不了，温室 关键发现：第5步跑通 English: Rule-based Eng… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-859687cd1c0cc3d5 / 从这条案例看，中文：案例说明：农民"可以不接受"但计划经济+户籍事实上走不了，温室 关键发现：第5步跑通 English: Rule-based Eng… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：案例说明：冥想降低门槛——降低Λ_awareness让觉知更容易发生，D89结构保守性。核心函数：\[D89\]\(docs/zh/fun… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-1ef9767c5586cd7a / 从这条案例看，中文：案例说明：冥想降低门槛——降低Λ_awareness让觉知更容易发生，D89结构保守性。核心函数：\[D89\]\(docs/zh/fun… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D89；被引用：—
+- [从这条案例看，中文：案例说明：冲动交易者 — ηselect≈0.9，ηkelly≈0.3，ηtime≈0.7，Πcognition小，乘积=0.189… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-14af462d193672f5 / 从这条案例看，中文：案例说明：冲动交易者 — ηselect≈0.9，ηkelly≈0.3，ηtime≈0.7，Πcognition小，乘积=0.189… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：案例说明：凯利公式同构信号流速 — v*=\(s_lock×P\(L₁\)-P\(¬L₁\)\)/s_lock，第一锁不在位时v*<0 Engl… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-65e9c0e93be26331 / 从这条案例看，中文：案例说明：凯利公式同构信号流速 — v*=\(s_lock×P\(L₁\)-P\(¬L₁\)\)/s_lock，第一锁不在位时v*<0 Engl… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
 - [从这条案例看，中文：案例说明：刀刃期ℏ_eff放大 — 阶段2（ε≈θC）时σ'最大→信号最敏感→噪声影响最大→ℏ_eff等效增大3-5倍→策略偏离最优… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-3ef87ccbcd12f22c / 从这条案例看，中文：案例说明：刀刃期ℏ_eff放大 — 阶段2（ε≈θC）时σ'最大→信号最敏感→噪声影响最大→ℏ_eff等效增大3-5倍→策略偏离最优… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
@@ -2484,23 +2504,3 @@
   - 可搜索名称：NFC-25165c68f7dfdbc1 / 六组件对每条候选均执行。正向/反向/反例/pending/退出条件均保留。无 J⁺=1 写成外部事实证明。
   - 来源：`outputs/collisions/20260711-disobedience-subjectivity/psi0-decision-matrix.md`
   - 依赖：—；被引用：—
-- [共享层沟通验证 — 物理学家和生物学家在数学框架上沟通η=0.27,物理学家降维到BL沟通η=0.15,共享层优于降维](../../../data/foundation/evidence/evidence.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：NFC-83a5b419e5faf95b / 共享层沟通验证 — 物理学家和生物学家在数学框架上沟通η=0.27,物理学家降维到BL沟通η=0.15,共享层优于降维
-  - 来源：`data/foundation/evidence/evidence.jsonl`
-  - 依赖：—；被引用：—
-- [共享源双重杀伤函数](../../../FOUNDATION-64-PROPAGATION.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：D176 / 共享源双重杀伤函数 / D176
-  - 来源：`FOUNDATION-64-PROPAGATION.jsonl`
-  - 依赖：D180, D53, D66, D91；被引用：NFC-0447c7cab4a0cf63, NFC-2ed1ebb7a23ba6cf, NFC-46b8f5f19759876f, NFC-90144990d6582487
-- [共享源双重杀伤函数,ρ同时驱动H_correlation\(D66\)和P\(biased\)\(D53\),联合效应P_sustain∝\(1-ρ\)²而非\(1-ρ\)。共享源让乘法归零从线性变平方,杀伤力指数级增强。与电力级联放大器G∝V²完全同构。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-664342ec0872ea19 / 共享源双重杀伤函数,ρ同时驱动H_correlation\(D66\)和P\(biased\)\(D53\),联合效应P_sustain∝\(1-ρ\)²而非\(1-ρ\)。共享源让乘法归零从线性变平方,杀伤力指数级增强。与电力级联放大器G∝V²完全同构。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D53, D66；被引用：—
-- [共享源双重杀伤函数,ρ同时驱动H_correlation\(D66\)和P\(biased\)\(D53\),联合效应P_sustain∝\(1-ρ\)²而非\(1-ρ\)。共享源让乘法归零从线性变平方,杀伤力指数级增强。与电力级联放大器G∝V²完全同构。 *](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-da92b11d1b5fc48b / 共享源双重杀伤函数,ρ同时驱动H_correlation\(D66\)和P\(biased\)\(D53\),联合效应P_sustain∝\(1-ρ\)²而非\(1-ρ\)。共享源让乘法归零从线性变平方,杀伤力指数级增强。与电力级联放大器G∝V²完全同构。 *
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D53, D66；被引用：—

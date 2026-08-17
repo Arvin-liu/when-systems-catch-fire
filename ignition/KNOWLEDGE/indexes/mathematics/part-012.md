@@ -4,6 +4,26 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [中文：路径积分验证 — 创业决策：ℏ_eff=0.1时策略集中在最优路径附近（D118预测），ℏ_eff=0.8时策略分散在多条路径（非最优策略也有显著概率）。经验创业者ℏ_eff低（信息充分噪声小），新手ℏ_eff高。核心函数：\[D127](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-b27ae6984bcff332 / 中文：路径积分验证 — 创业决策：ℏ_eff=0.1时策略集中在最优路径附近（D118预测），ℏ_eff=0.8时策略分散在多条路径（非最优策略也有显著概率）。经验创业者ℏ_eff低（信息充分噪声小），新手ℏ_eff高。核心函数：\[D127
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D118, D127；被引用：—
+- [中文：达到L6的路径——严格证明变量闭包定律](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-4dd9dbd04fc1fa11 / 中文：达到L6的路径——严格证明变量闭包定律
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [中文：达到L6的路径——严格证明变量闭包定律 English: Rule-based English rendering pending human revi…](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-5bf66cff247e340e / 中文：达到L6的路径——严格证明变量闭包定律 English: Rule-based English rendering pending human revi…
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [中文：退出权阻抗函数验证](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-ae8a5487c7536858 / 中文：退出权阻抗函数验证
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
 - [中文：退出隧穿验证 — 朝鲜脱北者：C_exit≈∞（地理+政治+身份三维锁定），经典P_exit≈0，但实际发生。隧穿路径：边境信息泄漏（降低势垒宽度）+贿赂守卫（局部降低C_exit）+外部接应（提供ε_eff脉冲）。核心函数：\[D12](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-426ba11bf189a3bb / 中文：退出隧穿验证 — 朝鲜脱北者：C_exit≈∞（地理+政治+身份三维锁定），经典P_exit≈0，但实际发生。隧穿路径：边境信息泄漏（降低势垒宽度）+贿赂守卫（局部降低C_exit）+外部接应（提供ε_eff脉冲）。核心函数：\[D12
@@ -2482,25 +2502,5 @@
 - [从这条案例看，中文：案例说明：农民"可以不参与"但威权体制下事实上无法退出 关键发现：第5步跑通 English: Rule-based English… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-90d939d84678c574 / 从这条案例看，中文：案例说明：农民"可以不参与"但威权体制下事实上无法退出 关键发现：第5步跑通 English: Rule-based English… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [从这条案例看，中文：案例说明：农民"可以不接受"但计划经济+户籍事实上走不了，温室 关键发现：第5步跑通 English: Rule-based Eng… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-859687cd1c0cc3d5 / 从这条案例看，中文：案例说明：农民"可以不接受"但计划经济+户籍事实上走不了，温室 关键发现：第5步跑通 English: Rule-based Eng… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [从这条案例看，中文：案例说明：冥想降低门槛——降低Λ_awareness让觉知更容易发生，D89结构保守性。核心函数：\[D89\]\(docs/zh/fun… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-1ef9767c5586cd7a / 从这条案例看，中文：案例说明：冥想降低门槛——降低Λ_awareness让觉知更容易发生，D89结构保守性。核心函数：\[D89\]\(docs/zh/fun… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D89；被引用：—
-- [从这条案例看，中文：案例说明：冲动交易者 — ηselect≈0.9，ηkelly≈0.3，ηtime≈0.7，Πcognition小，乘积=0.189… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-14af462d193672f5 / 从这条案例看，中文：案例说明：冲动交易者 — ηselect≈0.9，ηkelly≈0.3，ηtime≈0.7，Πcognition小，乘积=0.189… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [从这条案例看，中文：案例说明：凯利公式同构信号流速 — v*=\(s_lock×P\(L₁\)-P\(¬L₁\)\)/s_lock，第一锁不在位时v*<0 Engl… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-65e9c0e93be26331 / 从这条案例看，中文：案例说明：凯利公式同构信号流速 — v*=\(s_lock×P\(L₁\)-P\(¬L₁\)\)/s_lock，第一锁不在位时v*<0 Engl… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—

@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Within the source-defined scope, Φ跨域稳定性定理 is adjudicated as FORMAL_PROPOSITION: Stability\(Φ\)=∃μ*:Φ\(μ*\)=min。D224是T23的证明——](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：CLAIM-T23 / Within the source-defined scope, Φ跨域稳定性定理 is adjudicated as FORMAL_PROPOSITION: Stability\(Φ\)=∃μ*:Φ\(μ*\)=min。D224是T23的证明——
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：D224, T23；被引用：—
+- [Within the source-defined scope, Φ跨域统一定理\(D224升级\) is adjudicated as RELATION: Φ在不同域中展现统一结构：物理Φ=零温自由能、社会Φ=权力熵、认知Φ=认知势能。三域统](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-T39 / Within the source-defined scope, Φ跨域统一定理\(D224升级\) is adjudicated as RELATION: Φ在不同域中展现统一结构：物理Φ=零温自由能、社会Φ=权力熵、认知Φ=认知势能。三域统
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：D224；被引用：—
+- [Within the source-defined scope, Φ近似阶数选择函数 is adjudicated as RELATION: M3的Φ近似阶数选择：pᵢ<0.5→1阶（误差<13%），0.5-0.8→2阶（<17%），0.8](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D296 / Within the source-defined scope, Φ近似阶数选择函数 is adjudicated as RELATION: M3的Φ近似阶数选择：pᵢ<0.5→1阶（误差<13%），0.5-0.8→2阶（<17%），0.8
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
 - [Within the source-defined scope, Ω最优区间定理 is adjudicated as FORMAL_PROPOSITION: 物理存在的Ω范围是\(0,1\)，但不是所有Ω值都等价。 Ω太小（接近0）：Φ很大→约](../../../data/foundation/adjudications/core-kernel.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
   - 可搜索名称：CLAIM-D219 / Within the source-defined scope, Ω最优区间定理 is adjudicated as FORMAL_PROPOSITION: 物理存在的Ω范围是\(0,1\)，但不是所有Ω值都等价。 Ω太小（接近0）：Φ很大→约
@@ -2354,6 +2369,11 @@
   - 可搜索名称：IMPLICIT-FCDADC2B866FCC31 / \| **M₄ 动力学元律** \| G₅微分方程律\(dx/dt=αx₁-βx₂\)、G₁₁复合函数律\(f\(g\(x\),h\(x\)\)\) \| 动力学耦合族,包括微分方程和复合函数 \| / IMPLICIT-FCDADC2B866FCC31 / IMPLICIT-C82E3AAB6C9C3F6F
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
+- [\| 02 \| COMPLETED \| pending closure \| pending closure \| Monotonic Effective Policy compiler with digest binding, narrowin](../../../reports/operations/ignition-124-progress.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-97ba55a265edac9a / \| 02 \| COMPLETED \| pending closure \| pending closure \| Monotonic Effective Policy compiler with digest binding, narrowin
+  - 来源：`reports/operations/ignition-124-progress.md`
+  - 依赖：—；被引用：—
 - [\| 1. FunctionSpec \| CANDIDATE \| Markdown files in 已迁移的历史函数来源/ \|](../../../reports/external-research/120-function-os-architecture-candidate-report.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-80213e4035d85e1e / \| 1. FunctionSpec \| CANDIDATE \| Markdown files in 已迁移的历史函数来源/ \|
@@ -2484,23 +2504,3 @@
   - 可搜索名称：NFC-c810f8b543f3464a / \| \[C-0774\]\( \) \| \[写地方偏方、食物、手艺\]\( \) \| 该案例对应 D581《信息茧房破解》，用于补充该函数在
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D581；被引用：—
-- [\| \[C-0775\]\( \) \| \[和孩子聊热点事件\]\( \) \| 该案例对应 D581《信息茧房破解》，用于补充该函数在具体对象上的验证。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-3712e2d03dee77de / \| \[C-0775\]\( \) \| \[和孩子聊热点事件\]\( \) \| 该案例对应 D581《信息茧房破解》，用于补充该函数在具体对象上的验证。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D581；被引用：—
-- [\| \[C-0776\]\( \) \| \[博士期间换十个选题\]\( \) \| 该案例对应 D581《信息茧房破解》，用于补充该函数在具体对象上的](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-c336aa13b41b1608 / \| \[C-0776\]\( \) \| \[博士期间换十个选题\]\( \) \| 该案例对应 D581《信息茧房破解》，用于补充该函数在具体对象上的
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D581；被引用：—
-- [\| \[C-0777\]\( \) \| \[双周访谈打破信息茧房\]\( \) \| 该案例对应 D582《堆肥法》，用于补充该函数在具体对象上的](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-8f9946850e244b55 / \| \[C-0777\]\( \) \| \[双周访谈打破信息茧房\]\( \) \| 该案例对应 D582《堆肥法》，用于补充该函数在具体对象上的
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D582；被引用：—
-- [\| \[C-0778\]\( \) \| \[快闪阅读反算法\]\( \) \| 该案例对应 D582《堆肥法》，用于补充该函数在具体对象上的验证。 \|](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-acbca6cb3a08ae52 / \| \[C-0778\]\( \) \| \[快闪阅读反算法\]\( \) \| 该案例对应 D582《堆肥法》，用于补充该函数在具体对象上的验证。 \|
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D582；被引用：—

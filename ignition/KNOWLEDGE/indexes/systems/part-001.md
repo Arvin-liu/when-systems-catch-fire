@@ -1594,6 +1594,11 @@
   - 可搜索名称：NFC-13a12c076e7d9a68 / Atlas may render ARN projections;
   - 来源：`reports/architecture/121Q23-adaptive-relational-network-validation.md`
   - 依赖：—；被引用：—
+- [atomic, and unknown side effects never receive automatic failover merely because](../../../docs/architecture/os-control-plane-r2.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-bbe9766ecf5e0a0e / atomic, and unknown side effects never receive automatic failover merely because
+  - 来源：`docs/architecture/os-control-plane-r2.md`
+  - 依赖：—；被引用：—
 - [Audit factual fidelity, evidence links, causal language, counterevidence,](../../../docs/publication/zhiyuan-writing-cognitive-migration-editorial-revision.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-100ab14bed8236fd / Audit factual fidelity, evidence links, causal language, counterevidence,
@@ -1604,10 +1609,20 @@
   - 可搜索名称：NFC-f560a5dd6c3d18a6 / authority_changes: \[current-system-identity\]\(./data/architecture/current-system-identity.json\), \[current-facts\]\(./data/a
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
+- [authority_changes: \[OS Control Plane R2\]\(./docs/architecture/os-control-plane-r2.md\), \[current-system-identity\]\(./data/a](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-8cca8453ab40d4fe / authority_changes: \[OS Control Plane R2\]\(./docs/architecture/os-control-plane-r2.md\), \[current-system-identity\]\(./data/a
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [authority_changes: \[迭代操作法 1.4.0\]\(./ITERATION.md\)、\[系统图 0.5.0\]\(./data/architecture/interactive-system-map.json\)、\[Charter S](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-d746274ad8c82435 / authority_changes: \[迭代操作法 1.4.0\]\(./ITERATION.md\)、\[系统图 0.5.0\]\(./data/architecture/interactive-system-map.json\)、\[Charter S
   - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [autonomy, external executor success, universal safety, causality, Owner](../../../reports/architecture/os-control-plane-r2-gap-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-a30ceac6a6971e6f / autonomy, external executor success, universal safety, causality, Owner
+  - 来源：`reports/architecture/os-control-plane-r2-gap-audit.md`
   - 依赖：—；被引用：—
 - [B1 绑定记录**：合并 / 接受 / 批准时，在对应注册表 / 请求 / 回执中写入 `bound_charter_versions: \[ @ \]`。例：某方法在价值宪章 v2 + 宪章系统 R1 生](../../../docs/governance/charter-system-r1.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
@@ -2099,6 +2114,11 @@
   - 可搜索名称：NFC-93fad73c8fa6df33 / Conceptual root cause and correction
   - 来源：`reports/operations/121Q28R-cognitive-level-leap-writing-method-audit.md`
   - 依赖：—；被引用：—
+- [concurrent operational memory 和 Driver Console 先决定是否可 admission、路由、](../../../docs/architecture/external-agent-federation-r1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-e97dc1f7e46e966c / concurrent operational memory 和 Driver Console 先决定是否可 admission、路由、
+  - 来源：`docs/architecture/external-agent-federation-r1.md`
+  - 依赖：—；被引用：—
 - [Conflicting causal models without adjudicating evidence.](../../../reports/architecture/121Q21R-causal-asset-audit.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-4a66e90fd4ea81f7 / Conflicting causal models without adjudicating evidence.
@@ -2482,25 +2502,5 @@
 - [data/foundation/core-systems/protocol-roles.jsonl](../../../data/foundation/core-systems/protocol-roles.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：P07 / data/foundation/core-systems/protocol-roles.jsonl / P07 / P01
-  - 来源：`data/foundation/core-systems/protocol-roles.jsonl`
-  - 依赖：—；被引用：—
-- [data/foundation/core-systems/protocol-roles.jsonl](../../../data/foundation/core-systems/protocol-roles.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：P08 / data/foundation/core-systems/protocol-roles.jsonl / P08 / P01
-  - 来源：`data/foundation/core-systems/protocol-roles.jsonl`
-  - 依赖：—；被引用：—
-- [data/foundation/core-systems/protocol-roles.jsonl](../../../data/foundation/core-systems/protocol-roles.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：P09 / data/foundation/core-systems/protocol-roles.jsonl / P09 / P01
-  - 来源：`data/foundation/core-systems/protocol-roles.jsonl`
-  - 依赖：—；被引用：—
-- [data/foundation/core-systems/protocol-roles.jsonl](../../../data/foundation/core-systems/protocol-roles.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：P10 / data/foundation/core-systems/protocol-roles.jsonl / P10 / P01
-  - 来源：`data/foundation/core-systems/protocol-roles.jsonl`
-  - 依赖：—；被引用：—
-- [data/foundation/core-systems/protocol-roles.jsonl](../../../data/foundation/core-systems/protocol-roles.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：P11 / data/foundation/core-systems/protocol-roles.jsonl / P11 / P01
   - 来源：`data/foundation/core-systems/protocol-roles.jsonl`
   - 依赖：—；被引用：—

@@ -4,6 +4,26 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Φ在不同域中展现统一结构：物理Φ=零温自由能、社会Φ=权力熵、认知Φ=认知势能。三域统一形式：Φ = -Σᵢ sᵢ/ln²\(μ/Λᵢ\) + C\(退化项\)。 **扩展注释 / Extended Annotation**](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-50a9568627952168 / Φ在不同域中展现统一结构：物理Φ=零温自由能、社会Φ=权力熵、认知Φ=认知势能。三域统一形式：Φ = -Σᵢ sᵢ/ln²\(μ/Λᵢ\) + C\(退化项\)。 **扩展注释 / Extended Annotation**
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：—；被引用：—
+- [Φ跨域稳定性定理](../../../data/foundation/formal-objects/objects.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-922a2cd5d29cfd5f / Φ跨域稳定性定理
+  - 来源：`data/foundation/formal-objects/objects.jsonl`
+  - 依赖：—；被引用：—
+- [Φ跨域稳定性定理](../../../FOUNDATION-64-PROPAGATION.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `DOWNGRADE_TO_CONJECTURE`
+  - 可搜索名称：T23 / Φ跨域稳定性定理 / T23
+  - 来源：`FOUNDATION-64-PROPAGATION.jsonl`
+  - 依赖：—；被引用：CLAIM-T23, NFC-12038a9e66cde328, NFC-2502c1256717e6f0, NFC-3ba198259241e813
+- [Φ跨域稳定性定理 / Φcross-domain stability theorem](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-3b123864a15ad44e / Φ跨域稳定性定理 / Φcross-domain stability theorem
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：—；被引用：—
 - [Φ跨域统一定理\(D224升级\)](../../../data/foundation/formal-objects/objects.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-70b4e3a701eed388 / Φ跨域统一定理\(D224升级\)
@@ -2484,23 +2504,3 @@
   - 可搜索名称：NFC-d0719c24d3e5fe3e / 中文：跨物种调度同构验证 — 人类-AI和CAI-EAI满足同构三条件，数学结构完全等价，差异仅在ηinterface参数值。核心函数：D69 English…
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D69；被引用：—
-- [中文：路径积分验证 — 创业决策：ℏ_eff=0.1时策略集中在最优路径附近（D118预测），ℏ_eff=0.8时策略分散在多条路径（非最优策略也有显著概率）。经验创业者ℏ_eff低（信息充分噪声小），新手ℏ_eff高。核心函数：\[D127](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-b27ae6984bcff332 / 中文：路径积分验证 — 创业决策：ℏ_eff=0.1时策略集中在最优路径附近（D118预测），ℏ_eff=0.8时策略分散在多条路径（非最优策略也有显著概率）。经验创业者ℏ_eff低（信息充分噪声小），新手ℏ_eff高。核心函数：\[D127
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D118, D127；被引用：—
-- [中文：达到L6的路径——严格证明变量闭包定律](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-4dd9dbd04fc1fa11 / 中文：达到L6的路径——严格证明变量闭包定律
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [中文：达到L6的路径——严格证明变量闭包定律 English: Rule-based English rendering pending human revi…](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-5bf66cff247e340e / 中文：达到L6的路径——严格证明变量闭包定律 English: Rule-based English rendering pending human revi…
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [中文：退出权阻抗函数验证](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-ae8a5487c7536858 / 中文：退出权阻抗函数验证
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—

@@ -19,11 +19,11 @@ class OverallArchitectureTest(unittest.TestCase):
         MODULE.validate_spec(spec)
         svg = MODULE.OUT.read_text(encoding="utf-8")
         self.assertEqual(spec["title"], "点火唯一完整可点击总架构图")
-        self.assertEqual(len(spec["nodes"]), 70)
+        self.assertEqual(len(spec["nodes"]), 79)
         self.assertIn("map-bg", svg)
-        self.assertEqual(svg.count('class="node-link"'), 70)
-        self.assertEqual(spec["component_coverage"]["registry_components"], 82)
-        self.assertEqual(spec["component_coverage"]["visible_nodes"], 70)
+        self.assertEqual(svg.count('class="node-link"'), 79)
+        self.assertEqual(spec["component_coverage"]["registry_components"], 91)
+        self.assertEqual(spec["component_coverage"]["visible_nodes"], 79)
 
 
 if __name__ == "__main__":

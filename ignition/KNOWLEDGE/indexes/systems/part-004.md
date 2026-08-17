@@ -4,6 +4,36 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [\| Rumelhart & Norman, accretion/tuning/restructuring \| Distinguish surface addition, tuning and restructuring-like updat](../../../reports/research/121Q23-network-theory-source-map.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-4f254364ef52ec93 / \| Rumelhart & Norman, accretion/tuning/restructuring \| Distinguish surface addition, tuning and restructuring-like updat
+  - 来源：`reports/research/121Q23-network-theory-source-map.md`
+  - 依赖：—；被引用：—
+- [\| Røysland 2011, arXiv `1106.0972` \| Counterfactual distributions in continuous-time stochastic processes under conditio](../../../reports/research/121Q22-probability-systems-source-map.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-0be13002f13af643 / \| Røysland 2011, arXiv `1106.0972` \| Counterfactual distributions in continuous-time stochastic processes under conditio
+  - 来源：`reports/research/121Q22-probability-systems-source-map.md`
+  - 依赖：—；被引用：—
+- [\| S120-008 \| BLOCKED \| UNRESOLVED \| Mixed Precision Weight Networks \|](../../../reports/external-research/121Q2W-final-consistency-seal-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-ce9dc6a7d5d2c46a / \| S120-008 \| BLOCKED \| UNRESOLVED \| Mixed Precision Weight Networks \|
+  - 来源：`reports/external-research/121Q2W-final-consistency-seal-report.md`
+  - 依赖：—；被引用：—
+- [\| S120-015 \| BLOCKED \| UNRESOLVED \| Hypernetworks for Specialized Instructions \(UNVERIFIABLE\) \|](../../../reports/external-research/121Q2W-final-consistency-seal-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-5332eb187f676408 / \| S120-015 \| BLOCKED \| UNRESOLVED \| Hypernetworks for Specialized Instructions \(UNVERIFIABLE\) \|
+  - 来源：`reports/external-research/121Q2W-final-consistency-seal-report.md`
+  - 依赖：—；被引用：—
+- [\| S3 \| 系统由层级结构组织，上下层存在控制或信息梯度。 \| 为责任清晰、应急协调、专业分工与大规模复杂任务而组织的上下层控制/信息梯度结构；权力须可问责、层级可撤销、决策可复核，底层成员有申诉与退出机制，且不得把服从本身当成价值。 \|](../../../docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-f8e044df3a49921b / \| S3 \| 系统由层级结构组织，上下层存在控制或信息梯度。 \| 为责任清晰、应急协调、专业分工与大规模复杂任务而组织的上下层控制/信息梯度结构；权力须可问责、层级可撤销、决策可复核，底层成员有申诉与退出机制，且不得把服从本身当成价值。 \|
+  - 来源：`docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md`
+  - 依赖：—；被引用：—
+- [\| Source \| Permitted Projection \| Prohibited Inference \|](../../../reports/research/121Q23-network-theory-source-map.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-098040e2061f0843 / \| Source \| Permitted Projection \| Prohibited Inference \|
+  - 来源：`reports/research/121Q23-network-theory-source-map.md`
+  - 依赖：—；被引用：—
 - [\| Source \| Usable Projection \| Forbidden Upgrade \|](../../../reports/research/121Q22-probability-systems-source-map.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-85357335b1f04d2f / \| Source \| Usable Projection \| Forbidden Upgrade \|
@@ -313,6 +343,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-0d0c3d7554ac5cc0 / 不得把同一 AI 的多次输出当作独立事实证据；不得把行动选择写成机制真值；不得把新增术语写成理论升级。
   - 来源：`AI-HANDOFF.md`
+  - 依赖：—；被引用：—
+- [不是 live executor、生产安全、现实因果或外部有效性证据。](../../../docs/project-current-state.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-4cc6dcdcd214c25a / 不是 live executor、生产安全、现实因果或外部有效性证据。
+  - 来源：`docs/project-current-state.md`
   - 依赖：—；被引用：—
 - [不确定性分开：来源不确定性（文本层累）；测量/报告不确定性（“20 万/70 万/百次”）；模型不确定性（箭头与变量选择）；历史重构不确定性（缺失档案和幸存者叙事）。不默认 Markov、平稳、遍历、线性、高斯或闭系统，也不把高概率等同强因](../../../reports/publication/jin-rise-point-fire-analysis.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
@@ -2444,9 +2479,9 @@
   - 可搜索名称：NFC-3bf9f8910a2df6b7 / 当前方法 `1.4.0`、系统图 `0.6.0` 与之元写作法 `0.5.0` 均以各自权威资产为准；系统图 `0.5.0`、`0.4.0` 及更早版本只作为历史证据。面向 AI 的最近状态增量见 \[`STATE-CHANGELOG.md`
   - 来源：`docs/VERSIONING.md`
   - 依赖：—；被引用：—
-- [当前机器投影以 `82` 个 registry components、`70` 个可见节点、`77` 条 typed](../../../docs/architecture/interactive-system-map.md)
+- [当前机器投影以 `91` 个 registry components、`79` 个可见节点、`84` 条 typed](../../../docs/architecture/interactive-system-map.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-414ec2e2ad5c007f / 当前机器投影以 `82` 个 registry components、`70` 个可见节点、`77` 条 typed
+  - 可搜索名称：NFC-a6eb01a9cf2319a9 / 当前机器投影以 `91` 个 registry components、`79` 个可见节点、`84` 条 typed
   - 来源：`docs/architecture/interactive-system-map.md`
   - 依赖：—；被引用：—
 - [当前树删除 Pages workflow、Jekyll 配置/布局/样式、Pages HTML、Pages 路径的派生 SVG，以及两组 Pages 专用测试。系统图迁移到 `docs/generated/ignition-system-m](../../../reports/foundation-architecture/101-human-readable-surfaces-self-correction-closeout.md)
@@ -2468,39 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-e0cf5009c495b05c / 当前身份 contract/facts 见 \[`current-system-identity.json`\]\(../../data/architecture/current-system-identity.json\)
   - 来源：`docs/architecture/agent-platform-r2.md`
-  - 依赖：—；被引用：—
-- [当前阶段状态：准备阶段已收口（候选召回层已验证有效，机制级二次判定层待建）。](../../../docs/getnote-collision-workflow-final-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-6c8bdd7f9d27be79 / 当前阶段状态：准备阶段已收口（候选召回层已验证有效，机制级二次判定层待建）。
-  - 来源：`docs/getnote-collision-workflow-final-20260708.md`
-  - 依赖：—；被引用：—
-- [当皇帝可以决定什么算祥瑞，谁来解释祥瑞，哪幅画代表祥瑞，以及哪些坏消息不配进入这套语言，程序就不再只是帮助人行动。它开始帮助一个中心保护自己的解释。](../../../docs/publication/works/when-an-emperor-manufactures-heaven.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-baf445377147e662 / 当皇帝可以决定什么算祥瑞，谁来解释祥瑞，哪幅画代表祥瑞，以及哪些坏消息不配进入这套语言，程序就不再只是帮助人行动。它开始帮助一个中心保护自己的解释。
-  - 来源：`docs/publication/works/when-an-emperor-manufactures-heaven.md`
-  - 依赖：—；被引用：—
-- [当站在讲台上的人也开始不堪重负，真正的问题浮现了：一套持续透支教师的机制，真的能托起更好的教育吗？如果连老师都难以安放，教育又如何安放学生？](../../../inputs/collisions/20260708-teacher-competition/source.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-15f24ff4ad0617dc / 当站在讲台上的人也开始不堪重负，真正的问题浮现了：一套持续透支教师的机制，真的能托起更好的教育吗？如果连老师都难以安放，教育又如何安放学生？
-  - 来源：`inputs/collisions/20260708-teacher-competition/source.md`
-  - 依赖：—；被引用：—
-- [当站在讲台上的人也开始不堪重负，真正的问题浮现了：怎样的教师培养机制，能托起更好的教育？如果连老师都难以安放，教育又如何安放学生？](../../../inputs/collisions/20260708-teacher-competition/source.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-86c1c6ee9622ded1 / 当站在讲台上的人也开始不堪重负，真正的问题浮现了：怎样的教师培养机制，能托起更好的教育？如果连老师都难以安放，教育又如何安放学生？
-  - 来源：`inputs/collisions/20260708-teacher-competition/source.md`
-  - 依赖：—；被引用：—
-- [当脱不花在那场对谈里重新叫出“李丹阳”这个名字时，被叫回来的不只是一个本名。被叫回来的，是那个不再满足于只做接口、而要重新决定自己如何被解释的人。](../../../outputs/stories/20260712-disobedience-subjectivity/story-longform.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-6d148f59df4aa203 / 当脱不花在那场对谈里重新叫出“李丹阳”这个名字时，被叫回来的不只是一个本名。被叫回来的，是那个不再满足于只做接口、而要重新决定自己如何被解释的人。
-  - 来源：`outputs/stories/20260712-disobedience-subjectivity/story-longform.md`
-  - 依赖：—；被引用：—
-- [影响组件：causal_identification（PARTIAL，保持）](../../../data/external-research/089-external-source-atlas.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-4de8f2d3b44acbac / 影响组件：causal_identification（PARTIAL，保持）
-  - 来源：`data/external-research/089-external-source-atlas.md`
-  - 依赖：—；被引用：—
-- [影响组件：evidence obligation interface（保持）](../../../data/external-research/089-external-source-atlas.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-cb1c6641e9f2e2d6 / 影响组件：evidence obligation interface（保持）
-  - 来源：`data/external-research/089-external-source-atlas.md`
   - 依赖：—；被引用：—

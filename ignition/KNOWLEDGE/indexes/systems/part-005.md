@@ -4,6 +4,41 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [当前阶段状态：准备阶段已收口（候选召回层已验证有效，机制级二次判定层待建）。](../../../docs/getnote-collision-workflow-final-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-6c8bdd7f9d27be79 / 当前阶段状态：准备阶段已收口（候选召回层已验证有效，机制级二次判定层待建）。
+  - 来源：`docs/getnote-collision-workflow-final-20260708.md`
+  - 依赖：—；被引用：—
+- [当皇帝可以决定什么算祥瑞，谁来解释祥瑞，哪幅画代表祥瑞，以及哪些坏消息不配进入这套语言，程序就不再只是帮助人行动。它开始帮助一个中心保护自己的解释。](../../../docs/publication/works/when-an-emperor-manufactures-heaven.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-baf445377147e662 / 当皇帝可以决定什么算祥瑞，谁来解释祥瑞，哪幅画代表祥瑞，以及哪些坏消息不配进入这套语言，程序就不再只是帮助人行动。它开始帮助一个中心保护自己的解释。
+  - 来源：`docs/publication/works/when-an-emperor-manufactures-heaven.md`
+  - 依赖：—；被引用：—
+- [当站在讲台上的人也开始不堪重负，真正的问题浮现了：一套持续透支教师的机制，真的能托起更好的教育吗？如果连老师都难以安放，教育又如何安放学生？](../../../inputs/collisions/20260708-teacher-competition/source.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-15f24ff4ad0617dc / 当站在讲台上的人也开始不堪重负，真正的问题浮现了：一套持续透支教师的机制，真的能托起更好的教育吗？如果连老师都难以安放，教育又如何安放学生？
+  - 来源：`inputs/collisions/20260708-teacher-competition/source.md`
+  - 依赖：—；被引用：—
+- [当站在讲台上的人也开始不堪重负，真正的问题浮现了：怎样的教师培养机制，能托起更好的教育？如果连老师都难以安放，教育又如何安放学生？](../../../inputs/collisions/20260708-teacher-competition/source.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-86c1c6ee9622ded1 / 当站在讲台上的人也开始不堪重负，真正的问题浮现了：怎样的教师培养机制，能托起更好的教育？如果连老师都难以安放，教育又如何安放学生？
+  - 来源：`inputs/collisions/20260708-teacher-competition/source.md`
+  - 依赖：—；被引用：—
+- [当脱不花在那场对谈里重新叫出“李丹阳”这个名字时，被叫回来的不只是一个本名。被叫回来的，是那个不再满足于只做接口、而要重新决定自己如何被解释的人。](../../../outputs/stories/20260712-disobedience-subjectivity/story-longform.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-6d148f59df4aa203 / 当脱不花在那场对谈里重新叫出“李丹阳”这个名字时，被叫回来的不只是一个本名。被叫回来的，是那个不再满足于只做接口、而要重新决定自己如何被解释的人。
+  - 来源：`outputs/stories/20260712-disobedience-subjectivity/story-longform.md`
+  - 依赖：—；被引用：—
+- [影响组件：causal_identification（PARTIAL，保持）](../../../data/external-research/089-external-source-atlas.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-4de8f2d3b44acbac / 影响组件：causal_identification（PARTIAL，保持）
+  - 来源：`data/external-research/089-external-source-atlas.md`
+  - 依赖：—；被引用：—
+- [影响组件：evidence obligation interface（保持）](../../../data/external-research/089-external-source-atlas.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-cb1c6641e9f2e2d6 / 影响组件：evidence obligation interface（保持）
+  - 来源：`data/external-research/089-external-source-atlas.md`
+  - 依赖：—；被引用：—
 - [影响组件：evidence_regime（PARTIAL，保持）](../../../data/external-research/089-external-source-atlas.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-b89bcd9a297a6078 / 影响组件：evidence_regime（PARTIAL，保持）
@@ -1329,9 +1364,9 @@
   - 可搜索名称：NFC-d186d31663cc9741 / 版本事实：当前迭代方法为 `1.4.0 Continuous Stage Snapshot Publication`，当前系统图为 `0.6.0`；系统图 `0.5.0`、`0.4.0`、`0.3.0` 与更早版本均为 Historical
   - 来源：`docs/ai-assistant-usage-reference.md`
   - 依赖：—；被引用：—
-- [状态：`0.8.0 Current registry-derived navigation projection`；`0.7.0`、`0.6.0`、`0.5.0`、`0.4.0` 与更早版本为 Historical。](../../../docs/architecture/interactive-system-map.md)
+- [状态：`0.9.0 Current registry-derived navigation projection`；`0.8.0`、`0.7.0`、`0.6.0`、`0.5.0`、`0.4.0` 与更早版本为 Historical。](../../../docs/architecture/interactive-system-map.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-327d2f7d8373ebe0 / 状态：`0.8.0 Current registry-derived navigation projection`；`0.7.0`、`0.6.0`、`0.5.0`、`0.4.0` 与更早版本为 Historical。
+  - 可搜索名称：NFC-64548e1600f4dae8 / 状态：`0.9.0 Current registry-derived navigation projection`；`0.8.0`、`0.7.0`、`0.6.0`、`0.5.0`、`0.4.0` 与更早版本为 Historical。
   - 来源：`docs/architecture/interactive-system-map.md`
   - 依赖：—；被引用：—
 - [状态：`CURRENT_BOUNDED_R0_BASE_WITH_R2_PROJECTION_AND_OPEN_OBLIGATIONS`。这仍不构成通用智能、长期自主性、现实因果、生产安全或 `EPISTEMICALLY_ACCEPTED`](../../../docs/architecture/agentization-boundary-r0.md)
@@ -1876,7 +1911,7 @@
   - 依赖：—；被引用：—
 - [该链由当前迭代操作法 1.4.0 继承并保留声明关系下的变更传播闭包。`substantive_causal_candidate`、`repository_dependency` 与 `synchronization_obligation`](../../../ARCHITECTURE.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-90ba64cc820c5a6b / 该链由当前迭代操作法 1.4.0 继承并保留声明关系下的变更传播闭包。`substantive_causal_candidate`、`repository_dependency` 与 `synchronization_obligation`
+  - 可搜索名称：NFC-8a9e4c1591ee8cf7 / 该链由当前迭代操作法 1.4.0 继承并保留声明关系下的变更传播闭包。`substantive_causal_candidate`、`repository_dependency` 与 `synchronization_obligation`
   - 来源：`ARCHITECTURE.md`
   - 依赖：—；被引用：—
 - [误导后续机制生成。](../../../outputs/getbrain/failure-typology-draft-20260706.md)
