@@ -18,6 +18,7 @@ formal `main` tip does not move during the task branch run.
 | 07 | COMPLETED | pending closure | pending closure | Durable external dispatch/ack/progress/receipt journal with validation gate and conservative reconciliation. |
 | 08 | COMPLETED | pending closure | pending closure | Concurrent operational memory with generation CAS, duplicate suppression, tombstones, stale capsules and deterministic compaction projection. |
 | 09 | COMPLETED | pending closure | pending closure | Human-readable Driver Console projection with next-action ordering, open obligations and explicit epistemic boundaries. |
+| 10 | COMPLETED | pending closure | pending closure | Five-child offline pilot covering real concurrency, conflicts, stale health, checkpoint/resume, cancel/deadline, forged completion and memory. |
 
 ## Boundary
 
@@ -140,3 +141,16 @@ this task.
   dispatch states, memory generation/staleness and policy digest in one
   bounded view. The boundary text states that the projection cannot establish
   external completion, truth, Owner acceptance or epistemic acceptance.
+
+## Step 10 evidence
+
+- Pilot implementation: `agent_runtime/pilots/control_plane_r2.py`
+- Durable pilot receipt: `data/agent-runtime/pilots/r2-control-plane/pilot-result.json`
+- Targeted pilot test: `tests/test_control_plane_r2_pilot.py` (`1/1`)
+- Validator: `tools/validate_control_plane_r2_pilot.py` (`PASS`)
+- Five children are represented as `pilot-a` through `pilot-e`; actual worker
+  overlap reached `2`. The adversarial matrix passed for shared-resource
+  conflict, stale-executor routing rejection, crash/checkpoint plus explicit
+  resume, pre-dispatch cancellation, deadline expiry, forged completion
+  rejection, and stale operational-memory capsule. The result is an offline
+  disposable fixture receipt and does not establish live executor behavior.

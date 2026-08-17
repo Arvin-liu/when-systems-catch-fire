@@ -1,0 +1,249 @@
+{
+  "adversarial": {
+    "cancel_before_dispatch": true,
+    "concurrent_children": true,
+    "crash_checkpoint_resume": true,
+    "deadline_expired": true,
+    "forged_completion_not_accepted": true,
+    "resource_conflict_fail_closed": true,
+    "stale_capsule": true,
+    "stale_executor_not_routed": true
+  },
+  "children": {
+    "pilot-a": {
+      "evidence": "actual bounded concurrent worker",
+      "status": "COMPLETED_VALIDATED"
+    },
+    "pilot-b": {
+      "evidence": "actual bounded concurrent worker",
+      "status": "COMPLETED_VALIDATED"
+    },
+    "pilot-c": {
+      "evidence": "conflicting writer waited for resource lease",
+      "status": "COMPLETED_VALIDATED"
+    },
+    "pilot-d": {
+      "evidence": "checkpoint then explicit resume",
+      "status": "COMPLETED_VALIDATED"
+    },
+    "pilot-e": {
+      "evidence": "cancelled before dispatch; forged external claim separately rejected by OS validation",
+      "status": "CANCELLED_BEFORE_DISPATCH"
+    }
+  },
+  "claim_ceiling": "Offline evidence of bounded Control Plane coordination only; no live executor, external side-effect success, general Agent capability, truth, Owner acceptance or epistemic acceptance is established.",
+  "dispatch": {
+    "audit": {
+      "claim_ceiling": "Durable dispatch, progress and reconciliation state only; external receipts require independent OS validation.",
+      "record_count": 1,
+      "schema": "os-control-plane-durable-dispatch-r1",
+      "state_counts": {
+        "ACKNOWLEDGED": 0,
+        "COMPLETED_VALIDATED": 0,
+        "CREATED": 0,
+        "FAILED_VALIDATION": 1,
+        "RECEIPT_RECORDED": 0,
+        "REJECTED": 0,
+        "REQUIRES_RECONCILIATION": 0,
+        "RETRY_ELIGIBLE_READ_ONLY": 0,
+        "RUNNING": 0,
+        "SENT": 0
+      },
+      "status": "PASS"
+    },
+    "final_state": "FAILED_VALIDATION",
+    "forged_receipt_rejected": true,
+    "receipt_before_validation": true
+  },
+  "driver_console": {
+    "human": "Driver Console — OS Control Plane R2\nOverall: COMPLETED_WITH_CANCELLATIONS (episode=pilot-episode)\nNext action: Refresh or replace the executor health lease before routing new work.\nQueue: depth=4 paused=False states={\"ADMITTED\": 0, \"CANCELLED_BEFORE_DISPATCH\": 1, \"CANCEL_REQUESTED_REQUIRES_RECONCILIATION\": 0, \"COMPLETED_VALIDATED\": 0, \"DISPATCHED\": 0, \"EXPIRED_BEFORE_DISPATCH\": 1, \"FAILED\": 0, \"QUEUED\": 4, \"REJECTED_BACKPRESSURE\": 0, \"REJECTED_QUOTA\": 0, \"REQUIRES_RECONCILIATION\": 0}\nRoute/health: leases=2 effective_states={\"DEGRADED\": 0, \"HEALTHY\": 1, \"STALE\": 1, \"UNAVAILABLE\": 0, \"UNKNOWN\": 0, \"UNSAFE_TO_PROBE\": 0}\nResources: active=0 waiting_conflicts=1 unknown-side-effect-policy=NO_OVERLAP_NO_AUTOMATIC_FAILOVER\nDispatch: records=1 states={\"ACKNOWLEDGED\": 0, \"COMPLETED_VALIDATED\": 0, \"CREATED\": 0, \"FAILED_VALIDATION\": 1, \"RECEIPT_RECORDED\": 0, \"REJECTED\": 0, \"REQUIRES_RECONCILIATION\": 0, \"RETRY_ELIGIBLE_READ_ONLY\": 0, \"RUNNING\": 0, \"SENT\": 0}\nOperational memory: generation=3 active=3 capsule_stale=True\nPolicy: status=not recorded digest=297be8755e12d0153b66f0604932b97ea727c515488293f1861bba853e3f2356\nOpen obligations:\n- one or more executor health leases cannot be used\n- resource conflicts are waiting for arbitration\n- queued work expired before dispatch\n- an operational-memory capsule is stale\nBoundary: this is a control-plane projection; it cannot establish external success, truth, Owner acceptance or epistemic acceptance.",
+    "snapshot": {
+      "boundaries": [
+        "This console summarizes owned control-plane records; it is not a second truth source.",
+        "It cannot establish external executor success, knowledge truth, Owner acceptance or epistemic acceptance.",
+        "External side effects remain reconciliation-bound and policy remains monotonic/narrowing."
+      ],
+      "dispatch": {
+        "record_count": 1,
+        "state_counts": {
+          "ACKNOWLEDGED": 0,
+          "COMPLETED_VALIDATED": 0,
+          "CREATED": 0,
+          "FAILED_VALIDATION": 1,
+          "RECEIPT_RECORDED": 0,
+          "REJECTED": 0,
+          "REQUIRES_RECONCILIATION": 0,
+          "RETRY_ELIGIBLE_READ_ONLY": 0,
+          "RUNNING": 0,
+          "SENT": 0
+        }
+      },
+      "episode_id": "pilot-episode",
+      "memory": {
+        "active_count": 3,
+        "capsule_stale": true,
+        "generation": 3
+      },
+      "next_action": "Refresh or replace the executor health lease before routing new work.",
+      "open_obligations": [
+        "one or more executor health leases cannot be used",
+        "resource conflicts are waiting for arbitration",
+        "queued work expired before dispatch",
+        "an operational-memory capsule is stale"
+      ],
+      "overall_state": "COMPLETED_WITH_CANCELLATIONS",
+      "policy": {
+        "claim_ceiling": "not recorded",
+        "digest": "297be8755e12d0153b66f0604932b97ea727c515488293f1861bba853e3f2356",
+        "status": "not recorded"
+      },
+      "queue": {
+        "backpressure_events": 0,
+        "depth": 4,
+        "paused": false,
+        "state_counts": {
+          "ADMITTED": 0,
+          "CANCELLED_BEFORE_DISPATCH": 1,
+          "CANCEL_REQUESTED_REQUIRES_RECONCILIATION": 0,
+          "COMPLETED_VALIDATED": 0,
+          "DISPATCHED": 0,
+          "EXPIRED_BEFORE_DISPATCH": 1,
+          "FAILED": 0,
+          "QUEUED": 4,
+          "REJECTED_BACKPRESSURE": 0,
+          "REJECTED_QUOTA": 0,
+          "REQUIRES_RECONCILIATION": 0
+        }
+      },
+      "resources": {
+        "active_count": 0,
+        "unknown_side_effect_policy": "NO_OVERLAP_NO_AUTOMATIC_FAILOVER",
+        "waiting_count": 1
+      },
+      "route_health": {
+        "effective_status_counts": {
+          "DEGRADED": 0,
+          "HEALTHY": 1,
+          "STALE": 1,
+          "UNAVAILABLE": 0,
+          "UNKNOWN": 0,
+          "UNSAFE_TO_PROBE": 0
+        },
+        "lease_count": 2
+      },
+      "scheduler": {
+        "budget_usage": {
+          "actions": 3,
+          "elapsed_seconds": 0.0,
+          "output_bytes": 0
+        },
+        "child_state_counts": {
+          "CANCELLED_BEFORE_DISPATCH": 1,
+          "COMPLETED_VALIDATED": 3
+        },
+        "max_concurrent_observed": 2
+      },
+      "schema": "os-control-plane-driver-console-r1"
+    }
+  },
+  "health": {
+    "audit": {
+      "claim_ceiling": "Observed executor capability/health routing only; no execution, truth, permission or Owner authority.",
+      "effective_status_counts": {
+        "DEGRADED": 0,
+        "HEALTHY": 1,
+        "STALE": 1,
+        "UNAVAILABLE": 0,
+        "UNKNOWN": 0,
+        "UNSAFE_TO_PROBE": 0
+      },
+      "lease_count": 2,
+      "schema": "os-control-plane-executor-health-lease-r1",
+      "status": "PASS"
+    },
+    "route_candidates": [
+      "reference"
+    ],
+    "stale_executor_routed": false
+  },
+  "memory": {
+    "audit": {
+      "active_count": 3,
+      "claim_ceiling": "Concurrent operational recall only; not Knowledge truth or authority.",
+      "compaction_present": false,
+      "generation": 3,
+      "next_version": 3,
+      "record_count": 3,
+      "schema": "operational-memory-r2",
+      "status": "PASS",
+      "tombstone_count": 0
+    },
+    "capsule_stale": true,
+    "compaction_schema": "operational-memory-compaction-r2"
+  },
+  "mode": "OFFLINE_DISPOSABLE_FIXTURES_ONLY",
+  "queue": {
+    "audit": {
+      "backpressure_events": 0,
+      "claim_ceiling": "Queue admission and dispatch state only; no worker execution or external completion authority.",
+      "depth": 4,
+      "next_sequence": 6,
+      "paused": false,
+      "schema": "os-control-plane-queue-control-r1",
+      "state_counts": {
+        "ADMITTED": 0,
+        "CANCELLED_BEFORE_DISPATCH": 1,
+        "CANCEL_REQUESTED_REQUIRES_RECONCILIATION": 0,
+        "COMPLETED_VALIDATED": 0,
+        "DISPATCHED": 0,
+        "EXPIRED_BEFORE_DISPATCH": 1,
+        "FAILED": 0,
+        "QUEUED": 4,
+        "REJECTED_BACKPRESSURE": 0,
+        "REJECTED_QUOTA": 0,
+        "REQUIRES_RECONCILIATION": 0
+      },
+      "status": "PASS"
+    },
+    "cancelled_before_dispatch": "CANCELLED_BEFORE_DISPATCH",
+    "expired_count": 1
+  },
+  "resources": {
+    "audit": {
+      "active_count": 0,
+      "lease_count": 1,
+      "next_grant_sequence": 1,
+      "schema": "os-control-plane-resource-arbiter-r1",
+      "status": "PASS",
+      "unknown_side_effect_policy": "NO_OVERLAP_NO_AUTOMATIC_FAILOVER",
+      "waiting_count": 1
+    },
+    "conflict_observed": true
+  },
+  "scheduler": {
+    "checkpoint_first": {
+      "recorded_at": "2026-08-17T11:59:22Z",
+      "state": "CHECKPOINTED_RESUMABLE",
+      "summary": "worker checkpoint requires an explicit resume"
+    },
+    "checkpoint_resumed": {
+      "recorded_at": "2026-08-17T11:59:22Z",
+      "state": "COMPLETED_VALIDATED",
+      "summary": "bounded scheduler stopped with child states: COMPLETED_VALIDATED"
+    },
+    "dispatch_order": [
+      "pilot-a",
+      "pilot-b",
+      "pilot-c"
+    ],
+    "max_concurrent_observed": 2,
+    "terminal": {
+      "recorded_at": "2026-08-17T11:59:22Z",
+      "state": "COMPLETED_WITH_CANCELLATIONS",
+      "summary": "bounded scheduler stopped with child states: CANCELLED_BEFORE_DISPATCH, COMPLETED_VALIDATED"
+    }
+  },
+  "schema": "os-control-plane-r2-pilot-r1",
+  "status": "PASS",
+  "task_id": "IGNITION-20260817-124"
+}

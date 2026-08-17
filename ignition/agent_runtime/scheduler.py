@@ -27,6 +27,7 @@ WORKER_TERMINAL = frozenset({"COMPLETED_VALIDATED", "FAILED", "CHECKPOINTED_RESU
 EPISODE_TERMINAL = frozenset({
     "COMPLETED_VALIDATED",
     "COMPLETED_WITH_INDEPENDENT_FAILURES",
+    "COMPLETED_WITH_CANCELLATIONS",
     "COMPLETED_WITH_DEPENDENCY_BLOCKS",
     "FAILED_FAST",
     "BUDGET_EXHAUSTED",
@@ -290,6 +291,8 @@ class ConcurrentScheduler:
             terminal = "BLOCKED_RESOURCE_CONFLICT"
         elif any(status == "BLOCKED_DEPENDENCY" for status in statuses):
             terminal = "COMPLETED_WITH_DEPENDENCY_BLOCKS"
+        elif any(status in {"CANCELLED_BEFORE_DISPATCH", "EXPIRED_BEFORE_DISPATCH"} for status in statuses):
+            terminal = "COMPLETED_WITH_CANCELLATIONS"
         elif any(status in {"FAILED", "CANCEL_REQUESTED_REQUIRES_RECONCILIATION", "REQUIRES_RECONCILIATION"} for status in statuses):
             terminal = "FAILED_FAST" if spec.policy == "FAIL_FAST" else "COMPLETED_WITH_INDEPENDENT_FAILURES"
         elif all(status == "COMPLETED_VALIDATED" for status in statuses):

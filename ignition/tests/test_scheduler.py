@@ -67,7 +67,7 @@ class SchedulerTests(unittest.TestCase):
             units = (unit("cancelled", "workspace:cancel"), unit("over-budget", "workspace:budget"))
             result = ConcurrentScheduler(Path(temp)).run(spec(max_parallel=1, max_actions=1), units, lambda work, token: WorkResult("COMPLETED_VALIDATED", "validated"), cancel_runs=("cancelled",))
             self.assertIn(result["children"]["cancelled"]["status"], {"CANCELLED_BEFORE_DISPATCH", "COMPLETED_VALIDATED"})
-            self.assertIn(result["terminal"]["state"], {"BUDGET_EXHAUSTED", "COMPLETED_VALIDATED"})
+            self.assertIn(result["terminal"]["state"], {"BUDGET_EXHAUSTED", "COMPLETED_VALIDATED", "COMPLETED_WITH_CANCELLATIONS"})
 
             checkpoint_dir = Path(temp) / "checkpoint"
             calls = {"count": 0}
