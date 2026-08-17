@@ -4,11 +4,6 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
-- [数学成熟度和外部证据成熟度独立；任何一轴不能替代另一轴。](../../../docs/project-current-state.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-9a08737959f9be2c / 数学成熟度和外部证据成熟度独立；任何一轴不能替代另一轴。
-  - 来源：`docs/project-current-state.md`
-  - 依赖：—；被引用：—
 - [数学是高风险领域。未证明猜想（如黎曼猜想、P vs NP 问题）必须 pending。已被数学界证明的定理，应区分"外部已证明"与"点火框架结构性重解释"。](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-c68a4d4b248bad4e / 数学是高风险领域。未证明猜想（如黎曼猜想、P vs NP 问题）必须 pending。已被数学界证明的定理，应区分"外部已证明"与"点火框架结构性重解释"。
@@ -2504,3 +2499,8 @@
   - 可搜索名称：NFC-f9e0ee3a46dd32b4 / 涨落-耗散定理-门槛函数，涨落-耗散定理⟨x²⟩∝χ描述门控面Λ的涨落与响应。 **扩展注释 / Extended Annotation**
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：—；被引用：—
+- [涨落-耗散定理是D186不确定性-超敏感区函数的统计力学表达。涨落→门控面稳定性→相变临界点。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-48d7eb9f561d6060 / 涨落-耗散定理是D186不确定性-超敏感区函数的统计力学表达。涨落→门控面稳定性→相变临界点。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D186；被引用：—

@@ -13,15 +13,6 @@
 - **来源：** [ignition-123-nightshift-progress.md](../reports/operations/ignition-123-nightshift-progress.md)
 - **资产卡：** [HR-D7C4CA0BBA65194F](./ASSET-CARDS.md#asset-hr-d7c4ca0bba65194f)
 
-<a id="change-src-hr-641da70bef452b2a"></a>
-### 2026-08-17 · Current Facts（机器推导事实）
-
-- **类型：** `MODEL_OR_ARCHITECTURE`
-- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
-- **变化：** Source authority: the JSON projection records SHA-256 fingerprints for the canonical registries, manifests, topology, pack declarations, federation inventory and generator/schema inputs. Human prose may explain these facts but is not a second numeric authority. Claim ceiling: Deterministic reposi…
-- **来源：** [current-facts.md](../docs/architecture/current-facts.md)
-- **资产卡：** [HR-641DA70BEF452B2A](./ASSET-CARDS.md#asset-hr-641da70bef452b2a)
-
 <a id="change-src-hr-545b33bce6b635d1"></a>
 ### 2026-08-17 · CURRENTSTATESYNCINVARIANT
 

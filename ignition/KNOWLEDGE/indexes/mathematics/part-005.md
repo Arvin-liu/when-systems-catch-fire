@@ -4,11 +4,6 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
-- [If upstream objects D_{D101} exist, compose F_{D101}=N\(⊕_{g∈D_{D101}} g\); otherwise treat F_{D101} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-b55abd9637e87a8a / If upstream objects D_{D101} exist, compose F_{D101}=N\(⊕_{g∈D_{D101}} g\); otherwise treat F_{D101} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D101；被引用：—
 - [If upstream objects D_{D102} exist, compose F_{D102}=N\(⊕_{g∈D_{D102}} g\); otherwise treat F_{D102} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-4286cc105b9abfc6 / If upstream objects D_{D102} exist, compose F_{D102}=N\(⊕_{g∈D_{D102}} g\); otherwise treat F_{D102} as an axiom seed.
@@ -2503,4 +2498,9 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-d4e8242fe496f09d / L2 推论误写成 L5 结论（把审美判断写成客观定理）
   - 来源：`outputs/getbrain/classic-problems-benchmark-supplement-20260707.md`
+  - 依赖：—；被引用：—
+- [L2R ACL full-text review: isolated per-task LoRA training, replay-memory router learning, independent Gumbel-sigmoid all](../../../data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-1ddba41004bde45c / L2R ACL full-text review: isolated per-task LoRA training, replay-memory router learning, independent Gumbel-sigmoid all
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl`
   - 依赖：—；被引用：—

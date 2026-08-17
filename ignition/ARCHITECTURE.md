@@ -8,7 +8,8 @@
 orchestration-governance layer 与 driver，外部 Agent 是可替换 executors，Knowledge
 是第一个大型 Domain Pack，本地层冻结为 `REFERENCE_EXECUTOR / CONFORMANCE_EXECUTOR /
 FALLBACK_MINIMAL`。当前唯一完整系统图为 `0.8.0`，`0.7.0` 及更早版本仅作 Historical；
-这组仓库身份不升级 Owner、truth、production 或 epistemic authority。
+这些 replaceable executors 不拥有 OS authority；这组仓库身份不升级 Owner、truth、production
+或 epistemic authority。
 
 ## 当前工程主干：Agent Platform R2
 

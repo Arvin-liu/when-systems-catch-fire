@@ -1624,6 +1624,11 @@
   - 可搜索名称：IMPLICIT-F94492AC052076DF / Space_Function\(Ω\) = {I\(Ω\), D_immune\(Ω\), R\(Ω\)} / IMPLICIT-F94492AC052076DF
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
+- [stale_knowledge: a stable Knowledge projection, a validated local Reference/Conformance/Fallback path, a cross-executor](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-51e998cd89d410de / stale_knowledge: a stable Knowledge projection, a validated local Reference/Conformance/Fallback path, a cross-executor
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [stale_knowledge: Task 119/120 R0/R1-only descriptions are historical compatibility surfaces; R2 is now the current engin](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-a4004aa617043331 / stale_knowledge: Task 119/120 R0/R1-only descriptions are historical compatibility surfaces; R2 is now the current engin
@@ -2499,8 +2504,3 @@
   - 可搜索名称：NFC-0a3da2a3283f13a2 / \| M2 外部评价内化自我规训 \| 已有覆盖 \| D598+D597 \| 实质同构；家庭轴补强 \|
   - 来源：`outputs/collisions/20260711-disobedience-subjectivity/two-tables-full-collision-report.md`
   - 依赖：D597, D598；被引用：—
-- [\| N1 \| 退出权族 FUNC-L1-EXIT \| 退出权族 77 文件存在 \| C：补「绑定致架空」维度；I_iso：非同构，是细分；L_meta：注释级不污染 \| **作为注释并入 EXIT 族** \| 不新建条目，补结构性不可拒绝子](../../../outputs/audit/teacher-competition-backfill-review-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-10bf8a6175e93442 / \| N1 \| 退出权族 FUNC-L1-EXIT \| 退出权族 77 文件存在 \| C：补「绑定致架空」维度；I_iso：非同构，是细分；L_meta：注释级不污染 \| **作为注释并入 EXIT 族** \| 不新建条目，补结构性不可拒绝子
-  - 来源：`outputs/audit/teacher-competition-backfill-review-20260708.md`
-  - 依赖：—；被引用：—

@@ -18737,7 +18737,7 @@
 {"first_line":105,"last_line":105,"mention_count":1,"path":"统一函数总表/0612-D602-价值创造权与决策权错配与回收.md","role":"REFERENCE","stable_id":"D597"}
 {"first_line":622,"last_line":622,"mention_count":1,"path":"统一函数总表/INDEX.md","role":"REFERENCE","stable_id":"D597"}
 {"first_line":13,"last_line":13,"mention_count":1,"path":"统一案例总表/0804-C-0809-表演化假课与量化指标消解温度.md","role":"REFERENCE","stable_id":"D597"}
-{"first_line":67,"last_line":67,"mention_count":1,"path":"ARCHITECTURE.md","role":"REFERENCE","stable_id":"D598"}
+{"first_line":68,"last_line":68,"mention_count":1,"path":"ARCHITECTURE.md","role":"REFERENCE","stable_id":"D598"}
 {"first_line":3,"last_line":3,"mention_count":1,"path":"FOUNDATION.md","role":"REFERENCE","stable_id":"D598"}
 {"first_line":1260,"last_line":3662,"mention_count":2,"path":"analysis/corpus-relation/article_cluster_candidates.json","role":"REFERENCE","stable_id":"D598"}
 {"first_line":425,"last_line":430,"mention_count":2,"path":"analysis/corpus-relation/cluster_source_briefs/C000.md","role":"REFERENCE","stable_id":"D598"}
@@ -24296,7 +24296,7 @@
 {"first_line":633,"last_line":633,"line":633,"mention_count":1,"path":"function-os-candidate/v0.2/benchmark/run.py","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-F42AE8D92C486956","text":"r[\"replay_match\"] = (p is not None and p.get(\"result_sha\") == r.get(\"result_sha\"))"}
 {"first_line":35,"last_line":35,"line":35,"mention_count":1,"path":"统一案例总表/0534-C-539-E=mc2 — mc2=信息容量×信息速度2.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-F42D35A1050B481C","text":"- 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0539})=1]."}
 {"first_line":108,"last_line":108,"line":108,"mention_count":1,"path":"function-os-candidate/v0.2/function_os/n7_validator.py","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-F43BF76D0D5134A2","text":"if fb.get('severity') == 'ERROR':"}
-{"first_line":256,"last_line":256,"line":256,"mention_count":1,"path":"ARCHITECTURE.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-F4403BB3AB919444","text":"## 121Q13 注意力、分布与压缩控制 overlay"}
+{"first_line":257,"last_line":257,"line":257,"mention_count":1,"path":"ARCHITECTURE.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-F4403BB3AB919444","text":"## 121Q13 注意力、分布与压缩控制 overlay"}
 {"first_line":19,"last_line":19,"line":19,"mention_count":1,"path":"function-os-candidate/v0.1/function_os/n9_registry_updater.py","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-F458FC7B29947374","text":"def update(self, function_id: str, updated_record: dict) -> dict:"}
 {"first_line":35,"last_line":35,"line":35,"mention_count":1,"path":"统一案例总表/0326-C-326-信息门的方向无关性 — 不存在-我说清楚了但你听不懂-,门效率低两侧同时受影响.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-F45DA8FF50E36A4D","text":"- 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0326})=1]."}
 {"first_line":127,"last_line":127,"line":127,"mention_count":1,"path":"function-os-candidate/v0.1/function_os/n1_semantic_checker.py","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-F45F5547DF394F00","text":"def _check_dependency_references(self, spec: dict) -> List[Dict]:"}
@@ -24455,7 +24455,7 @@
 {"first_line":38,"last_line":38,"line":38,"mention_count":1,"path":"docs/protocols/protocol-index.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-FD410FCA908A4C68","text":"## 与 Ψ₀ / Function / Case 的关系"}
 {"first_line":281,"last_line":281,"line":281,"mention_count":1,"path":"agent_federation/router.py","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-FD48AA6645CC6CB3","text":"def __init__("}
 {"first_line":74,"last_line":74,"line":74,"mention_count":1,"path":"function-os-candidate/v0.1/function_os/n9_registry_store.py","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-FD7BA3D4F1EC5C23","text":"def create(self, record: dict) -> dict:"}
-{"first_line":21,"last_line":21,"line":21,"mention_count":1,"path":"ARCHITECTURE.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-FD7D444A6F7F278D","text":"### External Agent Federation R1"}
+{"first_line":22,"last_line":22,"line":22,"mention_count":1,"path":"ARCHITECTURE.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-FD7D444A6F7F278D","text":"### External Agent Federation R1"}
 {"first_line":29,"last_line":29,"line":29,"mention_count":1,"path":"function-os-candidate/v0.2/tests/test_n6_robust.py","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-FD7F21DC1210DE34","text":"def _trace(self, inputs):"}
 {"first_line":3494,"last_line":3494,"line":3494,"mention_count":1,"path":"analysis/corpus-relation/corpus_relation_graph.json","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-FD87F48A75095635","text":"\"title\": \"经典确定性函数\","}
 {"first_line":59,"last_line":59,"line":59,"mention_count":1,"path":"data/external-research/121-fulltext-resolver/121q2/family-synthesis/F1.json","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-FD98E99F2CA31DF4","text":"\"title\": \"Program-as-Weights: A Programming Paradigm for Fuzzy Functions\","}
@@ -24498,7 +24498,7 @@
 {"first_line":49,"last_line":49,"line":49,"mention_count":1,"path":"docs/p1-data-index-map-20260708.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-FFF1DCEF8CC17C17","text":"### function_dependency"}
 {"first_line":982,"last_line":982,"line":982,"mention_count":1,"path":"outputs/getbrain/evidence-regime-library-draft-20260706.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-FFFC52EFCDC1C186","text":"## 本次新增函数"}
 {"first_line":64,"last_line":64,"mention_count":1,"path":"AI-HANDOFF.md","role":"REFERENCE","stable_id":"M0"}
-{"first_line":230,"last_line":231,"mention_count":2,"path":"ARCHITECTURE.md","role":"REFERENCE","stable_id":"M0"}
+{"first_line":231,"last_line":232,"mention_count":2,"path":"ARCHITECTURE.md","role":"REFERENCE","stable_id":"M0"}
 {"first_line":47,"last_line":47,"mention_count":1,"path":"CHANGELOG.md","role":"REFERENCE","stable_id":"M0"}
 {"first_line":89,"last_line":89,"mention_count":1,"path":"ITERATION.md","role":"REFERENCE","stable_id":"M0"}
 {"first_line":325,"last_line":325,"mention_count":1,"path":"analysis/corpus-relation/article_cluster_candidates.json","role":"REFERENCE","stable_id":"M0"}
@@ -24621,7 +24621,7 @@
 {"first_line":83,"last_line":83,"mention_count":1,"path":"data/operations/iterations/110/openalex/population-manifest.jsonl","role":"REFERENCE","stable_id":"M09"}
 {"first_line":83,"last_line":83,"mention_count":1,"path":"evidence-program/runs/IGNITION-EVIDENCE-PILOT-R1-CROSSREF-DOI-VERIFICATION/source-manifest.jsonl","role":"REFERENCE","stable_id":"M09"}
 {"first_line":83,"last_line":83,"mention_count":1,"path":"evidence-program/runs/IGNITION-EVIDENCE-PILOT-R1-OPENALEX-DOI-REPLICATION-20260801/source-manifest.jsonl","role":"REFERENCE","stable_id":"M09"}
-{"first_line":234,"last_line":235,"mention_count":2,"path":"ARCHITECTURE.md","role":"REFERENCE","stable_id":"M1"}
+{"first_line":235,"last_line":236,"mention_count":2,"path":"ARCHITECTURE.md","role":"REFERENCE","stable_id":"M1"}
 {"first_line":101,"last_line":101,"mention_count":1,"path":"CHANGELOG.md","role":"REFERENCE","stable_id":"M1"}
 {"first_line":19,"last_line":181,"mention_count":6,"path":"analysis/corpus-relation/cluster_source_briefs/C000.md","role":"REFERENCE","stable_id":"M1"}
 {"first_line":3475,"last_line":3608,"mention_count":6,"path":"analysis/corpus-relation/corpus_relation_graph.json","role":"REFERENCE","stable_id":"M1"}
@@ -28122,7 +28122,7 @@
 {"first_line":1,"last_line":1,"mention_count":1,"path":"data/external-research/088-patch-blueprint.jsonl","role":"REFERENCE","stable_id":"Y0"}
 {"first_line":1,"last_line":1,"mention_count":1,"path":"data/external-research/092-gap-to-patch-projection.jsonl","role":"REFERENCE","stable_id":"Y0"}
 {"first_line":1,"last_line":1,"mention_count":1,"path":"data/external-research/094-088-patch-library.jsonl","role":"REFERENCE","stable_id":"Y0"}
-{"first_line":3,"last_line":212,"mention_count":2,"path":"ARCHITECTURE.md","role":"REFERENCE","stable_id":"Y1"}
+{"first_line":3,"last_line":213,"mention_count":2,"path":"ARCHITECTURE.md","role":"REFERENCE","stable_id":"Y1"}
 {"first_line":101,"last_line":101,"mention_count":1,"path":"CHANGELOG.md","role":"REFERENCE","stable_id":"Y1"}
 {"first_line":425,"last_line":425,"mention_count":1,"path":"analysis/corpus-relation/cluster_source_briefs/C000.md","role":"REFERENCE","stable_id":"Y1"}
 {"first_line":1,"last_line":1,"mention_count":1,"path":"data/external-research/088-patch-blueprint.jsonl","role":"REFERENCE","stable_id":"Y1"}

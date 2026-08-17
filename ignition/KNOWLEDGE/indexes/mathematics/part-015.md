@@ -1369,11 +1369,6 @@
   - 可搜索名称：NFC-127e092424cf20cb / 实验观测验证（如大型强子对撞机、引力波探测）
   - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
   - 依赖：—；被引用：—
-- [审批为 `APPROVED`，handoff 至 `reference.executor.recovery`。独立 validator 在两次观察中均](../../../reports/operations/ignition-123-nightshift-progress.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-bcba5273d1f56ac4 / 审批为 `APPROVED`，handoff 至 `reference.executor.recovery`。独立 validator 在两次观察中均
-  - 来源：`reports/operations/ignition-123-nightshift-progress.md`
-  - 依赖：—；被引用：—
 - [审计：生命共同体价值宪章 README 入口](../../../outputs/audit/life-community-value-charter-readme-audit-20260711.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
   - 可搜索名称：NFC-2e04aed6c277f3f3 / 审计：生命共同体价值宪章 README 入口
@@ -1961,7 +1956,7 @@
   - 依赖：—；被引用：—
 - [当前语义主干是一个有界阅读路径：`Owner / Value Charter → Ignition OS control / governance spine → Pack / Federation routing → External r](../../../docs/architecture/interactive-system-map.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-02408247cf057a50 / 当前语义主干是一个有界阅读路径：`Owner / Value Charter → Ignition OS control / governance spine → Pack / Federation routing → External r
+  - 可搜索名称：NFC-b61ecbc9ed842067 / 当前语义主干是一个有界阅读路径：`Owner / Value Charter → Ignition OS control / governance spine → Pack / Federation routing → External r
   - 来源：`docs/architecture/interactive-system-map.md`
   - 依赖：—；被引用：—
 - [当前项目/架构状态为 `OWNER_ACCEPTED_WITH_EXPLICIT_RESIDUALS`。这里的 Owner acceptance 只表示项目、架构边界与正式公开发布资格已获接受；它不是外部真理、`FORMAL_KNOWLED](../../../docs/architecture/epistemic-governance-kernel-and-federated-planes.md)
@@ -2503,4 +2498,9 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-50318b77930dfa05 / 数学成熟度与外部证据成熟度，或说明为何不适用；
   - 来源：`HUMAN-READING.md`
+  - 依赖：—；被引用：—
+- [数学成熟度和外部证据成熟度独立；任何一轴不能替代另一轴。](../../../docs/project-current-state.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-9a08737959f9be2c / 数学成熟度和外部证据成熟度独立；任何一轴不能替代另一轴。
+  - 来源：`docs/project-current-state.md`
   - 依赖：—；被引用：—

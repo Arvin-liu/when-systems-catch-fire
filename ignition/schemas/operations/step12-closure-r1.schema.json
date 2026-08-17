@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://when-systems-catch-fire.invalid/schemas/operations/step12-closure-r1.schema.json",
+  "title": "IGNITION-123 Step 12 Closure R1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "task_id",
+    "step",
+    "recorded_at",
+    "baseline",
+    "projection_repair",
+    "final_projection",
+    "targeted_gates",
+    "residual_classification",
+    "privacy_and_external_boundary",
+    "formal_main",
+    "claim_ceiling",
+    "closure_binding",
+    "next_step"
+  ],
+  "properties": {
+    "schema_version": {"const": "step12-closure-r1"},
+    "task_id": {"const": "IGNITION-20260816-123"},
+    "step": {"const": "12"},
+    "recorded_at": {"type": "string", "format": "date-time"},
+    "baseline": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["prior_step_commit", "formal_main_before_step12", "task_branch"],
+      "properties": {
+        "prior_step_commit": {"const": "4af954b70b2be374c1687ef29d57330125d4db94"},
+        "formal_main_before_step12": {"const": "d60ec8687fb1cc6b972e831a8f0dcd348ba0e83e"},
+        "task_branch": {"const": "codex/ignition-123-current-state-sync-compact-map-federation-r2-20260816"}
+      }
+    },
+    "projection_repair": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["root_cause", "boundary_change", "nonfunction_claims_before", "nonfunction_claims_after", "knowledge_search_before", "knowledge_search_after", "fresh_clone_cycle", "historical_records_rewritten"],
+      "properties": {
+        "root_cause": {"type": "string", "minLength": 1},
+        "boundary_change": {"type": "string", "minLength": 1},
+        "nonfunction_claims_before": {"const": 15992},
+        "nonfunction_claims_after": {"const": 15977},
+        "knowledge_search_before": {"const": 21929},
+        "knowledge_search_after": {"const": 21913},
+        "fresh_clone_cycle": {"const": "REPAIRED"},
+        "historical_records_rewritten": {"const": false}
+      }
+    },
+    "final_projection": {"type": "object", "additionalProperties": false, "required": ["function_identity_cards", "function_quarantine_or_pending", "nonfunction_claims", "nonfunction_quarantine_or_pending", "human_results", "knowledge_cards", "knowledge_changes", "knowledge_layered_readings", "knowledge_search_records", "knowledge_aliases", "fire_seeds", "fire_seed_source_census", "self_correction_deltas", "self_correction_rules", "map_visible_nodes", "map_typed_edges", "map_canvas", "map_blank_reduction_vs_step00", "map_height_reduction_vs_step00", "map_crossing_proxy", "map_max_internal_gap", "map_bottom_only_isolated_groups"], "properties": {"function_identity_cards": {"const": 5604}, "function_quarantine_or_pending": {"const": 4805}, "nonfunction_claims": {"const": 15977}, "nonfunction_quarantine_or_pending": {"const": 4648}, "human_results": {"const": 333}, "knowledge_cards": {"const": 403}, "knowledge_changes": {"const": 315}, "knowledge_layered_readings": {"const": 332}, "knowledge_search_records": {"const": 21913}, "knowledge_aliases": {"const": 851}, "fire_seeds": {"const": 64}, "fire_seed_source_census": {"const": 392}, "self_correction_deltas": {"const": 465}, "self_correction_rules": {"const": 10}, "map_visible_nodes": {"const": 70}, "map_typed_edges": {"const": 77}, "map_canvas": {"const": "1800x2470"}, "map_blank_reduction_vs_step00": {"const": 0.8741007194}, "map_height_reduction_vs_step00": {"const": 0.3806419258}, "map_crossing_proxy": {"const": 160}, "map_max_internal_gap": {"const": 28}, "map_bottom_only_isolated_groups": {"const": []}}},
+    "targeted_gates": {"type": "object", "minProperties": 1, "additionalProperties": {"type": "string"}},
+    "residual_classification": {"type": "array", "minItems": 1, "items": {"type": "object", "additionalProperties": false, "required": ["id", "classification", "status", "boundary"], "properties": {"id": {"type": "string", "minLength": 1}, "classification": {"type": "string", "minLength": 1}, "status": {"type": "string", "minLength": 1}, "boundary": {"type": "string", "minLength": 1}}}},
+    "privacy_and_external_boundary": {"type": "object", "additionalProperties": true},
+    "formal_main": {"type": "object", "additionalProperties": false, "required": ["expected_before_fast_forward", "modified_during_step12_commit", "merge_mode", "final_tip_binding"], "properties": {"expected_before_fast_forward": {"const": "d60ec8687fb1cc6b972e831a8f0dcd348ba0e83e"}, "modified_during_step12_commit": {"const": false}, "merge_mode": {"const": "FAST_FORWARD_ONLY"}, "final_tip_binding": {"type": "string", "minLength": 1}}},
+    "claim_ceiling": {"type": "string", "minLength": 1},
+    "closure_binding": {"type": "string", "minLength": 1},
+    "next_step": {"const": "FINAL_FAST_FORWARD_AND_RELAY"}
+  }
+}

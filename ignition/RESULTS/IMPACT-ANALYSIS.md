@@ -39,7 +39,7 @@
 |`docs/architecture/attention-attractor-control-plane.md`|10|0|否|
 |`docs/architecture/codex-adapter-r1.md`|3|0|否|
 |`docs/architecture/compression-integrity-gate.md`|5|0|否|
-|`docs/architecture/current-facts.md`|5|0|否|
+|`docs/architecture/current-facts.md`|0|0|是|
 |`docs/architecture/distribution-collapse-control-plane.md`|10|0|否|
 |`docs/architecture/effectual-action-plane.md`|8|0|否|
 |`docs/architecture/epistemic-governance-kernel-and-federated-planes.md`|77|0|否|
@@ -204,6 +204,7 @@
 |`docs/human/nonfunction-assets/entries/nfc-01b1099646ff389c.md`|0|0|是|
 |`docs/human/nonfunction-assets/entries/nfc-026f0f47b5a58ed4.md`|0|0|是|
 |`docs/human/nonfunction-assets/entries/nfc-02f68962a6f13abc.md`|0|0|是|
+|`docs/human/nonfunction-assets/entries/nfc-0331afe8d84f2538.md`|0|0|是|
 |`docs/human/nonfunction-assets/entries/nfc-037598111338be3f.md`|0|0|是|
 |`docs/human/nonfunction-assets/entries/nfc-038e96bba3393be9.md`|0|0|是|
 |`docs/human/nonfunction-assets/entries/nfc-03b6163800ff51cc.md`|0|0|是|
@@ -448,7 +449,7 @@
 |`reports/operations/IGNITION-ITERATION-METHOD-1.4-homepage-comparison.md`|5|0|否|
 |`reports/operations/ignition-121-nightshift-progress.md`|0|0|是|
 |`reports/operations/ignition-122-federation-progress.md`|41|0|否|
-|`reports/operations/ignition-123-nightshift-progress.md`|14|0|否|
+|`reports/operations/ignition-123-nightshift-progress.md`|0|0|是|
 |`reports/operations/lifecycle-audit-108.md`|0|0|是|
 |`reports/publication/jin-rise-point-fire-analysis.md`|67|0|否|
 |`reports/publication/song-huizong-taoism-point-fire-analysis.md`|33|0|否|

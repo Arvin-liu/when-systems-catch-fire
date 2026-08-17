@@ -43,6 +43,9 @@
     "rejected.md",
     "backfill-plan.md"
   ],
+  "excluded_generated_result_sources": [
+    "docs/architecture/current-facts.md"
+  ],
   "subjects": [
     {
       "id": "MATHEMATICS",

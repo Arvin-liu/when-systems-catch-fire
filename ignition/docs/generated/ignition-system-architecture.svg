@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 2470" width="1800" height="2470" role="img" preserveAspectRatio="xMidYMin meet" aria-labelledby="map-title map-description">
   <title id="map-title">点火唯一完整可点击总架构图</title>
-  <desc id="map-description">唯一完整总架构图；0.8.0 Current 派生投影，0.7.0 为 Historical。主干是 Owner/Value Charter → Ignition OS → Pack/Federation routing → 外部可替换执行器 → Actions/Receipts → Validation/Feedback → OS；Kernel ≠ Knowledge，Runtime ≠ Research，Pack 不拥有通用 authority；语言—思维横穿 L0—L6，不增加 L7。连线是仓库关系、同步义务或候选反馈，不自动表示现实因果。</desc>
+  <desc id="map-description">唯一完整总架构图；0.8.0 Current 派生投影，0.7.0 为 Historical。主干是 Owner/Value Charter → Ignition OS driver → Pack/Federation routing → 外部可替换执行器（external replaceable executors；external executors）→ Actions/Receipts → Validation/Feedback → OS；Reference / Conformance / Fallback 是本地冻结边界；Kernel ≠ Knowledge，Runtime ≠ Research，Pack 不拥有通用 authority；语言—思维横穿 L0—L6，不增加 L7。连线是仓库关系、同步义务或候选反馈，不自动表示现实因果。</desc>
   <style>
       .map-bg{fill:#f8fafc}.map-title{font:700 30px system-ui,sans-serif;fill:#0f172a}
       .map-subtitle{font:400 15px system-ui,sans-serif;fill:#475569}
@@ -24,7 +24,7 @@
   </defs>
   <rect class="map-bg" x="0" y="0" width="1800" height="2470" />
   <text class="map-title" x="32" y="42">点火唯一完整可点击总架构图</text>
-  <text class="map-subtitle" x="32" y="72">唯一完整总架构图；0.8.0 Current 派生投影，0.7.0 为 Historical。主干是 Owner/Value Charter → Ignition OS → Pack/Federation routing → 外部可替换执行器 → Actions/Receipts → Validation/Feedback → OS；Kernel ≠ Knowledge，Runtime ≠ Research，Pack 不拥有通用 authority；语言—思维横穿 L0—L6，不增加 L7。连线是仓库关系、同步义务或候选反馈，不自动表示现实因果。</text>
+  <text class="map-subtitle" x="32" y="72">唯一完整总架构图；0.8.0 Current 派生投影，0.7.0 为 Historical。主干是 Owner/Value Charter → Ignition OS driver → Pack/Federation routing → 外部可替换执行器（external replaceable executors；external executors）→ Actions/Receipts → Validation/Feedback → OS；Reference / Conformance / Fallback 是本地冻结边界；Kernel ≠ Knowledge，Runtime ≠ Research，Pack 不拥有通用 authority；语言—思维横穿 L0—L6，不增加 L7。连线是仓库关系、同步义务或候选反馈，不自动表示现实因果。</text>
   <text class="boundary-note" x="32" y="98">点击任一构件打开 canonical 目标；视觉邻近与连线不自动表示因果、严格同构或理论完备。</text>
   <g class="semantic-trunk" aria-label="Current semantic trunk：OS 在中间，外部执行器是可替换手脚" data-mode="bounded_reading_path" data-loop-target="os_control">
     <rect class="semantic-trunk-band" x="32" y="103" width="1736" height="18" rx="9" />

@@ -79,6 +79,15 @@ def read_jsonl(path: Path) -> list[dict]:
     return [json.loads(line) for line in path.read_text(encoding="utf-8").splitlines() if line.strip()]
 
 
+def knowledge_result_rows(config: dict) -> list[dict]:
+    excluded_generated_sources = set(config.get("excluded_generated_result_sources", []))
+    return [
+        row
+        for row in read_jsonl(RESULT_LEDGER)
+        if row.get("source") not in excluded_generated_sources
+    ]
+
+
 def with_record_hash(row: dict) -> dict:
     row = dict(row)
     row["record_sha256"] = digest_text(canonical_json(row))
@@ -331,7 +340,12 @@ def compact_list(values: list[str], limit: int = 24) -> list[str]:
 
 
 def build(config: dict) -> dict:
-    results = read_jsonl(RESULT_LEDGER)
+    # Current Facts is a generated projection whose metrics include this
+    # Knowledge manifest. Keep its human-results ledger row for navigation, but
+    # do not feed that row back into Knowledge; otherwise source hashes form a
+    # current-facts -> human-results -> knowledge -> current-facts cycle.
+    excluded_generated_sources = set(config.get("excluded_generated_result_sources", []))
+    results = knowledge_result_rows(config)
     functions = read_jsonl(FUNCTION_CARDS)
     claims = read_jsonl(CLAIM_REGISTRY)
     function_by_id = {row["canonical_id"]: row for row in functions}
@@ -597,6 +611,7 @@ def build(config: dict) -> dict:
         "snapshot_date": config["snapshot_date"],
         "result_sources": len(results),
         "result_asset_cards": len(results),
+        "excluded_generated_result_sources": sorted(excluded_generated_sources),
         "function_registry_records": len(functions),
         "featured_function_cards": len(config["featured_function_ids"]),
         "nonfunction_claim_records": len(claims),

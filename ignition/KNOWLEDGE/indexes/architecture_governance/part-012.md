@@ -4,81 +4,6 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
-- [社会阶层为何固化](../../../data/classic_problems_benchmark.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：CLAIM-PEND-015 / 社会阶层为何固化
-  - 来源：`data/classic_problems_benchmark.csv`
-  - 依赖：—；被引用：—
-- [社会阶层为何固化？这是社会科学中的经典问题，涉及制度、教育、文化等多重因素。](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-0ae0a9651267217a / 社会阶层为何固化？这是社会科学中的经典问题，涉及制度、教育、文化等多重因素。
-  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [神经自举唤醒验证](../../../data/foundation/evidence/evidence.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-48953383f0358f2e / 神经自举唤醒验证
-  - 来源：`data/foundation/evidence/evidence.jsonl`
-  - 依赖：—；被引用：—
-- [禁止把整理稿概括层\(D\)当成独立证据；禁止把访谈者解释\(C\)直接当事实。](../../../outputs/collisions/20260711-disobedience-subjectivity/source-layer-map.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-4a9c28c89065b4b6 / 禁止把整理稿概括层\(D\)当成独立证据；禁止把访谈者解释\(C\)直接当事实。
-  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/source-layer-map.md`
-  - 依赖：—；被引用：—
-- [禁止直接分配 C 编号；是否进入历史案例来源需逐本人工复核。](../../../templates/book-validation-case-candidate-template.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-9708c0d447a92f66 / 禁止直接分配 C 编号；是否进入历史案例来源需逐本人工复核。
-  - 来源：`templates/book-validation-case-candidate-template.md`
-  - 依赖：—；被引用：—
-- [禁酒令缺乏认同验证与对称结构，对应 F_symmetry 的实例化失败。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-678b11ca637e3e2f / 禁酒令缺乏认同验证与对称结构，对应 F_symmetry 的实例化失败。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [禁酒令缺乏认同验证，社会成员并不真正接受该制度安排，结果政策失败。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-1c6ba37b1735ea38 / 禁酒令缺乏认同验证，社会成员并不真正接受该制度安排，结果政策失败。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [秦统一\(C_exit极高\)→应约者无法退出；#1周公制礼\(C_exit中等\)→应约者可退出。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-7b554de4538ab2a1 / 秦统一\(C_exit极高\)→应约者无法退出；#1周公制礼\(C_exit中等\)→应约者可退出。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [秦统一\(H极高\)→应约者感知不到退出权。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-79d0d1d8440b58f4 / 秦统一\(H极高\)→应约者感知不到退出权。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [秦统一\(H极高\)→应约者感知不到退出权；#1周公制礼\(H低\)→应约者能感知退出权。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-fa577ce9303bd3b9 / 秦统一\(H极高\)→应约者感知不到退出权；#1周公制礼\(H低\)→应约者能感知退出权。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [秦统一\(n_lock极高\)→15年亡；#1周公制礼\(n_lock中等\)→八百年。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-6d86719d4edb4e71 / 秦统一\(n_lock极高\)→15年亡；#1周公制礼\(n_lock中等\)→八百年。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [秦统一\(Posture_deg≈1\)→15年亡；#1周公制礼\(Posture_deg≈0.3\)→八百年；#6元朝\(Posture_deg≈1\)→90年亡。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-aa459216905f7487 / 秦统一\(Posture_deg≈1\)→15年亡；#1周公制礼\(Posture_deg≈0.3\)→八百年；#6元朝\(Posture_deg≈1\)→90年亡。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [秦统一\(Posture_deg≈1→H极高→ε≈0→R_perceived≈0\)→15年亡。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-bd369403a8a2eadc / 秦统一\(Posture_deg≈1→H极高→ε≈0→R_perceived≈0\)→15年亡。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [秦统一\(R_perceived≈0\)→应约者感知不到退出权。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-2c1a4c3a082222ac / 秦统一\(R_perceived≈0\)→应约者感知不到退出权。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [秦统一\(β跳变→突然崩溃\)。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-2553734ad510bb2c / 秦统一\(β跳变→突然崩溃\)。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
 - [秦统一\(ε_eff衰减至0\)→15年亡。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-50cbef5be855994b / 秦统一\(ε_eff衰减至0\)→15年亡。
@@ -1419,6 +1344,11 @@
   - 可搜索名称：NFC-88b6c6b106eaf82f / 这个故事并非毫无根据，却太早把问题关上了。它把“制造”理解成伪造，把信仰和利用切成两块，好像一个人只要认真相信，就不可能同时把信仰变成制度；又好像一个制度有政治用途，参与其中的人就一定没有宗教经验。
   - 来源：`docs/publication/works/when-an-emperor-manufactures-heaven.md`
   - 依赖：—；被引用：—
+- [这些 replaceable executors 不拥有 OS authority；这组仓库身份不升级 Owner、truth、production](../../../ARCHITECTURE.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-7179f58c0e7ba091 / 这些 replaceable executors 不拥有 OS authority；这组仓库身份不升级 Owner、truth、production
+  - 来源：`ARCHITECTURE.md`
+  - 依赖：—；被引用：—
 - [这些作品是对既有百轮材料的综合与出版，不是新的外部研究结果。书目匹配、有限工程试验、历史来源和内部治理各自保留自己的证据层；可读性和可达性不会自动提高任何现实命题的真值。](../../../RESULTS/RESEARCH-AND-ARTICLES.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-91aac25a66d4725f / 这些作品是对既有百轮材料的综合与出版，不是新的外部研究结果。书目匹配、有限工程试验、历史来源和内部治理各自保留自己的证据层；可读性和可达性不会自动提高任何现实命题的真值。
@@ -1463,11 +1393,6 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-ddce97afcb35193f / 这是一条从验证报告里长出来的故事版笔记。它保留了同一个历史骨架，但把表达写得更像一篇可读的故事，方便以后持续扩展更多同类内容。
   - 来源：`新故事/0001-S1-比刀剑更持久的，是共享观念.md`
-  - 依赖：—；被引用：—
-- [这组仓库身份不升级 Owner、truth、production 或 epistemic authority。](../../../ARCHITECTURE.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-8f6f0535e032c73f / 这组仓库身份不升级 Owner、truth、production 或 epistemic authority。
-  - 来源：`ARCHITECTURE.md`
   - 依赖：—；被引用：—
 - [这里的“素材来源”是写作生成角色，不把点火派生产物伪装成新的外部证据。按实际使用复制条目。](../../../templates/publication/zhiyuan-writing-spec.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -1533,11 +1458,6 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-9e5b3a7098f71275 / 部分成立 = 部分验证通过（停留在L1层，缺乏L2层涌现）
   - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [都是仓库工程证据，不是外部真值、Owner acceptance、生产安全或](../../../reports/operations/ignition-123-nightshift-progress.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-30b137ea171760c4 / 都是仓库工程证据，不是外部真值、Owner acceptance、生产安全或
-  - 来源：`reports/operations/ignition-123-nightshift-progress.md`
   - 依赖：—；被引用：—
 - [重整化群门槛标度案例验证。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`

@@ -264,11 +264,6 @@
   - 可搜索名称：NFC-b5b16104a9dffeb1 / Current claim ceiling: MCF is a repository-native representation candidate for navigating multiscale causal hypotheses a
   - 来源：`data/architecture/multiscale-causal-fabric/README.md`
   - 依赖：—；被引用：—
-- [Current environmental residuals: Full unittest discovery was deferred to Step 12 after the baseline probe produced no ou](../../../docs/architecture/current-facts.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-9b9af1fccdf5e365 / Current environmental residuals: Full unittest discovery was deferred to Step 12 after the baseline probe produced no ou
-  - 来源：`docs/architecture/current-facts.md`
-  - 依赖：—；被引用：—
 - [current_lifecycle_gated_whole_project_synchronization_method_only](../../../reports/operations/121Q25C-completion-seal.json)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-5f557c45a7203029 / current_lifecycle_gated_whole_project_synchronization_method_only
@@ -2504,3 +2499,8 @@
   - 可搜索名称：NFC-7ff9b8d80a727562 / If upstream objects D_{D100} exist, compose F_{D100}=N\(⊕_{g∈D_{D100}} g\); otherwise treat F_{D100} as an axiom seed.
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D100；被引用：—
+- [If upstream objects D_{D101} exist, compose F_{D101}=N\(⊕_{g∈D_{D101}} g\); otherwise treat F_{D101} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-b55abd9637e87a8a / If upstream objects D_{D101} exist, compose F_{D101}=N\(⊕_{g∈D_{D101}} g\); otherwise treat F_{D101} as an axiom seed.
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D101；被引用：—

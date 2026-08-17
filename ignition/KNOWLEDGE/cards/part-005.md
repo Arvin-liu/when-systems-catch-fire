@@ -24,26 +24,6 @@
 - **主题：** `ARCHITECTURE_GOVERNANCE`
 - **可搜索名称：** `084 Architecture Truth Freeze Readiness Assessment`, `084-architecture-truth-freeze-readiness`
 
-<a id="asset-hr-641da70bef452b2a"></a>
-## Current Facts（机器推导事实）
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-641DA70BEF452B2A` · [docs/architecture/current-facts.md](../../docs/architecture/current-facts.md)
-- **为什么产生：** 此来源记录了什么：Current Facts（机器推导事实）？
-- **当前状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
-- **当前结果：** Source authority: the JSON projection records SHA-256 fingerprints for the canonical registries, manifests, topology, pack declarations, federation inventory and generator/schema inputs. Human prose may explain these facts but is not a second numeric authority. Claim ceiling: Deterministic reposi…
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** `T16`
-- **来源与证据：** `docs/architecture/current-facts.md`, `REPOSITORY_HISTORY_SOURCE`
-- **演化历史：** 2026-08-17: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `ARCHITECTURE_GOVERNANCE`
-- **可搜索名称：** `Current Facts（机器推导事实）`, `current-facts`
-
 <a id="asset-hr-64c5f9f425889534"></a>
 ## Strong claim gate audit
 
@@ -1003,3 +983,23 @@
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `COGNITION`, `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `Ψ₀ 判定矩阵（psi0-decision-matrix）`, `psi0-decision-matrix`
+
+<a id="asset-hr-814cd0e9847c82e3"></a>
+## 121Q22 Probability and Systems Source Map
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-814CD0E9847C82E3` · [reports/research/121Q22-probability-systems-source-map.md](../../reports/research/121Q22-probability-systems-source-map.md)
+- **为什么产生：** 此来源记录了什么：121Q22 Probability and Systems Source Map？
+- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **当前结果：** These sources are used as modeling references and boundary checks. They are not imported as proved Ignition claims.
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `reports/research/121Q22-probability-systems-source-map.md`, `121Q22-PROBABILITY-SYSTEMS-SOURCE-MAP`
+- **演化历史：** 2026-07-16: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`
+- **可搜索名称：** `121Q22 Probability and Systems Source Map`, `121Q22-probability-systems-source-map`

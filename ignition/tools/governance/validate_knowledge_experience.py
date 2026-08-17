@@ -137,7 +137,7 @@ def reachable_within_two_clicks() -> set[str]:
 def validate() -> dict:
     errors: list[str] = []
     config = json.loads(CONFIG_PATH.read_text(encoding="utf-8"))
-    results = read_jsonl(ROOT / "data/governance/human-results/result-ledger.jsonl")
+    results = BUILDER.knowledge_result_rows(config)
     cards = read_jsonl(DATA_ROOT / "asset-cards.jsonl")
     changes = read_jsonl(DATA_ROOT / "changes.jsonl")
     layers = read_jsonl(DATA_ROOT / "layered-reading.jsonl")

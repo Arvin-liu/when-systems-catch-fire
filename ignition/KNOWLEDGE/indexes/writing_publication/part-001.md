@@ -129,6 +129,11 @@
   - 可搜索名称：Current Main vs 1.4 Candidate Homepage Comparison / IGNITION-ITERATION-METHOD-1.4-homepage-comparison
   - 来源：`reports/operations/IGNITION-ITERATION-METHOD-1.4-homepage-comparison.md`
   - 依赖：—；被引用：—
+- [delta: closes the Current-State synchronization invariant, deterministic current-facts publication gate, compact `0.8.0`](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-1f2f02b9e9488f02 / delta: closes the Current-State synchronization invariant, deterministic current-facts publication gate, compact `0.8.0`
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [docs/publication/cases/song-huizong-taoism-1117-source.md](../../../docs/publication/cases/song-huizong-taoism-1117-source.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：Y2021 / docs/publication/cases/song-huizong-taoism-1117-source.md / Y2021

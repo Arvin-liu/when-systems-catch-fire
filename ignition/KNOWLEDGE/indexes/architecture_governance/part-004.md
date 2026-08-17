@@ -4,26 +4,6 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
-- [def t6\(\):](../../../function-os-candidate/v0.1/tests/test_n9_registry.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-27715A2A490548DD / def t6\(\): / IMPLICIT-27715A2A490548DD
-  - 来源：`function-os-candidate/v0.1/tests/test_n9_registry.py`
-  - 依赖：—；被引用：—
-- [def test_01_n1_through_n4_add\(self\):](../../../function-os-candidate/v0.2/tests/test_e2e_pipeline.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-833AD7F9CD249FF1 / def test_01_n1_through_n4_add\(self\): / IMPLICIT-833AD7F9CD249FF1
-  - 来源：`function-os-candidate/v0.2/tests/test_e2e_pipeline.py`
-  - 依赖：—；被引用：—
-- [def test_02_n5_interpreter_add\(self\):](../../../function-os-candidate/v0.2/tests/test_e2e_pipeline.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-8C79F54F4AEB8770 / def test_02_n5_interpreter_add\(self\): / IMPLICIT-8C79F54F4AEB8770
-  - 来源：`function-os-candidate/v0.2/tests/test_e2e_pipeline.py`
-  - 依赖：—；被引用：—
-- [def test_03_n5_interpreter_multiply\(self\):](../../../function-os-candidate/v0.2/tests/test_e2e_pipeline.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-E335795D3B4609F4 / def test_03_n5_interpreter_multiply\(self\): / IMPLICIT-E335795D3B4609F4
-  - 来源：`function-os-candidate/v0.2/tests/test_e2e_pipeline.py`
-  - 依赖：—；被引用：—
 - [def test_04_n5_interpreter_square\(self\):](../../../function-os-candidate/v0.2/tests/test_e2e_pipeline.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-C93ABDE08692CE8E / def test_04_n5_interpreter_square\(self\): / IMPLICIT-C93ABDE08692CE8E
@@ -1119,11 +1099,6 @@
   - 可搜索名称：NFC-0c232afd5b37c69f / deterministic repository validation evidence for Phase D only; no truth, deployment, acceptance, merge, or Current claim
   - 来源：`reports/operations/121Q32I-phase-d-validation-closeout.json`
   - 依赖：—；被引用：—
-- [Deterministic repository-derived current facts and navigation support only; no external truth, Owner acceptance, product](../../../data/architecture/current-facts.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-4caaf3fe2ac44328 / Deterministic repository-derived current facts and navigation support only; no external truth, Owner acceptance, product
-  - 来源：`data/architecture/current-facts.json`
-  - 依赖：—；被引用：—
 - [Did not modify Kimi's original files \(preservation principle\)](../../../data/external-research/121A-night-recovery/121A-resume-plan-121B-121C.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-e1765c48185a44a1 / Did not modify Kimi's original files \(preservation principle\)
@@ -1909,11 +1884,6 @@
   - 可搜索名称：NFC-571c1513fe6f1ddb / Expected and empirical risk, high-probability rates, sample/width conditions, and a held-out Poisson illustration provid
   - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
   - 依赖：—；被引用：—
-- [Experience audit、two-pass determinism、Human Surface contract/front door、current-facts、](../../../reports/operations/ignition-123-nightshift-progress.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-5fb700e8668dcbfd / Experience audit、two-pass determinism、Human Surface contract/front door、current-facts、
-  - 来源：`reports/operations/ignition-123-nightshift-progress.md`
-  - 依赖：—；被引用：—
 - [Experiment / Run Manifest](../../../evidence-program/schemas/run-manifest.schema.json)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-1b76dd74a3596162 / Experiment / Run Manifest
@@ -2239,11 +2209,6 @@
   - 可搜索名称：NFC-c2f1b046210d25b3 / Four bases, 48 source checkpoints, sampled subset sizes and 16 tasks form a substantial bounded empirical validator desp
   - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
   - 依赖：—；被引用：—
-- [Fresh public probe：OpenClaw `2026.7.1-2`、Hermes `v0.20.0`、Codex `0.144.4` 均 healthy。](../../../reports/operations/ignition-123-nightshift-progress.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-cb95847ab81192a4 / Fresh public probe：OpenClaw `2026.7.1-2`、Hermes `v0.20.0`、Codex `0.144.4` 均 healthy。
-  - 来源：`reports/operations/ignition-123-nightshift-progress.md`
-  - 依赖：—；被引用：—
 - [from OpenClaw's internal behavior.](../../../reports/operations/ignition-122-federation-progress.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-286043425de6eee4 / from OpenClaw's internal behavior.
@@ -2502,5 +2467,40 @@
 - [Generated LoRA tensors are executable adaptation artifacts when merged with the exact base, but no actual checkpoint, ma](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-e5616edd1c09d10e / Generated LoRA tensors are executable adaptation artifacts when merged with the exact base, but no actual checkpoint, ma
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [Generated programs are artifacts, but ephemeral. No persistent storage, no metadata, no registry.](../../../data/external-research/121-fulltext-resolver/121q2/acceptance/S120-021.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-98d57126d7c90077 / Generated programs are artifacts, but ephemeral. No persistent storage, no metadata, no registry.
+  - 来源：`data/external-research/121-fulltext-resolver/121q2/acceptance/S120-021.json`
+  - 依赖：—；被引用：—
+- [generated registry into external truth.](../../../reports/validation/pointfire-seven-track-current-main-maintenance-r1-20260813.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-0c7b40722b6468a5 / generated registry into external truth.
+  - 来源：`reports/validation/pointfire-seven-track-current-main-maintenance-r1-20260813.md`
+  - 依赖：—；被引用：—
+- [Generated SKILL.md bodies are intended artifacts, but no evaluated library, graph or concrete generated skill is release](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-9ffc46a21e7debd6 / Generated SKILL.md bodies are intended artifacts, but no evaluated library, graph or concrete generated skill is release
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [Generated, read-only projections. They are not the source of truth; edit data/foundation through reviewed migration tool](../../../views/README.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-d3f5c8ffca85aec9 / Generated, read-only projections. They are not the source of truth; edit data/foundation through reviewed migration tool
+  - 来源：`views/README.md`
+  - 依赖：—；被引用：—
+- [GetNote 1329 pipeline as an internal pressure test](../../ASSET-CARDS.md#asset-hr-f369ae0cee850786)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `CANDIDATE_OR_PENDING_SOURCE`
+  - 可搜索名称：GetNote 1329 pipeline as an internal pressure test / getnote-1329-epistemic-governance-pressure-test
+  - 来源：`docs/architecture/getnote-1329-epistemic-governance-pressure-test.md`
+  - 依赖：—；被引用：—
+- [GetNote supplies bounded internal evidence that the federation can preserve provenance, multiple ceiling outcomes, legal](../../../docs/architecture/getnote-1329-epistemic-governance-pressure-test.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-f988f934fb342955 / GetNote supplies bounded internal evidence that the federation can preserve provenance, multiple ceiling outcomes, legal
+  - 来源：`docs/architecture/getnote-1329-epistemic-governance-pressure-test.md`
+  - 依赖：—；被引用：—
+- [Git tags, files and serialized artifacts provide identifiers and provenance, but no governed admission, usage, compatibi](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-1ed01450b13e4d51 / Git tags, files and serialized artifacts provide identifiers and provenance, but no governed admission, usage, compatibi
   - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
   - 依赖：—；被引用：—

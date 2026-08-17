@@ -1,7 +1,7 @@
 {
   "schema_version": "current-state-sync-receipt-r1",
   "task_id": "IGNITION-20260816-123",
-  "architecture_identity_impact": "PRESENTATION_ONLY",
+  "architecture_identity_impact": "ARCHITECTURE_CHANGED",
   "identity_contract_path": "ignition/data/architecture/current-system-identity.json",
   "identity_epoch": "agent-platform-federation-r1",
   "current_iteration_boundary": 122,
@@ -18,7 +18,7 @@
     {"surface_id":"state-changelog","path":"ignition/STATE-CHANGELOG.md","decision":"CHANGE","reason":"Append a clearly marked Task 123 branch-projection recovery entry; the exact formal main delta remains reserved for Step 12 closure.","evidence":"IGNITION-20260816-123 Step 07 task-branch projection; formal main remains d60ec868"}
   ],
   "system_map_sync": {"decision":"CHANGE","reason":"Step 06 adds and passes the deterministic geometry quality gate for the sole compact map, including accessibility and old row-max negative fixtures.","evidence":"system-map-geometry-quality-r1.json; blank reduction 87.4101%; height reduction 38.0642%; crossing proxy 160/173"},
-  "state_changelog_delta": {"decision":"CHANGE","reason":"Step 07 records a branch-projection recovery entry without presenting it as the formal main release delta; Step 12 will append and validate the final main delta."},
+  "state_changelog_delta": {"decision":"CHANGE","reason":"Step 12 appends and validates the final Task 123 main-release candidate delta; its exact released tip remains bound by the ordinary fast-forward and independent 1111 receipt."},
   "changed_paths": [
     "AGENTS.md",
     ".github/README.md",
@@ -90,9 +90,36 @@
     "ignition/data/governance/knowledge-experience/manifest.json",
     "ignition/KNOWLEDGE/READING-LAYERS.md",
     "ignition/data/operations/propagation/121-agent-platform-r2-blast-radius-report.json",
-    "ignition/data/foundation/repository-path-classification/classification-manifest.jsonl"
+    "ignition/data/foundation/repository-path-classification/classification-manifest.jsonl",
+    "ignition/tools/foundation/adjudicate_nonfunction_claims.py",
+    "ignition/data/foundation/nonfunction-claims/adjudication-ledger.jsonl",
+    "ignition/data/foundation/nonfunction-claims/claim-inventory.csv",
+    "ignition/data/foundation/nonfunction-claims/dependency-graph.jsonl",
+    "ignition/data/foundation/nonfunction-claims/discovery-coverage.json",
+    "ignition/data/foundation/nonfunction-claims/evidence-lineage.jsonl",
+    "ignition/data/foundation/nonfunction-claims/inference-risk-report.jsonl",
+    "ignition/data/foundation/nonfunction-claims/source-discovery.jsonl",
+    "ignition/data/foundation/nonfunction-claims/supersession-lineage.jsonl",
+    "ignition/data/foundation/nonfunction-claims/unresolved-quarantine.jsonl",
+    "ignition/data/governance/knowledge-experience/asset-cards.jsonl",
+    "ignition/data/governance/knowledge-experience/coverage.json",
+    "ignition/data/governance/knowledge-experience/layered-reading.jsonl",
+    "ignition/data/governance/knowledge-experience/search-index.jsonl",
+    "ignition/data/governance/self-correction/claim-delta.jsonl",
+    "ignition/data/governance/self-correction/evidence-lineage-delta.jsonl",
+    "ignition/data/governance/self-correction/impact-analysis.jsonl",
+    "ignition/data/governance/self-correction/summary.json",
+    "ignition/data/publication/fire-seeds/seed-census.json",
+    "ignition/RESULTS/CLAIM-DELTA.md",
+    "ignition/RESULTS/EVIDENCE-LINEAGE.md",
+    "ignition/RESULTS/IMPACT-ANALYSIS.md",
+    "ignition/docs/foundation/nonfunction-claim-adjudication-index.md",
+    "ignition/docs/human/nonfunction-assets/README.md",
+    "ignition/docs/human/nonfunction-assets/bulk-explanation.md",
+    "ignition/data/operations/iterations/123/step12-closure-r1.json",
+    "ignition/schemas/operations/step12-closure-r1.schema.json"
   ],
   "identity_contract_changed": true,
-  "surface_sync_complete": false,
-  "claim_ceiling": "Current State/front-door synchronization plus deterministic map semantic navigation, geometry and accessibility evidence only; formal main architecture/state-delta closure, external-agent evidence, production, Owner and epistemic upgrades remain open."
+  "surface_sync_complete": true,
+  "claim_ceiling": "Current State synchronization, deterministic map semantic navigation/geometry/accessibility and bounded external-executor conformance evidence only; no external truth, provider success, production, Owner or epistemic upgrade is inferred."
 }

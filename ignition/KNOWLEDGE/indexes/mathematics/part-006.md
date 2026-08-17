@@ -4,11 +4,6 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
-- [L2R ACL full-text review: isolated per-task LoRA training, replay-memory router learning, independent Gumbel-sigmoid all](../../../data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-1ddba41004bde45c / L2R ACL full-text review: isolated per-task LoRA training, replay-memory router learning, independent Gumbel-sigmoid all
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl`
-  - 依赖：—；被引用：—
 - [L2层：意识、自我意识、元认知](../../../docs/phi_meta_law.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
   - 可搜索名称：NFC-f459d8301ccc118b / L2层：意识、自我意识、元认知
@@ -1712,6 +1707,11 @@
 - [obligations: \[开放问题\]\(./RESULTS/OPEN-QUESTIONS.md\)、\[纠正与撤回\]\(./RESULTS/CORRECTIONS.md\)、Foundation 的证明/实证义务和 Results Book 的显式](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-abd4cac951f2a101 / obligations: \[开放问题\]\(./RESULTS/OPEN-QUESTIONS.md\)、\[纠正与撤回\]\(./RESULTS/CORRECTIONS.md\)、Foundation 的证明/实证义务和 Results Book 的显式
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [obligations: Task 104–106 historical propagation records remain `REQUIRES_REVIEW`; Phase-E legacy cwd path messages rema](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-3b6625163bbfd150 / obligations: Task 104–106 historical propagation records remain `REQUIRES_REVIEW`; Phase-E legacy cwd path messages rema
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
 - [obligations: the environmental `T16_SYMPY_COUNTEREXAMPLE` residual remains explicitly classified from full regression; l](../../../STATE-CHANGELOG.md)

@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [\| Source \| Usable Projection \| Forbidden Upgrade \|](../../../reports/research/121Q22-probability-systems-source-map.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-85357335b1f04d2f / \| Source \| Usable Projection \| Forbidden Upgrade \|
+  - 来源：`reports/research/121Q22-probability-systems-source-map.md`
+  - 依赖：—；被引用：—
 - [\| V1-S1-E2 \| V1 \| S1 \| E2 \| 延续性+封闭边界+非线性演化 \| 北宋开封城——封闭边界，人口虹吸、财政预算形成自我强化链条，最终非线性崩溃\[\[831ea016\]\] \| 陷阱系统——封闭边界内自我强化，最终必然崩溃的](../../../docs/meta-protocols/meta-protocol-64-combination-matrix.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-a4de32f7e21330ff / \| V1-S1-E2 \| V1 \| S1 \| E2 \| 延续性+封闭边界+非线性演化 \| 北宋开封城——封闭边界，人口虹吸、财政预算形成自我强化链条，最终非线性崩溃\[\[831ea016\]\] \| 陷阱系统——封闭边界内自我强化，最终必然崩溃的
@@ -2497,10 +2502,5 @@
 - [影响组件：evidence obligation interface（保持）](../../../data/external-research/089-external-source-atlas.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-cb1c6641e9f2e2d6 / 影响组件：evidence obligation interface（保持）
-  - 来源：`data/external-research/089-external-source-atlas.md`
-  - 依赖：—；被引用：—
-- [影响组件：evidence_regime（PARTIAL，保持）](../../../data/external-research/089-external-source-atlas.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-b89bcd9a297a6078 / 影响组件：evidence_regime（PARTIAL，保持）
   - 来源：`data/external-research/089-external-source-atlas.md`
   - 依赖：—；被引用：—

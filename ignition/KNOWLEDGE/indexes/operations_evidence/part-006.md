@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [\| N1 \| 退出权族 FUNC-L1-EXIT \| 退出权族 77 文件存在 \| C：补「绑定致架空」维度；I_iso：非同构，是细分；L_meta：注释级不污染 \| **作为注释并入 EXIT 族** \| 不新建条目，补结构性不可拒绝子](../../../outputs/audit/teacher-competition-backfill-review-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-10bf8a6175e93442 / \| N1 \| 退出权族 FUNC-L1-EXIT \| 退出权族 77 文件存在 \| C：补「绑定致架空」维度；I_iso：非同构，是细分；L_meta：注释级不污染 \| **作为注释并入 EXIT 族** \| 不新建条目，补结构性不可拒绝子
+  - 来源：`outputs/audit/teacher-competition-backfill-review-20260708.md`
+  - 依赖：—；被引用：—
 - [\| N2=Symbolic Compiler \| N2=Representation \(encoder/decoder/validator\) \|](../../../reports/external-research/121Q5-final-report.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-342B1819B0C12810 / \| N2=Symbolic Compiler \| N2=Representation \(encoder/decoder/validator\) \| / IMPLICIT-342B1819B0C12810
@@ -929,11 +934,6 @@
   - 可搜索名称：NFC-65cfb28bda386e37 / 尺度错配指分析层级与对象层级不对应。
   - 来源：`outputs/getbrain/failure-typology-draft-20260706.md`
   - 依赖：—；被引用：—
-- [建立 `os_spine`、`federation`、`domain_packs` 三个语义投影和六段 bounded reading path；](../../../reports/operations/ignition-123-nightshift-progress.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-346c03bc965408ba / 建立 `os_spine`、`federation`、`domain_packs` 三个语义投影和六段 bounded reading path；
-  - 来源：`reports/operations/ignition-123-nightshift-progress.md`
-  - 依赖：—；被引用：—
 - [扩展注释 · P1 接入烟雾测试](../../ASSET-CARDS.md#asset-hr-7d4413587f58d270)
   - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
   - 可搜索名称：扩展注释 · P1 接入烟雾测试 / expanded-notes
@@ -1139,11 +1139,6 @@
   - 可搜索名称：NFC-bc3ae5037002d6da / 最近邻反事实：D595 是绩效/待遇/组织资源绑定架空退出权；D600 是代际/亲密关系中**正向支持**退化为控制。给一个富裕但无权无势的父母「为你好」式路径控制，D595 不触发、D600 触发 → 预测不同。不可约差异成立。
   - 来源：`outputs/collisions/20260711-disobedience-subjectivity/independent-second-angle-audit-056.md`
   - 依赖：D595, D600；被引用：—
-- [本步只修复了两个 projection 层缺陷：Knowledge map 的截断 source preview 不再生成假链接；](../../../reports/operations/ignition-123-nightshift-progress.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-a4fcf243f4f3f58c / 本步只修复了两个 projection 层缺陷：Knowledge map 的截断 source preview 不再生成假链接；
-  - 来源：`reports/operations/ignition-123-nightshift-progress.md`
-  - 依赖：—；被引用：—
 - [本目录是点火项目「元协议生成框架」的文档层，对应 `data/meta-protocols/` 数据层、`templates/` 模板层。](../../../docs/meta-protocols/README.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-6c8b6740d3bee543 / 本目录是点火项目「元协议生成框架」的文档层，对应 `data/meta-protocols/` 数据层、`templates/` 模板层。

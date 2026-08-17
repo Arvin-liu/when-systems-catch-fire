@@ -1,0 +1,97 @@
+{
+  "schema_version": "step12-closure-r1",
+  "task_id": "IGNITION-20260816-123",
+  "step": "12",
+  "recorded_at": "2026-08-17T08:51:58+08:00",
+  "baseline": {
+    "prior_step_commit": "4af954b70b2be374c1687ef29d57330125d4db94",
+    "formal_main_before_step12": "d60ec8687fb1cc6b972e831a8f0dcd348ba0e83e",
+    "task_branch": "codex/ignition-123-current-state-sync-compact-map-federation-r2-20260816"
+  },
+  "projection_repair": {
+    "root_cause": "Generated current-facts projections were being rediscovered as non-function claims, creating a Knowledge/search/manifest hash cycle visible in a fresh clone.",
+    "boundary_change": "data/architecture/current-facts.json and docs/architecture/current-facts.md remain path-accounted but are excluded from authoritative non-function claim discovery and Knowledge result indexing as generated projections, preventing generated-output hash feedback.",
+    "nonfunction_claims_before": 15992,
+    "nonfunction_claims_after": 15977,
+    "knowledge_search_before": 21929,
+    "knowledge_search_after": 21913,
+    "fresh_clone_cycle": "REPAIRED",
+    "historical_records_rewritten": false
+  },
+  "final_projection": {
+    "function_identity_cards": 5604,
+    "function_quarantine_or_pending": 4805,
+    "nonfunction_claims": 15977,
+    "nonfunction_quarantine_or_pending": 4648,
+    "human_results": 333,
+    "knowledge_cards": 403,
+    "knowledge_changes": 315,
+    "knowledge_layered_readings": 332,
+    "knowledge_search_records": 21913,
+    "knowledge_aliases": 851,
+    "fire_seeds": 64,
+    "fire_seed_source_census": 392,
+    "self_correction_deltas": 465,
+    "self_correction_rules": 10,
+    "map_visible_nodes": 70,
+    "map_typed_edges": 77,
+    "map_canvas": "1800x2470",
+    "map_blank_reduction_vs_step00": 0.8741007194,
+    "map_height_reduction_vs_step00": 0.3806419258,
+    "map_crossing_proxy": 160,
+    "map_max_internal_gap": 28,
+    "map_bottom_only_isolated_groups": []
+  },
+  "targeted_gates": {
+    "current_state_sync": "PASS (ARCHITECTURE_CHANGED; surface_sync_complete=true)",
+    "current_facts": "PASS (two-generation byte identity)",
+    "knowledge_experience_audit": "PASS",
+    "knowledge_experience_determinism": "PASS (isolated two-pass replay)",
+    "fire_seeds": "PASS",
+    "compact_map_generator_and_geometry": "PASS",
+    "foundation_rebuild": "PASS (nonfunction registry closed at 15977)",
+    "post_repair_targeted_replay": "PASS (8 current-state/fire-seed tests)",
+    "step11_full_discovery": "PASS_WITH_CLASSIFIED_RESIDUALS (750 tests; 4 failures; 0 errors; 1 skipped)",
+    "fresh_clone_replay": "PENDING_STEP12_COMMIT",
+    "formal_main_fast_forward": "PENDING_STEP12_COMMIT",
+    "independent_1111_receipt": "PENDING_FINAL_FAST_FORWARD"
+  },
+  "residual_classification": [
+    {
+      "id": "PROPAGATION-104-106",
+      "classification": "PREEXISTING",
+      "status": "REQUIRES_REVIEW",
+      "boundary": "Historical NO_IMPACT_JUSTIFIED records are not rewritten; current derived paths continue to require review."
+    },
+    {
+      "id": "PHASE-E-CWD-WARNINGS",
+      "classification": "PREEXISTING",
+      "status": "PASS_WITH_WARNINGS",
+      "boundary": "Legacy validators emit split-root path warnings but retain exit status 0; no validator was weakened."
+    },
+    {
+      "id": "CURRENT-FACTS-ORDER-DRIFT",
+      "classification": "ORDER_DEPENDENT",
+      "status": "REQUIRES_REVIEW",
+      "boundary": "Observed in the Step 11 full-suite order; isolated current-state and post-repair fresh-clone checks must remain the release evidence."
+    }
+  ],
+  "privacy_and_external_boundary": {
+    "external_live_invocation": "NO_STEP12_RETRY; STEP09_RESULTS_RETAINED",
+    "formal_repository_used_as_live_target": false,
+    "external_agent_install_or_upgrade": false,
+    "external_configuration_changed": false,
+    "secret_content_read": false,
+    "prompt_token_credential_private_session_provider_telemetry_retained": false,
+    "claim_ceiling": "OpenClaw, Hermes and Codex live invocation remains NOT_RUN/SKIPPED where unsafe or unavailable; local projections do not establish provider success, external validity or production readiness."
+  },
+  "formal_main": {
+    "expected_before_fast_forward": "d60ec8687fb1cc6b972e831a8f0dcd348ba0e83e",
+    "modified_during_step12_commit": false,
+    "merge_mode": "FAST_FORWARD_ONLY",
+    "final_tip_binding": "Exact task-branch commit, origin/main, local/tracking/ls-remote/fresh-fetch equality and the independent 1111 receipt are bound after this single Step 12 commit; no self-referential SHA is stored here."
+  },
+  "claim_ceiling": "Repository-scoped current-state synchronization, deterministic projection, geometry/accessibility and bounded executor-conformance evidence only; no external truth, Owner acceptance, production safety or epistemic upgrade is inferred.",
+  "closure_binding": "The final release requires push of this Step 12 commit, fast-forward-only main, fresh-clone replay and an independent durable 1111 receipt with exact SHA/PR evidence.",
+  "next_step": "FINAL_FAST_FORWARD_AND_RELAY"
+}

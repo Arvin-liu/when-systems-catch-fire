@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [projection replacing canonical source;](../../../reports/architecture/121Q23-adaptive-relational-network-validation.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-e2a2beca76f78173 / projection replacing canonical source;
+  - 来源：`reports/architecture/121Q23-adaptive-relational-network-validation.md`
+  - 依赖：—；被引用：—
 - [projections include unmapped residue;](../../../reports/architecture/121Q21R-multiscale-causal-fabric-validation.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-7204911060eeceab / projections include unmapped residue;
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-098040e2061f0843 / \| Source \| Permitted Projection \| Prohibited Inference \|
   - 来源：`reports/research/121Q23-network-theory-source-map.md`
-  - 依赖：—；被引用：—
-- [\| Source \| Usable Projection \| Forbidden Upgrade \|](../../../reports/research/121Q22-probability-systems-source-map.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-85357335b1f04d2f / \| Source \| Usable Projection \| Forbidden Upgrade \|
-  - 来源：`reports/research/121Q22-probability-systems-source-map.md`
   - 依赖：—；被引用：—

@@ -404,8 +404,6 @@
 - [碰撞证据链：不听话的人 × 点火两张表（20260711）](./cards/part-004.md#asset-hr-628b84a2327f5c52) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-628B84A2327F5C52`
 <a id="asset-hr-62de12643e577ef4"></a>
 - [084 Architecture Truth Freeze Readiness Assessment](./cards/part-005.md#asset-hr-62de12643e577ef4) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-62DE12643E577EF4`
-<a id="asset-hr-641da70bef452b2a"></a>
-- [Current Facts（机器推导事实）](./cards/part-005.md#asset-hr-641da70bef452b2a) — `RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `HR-641DA70BEF452B2A`
 <a id="asset-hr-64c5f9f425889534"></a>
 - [Strong claim gate audit](./cards/part-005.md#asset-hr-64c5f9f425889534) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-64C5F9F425889534`
 <a id="asset-hr-654ae58eec903c53"></a>
@@ -503,7 +501,7 @@
 <a id="asset-hr-8079a8712f2b03bc"></a>
 - [Ψ₀ 判定矩阵（psi0-decision-matrix）](./cards/part-005.md#asset-hr-8079a8712f2b03bc) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-8079A8712F2B03BC`
 <a id="asset-hr-814cd0e9847c82e3"></a>
-- [121Q22 Probability and Systems Source Map](./cards/part-006.md#asset-hr-814cd0e9847c82e3) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-814CD0E9847C82E3`
+- [121Q22 Probability and Systems Source Map](./cards/part-005.md#asset-hr-814cd0e9847c82e3) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-814CD0E9847C82E3`
 <a id="asset-hr-81c5f5f4c67de686"></a>
 - [C-0809 表演化假课与量化指标消解温度索引可见性验证](./cards/part-006.md#asset-hr-81c5f5f4c67de686) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-81C5F5F4C67DE686`
 <a id="asset-hr-821405558993dacd"></a>
@@ -603,7 +601,7 @@
 <a id="asset-hr-a3102269fa5cb3fd"></a>
 - [不采纳项 · P1 接入烟雾测试](./cards/part-006.md#asset-hr-a3102269fa5cb3fd) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-A3102269FA5CB3FD`
 <a id="asset-hr-a492aafc18415614"></a>
-- [121Q28T｜之元写作法 0.3.0 Current 收口](./cards/part-007.md#asset-hr-a492aafc18415614) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-A492AAFC18415614`
+- [121Q28T｜之元写作法 0.3.0 Current 收口](./cards/part-006.md#asset-hr-a492aafc18415614) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-A492AAFC18415614`
 <a id="asset-hr-a53421dea2f6cdca"></a>
 - [099 Function Asset Registry Closure](./cards/part-007.md#asset-hr-a53421dea2f6cdca) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-A53421DEA2F6CDCA`
 <a id="asset-hr-a5759af803aebc01"></a>
@@ -703,7 +701,7 @@
 <a id="asset-hr-cc88abdd459a3602"></a>
 - [Strong-term audit](./cards/part-007.md#asset-hr-cc88abdd459a3602) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-CC88ABDD459A3602`
 <a id="asset-hr-cdbd2a8dabea0396"></a>
-- [Canonical Protocol Validation Results](./cards/part-008.md#asset-hr-cdbd2a8dabea0396) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-CDBD2A8DABEA0396`
+- [Canonical Protocol Validation Results](./cards/part-007.md#asset-hr-cdbd2a8dabea0396) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-CDBD2A8DABEA0396`
 <a id="asset-hr-cf318764b78d8743"></a>
 - [语言—思维逻辑平面](./cards/part-008.md#asset-hr-cf318764b78d8743) — `RESULT_OR_ARTICLE` · `CURRENT_SCOPED_SOURCE` · `HR-CF318764B78D8743`
 <a id="asset-hr-d0d9de18fd9e9bde"></a>
@@ -803,7 +801,7 @@
 <a id="asset-hr-f92361487a1aad76"></a>
 - [项目本体版本升级审计 2026-07-09](./cards/part-008.md#asset-hr-f92361487a1aad76) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-F92361487A1AAD76`
 <a id="asset-hr-f9fe7eee273643e9"></a>
-- [121Q12 Effectual-Mechanism Dual-Loop Report](./cards/part-009.md#asset-hr-f9fe7eee273643e9) — `RESULT_OR_ARTICLE` · `CANDIDATE_OR_PENDING_SOURCE` · `HR-F9FE7EEE273643E9`
+- [121Q12 Effectual-Mechanism Dual-Loop Report](./cards/part-008.md#asset-hr-f9fe7eee273643e9) — `RESULT_OR_ARTICLE` · `CANDIDATE_OR_PENDING_SOURCE` · `HR-F9FE7EEE273643E9`
 <a id="asset-hr-fb9a21e0eb12989e"></a>
 - [121Q2V Verification Repair Report](./cards/part-009.md#asset-hr-fb9a21e0eb12989e) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-FB9A21E0EB12989E`
 <a id="asset-hr-fcbaa498cbeb783c"></a>

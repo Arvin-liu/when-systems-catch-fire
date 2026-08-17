@@ -16,7 +16,7 @@ class KnowledgeExperienceTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.config = json.loads((ROOT / "data/governance/knowledge-experience/config.json").read_text(encoding="utf-8"))
-        cls.results = MODULE.read_jsonl(ROOT / "data/governance/human-results/result-ledger.jsonl")
+        cls.results = MODULE.BUILDER.knowledge_result_rows(cls.config)
         cls.cards = MODULE.read_jsonl(ROOT / "data/governance/knowledge-experience/asset-cards.jsonl")
         cls.layers = MODULE.read_jsonl(ROOT / "data/governance/knowledge-experience/layered-reading.jsonl")
         cls.aliases = MODULE.read_jsonl(ROOT / "data/governance/knowledge-experience/alias-index.jsonl")
@@ -73,6 +73,12 @@ class KnowledgeExperienceTests(unittest.TestCase):
             anchor.get("path", "").startswith(forbidden_prefixes) or anchor.get("path", "") in forbidden_exact
             for row in claims for anchor in row.get("source_anchors", [])
         ))
+
+    def test_generated_current_facts_result_is_not_reintroduced_into_knowledge(self):
+        ledger = MODULE.read_jsonl(ROOT / "data/governance/human-results/result-ledger.jsonl")
+        self.assertIn("docs/architecture/current-facts.md", {row["source"] for row in ledger})
+        self.assertIn("docs/architecture/current-facts.md", self.config["excluded_generated_result_sources"])
+        self.assertNotIn("docs/architecture/current-facts.md", {row["source"] for row in self.results})
 
 
 if __name__ == "__main__":

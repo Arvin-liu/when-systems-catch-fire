@@ -4,11 +4,6 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
-- [涨落-耗散定理是D186不确定性-超敏感区函数的统计力学表达。涨落→门控面稳定性→相变临界点。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-48d7eb9f561d6060 / 涨落-耗散定理是D186不确定性-超敏感区函数的统计力学表达。涨落→门控面稳定性→相变临界点。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D186；被引用：—
 - [涨落-遮蔽定理](../../../data/foundation/evidence/evidence.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-969717b9a48fee08 / 涨落-遮蔽定理
@@ -2504,3 +2499,8 @@
   - 可搜索名称：NFC-d9c079f0437e8b13 / 已迁移的历史函数来源/0216-D180-跨域枢纽函数.md
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：D180；被引用：—
+- [已迁移的历史函数来源/0217-D181-定投跨域验证函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-d3063463a9111f6f / 已迁移的历史函数来源/0217-D181-定投跨域验证函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D181；被引用：—

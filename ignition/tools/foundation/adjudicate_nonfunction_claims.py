@@ -96,6 +96,10 @@ SELF_EXCLUDES = {
     "data/foundation/knowledge-corpus-admission-policy.json",
     "reports/architecture/agent-platform-r2-gap-audit.md",
     "reports/operations/ignition-121-nightshift-progress.md",
+    # Task 123 (R1 20260816) release bookkeeping: this report and its closure
+    # schema are auditable operation artifacts, not upstream claim sources.
+    "reports/operations/ignition-123-nightshift-progress.md",
+    "schemas/operations/step12-closure-r1.schema.json",
 }
 MACHINE_EXCLUDE_PREFIXES = (
     "data/foundation/nonfunction-claims/",
@@ -125,6 +129,13 @@ NON_AUTHORITATIVE_PREFIXES = (
     "analysis/",
     "data/operations/",
     "data/publication/fire-seeds/",
+    # Task 123 (R1 20260816) projection boundary: current-facts is a derived
+    # navigation view whose source fingerprints include governance inputs.  It
+    # must remain accounted for without feeding its own generated facts back
+    # into the authoritative claim registry (which would create a hash cycle
+    # through the Knowledge Experience manifest/search projection).
+    "data/architecture/current-facts.json",
+    "docs/architecture/current-facts.md",
     # Published prose is an output/reference surface.  It must remain
     # auditable without feeding its own claims back into the Foundation
     # discovery registry.

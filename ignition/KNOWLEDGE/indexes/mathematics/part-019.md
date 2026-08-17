@@ -4,11 +4,6 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
-- [若任务涉及翻译、命题抽取、跨语言建模或 L6 公共故事、文章与作品反馈，还应读取 `docs/architecture/language-thought-logic-plane.md`、`docs/language-thought/READ](../../../AI-START-HERE.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-d7176361ace31526 / 若任务涉及翻译、命题抽取、跨语言建模或 L6 公共故事、文章与作品反馈，还应读取 `docs/architecture/language-thought-logic-plane.md`、`docs/language-thought/READ
-  - 来源：`AI-START-HERE.md`
-  - 依赖：—；被引用：—
 - [若任务需要全项目导航，读取 `docs/architecture/interactive-system-map.md`、`data/architecture/interactive-system-map.json` 与生成 SVG。图是当前](../../../AI-START-HERE.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-b6f00d6b81ac97c9 / 若任务需要全项目导航，读取 `docs/architecture/interactive-system-map.md`、`data/architecture/interactive-system-map.json` 与生成 SVG。图是当前

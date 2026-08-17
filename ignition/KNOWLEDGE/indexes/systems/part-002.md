@@ -239,6 +239,11 @@
   - 可搜索名称：NFC-18271fc08919b145 / epistemic_state: `CURRENT_WITH_OPEN_OBLIGATIONS` and `EPISTEMICALLY_ACCEPTED=0` remain unchanged. Adapter fixtures, adve
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
+- [epistemic_state: `CURRENT_WITH_OPEN_OBLIGATIONS` and `EPISTEMICALLY_ACCEPTED=0` remain unchanged. Deterministic generato](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-71247d9e1fcb9f79 / epistemic_state: `CURRENT_WITH_OPEN_OBLIGATIONS` and `EPISTEMICALLY_ACCEPTED=0` remain unchanged. Deterministic generato
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [epistemic_state: `CURRENT_WITH_OPEN_OBLIGATIONS` and `EPISTEMICALLY_ACCEPTED=0` remain unchanged. Tests, receipts, gener](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-c153968802c96116 / epistemic_state: `CURRENT_WITH_OPEN_OBLIGATIONS` and `EPISTEMICALLY_ACCEPTED=0` remain unchanged. Tests, receipts, gener
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-310d37809c7ed938 / projection perturbation only
   - 来源：`data/architecture/adaptive-relational-network/real-history/after-projection.json`
-  - 依赖：—；被引用：—
-- [projection replacing canonical source;](../../../reports/architecture/121Q23-adaptive-relational-network-validation.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-e2a2beca76f78173 / projection replacing canonical source;
-  - 来源：`reports/architecture/121Q23-adaptive-relational-network-validation.md`
   - 依赖：—；被引用：—

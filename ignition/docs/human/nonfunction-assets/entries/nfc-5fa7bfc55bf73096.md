@@ -26,7 +26,7 @@
 
 - 机器 ID：`NFC-5fa7bfc55bf73096`；断言类别：`NORMATIVE_OR_GOVERNANCE_CLAIM`；断言类型：`NORMATIVE`。
 - M/E：数学成熟度 `M0`；外部证据成熟度 `E0`；复现：`NOT_APPLICABLE`。
-- 处置：`ACCEPTED_AS_DEFINITION`；机器记录指纹：`874f08bbfebca5349c917d7d85c8f44f8943c234ead09e073a89ca2a4f06a8c6`；来源指纹：`b313d82f90768a88aceb589172a24ea72654e50c60a47161bc47ac461b76f1e1`。
+- 处置：`ACCEPTED_AS_DEFINITION`；机器记录指纹：`874f08bbfebca5349c917d7d85c8f44f8943c234ead09e073a89ca2a4f06a8c6`；来源指纹：`47dc3d6f52fd465427baf897c82272c92e3121ef2684f8f4a8b1f2007a59c6ca`。
 - 来源：[ITERATION.md](../../../ITERATION.md)；机器权威：[claim registry](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)；生成方法：[之元写作法 0.5.0](../../../docs/publication/zhiyuan-writing-method.md)。
 
 > 这页是可读解释，不是第二份断言数据库。任何状态变化都必须先发生在 canonical registry，并通过生成器重新投影。

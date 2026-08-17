@@ -9,7 +9,8 @@
 `data/architecture/current-system-identity.json`、`data/architecture/current-facts.json`
 和 `docs/architecture/current-facts.md`：点火是 OS / orchestration-governance
 layer 与 driver，OpenClaw、Hermes、Codex 是可替换 external executors；本地层
-仍是 `REFERENCE_EXECUTOR / CONFORMANCE_EXECUTOR / FALLBACK_MINIMAL`。
+仍是 `REFERENCE_EXECUTOR / CONFORMANCE_EXECUTOR / FALLBACK_MINIMAL`；这些是
+replaceable executors，而不是 OS authority。
 
 ## 读取顺序
 

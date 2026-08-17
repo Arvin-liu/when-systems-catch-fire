@@ -238,6 +238,6 @@
       "External executors do not own Owner, truth, permission or vendor-runtime authority."
     ]
   },
-  "subtitle": "唯一完整总架构图；0.8.0 Current 派生投影，0.7.0 为 Historical。主干是 Owner/Value Charter → Ignition OS → Pack/Federation routing → 外部可替换执行器 → Actions/Receipts → Validation/Feedback → OS；Kernel ≠ Knowledge，Runtime ≠ Research，Pack 不拥有通用 authority；语言—思维横穿 L0—L6，不增加 L7。连线是仓库关系、同步义务或候选反馈，不自动表示现实因果。",
+  "subtitle": "唯一完整总架构图；0.8.0 Current 派生投影，0.7.0 为 Historical。主干是 Owner/Value Charter → Ignition OS driver → Pack/Federation routing → 外部可替换执行器（external replaceable executors；external executors）→ Actions/Receipts → Validation/Feedback → OS；Reference / Conformance / Fallback 是本地冻结边界；Kernel ≠ Knowledge，Runtime ≠ Research，Pack 不拥有通用 authority；语言—思维横穿 L0—L6，不增加 L7。连线是仓库关系、同步义务或候选反馈，不自动表示现实因果。",
   "title": "点火唯一完整可点击总架构图"
 }

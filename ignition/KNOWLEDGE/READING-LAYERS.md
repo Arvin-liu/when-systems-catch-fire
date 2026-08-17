@@ -912,13 +912,6 @@
 - 5 分钟：主题：084 Architecture Truth Freeze Readiness Assessment；本文件评估点火架构真值层是否达到冻结候选状态。；状态: MAXADJUDICATIONCOMPLETEARCHITECTURETRUTHFREEZECANDIDATE；含义: 084 完成了 353 个最高风险对象的语义裁决和证明义务定界，形成可作为项目现行真值覆盖层的决策 registry。这不等于完成 353 个数学证明、物理实验或经验验证。；✅ 353/353 均有完整 PRIMARY、ADVERSARIAL、RECONCILED 记录；✅ 所有 source anchor 可重放
 - 完整阅读：[reports/foundation-architecture/084-architecture-truth-freeze-readiness.md](../reports/foundation-architecture/084-architecture-truth-freeze-readiness.md)
 
-<a id="reading-hr-641da70bef452b2a"></a>
-## Current Facts（机器推导事实）
-`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `ARCHITECTURE_GOVERNANCE`
-- 1 分钟：Source authority: the JSON projection records SHA-256 fingerprints for the canonical registries, manifests, topology, pack declarations, federation inventory and generator/schema inputs. Human prose may explain these facts but is not a second numeric authority. Claim ceiling: Deterministic reposi… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：Current Facts（机器推导事实）；Identity epoch: agent-platform-federation-r1；current iteration boundary: 122。；Architecture registry: 82 components；70 visible map nodes；12 hidden represented components；107 typed relations；77 visible typed edges。；Map/method: map 0.8.0 Current（historical 0.7.0）；layout 1.6.0；semantic trunk semantic-trunk-r1 with 6 bounded route stages；method 1.4.0 Current。；Packs: 4 packs；10 declared capability routes。；Federation: 3 adapter inventory entries；live ceiling NOTRUNLIVEEXTERNALINVOCATION；local boundary REFERENCEEXECUTOR / CONFORMANCEEXECUTOR / FALLBACKMINIMAL。
-- 完整阅读：[docs/architecture/current-facts.md](../docs/architecture/current-facts.md)
-
 <a id="reading-hr-64c5f9f425889534"></a>
 ## Strong claim gate audit
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`

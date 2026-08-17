@@ -108,3 +108,40 @@ full-suite 顺序下 `current-facts` 的一次 stale 观察。后者在 isolated
 机器证据见 `data/operations/iterations/123/full-regression-r1.json`、其 schema、current-state
 receipt 与本目录 JSONL ledger。正式 `main` 在 Step 12 前保持
 `d60ec8687fb1cc6b972e831a8f0dcd348ba0e83e`。
+
+## Step 12 — FINAL CANDIDATE / PROJECTION REPAIR
+
+Fresh-clone replay exposed a real generated-projection cycle: `current-facts.json`
+was being rediscovered as a non-function claim source, while Knowledge Experience
+and the current-facts source fingerprints referred back to generated outputs. The
+repair adds an explicit non-authoritative path boundary for
+`data/architecture/current-facts.json` and `docs/architecture/current-facts.md`,
+and excludes the generated Current Facts result row from Knowledge indexing.
+The paths remain accounted for by source-discovery and Human Results; historical
+claim records are not rewritten as if their prior classification had been
+externally adjudicated.
+
+After the repair, the deterministic snapshot is function `5,604`, non-function
+`15,977`, Human Results `333`, Knowledge `403 cards / 332 layers / 21,913 search /
+851 aliases`, Fire Seeds `64` with `392` source-census records, and
+Self-Correction `465 deltas / 10 rules`. The map remains `70` visible nodes and
+`77` typed edges on `1800×2470`, with blank reduction `0.8741007194`, height
+reduction `0.3806419258`, crossing proxy `160`, max internal gap `28`, and no
+bottom-only isolated groups.
+
+Post-repair `current-state-sync`, current-facts two-generation identity, Knowledge
+audit/determinism, Fire Seeds, compact-map generator/geometry and the relevant
+current-state/Fire Seeds replay passed. The current-state receipt now records
+`ARCHITECTURE_CHANGED` and `surface_sync_complete=true`; the formal main baseline
+remains `d60ec8687fb1cc6b972e831a8f0dcd348ba0e83e` until the one authorized
+fast-forward. The Step 11 full-suite result remains
+`PASS_WITH_CLASSIFIED_RESIDUALS` (`750` tests, `4` failures, `0` errors, `1`
+skipped); the historical propagation residual, Phase-E cwd warnings and the
+order-dependent full-suite observation remain explicit and unchanged.
+
+No Step 09 external invocation was repeated. OpenClaw/Hermes/Codex remain
+`NOT_RUN`/`SKIPPED` at the live-invocation ceiling, with no install, auth/config
+mutation, secret read, formal-repository live target or vendor telemetry retained.
+Exact Step 12 commit/remote, final fast-forward, fresh-clone equality and the
+independent 1111 receipt are bound after this candidate commit; see
+`data/operations/iterations/123/step12-closure-r1.json`.

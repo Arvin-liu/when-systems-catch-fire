@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [影响组件：evidence_regime（PARTIAL，保持）](../../../data/external-research/089-external-source-atlas.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-b89bcd9a297a6078 / 影响组件：evidence_regime（PARTIAL，保持）
+  - 来源：`data/external-research/089-external-source-atlas.md`
+  - 依赖：—；被引用：—
 - [待 GPT 指令决定：是否合并 version/meta-protocols-20260709 分支到 main。](../../../outputs/audit/meta-protocol-version-iteration-audit-20260709.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-a0ee419d895e4421 / 待 GPT 指令决定：是否合并 version/meta-protocols-20260709 分支到 main。

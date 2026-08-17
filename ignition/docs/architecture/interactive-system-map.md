@@ -28,7 +28,7 @@ SVG 现在位于 `docs/generated/ignition-system-architecture.svg`，通过 READ
 - 节点身份、canonical target 与生命周期来自 component registry。
 - 边的 relation class/domain 来自 propagation topology。
 - 分组、几何、颜色和顺序来自 layout overlay。
-- 当前语义主干是一个有界阅读路径：`Owner / Value Charter → Ignition OS control / governance spine → Pack / Federation routing → External replaceable executors → Actions / observations / receipts → Validation / provenance / state update / feedback → OS`。它是导航阅读顺序，不新增因果边，也不证明完整性。
+- 当前语义主干是一个有界阅读路径：`Owner / Value Charter → Ignition OS control / governance spine → Pack / Federation routing → External replaceable executors → Actions / observations / receipts → Validation / provenance / state update / feedback → OS`。这里的 external executors 是 replaceable executors，不是 OS authority；Reference / Conformance / Fallback 是本地冻结边界；它是导航阅读顺序，不新增因果边，也不证明完整性。
 - `os_spine` 位于图的中央列；`federation` 明确标为外部、可替换手脚；`domain_packs` 单列表示 Domain/Skill Pack，不把 Knowledge 重新画成系统本体。
 - cluster 只表达导航分组，不增加架构层。
 - `language_thought` 是横穿 L0—L6 的控制平面 overlay；`layers` 组仍严格只有 L0—L6。它与各层的连线表示框架审计和同步义务，不表示语言决定现实因果。

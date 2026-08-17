@@ -3,7 +3,7 @@
     "function_human": 24,
     "function_machine": 5604,
     "nonfunction_human": 24,
-    "nonfunction_machine": 15992
+    "nonfunction_machine": 15977
   },
   "entries": [
     {
@@ -267,7 +267,7 @@
       "machine_source": "data/foundation/function-assets/census.jsonl",
       "selection_reason": "materiality policy: representative, boundary-sensitive, or disposition-sensitive record",
       "source_path": "ARCHITECTURE.md",
-      "source_sha256": "fcd8d4a32c32506d710f32c514531829d8b4a9a3a42d678087fd78a3fe804907",
+      "source_sha256": "d1b04b34b0b191c1f1473c93634c93be562282983d2afdd5f0f870936dee3ce1",
       "writing_method": "之元写作法 0.5.0"
     },
     {
@@ -459,6 +459,17 @@
     },
     {
       "asset_kind": "NONFUNCTION_ASSET",
+      "human_path": "docs/human/nonfunction-assets/entries/nfc-0331afe8d84f2538.md",
+      "machine_id": "NFC-0331afe8d84f2538",
+      "machine_record_sha256": "70d78335e8f25481a054d5da29b37d7c074979e57ed721a771883901f806f273",
+      "machine_source": "data/foundation/nonfunction-claims/claim-registry.jsonl",
+      "selection_reason": "materiality policy: representative, boundary-sensitive, or disposition-sensitive record",
+      "source_path": "AI-START-HERE.md",
+      "source_sha256": "72f268a2efbfb3b30a14a2c83ff7eff699f92c43e78036fbcaeadc91f3a4821c",
+      "writing_method": "之元写作法 0.5.0"
+    },
+    {
+      "asset_kind": "NONFUNCTION_ASSET",
       "human_path": "docs/human/nonfunction-assets/entries/nfc-037598111338be3f.md",
       "machine_id": "NFC-037598111338be3f",
       "machine_record_sha256": "f9d630eef75a3f7ec626888b08a851aad8876674a4323f2d20d0065d2a800b87",
@@ -477,17 +488,6 @@
       "selection_reason": "materiality policy: representative, boundary-sensitive, or disposition-sensitive record",
       "source_path": "ITERATION.md",
       "source_sha256": "47dc3d6f52fd465427baf897c82272c92e3121ef2684f8f4a8b1f2007a59c6ca",
-      "writing_method": "之元写作法 0.5.0"
-    },
-    {
-      "asset_kind": "NONFUNCTION_ASSET",
-      "human_path": "docs/human/nonfunction-assets/entries/nfc-03b6163800ff51cc.md",
-      "machine_id": "NFC-03b6163800ff51cc",
-      "machine_record_sha256": "4f013d723528d9cc0e84036da0f668b2d122332f14f21c2db68e4bcc46d84533",
-      "machine_source": "data/foundation/nonfunction-claims/claim-registry.jsonl",
-      "selection_reason": "materiality policy: representative, boundary-sensitive, or disposition-sensitive record",
-      "source_path": "docs/foundation/README.md",
-      "source_sha256": "e87113a489131fc5cd88322a5188ea4fb6360a8dc8f1720752703f662f09fd1b",
       "writing_method": "之元写作法 0.5.0"
     },
     {

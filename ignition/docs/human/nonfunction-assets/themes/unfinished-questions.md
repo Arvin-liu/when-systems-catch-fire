@@ -22,6 +22,6 @@
 
 它是一条需要同时阅读来源、处置和 claim ceiling 的说法登记。 [打开人话说明](../entries/nfc-026f0f47b5a58ed4.md)
 
-## 函数、模型、定理、公式、律或判定器还必须读取：
+## 和 `docs/architecture/current-facts.md`：点火是 OS / orchestration-governance
 
-它是一条需要同时阅读来源、处置和 claim ceiling 的说法登记。 [打开人话说明](../entries/nfc-03b6163800ff51cc.md)
+它是一条需要同时阅读来源、处置和 claim ceiling 的说法登记。 [打开人话说明](../entries/nfc-0331afe8d84f2538.md)
