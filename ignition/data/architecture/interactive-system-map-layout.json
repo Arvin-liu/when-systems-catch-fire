@@ -1,5 +1,5 @@
 {
-  "current_map_version": "0.8.0",
+  "current_map_version": "0.9.0",
   "geometry": {
     "columns": 3,
     "group_gap": 28,
@@ -96,7 +96,7 @@
     {
       "color": "#1d4ed8",
       "column": 1,
-      "description": "Owner/Human、Profile、Kernel、Runtime 与 Memory 的点火 OS 控制/治理脊柱；不拥有供应商 runtime",
+      "description": "Owner/Human、Profile、Kernel、Runtime、R2 Control Plane 与 Memory 的点火 OS 控制/治理脊柱；不拥有供应商 runtime",
       "id": "os_spine",
       "label": "Ignition OS / 控制脊柱",
       "row": 0
@@ -118,8 +118,8 @@
       "row": 1
     }
   ],
-  "historical_map_version": "0.7.0",
-  "layout_version": "1.6.0",
+  "historical_map_version": "0.8.0",
+  "layout_version": "1.7.0",
   "node_order": {
     "boundaries": [
       "no_l7",
@@ -192,7 +192,16 @@
       "agent_kernel_r0",
       "agent_runtime_r0",
       "agent_profile_r0",
-      "runtime_memory_loop"
+      "runtime_memory_loop",
+      "event_ledger_r1",
+      "policy_compiler_r1",
+      "resource_arbitration_r1",
+      "bounded_scheduler_r1",
+      "executor_health_lease_r1",
+      "queue_control_r1",
+      "durable_dispatch_r1",
+      "concurrent_operational_memory_r2",
+      "driver_console_r1"
     ],
     "models": [
       "mcf",
@@ -225,7 +234,7 @@
     "label": "Current semantic trunk：OS 在中间，外部执行器是可替换手脚",
     "route": [
       {"id":"authority","label":"Owner / Value Charter","node_ids":["owner_human","charter"],"relation_ids":["map_owner_human_agent_profile","map_charter_agent_profile"]},
-      {"id":"os_control","label":"Ignition OS control / governance spine","node_ids":["agentization_boundary_r0","agent_profile_r0","agent_kernel_r0","agent_runtime_r0","runtime_memory_loop"],"relation_ids":["map_profile_agent_kernel","map_kernel_agent_runtime","map_runtime_memory"]},
+      {"id":"os_control","label":"Ignition OS control / governance spine","node_ids":["agentization_boundary_r0","agent_profile_r0","agent_kernel_r0","agent_runtime_r0","event_ledger_r1","policy_compiler_r1","resource_arbitration_r1","bounded_scheduler_r1","executor_health_lease_r1","queue_control_r1","durable_dispatch_r1","concurrent_operational_memory_r2","driver_console_r1","runtime_memory_loop"],"relation_ids":["map_profile_agent_kernel","map_kernel_agent_runtime","map_runtime_event_ledger","map_event_ledger_scheduler","map_scheduler_health","map_scheduler_queue","map_scheduler_dispatch","map_runtime_concurrent_memory","map_memory_console","map_runtime_memory"]},
       {"id":"pack_federation_routing","label":"Pack / Federation routing","node_ids":["domain_pack_contract","external_agent_federation"],"relation_ids":["map_runtime_pack_contract","map_runtime_external_agent_federation"]},
       {"id":"external_executors","label":"External replaceable executors","node_ids":["openclaw_adapter","hermes_adapter","codex_adapter","future_executors"],"relation_ids":["map_federation_openclaw","map_federation_hermes","map_federation_codex","map_federation_future_executors"]},
       {"id":"actions_receipts","label":"Actions / observations / receipts","node_ids":["reference_executor","function_os","sync"],"relation_ids":["map_federation_reference_executor","map_function_q12","map_iteration_sync"]},
@@ -238,6 +247,6 @@
       "External executors do not own Owner, truth, permission or vendor-runtime authority."
     ]
   },
-  "subtitle": "唯一完整总架构图；0.8.0 Current 派生投影，0.7.0 为 Historical。主干是 Owner/Value Charter → Ignition OS driver → Pack/Federation routing → 外部可替换执行器（external replaceable executors；external executors）→ Actions/Receipts → Validation/Feedback → OS；Reference / Conformance / Fallback 是本地冻结边界；Kernel ≠ Knowledge，Runtime ≠ Research，Pack 不拥有通用 authority；语言—思维横穿 L0—L6，不增加 L7。连线是仓库关系、同步义务或候选反馈，不自动表示现实因果。",
+  "subtitle": "唯一完整总架构图；0.9.0 Current 派生投影，0.8.0 为 Historical。主干是 Owner/Value Charter → Ignition OS driver / R2 Control Plane → Pack/Federation routing → 外部可替换执行器（external replaceable executors；external executors）→ Actions/Receipts → Validation/Feedback → OS；Event Ledger、monotonic policy、resource arbitration、bounded scheduler、health lease、queue/backpressure、dispatch/reconciliation、concurrent operational memory 与 Driver Console 都是有界控制记录；Reference / Conformance / Fallback 是本地冻结边界；Kernel ≠ Knowledge，Runtime ≠ Research，Pack 不拥有通用 authority；语言—思维横穿 L0—L6，不增加 L7。连线是仓库关系、同步义务或候选反馈，不自动表示现实因果。",
   "title": "点火唯一完整可点击总架构图"
 }

@@ -6,26 +6,26 @@
   ],
   "bottom_only_isolated_groups": [],
   "canvas": {
-    "height": 2470.0,
+    "height": 2780.0,
     "preserve_aspect_ratio": "xMidYMin meet",
-    "view_box": "0 0 1800 2470",
+    "view_box": "0 0 1800 2780",
     "width": 1800.0
   },
   "checks": {
     "bottom_only_isolated_groups": [],
-    "clickable_target_count": 70,
+    "clickable_target_count": 79,
     "clickable_target_coverage": true,
-    "expected_node_count": 70,
+    "expected_node_count": 79,
     "group_box_overlap_count": 0,
     "label_clip_count": 0,
     "node_box_overlap_count": 0,
-    "node_geometry_count": 70,
+    "node_geometry_count": 79,
     "nodes_outside_group_count": 0,
     "solid_background_rect_count": 1
   },
-  "clickable_target_count": 70,
+  "clickable_target_count": 79,
   "clickable_target_coverage": true,
-  "edge_crossing_proxy": 160,
+  "edge_crossing_proxy": 187,
   "edges": [
     {
       "id": "map_analysis_increment",
@@ -411,9 +411,44 @@
       "id": "map_kernel_no_truth_upgrade",
       "source": "agent_kernel_r0",
       "target": "no_truth_upgrade"
+    },
+    {
+      "id": "map_runtime_event_ledger",
+      "source": "agent_runtime_r0",
+      "target": "event_ledger_r1"
+    },
+    {
+      "id": "map_event_ledger_scheduler",
+      "source": "event_ledger_r1",
+      "target": "bounded_scheduler_r1"
+    },
+    {
+      "id": "map_scheduler_health",
+      "source": "bounded_scheduler_r1",
+      "target": "executor_health_lease_r1"
+    },
+    {
+      "id": "map_scheduler_queue",
+      "source": "bounded_scheduler_r1",
+      "target": "queue_control_r1"
+    },
+    {
+      "id": "map_scheduler_dispatch",
+      "source": "bounded_scheduler_r1",
+      "target": "durable_dispatch_r1"
+    },
+    {
+      "id": "map_runtime_concurrent_memory",
+      "source": "agent_runtime_r0",
+      "target": "concurrent_operational_memory_r2"
+    },
+    {
+      "id": "map_memory_console",
+      "source": "concurrent_operational_memory_r2",
+      "target": "driver_console_r1"
     }
   ],
-  "expected_node_count": 70,
+  "expected_node_count": 79,
   "failures": [],
   "gap_by_column": {
     "0": {
@@ -511,7 +546,7 @@
       "node_count": 4,
       "width": 560.0,
       "x": 620.0,
-      "y": 1152.0
+      "y": 1746.0
     },
     {
       "column": 0,
@@ -551,7 +586,7 @@
       "node_count": 7,
       "width": 560.0,
       "x": 620.0,
-      "y": 1568.0
+      "y": 2162.0
     },
     {
       "column": 0,
@@ -571,14 +606,14 @@
       "node_count": 5,
       "width": 560.0,
       "x": 620.0,
-      "y": 670.0
+      "y": 1264.0
     },
     {
       "column": 1,
       "degree": 6,
-      "height": 520.0,
+      "height": 1114.0,
       "id": "os_spine",
-      "node_count": 6,
+      "node_count": 15,
       "width": 560.0,
       "x": 620.0,
       "y": 122.0
@@ -596,20 +631,20 @@
   ],
   "internal_blank_area": 156800.0,
   "label_clip_count": 0,
-  "layout_version": "1.6.0",
-  "map_version": "0.8.0",
+  "layout_version": "1.7.0",
+  "map_version": "0.9.0",
   "max_internal_gap": 28.0,
   "metrics": {
     "baseline_canvas_height": 3988.0,
     "baseline_edge_crossing_proxy": 173.0,
     "baseline_internal_blank_area": 1245440.0,
     "blank_area_reduction_vs_baseline": 0.8741007194,
-    "canvas_height": 2470.0,
-    "canvas_height_reduction_vs_baseline": 0.3806419258,
+    "canvas_height": 2780.0,
+    "canvas_height_reduction_vs_baseline": 0.3029087262,
     "canvas_width": 1800.0,
-    "edge_crossing_proxy": 160,
-    "edge_crossing_ratio_vs_baseline": 0.9248554913,
-    "group_occupancy_ratio": 0.784957265,
+    "edge_crossing_proxy": 187,
+    "edge_crossing_ratio_vs_baseline": 1.0809248555,
+    "group_occupancy_ratio": 0.7639008793,
     "internal_blank_area": 156800.0,
     "max_internal_gap": 28.0,
     "mobile_viewports_fit": 2
@@ -687,12 +722,20 @@
       "y": 346.0
     },
     {
+      "group": "os_spine",
+      "height": 54.0,
+      "id": "bounded_scheduler_r1",
+      "width": 516.0,
+      "x": 642.0,
+      "y": 808.0
+    },
+    {
       "group": "feedback",
       "height": 54.0,
       "id": "candidate_return",
       "width": 516.0,
       "x": 642.0,
-      "y": 1376.0
+      "y": 1970.0
     },
     {
       "group": "writing",
@@ -725,6 +768,14 @@
       "width": 516.0,
       "x": 1230.0,
       "y": 1640.0
+    },
+    {
+      "group": "os_spine",
+      "height": 54.0,
+      "id": "concurrent_operational_memory_r2",
+      "width": 516.0,
+      "x": 642.0,
+      "y": 1072.0
     },
     {
       "group": "governance",
@@ -799,12 +850,44 @@
       "y": 1528.0
     },
     {
+      "group": "os_spine",
+      "height": 54.0,
+      "id": "driver_console_r1",
+      "width": 516.0,
+      "x": 642.0,
+      "y": 1138.0
+    },
+    {
+      "group": "os_spine",
+      "height": 54.0,
+      "id": "durable_dispatch_r1",
+      "width": 516.0,
+      "x": 642.0,
+      "y": 1006.0
+    },
+    {
       "group": "governance",
       "height": 54.0,
       "id": "epistemic_governance_kernel",
       "width": 516.0,
       "x": 1230.0,
       "y": 630.0
+    },
+    {
+      "group": "os_spine",
+      "height": 54.0,
+      "id": "event_ledger_r1",
+      "width": 516.0,
+      "x": 642.0,
+      "y": 610.0
+    },
+    {
+      "group": "os_spine",
+      "height": 54.0,
+      "id": "executor_health_lease_r1",
+      "width": 516.0,
+      "x": 642.0,
+      "y": 874.0
     },
     {
       "group": "federation",
@@ -828,7 +911,7 @@
       "id": "feedback_routes",
       "width": 516.0,
       "x": 642.0,
-      "y": 1442.0
+      "y": 2036.0
     },
     {
       "group": "core",
@@ -884,7 +967,7 @@
       "id": "iteration",
       "width": 516.0,
       "x": 642.0,
-      "y": 960.0
+      "y": 1554.0
     },
     {
       "group": "domain_packs",
@@ -900,7 +983,7 @@
       "id": "l0",
       "width": 516.0,
       "x": 642.0,
-      "y": 1660.0
+      "y": 2254.0
     },
     {
       "group": "layers",
@@ -908,7 +991,7 @@
       "id": "l1",
       "width": 516.0,
       "x": 642.0,
-      "y": 1726.0
+      "y": 2320.0
     },
     {
       "group": "layers",
@@ -916,7 +999,7 @@
       "id": "l2",
       "width": 516.0,
       "x": 642.0,
-      "y": 1792.0
+      "y": 2386.0
     },
     {
       "group": "layers",
@@ -924,7 +1007,7 @@
       "id": "l3",
       "width": 516.0,
       "x": 642.0,
-      "y": 1858.0
+      "y": 2452.0
     },
     {
       "group": "layers",
@@ -932,7 +1015,7 @@
       "id": "l4",
       "width": 516.0,
       "x": 642.0,
-      "y": 1924.0
+      "y": 2518.0
     },
     {
       "group": "layers",
@@ -940,7 +1023,7 @@
       "id": "l5",
       "width": 516.0,
       "x": 642.0,
-      "y": 1990.0
+      "y": 2584.0
     },
     {
       "group": "layers",
@@ -948,7 +1031,7 @@
       "id": "l6",
       "width": 516.0,
       "x": 642.0,
-      "y": 2056.0
+      "y": 2650.0
     },
     {
       "group": "language_thought",
@@ -1031,12 +1114,20 @@
       "y": 1112.0
     },
     {
+      "group": "os_spine",
+      "height": 54.0,
+      "id": "policy_compiler_r1",
+      "width": 516.0,
+      "x": 642.0,
+      "y": 676.0
+    },
+    {
       "group": "feedback",
       "height": 54.0,
       "id": "provenance_capture",
       "width": 516.0,
       "x": 642.0,
-      "y": 1310.0
+      "y": 1904.0
     },
     {
       "group": "models",
@@ -1052,7 +1143,7 @@
       "id": "public_response",
       "width": 516.0,
       "x": 642.0,
-      "y": 1244.0
+      "y": 1838.0
     },
     {
       "group": "operations",
@@ -1060,7 +1151,7 @@
       "id": "q12",
       "width": 516.0,
       "x": 642.0,
-      "y": 762.0
+      "y": 1356.0
     },
     {
       "group": "operations",
@@ -1068,7 +1159,7 @@
       "id": "q13",
       "width": 516.0,
       "x": 642.0,
-      "y": 828.0
+      "y": 1422.0
     },
     {
       "group": "operations",
@@ -1076,7 +1167,15 @@
       "id": "q14",
       "width": 516.0,
       "x": 642.0,
-      "y": 894.0
+      "y": 1488.0
+    },
+    {
+      "group": "os_spine",
+      "height": 54.0,
+      "id": "queue_control_r1",
+      "width": 516.0,
+      "x": 642.0,
+      "y": 940.0
     },
     {
       "group": "front_doors",
@@ -1101,6 +1200,14 @@
       "width": 516.0,
       "x": 54.0,
       "y": 1660.0
+    },
+    {
+      "group": "os_spine",
+      "height": 54.0,
+      "id": "resource_arbitration_r1",
+      "width": 516.0,
+      "x": 642.0,
+      "y": 742.0
     },
     {
       "group": "federation",
@@ -1164,7 +1271,7 @@
       "id": "sync",
       "width": 516.0,
       "x": 642.0,
-      "y": 1026.0
+      "y": 1620.0
     },
     {
       "group": "front_doors",

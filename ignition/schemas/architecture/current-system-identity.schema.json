@@ -46,11 +46,12 @@
     "identity": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["system_role", "driver_role", "internal_control_spine", "external_executor_role", "knowledge_role", "reference_executor_role", "identity_boundary", "authority_ceiling"],
+      "required": ["system_role", "driver_role", "internal_control_spine", "control_plane_role", "external_executor_role", "knowledge_role", "reference_executor_role", "identity_boundary", "authority_ceiling"],
       "properties": {
         "system_role": {"$ref": "#/$defs/nonblank"},
         "driver_role": {"$ref": "#/$defs/nonblank"},
         "internal_control_spine": {"$ref": "#/$defs/stringArray"},
+        "control_plane_role": {"$ref": "#/$defs/nonblank"},
         "external_executor_role": {"$ref": "#/$defs/nonblank"},
         "knowledge_role": {"$ref": "#/$defs/nonblank"},
         "reference_executor_role": {"$ref": "#/$defs/nonblank"},

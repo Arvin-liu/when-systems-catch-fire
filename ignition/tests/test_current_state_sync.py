@@ -63,6 +63,11 @@ class CurrentStateSyncTests(unittest.TestCase):
         self.assertEqual(facts_generator.render_json(first), facts_generator.render_json(second))
         self.assertEqual(facts_generator.render_markdown(first), facts_generator.render_markdown(second))
 
+    def test_current_facts_source_fingerprints_have_canonical_order(self) -> None:
+        paths = [row["path"] for row in facts_generator.build_projection(self.contract)["source_fingerprints"]]
+        self.assertEqual(paths, sorted(paths))
+        self.assertEqual(len(paths), len(set(paths)))
+
 
 if __name__ == "__main__":
     unittest.main()

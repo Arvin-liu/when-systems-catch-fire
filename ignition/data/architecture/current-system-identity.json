@@ -1,8 +1,8 @@
 {
   "schema_version": "current-system-identity-r1",
   "contract_id": "CURRENT_STATE_SYNC_INVARIANT",
-  "identity_epoch": "agent-platform-federation-r1",
-  "current_iteration_boundary": 122,
+  "identity_epoch": "os-control-plane-r2",
+  "current_iteration_boundary": 124,
   "current_state_status": "CURRENT_WITH_OPEN_OBLIGATIONS",
   "epistemically_accepted": 0,
   "current_architecture_identity": {
@@ -14,9 +14,19 @@
       "Supervisor",
       "Operational Memory",
       "Agent Profile",
+      "Event Ledger",
+      "Monotonic Policy Compiler",
+      "Resource Arbitration",
+      "Bounded Concurrent Scheduler",
+      "Executor Health Leases",
+      "Queue and Backpressure",
+      "Dispatch and Reconciliation",
+      "Concurrent Operational Memory",
+      "Driver Console",
       "Domain Pack Registry",
       "External Agent Federation"
     ],
+    "control_plane_role": "R2 bounded coordination fabric for events, policy narrowing, resource conflict, concurrent scheduling, executor health, queue admission, dispatch reconciliation, operational memory and driver-readable recovery.",
     "external_executor_role": "replaceable executors",
     "knowledge_role": "Knowledge is the first large Domain Pack, not the whole system.",
     "reference_executor_role": "REFERENCE_EXECUTOR / CONFORMANCE_EXECUTOR / FALLBACK_MINIMAL",
@@ -164,6 +174,7 @@
     "External executors do not own Owner, truth, M/E, Pack, Knowledge or permission authority.",
     "Reference Executor remains reference/conformance/fallback only.",
     "Knowledge Domain Pack validators do not grant generic runtime authority.",
+    "Event, policy, resource, scheduler, health, queue, dispatch, memory and console records remain bounded operational projections; none grants truth, Owner, executor or epistemic authority.",
     "System map and propagation are repository navigation/dependency projections, not reality causality or completeness proof.",
     "CURRENT_WITH_OPEN_OBLIGATIONS remains separate from EPISTEMICALLY_ACCEPTED=0."
   ],
@@ -199,7 +210,7 @@
     "replaceable_executors": {"all_of_any_group": [["replaceable executor", "replaceable executors", "可替换执行器", "可替换 adapter"], ["external Agent", "外部 Agent", "external executor", "外部执行器"]]},
     "knowledge_pack": {"all_of_any_group": [["Knowledge"], ["Domain Pack", "DomainPack", "领域 Pack"]]},
     "reference_freeze": {"all_of_any_group": [["Reference"], ["Conformance"], ["Fallback"]]},
-    "map_version": {"all_of_any_group": [["0.8.0"]]},
+    "map_version": {"all_of_any_group": [["0.9.0"]]},
     "state_delta": {"all_of_any_group": [["CURRENT_WITH_OPEN_OBLIGATIONS"], ["EPISTEMICALLY_ACCEPTED=0"]]},
     "current_facts": {"all_of_any_group": [["current-facts", "derived facts", "可推导事实", "机器事实"]]}
   }

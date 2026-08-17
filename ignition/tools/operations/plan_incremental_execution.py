@@ -11,14 +11,47 @@ META={str(x) for x in [REGISTRY.relative_to(ROOT),TOPOLOGY.relative_to(ROOT),PRO
 def digest(p): return hashlib.sha256(p.read_bytes()).hexdigest() if p.exists() and p.is_file() else None
 
 
-def _git_show(era_ref, relpath):
-    """Raw text of a repository file at a git revision; fail closed on any error."""
-    try:
-        return subprocess.check_output(
-            ["git", "show", f"{era_ref}:{relpath}"], cwd=ROOT, text=True
+def _git_tree_candidates(relpath):
+    """Return current-worktree and historical logical spellings for a path.
+
+    The application lives below ``<worktree>/ignition`` today, while some
+    sealed-era registries carried paths relative to the application directory.
+    Resolve both spellings from the actual Git top-level and capture failed
+    probes so nested-CWD path warnings never leak into a validator's output.
+    """
+    logical = Path(str(relpath).replace("\\", "/"))
+    if ROOT.name == "ignition" and logical.parts[:1] == ("ignition",):
+        logical = Path(*logical.parts[1:])
+    logical_path = logical.as_posix()
+    git_root = Path(subprocess.check_output(
+        ["git", "rev-parse", "--show-toplevel"], cwd=ROOT, text=True
+    ).strip())
+    current_path = (ROOT / logical).resolve().relative_to(git_root).as_posix()
+    candidates = [current_path]
+    if logical_path not in candidates:
+        candidates.append(logical_path)
+    return candidates
+
+
+def git_show_text(era_ref, relpath):
+    """Read a repository file at a git revision without CWD path noise."""
+    failures = []
+    for candidate in _git_tree_candidates(relpath):
+        completed = subprocess.run(
+            ["git", "show", f"{era_ref}:{candidate}"],
+            cwd=ROOT,
+            capture_output=True,
+            text=True,
         )
-    except (subprocess.CalledProcessError, FileNotFoundError, OSError) as exc:
-        raise ValueError(f"era input unavailable for {relpath}@{era_ref}: {exc}")
+        if completed.returncode == 0:
+            return completed.stdout
+        failures.append(f"{candidate}: {completed.stderr.strip()}")
+    raise ValueError(f"era input unavailable for {relpath}@{era_ref}: {'; '.join(failures)}")
+
+
+def _git_show(era_ref, relpath):
+    """Compatibility wrapper for callers that need raw historical text."""
+    return git_show_text(era_ref, relpath)
 
 
 def git_json(revision, relpath):

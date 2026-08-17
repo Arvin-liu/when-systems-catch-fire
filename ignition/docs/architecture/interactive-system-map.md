@@ -1,6 +1,6 @@
 # 点火仓库原生系统图
 
-状态：`0.8.0 Current registry-derived navigation projection`；`0.7.0`、`0.6.0`、`0.5.0`、`0.4.0` 与更早版本为 Historical。
+状态：`0.9.0 Current registry-derived navigation projection`；`0.8.0`、`0.7.0`、`0.6.0`、`0.5.0`、`0.4.0` 与更早版本为 Historical。
 
 ## 打开与生成
 
@@ -28,7 +28,7 @@ SVG 现在位于 `docs/generated/ignition-system-architecture.svg`，通过 READ
 - 节点身份、canonical target 与生命周期来自 component registry。
 - 边的 relation class/domain 来自 propagation topology。
 - 分组、几何、颜色和顺序来自 layout overlay。
-- 当前语义主干是一个有界阅读路径：`Owner / Value Charter → Ignition OS control / governance spine → Pack / Federation routing → External replaceable executors → Actions / observations / receipts → Validation / provenance / state update / feedback → OS`。这里的 external executors 是 replaceable executors，不是 OS authority；Reference / Conformance / Fallback 是本地冻结边界；它是导航阅读顺序，不新增因果边，也不证明完整性。
+- 当前语义主干是一个有界阅读路径：`Owner / Value Charter → Ignition OS control / governance spine → Pack / Federation routing → External replaceable executors → Actions / observations / receipts → Validation / provenance / state update / feedback → OS`。中央 OS control spine 现在包含 Event Ledger、monotonic policy、resource arbitration、bounded scheduler、health lease、queue/backpressure、durable dispatch/reconciliation、concurrent operational memory 和 Driver Console。这里的 external executors 是 replaceable executors，不是 OS authority；Reference / Conformance / Fallback 是本地冻结边界；它是导航阅读顺序，不新增因果边，也不证明完整性。
 - `os_spine` 位于图的中央列；`federation` 明确标为外部、可替换手脚；`domain_packs` 单列表示 Domain/Skill Pack，不把 Knowledge 重新画成系统本体。
 - cluster 只表达导航分组，不增加架构层。
 - `language_thought` 是横穿 L0—L6 的控制平面 overlay；`layers` 组仍严格只有 L0—L6。它与各层的连线表示框架审计和同步义务，不表示语言决定现实因果。
@@ -39,17 +39,17 @@ SVG 现在位于 `docs/generated/ignition-system-architecture.svg`，通过 READ
 
 ## Agent Platform R2 在图中的位置
 
-R2 把 Generic Kernel、Agent Runtime、Profile、Reasoner Gateway、Supervisor 与
-Operational Memory 放入中央 `os_spine`；External Agent Federation 与 adapter
+R2 把 Generic Kernel、Agent Runtime、Profile、Reasoner Gateway、Supervisor、
+OS Control Plane 与 Operational Memory 放入中央 `os_spine`；External Agent Federation 与 adapter
 位于 `federation`；四个 Domain Pack 位于 `domain_packs`。这三个当前 overlay
 共同表达 OS/driver、外部可替换 executors 与可加载 Pack 的边界，不新增 L7，也不
 替代 L0—L6、Foundation、claim/evidence registry 或 Human Surface。Knowledge、
 REOS LIGHT Research、之元 Writing 和 Maintenance 仍由各自 manifest 声明能力、
 对象类型、validator 与禁止的 authority upgrade。
 
-当前机器投影以 `82` 个 registry components、`70` 个可见节点、`77` 条 typed
-edges 和 `12` 个代表节点承载的隐藏 components 为准；当前地图为 `0.8.0`，上一版
-`0.7.0` 仅作 Historical。R2 的 source-domain 与
+当前机器投影以 `91` 个 registry components、`79` 个可见节点、`84` 条 typed
+edges 和 `12` 个代表节点承载的隐藏 components 为准；当前地图为 `0.9.0`，上一版
+`0.8.0` 仅作 Historical。R2 的 source-domain 与
 blast-radius 规则见
 [`agent-platform-r2-propagation-contract.json`](../../data/operations/propagation/agent-platform-r2-propagation-contract.json)。
 联邦 source domain 单独落在 `agent_platform.federation`，不直接生成 Knowledge、

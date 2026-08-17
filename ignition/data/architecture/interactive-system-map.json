@@ -1,18 +1,18 @@
 {
   "schema_version": "2.0.0",
-  "map_version": "0.8.0",
-  "historical_map_version": "0.7.0",
+  "map_version": "0.9.0",
+  "historical_map_version": "0.8.0",
   "projection_status": "CURRENT_DERIVED_PROJECTION",
   "title": "点火唯一完整可点击总架构图",
-  "subtitle": "唯一完整总架构图；0.8.0 Current 派生投影，0.7.0 为 Historical。主干是 Owner/Value Charter → Ignition OS driver → Pack/Federation routing → 外部可替换执行器（external replaceable executors；external executors）→ Actions/Receipts → Validation/Feedback → OS；Reference / Conformance / Fallback 是本地冻结边界；Kernel ≠ Knowledge，Runtime ≠ Research，Pack 不拥有通用 authority；语言—思维横穿 L0—L6，不增加 L7。连线是仓库关系、同步义务或候选反馈，不自动表示现实因果。",
+  "subtitle": "唯一完整总架构图；0.9.0 Current 派生投影，0.8.0 为 Historical。主干是 Owner/Value Charter → Ignition OS driver / R2 Control Plane → Pack/Federation routing → 外部可替换执行器（external replaceable executors；external executors）→ Actions/Receipts → Validation/Feedback → OS；Event Ledger、monotonic policy、resource arbitration、bounded scheduler、health lease、queue/backpressure、dispatch/reconciliation、concurrent operational memory 与 Driver Console 都是有界控制记录；Reference / Conformance / Fallback 是本地冻结边界；Kernel ≠ Knowledge，Runtime ≠ Research，Pack 不拥有通用 authority；语言—思维横穿 L0—L6，不增加 L7。连线是仓库关系、同步义务或候选反馈，不自动表示现实因果。",
   "repository_url": "https://github.com/Arvin-liu/when-systems-catch-fire",
   "projection_authority": {
     "component_registry": "data/operations/project-components.json",
     "propagation_topology": "data/operations/change-propagation-topology.json",
     "layout_overlay": "data/architecture/interactive-system-map-layout.json",
-    "component_registry_version": "1.7.0",
-    "topology_version": "1.6.0",
-    "layout_version": "1.6.0"
+    "component_registry_version": "1.8.0",
+    "topology_version": "1.7.0",
+    "layout_version": "1.7.0"
   },
   "layout": {
     "columns": 3,
@@ -110,7 +110,7 @@
     {
       "color": "#1d4ed8",
       "column": 1,
-      "description": "Owner/Human、Profile、Kernel、Runtime 与 Memory 的点火 OS 控制/治理脊柱；不拥有供应商 runtime",
+      "description": "Owner/Human、Profile、Kernel、Runtime、R2 Control Plane 与 Memory 的点火 OS 控制/治理脊柱；不拥有供应商 runtime",
       "id": "os_spine",
       "label": "Ignition OS / 控制脊柱",
       "row": 0
@@ -157,11 +157,27 @@
           "agent_profile_r0",
           "agent_kernel_r0",
           "agent_runtime_r0",
+          "event_ledger_r1",
+          "policy_compiler_r1",
+          "resource_arbitration_r1",
+          "bounded_scheduler_r1",
+          "executor_health_lease_r1",
+          "queue_control_r1",
+          "durable_dispatch_r1",
+          "concurrent_operational_memory_r2",
+          "driver_console_r1",
           "runtime_memory_loop"
         ],
         "relation_ids": [
           "map_profile_agent_kernel",
           "map_kernel_agent_runtime",
+          "map_runtime_event_ledger",
+          "map_event_ledger_scheduler",
+          "map_scheduler_health",
+          "map_scheduler_queue",
+          "map_scheduler_dispatch",
+          "map_runtime_concurrent_memory",
+          "map_memory_console",
           "map_runtime_memory"
         ]
       },
@@ -694,6 +710,78 @@
       "group": "os_spine",
       "target": "agent_runtime/README.md#Memory R0",
       "description": "Working State 与可追溯 Durable Memory Event 的最小记录回路，不引入向量数据库。",
+      "lifecycle_status": "current"
+    },
+    {
+      "id": "event_ledger_r1",
+      "label": "Event Ledger R1",
+      "group": "os_spine",
+      "target": "docs/architecture/os-control-plane-r2.md#Event Ledger R1",
+      "description": "Append-only typed event ledger with aggregate CAS, hash-chain integrity, deterministic replay and snapshot-tail recovery.",
+      "lifecycle_status": "current"
+    },
+    {
+      "id": "policy_compiler_r1",
+      "label": "Monotonic Policy Compiler R1",
+      "group": "os_spine",
+      "target": "docs/architecture/os-control-plane-r2.md#Monotonic Policy Compiler R1",
+      "description": "Digest-bound effective-policy compiler whose intersections, minima, expiry and prohibitions can only narrow authority.",
+      "lifecycle_status": "current"
+    },
+    {
+      "id": "resource_arbitration_r1",
+      "label": "Resource Arbitration R1",
+      "group": "os_spine",
+      "target": "docs/architecture/os-control-plane-r2.md#Resource Arbitration R1",
+      "description": "Hierarchical typed resource-intent arbitration with atomic acquire-many, expiring leases and conservative unknown-side-effect serialization.",
+      "lifecycle_status": "current"
+    },
+    {
+      "id": "bounded_scheduler_r1",
+      "label": "Bounded Concurrent Scheduler R1",
+      "group": "os_spine",
+      "target": "docs/architecture/os-control-plane-r2.md#Bounded Concurrent Scheduler R1",
+      "description": "Bounded concurrent dependency-DAG scheduler with deterministic readiness, resource leases, budgets, cancellation, deadlines and checkpoint/resume.",
+      "lifecycle_status": "current"
+    },
+    {
+      "id": "executor_health_lease_r1",
+      "label": "Executor Health Lease R1",
+      "group": "os_spine",
+      "target": "docs/architecture/os-control-plane-r2.md#Executor Health Lease R1",
+      "description": "Digest-bound executor capability and health lease with expiry, cooldown, stale rejection and deterministic route candidates.",
+      "lifecycle_status": "current"
+    },
+    {
+      "id": "queue_control_r1",
+      "label": "Queue and Backpressure R1",
+      "group": "os_spine",
+      "target": "docs/architecture/os-control-plane-r2.md#Queue and Backpressure R1",
+      "description": "Durable bounded queue with quota/backpressure, priority and aging, deadline, pause and cancellation boundaries.",
+      "lifecycle_status": "current"
+    },
+    {
+      "id": "durable_dispatch_r1",
+      "label": "Durable Dispatch and Reconciliation R1",
+      "group": "os_spine",
+      "target": "docs/architecture/os-control-plane-r2.md#Durable Dispatch and Reconciliation R1",
+      "description": "Durable external dispatch, idempotent acknowledgement/progress and conservative receipt reconciliation with forged-record rejection.",
+      "lifecycle_status": "current"
+    },
+    {
+      "id": "concurrent_operational_memory_r2",
+      "label": "Concurrent Operational Memory R2",
+      "group": "os_spine",
+      "target": "docs/architecture/os-control-plane-r2.md#Concurrent Operational Memory R2",
+      "description": "Concurrent operational memory with generation CAS, duplicate suppression, supersession/tombstones, stale capsules and deterministic compaction.",
+      "lifecycle_status": "current"
+    },
+    {
+      "id": "driver_console_r1",
+      "label": "Driver Console R1",
+      "group": "os_spine",
+      "target": "docs/architecture/os-control-plane-r2.md#Driver Console R1",
+      "description": "Human-readable Driver Console projection that orders reconciliation, health, conflict, queue and resume obligations without becoming a second truth source.",
       "lifecycle_status": "current"
     },
     {
@@ -1409,11 +1497,67 @@
       "label": "通用 Kernel 不升级真值或 Owner 权限",
       "relation_class": "constraint",
       "relation_domain": "synchronization_obligation"
+    },
+    {
+      "id": "map_runtime_event_ledger",
+      "source": "agent_runtime_r0",
+      "target": "event_ledger_r1",
+      "label": "Runtime 写入可重放 Event Ledger",
+      "relation_class": "generates",
+      "relation_domain": "repository_dependency"
+    },
+    {
+      "id": "map_event_ledger_scheduler",
+      "source": "event_ledger_r1",
+      "target": "bounded_scheduler_r1",
+      "label": "确定性事件重放支撑 Scheduler 状态",
+      "relation_class": "validates",
+      "relation_domain": "repository_dependency"
+    },
+    {
+      "id": "map_scheduler_health",
+      "source": "bounded_scheduler_r1",
+      "target": "executor_health_lease_r1",
+      "label": "Scheduler 路由受健康租约约束",
+      "relation_class": "validates",
+      "relation_domain": "repository_dependency"
+    },
+    {
+      "id": "map_scheduler_queue",
+      "source": "bounded_scheduler_r1",
+      "target": "queue_control_r1",
+      "label": "Scheduler 消费有界队列",
+      "relation_class": "generates",
+      "relation_domain": "repository_dependency"
+    },
+    {
+      "id": "map_scheduler_dispatch",
+      "source": "bounded_scheduler_r1",
+      "target": "durable_dispatch_r1",
+      "label": "Scheduler 产生可协调的 Dispatch envelope",
+      "relation_class": "generates",
+      "relation_domain": "repository_dependency"
+    },
+    {
+      "id": "map_runtime_concurrent_memory",
+      "source": "agent_runtime_r0",
+      "target": "concurrent_operational_memory_r2",
+      "label": "Runtime 吸收并发 Operational Memory 事件",
+      "relation_class": "generates",
+      "relation_domain": "repository_dependency"
+    },
+    {
+      "id": "map_memory_console",
+      "source": "concurrent_operational_memory_r2",
+      "target": "driver_console_r1",
+      "label": "Memory 生成 Driver Console 的恢复提示",
+      "relation_class": "projects",
+      "relation_domain": "repository_dependency"
     }
   ],
   "component_coverage": {
-    "registry_components": 82,
-    "visible_nodes": 70,
+    "registry_components": 91,
+    "visible_nodes": 79,
     "hidden_components": 12,
     "hidden_representatives": {
       "foundation_data": "foundation",

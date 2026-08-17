@@ -19,14 +19,14 @@ replaceable executors，而不是 OS authority。
 3. KNOWLEDGE/README.md：无需预知路径的最新变化、主题地图、搜索、资产卡与分层阅读入口。
 4. docs/project-current-state.md：版本化、可演化、非终局的当前状态。
 5. ITERATION.md：点火迭代操作法；状态改变任务必须先恢复远端真相、确认缺口和 claim ceiling。
-6. docs/architecture/agent-platform-r2.md、agent_kernel/README.md、agent_runtime/README.md 与 packs/*/README.md：当前 Agent Platform、Kernel、Runtime 和 Domain Pack 人话边界。
+6. docs/architecture/agent-platform-r2.md、docs/architecture/os-control-plane-r2.md、agent_kernel/README.md、agent_runtime/README.md 与 packs/*/README.md：当前 Agent Platform、OS Control Plane、Kernel、Runtime 和 Domain Pack 人话边界。
    任务 122 还必须读取 docs/architecture/external-agent-federation-r1.md、data/agent-federation/ 与 agent_federation/：OS/executor contract、适配器族、Reference freeze 和 disposable pilot 边界。
 7. ARCHITECTURE.md：现行七层架构权威；Agent Platform 是跨层工程脊柱，不是新增 L7 或真值层。
 8. FOUNDATION.md：数学与逻辑双地基。
 9. llms.txt：机器可读边界。
 10. AI-HANDOFF.md：当前权威、兼容和任务交接。
 11. data/foundation/project-state.json、data/architecture/agentization-boundary-r0.json 与 registry-manifest.json：机器状态与边界投影。
-12. 当前任务命令、data/operations/iterations/123/nightshift-progress.jsonl 与相关 source/schema；Task 123 的 identity contract、current-facts 和同步 receipt 是本轮当前状态入口。
+12. 当前任务命令、data/operations/iterations/124/progress.jsonl 与相关 source/schema；Task 124 的 identity contract、current-facts 和同步 receipt 是本轮当前状态入口。
 
 ## R2 冷启动补充
 
@@ -37,6 +37,13 @@ Knowledge、REOS LIGHT Research、之元 Writing 和 Repository Maintenance。
 它们的 manifest 是 capability 与 validator 的声明，不是网络、Owner、executor、
 truth 或 epistemic authority 的授予。真实离线 episode 的机器回执位于
 `data/agent-runtime/pilots/r2-offline-repository-maintenance/`。
+
+Task 124 的 OS Control Plane R2 进一步把司机所需的 Event Ledger、monotonic
+policy compiler、resource arbitration、bounded concurrent scheduler、executor
+health lease、queue/backpressure、durable dispatch/reconciliation、concurrent
+operational memory 和 Driver Console 作为独立、有界的 control-plane records；
+读取 [`os-control-plane-r2.md`](docs/architecture/os-control-plane-r2.md) 以恢复
+其状态边界、故障状态和下一步排序。
 
 若任务涉及函数、模型、定理、公式、律、跨域类比或现实强断言，在读取 Foundation 后立即读取 `docs/foundation/claim-governance-and-function-identity.md`、`data/foundation/function-assets/corrections.jsonl`、对应 `identity-cards.jsonl` 记录及其 quarantine/obligation 状态。M 与 E 不得互推，自动 census 不能覆盖专项纠偏；task 99 的 registry closure 也不能被解释为全部证明或外部验证完成。
 
@@ -78,7 +85,7 @@ truth 或 epistemic authority 的授予。真实离线 episode 的机器回执�
 - Multiscale Causal Fabric、Probabilistic System Dynamics 和 Adaptive Relational Network 是当前建模/投影能力，不是新真值层。
 - 关系网络的邻接、相似性、中心性、社群、检索和行为变化不能升级为真理、价值、因果或内部学习机制证明。
 - 迭代方法只能约束操作纪律，不能证明实质结论正确。
-- 当前迭代方法是 `1.4.0`（Current），系统图是 `0.8.0`（Current）；`0.7.0` 是上一版 Historical。
+- 当前迭代方法是 `1.4.0`（Current），系统图是 `0.9.0`（Current）；`0.8.0` 是上一版 Historical。
 
 方法 `1.3.0` 与系统图 `0.6.0`、`0.5.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0`、`0.2.0`、`0.3.0`、`0.4.0` 为更早 Historical。当前方法要求读取 `data/operations/project-components.json` 与 `data/operations/change-propagation-topology.json`，把变更路径解析为构件、遍历声明关系到 fixpoint、绑定决定／map diff／residue，再由 registries 与布局 overlay 派生系统图。不得把 Git diff、依赖或可达性称为现实因果证明。
 - Q32I 的方法 `1.3.0` 与系统图 `0.3.0` 已独立接受、由 PR #62 普通合并并完成生产收口；其后方法升为 `1.4.0` Current。

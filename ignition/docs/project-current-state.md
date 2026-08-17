@@ -12,10 +12,18 @@ provenance、handoff 和结果吸收；它是 OS / orchestration-governance laye
 `REFERENCE_EXECUTOR / CONFORMANCE_EXECUTOR / FALLBACK_MINIMAL`。
 Knowledge 是第一个大型 Domain Pack，不是整个系统本体；Research、Writing、
 Maintenance 也各自受 manifest、schema、validator 和 authority ceiling 约束。
-当前唯一完整系统图为 `0.8.0`，`0.7.0` 仅作 Historical；语义主干把中央 OS
+当前唯一完整系统图为 `0.9.0`，`0.8.0` 仅作 Historical；语义主干把中央 OS
 控制脊柱、外部 Federation/replaceable executors 与 Domain/Skill Packs 分开。
 版本、计数和 live ceiling 以 [Current Facts](./architecture/current-facts.md) 及其
 JSON 投影为准。
+
+Task 124 的 [OS Control Plane R2](./architecture/os-control-plane-r2.md) 补上了
+Event Ledger、monotonic policy compiler、resource arbitration、bounded concurrent
+scheduler、executor health lease、queue/backpressure、durable dispatch/reconciliation、
+concurrent operational memory 和 Driver Console。五子任务 disposable offline pilot
+实际观察到最大并发 `2`，并覆盖资源冲突、stale executor、checkpoint/resume、取消、
+deadline、伪造 completion receipt 和 stale memory capsule；这些是仓库内协调证据，
+不是 live executor、生产安全、现实因果或外部有效性证据。
 
 当前工程状态仍为 `CURRENT_WITH_OPEN_OBLIGATIONS`，并保持
 `EPISTEMICALLY_ACCEPTED=0`。这段话描述仓库接口，不是产品成熟度、市场唯一性、
@@ -27,6 +35,7 @@ AGI、生产安全、现实因果、外部有效性或 Owner acceptance 证明�
 - 从 canonical registries 保留来源、命题、形式对象、论证、证据、证明义务、反例、验证、迁移和人类结果的独立谱系；工程闭合不升级内容真值。
 - 通过 `current-facts.json` 确定性投影同步可复算事实；本页不手抄第二份数量表。[Current Facts](../data/architecture/current-facts.json) 与[人读 facts block](./architecture/current-facts.md) 是窄范围派生入口。
 - 以唯一 registry/topology/layout 生成系统图；图是可点击的仓库导航与依赖投影，不是现实因果图、严格同构或完备性证明。
+- 控制平面把事件、权限收窄、共享资源、并发 ready-set、健康租约、队列、外部回执和操作记忆分别持久化；Driver Console 只投影下一步与开放义务，不成为第二真相源。
 - R2/Federation conformance 仍以 disposable local fixture 为主；Step 09 只做了 fresh public CLI probe 和安全、有界的临时 workspace smoke 尝试，OpenClaw 明确 `SKIPPED_UNSAFE_OR_UNAVAILABLE`，Hermes/Codex 因 hard timeout 同样未产生可接受 completion。详细记录见 [`external-conformance-smoke-r1.json`](../data/operations/iterations/123/external-conformance-smoke-r1.json)；当前 live provider/inference ceiling 仍未建立。
 
 ## 当前限制与开放义务

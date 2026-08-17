@@ -1,9 +1,9 @@
 <!-- BEGIN GENERATED CURRENT-FACTS r1; DO NOT EDIT -->
 # Current Facts（机器推导事实）
 
-- Identity epoch: `agent-platform-federation-r1`；current iteration boundary: `122`。
-- Architecture registry: `82` components；`70` visible map nodes；`12` hidden represented components；`107` typed relations；`77` visible typed edges。
-- Map/method: map `0.8.0` Current（historical `0.7.0`）；layout `1.6.0`；semantic trunk `semantic-trunk-r1` with `6` bounded route stages；method `1.4.0` `Current`。
+- Identity epoch: `os-control-plane-r2`；current iteration boundary: `124`。
+- Architecture registry: `91` components；`79` visible map nodes；`12` hidden represented components；`119` typed relations；`84` visible typed edges。
+- Map/method: map `0.9.0` Current（historical `0.8.0`）；layout `1.7.0`；semantic trunk `semantic-trunk-r1` with `6` bounded route stages；method `1.4.0` `Current`。
 - Packs: `4` packs；`10` declared capability routes。
 - Federation: `3` adapter inventory entries；live ceiling `NOT_RUN_LIVE_EXTERNAL_INVOCATION`；local boundary `REFERENCE_EXECUTOR / CONFORMANCE_EXECUTOR / FALLBACK_MINIMAL`。
 - Foundation: function identity cards `5604`；function quarantine/pending `4805`；non-function claims `15977`；non-function quarantine/pending `4648`。

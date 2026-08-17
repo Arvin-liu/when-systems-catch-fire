@@ -8,8 +8,16 @@ Agent 的运行时。
 本页与 [`CURRENT_STATE_SYNC_INVARIANT`](../governance/current-state-sync-invariant.md)
 的当前身份保持一致：点火是 driver / orchestration-governance layer，Knowledge
 是第一个大型 Domain Pack，默认决策是 integrate 而不是重造。当前计数、地图版本
-`0.8.0`（`0.7.0` Historical）和 live ceiling 以 [`current-facts.json`](../../data/architecture/current-facts.json)
+`0.9.0`（`0.8.0` Historical）和 live ceiling 以 [`current-facts.json`](../../data/architecture/current-facts.json)
 为准；真实 live invocation 仍可在安全边界无法满足时明确 `SKIPPED`。
+
+Task 124 的 OS Control Plane R2 是 Federation 上游的有界交通系统：Event Ledger、
+monotonic policy compiler、resource arbitration、bounded concurrent scheduler、
+executor health lease、queue/backpressure、durable dispatch/reconciliation、
+concurrent operational memory 和 Driver Console 先决定是否可 admission、路由、
+回执或恢复；外部 adapter 不能跳过这些 OS 边界。离线 pilot 的 receipt 不是 live
+provider completion，也不改变 `REFERENCE_EXECUTOR / CONFORMANCE_EXECUTOR /
+FALLBACK_MINIMAL` 冻结。
 
 ## Architecture hierarchy
 

@@ -19,6 +19,7 @@ formal `main` tip does not move during the task branch run.
 | 08 | COMPLETED | pending closure | pending closure | Concurrent operational memory with generation CAS, duplicate suppression, tombstones, stale capsules and deterministic compaction projection. |
 | 09 | COMPLETED | pending closure | pending closure | Human-readable Driver Console projection with next-action ordering, open obligations and explicit epistemic boundaries. |
 | 10 | COMPLETED | pending closure | pending closure | Five-child offline pilot covering real concurrency, conflicts, stale health, checkpoint/resume, cancel/deadline, forged completion and memory. |
+| 11 | COMPLETED | pending closure | pending closure | Current State/map synchronization, deterministic Current Facts ordering guard, Phase-E CWD path repair and explicit historical propagation residual preservation. |
 
 ## Boundary
 
@@ -154,3 +155,22 @@ this task.
   resume, pre-dispatch cancellation, deadline expiry, forged completion
   rejection, and stale operational-memory capsule. The result is an offline
   disposable fixture receipt and does not establish live executor behavior.
+
+## Step 11 evidence
+
+- Current identity: `identity_epoch=os-control-plane-r2`, boundary `124`, status
+  `CURRENT_WITH_OPEN_OBLIGATIONS`, `EPISTEMICALLY_ACCEPTED=0`.
+- Current State receipt: `data/operations/iterations/124/current-state-sync-receipt.json`;
+  `validate_current_state_sync.py --check` passed all ten required surfaces.
+- Derived projections: `current-facts` now rejects unsorted or duplicate source
+  fingerprints; `SYSTEM_MAP_DERIVED_OK nodes=79 edges=84`; geometry quality is
+  `PASS` with crossing proxy `187` and two mobile viewport fits.
+- Architecture synchronization: the registry has `91` components and the map
+  has current version `0.9.0`, historical version `0.8.0`, `79` visible nodes and
+  `84` visible typed edges. The new OS Control Plane R2 document is the bounded
+  human-readable component boundary.
+- Residual audit: Phase-E validation passes without the inherited nested-CWD
+  `git show` warnings after worktree-aware path resolution. The reconciliation
+  validator still fails only on the historical 104–106 `NO_IMPACT_JUSTIFIED`
+  records; those records remain append-only and are preserved as
+  `PROPAGATION-104-106 / REQUIRES_REVIEW`, not rewritten into a false PASS.

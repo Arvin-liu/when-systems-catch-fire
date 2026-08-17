@@ -60,7 +60,11 @@ def source_paths(contract: dict[str, Any]) -> list[Path]:
         paths.add(sync.resolve_repo_path(metric["source_path"]))
     for pack_path in sorted((ROOT / "packs").glob("*/manifest.json")):
         paths.add(pack_path)
-    return sorted(paths, key=relative)
+    ordered = sorted(paths, key=relative)
+    relative_paths = [relative(path) for path in ordered]
+    if relative_paths != sorted(relative_paths) or len(relative_paths) != len(set(relative_paths)):
+        raise ValueError("current-facts source paths must be sorted and unique")
+    return ordered
 
 
 def build_projection(contract: dict[str, Any] | None = None) -> dict[str, Any]:
@@ -71,7 +75,7 @@ def build_projection(contract: dict[str, Any] | None = None) -> dict[str, Any]:
 
     map_layout = load_json(sync.resolve_repo_path(contract["current_map"]["source_path"]))
     inventory = load_json(sync.resolve_repo_path("ignition/data/agent-federation/executor-inventory-r1.json"))
-    pack_paths = sorted((ROOT / "packs").glob("*/manifest.json"))
+    pack_paths = sorted((ROOT / "packs").glob("*/manifest.json"), key=relative)
     packs = [load_json(path) for path in pack_paths]
     materiality = load_json(sync.resolve_repo_path("ignition/data/governance/human-surface/materiality-manifest.json"))
     human_config = load_json(sync.resolve_repo_path("ignition/data/governance/human-results/config.json"))

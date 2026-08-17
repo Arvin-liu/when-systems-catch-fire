@@ -1,19 +1,19 @@
 {
   "claim_ceiling": "Deterministic repository-derived current facts and navigation support only; no external truth, Owner acceptance, production safety or epistemic upgrade.",
   "contract_id": "CURRENT_STATE_SYNC_INVARIANT",
-  "current_iteration_boundary": 122,
+  "current_iteration_boundary": 124,
   "facts": {
     "architecture": {
-      "current_map_version": "0.8.0",
+      "current_map_version": "0.9.0",
       "hidden_components": 12,
-      "historical_map_version": "0.7.0",
-      "layout_version": "1.6.0",
-      "registry_components": 82,
+      "historical_map_version": "0.8.0",
+      "layout_version": "1.7.0",
+      "registry_components": 91,
       "semantic_trunk_route_steps": 6,
       "semantic_trunk_version": "semantic-trunk-r1",
-      "typed_topology_relations": 107,
-      "visible_map_nodes": 70,
-      "visible_typed_edges": 77
+      "typed_topology_relations": 119,
+      "visible_map_nodes": 79,
+      "visible_typed_edges": 84
     },
     "environmental_residuals": [
       "Full unittest discovery was deferred to Step 12 after the baseline probe produced no output for several minutes; the 121 targeted core gate completed separately.",
@@ -66,8 +66,8 @@
       }
     },
     "iteration": {
-      "current_iteration_boundary": 122,
-      "current_map_version": "0.8.0",
+      "current_iteration_boundary": 124,
+      "current_map_version": "0.9.0",
       "method_status": "Current",
       "method_version": "1.4.0"
     },
@@ -89,7 +89,7 @@
       ]
     }
   },
-  "identity_epoch": "agent-platform-federation-r1",
+  "identity_epoch": "os-control-plane-r2",
   "schema_version": "current-facts-r1",
   "source_fingerprints": [
     {
@@ -102,11 +102,11 @@
     },
     {
       "path": "ignition/data/architecture/current-system-identity.json",
-      "sha256": "80eb5a491134439ddde16acdaf533a9abe658a10e4af656a66de3387a87b4b97"
+      "sha256": "e6d8401d548ec941172a964b5e0c970e71025a8ad7eb7c0af68aebb58709e963"
     },
     {
       "path": "ignition/data/architecture/interactive-system-map-layout.json",
-      "sha256": "715674d6cb30d0a33493eebe766b1b846563a4ce7603cfc5a84b3367123aba69"
+      "sha256": "4bf9a127436b186f7b40ef13f730e7633e83107981255ab7b1b610b638ab05a1"
     },
     {
       "path": "ignition/data/foundation/function-assets/closure-summary.json",
@@ -130,11 +130,11 @@
     },
     {
       "path": "ignition/data/operations/change-propagation-topology.json",
-      "sha256": "a8a68cac1f683562e758383d870e78878308cc73d3b7eec34a6c80d7ba31314b"
+      "sha256": "000aa3eb6810e56a7fefcdb5dd949aed17421afeeb748b63b6c4fed34c3113e2"
     },
     {
       "path": "ignition/data/operations/project-components.json",
-      "sha256": "1db842c7fda66a03539a975a49ffba97205b2dad73652b20963fd64d046c5eb7"
+      "sha256": "488674560938129595143aff0662fed5192c85b116cf037b984552c214bf985a"
     },
     {
       "path": "ignition/data/operations/synchronization-surfaces.json",
@@ -166,11 +166,11 @@
     },
     {
       "path": "ignition/schemas/architecture/current-system-identity.schema.json",
-      "sha256": "edd428e346a58fadcb6aedf23d99a04305bc7140a471226c93ba1d7bf0e82c5a"
+      "sha256": "09c65629a5854d04b2c0e985159a8eaa63c6c89cc562534334c1eff884a3fb1e"
     },
     {
       "path": "ignition/tools/generate_current_facts.py",
-      "sha256": "fb4a02067d6cfac2fb9846951b17ca15091f56ce85be8b9ec671961795cb6d49"
+      "sha256": "feb0e8692c49d2595b9d365ed25920afbd8adef2bea50e283ad0b66c7cc30d05"
     }
   ]
 }

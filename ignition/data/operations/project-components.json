@@ -1776,8 +1776,116 @@
       "lifecycle": {"source": "agent_federation/contracts.py", "status": "current", "version": "deferred"},
       "map_projection": {"group": "federation", "visible": true},
       "path_patterns": ["agent_federation/contracts.py", "schemas/agent-federation/"]
+    },
+    {
+      "authority": "canonical",
+      "canonical_target": "docs/architecture/os-control-plane-r2.md#Event Ledger R1",
+      "component_id": "event_ledger_r1",
+      "component_type": "operation_control",
+      "description": "Append-only typed event ledger with aggregate CAS, hash-chain integrity, deterministic replay and snapshot-tail recovery.",
+      "label": "Event Ledger R1",
+      "layer_or_overlay": "overlay",
+      "lifecycle": {"source": "agent_runtime/event_ledger.py", "status": "current", "version": "R2"},
+      "map_projection": {"group": "os_spine", "visible": true},
+      "path_patterns": ["agent_runtime/event_ledger.py", "tests/test_event_ledger.py", "tools/validate_event_ledger.py"]
+    },
+    {
+      "authority": "canonical",
+      "canonical_target": "docs/architecture/os-control-plane-r2.md#Monotonic Policy Compiler R1",
+      "component_id": "policy_compiler_r1",
+      "component_type": "operation_control",
+      "description": "Digest-bound effective-policy compiler whose intersections, minima, expiry and prohibitions can only narrow authority.",
+      "label": "Monotonic Policy Compiler R1",
+      "layer_or_overlay": "overlay",
+      "lifecycle": {"source": "agent_runtime/policy_compiler.py", "status": "current", "version": "R2"},
+      "map_projection": {"group": "os_spine", "visible": true},
+      "path_patterns": ["agent_runtime/policy_compiler.py", "tests/test_policy_compiler.py", "tools/validate_policy_compiler.py"]
+    },
+    {
+      "authority": "canonical",
+      "canonical_target": "docs/architecture/os-control-plane-r2.md#Resource Arbitration R1",
+      "component_id": "resource_arbitration_r1",
+      "component_type": "operation_control",
+      "description": "Hierarchical typed resource-intent arbitration with atomic acquire-many, expiring leases and conservative unknown-side-effect serialization.",
+      "label": "Resource Arbitration R1",
+      "layer_or_overlay": "overlay",
+      "lifecycle": {"source": "agent_runtime/resource_arbitration.py", "status": "current", "version": "R2"},
+      "map_projection": {"group": "os_spine", "visible": true},
+      "path_patterns": ["agent_runtime/resource_arbitration.py", "tests/test_resource_arbitration.py", "tools/validate_resource_arbitration.py"]
+    },
+    {
+      "authority": "canonical",
+      "canonical_target": "docs/architecture/os-control-plane-r2.md#Bounded Concurrent Scheduler R1",
+      "component_id": "bounded_scheduler_r1",
+      "component_type": "operation_control",
+      "description": "Bounded concurrent dependency-DAG scheduler with deterministic readiness, resource leases, budgets, cancellation, deadlines and checkpoint/resume.",
+      "label": "Bounded Concurrent Scheduler R1",
+      "layer_or_overlay": "overlay",
+      "lifecycle": {"source": "agent_runtime/scheduler.py", "status": "current", "version": "R2"},
+      "map_projection": {"group": "os_spine", "visible": true},
+      "path_patterns": ["agent_runtime/scheduler.py", "tests/test_scheduler.py", "tools/validate_scheduler.py"]
+    },
+    {
+      "authority": "canonical",
+      "canonical_target": "docs/architecture/os-control-plane-r2.md#Executor Health Lease R1",
+      "component_id": "executor_health_lease_r1",
+      "component_type": "operation_control",
+      "description": "Digest-bound executor capability and health lease with expiry, cooldown, stale rejection and deterministic route candidates.",
+      "label": "Executor Health Lease R1",
+      "layer_or_overlay": "overlay",
+      "lifecycle": {"source": "agent_runtime/executor_health.py", "status": "current", "version": "R2"},
+      "map_projection": {"group": "os_spine", "visible": true},
+      "path_patterns": ["agent_runtime/executor_health.py", "tests/test_executor_health.py", "tools/validate_executor_health.py"]
+    },
+    {
+      "authority": "canonical",
+      "canonical_target": "docs/architecture/os-control-plane-r2.md#Queue and Backpressure R1",
+      "component_id": "queue_control_r1",
+      "component_type": "operation_control",
+      "description": "Durable bounded queue with quota/backpressure, priority and aging, deadline, pause and cancellation boundaries.",
+      "label": "Queue and Backpressure R1",
+      "layer_or_overlay": "overlay",
+      "lifecycle": {"source": "agent_runtime/queue_control.py", "status": "current", "version": "R2"},
+      "map_projection": {"group": "os_spine", "visible": true},
+      "path_patterns": ["agent_runtime/queue_control.py", "tests/test_queue_control.py", "tools/validate_queue_control.py"]
+    },
+    {
+      "authority": "canonical",
+      "canonical_target": "docs/architecture/os-control-plane-r2.md#Durable Dispatch and Reconciliation R1",
+      "component_id": "durable_dispatch_r1",
+      "component_type": "operation_control",
+      "description": "Durable external dispatch, idempotent acknowledgement/progress and conservative receipt reconciliation with forged-record rejection.",
+      "label": "Durable Dispatch and Reconciliation R1",
+      "layer_or_overlay": "overlay",
+      "lifecycle": {"source": "agent_runtime/dispatch_reconciliation.py", "status": "current", "version": "R2"},
+      "map_projection": {"group": "os_spine", "visible": true},
+      "path_patterns": ["agent_runtime/dispatch_reconciliation.py", "tests/test_dispatch_reconciliation.py", "tools/validate_dispatch_reconciliation.py"]
+    },
+    {
+      "authority": "canonical",
+      "canonical_target": "docs/architecture/os-control-plane-r2.md#Concurrent Operational Memory R2",
+      "component_id": "concurrent_operational_memory_r2",
+      "component_type": "operation_control",
+      "description": "Concurrent operational memory with generation CAS, duplicate suppression, supersession/tombstones, stale capsules and deterministic compaction.",
+      "label": "Concurrent Operational Memory R2",
+      "layer_or_overlay": "overlay",
+      "lifecycle": {"source": "agent_runtime/concurrent_memory.py", "status": "current", "version": "R2"},
+      "map_projection": {"group": "os_spine", "visible": true},
+      "path_patterns": ["agent_runtime/concurrent_memory.py", "tests/test_concurrent_memory.py", "tools/validate_concurrent_memory.py"]
+    },
+    {
+      "authority": "canonical",
+      "canonical_target": "docs/architecture/os-control-plane-r2.md#Driver Console R1",
+      "component_id": "driver_console_r1",
+      "component_type": "operation_control",
+      "description": "Human-readable Driver Console projection that orders reconciliation, health, conflict, queue and resume obligations without becoming a second truth source.",
+      "label": "Driver Console R1",
+      "layer_or_overlay": "overlay",
+      "lifecycle": {"source": "agent_runtime/driver_console.py", "status": "current", "version": "R2"},
+      "map_projection": {"group": "os_spine", "visible": true},
+      "path_patterns": ["agent_runtime/driver_console.py", "tools/driver_console.py", "tests/test_driver_console.py"]
     }
   ],
   "purpose": "Canonical project-component identity, target and lifecycle registry for declared change propagation and system-map projection; it does not establish real-world causality.",
-  "registry_version": "1.7.0"
+  "registry_version": "1.8.0"
 }

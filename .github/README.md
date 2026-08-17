@@ -10,15 +10,15 @@
 
 项目的规范性方向由[生命共同体价值宪章](../ignition/docs/governance/life-community-value-charter.md)约束；宪章是价值边界，不是经验事实、数学证明或外部真值来源。点火当前总上限仍是 `CURRENT_WITH_OPEN_OBLIGATIONS`。工程完成、写作完成、测试通过、重复引用、跨域对应、模型美感或 Agent 共识都不能自动抬升命题的断言地位。
 
-点火当前主干以一个有界、可审计、可恢复的 Agent Platform 原型为工程脊柱；它是长期状态、价值、任务、权限、记忆、验证和 executor 协同的 OS / orchestration-governance layer。OpenClaw、Hermes、Codex 是可替换执行器，不是点火的替代系统；知识治理是第一个大型 Domain Pack，而不是整个系统本体。R2 的仓库内能力、边界和未完成义务见[Agent Platform R2](../ignition/docs/architecture/agent-platform-r2.md)与[智能体化边界](../ignition/docs/architecture/agentization-boundary-r0.md)。Task 122 再以[External Agent Federation R1](../ignition/docs/architecture/external-agent-federation-r1.md)把三家接为可替换 adapter，并把现有自研执行层冻结为 `REFERENCE_EXECUTOR / CONFORMANCE_EXECUTOR / FALLBACK_MINIMAL`。当前唯一完整系统图是 `0.8.0`，`0.7.0` 仅作 Historical；真实 external invocation、当前计数和 live ceiling 仍以 [Current Facts](../ignition/docs/architecture/current-facts.md) 的 ceiling 为准；这不表示已经证明通用智能、长期自主性、现实世界普适安全性或外部有效性；`EPISTEMICALLY_ACCEPTED=0` 保持不变。
+点火当前主干以一个有界、可审计、可恢复的 Agent Platform 原型为工程脊柱；它是长期状态、价值、任务、权限、记忆、验证和 executor 协同的 OS / orchestration-governance layer。OpenClaw、Hermes、Codex 是可替换执行器，不是点火的替代系统；知识治理是第一个大型 Domain Pack，而不是整个系统本体。R2 的仓库内能力、边界和未完成义务见[Agent Platform R2](../ignition/docs/architecture/agent-platform-r2.md)、[OS Control Plane R2](../ignition/docs/architecture/os-control-plane-r2.md)与[智能体化边界](../ignition/docs/architecture/agentization-boundary-r0.md)。Task 122 再以[External Agent Federation R1](../ignition/docs/architecture/external-agent-federation-r1.md)把三家接为可替换 adapter，并把现有自研执行层冻结为 `REFERENCE_EXECUTOR / CONFORMANCE_EXECUTOR / FALLBACK_MINIMAL`。当前唯一完整系统图是 `0.9.0`，`0.8.0` 仅作 Historical；真实 external invocation、当前计数和 live ceiling 仍以 [Current Facts](../ignition/docs/architecture/current-facts.md) 的 ceiling 为准；这不表示已经证明通用智能、长期自主性、现实世界普适安全性或外部有效性；`EPISTEMICALLY_ACCEPTED=0` 保持不变。
 
 ### 当前主干怎样理解
 
-- **它说什么：** Kernel、Runtime、Federation、Profile、Reasoner Gateway、Supervisor、Operational Memory 和四个声明式 Domain Pack 已形成一条仓库内可检查的 Agent Platform R2 结构；OpenClaw、Hermes、Codex 只通过 provider-neutral adapter boundary 接入，当前唯一完整系统图仍是 registry/topology/layout 的确定性导航投影。
+- **它说什么：** Kernel、Runtime、Federation、Profile、Reasoner Gateway、Supervisor、Event Ledger、monotonic policy、resource arbitration、bounded concurrent scheduler、executor health lease、queue/backpressure、durable dispatch/reconciliation、concurrent operational memory、Driver Console 和四个声明式 Domain Pack 已形成一条仓库内可检查的 Agent Platform R2 结构；OpenClaw、Hermes、Codex 只通过 provider-neutral adapter boundary 接入，当前唯一完整系统图仍是 registry/topology/layout 的确定性导航投影。
 - **为什么重要：** 行动、批准、恢复、记忆、Pack 路由和知识治理的职责被分开记录，Agent 可以提出和执行有界动作，但不能自行扩大权限、改写真值或替代 Owner。
 - **怎样使用：** 人类先读[十分钟阅读路线](../ignition/HUMAN-READING.md)与[当前结果](../ignition/RESULTS/LATEST.md)；Agent 先读[AI 冷启动](../ignition/AI-START-HERE.md)、[状态增量日志](../ignition/STATE-CHANGELOG.md)、[R2 架构契约](../ignition/docs/architecture/agent-platform-r2.md)和[联邦契约](../ignition/docs/architecture/external-agent-federation-r1.md)。
 - **它不能证明什么：** 通过测试、Pack 加载、checkpoint、pilot 或系统图，都不等于外部真值、现实因果、生产安全、Owner acceptance 或 epistemic acceptance。
-- **仍然开放：** live provider/inference、daemon、多 Agent 并发、向量记忆、网络/浏览、外部仓库 mutation、物理 Pack 拆分和现实世界效果仍不在本轮授权范围内；Step 09 的 bounded smoke 只留下 OpenClaw skip 与 Hermes/Codex timeout，没有可接受 live completion，Step 10 pilot 仍保持未运行。
+- **仍然开放：** live provider/inference、daemon、向量记忆、网络/浏览、外部仓库 mutation、物理 Pack 拆分和现实世界效果仍不在本轮授权范围内；Step 09 的 bounded smoke 只留下 OpenClaw skip 与 Hermes/Codex timeout，没有可接受 live completion，Step 10 只完成 disposable offline control-plane pilot，不是 live executor success。
 
 ## 2. 如何使用
 

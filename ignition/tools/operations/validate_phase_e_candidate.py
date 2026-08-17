@@ -11,7 +11,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT))
-from tools.operations.plan_incremental_execution import plan, build_authority_bundle, git_json
+from tools.operations.plan_incremental_execution import plan, build_authority_bundle, git_json, git_show_text
 
 REQUEST = ROOT / "data/operations/propagation/121Q32I-request.json"
 DEMO = ROOT / "reports/operations/121Q32I-incremental-execution-demonstration.json"
@@ -37,8 +37,8 @@ def require(ok: bool, code: str, message: str) -> None:
 def sha256_at(commit: str, rel: str) -> str:
     """sha256 of a repository file at a git revision; fail closed if absent."""
     try:
-        content = subprocess.check_output(["git", "show", f"{commit}:{rel}"], cwd=ROOT, text=True)
-    except (subprocess.CalledProcessError, FileNotFoundError, OSError) as exc:
+        content = git_show_text(commit, rel)
+    except (ValueError, FileNotFoundError, OSError) as exc:
         raise ValueError(f"era input unavailable for {rel}@{commit}: {exc}")
     return hashlib.sha256(content.encode("utf-8")).hexdigest()
 
