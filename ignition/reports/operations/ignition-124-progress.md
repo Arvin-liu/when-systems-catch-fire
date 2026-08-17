@@ -10,6 +10,7 @@ formal `main` tip does not move during the task branch run.
 | --- | --- | --- | --- | --- |
 | 00 | COMPLETED | pending closure | pending closure | Fresh baseline, Control Plane gap audit and two-ready-child concurrency experiment. |
 | 01 | COMPLETED | pending closure | pending closure | Canonical typed event ledger with CAS, hash chain, deterministic replay and snapshot-tail recovery. |
+| 02 | COMPLETED | pending closure | pending closure | Monotonic Effective Policy compiler with digest binding, narrowing proof trace and escalation rejection. |
 
 ## Boundary
 
@@ -35,3 +36,14 @@ this task.
   corrupted chain/payload records and forbidden prompt/secret material. A
   snapshot may be older than the ledger and is recovered by deterministic tail
   replay; a snapshot that is not a ledger prefix is rejected.
+
+## Step 02 evidence
+
+- Policy compiler: `agent_runtime/policy_compiler.py`
+- Targeted unit tests: `tests/test_policy_compiler.py` (`3/3`)
+- Adversarial validator: `tools/validate_policy_compiler.py` (`PASS`)
+- Capability/path/resource-intent dimensions use intersection and requested
+  subsets; booleans and budgets use minimum; expiry uses the earliest bound;
+  prohibitions use a stronger-restriction union. Pack and executor ceilings
+  cannot widen parent scope, and approval is valid only for a predeclared,
+  task-bound action.
