@@ -13,6 +13,7 @@ formal `main` tip does not move during the task branch run.
 | 02 | COMPLETED | pending closure | pending closure | Monotonic Effective Policy compiler with digest binding, narrowing proof trace and escalation rejection. |
 | 03 | COMPLETED | pending closure | pending closure | Typed resource intents, hierarchical overlap, atomic multi-resource leases and deterministic conflict arbitration. |
 | 04 | COMPLETED | pending closure | pending closure | Bounded concurrent DAG scheduler with budgets, cancellation, deadlines, checkpoint/resume and terminal rollup. |
+| 05 | COMPLETED | pending closure | pending closure | Digest-bound executor capability/health leases with expiry, cooldown, stale rejection and deterministic routing candidates. |
 
 ## Boundary
 
@@ -73,3 +74,15 @@ this task.
   expiry, cooperative cancellation, fail-fast/independent policy, and
   checkpoint-with-explicit-resume are terminally visible. The 39-test
   event/policy/resource/scheduler/core regression is `PASS`.
+
+## Step 05 evidence
+
+- Executor lease implementation: `agent_runtime/executor_health.py`
+- Targeted unit tests: `tests/test_executor_health.py` (`3/3`)
+- Adversarial validator: `tools/validate_executor_health.py` (`PASS`)
+- A lease binds observed adapter/version, capability tokens, permission and
+  workspace ceilings, support flags, concurrency ceiling, probe class and
+  public evidence references to a digest. Expiry becomes `STALE`; a failed
+  probe enters cooldown and repeated failures become `UNSAFE_TO_PROBE` until
+  a fresh observation replaces the lease. Tampered persisted leases are
+  rejected before routing.

@@ -52,6 +52,7 @@ from .memory import MemoryEntry, MemoryStoreError, OperationalMemoryStore
 from .supervisor import ChildRunSpec, EpisodeBudget, EpisodeSpec, Supervisor, SupervisorError
 from .profile import ProfileProjection, ProfileProjectionError, apply_profiles_to_episode, load_profile_registry, project_profile, select_packs
 from .routing import PackActionProvenance, PackAwareRouter, PackRoutingError, PackValidationReceipt
+from .executor_health import ExecutorCapabilityLease, ExecutorHealthError, ExecutorHealthStore, ExecutorLeaseUnavailable
 
 __all__ = [
     "ActionObservation",
@@ -123,4 +124,8 @@ __all__ = [
     "PackAwareRouter",
     "PackRoutingError",
     "PackValidationReceipt",
+    "ExecutorCapabilityLease",
+    "ExecutorHealthError",
+    "ExecutorHealthStore",
+    "ExecutorLeaseUnavailable",
 ]
