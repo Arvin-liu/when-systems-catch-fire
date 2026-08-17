@@ -54,6 +54,7 @@ from .profile import ProfileProjection, ProfileProjectionError, apply_profiles_t
 from .routing import PackActionProvenance, PackAwareRouter, PackRoutingError, PackValidationReceipt
 from .executor_health import ExecutorCapabilityLease, ExecutorHealthError, ExecutorHealthStore, ExecutorLeaseUnavailable
 from .queue_control import QueueAdmissionError, QueueControlError, QueueItem, QueueNotDispatchable, WorkQueue
+from .dispatch_reconciliation import DispatchConflict, DispatchEnvelope, DispatchError, DispatchProgress, DispatchReceipt, DispatchRecord, DurableDispatchStore
 
 __all__ = [
     "ActionObservation",
@@ -134,4 +135,11 @@ __all__ = [
     "QueueItem",
     "QueueNotDispatchable",
     "WorkQueue",
+    "DispatchConflict",
+    "DispatchEnvelope",
+    "DispatchError",
+    "DispatchProgress",
+    "DispatchReceipt",
+    "DispatchRecord",
+    "DurableDispatchStore",
 ]

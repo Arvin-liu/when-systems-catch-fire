@@ -15,6 +15,7 @@ formal `main` tip does not move during the task branch run.
 | 04 | COMPLETED | pending closure | pending closure | Bounded concurrent DAG scheduler with budgets, cancellation, deadlines, checkpoint/resume and terminal rollup. |
 | 05 | COMPLETED | pending closure | pending closure | Digest-bound executor capability/health leases with expiry, cooldown, stale rejection and deterministic routing candidates. |
 | 06 | COMPLETED | pending closure | pending closure | Durable bounded queue with quota/backpressure, priority/aging, deadline, pause and cancel boundaries. |
+| 07 | COMPLETED | pending closure | pending closure | Durable external dispatch/ack/progress/receipt journal with validation gate and conservative reconciliation. |
 
 ## Boundary
 
@@ -99,3 +100,17 @@ this task.
   are checked before admission, pause blocks admission, pre-dispatch cancel
   becomes `CANCELLED_BEFORE_DISPATCH`, and post-dispatch cancel is explicitly
   `CANCEL_REQUESTED_REQUIRES_RECONCILIATION`.
+
+## Step 07 evidence
+
+- Dispatch/reconciliation implementation: `agent_runtime/dispatch_reconciliation.py`
+- Targeted unit tests: `tests/test_dispatch_reconciliation.py` (`3/3`)
+- Adversarial validator: `tools/validate_dispatch_reconciliation.py` (`PASS`)
+- Dispatch identity and idempotency keys are bound to a payload digest and
+  effect class. Acknowledgements and public progress are identity-bound and
+  strictly monotonic. A terminal external receipt is stored as
+  `RECEIPT_RECORDED`; only an independent OS validation reference can move it
+  to `COMPLETED_VALIDATED`. Lost acknowledgements permit retry only for an
+  explicitly read-only effect. External and unknown side effects stop at
+  `REQUIRES_RECONCILIATION`, with forged, duplicate and out-of-order records
+  rejected.
