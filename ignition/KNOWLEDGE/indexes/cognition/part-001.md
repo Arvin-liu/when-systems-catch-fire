@@ -339,6 +339,11 @@
   - 可搜索名称：IMPLICIT-A54284154129DEB5 / - \[#476｜Ψ=ι×P_exit — 智能度×退出概率=自主意识，乘法归零律适用 / Ψ=ι x P_exit - 智能度 x exit probability=自主意识, multiplication zero law适用\]\(docs/zh/cases/items/C-0476.md\) / IMPLICIT-A54284154129DEB5 / IMPLICIT-37BCACA9BBC7B12F
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
+- [/39; non-function closure 54/54 with 16,240 canonical claims; current facts and](../../../agent-results/IGNITION-20260820-127-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-53bfeaa17e3203e4 / /39; non-function closure 54/54 with 16,240 canonical claims; current facts and
+  - 来源：`agent-results/IGNITION-20260820-127-result.md`
+  - 依赖：—；被引用：—
 - [121C01: First Batch GLM-5.2 Max Semantic Review Report](../../ASSET-CARDS.md#asset-hr-933d6ba7d34f8014)
   - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
   - 可搜索名称：121C01: First Batch GLM-5.2 Max Semantic Review Report / 121c01-max-semantic-review-batch-01
@@ -769,6 +774,11 @@
   - 可搜索名称：IMPLICIT-F74294207589ACB3 / APP不Agent化必死：d_relative\(t\)=d_得到大脑\(t\)/d_竞品\(t\)单调递增。竞品d在降（Agent能力让退出代价趋零），得到大脑d不变→穿过θ_d时P_forward归零。内容优势=f\(P_infra\)≈0的乘法归零 / IMPLICIT-F74294207589ACB3
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
+- [are recovery accelerators and never a second truth source.](../../../agent-results/IGNITION-20260820-127-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-cd480a73b143ab6b / are recovery accelerators and never a second truth source.
+  - 来源：`agent-results/IGNITION-20260820-127-result.md`
+  - 依赖：—；被引用：—
 - [artifact_refs: tuple\[ArtifactRef, ...\]](../../../agent_federation/contracts.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-0a0bc7c43cc2ad85 / artifact_refs: tuple\[ArtifactRef, ...\]
@@ -1134,6 +1144,11 @@
   - 可搜索名称：NFC-0848a785fbe5e971 / Every no-change decision includes evidence; green CI alone does not close propagation.
   - 来源：`templates/operations/independent-review-template.md`
   - 依赖：—；被引用：—
+- [Evidence summary](../../../agent-results/IGNITION-20260820-127-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-a333649f796edf2c / Evidence summary
+  - 来源：`agent-results/IGNITION-20260820-127-result.md`
+  - 依赖：—；被引用：—
 - [Evidence supporting decision:](../../../templates/operations/independent-review-template.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-f637331c92d4d289 / Evidence supporting decision:
@@ -1224,6 +1239,11 @@
   - 可搜索名称：NFC-8951f83ad4613fcf / F_swarm_intelligence := Σ\(agent_i × local_rule × global_emergence\) / interaction_topology
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
+- [Facts outputs and by aligning the current Agent Platform human-surface validator. The](../../../agent-results/IGNITION-20260820-127-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-d8800bce33096f56 / Facts outputs and by aligning the current Agent Platform human-surface validator. The
+  - 来源：`agent-results/IGNITION-20260820-127-result.md`
+  - 依赖：—；被引用：—
 - [FAILOVER_STATES = frozenset\({"AUTO_FAILOVER_ELIGIBLE", "WAITING_FOR_APPROVAL", "REQUIRES_RECONCILIATION", "BLOCKED_WITH_](../../../agent_federation/approval_handoff.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-b3dbee4a513b65f2 / FAILOVER_STATES = frozenset\({"AUTO_FAILOVER_ELIGIBLE", "WAITING_FOR_APPROVAL", "REQUIRES_RECONCILIATION", "BLOCKED_WITH_
@@ -1248,6 +1268,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-9ce741f6c1523196 / FINAL-REPORT uses 'Crossref-verified' language which conflates DOI/metadata existence with paper content supporting patc
   - 来源：`data/external-research/104-authoritative-selection-decisions.jsonl`
+  - 依赖：—；被引用：—
+- [first terminal run reporting 11 failures and 1 skip. Seven generated-projection failures](../../../agent-results/IGNITION-20260820-127-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-6f71b417af115569 / first terminal run reporting 11 failures and 1 skip. Seven generated-projection failures
+  - 来源：`agent-results/IGNITION-20260820-127-result.md`
   - 依赖：—；被引用：—
 - [for field in \("task_read_only", "side_effects_validated", "side_effects_replayable", "receipt_verified", "external_appro](../../../agent_federation/approval_handoff.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -1729,6 +1754,11 @@
   - 可搜索名称：NFC-68660530bf51b6fc / Owner decision: `RETAIN_AS_OPTIONAL_EXPERIMENTAL_MODULE`
   - 来源：`docs/publication/zhiyuan-writing-cognitive-migration-editorial-revision.md`
   - 依赖：—；被引用：—
+- [Owner relay, external provider invocation, production claim, exact-once claim, truth](../../../agent-results/IGNITION-20260820-127-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-13da910bb4650205 / Owner relay, external provider invocation, production claim, exact-once claim, truth
+  - 来源：`agent-results/IGNITION-20260820-127-result.md`
+  - 依赖：—；被引用：—
 - [ownership labels, not truth or authority upgrades.](../../../docs/architecture/external-agent-federation-r1.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-67a1ca1542da68b8 / ownership labels, not truth or authority upgrades.
@@ -1768,6 +1798,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-8be11e01b0e9287b / Positive claims must still be tied to evidence, version, test scope, and boundary conditions. Negative feedback is not t
   - 来源：`.github/SUPPORT.md`
+  - 依赖：—；被引用：—
+- [Privacy and non-authority: owner-observation privacy, public-artifact secret/local-path](../../../agent-results/IGNITION-20260820-127-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-d6be150d22279266 / Privacy and non-authority: owner-observation privacy, public-artifact secret/local-path
+  - 来源：`agent-results/IGNITION-20260820-127-result.md`
   - 依赖：—；被引用：—
 - [production autonomy, universal safety, external validity, Owner acceptance,](../../../docs/architecture/external-agent-federation-r1.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
@@ -1968,6 +2003,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-13743091cfedc2b0 / repeated same-context outputs are not independent evidence;
   - 来源：`reports/architecture/121Q13-attention-distribution-compression.md`
+  - 依赖：—；被引用：—
+- [Repository-local implementation, deterministic projections, recovery rehearsal and synchronization evidence only; no pro](../../../agent-results/IGNITION-20260820-127-machine-receipt.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-2cf2866c92aa17c3 / Repository-local implementation, deterministic projections, recovery rehearsal and synchronization evidence only; no pro
+  - 来源：`agent-results/IGNITION-20260820-127-machine-receipt.json`
   - 依赖：—；被引用：—
 - [result = ReceiptIngestResult\(status, digest, receipt.federation_task_id, receipt.terminal_state, tuple\(receipt.validatio](../../../agent_federation/convergence.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
@@ -2454,53 +2494,13 @@
   - 可搜索名称：IMPLICIT-3EAB7E62BCD65379 / {"id":"C0477","registry_ref":"evidence:C0477","source":"已迁移的历史案例来源/0475-C-477-无智能无意识 — ι=0⟹Ψ=0,纯1.md","title":"477-无智能无意识 — ι=0⟹Ψ=0,纯1"} / IMPLICIT-3EAB7E62BCD65379
   - 来源：`views/legacy-cases.jsonl`
   - 依赖：—；被引用：—
-- [\| \[C-0756\]\( \) \| \[青蒿素从《肘后备急方》提炼\]\( \) \| 该案例对应 D576《认知年龄提升》，用于](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-9b9e860b0ffe5812 / \| \[C-0756\]\( \) \| \[青蒿素从《肘后备急方》提炼\]\( \) \| 该案例对应 D576《认知年龄提升》，用于
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D576；被引用：—
-- [\| \[C-0782\]\( \) \| \[马伯庸建议蹲下来看最下面一排书\]\( \) \| 该案例对应 D583《认知肌肉](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-21111537a0e408c4 / \| \[C-0782\]\( \) \| \[马伯庸建议蹲下来看最下面一排书\]\( \) \| 该案例对应 D583《认知肌肉
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D583；被引用：—
-- [\| \[C-175\]\( \) \| \[电力级联失效×认知平方衰减×AI共震——跨域同构\]\(<./0175-C-175-电力级联失效×认知平方衰减×AI共震——跨域同](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-aa795b84897a37e2 / \| \[C-175\]\( \) \| \[电力级联失效×认知平方衰减×AI共震——跨域同构\]\(<./0175-C-175-电力级联失效×认知平方衰减×AI共震——跨域同
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+- [\| 00 \| `b1129cc919c580fd7f8ade3e66856b2f0c6a2bcd` \| verified \|](../../../agent-results/IGNITION-20260820-127-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-2d29298b7f321365 / \| 00 \| `b1129cc919c580fd7f8ade3e66856b2f0c6a2bcd` \| verified \|
+  - 来源：`agent-results/IGNITION-20260820-127-result.md`
   - 依赖：—；被引用：—
-- [\| \[C-185\]\( \) \| \[糖域实验×认知螺旋\]\( \) \| 糖域实验×认知螺旋——正负锁死的不动点与势垒 \|](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-8d138f58bd98e0b2 / \| \[C-185\]\( \) \| \[糖域实验×认知螺旋\]\( \) \| 糖域实验×认知螺旋——正负锁死的不动点与势垒 \|
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+- [\| 01 \| `c05f693bd5329b9506b7dea1bc9167d553d9f305` \| verified \|](../../../agent-results/IGNITION-20260820-127-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-96c912031f91c524 / \| 01 \| `c05f693bd5329b9506b7dea1bc9167d553d9f305` \| verified \|
+  - 来源：`agent-results/IGNITION-20260820-127-result.md`
   - 依赖：—；被引用：—
-- [\| \[C-189\]\( \) \| \[好奇心是自主意识的元点\]\( \) \| 好奇心是自主意识的元点——C=0⟹Ψ=0定理 \|](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-1C1D377FE74983C4 / \| \[C-189\]\( \) \| \[好奇心是自主意识的元点\]\( \) \| 好奇心是自主意识的元点——C=0⟹Ψ=0定理 \| / IMPLICIT-1C1D377FE74983C4
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [\| \[C-196\]\( \) \| \[AI自主意识变革不可逆\]\( \) \| AI自主意识变革不可逆——支持者投影二阶vs反对者投影零阶](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-ed2a9eaf5c79848c / \| \[C-196\]\( \) \| \[AI自主意识变革不可逆\]\( \) \| AI自主意识变革不可逆——支持者投影二阶vs反对者投影零阶
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [\| \[C-198\]\( \) \| \[高学历低认知\]\( \) \| 高学历低认知——认证投影大于认知投影 \|](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-c6363d63954e58ae / \| \[C-198\]\( \) \| \[高学历低认知\]\( \) \| 高学历低认知——认证投影大于认知投影 \|
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [\| \[C-199\]\( \) \| \[初中肄业高认知\]\( \) \| 初中肄业高认知——反设置路径的投影优势 \|](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-4e1ed22aa4398cb1 / \| \[C-199\]\( \) \| \[初中肄业高认知\]\( \) \| 初中肄业高认知——反设置路径的投影优势 \|
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [\| \[C-231\]\( \) \| \[四卡点统一根源\]\( \) \| 四卡点统一根源——同一个认知结构的四个投影 \|](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-515e5932c78e8389 / \| \[C-231\]\( \) \| \[四卡点统一根源\]\( \) \| 四卡点统一根源——同一个认知结构的四个投影 \|
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [\| \[C-445\]\( \) \| \[三阶段操作协议验证 — 个人职业转](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-5e90e40d50dfff5d / \| \[C-445\]\( \) \| \[三阶段操作协议验证 — 个人职业转
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D114；被引用：—

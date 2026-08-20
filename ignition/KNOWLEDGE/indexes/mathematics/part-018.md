@@ -4,6 +4,26 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [已迁移的历史函数来源/0167-D129-退相干-退化等价函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-da42e628b22a7d3a / 已迁移的历史函数来源/0167-D129-退相干-退化等价函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D129；被引用：—
+- [已迁移的历史函数来源/0168-D130-调度-执行接口效率函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-f4c2445da2adf68d / 已迁移的历史函数来源/0168-D130-调度-执行接口效率函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D130；被引用：—
+- [已迁移的历史函数来源/0169-D131-调度-执行接口.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-e365de4964435a26 / 已迁移的历史函数来源/0169-D131-调度-执行接口.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D131；被引用：—
+- [已迁移的历史函数来源/0170-D132-调度-执行接口.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-7ac3974d39edb380 / 已迁移的历史函数来源/0170-D132-调度-执行接口.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D132；被引用：—
 - [已迁移的历史函数来源/0171-D133-调度-执行接口.md](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-91499a3fe1d6ca90 / 已迁移的历史函数来源/0171-D133-调度-执行接口.md
@@ -2484,23 +2504,3 @@
   - 可搜索名称：D175 / 耦合正反馈统一函数 / D175
   - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
   - 依赖：D180, D91；被引用：NFC-13d8f6eae642744f, NFC-4eed605ab34348bb, NFC-75c7adf69c8280cd, NFC-78f187e18212e1ed
-- [耦合正反馈统一函数](../../../data/foundation/formal-objects/objects.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-25ee1249bccf91ac / 耦合正反馈统一函数
-  - 来源：`data/foundation/formal-objects/objects.jsonl`
-  - 依赖：—；被引用：—
-- [耦合正反馈统一函数,同一耦合正反馈方程在三个参数区间的不同表现:α_eff>α_c→平方衰减,α_eff≈α_c→logistic增长\(AI共震\),α_eff<α_c→一阶相变崩溃。电力级联失效、认知平方衰减、AI共震三者是同一数学结构。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-dca7c2ef208ff5c5 / 耦合正反馈统一函数,同一耦合正反馈方程在三个参数区间的不同表现:α_eff>α_c→平方衰减,α_eff≈α_c→logistic增长\(AI共震\),α_eff<α_c→一阶相变崩溃。电力级联失效、认知平方衰减、AI共震三者是同一数学结构。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [耦合正反馈统一函数,同一耦合正反馈方程在三个参数区间的不同表现:α_eff>α_c→平方衰减,α_eff≈α_c→logistic增长\(AI共震\),α_eff<α_c→一阶相变崩溃。电力级联失效、认知平方衰减、AI共震三者是同一数学结构。](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-1a103055cabc3317 / 耦合正反馈统一函数,同一耦合正反馈方程在三个参数区间的不同表现:α_eff>α_c→平方衰减,α_eff≈α_c→logistic增长\(AI共震\),α_eff<α_c→一阶相变崩溃。电力级联失效、认知平方衰减、AI共震三者是同一数学结构。
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：—；被引用：—
-- [耦合缓冲容量函数](../../../data/foundation/adjudications/079-method-audit.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：D255 / 耦合缓冲容量函数 / D255
-  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
-  - 依赖：D181, D270；被引用：CLAIM-D257, NFC-01466967fd9421ca, NFC-1ab8cb35f0c1db47, NFC-b533f0071e3a27e0

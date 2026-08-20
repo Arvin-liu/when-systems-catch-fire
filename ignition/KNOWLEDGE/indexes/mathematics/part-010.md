@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [{"id": "PEND-024", "domain": "AI / 计算机科学", "claim": "AI 对齐为何困难", "allowed_level": "L2 / L3 / pending", "forbidden_wordin](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-ce0162d74f621e8f / {"id": "PEND-024", "domain": "AI / 计算机科学", "claim": "AI 对齐为何困难", "allowed_level": "L2 / L3 / pending", "forbidden_wordin
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：—；被引用：—
+- [{"id": "PEND-025", "domain": "文学", "claim": "文学作品为什么能跨时代有效", "allowed_level": "L2 / L3 / pending", "forbidden_wording":](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-456d961ffb67a84f / {"id": "PEND-025", "domain": "文学", "claim": "文学作品为什么能跨时代有效", "allowed_level": "L2 / L3 / pending", "forbidden_wording":
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：—；被引用：—
 - [{"id": "PEND-026", "domain": "艺术", "claim": "艺术作品的意义如何生成", "allowed_level": "L2 / L3 / pending", "forbidden_wording": "点](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-95b1cb9acbeb413a / {"id": "PEND-026", "domain": "艺术", "claim": "艺术作品的意义如何生成", "allowed_level": "L2 / L3 / pending", "forbidden_wording": "点
@@ -43,6 +53,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-97ba55a265edac9a / \| 02 \| COMPLETED \| pending closure \| pending closure \| Monotonic Effective Policy compiler with digest binding, narrowin
   - 来源：`reports/operations/ignition-124-progress.md`
+  - 依赖：—；被引用：—
+- [\| 05 \| `31c36a5d188524327d3daded38e4af0fed3f935b` \| verified \|](../../../agent-results/IGNITION-20260820-127-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-5f326d47fadc78d7 / \| 05 \| `31c36a5d188524327d3daded38e4af0fed3f935b` \| verified \|
+  - 来源：`agent-results/IGNITION-20260820-127-result.md`
   - 依赖：—；被引用：—
 - [\| 1. FunctionSpec \| CANDIDATE \| Markdown files in 已迁移的历史函数来源/ \|](../../../reports/external-research/120-function-os-architecture-candidate-report.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
@@ -2489,18 +2504,3 @@
   - 可搜索名称：NFC-86cd9a92fe97d5f7 / \|把 D260 绑定到大一统不可能命题\|身份纠正\|正式 D260 是 `p/\(1-p\)` 偏差敏感度评分；物理命题与评分函数分开治理。\|\[历史纠正日志\]\(../docs/foundation/historical-correction-lo
   - 来源：`RESULTS/CORRECTIONS.md`
   - 依赖：D260；被引用：—
-- [\|把哥德尔不完备性、霍奇猜想或跨域相似性当成物理不可能性桥接定理\|阻断\|它们最多是研究类比；同构或演绎桥接必须给出对象、映射、假设和结构保持证明。\|\[公共断言上限\]\(../docs/foundation/public-claim-ceili](../../../RESULTS/CORRECTIONS.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-57d6aeb85a2c9925 / \|把哥德尔不完备性、霍奇猜想或跨域相似性当成物理不可能性桥接定理\|阻断\|它们最多是研究类比；同构或演绎桥接必须给出对象、映射、假设和结构保持证明。\|\[公共断言上限\]\(../docs/foundation/public-claim-ceili
-  - 来源：`RESULTS/CORRECTIONS.md`
-  - 依赖：—；被引用：—
-- [\|系统图代表什么？\|它是 registry/topology/layout 的确定性导航投影。\|仓库结构证据；不证明现实因果、同构或完整性。\|\[系统图说明\]\(../docs/architecture/interactive-system-m](../../../RESULTS/LATEST.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-1a292a4f646c160c / \|系统图代表什么？\|它是 registry/topology/layout 的确定性导航投影。\|仓库结构证据；不证明现实因果、同构或完整性。\|\[系统图说明\]\(../docs/architecture/interactive-system-m
-  - 来源：`RESULTS/LATEST.md`
-  - 依赖：—；被引用：—
-- [\|量子引力\|GR 与量子场论在极端尺度的统一描述未在本项目中建立。\|明确理论对象、半经典极限、一致性条件与可观测检验。\|门函数投影若只重命名问题而无动力学与预测，不提升成熟度。\|](../../../RESULTS/OPEN-QUESTIONS.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-53ef4ecd679b7e31 / \|量子引力\|GR 与量子场论在极端尺度的统一描述未在本项目中建立。\|明确理论对象、半经典极限、一致性条件与可观测检验。\|门函数投影若只重命名问题而无动力学与预测，不提升成熟度。\|
-  - 来源：`RESULTS/OPEN-QUESTIONS.md`
-  - 依赖：—；被引用：—

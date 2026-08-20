@@ -6,8 +6,8 @@
 - Map/method: map `0.11.0` Current（historical `0.10.0`）；layout `1.9.0`；semantic trunk `semantic-trunk-r1` with `6` bounded route stages；method `1.4.0` `Current`。
 - Packs: `4` packs；`10` declared capability routes。
 - Federation: `3` adapter inventory entries；live ceiling `NOT_RUN_LIVE_EXTERNAL_INVOCATION`；local boundary `REFERENCE_EXECUTOR / CONFORMANCE_EXECUTOR / FALLBACK_MINIMAL`。
-- Foundation: function identity cards `5611`；function quarantine/pending `4812`；non-function claims `16209`；non-function quarantine/pending `4683`。
-- Knowledge Experience: cards `403`；changes `315`；layered readings `332`；search records `22152`；aliases `851`。
+- Foundation: function identity cards `5611`；function quarantine/pending `4812`；non-function claims `16240`；non-function quarantine/pending `4706`。
+- Knowledge Experience: cards `403`；changes `315`；layered readings `332`；search records `22183`；aliases `851`。
 - Fire Seeds: `64` seeds/clusters；`393` source-census records。
 - Human Surface: `48` materiality entries（function `24` + non-function `24`）；`20` registered sync surfaces；`14` machine/human pairs。
 - Current environmental residuals: Full unittest discovery was deferred to Step 12 after the baseline probe produced no output for several minutes; the 121 targeted core gate completed separately.；T16_SYMPY_COUNTEREXAMPLE is explicitly classified as an environmental SymPy-unavailable residual from Task 121; this inventory does not change claim or proof status.。

@@ -1079,6 +1079,11 @@
   - 可搜索名称：NFC-081494edba5c959e / authority_changes: \[CURRENT_STATE_SYNC_INVARIANT\]\(./docs/governance/current-state-sync-invariant.md\), \[current facts\]\(./
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
+- [authority_changes: \[Durability / Lifecycle R3\]\(./docs/architecture/os-control-plane-r2.md#durability-and-lifecycle-r3\),](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-51f9eb82e46ec9ea / authority_changes: \[Durability / Lifecycle R3\]\(./docs/architecture/os-control-plane-r2.md#durability-and-lifecycle-r3\),
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [Autodiff, JIT ELBO evaluation and trace transforms generate execution/gradients but do not provide a verified compiler o](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-5b554ffd3275b7dc / Autodiff, JIT ELBO evaluation and trace transforms generate execution/gradients but do not provide a verified compiler o
@@ -2498,9 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-305DB6427E74E945 / def _case_mutation\(args: argparse.Namespace, mutator: Any\) -> int: / IMPLICIT-305DB6427E74E945
   - 来源：`reos_vnext/cli.py`
-  - 依赖：—；被引用：—
-- [def _check_dependency_references\(self, spec: dict\) -> List\[Dict\]:](../../../function-os-candidate/v0.1/function_os/n1_semantic_checker.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-F45F5547DF394F00 / def _check_dependency_references\(self, spec: dict\) -> List\[Dict\]: / IMPLICIT-F45F5547DF394F00
-  - 来源：`function-os-candidate/v0.1/function_os/n1_semantic_checker.py`
   - 依赖：—；被引用：—
