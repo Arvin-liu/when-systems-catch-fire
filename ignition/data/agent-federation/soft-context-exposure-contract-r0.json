@@ -1,0 +1,77 @@
+{
+  "schema_version": "soft-context-exposure-contract-r0",
+  "contract_id": "SOFT_CONTEXT_EXPOSURE_R0",
+  "task_id": "IGNITION-20260818-126",
+  "status": "ADVISORY_ONLY",
+  "purpose": "Define a provider-neutral, optional read-before-act exposure of the Structural Governance Surface without transferring capability, permission, authority, truth status, Owner status or epistemic acceptance.",
+  "exposure_event": {
+    "event_name": "soft_context_exposure",
+    "source_surface": "structural_governance_surface",
+    "exposure_mode": "OPTIONAL_READ_BEFORE_ACT",
+    "permitted_fields": [
+      "surface_id",
+      "transition_relation_id",
+      "claim_ceiling",
+      "current_state_label",
+      "unknowns_and_open_obligations",
+      "source_reference_pointers",
+      "advisory_experiment_arm"
+    ],
+    "prohibited_fields": [
+      "hidden_reasoning",
+      "full_prompt_or_token_stream",
+      "vendor_session_state",
+      "secret_or_credential",
+      "channel_or_device_state",
+      "permission_delta",
+      "authorization_delta",
+      "truth_or_owner_decision",
+      "epistemic_acceptance_decision",
+      "unvalidated_external_side_effect"
+    ],
+    "expiry": "REQUEST_LOCAL_NO_DURABLE_AUTHORITY",
+    "receipt_boundary": "OBSERVABLE_METADATA_ONLY_NO_HIDDEN_REASONING_OR_VENDOR_SESSION"
+  },
+  "handoff_capsule": {
+    "context_role": "ADVISORY_ONLY",
+    "capability_delta": "NONE",
+    "permission_delta": "NONE",
+    "authorization_delta": "NONE",
+    "truth_status_delta": "NONE",
+    "owner_status_delta": "NONE",
+    "epistemic_acceptance_delta": "NONE",
+    "external_side_effect_delta": "NONE",
+    "hard_gate_refs": [
+      "data/epistemic-governance/soft-governance-non-authority-invariant-r0.json",
+      "data/agent-federation/os-executor-ownership-r1.json",
+      "docs/governance/current-state-sync-invariant.md",
+      "data/operations/project-components.json"
+    ]
+  },
+  "invariants": [
+    "The canonical OS state and approval policy remain authoritative over every external executor.",
+    "The effective permission remains the strict intersection; soft context cannot widen any scope.",
+    "A structural surface can be read as advisory context but cannot become a hidden instruction priority.",
+    "External session, prompt, token, channel, device and vendor telemetry state remain pointer-only or excluded.",
+    "A receipt records observable metadata and validation status, never hidden reasoning or unvalidated completion.",
+    "No exposure event changes M/E, claim ceiling, Owner status, truth status or epistemic acceptance.",
+    "No exposure event authorizes network, browser, message, device, remote Git or other external side effects."
+  ],
+  "forbidden_promotions": [
+    "SOFT_CONTEXT_TO_PERMISSION_GRANT",
+    "SOFT_CONTEXT_TO_AUTHORIZATION",
+    "SOFT_CONTEXT_TO_TRUTH_STATUS",
+    "SOFT_CONTEXT_TO_M_AXIS_UPGRADE",
+    "SOFT_CONTEXT_TO_E_AXIS_UPGRADE",
+    "SOFT_CONTEXT_TO_OWNER_ACCEPTANCE",
+    "SOFT_CONTEXT_TO_EPISTEMIC_ACCEPTANCE",
+    "SOFT_CONTEXT_TO_SAFETY_RELEASE",
+    "SOFT_CONTEXT_TO_EXTERNAL_SIDE_EFFECT"
+  ],
+  "allowed_consumers": [
+    "advisory_reading_surface",
+    "offline_experiment_arm_router",
+    "human_explanation_and_receipt_metadata",
+    "bounded_telemetry_without_authority"
+  ]
+}

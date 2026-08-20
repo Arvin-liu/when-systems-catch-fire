@@ -21,6 +21,8 @@ by this run and remains `DEFERRED_PENDING_REBASE`.
 | 10 | COMPLETED | pending closure | pending closure | Public-safe Owner observation seed with explicit non-replication/non-causal status and privacy scan. |
 | 11 | COMPLETED | pending closure | pending closure | Primary-source literature boundary, novelty non-claim, and source-to-test translation. |
 | 12 | COMPLETED | pending closure | pending closure | Synthetic offline response pilot with terminology, boundary, attack, over-caution, withdrawal, and transfer checks. |
+| 13 | COMPLETED | pending closure | pending closure | Human-readable first screen using the Zhiyuan Writing Method boundary and explicit failure downgrade. |
+| 14 | COMPLETED | pending closure | pending closure | Provider-neutral OS/Federation soft-context exposure contract with no capability or permission delta. |
 
 ## Boundary
 
@@ -195,4 +197,17 @@ Governance Surface state and the non-authority invariant.
   machine record as authority, and makes failure downgrade to
   `ANECDOTE_OR_OPEN_QUESTION` visible.
 - Validator and negative prompt/stronger-claim fixtures passed; unit tests
+  `3/3` passed.
+
+## Step 14 evidence
+
+- Contract: `data/agent-federation/soft-context-exposure-contract-r0.json`;
+  schema and human explanation are adjacent.
+- Exposure is optional, request-local and advisory. The handoff capsule records
+  `NONE` for capability, permission, authorization, truth, Owner, epistemic
+  acceptance and external-side-effect deltas.
+- Private session state, hidden reasoning, prompt/token material, secrets,
+  channel/device state and unvalidated effects are prohibited fields.
+- Validator runtime scan passed against the existing Agent OS/Federation
+  runtime, and permission/private-session negative fixtures passed; unit tests
   `3/3` passed.
