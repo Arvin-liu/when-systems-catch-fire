@@ -57,6 +57,7 @@ from .queue_control import QueueAdmissionError, QueueControlError, QueueItem, Qu
 from .dispatch_reconciliation import DispatchConflict, DispatchEnvelope, DispatchError, DispatchProgress, DispatchReceipt, DispatchRecord, DurableDispatchStore
 from .concurrent_memory import ConcurrentOperationalMemoryStore, MemoryCASConflict, MemoryDuplicateConflict, MemoryR2Error, MemoryRecord
 from .driver_console import DRIVER_CONSOLE_SCHEMA, DriverConsoleError, build_driver_snapshot, render_driver_console
+from .durability import CanonicalSnapshot, CanonicalSnapshotStore, DurabilityError, SNAPSHOT_SCHEMA, SNAPSHOT_SCHEMA_EPOCH, SnapshotIntegrityError, SnapshotNamespaceError
 
 __all__ = [
     "ActionObservation",
@@ -153,4 +154,11 @@ __all__ = [
     "DriverConsoleError",
     "build_driver_snapshot",
     "render_driver_console",
+    "CanonicalSnapshot",
+    "CanonicalSnapshotStore",
+    "DurabilityError",
+    "SNAPSHOT_SCHEMA",
+    "SNAPSHOT_SCHEMA_EPOCH",
+    "SnapshotIntegrityError",
+    "SnapshotNamespaceError",
 ]

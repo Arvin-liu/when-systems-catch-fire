@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Arvin-liu/when-systems-catch-fire/schemas/operations/durability-snapshot-r1.schema.json",
+  "type": "object",
+  "required": ["schema", "snapshot_id", "schema_epoch", "namespace_scope", "ledger_start_sequence", "ledger_end_sequence", "captured_head_hash", "event_hash_chain_sha256", "state", "state_sha256", "active_pack_versions", "outstanding_reconciliation_refs", "advisory_soft_governance_versions", "creation_tool", "provenance_refs", "snapshot_sha256"],
+  "properties": {
+    "schema": {"const": "ignition-durability-snapshot-r1"},
+    "snapshot_id": {"type": "string", "minLength": 1},
+    "schema_epoch": {"const": "os-durability-r1"},
+    "namespace_scope": {"type": "string", "pattern": "^[A-Za-z0-9_.:-]+$"},
+    "ledger_start_sequence": {"const": 0},
+    "ledger_end_sequence": {"type": "integer", "minimum": 0},
+    "captured_head_hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "event_hash_chain_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "state": {"type": "object"},
+    "state_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "active_pack_versions": {"type": "array", "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+    "outstanding_reconciliation_refs": {"type": "array", "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+    "advisory_soft_governance_versions": {"type": "array", "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+    "creation_tool": {"type": "string", "minLength": 1},
+    "provenance_refs": {"type": "array", "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+    "snapshot_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  },
+  "additionalProperties": false
+}
