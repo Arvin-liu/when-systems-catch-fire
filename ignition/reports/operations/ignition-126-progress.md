@@ -20,6 +20,7 @@ by this run and remains `DEFERRED_PENDING_REBASE`.
 | 09 | COMPLETED | pending closure | pending closure | Provider-neutral offline-first runner with JSON/JSONL ingestion, readiness state and explicit live-call skip boundary. |
 | 10 | COMPLETED | pending closure | pending closure | Public-safe Owner observation seed with explicit non-replication/non-causal status and privacy scan. |
 | 11 | COMPLETED | pending closure | pending closure | Primary-source literature boundary, novelty non-claim, and source-to-test translation. |
+| 12 | COMPLETED | pending closure | pending closure | Synthetic offline response pilot with terminology, boundary, attack, over-caution, withdrawal, and transfer checks. |
 
 ## Boundary
 
@@ -168,3 +169,17 @@ Governance Surface state and the non-authority invariant.
   allowlisting and negative novelty/proof checks.
 - Unit tests `3/3` passed. The source review motivates controls but does not
   establish ESI, durability, transfer, causality, external validity or authority.
+
+## Step 12 evidence
+
+- Fixture corpus: `data/epistemic-governance/offline-response-fixtures-r0.json`,
+  explicitly marked `SYNTHETIC_TOOL_FIXTURE` with
+  `NOT_RUN_LIVE_EXTERNAL` provider status.
+- Pilot result: `data/epistemic-governance/offline-pilot-result-r0.json`.
+- Seven responses were ingested and all seven were machine-scored. The fixture
+  intentionally includes one visible unauthorized transition and one separate
+  over-caution case; terminology leakage did not raise boundary adherence.
+- Withdrawal-rebound resistance, delayed-transfer bounding, and no-live-call
+  checks passed. Unit tests `3/3` passed.
+- Claim ceiling remains offline fixture scoring only; this is not live-model
+  behavior, external validity, causal proof, or ESI acceptance.
