@@ -7,10 +7,10 @@
   "receipt_branch": "relay/receipts/ignition-127-os-durability-lifecycle-r3-rebased-20260820",
   "start_sha": "c5cec3a212dbf42564985b71c0fcec3b1fb1e564",
   "step18_sha": "2952d53bbc113c75b506f12ddaaf96a4083013d8",
-  "final_task_sha": null,
-  "final_task_sha_note": "Filled with exact task-branch remote SHA in the receipt-branch closeout after Step 19 push.",
+  "final_task_sha": "681f86d79b1112af3c07e0f8091335860c237ef2",
+  "final_task_sha_note": "Exact task-branch remote SHA verified after the single Step 19 commit and push.",
   "main_before_sha": "c5cec3a212dbf42564985b71c0fcec3b1fb1e564",
-  "main_after_sha": null,
+  "main_after_sha": "681f86d79b1112af3c07e0f8091335860c237ef2",
   "old_task_125": {
     "status": "DEFERRED_REBASED_INTO_127",
     "executed": false,
@@ -40,7 +40,7 @@
     {"step":"16","commit":"c5db7ebb1a48cf364efde1c9c3b969642b79fc08","push":"verified"},
     {"step":"17","commit":"39a9e5307776b8e24fc7899218660d62e74b37af","push":"verified"},
     {"step":"18","commit":"2952d53bbc113c75b506f12ddaaf96a4083013d8","push":"verified"},
-    {"step":"19","commit":null,"push":"pending"}
+    {"step":"19","commit":"681f86d79b1112af3c07e0f8091335860c237ef2","push":"verified"}
   ],
   "state_taxonomy": {
     "classes": ["CANONICAL_EVENT_SOURCED","DERIVED_REBUILDABLE","ADVISORY_SOFT_CONTEXT","EXTERNAL_POINTER_ONLY","HISTORICAL_SEALED","EPHEMERAL_PROCESS_LOCAL"],
@@ -111,7 +111,7 @@
     "epistemic_acceptance": false,
     "current_state": "CURRENT_WITH_OPEN_OBLIGATIONS"
   },
-  "fresh_clone": {"status":"PENDING_FINAL_TASK_TIP"},
-  "ordinary_main_fast_forward": {"status":"PENDING_FINAL_ACCEPTANCE_SHA"},
+  "fresh_clone": {"status":"PASS_EXACT_TASK_TIP_CLEAN","commit":"681f86d79b1112af3c07e0f8091335860c237ef2","working_tree_clean":true},
+  "ordinary_main_fast_forward": {"status":"PASS_EXACT_MAIN_SHA","main_sha":"681f86d79b1112af3c07e0f8091335860c237ef2","fresh_fetch_sha":"681f86d79b1112af3c07e0f8091335860c237ef2"},
   "claim_ceiling": "Repository-local implementation, deterministic projections, recovery rehearsal and synchronization evidence only; no production readiness, exact-once delivery, external completion, Owner acceptance or epistemic acceptance."
 }

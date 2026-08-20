@@ -11,7 +11,8 @@
 - 起始正式 main：`c5cec3a212dbf42564985b71c0fcec3b1fb1e564`
 - 任务分支：`codex/ignition-127-os-durability-lifecycle-r3-rebased-20260820`
 - Step 18 tip：`2952d53bbc113c75b506f12ddaaf96a4083013d8`
-- Step 19 最终 SHA：在 Step 19 提交并推送后写入独立 1111 receipt branch；本文件随 Step 19 提交预置，receipt branch 版本绑定精确 final SHA。
+- Step 19 最终 SHA：`681f86d79b1112af3c07e0f8091335860c237ef2`；任务分支已推送并以远端 SHA 核验。
+- `main` ordinary fast-forward 后 SHA：`681f86d79b1112af3c07e0f8091335860c237ef2`；fresh clone 精确 tip 与 fresh fetch `origin/main` 均一致且工作树干净。
 - `CURRENT_WITH_OPEN_OBLIGATIONS` 与 `EPISTEMICALLY_ACCEPTED=0` 保持不变。
 
 ## Step 00–19 提交台账
@@ -37,7 +38,7 @@
 | 16 | `c5db7ebb1a48cf364efde1c9c3b969642b79fc08` | verified |
 | 17 | `39a9e5307776b8e24fc7899218660d62e74b37af` | verified |
 | 18 | `2952d53bbc113c75b506f12ddaaf96a4083013d8` | verified |
-| 19 | pending at task-branch commit time | receipt branch records exact push SHA |
+| 19 | `681f86d79b1112af3c07e0f8091335860c237ef2` | verified |
 
 ## Rebase matrix
 
@@ -101,7 +102,9 @@ These are inherited/environmental or historical residuals, not new Task127 regre
 ## Publication boundary
 
 Fresh-clone exact-tip replay, final task-tip SHA, ordinary fast-forward `main`, fresh
-fetch SHA, and the independent receipt branch are the final publication actions. No
+fetch SHA, and the independent receipt branch are the final publication actions. The
+fresh clone was clean at exact task tip `681f86d79b1112af3c07e0f8091335860c237ef2`,
+and fresh fetch `origin/main` matched that SHA. No
 Owner relay, external provider invocation, production claim, exact-once claim, truth
 claim, permission expansion, or epistemic acceptance is implied.
 
