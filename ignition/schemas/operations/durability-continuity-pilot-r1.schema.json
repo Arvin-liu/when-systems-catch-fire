@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Arvin-liu/when-systems-catch-fire/schemas/operations/durability-continuity-pilot-r1.schema.json",
+  "type": "object",
+  "required": ["schema_version", "task_id", "step", "recorded_at", "mode", "required_gates", "expected", "external_rule", "claim_ceiling"],
+  "properties": {
+    "schema_version": {"const": "ignition-durability-continuity-pilot-r1"},
+    "task_id": {"const": "IGNITION-20260820-127"},
+    "step": {"const": "16"},
+    "recorded_at": {"const": "2026-08-20T00:00:00Z"},
+    "mode": {"const": "OFFLINE_DISPOSABLE_REPOSITORY_WORKSPACES_ONLY"},
+    "required_gates": {"type": "array", "minItems": 15, "uniqueItems": true, "items": {"type": "string"}},
+    "expected": {
+      "type": "object",
+      "required": ["status", "namespace_count", "workspace_count", "snapshot_captured_events", "minimum_tail_events", "recovery_phase_count", "dr_bundle_chunks", "unresolved_dispatch_ref", "external_invocation", "external_reexecution", "soft_status", "canonical_digest"],
+      "properties": {
+        "status": {"const": "PASS"},
+        "namespace_count": {"const": 2},
+        "workspace_count": {"const": 2},
+        "snapshot_captured_events": {"const": 3},
+        "minimum_tail_events": {"type": "integer", "minimum": 1},
+        "recovery_phase_count": {"const": 11},
+        "dr_bundle_chunks": {"const": 12},
+        "unresolved_dispatch_ref": {"const": "dispatch-a"},
+        "external_invocation": {"const": "NOT_RUN"},
+        "external_reexecution": {"const": "FORBIDDEN"},
+        "soft_status": {"const": "ADVISORY_ONLY"},
+        "canonical_digest": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+      },
+      "additionalProperties": false
+    },
+    "external_rule": {"const": "NO_REAL_EXTERNAL_SIDE_EFFECTS_OR_AUTOMATIC_REEXECUTION"},
+    "claim_ceiling": {"const": "REPOSITORY_LOCAL_CONTINUITY_ONLY_NO_PRODUCTION_OWNER_OR_EPISTEMIC_ACCEPTANCE"}
+  },
+  "additionalProperties": false
+}
