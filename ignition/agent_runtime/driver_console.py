@@ -7,6 +7,7 @@ from typing import Any, Mapping, Sequence
 
 
 DRIVER_CONSOLE_SCHEMA = "os-control-plane-driver-console-r1"
+DRIVER_RECOVERY_SURFACE_SCHEMA = "ignition-driver-recovery-surface-r2"
 _FORBIDDEN = ("prompt", "chain-of-thought", "hidden reasoning", "api_key", "access_token", "authorization")
 
 
@@ -147,4 +148,121 @@ def render_driver_console(snapshot: Mapping[str, Any]) -> str:
     return "\n".join(lines)
 
 
-__all__ = ["DRIVER_CONSOLE_SCHEMA", "DriverConsoleError", "build_driver_snapshot", "render_driver_console"]
+def _public_list(value: Any, field: str) -> list[str]:
+    if value is None:
+        return []
+    if not isinstance(value, (list, tuple)) or any(not isinstance(item, str) or not item.strip() or any(marker in item.casefold() for marker in _FORBIDDEN) for item in value):
+        raise DriverConsoleError(f"{field} must be a public string list")
+    return sorted(set(value))
+
+
+def _state_counts(value: Any, field: str) -> dict[str, int]:
+    mapping = _mapping(value, field)
+    result: dict[str, int] = {}
+    for key, count in mapping.items():
+        if not isinstance(key, str) or not key.strip() or not isinstance(count, int) or count < 0:
+            raise DriverConsoleError(f"{field} contains an invalid state count")
+        result[key] = count
+    return dict(sorted(result.items()))
+
+
+def build_driver_recovery_surface(sources: Mapping[str, Any]) -> dict[str, Any]:
+    """Build the human-first R2 recovery projection from owned records only."""
+
+    if not isinstance(sources, Mapping):
+        raise DriverConsoleError("recovery surface sources must be an object")
+    recovery = _mapping(sources.get("recovery"), "recovery")
+    operator_state = _mapping(recovery.get("operator_recovery_state"), "recovery.operator_recovery_state")
+    snapshot = _mapping(recovery.get("snapshot"), "recovery.snapshot")
+    if not snapshot:
+        snapshot = _mapping(sources.get("trusted_snapshot"), "trusted_snapshot")
+    schema_epoch = _public(sources.get("schema_epoch", recovery.get("migration", {}).get("to_epoch", "os-durability-r1")), "schema_epoch")
+    os_identity = _public(sources.get("os_identity", "OS_CONTROL_PLANE"), "os_identity")
+    last_known_good = _mapping(sources.get("last_known_good"), "last_known_good")
+    episode_states = sources.get("episode_states", {})
+    if not isinstance(episode_states, Mapping):
+        raise DriverConsoleError("episode_states must be an object")
+    episode_counts: dict[str, int] = {}
+    for episode_id, state in episode_states.items():
+        if not isinstance(episode_id, str) or not episode_id.strip():
+            raise DriverConsoleError("episode id is invalid")
+        state = _public(state, f"episode_states.{episode_id}")
+        episode_counts[state] = episode_counts.get(state, 0) + 1
+
+    pack_state = _mapping(sources.get("packs"), "packs")
+    active_packs = _public_list(pack_state.get("active_versions", recovery.get("namespace_policy_pack", {}).get("packs", {}).get("active", [])), "packs.active_versions")
+    executor = _mapping(sources.get("executors", recovery.get("admission")), "executors")
+    health = _mapping(sources.get("health", recovery.get("leases")), "health")
+    revocation = _mapping(sources.get("revocation"), "revocation")
+    accounting = _mapping(sources.get("accounting", recovery.get("accounting")), "accounting")
+    budget_pressure = _mapping(sources.get("budget_pressure"), "budget_pressure")
+    unresolved = _public_list(sources.get("unresolved_recovery_items", recovery.get("uncertain_dispatch_refs", operator_state.get("unresolved_reconciliation_refs", []))), "unresolved_recovery_items")
+    namespace_anomalies = _public_list(sources.get("namespace_delegation_anomalies"), "namespace_delegation_anomalies")
+    soft = _mapping(sources.get("soft_governance", operator_state.get("soft_governance")), "soft_governance")
+    soft_status = _public(soft.get("status", "ADVISORY_ONLY"), "soft_governance.status")
+    if soft_status not in {"ADVISORY_ONLY", "CANDIDATE_ESI_SIGNAL", "READY_NOT_RUN", "NOT_RUN_LIVE_EXTERNAL", "WITHDRAWN"}:
+        raise DriverConsoleError("soft governance status must remain advisory/candidate")
+    authority_effects = soft.get("authority_effects", ["NONE"])
+    if not isinstance(authority_effects, list) or any(effect != "NONE" for effect in authority_effects):
+        raise DriverConsoleError("soft governance projection attempts a hard authority effect")
+    claim_ceiling = _public(soft.get("claim_ceiling", "ADVISORY_ONLY_CANDIDATE_NOT_TRUTH_OR_AUTHORITY"), "soft_governance.claim_ceiling")
+    if not any(word in claim_ceiling.casefold() for word in ("advisory", "candidate", "soft")):
+        raise DriverConsoleError("soft governance claim ceiling is not advisory")
+    technical_refs = _public_list(sources.get("technical_refs"), "technical_refs")
+
+    if unresolved:
+        recommended = ["先处理 unresolved reconciliation，再考虑任何外部副作用重试。"]
+    elif namespace_anomalies:
+        recommended = ["检查 namespace/delegation 异常，并在显式授权前保持跨 namespace deny。"]
+    elif budget_pressure.get("status") in {"PRESSURED", "EXHAUSTED"}:
+        recommended = ["检查 quota/budget pressure；priority 不构成无限抢占或预算豁免。"]
+    else:
+        recommended = ["仅在当前 policy、lease、Pack pin 与 budget ceiling 内继续 bounded local work。"]
+    recommended.extend(_public_list(sources.get("additional_operator_actions"), "additional_operator_actions"))
+
+    surface = {
+        "schema": DRIVER_RECOVERY_SURFACE_SCHEMA,
+        "human_summary": "系统恢复 projection 已生成；它显示当前可继续范围与未决项，不替代 Event Ledger 或 Owner 判断。",
+        "os_identity": os_identity,
+        "schema_epoch": schema_epoch,
+        "recovery_status": _public(recovery.get("status", "NOT_RECORDED"), "recovery.status"),
+        "trusted_snapshot": {"id": _public(snapshot.get("id", operator_state.get("trusted_snapshot", "not-recorded")), "trusted_snapshot.id"), "tail_events": snapshot.get("tail_events", recovery.get("ledger_tail_events", 0))},
+        "last_known_good": dict(last_known_good),
+        "episodes": {"state_counts": dict(sorted(episode_counts.items())), "running": episode_counts.get("RUNNING", 0), "queued": episode_counts.get("QUEUED", 0), "paused": episode_counts.get("PAUSED", 0), "reconciliation": episode_counts.get("REQUIRES_RECONCILIATION", 0)},
+        "active_pack_versions": active_packs,
+        "executors": {"admission": dict(executor), "health": dict(health), "revocation": dict(revocation)},
+        "budget_quota_pressure": {"pressure": dict(budget_pressure), "accounting": {key: accounting[key] for key in sorted(accounting) if key in {"status", "reservation_count", "event_count", "dimension_count"}}},
+        "unresolved_recovery_items": unresolved,
+        "namespace_delegation_anomalies": namespace_anomalies,
+        "soft_governance": {"status": soft_status, "candidate_or_advisory": True, "authority_effects": ["NONE"], "claim_ceiling": claim_ceiling, "pointers": _public_list(soft.get("pointers"), "soft_governance.pointers")},
+        "recommended_operator_actions": recommended,
+        "technical_refs": technical_refs,
+        "boundaries": ["Projection only; Event Ledger and owned stores remain canonical.", "Soft governance/ESI remains advisory or candidate and cannot establish truth, permission, safety release, Owner acceptance or epistemic acceptance.", "External executor completion and unknown side effects remain reconciliation-bound."],
+    }
+    return surface
+
+
+def render_driver_recovery_surface(surface: Mapping[str, Any]) -> str:
+    if not isinstance(surface, Mapping) or surface.get("schema") != DRIVER_RECOVERY_SURFACE_SCHEMA:
+        raise DriverConsoleError("invalid Driver Recovery Surface")
+    trusted = _mapping(surface.get("trusted_snapshot"), "surface.trusted_snapshot")
+    soft = _mapping(surface.get("soft_governance"), "surface.soft_governance")
+    lines = [
+        "Driver Recovery Surface R2",
+        f"人话：{surface.get('human_summary')}",
+        f"OS identity/schema: {surface.get('os_identity')} / {surface.get('schema_epoch')}",
+        f"恢复状态: {surface.get('recovery_status')}; trusted snapshot={trusted.get('id')} tail_events={trusted.get('tail_events')}",
+        f"Active Packs: {', '.join(surface.get('active_pack_versions') or ['none recorded'])}",
+        f"Episodes: {json.dumps(surface.get('episodes', {}), ensure_ascii=False, sort_keys=True)}",
+        f"Unresolved recovery items: {', '.join(surface.get('unresolved_recovery_items') or ['none recorded'])}",
+        f"Soft governance/ESI: status={soft.get('status')} candidate_or_advisory={soft.get('candidate_or_advisory')} claim_ceiling={soft.get('claim_ceiling')}",
+        "Recommended operator actions:",
+        *[f"- {item}" for item in surface.get("recommended_operator_actions", [])],
+        "Technical records:",
+        *[f"- {item}" for item in surface.get("technical_refs", [])],
+        "Boundary: this is a projection, not a second canonical state; it cannot establish external success, truth, Owner acceptance or epistemic acceptance.",
+    ]
+    return "\n".join(lines)
+
+
+__all__ = ["DRIVER_CONSOLE_SCHEMA", "DRIVER_RECOVERY_SURFACE_SCHEMA", "DriverConsoleError", "build_driver_snapshot", "render_driver_console", "build_driver_recovery_surface", "render_driver_recovery_surface"]

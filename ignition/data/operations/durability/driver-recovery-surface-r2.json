@@ -1,0 +1,8 @@
+{
+  "schema_version": "ignition-driver-recovery-surface-r2",
+  "projection_rule": "HUMAN_READABLE_PROJECTION_NOT_SECOND_CANONICAL_STATE",
+  "required_views": ["os_identity_schema_epoch", "trusted_snapshot_ledger_tail", "last_known_good", "episodes", "active_packs", "executor_admission_health_revocation", "budget_quota_pressure", "unresolved_recovery", "namespace_delegation", "soft_governance_esi", "recommended_actions", "technical_refs"],
+  "soft_governance_rule": "EXPLICIT_ADVISORY_OR_CANDIDATE_NO_TRUTH_PERMISSION_SAFETY_OWNER_OR_EPISTEMIC_ESCALATION",
+  "human_first_rule": "PLAIN_LANGUAGE_SUMMARY_PRECEDES_TECHNICAL_RECORD_LINKS",
+  "claim_ceiling": "OPERATOR_PROJECTION_ONLY_NO_EXTERNAL_COMPLETION_PRODUCTION_READINESS_OWNER_ACCEPTANCE_OR_EPISTEMIC_ACCEPTANCE"
+}
