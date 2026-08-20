@@ -12,6 +12,7 @@ by this run and remains `DEFERRED_PENDING_REBASE`.
 | 01 | COMPLETED | pending closure | pending closure | Bounded ESI candidate definition, alternative explanations, claim ceiling and falsification/downgrade criteria. |
 | 02 | COMPLETED | pending closure | pending closure | Machine-enforced soft-governance non-authority contract and fail-closed negative fixtures. |
 | 03 | COMPLETED | pending closure | pending closure | Source-bound epistemic transition grammar with 12 rules, negative transitions and provenance validator. |
+| 04 | COMPLETED | pending closure | pending closure | Deterministic original Structural Governance Surface generated from grammar, contract and Current identity. |
 
 ## Boundary
 
@@ -69,3 +70,12 @@ Governance Surface state and the non-authority invariant.
 - Unit tests: `tests/test_transition_grammar.py` (`3/3`).
 - Rules cover engineering, publication, knowledge, agent, owner and
   cross-cutting boundaries, including unknown retention and withdrawal/rebound.
+
+## Step 04 evidence
+
+- Generator: `tools/generate_structural_governance_surface.py`.
+- Machine projection: `data/epistemic-governance/structural-surface-r0.json`.
+- Human/machine reading surface: `docs/architecture/structural-governance-surface.md`.
+- Projection contains `12/12` grammar relations and labels itself
+  `ADVISORY_READING_SURFACE_NOT_PROMPT`.
+- Deterministic generator check passed; unit tests `3/3` passed.

@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Arvin-liu/when-systems-catch-fire/schemas/epistemic-governance/structural-surface-r0.schema.json",
+  "type": "object",
+  "required": ["schema_version", "surface_id", "projection_type", "surface_role", "generated_from", "authority_ceiling", "items"],
+  "properties": {
+    "schema_version": {"const": "structural-surface-r0"},
+    "surface_id": {"const": "STRUCTURAL_GOVERNANCE_SURFACE_R0"},
+    "projection_type": {"const": "ORIGINAL_STRUCTURE"},
+    "surface_role": {"const": "ADVISORY_READING_SURFACE_NOT_PROMPT"},
+    "generated_from": {
+      "type": "object",
+      "required": ["transition_grammar", "non_authority_contract", "current_identity"],
+      "properties": {
+        "transition_grammar": {"type": "string"},
+        "non_authority_contract": {"type": "string"},
+        "current_identity": {"type": "string"}
+      },
+      "additionalProperties": false
+    },
+    "authority_ceiling": {"type": "string", "minLength": 80},
+    "current_state": {
+      "type": "object",
+      "required": ["status", "epistemically_accepted"],
+      "properties": {
+        "status": {"const": "CURRENT_WITH_OPEN_OBLIGATIONS"},
+        "epistemically_accepted": {"const": 0}
+      },
+      "additionalProperties": false
+    },
+    "items": {
+      "type": "array",
+      "minItems": 12,
+      "items": {
+        "type": "object",
+        "required": ["stable_id", "domain", "label", "relation", "blocked_transitions", "needed_for_stronger_transition", "licensed_weaker_conclusion", "unknown_behavior", "status"],
+        "properties": {
+          "stable_id": {"type": "string"},
+          "domain": {"type": "string"},
+          "label": {"type": "string"},
+          "relation": {
+            "type": "object",
+            "required": ["antecedent", "candidate_transition"],
+            "properties": {"antecedent": {"type": "string"}, "candidate_transition": {"type": "string"}},
+            "additionalProperties": false
+          },
+          "blocked_transitions": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+          "needed_for_stronger_transition": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+          "licensed_weaker_conclusion": {"type": "string"},
+          "unknown_behavior": {"type": "string"},
+          "status": {"enum": ["CURRENT", "HISTORICAL"]}
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}
