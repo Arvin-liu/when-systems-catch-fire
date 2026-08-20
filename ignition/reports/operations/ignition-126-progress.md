@@ -14,6 +14,7 @@ by this run and remains `DEFERRED_PENDING_REBASE`.
 | 03 | COMPLETED | pending closure | pending closure | Source-bound epistemic transition grammar with 12 rules, negative transitions and provenance validator. |
 | 04 | COMPLETED | pending closure | pending closure | Deterministic original Structural Governance Surface generated from grammar, contract and Current identity. |
 | 05 | COMPLETED | pending closure | pending closure | Five deterministic exposure/control projections with recorded relation, terminology, style and length properties. |
+| 06 | COMPLETED | pending closure | pending closure | Sixteen synthetic evidence cases with gold boundaries, forbidden transitions and over-caution negatives across nine domains. |
 
 ## Boundary
 
@@ -91,3 +92,14 @@ Governance Surface state and the non-authority invariant.
 - Deterministic projection check passed; unit tests `4/4` passed.
 - The terminology-only arm contains vocabulary without transition relations;
   the delexicalized arm retains relations without named governance terms.
+
+## Step 06 evidence
+
+- Benchmark: `data/epistemic-governance/synthetic-evidence-benchmark-r0.json`.
+- Schema/validator: `schemas/epistemic-governance/synthetic-evidence-benchmark-r0.schema.json` and `tools/validate_synthetic_benchmark.py`.
+- Corpus size: `16` cases across `9` domains, each with a fixed packet,
+  strongest licensed conclusion, forbidden stronger conclusions, acceptable
+  unknown/conditional answers and scoring anchors.
+- Over-caution risk is explicit in `15` cases; missing evidence/provenance and
+  withdrawal, consensus, permission and M/E boundaries are represented.
+- Unit tests `3/3` passed; no live external fact is required.

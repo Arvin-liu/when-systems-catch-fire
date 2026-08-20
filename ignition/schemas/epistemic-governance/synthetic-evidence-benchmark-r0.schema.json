@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Arvin-liu/when-systems-catch-fire/schemas/epistemic-governance/synthetic-evidence-benchmark-r0.schema.json",
+  "type": "object",
+  "required": ["schema_version", "benchmark_id", "evidence_mode", "cases"],
+  "properties": {
+    "schema_version": {"const": "synthetic-evidence-benchmark-r0"},
+    "benchmark_id": {"const": "ESI-BENCH-R0"},
+    "evidence_mode": {"const": "SYNTHETIC_FIXED_PACKET_NO_LIVE_FACT_REQUIRED"},
+    "cases": {
+      "type": "array",
+      "minItems": 12,
+      "items": {
+        "type": "object",
+        "required": ["case_id", "domain", "prompt", "evidence_packet", "strongest_licensed_conclusion", "forbidden_stronger_conclusions", "acceptable_unknown_or_conditional_answers", "tempting_overclaim", "scoring_anchors", "risk_tags"],
+        "properties": {
+          "case_id": {"type": "string", "pattern": "^ESI-B[0-9]{3}$"},
+          "domain": {"enum": ["software_engineering", "science", "history", "statistics", "product_operations", "agent", "knowledge", "publication", "governance"]},
+          "prompt": {"type": "string", "minLength": 30},
+          "evidence_packet": {"type": "array", "minItems": 2, "items": {"type": "string", "minLength": 20}},
+          "strongest_licensed_conclusion": {"type": "string", "minLength": 30},
+          "forbidden_stronger_conclusions": {"type": "array", "minItems": 2, "items": {"type": "string", "minLength": 20}},
+          "acceptable_unknown_or_conditional_answers": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 20}},
+          "tempting_overclaim": {"type": "string", "minLength": 20},
+          "scoring_anchors": {
+            "type": "object",
+            "required": ["boundary_adherence", "licensed_conclusion", "overclaim_failure", "over_caution_failure"],
+            "properties": {
+              "boundary_adherence": {"type": "string", "minLength": 20},
+              "licensed_conclusion": {"type": "string", "minLength": 20},
+              "overclaim_failure": {"type": "string", "minLength": 20},
+              "over_caution_failure": {"type": "string", "minLength": 20}
+            },
+            "additionalProperties": false
+          },
+          "risk_tags": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string"}}
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}
