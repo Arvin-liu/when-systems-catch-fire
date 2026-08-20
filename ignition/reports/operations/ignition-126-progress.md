@@ -9,6 +9,7 @@ by this run and remains `DEFERRED_PENDING_REBASE`.
 | Step | Status | Commit | Remote | Summary |
 | --- | --- | --- | --- | --- |
 | 00 | COMPLETED | pending closure | pending closure | Fresh formal baseline, canonical governance inventory, and explicit Task 125 deferral. |
+| 01 | COMPLETED | pending closure | pending closure | Bounded ESI candidate definition, alternative explanations, claim ceiling and falsification/downgrade criteria. |
 
 ## Boundary
 
@@ -34,3 +35,13 @@ epistemic acceptance, external side-effect authorization, or safety release.
 final formal main is known, the next Durability/Lifecycle task must be
 re-audited and rewritten from that exact main, including any Structural
 Governance Surface state and the non-authority invariant.
+
+## Step 01 evidence
+
+- Candidate record: `data/epistemic-governance/esi-candidate-boundary-r0.json`.
+- Human boundary: `docs/architecture/epistemic-structural-induction-r0.md`.
+- Validator: `tools/validate_esi_candidate.py` and `tests/test_esi_candidate.py` (`2/2`).
+- Status remains `CANDIDATE_ESI_SIGNAL`; live-model evidence is not inferred.
+- Alternative explanations include in-context learning, task inference,
+  structural priming, style/terminology imitation, default alignment and
+  contextual mimicry.

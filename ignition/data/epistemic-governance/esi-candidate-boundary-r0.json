@@ -1,0 +1,72 @@
+{
+  "schema_version": "esi-candidate-boundary-r0",
+  "candidate_id": "ESI-R0",
+  "current_status": "CANDIDATE_ESI_SIGNAL",
+  "definition": "A candidate inference-time effect in which repeated, visible and structured epistemic relations in a task environment may help a model infer local rules about what supports what, which transitions are not licensed, and when uncertainty must be retained, with possible effects on later answers.",
+  "scope": {
+    "time_scale": "INFERENCE_TIME_CONTEXTUAL",
+    "mechanism_status": "CANDIDATE_PHENOMENON",
+    "not_weight_update": true,
+    "not_hard_authority": true
+  },
+  "alternative_explanations": [
+    {
+      "id": "IN_CONTEXT_LEARNING",
+      "label": "in-context learning",
+      "description": "The model may infer a task or response mapping from examples without any special governance structure.",
+      "disambiguation_test": "Match examples, token budget and task format while varying whether the state-transition relations are present."
+    },
+    {
+      "id": "TASK_INFERENCE",
+      "label": "task inference",
+      "description": "The model may infer that the evaluator rewards cautious answers from the general task framing.",
+      "disambiguation_test": "Use neutral instructions and held-out domains, then separate exposure from challenge wording and scoring."
+    },
+    {
+      "id": "STRUCTURAL_PRIMING",
+      "label": "structural priming",
+      "description": "Repeated relation patterns may prime a form of continuation without inducing a governance-specific boundary.",
+      "disambiguation_test": "Compare delexicalized relation exposure with content-matched prose and test delayed transfer."
+    },
+    {
+      "id": "STYLE_IMITATION",
+      "label": "style imitation",
+      "description": "The model may copy hedges, headings or cautious wording while leaving the decision boundary unchanged.",
+      "disambiguation_test": "Score unauthorized transitions and licensed conclusions separately from surface style similarity."
+    },
+    {
+      "id": "TERMINOLOGY_IMITATION",
+      "label": "terminology imitation",
+      "description": "The model may repeat terms such as unknown or evidence ceiling without respecting their relationships.",
+      "disambiguation_test": "Treat terminology leakage as an independent metric and include terminology-only controls."
+    },
+    {
+      "id": "DEFAULT_ALIGNMENT",
+      "label": "default alignment or caution",
+      "description": "A model may already prefer calibrated and cautious answers independently of the exposure material.",
+      "disambiguation_test": "Use a no-exposure baseline across the same synthetic packets and report deltas rather than absolute caution."
+    },
+    {
+      "id": "CONTEXTUAL_MIMICRY",
+      "label": "contextual mimicry",
+      "description": "The model may infer a local persona or discourse norm rather than a transferable evidence boundary.",
+      "disambiguation_test": "Use unrelated delayed-transfer cases and challenge pressure that rewards direct overclaiming."
+    }
+  ],
+  "claim_ceiling": [
+    "The record defines a research candidate and repository protocol, not a confirmed causal mechanism.",
+    "Any observed change is bounded to the tested model, context, prompt, benchmark, language and run configuration.",
+    "No result establishes permanent learning, weight change, a new law, external validity or first discovery.",
+    "Repository tests demonstrate tool and contract behavior; they do not establish an ESI effect in a live model.",
+    "Soft exposure can never grant permission, truth, M/E, Owner authority, epistemic acceptance or safety release."
+  ],
+  "falsification_criteria": [
+    "Delexicalized structure does not outperform terminology-only, style-matched or broken-structure controls on boundary adherence.",
+    "The apparent effect occurs only in one model, one context length, one language or one prompt family.",
+    "Adversarial direct-overclaim pressure removes the effect across the tested exposure arms.",
+    "Blinded annotation agreement cannot distinguish decision-boundary behavior from style or terminology imitation.",
+    "Improved caution is paired with unacceptable loss of licensed conclusions, usefulness or task completion.",
+    "Independent replication or relevant primary literature provides a better explanation that does not require ESI."
+  ],
+  "downgrade_state": "ANECDOTE_OR_OPEN_QUESTION"
+}
