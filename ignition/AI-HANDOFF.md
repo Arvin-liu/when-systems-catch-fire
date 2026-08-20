@@ -3,16 +3,18 @@
 ## 当前版本
 
 Agent Platform R2 与 External Agent Federation R1 已在 Task 122 正式 main
-基线上闭合；Task 124 的 branch work 仍必须经过最终 Step 12 fast-forward、
+基线上闭合；Task 126 的 branch work 仍必须经过最终 Step 17 fast-forward、
 远端、全新克隆和 1111 receipt 才能称为 main 当前状态。本页的工程边界不构成
 外部能力或 epistemic acceptance，`CURRENT_WITH_OPEN_OBLIGATIONS` 与
 `EPISTEMICALLY_ACCEPTED=0` 保持不变。当前身份 contract/facts 见
 `data/architecture/current-system-identity.json`、`data/architecture/current-facts.json`：
 点火是 OS / orchestration-governance layer 与 driver，外部 Agent 是可替换
 executor，本地执行层是 `REFERENCE_EXECUTOR / CONFORMANCE_EXECUTOR /
-FALLBACK_MINIMAL`。
+FALLBACK_MINIMAL`。Task 125 保持 `DEFERRED_PENDING_REBASE`，不从旧基线执行。
+Structural Governance Surface 是 advisory cross-cutting overlay，不改变
+capability、permission、truth、Owner 或 epistemic status。
 
-当前地图是 `0.9.0`（`0.8.0` 为 Historical），语义主干把中央 Ignition OS
+当前地图是 `0.10.0`（`0.9.0` 为 Historical），语义主干把中央 Ignition OS
 控制脊柱、外部 Federation/replaceable executors 与 Domain/Skill Packs 分开；
 版本、计数和 live ceiling 以 `data/architecture/current-facts.json` 及其人读投影为准。
 
@@ -25,6 +27,7 @@ FALLBACK_MINIMAL`。
 - `data/agent-runtime/pilots/r2-offline-repository-maintenance/`：fresh-clone、A/B/C、故障恢复、对抗拒绝和 bounded memory 的离线观察回执。
 - `data/operations/propagation/agent-platform-r2-propagation-contract.json`：R2 source-domain 与 blast-radius 机器契约；唯一系统图仍由 registry/topology/layout 派生。
 - `docs/architecture/external-agent-federation-r1.md`、`agent_federation/` 与 `data/agent-federation/`：Task 122 的 OS/executor contract、OpenClaw/Hermes/Codex adapters、Reference freeze、handoff/failover 和 disposable pilot 边界；联邦 source domain 只进入 `agent_platform.federation`。
+- `docs/architecture/esi-human-surface-r0.md`、`data/epistemic-governance/` 与 `data/agent-federation/soft-context-exposure-contract-r0.json`：Task 126 的 Structural Governance Surface、候选 ESI 边界和 advisory soft-context contract；它不能扩大 capability 或 permission。
 
 R2 仍不包括 live provider、daemon、multi-Agent 并发、vector memory、网络/浏览、
 外部仓库 mutation、人格/意识或普适安全证明。`Kernel ≠ Knowledge`、
@@ -102,9 +105,9 @@ PR #55 已将 121Q23 Adaptive Relational Network 合并进 `main`。涉及关系
 
 121Q24 建立的迭代操作法已在 PR #56 验收并合并后成为当前仓库操作能力；未来状态改变任务必须按 `ITERATION.md` 记录 gap、claim ceiling、同步矩阵、验证和回执。遵循该方法不证明真理、价值、因果、完整性或正确性。
 
-当前方法是 `1.4.0`（Current），系统图是 `0.9.0`（Current）；`0.8.0` 是上一版 Historical，`0.7.0` 是更早 Historical。
+当前方法是 `1.4.0`（Current），系统图是 `0.10.0`（Current）；`0.9.0` 是上一版 Historical，`0.8.0` 是更早 Historical。Structural Governance Surface 仍是 advisory overlay，不增加 L7。
 
-方法 `1.3.0` 与系统图 `0.6.0`、`0.5.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0`、`0.2.0`、`0.3.0`、`0.4.0` 为更早 Historical。当前方法要求从构件 registry、类型化 topology 与 `data/operations/synchronization-surfaces.json` 计算全项目传播闭包。README、`HUMAN-READING.md`、`RESULTS/`、项目现状、人类 AI 指南、AI 冷启动、Agent 交接、机器入口和版本历史都是必须评估的项目表面。实现完成不能替代仓库同步完成；本地验证也不能声称任何未登记的实时外部状态已验证。
+方法 `1.3.0` 与系统图 `0.7.0`、`0.6.0`、`0.5.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0`、`0.2.0`、`0.3.0`、`0.4.0` 为更早 Historical。当前方法要求从构件 registry、类型化 topology 与 `data/operations/synchronization-surfaces.json` 计算全项目传播闭包。README、`HUMAN-READING.md`、`RESULTS/`、项目现状、人类 AI 指南、AI 冷启动、Agent 交接、机器入口和版本历史都是必须评估的项目表面。实现完成不能替代仓库同步完成；本地验证也不能声称任何未登记的实时外部状态已验证。
 
 Q25C 的每表面 `blocks` 生命周期原则继续有效；任务 101 退役独立阅读站表面，当前人类层由仓库内机器/人类双输出、main 验证和全新克隆复验收口。未来外部表面必须单独登记与 attestation。
 

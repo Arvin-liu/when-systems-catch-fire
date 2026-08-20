@@ -1,19 +1,19 @@
 {
   "claim_ceiling": "Deterministic repository-derived current facts and navigation support only; no external truth, Owner acceptance, production safety or epistemic upgrade.",
   "contract_id": "CURRENT_STATE_SYNC_INVARIANT",
-  "current_iteration_boundary": 124,
+  "current_iteration_boundary": 126,
   "facts": {
     "architecture": {
-      "current_map_version": "0.9.0",
+      "current_map_version": "0.10.0",
       "hidden_components": 12,
-      "historical_map_version": "0.8.0",
-      "layout_version": "1.7.0",
-      "registry_components": 91,
+      "historical_map_version": "0.9.0",
+      "layout_version": "1.8.0",
+      "registry_components": 92,
       "semantic_trunk_route_steps": 6,
       "semantic_trunk_version": "semantic-trunk-r1",
-      "typed_topology_relations": 119,
-      "visible_map_nodes": 79,
-      "visible_typed_edges": 84
+      "typed_topology_relations": 122,
+      "visible_map_nodes": 80,
+      "visible_typed_edges": 83
     },
     "environmental_residuals": [
       "Full unittest discovery was deferred to Step 12 after the baseline probe produced no output for several minutes; the 121 targeted core gate completed separately.",
@@ -66,8 +66,8 @@
       }
     },
     "iteration": {
-      "current_iteration_boundary": 124,
-      "current_map_version": "0.9.0",
+      "current_iteration_boundary": 126,
+      "current_map_version": "0.10.0",
       "method_status": "Current",
       "method_version": "1.4.0"
     },
@@ -89,7 +89,7 @@
       ]
     }
   },
-  "identity_epoch": "os-control-plane-r2",
+  "identity_epoch": "os-control-plane-r2-esi-r0",
   "schema_version": "current-facts-r1",
   "source_fingerprints": [
     {
@@ -102,11 +102,11 @@
     },
     {
       "path": "ignition/data/architecture/current-system-identity.json",
-      "sha256": "e6d8401d548ec941172a964b5e0c970e71025a8ad7eb7c0af68aebb58709e963"
+      "sha256": "9bb91fa88c6ecd4a7972a95f19054a57a55cd4ee68523707cf6595963ee34840"
     },
     {
       "path": "ignition/data/architecture/interactive-system-map-layout.json",
-      "sha256": "4bf9a127436b186f7b40ef13f730e7633e83107981255ab7b1b610b638ab05a1"
+      "sha256": "c3ccc3cd2183bb85b7e7411e641cb537ea8e6301a980382118d37e620916b42e"
     },
     {
       "path": "ignition/data/foundation/function-assets/closure-summary.json",
@@ -122,7 +122,7 @@
     },
     {
       "path": "ignition/data/governance/human-surface/materiality-manifest.json",
-      "sha256": "ea10f8cf1519a2b5d48b918e5713b919ce3bb0a048b368ac405980105c5c30b5"
+      "sha256": "87481d1ccb44559386342c08d5011bc116b5196b0ffa185ef4d5f30466444fe0"
     },
     {
       "path": "ignition/data/governance/knowledge-experience/manifest.json",
@@ -130,11 +130,11 @@
     },
     {
       "path": "ignition/data/operations/change-propagation-topology.json",
-      "sha256": "000aa3eb6810e56a7fefcdb5dd949aed17421afeeb748b63b6c4fed34c3113e2"
+      "sha256": "d1df56416c3e6b5737fce878a60858f929a8ef9c17b80d6630049c66f16c6685"
     },
     {
       "path": "ignition/data/operations/project-components.json",
-      "sha256": "488674560938129595143aff0662fed5192c85b116cf037b984552c214bf985a"
+      "sha256": "3bf0cfb8beb0e34c57fc7014d3779e88c8312e24d9d385c446ef5fee8b7259b9"
     },
     {
       "path": "ignition/data/operations/synchronization-surfaces.json",

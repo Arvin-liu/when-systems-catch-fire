@@ -12,8 +12,10 @@ provenance、handoff 和结果吸收；它是 OS / orchestration-governance laye
 `REFERENCE_EXECUTOR / CONFORMANCE_EXECUTOR / FALLBACK_MINIMAL`。
 Knowledge 是第一个大型 Domain Pack，不是整个系统本体；Research、Writing、
 Maintenance 也各自受 manifest、schema、validator 和 authority ceiling 约束。
-当前唯一完整系统图为 `0.9.0`，`0.8.0` 仅作 Historical；语义主干把中央 OS
+当前唯一完整系统图为 `0.10.0`，`0.9.0` 仅作 Historical；语义主干把中央 OS
 控制脊柱、外部 Federation/replaceable executors 与 Domain/Skill Packs 分开。
+Structural Governance Surface 作为 advisory cross-cutting overlay 单独登记，
+只提供阅读/实验上下文，不增加 L7，不改变 capability、permission 或 epistemic status。
 版本、计数和 live ceiling 以 [Current Facts](./architecture/current-facts.md) 及其
 JSON 投影为准。
 
@@ -35,6 +37,7 @@ AGI、生产安全、现实因果、外部有效性或 Owner acceptance 证明�
 - 从 canonical registries 保留来源、命题、形式对象、论证、证据、证明义务、反例、验证、迁移和人类结果的独立谱系；工程闭合不升级内容真值。
 - 通过 `current-facts.json` 确定性投影同步可复算事实；本页不手抄第二份数量表。[Current Facts](../data/architecture/current-facts.json) 与[人读 facts block](./architecture/current-facts.md) 是窄范围派生入口。
 - 以唯一 registry/topology/layout 生成系统图；图是可点击的仓库导航与依赖投影，不是现实因果图、严格同构或完备性证明。
+- Task 126 的 Structural Governance Surface 由候选 ESI、过渡语法、不越权合同和软上下文暴露合同共同限定；它是 advisory，不是权限、真值、Owner 或安全放行层。
 - 控制平面把事件、权限收窄、共享资源、并发 ready-set、健康租约、队列、外部回执和操作记忆分别持久化；Driver Console 只投影下一步与开放义务，不成为第二真相源。
 - R2/Federation conformance 仍以 disposable local fixture 为主；Step 09 只做了 fresh public CLI probe 和安全、有界的临时 workspace smoke 尝试，OpenClaw 明确 `SKIPPED_UNSAFE_OR_UNAVAILABLE`，Hermes/Codex 因 hard timeout 同样未产生可接受 completion。详细记录见 [`external-conformance-smoke-r1.json`](../data/operations/iterations/123/external-conformance-smoke-r1.json)；当前 live provider/inference ceiling 仍未建立。
 
@@ -45,6 +48,7 @@ AGI、生产安全、现实因果、外部有效性或 Owner acceptance 证明�
 - 大量资产仍缺精确定义、类型、量纲、证明、反例、外部来源、数据或复现；MCF、PSD、ARN、Function OS 与现实使用效用仍需独立证据和失败条件。
 - 四力统一、量子引力、暗物质、暗能量、宇宙常数和测量问题没有被本项目解决；任何模型失败、相似性、工程完成或 Agent 共识都不能推出普遍 no-go theorem。
 - 自动审计、系统图、Pack pilot、CI、fresh clone 和 receipt 都是仓库证据；它们不等于专家裁决、同行评审、外部真值、生产安全、Owner acceptance 或 epistemic acceptance。
+- ESI 仍是 `CANDIDATE_ESI_SIGNAL`；live provider 状态保持 `NOT_RUN_LIVE_EXTERNAL`，术语/风格模仿、越权失败、过度谨慎和延迟迁移仍需独立复核。Task 125 保持 `DEFERRED_PENDING_REBASE`。
 
 ## 历史任务上下文（可回链，不是 Current 数字权威）
 

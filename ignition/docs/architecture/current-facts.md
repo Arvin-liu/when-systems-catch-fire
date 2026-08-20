@@ -1,9 +1,9 @@
 <!-- BEGIN GENERATED CURRENT-FACTS r1; DO NOT EDIT -->
 # Current Facts（机器推导事实）
 
-- Identity epoch: `os-control-plane-r2`；current iteration boundary: `124`。
-- Architecture registry: `91` components；`79` visible map nodes；`12` hidden represented components；`119` typed relations；`84` visible typed edges。
-- Map/method: map `0.9.0` Current（historical `0.8.0`）；layout `1.7.0`；semantic trunk `semantic-trunk-r1` with `6` bounded route stages；method `1.4.0` `Current`。
+- Identity epoch: `os-control-plane-r2-esi-r0`；current iteration boundary: `126`。
+- Architecture registry: `92` components；`80` visible map nodes；`12` hidden represented components；`122` typed relations；`83` visible typed edges。
+- Map/method: map `0.10.0` Current（historical `0.9.0`）；layout `1.8.0`；semantic trunk `semantic-trunk-r1` with `6` bounded route stages；method `1.4.0` `Current`。
 - Packs: `4` packs；`10` declared capability routes。
 - Federation: `3` adapter inventory entries；live ceiling `NOT_RUN_LIVE_EXTERNAL_INVOCATION`；local boundary `REFERENCE_EXECUTOR / CONFORMANCE_EXECUTOR / FALLBACK_MINIMAL`。
 - Foundation: function identity cards `5607`；function quarantine/pending `4808`；non-function claims `16041`；non-function quarantine/pending `4656`。

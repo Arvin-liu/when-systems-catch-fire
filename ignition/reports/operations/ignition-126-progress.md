@@ -23,6 +23,7 @@ by this run and remains `DEFERRED_PENDING_REBASE`.
 | 12 | COMPLETED | pending closure | pending closure | Synthetic offline response pilot with terminology, boundary, attack, over-caution, withdrawal, and transfer checks. |
 | 13 | COMPLETED | pending closure | pending closure | Human-readable first screen using the Zhiyuan Writing Method boundary and explicit failure downgrade. |
 | 14 | COMPLETED | pending closure | pending closure | Provider-neutral OS/Federation soft-context exposure contract with no capability or permission delta. |
+| 15 | COMPLETED | pending closure | pending closure | Synchronized the advisory Structural Governance Surface across identity, registry, topology, layout, map, current facts, human surfaces and state delta; Task 125 remains deferred. |
 
 ## Boundary
 
@@ -211,3 +212,22 @@ Governance Surface state and the non-authority invariant.
 - Validator runtime scan passed against the existing Agent OS/Federation
   runtime, and permission/private-session negative fixtures passed; unit tests
   `3/3` passed.
+
+## Step 15 evidence
+
+- Current identity advanced to `os-control-plane-r2-esi-r0` with iteration
+  boundary `126`; the Structural Governance Surface is a cross-cutting
+  `ADVISORY_ONLY` overlay and does not add L7 or enter the hard control spine.
+- Registry/topology/layout were synchronized to registry `1.9.0`, topology
+  `1.8.0`, layout `1.8.0`, and map `0.10.0` with `0.9.0` historical. Two
+  documentation-only topology relations remain hidden from the compact map;
+  the visible projection is `80` nodes and `83` typed edges.
+- `generate_interactive_system_map.py --check`,
+  `generate_current_facts.py --check`, and geometry validation passed. Geometry
+  remains `crossing=178` with `blank_reduction=0.8741007194`.
+- The Current-State receipt is `ARCHITECTURE_CHANGED`; all registered sync
+  surfaces are `CHANGE`, current facts are deterministic, and the human front
+  door plus Human Surface materiality/contract gates pass (`48` entries).
+- Step 125 is still `DEFERRED_PENDING_REBASE`; no live provider/model output,
+  external truth, permission expansion, Owner acceptance or epistemic upgrade
+  was introduced.

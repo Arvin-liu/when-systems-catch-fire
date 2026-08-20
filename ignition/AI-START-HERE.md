@@ -10,7 +10,9 @@
 和 `docs/architecture/current-facts.md`：点火是 OS / orchestration-governance
 layer 与 driver，OpenClaw、Hermes、Codex 是可替换 external executors；本地层
 仍是 `REFERENCE_EXECUTOR / CONFORMANCE_EXECUTOR / FALLBACK_MINIMAL`；这些是
-replaceable executors，而不是 OS authority。
+replaceable executors，而不是 OS authority。Structural Governance Surface 是
+advisory cross-cutting overlay，只能作为阅读/实验上下文，不能改变 capability、
+permission 或 epistemic status。
 
 ## 读取顺序
 
@@ -26,7 +28,7 @@ replaceable executors，而不是 OS authority。
 9. llms.txt：机器可读边界。
 10. AI-HANDOFF.md：当前权威、兼容和任务交接。
 11. data/foundation/project-state.json、data/architecture/agentization-boundary-r0.json 与 registry-manifest.json：机器状态与边界投影。
-12. 当前任务命令、data/operations/iterations/124/progress.jsonl 与相关 source/schema；Task 124 的 identity contract、current-facts 和同步 receipt 是本轮当前状态入口。
+12. 当前任务命令、data/operations/iterations/126/progress.jsonl 与相关 source/schema；Task 126 的 identity contract、current-facts 和同步 receipt 是本轮当前状态入口，Task 125 保持 `DEFERRED_PENDING_REBASE`。
 
 ## R2 冷启动补充
 
@@ -59,7 +61,7 @@ operational memory 和 Driver Console 作为独立、有界的 control-plane rec
 
 若任务涉及当前展示的之元写作法成果，还要读取 `docs/publication/zhiyuan-writing-showcase.md` 与 `data/publication/zhiyuan-writing-showcase.json`，并沿每项记录回到作品、案例来源链、点火分析和方法版本。首页只投影最近三项，不是完整清单或真值权威。
 
-若任务需要全项目导航，读取 `docs/architecture/interactive-system-map.md`、`data/architecture/interactive-system-map.json` 与生成 SVG。图是当前导航接口，不是 L7、事实证明或永久唯一总地图。
+若任务需要全项目导航，读取 `docs/architecture/interactive-system-map.md`、`data/architecture/interactive-system-map.json`、`docs/architecture/esi-human-surface-r0.md` 与生成 SVG。图是当前导航接口，不是 L7、事实证明或永久唯一总地图；Structural Governance Surface 保持 advisory。
 
 若任务涉及新增或修改知识，读取 `docs/governance/knowledge-experience-layer.md` 与 `data/governance/knowledge-experience/manifest.json`。人类摘要、主题归类、搜索命中、别名和依赖只用于发现与回链；不得替代来源、registry、M/E、supersession 或 claim ceiling。
 
@@ -85,7 +87,7 @@ operational memory 和 Driver Console 作为独立、有界的 control-plane rec
 - Multiscale Causal Fabric、Probabilistic System Dynamics 和 Adaptive Relational Network 是当前建模/投影能力，不是新真值层。
 - 关系网络的邻接、相似性、中心性、社群、检索和行为变化不能升级为真理、价值、因果或内部学习机制证明。
 - 迭代方法只能约束操作纪律，不能证明实质结论正确。
-- 当前迭代方法是 `1.4.0`（Current），系统图是 `0.9.0`（Current）；`0.8.0` 是上一版 Historical，`0.7.0` 是更早 Historical。
+- 当前迭代方法是 `1.4.0`（Current），系统图是 `0.10.0`（Current）；`0.9.0` 是上一版 Historical，`0.8.0` 与 `0.7.0` 是更早 Historical。Structural Governance Surface 是 advisory overlay，不增加 L7。
 
 方法 `1.3.0` 与系统图 `0.6.0`、`0.5.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0`、`0.2.0`、`0.3.0`、`0.4.0` 为更早 Historical。当前方法要求读取 `data/operations/project-components.json` 与 `data/operations/change-propagation-topology.json`，把变更路径解析为构件、遍历声明关系到 fixpoint、绑定决定／map diff／residue，再由 registries 与布局 overlay 派生系统图。不得把 Git diff、依赖或可达性称为现实因果证明。
 - Q32I 的方法 `1.3.0` 与系统图 `0.3.0` 已独立接受、由 PR #62 普通合并并完成生产收口；其后方法升为 `1.4.0` Current。

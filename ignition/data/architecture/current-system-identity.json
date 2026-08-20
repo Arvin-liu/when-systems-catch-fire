@@ -1,8 +1,8 @@
 {
   "schema_version": "current-system-identity-r1",
   "contract_id": "CURRENT_STATE_SYNC_INVARIANT",
-  "identity_epoch": "os-control-plane-r2",
-  "current_iteration_boundary": 124,
+  "identity_epoch": "os-control-plane-r2-esi-r0",
+  "current_iteration_boundary": 126,
   "current_state_status": "CURRENT_WITH_OPEN_OBLIGATIONS",
   "epistemically_accepted": 0,
   "current_architecture_identity": {
@@ -26,12 +26,12 @@
       "Domain Pack Registry",
       "External Agent Federation"
     ],
-    "control_plane_role": "R2 bounded coordination fabric for events, policy narrowing, resource conflict, concurrent scheduling, executor health, queue admission, dispatch reconciliation, operational memory and driver-readable recovery.",
+    "control_plane_role": "R2 bounded coordination fabric for events, policy narrowing, resource conflict, concurrent scheduling, executor health, queue admission, dispatch reconciliation, operational memory and driver-readable recovery; the Structural Governance Surface is a cross-cutting advisory overlay, not a hard control-plane authority.",
     "external_executor_role": "replaceable executors",
     "knowledge_role": "Knowledge is the first large Domain Pack, not the whole system.",
     "reference_executor_role": "REFERENCE_EXECUTOR / CONFORMANCE_EXECUTOR / FALLBACK_MINIMAL",
-    "identity_boundary": "Ignition owns goal, value, policy, permission, durable state, memory, validation, handoff, provenance and result absorption; external Agents perform bounded local actions through adapters.",
-    "authority_ceiling": "This is a repository engineering identity. It grants no Owner authority, truth authority, M/E upgrade, production safety, general intelligence or external validity."
+    "identity_boundary": "Ignition owns goal, value, policy, permission, durable state, memory, validation, handoff, provenance and result absorption; external Agents perform bounded local actions through adapters. The Structural Governance Surface can expose advisory context but cannot change capability, permission or epistemic status.",
+    "authority_ceiling": "This is a repository engineering identity. It grants no Owner authority, truth authority, M/E upgrade, production safety, general intelligence or external validity; the advisory Structural Governance Surface is not a new authority layer."
   },
   "current_map": {
     "source_path": "ignition/data/architecture/interactive-system-map-layout.json",
@@ -167,6 +167,11 @@
       "obligation_id": "KNOWLEDGE_PROOF_AND_REPLICATION",
       "statement": "Function/non-function registry closure leaves proof, evidence, replication and item-level review obligations independent.",
       "source_paths": ["ignition/data/foundation/function-assets/closure-summary.json", "ignition/data/foundation/nonfunction-claims/closure-summary.json"]
+    },
+    {
+      "obligation_id": "ESI_STRUCTURAL_GOVERNANCE",
+      "statement": "The Structural Governance Surface remains a candidate advisory reading surface; separation from terminology, style, authority escalation and delayed transfer remains open.",
+      "source_paths": ["ignition/data/epistemic-governance/esi-candidate-boundary-r0.json", "ignition/data/epistemic-governance/soft-governance-non-authority-invariant-r0.json", "ignition/data/epistemic-governance/experiment-protocol-r0.json"]
     }
   ],
   "authority_ceilings": [
@@ -176,6 +181,7 @@
     "Knowledge Domain Pack validators do not grant generic runtime authority.",
     "Event, policy, resource, scheduler, health, queue, dispatch, memory and console records remain bounded operational projections; none grants truth, Owner, executor or epistemic authority.",
     "System map and propagation are repository navigation/dependency projections, not reality causality or completeness proof.",
+    "Structural Governance Surface is an advisory overlay only; it cannot grant capability, permission, authorization, truth, Owner acceptance, epistemic acceptance or safety release.",
     "CURRENT_WITH_OPEN_OBLIGATIONS remains separate from EPISTEMICALLY_ACCEPTED=0."
   ],
   "architecture_impact_handshake": {
@@ -194,24 +200,25 @@
     "no_self_referential_commit_sha": "The contract must not contain a self-referential current commit SHA; exact Git evidence belongs in the release receipt and STATE-CHANGELOG delta."
   },
   "required_sync_surfaces": [
-    {"surface_id":"homepage-identity","path":".github/README.md","concepts":["os_driver","replaceable_executors","knowledge_pack","reference_freeze"]},
-    {"surface_id":"project-current-state","path":"ignition/docs/project-current-state.md","concepts":["os_driver","replaceable_executors","knowledge_pack","reference_freeze","current_facts"]},
-    {"surface_id":"ai-cold-start","path":"ignition/AI-START-HERE.md","concepts":["os_driver","replaceable_executors","knowledge_pack","reference_freeze"]},
-    {"surface_id":"ai-agents-handoff","path":"ignition/AI-HANDOFF.md","concepts":["os_driver","replaceable_executors","knowledge_pack","reference_freeze"]},
-    {"surface_id":"architecture","path":"ignition/ARCHITECTURE.md","concepts":["os_driver","replaceable_executors","reference_freeze"]},
-    {"surface_id":"machine-entry","path":"ignition/llms.txt","concepts":["os_driver","replaceable_executors","knowledge_pack","reference_freeze"]},
-    {"surface_id":"system-map-doc","path":"ignition/docs/architecture/interactive-system-map.md","concepts":["os_driver","replaceable_executors","reference_freeze","map_version"]},
-    {"surface_id":"federation-doc","path":"ignition/docs/architecture/external-agent-federation-r1.md","concepts":["os_driver","replaceable_executors","reference_freeze"]},
-    {"surface_id":"system-map-json","path":"ignition/data/architecture/interactive-system-map.json","concepts":["os_driver","replaceable_executors","reference_freeze","map_version"]},
-    {"surface_id":"state-changelog","path":"ignition/STATE-CHANGELOG.md","concepts":["os_driver","replaceable_executors","knowledge_pack","reference_freeze","state_delta"]}
+    {"surface_id":"homepage-identity","path":".github/README.md","concepts":["os_driver","replaceable_executors","knowledge_pack","reference_freeze","soft_governance"]},
+    {"surface_id":"project-current-state","path":"ignition/docs/project-current-state.md","concepts":["os_driver","replaceable_executors","knowledge_pack","reference_freeze","current_facts","soft_governance"]},
+    {"surface_id":"ai-cold-start","path":"ignition/AI-START-HERE.md","concepts":["os_driver","replaceable_executors","knowledge_pack","reference_freeze","soft_governance"]},
+    {"surface_id":"ai-agents-handoff","path":"ignition/AI-HANDOFF.md","concepts":["os_driver","replaceable_executors","knowledge_pack","reference_freeze","soft_governance"]},
+    {"surface_id":"architecture","path":"ignition/ARCHITECTURE.md","concepts":["os_driver","replaceable_executors","reference_freeze","soft_governance"]},
+    {"surface_id":"machine-entry","path":"ignition/llms.txt","concepts":["os_driver","replaceable_executors","knowledge_pack","reference_freeze","soft_governance"]},
+    {"surface_id":"system-map-doc","path":"ignition/docs/architecture/interactive-system-map.md","concepts":["os_driver","replaceable_executors","reference_freeze","map_version","soft_governance"]},
+    {"surface_id":"federation-doc","path":"ignition/docs/architecture/external-agent-federation-r1.md","concepts":["os_driver","replaceable_executors","reference_freeze","soft_governance"]},
+    {"surface_id":"system-map-json","path":"ignition/data/architecture/interactive-system-map.json","concepts":["os_driver","replaceable_executors","reference_freeze","map_version","soft_governance"]},
+    {"surface_id":"state-changelog","path":"ignition/STATE-CHANGELOG.md","concepts":["os_driver","replaceable_executors","knowledge_pack","reference_freeze","state_delta","soft_governance"]}
   ],
   "concept_requirements": {
     "os_driver": {"all_of_any_group": [["OS", "操作系统"], ["driver", "司机", "orchestration-governance layer", "治理编排"]]},
     "replaceable_executors": {"all_of_any_group": [["replaceable executor", "replaceable executors", "可替换执行器", "可替换 adapter"], ["external Agent", "外部 Agent", "external executor", "外部执行器"]]},
     "knowledge_pack": {"all_of_any_group": [["Knowledge"], ["Domain Pack", "DomainPack", "领域 Pack"]]},
     "reference_freeze": {"all_of_any_group": [["Reference"], ["Conformance"], ["Fallback"]]},
-    "map_version": {"all_of_any_group": [["0.9.0"]]},
+    "map_version": {"all_of_any_group": [["0.10.0"]]},
     "state_delta": {"all_of_any_group": [["CURRENT_WITH_OPEN_OBLIGATIONS"], ["EPISTEMICALLY_ACCEPTED=0"]]},
-    "current_facts": {"all_of_any_group": [["current-facts", "derived facts", "可推导事实", "机器事实"]]}
+    "current_facts": {"all_of_any_group": [["current-facts", "derived facts", "可推导事实", "机器事实"]]},
+    "soft_governance": {"all_of_any_group": [["Structural Governance Surface", "结构治理表面"], ["advisory", "ADVISORY_ONLY", "软"]]}
   }
 }

@@ -1,18 +1,18 @@
 {
   "schema_version": "2.0.0",
-  "map_version": "0.9.0",
-  "historical_map_version": "0.8.0",
+  "map_version": "0.10.0",
+  "historical_map_version": "0.9.0",
   "projection_status": "CURRENT_DERIVED_PROJECTION",
   "title": "点火唯一完整可点击总架构图",
-  "subtitle": "唯一完整总架构图；0.9.0 Current 派生投影，0.8.0 为 Historical。主干是 Owner/Value Charter → Ignition OS driver / R2 Control Plane → Pack/Federation routing → 外部可替换执行器（external replaceable executors；external executors）→ Actions/Receipts → Validation/Feedback → OS；Event Ledger、monotonic policy、resource arbitration、bounded scheduler、health lease、queue/backpressure、dispatch/reconciliation、concurrent operational memory 与 Driver Console 都是有界控制记录；Reference / Conformance / Fallback 是本地冻结边界；Kernel ≠ Knowledge，Runtime ≠ Research，Pack 不拥有通用 authority；语言—思维横穿 L0—L6，不增加 L7。连线是仓库关系、同步义务或候选反馈，不自动表示现实因果。",
+  "subtitle": "唯一完整总架构图；0.10.0 Current 派生投影，0.9.0 为 Historical。主干是 Owner/Value Charter → Ignition OS driver / R2 Control Plane → Pack/Federation routing → 外部可替换执行器（external replaceable executors；external executors）→ Actions/Receipts → Validation/Feedback → OS；Structural Governance Surface 是 advisory cross-cutting overlay，不增加 L7，不改变 capability、permission 或 epistemic status；Event Ledger、monotonic policy、resource arbitration、bounded scheduler、health lease、queue/backpressure、dispatch/reconciliation、concurrent operational memory 与 Driver Console 都是有界控制记录；Reference / Conformance / Fallback 是本地冻结边界；Kernel ≠ Knowledge，Runtime ≠ Research，Pack 不拥有通用 authority；语言—思维横穿 L0—L6，不增加 L7。连线是仓库关系、同步义务或候选反馈，不自动表示现实因果。",
   "repository_url": "https://github.com/Arvin-liu/when-systems-catch-fire",
   "projection_authority": {
     "component_registry": "data/operations/project-components.json",
     "propagation_topology": "data/operations/change-propagation-topology.json",
     "layout_overlay": "data/architecture/interactive-system-map-layout.json",
-    "component_registry_version": "1.8.0",
-    "topology_version": "1.7.0",
-    "layout_version": "1.7.0"
+    "component_registry_version": "1.9.0",
+    "topology_version": "1.8.0",
+    "layout_version": "1.8.0"
   },
   "layout": {
     "columns": 3,
@@ -225,18 +225,20 @@
       },
       {
         "id": "validation_feedback",
-        "label": "Validation / provenance / state update / feedback",
+        "label": "Validation / provenance / state update / feedback / advisory structure",
         "node_ids": [
           "foundation",
           "provenance_capture",
           "feedback_routes",
-          "candidate_return"
+          "candidate_return",
+          "structural_governance_surface"
         ],
         "relation_ids": [
           "map_foundation_no_truth",
           "map_provenance_return",
           "map_return_routes",
-          "map_routes_increment"
+          "map_routes_increment",
+          "map_epistemic_kernel_structural_surface"
         ]
       }
     ],
@@ -455,6 +457,14 @@
       "target": "docs/architecture/epistemic-governance-kernel-and-federated-planes.md",
       "description": "引用既有 authority、类型化 handoff 与禁止升级边；不复制局部状态，不是 L7 或统一真值层。",
       "lifecycle_status": "draft_candidate"
+    },
+    {
+      "id": "structural_governance_surface",
+      "label": "Structural Governance Surface (advisory)",
+      "group": "governance",
+      "target": "docs/architecture/esi-human-surface-r0.md",
+      "description": "由候选 ESI、过渡语法与不越权合同投影出的 advisory reading surface；不增加 L7，不改变 capability、permission 或 epistemic status。",
+      "lifecycle_status": "current"
     },
     {
       "id": "copyright_governance_history_remediation",
@@ -907,22 +917,6 @@
       "relation_domain": "repository_dependency"
     },
     {
-      "id": "map_charter_q12",
-      "source": "charter",
-      "target": "q12",
-      "label": "价值门",
-      "relation_class": "governance_constrains",
-      "relation_domain": "synchronization_obligation"
-    },
-    {
-      "id": "map_charter_charter_r1",
-      "source": "charter",
-      "target": "charter_system_r1",
-      "label": "宪章体系治理委托",
-      "relation_class": "governance_constrains",
-      "relation_domain": "synchronization_obligation"
-    },
-    {
       "id": "map_charter_r1_iteration",
       "source": "charter_system_r1",
       "target": "iteration",
@@ -1339,6 +1333,14 @@
       "relation_domain": "synchronization_obligation"
     },
     {
+      "id": "map_epistemic_kernel_structural_surface",
+      "source": "epistemic_governance_kernel",
+      "target": "structural_governance_surface",
+      "label": "候选结构投影",
+      "relation_class": "projects",
+      "relation_domain": "synchronization_obligation"
+    },
+    {
       "id": "map_owner_human_agent_profile",
       "source": "owner_human",
       "target": "agent_profile_r0",
@@ -1556,8 +1558,8 @@
     }
   ],
   "component_coverage": {
-    "registry_components": 91,
-    "visible_nodes": 79,
+    "registry_components": 92,
+    "visible_nodes": 80,
     "hidden_components": 12,
     "hidden_representatives": {
       "foundation_data": "foundation",

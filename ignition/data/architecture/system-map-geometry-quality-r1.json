@@ -13,19 +13,19 @@
   },
   "checks": {
     "bottom_only_isolated_groups": [],
-    "clickable_target_count": 79,
+    "clickable_target_count": 80,
     "clickable_target_coverage": true,
-    "expected_node_count": 79,
+    "expected_node_count": 80,
     "group_box_overlap_count": 0,
     "label_clip_count": 0,
     "node_box_overlap_count": 0,
-    "node_geometry_count": 79,
+    "node_geometry_count": 80,
     "nodes_outside_group_count": 0,
     "solid_background_rect_count": 1
   },
-  "clickable_target_count": 79,
+  "clickable_target_count": 80,
   "clickable_target_coverage": true,
-  "edge_crossing_proxy": 187,
+  "edge_crossing_proxy": 178,
   "edges": [
     {
       "id": "map_analysis_increment",
@@ -41,16 +41,6 @@
       "id": "map_case_analysis",
       "source": "case_source",
       "target": "point_fire_analysis"
-    },
-    {
-      "id": "map_charter_q12",
-      "source": "charter",
-      "target": "q12"
-    },
-    {
-      "id": "map_charter_charter_r1",
-      "source": "charter",
-      "target": "charter_system_r1"
     },
     {
       "id": "map_charter_r1_iteration",
@@ -313,6 +303,11 @@
       "target": "no_truth_upgrade"
     },
     {
+      "id": "map_epistemic_kernel_structural_surface",
+      "source": "epistemic_governance_kernel",
+      "target": "structural_governance_surface"
+    },
+    {
       "id": "map_owner_human_agent_profile",
       "source": "owner_human",
       "target": "agent_profile_r0"
@@ -448,7 +443,7 @@
       "target": "driver_console_r1"
     }
   ],
-  "expected_node_count": 79,
+  "expected_node_count": 80,
   "failures": [],
   "gap_by_column": {
     "0": {
@@ -506,7 +501,7 @@
       "node_count": 3,
       "width": 560.0,
       "x": 1208.0,
-      "y": 1964.0
+      "y": 2030.0
     },
     {
       "column": 2,
@@ -536,7 +531,7 @@
       "node_count": 7,
       "width": 560.0,
       "x": 1208.0,
-      "y": 1350.0
+      "y": 1416.0
     },
     {
       "column": 1,
@@ -560,10 +555,10 @@
     },
     {
       "column": 2,
-      "degree": 13,
-      "height": 916.0,
+      "degree": 12,
+      "height": 982.0,
       "id": "governance",
-      "node_count": 12,
+      "node_count": 13,
       "width": 560.0,
       "x": 1208.0,
       "y": 406.0
@@ -600,7 +595,7 @@
     },
     {
       "column": 1,
-      "degree": 4,
+      "degree": 3,
       "height": 454.0,
       "id": "operations",
       "node_count": 5,
@@ -631,8 +626,8 @@
   ],
   "internal_blank_area": 156800.0,
   "label_clip_count": 0,
-  "layout_version": "1.7.0",
-  "map_version": "0.9.0",
+  "layout_version": "1.8.0",
+  "map_version": "0.10.0",
   "max_internal_gap": 28.0,
   "metrics": {
     "baseline_canvas_height": 3988.0,
@@ -642,9 +637,9 @@
     "canvas_height": 2780.0,
     "canvas_height_reduction_vs_baseline": 0.3029087262,
     "canvas_width": 1800.0,
-    "edge_crossing_proxy": 187,
-    "edge_crossing_ratio_vs_baseline": 1.0809248555,
-    "group_occupancy_ratio": 0.7639008793,
+    "edge_crossing_proxy": 178,
+    "edge_crossing_ratio_vs_baseline": 1.0289017341,
+    "group_occupancy_ratio": 0.7712869704,
     "internal_blank_area": 156800.0,
     "max_internal_gap": 28.0,
     "mobile_viewports_fit": 2
@@ -767,7 +762,7 @@
       "id": "codex_adapter",
       "width": 516.0,
       "x": 1230.0,
-      "y": 1640.0
+      "y": 1706.0
     },
     {
       "group": "os_spine",
@@ -783,7 +778,7 @@
       "id": "copyright_governance_history_remediation",
       "width": 516.0,
       "x": 1230.0,
-      "y": 696.0
+      "y": 762.0
     },
     {
       "group": "governance",
@@ -791,7 +786,7 @@
       "id": "copyright_governance_jurisdiction_registry",
       "width": 516.0,
       "x": 1230.0,
-      "y": 762.0
+      "y": 828.0
     },
     {
       "group": "governance",
@@ -799,7 +794,7 @@
       "id": "copyright_governance_material_classification",
       "width": 516.0,
       "x": 1230.0,
-      "y": 828.0
+      "y": 894.0
     },
     {
       "group": "governance",
@@ -807,7 +802,7 @@
       "id": "copyright_governance_non_republication_principle",
       "width": 516.0,
       "x": 1230.0,
-      "y": 894.0
+      "y": 960.0
     },
     {
       "group": "governance",
@@ -815,7 +810,7 @@
       "id": "copyright_governance_publication_gate_validator",
       "width": 516.0,
       "x": 1230.0,
-      "y": 960.0
+      "y": 1026.0
     },
     {
       "group": "governance",
@@ -823,7 +818,7 @@
       "id": "copyright_governance_source_rights",
       "width": 516.0,
       "x": 1230.0,
-      "y": 1026.0
+      "y": 1092.0
     },
     {
       "group": "governance",
@@ -831,7 +826,7 @@
       "id": "copyright_governance_tests",
       "width": 516.0,
       "x": 1230.0,
-      "y": 1092.0
+      "y": 1158.0
     },
     {
       "group": "front_doors",
@@ -895,7 +890,7 @@
       "id": "external_agent_federation",
       "width": 516.0,
       "x": 1230.0,
-      "y": 1442.0
+      "y": 1508.0
     },
     {
       "group": "writing",
@@ -935,7 +930,7 @@
       "id": "future_executors",
       "width": 516.0,
       "x": 1230.0,
-      "y": 1772.0
+      "y": 1838.0
     },
     {
       "group": "federation",
@@ -943,7 +938,7 @@
       "id": "hermes_adapter",
       "width": 516.0,
       "x": 1230.0,
-      "y": 1574.0
+      "y": 1640.0
     },
     {
       "group": "front_doors",
@@ -1047,7 +1042,7 @@
       "id": "licensing",
       "width": 516.0,
       "x": 1230.0,
-      "y": 1158.0
+      "y": 1224.0
     },
     {
       "group": "models",
@@ -1063,7 +1058,7 @@
       "id": "no_l7",
       "width": 516.0,
       "x": 1230.0,
-      "y": 2056.0
+      "y": 2122.0
     },
     {
       "group": "boundaries",
@@ -1071,7 +1066,7 @@
       "id": "no_totality_proof",
       "width": 516.0,
       "x": 1230.0,
-      "y": 2188.0
+      "y": 2254.0
     },
     {
       "group": "boundaries",
@@ -1079,7 +1074,7 @@
       "id": "no_truth_upgrade",
       "width": 516.0,
       "x": 1230.0,
-      "y": 2122.0
+      "y": 2188.0
     },
     {
       "group": "domain_packs",
@@ -1095,7 +1090,7 @@
       "id": "openclaw_adapter",
       "width": 516.0,
       "x": 1230.0,
-      "y": 1508.0
+      "y": 1574.0
     },
     {
       "group": "os_spine",
@@ -1191,7 +1186,7 @@
       "id": "reference_executor",
       "width": 516.0,
       "x": 1230.0,
-      "y": 1706.0
+      "y": 1772.0
     },
     {
       "group": "domain_packs",
@@ -1215,7 +1210,7 @@
       "id": "runtime_environment",
       "width": 516.0,
       "x": 1230.0,
-      "y": 1838.0
+      "y": 1904.0
     },
     {
       "group": "os_spine",
@@ -1250,6 +1245,14 @@
       "y": 914.0
     },
     {
+      "group": "governance",
+      "height": 54.0,
+      "id": "structural_governance_surface",
+      "width": 516.0,
+      "x": 1230.0,
+      "y": 696.0
+    },
+    {
       "group": "front_doors",
       "height": 54.0,
       "id": "summary",
@@ -1263,7 +1266,7 @@
       "id": "sustainability",
       "width": 516.0,
       "x": 1230.0,
-      "y": 1224.0
+      "y": 1290.0
     },
     {
       "group": "operations",

@@ -1550,6 +1550,34 @@
       ]
     },
     {
+      "authority": "declarative",
+      "canonical_target": "docs/architecture/esi-human-surface-r0.md",
+      "component_id": "structural_governance_surface",
+      "component_type": "cross_layer_control_plane",
+      "description": "由候选 ESI、过渡语法与不越权合同投影出的 advisory reading surface；不增加 L7，不改变 capability、permission 或 epistemic status。",
+      "label": "Structural Governance Surface (advisory)",
+      "layer_or_overlay": "overlay",
+      "lifecycle": {
+        "source": "data/epistemic-governance/structural-surface-r0.json",
+        "status": "current",
+        "version": "R0"
+      },
+      "map_projection": {
+        "group": "governance",
+        "visible": true
+      },
+      "path_patterns": [
+        "data/epistemic-governance/",
+        "schemas/epistemic-governance/",
+        "tools/validate_esi_candidate.py",
+        "tools/validate_soft_governance_authority.py",
+        "docs/architecture/esi-human-surface-r0.md",
+        "docs/architecture/soft-context-exposure-contract-r0.md",
+        "tests/test_esi_*.py",
+        "tests/test_soft_*.py"
+      ]
+    },
+    {
       "authority": "canonical",
       "canonical_target": ".github/README.md#1. 项目与价值",
       "component_id": "owner_human",
@@ -1887,5 +1915,5 @@
     }
   ],
   "purpose": "Canonical project-component identity, target and lifecycle registry for declared change propagation and system-map projection; it does not establish real-world causality.",
-  "registry_version": "1.8.0"
+  "registry_version": "1.9.0"
 }

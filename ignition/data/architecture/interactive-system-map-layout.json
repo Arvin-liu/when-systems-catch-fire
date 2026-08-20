@@ -1,5 +1,5 @@
 {
-  "current_map_version": "0.9.0",
+  "current_map_version": "0.10.0",
   "geometry": {
     "columns": 3,
     "group_gap": 28,
@@ -118,8 +118,8 @@
       "row": 1
     }
   ],
-  "historical_map_version": "0.8.0",
-  "layout_version": "1.7.0",
+  "historical_map_version": "0.9.0",
+  "layout_version": "1.8.0",
   "node_order": {
     "boundaries": [
       "no_l7",
@@ -148,6 +148,7 @@
       "charter",
       "charter_system_r1",
       "epistemic_governance_kernel",
+      "structural_governance_surface",
       "copyright_governance_history_remediation",
       "copyright_governance_jurisdiction_registry",
       "copyright_governance_material_classification",
@@ -238,7 +239,7 @@
       {"id":"pack_federation_routing","label":"Pack / Federation routing","node_ids":["domain_pack_contract","external_agent_federation"],"relation_ids":["map_runtime_pack_contract","map_runtime_external_agent_federation"]},
       {"id":"external_executors","label":"External replaceable executors","node_ids":["openclaw_adapter","hermes_adapter","codex_adapter","future_executors"],"relation_ids":["map_federation_openclaw","map_federation_hermes","map_federation_codex","map_federation_future_executors"]},
       {"id":"actions_receipts","label":"Actions / observations / receipts","node_ids":["reference_executor","function_os","sync"],"relation_ids":["map_federation_reference_executor","map_function_q12","map_iteration_sync"]},
-      {"id":"validation_feedback","label":"Validation / provenance / state update / feedback","node_ids":["foundation","provenance_capture","feedback_routes","candidate_return"],"relation_ids":["map_foundation_no_truth","map_provenance_return","map_return_routes","map_routes_increment"]}
+      {"id":"validation_feedback","label":"Validation / provenance / state update / feedback / advisory structure","node_ids":["foundation","provenance_capture","feedback_routes","candidate_return","structural_governance_surface"],"relation_ids":["map_foundation_no_truth","map_provenance_return","map_return_routes","map_routes_increment","map_epistemic_kernel_structural_surface"]}
     ],
     "loop_target": "os_control",
     "non_claims": [
@@ -247,6 +248,6 @@
       "External executors do not own Owner, truth, permission or vendor-runtime authority."
     ]
   },
-  "subtitle": "唯一完整总架构图；0.9.0 Current 派生投影，0.8.0 为 Historical。主干是 Owner/Value Charter → Ignition OS driver / R2 Control Plane → Pack/Federation routing → 外部可替换执行器（external replaceable executors；external executors）→ Actions/Receipts → Validation/Feedback → OS；Event Ledger、monotonic policy、resource arbitration、bounded scheduler、health lease、queue/backpressure、dispatch/reconciliation、concurrent operational memory 与 Driver Console 都是有界控制记录；Reference / Conformance / Fallback 是本地冻结边界；Kernel ≠ Knowledge，Runtime ≠ Research，Pack 不拥有通用 authority；语言—思维横穿 L0—L6，不增加 L7。连线是仓库关系、同步义务或候选反馈，不自动表示现实因果。",
+  "subtitle": "唯一完整总架构图；0.10.0 Current 派生投影，0.9.0 为 Historical。主干是 Owner/Value Charter → Ignition OS driver / R2 Control Plane → Pack/Federation routing → 外部可替换执行器（external replaceable executors；external executors）→ Actions/Receipts → Validation/Feedback → OS；Structural Governance Surface 是 advisory cross-cutting overlay，不增加 L7，不改变 capability、permission 或 epistemic status；Event Ledger、monotonic policy、resource arbitration、bounded scheduler、health lease、queue/backpressure、dispatch/reconciliation、concurrent operational memory 与 Driver Console 都是有界控制记录；Reference / Conformance / Fallback 是本地冻结边界；Kernel ≠ Knowledge，Runtime ≠ Research，Pack 不拥有通用 authority；语言—思维横穿 L0—L6，不增加 L7。连线是仓库关系、同步义务或候选反馈，不自动表示现实因果。",
   "title": "点火唯一完整可点击总架构图"
 }

@@ -8,8 +8,14 @@ Agent 的运行时。
 本页与 [`CURRENT_STATE_SYNC_INVARIANT`](../governance/current-state-sync-invariant.md)
 的当前身份保持一致：点火是 driver / orchestration-governance layer，Knowledge
 是第一个大型 Domain Pack，默认决策是 integrate 而不是重造。当前计数、地图版本
-`0.9.0`（`0.8.0` Historical）和 live ceiling 以 [`current-facts.json`](../../data/architecture/current-facts.json)
+`0.10.0`（`0.9.0` Historical）和 live ceiling 以 [`current-facts.json`](../../data/architecture/current-facts.json)
 为准；真实 live invocation 仍可在安全边界无法满足时明确 `SKIPPED`。
+
+Task 126 的 Structural Governance Surface 是 Federation 可选择读取的 advisory
+cross-cutting overlay。它只暴露声明的 claim ceiling、unknowns、source pointers
+和实验臂元数据；它不改变 capability、permission、authorization、truth、Owner
+状态或 `EPISTEMICALLY_ACCEPTED`。完整边界见
+[`soft-context-exposure-contract-r0.json`](../../data/agent-federation/soft-context-exposure-contract-r0.json)。
 
 Task 124 的 OS Control Plane R2 是 Federation 上游的有界交通系统：Event Ledger、
 monotonic policy compiler、resource arbitration、bounded concurrent scheduler、
