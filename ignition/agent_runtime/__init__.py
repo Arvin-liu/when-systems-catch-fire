@@ -67,6 +67,7 @@ from .executor_admission import ADMISSION_STATUSES, EXECUTOR_ADMISSION_SCHEMA, E
 from .accounting import ACCOUNTING_DIMENSIONS, ACCOUNTING_EVENT_SCHEMA, ACCOUNTING_SCHEMA, AccountingDuplicate, AccountingError, AccountingEvent, AccountingPolicy, AccountingQuotaExceeded, AccountingStore, ATTEMPT_KINDS, BoundedFairScheduler, BudgetScope, CostVector, FairWorkItem, ReservationReceipt, SettlementReceipt
 from .durable_memory import DURABLE_MEMORY_EPOCH, DURABLE_MEMORY_EVENT_SCHEMA, DURABLE_MEMORY_SCHEMA, DurableMemoryError, DurableMemoryEvent, DurableMemoryRecord, DurableOperationalMemoryStore, MemoryNamespaceDenied, MemorySnapshotIntegrityError, MEMORY_EVENT_TYPES, MEMORY_STATES
 from .recovery import DELIVERY_SEMANTICS, FAULT_POINTS, RECOVERY_PHASES, RECOVERY_SCHEMA, RecoveryBlocked, RecoveryError, RecoveryFaultInjected, RecoveryFaultMatrix, RecoveryOrchestrator, RecoveryPhase
+from .dr_bundle import DR_BUNDLE_EPOCH, DR_BUNDLE_SCHEMA, DRBundleError, DRBundleIntegrityError, RecoveryBundleBuilder, RecoveryBundleVerifier, REQUIRED_CHUNKS
 
 __all__ = [
     "ActionObservation",
@@ -274,4 +275,11 @@ __all__ = [
     "RecoveryFaultMatrix",
     "RecoveryOrchestrator",
     "RecoveryPhase",
+    "DR_BUNDLE_EPOCH",
+    "DR_BUNDLE_SCHEMA",
+    "DRBundleError",
+    "DRBundleIntegrityError",
+    "RecoveryBundleBuilder",
+    "RecoveryBundleVerifier",
+    "REQUIRED_CHUNKS",
 ]
