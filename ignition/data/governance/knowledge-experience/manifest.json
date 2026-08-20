@@ -14,7 +14,7 @@
     "KNOWLEDGE/COVERAGE.md": "5fe503a2cb7b09abb79ab1b7d9a88851d149e124332d8417d63fb0882ec2edca",
     "KNOWLEDGE/EVOLUTION.md": "ba9debdc4413a5b7e9f460f9f81a8f717e90e5fa6ee90a2cd055c4ba471e4f07",
     "KNOWLEDGE/MAP.md": "25fc2acaf62c9004a5e7affde62e98c23663693ff89283bd9db9de3370ee2cc9",
-    "KNOWLEDGE/READING-LAYERS.md": "d7f3f52a65ca786732ffd70b7e3faa7c2699f8bf5848bafdc7f9c77d31d605eb",
+    "KNOWLEDGE/READING-LAYERS.md": "b33e07fecd7fa5ad425f0c6ddc7c447bae43161cf522da4fbb3e00a3a657b474",
     "KNOWLEDGE/README.md": "367d1c8d6a8ae57685cc6445e629f51c48c6c3d39b8e28a89710a1f3dc7888bb",
     "KNOWLEDGE/SEARCH.md": "96e65ff9766db7760364e37c23ffe8e461356dc543f55e3c02c661a6d832b0c7",
     "KNOWLEDGE/WHATS-NEW.md": "43d3ab0cd9b5091ff6e7603ca043f74d092cc69f6c4b0b3c0c7b53a2e49b15c9",
@@ -81,11 +81,11 @@
     "KNOWLEDGE/indexes/writing_publication.md": "07dc4927b16ad4928e98ef5ab24b740dc8c389d808bb1017ae78293b27dfefb6",
     "KNOWLEDGE/indexes/writing_publication/part-001.md": "a5693e7a4e7164390a0f91806b09400849cb415a9eb90c00c747b3d01e08d7ba",
     "data/governance/knowledge-experience/alias-index.jsonl": "f87b64c64f55b4d871173db4d2d5804dea8d881759171c73cd4b12a7aca8f824",
-    "data/governance/knowledge-experience/asset-cards.jsonl": "bd92f2a23ac2c4180135e6cea0c5f7f6bc9ff050f40446d1f98daf42debddfae",
+    "data/governance/knowledge-experience/asset-cards.jsonl": "aa402061b87785f4ef2e3073f51c27c2a0b259522701d244a4252f3fddd4a062",
     "data/governance/knowledge-experience/changes.jsonl": "4644fe79900736fb4df464e9c365694e04f7dbdd6d3a225aa3ef7b61a85acdde",
     "data/governance/knowledge-experience/coverage.json": "cc37631f224de437bd97a40e15b642948bbce2a9aec76609d68bbc17bd107c99",
-    "data/governance/knowledge-experience/layered-reading.jsonl": "447231d0972646b9504dd5add667a6525d62f054d5c0aacd8c44dcdaba575dc9",
-    "data/governance/knowledge-experience/search-index.jsonl": "5b87fbde8740749c877f1c9eece9b00ee811f923e582d34a84ec1f635e1b5538"
+    "data/governance/knowledge-experience/layered-reading.jsonl": "95445560592eeacd47b324849d56f4881c275d26d670496df911c39d9c63e4fd",
+    "data/governance/knowledge-experience/search-index.jsonl": "0d302e20784e59a6dabf5aad09973b3f654001fe3c2b44907f38f9185c41be38"
   },
   "machine_human_pairs": [
     {

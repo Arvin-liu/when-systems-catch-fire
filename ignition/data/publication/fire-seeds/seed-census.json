@@ -2254,7 +2254,7 @@
       "title": "AI-START-HERE",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "cdd7fc8a512dddf8cfb1791e0c0db2d0d41280a6e726aa146601848491ced957",
+      "source_sha256": "e03534376ff363e10a3222af450f07371499287d1b373539c65b93f88e53eaa3",
       "disposition": "SEED_CREATED",
       "seed_ids": [
         "FS-17"
@@ -2269,7 +2269,7 @@
       "title": "ARCHITECTURE",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "89fd655d21ad6196eec8cbcc7707eb92b45e4941cfe5360c98a5587c309d603c",
+      "source_sha256": "5f1db54c7c109736822912cb22e0caed119b749c6f8662b86fd9c3d1bc11c0cd",
       "disposition": "SEED_CREATED",
       "seed_ids": [
         "FS-03"
@@ -2385,7 +2385,7 @@
       "title": "READING-LAYERS",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "d7f3f52a65ca786732ffd70b7e3faa7c2699f8bf5848bafdc7f9c77d31d605eb",
+      "source_sha256": "b33e07fecd7fa5ad425f0c6ddc7c447bae43161cf522da4fbb3e00a3a657b474",
       "disposition": "EXCLUDED_NONCONTENT",
       "seed_ids": [],
       "review_basis": "INDEX_OR_GENERATED_PROJECTION",
@@ -2846,7 +2846,7 @@
       "title": "STATE-CHANGELOG",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "24e36cdc132b0f8081bb02039f4fa7a05e37efd303e27aa1b178ad23c2cac878",
+      "source_sha256": "775312a3c7c7ebb8aa63f3b44723a4af522578cac424f017b10c55c2d41bf69d",
       "disposition": "MERGED_INTO_SEED",
       "seed_ids": [
         "FS-23"
@@ -3093,7 +3093,7 @@
       "title": "External Agent Federation R1 — ownership boundary",
       "knowledge_status": "CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS",
       "subject": null,
-      "source_sha256": "ff453b8d403f4d3e498d8c28f609b54f366eaa0818300c07c5325ede0b544baf",
+      "source_sha256": "d50812018d01c63c61c9a123f1770edd1d12b2b667531b74f8060558c22a8dd2",
       "disposition": "NO_SEED_DELTA",
       "seed_ids": [],
       "review_basis": "KNOWLEDGE_LAYERED_READING_TRIAGE",
@@ -3210,7 +3210,7 @@
       "title": "点火仓库原生系统图",
       "knowledge_status": "HISTORICAL_OR_SUPERSEDED_SOURCE",
       "subject": null,
-      "source_sha256": "5f5f417917a5938de9d18779cd61b9f2479e991545a0fbc9fba2bf2f0d58da6c",
+      "source_sha256": "618990f60e4591b2364ddbd457f6eeea0b629ea339def34b670c90514351a557",
       "disposition": "SEED_CREATED",
       "seed_ids": [
         "FS-12"
@@ -3754,7 +3754,7 @@
       "title": "ignition-system-architecture",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "d22a7c4815ad9a2835375fce310784eaa2ebfc97e1b4e213c65cfffa928864e3",
+      "source_sha256": "c8eb21099666ef009ffbaa91c219a3d34267c9b6a9e982800acc58d9e8045f5a",
       "disposition": "MERGED_INTO_SEED",
       "seed_ids": [
         "FS-12"

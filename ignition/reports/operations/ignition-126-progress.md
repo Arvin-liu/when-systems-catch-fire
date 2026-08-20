@@ -24,6 +24,7 @@ by this run and remains `DEFERRED_PENDING_REBASE`.
 | 13 | COMPLETED | pending closure | pending closure | Human-readable first screen using the Zhiyuan Writing Method boundary and explicit failure downgrade. |
 | 14 | COMPLETED | pending closure | pending closure | Provider-neutral OS/Federation soft-context exposure contract with no capability or permission delta. |
 | 15 | COMPLETED | pending closure | pending closure | Synchronized the advisory Structural Governance Surface across identity, registry, topology, layout, map, current facts, human surfaces and state delta; Task 125 remains deferred. |
+| 16 | COMPLETED | pending closure | pending closure | Closed full regression, downstream projection repair, deterministic two-pass rebuild, privacy/feedback-loop scans and classified historical residuals; Task 125 remains deferred. |
 
 ## Boundary
 
@@ -231,3 +232,13 @@ Governance Surface state and the non-authority invariant.
 - Step 125 is still `DEFERRED_PENDING_REBASE`; no live provider/model output,
   external truth, permission expansion, Owner acceptance or epistemic upgrade
   was introduced.
+
+## Step 16 evidence
+
+- Closure schema/data: `schemas/operations/ignition-126-step16-closure-r1.schema.json` and `data/operations/iterations/126/step16-closure-r1.json`; the data validates against the schema.
+- Final correct-cwd full discovery: `PYTHONPATH=. python3 -m unittest discover -s tests -p 'test*.py'` — `Ran 822 tests in 2680.878s`, `FAILED (failures=13, skipped=1)`, `errors=0`. All 13 failures are classified pre-existing, environmental, or derived from those sealed residuals; new Step 16 regression count is `0`.
+- The affected downstream projections were rebuilt and checked: Knowledge Experience (`404` cards, `332` layered readings, `21980` search records), Fire Seeds (`64` seeds, `393` sources), repository path classification (`2630/2630`), and Agent Platform blast radius (`PASS`). The targeted post-rebuild suite was `19/19 OK`.
+- ESI/soft-governance/current-state/structural targeted tests were `42/42 OK`; no-authority, executor inventory, federation ownership/routing, human front door, current facts, map projection and geometry gates passed.
+- Deterministic two-pass rebuild matched byte-for-byte at diff SHA-256 `1ead790dc492427dc074c1965febfbaa9b1a827344676fc848784a7622cbf266`; feedback-loop and public non-code privacy/secret/local-path scans passed.
+- Historical residuals are retained: function census drift, nonfunction output drift, SymPy unavailable in the current environment, and propagation reconciliation records 104–106. No historical residual was rewritten or promoted.
+- The formal `main` baseline remained `42dfc19cb17d439c9e150caf2dd5e75e3db938bd` during Step 16. Step 17 must perform the fresh-clone verification, ordinary fast-forward and 1111 receipt publication.

@@ -1,0 +1,127 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://when-systems-catch-fire.invalid/schemas/operations/ignition-126-step16-closure-r1.schema.json",
+  "title": "IGNITION-126 Step 16 Closure R1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "task_id",
+    "step",
+    "recorded_at",
+    "baseline",
+    "projection_rebuild",
+    "targeted_gates",
+    "full_unittest_discovery",
+    "residual_classification",
+    "privacy_and_external_boundary",
+    "formal_main",
+    "claim_ceiling",
+    "closure_binding",
+    "next_step"
+  ],
+  "properties": {
+    "schema_version": {"const": "ignition-126-step16-closure-r1"},
+    "task_id": {"const": "IGNITION-20260818-126"},
+    "step": {"const": "16"},
+    "recorded_at": {"type": "string", "format": "date-time"},
+    "baseline": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["prior_step_commit", "formal_main_before_step16", "task_branch"],
+      "properties": {
+        "prior_step_commit": {"const": "c15bb6e0ad9befcf8f013fb7a6a2e6636549dc6f"},
+        "formal_main_before_step16": {"const": "42dfc19cb17d439c9e150caf2dd5e75e3db938bd"},
+        "task_branch": {"const": "codex/ignition-126-epistemic-structural-induction-r0-20260818"}
+      }
+    },
+    "projection_rebuild": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["outputs", "map_snapshot", "geometry_snapshot", "two_pass_deterministic"],
+      "properties": {
+        "outputs": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+        "map_snapshot": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["map_version", "registry_components", "visible_nodes", "visible_edges", "hidden_components"],
+          "properties": {
+            "map_version": {"const": "0.10.0"},
+            "registry_components": {"const": 92},
+            "visible_nodes": {"const": 80},
+            "visible_edges": {"const": 83},
+            "hidden_components": {"const": 12}
+          }
+        },
+        "geometry_snapshot": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["status", "height", "blank_reduction", "crossing_proxy"],
+          "properties": {
+            "status": {"const": "PASS"},
+            "height": {"const": 2780.0},
+            "blank_reduction": {"const": 0.8741007194},
+            "crossing_proxy": {"const": 178}
+          }
+        },
+        "two_pass_deterministic": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["status", "pass1_diff_sha256", "pass2_diff_sha256", "diffs_equal"],
+          "properties": {
+            "status": {"const": "PASS"},
+            "pass1_diff_sha256": {"const": "1ead790dc492427dc074c1965febfbaa9b1a827344676fc848784a7622cbf266"},
+            "pass2_diff_sha256": {"const": "1ead790dc492427dc074c1965febfbaa9b1a827344676fc848784a7622cbf266"},
+            "diffs_equal": {"const": true}
+          }
+        }
+      }
+    },
+    "targeted_gates": {"type": "object", "minProperties": 1, "additionalProperties": {"type": "string"}},
+    "full_unittest_discovery": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["command", "cwd", "runtime", "status", "tests_run", "failures", "errors", "skipped", "new_step16_regressions"],
+      "properties": {
+        "command": {"const": "PYTHONPATH=. python3 -m unittest discover -s tests -p 'test*.py'"},
+        "cwd": {"const": "ignition"},
+        "runtime": {"const": "Python 3.14.6; repository environment"},
+        "status": {"const": "PASS_WITH_CLASSIFIED_RESIDUALS"},
+        "tests_run": {"const": 822},
+        "failures": {"const": 13},
+        "errors": {"const": 0},
+        "skipped": {"const": 1},
+        "new_step16_regressions": {"const": 0}
+      }
+    },
+    "residual_classification": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "status", "evidence", "boundary"],
+        "properties": {
+          "id": {"type": "string", "minLength": 1},
+          "status": {"type": "string", "minLength": 1},
+          "evidence": {"type": "string", "minLength": 1},
+          "boundary": {"type": "string", "minLength": 1}
+        }
+      }
+    },
+    "privacy_and_external_boundary": {"type": "object", "additionalProperties": true},
+    "formal_main": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["expected_sha", "observed_sha", "modified"],
+      "properties": {
+        "expected_sha": {"const": "42dfc19cb17d439c9e150caf2dd5e75e3db938bd"},
+        "observed_sha": {"const": "42dfc19cb17d439c9e150caf2dd5e75e3db938bd"},
+        "modified": {"const": false}
+      }
+    },
+    "claim_ceiling": {"type": "string", "minLength": 1},
+    "closure_binding": {"type": "string", "minLength": 1},
+    "next_step": {"const": "17"}
+  }
+}
