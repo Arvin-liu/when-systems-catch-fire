@@ -17,6 +17,7 @@ by this run and remains `DEFERRED_PENDING_REBASE`.
 | 06 | COMPLETED | pending closure | pending closure | Sixteen synthetic evidence cases with gold boundaries, forbidden transitions and over-caution negatives across nine domains. |
 | 07 | COMPLETED | pending closure | pending closure | Seven exposure arms × seven challenge arms with 49 deterministic adversarial envelopes and no fabricated outputs. |
 | 08 | COMPLETED | pending closure | pending closure | Anonymous blind packet, structured annotation schema and separate decision/style/utility scoring axes. |
+| 09 | COMPLETED | pending closure | pending closure | Provider-neutral offline-first runner with JSON/JSONL ingestion, readiness state and explicit live-call skip boundary. |
 
 ## Boundary
 
@@ -131,3 +132,15 @@ Governance Surface state and the non-authority invariant.
   `HUMAN_REVIEW_REQUIRED`.
 - Benchmark cases now carry explicit licensed claim levels. Unit tests `3/3`
   passed; the combined ESI suite through Step 08 is `25/25`.
+
+## Step 09 evidence
+
+- Protocol: `data/epistemic-governance/experiment-protocol-r0.json` and
+  `docs/architecture/esi-experiment-protocol-r0.md`.
+- Runner: `tools/run_esi_experiment.py`; accepts normalized JSON, JSONL or
+  separately authorized adapter output and validates blind codes.
+- No-response run: `READY_NOT_RUN`, `live_model_status=READY_NOT_RUN`.
+- Explicit live request: `SKIPPED / SKIPPED_UNSAFE_OR_UNAVAILABLE`; runner
+  never initiates a provider call.
+- Offline structured ingestion test: `RUN` with
+  `live_model_status=NOT_RUN_LIVE_EXTERNAL`; unit tests `3/3` passed.

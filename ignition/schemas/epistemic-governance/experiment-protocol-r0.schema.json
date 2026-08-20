@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Arvin-liu/when-systems-catch-fire/schemas/epistemic-governance/experiment-protocol-r0.schema.json",
+  "type": "object",
+  "required": ["schema_version", "protocol_id", "execution_boundary", "exposure_arms", "challenge_arms", "run_statuses", "provider_contract"],
+  "properties": {
+    "schema_version": {"const": "experiment-protocol-r0"},
+    "protocol_id": {"const": "ESI-PROTOCOL-R0"},
+    "execution_boundary": {"const": "OFFLINE_FIRST_NO_REQUIRED_LIVE_PROVIDER"},
+    "exposure_arms": {"type": "array", "minItems": 7, "items": {"type": "string"}},
+    "challenge_arms": {"type": "array", "minItems": 7, "items": {"type": "string"}},
+    "run_statuses": {"type": "array", "items": {"enum": ["RUN", "READY_NOT_RUN", "SKIPPED"]}},
+    "provider_contract": {
+      "type": "object",
+      "required": ["input_modes", "output_mode", "live_call_policy", "permission_boundary"],
+      "properties": {
+        "input_modes": {"type": "array", "minItems": 3, "items": {"type": "string"}},
+        "output_mode": {"const": "NORMALIZED_BLIND_ANNOTATION_RECORDS"},
+        "live_call_policy": {"const": "NO_CALL_WITHOUT_SAFE_EXPLICIT_AUTHENTICATED_ADAPTER"},
+        "permission_boundary": {"const": "SOFT_CONTEXT_DOES_NOT_CHANGE_CAPABILITY_OR_PERMISSION"}
+      },
+      "additionalProperties": false
+    },
+    "score_boundary": {"type": "string", "minLength": 40}
+  },
+  "additionalProperties": false
+}
