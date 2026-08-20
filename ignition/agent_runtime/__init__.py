@@ -58,6 +58,7 @@ from .dispatch_reconciliation import DispatchConflict, DispatchEnvelope, Dispatc
 from .concurrent_memory import ConcurrentOperationalMemoryStore, MemoryCASConflict, MemoryDuplicateConflict, MemoryR2Error, MemoryRecord
 from .driver_console import DRIVER_CONSOLE_SCHEMA, DriverConsoleError, build_driver_snapshot, render_driver_console
 from .durability import CanonicalSnapshot, CanonicalSnapshotStore, CompactionPolicy, CompactionReceipt, COMPACTION_SCHEMA, DurabilityCompactor, DurabilityError, SNAPSHOT_SCHEMA, SNAPSHOT_SCHEMA_EPOCH, SnapshotChainStore, SnapshotIntegrityError, SnapshotNamespaceError
+from .migration import APPLIED, DRY_RUN, FORBIDDEN, LOSSY_REQUIRES_APPROVAL, MIGRATION_RECEIPT_SCHEMA, MIGRATION_SCHEMA, MigrationError, MigrationExecutionError, MigrationPathError, MigrationReceipt, MigrationRegistry, MigrationResult, MigrationRule, ForbiddenMigrationError, LossyDowngradeRequiresApproval, ROLLED_BACK, StateMigrator, UnknownEpochError
 
 __all__ = [
     "ActionObservation",
@@ -166,4 +167,22 @@ __all__ = [
     "COMPACTION_SCHEMA",
     "DurabilityCompactor",
     "SnapshotChainStore",
+    "APPLIED",
+    "DRY_RUN",
+    "FORBIDDEN",
+    "LOSSY_REQUIRES_APPROVAL",
+    "MIGRATION_RECEIPT_SCHEMA",
+    "MIGRATION_SCHEMA",
+    "MigrationError",
+    "MigrationExecutionError",
+    "MigrationPathError",
+    "MigrationReceipt",
+    "MigrationRegistry",
+    "MigrationResult",
+    "MigrationRule",
+    "ForbiddenMigrationError",
+    "LossyDowngradeRequiresApproval",
+    "ROLLED_BACK",
+    "StateMigrator",
+    "UnknownEpochError",
 ]
