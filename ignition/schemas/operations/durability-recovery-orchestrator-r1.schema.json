@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Arvin-liu/when-systems-catch-fire/schemas/operations/durability-recovery-orchestrator-r1.schema.json",
+  "type": "object",
+  "required": ["schema_version", "phase_sequence", "delivery_semantics", "fault_points", "uncertain_dispatch_rule", "operator_surface", "claim_ceiling"],
+  "properties": {
+    "schema_version": {"const": "ignition-durability-recovery-orchestrator-r1"},
+    "phase_sequence": {"const": ["VERIFY_EVENT_LEDGER", "SELECT_TRUSTED_SNAPSHOT", "REPLAY_TAIL", "MIGRATE_SCHEMA_IF_REQUIRED", "REBUILD_NAMESPACE_POLICY_PACK", "REBUILD_QUEUE_BUDGET_LEASES", "INVALIDATE_EXPIRED_EXECUTOR_CAPABILITIES", "RESTORE_MEMORY_INDEXES", "RECONCILE_UNCERTAIN_DISPATCH", "REBUILD_ADVISORY_SOFT_CONTEXT", "EXPOSE_OPERATOR_RECOVERY_STATE"]},
+    "delivery_semantics": {"const": "AT_LEAST_ONCE_WITH_IDEMPOTENCY_AND_RECONCILIATION"},
+    "fault_points": {"type": "array", "minItems": 10, "uniqueItems": true, "items": {"type": "string"}},
+    "uncertain_dispatch_rule": {"const": "NO_AUTOMATIC_EXTERNAL_RERUN_REQUIRES_RECONCILIATION"},
+    "operator_surface": {"const": "PROJECTION_NOT_SECOND_CANONICAL_STATE"},
+    "claim_ceiling": {"const": "LOCAL_RECOVERY_CONTINUITY_ONLY_NO_EXACTLY_ONCE_PRODUCTION_READINESS_OR_OWNER_ACCEPTANCE"}
+  },
+  "additionalProperties": false
+}

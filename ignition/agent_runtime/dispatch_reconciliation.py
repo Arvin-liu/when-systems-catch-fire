@@ -352,5 +352,10 @@ class DurableDispatchStore:
         counts = {state: sum(item.state == state for item in records) for state in sorted(DISPATCH_STATES)}
         return {"status": "PASS", "schema": DISPATCH_SCHEMA, "record_count": len(records), "state_counts": counts, "claim_ceiling": "Durable dispatch, progress and reconciliation state only; external receipts require independent OS validation."}
 
+    def records(self) -> tuple[DispatchRecord, ...]:
+        """Return a verified immutable view for local recovery projection."""
+        with FileLock(self.lock_path):
+            return tuple(self._read())
+
 
 __all__ = ["DISPATCH_SCHEMA", "DISPATCH_STATES", "DispatchConflict", "DispatchEnvelope", "DispatchError", "DispatchProgress", "DispatchReceipt", "DispatchRecord", "DurableDispatchStore"]
