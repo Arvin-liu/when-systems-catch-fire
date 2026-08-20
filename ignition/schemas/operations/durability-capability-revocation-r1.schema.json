@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Arvin-liu/when-systems-catch-fire/schemas/operations/durability-capability-revocation-r1.schema.json",
+  "type": "object",
+  "required": ["schema_version", "grant_fields", "effect_classes", "revoke_rule", "in_flight_rule", "health_degradation_rule"],
+  "properties": {
+    "schema_version": {"const": "ignition-durability-capability-revocation-r1"},
+    "grant_fields": {"type": "array", "minItems": 8, "uniqueItems": true, "items": {"type": "string"}},
+    "effect_classes": {"const": ["READ_ONLY", "EXTERNAL_SIDE_EFFECT", "UNKNOWN_SIDE_EFFECT"]},
+    "revoke_rule": {"const": "FUTURE_DISPATCH_FAIL_CLOSED_AND_REVOCATION_IS_REPLAYABLE"},
+    "in_flight_rule": {"const": "READ_ONLY_CANCEL_EXTERNAL_OR_UNKNOWN_RECONCILE"},
+    "health_degradation_rule": {"const": "DRAIN_ONLY_NO_PERMISSION_EXPANSION"}
+  },
+  "additionalProperties": false
+}

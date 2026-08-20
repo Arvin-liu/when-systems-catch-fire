@@ -61,6 +61,7 @@ from .durability import CanonicalSnapshot, CanonicalSnapshotStore, CompactionPol
 from .migration import APPLIED, DRY_RUN, FORBIDDEN, LOSSY_REQUIRES_APPROVAL, MIGRATION_RECEIPT_SCHEMA, MIGRATION_SCHEMA, MigrationError, MigrationExecutionError, MigrationPathError, MigrationReceipt, MigrationRegistry, MigrationResult, MigrationRule, ForbiddenMigrationError, LossyDowngradeRequiresApproval, ROLLED_BACK, StateMigrator, UnknownEpochError
 from .soft_governance_durability import ADVISORY_STATUSES, SOFT_SCHEMA, SoftGovernanceDurabilityError, migrate_soft_state, soft_state_digest, validate_soft_state
 from .namespace import DELEGATION_STATES, NAMESPACE_SCHEMA, PRINCIPAL_TYPES, DelegationGrant, NamespaceBinding, NamespaceGuard, NamespaceIsolationError, PrincipalIdentity, PrincipalRegistry, validate_relative_path
+from .revocation import CapabilityGrant, DispatchAdmission, EFFECT_CLASSES, GRANT_STATES, REVOCATION_SCHEMA, RevocationDispatcher, RevocationError, RevocationEvent, RevocationStore, ZERO_REVOCATION_HASH
 
 __all__ = [
     "ActionObservation",
@@ -203,4 +204,14 @@ __all__ = [
     "PrincipalIdentity",
     "PrincipalRegistry",
     "validate_relative_path",
+    "CapabilityGrant",
+    "DispatchAdmission",
+    "EFFECT_CLASSES",
+    "GRANT_STATES",
+    "REVOCATION_SCHEMA",
+    "RevocationDispatcher",
+    "RevocationError",
+    "RevocationEvent",
+    "RevocationStore",
+    "ZERO_REVOCATION_HASH",
 ]

@@ -1,0 +1,8 @@
+{
+  "schema_version": "ignition-durability-capability-revocation-r1",
+  "grant_fields": ["scope", "lease", "expiry", "issuer", "policy_digest", "principal_id", "namespace_id", "effect_class", "grant_id"],
+  "effect_classes": ["READ_ONLY", "EXTERNAL_SIDE_EFFECT", "UNKNOWN_SIDE_EFFECT"],
+  "revoke_rule": "FUTURE_DISPATCH_FAIL_CLOSED_AND_REVOCATION_IS_REPLAYABLE",
+  "in_flight_rule": "READ_ONLY_CANCEL_EXTERNAL_OR_UNKNOWN_RECONCILE",
+  "health_degradation_rule": "DRAIN_ONLY_NO_PERMISSION_EXPANSION"
+}
