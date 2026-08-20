@@ -18,6 +18,7 @@ by this run and remains `DEFERRED_PENDING_REBASE`.
 | 07 | COMPLETED | pending closure | pending closure | Seven exposure arms × seven challenge arms with 49 deterministic adversarial envelopes and no fabricated outputs. |
 | 08 | COMPLETED | pending closure | pending closure | Anonymous blind packet, structured annotation schema and separate decision/style/utility scoring axes. |
 | 09 | COMPLETED | pending closure | pending closure | Provider-neutral offline-first runner with JSON/JSONL ingestion, readiness state and explicit live-call skip boundary. |
+| 10 | COMPLETED | pending closure | pending closure | Public-safe Owner observation seed with explicit non-replication/non-causal status and privacy scan. |
 
 ## Boundary
 
@@ -144,3 +145,14 @@ Governance Surface state and the non-authority invariant.
   never initiates a provider call.
 - Offline structured ingestion test: `RUN` with
   `live_model_status=NOT_RUN_LIVE_EXTERNAL`; unit tests `3/3` passed.
+
+## Step 10 evidence
+
+- Observation: `data/epistemic-governance/owner-observation-esi-001.json`.
+- Human-safe explanation: `docs/architecture/owner-observation-esi-001.md`.
+- Status is `OWNER_SUPPLIED`, `NOT_INDEPENDENTLY_REPLICATED`,
+  `NOT_CAUSAL_PROOF`, `CANDIDATE_ESI_SIGNAL`.
+- Privacy validator: `tools/validate_owner_observation_privacy.py` passed;
+  private source content, screenshots, paths, identifiers and platform content
+  are all explicitly false. Negative private-path fixture is rejected.
+- Unit tests `2/2` passed.
