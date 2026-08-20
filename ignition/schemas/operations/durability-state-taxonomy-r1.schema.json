@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Arvin-liu/when-systems-catch-fire/schemas/operations/durability-state-taxonomy-r1.schema.json",
+  "type": "object",
+  "required": ["schema_version", "taxonomy_id", "authority_model", "classes", "hard_invariants"],
+  "properties": {
+    "schema_version": {"const": "durability-state-taxonomy-r1"},
+    "taxonomy_id": {"const": "OS_DURABILITY_STATE_TAXONOMY_R1"},
+    "authority_model": {"type": "object", "required": ["canonical_sources", "derived_projections", "non_authority_classes"], "additionalProperties": false, "properties": {
+      "canonical_sources": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+      "derived_projections": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+      "non_authority_classes": {"type": "array", "minItems": 1, "items": {"type": "string"}}
+    }},
+    "classes": {"type": "array", "minItems": 6, "maxItems": 6, "items": {"type": "object", "required": ["class_id", "meaning", "snapshot", "migration", "discard", "cross_namespace", "can_be_authority", "examples"], "additionalProperties": false, "properties": {
+      "class_id": {"type": "string"},
+      "meaning": {"type": "string", "minLength": 20},
+      "snapshot": {"type": "string", "enum": ["FULL_STATE", "DIGEST_AND_POINTER", "VERSIONED_ADVISORY_POINTER", "LINEAGE_REFERENCE", "NOT_INCLUDED"]},
+      "migration": {"type": "string", "enum": ["REPLAY_WITH_ADAPTER", "FORMAT_ONLY", "OPAQUE_POINTER_ONLY", "HISTORICAL_NO_REWRITE", "NOT_MIGRATED"]},
+      "discard": {"type": "string", "enum": ["NO", "DERIVED_REBUILD", "EXPIRED_POINTER_ONLY", "YES"]},
+      "cross_namespace": {"type": "string", "enum": ["EXPLICIT_DELEGATION_ONLY", "NO", "SCOPED_REFERENCE_ONLY"]},
+      "can_be_authority": {"const": false},
+      "examples": {"type": "array", "minItems": 1, "items": {"type": "string"}}
+    }}},
+    "hard_invariants": {"type": "array", "minItems": 8, "uniqueItems": true, "items": {"type": "string"}}
+  },
+  "additionalProperties": false
+}
