@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Arvin-liu/when-systems-catch-fire/schemas/operations/durability-executor-admission-r1.schema.json",
+  "type": "object",
+  "required": ["schema_version", "authority", "admission_rules", "reference_executor_freeze", "executor_fixtures", "negative_fixtures", "claim_ceiling"],
+  "properties": {
+    "schema_version": {"const": "ignition-durability-executor-admission-r1"},
+    "authority": {"const": "OS_ADMISSION_AND_EVENT_LEDGER_ONLY"},
+    "admission_rules": {
+      "type": "object",
+      "required": ["required_fields", "routable_rule", "drift_rule", "revocation_rule", "live_invocation"],
+      "properties": {
+        "required_fields": {"type": "array", "minItems": 9, "uniqueItems": true, "items": {"type": "string"}},
+        "routable_rule": {"const": "ADMITTED_AND_HEALTHY_AND_UNEXPIRED_AND_CAPABILITIES_DECLARED"},
+        "drift_rule": {"const": "VERSION_OR_EPOCH_DRIFT_REMOVES_FROM_POOL_NO_AUTOMATIC_VENDOR_RERUN"},
+        "revocation_rule": {"const": "REVOKED_CAPABILITY_REMOVES_FROM_POOL_FAIL_CLOSED"},
+        "live_invocation": {"const": "NOT_REQUIRED_STEP_09"}
+      },
+      "additionalProperties": false
+    },
+    "reference_executor_freeze": {
+      "type": "object",
+      "required": ["identity", "status", "allowed_capabilities", "forbidden_capabilities", "new_runtime_layers", "live_invocation"],
+      "properties": {
+        "identity": {"const": "REFERENCE_EXECUTOR / CONFORMANCE_EXECUTOR / FALLBACK_MINIMAL"},
+        "status": {"const": "FROZEN"},
+        "allowed_capabilities": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+        "forbidden_capabilities": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+        "new_runtime_layers": {"const": "FORBIDDEN_WITHOUT_CONTRACT_GAP_RECEIPT"},
+        "live_invocation": {"const": "NOT_REQUIRED_STEP_09"}
+      },
+      "additionalProperties": false
+    },
+    "executor_fixtures": {
+      "type": "array",
+      "minItems": 4,
+      "items": {
+        "$ref": "#/$defs/admission"
+      }
+    },
+    "negative_fixtures": {
+      "type": "array",
+      "minItems": 4,
+      "items": {
+        "type": "object",
+        "required": ["fixture_id", "mutation", "expected_status"],
+        "properties": {
+          "fixture_id": {"type": "string"},
+          "mutation": {"type": "string"},
+          "expected_status": {"const": "FAIL_CLOSED"}
+        },
+        "additionalProperties": false
+      }
+    },
+    "claim_ceiling": {"const": "OFFLINE_ADMISSION_OBSERVATION_ONLY_NO_VENDOR_COMPLETION_OR_PRODUCTION_READINESS"}
+  },
+  "$defs": {
+    "admission": {
+      "type": "object",
+      "required": ["executor_id", "adapter_family", "observed_version", "conformance_epoch", "declared_capabilities", "permission_ceiling", "workspace_support", "handoff_semantics", "recovery_semantics", "health_lease_id", "health_status", "observed_at", "health_expires_at", "privacy_boundary", "conformance_receipt_ref", "capability_grant_ids", "status", "status_reason", "admission_digest"],
+      "properties": {
+        "executor_id": {"type": "string", "minLength": 1},
+        "adapter_family": {"type": "string", "minLength": 1},
+        "observed_version": {"type": "string", "minLength": 1},
+        "conformance_epoch": {"type": "integer", "minimum": 1},
+        "declared_capabilities": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string"}},
+        "permission_ceiling": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string"}},
+        "workspace_support": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string"}},
+        "handoff_semantics": {"type": "string", "minLength": 1},
+        "recovery_semantics": {"type": "string", "minLength": 1},
+        "health_lease_id": {"type": "string", "minLength": 1},
+        "health_status": {"enum": ["HEALTHY", "DEGRADED", "STALE", "UNAVAILABLE", "UNKNOWN"]},
+        "observed_at": {"type": "number", "minimum": 0},
+        "health_expires_at": {"type": "number", "exclusiveMinimum": 0},
+        "privacy_boundary": {"enum": ["LOCAL_FIXTURE_ONLY", "LOCAL_INTERNAL", "PUBLIC_BOUNDED"]},
+        "conformance_receipt_ref": {"type": "string", "minLength": 1},
+        "capability_grant_ids": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
+        "status": {"enum": ["ADMITTED", "DRAINING", "REVOKED", "EXPIRED", "REJECTED"]},
+        "status_reason": {"type": "string", "minLength": 1},
+        "admission_digest": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

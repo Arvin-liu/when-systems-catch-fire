@@ -63,6 +63,7 @@ from .soft_governance_durability import ADVISORY_STATUSES, SOFT_SCHEMA, SoftGove
 from .namespace import DELEGATION_STATES, NAMESPACE_SCHEMA, PRINCIPAL_TYPES, DelegationGrant, NamespaceBinding, NamespaceGuard, NamespaceIsolationError, PrincipalIdentity, PrincipalRegistry, validate_relative_path
 from .revocation import CapabilityGrant, DispatchAdmission, EFFECT_CLASSES, GRANT_STATES, REVOCATION_SCHEMA, RevocationDispatcher, RevocationError, RevocationEvent, RevocationStore, ZERO_REVOCATION_HASH
 from .pack_lifecycle import ADVISORY_OVERLAY_ROLE, PACK_LIFECYCLE_SCHEMA, PACK_STATES, PackLifecycleError, PackLifecycleManager, PackLifecycleReceipt, PackLifecycleRecord, PackRunPin, advisory_overlay_record
+from .executor_admission import ADMISSION_STATUSES, EXECUTOR_ADMISSION_SCHEMA, ExecutorAdmission, ExecutorAdmissionError, ExecutorAdmissionStore, ExecutorRouteDenied, HEALTH_STATUSES as ADMISSION_HEALTH_STATUSES, PERMISSION_CEILING, PRIVACY_BOUNDARIES
 
 __all__ = [
     "ActionObservation",
@@ -224,4 +225,13 @@ __all__ = [
     "PackLifecycleRecord",
     "PackRunPin",
     "advisory_overlay_record",
+    "ADMISSION_STATUSES",
+    "EXECUTOR_ADMISSION_SCHEMA",
+    "ExecutorAdmission",
+    "ExecutorAdmissionError",
+    "ExecutorAdmissionStore",
+    "ExecutorRouteDenied",
+    "ADMISSION_HEALTH_STATUSES",
+    "PERMISSION_CEILING",
+    "PRIVACY_BOUNDARIES",
 ]

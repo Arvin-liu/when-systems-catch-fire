@@ -1,0 +1,48 @@
+{
+  "schema_version": "ignition-durability-executor-admission-r1",
+  "authority": "OS_ADMISSION_AND_EVENT_LEDGER_ONLY",
+  "admission_rules": {
+    "required_fields": ["adapter_family", "observed_version", "conformance_epoch", "declared_capabilities", "permission_ceiling", "workspace_support", "handoff_semantics", "recovery_semantics", "health_lease", "privacy_boundary"],
+    "routable_rule": "ADMITTED_AND_HEALTHY_AND_UNEXPIRED_AND_CAPABILITIES_DECLARED",
+    "drift_rule": "VERSION_OR_EPOCH_DRIFT_REMOVES_FROM_POOL_NO_AUTOMATIC_VENDOR_RERUN",
+    "revocation_rule": "REVOKED_CAPABILITY_REMOVES_FROM_POOL_FAIL_CLOSED",
+    "live_invocation": "NOT_REQUIRED_STEP_09"
+  },
+  "reference_executor_freeze": {
+    "identity": "REFERENCE_EXECUTOR / CONFORMANCE_EXECUTOR / FALLBACK_MINIMAL",
+    "status": "FROZEN",
+    "allowed_capabilities": ["protocol_conformance", "repo.read", "offline_fallback", "safe_fault_injection", "receipt_emission"],
+    "forbidden_capabilities": ["browser", "network", "messaging", "provider", "model", "daemon", "subagent", "mcp_ecosystem", "remote_git"],
+    "new_runtime_layers": "FORBIDDEN_WITHOUT_CONTRACT_GAP_RECEIPT",
+    "live_invocation": "NOT_REQUIRED_STEP_09"
+  },
+  "executor_fixtures": [
+    {
+      "executor_id": "reference.executor", "adapter_family": "reference-local", "observed_version": "reference-fixture-r1", "conformance_epoch": 1,
+      "declared_capabilities": ["offline_fallback", "protocol_conformance", "repo.read"], "permission_ceiling": ["repo.read"], "workspace_support": ["LOCAL_FIXTURE"],
+      "handoff_semantics": "OS_CANONICAL_BUNDLE_ONLY", "recovery_semantics": "IDEMPOTENCY_RECONCILIATION", "health_lease_id": "health-reference-r1", "health_status": "HEALTHY", "observed_at": 100, "health_expires_at": 200, "privacy_boundary": "LOCAL_FIXTURE_ONLY", "conformance_receipt_ref": "fixture/conformance/reference-r1", "capability_grant_ids": [], "status": "ADMITTED", "status_reason": "fixture conformance admitted", "admission_digest": "92796a5996f7e7c4e1928a01f90094a3d5df81129bfd48f27a9a97c9e406f405"
+    },
+    {
+      "executor_id": "external.hermes", "adapter_family": "hermes-adapter", "observed_version": "hermes-fixture-r1", "conformance_epoch": 1,
+      "declared_capabilities": ["repo.read", "structured_progress"], "permission_ceiling": ["repo.read"], "workspace_support": ["LOCAL"],
+      "handoff_semantics": "OS_CANONICAL_BUNDLE_ONLY", "recovery_semantics": "RECONCILE_EXTERNAL_POINTER", "health_lease_id": "health-hermes-r1", "health_status": "HEALTHY", "observed_at": 100, "health_expires_at": 200, "privacy_boundary": "LOCAL_INTERNAL", "conformance_receipt_ref": "fixture/conformance/hermes-r1", "capability_grant_ids": [], "status": "ADMITTED", "status_reason": "offline fixture only", "admission_digest": "138d92bb64ebc4f0a914834e64ee913cae1529bbb5e9cde2cba8afbb6d4c8218"
+    },
+    {
+      "executor_id": "external.codex", "adapter_family": "codex-adapter", "observed_version": "codex-fixture-r1", "conformance_epoch": 1,
+      "declared_capabilities": ["repo.read", "repo.test", "structured_progress"], "permission_ceiling": ["repo.read", "repo.test"], "workspace_support": ["LOCAL"],
+      "handoff_semantics": "OS_CANONICAL_BUNDLE_ONLY", "recovery_semantics": "IDEMPOTENCY_RECONCILIATION", "health_lease_id": "health-codex-r1", "health_status": "HEALTHY", "observed_at": 100, "health_expires_at": 200, "privacy_boundary": "LOCAL_INTERNAL", "conformance_receipt_ref": "fixture/conformance/codex-r1", "capability_grant_ids": [], "status": "ADMITTED", "status_reason": "offline fixture only", "admission_digest": "f3432adac716a2dba64bdfe43f18c99adfcfc7bfc679bc66608023749da2044b"
+    },
+    {
+      "executor_id": "external.openclaw", "adapter_family": "openclaw-adapter", "observed_version": "openclaw-fixture-r1", "conformance_epoch": 1,
+      "declared_capabilities": ["long_task", "repo.read"], "permission_ceiling": ["repo.read", "long_task"], "workspace_support": ["LOCAL"],
+      "handoff_semantics": "OS_CANONICAL_BUNDLE_ONLY", "recovery_semantics": "RECONCILE_EXTERNAL_POINTER", "health_lease_id": "health-openclaw-r1", "health_status": "HEALTHY", "observed_at": 100, "health_expires_at": 200, "privacy_boundary": "LOCAL_INTERNAL", "conformance_receipt_ref": "fixture/conformance/openclaw-r1", "capability_grant_ids": [], "status": "ADMITTED", "status_reason": "offline fixture only", "admission_digest": "8e8310d38d22ff9c010d834e0bf739fc34b392a3159ca758579c5476db3adc1a"
+    }
+  ],
+  "negative_fixtures": [
+    {"fixture_id": "version-drift", "mutation": "route with a different observed_version", "expected_status": "FAIL_CLOSED"},
+    {"fixture_id": "expired-health-lease", "mutation": "route at or after health_expires_at", "expected_status": "FAIL_CLOSED"},
+    {"fixture_id": "revoked-capability", "mutation": "replay a revoked grant before route", "expected_status": "FAIL_CLOSED"},
+    {"fixture_id": "forged-reference-capability", "mutation": "add a forbidden Reference Executor runtime capability", "expected_status": "FAIL_CLOSED"}
+  ],
+  "claim_ceiling": "OFFLINE_ADMISSION_OBSERVATION_ONLY_NO_VENDOR_COMPLETION_OR_PRODUCTION_READINESS"
+}
