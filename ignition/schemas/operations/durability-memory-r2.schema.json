@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Arvin-liu/when-systems-catch-fire/schemas/operations/durability-memory-r2.schema.json",
+  "type": "object",
+  "required": ["schema_version", "schema_epoch", "event_types", "namespace_rule", "mutation_rules", "atomicity", "hidden_content_rule", "soft_context_rule", "snapshot_rule", "claim_ceiling"],
+  "properties": {
+    "schema_version": {"const": "ignition-durability-operational-memory-r2"},
+    "schema_epoch": {"const": "operational-memory-epoch-2"},
+    "event_types": {"const": ["MEMORY_APPENDED", "MEMORY_SUPERSEDED", "MEMORY_EXPIRED", "MEMORY_FORGOTTEN", "MEMORY_TOMBSTONED", "SOFT_CONTEXT_EXPOSED"]},
+    "namespace_rule": {"const": "QUERY_AND_MUTATION_REQUIRE_EXACT_NAMESPACE_DEFAULT_DENY"},
+    "mutation_rules": {"const": "SUPERSEDE_EXPIRE_FORGET_TOMBSTONE_REPLAYABLE_APPEND_ONLY"},
+    "atomicity": {"const": "ONE_COMPLETE_EVENT_LINE_OR_NO_MEMORY_STATE_CHANGE"},
+    "hidden_content_rule": {"const": "PRIVATE_SESSION_HIDDEN_COT_PROMPT_AND_SECRET_MATERIAL_REJECTED"},
+    "soft_context_rule": {"const": "POINTER_ONLY_ADVISORY_NO_TRUTH_OR_AUTHORITY"},
+    "snapshot_rule": {"const": "NAMESPACE_AND_CHAIN_DIGEST_MUST_VERIFY_BEFORE_RESTORE"},
+    "claim_ceiling": {"const": "OPERATIONAL_MEMORY_INTEGRITY_ONLY_NO_KNOWLEDGE_TRUTH_PERMISSION_OR_OWNER_AUTHORITY"}
+  },
+  "additionalProperties": false
+}

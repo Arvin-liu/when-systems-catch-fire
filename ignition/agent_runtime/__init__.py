@@ -65,6 +65,7 @@ from .revocation import CapabilityGrant, DispatchAdmission, EFFECT_CLASSES, GRAN
 from .pack_lifecycle import ADVISORY_OVERLAY_ROLE, PACK_LIFECYCLE_SCHEMA, PACK_STATES, PackLifecycleError, PackLifecycleManager, PackLifecycleReceipt, PackLifecycleRecord, PackRunPin, advisory_overlay_record
 from .executor_admission import ADMISSION_STATUSES, EXECUTOR_ADMISSION_SCHEMA, ExecutorAdmission, ExecutorAdmissionError, ExecutorAdmissionStore, ExecutorRouteDenied, HEALTH_STATUSES as ADMISSION_HEALTH_STATUSES, PERMISSION_CEILING, PRIVACY_BOUNDARIES
 from .accounting import ACCOUNTING_DIMENSIONS, ACCOUNTING_EVENT_SCHEMA, ACCOUNTING_SCHEMA, AccountingDuplicate, AccountingError, AccountingEvent, AccountingPolicy, AccountingQuotaExceeded, AccountingStore, ATTEMPT_KINDS, BoundedFairScheduler, BudgetScope, CostVector, FairWorkItem, ReservationReceipt, SettlementReceipt
+from .durable_memory import DURABLE_MEMORY_EPOCH, DURABLE_MEMORY_EVENT_SCHEMA, DURABLE_MEMORY_SCHEMA, DurableMemoryError, DurableMemoryEvent, DurableMemoryRecord, DurableOperationalMemoryStore, MemoryNamespaceDenied, MemorySnapshotIntegrityError, MEMORY_EVENT_TYPES, MEMORY_STATES
 
 __all__ = [
     "ActionObservation",
@@ -251,4 +252,15 @@ __all__ = [
     "FairWorkItem",
     "ReservationReceipt",
     "SettlementReceipt",
+    "DURABLE_MEMORY_EPOCH",
+    "DURABLE_MEMORY_EVENT_SCHEMA",
+    "DURABLE_MEMORY_SCHEMA",
+    "DurableMemoryError",
+    "DurableMemoryEvent",
+    "DurableMemoryRecord",
+    "DurableOperationalMemoryStore",
+    "MemoryNamespaceDenied",
+    "MemorySnapshotIntegrityError",
+    "MEMORY_EVENT_TYPES",
+    "MEMORY_STATES",
 ]
