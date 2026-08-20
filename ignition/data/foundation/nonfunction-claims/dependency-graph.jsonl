@@ -687,6 +687,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-001d410543ff17ee","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-00242edb2cd91eae","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-0031874d337f4ab0","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-0032f0b4175d601c","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-0037976d99a127c9","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-0037b9aeacace2af","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-003960da26e472ee","incoming_claims":[],"outgoing":[]}
@@ -731,12 +732,14 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-00e0a602807e2221","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-00e6b2d88ebe16a7","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-00e9c737ad410d90","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D86","target_kind":"FUNCTION_ASSET"}]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-00ec0844850b116e","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-00eeb962677af392","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-00ef70998b18efa8","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-00f63ff542e6bf0f","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D557","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-00f68294b8e6ce4d","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D561","target_kind":"FUNCTION_ASSET"},{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D570","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-0106842f9646158b","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-01099fa0fab72e4b","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-011205ef277a20c0","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-011919b0fa2ebf63","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-011dc72b8b6445e2","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-012376f26a0d20a6","incoming_claims":[],"outgoing":[]}
@@ -766,6 +769,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-018252cbca715f7b","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D177","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-0184ed8ae24f7f57","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-018d82d761b66592","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-018edc9a949d39a4","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-01a0a692a7c1ed36","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-01a8787e9d57402f","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-01ae6606e4932834","incoming_claims":[],"outgoing":[]}
@@ -953,9 +957,11 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-04d5cd6c98e4c4a2","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D158","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-04da48bff1e3b727","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-04de9300b697e0b1","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-04decd8092db3709","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-04df2853ad4909b1","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-04e606257e5e21ee","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-04f19e49f3106cc5","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-04f37cbce3aa8c41","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-04fc3f4e2d8bd302","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-04ff3065c03d7d7f","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-04ffec550887348a","incoming_claims":[],"outgoing":[]}
@@ -1108,6 +1114,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-0725921da5930c59","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-072d16dcca490e9f","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-0732c0328d5366e5","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-0734a534d865d69a","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-073c5c3e9e14eae7","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-073e9a89efa1c220","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-0743164df71390ba","incoming_claims":[],"outgoing":[]}
@@ -1115,6 +1122,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-074d9cf7504a21d5","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D72","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-074ddc78209f30c9","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-0754e3321df9a272","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-0756071525de946e","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-0759fb2c92ac8f11","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-075b65ab678cb727","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-075bb19a28df7330","incoming_claims":[],"outgoing":[]}
@@ -1394,6 +1402,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-0c0ad41090f7d1b9","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-0c0f17a4335f5421","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-0c10ef238360a6a0","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-0c1126c17b27079c","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-0c13bd8d8f8d7803","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D158","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-0c156ad0b51abef7","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-0c1be1902cbe7fd8","incoming_claims":[],"outgoing":[]}
@@ -1639,6 +1648,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-0fc58a5923264699","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D264","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-0fc8d121f4e7a464","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D577","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-0fca79737d3ecda9","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-0fdbd1987ada6b60","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-0fdf061a7ff24144","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-0fe0d746c48568e5","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-0fe7757175fa33a5","incoming_claims":[],"outgoing":[]}
@@ -1760,6 +1770,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-11f3a0cd14dba324","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D600","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-11f524fb8cd469bd","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-11f57ba33c77a75f","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D249","target_kind":"FUNCTION_ASSET"}]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-11f80265a2bd3376","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-11fc49df293df3e4","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-12038a9e66cde328","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"T23","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-1203eb706a4e1e52","incoming_claims":[],"outgoing":[]}
@@ -1835,6 +1846,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-1305d68bbe127e42","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D413","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-130cd0615c33fdf9","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-130daa959c23c142","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-1310b77e87e23c34","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-1310c168d460eab7","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-131156a1a4311f8f","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D335","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-131e68be3a318d00","incoming_claims":[],"outgoing":[]}
@@ -1884,6 +1896,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-13a12c076e7d9a68","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-13a5e631d1ea14a4","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-13a6e7cdb6650725","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-13a7945900a03e51","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-13a86ba1b1ba6862","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-13adc50b61b6ec1a","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-13b6fe9e638e1cf3","incoming_claims":[],"outgoing":[]}
@@ -1950,7 +1963,6 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-14af48581342d15a","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D532","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-14b3c18d3ff59f23","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D553","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-14b4a7a558ab5730","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D306","target_kind":"FUNCTION_ASSET"}]}
-{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-14b8671a2d5e4194","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-14b8e7dd17b90675","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D290","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-14bed00c9fe26ea4","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D598","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-14c37e19e397c981","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D327","target_kind":"FUNCTION_ASSET"}]}
@@ -2046,6 +2058,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-1626db3de1e59e39","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-16270613f6f1c813","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-1627fe6a2faae50c","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-162e953a8a7955e4","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-162ff3242643775d","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-16436cbea4a216d3","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-1649ba8b9b0c7bf2","incoming_claims":[],"outgoing":[]}
@@ -2071,7 +2084,6 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-16a1f3c79eb30a37","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-16a65d0ad77cfb16","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D139","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-16a6adda8f86bb61","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D305","target_kind":"FUNCTION_ASSET"}]}
-{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-16a6c2b585f0187e","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-16b147eb9f71a2ab","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-16b180e2f7c6c537","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-16b25318fc08301f","incoming_claims":[],"outgoing":[]}
@@ -2101,9 +2113,11 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-171fbc98f1c5c3fb","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-1723970e8f08623c","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-1724c85352d3d2f9","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-172962dd073fccce","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-172aaf7dc1b6a857","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-172d67fc6af75bca","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-172e623a63c29d7c","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-1733686f7b4d281d","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-174133ec7a7d21c7","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D192","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-1741ea043f4d8ddb","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D184","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-174369641da9cfac","incoming_claims":[],"outgoing":[]}
@@ -2150,8 +2164,10 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-17cc1d92a719e898","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-17ce3c4e004cee35","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-17ce58d492a0f02c","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-17d368f9eb054bc8","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-17d450d372b073f4","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-17d61bb612adec22","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D261","target_kind":"FUNCTION_ASSET"}]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-17d8a6f0f1810d04","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-17ddf55df109a953","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-17e09b0424014a3f","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-17eed73d0163f501","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D274","target_kind":"FUNCTION_ASSET"}]}
@@ -2235,11 +2251,13 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-1940ec58354695c4","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-1944eb501826a935","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-194634124d71fb1e","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-19487fe9b31a886e","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-194ba68a3b9acf0e","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-194ca7d3d7d07416","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-194f78f006d399da","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-1952548277feb215","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D220","target_kind":"FUNCTION_ASSET"},{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D598","target_kind":"FUNCTION_ASSET"},{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"T16","target_kind":"FUNCTION_ASSET"},{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"T2","target_kind":"FUNCTION_ASSET"},{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"Y1","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-1955590d8570684f","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-1957957fe42993b1","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-195bea3de1bc01f4","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-19669ae0a185eda5","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-19671f52be73ab6d","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D274","target_kind":"FUNCTION_ASSET"},{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D299","target_kind":"FUNCTION_ASSET"}]}
@@ -2274,6 +2292,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-19c6e2577abcd8b6","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-19cf0e7c8601c73d","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D538","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-19d0d52869114ddb","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-19d1002004c118ec","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-19d87f68a2daf99a","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-19dfb3ab1c36d1d9","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-19e1c526777343bb","incoming_claims":[],"outgoing":[]}
@@ -2325,6 +2344,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-1ac139e18f5c7007","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-1ac502e3c11f19c1","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-1ac7ec426c56114b","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-1ad0e1c540ee14ac","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-1ad8c023c3820ae7","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D111","target_kind":"FUNCTION_ASSET"},{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D139","target_kind":"FUNCTION_ASSET"},{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D87","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-1adeabdf4a657d15","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-1ae3d41e083195dc","incoming_claims":[],"outgoing":[]}
@@ -2424,6 +2444,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-1c67858e4d550130","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-1c6ba37b1735ea38","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-1c78c20c723af194","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-1c7c49529992c60f","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-1c7f3913376c1331","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-1c80bad39e38d06b","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D173","target_kind":"FUNCTION_ASSET"},{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D597","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-1c814e19ea109be5","incoming_claims":[],"outgoing":[]}
@@ -2441,7 +2462,9 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-1caae76544524042","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D516","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-1caca3738bd90778","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D250","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-1caffab9e2d41766","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-1cb374c29a47c79a","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-1cb6289bdd85951e","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-1cc0702437de2b9f","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-1cc32e8651cdd6f2","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-1cd73aaec360fe22","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-1cd91bbfbdc69d2b","incoming_claims":[],"outgoing":[]}
@@ -2523,6 +2546,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-1e243dae3340bc17","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-1e272d97f2c66cfb","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-1e29ab4257604d6e","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-1e2cb877a4fe5c5e","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-1e30f4c63c3d0976","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-1e3bdb57a65f542e","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-1e3e10315f4b3a78","incoming_claims":[],"outgoing":[]}
@@ -2589,8 +2613,10 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-1f3f53ff96fde923","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-1f40c1acad41277a","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D338","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-1f40f0ec9de35773","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D527","target_kind":"FUNCTION_ASSET"}]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-1f484fa066655ba7","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-1f49275a4076c26d","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D59","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-1f4c691984f26c44","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-1f4d49d8c42b0422","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-1f576ccfbe32d877","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-1f5fb160fb67c001","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-1f66a0a47380f1e5","incoming_claims":[],"outgoing":[]}
@@ -2690,6 +2716,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-213d4305a6014636","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-213f498cf1cd9172","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-214465f093670c7b","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-214d865efbf7186b","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-214def19735b217b","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-214edb5b7c900a2a","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-21507b1c259323a8","incoming_claims":[],"outgoing":[]}
@@ -2744,6 +2771,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-22113dd144c61352","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-221614e2a7f6a0a1","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D582","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-22183cdbb878a57e","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"T55","target_kind":"FUNCTION_ASSET"}]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-22185010e20d43cf","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-2218e0d089f67d21","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-221a0d759537d747","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D368","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-221c1fa047d9c2d7","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D329","target_kind":"FUNCTION_ASSET"}]}
@@ -2825,6 +2853,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-232e34708ad34e6a","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-232fdbe16e7169d9","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D239","target_kind":"FUNCTION_ASSET"},{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D242","target_kind":"FUNCTION_ASSET"},{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D243","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-23311c3aadf0bf25","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-23378a5dcdd0b81e","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-23403a28e51f3c71","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-23438d355d8c4fd7","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-234438bbee984ba0","incoming_claims":[],"outgoing":[]}
@@ -2864,6 +2893,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-23d651384e618b2b","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-23d6aef5b7f97fdf","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D146","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-23dabab5c38551b7","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-23e06ace76325076","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-23e09d5b692ccc0f","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D584","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-23ed237062f406ec","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-23f268d9e5d92c8c","incoming_claims":[],"outgoing":[]}
@@ -2891,6 +2921,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-244ec31b64a84f0d","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-2453aaeba727d3e6","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-24590bc33978f3fc","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D147","target_kind":"FUNCTION_ASSET"}]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-245eabc8cfa6582c","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-245f7f541e1fef91","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-2466afa39989b60c","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-246adf4af97dc9ee","incoming_claims":[],"outgoing":[]}
@@ -2908,6 +2939,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-24967190c738fdfd","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-2497e88d630f23cb","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-249aaba834375c20","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-249afcbbc84a8b58","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-249ce5e5914f1165","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D423","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-249f81943565e430","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-24a08b57e4dfce15","incoming_claims":[],"outgoing":[]}
@@ -2944,6 +2976,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-2547b1ca24bb1051","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D337","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-25489cd4a9b9e842","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-2553734ad510bb2c","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-255a4bf95a643d08","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-255fa31045fd9427","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-255fb859cd51bf49","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-25601b5b858e63ad","incoming_claims":[],"outgoing":[]}
@@ -2967,6 +3000,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-25bc876470b4de17","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"EXPLICITLY_UNRESOLVED","target":"N8","target_kind":"EXTERNAL_OR_UNRESOLVED"},{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"EXPLICITLY_UNRESOLVED","target":"N9","target_kind":"EXTERNAL_OR_UNRESOLVED"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-25c5c2687934da79","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-25c60b3d06eef906","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D595","target_kind":"FUNCTION_ASSET"}]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-25c6bbf1b274b6ce","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-25d24960fc0d6664","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-25d38552479bc75d","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-25d5bb85845bf5f3","incoming_claims":[],"outgoing":[]}
@@ -3007,6 +3041,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-26630f968a1300d2","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D114","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-266599f27edaf95b","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-26680c03ff7f28fb","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-2668357541071046","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-26685431aeba1e2e","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-266b30539d786715","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-266bf47796808c54","incoming_claims":[],"outgoing":[]}
@@ -3034,6 +3069,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-26c4a07aaad6170f","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-26c5f12ff55e2833","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-26d205ac6194f745","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-26d2132de095c538","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-26d740452db9781e","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D355","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-26e4183822a77074","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D90","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-26e95f29ada730bd","incoming_claims":[],"outgoing":[]}
@@ -3184,6 +3220,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-2948f5783ed55ebc","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D386","target_kind":"FUNCTION_ASSET"},{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D387","target_kind":"FUNCTION_ASSET"},{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D400","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-294c8f768ecd47a2","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-296576b57922cd3b","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-296624a37554842c","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-29677b1a7c718daf","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D583","target_kind":"FUNCTION_ASSET"},{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D595","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-29778ad97693b78b","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D61","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-297e78539bd93ccc","incoming_claims":[],"outgoing":[]}
@@ -3222,6 +3259,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-2a0372f3d4c7809f","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D169","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-2a06f612569696e3","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D73","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-2a08f1aca9a9b56f","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-2a0a62526d88d26d","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-2a0f8e25ec04f754","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-2a1c1f1b1dcce184","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-2a1c985a55379039","incoming_claims":[],"outgoing":[]}
@@ -3413,7 +3451,6 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-2cf47d1d79a3da63","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D164","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-2cf5fdde6ecf1ea4","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-2cf97897fff0ab82","incoming_claims":[],"outgoing":[]}
-{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-2cfca960b0909c17","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-2d03736b32d33ff6","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D107","target_kind":"FUNCTION_ASSET"},{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D114","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-2d043eecd757724f","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-2d07962e92f9f84a","incoming_claims":[],"outgoing":[]}
@@ -3433,6 +3470,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-2d5b7fb5db1039e6","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-2d5cf18b4ed756c1","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-2d669e6d34b774f2","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-2d6b0d167043c299","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-2d6ded58755bb8c0","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D110","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-2d7b8398d305ceab","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-2d7c87cf84697cc5","incoming_claims":[],"outgoing":[]}
@@ -3487,6 +3525,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-2e77cf24bfe22f1b","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D160","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-2e7830858f0260ac","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-2e78a74fce3e4fb3","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-2e7914b0c8d135f6","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-2e7a5f0dd267d9b1","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-2e7d4de10f4c9f56","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D491","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-2e81401facc6f412","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D205","target_kind":"FUNCTION_ASSET"}]}
@@ -3729,6 +3768,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-32b06de13c379737","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-32b2423e31ea71fa","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-32b25ad683e738aa","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D74","target_kind":"FUNCTION_ASSET"},{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D84","target_kind":"FUNCTION_ASSET"}]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-32b4c965a4a8562b","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-32b553ef1f6a7d76","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-32b9c14e778223dd","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D271","target_kind":"FUNCTION_ASSET"},{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D360","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-32ba61617e4b55f7","incoming_claims":[],"outgoing":[]}
@@ -3787,6 +3827,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-33717b76c0c55d0d","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-337720b46ff7dab5","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-337b55cb63f246c6","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-337bd431d3e79229","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-337d30a65ec9a4a0","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"T36","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-337d4d802bd7dd54","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-337fbe50cdc1fff9","incoming_claims":[],"outgoing":[]}
@@ -3869,6 +3910,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-34d32c1dddfb21a8","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-34d4a54537705afc","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-34e2d14519f1a524","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-34e345ce023a5ffe","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-34e3871cb2b462c7","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-34ea3c055e522ee6","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-34eccadbc5d930a2","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D592","target_kind":"FUNCTION_ASSET"}]}
@@ -4021,6 +4063,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-375faa4b72d26e5d","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-3763bfd96c8eeb69","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-376a3ad34f000341","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-376d448a06ea6cca","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-376ebbfa2856568d","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-37739a318a7b6618","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-3778360b1359062c","incoming_claims":[],"outgoing":[]}
@@ -4081,6 +4124,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-385fbae9e2521a4b","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-3862480bb9059fb8","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-386440ed858bd1f3","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D512","target_kind":"FUNCTION_ASSET"}]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-3877a1546fe7ed94","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-387845a1fcadee0d","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-38808436b332060e","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-388197f60e174a9c","incoming_claims":[],"outgoing":[]}
@@ -4139,6 +4183,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-393216479e042a79","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-394c40f570ca8604","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-394ea6b846a13aab","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-3953ebcea40069d4","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-395c18ab6cb9071e","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-3961917d39ce36af","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-39646e42622a9c65","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D160","target_kind":"FUNCTION_ASSET"}]}
@@ -4198,6 +4243,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-3a73ef94c9b235a6","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-3a742707aa68b83b","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-3a75bf406c5ae4dd","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-3a78280c2a12dacc","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-3a7909f3cd5f130d","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-3a7e3d2240075f25","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-3a8457a09947ed0f","incoming_claims":[],"outgoing":[]}
@@ -4216,6 +4262,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-3a9e924c18a7d98a","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-3aa1a0644f7b2635","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-3aa9fd1abb33f577","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-3aaad055dd6ae1b8","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-3aae60e4f68ded50","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D160","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-3ab93a2ec16b79f4","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D497","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-3ac33c33eff9db84","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D74","target_kind":"FUNCTION_ASSET"},{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D84","target_kind":"FUNCTION_ASSET"}]}
@@ -4266,6 +4313,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-3b7f906bf7aaf84c","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-3b83708f1541707d","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-3b84ce4a54b8671b","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-3b89550846cde19c","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-3b92140e148e7f81","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-3b9b0fe26c149fdf","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-3b9c92a02ec16e6d","incoming_claims":[],"outgoing":[]}
@@ -4296,6 +4344,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-3c1733b499ede234","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D60","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-3c26164728dd86a7","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-3c269a059597c296","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-3c36216e0c16361b","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-3c3fe8840720ea1c","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-3c43097c57ea7e04","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"A5","target_kind":"FUNCTION_ASSET"},{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D463","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-3c43a8d9d78df545","incoming_claims":[],"outgoing":[]}
@@ -4318,6 +4367,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-3c91450dd5c3d4ad","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D488","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-3c9b035f0fd0adab","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D588","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-3c9cdd1d94ea0cbd","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D299","target_kind":"FUNCTION_ASSET"}]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-3c9d2a531f8159a2","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-3ca9e04b62c7dea9","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-3caa48a7de425dd4","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D317","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-3cad68362ed4b3e8","incoming_claims":[],"outgoing":[]}
@@ -4540,6 +4590,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-402c07fdc33d29fc","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-402ce8853af0c681","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-40334e929cb1b8cc","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-403508353d4f3b4f","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-40386a8e79c84b34","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-403927b5994cf08f","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-4039f14760dae76f","incoming_claims":[],"outgoing":[]}
@@ -4664,6 +4715,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-420955715767265f","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-420983b76580e27e","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-420acee73f67cbf4","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-420f0c46fd22ff6d","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-420fc9598dd1b5a8","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-421444b8aaf8e5f4","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-42153d01751c850e","incoming_claims":[],"outgoing":[]}
@@ -4732,6 +4784,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-4322acf25681ea15","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D158","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-432a304c0710514c","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-43305bfe9a77e1bb","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-433344c96df46860","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-43377f3383427545","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-4340885c8b9d796e","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-4344828f9df2b518","incoming_claims":[],"outgoing":[]}
@@ -4753,6 +4806,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-438a68c6d211cc99","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-438d8f26a135ee53","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-4394a59fb2fdae3c","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D125","target_kind":"FUNCTION_ASSET"}]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-439663f0568c5c7c","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-4396f4167d489e32","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D149","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-4398ea105349cdf2","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-439b65dd5b2c4d1f","incoming_claims":[],"outgoing":[]}
@@ -4763,6 +4817,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-43a3b80d0e17c54b","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-43aa1f3c01e9e001","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-43ae1704a3a41944","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-43b1b77570d31bcf","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-43b90df9de0fadc4","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D491","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-43be1441ffcaf882","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-43bfea1ddb429e38","incoming_claims":[],"outgoing":[]}
@@ -4773,6 +4828,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-43d987d2226a0b40","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-43e804a05ea85f4f","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-43e82f8f519ea33c","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-43e9d5818d564a4e","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-43ec995e84dcb283","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-43ed9ee882071037","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-43f322e270a51879","incoming_claims":[],"outgoing":[]}
@@ -5205,6 +5261,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-4b1f208b0326eb0d","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-4b248dd25bc25616","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D558","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-4b2a124ebc869468","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D597","target_kind":"FUNCTION_ASSET"}]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-4b2b11515e0f80cd","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-4b2c7c79a89380f8","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"P1","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-4b30d8eb7e320f6b","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-4b31e1f800f97582","incoming_claims":[],"outgoing":[]}
@@ -5217,6 +5274,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-4b59a345bdda58d3","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-4b5b830fdadfc1e2","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D111","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-4b5d067bdc7365dd","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D421","target_kind":"FUNCTION_ASSET"}]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-4b6021ebeebba216","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-4b6bf1771b7afedc","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-4b6ca41eb4b3bedb","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D228","target_kind":"FUNCTION_ASSET"},{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"T33","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-4b6cdaa6ab0cb04f","incoming_claims":[],"outgoing":[]}
@@ -5258,6 +5316,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-4bfd0f99305cef7c","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-4bffdeb0ab79df8e","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-4c03c6f1f733e9ef","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-4c0c223e084e9f12","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-4c0f062f3f793280","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-4c14c1ea0f4d8fcb","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-4c1baac44bd8c4c1","incoming_claims":[],"outgoing":[]}
@@ -5539,6 +5598,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-506843da37fd1dd1","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-506b15d3475b0fee","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-5073f711e39eef84","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-5074f83f37e287bf","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-5075336c78e3a8ee","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D218","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-50823741eed00f18","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-5088a3cf7d1198f1","incoming_claims":[],"outgoing":[]}
@@ -5639,6 +5699,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-521c4525a3a8c6a6","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-521d83b689059e8b","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D330","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-522277bf0a74860d","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-52242899c472490c","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-5225c16c987c1783","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-522b29ab88b0b399","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"T25","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-5234fa8ef6582949","incoming_claims":[],"outgoing":[]}
@@ -5913,6 +5974,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-56f8633d43c644e7","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-56f9bfc8944ba5ef","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-56fa74a59f515135","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-56fd0f3e30218f09","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-57024422cec47fd2","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D69","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-57038ceedd172ef5","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-5705fd7e0e10c796","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D335","target_kind":"FUNCTION_ASSET"}]}
@@ -6029,6 +6091,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-59077067d3a6c7f5","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-5909cf680a3bbd6c","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-590b3ddb1f269f21","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D597","target_kind":"FUNCTION_ASSET"}]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-59184fa57923c40e","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-591c748cb43d0088","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-591d2b6784dc76eb","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D183","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-5922a0a0db73b27a","incoming_claims":[],"outgoing":[]}
@@ -6096,6 +6159,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-5a35e19bd4568f1c","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-5a381fb60f6e5f6c","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-5a38cbb7b9bab480","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-5a3dfe7f8c39927f","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-5a3edb1445b2b6c4","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D327","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-5a3ff48ea32b0798","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D597","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-5a407e8944f9c68a","incoming_claims":[],"outgoing":[]}
@@ -6119,7 +6183,6 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-5a8bd50457dc1039","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D179","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-5a8cc3c893ebf015","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-5a8d09335e9951b1","incoming_claims":[],"outgoing":[]}
-{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-5a95082571cb0b44","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-5a98b6170c065a6b","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D595","target_kind":"FUNCTION_ASSET"},{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D599","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-5a9f002f7b478bfa","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-5a9fe9e0622c47e2","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D403","target_kind":"FUNCTION_ASSET"}]}
@@ -6221,6 +6284,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-5c71e436c1079b65","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D141","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-5c815dd662f7adc3","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-5c8318c73983c935","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-5c88e589ead697e8","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-5c8f00bf876c52b5","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-5c9ac66847af23e4","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D371","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-5c9c52cb69cb4ef4","incoming_claims":[],"outgoing":[]}
@@ -6229,6 +6293,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-5cb4f4f46b32e1f9","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-5cbba054d9c2da64","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-5cbc921e073a41f9","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-5cc096b0c3b22111","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-5cc30d4f2e860922","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"T52","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-5cc3e47e121771c8","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-5cc8fc2bd5048df6","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D583","target_kind":"FUNCTION_ASSET"}]}
@@ -6245,6 +6310,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-5ce87b048b735cb2","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-5ceb75acaf224ffd","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-5cec8da646cc9646","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D34","target_kind":"FUNCTION_ASSET"}]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-5ceebc3da19b309e","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-5cf853daa93ecd7d","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-5cf9d1d4c067eac5","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-5cfa46f911fc074f","incoming_claims":[],"outgoing":[]}
@@ -6300,6 +6366,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-5d94bbdb0da66080","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-5da0a2414b117f23","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-5db4ff32ca70cae4","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-5dbe2b20446ad140","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-5dbfe141bae8b4d2","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D533","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-5dc35b598a36c6c2","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-5dcba22764ec3a25","incoming_claims":[],"outgoing":[]}
@@ -6509,6 +6576,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-612599e6e21cb21a","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D53","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-61271b82072193b8","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-612fc34236ec8033","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-61396e3143d69a6a","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-6145fa2f0724806f","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-61482c4f96a90d35","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-614902961829f6be","incoming_claims":[],"outgoing":[]}
@@ -6557,6 +6625,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-6210d006c7e0c01c","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-6212e7d027246b43","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D313","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-6216a1b78dc4c635","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-621850e042fcd487","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-62192f0014603ff5","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-621b3780356c1e5f","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-621b4efb02b81b2d","incoming_claims":[],"outgoing":[]}
@@ -6580,10 +6649,12 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-625a0abce9128d50","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-625e81ab49a13b8d","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D162","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-625fdbbf0607084f","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-6265dcb043856241","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-6266a8d9d9789323","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-6268fe7af33d777e","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-626ebe160bd7936e","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-6276af44546c7c12","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D160","target_kind":"FUNCTION_ASSET"}]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-6279473e5bcf0327","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-627b7feab0315044","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-6281960bf2ad6a6a","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D261","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-6283060d326efda4","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D142","target_kind":"FUNCTION_ASSET"}]}
@@ -6643,6 +6714,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-6342b88b8ad93d57","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D309","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-63435a461bc73ed6","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-634a6cd7a8d04b1c","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-634ae7f9dc0d4866","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-6355ca2817a78b27","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D576","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-635ab04a4cfea5e4","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-6363970892e0eda7","incoming_claims":[],"outgoing":[]}
@@ -6691,7 +6763,6 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-643f4b1bae9a0ec3","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-64408794f12de989","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-644d359b7a3873dd","incoming_claims":[],"outgoing":[]}
-{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-64548e1600f4dae8","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-645495f8cbb71107","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-6455a23d8a31e827","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-64585ffd3e06f765","incoming_claims":[],"outgoing":[]}
@@ -6816,6 +6887,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-6642414a084feed8","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-664342ec0872ea19","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D53","target_kind":"FUNCTION_ASSET"},{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D66","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-66491f8944af8703","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D111","target_kind":"FUNCTION_ASSET"},{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D118","target_kind":"FUNCTION_ASSET"}]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-6649954fae923573","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-664aa7574c42616e","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-664e7ca8704f0ff7","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D289","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-665312210482fca8","incoming_claims":[],"outgoing":[]}
@@ -6954,6 +7026,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-687eb4324182bb6e","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-6887e4ab95ace350","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"A11","target_kind":"FUNCTION_ASSET"},{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"A12","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-688b226b6c121dc1","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D603","target_kind":"FUNCTION_ASSET"}]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-688bcc32751313d7","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-688c635abe010174","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D405","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-688fe2d7191d2fee","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-68934ef2e0825a7c","incoming_claims":[],"outgoing":[]}
@@ -7115,6 +7188,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-6b581909a238c8c6","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D288","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-6b587219db6c1797","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D381","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-6b5e0184c3d53ba3","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-6b5fd62d4da00a25","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-6b6bbea2fd1c6bb8","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-6b6be29f744ffd16","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"P1","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-6b6dc96d50a71ad4","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D549","target_kind":"FUNCTION_ASSET"}]}
@@ -7130,6 +7204,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-6b919a6101f1b6e7","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-6ba2fa06773c80c3","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-6ba9389b1efe3e6d","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-6babf9cc119bcf33","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-6bb54e0886cb0f04","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D578","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-6bbc3651975befe3","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D248","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-6bc18c7a5f3c58a6","incoming_claims":[],"outgoing":[]}
@@ -7236,6 +7311,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-6d283602ab0a5cf7","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D92","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-6d2be836128f7355","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-6d3c4690c01f63b1","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-6d3c7247fbc356dd","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-6d3c9ee30a555111","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-6d471c87d89b2347","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D325","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-6d47a40efcdd8d0a","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D290","target_kind":"FUNCTION_ASSET"}]}
@@ -7307,6 +7383,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-6e6a86eb19d7bc71","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-6e6b70c30ed1b4cc","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-6e6fe26e2fd69eb1","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-6e72933ba6c351e8","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-6e75df565641f07b","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-6e7cb2204ca557be","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-6e86aefab28faaa0","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D603","target_kind":"FUNCTION_ASSET"},{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D604","target_kind":"FUNCTION_ASSET"}]}
@@ -7417,6 +7494,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-70a1bb7724a34a17","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-70a1ec2c42864627","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-70ae10c80a18fe06","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-70b03af46d0ed561","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-70b278397a60bd5c","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-70b4a98d9208e316","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-70b4e3a701eed388","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D224","target_kind":"FUNCTION_ASSET"}]}
@@ -7490,6 +7568,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-7204911060eeceab","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-7209263aa53136d7","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-72134cb17a4541f1","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-7219f29195bdad70","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-721ccacf91f877c3","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D589","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-72263a65d3653ead","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-722a60201c508c7e","incoming_claims":[],"outgoing":[]}
@@ -7520,6 +7599,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-728601a2b0a9b3e8","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D361","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-72884acc1466c4c4","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-728bf95f5a752e2c","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-728defa7c6486883","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-72975bb7617f81a3","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-729bc2e8d1f38e05","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-729df5e7b4517651","incoming_claims":[],"outgoing":[]}
@@ -7661,6 +7741,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-74e62a24e4cabf02","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-74e67df663c0e0ae","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-74e8f82f9a5de742","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-74eaef51cd5f1485","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-74eb3d92c99e39a9","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D183","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-74ee745d95bacf95","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D321","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-74f3e26531fb2499","incoming_claims":[],"outgoing":[]}
@@ -7795,6 +7876,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-76f813d4d41eaf21","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-76f82f25ad972594","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-76fb3bb10a895455","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-76fec75fd3d0e993","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-77009884cc405ea7","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-77020e1e23679709","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-77071cb5a633c3d5","incoming_claims":[],"outgoing":[]}
@@ -7870,6 +7952,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-783e5edfe754ef4a","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D86","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-7840ede918e5a7d9","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-784542389018e63e","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-7846cf9440351440","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-7848bd0eed7ef484","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-784cc6cd89a2ad59","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D217","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-784dd74d9e7c88d2","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D582","target_kind":"FUNCTION_ASSET"}]}
@@ -8031,6 +8114,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-7b0b3670e9577f3a","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"Y1","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-7b0d5bcc688c1f63","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D85","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-7b1812258e116620","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-7b19ab52ed7039ad","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-7b1aa134844d105e","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D158","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-7b1ab63aecbf4b2a","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-7b1ae83db267c87f","incoming_claims":[],"outgoing":[]}
@@ -8051,6 +8135,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-7b663f1bd1144d7e","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"T36","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-7b686007335b2abb","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D158","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-7b698bed56379429","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-7b70dbe8341fa2ad","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-7b7153ef232a20ab","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-7b7b8a7a3b10cac7","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-7b835c2ab17c9285","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D216","target_kind":"FUNCTION_ASSET"}]}
@@ -8087,6 +8172,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-7bf6631a26057aca","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-7c00fccf7340cfaa","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D22","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-7c0443ee4eefddec","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-7c0585d28c8e39af","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-7c0b4b19a54cbe7d","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D394","target_kind":"FUNCTION_ASSET"},{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D408","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-7c0d6a98f530fdcc","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D158","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-7c1482563b10c079","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D467","target_kind":"FUNCTION_ASSET"}]}
@@ -8124,6 +8210,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-7ca82575fc5f980c","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-7ca988186770616b","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-7cafdd3565c8608d","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-7cb4b6667bafc7b6","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-7cb55ff27cc0ce7c","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-7cbc464ff70563dd","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-7cc2f2314678b8c9","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D158","target_kind":"FUNCTION_ASSET"}]}
@@ -8280,6 +8367,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-7f09164c99bbdaea","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-7f09ea4d63fca99e","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-7f10b159af22edd9","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-7f12a2af21faaccc","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-7f13f7911db341c3","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-7f164b52910aca51","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-7f16c90b4790a41b","incoming_claims":[],"outgoing":[]}
@@ -8385,6 +8473,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-8097955e39c89ced","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D602","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-809cf5b3af3ce58b","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D269","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-809d7c37c4a52a82","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-80a4df1f89ae2ecf","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-80a52baeaa41bffc","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-80a83d1b976f542b","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-80aa68311fcccd75","incoming_claims":[],"outgoing":[]}
@@ -8555,6 +8644,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-83bde3aec6e0c4d0","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-83bed52395a07b22","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-83c594909135163e","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-83cad96975cdf122","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-83ccf8d160c52936","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-83cf9d541abba215","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D169","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-83d38e0c8f9e4d44","incoming_claims":[],"outgoing":[]}
@@ -8586,6 +8676,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-84396da334b12331","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-8442d265645766b5","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D233","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-8444d777f063d5b0","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-844859d38c121947","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-844b1c595262819c","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-8450f40c2b515e09","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-845322a9cf4838f2","incoming_claims":[],"outgoing":[]}
@@ -8601,6 +8692,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-8496d91445364d74","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-849a34d142dc8dc6","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-84b01a8ffad155cb","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-84b146acb4fda6a2","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-84b2240c34fc4874","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-84b32912ad35f739","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-84b48adb3a27ba10","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D65","target_kind":"FUNCTION_ASSET"}]}
@@ -8658,6 +8750,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-858b54d8d28738d4","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-858e868c688133e8","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-85936e3ccfff4abe","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-85940e9de0bf35b9","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-859687cd1c0cc3d5","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-859ed4f1974c23b2","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-85a03b021524d2e2","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D66","target_kind":"FUNCTION_ASSET"}]}
@@ -8697,6 +8790,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-861696a28031b5d3","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-861c60dba75db0ae","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D364","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-861d5e48b90944d0","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-8628493dbed512b2","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-862c0e1d6540be66","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D282","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-862e962e4176e57d","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-8630579218f1e1a6","incoming_claims":[],"outgoing":[]}
@@ -8977,7 +9071,6 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-8a96ff3adbadc3f1","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-8a99d791174227e6","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D121","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-8a9ccd6743d82616","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D572","target_kind":"FUNCTION_ASSET"}]}
-{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-8a9e4c1591ee8cf7","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-8a9fbd456e37f6aa","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-8aa462a015f685a6","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D158","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-8ab013bd826609d0","incoming_claims":[],"outgoing":[]}
@@ -8988,6 +9081,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-8ac08a1b8be087f3","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-8ac14b077546dbb4","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D381","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-8ac8181832bc9303","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-8ad17bdc90799c7f","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-8ad7a4093e8dd4d1","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-8ad7a5cbe00f9556","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-8addd5b83662b551","incoming_claims":[],"outgoing":[]}
@@ -9063,10 +9157,12 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-8bcc8cf9b20f4e19","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-8bcf0bc6926591eb","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-8bd1b5e675aa7d30","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D139","target_kind":"FUNCTION_ASSET"}]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-8bd1c2352cc442c4","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-8bd2312ff2cd3283","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-8bd331ac9a1ba584","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-8bda9b88bc6c7448","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-8be0099cc5891e43","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-8be011e92ce5268e","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-8be01384e0abd426","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-8be11e01b0e9287b","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-8be472df0b26ded5","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D486","target_kind":"FUNCTION_ASSET"}]}
@@ -9109,6 +9205,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-8ca543be1cefae1a","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"T23","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-8ca7e260f16ca73e","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-8cac0ac10a6bc3cc","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-8cacb78df4afe7a3","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-8cae257af71e2a7e","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-8cafdef611a4113d","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-8cba97f920d5e083","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D139","target_kind":"FUNCTION_ASSET"}]}
@@ -9132,6 +9229,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-8cf94a29e84bf719","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-8cf96a92a8432a01","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-8d06a42e5b2d06d4","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-8d0fff171ab8c826","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-8d10813587ab05a8","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D263","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-8d1099258508c950","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-8d10fe1f765dbbee","incoming_claims":[],"outgoing":[]}
@@ -9148,6 +9246,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-8d4f2652d2132e1a","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D581","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-8d5761b2ec3a3f5b","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D189","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-8d5886f455def08e","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-8d5a5961bd42ba93","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-8d5ada6d58758a0f","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-8d6029612614a3ac","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-8d6cd489f06281c9","incoming_claims":[],"outgoing":[]}
@@ -9170,6 +9269,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-8db7a1282ccd65aa","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-8dbe066727d8d1b3","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D258","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-8dc01d6419fa7ce2","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-8dc34d871041a609","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-8dd7e6dce1347d9f","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-8dd945072ff42e5a","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-8dda8867a7f66cff","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"P1","target_kind":"FUNCTION_ASSET"}]}
@@ -9184,6 +9284,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-8e0c3848370fd6a5","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-8e1b542b9008e699","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D40","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-8e1e20ba50c659fa","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-8e1e74f8e78f16b0","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-8e25ea8478c3efa6","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D277","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-8e2ab5f4888a9cec","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D408","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-8e3568f52c889b44","incoming_claims":[],"outgoing":[]}
@@ -9299,6 +9400,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-902707cfd2892ad9","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-902807334cddfef2","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-902a17c908a7b371","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-903007d90ad7bfc5","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-9037852c3b1f7901","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-904dfe68b1a013fe","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D55","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-904ee75b247a97b0","incoming_claims":[],"outgoing":[]}
@@ -9308,6 +9410,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-906b4ce8c96a3e61","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D423","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-907286332f9de352","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D523","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-9073b459c03a5200","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-90778e2fb7b6eb0c","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-9080c8c37dd57e3a","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-908190b7695ab203","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-90828de28c0063de","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D410","target_kind":"FUNCTION_ASSET"}]}
@@ -9350,6 +9453,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-91303e963a090eaf","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-9134768922b283c4","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-91358bcd53befbfb","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-9136b48744c6aec4","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-913aff30bcabecd4","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-913f1ea750855f3b","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-914144e292dc663b","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D590","target_kind":"FUNCTION_ASSET"}]}
@@ -9365,6 +9469,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-916d558fac6bf1bb","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-91707dd192b19171","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-9171edd6b9297348","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D159","target_kind":"FUNCTION_ASSET"}]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-91735a8e2ed33d9e","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-917707a905a47fd2","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-9177448cb1543e2b","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-9182ad442505406c","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D182","target_kind":"FUNCTION_ASSET"}]}
@@ -9414,6 +9519,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-9231f624e4616d62","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D579","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-923ac585023a18be","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-924e80e717f159ca","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-92558a50fa00a4ab","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-9263d3fa2029fc1c","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-9263f50f5c1a81fd","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-926696b7ffa276e8","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D589","target_kind":"FUNCTION_ASSET"}]}
@@ -9435,11 +9541,12 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-92a879463106a17e","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-92b3623b04b329fa","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-92b3ce4d22860e4f","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D498","target_kind":"FUNCTION_ASSET"}]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-92b423b96915c774","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-92b664b8ee38f0ec","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-92ba09837aba001c","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-92bbd50ccc132d52","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D338","target_kind":"FUNCTION_ASSET"}]}
-{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-92be471e4288ed5a","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-92c310048be318f6","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D281","target_kind":"FUNCTION_ASSET"}]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-92d85fa3f40c0c30","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-92dff0b2f4a990ac","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-92e05267c80588df","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-92e1787fab1d65f4","incoming_claims":[],"outgoing":[]}
@@ -9619,6 +9726,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-95c0b64b6c11623d","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D389","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-95c3767a6ac2811f","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-95cd1ce6288685f9","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-95d06e904ff00476","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-95d1261744820984","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-95da0a6623b142d5","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-95e477750ed4dbe0","incoming_claims":[],"outgoing":[]}
@@ -10112,6 +10220,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-9e5faca952a6735c","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-9e5fe0971d494031","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-9e5fe0a7654e2aca","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-9e5ff3f33d08e26d","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-9e6611d1b40d08e1","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D111","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-9e6c74f39017efbd","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-9e70a2d5c9ed65f0","incoming_claims":[],"outgoing":[]}
@@ -10169,6 +10278,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-9f722b6d3dbdb8fd","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-9f7254f907bea197","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-9f7416f0b76f52cb","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-9f74d161d55a3249","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-9f7578b36a470a74","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-9f7a8d3ab85adf5b","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-9f7dd1aa5b7a63ca","incoming_claims":[],"outgoing":[]}
@@ -10217,6 +10327,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-a01ee9af26a533d0","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-a01fbb177e7e1252","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-a040c6dbcbd788a9","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-a04478b4819ed232","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-a048ad530b567ee3","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-a04b9437a289ec5b","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-a05b69710f966280","incoming_claims":[],"outgoing":[]}
@@ -10254,6 +10365,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-a0d578f2d1ac1cad","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-a0d5c52721c90ae5","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"T2","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-a0da8ed1162b11cc","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-a0dff4e4ae9d04b7","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-a0e4f7d5ecb6fe80","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-a0e90e9dd399c703","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-a0eac8f79bcd3ea7","incoming_claims":[],"outgoing":[]}
@@ -10408,6 +10520,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-a3315a686e54e3d1","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-a333de518759d106","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-a3448453742dcacc","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-a34492e5e5301ed1","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-a34513656a810d49","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-a345bdb41638c12a","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-a34d0fc9ff47daad","incoming_claims":[],"outgoing":[]}
@@ -10440,6 +10553,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-a3c45e253cc5b2fd","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-a3c8445e49e9e154","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-a3ca198883bfeba4","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-a3cbab124af22e6e","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-a3cccbef88869a77","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-a3cdf27f0a845791","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-a3d33f74502a8505","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D302","target_kind":"FUNCTION_ASSET"}]}
@@ -10499,6 +10613,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-a4ddd8dd4eb1ca96","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-a4de32f7e21330ff","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-a4ebe20d8394d231","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"P4","target_kind":"FUNCTION_ASSET"}]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-a4f2b1073fb619c2","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-a4fcf776202d858e","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D307","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-a504c25312fd9f8e","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-a506585cacda1792","incoming_claims":[],"outgoing":[]}
@@ -10592,6 +10707,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-a67fb7ee45cd7046","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-a680dc03144af083","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"T22","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-a68495953ae263cc","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-a685dd60bdbaa431","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-a687c95e99f7d84d","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-a6914d1af95e5c71","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-a699e1cfb2c3452e","incoming_claims":[],"outgoing":[]}
@@ -10615,7 +10731,6 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-a6e52b9d77c31dc2","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-a6e597f3e7c505d0","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-a6e8e65e7f71ddae","incoming_claims":[],"outgoing":[]}
-{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-a6eb01a9cf2319a9","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-a6ebd3479ba6ee46","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-a6f14be7c71184cb","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-a6f69f99d24d48a6","incoming_claims":[],"outgoing":[]}
@@ -10697,6 +10812,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-a82eaf481da8ac5c","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D54","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-a82f7241c137612b","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-a830904b698f0175","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-a8342fef3478d34e","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-a8359024fd4614a8","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-a838cb1d711b188c","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-a83c52714d97a13a","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"P1","target_kind":"FUNCTION_ASSET"}]}
@@ -10705,6 +10821,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-a84655eee1c6c43f","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D595","target_kind":"FUNCTION_ASSET"},{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D597","target_kind":"FUNCTION_ASSET"},{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D599","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-a848ff9378e4be4b","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-a849ba891e2ec375","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-a84b9ecb89219513","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-a84cae567e07c567","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-a852344a05448e0d","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-a85502dad9c432b1","incoming_claims":[],"outgoing":[]}
@@ -10752,6 +10869,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-a925f3110eab12ec","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-a9262e10685414a2","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-a9270009d379af01","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-a928e26a93ac3349","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-a92c0984e95c5e82","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-a92d1d608e6b1e3f","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-a92d59a25e1dad7a","incoming_claims":[],"outgoing":[]}
@@ -10766,6 +10884,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-a96f3f48a132a32c","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D565","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-a970458a48524eb3","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-a9731303e848253c","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-a9849019ad5ad16b","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-a985aa5af66883eb","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-a986b0555bcd6565","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-a98a41d1b65deffe","incoming_claims":[],"outgoing":[]}
@@ -10789,6 +10908,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-a9cb5d6eba210792","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-a9cb8293159aee9d","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-a9d0e6b9d47e24ab","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-a9d6376815eab15a","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-a9da52aedd653308","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-a9dbf26baa1b98d1","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-a9ec50d133f4ee12","incoming_claims":[],"outgoing":[]}
@@ -10862,6 +10982,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-aaf0e4f8efc9ae29","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-aaf27ef2f4cad6b0","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D229","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-aaf4f41db0e3478e","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-aafb644260547f4e","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-ab00b24b3f671681","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D96","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-ab03024159309b1c","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D158","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-ab0af43d35333449","incoming_claims":[],"outgoing":[]}
@@ -10960,6 +11081,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-ac72a73da104a279","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-ac784059e82073f5","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D230","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-ac7cb43d96e37743","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-ac8131a85544898c","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-ac875e0653a09a26","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D77","target_kind":"FUNCTION_ASSET"},{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D78","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-ac8b556355d1c6d3","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-ac983fa080650d03","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D45","target_kind":"FUNCTION_ASSET"}]}
@@ -10980,6 +11102,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-acc0226a178dd2e4","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-acc03a4690d07af2","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-acc7372b9fce1d03","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-accb1092b1236edf","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-accb8037ae07524f","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D488","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-accbd8ec1a61ef7b","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-acccd197b016961e","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D392","target_kind":"FUNCTION_ASSET"}]}
@@ -11092,7 +11215,6 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-ae80fc670a3f5f4a","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-ae8a5487c7536858","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-ae8d0362585cd010","incoming_claims":[],"outgoing":[]}
-{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-ae8d211211950e3a","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-ae8d65fe69c2807b","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-ae91647a0025ac78","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"A1","target_kind":"FUNCTION_ASSET"},{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"A2","target_kind":"FUNCTION_ASSET"},{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"A3","target_kind":"FUNCTION_ASSET"},{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"A7","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-aeb142b8c1400842","incoming_claims":[],"outgoing":[]}
@@ -11153,6 +11275,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-af9579a00399fe9f","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D557","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-af96f2d302f6787d","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-af99a73679c2e066","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D111","target_kind":"FUNCTION_ASSET"}]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-af9ed5ff8fab2e90","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-afa26402614db6cb","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D258","target_kind":"FUNCTION_ASSET"},{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D259","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-afa30b4764ee2cb9","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-afa45ab97dacd05e","incoming_claims":[],"outgoing":[]}
@@ -11233,6 +11356,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-b0c7d1cf5ee27cd0","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-b0d0198b1961152b","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-b0d0a5819d338a89","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-b0d30a57ebeaf1f0","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-b0d33455906f69c5","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-b0d4d7ee6f04c007","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-b0d5673065c6034c","incoming_claims":[],"outgoing":[]}
@@ -11332,6 +11456,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-b27866ececd05171","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D275","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-b27ae6984bcff332","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D118","target_kind":"FUNCTION_ASSET"},{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D127","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-b28b9b91b7889ba0","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-b28d0fe8dc2dd771","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-b29167c8de4b4ac0","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-b298c417b26e367e","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D522","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-b29add64b7e376a9","incoming_claims":[],"outgoing":[]}
@@ -11461,6 +11586,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-b491216fe95895d3","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-b49977060c5d8df2","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-b49c4a9a9c47332c","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"T27","target_kind":"FUNCTION_ASSET"}]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-b4a983c8bcdeeee7","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-b4aabea52d896569","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D239","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-b4b563e12a5e62bd","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-b4b865fb2548e455","incoming_claims":[],"outgoing":[]}
@@ -11600,7 +11726,6 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-b6e761a2320a792f","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-b6e8138b523b54bc","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-b6e97add692eb9ba","incoming_claims":[],"outgoing":[]}
-{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-b6f00d6b81ac97c9","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-b6f72523d640b40b","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D224","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-b6f83d07b860904f","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D479","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-b6f94e1d9f6b5d11","incoming_claims":[],"outgoing":[]}
@@ -11672,6 +11797,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-b82238473d230f94","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-b8317ad5cc6c3230","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-b834eca381c438b6","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-b8374762ca77f88d","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-b839d109d64942a4","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-b83aa612f7e335b9","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D79","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-b840c3d339fbbecf","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D233","target_kind":"FUNCTION_ASSET"}]}
@@ -11830,11 +11956,13 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-ba4478810c13a0b8","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-ba4921e843d6cc5e","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-ba4c28434ca131bf","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-ba4e379c5873aa34","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-ba4eb49e2d5b539d","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-ba592c1a33ddcfff","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-ba5c53668e2b7170","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D543","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-ba5df7853bae4a1f","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-ba613e1d01d26d16","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-ba6528ed948e8af2","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-ba67d301067f78b4","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D118","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-ba69f797201e7b93","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-ba6ceef4c8328d57","incoming_claims":[],"outgoing":[]}
@@ -11843,6 +11971,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-ba7c6051231ee3c9","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-ba816d371e1231e8","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-ba819aabfca73764","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-ba845cbbcab08e37","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-ba867b6a0cccf25d","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-ba8cc68dc0566917","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-ba8fcad4417344f2","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D383","target_kind":"FUNCTION_ASSET"}]}
@@ -11857,6 +11986,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-bab737d2db7a1a28","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D111","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-bababe4247acd912","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-babe5a69628229d9","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-bac2ca0703bfaf56","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-bac3c3bb1d98a362","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-bacc07c85c282b64","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"P1","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-bad1983f794fe9ef","incoming_claims":[],"outgoing":[]}
@@ -11910,6 +12040,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-bb986c0f9cc4f923","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D211","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-bb9891d98e66eb55","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D124","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-bb9c44febfb7cfd1","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-bba04e835c212475","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-bba81d770f4f3cc8","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D581","target_kind":"FUNCTION_ASSET"},{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D590","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-bba82faaf5c4f2a5","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-bba8612aed3a7b5e","incoming_claims":[],"outgoing":[]}
@@ -11947,6 +12078,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-bc0ff7f64b2f49c5","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-bc1f57a99ffae6b4","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D414","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-bc248638f21c891f","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-bc28a87cdf64fdc7","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-bc2fd9cbad3bd06b","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-bc33d9eacede1ad7","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D375","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-bc3605a751d23a13","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D380","target_kind":"FUNCTION_ASSET"}]}
@@ -11984,6 +12116,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-bc9b46f91157bc6f","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-bca033cc7f24927d","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-bca1680b3012b874","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"P1","target_kind":"FUNCTION_ASSET"}]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-bca2cee3ba7dce1b","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-bcad84a775e14feb","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-bcb39883447cb0ce","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D404","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-bcbbcbf6599e06ba","incoming_claims":[],"outgoing":[]}
@@ -12131,6 +12264,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-befd8d6522208633","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-bf09fe1ede65b8df","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D316","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-bf19cfc0046a4c46","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-bf1ad8fae30ac8b6","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-bf2292742e79dcb8","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-bf269fd92aa87dc3","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D87","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-bf37d7c084db9e48","incoming_claims":[],"outgoing":[]}
@@ -12472,7 +12606,6 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-c4caa9ce4f482007","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D503","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-c4ce4946c8775fc4","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-c4d14a633315071a","incoming_claims":[],"outgoing":[]}
-{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-c4d388bae84f9be4","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-c4dbfb7e080846fc","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-c4e2a858d323f4ab","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-c4e2a9de9f123e3b","incoming_claims":[],"outgoing":[]}
@@ -12480,6 +12613,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-c4f16ec807ae6edc","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-c4f3b83fdd082086","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-c4f85792c4fbd9c1","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-c50702a11635014f","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-c50cdab68baa4024","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-c50e8a6143f3e18e","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-c515d0f071a323e3","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"P1","target_kind":"FUNCTION_ASSET"}]}
@@ -12516,6 +12650,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-c583fa988d06f398","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-c588d1bf70415bea","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-c58ae74b3e163659","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-c58c7b9a595aa58f","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-c5919348158aab89","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-c5990da092ac42f2","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-c5a8104653c6c28e","incoming_claims":[],"outgoing":[]}
@@ -12539,6 +12674,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-c5dae2f66233fa86","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-c5dc11229e8b15fd","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-c5ebec12bf0be7a9","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-c5ec9530b3c0777d","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-c5ed2108a6e937eb","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D337","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-c5efabe540b05d48","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-c5f1228b4daf7396","incoming_claims":[],"outgoing":[]}
@@ -12584,6 +12720,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-c6ac6fc5e36fa35a","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D468","target_kind":"FUNCTION_ASSET"},{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D469","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-c6aca24d17aada3e","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-c6ba065189e48d7d","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-c6c12a0962603184","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-c6c8c7bdccdb9f38","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-c6cf03e0b7c50fe5","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"P1","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-c6d5832da9a90475","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D274","target_kind":"FUNCTION_ASSET"}]}
@@ -12633,6 +12770,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-c7723689a2dfd382","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D158","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-c77aea9150003133","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-c77d71568e70ea04","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D19","target_kind":"FUNCTION_ASSET"}]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-c78069843c71873a","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-c786134556105178","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D331","target_kind":"FUNCTION_ASSET"},{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D414","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-c788bc3f31f10fb7","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-c7951a46feadf9a7","incoming_claims":[],"outgoing":[]}
@@ -12651,6 +12789,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-c7c5c1d70c5dec44","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-c7c5e3b6270de491","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-c7cd012c64d68d3b","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-c7cfbc4eb7e359f3","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-c7d0fa17404bad7e","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D597","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-c7d898126c9c2795","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D28","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-c7dac1ddafa2f6c5","incoming_claims":[],"outgoing":[]}
@@ -12720,6 +12859,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-c902b90d73a10306","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-c90479770054cfc5","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-c904886159ee9e27","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-c904890258061d33","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-c9071f49aa981e41","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"A6","target_kind":"FUNCTION_ASSET"},{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D114","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-c90fa0c9d5129142","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D571","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-c92792279e599a7c","incoming_claims":[],"outgoing":[]}
@@ -12889,6 +13029,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-cbbbb124eed0aa53","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D112","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-cbc34de5e901286f","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-cbca2d15e91f5f53","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D149","target_kind":"FUNCTION_ASSET"}]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-cbd2e528a2964f1e","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-cbdcf8264fe55d79","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D284","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-cbde2730149950fa","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-cbde9558e17f411a","incoming_claims":[],"outgoing":[]}
@@ -13105,6 +13246,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-cf511bc56968aec6","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-cf514b2781229ad6","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-cf5492958191e0f2","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-cf556738b5c44b4e","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-cf5ec940349ff4a7","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-cf5f1fd7a36062af","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-cf605cac7d3dc17c","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D467","target_kind":"FUNCTION_ASSET"}]}
@@ -13138,6 +13280,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-cfba71cba0cd2a9d","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D111","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-cfbd25b2e1eda78b","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"P5","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-cfbd50bb42a60606","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-cfbe7e4b3113f093","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-cfc04f2648026170","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-cfc494e550de870f","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-cfc84df15be51666","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D531","target_kind":"FUNCTION_ASSET"}]}
@@ -13214,6 +13357,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-d0e5d226570de4cd","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-d0e5e711fa0834ee","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D11","target_kind":"FUNCTION_ASSET"},{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D111","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-d0eaefa9f0566956","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D228","target_kind":"FUNCTION_ASSET"}]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-d0ec808c5dab0cec","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-d0f1532b02a52d09","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-d0f26feb7cf4a5d2","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-d0f28b854c74650c","incoming_claims":[],"outgoing":[]}
@@ -13327,6 +13471,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-d282a6914ef2b72d","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-d2841c60cf926ad1","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D216","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-d28c031bbae7ca82","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-d29e5747048485a3","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-d29f21073d046ba6","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-d29f4d03ffa475ad","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-d2a188561991c34f","incoming_claims":[],"outgoing":[]}
@@ -13468,6 +13613,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-d50a608982b7b3c6","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-d513a5f532b37aa8","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-d521ad7cbf290c4a","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D412","target_kind":"FUNCTION_ASSET"}]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-d5226bf7c34dc948","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-d52275ae7b6f64d7","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-d525c3b890e3f8f4","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-d5351aa3f1a8a011","incoming_claims":[],"outgoing":[]}
@@ -13481,6 +13627,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-d575679f8627a30f","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-d575f9ef32a96a85","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-d57c91a05028ba9c","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-d583b6edb3c9333c","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-d58537a914dbea4f","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-d58be64a16296306","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"T14","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-d59632806d9c36af","incoming_claims":[],"outgoing":[]}
@@ -13877,6 +14024,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-dc0dca8c662ee454","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-dc11b249d1e1237a","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D365","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-dc140de78123443e","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D527","target_kind":"FUNCTION_ASSET"}]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-dc161b3af5b5952f","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-dc1626b28b1adf83","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-dc1d85ba03d7854d","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-dc20bac96f4eef0b","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"T8","target_kind":"FUNCTION_ASSET"}]}
@@ -13922,6 +14070,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-dcd991c6758b3d4e","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D241","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-dcdeade4da71a054","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-dce34b9b0abd9882","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-dce388acff647490","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-dced59a60174a648","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-dcf9456e679e9e63","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-dcfcdc69fa85bfb8","incoming_claims":[],"outgoing":[]}
@@ -13946,6 +14095,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-dd409aba8499d749","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-dd40a9af185c58cc","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-dd48551a29c4e34d","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-dd4ab8a8a9c505e2","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-dd528a2c4291c34b","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-dd587bb757f98640","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D118","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-dd5ec4dfa74c8da6","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D422","target_kind":"FUNCTION_ASSET"}]}
@@ -13953,6 +14103,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-dd63f27ed277cda4","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-dd734feb66c5f23d","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-dd7e8fb851ffdeef","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D173","target_kind":"FUNCTION_ASSET"},{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D597","target_kind":"FUNCTION_ASSET"}]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-dd81b976f8b3f038","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-dd856efffed57ed3","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D95","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-dd867eb3ef40c8f5","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-dd875e169b5f7996","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D484","target_kind":"FUNCTION_ASSET"}]}
@@ -13979,6 +14130,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-ddd838efa015622d","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D193","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-dde1f27f2ed83b51","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-dded25b973bfed46","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-ddede795bb8bf843","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-ddf1bf3ed8fa6fa5","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-ddf39c7667d1a424","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D418","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-ddf79e0b3122df43","incoming_claims":[],"outgoing":[]}
@@ -14004,6 +14156,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-de610f7b874c5033","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D158","target_kind":"FUNCTION_ASSET"},{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D276","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-de6701c71b50dc92","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-de6ee028b5001db1","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-de6eeaae7ee815a0","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-de74d9ab95eb5a6a","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-de75c2645194ef38","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-de7847036c2db87b","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D179","target_kind":"FUNCTION_ASSET"}]}
@@ -14084,10 +14237,12 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-dfbb27b5848bd91d","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-dfbdea113811aff3","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-dfc45ddb375b83df","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-dfc89b586f4804a9","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-dfd3bc9719f2f3c7","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-dfd4971c77512b5a","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-dfd5dfccf1276b7a","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D183","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-dfdbc002d439fc65","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D327","target_kind":"FUNCTION_ASSET"}]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-dfde5ce059672ef1","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-dfeb8a2bd7d079bc","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-dff0fba2606f2840","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-dff2ebd1f8833c68","incoming_claims":[],"outgoing":[]}
@@ -14201,6 +14356,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-e1d83b98f499fb74","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-e1dac47f1c645ceb","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-e1e00c70364148df","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D57","target_kind":"FUNCTION_ASSET"}]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-e1e7cffeb55ca277","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-e1e82cb9e1ce77ac","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-e1e968207cbcff4b","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-e1ed361a4ab3d401","incoming_claims":[],"outgoing":[]}
@@ -14434,6 +14590,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-e58c4bf39bb692d3","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D265","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-e594a9bfb87cb75f","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-e595785653620b08","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D119","target_kind":"FUNCTION_ASSET"}]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-e59814c92ac897fd","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-e5985199d6f1b4e5","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D296","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-e59c42a8f54cccc4","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-e59d302ad268de44","incoming_claims":[],"outgoing":[]}
@@ -14623,6 +14780,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-e88ce29f154d53c3","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"T33","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-e88ea412f8a9a646","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-e894045affa64333","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D264","target_kind":"FUNCTION_ASSET"}]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-e898fb8919c5f139","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-e8a30cf4a81072ba","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-e8a56edc06377dcd","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-e8aa7ceb19f59bc2","incoming_claims":[],"outgoing":[]}
@@ -14707,6 +14865,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-ea351ecf28001d34","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-ea382f612e9fd192","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-ea38728dd339b766","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-ea3c6df79a06762f","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-ea4205e09919ff4e","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-ea4429f788cd0a1e","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-ea493f94155e2fd5","incoming_claims":[],"outgoing":[]}
@@ -14779,6 +14938,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-eb74fe1c7bfe83b2","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"T55","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-eb756787a04c8220","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-eb75a2f5b38f7f51","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-eb762a96b3a5834d","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-eb7e0fb9589f5461","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D135","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-eb7e761d7df65cc8","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-eb7eb4948ceb599d","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D49","target_kind":"FUNCTION_ASSET"}]}
@@ -14809,6 +14969,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-ebf8c7019457353e","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"T53","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-ebfc1c3acf3b8984","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-ec008c550c3ef744","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-ec0740c45e0c5037","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-ec10ca2e333e43cf","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D227","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-ec120633dfa3d03c","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-ec14f5b9d2384e7f","incoming_claims":[],"outgoing":[]}
@@ -15010,6 +15171,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-ef0e3415b7f237cc","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-ef0f6e95e4209cc2","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D174","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-ef16f5ff46b23b17","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D159","target_kind":"FUNCTION_ASSET"}]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-ef1c806fbc97ffe9","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-ef1ebcad1fb256f6","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D585","target_kind":"FUNCTION_ASSET"},{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D586","target_kind":"FUNCTION_ASSET"},{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D587","target_kind":"FUNCTION_ASSET"},{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D588","target_kind":"FUNCTION_ASSET"},{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D589","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-ef2081b50b6ec10c","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-ef217bde15f6830d","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"T34","target_kind":"FUNCTION_ASSET"}]}
@@ -15262,6 +15424,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-f2f4305b73cd492a","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D182","target_kind":"FUNCTION_ASSET"},{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D185","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-f2f6e929ec1936a2","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-f2fbd3a2f0c12ee9","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-f2fd2d4f3e742b71","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-f2fd5d5daa5ead5f","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-f2ff8cfaa0891635","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D373","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-f302a06c60ad7565","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D62","target_kind":"FUNCTION_ASSET"}]}
@@ -15302,6 +15465,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-f3900f17678f3b51","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D111","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-f3966438cc1d875d","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-f39ea42fb2ac1c97","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D215","target_kind":"FUNCTION_ASSET"}]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-f39f549213f5713b","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-f3acee4a11eb24f6","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-f3b0e6aa26ac2c12","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-f3b1a612c5f955e1","incoming_claims":[],"outgoing":[]}
@@ -15432,6 +15596,7 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-f5d729eeb08bb532","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-f5db494f6166d496","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-f5e3bdaf0797d9a4","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-f5e632c1e81005b8","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-f5eaf018932f2ea5","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D117","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-f5f37f82597c752c","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-f5f73ed7b10fb7ba","incoming_claims":[],"outgoing":[]}
@@ -15744,7 +15909,6 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-facdfdd0dfbd8e92","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D99","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-fad0e5837c189ebd","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D295","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-fad1d0f433a492c2","incoming_claims":[],"outgoing":[]}
-{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-fadcdc0b17ca3814","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-faddbf78e3156e64","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-fadddd467d7f47c5","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-fadf9ce6142d414b","incoming_claims":[],"outgoing":[]}
@@ -15906,6 +16070,8 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-fdaf3a0c8c8f4daa","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-fdaf897d5628af31","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-fdb320f64ac6706e","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-fdc0184938849769","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-fdc1387b82d23716","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-fdc642e73e7aec9b","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-fdcb68df62c47bbf","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-fdd237847a7e2e5e","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"D134","target_kind":"FUNCTION_ASSET"}]}
@@ -15947,6 +16113,8 @@
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-fe5624b616a8b8f3","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-fe5a12c3505fb1b8","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-fe63367b028c200e","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-fe65a66f790ae0f6","incoming_claims":[],"outgoing":[]}
+{"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-fe68a8e295ae1bf5","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-fe6f253c0e960db6","incoming_claims":[],"outgoing":[{"relation":"MENTIONS_OR_DEPENDS_ON","resolution":"RESOLVED","target":"P2","target_kind":"FUNCTION_ASSET"}]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-fe71f3f72c1466d9","incoming_claims":[],"outgoing":[]}
 {"all_edges_resolved_or_explicit":true,"canonical_id":"NFC-fe765c8f6b874d35","incoming_claims":[],"outgoing":[]}

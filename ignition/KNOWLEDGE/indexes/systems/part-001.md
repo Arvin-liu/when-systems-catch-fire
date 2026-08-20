@@ -194,6 +194,11 @@
   - 可搜索名称：IMPLICIT-4AC1BDA160B844B2 / "title": "Iteration method 1.3.0 and system map 0.2.0, 0.3.0 are Historical; method 1.2.0 and map 0.1.0 are earlier Historical, no", / IMPLICIT-4AC1BDA160B844B2 / IMPLICIT-081F574E4836E7F0
   - 来源：`analysis/corpus-relation/corpus_relation_graph.json`
   - 依赖：—；被引用：—
+- ["title": "Language Models are Few-Shot Learners",](../../../data/epistemic-governance/literature-boundary-r0.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-C97156CAC5005422 / "title": "Language Models are Few-Shot Learners", / IMPLICIT-C97156CAC5005422
+  - 来源：`data/epistemic-governance/literature-boundary-r0.json`
+  - 依赖：—；被引用：—
 - ["title": "Learning to Reason via Program Generation, Emulation, and Search"](../../../data/external-research/121-fulltext-resolver/121q3/function-os/nodes/N6.json)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-22D3B578162EEAF9 / "title": "Learning to Reason via Program Generation, Emulation, and Search" / IMPLICIT-22D3B578162EEAF9 / IMPLICIT-7C2EED62B7DC66AA
@@ -1084,6 +1089,11 @@
   - 可搜索名称：NFC-fe5a12c3505fb1b8 / `CausalState`：`JIN-MCF-S01` 基层亲邻高重叠；`S02` 辽东北治理/动员脆弱；`S03` 金可用集中兵力；`S04` 辽指挥与信息失序；`S05` 金的招募/资源/合法性增强。
   - 来源：`reports/publication/jin-rise-point-fire-analysis.md`
   - 依赖：—；被引用：—
+- [`current-facts.json` 为准；当前地图为 `0.11.0`，上一版 `0.10.0` 仅作 Historical。](../../../docs/architecture/interactive-system-map.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-19d1002004c118ec / `current-facts.json` 为准；当前地图为 `0.11.0`，上一版 `0.10.0` 仅作 Historical。
+  - 来源：`docs/architecture/interactive-system-map.md`
+  - 依赖：—；被引用：—
 - [`data/architecture/current-system-identity.json`、`data/architecture/current-facts.json`：](../../../AI-HANDOFF.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-b9d014e3e8f859c8 / `data/architecture/current-system-identity.json`、`data/architecture/current-facts.json`：
@@ -1149,9 +1159,9 @@
   - 可搜索名称：NFC-d27e0c71144732a1 / `ITERATION.md` and its three operation templates are not triggered because classification excludes `OPERATIONS_METHOD`.
   - 来源：`reports/operations/121Q28-embodied-cognitive-leap-writing-method-audit.md`
   - 依赖：—；被引用：—
-- [`language_thought` 是横穿 L0—L6 的控制平面 overlay；`layers` 组仍严格只有 L0—L6。它与各层的连线表示框架审计和同步义务，不表示语言决定现实因果。](../../../docs/architecture/interactive-system-map.md)
+- [`language_thought` 是横穿 L0—L6 的控制平面 overlay；`structural_governance_surface` 是 governance 组中的 advisory cross-cutting overl](../../../docs/architecture/interactive-system-map.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-fadcdc0b17ca3814 / `language_thought` 是横穿 L0—L6 的控制平面 overlay；`layers` 组仍严格只有 L0—L6。它与各层的连线表示框架审计和同步义务，不表示语言决定现实因果。
+  - 可搜索名称：NFC-3aaad055dd6ae1b8 / `language_thought` 是横穿 L0—L6 的控制平面 overlay；`structural_governance_surface` 是 governance 组中的 advisory cross-cutting overl
   - 来源：`docs/architecture/interactive-system-map.md`
   - 依赖：—；被引用：—
 - [`map-agent-delivery-operations`: shows user request, 1111 command bus, Codex execution, artifacts, local validation, rem](../../../reports/atlas/121Q14-dynamic-atlas.md)
@@ -1188,6 +1198,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-f7e9dd3ff2d7cbbe / `NOT_ASSESSED`：不同战役的战术细节、辽军真实动员数、金军补给方式、马匹供给、俘虏与附军比例、族群分类的时代变化、史料版本差异、南宋形成对因果解释的反证意义。
   - 来源：`reports/publication/jin-rise-point-fire-analysis.md`
+  - 依赖：—；被引用：—
+- [`os_spine`、`federation` 与 `domain_packs` 三个 overlay 分别表达 Owner/Human、Generic Kernel/Runtime/Memory，External Agent Federa](../../../docs/architecture/interactive-system-map.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a9d6376815eab15a / `os_spine`、`federation` 与 `domain_packs` 三个 overlay 分别表达 Owner/Human、Generic Kernel/Runtime/Memory，External Agent Federa
+  - 来源：`docs/architecture/interactive-system-map.md`
   - 依赖：—；被引用：—
 - [`pairwise-hyperrelation-projection.json`](../../../reports/architecture/121Q23C-operational-arn-real-history-validation.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
@@ -1603,6 +1618,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-100ab14bed8236fd / Audit factual fidelity, evidence links, causal language, counterevidence,
   - 来源：`docs/publication/zhiyuan-writing-cognitive-migration-editorial-revision.md`
+  - 依赖：—；被引用：—
+- [authority_changes: \[current-system-identity\]\(./data/architecture/current-system-identity.json\), \[current-facts\]\(./data/a](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-cf556738b5c44b4e / authority_changes: \[current-system-identity\]\(./data/architecture/current-system-identity.json\), \[current-facts\]\(./data/a
+  - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
 - [authority_changes: \[current-system-identity\]\(./data/architecture/current-system-identity.json\), \[current-facts\]\(./data/a](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -2482,25 +2502,5 @@
 - [data/foundation/core-systems/protocol-roles.jsonl](../../../data/foundation/core-systems/protocol-roles.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：P03 / data/foundation/core-systems/protocol-roles.jsonl / P03 / P01
-  - 来源：`data/foundation/core-systems/protocol-roles.jsonl`
-  - 依赖：—；被引用：—
-- [data/foundation/core-systems/protocol-roles.jsonl](../../../data/foundation/core-systems/protocol-roles.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：P04 / data/foundation/core-systems/protocol-roles.jsonl / P04 / P01
-  - 来源：`data/foundation/core-systems/protocol-roles.jsonl`
-  - 依赖：—；被引用：—
-- [data/foundation/core-systems/protocol-roles.jsonl](../../../data/foundation/core-systems/protocol-roles.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：P05 / data/foundation/core-systems/protocol-roles.jsonl / P05 / P01
-  - 来源：`data/foundation/core-systems/protocol-roles.jsonl`
-  - 依赖：—；被引用：—
-- [data/foundation/core-systems/protocol-roles.jsonl](../../../data/foundation/core-systems/protocol-roles.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：P06 / data/foundation/core-systems/protocol-roles.jsonl / P06 / P01
-  - 来源：`data/foundation/core-systems/protocol-roles.jsonl`
-  - 依赖：—；被引用：—
-- [data/foundation/core-systems/protocol-roles.jsonl](../../../data/foundation/core-systems/protocol-roles.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：P07 / data/foundation/core-systems/protocol-roles.jsonl / P07 / P01
   - 来源：`data/foundation/core-systems/protocol-roles.jsonl`
   - 依赖：—；被引用：—

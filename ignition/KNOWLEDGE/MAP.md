@@ -7,7 +7,7 @@
 
 **引导问题：** 对象、运算、定义域、证明和反例究竟完成到哪一步？
 
-当前检索覆盖 9368 项，重点卡片 102 项。 [打开本主题完整索引](./indexes/mathematics.md)
+当前检索覆盖 9412 项，重点卡片 102 项。 [打开本主题完整索引](./indexes/mathematics.md)
 
 - [认知路径积分函数](./ASSET-CARDS.md#asset-d127) — `KEEP_AS_STRUCTURAL_METAPHOR`；Identity: STRUCTURAL_METAPHOR. Definition scope: UNSPECIFIED_IN_SOURCE → structured inference or procedure.
 - [经典确定性函数](./ASSET-CARDS.md#asset-d182) — `KEEP_AS_TOY_MODEL`；Identity: PARAMETRIC_MATHEMATICAL_MODEL. Definition scope: r=mu/Lambda in \(0,1\) union \(1,infinity\) → relation over source entities.
@@ -61,11 +61,11 @@
 
 **引导问题：** 跨尺度表示、概率动力学和关系网络能描述什么，不能证明什么？
 
-当前检索覆盖 4010 项，重点卡片 84 项。 [打开本主题完整索引](./indexes/systems.md)
+当前检索覆盖 4044 项，重点卡片 84 项。 [打开本主题完整索引](./indexes/systems.md)
 
 - [现有知识治理系统被登记为第一个 `Knowledge Domain Pack`，REOS vNext LIGHT 与之元写作法分别作为有界 research/writing Pack 引用；R0 没有全仓物理迁移。机器边界以 \[`agent](./ASSET-CARDS.md#asset-nfc-06ddf2b643747a14) — `ACCEPTED_AS_DEFINITION`；现有知识治理系统被登记为第一个 `Knowledge Domain Pack`，REOS vNext LIGHT 与之元写作法分别作为有界 research/writing Pack 引用；R0 没有全仓物理迁移。机器边界以 \[`agentization-boundary-r0.json`\]\(../
 - [Q14 Ignition Atlas maps are versioned derived projections, not a permanent total map and not a second canonical truth so](./ASSET-CARDS.md#asset-nfc-1e10227f1b51e4d0) — `RETAINED_AS_STRUCTURAL_METAPHOR`；- 121Q14 Ignition Atlas maps are versioned derived projections, not a permanent total map and not a second canonical truth source.
-- [方法 `1.3.0` 与系统图 `0.6.0`、`0.5.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0`、`0.2.0`、`0.3.0`、`0.4.0` 为更早 Historical。当前方法要求从构件 re](./ASSET-CARDS.md#asset-nfc-2cfca960b0909c17) — `ACCEPTED_AS_DEFINITION`；方法 `1.3.0` 与系统图 `0.6.0`、`0.5.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0`、`0.2.0`、`0.3.0`、`0.4.0` 为更早 Historical。当前方法要求从构件 registry、类型化 topology 与 `data/op
+- [方法 `1.3.0` 与系统图 `0.7.0`、`0.6.0`、`0.5.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0`、`0.2.0`、`0.3.0`、`0.4.0` 为更早 Historical。当前方法](./ASSET-CARDS.md#asset-nfc-52242899c472490c) — `ACCEPTED_AS_DEFINITION`；方法 `1.3.0` 与系统图 `0.7.0`、`0.6.0`、`0.5.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0`、`0.2.0`、`0.3.0`、`0.4.0` 为更早 Historical。当前方法要求从构件 registry、类型化 topology 与
 - [`ASSERTION_INFLATION_GUARD` 是仓库级常驻不变量：工程、写作、总结、成果册、系统图、重复引用、跨域对应、模型美感和 Agent 共识都不能自动抬升断言地位；长期风险“从自我克制滑向大断言”必须持续登记和检查。](./ASSET-CARDS.md#asset-nfc-62c0ef5e2c8b99f2) — `ACCEPTED_AS_DEFINITION`；- `ASSERTION_INFLATION_GUARD` 是仓库级常驻不变量：工程、写作、总结、成果册、系统图、重复引用、跨域对应、模型美感和 Agent 共识都不能自动抬升断言地位；长期风险“从自我克制滑向大断言”必须持续登记和检查。
 - [“物理学已经证明大一统不可能”现已正式撤回。它不能仅改名为“结构性边界推论”“框架判定”或“元层机制”后保留同一结论。](./ASSET-CARDS.md#asset-nfc-b3044ed3734222fb) — `ACCEPTED_AS_DEFINITION`；“物理学已经证明大一统不可能”现已正式撤回。它不能仅改名为“结构性边界推论”“框架判定”或“元层机制”后保留同一结论。
 - [K13_ASSERTION_NON_ESCALATION: project scale, engineering maturity, writing/summaries/results books/system maps, repeated](./ASSET-CARDS.md#asset-nfc-c55e34db613b6c41) — `RETAINED_AS_STRUCTURAL_METAPHOR`；K13_ASSERTION_NON_ESCALATION: project scale, engineering maturity, writing/summaries/results books/system maps, repeated citation, cross-domain corres
@@ -88,7 +88,7 @@
 
 **引导问题：** 认知类比、行动选择和现实反馈怎样保留边界与失败条件？
 
-当前检索覆盖 2007 项，重点卡片 46 项。 [打开本主题完整索引](./indexes/cognition.md)
+当前检索覆盖 2016 项，重点卡片 46 项。 [打开本主题完整索引](./indexes/cognition.md)
 
 - [认知路径积分函数](./ASSET-CARDS.md#asset-d127) — `KEEP_AS_STRUCTURAL_METAPHOR`；Identity: STRUCTURAL_METAPHOR. Definition scope: UNSPECIFIED_IN_SOURCE → structured inference or procedure.
 - [现有知识治理系统被登记为第一个 `Knowledge Domain Pack`，REOS vNext LIGHT 与之元写作法分别作为有界 research/writing Pack 引用；R0 没有全仓物理迁移。机器边界以 \[`agent](./ASSET-CARDS.md#asset-nfc-06ddf2b643747a14) — `ACCEPTED_AS_DEFINITION`；现有知识治理系统被登记为第一个 `Knowledge Domain Pack`，REOS vNext LIGHT 与之元写作法分别作为有界 research/writing Pack 引用；R0 没有全仓物理迁移。机器边界以 \[`agentization-boundary-r0.json`\]\(../
@@ -115,7 +115,7 @@
 
 **引导问题：** 知识资产怎样被登记、裁决、修订、隔离并保持机器与人类表面一致？
 
-当前检索覆盖 16539 项，重点卡片 220 项。 [打开本主题完整索引](./indexes/architecture_governance.md)
+当前检索覆盖 16691 项，重点卡片 219 项。 [打开本主题完整索引](./indexes/architecture_governance.md)
 
 - [哥德尔不完备性、霍奇猜想类比、不同能标、不同函数族，以及点火当前模型的失败，都不是大一统不可能的桥接定理。](./ASSET-CARDS.md#asset-nfc-00b4be17fb8dc706) — `ACCEPTED_AS_DEFINITION`；哥德尔不完备性、霍奇猜想类比、不同能标、不同函数族，以及点火当前模型的失败，都不是大一统不可能的桥接定理。
 - [现有知识治理系统被登记为第一个 `Knowledge Domain Pack`，REOS vNext LIGHT 与之元写作法分别作为有界 research/writing Pack 引用；R0 没有全仓物理迁移。机器边界以 \[`agent](./ASSET-CARDS.md#asset-nfc-06ddf2b643747a14) — `ACCEPTED_AS_DEFINITION`；现有知识治理系统被登记为第一个 `Knowledge Domain Pack`，REOS vNext LIGHT 与之元写作法分别作为有界 research/writing Pack 引用；R0 没有全仓物理迁移。机器边界以 \[`agentization-boundary-r0.json`\]\(../
@@ -124,9 +124,9 @@
 - [知识体验层的人类结果、搜索与 Claim Delta 投影；](./ASSET-CARDS.md#asset-nfc-156313cd333787a2) — `RETAINED_AS_STRUCTURAL_METAPHOR`；3. 知识体验层的人类结果、搜索与 Claim Delta 投影；
 - [任务 102 纳入新语料并排除知识体验生成投影回灌后重算，当前登记 **5,663** 个 canonical identity card，主要分布如下：](./ASSET-CARDS.md#asset-nfc-187e985133669a56) — `RETAINED_AS_STRUCTURAL_METAPHOR`；任务 102 纳入新语料并排除知识体验生成投影回灌后重算，当前登记 **5,663** 个 canonical identity card，主要分布如下：
 - [任务 102 对新增源语料重新运行任务 100 生成器并排除生成投影，当前登记 **17,333** 个 canonical claim。主要类别包括：](./ASSET-CARDS.md#asset-nfc-2843222a849fe77e) — `RETAINED_AS_STRUCTURAL_METAPHOR`；任务 102 对新增源语料重新运行任务 100 生成器并排除生成投影，当前登记 **17,333** 个 canonical claim。主要类别包括：
-- [方法 `1.3.0` 与系统图 `0.6.0`、`0.5.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0`、`0.2.0`、`0.3.0`、`0.4.0` 为更早 Historical。当前方法要求从构件 re](./ASSET-CARDS.md#asset-nfc-2cfca960b0909c17) — `ACCEPTED_AS_DEFINITION`；方法 `1.3.0` 与系统图 `0.6.0`、`0.5.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0`、`0.2.0`、`0.3.0`、`0.4.0` 为更早 Historical。当前方法要求从构件 registry、类型化 topology 与 `data/op
 - [为全部恢复的结果/文章来源生成统一卡片和 1 分钟、5 分钟、完整阅读，并为全部函数/断言 registry 建立可回链来源、状态、依赖、反向依赖和历史的分片搜索索引。](./ASSET-CARDS.md#asset-nfc-3d9ffb2206406fcc) — `ACCEPTED_AS_DEFINITION`；- 为全部恢复的结果/文章来源生成统一卡片和 1 分钟、5 分钟、完整阅读，并为全部函数/断言 registry 建立可回链来源、状态、依赖、反向依赖和历史的分片搜索索引。
 - [Q30T 已将之元写作法成果的五类职责收口为当前接口：人类总索引、机器 registry、正式作品、案例来源链和点火分析。交接时不得把 README 最近三项投影当作完整权威，不得公开受限原始材料，也不得从一项接受作品推出方法普遍有效。](./ASSET-CARDS.md#asset-nfc-517a9b6de3674e2a) — `ACCEPTED_AS_DEFINITION`；121Q30T 已将之元写作法成果的五类职责收口为当前接口：人类总索引、机器 registry、正式作品、案例来源链和点火分析。交接时不得把 README 最近三项投影当作完整权威，不得公开受限原始材料，也不得从一项接受作品推出方法普遍有效。
+- [方法 `1.3.0` 与系统图 `0.7.0`、`0.6.0`、`0.5.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0`、`0.2.0`、`0.3.0`、`0.4.0` 为更早 Historical。当前方法](./ASSET-CARDS.md#asset-nfc-52242899c472490c) — `ACCEPTED_AS_DEFINITION`；方法 `1.3.0` 与系统图 `0.7.0`、`0.6.0`、`0.5.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0`、`0.2.0`、`0.3.0`、`0.4.0` 为更早 Historical。当前方法要求从构件 registry、类型化 topology 与
 - [Current: iteration method 1.4.0 \(Continuous Stage Snapshot Publication\). Read data/operations/stage-snapshots.json and d](./ASSET-CARDS.md#asset-nfc-6122e6f96efe210e) — `QUARANTINED_AMBIGUOUS`；Current: iteration method 1.4.0 \(Continuous Stage Snapshot Publication\). Read data/operations/stage-snapshots.json and docs/operations/stage-snapshot-
 - [点火没有证明“大一统普遍不可能”。模型失败、哥德尔类比、跨域相似或旧编号不能充当普遍 no-go theorem。](./ASSET-CARDS.md#asset-nfc-61546854af53780b) — `QUARANTINED_AMBIGUOUS`；- 点火没有证明“大一统普遍不可能”。模型失败、哥德尔类比、跨域相似或旧编号不能充当普遍 no-go theorem。
 - [`ASSERTION_INFLATION_GUARD` 是仓库级常驻不变量：工程、写作、总结、成果册、系统图、重复引用、跨域对应、模型美感和 Agent 共识都不能自动抬升断言地位；长期风险“从自我克制滑向大断言”必须持续登记和检查。](./ASSET-CARDS.md#asset-nfc-62c0ef5e2c8b99f2) — `ACCEPTED_AS_DEFINITION`；- `ASSERTION_INFLATION_GUARD` 是仓库级常驻不变量：工程、写作、总结、成果册、系统图、重复引用、跨域对应、模型美感和 Agent 共识都不能自动抬升断言地位；长期风险“从自我克制滑向大断言”必须持续登记和检查。
@@ -135,14 +135,14 @@
 - [“物理大一统不可能”已经撤回，不能通过改名为结构性边界推论而恢复。](./ASSET-CARDS.md#asset-nfc-70a1ec2c42864627) — `ACCEPTED_AS_DEFINITION`；- “物理大一统不可能”已经撤回，不能通过改名为结构性边界推论而恢复。
 - [函数类资产交接必须保留十二类主身份、M0—M7、E0—E7、十门结果、六层裁决、claim ceiling、证明/实证义务、依赖影响和最终处置。task 99 identity card 优先于自动 census；quarantine 不等](./ASSET-CARDS.md#asset-nfc-71e297ca6132aac6) — `QUARANTINED_AMBIGUOUS`；函数类资产交接必须保留十二类主身份、M0—M7、E0—E7、十门结果、六层裁决、claim ceiling、证明/实证义务、依赖影响和最终处置。task 99 identity card 优先于自动 census；quarantine 不等于验证。T2、D127、D182—D190、D260 仍以
 - [原始命题: 引力的B型门控不是偶然属性，是Φ极小点存在的必要条件。若引力为A型，Φ单调递减，大统一在数学上不可能。T33从"冲突"升级为"必要张力"。 **扩展注释 / Extended Annotation**](./ASSET-CARDS.md#asset-nfc-777640d03f719f40) — `HISTORICAL_ONLY`；- 原始命题: 引力的B型门控不是偶然属性，是Φ极小点存在的必要条件。若引力为A型，Φ单调递减，大统一在数学上不可能。T33从"冲突"升级为"必要张力"。 **扩展注释 / Extended Annotation**
-- 其余 202 张重点卡片可在[资产卡总表](./ASSET-CARDS.md)搜索主题标记 `ARCHITECTURE_GOVERNANCE`。
+- 其余 201 张重点卡片可在[资产卡总表](./ASSET-CARDS.md)搜索主题标记 `ARCHITECTURE_GOVERNANCE`。
 
 <a id="subject-writing-publication"></a>
 ## 文章、写作与公共表达
 
 **引导问题：** 研究结果如何形成可阅读作品，同时不越过来源、证据和许可边界？
 
-当前检索覆盖 1131 项，重点卡片 64 项。 [打开本主题完整索引](./indexes/writing_publication.md)
+当前检索覆盖 1136 项，重点卡片 64 项。 [打开本主题完整索引](./indexes/writing_publication.md)
 
 - [现有知识治理系统被登记为第一个 `Knowledge Domain Pack`，REOS vNext LIGHT 与之元写作法分别作为有界 research/writing Pack 引用；R0 没有全仓物理迁移。机器边界以 \[`agent](./ASSET-CARDS.md#asset-nfc-06ddf2b643747a14) — `ACCEPTED_AS_DEFINITION`；现有知识治理系统被登记为第一个 `Knowledge Domain Pack`，REOS vNext LIGHT 与之元写作法分别作为有界 research/writing Pack 引用；R0 没有全仓物理迁移。机器边界以 \[`agentization-boundary-r0.json`\]\(../
 - [任务 104（PR #160，已合并）建立编辑文章层与语料关系分析；任务 105（PR #161，已合并，精确 head `9d7d5ab512ffe3fd109a60ebd3d9d246b3a42d19`，普通合并 `9b5b4b9bfb](./ASSET-CARDS.md#asset-nfc-19c3c3352a78b2aa) — `RETAINED_AS_STRUCTURAL_METAPHOR`；任务 104（PR #160，已合并）建立编辑文章层与语料关系分析；任务 105（PR #161，已合并，精确 head `9d7d5ab512ffe3fd109a60ebd3d9d246b3a42d19`，普通合并 `9b5b4b9bfb243fe4cc52f7b163a9613ee6628321
@@ -169,7 +169,7 @@
 
 **引导问题：** 候选、验证、合并和 Current 怎样分离并留下可复算证据？
 
-当前检索覆盖 10751 项，重点卡片 253 项。 [打开本主题完整索引](./indexes/operations_evidence.md)
+当前检索覆盖 10825 项，重点卡片 253 项。 [打开本主题完整索引](./indexes/operations_evidence.md)
 
 - [门控面合并统一函数](./ASSET-CARDS.md#asset-d183) — `REWRITE_AND_RETEST`；Identity: RELATION_OR_CONSTRAINT. Definition scope: Positive scale ratios excluding one, plus an independently defined merge map → relation over sourc
 - [相对论门槛函数](./ASSET-CARDS.md#asset-d185) — `KEEP_AS_STRUCTURAL_METAPHOR`；Identity: STRUCTURAL_METAPHOR. Definition scope: UNSPECIFIED_IN_SOURCE → scalar-like score with unspecified units.

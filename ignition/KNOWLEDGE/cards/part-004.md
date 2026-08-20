@@ -4,26 +4,6 @@
 
 [返回资产卡总索引](../ASSET-CARDS.md)
 
-<a id="asset-hr-3dfbbb5a261064e9"></a>
-## v0.2 CP/SB 编号前计数差异诊断
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-3DFBBB5A261064E9` · [outputs/audit/v0.2-id-preflight-discrepancy-20260707.md](../../outputs/audit/v0.2-id-preflight-discrepancy-20260707.md)
-- **为什么产生：** 此来源记录了什么：v0.2 CP/SB 编号前计数差异诊断？
-- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **当前结果：** 如果 CP=34、SB=30 且无重复、无误识别，则下一步应：
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `outputs/audit/v0.2-id-preflight-discrepancy-20260707.md`, `REPOSITORY_HISTORY_SOURCE`
-- **演化历史：** 2026-07-07: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `v0.2 CP/SB 编号前计数差异诊断`, `v0.2-id-preflight-discrepancy-20260707`
-
 <a id="asset-hr-400134632a22a714"></a>
 ## Schema and integrity audit
 
@@ -1003,3 +983,23 @@
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `MATHEMATICS`, `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `22 本书验证候选案例 · 正式案例表入表审计 2026-07-09`, `book-validation-case-table-formalization-audit-20260709`
+
+<a id="asset-hr-628b84a2327f5c52"></a>
+## 碰撞证据链：不听话的人 × 点火两张表（20260711）
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-628B84A2327F5C52` · [outputs/collisions/20260711-disobedience-subjectivity/README.md](../../outputs/collisions/20260711-disobedience-subjectivity/README.md)
+- **为什么产生：** 此来源记录了什么：碰撞证据链：不听话的人 × 点火两张表（20260711）？
+- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **当前结果：** ee4819880dbbf258a15eb96d572762bc10f16fef8de85f4c41b9dcdfe49fa497
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** `D600`, `D601`, `D602`, `D595`, `D583`, `D598`, `D597`
+- **来源与证据：** `outputs/collisions/20260711-disobedience-subjectivity/README.md`, `202`
+- **演化历史：** 2026-07-11: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `碰撞证据链：不听话的人 × 点火两张表（20260711）`, `README`

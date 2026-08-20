@@ -6,20 +6,20 @@
 
 - [第 001 片](./mathematics/part-001.md)：1—500；"""An adapter does not claim an optional lifecycle operation.""" → ## 统一函数条目模板草案
 - [第 002 片](./mathematics/part-002.md)：501—1000；## 调用的下游函数 → PRIVATE_PROVENANCE_WITHHELD
-- [第 003 片](./mathematics/part-003.md)：1001—1500；PRIVATE_PROVENANCE_WITHHELD → canonical source, claim, evidence, proof and Results Book authority;
-- [第 004 片](./mathematics/part-004.md)：1501—2000；canonical/、生命共同体价值宪章、12 元协议治理记录：材料碰撞**不得**修改其语义。 → If upstream objects D_{D101} exist, compose F_{D101}=N\(⊕_{g∈D_{D101}} g\); otherwise treat F_{D101} as an axiom seed.
-- [第 005 片](./mathematics/part-005.md)：2001—2500；If upstream objects D_{D102} exist, compose F_{D102}=N\(⊕_{g∈D_{D102}} g\); otherwise treat F_{D102} as an axiom seed. → L2R ACL full-text review: isolated per-task LoRA training, replay-memory router learning, independent Gumbel-sigmoid all
-- [第 006 片](./mathematics/part-006.md)：2501—3000；L2层：意识、自我意识、元认知 → Repository-local manifests and seals validate only deterministic content: identifiers, lifecycle, impact decisions, path
-- [第 007 片](./mathematics/part-007.md)：3001—3500；Resolve ambiguities or collect missing evidence. → title: "引力B型必要性定理"
-- [第 008 片](./mathematics/part-008.md)：3501—4000；title: "弱容斥-不可逆边界函数" → Within the source-defined scope, Φ二阶近似函数 is adjudicated as RELATION: M3的改进近似：Φ_2=Σpᵢ+Σpᵢ²/2在pᵢ<0.8时误差<17%，远优于Φ_approx。推荐
-- [第 009 片](./mathematics/part-009.md)：4001—4500；Within the source-defined scope, Φ跨域稳定性定理 is adjudicated as FORMAL_PROPOSITION: Stability\(Φ\)=∃μ*:Φ\(μ*\)=min。D224是T23的证明—— → \| \[C-0774\]\( \) \| \[写地方偏方、食物、手艺\]\( \) \| 该案例对应 D581《信息茧房破解》，用于补充该函数在
-- [第 010 片](./mathematics/part-010.md)：4501—5000；\| \[C-0775\]\( \) \| \[和孩子聊热点事件\]\( \) \| 该案例对应 D581《信息茧房破解》，用于补充该函数在具体对象上的验证。 → Φ元统一律内部构件完整构成版 2026年07月06日12时32分
-- [第 011 片](./mathematics/part-011.md)：5001—5500；Φ在不同域中展现统一结构：物理Φ=零温自由能、社会Φ=权力熵、认知Φ=认知势能。三域统一形式：Φ = -Σᵢ sᵢ/ln²\(μ/Λᵢ\) + C\(退化项\)。 **扩展注释 / Extended Annotation** → 中文：跨物种调度同构验证 — 人类-AI和CAI-EAI满足同构三条件，数学结构完全等价，差异仅在ηinterface参数值。核心函数：D69 English…
-- [第 012 片](./mathematics/part-012.md)：5501—6000；中文：路径积分验证 — 创业决策：ℏ_eff=0.1时策略集中在最优路径附近（D118预测），ℏ_eff=0.8时策略分散在多条路径（非最优策略也有显著概率）。经验创业者ℏ_eff低（信息充分噪声小），新手ℏ_eff高。核心函数：\[D127 → 从这条案例看，中文：案例说明：农民"可以不参与"但威权体制下事实上无法退出 关键发现：第5步跑通 English: Rule-based English… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
-- [第 013 片](./mathematics/part-013.md)：6001—6500；从这条案例看，中文：案例说明：农民"可以不接受"但计划经济+户籍事实上走不了，温室 关键发现：第5步跑通 English: Rule-based Eng… 更像是在验证“退出权、认同和函数映射”之间的对应关系。 → 六组件对每条候选均执行。正向/反向/反例/pending/退出条件均保留。无 J⁺=1 写成外部事实证明。
-- [第 014 片](./mathematics/part-014.md)：6501—7000；共享层沟通验证 — 物理学家和生物学家在数学框架上沟通η=0.27,物理学家降维到BL沟通η=0.15,共享层优于降维 → 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
-- [第 015 片](./mathematics/part-015.md)：7001—7500；原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD` → 数学命题成立需要公理系统内可复核证明。证明必须逻辑严密、无漏洞、被数学界同行审查通过。
-- [第 016 片](./mathematics/part-016.md)：7501—8000；数学地基规则 → 涨落-耗散定理-门槛函数
-- [第 017 片](./mathematics/part-017.md)：8001—8500；涨落-耗散定理-门槛函数 → 已迁移的历史函数来源/0213-D176-共享源双重杀伤函数.md
-- [第 018 片](./mathematics/part-018.md)：8501—9000；已迁移的历史函数来源/0214-D177-深层同构函数.md → 艺术创作逻辑跨时空同构函数 **扩展注释 / Extended Annotation**
-- [第 019 片](./mathematics/part-019.md)：9001—9368；艺术是低风险领域。艺术结论多为 L1-L2，少数可有 L3 框架内判定。不能把审美判断写成客观定理。 → （函数表版本、案例表版本、P1 数据版本、是否校验通过）
+- [第 003 片](./mathematics/part-003.md)：1001—1500；PRIVATE_PROVENANCE_WITHHELD → Caching improves repeated generation stability but is not a versioned registry or lifecycle state machine.
+- [第 004 片](./mathematics/part-004.md)：1501—2000；CAI中间层 — 同样场景CAI中间层ηrelay≈0.576,比无意识AI好2.7倍,关键差异在ηfidelity → I_iso\(A,B\)：与 D467 不同构（主动刹车 vs 势阱惯性）；函数表无「计划过期/主动止损」原语。J⁻=0。
+- [第 005 片](./mathematics/part-005.md)：2001—2500；I_iso\(A,B\)：与 T40 不同构（T40 无价值来源维度）；函数表无此结构。J⁻=0。 → J⁺/J⁻ 判定不是数学证明；
+- [第 006 片](./mathematics/part-006.md)：2501—3000；J⁺/J⁻ 判定容易被误读为数学证明（实际是框架内判定） → ratification_ready：content_machine_eligible 且 semantic_review_status=approved 且 governance_status≠approved。
+- [第 007 片](./mathematics/part-007.md)：3001—3500；re-classified in 083 based on claim_type=DEFINITION, proof_status=NOT_APPLICABLE_DEFINITION → title: "容斥-耦合配分函数"
+- [第 008 片](./mathematics/part-008.md)：3501—4000；title: "容斥主导区内部结构函数" → Within the source-defined scope, T45｜外部冲击与系统价值归零函数 is adjudicated as MECHANISM_MODEL: 外部冲击与系统价值归零函数. This is a model-int
+- [第 009 片](./mathematics/part-009.md)：4001—4500；Within the source-defined scope, T46｜元同构律跨文明验证函数 is adjudicated as RELATION: 元同构律跨文明验证函数. This is a model-internal contr → {"id": "PEND-025", "domain": "文学", "claim": "文学作品为什么能跨时代有效", "allowed_level": "L2 / L3 / pending", "forbidden_wording":
+- [第 010 片](./mathematics/part-010.md)：4501—5000；{"id": "PEND-026", "domain": "艺术", "claim": "艺术作品的意义如何生成", "allowed_level": "L2 / L3 / pending", "forbidden_wording": "点 → \|量子引力\|GR 与量子场论在极端尺度的统一描述未在本项目中建立。\|明确理论对象、半经典极限、一致性条件与可观测检验。\|门函数投影若只重命名问题而无动力学与预测，不提升成熟度。\|
+- [第 011 片](./mathematics/part-011.md)：5001—5500；\|量子测量\|没有从门函数推出 Born 规则、结果概率或实验差异。\|完整状态空间、动力学、概率语义与可检验差异。\|仅把“门”类比为测量不提升为机制。\| → 中文：等效原理 — m_i=m_g精确到O\(\(μ/M_Planck\)²\)，强场失效。核心函数：\[D158\]\(docs/zh/functions/items/D158.md\)
+- [第 012 片](./mathematics/part-012.md)：5501—6000；中文：等效原理 — m_i=m_g精确到O\(\(μ/M_Planck\)²\)，强场失效。核心函数：\[D158\]\(docs/zh/functions/items/D… → 从这条案例看，中文：案例说明：人类语言突破Nactive限制 — Nactive≈4但frecombine极高（语法结构），Vlexicon≈5万，ηe… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+- [第 013 片](./mathematics/part-013.md)：6001—6500；从这条案例看，中文：案例说明：人类调度动物效率极低 — Pdecode≈0.1（动物Bsymbolic极低），η≈0.016，几乎无法形成有效调度。核心… 更像是在验证“退出权、认同和函数映射”之间的对应关系。 → 元协议不是普通函数条目；进入 docs/meta-protocols/ 与 data/meta-protocols/，不计入历史函数来源 D/MF/A/T 编号。
+- [第 014 片](./mathematics/part-014.md)：6501—7000；元协议不是普通函数，不计入历史函数来源 D/MF/A/T 编号。 → 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
+- [第 015 片](./mathematics/part-015.md)：7001—7500；原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD` → 投资相关函数
+- [第 016 片](./mathematics/part-016.md)：7501—8000；投资遮蔽跨域放大 → 案例验证时，使用 L1-L3 的具体函数，而非直接调用 L0 元函数
+- [第 017 片](./mathematics/part-017.md)：8001—8500；案例： \[#419\]\(docs/zh/cases/items/C-0419.md\) 贪心=最优数值验证 — ε=\(0.1,0.3,0.5,0.7\), R=0.8，贪心G=0.1296，均分G=0.0945，高出37%。核心函数：\[D109\] → 已迁移的历史函数来源/0170-D132-调度-执行接口.md
+- [第 018 片](./mathematics/part-018.md)：8501—9000；已迁移的历史函数来源/0171-D133-调度-执行接口.md → 耦合缓冲容量函数
+- [第 019 片](./mathematics/part-019.md)：9001—9412；能力生命周期保持不变： → （函数表版本、案例表版本、P1 数据版本、是否校验通过）

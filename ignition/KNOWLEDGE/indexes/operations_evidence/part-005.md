@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP014-M41.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP014-M41.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：A5018751874 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP014-M41.json / A5018751874 / A5087016011
+  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP014-M41.json`
+  - 依赖：—；被引用：—
+- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP014-M41.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP014-M41.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：A5087016011 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP014-M41.json / A5087016011 / A5018751874
+  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP014-M41.json`
+  - 依赖：—；被引用：—
+- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP014-M41.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP014-M41.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：P4310320017 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP014-M41.json / P4310320017 / A5018751874
+  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP014-M41.json`
+  - 依赖：—；被引用：—
 - [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP014-M42.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP014-M42.json)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：A5045974436 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP014-M42.json / A5045974436 / A5046187244
@@ -63,6 +78,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-01d5f26156605355 / Derived projections: `current-facts` now rejects unsorted or duplicate source
   - 来源：`reports/operations/ignition-124-progress.md`
+  - 依赖：—；被引用：—
+- [Deterministic projection check passed; unit tests `4/4` passed.](../../../reports/operations/ignition-126-progress.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-d5226bf7c34dc948 / Deterministic projection check passed; unit tests `4/4` passed.
+  - 来源：`reports/operations/ignition-126-progress.md`
   - 依赖：—；被引用：—
 - [docs/language-thought/dimensional-basis.md](../../../docs/language-thought/dimensional-basis.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -309,6 +329,11 @@
   - 可搜索名称：IMPLICIT-91808867E8DC8B53 / English: ∂Ω_universe = {x \| Cᵢ\(x\) = 边界值} / IMPLICIT-91808867E8DC8B53
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
+- [epistemic_state: `CURRENT_WITH_OPEN_OBLIGATIONS` and `EPISTEMICALLY_ACCEPTED=0` remain unchanged. The continuity pilot,](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a04478b4819ed232 / epistemic_state: `CURRENT_WITH_OPEN_OBLIGATIONS` and `EPISTEMICALLY_ACCEPTED=0` remain unchanged. The continuity pilot,
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [Exact registered arXiv v3 hash/size, all-23-page visual/full-text/complete-source and official Tensor2Tensor current/his](../../../data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-82fcd15a107c4d44 / Exact registered arXiv v3 hash/size, all-23-page visual/full-text/complete-source and official Tensor2Tensor current/his
@@ -543,6 +568,11 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-C4E76573DDEB0C6B / G_δ\(财务决策\) = 1 / IMPLICIT-C4E76573DDEB0C6B / IMPLICIT-C03181F47FC0FCEE
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：—；被引用：—
+- [Generator: `tools/generate_structural_projections.py`.](../../../reports/operations/ignition-126-progress.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-d29e5747048485a3 / Generator: `tools/generate_structural_projections.py`.
+  - 来源：`reports/operations/ignition-126-progress.md`
   - 依赖：—；被引用：—
 - [Goodman-Gerstenberg-Tenenbaum full chapter, associated CogSci paper, participant-data archive and Flash demo review: sto](../../../data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
@@ -1184,6 +1214,11 @@
   - 可搜索名称：NFC-3badfadb463ef0e3 / NEW_OBJECT_TYPE（8个 HIGH）**：GAP-001~008，对应 087 重算 missing 占多数（164~250），需开新对象类型承载外部理论来源族。
   - 来源：`data/external-research/088-patch-blueprint.md`
   - 依赖：—；被引用：—
+- [next_read: read this delta, \[Task 127 progress\]\(./data/operations/iterations/127/progress.jsonl\), \[current identity\]\(./d](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-5a3dfe7f8c39927f / next_read: read this delta, \[Task 127 progress\]\(./data/operations/iterations/127/progress.jsonl\), \[current identity\]\(./d
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [next_read: read this task-branch projection with \[current-state-sync-receipt\]\(./data/operations/iterations/123/current-s](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-f3e0746f13562508 / next_read: read this task-branch projection with \[current-state-sync-receipt\]\(./data/operations/iterations/123/current-s
@@ -1449,6 +1484,16 @@
   - 可搜索名称：Pointfire seven-track external cross-domain replay — repaired governed pass / REPLAY-REPORT
   - 来源：`reports/external-research/pointfire-seven-track-replay-r1/REPLAY-REPORT.md`
   - 依赖：—；被引用：—
+- [Projection arms: `5/5` — delexicalized structure, terminology-only,](../../../reports/operations/ignition-126-progress.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-011205ef277a20c0 / Projection arms: `5/5` — delexicalized structure, terminology-only,
+  - 来源：`reports/operations/ignition-126-progress.md`
+  - 依赖：—；被引用：—
+- [Projection contains `12/12` grammar relations and labels itself](../../../reports/operations/ignition-126-progress.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-a3cbab124af22e6e / Projection contains `12/12` grammar relations and labels itself
+  - 来源：`reports/operations/ignition-126-progress.md`
+  - 依赖：—；被引用：—
 - [projection rather than the retired 50-node expectation.](../../../reports/validation/pointfire-seven-track-current-main-maintenance-r1-20260813.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-9817eea616b45f20 / projection rather than the retired 50-node expectation.
@@ -1664,6 +1709,11 @@
   - 可搜索名称：NFC-51e998cd89d410de / stale_knowledge: a stable Knowledge projection, a validated local Reference/Conformance/Fallback path, a cross-executor
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
+- [stale_knowledge: historical Task 126 map `0.10.0`, old copied counts and branch-only receipts remain historical context;](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-ef1c806fbc97ffe9 / stale_knowledge: historical Task 126 map `0.10.0`, old copied counts and branch-only receipts remain historical context;
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [stale_knowledge: Task 119/120 R0/R1-only descriptions are historical compatibility surfaces; R2 is now the current engin](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-a4004aa617043331 / stale_knowledge: Task 119/120 R0/R1-only descriptions are historical compatibility surfaces; R2 is now the current engin
@@ -1699,10 +1749,25 @@
   - 可搜索名称：IMPLICIT-C42628140EE40C96 / The 078 example uses `f1\(x\)=exp\(x\)` and `f2\(x\)=exp\(-2x\)` on the reals. The first is strictly increasing, the second strictly decreasing, while the product `exp\(-x\)` is strictly decreasing and has no interior inverted-U maximum. It satisfies / IMPLICIT-C42628140EE40C96
   - 来源：`reports/foundation-architecture/T16-counterexample-equivalence-audit-20260713.md`
   - 依赖：—；被引用：—
+- [The 126 closure remains the authority for historical/environment residuals. 127 preserves function census drift, nonfunc](../../../reports/operations/ignition-127-step00-rebase-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-f2fd2d4f3e742b71 / The 126 closure remains the authority for historical/environment residuals. 127 preserves function census drift, nonfunc
+  - 来源：`reports/operations/ignition-127-step00-rebase-audit.md`
+  - 依赖：—；被引用：—
 - [The 6 NARROWS cases reflect that the provisional Kimi/non-max cards were overly conservative \(rating all as PARTIAL\), wh](../../../reports/external-research/121c01-max-semantic-review-batch-01.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-43ed9ee882071037 / The 6 NARROWS cases reflect that the provisional Kimi/non-max cards were overly conservative \(rating all as PARTIAL\), wh
   - 来源：`reports/external-research/121c01-max-semantic-review-batch-01.md`
+  - 依赖：—；被引用：—
+- [The affected downstream projections were rebuilt and checked: Knowledge Experience \(`404` cards, `332` layered readings,](../../../reports/operations/ignition-126-progress.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-3877a1546fe7ed94 / The affected downstream projections were rebuilt and checked: Knowledge Experience \(`404` cards, `332` layered readings,
+  - 来源：`reports/operations/ignition-126-progress.md`
+  - 依赖：—；被引用：—
+- [the visible projection is `80` nodes and `83` typed edges.](../../../reports/operations/ignition-126-progress.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-f39f549213f5713b / the visible projection is `80` nodes and `83` typed edges.
+  - 来源：`reports/operations/ignition-126-progress.md`
   - 依赖：—；被引用：—
 - [title: "8格概率"](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -2419,6 +2484,11 @@
   - 可搜索名称：IMPLICIT-AC69D5A2E1C2D7CC / \| **U₃ 耦合动力学元律** \| M₄动力学元律 \| 耦合动力学:dx/dt=f\(x₁,x₂,...\)或f\(g\(x\),h\(x\)\) \| / IMPLICIT-AC69D5A2E1C2D7CC / IMPLICIT-AB0AE67F6D7524A9
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
+- [\| 05 \| COMPLETED \| pending closure \| pending closure \| Five deterministic exposure/control projections with recorded rel](../../../reports/operations/ignition-126-progress.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-13a7945900a03e51 / \| 05 \| COMPLETED \| pending closure \| pending closure \| Five deterministic exposure/control projections with recorded rel
+  - 来源：`reports/operations/ignition-126-progress.md`
+  - 依赖：—；被引用：—
 - [\| 08 \| COMPLETED \| pending closure \| pending closure \| Concurrent operational memory with generation CAS, duplicate supp](../../../reports/operations/ignition-124-progress.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-f60eabd0c27c5413 / \| 08 \| COMPLETED \| pending closure \| pending closure \| Concurrent operational memory with generation CAS, duplicate supp
@@ -2433,74 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-e8169a46e377869f / \| 12 \| COMPLETED \| pending closure \| pending closure \| Full discovery, projection closure rebuild and residual classific
   - 来源：`reports/operations/ignition-124-progress.md`
-  - 依赖：—；被引用：—
-- [\| 6 \| 089 至 103 共 15 产物 \| 投影/闸门/对齐层/可视化/维护 \|](../../../data/external-research/088-FINAL-REPORT.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-9101eccc3c3c791c / \| 6 \| 089 至 103 共 15 产物 \| 投影/闸门/对齐层/可视化/维护 \|
-  - 来源：`data/external-research/088-FINAL-REPORT.md`
-  - 依赖：—；被引用：—
-- [\| \[C-109\]\( \) \| \[口味偏好固化\]\( \) \| Preference\(k,t\)=∫\[S_body×R_repeat×\(1-H_cultural\)\]dt \|](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-DD30CCA9A060A1B7 / \| \[C-109\]\( \) \| \[口味偏好固化\]\( \) \| Preference\(k,t\)=∫\[S_body×R_repeat×\(1-H_cultural\)\]dt \| / IMPLICIT-DD30CCA9A060A1B7
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [\| \[C-113\]\( \) \| \[人体忒修斯\]\( \) \| 维护成本M\(t\)=M₀·e^αt vs 信息产出I\(t\) \|](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-36E59DC28729BAE7 / \| \[C-113\]\( \) \| \[人体忒修斯\]\( \) \| 维护成本M\(t\)=M₀·e^αt vs 信息产出I\(t\) \| / IMPLICIT-36E59DC28729BAE7
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [\| \[C-116\]\( \) \| \[口味偏好固化\]\( \) \| Preference\(k,t\)=∫\[S_body×R_repeat×\(1-H_cultural\)\]dt \|](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-5B54E5F47922FE28 / \| \[C-116\]\( \) \| \[口味偏好固化\]\( \) \| Preference\(k,t\)=∫\[S_body×R_repeat×\(1-H_cultural\)\]dt \| / IMPLICIT-5B54E5F47922FE28
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [\| \[C-127\]\( \) \| \[框架发现过程\]\( \) \| P\(发现\)=P\(L₅激活\)×P\(L₅不退化\) \|](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-E879F736E295926D / \| \[C-127\]\( \) \| \[框架发现过程\]\( \) \| P\(发现\)=P\(L₅激活\)×P\(L₅不退化\) \| / IMPLICIT-E879F736E295926D
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [\| \[C-137\]\( \) \| \[框架发现过程\]\( \) \| P\(发现\)=P\(L₅激活\)×P\(L₅不退化\) \|](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-EFBC72CFD353995D / \| \[C-137\]\( \) \| \[框架发现过程\]\( \) \| P\(发现\)=P\(L₅激活\)×P\(L₅不退化\) \| / IMPLICIT-EFBC72CFD353995D
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [\| \[C-144\]\( \) \| \[县城佳和超市90%复购率\]\( \) \| R_upgrade=R₀×∫\[α₁Δ\(信息可及性\)+α₂\(-ΔC_exit_eff\)+α₃Δε_aware\]dt \|](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-3C8D26D9F9813167 / \| \[C-144\]\( \) \| \[县城佳和超市90%复购率\]\( \) \| R_upgrade=R₀×∫\[α₁Δ\(信息可及性\)+α₂\(-ΔC_exit_eff\)+α₃Δε_aware\]dt \| / IMPLICIT-3C8D26D9F9813167
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [\| \[C-146\]\( \) \| \[西安加油站便利店\]\( \) \| C_exit\(geo\)=κ×ρ^\(-α\)×r^β×τ \|](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-0DD9DEEEF76C8C8C / \| \[C-146\]\( \) \| \[西安加油站便利店\]\( \) \| C_exit\(geo\)=κ×ρ^\(-α\)×r^β×τ \| / IMPLICIT-0DD9DEEEF76C8C8C
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [\| \[C-260\]\( \) \| \[r_cross=0不导致Ψ=0\]\( \) \| 暂无内容 / No content \|](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-49E354308D387D6A / \| \[C-260\]\( \) \| \[r_cross=0不导致Ψ=0\]\( \) \| 暂无内容 / No content \| / IMPLICIT-49E354308D387D6A
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [\| \[C-622\]\( \) \| \[退出权空间案例02\]\( \) \| Ω=0或Ω→∞→P_exit=0。选择空间为零或无限大都会导致退出权归零。 \|](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-03CA7AA34A8C6461 / \| \[C-622\]\( \) \| \[退出权空间案例02\]\( \) \| Ω=0或Ω→∞→P_exit=0。选择空间为零或无限大都会导致退出权归零。 \| / IMPLICIT-03CA7AA34A8C6461
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [\| \[C-626\]\( \) \| \[退出权空间案例06\]\( \) \| 跑步训练σ=1.2→Ω太小→P_exit低；API成本σ=2.0→Ω太大→P_exit低。 \|](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-DE3A9FBDB0BBFBB3 / \| \[C-626\]\( \) \| \[退出权空间案例06\]\( \) \| 跑步训练σ=1.2→Ω太小→P_exit低；API成本σ=2.0→Ω太大→P_exit低。 \| / IMPLICIT-DE3A9FBDB0BBFBB3
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [\| \[C-627\]\( \) \| \[退出权空间案例07\]\( \) \| Ω=1（无选择）→P_exit=0。单一选项意味着无退出权。 \|](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-9EA1D701A0E7271C / \| \[C-627\]\( \) \| \[退出权空间案例07\]\( \) \| Ω=1（无选择）→P_exit=0。单一选项意味着无退出权。 \| / IMPLICIT-9EA1D701A0E7271C
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [\| \[C-651\]\( \) \| \[退出权空间案例31\]\( \) \| Ω=1（所有选项相同）→σ=0→P_exit=0。所有选项无差异时方差为零退出权归零。 \|](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-CC19D41E7C100B27 / \| \[C-651\]\( \) \| \[退出权空间案例31\]\( \) \| Ω=1（所有选项相同）→σ=0→P_exit=0。所有选项无差异时方差为零退出权归零。 \| / IMPLICIT-CC19D41E7C100B27
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [\| \[MF-0003\]\( \) \| \[正反互斥判定器\]\( \) \| E\(x\)=1 ⇔ ¬\(J⁺\(x\)=1 ∧ J⁻\(x\)=1\) \|](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-E2C51574C136F47F / \| \[MF-0003\]\( \) \| \[正反互斥判定器\]\( \) \| E\(x\)=1 ⇔ ¬\(J⁺\(x\)=1 ∧ J⁻\(x\)=1\) \| / IMPLICIT-E2C51574C136F47F
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—

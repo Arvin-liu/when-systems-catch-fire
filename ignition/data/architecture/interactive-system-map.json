@@ -1,18 +1,18 @@
 {
   "schema_version": "2.0.0",
-  "map_version": "0.10.0",
-  "historical_map_version": "0.9.0",
+  "map_version": "0.11.0",
+  "historical_map_version": "0.10.0",
   "projection_status": "CURRENT_DERIVED_PROJECTION",
   "title": "点火唯一完整可点击总架构图",
-  "subtitle": "唯一完整总架构图；0.10.0 Current 派生投影，0.9.0 为 Historical。主干是 Owner/Value Charter → Ignition OS driver / R2 Control Plane → Pack/Federation routing → 外部可替换执行器（external replaceable executors；external executors）→ Actions/Receipts → Validation/Feedback → OS；Structural Governance Surface 是 advisory cross-cutting overlay，不增加 L7，不改变 capability、permission 或 epistemic status；Event Ledger、monotonic policy、resource arbitration、bounded scheduler、health lease、queue/backpressure、dispatch/reconciliation、concurrent operational memory 与 Driver Console 都是有界控制记录；Reference / Conformance / Fallback 是本地冻结边界；Kernel ≠ Knowledge，Runtime ≠ Research，Pack 不拥有通用 authority；语言—思维横穿 L0—L6，不增加 L7。连线是仓库关系、同步义务或候选反馈，不自动表示现实因果。",
+  "subtitle": "唯一完整总架构图；0.11.0 Current 派生投影，0.10.0 为 Historical。主干是 Owner/Value Charter → Ignition OS driver / R2 Control Plane → Pack/Federation routing → 外部可替换执行器（external replaceable executors；external executors）→ Actions/Receipts → Validation/Feedback → OS；Durability / Lifecycle R3 是 OS 内的有界持久化、恢复、迁移、命名空间、Pack 生命周期、撤销、账本与 DR 连续性记录，不是第二张图，也不自动重放不确定外部副作用；Structural Governance Surface 是 advisory cross-cutting overlay，不增加 L7，不改变 capability、permission 或 epistemic status；Event Ledger、monotonic policy、resource arbitration、bounded scheduler、health lease、queue/backpressure、dispatch/reconciliation、concurrent operational memory、Durability / Lifecycle 与 Driver Console 都是有界控制记录；Reference / Conformance / Fallback 是本地冻结边界；Kernel ≠ Knowledge，Runtime ≠ Research，Pack 不拥有通用 authority；语言—思维横穿 L0—L6，不增加 L7。连线是仓库关系、同步义务或候选反馈，不自动表示现实因果。",
   "repository_url": "https://github.com/Arvin-liu/when-systems-catch-fire",
   "projection_authority": {
     "component_registry": "data/operations/project-components.json",
     "propagation_topology": "data/operations/change-propagation-topology.json",
     "layout_overlay": "data/architecture/interactive-system-map-layout.json",
-    "component_registry_version": "1.9.0",
-    "topology_version": "1.8.0",
-    "layout_version": "1.8.0"
+    "component_registry_version": "2.0.0",
+    "topology_version": "1.9.0",
+    "layout_version": "1.9.0"
   },
   "layout": {
     "columns": 3,
@@ -151,7 +151,7 @@
       },
       {
         "id": "os_control",
-        "label": "Ignition OS control / governance spine",
+        "label": "Ignition OS control / governance spine with durable lifecycle",
         "node_ids": [
           "agentization_boundary_r0",
           "agent_profile_r0",
@@ -165,6 +165,7 @@
           "queue_control_r1",
           "durable_dispatch_r1",
           "concurrent_operational_memory_r2",
+          "durability_lifecycle_r3",
           "driver_console_r1",
           "runtime_memory_loop"
         ],
@@ -177,6 +178,8 @@
           "map_scheduler_queue",
           "map_scheduler_dispatch",
           "map_runtime_concurrent_memory",
+          "map_runtime_durability_lifecycle",
+          "map_durability_driver_console",
           "map_memory_console",
           "map_runtime_memory"
         ]
@@ -784,6 +787,14 @@
       "group": "os_spine",
       "target": "docs/architecture/os-control-plane-r2.md#Concurrent Operational Memory R2",
       "description": "Concurrent operational memory with generation CAS, duplicate suppression, supersession/tombstones, stale capsules and deterministic compaction.",
+      "lifecycle_status": "current"
+    },
+    {
+      "id": "durability_lifecycle_r3",
+      "label": "Durability / Lifecycle R3",
+      "group": "os_spine",
+      "target": "docs/architecture/os-control-plane-r2.md#Durability and Lifecycle R3",
+      "description": "Repository-local durability and lifecycle spine for snapshot plus tail, compaction, schema migration, namespace isolation, Pack lifecycle, revocation, accounting, recovery orchestration and disaster-recovery bundles; uncertain external effects stop at reconciliation and are never rerun automatically.",
       "lifecycle_status": "current"
     },
     {
@@ -1555,11 +1566,27 @@
       "label": "Memory 生成 Driver Console 的恢复提示",
       "relation_class": "projects",
       "relation_domain": "repository_dependency"
+    },
+    {
+      "id": "map_runtime_durability_lifecycle",
+      "source": "agent_runtime_r0",
+      "target": "durability_lifecycle_r3",
+      "label": "Runtime 生成有界 Durability / Lifecycle 记录",
+      "relation_class": "generates",
+      "relation_domain": "repository_dependency"
+    },
+    {
+      "id": "map_durability_driver_console",
+      "source": "durability_lifecycle_r3",
+      "target": "driver_console_r1",
+      "label": "Durability 状态进入 Driver Console 恢复视图",
+      "relation_class": "projects",
+      "relation_domain": "repository_dependency"
     }
   ],
   "component_coverage": {
-    "registry_components": 92,
-    "visible_nodes": 80,
+    "registry_components": 93,
+    "visible_nodes": 81,
     "hidden_components": 12,
     "hidden_representatives": {
       "foundation_data": "foundation",

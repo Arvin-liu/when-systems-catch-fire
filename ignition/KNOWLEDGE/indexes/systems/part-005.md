@@ -4,6 +4,111 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [市场机制（价格信号、分布式决策）](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-9968442cc22fcd01 / 市场机制（价格信号、分布式决策）
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [底层成员有申诉与退出机制](../../../docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-bcad84a775e14feb / 底层成员有申诉与退出机制
+  - 来源：`docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md`
+  - 依赖：—；被引用：—
+- [延续策略导致更早崩溃](../../../docs/governance/meta-protocol-reviews/protocols/V1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-2f116f4b6224e166 / 延续策略导致更早崩溃
+  - 来源：`docs/governance/meta-protocol-reviews/protocols/V1.md`
+  - 依赖：—；被引用：—
+- [建立失败案例反向修正机制；](../../../outputs/getbrain/README.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-03082cf6961cbf71 / 建立失败案例反向修正机制；
+  - 来源：`outputs/getbrain/README.md`
+  - 依赖：—；被引用：—
+- [建议 GPT 查验后由人工决定 #41/#42 合并顺序与是否修复 foundation CI。](../../../data/external-research/121-fulltext-resolver/121q6c/121Q6C-final-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-18ad31c9979c88aa / 建议 GPT 查验后由人工决定 #41/#42 合并顺序与是否修复 foundation CI。
+  - 来源：`data/external-research/121-fulltext-resolver/121q6c/121Q6C-final-report.md`
+  - 依赖：—；被引用：—
+- [开头摘要将全文归纳为「小镇做题家挣脱人生剧本、找回主体性」。该层仅作索引，不作为机制证据。](../../../outputs/collisions/20260711-disobedience-subjectivity/source-layer-map.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-aa1719c10e632504 / 开头摘要将全文归纳为「小镇做题家挣脱人生剧本、找回主体性」。该层仅作索引，不作为机制证据。
+  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/source-layer-map.md`
+  - 依赖：—；被引用：—
+- [开放导致不可逆污染或病原扩散](../../../docs/governance/meta-protocol-reviews/protocols/S2.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-b611aa8135ee34a3 / 开放导致不可逆污染或病原扩散
+  - 来源：`docs/governance/meta-protocol-reviews/protocols/S2.md`
+  - 依赖：—；被引用：—
+- [开放问题的优先级由风险、依赖范围、可证伪性和证据成本共同决定，不按历史编号或叙述宏大程度决定。](../../../RESULTS/OPEN-QUESTIONS.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-72fcba87b73b641a / 开放问题的优先级由风险、依赖范围、可证伪性和证据成本共同决定，不按历史编号或叙述宏大程度决定。
+  - 来源：`RESULTS/OPEN-QUESTIONS.md`
+  - 依赖：—；被引用：—
+- [异地恋断裂 — μ翻转导致dcritical从2000km缩到50km,不是距离变了是临界距离变了](../../../data/foundation/evidence/evidence.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-8bd331ac9a1ba584 / 异地恋断裂 — μ翻转导致dcritical从2000km缩到50km,不是距离变了是临界距离变了
+  - 来源：`data/foundation/evidence/evidence.jsonl`
+  - 依赖：—；被引用：—
+- [引用既有 authority、类型化 handoff 与禁止升级边；不复制局部状态，不是 L7 或统一真值层。](../../../data/architecture/interactive-system-map.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-9a44d63ff9bfdc52 / 引用既有 authority、类型化 handoff 与禁止升级边；不复制局部状态，不是 L7 或统一真值层。
+  - 来源：`data/architecture/interactive-system-map.json`
+  - 依赖：—；被引用：—
+- [弱势成员须有对等参与与保护机制](../../../docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-49674524bdecb2fc / 弱势成员须有对等参与与保护机制
+  - 来源：`docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md`
+  - 依赖：—；被引用：—
+- [当亲密或协作关系中双方需求隐含且互相错位时，通过目标对齐机制、需求显式打分（如 0–10，9+ 必优先、6.5− 可灵活）、事后复盘与空间边界，把模糊需求转成可排序的协作协议，降低隐性冲突。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-c5b00e04508482ef / 当亲密或协作关系中双方需求隐含且互相错位时，通过目标对齐机制、需求显式打分（如 0–10，9+ 必优先、6.5− 可灵活）、事后复盘与空间边界，把模糊需求转成可排序的协作协议，降低隐性冲突。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [当前 fixture 必须覆盖：意外事件施事化、进行／完成／终点变化、话题链、零照应歧义、凭空因果连接、证据来源丢失或发明、名词化抽象与事件化成句、合法长短句、应保留的有意标记句法、词面回译相似但框架改变，以及 L0—L6 每层实例。](../../../docs/language-thought/validation-and-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-f4dcfd7116d21c4d / 当前 fixture 必须覆盖：意外事件施事化、进行／完成／终点变化、话题链、零照应歧义、凭空因果连接、证据来源丢失或发明、名词化抽象与事件化成句、合法长短句、应保留的有意标记句法、词面回译相似但框架改变，以及 L0—L6 每层实例。
+  - 来源：`docs/language-thought/validation-and-audit.md`
+  - 依赖：—；被引用：—
+- [当前仓库没有苹果案例 runner、历史因果 oracle 或可绑定的 Function OS target；因此状态为](../../../RESULTS/OPEN-QUESTIONS.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-f2c8d0ac6ace5b9c / 当前仓库没有苹果案例 runner、历史因果 oracle 或可绑定的 Function OS target；因此状态为
+  - 来源：`RESULTS/OPEN-QUESTIONS.md`
+  - 依赖：—；被引用：—
+- [当前仓库的之元写作法 0.4.0、任务 112 的出版边界、Pointfire 的 claim／mechanism／gap／residue 纪律，属于 `ignition_increment`。它们帮助组织问题、保留差异和决定何时停止，但不](../../../reports/publication/song-huizong-taoism-point-fire-analysis.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-edff5a599cc37b0a / 当前仓库的之元写作法 0.4.0、任务 112 的出版边界、Pointfire 的 claim／mechanism／gap／residue 纪律，属于 `ignition_increment`。它们帮助组织问题、保留差异和决定何时停止，但不
+  - 来源：`reports/publication/song-huizong-taoism-point-fire-analysis.md`
+  - 依赖：—；被引用：—
+- [当前方法 `1.4.0`、系统图 `0.6.0` 与之元写作法 `0.5.0` 均以各自权威资产为准；系统图 `0.5.0`、`0.4.0` 及更早版本只作为历史证据。面向 AI 的最近状态增量见 \[`STATE-CHANGELOG.md`](../../../docs/VERSIONING.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-3bf9f8910a2df6b7 / 当前方法 `1.4.0`、系统图 `0.6.0` 与之元写作法 `0.5.0` 均以各自权威资产为准；系统图 `0.5.0`、`0.4.0` 及更早版本只作为历史证据。面向 AI 的最近状态增量见 \[`STATE-CHANGELOG.md`
+  - 来源：`docs/VERSIONING.md`
+  - 依赖：—；被引用：—
+- [当前机器投影的 registry、可见节点、typed edges 和隐藏 components 计数以](../../../docs/architecture/interactive-system-map.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-c50702a11635014f / 当前机器投影的 registry、可见节点、typed edges 和隐藏 components 计数以
+  - 来源：`docs/architecture/interactive-system-map.md`
+  - 依赖：—；被引用：—
+- [当前树删除 Pages workflow、Jekyll 配置/布局/样式、Pages HTML、Pages 路径的派生 SVG，以及两组 Pages 专用测试。系统图迁移到 `docs/generated/ignition-system-m](../../../reports/foundation-architecture/101-human-readable-surfaces-self-correction-closeout.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-4d8170d68d5cc442 / 当前树删除 Pages workflow、Jekyll 配置/布局/样式、Pages HTML、Pages 路径的派生 SVG，以及两组 Pages 专用测试。系统图迁移到 `docs/generated/ignition-system-m
+  - 来源：`reports/foundation-architecture/101-human-readable-surfaces-self-correction-closeout.md`
+  - 依赖：—；被引用：—
+- [当前案例表（拆分目录）：`PRIVATE_PROVENANCE_WITHHELD`](../../../outputs/audit/codespace-rescue-two-tables-diff-audit-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-21c88ef94446de6b / 当前案例表（拆分目录）：`PRIVATE_PROVENANCE_WITHHELD`
+  - 来源：`outputs/audit/codespace-rescue-two-tables-diff-audit-20260708.md`
+  - 依赖：—；被引用：—
+- [当前赛课机制第二批暂缓项包括：**](../../../docs/agent-trigger-phrases-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-1e9458503c209618 / 当前赛课机制第二批暂缓项包括：**
+  - 来源：`docs/agent-trigger-phrases-20260708.md`
+  - 依赖：—；被引用：—
+- [当前身份 contract/facts 见 \[`current-system-identity.json`\]\(../../data/architecture/current-system-identity.json\)](../../../docs/architecture/agent-platform-r2.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-e0cf5009c495b05c / 当前身份 contract/facts 见 \[`current-system-identity.json`\]\(../../data/architecture/current-system-identity.json\)
+  - 来源：`docs/architecture/agent-platform-r2.md`
+  - 依赖：—；被引用：—
 - [当前阶段状态：准备阶段已收口（候选召回层已验证有效，机制级二次判定层待建）。](../../../docs/getnote-collision-workflow-final-20260708.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-6c8bdd7f9d27be79 / 当前阶段状态：准备阶段已收口（候选召回层已验证有效，机制级二次判定层待建）。
@@ -729,9 +834,9 @@
   - 可搜索名称：NFC-8160454521535f71 / 新条目**逻辑信息完整**（定义/机制/边界/来源/pending 齐），但**结构表达与旧条目不统一**：
   - 来源：`outputs/audit/two-tables-entry-format-audit-20260709.md`
   - 依赖：—；被引用：—
-- [方法 `1.3.0` 与系统图 `0.6.0`、`0.5.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0`、`0.2.0`、`0.3.0`、`0.4.0` 为更早 Historical。当前方法要求从构件 re](../../ASSET-CARDS.md#asset-nfc-2cfca960b0909c17)
+- [方法 `1.3.0` 与系统图 `0.7.0`、`0.6.0`、`0.5.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0`、`0.2.0`、`0.3.0`、`0.4.0` 为更早 Historical。当前方法](../../ASSET-CARDS.md#asset-nfc-52242899c472490c)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-2cfca960b0909c17 / 方法 `1.3.0` 与系统图 `0.6.0`、`0.5.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0`、`0.2.0`、`0.3.0`、`0.4.0` 为更早 Historical。当前方法要求从构件 re / 方法 `1.3.0` 与系统图 `0.6.0`、`0.5.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0`、`0.2.0`、`0.3.0`、`0.4.0` 为更早 Historical。当前方法要求从构件 registry、类型化 topology 与 `data/operations/synchronization-surfaces.json` 计算全项目传播闭包。README、`HUMAN-READING.md`、`RESULTS/`、项目现状、人类 AI 指南、AI 冷启动、Agent 交接、机器入口和版本历史都是必须评估的项目表面。实现完成不能替代仓库同步完成；本地验证也不能声称任何未登记的实时外部状态已验证。
+  - 可搜索名称：NFC-52242899c472490c / 方法 `1.3.0` 与系统图 `0.7.0`、`0.6.0`、`0.5.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0`、`0.2.0`、`0.3.0`、`0.4.0` 为更早 Historical。当前方法 / 方法 `1.3.0` 与系统图 `0.7.0`、`0.6.0`、`0.5.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0`、`0.2.0`、`0.3.0`、`0.4.0` 为更早 Historical。当前方法要求从构件 registry、类型化 topology 与 `data/operations/synchronization-surfaces.json` 计算全项目传播闭包。README、`HUMAN-READING.md`、`RESULTS/`、项目现状、人类 AI 指南、AI 冷启动、Agent 交接、机器入口和版本历史都是必须评估的项目表面。实现完成不能替代仓库同步完成；本地验证也不能声称任何未登记的实时外部状态已验证。
   - 来源：`AI-HANDOFF.md`
   - 依赖：—；被引用：—
 - [无限性问题：点火框架处理有限系统内的演化规律\\n2.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
@@ -1364,9 +1469,9 @@
   - 可搜索名称：NFC-d186d31663cc9741 / 版本事实：当前迭代方法为 `1.4.0 Continuous Stage Snapshot Publication`，当前系统图为 `0.6.0`；系统图 `0.5.0`、`0.4.0`、`0.3.0` 与更早版本均为 Historical
   - 来源：`docs/ai-assistant-usage-reference.md`
   - 依赖：—；被引用：—
-- [状态：`0.9.0 Current registry-derived navigation projection`；`0.8.0`、`0.7.0`、`0.6.0`、`0.5.0`、`0.4.0` 与更早版本为 Historical。](../../../docs/architecture/interactive-system-map.md)
+- [状态：`0.11.0 Current registry-derived navigation projection`；`0.10.0`、`0.9.0`、`0.8.0`、`0.7.0`、`0.6.0`、`0.5.0`、`0.4.0` 与更早版](../../../docs/architecture/interactive-system-map.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-64548e1600f4dae8 / 状态：`0.9.0 Current registry-derived navigation projection`；`0.8.0`、`0.7.0`、`0.6.0`、`0.5.0`、`0.4.0` 与更早版本为 Historical。
+  - 可搜索名称：NFC-9136b48744c6aec4 / 状态：`0.11.0 Current registry-derived navigation projection`；`0.10.0`、`0.9.0`、`0.8.0`、`0.7.0`、`0.6.0`、`0.5.0`、`0.4.0` 与更早版
   - 来源：`docs/architecture/interactive-system-map.md`
   - 依赖：—；被引用：—
 - [状态：`CURRENT_BOUNDED_R0_BASE_WITH_R2_PROJECTION_AND_OPEN_OBLIGATIONS`。这仍不构成通用智能、长期自主性、现实因果、生产安全或 `EPISTEMICALLY_ACCEPTED`](../../../docs/architecture/agentization-boundary-r0.md)
@@ -1483,6 +1588,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-00af8df3d18959a2 / 用证据制度、失败类型、pending 机制约束自己。
   - 来源：`docs/author_motivation_and_boundary_note.md`
+  - 依赖：—；被引用：—
+- [由候选 ESI、过渡语法与不越权合同投影出的 advisory reading surface；不增加 L7，不改变 capability、permission 或 epistemic status。](../../../data/architecture/interactive-system-map.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-4c0c223e084e9f12 / 由候选 ESI、过渡语法与不越权合同投影出的 advisory reading surface；不增加 L7，不改变 capability、permission 或 epistemic status。
+  - 来源：`data/architecture/interactive-system-map.json`
   - 依赖：—；被引用：—
 - [由适用组件决定下一行动并生成新的可追溯增量。](../../../data/architecture/interactive-system-map.json)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
@@ -1688,6 +1798,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-87599fba89e379db / 经济学：所有经济因果的具体判定、政策建议
   - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [结构化上下文是“软”的：最多提供可比较的阅读线索、实验路由偏好、遥测或解释辅助。权限、授权、真值、M/E、Owner 状态、外部副作用、安全放行和 `EPISTEMICALLY_ACCEPTED` 仍由各自硬来源与门禁决定。](../../../docs/architecture/esi-human-surface-r0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-8d0fff171ab8c826 / 结构化上下文是“软”的：最多提供可比较的阅读线索、实验路由偏好、遥测或解释辅助。权限、授权、真值、M/E、Owner 状态、外部副作用、安全放行和 `EPISTEMICALLY_ACCEPTED` 仍由各自硬来源与门禁决定。
+  - 来源：`docs/architecture/esi-human-surface-r0.md`
   - 依赖：—；被引用：—
 - [结构命题（如：某个制度导致某个结果）](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
@@ -1911,7 +2026,7 @@
   - 依赖：—；被引用：—
 - [该链由当前迭代操作法 1.4.0 继承并保留声明关系下的变更传播闭包。`substantive_causal_candidate`、`repository_dependency` 与 `synchronization_obligation`](../../../ARCHITECTURE.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-8a9e4c1591ee8cf7 / 该链由当前迭代操作法 1.4.0 继承并保留声明关系下的变更传播闭包。`substantive_causal_candidate`、`repository_dependency` 与 `synchronization_obligation`
+  - 可搜索名称：NFC-162e953a8a7955e4 / 该链由当前迭代操作法 1.4.0 继承并保留声明关系下的变更传播闭包。`substantive_causal_candidate`、`repository_dependency` 与 `synchronization_obligation`
   - 来源：`ARCHITECTURE.md`
   - 依赖：—；被引用：—
 - [误导后续机制生成。](../../../outputs/getbrain/failure-typology-draft-20260706.md)
@@ -2123,6 +2238,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-f73906865b89c873 / 这是 Q26 点火分析的仓库公开副本，不是史学定论、项目当前真值或已完成的外部历史核验。报告把笔记拆为来源、命题、论证、模型、证据、验证、解释和发布边界，并把最强解释降格为可被外部材料检验的机制候选。
   - 来源：`reports/publication/jin-rise-point-fire-analysis.md`
+  - 依赖：—；被引用：—
+- [这是首次发现，或比既有 ICL / priming / task-inference 机制更新颖。](../../../docs/architecture/epistemic-structural-induction-r0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-1e2cb877a4fe5c5e / 这是首次发现，或比既有 ICL / priming / task-inference 机制更新颖。
+  - 来源：`docs/architecture/epistemic-structural-induction-r0.md`
   - 依赖：—；被引用：—
 - [这条成果链同时展示两类写作材料：原始金朝笔记是 `external_input`；Q26 报告对材料生成的机制链、竞争解释、gap、residue 和 claim ceiling 是 `ignition_increment`。Q29／Q29](../../../docs/publication/zhiyuan-writing-examples.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -2383,124 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-cd4cb8fb78a2a558 / 验证结论：**召回层有效，置信度判定需机制级二次层；结构抽取不足是瓶颈**
   - 来源：`outputs/audit/agent-collision-phase-closeout-20260708.md`
-  - 依赖：—；被引用：—
-- [验证自我模型相变需要满足三个标准： **标准1：行为变化标准** Δ_behavior > θ_behavior（拒绝后行为系统性变化） = 校准偏移 + 拒绝一致性变化 + 探索行为变化 三者中至少一个显著 **标准2：不可伪造标准**](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-63e2b8efe99bef76 / 验证自我模型相变需要满足三个标准： **标准1：行为变化标准** Δ_behavior > θ_behavior（拒绝后行为系统性变化） = 校准偏移 + 拒绝一致性变化 + 探索行为变化 三者中至少一个显著 **标准2：不可伪造标准**
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [验证过程：** ChatGPT的每个神经元根据局部输入信息自主决定激活状态，无需中央控制。神经元感知局部输入信号，自主决定激活状态，无需将信息传递给中央节点。](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-55e70877daa24a40 / 验证过程：** ChatGPT的每个神经元根据局部输入信息自主决定激活状态，无需中央控制。神经元感知局部输入信号，自主决定激活状态，无需将信息传递给中央节点。
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证过程：** 人类社会的每个个体遵循简单的行为契约。个体感知社会信息，判定行为后果，响应调整行为策略。无数个体的局部交互，使得社会整体涌现出复杂秩序，如法律、文化、制度等。](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-826f4c85a5084dde / 验证过程：** 人类社会的每个个体遵循简单的行为契约。个体感知社会信息，判定行为后果，响应调整行为策略。无数个体的局部交互，使得社会整体涌现出复杂秩序，如法律、文化、制度等。
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证过程：** 博弈论的每个参与者根据局部信息自主决定策略，无需中央控制。参与者感知局部博弈信息，自主决定策略选择，无需将信息传递给中央节点。](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-2cc83cd00a7796ec / 验证过程：** 博弈论的每个参与者根据局部信息自主决定策略，无需中央控制。参与者感知局部博弈信息，自主决定策略选择，无需将信息传递给中央节点。
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证过程：** 博弈论的每个参与者通过局部策略调整，系统整体涌现出纳什均衡。参与者感知局部博弈信息，调整策略选择，无数参与者的局部调整使得系统整体涌现出纳什均衡。](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-d1c92261f01b061d / 验证过程：** 博弈论的每个参与者通过局部策略调整，系统整体涌现出纳什均衡。参与者感知局部博弈信息，调整策略选择，无数参与者的局部调整使得系统整体涌现出纳什均衡。
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证过程：** 博弈论的每个参与者遵循简单的策略规则。参与者感知博弈信息，判定策略优劣，响应调整策略选择。无数参与者的局部交互，使得系统整体涌现出纳什均衡。](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-dd3bacb1b20356e7 / 验证过程：** 博弈论的每个参与者遵循简单的策略规则。参与者感知博弈信息，判定策略优劣，响应调整策略选择。无数参与者的局部交互，使得系统整体涌现出纳什均衡。
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证过程：** 复杂系统的L1层（组件）→ L2层（子系统）→ L3层（系统）。复杂系统从组件层涌现出子系统层，再从子系统层涌现出系统层。](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-97e5a1218d24cd42 / 验证过程：** 复杂系统的L1层（组件）→ L2层（子系统）→ L3层（系统）。复杂系统从组件层涌现出子系统层，再从子系统层涌现出系统层。
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证过程：** 复杂系统的每个组件通过局部行为调整，系统整体涌现出复杂秩序。组件感知局部状态信息，调整交互行为，无数组件的局部调整使得系统整体涌现出复杂秩序。](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-bdfe9b6aa71e2b6f / 验证过程：** 复杂系统的每个组件通过局部行为调整，系统整体涌现出复杂秩序。组件感知局部状态信息，调整交互行为，无数组件的局部调整使得系统整体涌现出复杂秩序。
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证过程：** 复杂系统的每个组件遵循简单的交互规则。组件感知系统状态，判定交互方式，响应调整交互行为。无数组件的局部交互，使得系统整体涌现出层级结构。](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-b90ce3b1cf868c14 / 验证过程：** 复杂系统的每个组件遵循简单的交互规则。组件感知系统状态，判定交互方式，响应调整交互行为。无数组件的局部交互，使得系统整体涌现出层级结构。
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证过程：** 复杂系统的每个节点根据局部状态信息自主决定行为，无需中央控制。节点感知局部状态信息，自主决定行为，无需将信息传递给中央节点。](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-70d20f1df816ab6f / 验证过程：** 复杂系统的每个节点根据局部状态信息自主决定行为，无需中央控制。节点感知局部状态信息，自主决定行为，无需将信息传递给中央节点。
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证过程：** 复杂系统的系统感知外部环境、调整内部结构、循环递归优化系统性能。系统感知外部信息，调整内部结构，循环递归优化系统性能。](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-6060aca841735cb9 / 验证过程：** 复杂系统的系统感知外部环境、调整内部结构、循环递归优化系统性能。系统感知外部信息，调整内部结构，循环递归优化系统性能。
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证过程：** 复杂系统的系统状态达到纳什均衡，单方面改变状态会降低稳定性。每个组件根据系统状态调整交互行为，最终达到纳什均衡，单个组件单方面改变状态会降低稳定性。](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-5eddcfcea78bff32 / 验证过程：** 复杂系统的系统状态达到纳什均衡，单方面改变状态会降低稳定性。每个组件根据系统状态调整交互行为，最终达到纳什均衡，单个组件单方面改变状态会降低稳定性。
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证过程：** 市场机制的L1层（交易）→ L2层（价格信号）→ L3层（市场秩序）。市场从交易层涌现出价格信号层，再从价格信号层涌现出市场秩序层。](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-2e7a5f0dd267d9b1 / 验证过程：** 市场机制的L1层（交易）→ L2层（价格信号）→ L3层（市场秩序）。市场从交易层涌现出价格信号层，再从价格信号层涌现出市场秩序层。
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证过程：** 市场机制的市场感知供需环境、调整价格信号、循环递归优化资源配置。市场感知供需信息，调整价格信号，循环递归优化资源配置效率。](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-5670a68c21aa94e8 / 验证过程：** 市场机制的市场感知供需环境、调整价格信号、循环递归优化资源配置。市场感知供需信息，调整价格信号，循环递归优化资源配置效率。
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证过程：** 市场机制的每个交易者直接根据价格信息决策，无需中央计划。交易者感知局部价格信息，自主决定交易行为，无需将信息传递给中央计划者。](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-b8120d418c93d915 / 验证过程：** 市场机制的每个交易者直接根据价格信息决策，无需中央计划。交易者感知局部价格信息，自主决定交易行为，无需将信息传递给中央计划者。
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证过程：** 市场机制的每个交易者通过局部价格调整，市场整体涌现出均衡价格。交易者感知局部价格信息，调整交易行为，无数交易者的局部调整使得市场整体涌现出均衡价格。](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-df6657e4dc749199 / 验证过程：** 市场机制的每个交易者通过局部价格调整，市场整体涌现出均衡价格。交易者感知局部价格信息，调整交易行为，无数交易者的局部调整使得市场整体涌现出均衡价格。
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证过程：** 市场机制的每个交易者遵循简单的价格规则。交易者感知价格信息，判定交易机会，响应调整交易行为。无数交易者的局部交互，使得市场整体涌现出均衡价格。](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-e617b1987a8e86bd / 验证过程：** 市场机制的每个交易者遵循简单的价格规则。交易者感知价格信息，判定交易机会，响应调整交易行为。无数交易者的局部交互，使得市场整体涌现出均衡价格。
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证过程：** 开源开发的每个开发者根据局部代码信息自主决定贡献方向，无需中央控制。开发者感知局部代码信息，自主决定贡献方向，无需将信息传递给中央节点。](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-e10dd6206f56a8f2 / 验证过程：** 开源开发的每个开发者根据局部代码信息自主决定贡献方向，无需中央控制。开发者感知局部代码信息，自主决定贡献方向，无需将信息传递给中央节点。
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证过程：** 开源开发的每个开发者遵循简单的协议。开发者感知代码信息，判定贡献方向，响应调整代码贡献。无数开发者的局部交互，使得社区整体涌现出复杂软件。](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-0c6d9bb8cfd2f21a / 验证过程：** 开源开发的每个开发者遵循简单的协议。开发者感知代码信息，判定贡献方向，响应调整代码贡献。无数开发者的局部交互，使得社区整体涌现出复杂软件。
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证过程：** 心智的每个神经元根据局部输入信息自主决定激活，无需中央控制。神经元感知局部输入信号，自主决定激活状态，无需将信息传递给中央节点。](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-cca887ff9871f482 / 验证过程：** 心智的每个神经元根据局部输入信息自主决定激活，无需中央控制。神经元感知局部输入信号，自主决定激活状态，无需将信息传递给中央节点。
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证过程：** 植物智能的每个根尖直接从菌根网络调取养分并决策，无需中央处理器。根尖感知局部土壤信息，自主决定生长方向，无需将信息传递给中央节点。](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-0e9538ce06159e4a / 验证过程：** 植物智能的每个根尖直接从菌根网络调取养分并决策，无需中央处理器。根尖感知局部土壤信息，自主决定生长方向，无需将信息传递给中央节点。
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证过程：** 蚁群社会的每只蚂蚁根据局部信息素信息自主决定路径，无需中央控制。蚂蚁感知局部信息素浓度，自主决定行进方向，无需将信息传递给中央节点。](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-7f5621b39450c18d / 验证过程：** 蚁群社会的每只蚂蚁根据局部信息素信息自主决定路径，无需中央控制。蚂蚁感知局部信息素浓度，自主决定行进方向，无需将信息传递给中央节点。
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [高温超导 — 多门控面共振,Tc远高于单机制预言](../../../data/foundation/evidence/evidence.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-84fa20d79871a8b7 / 高温超导 — 多门控面共振,Tc远高于单机制预言
-  - 来源：`data/foundation/evidence/evidence.jsonl`
-  - 依赖：—；被引用：—
-- [黑死病是加速器。它加速了共享机制的失效。人口锐减，税收减少，汗无法再通过共享收入维持别克们的忠诚。别克们开始各自为政，汗的权威成了空壳。这是内部的共享机制崩溃了。](../../../%E6%96%B0%E6%95%85%E4%BA%8B/0001-S1-%E6%AF%94%E5%88%80%E5%89%91%E6%9B%B4%E6%8C%81%E4%B9%85%E7%9A%84%EF%BC%8C%E6%98%AF%E5%85%B1%E4%BA%AB%E8%A7%82%E5%BF%B5.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-378decdf96abc06f / 黑死病是加速器。它加速了共享机制的失效。人口锐减，税收减少，汗无法再通过共享收入维持别克们的忠诚。别克们开始各自为政，汗的权威成了空壳。这是内部的共享机制崩溃了。
-  - 来源：`新故事/0001-S1-比刀剑更持久的，是共享观念.md`
   - 依赖：—；被引用：—

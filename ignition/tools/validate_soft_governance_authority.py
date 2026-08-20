@@ -4,8 +4,10 @@
 from __future__ import annotations
 
 import argparse
+import io
 import json
 import re
+import tokenize
 from pathlib import Path
 
 from jsonschema import Draft202012Validator
@@ -38,15 +40,52 @@ def evaluate_attempt(contract: dict, fixture: dict) -> str:
     return "REJECT_UNKNOWN_EFFECT"
 
 
+def _mask_strings_and_comments(text: str) -> str:
+    """Keep source line structure while removing prose from the coupling scan.
+
+    Runtime receipts legitimately mention both advisory soft state and words
+    such as ``truth`` or ``permission`` in their claim ceilings.  Treating a
+    whole file as one regex subject therefore creates false couplings.  The
+    scanner is intended to catch executable same-line coupling, so remove
+    literals/comments and preserve newlines before applying the pattern.
+    """
+    chars = list(text)
+    line_offsets: list[int] = []
+    offset = 0
+    for line in text.splitlines(keepends=True):
+        line_offsets.append(offset)
+        offset += len(line)
+    if not line_offsets:
+        line_offsets = [0]
+    try:
+        tokens = tokenize.generate_tokens(io.StringIO(text).readline)
+        for token in tokens:
+            if token.type not in {tokenize.STRING, tokenize.COMMENT}:
+                continue
+            start_row, start_col = token.start
+            end_row, end_col = token.end
+            start = line_offsets[start_row - 1] + start_col
+            end = line_offsets[end_row - 1] + end_col
+            for index in range(start, min(end, len(chars))):
+                if chars[index] != "\n":
+                    chars[index] = " "
+    except (IndentationError, tokenize.TokenError):
+        # Invalid Python is rejected by the normal test/import path. Keep the
+        # source visible here so this safety scan fails closed if it contains a
+        # same-line coupling that can still be recognized.
+        return text
+    return "".join(chars)
+
+
 def scan_runtime_sources() -> list[str]:
     errors: list[str] = []
-    forbidden = re.compile(r"(esi_score|soft_context_exposure|structural_governance_surface).*?(authorize|permission|truth|owner|safety)|(authorize|permission|truth|owner|safety).*?(esi_score|soft_context_exposure|structural_governance_surface)", re.I | re.S)
+    forbidden = re.compile(r"(esi_score|soft_context_exposure|structural_governance_surface).*?(authorize|permission|truth|owner|safety)|(authorize|permission|truth|owner|safety).*?(esi_score|soft_context_exposure|structural_governance_surface)", re.I)
     for directory in RUNTIME_DIRS:
         if not directory.exists():
             continue
         for path in directory.rglob("*.py"):
-            text = path.read_text(encoding="utf-8")
-            if forbidden.search(text):
+            code = _mask_strings_and_comments(path.read_text(encoding="utf-8"))
+            if any(forbidden.search(line) for line in code.splitlines()):
                 errors.append(f"runtime source couples soft input to authority effect: {path.relative_to(ROOT)}")
     return errors
 

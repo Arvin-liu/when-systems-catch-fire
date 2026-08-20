@@ -78,6 +78,26 @@ reconciliation, stale/unsafe health, resource conflict, queue pause and explicit
 checkpoint resume before routine admission. It explains open obligations and
 claim ceilings but is not a second truth source.
 
+## Durability and Lifecycle R3
+
+Task 127 adds a single Durability / Lifecycle component inside the existing
+Ignition OS control spine. It composes the repository-local snapshot-plus-tail
+chain, deterministic compaction, versioned schema migration, namespace and
+delegation isolation, Pack pin/activation/rollback, capability revocation,
+accounting and fairness, operational memory, recovery orchestration and
+disaster-recovery bundle restore. These records preserve lifecycle continuity;
+they do not create a second system map, a Knowledge source, a permission layer
+or an external executor.
+
+Recovery is fail-closed at the boundary that cannot be verified locally:
+tampered, stale, partial, cross-namespace or wrong-epoch state is rejected;
+uncertain external dispatch stops at `REQUIRES_RECONCILIATION`, and automatic
+external re-execution is forbidden. The Step 16 continuity pilot is a
+disposable offline repository fixture with two namespaces and two workspaces;
+its snapshot, migration, revocation, accounting, recovery and DR observations
+are bounded repository evidence, not production durability, exact-once delivery,
+live-provider success, Owner acceptance or epistemic acceptance.
+
 ## Boundaries and evidence
 
 The five-child pilot is a disposable offline repository fixture. It demonstrates

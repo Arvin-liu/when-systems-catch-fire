@@ -499,15 +499,15 @@
   - 可搜索名称：NFC-fc9ced131675a26a / _text\(self.ref, "artifact.ref"\)
   - 来源：`agent_federation/contracts.py`
   - 依赖：—；被引用：—
+- [`0.11.0`（`0.10.0` Historical）和 live ceiling 以 \[`current-facts.json`\]\(../../data/architecture/current-facts.json\)](../../../docs/architecture/external-agent-federation-r1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-214d865efbf7186b / `0.11.0`（`0.10.0` Historical）和 live ceiling 以 \[`current-facts.json`\]\(../../data/architecture/current-facts.json\)
+  - 来源：`docs/architecture/external-agent-federation-r1.md`
+  - 依赖：—；被引用：—
 - [`0.3.0` 修复 0.2.0 仍把方法写成 L6 外接出版工具的问题：之元写作法与点火是维护者声明的同源认知运动在不同约束下形成的候选投影。之元写作法操作上仍位于 L6，却同时承担公共表达和反馈返回接口。review `47138331](../../../docs/publication/zhiyuan-writing-method.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-c7045030fb2d09cd / `0.3.0` 修复 0.2.0 仍把方法写成 L6 外接出版工具的问题：之元写作法与点火是维护者声明的同源认知运动在不同约束下形成的候选投影。之元写作法操作上仍位于 L6，却同时承担公共表达和反馈返回接口。review `47138331
   - 来源：`docs/publication/zhiyuan-writing-method.md`
-  - 依赖：—；被引用：—
-- [`0.9.0`（`0.8.0` Historical）和 live ceiling 以 \[`current-facts.json`\]\(../../data/architecture/current-facts.json\)](../../../docs/architecture/external-agent-federation-r1.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-14b8671a2d5e4194 / `0.9.0`（`0.8.0` Historical）和 live ceiling 以 \[`current-facts.json`\]\(../../data/architecture/current-facts.json\)
-  - 来源：`docs/architecture/external-agent-federation-r1.md`
   - 依赖：—；被引用：—
 - [`ABSTAIN` belongs to reviewer authority. It is separate from the 1241 terminal decisions and records that a scoped revie](../../../docs/architecture/getnote-1329-epistemic-governance-pressure-test.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`

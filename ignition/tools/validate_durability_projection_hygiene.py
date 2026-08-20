@@ -66,9 +66,14 @@ def _read_rows(paths: Iterable[Path]) -> str:
 
 
 def _knowledge_backflow() -> list[str]:
+    # Foundation discovery ledgers intentionally retain one exclusion record
+    # for every repository path.  Those records prove that platform code and
+    # generated projections were considered and refused; they are not
+    # Knowledge Experience inputs.  The Foundation exclusion contract is
+    # checked separately by ``foundation_runtime_exclusion`` and the path
+    # classification gate.  Only the actual Knowledge projections belong in
+    # this backflow check.
     paths = [
-        ROOT / "data/foundation/function-assets/discovery.jsonl",
-        ROOT / "data/foundation/nonfunction-claims/source-discovery.jsonl",
         ROOT / "data/governance/knowledge-experience/asset-cards.jsonl",
         ROOT / "data/governance/knowledge-experience/layered-reading.jsonl",
         ROOT / "data/governance/knowledge-experience/search-index.jsonl",

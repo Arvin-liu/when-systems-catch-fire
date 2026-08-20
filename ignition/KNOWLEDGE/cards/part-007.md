@@ -4,26 +4,6 @@
 
 [返回资产卡总索引](../ASSET-CARDS.md)
 
-<a id="asset-hr-a492aafc18415614"></a>
-## 121Q28T｜之元写作法 0.3.0 Current 收口
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-A492AAFC18415614` · [reports/operations/121Q28T-zhiyuan-writing-method-merge-current-closeout-audit.md](../../reports/operations/121Q28T-zhiyuan-writing-method-merge-current-closeout-audit.md)
-- **为什么产生：** 此来源记录了什么：121Q28T｜之元写作法 0.3.0 Current 收口？
-- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **当前结果：** PR 58 在合并前重新满足全部精确门禁：HEAD 为 19a013719a8e98319004c3b7ad9d0d4b29405351，review 4714216621 接受该精确 HEAD，Foundation、Function OS 与 Pages 三条精确 HEAD CI 成功，PR 可合并且无漂移。随后使用普通 merge commit 合并，merge commit 为 83f15484385d256ea22e443cf2938717cfdd58a0；accepted HEAD 已验证为 main 祖先。
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `reports/operations/121Q28T-zhiyuan-writing-method-merge-current-closeout-audit.md`, `121Q28T-ZHIYUAN-WRITING-METHOD-MERGE-CURRENT-CLOSEOUT-AUDIT`
-- **演化历史：** 2026-07-16: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `121Q28T｜之元写作法 0.3.0 Current 收口`, `121Q28T-zhiyuan-writing-method-merge-current-closeout-audit`
-
 <a id="asset-hr-a53421dea2f6cdca"></a>
 ## 099 Function Asset Registry Closure
 
@@ -316,7 +296,7 @@
 - **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - **依赖：** 无已登记直接依赖
 - **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** `D221`, `NFC-32099ff811b71c26`, `NFC-337b55cb63f246c6`, `NFC-55194adf28f8ddc1`, `NFC-5f340945465877b1`, `NFC-64a6c2658ad0505c`, `NFC-76333be52839438c`, `NFC-85a7b6430641f130`, `NFC-9cb55dfba48f8bef`, `NFC-a74c4c9a3f0087b9`, `NFC-ae6a4cd8d714e912`, `NFC-b6681cf731203727`, `NFC-bc9024ed08373c7b`, `NFC-c0213a52f7f0a783`, `NFC-eb733cbefff9a20d`, `NFC-ef8d291285631441`, `NFC-fc04c5c513ec9600`, `NFC-1c7f3913376c1331`, `NFC-4cd91a6775bc509f`, `NFC-592c63c69895ddc2`, `NFC-74dcd1d655b37df4`, `NFC-750c64bd558fa492`, `NFC-76673a6ab38923ee`, `NFC-94ee4c7c2d853985`, `NFC-a28cf179711d33b6`, `NFC-db570a0984372582`, `D186`, `D190`, `D217`, `D220`, `T16`, `NFC-00242edb2cd91eae`, `NFC-0235b89d6c767e2c`, `NFC-029fee7ec2d002ce`, `NFC-035a9a7b3056d04f`, `NFC-04059e6a3e2e6a8d`, `NFC-048ea42ed275f7fb`, `NFC-04d5cd6c98e4c4a2`, `NFC-05b6282fd465817d`, `NFC-067471830a4827c8`, `… and 40 more; inspect the canonical machine record`
+- **相关文章/资产：** `D221`, `NFC-32099ff811b71c26`, `NFC-337b55cb63f246c6`, `NFC-55194adf28f8ddc1`, `NFC-5f340945465877b1`, `NFC-64a6c2658ad0505c`, `NFC-76333be52839438c`, `NFC-85a7b6430641f130`, `NFC-9cb55dfba48f8bef`, `NFC-a74c4c9a3f0087b9`, `NFC-ae6a4cd8d714e912`, `NFC-b6681cf731203727`, `NFC-bc9024ed08373c7b`, `NFC-c0213a52f7f0a783`, `NFC-eb733cbefff9a20d`, `NFC-ef8d291285631441`, `NFC-fc04c5c513ec9600`, `NFC-1c7f3913376c1331`, `NFC-4cd91a6775bc509f`, `NFC-592c63c69895ddc2`, `NFC-74dcd1d655b37df4`, `NFC-750c64bd558fa492`, `NFC-76673a6ab38923ee`, `NFC-94ee4c7c2d853985`, `NFC-a28cf179711d33b6`, `NFC-db570a0984372582`, `D186`, `D190`, `D217`, `D220`, `T16`, `NFC-00242edb2cd91eae`, `NFC-0235b89d6c767e2c`, `NFC-029fee7ec2d002ce`, `NFC-035a9a7b3056d04f`, `NFC-04059e6a3e2e6a8d`, `NFC-048ea42ed275f7fb`, `NFC-04d5cd6c98e4c4a2`, `NFC-04f37cbce3aa8c41`, `NFC-05b6282fd465817d`, `… and 40 more; inspect the canonical machine record`
 - **来源与证据：** `docs/foundation/nonfunction-claim-adjudication-index.md`, `REPOSITORY_HISTORY_SOURCE`
 - **演化历史：** 2026-07-29: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
 - **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
@@ -1003,3 +983,23 @@
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `MATHEMATICS`, `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `Strong-term audit`, `strong-term-audit-20260712`
+
+<a id="asset-hr-cdbd2a8dabea0396"></a>
+## Canonical Protocol Validation Results
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-CDBD2A8DABEA0396` · [outputs/protocol-canonical-validation-results.md](../../outputs/protocol-canonical-validation-results.md)
+- **为什么产生：** 此来源记录了什么：Canonical Protocol Validation Results？
+- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **当前结果：** generatedat: 2026-07-10T20:50:00+08:00 ｜ count: 12
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `outputs/protocol-canonical-validation-results.md`, `REPOSITORY_HISTORY_SOURCE`
+- **演化历史：** 2026-07-17: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `MATHEMATICS`, `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `Canonical Protocol Validation Results`, `protocol-canonical-validation-results`

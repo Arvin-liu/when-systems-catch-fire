@@ -6,6 +6,26 @@
 
 - [data/foundation/core-systems/protocol-roles.jsonl](../../../data/foundation/core-systems/protocol-roles.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：P04 / data/foundation/core-systems/protocol-roles.jsonl / P04 / P01
+  - 来源：`data/foundation/core-systems/protocol-roles.jsonl`
+  - 依赖：—；被引用：—
+- [data/foundation/core-systems/protocol-roles.jsonl](../../../data/foundation/core-systems/protocol-roles.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：P05 / data/foundation/core-systems/protocol-roles.jsonl / P05 / P01
+  - 来源：`data/foundation/core-systems/protocol-roles.jsonl`
+  - 依赖：—；被引用：—
+- [data/foundation/core-systems/protocol-roles.jsonl](../../../data/foundation/core-systems/protocol-roles.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：P06 / data/foundation/core-systems/protocol-roles.jsonl / P06 / P01
+  - 来源：`data/foundation/core-systems/protocol-roles.jsonl`
+  - 依赖：—；被引用：—
+- [data/foundation/core-systems/protocol-roles.jsonl](../../../data/foundation/core-systems/protocol-roles.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：P07 / data/foundation/core-systems/protocol-roles.jsonl / P07 / P01
+  - 来源：`data/foundation/core-systems/protocol-roles.jsonl`
+  - 依赖：—；被引用：—
+- [data/foundation/core-systems/protocol-roles.jsonl](../../../data/foundation/core-systems/protocol-roles.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：P08 / data/foundation/core-systems/protocol-roles.jsonl / P08 / P01
   - 来源：`data/foundation/core-systems/protocol-roles.jsonl`
   - 依赖：—；被引用：—
@@ -174,6 +194,11 @@
   - 可搜索名称：NFC-f98f08c5197613b0 / Draft Pages 只构建和检查 artifact，不部署生产。精确 candidate HEAD、Foundation、Function OS、Pages artifact 中 `system-map.html`／SVG 以及 111
   - 来源：`reports/operations/121Q31-interactive-system-map-and-writing-source-pool-audit.md`
   - 依赖：—；被引用：—
+- [Durability / Lifecycle evidence is repository-local continuity and recovery evidence only; schema migration, snapshot re](../../../data/architecture/current-system-identity.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-accb1092b1236edf / Durability / Lifecycle evidence is repository-local continuity and recovery evidence only; schema migration, snapshot re
+  - 来源：`data/architecture/current-system-identity.json`
+  - 依赖：—；被引用：—
 - [E1 规范性审核 - 线性演化协议 \(Linear-Evolution Protocol\)](../../ASSET-CARDS.md#asset-hr-8f6026df1ef643fe)
   - 类型/状态：`RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
   - 可搜索名称：E1 规范性审核 - 线性演化协议 \(Linear-Evolution Protocol\) / E1
@@ -259,6 +284,11 @@
   - 可搜索名称：NFC-18271fc08919b145 / epistemic_state: `CURRENT_WITH_OPEN_OBLIGATIONS` and `EPISTEMICALLY_ACCEPTED=0` remain unchanged. Adapter fixtures, adve
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
+- [epistemic_state: `CURRENT_WITH_OPEN_OBLIGATIONS` and `EPISTEMICALLY_ACCEPTED=0` remain unchanged. Candidate definitions,](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-8628493dbed512b2 / epistemic_state: `CURRENT_WITH_OPEN_OBLIGATIONS` and `EPISTEMICALLY_ACCEPTED=0` remain unchanged. Candidate definitions,
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [epistemic_state: `CURRENT_WITH_OPEN_OBLIGATIONS` and `EPISTEMICALLY_ACCEPTED=0` remain unchanged. Deterministic generato](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-71247d9e1fcb9f79 / epistemic_state: `CURRENT_WITH_OPEN_OBLIGATIONS` and `EPISTEMICALLY_ACCEPTED=0` remain unchanged. Deterministic generato
@@ -279,6 +309,16 @@
   - 可搜索名称：NFC-a9da52aedd653308 / epistemic_state: R2 tests, validators, Pack load, checkpoint/resume, operational memory and offline pilot are repository
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
+- [ESI 在真实模型中存在或具有因果效应；](../../../docs/architecture/epistemic-structural-induction-r0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-00ec0844850b116e / ESI 在真实模型中存在或具有因果效应；
+  - 来源：`docs/architecture/epistemic-structural-induction-r0.md`
+  - 依赖：—；被引用：—
+- [establish ESI, durability, transfer, causality, external validity or authority.](../../../reports/operations/ignition-126-progress.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-bac2ca0703bfaf56 / establish ESI, durability, transfer, causality, external validity or authority.
+  - 来源：`reports/operations/ignition-126-progress.md`
+  - 依赖：—；被引用：—
 - [Established causal claims retained: 0; causal/mechanism candidates are downgraded unless evidence thresholds are met.](../../../data/architecture/causal-asset-inventory.json)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-08fd94174aa49d9c / Established causal claims retained: 0; causal/mechanism candidates are downgraded unless evidence thresholds are met.
@@ -293,6 +333,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-4315ba3ab34e7768 / Estimating causal effects of treatments in randomized and nonrandomized studies.
   - 来源：`data/external-research/088-external-source-atlas-v1.jsonl`
+  - 依赖：—；被引用：—
+- [Even a passing local fixture run would establish only bounded offline scoring behavior. It would not establish external](../../../docs/architecture/esi-literature-boundary-r0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-3c36216e0c16361b / Even a passing local fixture run would establish only bounded offline scoring behavior. It would not establish external
+  - 来源：`docs/architecture/esi-literature-boundary-r0.md`
   - 依赖：—；被引用：—
 - [Evidence and governance have separate literatures; this pass found no direct independent study showing that evidence tra](../../../reports/external-research/pointfire-getnote-external-verification-r1-20260813.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
@@ -2299,6 +2344,11 @@
   - 可搜索名称：NFC-f0f1115ae6efb142 / Object T18 defines a mechanism_model within the point-fire framework. Core expression: 容斥项可映射到Ising模型的J-K竞争：容斥项 = Σᵢⱼ Jᵢ
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：T18；被引用：—
+- [obligations: live-provider evidence remains `NOT_RUN_LIVE_EXTERNAL`; independent replication, cross-domain/delayed-trans](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-688bcc32751313d7 / obligations: live-provider evidence remains `NOT_RUN_LIVE_EXTERNAL`; independent replication, cross-domain/delayed-trans
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [OBS --> M1\[M1 行动后机制裁决\]](../../../ARCHITECTURE.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-0b6c0f4b8dd3717c / OBS --> M1\[M1 行动后机制裁决\]
@@ -2453,54 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-a216b0033ee4fede / PR mergeability and CI success should remain workflow signals, not acceptance or truth.
   - 来源：`reports/atlas/121Q14-dynamic-atlas.md`
-  - 依赖：—；被引用：—
-- [Prediction**: What the system predicts \(true/false/contradiction/pending\).](../../../docs/falsifiability/README.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-f9f6a64d601fed17 / Prediction**: What the system predicts \(true/false/contradiction/pending\).
-  - 来源：`docs/falsifiability/README.md`
-  - 依赖：—；被引用：—
-- [Prediction**：系统可能会输出 `true`，依据多个成功案例（工业革命、互联网革命）推断技术与增长之间具有强正向因果关系。](../../../case_failures/examples/technology_economic_growth_failure.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-cf5492958191e0f2 / Prediction**：系统可能会输出 `true`，依据多个成功案例（工业革命、互联网革命）推断技术与增长之间具有强正向因果关系。
-  - 来源：`case_failures/examples/technology_economic_growth_failure.md`
-  - 依赖：—；被引用：—
-- [Prediction**：系统可能默认跨领域“碰撞”带来创新与价值，输出 `true`。](../../../case_failures/examples/cross_domain_synergy_risk.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-7bad6ea000c9b42c / Prediction**：系统可能默认跨领域“碰撞”带来创新与价值，输出 `true`。
-  - 来源：`case_failures/examples/cross_domain_synergy_risk.md`
-  - 依赖：—；被引用：—
-- [Principles and Applications of Refinement Types](../../../data/external-research/120-function-paradigm-atlas/120-function-paradigm-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-efab8bdf6ac3d1bf / Principles and Applications of Refinement Types
-  - 来源：`data/external-research/120-function-paradigm-atlas/120-function-paradigm-cards.jsonl`
-  - 依赖：—；被引用：—
-- [print\("\\n\[5\] Checking evidence tier distribution..."\)](../../../data/external-research/120-function-paradigm-atlas/120-validator.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-dd528a2c4291c34b / print\("\\n\[5\] Checking evidence tier distribution..."\)
-  - 来源：`data/external-research/120-function-paradigm-atlas/120-validator.py`
-  - 依赖：—；被引用：—
-- [Probabilistic programs as a unifying language of thought](../../../data/external-research/120-function-paradigm-atlas/120-function-paradigm-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-63e07f1d445da0e0 / Probabilistic programs as a unifying language of thought
-  - 来源：`data/external-research/120-function-paradigm-atlas/120-function-paradigm-cards.jsonl`
-  - 依赖：—；被引用：—
-- [Probabilistic System Dynamics \(PSD\) extends the Multiscale Causal Fabric with first-class probability semantics and syst](../../../docs/architecture/probabilistic-system-dynamics.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-6a68ad56c8c0bfdf / Probabilistic System Dynamics \(PSD\) extends the Multiscale Causal Fabric with first-class probability semantics and syst
-  - 来源：`docs/architecture/probabilistic-system-dynamics.md`
-  - 依赖：—；被引用：—
-- [Probabilistic System Dynamics / 概率—系统动力学](../../ASSET-CARDS.md#asset-hr-c023e21ce9a8a6d4)
-  - 类型/状态：`RESULT_OR_ARTICLE` · `CANDIDATE_OR_PENDING_SOURCE`
-  - 可搜索名称：Probabilistic System Dynamics / 概率—系统动力学 / probabilistic-system-dynamics
-  - 来源：`docs/architecture/probabilistic-system-dynamics.md`
-  - 依赖：—；被引用：—
-- [Program examples and cited prior systems show artifact shape, while this paper releases no synthesized scientific progra](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-54c1c2c99cab92d0 / Program examples and cited prior systems show artifact shape, while this paper releases no synthesized scientific progra
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
-  - 依赖：—；被引用：—
-- [Program-generating meta-programs and library learning suggest generators, but no compiler or neural function transformat](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-b1801132f5985643 / Program-generating meta-programs and library learning suggest generators, but no compiler or neural function transformat
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
   - 依赖：—；被引用：—

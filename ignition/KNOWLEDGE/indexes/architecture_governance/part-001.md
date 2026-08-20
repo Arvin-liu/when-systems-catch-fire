@@ -2294,6 +2294,11 @@
   - 可搜索名称：NFC-6974325bcde7d0df / \[item\["artifact_id"\] for item in case\["artifact_refs"\]\],
   - 来源：`reos_vnext/kernel.py`
   - 依赖：—；被引用：—
+- [\[Lee, Scheinberg, and Agrawal, “Do Language Models Show Structural Priming Across Different Domains?”\]\(https://aclanthol](../../../docs/architecture/esi-literature-boundary-r0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-b28d0fe8dc2dd771 / \[Lee, Scheinberg, and Agrawal, “Do Language Models Show Structural Priming Across Different Domains?”\]\(https://aclanthol
+  - 来源：`docs/architecture/esi-literature-boundary-r0.md`
+  - 依赖：—；被引用：—
 - [\[OPEN-QUESTIONS.md\]\(./OPEN-QUESTIONS.md\)：未解决问题、所需证据和停止条件。](../../../RESULTS/README.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-09c9100f483848f4 / \[OPEN-QUESTIONS.md\]\(./OPEN-QUESTIONS.md\)：未解决问题、所需证据和停止条件。
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-8bf4cbe0d8c88757 / `121-fulltext-evidence-cards.jsonl`: one line per full-text-reviewed source.
   - 来源：`docs/external-research/legal-fulltext-resolution-protocol.md`
-  - 依赖：—；被引用：—
-- [`A_intervention^\(2\)\(d\) ∝ p*\(√d-1\)/d`，在 `d≈4` 时最大；这意味着 `d=4` 同时对应“最稳定”与“最可修复”的双重最优。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-780b90ae1edaf7b6 / `A_intervention^\(2\)\(d\) ∝ p*\(√d-1\)/d`，在 `d≈4` 时最大；这意味着 `d=4` 同时对应“最稳定”与“最可修复”的双重最优。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—

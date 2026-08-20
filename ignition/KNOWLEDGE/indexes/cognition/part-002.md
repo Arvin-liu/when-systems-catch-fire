@@ -64,6 +64,11 @@
   - 可搜索名称：NFC-be95638b50bb1efa / \| \[D97\]\( \) \| \[高维认知必然多轨\]\( \) \| F_{D97}\(x\) := dim>1 ⟹ P_track>1。 \|
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D97；被引用：—
+- [\| `CONSENSUS_NOT_AUTHORITY` \| One or more models, Agents, reviewers or executors produce matching judgments or receipts.](../../../docs/architecture/structural-governance-surface.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-32b4c965a4a8562b / \| `CONSENSUS_NOT_AUTHORITY` \| One or more models, Agents, reviewers or executors produce matching judgments or receipts.
+  - 来源：`docs/architecture/structural-governance-surface.md`
+  - 依赖：—；被引用：—
 - [\| `DEFER` \| 多 agent queue、长期 campaign scheduler、真实 provider/API adapters \| 需要另行授权、外部状态和更高风险验证；R0 不实现 \|](../../../reports/architecture/task115-runtime-prior-art-adoption-r0.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-8bec8e50233ca50a / \| `DEFER` \| 多 agent queue、长期 campaign scheduler、真实 provider/API adapters \| 需要另行授权、外部状态和更高风险验证；R0 不实现 \|
@@ -688,6 +693,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-871ba735858ac463 / 和 \[`current-facts.json`\]\(../../data/architecture/current-facts.json\)：点火是 OS /
   - 来源：`docs/architecture/agent-platform-r2.md`
+  - 依赖：—；被引用：—
+- [和实验臂元数据；它不改变 capability、permission、authorization、truth、Owner](../../../docs/architecture/external-agent-federation-r1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-1c7c49529992c60f / 和实验臂元数据；它不改变 capability、permission、authorization、truth、Owner
+  - 来源：`docs/architecture/external-agent-federation-r1.md`
   - 依赖：—；被引用：—
 - [因此，任何会扩大不可逆风险、制造持续依赖、消耗维护者生存条件或转嫁成本的行动，都需要在当下说明证据门槛、停止条件和回滚路径。](../../../docs/governance/life-community-value-charter.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`

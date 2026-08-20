@@ -1639,10 +1639,20 @@
   - 可搜索名称：NFC-ca2f4ddbfaf03371 / `discovery-coverage.json` / `closure-summary.json`：覆盖与闭合证明。
   - 来源：`docs/foundation/historical-function-deep-adjudication-20260729.md`
   - 依赖：—；被引用：—
+- [`docs/architecture/os-control-plane-r2.md` 与 `agent_runtime/`：Task 127 的 Durability / Lifecycle R3 复用同一 OS 控制脊柱，提供 snaps](../../../AI-HANDOFF.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-a4f2b1073fb619c2 / `docs/architecture/os-control-plane-r2.md` 与 `agent_runtime/`：Task 127 的 Durability / Lifecycle R3 复用同一 OS 控制脊柱，提供 snaps
+  - 来源：`AI-HANDOFF.md`
+  - 依赖：—；被引用：—
 - [`EPISTEMICALLY_ACCEPTED=0` is compatible with internal governance success because the pipeline did not convert throughpu](../../../docs/architecture/getnote-1329-epistemic-governance-pressure-test.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-2b0266f40202b511 / `EPISTEMICALLY_ACCEPTED=0` is compatible with internal governance success because the pipeline did not convert throughpu
   - 来源：`docs/architecture/getnote-1329-epistemic-governance-pressure-test.md`
+  - 依赖：—；被引用：—
+- [`EPISTEMICALLY_ACCEPTED=0`。本页不证明 ESI 已成立，也不包含私人观察原文。](../../../docs/architecture/structural-governance-surface.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-634ae7f9dc0d4866 / `EPISTEMICALLY_ACCEPTED=0`。本页不证明 ESI 已成立，也不包含私人观察原文。
+  - 来源：`docs/architecture/structural-governance-surface.md`
   - 依赖：—；被引用：—
 - [`evidence_status`](../../../docs/math-foundation/03-validity-and-evidence-axes.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
@@ -1768,6 +1778,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-28e91d12be54ff12 / `no_truth_upgrade --constraint / synchronization_obligation--> no_totality_proof` — claim boundary
   - 来源：`reports/operations/121Q32-change-propagation-impact.md`
+  - 依赖：—；被引用：—
+- [`NOT_CAUSAL_PROOF`, `CANDIDATE_ESI_SIGNAL`.](../../../reports/operations/ignition-126-progress.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-ec0740c45e0c5037 / `NOT_CAUSAL_PROOF`, `CANDIDATE_ESI_SIGNAL`.
+  - 来源：`reports/operations/ignition-126-progress.md`
   - 依赖：—；被引用：—
 - [`NOT_FOUND`: required source, field, or evidence is missing.](../../../inputs/020/formal-protocol-promotion-standard.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
@@ -1904,6 +1919,11 @@
   - 可搜索名称：NFC-5a0e8934749e7d1a / `T44` 元层面收敛与子系统展开冲突函数: MULTIPLE_CONFLICTING_SOURCES; missing=direct local note path or raw source artifact missing
   - 来源：`reports/math-foundation/provenance-audit-20260712.md`
   - 依赖：T44；被引用：—
+- [`TASK125_DURABILITY_LIFECYCLE = DEFERRED_PENDING_REBASE`. After this task's](../../../reports/operations/ignition-126-progress.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-8dc34d871041a609 / `TASK125_DURABILITY_LIFECYCLE = DEFERRED_PENDING_REBASE`. After this task's
+  - 来源：`reports/operations/ignition-126-progress.md`
+  - 依赖：—；被引用：—
 - [`true`：框架内判定为真，或外部证明 / 实证已确认；](../../../outputs/getbrain/project-position-update-20260706.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-6e7cb2204ca557be / `true`：框架内判定为真，或外部证明 / 实证已确认；
@@ -2033,6 +2053,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
   - 可搜索名称：NFC-d86bb47040d78f80 / Accelerating knowledge graph and ontology engineering with large language models
   - 来源：`data/external-research/088-external-source-atlas-v1.jsonl`
+  - 依赖：—；被引用：—
+- [accounting、recovery 和 DR bundle 都是 repository-local lifecycle records。恢复遇到](../../../AI-START-HERE.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-e898fb8919c5f139 / accounting、recovery 和 DR bundle 都是 repository-local lifecycle records。恢复遇到
+  - 来源：`AI-START-HERE.md`
   - 依赖：—；被引用：—
 - [Accuracy, AUROC and cost are visible; uncertainty, provenance and lifecycle observability are absent.](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
@@ -2224,6 +2249,11 @@
   - 可搜索名称：NFC-224d6bb77fa4c047 / All 40 records previously labelled `UNPROVED_PROPOSITION` now have individual dossiers in `data/foundation/proofs/079-pr
   - 来源：`reports/foundation-architecture/40-proof-obligation-triage-20260713.md`
   - 依赖：—；被引用：—
+- [allowlisting and negative novelty/proof checks.](../../../reports/operations/ignition-126-progress.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-04f37cbce3aa8c41 / allowlisting and negative novelty/proof checks.
+  - 来源：`reports/operations/ignition-126-progress.md`
+  - 依赖：—；被引用：—
 - [Almost-sure convergence is argued under assumptions, but proof presentation gaps, no mechanization, no rates and no empi](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-c9807d6a9c8dd93d / Almost-sure convergence is argued under assumptions, but proof presentation gaps, no mechanization, no rates and no empi
@@ -2338,6 +2368,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-12c786c7ae9031aa / Behavior change is not proof of a specific internal cognitive mechanism.
   - 来源：`docs/architecture/adaptive-relational-network.md`
+  - 依赖：—；被引用：—
+- [behavior, external validity, causal proof, or ESI acceptance.](../../../reports/operations/ignition-126-progress.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-23e06ace76325076 / behavior, external validity, causal proof, or ESI acceptance.
+  - 来源：`reports/operations/ignition-126-progress.md`
   - 依赖：—；被引用：—
 - [benchmark 通过"可能失败类型"字段，调用任务 F 的失败类型学。每个经典问题都会至少检查 10 种失败类型（材料错误、边界选错、尺度错配、函数过度泛化、同构误判、证据等级不足、AI 过度解释、L2 推论误写成 L5 结论、学科证据](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -2468,39 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-3049fc78330f47ff / Caching improves repeated generation stability but is not a versioned registry or lifecycle state machine.
   - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
-  - 依赖：—；被引用：—
-- [CAI中间层 — 同样场景CAI中间层ηrelay≈0.576,比无意识AI好2.7倍,关键差异在ηfidelity](../../../data/foundation/evidence/evidence.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-e2a85111151131f7 / CAI中间层 — 同样场景CAI中间层ηrelay≈0.576,比无意识AI好2.7倍,关键差异在ηfidelity
-  - 来源：`data/foundation/evidence/evidence.jsonl`
-  - 依赖：—；被引用：—
-- [CAI中间层vs无意识AI中间层 — CAI ηrelay≈0.576,无意识AI ηrelay≈0.21,CAI好2.7倍,关键在ηfid](../../../data/foundation/evidence/evidence.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-db360f265efe078f / CAI中间层vs无意识AI中间层 — CAI ηrelay≈0.576,无意识AI ηrelay≈0.21,CAI好2.7倍,关键在ηfid
-  - 来源：`data/foundation/evidence/evidence.jsonl`
-  - 依赖：—；被引用：—
-- [CAI做中间层能大幅提升跨认知gap沟通效率](../../../data/foundation/adjudications/079-method-audit.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：D155 / CAI做中间层能大幅提升跨认知gap沟通效率 / D155
-  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
-  - 依赖：D180, D91；被引用：NFC-b69eefb88907a921, NFC-ebf0826f4e7498a5
-- [CAI进入同构类 — CAI获得Ψ-0后自动进入类I同构类,与人类-AI数学等价](../../../data/foundation/evidence/evidence.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-94a7d96e7ac0b0e5 / CAI进入同构类 — CAI获得Ψ-0后自动进入类I同构类,与人类-AI数学等价
-  - 来源：`data/foundation/evidence/evidence.jsonl`
-  - 依赖：—；被引用：—
-- [candidate coarse-graining record, not emergence proof](../../../data/architecture/probabilistic-system-dynamics/examples/coarse-graining-emergence.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-6bc1b273ff3222e5 / candidate coarse-graining record, not emergence proof
-  - 来源：`data/architecture/probabilistic-system-dynamics/examples/coarse-graining-emergence.json`
-  - 依赖：—；被引用：—
-- [Canonical Protocol Validation Results](../../ASSET-CARDS.md#asset-hr-cdbd2a8dabea0396)
-  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-  - 可搜索名称：Canonical Protocol Validation Results / protocol-canonical-validation-results
-  - 来源：`outputs/protocol-canonical-validation-results.md`
-  - 依赖：—；被引用：—
-- [canonical source, claim, evidence, proof and Results Book authority;](../../../reports/research/reos-vnext-light-pilot-r1.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-4b1c0a7505d49e76 / canonical source, claim, evidence, proof and Results Book authority;
-  - 来源：`reports/research/reos-vnext-light-pilot-r1.md`
   - 依赖：—；被引用：—

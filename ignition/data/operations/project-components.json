@@ -1912,8 +1912,20 @@
       "lifecycle": {"source": "agent_runtime/driver_console.py", "status": "current", "version": "R2"},
       "map_projection": {"group": "os_spine", "visible": true},
       "path_patterns": ["agent_runtime/driver_console.py", "tools/driver_console.py", "tests/test_driver_console.py"]
+    },
+    {
+      "authority": "canonical",
+      "canonical_target": "docs/architecture/os-control-plane-r2.md#Durability and Lifecycle R3",
+      "component_id": "durability_lifecycle_r3",
+      "component_type": "operation_control",
+      "description": "Repository-local durability and lifecycle spine for snapshot plus tail, compaction, schema migration, namespace isolation, Pack lifecycle, revocation, accounting, recovery orchestration and disaster-recovery bundles; uncertain external effects stop at reconciliation and are never rerun automatically.",
+      "label": "Durability / Lifecycle R3",
+      "layer_or_overlay": "overlay",
+      "lifecycle": {"source": "data/operations/durability/continuity-pilot-r1.json", "status": "current", "version": "R3"},
+      "map_projection": {"group": "os_spine", "visible": true},
+      "path_patterns": ["agent_runtime/durability.py", "agent_runtime/recovery.py", "agent_runtime/dr_bundle.py", "agent_runtime/pilots/durability_lifecycle_127.py", "data/operations/durability/", "schemas/operations/durability-", "tools/validate_durability_", "tests/test_durability_"]
     }
   ],
   "purpose": "Canonical project-component identity, target and lifecycle registry for declared change propagation and system-map projection; it does not establish real-world causality.",
-  "registry_version": "1.9.0"
+  "registry_version": "2.0.0"
 }

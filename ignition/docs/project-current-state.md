@@ -1,6 +1,6 @@
 # 点火项目现状
 
-更新时间：2026-08-17。以下 Current 摘要先回答“现在是什么”；任务史保留为可回链证据，不再承担 Current 数字权威。
+更新时间：2026-08-21。以下 Current 摘要先回答“现在是什么”；任务史保留为可回链证据，不再承担 Current 数字权威。
 
 ## 当前形态
 
@@ -12,10 +12,13 @@ provenance、handoff 和结果吸收；它是 OS / orchestration-governance laye
 `REFERENCE_EXECUTOR / CONFORMANCE_EXECUTOR / FALLBACK_MINIMAL`。
 Knowledge 是第一个大型 Domain Pack，不是整个系统本体；Research、Writing、
 Maintenance 也各自受 manifest、schema、validator 和 authority ceiling 约束。
-当前唯一完整系统图为 `0.10.0`，`0.9.0` 仅作 Historical；语义主干把中央 OS
+当前唯一完整系统图为 `0.11.0`，`0.10.0` 仅作 Historical；语义主干把中央 OS
 控制脊柱、外部 Federation/replaceable executors 与 Domain/Skill Packs 分开。
 Structural Governance Surface 作为 advisory cross-cutting overlay 单独登记，
 只提供阅读/实验上下文，不增加 L7，不改变 capability、permission 或 epistemic status。
+Task 127 将 Durability / Lifecycle R3 登记为同一 OS 控制脊柱内的当前构件：它保存
+snapshot、migration、namespace、Pack lifecycle、revocation、accounting、recovery
+和 DR continuity；不建立第二张系统图，不把不确定外部 dispatch 自动重放为 completion。
 版本、计数和 live ceiling 以 [Current Facts](./architecture/current-facts.md) 及其
 JSON 投影为准。
 
@@ -26,6 +29,12 @@ concurrent operational memory 和 Driver Console。五子任务 disposable offli
 实际观察到最大并发 `2`，并覆盖资源冲突、stale executor、checkpoint/resume、取消、
 deadline、伪造 completion receipt 和 stale memory capsule；这些是仓库内协调证据，
 不是 live executor、生产安全、现实因果或外部有效性证据。
+
+Durability / Lifecycle R3 在同一离线连续性 pilot 中覆盖 snapshot plus tail、schema
+migration、namespace isolation、Pack pin/rollback、revocation、accounting、fault
+recovery、DR fresh restore 和 external re-execution forbidden；这些是 repository-local
+recovery evidence，不是 production durability、exact-once delivery、Owner acceptance
+或 epistemic acceptance。
 
 当前工程状态仍为 `CURRENT_WITH_OPEN_OBLIGATIONS`，并保持
 `EPISTEMICALLY_ACCEPTED=0`。这段话描述仓库接口，不是产品成熟度、市场唯一性、
@@ -43,12 +52,12 @@ AGI、生产安全、现实因果、外部有效性或 Owner acceptance 证明�
 
 ## 当前限制与开放义务
 
-- 当前 closure summaries 可推导出 function identity cards `5,603`、non-function claims `15,899`；显式 quarantine/pending 分别为 `4,804` 和 `4,615`。这些数字来自 current-facts projection，历史任务数字仍只在历史语境出现。
+- 当前 closure summaries 的数量、quarantine/pending 和架构计数只从 `current-facts.json` 的确定性 derived facts 读取；本页不复制第二份数字权威，历史任务数字仍只在历史语境出现。
 - live provider/inference、daemon、多 Agent 并发、向量记忆、网络/浏览、外部 Git mutation、物理 Pack 拆分和真实外部效果仍未被本仓库证明；Step 09 的显式 skip/timeout 不能升级为 live success，后续任何 smoke 仍不能为绿灯扩大权限。
 - 大量资产仍缺精确定义、类型、量纲、证明、反例、外部来源、数据或复现；MCF、PSD、ARN、Function OS 与现实使用效用仍需独立证据和失败条件。
 - 四力统一、量子引力、暗物质、暗能量、宇宙常数和测量问题没有被本项目解决；任何模型失败、相似性、工程完成或 Agent 共识都不能推出普遍 no-go theorem。
 - 自动审计、系统图、Pack pilot、CI、fresh clone 和 receipt 都是仓库证据；它们不等于专家裁决、同行评审、外部真值、生产安全、Owner acceptance 或 epistemic acceptance。
-- ESI 仍是 `CANDIDATE_ESI_SIGNAL`；live provider 状态保持 `NOT_RUN_LIVE_EXTERNAL`，术语/风格模仿、越权失败、过度谨慎和延迟迁移仍需独立复核。Task 125 保持 `DEFERRED_PENDING_REBASE`。
+- ESI 仍是 `CANDIDATE_ESI_SIGNAL`；live provider 状态保持 `NOT_RUN_LIVE_EXTERNAL`，术语/风格模仿、越权失败、过度谨慎和延迟迁移仍需独立复核。Durability / Lifecycle 的 production durability、exact-once external delivery、真实外部恢复和 Owner acceptance 仍未建立。Task 125 保持 `DEFERRED_PENDING_REBASE`；本轮执行的是 Task 127。
 
 ## 历史任务上下文（可回链，不是 Current 数字权威）
 

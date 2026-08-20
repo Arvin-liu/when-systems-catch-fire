@@ -269,6 +269,11 @@
   - 可搜索名称：IMPLICIT-663C627DE0D9779C / "title": "Conditional LoRA Parameter Generation", / IMPLICIT-663C627DE0D9779C
   - 来源：`data/external-research/121-fulltext-resolver/121cn/121cn-step-007-S120-013-repair.json`
   - 依赖：—；被引用：—
+- ["title": "Do Language Models Show Structural Priming Across Different Domains?",](../../../data/epistemic-governance/literature-boundary-r0.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-584055852935B8D7 / "title": "Do Language Models Show Structural Priming Across Different Domains?", / IMPLICIT-584055852935B8D7
+  - 来源：`data/epistemic-governance/literature-boundary-r0.json`
+  - 依赖：—；被引用：—
 - ["title": "Editing Models with Task Arithmetic \(CORRECT\)",](../../../data/external-research/121-fulltext-resolver/121q2/acceptance/S120-045.json)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-E4FFDE9BBB055C06 / "title": "Editing Models with Task Arithmetic \(CORRECT\)", / IMPLICIT-E4FFDE9BBB055C06
@@ -838,6 +843,11 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-FC882B97B8B9CDC0 / "title": "Semantics for probabilistic programming: higher-order functions, continuous distributions, and soft constraints", / IMPLICIT-FC882B97B8B9CDC0 / IMPLICIT-03A9FA5162C65A47
   - 来源：`data/external-research/121-fulltext-resolver/121q2/family-synthesis/F9.json`
+  - 依赖：—；被引用：—
+- ["title": "Structural Persistence in Language Models: Priming as a Window into Abstract Language Representations",](../../../data/epistemic-governance/literature-boundary-r0.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-25C4F76F10DA52DF / "title": "Structural Persistence in Language Models: Priming as a Window into Abstract Language Representations", / IMPLICIT-25C4F76F10DA52DF
+  - 来源：`data/epistemic-governance/literature-boundary-r0.json`
   - 依赖：—；被引用：—
 - ["title": "This iteration does not deep-review all 2,033 discovered assets, prove the census exhaustive outside tracked textual Git",](../../../analysis/corpus-relation/corpus_relation_graph.json)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -1438,6 +1448,11 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-970F4EC41B37A041 / ## Operational Surface / IMPLICIT-970F4EC41B37A041
   - 来源：`docs/architecture/adaptive-relational-network.md`
+  - 依赖：—；被引用：—
+- [## OS/Federation ownership](../../../docs/architecture/soft-context-exposure-contract-r0.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-7D4ABCA1B20020F4 / ## OS/Federation ownership / IMPLICIT-7D4ABCA1B20020F4
+  - 来源：`docs/architecture/soft-context-exposure-contract-r0.md`
   - 依赖：—；被引用：—
 - [## Phase 5: Function OS Nine Nodes](../../../reports/external-research/121c01-max-semantic-review-batch-01.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -2488,19 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-6B887CBD6FD75DC1 / ### MF-0005 自举收敛判定器 / IMPLICIT-6B887CBD6FD75DC1
   - 来源：`reports/math-foundation/pilot-formal-audit-20260712.md`
-  - 依赖：—；被引用：—
-- [### N06｜生成能力为何会制造证据赤字](../../../data/operations/iterations/112/publication/r0-original/notes/%E7%82%B9%E7%81%AB%E7%A0%94%E7%A9%B6%E7%AC%94%E8%AE%B0-%E7%AC%AC%E4%B8%80%E8%BE%91.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-BD755F360DB72770 / ### N06｜生成能力为何会制造证据赤字 / IMPLICIT-BD755F360DB72770
-  - 来源：`data/operations/iterations/112/publication/r0-original/notes/点火研究笔记-第一辑.md`
-  - 依赖：—；被引用：—
-- [### N41｜Function OS 的小世界为何必要](../../../data/operations/iterations/112/publication/r0-original/notes/%E7%82%B9%E7%81%AB%E7%A0%94%E7%A9%B6%E7%AC%94%E8%AE%B0-%E7%AC%AC%E4%B8%80%E8%BE%91.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-13F655E96C11D8AC / ### N41｜Function OS 的小世界为何必要 / IMPLICIT-13F655E96C11D8AC
-  - 来源：`data/operations/iterations/112/publication/r0-original/notes/点火研究笔记-第一辑.md`
-  - 依赖：—；被引用：—
-- [### N42｜第一失败比平均成功率有解释力](../../../data/operations/iterations/112/publication/r0-original/notes/%E7%82%B9%E7%81%AB%E7%A0%94%E7%A9%B6%E7%AC%94%E8%AE%B0-%E7%AC%AC%E4%B8%80%E8%BE%91.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-E4D6D5A3CD0363D5 / ### N42｜第一失败比平均成功率有解释力 / IMPLICIT-E4D6D5A3CD0363D5
-  - 来源：`data/operations/iterations/112/publication/r0-original/notes/点火研究笔记-第一辑.md`
   - 依赖：—；被引用：—

@@ -7,12 +7,12 @@
 [`current-facts.json`](data/architecture/current-facts.json) 为准：点火是 OS /
 orchestration-governance layer 与 driver，外部 Agent 是可替换 executors，Knowledge
 是第一个大型 Domain Pack，本地层冻结为 `REFERENCE_EXECUTOR / CONFORMANCE_EXECUTOR /
-FALLBACK_MINIMAL`。当前唯一完整系统图为 `0.10.0`，`0.9.0` 及更早版本仅作 Historical；
+FALLBACK_MINIMAL`。当前唯一完整系统图为 `0.11.0`，`0.10.0` 及更早版本仅作 Historical；
 这些 replaceable executors 不拥有 OS authority；这组仓库身份不升级 Owner、truth、production
 或 epistemic authority。Structural Governance Surface 是 advisory cross-cutting
 overlay，不增加 L7，不改变 capability、permission 或 epistemic status。
 
-## 当前工程主干：Agent Platform R2
+## 当前工程主干：Agent Platform R2 + Durability / Lifecycle R3
 
 点火当前的工程脊柱是一个有界、可审计、可恢复的 Agent Platform 原型；
 知识治理是第一个大型 Domain Pack，而不是整个系统本体。这个表述描述仓库
@@ -30,6 +30,16 @@ dispatch/reconciliation、concurrent operational memory 与 Driver Console 分�
 保存健康、admission、外部回执、并发恢复和人类下一步提示。它们不构成 Agent
 人格、Truth/Knowledge authority、Owner authority 或新的 L7；五子任务 offline
 pilot 的成功只表示仓库范围协调证据。
+
+### Durability / Lifecycle R3
+
+Task 127 把 snapshot plus tail、compaction、schema migration、namespace isolation、
+Pack lifecycle、capability revocation、accounting、recovery orchestrator 与 DR bundle
+登记为同一 OS control spine 内的一个当前构件。它只保存 repository-local continuity
+和 recovery records；tampered/stale/partial state fail closed，uncertain external
+dispatch 只进入 reconciliation，禁止自动 external re-execution。它不创建第二张
+durability map，不进入 Knowledge authority，也不把离线 pilot 观察升级为 production
+durability、exact-once delivery、Owner acceptance 或 epistemic acceptance。
 
 ### External Agent Federation R1
 
@@ -150,10 +160,10 @@ flowchart LR
 
 ### 完整可点击系统图
 
-Q32I 收口后系统图 0.3.0 为 Current；0727 homepage/usage/charter-system-map sync 收口后系统图 0.4.0 为 Current；后续 registry-derived 系统图 0.5.0、0.6.0、0.7.0、0.8.0、0.9.0 依次成为历史投影，现由 0.10.0 作为 Current；0.1.0—0.9.0 均为 Historical。节点身份、canonical target 与生命周期从 `data/operations/project-components.json` 派生；可见关系及其权限域从 `data/operations/change-propagation-topology.json` 派生；`data/architecture/interactive-system-map-layout.json` 只保留布局。生成器产生 materialized spec 与同一 interactive SVG，再由 README 与仓库 Markdown 投影。
+Q32I 收口后系统图 0.3.0 为 Current；0727 homepage/usage/charter-system-map sync 收口后系统图 0.4.0 为 Current；后续 registry-derived 系统图 0.5.0、0.6.0、0.7.0、0.8.0、0.9.0、0.10.0 依次成为历史投影，现由 0.11.0 作为 Current；0.1.0—0.10.0 均为 Historical。节点身份、canonical target 与生命周期从 `data/operations/project-components.json` 派生；可见关系及其权限域从 `data/operations/change-propagation-topology.json` 派生；`data/architecture/interactive-system-map-layout.json` 只保留布局。生成器产生 materialized spec 与同一 interactive SVG，再由 README 与仓库 Markdown 投影。
 
-该链由当前迭代操作法 1.4.0 继承并保留声明关系下的变更传播闭包。`substantive_causal_candidate`、`repository_dependency` 与 `synchronization_obligation` 权限分离；只有后两者按声明规则触发自动或必要评估。Git diff、依赖、可达路径与视觉位置不构成现实因果识别。它覆盖现有 L0—L6、核心、模型、操作、规范、公共表达、Agent Platform、OS Control Plane、External Agent Federation、Structural Governance Surface 与反馈环，不增加架构层；当前 registry-derived 投影为 `0.10.0`，计数以 Current Facts 的派生事实为准；Structural Governance Surface 是 advisory overlay，不是现实因果或权限边。
-当前投影的派生覆盖为 registry `92` 个构件、可见节点 `80` 个、可见 typed edges `83` 条、隐藏构件 `12` 个；这些计数只用于仓库导航和同步校验，不构成完整性或现实事实证明。
+该链由当前迭代操作法 1.4.0 继承并保留声明关系下的变更传播闭包。`substantive_causal_candidate`、`repository_dependency` 与 `synchronization_obligation` 权限分离；只有后两者按声明规则触发自动或必要评估。Git diff、依赖、可达路径与视觉位置不构成现实因果识别。它覆盖现有 L0—L6、核心、模型、操作、规范、公共表达、Agent Platform、OS Control Plane、Durability / Lifecycle R3、External Agent Federation、Structural Governance Surface 与反馈环，不增加架构层；当前 registry-derived 投影为 `0.11.0`，计数以 Current Facts 的派生事实为准；Structural Governance Surface 是 advisory overlay，不是现实因果或权限边。
+当前投影的派生覆盖为 registry `93` 个构件、可见节点 `81` 个、可见 typed edges `85` 条、隐藏构件 `12` 个；这些计数只用于仓库导航和同步校验，不构成完整性或现实事实证明。
 
 ## 目录权威
 

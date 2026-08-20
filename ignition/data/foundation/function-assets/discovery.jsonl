@@ -2763,7 +2763,7 @@
 {"first_line":15,"last_line":72,"mention_count":8,"path":"统一案例总表/0482-C-484-乘法纠缠验证 — 8维乘法系统S_vN=ln8=2.08,8维加法系统S_vN=0。混合系统α=0.3时S_vN=0.62。纠缠度与D120.md","role":"REFERENCE","stable_id":"D126"}
 {"first_line":15,"last_line":71,"mention_count":8,"path":"统一案例总表/0483-C-485-退相干验证 — 新员工入职6个月-r_cross从0.8→0.3→0.1(轨道逐步关闭),H从0.2→0.6→0.9(组织规范遮蔽增强),τ.md","role":"REFERENCE","stable_id":"D126"}
 {"first_line":276,"last_line":490,"mention_count":5,"path":"统一案例总表/INDEX.md","role":"REFERENCE","stable_id":"D126"}
-{"first_line":65,"last_line":65,"mention_count":1,"path":"AI-HANDOFF.md","role":"REFERENCE","stable_id":"D127"}
+{"first_line":70,"last_line":70,"mention_count":1,"path":"AI-HANDOFF.md","role":"REFERENCE","stable_id":"D127"}
 {"first_line":47,"last_line":47,"mention_count":1,"path":"CHANGELOG.md","role":"REFERENCE","stable_id":"D127"}
 {"first_line":10,"last_line":10,"mention_count":1,"path":"RESULTS/CORRECTIONS.md","role":"REFERENCE","stable_id":"D127"}
 {"first_line":13,"last_line":538,"mention_count":15,"path":"analysis/corpus-relation/cluster_source_briefs/C000.md","role":"REFERENCE","stable_id":"D127"}
@@ -4996,7 +4996,7 @@
 {"first_line":231,"last_line":231,"mention_count":1,"path":"统一函数总表/INDEX.md","role":"REFERENCE","stable_id":"D181"}
 {"first_line":47,"last_line":47,"mention_count":1,"path":"统一案例总表/0181-C-181-因果光锥×马拉松×高山滑雪.md","role":"REFERENCE","stable_id":"D181"}
 {"first_line":47,"last_line":47,"mention_count":1,"path":"统一案例总表/0220-C-220-肉身经验天然跨三域.md","role":"REFERENCE","stable_id":"D181"}
-{"first_line":65,"last_line":65,"mention_count":1,"path":"AI-HANDOFF.md","role":"REFERENCE","stable_id":"D182"}
+{"first_line":70,"last_line":70,"mention_count":1,"path":"AI-HANDOFF.md","role":"REFERENCE","stable_id":"D182"}
 {"first_line":47,"last_line":47,"mention_count":1,"path":"CHANGELOG.md","role":"REFERENCE","stable_id":"D182"}
 {"first_line":35,"last_line":538,"mention_count":16,"path":"analysis/corpus-relation/cluster_source_briefs/C000.md","role":"REFERENCE","stable_id":"D182"}
 {"first_line":3492,"last_line":3492,"mention_count":1,"path":"analysis/corpus-relation/corpus_relation_graph.json","role":"REFERENCE","stable_id":"D182"}
@@ -5366,7 +5366,7 @@
 {"first_line":91,"last_line":91,"mention_count":1,"path":"views/legacy-functions.jsonl","role":"REFERENCE","stable_id":"D19"}
 {"first_line":4,"last_line":40,"mention_count":17,"path":"统一函数总表/0068-D19-情绪注入退出权信号.md","role":"DEFINITION","stable_id":"D19"}
 {"first_line":80,"last_line":80,"mention_count":1,"path":"统一函数总表/INDEX.md","role":"REFERENCE","stable_id":"D19"}
-{"first_line":65,"last_line":65,"mention_count":1,"path":"AI-HANDOFF.md","role":"REFERENCE","stable_id":"D190"}
+{"first_line":70,"last_line":70,"mention_count":1,"path":"AI-HANDOFF.md","role":"REFERENCE","stable_id":"D190"}
 {"first_line":47,"last_line":47,"mention_count":1,"path":"CHANGELOG.md","role":"REFERENCE","stable_id":"D190"}
 {"first_line":179,"last_line":538,"mention_count":13,"path":"analysis/corpus-relation/cluster_source_briefs/C000.md","role":"REFERENCE","stable_id":"D190"}
 {"first_line":3610,"last_line":3610,"mention_count":1,"path":"analysis/corpus-relation/corpus_relation_graph.json","role":"REFERENCE","stable_id":"D190"}
@@ -8004,7 +8004,7 @@
 {"first_line":4,"last_line":45,"mention_count":17,"path":"统一函数总表/0075-D26-跨层完整退化函数.md","role":"DEFINITION","stable_id":"D26"}
 {"first_line":87,"last_line":87,"mention_count":1,"path":"统一函数总表/INDEX.md","role":"REFERENCE","stable_id":"D26"}
 {"first_line":28,"last_line":92,"mention_count":4,"path":"统一案例总表/0108-C-108-认知犹豫域压缩.md","role":"REFERENCE","stable_id":"D26"}
-{"first_line":65,"last_line":65,"mention_count":1,"path":"AI-HANDOFF.md","role":"REFERENCE","stable_id":"D260"}
+{"first_line":70,"last_line":70,"mention_count":1,"path":"AI-HANDOFF.md","role":"REFERENCE","stable_id":"D260"}
 {"first_line":47,"last_line":47,"mention_count":1,"path":"CHANGELOG.md","role":"REFERENCE","stable_id":"D260"}
 {"first_line":11,"last_line":11,"mention_count":1,"path":"RESULTS/CORRECTIONS.md","role":"REFERENCE","stable_id":"D260"}
 {"first_line":303,"last_line":314,"mention_count":2,"path":"analysis/corpus-relation/article_cluster_candidates.json","role":"REFERENCE","stable_id":"D260"}
@@ -18738,7 +18738,7 @@
 {"first_line":105,"last_line":105,"mention_count":1,"path":"统一函数总表/0612-D602-价值创造权与决策权错配与回收.md","role":"REFERENCE","stable_id":"D597"}
 {"first_line":622,"last_line":622,"mention_count":1,"path":"统一函数总表/INDEX.md","role":"REFERENCE","stable_id":"D597"}
 {"first_line":13,"last_line":13,"mention_count":1,"path":"统一案例总表/0804-C-0809-表演化假课与量化指标消解温度.md","role":"REFERENCE","stable_id":"D597"}
-{"first_line":79,"last_line":79,"mention_count":1,"path":"ARCHITECTURE.md","role":"REFERENCE","stable_id":"D598"}
+{"first_line":90,"last_line":90,"mention_count":1,"path":"ARCHITECTURE.md","role":"REFERENCE","stable_id":"D598"}
 {"first_line":3,"last_line":3,"mention_count":1,"path":"FOUNDATION.md","role":"REFERENCE","stable_id":"D598"}
 {"first_line":1260,"last_line":3662,"mention_count":2,"path":"analysis/corpus-relation/article_cluster_candidates.json","role":"REFERENCE","stable_id":"D598"}
 {"first_line":425,"last_line":430,"mention_count":2,"path":"analysis/corpus-relation/cluster_source_briefs/C000.md","role":"REFERENCE","stable_id":"D598"}
@@ -20952,7 +20952,7 @@
 {"first_line":35,"last_line":35,"line":35,"mention_count":1,"path":"统一案例总表/0463-C-464-偏离度=对称性破缺度量 — 对称系统δ=0,1维门槛偏移0.3后δ1=-0.56,δ2=+0.31,∑δ=0(守恒).md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-23CE566D4A6285EF","text":"- 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0464})=1]."}
 {"first_line":41,"last_line":41,"line":41,"mention_count":1,"path":"data/external-research/121-fulltext-resolver/121c01/121c01-validator.py","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-23DBAC2765E627C7","text":"check(\"failed = 5\", recon.get(\"content_access_counts\", {}).get(\"FAILED_LEGAL_OA_NOT_FOUND\", 0) == 5)"}
 {"first_line":6,"last_line":6,"line":6,"mention_count":1,"path":"统一函数总表/0130-D91-倒U型统一生成定理.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-23DD248AF3E210D9","text":"title: \"倒U型统一生成定理\""}
-{"first_line":122,"last_line":122,"line":122,"mention_count":1,"path":"docs/project-current-state.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-23E417A96CFCAFD2","text":"## 当前已实现能力"}
+{"first_line":135,"last_line":135,"line":135,"mention_count":1,"path":"docs/project-current-state.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-23E417A96CFCAFD2","text":"## 当前已实现能力"}
 {"first_line":8,"last_line":8,"line":8,"mention_count":1,"path":"function-os-candidate/v0.1/function_os/n6_validation_feedback.py","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-240015FAC3D484E6","text":"def produce(self, result: dict, compiled: dict, spec: Optional[dict] = None) -> dict:"}
 {"first_line":6,"last_line":6,"line":6,"mention_count":1,"path":"统一函数总表/0159-D121-Fisher健康度函数.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-2437802615B64DDE","text":"title: \"Fisher健康度函数\""}
 {"first_line":67,"last_line":67,"line":67,"mention_count":1,"path":"统一案例总表/0144-C-144-县城佳和超市90%复购率.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-2478BF2BB66A6423","text":"从这条案例看，中文：案例说明：R_upgrade=R₀×∫[α₁Δ(信息可及性)+α₂(-ΔC_exit_eff)+α₃Δε_aware]dt 关键发现… 更像是在验证“退出权、认同和函数映射”之间的对应关系。"}
@@ -20983,6 +20983,7 @@
 {"first_line":57,"last_line":57,"line":57,"mention_count":1,"path":"function-os-candidate/v0.2/tests/test_n8_real_router.py","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-2599C4BC141353B2","text":"def test_n8_plans_real_registered_functions(self):"}
 {"first_line":12,"last_line":12,"line":12,"mention_count":1,"path":"统一案例总表/0258-C-258-动态算力分配.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-25B250E984F8DB42","text":"### [#258｜动态算力分配](docs/zh/cases/items/C-0258.md)"}
 {"first_line":36,"last_line":36,"line":36,"mention_count":1,"path":"统一案例总表/0034-C-34-英国大宪章→光荣革命.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-25C0C1E276D5C267","text":"- 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0034})=1]."}
+{"first_line":26,"last_line":26,"line":26,"mention_count":1,"path":"data/epistemic-governance/literature-boundary-r0.json","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-25C4F76F10DA52DF","text":"\"title\": \"Structural Persistence in Language Models: Priming as a Window into Abstract Language Representations\","}
 {"first_line":22,"last_line":22,"line":22,"mention_count":1,"path":"data/external-research/121-fulltext-resolver/121q2/acceptance/S120-030.json","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-25CAAD136A02FA93","text":"\"title\": \"Fourier Neural Operator for Parametric Partial Differential Equations\","}
 {"first_line":6,"last_line":6,"line":6,"mention_count":1,"path":"统一函数总表/0294-D258-g_eff-p-正反馈函数.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-25D16CCA0991914F","text":"title: \"g_eff-p*正反馈函数\""}
 {"first_line":6,"last_line":6,"line":6,"mention_count":1,"path":"统一函数总表/0442-D406-宏观僵尸态g_eff函数.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-25EF78FB7DD2B30F","text":"title: \"宏观僵尸态g_eff函数\""}
@@ -21814,6 +21815,7 @@
 {"first_line":6,"last_line":6,"line":6,"mention_count":1,"path":"统一案例总表/0406-C-407-联邦制隔离拖累——多独立门控面分散风险,单一子系统拖累不影响全局.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-5839DDCF90DC9F88","text":"title: \"联邦制隔离拖累——多独立门控面分散风险，单一子系统拖累不影响全局\""}
 {"first_line":12,"last_line":12,"line":12,"mention_count":1,"path":"统一案例总表/0436-C-437-幂函数等价验证 — f1=ε1,f2=ε22,f3=ε10·5。η1=1.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-5839F83D48656E72","text":"### [#437｜幂函数等价验证 — f₁=ε₁,f₂=ε₂²,f₃=ε₁⁰·⁵。η₁=1/ε₁,η₂=2/ε₂,η₃=0.5/ε₃。δ₁=0,δ₂=0,δ₃=0。所有幂函数偏离度=0，补最弱=补弹性最高 / 幂函数等价验证 - f₁=ε₁,f₂=ε₂²,f₃=ε₁⁰·⁵. η₁=1/ε₁,η₂=2/ε₂,η₃=0.5/ε₃. δ₁=0,δ₂=0,δ₃=0. 所有幂函数偏离度=0, 补最弱=补弹性最高](docs/zh/cases/items/C-0437.md)"}
 {"first_line":732,"last_line":732,"line":732,"mention_count":1,"path":"统一函数总表/0001-Ψ₀元函数完整数学定义.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-583C28DD00CE0077","text":"composition_consistency := ∫_{A×C} ||π_B→C(π_A→B(x)) - π_A→C(x)||² dμ(x)（复合一致性）"}
+{"first_line":54,"last_line":54,"line":54,"mention_count":1,"path":"data/epistemic-governance/literature-boundary-r0.json","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-584055852935B8D7","text":"\"title\": \"Do Language Models Show Structural Priming Across Different Domains?\","}
 {"first_line":2,"last_line":2,"line":2,"mention_count":1,"path":"统一函数总表/0001-Ψ₀元统一律完整定义.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-585B01117C0CDB04","text":"title: \"2026年7月4日23:41 Ψ₀元函数完整数学定义（2026.07.04·修订版）\""}
 {"first_line":6,"last_line":6,"line":6,"mention_count":1,"path":"统一函数总表/0036-T26-物理大统一本质函数.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-585D085937BA3A3C","text":"title: \"物理大统一本质函数 / physical grand-unification essential function\""}
 {"first_line":225,"last_line":225,"line":225,"mention_count":1,"path":"outputs/audit/p1-extraction-feasibility-audit-20260707.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-5866891ADD8D1EC9","text":"## 7. function_dependency"}
@@ -22392,6 +22394,7 @@
 {"first_line":6,"last_line":6,"line":6,"mention_count":1,"path":"统一函数总表/0597-D587-学科理论核抽取函数.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-7D3D16B995C8EF8D","text":"title: \"学科理论核抽取函数\""}
 {"first_line":87,"last_line":87,"line":87,"mention_count":1,"path":"function-os-candidate/v0.2/tests/test_n5_through_n9.py","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-7D3FBF018D5818B7","text":"def test_validate_pass(self):"}
 {"first_line":635,"last_line":635,"line":635,"mention_count":1,"path":"analysis/corpus-relation/article_cluster_candidates.json","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-7D46D498B1E71E59","text":"\"title\": \"map-agent-delivery-operations\","}
+{"first_line":17,"last_line":17,"line":17,"mention_count":1,"path":"docs/architecture/soft-context-exposure-contract-r0.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-7D4ABCA1B20020F4","text":"## OS/Federation ownership"}
 {"first_line":23,"last_line":23,"line":23,"mention_count":1,"path":"data/operations/iterations/112/publication/tools/r0_intake.py","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-7D5638C0FC885B5C","text":"def run(*args: str) -> str:"}
 {"first_line":61,"last_line":61,"line":61,"mention_count":1,"path":"data/classic_problems_benchmark.json","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-7D5E859043317ECD","text":"\"title\": \"量子引力\","}
 {"first_line":12,"last_line":12,"line":12,"mention_count":1,"path":"统一案例总表/0439-C-440-指数型正向偏离 — f1=exp(-1.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-7D6637A26796E13D","text":"### [#440｜指数型正向偏离 — f₁=exp(-1/ε₁),ε₁=0.3,η₁=1/0.09≈11.1,W₁=3.33。δ₁=11.1×0.3/1-1=2.33。弹性远超弱度预期，应比补最弱更激进地投入 / 指数型正向偏离 - f₁=exp(-1/ε₁),ε₁=0.3,η₁=1/0.09≈11.1,W₁=3.33. δ₁=11.1 x 0.3/1-1=2.33. 弹性远超弱度预期, 应比补最弱更激进地投入](docs/zh/cases/items/C-0440.md)"}
@@ -22627,7 +22630,7 @@
 {"first_line":52,"last_line":52,"line":52,"mention_count":1,"path":"agent_federation/approval_handoff.py","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-8E03DE89FEB209DC","text":"def _strings(value: Any, field: str, *, nonempty: bool = False) -> tuple[str, ...]:"}
 {"first_line":38,"last_line":38,"line":38,"mention_count":1,"path":"统一案例总表/0701-C-0706-乘数阶数×个人财富.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-8E0A5E985CB7AB59","text":"## 关联函数 / Related Functions"}
 {"first_line":1167,"last_line":1167,"line":1167,"mention_count":1,"path":"reports/math-foundation/pilot-formal-audit-20260712.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-8E145983C8B6179D","text":"F_plant_math := lim(n→∞)(F_{n-1}/F_n)→φ（斐波那契螺旋优化）"}
-{"first_line":98,"last_line":98,"line":98,"mention_count":1,"path":"docs/project-current-state.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-8E18FCDA81068DA5","text":"## Task 122 current External Agent Federation R1 projection"}
+{"first_line":111,"last_line":111,"line":111,"mention_count":1,"path":"docs/project-current-state.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-8E18FCDA81068DA5","text":"## Task 122 current External Agent Federation R1 projection"}
 {"first_line":61,"last_line":61,"line":61,"mention_count":1,"path":"data/operations/iterations/114/publication/tools/validate_publication.py","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-8E2D41CC55A4A348","text":"def load(path: Path) -> dict:"}
 {"first_line":537,"last_line":537,"line":537,"mention_count":1,"path":"data/math-foundation/function-provenance-ledger.csv","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-8E335DCF76565E5D","text":"F_collective_intelligence := ∫(individual_interaction × cooperative_competition × global_emergence) / collective_topology"}
 {"first_line":65,"last_line":65,"line":65,"mention_count":1,"path":"function-os-candidate/v0.2/tests/test_n1_robust.py","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-8E50416D28C717E4","text":"def test_missing_outputs(self):"}
@@ -23554,7 +23557,7 @@
 {"first_line":38,"last_line":38,"line":38,"mention_count":1,"path":"统一案例总表/0699-C-0704-因果光锥×马拉松×高山滑雪.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-C6EAA8B9C39C23FC","text":"## 关联函数 / Related Functions"}
 {"first_line":40,"last_line":40,"line":40,"mention_count":1,"path":"data/external-research/121A-night-recovery/121A-validator.py","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-C6F64F0EFE396A9A","text":"def load_jsonl(path):"}
 {"first_line":7194,"last_line":7194,"line":7194,"mention_count":1,"path":"analysis/corpus-relation/corpus_relation_graph.json","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-C6FE6A85AE52A788","text":"\"title\": \"120 — Function Paradigm Atlas Report\","}
-{"first_line":61,"last_line":61,"line":61,"mention_count":1,"path":"docs/architecture/external-agent-federation-r1.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-C701DC67046560BF","text":"### OpenClaw adapter boundary"}
+{"first_line":74,"last_line":74,"line":74,"mention_count":1,"path":"docs/architecture/external-agent-federation-r1.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-C701DC67046560BF","text":"### OpenClaw adapter boundary"}
 {"first_line":35,"last_line":35,"line":35,"mention_count":1,"path":"统一案例总表/0382-C-383-灭绝是加速崩塌——μ接近Λ时1.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-C703DF30D0E02CA6","text":"- 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0383})=1]."}
 {"first_line":35,"last_line":35,"line":35,"mention_count":1,"path":"统一案例总表/0386-C-387-病毒的门控面切换——寄生前σ=0寄生后σ=1,没有中间态.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-C728906687AB69DA","text":"- 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0387})=1]."}
 {"first_line":347,"last_line":347,"line":347,"mention_count":1,"path":"agent_federation/adapters/hermes.py","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-C7349482ADE934BC","text":"def receipt_from_response(self, federation_task_id: str) -> FederatedResultReceipt:"}
@@ -23599,6 +23602,7 @@
 {"first_line":48,"last_line":48,"line":48,"mention_count":1,"path":"data/operations/iterations/113/publication/tools/validate_publication.py","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-C9599F27737151E8","text":"def fail(message: str) -> None:"}
 {"first_line":35,"last_line":35,"line":35,"mention_count":1,"path":"统一案例总表/0160-C-160-同质性遮蔽.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-C95D57541289B912","text":"- 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0160})=1]."}
 {"first_line":31,"last_line":31,"line":31,"mention_count":1,"path":"docs/language-thought/cross-layer-contract.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-C9630059E9808D8A","text":"## L4：机制与模型"}
+{"first_line":12,"last_line":12,"line":12,"mention_count":1,"path":"data/epistemic-governance/literature-boundary-r0.json","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-C97156CAC5005422","text":"\"title\": \"Language Models are Few-Shot Learners\","}
 {"first_line":3882,"last_line":3882,"line":3882,"mention_count":1,"path":"analysis/corpus-relation/article_cluster_candidates.json","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-C97E7BAF3411DC9C","text":"\"title\": \"IGNITION-ITERATION-METHOD-1.4-CONTINUOUS-STAGE-SNAPSHOT-PUBLICATION-R1-20260726 typed change-propagation impact report\","}
 {"first_line":3477,"last_line":3477,"line":3477,"mention_count":1,"path":"analysis/corpus-relation/article_cluster_candidates.json","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-C996A7BA90CD3B37","text":"\"title\": \"121Q22 Probability and System Dynamics Gap Audit\","}
 {"first_line":6,"last_line":6,"line":6,"mention_count":1,"path":"统一函数总表/0185-D148-遮蔽-补偿-成本三角约束,三角锁死.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-C99C2BED9B047478","text":"title: \"遮蔽-补偿-成本三角约束，三角锁死 / obscuration-补偿-成本三角约束, 三角锁死\""}
@@ -23749,7 +23753,7 @@
 {"first_line":57,"last_line":57,"line":57,"mention_count":1,"path":"统一函数总表/0223-D187-电弱统一规范破缺函数.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-D23160D088C9CBE2","text":"电弱统一规范破缺函数，电弱统一是电磁力和弱核力在高能μ>μ_EW时的门控面合并。μ<μ_EW时两个门控面Λ_EM和Λ_W分离,Φ = 1/ln(μ/Λ_EM) + 1/ln(μ/Λ_W);μ>μ_EW时合并为Λ_EW,Φ = 1/ln(μ/Λ_EW)。统一度Ω_after > Ω_before。"}
 {"first_line":152,"last_line":152,"line":152,"mention_count":1,"path":"data/function_dependency.json","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-D241E31E6C0A1B01","text":"\"name\": \"门控函数族\","}
 {"first_line":35,"last_line":35,"line":35,"mention_count":1,"path":"统一案例总表/0364-C-365-扁平化vs分层编码效率对比 — CEO直接BL对全员η=0.08,加VP中间层η=0.211,省VP工资但决策失真损失远超人力成本.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-D25165E754C10D4E","text":"- 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0365})=1]."}
-{"first_line":227,"last_line":227,"line":227,"mention_count":1,"path":"docs/project-current-state.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-D27D157B295D5B22","text":"## 任务 104—105（编辑叙事层与 Function OS 有界基准）"}
+{"first_line":240,"last_line":240,"line":240,"mention_count":1,"path":"docs/project-current-state.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-D27D157B295D5B22","text":"## 任务 104—105（编辑叙事层与 Function OS 有界基准）"}
 {"first_line":12,"last_line":12,"line":12,"mention_count":1,"path":"统一案例总表/0453-C-454-均等定理=诺特定理实例 — 3维乘法G=ε1×ε2×ε3,维度置换对称→总资源R守恒。打破均等(如ε1=0.1,ε2=ε3=0.9)→维度置.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-D27E58C7F855DCEA","text":"### [#454｜均等定理=诺特定理实例 — 3维乘法G=ε₁×ε₂×ε₃，维度置换对称→总资源R守恒。打破均等（如ε₁=0.1,ε₂=ε₃=0.9）→维度置换不对称→R守恒但分布不均→系统不在最优态](docs/zh/cases/items/C-0454.md)"}
 {"first_line":38,"last_line":38,"line":38,"mention_count":1,"path":"统一案例总表/0732-C-0737-安然公司.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-D283C2CF1174B967","text":"## 关联函数 / Related Functions"}
 {"first_line":6,"last_line":6,"line":6,"mention_count":1,"path":"统一函数总表/0238-D202-关联长度-门槛函数.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-D2A5130917774F59","text":"title: \"关联长度-门槛函数\""}
@@ -24300,7 +24304,7 @@
 {"first_line":633,"last_line":633,"line":633,"mention_count":1,"path":"function-os-candidate/v0.2/benchmark/run.py","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-F42AE8D92C486956","text":"r[\"replay_match\"] = (p is not None and p.get(\"result_sha\") == r.get(\"result_sha\"))"}
 {"first_line":35,"last_line":35,"line":35,"mention_count":1,"path":"统一案例总表/0534-C-539-E=mc2 — mc2=信息容量×信息速度2.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-F42D35A1050B481C","text":"- 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0539})=1]."}
 {"first_line":108,"last_line":108,"line":108,"mention_count":1,"path":"function-os-candidate/v0.2/function_os/n7_validator.py","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-F43BF76D0D5134A2","text":"if fb.get('severity') == 'ERROR':"}
-{"first_line":268,"last_line":268,"line":268,"mention_count":1,"path":"ARCHITECTURE.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-F4403BB3AB919444","text":"## 121Q13 注意力、分布与压缩控制 overlay"}
+{"first_line":280,"last_line":280,"line":280,"mention_count":1,"path":"ARCHITECTURE.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-F4403BB3AB919444","text":"## 121Q13 注意力、分布与压缩控制 overlay"}
 {"first_line":19,"last_line":19,"line":19,"mention_count":1,"path":"function-os-candidate/v0.1/function_os/n9_registry_updater.py","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-F458FC7B29947374","text":"def update(self, function_id: str, updated_record: dict) -> dict:"}
 {"first_line":35,"last_line":35,"line":35,"mention_count":1,"path":"统一案例总表/0326-C-326-信息门的方向无关性 — 不存在-我说清楚了但你听不懂-,门效率低两侧同时受影响.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-F45DA8FF50E36A4D","text":"- 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0326})=1]."}
 {"first_line":127,"last_line":127,"line":127,"mention_count":1,"path":"function-os-candidate/v0.1/function_os/n1_semantic_checker.py","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-F45F5547DF394F00","text":"def _check_dependency_references(self, spec: dict) -> List[Dict]:"}
@@ -24459,7 +24463,7 @@
 {"first_line":38,"last_line":38,"line":38,"mention_count":1,"path":"docs/protocols/protocol-index.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-FD410FCA908A4C68","text":"## 与 Ψ₀ / Function / Case 的关系"}
 {"first_line":281,"last_line":281,"line":281,"mention_count":1,"path":"agent_federation/router.py","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-FD48AA6645CC6CB3","text":"def __init__("}
 {"first_line":74,"last_line":74,"line":74,"mention_count":1,"path":"function-os-candidate/v0.1/function_os/n9_registry_store.py","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-FD7BA3D4F1EC5C23","text":"def create(self, record: dict) -> dict:"}
-{"first_line":33,"last_line":33,"line":33,"mention_count":1,"path":"ARCHITECTURE.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-FD7D444A6F7F278D","text":"### External Agent Federation R1"}
+{"first_line":44,"last_line":44,"line":44,"mention_count":1,"path":"ARCHITECTURE.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-FD7D444A6F7F278D","text":"### External Agent Federation R1"}
 {"first_line":29,"last_line":29,"line":29,"mention_count":1,"path":"function-os-candidate/v0.2/tests/test_n6_robust.py","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-FD7F21DC1210DE34","text":"def _trace(self, inputs):"}
 {"first_line":3494,"last_line":3494,"line":3494,"mention_count":1,"path":"analysis/corpus-relation/corpus_relation_graph.json","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-FD87F48A75095635","text":"\"title\": \"经典确定性函数\","}
 {"first_line":59,"last_line":59,"line":59,"mention_count":1,"path":"data/external-research/121-fulltext-resolver/121q2/family-synthesis/F1.json","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-FD98E99F2CA31DF4","text":"\"title\": \"Program-as-Weights: A Programming Paradigm for Fuzzy Functions\","}
@@ -24501,8 +24505,8 @@
 {"first_line":12,"last_line":12,"line":12,"mention_count":1,"path":"统一案例总表/0600-C-605-仲裁模型升级自举循环验证.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-FFE5B63C84F3E8F2","text":"### [#605｜仲裁模型升级自举循环验证](docs/zh/cases/items/C-0605.md)"}
 {"first_line":49,"last_line":49,"line":49,"mention_count":1,"path":"docs/p1-data-index-map-20260708.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-FFF1DCEF8CC17C17","text":"### function_dependency"}
 {"first_line":982,"last_line":982,"line":982,"mention_count":1,"path":"outputs/getbrain/evidence-regime-library-draft-20260706.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-FFFC52EFCDC1C186","text":"## 本次新增函数"}
-{"first_line":65,"last_line":65,"mention_count":1,"path":"AI-HANDOFF.md","role":"REFERENCE","stable_id":"M0"}
-{"first_line":242,"last_line":243,"mention_count":2,"path":"ARCHITECTURE.md","role":"REFERENCE","stable_id":"M0"}
+{"first_line":70,"last_line":70,"mention_count":1,"path":"AI-HANDOFF.md","role":"REFERENCE","stable_id":"M0"}
+{"first_line":254,"last_line":255,"mention_count":2,"path":"ARCHITECTURE.md","role":"REFERENCE","stable_id":"M0"}
 {"first_line":47,"last_line":47,"mention_count":1,"path":"CHANGELOG.md","role":"REFERENCE","stable_id":"M0"}
 {"first_line":89,"last_line":89,"mention_count":1,"path":"ITERATION.md","role":"REFERENCE","stable_id":"M0"}
 {"first_line":325,"last_line":325,"mention_count":1,"path":"analysis/corpus-relation/article_cluster_candidates.json","role":"REFERENCE","stable_id":"M0"}
@@ -24625,7 +24629,7 @@
 {"first_line":83,"last_line":83,"mention_count":1,"path":"data/operations/iterations/110/openalex/population-manifest.jsonl","role":"REFERENCE","stable_id":"M09"}
 {"first_line":83,"last_line":83,"mention_count":1,"path":"evidence-program/runs/IGNITION-EVIDENCE-PILOT-R1-CROSSREF-DOI-VERIFICATION/source-manifest.jsonl","role":"REFERENCE","stable_id":"M09"}
 {"first_line":83,"last_line":83,"mention_count":1,"path":"evidence-program/runs/IGNITION-EVIDENCE-PILOT-R1-OPENALEX-DOI-REPLICATION-20260801/source-manifest.jsonl","role":"REFERENCE","stable_id":"M09"}
-{"first_line":246,"last_line":247,"mention_count":2,"path":"ARCHITECTURE.md","role":"REFERENCE","stable_id":"M1"}
+{"first_line":258,"last_line":259,"mention_count":2,"path":"ARCHITECTURE.md","role":"REFERENCE","stable_id":"M1"}
 {"first_line":101,"last_line":101,"mention_count":1,"path":"CHANGELOG.md","role":"REFERENCE","stable_id":"M1"}
 {"first_line":19,"last_line":181,"mention_count":6,"path":"analysis/corpus-relation/cluster_source_briefs/C000.md","role":"REFERENCE","stable_id":"M1"}
 {"first_line":3475,"last_line":3608,"mention_count":6,"path":"analysis/corpus-relation/corpus_relation_graph.json","role":"REFERENCE","stable_id":"M1"}
@@ -25379,7 +25383,7 @@
 {"first_line":19,"last_line":57,"mention_count":3,"path":"统一函数总表/0453-D417-δ_c-稳定性裕度统一函数.md","role":"REFERENCE","stable_id":"M6"}
 {"first_line":67,"last_line":67,"mention_count":1,"path":"统一函数总表/0593-D583-认知肌肉锻炼.md","role":"REFERENCE","stable_id":"M6"}
 {"first_line":318,"last_line":468,"mention_count":12,"path":"统一函数总表/INDEX.md","role":"REFERENCE","stable_id":"M6"}
-{"first_line":65,"last_line":65,"mention_count":1,"path":"AI-HANDOFF.md","role":"REFERENCE","stable_id":"M7"}
+{"first_line":70,"last_line":70,"mention_count":1,"path":"AI-HANDOFF.md","role":"REFERENCE","stable_id":"M7"}
 {"first_line":47,"last_line":47,"mention_count":1,"path":"CHANGELOG.md","role":"REFERENCE","stable_id":"M7"}
 {"first_line":89,"last_line":89,"mention_count":1,"path":"ITERATION.md","role":"REFERENCE","stable_id":"M7"}
 {"first_line":325,"last_line":325,"mention_count":1,"path":"analysis/corpus-relation/article_cluster_candidates.json","role":"REFERENCE","stable_id":"M7"}
@@ -26684,7 +26688,7 @@
 {"first_line":4,"last_line":42,"mention_count":17,"path":"统一函数总表/0029-T19-容斥项精确结构.md","role":"DEFINITION","stable_id":"T19"}
 {"first_line":41,"last_line":41,"mention_count":1,"path":"统一函数总表/INDEX.md","role":"REFERENCE","stable_id":"T19"}
 {"first_line":47,"last_line":47,"mention_count":1,"path":"统一案例总表/0386-C-387-病毒的门控面切换——寄生前σ=0寄生后σ=1,没有中间态.md","role":"REFERENCE","stable_id":"T19"}
-{"first_line":65,"last_line":65,"mention_count":1,"path":"AI-HANDOFF.md","role":"REFERENCE","stable_id":"T2"}
+{"first_line":70,"last_line":70,"mention_count":1,"path":"AI-HANDOFF.md","role":"REFERENCE","stable_id":"T2"}
 {"first_line":47,"last_line":47,"mention_count":1,"path":"CHANGELOG.md","role":"REFERENCE","stable_id":"T2"}
 {"first_line":49,"last_line":49,"mention_count":1,"path":"FOUNDATION.md","role":"REFERENCE","stable_id":"T2"}
 {"first_line":10,"last_line":10,"mention_count":1,"path":"RESULTS/CORRECTIONS.md","role":"REFERENCE","stable_id":"T2"}
@@ -28129,7 +28133,7 @@
 {"first_line":1,"last_line":1,"mention_count":1,"path":"data/external-research/088-patch-blueprint.jsonl","role":"REFERENCE","stable_id":"Y0"}
 {"first_line":1,"last_line":1,"mention_count":1,"path":"data/external-research/092-gap-to-patch-projection.jsonl","role":"REFERENCE","stable_id":"Y0"}
 {"first_line":1,"last_line":1,"mention_count":1,"path":"data/external-research/094-088-patch-library.jsonl","role":"REFERENCE","stable_id":"Y0"}
-{"first_line":3,"last_line":224,"mention_count":2,"path":"ARCHITECTURE.md","role":"REFERENCE","stable_id":"Y1"}
+{"first_line":3,"last_line":236,"mention_count":2,"path":"ARCHITECTURE.md","role":"REFERENCE","stable_id":"Y1"}
 {"first_line":101,"last_line":101,"mention_count":1,"path":"CHANGELOG.md","role":"REFERENCE","stable_id":"Y1"}
 {"first_line":425,"last_line":425,"mention_count":1,"path":"analysis/corpus-relation/cluster_source_briefs/C000.md","role":"REFERENCE","stable_id":"Y1"}
 {"first_line":1,"last_line":1,"mention_count":1,"path":"data/external-research/088-patch-blueprint.jsonl","role":"REFERENCE","stable_id":"Y1"}

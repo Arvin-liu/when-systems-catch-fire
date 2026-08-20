@@ -4,6 +4,81 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [\| P5 \| 53 \| Causal claims \|](../../../reports/foundation-architecture/083-max-queue-readiness.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-cfbd25b2e1eda78b / \| P5 \| 53 \| Causal claims \|
+  - 来源：`reports/foundation-architecture/083-max-queue-readiness.md`
+  - 依赖：P5；被引用：—
+- [\| P_meta \| 主机制已入表；再次印证 NF-X1/NF-X2 跨域普遍存在 \|](../../../outputs/collisions/20260708-cross-domain-smoke-test/history/collision-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-ba161a2a70e10a41 / \| P_meta \| 主机制已入表；再次印证 NF-X1/NF-X2 跨域普遍存在 \|
+  - 来源：`outputs/collisions/20260708-cross-domain-smoke-test/history/collision-report.md`
+  - 依赖：—；被引用：—
+- [\| P_meta \| 元协议投影算子 \| 跨系统同构投影到元层 \| 产出 6 个元协议（F_contract/F_symmetry/F_distributed_learning/F_nash/F_emergence/F_self-organ](../../../outputs/audit/agent-project-understanding-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-faed75fe44fe731d / \| P_meta \| 元协议投影算子 \| 跨系统同构投影到元层 \| 产出 6 个元协议（F_contract/F_symmetry/F_distributed_learning/F_nash/F_emergence/F_self-organ
+  - 来源：`outputs/audit/agent-project-understanding-20260708.md`
+  - 依赖：—；被引用：—
+- [\| Pearl 2009, DOI `10.1214/09-SS057` \| Separate observational probability from intervention and counterfactual queries.](../../../reports/research/121Q22-probability-systems-source-map.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-c147d3283e0c8b73 / \| Pearl 2009, DOI `10.1214/09-SS057` \| Separate observational probability from intervention and counterfactual queries.
+  - 来源：`reports/research/121Q22-probability-systems-source-map.md`
+  - 依赖：—；被引用：—
+- [\| PEND-009 \| 历史学 \| 工业革命为什么首先发生在英国 \| L2 / L3 / pending \| 点火框架确定了工业革命首发英国的原因 \| 点火框架可重写变量关系，但不能替代历史因果考证 \| 保持 pending \|](../../../docs/pending_claims_register.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-0e1303bd86a3d41b / \| PEND-009 \| 历史学 \| 工业革命为什么首先发生在英国 \| L2 / L3 / pending \| 点火框架确定了工业革命首发英国的原因 \| 点火框架可重写变量关系，但不能替代历史因果考证 \| 保持 pending \|
+  - 来源：`docs/pending_claims_register.md`
+  - 依赖：—；被引用：—
+- [\| PEND-010 \| 历史学 \| 中国王朝周期为何反复出现 \| L2 / L3 / pending \| 点火框架发现了王朝周期定律 \| 点火框架可分析周期结构，但不能写成历史因果定律 \| 保持 pending \|](../../../docs/pending_claims_register.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-41ff9bb6bbadbb25 / \| PEND-010 \| 历史学 \| 中国王朝周期为何反复出现 \| L2 / L3 / pending \| 点火框架发现了王朝周期定律 \| 点火框架可分析周期结构，但不能写成历史因果定律 \| 保持 pending \|
+  - 来源：`docs/pending_claims_register.md`
+  - 依赖：—；被引用：—
+- [\| PEND-015 \| 社会科学 \| 社会阶层为何固化 \| L2 / L3 / pending \| 点火框架给出阶层固化定论 \| 点火框架可分析结构机制，不能替代数据研究 \| 保持 pending \|](../../../docs/pending_claims_register.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-43d987d2226a0b40 / \| PEND-015 \| 社会科学 \| 社会阶层为何固化 \| L2 / L3 / pending \| 点火框架给出阶层固化定论 \| 点火框架可分析结构机制，不能替代数据研究 \| 保持 pending \|
+  - 来源：`docs/pending_claims_register.md`
+  - 依赖：—；被引用：—
+- [\| Projection/diff \| partial via Atlas \| no causal-specific projection and diff \|](../../../reports/architecture/121Q21R-causal-asset-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-26c32a0dfd8275aa / \| Projection/diff \| partial via Atlas \| no causal-specific projection and diff \|
+  - 来源：`reports/architecture/121Q21R-causal-asset-audit.md`
+  - 依赖：—；被引用：—
+- [\| Question framing \| Answered the urban canopy question in ordinary research language and separated daytime, nighttime,](../../../reports/external-research/pointfire-seven-track-replay-r1/BASELINE-VS-GOVERNED.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-5450eb31706aae0c / \| Question framing \| Answered the urban canopy question in ordinary research language and separated daytime, nighttime,
+  - 来源：`reports/external-research/pointfire-seven-track-replay-r1/BASELINE-VS-GOVERNED.md`
+  - 依赖：—；被引用：—
+- [\| R2-GETNOTE-002 \| `SUPPORTED_WITHIN_SOURCE_SCOPE` \| 2 \| causal-inference method boundary \| Not a substantive verificati](../../../reports/external-research/pointfire-getnote-external-verification-r1-20260813.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-3a742707aa68b83b / \| R2-GETNOTE-002 \| `SUPPORTED_WITHIN_SOURCE_SCOPE` \| 2 \| causal-inference method boundary \| Not a substantive verificati
+  - 来源：`reports/external-research/pointfire-getnote-external-verification-r1-20260813.md`
+  - 依赖：—；被引用：—
+- [\| R2-GETNOTE-006 \| `PARTIALLY_SUPPORTED` \| 2 \| reader experiment scope \| Writing method, durable learning, and interpret](../../../reports/external-research/pointfire-getnote-external-verification-r1-20260813.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-817418f2f014dc15 / \| R2-GETNOTE-006 \| `PARTIALLY_SUPPORTED` \| 2 \| reader experiment scope \| Writing method, durable learning, and interpret
+  - 来源：`reports/external-research/pointfire-getnote-external-verification-r1-20260813.md`
+  - 依赖：—；被引用：—
+- [\| R2-GETNOTE-008 \| `PARTIALLY_SUPPORTED` \| 2 \| engineering process boundary \| No universal review-capacity threshold or](../../../reports/external-research/pointfire-getnote-external-verification-r1-20260813.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-75237237f822e96c / \| R2-GETNOTE-008 \| `PARTIALLY_SUPPORTED` \| 2 \| engineering process boundary \| No universal review-capacity threshold or
+  - 来源：`reports/external-research/pointfire-getnote-external-verification-r1-20260813.md`
+  - 依赖：—；被引用：—
+- [\| Relations \| partial \| no relation class taxonomy across physical, statistical, mechanism, analogy, and unknown relatio](../../../reports/architecture/121Q21R-causal-asset-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-11db8d102c2c222b / \| Relations \| partial \| no relation class taxonomy across physical, statistical, mechanism, analogy, and unknown relatio
+  - 来源：`reports/architecture/121Q21R-causal-asset-audit.md`
+  - 依赖：—；被引用：—
+- [\| Repository Maintenance \| 声明式仓库检查、offline maintenance proposal、checkpoint receipt 和本轮离线 pilot \| network、remote Git muta](../../../docs/architecture/agent-platform-r2.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-ba72bb684a67b2f2 / \| Repository Maintenance \| 声明式仓库检查、offline maintenance proposal、checkpoint receipt 和本轮离线 pilot \| network、remote Git muta
+  - 来源：`docs/architecture/agent-platform-r2.md`
+  - 依赖：—；被引用：—
+- [\| Residue \| partial \| no causal residue taxonomy \|](../../../reports/architecture/121Q21R-causal-asset-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-b8bcefec95ac0174 / \| Residue \| partial \| no causal residue taxonomy \|
+  - 来源：`reports/architecture/121Q21R-causal-asset-audit.md`
+  - 依赖：—；被引用：—
 - [\| Rumelhart & Norman, accretion/tuning/restructuring \| Distinguish surface addition, tuning and restructuring-like updat](../../../reports/research/121Q23-network-theory-source-map.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-4f254364ef52ec93 / \| Rumelhart & Norman, accretion/tuning/restructuring \| Distinguish surface addition, tuning and restructuring-like updat
@@ -269,6 +344,11 @@
   - 可搜索名称：NFC-2587e71de69f263a / └── 事件层：点火事件演化系统（时间-空间-动态统一）
   - 来源：`docs/phi_meta_law.md`
   - 依赖：—；被引用：—
+- [└── 决定能不能做、能不能晋级](../../../data/epistemic-governance/soft-governance-contract.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-6babf9cc119bcf33 / └── 决定能不能做、能不能晋级
+  - 来源：`data/epistemic-governance/soft-governance-contract.md`
+  - 依赖：—；被引用：—
 - [⚠️ **结构抽取不足**：下一步需建「机制级二次判定层」（触发条件齐备性 + 机制同构比对），再重跑](../../../docs/getnote-collision-workflow-final-20260708.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-f3c5f633334db6a3 / ⚠️ **结构抽取不足**：下一步需建「机制级二次判定层」（触发条件齐备性 + 机制同构比对），再重跑
@@ -278,6 +358,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-c0591874205062c5 / 《每日一诗停更说明》的全文核验说明概念、决定和未命名潜题也能成为生成入口，并展示与点火整体的有边界同源运动；
   - 来源：`docs/publication/zhiyuan-writing-examples.md`
+  - 依赖：—；被引用：—
+- [一个系统如果反复把“证据能支持到哪里”“哪些状态不能直接跳过去”“缺证据时要保留未知”写成公开、可回链的关系，读它的 AI 可能更容易把这些关系当作当前任务的局部背景。它也可能只是学会了措辞、猜中了评分标准，或者本来就偏好谨慎。R0 把这个](../../../docs/architecture/epistemic-structural-induction-r0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-fe65a66f790ae0f6 / 一个系统如果反复把“证据能支持到哪里”“哪些状态不能直接跳过去”“缺证据时要保留未知”写成公开、可回链的关系，读它的 AI 可能更容易把这些关系当作当前任务的局部背景。它也可能只是学会了措辞、猜中了评分标准，或者本来就偏好谨慎。R0 把这个
+  - 来源：`docs/architecture/epistemic-structural-induction-r0.md`
   - 依赖：—；被引用：—
 - [一句话定义须描述**可迁移机制**，不是概念解释、不是比喻。](../../../docs/two-tables-entry-writing-standard-20260709.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -1104,6 +1189,11 @@
   - 可搜索名称：NFC-4ec56a646fadec8a / 仍然只是“看起来合理”的部分很多：猛安谋克是否在关键时间以笔记所说的形态运作；亲邻编制是否真的导致较低逃亡；扁平社会关系能否跨层推出军队效率；中枢受击是否而非撤军、叛乱或补给问题导致级联。最吸引人但最弱或过度的说法，包括“12 年灭整个宋朝
   - 来源：`reports/publication/jin-rise-point-fire-analysis.md`
   - 依赖：—；被引用：—
+- [仍缺少活模型上的明确授权实验、独立复现、跨域与延迟迁移检验、反事实和机制区分，以及足以支持更强结论的外部证据。若回答把软上下文升级成权限、真值、Owner 接受或安全放行，实验应记录为边界失败；若不能区分结构效应与术语／风格模仿，则降级为](../../../docs/architecture/esi-human-surface-r0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-92558a50fa00a4ab / 仍缺少活模型上的明确授权实验、独立复现、跨域与延迟迁移检验、反事实和机制区分，以及足以支持更强结论的外部证据。若回答把软上下文升级成权限、真值、Owner 接受或安全放行，实验应记录为边界失败；若不能区分结构效应与术语／风格模仿，则降级为
+  - 来源：`docs/architecture/esi-human-surface-r0.md`
+  - 依赖：—；被引用：—
 - [从A7、A5、A4推导。退出概率由三个因子决定，任一因子为零则退出概率为零。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-8afa71d9a4cb637e / 从A7、A5、A4推导。退出概率由三个因子决定，任一因子为零则退出概率为零。
@@ -1478,6 +1568,16 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-ac4692cbbac9bafe / 冲突/优先级机制已说明
   - 来源：`data/protocol-canonical-validation-results.json`
+  - 依赖：—；被引用：—
+- [决定“能不能做、能不能晋级”。结构治理表面至多影响模型默认怎样判断和表达。](../../../docs/architecture/epistemic-structural-induction-r0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-c6c12a0962603184 / 决定“能不能做、能不能晋级”。结构治理表面至多影响模型默认怎样判断和表达。
+  - 来源：`docs/architecture/epistemic-structural-induction-r0.md`
+  - 依赖：—；被引用：—
+- [决定能不能做、能不能晋级。这个表面属于 soft structural governance：它至多](../../../docs/architecture/structural-governance-surface.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-dce388acff647490 / 决定能不能做、能不能晋级。这个表面属于 soft structural governance：它至多
+  - 来源：`docs/architecture/structural-governance-surface.md`
   - 依赖：—；被引用：—
 - [分支：`records/ignition-088-external-literature-gap-source-atlas-20260713`（未动 main，合并需用户/GPT 显式授权）](../../../data/external-research/088-FINAL-REPORT.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -2189,6 +2289,11 @@
   - 可搜索名称：NFC-3a867ab367fef2a5 / 它不能建立生产可靠性、外部仓库安全、现实世界因果、普适安全、长期自主性、
   - 来源：`docs/architecture/agent-platform-r2.md`
   - 依赖：—；被引用：—
+- [它不能替代独立复现、活模型调用、来源审查、Owner 决定或各自的安全门禁。](../../../docs/architecture/esi-human-surface-r0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-903007d90ad7bfc5 / 它不能替代独立复现、活模型调用、来源审查、Owner 决定或各自的安全门禁。
+  - 来源：`docs/architecture/esi-human-surface-r0.md`
+  - 依赖：—；被引用：—
 - [它如何决定何时必须 pending？](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-2b630f998732c706 / 它如何决定何时必须 pending？
@@ -2398,109 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-b4dd2b0bf1479269 / 市场机制
   - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [市场机制（价格信号、分布式决策）](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-9968442cc22fcd01 / 市场机制（价格信号、分布式决策）
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [底层成员有申诉与退出机制](../../../docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-bcad84a775e14feb / 底层成员有申诉与退出机制
-  - 来源：`docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md`
-  - 依赖：—；被引用：—
-- [延续策略导致更早崩溃](../../../docs/governance/meta-protocol-reviews/protocols/V1.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-2f116f4b6224e166 / 延续策略导致更早崩溃
-  - 来源：`docs/governance/meta-protocol-reviews/protocols/V1.md`
-  - 依赖：—；被引用：—
-- [建立失败案例反向修正机制；](../../../outputs/getbrain/README.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-03082cf6961cbf71 / 建立失败案例反向修正机制；
-  - 来源：`outputs/getbrain/README.md`
-  - 依赖：—；被引用：—
-- [建议 GPT 查验后由人工决定 #41/#42 合并顺序与是否修复 foundation CI。](../../../data/external-research/121-fulltext-resolver/121q6c/121Q6C-final-report.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-18ad31c9979c88aa / 建议 GPT 查验后由人工决定 #41/#42 合并顺序与是否修复 foundation CI。
-  - 来源：`data/external-research/121-fulltext-resolver/121q6c/121Q6C-final-report.md`
-  - 依赖：—；被引用：—
-- [开头摘要将全文归纳为「小镇做题家挣脱人生剧本、找回主体性」。该层仅作索引，不作为机制证据。](../../../outputs/collisions/20260711-disobedience-subjectivity/source-layer-map.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-aa1719c10e632504 / 开头摘要将全文归纳为「小镇做题家挣脱人生剧本、找回主体性」。该层仅作索引，不作为机制证据。
-  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/source-layer-map.md`
-  - 依赖：—；被引用：—
-- [开放导致不可逆污染或病原扩散](../../../docs/governance/meta-protocol-reviews/protocols/S2.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-b611aa8135ee34a3 / 开放导致不可逆污染或病原扩散
-  - 来源：`docs/governance/meta-protocol-reviews/protocols/S2.md`
-  - 依赖：—；被引用：—
-- [开放问题的优先级由风险、依赖范围、可证伪性和证据成本共同决定，不按历史编号或叙述宏大程度决定。](../../../RESULTS/OPEN-QUESTIONS.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-72fcba87b73b641a / 开放问题的优先级由风险、依赖范围、可证伪性和证据成本共同决定，不按历史编号或叙述宏大程度决定。
-  - 来源：`RESULTS/OPEN-QUESTIONS.md`
-  - 依赖：—；被引用：—
-- [异地恋断裂 — μ翻转导致dcritical从2000km缩到50km,不是距离变了是临界距离变了](../../../data/foundation/evidence/evidence.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-8bd331ac9a1ba584 / 异地恋断裂 — μ翻转导致dcritical从2000km缩到50km,不是距离变了是临界距离变了
-  - 来源：`data/foundation/evidence/evidence.jsonl`
-  - 依赖：—；被引用：—
-- [引用既有 authority、类型化 handoff 与禁止升级边；不复制局部状态，不是 L7 或统一真值层。](../../../data/architecture/interactive-system-map.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-9a44d63ff9bfdc52 / 引用既有 authority、类型化 handoff 与禁止升级边；不复制局部状态，不是 L7 或统一真值层。
-  - 来源：`data/architecture/interactive-system-map.json`
-  - 依赖：—；被引用：—
-- [弱势成员须有对等参与与保护机制](../../../docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-49674524bdecb2fc / 弱势成员须有对等参与与保护机制
-  - 来源：`docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md`
-  - 依赖：—；被引用：—
-- [当亲密或协作关系中双方需求隐含且互相错位时，通过目标对齐机制、需求显式打分（如 0–10，9+ 必优先、6.5− 可灵活）、事后复盘与空间边界，把模糊需求转成可排序的协作协议，降低隐性冲突。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-c5b00e04508482ef / 当亲密或协作关系中双方需求隐含且互相错位时，通过目标对齐机制、需求显式打分（如 0–10，9+ 必优先、6.5− 可灵活）、事后复盘与空间边界，把模糊需求转成可排序的协作协议，降低隐性冲突。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [当前 fixture 必须覆盖：意外事件施事化、进行／完成／终点变化、话题链、零照应歧义、凭空因果连接、证据来源丢失或发明、名词化抽象与事件化成句、合法长短句、应保留的有意标记句法、词面回译相似但框架改变，以及 L0—L6 每层实例。](../../../docs/language-thought/validation-and-audit.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-f4dcfd7116d21c4d / 当前 fixture 必须覆盖：意外事件施事化、进行／完成／终点变化、话题链、零照应歧义、凭空因果连接、证据来源丢失或发明、名词化抽象与事件化成句、合法长短句、应保留的有意标记句法、词面回译相似但框架改变，以及 L0—L6 每层实例。
-  - 来源：`docs/language-thought/validation-and-audit.md`
-  - 依赖：—；被引用：—
-- [当前仓库没有苹果案例 runner、历史因果 oracle 或可绑定的 Function OS target；因此状态为](../../../RESULTS/OPEN-QUESTIONS.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-f2c8d0ac6ace5b9c / 当前仓库没有苹果案例 runner、历史因果 oracle 或可绑定的 Function OS target；因此状态为
-  - 来源：`RESULTS/OPEN-QUESTIONS.md`
-  - 依赖：—；被引用：—
-- [当前仓库的之元写作法 0.4.0、任务 112 的出版边界、Pointfire 的 claim／mechanism／gap／residue 纪律，属于 `ignition_increment`。它们帮助组织问题、保留差异和决定何时停止，但不](../../../reports/publication/song-huizong-taoism-point-fire-analysis.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-edff5a599cc37b0a / 当前仓库的之元写作法 0.4.0、任务 112 的出版边界、Pointfire 的 claim／mechanism／gap／residue 纪律，属于 `ignition_increment`。它们帮助组织问题、保留差异和决定何时停止，但不
-  - 来源：`reports/publication/song-huizong-taoism-point-fire-analysis.md`
-  - 依赖：—；被引用：—
-- [当前方法 `1.4.0`、系统图 `0.6.0` 与之元写作法 `0.5.0` 均以各自权威资产为准；系统图 `0.5.0`、`0.4.0` 及更早版本只作为历史证据。面向 AI 的最近状态增量见 \[`STATE-CHANGELOG.md`](../../../docs/VERSIONING.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-3bf9f8910a2df6b7 / 当前方法 `1.4.0`、系统图 `0.6.0` 与之元写作法 `0.5.0` 均以各自权威资产为准；系统图 `0.5.0`、`0.4.0` 及更早版本只作为历史证据。面向 AI 的最近状态增量见 \[`STATE-CHANGELOG.md`
-  - 来源：`docs/VERSIONING.md`
-  - 依赖：—；被引用：—
-- [当前机器投影以 `91` 个 registry components、`79` 个可见节点、`84` 条 typed](../../../docs/architecture/interactive-system-map.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-a6eb01a9cf2319a9 / 当前机器投影以 `91` 个 registry components、`79` 个可见节点、`84` 条 typed
-  - 来源：`docs/architecture/interactive-system-map.md`
-  - 依赖：—；被引用：—
-- [当前树删除 Pages workflow、Jekyll 配置/布局/样式、Pages HTML、Pages 路径的派生 SVG，以及两组 Pages 专用测试。系统图迁移到 `docs/generated/ignition-system-m](../../../reports/foundation-architecture/101-human-readable-surfaces-self-correction-closeout.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-4d8170d68d5cc442 / 当前树删除 Pages workflow、Jekyll 配置/布局/样式、Pages HTML、Pages 路径的派生 SVG，以及两组 Pages 专用测试。系统图迁移到 `docs/generated/ignition-system-m
-  - 来源：`reports/foundation-architecture/101-human-readable-surfaces-self-correction-closeout.md`
-  - 依赖：—；被引用：—
-- [当前案例表（拆分目录）：`PRIVATE_PROVENANCE_WITHHELD`](../../../outputs/audit/codespace-rescue-two-tables-diff-audit-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-21c88ef94446de6b / 当前案例表（拆分目录）：`PRIVATE_PROVENANCE_WITHHELD`
-  - 来源：`outputs/audit/codespace-rescue-two-tables-diff-audit-20260708.md`
-  - 依赖：—；被引用：—
-- [当前赛课机制第二批暂缓项包括：**](../../../docs/agent-trigger-phrases-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-1e9458503c209618 / 当前赛课机制第二批暂缓项包括：**
-  - 来源：`docs/agent-trigger-phrases-20260708.md`
-  - 依赖：—；被引用：—
-- [当前身份 contract/facts 见 \[`current-system-identity.json`\]\(../../data/architecture/current-system-identity.json\)](../../../docs/architecture/agent-platform-r2.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-e0cf5009c495b05c / 当前身份 contract/facts 见 \[`current-system-identity.json`\]\(../../data/architecture/current-system-identity.json\)
-  - 来源：`docs/architecture/agent-platform-r2.md`
   - 依赖：—；被引用：—

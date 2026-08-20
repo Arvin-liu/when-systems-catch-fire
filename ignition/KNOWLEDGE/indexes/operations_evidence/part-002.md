@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [### N06｜生成能力为何会制造证据赤字](../../../data/operations/iterations/112/publication/r0-original/notes/%E7%82%B9%E7%81%AB%E7%A0%94%E7%A9%B6%E7%AC%94%E8%AE%B0-%E7%AC%AC%E4%B8%80%E8%BE%91.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-BD755F360DB72770 / ### N06｜生成能力为何会制造证据赤字 / IMPLICIT-BD755F360DB72770
+  - 来源：`data/operations/iterations/112/publication/r0-original/notes/点火研究笔记-第一辑.md`
+  - 依赖：—；被引用：—
+- [### N41｜Function OS 的小世界为何必要](../../../data/operations/iterations/112/publication/r0-original/notes/%E7%82%B9%E7%81%AB%E7%A0%94%E7%A9%B6%E7%AC%94%E8%AE%B0-%E7%AC%AC%E4%B8%80%E8%BE%91.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-13F655E96C11D8AC / ### N41｜Function OS 的小世界为何必要 / IMPLICIT-13F655E96C11D8AC
+  - 来源：`data/operations/iterations/112/publication/r0-original/notes/点火研究笔记-第一辑.md`
+  - 依赖：—；被引用：—
+- [### N42｜第一失败比平均成功率有解释力](../../../data/operations/iterations/112/publication/r0-original/notes/%E7%82%B9%E7%81%AB%E7%A0%94%E7%A9%B6%E7%AC%94%E8%AE%B0-%E7%AC%AC%E4%B8%80%E8%BE%91.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-E4D6D5A3CD0363D5 / ### N42｜第一失败比平均成功率有解释力 / IMPLICIT-E4D6D5A3CD0363D5
+  - 来源：`data/operations/iterations/112/publication/r0-original/notes/点火研究笔记-第一辑.md`
+  - 依赖：—；被引用：—
 - [### Newly forced or more sharply specified](../../../docs/architecture/getnote-1329-epistemic-governance-pressure-test.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-DBFAD75C0272CC04 / ### Newly forced or more sharply specified / IMPLICIT-DBFAD75C0272CC04
@@ -2487,20 +2502,5 @@
 - [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0457}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-CBED7FFAE13E3A76 / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0457}\)=1\]. / IMPLICIT-CBED7FFAE13E3A76
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0458}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-7CD2048818F8792F / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0458}\)=1\]. / IMPLICIT-7CD2048818F8792F
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0459}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-2C120B36B4858AFF / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0459}\)=1\]. / IMPLICIT-2C120B36B4858AFF
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0460}\)=1\].](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-01986F28BB2CE1E0 / - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0460}\)=1\]. / IMPLICIT-01986F28BB2CE1E0
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—

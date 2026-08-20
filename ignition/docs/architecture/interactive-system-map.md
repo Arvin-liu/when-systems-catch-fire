@@ -1,6 +1,6 @@
 # 点火仓库原生系统图
 
-状态：`0.10.0 Current registry-derived navigation projection`；`0.9.0`、`0.8.0`、`0.7.0`、`0.6.0`、`0.5.0`、`0.4.0` 与更早版本为 Historical。
+状态：`0.11.0 Current registry-derived navigation projection`；`0.10.0`、`0.9.0`、`0.8.0`、`0.7.0`、`0.6.0`、`0.5.0`、`0.4.0` 与更早版本为 Historical。
 
 ## 打开与生成
 
@@ -28,7 +28,7 @@ SVG 现在位于 `docs/generated/ignition-system-architecture.svg`，通过 READ
 - 节点身份、canonical target 与生命周期来自 component registry。
 - 边的 relation class/domain 来自 propagation topology。
 - 分组、几何、颜色和顺序来自 layout overlay。
-- 当前语义主干是一个有界阅读路径：`Owner / Value Charter → Ignition OS control / governance spine → Pack / Federation routing → External replaceable executors → Actions / observations / receipts → Validation / provenance / state update / feedback → OS`。中央 OS control spine 现在包含 Event Ledger、monotonic policy、resource arbitration、bounded scheduler、health lease、queue/backpressure、durable dispatch/reconciliation、concurrent operational memory 和 Driver Console。这里的 external executors 是 replaceable executors，不是 OS authority；Reference / Conformance / Fallback 是本地冻结边界；它是导航阅读顺序，不新增因果边，也不证明完整性。
+- 当前语义主干是一个有界阅读路径：`Owner / Value Charter → Ignition OS control / governance spine → Pack / Federation routing → External replaceable executors → Actions / observations / receipts → Validation / provenance / state update / feedback → OS`。中央 OS control spine 现在包含 Event Ledger、monotonic policy、resource arbitration、bounded scheduler、health lease、queue/backpressure、durable dispatch/reconciliation、concurrent operational memory、Durability / Lifecycle R3 和 Driver Console。Durability / Lifecycle 负责 snapshot、migration、namespace、Pack lifecycle、revocation、accounting、recovery 与 DR continuity，uncertain external dispatch 只到 reconciliation；它不是第二张图或第二真相源。这里的 external executors 是 replaceable executors，不是 OS authority；Reference / Conformance / Fallback 是本地冻结边界；它是导航阅读顺序，不新增因果边，也不证明完整性。
 - `os_spine` 位于图的中央列；`federation` 明确标为外部、可替换手脚；`domain_packs` 单列表示 Domain/Skill Pack，不把 Knowledge 重新画成系统本体。
 - cluster 只表达导航分组，不增加架构层。
 - `language_thought` 是横穿 L0—L6 的控制平面 overlay；`structural_governance_surface` 是 governance 组中的 advisory cross-cutting overlay；`layers` 组仍严格只有 L0—L6。两者的连线表示框架审计、同步义务或候选阅读关系，不表示语言或结构决定现实因果。
@@ -48,7 +48,7 @@ REOS LIGHT Research、之元 Writing 和 Maintenance 仍由各自 manifest 声�
 对象类型、validator 与禁止的 authority upgrade。
 
 当前机器投影的 registry、可见节点、typed edges 和隐藏 components 计数以
-`current-facts.json` 为准；当前地图为 `0.10.0`，上一版 `0.9.0` 仅作 Historical。
+`current-facts.json` 为准；当前地图为 `0.11.0`，上一版 `0.10.0` 仅作 Historical。
 Structural Governance Surface 的可见关系仍是 advisory repository projection。
 R2 的 source-domain 与
 blast-radius 规则见
