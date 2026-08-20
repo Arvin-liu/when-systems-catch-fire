@@ -1,0 +1,26 @@
+{
+  "schema_version": "ignition-127-step00-rebase-matrix-r1",
+  "task_id": "IGNITION-20260820-127",
+  "source_task": "IGNITION-20260818-125",
+  "source_status": "DEFERRED_PENDING_REBASE",
+  "target_status": "DEFERRED_REBASED_INTO_127",
+  "source_file": "agent-commands/IGNITION-20260818-125-os-durability-lifecycle-r3.md",
+  "baseline": "c5cec3a212dbf42564985b71c0fcec3b1fb1e564",
+  "requirements": [
+    {"id":"125-R01","requirement":"canonical snapshot, compaction and restore without deleting event lineage","status":"STILL_REQUIRED","127_binding":"Steps 02-04"},
+    {"id":"125-R02","requirement":"schema epoch, forward migration, compatibility and safe downgrade/rollback","status":"STILL_REQUIRED","127_binding":"Step 05"},
+    {"id":"125-R03","requirement":"principal/workspace/episode/run namespace isolation and explicit delegation","status":"STILL_REQUIRED","127_binding":"Steps 07-08"},
+    {"id":"125-R04","requirement":"transactional Domain Pack lifecycle with version pinning and rollback","status":"STILL_REQUIRED","127_binding":"Step 09"},
+    {"id":"125-R05","requirement":"executor admission, conformance and capability revocation","status":"MODIFIED_BY_126","127_binding":"Step 10; reuse 126 federation/health lease boundary, add durable admission/revocation"},
+    {"id":"125-R06","requirement":"quota, fairness and replayable budget accounting","status":"MODIFIED_BY_126","127_binding":"Step 11; scheduler already bounds local budgets, 127 centralizes accounting"},
+    {"id":"125-R07","requirement":"crash consistency and recovery orchestration","status":"STILL_REQUIRED","127_binding":"Step 13"},
+    {"id":"125-R08","requirement":"offline disaster-recovery bundle and fresh-directory restore","status":"STILL_REQUIRED","127_binding":"Step 14"},
+    {"id":"125-R09","requirement":"human-readable Driver/Operator recovery surface","status":"MODIFIED_BY_126","127_binding":"Step 15; extend existing Driver Console projection"},
+    {"id":"125-R10","requirement":"disposable offline continuity pilot across lifecycle and recovery","status":"STILL_REQUIRED","127_binding":"Step 17"},
+    {"id":"125-R11","requirement":"adversarial/fault-injection and full regression gates","status":"STILL_REQUIRED","127_binding":"Step 16 and Step 19"},
+    {"id":"125-R12","requirement":"Current identity, front-door, map and state changelog synchronization","status":"MODIFIED_BY_126","127_binding":"Steps 18-19; inherit CURRENT_STATE_SYNC_INVARIANT and map 0.10.0"},
+    {"id":"125-R13","requirement":"provider-neutral boundary, Reference Executor freeze, privacy and non-escalation","status":"ALREADY_PRESENT","127_binding":"Inherited hard invariant; revalidated in Steps 05, 06, 10, 16, 19"}
+  ],
+  "preserved_126_boundaries": ["SOFT_GOVERNANCE_NON_AUTHORITY_INVARIANT", "CANDIDATE_ESI_SIGNAL", "ADVISORY_ONLY", "CURRENT_WITH_OPEN_OBLIGATIONS", "EPISTEMICALLY_ACCEPTED=0", "function census drift", "nonfunction output drift", "T16_SYMPY_COUNTEREXAMPLE environment residual", "propagation 104-106 sealed residual"],
+  "decision": "Implement the re-audited 127 sequence; do not execute or copy the old 125 file as an authoritative task."
+}
