@@ -66,6 +66,9 @@ GENERATED_PREFIXES = (
     "PUBLICATIONS/",
     "docs/human/",
     "data/publication/fire-seeds/",
+    # Durability/lifecycle contracts and receipts are OS machine records; they
+    # must remain provenance-only and cannot feed Foundation discovery.
+    "data/operations/durability/",
     ".github/",
     "tools/publication/",
 )

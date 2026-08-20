@@ -54,6 +54,7 @@
         "data/foundation/migrations/",
         "data/governance/",
         "data/publication/fire-seeds/",
+        "data/operations/durability/",
         "KNOWLEDGE/",
         "docs/human/",
         "data/operations/iterations/121/"
