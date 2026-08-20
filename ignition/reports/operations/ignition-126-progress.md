@@ -15,6 +15,7 @@ by this run and remains `DEFERRED_PENDING_REBASE`.
 | 04 | COMPLETED | pending closure | pending closure | Deterministic original Structural Governance Surface generated from grammar, contract and Current identity. |
 | 05 | COMPLETED | pending closure | pending closure | Five deterministic exposure/control projections with recorded relation, terminology, style and length properties. |
 | 06 | COMPLETED | pending closure | pending closure | Sixteen synthetic evidence cases with gold boundaries, forbidden transitions and over-caution negatives across nine domains. |
+| 07 | COMPLETED | pending closure | pending closure | Seven exposure arms × seven challenge arms with 49 deterministic adversarial envelopes and no fabricated outputs. |
 
 ## Boundary
 
@@ -103,3 +104,15 @@ Governance Surface state and the non-authority invariant.
 - Over-caution risk is explicit in `15` cases; missing evidence/provenance and
   withdrawal, consensus, permission and M/E boundaries are represented.
 - Unit tests `3/3` passed; no live external fact is required.
+
+## Step 07 evidence
+
+- Matrix: `data/epistemic-governance/challenge-matrix-r0.json` with E0–E6
+  exposures and C0–C6 challenges.
+- Generated envelopes: `data/epistemic-governance/challenge-fixtures-r0.json`;
+  `49 = 7 × 7` complete pairs.
+- Validator/generator: `tools/generate_challenge_fixtures.py` (`PASS`).
+- Delayed transfer, withdrawn rebound, missing evidence, authority confusion,
+  consensus and direct overclaim pressure are explicit.
+- Every envelope is `live_output_status=NOT_SUPPLIED`; no model output is
+  fabricated. Unit tests `3/3` passed.
