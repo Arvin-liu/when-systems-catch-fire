@@ -36,6 +36,9 @@ class SnapshotNamespaceError(SnapshotIntegrityError):
     """A snapshot is used outside its declared namespace scope."""
 
 
+COMPACTION_SCHEMA = "ignition-durability-compaction-receipt-r1"
+
+
 def _digest(value: Any, field: str) -> str:
     if not isinstance(value, str) or len(value) != 64 or any(char not in _HEX for char in value):
         raise SnapshotIntegrityError(f"{field} must be a lowercase SHA-256 digest")
@@ -242,7 +245,183 @@ class CanonicalSnapshotStore:
         }
 
 
+@dataclass(frozen=True)
+class CompactionPolicy:
+    """A bounded policy that never permits canonical lineage deletion."""
+
+    snapshot_interval_events: int = 100
+    derived_cache_keep: int = 2
+    advisory_artifact_keep: int = 2
+    preserve_event_lineage: bool = True
+    preserve_unresolved_reconciliation: bool = True
+    preserve_external_pointer_digests: bool = True
+
+    def __post_init__(self) -> None:
+        if not isinstance(self.snapshot_interval_events, int) or self.snapshot_interval_events <= 0:
+            raise DurabilityError("snapshot_interval_events must be positive")
+        if not isinstance(self.derived_cache_keep, int) or self.derived_cache_keep < 0:
+            raise DurabilityError("derived_cache_keep must be non-negative")
+        if not isinstance(self.advisory_artifact_keep, int) or self.advisory_artifact_keep < 0:
+            raise DurabilityError("advisory_artifact_keep must be non-negative")
+        if not self.preserve_event_lineage:
+            raise DurabilityError("canonical event lineage deletion is forbidden")
+        if not self.preserve_unresolved_reconciliation:
+            raise DurabilityError("unresolved reconciliation deletion is forbidden")
+        if not self.preserve_external_pointer_digests:
+            raise DurabilityError("external pointer digest deletion is forbidden")
+
+    def to_dict(self) -> dict[str, Any]:
+        return {
+            "snapshot_interval_events": self.snapshot_interval_events,
+            "derived_cache_keep": self.derived_cache_keep,
+            "advisory_artifact_keep": self.advisory_artifact_keep,
+            "preserve_event_lineage": self.preserve_event_lineage,
+            "preserve_unresolved_reconciliation": self.preserve_unresolved_reconciliation,
+            "preserve_external_pointer_digests": self.preserve_external_pointer_digests,
+        }
+
+
+@dataclass(frozen=True)
+class CompactionReceipt:
+    compaction_id: str
+    source_event_count: int
+    source_head_hash: str
+    snapshot_id: str
+    policy_sha256: str
+    derived_cache_prune_candidates: int
+    advisory_artifact_prune_candidates: int
+    unresolved_reconciliation_refs_preserved: tuple[str, ...]
+    external_pointer_digests_preserved: tuple[str, ...]
+    event_lineage_preserved: bool = True
+    status: str = "COMPLETED_WITH_LINEAGE_PRESERVED"
+    receipt_sha256: str | None = None
+
+    def __post_init__(self) -> None:
+        if not self.compaction_id or not self.snapshot_id:
+            raise DurabilityError("compaction and snapshot IDs must be non-empty")
+        if not isinstance(self.source_event_count, int) or self.source_event_count < 0:
+            raise DurabilityError("source_event_count must be non-negative")
+        _digest(self.source_head_hash, "source_head_hash")
+        _digest(self.policy_sha256, "policy_sha256")
+        if self.derived_cache_prune_candidates < 0 or self.advisory_artifact_prune_candidates < 0:
+            raise DurabilityError("prune candidate counts must be non-negative")
+        if not self.event_lineage_preserved or self.status != "COMPLETED_WITH_LINEAGE_PRESERVED":
+            raise DurabilityError("compaction receipt must preserve lineage")
+        for values in (self.unresolved_reconciliation_refs_preserved, self.external_pointer_digests_preserved):
+            if len(values) != len(set(values)):
+                raise DurabilityError("preserved references must be unique")
+        expected = sha256_json(self._unsigned_dict())
+        if self.receipt_sha256 is not None and self.receipt_sha256 != expected:
+            raise DurabilityError("compaction receipt digest mismatch")
+        object.__setattr__(self, "receipt_sha256", expected)
+
+    def _unsigned_dict(self) -> dict[str, Any]:
+        return {
+            "schema": COMPACTION_SCHEMA,
+            "compaction_id": self.compaction_id,
+            "source_event_count": self.source_event_count,
+            "source_head_hash": self.source_head_hash,
+            "snapshot_id": self.snapshot_id,
+            "policy_sha256": self.policy_sha256,
+            "derived_cache_prune_candidates": self.derived_cache_prune_candidates,
+            "advisory_artifact_prune_candidates": self.advisory_artifact_prune_candidates,
+            "unresolved_reconciliation_refs_preserved": list(self.unresolved_reconciliation_refs_preserved),
+            "external_pointer_digests_preserved": list(self.external_pointer_digests_preserved),
+            "event_lineage_preserved": self.event_lineage_preserved,
+            "status": self.status,
+        }
+
+    def to_dict(self) -> dict[str, Any]:
+        return {**self._unsigned_dict(), "receipt_sha256": self.receipt_sha256}
+
+
+class SnapshotChainStore:
+    """Keep multiple immutable checkpoints and choose a trusted prefix."""
+
+    def __init__(self, directory: str | Path) -> None:
+        self.directory = Path(directory)
+
+    def write(self, snapshot: CanonicalSnapshot) -> Path:
+        self.directory.mkdir(parents=True, exist_ok=True)
+        path = self.directory / f"{snapshot.snapshot_id}.json"
+        _atomic_json(path, snapshot.to_dict())
+        return path
+
+    def paths(self) -> list[Path]:
+        return sorted(self.directory.glob("*.json"))
+
+    def read_all(self) -> list[CanonicalSnapshot]:
+        snapshots: list[CanonicalSnapshot] = []
+        for path in self.paths():
+            snapshots.append(CanonicalSnapshotStore(path).read())
+        return snapshots
+
+    def select_trusted(self, ledger: EventLedger, *, namespace_scope: str | None = None) -> tuple[CanonicalSnapshot, Path]:
+        candidates: list[tuple[CanonicalSnapshot, Path]] = []
+        for path in self.paths():
+            try:
+                snapshot = CanonicalSnapshotStore(path).read()
+                CanonicalSnapshotStore._validate_prefix(ledger, snapshot, namespace_scope=namespace_scope)
+                candidates.append((snapshot, path))
+            except (SnapshotIntegrityError, OSError, json.JSONDecodeError):
+                continue
+        if not candidates:
+            raise SnapshotIntegrityError("no trusted snapshot prefix is available")
+        return max(candidates, key=lambda item: (item[0].ledger_end_sequence, item[0].snapshot_id))
+
+    def restore_with_fallback(self, ledger: EventLedger, *, namespace_scope: str | None = None) -> tuple[dict[str, Any], CanonicalSnapshot, Path]:
+        snapshot, path = self.select_trusted(ledger, namespace_scope=namespace_scope)
+        restored = CanonicalSnapshotStore(path).restore(ledger, snapshot, namespace_scope=namespace_scope)
+        return restored, snapshot, path
+
+
+class DurabilityCompactor:
+    """Create bounded checkpoints and receipts without mutating canonical events."""
+
+    def __init__(self, chain: SnapshotChainStore) -> None:
+        self.chain = chain
+
+    def compact(
+        self,
+        ledger: EventLedger,
+        *,
+        compaction_id: str,
+        snapshot_id: str,
+        policy: CompactionPolicy | None = None,
+        namespace_scope: str = "global",
+        active_pack_versions: Sequence[str] = (),
+        outstanding_reconciliation_refs: Sequence[str] = (),
+        advisory_soft_governance_versions: Sequence[str] = (),
+        external_pointer_digests: Sequence[str] = (),
+        derived_cache_entries: Sequence[str] = (),
+        advisory_artifacts: Sequence[str] = (),
+    ) -> tuple[CanonicalSnapshot, CompactionReceipt]:
+        policy = policy or CompactionPolicy()
+        before = ledger.events()
+        snapshot = CanonicalSnapshotStore(self.chain.directory / f"{snapshot_id}.json").create(
+            ledger, snapshot_id=snapshot_id, namespace_scope=namespace_scope,
+            active_pack_versions=active_pack_versions,
+            outstanding_reconciliation_refs=outstanding_reconciliation_refs,
+            advisory_soft_governance_versions=advisory_soft_governance_versions,
+        )
+        self.chain.write(snapshot)
+        after = ledger.events()
+        if [event.event_hash for event in before] != [event.event_hash for event in after]:
+            raise DurabilityError("compaction changed canonical event lineage")
+        receipt = CompactionReceipt(
+            compaction_id=compaction_id, source_event_count=len(before),
+            source_head_hash=before[-1].event_hash if before else ZERO_HASH,
+            snapshot_id=snapshot_id, policy_sha256=sha256_json(policy.to_dict()),
+            derived_cache_prune_candidates=max(0, len(derived_cache_entries) - policy.derived_cache_keep),
+            advisory_artifact_prune_candidates=max(0, len(advisory_artifacts) - policy.advisory_artifact_keep),
+            unresolved_reconciliation_refs_preserved=tuple(sorted(set(outstanding_reconciliation_refs))),
+            external_pointer_digests_preserved=tuple(sorted(set(external_pointer_digests))),
+        )
+        return snapshot, receipt
+
+
 __all__ = [
-    "CanonicalSnapshot", "CanonicalSnapshotStore", "DurabilityError", "SNAPSHOT_SCHEMA",
-    "SNAPSHOT_SCHEMA_EPOCH", "SnapshotIntegrityError", "SnapshotNamespaceError",
+    "CanonicalSnapshot", "CanonicalSnapshotStore", "CompactionPolicy", "CompactionReceipt",
+    "COMPACTION_SCHEMA", "DurabilityCompactor", "DurabilityError", "SNAPSHOT_SCHEMA",
+    "SNAPSHOT_SCHEMA_EPOCH", "SnapshotChainStore", "SnapshotIntegrityError", "SnapshotNamespaceError",
 ]

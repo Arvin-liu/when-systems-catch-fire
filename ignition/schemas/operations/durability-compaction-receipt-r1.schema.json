@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Arvin-liu/when-systems-catch-fire/schemas/operations/durability-compaction-receipt-r1.schema.json",
+  "type": "object",
+  "required": ["schema", "compaction_id", "source_event_count", "source_head_hash", "snapshot_id", "policy_sha256", "derived_cache_prune_candidates", "advisory_artifact_prune_candidates", "unresolved_reconciliation_refs_preserved", "external_pointer_digests_preserved", "event_lineage_preserved", "status", "receipt_sha256"],
+  "properties": {
+    "schema": {"const": "ignition-durability-compaction-receipt-r1"},
+    "compaction_id": {"type": "string", "minLength": 1},
+    "source_event_count": {"type": "integer", "minimum": 0},
+    "source_head_hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "snapshot_id": {"type": "string", "minLength": 1},
+    "policy_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "derived_cache_prune_candidates": {"type": "integer", "minimum": 0},
+    "advisory_artifact_prune_candidates": {"type": "integer", "minimum": 0},
+    "unresolved_reconciliation_refs_preserved": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
+    "external_pointer_digests_preserved": {"type": "array", "uniqueItems": true, "items": {"type": "string", "pattern": "^[0-9a-f]{64}$"}},
+    "event_lineage_preserved": {"const": true},
+    "status": {"const": "COMPLETED_WITH_LINEAGE_PRESERVED"},
+    "receipt_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  },
+  "additionalProperties": false
+}
