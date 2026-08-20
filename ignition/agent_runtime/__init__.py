@@ -68,6 +68,7 @@ from .accounting import ACCOUNTING_DIMENSIONS, ACCOUNTING_EVENT_SCHEMA, ACCOUNTI
 from .durable_memory import DURABLE_MEMORY_EPOCH, DURABLE_MEMORY_EVENT_SCHEMA, DURABLE_MEMORY_SCHEMA, DurableMemoryError, DurableMemoryEvent, DurableMemoryRecord, DurableOperationalMemoryStore, MemoryNamespaceDenied, MemorySnapshotIntegrityError, MEMORY_EVENT_TYPES, MEMORY_STATES
 from .recovery import DELIVERY_SEMANTICS, FAULT_POINTS, RECOVERY_PHASES, RECOVERY_SCHEMA, RecoveryBlocked, RecoveryError, RecoveryFaultInjected, RecoveryFaultMatrix, RecoveryOrchestrator, RecoveryPhase
 from .dr_bundle import DR_BUNDLE_EPOCH, DR_BUNDLE_SCHEMA, DRBundleError, DRBundleIntegrityError, RecoveryBundleBuilder, RecoveryBundleVerifier, REQUIRED_CHUNKS
+from .adversarial import ADVERSARIAL_SCHEMA, ALLOWED_OUTCOMES, AdversarialCase, AdversarialMatrix, AdversarialMatrixError, REQUIRED_CASE_IDS
 
 __all__ = [
     "ActionObservation",
@@ -285,4 +286,10 @@ __all__ = [
     "RecoveryBundleBuilder",
     "RecoveryBundleVerifier",
     "REQUIRED_CHUNKS",
+    "ADVERSARIAL_SCHEMA",
+    "ALLOWED_OUTCOMES",
+    "AdversarialCase",
+    "AdversarialMatrix",
+    "AdversarialMatrixError",
+    "REQUIRED_CASE_IDS",
 ]

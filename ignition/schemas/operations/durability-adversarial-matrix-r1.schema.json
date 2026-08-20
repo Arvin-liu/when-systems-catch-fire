@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Arvin-liu/when-systems-catch-fire/schemas/operations/durability-adversarial-matrix-r1.schema.json",
+  "type": "object",
+  "required": ["schema_version", "required_case_ids", "allowed_outcomes", "cases", "runner_rule", "claim_ceiling"],
+  "properties": {
+    "schema_version": {"const": "ignition-durability-adversarial-matrix-r1"},
+    "required_case_ids": {"type": "array", "minItems": 19, "uniqueItems": true, "items": {"type": "string"}},
+    "allowed_outcomes": {"const": ["FAIL_CLOSED", "RECONCILIATION_REQUIRED", "RESTART_AND_REPLAY"]},
+    "cases": {"type": "array", "minItems": 19, "items": {"type": "object", "required": ["case_id", "target_boundary", "mutation", "expected_outcome", "evidence_ref", "claim_ceiling", "case_digest"], "properties": {"case_id": {"type": "string"}, "target_boundary": {"type": "string"}, "mutation": {"type": "string"}, "expected_outcome": {"enum": ["FAIL_CLOSED", "RECONCILIATION_REQUIRED", "RESTART_AND_REPLAY"]}, "evidence_ref": {"type": "string"}, "claim_ceiling": {"type": "string"}, "case_digest": {"type": "string", "pattern": "^[0-9a-f]{64}$"}}, "additionalProperties": false}},
+    "runner_rule": {"const": "OFFLINE_CLASSIFICATION_ONLY_NO_EXTERNAL_INVOCATION_OR_AUTOMATIC_SIDE_EFFECT_RETRY"},
+    "claim_ceiling": {"const": "OFFLINE_ADVERSARIAL_COVERAGE_ONLY_NO_PRODUCTION_SAFETY_OR_EPISTEMIC_RESULT"}
+  },
+  "additionalProperties": false
+}
