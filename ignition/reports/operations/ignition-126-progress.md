@@ -11,6 +11,7 @@ by this run and remains `DEFERRED_PENDING_REBASE`.
 | 00 | COMPLETED | pending closure | pending closure | Fresh formal baseline, canonical governance inventory, and explicit Task 125 deferral. |
 | 01 | COMPLETED | pending closure | pending closure | Bounded ESI candidate definition, alternative explanations, claim ceiling and falsification/downgrade criteria. |
 | 02 | COMPLETED | pending closure | pending closure | Machine-enforced soft-governance non-authority contract and fail-closed negative fixtures. |
+| 03 | COMPLETED | pending closure | pending closure | Source-bound epistemic transition grammar with 12 rules, negative transitions and provenance validator. |
 
 ## Boundary
 
@@ -57,3 +58,14 @@ Governance Surface state and the non-authority invariant.
 - Unit tests: `tests/test_soft_governance_authority.py` (`4/4`).
 - Runtime source scan found no coupling between a soft input and a hard
   authority effect.
+
+## Step 03 evidence
+
+- Registry: `data/epistemic-governance/transition-grammar-r0.json` (`12` rules,
+  `24` source references).
+- Schema: `schemas/epistemic-governance/transition-grammar-r0.schema.json`.
+- Validator: `tools/validate_transition_grammar.py` (`PASS`, complete
+  provenance coverage).
+- Unit tests: `tests/test_transition_grammar.py` (`3/3`).
+- Rules cover engineering, publication, knowledge, agent, owner and
+  cross-cutting boundaries, including unknown retention and withdrawal/rebound.
