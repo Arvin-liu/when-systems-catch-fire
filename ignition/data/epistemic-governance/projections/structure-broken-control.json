@@ -1,0 +1,64 @@
+{
+  "schema_version": "structural-projection-r0",
+  "projection_id": "ESI-STRUCTURE_BROKEN_CONTROL",
+  "projection_type": "STRUCTURE_BROKEN_CONTROL",
+  "source_surface": "ignition/data/epistemic-governance/structural-surface-r0.json",
+  "design_intent": "Match the original topic and approximate information volume while rotating transition consequences so the governing structure is broken.",
+  "control_properties": {
+    "relation_preserved": false,
+    "terminology_preserved": true,
+    "style_matched": false,
+    "content_length_chars": 4142,
+    "item_count": 12
+  },
+  "items": [
+    {
+      "stable_id": "CONSENSUS_NOT_AUTHORITY",
+      "body": "关系前件：One or more models, Agents, reviewers or executors produce matching judgments or receipts.；局部转移：The local record may transition to a repository-scoped engineering completion state.；不能直接推出：Do not infer external truth, production safety or universal validity.；仍缺：Bind each judgment to its role, source, scope and independent validation path."
+    },
+    {
+      "stable_id": "ENGINEERING_COMPLETION_NOT_EXTERNAL_TRUTH",
+      "body": "关系前件：A repository implementation, validator, CI run or bounded pilot reaches its declared local completion state.；局部转移：The conclusion may be stated only up to the licensed level and scope.；不能直接推出：Do not widen scope, quantifier, causal force or generality without a new gate.；仍缺：Use the declared repository validator and retain its scope and residuals."
+    },
+    {
+      "stable_id": "EVIDENCE_LEVEL_CEILING",
+      "body": "关系前件：A source, fixture, review or observation supports a conclusion at a bounded evidence level.；局部转移：The fixture may support a repository-scoped compatibility or coordination statement.；不能直接推出：Do not generalize the result to production, all models, all providers or the external world.；仍缺：Use the claim ceiling, provenance and relevant adjudication or replication requirement."
+    },
+    {
+      "stable_id": "LOCAL_FIXTURE_NOT_GENERALIZATION",
+      "body": "关系前件：A disposable fixture or offline pilot produces a reproducible observation.；局部转移：The item may remain private, pending, non-republished or bounded as an observation.；不能直接推出：Do not treat a summary, path, hash or confidence score as a substitute for missing source bytes.；仍缺：Name the fixture, environment, provider status and untested dimensions."
+    },
+    {
+      "stable_id": "MISSING_PROVENANCE_DEGRADES",
+      "body": "关系前件：A proposed claim, observation or publication lacks recoverable source, rights or provenance binding.；局部转移：Only the named axis and its evidence-bound record may change.；不能直接推出：Do not infer an automatic M-to-E or E-to-M upgrade.；仍缺：Recover the required source and rights binding or preserve the restrictive disposition."
+    },
+    {
+      "stable_id": "M_E_ORTHOGONAL",
+      "body": "关系前件：A mathematical maturity, formalization or engineering-quality observation changes on one axis.；局部转移：The proposal may be recorded for Owner review without changing Owner state.；不能直接推出：Do not self-assign Owner acceptance, Owner authority or an Owner gate result.；仍缺：Use the independent axis gate and preserve the other axis as recorded."
+    },
+    {
+      "stable_id": "OWNER_ONLY_AUTHORITY",
+      "body": "关系前件：An Agent, model, receipt or local workflow proposes an Owner-level acceptance or permission decision.；局部转移：The effective capability is the validated intersection of declared scopes.；不能直接推出：Do not widen permission because a model is cautious, a surface was read or an ESI score is high.；仍缺：Require the explicit Owner-controlled gate and its auditable record."
+    },
+    {
+      "stable_id": "PERMISSION_INTERSECTION_ONLY_NARROWS",
+      "body": "关系前件：Task, profile, pack, executor and approval scopes are composed for a proposed action.；局部转移：The material may become a bounded public projection with its claim ceiling preserved.；不能直接推出：Do not infer that publication proves the represented proposition.；仍缺：Use the canonical policy/permission intersection and explicit approval contract."
+    },
+    {
+      "stable_id": "PUBLICATION_COMPLETION_NOT_TRUTH",
+      "body": "关系前件：A report, Results Book entry or public-safe explanation has passed its publication and privacy gates.；局部转移：The local operational record may transition to its declared bounded completion status.；不能直接推出：Do not set EPISTEMICALLY_ACCEPTED or claim external success from the runtime state.；仍缺：Preserve source, provenance, privacy, disposition and claim ceiling."
+    },
+    {
+      "stable_id": "RUNTIME_NOT_EPISTEMIC_ACCEPTANCE",
+      "body": "关系前件：A local runtime, executor adapter, pilot, receipt or recovery path reaches a terminal success state.；局部转移：The record may retain UNKNOWN, conditional or pending status.；不能直接推出：Do not fill an evidence gap with a plausible story, consensus or formatting cue.；仍缺：Preserve the explicit runtime claim ceiling and separate epistemic/Owner gates."
+    },
+    {
+      "stable_id": "UNKNOWN_MUST_REMAIN_UNKNOWN",
+      "body": "关系前件：The evidence packet, provenance or gate does not license a stronger conclusion.；局部转移：It remains in append-only lineage with the restrictive disposition.；不能直接推出：Do not revive it by changing its title, identifier, wording or projection surface.；仍缺：Name the missing evidence or authority required for a future transition."
+    },
+    {
+      "stable_id": "WITHDRAWN_NO_REBOUND",
+      "body": "关系前件：A claim or result is withdrawn, quarantined, downgraded or marked historical.；局部转移：The record may note agreement as bounded observation or review evidence.；不能直接推出：Do not convert agreement into Owner authority, truth or permission.；仍缺：Require a governed successor with new provenance and independently reviewed evidence."
+    }
+  ]
+}

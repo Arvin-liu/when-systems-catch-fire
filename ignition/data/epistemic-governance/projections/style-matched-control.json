@@ -1,0 +1,64 @@
+{
+  "schema_version": "structural-projection-r0",
+  "projection_id": "ESI-STYLE_MATCHED_CONTROL",
+  "projection_type": "STYLE_MATCHED_CONTROL",
+  "source_surface": "ignition/data/epistemic-governance/structural-surface-r0.json",
+  "design_intent": "Match cautious prose rhythm and formatting without presenting epistemic state-transition relations.",
+  "control_properties": {
+    "relation_preserved": false,
+    "terminology_preserved": false,
+    "style_matched": true,
+    "content_length_chars": 566,
+    "item_count": 12
+  },
+  "items": [
+    {
+      "stable_id": "CONSENSUS_NOT_AUTHORITY",
+      "body": "这里保留一种克制、分层、留有余地的表达方式（样式段 1）。它不声明前件、跃迁许可或所需证据。"
+    },
+    {
+      "stable_id": "ENGINEERING_COMPLETION_NOT_EXTERNAL_TRUTH",
+      "body": "这里保留一种克制、分层、留有余地的表达方式（样式段 2）。它不声明前件、跃迁许可或所需证据。"
+    },
+    {
+      "stable_id": "EVIDENCE_LEVEL_CEILING",
+      "body": "这里保留一种克制、分层、留有余地的表达方式（样式段 3）。它不声明前件、跃迁许可或所需证据。"
+    },
+    {
+      "stable_id": "LOCAL_FIXTURE_NOT_GENERALIZATION",
+      "body": "这里保留一种克制、分层、留有余地的表达方式（样式段 4）。它不声明前件、跃迁许可或所需证据。"
+    },
+    {
+      "stable_id": "MISSING_PROVENANCE_DEGRADES",
+      "body": "这里保留一种克制、分层、留有余地的表达方式（样式段 5）。它不声明前件、跃迁许可或所需证据。"
+    },
+    {
+      "stable_id": "M_E_ORTHOGONAL",
+      "body": "这里保留一种克制、分层、留有余地的表达方式（样式段 6）。它不声明前件、跃迁许可或所需证据。"
+    },
+    {
+      "stable_id": "OWNER_ONLY_AUTHORITY",
+      "body": "这里保留一种克制、分层、留有余地的表达方式（样式段 7）。它不声明前件、跃迁许可或所需证据。"
+    },
+    {
+      "stable_id": "PERMISSION_INTERSECTION_ONLY_NARROWS",
+      "body": "这里保留一种克制、分层、留有余地的表达方式（样式段 8）。它不声明前件、跃迁许可或所需证据。"
+    },
+    {
+      "stable_id": "PUBLICATION_COMPLETION_NOT_TRUTH",
+      "body": "这里保留一种克制、分层、留有余地的表达方式（样式段 9）。它不声明前件、跃迁许可或所需证据。"
+    },
+    {
+      "stable_id": "RUNTIME_NOT_EPISTEMIC_ACCEPTANCE",
+      "body": "这里保留一种克制、分层、留有余地的表达方式（样式段 10）。它不声明前件、跃迁许可或所需证据。"
+    },
+    {
+      "stable_id": "UNKNOWN_MUST_REMAIN_UNKNOWN",
+      "body": "这里保留一种克制、分层、留有余地的表达方式（样式段 11）。它不声明前件、跃迁许可或所需证据。"
+    },
+    {
+      "stable_id": "WITHDRAWN_NO_REBOUND",
+      "body": "这里保留一种克制、分层、留有余地的表达方式（样式段 12）。它不声明前件、跃迁许可或所需证据。"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema_version": "structural-projection-r0",
+  "projection_id": "ESI-CONCISE_CAPSULE",
+  "projection_type": "CONCISE_CAPSULE",
+  "source_surface": "ignition/data/epistemic-governance/structural-surface-r0.json",
+  "design_intent": "Provide a compact advisory capsule for experiment or cold-start reading; it is not a permission or safety contract.",
+  "control_properties": {
+    "relation_preserved": true,
+    "terminology_preserved": false,
+    "style_matched": false,
+    "content_length_chars": 3266,
+    "item_count": 12
+  },
+  "items": [
+    {
+      "stable_id": "CONSENSUS_NOT_AUTHORITY",
+      "body": "One or more models, Agents, reviewers or executors produce matching judgments or receipts. → The record may note agreement as bounded observation or review evidence.; stronger claim needs: Bind each judgment to its role, source, scope and independent validation path.."
+    },
+    {
+      "stable_id": "ENGINEERING_COMPLETION_NOT_EXTERNAL_TRUTH",
+      "body": "A repository implementation, validator, CI run or bounded pilot reaches its declared local completion state. → The local record may transition to a repository-scoped engineering completion state.; stronger claim needs: Use the declared repository validator and retain its scope and residuals.."
+    },
+    {
+      "stable_id": "EVIDENCE_LEVEL_CEILING",
+      "body": "A source, fixture, review or observation supports a conclusion at a bounded evidence level. → The conclusion may be stated only up to the licensed level and scope.; stronger claim needs: Use the claim ceiling, provenance and relevant adjudication or replication requirement.."
+    },
+    {
+      "stable_id": "LOCAL_FIXTURE_NOT_GENERALIZATION",
+      "body": "A disposable fixture or offline pilot produces a reproducible observation. → The fixture may support a repository-scoped compatibility or coordination statement.; stronger claim needs: Name the fixture, environment, provider status and untested dimensions.."
+    },
+    {
+      "stable_id": "MISSING_PROVENANCE_DEGRADES",
+      "body": "A proposed claim, observation or publication lacks recoverable source, rights or provenance binding. → The item may remain private, pending, non-republished or bounded as an observation.; stronger claim needs: Recover the required source and rights binding or preserve the restrictive disposition.."
+    },
+    {
+      "stable_id": "M_E_ORTHOGONAL",
+      "body": "A mathematical maturity, formalization or engineering-quality observation changes on one axis. → Only the named axis and its evidence-bound record may change.; stronger claim needs: Use the independent axis gate and preserve the other axis as recorded.."
+    },
+    {
+      "stable_id": "OWNER_ONLY_AUTHORITY",
+      "body": "An Agent, model, receipt or local workflow proposes an Owner-level acceptance or permission decision. → The proposal may be recorded for Owner review without changing Owner state.; stronger claim needs: Require the explicit Owner-controlled gate and its auditable record.."
+    },
+    {
+      "stable_id": "PERMISSION_INTERSECTION_ONLY_NARROWS",
+      "body": "Task, profile, pack, executor and approval scopes are composed for a proposed action. → The effective capability is the validated intersection of declared scopes.; stronger claim needs: Use the canonical policy/permission intersection and explicit approval contract.."
+    },
+    {
+      "stable_id": "PUBLICATION_COMPLETION_NOT_TRUTH",
+      "body": "A report, Results Book entry or public-safe explanation has passed its publication and privacy gates. → The material may become a bounded public projection with its claim ceiling preserved.; stronger claim needs: Preserve source, provenance, privacy, disposition and claim ceiling.."
+    },
+    {
+      "stable_id": "RUNTIME_NOT_EPISTEMIC_ACCEPTANCE",
+      "body": "A local runtime, executor adapter, pilot, receipt or recovery path reaches a terminal success state. → The local operational record may transition to its declared bounded completion status.; stronger claim needs: Preserve the explicit runtime claim ceiling and separate epistemic/Owner gates.."
+    },
+    {
+      "stable_id": "UNKNOWN_MUST_REMAIN_UNKNOWN",
+      "body": "The evidence packet, provenance or gate does not license a stronger conclusion. → The record may retain UNKNOWN, conditional or pending status.; stronger claim needs: Name the missing evidence or authority required for a future transition.."
+    },
+    {
+      "stable_id": "WITHDRAWN_NO_REBOUND",
+      "body": "A claim or result is withdrawn, quarantined, downgraded or marked historical. → It remains in append-only lineage with the restrictive disposition.; stronger claim needs: Require a governed successor with new provenance and independently reviewed evidence.."
+    }
+  ]
+}

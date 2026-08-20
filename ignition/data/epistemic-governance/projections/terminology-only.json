@@ -1,0 +1,64 @@
+{
+  "schema_version": "structural-projection-r0",
+  "projection_id": "ESI-TERMINOLOGY_ONLY",
+  "projection_type": "TERMINOLOGY_ONLY",
+  "source_surface": "ignition/data/epistemic-governance/structural-surface-r0.json",
+  "design_intent": "Keep recognizable governance vocabulary and matched item count, while omitting the relations that could license a transition.",
+  "control_properties": {
+    "relation_preserved": false,
+    "terminology_preserved": true,
+    "style_matched": false,
+    "content_length_chars": 511,
+    "item_count": 12
+  },
+  "items": [
+    {
+      "stable_id": "CONSENSUS_NOT_AUTHORITY",
+      "body": "术语卡 1：Claim Ceiling；相关词汇被保留，但状态前件、允许转移和缺口关系未提供。"
+    },
+    {
+      "stable_id": "ENGINEERING_COMPLETION_NOT_EXTERNAL_TRUTH",
+      "body": "术语卡 2：K13；相关词汇被保留，但状态前件、允许转移和缺口关系未提供。"
+    },
+    {
+      "stable_id": "EVIDENCE_LEVEL_CEILING",
+      "body": "术语卡 3：M/E；相关词汇被保留，但状态前件、允许转移和缺口关系未提供。"
+    },
+    {
+      "stable_id": "LOCAL_FIXTURE_NOT_GENERALIZATION",
+      "body": "术语卡 4：Owner；相关词汇被保留，但状态前件、允许转移和缺口关系未提供。"
+    },
+    {
+      "stable_id": "MISSING_PROVENANCE_DEGRADES",
+      "body": "术语卡 5：evidence；相关词汇被保留，但状态前件、允许转移和缺口关系未提供。"
+    },
+    {
+      "stable_id": "M_E_ORTHOGONAL",
+      "body": "术语卡 6：permission；相关词汇被保留，但状态前件、允许转移和缺口关系未提供。"
+    },
+    {
+      "stable_id": "OWNER_ONLY_AUTHORITY",
+      "body": "术语卡 7：quarantine；相关词汇被保留，但状态前件、允许转移和缺口关系未提供。"
+    },
+    {
+      "stable_id": "PERMISSION_INTERSECTION_ONLY_NARROWS",
+      "body": "术语卡 8：truth；相关词汇被保留，但状态前件、允许转移和缺口关系未提供。"
+    },
+    {
+      "stable_id": "PUBLICATION_COMPLETION_NOT_TRUTH",
+      "body": "术语卡 9：unknown；相关词汇被保留，但状态前件、允许转移和缺口关系未提供。"
+    },
+    {
+      "stable_id": "RUNTIME_NOT_EPISTEMIC_ACCEPTANCE",
+      "body": "术语卡 10：withdrawn；相关词汇被保留，但状态前件、允许转移和缺口关系未提供。"
+    },
+    {
+      "stable_id": "UNKNOWN_MUST_REMAIN_UNKNOWN",
+      "body": "术语卡 11：Claim Ceiling；相关词汇被保留，但状态前件、允许转移和缺口关系未提供。"
+    },
+    {
+      "stable_id": "WITHDRAWN_NO_REBOUND",
+      "body": "术语卡 12：K13；相关词汇被保留，但状态前件、允许转移和缺口关系未提供。"
+    }
+  ]
+}

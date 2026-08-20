@@ -13,6 +13,7 @@ by this run and remains `DEFERRED_PENDING_REBASE`.
 | 02 | COMPLETED | pending closure | pending closure | Machine-enforced soft-governance non-authority contract and fail-closed negative fixtures. |
 | 03 | COMPLETED | pending closure | pending closure | Source-bound epistemic transition grammar with 12 rules, negative transitions and provenance validator. |
 | 04 | COMPLETED | pending closure | pending closure | Deterministic original Structural Governance Surface generated from grammar, contract and Current identity. |
+| 05 | COMPLETED | pending closure | pending closure | Five deterministic exposure/control projections with recorded relation, terminology, style and length properties. |
 
 ## Boundary
 
@@ -79,3 +80,14 @@ Governance Surface state and the non-authority invariant.
 - Projection contains `12/12` grammar relations and labels itself
   `ADVISORY_READING_SURFACE_NOT_PROMPT`.
 - Deterministic generator check passed; unit tests `3/3` passed.
+
+## Step 05 evidence
+
+- Generator: `tools/generate_structural_projections.py`.
+- Projection arms: `5/5` — delexicalized structure, terminology-only,
+  structure-broken, style-matched control and concise capsule.
+- Each arm has `12` matched item identities and records whether relations,
+  terminology and style were preserved plus serialized content length.
+- Deterministic projection check passed; unit tests `4/4` passed.
+- The terminology-only arm contains vocabulary without transition relations;
+  the delexicalized arm retains relations without named governance terms.
