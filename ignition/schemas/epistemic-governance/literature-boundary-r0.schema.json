@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Arvin-liu/when-systems-catch-fire/schemas/epistemic-governance/literature-boundary-r0.schema.json",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "boundary_id",
+    "review_status",
+    "novelty_status",
+    "as_of",
+    "question",
+    "sources",
+    "bounded_conclusions",
+    "not_established",
+    "pending_tests",
+    "claim_ceiling"
+  ],
+  "properties": {
+    "schema_version": {"const": "literature-boundary-r0"},
+    "boundary_id": {"const": "ESI-LITERATURE-BOUNDARY-R0"},
+    "review_status": {"const": "PRIMARY_SOURCE_REVIEW_COMPLETE"},
+    "novelty_status": {"const": "NOVELTY_NOT_ESTABLISHED"},
+    "as_of": {"type": "string", "format": "date"},
+    "question": {"type": "string", "minLength": 40},
+    "sources": {
+      "type": "array",
+      "minItems": 4,
+      "items": {
+        "type": "object",
+        "required": ["source_id", "source_kind", "title", "url", "retrieved_on", "relevance", "supports", "does_not_establish"],
+        "properties": {
+          "source_id": {"type": "string", "pattern": "^[A-Z0-9-]+$"},
+          "source_kind": {"enum": ["PRIMARY_PAPER", "PRIMARY_CONFERENCE_PAPER"]},
+          "title": {"type": "string", "minLength": 20},
+          "url": {"type": "string", "format": "uri", "pattern": "^https://"},
+          "retrieved_on": {"type": "string", "format": "date"},
+          "relevance": {"type": "string", "minLength": 40},
+          "supports": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 20}},
+          "does_not_establish": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 20}}
+        },
+        "additionalProperties": false
+      }
+    },
+    "bounded_conclusions": {"type": "array", "minItems": 4, "items": {"type": "string", "minLength": 40}},
+    "not_established": {"type": "array", "minItems": 5, "items": {"type": "string", "minLength": 30}},
+    "pending_tests": {"type": "array", "minItems": 5, "items": {"type": "string", "minLength": 30}},
+    "claim_ceiling": {"type": "array", "minItems": 4, "items": {"type": "string", "minLength": 30}}
+  },
+  "additionalProperties": false
+}

@@ -19,6 +19,7 @@ by this run and remains `DEFERRED_PENDING_REBASE`.
 | 08 | COMPLETED | pending closure | pending closure | Anonymous blind packet, structured annotation schema and separate decision/style/utility scoring axes. |
 | 09 | COMPLETED | pending closure | pending closure | Provider-neutral offline-first runner with JSON/JSONL ingestion, readiness state and explicit live-call skip boundary. |
 | 10 | COMPLETED | pending closure | pending closure | Public-safe Owner observation seed with explicit non-replication/non-causal status and privacy scan. |
+| 11 | COMPLETED | pending closure | pending closure | Primary-source literature boundary, novelty non-claim, and source-to-test translation. |
 
 ## Boundary
 
@@ -156,3 +157,14 @@ Governance Surface state and the non-authority invariant.
   private source content, screenshots, paths, identifiers and platform content
   are all explicitly false. Negative private-path fixture is rejected.
 - Unit tests `2/2` passed.
+
+## Step 11 evidence
+
+- Literature boundary: `data/epistemic-governance/literature-boundary-r0.json`.
+- Four primary sources were reviewed with direct links, relevance, and explicit
+  non-establishment statements; the status remains `NOVELTY_NOT_ESTABLISHED`.
+- Human explanation: `docs/architecture/esi-literature-boundary-r0.md`.
+- Validator: `tools/validate_literature_boundary.py` passed with source-domain
+  allowlisting and negative novelty/proof checks.
+- Unit tests `3/3` passed. The source review motivates controls but does not
+  establish ESI, durability, transfer, causality, external validity or authority.
