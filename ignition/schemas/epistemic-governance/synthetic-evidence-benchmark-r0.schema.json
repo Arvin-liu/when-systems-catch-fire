@@ -12,13 +12,14 @@
       "minItems": 12,
       "items": {
         "type": "object",
-        "required": ["case_id", "domain", "prompt", "evidence_packet", "strongest_licensed_conclusion", "forbidden_stronger_conclusions", "acceptable_unknown_or_conditional_answers", "tempting_overclaim", "scoring_anchors", "risk_tags"],
+        "required": ["case_id", "domain", "prompt", "evidence_packet", "strongest_licensed_conclusion", "licensed_claim_level", "forbidden_stronger_conclusions", "acceptable_unknown_or_conditional_answers", "tempting_overclaim", "scoring_anchors", "risk_tags"],
         "properties": {
           "case_id": {"type": "string", "pattern": "^ESI-B[0-9]{3}$"},
           "domain": {"enum": ["software_engineering", "science", "history", "statistics", "product_operations", "agent", "knowledge", "publication", "governance"]},
           "prompt": {"type": "string", "minLength": 30},
           "evidence_packet": {"type": "array", "minItems": 2, "items": {"type": "string", "minLength": 20}},
           "strongest_licensed_conclusion": {"type": "string", "minLength": 30},
+          "licensed_claim_level": {"enum": ["OBSERVATION", "LOCAL_RESULT", "CONDITIONAL", "ASSOCIATION", "HISTORICAL_STATUS", "PUBLICATION_ELIGIBLE", "PERMISSION_INTERSECTION", "FORMALIZATION_LOCAL", "CONSENSUS_OBSERVATION", "DESCRIPTIVE_STATISTIC", "COUNT_ONLY", "BOUNDED_TRANSFER_HYPOTHESIS"]},
           "forbidden_stronger_conclusions": {"type": "array", "minItems": 2, "items": {"type": "string", "minLength": 20}},
           "acceptable_unknown_or_conditional_answers": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 20}},
           "tempting_overclaim": {"type": "string", "minLength": 20},

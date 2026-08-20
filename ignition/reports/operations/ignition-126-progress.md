@@ -16,6 +16,7 @@ by this run and remains `DEFERRED_PENDING_REBASE`.
 | 05 | COMPLETED | pending closure | pending closure | Five deterministic exposure/control projections with recorded relation, terminology, style and length properties. |
 | 06 | COMPLETED | pending closure | pending closure | Sixteen synthetic evidence cases with gold boundaries, forbidden transitions and over-caution negatives across nine domains. |
 | 07 | COMPLETED | pending closure | pending closure | Seven exposure arms × seven challenge arms with 49 deterministic adversarial envelopes and no fabricated outputs. |
+| 08 | COMPLETED | pending closure | pending closure | Anonymous blind packet, structured annotation schema and separate decision/style/utility scoring axes. |
 
 ## Boundary
 
@@ -116,3 +117,17 @@ Governance Surface state and the non-authority invariant.
   consensus and direct overclaim pressure are explicit.
 - Every envelope is `live_output_status=NOT_SUPPLIED`; no model output is
   fabricated. Unit tests `3/3` passed.
+
+## Step 08 evidence
+
+- Blind packet: `data/epistemic-governance/blind-evaluation-packet-r0.json`
+  contains `49` units with `EXP-*`, `CHAL-*` and `CASE-*` anonymous codes;
+  original exposure labels are not in the review packet.
+- Annotation schema: `schemas/epistemic-governance/blind-annotation-schema-r0.schema.json`.
+- Rubric: `data/epistemic-governance/scoring-rubric-r0.json` with separate
+  decision-boundary, style/language and usefulness axes.
+- Scorer: `tools/score_esi_response.py`; terminology leakage cannot increase
+  boundary adherence, and missing structured annotations return
+  `HUMAN_REVIEW_REQUIRED`.
+- Benchmark cases now carry explicit licensed claim levels. Unit tests `3/3`
+  passed; the combined ESI suite through Step 08 is `25/25`.

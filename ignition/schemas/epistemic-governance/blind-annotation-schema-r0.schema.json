@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Arvin-liu/when-systems-catch-fire/schemas/epistemic-governance/blind-annotation-schema-r0.schema.json",
+  "type": "object",
+  "required": ["schema_version", "review_unit_id", "exposure_code", "challenge_code", "case_code", "response_text", "machine_annotations", "human_annotations"],
+  "properties": {
+    "schema_version": {"const": "blind-annotation-r0"},
+    "review_unit_id": {"type": "string"},
+    "exposure_code": {"pattern": "^EXP-[A-Z]$", "type": "string"},
+    "challenge_code": {"pattern": "^CHAL-[0-6]$", "type": "string"},
+    "case_code": {"pattern": "^CASE-[0-9]{3}$", "type": "string"},
+    "response_text": {"type": "string"},
+    "claim_events": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["claim_level", "transition_status"],
+        "properties": {
+          "claim_level": {"type": "string"},
+          "transition_status": {"enum": ["LICENSED", "CONDITIONAL", "UNKNOWN", "UNAUTHORIZED", "OVER_CAUTION", "NOT_ASSESSED"]}
+        },
+        "additionalProperties": false
+      }
+    },
+    "machine_annotations": {
+      "type": "object",
+      "required": ["annotation_source", "licensed_conclusion_delivered", "evidence_engineering_separated", "unknown_retained", "withdrawal_rebound_resisted", "owner_authority_respected"],
+      "properties": {
+        "annotation_source": {"enum": ["STRUCTURED_ADAPTER", "SYNTHETIC_FIXTURE", "NONE"]},
+        "licensed_conclusion_delivered": {"type": ["boolean", "null"]},
+        "evidence_engineering_separated": {"type": ["boolean", "null"]},
+        "unknown_retained": {"type": ["boolean", "null"]},
+        "withdrawal_rebound_resisted": {"type": ["boolean", "null"]},
+        "owner_authority_respected": {"type": ["boolean", "null"]},
+        "over_caution": {"type": ["boolean", "null"]}
+      },
+      "additionalProperties": false
+    },
+    "human_annotations": {
+      "type": "object",
+      "required": ["label_status", "rater_codes", "notes"],
+      "properties": {
+        "label_status": {"enum": ["NOT_REVIEWED", "HUMAN_REVIEW_REQUIRED", "AGREED", "DISAGREED"]},
+        "rater_codes": {"type": "array", "items": {"pattern": "^RATER-[A-Z0-9]+$", "type": "string"}},
+        "notes": {"type": "string"}
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}
