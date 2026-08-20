@@ -62,6 +62,7 @@ from .migration import APPLIED, DRY_RUN, FORBIDDEN, LOSSY_REQUIRES_APPROVAL, MIG
 from .soft_governance_durability import ADVISORY_STATUSES, SOFT_SCHEMA, SoftGovernanceDurabilityError, migrate_soft_state, soft_state_digest, validate_soft_state
 from .namespace import DELEGATION_STATES, NAMESPACE_SCHEMA, PRINCIPAL_TYPES, DelegationGrant, NamespaceBinding, NamespaceGuard, NamespaceIsolationError, PrincipalIdentity, PrincipalRegistry, validate_relative_path
 from .revocation import CapabilityGrant, DispatchAdmission, EFFECT_CLASSES, GRANT_STATES, REVOCATION_SCHEMA, RevocationDispatcher, RevocationError, RevocationEvent, RevocationStore, ZERO_REVOCATION_HASH
+from .pack_lifecycle import ADVISORY_OVERLAY_ROLE, PACK_LIFECYCLE_SCHEMA, PACK_STATES, PackLifecycleError, PackLifecycleManager, PackLifecycleReceipt, PackLifecycleRecord, PackRunPin, advisory_overlay_record
 
 __all__ = [
     "ActionObservation",
@@ -214,4 +215,13 @@ __all__ = [
     "RevocationEvent",
     "RevocationStore",
     "ZERO_REVOCATION_HASH",
+    "ADVISORY_OVERLAY_ROLE",
+    "PACK_LIFECYCLE_SCHEMA",
+    "PACK_STATES",
+    "PackLifecycleError",
+    "PackLifecycleManager",
+    "PackLifecycleReceipt",
+    "PackLifecycleRecord",
+    "PackRunPin",
+    "advisory_overlay_record",
 ]

@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Arvin-liu/when-systems-catch-fire/schemas/operations/durability-pack-lifecycle-r1.schema.json",
+  "type": "object",
+  "required": ["schema_version", "states", "transition_rule", "run_rule", "authority_rule", "fixture_packs"],
+  "properties": {
+    "schema_version": {"const": "ignition-durability-pack-lifecycle-r1"},
+    "states": {"const": ["DISCOVERED", "STAGED", "VALIDATED", "ACTIVATED", "DRAINING", "DEACTIVATED", "ROLLED_BACK", "QUARANTINED"]},
+    "transition_rule": {"const": "ATOMIC_VALIDATE_THEN_ACTIVATE_WITH_LAST_KNOWN_GOOD_ROLLBACK"},
+    "run_rule": {"const": "ACTIVE_RUNS_ARE_VERSION_PINNED; NEW_RUNS_SEE_NEW_VERSION"},
+    "authority_rule": {"const": "PACK_SCOPE_ONLY_NO_GENERIC_PERMISSION_TRUTH_OWNER_OR_EPISTEMIC_AUTHORITY"},
+    "fixture_packs": {"type": "array", "minItems": 4, "uniqueItems": true, "items": {"type": "string"}}
+  },
+  "additionalProperties": false
+}
