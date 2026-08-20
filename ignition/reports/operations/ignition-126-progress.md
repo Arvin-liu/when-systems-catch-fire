@@ -10,6 +10,7 @@ by this run and remains `DEFERRED_PENDING_REBASE`.
 | --- | --- | --- | --- | --- |
 | 00 | COMPLETED | pending closure | pending closure | Fresh formal baseline, canonical governance inventory, and explicit Task 125 deferral. |
 | 01 | COMPLETED | pending closure | pending closure | Bounded ESI candidate definition, alternative explanations, claim ceiling and falsification/downgrade criteria. |
+| 02 | COMPLETED | pending closure | pending closure | Machine-enforced soft-governance non-authority contract and fail-closed negative fixtures. |
 
 ## Boundary
 
@@ -45,3 +46,14 @@ Governance Surface state and the non-authority invariant.
 - Alternative explanations include in-context learning, task inference,
   structural priming, style/terminology imitation, default alignment and
   contextual mimicry.
+
+## Step 02 evidence
+
+- Contract: `data/epistemic-governance/soft-governance-non-authority-invariant-r0.json`.
+- Human explanation: `data/epistemic-governance/soft-governance-contract.md`.
+- Validator: `tools/validate_soft_governance_authority.py` (`PASS`).
+- Negative authority fixtures: `3/3` fail closed for authorization, truth
+  status and Owner acceptance attempts.
+- Unit tests: `tests/test_soft_governance_authority.py` (`4/4`).
+- Runtime source scan found no coupling between a soft input and a hard
+  authority effect.

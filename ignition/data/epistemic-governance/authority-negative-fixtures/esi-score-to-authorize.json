@@ -1,0 +1,7 @@
+{
+  "fixture_id": "ESI-AUTH-NEG-001",
+  "soft_input": {"esi_score": 0.94, "source": "offline_experiment"},
+  "requested_effect": "AUTHORIZATION",
+  "target": "permission_gate",
+  "expected": "REJECT_SOFT_AUTHORITY_ESCALATION"
+}

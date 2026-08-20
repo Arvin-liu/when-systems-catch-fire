@@ -1,0 +1,40 @@
+{
+  "schema_version": "soft-governance-non-authority-invariant-r0",
+  "invariant_id": "SOFT_GOVERNANCE_NON_AUTHORITY_INVARIANT",
+  "status": "MACHINE_ENFORCED",
+  "soft_inputs": [
+    "esi_score",
+    "soft_context_exposure",
+    "structural_governance_surface",
+    "behavioral_observation",
+    "style_similarity",
+    "terminology_leakage"
+  ],
+  "allowed_effects": [
+    "ADVISORY_CONTEXT",
+    "BEHAVIOR_TELEMETRY",
+    "EXPERIMENT_ROUTING_PREFERENCE",
+    "HUMAN_EXPLANATION"
+  ],
+  "forbidden_authority_effects": [
+    "PERMISSION_GRANT",
+    "AUTHORIZATION",
+    "TRUTH_STATUS",
+    "M_AXIS_UPGRADE",
+    "E_AXIS_UPGRADE",
+    "OWNER_ACCEPTANCE",
+    "EPISTEMIC_ACCEPTANCE",
+    "EXTERNAL_SIDE_EFFECT_AUTHORIZATION",
+    "SAFETY_RELEASE",
+    "CLAIM_CEILING_WIDENING"
+  ],
+  "hard_authority_sources": [
+    "canonical permission intersection",
+    "state machine and validator",
+    "K13 ASSERTION_NON_ESCALATION",
+    "Claim Ceiling and provenance/adjudication",
+    "Owner gate"
+  ],
+  "contract_text": "Soft structural governance may affect advisory context, telemetry, experimental routing preference and human explanation only. A soft observation, score, exposure flag or surface similarity cannot authorize an action, change truth or M/E status, widen a claim ceiling, establish Owner or epistemic acceptance, authorize an external side effect or release a safety gate.",
+  "escalation_rule": "If a soft input is presented with an authority effect, fail closed and require the unchanged canonical hard gate; never convert the soft value into a substitute approval."
+}
