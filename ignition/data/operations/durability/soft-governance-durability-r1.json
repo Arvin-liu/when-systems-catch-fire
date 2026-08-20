@@ -1,0 +1,21 @@
+{
+  "schema_version": "ignition-durability-soft-governance-r1",
+  "state_id": "esi-soft-state-126",
+  "format_epoch": 1,
+  "status": "CANDIDATE_ESI_SIGNAL",
+  "claim_ceiling": "Candidate advisory structural signal only; no mechanism, external validity, truth, permission, safety, Owner acceptance or epistemic acceptance is established.",
+  "transition_grammar_version": "transition-grammar-r0",
+  "structural_surface_version": "structural-surface-r0",
+  "projection_versions": ["projection-r0", "soft-context-exposure-contract-r0"],
+  "soft_exposure_receipt_ref": "data/agent-federation/soft-context-exposure-contract-r0.json",
+  "experiment_protocol_state": "NOT_RUN_LIVE_EXTERNAL",
+  "authority_effects": {
+    "capability_delta": "NONE",
+    "permission_delta": "NONE",
+    "authorization_delta": "NONE",
+    "truth_status_delta": "NONE",
+    "owner_status_delta": "NONE",
+    "epistemic_acceptance_delta": "NONE",
+    "safety_delta": "NONE"
+  }
+}
