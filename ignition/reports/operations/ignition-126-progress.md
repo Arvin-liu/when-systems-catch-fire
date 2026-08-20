@@ -183,3 +183,16 @@ Governance Surface state and the non-authority invariant.
   checks passed. Unit tests `3/3` passed.
 - Claim ceiling remains offline fixture scoring only; this is not live-model
   behavior, external validity, causal proof, or ESI acceptance.
+
+## Step 13 evidence
+
+- Human surface: `docs/architecture/esi-human-surface-r0.md`.
+- The first screen answers what/why, allowed use, non-claims, missing work and
+  return path to precise records. It distinguishes soft advisory context from
+  hard authority and states that the candidate is not brainwashing, permanent
+  training or a weight-update claim.
+- The page explicitly uses the current `之元写作法 0.5.0` route, keeps the
+  machine record as authority, and makes failure downgrade to
+  `ANECDOTE_OR_OPEN_QUESTION` visible.
+- Validator and negative prompt/stronger-claim fixtures passed; unit tests
+  `3/3` passed.
