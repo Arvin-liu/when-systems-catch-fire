@@ -46,10 +46,11 @@
     "identityExpectations": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["current_formal_task", "latest_architecture_changing_task", "previous_formal_task", "release_candidate_task", "publication_witness_task"],
+      "required": ["current_formal_task", "latest_architecture_changing_task", "previous_canonical_current_task", "previous_formal_task", "release_candidate_task", "publication_witness_task"],
       "properties": {
         "current_formal_task": {"const": "IGNITION-20260822-132"},
         "latest_architecture_changing_task": {"const": "IGNITION-20260821-129"},
+        "previous_canonical_current_task": {"const": "IGNITION-20260821-130"},
         "previous_formal_task": {"const": "IGNITION-20260821-131"},
         "release_candidate_task": {"const": "IGNITION-20260822-132"},
         "publication_witness_task": {"const": "IGNITION-20260822-132"}

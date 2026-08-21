@@ -236,3 +236,12 @@
 - obligations: Step 09–13 must retain the 11 pre-existing Human Surface source-hash drifts, historical projection residuals and long-running validator residuals as classified evidence; complete terminal lifecycle, deterministic two-pass closure, fresh-clone replay, formal main publication and the independent 1111 receipt. Live external invocation remains bounded and may remain `NOT_RUN_LIVE_EXTERNAL_INVOCATION`.
 - stale_knowledge: Task 129 remains the latest architecture-changing task; historical Task 126/127/128/129 entries retain provenance and do not override the Task 130 generated Current block. No map version or identity epoch upgrade is implied by this presentation-only compiler.
 - next_read: read [`current-release-lifecycle-r1.json`](./data/operations/current-release-lifecycle-r1.json), [`current-snapshot-r1.json`](./data/operations/current-snapshot-r1.json), [`step08-semantic-gate-report.json`](./data/operations/iterations/130/step08-semantic-gate-report.json) and the Task 130 result/receipt after release; do not treat this projection as formal main or 1111 publication evidence.
+
+## 2026-08-22 — IGNITION-20260822-132-CANONICAL-CURRENT-ADVANCEMENT — task-branch source transition
+
+- main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; this append-only entry records the canonical source transition on the Task132 branch, not formal main publication.
+- current_formal_task: `IGNITION-20260822-132` is `IN_PROGRESS` and non-terminal; the previous canonical Current source was `IGNITION-20260821-130`, while the previous formal task is `IGNITION-20260821-131`.
+- task_lineage: `IGNITION-125` remains `HISTORICAL_UNEXECUTED` with requirements `REBASED_INTO_127`; `IGNITION-127` remains `COMPLETED_WITH_CLASSIFIED_RESIDUALS`; formal task history retains `IGNITION-129 -> IGNITION-130 -> IGNITION-131 -> IGNITION-132`.
+- architecture_boundary: latest architecture-changing task remains `IGNITION-20260821-129`; this release-governance advancement does not upgrade the architecture identity or map version.
+- epistemic_state: `CURRENT_WITH_OPEN_OBLIGATIONS` and `EPISTEMICALLY_ACCEPTED=0` remain unchanged; source advancement is repository-local lifecycle evidence only and does not grant Owner authority or establish external truth.
+- next_read: follow the Task132 execution contract, release-candidate identity gate and generated Current projection; historical 129–131 receipts remain immutable history.

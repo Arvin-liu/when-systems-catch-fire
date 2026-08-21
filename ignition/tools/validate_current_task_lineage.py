@@ -12,6 +12,11 @@ from typing import Any
 
 from jsonschema import Draft202012Validator
 
+try:
+    from tools import advance_current_task
+except ImportError:  # direct script / tools-on-PYTHONPATH execution
+    import advance_current_task
+
 
 HERE = Path(__file__).resolve()
 ROOT = HERE.parents[1]
@@ -107,8 +112,8 @@ def validate_current_surfaces(source: dict[str, Any]) -> list[str]:
     append_only_path = source["current_surface_status_requirements"]["append_only_current_path"]
     try:
         changelog = resolve_repo_path(append_only_path).read_text(encoding="utf-8")
-        marker_prefix = f"## 2026-08-21 — {source['current_task']['task_id']}-"
-        markers = [line for line in changelog.splitlines() if line.startswith(marker_prefix)]
+        task_marker = source["current_task"]["task_id"]
+        markers = [line for line in changelog.splitlines() if line.startswith("## ") and task_marker in line]
         if not markers:
             errors.append(f"TASK_LINEAGE_CURRENT_APPEND_MISSING:{append_only_path}")
         else:
@@ -155,6 +160,8 @@ def validate(document: dict[str, Any] | None = None) -> list[str]:
         return errors
 
     current_task = source["current_task"]
+    if "task_identity" in source:
+        errors.extend(advance_current_task.validate_state(source))
     if current_task["execution_status"] == "IN_PROGRESS" and current_task["terminal"]:
         errors.append("IN_PROGRESS current task cannot be terminal")
     if current_task["execution_status"] == "COMPLETED_WITH_CLASSIFIED_RESIDUALS" and not current_task["terminal"]:

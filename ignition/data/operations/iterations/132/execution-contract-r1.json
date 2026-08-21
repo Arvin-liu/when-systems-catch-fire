@@ -21,6 +21,7 @@
   "identity_expectations": {
     "current_formal_task": "IGNITION-20260822-132",
     "latest_architecture_changing_task": "IGNITION-20260821-129",
+    "previous_canonical_current_task": "IGNITION-20260821-130",
     "previous_formal_task": "IGNITION-20260821-131",
     "release_candidate_task": "IGNITION-20260822-132",
     "publication_witness_task": "IGNITION-20260822-132"
