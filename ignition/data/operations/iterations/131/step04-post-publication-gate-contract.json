@@ -1,0 +1,29 @@
+{
+  "schema_version": "ignition-131-step04-post-publication-gate-contract-r1",
+  "task_id": "IGNITION-20260821-131",
+  "validator": "ignition/tools/validate_post_publication_current.py",
+  "post_publication_requirements": {
+    "fresh_fetch": true,
+    "remote_ref": "refs/heads/main",
+    "remote_observation_command": "git ls-remote origin refs/heads/main",
+    "required_branch": "main",
+    "required_sha_equalities": [
+      "expected_sha == observed_remote_sha",
+      "observed_remote_sha == fresh_clone_head_sha",
+      "expected_sha == fresh_clone_head_sha"
+    ],
+    "clean_worktree": true,
+    "current_semantic_recheck": true
+  },
+  "fail_closed_cases": {
+    "missing_origin": "BLOCKED_WITH_EVIDENCE",
+    "unreachable_origin": "BLOCKED_WITH_EVIDENCE",
+    "ambiguous_remote_ref": "BLOCKED_WITH_EVIDENCE",
+    "remote_sha_mismatch": "FAIL",
+    "expected_sha_mismatch": "FAIL",
+    "detached_head_without_explicit_mode": "FAIL",
+    "dirty_worktree": "FAIL"
+  },
+  "forbidden_shortcut": "Local branch name and local HEAD alone cannot establish post-publication.",
+  "claim_ceiling": "Observation-time repository-local Current and Git ref evidence only; no external truth, production readiness, Owner acceptance or epistemic acceptance is inferred."
+}
