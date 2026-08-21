@@ -1,0 +1,7 @@
+{
+  "schema": "os-steering-intent-obligation-r1.episode-binding-fixtures",
+  "cases": [
+    {"episode_id": "episode-research-1", "goal_id": "goal-research-1", "intent_id": "intent-research-1", "statement": "Produce a bounded synthetic research brief", "namespace": "owner.synthetic", "completion_contract_id": "contract-research-1", "goal_status": "ACTIVE", "run_ids": ["run-research-1", "run-review-1"], "secondary_goal_ids": ["goal-review-1"], "executor_instances": {"run-research-1": "instance-1", "run-review-1": "instance-1"}},
+    {"episode_id": "episode-writing-1", "goal_id": "goal-writing-1", "intent_id": "intent-writing-1", "statement": "Draft a bounded synthetic memo", "namespace": "owner.synthetic", "completion_contract_id": "contract-writing-1", "goal_status": "BLOCKED", "run_ids": ["run-writing-1"], "secondary_goal_ids": [], "executor_instances": {"run-writing-1": "instance-2"}}
+  ]
+}

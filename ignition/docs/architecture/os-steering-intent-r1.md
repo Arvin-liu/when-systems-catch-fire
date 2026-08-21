@@ -16,6 +16,8 @@ Intent and Goal lifecycle transitions preserve actor, authority, reason, evidenc
 
 Long-term Goal dependency edges are held in a `LONG_TERM_STEERING` graph. The existing Supervisor run DAG remains an execution coordination structure. Neither graph may impersonate the other or promote an execution result into Intent authority.
 
+An `EpisodeGoalBinding` records the primary/secondary Goal references, objective digest, bound Run IDs, Episode status, Run outcomes, and handoff identities. Supervisor status changes, a `PASS` Run, or executor-instance handoff preserve the binding's Goal status and mark completion as `INDEPENDENT_CONTRACT_REQUIRED`; they never mutate the canonical Goal.
+
 ## Priority and arbitration
 
 Priority is an ordered tuple of explicit rules: eligibility/permission, active Owner override, Owner rank, commitment state, temporal state, dependency criticality, risk, and bounded fairness age. A telemetry score may be emitted for inspection, but it is not authoritative and cannot override permission, safety, blocked, stale, superseded, or executor-unavailable state.

@@ -1749,6 +1749,196 @@ def authority_digest(provenance: AuthorityProvenance) -> str:
     return hashlib.sha256(json.dumps(provenance.to_dict(), sort_keys=True, separators=(",", ":")).encode("utf-8")).hexdigest()
 
 
+@dataclass(frozen=True)
+class HandoffIdentity:
+    run_id: str
+    executor_instance_id: str
+    sequence: int = 0
+
+    def __post_init__(self) -> None:
+        _safe_id(self.run_id, "handoff.run_id")
+        _safe_id(self.executor_instance_id, "handoff.executor_instance_id")
+        if not isinstance(self.sequence, int) or isinstance(self.sequence, bool) or self.sequence < 0:
+            raise SteeringValidationError("handoff.sequence must be a non-negative integer")
+
+    def to_dict(self) -> dict[str, Any]:
+        return {"run_id": self.run_id, "executor_instance_id": self.executor_instance_id, "sequence": self.sequence}
+
+
+@dataclass(frozen=True)
+class EpisodeGoalBinding:
+    """A non-authoritative link between one Goal and Supervisor execution records."""
+
+    binding_id: str
+    episode_id: str
+    primary_goal_id: str
+    secondary_goal_ids: tuple[str, ...]
+    objective_digest: str
+    run_ids: tuple[str, ...]
+    episode_status: str
+    goal_status_at_bind: str
+    handoff_identity_digest: str
+    handoff_identities: tuple[HandoffIdentity, ...]
+    run_outcomes: tuple[tuple[str, str], ...]
+    created_at: str
+    updated_at: str
+    completion_inference: str = "INDEPENDENT_CONTRACT_REQUIRED"
+
+    def __post_init__(self) -> None:
+        for value, field in ((self.binding_id, "binding_id"), (self.episode_id, "episode_id"), (self.primary_goal_id, "primary_goal_id")):
+            _safe_id(value, field)
+        object.__setattr__(self, "secondary_goal_ids", _refs(self.secondary_goal_ids, "binding.secondary_goal_ids"))
+        if self.primary_goal_id in self.secondary_goal_ids:
+            raise SteeringValidationError("primary Goal cannot also be a secondary Goal")
+        object.__setattr__(self, "run_ids", _refs(self.run_ids, "binding.run_ids"))
+        if not self.run_ids:
+            raise SteeringValidationError("Goal-Episode binding requires at least one run")
+        if not isinstance(self.objective_digest, str) or not _HEX.fullmatch(self.objective_digest):
+            raise SteeringValidationError("binding.objective_digest must be a SHA-256 digest")
+        _bounded_text(self.episode_status, "binding.episode_status")
+        if self.goal_status_at_bind not in GOAL_STATUSES:
+            raise SteeringValidationError("binding.goal_status_at_bind is invalid")
+        if not isinstance(self.handoff_identity_digest, str) or not _HEX.fullmatch(self.handoff_identity_digest):
+            raise SteeringValidationError("binding.handoff_identity_digest must be a SHA-256 digest")
+        identities = tuple(self.handoff_identities)
+        if {item.run_id for item in identities} != set(self.run_ids):
+            raise SteeringValidationError("handoff identities must cover exactly the bound runs")
+        object.__setattr__(self, "handoff_identities", tuple(sorted(identities, key=lambda item: item.run_id)))
+        outcomes = tuple(self.run_outcomes)
+        if any(run_id not in self.run_ids or not isinstance(outcome, str) or not outcome.strip() for run_id, outcome in outcomes):
+            raise SteeringValidationError("run outcomes must reference bound runs")
+        if len({run_id for run_id, _ in outcomes}) != len(outcomes):
+            raise SteeringValidationError("each bound run can have only one current outcome")
+        object.__setattr__(self, "run_outcomes", tuple(sorted(outcomes)))
+        _timestamp(self.created_at, "binding.created_at")
+        _timestamp(self.updated_at, "binding.updated_at")
+        if self.completion_inference != "INDEPENDENT_CONTRACT_REQUIRED":
+            raise SteeringValidationError("execution binding cannot change completion authority")
+
+    def to_dict(self) -> dict[str, Any]:
+        return {
+            "schema": f"{STEERING_SCHEMA}.episode-goal-binding",
+            "binding_id": self.binding_id,
+            "episode_id": self.episode_id,
+            "primary_goal_id": self.primary_goal_id,
+            "secondary_goal_ids": list(self.secondary_goal_ids),
+            "objective_digest": self.objective_digest,
+            "run_ids": list(self.run_ids),
+            "episode_status": self.episode_status,
+            "goal_status_at_bind": self.goal_status_at_bind,
+            "handoff_identity_digest": self.handoff_identity_digest,
+            "handoff_identities": [item.to_dict() for item in self.handoff_identities],
+            "run_outcomes": [{"run_id": run_id, "outcome": outcome} for run_id, outcome in self.run_outcomes],
+            "created_at": self.created_at,
+            "updated_at": self.updated_at,
+            "completion_inference": self.completion_inference,
+        }
+
+
+class GoalEpisodeBinder:
+    """Maintain Goal/Episode links without letting execution mutate Goal authority."""
+
+    def __init__(self) -> None:
+        self._bindings: dict[str, EpisodeGoalBinding] = {}
+        self._events: list[dict[str, Any]] = []
+
+    @property
+    def bindings(self) -> tuple[EpisodeGoalBinding, ...]:
+        return tuple(self._bindings[key] for key in sorted(self._bindings))
+
+    @property
+    def events(self) -> tuple[dict[str, Any], ...]:
+        return tuple(dict(event) for event in self._events)
+
+    def get(self, binding_id: str) -> EpisodeGoalBinding:
+        _safe_id(binding_id, "binding_id")
+        try:
+            return self._bindings[binding_id]
+        except KeyError as exc:
+            raise SteeringValidationError(f"unknown Goal-Episode binding: {binding_id}") from exc
+
+    @staticmethod
+    def _identity_digest(episode_id: str, primary_goal_id: str, run_ids: Sequence[str]) -> str:
+        return sha256_json({"episode_id": episode_id, "primary_goal_id": primary_goal_id, "run_ids": sorted(run_ids)})
+
+    def bind(self, goal: GoalRecord, episode_id: str, run_ids: Sequence[str], *, secondary_goal_ids: Sequence[str] = (), executor_instances: Mapping[str, str] | None = None, created_at: str) -> EpisodeGoalBinding:
+        if not isinstance(goal, GoalRecord):
+            raise SteeringValidationError("Goal-Episode binding requires a GoalRecord")
+        _safe_id(episode_id, "episode_id")
+        normalized_runs = _refs(run_ids, "binding.run_ids")
+        if not normalized_runs:
+            raise SteeringValidationError("Goal-Episode binding requires at least one run")
+        binding_id = f"binding:{episode_id}:{goal.goal_id}"
+        if binding_id in self._bindings:
+            raise SteeringValidationError(f"Goal-Episode binding already exists: {binding_id}")
+        instances = executor_instances or {}
+        if set(instances) - set(normalized_runs):
+            raise SteeringValidationError("executor_instances contains an unbound run")
+        identities = tuple(HandoffIdentity(run_id, instances.get(run_id, "instance-1")) for run_id in normalized_runs)
+        binding = EpisodeGoalBinding(
+            binding_id=binding_id,
+            episode_id=episode_id,
+            primary_goal_id=goal.goal_id,
+            secondary_goal_ids=tuple(secondary_goal_ids),
+            objective_digest=goal.objective_digest(),
+            run_ids=normalized_runs,
+            episode_status="ACTIVE",
+            goal_status_at_bind=goal.status,
+            handoff_identity_digest=self._identity_digest(episode_id, goal.goal_id, normalized_runs),
+            handoff_identities=identities,
+            run_outcomes=(),
+            created_at=created_at,
+            updated_at=created_at,
+        )
+        self._bindings[binding_id] = binding
+        self._events.append({"event": "GOAL_EPISODE_BOUND", "binding_id": binding_id, "goal_id": goal.goal_id, "episode_id": episode_id, "run_ids": list(normalized_runs), "goal_status_mutation": False})
+        return binding
+
+    def update_episode(self, binding_id: str, episode_status: str, *, updated_at: str) -> EpisodeGoalBinding:
+        current = self.get(binding_id)
+        _bounded_text(episode_status, "binding.episode_status")
+        updated = replace(current, episode_status=episode_status, updated_at=updated_at)
+        self._bindings[binding_id] = updated
+        self._events.append({"event": "EPISODE_STATUS_UPDATED", "binding_id": binding_id, "episode_status": episode_status, "goal_status_mutation": False, "completion_inference": "INDEPENDENT_CONTRACT_REQUIRED"})
+        return updated
+
+    def record_run_outcome(self, binding_id: str, run_id: str, outcome: str, *, updated_at: str) -> EpisodeGoalBinding:
+        current = self.get(binding_id)
+        _safe_id(run_id, "binding.run_id")
+        if run_id not in current.run_ids:
+            raise SteeringValidationError("run outcome references a run outside the binding")
+        _bounded_text(outcome, "binding.run_outcome")
+        outcomes = dict(current.run_outcomes)
+        outcomes[run_id] = outcome
+        updated = replace(current, run_outcomes=tuple(outcomes.items()), updated_at=updated_at)
+        self._bindings[binding_id] = updated
+        self._events.append({"event": "RUN_OUTCOME_RECORDED", "binding_id": binding_id, "run_id": run_id, "outcome": outcome, "goal_status_mutation": False, "completion_inference": "INDEPENDENT_CONTRACT_REQUIRED"})
+        return updated
+
+    def handoff(self, binding_id: str, run_id: str, executor_instance_id: str, *, updated_at: str) -> EpisodeGoalBinding:
+        current = self.get(binding_id)
+        _safe_id(run_id, "handoff.run_id")
+        if run_id not in current.run_ids:
+            raise SteeringValidationError("handoff references a run outside the binding")
+        identities = []
+        for identity in current.handoff_identities:
+            if identity.run_id == run_id:
+                identities.append(replace(identity, executor_instance_id=executor_instance_id, sequence=identity.sequence + 1))
+            else:
+                identities.append(identity)
+        updated = replace(current, handoff_identities=tuple(identities), updated_at=updated_at)
+        self._bindings[binding_id] = updated
+        self._events.append({"event": "EPISODE_HANDOFF_RECORDED", "binding_id": binding_id, "run_id": run_id, "executor_instance_id": executor_instance_id, "handoff_identity_digest_unchanged": True, "goal_status_mutation": False})
+        return updated
+
+    def reconcile_run_result(self, binding_id: str, run_id: str, outcome: str) -> dict[str, Any]:
+        binding = self.get(binding_id)
+        if run_id not in binding.run_ids:
+            raise SteeringValidationError("run result references a run outside the binding")
+        _bounded_text(outcome, "binding.run_outcome")
+        return {"binding_id": binding_id, "run_id": run_id, "run_outcome": outcome, "goal_id": binding.primary_goal_id, "goal_status": binding.goal_status_at_bind, "goal_status_mutated": False, "completion_inference": binding.completion_inference}
+
+
 __all__ = [
     "STEERING_SCHEMA", "INTENT_AUTHORITY_INVARIANT", "GOAL_COMPLETION_NON_INFERENCE_INVARIANT", "STEERING_EXPLAINABILITY_INVARIANT",
     "INTENT_SOURCE_TYPES", "INTENT_STATUSES", "ONTOLOGY_LAYERS", "SteeringValidationError", "AuthorityProvenance",
@@ -1761,4 +1951,5 @@ __all__ = [
     "RISK_LEVELS", "OwnerOverride", "PriorityInputs", "PriorityDecision", "PriorityPolicy",
     "CONFLICT_TYPES", "ARBITRATION_OUTCOMES", "ConflictCandidate", "ArbitrationReceipt", "ConflictArbiter",
     "NextWorkCandidate", "SkippedGoal", "DecisionTrace", "SteeringEngine",
+    "HandoffIdentity", "EpisodeGoalBinding", "GoalEpisodeBinder",
 ]
