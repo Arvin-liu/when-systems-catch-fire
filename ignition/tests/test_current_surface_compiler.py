@@ -17,6 +17,13 @@ class CurrentSurfaceCompilerTests(unittest.TestCase):
                 block = compiler.render_block(self.snapshot, profile)
                 self.assertIn(self.snapshot["identity"]["epoch"], block)
                 self.assertIn(self.snapshot["current_task"]["task_id"], block)
+                self.assertIn(str(self.snapshot["iteration_identity"]["current_formal_task_ordinal"]), block)
+                self.assertIn(str(self.snapshot["iteration_identity"]["latest_architecture_task_ordinal"]), block)
+                self.assertIn(str(self.snapshot["iteration_identity"]["current_iteration_boundary"]), block)
+                if profile == "machine":
+                    self.assertIn(self.snapshot["iteration_identity"]["current_iteration_boundary_semantics"], block)
+                else:
+                    self.assertIn("deprecated compatibility alias", block)
                 self.assertIn(self.snapshot["map"]["current_version"], block)
                 self.assertIn("REMOTE_REF_OBSERVATION", block)
                 self.assertIn(compiler.BLOCK_END, block)
