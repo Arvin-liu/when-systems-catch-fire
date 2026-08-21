@@ -14,10 +14,21 @@ replaceable executors，而不是 OS authority。Structural Governance Surface �
 advisory cross-cutting overlay，只能作为阅读/实验上下文，不能改变 capability、
 permission 或 epistemic status。
 
-Task 129 是当前架构变更：身份 epoch 为 `os-control-plane-r4-steering-intent-r1`，唯一完整系统图为
-`0.12.0` Current，`0.11.0` 为 Historical，`0.10.0` 为更早 Historical。Steering / Intent /
-Goal / Obligation R1 记录 Owner/提议来源、Goal 生命周期、独立完成契约、承诺义务、why-next、
-漂移和 handoff；`PASS` Run 不等于 Goal 完成，系统提议不等于 Owner authority。
+身份、当前任务、方法、地图、状态和 lineage 由下方 generated Current Snapshot 统一投影。
+Steering / Intent / Goal / Obligation R1 记录 Owner/提议来源、Goal 生命周期、独立完成契约、
+承诺义务、why-next、漂移和 handoff；`PASS` Run 不等于 Goal 完成，系统提议不等于 Owner authority。
+
+<!-- CURRENT-SNAPSHOT:BEGIN profile=ai schema=current-snapshot-r1 -->
+- Current Snapshot（generated; read this block before interpreting prose）。
+- current_identity_epoch: `os-control-plane-r4-steering-intent-r1`；system_role: `Ignition OS / orchestration-governance layer`。
+- current_task: `IGNITION-20260821-129`；status: `COMPLETED_WITH_CLASSIFIED_RESIDUALS`；terminal: `true`；latest_architecture_changing_task: `IGNITION-20260821-129`。
+- current_method: `1.4.0` Current；current_map: `0.12.0` Current；historical_map: `0.11.0` Historical。
+- current_state_status: `CURRENT_WITH_OPEN_OBLIGATIONS`；epistemic_acceptance: `0`；live_external_ceiling: `NOT_RUN_LIVE_EXTERNAL_INVOCATION`。
+- architecture_counts: `registry=94; visible_nodes=82; visible_edges=87`；active_overlays: `Durability / Lifecycle, Steering / Intent / Goal / Obligation, Structural Governance Surface`。
+- task_lineage: current `IGNITION-20260821-129` `COMPLETED_WITH_CLASSIFIED_RESIDUALS`；predecessor `HISTORICAL_UNEXECUTED_REBASED_INTO_127` / `REBASED_INTO_127`；successor `COMPLETED_WITH_CLASSIFIED_RESIDUALS`。
+- source: ignition/data/operations/current-snapshot-r1.json；source_digest: `b5d7e38163815c3749f3a932aa9601234fdddfe8a5c56ff474bd1ea94da46598`。
+- claim_ceiling: Deterministic repository-local Current projection only; no Owner authority, external truth, production readiness or epistemic upgrade.
+<!-- CURRENT-SNAPSHOT:END -->
 
 ## 读取顺序
 
@@ -33,7 +44,7 @@ Goal / Obligation R1 记录 Owner/提议来源、Goal 生命周期、独立完�
 9. llms.txt：机器可读边界。
 10. AI-HANDOFF.md：当前权威、兼容和任务交接。
 11. data/foundation/project-state.json、data/architecture/agentization-boundary-r0.json 与 registry-manifest.json：机器状态与边界投影。
-12. 当前任务命令、data/operations/iterations/128/progress.jsonl、`data/operations/current-task-lineage-status.json` 与相关 source/schema；Task 127 的 identity contract、current-facts、Durability / Lifecycle R3 和同步 receipt 是已发布状态入口，`IGNITION-127` 当前为 `COMPLETED_WITH_CLASSIFIED_RESIDUALS`；Task 128 的 lineage/status source 是当前语义入口。旧 Task 125 文件状态是 `HISTORICAL_UNEXECUTED`，其 requirements 已 `REBASED_INTO_127`，不得把它当作仍 pending 的当前任务。
+12. 当前任务命令、`data/operations/current-task-lineage-status.json` 与相关 source/schema；identity contract、Current Facts、Durability / Lifecycle R3 和同步 receipt 是状态入口，历史任务与 deferred 边界必须按其明确分类读取，不得从历史记录猜测 Current。
 13. 当前任务还必须读取 `data/operations/iterations/129/progress.jsonl`、`data/operations/steering/current-state-r1.json`、`docs/architecture/os-steering-intent-r1.md` 及 steering validators；Step 20 的 Current 投影是 `ARCHITECTURE_CHANGED`，Step 21 的 Git/receipt 才是发布闭合证据。
 
 ## R2 冷启动补充
@@ -100,7 +111,7 @@ epistemic acceptance。
 - Multiscale Causal Fabric、Probabilistic System Dynamics 和 Adaptive Relational Network 是当前建模/投影能力，不是新真值层。
 - 关系网络的邻接、相似性、中心性、社群、检索和行为变化不能升级为真理、价值、因果或内部学习机制证明。
 - 迭代方法只能约束操作纪律，不能证明实质结论正确。
-- 当前迭代方法是 `1.4.0`（Current），系统图是 `0.11.0`（Current）；`0.10.0` 是上一版 Historical，`0.9.0` 与 `0.8.0` 是更早 Historical。Durability / Lifecycle R3 是同一 OS 控制脊柱内的 repository-local recovery component；Structural Governance Surface 是 advisory overlay，不增加 L7。
+- 当前迭代方法、地图版本和历史版本由 generated Current Snapshot 提供；Durability / Lifecycle R3 是同一 OS 控制脊柱内的 repository-local recovery component；Structural Governance Surface 是 advisory overlay，不增加 L7。
 
 方法 `1.3.0` 与系统图 `0.6.0`、`0.5.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0`、`0.2.0`、`0.3.0`、`0.4.0` 为更早 Historical。当前方法要求读取 `data/operations/project-components.json` 与 `data/operations/change-propagation-topology.json`，把变更路径解析为构件、遍历声明关系到 fixpoint、绑定决定／map diff／residue，再由 registries 与布局 overlay 派生系统图。不得把 Git diff、依赖或可达性称为现实因果证明。
 - Q32I 的方法 `1.3.0` 与系统图 `0.3.0` 已独立接受、由 PR #62 普通合并并完成生产收口；其后方法升为 `1.4.0` Current。

@@ -2,30 +2,25 @@
 
 ## 当前版本
 
-Task 129 将当前身份推进为 `os-control-plane-r4-steering-intent-r1`：唯一完整系统图为
-`0.12.0` Current，`0.11.0` 为 Historical、`0.10.0` 为更早 Historical。Steering / Intent /
-Goal / Obligation R1 是 OS 内的仓库本地控制记录：来源权威、Goal 生命周期、独立 Completion Contract、
-承诺义务、why-next、漂移/handoff guard 与 federation Intent Capsule 均保持可追溯；系统提议、
-运行通过和外部 executor 回执都不能自行升级 Owner authority 或 Goal completion。
+身份 epoch、当前任务、方法、地图、状态和 lineage 由 generated Current Snapshot 统一投影。
+Steering / Intent / Goal / Obligation R1 是 OS 内的仓库本地控制记录：来源权威、Goal 生命周期、
+独立 Completion Contract、承诺义务、why-next、漂移/handoff guard 与 federation Intent Capsule
+均保持可追溯；系统提议、运行通过和外部 executor 回执都不能自行升级 Owner authority 或 Goal completion。
 
 Agent Platform R2 与 External Agent Federation R1 已在 Task 122 正式 main
 基线上闭合；Task 127 已完成并发布为当前 Durability / Lifecycle R3。本页的工程边界不构成
-外部能力或 epistemic acceptance，`CURRENT_WITH_OPEN_OBLIGATIONS` 与
-`EPISTEMICALLY_ACCEPTED=0` 保持不变。当前身份 contract/facts 见
+外部能力或 epistemic acceptance；当前身份 contract/facts 见
 `data/architecture/current-system-identity.json`、`data/architecture/current-facts.json` 与
 `data/operations/current-task-lineage-status.json`：
 点火是 OS / orchestration-governance layer 与 driver，外部 Agent 是可替换
 executor，本地执行层是 `REFERENCE_EXECUTOR / CONFORMANCE_EXECUTOR /
-FALLBACK_MINIMAL`。旧 `IGNITION-125` 文件状态是 `HISTORICAL_UNEXECUTED`，其有效
-requirements 已 `REBASED_INTO_127`；`IGNITION-127` 当前为
-`COMPLETED_WITH_CLASSIFIED_RESIDUALS`。本轮是 Task 128 的窄范围 Current-State
-语义闭合，不重新执行旧 125，也不制造 125 已执行的历史。
+FALLBACK_MINIMAL`。历史任务文件及其 requirements lineage 由 canonical task-lineage source
+和 generated block 表达；不得把历史记录当作当前任务，也不得制造旧任务已执行的历史。
 Structural Governance Surface 是 advisory cross-cutting overlay，不改变
 capability、permission、truth、Owner 或 epistemic status。
 
-当前地图是 `0.11.0`（`0.10.0` 为 Historical），语义主干把中央 Ignition OS
-控制脊柱、外部 Federation/replaceable executors 与 Domain/Skill Packs 分开；
-版本、计数和 live ceiling 以 `data/architecture/current-facts.json` 及其人读投影为准。
+语义主干把中央 Ignition OS 控制脊柱、外部 Federation/replaceable executors 与 Domain/Skill Packs
+分开；版本、计数和 live ceiling 以 generated Current Snapshot 与 Current Facts 投影为准。
 
 ### R2 工程脊柱
 
@@ -42,6 +37,18 @@ capability、permission、truth、Owner 或 epistemic status。
 R2 仍不包括 live provider、daemon、multi-Agent 并发、vector memory、网络/浏览、
 外部仓库 mutation、人格/意识或普适安全证明。`Kernel ≠ Knowledge`、
 `Reasoner ≠ Executor`、`Pack ≠ truth authority`、`pilot ≠ general intelligence`。
+
+<!-- CURRENT-SNAPSHOT:BEGIN profile=ai schema=current-snapshot-r1 -->
+- Current Snapshot（generated; read this block before interpreting prose）。
+- current_identity_epoch: `os-control-plane-r4-steering-intent-r1`；system_role: `Ignition OS / orchestration-governance layer`。
+- current_task: `IGNITION-20260821-129`；status: `COMPLETED_WITH_CLASSIFIED_RESIDUALS`；terminal: `true`；latest_architecture_changing_task: `IGNITION-20260821-129`。
+- current_method: `1.4.0` Current；current_map: `0.12.0` Current；historical_map: `0.11.0` Historical。
+- current_state_status: `CURRENT_WITH_OPEN_OBLIGATIONS`；epistemic_acceptance: `0`；live_external_ceiling: `NOT_RUN_LIVE_EXTERNAL_INVOCATION`。
+- architecture_counts: `registry=94; visible_nodes=82; visible_edges=87`；active_overlays: `Durability / Lifecycle, Steering / Intent / Goal / Obligation, Structural Governance Surface`。
+- task_lineage: current `IGNITION-20260821-129` `COMPLETED_WITH_CLASSIFIED_RESIDUALS`；predecessor `HISTORICAL_UNEXECUTED_REBASED_INTO_127` / `REBASED_INTO_127`；successor `COMPLETED_WITH_CLASSIFIED_RESIDUALS`。
+- source: ignition/data/operations/current-snapshot-r1.json；source_digest: `b5d7e38163815c3749f3a932aa9601234fdddfe8a5c56ff474bd1ea94da46598`。
+- claim_ceiling: Deterministic repository-local Current projection only; no Owner authority, external truth, production readiness or epistemic upgrade.
+<!-- CURRENT-SNAPSHOT:END -->
 
 ## 权威链
 
@@ -115,7 +122,7 @@ PR #55 已将 121Q23 Adaptive Relational Network 合并进 `main`。涉及关系
 
 121Q24 建立的迭代操作法已在 PR #56 验收并合并后成为当前仓库操作能力；未来状态改变任务必须按 `ITERATION.md` 记录 gap、claim ceiling、同步矩阵、验证和回执。遵循该方法不证明真理、价值、因果、完整性或正确性。
 
-当前方法是 `1.4.0`（Current），系统图是 `0.11.0`（Current）；`0.10.0` 是上一版 Historical，`0.9.0` 是更早 Historical。Durability / Lifecycle R3 保持 repository-local recovery boundary；Structural Governance Surface 仍是 advisory overlay，不增加 L7。
+当前方法、地图和历史版本由 generated Current Snapshot 提供；Durability / Lifecycle R3 保持 repository-local recovery boundary；Structural Governance Surface 仍是 advisory overlay，不增加 L7。
 
 方法 `1.3.0` 与系统图 `0.7.0`、`0.6.0`、`0.5.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0`、`0.2.0`、`0.3.0`、`0.4.0` 为更早 Historical。当前方法要求从构件 registry、类型化 topology 与 `data/operations/synchronization-surfaces.json` 计算全项目传播闭包。README、`HUMAN-READING.md`、`RESULTS/`、项目现状、人类 AI 指南、AI 冷启动、Agent 交接、机器入口和版本历史都是必须评估的项目表面。实现完成不能替代仓库同步完成；本地验证也不能声称任何未登记的实时外部状态已验证。
 

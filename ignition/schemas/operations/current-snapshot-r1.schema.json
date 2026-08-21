@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ignition/operations/current-snapshot-r1.schema.json",
+  "title": "Ignition deterministic Current Surface snapshot",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "contract_id", "source_policy", "generated_from_source_digest", "identity", "current_method_version", "current_task", "latest_architecture_changing_task", "map", "engineering_status", "task_lineage", "active_architecture_overlays", "live_external_ceiling", "architecture_counts", "claim_ceiling"],
+  "properties": {
+    "schema_version": {"const": "current-snapshot-r1"},
+    "contract_id": {"const": "CURRENT_SURFACE_NO_SPLIT_BRAIN_INVARIANT"},
+    "source_policy": {"type": "object", "additionalProperties": false, "required": ["kind", "commit_sha_policy", "registry_path"], "properties": {"kind": {"const": "DETERMINISTIC_CANONICAL_SOURCE_PROJECTION"}, "commit_sha_policy": {"type": "string", "minLength": 1}, "registry_path": {"type": "string", "minLength": 1}}},
+    "generated_from_source_digest": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "identity": {"$ref": "#/$defs/identity"},
+    "current_method_version": {"type": "string", "minLength": 1},
+    "current_task": {"$ref": "#/$defs/task"},
+    "latest_architecture_changing_task": {"type": "string", "pattern": "^IGNITION-[0-9A-Z-]+$"},
+    "map": {"$ref": "#/$defs/map"},
+    "engineering_status": {"$ref": "#/$defs/status"},
+    "task_lineage": {"$ref": "#/$defs/lineage"},
+    "active_architecture_overlays": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/overlay"}},
+    "live_external_ceiling": {"type": "string", "minLength": 1},
+    "architecture_counts": {"type": "object", "minProperties": 1, "additionalProperties": {"type": ["string", "integer", "number"]}},
+    "release_lifecycle": {"type": "object", "additionalProperties": false, "required": ["phase", "task_branch_projection", "publication_state"], "properties": {"phase": {"type": "string", "minLength": 1}, "task_branch_projection": {"type": "string", "minLength": 1}, "publication_state": {"type": "string", "minLength": 1}}},
+    "claim_ceiling": {"type": "string", "minLength": 1}
+  },
+  "$defs": {
+    "identity": {"type": "object", "additionalProperties": false, "required": ["epoch", "system_role", "driver_role", "external_executor_role", "reference_executor_role"], "properties": {"epoch": {"type": "string", "minLength": 1}, "system_role": {"type": "string", "minLength": 1}, "driver_role": {"type": "string", "minLength": 1}, "external_executor_role": {"type": "string", "minLength": 1}, "reference_executor_role": {"type": "string", "minLength": 1}}},
+    "task": {"type": "object", "additionalProperties": false, "required": ["task_id", "scope", "execution_status", "terminal", "identity_impact"], "properties": {"task_id": {"type": "string", "pattern": "^IGNITION-[0-9A-Z-]+$"}, "scope": {"type": "string", "minLength": 1}, "execution_status": {"type": "string", "minLength": 1}, "terminal": {"type": "boolean"}, "identity_impact": {"type": "string", "minLength": 1}}},
+    "map": {"type": "object", "additionalProperties": false, "required": ["current_version", "historical_versions", "source_path", "projection_status"], "properties": {"current_version": {"type": "string", "minLength": 1}, "historical_versions": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}}, "source_path": {"type": "string", "minLength": 1}, "projection_status": {"type": "string", "minLength": 1}}},
+    "status": {"type": "object", "additionalProperties": false, "required": ["current_state_status", "epistemically_accepted"], "properties": {"current_state_status": {"type": "string", "minLength": 1}, "epistemically_accepted": {"const": 0}}},
+    "lineage": {"type": "object", "additionalProperties": false, "required": ["current_task_id", "current_task_status", "predecessor_status", "predecessor_requirement_lineage", "successor_status", "claim_ceiling"], "properties": {"current_task_id": {"type": "string", "pattern": "^IGNITION-[0-9A-Z-]+$"}, "current_task_status": {"type": "string", "minLength": 1}, "predecessor_status": {"type": "string", "minLength": 1}, "predecessor_requirement_lineage": {"type": "string", "minLength": 1}, "successor_status": {"type": "string", "minLength": 1}, "claim_ceiling": {"type": "string", "minLength": 1}}},
+    "overlay": {"type": "object", "additionalProperties": false, "required": ["overlay_id", "label", "source_paths", "authority", "status"], "properties": {"overlay_id": {"type": "string", "pattern": "^[a-z][a-z0-9-]+$"}, "label": {"type": "string", "minLength": 1}, "source_paths": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}}, "authority": {"type": "string", "minLength": 1}, "status": {"type": "string", "minLength": 1}}}
+  }
+}

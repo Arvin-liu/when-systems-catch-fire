@@ -13,6 +13,7 @@
   "generated_fields": [
     "current_identity_epoch",
     "current_system_role",
+    "current_method_version",
     "current_task_id",
     "current_task_status",
     "current_task_terminal",

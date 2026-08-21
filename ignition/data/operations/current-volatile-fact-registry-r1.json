@@ -44,6 +44,19 @@
       "claim_ceiling": "Iteration boundary only; not progress or external completion."
     },
     {
+      "fact_id": "current_method_version",
+      "canonical_source": {"path": "ignition/data/architecture/current-facts.json", "json_pointer": "/facts/iteration/method_version", "source_kind": "deterministic_derived_projection"},
+      "value_type": "version",
+      "extractor": "json_pointer",
+      "allowed_current_renderings": ["generated_snapshot.current_method_version"],
+      "allowed_historical_usage": ["historical method versions may be retained with explicit Historical labels"],
+      "required_current_surfaces": ["homepage-identity", "project-current-state", "ai-cold-start", "ai-agents-handoff", "machine-entry", "architecture", "state-changelog"],
+      "freshness_rule": "Must be read from the deterministic Current Facts projection after its own check passes.",
+      "null_behavior": "FAIL",
+      "authority": "ITERATION.md projected through current-facts generator",
+      "claim_ceiling": "Repository iteration method version only."
+    },
+    {
       "fact_id": "current_task_id",
       "canonical_source": {"path": "ignition/data/operations/current-task-lineage-status.json", "json_pointer": "/current_task/task_id", "source_kind": "canonical_task_lineage"},
       "value_type": "task_id",
