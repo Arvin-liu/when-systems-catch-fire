@@ -18,6 +18,8 @@ Long-term Goal dependency edges are held in a `LONG_TERM_STEERING` graph. The ex
 
 An `EpisodeGoalBinding` records the primary/secondary Goal references, objective digest, bound Run IDs, Episode status, Run outcomes, and handoff identities. Supervisor status changes, a `PASS` Run, or executor-instance handoff preserve the binding's Goal status and mark completion as `INDEPENDENT_CONTRACT_REQUIRED`; they never mutate the canonical Goal.
 
+Before a handoff or next-work dispatch, `GoalDriftGuard` compares the objective digest, acceptance criteria, authority source, superseded references, memory conflict flags, and stable handoff identity. Objective/acceptance/handoff drift pauses for reconciliation; proposal-to-Owner escalation or a memory conflict requires human review. No drift report promotes a proposal or silently repairs a Goal.
+
 ## Priority and arbitration
 
 Priority is an ordered tuple of explicit rules: eligibility/permission, active Owner override, Owner rank, commitment state, temporal state, dependency criticality, risk, and bounded fairness age. A telemetry score may be emitted for inspection, but it is not authoritative and cannot override permission, safety, blocked, stale, superseded, or executor-unavailable state.

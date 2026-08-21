@@ -1939,6 +1939,107 @@ class GoalEpisodeBinder:
         return {"binding_id": binding_id, "run_id": run_id, "run_outcome": outcome, "goal_id": binding.primary_goal_id, "goal_status": binding.goal_status_at_bind, "goal_status_mutated": False, "completion_inference": binding.completion_inference}
 
 
+DRIFT_OUTCOMES = frozenset({"CLEAR", "PAUSE_RECONCILE", "HUMAN_REVIEW"})
+
+
+@dataclass(frozen=True)
+class DriftReport:
+    report_id: str
+    goal_id: str
+    outcome: str
+    reasons: tuple[str, ...]
+    expected_objective_digest: str
+    observed_objective_digest: str
+    missing_acceptance_criteria: tuple[str, ...]
+    unexpected_acceptance_criteria: tuple[str, ...]
+    authority_escalation: bool
+    superseded_reference: str | None
+    memory_conflict: bool
+    handoff_identity_match: bool
+    created_at: str
+
+    def __post_init__(self) -> None:
+        _safe_id(self.report_id, "drift.report_id")
+        _safe_id(self.goal_id, "drift.goal_id")
+        if self.outcome not in DRIFT_OUTCOMES:
+            raise SteeringValidationError("drift outcome is invalid")
+        object.__setattr__(self, "reasons", _refs(self.reasons, "drift.reasons"))
+        for digest, field in ((self.expected_objective_digest, "drift.expected_objective_digest"), (self.observed_objective_digest, "drift.observed_objective_digest")):
+            if not isinstance(digest, str) or not _HEX.fullmatch(digest):
+                raise SteeringValidationError(f"{field} must be a SHA-256 digest")
+        object.__setattr__(self, "missing_acceptance_criteria", _refs(self.missing_acceptance_criteria, "drift.missing_acceptance_criteria"))
+        object.__setattr__(self, "unexpected_acceptance_criteria", _refs(self.unexpected_acceptance_criteria, "drift.unexpected_acceptance_criteria"))
+        for field in ("authority_escalation", "memory_conflict", "handoff_identity_match"):
+            if not isinstance(getattr(self, field), bool):
+                raise SteeringValidationError(f"drift.{field} must be boolean")
+        if self.superseded_reference is not None:
+            _safe_id(self.superseded_reference, "drift.superseded_reference")
+        _timestamp(self.created_at, "drift.created_at")
+
+    def to_dict(self) -> dict[str, Any]:
+        return {
+            "schema": f"{STEERING_SCHEMA}.drift-report",
+            "report_id": self.report_id,
+            "goal_id": self.goal_id,
+            "outcome": self.outcome,
+            "reasons": list(self.reasons),
+            "expected_objective_digest": self.expected_objective_digest,
+            "observed_objective_digest": self.observed_objective_digest,
+            "missing_acceptance_criteria": list(self.missing_acceptance_criteria),
+            "unexpected_acceptance_criteria": list(self.unexpected_acceptance_criteria),
+            "authority_escalation": self.authority_escalation,
+            "superseded_reference": self.superseded_reference,
+            "memory_conflict": self.memory_conflict,
+            "handoff_identity_match": self.handoff_identity_match,
+            "created_at": self.created_at,
+        }
+
+
+class GoalDriftGuard:
+    """Stop handoff or steering when objective, authority, or acceptance state drifts."""
+
+    def inspect(self, report_id: str, goal: GoalRecord, observed_objective_digest: str, expected_acceptance_criteria: Sequence[str], observed_acceptance_criteria: Sequence[str], *, observed_provenance: AuthorityProvenance | None = None, superseded_reference: str | None = None, memory_conflict: bool = False, expected_handoff_identity_digest: str | None = None, observed_handoff_identity_digest: str | None = None, created_at: str) -> DriftReport:
+        if not isinstance(goal, GoalRecord):
+            raise SteeringValidationError("drift inspection requires a GoalRecord")
+        _safe_id(report_id, "drift.report_id")
+        expected_digest = goal.objective_digest()
+        if not isinstance(observed_objective_digest, str) or not _HEX.fullmatch(observed_objective_digest):
+            raise SteeringValidationError("observed objective must be a SHA-256 digest")
+        expected_acceptance = set(_refs(expected_acceptance_criteria, "drift.expected_acceptance_criteria"))
+        observed_acceptance = set(_refs(observed_acceptance_criteria, "drift.observed_acceptance_criteria"))
+        missing = tuple(sorted(expected_acceptance - observed_acceptance))
+        unexpected = tuple(sorted(observed_acceptance - expected_acceptance))
+        authority_escalation = bool(observed_provenance and observed_provenance.is_owner_authority and not goal.provenance.is_owner_authority)
+        handoff_match = True
+        if expected_handoff_identity_digest is not None or observed_handoff_identity_digest is not None:
+            if not expected_handoff_identity_digest or not observed_handoff_identity_digest or not _HEX.fullmatch(expected_handoff_identity_digest) or not _HEX.fullmatch(observed_handoff_identity_digest):
+                raise SteeringValidationError("handoff identity digests must both be SHA-256 values when supplied")
+            handoff_match = expected_handoff_identity_digest == observed_handoff_identity_digest
+        reasons: list[str] = []
+        if observed_objective_digest != expected_digest:
+            reasons.append("objective_digest_mismatch")
+        if missing:
+            reasons.append("acceptance_criteria_lost")
+        if unexpected:
+            reasons.append("acceptance_criteria_changed")
+        if authority_escalation:
+            reasons.append("proposal_to_owner_escalation")
+        if superseded_reference is not None:
+            _safe_id(superseded_reference, "drift.superseded_reference")
+            reasons.append("superseded_reference_present")
+        if memory_conflict:
+            reasons.append("memory_conflict_requires_review")
+        if not handoff_match:
+            reasons.append("handoff_identity_mismatch")
+        if authority_escalation or memory_conflict:
+            outcome = "HUMAN_REVIEW"
+        elif reasons:
+            outcome = "PAUSE_RECONCILE"
+        else:
+            outcome = "CLEAR"
+        return DriftReport(report_id, goal.goal_id, outcome, tuple(reasons), expected_digest, observed_objective_digest, missing, unexpected, authority_escalation, superseded_reference, memory_conflict, handoff_match, created_at)
+
+
 __all__ = [
     "STEERING_SCHEMA", "INTENT_AUTHORITY_INVARIANT", "GOAL_COMPLETION_NON_INFERENCE_INVARIANT", "STEERING_EXPLAINABILITY_INVARIANT",
     "INTENT_SOURCE_TYPES", "INTENT_STATUSES", "ONTOLOGY_LAYERS", "SteeringValidationError", "AuthorityProvenance",
@@ -1952,4 +2053,5 @@ __all__ = [
     "CONFLICT_TYPES", "ARBITRATION_OUTCOMES", "ConflictCandidate", "ArbitrationReceipt", "ConflictArbiter",
     "NextWorkCandidate", "SkippedGoal", "DecisionTrace", "SteeringEngine",
     "HandoffIdentity", "EpisodeGoalBinding", "GoalEpisodeBinder",
+    "DRIFT_OUTCOMES", "DriftReport", "GoalDriftGuard",
 ]

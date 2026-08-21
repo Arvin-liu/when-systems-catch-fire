@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Arvin-liu/when-systems-catch-fire/schemas/operations/steering-drift-guard-r1.schema.json",
+  "title": "OS Steering Drift and Handoff Guard R1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "cases"],
+  "properties": {
+    "schema": {"const": "os-steering-intent-obligation-r1.drift-fixtures"},
+    "cases": {
+      "type": "array",
+      "minItems": 5,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["case_id", "goal_id", "authority_source", "expected_acceptance", "observed_acceptance", "objective_state", "observed_owner_authority", "superseded_reference", "memory_conflict", "handoff_state", "expected_outcome"],
+        "properties": {
+          "case_id": {"type": "string"},
+          "goal_id": {"type": "string"},
+          "authority_source": {"type": "string"},
+          "expected_acceptance": {"type": "array", "items": {"type": "string"}},
+          "observed_acceptance": {"type": "array", "items": {"type": "string"}},
+          "objective_state": {"enum": ["MATCH", "MISMATCH"]},
+          "observed_owner_authority": {"type": "boolean"},
+          "superseded_reference": {"type": ["string", "null"]},
+          "memory_conflict": {"type": "boolean"},
+          "handoff_state": {"enum": ["MATCH", "MISMATCH"]},
+          "expected_outcome": {"enum": ["CLEAR", "PAUSE_RECONCILE", "HUMAN_REVIEW"]}
+        }
+      }
+    }
+  }
+}
