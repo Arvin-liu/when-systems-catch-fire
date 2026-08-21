@@ -1,0 +1,66 @@
+{
+  "schema_version": "ignition-129-step00-audit-r1",
+  "task_id": "IGNITION-20260821-129",
+  "step": "00",
+  "status": "COMPLETED",
+  "execution_time_baseline": {
+    "formal_repository": "Arvin-liu/when-systems-catch-fire",
+    "task_branch": "codex/ignition-129-os-steering-intent-obligation-r1-20260821",
+    "origin_main": "354be6c079945eb8349e0fee1de79395eb5f8d1c",
+    "relay_repository": "Arvin-liu/1111",
+    "relay_current": "0064897c5537cc4a20eb7b03824841a9d6a608d6",
+    "prior_task_head": "354be6c079945eb8349e0fee1de79395eb5f8d1c",
+    "working_tree_clean": true
+  },
+  "inventory": {
+    "agent_runtime_python_modules": 36,
+    "agent_kernel_python_modules": 4,
+    "agent_federation_python_modules": 12,
+    "operation_schemas": 41,
+    "operation_json_sources": 16,
+    "targeted_baseline_tests": 50,
+    "targeted_baseline_status": "PASS"
+  },
+  "existing_semantics": {
+    "run_local_goal_fields": [
+      "ignition/schemas/agent-runtime/r1-run-spec.schema.json#/properties/goal",
+      "ignition/schemas/agent-runtime/r1-run-state.schema.json#/properties/goal",
+      "ignition/agent_federation/contracts.py::FederatedTaskEnvelope.goal"
+    ],
+    "run_local_priority_fields": [
+      "ignition/agent_runtime/scheduler.py::WorkUnit.priority",
+      "ignition/agent_runtime/resource_arbitration.py::ResourceIntent.priority"
+    ],
+    "run_local_temporal_fields": [
+      "ignition/agent_runtime/scheduler.py::WorkUnit.not_before",
+      "ignition/agent_runtime/scheduler.py::WorkUnit.deadline",
+      "ignition/agent_runtime/queue_control.py::QueueItem.expires_at"
+    ],
+    "persistent_long_term_intent": false,
+    "persistent_goal_lifecycle": false,
+    "persistent_commitment_ledger": false,
+    "persistent_goal_dependency_graph": false,
+    "scheduler_priority_provenance": "ABSENT_OWNER_SOURCE_AND_REASON",
+    "driver_console_goal_explainability": "ABSENT_CONTROL_NEXT_ACTION_ONLY",
+    "memory_owner_preference_escalation_guard": "NOT_YET_EXPLICIT_FOR_INTENT",
+    "current_lineage_128": "CURRENT_STATE_SYNC_INVARIANT_PASS; CURRENT_TASK_LINEAGE_STATUS=IGNITION-20260821-128 COMPLETED_WITH_CLASSIFIED_RESIDUALS"
+  },
+  "boundary_findings": [
+    "Supervisor owns episode coordination and child run dependency DAG, not long-term goal authority.",
+    "Operational Memory stores bounded run/operational context and must remain non-authoritative for Owner intent.",
+    "Agent Profile narrows behavior and cannot create a commitment.",
+    "Structural Governance Surface remains advisory-only and cannot supply priority or permission authority.",
+    "External Federation envelopes carry bounded execution goals but adapters cannot own canonical intent or completion.",
+    "Durability snapshot and replay can be extended to preserve steering records without promoting proposals."
+  ],
+  "reuse_map": [
+    {"existing": "agent_runtime/supervisor.py", "reuse_for": "Episode/Run binding only", "new_parallel_registry": false},
+    {"existing": "agent_runtime/scheduler.py", "reuse_for": "bounded dispatch after Steering decision", "new_parallel_registry": false},
+    {"existing": "agent_runtime/durability.py", "reuse_for": "snapshot-plus-tail continuity", "new_parallel_registry": false},
+    {"existing": "agent_runtime/namespace.py", "reuse_for": "namespace and delegation checks", "new_parallel_registry": false},
+    {"existing": "agent_federation/contracts.py", "reuse_for": "provider-neutral executor boundary", "new_parallel_registry": false},
+    {"existing": "agent_runtime/driver_console.py", "reuse_for": "human steering projection", "new_parallel_registry": false},
+    {"existing": "CURRENT_STATE_SYNC_INVARIANT", "reuse_for": "current identity and surface synchronization", "new_parallel_registry": false}
+  ],
+  "claim_ceiling": "Repository-local baseline and gap audit only; no Owner intent inference, production safety, external truth, or epistemic upgrade."
+}
