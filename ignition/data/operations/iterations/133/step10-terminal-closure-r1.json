@@ -1,0 +1,54 @@
+{
+  "schema_version": "ignition-133-step10-terminal-closure-r1",
+  "task_id": "IGNITION-20260822-133",
+  "step": "10",
+  "status": "COMPLETED_WITH_CLASSIFIED_RESIDUALS",
+  "terminal_state": {
+    "current_task_id": "IGNITION-20260822-133",
+    "current_formal_task_ordinal": 133,
+    "latest_architecture_changing_task": "IGNITION-20260821-129",
+    "latest_architecture_task_ordinal": 129,
+    "current_iteration_boundary": 133,
+    "current_iteration_boundary_semantics": "DEPRECATED_COMPATIBILITY_ALIAS_OF_CURRENT_FORMAL_TASK_ORDINAL",
+    "execution_status": "COMPLETED_WITH_CLASSIFIED_RESIDUALS",
+    "terminal": true,
+    "content_phase": "RELEASE_READY",
+    "current_task_terminal": true,
+    "publication_authority": "REMOTE_REF_OBSERVATION",
+    "embedded_publication_assertion": "NONE"
+  },
+  "gates": {
+    "current_task_lineage": "PASS",
+    "current_release_lifecycle": "PASS_RELEASE_READY",
+    "current_state_sync": "PASS",
+    "current_surface_semantics": "PASS",
+    "current_surface_determinism": "PASS_TWO_PASS_15_OUTPUTS",
+    "ordinal_binding_terminal_evidence": "PASS_FORMAL_RESULT_AND_MACHINE_RECEIPT",
+    "release_candidate_task_identity": "PASS_WITH_FORMAL_RESULT_AND_RELEASE_READY",
+    "current_ordinal_adversarial_matrix": "PASS_15_CASES",
+    "historical_compatibility": "PASS_7_RECEIPTS",
+    "targeted_unittest": "PASS_64_OF_64"
+  },
+  "projection_outputs": [
+    "ignition/data/architecture/current-system-identity.json",
+    "ignition/data/architecture/current-facts.json",
+    "ignition/docs/architecture/current-facts.md",
+    "ignition/data/operations/current-release-lifecycle-r1.json",
+    "ignition/data/operations/current-snapshot-r1.json",
+    "ignition/data/operations/current-volatile-fact-registry-r1.json",
+    "ignition/data/operations/current-task-lineage-status.json",
+    "ignition/STATE-CHANGELOG.md",
+    "ignition/data/operations/iterations/133/step10-deterministic-current-surface-r1.json",
+    "ignition/agent-results/IGNITION-20260822-133-result.md",
+    "ignition/agent-results/IGNITION-20260822-133-machine-receipt.json"
+  ],
+  "publication_boundary": {
+    "formal_main_baseline": "5ed99d148dfb49e6c2ff729a345d2499d4b76021",
+    "formal_main_after": "PENDING_STEP11_ORDINARY_FAST_FORWARD",
+    "independent_publication_witness": "PENDING_STEP11_1111_RECEIPT",
+    "formal_self_witness_commit": false
+  },
+  "new_current_semantic_regressions": 0,
+  "claim_ceiling": "Step10 proves repository-local terminal Current projection, ordinal semantics, deterministic rendering, bounded regression and content-owned release readiness only; it does not establish remote publication, external truth, production readiness, Owner acceptance or epistemic acceptance.",
+  "next_step": "11"
+}

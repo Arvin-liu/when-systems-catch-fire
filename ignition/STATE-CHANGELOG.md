@@ -2,14 +2,14 @@
 <!-- CURRENT-SNAPSHOT:BEGIN profile=ai schema=current-snapshot-r1 -->
 - Current Snapshot（generated; read this block before interpreting prose）。
 - current_identity_epoch: `os-control-plane-r4-steering-intent-r1`；system_role: `Ignition OS / orchestration-governance layer`。
-- current_formal_task: `IGNITION-20260822-133` (ordinal `133`)；status: `IN_PROGRESS`；terminal: `false`；latest_architecture_changing_task: `IGNITION-20260821-129` (ordinal `129`)；current_iteration_boundary: `133` is a deprecated compatibility alias of `current_formal_task_ordinal`；publication_witness_task: `IGNITION-20260822-133`。
-- release_lifecycle: task `IGNITION-20260822-133`；content phase `RUNNING`；publication authority `REMOTE_REF_OBSERVATION`；embedded publication assertion `NONE`；required ref `refs/heads/main`；post-publication verification must observe that remote ref。
+- current_formal_task: `IGNITION-20260822-133` (ordinal `133`)；status: `COMPLETED_WITH_CLASSIFIED_RESIDUALS`；terminal: `true`；latest_architecture_changing_task: `IGNITION-20260821-129` (ordinal `129`)；current_iteration_boundary: `133` is a deprecated compatibility alias of `current_formal_task_ordinal`；publication_witness_task: `IGNITION-20260822-133`。
+- release_lifecycle: task `IGNITION-20260822-133`；content phase `RELEASE_READY`；publication authority `REMOTE_REF_OBSERVATION`；embedded publication assertion `NONE`；required ref `refs/heads/main`；post-publication verification must observe that remote ref。
 - publication_instruction: run ref-derived verification against `refs/heads/main`; do not infer publication from embedded Current content。
 - current_method: `1.4.0` Current；current_map: `0.12.0` Current；historical_map: `0.11.0` Historical。
 - current_state_status: `CURRENT_WITH_OPEN_OBLIGATIONS`；EPISTEMICALLY_ACCEPTED=0；epistemic_acceptance: `0`；live_external_ceiling: `NOT_RUN_LIVE_EXTERNAL_INVOCATION`。
 - architecture_counts: `registry=94; visible_nodes=82; visible_edges=87`；active_overlays: `Durability / Lifecycle, Steering / Intent / Goal / Obligation, Structural Governance Surface`。
-- task_lineage: current `IGNITION-20260822-133` `IN_PROGRESS`；predecessor `HISTORICAL_UNEXECUTED_REBASED_INTO_127` / `REBASED_INTO_127`；successor `COMPLETED_WITH_CLASSIFIED_RESIDUALS`。
-- source: ignition/data/operations/current-snapshot-r1.json；source_digest: `1c6dc260a37507a090329ee3dadd8fa0e87080d747178d64e01489db8edba141`。
+- task_lineage: current `IGNITION-20260822-133` `COMPLETED_WITH_CLASSIFIED_RESIDUALS`；predecessor `HISTORICAL_UNEXECUTED_REBASED_INTO_127` / `REBASED_INTO_127`；successor `COMPLETED_WITH_CLASSIFIED_RESIDUALS`。
+- source: ignition/data/operations/current-snapshot-r1.json；source_digest: `22aa8c64725a3fd176fb3c7f711122ebe495d51aee905dace2ab4195c1f9adaf`。
 - claim_ceiling: Deterministic repository-local Current projection only; no Owner authority, external truth, production readiness or epistemic upgrade.
 <!-- CURRENT-SNAPSHOT:END -->
 
@@ -260,3 +260,16 @@
 - stale_knowledge: Task130/131 historical release records and the prior stale canonical Current source remain provenance; `RELEASE_READY` must not be read as a static publication claim.
 - residual_boundary: Task129–131 historical residuals remain classified and are not rewritten; Task132 records the source-advancement fix separately from those historical receipts.
 - next_read: verify the generated Current Snapshot and all compiler-owned surfaces, then run the Step 10–12 closure before fresh-clone candidate verification.
+
+## 2026-08-22 — IGNITION-20260822-133-ITERATION-BOUNDARY-SEMANTICS-R1 — terminal Current release candidate
+
+- main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; formal `main` remains the `5ed99d148dfb49e6c2ff729a345d2499d4b76021` baseline until the Step 11 ordinary fast-forward, fresh-remote replay and independent 1111 receipt. This append-only entry is a task-branch release-candidate record, not a formal `main` publication claim.
+- delta: defines `current_iteration_boundary` as the deprecated deterministic compatibility alias of `current_formal_task_ordinal`; the canonical formal Current task is `IGNITION-20260822-133` with ordinal `133`, while the latest architecture-changing task is `IGNITION-20260821-129` with ordinal `129`. The split is legal and is checked independently.
+- lineage_boundary: `IGNITION-125` remains `HISTORICAL_UNEXECUTED` with valid requirements `REBASED_INTO_127`; `IGNITION-127` remains `COMPLETED_WITH_CLASSIFIED_RESIDUALS`; current `IGNITION-20260822-133` is `COMPLETED_WITH_CLASSIFIED_RESIDUALS`, terminal and `PRESENTATION_ONLY`.
+- release_lifecycle: content-owned `RELEASE_READY`, current task terminal, publication authority `REMOTE_REF_OBSERVATION`, embedded publication assertion `NONE`, publication `NOT_PUBLISHED` until the required remote ref is observed.
+- architecture_boundary: latest architecture-changing task remains `IGNITION-20260821-129`; the map remains `0.12.0` Current with `0.11.0` Historical and no architecture identity, topology or layout change is claimed.
+- residual_boundary: the 11 pre-existing Human Surface source-hash drifts, projection-manifest residual, historical Task104–106 propagation mismatch, environmental SymPy residual and bounded full-discovery timeout remain classified; no historical record or validator was rewritten to manufacture a green result.
+- epistemic_state: `CURRENT_WITH_OPEN_OBLIGATIONS` and `EPISTEMICALLY_ACCEPTED=0` remain unchanged. Canonical derivation, terminal projections, deterministic rendering, regression evidence and release readiness are repository-local evidence only; they do not establish external truth, production readiness, Owner acceptance or epistemic acceptance.
+- obligations: Step 11 must verify the unchanged formal-main baseline, perform one ordinary fast-forward, verify the remote SHA and a fresh clone, then write the independent 1111 receipt binding SHA, task IDs and ordinal semantics. The formal repository must not self-witness the final publication SHA.
+- stale_knowledge: Task130, Task131 and Task132 historical release records remain immutable provenance; Task129 remains the architecture reference and no old `current_iteration_boundary` value is rewritten in historical records.
+- next_read: read `data/operations/iterations/133/step10-deterministic-current-surface-r1.json`, `data/operations/current-release-lifecycle-r1.json`, the formal Task133 result and machine receipt, then complete Step 11 publication and independent receipt verification.

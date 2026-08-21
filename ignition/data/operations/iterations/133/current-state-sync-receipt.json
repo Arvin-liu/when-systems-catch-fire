@@ -11,17 +11,17 @@
   "current_iteration_boundary": 133,
   "current_iteration_boundary_semantics": "DEPRECATED_COMPATIBILITY_ALIAS_OF_CURRENT_FORMAL_TASK_ORDINAL",
   "surface_decisions": [
-    {"surface_id": "homepage-identity", "path": ".github/README.md", "decision": "NO_CHANGE_WITH_REASON", "reason": "Named ordinal rendering is deferred to the Current Surface Compiler migration in Step05."},
-    {"surface_id": "project-current-state", "path": "ignition/docs/project-current-state.md", "decision": "NO_CHANGE_WITH_REASON", "reason": "Named ordinal rendering is deferred to the Current Surface Compiler migration in Step05."},
-    {"surface_id": "ai-cold-start", "path": "ignition/AI-START-HERE.md", "decision": "NO_CHANGE_WITH_REASON", "reason": "Named ordinal rendering is deferred to the Current Surface Compiler migration in Step05."},
-    {"surface_id": "ai-agents-handoff", "path": "ignition/AI-HANDOFF.md", "decision": "NO_CHANGE_WITH_REASON", "reason": "Named ordinal rendering is deferred to the Current Surface Compiler migration in Step05."},
-    {"surface_id": "architecture", "path": "ignition/ARCHITECTURE.md", "decision": "NO_CHANGE_WITH_REASON", "reason": "No architecture identity or map change is introduced; named release semantics are being migrated first."},
+    {"surface_id": "homepage-identity", "path": ".github/README.md", "decision": "CHANGE", "reason": "Task133 terminal Current projection renders formal ordinal 133, architecture ordinal 129 and the deprecated compatibility alias.", "evidence": "Step05 compiler semantic gate PASS; Step10 terminal projection and two-pass determinism receipt."},
+    {"surface_id": "project-current-state", "path": "ignition/docs/project-current-state.md", "decision": "CHANGE", "reason": "Task133 terminal Current projection renders formal ordinal 133, architecture ordinal 129 and the deprecated compatibility alias.", "evidence": "Step05 compiler semantic gate PASS; Step10 terminal projection and two-pass determinism receipt."},
+    {"surface_id": "ai-cold-start", "path": "ignition/AI-START-HERE.md", "decision": "CHANGE", "reason": "Task133 terminal Current projection renders formal ordinal 133, architecture ordinal 129 and the deprecated compatibility alias.", "evidence": "Step05 compiler semantic gate PASS; Step10 terminal projection and two-pass determinism receipt."},
+    {"surface_id": "ai-agents-handoff", "path": "ignition/AI-HANDOFF.md", "decision": "CHANGE", "reason": "Task133 terminal Current projection renders formal ordinal 133, architecture ordinal 129 and the deprecated compatibility alias.", "evidence": "Step05 compiler semantic gate PASS; Step10 terminal projection and two-pass determinism receipt."},
+    {"surface_id": "architecture", "path": "ignition/ARCHITECTURE.md", "decision": "CHANGE", "reason": "The architecture document's generated Current block now states the formal/architecture ordinal split and compatibility alias.", "evidence": "Step05 compiler semantic gate PASS; Step10 terminal projection and two-pass determinism receipt."},
     {"surface_id": "steering-doc", "path": "ignition/docs/architecture/os-steering-intent-r1.md", "decision": "NO_CHANGE_WITH_REASON", "reason": "Task133 does not change Steering or Intent capability."},
-    {"surface_id": "machine-entry", "path": "ignition/llms.txt", "decision": "NO_CHANGE_WITH_REASON", "reason": "Machine rendering is deferred to the compiler migration in Step05."},
-    {"surface_id": "system-map-doc", "path": "ignition/docs/architecture/interactive-system-map.md", "decision": "NO_CHANGE_WITH_REASON", "reason": "Current map remains 0.12.0; this is a governance-semantics repair."},
+    {"surface_id": "machine-entry", "path": "ignition/llms.txt", "decision": "CHANGE", "reason": "The machine Current block now carries formal ordinal 133, architecture ordinal 129 and alias semantics.", "evidence": "Step05 compiler semantic gate PASS; Step10 terminal projection and two-pass determinism receipt."},
+    {"surface_id": "system-map-doc", "path": "ignition/docs/architecture/interactive-system-map.md", "decision": "NO_CHANGE_WITH_REASON", "reason": "Current map remains 0.12.0; Task133 changes governance semantics without changing map identity."},
     {"surface_id": "federation-doc", "path": "ignition/docs/architecture/external-agent-federation-r1.md", "decision": "NO_CHANGE_WITH_REASON", "reason": "Task133 does not change replaceable-executor or live-invocation boundaries."},
     {"surface_id": "system-map-json", "path": "ignition/data/architecture/interactive-system-map.json", "decision": "NO_CHANGE_WITH_REASON", "reason": "No registry, topology or layout change is introduced."},
-    {"surface_id": "state-changelog", "path": "ignition/STATE-CHANGELOG.md", "decision": "NO_CHANGE_WITH_REASON", "reason": "The append-only Task133 Current delta is closed in Step10 after all projections are synchronized."}
+    {"surface_id": "state-changelog", "path": "ignition/STATE-CHANGELOG.md", "decision": "CHANGE", "reason": "The append-only Task133 Current delta records the terminal ordinal-semantics closure and release boundary.", "evidence": "Task133 changelog section appended in Step10; current-task lineage validator PASS."}
   ],
   "system_map_sync": {
     "decision": "NO_CHANGE_WITH_REASON",
@@ -29,9 +29,9 @@
     "evidence": "Current map remains 0.12.0 Current and 0.11.0 Historical."
   },
   "state_changelog_delta": {
-    "decision": "NO_CHANGE_WITH_REASON",
-    "reason": "Task133 append-only Current prose is intentionally deferred until the generated surfaces are closed.",
-    "evidence": "Step10 will add the single Current task delta after compiler projection."
+    "decision": "CHANGE",
+    "reason": "Task133 append-only Current prose is now closed after the generated projections and terminal lifecycle are synchronized.",
+    "evidence": "Step10 Task133 changelog section; current-task lineage and Current-State sync validators PASS."
   },
   "changed_paths": [
     "ignition/data/architecture/current-system-identity.json",
@@ -51,9 +51,12 @@
     "ignition/schemas/architecture/current-facts.schema.json",
     "ignition/schemas/architecture/current-state-sync-receipt.schema.json",
     "ignition/schemas/operations/current-release-lifecycle-r1.schema.json",
-    "ignition/schemas/operations/current-snapshot-r1.schema.json"
+    "ignition/schemas/operations/current-snapshot-r1.schema.json",
+    "ignition/STATE-CHANGELOG.md",
+    "ignition/data/operations/iterations/133/step10-deterministic-current-surface-r1.json",
+    "ignition/data/operations/iterations/133/step10-terminal-closure-r1.json"
   ],
   "identity_contract_changed": true,
   "surface_sync_complete": false,
-  "claim_ceiling": "Task133 repository-local iteration identity and deterministic projection migration only; it does not establish external truth, production readiness, Owner acceptance, live executor completion or epistemic acceptance."
+  "claim_ceiling": "Task133 repository-local terminal Current projection and content-owned release readiness only; remote publication remains an independent observation and no external truth, production readiness, Owner acceptance, live executor completion or epistemic acceptance is inferred."
 }
