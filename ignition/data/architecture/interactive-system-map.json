@@ -1,18 +1,18 @@
 {
   "schema_version": "2.0.0",
-  "map_version": "0.11.0",
-  "historical_map_version": "0.10.0",
+  "map_version": "0.12.0",
+  "historical_map_version": "0.11.0",
   "projection_status": "CURRENT_DERIVED_PROJECTION",
   "title": "点火唯一完整可点击总架构图",
-  "subtitle": "唯一完整总架构图；0.11.0 Current 派生投影，0.10.0 为 Historical。主干是 Owner/Value Charter → Ignition OS driver / R2 Control Plane → Pack/Federation routing → 外部可替换执行器（external replaceable executors；external executors）→ Actions/Receipts → Validation/Feedback → OS；Durability / Lifecycle R3 是 OS 内的有界持久化、恢复、迁移、命名空间、Pack 生命周期、撤销、账本与 DR 连续性记录，不是第二张图，也不自动重放不确定外部副作用；Structural Governance Surface 是 advisory cross-cutting overlay，不增加 L7，不改变 capability、permission 或 epistemic status；Event Ledger、monotonic policy、resource arbitration、bounded scheduler、health lease、queue/backpressure、dispatch/reconciliation、concurrent operational memory、Durability / Lifecycle 与 Driver Console 都是有界控制记录；Reference / Conformance / Fallback 是本地冻结边界；Kernel ≠ Knowledge，Runtime ≠ Research，Pack 不拥有通用 authority；语言—思维横穿 L0—L6，不增加 L7。连线是仓库关系、同步义务或候选反馈，不自动表示现实因果。",
+  "subtitle": "唯一完整总架构图；0.12.0 Current 派生投影，0.11.0 为 Historical。主干是 Owner/Value Charter → Ignition OS driver / R4 Steering + Control Plane → Pack/Federation routing → 外部可替换执行器（external replaceable executors；external executors）→ Actions/Receipts → Validation/Feedback → OS；Steering / Intent / Goal / Obligation 是 OS 内的有界权威来源、生命周期、依赖、优先级、arbitration 与 why-next 记录，不推断真实 Owner 意图或完成；Durability / Lifecycle R3 是 OS 内的有界持久化、恢复、迁移、命名空间、Pack 生命周期、撤销、账本与 DR 连续性记录，不是第二张图，也不自动重放不确定外部副作用；Structural Governance Surface 是 advisory cross-cutting overlay，不增加 L7，不改变 capability、permission 或 epistemic status；Event Ledger、monotonic policy、resource arbitration、bounded scheduler、health lease、queue/backpressure、dispatch/reconciliation、concurrent operational memory、Durability / Lifecycle、Steering 与 Driver Console 都是有界控制记录；Reference / Conformance / Fallback 是本地冻结边界；Kernel ≠ Knowledge，Runtime ≠ Research，Pack 不拥有通用 authority；语言—思维横穿 L0—L6，不增加 L7。连线是仓库关系、同步义务或候选反馈，不自动表示现实因果。",
   "repository_url": "https://github.com/Arvin-liu/when-systems-catch-fire",
   "projection_authority": {
     "component_registry": "data/operations/project-components.json",
     "propagation_topology": "data/operations/change-propagation-topology.json",
     "layout_overlay": "data/architecture/interactive-system-map-layout.json",
-    "component_registry_version": "2.0.0",
-    "topology_version": "1.9.0",
-    "layout_version": "1.9.0"
+    "component_registry_version": "2.1.0",
+    "topology_version": "1.10.0",
+    "layout_version": "2.0.0"
   },
   "layout": {
     "columns": 3,
@@ -110,7 +110,7 @@
     {
       "color": "#1d4ed8",
       "column": 1,
-      "description": "Owner/Human、Profile、Kernel、Runtime、R2 Control Plane 与 Memory 的点火 OS 控制/治理脊柱；不拥有供应商 runtime",
+      "description": "Owner/Human、Profile、Kernel、Runtime、R4 Steering / Intent 与 Control Plane、Durability 和 Memory 的点火 OS 控制/治理脊柱；不拥有供应商 runtime",
       "id": "os_spine",
       "label": "Ignition OS / 控制脊柱",
       "row": 0
@@ -151,7 +151,7 @@
       },
       {
         "id": "os_control",
-        "label": "Ignition OS control / governance spine with durable lifecycle",
+        "label": "Ignition OS control / governance spine with durable lifecycle and explainable steering",
         "node_ids": [
           "agentization_boundary_r0",
           "agent_profile_r0",
@@ -166,6 +166,7 @@
           "durable_dispatch_r1",
           "concurrent_operational_memory_r2",
           "durability_lifecycle_r3",
+          "steering_intent_obligation_r1",
           "driver_console_r1",
           "runtime_memory_loop"
         ],
@@ -179,6 +180,8 @@
           "map_scheduler_dispatch",
           "map_runtime_concurrent_memory",
           "map_runtime_durability_lifecycle",
+          "map_runtime_steering_intent",
+          "map_steering_driver_console",
           "map_durability_driver_console",
           "map_memory_console",
           "map_runtime_memory"
@@ -795,6 +798,14 @@
       "group": "os_spine",
       "target": "docs/architecture/os-control-plane-r2.md#Durability and Lifecycle R3",
       "description": "Repository-local durability and lifecycle spine for snapshot plus tail, compaction, schema migration, namespace isolation, Pack lifecycle, revocation, accounting, recovery orchestration and disaster-recovery bundles; uncertain external effects stop at reconciliation and are never rerun automatically.",
+      "lifecycle_status": "current"
+    },
+    {
+      "id": "steering_intent_obligation_r1",
+      "label": "Steering / Intent / Goal / Obligation R1",
+      "group": "os_spine",
+      "target": "docs/architecture/os-steering-intent-r1.md#OS Steering, Intent, and Obligation R1",
+      "description": "Repository-local steering spine for provenance-aware intents, goal lifecycle, independent completion contracts, commitments, temporal windows, dependency-aware priority, conflict arbitration, explainable why-next traces, drift guards, memory/profile boundaries, namespace isolation and federation capsules; it cannot infer Owner intent or completion.",
       "lifecycle_status": "current"
     },
     {
@@ -1582,11 +1593,27 @@
       "label": "Durability 状态进入 Driver Console 恢复视图",
       "relation_class": "projects",
       "relation_domain": "repository_dependency"
+    },
+    {
+      "id": "map_runtime_steering_intent",
+      "source": "agent_runtime_r0",
+      "target": "steering_intent_obligation_r1",
+      "label": "Runtime 生成有界 Steering / Intent / Goal / Obligation 记录",
+      "relation_class": "generates",
+      "relation_domain": "repository_dependency"
+    },
+    {
+      "id": "map_steering_driver_console",
+      "source": "steering_intent_obligation_r1",
+      "target": "driver_console_r1",
+      "label": "Steering why-next 与 obligation 状态进入 Driver Console",
+      "relation_class": "projects",
+      "relation_domain": "repository_dependency"
     }
   ],
   "component_coverage": {
-    "registry_components": 93,
-    "visible_nodes": 81,
+    "registry_components": 94,
+    "visible_nodes": 82,
     "hidden_components": 12,
     "hidden_representatives": {
       "foundation_data": "foundation",

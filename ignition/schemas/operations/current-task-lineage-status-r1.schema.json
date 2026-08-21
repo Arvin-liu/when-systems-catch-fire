@@ -22,11 +22,11 @@
       "additionalProperties": false,
       "required": ["task_id", "scope", "execution_status", "terminal", "identity_impact"],
       "properties": {
-        "task_id": {"const": "IGNITION-20260821-128"},
+        "task_id": {"const": "IGNITION-20260821-129"},
         "scope": {"$ref": "#/$defs/nonblank"},
         "execution_status": {"enum": ["IN_PROGRESS", "COMPLETED_WITH_CLASSIFIED_RESIDUALS"]},
         "terminal": {"type": "boolean"},
-        "identity_impact": {"const": "PRESENTATION_ONLY"}
+        "identity_impact": {"const": "ARCHITECTURE_CHANGED"}
       }
     },
     "currentState": {

@@ -8,7 +8,7 @@ Agent 的运行时。
 本页与 [`CURRENT_STATE_SYNC_INVARIANT`](../governance/current-state-sync-invariant.md)
 的当前身份保持一致：点火是 driver / orchestration-governance layer，Knowledge
 是第一个大型 Domain Pack，默认决策是 integrate 而不是重造。当前计数、地图版本
-`0.11.0`（`0.10.0` Historical）和 live ceiling 以 [`current-facts.json`](../../data/architecture/current-facts.json)
+`0.12.0`（`0.11.0` Historical、`0.10.0` 更早 Historical）和 live ceiling 以 [`current-facts.json`](../../data/architecture/current-facts.json)
 为准；真实 live invocation 仍可在安全边界无法满足时明确 `SKIPPED`。
 
 Task 126 的 Structural Governance Surface 是 Federation 可选择读取的 advisory
@@ -23,6 +23,12 @@ migration、namespace、Pack lifecycle、revocation、accounting、recovery 或 
 若 external dispatch 不确定，OS 只记录 `REQUIRES_RECONCILIATION`，禁止通过任何 adapter
 自动重放；repository-local continuity pilot 不是 live executor success、production
 durability、exact-once delivery、Owner acceptance 或 epistemic acceptance。
+
+Task 129 的 Steering / Intent / Goal / Obligation R1 只向 Federation 发放经过边界收窄的
+`IntentCapsule`：capsule 携带成功标准、权限上限、blocker、时间引用、report contract 和
+最小 context 引用，不携带 canonical registry 写权限。外部 executor 的 report、telemetry
+或 `PASS` 不能写回 canonical Intent，也不能推断 Goal completion；独立 Completion Contract
+和 OS reconciliation 仍是必要条件。
 
 Task 124 的 OS Control Plane R2 是 Federation 上游的有界交通系统：Event Ledger、
 monotonic policy compiler、resource arbitration、bounded concurrent scheduler、

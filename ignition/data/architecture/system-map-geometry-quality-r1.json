@@ -6,26 +6,26 @@
   ],
   "bottom_only_isolated_groups": [],
   "canvas": {
-    "height": 2846.0,
+    "height": 2912.0,
     "preserve_aspect_ratio": "xMidYMin meet",
-    "view_box": "0 0 1800 2846",
+    "view_box": "0 0 1800 2912",
     "width": 1800.0
   },
   "checks": {
     "bottom_only_isolated_groups": [],
-    "clickable_target_count": 81,
+    "clickable_target_count": 82,
     "clickable_target_coverage": true,
-    "expected_node_count": 81,
+    "expected_node_count": 82,
     "group_box_overlap_count": 0,
     "label_clip_count": 0,
     "node_box_overlap_count": 0,
-    "node_geometry_count": 81,
+    "node_geometry_count": 82,
     "nodes_outside_group_count": 0,
     "solid_background_rect_count": 1
   },
-  "clickable_target_count": 81,
+  "clickable_target_count": 82,
   "clickable_target_coverage": true,
-  "edge_crossing_proxy": 184,
+  "edge_crossing_proxy": 188,
   "edges": [
     {
       "id": "map_analysis_increment",
@@ -451,9 +451,19 @@
       "id": "map_durability_driver_console",
       "source": "durability_lifecycle_r3",
       "target": "driver_console_r1"
+    },
+    {
+      "id": "map_runtime_steering_intent",
+      "source": "agent_runtime_r0",
+      "target": "steering_intent_obligation_r1"
+    },
+    {
+      "id": "map_steering_driver_console",
+      "source": "steering_intent_obligation_r1",
+      "target": "driver_console_r1"
     }
   ],
-  "expected_node_count": 81,
+  "expected_node_count": 82,
   "failures": [],
   "gap_by_column": {
     "0": {
@@ -551,7 +561,7 @@
       "node_count": 4,
       "width": 560.0,
       "x": 620.0,
-      "y": 1812.0
+      "y": 1878.0
     },
     {
       "column": 0,
@@ -591,7 +601,7 @@
       "node_count": 7,
       "width": 560.0,
       "x": 620.0,
-      "y": 2228.0
+      "y": 2294.0
     },
     {
       "column": 0,
@@ -611,14 +621,14 @@
       "node_count": 5,
       "width": 560.0,
       "x": 620.0,
-      "y": 1330.0
+      "y": 1396.0
     },
     {
       "column": 1,
       "degree": 6,
-      "height": 1180.0,
+      "height": 1246.0,
       "id": "os_spine",
-      "node_count": 16,
+      "node_count": 17,
       "width": 560.0,
       "x": 620.0,
       "y": 122.0
@@ -636,20 +646,20 @@
   ],
   "internal_blank_area": 156800.0,
   "label_clip_count": 0,
-  "layout_version": "1.9.0",
-  "map_version": "0.11.0",
+  "layout_version": "2.0.0",
+  "map_version": "0.12.0",
   "max_internal_gap": 28.0,
   "metrics": {
     "baseline_canvas_height": 3988.0,
     "baseline_edge_crossing_proxy": 173.0,
     "baseline_internal_blank_area": 1245440.0,
     "blank_area_reduction_vs_baseline": 0.8741007194,
-    "canvas_height": 2846.0,
-    "canvas_height_reduction_vs_baseline": 0.2863590772,
+    "canvas_height": 2912.0,
+    "canvas_height_reduction_vs_baseline": 0.2698094283,
     "canvas_width": 1800.0,
-    "edge_crossing_proxy": 184,
-    "edge_crossing_ratio_vs_baseline": 1.063583815,
-    "group_occupancy_ratio": 0.7606152885,
+    "edge_crossing_proxy": 188,
+    "edge_crossing_ratio_vs_baseline": 1.0867052023,
+    "group_occupancy_ratio": 0.7504273504,
     "internal_blank_area": 156800.0,
     "max_internal_gap": 28.0,
     "mobile_viewports_fit": 2
@@ -740,7 +750,7 @@
       "id": "candidate_return",
       "width": 516.0,
       "x": 642.0,
-      "y": 2036.0
+      "y": 2102.0
     },
     {
       "group": "writing",
@@ -860,7 +870,7 @@
       "id": "driver_console_r1",
       "width": 516.0,
       "x": 642.0,
-      "y": 1204.0
+      "y": 1270.0
     },
     {
       "group": "os_spine",
@@ -924,7 +934,7 @@
       "id": "feedback_routes",
       "width": 516.0,
       "x": 642.0,
-      "y": 2102.0
+      "y": 2168.0
     },
     {
       "group": "core",
@@ -980,7 +990,7 @@
       "id": "iteration",
       "width": 516.0,
       "x": 642.0,
-      "y": 1620.0
+      "y": 1686.0
     },
     {
       "group": "domain_packs",
@@ -996,7 +1006,7 @@
       "id": "l0",
       "width": 516.0,
       "x": 642.0,
-      "y": 2320.0
+      "y": 2386.0
     },
     {
       "group": "layers",
@@ -1004,7 +1014,7 @@
       "id": "l1",
       "width": 516.0,
       "x": 642.0,
-      "y": 2386.0
+      "y": 2452.0
     },
     {
       "group": "layers",
@@ -1012,7 +1022,7 @@
       "id": "l2",
       "width": 516.0,
       "x": 642.0,
-      "y": 2452.0
+      "y": 2518.0
     },
     {
       "group": "layers",
@@ -1020,7 +1030,7 @@
       "id": "l3",
       "width": 516.0,
       "x": 642.0,
-      "y": 2518.0
+      "y": 2584.0
     },
     {
       "group": "layers",
@@ -1028,7 +1038,7 @@
       "id": "l4",
       "width": 516.0,
       "x": 642.0,
-      "y": 2584.0
+      "y": 2650.0
     },
     {
       "group": "layers",
@@ -1036,7 +1046,7 @@
       "id": "l5",
       "width": 516.0,
       "x": 642.0,
-      "y": 2650.0
+      "y": 2716.0
     },
     {
       "group": "layers",
@@ -1044,7 +1054,7 @@
       "id": "l6",
       "width": 516.0,
       "x": 642.0,
-      "y": 2716.0
+      "y": 2782.0
     },
     {
       "group": "language_thought",
@@ -1140,7 +1150,7 @@
       "id": "provenance_capture",
       "width": 516.0,
       "x": 642.0,
-      "y": 1970.0
+      "y": 2036.0
     },
     {
       "group": "models",
@@ -1156,7 +1166,7 @@
       "id": "public_response",
       "width": 516.0,
       "x": 642.0,
-      "y": 1904.0
+      "y": 1970.0
     },
     {
       "group": "operations",
@@ -1164,7 +1174,7 @@
       "id": "q12",
       "width": 516.0,
       "x": 642.0,
-      "y": 1422.0
+      "y": 1488.0
     },
     {
       "group": "operations",
@@ -1172,7 +1182,7 @@
       "id": "q13",
       "width": 516.0,
       "x": 642.0,
-      "y": 1488.0
+      "y": 1554.0
     },
     {
       "group": "operations",
@@ -1180,7 +1190,7 @@
       "id": "q14",
       "width": 516.0,
       "x": 642.0,
-      "y": 1554.0
+      "y": 1620.0
     },
     {
       "group": "os_spine",
@@ -1263,6 +1273,14 @@
       "y": 914.0
     },
     {
+      "group": "os_spine",
+      "height": 54.0,
+      "id": "steering_intent_obligation_r1",
+      "width": 516.0,
+      "x": 642.0,
+      "y": 1204.0
+    },
+    {
       "group": "governance",
       "height": 54.0,
       "id": "structural_governance_surface",
@@ -1292,7 +1310,7 @@
       "id": "sync",
       "width": 516.0,
       "x": 642.0,
-      "y": 1686.0
+      "y": 1752.0
     },
     {
       "group": "front_doors",

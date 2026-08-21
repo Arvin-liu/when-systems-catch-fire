@@ -31,7 +31,7 @@
     "facts": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["architecture", "packs", "federation", "foundation", "knowledge_experience", "fire_seeds", "human_surface", "iteration", "task_lineage", "environmental_residuals"],
+      "required": ["architecture", "packs", "federation", "foundation", "knowledge_experience", "fire_seeds", "human_surface", "iteration", "task_lineage", "steering", "environmental_residuals"],
       "properties": {
         "architecture": {
           "type": "object", "additionalProperties": false,
@@ -112,6 +112,18 @@
             "task125_requirement_lineage_status": {"const": "REBASED_INTO_127"},
             "task125_canonical_status": {"const": "HISTORICAL_UNEXECUTED_REBASED_INTO_127"},
             "task127_status": {"const": "COMPLETED_WITH_CLASSIFIED_RESIDUALS"}
+          }
+        },
+        "steering": {
+          "type": "object", "additionalProperties": false,
+          "required": ["current_status", "invariant_ids", "module_count", "integration_surface_count", "pilot_status", "completion_boundary"],
+          "properties": {
+            "current_status": {"const": "REPOSITORY_LOCAL_CURRENT"},
+            "invariant_ids": {"type": "array", "minItems": 3, "items": {"$ref": "#/$defs/nonblank"}, "uniqueItems": true},
+            "module_count": {"type": "integer", "minimum": 1},
+            "integration_surface_count": {"type": "integer", "minimum": 1},
+            "pilot_status": {"const": "OFFLINE_SYNTHETIC_ONLY"},
+            "completion_boundary": {"$ref": "#/$defs/nonblank"}
           }
         },
         "environmental_residuals": {"type": "array", "items": {"$ref": "#/$defs/nonblank"}}

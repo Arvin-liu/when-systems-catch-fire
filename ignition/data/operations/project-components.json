@@ -1924,8 +1924,20 @@
       "lifecycle": {"source": "data/operations/durability/continuity-pilot-r1.json", "status": "current", "version": "R3"},
       "map_projection": {"group": "os_spine", "visible": true},
       "path_patterns": ["agent_runtime/durability.py", "agent_runtime/recovery.py", "agent_runtime/dr_bundle.py", "agent_runtime/pilots/durability_lifecycle_127.py", "data/operations/durability/", "schemas/operations/durability-", "tools/validate_durability_", "tests/test_durability_"]
+    },
+    {
+      "authority": "canonical",
+      "canonical_target": "docs/architecture/os-steering-intent-r1.md#OS Steering, Intent, and Obligation R1",
+      "component_id": "steering_intent_obligation_r1",
+      "component_type": "operation_control",
+      "description": "Repository-local steering spine for provenance-aware intents, goal lifecycle, independent completion contracts, commitments, temporal windows, dependency-aware priority, conflict arbitration, explainable why-next traces, drift guards, memory/profile boundaries, namespace isolation and federation capsules; it cannot infer Owner intent or completion.",
+      "label": "Steering / Intent / Goal / Obligation R1",
+      "layer_or_overlay": "overlay",
+      "lifecycle": {"source": "agent_runtime/steering.py", "status": "current", "version": "R1"},
+      "map_projection": {"group": "os_spine", "visible": true},
+      "path_patterns": ["agent_runtime/steering.py", "agent_runtime/driver_console.py", "agent_runtime/event_ledger.py", "agent_runtime/pilots/steering_portfolio_129.py", "agent_runtime/pilots/steering_adversarial_129.py", "data/operations/steering/", "data/operations/iterations/129/fixtures/steering-", "tools/validate_steering_", "tests/test_steering_"]
     }
   ],
   "purpose": "Canonical project-component identity, target and lifecycle registry for declared change propagation and system-map projection; it does not establish real-world causality.",
-  "registry_version": "2.0.0"
+  "registry_version": "2.1.0"
 }

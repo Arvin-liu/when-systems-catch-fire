@@ -12,7 +12,7 @@ provenance、handoff 和结果吸收；它是 OS / orchestration-governance laye
 `REFERENCE_EXECUTOR / CONFORMANCE_EXECUTOR / FALLBACK_MINIMAL`。
 Knowledge 是第一个大型 Domain Pack，不是整个系统本体；Research、Writing、
 Maintenance 也各自受 manifest、schema、validator 和 authority ceiling 约束。
-当前唯一完整系统图为 `0.11.0`，`0.10.0` 仅作 Historical；语义主干把中央 OS
+当前唯一完整系统图为 `0.12.0`，`0.11.0` 仅作 Historical，`0.10.0` 及更早版本继续保留为历史投影；语义主干把中央 OS
 控制脊柱、外部 Federation/replaceable executors 与 Domain/Skill Packs 分开。
 Structural Governance Surface 作为 advisory cross-cutting overlay 单独登记，
 只提供阅读/实验上下文，不增加 L7，不改变 capability、permission 或 epistemic status。
@@ -27,8 +27,12 @@ JSON 投影为准。
 Durability / Lifecycle requirements 状态是 `REBASED_INTO_127`，规范状态为
 `HISTORICAL_UNEXECUTED_REBASED_INTO_127`；这不等于 125 文件曾执行。`IGNITION-127`
 当前状态是 `COMPLETED_WITH_CLASSIFIED_RESIDUALS`，新回归为 0；历史/环境 residual
-仍按 receipt 保留。当前窄范围闭合任务是 `IGNITION-20260821-128`，不改变 R3 的
-authority ceiling、唯一系统图或认识论状态。
+仍按 receipt 保留。当前架构变更任务是 `IGNITION-20260821-129`，将 Steering / Intent /
+Goal / Obligation R1 纳入同一 OS 控制脊柱；它不改变 R3 的 authority ceiling、认识论状态，
+也不把旧任务记录重写为当前事实。
+
+Steering 以 `OWNER_DECLARED`／`OWNER_APPROVED_DERIVED` 与 `SYSTEM_DERIVED_PROPOSAL` 分离
+权威来源；Goal completion 需要独立 Completion Contract，`PASS` Run 不得推断完成。
 
 Task 124 的 [OS Control Plane R2](./architecture/os-control-plane-r2.md) 补上了
 Event Ledger、monotonic policy compiler、resource arbitration、bounded concurrent
@@ -56,6 +60,7 @@ AGI、生产安全、现实因果、外部有效性或 Owner acceptance 证明�
 - 以唯一 registry/topology/layout 生成系统图；图是可点击的仓库导航与依赖投影，不是现实因果图、严格同构或完备性证明。
 - Task 126 的 Structural Governance Surface 由候选 ESI、过渡语法、不越权合同和软上下文暴露合同共同限定；它是 advisory，不是权限、真值、Owner 或安全放行层。
 - 控制平面把事件、权限收窄、共享资源、并发 ready-set、健康租约、队列、外部回执和操作记忆分别持久化；Driver Console 只投影下一步与开放义务，不成为第二真相源。
+- Task 129 的 Steering / Intent / Goal / Obligation R1 已形成仓库本地可复算骨架：Intent Registry、Goal lifecycle、独立 Completion Contract、Commitment/Obligation Ledger、时间语义、长期 Goal graph、优先级与 conflict arbitration、DecisionTrace/why-next、Episode binding、drift/handoff guard、Memory/Profile boundary、Durability、namespace/delegation 与 federation Intent Capsule；这些记录不授予 Owner authority，也不把运行通过推断为完成。
 - R2/Federation conformance 仍以 disposable local fixture 为主；Step 09 只做了 fresh public CLI probe 和安全、有界的临时 workspace smoke 尝试，OpenClaw 明确 `SKIPPED_UNSAFE_OR_UNAVAILABLE`，Hermes/Codex 因 hard timeout 同样未产生可接受 completion。详细记录见 [`external-conformance-smoke-r1.json`](../data/operations/iterations/123/external-conformance-smoke-r1.json)；当前 live provider/inference ceiling 仍未建立。
 
 ## 当前限制与开放义务

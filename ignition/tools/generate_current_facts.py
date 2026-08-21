@@ -27,6 +27,7 @@ CONTRACT_PATH = ROOT / "data/architecture/current-system-identity.json"
 FACTS_PATH = ROOT / "data/architecture/current-facts.json"
 FACTS_MARKDOWN_PATH = ROOT / "docs/architecture/current-facts.md"
 SCHEMA_PATH = ROOT / "schemas/architecture/current-facts.schema.json"
+STEERING_PATH = ROOT / "data/operations/steering/current-state-r1.json"
 
 
 def load_json(path: Path) -> Any:
@@ -58,6 +59,7 @@ def source_paths(contract: dict[str, Any]) -> list[Path]:
         sync.resolve_repo_path(contract["current_task_lineage"]["source_path"]),
         sync.resolve_repo_path(contract["current_task_lineage"]["schema_path"]),
         sync.resolve_repo_path(contract["current_task_lineage"]["validator_path"]),
+        STEERING_PATH,
     }
     for metric in contract["derived_metrics"]:
         paths.add(sync.resolve_repo_path(metric["source_path"]))
@@ -84,6 +86,7 @@ def build_projection(contract: dict[str, Any] | None = None) -> dict[str, Any]:
     human_config = load_json(sync.resolve_repo_path("ignition/data/governance/human-results/config.json"))
     sync_registry = load_json(sync.resolve_repo_path("ignition/data/operations/synchronization-surfaces.json"))
     task_lineage = load_json(sync.resolve_repo_path(contract["current_task_lineage"]["source_path"]))
+    steering = load_json(STEERING_PATH)
     sync_surfaces = sync_registry.get("surfaces", [])
     role_counts = Counter(role for row in sync_surfaces for role in row.get("roles", []))
     executors = inventory.get("executors", [])
@@ -158,6 +161,14 @@ def build_projection(contract: dict[str, Any] | None = None) -> dict[str, Any]:
             "task125_canonical_status": task_lineage["lineages"][0]["predecessor"]["canonical_status"],
             "task127_status": task_lineage["lineages"][0]["successor"]["execution_status"],
         },
+        "steering": {
+            "current_status": steering["current_status"],
+            "invariant_ids": steering["identity_invariants"],
+            "module_count": len(steering["modules"]),
+            "integration_surface_count": len(steering["integration_surfaces"]),
+            "pilot_status": steering["pilot_status"],
+            "completion_boundary": steering["completion_boundary"],
+        },
         "environmental_residuals": sorted(str(item) for item in residuals),
     }
     projection = {
@@ -186,6 +197,7 @@ def render_markdown(projection: dict[str, Any]) -> bytes:
     fire_seeds = facts["fire_seeds"]
     human = facts["human_surface"]
     iteration = facts["iteration"]
+    steering = facts["steering"]
     residuals = facts["environmental_residuals"]
     lines = [
         "<!-- BEGIN GENERATED CURRENT-FACTS r1; DO NOT EDIT -->",
@@ -201,6 +213,7 @@ def render_markdown(projection: dict[str, Any]) -> bytes:
         f"- Fire Seeds: `{fire_seeds['seed_count']}` seeds/clusters；`{fire_seeds['source_census_count']}` source-census records。",
         f"- Human Surface: `{human['materiality_entries']}` materiality entries（function `{human['function_human_entries']}` + non-function `{human['nonfunction_human_entries']}`）；`{human['registered_synchronization_surfaces']}` registered sync surfaces；`{human['machine_human_pairs']}` machine/human pairs。",
         f"- Task lineage: current `{facts['task_lineage']['current_task_id']}` `{facts['task_lineage']['current_task_status']}`；125 file `{facts['task_lineage']['task125_file_status']}`, requirements `{facts['task_lineage']['task125_requirement_lineage_status']}`, canonical `{facts['task_lineage']['task125_canonical_status']}`；127 `{facts['task_lineage']['task127_status']}`。",
+        f"- Steering: `{steering['current_status']}`；`{steering['module_count']}` bounded modules；`{steering['integration_surface_count']}` integration surfaces；pilot `{steering['pilot_status']}`；completion boundary `{steering['completion_boundary']}`。",
         "- Current environmental residuals: " + ("；".join(residuals) if residuals else "none declared") + "。",
         "",
         "Source authority: the JSON projection records SHA-256 fingerprints for the canonical registries, manifests, topology, pack declarations, federation inventory and generator/schema inputs. Human prose may explain these facts but is not a second numeric authority.",

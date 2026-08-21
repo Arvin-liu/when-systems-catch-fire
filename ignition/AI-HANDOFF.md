@@ -2,6 +2,12 @@
 
 ## 当前版本
 
+Task 129 将当前身份推进为 `os-control-plane-r4-steering-intent-r1`：唯一完整系统图为
+`0.12.0` Current，`0.11.0` 为 Historical、`0.10.0` 为更早 Historical。Steering / Intent /
+Goal / Obligation R1 是 OS 内的仓库本地控制记录：来源权威、Goal 生命周期、独立 Completion Contract、
+承诺义务、why-next、漂移/handoff guard 与 federation Intent Capsule 均保持可追溯；系统提议、
+运行通过和外部 executor 回执都不能自行升级 Owner authority 或 Goal completion。
+
 Agent Platform R2 与 External Agent Federation R1 已在 Task 122 正式 main
 基线上闭合；Task 127 已完成并发布为当前 Durability / Lifecycle R3。本页的工程边界不构成
 外部能力或 epistemic acceptance，`CURRENT_WITH_OPEN_OBLIGATIONS` 与

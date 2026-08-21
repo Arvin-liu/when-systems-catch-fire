@@ -14,6 +14,11 @@ replaceable executors，而不是 OS authority。Structural Governance Surface �
 advisory cross-cutting overlay，只能作为阅读/实验上下文，不能改变 capability、
 permission 或 epistemic status。
 
+Task 129 是当前架构变更：身份 epoch 为 `os-control-plane-r4-steering-intent-r1`，唯一完整系统图为
+`0.12.0` Current，`0.11.0` 为 Historical，`0.10.0` 为更早 Historical。Steering / Intent /
+Goal / Obligation R1 记录 Owner/提议来源、Goal 生命周期、独立完成契约、承诺义务、why-next、
+漂移和 handoff；`PASS` Run 不等于 Goal 完成，系统提议不等于 Owner authority。
+
 ## 读取顺序
 
 1. `../.github/README.md`：人类入口、价值边界与当前结论。
@@ -29,6 +34,7 @@ permission 或 epistemic status。
 10. AI-HANDOFF.md：当前权威、兼容和任务交接。
 11. data/foundation/project-state.json、data/architecture/agentization-boundary-r0.json 与 registry-manifest.json：机器状态与边界投影。
 12. 当前任务命令、data/operations/iterations/128/progress.jsonl、`data/operations/current-task-lineage-status.json` 与相关 source/schema；Task 127 的 identity contract、current-facts、Durability / Lifecycle R3 和同步 receipt 是已发布状态入口，`IGNITION-127` 当前为 `COMPLETED_WITH_CLASSIFIED_RESIDUALS`；Task 128 的 lineage/status source 是当前语义入口。旧 Task 125 文件状态是 `HISTORICAL_UNEXECUTED`，其 requirements 已 `REBASED_INTO_127`，不得把它当作仍 pending 的当前任务。
+13. 当前任务还必须读取 `data/operations/iterations/129/progress.jsonl`、`data/operations/steering/current-state-r1.json`、`docs/architecture/os-steering-intent-r1.md` 及 steering validators；Step 20 的 Current 投影是 `ARCHITECTURE_CHANGED`，Step 21 的 Git/receipt 才是发布闭合证据。
 
 ## R2 冷启动补充
 

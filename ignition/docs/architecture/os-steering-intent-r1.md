@@ -1,6 +1,6 @@
 # OS Steering, Intent, and Obligation R1
 
-This document describes the repository-local steering plane introduced by IGNITION-129. It is a control-plane contract for durable direction, Goal state, obligations, arbitration, and human-readable next-work explanations. It is not a claim that the repository knows an actual Owner preference, has completed a real-world objective, or has established production or external truth.
+This document describes the repository-local steering plane introduced by IGNITION-129. It is an OS driver control-plane contract for durable direction, Goal state, obligations, arbitration, and human-readable next-work explanations. The OS continues to route bounded work to replaceable executors through an external executor adapter boundary; the `Reference / Conformance / Fallback` boundary remains frozen, Durability / Lifecycle remains repository-local, and the Structural Governance Surface remains advisory. It is not a claim that the repository knows an actual Owner preference, has completed a real-world objective, or has established production or external truth.
 
 ## Authority boundary
 
@@ -43,6 +43,10 @@ Conflict arbitration records the conflict type, all candidate decisions, the sel
 - which unknowns remain unresolved.
 
 The trace is intentionally human-readable and machine-validatable. It does not contain private prompt material or hidden reasoning, and it does not claim that a selected bounded Run has satisfied its parent Goal.
+
+## Driver Console R3 integration
+
+The Driver Console R3 snapshot presents the selected Goal, why-next trace, blockers, Owner decisions, completed Run status, pause/resume obligations, and unresolved reconciliation references. It is a human-readable projection over the canonical steering and durability records, not a second registry and not a completion authority. A `PASS` Run remains `INDEPENDENT_CONTRACT_REQUIRED` until the independent Completion Contract is evaluated.
 
 ## Claim ceiling
 

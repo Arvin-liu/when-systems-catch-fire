@@ -1,8 +1,8 @@
 {
   "schema_version": "current-system-identity-r1",
   "contract_id": "CURRENT_STATE_SYNC_INVARIANT",
-  "identity_epoch": "os-control-plane-r3-durability-lifecycle-r0",
-  "current_iteration_boundary": 128,
+  "identity_epoch": "os-control-plane-r4-steering-intent-r1",
+  "current_iteration_boundary": 129,
   "current_state_status": "CURRENT_WITH_OPEN_OBLIGATIONS",
   "epistemically_accepted": 0,
   "current_architecture_identity": {
@@ -24,15 +24,16 @@
       "Concurrent Operational Memory",
       "Durability / Lifecycle",
       "Driver Console",
+      "Steering / Intent / Goal / Obligation",
       "Domain Pack Registry",
       "External Agent Federation"
     ],
-    "control_plane_role": "R3 bounded coordination fabric for events, policy narrowing, resource conflict, concurrent scheduling, executor health, queue admission, dispatch reconciliation, operational memory, snapshot plus tail, compaction, schema migration, namespace isolation, Pack lifecycle, capability revocation, accounting, recovery orchestration, disaster-recovery bundles and driver-readable recovery; uncertain external effects stop at reconciliation and the Structural Governance Surface remains a cross-cutting advisory overlay, not a hard control-plane authority.",
+    "control_plane_role": "R4 bounded coordination fabric for events, policy narrowing, resource conflict, concurrent scheduling, executor health, queue admission, dispatch reconciliation, operational memory, snapshot plus tail, compaction, schema migration, namespace isolation, Pack lifecycle, capability revocation, accounting, recovery orchestration, disaster-recovery bundles, driver-readable recovery and repository-local steering of intents, goals, commitments, temporal windows, dependencies, priority, arbitration, decision traces and explainable why-next records; uncertain external effects stop at reconciliation and the Structural Governance Surface remains a cross-cutting advisory overlay, not a hard control-plane authority.",
     "external_executor_role": "replaceable executors",
     "knowledge_role": "Knowledge is the first large Domain Pack, not the whole system.",
     "reference_executor_role": "REFERENCE_EXECUTOR / CONFORMANCE_EXECUTOR / FALLBACK_MINIMAL",
-    "identity_boundary": "Ignition owns goal, value, policy, permission, durable state, memory, validation, handoff, provenance and result absorption; Durability / Lifecycle keeps repository-local continuity and recovery records, while uncertain external effects stop at reconciliation and are never rerun automatically; external Agents perform bounded local actions through adapters. The Structural Governance Surface can expose advisory context but cannot change capability, permission or epistemic status.",
-    "authority_ceiling": "This is a repository engineering identity. It grants no Owner authority, truth authority, M/E upgrade, production safety, general intelligence or external validity; Durability / Lifecycle is not proof of production durability or external completion, and the advisory Structural Governance Surface is not a new authority layer."
+    "identity_boundary": "Ignition owns goal, value, policy, permission, durable state, memory, validation, handoff, provenance and result absorption; Steering records distinguish Owner-declared authority from system proposals, keep Goal dependency separate from Supervisor execution DAGs, and require an independent Completion Contract before completion; Durability / Lifecycle keeps repository-local continuity and recovery records, while uncertain external effects stop at reconciliation and are never rerun automatically; external Agents perform bounded local actions through adapters. The Structural Governance Surface can expose advisory context but cannot change capability, permission or epistemic status.",
+    "authority_ceiling": "This is a repository engineering identity. It grants no Owner authority, truth authority, M/E upgrade, production safety, general intelligence or external validity; Steering records model repository-local authority provenance and obligations but do not infer real Owner intent or completion; Durability / Lifecycle is not proof of production durability or external completion, and the advisory Structural Governance Surface is not a new authority layer."
   },
   "current_map": {
     "source_path": "ignition/data/architecture/interactive-system-map-layout.json",
@@ -184,6 +185,11 @@
       "obligation_id": "DURABILITY_LIFECYCLE_CEILING",
       "statement": "Durability / Lifecycle evidence is repository-local continuity and recovery evidence only; schema migration, snapshot restore, disaster-recovery restore, Pack rollback and revocation do not establish production durability, exact-once external execution, Owner acceptance or epistemic acceptance.",
       "source_paths": ["ignition/docs/architecture/os-control-plane-r2.md", "ignition/data/operations/durability/continuity-pilot-r1.json", "ignition/data/operations/iterations/127/progress.jsonl"]
+    },
+    {
+      "obligation_id": "STEERING_INTENT_CEILING",
+      "statement": "Steering / Intent / Goal / Obligation records are repository-local coordination projections; system-derived proposals cannot become Owner authority, a passing run cannot infer goal completion, and offline pilots do not establish live executor completion or epistemic acceptance.",
+      "source_paths": ["ignition/docs/architecture/os-steering-intent-r1.md", "ignition/data/operations/steering/current-state-r1.json", "ignition/data/operations/iterations/129/progress.jsonl"]
     }
   ],
   "authority_ceilings": [
@@ -193,6 +199,7 @@
     "Knowledge Domain Pack validators do not grant generic runtime authority.",
     "Event, policy, resource, scheduler, health, queue, dispatch, memory and console records remain bounded operational projections; none grants truth, Owner, executor or epistemic authority.",
     "Durability / Lifecycle records remain bounded repository-local continuity projections; uncertain external effects stop at reconciliation, and recovery evidence does not establish production durability or exact-once execution.",
+    "Steering / Intent / Goal / Obligation records remain bounded repository-local authority, lifecycle and explainability projections; system proposals cannot promote themselves, run-pass cannot infer completion, and no record grants Owner, truth or epistemic authority.",
     "System map and propagation are repository navigation/dependency projections, not reality causality or completeness proof.",
     "Structural Governance Surface is an advisory overlay only; it cannot grant capability, permission, authorization, truth, Owner acceptance, epistemic acceptance or safety release.",
     "CURRENT_WITH_OPEN_OBLIGATIONS remains separate from EPISTEMICALLY_ACCEPTED=0."
@@ -218,6 +225,7 @@
     {"surface_id":"ai-cold-start","path":"ignition/AI-START-HERE.md","concepts":["os_driver","replaceable_executors","knowledge_pack","reference_freeze","durability_lifecycle","soft_governance"]},
     {"surface_id":"ai-agents-handoff","path":"ignition/AI-HANDOFF.md","concepts":["os_driver","replaceable_executors","knowledge_pack","reference_freeze","durability_lifecycle","soft_governance"]},
     {"surface_id":"architecture","path":"ignition/ARCHITECTURE.md","concepts":["os_driver","replaceable_executors","reference_freeze","durability_lifecycle","soft_governance"]},
+    {"surface_id":"steering-doc","path":"ignition/docs/architecture/os-steering-intent-r1.md","concepts":["os_driver","replaceable_executors","reference_freeze","durability_lifecycle","soft_governance"]},
     {"surface_id":"machine-entry","path":"ignition/llms.txt","concepts":["os_driver","replaceable_executors","knowledge_pack","reference_freeze","durability_lifecycle","soft_governance"]},
     {"surface_id":"system-map-doc","path":"ignition/docs/architecture/interactive-system-map.md","concepts":["os_driver","replaceable_executors","reference_freeze","map_version","durability_lifecycle","soft_governance"]},
     {"surface_id":"federation-doc","path":"ignition/docs/architecture/external-agent-federation-r1.md","concepts":["os_driver","replaceable_executors","reference_freeze","durability_lifecycle","soft_governance"]},
@@ -229,7 +237,7 @@
     "replaceable_executors": {"all_of_any_group": [["replaceable executor", "replaceable executors", "可替换执行器", "可替换 adapter"], ["external Agent", "外部 Agent", "external executor", "外部执行器"]]},
     "knowledge_pack": {"all_of_any_group": [["Knowledge"], ["Domain Pack", "DomainPack", "领域 Pack"]]},
     "reference_freeze": {"all_of_any_group": [["Reference"], ["Conformance"], ["Fallback"]]},
-    "map_version": {"all_of_any_group": [["0.11.0"]]},
+    "map_version": {"all_of_any_group": [["0.12.0"]]},
     "state_delta": {"all_of_any_group": [["CURRENT_WITH_OPEN_OBLIGATIONS"], ["EPISTEMICALLY_ACCEPTED=0"]]},
     "current_facts": {"all_of_any_group": [["current-facts", "derived facts", "可推导事实", "机器事实"]]},
     "soft_governance": {"all_of_any_group": [["Structural Governance Surface", "结构治理表面"], ["advisory", "ADVISORY_ONLY", "软"]]},

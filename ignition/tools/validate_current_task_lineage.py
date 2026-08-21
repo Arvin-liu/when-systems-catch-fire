@@ -18,7 +18,7 @@ REPO_ROOT = ROOT.parent
 STATUS_PATH = ROOT / "data/operations/current-task-lineage-status.json"
 SCHEMA_PATH = ROOT / "schemas/operations/current-task-lineage-status-r1.schema.json"
 IDENTITY_PATH = ROOT / "data/architecture/current-system-identity.json"
-FIXTURE_PATH = ROOT / "data/operations/iterations/128/fixtures/current-task-lineage-status-fixtures-r1.json"
+FIXTURE_PATH = ROOT / "data/operations/iterations/129/fixtures/current-task-lineage-status-fixtures-r1.json"
 CURRENT_SURFACE_IDS = {"homepage-identity", "project-current-state", "ai-cold-start", "ai-agents-handoff", "machine-entry"}
 
 
@@ -80,12 +80,14 @@ def validate_current_surfaces(source: dict[str, Any]) -> list[str]:
     append_only_path = source["current_surface_status_requirements"]["append_only_current_path"]
     try:
         changelog = resolve_repo_path(append_only_path).read_text(encoding="utf-8")
-        marker = "## 2026-08-21 — IGNITION-20260821-128-CURRENT-STATE-SEMANTIC-CLOSURE"
-        if marker not in changelog:
+        marker_prefix = f"## 2026-08-21 — {source['current_task']['task_id']}-"
+        markers = [line for line in changelog.splitlines() if line.startswith(marker_prefix)]
+        if not markers:
             errors.append(f"TASK_LINEAGE_CURRENT_APPEND_MISSING:{append_only_path}")
         else:
+            marker = markers[-1]
             latest_section = changelog.rsplit(marker, 1)[-1]
-            errors.extend(validate_surface_text(source, latest_section, append_only_path + "#latest-task128"))
+            errors.extend(validate_surface_text(source, latest_section, append_only_path + "#latest-current-task"))
     except (OSError, ValueError) as exc:
         errors.append(f"TASK_LINEAGE_CURRENT_APPEND_UNREADABLE:{append_only_path}:{exc}")
 

@@ -14,6 +14,13 @@
 
 ### 当前主干怎样理解
 
+Task 129 的当前架构身份已推进到 `os-control-plane-r4-steering-intent-r1`：唯一完整系统图为
+`0.12.0` Current，`0.11.0` 为 Historical，`0.10.0` 及更早版本继续保留为历史证据。
+Steering / Intent / Goal / Obligation R1 记录来源权威、Goal 生命周期、独立完成契约、承诺义务、
+优先级、冲突、why-next、漂移和 handoff；`PASS` Run 不能推断 Goal 完成，系统提议不能晋升为
+Owner authority。Current Facts、地图和本页仍是仓库本地投影，`CURRENT_WITH_OPEN_OBLIGATIONS` /
+`EPISTEMICALLY_ACCEPTED=0` 不变。
+
 当前任务链以 [`current-task-lineage-status.json`](../ignition/data/operations/current-task-lineage-status.json)
 为机器权威：旧 `IGNITION-125` 文件从未执行，文件状态为
 `HISTORICAL_UNEXECUTED`；其有效 requirements 已 `REBASED_INTO_127`，规范状态为

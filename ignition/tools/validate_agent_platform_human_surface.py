@@ -40,9 +40,9 @@ SURFACE_RULES = {
     ),
     "ignition/ARCHITECTURE.md": (
         "Agent Platform R2",
-        "93",
-        "81",
-        "85",
+        "94",
+        "82",
+        "87",
         "12",
         "EPISTEMICALLY_ACCEPTED=0",
     ),
@@ -146,17 +146,17 @@ def validate() -> list[str]:
         system_map = json.loads(map_path.read_text(encoding="utf-8"))
         coverage = system_map["component_coverage"]
         expected_coverage = {
-            "registry_components": 93,
-            "visible_nodes": 81,
+            "registry_components": 94,
+            "visible_nodes": 82,
             "hidden_components": 12,
         }
         for key, expected in expected_coverage.items():
             if coverage.get(key) != expected:
                 issues.append(f"system map coverage {key}={coverage.get(key)!r}, expected {expected!r}")
-        if system_map.get("map_version") != "0.11.0":
-            issues.append(f"system map version is {system_map.get('map_version')!r}, expected '0.11.0'")
-        if len(system_map.get("edges", [])) != 85:
-            issues.append(f"system map edge count is {len(system_map.get('edges', []))}, expected 85")
+        if system_map.get("map_version") != "0.12.0":
+            issues.append(f"system map version is {system_map.get('map_version')!r}, expected '0.12.0'")
+        if len(system_map.get("edges", [])) != 87:
+            issues.append(f"system map edge count is {len(system_map.get('edges', []))}, expected 87")
     except (OSError, json.JSONDecodeError, KeyError, TypeError) as exc:
         issues.append(f"system map cannot be read: {exc}")
 
@@ -208,8 +208,8 @@ def main() -> int:
         return 1
     print(
         "AGENT_PLATFORM_HUMAN_SURFACE=PASS "
-        f"surfaces={len(SURFACE_RULES)} map=0.11.0 registry=93 "
-        "visible=81 edges=85 hidden=12 packs=4"
+        f"surfaces={len(SURFACE_RULES)} map=0.12.0 registry=94 "
+        "visible=82 edges=87 hidden=12 packs=4"
     )
     return 0
 
