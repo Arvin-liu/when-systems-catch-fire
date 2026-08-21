@@ -1,0 +1,13 @@
+{
+  "schema": "os-steering-intent-obligation-r1.durability-fixture",
+  "state": {
+    "schema_epoch": "steering-r1",
+    "intents": [{"intent_id": "intent-durable-1", "status": "ACTIVE", "authority": "OWNER_DECLARED"}],
+    "goals": [{"goal_id": "goal-durable-1", "status": "ACTIVE", "completion_inference": "INDEPENDENT_CONTRACT_REQUIRED"}],
+    "commitments": [{"commitment_id": "commitment-durable-1", "status": "ACCEPTED", "authority": "OWNER_DECLARED"}],
+    "decision_traces": [{"trace_id": "trace-durable-1", "authority": "STEERING_EXPLAINABILITY_INVARIANT"}],
+    "drift_reports": [],
+    "provenance_events": [{"event": "OWNER_AUTHORITY_RECORDED", "authority": "owner.synthetic"}],
+    "unresolved_refs": ["reconcile-durable-1"]
+  }
+}

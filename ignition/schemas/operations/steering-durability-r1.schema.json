@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Arvin-liu/when-systems-catch-fire/schemas/operations/steering-durability-r1.schema.json",
+  "title": "OS Steering Durability R1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "state"],
+  "properties": {
+    "schema": {"const": "os-steering-intent-obligation-r1.durability-fixture"},
+    "state": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["intents", "goals", "commitments", "decision_traces", "drift_reports", "provenance_events", "unresolved_refs", "schema_epoch"],
+      "properties": {
+        "intents": {"type": "array", "items": {"type": "object"}},
+        "goals": {"type": "array", "items": {"type": "object"}},
+        "commitments": {"type": "array", "items": {"type": "object"}},
+        "decision_traces": {"type": "array", "items": {"type": "object"}},
+        "drift_reports": {"type": "array", "items": {"type": "object"}},
+        "provenance_events": {"type": "array", "items": {"type": "object"}},
+        "unresolved_refs": {"type": "array", "items": {"type": "string"}},
+        "schema_epoch": {"type": "string"}
+      }
+    }
+  }
+}

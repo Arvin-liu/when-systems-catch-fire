@@ -18,6 +18,10 @@ from typing import Any, Mapping, Sequence
 
 from agent_kernel.contracts import KernelValidationError, _id, _summary, _tuple_strings, sha256_json
 
+from .durability import CanonicalSnapshot, CanonicalSnapshotStore
+from .event_ledger import EventLedger
+from .migration import APPLIED, DRY_RUN, SAFE, MigrationRegistry, MigrationResult, MigrationRule, StateMigrator
+
 
 STEERING_SCHEMA = "os-steering-intent-obligation-r1"
 INTENT_AUTHORITY_INVARIANT = "INTENT_AUTHORITY_INVARIANT"
@@ -2140,6 +2144,126 @@ class MemoryProfileBoundary:
         return ContextBoundaryDecision(observation.observation_id, "ADVISORY_ONLY", "NONE", canonical_id, None, ("context_is_advisory", "no_intent_promotion"), observation.created_at)
 
 
+STEERING_DURABILITY_SCHEMA = "os-steering-intent-obligation-r1.durable-state"
+STEERING_DURABILITY_EVENT_TYPE = "STEERING_STATE_RECORDED"
+STEERING_AGGREGATE_ID = "steering-state"
+
+
+@dataclass(frozen=True)
+class SteeringState:
+    """Durable steering projection; event history remains the canonical source."""
+
+    intents: tuple[Mapping[str, Any], ...] = ()
+    goals: tuple[Mapping[str, Any], ...] = ()
+    commitments: tuple[Mapping[str, Any], ...] = ()
+    decision_traces: tuple[Mapping[str, Any], ...] = ()
+    drift_reports: tuple[Mapping[str, Any], ...] = ()
+    provenance_events: tuple[Mapping[str, Any], ...] = ()
+    unresolved_refs: tuple[str, ...] = ()
+    schema_epoch: str = "steering-r1"
+
+    def __post_init__(self) -> None:
+        for field in ("intents", "goals", "commitments", "decision_traces", "drift_reports", "provenance_events"):
+            values = getattr(self, field)
+            if isinstance(values, (str, bytes)) or any(not isinstance(item, Mapping) for item in values):
+                raise SteeringValidationError(f"durable steering {field} must contain public objects")
+            public = tuple(_public_value(dict(item), f"durable.{field}[]") for item in values)
+            object.__setattr__(self, field, public)
+        object.__setattr__(self, "unresolved_refs", _refs(self.unresolved_refs, "durable.unresolved_refs"))
+        _safe_id(self.schema_epoch.replace(".", ":"), "durable.schema_epoch")
+
+    def to_dict(self) -> dict[str, Any]:
+        return {
+            "schema": STEERING_DURABILITY_SCHEMA,
+            "schema_epoch": self.schema_epoch,
+            "intents": [dict(item) for item in self.intents],
+            "goals": [dict(item) for item in self.goals],
+            "commitments": [dict(item) for item in self.commitments],
+            "decision_traces": [dict(item) for item in self.decision_traces],
+            "drift_reports": [dict(item) for item in self.drift_reports],
+            "provenance_events": [dict(item) for item in self.provenance_events],
+            "unresolved_refs": list(self.unresolved_refs),
+            "claim_ceiling": "Durable repository-local steering projection only; event lineage remains canonical and no Owner or external truth is inferred.",
+        }
+
+    @classmethod
+    def from_dict(cls, data: Mapping[str, Any]) -> "SteeringState":
+        if data.get("schema") != STEERING_DURABILITY_SCHEMA:
+            raise SteeringValidationError("durable steering state schema mismatch")
+        return cls(
+            intents=tuple(data.get("intents", ())), goals=tuple(data.get("goals", ())), commitments=tuple(data.get("commitments", ())),
+            decision_traces=tuple(data.get("decision_traces", ())), drift_reports=tuple(data.get("drift_reports", ())),
+            provenance_events=tuple(data.get("provenance_events", ())), unresolved_refs=tuple(data.get("unresolved_refs", ())), schema_epoch=data.get("schema_epoch", "steering-r1"),
+        )
+
+    def digest(self) -> str:
+        return sha256_json(self.to_dict())
+
+
+def steering_migration_registry() -> MigrationRegistry:
+    return MigrationRegistry(
+        ("steering-r1", "steering-r1.1", "steering-r2"),
+        (
+            MigrationRule("steering-r1", "steering-r1.1", SAFE, "ADD_LIFECYCLE_METADATA", "add explicit steering lifecycle metadata without rewriting records"),
+            MigrationRule("steering-r1.1", "steering-r2", SAFE, "ADD_NAMESPACE_SCOPE", "add namespace scope without rewriting event lineage"),
+            MigrationRule("steering-r2", "steering-r1.1", "LOSSY_REQUIRES_APPROVAL", "REMOVE_ADVISORY_POINTER_LOSSY", "downgrade removes only advisory metadata and requires explicit approval"),
+        ),
+    )
+
+
+class SteeringDurabilityAdapter:
+    """Persist steering projections through the existing append-only ledger and snapshots."""
+
+    def append_state(self, ledger: EventLedger, state: SteeringState, *, actor_ref: str = "os-steering", source_refs: Sequence[str] = (), expected_version: int | None = None, occurred_at: str | None = None):
+        if not isinstance(ledger, EventLedger) or not isinstance(state, SteeringState):
+            raise SteeringValidationError("steering durability append requires EventLedger and SteeringState")
+        return ledger.append_event(
+            aggregate_id=STEERING_AGGREGATE_ID,
+            event_type=STEERING_DURABILITY_EVENT_TYPE,
+            payload={"status": "STEERING_STATE_RECORDED", "state_patch": {"steering_state": state.to_dict(), "steering_state_sha256": state.digest()}},
+            actor_ref=actor_ref,
+            source_refs=source_refs,
+            expected_version=expected_version,
+            occurred_at=occurred_at,
+            sensitivity="INTERNAL_OPERATIONAL",
+            retention_class="LONG",
+        )
+
+    @staticmethod
+    def _from_replayed(replayed: Mapping[str, Any]) -> SteeringState:
+        aggregate = replayed.get("aggregates", {}).get(STEERING_AGGREGATE_ID, {})
+        state = aggregate.get("steering_state") if isinstance(aggregate, Mapping) else None
+        if not isinstance(state, Mapping):
+            raise SteeringValidationError("steering ledger has no durable steering state")
+        if aggregate.get("steering_state_sha256") != sha256_json(state):
+            raise SteeringValidationError("steering state projection digest mismatch")
+        return SteeringState.from_dict(state)
+
+    def replay(self, ledger: EventLedger) -> SteeringState:
+        return self._from_replayed(ledger.replay())
+
+    def snapshot(self, ledger: EventLedger, snapshot_path: str, *, snapshot_id: str, provenance_refs: Sequence[str] = ()) -> CanonicalSnapshot:
+        store = CanonicalSnapshotStore(snapshot_path)
+        snapshot = store.create(ledger, snapshot_id=snapshot_id, namespace_scope="steering", provenance_refs=tuple(provenance_refs) + (STEERING_AGGREGATE_ID,), creation_tool="os-steering.durability-r1")
+        return store.write(snapshot)
+
+    def restore(self, ledger: EventLedger, snapshot: CanonicalSnapshot | None = None, *, snapshot_path: str | None = None) -> SteeringState:
+        if snapshot is None:
+            if snapshot_path is None:
+                raise SteeringValidationError("steering restore requires snapshot or snapshot_path")
+            snapshot = CanonicalSnapshotStore(snapshot_path).read()
+        restored = CanonicalSnapshotStore(snapshot_path or "steering-snapshot.json").restore(ledger, snapshot, namespace_scope="steering")
+        return self._from_replayed(restored)
+
+    def migrate(self, state: SteeringState, *, migration_id: str, from_epoch: str, to_epoch: str, event_lineage: Sequence[str] = (), mode: str = DRY_RUN, approval: bool = False) -> MigrationResult:
+        if not isinstance(state, SteeringState):
+            raise SteeringValidationError("steering migration requires SteeringState")
+        result = StateMigrator(steering_migration_registry()).migrate(state.to_dict(), migration_id=migration_id, from_epoch=from_epoch, to_epoch=to_epoch, event_lineage=event_lineage, mode=mode, approval=approval)
+        if result.receipt.events_rewritten:
+            raise SteeringValidationError("steering migration rewrote event lineage")
+        return result
+
+
 __all__ = [
     "STEERING_SCHEMA", "INTENT_AUTHORITY_INVARIANT", "GOAL_COMPLETION_NON_INFERENCE_INVARIANT", "STEERING_EXPLAINABILITY_INVARIANT",
     "INTENT_SOURCE_TYPES", "INTENT_STATUSES", "ONTOLOGY_LAYERS", "SteeringValidationError", "AuthorityProvenance",
@@ -2155,4 +2279,5 @@ __all__ = [
     "HandoffIdentity", "EpisodeGoalBinding", "GoalEpisodeBinder",
     "DRIFT_OUTCOMES", "DriftReport", "GoalDriftGuard",
     "MEMORY_PROFILE_SOURCES", "MEMORY_PROFILE_DECISIONS", "MemoryProfileObservation", "ContextBoundaryDecision", "MemoryProfileBoundary",
+    "STEERING_DURABILITY_SCHEMA", "STEERING_DURABILITY_EVENT_TYPE", "STEERING_AGGREGATE_ID", "SteeringState", "steering_migration_registry", "SteeringDurabilityAdapter",
 ]
