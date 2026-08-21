@@ -22,6 +22,14 @@ snapshot、migration、namespace、Pack lifecycle、revocation、accounting、re
 版本、计数和 live ceiling 以 [Current Facts](./architecture/current-facts.md) 及其
 JSON 投影为准。
 
+当前任务链由 [`current-task-lineage-status.json`](../data/operations/current-task-lineage-status.json)
+统一表达：旧 `IGNITION-125` 文件状态是 `HISTORICAL_UNEXECUTED`，其有效
+Durability / Lifecycle requirements 状态是 `REBASED_INTO_127`，规范状态为
+`HISTORICAL_UNEXECUTED_REBASED_INTO_127`；这不等于 125 文件曾执行。`IGNITION-127`
+当前状态是 `COMPLETED_WITH_CLASSIFIED_RESIDUALS`，新回归为 0；历史/环境 residual
+仍按 receipt 保留。当前窄范围闭合任务是 `IGNITION-20260821-128`，不改变 R3 的
+authority ceiling、唯一系统图或认识论状态。
+
 Task 124 的 [OS Control Plane R2](./architecture/os-control-plane-r2.md) 补上了
 Event Ledger、monotonic policy compiler、resource arbitration、bounded concurrent
 scheduler、executor health lease、queue/backpressure、durable dispatch/reconciliation、
@@ -57,7 +65,7 @@ AGI、生产安全、现实因果、外部有效性或 Owner acceptance 证明�
 - 大量资产仍缺精确定义、类型、量纲、证明、反例、外部来源、数据或复现；MCF、PSD、ARN、Function OS 与现实使用效用仍需独立证据和失败条件。
 - 四力统一、量子引力、暗物质、暗能量、宇宙常数和测量问题没有被本项目解决；任何模型失败、相似性、工程完成或 Agent 共识都不能推出普遍 no-go theorem。
 - 自动审计、系统图、Pack pilot、CI、fresh clone 和 receipt 都是仓库证据；它们不等于专家裁决、同行评审、外部真值、生产安全、Owner acceptance 或 epistemic acceptance。
-- ESI 仍是 `CANDIDATE_ESI_SIGNAL`；live provider 状态保持 `NOT_RUN_LIVE_EXTERNAL`，术语/风格模仿、越权失败、过度谨慎和延迟迁移仍需独立复核。Durability / Lifecycle 的 production durability、exact-once external delivery、真实外部恢复和 Owner acceptance 仍未建立。Task 125 保持 `DEFERRED_PENDING_REBASE`；本轮执行的是 Task 127。
+- ESI 仍是 `CANDIDATE_ESI_SIGNAL`；live provider 状态保持 `NOT_RUN_LIVE_EXTERNAL`，术语/风格模仿、越权失败、过度谨慎和延迟迁移仍需独立复核。Durability / Lifecycle 的 production durability、exact-once external delivery、真实外部恢复和 Owner acceptance 仍未建立。当前任务链按 canonical source 表达：125 文件 `HISTORICAL_UNEXECUTED`，其 requirements `REBASED_INTO_127`，127 为 `COMPLETED_WITH_CLASSIFIED_RESIDUALS`；本轮执行的是 Task 128 语义闭合修复。
 
 ## 历史任务上下文（可回链，不是 Current 数字权威）
 

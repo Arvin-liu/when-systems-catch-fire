@@ -3,15 +3,17 @@
 ## 当前版本
 
 Agent Platform R2 与 External Agent Federation R1 已在 Task 122 正式 main
-基线上闭合；Task 127 的 branch work 仍必须经过最终 Step 19 fast-forward、
-远端、全新克隆和 1111 receipt 才能称为 main 当前状态。本页的工程边界不构成
+基线上闭合；Task 127 已完成并发布为当前 Durability / Lifecycle R3。本页的工程边界不构成
 外部能力或 epistemic acceptance，`CURRENT_WITH_OPEN_OBLIGATIONS` 与
 `EPISTEMICALLY_ACCEPTED=0` 保持不变。当前身份 contract/facts 见
-`data/architecture/current-system-identity.json`、`data/architecture/current-facts.json`：
+`data/architecture/current-system-identity.json`、`data/architecture/current-facts.json` 与
+`data/operations/current-task-lineage-status.json`：
 点火是 OS / orchestration-governance layer 与 driver，外部 Agent 是可替换
 executor，本地执行层是 `REFERENCE_EXECUTOR / CONFORMANCE_EXECUTOR /
-FALLBACK_MINIMAL`。Task 125 保持 `DEFERRED_PENDING_REBASE`，不从旧基线执行；本轮
-只执行 Task 127。
+FALLBACK_MINIMAL`。旧 `IGNITION-125` 文件状态是 `HISTORICAL_UNEXECUTED`，其有效
+requirements 已 `REBASED_INTO_127`；`IGNITION-127` 当前为
+`COMPLETED_WITH_CLASSIFIED_RESIDUALS`。本轮是 Task 128 的窄范围 Current-State
+语义闭合，不重新执行旧 125，也不制造 125 已执行的历史。
 Structural Governance Surface 是 advisory cross-cutting overlay，不改变
 capability、permission、truth、Owner 或 epistemic status。
 

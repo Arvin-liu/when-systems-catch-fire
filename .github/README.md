@@ -14,6 +14,14 @@
 
 ### 当前主干怎样理解
 
+当前任务链以 [`current-task-lineage-status.json`](../ignition/data/operations/current-task-lineage-status.json)
+为机器权威：旧 `IGNITION-125` 文件从未执行，文件状态为
+`HISTORICAL_UNEXECUTED`；其有效 requirements 已 `REBASED_INTO_127`，规范状态为
+`HISTORICAL_UNEXECUTED_REBASED_INTO_127`。`IGNITION-127` 当前为
+`COMPLETED_WITH_CLASSIFIED_RESIDUALS`，新回归为 0；Task 128 只闭合 Current
+Human/AI 语义，不把 125 写成已执行，也不改变 `CURRENT_WITH_OPEN_OBLIGATIONS` /
+`EPISTEMICALLY_ACCEPTED=0`。
+
 - **它说什么：** Kernel、Runtime、Federation、Profile、Reasoner Gateway、Supervisor、Event Ledger、monotonic policy、resource arbitration、bounded concurrent scheduler、executor health lease、queue/backpressure、durable dispatch/reconciliation、concurrent operational memory、Durability / Lifecycle R3、Driver Console 和四个声明式 Domain Pack 已形成一条仓库内可检查的 Agent Platform R3 结构；OpenClaw、Hermes、Codex 只通过 provider-neutral adapter boundary 接入，当前唯一完整系统图仍是 registry/topology/layout 的确定性导航投影。
 - **为什么重要：** 行动、批准、恢复、记忆、Pack 路由和知识治理的职责被分开记录，Agent 可以提出和执行有界动作，但不能自行扩大权限、改写真值或替代 Owner。
 - **怎样使用：** 人类先读[十分钟阅读路线](../ignition/HUMAN-READING.md)与[当前结果](../ignition/RESULTS/LATEST.md)；Agent 先读[AI 冷启动](../ignition/AI-START-HERE.md)、[状态增量日志](../ignition/STATE-CHANGELOG.md)、[R2 架构契约](../ignition/docs/architecture/agent-platform-r2.md)和[联邦契约](../ignition/docs/architecture/external-agent-federation-r1.md)。
