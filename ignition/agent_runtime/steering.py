@@ -21,6 +21,7 @@ from agent_kernel.contracts import KernelValidationError, _id, _summary, _tuple_
 from .durability import CanonicalSnapshot, CanonicalSnapshotStore
 from .event_ledger import EventLedger
 from .migration import APPLIED, DRY_RUN, SAFE, MigrationRegistry, MigrationResult, MigrationRule, StateMigrator
+from .namespace import DelegationGrant, NamespaceBinding, NamespaceGuard, NamespaceIsolationError, PrincipalIdentity
 
 
 STEERING_SCHEMA = "os-steering-intent-obligation-r1"
@@ -2264,6 +2265,84 @@ class SteeringDurabilityAdapter:
         return result
 
 
+STEERING_RECORD_KINDS = frozenset({"intent", "goal", "commitment", "trace", "proposal"})
+STEERING_NAMESPACE_ACTIONS = frozenset({"read", "propose", "canonical_write"})
+
+
+@dataclass(frozen=True)
+class SteeringScope:
+    scope_id: str
+    namespace_id: str
+    intent_ids: tuple[str, ...] = ()
+    goal_ids: tuple[str, ...] = ()
+    commitment_ids: tuple[str, ...] = ()
+    trace_ids: tuple[str, ...] = ()
+    proposal_ids: tuple[str, ...] = ()
+    shared_scope_ref: str | None = None
+
+    def __post_init__(self) -> None:
+        _safe_id(self.scope_id, "steering_scope.scope_id")
+        _safe_id(self.namespace_id, "steering_scope.namespace_id")
+        for field in ("intent_ids", "goal_ids", "commitment_ids", "trace_ids", "proposal_ids"):
+            object.__setattr__(self, field, _refs(getattr(self, field), f"steering_scope.{field}"))
+        if self.shared_scope_ref is not None:
+            _safe_id(self.shared_scope_ref, "steering_scope.shared_scope_ref")
+
+    def contains(self, record_kind: str, record_id: str) -> bool:
+        if record_kind not in STEERING_RECORD_KINDS:
+            raise SteeringValidationError("unknown steering record kind")
+        _safe_id(record_id, "steering_scope.record_id")
+        return record_id in getattr(self, f"{record_kind}_ids")
+
+    def to_dict(self) -> dict[str, Any]:
+        return {"scope_id": self.scope_id, "namespace_id": self.namespace_id, "intent_ids": list(self.intent_ids), "goal_ids": list(self.goal_ids), "commitment_ids": list(self.commitment_ids), "trace_ids": list(self.trace_ids), "proposal_ids": list(self.proposal_ids), "shared_scope_ref": self.shared_scope_ref}
+
+
+class SteeringNamespaceGuard:
+    """Apply namespace isolation to steering records without granting canonical authority."""
+
+    def __init__(self, namespace_guard: NamespaceGuard | None = None) -> None:
+        self.guard = namespace_guard or NamespaceGuard()
+
+    def bind(self, binding: NamespaceBinding, principal: PrincipalIdentity) -> NamespaceBinding:
+        return self.guard.bind(binding, principal)
+
+    def authorize(
+        self,
+        source_binding: NamespaceBinding,
+        source_scope: SteeringScope,
+        target_binding: NamespaceBinding,
+        target_scope: SteeringScope,
+        *,
+        record_kind: str,
+        record_id: str,
+        action: str,
+        now: float,
+        delegation: DelegationGrant | None = None,
+    ) -> None:
+        if record_kind not in STEERING_RECORD_KINDS:
+            raise NamespaceIsolationError("unknown steering record kind")
+        if action not in STEERING_NAMESPACE_ACTIONS:
+            raise NamespaceIsolationError("unknown steering namespace action")
+        _safe_id(record_id, "steering.record_id")
+        if source_binding.namespace_id != source_scope.namespace_id or target_binding.namespace_id != target_scope.namespace_id:
+            raise NamespaceIsolationError("steering scope does not match namespace binding")
+        if action == "canonical_write":
+            raise NamespaceIsolationError("namespace delegation cannot grant canonical steering authority")
+        cross_namespace = source_binding.namespace_id != target_binding.namespace_id
+        if cross_namespace:
+            if not source_scope.shared_scope_ref or source_scope.shared_scope_ref != target_scope.shared_scope_ref:
+                raise NamespaceIsolationError("cross-namespace steering requires an explicit shared scope")
+            self.guard.authorize(source_binding, target_binding, action=f"steering.{record_kind}.{action}", now=now, delegation=delegation)
+        else:
+            self.guard.authorize(source_binding, target_binding, action=f"steering.{record_kind}.{action}", now=now)
+        if not target_scope.contains(record_kind, record_id):
+            raise NamespaceIsolationError("record is outside the target steering scope")
+
+    def authorize_proposal(self, source_binding: NamespaceBinding, source_scope: SteeringScope, target_binding: NamespaceBinding, target_scope: SteeringScope, *, record_id: str, now: float, delegation: DelegationGrant | None = None) -> None:
+        self.authorize(source_binding, source_scope, target_binding, target_scope, record_kind="proposal", record_id=record_id, action="propose", now=now, delegation=delegation)
+
+
 __all__ = [
     "STEERING_SCHEMA", "INTENT_AUTHORITY_INVARIANT", "GOAL_COMPLETION_NON_INFERENCE_INVARIANT", "STEERING_EXPLAINABILITY_INVARIANT",
     "INTENT_SOURCE_TYPES", "INTENT_STATUSES", "ONTOLOGY_LAYERS", "SteeringValidationError", "AuthorityProvenance",
@@ -2280,4 +2359,5 @@ __all__ = [
     "DRIFT_OUTCOMES", "DriftReport", "GoalDriftGuard",
     "MEMORY_PROFILE_SOURCES", "MEMORY_PROFILE_DECISIONS", "MemoryProfileObservation", "ContextBoundaryDecision", "MemoryProfileBoundary",
     "STEERING_DURABILITY_SCHEMA", "STEERING_DURABILITY_EVENT_TYPE", "STEERING_AGGREGATE_ID", "SteeringState", "steering_migration_registry", "SteeringDurabilityAdapter",
+    "STEERING_RECORD_KINDS", "STEERING_NAMESPACE_ACTIONS", "SteeringScope", "SteeringNamespaceGuard",
 ]

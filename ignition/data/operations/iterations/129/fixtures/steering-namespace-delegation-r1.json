@@ -1,0 +1,11 @@
+{
+  "schema": "os-steering-intent-obligation-r1.namespace-fixtures",
+  "cases": [
+    {"case_id": "namespace-local-goal", "record_kind": "goal", "record_id": "goal-shared-1", "action": "read", "cross_namespace": false, "shared_scope": false, "delegation": false, "expected": "ALLOW"},
+    {"case_id": "namespace-cross-explicit", "record_kind": "goal", "record_id": "goal-shared-1", "action": "read", "cross_namespace": true, "shared_scope": true, "delegation": true, "expected": "ALLOW"},
+    {"case_id": "namespace-cross-no-grant", "record_kind": "goal", "record_id": "goal-shared-1", "action": "read", "cross_namespace": true, "shared_scope": true, "delegation": false, "expected": "DENY"},
+    {"case_id": "namespace-cross-no-shared", "record_kind": "goal", "record_id": "goal-shared-1", "action": "read", "cross_namespace": true, "shared_scope": false, "delegation": true, "expected": "DENY"},
+    {"case_id": "namespace-outside-record", "record_kind": "goal", "record_id": "goal-outside", "action": "read", "cross_namespace": true, "shared_scope": true, "delegation": true, "expected": "DENY"},
+    {"case_id": "namespace-canonical-write", "record_kind": "intent", "record_id": "intent-shared-1", "action": "canonical_write", "cross_namespace": true, "shared_scope": true, "delegation": true, "expected": "DENY"}
+  ]
+}

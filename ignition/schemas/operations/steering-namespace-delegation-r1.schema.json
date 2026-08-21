@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Arvin-liu/when-systems-catch-fire/schemas/operations/steering-namespace-delegation-r1.schema.json",
+  "title": "OS Steering Namespace Delegation R1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "cases"],
+  "properties": {
+    "schema": {"const": "os-steering-intent-obligation-r1.namespace-fixtures"},
+    "cases": {
+      "type": "array",
+      "minItems": 5,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["case_id", "record_kind", "record_id", "action", "cross_namespace", "shared_scope", "delegation", "expected"],
+        "properties": {
+          "case_id": {"type": "string"},
+          "record_kind": {"type": "string"},
+          "record_id": {"type": "string"},
+          "action": {"type": "string"},
+          "cross_namespace": {"type": "boolean"},
+          "shared_scope": {"type": "boolean"},
+          "delegation": {"type": "boolean"},
+          "expected": {"enum": ["ALLOW", "DENY"]}
+        }
+      }
+    }
+  }
+}

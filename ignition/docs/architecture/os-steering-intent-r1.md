@@ -22,6 +22,8 @@ Before a handoff or next-work dispatch, `GoalDriftGuard` compares the objective 
 
 Operational Memory and Profile projections are context inputs, not an Intent Registry. A repeated preference creates at most a `SYSTEM_DERIVED_PROPOSAL` with `priority_effect=NONE`; ESI remains advisory-only. When stale context conflicts with a canonical Owner Intent, the canonical Intent wins and the context is not reintroduced as a priority signal.
 
+Steering records inherit the existing namespace boundary. Cross-namespace access requires verified principals, an unexpired explicit delegation, a matching shared scope, and a record ID inside the target scope. A namespace grant can expose a bounded proposal or read surface, but it cannot grant `canonical_write`, impersonate an Owner, or widen the target record set.
+
 ## Priority and arbitration
 
 Priority is an ordered tuple of explicit rules: eligibility/permission, active Owner override, Owner rank, commitment state, temporal state, dependency criticality, risk, and bounded fairness age. A telemetry score may be emitted for inspection, but it is not authoritative and cannot override permission, safety, blocked, stale, superseded, or executor-unavailable state.
