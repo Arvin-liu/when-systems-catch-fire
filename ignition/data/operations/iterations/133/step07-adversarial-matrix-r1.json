@@ -1,0 +1,173 @@
+{
+  "case_count": 15,
+  "claim_ceiling": "Repository-local adversarial ordinal binding evidence only; no external truth, production readiness, Owner acceptance or epistemic acceptance is inferred.",
+  "results": [
+    {
+      "actual": "FAIL",
+      "case_id": "current-formal-133-stale-boundary-130",
+      "errors": [
+        "COMPATIBILITY_ALIAS_MISMATCH:lifecycle_task:expected=133:observed=130"
+      ],
+      "expected": "FAIL",
+      "mutation": "stale_boundary_130",
+      "result": "PASS"
+    },
+    {
+      "actual": "FAIL",
+      "case_id": "current-formal-133-lifecycle-132",
+      "errors": [
+        "COMPATIBILITY_ALIAS_MISMATCH:lifecycle_task:expected=132:observed=133",
+        "FORMAL_TASK_ID_MISMATCH:lifecycle_task:expected=IGNITION-20260822-133:observed=IGNITION-20260822-132",
+        "ORDINAL_MISMATCH:lifecycle_task:expected=132:observed=133",
+        "formal task identity bindings must be identical",
+        "lifecycle_task: declared ordinal 133 differs from task id ordinal 132"
+      ],
+      "expected": "FAIL",
+      "mutation": "lifecycle_task_132",
+      "result": "PASS"
+    },
+    {
+      "actual": "PASS",
+      "case_id": "task-133-architecture-129-legal",
+      "errors": [],
+      "expected": "PASS",
+      "mutation": "valid_split",
+      "result": "PASS"
+    },
+    {
+      "actual": "FAIL",
+      "case_id": "architecture-ordinal-forced-133",
+      "errors": [
+        "ARCHITECTURE_ORDINAL_MISMATCH:lifecycle_task:expected=129:observed=133"
+      ],
+      "expected": "FAIL",
+      "mutation": "architecture_ordinal_133",
+      "result": "PASS"
+    },
+    {
+      "actual": "FAIL",
+      "case_id": "malformed-task-id",
+      "errors": [
+        "CANONICAL_FORMAL_SOURCE_MISMATCH",
+        "current_formal_task: task id must match IGNITION-YYYYMMDD-NNN exactly",
+        "current_formal_task:TASK_ID_INVALID:task id must match IGNITION-YYYYMMDD-NNN exactly"
+      ],
+      "expected": "FAIL",
+      "mutation": "malformed_task_id",
+      "result": "PASS"
+    },
+    {
+      "actual": "FAIL",
+      "case_id": "widened-ordinal",
+      "errors": [
+        "ORDINAL_MISMATCH:snapshot_task:expected=133:observed=1333",
+        "snapshot_task: declared ordinal 1333 differs from task id ordinal 133"
+      ],
+      "expected": "FAIL",
+      "mutation": "widened_ordinal",
+      "result": "PASS"
+    },
+    {
+      "actual": "FAIL",
+      "case_id": "stale-snapshot",
+      "errors": [
+        "COMPATIBILITY_ALIAS_MISMATCH:snapshot_task:expected=132:observed=133",
+        "FORMAL_TASK_ID_MISMATCH:snapshot_task:expected=IGNITION-20260822-133:observed=IGNITION-20260822-132",
+        "ORDINAL_MISMATCH:snapshot_task:expected=132:observed=133",
+        "snapshot_task: declared ordinal 133 differs from task id ordinal 132"
+      ],
+      "expected": "FAIL",
+      "mutation": "stale_snapshot",
+      "result": "PASS"
+    },
+    {
+      "actual": "FAIL",
+      "case_id": "stale-current-facts",
+      "errors": [
+        "CURRENT_FACTS_PROJECTION_MISMATCH:current_formal_task_ordinal:expected=133:observed=130"
+      ],
+      "expected": "FAIL",
+      "mutation": "stale_current_facts",
+      "result": "PASS"
+    },
+    {
+      "actual": "FAIL",
+      "case_id": "stale-compiler-surface",
+      "errors": [
+        "COMPILER_SURFACE_STALE:homepage-identity"
+      ],
+      "expected": "FAIL",
+      "mutation": "stale_compiler_surface",
+      "result": "PASS"
+    },
+    {
+      "actual": "FAIL",
+      "case_id": "witness-sha-match-ordinal-mismatch",
+      "errors": [
+        "ORDINAL_MISMATCH:publication_witness_task:expected=133:observed=132",
+        "publication_witness_task: declared ordinal 132 differs from task id ordinal 133"
+      ],
+      "expected": "FAIL",
+      "mutation": "witness_ordinal_mismatch",
+      "result": "PASS"
+    },
+    {
+      "actual": "FAIL",
+      "case_id": "witness-id-match-canonical-source-stale",
+      "errors": [
+        "CURRENT_FACTS_PROJECTION_MISMATCH:current_formal_task_ordinal:expected=133:observed=130"
+      ],
+      "expected": "FAIL",
+      "mutation": "witness_id_canonical_ordinal_stale",
+      "result": "PASS"
+    },
+    {
+      "actual": "PASS",
+      "case_id": "historical-old-130-allowed",
+      "errors": [],
+      "expected": "PASS",
+      "mutation": "historical_old_130",
+      "result": "PASS"
+    },
+    {
+      "actual": "PASS",
+      "case_id": "append-only-changelog-history-allowed",
+      "errors": [],
+      "expected": "PASS",
+      "mutation": "historical_changelog_ordinal",
+      "result": "PASS"
+    },
+    {
+      "actual": "FAIL",
+      "case_id": "missing-current-formal-source",
+      "errors": [
+        "CANONICAL_FORMAL_SOURCE_MISMATCH",
+        "CANONICAL_FORMAL_SOURCE_MISSING"
+      ],
+      "expected": "FAIL",
+      "mutation": "missing_formal_source",
+      "result": "PASS"
+    },
+    {
+      "actual": "FAIL",
+      "case_id": "duplicate-ambiguous-parser-fixture",
+      "errors": [
+        "DUPLICATE_BINDING_ROLE:current_formal_task",
+        "FORMAL_TASK_ID_MISMATCH:current_formal_task:expected=IGNITION-20260822-133:observed=IGNITION-20260822-132",
+        "MISSING_BINDING_ROLE:architecture_task",
+        "MISSING_BINDING_ROLE:execution_contract_task",
+        "MISSING_BINDING_ROLE:lifecycle_task",
+        "MISSING_BINDING_ROLE:release_candidate_task",
+        "MISSING_BINDING_ROLE:snapshot_task",
+        "duplicate binding role: current_formal_task"
+      ],
+      "expected": "FAIL",
+      "mutation": "duplicate_parser_role",
+      "result": "PASS"
+    }
+  ],
+  "schema_version": "ignition-133-step07-adversarial-matrix-r1",
+  "status": "PASS",
+  "step": "07",
+  "task_id": "IGNITION-20260822-133"
+}

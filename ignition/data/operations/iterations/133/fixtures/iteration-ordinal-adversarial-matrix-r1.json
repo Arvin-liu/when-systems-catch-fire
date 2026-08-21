@@ -1,0 +1,22 @@
+{
+  "schema_version": "iteration-ordinal-adversarial-matrix-r1",
+  "task_id": "IGNITION-20260822-133",
+  "cases": [
+    {"case_id": "current-formal-133-stale-boundary-130", "description": "current formal Task133 with stale compatibility boundary 130", "mutation": "stale_boundary_130", "expected": "FAIL"},
+    {"case_id": "current-formal-133-lifecycle-132", "description": "current formal Task133 with lifecycle Task132", "mutation": "lifecycle_task_132", "expected": "FAIL"},
+    {"case_id": "task-133-architecture-129-legal", "description": "Task133 formal with independent architecture Task129", "mutation": "valid_split", "expected": "PASS"},
+    {"case_id": "architecture-ordinal-forced-133", "description": "architecture Task129 incorrectly declared with ordinal 133", "mutation": "architecture_ordinal_133", "expected": "FAIL"},
+    {"case_id": "malformed-task-id", "description": "canonical formal task id is malformed and undated", "mutation": "malformed_task_id", "expected": "FAIL"},
+    {"case_id": "widened-ordinal", "description": "snapshot ordinal is manually widened to 1333", "mutation": "widened_ordinal", "expected": "FAIL"},
+    {"case_id": "stale-snapshot", "description": "snapshot task identity remains at Task132", "mutation": "stale_snapshot", "expected": "FAIL"},
+    {"case_id": "stale-current-facts", "description": "Current Facts carries stale formal ordinal 130", "mutation": "stale_current_facts", "expected": "FAIL"},
+    {"case_id": "stale-compiler-surface", "description": "one compiler-owned Current surface is stale", "mutation": "stale_compiler_surface", "expected": "FAIL"},
+    {"case_id": "witness-sha-match-ordinal-mismatch", "description": "witness SHA matches but witness formal ordinal is 132", "mutation": "witness_ordinal_mismatch", "expected": "FAIL"},
+    {"case_id": "witness-id-match-canonical-source-stale", "description": "witness task id matches while canonical ordinal source is stale", "mutation": "witness_id_canonical_ordinal_stale", "expected": "FAIL"},
+    {"case_id": "historical-old-130-allowed", "description": "historical document retains old Task130 ordinal", "mutation": "historical_old_130", "expected": "PASS"},
+    {"case_id": "append-only-changelog-history-allowed", "description": "append-only changelog historical ordinal is not treated as Current", "mutation": "historical_changelog_ordinal", "expected": "PASS"},
+    {"case_id": "missing-current-formal-source", "description": "canonical current formal task source is missing", "mutation": "missing_formal_source", "expected": "FAIL"},
+    {"case_id": "duplicate-ambiguous-parser-fixture", "description": "duplicate formal role makes parser binding ambiguous", "mutation": "duplicate_parser_role", "expected": "FAIL"}
+  ],
+  "claim_ceiling": "Repository-local adversarial ordinal gate matrix only; no external truth, production readiness, Owner acceptance or epistemic acceptance is inferred."
+}

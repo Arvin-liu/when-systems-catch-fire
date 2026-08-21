@@ -124,14 +124,16 @@ def _record_from_terminal(role_id: str, record: dict[str, Any]) -> dict[str, Any
     task_id = _first(record, ("task_id",), ("formal_task_id",), ("formal_result_task_id",))
     if role_id == "publication_witness_task":
         task_id = task_id or _first(binding, ("canonical_current_formal_task_id",), ("release_candidate_task_id",))
-    ordinal = _first(
-        record,
+    ordinal_paths = [
         ("current_formal_task_ordinal",),
         ("formal_task_ordinal",),
-        ("ordinal_binding", "current_formal_task_ordinal"),
         ("identity_binding", "current_formal_task_ordinal"),
         ("task_binding", "current_formal_task_ordinal"),
-    )
+        ("ordinal_binding", "current_formal_task_ordinal"),
+    ]
+    if role_id != "publication_witness_task":
+        ordinal_paths[2], ordinal_paths[4] = ordinal_paths[4], ordinal_paths[2]
+    ordinal = _first(record, *ordinal_paths)
     ordinal = ordinal if ordinal is not None else _first(ordinal_binding, ("current_formal_task_ordinal",))
     architecture_id = _first(
         record,
@@ -142,29 +144,35 @@ def _record_from_terminal(role_id: str, record: dict[str, Any]) -> dict[str, Any
         ("task_binding", "latest_architecture_changing_task"),
         ("current_state", "latest_architecture_changing_task"),
     )
-    architecture_ordinal = _first(
-        record,
+    architecture_paths = [
         ("latest_architecture_task_ordinal",),
-        ("ordinal_binding", "latest_architecture_task_ordinal"),
         ("identity_binding", "latest_architecture_task_ordinal"),
         ("task_binding", "latest_architecture_task_ordinal"),
+        ("ordinal_binding", "latest_architecture_task_ordinal"),
         ("current_state", "latest_architecture_task_ordinal"),
-    )
-    boundary = _first(
-        record,
+    ]
+    if role_id == "publication_witness_task":
+        architecture_paths[2], architecture_paths[3] = architecture_paths[3], architecture_paths[2]
+    architecture_ordinal = _first(record, *architecture_paths)
+    boundary_paths = [
         ("current_iteration_boundary",),
-        ("ordinal_binding", "current_iteration_boundary"),
         ("identity_binding", "current_iteration_boundary"),
         ("task_binding", "current_iteration_boundary"),
+        ("ordinal_binding", "current_iteration_boundary"),
         ("current_state", "current_iteration_boundary"),
-    )
-    semantics = _first(
-        record,
+    ]
+    if role_id == "publication_witness_task":
+        boundary_paths[2], boundary_paths[3] = boundary_paths[3], boundary_paths[2]
+    boundary = _first(record, *boundary_paths)
+    semantics_paths = [
         ("current_iteration_boundary_semantics",),
-        ("ordinal_binding", "current_iteration_boundary_semantics"),
         ("identity_binding", "current_iteration_boundary_semantics"),
         ("task_binding", "current_iteration_boundary_semantics"),
-    )
+        ("ordinal_binding", "current_iteration_boundary_semantics"),
+    ]
+    if role_id == "publication_witness_task":
+        semantics_paths[2], semantics_paths[3] = semantics_paths[3], semantics_paths[2]
+    semantics = _first(record, *semantics_paths)
     return _task_record(
         role_id,
         task_id,
@@ -360,6 +368,13 @@ def validate_documents(
     publication_witness: dict[str, Any] | None = None,
     require_terminal_evidence: bool = False,
 ) -> tuple[list[str], list[dict[str, Any]]]:
+    lineage_identity = lineage.get("task_identity") if isinstance(lineage.get("task_identity"), dict) else {}
+    if not lineage_identity.get("current_formal_task"):
+        source_errors = ["CANONICAL_FORMAL_SOURCE_MISSING"]
+    else:
+        source_errors = []
+    if lineage.get("current_task", {}).get("task_id") != lineage_identity.get("current_formal_task"):
+        source_errors.append("CANONICAL_FORMAL_SOURCE_MISMATCH")
     records = _current_records(
         contract=contract,
         lineage=lineage,
@@ -369,7 +384,7 @@ def validate_documents(
         release_candidate=release_candidate,
         publication_witness=publication_witness,
     )
-    errors = validate_binding_chain(
+    errors = source_errors + validate_binding_chain(
         records,
         expected_task_id=contract.get("identity_expectations", {}).get("current_formal_task", EXPECTED_TASK_ID),
         expected_architecture_task=contract.get("identity_expectations", {}).get("latest_architecture_changing_task", EXPECTED_ARCHITECTURE_TASK),
