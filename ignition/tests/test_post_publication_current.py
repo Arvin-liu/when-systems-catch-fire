@@ -3,6 +3,8 @@ from __future__ import annotations
 import unittest
 from unittest.mock import patch
 
+from tools import build_current_snapshot
+
 from tools import validate_post_publication_current as checker
 
 
@@ -72,6 +74,32 @@ class PostPublicationCurrentTests(unittest.TestCase):
         parsed, error = checker.parse_remote_ref(f"{sha}\trefs/heads/main\n{sha}\trefs/heads/main")
         self.assertIsNone(parsed)
         self.assertIn("ambiguous", error or "")
+
+    def test_step05_negative_matrix_remains_fail_closed(self) -> None:
+        fixture_path = checker.ROOT / "data/operations/iterations/131/fixtures/post-publication-negative-fixtures-r1.json"
+        cases = checker.load_json(fixture_path)["cases"]
+        base_lifecycle = checker.load_json(checker.LIFECYCLE_PATH)
+        snapshot = build_current_snapshot.build_snapshot()
+        for case in cases:
+            with self.subTest(case_id=case["case_id"]):
+                if case["kind"] == "remote_probe":
+                    fake_git = self._fake_git(
+                        head=case["head_sha"],
+                        remote=case["remote_sha"],
+                        branch=case["branch"],
+                        remotes=case.get("remotes", "origin"),
+                    )
+                    with patch.object(checker, "git", side_effect=fake_git):
+                        result = checker.run_checks(post_publication=True, expected_sha=case["expected_sha"])
+                    self.assertEqual(result["result"], case["expected_status"], result["errors"])
+                elif case["kind"] == "static_semantics":
+                    candidate = dict(base_lifecycle)
+                    candidate.update(case["overrides"])
+                    errors = checker._validate_static_publication_semantics(snapshot, candidate)
+                    self.assertTrue(errors)
+                else:
+                    self.assertEqual(case["expected_witness_state"], "STALE_OBSERVATION")
+                    self.assertEqual(case["expected_status"], "OBSERVATION_TIME_ONLY")
 
 
 if __name__ == "__main__":

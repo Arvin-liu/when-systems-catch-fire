@@ -1,0 +1,88 @@
+{
+  "schema_version": "post-publication-negative-fixtures-r1",
+  "task_id": "IGNITION-20260821-131",
+  "purpose": "Keep the Task130 false-pass class and ref-derived publication failure modes fail-closed.",
+  "cases": [
+    {
+      "case_id": "embedded-not-published-is-not-current-publication-truth",
+      "kind": "static_semantics",
+      "overrides": {
+        "publication_state": "NOT_PUBLISHED",
+        "post_publication_remote_check_status": "PENDING"
+      },
+      "expected_status": "FAIL"
+    },
+    {
+      "case_id": "local-main-remote-old-sha",
+      "kind": "remote_probe",
+      "branch": "main",
+      "head_sha": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "remote_sha": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "expected_sha": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "expected_status": "FAIL"
+    },
+    {
+      "case_id": "local-head-candidate-remote-different",
+      "kind": "remote_probe",
+      "branch": "main",
+      "head_sha": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "remote_sha": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "expected_sha": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "expected_status": "FAIL"
+    },
+    {
+      "case_id": "remote-candidate-expected-wrong",
+      "kind": "remote_probe",
+      "branch": "main",
+      "head_sha": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "remote_sha": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "expected_sha": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "expected_status": "FAIL"
+    },
+    {
+      "case_id": "detached-head-without-explicit-mode",
+      "kind": "remote_probe",
+      "branch": "",
+      "head_sha": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "remote_sha": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "expected_sha": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "expected_status": "FAIL"
+    },
+    {
+      "case_id": "origin-missing",
+      "kind": "remote_probe",
+      "branch": "main",
+      "remotes": "",
+      "head_sha": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "remote_sha": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "expected_sha": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "expected_status": "BLOCKED_WITH_EVIDENCE"
+    },
+    {
+      "case_id": "task-branch-sha-not-remote-main",
+      "kind": "remote_probe",
+      "branch": "main",
+      "head_sha": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "remote_sha": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "expected_sha": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "expected_status": "FAIL"
+    },
+    {
+      "case_id": "forged-static-published-field",
+      "kind": "static_semantics",
+      "overrides": {
+        "publication_state": "PUBLISHED"
+      },
+      "expected_status": "FAIL"
+    },
+    {
+      "case_id": "witness-becomes-stale-after-remote-move",
+      "kind": "observation_scope",
+      "initial_remote_sha": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "later_remote_sha": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "expected_witness_state": "STALE_OBSERVATION",
+      "expected_status": "OBSERVATION_TIME_ONLY"
+    }
+  ],
+  "claim_ceiling": "These fixtures prove fail-closed repository gate behavior only; they do not establish external truth, Owner acceptance or epistemic acceptance."
+}
