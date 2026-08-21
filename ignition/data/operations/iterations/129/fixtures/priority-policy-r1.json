@@ -1,0 +1,10 @@
+{
+  "schema": "os-steering-intent-obligation-r1.priority-fixtures",
+  "policy": "LEXICOGRAPHIC_RULES_R1",
+  "cases": [
+    {"goal_id": "goal-permission-denied", "owner_rank": 0, "commitment_status": "DUE", "risk_level": "LOW", "resource_available": true, "blocked": false, "permission_eligible": false, "fairness_age": 100, "deadline_state": "OVERDUE", "approval_required": false, "dependency_criticality": 100},
+    {"goal_id": "goal-owner-override", "owner_rank": 50, "commitment_status": "ACTIVE", "risk_level": "MEDIUM", "resource_available": true, "blocked": false, "permission_eligible": true, "fairness_age": 1, "deadline_state": "ACTIVE_WINDOW", "approval_required": false, "dependency_criticality": 1},
+    {"goal_id": "goal-background", "owner_rank": 10, "commitment_status": "PROPOSED", "risk_level": "LOW", "resource_available": true, "blocked": false, "permission_eligible": true, "fairness_age": 2, "deadline_state": "ACTIVE_WINDOW", "approval_required": false, "dependency_criticality": 2},
+    {"goal_id": "goal-blocked", "owner_rank": 1, "commitment_status": "DUE", "risk_level": "HIGH", "resource_available": true, "blocked": true, "permission_eligible": true, "fairness_age": 200, "deadline_state": "DUE", "approval_required": true, "dependency_criticality": 99}
+  ]
+}

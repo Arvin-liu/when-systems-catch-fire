@@ -869,6 +869,144 @@ class GoalDependencyGraph:
         return cls(tuple(GraphNode(**row) for row in data.get("nodes", ())), tuple(DependencyEdge(**row) for row in data.get("edges", ())))
 
 
+RISK_LEVELS = ("LOW", "MEDIUM", "HIGH", "IRREVERSIBLE")
+PRIORITY_COMMITMENT_ORDER = {"BREACHED": 0, "DUE": 1, "ACTIVE": 2, "ACCEPTED": 3, "BLOCKED": 4, "PROPOSED": 5, "FULFILLED": 6, "WAIVED": 7, "SUPERSEDED": 8}
+
+
+@dataclass(frozen=True)
+class OwnerOverride:
+    override_id: str
+    goal_id: str
+    rank: int
+    reason: str
+    provenance: AuthorityProvenance
+    created_at: str
+    active: bool = True
+
+    def __post_init__(self) -> None:
+        _safe_id(self.override_id, "priority.override_id")
+        _safe_id(self.goal_id, "priority.override.goal_id")
+        if not isinstance(self.rank, int) or isinstance(self.rank, bool) or self.rank < 0:
+            raise SteeringValidationError("priority override rank must be non-negative")
+        _bounded_text(self.reason, "priority.override.reason")
+        if not self.provenance.is_owner_authority:
+            raise SteeringValidationError("priority override requires explicit Owner authority")
+        _timestamp(self.created_at, "priority.override.created_at")
+        if not isinstance(self.active, bool):
+            raise SteeringValidationError("priority override active must be boolean")
+
+    def to_dict(self) -> dict[str, Any]:
+        return {"override_id": self.override_id, "goal_id": self.goal_id, "rank": self.rank, "reason": self.reason, "provenance": self.provenance.to_dict(), "created_at": self.created_at, "active": self.active}
+
+
+@dataclass(frozen=True)
+class PriorityInputs:
+    goal_id: str
+    owner_rank: int | None
+    commitment_status: str = "PROPOSED"
+    dependency_criticality: int = 0
+    risk_level: str = "LOW"
+    resource_available: bool = True
+    blocked: bool = False
+    permission_eligible: bool = True
+    fairness_age: int = 0
+    deadline_state: str = "UNKNOWN"
+    owner_override: OwnerOverride | None = None
+    approval_required: bool = False
+    unknowns: tuple[str, ...] = ()
+
+    def __post_init__(self) -> None:
+        _safe_id(self.goal_id, "priority.goal_id")
+        if self.owner_rank is not None and (not isinstance(self.owner_rank, int) or isinstance(self.owner_rank, bool) or self.owner_rank < 0):
+            raise SteeringValidationError("owner_rank must be non-negative or None")
+        if self.commitment_status not in COMMITMENT_STATUSES:
+            raise SteeringValidationError("priority commitment_status is invalid")
+        if not isinstance(self.dependency_criticality, int) or isinstance(self.dependency_criticality, bool) or self.dependency_criticality < 0:
+            raise SteeringValidationError("dependency_criticality must be non-negative")
+        if self.risk_level not in RISK_LEVELS:
+            raise SteeringValidationError("priority risk_level is invalid")
+        for field in ("resource_available", "blocked", "permission_eligible", "approval_required"):
+            if not isinstance(getattr(self, field), bool):
+                raise SteeringValidationError(f"priority.{field} must be boolean")
+        if not isinstance(self.fairness_age, int) or isinstance(self.fairness_age, bool) or self.fairness_age < 0:
+            raise SteeringValidationError("fairness_age must be non-negative")
+        _bounded_text(self.deadline_state, "priority.deadline_state")
+        object.__setattr__(self, "unknowns", _refs(self.unknowns, "priority.unknowns"))
+
+
+@dataclass(frozen=True)
+class PriorityDecision:
+    goal_id: str
+    eligible: bool
+    lexicographic_key: tuple[int, ...]
+    reasons: tuple[str, ...]
+    owner_override_visible: bool
+    owner_override_retractable: bool
+    telemetry_score: float | None
+    authority: str
+    inputs: PriorityInputs
+
+    def __post_init__(self) -> None:
+        _safe_id(self.goal_id, "priority.decision.goal_id")
+        if not isinstance(self.eligible, bool):
+            raise SteeringValidationError("priority decision eligible must be boolean")
+        if not isinstance(self.lexicographic_key, tuple) or any(not isinstance(value, int) for value in self.lexicographic_key):
+            raise SteeringValidationError("priority lexicographic key must be integer tuple")
+        object.__setattr__(self, "reasons", _refs(self.reasons, "priority.decision.reasons"))
+        if not isinstance(self.owner_override_visible, bool) or not isinstance(self.owner_override_retractable, bool):
+            raise SteeringValidationError("priority override visibility flags must be boolean")
+        if self.telemetry_score is not None and not isinstance(self.telemetry_score, (int, float)):
+            raise SteeringValidationError("priority telemetry_score must be numeric")
+        _bounded_text(self.authority, "priority.decision.authority")
+
+    def to_dict(self) -> dict[str, Any]:
+        return {"schema": f"{STEERING_SCHEMA}.priority-decision", "goal_id": self.goal_id, "eligible": self.eligible, "lexicographic_key": list(self.lexicographic_key), "reasons": list(self.reasons), "owner_override_visible": self.owner_override_visible, "owner_override_retractable": self.owner_override_retractable, "telemetry_score": self.telemetry_score, "authority": self.authority}
+
+
+class PriorityPolicy:
+    """Explainable policy; no opaque score is allowed to be the authority."""
+
+    def evaluate(self, inputs: PriorityInputs) -> PriorityDecision:
+        reasons: list[str] = []
+        eligible = True
+        if not inputs.permission_eligible:
+            eligible = False
+            reasons.append("permission_ineligible")
+        if inputs.blocked:
+            eligible = False
+            reasons.append("blocked")
+        if not inputs.resource_available:
+            eligible = False
+            reasons.append("resource_unavailable")
+        if inputs.risk_level in {"HIGH", "IRREVERSIBLE"} and inputs.approval_required:
+            reasons.append("high_risk_requires_explicit_approval")
+        if inputs.deadline_state in {"DUE", "OVERDUE", "STALE", "GRACE"}:
+            reasons.append(f"temporal_{inputs.deadline_state.casefold()}")
+        if inputs.commitment_status in {"DUE", "BREACHED"}:
+            reasons.append(f"commitment_{inputs.commitment_status.casefold()}")
+        if inputs.unknowns:
+            reasons.append("unknown_inputs_preserved")
+        override_rank = inputs.owner_override.rank if inputs.owner_override and inputs.owner_override.active else 10**6
+        owner_rank = inputs.owner_rank if inputs.owner_rank is not None else 10**5
+        commitment_rank = PRIORITY_COMMITMENT_ORDER[inputs.commitment_status]
+        deadline_rank = {"OVERDUE": 0, "STALE": 1, "DUE": 2, "GRACE": 3, "REVIEW_DUE": 4, "ACTIVE_WINDOW": 5, "NOT_YET": 6, "UNKNOWN": 7}.get(inputs.deadline_state, 8)
+        risk_rank = {"IRREVERSIBLE": 0, "HIGH": 1, "MEDIUM": 2, "LOW": 3}[inputs.risk_level]
+        key = (0 if eligible else 1, override_rank, owner_rank, commitment_rank, deadline_rank, -inputs.dependency_criticality, risk_rank, -inputs.fairness_age)
+        telemetry_score = float((10**6 - min(override_rank, 10**6)) + (10**5 - min(owner_rank, 10**5)) + inputs.dependency_criticality + inputs.fairness_age)
+        if not reasons:
+            reasons.append("eligible_with_explicit_inputs")
+        return PriorityDecision(inputs.goal_id, eligible, key, tuple(reasons), inputs.owner_override is not None, inputs.owner_override is not None, telemetry_score, "LEXICOGRAPHIC_RULES_R1", inputs)
+
+    def order(self, candidates: Sequence[PriorityInputs]) -> tuple[PriorityDecision, ...]:
+        decisions = [self.evaluate(candidate) for candidate in candidates]
+        return tuple(sorted(decisions, key=lambda decision: (decision.lexicographic_key, decision.goal_id)))
+
+    def retract_override(self, override: OwnerOverride) -> OwnerOverride:
+        if not override.provenance.is_owner_authority:
+            raise SteeringValidationError("only Owner override can be retracted")
+        return replace(override, active=False)
+
+
 @dataclass(frozen=True)
 class GoalRecord:
     """A versioned target whose satisfaction is never inferred from a child run."""
@@ -1249,4 +1387,8 @@ __all__ = [
     "IntentRecord", "GoalRecord", "CompletionContract", "ontology_contract", "authority_digest",
     "IntentRegistry", "IntentRegistryError",
     "GOAL_STATUSES", "GoalRegistry", "GoalRegistryError", "COMPLETION_OUTCOMES", "CompletionDecision", "evaluate_completion",
+    "COMMITMENT_STATUSES", "CommitmentRecord", "CommitmentLedger", "CommitmentLedgerError",
+    "TEMPORAL_STATES", "TemporalWindow", "TemporalEvaluation", "evaluate_temporal",
+    "DEPENDENCY_EDGE_TYPES", "GraphNode", "DependencyEdge", "GoalDependencyGraph", "GoalDependencyGraphError",
+    "RISK_LEVELS", "OwnerOverride", "PriorityInputs", "PriorityDecision", "PriorityPolicy",
 ]

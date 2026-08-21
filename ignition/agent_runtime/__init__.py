@@ -99,6 +99,11 @@ from .steering import (
     GoalDependencyGraph,
     GoalDependencyGraphError,
     GraphNode,
+    OwnerOverride,
+    PriorityDecision,
+    PriorityInputs,
+    PriorityPolicy,
+    RISK_LEVELS,
     ontology_contract,
 )
 
@@ -353,5 +358,10 @@ __all__ = [
     "GoalDependencyGraph",
     "GoalDependencyGraphError",
     "GraphNode",
+    "OwnerOverride",
+    "PriorityDecision",
+    "PriorityInputs",
+    "PriorityPolicy",
+    "RISK_LEVELS",
     "ontology_contract",
 ]
