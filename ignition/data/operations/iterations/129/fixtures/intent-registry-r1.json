@@ -1,0 +1,35 @@
+{
+  "schema": "os-steering-intent-obligation-r1.intent-registry",
+  "records": [
+    {
+      "schema": "os-steering-intent-obligation-r1.intent",
+      "intent_id": "intent-synthetic-research",
+      "statement": "Maintain a bounded synthetic research portfolio.",
+      "namespace": "fixture.public",
+      "provenance": {"source_type": "OWNER_DECLARED", "actor_ref": "owner.synthetic", "authority_id": "auth-research-001", "reason": "synthetic fixture only", "evidence_refs": [], "authorized": true},
+      "status": "ACTIVE",
+      "scope": {"domain": "research", "synthetic": true},
+      "version": 1,
+      "supersedes_intent_id": null,
+      "created_at": "2026-08-21T12:00:00+08:00",
+      "updated_at": "2026-08-21T12:00:00+08:00"
+    },
+    {
+      "schema": "os-steering-intent-obligation-r1.intent",
+      "intent_id": "intent-synthetic-proposal",
+      "statement": "Consider a proposed curation direction.",
+      "namespace": "fixture.public",
+      "provenance": {"source_type": "SYSTEM_DERIVED_PROPOSAL", "actor_ref": "system.fixture", "authority_id": "proposal-001", "reason": "derived from synthetic workload", "evidence_refs": ["fixture-run-001"], "authorized": false},
+      "status": "PROPOSED",
+      "scope": {"domain": "knowledge", "synthetic": true},
+      "version": 1,
+      "supersedes_intent_id": null,
+      "created_at": "2026-08-21T12:00:00+08:00",
+      "updated_at": "2026-08-21T12:00:00+08:00"
+    }
+  ],
+  "events": [],
+  "record_count": 2,
+  "owner_authoritative_count": 1,
+  "proposal_count": 1
+}

@@ -9,7 +9,7 @@ completion, temporal, arbitration, durability, and federation helpers.
 
 from __future__ import annotations
 
-from dataclasses import dataclass
+from dataclasses import dataclass, replace
 from datetime import datetime
 import hashlib
 import json
@@ -304,6 +304,123 @@ class GoalRecord:
         }
 
 
+class IntentRegistryError(SteeringValidationError):
+    """Raised when an intent registry operation would lose authority lineage."""
+
+
+class IntentRegistry:
+    """Small append-only-in-spirit registry for canonical and proposed intents."""
+
+    def __init__(self, records: Sequence[IntentRecord] = ()) -> None:
+        self._records: dict[str, IntentRecord] = {}
+        self._events: list[dict[str, Any]] = []
+        for record in records:
+            self.register(record)
+
+    @property
+    def records(self) -> tuple[IntentRecord, ...]:
+        return tuple(self._records[key] for key in sorted(self._records))
+
+    @property
+    def events(self) -> tuple[dict[str, Any], ...]:
+        return tuple(dict(event) for event in self._events)
+
+    def get(self, intent_id: str) -> IntentRecord:
+        _safe_id(intent_id, "intent_id")
+        try:
+            return self._records[intent_id]
+        except KeyError as exc:
+            raise IntentRegistryError(f"unknown intent: {intent_id}") from exc
+
+    def register(self, record: IntentRecord) -> IntentRecord:
+        if not isinstance(record, IntentRecord):
+            raise IntentRegistryError("registry accepts IntentRecord only")
+        if record.intent_id in self._records:
+            raise IntentRegistryError(f"intent already exists: {record.intent_id}")
+        if not record.owner_authoritative and record.status != "PROPOSED":
+            raise IntentRegistryError("a non-Owner proposal cannot enter the active registry")
+        self._records[record.intent_id] = record
+        self._events.append({
+            "event": "INTENT_REGISTERED",
+            "intent_id": record.intent_id,
+            "version": record.version,
+            "source_type": record.provenance.source_type,
+            "owner_authoritative": record.owner_authoritative,
+            "authority_digest": authority_digest(record.provenance),
+        })
+        return record
+
+    def transition(self, intent_id: str, status: str, *, provenance: AuthorityProvenance, reason: str, updated_at: str) -> IntentRecord:
+        current = self.get(intent_id)
+        if status not in INTENT_STATUSES:
+            raise IntentRegistryError(f"unknown target intent status: {status}")
+        _bounded_text(reason, "intent.transition.reason")
+        _timestamp(updated_at, "intent.transition.updated_at")
+        if not provenance.is_owner_authority:
+            raise IntentRegistryError("intent lifecycle changes require explicit Owner authority")
+        if status in {"ACTIVE", "PAUSED", "RETIRED", "SUPERSEDED"} and not current.owner_authoritative:
+            raise IntentRegistryError("a proposal cannot be promoted or lifecycle-mutated as canonical Owner intent")
+        if current.status == "RETIRED" and status != "RETIRED":
+            raise IntentRegistryError("retired intent cannot be silently reopened")
+        updated = replace(current, status=status, version=current.version + 1, updated_at=updated_at)
+        self._records[intent_id] = updated
+        self._events.append({
+            "event": "INTENT_STATUS_CHANGED",
+            "intent_id": intent_id,
+            "from_status": current.status,
+            "to_status": status,
+            "from_version": current.version,
+            "to_version": updated.version,
+            "reason": reason,
+            "authority_digest": authority_digest(provenance),
+        })
+        return updated
+
+    def supersede(self, intent_id: str, replacement: IntentRecord, *, provenance: AuthorityProvenance, reason: str, updated_at: str) -> tuple[IntentRecord, IntentRecord]:
+        current = self.get(intent_id)
+        if replacement.supersedes_intent_id != intent_id:
+            raise IntentRegistryError("replacement must point to the intent it supersedes")
+        if not provenance.is_owner_authority or not current.owner_authoritative or not replacement.owner_authoritative:
+            raise IntentRegistryError("supersession of canonical intent requires Owner authority on both records")
+        if replacement.intent_id in self._records:
+            raise IntentRegistryError(f"replacement intent already exists: {replacement.intent_id}")
+        old = self.transition(intent_id, "SUPERSEDED", provenance=provenance, reason=reason, updated_at=updated_at)
+        self.register(replacement)
+        self._events.append({
+            "event": "INTENT_SUPERSEDED",
+            "intent_id": intent_id,
+            "replacement_intent_id": replacement.intent_id,
+            "lineage_preserved": True,
+            "authority_digest": authority_digest(provenance),
+        })
+        return old, replacement
+
+    def owner_active(self, *, namespace: str | None = None) -> tuple[IntentRecord, ...]:
+        result = tuple(record for record in self.records if record.owner_authoritative and record.status == "ACTIVE" and (namespace is None or record.namespace == namespace))
+        return result
+
+    def to_dict(self) -> dict[str, Any]:
+        return {
+            "schema": f"{STEERING_SCHEMA}.intent-registry",
+            "records": [record.to_dict() for record in self.records],
+            "events": list(self._events),
+            "record_count": len(self._records),
+            "owner_authoritative_count": sum(record.owner_authoritative for record in self.records),
+            "proposal_count": sum(not record.owner_authoritative for record in self.records),
+        }
+
+    @classmethod
+    def from_dict(cls, data: Mapping[str, Any]) -> "IntentRegistry":
+        if data.get("schema") != f"{STEERING_SCHEMA}.intent-registry":
+            raise IntentRegistryError("intent registry schema mismatch")
+        registry = cls(IntentRecord.from_dict(row) for row in data.get("records", ()))
+        stored_events = data.get("events", [])
+        if not isinstance(stored_events, list):
+            raise IntentRegistryError("intent registry events must be an array")
+        registry._events = [dict(event) for event in stored_events]
+        return registry
+
+
 def ontology_contract() -> dict[str, Any]:
     """Return the machine-readable layer and non-inference contract."""
 
@@ -335,4 +452,5 @@ __all__ = [
     "STEERING_SCHEMA", "INTENT_AUTHORITY_INVARIANT", "GOAL_COMPLETION_NON_INFERENCE_INVARIANT", "STEERING_EXPLAINABILITY_INVARIANT",
     "INTENT_SOURCE_TYPES", "INTENT_STATUSES", "ONTOLOGY_LAYERS", "SteeringValidationError", "AuthorityProvenance",
     "IntentRecord", "GoalRecord", "CompletionContract", "ontology_contract", "authority_digest",
+    "IntentRegistry", "IntentRegistryError",
 ]
