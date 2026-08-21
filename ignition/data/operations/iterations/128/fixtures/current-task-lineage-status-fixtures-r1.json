@@ -1,0 +1,42 @@
+{
+  "schema_version": "current-task-lineage-status-fixtures-r1",
+  "task_id": "IGNITION-20260821-128",
+  "authority_boundary": "These fixtures validate repository Current-State lineage classification only; they do not establish external truth, Owner acceptance, production readiness or epistemic acceptance.",
+  "fixtures": [
+    {
+      "id": "stale-deferred-current-surface",
+      "kind": "negative",
+      "mutation": "Replace the predecessor Current status with DEFERRED_PENDING_REBASE",
+      "expected_status": "FAIL",
+      "expected_code": "TASK_LINEAGE_STALE_DEFERRED"
+    },
+    {
+      "id": "old-task-marked-completed",
+      "kind": "negative",
+      "mutation": "Remove HISTORICAL_UNEXECUTED and mark the predecessor file COMPLETED",
+      "expected_status": "FAIL",
+      "expected_code": "TASK_LINEAGE_OLD_TASK_COMPLETED"
+    },
+    {
+      "id": "successor-lineage-missing",
+      "kind": "negative",
+      "mutation": "Remove REBASED_INTO_127 while retaining the successor completion",
+      "expected_status": "FAIL",
+      "expected_code": "TASK_LINEAGE_SUCCESSOR_LINEAGE_MISSING"
+    },
+    {
+      "id": "historical-record-misclassified-current",
+      "kind": "negative",
+      "mutation": "Classify a protected Task 126/127 record as CURRENT_SURFACE",
+      "expected_status": "FAIL",
+      "expected_code": "TASK_LINEAGE_HISTORICAL_MISCLASSIFIED_CURRENT"
+    },
+    {
+      "id": "canonical-current-lineage",
+      "kind": "positive",
+      "mutation": "Use the canonical source and latest Task 128 changelog section",
+      "expected_status": "PASS",
+      "expected_code": "TASK_LINEAGE_CURRENT_OK"
+    }
+  ]
+}

@@ -33,6 +33,36 @@ class CurrentTaskLineageTests(unittest.TestCase):
         self.assertEqual(self.source["current_state"]["current_state_status"], "CURRENT_WITH_OPEN_OBLIGATIONS")
         self.assertEqual(self.source["current_state"]["epistemically_accepted"], 0)
 
+    def test_negative_fixture_manifest_covers_four_required_failures(self) -> None:
+        fixture = validator.load_json(validator.FIXTURE_PATH)
+        ids = {row["id"] for row in fixture["fixtures"]}
+        self.assertTrue({
+            "stale-deferred-current-surface",
+            "old-task-marked-completed",
+            "successor-lineage-missing",
+            "historical-record-misclassified-current",
+        }.issubset(ids))
+
+    def test_stale_deferred_surface_is_rejected(self) -> None:
+        text = "HISTORICAL_UNEXECUTED REBASED_INTO_127 COMPLETED_WITH_CLASSIFIED_RESIDUALS DEFERRED_PENDING_REBASE"
+        errors = validator.validate_surface_text(self.source, text, "fixture")
+        self.assertTrue(any(error.startswith("TASK_LINEAGE_STALE_DEFERRED") for error in errors))
+
+    def test_old_task_completed_surface_is_rejected(self) -> None:
+        text = "REBASED_INTO_127 COMPLETED_WITH_CLASSIFIED_RESIDUALS TASK125_FILE_STATUS=COMPLETED"
+        errors = validator.validate_surface_text(self.source, text, "fixture")
+        self.assertTrue(any(error.startswith("TASK_LINEAGE_OLD_TASK_COMPLETED") for error in errors))
+
+    def test_successor_without_lineage_is_rejected(self) -> None:
+        text = "HISTORICAL_UNEXECUTED COMPLETED_WITH_CLASSIFIED_RESIDUALS"
+        errors = validator.validate_surface_text(self.source, text, "fixture")
+        self.assertTrue(any(error.startswith("TASK_LINEAGE_SUCCESSOR_LINEAGE_MISSING") for error in errors))
+
+    def test_protected_history_cannot_be_classified_as_current(self) -> None:
+        path = self.source["protected_historical_paths"][0]
+        errors = validator.validate_history_classification(self.source, path, "CURRENT_SURFACE")
+        self.assertTrue(any(error.startswith("TASK_LINEAGE_HISTORICAL_MISCLASSIFIED_CURRENT") for error in errors))
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -12,6 +12,11 @@
     "current_state_status": "CURRENT_WITH_OPEN_OBLIGATIONS",
     "epistemically_accepted": 0
   },
+  "current_surface_status_requirements": {
+    "required_status_tokens": ["HISTORICAL_UNEXECUTED", "REBASED_INTO_127", "COMPLETED_WITH_CLASSIFIED_RESIDUALS"],
+    "forbidden_status_tokens": ["DEFERRED_PENDING_REBASE"],
+    "append_only_current_path": "ignition/STATE-CHANGELOG.md"
+  },
   "lineages": [
     {
       "lineage_id": "IGNITION-125->IGNITION-127",

@@ -142,7 +142,7 @@
     },
     {
       "path": "ignition/data/operations/current-task-lineage-status.json",
-      "sha256": "5292494573229bcd53d753116ad4352a4bffccc8a51db8972eb8e3f3838b9a6a"
+      "sha256": "5e24991a0cd1d9d3529c06c3d1fece2a2595f34819fda3d3fde235a275f2f3fc"
     },
     {
       "path": "ignition/data/operations/project-components.json",
@@ -182,7 +182,7 @@
     },
     {
       "path": "ignition/schemas/operations/current-task-lineage-status-r1.schema.json",
-      "sha256": "2a8f278237bee0853f5c0302a4c402bf8362970a7652836f5a8659784cbbf576"
+      "sha256": "b85ece404e19d6a9c8bc83c846e1ac6da5d4fb2ab5250de8a71f447a89511c72"
     },
     {
       "path": "ignition/tools/generate_current_facts.py",
@@ -190,7 +190,7 @@
     },
     {
       "path": "ignition/tools/validate_current_task_lineage.py",
-      "sha256": "61ac954674d3a00eb65629ba79d75dc472efb04f4027c893499491b3e28435da"
+      "sha256": "fa5d6abd6682b469717369abb681d15d3857c0ffde98b93c7aefc43269037a9f"
     }
   ]
 }

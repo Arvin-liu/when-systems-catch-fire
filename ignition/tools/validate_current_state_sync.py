@@ -386,6 +386,12 @@ def run_check(receipt_path: Path | None = None, check_fixtures: bool = True) -> 
     contract = load_json(CONTRACT_PATH)
     contract_errors, metrics = validate_contract(contract)
     errors.extend(contract_errors)
+    try:
+        from validate_current_task_lineage import validate as validate_task_lineage
+
+        errors.extend(validate_task_lineage())
+    except Exception as exc:  # pragma: no cover - fail-closed integration boundary
+        errors.append(f"cannot validate current task lineage/status source: {exc}")
     errors.extend(validate_current_facts(contract))
     if receipt_path is None:
         receipts = discover_receipts()

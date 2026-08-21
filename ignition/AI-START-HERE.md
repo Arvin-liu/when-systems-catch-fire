@@ -28,7 +28,7 @@ permission 或 epistemic status。
 9. llms.txt：机器可读边界。
 10. AI-HANDOFF.md：当前权威、兼容和任务交接。
 11. data/foundation/project-state.json、data/architecture/agentization-boundary-r0.json 与 registry-manifest.json：机器状态与边界投影。
-12. 当前任务命令、data/operations/iterations/128/progress.jsonl、`data/operations/current-task-lineage-status.json` 与相关 source/schema；Task 127 的 identity contract、current-facts、Durability / Lifecycle R3 和同步 receipt 是已发布状态入口，Task 128 的 lineage/status source 是当前语义入口。旧 Task 125 文件状态是 `HISTORICAL_UNEXECUTED`，其 requirements 已 `REBASED_INTO_127`，不得把它当作仍 pending 的当前任务。
+12. 当前任务命令、data/operations/iterations/128/progress.jsonl、`data/operations/current-task-lineage-status.json` 与相关 source/schema；Task 127 的 identity contract、current-facts、Durability / Lifecycle R3 和同步 receipt 是已发布状态入口，`IGNITION-127` 当前为 `COMPLETED_WITH_CLASSIFIED_RESIDUALS`；Task 128 的 lineage/status source 是当前语义入口。旧 Task 125 文件状态是 `HISTORICAL_UNEXECUTED`，其 requirements 已 `REBASED_INTO_127`，不得把它当作仍 pending 的当前任务。
 
 ## R2 冷启动补充
 

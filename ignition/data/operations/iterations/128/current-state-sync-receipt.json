@@ -36,7 +36,11 @@
     ".github/README.md",
     "ignition/llms.txt",
     "ignition/STATE-CHANGELOG.md",
-    "ignition/data/operations/iterations/128/progress.jsonl"
+    "ignition/data/operations/iterations/128/progress.jsonl",
+    "ignition/data/operations/iterations/128/fixtures/current-task-lineage-status-fixtures-r1.json",
+    "ignition/tools/validate_current_task_lineage.py",
+    "ignition/tools/validate_current_state_sync.py",
+    "ignition/tests/test_current_task_lineage.py"
   ],
   "identity_contract_changed": true,
   "surface_sync_complete": false,
