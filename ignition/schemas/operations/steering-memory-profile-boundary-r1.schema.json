@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Arvin-liu/when-systems-catch-fire/schemas/operations/steering-memory-profile-boundary-r1.schema.json",
+  "title": "OS Steering Memory and Profile Boundary R1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "cases"],
+  "properties": {
+    "schema": {"const": "os-steering-intent-obligation-r1.memory-profile-fixtures"},
+    "cases": {
+      "type": "array",
+      "minItems": 5,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["observation_id", "source_kind", "summary", "preference_signal", "repeated_preference", "stale", "conflict_with_canonical", "canonical_mode", "expected_decision", "expected_priority_effect"],
+        "properties": {
+          "observation_id": {"type": "string"},
+          "source_kind": {"type": "string"},
+          "summary": {"type": "string"},
+          "preference_signal": {"type": ["string", "null"]},
+          "repeated_preference": {"type": "boolean"},
+          "stale": {"type": "boolean"},
+          "conflict_with_canonical": {"type": "boolean"},
+          "canonical_mode": {"enum": ["NONE", "OWNER"]},
+          "expected_decision": {"enum": ["PROPOSAL_ONLY", "ADVISORY_ONLY", "CANONICAL_INTENT_WINS", "STALE_IGNORED"]},
+          "expected_priority_effect": {"enum": ["NONE", "CANONICAL_INTENT_ONLY"]}
+        }
+      }
+    }
+  }
+}

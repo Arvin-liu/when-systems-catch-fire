@@ -20,6 +20,8 @@ An `EpisodeGoalBinding` records the primary/secondary Goal references, objective
 
 Before a handoff or next-work dispatch, `GoalDriftGuard` compares the objective digest, acceptance criteria, authority source, superseded references, memory conflict flags, and stable handoff identity. Objective/acceptance/handoff drift pauses for reconciliation; proposal-to-Owner escalation or a memory conflict requires human review. No drift report promotes a proposal or silently repairs a Goal.
 
+Operational Memory and Profile projections are context inputs, not an Intent Registry. A repeated preference creates at most a `SYSTEM_DERIVED_PROPOSAL` with `priority_effect=NONE`; ESI remains advisory-only. When stale context conflicts with a canonical Owner Intent, the canonical Intent wins and the context is not reintroduced as a priority signal.
+
 ## Priority and arbitration
 
 Priority is an ordered tuple of explicit rules: eligibility/permission, active Owner override, Owner rank, commitment state, temporal state, dependency criticality, risk, and bounded fairness age. A telemetry score may be emitted for inspection, but it is not authoritative and cannot override permission, safety, blocked, stale, superseded, or executor-unavailable state.

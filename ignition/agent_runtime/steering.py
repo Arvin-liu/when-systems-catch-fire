@@ -2040,6 +2040,106 @@ class GoalDriftGuard:
         return DriftReport(report_id, goal.goal_id, outcome, tuple(reasons), expected_digest, observed_objective_digest, missing, unexpected, authority_escalation, superseded_reference, memory_conflict, handoff_match, created_at)
 
 
+MEMORY_PROFILE_SOURCES = frozenset({"OPERATIONAL_MEMORY", "PROFILE_PROJECTION", "ESI_ADVISORY"})
+MEMORY_PROFILE_DECISIONS = frozenset({"PROPOSAL_ONLY", "ADVISORY_ONLY", "CANONICAL_INTENT_WINS", "STALE_IGNORED"})
+
+
+@dataclass(frozen=True)
+class MemoryProfileObservation:
+    observation_id: str
+    source_kind: str
+    summary: str
+    preference_signal: str | None = None
+    repeated_preference: bool = False
+    stale: bool = False
+    conflict_with_canonical: bool = False
+    created_at: str = "1970-01-01T00:00:00+00:00"
+
+    def __post_init__(self) -> None:
+        _safe_id(self.observation_id, "memory_profile.observation_id")
+        if self.source_kind not in MEMORY_PROFILE_SOURCES:
+            raise SteeringValidationError("memory_profile source_kind is invalid")
+        _bounded_text(self.summary, "memory_profile.summary")
+        if self.preference_signal is not None:
+            _bounded_text(self.preference_signal, "memory_profile.preference_signal")
+        for field in ("repeated_preference", "stale", "conflict_with_canonical"):
+            if not isinstance(getattr(self, field), bool):
+                raise SteeringValidationError(f"memory_profile.{field} must be boolean")
+        _timestamp(self.created_at, "memory_profile.created_at")
+
+    def to_dict(self) -> dict[str, Any]:
+        return {
+            "observation_id": self.observation_id,
+            "source_kind": self.source_kind,
+            "summary": self.summary,
+            "preference_signal": self.preference_signal,
+            "repeated_preference": self.repeated_preference,
+            "stale": self.stale,
+            "conflict_with_canonical": self.conflict_with_canonical,
+            "created_at": self.created_at,
+        }
+
+
+@dataclass(frozen=True)
+class ContextBoundaryDecision:
+    observation_id: str
+    decision: str
+    priority_effect: str
+    canonical_intent_id: str | None
+    proposal: IntentRecord | None
+    reasons: tuple[str, ...]
+    created_at: str
+
+    def __post_init__(self) -> None:
+        _safe_id(self.observation_id, "memory_profile.decision.observation_id")
+        if self.decision not in MEMORY_PROFILE_DECISIONS:
+            raise SteeringValidationError("memory_profile decision is invalid")
+        if self.priority_effect not in {"NONE", "CANONICAL_INTENT_ONLY"}:
+            raise SteeringValidationError("memory_profile priority_effect is invalid")
+        if self.canonical_intent_id is not None:
+            _safe_id(self.canonical_intent_id, "memory_profile.canonical_intent_id")
+        if self.decision == "PROPOSAL_ONLY" and (self.proposal is None or self.proposal.status != "PROPOSED" or self.proposal.owner_authoritative):
+            raise SteeringValidationError("proposal-only context must carry a non-authoritative proposal")
+        if self.decision != "PROPOSAL_ONLY" and self.proposal is not None:
+            raise SteeringValidationError("non-proposal context cannot carry a proposal")
+        object.__setattr__(self, "reasons", _refs(self.reasons, "memory_profile.decision.reasons"))
+        _timestamp(self.created_at, "memory_profile.decision.created_at")
+
+    def to_dict(self) -> dict[str, Any]:
+        return {
+            "schema": f"{STEERING_SCHEMA}.memory-profile-boundary",
+            "observation_id": self.observation_id,
+            "decision": self.decision,
+            "priority_effect": self.priority_effect,
+            "canonical_intent_id": self.canonical_intent_id,
+            "proposal": self.proposal.to_dict() if self.proposal is not None else None,
+            "reasons": list(self.reasons),
+            "created_at": self.created_at,
+        }
+
+
+class MemoryProfileBoundary:
+    """Keep operational context advisory and canonical Intent authoritative."""
+
+    def evaluate(self, observation: MemoryProfileObservation, *, canonical_intent: IntentRecord | None = None) -> ContextBoundaryDecision:
+        if not isinstance(observation, MemoryProfileObservation):
+            raise SteeringValidationError("memory/profile boundary requires a MemoryProfileObservation")
+        if canonical_intent is not None and not isinstance(canonical_intent, IntentRecord):
+            raise SteeringValidationError("canonical_intent must be an IntentRecord")
+        canonical_id = canonical_intent.intent_id if canonical_intent is not None else None
+        if canonical_intent is not None and (observation.conflict_with_canonical or observation.stale):
+            return ContextBoundaryDecision(observation.observation_id, "CANONICAL_INTENT_WINS", "CANONICAL_INTENT_ONLY", canonical_id, None, ("canonical_intent_remains_authoritative", "context_cannot_override_canonical"), observation.created_at)
+        if observation.source_kind == "ESI_ADVISORY":
+            return ContextBoundaryDecision(observation.observation_id, "ADVISORY_ONLY", "NONE", canonical_id, None, ("esi_is_advisory", "esi_cannot_change_priority"), observation.created_at)
+        if observation.stale:
+            return ContextBoundaryDecision(observation.observation_id, "STALE_IGNORED", "NONE", canonical_id, None, ("stale_context_not_reintroduced",), observation.created_at)
+        if observation.repeated_preference and observation.preference_signal:
+            provenance = AuthorityProvenance("SYSTEM_DERIVED_PROPOSAL", "steering.boundary", f"proposal-{observation.observation_id}", "repeated preference is proposal only", evidence_refs=(observation.observation_id,))
+            proposal = IntentRecord(f"proposal:{observation.observation_id}", observation.preference_signal, "steering.proposals", provenance, status="PROPOSED", scope={"priority_effect": "NONE", "source": observation.source_kind}, created_at=observation.created_at, updated_at=observation.created_at)
+            return ContextBoundaryDecision(observation.observation_id, "PROPOSAL_ONLY", "NONE", canonical_id, proposal, ("repeated_preference_proposal_only", "no_priority_effect", "explicit_owner_promotion_required"), observation.created_at)
+        return ContextBoundaryDecision(observation.observation_id, "ADVISORY_ONLY", "NONE", canonical_id, None, ("context_is_advisory", "no_intent_promotion"), observation.created_at)
+
+
 __all__ = [
     "STEERING_SCHEMA", "INTENT_AUTHORITY_INVARIANT", "GOAL_COMPLETION_NON_INFERENCE_INVARIANT", "STEERING_EXPLAINABILITY_INVARIANT",
     "INTENT_SOURCE_TYPES", "INTENT_STATUSES", "ONTOLOGY_LAYERS", "SteeringValidationError", "AuthorityProvenance",
@@ -2054,4 +2154,5 @@ __all__ = [
     "NextWorkCandidate", "SkippedGoal", "DecisionTrace", "SteeringEngine",
     "HandoffIdentity", "EpisodeGoalBinding", "GoalEpisodeBinder",
     "DRIFT_OUTCOMES", "DriftReport", "GoalDriftGuard",
+    "MEMORY_PROFILE_SOURCES", "MEMORY_PROFILE_DECISIONS", "MemoryProfileObservation", "ContextBoundaryDecision", "MemoryProfileBoundary",
 ]
