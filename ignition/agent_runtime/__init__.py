@@ -109,6 +109,10 @@ from .steering import (
     CONFLICT_TYPES,
     ConflictArbiter,
     ConflictCandidate,
+    DecisionTrace,
+    NextWorkCandidate,
+    SkippedGoal,
+    SteeringEngine,
     ontology_contract,
 )
 
@@ -373,5 +377,9 @@ __all__ = [
     "CONFLICT_TYPES",
     "ConflictArbiter",
     "ConflictCandidate",
+    "DecisionTrace",
+    "NextWorkCandidate",
+    "SkippedGoal",
+    "SteeringEngine",
     "ontology_contract",
 ]

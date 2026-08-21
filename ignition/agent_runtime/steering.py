@@ -1197,6 +1197,185 @@ class ConflictArbiter:
 
 
 @dataclass(frozen=True)
+class NextWorkCandidate:
+    """Human-facing selection metadata kept beside the policy candidate."""
+
+    conflict_candidate: ConflictCandidate
+    pack_ref: str | None = None
+    executor_ref: str | None = None
+    budget_available: bool = True
+    blockers: tuple[str, ...] = ()
+    unknowns: tuple[str, ...] = ()
+
+    @property
+    def goal_id(self) -> str:
+        return self.conflict_candidate.goal_id
+
+    def __post_init__(self) -> None:
+        for field in ("pack_ref", "executor_ref"):
+            value = getattr(self, field)
+            if value is not None:
+                _safe_id(value, f"why_next.{field}")
+        if not isinstance(self.budget_available, bool):
+            raise SteeringValidationError("why_next.budget_available must be boolean")
+        object.__setattr__(self, "blockers", _refs(self.blockers, "why_next.blockers"))
+        object.__setattr__(self, "unknowns", _refs(self.unknowns, "why_next.unknowns"))
+
+    def to_dict(self) -> dict[str, Any]:
+        return {
+            "goal_id": self.goal_id,
+            "conflict_candidate": self.conflict_candidate.to_dict(),
+            "pack_ref": self.pack_ref,
+            "executor_ref": self.executor_ref,
+            "budget_available": self.budget_available,
+            "blockers": list(self.blockers),
+            "unknowns": list(self.unknowns),
+        }
+
+
+@dataclass(frozen=True)
+class SkippedGoal:
+    goal_id: str
+    reasons: tuple[str, ...]
+    eligible: bool
+    lexicographic_key: tuple[int, ...]
+
+    def __post_init__(self) -> None:
+        _safe_id(self.goal_id, "why_next.skipped_goal_id")
+        object.__setattr__(self, "reasons", _refs(self.reasons, "why_next.skipped_reasons"))
+        if not isinstance(self.eligible, bool):
+            raise SteeringValidationError("why_next skipped eligible must be boolean")
+        if not isinstance(self.lexicographic_key, tuple) or any(not isinstance(value, int) for value in self.lexicographic_key):
+            raise SteeringValidationError("why_next skipped lexicographic key must be integer tuple")
+
+    def to_dict(self) -> dict[str, Any]:
+        return {"goal_id": self.goal_id, "reasons": list(self.reasons), "eligible": self.eligible, "lexicographic_key": list(self.lexicographic_key)}
+
+
+@dataclass(frozen=True)
+class DecisionTrace:
+    """Complete answer to why the OS selected, deferred, or blocked next work."""
+
+    trace_id: str
+    selected_goal_id: str | None
+    why_now: str
+    why_selected: str
+    skipped_goals: tuple[SkippedGoal, ...]
+    blockers: tuple[str, ...]
+    permission_budget_resource: tuple[str, ...]
+    owner_override_ref: str | None
+    pack_ref: str | None
+    executor_ref: str | None
+    unknowns: tuple[str, ...]
+    arbitration: ArbitrationReceipt
+    created_at: str
+    authority: str = "STEERING_EXPLAINABILITY_INVARIANT"
+
+    def __post_init__(self) -> None:
+        _safe_id(self.trace_id, "why_next.trace_id")
+        if self.selected_goal_id is not None:
+            _safe_id(self.selected_goal_id, "why_next.selected_goal_id")
+        _bounded_text(self.why_now, "why_next.why_now")
+        _bounded_text(self.why_selected, "why_next.why_selected")
+        object.__setattr__(self, "blockers", _refs(self.blockers, "why_next.blockers"))
+        object.__setattr__(self, "permission_budget_resource", _refs(self.permission_budget_resource, "why_next.permission_budget_resource"))
+        object.__setattr__(self, "unknowns", _refs(self.unknowns, "why_next.unknowns"))
+        if self.owner_override_ref is not None:
+            _safe_id(self.owner_override_ref, "why_next.owner_override_ref")
+        if self.pack_ref is not None:
+            _safe_id(self.pack_ref, "why_next.pack_ref")
+        if self.executor_ref is not None:
+            _safe_id(self.executor_ref, "why_next.executor_ref")
+        _timestamp(self.created_at, "why_next.created_at")
+        _bounded_text(self.authority, "why_next.authority")
+
+    def to_dict(self) -> dict[str, Any]:
+        return {
+            "schema": f"{STEERING_SCHEMA}.decision-trace",
+            "trace_id": self.trace_id,
+            "selected_goal_id": self.selected_goal_id,
+            "why_now": self.why_now,
+            "why_selected": self.why_selected,
+            "skipped_goals": [item.to_dict() for item in self.skipped_goals],
+            "blockers": list(self.blockers),
+            "permission_budget_resource": list(self.permission_budget_resource),
+            "owner_override_ref": self.owner_override_ref,
+            "pack_ref": self.pack_ref,
+            "executor_ref": self.executor_ref,
+            "unknowns": list(self.unknowns),
+            "arbitration": self.arbitration.to_dict(),
+            "created_at": self.created_at,
+            "authority": self.authority,
+        }
+
+
+class SteeringEngine:
+    """Build an auditable next-work trace from explicit steering inputs."""
+
+    def __init__(self, arbiter: ConflictArbiter | None = None) -> None:
+        self.arbiter = arbiter or ConflictArbiter()
+
+    def select_next(self, trace_id: str, conflict_type: str, candidates: Sequence[NextWorkCandidate], *, created_at: str) -> DecisionTrace:
+        _safe_id(trace_id, "why_next.trace_id")
+        candidate_list = tuple(candidates)
+        if not candidate_list:
+            raise SteeringValidationError("why_next requires at least one candidate")
+        adjusted: list[ConflictCandidate] = []
+        for candidate in candidate_list:
+            priority = candidate.conflict_candidate.priority_inputs
+            if not candidate.budget_available and priority.resource_available:
+                priority = replace(priority, resource_available=False, unknowns=priority.unknowns + ("budget_unavailable",))
+            adjusted.append(replace(candidate.conflict_candidate, priority_inputs=priority))
+        arbitration = self.arbiter.arbitrate(f"{trace_id}.arbitration", conflict_type, adjusted, created_at=created_at)
+        by_goal = {candidate.goal_id: candidate for candidate in candidate_list}
+        skipped: list[SkippedGoal] = []
+        blockers: list[str] = []
+        permission_budget_resource: list[str] = []
+        unknowns: list[str] = []
+        selected_candidate = by_goal.get(arbitration.selected_goal_id) if arbitration.selected_goal_id else None
+
+        for candidate in candidate_list:
+            decision = next(item for item in arbitration.decisions if item.goal_id == candidate.goal_id)
+            permission_budget_resource.extend((
+                f"{candidate.goal_id}:permission={'eligible' if decision.inputs.permission_eligible else 'ineligible'}",
+                f"{candidate.goal_id}:budget={'available' if candidate.budget_available else 'unavailable'}",
+                f"{candidate.goal_id}:resource={'available' if decision.inputs.resource_available else 'unavailable'}",
+            ))
+            blockers.extend(f"{candidate.goal_id}:{blocker}" for blocker in candidate.blockers)
+            unknowns.extend(candidate.unknowns)
+            unknowns.extend(decision.inputs.unknowns)
+            if candidate.goal_id != arbitration.selected_goal_id:
+                reasons = list(decision.reasons)
+                if candidate.goal_id in {item.goal_id for item in adjusted if item.stale or item.superseded or item.intent_status == "SUPERSEDED"}:
+                    reasons.append("state_requires_reconciliation")
+                if not candidate.conflict_candidate.executor_available:
+                    reasons.append("executor_unavailable")
+                if not candidate.budget_available:
+                    reasons.append("budget_unavailable")
+                skipped.append(SkippedGoal(candidate.goal_id, tuple(reasons or ("not_selected_by_policy",)), decision.eligible, decision.lexicographic_key))
+        blockers.extend(reason for reason in arbitration.reasons if any(marker in reason for marker in ("blocked", "permission", "resource", "reconciliation", "unavailable", "safety")))
+        if selected_candidate is not None:
+            selected_decision = next(item for item in arbitration.decisions if item.goal_id == selected_candidate.goal_id)
+            selected_reasons = ", ".join(selected_decision.reasons)
+            why_now = f"{selected_candidate.goal_id} is next because explicit commitment/deadline/dependency inputs are {selected_reasons}."
+            why_selected = f"Selected by {selected_decision.authority} with lexicographic key {selected_decision.lexicographic_key}; telemetry score has no authority."
+            owner_override_ref = None
+            if selected_decision.inputs.owner_override and selected_decision.inputs.owner_override.active:
+                owner_override_ref = selected_decision.inputs.owner_override.override_id
+                why_selected += f" Owner override {owner_override_ref} is visible and retractable."
+            pack_ref = selected_candidate.pack_ref
+            executor_ref = selected_candidate.executor_ref
+        else:
+            why_now = f"No candidate can be safely selected under {arbitration.outcome}; explicit conflict state is preserved."
+            why_selected = f"No next action selected: {', '.join(arbitration.reasons)}."
+            owner_override_ref = None
+            pack_ref = None
+            executor_ref = None
+
+        return DecisionTrace(trace_id, arbitration.selected_goal_id, why_now, why_selected, tuple(sorted(skipped, key=lambda item: item.goal_id)), tuple(blockers), tuple(permission_budget_resource), owner_override_ref, pack_ref, executor_ref, tuple(unknowns), arbitration, created_at)
+
+
+@dataclass(frozen=True)
 class GoalRecord:
     """A versioned target whose satisfaction is never inferred from a child run."""
 
@@ -1581,4 +1760,5 @@ __all__ = [
     "DEPENDENCY_EDGE_TYPES", "GraphNode", "DependencyEdge", "GoalDependencyGraph", "GoalDependencyGraphError",
     "RISK_LEVELS", "OwnerOverride", "PriorityInputs", "PriorityDecision", "PriorityPolicy",
     "CONFLICT_TYPES", "ARBITRATION_OUTCOMES", "ConflictCandidate", "ArbitrationReceipt", "ConflictArbiter",
+    "NextWorkCandidate", "SkippedGoal", "DecisionTrace", "SteeringEngine",
 ]
