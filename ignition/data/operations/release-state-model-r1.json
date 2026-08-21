@@ -1,0 +1,99 @@
+{
+  "schema_version": "release-state-model-r1",
+  "contract_id": "RELEASE_WITNESS_REF_DERIVED_PUBLICATION_R1",
+  "model_kind": "STATIC_PROTOCOL_STATE_MODEL",
+  "state_domains": {
+    "content_owned": {
+      "authority_class": "FORMAL_COMMIT_CONTENT",
+      "states": ["RUNNING", "TERMINAL_CANDIDATE", "RELEASE_READY"],
+      "current_value_policy": "FORMAL_COMMIT_MAY_EMBED_TERMINAL_OR_RELEASE_READY_ONLY",
+      "runtime_observation_required": false,
+      "required_fields": ["task_id", "content_phase", "candidate_content_digest", "required_publication_ref"]
+    },
+    "ref_observed_publication": {
+      "authority_class": "REMOTE_GIT_REF_OBSERVATION",
+      "states": ["REF_NOT_CHECKED", "REF_MISMATCH", "PUBLISHED_AT_REMOTE_MAIN", "REMOTE_MOVED_AFTER_WITNESS"],
+      "current_value_policy": "RUNTIME_REMOTE_REF_OBSERVATION_ONLY",
+      "runtime_observation_required": true,
+      "required_fields": ["observed_ref", "observed_sha", "expected_sha", "exact_match", "observed_at"]
+    },
+    "publication_witness": {
+      "authority_class": "CONTROL_REPOSITORY_RECEIPT",
+      "states": ["NOT_ISSUED", "ISSUED_EXACT_MATCH", "ISSUED_NON_MATCH", "STALE_OBSERVATION"],
+      "current_value_policy": "1111_RECEIPT_ONLY_AND_OBSERVATION_TIME_SCOPED",
+      "runtime_observation_required": true,
+      "required_fields": ["candidate_sha", "observed_ref", "observed_remote_sha", "exact_match", "fresh_clone_head_sha", "current_semantic_result", "claim_ceiling"]
+    }
+  },
+  "authority_rules": [
+    {
+      "domain": "content_owned",
+      "authority_class": "FORMAL_COMMIT_CONTENT",
+      "can_assert": ["terminal task state", "release readiness", "candidate content digest", "required publication ref"],
+      "cannot_assert": ["current remote main membership", "remote publication success", "permanent publication", "Owner acceptance", "epistemic acceptance"]
+    },
+    {
+      "domain": "ref_observed_publication",
+      "authority_class": "REMOTE_GIT_REF_OBSERVATION",
+      "can_assert": ["observation-time equality of expected SHA and refs/heads/main", "observation-time local HEAD equality in an allowed fresh clone"],
+      "cannot_assert": ["external truth", "production readiness", "Owner acceptance", "epistemic acceptance", "permanent immutability after observation"]
+    },
+    {
+      "domain": "publication_witness",
+      "authority_class": "CONTROL_REPOSITORY_RECEIPT",
+      "can_assert": ["the recorded remote-ref observation and fresh-clone result at witness time", "formal main SHA did not move while the receipt was written"],
+      "cannot_assert": ["a new formal commit is published by its own content", "external truth", "production readiness", "Owner acceptance", "epistemic acceptance"]
+    }
+  ],
+  "transition_rules": [
+    {
+      "transition_id": "release-ready-to-remote-observation",
+      "from_domain": "content_owned",
+      "from_state": "RELEASE_READY",
+      "to_domain": "ref_observed_publication",
+      "to_state": "PUBLISHED_AT_REMOTE_MAIN",
+      "allowed_when": "git ls-remote origin refs/heads/main equals the expected candidate SHA and the allowed fresh clone HEAD equals that SHA",
+      "authority_class": "REMOTE_GIT_REF_OBSERVATION",
+      "creates_formal_commit": false
+    },
+    {
+      "transition_id": "remote-observation-to-receipt-witness",
+      "from_domain": "ref_observed_publication",
+      "from_state": "PUBLISHED_AT_REMOTE_MAIN",
+      "to_domain": "publication_witness",
+      "to_state": "ISSUED_EXACT_MATCH",
+      "allowed_when": "the observation record, Current semantic gates and fresh-clone evidence are written to the 1111 receipt branch",
+      "authority_class": "CONTROL_REPOSITORY_RECEIPT",
+      "creates_formal_commit": false
+    },
+    {
+      "transition_id": "witness-to-stale-observation",
+      "from_domain": "publication_witness",
+      "from_state": "ISSUED_EXACT_MATCH",
+      "to_domain": "publication_witness",
+      "to_state": "STALE_OBSERVATION",
+      "allowed_when": "a later remote-ref observation shows that refs/heads/main no longer equals the witnessed candidate SHA",
+      "authority_class": "REMOTE_GIT_REF_OBSERVATION",
+      "creates_formal_commit": false
+    }
+  ],
+  "forbidden_transitions": [
+    {
+      "transition_id": "static-content-to-published-assertion",
+      "reason": "A formal commit cannot make its own remote publication membership authoritative by embedding PUBLISHED content."
+    },
+    {
+      "transition_id": "static-content-to-published-sha",
+      "reason": "Embedding the commit's own final SHA would be self-referential because the SHA changes when the field is added."
+    },
+    {
+      "transition_id": "post-publication-to-new-formal-self-witness",
+      "reason": "Writing a post-publication PASS back into formal content creates a new tip that is not covered by that PASS."
+    },
+    {
+      "transition_id": "witness-to-owner-or-epistemic-acceptance",
+      "reason": "A Git publication witness is repository release evidence, not Owner acceptance or epistemic acceptance."
+    }
+  ],
+  "claim_ceiling": "This static model defines repository-local release-state authority boundaries; it does not prove publication, external truth, production readiness, Owner acceptance or epistemic acceptance by itself."
+}
