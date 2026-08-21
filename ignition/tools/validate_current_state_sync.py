@@ -30,6 +30,9 @@ FACTS_SCHEMA_PATH = ROOT / "schemas/architecture/current-facts.schema.json"
 FACTS_PATH = ROOT / "data/architecture/current-facts.json"
 FACTS_MARKDOWN_PATH = ROOT / "docs/architecture/current-facts.md"
 FIXTURE_PATH = ROOT / "data/operations/iterations/123/fixtures/current-state-sync-fixtures-r1.json"
+RELEASE_LIFECYCLE_PATH = ROOT / "data/operations/current-release-lifecycle-r1.json"
+CURRENT_SNAPSHOT_PATH = ROOT / "data/operations/current-snapshot-r1.json"
+PUBLICATION_SURFACES = ("ignition/AI-START-HERE.md", "ignition/AI-HANDOFF.md")
 ALLOWED_IMPACTS = {"NONE", "PRESENTATION_ONLY", "ARCHITECTURE_CHANGED"}
 HEX_SHA_RE = re.compile(r"^[0-9a-f]{40,64}$")
 
@@ -377,6 +380,54 @@ def validate_fixture_manifest() -> list[str]:
     return errors
 
 
+def validate_release_publication_contract(
+    lifecycle_record: dict[str, Any] | None = None,
+    snapshot: dict[str, Any] | None = None,
+    surface_texts: dict[str, str] | None = None,
+) -> list[str]:
+    """Integrate ref-derived publication authority into Current State sync."""
+
+    errors: list[str] = []
+    try:
+        from validate_current_release_lifecycle import validate as validate_lifecycle
+        from validate_release_state_model import validate as validate_state_model
+
+        errors.extend(validate_lifecycle(lifecycle_record))
+        errors.extend(validate_state_model())
+    except Exception as exc:  # pragma: no cover - fail-closed import boundary
+        errors.append(f"cannot validate release publication contract: {type(exc).__name__}")
+        return errors
+    lifecycle = lifecycle_record or load_json(RELEASE_LIFECYCLE_PATH)
+    current_snapshot = snapshot or load_json(CURRENT_SNAPSHOT_PATH)
+    if lifecycle.get("publication_authority") != "REMOTE_REF_OBSERVATION":
+        errors.append("Current lifecycle publication authority is not REMOTE_REF_OBSERVATION")
+    if lifecycle.get("embedded_publication_assertion") != "NONE":
+        errors.append("Current lifecycle embeds a publication assertion")
+    if current_snapshot.get("release_lifecycle", {}).get("required_publication_ref") != "refs/heads/main":
+        errors.append("Current Snapshot required publication ref is not refs/heads/main")
+    release = current_snapshot.get("release_lifecycle", {})
+    if release.get("publication_authority") != "REMOTE_REF_OBSERVATION":
+        errors.append("Current Snapshot publication authority is not REMOTE_REF_OBSERVATION")
+    if release.get("embedded_publication_assertion") != "NONE":
+        errors.append("Current Snapshot embeds a publication assertion")
+    for legacy_key in ("publication_state", "post_publication_remote_check_status"):
+        if legacy_key in lifecycle or legacy_key in release:
+            errors.append(f"Current publication projection contains legacy field {legacy_key}")
+    texts = surface_texts or {path: resolve_repo_path(path).read_text(encoding="utf-8") for path in PUBLICATION_SURFACES}
+    for path, text in texts.items():
+        block = re.search(r"<!-- CURRENT-SNAPSHOT:BEGIN profile=ai schema=current-snapshot-r1 -->\n.*?<!-- CURRENT-SNAPSHOT:END -->", text, re.DOTALL)
+        if not block:
+            errors.append(f"AI publication Current block missing: {path}")
+            continue
+        if "REMOTE_REF_OBSERVATION" not in block.group(0) or "refs/heads/main" not in block.group(0):
+            errors.append(f"AI publication Current block lacks ref-derived authority: {path}")
+        if "NOT_PUBLISHED" in block.group(0) or "release_publication_state" in block.group(0):
+            errors.append(f"AI publication Current block contains static publication state: {path}")
+        if "ref-derived verification" not in block.group(0):
+            errors.append(f"AI publication Current block lacks verification instruction: {path}")
+    return errors
+
+
 def run_check(receipt_path: Path | None = None, check_fixtures: bool = True) -> list[str]:
     errors: list[str] = []
     if not CONTRACT_PATH.is_file():
@@ -393,6 +444,7 @@ def run_check(receipt_path: Path | None = None, check_fixtures: bool = True) -> 
     except Exception as exc:  # pragma: no cover - fail-closed integration boundary
         errors.append(f"cannot validate current task lineage/status source: {exc}")
     errors.extend(validate_current_facts(contract))
+    errors.extend(validate_release_publication_contract())
     if receipt_path is None:
         receipts = discover_receipts()
         if not receipts:

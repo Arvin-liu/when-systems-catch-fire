@@ -206,7 +206,7 @@
     },
     {
       "path": "ignition/tools/validate_current_task_lineage.py",
-      "sha256": "5f00f8d6e97c88b1ad34c21f05f123cb8a849c5a5f830b21a19d080acc40e5c3"
+      "sha256": "8ca0d1a44716606cc62660c334fc4070b7e8323c85ec920078482f9eae4997fe"
     }
   ]
 }

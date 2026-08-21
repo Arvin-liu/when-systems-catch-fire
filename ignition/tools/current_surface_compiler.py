@@ -75,6 +75,8 @@ def render_block(snapshot: dict[str, Any], profile: str) -> str:
             f"- claim_ceiling: {snapshot['claim_ceiling']}",
             BLOCK_END,
         ]
+        if profile == "ai":
+            lines.insert(5, "- publication_instruction: run ref-derived verification against `refs/heads/main`; do not infer publication from embedded Current content。")
     return "\n".join(lines) + "\n"
 
 

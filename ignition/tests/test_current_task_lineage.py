@@ -63,6 +63,15 @@ class CurrentTaskLineageTests(unittest.TestCase):
         errors = validator.validate_history_classification(self.source, path, "CURRENT_SURFACE")
         self.assertTrue(any(error.startswith("TASK_LINEAGE_HISTORICAL_MISCLASSIFIED_CURRENT") for error in errors))
 
+    def test_publication_projection_is_ref_derived(self) -> None:
+        text = validator.resolve_repo_path("ignition/AI-START-HERE.md").read_text(encoding="utf-8")
+        self.assertEqual(validator.validate_publication_projection(text, "ignition/AI-START-HERE.md"), [])
+
+    def test_static_publication_state_is_rejected_from_current_block(self) -> None:
+        text = "<!-- CURRENT-SNAPSHOT:BEGIN profile=ai schema=current-snapshot-r1 -->\nREMOTE_REF_OBSERVATION refs/heads/main NOT_PUBLISHED\n<!-- CURRENT-SNAPSHOT:END -->"
+        errors = validator.validate_publication_projection(text, "ignition/AI-START-HERE.md")
+        self.assertTrue(any("STATIC_PUBLICATION_STATE" in error for error in errors))
+
 
 if __name__ == "__main__":
     unittest.main()

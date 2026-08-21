@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import sys
 from pathlib import Path
 from typing import Any
@@ -20,6 +21,10 @@ SCHEMA_PATH = ROOT / "schemas/operations/current-task-lineage-status-r1.schema.j
 IDENTITY_PATH = ROOT / "data/architecture/current-system-identity.json"
 FIXTURE_PATH = ROOT / "data/operations/iterations/129/fixtures/current-task-lineage-status-fixtures-r1.json"
 CURRENT_SURFACE_IDS = {"homepage-identity", "project-current-state", "ai-cold-start", "ai-agents-handoff", "machine-entry"}
+CURRENT_SNAPSHOT_BLOCK_RE = re.compile(
+    r"<!-- CURRENT-SNAPSHOT:BEGIN profile=(?:human|ai|machine) schema=current-snapshot-r1 -->\n.*?<!-- CURRENT-SNAPSHOT:END -->\n?",
+    re.DOTALL,
+)
 
 
 def load_json(path: Path) -> Any:
@@ -59,6 +64,25 @@ def validate_surface_text(source: dict[str, Any], text: str, label: str) -> list
     return errors
 
 
+def validate_publication_projection(text: str, label: str) -> list[str]:
+    """Keep task-lineage Current surfaces on ref-derived publication semantics."""
+
+    match = CURRENT_SNAPSHOT_BLOCK_RE.search(text)
+    if not match:
+        return [f"TASK_LINEAGE_PUBLICATION_BLOCK_MISSING:{label}"]
+    block = match.group(0)
+    errors: list[str] = []
+    if "REMOTE_REF_OBSERVATION" not in block:
+        errors.append(f"TASK_LINEAGE_PUBLICATION_AUTHORITY_MISSING:{label}")
+    if "refs/heads/main" not in block:
+        errors.append(f"TASK_LINEAGE_PUBLICATION_REF_MISSING:{label}")
+    if "NOT_PUBLISHED" in block or "release_publication_state" in block or "release_task_branch_projection" in block:
+        errors.append(f"TASK_LINEAGE_STATIC_PUBLICATION_STATE:{label}")
+    if label in {"ignition/AI-START-HERE.md", "ignition/AI-HANDOFF.md"} and "ref-derived verification" not in block:
+        errors.append(f"TASK_LINEAGE_AI_PUBLICATION_INSTRUCTION_MISSING:{label}")
+    return errors
+
+
 def validate_history_classification(source: dict[str, Any], path: str, classification: str) -> list[str]:
     if path in set(source["protected_historical_paths"]) and classification == "CURRENT_SURFACE":
         return [f"TASK_LINEAGE_HISTORICAL_MISCLASSIFIED_CURRENT:{path}"]
@@ -73,7 +97,10 @@ def validate_current_surfaces(source: dict[str, Any]) -> list[str]:
             if not path.is_file():
                 errors.append(f"TASK_LINEAGE_CURRENT_SURFACE_MISSING:{relative_path}")
                 continue
-            errors.extend(validate_surface_text(source, path.read_text(encoding="utf-8"), relative_path))
+            text = path.read_text(encoding="utf-8")
+            errors.extend(validate_surface_text(source, text, relative_path))
+            if "current-facts" not in relative_path:
+                errors.extend(validate_publication_projection(text, relative_path))
         except (OSError, ValueError) as exc:
             errors.append(f"TASK_LINEAGE_CURRENT_SURFACE_UNREADABLE:{relative_path}:{exc}")
 

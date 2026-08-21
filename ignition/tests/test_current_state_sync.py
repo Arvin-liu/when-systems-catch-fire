@@ -68,6 +68,15 @@ class CurrentStateSyncTests(unittest.TestCase):
         self.assertEqual(paths, sorted(paths))
         self.assertEqual(len(paths), len(set(paths)))
 
+    def test_release_publication_contract_is_integrated(self) -> None:
+        self.assertEqual(validator.validate_release_publication_contract(), [])
+
+    def test_release_publication_authority_drift_fails_closed(self) -> None:
+        snapshot = copy.deepcopy(validator.load_json(validator.CURRENT_SNAPSHOT_PATH))
+        snapshot["release_lifecycle"]["publication_authority"] = "FORMAL_COMMIT_CONTENT"
+        errors = validator.validate_release_publication_contract(snapshot=snapshot)
+        self.assertTrue(any("publication authority" in error for error in errors))
+
 
 if __name__ == "__main__":
     unittest.main()

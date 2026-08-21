@@ -22,11 +22,12 @@ Steering / Intent / Goal / Obligation R1 记录 Owner/提议来源、Goal 生命
 - current_identity_epoch: `os-control-plane-r4-steering-intent-r1`；system_role: `Ignition OS / orchestration-governance layer`。
 - current_task: `IGNITION-20260821-130`；status: `COMPLETED_WITH_CLASSIFIED_RESIDUALS`；terminal: `true`；latest_architecture_changing_task: `IGNITION-20260821-129`。
 - release_lifecycle: content phase `RELEASE_READY`；publication authority `REMOTE_REF_OBSERVATION`；embedded publication assertion `NONE`；required ref `refs/heads/main`；post-publication verification must observe that remote ref。
+- publication_instruction: run ref-derived verification against `refs/heads/main`; do not infer publication from embedded Current content。
 - current_method: `1.4.0` Current；current_map: `0.12.0` Current；historical_map: `0.11.0` Historical。
 - current_state_status: `CURRENT_WITH_OPEN_OBLIGATIONS`；EPISTEMICALLY_ACCEPTED=0；epistemic_acceptance: `0`；live_external_ceiling: `NOT_RUN_LIVE_EXTERNAL_INVOCATION`。
 - architecture_counts: `registry=94; visible_nodes=82; visible_edges=87`；active_overlays: `Durability / Lifecycle, Steering / Intent / Goal / Obligation, Structural Governance Surface`。
 - task_lineage: current `IGNITION-20260821-130` `COMPLETED_WITH_CLASSIFIED_RESIDUALS`；predecessor `HISTORICAL_UNEXECUTED_REBASED_INTO_127` / `REBASED_INTO_127`；successor `COMPLETED_WITH_CLASSIFIED_RESIDUALS`。
-- source: ignition/data/operations/current-snapshot-r1.json；source_digest: `b932017e0ad7e162b6619bd51487f8b1277e073c10694efeb4de2e9352e99299`。
+- source: ignition/data/operations/current-snapshot-r1.json；source_digest: `173d3739af9774a2d76055fd921c9da0903979d58d2ebc3dadb91374e59f9989`。
 - claim_ceiling: Deterministic repository-local Current projection only; no Owner authority, external truth, production readiness or epistemic upgrade.
 <!-- CURRENT-SNAPSHOT:END -->
 
