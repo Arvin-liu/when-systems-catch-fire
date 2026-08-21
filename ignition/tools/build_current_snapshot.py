@@ -86,8 +86,19 @@ def build_snapshot() -> dict[str, Any]:
     if facts.get("schema_version") != "current-facts-r1":
         raise ValueError("current-facts projection schema is not current-facts-r1")
     current_task = lineage["current_task"]
+    task_identity = lineage.get("task_identity")
+    if not task_identity:
+        raise ValueError("canonical task identity state is missing")
     if values["current_task_id"] != current_task["task_id"]:
         raise ValueError("registry current_task_id does not match task lineage source")
+    if values["current_formal_task"] != task_identity["current_formal_task"]:
+        raise ValueError("registry current_formal_task does not match task identity state")
+    if values["latest_architecture_changing_task"] != task_identity["latest_architecture_changing_task"]:
+        raise ValueError("registry architecture task does not match task identity state")
+    if values["release_candidate_task"] != lifecycle["task_id"]:
+        raise ValueError("registry release_candidate_task does not match lifecycle task")
+    if values["publication_witness_task"] != task_identity["publication_witness_task"]:
+        raise ValueError("registry publication_witness_task does not match task identity state")
     if values["current_map_version"] != map_layout["current_map_version"]:
         raise ValueError("registry current_map_version does not match map layout")
     if lifecycle["task_id"] != current_task["task_id"]:
@@ -147,7 +158,15 @@ def build_snapshot() -> dict[str, Any]:
         },
         "current_method_version": values["current_method_version"],
         "current_task": dict(current_task),
-        "latest_architecture_changing_task": lifecycle["latest_architecture_changing_task"],
+        "task_identity": {
+            "current_formal_task": values["current_formal_task"],
+            "latest_architecture_changing_task": values["latest_architecture_changing_task"],
+            "release_candidate_task": values["release_candidate_task"],
+            "publication_witness_task": values["publication_witness_task"],
+            "previous_canonical_current_task": task_identity["previous_canonical_current_task"],
+            "previous_formal_task": task_identity["previous_formal_task"]
+        },
+        "latest_architecture_changing_task": values["latest_architecture_changing_task"],
         "map": {
             "current_version": values["current_map_version"],
             "historical_versions": [values["historical_map_version"]],
@@ -167,6 +186,7 @@ def build_snapshot() -> dict[str, Any]:
             "claim_ceiling": lineage["claim_ceiling"]
         },
         "release_lifecycle": {
+            "task_id": lifecycle["task_id"],
             "content_phase": lifecycle["content_phase"],
             "required_publication_ref": lifecycle["required_publication_ref"],
             "publication_authority": lifecycle["publication_authority"],

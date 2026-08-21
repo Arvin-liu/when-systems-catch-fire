@@ -101,8 +101,8 @@
       "pilot_status": "OFFLINE_SYNTHETIC_ONLY"
     },
     "task_lineage": {
-      "current_task_id": "IGNITION-20260821-130",
-      "current_task_status": "COMPLETED_WITH_CLASSIFIED_RESIDUALS",
+      "current_task_id": "IGNITION-20260822-132",
+      "current_task_status": "IN_PROGRESS",
       "task125_canonical_status": "HISTORICAL_UNEXECUTED_REBASED_INTO_127",
       "task125_file_status": "HISTORICAL_UNEXECUTED",
       "task125_requirement_lineage_status": "REBASED_INTO_127",
@@ -154,7 +154,7 @@
     },
     {
       "path": "ignition/data/operations/current-task-lineage-status.json",
-      "sha256": "6c67082eb59d4e793da04d5bf7c061b346562951cdb13edb7a622811e35e9a5d"
+      "sha256": "80bb91a265e6fb3dd00f6311ab41a633cde664cd9e20b53fd5c9e142eabbbad2"
     },
     {
       "path": "ignition/data/operations/project-components.json",
@@ -198,7 +198,7 @@
     },
     {
       "path": "ignition/schemas/operations/current-task-lineage-status-r1.schema.json",
-      "sha256": "0b381f06153171101e57d61d6a97ab66b89563ebfb286ab59140bbf72cd73aa2"
+      "sha256": "a27c54af7daaac8504db7b562e622efe4aeade7291c0dbcd98c262c1b4d3e368"
     },
     {
       "path": "ignition/tools/generate_current_facts.py",
@@ -206,7 +206,7 @@
     },
     {
       "path": "ignition/tools/validate_current_task_lineage.py",
-      "sha256": "8ca0d1a44716606cc62660c334fc4070b7e8323c85ec920078482f9eae4997fe"
+      "sha256": "b0faa34ce0882d6b338a36db834252ed02eb1f1cd8d15009ae9506b91ba54f92"
     }
   ]
 }

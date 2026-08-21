@@ -15,15 +15,18 @@ from typing import Any
 HERE = Path(__file__).resolve()
 ROOT = HERE.parents[1]
 REPO_ROOT = ROOT.parent
-REPORT_PATH = ROOT / "data/operations/iterations/131/step03-deterministic-current-surface-r1.json"
-TASK_ID = "IGNITION-20260821-131"
-REPORT_SCHEMA = "ignition-131-step03-deterministic-current-surface-r1"
+REPORT_PATH = ROOT / "data/operations/iterations/132/step05-deterministic-current-surface-r1.json"
+TASK_ID = "IGNITION-20260822-132"
+REPORT_SCHEMA = "ignition-132-step05-deterministic-current-surface-r1"
 OUTPUTS = [
     "ignition/data/architecture/current-facts.json",
     "ignition/docs/architecture/current-facts.md",
     "ignition/data/operations/current-snapshot-r1.json",
     "ignition/data/operations/current-release-lifecycle-r1.json",
     "ignition/data/operations/current-task-lineage-status.json",
+    "ignition/data/operations/task-identity-model-r1.json",
+    "ignition/data/operations/current-volatile-fact-registry-r1.json",
+    "ignition/data/operations/iterations/132/execution-contract-r1.json",
     ".github/README.md",
     "ignition/docs/project-current-state.md",
     "ignition/AI-START-HERE.md",

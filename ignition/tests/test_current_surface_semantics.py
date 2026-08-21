@@ -30,6 +30,7 @@ class CurrentSurfaceSemanticGateTests(unittest.TestCase):
                     if case.get("tamper"):
                         text = text.replace("- current_map: `0.12.0` Current", case["tamper"])
                         text = re.sub(r"- current_task: `[^`]+`", case["tamper"], text, count=1)
+                        text = re.sub(r"- current_formal_task: `[^`]+`", case["tamper"], text, count=1)
                 issues = gate.validate_documents(
                     {"fixture.md": text or ""},
                     snapshot=self.snapshot,

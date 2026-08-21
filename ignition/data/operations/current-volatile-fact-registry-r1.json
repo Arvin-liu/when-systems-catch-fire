@@ -70,6 +70,58 @@
       "claim_ceiling": "Repository task lifecycle only; does not prove goal completion or external success."
     },
     {
+      "fact_id": "current_formal_task",
+      "canonical_source": {"path": "ignition/data/operations/current-task-lineage-status.json", "json_pointer": "/task_identity/current_formal_task", "source_kind": "canonical_task_identity_state"},
+      "value_type": "task_id",
+      "extractor": "json_pointer",
+      "allowed_current_renderings": ["generated_snapshot.task_identity.current_formal_task", "generated blocks may call it current formal task"],
+      "allowed_historical_usage": ["prior formal tasks must be explicitly marked Historical or predecessor"],
+      "required_current_surfaces": ["homepage-identity", "project-current-state", "ai-cold-start", "ai-agents-handoff", "machine-entry", "architecture", "state-changelog"],
+      "freshness_rule": "Must equal the current formal task in the canonical task identity state.",
+      "null_behavior": "FAIL",
+      "authority": "repository-local task identity contract",
+      "claim_ceiling": "Formal task lifecycle identity only; no Owner or epistemic authority."
+    },
+    {
+      "fact_id": "latest_architecture_changing_task",
+      "canonical_source": {"path": "ignition/data/operations/current-release-lifecycle-r1.json", "json_pointer": "/latest_architecture_changing_task", "source_kind": "canonical_release_lifecycle"},
+      "value_type": "task_id",
+      "extractor": "json_pointer",
+      "allowed_current_renderings": ["generated_snapshot.task_identity.latest_architecture_changing_task", "generated blocks may call it latest architecture-changing task"],
+      "allowed_historical_usage": ["prior architecture tasks may remain in dated historical records"],
+      "required_current_surfaces": ["homepage-identity", "project-current-state", "ai-cold-start", "ai-agents-handoff", "machine-entry", "architecture", "state-changelog"],
+      "freshness_rule": "Must remain separate from current_formal_task when the task is presentation-only.",
+      "null_behavior": "FAIL",
+      "authority": "repository-local architecture identity boundary",
+      "claim_ceiling": "Architecture-changing task reference only; no authority or external truth."
+    },
+    {
+      "fact_id": "release_candidate_task",
+      "canonical_source": {"path": "ignition/data/operations/iterations/132/execution-contract-r1.json", "json_pointer": "/identity_expectations/release_candidate_task", "source_kind": "canonical_execution_contract"},
+      "value_type": "task_id",
+      "extractor": "json_pointer",
+      "allowed_current_renderings": ["generated_snapshot.task_identity.release_candidate_task", "release-candidate identity gate"],
+      "allowed_historical_usage": ["historical contracts may be cited as predecessor provenance"],
+      "required_current_surfaces": ["homepage-identity", "project-current-state", "ai-cold-start", "ai-agents-handoff", "machine-entry", "architecture", "state-changelog"],
+      "freshness_rule": "Must match current_formal_task before RELEASE_READY.",
+      "null_behavior": "FAIL",
+      "authority": "repository-local execution contract",
+      "claim_ceiling": "Release-candidate identity only; no publication or Owner acceptance."
+    },
+    {
+      "fact_id": "publication_witness_task",
+      "canonical_source": {"path": "ignition/data/operations/current-task-lineage-status.json", "json_pointer": "/task_identity/publication_witness_task", "source_kind": "canonical_task_identity_state"},
+      "value_type": "task_id",
+      "extractor": "json_pointer",
+      "allowed_current_renderings": ["generated_snapshot.task_identity.publication_witness_task", "publication witness task binding"],
+      "allowed_historical_usage": ["prior witness tasks remain observation-time historical receipts"],
+      "required_current_surfaces": ["homepage-identity", "project-current-state", "ai-cold-start", "ai-agents-handoff", "machine-entry", "architecture", "state-changelog"],
+      "freshness_rule": "Must be checked against the control-repository witness at publication time; this source is not a publication assertion.",
+      "null_behavior": "FAIL",
+      "authority": "repository-local task identity contract pending control-repository observation",
+      "claim_ceiling": "Witness task role only; it grants no architecture or truth authority."
+    },
+    {
       "fact_id": "current_task_status",
       "canonical_source": {"path": "ignition/data/operations/current-task-lineage-status.json", "json_pointer": "/current_task/execution_status", "source_kind": "canonical_task_lineage"},
       "value_type": "enum_string",

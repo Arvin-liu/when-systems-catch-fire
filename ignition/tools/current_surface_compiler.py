@@ -45,6 +45,7 @@ def render_block(snapshot: dict[str, Any], profile: str) -> str:
         raise ValueError(f"unknown Current Snapshot profile: {profile}")
     identity = snapshot["identity"]
     task = snapshot["current_task"]
+    task_identity = snapshot["task_identity"]
     map_data = snapshot["map"]
     status = snapshot["engineering_status"]
     lineage = snapshot["task_lineage"]
@@ -53,7 +54,7 @@ def render_block(snapshot: dict[str, Any], profile: str) -> str:
     if profile == "machine":
         lines = [
             begin,
-            f"CURRENT_SNAPSHOT identity_epoch={identity['epoch']} system_role={json.dumps(identity['system_role'], ensure_ascii=False)} current_method_version={snapshot['current_method_version']} current_task_id={task['task_id']} current_task_status={task['execution_status']} current_task_terminal={str(task['terminal']).lower()} current_map_version={map_data['current_version']} historical_map_version={map_data['historical_versions'][0]} current_state_status={status['current_state_status']} epistemic_acceptance={status['epistemically_accepted']} live_external_ceiling={snapshot['live_external_ceiling']} release_content_phase={release['content_phase']} release_publication_authority={release['publication_authority']} release_embedded_publication_assertion={release['embedded_publication_assertion']} release_required_publication_ref={release['required_publication_ref']} release_post_publication_check_required={str(release['post_publication_check_required']).lower()} source_digest={snapshot['generated_from_source_digest']}",
+            f"CURRENT_SNAPSHOT identity_epoch={identity['epoch']} system_role={json.dumps(identity['system_role'], ensure_ascii=False)} current_method_version={snapshot['current_method_version']} current_task_id={task['task_id']} current_formal_task={task_identity['current_formal_task']} latest_architecture_changing_task={task_identity['latest_architecture_changing_task']} release_candidate_task={task_identity['release_candidate_task']} publication_witness_task={task_identity['publication_witness_task']} current_task_status={task['execution_status']} current_task_terminal={str(task['terminal']).lower()} current_map_version={map_data['current_version']} historical_map_version={map_data['historical_versions'][0]} current_state_status={status['current_state_status']} epistemic_acceptance={status['epistemically_accepted']} live_external_ceiling={snapshot['live_external_ceiling']} release_task_id={release['task_id']} release_content_phase={release['content_phase']} release_publication_authority={release['publication_authority']} release_embedded_publication_assertion={release['embedded_publication_assertion']} release_required_publication_ref={release['required_publication_ref']} release_post_publication_check_required={str(release['post_publication_check_required']).lower()} source_digest={snapshot['generated_from_source_digest']}",
             f"CURRENT_SNAPSHOT architecture_counts={json.dumps(snapshot['architecture_counts'], ensure_ascii=False, sort_keys=True)} overlays={json.dumps(_overlay_labels(snapshot), ensure_ascii=False)} lineage_current={lineage['current_task_id']} lineage_status={lineage['current_task_status']} lineage_predecessor_status={lineage['predecessor_status']} lineage_predecessor_requirement={lineage['predecessor_requirement_lineage']} lineage_successor_status={lineage['successor_status']}",
             f"CURRENT_SNAPSHOT claim_ceiling={json.dumps(snapshot['claim_ceiling'], ensure_ascii=False)}",
             BLOCK_END,
@@ -65,8 +66,8 @@ def render_block(snapshot: dict[str, Any], profile: str) -> str:
             begin,
             f"- {label}。",
             f"- current_identity_epoch: `{identity['epoch']}`；system_role: `{identity['system_role']}`。",
-            f"- current_task: `{task['task_id']}`；status: `{task['execution_status']}`；terminal: `{str(task['terminal']).lower()}`；latest_architecture_changing_task: `{snapshot['latest_architecture_changing_task']}`。",
-            f"- release_lifecycle: content phase `{release['content_phase']}`；publication authority `{release['publication_authority']}`；embedded publication assertion `{release['embedded_publication_assertion']}`；required ref `{release['required_publication_ref']}`；post-publication verification must observe that remote ref。",
+            f"- current_formal_task: `{task_identity['current_formal_task']}`；status: `{task['execution_status']}`；terminal: `{str(task['terminal']).lower()}`；latest_architecture_changing_task: `{task_identity['latest_architecture_changing_task']}`；publication_witness_task: `{task_identity['publication_witness_task']}`。",
+            f"- release_lifecycle: task `{release['task_id']}`；content phase `{release['content_phase']}`；publication authority `{release['publication_authority']}`；embedded publication assertion `{release['embedded_publication_assertion']}`；required ref `{release['required_publication_ref']}`；post-publication verification must observe that remote ref。",
             f"- current_method: `{snapshot['current_method_version']}` Current；current_map: `{map_data['current_version']}` Current；historical_map: `{map_data['historical_versions'][0]}` Historical。",
             f"- current_state_status: `{status['current_state_status']}`；EPISTEMICALLY_ACCEPTED={status['epistemically_accepted']}；epistemic_acceptance: `{status['epistemically_accepted']}`；live_external_ceiling: `{snapshot['live_external_ceiling']}`。",
             f"- architecture_counts: `{_count_summary(snapshot)}`；active_overlays: `{_overlay_labels(snapshot)}`。",
