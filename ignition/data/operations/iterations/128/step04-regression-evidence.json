@@ -1,0 +1,67 @@
+{
+  "schema_version": "ignition-128-step04-regression-r1",
+  "task_id": "IGNITION-20260821-128",
+  "baseline": "681f86d79b1112af3c07e0f8091335860c237ef2",
+  "current_task_status": "IN_PROGRESS",
+  "current_state_status": "CURRENT_WITH_OPEN_OBLIGATIONS",
+  "epistemically_accepted": 0,
+  "deterministic_rebuild": {
+    "passes": 2,
+    "json_sha256": "3fd2156c3117d384e39a92c5c0d28663c02ae457109b8c42c3351083431ab176",
+    "markdown_sha256": "c2cebc4b44b435b1766dfab76fe2147a70feb89b24aadfb8c2276d83ab6406cd",
+    "byte_identical": true,
+    "current_facts_check": "PASS"
+  },
+  "current_state_gates": {
+    "task_lineage_validator": "PASS",
+    "current_state_sync": "PASS",
+    "targeted_tests": "PASS_17",
+    "negative_fixtures": "PASS_4_REQUIRED_FAILURE_CLASSES",
+    "current_surface_status_tokens": "PASS",
+    "historical_records_preserved": "PASS"
+  },
+  "architecture_gates": {
+    "interactive_map_derived": "PASS_NODES_81_EDGES_85",
+    "map_geometry": "PASS_HEIGHT_2846_BLANK_REDUCTION_0.8741007194_CROSSING_184",
+    "map_fixtures": "PASS",
+    "current_map_version": "0.11.0",
+    "historical_map_version": "0.10.0",
+    "map_source_diff_in_task128": 0,
+    "agent_platform_human_surface": "PASS_SURFACES_18_REGISTRY_93_VISIBLE_81_EDGES_85"
+  },
+  "other_gates": {
+    "human_visibility": "PASS_25_SURFACES_20_TWO_CLICK",
+    "iteration_sync": "PASS_REPOSITORY_LOCAL_CONSISTENCY",
+    "generated_output_authority": "PASS_STRUCTURE_ONLY",
+    "privacy_local_path_secret_scan": "PASS_CHANGED_PATHS_ONLY",
+    "git_diff_check": "PASS"
+  },
+  "classified_preexisting_residuals": [
+    {
+      "gate": "human_surface_contract_and_front_door",
+      "status": "PREEXISTING_SOURCE_HASH_DRIFT",
+      "count": 10,
+      "paths": [
+        "ignition/docs/human/function-assets/entries/d127.md",
+        "ignition/docs/human/function-assets/entries/d182.md",
+        "ignition/docs/human/function-assets/entries/d190.md",
+        "ignition/docs/human/function-assets/entries/d260.md",
+        "ignition/docs/human/function-assets/entries/t2.md",
+        "ignition/docs/human/nonfunction-assets/entries/nfc-015cfd6ba387c9b1.md",
+        "ignition/docs/human/nonfunction-assets/entries/nfc-02f68962a6f13abc.md",
+        "ignition/docs/human/nonfunction-assets/entries/nfc-0331afe8d84f2538.md",
+        "ignition/docs/human/nonfunction-assets/entries/nfc-14866124cc1a2cae.md",
+        "ignition/docs/human/nonfunction-assets/entries/nfc-154bdc1ff37c47f6.md"
+      ],
+      "task128_changed_path_overlap": 0,
+      "disposition": "PRESERVED; unrelated Foundation/Knowledge/Human entry repair is out of scope."
+    },
+    {
+      "gate": "state_changelog",
+      "status": "PREEXISTING_HISTORICAL_ENTRY_17_MISSING_STALE_KNOWLEDGE",
+      "task128_latest_entry": "PASS_REQUIRED_FIELDS_AND_EXACT_BASE_SHA",
+      "disposition": "PRESERVED; historical entry was not rewritten."
+    }
+  ],
+  "claim_ceiling": "Repository-local semantic synchronization, deterministic projection, map integrity and classified regression evidence only; no production readiness, external truth, Owner acceptance or epistemic acceptance."
+}

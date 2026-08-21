@@ -172,7 +172,7 @@
 
 ## 2026-08-21 — IGNITION-20260821-128-CURRENT-STATE-SEMANTIC-CLOSURE — task-branch Current-State projection
 
-- main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; this is a Task 128 task-branch projection while the ordinary fast-forward and fresh-clone gates remain open.
+- main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; formal main baseline for this Task 128 branch is `681f86d79b1112af3c07e0f8091335860c237ef2`; this is a Task 128 task-branch projection while the ordinary fast-forward and fresh-clone gates remain open.
 - delta: added the canonical `CURRENT_TASK_LINEAGE_STATUS` source and aligned the Current Human/AI entry surfaces after Task 127 publication. The source distinguishes the unexecuted 125 file from its requirements rebased into 127 and records 127 as `COMPLETED_WITH_CLASSIFIED_RESIDUALS` with zero new regressions.
 - authority_changes: `data/operations/current-task-lineage-status.json` is authoritative only for task-lineage/lifecycle semantics; `current-system-identity.json` declares its reference, while `current-facts` remains a deterministic derived projection. No second system map or authority layer was added.
 - lineage_boundary: `IGNITION-125` file `HISTORICAL_UNEXECUTED`; valid requirements `REBASED_INTO_127`; canonical status `HISTORICAL_UNEXECUTED_REBASED_INTO_127`; `IGNITION-127` `COMPLETED_WITH_CLASSIFIED_RESIDUALS`. Historical Task 126 pending wording remains preserved in its original records and is not Current truth.

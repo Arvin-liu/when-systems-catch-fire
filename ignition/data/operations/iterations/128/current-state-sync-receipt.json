@@ -38,11 +38,11 @@
     "ignition/STATE-CHANGELOG.md",
     "ignition/data/operations/iterations/128/progress.jsonl",
     "ignition/data/operations/iterations/128/fixtures/current-task-lineage-status-fixtures-r1.json",
-    "ignition/tools/validate_current_task_lineage.py",
     "ignition/tools/validate_current_state_sync.py",
-    "ignition/tests/test_current_task_lineage.py"
+    "ignition/data/operations/iterations/128/step04-regression-evidence.json",
+    "ignition/reports/operations/ignition-128-step04-regression.md"
   ],
   "identity_contract_changed": true,
   "surface_sync_complete": false,
-  "claim_ceiling": "Step 01 canonical task-lineage/status source and derived facts only; Current Human/AI surfaces remain pending Step 02 and no authority, production, external-truth, Owner or epistemic upgrade is claimed."
+  "claim_ceiling": "Task 128 repository-local Current-State semantic synchronization, structured lineage validation and deterministic projections only; no authority, production, external-truth, Owner or epistemic upgrade is claimed."
 }
