@@ -1,0 +1,66 @@
+{
+  "schema_version": "ignition-132-step00-canonical-current-audit-r1",
+  "task_id": "IGNITION-20260822-132",
+  "step": "00",
+  "control": {
+    "repository": "Arvin-liu/1111",
+    "ref": "origin/relay/current",
+    "commit": "995a4bc560749c199be94f93f9b76417a4c967b1",
+    "command_path": "agent-commands/IGNITION-20260822-132-canonical-current-advancement-release-transaction-r1.md"
+  },
+  "formal_baseline": {
+    "repository": "Arvin-liu/when-systems-catch-fire",
+    "required_ref": "refs/heads/main",
+    "observed_main_sha": "e04752d20d071bac8f0c4a1e5cff20fb3004dae1",
+    "fresh_task_worktree_sha": "e04752d20d071bac8f0c4a1e5cff20fb3004dae1",
+    "task_branch": "codex/ignition-132-canonical-current-advancement-release-transaction-r1-20260822",
+    "task_worktree_clean_before_step": true
+  },
+  "prior_publication_evidence": {
+    "task_id": "IGNITION-20260821-131",
+    "receipt_repository": "Arvin-liu/1111",
+    "receipt_branch": "relay/receipts/ignition-131-release-witness-ref-derived-publication-r1-20260821",
+    "receipt_tip": "cfdbcb8d3eb8495596b39ab992a623033cf81c35",
+    "witness_path": "agent-results/IGNITION-20260821-131-publication-witness.json",
+    "witness_status": "ISSUED_EXACT_MATCH",
+    "candidate_sha": "e04752d20d071bac8f0c4a1e5cff20fb3004dae1",
+    "sha_binding": "PASS",
+    "task_id_binding": "NOT_CHECKED_BY_131_WITNESS"
+  },
+  "canonical_source_observation": {
+    "current_task_lineage_path": "ignition/data/operations/current-task-lineage-status.json",
+    "current_formal_task": "IGNITION-20260821-130",
+    "current_task_status": "COMPLETED_WITH_CLASSIFIED_RESIDUALS",
+    "current_release_lifecycle_path": "ignition/data/operations/current-release-lifecycle-r1.json",
+    "lifecycle_task_id": "IGNITION-20260821-130",
+    "current_snapshot_path": "ignition/data/operations/current-snapshot-r1.json",
+    "snapshot_task_id": "IGNITION-20260821-130",
+    "latest_architecture_changing_task": "IGNITION-20260821-129",
+    "current_map_version": "0.12.0",
+    "current_state_status": "CURRENT_WITH_OPEN_OBLIGATIONS",
+    "epistemically_accepted": 0
+  },
+  "reproduction": {
+    "current_task_lineage_validator": "PASS",
+    "current_release_lifecycle_validator": "PASS",
+    "current_snapshot_determinism": "PASS",
+    "current_surface_semantic_gate": "PASS",
+    "current_state_sync": "PASS",
+    "compiler_projection": "PASS_BUT_PROJECTS_IGNITION-20260821-130",
+    "prior_131_post_publication_validator": "PASS_18_CHECKS_AS_RECORDED_IN_1111_RECEIPT",
+    "observed_failure": "formal main and publication witness identify Task131 while canonical Current source and its projections identify Task130"
+  },
+  "why_existing_gates_did_not_block": [
+    "Lineage, lifecycle and snapshot validators only cross-check the canonical files with one another; they have no execution-contract task-id input.",
+    "The Current Surface Compiler correctly reads current-task-lineage-status.json and therefore reproduces the stale canonical task consistently.",
+    "The post-publication validator checks remote SHA/ref, lifecycle, snapshot, compiler, semantic and state-sync conditions, but does not accept or compare an expected formal task id.",
+    "The 131 publication witness schema binds candidate SHA to remote ref and fresh checkout, but does not bind witness task_id to the formal result or canonical Current task."
+  ],
+  "required_fix_boundary": {
+    "current_formal_task_after_132": "IGNITION-20260822-132",
+    "latest_architecture_changing_task_after_132": "IGNITION-20260821-129",
+    "publication_witness_task_after_132": "IGNITION-20260822-132",
+    "map_upgrade_required": false,
+    "claim_ceiling": "Repository-local reproduction of canonical Current and publication-witness binding behavior only; no Owner authority, external truth, production readiness or epistemic acceptance is inferred."
+  }
+}
