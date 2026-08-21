@@ -1,0 +1,28 @@
+{
+  "schema_version": "release-transaction-protocol-r2",
+  "contract_id": "RELEASE_TRANSACTION_PROTOCOL_R2",
+  "formal_repository": "Arvin-liu/when-systems-catch-fire",
+  "receipt_repository": "Arvin-liu/1111",
+  "steps": [
+    {"sequence": 1, "step_id": "candidate", "action": "Complete the formal task candidate and its content-owned terminal/release-ready gates.", "authority": "FORMAL_COMMIT_CONTENT", "remote_observation_required": false, "creates_formal_commit": true, "writes_receipt": false},
+    {"sequence": 2, "step_id": "task-branch-remote-check", "action": "Push the task branch and verify its exact remote SHA.", "authority": "REMOTE_GIT_REF_OBSERVATION", "remote_observation_required": true, "creates_formal_commit": false, "writes_receipt": false},
+    {"sequence": 3, "step_id": "pre-publication-gates", "action": "Run deterministic Current, semantic, lifecycle, lineage and scoped regression gates before main publication.", "authority": "FORMAL_REPOSITORY_VALIDATION", "remote_observation_required": false, "creates_formal_commit": false, "writes_receipt": false},
+    {"sequence": 4, "step_id": "candidate-ref-simulation", "action": "Optionally exercise ref-check logic against the candidate without claiming formal main publication.", "authority": "TEST_FIXTURE_ONLY", "remote_observation_required": true, "creates_formal_commit": false, "writes_receipt": false},
+    {"sequence": 5, "step_id": "ordinary-main-fast-forward", "action": "Fast-forward formal main to the exact candidate SHA.", "authority": "FORMAL_REPOSITORY_PUBLICATION", "remote_observation_required": true, "creates_formal_commit": false, "writes_receipt": false},
+    {"sequence": 6, "step_id": "fresh-main-checkout", "action": "Fresh-fetch and create a clean checkout of the published formal main.", "authority": "REMOTE_GIT_REF_OBSERVATION", "remote_observation_required": true, "creates_formal_commit": false, "writes_receipt": false},
+    {"sequence": 7, "step_id": "remote-ref-witness", "action": "Observe git ls-remote origin refs/heads/main and require candidate == remote == fresh clone HEAD.", "authority": "REMOTE_GIT_REF_OBSERVATION", "remote_observation_required": true, "creates_formal_commit": false, "writes_receipt": false},
+    {"sequence": 8, "step_id": "current-semantic-recheck", "action": "Run the post-publication validator and Current semantic gates on the fresh main checkout.", "authority": "FORMAL_REPOSITORY_VALIDATION", "remote_observation_required": true, "creates_formal_commit": false, "writes_receipt": false},
+    {"sequence": 9, "step_id": "receipt-1111-witness", "action": "Write the publication witness, machine receipt and human result to the 1111 receipt branch.", "authority": "CONTROL_REPOSITORY_RECEIPT", "remote_observation_required": true, "creates_formal_commit": false, "writes_receipt": true},
+    {"sequence": 10, "step_id": "final-marker", "action": "Return 1111_RELAY_UPDATED only after formal main and the receipt witness are independently verified.", "authority": "RELAY_PROTOCOL", "remote_observation_required": true, "creates_formal_commit": false, "writes_receipt": true}
+  ],
+  "main_mutation_policy": {"allowed": true, "mode": "ORDINARY_FAST_FORWARD_ONLY", "force_push": false, "history_rewrite": false, "squash": false},
+  "failure_states": ["PUBLISHED_UNVERIFIED", "RELEASE_CLOSURE_BLOCKED"],
+  "failure_policy": [
+    "Do not report success when remote-ref or Current semantic witness fails.",
+    "Do not rewind formal main or force push to hide a failed witness.",
+    "Allow only a new ordinary repair commit or explicit Owner decision after a failed publication witness.",
+    "A receipt write must not create a new formal commit or change the witnessed formal main SHA."
+  ],
+  "success_marker": "1111_RELAY_UPDATED",
+  "claim_ceiling": "This protocol governs repository-local release sequencing and evidence; it does not establish external truth, production readiness, Owner acceptance or epistemic acceptance."
+}

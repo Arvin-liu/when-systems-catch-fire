@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ignition/operations/release-transaction-protocol-r2.schema.json",
+  "title": "Release transaction protocol R2",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "contract_id", "formal_repository", "receipt_repository", "steps", "main_mutation_policy", "failure_states", "failure_policy", "success_marker", "claim_ceiling"],
+  "properties": {
+    "schema_version": {"const": "release-transaction-protocol-r2"},
+    "contract_id": {"const": "RELEASE_TRANSACTION_PROTOCOL_R2"},
+    "formal_repository": {"const": "Arvin-liu/when-systems-catch-fire"},
+    "receipt_repository": {"const": "Arvin-liu/1111"},
+    "steps": {"type": "array", "minItems": 10, "uniqueItems": true, "items": {"$ref": "#/$defs/step"}},
+    "main_mutation_policy": {"$ref": "#/$defs/mainMutation"},
+    "failure_states": {"type": "array", "uniqueItems": true, "items": {"enum": ["PUBLISHED_UNVERIFIED", "RELEASE_CLOSURE_BLOCKED"]}},
+    "failure_policy": {"type": "array", "minItems": 3, "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+    "success_marker": {"const": "1111_RELAY_UPDATED"},
+    "claim_ceiling": {"type": "string", "minLength": 1}
+  },
+  "$defs": {
+    "step": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["sequence", "step_id", "action", "authority", "remote_observation_required", "creates_formal_commit", "writes_receipt"],
+      "properties": {
+        "sequence": {"type": "integer", "minimum": 1},
+        "step_id": {"type": "string", "pattern": "^[a-z][a-z0-9-]+$"},
+        "action": {"type": "string", "minLength": 1},
+        "authority": {"type": "string", "minLength": 1},
+        "remote_observation_required": {"type": "boolean"},
+        "creates_formal_commit": {"type": "boolean"},
+        "writes_receipt": {"type": "boolean"}
+      }
+    },
+    "mainMutation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["allowed", "mode", "force_push", "history_rewrite", "squash"],
+      "properties": {
+        "allowed": {"const": true},
+        "mode": {"const": "ORDINARY_FAST_FORWARD_ONLY"},
+        "force_push": {"const": false},
+        "history_rewrite": {"const": false},
+        "squash": {"const": false}
+      }
+    }
+  }
+}
