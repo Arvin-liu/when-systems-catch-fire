@@ -149,7 +149,7 @@
     },
     {
       "fact_id": "current_lineage_summary",
-      "canonical_source": {"path": "ignition/data/operations/current-task-lineage-status.json", "json_pointer": "/", "source_kind": "canonical_task_lineage"},
+      "canonical_source": {"path": "ignition/data/operations/current-task-lineage-status.json", "json_pointer": "", "source_kind": "canonical_task_lineage"},
       "value_type": "object",
       "extractor": "task_lineage_summary",
       "allowed_current_renderings": ["generated_snapshot.task_lineage"],

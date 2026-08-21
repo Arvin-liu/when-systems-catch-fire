@@ -1,0 +1,91 @@
+{
+  "active_architecture_overlays": [
+    {
+      "authority": "repository-local continuity and recovery projection",
+      "label": "Durability / Lifecycle",
+      "overlay_id": "durability-lifecycle",
+      "source_paths": [
+        "ignition/data/operations/durability",
+        "ignition/docs/architecture/os-control-plane-r2.md"
+      ],
+      "status": "ACTIVE_BOUNDED_OVERLAY"
+    },
+    {
+      "authority": "repository-local steering and explainability projection",
+      "label": "Steering / Intent / Goal / Obligation",
+      "overlay_id": "steering-intent",
+      "source_paths": [
+        "ignition/data/operations/steering/current-state-r1.json",
+        "ignition/docs/architecture/os-steering-intent-r1.md"
+      ],
+      "status": "ACTIVE_BOUNDED_OVERLAY"
+    },
+    {
+      "authority": "advisory-only reading and experiment context",
+      "label": "Structural Governance Surface",
+      "overlay_id": "structural-governance",
+      "source_paths": [
+        "ignition/data/epistemic-governance/soft-governance-non-authority-invariant-r0.json",
+        "ignition/docs/architecture/esi-human-surface-r0.md"
+      ],
+      "status": "ACTIVE_ADVISORY_ONLY"
+    }
+  ],
+  "architecture_counts": {
+    "current_map_version": "0.12.0",
+    "hidden_components": 12,
+    "historical_map_version": "0.11.0",
+    "layout_version": "2.0.0",
+    "registry_components": 94,
+    "semantic_trunk_route_steps": 6,
+    "semantic_trunk_version": "semantic-trunk-r1",
+    "typed_topology_relations": 128,
+    "visible_map_nodes": 82,
+    "visible_typed_edges": 87
+  },
+  "claim_ceiling": "Deterministic repository-local Current projection only; no Owner authority, external truth, production readiness or epistemic upgrade.",
+  "contract_id": "CURRENT_SURFACE_NO_SPLIT_BRAIN_INVARIANT",
+  "current_task": {
+    "execution_status": "COMPLETED_WITH_CLASSIFIED_RESIDUALS",
+    "identity_impact": "ARCHITECTURE_CHANGED",
+    "scope": "OS Steering, Intent, Goal and Obligation architecture after Durability / Lifecycle R3",
+    "task_id": "IGNITION-20260821-129",
+    "terminal": true
+  },
+  "engineering_status": {
+    "current_state_status": "CURRENT_WITH_OPEN_OBLIGATIONS",
+    "epistemically_accepted": 0
+  },
+  "generated_from_source_digest": "c8977851e874ec5c5e17d0f0b867e077e8c8cc7c19848eee8cd656024b25425e",
+  "identity": {
+    "driver_role": "driver",
+    "epoch": "os-control-plane-r4-steering-intent-r1",
+    "external_executor_role": "replaceable executors",
+    "reference_executor_role": "REFERENCE_EXECUTOR / CONFORMANCE_EXECUTOR / FALLBACK_MINIMAL",
+    "system_role": "Ignition OS / orchestration-governance layer"
+  },
+  "latest_architecture_changing_task": "IGNITION-20260821-129",
+  "live_external_ceiling": "NOT_RUN_LIVE_EXTERNAL_INVOCATION",
+  "map": {
+    "current_version": "0.12.0",
+    "historical_versions": [
+      "0.11.0"
+    ],
+    "projection_status": "CURRENT_DERIVED_PROJECTION",
+    "source_path": "ignition/data/architecture/interactive-system-map-layout.json"
+  },
+  "schema_version": "current-snapshot-r1",
+  "source_policy": {
+    "commit_sha_policy": "Exact Git SHA is intentionally omitted; source digest is deterministic and release SHA belongs to the receipt.",
+    "kind": "DETERMINISTIC_CANONICAL_SOURCE_PROJECTION",
+    "registry_path": "ignition/data/operations/current-volatile-fact-registry-r1.json"
+  },
+  "task_lineage": {
+    "claim_ceiling": "Canonical repository-local task lineage and status semantics only; this record does not grant authority, prove external truth, establish production readiness, or set epistemic acceptance.",
+    "current_task_id": "IGNITION-20260821-129",
+    "current_task_status": "COMPLETED_WITH_CLASSIFIED_RESIDUALS",
+    "predecessor_requirement_lineage": "REBASED_INTO_127",
+    "predecessor_status": "HISTORICAL_UNEXECUTED_REBASED_INTO_127",
+    "successor_status": "COMPLETED_WITH_CLASSIFIED_RESIDUALS"
+  }
+}
