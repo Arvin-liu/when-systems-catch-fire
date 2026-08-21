@@ -2,12 +2,13 @@
 <!-- CURRENT-SNAPSHOT:BEGIN profile=ai schema=current-snapshot-r1 -->
 - Current Snapshot（generated; read this block before interpreting prose）。
 - current_identity_epoch: `os-control-plane-r4-steering-intent-r1`；system_role: `Ignition OS / orchestration-governance layer`。
-- current_task: `IGNITION-20260821-129`；status: `COMPLETED_WITH_CLASSIFIED_RESIDUALS`；terminal: `true`；latest_architecture_changing_task: `IGNITION-20260821-129`。
+- current_task: `IGNITION-20260821-130`；status: `IN_PROGRESS`；terminal: `false`；latest_architecture_changing_task: `IGNITION-20260821-129`。
+- release_lifecycle: phase `RUNNING`；publication `NOT_PUBLISHED`；projection `TASK_BRANCH_ONLY`。
 - current_method: `1.4.0` Current；current_map: `0.12.0` Current；historical_map: `0.11.0` Historical。
 - current_state_status: `CURRENT_WITH_OPEN_OBLIGATIONS`；epistemic_acceptance: `0`；live_external_ceiling: `NOT_RUN_LIVE_EXTERNAL_INVOCATION`。
 - architecture_counts: `registry=94; visible_nodes=82; visible_edges=87`；active_overlays: `Durability / Lifecycle, Steering / Intent / Goal / Obligation, Structural Governance Surface`。
-- task_lineage: current `IGNITION-20260821-129` `COMPLETED_WITH_CLASSIFIED_RESIDUALS`；predecessor `HISTORICAL_UNEXECUTED_REBASED_INTO_127` / `REBASED_INTO_127`；successor `COMPLETED_WITH_CLASSIFIED_RESIDUALS`。
-- source: ignition/data/operations/current-snapshot-r1.json；source_digest: `b5d7e38163815c3749f3a932aa9601234fdddfe8a5c56ff474bd1ea94da46598`。
+- task_lineage: current `IGNITION-20260821-130` `IN_PROGRESS`；predecessor `HISTORICAL_UNEXECUTED_REBASED_INTO_127` / `REBASED_INTO_127`；successor `COMPLETED_WITH_CLASSIFIED_RESIDUALS`。
+- source: ignition/data/operations/current-snapshot-r1.json；source_digest: `23c14e9bb259783557e090edbb42b66ff5ce42889318059800975a4c9bd32d92`。
 - claim_ceiling: Deterministic repository-local Current projection only; no Owner authority, external truth, production readiness or epistemic upgrade.
 <!-- CURRENT-SNAPSHOT:END -->
 
@@ -212,3 +213,14 @@
 - obligations: live external invocation remains bounded/possibly skipped; production durability, exact-once external execution, real-world completion, external validity, Owner acceptance, independent replication and epistemic acceptance remain open. Step 21 still requires fresh-clone validation, ordinary fast-forward and the independent 1111 receipt.
 - stale_knowledge: historical Task 126/127/128 records retain their original wording as provenance and are not rewritten; current map/counts/status must be read from the new canonical identity, task-lineage source and deterministic Current Facts projection.
 - next_read: read [`current-system-identity.json`](./data/architecture/current-system-identity.json), [`current-facts.md`](./docs/architecture/current-facts.md), [`os-steering-intent-r1.md`](./docs/architecture/os-steering-intent-r1.md), [`Task 129 progress`](./data/operations/iterations/129/progress.jsonl), then complete Step 21 without treating this task-branch projection as a formal main or 1111 release receipt.
+
+## 2026-08-21 — IGNITION-20260821-130-CURRENT-SURFACE-COMPILER-R1 — task-branch Current-State projection
+
+- main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; formal `main` remains the Task 130 baseline until the required terminal closure, fresh-remote Current self-check, ordinary fast-forward and independent 1111 receipt. This append-only entry is task-branch evidence, not a claim that formal `main` has moved.
+- delta: registers the Current Surface Compiler, single-source volatile-fact registry, deterministic snapshot, typed semantic gate, Historical/Example/Quoted classification and release lifecycle as repository-local Current projections. The compiler owns the generated blocks across the Human/AI/machine entry surfaces; it does not create a second map, identity epoch or authority layer.
+- authority_changes: [`current-volatile-fact-registry-r1.json`](./data/operations/current-volatile-fact-registry-r1.json), [`current-snapshot-r1.json`](./data/operations/current-snapshot-r1.json), [`current-surface-block-contract-r1.json`](./data/operations/current-surface-block-contract-r1.json), [`current-release-lifecycle-r1.json`](./data/operations/current-release-lifecycle-r1.json), semantic fixtures and the seven generated Current surfaces are projections over their declared canonical sources.
+- lineage_boundary: `IGNITION-125` file remains `HISTORICAL_UNEXECUTED`; valid requirements remain `REBASED_INTO_127`; canonical status remains `HISTORICAL_UNEXECUTED_REBASED_INTO_127`; `IGNITION-127` remains `COMPLETED_WITH_CLASSIFIED_RESIDUALS`; current `IGNITION-20260821-130` is `IN_PROGRESS` and `PRESENTATION_ONLY` while its release lifecycle is `RUNNING` and `NOT_PUBLISHED`.
+- epistemic_state: `CURRENT_WITH_OPEN_OBLIGATIONS` and `EPISTEMICALLY_ACCEPTED=0` remain unchanged. Deterministic rendering, semantic negative fixtures, lifecycle checks, Git evidence and later fresh-remote self-check are repository-local synchronization evidence only; they do not establish external truth, production readiness, Owner acceptance, live executor completion or epistemic acceptance.
+- obligations: Step 09–13 must retain the 11 pre-existing Human Surface source-hash drifts, historical projection residuals and long-running validator residuals as classified evidence; complete terminal lifecycle, deterministic two-pass closure, fresh-clone replay, formal main publication and the independent 1111 receipt. Live external invocation remains bounded and may remain `NOT_RUN_LIVE_EXTERNAL_INVOCATION`.
+- stale_knowledge: Task 129 remains the latest architecture-changing task; historical Task 126/127/128/129 entries retain provenance and do not override the Task 130 generated Current block. No map version or identity epoch upgrade is implied by this presentation-only compiler.
+- next_read: read [`current-release-lifecycle-r1.json`](./data/operations/current-release-lifecycle-r1.json), [`current-snapshot-r1.json`](./data/operations/current-snapshot-r1.json), [`step08-semantic-gate-report.json`](./data/operations/iterations/130/step08-semantic-gate-report.json) and the Task 130 result/receipt after release; do not treat this projection as formal main or 1111 publication evidence.

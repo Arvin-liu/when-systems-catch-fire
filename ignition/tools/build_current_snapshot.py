@@ -18,6 +18,7 @@ REGISTRY_PATH = ROOT / "data/operations/current-volatile-fact-registry-r1.json"
 SCHEMA_PATH = ROOT / "schemas/operations/current-snapshot-r1.schema.json"
 SNAPSHOT_PATH = ROOT / "data/operations/current-snapshot-r1.json"
 CURRENT_FACTS_PATH = ROOT / "data/architecture/current-facts.json"
+LIFECYCLE_PATH = ROOT / "data/operations/current-release-lifecycle-r1.json"
 
 
 def load_json(path: Path) -> Any:
@@ -59,7 +60,7 @@ def registry_values(registry: dict[str, Any]) -> tuple[dict[str, Any], dict[str,
 
 
 def source_paths(registry: dict[str, Any]) -> list[Path]:
-    paths = {REGISTRY_PATH, SCHEMA_PATH, HERE, CURRENT_FACTS_PATH}
+    paths = {REGISTRY_PATH, SCHEMA_PATH, HERE, CURRENT_FACTS_PATH, LIFECYCLE_PATH}
     paths.update(resolve(fact["canonical_source"]["path"]) for fact in registry["facts"])
     return sorted(paths, key=relative)
 
@@ -81,6 +82,7 @@ def build_snapshot() -> dict[str, Any]:
     lineage = load_json(resolve("ignition/data/operations/current-task-lineage-status.json"))
     facts = load_json(CURRENT_FACTS_PATH)
     map_layout = load_json(resolve("ignition/data/architecture/interactive-system-map-layout.json"))
+    lifecycle = load_json(LIFECYCLE_PATH)
     if facts.get("schema_version") != "current-facts-r1":
         raise ValueError("current-facts projection schema is not current-facts-r1")
     current_task = lineage["current_task"]
@@ -88,6 +90,8 @@ def build_snapshot() -> dict[str, Any]:
         raise ValueError("registry current_task_id does not match task lineage source")
     if values["current_map_version"] != map_layout["current_map_version"]:
         raise ValueError("registry current_map_version does not match map layout")
+    if lifecycle["task_id"] != current_task["task_id"]:
+        raise ValueError("release lifecycle task_id does not match current task")
 
     spine = identity["current_architecture_identity"]["internal_control_spine"]
     control_text = identity["current_architecture_identity"]["control_plane_role"]
@@ -143,7 +147,7 @@ def build_snapshot() -> dict[str, Any]:
         },
         "current_method_version": values["current_method_version"],
         "current_task": dict(current_task),
-        "latest_architecture_changing_task": current_task["task_id"] if current_task["identity_impact"] == "ARCHITECTURE_CHANGED" else current_task["task_id"],
+        "latest_architecture_changing_task": lifecycle["latest_architecture_changing_task"],
         "map": {
             "current_version": values["current_map_version"],
             "historical_versions": [values["historical_map_version"]],
@@ -161,6 +165,11 @@ def build_snapshot() -> dict[str, Any]:
             "predecessor_requirement_lineage": predecessor.get("requirement_lineage_status", "UNKNOWN"),
             "successor_status": successor.get("execution_status", "UNKNOWN"),
             "claim_ceiling": lineage["claim_ceiling"]
+        },
+        "release_lifecycle": {
+            "phase": lifecycle["current_phase"],
+            "task_branch_projection": lifecycle["task_branch_projection"],
+            "publication_state": lifecycle["publication_state"]
         },
         "active_architecture_overlays": overlays,
         "live_external_ceiling": facts["facts"]["federation"]["live_invocation_ceiling"],

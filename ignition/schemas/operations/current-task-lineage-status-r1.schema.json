@@ -21,12 +21,12 @@
       "type": "object",
       "additionalProperties": false,
       "required": ["task_id", "scope", "execution_status", "terminal", "identity_impact"],
-      "properties": {
-        "task_id": {"const": "IGNITION-20260821-129"},
+            "properties": {
+                "task_id": {"type": "string", "pattern": "^IGNITION-[0-9A-Z-]+$"},
         "scope": {"$ref": "#/$defs/nonblank"},
         "execution_status": {"enum": ["IN_PROGRESS", "COMPLETED_WITH_CLASSIFIED_RESIDUALS"]},
         "terminal": {"type": "boolean"},
-        "identity_impact": {"const": "ARCHITECTURE_CHANGED"}
+                "identity_impact": {"enum": ["NONE", "PRESENTATION_ONLY", "ARCHITECTURE_CHANGED"]}
       }
     },
     "currentState": {

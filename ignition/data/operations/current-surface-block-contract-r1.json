@@ -26,6 +26,7 @@
     "current_architecture_counts",
     "active_architecture_overlays",
     "current_lineage_summary",
+    "release_lifecycle",
     "claim_ceiling",
     "generated_from_source_digest"
   ],

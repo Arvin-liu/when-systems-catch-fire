@@ -48,11 +48,12 @@ def render_block(snapshot: dict[str, Any], profile: str) -> str:
     map_data = snapshot["map"]
     status = snapshot["engineering_status"]
     lineage = snapshot["task_lineage"]
+    release = snapshot["release_lifecycle"]
     begin = f"<!-- CURRENT-SNAPSHOT:BEGIN profile={profile} schema=current-snapshot-r1 -->"
     if profile == "machine":
         lines = [
             begin,
-            f"CURRENT_SNAPSHOT identity_epoch={identity['epoch']} system_role={json.dumps(identity['system_role'], ensure_ascii=False)} current_method_version={snapshot['current_method_version']} current_task_id={task['task_id']} current_task_status={task['execution_status']} current_task_terminal={str(task['terminal']).lower()} current_map_version={map_data['current_version']} historical_map_version={map_data['historical_versions'][0]} current_state_status={status['current_state_status']} epistemic_acceptance={status['epistemically_accepted']} live_external_ceiling={snapshot['live_external_ceiling']} source_digest={snapshot['generated_from_source_digest']}",
+            f"CURRENT_SNAPSHOT identity_epoch={identity['epoch']} system_role={json.dumps(identity['system_role'], ensure_ascii=False)} current_method_version={snapshot['current_method_version']} current_task_id={task['task_id']} current_task_status={task['execution_status']} current_task_terminal={str(task['terminal']).lower()} current_map_version={map_data['current_version']} historical_map_version={map_data['historical_versions'][0]} current_state_status={status['current_state_status']} epistemic_acceptance={status['epistemically_accepted']} live_external_ceiling={snapshot['live_external_ceiling']} release_phase={release['phase']} release_publication_state={release['publication_state']} release_task_branch_projection={release['task_branch_projection']} source_digest={snapshot['generated_from_source_digest']}",
             f"CURRENT_SNAPSHOT architecture_counts={json.dumps(snapshot['architecture_counts'], ensure_ascii=False, sort_keys=True)} overlays={json.dumps(_overlay_labels(snapshot), ensure_ascii=False)} lineage_current={lineage['current_task_id']} lineage_status={lineage['current_task_status']} lineage_predecessor_status={lineage['predecessor_status']} lineage_predecessor_requirement={lineage['predecessor_requirement_lineage']} lineage_successor_status={lineage['successor_status']}",
             f"CURRENT_SNAPSHOT claim_ceiling={json.dumps(snapshot['claim_ceiling'], ensure_ascii=False)}",
             BLOCK_END,
@@ -65,6 +66,7 @@ def render_block(snapshot: dict[str, Any], profile: str) -> str:
             f"- {label}。",
             f"- current_identity_epoch: `{identity['epoch']}`；system_role: `{identity['system_role']}`。",
             f"- current_task: `{task['task_id']}`；status: `{task['execution_status']}`；terminal: `{str(task['terminal']).lower()}`；latest_architecture_changing_task: `{snapshot['latest_architecture_changing_task']}`。",
+            f"- release_lifecycle: phase `{release['phase']}`；publication `{release['publication_state']}`；projection `{release['task_branch_projection']}`。",
             f"- current_method: `{snapshot['current_method_version']}` Current；current_map: `{map_data['current_version']}` Current；historical_map: `{map_data['historical_versions'][0]}` Historical。",
             f"- current_state_status: `{status['current_state_status']}`；epistemic_acceptance: `{status['epistemically_accepted']}`；live_external_ceiling: `{snapshot['live_external_ceiling']}`。",
             f"- architecture_counts: `{_count_summary(snapshot)}`；active_overlays: `{_overlay_labels(snapshot)}`。",

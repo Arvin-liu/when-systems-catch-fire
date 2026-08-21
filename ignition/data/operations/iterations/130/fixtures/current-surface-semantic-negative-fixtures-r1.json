@@ -42,7 +42,7 @@
     {
       "id": "publication-status-stale-after-lifecycle-change",
       "generated_profile": "human",
-      "tamper": "- current_task: `IGNITION-20260821-130`",
+      "tamper": "- current_task: `IGNITION-20260821-129`",
       "expected_valid": false
     },
     {

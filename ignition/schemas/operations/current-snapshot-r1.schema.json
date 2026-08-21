@@ -4,7 +4,7 @@
   "title": "Ignition deterministic Current Surface snapshot",
   "type": "object",
   "additionalProperties": false,
-  "required": ["schema_version", "contract_id", "source_policy", "generated_from_source_digest", "identity", "current_method_version", "current_task", "latest_architecture_changing_task", "map", "engineering_status", "task_lineage", "active_architecture_overlays", "live_external_ceiling", "architecture_counts", "claim_ceiling"],
+  "required": ["schema_version", "contract_id", "source_policy", "generated_from_source_digest", "identity", "current_method_version", "current_task", "latest_architecture_changing_task", "map", "engineering_status", "task_lineage", "release_lifecycle", "active_architecture_overlays", "live_external_ceiling", "architecture_counts", "claim_ceiling"],
   "properties": {
     "schema_version": {"const": "current-snapshot-r1"},
     "contract_id": {"const": "CURRENT_SURFACE_NO_SPLIT_BRAIN_INVARIANT"},

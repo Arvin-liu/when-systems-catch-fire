@@ -2,7 +2,7 @@
   "schema_version": "current-system-identity-r1",
   "contract_id": "CURRENT_STATE_SYNC_INVARIANT",
   "identity_epoch": "os-control-plane-r4-steering-intent-r1",
-  "current_iteration_boundary": 129,
+  "current_iteration_boundary": 130,
   "current_state_status": "CURRENT_WITH_OPEN_OBLIGATIONS",
   "epistemically_accepted": 0,
   "current_architecture_identity": {

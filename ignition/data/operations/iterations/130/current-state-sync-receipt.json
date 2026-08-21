@@ -1,0 +1,48 @@
+{
+    "schema_version": "current-state-sync-receipt-r1",
+    "task_id": "IGNITION-20260821-130",
+    "architecture_identity_impact": "PRESENTATION_ONLY",
+    "identity_contract_path": "ignition/data/architecture/current-system-identity.json",
+    "identity_epoch": "os-control-plane-r4-steering-intent-r1",
+    "current_iteration_boundary": 130,
+    "surface_decisions": [
+        {"surface_id": "homepage-identity", "path": ".github/README.md", "decision": "CHANGE", "reason": "Compiler-owned Current block now emits the canonical Task 130 lifecycle projection.", "evidence": "current_surface_compiler.py; semantic gate"},
+        {"surface_id": "project-current-state", "path": "ignition/docs/project-current-state.md", "decision": "CHANGE", "reason": "Current prose is separated from Historical context and generated values are single-source.", "evidence": "current-surface-block-contract-r1.json; semantic gate"},
+        {"surface_id": "ai-cold-start", "path": "ignition/AI-START-HERE.md", "decision": "CHANGE", "reason": "Cold-start Current task, lifecycle and claim ceiling are emitted from the compiler.", "evidence": "current_surface_compiler.py; semantic gate"},
+        {"surface_id": "ai-agents-handoff", "path": "ignition/AI-HANDOFF.md", "decision": "CHANGE", "reason": "Handoff Current task and release lifecycle no longer rely on copied volatile prose.", "evidence": "current_surface_compiler.py; semantic gate"},
+        {"surface_id": "architecture", "path": "ignition/ARCHITECTURE.md", "decision": "CHANGE", "reason": "Architecture entry keeps the existing identity boundary and consumes the generated Current block.", "evidence": "current_surface_compiler.py; semantic gate"},
+        {"surface_id": "steering-doc", "path": "ignition/docs/architecture/os-steering-intent-r1.md", "decision": "NO_CHANGE_WITH_REASON", "reason": "Task 130 is a projection/compiler repair and does not alter the Steering contract.", "evidence": "presentation-only lifecycle; no map or identity epoch change"},
+        {"surface_id": "machine-entry", "path": "ignition/llms.txt", "decision": "CHANGE", "reason": "Machine Current key/value output is emitted by the compiler and includes lifecycle state.", "evidence": "current_surface_compiler.py; semantic gate"},
+        {"surface_id": "system-map-doc", "path": "ignition/docs/architecture/interactive-system-map.md", "decision": "NO_CHANGE_WITH_REASON", "reason": "No map version, topology or layout change is introduced by the compiler.", "evidence": "current map remains 0.12.0; lifecycle impact PRESENTATION_ONLY"},
+        {"surface_id": "federation-doc", "path": "ignition/docs/architecture/external-agent-federation-r1.md", "decision": "NO_CHANGE_WITH_REASON", "reason": "Task 130 does not change replaceable-executor or live-invocation boundaries.", "evidence": "current external ceiling remains repository-local and bounded"},
+        {"surface_id": "system-map-json", "path": "ignition/data/architecture/interactive-system-map.json", "decision": "NO_CHANGE_WITH_REASON", "reason": "The unique registry-derived map remains unchanged at 0.12.0 Current and 0.11.0 Historical.", "evidence": "interactive-system-map.json; map identity check"},
+        {"surface_id": "state-changelog", "path": "ignition/STATE-CHANGELOG.md", "decision": "CHANGE", "reason": "Task 130 is appended as an immutable lifecycle/projection delta.", "evidence": "Task 130 append-only delta and generated Current block"}
+    ],
+    "system_map_sync": {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "reason": "Current Surface Compiler changes projection ownership only; the sole map remains registry/topology/layout derived.",
+        "evidence": "current map 0.12.0; no project-components or topology change"
+    },
+    "state_changelog_delta": {
+        "decision": "CHANGE",
+        "reason": "Task 130 lifecycle and semantic projection boundary are recorded append-only.",
+        "evidence": "STATE-CHANGELOG.md Task 130 delta"
+    },
+    "changed_paths": [
+        "ignition/data/architecture/current-system-identity.json",
+        "ignition/data/operations/current-task-lineage-status.json",
+        "ignition/data/operations/current-release-lifecycle-r1.json",
+        "ignition/data/operations/current-snapshot-r1.json",
+        "ignition/data/operations/iterations/130/current-state-sync-receipt.json",
+        "ignition/STATE-CHANGELOG.md",
+        "ignition/AI-START-HERE.md",
+        "ignition/AI-HANDOFF.md",
+        "ignition/ARCHITECTURE.md",
+        "ignition/docs/project-current-state.md",
+        "ignition/llms.txt",
+        ".github/README.md"
+    ],
+    "identity_contract_changed": true,
+    "surface_sync_complete": false,
+    "claim_ceiling": "Task 130 records repository-local Current projection and lifecycle synchronization only; it does not establish external truth, production readiness, Owner acceptance, live executor completion or epistemic acceptance."
+}

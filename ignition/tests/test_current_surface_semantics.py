@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import re
 import unittest
 from pathlib import Path
 
@@ -28,7 +29,7 @@ class CurrentSurfaceSemanticGateTests(unittest.TestCase):
                     text = current_surface_compiler.render_block(self.snapshot, case["generated_profile"])
                     if case.get("tamper"):
                         text = text.replace("- current_map: `0.12.0` Current", case["tamper"])
-                        text = text.replace("- current_task: `IGNITION-20260821-129`", case["tamper"])
+                        text = re.sub(r"- current_task: `[^`]+`", case["tamper"], text, count=1)
                 issues = gate.validate_documents(
                     {"fixture.md": text or ""},
                     snapshot=self.snapshot,

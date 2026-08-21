@@ -2,11 +2,11 @@
   "schema_version": "current-task-lineage-status-r1",
   "contract_id": "CURRENT_TASK_LINEAGE_STATUS",
   "current_task": {
-    "task_id": "IGNITION-20260821-129",
-    "scope": "OS Steering, Intent, Goal and Obligation architecture after Durability / Lifecycle R3",
-    "execution_status": "COMPLETED_WITH_CLASSIFIED_RESIDUALS",
-    "terminal": true,
-    "identity_impact": "ARCHITECTURE_CHANGED"
+        "task_id": "IGNITION-20260821-130",
+        "scope": "Current Surface Compiler, single-source semantic projection and post-publication remote self-check",
+        "execution_status": "IN_PROGRESS",
+        "terminal": false,
+        "identity_impact": "PRESENTATION_ONLY"
   },
   "current_state": {
     "current_state_status": "CURRENT_WITH_OPEN_OBLIGATIONS",

@@ -1,0 +1,23 @@
+{
+    "schema_version": "current-release-lifecycle-r1",
+    "contract_id": "CURRENT_RELEASE_LIFECYCLE",
+    "task_id": "IGNITION-20260821-130",
+    "task_branch": "codex/ignition-130-current-surface-compiler-r1-20260821",
+    "identity_epoch": "os-control-plane-r4-steering-intent-r1",
+    "current_iteration_boundary": 130,
+    "current_phase": "RUNNING",
+    "task_branch_projection": "TASK_BRANCH_ONLY",
+    "publication_state": "NOT_PUBLISHED",
+    "latest_architecture_changing_task": "IGNITION-20260821-129",
+    "current_task_terminal": false,
+    "post_publication_remote_check_required": true,
+    "post_publication_remote_check_status": "PENDING",
+    "phase_order": [
+        "RUNNING",
+        "PREPARED_FOR_RELEASE",
+        "TERMINAL",
+        "PUBLISHED",
+        "POST_PUBLICATION_RECHECK"
+    ],
+    "claim_ceiling": "Repository-local lifecycle coordination only; this record grants no authority, proves no external truth or production readiness, and does not establish epistemic acceptance."
+}

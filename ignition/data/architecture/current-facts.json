@@ -1,7 +1,7 @@
 {
   "claim_ceiling": "Deterministic repository-derived current facts and navigation support only; no external truth, Owner acceptance, production safety or epistemic upgrade.",
   "contract_id": "CURRENT_STATE_SYNC_INVARIANT",
-  "current_iteration_boundary": 129,
+  "current_iteration_boundary": 130,
   "facts": {
     "architecture": {
       "current_map_version": "0.12.0",
@@ -66,7 +66,7 @@
       }
     },
     "iteration": {
-      "current_iteration_boundary": 129,
+      "current_iteration_boundary": 130,
       "current_map_version": "0.12.0",
       "method_status": "Current",
       "method_version": "1.4.0"
@@ -101,8 +101,8 @@
       "pilot_status": "OFFLINE_SYNTHETIC_ONLY"
     },
     "task_lineage": {
-      "current_task_id": "IGNITION-20260821-129",
-      "current_task_status": "COMPLETED_WITH_CLASSIFIED_RESIDUALS",
+      "current_task_id": "IGNITION-20260821-130",
+      "current_task_status": "IN_PROGRESS",
       "task125_canonical_status": "HISTORICAL_UNEXECUTED_REBASED_INTO_127",
       "task125_file_status": "HISTORICAL_UNEXECUTED",
       "task125_requirement_lineage_status": "REBASED_INTO_127",
@@ -122,7 +122,7 @@
     },
     {
       "path": "ignition/data/architecture/current-system-identity.json",
-      "sha256": "3386f06a4efeee3b2c35b436cd0eb0b699638a873048b085e28514ff574f5f63"
+      "sha256": "90303cadfededc71fc5e836be1f2161b1435be6f82c7d762e12b693c827716c5"
     },
     {
       "path": "ignition/data/architecture/interactive-system-map-layout.json",
@@ -154,7 +154,7 @@
     },
     {
       "path": "ignition/data/operations/current-task-lineage-status.json",
-      "sha256": "640652640eb3e8823c483f49a0a2127b827105a4ab7d2488760256e704b976f3"
+      "sha256": "d84f51f686eff461df5384b5c32c936595c6871e892503f9ee3aa14dbdb9ca3d"
     },
     {
       "path": "ignition/data/operations/project-components.json",
@@ -198,7 +198,7 @@
     },
     {
       "path": "ignition/schemas/operations/current-task-lineage-status-r1.schema.json",
-      "sha256": "5c170b633d6b128f4e6bfc7e7efd84939f70b7641abd3276975450ce88b39e1a"
+      "sha256": "0b381f06153171101e57d61d6a97ab66b89563ebfb286ab59140bbf72cd73aa2"
     },
     {
       "path": "ignition/tools/generate_current_facts.py",

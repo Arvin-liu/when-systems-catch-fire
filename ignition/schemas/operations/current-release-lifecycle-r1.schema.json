@@ -1,0 +1,25 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://example.invalid/ignition/operations/current-release-lifecycle-r1.schema.json",
+    "title": "Ignition Current release lifecycle",
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["schema_version", "contract_id", "task_id", "task_branch", "identity_epoch", "current_iteration_boundary", "current_phase", "task_branch_projection", "publication_state", "latest_architecture_changing_task", "current_task_terminal", "post_publication_remote_check_required", "post_publication_remote_check_status", "phase_order", "claim_ceiling"],
+    "properties": {
+        "schema_version": {"const": "current-release-lifecycle-r1"},
+        "contract_id": {"const": "CURRENT_RELEASE_LIFECYCLE"},
+        "task_id": {"type": "string", "pattern": "^IGNITION-[0-9A-Z-]+$"},
+        "task_branch": {"type": "string", "minLength": 1},
+        "identity_epoch": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]+$"},
+        "current_iteration_boundary": {"type": "integer", "minimum": 0},
+        "current_phase": {"enum": ["RUNNING", "PREPARED_FOR_RELEASE", "TERMINAL", "PUBLISHED", "POST_PUBLICATION_RECHECK"]},
+        "task_branch_projection": {"enum": ["TASK_BRANCH_ONLY", "RELEASE_READY", "PUBLISHED_MAIN"]},
+        "publication_state": {"enum": ["NOT_PUBLISHED", "PUBLISHED"]},
+        "latest_architecture_changing_task": {"type": "string", "pattern": "^IGNITION-[0-9A-Z-]+$"},
+        "current_task_terminal": {"type": "boolean"},
+        "post_publication_remote_check_required": {"const": true},
+        "post_publication_remote_check_status": {"enum": ["PENDING", "PASS"]},
+        "phase_order": {"type": "array", "minItems": 5, "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+        "claim_ceiling": {"type": "string", "minLength": 1}
+    }
+}
