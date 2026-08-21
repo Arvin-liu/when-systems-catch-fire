@@ -93,6 +93,14 @@ def validate_witness(witness: dict[str, Any]) -> list[str]:
     return [f"{error.json_path}: {error.message}" for error in errors]
 
 
+def classify_followup_remote_observation(witness: dict[str, Any], later_remote_sha: str) -> str:
+    """Classify a later ref observation without upgrading the original witness."""
+
+    if not SHA_RE.fullmatch(later_remote_sha):
+        raise WitnessBuildError("later remote SHA is not a 40-character lowercase Git SHA")
+    return "VALID_AT_OBSERVATION_TIME" if later_remote_sha == witness["observed_remote"]["sha"] else "STALE_OBSERVATION"
+
+
 def build_witness(
     *,
     task_id: str,

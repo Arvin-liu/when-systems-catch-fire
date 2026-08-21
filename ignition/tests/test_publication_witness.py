@@ -84,6 +84,22 @@ class PublicationWitnessTests(unittest.TestCase):
         forged["current_semantic_gates"]["current_state_sync"] = "FAIL"
         self.assertTrue(witness.validate_witness(forged))
 
+    def test_followup_remote_move_marks_witness_stale(self) -> None:
+        sha = "a" * 40
+        later = "b" * 40
+        with patch.object(witness, "git", side_effect=self.fake_git(sha)):
+            document = witness.build_witness(**self.kwargs(sha))
+        self.assertEqual(witness.classify_followup_remote_observation(document, later), "STALE_OBSERVATION")
+        self.assertEqual(witness.classify_followup_remote_observation(document, sha), "VALID_AT_OBSERVATION_TIME")
+
+    def test_dirty_fresh_clone_cannot_produce_witness(self) -> None:
+        sha = "a" * 40
+        arguments = self.kwargs(sha)
+        arguments["fresh_clone_clean"] = False
+        with patch.object(witness, "git", side_effect=self.fake_git(sha)):
+            with self.assertRaises(witness.WitnessBuildError):
+                witness.build_witness(**arguments)
+
 
 if __name__ == "__main__":
     unittest.main()

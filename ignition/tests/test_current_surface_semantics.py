@@ -55,6 +55,18 @@ class CurrentSurfaceSemanticGateTests(unittest.TestCase):
         self.assertEqual(result["result"], "VALID", result["issues"])
         self.assertEqual(result["issue_count"], 0)
 
+    def test_historical_not_published_token_is_allowed_outside_current_block(self) -> None:
+        path = ROOT / "STATE-CHANGELOG.md"
+        text = path.read_text(encoding="utf-8")
+        self.assertIn("NOT_PUBLISHED", text)
+        issues = gate.validate_documents(
+            {"ignition/STATE-CHANGELOG.md": text},
+            snapshot=self.snapshot,
+            surface_specs=[{"surface_id": "state-changelog", "path": "ignition/STATE-CHANGELOG.md", "profile": "ai"}],
+            require_blocks=True,
+        )
+        self.assertEqual(issues, [])
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -1,0 +1,20 @@
+{
+  "schema_version": "release-fault-matrix-r1",
+  "task_id": "IGNITION-20260821-131",
+  "matrix": [
+    {"case_id": "concurrent-remote-main-advance", "stage": "witness-follow-up", "expected_outcome": "STALE_OBSERVATION"},
+    {"case_id": "stale-fetch-before-ls-remote", "stage": "remote-ref-observation", "expected_outcome": "REMOTE_LS_REMOTE_AUTHORITATIVE"},
+    {"case_id": "wrong-origin-url", "stage": "fresh-fetch", "expected_outcome": "BLOCKED_WITH_EVIDENCE"},
+    {"case_id": "missing-origin", "stage": "origin-availability", "expected_outcome": "BLOCKED_WITH_EVIDENCE"},
+    {"case_id": "candidate-not-ancestor-of-main-target", "stage": "ordinary-main-fast-forward", "expected_outcome": "RELEASE_CLOSURE_BLOCKED"},
+    {"case_id": "remote-ref-changes-between-observations", "stage": "witness-follow-up", "expected_outcome": "STALE_OBSERVATION"},
+    {"case_id": "witness-replay-for-old-sha", "stage": "witness-replay", "expected_outcome": "STALE_OBSERVATION"},
+    {"case_id": "forged-witness-fields", "stage": "witness-schema", "expected_outcome": "FAIL"},
+    {"case_id": "dirty-fresh-clone", "stage": "fresh-clone", "expected_outcome": "FAIL"},
+    {"case_id": "stale-current-compiler-output", "stage": "current-semantic-recheck", "expected_outcome": "FAIL"},
+    {"case_id": "non-terminal-current-task", "stage": "content-gate", "expected_outcome": "FAIL"},
+    {"case_id": "current-surface-split-brain", "stage": "current-semantic-recheck", "expected_outcome": "FAIL"},
+    {"case_id": "historical-not-published-token", "stage": "historical-classification", "expected_outcome": "HISTORICAL_ALLOWED"}
+  ],
+  "claim_ceiling": "The fault matrix records repository-local failure classification only; it does not establish external truth, production readiness, Owner acceptance or epistemic acceptance."
+}
