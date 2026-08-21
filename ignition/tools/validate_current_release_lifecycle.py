@@ -12,6 +12,11 @@ from typing import Any
 
 from jsonschema import Draft202012Validator
 
+try:
+    from tools import validate_execution_contract
+except ImportError:  # direct script / tools-on-PYTHONPATH execution
+    import validate_execution_contract
+
 
 HERE = Path(__file__).resolve()
 ROOT = HERE.parents[1]
@@ -21,6 +26,7 @@ SCHEMA_PATH = ROOT / "schemas/operations/current-release-lifecycle-r1.schema.jso
 LINEAGE_PATH = ROOT / "data/operations/current-task-lineage-status.json"
 IDENTITY_PATH = ROOT / "data/architecture/current-system-identity.json"
 AUDIT_PATH = ROOT / "data/operations/iterations/131/step02-lifecycle-migration-audit.json"
+EXECUTION_CONTRACT_PATH = ROOT / "data/operations/iterations/132/execution-contract-r1.json"
 
 PHASES = ["RUNNING", "TERMINAL_CANDIDATE", "RELEASE_READY"]
 
@@ -40,9 +46,18 @@ def validate(document: dict[str, Any] | None = None) -> list[str]:
         return errors
     lineage = load_json(LINEAGE_PATH)
     identity = load_json(IDENTITY_PATH)
+    execution_contract = load_json(EXECUTION_CONTRACT_PATH)
     current_task = lineage["current_task"]
     if lifecycle["task_id"] != current_task["task_id"]:
         errors.append("lifecycle task_id differs from canonical current task")
+    if lifecycle["task_id"] != execution_contract["task_id"]:
+        errors.append("lifecycle task_id differs from execution contract task")
+    if lifecycle["task_branch"] != execution_contract["expected_task_branch"]:
+        errors.append("lifecycle task_branch differs from execution contract task branch")
+    if lifecycle["latest_architecture_changing_task"] != execution_contract["identity_expectations"]["latest_architecture_changing_task"]:
+        errors.append("lifecycle architecture task differs from execution contract")
+    if lifecycle["task_identity_source"]["binding"] != "MUST_MATCH_CURRENT_FORMAL_AND_EXECUTION_CONTRACT":
+        errors.append("lifecycle task identity binding is not hard")
     if lifecycle["identity_epoch"] != identity["identity_epoch"]:
         errors.append("lifecycle identity_epoch differs from current identity epoch")
     if lifecycle["current_iteration_boundary"] != identity["current_iteration_boundary"]:

@@ -11,7 +11,9 @@ class CurrentReleaseLifecycleTests(unittest.TestCase):
     def test_current_lifecycle_owns_content_readiness_not_publication(self) -> None:
         self.assertEqual(lifecycle.validate(), [])
         record = lifecycle.load_json(lifecycle.LIFECYCLE_PATH)
-        self.assertEqual(record["content_phase"], "RELEASE_READY")
+        self.assertIn(record["content_phase"], {"RUNNING", "TERMINAL_CANDIDATE", "RELEASE_READY"})
+        self.assertEqual(record["task_id"], "IGNITION-20260822-132")
+        self.assertEqual(record["task_identity_source"]["binding"], "MUST_MATCH_CURRENT_FORMAL_AND_EXECUTION_CONTRACT")
         self.assertEqual(record["required_publication_ref"], "refs/heads/main")
         self.assertEqual(record["publication_authority"], "REMOTE_REF_OBSERVATION")
         self.assertEqual(record["embedded_publication_assertion"], "NONE")

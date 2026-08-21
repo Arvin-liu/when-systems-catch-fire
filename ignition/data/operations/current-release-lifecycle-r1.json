@@ -1,16 +1,21 @@
 {
     "schema_version": "current-release-lifecycle-r1",
     "contract_id": "CURRENT_RELEASE_LIFECYCLE_REF_DERIVED_R1",
-    "task_id": "IGNITION-20260821-130",
-    "task_branch": "codex/ignition-130-current-surface-compiler-r1-20260821",
+  "task_id": "IGNITION-20260822-132",
+  "task_branch": "codex/ignition-132-canonical-current-advancement-release-transaction-r1-20260822",
+  "task_identity_source": {
+    "current_formal_task_source": "ignition/data/operations/current-task-lineage-status.json#/task_identity/current_formal_task",
+    "execution_contract_source": "ignition/data/operations/iterations/132/execution-contract-r1.json#/task_id",
+    "binding": "MUST_MATCH_CURRENT_FORMAL_AND_EXECUTION_CONTRACT"
+  },
     "identity_epoch": "os-control-plane-r4-steering-intent-r1",
     "current_iteration_boundary": 130,
-    "content_phase": "RELEASE_READY",
+  "content_phase": "RUNNING",
     "required_publication_ref": "refs/heads/main",
     "publication_authority": "REMOTE_REF_OBSERVATION",
     "embedded_publication_assertion": "NONE",
     "latest_architecture_changing_task": "IGNITION-20260821-129",
-    "current_task_terminal": true,
+  "current_task_terminal": false,
     "post_publication_remote_check_required": true,
     "phase_order": [
         "RUNNING",
