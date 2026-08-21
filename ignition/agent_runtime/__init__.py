@@ -69,6 +69,18 @@ from .durable_memory import DURABLE_MEMORY_EPOCH, DURABLE_MEMORY_EVENT_SCHEMA, D
 from .recovery import DELIVERY_SEMANTICS, FAULT_POINTS, RECOVERY_PHASES, RECOVERY_SCHEMA, RecoveryBlocked, RecoveryError, RecoveryFaultInjected, RecoveryFaultMatrix, RecoveryOrchestrator, RecoveryPhase
 from .dr_bundle import DR_BUNDLE_EPOCH, DR_BUNDLE_SCHEMA, DRBundleError, DRBundleIntegrityError, RecoveryBundleBuilder, RecoveryBundleVerifier, REQUIRED_CHUNKS
 from .adversarial import ADVERSARIAL_SCHEMA, ALLOWED_OUTCOMES, AdversarialCase, AdversarialMatrix, AdversarialMatrixError, REQUIRED_CASE_IDS
+from .steering import (
+    GOAL_COMPLETION_NON_INFERENCE_INVARIANT,
+    INTENT_AUTHORITY_INVARIANT,
+    STEERING_EXPLAINABILITY_INVARIANT,
+    AuthorityProvenance,
+    CompletionContract,
+    GoalRecord,
+    IntentRecord,
+    SteeringValidationError,
+    authority_digest,
+    ontology_contract,
+)
 
 __all__ = [
     "ActionObservation",
@@ -292,4 +304,14 @@ __all__ = [
     "AdversarialMatrix",
     "AdversarialMatrixError",
     "REQUIRED_CASE_IDS",
+    "GOAL_COMPLETION_NON_INFERENCE_INVARIANT",
+    "INTENT_AUTHORITY_INVARIANT",
+    "STEERING_EXPLAINABILITY_INVARIANT",
+    "AuthorityProvenance",
+    "CompletionContract",
+    "GoalRecord",
+    "IntentRecord",
+    "SteeringValidationError",
+    "authority_digest",
+    "ontology_contract",
 ]

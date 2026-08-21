@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Arvin-liu/when-systems-catch-fire/schemas/operations/steering-ontology-r1.schema.json",
+  "title": "OS Steering and Intent R1 ontology",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "layers", "invariants", "reuse_boundaries", "claim_ceiling"],
+  "properties": {
+    "schema": {"const": "os-steering-intent-obligation-r1.ontology"},
+    "layers": {"type": "array", "minItems": 6, "items": {"type": "object", "additionalProperties": false, "required": ["kind", "meaning"], "properties": {"kind": {"type": "string"}, "meaning": {"type": "string"}}}},
+    "invariants": {"type": "object", "required": ["INTENT_AUTHORITY_INVARIANT", "GOAL_COMPLETION_NON_INFERENCE_INVARIANT", "STEERING_EXPLAINABILITY_INVARIANT"], "additionalProperties": {"type": "string"}},
+    "reuse_boundaries": {"type": "object", "minProperties": 4, "additionalProperties": {"type": "string"}},
+    "claim_ceiling": {"type": "string", "minLength": 1}
+  }
+}
