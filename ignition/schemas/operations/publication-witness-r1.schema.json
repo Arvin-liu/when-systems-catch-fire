@@ -1,0 +1,84 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ignition/operations/publication-witness-r1.schema.json",
+  "title": "Observation-time remote main publication witness",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "witness_kind", "task_id", "subject_repository", "candidate_sha", "observed_at", "observed_remote", "local_checkout", "fresh_clone", "equality", "current_semantic_gates", "witness", "claim_ceiling"],
+  "properties": {
+    "schema_version": {"const": "publication-witness-r1"},
+    "witness_kind": {"const": "REMOTE_REF_PUBLICATION_WITNESS"},
+    "task_id": {"type": "string", "pattern": "^IGNITION-[0-9A-Z-]+$"},
+    "subject_repository": {"type": "string", "minLength": 1},
+    "candidate_sha": {"$ref": "#/$defs/sha"},
+    "observed_at": {"type": "string", "format": "date-time"},
+    "observed_remote": {"$ref": "#/$defs/observedRemote"},
+    "local_checkout": {"$ref": "#/$defs/checkout"},
+    "fresh_clone": {"$ref": "#/$defs/freshClone"},
+    "equality": {"$ref": "#/$defs/equality"},
+    "current_semantic_gates": {"$ref": "#/$defs/semanticGates"},
+    "witness": {"$ref": "#/$defs/witness"},
+    "claim_ceiling": {"const": "Observation-time remote Git publication evidence only; no external truth, production readiness, Owner acceptance or epistemic acceptance is inferred."}
+  },
+  "$defs": {
+    "sha": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+    "observedRemote": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["ref", "sha"],
+      "properties": {"ref": {"const": "refs/heads/main"}, "sha": {"$ref": "#/$defs/sha"}}
+    },
+    "checkout": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["branch", "head_sha", "clean"],
+      "properties": {"branch": {"const": "main"}, "head_sha": {"$ref": "#/$defs/sha"}, "clean": {"const": true}}
+    },
+    "freshClone": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["mode", "branch", "head_sha", "clean"],
+      "properties": {"mode": {"const": "FRESH_REMOTE_MAIN_CLONE"}, "branch": {"const": "main"}, "head_sha": {"$ref": "#/$defs/sha"}, "clean": {"const": true}}
+    },
+    "equality": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["candidate_equals_remote", "candidate_equals_local_head", "candidate_equals_fresh_clone_head", "remote_equals_fresh_clone_head", "exact_match"],
+      "properties": {
+        "candidate_equals_remote": {"const": true},
+        "candidate_equals_local_head": {"const": true},
+        "candidate_equals_fresh_clone_head": {"const": true},
+        "remote_equals_fresh_clone_head": {"const": true},
+        "exact_match": {"const": true}
+      }
+    },
+    "semanticGates": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["post_publication_validator", "current_facts", "current_snapshot", "current_surface_compiler", "typed_semantic_gate", "task_lineage", "current_state_sync", "clean_worktree"],
+      "properties": {
+        "post_publication_validator": {"const": "PASS"},
+        "current_facts": {"const": "PASS"},
+        "current_snapshot": {"const": "PASS"},
+        "current_surface_compiler": {"const": "PASS"},
+        "typed_semantic_gate": {"const": "PASS"},
+        "task_lineage": {"const": "PASS"},
+        "current_state_sync": {"const": "PASS"},
+        "clean_worktree": {"const": "PASS"}
+      }
+    },
+    "witness": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "authority_class", "scope", "receipt_repository", "receipt_ref", "credentials_included"],
+      "properties": {
+        "status": {"const": "ISSUED_EXACT_MATCH"},
+        "authority_class": {"const": "CONTROL_REPOSITORY_RECEIPT"},
+        "scope": {"const": "OBSERVATION_TIME_ONLY"},
+        "receipt_repository": {"const": "Arvin-liu/1111"},
+        "receipt_ref": {"type": "string", "minLength": 1},
+        "credentials_included": {"const": false}
+      }
+    }
+  }
+}

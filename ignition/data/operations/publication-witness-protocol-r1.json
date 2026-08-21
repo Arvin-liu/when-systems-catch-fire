@@ -1,0 +1,17 @@
+{
+  "schema_version": "publication-witness-protocol-r1",
+  "contract_id": "PUBLICATION_WITNESS_SEPARATION_INVARIANT",
+  "witness_schema": "ignition/schemas/operations/publication-witness-r1.schema.json",
+  "observation_source": "git ls-remote origin refs/heads/main",
+  "required_equality": [
+    "candidate_sha == observed_remote_sha",
+    "candidate_sha == fresh_clone_head_sha",
+    "observed_remote_sha == fresh_clone_head_sha"
+  ],
+  "default_output": "stdout_or_temporary_file",
+  "final_receipt_location": "Arvin-liu/1111 agent-results/IGNITION-20260821-131-publication-witness.json",
+  "formal_repository_policy": "Store schema, protocol and fixtures only; do not commit an observation-time PASS back to the formal candidate.",
+  "scope": "OBSERVATION_TIME_ONLY",
+  "credentials_policy": "No tokens, private prompts, credentials or remote URL secrets in witness output.",
+  "claim_ceiling": "Observation-time remote Git publication evidence only; no external truth, production readiness, Owner acceptance or epistemic acceptance is inferred."
+}
