@@ -1,0 +1,92 @@
+{
+  "schema_version": "ignition-132-machine-receipt-r1",
+  "task_id": "IGNITION-20260822-132",
+  "status": "COMPLETED_WITH_CLASSIFIED_RESIDUALS",
+  "formal_repository": "Arvin-liu/when-systems-catch-fire",
+  "formal_branch": "codex/ignition-132-canonical-current-advancement-release-transaction-r1-20260822",
+  "baseline_main_sha": "e04752d20d071bac8f0c4a1e5cff20fb3004dae1",
+  "control_repository": "Arvin-liu/1111",
+  "control_ref": "origin/relay/current",
+  "control_tip": "995a4bc560749c199be94f93f9b76417a4c967b1",
+  "control_task_path": "agent-commands/IGNITION-20260822-132-canonical-current-advancement-release-transaction-r1.md",
+  "no_owner_intermediate": true,
+  "identity_binding": {
+    "current_formal_task": "IGNITION-20260822-132",
+    "latest_architecture_changing_task": "IGNITION-20260821-129",
+    "previous_canonical_current_task": "IGNITION-20260821-130",
+    "previous_formal_task": "IGNITION-20260821-131",
+    "release_candidate_task": "IGNITION-20260822-132",
+    "publication_witness_task": "IGNITION-20260822-132",
+    "exact_match": true
+  },
+  "step_ledger": [
+    {"step": "00", "commit_sha": "5cdbcd85663f15baa173bbed2516846398907f05", "remote_sha_verified": true},
+    {"step": "01", "commit_sha": "ca05e018cf33e31c4560cd2f4ef3860f261d9a0d", "remote_sha_verified": true},
+    {"step": "02", "commit_sha": "5c6c9792320589916ba56337c4b4a47fe643ef3b", "remote_sha_verified": true},
+    {"step": "03", "commit_sha": "98b1ab8a0a3f3aa08591da2473927edb524c1fc8", "remote_sha_verified": true},
+    {"step": "04", "commit_sha": "15e17ada5201815ad59cab5c3251780ae628faea", "remote_sha_verified": true},
+    {"step": "05", "commit_sha": "afcc8bf9b02d1329fd92fa6e367a9383bf405bb8", "remote_sha_verified": true},
+    {"step": "06", "commit_sha": "8632771df038bcf2e02bcf7b55efc6ee108a81d0", "remote_sha_verified": true},
+    {"step": "07", "commit_sha": "18a36a03abc541b643d472a0b3ebc7bf906167d4", "remote_sha_verified": true},
+    {"step": "08", "commit_sha": "ef2fb69bbc3f74a6564a284883a29b7b36f3dbe8", "remote_sha_verified": true},
+    {"step": "09", "commit_sha": "f2f18097715b082337f21e987a13425dd504a19d", "remote_sha_verified": true},
+    {"step": "10", "commit_sha": "7a7fff6b1bb2830731fdd9dd203aada915f44d40", "remote_sha_verified": true},
+    {"step": "11", "commit_sha": "09057450e5fcd84cd4f06d5e4ac236110a574651", "remote_sha_verified": true},
+    {"step": "12", "commit_sha": "d1b1f1033ad78452b7d1a67054c2f31924295f87", "remote_sha_verified": true},
+    {"step": "13", "commit_sha": "RECORDED_AFTER_STEP13_COMMIT", "remote_sha_verified": false, "self_reference_note": "The exact formal Step 13 SHA is written by the post-commit 1111 receipt."},
+    {"step": "14", "commit_sha": "DEFERRED_TO_PUBLICATION_WITNESS", "remote_sha_verified": false}
+  ],
+  "current_state": {
+    "identity_epoch": "os-control-plane-r4-steering-intent-r1",
+    "map_current": "0.12.0",
+    "map_historical": ["0.11.0", "0.10.0"],
+    "latest_architecture_changing_task": "IGNITION-20260821-129",
+    "current_task": "IGNITION-20260822-132",
+    "current_task_status": "COMPLETED_WITH_CLASSIFIED_RESIDUALS",
+    "current_task_terminal": true,
+    "current_task_identity_impact": "PRESENTATION_ONLY",
+    "release_lifecycle": "RELEASE_READY",
+    "publication_authority": "REMOTE_REF_OBSERVATION",
+    "publication_state": "NOT_PUBLISHED",
+    "status": "CURRENT_WITH_OPEN_OBLIGATIONS",
+    "epistemically_accepted": 0,
+    "live_external_ceiling": "NOT_RUN_LIVE_EXTERNAL_INVOCATION"
+  },
+  "prepublication_fresh_clone": {
+    "source": "task_branch_remote_tip_after_step12",
+    "head_sha": "d1b1f1033ad78452b7d1a67054c2f31924295f87",
+    "branch": "codex/ignition-132-canonical-current-advancement-release-transaction-r1-20260822",
+    "clean": true,
+    "release_candidate_task_identity": "PASS",
+    "current_lineage": "PASS",
+    "current_lifecycle": "PASS_RELEASE_READY",
+    "current_snapshot": "PASS_DETERMINISTIC",
+    "current_state_sync": "PASS",
+    "current_surface_determinism": "PASS_TWO_PASS"
+  },
+  "regression": {
+    "current_release_identity": "PASS_95_OF_95",
+    "steering_durability_federation_soft_governance": "201_OF_202_PLUS_ONE_CLASSIFIED_PROJECTION_RESIDUAL",
+    "human_frontdoor_map_privacy_sync": "95_OF_98_PLUS_THREE_CLASSIFIED_RESIDUALS",
+    "bounded_release_fault_matrix": "PASS_13_CASES",
+    "current_semantic_regressions": 0,
+    "full_discovery": "TIMEOUT_CLASSIFIED_AT_30_SECONDS"
+  },
+  "classified_residuals": [
+    "11 pre-existing Human Surface source-hash drifts remain classified.",
+    "Clean-baseline projection missing=164; Step11 boundary added 28 Task132 paths; later Step11/12 audit artifacts account for the current missing=194 observation.",
+    "Append-only State Changelog historical/source-transition field and base-tip residuals remain classified.",
+    "T16 SymPy-unavailable, historical Task104–106 propagation, and existing long-running Foundation/Phase-E and bounded-generator residuals remain classified.",
+    "Full unittest discovery timed out at the 30-second boundary; no full-discovery PASS is claimed."
+  ],
+  "publication_boundary": {
+    "formal_self_witness_commit": false,
+    "main_before_sha": "e04752d20d071bac8f0c4a1e5cff20fb3004dae1",
+    "release_candidate_sha": "DEFERRED_TO_STEP_14_REMOTE_REF_OBSERVATION",
+    "main_after_sha": "DEFERRED_TO_STEP_14_ORDINARY_FAST_FORWARD",
+    "post_publication_validation": "PENDING_STEP_14",
+    "publication_witness": "PENDING_1111_RECEIPT",
+    "required_task_id_binding": "execution_contract_current_source_lifecycle_snapshot_formal_result_release_candidate_publication_witness"
+  },
+  "claim_ceiling": "Repository-local canonical Current advancement, deterministic projections, bounded regression evidence and pre-publication release-candidate identity only; no Owner authority, external truth, production readiness, live executor completion, Owner acceptance or epistemic acceptance."
+}
