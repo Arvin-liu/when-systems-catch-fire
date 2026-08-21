@@ -15,9 +15,11 @@ from jsonschema import Draft202012Validator
 try:
     from tools import validate_execution_contract_133 as validate_execution_contract
     from tools import iteration_boundary
+    from tools import validate_iteration_ordinal_binding as ordinal_binding
 except ImportError:  # direct script / tools-on-PYTHONPATH execution
     import validate_execution_contract_133 as validate_execution_contract
     import iteration_boundary
+    import validate_iteration_ordinal_binding as ordinal_binding
 
 
 HERE = Path(__file__).resolve()
@@ -29,6 +31,7 @@ LINEAGE_PATH = ROOT / "data/operations/current-task-lineage-status.json"
 IDENTITY_PATH = ROOT / "data/architecture/current-system-identity.json"
 AUDIT_PATH = ROOT / "data/operations/iterations/133/step04-release-lifecycle-audit.json"
 EXECUTION_CONTRACT_PATH = ROOT / "data/operations/iterations/133/execution-contract-r1.json"
+FACTS_PATH = ROOT / "data/architecture/current-facts.json"
 
 PHASES = ["RUNNING", "TERMINAL_CANDIDATE", "RELEASE_READY"]
 
@@ -49,6 +52,7 @@ def validate(document: dict[str, Any] | None = None) -> list[str]:
     lineage = load_json(LINEAGE_PATH)
     identity = load_json(IDENTITY_PATH)
     execution_contract = load_json(EXECUTION_CONTRACT_PATH)
+    facts = load_json(FACTS_PATH)
     current_task = lineage["current_task"]
     if lifecycle["task_id"] != current_task["task_id"]:
         errors.append("lifecycle task_id differs from canonical current task")
@@ -80,6 +84,14 @@ def validate(document: dict[str, Any] | None = None) -> list[str]:
             errors.append("identity current_iteration_boundary is not the formal ordinal alias")
     except Exception as exc:
         errors.append(f"cannot derive iteration identity: {type(exc).__name__}: {exc}")
+    ordinal_errors, _ordinal_records = ordinal_binding.validate_documents(
+        contract=execution_contract,
+        lineage=lineage,
+        lifecycle=lifecycle,
+        snapshot=load_json(ordinal_binding.SNAPSHOT_PATH),
+        facts=facts,
+    )
+    errors.extend(f"ordinal binding: {error}" for error in ordinal_errors)
     if lifecycle["latest_architecture_changing_task"] == lifecycle["task_id"]:
         errors.append("presentation-only Current task cannot also be latest architecture-changing task")
     if current_task["identity_impact"] != "PRESENTATION_ONLY":

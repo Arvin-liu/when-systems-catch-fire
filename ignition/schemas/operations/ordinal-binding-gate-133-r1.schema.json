@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ignition/operations/ordinal-binding-gate-133-r1.schema.json",
+  "title": "Task133 formal and architecture ordinal binding gate",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "task_id", "step", "result", "binding_chain", "pending_terminal_roles", "formal_task_ordinal", "latest_architecture_task_ordinal", "current_iteration_boundary", "current_iteration_boundary_semantics", "errors", "claim_ceiling"],
+  "properties": {
+    "schema_version": {"const": "ignition-133-step06-ordinal-binding-gate-r1"},
+    "task_id": {"const": "IGNITION-20260822-133"},
+    "step": {"const": "06"},
+    "result": {"enum": ["PASS", "PASS_WITH_PENDING_TERMINAL_EVIDENCE", "FAIL"]},
+    "binding_chain": {"type": "array", "items": {"$ref": "#/$defs/record"}},
+    "pending_terminal_roles": {"type": "array", "items": {"enum": ["formal_result_task", "publication_witness_task"]}},
+    "formal_task_ordinal": {"const": 133},
+    "latest_architecture_task_ordinal": {"const": 129},
+    "current_iteration_boundary": {"const": 133},
+    "current_iteration_boundary_semantics": {"const": "DEPRECATED_COMPATIBILITY_ALIAS_OF_CURRENT_FORMAL_TASK_ORDINAL"},
+    "errors": {"type": "array", "items": {"type": "string"}},
+    "claim_ceiling": {"type": "string", "minLength": 1}
+  },
+  "$defs": {
+    "record": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["role_id", "task_id"],
+      "properties": {
+        "role_id": {"type": "string", "minLength": 1},
+        "task_id": {"type": "string", "pattern": "^IGNITION-[0-9]{8}-[0-9]{3}$"},
+        "declared_ordinal": {"type": "integer", "minimum": 1},
+        "architecture_task_id": {"type": "string", "pattern": "^IGNITION-[0-9]{8}-[0-9]{3}$"},
+        "architecture_ordinal": {"type": "integer", "minimum": 1},
+        "current_iteration_boundary": {"type": "integer", "minimum": 1},
+        "current_iteration_boundary_semantics": {"const": "DEPRECATED_COMPATIBILITY_ALIAS_OF_CURRENT_FORMAL_TASK_ORDINAL"}
+      }
+    }
+  }
+}

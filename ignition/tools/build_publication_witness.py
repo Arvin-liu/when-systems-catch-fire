@@ -19,15 +19,20 @@ from typing import Any
 
 from jsonschema import Draft202012Validator
 
+try:
+    from tools import task_identity
+except ImportError:  # direct script / tools-on-PYTHONPATH execution
+    import task_identity
+
 
 HERE = Path(__file__).resolve()
 ROOT = HERE.parents[1]
 REPO_ROOT = ROOT.parent
 SCHEMA_PATH = ROOT / "schemas/operations/publication-witness-r1.schema.json"
-CONTRACT_PATH = ROOT / "data/operations/iterations/132/execution-contract-r1.json"
+CONTRACT_PATH = ROOT / "data/operations/iterations/133/execution-contract-r1.json"
 LINEAGE_PATH = ROOT / "data/operations/current-task-lineage-status.json"
 LIFECYCLE_PATH = ROOT / "data/operations/current-release-lifecycle-r1.json"
-FORMAL_RESULT_PATH = ROOT / "agent-results/IGNITION-20260822-132-result.md"
+FORMAL_RESULT_PATH = ROOT / "agent-results/IGNITION-20260822-133-result.md"
 REMOTE_REF = "refs/heads/main"
 REMOTE_TRACKING_REF = "refs/remotes/origin/main"
 SHA_RE = re.compile(r"^[0-9a-f]{40}$")
@@ -111,6 +116,20 @@ def validate_witness(witness: dict[str, Any]) -> list[str]:
             rendered.append("$.task_binding.exact_match: task identity binding is not exact")
         if binding.get("latest_architecture_changing_task") == task_id:
             rendered.append("$.task_binding.latest_architecture_changing_task: architecture task was promoted to formal task")
+        try:
+            formal = task_identity.parse_task_id(task_id)
+            architecture = task_identity.parse_task_id(binding.get("latest_architecture_changing_task"))
+        except task_identity.TaskIdentityError as exc:
+            rendered.append(f"$.task_binding.ordinal_source: {exc}")
+        else:
+            if binding.get("current_formal_task_ordinal") != formal["ordinal"]:
+                rendered.append("$.task_binding.current_formal_task_ordinal: does not derive from task id")
+            if binding.get("latest_architecture_task_ordinal") != architecture["ordinal"]:
+                rendered.append("$.task_binding.latest_architecture_task_ordinal: does not derive from architecture task id")
+            if binding.get("current_iteration_boundary") != formal["ordinal"]:
+                rendered.append("$.task_binding.current_iteration_boundary: is not the formal ordinal alias")
+            if binding.get("current_iteration_boundary_semantics") != "DEPRECATED_COMPATIBILITY_ALIAS_OF_CURRENT_FORMAL_TASK_ORDINAL":
+                rendered.append("$.task_binding.current_iteration_boundary_semantics: alias semantics are invalid")
     return rendered
 
 
@@ -161,9 +180,18 @@ def _task_binding(*, task_id: str, formal_result_task_id: str) -> dict[str, Any]
         raise WitnessBuildError("latest architecture-changing task must remain distinct from the formal task")
     if contract.get("task_id") != task_id or lineage.get("current_task", {}).get("task_id") != task_id:
         raise WitnessBuildError("task identity binding does not match the execution contract and canonical current task")
+    try:
+        formal_ordinal = task_identity.parse_task_id(task_id)["ordinal"]
+        architecture_ordinal = task_identity.parse_task_id(latest_architecture_changing_task)["ordinal"]
+    except task_identity.TaskIdentityError as exc:
+        raise WitnessBuildError(f"cannot derive witness ordinals: {exc}") from exc
     return {
         **observed,
         "latest_architecture_changing_task": latest_architecture_changing_task,
+        "current_formal_task_ordinal": formal_ordinal,
+        "latest_architecture_task_ordinal": architecture_ordinal,
+        "current_iteration_boundary": formal_ordinal,
+        "current_iteration_boundary_semantics": "DEPRECATED_COMPATIBILITY_ALIAS_OF_CURRENT_FORMAL_TASK_ORDINAL",
         "exact_match": True,
     }
 
