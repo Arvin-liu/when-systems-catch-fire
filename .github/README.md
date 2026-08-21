@@ -12,6 +12,8 @@
 
 点火当前主干以一个有界、可审计、可恢复的 Agent Platform 原型为工程脊柱；它是长期状态、价值、任务、权限、记忆、验证和 executor 协同的 OS / orchestration-governance layer。OpenClaw、Hermes、Codex 是可替换执行器，不是点火的替代系统；知识治理是第一个大型 Domain Pack，而不是整个系统本体。仓库内能力、边界和未完成义务见[Agent Platform R2](../ignition/docs/architecture/agent-platform-r2.md)、[OS Control Plane R2](../ignition/docs/architecture/os-control-plane-r2.md)、[External Agent Federation R1](../ignition/docs/architecture/external-agent-federation-r1.md)与[智能体化边界](../ignition/docs/architecture/agentization-boundary-r0.md)。Durability / Lifecycle 负责 repository-local snapshot、migration、namespace、Pack lifecycle、revocation、accounting、recovery 和 DR continuity；不建立第二张图，也不自动重放不确定外部副作用。Structural Governance Surface 是 advisory cross-cutting overlay：只提供阅读与实验上下文，不改变 capability、permission 或 epistemic status，也不增加 L7。Current Snapshot 与 Current Facts 负责易变版本、计数、任务、状态和 live ceiling；这不表示已经证明通用智能、长期自主性、现实世界普适安全性或外部有效性。
 本地行动层保持 Reference / Conformance / Fallback 边界；外部 executor 不拥有 OS authority，Current Snapshot 也不把仓库投影升级为现实证明。
+
+任务身份分成两个稳定角色：Current formal task 表示最近哪一轮正式任务正在或刚刚成为 Current；latest architecture-changing task 表示最近哪一轮改变系统身份或架构。二者允许不同，publication witness 只提供发布观察绑定，不授予 architecture、Owner 或 epistemic authority。
 <!-- CURRENT-SNAPSHOT:BEGIN profile=human schema=current-snapshot-r1 -->
 - Current Snapshot（机器生成；请勿手改）。
 - current_identity_epoch: `os-control-plane-r4-steering-intent-r1`；system_role: `Ignition OS / orchestration-governance layer`。

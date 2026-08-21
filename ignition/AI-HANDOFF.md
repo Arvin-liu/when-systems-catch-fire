@@ -22,6 +22,8 @@ capability、permission、truth、Owner 或 epistemic status。
 语义主干把中央 Ignition OS 控制脊柱、外部 Federation/replaceable executors 与 Domain/Skill Packs
 分开；版本、计数和 live ceiling 以 generated Current Snapshot 与 Current Facts 投影为准。
 
+交接时分开读取两个任务角色：Current formal task 回答“最近哪一轮正式任务正在或刚刚成为 Current”；latest architecture-changing task 回答“最近哪一轮改变了系统身份或架构”。二者允许不同，publication witness 只绑定发布观察，不把 release task 变成 architecture authority。
+
 ### R2 工程脊柱
 
 - `agent_kernel/`：领域无关 identity、capability、approval、audit、checkpoint、handoff 与 non-escalation 契约。

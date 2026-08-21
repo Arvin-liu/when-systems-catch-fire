@@ -38,6 +38,8 @@ snapshot、migration、namespace、Pack lifecycle、revocation、accounting、re
 统一表达；历史任务、requirements lineage、terminal status 和当前架构变更任务由 generated
 Current Snapshot 投影。历史/环境 residual 仍按 receipt 保留，旧任务记录不会被重写为当前事实。
 
+任务身份分成两个稳定可读的角色：Current formal task 回答“最近哪一轮正式任务正在或刚刚成为 Current”；latest architecture-changing task 回答“最近哪一轮改变了系统身份或架构”。二者允许不同，release-governance task 不会因为成为 formal task 就自动获得 architecture authority。
+
 Steering 以 `OWNER_DECLARED`／`OWNER_APPROVED_DERIVED` 与 `SYSTEM_DERIVED_PROPOSAL` 分离
 权威来源；Goal completion 需要独立 Completion Contract，`PASS` Run 不得推断完成。
 

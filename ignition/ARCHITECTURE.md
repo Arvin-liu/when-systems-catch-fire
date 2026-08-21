@@ -11,6 +11,8 @@ FALLBACK_MINIMAL`。易变 identity、method、task、map、lineage、status 与
 Current Snapshot 提供；这些 replaceable executors 不拥有 OS authority。Structural Governance
 Surface 是 advisory cross-cutting overlay，不增加 L7，不改变 capability、permission 或 epistemic status。
 
+任务身份的两个稳定解释保持分离：Current formal task 表示最近哪一轮正式任务正在或刚刚成为 Current；latest architecture-changing task 表示最近哪一轮改变系统身份或架构。二者允许不同，formal release transaction 不自动改写 architecture identity。
+
 <!-- CURRENT-SNAPSHOT:BEGIN profile=human schema=current-snapshot-r1 -->
 - Current Snapshot（机器生成；请勿手改）。
 - current_identity_epoch: `os-control-plane-r4-steering-intent-r1`；system_role: `Ignition OS / orchestration-governance layer`。

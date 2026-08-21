@@ -17,6 +17,8 @@ permission 或 epistemic status。
 Steering / Intent / Goal / Obligation R1 记录 Owner/提议来源、Goal 生命周期、独立完成契约、
 承诺义务、why-next、漂移和 handoff；`PASS` Run 不等于 Goal 完成，系统提议不等于 Owner authority。
 
+任务身份分成两个稳定角色：Current formal task 回答“最近哪一轮正式任务正在或刚刚成为 Current”；latest architecture-changing task 回答“最近哪一轮改变了系统身份或架构”。二者允许不同，publication witness 只观察发布身份，不授予 architecture 或 Owner authority。
+
 <!-- CURRENT-SNAPSHOT:BEGIN profile=ai schema=current-snapshot-r1 -->
 - Current Snapshot（generated; read this block before interpreting prose）。
 - current_identity_epoch: `os-control-plane-r4-steering-intent-r1`；system_role: `Ignition OS / orchestration-governance layer`。

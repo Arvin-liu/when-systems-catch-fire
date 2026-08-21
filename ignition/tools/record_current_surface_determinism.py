@@ -15,9 +15,9 @@ from typing import Any
 HERE = Path(__file__).resolve()
 ROOT = HERE.parents[1]
 REPO_ROOT = ROOT.parent
-REPORT_PATH = ROOT / "data/operations/iterations/132/step05-deterministic-current-surface-r1.json"
+REPORT_PATH = ROOT / "data/operations/iterations/132/step10-deterministic-current-surface-r1.json"
 TASK_ID = "IGNITION-20260822-132"
-REPORT_SCHEMA = "ignition-132-step05-deterministic-current-surface-r1"
+REPORT_SCHEMA = "ignition-132-step10-deterministic-current-surface-r1"
 OUTPUTS = [
     "ignition/data/architecture/current-facts.json",
     "ignition/docs/architecture/current-facts.md",
