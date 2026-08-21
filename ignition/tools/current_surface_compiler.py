@@ -68,7 +68,7 @@ def render_block(snapshot: dict[str, Any], profile: str) -> str:
             f"- current_task: `{task['task_id']}`；status: `{task['execution_status']}`；terminal: `{str(task['terminal']).lower()}`；latest_architecture_changing_task: `{snapshot['latest_architecture_changing_task']}`。",
             f"- release_lifecycle: phase `{release['phase']}`；publication `{release['publication_state']}`；projection `{release['task_branch_projection']}`。",
             f"- current_method: `{snapshot['current_method_version']}` Current；current_map: `{map_data['current_version']}` Current；historical_map: `{map_data['historical_versions'][0]}` Historical。",
-            f"- current_state_status: `{status['current_state_status']}`；epistemic_acceptance: `{status['epistemically_accepted']}`；live_external_ceiling: `{snapshot['live_external_ceiling']}`。",
+            f"- current_state_status: `{status['current_state_status']}`；EPISTEMICALLY_ACCEPTED={status['epistemically_accepted']}；epistemic_acceptance: `{status['epistemically_accepted']}`；live_external_ceiling: `{snapshot['live_external_ceiling']}`。",
             f"- architecture_counts: `{_count_summary(snapshot)}`；active_overlays: `{_overlay_labels(snapshot)}`。",
             f"- task_lineage: current `{lineage['current_task_id']}` `{lineage['current_task_status']}`；predecessor `{lineage['predecessor_status']}` / `{lineage['predecessor_requirement_lineage']}`；successor `{lineage['successor_status']}`。",
             f"- {source_hint}；source_digest: `{snapshot['generated_from_source_digest']}`。",
