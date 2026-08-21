@@ -53,7 +53,7 @@ def render_block(snapshot: dict[str, Any], profile: str) -> str:
         lines = [
             begin,
             f"CURRENT_SNAPSHOT identity_epoch={identity['epoch']} system_role={json.dumps(identity['system_role'], ensure_ascii=False)} current_method_version={snapshot['current_method_version']} current_task_id={task['task_id']} current_task_status={task['execution_status']} current_task_terminal={str(task['terminal']).lower()} current_map_version={map_data['current_version']} historical_map_version={map_data['historical_versions'][0]} current_state_status={status['current_state_status']} epistemic_acceptance={status['epistemically_accepted']} live_external_ceiling={snapshot['live_external_ceiling']} source_digest={snapshot['generated_from_source_digest']}",
-            f"CURRENT_SNAPSHOT architecture_counts={json.dumps(snapshot['architecture_counts'], ensure_ascii=False, sort_keys=True)} overlays={json.dumps(_overlay_labels(snapshot), ensure_ascii=False)} lineage_current={lineage['current_task_id']} lineage_status={lineage['current_task_status']}",
+            f"CURRENT_SNAPSHOT architecture_counts={json.dumps(snapshot['architecture_counts'], ensure_ascii=False, sort_keys=True)} overlays={json.dumps(_overlay_labels(snapshot), ensure_ascii=False)} lineage_current={lineage['current_task_id']} lineage_status={lineage['current_task_status']} lineage_predecessor_status={lineage['predecessor_status']} lineage_predecessor_requirement={lineage['predecessor_requirement_lineage']} lineage_successor_status={lineage['successor_status']}",
             f"CURRENT_SNAPSHOT claim_ceiling={json.dumps(snapshot['claim_ceiling'], ensure_ascii=False)}",
             BLOCK_END,
         ]

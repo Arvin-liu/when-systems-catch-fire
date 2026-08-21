@@ -34,7 +34,7 @@
     {"surface_id": "project-current-state", "path": "ignition/docs/project-current-state.md", "profile": "human", "insert_after": "更新时间："},
     {"surface_id": "ai-cold-start", "path": "ignition/AI-START-HERE.md", "profile": "ai", "insert_before": "## 读取顺序"},
     {"surface_id": "ai-agents-handoff", "path": "ignition/AI-HANDOFF.md", "profile": "ai", "insert_before": "## 权威链"},
-    {"surface_id": "machine-entry", "path": "ignition/llms.txt", "profile": "machine", "insert_after": "# llms.txt"},
+    {"surface_id": "machine-entry", "path": "ignition/llms.txt", "profile": "machine", "insert_after": "Current project state:"},
     {"surface_id": "architecture", "path": "ignition/ARCHITECTURE.md", "profile": "human", "insert_before_first_heading": true},
     {"surface_id": "state-changelog", "path": "ignition/STATE-CHANGELOG.md", "profile": "ai", "insert_after": "# 点火状态增量日志"}
   ],

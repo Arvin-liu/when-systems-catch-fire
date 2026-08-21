@@ -8,26 +8,32 @@
 
 > ## 长瞻一宇同叩月, 此心相契共今宵。
 
-项目的规范性方向由[生命共同体价值宪章](../ignition/docs/governance/life-community-value-charter.md)约束；宪章是价值边界，不是经验事实、数学证明或外部真值来源。点火当前总上限仍是 `CURRENT_WITH_OPEN_OBLIGATIONS`。工程完成、写作完成、测试通过、重复引用、跨域对应、模型美感或 Agent 共识都不能自动抬升命题的断言地位。
+项目的规范性方向由[生命共同体价值宪章](../ignition/docs/governance/life-community-value-charter.md)约束；宪章是价值边界，不是经验事实、数学证明或外部真值来源。工程与 epistemic ceiling 由 generated Current Snapshot 投影；工程完成、写作完成、测试通过、重复引用、跨域对应、模型美感或 Agent 共识都不能自动抬升命题的断言地位。
 
-点火当前主干以一个有界、可审计、可恢复的 Agent Platform 原型为工程脊柱；它是长期状态、价值、任务、权限、记忆、验证和 executor 协同的 OS / orchestration-governance layer。OpenClaw、Hermes、Codex 是可替换执行器，不是点火的替代系统；知识治理是第一个大型 Domain Pack，而不是整个系统本体。R2 的仓库内能力、边界和未完成义务见[Agent Platform R2](../ignition/docs/architecture/agent-platform-r2.md)、[OS Control Plane R2](../ignition/docs/architecture/os-control-plane-r2.md)与[智能体化边界](../ignition/docs/architecture/agentization-boundary-r0.md)。Task 122 再以[External Agent Federation R1](../ignition/docs/architecture/external-agent-federation-r1.md)把三家接为可替换 adapter，并把现有自研执行层冻结为 `REFERENCE_EXECUTOR / CONFORMANCE_EXECUTOR / FALLBACK_MINIMAL`。Task 127 的 Durability / Lifecycle R3 仍在 OS 内，负责 repository-local snapshot、migration、namespace、Pack lifecycle、revocation、accounting、recovery 和 DR continuity；不建立第二张图，也不自动重放不确定外部副作用。新增的 Structural Governance Surface 是 advisory cross-cutting overlay：只提供阅读与实验上下文，不改变 capability、permission 或 epistemic status，也不增加 L7。当前唯一完整系统图是 `0.11.0`，`0.10.0` 仅作 Historical；真实 external invocation、当前计数和 live ceiling 仍以 [Current Facts](../ignition/docs/architecture/current-facts.md) 的 ceiling 为准；这不表示已经证明通用智能、长期自主性、现实世界普适安全性或外部有效性；`EPISTEMICALLY_ACCEPTED=0` 保持不变。
+点火当前主干以一个有界、可审计、可恢复的 Agent Platform 原型为工程脊柱；它是长期状态、价值、任务、权限、记忆、验证和 executor 协同的 OS / orchestration-governance layer。OpenClaw、Hermes、Codex 是可替换执行器，不是点火的替代系统；知识治理是第一个大型 Domain Pack，而不是整个系统本体。仓库内能力、边界和未完成义务见[Agent Platform R2](../ignition/docs/architecture/agent-platform-r2.md)、[OS Control Plane R2](../ignition/docs/architecture/os-control-plane-r2.md)、[External Agent Federation R1](../ignition/docs/architecture/external-agent-federation-r1.md)与[智能体化边界](../ignition/docs/architecture/agentization-boundary-r0.md)。Durability / Lifecycle 负责 repository-local snapshot、migration、namespace、Pack lifecycle、revocation、accounting、recovery 和 DR continuity；不建立第二张图，也不自动重放不确定外部副作用。Structural Governance Surface 是 advisory cross-cutting overlay：只提供阅读与实验上下文，不改变 capability、permission 或 epistemic status，也不增加 L7。Current Snapshot 与 Current Facts 负责易变版本、计数、任务、状态和 live ceiling；这不表示已经证明通用智能、长期自主性、现实世界普适安全性或外部有效性。
+本地行动层保持 Reference / Conformance / Fallback 边界；外部 executor 不拥有 OS authority，Current Snapshot 也不把仓库投影升级为现实证明。
+<!-- CURRENT-SNAPSHOT:BEGIN profile=human schema=current-snapshot-r1 -->
+- Current Snapshot（机器生成；请勿手改）。
+- current_identity_epoch: `os-control-plane-r4-steering-intent-r1`；system_role: `Ignition OS / orchestration-governance layer`。
+- current_task: `IGNITION-20260821-129`；status: `COMPLETED_WITH_CLASSIFIED_RESIDUALS`；terminal: `true`；latest_architecture_changing_task: `IGNITION-20260821-129`。
+- current_method: `1.4.0` Current；current_map: `0.12.0` Current；historical_map: `0.11.0` Historical。
+- current_state_status: `CURRENT_WITH_OPEN_OBLIGATIONS`；epistemic_acceptance: `0`；live_external_ceiling: `NOT_RUN_LIVE_EXTERNAL_INVOCATION`。
+- architecture_counts: `registry=94; visible_nodes=82; visible_edges=87`；active_overlays: `Durability / Lifecycle, Steering / Intent / Goal / Obligation, Structural Governance Surface`。
+- task_lineage: current `IGNITION-20260821-129` `COMPLETED_WITH_CLASSIFIED_RESIDUALS`；predecessor `HISTORICAL_UNEXECUTED_REBASED_INTO_127` / `REBASED_INTO_127`；successor `COMPLETED_WITH_CLASSIFIED_RESIDUALS`。
+- source: ignition/data/operations/current-snapshot-r1.json；source_digest: `b5d7e38163815c3749f3a932aa9601234fdddfe8a5c56ff474bd1ea94da46598`。
+- claim_ceiling: Deterministic repository-local Current projection only; no Owner authority, external truth, production readiness or epistemic upgrade.
+<!-- CURRENT-SNAPSHOT:END -->
 
 ### 当前主干怎样理解
 
-Task 129 的当前架构身份已推进到 `os-control-plane-r4-steering-intent-r1`：唯一完整系统图为
-`0.12.0` Current，`0.11.0` 为 Historical，`0.10.0` 及更早版本继续保留为历史证据。
 Steering / Intent / Goal / Obligation R1 记录来源权威、Goal 生命周期、独立完成契约、承诺义务、
 优先级、冲突、why-next、漂移和 handoff；`PASS` Run 不能推断 Goal 完成，系统提议不能晋升为
-Owner authority。Current Facts、地图和本页仍是仓库本地投影，`CURRENT_WITH_OPEN_OBLIGATIONS` /
-`EPISTEMICALLY_ACCEPTED=0` 不变。
+Owner authority。Current Snapshot、Current Facts、地图和本页都是仓库本地投影，易变值只从 canonical
+machine sources 生成。
 
 当前任务链以 [`current-task-lineage-status.json`](../ignition/data/operations/current-task-lineage-status.json)
-为机器权威：旧 `IGNITION-125` 文件从未执行，文件状态为
-`HISTORICAL_UNEXECUTED`；其有效 requirements 已 `REBASED_INTO_127`，规范状态为
-`HISTORICAL_UNEXECUTED_REBASED_INTO_127`。`IGNITION-127` 当前为
-`COMPLETED_WITH_CLASSIFIED_RESIDUALS`，新回归为 0；Task 128 只闭合 Current
-Human/AI 语义，不把 125 写成已执行，也不改变 `CURRENT_WITH_OPEN_OBLIGATIONS` /
-`EPISTEMICALLY_ACCEPTED=0`。
+为机器权威；历史 task、requirements lineage、terminal status 和本轮 Current 语义由 generated
+Current Snapshot 提供，不把历史记录重写为当前事实。
 
 - **它说什么：** Kernel、Runtime、Federation、Profile、Reasoner Gateway、Supervisor、Event Ledger、monotonic policy、resource arbitration、bounded concurrent scheduler、executor health lease、queue/backpressure、durable dispatch/reconciliation、concurrent operational memory、Durability / Lifecycle R3、Driver Console 和四个声明式 Domain Pack 已形成一条仓库内可检查的 Agent Platform R3 结构；OpenClaw、Hermes、Codex 只通过 provider-neutral adapter boundary 接入，当前唯一完整系统图仍是 registry/topology/layout 的确定性导航投影。
 - **为什么重要：** 行动、批准、恢复、记忆、Pack 路由和知识治理的职责被分开记录，Agent 可以提出和执行有界动作，但不能自行扩大权限、改写真值或替代 Owner。
