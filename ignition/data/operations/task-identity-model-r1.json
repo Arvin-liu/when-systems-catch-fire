@@ -1,0 +1,37 @@
+{
+  "schema_version": "task-identity-model-r1",
+  "contract_id": "FORMAL_TASK_VS_ARCHITECTURE_TASK_SEPARATION_INVARIANT",
+  "role_bindings": {
+    "current_formal_task": {
+      "role": "CURRENT_FORMAL_TASK",
+      "source_path": "ignition/data/operations/current-task-lineage-status.json",
+      "json_pointer": "/current_task/task_id",
+      "semantic": "Most recent formal task represented by canonical Current source."
+    },
+    "latest_architecture_changing_task": {
+      "role": "LATEST_ARCHITECTURE_CHANGING_TASK",
+      "source_path": "ignition/data/operations/current-release-lifecycle-r1.json",
+      "json_pointer": "/latest_architecture_changing_task",
+      "semantic": "Most recent task that changed architecture identity; it may differ from the current formal task."
+    },
+    "release_candidate_task": {
+      "role": "RELEASE_CANDIDATE_TASK",
+      "source_path": "ignition/data/operations/iterations/132/execution-contract-r1.json",
+      "json_pointer": "/task_id",
+      "semantic": "Task identity fixed by the formal execution contract before release-candidate formation."
+    },
+    "publication_witness_task": {
+      "role": "PUBLICATION_WITNESS_TASK",
+      "source_path": "Arvin-liu/1111:agent-results/IGNITION-20260822-132-publication-witness.json",
+      "json_pointer": "/task_id",
+      "authority": "CONTROL_REPOSITORY_RECEIPT",
+      "semantic": "Control-repository task responsible for observation-time remote-ref publication evidence; it grants no architecture authority."
+    }
+  },
+  "historical_lineage_source": {
+    "source_path": "ignition/data/operations/current-task-lineage-status.json",
+    "json_pointer": "/lineages",
+    "preserve_history": true
+  },
+  "claim_ceiling": "This model separates repository-local execution, architecture identity and publication observation roles; it does not grant Owner authority, truth authority, production readiness or epistemic acceptance."
+}
