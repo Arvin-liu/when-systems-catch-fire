@@ -167,9 +167,11 @@ def build_snapshot() -> dict[str, Any]:
             "claim_ceiling": lineage["claim_ceiling"]
         },
         "release_lifecycle": {
-            "phase": lifecycle["current_phase"],
-            "task_branch_projection": lifecycle["task_branch_projection"],
-            "publication_state": lifecycle["publication_state"]
+            "content_phase": lifecycle["content_phase"],
+            "required_publication_ref": lifecycle["required_publication_ref"],
+            "publication_authority": lifecycle["publication_authority"],
+            "embedded_publication_assertion": lifecycle["embedded_publication_assertion"],
+            "post_publication_check_required": lifecycle["post_publication_remote_check_required"]
         },
         "active_architecture_overlays": overlays,
         "live_external_ceiling": facts["facts"]["federation"]["live_invocation_ceiling"],

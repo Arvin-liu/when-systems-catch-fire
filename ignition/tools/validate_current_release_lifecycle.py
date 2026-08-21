@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate the typed, repository-local Current release lifecycle record."""
+"""Validate the content-owned, repository-local Current release lifecycle record."""
 
 from __future__ import annotations
 
@@ -20,9 +20,9 @@ LIFECYCLE_PATH = ROOT / "data/operations/current-release-lifecycle-r1.json"
 SCHEMA_PATH = ROOT / "schemas/operations/current-release-lifecycle-r1.schema.json"
 LINEAGE_PATH = ROOT / "data/operations/current-task-lineage-status.json"
 IDENTITY_PATH = ROOT / "data/architecture/current-system-identity.json"
-AUDIT_PATH = ROOT / "data/operations/iterations/130/step09-release-lifecycle-audit.json"
+AUDIT_PATH = ROOT / "data/operations/iterations/131/step02-lifecycle-migration-audit.json"
 
-PHASES = ["RUNNING", "PREPARED_FOR_RELEASE", "TERMINAL", "PUBLISHED", "POST_PUBLICATION_RECHECK"]
+PHASES = ["RUNNING", "TERMINAL_CANDIDATE", "RELEASE_READY"]
 
 
 def load_json(path: Path) -> Any:
@@ -50,23 +50,21 @@ def validate(document: dict[str, Any] | None = None) -> list[str]:
     if lifecycle["latest_architecture_changing_task"] == lifecycle["task_id"]:
         errors.append("presentation-only Current task cannot also be latest architecture-changing task")
     if current_task["identity_impact"] != "PRESENTATION_ONLY":
-        errors.append("IGNITION-130 lifecycle requires PRESENTATION_ONLY identity impact")
+        errors.append("release lifecycle requires PRESENTATION_ONLY identity impact")
     if lifecycle["phase_order"] != PHASES:
-        errors.append("phase_order must preserve the declared lifecycle order")
-    phase = lifecycle["current_phase"]
+        errors.append("phase_order must preserve the content-owned lifecycle order")
+    if lifecycle["required_publication_ref"] != "refs/heads/main":
+        errors.append("required_publication_ref must be refs/heads/main")
+    if lifecycle["publication_authority"] != "REMOTE_REF_OBSERVATION":
+        errors.append("publication_authority must be REMOTE_REF_OBSERVATION")
+    if lifecycle["embedded_publication_assertion"] != "NONE":
+        errors.append("embedded_publication_assertion must remain NONE")
+    phase = lifecycle["content_phase"]
     if phase == "RUNNING":
         if lifecycle["current_task_terminal"]:
             errors.append("RUNNING lifecycle cannot be terminal")
-        if lifecycle["publication_state"] != "NOT_PUBLISHED":
-            errors.append("RUNNING lifecycle must remain unpublished")
-        if lifecycle["post_publication_remote_check_status"] != "PENDING":
-            errors.append("RUNNING lifecycle remote check must be pending")
-    if phase in {"TERMINAL", "PUBLISHED", "POST_PUBLICATION_RECHECK"} and not lifecycle["current_task_terminal"]:
+    if phase in {"TERMINAL_CANDIDATE", "RELEASE_READY"} and not lifecycle["current_task_terminal"]:
         errors.append(f"{phase} lifecycle must be terminal")
-    if phase in {"PUBLISHED", "POST_PUBLICATION_RECHECK"} and lifecycle["publication_state"] != "PUBLISHED":
-        errors.append(f"{phase} lifecycle must be published")
-    if phase == "POST_PUBLICATION_RECHECK" and lifecycle["post_publication_remote_check_status"] != "PASS":
-        errors.append("POST_PUBLICATION_RECHECK requires PASS")
     if "sha" in json.dumps(lifecycle, ensure_ascii=False).casefold() or "commit" in lifecycle:
         errors.append("lifecycle record must not carry a release self-SHA")
     return errors
@@ -77,13 +75,14 @@ def audit() -> dict[str, Any]:
     lifecycle = load_json(LIFECYCLE_PATH)
     return {
         "schema_version": "current-release-lifecycle-audit-r1",
-        "task_id": "IGNITION-20260821-130",
+        "task_id": lifecycle["task_id"],
         "result": "PASS" if not errors else "FAIL",
-        "current_phase": lifecycle["current_phase"],
-        "publication_state": lifecycle["publication_state"],
+        "content_phase": lifecycle["content_phase"],
+        "publication_authority": lifecycle["publication_authority"],
+        "embedded_publication_assertion": lifecycle["embedded_publication_assertion"],
         "lifecycle_sha256": hashlib.sha256(LIFECYCLE_PATH.read_bytes()).hexdigest(),
         "errors": errors,
-        "claim_ceiling": "Lifecycle validation is repository-local coordination evidence only; it is not publication, external truth or epistemic acceptance."
+        "claim_ceiling": "Lifecycle validation is repository-local content-readiness evidence only; it is not remote publication, external truth, Owner acceptance or epistemic acceptance."
     }
 
 
@@ -103,7 +102,7 @@ def main() -> int:
         for error in result["errors"]:
             print(f"- {error}", file=sys.stderr)
         return 1
-    print(f"CURRENT_RELEASE_LIFECYCLE_OK phase={result['current_phase']} publication={result['publication_state']}")
+    print(f"CURRENT_RELEASE_LIFECYCLE_OK content_phase={result['content_phase']} publication_authority={result['publication_authority']} embedded_publication_assertion={result['embedded_publication_assertion']}")
     return 0
 
 

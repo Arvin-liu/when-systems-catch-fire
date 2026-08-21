@@ -57,7 +57,7 @@
     "current_state_status": "CURRENT_WITH_OPEN_OBLIGATIONS",
     "epistemically_accepted": 0
   },
-  "generated_from_source_digest": "c853937d3f2ac76787558772ab6eba36a3a933b71acca6dbf20204220b2fa27d",
+  "generated_from_source_digest": "b932017e0ad7e162b6619bd51487f8b1277e073c10694efeb4de2e9352e99299",
   "identity": {
     "driver_role": "driver",
     "epoch": "os-control-plane-r4-steering-intent-r1",
@@ -76,9 +76,11 @@
     "source_path": "ignition/data/architecture/interactive-system-map-layout.json"
   },
   "release_lifecycle": {
-    "phase": "PREPARED_FOR_RELEASE",
-    "publication_state": "NOT_PUBLISHED",
-    "task_branch_projection": "RELEASE_READY"
+    "content_phase": "RELEASE_READY",
+    "embedded_publication_assertion": "NONE",
+    "post_publication_check_required": true,
+    "publication_authority": "REMOTE_REF_OBSERVATION",
+    "required_publication_ref": "refs/heads/main"
   },
   "schema_version": "current-snapshot-r1",
   "source_policy": {

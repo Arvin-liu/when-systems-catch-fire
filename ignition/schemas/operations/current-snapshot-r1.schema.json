@@ -20,7 +20,7 @@
     "active_architecture_overlays": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/overlay"}},
     "live_external_ceiling": {"type": "string", "minLength": 1},
     "architecture_counts": {"type": "object", "minProperties": 1, "additionalProperties": {"type": ["string", "integer", "number"]}},
-    "release_lifecycle": {"type": "object", "additionalProperties": false, "required": ["phase", "task_branch_projection", "publication_state"], "properties": {"phase": {"type": "string", "minLength": 1}, "task_branch_projection": {"type": "string", "minLength": 1}, "publication_state": {"type": "string", "minLength": 1}}},
+    "release_lifecycle": {"type": "object", "additionalProperties": false, "required": ["content_phase", "required_publication_ref", "publication_authority", "embedded_publication_assertion", "post_publication_check_required"], "properties": {"content_phase": {"type": "string", "minLength": 1}, "required_publication_ref": {"const": "refs/heads/main"}, "publication_authority": {"const": "REMOTE_REF_OBSERVATION"}, "embedded_publication_assertion": {"const": "NONE"}, "post_publication_check_required": {"const": true}}},
     "claim_ceiling": {"type": "string", "minLength": 1}
   },
   "$defs": {
