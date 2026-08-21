@@ -1,0 +1,182 @@
+{
+  "schema_version": "iteration-boundary-archaeology-r1",
+  "task_id": "IGNITION-20260822-133",
+  "step": "00",
+  "baseline": {
+    "formal_repository": "Arvin-liu/when-systems-catch-fire",
+    "formal_origin_main": "5ed99d148dfb49e6c2ff729a345d2499d4b76021",
+    "remote_main": "5ed99d148dfb49e6c2ff729a345d2499d4b76021",
+    "worktree_clean": true
+  },
+  "field": "current_iteration_boundary",
+  "answers": {
+    "first_appearance": {
+      "commit": "a23bcd005de78442c271b5502f5a4b422766ae98",
+      "task_id": "IGNITION-20260816-123",
+      "path": "ignition/data/architecture/current-system-identity.json",
+      "initial_value": 122,
+      "evidence": "Task123 Step 01 established CURRENT_STATE_SYNC_INVARIANT while preserving the prior current architecture boundary; the same Step 02 projection also carried 122."
+    },
+    "historical_progression": [
+      {
+        "task_id": "IGNITION-20260816-123",
+        "commit": "a23bcd005de78442c271b5502f5a4b422766ae98",
+        "value": 122,
+        "identity_impact": "PRESENTATION_ONLY",
+        "interpretation": "Prior boundary retained while the sync contract was introduced."
+      },
+      {
+        "task_id": "IGNITION-20260817-124",
+        "commit": "9a665eb8f48620611fdf27bce7a5d14d550819fe",
+        "value": 124,
+        "identity_impact": "ARCHITECTURE_CHANGED",
+        "interpretation": "Value advanced with the control-plane architecture release."
+      },
+      {
+        "task_id": "IGNITION-20260818-126",
+        "commit": "c15bb6e0ad9befcf8f013fb7a6a2e6636549dc6f",
+        "value": 126,
+        "identity_impact": "ARCHITECTURE_CHANGED",
+        "interpretation": "Value advanced with the ESI/current-surface architecture synchronization."
+      },
+      {
+        "task_id": "IGNITION-20260820-127",
+        "commit": "2952d53bbc113c75b506f12ddaaf96a4083013d8",
+        "value": 127,
+        "identity_impact": "ARCHITECTURE_CHANGED",
+        "interpretation": "Value advanced with the durability/lifecycle architecture synchronization."
+      },
+      {
+        "task_id": "IGNITION-20260821-128",
+        "commit": "415164fa13577149acccfddc96df218f481689d6",
+        "value": 128,
+        "identity_impact": "PRESENTATION_ONLY",
+        "interpretation": "Value advanced during Current-state lineage repair, but no field-level semantic contract was added."
+      },
+      {
+        "task_id": "IGNITION-20260821-129",
+        "commit": "c3889f074fecf605900707e45410a29273ca156d",
+        "value": 129,
+        "identity_impact": "ARCHITECTURE_CHANGED",
+        "interpretation": "Value coincided with the latest architecture-changing task."
+      },
+      {
+        "task_id": "IGNITION-20260821-130",
+        "commit": "e66f2402f6efb083ebccdbd97acd0c14ae78fee2",
+        "value": 130,
+        "identity_impact": "PRESENTATION_ONLY",
+        "interpretation": "Task130 Step 09 changed the value while adding the lifecycle record, without a task-id derivation or architecture-change basis."
+      },
+      {
+        "task_id": "IGNITION-20260821-131",
+        "commit": "27a4b55831a17113660444aca4c452fa1d177658",
+        "value": 130,
+        "identity_impact": "PRESENTATION_ONLY",
+        "interpretation": "Lifecycle publication semantics changed, but the opaque boundary value was retained."
+      },
+      {
+        "task_id": "IGNITION-20260822-132",
+        "commit": "15e17ada5201815ad59cab5c3251780ae628faea",
+        "value": 130,
+        "identity_impact": "PRESENTATION_ONLY",
+        "interpretation": "Canonical formal task, lifecycle and release bindings advanced to Task132, but the opaque boundary was not advanced or redefined."
+      }
+    ],
+    "architecture_task_separation": {
+      "latest_architecture_changing_task": "IGNITION-20260821-129",
+      "latest_architecture_task_ordinal": 129,
+      "current_formal_task": "IGNITION-20260822-132",
+      "current_formal_task_ordinal": 132,
+      "finding": "The two roles are independent; Task130, Task131 and Task132 prove that a formal task can advance without a new architecture identity."
+    },
+    "task130_reason": {
+      "evidence": "Task130 Step 09 diff changed current-system-identity.json and current-facts.json from 129 to 130 while creating current-release-lifecycle-r1.json with the same copied integer.",
+      "design_status": "UNSPECIFIED",
+      "finding": "The repository contains no derivation rule, schema description or validator relation explaining why a presentation-only Task130 should advance an architecture-like boundary."
+    },
+    "task131_132_reason": {
+      "finding": "Both tasks added stronger task-id bindings but left current_iteration_boundary as an independent integer; the omission is the direct source of the fresh-main drift."
+    },
+    "consumer_audit": [
+      {
+        "path": "ignition/data/architecture/current-system-identity.json",
+        "role": "opaque canonical contract field",
+        "behavior": "Stores an integer; current-state validation only requires presence and non-negative type."
+      },
+      {
+        "path": "ignition/data/operations/current-release-lifecycle-r1.json",
+        "role": "copied lifecycle field",
+        "behavior": "Stores an integer and validator only compares it with current-system-identity.json."
+      },
+      {
+        "path": "ignition/tools/generate_current_facts.py",
+        "role": "deterministic projection consumer",
+        "behavior": "Copies the identity integer to the top-level and facts.iteration projection and renders it in generated Markdown."
+      },
+      {
+        "path": "ignition/data/operations/current-volatile-fact-registry-r1.json",
+        "role": "volatile fact registry entry",
+        "behavior": "Declares identity.json as the source and allows a snapshot rendering, but supplies no task-id or ordinal derivation."
+      },
+      {
+        "path": "ignition/tools/validate_current_state_sync.py",
+        "role": "sync validator",
+        "behavior": "Validates integer schema and receipt equality with the identity contract; it does not bind the field to a task identity."
+      },
+      {
+        "path": "ignition/tools/validate_current_release_lifecycle.py",
+        "role": "lifecycle validator",
+        "behavior": "Validates lifecycle equality with identity; Task132 task-id binding does not include an ordinal relation."
+      },
+      {
+        "path": "ignition/tools/build_current_snapshot.py / ignition/tools/current_surface_compiler.py",
+        "role": "snapshot/compiler path",
+        "behavior": "The registry advertises a snapshot rendering, but the materialized Task132 snapshot and compiled blocks do not expose the field; this is a dead/misleading declaration rather than a semantic consumer."
+      },
+      {
+        "path": "ignition/schemas/architecture/current-system-identity.schema.json and related schemas",
+        "role": "shape validation",
+        "behavior": "Declare only a non-negative integer; no meaning, source, alias or separation is encoded."
+      },
+      {
+        "path": "ignition/data/operations/iterations/{123,124,126,127,128,129,130}/current-state-sync-receipt.json",
+        "role": "historical receipts",
+        "behavior": "Retain captured boundary values as historical evidence; they must not be rewritten or treated as the current source."
+      }
+    ]
+  },
+  "finding": {
+    "status": "SEMANTICALLY_UNDEFINED_AND_CURRENTLY_STALE",
+    "current_value": 130,
+    "current_formal_task_at_baseline": "IGNITION-20260822-132",
+    "latest_architecture_changing_task_at_baseline": "IGNITION-20260821-129",
+    "conclusion": "The value 130 is neither a derivable architecture ordinal nor a defined formal-task ordinal. It is an accidental opaque coupling introduced by Task130 and retained through Task132."
+  },
+  "step01_design_input": {
+    "recommended_resolution": "COMPATIBILITY_ALIAS_TO_CURRENT_FORMAL_TASK_ORDINAL",
+    "canonical_fields": [
+      "current_formal_task_id",
+      "current_formal_task_ordinal",
+      "latest_architecture_changing_task_id",
+      "latest_architecture_task_ordinal",
+      "current_method_version"
+    ],
+    "compatibility_field": "current_iteration_boundary",
+    "compatibility_rule": "If retained, current_iteration_boundary is a deprecated, deterministic alias of current_formal_task_ordinal in Current surfaces; historical receipts retain their captured values and labels.",
+    "required_fail_closed_cases": [
+      "malformed or undated task id",
+      "task id/ordinal mismatch",
+      "stale manually injected ordinal",
+      "formal and architecture roles accidentally forced equal"
+    ]
+  },
+  "baseline_gates": {
+    "current_task_lineage": "PASS",
+    "task_identity_model": "PASS",
+    "release_lifecycle": "PASS_WITH_UNCHECKED_ORDINAL_SEMANTICS",
+    "current_snapshot_determinism": "PASS",
+    "current_facts_determinism": "PASS",
+    "current_state_sync": "PASS_WITH_UNCHECKED_ORDINAL_SEMANTICS"
+  },
+  "claim_ceiling": "Repository-local historical archaeology and consumer audit only; no external truth, production readiness, Owner acceptance or epistemic acceptance is inferred."
+}
