@@ -2,14 +2,14 @@
 <!-- CURRENT-SNAPSHOT:BEGIN profile=ai schema=current-snapshot-r1 -->
 - Current Snapshot（generated; read this block before interpreting prose）。
 - current_identity_epoch: `os-control-plane-r4-steering-intent-r1`；system_role: `Ignition OS / orchestration-governance layer`。
-- current_formal_task: `IGNITION-20260822-132`；status: `IN_PROGRESS`；terminal: `false`；latest_architecture_changing_task: `IGNITION-20260821-129`；publication_witness_task: `IGNITION-20260822-132`。
-- release_lifecycle: task `IGNITION-20260822-132`；content phase `RUNNING`；publication authority `REMOTE_REF_OBSERVATION`；embedded publication assertion `NONE`；required ref `refs/heads/main`；post-publication verification must observe that remote ref。
+- current_formal_task: `IGNITION-20260822-132`；status: `COMPLETED_WITH_CLASSIFIED_RESIDUALS`；terminal: `true`；latest_architecture_changing_task: `IGNITION-20260821-129`；publication_witness_task: `IGNITION-20260822-132`。
+- release_lifecycle: task `IGNITION-20260822-132`；content phase `RELEASE_READY`；publication authority `REMOTE_REF_OBSERVATION`；embedded publication assertion `NONE`；required ref `refs/heads/main`；post-publication verification must observe that remote ref。
 - publication_instruction: run ref-derived verification against `refs/heads/main`; do not infer publication from embedded Current content。
 - current_method: `1.4.0` Current；current_map: `0.12.0` Current；historical_map: `0.11.0` Historical。
 - current_state_status: `CURRENT_WITH_OPEN_OBLIGATIONS`；EPISTEMICALLY_ACCEPTED=0；epistemic_acceptance: `0`；live_external_ceiling: `NOT_RUN_LIVE_EXTERNAL_INVOCATION`。
 - architecture_counts: `registry=94; visible_nodes=82; visible_edges=87`；active_overlays: `Durability / Lifecycle, Steering / Intent / Goal / Obligation, Structural Governance Surface`。
-- task_lineage: current `IGNITION-20260822-132` `IN_PROGRESS`；predecessor `HISTORICAL_UNEXECUTED_REBASED_INTO_127` / `REBASED_INTO_127`；successor `COMPLETED_WITH_CLASSIFIED_RESIDUALS`。
-- source: ignition/data/operations/current-snapshot-r1.json；source_digest: `50bca1bb1c0b8e0fba0d212c534124fbd2b7cf931c391897e93232bb77264f08`。
+- task_lineage: current `IGNITION-20260822-132` `COMPLETED_WITH_CLASSIFIED_RESIDUALS`；predecessor `HISTORICAL_UNEXECUTED_REBASED_INTO_127` / `REBASED_INTO_127`；successor `COMPLETED_WITH_CLASSIFIED_RESIDUALS`。
+- source: ignition/data/operations/current-snapshot-r1.json；source_digest: `3523da6fdf0c30001d5d9c680d3f85e01cf0818c8408175f85f0d2f94566d2fa`。
 - claim_ceiling: Deterministic repository-local Current projection only; no Owner authority, external truth, production readiness or epistemic upgrade.
 <!-- CURRENT-SNAPSHOT:END -->
 
@@ -245,3 +245,14 @@
 - architecture_boundary: latest architecture-changing task remains `IGNITION-20260821-129`; this release-governance advancement does not upgrade the architecture identity or map version.
 - epistemic_state: `CURRENT_WITH_OPEN_OBLIGATIONS` and `EPISTEMICALLY_ACCEPTED=0` remain unchanged; source advancement is repository-local lifecycle evidence only and does not grant Owner authority or establish external truth.
 - next_read: follow the Task132 execution contract, release-candidate identity gate and generated Current projection; historical 129–131 receipts remain immutable history.
+
+## 2026-08-22 — IGNITION-20260822-132-CANONICAL-CURRENT-MIGRATION — terminal source migration
+
+- main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; this append-only entry records the Task132 canonical-source migration on the task branch, not formal `main` publication.
+- migration: formal Current task is now `IGNITION-20260822-132` with `COMPLETED_WITH_CLASSIFIED_RESIDUALS` and terminal `true`; lifecycle is `RELEASE_READY` and terminal. The bug exposed after Task131—Task131 completed and published while canonical Current remained at Task130—is repaired by advancing the canonical source before release closure.
+- lineage_boundary: `IGNITION-20260821-131` remains the immediate historical formal predecessor; `IGNITION-20260821-130` remains the previous canonical Current source; Task125 remains `HISTORICAL_UNEXECUTED` with requirements `REBASED_INTO_127`; Task127 remains `COMPLETED_WITH_CLASSIFIED_RESIDUALS`; the 125→127 rebased lineage remains unchanged; Task129 remains the latest architecture-changing task.
+- architecture_boundary: Current map remains `0.12.0` and identity epoch remains `os-control-plane-r4-steering-intent-r1`; this presentation/release-governance migration does not claim an architecture change.
+- publication_boundary: `RELEASE_READY` is content-owned readiness only. Publication authority remains `REMOTE_REF_OBSERVATION`, embedded publication assertion remains `NONE`, and the exact release SHA remains reserved for the remote-ref observation and separate 1111 witness.
+- epistemic_state: `CURRENT_WITH_OPEN_OBLIGATIONS` and `EPISTEMICALLY_ACCEPTED=0` remain unchanged; migration, generated projections, tests and release candidate evidence do not grant Owner authority or establish external truth, production readiness or epistemic acceptance.
+- residual_boundary: Task129–131 historical residuals remain classified and are not rewritten; Task132 records the source-advancement fix separately from those historical receipts.
+- next_read: verify the generated Current Snapshot and all compiler-owned surfaces, then run the Step 10–12 closure before fresh-clone candidate verification.

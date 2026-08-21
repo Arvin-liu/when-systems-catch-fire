@@ -1,0 +1,31 @@
+{
+  "schema_version": "ignition-132-step09-canonical-current-migration-r1",
+  "task_id": "IGNITION-20260822-132",
+  "step": "09",
+  "status": "PASS",
+  "migration": {
+    "current_formal_task": "IGNITION-20260822-132",
+    "current_task_status": "COMPLETED_WITH_CLASSIFIED_RESIDUALS",
+    "current_task_terminal": true,
+    "previous_canonical_current_task": "IGNITION-20260821-130",
+    "previous_formal_task": "IGNITION-20260821-131",
+    "lifecycle_task": "IGNITION-20260822-132",
+    "lifecycle_content_phase": "RELEASE_READY",
+    "latest_architecture_changing_task": "IGNITION-20260821-129",
+    "map_version": "0.12.0",
+    "identity_epoch": "os-control-plane-r4-steering-intent-r1"
+  },
+  "preserved_history": [
+    "IGNITION-20260821-130",
+    "IGNITION-20260821-131",
+    "IGNITION-125 -> IGNITION-127 lineage"
+  ],
+  "bug_fixed": "Task131 completed and was published, but canonical Current source remained at Task130; Task132 advances the source before release closure.",
+  "publication_boundary": {
+    "publication_authority": "REMOTE_REF_OBSERVATION",
+    "embedded_publication_assertion": "NONE",
+    "formal_self_witness_commit": false,
+    "exact_release_sha": "DEFERRED_TO_STEP_14_REMOTE_REF_AND_1111_WITNESS"
+  },
+  "claim_ceiling": "Canonical repository-local Current migration and content-owned release readiness only; no publication, external truth, production readiness, Owner acceptance or epistemic acceptance is inferred."
+}

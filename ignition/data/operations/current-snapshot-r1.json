@@ -47,17 +47,17 @@
   "contract_id": "CURRENT_SURFACE_NO_SPLIT_BRAIN_INVARIANT",
   "current_method_version": "1.4.0",
   "current_task": {
-    "execution_status": "IN_PROGRESS",
+    "execution_status": "COMPLETED_WITH_CLASSIFIED_RESIDUALS",
     "identity_impact": "PRESENTATION_ONLY",
     "scope": "Canonical Current Advancement & Release Transaction R1",
     "task_id": "IGNITION-20260822-132",
-    "terminal": false
+    "terminal": true
   },
   "engineering_status": {
     "current_state_status": "CURRENT_WITH_OPEN_OBLIGATIONS",
     "epistemically_accepted": 0
   },
-  "generated_from_source_digest": "50bca1bb1c0b8e0fba0d212c534124fbd2b7cf931c391897e93232bb77264f08",
+  "generated_from_source_digest": "3523da6fdf0c30001d5d9c680d3f85e01cf0818c8408175f85f0d2f94566d2fa",
   "identity": {
     "driver_role": "driver",
     "epoch": "os-control-plane-r4-steering-intent-r1",
@@ -76,7 +76,7 @@
     "source_path": "ignition/data/architecture/interactive-system-map-layout.json"
   },
   "release_lifecycle": {
-    "content_phase": "RUNNING",
+    "content_phase": "RELEASE_READY",
     "embedded_publication_assertion": "NONE",
     "post_publication_check_required": true,
     "publication_authority": "REMOTE_REF_OBSERVATION",
@@ -100,7 +100,7 @@
   "task_lineage": {
     "claim_ceiling": "Canonical repository-local task lineage and status semantics only; this record does not grant authority, prove external truth, establish production readiness, or set epistemic acceptance.",
     "current_task_id": "IGNITION-20260822-132",
-    "current_task_status": "IN_PROGRESS",
+    "current_task_status": "COMPLETED_WITH_CLASSIFIED_RESIDUALS",
     "predecessor_requirement_lineage": "REBASED_INTO_127",
     "predecessor_status": "HISTORICAL_UNEXECUTED_REBASED_INTO_127",
     "successor_status": "COMPLETED_WITH_CLASSIFIED_RESIDUALS"

@@ -102,7 +102,7 @@
     },
     "task_lineage": {
       "current_task_id": "IGNITION-20260822-132",
-      "current_task_status": "IN_PROGRESS",
+      "current_task_status": "COMPLETED_WITH_CLASSIFIED_RESIDUALS",
       "task125_canonical_status": "HISTORICAL_UNEXECUTED_REBASED_INTO_127",
       "task125_file_status": "HISTORICAL_UNEXECUTED",
       "task125_requirement_lineage_status": "REBASED_INTO_127",
@@ -154,7 +154,7 @@
     },
     {
       "path": "ignition/data/operations/current-task-lineage-status.json",
-      "sha256": "80bb91a265e6fb3dd00f6311ab41a633cde664cd9e20b53fd5c9e142eabbbad2"
+      "sha256": "9d1e5826c05c8c95c22a3316b9c5b4986027221807a82a7fbf17757bfca2f993"
     },
     {
       "path": "ignition/data/operations/project-components.json",
