@@ -933,6 +933,23 @@ class PriorityInputs:
         _bounded_text(self.deadline_state, "priority.deadline_state")
         object.__setattr__(self, "unknowns", _refs(self.unknowns, "priority.unknowns"))
 
+    def to_dict(self) -> dict[str, Any]:
+        return {
+            "goal_id": self.goal_id,
+            "owner_rank": self.owner_rank,
+            "commitment_status": self.commitment_status,
+            "dependency_criticality": self.dependency_criticality,
+            "risk_level": self.risk_level,
+            "resource_available": self.resource_available,
+            "blocked": self.blocked,
+            "permission_eligible": self.permission_eligible,
+            "fairness_age": self.fairness_age,
+            "deadline_state": self.deadline_state,
+            "owner_override": self.owner_override.to_dict() if self.owner_override is not None else None,
+            "approval_required": self.approval_required,
+            "unknowns": list(self.unknowns),
+        }
+
 
 @dataclass(frozen=True)
 class PriorityDecision:
@@ -960,7 +977,7 @@ class PriorityDecision:
         _bounded_text(self.authority, "priority.decision.authority")
 
     def to_dict(self) -> dict[str, Any]:
-        return {"schema": f"{STEERING_SCHEMA}.priority-decision", "goal_id": self.goal_id, "eligible": self.eligible, "lexicographic_key": list(self.lexicographic_key), "reasons": list(self.reasons), "owner_override_visible": self.owner_override_visible, "owner_override_retractable": self.owner_override_retractable, "telemetry_score": self.telemetry_score, "authority": self.authority}
+        return {"schema": f"{STEERING_SCHEMA}.priority-decision", "goal_id": self.goal_id, "eligible": self.eligible, "lexicographic_key": list(self.lexicographic_key), "reasons": list(self.reasons), "owner_override_visible": self.owner_override_visible, "owner_override_retractable": self.owner_override_retractable, "telemetry_score": self.telemetry_score, "authority": self.authority, "inputs": self.inputs.to_dict()}
 
 
 class PriorityPolicy:
@@ -1005,6 +1022,178 @@ class PriorityPolicy:
         if not override.provenance.is_owner_authority:
             raise SteeringValidationError("only Owner override can be retracted")
         return replace(override, active=False)
+
+
+CONFLICT_TYPES = frozenset({
+    "RESOURCE_CONTENTION",
+    "PERMISSION_VS_DEADLINE",
+    "DEADLINE_VS_SAFETY",
+    "OVERRIDE_VS_AUTOMATION",
+    "MUTUALLY_EXCLUSIVE_GOALS",
+    "SUPERSEDED_INTENT",
+    "EXECUTOR_UNAVAILABLE",
+})
+ARBITRATION_OUTCOMES = frozenset({"SELECTED", "BLOCKED", "DEFERRED", "RECONCILIATION_REQUIRED", "HUMAN_REVIEW"})
+
+
+@dataclass(frozen=True)
+class ConflictCandidate:
+    """A candidate plus state that can make an otherwise valid priority unsafe."""
+
+    priority_inputs: PriorityInputs
+    intent_status: str = "ACTIVE"
+    mutually_exclusive_group: str | None = None
+    executor_available: bool = True
+    stale: bool = False
+    superseded: bool = False
+    safety_critical: bool = False
+
+    @property
+    def goal_id(self) -> str:
+        return self.priority_inputs.goal_id
+
+    def __post_init__(self) -> None:
+        if self.intent_status not in INTENT_STATUSES:
+            raise SteeringValidationError("conflict candidate intent_status is invalid")
+        if self.mutually_exclusive_group is not None:
+            _safe_id(self.mutually_exclusive_group, "conflict.mutually_exclusive_group")
+        for field in ("executor_available", "stale", "superseded", "safety_critical"):
+            if not isinstance(getattr(self, field), bool):
+                raise SteeringValidationError(f"conflict.{field} must be boolean")
+
+    def to_dict(self) -> dict[str, Any]:
+        return {
+            "goal_id": self.goal_id,
+            "priority_inputs": self.priority_inputs.to_dict(),
+            "intent_status": self.intent_status,
+            "mutually_exclusive_group": self.mutually_exclusive_group,
+            "executor_available": self.executor_available,
+            "stale": self.stale,
+            "superseded": self.superseded,
+            "safety_critical": self.safety_critical,
+        }
+
+
+@dataclass(frozen=True)
+class ArbitrationReceipt:
+    arbitration_id: str
+    conflict_type: str
+    outcome: str
+    selected_goal_id: str | None
+    decisions: tuple[PriorityDecision, ...]
+    reasons: tuple[str, ...]
+    reconciliation_required: bool
+    created_at: str
+    authority: str = "LEXICOGRAPHIC_RULES_R1_WITH_EXPLICIT_RECONCILIATION"
+
+    def __post_init__(self) -> None:
+        _safe_id(self.arbitration_id, "arbitration_id")
+        if self.conflict_type not in CONFLICT_TYPES:
+            raise SteeringValidationError("arbitration conflict_type is invalid")
+        if self.outcome not in ARBITRATION_OUTCOMES:
+            raise SteeringValidationError("arbitration outcome is invalid")
+        if self.selected_goal_id is not None:
+            _safe_id(self.selected_goal_id, "arbitration.selected_goal_id")
+        if not isinstance(self.decisions, tuple) or not self.decisions:
+            raise SteeringValidationError("arbitration requires priority decisions")
+        object.__setattr__(self, "reasons", _refs(self.reasons, "arbitration.reasons"))
+        if not isinstance(self.reconciliation_required, bool):
+            raise SteeringValidationError("arbitration reconciliation_required must be boolean")
+        _timestamp(self.created_at, "arbitration.created_at")
+        _bounded_text(self.authority, "arbitration.authority")
+
+    def to_dict(self) -> dict[str, Any]:
+        return {
+            "schema": f"{STEERING_SCHEMA}.arbitration-receipt",
+            "arbitration_id": self.arbitration_id,
+            "conflict_type": self.conflict_type,
+            "outcome": self.outcome,
+            "selected_goal_id": self.selected_goal_id,
+            "decisions": [decision.to_dict() for decision in self.decisions],
+            "reasons": list(self.reasons),
+            "reconciliation_required": self.reconciliation_required,
+            "created_at": self.created_at,
+            "authority": self.authority,
+        }
+
+
+class ConflictArbiter:
+    """Resolve only what explicit policy inputs permit; preserve unsafe conflicts."""
+
+    def __init__(self, policy: PriorityPolicy | None = None) -> None:
+        self.policy = policy or PriorityPolicy()
+
+    def arbitrate(self, arbitration_id: str, conflict_type: str, candidates: Sequence[ConflictCandidate], *, created_at: str) -> ArbitrationReceipt:
+        _safe_id(arbitration_id, "arbitration_id")
+        if conflict_type not in CONFLICT_TYPES:
+            raise SteeringValidationError("unknown arbitration conflict_type")
+        _timestamp(created_at, "arbitration.created_at")
+        candidate_list = tuple(candidates)
+        if not candidate_list:
+            raise SteeringValidationError("arbitration requires at least one candidate")
+        if len({candidate.goal_id for candidate in candidate_list}) != len(candidate_list):
+            raise SteeringValidationError("arbitration candidate goal_ids must be unique")
+
+        decisions = self.policy.order(tuple(candidate.priority_inputs for candidate in candidate_list))
+        by_goal = {candidate.goal_id: candidate for candidate in candidate_list}
+        reasons: list[str] = []
+        usable: list[tuple[PriorityDecision, ConflictCandidate]] = []
+        has_permission_block = False
+        has_reconciliation = False
+        has_human_review = False
+
+        for decision in decisions:
+            candidate = by_goal[decision.goal_id]
+            owner_override_active = bool(candidate.priority_inputs.owner_override and candidate.priority_inputs.owner_override.active)
+            if candidate.superseded or candidate.intent_status == "SUPERSEDED":
+                has_reconciliation = True
+                reasons.append(f"superseded_intent:{candidate.goal_id}")
+                continue
+            if candidate.stale and not owner_override_active:
+                has_reconciliation = True
+                reasons.append(f"stale_priority:{candidate.goal_id}")
+                continue
+            if not candidate.executor_available:
+                has_reconciliation = True
+                reasons.append(f"executor_unavailable:{candidate.goal_id}")
+                continue
+            if not decision.eligible:
+                if not candidate.priority_inputs.permission_eligible:
+                    has_permission_block = True
+                reasons.extend(f"{reason}:{candidate.goal_id}" for reason in decision.reasons if reason in {"permission_ineligible", "blocked", "resource_unavailable"})
+                continue
+            if candidate.safety_critical and candidate.priority_inputs.approval_required and not owner_override_active:
+                has_human_review = True
+                reasons.append(f"safety_requires_owner_review:{candidate.goal_id}")
+                continue
+            usable.append((decision, candidate))
+
+        if has_human_review:
+            outcome = "HUMAN_REVIEW"
+            selected_goal_id = None
+            reasons.append("unsafe_safety_conflict_not_auto_resolved")
+        elif usable:
+            selected_goal_id = usable[0][0].goal_id
+            outcome = "SELECTED"
+            reasons.append(f"selected_by_lexicographic_policy:{selected_goal_id}")
+            if conflict_type == "MUTUALLY_EXCLUSIVE_GOALS" or any(candidate.mutually_exclusive_group for _, candidate in usable):
+                reasons.append("mutually_exclusive_losers_deferred")
+            if has_reconciliation:
+                reasons.append("stale_or_unavailable_candidates_preserved_for_reconciliation")
+        elif has_reconciliation:
+            outcome = "RECONCILIATION_REQUIRED"
+            selected_goal_id = None
+            reasons.append("no_safe_candidate_after_state_reconciliation")
+        elif has_permission_block:
+            outcome = "BLOCKED"
+            selected_goal_id = None
+            reasons.append("permission_ceiling_blocks_arbitration")
+        else:
+            outcome = "DEFERRED"
+            selected_goal_id = None
+            reasons.append("no_eligible_candidate")
+
+        return ArbitrationReceipt(arbitration_id, conflict_type, outcome, selected_goal_id, decisions, tuple(reasons), outcome == "RECONCILIATION_REQUIRED" or has_reconciliation, created_at)
 
 
 @dataclass(frozen=True)
@@ -1391,4 +1580,5 @@ __all__ = [
     "TEMPORAL_STATES", "TemporalWindow", "TemporalEvaluation", "evaluate_temporal",
     "DEPENDENCY_EDGE_TYPES", "GraphNode", "DependencyEdge", "GoalDependencyGraph", "GoalDependencyGraphError",
     "RISK_LEVELS", "OwnerOverride", "PriorityInputs", "PriorityDecision", "PriorityPolicy",
+    "CONFLICT_TYPES", "ARBITRATION_OUTCOMES", "ConflictCandidate", "ArbitrationReceipt", "ConflictArbiter",
 ]

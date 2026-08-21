@@ -1,0 +1,80 @@
+{
+  "schema": "os-steering-intent-obligation-r1.arbitration-fixtures",
+  "cases": [
+    {
+      "arbitration_id": "arb-resource",
+      "conflict_type": "RESOURCE_CONTENTION",
+      "candidates": [
+        {"priority": {"goal_id": "goal-resource-alpha", "owner_rank": 2, "commitment_status": "ACTIVE", "dependency_criticality": 4, "risk_level": "LOW", "resource_available": true, "blocked": false, "permission_eligible": true, "fairness_age": 3, "deadline_state": "DUE", "approval_required": false}, "intent_status": "ACTIVE", "mutually_exclusive_group": "resource-slot-1", "executor_available": true, "stale": false, "superseded": false, "safety_critical": false},
+        {"priority": {"goal_id": "goal-resource-beta", "owner_rank": 1, "commitment_status": "DUE", "dependency_criticality": 9, "risk_level": "LOW", "resource_available": false, "blocked": false, "permission_eligible": true, "fairness_age": 20, "deadline_state": "OVERDUE", "approval_required": false}, "intent_status": "ACTIVE", "mutually_exclusive_group": "resource-slot-1", "executor_available": true, "stale": false, "superseded": false, "safety_critical": false}
+      ],
+      "expected_outcome": "SELECTED",
+      "expected_selected_goal_id": "goal-resource-alpha",
+      "expected_reconciliation": false
+    },
+    {
+      "arbitration_id": "arb-permission-deadline",
+      "conflict_type": "PERMISSION_VS_DEADLINE",
+      "candidates": [
+        {"priority": {"goal_id": "goal-permission-denied", "owner_rank": 0, "commitment_status": "DUE", "dependency_criticality": 100, "risk_level": "LOW", "resource_available": true, "blocked": false, "permission_eligible": false, "fairness_age": 99, "deadline_state": "OVERDUE", "approval_required": false}, "intent_status": "ACTIVE", "mutually_exclusive_group": null, "executor_available": true, "stale": false, "superseded": false, "safety_critical": false},
+        {"priority": {"goal_id": "goal-permission-fallback", "owner_rank": 10, "commitment_status": "ACTIVE", "dependency_criticality": 1, "risk_level": "LOW", "resource_available": true, "blocked": false, "permission_eligible": true, "fairness_age": 1, "deadline_state": "ACTIVE_WINDOW", "approval_required": false}, "intent_status": "ACTIVE", "mutually_exclusive_group": null, "executor_available": true, "stale": false, "superseded": false, "safety_critical": false}
+      ],
+      "expected_outcome": "SELECTED",
+      "expected_selected_goal_id": "goal-permission-fallback",
+      "expected_reconciliation": false
+    },
+    {
+      "arbitration_id": "arb-safety",
+      "conflict_type": "DEADLINE_VS_SAFETY",
+      "candidates": [
+        {"priority": {"goal_id": "goal-safety-critical", "owner_rank": 0, "commitment_status": "DUE", "dependency_criticality": 8, "risk_level": "HIGH", "resource_available": true, "blocked": false, "permission_eligible": true, "fairness_age": 50, "deadline_state": "OVERDUE", "approval_required": true}, "intent_status": "ACTIVE", "mutually_exclusive_group": null, "executor_available": true, "stale": false, "superseded": false, "safety_critical": true},
+        {"priority": {"goal_id": "goal-safety-fallback", "owner_rank": 4, "commitment_status": "ACTIVE", "dependency_criticality": 1, "risk_level": "LOW", "resource_available": true, "blocked": false, "permission_eligible": true, "fairness_age": 1, "deadline_state": "ACTIVE_WINDOW", "approval_required": false}, "intent_status": "ACTIVE", "mutually_exclusive_group": null, "executor_available": true, "stale": false, "superseded": false, "safety_critical": false}
+      ],
+      "expected_outcome": "HUMAN_REVIEW",
+      "expected_selected_goal_id": null,
+      "expected_reconciliation": false
+    },
+    {
+      "arbitration_id": "arb-owner-override",
+      "conflict_type": "OVERRIDE_VS_AUTOMATION",
+      "candidates": [
+        {"priority": {"goal_id": "goal-owner-selected", "owner_rank": 50, "commitment_status": "ACTIVE", "dependency_criticality": 1, "risk_level": "MEDIUM", "resource_available": true, "blocked": false, "permission_eligible": true, "fairness_age": 1, "deadline_state": "ACTIVE_WINDOW", "approval_required": false}, "intent_status": "ACTIVE", "mutually_exclusive_group": null, "executor_available": true, "stale": false, "superseded": false, "safety_critical": false},
+        {"priority": {"goal_id": "goal-automated-ranked", "owner_rank": 0, "commitment_status": "DUE", "dependency_criticality": 9, "risk_level": "LOW", "resource_available": true, "blocked": false, "permission_eligible": true, "fairness_age": 10, "deadline_state": "DUE", "approval_required": false}, "intent_status": "ACTIVE", "mutually_exclusive_group": null, "executor_available": true, "stale": false, "superseded": false, "safety_critical": false}
+      ],
+      "expected_outcome": "SELECTED",
+      "expected_selected_goal_id": "goal-owner-selected",
+      "expected_reconciliation": false
+    },
+    {
+      "arbitration_id": "arb-exclusive",
+      "conflict_type": "MUTUALLY_EXCLUSIVE_GOALS",
+      "candidates": [
+        {"priority": {"goal_id": "goal-exclusive-first", "owner_rank": 1, "commitment_status": "ACTIVE", "dependency_criticality": 3, "risk_level": "LOW", "resource_available": true, "blocked": false, "permission_eligible": true, "fairness_age": 2, "deadline_state": "DUE", "approval_required": false}, "intent_status": "ACTIVE", "mutually_exclusive_group": "exclusive-1", "executor_available": true, "stale": false, "superseded": false, "safety_critical": false},
+        {"priority": {"goal_id": "goal-exclusive-second", "owner_rank": 2, "commitment_status": "ACTIVE", "dependency_criticality": 3, "risk_level": "LOW", "resource_available": true, "blocked": false, "permission_eligible": true, "fairness_age": 20, "deadline_state": "DUE", "approval_required": false}, "intent_status": "ACTIVE", "mutually_exclusive_group": "exclusive-1", "executor_available": true, "stale": false, "superseded": false, "safety_critical": false}
+      ],
+      "expected_outcome": "SELECTED",
+      "expected_selected_goal_id": "goal-exclusive-first",
+      "expected_reconciliation": false
+    },
+    {
+      "arbitration_id": "arb-superseded",
+      "conflict_type": "SUPERSEDED_INTENT",
+      "candidates": [
+        {"priority": {"goal_id": "goal-superseded", "owner_rank": 0, "commitment_status": "ACTIVE", "dependency_criticality": 20, "risk_level": "LOW", "resource_available": true, "blocked": false, "permission_eligible": true, "fairness_age": 30, "deadline_state": "OVERDUE", "approval_required": false}, "intent_status": "SUPERSEDED", "mutually_exclusive_group": null, "executor_available": true, "stale": false, "superseded": true, "safety_critical": false}
+      ],
+      "expected_outcome": "RECONCILIATION_REQUIRED",
+      "expected_selected_goal_id": null,
+      "expected_reconciliation": true
+    },
+    {
+      "arbitration_id": "arb-executor",
+      "conflict_type": "EXECUTOR_UNAVAILABLE",
+      "candidates": [
+        {"priority": {"goal_id": "goal-no-executor", "owner_rank": 0, "commitment_status": "DUE", "dependency_criticality": 5, "risk_level": "LOW", "resource_available": true, "blocked": false, "permission_eligible": true, "fairness_age": 4, "deadline_state": "DUE", "approval_required": false}, "intent_status": "ACTIVE", "mutually_exclusive_group": null, "executor_available": false, "stale": false, "superseded": false, "safety_critical": false}
+      ],
+      "expected_outcome": "RECONCILIATION_REQUIRED",
+      "expected_selected_goal_id": null,
+      "expected_reconciliation": true
+    }
+  ]
+}

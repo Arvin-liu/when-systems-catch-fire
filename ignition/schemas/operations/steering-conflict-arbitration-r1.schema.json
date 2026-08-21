@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Arvin-liu/when-systems-catch-fire/schemas/operations/steering-conflict-arbitration-r1.schema.json",
+  "title": "OS Steering Conflict Arbitration R1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "cases"],
+  "properties": {
+    "schema": {"const": "os-steering-intent-obligation-r1.arbitration-fixtures"},
+    "cases": {
+      "type": "array",
+      "minItems": 6,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["arbitration_id", "conflict_type", "candidates", "expected_outcome", "expected_selected_goal_id", "expected_reconciliation"],
+        "properties": {
+          "arbitration_id": {"type": "string"},
+          "conflict_type": {"type": "string"},
+          "candidates": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["priority", "intent_status", "mutually_exclusive_group", "executor_available", "stale", "superseded", "safety_critical"],
+              "properties": {
+                "priority": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": ["goal_id", "owner_rank", "commitment_status", "dependency_criticality", "risk_level", "resource_available", "blocked", "permission_eligible", "fairness_age", "deadline_state", "approval_required"],
+                  "properties": {
+                    "goal_id": {"type": "string"},
+                    "owner_rank": {"type": ["integer", "null"]},
+                    "commitment_status": {"type": "string"},
+                    "dependency_criticality": {"type": "integer", "minimum": 0},
+                    "risk_level": {"type": "string"},
+                    "resource_available": {"type": "boolean"},
+                    "blocked": {"type": "boolean"},
+                    "permission_eligible": {"type": "boolean"},
+                    "fairness_age": {"type": "integer", "minimum": 0},
+                    "deadline_state": {"type": "string"},
+                    "approval_required": {"type": "boolean"},
+                    "unknowns": {"type": "array", "items": {"type": "string"}}
+                  }
+                },
+                "intent_status": {"type": "string"},
+                "mutually_exclusive_group": {"type": ["string", "null"]},
+                "executor_available": {"type": "boolean"},
+                "stale": {"type": "boolean"},
+                "superseded": {"type": "boolean"},
+                "safety_critical": {"type": "boolean"}
+              }
+            }
+          },
+          "expected_outcome": {"type": "string"},
+          "expected_selected_goal_id": {"type": ["string", "null"]},
+          "expected_reconciliation": {"type": "boolean"}
+        }
+      }
+    }
+  }
+}
