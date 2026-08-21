@@ -248,11 +248,15 @@
 
 ## 2026-08-22 — IGNITION-20260822-132-CANONICAL-CURRENT-MIGRATION — terminal source migration
 
-- main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; this append-only entry records the Task132 canonical-source migration on the task branch, not formal `main` publication.
+- main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; formal main baseline is `e04752d20d071bac8f0c4a1e5cff20fb3004dae1`; this append-only entry records the Task132 canonical-source migration on the task branch, not formal `main` publication.
+- delta: advances canonical Current from the stale post-Task131 source state to terminal Task132 and binds the content-owned lifecycle to the same task identity before publication.
+- authority_changes: canonical task-lineage source, lifecycle, Current Snapshot, Current Facts and compiler-owned Current surfaces are synchronized projections; no authority, map or identity epoch is added.
 - migration: formal Current task is now `IGNITION-20260822-132` with `COMPLETED_WITH_CLASSIFIED_RESIDUALS` and terminal `true`; lifecycle is `RELEASE_READY` and terminal. The bug exposed after Task131—Task131 completed and published while canonical Current remained at Task130—is repaired by advancing the canonical source before release closure.
 - lineage_boundary: `IGNITION-20260821-131` remains the immediate historical formal predecessor; `IGNITION-20260821-130` remains the previous canonical Current source; Task125 remains `HISTORICAL_UNEXECUTED` with requirements `REBASED_INTO_127`; Task127 remains `COMPLETED_WITH_CLASSIFIED_RESIDUALS`; the 125→127 rebased lineage remains unchanged; Task129 remains the latest architecture-changing task.
 - architecture_boundary: Current map remains `0.12.0` and identity epoch remains `os-control-plane-r4-steering-intent-r1`; this presentation/release-governance migration does not claim an architecture change.
 - publication_boundary: `RELEASE_READY` is content-owned readiness only. Publication authority remains `REMOTE_REF_OBSERVATION`, embedded publication assertion remains `NONE`, and the exact release SHA remains reserved for the remote-ref observation and separate 1111 witness.
 - epistemic_state: `CURRENT_WITH_OPEN_OBLIGATIONS` and `EPISTEMICALLY_ACCEPTED=0` remain unchanged; migration, generated projections, tests and release candidate evidence do not grant Owner authority or establish external truth, production readiness or epistemic acceptance.
+- obligations: complete the bounded regression, fresh-clone release-candidate checks, ordinary fast-forward and separate 1111 publication witness; preserve historical and environmental residual classifications.
+- stale_knowledge: Task130/131 historical release records and the prior stale canonical Current source remain provenance; `RELEASE_READY` must not be read as a static publication claim.
 - residual_boundary: Task129–131 historical residuals remain classified and are not rewritten; Task132 records the source-advancement fix separately from those historical receipts.
 - next_read: verify the generated Current Snapshot and all compiler-owned surfaces, then run the Step 10–12 closure before fresh-clone candidate verification.

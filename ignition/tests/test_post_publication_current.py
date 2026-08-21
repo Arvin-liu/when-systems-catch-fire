@@ -44,15 +44,14 @@ class PostPublicationCurrentTests(unittest.TestCase):
         self.assertEqual(result["observed_remote_sha"], remote)
         self.assertTrue(any("remote main SHA differs" in error for error in result["errors"]))
 
-    def test_post_publication_sha_equality_is_checked_before_content_readiness(self) -> None:
+    def test_post_publication_passes_when_content_and_all_three_shas_match(self) -> None:
         candidate = "a" * 40
         fake_git = self._fake_git(head=candidate, remote=candidate)
         with patch.object(checker, "git", side_effect=fake_git):
             result = checker.run_checks(post_publication=True, expected_sha=candidate)
-        self.assertEqual(result["result"], "FAIL", result["errors"])
+        self.assertEqual(result["result"], "PASS", result["errors"])
         self.assertEqual(result["observed_ref"], "refs/heads/main")
         self.assertEqual(result["head_sha"], result["observed_remote_sha"])
-        self.assertTrue(any("content_phase RELEASE_READY" in error for error in result["errors"]))
 
     def test_matching_remote_sha_does_not_override_task_id_mismatch(self) -> None:
         candidate = "a" * 40

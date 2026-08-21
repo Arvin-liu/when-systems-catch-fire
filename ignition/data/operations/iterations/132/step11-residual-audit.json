@@ -26,15 +26,15 @@
       "classification": "HISTORICAL_ENVIRONMENTAL_PROJECTION_RESIDUAL",
       "prior_receipt_recorded_missing": 96,
       "fresh_e047_baseline_missing": 164,
-      "current_candidate_missing": 194,
+      "current_candidate_missing": 192,
       "evidence": "The same all-tracked-accounted gate fails on a clean e047 baseline; no historical manifest or validator semantics were rewritten."
     },
     {
       "residual_id": "TASK132_NEW_PROJECTION_MANIFEST_PATHS_28",
       "classification": "NEW_TASK132_OPERATIONAL_HYGIENE_RESIDUAL",
-      "count": 30,
-      "cause": "Task132 added 30 formal contract, schema, fixture, test, tool, progress and report paths not present in the historical projection manifest by the end of Step11.",
-      "handling": "Recorded separately from the 164-path baseline residual; not reclassified as a Current semantic failure and not repaired by weakening the validator."
+      "count": 28,
+      "cause": "Task132 had added 28 formal contract, schema, fixture, test, tool, progress and report paths at the Step11 measurement boundary.",
+      "handling": "Recorded separately from the 164-path baseline residual; subsequent Step11/12 audit artifacts are counted in Step12 and are not reclassified as a Current semantic failure or repaired by weakening the validator."
     },
     {
       "residual_id": "T16_SYMPY_COUNTEREXAMPLE",

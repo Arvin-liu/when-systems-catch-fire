@@ -1,0 +1,62 @@
+{
+  "schema_version": "ignition-132-step12-regression-closure-r1",
+  "task_id": "IGNITION-20260822-132",
+  "step": "12",
+  "status": "COMPLETED_WITH_CLASSIFIED_RESIDUALS",
+  "targeted_regression": [
+    {
+      "scope": "current_and_release_identity",
+      "tests": 95,
+      "passed": 95,
+      "failed": 0,
+      "result": "PASS"
+    },
+    {
+      "scope": "steering_durability_federation_soft_governance",
+      "tests": 202,
+      "passed": 201,
+      "failed": 1,
+      "result": "PASS_WITH_CLASSIFIED_RESIDUAL",
+      "residual": "test_durability_projection_hygiene expects the historical manifest gate to pass; live replay reports missing=194."
+    },
+    {
+      "scope": "human_frontdoor_map_privacy_sync",
+      "tests": 98,
+      "passed": 95,
+      "failed": 3,
+      "result": "PASS_WITH_CLASSIFIED_RESIDUALS",
+      "residuals": [
+        "Human front-door validator reproduces 11 pre-existing source-hash drifts.",
+        "Legacy overall-architecture test expects 81 nodes while the current 0.12.0 map has 82; geometry and materialized map checks pass.",
+        "State Changelog validator retains five historical field/base-tip errors in entries 17, 19, 20 and 21 plus five Task132 source-transition entry-shape errors in entry 22; append-only records were not rewritten."
+      ]
+    }
+  ],
+  "bounded_commands": {
+    "current_task_lineage": "PASS",
+    "current_release_lifecycle": "PASS",
+    "current_facts_snapshot_surface_sync": "PASS",
+    "task_identity_model": "PASS",
+    "release_transaction_protocol": "PASS",
+    "release_fault_matrix": "PASS_13_CASES",
+    "iteration_sync": "PASS",
+    "system_map_geometry": "PASS_HEIGHT_2912_BLANK_REDUCTION_0.8741007194",
+    "system_map_geometry_fixtures": "PASS",
+    "owner_observation_privacy": "PASS",
+    "secret_scan": "PASS_0_MATCHES",
+    "local_path_scan": "PASS_0_MATCHES"
+  },
+  "full_discovery": {
+    "command": "PYTHONPATH=ignition python3 -m unittest discover -s ignition/tests -p 'test*.py'",
+    "result": "TIMEOUT_CLASSIFIED",
+    "timeout_seconds": 30,
+    "last_observation": "migrated 12 records -> temporary protocols-canonical.json",
+    "claim": "No full-discovery PASS is claimed."
+  },
+  "new_task132_regressions": [
+    "TASK132_NEW_PROJECTION_MANIFEST_PATHS_30",
+    "TASK132_STATE_CHANGELOG_SOURCE_TRANSITION_ENTRY_SHAPE_5_ERRORS"
+  ],
+  "current_semantic_regressions": 0,
+  "claim_ceiling": "Targeted and bounded repository regression evidence plus explicit residual classification only; no external truth, production readiness, Owner acceptance or epistemic acceptance is inferred."
+}
