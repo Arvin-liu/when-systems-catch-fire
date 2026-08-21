@@ -1,0 +1,7 @@
+{
+  "schema": "os-steering-intent-obligation-r1.offline-pilot-fixture",
+  "expected_selected_goal_id": "goal-writing",
+  "required_domains": ["research", "writing", "repository", "knowledge", "background", "superseded", "unavailable"],
+  "expected_run_pass_outcome": "UNVERIFIABLE",
+  "expected_owner_outcome": "SATISFIED"
+}

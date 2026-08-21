@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Arvin-liu/when-systems-catch-fire/schemas/operations/steering-offline-pilot-r1.schema.json",
+  "title": "OS Steering Offline Pilot R1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "expected_selected_goal_id", "required_domains", "expected_run_pass_outcome", "expected_owner_outcome"],
+  "properties": {
+    "schema": {"const": "os-steering-intent-obligation-r1.offline-pilot-fixture"},
+    "expected_selected_goal_id": {"const": "goal-writing"},
+    "required_domains": {"type": "array", "minItems": 7, "items": {"type": "string"}},
+    "expected_run_pass_outcome": {"const": "UNVERIFIABLE"},
+    "expected_owner_outcome": {"const": "SATISFIED"}
+  }
+}
