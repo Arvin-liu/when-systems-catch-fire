@@ -1,0 +1,53 @@
+{
+  "schema_version": "ignition-131-step00-publication-paradox-audit-r1",
+  "task_id": "IGNITION-20260821-131",
+  "audited_before_repair": true,
+  "formal_repository": "Arvin-liu/when-systems-catch-fire",
+  "baseline_main_sha": "11e5ed0f8f16f7f315179b540f08018c2e6e45d1",
+  "remote_main_ref": "refs/heads/main",
+  "remote_main_sha": "11e5ed0f8f16f7f315179b540f08018c2e6e45d1",
+  "fresh_clone_observation": {
+    "checkout_branch": "main",
+    "head_sha": "11e5ed0f8f16f7f315179b540f08018c2e6e45d1",
+    "remote_main_sha": "11e5ed0f8f16f7f315179b540f08018c2e6e45d1",
+    "working_tree_clean": true,
+    "clone_policy": "isolated fresh checkout followed by fresh origin/main fetch"
+  },
+  "static_current_observation": {
+    "lifecycle_current_phase": "PREPARED_FOR_RELEASE",
+    "lifecycle_task_branch_projection": "RELEASE_READY",
+    "lifecycle_publication_state": "NOT_PUBLISHED",
+    "lifecycle_post_publication_remote_check_status": "PENDING",
+    "snapshot_release_phase": "PREPARED_FOR_RELEASE",
+    "snapshot_release_publication_state": "NOT_PUBLISHED",
+    "snapshot_release_task_branch_projection": "RELEASE_READY"
+  },
+  "validator_reproduction": {
+    "lifecycle_check": {
+      "command": "python3 ignition/tools/validate_current_release_lifecycle.py --check",
+      "result": "PASS"
+    },
+    "post_publication_check": {
+      "command": "python3 ignition/tools/validate_post_publication_current.py --post-publication --expected-sha 11e5ed0f8f16f7f315179b540f08018c2e6e45d1",
+      "result": "PASS",
+      "reported_head_sha": "11e5ed0f8f16f7f315179b540f08018c2e6e45d1"
+    }
+  },
+  "false_closure": {
+    "observed": true,
+    "cause": [
+      "post-publication mode accepts PREPARED_FOR_RELEASE",
+      "the validator checks local branch main and local HEAD only",
+      "the validator does not execute git ls-remote origin refs/heads/main",
+      "the lifecycle and Current Snapshot still project NOT_PUBLISHED/PENDING as current publication facts"
+    ],
+    "classification": "validator_false_closure_not_wording_only"
+  },
+  "required_invariants": [
+    "PUBLICATION_STATE_REF_DERIVED_INVARIANT",
+    "NO_SELF_REFERENTIAL_PUBLICATION_ASSERTION_INVARIANT",
+    "POST_PUBLICATION_GATE_OBSERVES_REMOTE_REF_INVARIANT",
+    "PUBLICATION_WITNESS_SEPARATION_INVARIANT"
+  ],
+  "claim_ceiling": "Repository-local publication-paradox audit only; it proves neither external truth, production readiness, Owner acceptance nor epistemic acceptance."
+}
