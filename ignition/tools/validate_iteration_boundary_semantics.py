@@ -11,12 +11,19 @@ from typing import Any
 
 from jsonschema import Draft202012Validator
 
+try:
+    from tools import task_identity
+except ImportError:
+    import task_identity
+
 
 HERE = Path(__file__).resolve()
 ROOT = HERE.parents[1]
 REPO_ROOT = ROOT.parent
 MODEL_PATH = ROOT / "data/operations/iteration-boundary-semantics-r1.json"
 SCHEMA_PATH = ROOT / "schemas/operations/iteration-boundary-semantics-r1.schema.json"
+LINEAGE_PATH = ROOT / "data/operations/current-task-lineage-status.json"
+LIFECYCLE_PATH = ROOT / "data/operations/current-release-lifecycle-r1.json"
 
 FIELD_ORDER = (
     "current_formal_task_id",
@@ -86,6 +93,21 @@ def validate(document: dict[str, Any] | None = None) -> list[str]:
         errors.append("named ordinal fields must have integer value_type")
     if "value" in alias or "value" in fields["current_formal_task_ordinal"] or "value" in fields["latest_architecture_task_ordinal"]:
         errors.append("ordinal values must not be manually stored in the semantic model")
+
+    lineage = load_json(LINEAGE_PATH)
+    lifecycle = load_json(LIFECYCLE_PATH)
+    current_formal_task = lineage["task_identity"]["current_formal_task"]
+    current_task = lineage["current_task"]["task_id"]
+    architecture_task = lineage["task_identity"]["latest_architecture_changing_task"]
+    try:
+        task_identity.parse_task_id(current_formal_task)
+        task_identity.parse_task_id(architecture_task)
+    except task_identity.TaskIdentityError as exc:
+        errors.append(f"canonical task identity is not parseable: {exc}")
+    if current_formal_task != current_task:
+        errors.append("canonical current formal task identity must match current_task.task_id")
+    if lifecycle["task_id"] != current_formal_task:
+        errors.append("release lifecycle task_id must match current formal task identity")
     return errors
 
 
