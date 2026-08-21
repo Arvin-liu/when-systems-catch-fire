@@ -1,0 +1,100 @@
+{
+  "schema_version": "iteration-boundary-semantics-r1",
+  "contract_id": "ITERATION_BOUNDARY_SEMANTICS_INVARIANT",
+  "semantic_status": "CURRENT",
+  "field_order": [
+    "current_formal_task_id",
+    "current_formal_task_ordinal",
+    "latest_architecture_changing_task_id",
+    "latest_architecture_task_ordinal",
+    "current_method_version",
+    "current_iteration_boundary"
+  ],
+  "fields": {
+    "current_formal_task_id": {
+      "definition": "The most recent formal task represented by the canonical Current task identity source.",
+      "source": {
+        "path": "ignition/data/operations/current-task-lineage-status.json",
+        "json_pointer": "/task_identity/current_formal_task",
+        "authority_class": "CANONICAL_TASK_IDENTITY"
+      },
+      "value_type": "task_id",
+      "derivation": "Read the canonical task identity string exactly; do not infer it from prose, branch names or commit messages.",
+      "lifecycle": "Advances only through the authorized canonical Current task advancement transaction.",
+      "compatibility": "No compatibility alias; this is the named source role."
+    },
+    "current_formal_task_ordinal": {
+      "definition": "The integer ordinal parsed from current_formal_task_id.",
+      "source_role": "current_formal_task_id",
+      "value_type": "integer",
+      "derivation": "parse_task_id(current_formal_task_id).ordinal using the deterministic provider-neutral task identity parser.",
+      "lifecycle": "Derived on every validation and projection build; never independently authored.",
+      "compatibility": "Canonical named ordinal for the formal task role."
+    },
+    "latest_architecture_changing_task_id": {
+      "definition": "The most recent task that changed architecture identity; it may differ from the current formal task.",
+      "source": {
+        "path": "ignition/data/operations/current-task-lineage-status.json",
+        "json_pointer": "/task_identity/latest_architecture_changing_task",
+        "authority_class": "CANONICAL_TASK_IDENTITY"
+      },
+      "value_type": "task_id",
+      "derivation": "Read the canonical architecture-task identity string exactly; do not infer it from the current formal task.",
+      "lifecycle": "Advances only when a task has explicit architecture identity impact and the canonical task identity source records it.",
+      "compatibility": "No compatibility alias; this is the named source role."
+    },
+    "latest_architecture_task_ordinal": {
+      "definition": "The integer ordinal parsed from latest_architecture_changing_task_id.",
+      "source_role": "latest_architecture_changing_task_id",
+      "value_type": "integer",
+      "derivation": "parse_task_id(latest_architecture_changing_task_id).ordinal using the deterministic provider-neutral task identity parser.",
+      "lifecycle": "Derived on every validation and projection build; never independently authored.",
+      "compatibility": "Canonical named ordinal for the architecture-changing task role."
+    },
+    "current_method_version": {
+      "definition": "The current iteration-method version declared by ITERATION.md.",
+      "source": {
+        "path": "ignition/ITERATION.md",
+        "marker": "^Current:\\s*`([^`]+)`$",
+        "authority_class": "CANONICAL_METHOD_DECLARATION"
+      },
+      "value_type": "version",
+      "derivation": "Extract the current method marker from the declared source; do not bind it to a task ordinal.",
+      "lifecycle": "Advances only through a method-version change, independently of formal task and architecture task ordinals.",
+      "compatibility": "Existing method-version consumers remain unchanged."
+    },
+    "current_iteration_boundary": {
+      "definition": "Deprecated compatibility alias for current_formal_task_ordinal in Current projections; it is not an architecture ordinal or an independent synchronization point.",
+      "source_role": "current_formal_task_ordinal",
+      "value_type": "integer",
+      "derivation": "Exact deterministic alias: current_iteration_boundary = current_formal_task_ordinal. No independent numeric source is permitted.",
+      "lifecycle": "Retained only for backward compatibility; new consumers must use the named formal and architecture ordinal fields.",
+      "compatibility": "DEPRECATED_COMPATIBILITY_ALIAS",
+      "status": "DEPRECATED_COMPATIBILITY_ALIAS",
+      "deprecated": true,
+      "must_equal": "current_formal_task_ordinal"
+    }
+  },
+  "compatibility_policy": {
+    "current_iteration_boundary": {
+      "status": "DEPRECATED_COMPATIBILITY_ALIAS",
+      "alias_of": "current_formal_task_ordinal",
+      "current_source": "iteration-boundary-semantics-r1",
+      "historical_records": "Historical receipts and changelog entries retain captured values and must be labeled Historical; they are not rewritten or reinterpreted as the Current source.",
+      "new_consumers": "Must consume current_formal_task_ordinal or latest_architecture_task_ordinal by name."
+    }
+  },
+  "separation": {
+    "formal_and_architecture_ordinals_are_independent": true,
+    "equality_required": false,
+    "valid_example": {
+      "current_formal_task_id": "IGNITION-20260822-133",
+      "current_formal_task_ordinal": 133,
+      "latest_architecture_changing_task_id": "IGNITION-20260821-129",
+      "latest_architecture_task_ordinal": 129,
+      "current_iteration_boundary": 133
+    },
+    "invalid_rule": "A difference between current_formal_task_ordinal and latest_architecture_task_ordinal is not a validation error; forcing equality is invalid."
+  },
+  "claim_ceiling": "Repository-local iteration identity and compatibility semantics only; no external truth, production readiness, Owner acceptance or epistemic acceptance is inferred."
+}
