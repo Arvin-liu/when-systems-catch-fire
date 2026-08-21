@@ -1,0 +1,1771 @@
+{
+  "claim_ceiling": "Classification is repository-local parsing evidence; it does not infer external truth or authority.",
+  "schema_version": "current-surface-classification-report-r1",
+  "snapshot_source_digest": "b5d7e38163815c3749f3a932aa9601234fdddfe8a5c56ff474bd1ea94da46598",
+  "surfaces": [
+    {
+      "classifications": [
+        {
+          "classification": "GENERATED_CURRENT",
+          "line": 15,
+          "matches": [
+            "snapshot_block"
+          ],
+          "path": ".github/README.md",
+          "profile": "human"
+        },
+        {
+          "classification": "GENERATED_CURRENT",
+          "line": 16,
+          "matches": [],
+          "path": ".github/README.md",
+          "profile": "human"
+        },
+        {
+          "classification": "GENERATED_CURRENT",
+          "line": 17,
+          "matches": [
+            "current_identity_epoch"
+          ],
+          "path": ".github/README.md",
+          "profile": "human"
+        },
+        {
+          "classification": "GENERATED_CURRENT",
+          "line": 18,
+          "matches": [
+            "current_task_id",
+            "current_task_status"
+          ],
+          "path": ".github/README.md",
+          "profile": "human"
+        },
+        {
+          "classification": "GENERATED_CURRENT",
+          "line": 19,
+          "matches": [
+            "version_token"
+          ],
+          "path": ".github/README.md",
+          "profile": "human"
+        },
+        {
+          "classification": "GENERATED_CURRENT",
+          "line": 20,
+          "matches": [
+            "current_state_status"
+          ],
+          "path": ".github/README.md",
+          "profile": "human"
+        },
+        {
+          "classification": "GENERATED_CURRENT",
+          "line": 21,
+          "matches": [],
+          "path": ".github/README.md",
+          "profile": "human"
+        },
+        {
+          "classification": "GENERATED_CURRENT",
+          "line": 22,
+          "matches": [
+            "current_task_id",
+            "current_task_status"
+          ],
+          "path": ".github/README.md",
+          "profile": "human"
+        },
+        {
+          "classification": "GENERATED_CURRENT",
+          "line": 23,
+          "matches": [],
+          "path": ".github/README.md",
+          "profile": "human"
+        },
+        {
+          "classification": "GENERATED_CURRENT",
+          "line": 24,
+          "matches": [],
+          "path": ".github/README.md",
+          "profile": "human"
+        },
+        {
+          "classification": "GENERATED_CURRENT",
+          "line": 25,
+          "matches": [],
+          "path": ".github/README.md",
+          "profile": "human"
+        },
+        {
+          "classification": "CURRENT_ASSERTION",
+          "line": 35,
+          "matches": [
+            "current_task_status"
+          ],
+          "path": ".github/README.md",
+          "text": "为机器权威；历史 task、requirements lineage、terminal status 和本轮 Current 语义由 generated"
+        }
+      ],
+      "generated_block_count": 1,
+      "path": ".github/README.md",
+      "profile": "human",
+      "surface_id": "homepage-identity"
+    },
+    {
+      "classifications": [
+        {
+          "classification": "GENERATED_CURRENT",
+          "line": 4,
+          "matches": [
+            "snapshot_block"
+          ],
+          "path": "ignition/docs/project-current-state.md",
+          "profile": "human"
+        },
+        {
+          "classification": "GENERATED_CURRENT",
+          "line": 5,
+          "matches": [],
+          "path": "ignition/docs/project-current-state.md",
+          "profile": "human"
+        },
+        {
+          "classification": "GENERATED_CURRENT",
+          "line": 6,
+          "matches": [
+            "current_identity_epoch"
+          ],
+          "path": "ignition/docs/project-current-state.md",
+          "profile": "human"
+        },
+        {
+          "classification": "GENERATED_CURRENT",
+          "line": 7,
+          "matches": [
+            "current_task_id",
+            "current_task_status"
+          ],
+          "path": "ignition/docs/project-current-state.md",
+          "profile": "human"
+        },
+        {
+          "classification": "GENERATED_CURRENT",
+          "line": 8,
+          "matches": [
+            "version_token"
+          ],
+          "path": "ignition/docs/project-current-state.md",
+          "profile": "human"
+        },
+        {
+          "classification": "GENERATED_CURRENT",
+          "line": 9,
+          "matches": [
+            "current_state_status"
+          ],
+          "path": "ignition/docs/project-current-state.md",
+          "profile": "human"
+        },
+        {
+          "classification": "GENERATED_CURRENT",
+          "line": 10,
+          "matches": [],
+          "path": "ignition/docs/project-current-state.md",
+          "profile": "human"
+        },
+        {
+          "classification": "GENERATED_CURRENT",
+          "line": 11,
+          "matches": [
+            "current_task_id",
+            "current_task_status"
+          ],
+          "path": "ignition/docs/project-current-state.md",
+          "profile": "human"
+        },
+        {
+          "classification": "GENERATED_CURRENT",
+          "line": 12,
+          "matches": [],
+          "path": "ignition/docs/project-current-state.md",
+          "profile": "human"
+        },
+        {
+          "classification": "GENERATED_CURRENT",
+          "line": 13,
+          "matches": [],
+          "path": "ignition/docs/project-current-state.md",
+          "profile": "human"
+        },
+        {
+          "classification": "GENERATED_CURRENT",
+          "line": 14,
+          "matches": [],
+          "path": "ignition/docs/project-current-state.md",
+          "profile": "human"
+        },
+        {
+          "classification": "CURRENT_ASSERTION",
+          "line": 30,
+          "matches": [
+            "current_task_id"
+          ],
+          "path": "ignition/docs/project-current-state.md",
+          "text": "Task 127 将 Durability / Lifecycle R3 登记为同一 OS 控制脊柱内的当前构件：它保存"
+        },
+        {
+          "classification": "CURRENT_ASSERTION",
+          "line": 37,
+          "matches": [
+            "current_task_status"
+          ],
+          "path": "ignition/docs/project-current-state.md",
+          "text": "统一表达；历史任务、requirements lineage、terminal status 和当前架构变更任务由 generated"
+        },
+        {
+          "classification": "UNCLASSIFIED_VOLATILE",
+          "line": 43,
+          "matches": [
+            "current_task_id"
+          ],
+          "path": "ignition/docs/project-current-state.md",
+          "text": "Task 124 的 [OS Control Plane R2](./architecture/os-control-plane-r2.md) 补上了"
+        },
+        {
+          "classification": "UNCLASSIFIED_VOLATILE",
+          "line": 66,
+          "matches": [
+            "current_task_id"
+          ],
+          "path": "ignition/docs/project-current-state.md",
+          "text": "- Task 126 的 Structural Governance Surface 由候选 ESI、过渡语法、不越权合同和软上下文暴露合同共同限定；它是 advisory，不是权限、真值、Owner 或安全放行层。"
+        },
+        {
+          "classification": "HISTORICAL",
+          "line": 82,
+          "matches": [
+            "current_task_id"
+          ],
+          "path": "ignition/docs/project-current-state.md",
+          "text": "## Task 112 current publication layer"
+        },
+        {
+          "classification": "HISTORICAL",
+          "line": 88,
+          "matches": [
+            "current_task_id"
+          ],
+          "path": "ignition/docs/project-current-state.md",
+          "text": "## Task 113—114 current language and publication addition"
+        },
+        {
+          "classification": "HISTORICAL",
+          "line": 94,
+          "matches": [
+            "version_token"
+          ],
+          "path": "ignition/docs/project-current-state.md",
+          "text": "之元写作法 `0.5.0` 是当前 L6 使用者，`0.4.0`、`0.3.0` 为历史已合并版本。两个当前作品均由任务 114 冻结旧 SHA-256、执行全篇语言审计、四类角色复核和实质修订；机器 registry 分开保存历史接受哈希与当前修订哈希。自动 validator 只证明结构化框架差异账本一致，不证明人类级语言理解或文学质量。"
+        },
+        {
+          "classification": "HISTORICAL",
+          "line": 96,
+          "matches": [
+            "current_task_id"
+          ],
+          "path": "ignition/docs/project-current-state.md",
+          "text": "## Task 119 current agentization boundary"
+        },
+        {
+          "classification": "EXAMPLE",
+          "line": 100,
+          "matches": [
+            "version_token"
+          ],
+          "path": "ignition/docs/project-current-state.md",
+          "text": "现有知识治理系统被登记为第一个 `Knowledge Domain Pack`，REOS vNext LIGHT 与之元写作法分别作为有界 research/writing Pack 引用；R0 没有全仓物理迁移。机器边界以 [`agentization-boundary-r0.json`](../data/architecture/agentization-boundary-r0.json)、`DomainPackManifest`、Agent Profile 和当时的唯一系统图 `0.6.0` 为准；后续 `0.7.0`、`0.8.0` 均是后续历史/当前投影。非知识 pilot 只读取两个 fixture 文本、生成排序 SHA-256 manifest，在不同 executor 间 checkpoint/resume，并在 validator 通过后进入 `COMPLETED_VALIDATED`；它是仓库范围隔离证据，不是 AGI、长期自主性或知识真值证据。"
+        },
+        {
+          "classification": "HISTORICAL",
+          "line": 102,
+          "matches": [
+            "current_state_status",
+            "current_task_id"
+          ],
+          "path": "ignition/docs/project-current-state.md",
+          "text": "Task 119 保持 `CURRENT_WITH_OPEN_OBLIGATIONS`：Task 115 Draft prior art 仅完成采纳审计，真实 provider/API、daemon、多 agent scheduler、向量记忆、Pack 物理拆分和外部 Owner acceptance 均未实现或未证明。"
+        },
+        {
+          "classification": "HISTORICAL",
+          "line": 104,
+          "matches": [
+            "current_task_id"
+          ],
+          "path": "ignition/docs/project-current-state.md",
+          "text": "## Task 121 current Agent Platform R2 spine"
+        },
+        {
+          "classification": "HISTORICAL",
+          "line": 122,
+          "matches": [
+            "current_state_status"
+          ],
+          "path": "ignition/docs/project-current-state.md",
+          "text": "生产安全、现实世界普适性、外部有效性或 `EPISTEMICALLY_ACCEPTED`。"
+        },
+        {
+          "classification": "HISTORICAL",
+          "line": 129,
+          "matches": [
+            "current_task_id"
+          ],
+          "path": "ignition/docs/project-current-state.md",
+          "text": "## Task 122 current External Agent Federation R1 projection"
+        },
+        {
+          "classification": "HISTORICAL",
+          "line": 215,
+          "matches": [
+            "current_task_id"
+          ],
+          "path": "ignition/docs/project-current-state.md",
+          "text": "## Task 110 current-state addition"
+        },
+        {
+          "classification": "HISTORICAL",
+          "line": 218,
+          "matches": [
+            "current_task_id"
+          ],
+          "path": "ignition/docs/project-current-state.md",
+          "text": "原始 C-01 推荐被保留为历史缺陷，C-01/task 103 与 C-04/task 105 被登记为已完成并从"
+        },
+        {
+          "classification": "HISTORICAL",
+          "line": 228,
+          "matches": [
+            "current_task_id"
+          ],
+          "path": "ignition/docs/project-current-state.md",
+          "text": "## Task 111 current-state addition"
+        },
+        {
+          "classification": "HISTORICAL",
+          "line": 241,
+          "matches": [
+            "current_task_id"
+          ],
+          "path": "ignition/docs/project-current-state.md",
+          "text": "真理等级，不创建 task 112。"
+        },
+        {
+          "classification": "HISTORICAL",
+          "line": 245,
+          "matches": [
+            "version_token"
+          ],
+          "path": "ignition/docs/project-current-state.md",
+          "text": "Iteration Method `1.4.0` 仍是当前仓库操作法。任务 101 增加机器/人类双输出；任务 102 进一步要求有意义的知识变化声明人类目的地、What's New、主题、资产卡、分层阅读（适用时）、别名/supersession、来源和双向依赖。缺失、断链、断锚、过期、隐藏、无来源摘要或回弹时，CI 失败。"
+        },
+        {
+          "classification": "HISTORICAL",
+          "line": 249,
+          "matches": [
+            "current_task_id"
+          ],
+          "path": "ignition/docs/project-current-state.md",
+          "text": "## 证据程序（Task 103）"
+        }
+      ],
+      "generated_block_count": 1,
+      "path": "ignition/docs/project-current-state.md",
+      "profile": "human",
+      "surface_id": "project-current-state"
+    },
+    {
+      "classifications": [
+        {
+          "classification": "UNCLASSIFIED_VOLATILE",
+          "line": 7,
+          "matches": [
+            "current_state_status"
+          ],
+          "path": "ignition/AI-START-HERE.md",
+          "text": "`CURRENT_WITH_OPEN_OBLIGATIONS`、`EPISTEMICALLY_ACCEPTED=0` 和“仓库回执不等于"
+        },
+        {
+          "classification": "GENERATED_CURRENT",
+          "line": 21,
+          "matches": [
+            "snapshot_block"
+          ],
+          "path": "ignition/AI-START-HERE.md",
+          "profile": "ai"
+        },
+        {
+          "classification": "GENERATED_CURRENT",
+          "line": 22,
+          "matches": [],
+          "path": "ignition/AI-START-HERE.md",
+          "profile": "ai"
+        },
+        {
+          "classification": "GENERATED_CURRENT",
+          "line": 23,
+          "matches": [
+            "current_identity_epoch"
+          ],
+          "path": "ignition/AI-START-HERE.md",
+          "profile": "ai"
+        },
+        {
+          "classification": "GENERATED_CURRENT",
+          "line": 24,
+          "matches": [
+            "current_task_id",
+            "current_task_status"
+          ],
+          "path": "ignition/AI-START-HERE.md",
+          "profile": "ai"
+        },
+        {
+          "classification": "GENERATED_CURRENT",
+          "line": 25,
+          "matches": [
+            "version_token"
+          ],
+          "path": "ignition/AI-START-HERE.md",
+          "profile": "ai"
+        },
+        {
+          "classification": "GENERATED_CURRENT",
+          "line": 26,
+          "matches": [
+            "current_state_status"
+          ],
+          "path": "ignition/AI-START-HERE.md",
+          "profile": "ai"
+        },
+        {
+          "classification": "GENERATED_CURRENT",
+          "line": 27,
+          "matches": [],
+          "path": "ignition/AI-START-HERE.md",
+          "profile": "ai"
+        },
+        {
+          "classification": "GENERATED_CURRENT",
+          "line": 28,
+          "matches": [
+            "current_task_id",
+            "current_task_status"
+          ],
+          "path": "ignition/AI-START-HERE.md",
+          "profile": "ai"
+        },
+        {
+          "classification": "GENERATED_CURRENT",
+          "line": 29,
+          "matches": [],
+          "path": "ignition/AI-START-HERE.md",
+          "profile": "ai"
+        },
+        {
+          "classification": "GENERATED_CURRENT",
+          "line": 30,
+          "matches": [],
+          "path": "ignition/AI-START-HERE.md",
+          "profile": "ai"
+        },
+        {
+          "classification": "GENERATED_CURRENT",
+          "line": 31,
+          "matches": [],
+          "path": "ignition/AI-START-HERE.md",
+          "profile": "ai"
+        },
+        {
+          "classification": "UNCLASSIFIED_VOLATILE",
+          "line": 60,
+          "matches": [
+            "current_task_id"
+          ],
+          "path": "ignition/AI-START-HERE.md",
+          "text": "Task 124 的 OS Control Plane R2 进一步把司机所需的 Event Ledger、monotonic"
+        },
+        {
+          "classification": "UNCLASSIFIED_VOLATILE",
+          "line": 67,
+          "matches": [
+            "current_task_id"
+          ],
+          "path": "ignition/AI-START-HERE.md",
+          "text": "Task 127 的 Durability / Lifecycle R3 仍属于同一 OS / driver：snapshot plus tail、"
+        },
+        {
+          "classification": "UNCLASSIFIED_VOLATILE",
+          "line": 74,
+          "matches": [
+            "current_task_id"
+          ],
+          "path": "ignition/AI-START-HERE.md",
+          "text": "若任务涉及函数、模型、定理、公式、律、跨域类比或现实强断言，在读取 Foundation 后立即读取 `docs/foundation/claim-governance-and-function-identity.md`、`data/foundation/function-assets/corrections.jsonl`、对应 `identity-cards.jsonl` 记录及其 quarantine/obligation 状态。M 与 E 不得互推，自动 census 不能覆盖专项纠偏；task 99 的 registry closure 也不能被解释为全部证明或外部验证完成。"
+        },
+        {
+          "classification": "UNCLASSIFIED_VOLATILE",
+          "line": 76,
+          "matches": [
+            "current_task_id"
+          ],
+          "path": "ignition/AI-START-HERE.md",
+          "text": "若对象是非函数型定理、规律、机制、因果、不可能性、跨域对应、预测、经验或本体断言，还必须读取 `data/foundation/nonfunction-claims/claim-registry.jsonl`、生成索引和未来断言准入协议。task 100 的 closure 可由显式 quarantine 达成，只闭合登记与谱系，不证明内容为真；任何撤回结论都不得以“结构性”“元”“深层”或框架内改名回弹。"
+        },
+        {
+          "classification": "CURRENT_ASSERTION",
+          "line": 78,
+          "matches": [
+            "version_token"
+          ],
+          "path": "ignition/AI-START-HERE.md",
+          "text": "阶段成果展示在专用页 `docs/generated/recent-stage-results.md`（“正在炼化 / Recent Stage Results”）；若需了解阶段快照，必须读取 `data/operations/stage-snapshots.json` 和 `docs/operations/stage-snapshot-publication.md`。方法 `1.4.0`（Continuous Stage Snapshot Publication）已为 Current；README 首页不再嵌入「正在炼化」块。"
+        },
+        {
+          "classification": "HISTORICAL",
+          "line": 80,
+          "matches": [
+            "version_token"
+          ],
+          "path": "ignition/AI-START-HERE.md",
+          "text": "较早的 `1.3.0` 降为 Historical；快照可见不推出 Accepted、Activated、正式能力可用或候选载荷已进 Main（Homepage Visible != Capability Available）。"
+        },
+        {
+          "classification": "CURRENT_ASSERTION",
+          "line": 84,
+          "matches": [
+            "version_token"
+          ],
+          "path": "ignition/AI-START-HERE.md",
+          "text": "若任务涉及翻译、命题抽取、跨语言建模或 L6 公共故事、文章与作品反馈，还应读取 `docs/architecture/language-thought-logic-plane.md`、`docs/language-thought/README.md`、`docs/publication/zhiyuan-writing-method.md` 与对应后台规格。之元写作法 `0.5.0` 是当前能力，`0.4.0`、`0.3.0` 保留为历史版本。它使用外部输入与点火增量输出双来源素材池，并通过目标语言配置直接成文；不得把点火派生产物重算为独立外部证据。"
+        },
+        {
+          "classification": "UNCLASSIFIED_VOLATILE",
+          "line": 104,
+          "matches": [
+            "version_token"
+          ],
+          "path": "ignition/AI-START-HERE.md",
+          "text": "- 使用 0.5.0 时，先标记 `external_input` 与 `ignition_increment`，保存版本、生成路径、claim ceiling、不可映射残余和原始来源回链；涉及语言转换时还须保存 source form、候选意义、target form 与 framing delta。发布反馈必须登记 provenance 后才能成为候选 source／gap。同源只表示维护者声明的设计来源与结构对应候选，不是大脑事实、形式同构或真值许可。"
+        },
+        {
+          "classification": "CURRENT_ASSERTION",
+          "line": 116,
+          "matches": [
+            "version_token"
+          ],
+          "path": "ignition/AI-START-HERE.md",
+          "text": "方法 `1.3.0` 与系统图 `0.10.0`、`0.6.0`、`0.5.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0`、`0.2.0`、`0.3.0`、`0.4.0` 为更早 Historical。当前方法要求读取 `data/operations/project-components.json` 与 `data/operations/change-propagation-topology.json`，把变更路径解析为构件、遍历声明关系到 fixpoint、绑定决定／map diff／residue，再由 registries 与布局 overlay 派生系统图。不得把 Git diff、依赖或可达性称为现实因果证明。"
+        },
+        {
+          "classification": "CURRENT_ASSERTION",
+          "line": 117,
+          "matches": [
+            "version_token"
+          ],
+          "path": "ignition/AI-START-HERE.md",
+          "text": "- Q32I 的方法 `1.3.0` 与系统图 `0.3.0` 已独立接受、由 PR #62 普通合并并完成生产收口；其后方法升为 `1.4.0` Current。"
+        },
+        {
+          "classification": "HISTORICAL",
+          "line": 119,
+          "matches": [
+            "version_token"
+          ],
+          "path": "ignition/AI-START-HERE.md",
+          "text": "`1.3.0` 降为 Historical，Q32I 为 Closed。选择性物化只在完整 profile、authority、plan 与指纹身份一致时选择性物化。Authority 类型、execution capability 与 validation capability 必须分别声明；apply 必须先通过统一预检，rollback（回滚）必须证明整仓字节／类型／symlink／mode 恢复，否则进入 unrecovered 与 recovery package。NonImpactProof 只证明声明关系范围内的非影响；cache 不是真相源；meta-authority 变更强制 full rebuild。Q33 启动包已准备，但 Q33 与 Q34—Q40 均尚未启动。"
+        }
+      ],
+      "generated_block_count": 1,
+      "path": "ignition/AI-START-HERE.md",
+      "profile": "ai",
+      "surface_id": "ai-cold-start"
+    },
+    {
+      "classifications": [
+        {
+          "classification": "UNCLASSIFIED_VOLATILE",
+          "line": 10,
+          "matches": [
+            "current_task_id"
+          ],
+          "path": "ignition/AI-HANDOFF.md",
+          "text": "Agent Platform R2 与 External Agent Federation R1 已在 Task 122 正式 main"
+        },
+        {
+          "classification": "CURRENT_ASSERTION",
+          "line": 11,
+          "matches": [
+            "current_task_id"
+          ],
+          "path": "ignition/AI-HANDOFF.md",
+          "text": "基线上闭合；Task 127 已完成并发布为当前 Durability / Lifecycle R3。本页的工程边界不构成"
+        },
+        {
+          "classification": "UNCLASSIFIED_VOLATILE",
+          "line": 29,
+          "matches": [
+            "current_task_id"
+          ],
+          "path": "ignition/AI-HANDOFF.md",
+          "text": "- `docs/architecture/os-control-plane-r2.md` 与 `agent_runtime/`：Task 124 的 Event Ledger、monotonic policy、resource arbitration、bounded scheduler、executor health lease、queue/backpressure、durable dispatch/reconciliation、concurrent operational memory 和 Driver Console；全部只提供有界协调记录。"
+        },
+        {
+          "classification": "UNCLASSIFIED_VOLATILE",
+          "line": 30,
+          "matches": [
+            "current_task_id"
+          ],
+          "path": "ignition/AI-HANDOFF.md",
+          "text": "- `docs/architecture/os-control-plane-r2.md` 与 `agent_runtime/`：Task 127 的 Durability / Lifecycle R3 复用同一 OS 控制脊柱，提供 snapshot plus tail、migration、namespace、Pack lifecycle、revocation、accounting、recovery 和 DR bundle continuity；不创建第二张系统图，不自动重放不确定 external dispatch。"
+        },
+        {
+          "classification": "UNCLASSIFIED_VOLATILE",
+          "line": 34,
+          "matches": [
+            "current_task_id"
+          ],
+          "path": "ignition/AI-HANDOFF.md",
+          "text": "- `docs/architecture/external-agent-federation-r1.md`、`agent_federation/` 与 `data/agent-federation/`：Task 122 的 OS/executor contract、OpenClaw/Hermes/Codex adapters、Reference freeze、handoff/failover 和 disposable pilot 边界；联邦 source domain 只进入 `agent_platform.federation`。"
+        },
+        {
+          "classification": "UNCLASSIFIED_VOLATILE",
+          "line": 35,
+          "matches": [
+            "current_task_id"
+          ],
+          "path": "ignition/AI-HANDOFF.md",
+          "text": "- `docs/architecture/esi-human-surface-r0.md`、`data/epistemic-governance/` 与 `data/agent-federation/soft-context-exposure-contract-r0.json`：Task 126 的 Structural Governance Surface、候选 ESI 边界和 advisory soft-context contract；它不能扩大 capability 或 permission。"
+        },
+        {
+          "classification": "GENERATED_CURRENT",
+          "line": 41,
+          "matches": [
+            "snapshot_block"
+          ],
+          "path": "ignition/AI-HANDOFF.md",
+          "profile": "ai"
+        },
+        {
+          "classification": "GENERATED_CURRENT",
+          "line": 42,
+          "matches": [],
+          "path": "ignition/AI-HANDOFF.md",
+          "profile": "ai"
+        },
+        {
+          "classification": "GENERATED_CURRENT",
+          "line": 43,
+          "matches": [
+            "current_identity_epoch"
+          ],
+          "path": "ignition/AI-HANDOFF.md",
+          "profile": "ai"
+        },
+        {
+          "classification": "GENERATED_CURRENT",
+          "line": 44,
+          "matches": [
+            "current_task_id",
+            "current_task_status"
+          ],
+          "path": "ignition/AI-HANDOFF.md",
+          "profile": "ai"
+        },
+        {
+          "classification": "GENERATED_CURRENT",
+          "line": 45,
+          "matches": [
+            "version_token"
+          ],
+          "path": "ignition/AI-HANDOFF.md",
+          "profile": "ai"
+        },
+        {
+          "classification": "GENERATED_CURRENT",
+          "line": 46,
+          "matches": [
+            "current_state_status"
+          ],
+          "path": "ignition/AI-HANDOFF.md",
+          "profile": "ai"
+        },
+        {
+          "classification": "GENERATED_CURRENT",
+          "line": 47,
+          "matches": [],
+          "path": "ignition/AI-HANDOFF.md",
+          "profile": "ai"
+        },
+        {
+          "classification": "GENERATED_CURRENT",
+          "line": 48,
+          "matches": [
+            "current_task_id",
+            "current_task_status"
+          ],
+          "path": "ignition/AI-HANDOFF.md",
+          "profile": "ai"
+        },
+        {
+          "classification": "GENERATED_CURRENT",
+          "line": 49,
+          "matches": [],
+          "path": "ignition/AI-HANDOFF.md",
+          "profile": "ai"
+        },
+        {
+          "classification": "GENERATED_CURRENT",
+          "line": 50,
+          "matches": [],
+          "path": "ignition/AI-HANDOFF.md",
+          "profile": "ai"
+        },
+        {
+          "classification": "GENERATED_CURRENT",
+          "line": 51,
+          "matches": [],
+          "path": "ignition/AI-HANDOFF.md",
+          "profile": "ai"
+        },
+        {
+          "classification": "CURRENT_ASSERTION",
+          "line": 80,
+          "matches": [
+            "current_state_status"
+          ],
+          "path": "ignition/AI-HANDOFF.md",
+          "text": "当前架构状态保持 `CURRENT_WITH_OPEN_OBLIGATIONS`；不得改写成全量数学证明完成、"
+        },
+        {
+          "classification": "UNCLASSIFIED_VOLATILE",
+          "line": 81,
+          "matches": [
+            "current_state_status"
+          ],
+          "path": "ignition/AI-HANDOFF.md",
+          "text": "生产安全、外部有效性或 `EPISTEMICALLY_ACCEPTED`。"
+        },
+        {
+          "classification": "CURRENT_ASSERTION",
+          "line": 83,
+          "matches": [
+            "version_token"
+          ],
+          "path": "ignition/AI-HANDOFF.md",
+          "text": "方法 1.4.0 是 Current。看到首页阶段成果时，逐项读取显式布尔量和来源 HEAD；`PUBLISHED_SNAPSHOT` 不等于 Accepted、Current 或 Activated，首页可见不等于能力可用。Agent 只能生成 stage snapshot request，不能自行声称已进入 Main。"
+        },
+        {
+          "classification": "UNCLASSIFIED_VOLATILE",
+          "line": 85,
+          "matches": [
+            "current_task_id"
+          ],
+          "path": "ignition/AI-HANDOFF.md",
+          "text": "函数类资产交接必须保留十二类主身份、M0—M7、E0—E7、十门结果、六层裁决、claim ceiling、证明/实证义务、依赖影响和最终处置。task 99 identity card 优先于自动 census；quarantine 不等于验证。T2、D127、D182—D190、D260 仍以 task 98 correction overlay 为最高专项权威；旧表保留原文。任何“大一统已被证明不可能”或“点火已统一四力”的结论均为撤回/禁止状态。"
+        },
+        {
+          "classification": "HISTORICAL",
+          "line": 87,
+          "matches": [
+            "current_task_id"
+          ],
+          "path": "ignition/AI-HANDOFF.md",
+          "text": "非函数型资产交接必须保留 task 100 的规范 ID、原子文本、十三门、证据与复现状态、依赖和下游影响、M/E、处置、公开上限及 supersession lineage。自动发现只生成待裁决记录；一个模型失败不能推出普遍不可能，类比不能冒充同构，历史撤回不能因改名恢复。"
+        },
+        {
+          "classification": "CURRENT_ASSERTION",
+          "line": 127,
+          "matches": [
+            "version_token"
+          ],
+          "path": "ignition/AI-HANDOFF.md",
+          "text": "方法 `1.3.0` 与系统图 `0.10.0`、`0.7.0`、`0.6.0`、`0.5.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0`、`0.2.0`、`0.3.0`、`0.4.0` 为更早 Historical。当前方法要求从构件 registry、类型化 topology 与 `data/operations/synchronization-surfaces.json` 计算全项目传播闭包。README、`HUMAN-READING.md`、`RESULTS/`、项目现状、人类 AI 指南、AI 冷启动、Agent 交接、机器入口和版本历史都是必须评估的项目表面。实现完成不能替代仓库同步完成；本地验证也不能声称任何未登记的实时外部状态已验证。"
+        },
+        {
+          "classification": "CURRENT_ASSERTION",
+          "line": 131,
+          "matches": [
+            "version_token"
+          ],
+          "path": "ignition/AI-HANDOFF.md",
+          "text": "任务 114 已将 L6 `之元写作法` `0.5.0` 收口为当前能力；`0.4.0`、`0.3.0` 保留为历史已合并版本。交接时必须区分外部输入与点火增量输出，后者保存 canonical 路径／ID、生成任务、版本、claim ceiling、gap／residue 和原始来源回链；复用分析、模型投影或反馈返回项不构成独立复证。方法是横穿 L0—L6 的语言—思维逻辑平面的一个 L6 使用者：转换还须保存 source/candidate/target、framing delta 和 unmapped residue；认识相关变化不得静默，目标中文必须直接成句。平面不是 L7、脑科学、形式同构或真值许可。"
+        },
+        {
+          "classification": "UNCLASSIFIED_VOLATILE",
+          "line": 135,
+          "matches": [
+            "version_token"
+          ],
+          "path": "ignition/AI-HANDOFF.md",
+          "text": "Q32I 已通过第三次独立 exact-head 审查，以 PR #62 普通合并并完成生产收口（彼时方法 `1.3.0` 与 map `0.3.0` 完成收口）。"
+        },
+        {
+          "classification": "CURRENT_ASSERTION",
+          "line": 137,
+          "matches": [
+            "version_token"
+          ],
+          "path": "ignition/AI-HANDOFF.md",
+          "text": "其后方法升为 `1.4.0` Current（连续阶段快照发布，见 docs/operations/stage-snapshot-publication.md）。"
+        },
+        {
+          "classification": "CURRENT_ASSERTION",
+          "line": 139,
+          "matches": [
+            "version_token"
+          ],
+          "path": "ignition/AI-HANDOFF.md",
+          "text": "较早的 `1.3.0` 降为 Historical，Q32I 为 Closed。它明确分离 authority 类型、execution capability 与 validation capability，只允许真实、确定性且完整物化声明输出的 producer 为 automatic，只有完整且构件职责相符的命令才是 local validator。Apply 在子进程／写入前必须经统一权威预检；rollback 要按整仓字节、类型、symlink 和 mode 证明完整恢复。交接必须读取 `docs/architecture/incremental-execution.md`，重算 closure、plan 和派生 projection；不能把 cache、Git diff、依赖、图连线、CI 或 artifact 当作现实因果、自我验收或 Current 证明。Q33 启动包已在 1111 准备，但 Q33 与 Q34—Q40 均尚未启动。"
+        }
+      ],
+      "generated_block_count": 1,
+      "path": "ignition/AI-HANDOFF.md",
+      "profile": "ai",
+      "surface_id": "ai-agents-handoff"
+    },
+    {
+      "classifications": [
+        {
+          "classification": "GENERATED_CURRENT",
+          "line": 2,
+          "matches": [
+            "snapshot_block"
+          ],
+          "path": "ignition/llms.txt",
+          "profile": "machine"
+        },
+        {
+          "classification": "GENERATED_CURRENT",
+          "line": 3,
+          "matches": [
+            "current_identity_epoch",
+            "current_state_status",
+            "current_task_id",
+            "current_task_status",
+            "version_token"
+          ],
+          "path": "ignition/llms.txt",
+          "profile": "machine"
+        },
+        {
+          "classification": "GENERATED_CURRENT",
+          "line": 4,
+          "matches": [
+            "current_task_id",
+            "current_task_status",
+            "version_token"
+          ],
+          "path": "ignition/llms.txt",
+          "profile": "machine"
+        },
+        {
+          "classification": "GENERATED_CURRENT",
+          "line": 5,
+          "matches": [],
+          "path": "ignition/llms.txt",
+          "profile": "machine"
+        },
+        {
+          "classification": "GENERATED_CURRENT",
+          "line": 6,
+          "matches": [],
+          "path": "ignition/llms.txt",
+          "profile": "machine"
+        },
+        {
+          "classification": "CURRENT_ASSERTION",
+          "line": 15,
+          "matches": [
+            "version_token"
+          ],
+          "path": "ignition/llms.txt",
+          "text": "Current: iteration method 1.4.0 (Continuous Stage Snapshot Publication). Read data/operations/stage-snapshots.json and docs/operations/stage-snapshot-publication.md. Snapshot or homepage visibility never implies Accepted, Current, Activated, capability availability, or candidate payload merge."
+        },
+        {
+          "classification": "CURRENT_ASSERTION",
+          "line": 18,
+          "matches": [
+            "version_token"
+          ],
+          "path": "ignition/llms.txt",
+          "text": "Iteration method 1.3.0 and system maps 0.10.0, 0.6.0, 0.5.0 are Historical; method 1.2.0 and maps 0.1.0, 0.2.0, 0.3.0, 0.4.0 are earlier Historical, not Current. Treat implementation completion, repository synchronization, external synchronization and project completion as distinct states; local validation never proves undeclared live external truth."
+        },
+        {
+          "classification": "CURRENT_ASSERTION",
+          "line": 20,
+          "matches": [
+            "current_task_id",
+            "version_token"
+          ],
+          "path": "ignition/llms.txt",
+          "text": "Q32I iteration method 1.3.0 and system map 0.3.0 completed the exact-head, merge and external checks required by its historical contract; method 1.3.0 is now Historical and method 1.4.0 is Current. Task 101 retires the former separate deployed reading surface from current/future gates while preserving historical evidence. Typed change closure remains repository scope and never proves real-world causality."
+        },
+        {
+          "classification": "CURRENT_ASSERTION",
+          "line": 22,
+          "matches": [
+            "version_token"
+          ],
+          "path": "ignition/llms.txt",
+          "text": "Current typed-propagation authority assets: data/operations/project-components.json, data/operations/change-propagation-topology.json, data/architecture/interactive-system-map-layout.json, docs/architecture/typed-change-propagation.md. Durability / Lifecycle R3 is represented in that same registry/topology/layout chain; it does not create a parallel durability map or a second authority source. Q32I method 1.3.0 and map 0.3.0 reached closeout and are governed by docs/architecture/incremental-execution.md; Q32I is Closed. Q33 launch material is prepared externally in 1111, but Q33 and Q34-Q40 are not started. Authority type, execution capability and validation capability are separate; apply requires unified zero-side-effect preflight and restored rollback requires exact supported repository state equality. Planner, executor, cache, validator and artifact evidence remain repository-scoped and cannot self-establish acceptance, merge or Current lifecycle state."
+        },
+        {
+          "classification": "CURRENT_ASSERTION",
+          "line": 26,
+          "matches": [
+            "current_task_id"
+          ],
+          "path": "ignition/llms.txt",
+          "text": "Q25C defines lifecycle gates per registered surface. Task 101 uses repository Markdown, machine/human pairing, exact-head CI, main validation and clean-clone execution for the current reading layer; a future external surface must be separately registered and attested. Q25B remains superseded candidate history."
+        },
+        {
+          "classification": "CURRENT_ASSERTION",
+          "line": 32,
+          "matches": [
+            "version_token"
+          ],
+          "path": "ignition/llms.txt",
+          "text": "Zhiyuan Writing Method 0.5.0 is the current L6 public-expression and provenance-gated feedback capability; 0.4.0 and 0.3.0 remain historical merged versions. Its shared-provenance structural homology remains a bounded candidate claim, not identity, neuroscience, formal proof, causality or a new layer. Feedback becomes only candidate source/gap after provenance capture; praise and attention are not truth evidence."
+        },
+        {
+          "classification": "UNCLASSIFIED_VOLATILE",
+          "line": 33,
+          "matches": [
+            "current_task_id"
+          ],
+          "path": "ignition/llms.txt",
+          "text": "Task 114 makes Zhiyuan Writing Method one L6 consumer of the project-wide Language-Thought Logic Plane across L0-L6. The plane is not L7 or a truth-functional logic. Language-sensitive records preserve source form/profile, normalized meaning candidate, target form/profile, framing deltas, unmapped residue, claim ceiling, provenance and version. Epistemically relevant silent changes fail closed; naturalness and literary markedness still require human review. The writing material pool continues to accept typed external_input and ignition_increment assets, with derived increments never counted as independent evidence."
+        },
+        {
+          "classification": "UNCLASSIFIED_VOLATILE",
+          "line": 34,
+          "matches": [
+            "current_task_id"
+          ],
+          "path": "ignition/llms.txt",
+          "text": "121Q31T established the repository-native system map generated from data/architecture/interactive-system-map.json. Task 101 keeps it as an ordinary repository SVG linked from README and Markdown. It has exactly L0-L6 and is not L7, a causal graph, strict isomorphism or completeness proof."
+        },
+        {
+          "classification": "CURRENT_ASSERTION",
+          "line": 114,
+          "matches": [
+            "version_token"
+          ],
+          "path": "ignition/llms.txt",
+          "text": "- For the current 0.5.0 method, type writing material as external_input or ignition_increment and preserve source backlinks, version, claim ceiling and residue. When language framing can change, also preserve source/candidate/target, framing deltas and unmapped residue, then realize directly through the target-language profile. Derived project output is reusable writing material but not independent evidence. Keep cognitive-level movement, real/Charter costs and information-gain stopping; never turn the system map or a writer calibration set into a fixed article outline."
+        },
+        {
+          "classification": "UNCLASSIFIED_VOLATILE",
+          "line": 115,
+          "matches": [
+            "current_state_status"
+          ],
+          "path": "ignition/llms.txt",
+          "text": "- Agent Platform R2 is a bounded repository spine: Kernel does not import Knowledge, Reasoner proposes but does not execute, Pack validators stay within declared object scope, operational memory is not a truth registry, and Supervisor cannot widen child scope. A passing offline pilot is local execution evidence only; it does not establish general intelligence, production reliability, external validity, Owner acceptance or `EPISTEMICALLY_ACCEPTED`."
+        }
+      ],
+      "generated_block_count": 1,
+      "path": "ignition/llms.txt",
+      "profile": "machine",
+      "surface_id": "machine-entry"
+    },
+    {
+      "classifications": [
+        {
+          "classification": "GENERATED_CURRENT",
+          "line": 14,
+          "matches": [
+            "snapshot_block"
+          ],
+          "path": "ignition/ARCHITECTURE.md",
+          "profile": "human"
+        },
+        {
+          "classification": "GENERATED_CURRENT",
+          "line": 15,
+          "matches": [],
+          "path": "ignition/ARCHITECTURE.md",
+          "profile": "human"
+        },
+        {
+          "classification": "GENERATED_CURRENT",
+          "line": 16,
+          "matches": [
+            "current_identity_epoch"
+          ],
+          "path": "ignition/ARCHITECTURE.md",
+          "profile": "human"
+        },
+        {
+          "classification": "GENERATED_CURRENT",
+          "line": 17,
+          "matches": [
+            "current_task_id",
+            "current_task_status"
+          ],
+          "path": "ignition/ARCHITECTURE.md",
+          "profile": "human"
+        },
+        {
+          "classification": "GENERATED_CURRENT",
+          "line": 18,
+          "matches": [
+            "version_token"
+          ],
+          "path": "ignition/ARCHITECTURE.md",
+          "profile": "human"
+        },
+        {
+          "classification": "GENERATED_CURRENT",
+          "line": 19,
+          "matches": [
+            "current_state_status"
+          ],
+          "path": "ignition/ARCHITECTURE.md",
+          "profile": "human"
+        },
+        {
+          "classification": "GENERATED_CURRENT",
+          "line": 20,
+          "matches": [],
+          "path": "ignition/ARCHITECTURE.md",
+          "profile": "human"
+        },
+        {
+          "classification": "GENERATED_CURRENT",
+          "line": 21,
+          "matches": [
+            "current_task_id",
+            "current_task_status"
+          ],
+          "path": "ignition/ARCHITECTURE.md",
+          "profile": "human"
+        },
+        {
+          "classification": "GENERATED_CURRENT",
+          "line": 22,
+          "matches": [],
+          "path": "ignition/ARCHITECTURE.md",
+          "profile": "human"
+        },
+        {
+          "classification": "GENERATED_CURRENT",
+          "line": 23,
+          "matches": [],
+          "path": "ignition/ARCHITECTURE.md",
+          "profile": "human"
+        },
+        {
+          "classification": "GENERATED_CURRENT",
+          "line": 24,
+          "matches": [],
+          "path": "ignition/ARCHITECTURE.md",
+          "profile": "human"
+        },
+        {
+          "classification": "UNCLASSIFIED_VOLATILE",
+          "line": 35,
+          "matches": [
+            "current_task_id"
+          ],
+          "path": "ignition/ARCHITECTURE.md",
+          "text": "Task 124 将司机所需的交通系统登记为独立 control-plane records：Event Ledger"
+        },
+        {
+          "classification": "CURRENT_ASSERTION",
+          "line": 150,
+          "matches": [
+            "version_token"
+          ],
+          "path": "ignition/ARCHITECTURE.md",
+          "text": "任务 114 已将[之元写作法 0.5.0](docs/publication/zhiyuan-writing-method.md)收口为现有 L6 的当前公共表达与反馈能力；0.4.0 与 0.3.0 保留为历史已合并版本。0.5.0 继承双来源素材池，并作为语言—思维逻辑平面的一个目标语言使用者；平面属于点火整体，不埋在写作法内。它仍不增加 L7 或新真值层。其有边界关系表述仍是：`maintainer-declared shared cognitive provenance / structurally auditable homology candidate`；此处 `candidate` 指结构对应的认识论地位，不是方法生命周期。"
+        }
+      ],
+      "generated_block_count": 1,
+      "path": "ignition/ARCHITECTURE.md",
+      "profile": "human",
+      "surface_id": "architecture"
+    },
+    {
+      "classifications": [
+        {
+          "classification": "HISTORICAL",
+          "line": 14,
+          "matches": [
+            "current_state_status"
+          ],
+          "path": "ignition/STATE-CHANGELOG.md",
+          "text": "- main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; baseline 是远端 `main` 在 `19658de18d1c22fff2265f94bcd8a08cdddc0609` 的状态。"
+        },
+        {
+          "classification": "HISTORICAL",
+          "line": 16,
+          "matches": [
+            "version_token"
+          ],
+          "path": "ignition/STATE-CHANGELOG.md",
+          "text": "- authority_changes: [迭代操作法 1.4.0](./ITERATION.md)、[系统图 0.5.0](./data/architecture/interactive-system-map.json)、[Charter System R1](./docs/governance/charter-system-r1.md)、[REOS vNext LIGHT](./docs/architecture/reos-vnext-light.md)、[Evidence Program](./evidence-program/README.md)、[任务 112 成果出版层](./PUBLICATIONS/pointfire-results-book/README.md)、[之元写作法 0.5.0](./docs/publication/zhiyuan-writing-method.md)均以各自权威资产为准；[九状态轴](./ARCHITECTURE.md#七层关系)保持独立。"
+        },
+        {
+          "classification": "HISTORICAL",
+          "line": 17,
+          "matches": [
+            "current_state_status"
+          ],
+          "path": "ignition/STATE-CHANGELOG.md",
+          "text": "- epistemic_state: 当前总上限仍为 `CURRENT_WITH_OPEN_OBLIGATIONS`；M/E、claim ceiling、proof、evidence、scope、provenance 和 lifecycle 不互相代替。撤回、quarantine、pending 与开放问题继续保留。"
+        },
+        {
+          "classification": "HISTORICAL",
+          "line": 19,
+          "matches": [
+            "version_token"
+          ],
+          "path": "ignition/STATE-CHANGELOG.md",
+          "text": "- stale_knowledge: `0.4.0` 系统图和 `0.4.0` 之元写作法不再是当前版本；它们是历史资产。不要把旧页面、旧摘要或外部笔记中的旧 current 标签覆盖当前 main 记录。"
+        },
+        {
+          "classification": "HISTORICAL",
+          "line": 24,
+          "matches": [
+            "current_state_status"
+          ],
+          "path": "ignition/STATE-CHANGELOG.md",
+          "text": "- main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; 本条是从上述 main 基线进入下一正式主线状态的第一条 delta，提交后的精确 tip 由 Git 提交回执确定。"
+        },
+        {
+          "classification": "HISTORICAL",
+          "line": 34,
+          "matches": [
+            "current_state_status"
+          ],
+          "path": "ignition/STATE-CHANGELOG.md",
+          "text": "- main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; 本条绑定本轮改造的 main 基线，最终发布 tip 由 Git 精确回执确定。"
+        },
+        {
+          "classification": "HISTORICAL",
+          "line": 44,
+          "matches": [
+            "current_state_status"
+          ],
+          "path": "ignition/STATE-CHANGELOG.md",
+          "text": "- main_state: CURRENT_WITH_OPEN_OBLIGATIONS; 本轮正式内容考古从远端 main 基线 89b005566bdfe266414c850871793b9dd10ba0af 开始，最终发布 tip 由 Git 提交与远端回执确定。"
+        },
+        {
+          "classification": "HISTORICAL",
+          "line": 47,
+          "matches": [
+            "current_state_status"
+          ],
+          "path": "ignition/STATE-CHANGELOG.md",
+          "text": "- epistemic_state: 本轮不改变各权威对象的既有状态轴、范围、出处、记录期限或公开边界；外部新颖性未核验，EPISTEMICALLY_ACCEPTED=0 不变。内容火种只表示内部来源链上的研究问题、重组、反例或写作入口。"
+        },
+        {
+          "classification": "HISTORICAL",
+          "line": 54,
+          "matches": [
+            "current_state_status"
+          ],
+          "path": "ignition/STATE-CHANGELOG.md",
+          "text": "- main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; 本轮以远端 `main` 基线 `085f7d63b2492e5ee6c95739ccb1addb5608f152` 开始，最终发布 tip 由 Git 提交与远端精确回执确定。"
+        },
+        {
+          "classification": "HISTORICAL",
+          "line": 57,
+          "matches": [
+            "current_state_status",
+            "version_token"
+          ],
+          "path": "ignition/STATE-CHANGELOG.md",
+          "text": "- epistemic_state: 不提升任何 claim 的 `M/E`、九状态轴、claim ceiling、semantic、logic、proof、evidence、scope、provenance、disposition 或外部真值；Human Surface 结构校验不判断散文质量、因果性、真值或外部新颖性。`EPISTEMICALLY_ACCEPTED=0` 保持不变，K13 与“之元写作法 0.5.0”继续作为非晋级边界。"
+        },
+        {
+          "classification": "HISTORICAL",
+          "line": 64,
+          "matches": [
+            "current_state_status"
+          ],
+          "path": "ignition/STATE-CHANGELOG.md",
+          "text": "- main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; 本轮从任务 118 的正式 main 基线 `4f4358ef09d1871a48d7e32575a63453130b333c` 开始，最终发布 tip 由 Git、远端和全新克隆精确回执确定。"
+        },
+        {
+          "classification": "HISTORICAL",
+          "line": 66,
+          "matches": [
+            "current_task_id",
+            "version_token"
+          ],
+          "path": "ignition/STATE-CHANGELOG.md",
+          "text": "- authority_changes: [Agentization Boundary manifest](./data/architecture/agentization-boundary-r0.json)由 live [component registry](./data/operations/project-components.json)确定性生成；[Generic Kernel](./agent_kernel/README.md)、[Agent Runtime](./agent_runtime/README.md)、[Knowledge Pack](./packs/knowledge/manifest.json)、[非知识 pilot 回执](./data/agent-runtime/pilots/non-knowledge-manifest-r0/pilot-receipt.json)、[Task 115 prior-art 审计](./reports/architecture/task115-runtime-prior-art-adoption-r0.md)、[唯一系统图 0.6.0](./data/architecture/interactive-system-map.json)和[Human Surface](./docs/architecture/agentization-boundary-r0.md)共同记录本轮边界。"
+        },
+        {
+          "classification": "HISTORICAL",
+          "line": 67,
+          "matches": [
+            "current_state_status"
+          ],
+          "path": "ignition/STATE-CHANGELOG.md",
+          "text": "- epistemic_state: 不提升任何 claim 的 `M/E`、proof、evidence、scope、provenance、claim ceiling、Owner acceptance 或外部真值；非知识 pilot 的 `COMPLETED_VALIDATED` 只表示声明输入、写集、checkpoint/resume lineage 和 validator 在仓库范围内通过。`EPISTEMICALLY_ACCEPTED=0` 与 K13 非晋级不变量保持不变。"
+        },
+        {
+          "classification": "HISTORICAL",
+          "line": 68,
+          "matches": [
+            "current_task_id"
+          ],
+          "path": "ignition/STATE-CHANGELOG.md",
+          "text": "- obligations: Task 115 Draft 不合并；真实 provider/API、daemon、Telegram/OpenClaw、多 agent scheduler、向量/embedding memory、Pack 物理拆分、外部 Owner acceptance 和跨领域实质效用仍开放。历史 Foundation、claims、M/E、Evidence、REOS、写作与出版路径继续由原有权威资产管理。"
+        },
+        {
+          "classification": "HISTORICAL",
+          "line": 69,
+          "matches": [
+            "version_token"
+          ],
+          "path": "ignition/STATE-CHANGELOG.md",
+          "text": "- stale_knowledge: 工程门禁、runtime trace、系统图可见性、仓库回执和 Agent 共识都不等于知识真值、现实因果、AGI、人格或意识；Pack 可加载不表示 Pack 获得通用权限。系统图 `0.5.0` 及更早版本降为 Historical，`0.6.0` 才是当前 registry-derived projection。"
+        },
+        {
+          "classification": "HISTORICAL",
+          "line": 74,
+          "matches": [
+            "current_state_status"
+          ],
+          "path": "ignition/STATE-CHANGELOG.md",
+          "text": "- main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; 本轮从任务 119 的正式 main 基线 `834fce29afdadb47adda08a95631303ad0d94fc7` 开始，最终发布 tip 由 Git、远端和全新克隆精确回执确定。"
+        },
+        {
+          "classification": "HISTORICAL",
+          "line": 76,
+          "matches": [
+            "current_task_id"
+          ],
+          "path": "ignition/STATE-CHANGELOG.md",
+          "text": "- authority_changes: [Agent Runtime R1](./docs/architecture/agent-runtime-r1.md)、[R1 action schemas](./schemas/agent-runtime/)、[R1 local pilots](./agent_runtime/pilots/r1_real_local.py)和 [R1 tests](./tests/test_agent_runtime_r1.py)记录当前执行面；R0 的 Kernel、Runtime、非知识 pilot 和 Task 115 audit 仍是历史/回归入口。"
+        },
+        {
+          "classification": "HISTORICAL",
+          "line": 77,
+          "matches": [
+            "current_state_status"
+          ],
+          "path": "ignition/STATE-CHANGELOG.md",
+          "text": "- epistemic_state: `COMPLETED_VALIDATED` 只表示一条本地 bounded run 的 typed validation 通过；`FAILED_VALIDATION_ROLLED_BACK` 只表示失败后 whole-file preimage 恢复通过。工程回执、CLI、lease、pilot 和跨 executor 恢复不提升 M/E、proof、scope、provenance、claim ceiling、Owner acceptance、外部真值或因果效果；`EPISTEMICALLY_ACCEPTED=0` 不变。"
+        },
+        {
+          "classification": "HISTORICAL",
+          "line": 80,
+          "matches": [
+            "current_task_id"
+          ],
+          "path": "ignition/STATE-CHANGELOG.md",
+          "text": "- next_read: 先读本条、[Agent Runtime R1](./docs/architecture/agent-runtime-r1.md)、[Runtime README](./agent_runtime/README.md)、[R1 schemas](./schemas/agent-runtime/)和 [R1 tests](./tests/test_agent_runtime_r1.py)，再回到 [R0 boundary](./docs/architecture/agentization-boundary-r0.md)；Task 119 的 1111 receipt 只在 1111 relay worktree 中读取。"
+        },
+        {
+          "classification": "HISTORICAL",
+          "line": 84,
+          "matches": [
+            "current_state_status"
+          ],
+          "path": "ignition/STATE-CHANGELOG.md",
+          "text": "- main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; this is a task-branch pre-release projection at `983aff0b280313c79d82484f609e5a45d721fd63`, not a claim that `origin/main` has moved. Formal main lifecycle remains pending Step 12 exact fast-forward and fresh-clone verification."
+        },
+        {
+          "classification": "HISTORICAL",
+          "line": 85,
+          "matches": [
+            "current_task_id"
+          ],
+          "path": "ignition/STATE-CHANGELOG.md",
+          "text": "- delta: Task 121 R2 connects the bounded Agent Platform spine: Pack Registry/Bus, Knowledge/Research/Writing/Maintenance manifests, Profile narrowing, Reasoner Gateway proposals, Pack-aware routing, non-vector operational memory, Supervisor multi-Run DAG, propagation contracts and a real offline fresh-clone maintenance episode."
+        },
+        {
+          "classification": "HISTORICAL",
+          "line": 87,
+          "matches": [
+            "current_state_status"
+          ],
+          "path": "ignition/STATE-CHANGELOG.md",
+          "text": "- epistemic_state: R2 tests, validators, Pack load, checkpoint/resume, operational memory and offline pilot are repository execution evidence only. They do not upgrade M/E, the nine state axes, claim ceiling, Owner acceptance, external truth, causality, general intelligence or `EPISTEMICALLY_ACCEPTED=0`."
+        },
+        {
+          "classification": "HISTORICAL",
+          "line": 89,
+          "matches": [
+            "current_task_id"
+          ],
+          "path": "ignition/STATE-CHANGELOG.md",
+          "text": "- stale_knowledge: Task 119/120 R0/R1-only descriptions are historical compatibility surfaces; R2 is now the current engineering projection on this branch. A successful pilot is not a production or general-intelligence result, and this pre-release entry must not be read as a main merge receipt."
+        },
+        {
+          "classification": "HISTORICAL",
+          "line": 94,
+          "matches": [
+            "current_state_status",
+            "current_task_id"
+          ],
+          "path": "ignition/STATE-CHANGELOG.md",
+          "text": "- main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; this append-only delta is the formal main-release candidate for Task 121. The exact final main tip is established by the ordinary fast-forward Git receipt and independent 1111 receipt after this checkpoint, not by a self-referential hash in this file."
+        },
+        {
+          "classification": "HISTORICAL",
+          "line": 97,
+          "matches": [
+            "current_state_status"
+          ],
+          "path": "ignition/STATE-CHANGELOG.md",
+          "text": "- epistemic_state: `CURRENT_WITH_OPEN_OBLIGATIONS` and `EPISTEMICALLY_ACCEPTED=0` remain unchanged. Tests, receipts, generators, fresh-clone replay, Pack load, checkpoint/resume and local fast-forward evidence are repository synchronization/engineering evidence only; they do not establish external truth, causality, production safety, Owner acceptance, general intelligence or external validity."
+        },
+        {
+          "classification": "HISTORICAL",
+          "line": 99,
+          "matches": [
+            "current_task_id"
+          ],
+          "path": "ignition/STATE-CHANGELOG.md",
+          "text": "- stale_knowledge: the earlier Task 121 pre-release delta naming the Step 09 tip is historical branch-progress evidence and must not override the final Git/1111 receipt; `main` identity is current only after the no-force fast-forward and exact verification."
+        },
+        {
+          "classification": "HISTORICAL",
+          "line": 104,
+          "matches": [
+            "current_state_status"
+          ],
+          "path": "ignition/STATE-CHANGELOG.md",
+          "text": "- main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; this is a task-branch projection, not a claim that `origin/main` has moved. The formal main lifecycle remains pending Step 11 adversarial/full regression, Step 12 fresh-clone replay, ordinary fast-forward and independent 1111 main merge receipt."
+        },
+        {
+          "classification": "HISTORICAL",
+          "line": 105,
+          "matches": [
+            "current_task_id"
+          ],
+          "path": "ignition/STATE-CHANGELOG.md",
+          "text": "- delta: Task 122 adds the provider-neutral Ignition OS ↔ executor contract, strict approval intersection, capability/permission/health/granularity/privacy/workspace routing, public handoff/failover, receipt and pointer-only memory boundaries. OpenClaw, Hermes and Codex are replaceable adapters; the existing local action plane is frozen as `REFERENCE_EXECUTOR / CONFORMANCE_EXECUTOR / FALLBACK_MINIMAL`; future executors remain contract-gated slots."
+        },
+        {
+          "classification": "HISTORICAL",
+          "line": 107,
+          "matches": [
+            "current_state_status"
+          ],
+          "path": "ignition/STATE-CHANGELOG.md",
+          "text": "- epistemic_state: `CURRENT_WITH_OPEN_OBLIGATIONS` and `EPISTEMICALLY_ACCEPTED=0` remain unchanged. Adapter conformance, disposable pilots, receipts, system-map generation, tests and repository validators are engineering evidence only; they do not establish external provider validity, production autonomy, universal safety, causality, general intelligence, Owner acceptance or truth authority."
+        },
+        {
+          "classification": "HISTORICAL",
+          "line": 114,
+          "matches": [
+            "current_state_status"
+          ],
+          "path": "ignition/STATE-CHANGELOG.md",
+          "text": "- main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; this append-only delta records the completed task-branch candidate, not a claim that `origin/main` has moved. The exact final tip remains the ordinary fast-forward and independent 1111 receipt evidence."
+        },
+        {
+          "classification": "EXAMPLE",
+          "line": 117,
+          "matches": [
+            "current_state_status"
+          ],
+          "path": "ignition/STATE-CHANGELOG.md",
+          "text": "- epistemic_state: `CURRENT_WITH_OPEN_OBLIGATIONS` and `EPISTEMICALLY_ACCEPTED=0` remain unchanged. Adapter fixtures, adversarial tests, deterministic generators, local validators, production-profile checks and fresh-clone replay evidence are repository engineering evidence only; they do not establish external provider validity, intelligence, causality, production autonomy, universal safety, Owner acceptance or external truth."
+        },
+        {
+          "classification": "HISTORICAL",
+          "line": 124,
+          "matches": [
+            "current_state_status"
+          ],
+          "path": "ignition/STATE-CHANGELOG.md",
+          "text": "- main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; formal `main` remains `d60ec8687fb1cc6b972e831a8f0dcd348ba0e83e`. This is a task-branch Current-State synchronization projection, not a claim that the formal main tip has moved."
+        },
+        {
+          "classification": "HISTORICAL",
+          "line": 125,
+          "matches": [
+            "version_token"
+          ],
+          "path": "ignition/STATE-CHANGELOG.md",
+          "text": "- delta: aligned the current Human/AI, Architecture, Federation, Results and system-map maintenance surfaces to `CURRENT_STATE_SYNC_INVARIANT` and `current-facts`; `0.8.0` is Current and `0.7.0` is Historical; the OS/driver, replaceable external executor, Knowledge-first Domain Pack and Reference/Conformance/Fallback boundary are stated consistently."
+        },
+        {
+          "classification": "HISTORICAL",
+          "line": 127,
+          "matches": [
+            "current_state_status"
+          ],
+          "path": "ignition/STATE-CHANGELOG.md",
+          "text": "- epistemic_state: no claim receives an M/E, proof, evidence, scope, provenance, Owner, production, external-validity or epistemic upgrade. `CURRENT_WITH_OPEN_OBLIGATIONS` and `EPISTEMICALLY_ACCEPTED=0` remain separate; local synchronization evidence is not live external invocation."
+        },
+        {
+          "classification": "HISTORICAL",
+          "line": 129,
+          "matches": [
+            "version_token"
+          ],
+          "path": "ignition/STATE-CHANGELOG.md",
+          "text": "- stale_knowledge: old Current labels for map `0.7.0`, the former single `agentization` map-strip wording and old copied Current counts do not override the contract/facts; historical task records and generated Knowledge indexes retain provenance and are not rewritten as current authority."
+        },
+        {
+          "classification": "HISTORICAL",
+          "line": 134,
+          "matches": [
+            "current_state_status",
+            "current_task_id"
+          ],
+          "path": "ignition/STATE-CHANGELOG.md",
+          "text": "- main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; this append-only delta records the Task 123 final candidate before the ordinary fast-forward. The exact released tip is established by the task-branch push, fast-forward-only main update, fresh-clone replay and independent 1111 receipt, not by a self-referential hash here."
+        },
+        {
+          "classification": "HISTORICAL",
+          "line": 135,
+          "matches": [
+            "version_token"
+          ],
+          "path": "ignition/STATE-CHANGELOG.md",
+          "text": "- delta: closes the Current-State synchronization invariant, deterministic current-facts publication gate, compact `0.8.0` map geometry and the bounded external-executor conformance/cross-executor evidence. The Step 12 repair excludes generated `current-facts` projections from non-function claim discovery so Foundation claims remain authoritative without a Knowledge/search/manifest hash cycle; path accounting remains explicit."
+        },
+        {
+          "classification": "HISTORICAL",
+          "line": 137,
+          "matches": [
+            "current_state_status"
+          ],
+          "path": "ignition/STATE-CHANGELOG.md",
+          "text": "- epistemic_state: `CURRENT_WITH_OPEN_OBLIGATIONS` and `EPISTEMICALLY_ACCEPTED=0` remain unchanged. Deterministic generators, geometry gates, bounded CLI probes, local pilots, tests, fresh-clone replay and Git/1111 receipts are repository engineering and synchronization evidence only; they do not establish external provider validity, production autonomy, causality, universal safety, Owner acceptance or external truth."
+        },
+        {
+          "classification": "HISTORICAL",
+          "line": 138,
+          "matches": [
+            "current_task_id"
+          ],
+          "path": "ignition/STATE-CHANGELOG.md",
+          "text": "- obligations: Task 104–106 historical propagation records remain `REQUIRES_REVIEW`; Phase-E legacy cwd path messages remain classified warnings; no live external invocation was repeated; OpenClaw/Hermes/Codex real invocation remains explicitly `SKIPPED`/`NOT_RUN` where unsafe or unavailable; proof, empirical, literature, provenance, scope and external-validation obligations remain open."
+        },
+        {
+          "classification": "HISTORICAL",
+          "line": 144,
+          "matches": [
+            "current_state_status",
+            "current_task_id"
+          ],
+          "path": "ignition/STATE-CHANGELOG.md",
+          "text": "- main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; formal `main` remains `266426d7110af9ee921a020a46c3a0347aa364e9`. This is the Task 124 branch projection; the exact released tip remains bound to the ordinary fast-forward, fresh-clone replay and independent 1111 receipt."
+        },
+        {
+          "classification": "HISTORICAL",
+          "line": 145,
+          "matches": [
+            "version_token"
+          ],
+          "path": "ignition/STATE-CHANGELOG.md",
+          "text": "- delta: added the bounded OS Control Plane R2 identity and navigation layer: Event Ledger, monotonic policy compiler, resource arbitration, bounded concurrent scheduler, executor health lease, queue/backpressure, durable dispatch/reconciliation, concurrent operational memory and Driver Console. Current map `0.9.0` is derived from `91` registry components, `79` visible nodes and `84` visible typed edges; `0.8.0` is Historical."
+        },
+        {
+          "classification": "HISTORICAL",
+          "line": 147,
+          "matches": [
+            "current_state_status"
+          ],
+          "path": "ignition/STATE-CHANGELOG.md",
+          "text": "- epistemic_state: `CURRENT_WITH_OPEN_OBLIGATIONS` and `EPISTEMICALLY_ACCEPTED=0` remain unchanged. The five-child offline pilot, deterministic generators, map geometry and focused tests are repository coordination evidence only; they do not establish live executor success, production safety, causality, Owner acceptance, external validity or truth authority."
+        },
+        {
+          "classification": "HISTORICAL",
+          "line": 149,
+          "matches": [
+            "version_token"
+          ],
+          "path": "ignition/STATE-CHANGELOG.md",
+          "text": "- stale_knowledge: old Current labels for `0.8.0`, sequential Supervisor baseline claims and the historical 104–106 impact declarations do not override the new contract or current derived facts; historical wording remains provenance, not current authority."
+        },
+        {
+          "classification": "HISTORICAL",
+          "line": 150,
+          "matches": [
+            "current_task_id"
+          ],
+          "path": "ignition/STATE-CHANGELOG.md",
+          "text": "- next_read: read this delta, [OS Control Plane R2](./docs/architecture/os-control-plane-r2.md), [Task 124 progress](./reports/operations/ignition-124-progress.md), [progress ledger](./data/operations/iterations/124/progress.jsonl), then complete Step 12 without treating this entry as a formal main release receipt."
+        },
+        {
+          "classification": "HISTORICAL",
+          "line": 154,
+          "matches": [
+            "current_state_status",
+            "current_task_id"
+          ],
+          "path": "ignition/STATE-CHANGELOG.md",
+          "text": "- main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; formal `main` remains `42dfc19cb17d439c9e150caf2dd5e75e3db938bd`. This Task 126 projection is not a claim that formal main has moved; exact release remains bound to ordinary fast-forward, fresh-clone replay and the independent 1111 receipt."
+        },
+        {
+          "classification": "HISTORICAL",
+          "line": 155,
+          "matches": [
+            "version_token"
+          ],
+          "path": "ignition/STATE-CHANGELOG.md",
+          "text": "- delta: added the candidate ESI definition, source-bound transition grammar, advisory Structural Governance Surface, blind synthetic benchmark and offline pilot, public-safe observation boundary, primary-source literature boundary, and provider-neutral soft-context exposure contract. The current identity/map projection now treats Structural Governance Surface as a cross-cutting advisory overlay in map `0.10.0`; it is not L7 or the hard control spine."
+        },
+        {
+          "classification": "EXAMPLE",
+          "line": 157,
+          "matches": [
+            "current_state_status"
+          ],
+          "path": "ignition/STATE-CHANGELOG.md",
+          "text": "- epistemic_state: `CURRENT_WITH_OPEN_OBLIGATIONS` and `EPISTEMICALLY_ACCEPTED=0` remain unchanged. Candidate definitions, literature review, synthetic fixtures, offline scoring, human explanation, topology updates and map generation do not establish live-model behavior, a mechanism, external validity, causality, Owner acceptance, truth authority or permission authority."
+        },
+        {
+          "classification": "HISTORICAL",
+          "line": 158,
+          "matches": [
+            "current_task_id"
+          ],
+          "path": "ignition/STATE-CHANGELOG.md",
+          "text": "- obligations: live-provider evidence remains `NOT_RUN_LIVE_EXTERNAL`; independent replication, cross-domain/delayed-transfer tests, authority-confusion resistance, mechanism separation and external validation remain open. Task 125 remains `DEFERRED_PENDING_REBASE` and must be rewritten from the new formal main after Task 126 release; no old 125 deliverable is included."
+        },
+        {
+          "classification": "HISTORICAL",
+          "line": 160,
+          "matches": [
+            "current_task_id"
+          ],
+          "path": "ignition/STATE-CHANGELOG.md",
+          "text": "- next_read: read this delta, [Task 126 progress](./reports/operations/ignition-126-progress.md), [ESI human surface](./docs/architecture/esi-human-surface-r0.md), [current-state identity](./data/architecture/current-system-identity.json), then complete Steps 16–17, fresh-clone replay, ordinary fast-forward and independent 1111 receipt."
+        },
+        {
+          "classification": "HISTORICAL",
+          "line": 164,
+          "matches": [
+            "current_state_status",
+            "current_task_id"
+          ],
+          "path": "ignition/STATE-CHANGELOG.md",
+          "text": "- main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; formal `main` remains `c5cec3a212dbf42564985b71c0fcec3b1fb1e564` until the Task 127 Step 19 acceptance gates and ordinary fast-forward. This delta is a task-branch projection, not a claim that `main` has moved."
+        },
+        {
+          "classification": "HISTORICAL",
+          "line": 165,
+          "matches": [
+            "version_token"
+          ],
+          "path": "ignition/STATE-CHANGELOG.md",
+          "text": "- delta: registered Durability / Lifecycle R3 as one current component inside the existing Ignition OS / driver spine; synchronized the typed topology, unique registry-derived map `0.11.0` with `0.10.0` Historical, current identity epoch, current-facts, architecture, Human/AI/Federation front doors and the Step 127 Current-State receipt. The component covers snapshot plus tail, compaction, schema migration, namespace isolation, Pack lifecycle, revocation, accounting, recovery orchestration and DR bundle continuity."
+        },
+        {
+          "classification": "HISTORICAL",
+          "line": 168,
+          "matches": [
+            "current_state_status"
+          ],
+          "path": "ignition/STATE-CHANGELOG.md",
+          "text": "- epistemic_state: `CURRENT_WITH_OPEN_OBLIGATIONS` and `EPISTEMICALLY_ACCEPTED=0` remain unchanged. The continuity pilot, map projection, deterministic generators, architecture sync and receipts do not establish production durability, exact-once delivery, live provider success, external validity, Owner acceptance or epistemic acceptance."
+        },
+        {
+          "classification": "EXAMPLE",
+          "line": 169,
+          "matches": [
+            "current_task_id"
+          ],
+          "path": "ignition/STATE-CHANGELOG.md",
+          "text": "- obligations: Step 19 must run the full acceptance matrix, classify the environmental `T16_SYMPY_COUNTEREXAMPLE` residual and historical 104–106 residual without rewriting them, replay from a fresh clone, verify the final task tip and receipt branch, then perform the ordinary fast-forward and independent 1111 closeout. Task 125 remains `DEFERRED_PENDING_REBASE` and is not executed by this task."
+        },
+        {
+          "classification": "HISTORICAL",
+          "line": 170,
+          "matches": [
+            "current_task_id",
+            "version_token"
+          ],
+          "path": "ignition/STATE-CHANGELOG.md",
+          "text": "- stale_knowledge: historical Task 126 map `0.10.0`, old copied counts and branch-only receipts remain historical context; the current map, counts and architecture identity must be read from the canonical registry/topology/layout and current-facts projection."
+        },
+        {
+          "classification": "HISTORICAL",
+          "line": 171,
+          "matches": [
+            "current_task_id"
+          ],
+          "path": "ignition/STATE-CHANGELOG.md",
+          "text": "- next_read: read this delta, [Task 127 progress](./data/operations/iterations/127/progress.jsonl), [current identity](./data/architecture/current-system-identity.json), [Durability / Lifecycle architecture](./docs/architecture/os-control-plane-r2.md#Durability-and-Lifecycle-R3), then continue Step 19 without treating this projection as the formal main release receipt."
+        },
+        {
+          "classification": "HISTORICAL",
+          "line": 175,
+          "matches": [
+            "current_state_status",
+            "current_task_id"
+          ],
+          "path": "ignition/STATE-CHANGELOG.md",
+          "text": "- main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; formal main baseline for this Task 128 branch is `681f86d79b1112af3c07e0f8091335860c237ef2`; this is a Task 128 task-branch projection while the ordinary fast-forward and fresh-clone gates remain open."
+        },
+        {
+          "classification": "HISTORICAL",
+          "line": 176,
+          "matches": [
+            "current_task_id",
+            "current_task_status"
+          ],
+          "path": "ignition/STATE-CHANGELOG.md",
+          "text": "- delta: added the canonical `CURRENT_TASK_LINEAGE_STATUS` source and aligned the Current Human/AI entry surfaces after Task 127 publication. The source distinguishes the unexecuted 125 file from its requirements rebased into 127 and records 127 as `COMPLETED_WITH_CLASSIFIED_RESIDUALS` with zero new regressions."
+        },
+        {
+          "classification": "HISTORICAL",
+          "line": 178,
+          "matches": [
+            "current_task_id",
+            "current_task_status"
+          ],
+          "path": "ignition/STATE-CHANGELOG.md",
+          "text": "- lineage_boundary: `IGNITION-125` file `HISTORICAL_UNEXECUTED`; valid requirements `REBASED_INTO_127`; canonical status `HISTORICAL_UNEXECUTED_REBASED_INTO_127`; `IGNITION-127` `COMPLETED_WITH_CLASSIFIED_RESIDUALS`. Historical Task 126 pending wording remains preserved in its original records and is not Current truth."
+        },
+        {
+          "classification": "HISTORICAL",
+          "line": 179,
+          "matches": [
+            "current_state_status"
+          ],
+          "path": "ignition/STATE-CHANGELOG.md",
+          "text": "- epistemic_state: `CURRENT_WITH_OPEN_OBLIGATIONS` and `EPISTEMICALLY_ACCEPTED=0` remain unchanged. This is repository-local state synchronization evidence only; it does not establish production durability, external truth, Owner acceptance or epistemic acceptance."
+        },
+        {
+          "classification": "HISTORICAL",
+          "line": 181,
+          "matches": [
+            "current_task_id"
+          ],
+          "path": "ignition/STATE-CHANGELOG.md",
+          "text": "- next_read: read `data/operations/current-task-lineage-status.json`, `data/operations/iterations/128/progress.jsonl` and the synchronized Human/AI surfaces; preserve all historical Task 126/127 records."
+        },
+        {
+          "classification": "HISTORICAL",
+          "line": 185,
+          "matches": [
+            "current_state_status",
+            "current_task_id"
+          ],
+          "path": "ignition/STATE-CHANGELOG.md",
+          "text": "- main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; this formal main delta starts from `681f86d79b1112af3c07e0f8091335860c237ef2` and is published by ordinary fast-forward after the Task 128 fresh-clone gates. The exact released tip is established by Git and the independent 1111 receipt, not by a self-referential hash here."
+        },
+        {
+          "classification": "HISTORICAL",
+          "line": 186,
+          "matches": [
+            "current_task_id",
+            "current_task_status"
+          ],
+          "path": "ignition/STATE-CHANGELOG.md",
+          "text": "- delta: closes the repository-local Current-State semantic repair after Durability / Lifecycle R3. The canonical lineage source is terminal for Task 128; Current Human/AI surfaces now distinguish the unexecuted Task 125 file, its valid requirements rebased into Task 127, and Task 127 `COMPLETED_WITH_CLASSIFIED_RESIDUALS` with zero new regressions."
+        },
+        {
+          "classification": "EXAMPLE",
+          "line": 188,
+          "matches": [
+            "current_state_status"
+          ],
+          "path": "ignition/STATE-CHANGELOG.md",
+          "text": "- epistemic_state: `CURRENT_WITH_OPEN_OBLIGATIONS` and `EPISTEMICALLY_ACCEPTED=0` remain unchanged. Structured validation, deterministic projections, negative fixtures, fresh-clone replay, Git publication and receipts are repository-local synchronization and engineering evidence only; they do not establish external truth, production readiness, Owner acceptance or epistemic acceptance."
+        },
+        {
+          "classification": "HISTORICAL",
+          "line": 190,
+          "matches": [
+            "current_task_id",
+            "current_task_status"
+          ],
+          "path": "ignition/STATE-CHANGELOG.md",
+          "text": "- stale_knowledge: the historical Task 126/125 records retain their original pending/deferred wording as provenance; the old Task 125 file was not executed and must not be rendered `COMPLETED`. Its valid requirements are recorded as `REBASED_INTO_127`; the current canonical status is `HISTORICAL_UNEXECUTED_REBASED_INTO_127`, while Task 127 remains `COMPLETED_WITH_CLASSIFIED_RESIDUALS`."
+        },
+        {
+          "classification": "HISTORICAL",
+          "line": 191,
+          "matches": [
+            "current_task_id"
+          ],
+          "path": "ignition/STATE-CHANGELOG.md",
+          "text": "- next_read: read `data/operations/current-task-lineage-status.json`, `data/architecture/current-facts.json`, `data/operations/iterations/128/current-state-sync-receipt.json`, [Task 128 regression evidence](./reports/operations/ignition-128-step04-regression.md) and the independent 1111 receipt; preserve all historical Task 126/127 records."
+        },
+        {
+          "classification": "HISTORICAL",
+          "line": 193,
+          "matches": [
+            "current_task_id"
+          ],
+          "path": "ignition/STATE-CHANGELOG.md",
+          "text": "## 2026-08-21 — IGNITION-20260821-129-OS-STEERING-INTENT-OBLIGATION-R1 — task-branch Current-State projection"
+        },
+        {
+          "classification": "HISTORICAL",
+          "line": 195,
+          "matches": [
+            "current_state_status"
+          ],
+          "path": "ignition/STATE-CHANGELOG.md",
+          "text": "- main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; the formal task branch remains distinct from formal `main` until the Step 21 ordinary fast-forward, fresh-clone replay and independent 1111 receipt."
+        },
+        {
+          "classification": "HISTORICAL",
+          "line": 196,
+          "matches": [
+            "version_token"
+          ],
+          "path": "ignition/STATE-CHANGELOG.md",
+          "text": "- delta: registered the R4 Steering / Intent / Goal / Obligation R1 control surface inside the existing Ignition OS / driver spine; synchronized provenance-aware Intent, Goal lifecycle, independent Completion Contract, Commitment / Obligation Ledger, temporal semantics, long-term Goal graph, priority, conflict arbitration, DecisionTrace/why-next, Episode binding, drift/handoff guards, Memory/Profile boundary, Durability integration, namespace/delegation, federation Intent Capsule and Driver Console R3 projection. The sole registry-derived map is `0.12.0` Current with `0.11.0` Historical; registry/topology/layout and Current Facts remain the declared projection authorities."
+        },
+        {
+          "classification": "HISTORICAL",
+          "line": 198,
+          "matches": [
+            "current_task_id",
+            "current_task_status"
+          ],
+          "path": "ignition/STATE-CHANGELOG.md",
+          "text": "- lineage_boundary: `IGNITION-125` file remains `HISTORICAL_UNEXECUTED`; valid requirements remain `REBASED_INTO_127`; canonical status remains `HISTORICAL_UNEXECUTED_REBASED_INTO_127`; `IGNITION-127` remains `COMPLETED_WITH_CLASSIFIED_RESIDUALS`; current `IGNITION-20260821-129` is `COMPLETED_WITH_CLASSIFIED_RESIDUALS` with repository-local residuals explicitly classified."
+        },
+        {
+          "classification": "HISTORICAL",
+          "line": 200,
+          "matches": [
+            "current_state_status"
+          ],
+          "path": "ignition/STATE-CHANGELOG.md",
+          "text": "- epistemic_state: `CURRENT_WITH_OPEN_OBLIGATIONS` and `EPISTEMICALLY_ACCEPTED=0` remain unchanged. Steering tests, offline pilots, deterministic map/facts generation, receipts and Git evidence are repository-local coordination/synchronization evidence only; they do not establish real Owner intent, external truth, production readiness, live executor completion, Owner acceptance or epistemic acceptance."
+        },
+        {
+          "classification": "HISTORICAL",
+          "line": 202,
+          "matches": [
+            "current_task_id"
+          ],
+          "path": "ignition/STATE-CHANGELOG.md",
+          "text": "- stale_knowledge: historical Task 126/127/128 records retain their original wording as provenance and are not rewritten; current map/counts/status must be read from the new canonical identity, task-lineage source and deterministic Current Facts projection."
+        },
+        {
+          "classification": "HISTORICAL",
+          "line": 203,
+          "matches": [
+            "current_task_id"
+          ],
+          "path": "ignition/STATE-CHANGELOG.md",
+          "text": "- next_read: read [`current-system-identity.json`](./data/architecture/current-system-identity.json), [`current-facts.md`](./docs/architecture/current-facts.md), [`os-steering-intent-r1.md`](./docs/architecture/os-steering-intent-r1.md), [`Task 129 progress`](./data/operations/iterations/129/progress.jsonl), then complete Step 21 without treating this task-branch projection as a formal main or 1111 release receipt."
+        }
+      ],
+      "generated_block_count": 0,
+      "path": "ignition/STATE-CHANGELOG.md",
+      "profile": "ai",
+      "surface_id": "state-changelog"
+    }
+  ],
+  "task_id": "IGNITION-20260821-130"
+}
