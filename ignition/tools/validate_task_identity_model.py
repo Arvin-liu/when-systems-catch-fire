@@ -51,10 +51,12 @@ def validate(document: dict[str, Any] | None = None) -> list[str]:
         errors.append("current_formal_task must be sourced from canonical task lineage")
     if bindings["current_formal_task"]["json_pointer"] != "/current_task/task_id":
         errors.append("current_formal_task JSON pointer is not canonical")
-    if bindings["latest_architecture_changing_task"]["source_path"] != "ignition/data/operations/current-release-lifecycle-r1.json":
-        errors.append("latest_architecture_changing_task must be sourced from release lifecycle")
-    if bindings["release_candidate_task"]["source_path"] != "ignition/data/operations/iterations/132/execution-contract-r1.json":
-        errors.append("release_candidate_task must be sourced from the Task132 execution contract")
+    if bindings["latest_architecture_changing_task"]["source_path"] != "ignition/data/operations/current-task-lineage-status.json":
+        errors.append("latest_architecture_changing_task must be sourced from canonical task lineage")
+    if bindings["latest_architecture_changing_task"]["json_pointer"] != "/task_identity/latest_architecture_changing_task":
+        errors.append("latest_architecture_changing_task JSON pointer is not canonical")
+    if bindings["release_candidate_task"]["source_path"] != "ignition/data/operations/iterations/133/execution-contract-r1.json":
+        errors.append("release_candidate_task must be sourced from the Task133 execution contract")
     if not bindings["publication_witness_task"]["source_path"].startswith("Arvin-liu/1111:"):
         errors.append("publication_witness_task must remain in the control repository")
     if model["historical_lineage_source"]["preserve_history"] is not True:

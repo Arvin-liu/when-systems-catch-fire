@@ -2,7 +2,17 @@
   "schema_version": "current-system-identity-r1",
   "contract_id": "CURRENT_STATE_SYNC_INVARIANT",
   "identity_epoch": "os-control-plane-r4-steering-intent-r1",
-  "current_iteration_boundary": 130,
+  "current_formal_task_id": "IGNITION-20260822-133",
+  "current_formal_task_ordinal": 133,
+  "latest_architecture_changing_task_id": "IGNITION-20260821-129",
+  "latest_architecture_task_ordinal": 129,
+  "current_iteration_boundary": 133,
+  "current_iteration_boundary_semantics": {
+    "contract_id": "ITERATION_BOUNDARY_SEMANTICS_INVARIANT",
+    "status": "DEPRECATED_COMPATIBILITY_ALIAS",
+    "alias_of": "current_formal_task_ordinal",
+    "source_path": "ignition/data/operations/iteration-boundary-semantics-r1.json"
+  },
   "current_state_status": "CURRENT_WITH_OPEN_OBLIGATIONS",
   "epistemically_accepted": 0,
   "current_architecture_identity": {

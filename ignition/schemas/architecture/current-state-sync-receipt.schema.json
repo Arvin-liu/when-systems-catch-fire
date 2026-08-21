@@ -23,7 +23,12 @@
     "architecture_identity_impact": {"enum": ["NONE", "PRESENTATION_ONLY", "ARCHITECTURE_CHANGED"]},
     "identity_contract_path": {"type": "string", "minLength": 1, "pattern": "\\S"},
     "identity_epoch": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]+$"},
+    "current_formal_task_id": {"type": "string", "pattern": "^IGNITION-[0-9]{8}-[0-9]{3}$"},
+    "current_formal_task_ordinal": {"type": "integer", "minimum": 1},
+    "latest_architecture_changing_task_id": {"type": "string", "pattern": "^IGNITION-[0-9]{8}-[0-9]{3}$"},
+    "latest_architecture_task_ordinal": {"type": "integer", "minimum": 1},
     "current_iteration_boundary": {"type": "integer", "minimum": 0},
+    "current_iteration_boundary_semantics": {"const": "DEPRECATED_COMPATIBILITY_ALIAS_OF_CURRENT_FORMAL_TASK_ORDINAL"},
     "surface_decisions": {
       "type": "array",
       "minItems": 1,

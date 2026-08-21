@@ -19,6 +19,12 @@ from typing import Any
 
 import validate_current_state_sync as sync
 
+try:
+    from tools import iteration_boundary, task_identity
+except ImportError:
+    import iteration_boundary
+    import task_identity
+
 
 HERE = Path(__file__).resolve()
 ROOT = HERE.parents[1]
@@ -28,6 +34,8 @@ FACTS_PATH = ROOT / "data/architecture/current-facts.json"
 FACTS_MARKDOWN_PATH = ROOT / "docs/architecture/current-facts.md"
 SCHEMA_PATH = ROOT / "schemas/architecture/current-facts.schema.json"
 STEERING_PATH = ROOT / "data/operations/steering/current-state-r1.json"
+SEMANTICS_PATH = ROOT / "data/operations/iteration-boundary-semantics-r1.json"
+LIFECYCLE_PATH = ROOT / "data/operations/current-release-lifecycle-r1.json"
 
 
 def load_json(path: Path) -> Any:
@@ -60,6 +68,10 @@ def source_paths(contract: dict[str, Any]) -> list[Path]:
         sync.resolve_repo_path(contract["current_task_lineage"]["schema_path"]),
         sync.resolve_repo_path(contract["current_task_lineage"]["validator_path"]),
         STEERING_PATH,
+        SEMANTICS_PATH,
+        iteration_boundary.HERE,
+        Path(task_identity.__file__).resolve(),
+        LIFECYCLE_PATH,
     }
     for metric in contract["derived_metrics"]:
         paths.add(sync.resolve_repo_path(metric["source_path"]))
@@ -74,6 +86,16 @@ def source_paths(contract: dict[str, Any]) -> list[Path]:
 
 def build_projection(contract: dict[str, Any] | None = None) -> dict[str, Any]:
     contract = contract or load_json(CONTRACT_PATH)
+    iteration = iteration_boundary.derive()
+    for key in (
+        "current_formal_task_id",
+        "current_formal_task_ordinal",
+        "latest_architecture_changing_task_id",
+        "latest_architecture_task_ordinal",
+        "current_iteration_boundary",
+    ):
+        if contract.get(key) != iteration[key]:
+            raise ValueError(f"identity contract {key} is not the canonical derived value")
     metrics, errors = sync.derive_metrics(contract)
     if errors:
         raise ValueError("cannot derive current facts: " + "; ".join(errors))
@@ -148,8 +170,13 @@ def build_projection(contract: dict[str, Any] | None = None) -> dict[str, Any]:
             "surface_role_counts": dict(sorted(role_counts.items())),
         },
         "iteration": {
-            "current_iteration_boundary": contract["current_iteration_boundary"],
-            "method_version": method_match.group(1),
+            "current_formal_task_id": iteration["current_formal_task_id"],
+            "current_formal_task_ordinal": iteration["current_formal_task_ordinal"],
+            "latest_architecture_changing_task_id": iteration["latest_architecture_changing_task_id"],
+            "latest_architecture_task_ordinal": iteration["latest_architecture_task_ordinal"],
+            "current_iteration_boundary": iteration["current_iteration_boundary"],
+            "current_iteration_boundary_semantics": iteration["current_iteration_boundary_semantics"],
+            "method_version": iteration["current_method_version"],
             "method_status": contract["current_method"]["status"],
             "current_map_version": map_layout["current_map_version"],
         },
@@ -175,7 +202,12 @@ def build_projection(contract: dict[str, Any] | None = None) -> dict[str, Any]:
         "schema_version": "current-facts-r1",
         "contract_id": contract["contract_id"],
         "identity_epoch": contract["identity_epoch"],
-        "current_iteration_boundary": contract["current_iteration_boundary"],
+        "current_formal_task_id": iteration["current_formal_task_id"],
+        "current_formal_task_ordinal": iteration["current_formal_task_ordinal"],
+        "latest_architecture_changing_task_id": iteration["latest_architecture_changing_task_id"],
+        "latest_architecture_task_ordinal": iteration["latest_architecture_task_ordinal"],
+        "current_iteration_boundary": iteration["current_iteration_boundary"],
+        "current_iteration_boundary_semantics": iteration["current_iteration_boundary_semantics"],
         "facts": facts,
         "source_fingerprints": [{"path": relative(path), "sha256": sha256(path)} for path in source_paths(contract)],
         "claim_ceiling": "Deterministic repository-derived current facts and navigation support only; no external truth, Owner acceptance, production safety or epistemic upgrade.",
@@ -203,7 +235,7 @@ def render_markdown(projection: dict[str, Any]) -> bytes:
         "<!-- BEGIN GENERATED CURRENT-FACTS r1; DO NOT EDIT -->",
         "# Current Facts（机器推导事实）",
         "",
-        f"- Identity epoch: `{projection['identity_epoch']}`；current iteration boundary: `{projection['current_iteration_boundary']}`。",
+        f"- Iteration identity: current formal task `{iteration['current_formal_task_id']}` (ordinal `{iteration['current_formal_task_ordinal']}`)；latest architecture-changing task `{iteration['latest_architecture_changing_task_id']}` (ordinal `{iteration['latest_architecture_task_ordinal']}`)；`current_iteration_boundary` `{projection['current_iteration_boundary']}` is a deprecated compatibility alias of the formal ordinal。",
         f"- Architecture registry: `{architecture['registry_components']}` components；`{architecture['visible_map_nodes']}` visible map nodes；`{architecture['hidden_components']}` hidden represented components；`{architecture['typed_topology_relations']}` typed relations；`{architecture['visible_typed_edges']}` visible typed edges。",
         f"- Map/method: map `{architecture['current_map_version']}` Current（historical `{architecture['historical_map_version']}`）；layout `{architecture['layout_version']}`；semantic trunk `{architecture['semantic_trunk_version']}` with `{architecture['semantic_trunk_route_steps']}` bounded route stages；method `{iteration['method_version']}` `{iteration['method_status']}`。",
         f"- Packs: `{packs['count']}` packs；`{packs['capability_route_count']}` declared capability routes。",

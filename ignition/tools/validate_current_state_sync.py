@@ -19,6 +19,11 @@ import sys
 from pathlib import Path
 from typing import Any
 
+try:
+    from tools import iteration_boundary
+except ImportError:
+    import iteration_boundary
+
 
 HERE = Path(__file__).resolve()
 ROOT = HERE.parents[1]  # ignition/
@@ -158,6 +163,22 @@ def validate_contract(contract: dict[str, Any] | None = None) -> tuple[list[str]
         errors.append("epistemically_accepted must remain exactly 0")
     if _contains_forbidden_self_sha(contract):
         errors.append("current identity contract contains a self-referential commit SHA field")
+    try:
+        derived = iteration_boundary.derive()
+        for field in (
+            "current_formal_task_id",
+            "current_formal_task_ordinal",
+            "latest_architecture_changing_task_id",
+            "latest_architecture_task_ordinal",
+            "current_iteration_boundary",
+        ):
+            if contract.get(field) != derived[field]:
+                errors.append(f"identity {field} is not derived from canonical task identity")
+        semantics = contract.get("current_iteration_boundary_semantics", {})
+        if semantics.get("status") != "DEPRECATED_COMPATIBILITY_ALIAS" or semantics.get("alias_of") != "current_formal_task_ordinal":
+            errors.append("identity current_iteration_boundary is not an explicit formal ordinal compatibility alias")
+    except Exception as exc:
+        errors.append(f"cannot derive current iteration identity: {type(exc).__name__}: {exc}")
 
     identity = contract.get("current_architecture_identity", {})
     required_text = {
@@ -339,6 +360,22 @@ def validate_receipt(contract: dict[str, Any], receipt: dict[str, Any]) -> list[
         errors.append("receipt identity_epoch differs from current identity contract")
     if receipt.get("current_iteration_boundary") != contract.get("current_iteration_boundary"):
         errors.append("receipt current_iteration_boundary differs from current identity contract")
+    if receipt.get("task_id") == contract.get("current_formal_task_id"):
+        try:
+            derived = iteration_boundary.derive()
+            for field in (
+                "current_formal_task_id",
+                "current_formal_task_ordinal",
+                "latest_architecture_changing_task_id",
+                "latest_architecture_task_ordinal",
+                "current_iteration_boundary",
+            ):
+                if receipt.get(field) != derived[field]:
+                    errors.append(f"current receipt {field} differs from canonical derivation")
+            if receipt.get("current_iteration_boundary_semantics") != derived["current_iteration_boundary_semantics"]:
+                errors.append("current receipt compatibility alias semantics are not canonical")
+        except Exception as exc:
+            errors.append(f"cannot derive receipt iteration identity: {type(exc).__name__}: {exc}")
     if impact == "ARCHITECTURE_CHANGED":
         if not receipt.get("identity_contract_changed"):
             errors.append("ARCHITECTURE_CHANGED receipt must set identity_contract_changed=true")

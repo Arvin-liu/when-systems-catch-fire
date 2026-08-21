@@ -13,9 +13,11 @@ from typing import Any
 from jsonschema import Draft202012Validator
 
 try:
-    from tools import validate_execution_contract
+    from tools import validate_execution_contract_133 as validate_execution_contract
+    from tools import iteration_boundary
 except ImportError:  # direct script / tools-on-PYTHONPATH execution
-    import validate_execution_contract
+    import validate_execution_contract_133 as validate_execution_contract
+    import iteration_boundary
 
 
 HERE = Path(__file__).resolve()
@@ -25,8 +27,8 @@ LIFECYCLE_PATH = ROOT / "data/operations/current-release-lifecycle-r1.json"
 SCHEMA_PATH = ROOT / "schemas/operations/current-release-lifecycle-r1.schema.json"
 LINEAGE_PATH = ROOT / "data/operations/current-task-lineage-status.json"
 IDENTITY_PATH = ROOT / "data/architecture/current-system-identity.json"
-AUDIT_PATH = ROOT / "data/operations/iterations/131/step02-lifecycle-migration-audit.json"
-EXECUTION_CONTRACT_PATH = ROOT / "data/operations/iterations/132/execution-contract-r1.json"
+AUDIT_PATH = ROOT / "data/operations/iterations/133/step04-release-lifecycle-audit.json"
+EXECUTION_CONTRACT_PATH = ROOT / "data/operations/iterations/133/execution-contract-r1.json"
 
 PHASES = ["RUNNING", "TERMINAL_CANDIDATE", "RELEASE_READY"]
 
@@ -56,12 +58,28 @@ def validate(document: dict[str, Any] | None = None) -> list[str]:
         errors.append("lifecycle task_branch differs from execution contract task branch")
     if lifecycle["latest_architecture_changing_task"] != execution_contract["identity_expectations"]["latest_architecture_changing_task"]:
         errors.append("lifecycle architecture task differs from execution contract")
-    if lifecycle["task_identity_source"]["binding"] != "MUST_MATCH_CURRENT_FORMAL_AND_EXECUTION_CONTRACT":
+    if lifecycle["task_identity_source"]["binding"] != "MUST_MATCH_CURRENT_FORMAL_EXECUTION_CONTRACT_AND_ORDINAL_DERIVATION":
         errors.append("lifecycle task identity binding is not hard")
     if lifecycle["identity_epoch"] != identity["identity_epoch"]:
         errors.append("lifecycle identity_epoch differs from current identity epoch")
-    if lifecycle["current_iteration_boundary"] != identity["current_iteration_boundary"]:
-        errors.append("lifecycle boundary differs from current identity boundary")
+    try:
+        derived = iteration_boundary.derive()
+        for field in (
+            "current_formal_task_id",
+            "current_formal_task_ordinal",
+            "latest_architecture_changing_task",
+            "latest_architecture_task_ordinal",
+            "current_iteration_boundary",
+        ):
+            expected = derived["latest_architecture_changing_task_id"] if field == "latest_architecture_changing_task" else derived[field]
+            if lifecycle.get(field) != expected:
+                errors.append(f"lifecycle {field} differs from canonical derivation")
+        if lifecycle.get("current_iteration_boundary_semantics") != derived["current_iteration_boundary_semantics"]:
+            errors.append("lifecycle current_iteration_boundary compatibility semantics are not canonical")
+        if identity.get("current_iteration_boundary") != derived["current_iteration_boundary"]:
+            errors.append("identity current_iteration_boundary is not the formal ordinal alias")
+    except Exception as exc:
+        errors.append(f"cannot derive iteration identity: {type(exc).__name__}: {exc}")
     if lifecycle["latest_architecture_changing_task"] == lifecycle["task_id"]:
         errors.append("presentation-only Current task cannot also be latest architecture-changing task")
     if current_task["identity_impact"] != "PRESENTATION_ONLY":

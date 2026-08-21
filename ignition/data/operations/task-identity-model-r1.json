@@ -10,19 +10,19 @@
     },
     "latest_architecture_changing_task": {
       "role": "LATEST_ARCHITECTURE_CHANGING_TASK",
-      "source_path": "ignition/data/operations/current-release-lifecycle-r1.json",
-      "json_pointer": "/latest_architecture_changing_task",
-      "semantic": "Most recent task that changed architecture identity; it may differ from the current formal task."
+      "source_path": "ignition/data/operations/current-task-lineage-status.json",
+      "json_pointer": "/task_identity/latest_architecture_changing_task",
+      "semantic": "Most recent task that changed architecture identity from canonical task identity; it may differ from the current formal task."
     },
     "release_candidate_task": {
       "role": "RELEASE_CANDIDATE_TASK",
-      "source_path": "ignition/data/operations/iterations/132/execution-contract-r1.json",
+      "source_path": "ignition/data/operations/iterations/133/execution-contract-r1.json",
       "json_pointer": "/task_id",
       "semantic": "Task identity fixed by the formal execution contract before release-candidate formation."
     },
     "publication_witness_task": {
       "role": "PUBLICATION_WITNESS_TASK",
-      "source_path": "Arvin-liu/1111:agent-results/IGNITION-20260822-132-publication-witness.json",
+      "source_path": "Arvin-liu/1111:agent-results/IGNITION-20260822-133-publication-witness.json",
       "json_pointer": "/task_id",
       "authority": "CONTROL_REPOSITORY_RECEIPT",
       "semantic": "Control-repository task responsible for observation-time remote-ref publication evidence; it grants no architecture authority."

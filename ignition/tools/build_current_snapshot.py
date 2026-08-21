@@ -10,6 +10,12 @@ import sys
 from pathlib import Path
 from typing import Any
 
+try:
+    from tools import iteration_boundary, task_identity
+except ImportError:
+    import iteration_boundary
+    import task_identity
+
 
 HERE = Path(__file__).resolve()
 ROOT = HERE.parents[1]
@@ -19,6 +25,7 @@ SCHEMA_PATH = ROOT / "schemas/operations/current-snapshot-r1.schema.json"
 SNAPSHOT_PATH = ROOT / "data/operations/current-snapshot-r1.json"
 CURRENT_FACTS_PATH = ROOT / "data/architecture/current-facts.json"
 LIFECYCLE_PATH = ROOT / "data/operations/current-release-lifecycle-r1.json"
+SEMANTICS_PATH = ROOT / "data/operations/iteration-boundary-semantics-r1.json"
 
 
 def load_json(path: Path) -> Any:
@@ -52,6 +59,11 @@ def registry_values(registry: dict[str, Any]) -> tuple[dict[str, Any], dict[str,
         source = fact["canonical_source"]
         path = resolve(source["path"])
         value = pointer_get(load_json(path), source["json_pointer"])
+        if fact.get("extractor") == "task_identity_ordinal":
+            try:
+                value = task_identity.parse_task_id(value)["ordinal"]
+            except task_identity.TaskIdentityError as exc:
+                raise ValueError(f"cannot derive ordinal for {fact['fact_id']}: {exc}") from exc
         if value is None and fact["null_behavior"] == "FAIL":
             raise ValueError(f"canonical fact is null: {fact['fact_id']}")
         values[fact["fact_id"]] = value
@@ -60,7 +72,7 @@ def registry_values(registry: dict[str, Any]) -> tuple[dict[str, Any], dict[str,
 
 
 def source_paths(registry: dict[str, Any]) -> list[Path]:
-    paths = {REGISTRY_PATH, SCHEMA_PATH, HERE, CURRENT_FACTS_PATH, LIFECYCLE_PATH}
+    paths = {REGISTRY_PATH, SCHEMA_PATH, HERE, CURRENT_FACTS_PATH, LIFECYCLE_PATH, SEMANTICS_PATH, iteration_boundary.HERE, Path(task_identity.__file__).resolve()}
     paths.update(resolve(fact["canonical_source"]["path"]) for fact in registry["facts"])
     return sorted(paths, key=relative)
 
@@ -83,6 +95,7 @@ def build_snapshot() -> dict[str, Any]:
     facts = load_json(CURRENT_FACTS_PATH)
     map_layout = load_json(resolve("ignition/data/architecture/interactive-system-map-layout.json"))
     lifecycle = load_json(LIFECYCLE_PATH)
+    iteration = iteration_boundary.derive()
     if facts.get("schema_version") != "current-facts-r1":
         raise ValueError("current-facts projection schema is not current-facts-r1")
     current_task = lineage["current_task"]
@@ -103,6 +116,17 @@ def build_snapshot() -> dict[str, Any]:
         raise ValueError("registry current_map_version does not match map layout")
     if lifecycle["task_id"] != current_task["task_id"]:
         raise ValueError("release lifecycle task_id does not match current task")
+    for key, expected in iteration.items():
+        if key == "current_iteration_boundary_semantics":
+            continue
+        if values.get(key) != expected and key in values:
+            raise ValueError(f"registry {key} does not match canonical derivation")
+    if values.get("current_iteration_boundary") != iteration["current_iteration_boundary"]:
+        raise ValueError("registry current_iteration_boundary is not the formal ordinal alias")
+    if values.get("current_formal_task") != iteration["current_formal_task_id"]:
+        raise ValueError("registry current_formal_task does not match iteration identity")
+    if values.get("latest_architecture_changing_task") != iteration["latest_architecture_changing_task_id"]:
+        raise ValueError("registry architecture task does not match iteration identity")
 
     spine = identity["current_architecture_identity"]["internal_control_spine"]
     control_text = identity["current_architecture_identity"]["control_plane_role"]
@@ -158,6 +182,7 @@ def build_snapshot() -> dict[str, Any]:
         },
         "current_method_version": values["current_method_version"],
         "current_task": dict(current_task),
+        "iteration_identity": dict(iteration),
         "task_identity": {
             "current_formal_task": values["current_formal_task"],
             "latest_architecture_changing_task": values["latest_architecture_changing_task"],

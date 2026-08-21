@@ -4,12 +4,17 @@
   "title": "Ignition deterministic current facts projection",
   "type": "object",
   "additionalProperties": false,
-  "required": ["schema_version", "contract_id", "identity_epoch", "current_iteration_boundary", "facts", "source_fingerprints", "claim_ceiling"],
+  "required": ["schema_version", "contract_id", "identity_epoch", "current_formal_task_id", "current_formal_task_ordinal", "latest_architecture_changing_task_id", "latest_architecture_task_ordinal", "current_iteration_boundary", "current_iteration_boundary_semantics", "facts", "source_fingerprints", "claim_ceiling"],
   "properties": {
     "schema_version": {"const": "current-facts-r1"},
     "contract_id": {"const": "CURRENT_STATE_SYNC_INVARIANT"},
     "identity_epoch": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]+$"},
-    "current_iteration_boundary": {"type": "integer", "minimum": 0},
+    "current_formal_task_id": {"type": "string", "pattern": "^IGNITION-[0-9]{8}-[0-9]{3}$"},
+    "current_formal_task_ordinal": {"type": "integer", "minimum": 1},
+    "latest_architecture_changing_task_id": {"type": "string", "pattern": "^IGNITION-[0-9]{8}-[0-9]{3}$"},
+    "latest_architecture_task_ordinal": {"type": "integer", "minimum": 1},
+    "current_iteration_boundary": {"type": "integer", "minimum": 1},
+    "current_iteration_boundary_semantics": {"const": "DEPRECATED_COMPATIBILITY_ALIAS_OF_CURRENT_FORMAL_TASK_ORDINAL"},
     "facts": {"$ref": "#/$defs/facts"},
     "source_fingerprints": {
       "type": "array",
@@ -99,8 +104,18 @@
         },
         "iteration": {
           "type": "object", "additionalProperties": false,
-          "required": ["current_iteration_boundary", "method_version", "method_status", "current_map_version"],
-          "properties": {"current_iteration_boundary": {"type": "integer", "minimum": 0}, "method_version": {"$ref": "#/$defs/nonblank"}, "method_status": {"const": "Current"}, "current_map_version": {"$ref": "#/$defs/nonblank"}}
+          "required": ["current_formal_task_id", "current_formal_task_ordinal", "latest_architecture_changing_task_id", "latest_architecture_task_ordinal", "current_iteration_boundary", "current_iteration_boundary_semantics", "method_version", "method_status", "current_map_version"],
+          "properties": {
+            "current_formal_task_id": {"type": "string", "pattern": "^IGNITION-[0-9]{8}-[0-9]{3}$"},
+            "current_formal_task_ordinal": {"type": "integer", "minimum": 1},
+            "latest_architecture_changing_task_id": {"type": "string", "pattern": "^IGNITION-[0-9]{8}-[0-9]{3}$"},
+            "latest_architecture_task_ordinal": {"type": "integer", "minimum": 1},
+            "current_iteration_boundary": {"type": "integer", "minimum": 1},
+            "current_iteration_boundary_semantics": {"const": "DEPRECATED_COMPATIBILITY_ALIAS_OF_CURRENT_FORMAL_TASK_ORDINAL"},
+            "method_version": {"$ref": "#/$defs/nonblank"},
+            "method_status": {"const": "Current"},
+            "current_map_version": {"$ref": "#/$defs/nonblank"}
+          }
         },
         "task_lineage": {
           "type": "object", "additionalProperties": false,

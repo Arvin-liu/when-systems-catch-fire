@@ -2,7 +2,7 @@
   "schema_version": "current-volatile-fact-registry-r1",
   "contract_id": "CURRENT_VOLATILE_FACT_SINGLE_SOURCE_INVARIANT",
   "registry_role": "Extraction and rendering metadata only; this registry stores no current volatile values.",
-  "source_resolution": "Repository-relative paths and RFC 6901 JSON pointers are resolved by the compiler; missing or null sources fail closed unless null_behavior explicitly permits UNKNOWN.",
+  "source_resolution": "Repository-relative paths and RFC 6901 JSON pointers are resolved by the compiler; task_identity_ordinal is the only derived extractor and parses a canonical task id; missing or null sources fail closed unless null_behavior explicitly permits UNKNOWN.",
   "facts": [
     {
       "fact_id": "current_identity_epoch",
@@ -32,16 +32,16 @@
     },
     {
       "fact_id": "current_iteration_boundary",
-      "canonical_source": {"path": "ignition/data/architecture/current-system-identity.json", "json_pointer": "/current_iteration_boundary", "source_kind": "canonical_contract"},
+      "canonical_source": {"path": "ignition/data/operations/current-task-lineage-status.json", "json_pointer": "/task_identity/current_formal_task", "source_kind": "derived_compatibility_alias"},
       "value_type": "integer",
-      "extractor": "json_pointer",
-      "allowed_current_renderings": ["generated_snapshot.current_iteration_boundary"],
+      "extractor": "task_identity_ordinal",
+      "allowed_current_renderings": ["generated_snapshot.iteration_identity.current_iteration_boundary"],
       "allowed_historical_usage": ["dated historical records may retain prior boundaries"],
       "required_current_surfaces": ["project-current-state", "ai-cold-start", "ai-agents-handoff", "machine-entry", "state-changelog"],
-      "freshness_rule": "Must be non-negative and match the canonical identity contract.",
+      "freshness_rule": "Must equal the ordinal parsed from current_formal_task and must equal the deprecated compatibility alias in the identity contract.",
       "null_behavior": "FAIL",
-      "authority": "repository-local canonical identity contract",
-      "claim_ceiling": "Iteration boundary only; not progress or external completion."
+      "authority": "repository-local task identity derivation",
+      "claim_ceiling": "Formal-task ordinal compatibility alias only; not progress or external completion."
     },
     {
       "fact_id": "current_method_version",
@@ -83,8 +83,21 @@
       "claim_ceiling": "Formal task lifecycle identity only; no Owner or epistemic authority."
     },
     {
+      "fact_id": "current_formal_task_ordinal",
+      "canonical_source": {"path": "ignition/data/operations/current-task-lineage-status.json", "json_pointer": "/task_identity/current_formal_task", "source_kind": "canonical_task_identity_state"},
+      "value_type": "integer",
+      "extractor": "task_identity_ordinal",
+      "allowed_current_renderings": ["generated_snapshot.iteration_identity.current_formal_task_ordinal", "generated blocks may call it formal task ordinal"],
+      "allowed_historical_usage": ["historical task records may retain their own parsed ordinal with explicit Historical labels"],
+      "required_current_surfaces": ["homepage-identity", "project-current-state", "ai-cold-start", "ai-agents-handoff", "machine-entry", "architecture", "state-changelog"],
+      "freshness_rule": "Must be parsed from the canonical current formal task id; no independent integer is allowed.",
+      "null_behavior": "FAIL",
+      "authority": "repository-local task identity derivation",
+      "claim_ceiling": "Formal task ordinal only; no Owner or epistemic authority."
+    },
+    {
       "fact_id": "latest_architecture_changing_task",
-      "canonical_source": {"path": "ignition/data/operations/current-release-lifecycle-r1.json", "json_pointer": "/latest_architecture_changing_task", "source_kind": "canonical_release_lifecycle"},
+      "canonical_source": {"path": "ignition/data/operations/current-task-lineage-status.json", "json_pointer": "/task_identity/latest_architecture_changing_task", "source_kind": "canonical_task_identity_state"},
       "value_type": "task_id",
       "extractor": "json_pointer",
       "allowed_current_renderings": ["generated_snapshot.task_identity.latest_architecture_changing_task", "generated blocks may call it latest architecture-changing task"],
@@ -96,8 +109,21 @@
       "claim_ceiling": "Architecture-changing task reference only; no authority or external truth."
     },
     {
+      "fact_id": "latest_architecture_task_ordinal",
+      "canonical_source": {"path": "ignition/data/operations/current-task-lineage-status.json", "json_pointer": "/task_identity/latest_architecture_changing_task", "source_kind": "canonical_task_identity_state"},
+      "value_type": "integer",
+      "extractor": "task_identity_ordinal",
+      "allowed_current_renderings": ["generated_snapshot.iteration_identity.latest_architecture_task_ordinal", "generated blocks may call it architecture task ordinal"],
+      "allowed_historical_usage": ["historical architecture task records may retain their own parsed ordinal with explicit Historical labels"],
+      "required_current_surfaces": ["homepage-identity", "project-current-state", "ai-cold-start", "ai-agents-handoff", "machine-entry", "architecture", "state-changelog"],
+      "freshness_rule": "Must be parsed from the canonical latest architecture-changing task id; it may differ from the formal task ordinal.",
+      "null_behavior": "FAIL",
+      "authority": "repository-local architecture-task identity derivation",
+      "claim_ceiling": "Architecture task ordinal only; no authority or external truth."
+    },
+    {
       "fact_id": "release_candidate_task",
-      "canonical_source": {"path": "ignition/data/operations/iterations/132/execution-contract-r1.json", "json_pointer": "/identity_expectations/release_candidate_task", "source_kind": "canonical_execution_contract"},
+      "canonical_source": {"path": "ignition/data/operations/iterations/133/execution-contract-r1.json", "json_pointer": "/identity_expectations/release_candidate_task", "source_kind": "canonical_execution_contract"},
       "value_type": "task_id",
       "extractor": "json_pointer",
       "allowed_current_renderings": ["generated_snapshot.task_identity.release_candidate_task", "release-candidate identity gate"],

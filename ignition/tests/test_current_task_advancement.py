@@ -4,15 +4,15 @@ import copy
 import unittest
 
 from tools import advance_current_task as advancement
-from tools import validate_execution_contract
+from tools import validate_execution_contract_133 as validate_execution_contract
 
 
 class CurrentTaskAdvancementTests(unittest.TestCase):
     def setUp(self) -> None:
         self.source = advancement.load_json(advancement.STATUS_PATH)
         self.source["current_task"] = {
-            "task_id": "IGNITION-20260821-130",
-            "scope": "Current Surface Compiler, single-source semantic projection and post-publication remote self-check",
+            "task_id": "IGNITION-20260822-132",
+            "scope": "Task132 formal publication and current-state closure",
             "execution_status": "COMPLETED_WITH_CLASSIFIED_RESIDUALS",
             "terminal": True,
             "identity_impact": "PRESENTATION_ONLY",
@@ -20,13 +20,13 @@ class CurrentTaskAdvancementTests(unittest.TestCase):
         self.source.pop("task_identity", None)
         self.contract = validate_execution_contract.load_json(validate_execution_contract.CONTRACT_PATH)
 
-    def test_advancement_moves_canonical_source_to_task132(self) -> None:
+    def test_advancement_moves_canonical_source_to_task133(self) -> None:
         updated, changed = advancement.advance_document(self.source, self.contract)
         self.assertTrue(changed)
-        self.assertEqual(updated["current_task"]["task_id"], "IGNITION-20260822-132")
+        self.assertEqual(updated["current_task"]["task_id"], "IGNITION-20260822-133")
         self.assertEqual(updated["task_identity"]["latest_architecture_changing_task"], "IGNITION-20260821-129")
-        self.assertEqual(updated["task_identity"]["previous_canonical_current_task"], "IGNITION-20260821-130")
-        self.assertEqual(updated["task_identity"]["previous_formal_task"], "IGNITION-20260821-131")
+        self.assertEqual(updated["task_identity"]["previous_canonical_current_task"], "IGNITION-20260822-132")
+        self.assertEqual(updated["task_identity"]["previous_formal_task"], "IGNITION-20260822-132")
         self.assertEqual(advancement.validate_state(updated), [])
 
     def test_same_advancement_is_idempotent(self) -> None:
@@ -54,8 +54,7 @@ class CurrentTaskAdvancementTests(unittest.TestCase):
         edges = {(row["predecessor_task_id"], row["successor_task_id"]) for row in updated["task_identity"]["historical_lineage"]}
         self.assertIn(("IGNITION-20260821-129", "IGNITION-20260821-130"), edges)
         self.assertIn(("IGNITION-20260821-130", "IGNITION-20260821-131"), edges)
-        self.assertIn(("IGNITION-20260821-130", "IGNITION-20260822-132"), edges)
-        self.assertIn(("IGNITION-20260821-131", "IGNITION-20260822-132"), edges)
+        self.assertIn(("IGNITION-20260822-132", "IGNITION-20260822-133"), edges)
 
 
 if __name__ == "__main__":

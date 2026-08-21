@@ -1,7 +1,10 @@
 {
   "claim_ceiling": "Deterministic repository-derived current facts and navigation support only; no external truth, Owner acceptance, production safety or epistemic upgrade.",
   "contract_id": "CURRENT_STATE_SYNC_INVARIANT",
-  "current_iteration_boundary": 130,
+  "current_formal_task_id": "IGNITION-20260822-133",
+  "current_formal_task_ordinal": 133,
+  "current_iteration_boundary": 133,
+  "current_iteration_boundary_semantics": "DEPRECATED_COMPATIBILITY_ALIAS_OF_CURRENT_FORMAL_TASK_ORDINAL",
   "facts": {
     "architecture": {
       "current_map_version": "0.12.0",
@@ -66,8 +69,13 @@
       }
     },
     "iteration": {
-      "current_iteration_boundary": 130,
+      "current_formal_task_id": "IGNITION-20260822-133",
+      "current_formal_task_ordinal": 133,
+      "current_iteration_boundary": 133,
+      "current_iteration_boundary_semantics": "DEPRECATED_COMPATIBILITY_ALIAS_OF_CURRENT_FORMAL_TASK_ORDINAL",
       "current_map_version": "0.12.0",
+      "latest_architecture_changing_task_id": "IGNITION-20260821-129",
+      "latest_architecture_task_ordinal": 129,
       "method_status": "Current",
       "method_version": "1.4.0"
     },
@@ -101,8 +109,8 @@
       "pilot_status": "OFFLINE_SYNTHETIC_ONLY"
     },
     "task_lineage": {
-      "current_task_id": "IGNITION-20260822-132",
-      "current_task_status": "COMPLETED_WITH_CLASSIFIED_RESIDUALS",
+      "current_task_id": "IGNITION-20260822-133",
+      "current_task_status": "IN_PROGRESS",
       "task125_canonical_status": "HISTORICAL_UNEXECUTED_REBASED_INTO_127",
       "task125_file_status": "HISTORICAL_UNEXECUTED",
       "task125_requirement_lineage_status": "REBASED_INTO_127",
@@ -110,6 +118,8 @@
     }
   },
   "identity_epoch": "os-control-plane-r4-steering-intent-r1",
+  "latest_architecture_changing_task_id": "IGNITION-20260821-129",
+  "latest_architecture_task_ordinal": 129,
   "schema_version": "current-facts-r1",
   "source_fingerprints": [
     {
@@ -122,7 +132,7 @@
     },
     {
       "path": "ignition/data/architecture/current-system-identity.json",
-      "sha256": "90303cadfededc71fc5e836be1f2161b1435be6f82c7d762e12b693c827716c5"
+      "sha256": "2c597d51786dc3e9d8199abeaea27a7a56dcac1ba7cd0d654de59b814d3cdd68"
     },
     {
       "path": "ignition/data/architecture/interactive-system-map-layout.json",
@@ -153,8 +163,16 @@
       "sha256": "bd462725917fb491ef6fb639d34e08000cfe9b4ebb37d2fa9e167c2bd5c74946"
     },
     {
+      "path": "ignition/data/operations/current-release-lifecycle-r1.json",
+      "sha256": "761789ed42ddbde6fdd8a532b5a4798533bb48163002bd252c46d98e7fdf6684"
+    },
+    {
       "path": "ignition/data/operations/current-task-lineage-status.json",
-      "sha256": "9d1e5826c05c8c95c22a3316b9c5b4986027221807a82a7fbf17757bfca2f993"
+      "sha256": "7eb1a2e7e2820b21294c2d25255ef702bf80f2fb1926b858313994c2da7b7682"
+    },
+    {
+      "path": "ignition/data/operations/iteration-boundary-semantics-r1.json",
+      "sha256": "c5abbc9112a23f533d3dfaa15e9dd590869768a1733313f420178e55d9d66669"
     },
     {
       "path": "ignition/data/operations/project-components.json",
@@ -190,11 +208,11 @@
     },
     {
       "path": "ignition/schemas/architecture/current-facts.schema.json",
-      "sha256": "aecaa7e5758ef19d7e463a152b70930b627f8f3dcc8bc1773b3cf1f93ed97a00"
+      "sha256": "8e4cce91697aa95d35593d0db44868e6f0fda33c7b824c446a0757be213a3ad0"
     },
     {
       "path": "ignition/schemas/architecture/current-system-identity.schema.json",
-      "sha256": "0e7417992b17fba4267a09aeb7bb96069d58ca9512ca38928f86879b0087cd61"
+      "sha256": "df9f540e6de657c19c3c3c352ac9bbeb2cdad83d6dd78c01b80fb88e4930c466"
     },
     {
       "path": "ignition/schemas/operations/current-task-lineage-status-r1.schema.json",
@@ -202,7 +220,15 @@
     },
     {
       "path": "ignition/tools/generate_current_facts.py",
-      "sha256": "9777740973cbed2acd87973fc05c7a2e16936df8f5e1a98691e1a056c1c2f1e2"
+      "sha256": "d26ae787106a52301ccb64542f28267a4d8470273533da94927cd8c50578181f"
+    },
+    {
+      "path": "ignition/tools/iteration_boundary.py",
+      "sha256": "3683467a9b696ab5f5afeeabfd23b889e4bc6504cfc34c481a9a15eca4178a9c"
+    },
+    {
+      "path": "ignition/tools/task_identity.py",
+      "sha256": "fa4fbe69102bbb6a7a63faa137d17b1d712166714d5ba950a8e6b278c79d9ad4"
     },
     {
       "path": "ignition/tools/validate_current_task_lineage.py",

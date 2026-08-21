@@ -4,7 +4,7 @@
     "title": "Ignition content-owned release lifecycle with ref-derived publication",
     "type": "object",
     "additionalProperties": false,
-    "required": ["schema_version", "contract_id", "task_id", "task_branch", "task_identity_source", "identity_epoch", "current_iteration_boundary", "content_phase", "required_publication_ref", "publication_authority", "embedded_publication_assertion", "latest_architecture_changing_task", "current_task_terminal", "post_publication_remote_check_required", "phase_order", "claim_ceiling"],
+    "required": ["schema_version", "contract_id", "task_id", "task_branch", "task_identity_source", "identity_epoch", "current_formal_task_id", "current_formal_task_ordinal", "latest_architecture_changing_task", "latest_architecture_task_ordinal", "current_iteration_boundary", "current_iteration_boundary_semantics", "content_phase", "required_publication_ref", "publication_authority", "embedded_publication_assertion", "current_task_terminal", "post_publication_remote_check_required", "phase_order", "claim_ceiling"],
     "properties": {
         "schema_version": {"const": "current-release-lifecycle-r1"},
         "contract_id": {"const": "CURRENT_RELEASE_LIFECYCLE_REF_DERIVED_R1"},
@@ -12,12 +12,16 @@
         "task_branch": {"type": "string", "minLength": 1},
         "task_identity_source": {"$ref": "#/$defs/taskIdentitySource"},
         "identity_epoch": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]+$"},
-        "current_iteration_boundary": {"type": "integer", "minimum": 0},
+        "current_formal_task_id": {"type": "string", "pattern": "^IGNITION-[0-9]{8}-[0-9]{3}$"},
+        "current_formal_task_ordinal": {"type": "integer", "minimum": 1},
+        "latest_architecture_changing_task": {"type": "string", "pattern": "^IGNITION-[0-9]{8}-[0-9]{3}$"},
+        "latest_architecture_task_ordinal": {"type": "integer", "minimum": 1},
+        "current_iteration_boundary": {"type": "integer", "minimum": 1},
+        "current_iteration_boundary_semantics": {"const": "DEPRECATED_COMPATIBILITY_ALIAS_OF_CURRENT_FORMAL_TASK_ORDINAL"},
         "content_phase": {"enum": ["RUNNING", "TERMINAL_CANDIDATE", "RELEASE_READY"]},
         "required_publication_ref": {"const": "refs/heads/main"},
         "publication_authority": {"const": "REMOTE_REF_OBSERVATION"},
         "embedded_publication_assertion": {"const": "NONE"},
-        "latest_architecture_changing_task": {"type": "string", "pattern": "^IGNITION-[0-9A-Z-]+$"},
         "current_task_terminal": {"type": "boolean"},
         "post_publication_remote_check_required": {"const": true},
         "phase_order": {"const": ["RUNNING", "TERMINAL_CANDIDATE", "RELEASE_READY"]},
@@ -27,11 +31,12 @@
         "taskIdentitySource": {
             "type": "object",
             "additionalProperties": false,
-            "required": ["current_formal_task_source", "execution_contract_source", "binding"],
+            "required": ["current_formal_task_source", "execution_contract_source", "ordinal_semantics_source", "binding"],
             "properties": {
                 "current_formal_task_source": {"const": "ignition/data/operations/current-task-lineage-status.json#/task_identity/current_formal_task"},
-                "execution_contract_source": {"const": "ignition/data/operations/iterations/132/execution-contract-r1.json#/task_id"},
-                "binding": {"const": "MUST_MATCH_CURRENT_FORMAL_AND_EXECUTION_CONTRACT"}
+                "execution_contract_source": {"const": "ignition/data/operations/iterations/133/execution-contract-r1.json#/task_id"},
+                "ordinal_semantics_source": {"const": "ignition/data/operations/iteration-boundary-semantics-r1.json"},
+                "binding": {"const": "MUST_MATCH_CURRENT_FORMAL_EXECUTION_CONTRACT_AND_ORDINAL_DERIVATION"}
             }
         }
     }
