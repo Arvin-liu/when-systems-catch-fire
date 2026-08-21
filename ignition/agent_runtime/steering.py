@@ -253,6 +253,110 @@ class CompletionContract:
         }
 
 
+COMPLETION_OUTCOMES = frozenset({"SATISFIED", "PARTIAL", "UNVERIFIABLE", "REJECTED"})
+
+
+@dataclass(frozen=True)
+class CompletionDecision:
+    """A separately authorized decision; it is the only input that can satisfy a Goal."""
+
+    goal_id: str
+    goal_version: int
+    contract_id: str
+    outcome: str
+    authority_source_type: str
+    authority_actor_ref: str
+    reason: str
+    predicate_results: Mapping[str, bool]
+    evidence_types: tuple[str, ...]
+    evidence_refs: tuple[str, ...]
+    forbidden_shortcuts_detected: tuple[str, ...]
+    decided_at: str
+    decision_sha256: str = ""
+
+    def __post_init__(self) -> None:
+        _safe_id(self.goal_id, "completion_decision.goal_id")
+        if not isinstance(self.goal_version, int) or self.goal_version < 1:
+            raise SteeringValidationError("completion_decision.goal_version must be positive")
+        _safe_id(self.contract_id, "completion_decision.contract_id")
+        if self.outcome not in COMPLETION_OUTCOMES:
+            raise SteeringValidationError(f"unknown completion outcome: {self.outcome}")
+        if self.authority_source_type not in INTENT_SOURCE_TYPES:
+            raise SteeringValidationError("completion decision has unknown authority source")
+        _safe_id(self.authority_actor_ref, "completion_decision.authority_actor_ref")
+        _bounded_text(self.reason, "completion_decision.reason")
+        if not isinstance(self.predicate_results, Mapping) or any(not isinstance(key, str) or not isinstance(value, bool) for key, value in self.predicate_results.items()):
+            raise SteeringValidationError("completion_decision.predicate_results must map strings to booleans")
+        object.__setattr__(self, "predicate_results", {key: bool(self.predicate_results[key]) for key in sorted(self.predicate_results)})
+        object.__setattr__(self, "evidence_types", _refs(self.evidence_types, "completion_decision.evidence_types"))
+        object.__setattr__(self, "evidence_refs", _refs(self.evidence_refs, "completion_decision.evidence_refs"))
+        object.__setattr__(self, "forbidden_shortcuts_detected", _refs(self.forbidden_shortcuts_detected, "completion_decision.forbidden_shortcuts_detected"))
+        _timestamp(self.decided_at, "completion_decision.decided_at")
+        expected = sha256_json(self.unsigned_dict())
+        if self.decision_sha256 and self.decision_sha256 != expected:
+            raise SteeringValidationError("completion decision digest mismatch")
+        object.__setattr__(self, "decision_sha256", expected)
+
+    def unsigned_dict(self) -> dict[str, Any]:
+        return {
+            "schema": f"{STEERING_SCHEMA}.completion-decision",
+            "goal_id": self.goal_id,
+            "goal_version": self.goal_version,
+            "contract_id": self.contract_id,
+            "outcome": self.outcome,
+            "authority_source_type": self.authority_source_type,
+            "authority_actor_ref": self.authority_actor_ref,
+            "reason": self.reason,
+            "predicate_results": dict(self.predicate_results),
+            "evidence_types": list(self.evidence_types),
+            "evidence_refs": list(self.evidence_refs),
+            "forbidden_shortcuts_detected": list(self.forbidden_shortcuts_detected),
+            "decided_at": self.decided_at,
+        }
+
+    def to_dict(self) -> dict[str, Any]:
+        return {**self.unsigned_dict(), "decision_sha256": self.decision_sha256}
+
+
+def evaluate_completion(goal: "GoalRecord", contract: CompletionContract, evidence: Mapping[str, Any], *, authority: AuthorityProvenance, decided_at: str) -> CompletionDecision:
+    """Evaluate a contract without treating a run receipt as upper-level completion."""
+
+    if goal.completion_contract_id != contract.contract_id:
+        raise SteeringValidationError("completion contract does not belong to Goal")
+    if not isinstance(evidence, Mapping):
+        raise SteeringValidationError("completion evidence must be an object")
+    public = _public_value(evidence, "completion.evidence")
+    raw_predicates = public.get("predicate_results", public.get("predicates", {}))
+    if not isinstance(raw_predicates, Mapping):
+        raise SteeringValidationError("completion predicate_results must be an object")
+    predicate_results = {str(key): value is True for key, value in raw_predicates.items()}
+    evidence_types = tuple(str(item) for item in public.get("evidence_types", ()))
+    evidence_refs = tuple(str(item) for item in public.get("evidence_refs", ()))
+    shortcut_flags = tuple(str(item) for item in public.get("shortcut_flags", ()))
+    forbidden = tuple(sorted(set(shortcut_flags).intersection(contract.forbidden_shortcuts)))
+    required_present = set(contract.required_evidence_types).issubset(set(evidence_types))
+    predicates_present = all(predicate_results.get(predicate) is True for predicate in contract.acceptance_predicates)
+    authority_ok = (
+        (contract.completion_authority == "OWNER_ONLY" and authority.is_owner_authority)
+        or (contract.completion_authority == "VALIDATOR" and authority.source_type == "SYSTEM_DERIVED_PROPOSAL" and authority.actor_ref.startswith("validator."))
+        or (contract.completion_authority == "EXTERNAL_OBSERVATION" and authority.source_type == "EXTERNAL_REQUESTED_PROPOSAL")
+    )
+    run_pass = bool(public.get("run_pass", False))
+    if forbidden:
+        outcome, reason = "REJECTED", "forbidden shortcut cannot satisfy independent completion contract"
+    elif run_pass and not (required_present and predicates_present):
+        outcome, reason = "UNVERIFIABLE", "run or episode PASS is not an independent Goal completion"
+    elif not authority_ok:
+        outcome, reason = "UNVERIFIABLE", "completion authority does not match the contract"
+    elif required_present and predicates_present:
+        outcome, reason = "SATISFIED", "all independent predicates and evidence requirements passed"
+    elif any(predicate_results.values()) or evidence_types:
+        outcome, reason = "PARTIAL", "some completion evidence exists but the contract is incomplete"
+    else:
+        outcome, reason = "UNVERIFIABLE", "no independent completion evidence was supplied"
+    return CompletionDecision(goal.goal_id, goal.version, contract.contract_id, outcome, authority.source_type, authority.actor_ref, reason, predicate_results, evidence_types, evidence_refs, forbidden, decided_at)
+
+
 @dataclass(frozen=True)
 class GoalRecord:
     """A versioned target whose satisfaction is never inferred from a child run."""
@@ -534,6 +638,30 @@ class GoalRegistry:
         })
         return updated
 
+    def mark_satisfied(self, decision: CompletionDecision) -> GoalRecord:
+        current = self.get(decision.goal_id)
+        if decision.outcome != "SATISFIED":
+            raise GoalRegistryError("only a SATISFIED CompletionDecision can close a Goal")
+        if decision.goal_version != current.version or decision.contract_id != current.completion_contract_id:
+            raise GoalRegistryError("completion decision is stale or uses the wrong contract")
+        if current.status not in {"PROPOSED", "ACTIVE", "PAUSED", "BLOCKED"}:
+            raise GoalRegistryError("only an open Goal can be satisfied")
+        updated = replace(current, status="SATISFIED", version=current.version + 1, updated_at=decision.decided_at)
+        self._goals[current.goal_id] = updated
+        self._events.append({
+            "event": "GOAL_SATISFIED",
+            "goal_id": current.goal_id,
+            "from_status": current.status,
+            "to_status": "SATISFIED",
+            "from_version": current.version,
+            "to_version": updated.version,
+            "completion_decision_sha256": decision.decision_sha256,
+            "authority_actor_ref": decision.authority_actor_ref,
+            "evidence_refs": list(decision.evidence_refs),
+            "completion_inferred": False,
+        })
+        return updated
+
     def reopen(self, goal_id: str, replacement: GoalRecord, *, provenance: AuthorityProvenance, reason: str) -> GoalRecord:
         current = self.get(goal_id)
         if current.status not in {"SATISFIED", "ABANDONED", "SUPERSEDED", "FAILED_BOUNDED"}:
@@ -608,5 +736,5 @@ __all__ = [
     "INTENT_SOURCE_TYPES", "INTENT_STATUSES", "ONTOLOGY_LAYERS", "SteeringValidationError", "AuthorityProvenance",
     "IntentRecord", "GoalRecord", "CompletionContract", "ontology_contract", "authority_digest",
     "IntentRegistry", "IntentRegistryError",
-    "GOAL_STATUSES", "GoalRegistry", "GoalRegistryError",
+    "GOAL_STATUSES", "GoalRegistry", "GoalRegistryError", "COMPLETION_OUTCOMES", "CompletionDecision", "evaluate_completion",
 ]

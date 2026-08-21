@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Arvin-liu/when-systems-catch-fire/schemas/operations/steering-completion-contract-r1.schema.json",
+  "title": "OS Steering Completion Contract R1 fixtures",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "contract", "cases"],
+  "properties": {
+    "schema": {"const": "os-steering-intent-obligation-r1.completion-fixtures"},
+    "contract": {"type": "object", "required": ["contract_id", "acceptance_predicates", "required_evidence_types", "completion_authority", "forbidden_shortcuts"], "properties": {"contract_id": {"type": "string"}, "acceptance_predicates": {"type": "array", "minItems": 1}, "required_evidence_types": {"type": "array", "minItems": 1}, "completion_authority": {"type": "string"}, "forbidden_shortcuts": {"type": "array"}}},
+    "cases": {"type": "array", "minItems": 3, "items": {"type": "object", "required": ["id", "expected_outcome"], "properties": {"id": {"type": "string"}, "expected_outcome": {"enum": ["SATISFIED", "PARTIAL", "UNVERIFIABLE", "REJECTED"]}}}}
+  }
+}

@@ -75,6 +75,8 @@ from .steering import (
     STEERING_EXPLAINABILITY_INVARIANT,
     AuthorityProvenance,
     CompletionContract,
+    CompletionDecision,
+    COMPLETION_OUTCOMES,
     GoalRecord,
     GoalRegistry,
     GoalRegistryError,
@@ -83,6 +85,7 @@ from .steering import (
     IntentRegistryError,
     SteeringValidationError,
     authority_digest,
+    evaluate_completion,
     ontology_contract,
 )
 
@@ -313,6 +316,8 @@ __all__ = [
     "STEERING_EXPLAINABILITY_INVARIANT",
     "AuthorityProvenance",
     "CompletionContract",
+    "CompletionDecision",
+    "COMPLETION_OUTCOMES",
     "GoalRecord",
     "GoalRegistry",
     "GoalRegistryError",
@@ -321,5 +326,6 @@ __all__ = [
     "IntentRegistryError",
     "SteeringValidationError",
     "authority_digest",
+    "evaluate_completion",
     "ontology_contract",
 ]
