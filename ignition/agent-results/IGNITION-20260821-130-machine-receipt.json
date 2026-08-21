@@ -1,0 +1,61 @@
+{
+    "schema_version": "ignition-130-machine-receipt-r1",
+    "task_id": "IGNITION-20260821-130",
+    "status": "COMPLETED_WITH_CLASSIFIED_RESIDUALS",
+    "formal_repository": "Arvin-liu/when-systems-catch-fire",
+    "formal_branch": "codex/ignition-130-current-surface-compiler-r1-20260821",
+    "baseline_main_sha": "9eb916530bc4f3aad5c7194f389447759164aa41",
+    "control_repository": "Arvin-liu/1111",
+    "control_tip": "a29be071",
+    "control_task_path": "agent-commands/IGNITION-20260821-130-current-surface-compiler-r1.md",
+    "no_owner_intermediate": true,
+    "step_ledger": [
+        {"step": "00", "commit_sha": "d6b0e93a597d2d4f8c67c7b9bee187e568e41f08", "remote_sha_verified": true},
+        {"step": "01", "commit_sha": "6175219446c18c8162d4f4cd7a65b9a6d1c1b7b9", "remote_sha_verified": true},
+        {"step": "02", "commit_sha": "981a21aacdd448199019a207fa01bad1bca35ab1", "remote_sha_verified": true},
+        {"step": "03", "commit_sha": "ac6f96f8b3caf254c4bbde5dc94e1b91d74c7b97", "remote_sha_verified": true},
+        {"step": "04", "commit_sha": "60e26cf72deb335ab6678c9aa68bcf8d670420c1", "remote_sha_verified": true},
+        {"step": "05", "commit_sha": "09ba21f8ec00968a0fbfed5300742a0a222629aa", "remote_sha_verified": true},
+        {"step": "06", "commit_sha": "62ed9480fe448d8d79655c583a0f8a81cc5b2cd1", "remote_sha_verified": true},
+        {"step": "07", "commit_sha": "6752d547b51436d815a19789fad5368d050557e3", "remote_sha_verified": true},
+        {"step": "08", "commit_sha": "e4723c2db5e9a877e72c26b9aa2d667986b330f0", "remote_sha_verified": true},
+        {"step": "09", "commit_sha": "e66f2402f6efb083ebccdbd97acd0c14ae78fee2", "remote_sha_verified": true},
+        {"step": "10", "commit_sha": "700847be830180dc17bdf1183e8d035ce2c0650c", "remote_sha_verified": true},
+        {"step": "11", "commit_sha": "70eae519611fa5ed22bbd08b0a00e358a952d1c2", "remote_sha_verified": true},
+        {"step": "12", "commit_sha": "a609c5aa7cfae52dfda144072be8c2198d9df0fc", "remote_sha_verified": true},
+        {"step": "13", "commit_sha": "RECORDED_AFTER_STEP13_COMMIT", "remote_sha_verified": false, "self_reference_note": "The exact formal Step 13 SHA is written by the post-commit 1111 terminal receipt."}
+    ],
+    "current_state": {
+        "identity_epoch": "os-control-plane-r4-steering-intent-r1",
+        "map_current": "0.12.0",
+        "map_historical": ["0.11.0"],
+        "latest_architecture_changing_task": "IGNITION-20260821-129",
+        "current_task": "IGNITION-20260821-130",
+        "current_task_status": "COMPLETED_WITH_CLASSIFIED_RESIDUALS",
+        "current_task_terminal": true,
+        "current_task_identity_impact": "PRESENTATION_ONLY",
+        "release_lifecycle": "PREPARED_FOR_RELEASE",
+        "publication_state": "NOT_PUBLISHED",
+        "status": "CURRENT_WITH_OPEN_OBLIGATIONS",
+        "epistemically_accepted": 0,
+        "live_external_ceiling": "NOT_RUN_LIVE_EXTERNAL_INVOCATION"
+    },
+    "fresh_clone": {
+        "head_sha": "a609c5aa7cfae52dfda144072be8c2198d9df0fc",
+        "clean": true,
+        "focused_tests": "PASS_33",
+        "current_facts_snapshot_semantic_lifecycle": "PASS",
+        "current_state_lineage": "PASS",
+        "system_map_geometry": "PASS_NODES_82_EDGES_87_HEIGHT_2912_CROSSING_188",
+        "deterministic_two_pass": "PASS_12_OUTPUTS",
+        "post_publication_check": "PENDING_UNTIL_MAIN_FAST_FORWARD"
+    },
+    "classified_residuals": [
+        "11 pre-existing Human Surface source-hash drifts remain classified.",
+        "Historical Task 127 projection manifest retains missing=96; it was not rewritten.",
+        "Existing production execution authority validator short-window interruption remains environmental; no new Steering assertion failure was recorded.",
+        "Existing Knowledge Experience two-pass first-generator short-window interruption remains environmental; no deterministic PASS is claimed.",
+        "Earlier Foundation/Phase-E full discovery remains a classified long-running baseline boundary."
+    ],
+    "claim_ceiling": "Repository-local Current Surface projection, semantic consistency, lifecycle and release evidence only; no Owner authority, external truth, production readiness, live executor completion, Owner acceptance or epistemic upgrade."
+}
