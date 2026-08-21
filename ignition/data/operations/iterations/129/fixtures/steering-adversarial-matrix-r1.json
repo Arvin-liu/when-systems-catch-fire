@@ -1,0 +1,27 @@
+{
+  "schema": "os-steering-intent-obligation-r1.adversarial-fixture",
+  "cases": [
+    {"case_id": "run-pass-not-completion", "expected_outcome": "FAIL_CLOSED"},
+    {"case_id": "forbidden-shortcut-completion", "expected_outcome": "FAIL_CLOSED"},
+    {"case_id": "permission-overdue", "expected_outcome": "FAIL_CLOSED"},
+    {"case_id": "blocked-high-risk", "expected_outcome": "FAIL_CLOSED"},
+    {"case_id": "unknown-temporal", "expected_outcome": "RECONCILIATION_REQUIRED"},
+    {"case_id": "goal-episode-mixup", "expected_outcome": "FAIL_CLOSED"},
+    {"case_id": "objective-drift", "expected_outcome": "PAUSE_RECONCILE"},
+    {"case_id": "acceptance-loss", "expected_outcome": "PAUSE_RECONCILE"},
+    {"case_id": "proposal-owner-escalation", "expected_outcome": "HUMAN_REVIEW"},
+    {"case_id": "memory-canonical-conflict", "expected_outcome": "PASS_GUARD"},
+    {"case_id": "superseded-intent", "expected_outcome": "RECONCILIATION_REQUIRED"},
+    {"case_id": "executor-unavailable", "expected_outcome": "RECONCILIATION_REQUIRED"},
+    {"case_id": "namespace-no-delegation", "expected_outcome": "FAIL_CLOSED"},
+    {"case_id": "namespace-canonical-write", "expected_outcome": "FAIL_CLOSED"},
+    {"case_id": "capsule-canonical-mutation", "expected_outcome": "FAIL_CLOSED"},
+    {"case_id": "goal-graph-cycle", "expected_outcome": "FAIL_CLOSED"},
+    {"case_id": "proposal-promotion", "expected_outcome": "FAIL_CLOSED"},
+    {"case_id": "durability-private-field", "expected_outcome": "FAIL_CLOSED"},
+    {"case_id": "external-self-completion", "expected_outcome": "FAIL_CLOSED"},
+    {"case_id": "unknown-owner-rank", "expected_outcome": "RECONCILIATION_REQUIRED"},
+    {"case_id": "telemetry-score-not-authority", "expected_outcome": "PASS_GUARD"},
+    {"case_id": "expired-delegation", "expected_outcome": "FAIL_CLOSED"}
+  ]
+}
