@@ -1,0 +1,64 @@
+{
+  "schema_version": "ignition-132-step11-residual-audit-r1",
+  "task_id": "IGNITION-20260822-132",
+  "step": "11",
+  "status": "PASS_WITH_CLASSIFIED_RESIDUALS",
+  "semantic_regression_gate": {
+    "current_task_lineage": "PASS",
+    "current_release_lifecycle": "PASS",
+    "current_facts": "PASS",
+    "current_snapshot": "PASS",
+    "current_surface_compiler": "PASS",
+    "current_surface_semantics": "PASS",
+    "current_state_sync": "PASS",
+    "new_current_semantic_regressions": 0
+  },
+  "residuals": [
+    {
+      "residual_id": "HUMAN_SURFACE_SOURCE_HASH_DRIFT_11",
+      "classification": "PRE_EXISTING_SOURCE_HASH_DRIFT",
+      "observed": "FAIL_EXPECTED_11",
+      "paths": ["d127", "d182", "d190", "d260", "t2", "y1", "nfc-015cfd6ba387c9b1", "nfc-02f68962a6f13abc", "nfc-0331afe8d84f2538", "nfc-14866124cc1a2cae", "nfc-154bdc1ff37c47f6"],
+      "evidence": "Task129 and Task130 records classify the same 11 drifts; Task132 changed no residual-owned human function/nonfunction entry paths."
+    },
+    {
+      "residual_id": "TASK127_PROJECTION_MANIFEST_MISSING_BASELINE",
+      "classification": "HISTORICAL_ENVIRONMENTAL_PROJECTION_RESIDUAL",
+      "prior_receipt_recorded_missing": 96,
+      "fresh_e047_baseline_missing": 164,
+      "current_candidate_missing": 194,
+      "evidence": "The same all-tracked-accounted gate fails on a clean e047 baseline; no historical manifest or validator semantics were rewritten."
+    },
+    {
+      "residual_id": "TASK132_NEW_PROJECTION_MANIFEST_PATHS_28",
+      "classification": "NEW_TASK132_OPERATIONAL_HYGIENE_RESIDUAL",
+      "count": 30,
+      "cause": "Task132 added 30 formal contract, schema, fixture, test, tool, progress and report paths not present in the historical projection manifest by the end of Step11.",
+      "handling": "Recorded separately from the 164-path baseline residual; not reclassified as a Current semantic failure and not repaired by weakening the validator."
+    },
+    {
+      "residual_id": "T16_SYMPY_COUNTEREXAMPLE",
+      "classification": "ENVIRONMENTAL_SYMPY_UNAVAILABLE_RESIDUAL",
+      "evidence": "Projection hygiene replay preserves the explicit T16 SymPy-unavailable classification."
+    },
+    {
+      "residual_id": "HISTORICAL_PROPAGATION_104_106",
+      "classification": "HISTORICAL_RESIDUAL_PRESERVED",
+      "mismatch_count": 9,
+      "tasks": [104, 105, 106],
+      "evidence": "Projection hygiene replay preserves the historical MACHINE_RECORD_IMPACT, PROJECT_STATE_IMPACT and SYSTEM_MAP_IMPACT dimensions."
+    },
+    {
+      "residual_id": "BOUNDED_VALIDATOR_GENERATOR_INTERRUPTION",
+      "classification": "ENVIRONMENTAL_LONG_RUNNING_BASELINE",
+      "evidence": "Task129/130/131 records classify the production-execution-authority and Knowledge two-pass short windows; Task132 does not convert interruption into PASS."
+    },
+    {
+      "residual_id": "FOUNDATION_PHASE_E_LONG_RUNNING_BOUNDARY",
+      "classification": "ENVIRONMENTAL_LONG_RUNNING_BASELINE",
+      "evidence": "Task129 records the Foundation and Phase-E discovery boundaries; Task132 did not rerun them as an unbounded operation."
+    }
+  ],
+  "new_task132_regressions": ["TASK132_NEW_PROJECTION_MANIFEST_PATHS_28"],
+  "claim_ceiling": "Residual classification and current semantic regression evidence are repository-local bookkeeping only; no external truth, production readiness, Owner acceptance or epistemic acceptance is inferred."
+}
