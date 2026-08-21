@@ -1,6 +1,17 @@
 # 点火项目现状
 
 更新时间：2026-08-21。以下 Current 摘要先回答“现在是什么”；任务史保留为可回链证据，不再承担 Current 数字权威。
+<!-- CURRENT-SNAPSHOT:BEGIN profile=human schema=current-snapshot-r1 -->
+- Current Snapshot（机器生成；请勿手改）。
+- current_identity_epoch: `os-control-plane-r4-steering-intent-r1`；system_role: `Ignition OS / orchestration-governance layer`。
+- current_task: `IGNITION-20260821-129`；status: `COMPLETED_WITH_CLASSIFIED_RESIDUALS`；terminal: `true`；latest_architecture_changing_task: `IGNITION-20260821-129`。
+- current_map: `0.12.0` Current；historical_map: `0.11.0` Historical。
+- current_state_status: `CURRENT_WITH_OPEN_OBLIGATIONS`；epistemic_acceptance: `0`；live_external_ceiling: `NOT_RUN_LIVE_EXTERNAL_INVOCATION`。
+- architecture_counts: `registry=94; visible_nodes=82; visible_edges=87`；active_overlays: `Durability / Lifecycle, Steering / Intent / Goal / Obligation, Structural Governance Surface`。
+- task_lineage: current `IGNITION-20260821-129` `COMPLETED_WITH_CLASSIFIED_RESIDUALS`；predecessor `HISTORICAL_UNEXECUTED_REBASED_INTO_127` / `REBASED_INTO_127`；successor `COMPLETED_WITH_CLASSIFIED_RESIDUALS`。
+- source: ignition/data/operations/current-snapshot-r1.json；source_digest: `c8977851e874ec5c5e17d0f0b867e077e8c8cc7c19848eee8cd656024b25425e`。
+- claim_ceiling: Deterministic repository-local Current projection only; no Owner authority, external truth, production readiness or epistemic upgrade.
+<!-- CURRENT-SNAPSHOT:END -->
 
 ## 当前形态
 
@@ -12,24 +23,19 @@ provenance、handoff 和结果吸收；它是 OS / orchestration-governance laye
 `REFERENCE_EXECUTOR / CONFORMANCE_EXECUTOR / FALLBACK_MINIMAL`。
 Knowledge 是第一个大型 Domain Pack，不是整个系统本体；Research、Writing、
 Maintenance 也各自受 manifest、schema、validator 和 authority ceiling 约束。
-当前唯一完整系统图为 `0.12.0`，`0.11.0` 仅作 Historical，`0.10.0` 及更早版本继续保留为历史投影；语义主干把中央 OS
-控制脊柱、外部 Federation/replaceable executors 与 Domain/Skill Packs 分开。
+当前地图、身份、任务和状态的易变值由下方 Current Snapshot 统一投影；本段只解释稳定的
+架构边界：中央 OS 控制脊柱、外部 Federation/replaceable executors 与 Domain/Skill Packs 分开。
 Structural Governance Surface 作为 advisory cross-cutting overlay 单独登记，
 只提供阅读/实验上下文，不增加 L7，不改变 capability、permission 或 epistemic status。
 Task 127 将 Durability / Lifecycle R3 登记为同一 OS 控制脊柱内的当前构件：它保存
 snapshot、migration、namespace、Pack lifecycle、revocation、accounting、recovery
 和 DR continuity；不建立第二张系统图，不把不确定外部 dispatch 自动重放为 completion。
-版本、计数和 live ceiling 以 [Current Facts](./architecture/current-facts.md) 及其
-JSON 投影为准。
+版本、计数和 live ceiling 以 generated Current Snapshot、[Current Facts](./architecture/current-facts.md)
+及其 JSON 投影为准，不在本段复制第二份值。
 
 当前任务链由 [`current-task-lineage-status.json`](../data/operations/current-task-lineage-status.json)
-统一表达：旧 `IGNITION-125` 文件状态是 `HISTORICAL_UNEXECUTED`，其有效
-Durability / Lifecycle requirements 状态是 `REBASED_INTO_127`，规范状态为
-`HISTORICAL_UNEXECUTED_REBASED_INTO_127`；这不等于 125 文件曾执行。`IGNITION-127`
-当前状态是 `COMPLETED_WITH_CLASSIFIED_RESIDUALS`，新回归为 0；历史/环境 residual
-仍按 receipt 保留。当前架构变更任务是 `IGNITION-20260821-129`，将 Steering / Intent /
-Goal / Obligation R1 纳入同一 OS 控制脊柱；它不改变 R3 的 authority ceiling、认识论状态，
-也不把旧任务记录重写为当前事实。
+统一表达；历史任务、requirements lineage、terminal status 和当前架构变更任务由 generated
+Current Snapshot 投影。历史/环境 residual 仍按 receipt 保留，旧任务记录不会被重写为当前事实。
 
 Steering 以 `OWNER_DECLARED`／`OWNER_APPROVED_DERIVED` 与 `SYSTEM_DERIVED_PROPOSAL` 分离
 权威来源；Goal completion 需要独立 Completion Contract，`PASS` Run 不得推断完成。
@@ -48,9 +54,8 @@ recovery、DR fresh restore 和 external re-execution forbidden；这些是 repo
 recovery evidence，不是 production durability、exact-once delivery、Owner acceptance
 或 epistemic acceptance。
 
-当前工程状态仍为 `CURRENT_WITH_OPEN_OBLIGATIONS`，并保持
-`EPISTEMICALLY_ACCEPTED=0`。这段话描述仓库接口，不是产品成熟度、市场唯一性、
-AGI、生产安全、现实因果、外部有效性或 Owner acceptance 证明。
+当前工程状态与 epistemic ceiling 由 generated Current Snapshot 投影；它们描述仓库接口，
+不是产品成熟度、市场唯一性、AGI、生产安全、现实因果、外部有效性或 Owner acceptance 证明。
 
 ## 当前已实现能力
 
@@ -60,7 +65,7 @@ AGI、生产安全、现实因果、外部有效性或 Owner acceptance 证明�
 - 以唯一 registry/topology/layout 生成系统图；图是可点击的仓库导航与依赖投影，不是现实因果图、严格同构或完备性证明。
 - Task 126 的 Structural Governance Surface 由候选 ESI、过渡语法、不越权合同和软上下文暴露合同共同限定；它是 advisory，不是权限、真值、Owner 或安全放行层。
 - 控制平面把事件、权限收窄、共享资源、并发 ready-set、健康租约、队列、外部回执和操作记忆分别持久化；Driver Console 只投影下一步与开放义务，不成为第二真相源。
-- Task 129 的 Steering / Intent / Goal / Obligation R1 已形成仓库本地可复算骨架：Intent Registry、Goal lifecycle、独立 Completion Contract、Commitment/Obligation Ledger、时间语义、长期 Goal graph、优先级与 conflict arbitration、DecisionTrace/why-next、Episode binding、drift/handoff guard、Memory/Profile boundary、Durability、namespace/delegation 与 federation Intent Capsule；这些记录不授予 Owner authority，也不把运行通过推断为完成。
+- Steering / Intent / Goal / Obligation R1 已形成仓库本地可复算骨架：Intent Registry、Goal lifecycle、独立 Completion Contract、Commitment/Obligation Ledger、时间语义、长期 Goal graph、优先级与 conflict arbitration、DecisionTrace/why-next、Episode binding、drift/handoff guard、Memory/Profile boundary、Durability、namespace/delegation 与 federation Intent Capsule；这些记录不授予 Owner authority，也不把运行通过推断为完成。
 - R2/Federation conformance 仍以 disposable local fixture 为主；Step 09 只做了 fresh public CLI probe 和安全、有界的临时 workspace smoke 尝试，OpenClaw 明确 `SKIPPED_UNSAFE_OR_UNAVAILABLE`，Hermes/Codex 因 hard timeout 同样未产生可接受 completion。详细记录见 [`external-conformance-smoke-r1.json`](../data/operations/iterations/123/external-conformance-smoke-r1.json)；当前 live provider/inference ceiling 仍未建立。
 
 ## 当前限制与开放义务
@@ -70,7 +75,7 @@ AGI、生产安全、现实因果、外部有效性或 Owner acceptance 证明�
 - 大量资产仍缺精确定义、类型、量纲、证明、反例、外部来源、数据或复现；MCF、PSD、ARN、Function OS 与现实使用效用仍需独立证据和失败条件。
 - 四力统一、量子引力、暗物质、暗能量、宇宙常数和测量问题没有被本项目解决；任何模型失败、相似性、工程完成或 Agent 共识都不能推出普遍 no-go theorem。
 - 自动审计、系统图、Pack pilot、CI、fresh clone 和 receipt 都是仓库证据；它们不等于专家裁决、同行评审、外部真值、生产安全、Owner acceptance 或 epistemic acceptance。
-- ESI 仍是 `CANDIDATE_ESI_SIGNAL`；live provider 状态保持 `NOT_RUN_LIVE_EXTERNAL`，术语/风格模仿、越权失败、过度谨慎和延迟迁移仍需独立复核。Durability / Lifecycle 的 production durability、exact-once external delivery、真实外部恢复和 Owner acceptance 仍未建立。当前任务链按 canonical source 表达：125 文件 `HISTORICAL_UNEXECUTED`，其 requirements `REBASED_INTO_127`，127 为 `COMPLETED_WITH_CLASSIFIED_RESIDUALS`；本轮执行的是 Task 128 语义闭合修复。
+- ESI 仍是候选 advisory reading surface；live provider 状态、术语/风格模仿、越权失败、过度谨慎和延迟迁移仍需独立复核。Durability / Lifecycle 的 production durability、exact-once external delivery、真实外部恢复和 Owner acceptance 仍未建立。当前任务链的易变值由 canonical source 和 generated block 表达；本轮不把历史任务记录重写为当前事实。
 
 ## 历史任务上下文（可回链，不是 Current 数字权威）
 

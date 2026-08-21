@@ -118,8 +118,37 @@ def extract_block(text: str) -> str | None:
 
 
 def main() -> int:
-    print("CURRENT_SURFACE_COMPILER_LIBRARY_READY")
-    return 0
+    import argparse
+
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--surface-id")
+    mode = parser.add_mutually_exclusive_group()
+    mode.add_argument("--write", action="store_true")
+    mode.add_argument("--check", action="store_true")
+    args = parser.parse_args()
+    if not args.surface_id:
+        print("CURRENT_SURFACE_COMPILER_LIBRARY_READY")
+        return 0
+    contract = load_json(CONTRACT_PATH)
+    surfaces = {row["surface_id"]: row for row in contract["surfaces"]}
+    if args.surface_id not in surfaces:
+        parser.error(f"unknown surface id: {args.surface_id}")
+    surface = surfaces[args.surface_id]
+    path = REPO_ROOT / surface["path"]
+    source = path.read_text(encoding="utf-8")
+    expected = compile_surface(source, surface)
+    if args.write:
+        path.write_text(expected, encoding="utf-8")
+        print(f"CURRENT_SURFACE_WRITTEN surface={args.surface_id} path={surface['path']}")
+        return 0
+    if args.check:
+        if source != expected:
+            print(f"CURRENT_SURFACE_STALE surface={args.surface_id}", file=sys.stderr)
+            return 1
+        print(f"CURRENT_SURFACE_OK surface={args.surface_id}")
+        return 0
+    parser.error("choose --write or --check when --surface-id is supplied")
+    return 2
 
 
 if __name__ == "__main__":
