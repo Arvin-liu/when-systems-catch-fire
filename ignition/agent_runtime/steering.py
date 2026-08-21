@@ -254,6 +254,7 @@ class CompletionContract:
 
 
 COMPLETION_OUTCOMES = frozenset({"SATISFIED", "PARTIAL", "UNVERIFIABLE", "REJECTED"})
+COMMITMENT_STATUSES = frozenset({"PROPOSED", "ACCEPTED", "ACTIVE", "DUE", "BLOCKED", "FULFILLED", "WAIVED", "BREACHED", "SUPERSEDED"})
 
 
 @dataclass(frozen=True)
@@ -355,6 +356,228 @@ def evaluate_completion(goal: "GoalRecord", contract: CompletionContract, eviden
     else:
         outcome, reason = "UNVERIFIABLE", "no independent completion evidence was supplied"
     return CompletionDecision(goal.goal_id, goal.version, contract.contract_id, outcome, authority.source_type, authority.actor_ref, reason, predicate_results, evidence_types, evidence_refs, forbidden, decided_at)
+
+
+def _optional_timestamp(value: Any, field: str) -> str | None:
+    if value is None:
+        return None
+    return _timestamp(value, field)
+
+
+@dataclass(frozen=True)
+class CommitmentRecord:
+    """A stronger-than-Goal obligation with explicit issuer/beneficiary semantics."""
+
+    commitment_id: str
+    goal_id: str
+    issuer_ref: str
+    beneficiary_ref: str
+    namespace: str
+    scope: Mapping[str, Any]
+    fulfillment_contract_id: str
+    provenance: AuthorityProvenance
+    status: str = "PROPOSED"
+    due_at: str | None = None
+    not_before: str | None = None
+    review_after: str | None = None
+    version: int = 1
+    supersedes_commitment_id: str | None = None
+    created_at: str = "1970-01-01T00:00:00+00:00"
+    updated_at: str = "1970-01-01T00:00:00+00:00"
+
+    def __post_init__(self) -> None:
+        _safe_id(self.commitment_id, "commitment_id")
+        _safe_id(self.goal_id, "commitment.goal_id")
+        _safe_id(self.issuer_ref, "commitment.issuer_ref")
+        _safe_id(self.beneficiary_ref, "commitment.beneficiary_ref")
+        _safe_id(self.namespace, "commitment.namespace")
+        object.__setattr__(self, "scope", _public_value(self.scope, "commitment.scope"))
+        _safe_id(self.fulfillment_contract_id, "commitment.fulfillment_contract_id")
+        if self.status not in COMMITMENT_STATUSES:
+            raise SteeringValidationError(f"unknown commitment status: {self.status}")
+        for field in ("due_at", "not_before", "review_after"):
+            object.__setattr__(self, field, _optional_timestamp(getattr(self, field), f"commitment.{field}"))
+        if not isinstance(self.version, int) or isinstance(self.version, bool) or self.version < 1:
+            raise SteeringValidationError("commitment.version must be positive")
+        if self.supersedes_commitment_id is not None:
+            _safe_id(self.supersedes_commitment_id, "commitment.supersedes_commitment_id")
+            if self.supersedes_commitment_id == self.commitment_id:
+                raise SteeringValidationError("commitment cannot supersede itself")
+        _timestamp(self.created_at, "commitment.created_at")
+        _timestamp(self.updated_at, "commitment.updated_at")
+        if self.status in {"ACCEPTED", "ACTIVE", "DUE", "FULFILLED", "WAIVED", "BREACHED"} and not self.provenance.is_owner_authority:
+            raise SteeringValidationError("canonical accepted commitment requires explicit Owner authority")
+
+    def authority_digest(self) -> str:
+        return authority_digest(self.provenance)
+
+    def to_dict(self) -> dict[str, Any]:
+        return {
+            "schema": f"{STEERING_SCHEMA}.commitment",
+            "commitment_id": self.commitment_id,
+            "goal_id": self.goal_id,
+            "issuer_ref": self.issuer_ref,
+            "beneficiary_ref": self.beneficiary_ref,
+            "namespace": self.namespace,
+            "scope": self.scope,
+            "fulfillment_contract_id": self.fulfillment_contract_id,
+            "provenance": self.provenance.to_dict(),
+            "status": self.status,
+            "due_at": self.due_at,
+            "not_before": self.not_before,
+            "review_after": self.review_after,
+            "version": self.version,
+            "supersedes_commitment_id": self.supersedes_commitment_id,
+            "created_at": self.created_at,
+            "updated_at": self.updated_at,
+            "authority_digest": self.authority_digest(),
+        }
+
+    @classmethod
+    def from_dict(cls, data: Mapping[str, Any]) -> "CommitmentRecord":
+        if data.get("schema") not in {None, f"{STEERING_SCHEMA}.commitment"}:
+            raise SteeringValidationError("commitment schema mismatch")
+        return cls(
+            commitment_id=data["commitment_id"], goal_id=data["goal_id"], issuer_ref=data["issuer_ref"], beneficiary_ref=data["beneficiary_ref"],
+            namespace=data["namespace"], scope=data.get("scope", {}), fulfillment_contract_id=data["fulfillment_contract_id"],
+            provenance=AuthorityProvenance.from_dict(data["provenance"]), status=data.get("status", "PROPOSED"), due_at=data.get("due_at"),
+            not_before=data.get("not_before"), review_after=data.get("review_after"), version=data.get("version", 1),
+            supersedes_commitment_id=data.get("supersedes_commitment_id"), created_at=data.get("created_at", "1970-01-01T00:00:00+00:00"),
+            updated_at=data.get("updated_at", data.get("created_at", "1970-01-01T00:00:00+00:00")),
+        )
+
+
+class CommitmentLedgerError(SteeringValidationError):
+    """Raised when an obligation would be accepted without authority or evidence."""
+
+
+class CommitmentLedger:
+    """Replayable commitment ledger; its records are not Knowledge or memory."""
+
+    def __init__(self, commitments: Sequence[CommitmentRecord] = ()) -> None:
+        self._commitments: dict[str, CommitmentRecord] = {}
+        self._events: list[dict[str, Any]] = []
+        for commitment in commitments:
+            self.register(commitment)
+
+    @property
+    def commitments(self) -> tuple[CommitmentRecord, ...]:
+        return tuple(self._commitments[key] for key in sorted(self._commitments))
+
+    @property
+    def events(self) -> tuple[dict[str, Any], ...]:
+        return tuple(dict(event) for event in self._events)
+
+    def get(self, commitment_id: str) -> CommitmentRecord:
+        _safe_id(commitment_id, "commitment_id")
+        try:
+            return self._commitments[commitment_id]
+        except KeyError as exc:
+            raise CommitmentLedgerError(f"unknown commitment: {commitment_id}") from exc
+
+    def register(self, commitment: CommitmentRecord) -> CommitmentRecord:
+        if commitment.commitment_id in self._commitments:
+            raise CommitmentLedgerError(f"commitment already exists: {commitment.commitment_id}")
+        if commitment.status != "PROPOSED" and not commitment.provenance.is_owner_authority:
+            raise CommitmentLedgerError("only PROPOSED commitments may enter without Owner authority")
+        self._commitments[commitment.commitment_id] = commitment
+        self._events.append({"event": "COMMITMENT_REGISTERED", "commitment_id": commitment.commitment_id, "status": commitment.status, "authority_digest": commitment.authority_digest()})
+        return commitment
+
+    def accept(self, commitment_id: str, *, authority: AuthorityProvenance, reason: str, accepted_at: str) -> CommitmentRecord:
+        current = self.get(commitment_id)
+        if current.status != "PROPOSED":
+            raise CommitmentLedgerError("only PROPOSED commitment can be accepted")
+        if not authority.is_owner_authority:
+            raise CommitmentLedgerError("Agent or executor cannot self-accept an Owner commitment")
+        _bounded_text(reason, "commitment.accept.reason")
+        _timestamp(accepted_at, "commitment.accept.accepted_at")
+        updated = replace(current, status="ACCEPTED", provenance=authority, version=current.version + 1, updated_at=accepted_at)
+        self._commitments[commitment_id] = updated
+        self._events.append({"event": "COMMITMENT_ACCEPTED", "commitment_id": commitment_id, "from_status": current.status, "to_status": "ACCEPTED", "reason": reason, "authority_digest": authority_digest(authority), "agent_self_acceptance": False})
+        return updated
+
+    def activate(self, commitment_id: str, *, authority: AuthorityProvenance, reason: str, updated_at: str) -> CommitmentRecord:
+        current = self.get(commitment_id)
+        if current.status != "ACCEPTED":
+            raise CommitmentLedgerError("only ACCEPTED commitment can become ACTIVE")
+        if not authority.is_owner_authority:
+            raise CommitmentLedgerError("commitment activation requires Owner authority")
+        _bounded_text(reason, "commitment.activate.reason")
+        updated = replace(current, status="ACTIVE", version=current.version + 1, updated_at=updated_at)
+        self._commitments[commitment_id] = updated
+        self._events.append({"event": "COMMITMENT_ACTIVATED", "commitment_id": commitment_id, "reason": reason, "authority_digest": authority_digest(authority)})
+        return updated
+
+    def mark(self, commitment_id: str, status: str, *, authority: AuthorityProvenance, reason: str, updated_at: str) -> CommitmentRecord:
+        current = self.get(commitment_id)
+        if status not in {"DUE", "BLOCKED", "BREACHED"}:
+            raise CommitmentLedgerError("use accept, fulfill, waive, or supersede for terminal commitment operations")
+        if current.status not in {"ACCEPTED", "ACTIVE", "DUE", "BLOCKED"}:
+            raise CommitmentLedgerError(f"cannot mark commitment from {current.status}")
+        _bounded_text(reason, "commitment.mark.reason")
+        _timestamp(updated_at, "commitment.mark.updated_at")
+        updated = replace(current, status=status, version=current.version + 1, updated_at=updated_at)
+        self._commitments[commitment_id] = updated
+        self._events.append({"event": "COMMITMENT_STATUS_CHANGED", "commitment_id": commitment_id, "from_status": current.status, "to_status": status, "reason": reason, "authority_digest": authority_digest(authority)})
+        return updated
+
+    def fulfill(self, commitment_id: str, *, authority: AuthorityProvenance, evidence_refs: Sequence[str], reason: str, fulfilled_at: str) -> CommitmentRecord:
+        current = self.get(commitment_id)
+        if current.status not in {"ACCEPTED", "ACTIVE", "DUE", "BLOCKED"}:
+            raise CommitmentLedgerError("only open commitment can be fulfilled")
+        refs = _refs(evidence_refs, "commitment.fulfill.evidence_refs")
+        if not refs:
+            raise CommitmentLedgerError("fulfillment requires evidence references")
+        if not authority.is_owner_authority and authority.source_type != "SYSTEM_DERIVED_PROPOSAL":
+            raise CommitmentLedgerError("fulfillment authority is not recognized")
+        _bounded_text(reason, "commitment.fulfill.reason")
+        _timestamp(fulfilled_at, "commitment.fulfill.fulfilled_at")
+        updated = replace(current, status="FULFILLED", version=current.version + 1, updated_at=fulfilled_at)
+        self._commitments[commitment_id] = updated
+        self._events.append({"event": "COMMITMENT_FULFILLED", "commitment_id": commitment_id, "from_status": current.status, "evidence_refs": list(refs), "reason": reason, "authority_digest": authority_digest(authority)})
+        return updated
+
+    def waive(self, commitment_id: str, *, authority: AuthorityProvenance, reason: str, waived_at: str) -> CommitmentRecord:
+        current = self.get(commitment_id)
+        if current.status in {"FULFILLED", "WAIVED", "SUPERSEDED"}:
+            raise CommitmentLedgerError("terminal commitment cannot be waived")
+        if not authority.is_owner_authority:
+            raise CommitmentLedgerError("only Owner may waive a commitment")
+        _bounded_text(reason, "commitment.waive.reason")
+        updated = replace(current, status="WAIVED", provenance=authority, version=current.version + 1, updated_at=waived_at)
+        self._commitments[commitment_id] = updated
+        self._events.append({"event": "COMMITMENT_WAIVED", "commitment_id": commitment_id, "reason": reason, "authority_digest": authority_digest(authority)})
+        return updated
+
+    def supersede(self, commitment_id: str, replacement: CommitmentRecord, *, authority: AuthorityProvenance, reason: str, updated_at: str) -> tuple[CommitmentRecord, CommitmentRecord]:
+        current = self.get(commitment_id)
+        if replacement.supersedes_commitment_id != commitment_id:
+            raise CommitmentLedgerError("replacement must preserve commitment lineage")
+        if not authority.is_owner_authority:
+            raise CommitmentLedgerError("only Owner may supersede a commitment")
+        if replacement.commitment_id in self._commitments:
+            raise CommitmentLedgerError("replacement commitment already exists")
+        _bounded_text(reason, "commitment.supersede.reason")
+        old = replace(current, status="SUPERSEDED", version=current.version + 1, provenance=authority, updated_at=updated_at)
+        self._commitments[commitment_id] = old
+        self.register(replacement)
+        self._events.append({"event": "COMMITMENT_SUPERSEDED", "commitment_id": commitment_id, "replacement_commitment_id": replacement.commitment_id, "lineage_preserved": True, "reason": reason, "authority_digest": authority_digest(authority)})
+        return old, replacement
+
+    def to_dict(self) -> dict[str, Any]:
+        return {"schema": f"{STEERING_SCHEMA}.commitment-ledger", "commitments": [item.to_dict() for item in self.commitments], "events": list(self._events), "commitment_count": len(self._commitments)}
+
+    @classmethod
+    def from_dict(cls, data: Mapping[str, Any]) -> "CommitmentLedger":
+        if data.get("schema") != f"{STEERING_SCHEMA}.commitment-ledger":
+            raise CommitmentLedgerError("commitment ledger schema mismatch")
+        ledger = cls(CommitmentRecord.from_dict(row) for row in data.get("commitments", ()))
+        events = data.get("events", [])
+        if not isinstance(events, list):
+            raise CommitmentLedgerError("commitment events must be an array")
+        ledger._events = [dict(event) for event in events]
+        return ledger
 
 
 @dataclass(frozen=True)

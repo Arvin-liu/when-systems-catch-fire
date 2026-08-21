@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Arvin-liu/when-systems-catch-fire/schemas/operations/steering-commitment-ledger-r1.schema.json",
+  "title": "OS Steering Commitment and Obligation Ledger R1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "commitments", "events", "commitment_count"],
+  "properties": {
+    "schema": {"const": "os-steering-intent-obligation-r1.commitment-ledger"},
+    "commitments": {"type": "array", "items": {"type": "object", "required": ["commitment_id", "goal_id", "issuer_ref", "beneficiary_ref", "namespace", "scope", "fulfillment_contract_id", "provenance", "status", "version", "created_at", "updated_at"], "properties": {"commitment_id": {"type": "string"}, "goal_id": {"type": "string"}, "issuer_ref": {"type": "string"}, "beneficiary_ref": {"type": "string"}, "namespace": {"type": "string"}, "scope": {"type": "object"}, "fulfillment_contract_id": {"type": "string"}, "provenance": {"type": "object"}, "status": {"enum": ["PROPOSED", "ACCEPTED", "ACTIVE", "DUE", "BLOCKED", "FULFILLED", "WAIVED", "BREACHED", "SUPERSEDED"]}, "due_at": {"type": ["string", "null"]}, "not_before": {"type": ["string", "null"]}, "review_after": {"type": ["string", "null"]}, "version": {"type": "integer", "minimum": 1}, "supersedes_commitment_id": {"type": ["string", "null"]}, "created_at": {"type": "string"}, "updated_at": {"type": "string"}}}},
+    "events": {"type": "array", "items": {"type": "object"}},
+    "commitment_count": {"type": "integer", "minimum": 0}
+  }
+}
