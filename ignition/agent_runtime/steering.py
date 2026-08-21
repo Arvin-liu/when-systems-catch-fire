@@ -581,6 +581,9 @@ class CommitmentLedger:
 
 
 TEMPORAL_STATES = frozenset({"UNKNOWN", "NOT_YET", "ACTIVE_WINDOW", "DUE", "REVIEW_DUE", "GRACE", "OVERDUE", "STALE"})
+DEPENDENCY_EDGE_TYPES = frozenset({"PREREQUISITE", "ENABLES", "CONFLICTS_WITH", "SUPERSEDES", "SHARES_RESOURCE", "REVIEW_AFTER", "BLOCKS", "BLOCKED_BY"})
+_CYCLE_EDGE_TYPES = frozenset({"PREREQUISITE", "ENABLES", "SUPERSEDES", "BLOCKS", "BLOCKED_BY"})
+_ACTIVE_DEPENDENCY_EDGE_TYPES = frozenset({"PREREQUISITE", "ENABLES", "BLOCKS", "BLOCKED_BY"})
 
 
 def _parse_dt(value: str, field: str) -> datetime:
@@ -700,6 +703,170 @@ def evaluate_temporal(window: TemporalWindow, *, now: str) -> TemporalEvaluation
     if window.review_after and current >= _parse_dt(window.review_after, "temporal.review_after"):
         return TemporalEvaluation(window.window_id, now, "REVIEW_DUE", "review_after boundary has arrived", window.source_type, window.deadline, None)
     return TemporalEvaluation(window.window_id, now, "ACTIVE_WINDOW", "window is open and explicit deadline is not yet due", window.source_type, window.deadline, None)
+
+
+@dataclass(frozen=True)
+class GraphNode:
+    node_id: str
+    node_kind: str
+    namespace: str
+    status: str = "ACTIVE"
+    superseded_by: str | None = None
+
+    def __post_init__(self) -> None:
+        _safe_id(self.node_id, "graph.node_id")
+        if self.node_kind not in {"INTENT", "GOAL", "COMMITMENT"}:
+            raise SteeringValidationError("graph node kind must be INTENT, GOAL, or COMMITMENT")
+        _safe_id(self.namespace, "graph.namespace")
+        _bounded_text(self.status, "graph.status")
+        if self.superseded_by is not None:
+            _safe_id(self.superseded_by, "graph.superseded_by")
+
+    def to_dict(self) -> dict[str, Any]:
+        return {"node_id": self.node_id, "node_kind": self.node_kind, "namespace": self.namespace, "status": self.status, "superseded_by": self.superseded_by}
+
+
+@dataclass(frozen=True)
+class DependencyEdge:
+    edge_id: str
+    source_id: str
+    target_id: str
+    edge_type: str
+    reason: str
+    shared_scope_ref: str | None = None
+
+    def __post_init__(self) -> None:
+        _safe_id(self.edge_id, "graph.edge_id")
+        _safe_id(self.source_id, "graph.edge.source_id")
+        _safe_id(self.target_id, "graph.edge.target_id")
+        if self.source_id == self.target_id:
+            raise SteeringValidationError("dependency edge cannot point to itself")
+        if self.edge_type not in DEPENDENCY_EDGE_TYPES:
+            raise SteeringValidationError(f"unknown dependency edge type: {self.edge_type}")
+        _bounded_text(self.reason, "graph.edge.reason")
+        if self.shared_scope_ref is not None:
+            _safe_id(self.shared_scope_ref, "graph.edge.shared_scope_ref")
+
+    def to_dict(self) -> dict[str, Any]:
+        return {"edge_id": self.edge_id, "source_id": self.source_id, "target_id": self.target_id, "edge_type": self.edge_type, "reason": self.reason, "shared_scope_ref": self.shared_scope_ref}
+
+
+class GoalDependencyGraphError(SteeringValidationError):
+    """Raised when a long-term dependency graph is not safely traversable."""
+
+
+class GoalDependencyGraph:
+    """Goal/Commitment graph; intentionally not the Supervisor Run DAG."""
+
+    def __init__(self, nodes: Sequence[GraphNode] = (), edges: Sequence[DependencyEdge] = ()) -> None:
+        self._nodes: dict[str, GraphNode] = {}
+        self._edges: dict[str, DependencyEdge] = {}
+        for node in nodes:
+            self.add_node(node)
+        for edge in edges:
+            self.add_edge(edge)
+
+    @property
+    def nodes(self) -> tuple[GraphNode, ...]:
+        return tuple(self._nodes[key] for key in sorted(self._nodes))
+
+    @property
+    def edges(self) -> tuple[DependencyEdge, ...]:
+        return tuple(self._edges[key] for key in sorted(self._edges))
+
+    def add_node(self, node: GraphNode) -> GraphNode:
+        if node.node_id in self._nodes:
+            raise GoalDependencyGraphError(f"duplicate graph node: {node.node_id}")
+        if node.superseded_by is not None and node.superseded_by == node.node_id:
+            raise GoalDependencyGraphError("node cannot supersede itself")
+        self._nodes[node.node_id] = node
+        return node
+
+    def add_edge(self, edge: DependencyEdge) -> DependencyEdge:
+        if edge.edge_id in self._edges:
+            raise GoalDependencyGraphError(f"duplicate graph edge: {edge.edge_id}")
+        source = self._nodes.get(edge.source_id)
+        target = self._nodes.get(edge.target_id)
+        if source is None or target is None:
+            raise GoalDependencyGraphError("dependency edge references a dangling node")
+        if source.namespace != target.namespace and edge.shared_scope_ref is None:
+            raise GoalDependencyGraphError("cross-namespace dependency requires explicit shared_scope_ref")
+        if source.status == "SUPERSEDED" and edge.edge_type in _ACTIVE_DEPENDENCY_EDGE_TYPES:
+            raise GoalDependencyGraphError("superseded node cannot create a new active dependency")
+        self._edges[edge.edge_id] = edge
+        try:
+            self.validate()
+        except Exception:
+            self._edges.pop(edge.edge_id, None)
+            raise
+        return edge
+
+    def outgoing(self, node_id: str, *, edge_types: Sequence[str] | None = None, include_superseded: bool = False) -> tuple[DependencyEdge, ...]:
+        _safe_id(node_id, "graph.node_id")
+        allowed = set(edge_types or DEPENDENCY_EDGE_TYPES)
+        if any(edge_type not in DEPENDENCY_EDGE_TYPES for edge_type in allowed):
+            raise GoalDependencyGraphError("unknown requested edge type")
+        result = []
+        for edge in self.edges:
+            if edge.source_id != node_id or edge.edge_type not in allowed:
+                continue
+            target = self._nodes[edge.target_id]
+            if target.status == "SUPERSEDED" and not include_superseded:
+                continue
+            result.append(edge)
+        return tuple(result)
+
+    def traverse(self, root_id: str, *, edge_types: Sequence[str] | None = None, include_superseded: bool = False) -> tuple[str, ...]:
+        if root_id not in self._nodes:
+            raise GoalDependencyGraphError(f"unknown graph root: {root_id}")
+        visited: set[str] = set()
+        queue = [root_id]
+        while queue:
+            current = queue.pop(0)
+            for edge in self.outgoing(current, edge_types=edge_types, include_superseded=include_superseded):
+                if edge.target_id not in visited:
+                    visited.add(edge.target_id)
+                    queue.append(edge.target_id)
+            queue.sort()
+        return tuple(sorted(visited))
+
+    def validate(self) -> list[str]:
+        errors: list[str] = []
+        for edge in self.edges:
+            if edge.source_id not in self._nodes or edge.target_id not in self._nodes:
+                errors.append(f"DANGLING_REF:{edge.edge_id}")
+            elif self._nodes[edge.source_id].namespace != self._nodes[edge.target_id].namespace and edge.shared_scope_ref is None:
+                errors.append(f"NAMESPACE_BOUNDARY:{edge.edge_id}")
+        adjacency: dict[str, list[str]] = {node_id: [] for node_id in self._nodes}
+        for edge in self.edges:
+            if edge.edge_type in _CYCLE_EDGE_TYPES and edge.source_id in adjacency and edge.target_id in adjacency:
+                adjacency[edge.source_id].append(edge.target_id)
+        visiting: set[str] = set()
+        visited: set[str] = set()
+
+        def visit(node_id: str) -> None:
+            if node_id in visiting:
+                raise GoalDependencyGraphError("dependency graph contains a cycle")
+            if node_id in visited:
+                return
+            visiting.add(node_id)
+            for target_id in sorted(adjacency[node_id]):
+                visit(target_id)
+            visiting.remove(node_id)
+            visited.add(node_id)
+
+        for node_id in sorted(adjacency):
+            visit(node_id)
+        return errors
+
+    def to_dict(self) -> dict[str, Any]:
+        return {"schema": f"{STEERING_SCHEMA}.goal-dependency-graph", "graph_kind": "LONG_TERM_STEERING", "nodes": [node.to_dict() for node in self.nodes], "edges": [edge.to_dict() for edge in self.edges], "node_count": len(self._nodes), "edge_count": len(self._edges)}
+
+    @classmethod
+    def from_dict(cls, data: Mapping[str, Any]) -> "GoalDependencyGraph":
+        if data.get("schema") != f"{STEERING_SCHEMA}.goal-dependency-graph" or data.get("graph_kind") != "LONG_TERM_STEERING":
+            raise GoalDependencyGraphError("graph schema or graph_kind mismatch")
+        return cls(tuple(GraphNode(**row) for row in data.get("nodes", ())), tuple(DependencyEdge(**row) for row in data.get("edges", ())))
 
 
 @dataclass(frozen=True)

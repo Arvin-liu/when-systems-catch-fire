@@ -94,6 +94,11 @@ from .steering import (
     authority_digest,
     evaluate_completion,
     evaluate_temporal,
+    DEPENDENCY_EDGE_TYPES,
+    DependencyEdge,
+    GoalDependencyGraph,
+    GoalDependencyGraphError,
+    GraphNode,
     ontology_contract,
 )
 
@@ -343,5 +348,10 @@ __all__ = [
     "authority_digest",
     "evaluate_completion",
     "evaluate_temporal",
+    "DEPENDENCY_EDGE_TYPES",
+    "DependencyEdge",
+    "GoalDependencyGraph",
+    "GoalDependencyGraphError",
+    "GraphNode",
     "ontology_contract",
 ]

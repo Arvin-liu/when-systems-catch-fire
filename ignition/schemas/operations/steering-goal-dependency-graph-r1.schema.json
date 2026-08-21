@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Arvin-liu/when-systems-catch-fire/schemas/operations/steering-goal-dependency-graph-r1.schema.json",
+  "title": "OS Steering Goal Dependency Graph R1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "graph_kind", "nodes", "edges", "node_count", "edge_count"],
+  "properties": {
+    "schema": {"const": "os-steering-intent-obligation-r1.goal-dependency-graph"},
+    "graph_kind": {"const": "LONG_TERM_STEERING"},
+    "nodes": {"type": "array", "items": {"type": "object", "required": ["node_id", "node_kind", "namespace", "status"], "properties": {"node_id": {"type": "string"}, "node_kind": {"enum": ["INTENT", "GOAL", "COMMITMENT"]}, "namespace": {"type": "string"}, "status": {"type": "string"}, "superseded_by": {"type": ["string", "null"]}}}},
+    "edges": {"type": "array", "items": {"type": "object", "required": ["edge_id", "source_id", "target_id", "edge_type", "reason"], "properties": {"edge_id": {"type": "string"}, "source_id": {"type": "string"}, "target_id": {"type": "string"}, "edge_type": {"enum": ["PREREQUISITE", "ENABLES", "CONFLICTS_WITH", "SUPERSEDES", "SHARES_RESOURCE", "REVIEW_AFTER", "BLOCKS", "BLOCKED_BY"]}, "reason": {"type": "string"}, "shared_scope_ref": {"type": ["string", "null"]}}}},
+    "node_count": {"type": "integer", "minimum": 0},
+    "edge_count": {"type": "integer", "minimum": 0}
+  }
+}
