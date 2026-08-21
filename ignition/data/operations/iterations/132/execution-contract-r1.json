@@ -1,0 +1,29 @@
+{
+  "schema_version": "execution-contract-r1",
+  "contract_id": "IGNITION_EXECUTION_CONTRACT_R1",
+  "task_id": "IGNITION-20260822-132",
+  "control_source": {
+    "repository": "Arvin-liu/1111",
+    "ref": "origin/relay/current",
+    "commit": "995a4bc560749c199be94f93f9b76417a4c967b1",
+    "command_path": "agent-commands/IGNITION-20260822-132-canonical-current-advancement-release-transaction-r1.md"
+  },
+  "formal_baseline": {
+    "repository": "Arvin-liu/when-systems-catch-fire",
+    "ref": "refs/heads/main",
+    "sha": "e04752d20d071bac8f0c4a1e5cff20fb3004dae1"
+  },
+  "identity_impact": "PRESENTATION_ONLY",
+  "expected_task_branch": "codex/ignition-132-canonical-current-advancement-release-transaction-r1-20260822",
+  "expected_receipt_branch": "relay/receipts/ignition-132-canonical-current-advancement-release-transaction-r1-20260822",
+  "required_release_ref": "refs/heads/main",
+  "no_owner_intermediate": true,
+  "identity_expectations": {
+    "current_formal_task": "IGNITION-20260822-132",
+    "latest_architecture_changing_task": "IGNITION-20260821-129",
+    "previous_formal_task": "IGNITION-20260821-131",
+    "release_candidate_task": "IGNITION-20260822-132",
+    "publication_witness_task": "IGNITION-20260822-132"
+  },
+  "claim_ceiling": "Execution and release identity for repository-local Task132 only; it grants no Owner authority, truth authority, production readiness or epistemic acceptance."
+}
