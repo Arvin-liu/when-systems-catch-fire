@@ -37,8 +37,11 @@ except ImportError:  # direct script / tools-on-PYTHONPATH execution
 
 
 CONTRACT_PATH = ROOT / "data/operations/current-surface-block-contract-r1.json"
+EXECUTION_CONTRACT_PATH = ROOT / "data/operations/iterations/132/execution-contract-r1.json"
+LINEAGE_PATH = ROOT / "data/operations/current-task-lineage-status.json"
 LIFECYCLE_PATH = ROOT / "data/operations/current-release-lifecycle-r1.json"
-REPORT_PATH = ROOT / "data/operations/iterations/131/step04-post-publication-ref-check.json"
+FORMAL_RESULT_PATH = ROOT / "agent-results/IGNITION-20260822-132-result.md"
+REPORT_PATH = ROOT / "data/operations/iterations/132/step07-post-publication-task-binding-report.json"
 REMOTE_REF = "refs/heads/main"
 REMOTE_TRACKING_REF = "refs/remotes/origin/main"
 HEX_SHA_RE = re.compile(r"^[0-9a-f]{40}$")
@@ -102,7 +105,85 @@ def _record(checks: list[dict[str, Any]], name: str, result: str, errors: list[s
 
 
 def _current_task_id() -> str:
-    return load_json(lifecycle.LINEAGE_PATH)["current_task"]["task_id"]
+    return load_json(LINEAGE_PATH)["current_task"]["task_id"]
+
+
+def _formal_result_task_id(path: Path = FORMAL_RESULT_PATH) -> str | None:
+    if not path.is_file():
+        return None
+    if path.suffix == ".json":
+        record = load_json(path)
+        return record.get("task_id") or record.get("formal_task_id")
+    for line in path.read_text(encoding="utf-8").splitlines():
+        if line.startswith("Task ID:"):
+            return line.split(":", 1)[1].strip().strip("`")
+    return None
+
+
+def _validate_task_id_binding(
+    *,
+    expected_task_id: str,
+    formal_result_task_id: str | None,
+    contract: dict[str, Any],
+    lineage_record: dict[str, Any],
+    lifecycle_record: dict[str, Any],
+    snapshot: dict[str, Any],
+) -> list[str]:
+    """Validate task identity independently of Git SHA equality.
+
+    This deliberately compares the same role across the execution contract,
+    canonical source, lifecycle and compiled snapshot. A matching remote SHA
+    cannot make a stale or misbound task identity pass.
+    """
+
+    errors: list[str] = []
+
+    def equal(label: str, observed: Any) -> None:
+        if observed != expected_task_id:
+            errors.append(f"TASK_ID_BINDING_MISMATCH:{label}:expected={expected_task_id}:observed={observed}")
+
+    equal("execution_contract.task_id", contract.get("task_id"))
+    expectations = contract.get("identity_expectations", {})
+    equal("execution_contract.identity_expectations.current_formal_task", expectations.get("current_formal_task"))
+    equal("execution_contract.identity_expectations.release_candidate_task", expectations.get("release_candidate_task"))
+
+    equal("lineage.current_task.task_id", lineage_record.get("current_task", {}).get("task_id"))
+    lineage_identity = lineage_record.get("task_identity", {})
+    equal("lineage.task_identity.current_formal_task", lineage_identity.get("current_formal_task"))
+    equal("lineage.task_identity.release_candidate_task", lineage_identity.get("release_candidate_task"))
+    equal("lineage.task_identity.publication_witness_task", lineage_identity.get("publication_witness_task"))
+
+    equal("lifecycle.task_id", lifecycle_record.get("task_id"))
+
+    equal("snapshot.current_task.task_id", snapshot.get("current_task", {}).get("task_id"))
+    snapshot_identity = snapshot.get("task_identity", {})
+    equal("snapshot.task_identity.current_formal_task", snapshot_identity.get("current_formal_task"))
+    equal("snapshot.task_identity.release_candidate_task", snapshot_identity.get("release_candidate_task"))
+    equal("snapshot.task_identity.publication_witness_task", snapshot_identity.get("publication_witness_task"))
+    equal("snapshot.release_lifecycle.task_id", snapshot.get("release_lifecycle", {}).get("task_id"))
+
+    latest_architecture_ids = {
+        "execution_contract": expectations.get("latest_architecture_changing_task"),
+        "lineage": lineage_identity.get("latest_architecture_changing_task"),
+        "lifecycle": lifecycle_record.get("latest_architecture_changing_task"),
+        "snapshot": snapshot.get("latest_architecture_changing_task"),
+    }
+    expected_architecture_task = latest_architecture_ids["execution_contract"]
+    for label, observed in latest_architecture_ids.items():
+        if observed != expected_architecture_task:
+            errors.append(
+                f"ARCHITECTURE_TASK_BINDING_MISMATCH:{label}:expected={expected_architecture_task}:observed={observed}"
+            )
+    if expected_architecture_task == expected_task_id:
+        errors.append("ARCHITECTURE_TASK_PROMOTED_TO_FORMAL_TASK")
+
+    if formal_result_task_id is None:
+        errors.append("FORMAL_RESULT_TASK_ID_MISSING")
+    elif formal_result_task_id != expected_task_id:
+        errors.append(
+            f"TASK_ID_BINDING_MISMATCH:formal_result.task_id:expected={expected_task_id}:observed={formal_result_task_id}"
+        )
+    return errors
 
 
 def _validate_static_publication_semantics(snapshot: dict[str, Any], lifecycle_record: dict[str, Any]) -> list[str]:
@@ -123,7 +204,12 @@ def _validate_static_publication_semantics(snapshot: dict[str, Any], lifecycle_r
     return errors
 
 
-def run_checks(post_publication: bool, expected_sha: str | None = None) -> dict[str, Any]:
+def run_checks(
+    post_publication: bool,
+    expected_sha: str | None = None,
+    expected_task_id: str | None = None,
+    formal_result_task_id: str | None = None,
+) -> dict[str, Any]:
     errors: list[str] = []
     checks: list[dict[str, Any]] = []
     blocked = False
@@ -132,6 +218,7 @@ def run_checks(post_publication: bool, expected_sha: str | None = None) -> dict[
     remote_sha: str | None = None
     lifecycle_record = load_json(LIFECYCLE_PATH)
     task_id = _current_task_id()
+    lineage_record = load_json(LINEAGE_PATH)
 
     if post_publication:
         if expected_sha is None or not HEX_SHA_RE.fullmatch(expected_sha):
@@ -244,6 +331,29 @@ def run_checks(post_publication: bool, expected_sha: str | None = None) -> dict[
     _record(checks, "static_publication_semantics", "PASS" if not publication_errors else "FAIL", publication_errors)
     errors.extend(publication_errors)
 
+    if expected_task_id is None:
+        _record(checks, "task_id_binding", "NOT_APPLICABLE", ["task-id binding is enforced when expected_task_id is supplied"])
+    else:
+        contract_identity = load_json(EXECUTION_CONTRACT_PATH)
+        task_binding_errors = _validate_task_id_binding(
+            expected_task_id=expected_task_id,
+            formal_result_task_id=formal_result_task_id,
+            contract=contract_identity,
+            lineage_record=lineage_record,
+            lifecycle_record=lifecycle_record,
+            snapshot=snapshot,
+        )
+        observed_formal_result_task_id = _formal_result_task_id()
+        if observed_formal_result_task_id is None:
+            task_binding_errors.append("FORMAL_RESULT_TASK_ID_NOT_OBSERVED")
+        elif formal_result_task_id != observed_formal_result_task_id:
+            task_binding_errors.append(
+                "FORMAL_RESULT_TASK_ID_FILE_MISMATCH:"
+                f"expected={formal_result_task_id}:observed={observed_formal_result_task_id}"
+            )
+        _record(checks, "task_id_binding", "PASS" if not task_binding_errors else "FAIL", task_binding_errors)
+        errors.extend(task_binding_errors)
+
     contract = load_json(CONTRACT_PATH)
     compiler_errors: list[str] = []
     for surface in contract["surfaces"]:
@@ -300,6 +410,8 @@ def run_checks(post_publication: bool, expected_sha: str | None = None) -> dict[
         "head_sha": head_sha,
         "branch": branch,
         "expected_sha": expected_sha,
+        "expected_task_id": expected_task_id,
+        "formal_result_task_id": formal_result_task_id,
         "observed_ref": REMOTE_REF if post_publication else None,
         "observed_remote_sha": remote_sha,
         "checks": checks,
@@ -314,9 +426,16 @@ def main() -> int:
     mode.add_argument("--pre-publication", action="store_true")
     mode.add_argument("--post-publication", action="store_true")
     parser.add_argument("--expected-sha")
+    parser.add_argument("--expected-task-id")
+    parser.add_argument("--formal-result-task-id")
     parser.add_argument("--write", action="store_true")
     args = parser.parse_args()
-    result = run_checks(post_publication=args.post_publication, expected_sha=args.expected_sha)
+    result = run_checks(
+        post_publication=args.post_publication,
+        expected_sha=args.expected_sha,
+        expected_task_id=args.expected_task_id,
+        formal_result_task_id=args.formal_result_task_id,
+    )
     if args.write:
         REPORT_PATH.write_text(json.dumps(result, ensure_ascii=False, indent=2, sort_keys=True) + "\n", encoding="utf-8")
         print(f"POST_PUBLICATION_CURRENT_CHECK_WRITTEN path={relative(REPORT_PATH)} result={result['result']}")

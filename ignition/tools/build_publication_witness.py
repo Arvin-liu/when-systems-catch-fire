@@ -24,6 +24,10 @@ HERE = Path(__file__).resolve()
 ROOT = HERE.parents[1]
 REPO_ROOT = ROOT.parent
 SCHEMA_PATH = ROOT / "schemas/operations/publication-witness-r1.schema.json"
+CONTRACT_PATH = ROOT / "data/operations/iterations/132/execution-contract-r1.json"
+LINEAGE_PATH = ROOT / "data/operations/current-task-lineage-status.json"
+LIFECYCLE_PATH = ROOT / "data/operations/current-release-lifecycle-r1.json"
+FORMAL_RESULT_PATH = ROOT / "agent-results/IGNITION-20260822-132-result.md"
 REMOTE_REF = "refs/heads/main"
 REMOTE_TRACKING_REF = "refs/remotes/origin/main"
 SHA_RE = re.compile(r"^[0-9a-f]{40}$")
@@ -90,7 +94,78 @@ def semantic_gates_from_report(path: Path) -> dict[str, str]:
 
 def validate_witness(witness: dict[str, Any]) -> list[str]:
     errors = sorted(Draft202012Validator(load_json(SCHEMA_PATH)).iter_errors(witness), key=lambda error: list(error.path))
-    return [f"{error.json_path}: {error.message}" for error in errors]
+    rendered = [f"{error.json_path}: {error.message}" for error in errors]
+    binding = witness.get("task_binding")
+    if isinstance(binding, dict):
+        task_id = witness.get("task_id")
+        binding_ids = {
+            "formal_result_task_id": binding.get("formal_result_task_id"),
+            "canonical_current_formal_task_id": binding.get("canonical_current_formal_task_id"),
+            "lifecycle_task_id": binding.get("lifecycle_task_id"),
+            "release_candidate_task_id": binding.get("release_candidate_task_id"),
+        }
+        for label, observed in binding_ids.items():
+            if observed != task_id:
+                rendered.append(f"$.task_binding.{label}: does not match $.task_id")
+        if binding.get("exact_match") is not True:
+            rendered.append("$.task_binding.exact_match: task identity binding is not exact")
+        if binding.get("latest_architecture_changing_task") == task_id:
+            rendered.append("$.task_binding.latest_architecture_changing_task: architecture task was promoted to formal task")
+    return rendered
+
+
+def _formal_result_task_id(path: Path = FORMAL_RESULT_PATH) -> str | None:
+    """Read a result task id when the formal result already exists.
+
+    Step 07 is implemented before the formal result is created, so absence is
+    allowed here. Final witness creation runs after Step 13 and then verifies
+    the checked-in result's explicit Task ID line.
+    """
+
+    if not path.is_file():
+        return None
+    if path.suffix == ".json":
+        record = load_json(path)
+        return record.get("task_id") or record.get("formal_task_id")
+    for line in path.read_text(encoding="utf-8").splitlines():
+        if line.startswith("Task ID:"):
+            return line.split(":", 1)[1].strip().strip("`")
+    return None
+
+
+def _task_binding(*, task_id: str, formal_result_task_id: str) -> dict[str, Any]:
+    lineage = load_json(LINEAGE_PATH)
+    lifecycle = load_json(LIFECYCLE_PATH)
+    contract = load_json(CONTRACT_PATH)
+    identity = lineage.get("task_identity", {})
+    canonical_current_formal_task_id = identity.get("current_formal_task")
+    lifecycle_task_id = lifecycle.get("task_id")
+    release_candidate_task_id = contract.get("identity_expectations", {}).get("release_candidate_task")
+    latest_architecture_changing_task = identity.get("latest_architecture_changing_task") or lifecycle.get("latest_architecture_changing_task")
+    source_result_task_id = _formal_result_task_id()
+    if source_result_task_id is not None and source_result_task_id != formal_result_task_id:
+        raise WitnessBuildError(
+            "formal result task id differs from the supplied task id: "
+            f"supplied={formal_result_task_id} observed={source_result_task_id}"
+        )
+    observed = {
+        "formal_result_task_id": formal_result_task_id,
+        "canonical_current_formal_task_id": canonical_current_formal_task_id,
+        "lifecycle_task_id": lifecycle_task_id,
+        "release_candidate_task_id": release_candidate_task_id,
+    }
+    mismatches = [f"{label}={value}" for label, value in observed.items() if value != task_id]
+    if mismatches:
+        raise WitnessBuildError("task identity binding mismatch: " + ", ".join(mismatches))
+    if not isinstance(latest_architecture_changing_task, str) or latest_architecture_changing_task == task_id:
+        raise WitnessBuildError("latest architecture-changing task must remain distinct from the formal task")
+    if contract.get("task_id") != task_id or lineage.get("current_task", {}).get("task_id") != task_id:
+        raise WitnessBuildError("task identity binding does not match the execution contract and canonical current task")
+    return {
+        **observed,
+        "latest_architecture_changing_task": latest_architecture_changing_task,
+        "exact_match": True,
+    }
 
 
 def classify_followup_remote_observation(witness: dict[str, Any], later_remote_sha: str) -> str:
@@ -104,6 +179,7 @@ def classify_followup_remote_observation(witness: dict[str, Any], later_remote_s
 def build_witness(
     *,
     task_id: str,
+    formal_result_task_id: str,
     subject_repository: str,
     candidate_sha: str,
     fresh_clone_head_sha: str,
@@ -121,6 +197,7 @@ def build_witness(
         raise WitnessBuildError("fresh clone HEAD differs from candidate SHA")
     if any(value != "PASS" for value in semantic_gates.values()):
         raise WitnessBuildError("all semantic gates must be PASS")
+    task_binding = _task_binding(task_id=task_id, formal_result_task_id=formal_result_task_id)
 
     remotes = git("remote").splitlines()
     if "origin" not in remotes:
@@ -156,6 +233,7 @@ def build_witness(
             "remote_equals_fresh_clone_head": remote_sha == fresh_clone_head_sha,
             "exact_match": candidate_sha == remote_sha == head_sha == fresh_clone_head_sha,
         },
+        "task_binding": task_binding,
         "current_semantic_gates": semantic_gates,
         "witness": {
             "status": "ISSUED_EXACT_MATCH",
@@ -176,6 +254,7 @@ def build_witness(
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--task-id", required=True)
+    parser.add_argument("--formal-result-task-id", required=True)
     parser.add_argument("--subject-repository", required=True)
     parser.add_argument("--candidate-sha", required=True)
     parser.add_argument("--fresh-clone-head-sha", required=True)
@@ -189,6 +268,7 @@ def main() -> int:
     try:
         witness = build_witness(
             task_id=args.task_id,
+            formal_result_task_id=args.formal_result_task_id,
             subject_repository=args.subject_repository,
             candidate_sha=args.candidate_sha,
             fresh_clone_head_sha=args.fresh_clone_head_sha,

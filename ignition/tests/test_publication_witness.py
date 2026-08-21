@@ -41,14 +41,15 @@ class PublicationWitnessTests(unittest.TestCase):
 
     def kwargs(self, sha: str) -> dict[str, object]:
         return {
-            "task_id": "IGNITION-20260821-131",
+            "task_id": "IGNITION-20260822-132",
+            "formal_result_task_id": "IGNITION-20260822-132",
             "subject_repository": "Arvin-liu/when-systems-catch-fire",
             "candidate_sha": sha,
             "fresh_clone_head_sha": sha,
             "fresh_clone_branch": "main",
             "fresh_clone_clean": True,
             "semantic_gates": self.gates(),
-            "receipt_ref": "agent-results/IGNITION-20260821-131-publication-witness.json",
+            "receipt_ref": "agent-results/IGNITION-20260822-132-publication-witness.json",
             "observed_at": "2026-08-21T15:00:00+00:00",
         }
 
@@ -60,6 +61,8 @@ class PublicationWitnessTests(unittest.TestCase):
         self.assertTrue(document["equality"]["exact_match"])
         self.assertEqual(document["witness"]["scope"], "OBSERVATION_TIME_ONLY")
         self.assertFalse(document["witness"]["credentials_included"])
+        self.assertTrue(document["task_binding"]["exact_match"])
+        self.assertEqual(document["task_binding"]["latest_architecture_changing_task"], "IGNITION-20260821-129")
 
     def test_witness_rejects_remote_mismatch_before_emission(self) -> None:
         candidate = "a" * 40
@@ -75,6 +78,17 @@ class PublicationWitnessTests(unittest.TestCase):
         forged = copy.deepcopy(document)
         forged["equality"]["exact_match"] = False
         self.assertTrue(witness.validate_witness(forged))
+
+    def test_task_binding_rejects_a_mismatched_formal_result(self) -> None:
+        sha = "a" * 40
+        with patch.object(witness, "git", side_effect=self.fake_git(sha)):
+            document = witness.build_witness(**self.kwargs(sha))
+        forged = copy.deepcopy(document)
+        forged["task_binding"]["formal_result_task_id"] = "IGNITION-20260821-131"
+        forged["task_binding"]["exact_match"] = False
+        errors = witness.validate_witness(forged)
+        self.assertTrue(any("formal_result_task_id" in error for error in errors))
+        self.assertTrue(any("exact_match" in error for error in errors))
 
     def test_schema_rejects_non_pass_semantic_gate(self) -> None:
         sha = "a" * 40
