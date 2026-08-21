@@ -2,13 +2,13 @@
 <!-- CURRENT-SNAPSHOT:BEGIN profile=ai schema=current-snapshot-r1 -->
 - Current Snapshot（generated; read this block before interpreting prose）。
 - current_identity_epoch: `os-control-plane-r4-steering-intent-r1`；system_role: `Ignition OS / orchestration-governance layer`。
-- current_task: `IGNITION-20260821-130`；status: `IN_PROGRESS`；terminal: `false`；latest_architecture_changing_task: `IGNITION-20260821-129`。
-- release_lifecycle: phase `RUNNING`；publication `NOT_PUBLISHED`；projection `TASK_BRANCH_ONLY`。
+- current_task: `IGNITION-20260821-130`；status: `COMPLETED_WITH_CLASSIFIED_RESIDUALS`；terminal: `true`；latest_architecture_changing_task: `IGNITION-20260821-129`。
+- release_lifecycle: phase `PREPARED_FOR_RELEASE`；publication `NOT_PUBLISHED`；projection `RELEASE_READY`。
 - current_method: `1.4.0` Current；current_map: `0.12.0` Current；historical_map: `0.11.0` Historical。
 - current_state_status: `CURRENT_WITH_OPEN_OBLIGATIONS`；EPISTEMICALLY_ACCEPTED=0；epistemic_acceptance: `0`；live_external_ceiling: `NOT_RUN_LIVE_EXTERNAL_INVOCATION`。
 - architecture_counts: `registry=94; visible_nodes=82; visible_edges=87`；active_overlays: `Durability / Lifecycle, Steering / Intent / Goal / Obligation, Structural Governance Surface`。
-- task_lineage: current `IGNITION-20260821-130` `IN_PROGRESS`；predecessor `HISTORICAL_UNEXECUTED_REBASED_INTO_127` / `REBASED_INTO_127`；successor `COMPLETED_WITH_CLASSIFIED_RESIDUALS`。
-- source: ignition/data/operations/current-snapshot-r1.json；source_digest: `23c14e9bb259783557e090edbb42b66ff5ce42889318059800975a4c9bd32d92`。
+- task_lineage: current `IGNITION-20260821-130` `COMPLETED_WITH_CLASSIFIED_RESIDUALS`；predecessor `HISTORICAL_UNEXECUTED_REBASED_INTO_127` / `REBASED_INTO_127`；successor `COMPLETED_WITH_CLASSIFIED_RESIDUALS`。
+- source: ignition/data/operations/current-snapshot-r1.json；source_digest: `c853937d3f2ac76787558772ab6eba36a3a933b71acca6dbf20204220b2fa27d`。
 - claim_ceiling: Deterministic repository-local Current projection only; no Owner authority, external truth, production readiness or epistemic upgrade.
 <!-- CURRENT-SNAPSHOT:END -->
 
@@ -213,6 +213,17 @@
 - obligations: live external invocation remains bounded/possibly skipped; production durability, exact-once external execution, real-world completion, external validity, Owner acceptance, independent replication and epistemic acceptance remain open. Step 21 still requires fresh-clone validation, ordinary fast-forward and the independent 1111 receipt.
 - stale_knowledge: historical Task 126/127/128 records retain their original wording as provenance and are not rewritten; current map/counts/status must be read from the new canonical identity, task-lineage source and deterministic Current Facts projection.
 - next_read: read [`current-system-identity.json`](./data/architecture/current-system-identity.json), [`current-facts.md`](./docs/architecture/current-facts.md), [`os-steering-intent-r1.md`](./docs/architecture/os-steering-intent-r1.md), [`Task 129 progress`](./data/operations/iterations/129/progress.jsonl), then complete Step 21 without treating this task-branch projection as a formal main or 1111 release receipt.
+
+## 2026-08-21 — IGNITION-20260821-130-CURRENT-SURFACE-COMPILER-R1-TERMINAL-CLOSURE — task-branch release candidate
+
+- main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; the Task 130 branch is terminal and prepared for release, but formal `main` remains unpublished until Step 13 ordinary fast-forward and fresh-remote verification. This entry is not a main or 1111 publication claim.
+- delta: terminalizes the Current Surface Compiler release candidate after single-source registry/snapshot compilation, typed semantic gating, lifecycle validation, residual reclassification and deterministic two-pass closure. The sole map remains `0.12.0` Current with `0.11.0` Historical; the identity epoch is unchanged.
+- lineage_boundary: `IGNITION-125` remains `HISTORICAL_UNEXECUTED`; valid requirements remain `REBASED_INTO_127`; canonical status remains `HISTORICAL_UNEXECUTED_REBASED_INTO_127`; `IGNITION-127` remains `COMPLETED_WITH_CLASSIFIED_RESIDUALS`; current `IGNITION-20260821-130` is `COMPLETED_WITH_CLASSIFIED_RESIDUALS`, terminal, and `PRESENTATION_ONLY`.
+- release_lifecycle: `PREPARED_FOR_RELEASE`, projection `RELEASE_READY`, publication `NOT_PUBLISHED`, post-publication remote check `PENDING`.
+- epistemic_state: `CURRENT_WITH_OPEN_OBLIGATIONS` and `EPISTEMICALLY_ACCEPTED=0` remain unchanged. Deterministic two-pass output, semantic gates, residual classifications and terminal task state are repository-local release evidence only; they do not establish external truth, production readiness, Owner acceptance, live executor completion or epistemic acceptance.
+- obligations: Step 13 must replay the exact candidate from a fresh clone, fast-forward formal `main` without force, fetch and verify the remote SHA, run the fresh-remote Current self-check on published `main`, and write the independent 1111 receipt. Historical/environment residuals remain classified.
+- stale_knowledge: the Task 129 architecture-changing projection and all earlier Task 126/127/128/129 entries remain provenance; no historical record is rewritten into Task 130 authority, and `PREPARED_FOR_RELEASE` must not be read as `PUBLISHED`.
+- next_read: read [`step12-deterministic-closure-r1.json`](./data/operations/iterations/130/step12-deterministic-closure-r1.json), [`current-release-lifecycle-r1.json`](./data/operations/current-release-lifecycle-r1.json), then perform Step 13 fresh-clone/main/1111 closeout.
 
 ## 2026-08-21 — IGNITION-20260821-130-CURRENT-SURFACE-COMPILER-R1 — task-branch Current-State projection
 

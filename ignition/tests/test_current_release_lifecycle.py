@@ -9,13 +9,15 @@ class CurrentReleaseLifecycleTests(unittest.TestCase):
     def test_current_lifecycle_is_running_and_unpublished(self) -> None:
         self.assertEqual(lifecycle.validate(), [])
         record = lifecycle.load_json(lifecycle.LIFECYCLE_PATH)
-        self.assertEqual(record["current_phase"], "RUNNING")
+        self.assertEqual(record["current_phase"], "PREPARED_FOR_RELEASE")
+        self.assertEqual(record["task_branch_projection"], "RELEASE_READY")
         self.assertEqual(record["publication_state"], "NOT_PUBLISHED")
 
     def test_terminal_phase_requires_terminal_task(self) -> None:
         record = lifecycle.load_json(lifecycle.LIFECYCLE_PATH)
         record["current_phase"] = "TERMINAL"
         record["task_branch_projection"] = "RELEASE_READY"
+        record["current_task_terminal"] = False
         self.assertTrue(any("must be terminal" in error for error in lifecycle.validate(record)))
 
 
