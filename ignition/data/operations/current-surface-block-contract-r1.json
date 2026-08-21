@@ -1,0 +1,42 @@
+{
+  "schema_version": "current-surface-block-contract-r1",
+  "contract_id": "CURRENT_SURFACE_GENERATED_BLOCK_CONTRACT_R1",
+  "marker_begin": "<!-- CURRENT-SNAPSHOT:BEGIN profile={profile} schema=current-snapshot-r1 -->",
+  "marker_end": "<!-- CURRENT-SNAPSHOT:END -->",
+  "block_owner": "ignition/tools/current_surface_compiler.py",
+  "block_policy": "The compiler owns every line between markers. Stable prose may explain the projection outside the block but may not hand-copy registry-managed volatile values in a Current section.",
+  "profiles": {
+    "human": {"purpose": "short human-readable Current orientation without adding a heading"},
+    "ai": {"purpose": "cold-start and handoff recovery with explicit source paths"},
+    "machine": {"purpose": "compact key/value Current projection for machine readers"}
+  },
+  "generated_fields": [
+    "current_identity_epoch",
+    "current_system_role",
+    "current_task_id",
+    "current_task_status",
+    "current_task_terminal",
+    "latest_architecture_changing_task",
+    "current_map_version",
+    "historical_map_version",
+    "current_state_status",
+    "epistemic_acceptance",
+    "live_external_ceiling",
+    "current_architecture_counts",
+    "active_architecture_overlays",
+    "current_lineage_summary",
+    "claim_ceiling",
+    "generated_from_source_digest"
+  ],
+  "surfaces": [
+    {"surface_id": "homepage-identity", "path": ".github/README.md", "profile": "human", "insert_after": "点火当前主干以一个有界"},
+    {"surface_id": "project-current-state", "path": "ignition/docs/project-current-state.md", "profile": "human", "insert_after": "更新时间："},
+    {"surface_id": "ai-cold-start", "path": "ignition/AI-START-HERE.md", "profile": "ai", "insert_before": "## 读取顺序"},
+    {"surface_id": "ai-agents-handoff", "path": "ignition/AI-HANDOFF.md", "profile": "ai", "insert_before": "## 权威链"},
+    {"surface_id": "machine-entry", "path": "ignition/llms.txt", "profile": "machine", "insert_after": "# llms.txt"},
+    {"surface_id": "architecture", "path": "ignition/ARCHITECTURE.md", "profile": "human", "insert_before_first_heading": true},
+    {"surface_id": "state-changelog", "path": "ignition/STATE-CHANGELOG.md", "profile": "ai", "insert_after": "# 点火状态增量日志"}
+  ],
+  "historical_policy": "Historical sections may retain prior task/map/version values only when their section/date/metadata explicitly marks them Historical; the classifier must not treat those mentions as Current assertions.",
+  "claim_ceiling": "Generated blocks prove deterministic repository-local projection consistency only; they grant no authority, external truth, production readiness, Owner acceptance or epistemic acceptance."
+}

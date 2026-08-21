@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ignition/operations/current-surface-block-contract-r1.schema.json",
+  "title": "Current surface generated block contract",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "contract_id", "marker_begin", "marker_end", "block_owner", "block_policy", "profiles", "generated_fields", "surfaces", "historical_policy", "claim_ceiling"],
+  "properties": {
+    "schema_version": {"const": "current-surface-block-contract-r1"},
+    "contract_id": {"const": "CURRENT_SURFACE_GENERATED_BLOCK_CONTRACT_R1"},
+    "marker_begin": {"type": "string", "minLength": 1},
+    "marker_end": {"const": "<!-- CURRENT-SNAPSHOT:END -->"},
+    "block_owner": {"type": "string", "minLength": 1},
+    "block_policy": {"type": "string", "minLength": 1},
+    "profiles": {"type": "object", "required": ["human", "ai", "machine"], "additionalProperties": {"type": "object", "required": ["purpose"], "properties": {"purpose": {"type": "string", "minLength": 1}}, "additionalProperties": false}},
+    "generated_fields": {"type": "array", "minItems": 10, "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+    "surfaces": {"type": "array", "minItems": 5, "uniqueItems": true, "items": {"$ref": "#/$defs/surface"}},
+    "historical_policy": {"type": "string", "minLength": 1},
+    "claim_ceiling": {"type": "string", "minLength": 1}
+  },
+  "$defs": {
+    "surface": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["surface_id", "path", "profile"],
+      "properties": {
+        "surface_id": {"type": "string", "pattern": "^[a-z][a-z0-9-]+$"},
+        "path": {"type": "string", "minLength": 1},
+        "profile": {"enum": ["human", "ai", "machine"]},
+        "insert_after": {"type": "string", "minLength": 1},
+        "insert_before": {"type": "string", "minLength": 1},
+        "insert_before_first_heading": {"type": "boolean"}
+      },
+      "oneOf": [{"required": ["insert_after"]}, {"required": ["insert_before"]}, {"required": ["insert_before_first_heading"]}]
+    }
+  }
+}
