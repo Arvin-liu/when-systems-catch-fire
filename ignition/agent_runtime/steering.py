@@ -32,6 +32,7 @@ INTENT_SOURCE_TYPES = frozenset({
     "HISTORICAL_IMPORTED",
 })
 INTENT_STATUSES = frozenset({"PROPOSED", "ACTIVE", "PAUSED", "RETIRED", "SUPERSEDED"})
+GOAL_STATUSES = frozenset({"PROPOSED", "ACTIVE", "PAUSED", "BLOCKED", "SATISFIED", "ABANDONED", "SUPERSEDED", "FAILED_BOUNDED"})
 ONTOLOGY_LAYERS = (
     ("intent", "long-term direction"),
     ("goal", "trackable target state"),
@@ -267,6 +268,7 @@ class GoalRecord:
     parent_goal_id: str | None = None
     created_at: str = "1970-01-01T00:00:00+00:00"
     updated_at: str = "1970-01-01T00:00:00+00:00"
+    supersedes_goal_id: str | None = None
 
     def __post_init__(self) -> None:
         _safe_id(self.goal_id, "goal_id")
@@ -274,12 +276,16 @@ class GoalRecord:
         _bounded_text(self.statement, "goal.statement")
         _safe_id(self.namespace, "goal.namespace")
         _safe_id(self.completion_contract_id, "goal.completion_contract_id")
-        if self.status not in {"PROPOSED", "ACTIVE", "PAUSED", "BLOCKED", "SATISFIED", "ABANDONED", "SUPERSEDED", "FAILED_BOUNDED"}:
+        if self.status not in GOAL_STATUSES:
             raise SteeringValidationError(f"unknown goal status: {self.status}")
         if not isinstance(self.version, int) or isinstance(self.version, bool) or self.version < 1:
             raise SteeringValidationError("goal.version must be a positive integer")
         if self.parent_goal_id is not None:
             _safe_id(self.parent_goal_id, "goal.parent_goal_id")
+        if self.supersedes_goal_id is not None:
+            _safe_id(self.supersedes_goal_id, "goal.supersedes_goal_id")
+            if self.supersedes_goal_id == self.goal_id:
+                raise SteeringValidationError("goal cannot supersede itself")
         _timestamp(self.created_at, "goal.created_at")
         _timestamp(self.updated_at, "goal.updated_at")
 
@@ -298,10 +304,23 @@ class GoalRecord:
             "status": self.status,
             "version": self.version,
             "parent_goal_id": self.parent_goal_id,
+            "supersedes_goal_id": self.supersedes_goal_id,
             "created_at": self.created_at,
             "updated_at": self.updated_at,
             "objective_digest": self.objective_digest(),
         }
+
+    @classmethod
+    def from_dict(cls, data: Mapping[str, Any]) -> "GoalRecord":
+        if data.get("schema") not in {None, f"{STEERING_SCHEMA}.goal"}:
+            raise GoalRegistryError("goal schema mismatch")
+        return cls(
+            goal_id=data["goal_id"], intent_id=data["intent_id"], statement=data["statement"], namespace=data["namespace"],
+            completion_contract_id=data["completion_contract_id"], provenance=AuthorityProvenance.from_dict(data["provenance"]),
+            status=data.get("status", "PROPOSED"), version=data.get("version", 1), parent_goal_id=data.get("parent_goal_id"),
+            created_at=data.get("created_at", "1970-01-01T00:00:00+00:00"), updated_at=data.get("updated_at", "1970-01-01T00:00:00+00:00"),
+            supersedes_goal_id=data.get("supersedes_goal_id"),
+        )
 
 
 class IntentRegistryError(SteeringValidationError):
@@ -421,6 +440,142 @@ class IntentRegistry:
         return registry
 
 
+_GOAL_TRANSITIONS: dict[str, frozenset[str]] = {
+    "PROPOSED": frozenset({"ACTIVE", "PAUSED", "BLOCKED", "ABANDONED", "SUPERSEDED"}),
+    "ACTIVE": frozenset({"PAUSED", "BLOCKED", "ABANDONED", "SUPERSEDED", "FAILED_BOUNDED"}),
+    "PAUSED": frozenset({"ACTIVE", "BLOCKED", "ABANDONED", "SUPERSEDED"}),
+    "BLOCKED": frozenset({"ACTIVE", "PAUSED", "ABANDONED", "SUPERSEDED", "FAILED_BOUNDED"}),
+    "SATISFIED": frozenset(),
+    "ABANDONED": frozenset(),
+    "SUPERSEDED": frozenset(),
+    "FAILED_BOUNDED": frozenset(),
+}
+
+
+class GoalRegistryError(SteeringValidationError):
+    """Raised when a Goal lifecycle transition is invalid or under-authorized."""
+
+
+class GoalRegistry:
+    """Versioned Goal state machine with append-only transition evidence."""
+
+    def __init__(self, goals: Sequence[GoalRecord] = (), contracts: Sequence[CompletionContract] = ()) -> None:
+        self._goals: dict[str, GoalRecord] = {}
+        self._contracts: dict[str, CompletionContract] = {contract.contract_id: contract for contract in contracts}
+        self._events: list[dict[str, Any]] = []
+        for goal in goals:
+            self.register(goal)
+
+    @property
+    def goals(self) -> tuple[GoalRecord, ...]:
+        return tuple(self._goals[key] for key in sorted(self._goals))
+
+    @property
+    def events(self) -> tuple[dict[str, Any], ...]:
+        return tuple(dict(event) for event in self._events)
+
+    def register_contract(self, contract: CompletionContract) -> CompletionContract:
+        if contract.contract_id in self._contracts:
+            raise GoalRegistryError(f"completion contract already exists: {contract.contract_id}")
+        self._contracts[contract.contract_id] = contract
+        return contract
+
+    def get(self, goal_id: str) -> GoalRecord:
+        _safe_id(goal_id, "goal_id")
+        try:
+            return self._goals[goal_id]
+        except KeyError as exc:
+            raise GoalRegistryError(f"unknown goal: {goal_id}") from exc
+
+    def contract(self, contract_id: str) -> CompletionContract:
+        try:
+            return self._contracts[contract_id]
+        except KeyError as exc:
+            raise GoalRegistryError(f"unknown completion contract: {contract_id}") from exc
+
+    def register(self, goal: GoalRecord) -> GoalRecord:
+        if goal.goal_id in self._goals:
+            raise GoalRegistryError(f"goal already exists: {goal.goal_id}")
+        self.contract(goal.completion_contract_id)
+        if goal.status == "SATISFIED":
+            raise GoalRegistryError("a newly registered goal cannot be SATISFIED without a completion decision")
+        self._goals[goal.goal_id] = goal
+        self._events.append({"event": "GOAL_REGISTERED", "goal_id": goal.goal_id, "status": goal.status, "version": goal.version, "objective_digest": goal.objective_digest()})
+        return goal
+
+    def transition(self, goal_id: str, status: str, *, provenance: AuthorityProvenance, reason: str, evidence_refs: Sequence[str] = (), updated_at: str) -> GoalRecord:
+        current = self.get(goal_id)
+        if status not in GOAL_STATUSES:
+            raise GoalRegistryError(f"unknown goal status: {status}")
+        if status not in _GOAL_TRANSITIONS[current.status]:
+            raise GoalRegistryError(f"invalid Goal transition {current.status}->{status}")
+        _bounded_text(reason, "goal.transition.reason")
+        _timestamp(updated_at, "goal.transition.updated_at")
+        if status == "SATISFIED":
+            raise GoalRegistryError("SATISFIED requires an independent CompletionDecision; child completion is insufficient")
+        if status == "ACTIVE" and current.provenance.source_type not in {"OWNER_DECLARED", "OWNER_APPROVED_DERIVED"} and not provenance.is_owner_authority:
+            raise GoalRegistryError("activating a proposed Goal requires explicit Owner approval")
+        refs = _refs(evidence_refs, "goal.transition.evidence_refs")
+        updated = replace(current, status=status, version=current.version + 1, updated_at=updated_at)
+        self._goals[goal_id] = updated
+        self._events.append({
+            "event": "GOAL_STATUS_CHANGED",
+            "goal_id": goal_id,
+            "from_status": current.status,
+            "to_status": status,
+            "from_version": current.version,
+            "to_version": updated.version,
+            "actor_ref": provenance.actor_ref,
+            "authority_source_type": provenance.source_type,
+            "authority_digest": authority_digest(provenance),
+            "reason": reason,
+            "evidence_refs": list(refs),
+            "completion_inferred": False,
+        })
+        return updated
+
+    def reopen(self, goal_id: str, replacement: GoalRecord, *, provenance: AuthorityProvenance, reason: str) -> GoalRecord:
+        current = self.get(goal_id)
+        if current.status not in {"SATISFIED", "ABANDONED", "SUPERSEDED", "FAILED_BOUNDED"}:
+            raise GoalRegistryError("only a terminal Goal can be explicitly reopened as a new version")
+        if replacement.supersedes_goal_id != goal_id:
+            raise GoalRegistryError("reopened Goal must preserve supersedes_goal_id lineage")
+        if not provenance.is_owner_authority:
+            raise GoalRegistryError("reopening a terminal Goal requires explicit Owner authority")
+        self.register(replacement)
+        self._events.append({"event": "GOAL_REOPENED_AS_NEW_VERSION", "old_goal_id": goal_id, "new_goal_id": replacement.goal_id, "reason": reason, "lineage_preserved": True, "authority_digest": authority_digest(provenance)})
+        return replacement
+
+    def to_dict(self) -> dict[str, Any]:
+        return {
+            "schema": f"{STEERING_SCHEMA}.goal-registry",
+            "contracts": [self._contracts[key].to_dict() for key in sorted(self._contracts)],
+            "goals": [goal.to_dict() for goal in self.goals],
+            "events": list(self._events),
+            "goal_count": len(self._goals),
+        }
+
+    @classmethod
+    def from_dict(cls, data: Mapping[str, Any]) -> "GoalRegistry":
+        if data.get("schema") != f"{STEERING_SCHEMA}.goal-registry":
+            raise GoalRegistryError("goal registry schema mismatch")
+        registry = cls(contracts=tuple(CompletionContract(**{
+            "contract_id": row["contract_id"],
+            "acceptance_predicates": tuple(row["acceptance_predicates"]),
+            "required_evidence_types": tuple(row["required_evidence_types"]),
+            "completion_authority": row["completion_authority"],
+            "forbidden_shortcuts": tuple(row["forbidden_shortcuts"]),
+            "review_window_ref": row.get("review_window_ref"),
+        }) for row in data.get("contracts", ())))
+        for row in data.get("goals", ()):
+            registry.register(GoalRecord.from_dict(row))
+        events = data.get("events", [])
+        if not isinstance(events, list):
+            raise GoalRegistryError("goal registry events must be an array")
+        registry._events = [dict(event) for event in events]
+        return registry
+
+
 def ontology_contract() -> dict[str, Any]:
     """Return the machine-readable layer and non-inference contract."""
 
@@ -453,4 +608,5 @@ __all__ = [
     "INTENT_SOURCE_TYPES", "INTENT_STATUSES", "ONTOLOGY_LAYERS", "SteeringValidationError", "AuthorityProvenance",
     "IntentRecord", "GoalRecord", "CompletionContract", "ontology_contract", "authority_digest",
     "IntentRegistry", "IntentRegistryError",
+    "GOAL_STATUSES", "GoalRegistry", "GoalRegistryError",
 ]
