@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ignition/operations/iteration-boundary-compatibility-r1.schema.json",
+  "title": "Task133 iteration boundary historical compatibility audit",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "task_id", "step", "status", "compatibility_contract", "current_projection", "historical_receipts", "consumer_audit", "errors", "claim_ceiling"],
+  "properties": {
+    "schema_version": {"const": "ignition-133-step08-historical-compatibility-r1"},
+    "task_id": {"const": "IGNITION-20260822-133"},
+    "step": {"const": "08"},
+    "status": {"enum": ["PASS", "FAIL"]},
+    "compatibility_contract": {"type": "object", "additionalProperties": false, "required": ["deprecated_field", "alias_of", "current_source", "historical_policy", "new_consumers"], "properties": {"deprecated_field": {"const": "current_iteration_boundary"}, "alias_of": {"const": "current_formal_task_ordinal"}, "current_source": {"type": "string", "minLength": 1}, "historical_policy": {"type": "string", "minLength": 1}, "new_consumers": {"type": "string", "minLength": 1}}},
+    "current_projection": {"type": "object", "additionalProperties": false, "required": ["formal_task_id", "formal_task_ordinal", "architecture_task_id", "architecture_task_ordinal", "current_iteration_boundary", "current_iteration_boundary_semantics"], "properties": {"formal_task_id": {"type": "string"}, "formal_task_ordinal": {"const": 133}, "architecture_task_id": {"type": "string"}, "architecture_task_ordinal": {"const": 129}, "current_iteration_boundary": {"const": 133}, "current_iteration_boundary_semantics": {"const": "DEPRECATED_COMPATIBILITY_ALIAS_OF_CURRENT_FORMAL_TASK_ORDINAL"}}},
+    "historical_receipts": {"type": "array", "minItems": 7, "items": {"$ref": "#/$defs/historical"}},
+    "consumer_audit": {"type": "array", "minItems": 1, "items": {"type": "object", "additionalProperties": false, "required": ["path", "classification", "rule"], "properties": {"path": {"type": "string"}, "classification": {"type": "string"}, "rule": {"type": "string"}}}},
+    "errors": {"type": "array", "items": {"type": "string"}},
+    "claim_ceiling": {"type": "string", "minLength": 1}
+  },
+  "$defs": {
+    "historical": {"type": "object", "additionalProperties": false, "required": ["path", "task_id", "task_ordinal_from_id", "captured_current_iteration_boundary", "historical", "current_semantic_fields_present", "unchanged_from_baseline", "sha256", "validation"], "properties": {"path": {"type": "string"}, "task_id": {"type": "string"}, "task_ordinal_from_id": {"type": "integer", "minimum": 1}, "captured_current_iteration_boundary": {"type": "integer", "minimum": 0}, "historical": {"const": true}, "current_semantic_fields_present": {"const": false}, "unchanged_from_baseline": {"const": true}, "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}, "validation": {"const": "PASS"}}}
+  }
+}

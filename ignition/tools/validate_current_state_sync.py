@@ -356,11 +356,12 @@ def validate_receipt(contract: dict[str, Any], receipt: dict[str, Any]) -> list[
         errors.append(f"receipt architecture_identity_impact is not one of {sorted(ALLOWED_IMPACTS)}")
     if receipt.get("identity_contract_path") != "ignition/data/architecture/current-system-identity.json":
         errors.append("receipt must name the canonical current-system-identity contract")
-    if receipt.get("identity_epoch") != contract.get("identity_epoch"):
-        errors.append("receipt identity_epoch differs from current identity contract")
-    if receipt.get("current_iteration_boundary") != contract.get("current_iteration_boundary"):
-        errors.append("receipt current_iteration_boundary differs from current identity contract")
-    if receipt.get("task_id") == contract.get("current_formal_task_id"):
+    is_current_receipt = receipt.get("task_id") == contract.get("current_formal_task_id")
+    if is_current_receipt and receipt.get("identity_epoch") != contract.get("identity_epoch"):
+        errors.append("current receipt identity_epoch differs from current identity contract")
+    if is_current_receipt and receipt.get("current_iteration_boundary") != contract.get("current_iteration_boundary"):
+        errors.append("current receipt current_iteration_boundary differs from current identity contract")
+    if is_current_receipt:
         try:
             derived = iteration_boundary.derive()
             for field in (
@@ -376,6 +377,10 @@ def validate_receipt(contract: dict[str, Any], receipt: dict[str, Any]) -> list[
                 errors.append("current receipt compatibility alias semantics are not canonical")
         except Exception as exc:
             errors.append(f"cannot derive receipt iteration identity: {type(exc).__name__}: {exc}")
+    # Historical receipts intentionally retain the value captured by their own
+    # task. They are validated for shape and surface bookkeeping, but their
+    # old boundary/epoch is never compared with the Current source and is not
+    # reinterpreted through the Task133 alias contract.
     if impact == "ARCHITECTURE_CHANGED":
         if not receipt.get("identity_contract_changed"):
             errors.append("ARCHITECTURE_CHANGED receipt must set identity_contract_changed=true")
@@ -391,7 +396,17 @@ def validate_receipt(contract: dict[str, Any], receipt: dict[str, Any]) -> list[
     else:
         if receipt.get("surface_sync_complete"):
             errors.append("NONE/PRESENTATION_ONLY receipt cannot claim full architecture surface synchronization")
-    errors.extend(validate_surface_decisions(contract, receipt))
+    if is_current_receipt:
+        errors.extend(validate_surface_decisions(contract, receipt))
+    elif impact == "ARCHITECTURE_CHANGED":
+        # Historical receipts keep their own surface universe, but an
+        # adversarial mutation must still fail the architecture-impact rule.
+        for item in receipt.get("surface_decisions", []):
+            if item.get("decision") != "CHANGE":
+                errors.append(f"historical ARCHITECTURE_CHANGED requires CHANGE for {item.get('surface_id')}")
+    # A historical receipt belongs to the contract that existed at its task
+    # boundary; applying today's required-surface set would manufacture a
+    # false failure (for example, steering-doc was added after Task123).
     return errors
 
 

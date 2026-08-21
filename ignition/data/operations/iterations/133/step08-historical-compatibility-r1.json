@@ -1,0 +1,154 @@
+{
+  "claim_ceiling": "Repository-local historical compatibility and migration evidence only; no external truth, production readiness, Owner acceptance or epistemic acceptance is inferred.",
+  "compatibility_contract": {
+    "alias_of": "current_formal_task_ordinal",
+    "current_source": "ignition/data/operations/iteration-boundary-semantics-r1.json",
+    "deprecated_field": "current_iteration_boundary",
+    "historical_policy": "Task123-132 captured values remain historical records and are not rewritten or reinterpreted as Current source.",
+    "new_consumers": "Must use current_formal_task_ordinal or latest_architecture_task_ordinal by name."
+  },
+  "consumer_audit": [
+    {
+      "classification": "CURRENT_SEMANTIC_SOURCE",
+      "path": "ignition/data/operations/iteration-boundary-semantics-r1.json",
+      "rule": "named formal/architecture roles and deprecated alias policy"
+    },
+    {
+      "classification": "CURRENT_DERIVATION",
+      "path": "ignition/tools/iteration_boundary.py",
+      "rule": "parse canonical task IDs; never read an independent numeric source"
+    },
+    {
+      "classification": "CURRENT_PROJECTION",
+      "path": "ignition/data/architecture/current-system-identity.json",
+      "rule": "materialized named ordinals and alias validated against derivation"
+    },
+    {
+      "classification": "CURRENT_PROJECTION",
+      "path": "ignition/data/operations/current-release-lifecycle-r1.json",
+      "rule": "formal/lifecycle/architecture fields and alias validated against derivation"
+    },
+    {
+      "classification": "CURRENT_GENERATED_PROJECTION",
+      "path": "ignition/data/architecture/current-facts.json",
+      "rule": "top-level and facts.iteration values generated from canonical sources"
+    },
+    {
+      "classification": "CURRENT_GENERATED_PROJECTION",
+      "path": "ignition/data/operations/current-snapshot-r1.json",
+      "rule": "iteration_identity is generated and compiler-owned"
+    },
+    {
+      "classification": "CURRENT_REGISTRY",
+      "path": "ignition/data/operations/current-volatile-fact-registry-r1.json",
+      "rule": "formal/architecture ordinals derive through task_identity_ordinal extractor"
+    },
+    {
+      "classification": "CURRENT_CONSUMER",
+      "path": "ignition/tools/current_surface_compiler.py",
+      "rule": "human/AI/machine blocks render generated named ordinal values"
+    },
+    {
+      "classification": "CURRENT_RELEASE_GATE",
+      "path": "ignition/tools/validate_iteration_ordinal_binding.py",
+      "rule": "all formal roles share one derived formal ordinal; architecture ordinal remains independent"
+    },
+    {
+      "classification": "HISTORICAL_RECORD",
+      "path": "ignition/data/operations/iterations/{123,124,126,127,128,129,130}/current-state-sync-receipt.json",
+      "rule": "captured values preserved and never loaded as Current source"
+    }
+  ],
+  "current_projection": {
+    "architecture_task_id": "IGNITION-20260821-129",
+    "architecture_task_ordinal": 129,
+    "current_iteration_boundary": 133,
+    "current_iteration_boundary_semantics": "DEPRECATED_COMPATIBILITY_ALIAS_OF_CURRENT_FORMAL_TASK_ORDINAL",
+    "formal_task_id": "IGNITION-20260822-133",
+    "formal_task_ordinal": 133
+  },
+  "errors": [],
+  "historical_receipts": [
+    {
+      "captured_current_iteration_boundary": 122,
+      "current_semantic_fields_present": false,
+      "historical": true,
+      "path": "ignition/data/operations/iterations/123/current-state-sync-receipt.json",
+      "sha256": "d8454acd36fbc84a3f1b7bc7eb8d2f2898e20e516019944f5f6f6fa95c653ef6",
+      "task_id": "IGNITION-20260816-123",
+      "task_ordinal_from_id": 123,
+      "unchanged_from_baseline": true,
+      "validation": "PASS"
+    },
+    {
+      "captured_current_iteration_boundary": 124,
+      "current_semantic_fields_present": false,
+      "historical": true,
+      "path": "ignition/data/operations/iterations/124/current-state-sync-receipt.json",
+      "sha256": "2ca00c4275e250388ac744f3dee7d54a76065b79632ec2b7cad8b484f1f348cb",
+      "task_id": "IGNITION-20260817-124",
+      "task_ordinal_from_id": 124,
+      "unchanged_from_baseline": true,
+      "validation": "PASS"
+    },
+    {
+      "captured_current_iteration_boundary": 126,
+      "current_semantic_fields_present": false,
+      "historical": true,
+      "path": "ignition/data/operations/iterations/126/current-state-sync-receipt.json",
+      "sha256": "3ae98fa45eecc76b1c848546c7902e2356d2b1c7716efa7f6beb1e0a295c9045",
+      "task_id": "IGNITION-20260818-126",
+      "task_ordinal_from_id": 126,
+      "unchanged_from_baseline": true,
+      "validation": "PASS"
+    },
+    {
+      "captured_current_iteration_boundary": 127,
+      "current_semantic_fields_present": false,
+      "historical": true,
+      "path": "ignition/data/operations/iterations/127/current-state-sync-receipt.json",
+      "sha256": "a725fc22fdcf13e45d06d1acd3158fc0552af9a659d7d98d87e0fb41b3c7573b",
+      "task_id": "IGNITION-20260820-127",
+      "task_ordinal_from_id": 127,
+      "unchanged_from_baseline": true,
+      "validation": "PASS"
+    },
+    {
+      "captured_current_iteration_boundary": 128,
+      "current_semantic_fields_present": false,
+      "historical": true,
+      "path": "ignition/data/operations/iterations/128/current-state-sync-receipt.json",
+      "sha256": "01efa5ea6af997b42b775d5d63f70ec2345c6b63ed1252a15b385cb6af6d6f8f",
+      "task_id": "IGNITION-20260821-128",
+      "task_ordinal_from_id": 128,
+      "unchanged_from_baseline": true,
+      "validation": "PASS"
+    },
+    {
+      "captured_current_iteration_boundary": 129,
+      "current_semantic_fields_present": false,
+      "historical": true,
+      "path": "ignition/data/operations/iterations/129/current-state-sync-receipt.json",
+      "sha256": "e08f55addeb2cd8b68b0a8a68eb50d8944a0cdf0c6681cd695712f9b3c645079",
+      "task_id": "IGNITION-20260821-129",
+      "task_ordinal_from_id": 129,
+      "unchanged_from_baseline": true,
+      "validation": "PASS"
+    },
+    {
+      "captured_current_iteration_boundary": 130,
+      "current_semantic_fields_present": false,
+      "historical": true,
+      "path": "ignition/data/operations/iterations/130/current-state-sync-receipt.json",
+      "sha256": "0a415d496d951a3086e1706ed6d2b5059822c3f24ad5d99615dc57ef223f9481",
+      "task_id": "IGNITION-20260821-130",
+      "task_ordinal_from_id": 130,
+      "unchanged_from_baseline": true,
+      "validation": "PASS"
+    }
+  ],
+  "schema_version": "ignition-133-step08-historical-compatibility-r1",
+  "status": "PASS",
+  "step": "08",
+  "task_id": "IGNITION-20260822-133"
+}
