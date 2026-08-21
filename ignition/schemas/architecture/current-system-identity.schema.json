@@ -15,6 +15,7 @@
     "current_map",
     "current_method",
     "current_facts_projection",
+    "current_task_lineage",
     "derived_metrics",
     "known_open_obligations",
     "authority_ceilings",
@@ -33,6 +34,7 @@
     "current_map": {"$ref": "#/$defs/mapRef"},
     "current_method": {"$ref": "#/$defs/methodRef"},
     "current_facts_projection": {"$ref": "#/$defs/factsProjection"},
+    "current_task_lineage": {"$ref": "#/$defs/taskLineageRef"},
     "derived_metrics": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/metric"}},
     "known_open_obligations": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/obligation"}},
     "authority_ceilings": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/nonblank"}, "uniqueItems": true},
@@ -86,6 +88,17 @@
         "schema_path": {"$ref": "#/$defs/nonblank"},
         "generator_path": {"$ref": "#/$defs/nonblank"},
         "schema_version": {"const": "current-facts-r1"}
+      }
+    },
+    "taskLineageRef": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source_path", "schema_path", "validator_path", "contract_id"],
+      "properties": {
+        "source_path": {"$ref": "#/$defs/nonblank"},
+        "schema_path": {"$ref": "#/$defs/nonblank"},
+        "validator_path": {"$ref": "#/$defs/nonblank"},
+        "contract_id": {"const": "CURRENT_TASK_LINEAGE_STATUS"}
       }
     },
     "metric": {

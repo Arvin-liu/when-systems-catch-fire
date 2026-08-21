@@ -1,0 +1,37 @@
+{
+  "schema_version": "current-state-sync-receipt-r1",
+  "task_id": "IGNITION-20260821-128",
+  "architecture_identity_impact": "PRESENTATION_ONLY",
+  "identity_contract_path": "ignition/data/architecture/current-system-identity.json",
+  "identity_epoch": "os-control-plane-r3-durability-lifecycle-r0",
+  "current_iteration_boundary": 128,
+  "surface_decisions": [
+    {"surface_id":"homepage-identity","path":".github/README.md","decision":"NO_CHANGE_WITH_REASON","reason":"Step 01 adds the canonical task-lineage source; homepage repair is deferred to Step 02."},
+    {"surface_id":"project-current-state","path":"ignition/docs/project-current-state.md","decision":"NO_CHANGE_WITH_REASON","reason":"Step 01 adds the canonical task-lineage source; Current prose repair is deferred to Step 02."},
+    {"surface_id":"ai-cold-start","path":"ignition/AI-START-HERE.md","decision":"NO_CHANGE_WITH_REASON","reason":"Step 01 adds the canonical task-lineage source; AI cold-start repair is deferred to Step 02."},
+    {"surface_id":"ai-agents-handoff","path":"ignition/AI-HANDOFF.md","decision":"NO_CHANGE_WITH_REASON","reason":"Step 01 adds the canonical task-lineage source; handoff repair is deferred to Step 02."},
+    {"surface_id":"architecture","path":"ignition/ARCHITECTURE.md","decision":"NO_CHANGE_WITH_REASON","reason":"The R3 architecture identity and map remain unchanged by this semantic closure source."},
+    {"surface_id":"machine-entry","path":"ignition/llms.txt","decision":"NO_CHANGE_WITH_REASON","reason":"Step 01 adds the canonical task-lineage source; machine-entry repair is deferred to Step 02."},
+    {"surface_id":"system-map-doc","path":"ignition/docs/architecture/interactive-system-map.md","decision":"NO_CHANGE_WITH_REASON","reason":"Audit found no stale Task 125 state in the unique 0.11.0 map documentation."},
+    {"surface_id":"federation-doc","path":"ignition/docs/architecture/external-agent-federation-r1.md","decision":"NO_CHANGE_WITH_REASON","reason":"Federation boundaries are unrelated to this Current State semantic closure."},
+    {"surface_id":"system-map-json","path":"ignition/data/architecture/interactive-system-map.json","decision":"NO_CHANGE_WITH_REASON","reason":"No map node or version change is required for the narrow task-lineage repair."},
+    {"surface_id":"state-changelog","path":"ignition/STATE-CHANGELOG.md","decision":"NO_CHANGE_WITH_REASON","reason":"Append-only Task 128 delta is deferred until Current surfaces are synchronized."}
+  ],
+  "system_map_sync": {"decision":"NO_CHANGE_WITH_REASON","reason":"The R3 identity and unique Current map 0.11.0 are unchanged."},
+  "state_changelog_delta": {"decision":"NO_CHANGE_WITH_REASON","reason":"Step 01 is the canonical source bootstrap; the append-only Current delta is written after surface synchronization."},
+  "changed_paths": [
+    "ignition/data/architecture/current-system-identity.json",
+    "ignition/data/operations/current-task-lineage-status.json",
+    "ignition/schemas/architecture/current-system-identity.schema.json",
+    "ignition/schemas/architecture/current-facts.schema.json",
+    "ignition/schemas/operations/current-task-lineage-status-r1.schema.json",
+    "ignition/tools/generate_current_facts.py",
+    "ignition/tools/validate_current_task_lineage.py",
+    "ignition/tests/test_current_task_lineage.py",
+    "ignition/data/architecture/current-facts.json",
+    "ignition/docs/architecture/current-facts.md"
+  ],
+  "identity_contract_changed": true,
+  "surface_sync_complete": false,
+  "claim_ceiling": "Step 01 canonical task-lineage/status source and derived facts only; Current Human/AI surfaces remain pending Step 02 and no authority, production, external-truth, Owner or epistemic upgrade is claimed."
+}

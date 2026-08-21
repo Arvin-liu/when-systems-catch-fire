@@ -1,7 +1,7 @@
 {
   "claim_ceiling": "Deterministic repository-derived current facts and navigation support only; no external truth, Owner acceptance, production safety or epistemic upgrade.",
   "contract_id": "CURRENT_STATE_SYNC_INVARIANT",
-  "current_iteration_boundary": 127,
+  "current_iteration_boundary": 128,
   "facts": {
     "architecture": {
       "current_map_version": "0.11.0",
@@ -66,7 +66,7 @@
       }
     },
     "iteration": {
-      "current_iteration_boundary": 127,
+      "current_iteration_boundary": 128,
       "current_map_version": "0.11.0",
       "method_status": "Current",
       "method_version": "1.4.0"
@@ -87,6 +87,14 @@
         "research.reos-light",
         "writing.zhiyuan"
       ]
+    },
+    "task_lineage": {
+      "current_task_id": "IGNITION-20260821-128",
+      "current_task_status": "IN_PROGRESS",
+      "task125_canonical_status": "HISTORICAL_UNEXECUTED_REBASED_INTO_127",
+      "task125_file_status": "HISTORICAL_UNEXECUTED",
+      "task125_requirement_lineage_status": "REBASED_INTO_127",
+      "task127_status": "COMPLETED_WITH_CLASSIFIED_RESIDUALS"
     }
   },
   "identity_epoch": "os-control-plane-r3-durability-lifecycle-r0",
@@ -102,7 +110,7 @@
     },
     {
       "path": "ignition/data/architecture/current-system-identity.json",
-      "sha256": "2783c35ef65153875b7a0af1e0b1e5403f1f1615a2acb6cc97400d019c343a50"
+      "sha256": "65c39f109d6b97f0c54932f24e69a53c5f05c6762288fe686a89df2118f07ad1"
     },
     {
       "path": "ignition/data/architecture/interactive-system-map-layout.json",
@@ -131,6 +139,10 @@
     {
       "path": "ignition/data/operations/change-propagation-topology.json",
       "sha256": "eeebecf586378296c8df178b72dd9a23eab8b1916b1acf93e85aa4a7506a80e2"
+    },
+    {
+      "path": "ignition/data/operations/current-task-lineage-status.json",
+      "sha256": "5292494573229bcd53d753116ad4352a4bffccc8a51db8972eb8e3f3838b9a6a"
     },
     {
       "path": "ignition/data/operations/project-components.json",
@@ -162,15 +174,23 @@
     },
     {
       "path": "ignition/schemas/architecture/current-facts.schema.json",
-      "sha256": "ccdbcea2867cbed8d645c7188d178152fe21285939b239cf688fc93a2bdb8a51"
+      "sha256": "c64d1f8980621f4880d829872a765e52c6379f3333691d8d6e7466e8b7193e0e"
     },
     {
       "path": "ignition/schemas/architecture/current-system-identity.schema.json",
-      "sha256": "09c65629a5854d04b2c0e985159a8eaa63c6c89cc562534334c1eff884a3fb1e"
+      "sha256": "0e7417992b17fba4267a09aeb7bb96069d58ca9512ca38928f86879b0087cd61"
+    },
+    {
+      "path": "ignition/schemas/operations/current-task-lineage-status-r1.schema.json",
+      "sha256": "2a8f278237bee0853f5c0302a4c402bf8362970a7652836f5a8659784cbbf576"
     },
     {
       "path": "ignition/tools/generate_current_facts.py",
-      "sha256": "feb0e8692c49d2595b9d365ed25920afbd8adef2bea50e283ad0b66c7cc30d05"
+      "sha256": "bbdd0ae248aa612d940d1442652a4667cc6e4256db6414d84da4fe55ee161b4e"
+    },
+    {
+      "path": "ignition/tools/validate_current_task_lineage.py",
+      "sha256": "61ac954674d3a00eb65629ba79d75dc472efb04f4027c893499491b3e28435da"
     }
   ]
 }

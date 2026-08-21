@@ -1,0 +1,72 @@
+{
+  "schema_version": "current-task-lineage-status-r1",
+  "contract_id": "CURRENT_TASK_LINEAGE_STATUS",
+  "current_task": {
+    "task_id": "IGNITION-20260821-128",
+    "scope": "Current State semantic closure after Durability / Lifecycle R3",
+    "execution_status": "IN_PROGRESS",
+    "terminal": false,
+    "identity_impact": "PRESENTATION_ONLY"
+  },
+  "current_state": {
+    "current_state_status": "CURRENT_WITH_OPEN_OBLIGATIONS",
+    "epistemically_accepted": 0
+  },
+  "lineages": [
+    {
+      "lineage_id": "IGNITION-125->IGNITION-127",
+      "predecessor": {
+        "task_id": "IGNITION-125",
+        "task_file_status": "HISTORICAL_UNEXECUTED",
+        "requirement_lineage_status": "REBASED_INTO_127",
+        "canonical_status": "HISTORICAL_UNEXECUTED_REBASED_INTO_127",
+        "successor_task_id": "IGNITION-127"
+      },
+      "successor": {
+        "task_id": "IGNITION-127",
+        "execution_status": "COMPLETED_WITH_CLASSIFIED_RESIDUALS",
+        "new_regressions": 0,
+        "current_obligation": false
+      },
+      "current_surface_rule": {
+        "predecessor_rendering": "HISTORICAL_UNEXECUTED_REBASED_INTO_127",
+        "successor_rendering": "COMPLETED_WITH_CLASSIFIED_RESIDUALS",
+        "forbidden_status_tokens": ["DEFERRED_PENDING_REBASE", "DEFERRED"]
+      },
+      "provenance": [
+        {
+          "kind": "TASK126_AMENDMENT",
+          "repository": "Arvin-liu/1111",
+          "path": "agent-commands/IGNITION-20260818-126-AMENDMENT-01-task125-deferred-not-superseded.md",
+          "classification": "CONTROL_RECORD",
+          "commit": "880fff35d49b14823e53dbcee2beccfe975dd73b"
+        },
+        {
+          "kind": "TASK127_REBASE_MATRIX",
+          "repository": "Arvin-liu/when-systems-catch-fire",
+          "path": "ignition/data/operations/iterations/127/step00-rebase-matrix.json",
+          "classification": "HISTORICAL_RECORD",
+          "commit": "681f86d79b1112af3c07e0f8091335860c237ef2"
+        },
+        {
+          "kind": "TASK127_RECEIPT",
+          "repository": "Arvin-liu/when-systems-catch-fire",
+          "path": "ignition/agent-results/IGNITION-20260820-127-machine-receipt.json",
+          "classification": "HISTORICAL_RECORD",
+          "commit": "681f86d79b1112af3c07e0f8091335860c237ef2"
+        }
+      ]
+    }
+  ],
+  "protected_historical_paths": [
+    "ignition/reports/operations/ignition-126-progress.md",
+    "ignition/data/operations/iterations/126/current-state-sync-receipt.json",
+    "ignition/data/operations/iterations/126/step00-baseline-audit.json",
+    "ignition/data/operations/iterations/126/progress.jsonl",
+    "ignition/data/operations/iterations/127/step00-rebase-matrix.json",
+    "ignition/data/operations/iterations/127/current-state-sync-receipt.json",
+    "ignition/data/operations/iterations/127/progress.jsonl",
+    "ignition/agent-results/IGNITION-20260820-127-machine-receipt.json"
+  ],
+  "claim_ceiling": "Canonical repository-local task lineage and status semantics only; this record does not grant authority, prove external truth, establish production readiness, or set epistemic acceptance."
+}

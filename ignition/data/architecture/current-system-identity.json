@@ -2,7 +2,7 @@
   "schema_version": "current-system-identity-r1",
   "contract_id": "CURRENT_STATE_SYNC_INVARIANT",
   "identity_epoch": "os-control-plane-r3-durability-lifecycle-r0",
-  "current_iteration_boundary": 127,
+  "current_iteration_boundary": 128,
   "current_state_status": "CURRENT_WITH_OPEN_OBLIGATIONS",
   "epistemically_accepted": 0,
   "current_architecture_identity": {
@@ -51,6 +51,12 @@
     "schema_path": "ignition/schemas/architecture/current-facts.schema.json",
     "generator_path": "ignition/tools/generate_current_facts.py",
     "schema_version": "current-facts-r1"
+  },
+  "current_task_lineage": {
+    "source_path": "ignition/data/operations/current-task-lineage-status.json",
+    "schema_path": "ignition/schemas/operations/current-task-lineage-status-r1.schema.json",
+    "validator_path": "ignition/tools/validate_current_task_lineage.py",
+    "contract_id": "CURRENT_TASK_LINEAGE_STATUS"
   },
   "derived_metrics": [
     {

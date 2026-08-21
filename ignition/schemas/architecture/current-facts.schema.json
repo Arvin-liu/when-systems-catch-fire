@@ -31,7 +31,7 @@
     "facts": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["architecture", "packs", "federation", "foundation", "knowledge_experience", "fire_seeds", "human_surface", "iteration", "environmental_residuals"],
+      "required": ["architecture", "packs", "federation", "foundation", "knowledge_experience", "fire_seeds", "human_surface", "iteration", "task_lineage", "environmental_residuals"],
       "properties": {
         "architecture": {
           "type": "object", "additionalProperties": false,
@@ -101,6 +101,18 @@
           "type": "object", "additionalProperties": false,
           "required": ["current_iteration_boundary", "method_version", "method_status", "current_map_version"],
           "properties": {"current_iteration_boundary": {"type": "integer", "minimum": 0}, "method_version": {"$ref": "#/$defs/nonblank"}, "method_status": {"const": "Current"}, "current_map_version": {"$ref": "#/$defs/nonblank"}}
+        },
+        "task_lineage": {
+          "type": "object", "additionalProperties": false,
+          "required": ["current_task_id", "current_task_status", "task125_file_status", "task125_requirement_lineage_status", "task125_canonical_status", "task127_status"],
+          "properties": {
+            "current_task_id": {"pattern": "^IGNITION-[0-9A-Z-]+$"},
+            "current_task_status": {"enum": ["IN_PROGRESS", "COMPLETED_WITH_CLASSIFIED_RESIDUALS"]},
+            "task125_file_status": {"const": "HISTORICAL_UNEXECUTED"},
+            "task125_requirement_lineage_status": {"const": "REBASED_INTO_127"},
+            "task125_canonical_status": {"const": "HISTORICAL_UNEXECUTED_REBASED_INTO_127"},
+            "task127_status": {"const": "COMPLETED_WITH_CLASSIFIED_RESIDUALS"}
+          }
         },
         "environmental_residuals": {"type": "array", "items": {"$ref": "#/$defs/nonblank"}}
       }

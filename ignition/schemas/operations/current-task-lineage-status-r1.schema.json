@@ -1,0 +1,95 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ignition/operations/current-task-lineage-status-r1.schema.json",
+  "title": "Ignition current task lineage and lifecycle status",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "contract_id", "current_task", "current_state", "lineages", "protected_historical_paths", "claim_ceiling"],
+  "properties": {
+    "schema_version": {"const": "current-task-lineage-status-r1"},
+    "contract_id": {"const": "CURRENT_TASK_LINEAGE_STATUS"},
+    "current_task": {"$ref": "#/$defs/currentTask"},
+    "current_state": {"$ref": "#/$defs/currentState"},
+    "lineages": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/lineage"}},
+    "protected_historical_paths": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/nonblank"}, "uniqueItems": true},
+    "claim_ceiling": {"$ref": "#/$defs/nonblank"}
+  },
+  "$defs": {
+    "nonblank": {"type": "string", "minLength": 1, "pattern": "\\S"},
+    "currentTask": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["task_id", "scope", "execution_status", "terminal", "identity_impact"],
+      "properties": {
+        "task_id": {"const": "IGNITION-20260821-128"},
+        "scope": {"$ref": "#/$defs/nonblank"},
+        "execution_status": {"enum": ["IN_PROGRESS", "COMPLETED_WITH_CLASSIFIED_RESIDUALS"]},
+        "terminal": {"type": "boolean"},
+        "identity_impact": {"const": "PRESENTATION_ONLY"}
+      }
+    },
+    "currentState": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["current_state_status", "epistemically_accepted"],
+      "properties": {
+        "current_state_status": {"const": "CURRENT_WITH_OPEN_OBLIGATIONS"},
+        "epistemically_accepted": {"const": 0}
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "repository", "path", "classification", "commit"],
+      "properties": {
+        "kind": {"$ref": "#/$defs/nonblank"},
+        "repository": {"$ref": "#/$defs/nonblank"},
+        "path": {"$ref": "#/$defs/nonblank"},
+        "classification": {"enum": ["HISTORICAL_RECORD", "CONTROL_RECORD"]},
+        "commit": {"type": "string", "pattern": "^[0-9a-f]{8,64}$"}
+      }
+    },
+    "lineage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["lineage_id", "predecessor", "successor", "current_surface_rule", "provenance"],
+      "properties": {
+        "lineage_id": {"const": "IGNITION-125->IGNITION-127"},
+        "predecessor": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["task_id", "task_file_status", "requirement_lineage_status", "canonical_status", "successor_task_id"],
+          "properties": {
+            "task_id": {"const": "IGNITION-125"},
+            "task_file_status": {"const": "HISTORICAL_UNEXECUTED"},
+            "requirement_lineage_status": {"const": "REBASED_INTO_127"},
+            "canonical_status": {"const": "HISTORICAL_UNEXECUTED_REBASED_INTO_127"},
+            "successor_task_id": {"const": "IGNITION-127"}
+          }
+        },
+        "successor": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["task_id", "execution_status", "new_regressions", "current_obligation"],
+          "properties": {
+            "task_id": {"const": "IGNITION-127"},
+            "execution_status": {"const": "COMPLETED_WITH_CLASSIFIED_RESIDUALS"},
+            "new_regressions": {"const": 0},
+            "current_obligation": {"const": false}
+          }
+        },
+        "current_surface_rule": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["predecessor_rendering", "successor_rendering", "forbidden_status_tokens"],
+          "properties": {
+            "predecessor_rendering": {"const": "HISTORICAL_UNEXECUTED_REBASED_INTO_127"},
+            "successor_rendering": {"const": "COMPLETED_WITH_CLASSIFIED_RESIDUALS"},
+            "forbidden_status_tokens": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/nonblank"}, "uniqueItems": true}
+          }
+        },
+        "provenance": {"type": "array", "minItems": 3, "items": {"$ref": "#/$defs/provenance"}}
+      }
+    }
+  }
+}

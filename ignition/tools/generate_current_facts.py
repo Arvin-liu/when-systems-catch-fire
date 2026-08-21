@@ -55,6 +55,9 @@ def source_paths(contract: dict[str, Any]) -> list[Path]:
         sync.resolve_repo_path("ignition/data/governance/human-surface/materiality-manifest.json"),
         sync.resolve_repo_path("ignition/data/governance/human-results/config.json"),
         sync.resolve_repo_path("ignition/data/operations/synchronization-surfaces.json"),
+        sync.resolve_repo_path(contract["current_task_lineage"]["source_path"]),
+        sync.resolve_repo_path(contract["current_task_lineage"]["schema_path"]),
+        sync.resolve_repo_path(contract["current_task_lineage"]["validator_path"]),
     }
     for metric in contract["derived_metrics"]:
         paths.add(sync.resolve_repo_path(metric["source_path"]))
@@ -80,6 +83,7 @@ def build_projection(contract: dict[str, Any] | None = None) -> dict[str, Any]:
     materiality = load_json(sync.resolve_repo_path("ignition/data/governance/human-surface/materiality-manifest.json"))
     human_config = load_json(sync.resolve_repo_path("ignition/data/governance/human-results/config.json"))
     sync_registry = load_json(sync.resolve_repo_path("ignition/data/operations/synchronization-surfaces.json"))
+    task_lineage = load_json(sync.resolve_repo_path(contract["current_task_lineage"]["source_path"]))
     sync_surfaces = sync_registry.get("surfaces", [])
     role_counts = Counter(role for row in sync_surfaces for role in row.get("roles", []))
     executors = inventory.get("executors", [])
@@ -146,6 +150,14 @@ def build_projection(contract: dict[str, Any] | None = None) -> dict[str, Any]:
             "method_status": contract["current_method"]["status"],
             "current_map_version": map_layout["current_map_version"],
         },
+        "task_lineage": {
+            "current_task_id": task_lineage["current_task"]["task_id"],
+            "current_task_status": task_lineage["current_task"]["execution_status"],
+            "task125_file_status": task_lineage["lineages"][0]["predecessor"]["task_file_status"],
+            "task125_requirement_lineage_status": task_lineage["lineages"][0]["predecessor"]["requirement_lineage_status"],
+            "task125_canonical_status": task_lineage["lineages"][0]["predecessor"]["canonical_status"],
+            "task127_status": task_lineage["lineages"][0]["successor"]["execution_status"],
+        },
         "environmental_residuals": sorted(str(item) for item in residuals),
     }
     projection = {
@@ -188,6 +200,7 @@ def render_markdown(projection: dict[str, Any]) -> bytes:
         f"- Knowledge Experience: cards `{knowledge['cards']}`；changes `{knowledge['changes']}`；layered readings `{knowledge['layered_readings']}`；search records `{knowledge['search_records']}`；aliases `{knowledge['aliases']}`。",
         f"- Fire Seeds: `{fire_seeds['seed_count']}` seeds/clusters；`{fire_seeds['source_census_count']}` source-census records。",
         f"- Human Surface: `{human['materiality_entries']}` materiality entries（function `{human['function_human_entries']}` + non-function `{human['nonfunction_human_entries']}`）；`{human['registered_synchronization_surfaces']}` registered sync surfaces；`{human['machine_human_pairs']}` machine/human pairs。",
+        f"- Task lineage: current `{facts['task_lineage']['current_task_id']}` `{facts['task_lineage']['current_task_status']}`；125 file `{facts['task_lineage']['task125_file_status']}`, requirements `{facts['task_lineage']['task125_requirement_lineage_status']}`, canonical `{facts['task_lineage']['task125_canonical_status']}`；127 `{facts['task_lineage']['task127_status']}`。",
         "- Current environmental residuals: " + ("；".join(residuals) if residuals else "none declared") + "。",
         "",
         "Source authority: the JSON projection records SHA-256 fingerprints for the canonical registries, manifests, topology, pack declarations, federation inventory and generator/schema inputs. Human prose may explain these facts but is not a second numeric authority.",
