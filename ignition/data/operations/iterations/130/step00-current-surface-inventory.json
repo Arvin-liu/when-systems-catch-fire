@@ -1,0 +1,256 @@
+{
+  "schema_version": "current-surface-inventory-r1",
+  "task_id": "IGNITION-20260821-130",
+  "audit_status": "SPLIT_BRAIN_OBSERVED",
+  "baseline_main_sha": "9eb916530bc4f3aad5c7194f389447759164aa41",
+  "audited_before_repair": true,
+  "canonical_facts": [
+    {
+      "fact_id": "current_identity_epoch",
+      "canonical_source": "ignition/data/architecture/current-system-identity.json#/identity_epoch",
+      "canonical_value": "os-control-plane-r4-steering-intent-r1"
+    },
+    {
+      "fact_id": "current_task_id",
+      "canonical_source": "ignition/data/operations/current-task-lineage-status.json#/current_task/task_id",
+      "canonical_value": "IGNITION-20260821-129"
+    },
+    {
+      "fact_id": "current_task_status",
+      "canonical_source": "ignition/data/operations/current-task-lineage-status.json#/current_task/execution_status",
+      "canonical_value": "COMPLETED_WITH_CLASSIFIED_RESIDUALS"
+    },
+    {
+      "fact_id": "current_map_version",
+      "canonical_source": "ignition/data/architecture/interactive-system-map-layout.json#/current_map_version",
+      "canonical_value": "0.12.0"
+    },
+    {
+      "fact_id": "historical_map_version",
+      "canonical_source": "ignition/data/architecture/interactive-system-map-layout.json#/historical_map_version",
+      "canonical_value": "0.11.0"
+    },
+    {
+      "fact_id": "current_state_status",
+      "canonical_source": "ignition/data/operations/current-task-lineage-status.json#/current_state/current_state_status",
+      "canonical_value": "CURRENT_WITH_OPEN_OBLIGATIONS"
+    },
+    {
+      "fact_id": "epistemic_acceptance",
+      "canonical_source": "ignition/data/operations/current-task-lineage-status.json#/current_state/epistemically_accepted",
+      "canonical_value": 0
+    },
+    {
+      "fact_id": "latest_architecture_task",
+      "canonical_source": "ignition/data/operations/current-task-lineage-status.json#/current_task/task_id",
+      "canonical_value": "IGNITION-20260821-129"
+    },
+    {
+      "fact_id": "current_system_role",
+      "canonical_source": "ignition/data/architecture/current-system-identity.json#/current_architecture_identity/system_role",
+      "canonical_value": "Ignition OS / orchestration-governance layer"
+    }
+  ],
+  "surface_inventory": [
+    {
+      "surface_id": "homepage-identity",
+      "path": ".github/README.md",
+      "classification": "CURRENT",
+      "observations": [
+        {
+          "line": 13,
+          "fact_id": "current_map_version",
+          "claimed_value": "0.11.0 Current",
+          "canonical_value": "0.12.0 Current",
+          "classification": "CURRENT_SPLIT_BRAIN"
+        },
+        {
+          "line": 17,
+          "fact_id": "current_task_id",
+          "claimed_value": "Task 129",
+          "canonical_value": "IGNITION-20260821-129",
+          "classification": "CURRENT_CONSISTENT"
+        },
+        {
+          "line": 28,
+          "fact_id": "current_task_id",
+          "claimed_value": "Task 128 closes Current",
+          "canonical_value": "IGNITION-20260821-129",
+          "classification": "CURRENT_SPLIT_BRAIN"
+        }
+      ]
+    },
+    {
+      "surface_id": "project-current-state",
+      "path": "ignition/docs/project-current-state.md",
+      "classification": "CURRENT",
+      "observations": [
+        {
+          "line": 15,
+          "fact_id": "current_map_version",
+          "claimed_value": "0.12.0 Current",
+          "canonical_value": "0.12.0 Current",
+          "classification": "CURRENT_CONSISTENT"
+        },
+        {
+          "line": 73,
+          "fact_id": "current_task_id",
+          "claimed_value": "this round executes Task 128",
+          "canonical_value": "IGNITION-20260821-129",
+          "classification": "CURRENT_SPLIT_BRAIN"
+        }
+      ]
+    },
+    {
+      "surface_id": "ai-cold-start",
+      "path": "ignition/AI-START-HERE.md",
+      "classification": "CURRENT",
+      "observations": [
+        {
+          "line": 18,
+          "fact_id": "current_map_version",
+          "claimed_value": "0.12.0 Current",
+          "canonical_value": "0.12.0 Current",
+          "classification": "CURRENT_CONSISTENT"
+        },
+        {
+          "line": 36,
+          "fact_id": "current_task_id",
+          "claimed_value": "Task 128 is the current semantic entry",
+          "canonical_value": "IGNITION-20260821-129",
+          "classification": "CURRENT_SPLIT_BRAIN"
+        },
+        {
+          "line": 103,
+          "fact_id": "current_map_version",
+          "claimed_value": "0.11.0 Current",
+          "canonical_value": "0.12.0 Current",
+          "classification": "CURRENT_SPLIT_BRAIN"
+        }
+      ]
+    },
+    {
+      "surface_id": "ai-agents-handoff",
+      "path": "ignition/AI-HANDOFF.md",
+      "classification": "CURRENT",
+      "observations": [
+        {
+          "line": 5,
+          "fact_id": "current_task_id",
+          "claimed_value": "Task 129",
+          "canonical_value": "IGNITION-20260821-129",
+          "classification": "CURRENT_CONSISTENT"
+        },
+        {
+          "line": 26,
+          "fact_id": "current_map_version",
+          "claimed_value": "0.11.0 Current",
+          "canonical_value": "0.12.0 Current",
+          "classification": "CURRENT_SPLIT_BRAIN"
+        },
+        {
+          "line": 21,
+          "fact_id": "current_task_id",
+          "claimed_value": "Task 128 is this round",
+          "canonical_value": "IGNITION-20260821-129",
+          "classification": "CURRENT_SPLIT_BRAIN"
+        }
+      ]
+    },
+    {
+      "surface_id": "machine-entry",
+      "path": "ignition/llms.txt",
+      "classification": "CURRENT",
+      "observations": [
+        {
+          "line": 5,
+          "fact_id": "current_task_id",
+          "claimed_value": "Task 129 and Task 128 without historical label",
+          "canonical_value": "IGNITION-20260821-129 is current; Task 128 is historical",
+          "classification": "CURRENT_SPLIT_BRAIN"
+        }
+      ]
+    },
+    {
+      "surface_id": "architecture",
+      "path": "ignition/ARCHITECTURE.md",
+      "classification": "CURRENT_PLUS_HISTORICAL",
+      "observations": [
+        {
+          "line": 10,
+          "fact_id": "current_map_version",
+          "claimed_value": "0.12.0 Current",
+          "canonical_value": "0.12.0 Current",
+          "classification": "CURRENT_CONSISTENT"
+        },
+        {
+          "line": 178,
+          "fact_id": "current_map_version",
+          "claimed_value": "0.11.0 current projection",
+          "canonical_value": "0.12.0 Current; 0.11.0 Historical",
+          "classification": "CURRENT_SPLIT_BRAIN"
+        }
+      ]
+    },
+    {
+      "surface_id": "state-changelog",
+      "path": "ignition/STATE-CHANGELOG.md",
+      "classification": "CURRENT_PLUS_HISTORICAL",
+      "observations": [
+        {
+          "line": 196,
+          "fact_id": "current_task_id",
+          "claimed_value": "Task 129 current projection",
+          "canonical_value": "IGNITION-20260821-129",
+          "classification": "CURRENT_CONSISTENT"
+        },
+        {
+          "line": 173,
+          "fact_id": "current_task_id",
+          "claimed_value": "Task 128",
+          "canonical_value": "historical task 128",
+          "classification": "HISTORICAL_ALLOWED"
+        }
+      ]
+    },
+    {
+      "surface_id": "current-facts-markdown",
+      "path": "ignition/docs/architecture/current-facts.md",
+      "classification": "GENERATED_CURRENT",
+      "observations": [
+        {
+          "line": 6,
+          "fact_id": "current_map_version",
+          "claimed_value": "0.12.0 Current; 0.11.0 historical",
+          "canonical_value": "0.12.0 Current; 0.11.0 historical",
+          "classification": "CURRENT_CONSISTENT"
+        }
+      ]
+    },
+    {
+      "surface_id": "current-system-identity",
+      "path": "ignition/data/architecture/current-system-identity.json",
+      "classification": "CANONICAL_MACHINE_SOURCE",
+      "observations": []
+    },
+    {
+      "surface_id": "current-task-lineage",
+      "path": "ignition/data/operations/current-task-lineage-status.json",
+      "classification": "CANONICAL_MACHINE_SOURCE",
+      "observations": []
+    },
+    {
+      "surface_id": "interactive-system-map",
+      "path": "ignition/data/architecture/interactive-system-map-layout.json",
+      "classification": "CANONICAL_MACHINE_SOURCE",
+      "observations": []
+    }
+  ],
+  "baseline_gates": {
+    "validate_current_task_lineage": "PASS",
+    "generate_current_facts_check": "PASS",
+    "validate_current_state_sync": "PASS",
+    "front_door_tests": "1 pre-existing Human Surface source-hash drift failure; 24 tests passed"
+  },
+  "claim_ceiling": "This audit records repository-local text/source divergence only; it does not establish external truth, production readiness, Owner acceptance or epistemic acceptance."
+}
