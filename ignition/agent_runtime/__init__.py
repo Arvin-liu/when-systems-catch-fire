@@ -56,7 +56,7 @@ from .executor_health import ExecutorCapabilityLease, ExecutorHealthError, Execu
 from .queue_control import QueueAdmissionError, QueueControlError, QueueItem, QueueNotDispatchable, WorkQueue
 from .dispatch_reconciliation import DispatchConflict, DispatchEnvelope, DispatchError, DispatchProgress, DispatchReceipt, DispatchRecord, DurableDispatchStore
 from .concurrent_memory import ConcurrentOperationalMemoryStore, MemoryCASConflict, MemoryDuplicateConflict, MemoryR2Error, MemoryRecord
-from .driver_console import DRIVER_CONSOLE_SCHEMA, DRIVER_RECOVERY_SURFACE_SCHEMA, DriverConsoleError, build_driver_snapshot, build_driver_recovery_surface, render_driver_console, render_driver_recovery_surface
+from .driver_console import DRIVER_CONSOLE_SCHEMA, DRIVER_RECOVERY_SURFACE_SCHEMA, STEERING_DRIVER_CONSOLE_SCHEMA, DriverConsoleError, build_driver_snapshot, build_driver_recovery_surface, build_steering_console_snapshot, render_driver_console, render_driver_recovery_surface, render_steering_console
 from .durability import CanonicalSnapshot, CanonicalSnapshotStore, CompactionPolicy, CompactionReceipt, COMPACTION_SCHEMA, DurabilityCompactor, DurabilityError, SNAPSHOT_SCHEMA, SNAPSHOT_SCHEMA_EPOCH, SnapshotChainStore, SnapshotIntegrityError, SnapshotNamespaceError
 from .migration import APPLIED, DRY_RUN, FORBIDDEN, LOSSY_REQUIRES_APPROVAL, MIGRATION_RECEIPT_SCHEMA, MIGRATION_SCHEMA, MigrationError, MigrationExecutionError, MigrationPathError, MigrationReceipt, MigrationRegistry, MigrationResult, MigrationRule, ForbiddenMigrationError, LossyDowngradeRequiresApproval, ROLLED_BACK, StateMigrator, UnknownEpochError
 from .soft_governance_durability import ADVISORY_STATUSES, SOFT_SCHEMA, SoftGovernanceDurabilityError, migrate_soft_state, soft_state_digest, validate_soft_state
@@ -233,11 +233,14 @@ __all__ = [
     "MemoryRecord",
     "DRIVER_CONSOLE_SCHEMA",
     "DRIVER_RECOVERY_SURFACE_SCHEMA",
+    "STEERING_DRIVER_CONSOLE_SCHEMA",
     "DriverConsoleError",
     "build_driver_snapshot",
     "render_driver_console",
     "build_driver_recovery_surface",
     "render_driver_recovery_surface",
+    "build_steering_console_snapshot",
+    "render_steering_console",
     "CanonicalSnapshot",
     "CanonicalSnapshotStore",
     "DurabilityError",

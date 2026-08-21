@@ -1,0 +1,30 @@
+{
+  "schema": "os-steering-intent-obligation-r1.driver-console-fixture",
+  "fixture": {
+    "current_state": "CURRENT_WITH_OPEN_OBLIGATIONS",
+    "goals": [
+      {"goal_id": "goal-console-important", "status": "ACTIVE", "statement": "Review the synthetic steering portfolio", "deadline_state": "DUE", "blockers": ["owner_decision_pending"]},
+      {"goal_id": "goal-console-background", "status": "ACTIVE", "statement": "Maintain background synthetic notes", "deadline_state": "ACTIVE_WINDOW", "blockers": []}
+    ],
+    "intents": [
+      {"intent_id": "intent-console-paused", "status": "PAUSED", "statement": "Paused synthetic direction"},
+      {"intent_id": "intent-console-superseded", "status": "SUPERSEDED", "statement": "Superseded synthetic direction"}
+    ],
+    "why_next": {
+      "goal_id": "goal-console-important",
+      "why_now": "The Goal is due and an explicit owner decision is pending.",
+      "suggestion": "Review the recorded Owner decision and unblock only with explicit authority.",
+      "blockers": ["owner_decision_pending"],
+      "permission_budget_resource": ["goal-console-important:permission=eligible", "goal-console-important:budget=available", "goal-console-important:resource=available"],
+      "owner_override_ref": "override-console-1",
+      "pack_ref": "pack-console",
+      "executor_ref": "executor-console",
+      "unknowns": ["decision_window"]
+    },
+    "owner_decisions": [{"decision_id": "decision-console-1", "status": "PENDING", "summary": "Owner decision is not recorded as accepted yet"}],
+    "completed_runs": [
+      {"run_id": "run-console-pass", "run_status": "PASS", "goal_id": "goal-console-important", "goal_status": "ACTIVE"},
+      {"run_id": "run-console-satisfied", "run_status": "PASS", "goal_id": "goal-console-other", "goal_status": "SATISFIED"}
+    ]
+  }
+}

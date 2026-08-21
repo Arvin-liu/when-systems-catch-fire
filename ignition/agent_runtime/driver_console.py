@@ -8,6 +8,7 @@ from typing import Any, Mapping, Sequence
 
 DRIVER_CONSOLE_SCHEMA = "os-control-plane-driver-console-r1"
 DRIVER_RECOVERY_SURFACE_SCHEMA = "ignition-driver-recovery-surface-r2"
+STEERING_DRIVER_CONSOLE_SCHEMA = "os-steering-driver-console-r3"
 _FORBIDDEN = ("prompt", "chain-of-thought", "hidden reasoning", "api_key", "access_token", "authorization")
 
 
@@ -265,4 +266,131 @@ def render_driver_recovery_surface(surface: Mapping[str, Any]) -> str:
     return "\n".join(lines)
 
 
-__all__ = ["DRIVER_CONSOLE_SCHEMA", "DRIVER_RECOVERY_SURFACE_SCHEMA", "DriverConsoleError", "build_driver_snapshot", "render_driver_console", "build_driver_recovery_surface", "render_driver_recovery_surface"]
+def _steering_record_list(value: Any, field: str) -> list[Mapping[str, Any]]:
+    if value is None:
+        return []
+    if not isinstance(value, (list, tuple)) or any(not isinstance(item, Mapping) for item in value):
+        raise DriverConsoleError(f"{field} must be an object list")
+    return list(value)
+
+
+def _steering_refs(value: Any, field: str) -> list[str]:
+    return _public_list(value, field)
+
+
+def build_steering_console_snapshot(sources: Mapping[str, Any]) -> dict[str, Any]:
+    """Build the R3 human steering surface from explicit public records."""
+
+    if not isinstance(sources, Mapping):
+        raise DriverConsoleError("steering console sources must be an object")
+    goals = _steering_record_list(sources.get("goals"), "goals")
+    intents = _steering_record_list(sources.get("intents"), "intents")
+    owner_decisions = _steering_record_list(sources.get("owner_decisions"), "owner_decisions")
+    completed_runs = _steering_record_list(sources.get("completed_runs"), "completed_runs")
+    why_next = _mapping(sources.get("why_next"), "why_next")
+    goal_by_id: dict[str, Mapping[str, Any]] = {}
+    for item in goals:
+        goal_id = _public(item.get("goal_id"), "goals.goal_id")
+        if goal_id in goal_by_id:
+            raise DriverConsoleError("goals must have unique goal_id values")
+        goal_by_id[goal_id] = item
+    selected_id = _public(why_next.get("goal_id"), "why_next.goal_id", default="not selected")
+    important = goal_by_id.get(selected_id)
+    if important is None:
+        active = [item for item in goals if _public(item.get("status"), "goals.status", default="UNKNOWN") == "ACTIVE"]
+        important = sorted(active, key=lambda item: _public(item.get("goal_id"), "goals.goal_id"))[0] if active else None
+    important_goal = {
+        "goal_id": _public(important.get("goal_id"), "important_goal.goal_id") if important else "not recorded",
+        "status": _public(important.get("status"), "important_goal.status", default="not recorded") if important else "not recorded",
+        "statement": _public(important.get("statement"), "important_goal.statement") if important else "not recorded",
+        "deadline_state": _public(important.get("deadline_state"), "important_goal.deadline_state", default="unknown") if important else "unknown",
+    }
+    blockers = _steering_refs(why_next.get("blockers"), "why_next.blockers")
+    if important:
+        blockers = sorted(set(blockers + _steering_refs(important.get("blockers"), "important_goal.blockers")))
+    completed_not_satisfied: list[dict[str, str]] = []
+    for run in completed_runs:
+        run_id = _public(run.get("run_id"), "completed_runs.run_id")
+        run_status = _public(run.get("run_status"), "completed_runs.run_status")
+        goal_id = _public(run.get("goal_id"), "completed_runs.goal_id")
+        goal_status = _public(run.get("goal_status"), "completed_runs.goal_status", default="not recorded")
+        if goal_status != "SATISFIED":
+            completed_not_satisfied.append({"run_id": run_id, "run_status": run_status, "goal_id": goal_id, "goal_status": goal_status})
+    paused_intents: list[dict[str, str]] = []
+    superseded_intents: list[dict[str, str]] = []
+    for intent in intents:
+        intent_id = _public(intent.get("intent_id"), "intents.intent_id")
+        statement = _public(intent.get("statement"), "intents.statement")
+        status = _public(intent.get("status"), "intents.status")
+        item = {"intent_id": intent_id, "status": status, "statement": statement}
+        if status == "PAUSED":
+            paused_intents.append(item)
+        if status == "SUPERSEDED":
+            superseded_intents.append(item)
+    decisions = []
+    for decision in owner_decisions:
+        decisions.append({"decision_id": _public(decision.get("decision_id"), "owner_decisions.decision_id"), "status": _public(decision.get("status"), "owner_decisions.status"), "summary": _public(decision.get("summary"), "owner_decisions.summary")})
+    unknowns = _steering_refs(why_next.get("unknowns"), "why_next.unknowns")
+    suggested = _public(why_next.get("suggestion"), "why_next.suggestion", default="No next suggestion recorded; review the explicit steering trace.")
+    why_now = _public(why_next.get("why_now"), "why_next.why_now", default="No why-now trace recorded.")
+    return {
+        "schema": STEERING_DRIVER_CONSOLE_SCHEMA,
+        "current_state": _public(sources.get("current_state"), "current_state", default="CURRENT_WITH_OPEN_OBLIGATIONS"),
+        "important_goal": important_goal,
+        "why_now": why_now,
+        "next_suggestion": suggested,
+        "blockers": blockers,
+        "permission_budget_resource": _steering_refs(why_next.get("permission_budget_resource"), "why_next.permission_budget_resource"),
+        "owner_override_ref": _public(why_next.get("owner_override_ref"), "why_next.owner_override_ref", default="none recorded"),
+        "pack_ref": _public(why_next.get("pack_ref"), "why_next.pack_ref", default="none recorded"),
+        "executor_ref": _public(why_next.get("executor_ref"), "why_next.executor_ref", default="none recorded"),
+        "owner_decisions": decisions,
+        "completed_runs_goal_unsatisfied": sorted(completed_not_satisfied, key=lambda item: item["run_id"]),
+        "paused_intents": sorted(paused_intents, key=lambda item: item["intent_id"]),
+        "superseded_intents": sorted(superseded_intents, key=lambda item: item["intent_id"]),
+        "unknowns": unknowns,
+        "claim_ceiling": "Human-readable steering projection only; no Owner acceptance, external truth, production readiness, or epistemic acceptance is inferred.",
+        "boundaries": [
+            "Important Goal and why-next are projections of explicit steering records.",
+            "A completed Run does not imply its Goal is SATISFIED.",
+            "Owner decisions are shown as recorded or not recorded; this surface never invents them.",
+        ],
+    }
+
+
+def render_steering_console(snapshot: Mapping[str, Any]) -> str:
+    if not isinstance(snapshot, Mapping) or snapshot.get("schema") != STEERING_DRIVER_CONSOLE_SCHEMA:
+        raise DriverConsoleError("invalid Steering Driver Console snapshot")
+    important = _mapping(snapshot.get("important_goal"), "steering.important_goal")
+    owner_decisions = _steering_record_list(snapshot.get("owner_decisions"), "steering.owner_decisions")
+    completed = _steering_record_list(snapshot.get("completed_runs_goal_unsatisfied"), "steering.completed_runs_goal_unsatisfied")
+    paused = _steering_record_list(snapshot.get("paused_intents"), "steering.paused_intents")
+    superseded = _steering_record_list(snapshot.get("superseded_intents"), "steering.superseded_intents")
+    owner_lines = [f"- {item.get('decision_id')}: {item.get('status')} — {item.get('summary')}" for item in owner_decisions] or ["- none recorded"]
+    completed_lines = [f"- {item.get('run_id')}: Run={item.get('run_status')} Goal={item.get('goal_id')} [{item.get('goal_status')}]" for item in completed] or ["- none recorded"]
+    paused_lines = [f"- {item.get('intent_id')}: {item.get('statement')}" for item in paused] or ["- none recorded"]
+    superseded_lines = [f"- {item.get('intent_id')}: {item.get('statement')}" for item in superseded] or ["- none recorded"]
+    lines = [
+        "Driver Console — OS Steering R3",
+        f"Current state: {snapshot.get('current_state')}",
+        f"Important Goal: {important.get('goal_id')} [{important.get('status')}] — {important.get('statement')}",
+        f"Why now: {snapshot.get('why_now')}",
+        f"Next suggested action: {snapshot.get('next_suggestion')}",
+        f"Blockers: {', '.join(snapshot.get('blockers') or ['none recorded'])}",
+        f"Permission/budget/resource: {', '.join(snapshot.get('permission_budget_resource') or ['not recorded'])}",
+        f"Owner override: {snapshot.get('owner_override_ref')}; Pack: {snapshot.get('pack_ref')}; Executor: {snapshot.get('executor_ref')}",
+        "Owner decisions:",
+        *owner_lines,
+        "Completed Runs with Goal still unsatisfied:",
+        *completed_lines,
+        "Paused Intents:",
+        *paused_lines,
+        "Superseded Intents:",
+        *superseded_lines,
+        f"Unknowns: {', '.join(snapshot.get('unknowns') or ['none recorded'])}",
+        "Boundary: projection only; it cannot establish Owner acceptance, external success/truth, production readiness or epistemic acceptance.",
+    ]
+    return "\n".join(lines)
+
+
+__all__ = ["DRIVER_CONSOLE_SCHEMA", "DRIVER_RECOVERY_SURFACE_SCHEMA", "STEERING_DRIVER_CONSOLE_SCHEMA", "DriverConsoleError", "build_driver_snapshot", "render_driver_console", "build_driver_recovery_surface", "render_driver_recovery_surface", "build_steering_console_snapshot", "render_steering_console"]
