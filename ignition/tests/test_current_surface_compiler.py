@@ -18,7 +18,18 @@ class CurrentSurfaceCompilerTests(unittest.TestCase):
                 self.assertIn(self.snapshot["identity"]["epoch"], block)
                 self.assertIn(self.snapshot["current_task"]["task_id"], block)
                 self.assertIn(self.snapshot["map"]["current_version"], block)
+                self.assertIn("REMOTE_REF_OBSERVATION", block)
                 self.assertIn(compiler.BLOCK_END, block)
+
+    def test_publication_is_projected_as_authority_not_static_state(self) -> None:
+        for profile in ("human", "ai", "machine"):
+            with self.subTest(profile=profile):
+                block = compiler.render_block(self.snapshot, profile)
+                self.assertNotIn("NOT_PUBLISHED", block)
+                self.assertNotIn("release_publication_state", block)
+                self.assertNotIn("release_task_branch_projection", block)
+                self.assertIn("REMOTE_REF_OBSERVATION", block)
+                self.assertIn("NONE", block)
 
     def test_render_is_byte_deterministic(self) -> None:
         self.assertEqual(compiler.render_block(self.snapshot, "human"), compiler.render_block(self.snapshot, "human"))

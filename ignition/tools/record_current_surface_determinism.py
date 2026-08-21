@@ -15,7 +15,9 @@ from typing import Any
 HERE = Path(__file__).resolve()
 ROOT = HERE.parents[1]
 REPO_ROOT = ROOT.parent
-REPORT_PATH = ROOT / "data/operations/iterations/130/step12-deterministic-closure-r1.json"
+REPORT_PATH = ROOT / "data/operations/iterations/131/step03-deterministic-current-surface-r1.json"
+TASK_ID = "IGNITION-20260821-131"
+REPORT_SCHEMA = "ignition-131-step03-deterministic-current-surface-r1"
 OUTPUTS = [
     "ignition/data/architecture/current-facts.json",
     "ignition/docs/architecture/current-facts.md",
@@ -57,8 +59,8 @@ def write_report() -> dict[str, Any]:
     rebuild()
     pass_two = hashes()
     result = {
-        "schema_version": "step12-deterministic-closure-r1",
-        "task_id": "IGNITION-20260821-130",
+        "schema_version": REPORT_SCHEMA,
+        "task_id": TASK_ID,
         "result": "PASS" if pass_one == pass_two else "FAIL",
         "pass_1_sha256": pass_one,
         "pass_2_sha256": pass_two,
@@ -73,9 +75,9 @@ def write_report() -> dict[str, Any]:
 def check_report() -> list[str]:
     report = json.loads(REPORT_PATH.read_text(encoding="utf-8"))
     errors: list[str] = []
-    if report.get("schema_version") != "step12-deterministic-closure-r1":
+    if report.get("schema_version") != REPORT_SCHEMA:
         errors.append("determinism report schema is invalid")
-    if report.get("task_id") != "IGNITION-20260821-130":
+    if report.get("task_id") != TASK_ID:
         errors.append("determinism report task id is invalid")
     if report.get("result") != "PASS" or report.get("passes_equal") is not True:
         errors.append("determinism report does not record two equal PASS hashes")

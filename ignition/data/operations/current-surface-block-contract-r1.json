@@ -27,6 +27,11 @@
     "active_architecture_overlays",
     "current_lineage_summary",
     "release_lifecycle",
+    "release_content_phase",
+    "release_required_publication_ref",
+    "release_publication_authority",
+    "release_embedded_publication_assertion",
+    "release_post_publication_check_required",
     "claim_ceiling",
     "generated_from_source_digest"
   ],
