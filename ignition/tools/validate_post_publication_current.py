@@ -25,6 +25,7 @@ try:
     from tools import validate_current_surface_semantics as semantics
     from tools import validate_current_task_lineage as task_lineage
     from tools import validate_release_state_model as state_model
+    from tools import validate_iteration_ordinal_binding as ordinal_binding
 except ImportError:  # direct script / tools-on-PYTHONPATH execution
     import build_current_snapshot
     import current_surface_compiler
@@ -34,14 +35,15 @@ except ImportError:  # direct script / tools-on-PYTHONPATH execution
     import validate_current_surface_semantics as semantics
     import validate_current_task_lineage as task_lineage
     import validate_release_state_model as state_model
+    import validate_iteration_ordinal_binding as ordinal_binding
 
 
 CONTRACT_PATH = ROOT / "data/operations/current-surface-block-contract-r1.json"
-EXECUTION_CONTRACT_PATH = ROOT / "data/operations/iterations/132/execution-contract-r1.json"
+EXECUTION_CONTRACT_PATH = ROOT / "data/operations/iterations/133/execution-contract-r1.json"
 LINEAGE_PATH = ROOT / "data/operations/current-task-lineage-status.json"
 LIFECYCLE_PATH = ROOT / "data/operations/current-release-lifecycle-r1.json"
-FORMAL_RESULT_PATH = ROOT / "agent-results/IGNITION-20260822-132-result.md"
-REPORT_PATH = ROOT / "data/operations/iterations/132/step07-post-publication-task-binding-report.json"
+FORMAL_RESULT_PATH = ROOT / "agent-results/IGNITION-20260822-133-result.md"
+REPORT_PATH = ROOT / "data/operations/iterations/133/step11-post-publication-task-binding-report.json"
 REMOTE_REF = "refs/heads/main"
 REMOTE_TRACKING_REF = "refs/remotes/origin/main"
 HEX_SHA_RE = re.compile(r"^[0-9a-f]{40}$")
@@ -183,6 +185,25 @@ def _validate_task_id_binding(
         errors.append(
             f"TASK_ID_BINDING_MISMATCH:formal_result.task_id:expected={expected_task_id}:observed={formal_result_task_id}"
         )
+    formal_result = None
+    if formal_result_task_id is not None:
+        try:
+            from tools import task_identity
+        except ImportError:
+            import task_identity
+        try:
+            formal_result = {"task_id": formal_result_task_id, "current_formal_task_ordinal": task_identity.parse_task_id(formal_result_task_id)["ordinal"]}
+        except task_identity.TaskIdentityError:
+            formal_result = {"task_id": formal_result_task_id}
+    ordinal_errors, _records = ordinal_binding.validate_documents(
+        contract=contract,
+        lineage=lineage_record,
+        lifecycle=lifecycle_record,
+        snapshot=snapshot,
+        facts=load_json(ROOT / "data/architecture/current-facts.json"),
+        formal_result=formal_result,
+    )
+    errors.extend(f"ORDINAL_BINDING:{error}" for error in ordinal_errors)
     return errors
 
 

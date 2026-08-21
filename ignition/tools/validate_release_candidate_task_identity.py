@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Fail-closed release-candidate task identity gate for IGNITION-132."""
+"""Fail-closed release-candidate task identity and ordinal gate for IGNITION-133."""
 
 from __future__ import annotations
 
@@ -13,24 +13,28 @@ from typing import Any
 try:
     from tools import build_current_snapshot
     from tools import current_surface_compiler
-    from tools import validate_execution_contract
+    from tools import validate_execution_contract_133 as validate_execution_contract
+    from tools import validate_iteration_ordinal_binding as ordinal_binding
+    from tools import task_identity
 except ImportError:  # direct script / tools-on-PYTHONPATH execution
     import build_current_snapshot
     import current_surface_compiler
-    import validate_execution_contract
+    import validate_execution_contract_133 as validate_execution_contract
+    import validate_iteration_ordinal_binding as ordinal_binding
+    import task_identity
 
 
 HERE = Path(__file__).resolve()
 ROOT = HERE.parents[1]
 REPO_ROOT = ROOT.parent
-CONTRACT_PATH = ROOT / "data/operations/iterations/132/execution-contract-r1.json"
+CONTRACT_PATH = ROOT / "data/operations/iterations/133/execution-contract-r1.json"
 LINEAGE_PATH = ROOT / "data/operations/current-task-lineage-status.json"
 LIFECYCLE_PATH = ROOT / "data/operations/current-release-lifecycle-r1.json"
 SNAPSHOT_PATH = ROOT / "data/operations/current-snapshot-r1.json"
-PROGRESS_PATH = ROOT / "data/operations/iterations/132/progress.jsonl"
-RESULT_PATH = ROOT / "agent-results/IGNITION-20260822-132-result.md"
-MACHINE_RECEIPT_PATH = ROOT / "agent-results/IGNITION-20260822-132-machine-receipt.json"
-EXPECTED_TASK_ID = "IGNITION-20260822-132"
+PROGRESS_PATH = ROOT / "data/operations/iterations/133/progress.jsonl"
+RESULT_PATH = ROOT / "agent-results/IGNITION-20260822-133-result.md"
+MACHINE_RECEIPT_PATH = ROOT / "agent-results/IGNITION-20260822-133-machine-receipt.json"
+EXPECTED_TASK_ID = "IGNITION-20260822-133"
 EXPECTED_ARCHITECTURE_TASK = "IGNITION-20260821-129"
 
 
@@ -52,7 +56,7 @@ def load_result_task(path: Path) -> str | None:
     for line in path.read_text(encoding="utf-8").splitlines():
         if line.startswith("Task ID:"):
             return line.split(":", 1)[1].strip().strip("`")
-        if "IGNITION-20260822-132" in line and "#" not in line:
+        if "IGNITION-20260822-133" in line and "#" not in line:
             return EXPECTED_TASK_ID
     return None
 
@@ -96,7 +100,7 @@ def validate_documents(
     equal("lifecycle.task_id", lifecycle.get("task_id"))
     if lifecycle.get("latest_architecture_changing_task") != EXPECTED_ARCHITECTURE_TASK:
         errors.append("TASK_IDENTITY_MISMATCH:lifecycle.latest_architecture_changing_task")
-    if lifecycle.get("task_identity_source", {}).get("binding") != "MUST_MATCH_CURRENT_FORMAL_AND_EXECUTION_CONTRACT":
+    if lifecycle.get("task_identity_source", {}).get("binding") != "MUST_MATCH_CURRENT_FORMAL_EXECUTION_CONTRACT_AND_ORDINAL_DERIVATION":
         errors.append("TASK_IDENTITY_BINDING_MISSING:lifecycle")
 
     equal("snapshot.current_task.task_id", snapshot.get("current_task", {}).get("task_id"))
@@ -117,7 +121,7 @@ def validate_documents(
         last = progress[-1]
         if last.get("task_id") != EXPECTED_TASK_ID:
             errors.append("PROGRESS_TASK_ID_MISMATCH")
-        if last.get("current_iteration_id") != 132:
+        if last.get("current_iteration_id") != 133:
             errors.append("PROGRESS_CURRENT_ITERATION_ID_MISMATCH")
 
     if require_result:
@@ -159,6 +163,29 @@ def validate_documents(
             errors.append(f"COMPILER_TASK_ID_MISSING:{surface['surface_id']}")
         if EXPECTED_ARCHITECTURE_TASK not in text:
             errors.append(f"COMPILER_ARCHITECTURE_TASK_MISSING:{surface['surface_id']}")
+    formal_result = None
+    if result_task_id is not None:
+        try:
+            formal_result = {"task_id": result_task_id, "current_formal_task_ordinal": task_identity.parse_task_id(result_task_id)["ordinal"]}
+        except task_identity.TaskIdentityError:
+            formal_result = {"task_id": result_task_id}
+    publication_witness = None
+    if machine_receipt_task_id is not None:
+        try:
+            publication_witness = {"task_id": machine_receipt_task_id, "task_binding": {"current_formal_task_ordinal": task_identity.parse_task_id(machine_receipt_task_id)["ordinal"]}}
+        except task_identity.TaskIdentityError:
+            publication_witness = {"task_id": machine_receipt_task_id}
+    ordinal_errors, _records = ordinal_binding.validate_documents(
+        contract=contract,
+        lineage=lineage,
+        lifecycle=lifecycle,
+        snapshot=snapshot,
+        facts=load_json(ROOT / "data/architecture/current-facts.json"),
+        formal_result=formal_result,
+        publication_witness=publication_witness,
+        require_terminal_evidence=require_result,
+    )
+    errors.extend(f"ORDINAL_BINDING:{error}" for error in ordinal_errors)
     return errors
 
 

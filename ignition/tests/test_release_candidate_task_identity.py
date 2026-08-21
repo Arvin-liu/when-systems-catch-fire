@@ -61,7 +61,7 @@ class ReleaseCandidateTaskIdentityTests(unittest.TestCase):
     def test_stale_compiler_output_is_rejected(self) -> None:
         docs = dict(self.surface_documents)
         path = next(iter(docs))
-        docs[path] = docs[path].replace("IGNITION-20260822-132", "IGNITION-20260821-131", 1)
+        docs[path] = docs[path].replace("IGNITION-20260822-133", "IGNITION-20260821-131", 1)
         errors = self.check(surface_documents=docs)
         self.assertTrue(any("COMPILER_SURFACE_STALE" in error for error in errors))
 

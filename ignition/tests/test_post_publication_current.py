@@ -118,7 +118,7 @@ class PostPublicationCurrentTests(unittest.TestCase):
                     self.assertEqual(case["expected_status"], "OBSERVATION_TIME_ONLY")
 
     def test_step07_task_binding_negative_fixture_remains_fail_closed(self) -> None:
-        fixture_path = checker.ROOT / "data/operations/iterations/132/fixtures/post-publication-task-binding-negative-fixtures-r1.json"
+        fixture_path = checker.ROOT / "data/operations/iterations/133/fixtures/post-publication-task-binding-negative-fixtures-r1.json"
         cases = checker.load_json(fixture_path)["cases"]
         contract = checker.load_json(checker.EXECUTION_CONTRACT_PATH)
         lineage = checker.load_json(checker.LINEAGE_PATH)
@@ -143,7 +143,7 @@ class PostPublicationCurrentTests(unittest.TestCase):
                 mutated_lineage = copy.deepcopy(lineage)
                 mutated_lifecycle = copy.deepcopy(lifecycle_record)
                 mutated_snapshot = copy.deepcopy(snapshot)
-                expected_task_id = "IGNITION-20260822-132"
+                expected_task_id = "IGNITION-20260822-133"
                 formal_result_task_id = expected_task_id
                 field = case["field"]
                 value = case["value"]
