@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Arvin-liu/when-systems-catch-fire/schemas/operations/steering-temporal-semantics-r1.schema.json",
+  "title": "OS Steering Temporal Semantics R1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "windows", "cases"],
+  "properties": {
+    "schema": {"const": "os-steering-intent-obligation-r1.temporal-fixtures"},
+    "windows": {"type": "array", "items": {"type": "object", "required": ["window_id", "timezone", "source_type", "source_ref", "unknown_time"], "properties": {"window_id": {"type": "string"}, "timezone": {"type": "string"}, "source_type": {"type": "string"}, "source_ref": {"type": "string"}, "not_before": {"type": ["string", "null"]}, "deadline": {"type": ["string", "null"]}, "review_after": {"type": ["string", "null"]}, "grace_seconds": {"type": "integer", "minimum": 0}, "recurrence": {"type": ["object", "null"]}, "unknown_time": {"type": "boolean"}}}},
+    "cases": {"type": "array", "minItems": 5, "items": {"type": "object", "required": ["window_id", "now", "expected_state"], "properties": {"window_id": {"type": "string"}, "now": {"type": "string"}, "expected_state": {"enum": ["UNKNOWN", "NOT_YET", "ACTIVE_WINDOW", "DUE", "REVIEW_DUE", "GRACE", "OVERDUE", "STALE"]}}}}
+  }
+}

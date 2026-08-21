@@ -81,6 +81,9 @@ from .steering import (
     CommitmentLedger,
     CommitmentLedgerError,
     CommitmentRecord,
+    TEMPORAL_STATES,
+    TemporalEvaluation,
+    TemporalWindow,
     GoalRecord,
     GoalRegistry,
     GoalRegistryError,
@@ -90,6 +93,7 @@ from .steering import (
     SteeringValidationError,
     authority_digest,
     evaluate_completion,
+    evaluate_temporal,
     ontology_contract,
 )
 
@@ -326,6 +330,9 @@ __all__ = [
     "CommitmentLedger",
     "CommitmentLedgerError",
     "CommitmentRecord",
+    "TEMPORAL_STATES",
+    "TemporalEvaluation",
+    "TemporalWindow",
     "GoalRecord",
     "GoalRegistry",
     "GoalRegistryError",
@@ -335,5 +342,6 @@ __all__ = [
     "SteeringValidationError",
     "authority_digest",
     "evaluate_completion",
+    "evaluate_temporal",
     "ontology_contract",
 ]

@@ -580,6 +580,128 @@ class CommitmentLedger:
         return ledger
 
 
+TEMPORAL_STATES = frozenset({"UNKNOWN", "NOT_YET", "ACTIVE_WINDOW", "DUE", "REVIEW_DUE", "GRACE", "OVERDUE", "STALE"})
+
+
+def _parse_dt(value: str, field: str) -> datetime:
+    parsed = datetime.fromisoformat(value.replace("Z", "+00:00"))
+    if parsed.tzinfo is None:
+        raise SteeringValidationError(f"{field} must include a timezone")
+    return parsed
+
+
+@dataclass(frozen=True)
+class TemporalWindow:
+    """Explicit time semantics; it describes state but never runs a daemon."""
+
+    window_id: str
+    timezone: str
+    source_type: str
+    source_ref: str
+    not_before: str | None = None
+    deadline: str | None = None
+    review_after: str | None = None
+    grace_seconds: int = 0
+    recurrence: Mapping[str, Any] | None = None
+    unknown_time: bool = False
+
+    def __post_init__(self) -> None:
+        _safe_id(self.window_id, "temporal.window_id")
+        _bounded_text(self.timezone, "temporal.timezone")
+        if self.source_type not in INTENT_SOURCE_TYPES:
+            raise SteeringValidationError("temporal source_type is not recognized")
+        _safe_id(self.source_ref, "temporal.source_ref")
+        for field in ("not_before", "deadline", "review_after"):
+            object.__setattr__(self, field, _optional_timestamp(getattr(self, field), f"temporal.{field}"))
+        if not isinstance(self.grace_seconds, int) or isinstance(self.grace_seconds, bool) or self.grace_seconds < 0:
+            raise SteeringValidationError("temporal.grace_seconds must be a non-negative integer")
+        object.__setattr__(self, "recurrence", _public_value(self.recurrence, "temporal.recurrence") if self.recurrence is not None else None)
+        if not isinstance(self.unknown_time, bool):
+            raise SteeringValidationError("temporal.unknown_time must be boolean")
+        if self.unknown_time and any(value is not None for value in (self.not_before, self.deadline, self.review_after)):
+            raise SteeringValidationError("unknown temporal window cannot also claim explicit timestamps")
+        if not self.unknown_time and all(value is None for value in (self.not_before, self.deadline, self.review_after)):
+            raise SteeringValidationError("missing time must be explicitly marked unknown_time")
+        if self.not_before and self.deadline and _parse_dt(self.deadline, "temporal.deadline") < _parse_dt(self.not_before, "temporal.not_before"):
+            raise SteeringValidationError("deadline cannot precede not_before")
+        if self.review_after and self.deadline and _parse_dt(self.review_after, "temporal.review_after") < _parse_dt(self.deadline, "temporal.deadline"):
+            raise SteeringValidationError("review_after cannot precede deadline")
+
+    def to_dict(self) -> dict[str, Any]:
+        return {
+            "schema": f"{STEERING_SCHEMA}.temporal-window",
+            "window_id": self.window_id,
+            "timezone": self.timezone,
+            "source_type": self.source_type,
+            "source_ref": self.source_ref,
+            "not_before": self.not_before,
+            "deadline": self.deadline,
+            "review_after": self.review_after,
+            "grace_seconds": self.grace_seconds,
+            "recurrence": self.recurrence,
+            "unknown_time": self.unknown_time,
+        }
+
+    @classmethod
+    def from_dict(cls, data: Mapping[str, Any]) -> "TemporalWindow":
+        if data.get("schema") not in {None, f"{STEERING_SCHEMA}.temporal-window"}:
+            raise SteeringValidationError("temporal window schema mismatch")
+        return cls(
+            window_id=data["window_id"], timezone=data["timezone"], source_type=data["source_type"], source_ref=data["source_ref"],
+            not_before=data.get("not_before"), deadline=data.get("deadline"), review_after=data.get("review_after"),
+            grace_seconds=data.get("grace_seconds", 0), recurrence=data.get("recurrence"), unknown_time=data.get("unknown_time", False),
+        )
+
+
+@dataclass(frozen=True)
+class TemporalEvaluation:
+    window_id: str
+    evaluated_at: str
+    state: str
+    reason: str
+    source_type: str
+    deadline: str | None
+    grace_until: str | None
+
+    def __post_init__(self) -> None:
+        _safe_id(self.window_id, "temporal.evaluation.window_id")
+        _timestamp(self.evaluated_at, "temporal.evaluation.evaluated_at")
+        if self.state not in TEMPORAL_STATES:
+            raise SteeringValidationError("unknown temporal evaluation state")
+        _bounded_text(self.reason, "temporal.evaluation.reason")
+        if self.source_type not in INTENT_SOURCE_TYPES:
+            raise SteeringValidationError("temporal evaluation source_type is not recognized")
+        _optional_timestamp(self.deadline, "temporal.evaluation.deadline")
+        _optional_timestamp(self.grace_until, "temporal.evaluation.grace_until")
+
+    def to_dict(self) -> dict[str, Any]:
+        return {"schema": f"{STEERING_SCHEMA}.temporal-evaluation", "window_id": self.window_id, "evaluated_at": self.evaluated_at, "state": self.state, "reason": self.reason, "source_type": self.source_type, "deadline": self.deadline, "grace_until": self.grace_until}
+
+
+def evaluate_temporal(window: TemporalWindow, *, now: str) -> TemporalEvaluation:
+    """Classify a fixed temporal window; unknown timestamps remain unknown."""
+
+    _timestamp(now, "temporal.now")
+    current = _parse_dt(now, "temporal.now")
+    if window.unknown_time:
+        return TemporalEvaluation(window.window_id, now, "UNKNOWN", "time source is unknown; OS must not fill or infer it", window.source_type, window.deadline, None)
+    if window.not_before and current < _parse_dt(window.not_before, "temporal.not_before"):
+        return TemporalEvaluation(window.window_id, now, "NOT_YET", "not_before window has not opened", window.source_type, window.deadline, None)
+    if window.deadline:
+        deadline = _parse_dt(window.deadline, "temporal.deadline")
+        grace_until = deadline.timestamp() + window.grace_seconds
+        grace_dt = datetime.fromtimestamp(grace_until, tz=deadline.tzinfo)
+        if current > grace_dt:
+            return TemporalEvaluation(window.window_id, now, "STALE", "deadline and grace window have elapsed", window.source_type, window.deadline, grace_dt.isoformat())
+        if current > deadline:
+            return TemporalEvaluation(window.window_id, now, "GRACE", "deadline elapsed but explicit grace window remains", window.source_type, window.deadline, grace_dt.isoformat())
+        if current == deadline:
+            return TemporalEvaluation(window.window_id, now, "DUE", "current time equals explicit deadline", window.source_type, window.deadline, grace_dt.isoformat())
+    if window.review_after and current >= _parse_dt(window.review_after, "temporal.review_after"):
+        return TemporalEvaluation(window.window_id, now, "REVIEW_DUE", "review_after boundary has arrived", window.source_type, window.deadline, None)
+    return TemporalEvaluation(window.window_id, now, "ACTIVE_WINDOW", "window is open and explicit deadline is not yet due", window.source_type, window.deadline, None)
+
+
 @dataclass(frozen=True)
 class GoalRecord:
     """A versioned target whose satisfaction is never inferred from a child run."""

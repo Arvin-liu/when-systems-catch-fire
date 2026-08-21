@@ -1,0 +1,16 @@
+{
+  "schema": "os-steering-intent-obligation-r1.temporal-fixtures",
+  "windows": [
+    {"window_id": "window-not-yet", "timezone": "Asia/Shanghai", "source_type": "OWNER_DECLARED", "source_ref": "owner-time-1", "not_before": "2026-08-22T12:00:00+08:00", "deadline": "2026-08-25T17:00:00+08:00", "review_after": null, "grace_seconds": 0, "recurrence": null, "unknown_time": false},
+    {"window_id": "window-due", "timezone": "Asia/Shanghai", "source_type": "OWNER_DECLARED", "source_ref": "owner-time-2", "not_before": null, "deadline": "2026-08-21T17:00:00+08:00", "review_after": null, "grace_seconds": 3600, "recurrence": null, "unknown_time": false},
+    {"window_id": "window-review", "timezone": "Asia/Shanghai", "source_type": "OWNER_DECLARED", "source_ref": "owner-time-3", "not_before": null, "deadline": null, "review_after": "2026-08-22T12:00:00+08:00", "grace_seconds": 0, "recurrence": {"frequency": "weekly", "interval": 1}, "unknown_time": false},
+    {"window_id": "window-unknown", "timezone": "UTC", "source_type": "SYSTEM_DERIVED_PROPOSAL", "source_ref": "unknown-clock", "not_before": null, "deadline": null, "review_after": null, "grace_seconds": 0, "recurrence": null, "unknown_time": true}
+  ],
+  "cases": [
+    {"window_id": "window-not-yet", "now": "2026-08-21T12:00:00+08:00", "expected_state": "NOT_YET"},
+    {"window_id": "window-due", "now": "2026-08-21T17:00:00+08:00", "expected_state": "DUE"},
+    {"window_id": "window-due", "now": "2026-08-21T17:30:00+08:00", "expected_state": "GRACE"},
+    {"window_id": "window-review", "now": "2026-08-22T12:00:00+08:00", "expected_state": "REVIEW_DUE"},
+    {"window_id": "window-unknown", "now": "2026-08-23T12:00:00+08:00", "expected_state": "UNKNOWN"}
+  ]
+}
