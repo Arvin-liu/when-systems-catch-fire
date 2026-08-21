@@ -4,8 +4,7 @@
 
 当前工程身份：点火主干是一个有界、可审计、可恢复的 Agent Platform
 原型；Knowledge 是第一个大型 Domain Pack。读取这句话时必须同时保留
-`CURRENT_WITH_OPEN_OBLIGATIONS`、`EPISTEMICALLY_ACCEPTED=0` 和“仓库回执不等于
-外部真值”的边界。当前身份 contract 与确定性事实投影见
+仓库状态上限、外部真值边界和“仓库回执不等于外部真值”的区分。当前身份 contract 与确定性事实投影见
 `data/architecture/current-system-identity.json`、`data/architecture/current-facts.json`
 和 `docs/architecture/current-facts.md`：点火是 OS / orchestration-governance
 layer 与 driver，OpenClaw、Hermes、Codex 是可替换 external executors；本地层
@@ -57,25 +56,25 @@ Knowledge、REOS LIGHT Research、之元 Writing 和 Repository Maintenance。
 truth 或 epistemic authority 的授予。真实离线 episode 的机器回执位于
 `data/agent-runtime/pilots/r2-offline-repository-maintenance/`。
 
-Task 124 的 OS Control Plane R2 进一步把司机所需的 Event Ledger、monotonic
+历史 Task 124 的 OS Control Plane R2 进一步把司机所需的 Event Ledger、monotonic
 policy compiler、resource arbitration、bounded concurrent scheduler、executor
 health lease、queue/backpressure、durable dispatch/reconciliation、concurrent
 operational memory 和 Driver Console 作为独立、有界的 control-plane records；
 读取 [`os-control-plane-r2.md`](docs/architecture/os-control-plane-r2.md) 以恢复
 其状态边界、故障状态和下一步排序。
 
-Task 127 的 Durability / Lifecycle R3 仍属于同一 OS / driver：snapshot plus tail、
+历史 Task 127 的 Durability / Lifecycle R3 仍属于同一 OS / driver：snapshot plus tail、
 compaction、schema migration、namespace isolation、Pack lifecycle、revocation、
 accounting、recovery 和 DR bundle 都是 repository-local lifecycle records。恢复遇到
 不确定 external dispatch 时只能进入 reconciliation，禁止自动外部重放；pilot 与
 receipt 不等于 production durability、exact-once delivery、Owner acceptance 或
 epistemic acceptance。
 
-若任务涉及函数、模型、定理、公式、律、跨域类比或现实强断言，在读取 Foundation 后立即读取 `docs/foundation/claim-governance-and-function-identity.md`、`data/foundation/function-assets/corrections.jsonl`、对应 `identity-cards.jsonl` 记录及其 quarantine/obligation 状态。M 与 E 不得互推，自动 census 不能覆盖专项纠偏；task 99 的 registry closure 也不能被解释为全部证明或外部验证完成。
+若任务涉及函数、模型、定理、公式、律、跨域类比或现实强断言，在读取 Foundation 后立即读取 `docs/foundation/claim-governance-and-function-identity.md`、`data/foundation/function-assets/corrections.jsonl`、对应 `identity-cards.jsonl` 记录及其 quarantine/obligation 状态。M 与 E 不得互推，自动 census 不能覆盖专项纠偏；历史 task 99 的 registry closure 也不能被解释为全部证明或外部验证完成。
 
-若对象是非函数型定理、规律、机制、因果、不可能性、跨域对应、预测、经验或本体断言，还必须读取 `data/foundation/nonfunction-claims/claim-registry.jsonl`、生成索引和未来断言准入协议。task 100 的 closure 可由显式 quarantine 达成，只闭合登记与谱系，不证明内容为真；任何撤回结论都不得以“结构性”“元”“深层”或框架内改名回弹。
+若对象是非函数型定理、规律、机制、因果、不可能性、跨域对应、预测、经验或本体断言，还必须读取 `data/foundation/nonfunction-claims/claim-registry.jsonl`、生成索引和未来断言准入协议。历史 task 100 的 closure 可由显式 quarantine 达成，只闭合登记与谱系，不证明内容为真；任何撤回结论都不得以“结构性”“元”“深层”或框架内改名回弹。
 
-阶段成果展示在专用页 `docs/generated/recent-stage-results.md`（“正在炼化 / Recent Stage Results”）；若需了解阶段快照，必须读取 `data/operations/stage-snapshots.json` 和 `docs/operations/stage-snapshot-publication.md`。方法 `1.4.0`（Continuous Stage Snapshot Publication）已为 Current；README 首页不再嵌入「正在炼化」块。
+阶段成果展示在专用页 `docs/generated/recent-stage-results.md`（“正在炼化 / Recent Stage Results”）；若需了解阶段快照，必须读取 `data/operations/stage-snapshots.json` 和 `docs/operations/stage-snapshot-publication.md`。当前迭代方法版本由 generated Current Snapshot 统一投影；README 首页不再嵌入「正在炼化」块。
 
 较早的 `1.3.0` 降为 Historical；快照可见不推出 Accepted、Activated、正式能力可用或候选载荷已进 Main（Homepage Visible != Capability Available）。
 
@@ -114,7 +113,7 @@ epistemic acceptance。
 - 当前迭代方法、地图版本和历史版本由 generated Current Snapshot 提供；Durability / Lifecycle R3 是同一 OS 控制脊柱内的 repository-local recovery component；Structural Governance Surface 是 advisory overlay，不增加 L7。
 
 方法 `1.3.0` 与系统图 `0.10.0`、`0.6.0`、`0.5.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0`、`0.2.0`、`0.3.0`、`0.4.0` 为更早 Historical。当前方法要求读取 `data/operations/project-components.json` 与 `data/operations/change-propagation-topology.json`，把变更路径解析为构件、遍历声明关系到 fixpoint、绑定决定／map diff／residue，再由 registries 与布局 overlay 派生系统图。不得把 Git diff、依赖或可达性称为现实因果证明。
-- Q32I 的方法 `1.3.0` 与系统图 `0.3.0` 已独立接受、由 PR #62 普通合并并完成生产收口；其后方法升为 `1.4.0` Current。
+- Q32I 的方法 `1.3.0` 与系统图 `0.3.0` 已独立接受、由 PR #62 普通合并并完成生产收口；其后迭代方法版本与 Current 标签由 generated Current Snapshot 统一投影。
 
 `1.3.0` 降为 Historical，Q32I 为 Closed。选择性物化只在完整 profile、authority、plan 与指纹身份一致时选择性物化。Authority 类型、execution capability 与 validation capability 必须分别声明；apply 必须先通过统一预检，rollback（回滚）必须证明整仓字节／类型／symlink／mode 恢复，否则进入 unrecovered 与 recovery package。NonImpactProof 只证明声明关系范围内的非影响；cache 不是真相源；meta-authority 变更强制 full rebuild。Q33 启动包已准备，但 Q33 与 Q34—Q40 均尚未启动。
 - `implementation_complete` 不等于 `project_synchronization_complete`。生产首页部署和实时读取必须分别验证，不能由仓库状态替代。

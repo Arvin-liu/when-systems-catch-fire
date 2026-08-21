@@ -32,7 +32,7 @@ Surface 是 advisory cross-cutting overlay，不增加 L7，不改变 capability
 
 ### OS Control Plane R2
 
-Task 124 将司机所需的交通系统登记为独立 control-plane records：Event Ledger
+Historical Task 124 将司机所需的交通系统登记为独立 control-plane records：Event Ledger
 负责 append-only CAS 与 deterministic replay；monotonic policy compiler 只收窄
 权限；resource arbitration 处理共享资源冲突；bounded concurrent scheduler 受
 ready-set、executor 和预算上限约束；health lease、queue/backpressure、durable
@@ -45,7 +45,7 @@ pilot 的成功只表示仓库范围协调证据。
 
 Durability / Lifecycle 把 snapshot plus tail、compaction、schema migration、namespace isolation、
 Pack lifecycle、capability revocation、accounting、recovery orchestrator 与 DR bundle
-登记为同一 OS control spine 内的一个当前构件。它只保存 repository-local continuity
+登记为同一 OS control spine 内的一个当前构件（该构件由 Historical Task 127 引入）。它只保存 repository-local continuity
 和 recovery records；tampered/stale/partial state fail closed，uncertain external
 dispatch 只进入 reconciliation，禁止自动 external re-execution。它不创建第二张
 durability map，不进入 Knowledge authority，也不把离线 pilot 观察升级为 production

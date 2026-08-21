@@ -7,8 +7,8 @@ Steering / Intent / Goal / Obligation R1 是 OS 内的仓库本地控制记录�
 独立 Completion Contract、承诺义务、why-next、漂移/handoff guard 与 federation Intent Capsule
 均保持可追溯；系统提议、运行通过和外部 executor 回执都不能自行升级 Owner authority 或 Goal completion。
 
-Agent Platform R2 与 External Agent Federation R1 已在 Task 122 正式 main
-基线上闭合；Task 127 已完成并发布为当前 Durability / Lifecycle R3。本页的工程边界不构成
+Agent Platform R2 与 External Agent Federation R1 已在 Historical Task 122 正式 main
+基线上闭合；Historical Task 127 已完成并发布为当前 Durability / Lifecycle R3。本页的工程边界不构成
 外部能力或 epistemic acceptance；当前身份 contract/facts 见
 `data/architecture/current-system-identity.json`、`data/architecture/current-facts.json` 与
 `data/operations/current-task-lineage-status.json`：
@@ -77,10 +77,10 @@ R2 仍不包括 live provider、daemon、multi-Agent 并发、vector memory、�
 
 每次正式迭代合并 `main`，必须在同一轮向 [STATE-CHANGELOG.md](./STATE-CHANGELOG.md) append 一条 delta，并绑定该轮的 main 基线 tip、权威资产变化、认识论状态变化、开放义务、失效认知和下一步阅读；没有 delta 的正式合并不得称为状态已同步。
 
-当前架构状态保持 `CURRENT_WITH_OPEN_OBLIGATIONS`；不得改写成全量数学证明完成、
-生产安全、外部有效性或 `EPISTEMICALLY_ACCEPTED`。
+当前架构状态上限与外部边界由 generated Current Snapshot 统一投影；不得改写成全量数学证明完成、
+生产安全或外部有效性。
 
-方法 1.4.0 是 Current。看到首页阶段成果时，逐项读取显式布尔量和来源 HEAD；`PUBLISHED_SNAPSHOT` 不等于 Accepted、Current 或 Activated，首页可见不等于能力可用。Agent 只能生成 stage snapshot request，不能自行声称已进入 Main。
+当前迭代方法版本由 generated Current Snapshot 统一投影。看到首页阶段成果时，逐项读取显式布尔量和来源 HEAD；`PUBLISHED_SNAPSHOT` 不等于 Accepted、Current 或 Activated，首页可见不等于能力可用。Agent 只能生成 stage snapshot request，不能自行声称已进入 Main。
 
 函数类资产交接必须保留十二类主身份、M0—M7、E0—E7、十门结果、六层裁决、claim ceiling、证明/实证义务、依赖影响和最终处置。task 99 identity card 优先于自动 census；quarantine 不等于验证。T2、D127、D182—D190、D260 仍以 task 98 correction overlay 为最高专项权威；旧表保留原文。任何“大一统已被证明不可能”或“点火已统一四力”的结论均为撤回/禁止状态。
 
@@ -134,7 +134,7 @@ Q25C 的每表面 `blocks` 生命周期原则继续有效；任务 101 退役独
 
 Q32I 已通过第三次独立 exact-head 审查，以 PR #62 普通合并并完成生产收口（彼时方法 `1.3.0` 与 map `0.3.0` 完成收口）。
 
-其后方法升为 `1.4.0` Current（连续阶段快照发布，见 docs/operations/stage-snapshot-publication.md）。
+其后迭代方法版本与 Current 标签由 generated Current Snapshot 统一投影（连续阶段快照发布，见 docs/operations/stage-snapshot-publication.md）。
 
 较早的 `1.3.0` 降为 Historical，Q32I 为 Closed。它明确分离 authority 类型、execution capability 与 validation capability，只允许真实、确定性且完整物化声明输出的 producer 为 automatic，只有完整且构件职责相符的命令才是 local validator。Apply 在子进程／写入前必须经统一权威预检；rollback 要按整仓字节、类型、symlink 和 mode 证明完整恢复。交接必须读取 `docs/architecture/incremental-execution.md`，重算 closure、plan 和派生 projection；不能把 cache、Git diff、依赖、图连线、CI 或 artifact 当作现实因果、自我验收或 Current 证明。Q33 启动包已在 1111 准备，但 Q33 与 Q34—Q40 均尚未启动。
 ## 许可边界

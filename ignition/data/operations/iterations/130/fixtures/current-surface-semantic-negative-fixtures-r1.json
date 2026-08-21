@@ -1,0 +1,72 @@
+{
+  "schema_version": "current-surface-semantic-negative-fixtures-r1",
+  "task_id": "IGNITION-20260821-130",
+  "negative_cases": [
+    {
+      "id": "same-document-current-and-historical-map-conflict",
+      "text": "Current map: 0.12.0 Current; historical map: 0.11.0 Current.",
+      "expected_valid": false
+    },
+    {
+      "id": "old-task-labeled-current",
+      "text": "Current task: IGNITION-20260821-128.",
+      "expected_valid": false
+    },
+    {
+      "id": "identity-epoch-drift",
+      "text": "Current identity epoch: wrong-epoch-r1.",
+      "expected_valid": false
+    },
+    {
+      "id": "latest-architecture-task-conflict",
+      "text": "Latest architecture-changing task: IGNITION-20260821-128.",
+      "expected_valid": false
+    },
+    {
+      "id": "edited-generated-block",
+      "generated_profile": "human",
+      "tamper": "- current_map: `0.11.0` Current",
+      "expected_valid": false
+    },
+    {
+      "id": "unmanaged-current-fact",
+      "text": "Current method 1.4.0 is Current in this prose.",
+      "expected_valid": false
+    },
+    {
+      "id": "homepage-handoff-mismatch",
+      "generated_profile": "ai",
+      "surface_profile": "human",
+      "expected_valid": false
+    },
+    {
+      "id": "publication-status-stale-after-lifecycle-change",
+      "generated_profile": "human",
+      "tamper": "- current_task: `IGNITION-20260821-130`",
+      "expected_valid": false
+    },
+    {
+      "id": "soft-governance-written-as-authority",
+      "text": "Structural Governance Surface grants Owner authority and permission.",
+      "expected_valid": false
+    },
+    {
+      "id": "unmanaged-current-state",
+      "text": "CURRENT_WITH_OPEN_OBLIGATIONS and EPISTEMICALLY_ACCEPTED=0 are copied into prose.",
+      "expected_valid": false
+    }
+  ],
+  "positive_boundaries": [
+    {
+      "id": "explicit-historical-old-map",
+      "text": "## Historical record\nTask 128 used map 0.11.0 Historical.",
+      "expected_valid": true
+    },
+    {
+      "id": "advisory-governance-boundary",
+      "text": "Structural Governance Surface is advisory-only and cannot grant authority or permission.",
+      "expected_valid": true
+    }
+  ],
+  "claim_ceiling": "Fixtures exercise fail-closed repository-local semantic boundaries only; they do not establish task truth or authority."
+}

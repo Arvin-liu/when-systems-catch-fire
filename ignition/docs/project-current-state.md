@@ -27,7 +27,7 @@ Maintenance 也各自受 manifest、schema、validator 和 authority ceiling 约
 架构边界：中央 OS 控制脊柱、外部 Federation/replaceable executors 与 Domain/Skill Packs 分开。
 Structural Governance Surface 作为 advisory cross-cutting overlay 单独登记，
 只提供阅读/实验上下文，不增加 L7，不改变 capability、permission 或 epistemic status。
-Task 127 将 Durability / Lifecycle R3 登记为同一 OS 控制脊柱内的当前构件：它保存
+历史 Task 127 将 Durability / Lifecycle R3 登记为同一 OS 控制脊柱内的当前构件：它保存
 snapshot、migration、namespace、Pack lifecycle、revocation、accounting、recovery
 和 DR continuity；不建立第二张系统图，不把不确定外部 dispatch 自动重放为 completion。
 版本、计数和 live ceiling 以 generated Current Snapshot、[Current Facts](./architecture/current-facts.md)
@@ -40,7 +40,7 @@ Current Snapshot 投影。历史/环境 residual 仍按 receipt 保留，旧任�
 Steering 以 `OWNER_DECLARED`／`OWNER_APPROVED_DERIVED` 与 `SYSTEM_DERIVED_PROPOSAL` 分离
 权威来源；Goal completion 需要独立 Completion Contract，`PASS` Run 不得推断完成。
 
-Task 124 的 [OS Control Plane R2](./architecture/os-control-plane-r2.md) 补上了
+历史 Task 124 的 [OS Control Plane R2](./architecture/os-control-plane-r2.md) 补上了
 Event Ledger、monotonic policy compiler、resource arbitration、bounded concurrent
 scheduler、executor health lease、queue/backpressure、durable dispatch/reconciliation、
 concurrent operational memory 和 Driver Console。五子任务 disposable offline pilot
@@ -63,7 +63,7 @@ recovery evidence，不是 production durability、exact-once delivery、Owner a
 - 从 canonical registries 保留来源、命题、形式对象、论证、证据、证明义务、反例、验证、迁移和人类结果的独立谱系；工程闭合不升级内容真值。
 - 通过 `current-facts.json` 确定性投影同步可复算事实；本页不手抄第二份数量表。[Current Facts](../data/architecture/current-facts.json) 与[人读 facts block](./architecture/current-facts.md) 是窄范围派生入口。
 - 以唯一 registry/topology/layout 生成系统图；图是可点击的仓库导航与依赖投影，不是现实因果图、严格同构或完备性证明。
-- Task 126 的 Structural Governance Surface 由候选 ESI、过渡语法、不越权合同和软上下文暴露合同共同限定；它是 advisory，不是权限、真值、Owner 或安全放行层。
+- 历史 Task 126 的 Structural Governance Surface 由候选 ESI、过渡语法、不越权合同和软上下文暴露合同共同限定；它是 advisory，不是权限、真值、Owner 或安全放行层。
 - 控制平面把事件、权限收窄、共享资源、并发 ready-set、健康租约、队列、外部回执和操作记忆分别持久化；Driver Console 只投影下一步与开放义务，不成为第二真相源。
 - Steering / Intent / Goal / Obligation R1 已形成仓库本地可复算骨架：Intent Registry、Goal lifecycle、独立 Completion Contract、Commitment/Obligation Ledger、时间语义、长期 Goal graph、优先级与 conflict arbitration、DecisionTrace/why-next、Episode binding、drift/handoff guard、Memory/Profile boundary、Durability、namespace/delegation 与 federation Intent Capsule；这些记录不授予 Owner authority，也不把运行通过推断为完成。
 - R2/Federation conformance 仍以 disposable local fixture 为主；Step 09 只做了 fresh public CLI probe 和安全、有界的临时 workspace smoke 尝试，OpenClaw 明确 `SKIPPED_UNSAFE_OR_UNAVAILABLE`，Hermes/Codex 因 hard timeout 同样未产生可接受 completion。详细记录见 [`external-conformance-smoke-r1.json`](../data/operations/iterations/123/external-conformance-smoke-r1.json)；当前 live provider/inference ceiling 仍未建立。
@@ -143,6 +143,8 @@ channel 状态不进入 Knowledge、Writing、Human Surface 或 canonical memory
 传播契约将 `agent_federation/` 单独投影到 `agent_platform.federation`，并禁止
 它直接生成 Knowledge census、Fire Seeds、publication、Human front-door 或
 Pack registry；若要改变这些表面，仍须由各自 canonical source 独立声明与验证。
+
+## 历史快照（Historical, append-only context）
 
 ## 当前形态
 
