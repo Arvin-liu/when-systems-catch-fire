@@ -24,6 +24,8 @@ Operational Memory and Profile projections are context inputs, not an Intent Reg
 
 Steering records inherit the existing namespace boundary. Cross-namespace access requires verified principals, an unexpired explicit delegation, a matching shared scope, and a record ID inside the target scope. A namespace grant can expose a bounded proposal or read surface, but it cannot grant `canonical_write`, impersonate an Owner, or widen the target record set.
 
+Federation receives an `IntentCapsule`, not the canonical registry. The capsule includes bounded summaries, success criteria, permission ceilings, blockers, temporal references, a report contract, and minimal context references. Its digest and `OS_CANONICAL_EXECUTOR_REPORT_ONLY` boundary make executor mutation of canonical steering state impossible by contract.
+
 ## Priority and arbitration
 
 Priority is an ordered tuple of explicit rules: eligibility/permission, active Owner override, Owner rank, commitment state, temporal state, dependency criticality, risk, and bounded fairness age. A telemetry score may be emitted for inspection, but it is not authoritative and cannot override permission, safety, blocked, stale, superseded, or executor-unavailable state.

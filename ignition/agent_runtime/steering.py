@@ -2343,6 +2343,100 @@ class SteeringNamespaceGuard:
         self.authorize(source_binding, source_scope, target_binding, target_scope, record_kind="proposal", record_id=record_id, action="propose", now=now, delegation=delegation)
 
 
+INTENT_CAPSULE_SCHEMA = "os-steering-intent-obligation-r1.intent-capsule"
+
+
+@dataclass(frozen=True)
+class IntentCapsule:
+    """Bounded federation handoff; it carries no canonical mutation authority."""
+
+    capsule_id: str
+    intent_id: str
+    goal_id: str
+    intent_summary: str
+    goal_summary: str
+    success_criteria: tuple[str, ...]
+    permission_summary: tuple[str, ...]
+    blocker_refs: tuple[str, ...]
+    temporal_refs: tuple[str, ...]
+    report_contract_refs: tuple[str, ...]
+    minimal_context_refs: tuple[str, ...]
+    namespace_ref: str
+    created_at: str
+    executor_can_mutate_canonical: bool = False
+    authority_boundary: str = "OS_CANONICAL_EXECUTOR_REPORT_ONLY"
+    capsule_digest: str | None = None
+
+    def __post_init__(self) -> None:
+        for value, field in ((self.capsule_id, "capsule_id"), (self.intent_id, "capsule.intent_id"), (self.goal_id, "capsule.goal_id"), (self.namespace_ref, "capsule.namespace_ref")):
+            _safe_id(value, field)
+        _bounded_text(self.intent_summary, "capsule.intent_summary")
+        _bounded_text(self.goal_summary, "capsule.goal_summary")
+        for field in ("success_criteria", "permission_summary", "blocker_refs", "temporal_refs", "report_contract_refs", "minimal_context_refs"):
+            object.__setattr__(self, field, _refs(getattr(self, field), f"capsule.{field}"))
+            for item in getattr(self, field):
+                _bounded_text(item, f"capsule.{field}[]")
+        _timestamp(self.created_at, "capsule.created_at")
+        if self.executor_can_mutate_canonical is not False:
+            raise SteeringValidationError("federation executor cannot mutate canonical steering records")
+        if self.authority_boundary != "OS_CANONICAL_EXECUTOR_REPORT_ONLY":
+            raise SteeringValidationError("capsule authority boundary cannot be widened")
+        expected = sha256_json(self._unsigned_dict())
+        if self.capsule_digest is not None and self.capsule_digest != expected:
+            raise SteeringValidationError("intent capsule digest mismatch")
+        object.__setattr__(self, "capsule_digest", expected)
+
+    def _unsigned_dict(self) -> dict[str, Any]:
+        return {
+            "schema": INTENT_CAPSULE_SCHEMA,
+            "capsule_id": self.capsule_id,
+            "intent_id": self.intent_id,
+            "goal_id": self.goal_id,
+            "intent_summary": self.intent_summary,
+            "goal_summary": self.goal_summary,
+            "success_criteria": list(self.success_criteria),
+            "permission_summary": list(self.permission_summary),
+            "blocker_refs": list(self.blocker_refs),
+            "temporal_refs": list(self.temporal_refs),
+            "report_contract_refs": list(self.report_contract_refs),
+            "minimal_context_refs": list(self.minimal_context_refs),
+            "namespace_ref": self.namespace_ref,
+            "created_at": self.created_at,
+            "executor_can_mutate_canonical": self.executor_can_mutate_canonical,
+            "authority_boundary": self.authority_boundary,
+        }
+
+    def to_dict(self) -> dict[str, Any]:
+        return {**self._unsigned_dict(), "capsule_digest": self.capsule_digest}
+
+    @classmethod
+    def from_dict(cls, data: Mapping[str, Any]) -> "IntentCapsule":
+        required = set(cls("capsule-temp", "intent-temp", "goal-temp", "summary", "summary", ("criterion",), ("permission",), (), (), ("report",), (), "namespace-temp", "1970-01-01T00:00:00+00:00").to_dict())
+        if set(data) != required or data.get("schema") != INTENT_CAPSULE_SCHEMA:
+            raise SteeringValidationError("intent capsule schema or keys mismatch")
+        values = dict(data)
+        values.pop("schema")
+        values["success_criteria"] = tuple(values["success_criteria"])
+        values["permission_summary"] = tuple(values["permission_summary"])
+        values["blocker_refs"] = tuple(values["blocker_refs"])
+        values["temporal_refs"] = tuple(values["temporal_refs"])
+        values["report_contract_refs"] = tuple(values["report_contract_refs"])
+        values["minimal_context_refs"] = tuple(values["minimal_context_refs"])
+        return cls(**values)
+
+    def executor_report_boundary(self) -> dict[str, Any]:
+        return {"capsule_id": self.capsule_id, "canonical_mutation_allowed": False, "report_only": True, "required_report_refs": list(self.report_contract_refs), "authority_boundary": self.authority_boundary}
+
+
+def build_intent_capsule(intent: IntentRecord, goal: GoalRecord, *, success_criteria: Sequence[str], permission_summary: Sequence[str], blocker_refs: Sequence[str] = (), temporal_refs: Sequence[str] = (), report_contract_refs: Sequence[str], minimal_context_refs: Sequence[str] = (), created_at: str) -> IntentCapsule:
+    if not isinstance(intent, IntentRecord) or not isinstance(goal, GoalRecord):
+        raise SteeringValidationError("Intent Capsule requires IntentRecord and GoalRecord")
+    if goal.intent_id != intent.intent_id:
+        raise SteeringValidationError("Goal does not bind to the supplied Intent")
+    capsule_id = f"capsule:{intent.intent_id}:{goal.goal_id}"
+    return IntentCapsule(capsule_id, intent.intent_id, goal.goal_id, intent.statement, goal.statement, tuple(success_criteria), tuple(permission_summary), tuple(blocker_refs), tuple(temporal_refs), tuple(report_contract_refs), tuple(minimal_context_refs), goal.namespace, created_at)
+
+
 __all__ = [
     "STEERING_SCHEMA", "INTENT_AUTHORITY_INVARIANT", "GOAL_COMPLETION_NON_INFERENCE_INVARIANT", "STEERING_EXPLAINABILITY_INVARIANT",
     "INTENT_SOURCE_TYPES", "INTENT_STATUSES", "ONTOLOGY_LAYERS", "SteeringValidationError", "AuthorityProvenance",
@@ -2360,4 +2454,5 @@ __all__ = [
     "MEMORY_PROFILE_SOURCES", "MEMORY_PROFILE_DECISIONS", "MemoryProfileObservation", "ContextBoundaryDecision", "MemoryProfileBoundary",
     "STEERING_DURABILITY_SCHEMA", "STEERING_DURABILITY_EVENT_TYPE", "STEERING_AGGREGATE_ID", "SteeringState", "steering_migration_registry", "SteeringDurabilityAdapter",
     "STEERING_RECORD_KINDS", "STEERING_NAMESPACE_ACTIONS", "SteeringScope", "SteeringNamespaceGuard",
+    "INTENT_CAPSULE_SCHEMA", "IntentCapsule", "build_intent_capsule",
 ]

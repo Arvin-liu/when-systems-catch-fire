@@ -1,0 +1,16 @@
+{
+  "schema": "os-steering-intent-obligation-r1.intent-capsule-fixture",
+  "fixture": {
+    "intent_id": "intent-capsule-1",
+    "goal_id": "goal-capsule-1",
+    "intent_statement": "Keep a bounded synthetic research direction",
+    "goal_statement": "Produce a bounded synthetic research report",
+    "namespace": "owner.synthetic",
+    "success_criteria": ["report-contract-verified", "evidence-ref-recorded"],
+    "permission_summary": ["repo.read", "report.write"],
+    "blocker_refs": ["blocker-executor-availability"],
+    "temporal_refs": ["window-2026-08-21"],
+    "report_contract_refs": ["report-contract-1"],
+    "minimal_context_refs": ["context-digest-1"]
+  }
+}
