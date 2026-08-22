@@ -9,11 +9,11 @@
 - [第 003 片](./architecture_governance/part-003.md)：1001—1500；def __init__\(self\) -> None: → def resume\(self, bundle: FederatedHandoffBundle\) -> FederatedProgressEvent: ...
 - [第 004 片](./architecture_governance/part-004.md)：1501—2000；def retraction_signal\(msg\): → FINAL-REPORT 使用 "INJECTED_VERIFIED" 暗示内容支持已验证。实际上所有验证仅为 Crossref 元数据匹配（DOI 存在 + 标题/年份匹配）。104 将此降级为 `METADATA_SUPPORTED_O
 - [第 005 片](./architecture_governance/part-005.md)：2001—2500；Fine-tuning as compilation: dataset → task vector. But this is just gradient descent, not a compiler in the traditional → ok\(f"Evidence cards: {len\(evidence_cards\)}"\)
-- [第 006 片](./architecture_governance/part-006.md)：2501—3000；OLD2\[历史案例来源归档\] --> E\[evidence\] → The framework defines run/workspace/report carriers and some tests emit artifacts, but paper experiment and autonomous-c
-- [第 007 片](./architecture_governance/part-007.md)：3001—3500；The frozen candidate began with an abstract passive definition of evidence and hid the ordinary sequence that the feedba → \| \[C-0738\]\( \) \| \[美国禁酒令\]\( \) \| 该案例验证了当 C=0 时，制度性契约也会坍塌。 \|
-- [第 008 片](./architecture_governance/part-008.md)：3501—4000；\| \[C-0745\]\( \) \| \[脱不花财务教育\]\( \) \| 该案例验证了框架建设的优先级高于零散技巧。 \| → ✅ 验证器: 14/14 PASS
-- [第 009 片](./architecture_governance/part-009.md)：4001—4500；✓ = 完全验证通过（J⁺=1, J⁻=0） → 压缩退出权的阈值与可测信号待案例验证
-- [第 010 片](./architecture_governance/part-010.md)：4501—5000；厕所空间验证 → 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
-- [第 011 片](./architecture_governance/part-011.md)：5001—5500；原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD` → 本次试跑用于验证“学科理论核卡片”模板是否可用于后续学科深跑。
-- [第 012 片](./architecture_governance/part-012.md)：5501—6000；本登记表不替代外部学科证据； → 这不是“登记数量等于科学成果”的结论：本轮主要做 R0 冻结、独立审计、综合写作和出版前审查；正式证据、研究、纠正、实验、基础设施与维护分开标注。任务 111 的 `TERMINAL_SUCCESS`、恢复 tag 和当前生命周期状态只回答
-- [第 013 片](./architecture_governance/part-013.md)：6001—6170；这个 runner 只规定怎样把 exposure、challenge、evidence packet 和模型输出 → （证据不足、需外部验证、待人工复核）
+- [第 006 片](./architecture_governance/part-006.md)：2501—3000；OLD2\[历史案例来源归档\] --> E\[evidence\] → The four categories are local public-ceiling outcomes, not a scalar truth ladder. They cannot be averaged or silently ma
+- [第 007 片](./architecture_governance/part-007.md)：3001—3500；The framework defines run/workspace/report carriers and some tests emit artifacts, but paper experiment and autonomous-c → \| \[C-0731\]\( \) \| \[毕加索立体主义×中国手卷流动性跨域同构案例\]\( \)
+- [第 008 片](./architecture_governance/part-008.md)：3501—4000；\| \[C-0733\]\( \) \| \[脱不花三十年只靠劳动所得\]\( \) \| 该案例验证了信息权越低，焦虑越高；当事人虽然在做 → ⚠️ Retraction check: 25条 NOT_CHECKED \(8条已通过证据卡检查\)
+- [第 009 片](./architecture_governance/part-009.md)：4001—4500；✅ All required fields present \(validated\) → 历史报告、旧表和旧措辞，仅作为来源与变更证据。
+- [第 010 片](./architecture_governance/part-010.md)：4501—5000；历史纠偏日志 → 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
+- [第 011 片](./architecture_governance/part-011.md)：5001—5500；原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD` → 本模型冻结 12 个协议统一字段。每个字段定义见 `canonical/data/canonical-field-registry.json`。
+- [第 012 片](./architecture_governance/part-012.md)：5501—6000；本模板为 additive 文档规范，不修改任何现有数据文件。 → 迁移与回滚
+- [第 013 片](./architecture_governance/part-013.md)：6001—6174；运行或要求运行 `python3 tools/validate_data.py`，确认 P1 数据有效。 → （证据不足、需外部验证、待人工复核）

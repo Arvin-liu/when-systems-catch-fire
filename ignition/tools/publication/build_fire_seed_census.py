@@ -11,6 +11,7 @@ from __future__ import annotations
 import hashlib
 import json
 import re
+import argparse
 from collections import Counter
 from pathlib import Path
 from urllib.parse import unquote
@@ -181,6 +182,9 @@ def source_paths(layered_rows: list[dict], required_sources: set[str]) -> list[s
 
 
 def main() -> int:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--check", action="store_true", help="compare a fresh census without writing the committed projection")
+    args = parser.parse_args()
     seeds = parse_seeds()
     layered_rows = load_layered_rows()
     layered_by_path = {
@@ -329,7 +333,17 @@ def main() -> int:
             "count_is_not_a_quality_metric": True,
         },
     }
-    OUT.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    rendered = json.dumps(payload, ensure_ascii=False, indent=2) + "\n"
+    if args.check:
+        if not OUT.is_file() or OUT.read_text(encoding="utf-8") != rendered:
+            print("FIRE_SEEDS_CENSUS_OUT_OF_DATE", flush=True)
+            return 1
+        print(
+            "FIRE_SEEDS_CENSUS_CHECK_OK "
+            f"seeds={len(seeds)} sources={len(census)} layered_origins={len(layered_rows)}"
+        )
+        return 0
+    OUT.write_text(rendered, encoding="utf-8")
     print(
         "FIRE_SEEDS_CENSUS_BUILT "
         f"seeds={len(seeds)} content={len(content)} methodology={len(methods)} "

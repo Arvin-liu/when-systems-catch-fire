@@ -2817,6 +2817,7 @@
 {"first_line":53,"last_line":53,"mention_count":1,"path":"data/operations/iterations/134/step11-current-projection-closure.json","role":"REFERENCE","stable_id":"D127"}
 {"first_line":15,"last_line":15,"mention_count":1,"path":"data/operations/iterations/134/step13-human-surface-semantic-audit.json","role":"REFERENCE","stable_id":"D127"}
 {"first_line":9,"last_line":9,"mention_count":1,"path":"data/operations/iterations/134/step14-human-surface-semantic-audit.json","role":"REFERENCE","stable_id":"D127"}
+{"first_line":9,"last_line":9,"mention_count":1,"path":"data/operations/iterations/135/step02-human-surface-semantic-audit.json","role":"REFERENCE","stable_id":"D127"}
 {"first_line":288,"last_line":288,"mention_count":1,"path":"data/operations/residual-ledger-r1.json","role":"REFERENCE","stable_id":"D127"}
 {"first_line":17,"last_line":62,"mention_count":2,"path":"docs/editorial/MANIFEST.md","role":"REFERENCE","stable_id":"D127"}
 {"first_line":67,"last_line":67,"mention_count":1,"path":"docs/editorial/articles/001-withdrawn-gravity-how-strong-claims-do-not-rebound.md","role":"REFERENCE","stable_id":"D127"}
@@ -5043,6 +5044,7 @@
 {"first_line":53,"last_line":53,"mention_count":1,"path":"data/operations/iterations/134/step11-current-projection-closure.json","role":"REFERENCE","stable_id":"D182"}
 {"first_line":16,"last_line":16,"mention_count":1,"path":"data/operations/iterations/134/step13-human-surface-semantic-audit.json","role":"REFERENCE","stable_id":"D182"}
 {"first_line":10,"last_line":10,"mention_count":1,"path":"data/operations/iterations/134/step14-human-surface-semantic-audit.json","role":"REFERENCE","stable_id":"D182"}
+{"first_line":10,"last_line":10,"mention_count":1,"path":"data/operations/iterations/135/step02-human-surface-semantic-audit.json","role":"REFERENCE","stable_id":"D182"}
 {"first_line":289,"last_line":289,"mention_count":1,"path":"data/operations/residual-ledger-r1.json","role":"REFERENCE","stable_id":"D182"}
 {"first_line":17,"last_line":62,"mention_count":2,"path":"docs/editorial/MANIFEST.md","role":"REFERENCE","stable_id":"D182"}
 {"first_line":67,"last_line":67,"mention_count":1,"path":"docs/editorial/articles/001-withdrawn-gravity-how-strong-claims-do-not-rebound.md","role":"REFERENCE","stable_id":"D182"}
@@ -5423,6 +5425,7 @@
 {"first_line":53,"last_line":53,"mention_count":1,"path":"data/operations/iterations/134/step11-current-projection-closure.json","role":"REFERENCE","stable_id":"D190"}
 {"first_line":17,"last_line":17,"mention_count":1,"path":"data/operations/iterations/134/step13-human-surface-semantic-audit.json","role":"REFERENCE","stable_id":"D190"}
 {"first_line":11,"last_line":11,"mention_count":1,"path":"data/operations/iterations/134/step14-human-surface-semantic-audit.json","role":"REFERENCE","stable_id":"D190"}
+{"first_line":11,"last_line":11,"mention_count":1,"path":"data/operations/iterations/135/step02-human-surface-semantic-audit.json","role":"REFERENCE","stable_id":"D190"}
 {"first_line":290,"last_line":290,"mention_count":1,"path":"data/operations/residual-ledger-r1.json","role":"REFERENCE","stable_id":"D190"}
 {"first_line":17,"last_line":62,"mention_count":2,"path":"docs/editorial/MANIFEST.md","role":"REFERENCE","stable_id":"D190"}
 {"first_line":67,"last_line":67,"mention_count":1,"path":"docs/editorial/articles/001-withdrawn-gravity-how-strong-claims-do-not-rebound.md","role":"REFERENCE","stable_id":"D190"}
@@ -8088,6 +8091,7 @@
 {"first_line":53,"last_line":53,"mention_count":1,"path":"data/operations/iterations/134/step11-current-projection-closure.json","role":"REFERENCE","stable_id":"D260"}
 {"first_line":18,"last_line":18,"mention_count":1,"path":"data/operations/iterations/134/step13-human-surface-semantic-audit.json","role":"REFERENCE","stable_id":"D260"}
 {"first_line":12,"last_line":12,"mention_count":1,"path":"data/operations/iterations/134/step14-human-surface-semantic-audit.json","role":"REFERENCE","stable_id":"D260"}
+{"first_line":12,"last_line":12,"mention_count":1,"path":"data/operations/iterations/135/step02-human-surface-semantic-audit.json","role":"REFERENCE","stable_id":"D260"}
 {"first_line":291,"last_line":291,"mention_count":1,"path":"data/operations/residual-ledger-r1.json","role":"REFERENCE","stable_id":"D260"}
 {"first_line":17,"last_line":62,"mention_count":2,"path":"docs/editorial/MANIFEST.md","role":"REFERENCE","stable_id":"D260"}
 {"first_line":67,"last_line":69,"mention_count":2,"path":"docs/editorial/articles/001-withdrawn-gravity-how-strong-claims-do-not-rebound.md","role":"REFERENCE","stable_id":"D260"}
@@ -24578,6 +24582,7 @@
 {"first_line":80,"last_line":80,"mention_count":1,"path":"data/foundation/schemas/nonfunction-claim.schema.json","role":"REFERENCE","stable_id":"M0"}
 {"first_line":43,"last_line":43,"mention_count":1,"path":"data/operations/iterations/112/publication/r0-original/evidence-binders/chapter-02.md","role":"REFERENCE","stable_id":"M0"}
 {"first_line":773,"last_line":773,"mention_count":1,"path":"data/operations/iterations/130/step07-classification-report.json","role":"REFERENCE","stable_id":"M0"}
+{"first_line":34,"last_line":34,"mention_count":1,"path":"data/operations/iterations/135/step02-projection-preflight.json","role":"REFERENCE","stable_id":"M0"}
 {"first_line":58,"last_line":60,"mention_count":2,"path":"docs/architecture/epistemic-governance-kernel-and-federated-planes.md","role":"REFERENCE","stable_id":"M0"}
 {"first_line":28,"last_line":42,"mention_count":3,"path":"docs/architecture/mechanism-adjudication-plane.md","role":"REFERENCE","stable_id":"M0"}
 {"first_line":28,"last_line":28,"mention_count":1,"path":"docs/editorial/articles/002-two-surfaces-one-truth-registry-and-human-layer.md","role":"REFERENCE","stable_id":"M0"}
@@ -24711,6 +24716,7 @@
 {"first_line":8,"last_line":335,"mention_count":9,"path":"data/meta-protocols/book-validation-cases-20260709.json","role":"REFERENCE","stable_id":"M1"}
 {"first_line":43,"last_line":43,"mention_count":1,"path":"data/operations/iterations/112/publication/r0-original/evidence-binders/chapter-02.md","role":"REFERENCE","stable_id":"M1"}
 {"first_line":514,"last_line":514,"mention_count":1,"path":"data/operations/iterations/112/publication/r0-original/notes/点火研究笔记-第一辑.md","role":"REFERENCE","stable_id":"M1"}
+{"first_line":34,"last_line":34,"mention_count":1,"path":"data/operations/iterations/135/step02-projection-preflight.json","role":"REFERENCE","stable_id":"M1"}
 {"first_line":60,"last_line":60,"mention_count":1,"path":"docs/architecture/epistemic-governance-kernel-and-federated-planes.md","role":"REFERENCE","stable_id":"M1"}
 {"first_line":28,"last_line":55,"mention_count":3,"path":"docs/architecture/mechanism-adjudication-plane.md","role":"REFERENCE","stable_id":"M1"}
 {"first_line":41,"last_line":41,"mention_count":1,"path":"docs/foundation/claim-governance-and-function-identity.md","role":"REFERENCE","stable_id":"M1"}
@@ -24992,6 +24998,7 @@
 {"first_line":216,"last_line":381,"mention_count":11,"path":"data/math-foundation/function-provenance-ledger.jsonl","role":"REFERENCE","stable_id":"M2"}
 {"first_line":43,"last_line":43,"mention_count":1,"path":"data/operations/iterations/112/publication/r0-original/evidence-binders/chapter-02.md","role":"REFERENCE","stable_id":"M2"}
 {"first_line":514,"last_line":514,"mention_count":1,"path":"data/operations/iterations/112/publication/r0-original/notes/点火研究笔记-第一辑.md","role":"REFERENCE","stable_id":"M2"}
+{"first_line":34,"last_line":34,"mention_count":1,"path":"data/operations/iterations/135/step02-projection-preflight.json","role":"REFERENCE","stable_id":"M2"}
 {"first_line":42,"last_line":42,"mention_count":1,"path":"docs/foundation/claim-governance-and-function-identity.md","role":"REFERENCE","stable_id":"M2"}
 {"first_line":4,"last_line":5,"mention_count":2,"path":"evidence-program/registry/candidate-portfolio.jsonl","role":"REFERENCE","stable_id":"M2"}
 {"first_line":21,"last_line":36,"mention_count":2,"path":"outputs/collisions/20260711-disobedience-subjectivity/12-meta-protocol-projection.md","role":"REFERENCE","stable_id":"M2"}
@@ -25144,6 +25151,7 @@
 {"first_line":217,"last_line":382,"mention_count":12,"path":"data/math-foundation/function-provenance-ledger.jsonl","role":"REFERENCE","stable_id":"M3"}
 {"first_line":43,"last_line":43,"mention_count":1,"path":"data/operations/iterations/112/publication/r0-original/evidence-binders/chapter-02.md","role":"REFERENCE","stable_id":"M3"}
 {"first_line":514,"last_line":514,"mention_count":1,"path":"data/operations/iterations/112/publication/r0-original/notes/点火研究笔记-第一辑.md","role":"REFERENCE","stable_id":"M3"}
+{"first_line":34,"last_line":34,"mention_count":1,"path":"data/operations/iterations/135/step02-projection-preflight.json","role":"REFERENCE","stable_id":"M3"}
 {"first_line":43,"last_line":43,"mention_count":1,"path":"docs/foundation/claim-governance-and-function-identity.md","role":"REFERENCE","stable_id":"M3"}
 {"first_line":7,"last_line":29,"mention_count":3,"path":"outputs/collisions/20260711-disobedience-subjectivity/12-meta-protocol-projection.md","role":"REFERENCE","stable_id":"M3"}
 {"first_line":9,"last_line":9,"mention_count":1,"path":"outputs/collisions/20260711-disobedience-subjectivity/candidate-decision-summary.md","role":"REFERENCE","stable_id":"M3"}
@@ -25290,6 +25298,7 @@
 {"first_line":224,"last_line":384,"mention_count":10,"path":"data/math-foundation/function-provenance-ledger.csv","role":"REFERENCE","stable_id":"M4"}
 {"first_line":223,"last_line":383,"mention_count":10,"path":"data/math-foundation/function-provenance-ledger.jsonl","role":"REFERENCE","stable_id":"M4"}
 {"first_line":43,"last_line":43,"mention_count":1,"path":"data/operations/iterations/112/publication/r0-original/evidence-binders/chapter-02.md","role":"REFERENCE","stable_id":"M4"}
+{"first_line":34,"last_line":34,"mention_count":1,"path":"data/operations/iterations/135/step02-projection-preflight.json","role":"REFERENCE","stable_id":"M4"}
 {"first_line":44,"last_line":44,"mention_count":1,"path":"docs/foundation/claim-governance-and-function-identity.md","role":"REFERENCE","stable_id":"M4"}
 {"first_line":8,"last_line":30,"mention_count":4,"path":"outputs/collisions/20260711-disobedience-subjectivity/12-meta-protocol-projection.md","role":"REFERENCE","stable_id":"M4"}
 {"first_line":10,"last_line":10,"mention_count":1,"path":"outputs/collisions/20260711-disobedience-subjectivity/candidate-decision-summary.md","role":"REFERENCE","stable_id":"M4"}
@@ -25413,6 +25422,7 @@
 {"first_line":219,"last_line":386,"mention_count":12,"path":"data/math-foundation/function-provenance-ledger.csv","role":"REFERENCE","stable_id":"M6"}
 {"first_line":218,"last_line":385,"mention_count":12,"path":"data/math-foundation/function-provenance-ledger.jsonl","role":"REFERENCE","stable_id":"M6"}
 {"first_line":43,"last_line":43,"mention_count":1,"path":"data/operations/iterations/112/publication/r0-original/evidence-binders/chapter-02.md","role":"REFERENCE","stable_id":"M6"}
+{"first_line":34,"last_line":34,"mention_count":1,"path":"data/operations/iterations/135/step02-projection-preflight.json","role":"REFERENCE","stable_id":"M6"}
 {"first_line":17,"last_line":17,"mention_count":1,"path":"docs/editorial/MANIFEST.md","role":"REFERENCE","stable_id":"M6"}
 {"first_line":37,"last_line":67,"mention_count":2,"path":"docs/editorial/articles/001-withdrawn-gravity-how-strong-claims-do-not-rebound.md","role":"REFERENCE","stable_id":"M6"}
 {"first_line":46,"last_line":62,"mention_count":2,"path":"docs/foundation/claim-governance-and-function-identity.md","role":"REFERENCE","stable_id":"M6"}
@@ -26810,6 +26820,7 @@
 {"first_line":53,"last_line":53,"mention_count":1,"path":"data/operations/iterations/134/step11-current-projection-closure.json","role":"REFERENCE","stable_id":"T2"}
 {"first_line":19,"last_line":19,"mention_count":1,"path":"data/operations/iterations/134/step13-human-surface-semantic-audit.json","role":"REFERENCE","stable_id":"T2"}
 {"first_line":13,"last_line":13,"mention_count":1,"path":"data/operations/iterations/134/step14-human-surface-semantic-audit.json","role":"REFERENCE","stable_id":"T2"}
+{"first_line":13,"last_line":13,"mention_count":1,"path":"data/operations/iterations/135/step02-human-surface-semantic-audit.json","role":"REFERENCE","stable_id":"T2"}
 {"first_line":297,"last_line":297,"mention_count":1,"path":"data/operations/residual-ledger-r1.json","role":"REFERENCE","stable_id":"T2"}
 {"first_line":17,"last_line":22,"mention_count":2,"path":"docs/editorial/MANIFEST.md","role":"REFERENCE","stable_id":"T2"}
 {"first_line":37,"last_line":67,"mention_count":2,"path":"docs/editorial/articles/001-withdrawn-gravity-how-strong-claims-do-not-rebound.md","role":"REFERENCE","stable_id":"T2"}
@@ -28235,6 +28246,7 @@
 {"first_line":53,"last_line":53,"mention_count":1,"path":"data/operations/iterations/134/step11-current-projection-closure.json","role":"REFERENCE","stable_id":"Y1"}
 {"first_line":20,"last_line":20,"mention_count":1,"path":"data/operations/iterations/134/step13-human-surface-semantic-audit.json","role":"REFERENCE","stable_id":"Y1"}
 {"first_line":14,"last_line":14,"mention_count":1,"path":"data/operations/iterations/134/step14-human-surface-semantic-audit.json","role":"REFERENCE","stable_id":"Y1"}
+{"first_line":14,"last_line":14,"mention_count":1,"path":"data/operations/iterations/135/step02-human-surface-semantic-audit.json","role":"REFERENCE","stable_id":"Y1"}
 {"first_line":298,"last_line":298,"mention_count":1,"path":"data/operations/residual-ledger-r1.json","role":"REFERENCE","stable_id":"Y1"}
 {"first_line":615,"last_line":622,"mention_count":3,"path":"docs/phi_meta_law.md","role":"REFERENCE","stable_id":"Y1"}
 {"first_line":29,"last_line":29,"mention_count":1,"path":"outputs/audit/book-validation-case-table-formalization-audit-20260709.md","role":"REFERENCE","stable_id":"Y1"}

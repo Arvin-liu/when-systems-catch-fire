@@ -1044,6 +1044,11 @@
   - 可搜索名称：NFC-b14298ee5264c819 / IGNITION-134 Step 14 — Residual debt and projection hygiene closeout
   - 来源：`reports/operations/ignition-134-step14-residual-debt-projection-hygiene.md`
   - 依赖：—；被引用：—
+- [IGNITION-135 Step 02 — deterministic projection preflight](../../../reports/operations/ignition-135-step02-projection-preflight.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-63cc2cf819c671fc / IGNITION-135 Step 02 — deterministic projection preflight
+  - 来源：`reports/operations/ignition-135-step02-projection-preflight.md`
+  - 依赖：—；被引用：—
 - [IGNITION-20260815-120 typed change-propagation impact report](../../ASSET-CARDS.md#asset-hr-9099adc0ce6c7e7c)
   - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
   - 可搜索名称：IGNITION-20260815-120 typed change-propagation impact report / IGNITION-20260815-120-change-propagation-impact
@@ -1849,6 +1854,11 @@
   - 可搜索名称：IMPLICIT-C64CE0713483A405 / return mapping.get\(expected, expected\) == mapping.get\(actual, actual\) / IMPLICIT-C64CE0713483A405
   - 来源：`function-os-candidate/v0.2/function_os/n5_interpreter.py`
   - 依赖：—；被引用：—
+- [run the production-authority validator matrix under the same canonical environment and projection preflight.](../../../reports/operations/ignition-135-step00-failure-inventory.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-52ab504b18a00355 / run the production-authority validator matrix under the same canonical environment and projection preflight.
+  - 来源：`reports/operations/ignition-135-step00-failure-inventory.md`
+  - 依赖：—；被引用：—
 - [S\(x\) := -k_B ∫_{Ω} p\(x\) ln p\(x\) dΩ（熵项）](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-5635B73E31A9CADB / S\(x\) := -k_B ∫_{Ω} p\(x\) ln p\(x\) dΩ（熵项） / IMPLICIT-5635B73E31A9CADB / IMPLICIT-C9BC2B57C2E6DBF5
@@ -1963,6 +1973,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-f2fd2d4f3e742b71 / The 126 closure remains the authority for historical/environment residuals. 127 preserves function census drift, nonfunc
   - 来源：`reports/operations/ignition-127-step00-rebase-audit.md`
+  - 依赖：—；被引用：—
+- [The 15 entries are recorded machine-readably in `ignition/data/operations/iterations/135/step00-failure-inventory.json`.](../../../reports/operations/ignition-135-step00-failure-inventory.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-cfaa96c8533444b1 / The 15 entries are recorded machine-readably in `ignition/data/operations/iterations/135/step00-failure-inventory.json`.
+  - 来源：`reports/operations/ignition-135-step00-failure-inventory.md`
   - 依赖：—；被引用：—
 - [The 6 NARROWS cases reflect that the provisional Kimi/non-max cards were overly conservative \(rating all as PARTIAL\), wh](../../../reports/external-research/121c01-max-semantic-review-batch-01.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
@@ -2487,20 +2502,5 @@
 - [title: "统一内部驱动力"](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-4B56AD3BEA973157 / title: "统一内部驱动力" / IMPLICIT-4B56AD3BEA973157
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "罗森塔尔\\"潜力生\\"标签实验"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-DDAFFD90F87B23DA / title: "罗森塔尔\\"潜力生\\"标签实验" / IMPLICIT-DDAFFD90F87B23DA
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "自举嵌套判定器"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-C53326EF7B54FA2D / title: "自举嵌套判定器" / IMPLICIT-C53326EF7B54FA2D
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "自举收敛判定器"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-72B8E1A2D2A24D5E / title: "自举收敛判定器" / IMPLICIT-72B8E1A2D2A24D5E
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—

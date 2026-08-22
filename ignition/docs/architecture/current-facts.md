@@ -6,8 +6,8 @@
 - Map/method: map `0.12.0` Current（historical `0.11.0`）；layout `2.0.0`；semantic trunk `semantic-trunk-r1` with `6` bounded route stages；method `1.4.0` `Current`。
 - Packs: `4` packs；`10` declared capability routes。
 - Federation: `3` adapter inventory entries；live ceiling `NOT_RUN_LIVE_EXTERNAL_INVOCATION`；local boundary `REFERENCE_EXECUTOR / CONFORMANCE_EXECUTOR / FALLBACK_MINIMAL`。
-- Foundation: function identity cards `5624`；function quarantine/pending `4825`；non-function claims `16533`；non-function quarantine/pending `4722`。
-- Knowledge Experience: cards `413`；changes `315`；layered readings `332`；search records `22489`；aliases `875`。
+- Foundation: function identity cards `5624`；function quarantine/pending `4825`；non-function claims `16544`；non-function quarantine/pending `4722`。
+- Knowledge Experience: cards `413`；changes `315`；layered readings `332`；search records `22500`；aliases `875`。
 - Fire Seeds: `64` seeds/clusters；`393` source-census records。
 - Human Surface: `48` materiality entries（function `24` + non-function `24`）；`20` registered sync surfaces；`14` machine/human pairs。
 - Task lineage: current `IGNITION-20260822-134` `COMPLETED_WITH_CLASSIFIED_RESIDUALS`；125 file `HISTORICAL_UNEXECUTED`, requirements `REBASED_INTO_127`, canonical `HISTORICAL_UNEXECUTED_REBASED_INTO_127`；127 `COMPLETED_WITH_CLASSIFIED_RESIDUALS`。

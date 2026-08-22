@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "projection-preflight-r1.schema.json",
+  "type": "object",
+  "required": ["schema_version", "contract_id", "task_id", "application_root", "execution_cwd", "mode", "commands"],
+  "properties": {
+    "schema_version": {"const": "projection-preflight-r1"},
+    "contract_id": {"const": "GENERATED_OUTPUT_BEFORE_FULL_SUITE_INVARIANT"},
+    "task_id": {"const": "IGNITION-20260822-135"},
+    "application_root": {"const": "ignition"},
+    "execution_cwd": {"const": "ignition"},
+    "mode": {"const": "READ_ONLY_CHECKS"},
+    "clean_tree_required_before_full_suite": {"const": true},
+    "full_suite_side_effect_policy": {"const": "FAIL_IF_TRACKED_OR_UNTRACKED_TREE_CHANGES"},
+    "commands": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "category", "argv", "read_only"],
+        "properties": {
+          "id": {"type": "string", "minLength": 1},
+          "category": {"type": "string", "minLength": 1},
+          "argv": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+          "read_only": {"const": true}
+        },
+        "additionalProperties": false
+      }
+    },
+    "claim_ceiling": {"type": "string", "minLength": 1}
+  },
+  "additionalProperties": false
+}

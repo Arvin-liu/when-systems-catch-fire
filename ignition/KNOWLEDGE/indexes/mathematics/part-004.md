@@ -164,6 +164,11 @@
   - 可搜索名称：NFC-549238981acf8748 / Claim ceiling：** 仅证明两个已指明窄修复在其精确接受头通过独立实例级验收并进入 PR #130 来源分支；不证明 R5-A 整体完成、生命完整性、人体安全、疗效或普遍语义能力。
   - 来源：`docs/generated/recent-stage-results.md`
   - 依赖：—；被引用：—
+- [claim ceiling：本步只证明 repository-local deterministic projection cleanliness 与 gate 行为，不证明外部真值、生产安全、Owner acceptance 或 epis](../../../reports/operations/ignition-135-step02-projection-preflight.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-6bdb73beeb04337b / claim ceiling：本步只证明 repository-local deterministic projection cleanliness 与 gate 行为，不证明外部真值、生产安全、Owner acceptance 或 epis
+  - 来源：`reports/operations/ignition-135-step02-projection-preflight.md`
+  - 依赖：—；被引用：—
 - [claim_counts: `{'ALGORITHMIC_CLAIM': 2, 'DEFINITION': 12, 'EXPLANATORY_HYPOTHESIS': 6, 'MATHEMATICAL_PROPOSITION': 3, 'S](../../../reports/foundation-architecture/080-full-semantic-adjudication-report-20260713.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-722bf33b2c6b5f74 / claim_counts: `{'ALGORITHMIC_CLAIM': 2, 'DEFINITION': 12, 'EXPLANATORY_HYPOTHESIS': 6, 'MATHEMATICAL_PROPOSITION': 3, 'S
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-424f0a156d8579c2 / grand-unification boundary; reopening it would require a new theorem and
   - 来源：`reports/foundation-architecture/pointfire-seven-track-foundation-high-impact-frontier-r1-20260813.md`
-  - 依赖：—；被引用：—
-- [Guo et al. exact full arXiv v1 paper, all-page visual review and complete LaTeX source audit: deterministic FSM/PFSM tar](../../../data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-f5aedc65a88c93ef / Guo et al. exact full arXiv v1 paper, all-page visual review and complete LaTeX source audit: deterministic FSM/PFSM tar
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl`
   - 依赖：—；被引用：—

@@ -1,0 +1,23 @@
+{
+  "schema_version": "ignition-135-step02-human-surface-semantic-audit-r1",
+  "task_id": "IGNITION-20260822-135",
+  "step": "02",
+  "status": "PASS",
+  "audit_scope": "Item-by-item re-audit of the 11 Human Surface source revisions observed while closing deterministic Step02 projections.",
+  "decision": "SOURCE_CHANGED_HUMAN_SURFACE_STILL_SEMANTICALLY_VALID",
+  "entries": [
+    {"machine_id":"D127","source_path":"AI-HANDOFF.md","human_path":"docs/human/function-assets/entries/d127.md","current_source_sha256":"299ee4a887b2b5b4e7f6e704adcb0d41fb6babaf0e26aa1a33e5b799c5dd21f0","action":"REFRESH_CURRENT_FINGERPRINT_ONLY","human_prose_changed":false,"claim_ceiling_changed":false},
+    {"machine_id":"D182","source_path":"AI-HANDOFF.md","human_path":"docs/human/function-assets/entries/d182.md","current_source_sha256":"299ee4a887b2b5b4e7f6e704adcb0d41fb6babaf0e26aa1a33e5b799c5dd21f0","action":"REFRESH_CURRENT_FINGERPRINT_ONLY","human_prose_changed":false,"claim_ceiling_changed":false},
+    {"machine_id":"D190","source_path":"AI-HANDOFF.md","human_path":"docs/human/function-assets/entries/d190.md","current_source_sha256":"299ee4a887b2b5b4e7f6e704adcb0d41fb6babaf0e26aa1a33e5b799c5dd21f0","action":"REFRESH_CURRENT_FINGERPRINT_ONLY","human_prose_changed":false,"claim_ceiling_changed":false},
+    {"machine_id":"D260","source_path":"AI-HANDOFF.md","human_path":"docs/human/function-assets/entries/d260.md","current_source_sha256":"299ee4a887b2b5b4e7f6e704adcb0d41fb6babaf0e26aa1a33e5b799c5dd21f0","action":"REFRESH_CURRENT_FINGERPRINT_ONLY","human_prose_changed":false,"claim_ceiling_changed":false},
+    {"machine_id":"T2","source_path":"AI-HANDOFF.md","human_path":"docs/human/function-assets/entries/t2.md","current_source_sha256":"299ee4a887b2b5b4e7f6e704adcb0d41fb6babaf0e26aa1a33e5b799c5dd21f0","action":"REFRESH_CURRENT_FINGERPRINT_ONLY","human_prose_changed":false,"claim_ceiling_changed":false},
+    {"machine_id":"Y1","source_path":"ARCHITECTURE.md","human_path":"docs/human/function-assets/entries/y1.md","current_source_sha256":"70cf1cd24093c9c05ed2d4f2af120f5132a488052e2daa36761f3b8c27c6cd07","action":"REFRESH_CURRENT_FINGERPRINT_ONLY","human_prose_changed":false,"claim_ceiling_changed":false},
+    {"machine_id":"NFC-015cfd6ba387c9b1","source_path":"docs/project-current-state.md","human_path":"docs/human/nonfunction-assets/entries/nfc-015cfd6ba387c9b1.md","current_source_sha256":"735d19c75c5ce178fd04cecde52e3c40bb3da40da54ab20a10d2e0798d91c682","action":"REFRESH_CURRENT_FINGERPRINT_ONLY","human_prose_changed":false,"claim_ceiling_changed":false},
+    {"machine_id":"NFC-02f68962a6f13abc","source_path":"llms.txt","human_path":"docs/human/nonfunction-assets/entries/nfc-02f68962a6f13abc.md","current_source_sha256":"74aa7c40759c04f5644cf622ebd1cdf17ea6d4080014213df244d15380181f1f","action":"REFRESH_CURRENT_FINGERPRINT_ONLY","human_prose_changed":false,"claim_ceiling_changed":false},
+    {"machine_id":"NFC-0331afe8d84f2538","source_path":"AI-START-HERE.md","human_path":"docs/human/nonfunction-assets/entries/nfc-0331afe8d84f2538.md","current_source_sha256":"f423d077031ba9d04141b1b7d27372ebf247a5d0edbe411cf32cc951ff553a25","action":"REFRESH_CURRENT_FINGERPRINT_ONLY","human_prose_changed":false,"claim_ceiling_changed":false},
+    {"machine_id":"NFC-14866124cc1a2cae","source_path":"docs/project-current-state.md","human_path":"docs/human/nonfunction-assets/entries/nfc-14866124cc1a2cae.md","current_source_sha256":"735d19c75c5ce178fd04cecde52e3c40bb3da40da54ab20a10d2e0798d91c682","action":"REFRESH_CURRENT_FINGERPRINT_ONLY","human_prose_changed":false,"claim_ceiling_changed":false},
+    {"machine_id":"NFC-154bdc1ff37c47f6","source_path":"docs/project-current-state.md","human_path":"docs/human/nonfunction-assets/entries/nfc-154bdc1ff37c47f6.md","current_source_sha256":"735d19c75c5ce178fd04cecde52e3c40bb3da40da54ab20a10d2e0798d91c682","action":"REFRESH_CURRENT_FINGERPRINT_ONLY","human_prose_changed":false,"claim_ceiling_changed":false}
+  ],
+  "summary":{"audited":11,"source_changed_semantically_valid":11,"regeneration_required":0,"superseded":0,"hash_only":0,"actual_conflict":0,"approved_current_fingerprint_refresh":11},
+  "claim_ceiling":"Repository-local Human Surface semantic audit and fingerprint refresh only; no external truth, production readiness, Owner acceptance or epistemic acceptance is inferred."
+}
