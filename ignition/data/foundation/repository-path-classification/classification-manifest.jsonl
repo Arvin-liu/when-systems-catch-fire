@@ -2603,6 +2603,7 @@
 {"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "ignition/tests/fixtures/fp.json"}
 {"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "ignition/tests/fixtures/fp.md"}
 {"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "ignition/tests/fixtures/math-foundation-valid-sample.jsonl"}
+{"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "ignition/tests/fixtures/overall-architecture-derived-expectation-r1.json"}
 {"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "ignition/tests/fixtures/persisted-release-result.json"}
 {"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "ignition/tests/fixtures/persisted-release.json"}
 {"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "ignition/tests/fixtures/persisted-release.md"}

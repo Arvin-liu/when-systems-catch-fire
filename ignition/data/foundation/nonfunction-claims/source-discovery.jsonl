@@ -2603,6 +2603,7 @@
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_PLATFORM_CODE_EXCLUDED","exclusion_reason":"EXCLUDED_PLATFORM_CODE_EXCLUDED","path":"tests/fixtures/fp.json"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_PLATFORM_CODE_EXCLUDED","exclusion_reason":"EXCLUDED_PLATFORM_CODE_EXCLUDED","path":"tests/fixtures/fp.md"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_PLATFORM_CODE_EXCLUDED","exclusion_reason":"EXCLUDED_PLATFORM_CODE_EXCLUDED","path":"tests/fixtures/math-foundation-valid-sample.jsonl"}
+{"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_PLATFORM_CODE_EXCLUDED","exclusion_reason":"EXCLUDED_PLATFORM_CODE_EXCLUDED","path":"tests/fixtures/overall-architecture-derived-expectation-r1.json"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_PLATFORM_CODE_EXCLUDED","exclusion_reason":"EXCLUDED_PLATFORM_CODE_EXCLUDED","path":"tests/fixtures/persisted-release-result.json"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_PLATFORM_CODE_EXCLUDED","exclusion_reason":"EXCLUDED_PLATFORM_CODE_EXCLUDED","path":"tests/fixtures/persisted-release.json"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_PLATFORM_CODE_EXCLUDED","exclusion_reason":"EXCLUDED_PLATFORM_CODE_EXCLUDED","path":"tests/fixtures/persisted-release.md"}

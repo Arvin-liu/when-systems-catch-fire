@@ -105,6 +105,11 @@ GENERATED_EXACT_PATHS = {
     "data/operations/iterations/113/TERMINAL_EVIDENCE_CORE.json",
     "data/operations/iterations/114/FINAL_STATE.json",
     "data/operations/iterations/114/TERMINAL_EVIDENCE_CORE.json",
+    # Task 135 projection preflight receipt: it embeds validator stdout for
+    # audit, so it is an operations receipt rather than a function source.
+    # Keep the exact path out of discovery to prevent tracked/untracked state
+    # from changing the census through receipt self-reference.
+    "data/operations/iterations/135/step02-projection-preflight.json",
     "data/operations/propagation/108-impact/system-map-nonimpact-proof.json",
     "docs/operations/lifecycle-readme.md",
     "reports/operations/lifecycle-audit-108.md",
