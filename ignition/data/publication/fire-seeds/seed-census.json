@@ -2254,7 +2254,7 @@
       "title": "AI-START-HERE",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "5d967da19c55aa40b187824ac2a5c07d8b0fc518c9db01fe49435cf4020e2024",
+      "source_sha256": "d07d3bf30c0987359b59e8436b49efcfd4ff54b8dbd08d30f1c2f1d3338fdf95",
       "disposition": "SEED_CREATED",
       "seed_ids": [
         "FS-17"
@@ -2269,7 +2269,7 @@
       "title": "ARCHITECTURE",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "379323e9165d421c00bb3504ca15debcadb4a434d5a3cc0be8ea15df09fc6e40",
+      "source_sha256": "2a0a2f60c0350c4414f4dd6895404337f5c57fd98e52e4db6dcbb157764d003c",
       "disposition": "SEED_CREATED",
       "seed_ids": [
         "FS-03"
@@ -2846,7 +2846,7 @@
       "title": "STATE-CHANGELOG",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "0dba37e9dabf6dd0eb442997189b8b30d3c2f095b53ec0e82f4ae699fb67d1c1",
+      "source_sha256": "b28b1c2e3d945c7d06b1af4d508cfb5c5ab0125850e88735c6716fc74b9fcd40",
       "disposition": "MERGED_INTO_SEED",
       "seed_ids": [
         "FS-23"
@@ -2889,7 +2889,7 @@
       "title": "identity-cards",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "106446491e376eeb2696f418211fe7c46e27785d73eb676160491385e268d98d",
+      "source_sha256": "12ffce17983c6a1e302773c2c4b61b35f2cde532992b8abe8190798f9679645f",
       "disposition": "MERGED_INTO_SEED",
       "seed_ids": [
         "FS-08"
@@ -2904,7 +2904,7 @@
       "title": "closure-summary",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "7fea7fea923dade2bd9a283f42fd14319332d34ba7be8d8fde9b56c83929c3ad",
+      "source_sha256": "f57daf2be6ada03aedf45b595775724edde27bc82640f8e25118f1aff7cecf4e",
       "disposition": "MERGED_INTO_SEED",
       "seed_ids": [
         "FS-07"
@@ -3659,7 +3659,7 @@
       "title": "全语料非函数型断言裁决索引",
       "knowledge_status": "CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS",
       "subject": null,
-      "source_sha256": "94f20571ef247c928d7e44caaefd2c1d614dadaceb28dd3f4d9f1531528fe581",
+      "source_sha256": "63efc2a17bc583d939faf7a40beacf22f44dde2da0fab654343d211fb32ab19b",
       "disposition": "NO_SEED_DELTA",
       "seed_ids": [],
       "review_basis": "KNOWLEDGE_LAYERED_READING_TRIAGE",

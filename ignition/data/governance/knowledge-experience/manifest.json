@@ -84,11 +84,11 @@
     "KNOWLEDGE/indexes/writing_publication.md": "b68e2daaabc3451fc4f4e64c165d62d56f590dda80491d41b77d7d85b847a965",
     "KNOWLEDGE/indexes/writing_publication/part-001.md": "dee2e5bb4f045c19d599f3ab42f2a65152397f52268d6b2653d569f4a0802e7e",
     "data/governance/knowledge-experience/alias-index.jsonl": "2e2bdcc724a6cd5368ab5fb0f42c57a8d75a9d574bee144a794857a0fbd58641",
-    "data/governance/knowledge-experience/asset-cards.jsonl": "0036abc25cfcb96383f1b12bb4f37758850ac915c55f1fa01ea77be82eef16ce",
+    "data/governance/knowledge-experience/asset-cards.jsonl": "f76b38d8ffea19669f91b5e86717f7b7939e31be87ec7ccbd1c5d5890c2ade4e",
     "data/governance/knowledge-experience/changes.jsonl": "4644fe79900736fb4df464e9c365694e04f7dbdd6d3a225aa3ef7b61a85acdde",
     "data/governance/knowledge-experience/coverage.json": "4eb5836b59311ff005353f59e363c393fcb5ae9c9739c30dbd7c4be617e56b31",
-    "data/governance/knowledge-experience/layered-reading.jsonl": "aa9d285139875d483ff9f20bc7351348e6a65caaf26d2719efc75e280947c344",
-    "data/governance/knowledge-experience/search-index.jsonl": "cba2470653a4be41a3f9b982dee9dc51e7e055a6d0e6b62b4e12df9a03b436bb"
+    "data/governance/knowledge-experience/layered-reading.jsonl": "00e53fa3fabfa69b358357c4b1c9b1316bc6ac82ac4ced4cafd7206060b01456",
+    "data/governance/knowledge-experience/search-index.jsonl": "5a16d00470fcdf8e0cf834e98f5450bb28ea46092b1c127b10b9a942b47e507f"
   },
   "machine_human_pairs": [
     {
@@ -119,7 +119,7 @@
   "schema_version": "1.0.0",
   "snapshot_date": "2026-07-30",
   "source_inputs": {
-    "data/foundation/function-assets/identity-cards.jsonl": "106446491e376eeb2696f418211fe7c46e27785d73eb676160491385e268d98d",
+    "data/foundation/function-assets/identity-cards.jsonl": "12ffce17983c6a1e302773c2c4b61b35f2cde532992b8abe8190798f9679645f",
     "data/foundation/nonfunction-claims/claim-registry.jsonl": "8dea3dc612ff087e9e9f3b3b38d6ab5519f21f589f63f7af1cf186b4484884ee",
     "data/governance/human-results/result-ledger.jsonl": "664a3463af13945dcef447386aa7ecb9b7158a0d4ade321d4c1a3f0b3ac0ad65",
     "data/governance/knowledge-experience/config.json": "b10d5fe209ce4f185693571e31917bea63b85d7b4dbe8d4294fb373117563eca",

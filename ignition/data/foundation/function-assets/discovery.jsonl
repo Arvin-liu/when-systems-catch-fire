@@ -26629,6 +26629,7 @@
 {"first_line":20,"last_line":20,"mention_count":1,"path":"data/operations/iterations/127/progress.jsonl","role":"REFERENCE","stable_id":"T16"}
 {"first_line":42,"last_line":42,"mention_count":1,"path":"data/operations/iterations/132/step11-residual-audit.json","role":"REFERENCE","stable_id":"T16"}
 {"first_line":42,"last_line":42,"mention_count":1,"path":"data/operations/iterations/134/step09-sympy-environment-contract.json","role":"REFERENCE","stable_id":"T16"}
+{"first_line":9,"last_line":10,"mention_count":2,"path":"data/operations/iterations/135/step07-sympy-environment-contract.json","role":"REFERENCE","stable_id":"T16"}
 {"first_line":5,"last_line":5,"mention_count":1,"path":"docs/foundation/strong-claim-gates.md","role":"REFERENCE","stable_id":"T16"}
 {"first_line":18,"last_line":18,"mention_count":1,"path":"reports/foundation-architecture/40-proof-obligation-triage-20260713.md","role":"REFERENCE","stable_id":"T16"}
 {"first_line":1,"last_line":1,"mention_count":1,"path":"reports/foundation-architecture/T16-counterexample-equivalence-audit-20260713.md","role":"REFERENCE","stable_id":"T16"}

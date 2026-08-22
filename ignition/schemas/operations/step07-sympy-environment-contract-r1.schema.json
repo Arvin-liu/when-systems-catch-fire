@@ -1,0 +1,94 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["schema_version", "task_id", "step", "status", "archaeology", "dependency_contract", "runner_contract", "controlled_replay", "claim_ceiling"],
+  "properties": {
+    "schema_version": {"const": "ignition-135-step07-sympy-environment-contract-r1"},
+    "task_id": {"const": "IGNITION-20260822-135"},
+    "step": {"const": "07"},
+    "status": {"const": "PASS"},
+    "archaeology": {
+      "type": "object",
+      "required": ["sympy_semantically_required", "evidence", "existing_dependency_declaration", "default_interpreter_observation"],
+      "properties": {
+        "sympy_semantically_required": {"const": true},
+        "evidence": {"type": "array", "minItems": 3, "items": {"type": "string"}},
+        "existing_dependency_declaration": {"const": "ignition/requirements-foundation.txt"},
+        "default_interpreter_observation": {"type": "string", "minLength": 1}
+      },
+      "additionalProperties": false
+    },
+    "dependency_contract": {
+      "type": "object",
+      "required": ["exact_pins", "install_policy"],
+      "properties": {
+        "exact_pins": {
+          "type": "object",
+          "required": ["sympy", "z3-solver", "jsonschema"],
+          "properties": {
+            "sympy": {"const": "1.14.0"},
+            "z3-solver": {"const": "4.16.0.0"},
+            "jsonschema": {"const": "4.26.0"}
+          },
+          "additionalProperties": false
+        },
+        "install_policy": {"type": "string", "minLength": 1}
+      },
+      "additionalProperties": false
+    },
+    "runner_contract": {
+      "type": "object",
+      "required": ["path", "isolated_execution_required", "reuse_inputs", "provision_input", "default_without_isolated", "dependency_check_interpreter", "natural_full_suite_window_seconds", "system_python_modified"],
+      "properties": {
+        "path": {"const": "ignition/tools/run_full_regression.py"},
+        "isolated_execution_required": {"const": true},
+        "reuse_inputs": {"const": ["--python", "IGNITION_FOUNDATION_PYTHON"]},
+        "provision_input": {"const": "--provision-isolated"},
+        "default_without_isolated": {"const": "PREFLIGHT_FAILED"},
+        "dependency_check_interpreter": {"const": "execution interpreter, not the bootstrap interpreter"},
+        "natural_full_suite_window_seconds": {"const": 14400},
+        "system_python_modified": {"const": false}
+      },
+      "additionalProperties": false
+    },
+    "controlled_replay": {
+      "type": "object",
+      "required": ["environment_kind", "repository_modified", "environment_path_persisted", "python_version", "observed_versions", "dependency_preflight", "core_command", "core_checks_total", "core_checks_passed", "results"],
+      "properties": {
+        "environment_kind": {"const": "temporary_foundation_venv_outside_repository"},
+        "repository_modified": {"const": false},
+        "environment_path_persisted": {"const": false},
+        "python_version": {"type": "string"},
+        "observed_versions": {
+          "type": "object",
+          "required": ["sympy", "z3-solver", "jsonschema"],
+          "properties": {
+            "sympy": {"const": "1.14.0"},
+            "z3-solver": {"const": "4.16.0.0"},
+            "jsonschema": {"const": "4.26.0"}
+          },
+          "additionalProperties": false
+        },
+        "dependency_preflight": {"const": "PASS"},
+        "core_command": {"type": "string", "minLength": 1},
+        "core_checks_total": {"const": 5},
+        "core_checks_passed": {"const": 5},
+        "results": {
+          "type": "object",
+          "required": ["T2_Z3_PROOF", "D220_Z3_COUNTERMODEL", "T16_SYMPY_COUNTEREXAMPLE", "T2_LEAN_PROOF", "T23_PENDING"],
+          "properties": {
+            "T2_Z3_PROOF": {"const": {"status": "PASS", "detail": "PROVED_BY_UNSAT_NEGATION"}},
+            "D220_Z3_COUNTERMODEL": {"const": {"status": "PASS", "detail": "COUNTERMODEL_VERIFIED"}},
+            "T16_SYMPY_COUNTEREXAMPLE": {"const": {"status": "PASS", "detail": "COUNTEREXAMPLE_VERIFIED"}},
+            "T2_LEAN_PROOF": {"const": {"status": "PASS", "detail": "PROVED"}},
+            "T23_PENDING": {"const": {"status": "PENDING", "detail": "UNPROVED_PROPOSITION"}}
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "claim_ceiling": {"type": "string", "minLength": 1}
+  },
+  "additionalProperties": false
+}
