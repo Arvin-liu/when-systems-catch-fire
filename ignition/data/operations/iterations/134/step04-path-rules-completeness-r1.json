@@ -1,0 +1,30 @@
+{
+  "schema_version": "ignition-134-step04-path-rules-completeness-r1",
+  "task_id": "IGNITION-20260822-134",
+  "step": "04",
+  "status": "PASS",
+  "rules_source": "ignition/tools/foundation/validate_repository_path_classification.py",
+  "authoritative_allowlist": ["统一函数总表/", "统一案例总表/"],
+  "required_planes": {
+    "ignition/agent_kernel/": {"tracked": 5, "categories": {"TOOL_OR_WORKFLOW": 5}},
+    "ignition/agent_runtime/": {"tracked": 46, "categories": {"TOOL_OR_WORKFLOW": 46}},
+    "ignition/agent_federation/": {"tracked": 12, "categories": {"TOOL_OR_WORKFLOW": 12}},
+    "ignition/packs/": {"tracked": 8, "categories": {"REFERENCE_OR_KNOWLEDGE": 8}},
+    "ignition/data/operations/iterations/": {"tracked": 458, "categories": {"RECEIPT_HISTORY_OPERATIONS": 458}},
+    "ignition/tools/": {"tracked": 237, "categories": {"TOOL_OR_WORKFLOW": 237}},
+    "ignition/schemas/": {"tracked": 177, "categories": {"SCHEMA": 177}},
+    "ignition/agent-results/": {"tracked": 11, "categories": {"EDITORIAL_ARTICLE": 11}},
+    "ignition/outputs/": {"tracked": 93, "categories": {"GENERATED_PROJECTION": 93}},
+    "ignition/docs/": {"tracked": 283, "categories": {"EDITORIAL_ARTICLE": 283}}
+  },
+  "gates": {
+    "unresolved_count": 0,
+    "authoritative_backflow_count": 0,
+    "manifest_authoritative_allowlist_violations": 0,
+    "allowlist_expanded": false,
+    "broad_other_fallback_added": false,
+    "category_drift_count": 0
+  },
+  "decision": "Keep explicit non-authoritative rules and preserve fail-closed UNRESOLVED behavior.",
+  "claim_ceiling": "Repository-local path-rule completeness and anti-backflow evidence only; no external truth, production readiness, Owner acceptance or epistemic acceptance is inferred."
+}
