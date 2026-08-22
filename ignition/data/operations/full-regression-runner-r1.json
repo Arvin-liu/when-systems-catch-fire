@@ -1,0 +1,28 @@
+{
+  "schema_version": "ignition-full-regression-runner-r1",
+  "task_id": "IGNITION-20260822-135",
+  "runner": "ignition/tools/run_full_regression.py",
+  "repository_root_discovery": "script_path_then_git_toplevel; never cwd-derived",
+  "application_root": "ignition",
+  "canonical_working_directory": "ignition",
+  "python": "invoking interpreter sys.executable",
+  "dependency_preflight": "ignition/requirements-foundation.txt exact declared versions; no install",
+  "command": "PYTHONPATH=. python3 -m unittest discover -s tests -p 'test*.py'",
+  "natural_window_minimum_seconds": 14400,
+  "watchdog": "none; outer orchestration may observe but must not kill the process",
+  "capture": "stdout and stderr captured; optional files outside repository; sha256 always recorded",
+  "clean_tree": "must be clean before and after; any tracked/untracked mutation is FAIL",
+  "generated_output_drift": "reported by before/after git status; projection preflight is a separate explicit step",
+  "exit_semantics": {
+    "0": "PASS with parsed tests, failures=0, errors=0, skips=0 and clean tree",
+    "1": "natural unittest failure/error/skip, parse failure, or post-run tree mutation",
+    "2": "dirty precondition, missing/mismatched declared dependency, or runner contract failure"
+  },
+  "prohibited": [
+    "skip laundering",
+    "xfail laundering",
+    "expectedFailure laundering",
+    "blanket ignore",
+    "automatic regeneration during suite"
+  ]
+}

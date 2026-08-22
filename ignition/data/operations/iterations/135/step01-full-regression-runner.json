@@ -1,0 +1,32 @@
+{
+  "schema_version": "ignition-135-step01-full-regression-runner-r1",
+  "task_id": "IGNITION-20260822-135",
+  "step": "01",
+  "status": "PASS",
+  "outputs": [
+    "ignition/tools/run_full_regression.py",
+    "ignition/data/operations/full-regression-runner-r1.json",
+    "ignition/schemas/operations/full-regression-runner-r1.schema.json",
+    "ignition/tests/test_full_regression_runner.py"
+  ],
+  "contract": {
+    "repository_root_discovery": "script_path_then_git_toplevel; never cwd-derived",
+    "canonical_working_directory": "ignition",
+    "dependency_preflight": "requirements-foundation.txt exact versions; read-only; no install",
+    "discovery": "PYTHONPATH=. python3 -m unittest discover -s tests -p 'test*.py'",
+    "natural_window_minimum_seconds": 14400,
+    "watchdog_used": false,
+    "clean_tree_before_and_after": true,
+    "skip_count_must_be_zero": true,
+    "projection_preflight": "required separate explicit release step",
+    "automatic_regeneration_during_suite": false
+  },
+  "targeted_tests": {
+    "contract_tests": "PASS",
+    "summary_parser": "PASS",
+    "dependency_preflight_is_read_only": "PASS",
+    "git_diff_check": "PASS"
+  },
+  "claim_ceiling": "Canonical repository-local unittest orchestration contract only; this step does not claim a full-suite PASS, external truth, production readiness, Owner acceptance or epistemic acceptance.",
+  "next_step": "02"
+}

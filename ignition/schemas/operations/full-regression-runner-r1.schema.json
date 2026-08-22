@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://when-systems-catch-fire.invalid/schemas/operations/full-regression-runner-r1.schema.json",
+  "title": "IGNITION-135 canonical full regression runner contract",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "task_id",
+    "runner",
+    "repository_root_discovery",
+    "application_root",
+    "canonical_working_directory",
+    "python",
+    "dependency_preflight",
+    "command",
+    "natural_window_minimum_seconds",
+    "watchdog",
+    "capture",
+    "clean_tree",
+    "generated_output_drift",
+    "exit_semantics",
+    "prohibited"
+  ],
+  "properties": {
+    "schema_version": {"const": "ignition-full-regression-runner-r1"},
+    "task_id": {"const": "IGNITION-20260822-135"},
+    "runner": {"const": "ignition/tools/run_full_regression.py"},
+    "repository_root_discovery": {"const": "script_path_then_git_toplevel; never cwd-derived"},
+    "application_root": {"const": "ignition"},
+    "canonical_working_directory": {"const": "ignition"},
+    "python": {"const": "invoking interpreter sys.executable"},
+    "dependency_preflight": {"const": "ignition/requirements-foundation.txt exact declared versions; no install"},
+    "command": {"const": "PYTHONPATH=. python3 -m unittest discover -s tests -p 'test*.py'"},
+    "natural_window_minimum_seconds": {"const": 14400},
+    "watchdog": {"const": "none; outer orchestration may observe but must not kill the process"},
+    "capture": {"const": "stdout and stderr captured; optional files outside repository; sha256 always recorded"},
+    "clean_tree": {"const": "must be clean before and after; any tracked/untracked mutation is FAIL"},
+    "generated_output_drift": {"const": "reported by before/after git status; projection preflight is a separate explicit step"},
+    "exit_semantics": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["0", "1", "2"],
+      "properties": {
+        "0": {"const": "PASS with parsed tests, failures=0, errors=0, skips=0 and clean tree"},
+        "1": {"const": "natural unittest failure/error/skip, parse failure, or post-run tree mutation"},
+        "2": {"const": "dirty precondition, missing/mismatched declared dependency, or runner contract failure"}
+      }
+    },
+    "prohibited": {
+      "type": "array",
+      "const": ["skip laundering", "xfail laundering", "expectedFailure laundering", "blanket ignore", "automatic regeneration during suite"]
+    }
+  }
+}
