@@ -8,6 +8,7 @@ These run in the Q33 Governance CI so a regression in fail-closed behavior break
 
 import os
 import sys
+import tempfile
 import unittest
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -51,7 +52,11 @@ FAILOSED = [
 
 class FailClosedFixtureTests(unittest.TestCase):
     def setUp(self):
-        self.gate = FailClosedPublicationGate()
+        self.ledger = tempfile.TemporaryDirectory(prefix="q33-gate-test-")
+        self.addCleanup(self.ledger.cleanup)
+        self.gate = FailClosedPublicationGate(
+            decisions_path=os.path.join(self.ledger.name, "publication-gate-decisions.jsonl")
+        )
 
     def test_failed_fixtures_rejected(self):
         for label, over in FAILOSED:

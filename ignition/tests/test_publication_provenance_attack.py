@@ -13,6 +13,7 @@ self-assertion. These prove:
 
 import os
 import sys
+import tempfile
 import unittest
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -42,7 +43,11 @@ def _decision(**overrides):
 
 class PublicationProvenanceAttackTests(unittest.TestCase):
     def setUp(self):
-        self.gate = FailClosedPublicationGate()
+        self.ledger = tempfile.TemporaryDirectory(prefix="publication-provenance-test-")
+        self.addCleanup(self.ledger.cleanup)
+        self.gate = FailClosedPublicationGate(
+            decisions_path=os.path.join(self.ledger.name, "publication-gate-decisions.jsonl")
+        )
 
     def test_entry_id_must_exist_in_registry(self):
         """A provenance reference that does not point to a real registry entry is rejected."""

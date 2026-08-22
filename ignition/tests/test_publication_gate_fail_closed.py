@@ -15,6 +15,7 @@ These prove the gate can no longer be tricked into recording a fail-open decisio
 import json
 import os
 import sys
+import tempfile
 import unittest
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -64,7 +65,11 @@ def _good_decision(**overrides):
 
 class PublicationGateFailClosedTests(unittest.TestCase):
     def setUp(self):
-        self.gate = FailClosedPublicationGate()
+        self.ledger = tempfile.TemporaryDirectory(prefix="publication-gate-test-")
+        self.addCleanup(self.ledger.cleanup)
+        self.gate = FailClosedPublicationGate(
+            decisions_path=os.path.join(self.ledger.name, "publication-gate-decisions.jsonl")
+        )
 
     def test_private_note_reported_as_level0_pass_is_rejected(self):
         """F4 core: a critical private note cannot be downgraded to level 0 + PASS."""

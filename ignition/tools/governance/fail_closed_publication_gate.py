@@ -70,16 +70,20 @@ def validate_schema(data, schema_path):
 
 
 class FailClosedPublicationGate:
-    def __init__(self):
+    def __init__(self, decisions_path=None):
         self.jurisdiction_registry = load_json(os.path.join(GOV_DIR, "jurisdiction-rule-registry.json"))
         self.source_rights_registry = load_json(os.path.join(GOV_DIR, "source-rights-registry.json"))
         self.material_classification = load_json(os.path.join(GOV_DIR, "material-classification.json"))
+        # Production CLI callers retain the canonical repository ledger. Tests
+        # and disposable pilots may inject a temporary ledger so a valid
+        # fixture does not mutate tracked governance evidence.
+        self.decisions_path = decisions_path or os.path.join(GOV_DIR, "publication-gate-decisions.jsonl")
         self.gate_decisions = {}
         self.non_republication_records = {}
         self.history_remediations = []
 
     def load_existing_decisions(self):
-        decisions_path = os.path.join(GOV_DIR, "publication-gate-decisions.jsonl")
+        decisions_path = self.decisions_path
         if os.path.exists(decisions_path):
             with open(decisions_path, 'r', encoding='utf-8') as f:
                 for line in f:
@@ -361,7 +365,7 @@ class FailClosedPublicationGate:
 
         self.gate_decisions[final["material_id"]] = final
 
-        decisions_path = os.path.join(GOV_DIR, "publication-gate-decisions.jsonl")
+        decisions_path = self.decisions_path
         with open(decisions_path, 'a', encoding='utf-8') as f:
             f.write(json.dumps(final, ensure_ascii=False) + '\n')
 
