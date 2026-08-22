@@ -1,0 +1,15 @@
+{
+  "schema_version": "ignition-134-residual-delta-negative-fixtures-r1",
+  "task_id": "IGNITION-20260822-134",
+  "cases": [
+    {"case_id": "inherited-unchanged", "mutation": "none", "expected": "PASS"},
+    {"case_id": "count-11-to-12", "mutation": "add_object", "expected": "FAIL", "reason": "RESIDUAL_GROWTH_UNCLASSIFIED"},
+    {"case_id": "same-count-object-replacement", "mutation": "replace_object", "expected": "FAIL", "reason": "RESIDUAL_GROWTH_UNCLASSIFIED"},
+    {"case_id": "failure-dimension-changed", "mutation": "change_dimension", "expected": "FAIL", "reason": "RESIDUAL_GROWTH_UNCLASSIFIED"},
+    {"case_id": "forged-current-fingerprint", "mutation": "forge_fingerprint", "expected": "FAIL", "reason": "CURRENT_FINGERPRINT_FORGED"},
+    {"case_id": "new-residual", "mutation": "new_residual", "expected": "FAIL", "reason": "NEW_RESIDUAL_REQUIRES_CLASSIFICATION"},
+    {"case_id": "source-command-without-migration", "mutation": "change_source_command", "expected": "FAIL", "reason": "SOURCE_COMMAND_CHANGED_WITHOUT_MIGRATION"},
+    {"case_id": "resolved-current", "mutation": "resolve", "expected": "PASS"}
+  ],
+  "claim_ceiling": "Repository-local residual delta negative fixtures only; no external truth, production readiness, Owner acceptance or epistemic acceptance is inferred."
+}
