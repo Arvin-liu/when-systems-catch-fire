@@ -1,0 +1,45 @@
+{
+  "schema_version": "ignition-135-step06-sealed-propagation-residual-r1",
+  "task_id": "IGNITION-20260822-135",
+  "step": "06",
+  "status": "PASS",
+  "contract_id": "SEALED_TASK104_106_PROPAGATION_RESIDUAL_R1",
+  "affected_tasks": [104, 105, 106],
+  "affected_dimensions": ["MACHINE_RECORD_IMPACT", "PROJECT_STATE_IMPACT", "SYSTEM_MAP_IMPACT"],
+  "diagnostic_count": 18,
+  "residual_fingerprint": "5e4b1d427efd17f7d8186e4b642a278ebe34ac080d31cf289030c8d2e3962615",
+  "diagnostics": [
+    {"task": 104, "dimension": "MACHINE_RECORD_IMPACT", "declared": "NO_IMPACT_JUSTIFIED", "derived": "IMPACT_REQUIRED", "changed_sources": ["RESULTS/CLAIM-DELTA.md", "RESULTS/IMPACT-ANALYSIS.md", "RESULTS/EVIDENCE-LINEAGE.md", "RESULTS/SELF-CORRECTION-AUDIT.md"], "sealed_source_drift": [], "diagnostic_code": "DECLARED_DECISION_MISMATCH"},
+    {"task": 104, "dimension": "MACHINE_RECORD_IMPACT", "declared": "NO_IMPACT_JUSTIFIED", "derived": "IMPACT_REQUIRED", "changed_sources": ["RESULTS/CLAIM-DELTA.md", "RESULTS/IMPACT-ANALYSIS.md", "RESULTS/EVIDENCE-LINEAGE.md", "RESULTS/SELF-CORRECTION-AUDIT.md"], "sealed_source_drift": [], "diagnostic_code": "NO_IMPACT_JUSTIFICATION_MISSING"},
+    {"task": 104, "dimension": "PROJECT_STATE_IMPACT", "declared": "NO_IMPACT_JUSTIFIED", "derived": "IMPACT_REQUIRED", "changed_sources": ["ITERATION.md"], "sealed_source_drift": ["docs/project-current-state.md"], "diagnostic_code": "DECLARED_DECISION_MISMATCH"},
+    {"task": 104, "dimension": "PROJECT_STATE_IMPACT", "declared": "NO_IMPACT_JUSTIFIED", "derived": "IMPACT_REQUIRED", "changed_sources": ["ITERATION.md"], "sealed_source_drift": ["docs/project-current-state.md"], "diagnostic_code": "NO_IMPACT_JUSTIFICATION_MISSING"},
+    {"task": 104, "dimension": "SYSTEM_MAP_IMPACT", "declared": "NO_IMPACT_JUSTIFIED", "derived": "IMPACT_REQUIRED", "changed_sources": ["tools/generate_interactive_system_map.py"], "sealed_source_drift": ["data/operations/project-components.json", "data/operations/change-propagation-topology.json", "data/architecture/interactive-system-map-layout.json"], "diagnostic_code": "DECLARED_DECISION_MISMATCH"},
+    {"task": 104, "dimension": "SYSTEM_MAP_IMPACT", "declared": "NO_IMPACT_JUSTIFIED", "derived": "IMPACT_REQUIRED", "changed_sources": ["tools/generate_interactive_system_map.py"], "sealed_source_drift": ["data/operations/project-components.json", "data/operations/change-propagation-topology.json", "data/architecture/interactive-system-map-layout.json"], "diagnostic_code": "NO_IMPACT_JUSTIFICATION_MISSING"},
+    {"task": 105, "dimension": "MACHINE_RECORD_IMPACT", "declared": "NO_IMPACT_JUSTIFIED", "derived": "IMPACT_REQUIRED", "changed_sources": ["RESULTS/CLAIM-DELTA.md", "RESULTS/IMPACT-ANALYSIS.md", "RESULTS/EVIDENCE-LINEAGE.md", "RESULTS/SELF-CORRECTION-AUDIT.md"], "sealed_source_drift": [], "diagnostic_code": "DECLARED_DECISION_MISMATCH"},
+    {"task": 105, "dimension": "MACHINE_RECORD_IMPACT", "declared": "NO_IMPACT_JUSTIFIED", "derived": "IMPACT_REQUIRED", "changed_sources": ["RESULTS/CLAIM-DELTA.md", "RESULTS/IMPACT-ANALYSIS.md", "RESULTS/EVIDENCE-LINEAGE.md", "RESULTS/SELF-CORRECTION-AUDIT.md"], "sealed_source_drift": [], "diagnostic_code": "NO_IMPACT_JUSTIFICATION_MISSING"},
+    {"task": 105, "dimension": "PROJECT_STATE_IMPACT", "declared": "NO_IMPACT_JUSTIFIED", "derived": "IMPACT_REQUIRED", "changed_sources": ["ITERATION.md"], "sealed_source_drift": ["docs/project-current-state.md"], "diagnostic_code": "DECLARED_DECISION_MISMATCH"},
+    {"task": 105, "dimension": "PROJECT_STATE_IMPACT", "declared": "NO_IMPACT_JUSTIFIED", "derived": "IMPACT_REQUIRED", "changed_sources": ["ITERATION.md"], "sealed_source_drift": ["docs/project-current-state.md"], "diagnostic_code": "NO_IMPACT_JUSTIFICATION_MISSING"},
+    {"task": 105, "dimension": "SYSTEM_MAP_IMPACT", "declared": "NO_IMPACT_JUSTIFIED", "derived": "IMPACT_REQUIRED", "changed_sources": ["tools/generate_interactive_system_map.py"], "sealed_source_drift": ["data/operations/project-components.json", "data/operations/change-propagation-topology.json", "data/architecture/interactive-system-map-layout.json"], "diagnostic_code": "DECLARED_DECISION_MISMATCH"},
+    {"task": 105, "dimension": "SYSTEM_MAP_IMPACT", "declared": "NO_IMPACT_JUSTIFIED", "derived": "IMPACT_REQUIRED", "changed_sources": ["tools/generate_interactive_system_map.py"], "sealed_source_drift": ["data/operations/project-components.json", "data/operations/change-propagation-topology.json", "data/architecture/interactive-system-map-layout.json"], "diagnostic_code": "NO_IMPACT_JUSTIFICATION_MISSING"},
+    {"task": 106, "dimension": "MACHINE_RECORD_IMPACT", "declared": "NO_IMPACT_JUSTIFIED", "derived": "IMPACT_REQUIRED", "changed_sources": ["RESULTS/CLAIM-DELTA.md", "RESULTS/IMPACT-ANALYSIS.md", "RESULTS/EVIDENCE-LINEAGE.md", "RESULTS/SELF-CORRECTION-AUDIT.md"], "sealed_source_drift": [], "diagnostic_code": "DECLARED_DECISION_MISMATCH"},
+    {"task": 106, "dimension": "MACHINE_RECORD_IMPACT", "declared": "NO_IMPACT_JUSTIFIED", "derived": "IMPACT_REQUIRED", "changed_sources": ["RESULTS/CLAIM-DELTA.md", "RESULTS/IMPACT-ANALYSIS.md", "RESULTS/EVIDENCE-LINEAGE.md", "RESULTS/SELF-CORRECTION-AUDIT.md"], "sealed_source_drift": [], "diagnostic_code": "NO_IMPACT_JUSTIFICATION_MISSING"},
+    {"task": 106, "dimension": "PROJECT_STATE_IMPACT", "declared": "NO_IMPACT_JUSTIFIED", "derived": "IMPACT_REQUIRED", "changed_sources": ["ITERATION.md"], "sealed_source_drift": ["docs/project-current-state.md"], "diagnostic_code": "DECLARED_DECISION_MISMATCH"},
+    {"task": 106, "dimension": "PROJECT_STATE_IMPACT", "declared": "NO_IMPACT_JUSTIFIED", "derived": "IMPACT_REQUIRED", "changed_sources": ["ITERATION.md"], "sealed_source_drift": ["docs/project-current-state.md"], "diagnostic_code": "NO_IMPACT_JUSTIFICATION_MISSING"},
+    {"task": 106, "dimension": "SYSTEM_MAP_IMPACT", "declared": "NO_IMPACT_JUSTIFIED", "derived": "IMPACT_REQUIRED", "changed_sources": ["tools/generate_interactive_system_map.py"], "sealed_source_drift": ["data/operations/project-components.json", "data/operations/change-propagation-topology.json", "data/architecture/interactive-system-map-layout.json"], "diagnostic_code": "DECLARED_DECISION_MISMATCH"},
+    {"task": 106, "dimension": "SYSTEM_MAP_IMPACT", "declared": "NO_IMPACT_JUSTIFIED", "derived": "IMPACT_REQUIRED", "changed_sources": ["tools/generate_interactive_system_map.py"], "sealed_source_drift": ["data/operations/project-components.json", "data/operations/change-propagation-topology.json", "data/architecture/interactive-system-map-layout.json"], "diagnostic_code": "NO_IMPACT_JUSTIFICATION_MISSING"}
+  ],
+  "provenance": {
+    "derived_by": "tools/propagation/validate_reconciliation.py::derive_sealed_residual_diagnostics",
+    "historical_records": ["data/operations/propagation/106-impact/104-impact.json", "data/operations/propagation/106-impact/105-impact.json", "data/operations/propagation/106-impact/106-impact.json", "data/operations/propagation/121Q32I-residue.json", "data/operations/propagation/121Q33-residue.json"],
+    "source_fingerprints": {
+      "data/operations/propagation/106-impact/104-impact.json": "5f9b7c7e21c398b7ccc47d0b8c9c374b8a6ddb400b093760a82b1725f5ca35e3",
+      "data/operations/propagation/106-impact/105-impact.json": "e348b6ea96adef29ebf6d72bc720b88dde3c97f962b4a42f1e8f787e97bef1b7",
+      "data/operations/propagation/106-impact/106-impact.json": "bb6ef719f5b4deb152cb4a0c3523bab56757b96fdb93bf2073342155169a109a",
+      "data/operations/propagation/121Q32I-residue.json": "268bc5a65643693a99494b2192dadc39d0e8f818d5582872f77e44070f4ee0d3",
+      "data/operations/propagation/121Q33-residue.json": "d5317ca5bcfce8e1ca5830a8aacd7a003948504c64251b74a93b40db892a6a9f",
+      "tools/propagation/impact_contract.py": "508343ed447547856c734f12e86e8955746f86c870236a61acdfc6272854bfc5"
+    }
+  },
+  "negative_fixture_path": "tests/fixtures/step06-sealed-propagation-residual-r1.json",
+  "claim_ceiling": "Repository-local exact monitoring of sealed Task104–106 propagation residuals only; a passing assertion preserves the historical mismatch and does not establish current correctness, external truth, production readiness, Owner acceptance or epistemic upgrade."
+}

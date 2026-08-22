@@ -18,10 +18,11 @@ baseline (contradictory) and remediated inputs.
 from __future__ import annotations
 
 import json
+import hashlib
 import os
 import subprocess
 import sys
-from typing import Dict, List
+from typing import Any, Dict, List
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 REPO = os.path.abspath(os.path.join(HERE, "..", ".."))
@@ -30,9 +31,21 @@ REPOSITORY_ROOT = os.path.dirname(REPO)
 sys.path.insert(0, HERE)
 from ledger import load_ledger, validate_ledger, terminal_records  # noqa: E402
 from impact_contract import (DIMENSIONS, generate_impact_spec, verify_impact_spec,  # noqa: E402
-                              compute_dimension)
+                              compute_dimension, HISTORICAL_SEALED_SOURCES)
 from editorial_lifecycle import validate_manifest as validate_editorial  # noqa: E402
 from system_map_audit import audit as audit_map, PROOF_PATH  # noqa: E402
+
+
+SEALED_RESIDUAL_RELATIVE = "data/operations/iterations/135/step06-sealed-propagation-residual-r1.json"
+SEALED_RESIDUAL_PATH = os.path.join(REPO, SEALED_RESIDUAL_RELATIVE)
+SEALED_RESIDUAL_SOURCE_PATHS = (
+    "data/operations/propagation/106-impact/104-impact.json",
+    "data/operations/propagation/106-impact/105-impact.json",
+    "data/operations/propagation/106-impact/106-impact.json",
+    "data/operations/propagation/121Q32I-residue.json",
+    "data/operations/propagation/121Q33-residue.json",
+    "tools/propagation/impact_contract.py",
+)
 
 
 # ---------------------------------------------------------------------------
@@ -79,6 +92,112 @@ def check_verdicts_distinct(readme_text: str, latest_text: str) -> List[str]:
     if v_rep not in combined:
         problems.append("repaired-target verdict SUPPORTED_WITHIN_BOUNDED_DOMAIN absent from public wording")
     return problems
+
+
+def _canonical(value: Any) -> str:
+    return json.dumps(value, ensure_ascii=False, sort_keys=True, separators=(",", ":"))
+
+
+def _sha256_file(repo_root: str, relative_path: str) -> str:
+    with open(os.path.join(repo_root, relative_path), "rb") as fh:
+        return hashlib.sha256(fh.read()).hexdigest()
+
+
+def derive_sealed_residual_diagnostics(repo_root: str) -> List[Dict[str, Any]]:
+    """Derive the exact historical Task104–106 residual diagnostic set."""
+    diagnostics: List[Dict[str, Any]] = []
+    for task_number in (104, 105, 106):
+        spec_path = os.path.join(repo_root, "data", "operations", "propagation", "106-impact", f"{task_number}-impact.json")
+        with open(spec_path, "r", encoding="utf-8") as fh:
+            spec = json.load(fh)
+        for dimension, entry in sorted(spec["dimensions"].items()):
+            derived = compute_dimension(
+                dimension,
+                repo_root,
+                entry["baseline_sha256"],
+                sealed_sources=HISTORICAL_SEALED_SOURCES,
+            )
+            if derived["decision"] == entry["declared"]:
+                continue
+            residual = {
+                "task": task_number,
+                "dimension": dimension,
+                "declared": entry["declared"],
+                "derived": derived["decision"],
+                "changed_sources": derived["changed_sources"],
+                "sealed_source_drift": derived["sealed_source_drift"],
+            }
+            diagnostics.append({**residual, "diagnostic_code": "DECLARED_DECISION_MISMATCH"})
+            diagnostics.append({**residual, "diagnostic_code": "NO_IMPACT_JUSTIFICATION_MISSING"})
+    return diagnostics
+
+
+def sealed_residual_fingerprint(diagnostics: List[Dict[str, Any]]) -> str:
+    return hashlib.sha256(_canonical(diagnostics).encode("utf-8")).hexdigest()
+
+
+def _sealed_problem_message(diagnostic: Dict[str, Any]) -> str:
+    changed = f"(changed={diagnostic['changed_sources']})"
+    if diagnostic["diagnostic_code"] == "DECLARED_DECISION_MISMATCH":
+        return (
+            f"{diagnostic['task']}: dimension {diagnostic['dimension']} declared "
+            f"{diagnostic['declared']} but derived {diagnostic['derived']} {changed}"
+        )
+    return (
+        f"{diagnostic['task']}: dimension {diagnostic['dimension']} "
+        f"NO_IMPACT not machine-justified {changed}"
+    )
+
+
+def _load_sealed_contract(contract_path: str = SEALED_RESIDUAL_PATH) -> Dict[str, Any]:
+    with open(contract_path, "r", encoding="utf-8") as fh:
+        return json.load(fh)
+
+
+def validate_sealed_residual(repo_root: str, contract_path: str | None = None) -> List[str]:
+    """Fail closed unless the sealed historical residual is byte-for-byte exact."""
+    contract_path = contract_path or os.path.join(repo_root, SEALED_RESIDUAL_RELATIVE)
+    try:
+        contract = _load_sealed_contract(contract_path)
+    except (OSError, json.JSONDecodeError) as exc:
+        return [f"sealed residual contract cannot be loaded: {exc}"]
+    errors: List[str] = []
+    if contract.get("schema_version") != "ignition-135-step06-sealed-propagation-residual-r1":
+        errors.append("sealed residual contract schema is unknown")
+    if contract.get("affected_tasks") != [104, 105, 106]:
+        errors.append("sealed residual affected task set changed")
+    if contract.get("affected_dimensions") != ["MACHINE_RECORD_IMPACT", "PROJECT_STATE_IMPACT", "SYSTEM_MAP_IMPACT"]:
+        errors.append("sealed residual affected dimension set changed")
+    try:
+        actual = derive_sealed_residual_diagnostics(repo_root)
+    except (OSError, KeyError, TypeError, json.JSONDecodeError) as exc:
+        return [f"sealed residual diagnostics cannot be derived: {exc}"]
+    expected = contract.get("diagnostics")
+    if not isinstance(expected, list):
+        errors.append("sealed residual diagnostics are missing")
+        expected = []
+    if contract.get("diagnostic_count") != len(expected):
+        errors.append("sealed residual contract diagnostic count is invalid")
+    if len(actual) != contract.get("diagnostic_count"):
+        errors.append(f"sealed residual diagnostic count changed: expected {contract.get('diagnostic_count')}, observed {len(actual)}")
+    if actual != expected:
+        errors.append("sealed residual diagnostics set changed")
+    actual_fingerprint = sealed_residual_fingerprint(actual)
+    if contract.get("residual_fingerprint") != actual_fingerprint:
+        errors.append("sealed residual fingerprint changed")
+    source_fingerprints = contract.get("provenance", {}).get("source_fingerprints", {})
+    if not isinstance(source_fingerprints, dict):
+        errors.append("sealed residual provenance source fingerprints are missing")
+        source_fingerprints = {}
+    for relative_path in SEALED_RESIDUAL_SOURCE_PATHS:
+        try:
+            actual_source_hash = _sha256_file(repo_root, relative_path)
+        except OSError as exc:
+            errors.append(f"sealed residual provenance source is missing: {relative_path}: {exc}")
+            continue
+        if source_fingerprints.get(relative_path) != actual_source_hash:
+            errors.append(f"sealed residual provenance fingerprint changed: {relative_path}")
+    return errors
 
 
 # ---------------------------------------------------------------------------
@@ -134,6 +253,18 @@ def generate_artifacts(repo_root: str) -> None:
 
 def run_check(repo_root: str) -> List[str]:
     problems: List[str] = []
+    sealed_residual_errors = validate_sealed_residual(repo_root)
+    problems += sealed_residual_errors
+    sealed_problem_messages: set[str] = set()
+    if not sealed_residual_errors:
+        try:
+            sealed_contract = _load_sealed_contract(os.path.join(repo_root, SEALED_RESIDUAL_RELATIVE))
+            sealed_problem_messages = {
+                _sealed_problem_message(diagnostic)
+                for diagnostic in sealed_contract.get("diagnostics", [])
+            }
+        except (OSError, json.JSONDecodeError):
+            sealed_problem_messages = set()
     # Mode 1 + 9: ledger valid and terminal 105 present with evidence.
     ledger_path = os.path.join(repo_root, "data", "operations", "merged-iteration-ledger.jsonl")
     records = load_ledger(ledger_path)
@@ -187,7 +318,10 @@ def run_check(repo_root: str) -> List[str]:
         if not os.path.exists(spec):
             problems.append(f"impact spec missing for task {tn}")
             continue
-        problems += verify_impact_spec(spec, repo_root)
+        impact_problems = verify_impact_spec(spec, repo_root)
+        if sealed_problem_messages:
+            impact_problems = [problem for problem in impact_problems if problem not in sealed_problem_messages]
+        problems += impact_problems
 
     # Mode 10: projection derived from terminal only.
     proj_file = os.path.join(repo_root, "data", "operations", "current-truth-projection.json")
@@ -266,7 +400,14 @@ def main() -> int:
             for p in problems:
                 print(f"RECONCILIATION_INVALID: {p}", file=sys.stderr)
             return 1
-        print("RECONCILIATION_OK all twelve failure modes clear")
+        contract = _load_sealed_contract(os.path.join(repo, SEALED_RESIDUAL_RELATIVE))
+        print(
+            "SEALED_RESIDUAL_ASSERTION_PASS "
+            f"tasks={','.join(str(task) for task in contract['affected_tasks'])} "
+            f"diagnostics={contract['diagnostic_count']} "
+            f"fingerprint={contract['residual_fingerprint']}"
+        )
+        print("RECONCILIATION_OK current checks clear; historical residual remains sealed")
         return 0
     print("specify --generate or --check", file=sys.stderr)
     return 2

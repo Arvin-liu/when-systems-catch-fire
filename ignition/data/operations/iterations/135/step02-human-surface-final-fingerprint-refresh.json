@@ -12,11 +12,11 @@
     "source_fingerprint_only": true
   },
   "current_source_sha256": {
-    "AI-HANDOFF.md": "f1df97419143b65502e8d0afc6534e860d5bda2c88d46f742f59793e5dd90cf4",
-    "ARCHITECTURE.md": "a7884b3d65e044a2b03b7f89b43b7b0eddede60ed4bf604e16032b99d3196843",
-    "docs/project-current-state.md": "71c771af009afd9b1edb5390cc5824ecd3bbd297d0313ed90b170042bcd5f3e1",
-    "llms.txt": "49c3366a0f7fdb6de86a2439fbd4dcb320c1cfd2220b34169e7baac9b12fec07",
-    "AI-START-HERE.md": "79f10799108692002430c5c7d7c53322eef919e33674b1a4cbdd4f4a1eee0498"
+    "AI-HANDOFF.md": "dcb470854476278f0d9292e67ac1deb1b43f183bb5d49dd517d9f1561f31ce73",
+    "ARCHITECTURE.md": "379323e9165d421c00bb3504ca15debcadb4a434d5a3cc0be8ea15df09fc6e40",
+    "docs/project-current-state.md": "50531011c183aaba910f82835c9a06dbcdc506adc1a5042c4f5d89271afc5412",
+    "llms.txt": "47ccfd431988d54146f49d372365bd0fc1e00cd9664d7367a23290d4d1037637",
+    "AI-START-HERE.md": "5d967da19c55aa40b187824ac2a5c07d8b0fc518c9db01fe49435cf4020e2024"
   },
   "validator": "HUMAN_SURFACE_CONTRACT_OK human_entries=48 machine_components=94 visible_graph_nodes=82 typed_graph_edges=87",
   "claim_ceiling": "Repository-local Human Surface semantic audit and fingerprint refresh only; no external truth, production readiness, Owner acceptance or epistemic acceptance is inferred."

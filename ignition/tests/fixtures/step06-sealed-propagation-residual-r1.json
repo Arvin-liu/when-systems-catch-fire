@@ -1,0 +1,10 @@
+{
+  "schema_version": "ignition-135-step06-sealed-propagation-residual-fixtures-r1",
+  "cases": [
+    {"case_id": "exact_sealed_residual", "expected_status": "PASS"},
+    {"case_id": "added_diagnostic", "expected_status": "FAIL"},
+    {"case_id": "removed_diagnostic", "expected_status": "FAIL"},
+    {"case_id": "mutated_diagnostic", "expected_status": "FAIL"},
+    {"case_id": "new_task_same_dimension", "expected_status": "FAIL"}
+  ]
+}

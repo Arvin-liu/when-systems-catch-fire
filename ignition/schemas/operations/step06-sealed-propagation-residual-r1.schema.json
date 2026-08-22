@@ -1,0 +1,98 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "task_id",
+    "step",
+    "status",
+    "contract_id",
+    "affected_tasks",
+    "affected_dimensions",
+    "diagnostic_count",
+    "residual_fingerprint",
+    "diagnostics",
+    "provenance",
+    "negative_fixture_path",
+    "claim_ceiling"
+  ],
+  "properties": {
+    "schema_version": {"const": "ignition-135-step06-sealed-propagation-residual-r1"},
+    "task_id": {"const": "IGNITION-20260822-135"},
+    "step": {"const": "06"},
+    "status": {"const": "PASS"},
+    "contract_id": {"const": "SEALED_TASK104_106_PROPAGATION_RESIDUAL_R1"},
+    "affected_tasks": {"const": [104, 105, 106]},
+    "affected_dimensions": {
+      "const": ["MACHINE_RECORD_IMPACT", "PROJECT_STATE_IMPACT", "SYSTEM_MAP_IMPACT"]
+    },
+    "diagnostic_count": {"const": 18},
+    "residual_fingerprint": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "diagnostics": {
+      "type": "array",
+      "minItems": 18,
+      "maxItems": 18,
+      "items": {
+        "type": "object",
+        "required": [
+          "task",
+          "dimension",
+          "declared",
+          "derived",
+          "changed_sources",
+          "sealed_source_drift",
+          "diagnostic_code"
+        ],
+        "properties": {
+          "task": {"enum": [104, 105, 106]},
+          "dimension": {
+            "enum": ["MACHINE_RECORD_IMPACT", "PROJECT_STATE_IMPACT", "SYSTEM_MAP_IMPACT"]
+          },
+          "declared": {"const": "NO_IMPACT_JUSTIFIED"},
+          "derived": {"const": "IMPACT_REQUIRED"},
+          "changed_sources": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+          "sealed_source_drift": {"type": "array", "items": {"type": "string"}},
+          "diagnostic_code": {
+            "enum": ["DECLARED_DECISION_MISMATCH", "NO_IMPACT_JUSTIFICATION_MISSING"]
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "required": ["derived_by", "historical_records", "source_fingerprints"],
+      "properties": {
+        "derived_by": {
+          "const": "tools/propagation/validate_reconciliation.py::derive_sealed_residual_diagnostics"
+        },
+        "historical_records": {
+          "const": [
+            "data/operations/propagation/106-impact/104-impact.json",
+            "data/operations/propagation/106-impact/105-impact.json",
+            "data/operations/propagation/106-impact/106-impact.json",
+            "data/operations/propagation/121Q32I-residue.json",
+            "data/operations/propagation/121Q33-residue.json"
+          ]
+        },
+        "source_fingerprints": {
+          "type": "object",
+          "required": [
+            "data/operations/propagation/106-impact/104-impact.json",
+            "data/operations/propagation/106-impact/105-impact.json",
+            "data/operations/propagation/106-impact/106-impact.json",
+            "data/operations/propagation/121Q32I-residue.json",
+            "data/operations/propagation/121Q33-residue.json",
+            "tools/propagation/impact_contract.py"
+          ],
+          "patternProperties": {"^.*$": {"type": "string", "pattern": "^[0-9a-f]{64}$"}},
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "negative_fixture_path": {"const": "tests/fixtures/step06-sealed-propagation-residual-r1.json"},
+    "claim_ceiling": {"type": "string", "minLength": 1}
+  },
+  "additionalProperties": false
+}

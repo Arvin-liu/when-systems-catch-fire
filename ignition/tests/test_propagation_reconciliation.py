@@ -19,10 +19,18 @@ import os
 import sys
 import tempfile
 import unittest
+from copy import deepcopy
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 REPO = os.path.abspath(os.path.join(HERE, ".."))
 PROP = os.path.join(REPO, "tools", "propagation")
+SEALED_CONTRACT = os.path.join(
+    REPO, "data", "operations", "iterations", "135",
+    "step06-sealed-propagation-residual-r1.json",
+)
+SEALED_FIXTURE = os.path.join(
+    REPO, "tests", "fixtures", "step06-sealed-propagation-residual-r1.json",
+)
 sys.path.insert(0, PROP)
 
 from ledger import load_ledger, validate_ledger  # noqa: E402
@@ -62,6 +70,53 @@ class TestRemediatedRepository(unittest.TestCase):
         recs = load_ledger(os.path.join(REPO, "data", "operations", "merged-iteration-ledger.jsonl"))
         self.assertEqual(validate_ledger(recs), [])
         self.assertEqual(vr.check_ledger_has_terminal(recs, 105), [])
+
+
+class TestSealedResidualContract(unittest.TestCase):
+    """Historical residuals pass only when the sealed set is exact."""
+
+    def _contract(self):
+        with open(SEALED_CONTRACT, "r", encoding="utf-8") as fh:
+            return json.load(fh)
+
+    def test_exact_contract_passes_and_residual_is_explicit(self):
+        contract = self._contract()
+        self.assertEqual([], vr.validate_sealed_residual(REPO))
+        actual = vr.derive_sealed_residual_diagnostics(REPO)
+        self.assertEqual(18, len(actual))
+        self.assertEqual(contract["diagnostics"], actual)
+        self.assertEqual(contract["residual_fingerprint"], vr.sealed_residual_fingerprint(actual))
+        self.assertEqual({104, 105, 106}, {item["task"] for item in actual})
+
+    def test_fixture_cases_fail_closed(self):
+        with open(SEALED_FIXTURE, "r", encoding="utf-8") as fh:
+            fixture = json.load(fh)
+        contract = self._contract()
+        for case in fixture["cases"]:
+            candidate = deepcopy(contract)
+            case_id = case["case_id"]
+            if case_id == "exact_sealed_residual":
+                pass
+            elif case_id == "added_diagnostic":
+                candidate["diagnostics"].append(deepcopy(candidate["diagnostics"][0]))
+            elif case_id == "removed_diagnostic":
+                candidate["diagnostics"].pop()
+            elif case_id == "mutated_diagnostic":
+                candidate["diagnostics"][0]["diagnostic_code"] = "MUTATED_DIAGNOSTIC"
+            elif case_id == "new_task_same_dimension":
+                extra = deepcopy(candidate["diagnostics"][0])
+                extra["task"] = 107
+                candidate["diagnostics"].append(extra)
+            else:
+                self.fail(f"unhandled fixture case: {case_id}")
+            with tempfile.TemporaryDirectory() as tmp:
+                path = os.path.join(tmp, "sealed-residual.json")
+                with open(path, "w", encoding="utf-8") as fh:
+                    json.dump(candidate, fh, ensure_ascii=False, sort_keys=True)
+                errors = vr.validate_sealed_residual(REPO, path)
+            passed = not errors
+            expected = case["expected_status"] == "PASS"
+            self.assertEqual(expected, passed, f"{case_id}: {errors}")
 
 
 class TestEditorialLifecycle(unittest.TestCase):
