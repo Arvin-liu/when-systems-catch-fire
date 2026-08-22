@@ -1,0 +1,14 @@
+{
+  "schema_version": "ignition-134-step05-current-path-manifest-r1",
+  "task_id": "IGNITION-20260822-134",
+  "step": "05",
+  "status": "PASS",
+  "source_kind": "CURRENT_GENERATED_SNAPSHOT_OF_LIVE_ENGINE_OUTPUT",
+  "manifest_path": "ignition/data/foundation/repository-path-classification/classification-manifest.jsonl",
+  "before": {"tracked": 2978, "manifest": 2720, "missing": 258, "stale": 0},
+  "after": {"tracked": 2980, "manifest": 2980, "missing": 0, "stale": 0, "unresolved": 0, "duplicate": 0, "category_changed": 0, "anti_backflow": 0},
+  "determinism": {"generation_passes": 2, "byte_identical": true},
+  "temporary_fixture": {"staged_without_regeneration_failed_check": true, "regenerated_formal_manifest_included_fixture": false, "fixture_committed": false},
+  "authoritative_allowlist_expanded": false,
+  "claim_ceiling": "Repository-local Current path-manifest generation and determinism evidence only; no external truth, production readiness, Owner acceptance or epistemic acceptance is inferred."
+}
