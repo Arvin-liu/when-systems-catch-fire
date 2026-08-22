@@ -1,0 +1,45 @@
+{
+  "schema_version": "ignition-134-step09-sympy-environment-contract-r1",
+  "task_id": "IGNITION-20260822-134",
+  "step": "09",
+  "status": "PASS",
+  "declared_dependency_file": "ignition/requirements-foundation.txt",
+  "declared_dependencies": {
+    "sympy": "1.14.0",
+    "z3_solver": "4.16.0.0",
+    "jsonschema": "4.26.0"
+  },
+  "isolation": {
+    "kind": "temporary_foundation_venv_only",
+    "repository_modified": false,
+    "external_agent_install_or_upgrade": false,
+    "external_configuration_changed": false,
+    "secret_content_read": false,
+    "local_venv_path_persisted_in_receipt": false
+  },
+  "commands": {
+    "install": "python3 -m venv <temporary-foundation-venv> && <temporary-foundation-venv>/bin/python -m pip install --disable-pip-version-check -r ignition/requirements-foundation.txt",
+    "core_replay": "PYTHONPATH=ignition <temporary-foundation-venv>/bin/python ignition/tools/foundation/verify_core_claims.py --check"
+  },
+  "observed_versions": {
+    "sympy": "1.14.0",
+    "z3_solver": "4.16.0",
+    "jsonschema": "4.26.0"
+  },
+  "results": {
+    "T16_SYMPY_COUNTEREXAMPLE": {"status": "PASS", "detail": "COUNTEREXAMPLE_VERIFIED"},
+    "T2_Z3_PROOF": {"status": "PASS", "detail": "PROVED_BY_UNSAT_NEGATION"},
+    "D220_Z3_COUNTERMODEL": {"status": "PASS", "detail": "COUNTERMODEL_VERIFIED"},
+    "T2_LEAN_PROOF": {"status": "PASS", "detail": "PROVED"},
+    "T23_PENDING": {"status": "PENDING", "detail": "UNPROVED_PROPOSITION"},
+    "core_checks_total": 5,
+    "core_checks_passed": 5
+  },
+  "residual_policy": {
+    "default_environmental_observation_preserved": true,
+    "executor_inventory_rewritten": false,
+    "proof_or_claim_status_upgraded": false,
+    "reason": "The controlled declared environment proves reproducibility of T16; the existing default-environment observation remains an environmental classification rather than being silently deleted or promoted."
+  },
+  "claim_ceiling": "Repository-local declared-environment replay evidence for the named bounded checks only; no whole-project proof, external truth, production readiness, Owner acceptance or epistemic acceptance is inferred."
+}
