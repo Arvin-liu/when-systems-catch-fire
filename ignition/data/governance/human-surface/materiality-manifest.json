@@ -3,7 +3,7 @@
     "function_human": 24,
     "function_machine": 5611,
     "nonfunction_human": 24,
-    "nonfunction_machine": 16209
+    "nonfunction_machine": 16240
   },
   "entries": [
     {
@@ -80,7 +80,7 @@
       "machine_source": "data/foundation/function-assets/census.jsonl",
       "selection_reason": "materiality policy: representative, boundary-sensitive, or disposition-sensitive record",
       "source_path": "AI-HANDOFF.md",
-      "source_sha256": "8a6e233dfe1e0c7bc35eb481092efb024de7a2a5d2af279e6f54b3f5aa221205",
+      "source_sha256": "d174ce365bba3747255f50a6f9c3b415098fabfeaae490b8d64c8893bacfde1a",
       "writing_method": "之元写作法 0.5.0"
     },
     {
@@ -91,7 +91,7 @@
       "machine_source": "data/foundation/function-assets/census.jsonl",
       "selection_reason": "materiality policy: representative, boundary-sensitive, or disposition-sensitive record",
       "source_path": "AI-HANDOFF.md",
-      "source_sha256": "8a6e233dfe1e0c7bc35eb481092efb024de7a2a5d2af279e6f54b3f5aa221205",
+      "source_sha256": "d174ce365bba3747255f50a6f9c3b415098fabfeaae490b8d64c8893bacfde1a",
       "writing_method": "之元写作法 0.5.0"
     },
     {
@@ -179,7 +179,7 @@
       "machine_source": "data/foundation/function-assets/census.jsonl",
       "selection_reason": "materiality policy: representative, boundary-sensitive, or disposition-sensitive record",
       "source_path": "AI-HANDOFF.md",
-      "source_sha256": "8a6e233dfe1e0c7bc35eb481092efb024de7a2a5d2af279e6f54b3f5aa221205",
+      "source_sha256": "d174ce365bba3747255f50a6f9c3b415098fabfeaae490b8d64c8893bacfde1a",
       "writing_method": "之元写作法 0.5.0"
     },
     {
@@ -190,7 +190,7 @@
       "machine_source": "data/foundation/function-assets/census.jsonl",
       "selection_reason": "materiality policy: representative, boundary-sensitive, or disposition-sensitive record",
       "source_path": "AI-HANDOFF.md",
-      "source_sha256": "8a6e233dfe1e0c7bc35eb481092efb024de7a2a5d2af279e6f54b3f5aa221205",
+      "source_sha256": "d174ce365bba3747255f50a6f9c3b415098fabfeaae490b8d64c8893bacfde1a",
       "writing_method": "之元写作法 0.5.0"
     },
     {
@@ -256,7 +256,7 @@
       "machine_source": "data/foundation/function-assets/census.jsonl",
       "selection_reason": "materiality policy: representative, boundary-sensitive, or disposition-sensitive record",
       "source_path": "AI-HANDOFF.md",
-      "source_sha256": "8a6e233dfe1e0c7bc35eb481092efb024de7a2a5d2af279e6f54b3f5aa221205",
+      "source_sha256": "d174ce365bba3747255f50a6f9c3b415098fabfeaae490b8d64c8893bacfde1a",
       "writing_method": "之元写作法 0.5.0"
     },
     {
@@ -267,7 +267,7 @@
       "machine_source": "data/foundation/function-assets/census.jsonl",
       "selection_reason": "materiality policy: representative, boundary-sensitive, or disposition-sensitive record",
       "source_path": "ARCHITECTURE.md",
-      "source_sha256": "8753578961bfec92f5af567add0f7fe82df2067c8523d36b64ece19ae5ea4e21",
+      "source_sha256": "bb1861533f57d8e7dd361446ef242dd6dd98dc9c59d03b183bc5f1686ce0e752",
       "writing_method": "之元写作法 0.5.0"
     },
     {
@@ -421,7 +421,7 @@
       "machine_source": "data/foundation/nonfunction-claims/claim-registry.jsonl",
       "selection_reason": "materiality policy: representative, boundary-sensitive, or disposition-sensitive record",
       "source_path": "docs/project-current-state.md",
-      "source_sha256": "868ebcd3eeab29c3ee92c1a0fa8c2259a6636ac35cd43484876fd1b5fea2018e",
+      "source_sha256": "b8e727cefb42026c834e12de2f495efbd219071b312aff02af04d7d8d9691ad7",
       "writing_method": "之元写作法 0.5.0"
     },
     {
@@ -454,7 +454,7 @@
       "machine_source": "data/foundation/nonfunction-claims/claim-registry.jsonl",
       "selection_reason": "materiality policy: representative, boundary-sensitive, or disposition-sensitive record",
       "source_path": "llms.txt",
-      "source_sha256": "6057b484954301a6ee0a498708b44e115151715ca1dee446b4b06e381117bcc8",
+      "source_sha256": "4b3f95276294ac47c0ef817853c6acf98525368c7780d268909ab2bb35cf8aee",
       "writing_method": "之元写作法 0.5.0"
     },
     {
@@ -465,7 +465,7 @@
       "machine_source": "data/foundation/nonfunction-claims/claim-registry.jsonl",
       "selection_reason": "materiality policy: representative, boundary-sensitive, or disposition-sensitive record",
       "source_path": "AI-START-HERE.md",
-      "source_sha256": "a209d968eae4b6af8843530fe0877dff3a1c3ed1b4bd7b78cc43ffe57d1390b3",
+      "source_sha256": "8ed26bad1f0cf3f3e754685e26c051efaffd7b8fc341ede15837cd81d8f6b017",
       "writing_method": "之元写作法 0.5.0"
     },
     {
@@ -498,7 +498,7 @@
       "machine_source": "data/foundation/nonfunction-claims/claim-registry.jsonl",
       "selection_reason": "materiality policy: representative, boundary-sensitive, or disposition-sensitive record",
       "source_path": "docs/project-current-state.md",
-      "source_sha256": "868ebcd3eeab29c3ee92c1a0fa8c2259a6636ac35cd43484876fd1b5fea2018e",
+      "source_sha256": "b8e727cefb42026c834e12de2f495efbd219071b312aff02af04d7d8d9691ad7",
       "writing_method": "之元写作法 0.5.0"
     },
     {
@@ -509,7 +509,7 @@
       "machine_source": "data/foundation/nonfunction-claims/claim-registry.jsonl",
       "selection_reason": "materiality policy: representative, boundary-sensitive, or disposition-sensitive record",
       "source_path": "docs/project-current-state.md",
-      "source_sha256": "868ebcd3eeab29c3ee92c1a0fa8c2259a6636ac35cd43484876fd1b5fea2018e",
+      "source_sha256": "b8e727cefb42026c834e12de2f495efbd219071b312aff02af04d7d8d9691ad7",
       "writing_method": "之元写作法 0.5.0"
     },
     {
