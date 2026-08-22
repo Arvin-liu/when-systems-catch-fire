@@ -26,6 +26,35 @@ def source_sha(path: Path) -> str | None:
     return hashlib.sha256(path.read_bytes()).hexdigest() if path.is_file() else None
 
 
+def previous_entries() -> dict[str, dict[str, Any]]:
+    """Load the prior ledger only to preserve sealed observation baselines."""
+    if not LEDGER_PATH.is_file():
+        return {}
+    try:
+        document = json.loads(LEDGER_PATH.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return {}
+    return {entry.get("residual_id"): entry for entry in document.get("residuals", []) if entry.get("residual_id")}
+
+
+def prior_baseline(
+    previous: dict[str, dict[str, Any]],
+    residual_id: str,
+    fallback_objects: list[str],
+    fallback_dimensions: list[str],
+    command: str,
+) -> tuple[list[str], list[str], str]:
+    """Return the old baseline, never the old current observation."""
+    entry = previous.get(residual_id)
+    if entry:
+        return (
+            sorted(set(entry.get("baseline_objects", []))),
+            sorted(set(entry.get("baseline_failure_dimensions", []))),
+            entry.get("baseline_source_command", command),
+        )
+    return sorted(set(fallback_objects)), sorted(set(fallback_dimensions)), command
+
+
 def human_drift_objects() -> list[str]:
     manifest = json.loads(MATERIALITY_PATH.read_text(encoding="utf-8"))
     out: list[str] = []
@@ -103,6 +132,16 @@ def build() -> dict[str, Any]:
     missing = sorted(set(live) - set(manifest))
     human = human_drift_objects()
     full_objects, full_dimensions, full_status, full_command = full_discovery_observation()
+    previous = previous_entries()
+    path_command = "PYTHONPATH=ignition python3 ignition/tools/foundation/validate_repository_path_classification.py --check"
+    human_command = "PYTHONPATH=ignition python3 ignition/tools/validate_human_front_door.py"
+    propagation_command = "PYTHONPATH=ignition python3 ignition/tools/propagation/validate_reconciliation.py --check"
+    sympy_command = "PYTHONPATH=ignition python3 ignition/tools/foundation/verify_core_claims.py --check"
+    path_baseline, path_dimensions, path_baseline_command = prior_baseline(previous, "CURRENT_PATH_MANIFEST_UNACCOUNTED", missing, ["MANIFEST_MISSING_PATH"] if missing else [], path_command)
+    human_baseline, human_dimensions, human_baseline_command = prior_baseline(previous, "HUMAN_SURFACE_SOURCE_HASH_DRIFT", human, ["SOURCE_HASH_DRIFT"] if human else [], human_command)
+    propagation_baseline, propagation_dimensions, propagation_baseline_command = prior_baseline(previous, "PROPAGATION_TASK104_106_MISMATCH", propagation_objects(), ["MACHINE_RECORD_IMPACT", "PROJECT_STATE_IMPACT", "SYSTEM_MAP_IMPACT"], propagation_command)
+    sympy_baseline, sympy_dimensions, sympy_baseline_command = prior_baseline(previous, "T16_SYMPY_COUNTEREXAMPLE", sympy_objects(), ["SYMPY_UNAVAILABLE"] if sympy_objects() else [], sympy_command)
+    full_baseline, full_baseline_dimensions, full_baseline_command = prior_baseline(previous, "FULL_UNITTEST_DISCOVERY_TERMINAL_STATE", ["FULL_DISCOVERY:TIMEOUT_CLASSIFIED_AT_30_SECONDS"], ["FULL_DISCOVERY_TIMEOUT"], full_command)
     entries = [
         make_entry(
             residual_id="CURRENT_PATH_MANIFEST_UNACCOUNTED",
@@ -110,14 +149,15 @@ def build() -> dict[str, Any]:
             classification="CURRENT_PROJECTION_RESIDUAL",
             objects=missing,
             dimensions=["MANIFEST_MISSING_PATH"] if missing else [],
-            command="PYTHONPATH=ignition python3 ignition/tools/foundation/validate_repository_path_classification.py --check",
+            command=path_command,
             validator="ignition/tools/foundation/validate_repository_path_classification.py",
             provenance=["ignition/data/foundation/repository-path-classification/classification-manifest.jsonl", "ignition/agent-results/IGNITION-20260822-133-result.md"],
             allowed="Current manifest must be regenerated; only an unchanged sealed historical observation may remain in historical receipts.",
             impact="NON_BLOCKING_RESOLVED" if not missing else "RELEASE_BLOCKING",
             status="RESOLVED_CURRENT" if not missing else "OPEN_INHERITED",
-            baseline_objects=missing if missing else None,
-            baseline_dimensions=["MANIFEST_MISSING_PATH"] if missing else [],
+            baseline_objects=path_baseline,
+            baseline_dimensions=path_dimensions,
+            baseline_command=path_baseline_command,
         ),
         make_entry(
             residual_id="HUMAN_SURFACE_SOURCE_HASH_DRIFT",
@@ -125,14 +165,15 @@ def build() -> dict[str, Any]:
             classification="CURRENT_HUMAN_SURFACE_PROJECTION_RESIDUAL",
             objects=human,
             dimensions=["SOURCE_HASH_DRIFT"] if human else [],
-            command="PYTHONPATH=ignition python3 ignition/tools/validate_human_front_door.py",
+            command=human_command,
             validator="ignition/tools/governance/validate_human_surface_contract.py",
             provenance=["ignition/data/governance/human-surface/materiality-manifest.json", "ignition/agent-results/IGNITION-20260822-133-result.md"],
             allowed="A source revision requires a semantic decision before fingerprint refresh; Current drift must be zero.",
             impact="NON_BLOCKING_RESOLVED" if not human else "RELEASE_BLOCKING",
             status="RESOLVED_CURRENT" if not human else "OPEN_INHERITED",
-            baseline_objects=human if human else None,
-            baseline_dimensions=["SOURCE_HASH_DRIFT"] if human else [],
+            baseline_objects=human_baseline,
+            baseline_dimensions=human_dimensions,
+            baseline_command=human_baseline_command,
         ),
         make_entry(
             residual_id="PROPAGATION_TASK104_106_MISMATCH",
@@ -140,12 +181,15 @@ def build() -> dict[str, Any]:
             classification="SEALED_HISTORICAL",
             objects=propagation_objects(),
             dimensions=["MACHINE_RECORD_IMPACT", "PROJECT_STATE_IMPACT", "SYSTEM_MAP_IMPACT"],
-            command="PYTHONPATH=ignition python3 ignition/tools/propagation/validate_reconciliation.py --check",
+            command=propagation_command,
             validator="ignition/tools/propagation/validate_reconciliation.py",
             provenance=["ignition/data/operations/propagation/106-impact/104-impact.json", "ignition/data/operations/propagation/106-impact/105-impact.json", "ignition/data/operations/propagation/106-impact/106-impact.json"],
             allowed="Historical sealed fingerprints may persist unchanged; any added object or dimension is a new regression.",
             impact="HISTORICAL_ONLY",
             status="SEALED_HISTORICAL",
+            baseline_objects=propagation_baseline,
+            baseline_dimensions=propagation_dimensions,
+            baseline_command=propagation_baseline_command,
         ),
         make_entry(
             residual_id="T16_SYMPY_COUNTEREXAMPLE",
@@ -153,12 +197,15 @@ def build() -> dict[str, Any]:
             classification="ENVIRONMENTAL",
             objects=sympy_objects(),
             dimensions=["SYMPY_UNAVAILABLE"] if sympy_objects() else [],
-            command="PYTHONPATH=ignition python3 ignition/tools/foundation/verify_core_claims.py --check",
+            command=sympy_command,
             validator="ignition/tools/foundation/verify_core_claims.py",
             provenance=["ignition/data/agent-federation/executor-inventory-r1.json", "ignition/agent-results/IGNITION-20260822-133-result.md"],
             allowed="Declared dependency availability is independent of proof status; unavailable SymPy is environmental, never PASS.",
             impact="ENVIRONMENTAL_ONLY",
             status="ENVIRONMENTAL",
+            baseline_objects=sympy_baseline,
+            baseline_dimensions=sympy_dimensions,
+            baseline_command=sympy_baseline_command,
         ),
         make_entry(
             residual_id="FULL_UNITTEST_DISCOVERY_TERMINAL_STATE",
@@ -172,8 +219,9 @@ def build() -> dict[str, Any]:
             allowed="Only the actual long-window terminal result or a located blocker may be recorded; arbitrary short timeout is not a release result.",
             impact="NON_BLOCKING_IF_UNCHANGED" if full_objects else "NON_BLOCKING_RESOLVED",
             status=full_status,
-            baseline_objects=["FULL_DISCOVERY:TIMEOUT_CLASSIFIED_AT_30_SECONDS"],
-            baseline_dimensions=["FULL_DISCOVERY_TIMEOUT"],
+            baseline_objects=full_baseline,
+            baseline_dimensions=full_baseline_dimensions,
+            baseline_command=full_baseline_command,
         ),
     ]
     return {
