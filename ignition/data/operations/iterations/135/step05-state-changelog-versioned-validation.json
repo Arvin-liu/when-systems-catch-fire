@@ -1,0 +1,48 @@
+{
+  "schema_version": "ignition-135-step05-state-changelog-versioned-validation-r1",
+  "task_id": "IGNITION-20260822-135",
+  "step": "05",
+  "status": "PASS",
+  "validator": {
+    "command": "python3 ignition/tools/validate_state_changelog.py",
+    "result": "STATE_CHANGELOG_VERSIONED_VALID",
+    "current_entries": 2,
+    "historical_entries": 24,
+    "legacy_profiles": 6,
+    "historical_fingerprint_enforced": true
+  },
+  "profiles": {
+    "current": "current-r1",
+    "historical_strict": "historical-current-r0",
+    "historical_legacy": "historical-legacy-r0",
+    "unknown_profile_fail_closed": true
+  },
+  "negative_fixtures": [
+    {
+      "case_id": "current_missing_required_field",
+      "expected_status": "FAIL",
+      "observed_status": "FAIL"
+    },
+    {
+      "case_id": "historical_sealed_exact_legacy",
+      "expected_status": "PASS",
+      "observed_status": "PASS"
+    },
+    {
+      "case_id": "historical_sealed_mutation",
+      "expected_status": "FAIL",
+      "observed_status": "FAIL"
+    },
+    {
+      "case_id": "unknown_legacy_version",
+      "expected_status": "FAIL",
+      "observed_status": "FAIL"
+    },
+    {
+      "case_id": "current_profile_downgrade",
+      "expected_status": "FAIL",
+      "observed_status": "FAIL"
+    }
+  ],
+  "claim_ceiling": "Repository-local versioned STATE-CHANGELOG validation only; historical schema preservation and fingerprint detection do not establish external truth, production readiness, Owner acceptance or epistemic upgrade."
+}

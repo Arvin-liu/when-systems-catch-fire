@@ -1,0 +1,53 @@
+{
+  "schema_version": "state-changelog-profile-r1",
+  "profile_contract": "CURRENT_STRICT_HISTORICAL_VERSIONED",
+  "entry_count": 26,
+  "active_current_ordinals": [25, 26],
+  "historical_entry_count": 24,
+  "legacy_profile_count": 6,
+  "profiles": {
+    "current-r1": {
+      "kind": "current",
+      "required_fields": ["main_state", "delta", "authority_changes", "epistemic_state", "obligations", "stale_knowledge", "next_read"],
+      "base_sha_required": true
+    },
+    "historical-current-r0": {
+      "kind": "historical",
+      "required_fields": ["main_state", "delta", "authority_changes", "epistemic_state", "obligations", "stale_knowledge", "next_read"],
+      "base_sha_required": true
+    },
+    "historical-legacy-r0": {
+      "kind": "historical",
+      "required_fields": [],
+      "base_sha_required": false
+    }
+  },
+  "entries": [
+    {"ordinal": 1, "date": "2026-08-15", "label": "BASELINE-CURRENT — main@19658de18d1c22fff2265f94bcd8a08cdddc0609", "profile": "historical-current-r0", "section_sha256": "22e034cec82614d089885cc01e214371c564a9ccb0e54b13195318a8b7149689"},
+    {"ordinal": 2, "date": "2026-08-15", "label": "STATE-CHANGELOG-ASSERTION-INFLATION-GUARD — main transition from 19658de18d1c22fff2265f94bcd8a08cdddc0609", "profile": "historical-current-r0", "section_sha256": "17862cfebec88dff30dcc219106e81c52abb0804d1e1becf6e33c96c767d822e"},
+    {"ordinal": 3, "date": "2026-08-15", "label": "IGNITION-20260815-116-HUMAN-SURFACE-ROOT-NORMALIZATION-SEEDS-MAP — main transition from f8976749c6ddd78e11ce6572048f94c7383642c1", "profile": "historical-current-r0", "section_sha256": "ad47e9a49abcd693075ef4bd4459b3f6bbb520dadfa428f4eff6837995b748a0"},
+    {"ordinal": 4, "date": "2026-08-15", "label": "IGNITION-20260815-117-FIRE-SEED-CONTENT-ARCHAEOLOGY — main transition from 89b005566bdfe266414c850871793b9dd10ba0af", "profile": "historical-current-r0", "section_sha256": "0723d2c12d8f82d7feac683764e337da353797e15f36b9fc933cd6803dad85da"},
+    {"ordinal": 5, "date": "2026-08-15", "label": "IGNITION-20260815-118-HUMAN-SURFACE-SECOND-REFINEMENT — main transition from 085f7d63b2492e5ee6c95739ccb1addb5608f152", "profile": "historical-current-r0", "section_sha256": "7bc601fbe74c4731f0e526eaabc839c8b3888a4017224e6f45a78a630fac8d1c"},
+    {"ordinal": 6, "date": "2026-08-15", "label": "IGNITION-20260815-119-AGENTIZATION-BOUNDARY-R0 — main transition from 4f4358ef09d1871a48d7e32575a63453130b333c", "profile": "historical-current-r0", "section_sha256": "f989581def61d4fb60728bf5944ecd7ff4caa3cc5f1229dc4e72670fbed9b102"},
+    {"ordinal": 7, "date": "2026-08-15", "label": "IGNITION-20260815-120-AGENT-RUNTIME-R1 — main transition from 834fce29afdadb47adda08a95631303ad0d94fc7", "profile": "historical-current-r0", "section_sha256": "5ecefc44447f431fb88e0bc9a4f8681e4cb27d8419dbd84819e038c9f24dca82"},
+    {"ordinal": 8, "date": "2026-08-16", "label": "IGNITION-20260816-121-AGENT-PLATFORM-R2-NIGHT-SHIFT-PRE-RELEASE — task-branch projection from 2becca3ffd93d6ca1e147a75c159e476f4686f5d", "profile": "historical-current-r0", "section_sha256": "bc2851bdd0b7ecbea780be33fe64815698343db462143cd4a7689757d5b6befc"},
+    {"ordinal": 9, "date": "2026-08-16", "label": "IGNITION-20260816-121-AGENT-PLATFORM-R2-FINAL-CANDIDATE — transition from main@2becca3ffd93d6ca1e147a75c159e476f4686f5d", "profile": "historical-current-r0", "section_sha256": "d79e324370a30bd5a4929e9a34bc0bdff42bc5491461feb30e26b7ea8620d620"},
+    {"ordinal": 10, "date": "2026-08-16", "label": "IGNITION-20260816-122-EXTERNAL-AGENT-FEDERATION-R1-PRE-RELEASE — task-branch projection from 2773c303e57ae53f21acafc111cfe5df9092e062", "profile": "historical-current-r0", "section_sha256": "72717104ed5ca967f8e7383bdf49d3a2a4abfe6467ed6b4f1620352c619d4e6c"},
+    {"ordinal": 11, "date": "2026-08-16", "label": "IGNITION-20260816-122-EXTERNAL-AGENT-FEDERATION-R1-FINAL-CANDIDATE — task-branch final candidate from 2773c303e57ae53f21acafc111cfe5df9092e062", "profile": "historical-current-r0", "section_sha256": "11939409f0d774392084c97045cdf4eb991e56b6b4540cf3dacbf024f86e8bdd"},
+    {"ordinal": 12, "date": "2026-08-17", "label": "IGNITION-20260816-123-CURRENT-STATE-SYNC-R1-STEP-07 — task-branch projection", "profile": "historical-current-r0", "section_sha256": "77aef24772a1f5fab30dad4a7de5222482cbc1b3527019acd96f8a578d0a3232"},
+    {"ordinal": 13, "date": "2026-08-17", "label": "IGNITION-20260816-123-CURRENT-STATE-SYNC-R1-FINAL-CANDIDATE — formal main release candidate from main@d60ec8687fb1cc6b972e831a8f0dcd348ba0e83e", "profile": "historical-current-r0", "section_sha256": "d5cae56f91473e68ad53ec38146b67b5f3795a938bf9d9e56ccdc3b75d807d68"},
+    {"ordinal": 14, "date": "2026-08-17", "label": "IGNITION-20260817-124-OS-CONTROL-PLANE-R2-STEP-11 — task-branch projection", "profile": "historical-current-r0", "section_sha256": "57cef7c6171937bbde816c3b55a5d12166588ef58ea7264726a6576bba114a90"},
+    {"ordinal": 15, "date": "2026-08-20", "label": "IGNITION-20260818-126-ESI-STRUCTURAL-INDUCTION-R0-STEP-15 — task-branch projection", "profile": "historical-current-r0", "section_sha256": "a441f9190d3ebe4ef94970e3e991330a1e6f6acc8d865fc9c5f5b00306a92dc6"},
+    {"ordinal": 16, "date": "2026-08-21", "label": "IGNITION-20260820-127-OS-DURABILITY-LIFECYCLE-R3-STEP-18 — task-branch Current-State projection", "profile": "historical-current-r0", "section_sha256": "7ebbbba3cdfdd5dd410f0aa420c4b24a530500af0370bdda77825f96508ecbc5"},
+    {"ordinal": 17, "date": "2026-08-21", "label": "IGNITION-20260821-128-CURRENT-STATE-SEMANTIC-CLOSURE — task-branch Current-State projection", "profile": "historical-legacy-r0", "section_sha256": "a6c343ed781757ebec0f7ca5ab7fadee6ead705d352d1621fb7fe94046370d86"},
+    {"ordinal": 18, "date": "2026-08-21", "label": "IGNITION-20260821-128-CURRENT-STATE-SEMANTIC-CLOSURE — formal main release delta", "profile": "historical-current-r0", "section_sha256": "8ded04ae96400315267de27c9b693295e00aabf399f77eb094bc017f1c16d0bb"},
+    {"ordinal": 19, "date": "2026-08-21", "label": "IGNITION-20260821-129-OS-STEERING-INTENT-OBLIGATION-R1 — task-branch Current-State projection", "profile": "historical-legacy-r0", "section_sha256": "5fe809e5bc5e9f4776611f342cd080a0256773e9204cb7c4ca264ade4c31dafd"},
+    {"ordinal": 20, "date": "2026-08-21", "label": "IGNITION-20260821-130-CURRENT-SURFACE-COMPILER-R1-TERMINAL-CLOSURE — task-branch release candidate", "profile": "historical-legacy-r0", "section_sha256": "86d5bb7c7f6fe688e0759524ac40f2659e902fc66969d7657fc978edbe82534d"},
+    {"ordinal": 21, "date": "2026-08-21", "label": "IGNITION-20260821-130-CURRENT-SURFACE-COMPILER-R1 — task-branch Current-State projection", "profile": "historical-legacy-r0", "section_sha256": "f1b33799905c7d46949f04db60a53a2bcbe60cf52d127f98cec496d20e5d43ee"},
+    {"ordinal": 22, "date": "2026-08-22", "label": "IGNITION-20260822-132-CANONICAL-CURRENT-ADVANCEMENT — task-branch source transition", "profile": "historical-legacy-r0", "section_sha256": "0790332deb846076414df360f1cfe02ced2f80ece524f7cf0a90d297aab52ead"},
+    {"ordinal": 23, "date": "2026-08-22", "label": "IGNITION-20260822-132-CANONICAL-CURRENT-MIGRATION — terminal source migration", "profile": "historical-current-r0", "section_sha256": "fb713f4af752ddc10d0f04189c4e1b1fe410c55f618ec61db3a4adc291f73d06"},
+    {"ordinal": 24, "date": "2026-08-22", "label": "IGNITION-20260822-133-ITERATION-BOUNDARY-SEMANTICS-R1 — terminal Current release candidate", "profile": "historical-legacy-r0", "section_sha256": "0f976171d193c3ca2ff6e3b4569360166ae02f632c6b2723923e616ab78b78e8"},
+    {"ordinal": 25, "date": "2026-08-22", "label": "IGNITION-20260822-134-RESIDUAL-DEBT-PROJECTION-HYGIENE-R1 — canonical Current source transition", "profile": "current-r1", "section_sha256": "98509f0a22a0b279ead8e1cbf180c7cd0a288d952f8ce9e6266b367b6338871f"},
+    {"ordinal": 26, "date": "2026-08-22", "label": "IGNITION-20260822-134-RESIDUAL-DEBT-PROJECTION-HYGIENE-R1 — terminal Current release candidate", "profile": "current-r1", "section_sha256": "74af40d47372f5c3c3ce3ad1d2623dd9228f90978606286f399c550acc460eba"}
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "schema_version": "ignition-135-state-changelog-profile-fixtures-r1",
+  "contract": "current-strict-historical-versioned",
+  "cases": [
+    {
+      "case_id": "current_missing_required_field",
+      "target_profile": "current-r1",
+      "operation": "remove_authority_changes_from_entry_25",
+      "expected_status": "FAIL"
+    },
+    {
+      "case_id": "historical_sealed_exact_legacy",
+      "target_profile": "historical-legacy-r0",
+      "operation": "validate_unmodified_sealed_entry_17",
+      "expected_status": "PASS"
+    },
+    {
+      "case_id": "historical_sealed_mutation",
+      "target_profile": "historical-legacy-r0",
+      "operation": "mutate_entry_17_body",
+      "expected_status": "FAIL"
+    },
+    {
+      "case_id": "unknown_legacy_version",
+      "target_profile": "historical-legacy-r9",
+      "operation": "replace_profile_for_entry_17",
+      "expected_status": "FAIL"
+    },
+    {
+      "case_id": "current_profile_downgrade",
+      "target_profile": "historical-legacy-r0",
+      "operation": "downgrade_current_entry_25_profile",
+      "expected_status": "FAIL"
+    }
+  ]
+}

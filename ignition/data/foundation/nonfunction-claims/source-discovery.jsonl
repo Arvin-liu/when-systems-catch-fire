@@ -1524,6 +1524,7 @@
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_NON_AUTHORITATIVE_RECORD","exclusion_reason":"EXCLUDED_NON_AUTHORITATIVE_RECORD","path":"data/operations/iterations/135/step02-projection-preflight-fixtures-r1.json"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_NON_AUTHORITATIVE_RECORD","exclusion_reason":"EXCLUDED_NON_AUTHORITATIVE_RECORD","path":"data/operations/iterations/135/step02-projection-preflight.json"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_NON_AUTHORITATIVE_RECORD","exclusion_reason":"EXCLUDED_NON_AUTHORITATIVE_RECORD","path":"data/operations/iterations/135/step04-cwd-path-resolution.json"}
+{"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_NON_AUTHORITATIVE_RECORD","exclusion_reason":"EXCLUDED_NON_AUTHORITATIVE_RECORD","path":"data/operations/iterations/135/step05-state-changelog-versioned-validation.json"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_GENERATED_OR_FUNCTION_ASSET_REGISTRY","exclusion_reason":"EXCLUDED_GENERATED_OR_FUNCTION_ASSET_REGISTRY","path":"data/operations/lifecycle-events.jsonl"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_NON_AUTHORITATIVE_RECORD","exclusion_reason":"EXCLUDED_NON_AUTHORITATIVE_RECORD","path":"data/operations/merged-iteration-ledger.jsonl"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_NON_AUTHORITATIVE_RECORD","exclusion_reason":"EXCLUDED_NON_AUTHORITATIVE_RECORD","path":"data/operations/project-components.json"}
@@ -1586,6 +1587,7 @@
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_GENERATED_OR_FUNCTION_ASSET_REGISTRY","exclusion_reason":"EXCLUDED_GENERATED_OR_FUNCTION_ASSET_REGISTRY","path":"data/operations/root-normalization/pre-migration-inbound-reference-audit.json"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_GENERATED_OR_FUNCTION_ASSET_REGISTRY","exclusion_reason":"EXCLUDED_GENERATED_OR_FUNCTION_ASSET_REGISTRY","path":"data/operations/root-normalization/pre-migration-root-inventory.json"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_NON_AUTHORITATIVE_RECORD","exclusion_reason":"EXCLUDED_NON_AUTHORITATIVE_RECORD","path":"data/operations/stage-snapshots.json"}
+{"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_NON_AUTHORITATIVE_RECORD","exclusion_reason":"EXCLUDED_NON_AUTHORITATIVE_RECORD","path":"data/operations/state-changelog-profile-r1.json"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_NON_AUTHORITATIVE_RECORD","exclusion_reason":"EXCLUDED_NON_AUTHORITATIVE_RECORD","path":"data/operations/steering/current-state-r1.json"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_NON_AUTHORITATIVE_RECORD","exclusion_reason":"EXCLUDED_NON_AUTHORITATIVE_RECORD","path":"data/operations/synchronization-surfaces.json"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_NON_AUTHORITATIVE_RECORD","exclusion_reason":"EXCLUDED_NON_AUTHORITATIVE_RECORD","path":"data/operations/task-identity-model-r1.json"}
@@ -2532,6 +2534,7 @@
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_PLATFORM_CODE_EXCLUDED","exclusion_reason":"EXCLUDED_PLATFORM_CODE_EXCLUDED","path":"schemas/operations/responsibility-actor-registry.schema.json"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_PLATFORM_CODE_EXCLUDED","exclusion_reason":"EXCLUDED_PLATFORM_CODE_EXCLUDED","path":"schemas/operations/stage-snapshot-registry.schema.json"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_PLATFORM_CODE_EXCLUDED","exclusion_reason":"EXCLUDED_PLATFORM_CODE_EXCLUDED","path":"schemas/operations/stage-snapshot-request.schema.json"}
+{"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_PLATFORM_CODE_EXCLUDED","exclusion_reason":"EXCLUDED_PLATFORM_CODE_EXCLUDED","path":"schemas/operations/state-changelog-profile-r1.schema.json"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_PLATFORM_CODE_EXCLUDED","exclusion_reason":"EXCLUDED_PLATFORM_CODE_EXCLUDED","path":"schemas/operations/steering-adversarial-matrix-r1.schema.json"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_PLATFORM_CODE_EXCLUDED","exclusion_reason":"EXCLUDED_PLATFORM_CODE_EXCLUDED","path":"schemas/operations/steering-commitment-ledger-r1.schema.json"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_PLATFORM_CODE_EXCLUDED","exclusion_reason":"EXCLUDED_PLATFORM_CODE_EXCLUDED","path":"schemas/operations/steering-completion-contract-r1.schema.json"}
@@ -2552,6 +2555,7 @@
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_PLATFORM_CODE_EXCLUDED","exclusion_reason":"EXCLUDED_PLATFORM_CODE_EXCLUDED","path":"schemas/operations/steering-temporal-semantics-r1.schema.json"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_PLATFORM_CODE_EXCLUDED","exclusion_reason":"EXCLUDED_PLATFORM_CODE_EXCLUDED","path":"schemas/operations/steering-why-next-r1.schema.json"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_PLATFORM_CODE_EXCLUDED","exclusion_reason":"EXCLUDED_PLATFORM_CODE_EXCLUDED","path":"schemas/operations/step04-cwd-path-resolution-r1.schema.json"}
+{"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_PLATFORM_CODE_EXCLUDED","exclusion_reason":"EXCLUDED_PLATFORM_CODE_EXCLUDED","path":"schemas/operations/step05-state-changelog-versioned-validation-r1.schema.json"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_PLATFORM_CODE_EXCLUDED","exclusion_reason":"EXCLUDED_PLATFORM_CODE_EXCLUDED","path":"schemas/operations/step11-residual-reclassification-r1.schema.json"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_PLATFORM_CODE_EXCLUDED","exclusion_reason":"EXCLUDED_PLATFORM_CODE_EXCLUDED","path":"schemas/operations/step12-closure-r1.schema.json"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_PLATFORM_CODE_EXCLUDED","exclusion_reason":"EXCLUDED_PLATFORM_CODE_EXCLUDED","path":"schemas/operations/synchronization-surfaces.schema.json"}
@@ -2613,6 +2617,7 @@
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_PLATFORM_CODE_EXCLUDED","exclusion_reason":"EXCLUDED_PLATFORM_CODE_EXCLUDED","path":"tests/fixtures/self-correction/hidden.md"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_PLATFORM_CODE_EXCLUDED","exclusion_reason":"EXCLUDED_PLATFORM_CODE_EXCLUDED","path":"tests/fixtures/self-correction/rebound.md"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_PLATFORM_CODE_EXCLUDED","exclusion_reason":"EXCLUDED_PLATFORM_CODE_EXCLUDED","path":"tests/fixtures/self-correction/safe-correction.md"}
+{"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_PLATFORM_CODE_EXCLUDED","exclusion_reason":"EXCLUDED_PLATFORM_CODE_EXCLUDED","path":"tests/fixtures/state-changelog-profile-r1.json"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_PLATFORM_CODE_EXCLUDED","exclusion_reason":"EXCLUDED_PLATFORM_CODE_EXCLUDED","path":"tests/foundation/__init__.py"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_PLATFORM_CODE_EXCLUDED","exclusion_reason":"EXCLUDED_PLATFORM_CODE_EXCLUDED","path":"tests/foundation/fixtures/claim_governance_gate_cases.jsonl"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_PLATFORM_CODE_EXCLUDED","exclusion_reason":"EXCLUDED_PLATFORM_CODE_EXCLUDED","path":"tests/foundation/fixtures/function_asset_discovery_v2.txt"}

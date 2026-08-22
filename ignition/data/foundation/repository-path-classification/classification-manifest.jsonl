@@ -1524,6 +1524,7 @@
 {"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "ignition/data/operations/iterations/135/step02-projection-preflight-fixtures-r1.json"}
 {"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "ignition/data/operations/iterations/135/step02-projection-preflight.json"}
 {"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "ignition/data/operations/iterations/135/step04-cwd-path-resolution.json"}
+{"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "ignition/data/operations/iterations/135/step05-state-changelog-versioned-validation.json"}
 {"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "ignition/data/operations/lifecycle-events.jsonl"}
 {"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "ignition/data/operations/merged-iteration-ledger.jsonl"}
 {"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "ignition/data/operations/project-components.json"}
@@ -1586,6 +1587,7 @@
 {"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "ignition/data/operations/root-normalization/pre-migration-inbound-reference-audit.json"}
 {"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "ignition/data/operations/root-normalization/pre-migration-root-inventory.json"}
 {"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "ignition/data/operations/stage-snapshots.json"}
+{"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "ignition/data/operations/state-changelog-profile-r1.json"}
 {"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "ignition/data/operations/steering/current-state-r1.json"}
 {"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "ignition/data/operations/synchronization-surfaces.json"}
 {"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "ignition/data/operations/task-identity-model-r1.json"}
@@ -2532,6 +2534,7 @@
 {"category": "SCHEMA", "matched_rule": "SCHEMA", "path": "ignition/schemas/operations/responsibility-actor-registry.schema.json"}
 {"category": "SCHEMA", "matched_rule": "SCHEMA", "path": "ignition/schemas/operations/stage-snapshot-registry.schema.json"}
 {"category": "SCHEMA", "matched_rule": "SCHEMA", "path": "ignition/schemas/operations/stage-snapshot-request.schema.json"}
+{"category": "SCHEMA", "matched_rule": "SCHEMA", "path": "ignition/schemas/operations/state-changelog-profile-r1.schema.json"}
 {"category": "SCHEMA", "matched_rule": "SCHEMA", "path": "ignition/schemas/operations/steering-adversarial-matrix-r1.schema.json"}
 {"category": "SCHEMA", "matched_rule": "SCHEMA", "path": "ignition/schemas/operations/steering-commitment-ledger-r1.schema.json"}
 {"category": "SCHEMA", "matched_rule": "SCHEMA", "path": "ignition/schemas/operations/steering-completion-contract-r1.schema.json"}
@@ -2552,6 +2555,7 @@
 {"category": "SCHEMA", "matched_rule": "SCHEMA", "path": "ignition/schemas/operations/steering-temporal-semantics-r1.schema.json"}
 {"category": "SCHEMA", "matched_rule": "SCHEMA", "path": "ignition/schemas/operations/steering-why-next-r1.schema.json"}
 {"category": "SCHEMA", "matched_rule": "SCHEMA", "path": "ignition/schemas/operations/step04-cwd-path-resolution-r1.schema.json"}
+{"category": "SCHEMA", "matched_rule": "SCHEMA", "path": "ignition/schemas/operations/step05-state-changelog-versioned-validation-r1.schema.json"}
 {"category": "SCHEMA", "matched_rule": "SCHEMA", "path": "ignition/schemas/operations/step11-residual-reclassification-r1.schema.json"}
 {"category": "SCHEMA", "matched_rule": "SCHEMA", "path": "ignition/schemas/operations/step12-closure-r1.schema.json"}
 {"category": "SCHEMA", "matched_rule": "SCHEMA", "path": "ignition/schemas/operations/synchronization-surfaces.schema.json"}
@@ -2613,6 +2617,7 @@
 {"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "ignition/tests/fixtures/self-correction/hidden.md"}
 {"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "ignition/tests/fixtures/self-correction/rebound.md"}
 {"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "ignition/tests/fixtures/self-correction/safe-correction.md"}
+{"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "ignition/tests/fixtures/state-changelog-profile-r1.json"}
 {"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "ignition/tests/foundation/__init__.py"}
 {"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "ignition/tests/foundation/fixtures/claim_governance_gate_cases.jsonl"}
 {"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "ignition/tests/foundation/fixtures/function_asset_discovery_v2.txt"}
