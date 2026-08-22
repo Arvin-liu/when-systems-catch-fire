@@ -54,7 +54,11 @@ def _make_repo() -> Path:
     return repo
 
 
-BASE_REQUEST = load_json(__import__("pathlib").Path("data/operations/propagation/121Q32-request.json"))
+# Resolve repository data from the module's formal application root.  The
+# canonical runner intentionally executes from ``ignition/``, while historical
+# discovery also runs from the split repository root and isolated temp cwd.
+# Neither mode may make this fixture path depend on the caller's cwd.
+BASE_REQUEST = load_json(ROOT / "data/operations/propagation/121Q32-request.json")
 COMPONENT_DOC = load_json(COMPONENTS)
 TOPOLOGY_DOC = load_json(TOPOLOGY)
 SURFACE_DOC = load_json(SURFACES)
@@ -211,9 +215,10 @@ class ChangePropagationTests(unittest.TestCase):
             ["git", "show", "8812b93e7aaaffd5d68ca4cf36b01857d0712026:docs/publication/works/when-an-army-believes-its-own-back.md"],
             check=True,
             capture_output=True,
+            cwd=REPO_ROOT,
         ).stdout
         self.assertEqual(hashlib.sha256(historical).hexdigest(), "c135acd35a2232f0a6b3f933db482932a9fe5d5add51f870af97901faac90d4b")
-        current = Path("docs/publication/works/when-an-army-believes-its-own-back.md").read_bytes()
+        current = (ROOT / "docs/publication/works/when-an-army-believes-its-own-back.md").read_bytes()
         self.assertNotEqual(hashlib.sha256(current).hexdigest(), hashlib.sha256(historical).hexdigest())
 
     def test_fixpoint_and_hash_are_deterministic(self):
@@ -447,12 +452,12 @@ class ChangePropagationTests(unittest.TestCase):
         from pathlib import Path
         # Create a temp dir OUTSIDE the repo, symlink INTO the repo pointing at it
         outside = Path(tempfile.mkdtemp(prefix="q32f2-outside-"))
-        link = ROOT / "_q32f2_symlink_test"
+        link = ROOT / f"_q32f2_symlink_test_{outside.name}"
         try:
             if link.exists() or link.is_symlink():
                 link.unlink()
             os.symlink(outside, link)
-            request = self.request(changed_paths=["_q32f2_symlink_test/secret.md"])
+            request = self.request(changed_paths=[f"{link.name}/secret.md"])
             closure, _ = compute(request, baseline_map=CURRENT_PROJECTION)
             self.assertFalse(closure["closure_complete"])
             self.assertTrue(any(r["type"] == "path_outside_repo" for r in closure["residue"]))

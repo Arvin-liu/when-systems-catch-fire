@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["schema_version", "task_id", "step", "status", "root_contract", "target_count_per_case", "cases", "claim_ceiling"],
+  "properties": {
+    "schema_version": {"const": "ignition-135-step04-cwd-path-resolution-r1"},
+    "task_id": {"const": "IGNITION-20260822-135"},
+    "step": {"const": "04"},
+    "status": {"enum": ["PASS", "FAIL"]},
+    "root_contract": {
+      "type": "object",
+      "required": ["application_root", "formal_repository_root", "subprocess_cwd", "import_path", "global_chdir"],
+      "properties": {
+        "application_root": {"type": "string"},
+        "formal_repository_root": {"type": "string"},
+        "subprocess_cwd": {"type": "string"},
+        "import_path": {"type": "string"},
+        "global_chdir": {"const": false}
+      },
+      "additionalProperties": false
+    },
+    "target_count_per_case": {"const": 5},
+    "cases": {"type": "array", "minItems": 4, "items": {"type": "object"}},
+    "claim_ceiling": {"type": "string"}
+  },
+  "additionalProperties": false
+}
