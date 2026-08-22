@@ -68,6 +68,20 @@ class CurrentStateSyncTests(unittest.TestCase):
         self.assertEqual(paths, sorted(paths))
         self.assertEqual(len(paths), len(set(paths)))
 
+    def test_materiality_fingerprint_ignores_only_reciprocal_hash_fields(self) -> None:
+        document = {
+            "counts": {"function_machine": 1},
+            "entries": [{"machine_record_sha256": "a", "source_sha256": "b", "machine_id": "D1"}],
+        }
+        first = facts_generator.materiality_fingerprint(document)
+        changed_hashes = copy.deepcopy(document)
+        changed_hashes["entries"][0]["machine_record_sha256"] = "changed-machine"
+        changed_hashes["entries"][0]["source_sha256"] = "changed-source"
+        self.assertEqual(first, facts_generator.materiality_fingerprint(changed_hashes))
+        changed_selection = copy.deepcopy(document)
+        changed_selection["entries"][0]["machine_id"] = "D2"
+        self.assertNotEqual(first, facts_generator.materiality_fingerprint(changed_selection))
+
     def test_release_publication_contract_is_integrated(self) -> None:
         self.assertEqual(validator.validate_release_publication_contract(), [])
 

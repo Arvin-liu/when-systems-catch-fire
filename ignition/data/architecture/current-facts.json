@@ -42,10 +42,10 @@
       "source_census_count": 393
     },
     "foundation": {
-      "function_identity_cards": 5611,
-      "function_quarantine_or_pending": 4812,
-      "nonfunction_claims": 16240,
-      "nonfunction_quarantine_or_pending": 4706
+      "function_identity_cards": 5623,
+      "function_quarantine_or_pending": 4824,
+      "nonfunction_claims": 16468,
+      "nonfunction_quarantine_or_pending": 4717
     },
     "human_surface": {
       "function_human_entries": 24,
@@ -140,11 +140,11 @@
     },
     {
       "path": "ignition/data/foundation/function-assets/closure-summary.json",
-      "sha256": "fa4e3d174ba4858fd6cacbc40e595cc926750c5f272f49703e82c4e375693893"
+      "sha256": "f78d287bc8451ec39a2e87d71f0c6bf5df0b4af8211f887305bc550122532e27"
     },
     {
       "path": "ignition/data/foundation/nonfunction-claims/closure-summary.json",
-      "sha256": "a46fb4974ed194fe93f66b76561e8abffb6006446cfb5ddaaf8e78b0227c091e"
+      "sha256": "806f800ec52a0f760f34ffaed9979401ad3c13ef6d89bd591f1f2d11cedaf21b"
     },
     {
       "path": "ignition/data/governance/human-results/config.json",
@@ -152,7 +152,7 @@
     },
     {
       "path": "ignition/data/governance/human-surface/materiality-manifest.json",
-      "sha256": "3c6d0af58f22e165bb79bea1266ba9a6bc3e5ec1ff83c49a71c895c39b17cb44"
+      "sha256": "d379ecf46bbc508f2e967490c3433156b37648317d224d27ae34519641d4057a"
     },
     {
       "path": "ignition/data/governance/knowledge-experience/manifest.json",
@@ -220,7 +220,7 @@
     },
     {
       "path": "ignition/tools/generate_current_facts.py",
-      "sha256": "d26ae787106a52301ccb64542f28267a4d8470273533da94927cd8c50578181f"
+      "sha256": "fb2f28f346cabfff6796dd6d27ae4062ba0568c772c06a062faa71bb55f21f9e"
     },
     {
       "path": "ignition/tools/iteration_boundary.py",

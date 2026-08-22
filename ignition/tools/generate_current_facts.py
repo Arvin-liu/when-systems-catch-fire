@@ -36,6 +36,7 @@ SCHEMA_PATH = ROOT / "schemas/architecture/current-facts.schema.json"
 STEERING_PATH = ROOT / "data/operations/steering/current-state-r1.json"
 SEMANTICS_PATH = ROOT / "data/operations/iteration-boundary-semantics-r1.json"
 LIFECYCLE_PATH = ROOT / "data/operations/current-release-lifecycle-r1.json"
+MATERIALITY_PATH = ROOT / "data/governance/human-surface/materiality-manifest.json"
 
 
 def load_json(path: Path) -> Any:
@@ -46,7 +47,28 @@ def relative(path: Path) -> str:
     return path.resolve().relative_to(REPO_ROOT.resolve()).as_posix()
 
 
-def sha256(path: Path) -> str:
+def materiality_fingerprint(document: dict[str, Any]) -> str:
+    """Fingerprint materiality selection without reciprocal bookkeeping hashes.
+
+    The manifest records ``machine_record_sha256`` and ``source_sha256`` for
+    selected Human Surface entries. Those fields are checked by the Human
+    Surface contract, but they are derived bookkeeping: the Current Facts
+    projection consumes the manifest, while the Current Surface compiler
+    changes the very sources named by it. Excluding only these two reciprocal
+    fields keeps the canonical selection/count projection observable without
+    making manifest -> facts -> snapshot -> surface -> manifest a cycle.
+    """
+    normalized = json.loads(json.dumps(document, ensure_ascii=False))
+    for entry in normalized.get("entries", []):
+        entry.pop("machine_record_sha256", None)
+        entry.pop("source_sha256", None)
+    payload = json.dumps(normalized, ensure_ascii=False, sort_keys=True, separators=(",", ":")).encode("utf-8")
+    return hashlib.sha256(payload).hexdigest()
+
+
+def source_fingerprint(path: Path) -> str:
+    if path.resolve() == MATERIALITY_PATH.resolve():
+        return materiality_fingerprint(load_json(path))
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
@@ -209,7 +231,7 @@ def build_projection(contract: dict[str, Any] | None = None) -> dict[str, Any]:
         "current_iteration_boundary": iteration["current_iteration_boundary"],
         "current_iteration_boundary_semantics": iteration["current_iteration_boundary_semantics"],
         "facts": facts,
-        "source_fingerprints": [{"path": relative(path), "sha256": sha256(path)} for path in source_paths(contract)],
+        "source_fingerprints": [{"path": relative(path), "sha256": source_fingerprint(path)} for path in source_paths(contract)],
         "claim_ceiling": "Deterministic repository-derived current facts and navigation support only; no external truth, Owner acceptance, production safety or epistemic upgrade.",
     }
     return projection
@@ -248,7 +270,7 @@ def render_markdown(projection: dict[str, Any]) -> bytes:
         f"- Steering: `{steering['current_status']}`；`{steering['module_count']}` bounded modules；`{steering['integration_surface_count']}` integration surfaces；pilot `{steering['pilot_status']}`；completion boundary `{steering['completion_boundary']}`。",
         "- Current environmental residuals: " + ("；".join(residuals) if residuals else "none declared") + "。",
         "",
-        "Source authority: the JSON projection records SHA-256 fingerprints for the canonical registries, manifests, topology, pack declarations, federation inventory and generator/schema inputs. Human prose may explain these facts but is not a second numeric authority.",
+        "Source authority: the JSON projection records SHA-256 fingerprints for the canonical registries, manifests, topology, pack declarations, federation inventory and generator/schema inputs. For the Human Surface materiality manifest, the fingerprint intentionally excludes only reciprocal machine/source hash fields; the selection, counts and policy remain included. Human prose may explain these facts but is not a second numeric authority.",
         "Claim ceiling: " + projection["claim_ceiling"],
         "",
         "Machine source: [`current-facts.json`](../../data/architecture/current-facts.json).",
