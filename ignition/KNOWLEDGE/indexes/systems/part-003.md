@@ -4,6 +4,36 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Pessimistic Causal Reinforcement Learning with Mediators for Confounded Offline Data](../../../data/external-research/105-intervention-control/105-intervention-control-source-pack.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-f6b2c5969428a3ba / Pessimistic Causal Reinforcement Learning with Mediators for Confounded Offline Data
+  - 来源：`data/external-research/105-intervention-control/105-intervention-control-source-pack.jsonl`
+  - 依赖：—；被引用：—
+- [Positive labels are bound to object, criterion, version, evidence, and boundary in `data/architecture/calibration/121q12](../../../reports/architecture/121Q12-effectual-mechanism-dual-loop.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-d7458b82b53ca72c / Positive labels are bound to object, criterion, version, evidence, and boundary in `data/architecture/calibration/121q12
+  - 来源：`reports/architecture/121Q12-effectual-mechanism-dual-loop.md`
+  - 依赖：—；被引用：—
+- [PR #53 added Multiscale Causal Fabric objects for events, states, relations, propagation, light cones, feedback, entropy](../../../reports/architecture/121Q22-probability-system-gap-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-02be763bef98bbca / PR #53 added Multiscale Causal Fabric objects for events, states, relations, propagation, light cones, feedback, entropy
+  - 来源：`reports/architecture/121Q22-probability-system-gap-audit.md`
+  - 依赖：—；被引用：—
+- [PR #55 已将 121Q23 Adaptive Relational Network 合并进 `main`。涉及关系网络、重构、嵌入证据摘要或 NetworkDiff 时，必须读取：](../../../AI-HANDOFF.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-b3108ecd9e33a8c8 / PR #55 已将 121Q23 Adaptive Relational Network 合并进 `main`。涉及关系网络、重构、嵌入证据摘要或 NetworkDiff 时，必须读取：
+  - 来源：`AI-HANDOFF.md`
+  - 依赖：—；被引用：—
+- [PR #60 的 accepted HEAD `b01429144f78305ead32455873e79a11661f04e1` 经 review `4718884255` 接受，并以 merge commit `ed30d3c30966](../../../reports/operations/121Q31T-interactive-system-map-and-writing-pool-merge-current-closeout-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-d56ad5aa416e7c59 / PR #60 的 accepted HEAD `b01429144f78305ead32455873e79a11661f04e1` 经 review `4718884255` 接受，并以 merge commit `ed30d3c30966
+  - 来源：`reports/operations/121Q31T-interactive-system-map-and-writing-pool-merge-current-closeout-audit.md`
+  - 依赖：—；被引用：—
+- [PR mergeability and CI success should remain workflow signals, not acceptance or truth.](../../../reports/atlas/121Q14-dynamic-atlas.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-a216b0033ee4fede / PR mergeability and CI success should remain workflow signals, not acceptance or truth.
+  - 来源：`reports/atlas/121Q14-dynamic-atlas.md`
+  - 依赖：—；被引用：—
 - [Prediction**: What the system predicts \(true/false/contradiction/pending\).](../../../docs/falsifiability/README.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-f9f6a64d601fed17 / Prediction**: What the system predicts \(true/false/contradiction/pending\).
@@ -28,6 +58,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-dd528a2c4291c34b / print\("\\n\[5\] Checking evidence tier distribution..."\)
   - 来源：`data/external-research/120-function-paradigm-atlas/120-validator.py`
+  - 依赖：—；被引用：—
+- [Prior receipts record path-manifest observations of 96 \(Task129\), 194 \(Task132\), and 198 baseline / 232 candidate \(Task1](../../../reports/operations/ignition-134-step00-residual-archaeology.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-55a093b3a1d0d506 / Prior receipts record path-manifest observations of 96 \(Task129\), 194 \(Task132\), and 198 baseline / 232 candidate \(Task1
+  - 来源：`reports/operations/ignition-134-step00-residual-archaeology.md`
   - 依赖：—；被引用：—
 - [Probabilistic programs as a unifying language of thought](../../../data/external-research/120-function-paradigm-atlas/120-function-paradigm-cards.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
@@ -291,13 +326,18 @@
   - 依赖：—；被引用：—
 - [Q32I iteration method 1.3.0 and system map 0.3.0 completed the exact-head, merge and external checks required by its his](../../../llms.txt)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-e29e35ec60ffc5cf / Q32I iteration method 1.3.0 and system map 0.3.0 completed the exact-head, merge and external checks required by its his
+  - 可搜索名称：NFC-437c6806896c6474 / Q32I iteration method 1.3.0 and system map 0.3.0 completed the exact-head, merge and external checks required by its his
   - 来源：`llms.txt`
   - 依赖：—；被引用：—
-- [Q32I 收口后系统图 0.3.0 为 Current；0727 homepage/usage/charter-system-map sync 收口后系统图 0.4.0 为 Current；后续 registry-derived 系统图 0](../../../ARCHITECTURE.md)
+- [Q32I 收口后的早期系统图与后续 registry-derived 系统图均保留为 Historical 投影；Current 版本和最近历史版本由 generated Current Snapshot 与 map layout 读取。节](../../../ARCHITECTURE.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-5ceebc3da19b309e / Q32I 收口后系统图 0.3.0 为 Current；0727 homepage/usage/charter-system-map sync 收口后系统图 0.4.0 为 Current；后续 registry-derived 系统图 0
+  - 可搜索名称：NFC-cad26c8bbecc6f30 / Q32I 收口后的早期系统图与后续 registry-derived 系统图均保留为 Historical 投影；Current 版本和最近历史版本由 generated Current Snapshot 与 map layout 读取。节
   - 来源：`ARCHITECTURE.md`
+  - 依赖：—；被引用：—
+- [Q32I 的方法 `1.3.0` 与系统图 `0.3.0` 已独立接受、由 PR #62 普通合并并完成生产收口；其后迭代方法版本与 Current 标签由 generated Current Snapshot 统一投影。](../../ASSET-CARDS.md#asset-nfc-d584235380a9199d)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-d584235380a9199d / Q32I 的方法 `1.3.0` 与系统图 `0.3.0` 已独立接受、由 PR #62 普通合并并完成生产收口；其后迭代方法版本与 Current 标签由 generated Current Snapshot 统一投影。 / - Q32I 的方法 `1.3.0` 与系统图 `0.3.0` 已独立接受、由 PR #62 普通合并并完成生产收口；其后迭代方法版本与 Current 标签由 generated Current Snapshot 统一投影。
+  - 来源：`AI-START-HERE.md`
   - 依赖：—；被引用：—
 - [Q4 node drift: claim ceiling remains `mechanism_plausible` because the pilot separates dimensions but does not re-adjudi](../../../reports/architecture/121Q12-effectual-mechanism-dual-loop.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
@@ -539,6 +579,11 @@
   - 可搜索名称：NFC-cc3be3cbd1055361 / Review of the book “Causal Inference for Statistics, Social, and Biomedical Sciences” by G.W. Imbens and D.B. Rubin
   - 来源：`data/external-research/088-external-source-atlas-v1.jsonl`
   - 依赖：—；被引用：—
+- [roles merely because they differ.](../../../docs/architecture/iteration-boundary-semantics-r1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-c31693ac36f8e57a / roles merely because they differ.
+  - 来源：`docs/architecture/iteration-boundary-semantics-r1.md`
+  - 依赖：—；被引用：—
 - [Root cause of mail storm](../../../data/ops/121q7/121Q7-foundation-ci-mail-storm-repair-report.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-78b3389f961ba06f / Root cause of mail storm
@@ -698,6 +743,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-7c2348529a978744 / Status: `READY_AS_MULTISCALE_CAUSAL_FABRIC_CANDIDATE`
   - 来源：`reports/architecture/121Q21R-multiscale-causal-fabric-validation.md`
+  - 依赖：—；被引用：—
+- [Steering / Intent / Goal / Obligation records are repository-local coordination projections; system-derived proposals ca](../../../data/architecture/current-system-identity.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-5f371df93a405910 / Steering / Intent / Goal / Obligation records are repository-local coordination projections; system-derived proposals ca
+  - 来源：`data/architecture/current-system-identity.json`
   - 依赖：—；被引用：—
 - [Step 002 — Real root-cause fix \(commit 3129cf7, cache-cleanup 372bba0\)](../../../data/ops/121q7/121Q7-foundation-ci-mail-storm-repair-report.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
@@ -889,6 +939,11 @@
   - 可搜索名称：NFC-2a7cb31691cc3b1c / The Draft Pages workflow builds an inspectable exact-HEAD artifact but does not deploy an unmerged branch to production.
   - 来源：`reports/operations/121Q32-typed-change-propagation-and-self-updating-system-map-audit.md`
   - 依赖：—；被引用：—
+- [The existing gates did not block because they compare canonical Current files to each other rather than to a task execut](../../../reports/operations/ignition-132-step00-canonical-current-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-c9606124861a6c5b / The existing gates did not block because they compare canonical Current files to each other rather than to a task execut
+  - 来源：`reports/operations/ignition-132-step00-canonical-current-audit.md`
+  - 依赖：—；被引用：—
 - [The files here are derived architecture artifacts. They do not replace Foundation, Function OS, Atlas, Charter Gate, or](../../../data/architecture/multiscale-causal-fabric/README.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-a521835d59e5c07a / The files here are derived architecture artifacts. They do not replace Foundation, Function OS, Atlas, Charter Gate, or
@@ -1019,6 +1074,11 @@
   - 可搜索名称：NFC-83a6658ee6837e2b / The preregistered minimum was five source families overall, including at least two air or human-heat families, one land-
   - 来源：`reports/external-research/pointfire-seven-track-replay-r1/REPLAY-REPORT.md`
   - 依赖：—；被引用：—
+- [The projection sources are \[`current-system-identity.json`\]\(../../data/architecture/current-system-identity.json\),](../../../reports/operations/ignition-129-step20-current-sync.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-e56563c8eb6949c1 / The projection sources are \[`current-system-identity.json`\]\(../../data/architecture/current-system-identity.json\),
+  - 来源：`reports/operations/ignition-129-step20-current-sync.md`
+  - 依赖：—；被引用：—
 - [The public page mechanism is `.github/workflows/pages.yml`: it copies the root `README.md` into `site/index.md`, builds](../../../reports/operations/121Q25-front-door-audit.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-d8c14c8f68a94808 / The public page mechanism is `.github/workflows/pages.yml`: it copies the root `README.md` into `site/index.md`, builds
@@ -1048,6 +1108,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-ee9dc34331eb55b6 / The repository contains many relation-like assets: Foundation registries, function dependencies, Q12-Q14 control overlay
   - 来源：`reports/architecture/121Q23-relational-network-gap-audit.md`
+  - 依赖：—；被引用：—
+- [The repository-local validators pass because the canonical files agree with one another:](../../../reports/operations/ignition-132-step00-canonical-current-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-8ed4e9930e2cc8ea / The repository-local validators pass because the canonical files agree with one another:
+  - 来源：`reports/operations/ignition-132-step00-canonical-current-audit.md`
   - 依赖：—；被引用：—
 - [The root cause is **not** any single claim. It is an **infrastructure** defect: the repository's *Git path set](../../../docs/foundation/task-107-incident-report.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -2439,68 +2504,3 @@
   - 可搜索名称：NFC-3d06e72946d2461f / \| NC-001 \| 职称硬门槛裹挟 \| 案例表无「教师/赛课/职称」直接命中 \| 呈现 NF-001 的具象因果链（硬门槛→不可拒绝） \| 可入案例表，对应 NF-001 \| 无同构案例，结构独特 \| 个案，非普遍规律 \| 单篇访谈，pe
   - 来源：`outputs/audit/teacher-competition-backfill-review-20260708.md`
   - 依赖：—；被引用：—
-- [\| NC-001 \| 职称硬门槛裹挟青年教师 \| 李清淼参评「市名师培养对象」硬门槛为市赛二等奖以上；学校评副高普遍排队到45岁后；青年教师以「多锻炼」为由无法拒绝参赛。 \| NF-001 \| source.md §职称绑定的无奈裹挟 \|](../../../outputs/collisions/20260708-teacher-competition/new-cases.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-e849d46be724ab5b / \| NC-001 \| 职称硬门槛裹挟青年教师 \| 李清淼参评「市名师培养对象」硬门槛为市赛二等奖以上；学校评副高普遍排队到45岁后；青年教师以「多锻炼」为由无法拒绝参赛。 \| NF-001 \| source.md §职称绑定的无奈裹挟 \|
-  - 来源：`outputs/collisions/20260708-teacher-competition/new-cases.md`
-  - 依赖：—；被引用：—
-- [\| NC-002 \| 表演化假课与指标消解温度 \| 案例表仅泛相关（量化/学生） \| 呈现 NF-002/NF-003 的具象机制 \| 可入案例表 \| 无同构案例 \| 个案 \| pending \| 建议入案例表 \| **建议入表** \|](../../../outputs/audit/teacher-competition-backfill-review-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-e601d627d98376b6 / \| NC-002 \| 表演化假课与指标消解温度 \| 案例表仅泛相关（量化/学生） \| 呈现 NF-002/NF-003 的具象机制 \| 可入案例表 \| 无同构案例 \| 个案 \| pending \| 建议入案例表 \| **建议入表** \|
-  - 来源：`outputs/audit/teacher-competition-backfill-review-20260708.md`
-  - 依赖：—；被引用：—
-- [\| NC-003 \| 系统性钝化与教室避风港 \| 教师群体长期高压出现「系统性钝化」；卢叶状态最差时对学生失耐心；后教室成为避风港，学生关风扇的微小联结使其放下名次执念。 \| NF-004 / NF-005 \| source.md §系统性](../../../outputs/collisions/20260708-teacher-competition/new-cases.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-2fca57141dde8b2e / \| NC-003 \| 系统性钝化与教室避风港 \| 教师群体长期高压出现「系统性钝化」；卢叶状态最差时对学生失耐心；后教室成为避风港，学生关风扇的微小联结使其放下名次执念。 \| NF-004 / NF-005 \| source.md §系统性
-  - 来源：`outputs/collisions/20260708-teacher-competition/new-cases.md`
-  - 依赖：—；被引用：—
-- [\| NC-003 \| 系统性钝化与教室避风港 \| 案例表无直接命中 \| 同时承载 NF-004/NF-005 两机制，价值密度高 \| 可入案例表，对应 NF-004/NF-005 \| 无同构案例 \| 个案，含具体师生联结 \| pending](../../../outputs/audit/teacher-competition-backfill-review-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-ea6923b4fc1778fa / \| NC-003 \| 系统性钝化与教室避风港 \| 案例表无直接命中 \| 同时承载 NF-004/NF-005 两机制，价值密度高 \| 可入案例表，对应 NF-004/NF-005 \| 无同构案例 \| 个案，含具体师生联结 \| pending
-  - 来源：`outputs/audit/teacher-competition-backfill-review-20260708.md`
-  - 依赖：—；被引用：—
-- [\| NC-003 系统性钝化与教室避风港 \| 案例 \| 入表 \| C-0807 \| 已验证（teacher-competition-index-visibility-check） \| small-batch-backfill-audit \|](../../../outputs/audit/teacher-competition-batch-closeout-audit-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-0e665def25224f18 / \| NC-003 系统性钝化与教室避风港 \| 案例 \| 入表 \| C-0807 \| 已验证（teacher-competition-index-visibility-check） \| small-batch-backfill-audit \|
-  - 来源：`outputs/audit/teacher-competition-batch-closeout-audit-20260708.md`
-  - 依赖：—；被引用：—
-- [\| NF-002 \| 量化指标替代真实价值 \| 无同名条目；「量化」命中 D244 但非「替代价值」 \| 新机制：可量化信号成唯一显式→不可量化价值被排挤，含「选择性替代」关系 \| 可挂指标化相关族（D244/D173 附近） \| 与 D2](../../../outputs/audit/teacher-competition-backfill-review-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-f6446db58d5a818e / \| NF-002 \| 量化指标替代真实价值 \| 无同名条目；「量化」命中 D244 但非「替代价值」 \| 新机制：可量化信号成唯一显式→不可量化价值被排挤，含「选择性替代」关系 \| 可挂指标化相关族（D244/D173 附近） \| 与 D2
-  - 来源：`outputs/audit/teacher-competition-backfill-review-20260708.md`
-  - 依赖：D173, D244；被引用：—
-- [\| NF-003 \| 表演化生产 \| 无同名；D173 显态粘性可部分对应 \| 新反馈环：主观互斥评审→讨好所有评委→表演态排除临场生成 \| 与 D173 查重：建议合并或派生，不独立重复 \| 与 D173 **弱同构**（均涉固化表演），](../../../outputs/audit/teacher-competition-backfill-review-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-941e7b6612afde0b / \| NF-003 \| 表演化生产 \| 无同名；D173 显态粘性可部分对应 \| 新反馈环：主观互斥评审→讨好所有评委→表演态排除临场生成 \| 与 D173 查重：建议合并或派生，不独立重复 \| 与 D173 **弱同构**（均涉固化表演），
-  - 来源：`outputs/audit/teacher-competition-backfill-review-20260708.md`
-  - 依赖：D173；被引用：—
-- [\| NF-004 \| 系统性钝化 \| 无同名；D364/D423 不可逆判据可部分映射 \| 新稳态：长期高压→愧疚压底→情绪溢出工作对象，群体级不可逆 \| 可挂不可逆族但需查重边界 \| 与 D364/D423 **弱同构**（身心不可逆），](../../../outputs/audit/teacher-competition-backfill-review-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-cab0413db998204a / \| NF-004 \| 系统性钝化 \| 无同名；D364/D423 不可逆判据可部分映射 \| 新稳态：长期高压→愧疚压底→情绪溢出工作对象，群体级不可逆 \| 可挂不可逆族但需查重边界 \| 与 D364/D423 **弱同构**（身心不可逆），
-  - 来源：`outputs/audit/teacher-competition-backfill-review-20260708.md`
-  - 依赖：D364, D423；被引用：—
-- [\| NF-005 \| 避风港 \| 无同名条目 \| 新结构：外层形式主义→个体在内部某空间找到不被指标侵蚀的场域，具体他人联结消解异化 \| 可挂 EXIT 族互补维度 \| 与退出权**不同构**：退出权是离开，避风港是「内部保留空间」 \| 机](../../../outputs/audit/teacher-competition-backfill-review-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-b993d02eae599f73 / \| NF-005 \| 避风港 \| 无同名条目 \| 新结构：外层形式主义→个体在内部某空间找到不被指标侵蚀的场域，具体他人联结消解异化 \| 可挂 EXIT 族互补维度 \| 与退出权**不同构**：退出权是离开，避风港是「内部保留空间」 \| 机
-  - 来源：`outputs/audit/teacher-competition-backfill-review-20260708.md`
-  - 依赖：—；被引用：—
-- [\| P0 \| 心灵、自我与社会 \| Mind, Self, and Society \| George Herbert Mead \| 社会心理学 / 符号互动论 \| 1934 \| Univ. of Chicago Press 常见版 \| 有中](../../../outputs/research/role-identity-subjectivity-reading-list-20260712.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-f8d444c8066c2a05 / \| P0 \| 心灵、自我与社会 \| Mind, Self, and Society \| George Herbert Mead \| 社会心理学 / 符号互动论 \| 1934 \| Univ. of Chicago Press 常见版 \| 有中
-  - 来源：`outputs/research/role-identity-subjectivity-reading-list-20260712.md`
-  - 依赖：D601, P0；被引用：—
-- [\| P0 \| 日常生活中的自我呈现 \| The Presentation of Self in Everyday Life \| Erving Goffman \| 社会学 / 符号互动论 \| 1959 \| Anchor Books ed.;](../../../outputs/research/role-identity-subjectivity-reading-list-20260712.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-6e9c3a1fdd3ffc4a / \| P0 \| 日常生活中的自我呈现 \| The Presentation of Self in Everyday Life \| Erving Goffman \| 社会学 / 符号互动论 \| 1959 \| Anchor Books ed.;
-  - 来源：`outputs/research/role-identity-subjectivity-reading-list-20260712.md`
-  - 依赖：D601, P0；被引用：—
-- [\| P1 \| 身份理论 \| Identity Theory \| Peter J. Burke, Jan E. Stets \| 社会心理学 / 组织身份 \| 2009 \| Oxford University Press \| 中文系统译本较少](../../../outputs/research/role-identity-subjectivity-reading-list-20260712.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-33075346abc55d25 / \| P1 \| 身份理论 \| Identity Theory \| Peter J. Burke, Jan E. Stets \| 社会心理学 / 组织身份 \| 2009 \| Oxford University Press \| 中文系统译本较少
-  - 来源：`outputs/research/role-identity-subjectivity-reading-list-20260712.md`
-  - 依赖：D602, P1；被引用：—
-- [\| P2 \| Social Identity \| Social Identity \| Richard Jenkins \| 社会身份研究 \| 1996 \| 中文系统译本较少 \| 补个体 / 群体 / 分类之间的桥梁 \|](../../../outputs/research/role-identity-subjectivity-reading-list-20260712.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-7d8864db84d1cf93 / \| P2 \| Social Identity \| Social Identity \| Richard Jenkins \| 社会身份研究 \| 1996 \| 中文系统译本较少 \| 补个体 / 群体 / 分类之间的桥梁 \|
-  - 来源：`outputs/research/role-identity-subjectivity-reading-list-20260712.md`
-  - 依赖：P2；被引用：—

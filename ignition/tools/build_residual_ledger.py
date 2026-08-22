@@ -19,7 +19,7 @@ from tools import validate_residual_ledger  # noqa: E402
 
 LEDGER_PATH = ROOT / "data/operations/residual-ledger-r1.json"
 MATERIALITY_PATH = ROOT / "data/governance/human-surface/materiality-manifest.json"
-FULL_DISCOVERY_PATH = ROOT / "data/operations/iterations/134/step10-full-unittest-discovery.json"
+FULL_DISCOVERY_PATH = ROOT / "data/operations/iterations/134/step14-full-unittest-discovery.json"
 
 
 def source_sha(path: Path) -> str | None:
@@ -93,6 +93,13 @@ def full_discovery_observation() -> tuple[list[str], list[str], str, str]:
     status = record.get("status", "BLOCKED")
     if status == "PASS":
         return [], [], "RESOLVED_CURRENT", command
+    if status == "TERMINAL_FAILURES_RECORDED":
+        result = record.get("result", {})
+        tests = result.get("tests_run", "unknown")
+        failures = result.get("failures", "unknown")
+        errors = result.get("errors", "unknown")
+        skipped = result.get("skipped", "unknown")
+        return [f"FULL_DISCOVERY:TERMINAL_FAILURES:tests={tests}:failures={failures}:errors={errors}:skips={skipped}"], ["FULL_DISCOVERY_FAILURES_OR_ERRORS"], "OPEN_INHERITED", command
     blocker = record.get("blocker") or record.get("status") or "FULL_DISCOVERY_BLOCKED"
     return [f"FULL_DISCOVERY:{blocker}"], ["FULL_DISCOVERY_BLOCKER"], "OPEN_INHERITED", command
 
@@ -142,6 +149,7 @@ def build() -> dict[str, Any]:
     propagation_baseline, propagation_dimensions, propagation_baseline_command = prior_baseline(previous, "PROPAGATION_TASK104_106_MISMATCH", propagation_objects(), ["MACHINE_RECORD_IMPACT", "PROJECT_STATE_IMPACT", "SYSTEM_MAP_IMPACT"], propagation_command)
     sympy_baseline, sympy_dimensions, sympy_baseline_command = prior_baseline(previous, "T16_SYMPY_COUNTEREXAMPLE", sympy_objects(), ["SYMPY_UNAVAILABLE"] if sympy_objects() else [], sympy_command)
     full_baseline, full_baseline_dimensions, full_baseline_command = prior_baseline(previous, "FULL_UNITTEST_DISCOVERY_TERMINAL_STATE", ["FULL_DISCOVERY:TIMEOUT_CLASSIFIED_AT_30_SECONDS"], ["FULL_DISCOVERY_TIMEOUT"], full_command)
+    terminal_full_baseline, terminal_full_baseline_dimensions, terminal_full_baseline_command = prior_baseline(previous, "FULL_UNITTEST_DISCOVERY_TERMINAL_FAILURES", full_objects, full_dimensions, full_command)
     entries = [
         make_entry(
             residual_id="CURRENT_PATH_MANIFEST_UNACCOUNTED",
@@ -211,17 +219,33 @@ def build() -> dict[str, Any]:
             residual_id="FULL_UNITTEST_DISCOVERY_TERMINAL_STATE",
             origin_task="IGNITION-20260822-133",
             classification="FULL_DISCOVERY_EXECUTION_STATE",
-            objects=full_objects,
-            dimensions=full_dimensions,
+            objects=[] if full_objects and full_objects[0].startswith("FULL_DISCOVERY:TERMINAL_FAILURES:") else full_objects,
+            dimensions=[] if full_objects and full_objects[0].startswith("FULL_DISCOVERY:TERMINAL_FAILURES:") else full_dimensions,
             command=full_command,
             validator="python3 -m unittest discover",
-            provenance=["ignition/data/operations/iterations/134/step10-full-unittest-discovery.json", "ignition/agent-results/IGNITION-20260822-133-result.md"],
+            provenance=["ignition/data/operations/iterations/134/step10-full-unittest-discovery.json", "ignition/data/operations/iterations/134/step14-full-unittest-discovery.json", "ignition/agent-results/IGNITION-20260822-133-result.md"],
             allowed="Only the actual long-window terminal result or a located blocker may be recorded; arbitrary short timeout is not a release result.",
-            impact="NON_BLOCKING_IF_UNCHANGED" if full_objects else "NON_BLOCKING_RESOLVED",
-            status=full_status,
+            impact="NON_BLOCKING_RESOLVED" if full_objects and full_objects[0].startswith("FULL_DISCOVERY:TERMINAL_FAILURES:") else ("NON_BLOCKING_IF_UNCHANGED" if full_objects else "NON_BLOCKING_RESOLVED"),
+            status="RESOLVED_CURRENT" if full_objects and full_objects[0].startswith("FULL_DISCOVERY:TERMINAL_FAILURES:") else full_status,
             baseline_objects=full_baseline,
             baseline_dimensions=full_baseline_dimensions,
             baseline_command=full_baseline_command,
+        ),
+        make_entry(
+            residual_id="FULL_UNITTEST_DISCOVERY_TERMINAL_FAILURES",
+            origin_task="IGNITION-20260822-134",
+            classification="FULL_DISCOVERY_TERMINAL_RESULT",
+            objects=full_objects if full_objects and full_objects[0].startswith("FULL_DISCOVERY:TERMINAL_FAILURES:") else [],
+            dimensions=full_dimensions if full_objects and full_objects[0].startswith("FULL_DISCOVERY:TERMINAL_FAILURES:") else [],
+            command=full_command,
+            validator="python3 -m unittest discover",
+            provenance=["ignition/data/operations/iterations/134/step14-full-unittest-discovery.json", "ignition/agent-results/IGNITION-20260822-134-result.md"],
+            allowed="The exact long-window terminal result is a separately classified current observation; any changed result fingerprint or failure dimension is a new regression and must not be absorbed into the historical timeout observation.",
+            impact="NON_BLOCKING_IF_UNCHANGED" if full_objects and full_objects[0].startswith("FULL_DISCOVERY:TERMINAL_FAILURES:") else "NON_BLOCKING_RESOLVED",
+            status="OPEN_INHERITED" if full_objects and full_objects[0].startswith("FULL_DISCOVERY:TERMINAL_FAILURES:") else "RESOLVED_CURRENT",
+            baseline_objects=terminal_full_baseline,
+            baseline_dimensions=terminal_full_baseline_dimensions,
+            baseline_command=terminal_full_baseline_command,
         ),
     ]
     return {

@@ -81,6 +81,7 @@
 {"category": "REFERENCE_OR_KNOWLEDGE", "matched_rule": "REFERENCE_OR_KNOWLEDGE", "path": "ignition/KNOWLEDGE/indexes/mathematics/part-017.md"}
 {"category": "REFERENCE_OR_KNOWLEDGE", "matched_rule": "REFERENCE_OR_KNOWLEDGE", "path": "ignition/KNOWLEDGE/indexes/mathematics/part-018.md"}
 {"category": "REFERENCE_OR_KNOWLEDGE", "matched_rule": "REFERENCE_OR_KNOWLEDGE", "path": "ignition/KNOWLEDGE/indexes/mathematics/part-019.md"}
+{"category": "REFERENCE_OR_KNOWLEDGE", "matched_rule": "REFERENCE_OR_KNOWLEDGE", "path": "ignition/KNOWLEDGE/indexes/mathematics/part-020.md"}
 {"category": "REFERENCE_OR_KNOWLEDGE", "matched_rule": "REFERENCE_OR_KNOWLEDGE", "path": "ignition/KNOWLEDGE/indexes/operations_evidence.md"}
 {"category": "REFERENCE_OR_KNOWLEDGE", "matched_rule": "REFERENCE_OR_KNOWLEDGE", "path": "ignition/KNOWLEDGE/indexes/operations_evidence/part-001.md"}
 {"category": "REFERENCE_OR_KNOWLEDGE", "matched_rule": "REFERENCE_OR_KNOWLEDGE", "path": "ignition/KNOWLEDGE/indexes/operations_evidence/part-002.md"}
@@ -159,6 +160,8 @@
 {"category": "EDITORIAL_ARTICLE", "matched_rule": "EDITORIAL_ARTICLE", "path": "ignition/agent-results/IGNITION-20260822-132-result.md"}
 {"category": "EDITORIAL_ARTICLE", "matched_rule": "EDITORIAL_ARTICLE", "path": "ignition/agent-results/IGNITION-20260822-133-machine-receipt.json"}
 {"category": "EDITORIAL_ARTICLE", "matched_rule": "EDITORIAL_ARTICLE", "path": "ignition/agent-results/IGNITION-20260822-133-result.md"}
+{"category": "EDITORIAL_ARTICLE", "matched_rule": "EDITORIAL_ARTICLE", "path": "ignition/agent-results/IGNITION-20260822-134-machine-receipt.json"}
+{"category": "EDITORIAL_ARTICLE", "matched_rule": "EDITORIAL_ARTICLE", "path": "ignition/agent-results/IGNITION-20260822-134-result.md"}
 {"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": "ignition/agent_federation/__init__.py"}
 {"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": "ignition/agent_federation/adapters/__init__.py"}
 {"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": "ignition/agent_federation/adapters/codex.py"}
@@ -1506,6 +1509,13 @@
 {"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "ignition/data/operations/iterations/134/step13-ordinal-binding-gate-r1.json"}
 {"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "ignition/data/operations/iterations/134/step13-release-lifecycle-audit.json"}
 {"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "ignition/data/operations/iterations/134/step13-residual-debt-projection-hygiene-r1.json"}
+{"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "ignition/data/operations/iterations/134/step14-current-surface-semantic-gate-r1.json"}
+{"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "ignition/data/operations/iterations/134/step14-deterministic-current-surface-r1.json"}
+{"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "ignition/data/operations/iterations/134/step14-full-unittest-discovery.json"}
+{"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "ignition/data/operations/iterations/134/step14-human-surface-semantic-audit.json"}
+{"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "ignition/data/operations/iterations/134/step14-ordinal-binding-gate-r1.json"}
+{"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "ignition/data/operations/iterations/134/step14-release-lifecycle-audit.json"}
+{"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "ignition/data/operations/iterations/134/step14-residual-debt-projection-hygiene-r1.json"}
 {"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "ignition/data/operations/lifecycle-events.jsonl"}
 {"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "ignition/data/operations/merged-iteration-ledger.jsonl"}
 {"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "ignition/data/operations/project-components.json"}
@@ -2329,6 +2339,8 @@
 {"category": "GENERATED_PROJECTION", "matched_rule": "GENERATED_PROJECTION", "path": "ignition/reports/operations/ignition-134-step12-residual-adversarial-matrix.md"}
 {"category": "GENERATED_PROJECTION", "matched_rule": "GENERATED_PROJECTION", "path": "ignition/reports/operations/ignition-134-step13-human-surface-semantic-audit.md"}
 {"category": "GENERATED_PROJECTION", "matched_rule": "GENERATED_PROJECTION", "path": "ignition/reports/operations/ignition-134-step13-residual-debt-projection-hygiene.md"}
+{"category": "GENERATED_PROJECTION", "matched_rule": "GENERATED_PROJECTION", "path": "ignition/reports/operations/ignition-134-step14-human-surface-semantic-audit.md"}
+{"category": "GENERATED_PROJECTION", "matched_rule": "GENERATED_PROJECTION", "path": "ignition/reports/operations/ignition-134-step14-residual-debt-projection-hygiene.md"}
 {"category": "GENERATED_PROJECTION", "matched_rule": "GENERATED_PROJECTION", "path": "ignition/reports/operations/lifecycle-audit-108.md"}
 {"category": "GENERATED_PROJECTION", "matched_rule": "GENERATED_PROJECTION", "path": "ignition/reports/publication/jin-rise-point-fire-analysis.md"}
 {"category": "GENERATED_PROJECTION", "matched_rule": "GENERATED_PROJECTION", "path": "ignition/reports/publication/song-huizong-taoism-point-fire-analysis.md"}
@@ -2497,6 +2509,7 @@
 {"category": "SCHEMA", "matched_rule": "SCHEMA", "path": "ignition/schemas/operations/non-impact-proof.schema.json"}
 {"category": "SCHEMA", "matched_rule": "SCHEMA", "path": "ignition/schemas/operations/ordinal-binding-gate-133-r1.schema.json"}
 {"category": "SCHEMA", "matched_rule": "SCHEMA", "path": "ignition/schemas/operations/ordinal-binding-gate-134-r1.schema.json"}
+{"category": "SCHEMA", "matched_rule": "SCHEMA", "path": "ignition/schemas/operations/ordinal-binding-gate-134-step14-r1.schema.json"}
 {"category": "SCHEMA", "matched_rule": "SCHEMA", "path": "ignition/schemas/operations/project-components.schema.json"}
 {"category": "SCHEMA", "matched_rule": "SCHEMA", "path": "ignition/schemas/operations/publication-witness-r1.schema.json"}
 {"category": "SCHEMA", "matched_rule": "SCHEMA", "path": "ignition/schemas/operations/release-state-model-r1.schema.json"}

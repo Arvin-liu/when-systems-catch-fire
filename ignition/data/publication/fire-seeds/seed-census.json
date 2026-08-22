@@ -36,13 +36,13 @@
   },
   "knowledge_experience": {
     "manifest_counts": {
-      "aliases": 851,
+      "aliases": 875,
       "card_shards": 9,
-      "cards": 403,
+      "cards": 413,
       "changes": 315,
       "layered_readings": 332,
-      "search_records": 22183,
-      "subject_indexes": 55
+      "search_records": 22489,
+      "subject_indexes": 56
     },
     "layered_reading_source_origins": 332,
     "layered_reading_status_counts": {
@@ -2254,7 +2254,7 @@
       "title": "AI-START-HERE",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "a209d968eae4b6af8843530fe0877dff3a1c3ed1b4bd7b78cc43ffe57d1390b3",
+      "source_sha256": "ee12ad87a5c11c5c7c2e28f946101a4cca79725faaf180427a3a1b519b516f54",
       "disposition": "SEED_CREATED",
       "seed_ids": [
         "FS-17"
@@ -2269,7 +2269,7 @@
       "title": "ARCHITECTURE",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "8753578961bfec92f5af567add0f7fe82df2067c8523d36b64ece19ae5ea4e21",
+      "source_sha256": "957ebaa98be91694f1ba683834000d84bcaa06c1d4cfc8dd7e859839d65547f3",
       "disposition": "SEED_CREATED",
       "seed_ids": [
         "FS-03"
@@ -2333,7 +2333,7 @@
       "title": "ASSET-CARDS",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "692320e9e0bbaaa2606ec2a4eaf9d87c4590522f92251261e1f29d67e368224a",
+      "source_sha256": "5fb2358bfba58d67565ea7ed1d4cc722f62833ae2d4fd734d3deaed06abb9fde",
       "disposition": "EXCLUDED_NONCONTENT",
       "seed_ids": [],
       "review_basis": "INDEX_OR_GENERATED_PROJECTION",
@@ -2346,7 +2346,7 @@
       "title": "COVERAGE",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "07f83d23ea82eb1f816b23f203c83bb7d97b411e28e2b19f76a3308c825e1a0c",
+      "source_sha256": "c8ecfd6ba36c5d563330b5301e373f182e4c67b94f970b483fad46ce08924323",
       "disposition": "EXCLUDED_NONCONTENT",
       "seed_ids": [],
       "review_basis": "INDEX_OR_GENERATED_PROJECTION",
@@ -2372,7 +2372,7 @@
       "title": "MAP",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "2c8f2a5085678bba9eeb0107d96562c17b87f5841b566601d43e2aae1a16f827",
+      "source_sha256": "f3344b195460ce4d21269ca1bae70b3d49acf9b9b4b7f3b5ec3b2b0b8d5c7df9",
       "disposition": "EXCLUDED_NONCONTENT",
       "seed_ids": [],
       "review_basis": "INDEX_OR_GENERATED_PROJECTION",
@@ -2385,7 +2385,7 @@
       "title": "READING-LAYERS",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "982fab528bf07720191633d37f16fae2cd3705be16088fc466bf7427a1c41b07",
+      "source_sha256": "b0a036930400a5077e93f004735e93dc3b875e6e68e3a4d81b14fc52642e484e",
       "disposition": "EXCLUDED_NONCONTENT",
       "seed_ids": [],
       "review_basis": "INDEX_OR_GENERATED_PROJECTION",
@@ -2398,7 +2398,7 @@
       "title": "README",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "89842d894db747d28146daff2175b1eddfbd6ea07dd662e2830ce691080cb6ef",
+      "source_sha256": "33959bce5344bd79e07dfab5ff92a0ca362b24d1e29400b9aa22d5a45a83bb92",
       "disposition": "SEED_CREATED",
       "seed_ids": [
         "CF-25",
@@ -2414,7 +2414,7 @@
       "title": "SEARCH",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "dbdce7fe14ce037623baa8215c27604d63dc496900051b3b3c04c9a611336842",
+      "source_sha256": "6463e794c120b8377803bbe68571369c9e9bb0641453b742c440391d1ec71a6e",
       "disposition": "EXCLUDED_NONCONTENT",
       "seed_ids": [],
       "review_basis": "INDEX_OR_GENERATED_PROJECTION",
@@ -2846,7 +2846,7 @@
       "title": "STATE-CHANGELOG",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "5ae98311260639917473da6dd1eaf247279e75da1df8000376ad57cd3ba2d722",
+      "source_sha256": "9780b201fd04fa6887ab5c1606373542e8cf0126be84b4917d131730504517bb",
       "disposition": "MERGED_INTO_SEED",
       "seed_ids": [
         "FS-23"
@@ -2874,7 +2874,7 @@
       "title": "closure-summary",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "fa4e3d174ba4858fd6cacbc40e595cc926750c5f272f49703e82c4e375693893",
+      "source_sha256": "b2fe2951d9d2b80c74810e1b7c9b76563b08eae6fa9956e9cadb19e769098ab9",
       "disposition": "MERGED_INTO_SEED",
       "seed_ids": [
         "FS-06"
@@ -2889,7 +2889,7 @@
       "title": "identity-cards",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "f7a4217127c662fa8890a3bfcaea1935aee668babbd51393efcaf71293dd6898",
+      "source_sha256": "620e90fe49db9a4fe820d3598cf7fac5b9bd4928d09cd72f8b03cd94e7be59db",
       "disposition": "MERGED_INTO_SEED",
       "seed_ids": [
         "FS-08"
@@ -2904,7 +2904,7 @@
       "title": "closure-summary",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "a46fb4974ed194fe93f66b76561e8abffb6006446cfb5ddaaf8e78b0227c091e",
+      "source_sha256": "3d1c4dd7553a15d86d6f9ca6b1b3fb6a1cf3441997cb8f2eef1348f64267e82d",
       "disposition": "MERGED_INTO_SEED",
       "seed_ids": [
         "FS-07"
@@ -3093,7 +3093,7 @@
       "title": "External Agent Federation R1 — ownership boundary",
       "knowledge_status": "CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS",
       "subject": null,
-      "source_sha256": "93cef8c7ea5ed230d88ec7fa6a241ec86043e6f85a8d317cd72a46c83d694798",
+      "source_sha256": "147a3d4777d5bf306fc1929dfd3196f8b0a71f9fce47873fb51c029e2b738b30",
       "disposition": "NO_SEED_DELTA",
       "seed_ids": [],
       "review_basis": "KNOWLEDGE_LAYERED_READING_TRIAGE",
@@ -3210,7 +3210,7 @@
       "title": "点火仓库原生系统图",
       "knowledge_status": "HISTORICAL_OR_SUPERSEDED_SOURCE",
       "subject": null,
-      "source_sha256": "66e9c87f9f7d4d8a388de08ecb8000a9fe7bf335350946ada90c2c014c2fc680",
+      "source_sha256": "81a036512df79cb93f4d166f3a3eac18d52e81d7b88560159e14dc3617beba6c",
       "disposition": "SEED_CREATED",
       "seed_ids": [
         "FS-12"
@@ -3659,7 +3659,7 @@
       "title": "全语料非函数型断言裁决索引",
       "knowledge_status": "CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS",
       "subject": null,
-      "source_sha256": "1da9c4721ad25fa15db3f27d520ce49af8e225ac7a1b0ffa746417fea2da8600",
+      "source_sha256": "1b811115652f562cf17fbf722a4d3b773ae6479dcdab11e1bc683e0557e952d5",
       "disposition": "NO_SEED_DELTA",
       "seed_ids": [],
       "review_basis": "KNOWLEDGE_LAYERED_READING_TRIAGE",
@@ -3754,7 +3754,7 @@
       "title": "ignition-system-architecture",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "753d46168434b9922f5a7c2f4aea993e4975f4058364daa3a094fd0d2a4edea4",
+      "source_sha256": "8f4279ce2fbbfc7736731a6fd2403b9cb5944eaaedfe6ec28fec77447ce6bca2",
       "disposition": "MERGED_INTO_SEED",
       "seed_ids": [
         "FS-12"
@@ -4133,7 +4133,7 @@
       "title": "README",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "d08c32f58e6c85b0a34f44c5b2cee744e45ace4735377746776a03da82903fb9",
+      "source_sha256": "e11e71b8969e524900ab20c185f81ecb2b904e0e3b68c4e9767660f38555ed34",
       "disposition": "SEED_CREATED",
       "seed_ids": [
         "CF-03",
@@ -4155,7 +4155,7 @@
       "title": "README",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "ef6a0751ea5e88dcf145395c91c6393aa4b155bfdaa1c06c1205fc7d491a0ea5",
+      "source_sha256": "1b2dfd51f275c802facec8abd2f4c695fb389743d87314a99c243635da80c59b",
       "disposition": "SEED_CREATED",
       "seed_ids": [
         "CF-10",

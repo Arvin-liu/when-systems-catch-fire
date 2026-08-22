@@ -29,7 +29,7 @@ LIFECYCLE_PATH = ROOT / "data/operations/current-release-lifecycle-r1.json"
 SCHEMA_PATH = ROOT / "schemas/operations/current-release-lifecycle-r1.schema.json"
 LINEAGE_PATH = ROOT / "data/operations/current-task-lineage-status.json"
 IDENTITY_PATH = ROOT / "data/architecture/current-system-identity.json"
-AUDIT_PATH = ROOT / "data/operations/iterations/134/step13-release-lifecycle-audit.json"
+AUDIT_PATH = ROOT / "data/operations/iterations/134/step14-release-lifecycle-audit.json"
 EXECUTION_CONTRACT_PATH = ROOT / "data/operations/iterations/134/execution-contract-r1.json"
 FACTS_PATH = ROOT / "data/architecture/current-facts.json"
 

@@ -4,6 +4,76 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [验证系统（9个）：**](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-463cc6ad3d7d9236 / 验证系统（9个）：**
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [验证结论：** J⁺=1, J⁻=0 → 决策权与信息权的对称性在复杂系统中成立](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-630d205b0b7cfe43 / 验证结论：** J⁺=1, J⁻=0 → 决策权与信息权的对称性在复杂系统中成立
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [验证结论：** J⁺=1, J⁻=0 → 决策权与信息权的对称性在市场机制中成立](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-04df2853ad4909b1 / 验证结论：** J⁺=1, J⁻=0 → 决策权与信息权的对称性在市场机制中成立
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [验证结论：** J⁺=1, J⁻=0 → 局部信息→局部调整→全局涌现在复杂系统中成立](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-133328618ef063c6 / 验证结论：** J⁺=1, J⁻=0 → 局部信息→局部调整→全局涌现在复杂系统中成立
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [验证结论：** J⁺=1, J⁻=0 → 局部信息→局部调整→全局涌现在市场机制中成立](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-b4384aca8a7411c8 / 验证结论：** J⁺=1, J⁻=0 → 局部信息→局部调整→全局涌现在市场机制中成立
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [验证结论：** J⁺=1, J⁻=0 → 智能契约在复杂系统中成立](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-a9b4541100eb1ccc / 验证结论：** J⁺=1, J⁻=0 → 智能契约在复杂系统中成立
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [验证结论：** J⁺=1, J⁻=0 → 智能契约在市场机制中成立](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-6ca746feaae3daf5 / 验证结论：** J⁺=1, J⁻=0 → 智能契约在市场机制中成立
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [验证结论：** J⁺=1, J⁻=0 → 涌现在复杂系统中成立](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-f8232746fce59b1c / 验证结论：** J⁺=1, J⁻=0 → 涌现在复杂系统中成立
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [验证结论：** J⁺=1, J⁻=0 → 涌现在市场机制中成立](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-4d4e2b14236ba1cd / 验证结论：** J⁺=1, J⁻=0 → 涌现在市场机制中成立
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [验证结论：** J⁺=1, J⁻=0 → 纳什均衡在复杂系统中成立](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-7f16c90b4790a41b / 验证结论：** J⁺=1, J⁻=0 → 纳什均衡在复杂系统中成立
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [验证结论：** J⁺=1, J⁻=0 → 纳什均衡在市场机制中成立](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-94c946101e30c77b / 验证结论：** J⁺=1, J⁻=0 → 纳什均衡在市场机制中成立
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [验证结论：** J⁺=1, J⁻=0 → 自组织在复杂系统中成立](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-30ace86ceed93370 / 验证结论：** J⁺=1, J⁻=0 → 自组织在复杂系统中成立
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [验证结论：** J⁺=1, J⁻=0 → 自组织在市场机制中成立](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-3759752b3ca3119f / 验证结论：** J⁺=1, J⁻=0 → 自组织在市场机制中成立
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [验证结论：**召回层有效，置信度判定需机制级二次层；结构抽取不足是瓶颈**](../../../outputs/audit/agent-collision-phase-closeout-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-cd4cb8fb78a2a558 / 验证结论：**召回层有效，置信度判定需机制级二次层；结构抽取不足是瓶颈**
+  - 来源：`outputs/audit/agent-collision-phase-closeout-20260708.md`
+  - 依赖：—；被引用：—
 - [验证自我模型相变需要满足三个标准： **标准1：行为变化标准** Δ_behavior > θ_behavior（拒绝后行为系统性变化） = 校准偏移 + 拒绝一致性变化 + 探索行为变化 三者中至少一个显著 **标准2：不可伪造标准**](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-63e2b8efe99bef76 / 验证自我模型相变需要满足三个标准： **标准1：行为变化标准** Δ_behavior > θ_behavior（拒绝后行为系统性变化） = 校准偏移 + 拒绝一致性变化 + 探索行为变化 三者中至少一个显著 **标准2：不可伪造标准**

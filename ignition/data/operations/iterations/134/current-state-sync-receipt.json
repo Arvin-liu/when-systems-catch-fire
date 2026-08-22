@@ -12,26 +12,26 @@
   "current_iteration_boundary_semantics": "DEPRECATED_COMPATIBILITY_ALIAS_OF_CURRENT_FORMAL_TASK_ORDINAL",
   "surface_decisions": [
     {"surface_id": "homepage-identity", "path": ".github/README.md", "decision": "CHANGE", "reason": "Task134 Current projection renders formal ordinal 134, architecture ordinal 129 and the deprecated compatibility alias.", "evidence": "Step13 Current projection regeneration and semantic gate."},
-    {"surface_id": "project-current-state", "path": "ignition/docs/project-current-state.md", "decision": "CHANGE", "reason": "Task134 Current projection renders the migrated formal task and residual-hygiene lifecycle.", "evidence": "Step13 Current projection regeneration and semantic gate."},
+    {"surface_id": "project-current-state", "path": "ignition/docs/project-current-state.md", "decision": "CHANGE", "reason": "Task134 Current projection renders the migrated formal task and terminal residual-hygiene lifecycle.", "evidence": "Step14 terminal Current projection regeneration and semantic gate."},
     {"surface_id": "ai-cold-start", "path": "ignition/AI-START-HERE.md", "decision": "CHANGE", "reason": "Task134 Current projection updates the formal task identity while retaining architecture task 129.", "evidence": "Step13 Current projection regeneration and semantic gate."},
-    {"surface_id": "ai-agents-handoff", "path": "ignition/AI-HANDOFF.md", "decision": "CHANGE", "reason": "Task134 Current projection updates the formal task identity and IN_PROGRESS lifecycle.", "evidence": "Step13 Current projection regeneration and semantic gate."},
+    {"surface_id": "ai-agents-handoff", "path": "ignition/AI-HANDOFF.md", "decision": "CHANGE", "reason": "Task134 Current projection updates the formal task identity and terminal lifecycle.", "evidence": "Step14 terminal Current projection regeneration and semantic gate."},
     {"surface_id": "architecture", "path": "ignition/ARCHITECTURE.md", "decision": "CHANGE", "reason": "The generated Current block records the formal/architecture ordinal split after the Task134 source migration.", "evidence": "Step13 Current projection regeneration and semantic gate."},
     {"surface_id": "steering-doc", "path": "ignition/docs/architecture/os-steering-intent-r1.md", "decision": "NO_CHANGE_WITH_REASON", "reason": "Task134 changes residual and Current projection hygiene, not Steering or Intent capability."},
     {"surface_id": "machine-entry", "path": "ignition/llms.txt", "decision": "CHANGE", "reason": "The machine Current block now carries formal ordinal 134, architecture ordinal 129 and alias semantics.", "evidence": "Step13 Current projection regeneration and semantic gate."},
     {"surface_id": "system-map-doc", "path": "ignition/docs/architecture/interactive-system-map.md", "decision": "NO_CHANGE_WITH_REASON", "reason": "Current map remains 0.12.0; Task134 does not change map identity, topology or layout."},
     {"surface_id": "federation-doc", "path": "ignition/docs/architecture/external-agent-federation-r1.md", "decision": "NO_CHANGE_WITH_REASON", "reason": "Task134 does not change replaceable-executor or live-invocation boundaries."},
     {"surface_id": "system-map-json", "path": "ignition/data/architecture/interactive-system-map.json", "decision": "NO_CHANGE_WITH_REASON", "reason": "No registry, topology or layout change is introduced."},
-    {"surface_id": "state-changelog", "path": "ignition/STATE-CHANGELOG.md", "decision": "CHANGE", "reason": "The append-only Task134 source-transition delta records the residual-hygiene work and non-terminal Current lifecycle.", "evidence": "Step13 changelog append and current-task lineage validator."}
+    {"surface_id": "state-changelog", "path": "ignition/STATE-CHANGELOG.md", "decision": "CHANGE", "reason": "The append-only Task134 terminal delta records the residual-hygiene work and repository-local RELEASE_READY lifecycle.", "evidence": "Step14 terminal changelog append and current-task lineage validator."}
   ],
   "system_map_sync": {
     "decision": "NO_CHANGE_WITH_REASON",
-    "reason": "Task134 residual and projection hygiene does not change map version, topology or layout.",
+    "reason": "Task134 terminal residual and projection hygiene does not change map version, topology or layout.",
     "evidence": "Current map remains 0.12.0 Current and 0.11.0 Historical."
   },
   "state_changelog_delta": {
     "decision": "CHANGE",
-    "reason": "Task134 appends the canonical Current source migration and keeps Task133 as historical provenance.",
-    "evidence": "Task134 changelog section; current-task lineage and Current-State sync validators."
+    "reason": "Task134 appends the canonical Current source migration and terminal closure while keeping Task133 as historical provenance.",
+    "evidence": "Task134 terminal changelog section; current-task lineage and Current-State sync validators."
   },
   "changed_paths": [
     "ignition/data/architecture/current-system-identity.json",
@@ -86,6 +86,14 @@
     "ignition/data/operations/iterations/134/step13-human-surface-semantic-audit.json",
     "ignition/data/operations/iterations/134/step13-ordinal-binding-gate-r1.json",
     "ignition/data/operations/iterations/134/step13-release-lifecycle-audit.json",
+    "ignition/data/operations/iterations/134/step14-current-surface-semantic-gate-r1.json",
+    "ignition/data/operations/iterations/134/step14-deterministic-current-surface-r1.json",
+    "ignition/data/operations/iterations/134/step14-human-surface-semantic-audit.json",
+    "ignition/data/operations/iterations/134/step14-ordinal-binding-gate-r1.json",
+    "ignition/data/operations/iterations/134/step14-release-lifecycle-audit.json",
+    "ignition/data/operations/iterations/134/step14-residual-debt-projection-hygiene-r1.json",
+    "ignition/reports/operations/ignition-134-step14-human-surface-semantic-audit.md",
+    "ignition/reports/operations/ignition-134-step14-residual-debt-projection-hygiene.md",
     "ignition/data/operations/iterations/134/step13-residual-debt-projection-hygiene-r1.json",
     "ignition/data/operations/iterations/134/progress.jsonl",
     "ignition/reports/operations/ignition-134-step13-human-surface-semantic-audit.md",

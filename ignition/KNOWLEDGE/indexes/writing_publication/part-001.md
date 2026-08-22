@@ -129,6 +129,11 @@
   - 可搜索名称：Current Main vs 1.4 Candidate Homepage Comparison / IGNITION-ITERATION-METHOD-1.4-homepage-comparison
   - 来源：`reports/operations/IGNITION-ITERATION-METHOD-1.4-homepage-comparison.md`
   - 依赖：—；被引用：—
+- [Current projection had no separate authority class for the later remote fact. A](../../../reports/operations/ignition-131-step00-publication-paradox-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-c69e7dcb707fb73a / Current projection had no separate authority class for the later remote fact. A
+  - 来源：`reports/operations/ignition-131-step00-publication-paradox-audit.md`
+  - 依赖：—；被引用：—
 - [delta: closes the Current-State synchronization invariant, deterministic current-facts publication gate, compact `0.8.0`](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-1f2f02b9e9488f02 / delta: closes the Current-State synchronization invariant, deterministic current-facts publication gate, compact `0.8.0`
@@ -173,6 +178,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-8aeabce466a6363f / Q30T merges accepted PR #59 at exact HEAD and closes the repository-native Zhiyuan Writing Method showcase as Current: o
   - 来源：`CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [release_lifecycle: `PREPARED_FOR_RELEASE`, projection `RELEASE_READY`, publication `NOT_PUBLISHED`, post-publication rem](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-5709e9bb0395af13 / release_lifecycle: `PREPARED_FOR_RELEASE`, projection `RELEASE_READY`, publication `NOT_PUBLISHED`, post-publication rem
+  - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
 - [require\(manifest.get\("task_id"\) == TASK_ID, "publication manifest task identity mismatch"\)](../../../data/operations/iterations/114/publication/tools/validate_publication.py)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -269,6 +279,11 @@
   - 可搜索名称：NFC-f30d8668b02df8f3 / \| L_meta \| 历史学实例，跨域同构第四点印证 \|
   - 来源：`outputs/collisions/20260708-cross-domain-smoke-test/history/collision-report.md`
   - 依赖：—；被引用：—
+- [\| lifecycle task-branch projection \| `RELEASE_READY` \|](../../../reports/operations/ignition-131-step00-publication-paradox-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-51c9ba3ce0cc3fb1 / \| lifecycle task-branch projection \| `RELEASE_READY` \|
+  - 来源：`reports/operations/ignition-131-step00-publication-paradox-audit.md`
+  - 依赖：—；被引用：—
 - [\| publication_risk_rules \| failure_typology \| 风险规则对应的失败类型 \|](../../../docs/machine_readable_data_plan.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-749bbcf94d235988 / \| publication_risk_rules \| failure_typology \| 风险规则对应的失败类型 \|
@@ -343,6 +358,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-df630a331add9aec / 公开材料中的动机、组织细节和亲密关系约束高度混杂，不适合在本任务里拿来做精确同构。
   - 来源：`outputs/stories/20260712-disobedience-subjectivity/story-structure-map.md`
+  - 依赖：—；被引用：—
+- [其后迭代方法版本与 Current 标签由 generated Current Snapshot 统一投影（连续阶段快照发布，见 docs/operations/stage-snapshot-publication.md）。](../../ASSET-CARDS.md#asset-nfc-dd395b512a59af63)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-dd395b512a59af63 / 其后迭代方法版本与 Current 标签由 generated Current Snapshot 统一投影（连续阶段快照发布，见 docs/operations/stage-snapshot-publication.md）。 / 其后迭代方法版本与 Current 标签由 generated Current Snapshot 统一投影（连续阶段快照发布，见 docs/operations/stage-snapshot-publication.md）。
+  - 来源：`AI-HANDOFF.md`
   - 依赖：—；被引用：—
 - [写作可以重组、递归定义和跨域投影这些增量，但不得抹掉 gap、residue、竞争解释、主体差异和未完成验证。](../../../docs/publication/zhiyuan-writing-method.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`

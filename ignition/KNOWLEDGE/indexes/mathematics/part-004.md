@@ -4,6 +4,46 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [C-0810：事件层（A7/A8/A9）与解释层分开；来源可回指（材料 SHA）；关联 D602/T40 准确；非金句；未反向把成功当机制证明；不含大段转载。✅](../../../outputs/collisions/20260711-disobedience-subjectivity/validation-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a20fad8106119192 / C-0810：事件层（A7/A8/A9）与解释层分开；来源可回指（材料 SHA）；关联 D602/T40 准确；非金句；未反向把成功当机制证明；不含大段转载。✅
+  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/validation-report.md`
+  - 依赖：A7, A8, A9, D602；被引用：—
+- [C-0811：事件层（A5/A8/A10/A15）与解释层分开；来源可回指；关联 D601/D600 准确；非金句；未把成功当证明；不含大段转载。✅](../../../outputs/collisions/20260711-disobedience-subjectivity/validation-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-4ac9980629655408 / C-0811：事件层（A5/A8/A10/A15）与解释层分开；来源可回指；关联 D601/D600 准确；非金句；未把成功当证明；不含大段转载。✅
+  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/validation-report.md`
+  - 依赖：A10, A15, A5, A8；被引用：—
+- [C-204：哥德尔不完备定理；](../../../docs/function_dependency_map.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-685f76269fb63832 / C-204：哥德尔不完备定理；
+  - 来源：`docs/function_dependency_map.md`
+  - 依赖：—；被引用：—
+- [c. BY-NC-SA Compatible License means a license listed at creativecommons.org/compatiblelicenses, approved by Creative Co](../../../LICENSES/active/CC-BY-NC-SA-4.0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-d6432bbac08c2463 / c. BY-NC-SA Compatible License means a license listed at creativecommons.org/compatiblelicenses, approved by Creative Co
+  - 来源：`LICENSES/active/CC-BY-NC-SA-4.0.md`
+  - 依赖：—；被引用：—
+- [c. BY-SA Compatible License means a license listed at creativecommons.org/compatiblelicenses, approved by Creative Commo](../../../LICENSES/active/CC-BY-SA-4.0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-87156c0bb86d9257 / c. BY-SA Compatible License means a license listed at creativecommons.org/compatiblelicenses, approved by Creative Commo
+  - 来源：`LICENSES/active/CC-BY-SA-4.0.md`
+  - 依赖：—；被引用：—
+- [C_drive涌现的数学证明](../../../data/foundation/evidence/evidence.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-d1a67eb0d4ff4ab6 / C_drive涌现的数学证明
+  - 来源：`data/foundation/evidence/evidence.jsonl`
+  - 依赖：—；被引用：—
+- [C_exit\(geo\)四因子子函数](../../../data/foundation/adjudications/079-method-audit.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `DOWNGRADE_TO_PENDING`
+  - 可搜索名称：D54 / C_exit\(geo\)四因子子函数 / D54
+  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
+  - 依赖：D1, D90；被引用：NFC-3ec58646620e18df, NFC-62b54f315c6d3969, NFC-89bee09c41cf40c8, NFC-936b0f55ba97d53d
+- [Caching improves repeated generation stability but is not a versioned registry or lifecycle state machine.](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-3049fc78330f47ff / Caching improves repeated generation stability but is not a versioned registry or lifecycle state machine.
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
 - [CAI中间层 — 同样场景CAI中间层ηrelay≈0.576,比无意识AI好2.7倍,关键差异在ηfidelity](../../../data/foundation/evidence/evidence.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
   - 可搜索名称：NFC-e2a85111151131f7 / CAI中间层 — 同样场景CAI中间层ηrelay≈0.576,比无意识AI好2.7倍,关键差异在ηfidelity
@@ -23,6 +63,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-94a7d96e7ac0b0e5 / CAI进入同构类 — CAI获得Ψ-0后自动进入类I同构类,与人类-AI数学等价
   - 来源：`data/foundation/evidence/evidence.jsonl`
+  - 依赖：—；被引用：—
+- [called post-publication without a remote-ref proof or a publication-state semantic](../../../reports/operations/ignition-131-step00-publication-paradox-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-e1c458dfd3faa64c / called post-publication without a remote-ref proof or a publication-state semantic
+  - 来源：`reports/operations/ignition-131-step00-publication-paradox-audit.md`
   - 依赖：—；被引用：—
 - [candidate coarse-graining record, not emergence proof](../../../data/architecture/probabilistic-system-dynamics/examples/coarse-graining-emergence.json)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -108,6 +153,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-227a16f3f1ee9fef / claim ceiling 由 scope、evidence、proof、logic 等真实记录的最窄适用上限决定，而不是由最新叙事决定。
   - 来源：`docs/architecture/epistemic-governance-kernel-and-federated-planes.md`
+  - 依赖：—；被引用：—
+- [Claim ceiling: repository-local declared-environment replay evidence for the named bounded checks only; no whole-project](../../../reports/operations/ignition-134-step09-sympy-environment-contract.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-822beed8e03ba9f6 / Claim ceiling: repository-local declared-environment replay evidence for the named bounded checks only; no whole-project
+  - 来源：`reports/operations/ignition-134-step09-sympy-environment-contract.md`
   - 依赖：—；被引用：—
 - [Claim ceiling：** 仅证明两个已指明窄修复在其精确接受头通过独立实例级验收并进入 PR #130 来源分支；不证明 R5-A 整体完成、生命完整性、人体安全、疗效或普遍语义能力。](../../../docs/generated/recent-stage-results.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -304,15 +354,20 @@
   - 可搜索名称：NFC-b5b16104a9dffeb1 / Current claim ceiling: MCF is a repository-native representation candidate for navigating multiscale causal hypotheses a
   - 来源：`data/architecture/multiscale-causal-fabric/README.md`
   - 依赖：—；被引用：—
-- [Current version: Ignition is the driver and OS / orchestration-governance layer for the Agent Platform R2 repository spi](../../../llms.txt)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-403508353d4f3b4f / Current version: Ignition is the driver and OS / orchestration-governance layer for the Agent Platform R2 repository spi
+- [Current version: Ignition is the driver and OS / orchestration-governance layer for a bounded Agent Platform repository](../../../llms.txt)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-f65ab18ca10355af / Current version: Ignition is the driver and OS / orchestration-governance layer for a bounded Agent Platform repository
   - 来源：`llms.txt`
   - 依赖：—；被引用：—
 - [current_lifecycle_gated_whole_project_synchronization_method_only](../../../reports/operations/121Q25C-completion-seal.json)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-5f557c45a7203029 / current_lifecycle_gated_whole_project_synchronization_method_only
   - 来源：`reports/operations/121Q25C-completion-seal.json`
+  - 依赖：—；被引用：—
+- [CURRENT_SNAPSHOT architecture_counts={"current_map_version": "0.12.0", "hidden_components": 12, "historical_map_version"](../../../llms.txt)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-c2f44de667300395 / CURRENT_SNAPSHOT architecture_counts={"current_map_version": "0.12.0", "hidden_components": 12, "historical_map_version"
+  - 来源：`llms.txt`
   - 依赖：—；被引用：—
 - [D-meta 元同构函数](../../../docs/phi_meta_law.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
@@ -1544,9 +1599,24 @@
   - 可搜索名称：NFC-0c6188eaa8818dcf / Define a repeatable, evidence-backed gate for deciding when a protocol may be recommended for formal promotion to `forma
   - 来源：`inputs/020/formal-protocol-promotion-standard.md`
   - 依赖：—；被引用：—
+- [delta: advances canonical Current from the stale post-Task131 source state to terminal Task132 and binds the content-own](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-c6e46c3a65bacda7 / delta: advances canonical Current from the stale post-Task131 source state to terminal Task132 and binds the content-own
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [delta: closes the repository-local Current-State semantic repair after Durability / Lifecycle R3. The canonical lineage](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-70775b159d94e5cf / delta: closes the repository-local Current-State semantic repair after Durability / Lifecycle R3. The canonical lineage
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [delta: registered Durability / Lifecycle R3 as one current component inside the existing Ignition OS / driver spine; syn](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-6b5fd62d4da00a25 / delta: registered Durability / Lifecycle R3 as one current component inside the existing Ignition OS / driver spine; syn
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [delta: terminalizes the Current Surface Compiler release candidate after single-source registry/snapshot compilation, ty](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-cbab7cb13e50743a / delta: terminalizes the Current Surface Compiler release candidate after single-source registry/snapshot compilation, ty
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
 - [Denotational semantics and regression fixtures give meaning and finite checks, but no mechanized correspondence, semanti](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
@@ -1668,6 +1738,16 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
   - 可搜索名称：NFC-6279473e5bcf0327 / Durability / Lifecycle R3 在同一离线连续性 pilot 中覆盖 snapshot plus tail、schema
   - 来源：`docs/project-current-state.md`
+  - 依赖：—；被引用：—
+- [Durability / Lifecycle 把 snapshot plus tail、compaction、schema migration、namespace isolation、](../../../ARCHITECTURE.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-d627bb1edac519a7 / Durability / Lifecycle 把 snapshot plus tail、compaction、schema migration、namespace isolation、
+  - 来源：`ARCHITECTURE.md`
+  - 依赖：—；被引用：—
+- [Durability / Lifecycle、Event Ledger 和 Federation Intent Capsule 形成仓库依赖与同步义务](../../../docs/architecture/interactive-system-map.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-6045399c02a63d8c / Durability / Lifecycle、Event Ledger 和 Federation Intent Capsule 形成仓库依赖与同步义务
+  - 来源：`docs/architecture/interactive-system-map.md`
   - 依赖：—；被引用：—
 - [Durability and Lifecycle R3](../../../docs/architecture/os-control-plane-r2.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
@@ -1829,9 +1909,9 @@
   - 可搜索名称：NFC-9e75ef33d74379f6 / escalation records from 081 were re-classified in 083 using stricter criteria based on claim_type, proof_status, and log
   - 来源：`reports/foundation-architecture/083-escalation-routing-report.md`
   - 依赖：—；被引用：—
-- [ESI 仍是 `CANDIDATE_ESI_SIGNAL`；live provider 状态保持 `NOT_RUN_LIVE_EXTERNAL`，术语/风格模仿、越权失败、过度谨慎和延迟迁移仍需独立复核。Durability / Lifec](../../../docs/project-current-state.md)
+- [ESI 仍是候选 advisory reading surface；live provider 状态、术语/风格模仿、越权失败、过度谨慎和延迟迁移仍需独立复核。Durability / Lifecycle 的 production dura](../../../docs/project-current-state.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-5074f83f37e287bf / ESI 仍是 `CANDIDATE_ESI_SIGNAL`；live provider 状态保持 `NOT_RUN_LIVE_EXTERNAL`，术语/风格模仿、越权失败、过度谨慎和延迟迁移仍需独立复核。Durability / Lifec
+  - 可搜索名称：NFC-c4c43a10e9d48b9d / ESI 仍是候选 advisory reading surface；live provider 状态、术语/风格模仿、越权失败、过度谨慎和延迟迁移仍需独立复核。Durability / Lifecycle 的 production dura
   - 来源：`docs/project-current-state.md`
   - 依赖：—；被引用：—
 - [Europe PMC/PMC for life sciences](../../../docs/external-research/legal-fulltext-resolution-protocol.md)
@@ -2058,6 +2138,16 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-3b7070d6f0e4e4ae / For any function, model, theorem, formula, law, decision rule or cross-domain claim, apply `docs/foundation/claim-govern
   - 来源：`ITERATION.md`
+  - 依赖：—；被引用：—
+- [Formal baseline `main` is `5ed99d148dfb49e6c2ff729a345d2499d4b76021`. The formal repository has no publication-witness s](../../../agent-results/IGNITION-20260822-133-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-300eb09a94965b6e / Formal baseline `main` is `5ed99d148dfb49e6c2ff729a345d2499d4b76021`. The formal repository has no publication-witness s
+  - 来源：`agent-results/IGNITION-20260822-133-result.md`
+  - 依赖：—；被引用：—
+- [Formal baseline `main` was `e04752d20d071bac8f0c4a1e5cff20fb3004dae1`. The formal repository has no publication-witness](../../../agent-results/IGNITION-20260822-132-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-acbeccf65816f0a3 / Formal baseline `main` was `e04752d20d071bac8f0c4a1e5cff20fb3004dae1`. The formal repository has no publication-witness
+  - 来源：`agent-results/IGNITION-20260822-132-result.md`
   - 依赖：—；被引用：—
 - [Formal branch: `agent/claim-governance-physics-correction-function-census-r1-20260729`](../../../reports/foundation-architecture/098-remote-truth-and-gap.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
@@ -2414,93 +2504,3 @@
   - 可搜索名称：NFC-f5aedc65a88c93ef / Guo et al. exact full arXiv v1 paper, all-page visual review and complete LaTeX source audit: deterministic FSM/PFSM tar
   - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl`
   - 依赖：—；被引用：—
-- [H\(t,L\) 遮蔽函数\(双源\)](../../../analysis/corpus-relation/cluster_source_briefs/C000.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：A6 / H\(t,L\) 遮蔽函数\(双源\) / A6
-  - 来源：`analysis/corpus-relation/cluster_source_briefs/C000.md`
-  - 依赖：A1, A3, A8；被引用：D146, D2, D23, D3
-- [H_分类升级函数](../../../data/foundation/adjudications/079-method-audit.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：D42 / H_分类升级函数 / D42
-  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
-  - 依赖：D1, D90；被引用：NFC-6aa54f845a26db69, NFC-7c73fe49f443b42f, NFC-89b54f26aad6b156
-- [Handlers in Action full-paper, formal-system and exact historical repository review: lambda-eff effect typing, terminati](../../../data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-e64e9395de5ba7dc / Handlers in Action full-paper, formal-system and exact historical repository review: lambda-eff effect typing, terminati
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl`
-  - 依赖：—；被引用：—
-- [handoff_reason="Codex completion is not OS validation proof",](../../../agent_federation/adapters/codex.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-f203c53c1f14383c / handoff_reason="Codex completion is not OS validation proof",
-  - 来源：`agent_federation/adapters/codex.py`
-  - 依赖：—；被引用：—
-- [handoff_reason="executor output is not OS validation proof",](../../../agent_federation/adapters/openclaw.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-52a7d0e0ce4d1fec / handoff_reason="executor output is not OS validation proof",
-  - 来源：`agent_federation/adapters/openclaw.py`
-  - 依赖：—；被引用：—
-- [handoff_reason="text-only executor output is not OS validation proof",](../../../agent_federation/adapters/hermes.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-941cc5626fd24c25 / handoff_reason="text-only executor output is not OS validation proof",
-  - 来源：`agent_federation/adapters/hermes.py`
-  - 依赖：—；被引用：—
-- [Human lifetime entropy in a historical perspective \(1750–2014\)](../../../data/external-research/088-external-source-atlas-v1.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-18cfe16bf4a83ed0 / Human lifetime entropy in a historical perspective \(1750–2014\)
-  - 来源：`data/external-research/088-external-source-atlas-v1.jsonl`
-  - 依赖：—；被引用：—
-- [I\(t,L\) 提议者意识](../../../FOUNDATION-64-PROPAGATION.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：A1 / I\(t,L\) 提议者意识 / A1
-  - 来源：`FOUNDATION-64-PROPAGATION.jsonl`
-  - 依赖：A3, A8；被引用：A2, A3, A4, A5
-- [I\(t,L\) 提议者意识](../../../data/foundation/formal-objects/objects.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-7680cb44046911f8 / I\(t,L\) 提议者意识
-  - 来源：`data/foundation/formal-objects/objects.jsonl`
-  - 依赖：—；被引用：—
-- [I\(t,L\) 提议者意识 / I\(t,L\) proposer awareness](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-0248619ba3bca7a2 / I\(t,L\) 提议者意识 / I\(t,L\) proposer awareness
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：—；被引用：—
-- [I_iso\(A,B\) := 同构判定函数](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-aac850be65aae5c7 / I_iso\(A,B\) := 同构判定函数
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [I_iso\(A,B\) — 同构判定函数](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-6db923aebda79c59 / I_iso\(A,B\) — 同构判定函数
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [I_iso\(A,B\) 同构判定 → 跨域同构（历史案例×社会案例×认知案例）](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-691a10f54e62c9c6 / I_iso\(A,B\) 同构判定 → 跨域同构（历史案例×社会案例×认知案例）
-  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
-  - 依赖：—；被引用：—
-- [I_iso\(A,B\) 同构判定 → 跨域同构（数学结构×物理结构×社会结构）](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-5842fb4bb2e31c2d / I_iso\(A,B\) 同构判定 → 跨域同构（数学结构×物理结构×社会结构）
-  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
-  - 依赖：—；被引用：—
-- [I_iso\(A,B\) 同构判定 → 跨域同构（相变×社会相变）](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-f845e3298e5ab1a7 / I_iso\(A,B\) 同构判定 → 跨域同构（相变×社会相变）
-  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
-  - 依赖：—；被引用：—
-- [I_iso\(A,B\)：D245\(自我模型\) 是数学门控，非社会角色遮蔽；身份/角色轴空白。不实质同构（新）。J⁻=0。](../../../outputs/collisions/20260711-disobedience-subjectivity/psi0-decision-matrix.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-64280ee6396b48b3 / I_iso\(A,B\)：D245\(自我模型\) 是数学门控，非社会角色遮蔽；身份/角色轴空白。不实质同构（新）。J⁻=0。
-  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/psi0-decision-matrix.md`
-  - 依赖：D245；被引用：—
-- [I_iso\(A,B\)：与 D245 不同构（数学 vs 社会角色）；身份/角色轴函数表空白。J⁻=0。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-63d94aa73375b8a4 / I_iso\(A,B\)：与 D245 不同构（数学 vs 社会角色）；身份/角色轴函数表空白。J⁻=0。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D245；被引用：—
-- [I_iso\(A,B\)：与 D467 不同构（主动刹车 vs 势阱惯性）；函数表无「计划过期/主动止损」原语。J⁻=0。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-cf605cac7d3dc17c / I_iso\(A,B\)：与 D467 不同构（主动刹车 vs 势阱惯性）；函数表无「计划过期/主动止损」原语。J⁻=0。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D467；被引用：—

@@ -4,5 +4,5 @@
 
 索引按固定 500 条分片，避免单页过大而无法在 GitHub 渲染。分片连续覆盖本主题主归属资产，未按重要性删减。
 
-- [第 001 片](./cognition/part-001.md)：1—500；"""A thin, fixture-testable adapter over ``openclaw agent --json``.""" → \| 01 \| `c05f693bd5329b9506b7dea1bc9167d553d9f305` \| verified \|
-- [第 002 片](./cognition/part-002.md)：501—755；\| 02 \| `5b6184ac02ddc9d574ed6223361da9761b221388` \| verified \| → 高维认知必然多轨，dim>1 ⟹ P_track>1。
+- [第 001 片](./cognition/part-001.md)：1—500；"""A thin, fixture-testable adapter over ``openclaw agent --json``.""" → title: "路径积分验证 — 创业决策：ℏ_eff=0.1时策略集中在最优路径附近（D118预测），ℏ_eff=0.8时策略分散在多条路径（非最优策略也有显著概率）。经验创业者ℏ_eff低（信息充分噪声小），新手ℏ_eff高"
+- [第 002 片](./cognition/part-002.md)：501—786；title: "退相干验证 — 新员工入职6个月：r_cross从0.8→0.3→0.1（轨道逐步关闭），H从0.2→0.6→0.9（组织规范遮蔽增强），τ_decoherence从50→8→1.5（退相干加速）。6个月后只剩单轨=完全退相干=认知僵化 / 退相干验证 - 新员工入职6个月: r_cross从0.8 -> 0.3 -> 0.1\(轨道逐步关闭\), H从0.2 -> 0.6 -> 0.9\(组织规范obscuration增强\), τ_decoherence从50 - → 高维认知必然多轨，dim>1 ⟹ P_track>1。

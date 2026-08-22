@@ -1419,6 +1419,16 @@
   - 可搜索名称：NFC-3d6fb8cc7da35bf5 / `cross_domain_isomorphism_gate`：同构有对象、映射、逆与保持证明；否则降为类比。
   - 来源：`docs/foundation/claim-governance-and-function-identity.md`
   - 依赖：—；被引用：—
+- [`current-release-lifecycle-r1.json` binds `task_id` to `IGNITION-20260821-130`;](../../../reports/operations/ignition-132-step00-canonical-current-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-526fa747393dce3e / `current-release-lifecycle-r1.json` binds `task_id` to `IGNITION-20260821-130`;
+  - 来源：`reports/operations/ignition-132-step00-canonical-current-audit.md`
+  - 依赖：—；被引用：—
+- [`current_iteration_boundary=133` is a deprecated deterministic compatibility alias of `current_formal_task_ordinal`; it](../../../agent-results/IGNITION-20260822-133-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-fd820b8e1951fb09 / `current_iteration_boundary=133` is a deprecated deterministic compatibility alias of `current_formal_task_ordinal`; it
+  - 来源：`agent-results/IGNITION-20260822-133-result.md`
+  - 依赖：—；被引用：—
 - [`current_state --constraint / synchronization_obligation--> no_totality_proof` — interpretation boundary only](../../../reports/operations/121Q32-change-propagation-impact.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-12d3936acdf5acd2 / `current_state --constraint / synchronization_obligation--> no_totality_proof` — interpretation boundary only
@@ -1689,6 +1699,11 @@
   - 可搜索名称：NFC-b349796fc3e5a587 / `G_δ`：是否存在当前材料无法闭合的证明缺口。
   - 来源：`docs/agent-trigger-phrases-20260708.md`
   - 依赖：—；被引用：—
+- [`git ls-remote origin refs/heads/main`. The lifecycle schema/validator also treats](../../../reports/operations/ignition-131-step00-publication-paradox-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-bee7e94c7741f242 / `git ls-remote origin refs/heads/main`. The lifecycle schema/validator also treats
+  - 来源：`reports/operations/ignition-131-step00-publication-paradox-audit.md`
+  - 依赖：—；被引用：—
 - [`INDEX` INDEX: MULTIPLE_CONFLICTING_SOURCES; missing=direct local note path or raw source artifact missing](../../../reports/math-foundation/provenance-audit-20260712.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-6f7a14b101092481 / `INDEX` INDEX: MULTIPLE_CONFLICTING_SOURCES; missing=direct local note path or raw source artifact missing
@@ -1794,6 +1809,11 @@
   - 可搜索名称：NFC-03eeff9afac685a9 / `os_spine` 位于图的中央列；`federation` 明确标为外部、可替换手脚；`domain_packs` 单列表示 Domain/Skill Pack，不把 Knowledge 重新画成系统本体。
   - 来源：`docs/architecture/interactive-system-map.md`
   - 依赖：—；被引用：—
+- [`OWNER_DECLARED` or `OWNER_APPROVED_DERIVED` → canonical Intent → versioned Goal → explicitly accepted Commitment → Epis](../../../docs/architecture/os-steering-intent-r1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-60b2c25b1c28672e / `OWNER_DECLARED` or `OWNER_APPROVED_DERIVED` → canonical Intent → versioned Goal → explicitly accepted Commitment → Epis
+  - 来源：`docs/architecture/os-steering-intent-r1.md`
+  - 依赖：—；被引用：—
 - [`P_meta`：应投影为新增函数、案例、注释、扩展注释、pending 或不采纳。](../../../docs/agent-trigger-phrases-20260708.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-c79baff4acc9e51c / `P_meta`：应投影为新增函数、案例、注释、扩展注释、pending 或不采纳。
@@ -1868,6 +1888,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-deffc18ec6e9610d / `pending`：当前只有结构性推论，缺少外部证明或实证验证。
   - 来源：`outputs/getbrain/project-position-update-20260706.md`
+  - 依赖：—；被引用：—
+- [`PRESENTATION_ONLY` and creating the lifecycle record with the same copied](../../../docs/architecture/iteration-boundary-archaeology-r1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-d7a5d377c395e0c2 / `PRESENTATION_ONLY` and creating the lifecycle record with the same copied
+  - 来源：`docs/architecture/iteration-boundary-archaeology-r1.md`
   - 依赖：—；被引用：—
 - [`proof-empirical-obligations.jsonl`：证明与实证义务；](../../../docs/foundation/historical-function-deep-adjudication-20260729.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
@@ -2129,11 +2154,6 @@
   - 可搜索名称：NFC-2ee19c4a19490e2c / affordance, not mechanism proof
   - 来源：`data/architecture/adaptive-relational-network/examples/ai-external-knowledge-vs-internal-integration.json`
   - 依赖：—；被引用：—
-- [AGI、生产安全、现实因果、外部有效性或 Owner acceptance 证明。](../../../docs/project-current-state.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-b5fe16ab4fb41bd1 / AGI、生产安全、现实因果、外部有效性或 Owner acceptance 证明。
-  - 来源：`docs/project-current-state.md`
-  - 依赖：—；被引用：—
 - [AI 可以整理、分类、生成待审形式化、运行受限后端和发现可重放反例；不能因为公式存在、工作流 closed、案例命中或关键词出现就宣布真理、定理、同构或因果。](../../../docs/AI-USAGE.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-0553491cb8dc66ae / AI 可以整理、分类、生成待审形式化、运行受限后端和发现可重放反例；不能因为公式存在、工作流 closed、案例命中或关键词出现就宣布真理、定理、同构或因果。
@@ -2244,6 +2264,16 @@
   - 可搜索名称：NFC-46e079f978b0fad6 / Algorithm parameters and carriers are precise, but executable identity, effect and lifecycle contracts are incomplete.
   - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
   - 依赖：—；被引用：—
+- [alias of `current_formal_task_ordinal` in Current projections. Historical](../../../docs/architecture/iteration-boundary-archaeology-r1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-add9823c48cb4488 / alias of `current_formal_task_ordinal` in Current projections. Historical
+  - 来源：`docs/architecture/iteration-boundary-archaeology-r1.md`
+  - 依赖：—；被引用：—
+- [All 11 Human Surface source-hash drifts were re-audited individually. They are all semantically valid source revisions a](../../../reports/operations/ignition-134-step13-residual-debt-projection-hygiene.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-530fea4843d9155c / All 11 Human Surface source-hash drifts were re-audited individually. They are all semantically valid source revisions a
+  - 来源：`reports/operations/ignition-134-step13-residual-debt-projection-hygiene.md`
+  - 依赖：—；被引用：—
 - [All 40 records previously labelled `UNPROVED_PROPOSITION` now have individual dossiers in `data/foundation/proofs/079-pr](../../../reports/foundation-architecture/40-proof-obligation-triage-20260713.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-224d6bb77fa4c047 / All 40 records previously labelled `UNPROVED_PROPOSITION` now have individual dossiers in `data/foundation/proofs/079-pr
@@ -2298,6 +2328,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
   - 可搜索名称：NFC-b77e5d7bed830c88 / Architecture, task IDs, hyperparameters and prompts are explicit, while semantic, compatibility, effect and lifecycle co
   - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [architecture_counts: `registry=94; visible_nodes=82; visible_edges=87`；active_overlays: `Durability / Lifecycle, Steerin](../../../AI-HANDOFF.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-43d9cbaa6b087e10 / architecture_counts: `registry=94; visible_nodes=82; visible_edges=87`；active_overlays: `Durability / Lifecycle, Steerin
+  - 来源：`AI-HANDOFF.md`
   - 依赖：—；被引用：—
 - [Are the Gödel incompleteness theorems limitative results for the neurosciences?](../../../data/external-research/088-external-source-atlas-medium.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
@@ -2419,6 +2454,11 @@
   - 可搜索名称：NFC-85a7b6430641f130 / Branch:** `agent/foundation-drift-repair-universal-preflight-propagation-ci-proof-r1-20260731`
   - 来源：`docs/foundation/task-107-incident-report.md`
   - 依赖：—；被引用：—
+- [by adding a new formal commit that would itself need publication proof.](../../../reports/operations/ignition-131-step00-publication-paradox-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-9dde57723f240dca / by adding a new formal commit that would itself need publication proof.
+  - 来源：`reports/operations/ignition-131-step00-publication-paradox-audit.md`
+  - 依赖：—；被引用：—
 - [C --> PO\[proof obligations\]](../../../ARCHITECTURE.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-d42826c1463a4ca0 / C --> PO\[proof obligations\]
@@ -2464,43 +2504,3 @@
   - 可搜索名称：NFC-bb591c6b8cc996e8 / C-0809 索引可见性通过。赛课机制三案例（C-0807 系统性钝化与避风港 / C-0808 职称硬门槛裹挟 / C-0809 表演化假课）已全部入表并完成索引可见性验证；对应函数 D595/D596/D597/D598 全部入表并验证
   - 来源：`outputs/audit/c0809-index-visibility-check-20260708.md`
   - 依赖：D595, D596, D597, D598；被引用：—
-- [C-0810：事件层（A7/A8/A9）与解释层分开；来源可回指（材料 SHA）；关联 D602/T40 准确；非金句；未反向把成功当机制证明；不含大段转载。✅](../../../outputs/collisions/20260711-disobedience-subjectivity/validation-report.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-a20fad8106119192 / C-0810：事件层（A7/A8/A9）与解释层分开；来源可回指（材料 SHA）；关联 D602/T40 准确；非金句；未反向把成功当机制证明；不含大段转载。✅
-  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/validation-report.md`
-  - 依赖：A7, A8, A9, D602；被引用：—
-- [C-0811：事件层（A5/A8/A10/A15）与解释层分开；来源可回指；关联 D601/D600 准确；非金句；未把成功当证明；不含大段转载。✅](../../../outputs/collisions/20260711-disobedience-subjectivity/validation-report.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-4ac9980629655408 / C-0811：事件层（A5/A8/A10/A15）与解释层分开；来源可回指；关联 D601/D600 准确；非金句；未把成功当证明；不含大段转载。✅
-  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/validation-report.md`
-  - 依赖：A10, A15, A5, A8；被引用：—
-- [C-204：哥德尔不完备定理；](../../../docs/function_dependency_map.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-685f76269fb63832 / C-204：哥德尔不完备定理；
-  - 来源：`docs/function_dependency_map.md`
-  - 依赖：—；被引用：—
-- [c. BY-NC-SA Compatible License means a license listed at creativecommons.org/compatiblelicenses, approved by Creative Co](../../../LICENSES/active/CC-BY-NC-SA-4.0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-d6432bbac08c2463 / c. BY-NC-SA Compatible License means a license listed at creativecommons.org/compatiblelicenses, approved by Creative Co
-  - 来源：`LICENSES/active/CC-BY-NC-SA-4.0.md`
-  - 依赖：—；被引用：—
-- [c. BY-SA Compatible License means a license listed at creativecommons.org/compatiblelicenses, approved by Creative Commo](../../../LICENSES/active/CC-BY-SA-4.0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-87156c0bb86d9257 / c. BY-SA Compatible License means a license listed at creativecommons.org/compatiblelicenses, approved by Creative Commo
-  - 来源：`LICENSES/active/CC-BY-SA-4.0.md`
-  - 依赖：—；被引用：—
-- [C_drive涌现的数学证明](../../../data/foundation/evidence/evidence.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-d1a67eb0d4ff4ab6 / C_drive涌现的数学证明
-  - 来源：`data/foundation/evidence/evidence.jsonl`
-  - 依赖：—；被引用：—
-- [C_exit\(geo\)四因子子函数](../../../data/foundation/adjudications/079-method-audit.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `DOWNGRADE_TO_PENDING`
-  - 可搜索名称：D54 / C_exit\(geo\)四因子子函数 / D54
-  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
-  - 依赖：D1, D90；被引用：NFC-3ec58646620e18df, NFC-62b54f315c6d3969, NFC-89bee09c41cf40c8, NFC-936b0f55ba97d53d
-- [Caching improves repeated generation stability but is not a versioned registry or lifecycle state machine.](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-3049fc78330f47ff / Caching improves repeated generation stability but is not a versioned registry or lifecycle state machine.
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
-  - 依赖：—；被引用：—

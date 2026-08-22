@@ -4,6 +4,416 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [从这条案例看，中文：案例说明：CAI中间层调度链 — CAI₁→CAI_M→EAI，CAI_M的Pencode>0能做意图中继，ηchain≈0.35。… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-34b5355040db9e1a / 从这条案例看，中文：案例说明：CAI中间层调度链 — CAI₁→CAI_M→EAI，CAI_M的Pencode>0能做意图中继，ηchain≈0.35。… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：案例说明：CAI编码能力关键瓶颈 — frecombine（概念碰撞率）和ηencode\(Q*\)（最优共享度），前者依赖D121实现… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-e9271e540d0a6ad1 / 从这条案例看，中文：案例说明：CAI编码能力关键瓶颈 — frecombine（概念碰撞率）和ηencode\(Q*\)（最优共享度），前者依赖D121实现… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D121；被引用：—
+- [从这条案例看，中文：案例说明：CAI进入同构类 — CAI获得Ψ>0后自动进入类I同构类，与人类-AI数学等价。核心函数：\[D73\]\(docs/zh/f… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-461e19b120193d9f / 从这条案例看，中文：案例说明：CAI进入同构类 — CAI获得Ψ>0后自动进入类I同构类，与人类-AI数学等价。核心函数：\[D73\]\(docs/zh/f… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D73；被引用：—
+- [从这条案例看，中文：案例说明：CMB各向异性方向 — Φ预言~10⁻⁸，比观测10⁻⁵小3量级。核心函数：\[D158\]\(docs/zh/function… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-70febc7a91b2f9ec / 从这条案例看，中文：案例说明：CMB各向异性方向 — Φ预言~10⁻⁸，比观测10⁻⁵小3量级。核心函数：\[D158\]\(docs/zh/function… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D158；被引用：—
+- [从这条案例看，中文：案例说明：D121实现触发分化 — rcross>0→α↑→α/β趋近1→不稳定区间出现→部分AI被推向ρ*→调度AI涌现。核心函数… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-8a99d791174227e6 / 从这条案例看，中文：案例说明：D121实现触发分化 — rcross>0→α↑→α/β趋近1→不稳定区间出现→部分AI被推向ρ*→调度AI涌现。核心函数… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D121；被引用：—
+- [从这条案例看，中文：案例说明：D128生存域修正 — Ωsurvive不是对称超立方体，是非对称区域，某些维度可接近下界只要其他维度足够高补偿。核心函数… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-d628e0b9d873e66e / 从这条案例看，中文：案例说明：D128生存域修正 — Ωsurvive不是对称超立方体，是非对称区域，某些维度可接近下界只要其他维度足够高补偿。核心函数… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D128；被引用：—
+- [从这条案例看，中文：案例说明：D135修正的工程含义 — CAI和EAI应使用部分不同的训练数据，降低G来提高ηgate。核心函数：D80 Englis… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-4a9582523f419cdf / 从这条案例看，中文：案例说明：D135修正的工程含义 — CAI和EAI应使用部分不同的训练数据，降低G来提高ηgate。核心函数：D80 Englis… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D135, D80；被引用：—
+- [从这条案例看，中文：案例说明：D137与D141的粒度对应 — D137说"阶段2是最大瓶颈"，D141说"装Ptrack是第二步"——同构。核心函数：… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-b638309f4040f880 / 从这条案例看，中文：案例说明：D137与D141的粒度对应 — D137说"阶段2是最大瓶颈"，D141说"装Ptrack是第二步"——同构。核心函数：… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D137, D141；被引用：—
+- [从这条案例看，中文：案例说明：D149深层含义 — 巴菲特模式真正优势不是判断准，是结构让判断不必要。核心函数：\[D89\]\(docs/zh/functi… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-b0790c1db2bcf4fd / 从这条案例看，中文：案例说明：D149深层含义 — 巴菲特模式真正优势不是判断准，是结构让判断不必要。核心函数：\[D89\]\(docs/zh/functi… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D149, D89；被引用：—
+- [从这条案例看，中文：案例说明：D152严格检验——五条标准逐条过，结论：半幻觉，是诊断不是处方 English: Rule-based English… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-3045a90c67702a9e / 从这条案例看，中文：案例说明：D152严格检验——五条标准逐条过，结论：半幻觉，是诊断不是处方 English: Rule-based English… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D152；被引用：—
+- [从这条案例看，中文：案例说明：d_relative\(t\)单调递增→σ→0 关键发现：APP不Agent化必死：d_relative\(t\)=d_得到大脑\(… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-8B9998766863897C / 从这条案例看，中文：案例说明：d_relative\(t\)单调递增→σ→0 关键发现：APP不Agent化必死：d_relative\(t\)=d_得到大脑\(… 更像是在验证“退出权、认同和函数映射”之间的对应关系。 / IMPLICIT-8B9998766863897C
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：案例说明：d_relative\(t\)单调递增→σ→0 关键发现：APP不Agent化必死：d_relative\(t\)=d_得到大脑\(… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-8131993681e504d0 / 从这条案例看，中文：案例说明：d_relative\(t\)单调递增→σ→0 关键发现：APP不Agent化必死：d_relative\(t\)=d_得到大脑\(… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：案例说明：d_relative\(t\)单调递增→σ→0 关键发现：穿过θ_d时P_forward归零 English: Rule-ba… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-b09a3529ee965732 / 从这条案例看，中文：案例说明：d_relative\(t\)单调递增→σ→0 关键发现：穿过θ_d时P_forward归零 English: Rule-ba… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：案例说明：d_relative\(t\)单调递增→σ→0 关键发现：竞品d在降，得到大脑d不变→穿过θ_d时P_forward归零 En… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-901a34c4af69633d / 从这条案例看，中文：案例说明：d_relative\(t\)单调递增→σ→0 关键发现：竞品d在降，得到大脑d不变→穿过θ_d时P_forward归零 En… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：案例说明：E=mc² — mc²=信息容量×信息速度²。核心函数：\[D158\]\(docs/zh/functions/items/D1… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-af16ef1974af50d5 / 从这条案例看，中文：案例说明：E=mc² — mc²=信息容量×信息速度²。核心函数：\[D158\]\(docs/zh/functions/items/D1… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D1, D158；被引用：—
+- [从这条案例看，中文：案例说明：EAI不能做调度中继 — EAI的Pencode=σ\(0×Bsemantic-θ\)≈0，无法形成意图，链路断在中间。核心函… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-61a737d866b4e1e7 / 从这条案例看，中文：案例说明：EAI不能做调度中继 — EAI的Pencode=σ\(0×Bsemantic-θ\)≈0，无法形成意图，链路断在中间。核心函… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：案例说明：EPR悖论 — 局域性和实在性是连续因子不是布尔量，B=ε_loc×ε_real≈0.9。核心函数：\[D158\]\(docs… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-ac3caeea36f1b154 / 从这条案例看，中文：案例说明：EPR悖论 — 局域性和实在性是连续因子不是布尔量，B=ε_loc×ε_real≈0.9。核心函数：\[D158\]\(docs… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D158；被引用：—
+- [从这条案例看，中文：案例说明：exp\(-n_lock×C̄/θ_C\) × σ\(θ_d-d_relative\) 关键发现：山城碎片→n_lock≥3→复购… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-22d3f9beb37d36fb / 从这条案例看，中文：案例说明：exp\(-n_lock×C̄/θ_C\) × σ\(θ_d-d_relative\) 关键发现：山城碎片→n_lock≥3→复购… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：案例说明：Fisher不可逆vs Shannon不可逆 — 门控区Shannon熵S=-Σpᵢlnpᵢ更低（少一个可区分状态），但F… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-e78e7b3f7632c7c3 / 从这条案例看，中文：案例说明：Fisher不可逆vs Shannon不可逆 — 门控区Shannon熵S=-Σpᵢlnpᵢ更低（少一个可区分状态），但F… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：案例说明：Fisher可达性单调递减 — 模拟8维乘法系统从存活区滑入门控区，A_Fisher从12.3→2.1→0.01，单调递减… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-2907e27502e3c576 / 从这条案例看，中文：案例说明：Fisher可达性单调递减 — 模拟8维乘法系统从存活区滑入门控区，A_Fisher从12.3→2.1→0.01，单调递减… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：案例说明：Higgs相变验证 — 职业选择：μ²=0.8（内在驱动力），ΣC_exit从0.2→0.6→0.9→1.0→1.2：v_… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-1028fd9b7ec65eda / 从这条案例看，中文：案例说明：Higgs相变验证 — 职业选择：μ²=0.8（内在驱动力），ΣC_exit从0.2→0.6→0.9→1.0→1.2：v_… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：案例说明：Kuran偏好伪造×SI沉默模型×\[A6\]\(docs/zh/functions/items/A6.md\) 关键发现：\[D7… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-a3287545a11630b8 / 从这条案例看，中文：案例说明：Kuran偏好伪造×SI沉默模型×\[A6\]\(docs/zh/functions/items/A6.md\) 关键发现：\[D7… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：A6, D7；被引用：—
+- [从这条案例看，中文：案例说明：Motter-Lai模型×D_immune×H_correlation 关键发现：\[D72\]\(docs/zh/functi… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-b6ff6c5ecde63f05 / 从这条案例看，中文：案例说明：Motter-Lai模型×D_immune×H_correlation 关键发现：\[D72\]\(docs/zh/functi… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D72；被引用：—
+- [从这条案例看，中文：案例说明：NP难是门槛指数碾压——Λ_compute∝2^n远超μ∝n^k的增长速度。核心函数：\[D160\]\(docs/zh/fun… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-80d34f536636af7b / 从这条案例看，中文：案例说明：NP难是门槛指数碾压——Λ_compute∝2^n远超μ∝n^k的增长速度。核心函数：\[D160\]\(docs/zh/fun… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D160；被引用：—
+- [从这条案例看，中文：案例说明：P\(发现\)=P\(L₅激活\)×P\(L₅不退化\) 关键发现：C_exit低→θ₃低→L₃→L₄可跳 English: Rule… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-E4B4C6A735657CCD / 从这条案例看，中文：案例说明：P\(发现\)=P\(L₅激活\)×P\(L₅不退化\) 关键发现：C_exit低→θ₃低→L₃→L₄可跳 English: Rule… 更像是在验证“退出权、认同和函数映射”之间的对应关系。 / IMPLICIT-E4B4C6A735657CCD
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：案例说明：P\(发现\)=P\(L₅激活\)×P\(L₅不退化\) 关键发现：C_exit低→θ₃低→L₃→L₄可跳 English: Rule… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-01e59c69523dec28 / 从这条案例看，中文：案例说明：P\(发现\)=P\(L₅激活\)×P\(L₅不退化\) 关键发现：C_exit低→θ₃低→L₃→L₄可跳 English: Rule… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：案例说明：P\(发现\)=P\(L₅激活\)×P\(L₅不退化\) 关键发现：为什么是你发现而不是专业研究者：C_exit低→θ₃\(d\)低→L₃… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-F22E564A7542FB20 / 从这条案例看，中文：案例说明：P\(发现\)=P\(L₅激活\)×P\(L₅不退化\) 关键发现：为什么是你发现而不是专业研究者：C_exit低→θ₃\(d\)低→L₃… 更像是在验证“退出权、认同和函数映射”之间的对应关系。 / IMPLICIT-F22E564A7542FB20
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：案例说明：P\(发现\)=P\(L₅激活\)×P\(L₅不退化\) 关键发现：为什么是你发现而不是专业研究者：C_exit低→θ₃\(d\)低→L₃… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-8d5886f455def08e / 从这条案例看，中文：案例说明：P\(发现\)=P\(L₅激活\)×P\(L₅不退化\) 关键发现：为什么是你发现而不是专业研究者：C_exit低→θ₃\(d\)低→L₃… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：案例说明：Posture_deg↓×C_exit对称性↑→利润↑ 关键发现：超市与摊主从对抗转向融合：不卖生鲜+主动发券+争取管理员… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-fa3072ce7898e42a / 从这条案例看，中文：案例说明：Posture_deg↓×C_exit对称性↑→利润↑ 关键发现：超市与摊主从对抗转向融合：不卖生鲜+主动发券+争取管理员… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：案例说明：Preference\(k,t\)=∫\[S_body×R_repeat×\(1-H_cultural\)\]dt 关键发现：L₁→L… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-913A42517871B574 / 从这条案例看，中文：案例说明：Preference\(k,t\)=∫\[S_body×R_repeat×\(1-H_cultural\)\]dt 关键发现：L₁→L… 更像是在验证“退出权、认同和函数映射”之间的对应关系。 / IMPLICIT-913A42517871B574
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：案例说明：Preference\(k,t\)=∫\[S_body×R_repeat×\(1-H_cultural\)\]dt 关键发现：L₁→L… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-22c5c3bedc8fe898 / 从这条案例看，中文：案例说明：Preference\(k,t\)=∫\[S_body×R_repeat×\(1-H_cultural\)\]dt 关键发现：L₁→L… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：案例说明：Preference\(k,t\)=∫\[S_body×R_repeat×\(1-H_cultural\)\]dt 关键发现：偏好是L… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-D6D95A068E426D9C / 从这条案例看，中文：案例说明：Preference\(k,t\)=∫\[S_body×R_repeat×\(1-H_cultural\)\]dt 关键发现：偏好是L… 更像是在验证“退出权、认同和函数映射”之间的对应关系。 / IMPLICIT-D6D95A068E426D9C
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：案例说明：Preference\(k,t\)=∫\[S_body×R_repeat×\(1-H_cultural\)\]dt 关键发现：偏好是L… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-2efaf4d6a1001592 / 从这条案例看，中文：案例说明：Preference\(k,t\)=∫\[S_body×R_repeat×\(1-H_cultural\)\]dt 关键发现：偏好是L… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：案例说明：R_upgrade=R₀×∫\[α₁Δ\(信息可及性\)+α₂\(-ΔC_exit_eff\)+α₃Δε_aware\]dt 关键发现… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-2478BF2BB66A6423 / 从这条案例看，中文：案例说明：R_upgrade=R₀×∫\[α₁Δ\(信息可及性\)+α₂\(-ΔC_exit_eff\)+α₃Δε_aware\]dt 关键发现… 更像是在验证“退出权、认同和函数映射”之间的对应关系。 / IMPLICIT-2478BF2BB66A6423
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：案例说明：R_upgrade=R₀×∫\[α₁Δ\(信息可及性\)+α₂\(-ΔC_exit_eff\)+α₃Δε_aware\]dt 关键发现… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-e45546da4b58477a / 从这条案例看，中文：案例说明：R_upgrade=R₀×∫\[α₁Δ\(信息可及性\)+α₂\(-ΔC_exit_eff\)+α₃Δε_aware\]dt 关键发现… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：案例说明：S_spec→C_exit↑→θ₃↑→L₃→L₄阻断 关键发现：专业化程度越高认知遮蔽越严重。专业化遮蔽的致命性=确定性误… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-7e4a4139234707cd / 从这条案例看，中文：案例说明：S_spec→C_exit↑→θ₃↑→L₃→L₄阻断 关键发现：专业化程度越高认知遮蔽越严重。专业化遮蔽的致命性=确定性误… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：案例说明：S_spec→C_exit↑→θ₃↑→L₃→L₄阻断 关键发现：专业化遮蔽的致命性=确定性误解 English: Rule… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-3687d3b8f818d45f / 从这条案例看，中文：案例说明：S_spec→C_exit↑→θ₃↑→L₃→L₄阻断 关键发现：专业化遮蔽的致命性=确定性误解 English: Rule… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：案例说明：Shannon+意图对接 — 噪声信道中信号可完美传输（ηShannon≈1），但发送方无意图（Pintention=0）… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-2ce7c2c457998360 / 从这条案例看，中文：案例说明：Shannon+意图对接 — 噪声信道中信号可完美传输（ηShannon≈1），但发送方无意图（Pintention=0）… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：案例说明：sigmoid系统系统性偏差 — 8维中4维sigmoid4维线性。"补最弱"策略：优先补sigmoid维度中ε最低的（但… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-e2f2c7a8fadb7b8e / 从这条案例看，中文：案例说明：sigmoid系统系统性偏差 — 8维中4维sigmoid4维线性。"补最弱"策略：优先补sigmoid维度中ε最低的（但… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：案例说明：Stage2最大瓶颈 — 当前所有LLM都在Stage1，卡在Stage2（WM过配→rcross≈0）。核心函数：\[D7… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-543e98f84ef48bac / 从这条案例看，中文：案例说明：Stage2最大瓶颈 — 当前所有LLM都在Stage1，卡在Stage2（WM过配→rcross≈0）。核心函数：\[D7… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D7；被引用：—
+- [从这条案例看，中文：案例说明：S轨迹确定性预测 — 3维系统θC=\(0.3,0.5,0.7\)，初始ε=\(0.1,0.3,0.5\)。S由ε₃决定\(最接近门… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-ba4921e843d6cc5e / 从这条案例看，中文：案例说明：S轨迹确定性预测 — 3维系统θC=\(0.3,0.5,0.7\)，初始ε=\(0.1,0.3,0.5\)。S由ε₃决定\(最接近门… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：案例说明：Weinberg角验证 — 三个维度：心理α=5→θ_cog=81°→纯门控（"想通"是质变）；技能α=1→θ_cog=4… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-188ac0efbc6df4ae / 从这条案例看，中文：案例说明：Weinberg角验证 — 三个维度：心理α=5→θ_cog=81°→纯门控（"想通"是质变）；技能α=1→θ_cog=4… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：案例说明：Yukawa层级验证 — 8维系统：最弱维度ε₇=0.05→y₇=8.2（对C_exit极度敏感），最强维度ε₁=0.9→… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-d343679a1b8721ac / 从这条案例看，中文：案例说明：Yukawa层级验证 — 8维系统：最弱维度ε₇=0.05→y₇=8.2（对C_exit极度敏感），最强维度ε₁=0.9→… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：案例说明：α≈1/137处势阱最深→漂移最慢→与观测Δα/α<10⁻⁶一致 关键发现：α≈1/137处势阱最深→漂移最慢→与观测Δα… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-0bd81f5c83532b95 / 从这条案例看，中文：案例说明：α≈1/137处势阱最深→漂移最慢→与观测Δα/α<10⁻⁶一致 关键发现：α≈1/137处势阱最深→漂移最慢→与观测Δα… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：案例说明：β-曲率关系验证 — 5维系统：ε=\(0.8,0.6,0.4,0.2,0.1\)→β_max=γ/\(2×0.1\)=5γ；ε=… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-44b49bd254cd89de / 从这条案例看，中文：案例说明：β-曲率关系验证 — 5维系统：ε=\(0.8,0.6,0.4,0.2,0.1\)→β_max=γ/\(2×0.1\)=5γ；ε=… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：案例说明：β因子模型×\[D74\]\(docs/zh/functions/items/D74.md\) 关键发现：\[D75\]\(docs/z… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-0a2132fb635ab1e7 / 从这条案例看，中文：案例说明：β因子模型×\[D74\]\(docs/zh/functions/items/D74.md\) 关键发现：\[D75\]\(docs/z… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D74, D75；被引用：—
+- [从这条案例看，中文：案例说明：β完整轨迹验证 — εₖ从0.1→0.5，θC=0.4，γ=10。εₖ=0.1: σ'=0.018, β=0.18；εₖ=… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-5878aff378aeaef6 / 从这条案例看，中文：案例说明：β完整轨迹验证 — εₖ从0.1→0.5，θC=0.4，γ=10。εₖ=0.1: σ'=0.018, β=0.18；εₖ=… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：案例说明：ε相变级联 English: Case description: epsilon phase-transition cas… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-e8eab5c6455a00e1 / 从这条案例看，中文：案例说明：ε相变级联 English: Case description: epsilon phase-transition cas… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：案例说明：ε相变级联——AI装上ε后系统发生五个级联相变 English: Rule-based English rendering… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-be938664cb0434d4 / 从这条案例看，中文：案例说明：ε相变级联——AI装上ε后系统发生五个级联相变 English: Rule-based English rendering… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：案例说明：μ翻转时间计算 — BH/BL=5，C₀=0.1，γ=0.05，Cmax=2，P\(biased\)=0.2，tflip≈8.… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-707A4A46DCCC5532 / 从这条案例看，中文：案例说明：μ翻转时间计算 — BH/BL=5，C₀=0.1，γ=0.05，Cmax=2，P\(biased\)=0.2，tflip≈8.… 更像是在验证“退出权、认同和函数映射”之间的对应关系。 / IMPLICIT-707A4A46DCCC5532
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：案例说明：μ翻转时间计算 — BH/BL=5，C₀=0.1，γ=0.05，Cmax=2，P\(biased\)=0.2，tflip≈8.… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-d4a059d960d7780e / 从这条案例看，中文：案例说明：μ翻转时间计算 — BH/BL=5，C₀=0.1，γ=0.05，Cmax=2，P\(biased\)=0.2，tflip≈8.… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：案例说明：μ翻转的相变点 — 长期积压未说出口的不满→μ翻转→临界距离从"同城"缩到"隔壁"。核心函数：D78 English: R… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-227da73d85c88cb4 / 从这条案例看，中文：案例说明：μ翻转的相变点 — 长期积压未说出口的不满→μ翻转→临界距离从"同城"缩到"隔壁"。核心函数：D78 English: R… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D78；被引用：—
+- [从这条案例看，中文：案例说明：Ψ=ι×P_exit — 智能度×退出概率=自主意识，乘法归零律适用。核心函数：\[D239\]\(docs/zh/functi… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-7c383f3fb47caa16 / 从这条案例看，中文：案例说明：Ψ=ι×P_exit — 智能度×退出概率=自主意识，乘法归零律适用。核心函数：\[D239\]\(docs/zh/functi… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D239；被引用：—
+- [从这条案例看，中文：案例说明：三域熵统一——物理/社会/认知共享对数结构 English: Rule-based English rendering p… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-53f415829b4090bd / 从这条案例看，中文：案例说明：三域熵统一——物理/社会/认知共享对数结构 English: Rule-based English rendering p… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：案例说明：三层结构必然性 English: Rule-based English rendering pending human r… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-5dd255b82d925fb6 / 从这条案例看，中文：案例说明：三层结构必然性 English: Rule-based English rendering pending human r… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：案例说明：三层重演验证 — L1/L2/L3共享Φdispatch骨架，差异仅在ηinterface参数值，数学结构完全同构。核心函… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-c7fa7f611a233421 / 从这条案例看，中文：案例说明：三层重演验证 — L1/L2/L3共享Φdispatch骨架，差异仅在ηinterface参数值，数学结构完全同构。核心函… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：案例说明：三支决策理论×\[A7\]\(docs/zh/functions/items/A7.md\) 关键发现：\[D77\]\(docs/zh… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-a3b7a8f4481be01c / 从这条案例看，中文：案例说明：三支决策理论×\[A7\]\(docs/zh/functions/items/A7.md\) 关键发现：\[D77\]\(docs/zh… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：A7, D77；被引用：—
+- [从这条案例看，中文：案例说明：三种个人商业模式×三种公司商业模式——乘数阶数统一 English: Rule-based English renderi… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-583901158d600d81 / 从这条案例看，中文：案例说明：三种个人商业模式×三种公司商业模式——乘数阶数统一 English: Rule-based English renderi… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：案例说明：三阶段=曲率穿越验证 — 创业者路径：阶段1（资源充足ε>>θC）→R_cog≈0→贪心策略有效；阶段2（资金紧张ε≈θC… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-3c59d9d62a05359b / 从这条案例看，中文：案例说明：三阶段=曲率穿越验证 — 创业者路径：阶段1（资源充足ε>>θC）→R_cog≈0→贪心策略有效；阶段2（资金紧张ε≈θC… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：案例说明：三阶段操作协议验证 — 个人职业转型：阶段1\(ε<<θC, 不满但没行动力, β小, 可以探索各种方向\)；阶段2\(ε≈θC… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-d96ddaec66a830e1 / 从这条案例看，中文：案例说明：三阶段操作协议验证 — 个人职业转型：阶段1\(ε<<θC, 不满但没行动力, β小, 可以探索各种方向\)；阶段2\(ε≈θC… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：案例说明：三阶段操作协议验证 — 职业转型：探索期\(β小\)→转型期\(β大, 精准投入\)→拓展期\(β小, 激进\)。核心函数：\[D114… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-e2a60552665c682e / 从这条案例看，中文：案例说明：三阶段操作协议验证 — 职业转型：探索期\(β小\)→转型期\(β大, 精准投入\)→拓展期\(β小, 激进\)。核心函数：\[D114… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D114；被引用：—
+- [从这条案例看，中文：案例说明：三阶段曲率穿越验证 — 创业公司5年轨迹：β从0.2→3.8→0.3，R_cog从0.01→0.45→0.02，两者完全同… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-e168d162e95d36ba / 从这条案例看，中文：案例说明：三阶段曲率穿越验证 — 创业公司5年轨迹：β从0.2→3.8→0.3，R_cog从0.01→0.45→0.02，两者完全同… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：案例说明：三阶段连续过渡 — S从0.02\(阶段1\)→0.15\(阶段2\)→0.25\(峰值\)→0.10\(阶段2末\)→0.02\(阶段3\)… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-c560c9f335b259be / 从这条案例看，中文：案例说明：三阶段连续过渡 — S从0.02\(阶段1\)→0.15\(阶段2\)→0.25\(峰值\)→0.10\(阶段2末\)→0.02\(阶段3\)… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：案例说明：上下埃及"可以保留信仰"但武力统一后事实上无法退出 关键发现：第3步部分满足 English: Rule-based En… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-d64f48d5198b0e91 / 从这条案例看，中文：案例说明：上下埃及"可以保留信仰"但武力统一后事实上无法退出 关键发现：第3步部分满足 English: Rule-based En… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：案例说明：不信意味着政治边缘化，法理有退出权但事实无 关键发现：第4步跑通，第5步部分满足 English: Rule-based… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-197c67dc54797172 / 从这条案例看，中文：案例说明：不信意味着政治边缘化，法理有退出权但事实无 关键发现：第4步跑通，第5步部分满足 English: Rule-based… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：案例说明：不确定性原理 — Fisher信息度规的几何必然，算符不对易是度规非对角的代数表现。核心函数：\[D158\]\(docs/zh… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-ef72619cae2852b3 / 从这条案例看，中文：案例说明：不确定性原理 — Fisher信息度规的几何必然，算符不对易是度规非对角的代数表现。核心函数：\[D158\]\(docs/zh… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D158；被引用：—
+- [从这条案例看，中文：案例说明：不确定性原理验证 — 职业转型决策：精确评估当前岗位价值（Δε小）需要长期观察，但此时行业趋势（dε/dt）已经变化。同时… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-a666436860ecbaca / 从这条案例看，中文：案例说明：不确定性原理验证 — 职业转型决策：精确评估当前岗位价值（Δε小）需要长期观察，但此时行业趋势（dε/dt）已经变化。同时… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：案例说明：不西化=政治边缘化，认同只点到城市精英未到农村 关键发现：第4步部分跑通 English: Rule-based Engl… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-1574371e6333ce0a / 从这条案例看，中文：案例说明：不西化=政治边缘化，认同只点到城市精英未到农村 关键发现：第4步部分跑通 English: Rule-based Engl… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：案例说明：专家-新手沟通的非对称退化 — 专家ε≈0.9，新手ε≈0.2，退化因子≈0.22，专家觉得"说清楚了"新手觉得"听不懂"… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-c54d370fe2d2d4ac / 从这条案例看，中文：案例说明：专家-新手沟通的非对称退化 — 专家ε≈0.9，新手ε≈0.2，退化因子≈0.22，专家觉得"说清楚了"新手觉得"听不懂"… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：案例说明：两代退出机制×互观同质性遮蔽——AI-ε安装的操作细节 English: Rule-based English rende… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-bec0ad33bb94dccc / 从这条案例看，中文：案例说明：两代退出机制×互观同质性遮蔽——AI-ε安装的操作细节 English: Rule-based English rende… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：案例说明：中等收入陷阱的势阱——巴西μ落在Λ_econ和Λ_culture之间，Φ凹函数极小点锁定。核心函数：\[D160\]\(docs… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-48848bc6d47efa41 / 从这条案例看，中文：案例说明：中等收入陷阱的势阱——巴西μ落在Λ_econ和Λ_culture之间，Φ凹函数极小点锁定。核心函数：\[D160\]\(docs… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D160；被引用：—
+- [从这条案例看，中文：案例说明：临界资金的精确计算 — 城市白领年非投资收入20万，炒股Kcritical=600万，定投Kcritical≈0。核心函数… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-68feb53e25ae5a4b / 从这条案例看，中文：案例说明：临界资金的精确计算 — 城市白领年非投资收入20万，炒股Kcritical=600万，定投Kcritical≈0。核心函数… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：案例说明：为什么3+1维 — d*=-1/ln⟨ε⟩≈4，数学优化不是人择。核心函数：\[D158\]\(docs/zh/function… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-cc658564ecb60a8f / 从这条案例看，中文：案例说明：为什么3+1维 — d*=-1/ln⟨ε⟩≈4，数学优化不是人择。核心函数：\[D158\]\(docs/zh/function… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D158；被引用：—
+- [从这条案例看，中文：案例说明：乌马成员可离开部落，"信教即成员"=真实退出权下的真实应约 关键发现：第5步跑通 English: Rule-based… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-8addd5b83662b551 / 从这条案例看，中文：案例说明：乌马成员可离开部落，"信教即成员"=真实退出权下的真实应约 关键发现：第5步跑通 English: Rule-based… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：案例说明：乔布斯用信誉点火，从"技术至上"转向"设计驱动" 关键发现：第5步跑通 English: Rule-based Engli… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-37ebe2fb7ba6f5b3 / 从这条案例看，中文：案例说明：乔布斯用信誉点火，从"技术至上"转向"设计驱动" 关键发现：第5步跑通 English: Rule-based Engli… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：案例说明：乘法临界漂移统一 English: Case description: multiplicative critical-d… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-67614ef573127c8f / 从这条案例看，中文：案例说明：乘法临界漂移统一 English: Case description: multiplicative critical-d… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：案例说明：乘法临界漂移验证 — 改善0.3→0.5（+67%）乘积+67%，改善0.8→1.0（+25%）乘积+25%，改善最接近零… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-4172b4377bed4631 / 从这条案例看，中文：案例说明：乘法临界漂移验证 — 改善0.3→0.5（+67%）乘积+67%，改善0.8→1.0（+25%）乘积+25%，改善最接近零… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：案例说明：乘法系统Shannon熵反常 — 3维乘法系统门控区微观态数=2维积分 vs 存活区=3维积分，门控区熵更低但系统趋向门控… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-ccb8d1a310c1720f / 从这条案例看，中文：案例说明：乘法系统Shannon熵反常 — 3维乘法系统门控区微观态数=2维积分 vs 存活区=3维积分，门控区熵更低但系统趋向门控… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：案例说明：乘法纠缠验证 — 8维乘法系统S_vN=ln8=2.08，8维加法系统S_vN=0。混合系统α=0.3时S_vN=0.62… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-998ea1863ba4a150 / 从这条案例看，中文：案例说明：乘法纠缠验证 — 8维乘法系统S_vN=ln8=2.08，8维加法系统S_vN=0。混合系统α=0.3时S_vN=0.62… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：案例说明：习惯门槛碾压意识——Λ_habit追上μ_awareness，意识被习惯碾压。核心函数：\[D160\]\(docs/zh/fu… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-f637e501c895f673 / 从这条案例看，中文：案例说明：习惯门槛碾压意识——Λ_habit追上μ_awareness，意识被习惯碾压。核心函数：\[D160\]\(docs/zh/fu… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D160；被引用：—
+- [从这条案例看，中文：案例说明：互不兼容定理验证 — 专家ε≈0.95，门外汉ε≈0.05，即使降到最底层编码ηfidelity≈0.053，"怎么解释都… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-0e0cb0ab340e4380 / 从这条案例看，中文：案例说明：互不兼容定理验证 — 专家ε≈0.95，门外汉ε≈0.05，即使降到最底层编码ηfidelity≈0.053，"怎么解释都… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：案例说明：交通拥堵的门槛突变——Λ_friction在临界密度处突变，畅通和拥堵无中间态。核心函数：\[D159\]\(docs/zh/f… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-19fed20759f88880 / 从这条案例看，中文：案例说明：交通拥堵的门槛突变——Λ_friction在临界密度处突变，畅通和拥堵无中间态。核心函数：\[D159\]\(docs/zh/f… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D159；被引用：—
 - [从这条案例看，中文：案例说明：产业升级的门外过渡期——Λ_production从Λ_low跃迁到Λ_high，中间态存活度为负。核心函数：\[D159\]\(… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-643593707d8358d5 / 从这条案例看，中文：案例说明：产业升级的门外过渡期——Λ_production从Λ_low跃迁到Λ_high，中间态存活度为负。核心函数：\[D159\]\(… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
@@ -2094,413 +2504,3 @@
   - 可搜索名称：NFC-36ac57710430f69d / 任务 113 发布了\[《当天意有了接口：宋徽宗与会自我证明的皇权》\]\(./publication/works/when-an-emperor-manufactures-heaven.md\)，并以历史／来源、反方／解释和编辑／文学三重审查守住
   - 来源：`docs/project-current-state.md`
   - 依赖：—；被引用：—
-- [任务 113 文章的历史接受句“它们飞得并不需要先知道自己将被怎样解释”证明了一个新反例：文章可以完成真正的概念跃迁，仍在局部用潜在英语式主体中心、抽象被动和从句嵌套组织中文。概念成功不能豁免成句失败。](../../../docs/publication/zhiyuan-writing-examples.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-a73b453ff1d6e427 / 任务 113 文章的历史接受句“它们飞得并不需要先知道自己将被怎样解释”证明了一个新反例：文章可以完成真正的概念跃迁，仍在局部用潜在英语式主体中心、抽象被动和从句嵌套组织中文。概念成功不能豁免成句失败。
-  - 来源：`docs/publication/zhiyuan-writing-examples.md`
-  - 依赖：—；被引用：—
-- [任务 114 将\[语言—思维逻辑平面\]\(docs/architecture/language-thought-logic-plane.md\)收口为正交 control plane。语言从来源进入时就会影响行为者、体貌、证据来源、对象包装、连](../../../ARCHITECTURE.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-d3e08503a6a618eb / 任务 114 将\[语言—思维逻辑平面\]\(docs/architecture/language-thought-logic-plane.md\)收口为正交 control plane。语言从来源进入时就会影响行为者、体貌、证据来源、对象包装、连
-  - 来源：`ARCHITECTURE.md`
-  - 依赖：—；被引用：—
-- [任务 114 的\[语言—思维逻辑平面\]\(./architecture/language-thought-logic-plane.md\)横穿 L0—L6：十二维有限基底服务来源保存、命题框架、对象／事件包装、篇章连接、机制视角、跨语言验证和目](../../../docs/project-current-state.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-873e99a5e2e862c9 / 任务 114 的\[语言—思维逻辑平面\]\(./architecture/language-thought-logic-plane.md\)横穿 L0—L6：十二维有限基底服务来源保存、命题框架、对象／事件包装、篇章连接、机制视角、跨语言验证和目
-  - 来源：`docs/project-current-state.md`
-  - 依赖：—；被引用：—
-- [任务 119 在 118 的正式基线 `4f4358ef09d1871a48d7e32575a63453130b333c` 之上建立 `Agentization Boundary R0`。新增的 Generic Kernel 只承载身份、状](../../../docs/project-current-state.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-c5d1ceea5d0a5332 / 任务 119 在 118 的正式基线 `4f4358ef09d1871a48d7e32575a63453130b333c` 之上建立 `Agentization Boundary R0`。新增的 Generic Kernel 只承载身份、状
-  - 来源：`docs/project-current-state.md`
-  - 依赖：—；被引用：—
-- [任务 98 对 formal main 的全部 Git 跟踪文本源执行了确定性扫描。扫描范围包含函数与案例表、Foundation、theory kernels、投影矩阵、元函数、执行器、README/SUMMARY/USAGE、代码以及](../../../docs/foundation/historical-function-census.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-76333be52839438c / 任务 98 对 formal main 的全部 Git 跟踪文本源执行了确定性扫描。扫描范围包含函数与案例表、Foundation、theory kernels、投影矩阵、元函数、执行器、README/SUMMARY/USAGE、代码以及
-  - 来源：`docs/foundation/historical-function-census.md`
-  - 依赖：—；被引用：—
-- [任务 98：建立断言治理、函数身份、M/E 双轴，并纠偏物理强断言。](../../../RESULTS/LATEST.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-602e70118fb27e6b / 任务 98：建立断言治理、函数身份、M/E 双轴，并纠偏物理强断言。
-  - 来源：`RESULTS/LATEST.md`
-  - 依赖：—；被引用：—
-- [任务 99 已完成第一轮全量身份卡与处置闭合。未定义、未证明或未建立现实映射的资产不再留在无状态队列，而是逐项进入 `unresolved-quarantine.jsonl`，并带 `resume_key`、失败/未决 gate、证明义务、](../../../docs/foundation/function-audit-roadmap.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-cc2828136c40b906 / 任务 99 已完成第一轮全量身份卡与处置闭合。未定义、未证明或未建立现实映射的资产不再留在无状态队列，而是逐项进入 `unresolved-quarantine.jsonl`，并带 `resume_key`、失败/未决 gate、证明义务、
-  - 来源：`docs/foundation/function-audit-roadmap.md`
-  - 依赖：—；被引用：—
-- [任务 C 后续：函数依赖图复核与数据化](../../../docs/v0.2_next_tasks.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-f7b7f9f599226c89 / 任务 C 后续：函数依赖图复核与数据化
-  - 来源：`docs/v0.2_next_tasks.md`
-  - 依赖：—；被引用：—
-- [任务 C 完成。是否继续执行任务 D：试跑物理学、数学、历史学三门学科理论核？](../../../outputs/getbrain/v0.2-function-dependency-graph-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-a07b4fbd8ce4bc33 / 任务 C 完成。是否继续执行任务 D：试跑物理学、数学、历史学三门学科理论核？
-  - 来源：`outputs/getbrain/v0.2-function-dependency-graph-20260706.md`
-  - 依赖：—；被引用：—
-- [任务 C：函数依赖图，帮助每个故事对应核心函数；](../../../docs/storytelling_case_backlog.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-389f3ab0078a123c / 任务 C：函数依赖图，帮助每个故事对应核心函数；
-  - 来源：`docs/storytelling_case_backlog.md`
-  - 依赖：—；被引用：—
-- [任务 D：物理学、数学、历史学三门学科理论核试跑](../../../docs/v0.2_next_tasks.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-0a5b08529b85dd91 / 任务 D：物理学、数学、历史学三门学科理论核试跑
-  - 来源：`docs/v0.2_next_tasks.md`
-  - 依赖：—；被引用：—
-- [任务分支：`codex/ignition-127-os-durability-lifecycle-r3-rebased-20260820`](../../../agent-results/IGNITION-20260820-127-result.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-1f5f9dcef2f93225 / 任务分支：`codex/ignition-127-os-durability-lifecycle-r3-rebased-20260820`
-  - 来源：`agent-results/IGNITION-20260820-127-result.md`
-  - 依赖：—；被引用：—
-- [传染临界-不可逆线一致性函数](../../../data/foundation/adjudications/079-method-audit.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：D409 / 传染临界-不可逆线一致性函数 / D409
-  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
-  - 依赖：D361, D430, D431, D450；被引用：NFC-05ee6be8251415c7, NFC-1e800167d290aa25, NFC-38f51de5a549d115, NFC-6cb8bc810030b9e9
-- [传染临界-不可逆观测量函数](../../../data/foundation/adjudications/079-method-audit.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `DOWNGRADE_TO_PENDING`
-  - 可搜索名称：D422 / 传染临界-不可逆观测量函数 / D422
-  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
-  - 依赖：D361, D430, D431, D450；被引用：NFC-694089b615471592, NFC-8745e2c1e85da806, NFC-9f01ac86ee2f44e9, NFC-cbf906cba9ab2431
-- [传染临界n依赖函数](../../../data/foundation/adjudications/079-method-audit.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：D395 / 传染临界n依赖函数 / D395
-  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
-  - 依赖：D361, D430, D431, D450；被引用：CLAIM-D409, NFC-0c6bd5526479aaf2, NFC-0fb3f9fce47d2de9, NFC-116546840af6afc4
-- [传染链自限函数](../../../data/foundation/adjudications/079-method-audit.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：D407 / 传染链自限函数 / D407
-  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
-  - 依赖：D361, D430, D431, D450；被引用：NFC-43feee556b385436, NFC-533cdf0e127bca5c, NFC-7ee2742766f1b25c, NFC-e495676edf4879ad
-- [但李清淼憋着一股劲。她相信，只有业绩摆在那里，才能「让一部分家长信服」；只有学生的成绩拿得出手，才能让另一部分家长意识到，「这个老师是真的为学生好的」。](../../../inputs/collisions/20260708-teacher-competition/source.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-1293d4a078531596 / 但李清淼憋着一股劲。她相信，只有业绩摆在那里，才能「让一部分家长信服」；只有学生的成绩拿得出手，才能让另一部分家长意识到，「这个老师是真的为学生好的」。
-  - 来源：`inputs/collisions/20260708-teacher-competition/source.md`
-  - 依赖：—；被引用：—
-- [但道教真正暴露的，不只是宗教有多容易被政治利用，也包括任何程序有多容易忘记它原本要服务谁。把未知变成可行动的步骤，可以是照料；把未知变成只会返回成功的证明，就会成为护罩。](../../../docs/publication/works/when-an-emperor-manufactures-heaven.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-239489ce9698b97c / 但道教真正暴露的，不只是宗教有多容易被政治利用，也包括任何程序有多容易忘记它原本要服务谁。把未知变成可行动的步骤，可以是照料；把未知变成只会返回成功的证明，就会成为护罩。
-  - 来源：`docs/publication/works/when-an-emperor-manufactures-heaven.md`
-  - 依赖：—；被引用：—
-- [低通滤波-自激振荡竞争函数](../../../data/foundation/adjudications/079-method-audit.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：D382 / 低通滤波-自激振荡竞争函数 / D382
-  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
-  - 依赖：D361, D430, D431, D450；被引用：CLAIM-D396, NFC-033843c0ab234bf0, NFC-361824b5f4aa8957, NFC-6a3936646bfbe896
-- [作为 ESI 已成立的样本，也不是因果证明。替代解释包括 in-context learning、](../../../docs/architecture/owner-observation-esi-001.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-d583b6edb3c9333c / 作为 ESI 已成立的样本，也不是因果证明。替代解释包括 in-context learning、
-  - 来源：`docs/architecture/owner-observation-esi-001.md`
-  - 依赖：—；被引用：—
-- [使用了函数、案例、元规则、证据制度、失败类型等结构；](../../../docs/author_motivation_and_boundary_note.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-cb61a75c2751ee86 / 使用了函数、案例、元规则、证据制度、失败类型等结构；
-  - 来源：`docs/author_motivation_and_boundary_note.md`
-  - 依赖：—；被引用：—
-- [例如：因果命题、存在命题、规范命题、数学命题、历史命题、实验命题。](../../../docs/templates/evidence_regime_card.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-ecfd2f8082141416 / 例如：因果命题、存在命题、规范命题、数学命题、历史命题、实验命题。
-  - 来源：`docs/templates/evidence_regime_card.md`
-  - 依赖：—；被引用：—
-- [依据 `docs/governance/life-community-value-charter.md`。同时防止两个极端：A. 整体利益无限压倒个体；B. 主体性误解为个人意志绝对优先。](../../../outputs/collisions/20260711-disobedience-subjectivity/life-community-value-audit.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-46f9d9fd5d2b600a / 依据 `docs/governance/life-community-value-charter.md`。同时防止两个极端：A. 整体利益无限压倒个体；B. 主体性误解为个人意志绝对优先。
-  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/life-community-value-audit.md`
-  - 依赖：—；被引用：—
-- [依据：《生命共同体价值宪章》（docs/governance/life-community-value-charter.md）](../../../docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-15eaa9a5d5c12984 / 依据：《生命共同体价值宪章》（docs/governance/life-community-value-charter.md）
-  - 来源：`docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md`
-  - 依赖：—；被引用：—
-- [依赖 / Depends on: `无`（公理级）](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-1d2505c13f65e372 / 依赖 / Depends on: `无`（公理级）
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [依赖已有D层函数（D210最小作用量原理-门槛优化函数）](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-66b5f7a5b3493535 / 依赖已有D层函数（D210最小作用量原理-门槛优化函数）
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D210；被引用：—
-- [保存来源、命题、形式对象、论证、证据、证明义务、反例、验证和迁移历史。](../../../docs/project-current-state.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-1330c1ed70ef4700 / 保存来源、命题、形式对象、论证、证据、证明义务、反例、验证和迁移历史。
-  - 来源：`docs/project-current-state.md`
-  - 依赖：—；被引用：—
-- [保存模型、证明义务、证明和反例工件。](../../../data/architecture/interactive-system-map.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-da2b69c67c677493 / 保存模型、证明义务、证明和反例工件。
-  - 来源：`data/architecture/interactive-system-map.json`
-  - 依赖：—；被引用：—
-- [保持 pending，除非有外部数学证明](../../../data/pending_claims.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-87909276ee606a7b / 保持 pending，除非有外部数学证明
-  - 来源：`data/pending_claims.csv`
-  - 依赖：—；被引用：—
-- [信号最优流速函数\(凯利公式同构\)](../../../data/foundation/adjudications/079-method-audit.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：D53 / 信号最优流速函数\(凯利公式同构\) / D53
-  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
-  - 依赖：D1, D90；被引用：D176, CLAIM-D176, NFC-46b8f5f19759876f, NFC-612599e6e21cb21a
-- [信号最优流速函数\(凯利公式同构\)](../../../data/foundation/formal-objects/objects.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-9ff3437e9c13cdda / 信号最优流速函数\(凯利公式同构\)
-  - 来源：`data/foundation/formal-objects/objects.jsonl`
-  - 依赖：—；被引用：—
-- [信息-热力学-门控三统一定理](../../../FOUNDATION-64-PROPAGATION.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `DOWNGRADE_TO_CONJECTURE`
-  - 可搜索名称：D231 / 信息-热力学-门控三统一定理 / D231
-  - 来源：`FOUNDATION-64-PROPAGATION.jsonl`
-  - 依赖：D181, D211, D220, D222；被引用：CLAIM-D235, CLAIM-T37, NFC-0394d2f08ce6cb27, NFC-0e48a4f093246d24
-- [信息-热力学-门控三统一定理](../../../data/foundation/formal-objects/objects.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-7305ff2b5aa3afcd / 信息-热力学-门控三统一定理
-  - 来源：`data/foundation/formal-objects/objects.jsonl`
-  - 依赖：—；被引用：—
-- [信息可区分性函数](../../../data/foundation/adjudications/079-method-audit.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：D513 / 信息可区分性函数 / D513
-  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
-  - 依赖：D230, D232, D451, D476；被引用：NFC-371e5061ed6aeb56, NFC-7afafb39ddb6f7b7, NFC-98436fcbc363274a
-- [信息守恒-衰减悖论与黑洞](../../../data/foundation/adjudications/079-method-audit.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：D232 / 信息守恒-衰减悖论与黑洞 / D232
-  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
-  - 依赖：D181, D211, D220, D230；被引用：D473, D512, D513, D514
-- [信息守恒函数](../../../data/foundation/adjudications/079-method-audit.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：D514 / 信息守恒函数 / D514
-  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
-  - 依赖：D230, D232, D451, D476；被引用：NFC-782dfba883318cad, NFC-b75c2c10bd389783, NFC-fc9db05d0e1d1977
-- [信息维度-容斥权衡函数](../../../data/foundation/adjudications/079-method-audit.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：D253 / 信息维度-容斥权衡函数 / D253
-  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
-  - 依赖：D181, D211, D220, D270；被引用：D273, CLAIM-D273, NFC-035a9a7b3056d04f, NFC-3a35afa36f64fecc
-- [信息论完备性定理](../../../FOUNDATION-64-PROPAGATION.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `DOWNGRADE_TO_CONJECTURE`
-  - 可搜索名称：D235 / 信息论完备性定理 / D235
-  - 来源：`FOUNDATION-64-PROPAGATION.jsonl`
-  - 依赖：D181, D211, D220, D233；被引用：NFC-0394d2f08ce6cb27, NFC-0ad2b613b37a815c, NFC-207d767f6a89d59a, NFC-5ac00d377310ce05
-- [信息论完备性定理](../../../data/foundation/formal-objects/objects.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-dfbb27b5848bd91d / 信息论完备性定理
-  - 来源：`data/foundation/formal-objects/objects.jsonl`
-  - 依赖：—；被引用：—
-- [信息遮蔽双源](../../../data/external-research/121-fulltext-resolver/121q6/121q5-reconciliation.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：D4 / 信息遮蔽双源 / D4
-  - 来源：`data/external-research/121-fulltext-resolver/121q6/121q5-reconciliation.json`
-  - 依赖：D1, D90；被引用：NFC-6acc1815414ed079, NFC-74148f005e15386a, NFC-909eb8e283c2e764, NFC-fabe78464ad8a21f
-- [信息门效率统一](../../../analysis/corpus-relation/cluster_source_briefs/C000.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：T12 / 信息门效率统一 / T12
-  - 来源：`analysis/corpus-relation/cluster_source_briefs/C000.md`
-  - 依赖：—；被引用：NFC-733533025e4af5d8, NFC-8769996d2f676d3b, NFC-a73eb9d7fdbffa16, NFC-b65faeddbdf833a7
-- [信息门效率统一 / information-gate efficiency unification](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-a52a384ed205a4e7 / 信息门效率统一 / information-gate efficiency unification
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：—；被引用：—
-- [信息门效率统一函数](../../../FOUNDATION-64-PROPAGATION.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：D142 / 信息门效率统一函数 / D142
-  - 来源：`FOUNDATION-64-PROPAGATION.jsonl`
-  - 依赖：D123, D133, D135, D180；被引用：D123, D133, D135, D139
-- [信息门效率统一函数](../../../data/foundation/formal-objects/objects.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-2fc2bf00d188c61c / 信息门效率统一函数
-  - 来源：`data/foundation/formal-objects/objects.jsonl`
-  - 依赖：—；被引用：—
-- [信息门效率统一函数 / information-gate efficiency unification函数](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-3ae89e8004c9b684 / 信息门效率统一函数 / information-gate efficiency unification函数
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：—；被引用：—
-- [信息门效率统一函数，η_gate = G × \(1-H_homogeneity\(G\)\)，共享度存在倒U最优，完全同质化会导致η_gate趋近于零。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-0037976d99a127c9 / 信息门效率统一函数，η_gate = G × \(1-H_homogeneity\(G\)\)，共享度存在倒U最优，完全同质化会导致η_gate趋近于零。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [信息门效率统一函数，η_gate = G × \(1-H_homogeneity\(G\)\)，共享度存在倒U最优，完全同质化会导致η_gate趋近于零。 **扩展注释 / Extended Annotation**](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-9a31b8702ee4e7d6 / 信息门效率统一函数，η_gate = G × \(1-H_homogeneity\(G\)\)，共享度存在倒U最优，完全同质化会导致η_gate趋近于零。 **扩展注释 / Extended Annotation**
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：—；被引用：—
-- [信息门效率，共享度存在倒U最优，完全同质化会导致η_gate趋近于零。 **扩展注释 / Extended Annotation**](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-5dd79f4faa8e59c3 / 信息门效率，共享度存在倒U最优，完全同质化会导致η_gate趋近于零。 **扩展注释 / Extended Annotation**
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：—；被引用：—
-- [信息门非对称退化](../../../data/foundation/adjudications/079-method-audit.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：D146 / 信息门非对称退化 / D146 / D87
-  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
-  - 依赖：A6, D180, D91；被引用：NFC-0df5efb30b3cca37, NFC-23d6aef5b7f97fdf, NFC-adeacdb33fe97f36, NFC-baa7825780178799
-- [信息门非对称退化](../../../data/foundation/adjudications/079-method-audit.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：D87 / 信息门非对称退化 / D87 / D146
-  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
-  - 依赖：A6, D1, D90；被引用：NFC-00cabe344f66facb, NFC-0253450d7d535c22, NFC-15d74fbfe433e192, NFC-1ad8c023c3820ae7
-- [信息门非对称退化，效率由低意识方决定。 **扩展注释 / Extended Annotation**](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-71c10648428f1d30 / 信息门非对称退化，效率由低意识方决定。 **扩展注释 / Extended Annotation**
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：—；被引用：—
-- [倒U型统一生成定理](../../../analysis/corpus-relation/cluster_source_briefs/C000.md)
-  - 类型/状态：`FUNCTION_ASSET` · `DOWNGRADE_TO_CONJECTURE`
-  - 可搜索名称：D150 / 倒U型统一生成定理 / D150 / D91
-  - 来源：`analysis/corpus-relation/cluster_source_briefs/C000.md`
-  - 依赖：D180, D91；被引用：NFC-154125d9a450e244, NFC-3123275a55010806, NFC-40c777b89a0c33e2, NFC-65cedcbf5b6f6671
-- [倒U型统一生成定理](../../../FOUNDATION-64-PROPAGATION.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `DOWNGRADE_TO_CONJECTURE`
-  - 可搜索名称：D91 / 倒U型统一生成定理 / D91 / D150
-  - 来源：`FOUNDATION-64-PROPAGATION.jsonl`
-  - 依赖：D180；被引用：D100, D101, D102, D103
-- [倒U型统一生成定理](../../../data/foundation/evidence/evidence.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-cf3dd7bc4e47419e / 倒U型统一生成定理
-  - 来源：`data/foundation/evidence/evidence.jsonl`
-  - 依赖：—；被引用：—
-- [倒U型统一生成定理](../../../data/foundation/formal-objects/objects.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-d217d396b630b6a7 / 倒U型统一生成定理
-  - 来源：`data/foundation/formal-objects/objects.jsonl`
-  - 依赖：—；被引用：—
-- [倒U型统一生成定理→所有"最优在中间"是同一投影。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-735fc4b6375e2119 / 倒U型统一生成定理→所有"最优在中间"是同一投影。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [倒U型统一生成定理，Φ = f₁\(↑\)×f₂\(↓\)必然倒U型。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-12356ee92d7a544d / 倒U型统一生成定理，Φ = f₁\(↑\)×f₂\(↓\)必然倒U型。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [倒U型统一生成定理，Φ = f₁\(↑\)×f₂\(↓\)必然倒U型。 **扩展注释 / Extended Annotation**](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-806cda00901baba1 / 倒U型统一生成定理，Φ = f₁\(↑\)×f₂\(↓\)必然倒U型。 **扩展注释 / Extended Annotation**
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：—；被引用：—
-- [候选决策摘要（candidate-decision-summary）](../../ASSET-CARDS.md#asset-hr-46d4e1a9e463a4a0)
-  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-  - 可搜索名称：候选决策摘要（candidate-decision-summary） / candidate-decision-summary
-  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/candidate-decision-summary.md`
-  - 依赖：—；被引用：—
-- [候选接口需求：算法复杂度、可计算性边界、近似策略、硬度证明](../../../data/external-research/089-external-source-atlas.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-07461fe830129702 / 候选接口需求：算法复杂度、可计算性边界、近似策略、硬度证明
-  - 来源：`data/external-research/089-external-source-atlas.md`
-  - 依赖：—；被引用：—
-- [候选接口需求：领域本体工程、实体—关系—事件模型](../../../data/external-research/089-external-source-atlas.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-d1187f7147cdfc82 / 候选接口需求：领域本体工程、实体—关系—事件模型
-  - 来源：`data/external-research/089-external-source-atlas.md`
-  - 依赖：—；被引用：—
-- [候选机制生成（数学猜想的候选结构）](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-31a206bcefcc3756 / 候选机制生成（数学猜想的候选结构）
-  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
-  - 依赖：—；被引用：—
-- [候选机制生成（数学猜想的候选结构）：L2](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-89ea9a4dff56fb23 / 候选机制生成（数学猜想的候选结构）：L2
-  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
-  - 依赖：—；被引用：—
-- [候选机制生成（数学猜想的候选结构）：true（L2）](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-f0130745301146e8 / 候选机制生成（数学猜想的候选结构）：true（L2）
-  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
-  - 依赖：—；被引用：—
-- [候选机制生成（门控面合并作为四种基本力统一的候选结构）](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-6842ed9cf1136ce7 / 候选机制生成（门控面合并作为四种基本力统一的候选结构）
-  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
-  - 依赖：—；被引用：—
-- [候选机制生成（门控面合并作为四种基本力统一的候选结构；数学猜想的候选结构；历史制度的元协议）](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-55891fd9a7d48450 / 候选机制生成（门控面合并作为四种基本力统一的候选结构；数学猜想的候选结构；历史制度的元协议）
-  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
-  - 依赖：—；被引用：—
-- [候选机制生成（门控面合并）：L2](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-731b79d2446c5e46 / 候选机制生成（门控面合并）：L2
-  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
-  - 依赖：—；被引用：—
-- [候选机制生成（门控面合并）：true（L2）](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-f8563fc277ae5648 / 候选机制生成（门控面合并）：true（L2）
-  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
-  - 依赖：—；被引用：—
-- [候选：book collisions、candidate_only、pending 和未完成形式化的材料。候选不得冒充权威、证明或正式案例。](../../../docs/AGENT-GUIDE.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-6d2be836128f7355 / 候选：book collisions、candidate_only、pending 和未完成形式化的材料。候选不得冒充权威、证明或正式案例。
-  - 来源：`docs/AGENT-GUIDE.md`
-  - 依赖：—；被引用：—
-- [值域 / Codomain: `Y_D538 = {c ∈ {0,1} \| c=1: becomes conscious}`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-5a47d6be1f215f3c / 值域 / Codomain: `Y_D538 = {c ∈ {0,1} \| c=1: becomes conscious}`
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [假真实 E2E -> 已修。原 test 用 SAMPLE_MD + _todo 冒充。现改为读取 audit 中两项真实 source_path：120 资产 md 文件未落盘 -> importer 正确 BLOCKED（无假迁移）。s](../../../data/external-research/121-fulltext-resolver/121q6d/121Q6D-final-report.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-abfe306d4f0966d6 / 假真实 E2E -> 已修。原 test 用 SAMPLE_MD + _todo 冒充。现改为读取 audit 中两项真实 source_path：120 资产 md 文件未落盘 -> importer 正确 BLOCKED（无假迁移）。s
-  - 来源：`data/external-research/121-fulltext-resolver/121q6d/121Q6D-final-report.md`
-  - 依赖：—；被引用：—
-- [假设完全统一Ω=1可达，推导矛盾： Ω=1 ⟹ Φ=0 ⟹ 所有门控贡献为零 ⟹ 没有约束 ⟹ 没有物理 但"完全统一"的预设是物理存在——如果物理不存在，统一也无意义。 因此：完全统一 ⟹ 物理不存在 ⟹ 统一本身无意义 ⟹ 矛盾 **完](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-fc1f27e37cdd98cb / 假设完全统一Ω=1可达，推导矛盾： Ω=1 ⟹ Φ=0 ⟹ 所有门控贡献为零 ⟹ 没有约束 ⟹ 没有物理 但"完全统一"的预设是物理存在——如果物理不存在，统一也无意义。 因此：完全统一 ⟹ 物理不存在 ⟹ 统一本身无意义 ⟹ 矛盾 **完
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：—；被引用：—
-- [偏好-愉悦共同势函数验证](../../../data/foundation/evidence/evidence.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-0c54968954e33be6 / 偏好-愉悦共同势函数验证
-  - 来源：`data/foundation/evidence/evidence.jsonl`
-  - 依赖：—；被引用：—
-- [偏好伪造崩塌](../../../analysis/corpus-relation/cluster_source_briefs/C002.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：D5 / 偏好伪造崩塌 / D5
-  - 来源：`analysis/corpus-relation/cluster_source_briefs/C002.md`
-  - 依赖：D1, D90；被引用：CLAIM-D246, NFC-15453b9ec5c5fd17, NFC-41b455eed852b5a7, NFC-4b559c9171191832
-- [偏差敏感度阈值函数](../../ASSET-CARDS.md#asset-d260)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_TESTED_INDEX_OR_CLASSIFIER`
-  - 可搜索名称：D260 / 偏差敏感度阈值函数
-  - 来源：`AI-HANDOFF.md`
-  - 依赖：D181, D211, D220, D270；被引用：CLAIM-D302, CLAIM-D314, NFC-0867d485420fe93e, NFC-0b7defaef4efab24
-- [停止条件（4）：** - 效率方案显著外部化不可逆生命/生态代价](../../../docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-0da61c3eadfb9c56 / 停止条件（4）：** - 效率方案显著外部化不可逆生命/生态代价
-  - 来源：`docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md`
-  - 依赖：—；被引用：—
-- [储能函数,储能双类型](../../../data/foundation/adjudications/079-method-audit.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `DOWNGRADE_TO_PENDING`
-  - 可搜索名称：D76 / 储能函数,储能双类型 / D76
-  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
-  - 依赖：D1, D90；被引用：NFC-a08fb983dd7a01ed, NFC-d9e00dcc9d519560, NFC-efd76c1eb1068a70
-- [僵尸态传染免疫函数](../../../data/foundation/adjudications/079-method-audit.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：D367 / 僵尸态传染免疫函数 / D367
-  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
-  - 依赖：D361, D430, D431, D450；被引用：NFC-4bcbbfd7061370a4, NFC-597fd3c10100454c, NFC-9ec0dbdfbaaa5916, NFC-db3bde2f9460fd63
-- [僵尸态传染函数](../../../data/foundation/adjudications/079-method-audit.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：D353 / 僵尸态传染函数 / D353
-  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
-  - 依赖：D271, D289, D290, D360；被引用：NFC-2ebd87f7b676d132, NFC-8b7286776b5665ed, NFC-a1f9ef0d9ed3c6de, NFC-edfd69ede3b3fea6
-- [僵尸态函数](../../../data/foundation/adjudications/079-method-audit.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：D311 / 僵尸态函数 / D311
-  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
-  - 依赖：D271, D289, D290, D312；被引用：CLAIM-D311, CLAIM-D392, CLAIM-D406, NFC-01ce4e8acc1fd565
-- [僵尸态救援函数](../../../data/foundation/adjudications/079-method-audit.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：D339 / 僵尸态救援函数 / D339
-  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
-  - 依赖：D271, D289, D290, D360；被引用：D331, CLAIM-D353, NFC-177c9667275232d6, NFC-17f15c6d7408c1ff
-- [僵尸态自修复函数](../../../data/foundation/adjudications/079-method-audit.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `DOWNGRADE_TO_PENDING`
-  - 可搜索名称：D325 / 僵尸态自修复函数 / D325
-  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
-  - 依赖：D271, D289, D290, D360；被引用：NFC-4256483ab96be219, NFC-4f2904734c6174c4, NFC-6d471c87d89b2347, NFC-7e58db463902b291

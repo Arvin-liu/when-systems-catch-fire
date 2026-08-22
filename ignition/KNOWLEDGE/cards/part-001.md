@@ -17,7 +17,7 @@
 - **依赖：** `D180`, `D91`
 - **被引用/反向依赖：** `D123`, `NFC-057ecb2af9dc4696`, `NFC-076f9a738199bc4e`, `NFC-12c4da38b88fcf6a`, `NFC-22f38283a28e704e`, `NFC-42e9ab9a7123ce24`, `NFC-65c154f085e8bb2a`, `NFC-71e297ca6132aac6`, `NFC-83176b221c48034a`, `NFC-88d1cbb84f96046a`, `NFC-9a97860642d031cc`, `NFC-af5bfc2b7bd7c6cc`, `NFC-b27ae6984bcff332`, `NFC-bcd7715d2fcb39a9`, `NFC-bcf481bf323bc0bd`, `NFC-d196cf8167ba2621`, `NFC-d5fe664754bb0aa1`, `NFC-fa1328353ebe92b3`, `NFC-fb1f20b6098e9787`
 - **相关文章/资产：** `D180`, `D91`, `D123`
-- **来源与证据：** `AI-HANDOFF.md`, `CHANGELOG.md`, `RESULTS/CORRECTIONS.md`, `analysis/corpus-relation/cluster_source_briefs/C000.md`, `analysis/corpus-relation/corpus_relation_graph.json`, `data/foundation/adjudications/079-method-audit.jsonl`, `data/foundation/adjudications/083-repaired-adjudications.jsonl`, `data/foundation/adjudications/083-updated-original-adjudications.jsonl`, `data/foundation/adjudications/084-max-decisions.jsonl`, `data/foundation/adjudications/084-max-self-review.jsonl`, `data/foundation/adjudications/084-run-state.json`, `data/foundation/adjudications/085-084-status-overlay.jsonl`, `… and 70 more; inspect the canonical machine record`
+- **来源与证据：** `AI-HANDOFF.md`, `CHANGELOG.md`, `RESULTS/CORRECTIONS.md`, `analysis/corpus-relation/cluster_source_briefs/C000.md`, `analysis/corpus-relation/corpus_relation_graph.json`, `data/foundation/adjudications/079-method-audit.jsonl`, `data/foundation/adjudications/083-repaired-adjudications.jsonl`, `data/foundation/adjudications/083-updated-original-adjudications.jsonl`, `data/foundation/adjudications/084-max-decisions.jsonl`, `data/foundation/adjudications/084-max-self-review.jsonl`, `data/foundation/adjudications/084-run-state.json`, `data/foundation/adjudications/085-084-status-overlay.jsonl`, `… and 80 more; inspect the canonical machine record`
 - **演化历史：** First known commit: 00c2a8c769984776de922f49c3c66c677d6fa3b4；Last adjudicated: 2026-07-29；Reviewer state: TASK98_HUMAN_ADJUDICATION_RECONFIRMED
 - **最近变化：** Task 98/99 adjudication state: TASK98_HUMAN_ADJUDICATION_RECONFIRMED
 - **下一步：** Do not promote the analogy to isomorphism without explicit objects, maps, inverses and preservation proofs.；Supply an exact expression or executable specification, typed inputs and output, domain, codomain and operation semantics.；define every source symbol and its type；proof-obligation:D127；state the scope and stopping conditions；Define the operational mapping from variables to external objects before making a reality claim.；Provide a falsifiable protocol, baseline, data provenance and independent replication appropriate to the claimed domain.
@@ -37,7 +37,7 @@
 - **依赖：** `D181`, `D211`, `D220`, `D270`
 - **被引用/反向依赖：** `D185`, `CLAIM-D185`, `NFC-12c4da38b88fcf6a`, `NFC-37f7481b0d6e1ca3`, `NFC-5dd948407cf99dc4`, `NFC-71e297ca6132aac6`, `NFC-9182ad442505406c`, `NFC-bcf481bf323bc0bd`, `NFC-bf953dfd41303ee0`, `NFC-ce228086af8cfe94`, `NFC-d5fe664754bb0aa1`, `NFC-ddcb515ab0220870`, `NFC-f2f4305b73cd492a`
 - **相关文章/资产：** `D181`, `D211`, `D220`, `D270`, `D185`
-- **来源与证据：** `AI-HANDOFF.md`, `CHANGELOG.md`, `analysis/corpus-relation/cluster_source_briefs/C000.md`, `analysis/corpus-relation/corpus_relation_graph.json`, `data/foundation/adjudications/079-method-audit.jsonl`, `data/foundation/adjudications/083-updated-original-adjudications.jsonl`, `data/foundation/adjudications/084-max-decisions.jsonl`, `data/foundation/adjudications/084-max-self-review.jsonl`, `data/foundation/adjudications/084-run-state.json`, `data/foundation/adjudications/085-084-status-overlay.jsonl`, `data/foundation/adjudications/classification-overrides.jsonl`, `data/foundation/adjudications/core-kernel.jsonl`, `… and 40 more; inspect the canonical machine record`
+- **来源与证据：** `AI-HANDOFF.md`, `CHANGELOG.md`, `analysis/corpus-relation/cluster_source_briefs/C000.md`, `analysis/corpus-relation/corpus_relation_graph.json`, `data/foundation/adjudications/079-method-audit.jsonl`, `data/foundation/adjudications/083-updated-original-adjudications.jsonl`, `data/foundation/adjudications/084-max-decisions.jsonl`, `data/foundation/adjudications/084-max-self-review.jsonl`, `data/foundation/adjudications/084-run-state.json`, `data/foundation/adjudications/085-084-status-overlay.jsonl`, `data/foundation/adjudications/classification-overrides.jsonl`, `data/foundation/adjudications/core-kernel.jsonl`, `… and 50 more; inspect the canonical machine record`
 - **演化历史：** First known commit: 00c2a8c769984776de922f49c3c66c677d6fa3b4；Last adjudicated: 2026-07-29；Reviewer state: TASK98_HUMAN_ADJUDICATION_RECONFIRMED
 - **最近变化：** Task 98/99 adjudication state: TASK98_HUMAN_ADJUDICATION_RECONFIRMED
 - **下一步：** Define parameter ranges, boundary behavior, calibration semantics and counterexample conditions.；Supply an exact expression or executable specification, typed inputs and output, domain, codomain and operation semantics.；define every source symbol and its type；proof-obligation:D182；state the scope and stopping conditions；Define the operational mapping from variables to external objects before making a reality claim.；Provide a falsifiable protocol, baseline, data provenance and independent replication appropriate to the claimed domain.
@@ -195,9 +195,9 @@
 - **假设与表述上限：** The current Ignition multiplicative gate model fails to unify the four interactions. The physical unification problem remains open; neither possibility nor impossibility is proved.
 - **未建立：** public promotion above the recorded claim ceiling; treating the historical name, formula shape or internal test as truth
 - **依赖：** `D181`, `D211`, `D220`, `D270`
-- **被引用/反向依赖：** `NFC-12c4da38b88fcf6a`, `NFC-1574130dc36ee02b`, `NFC-404a74d8f2d269bc`, `NFC-71e297ca6132aac6`, `NFC-884fb3b79d4eff2b`, `NFC-96b6126f9da87bb0`, `NFC-bcf481bf323bc0bd`, `NFC-be7eca5951b072fc`, `NFC-c3100a9e66dac85d`, `NFC-ce228086af8cfe94`, `NFC-d5fe664754bb0aa1`, `NFC-e9d059d9d3a29abe`
+- **被引用/反向依赖：** `NFC-12c4da38b88fcf6a`, `NFC-1574130dc36ee02b`, `NFC-404a74d8f2d269bc`, `NFC-71e297ca6132aac6`, `NFC-884fb3b79d4eff2b`, `NFC-96b6126f9da87bb0`, `NFC-bcf481bf323bc0bd`, `NFC-be7eca5951b072fc`, `NFC-c3100a9e66dac85d`, `NFC-ce228086af8cfe94`, `NFC-d5fe664754bb0aa1`, `NFC-e9d059d9d3a29abe`, `NFC-f5110f158bcfcb21`
 - **相关文章/资产：** `D181`, `D211`, `D220`, `D270`
-- **来源与证据：** `AI-HANDOFF.md`, `CHANGELOG.md`, `analysis/corpus-relation/cluster_source_briefs/C000.md`, `analysis/corpus-relation/corpus_relation_graph.json`, `data/foundation/adjudications/079-method-audit.jsonl`, `data/foundation/adjudications/083-updated-original-adjudications.jsonl`, `data/foundation/adjudications/084-max-decisions.jsonl`, `data/foundation/adjudications/084-max-self-review.jsonl`, `data/foundation/adjudications/084-run-state.json`, `data/foundation/adjudications/085-084-status-overlay.jsonl`, `data/foundation/adjudications/classification-overrides.jsonl`, `data/foundation/adjudications/core-kernel.jsonl`, `… and 36 more; inspect the canonical machine record`
+- **来源与证据：** `AI-HANDOFF.md`, `CHANGELOG.md`, `analysis/corpus-relation/cluster_source_briefs/C000.md`, `analysis/corpus-relation/corpus_relation_graph.json`, `data/foundation/adjudications/079-method-audit.jsonl`, `data/foundation/adjudications/083-updated-original-adjudications.jsonl`, `data/foundation/adjudications/084-max-decisions.jsonl`, `data/foundation/adjudications/084-max-self-review.jsonl`, `data/foundation/adjudications/084-run-state.json`, `data/foundation/adjudications/085-084-status-overlay.jsonl`, `data/foundation/adjudications/classification-overrides.jsonl`, `data/foundation/adjudications/core-kernel.jsonl`, `… and 46 more; inspect the canonical machine record`
 - **演化历史：** First known commit: 00c2a8c769984776de922f49c3c66c677d6fa3b4；Last adjudicated: 2026-07-29；Reviewer state: TASK98_HUMAN_ADJUDICATION_RECONFIRMED
 - **最近变化：** Task 98/99 adjudication state: TASK98_HUMAN_ADJUDICATION_RECONFIRMED
 - **下一步：** State a formal proposition and supply a proof artifact or preserve it as an open conjecture.；Supply an exact expression or executable specification, typed inputs and output, domain, codomain and operation semantics.；define every source symbol and its type；proof-obligation:D190；state the scope and stopping conditions；supply a domain, target type, units where applicable, and a well-defined evaluation rule；Define the operational mapping from variables to external objects before making a reality claim.；Provide a falsifiable protocol, baseline, data provenance and independent replication appropriate to the claimed domain.
@@ -215,9 +215,9 @@
 - **假设与表述上限：** A monotone rational score only; p=0.5 is not a real-world controllability threshold without independent calibration.
 - **未建立：** claiming a universal controllability phase transition at p=0.5; treating S=1 as empirical validation; confusing this formal D260 with a grand-unification impossibility result
 - **依赖：** `D181`, `D211`, `D220`, `D270`
-- **被引用/反向依赖：** `CLAIM-D302`, `CLAIM-D314`, `NFC-0867d485420fe93e`, `NFC-0b7defaef4efab24`, `NFC-12c4da38b88fcf6a`, `NFC-2284884c034e6109`, `NFC-2820e2d6c1bd1f95`, `NFC-5dd948407cf99dc4`, `NFC-71e297ca6132aac6`, `NFC-81eeda7b0bf72ac3`, `NFC-86cd9a92fe97d5f7`, `NFC-8c2461b17c14ae96`, `NFC-bcf481bf323bc0bd`, `NFC-d196cf8167ba2621`, `NFC-d5fe664754bb0aa1`, `NFC-d6603f237ef2dfd6`, `NFC-e3db90163ce7009a`, `NFC-ed5eeae35f1f91f5`, `NFC-edcfecc328e4b3cb`, `NFC-f1977dde997a1753`
+- **被引用/反向依赖：** `CLAIM-D302`, `CLAIM-D314`, `NFC-0867d485420fe93e`, `NFC-0b7defaef4efab24`, `NFC-12c4da38b88fcf6a`, `NFC-2284884c034e6109`, `NFC-2820e2d6c1bd1f95`, `NFC-5dd948407cf99dc4`, `NFC-71e297ca6132aac6`, `NFC-81eeda7b0bf72ac3`, `NFC-86cd9a92fe97d5f7`, `NFC-8c2461b17c14ae96`, `NFC-bcf481bf323bc0bd`, `NFC-d196cf8167ba2621`, `NFC-d5fe664754bb0aa1`, `NFC-d6603f237ef2dfd6`, `NFC-e3db90163ce7009a`, `NFC-ed5eeae35f1f91f5`, `NFC-edcfecc328e4b3cb`, `NFC-f1977dde997a1753`, `NFC-ffe626b408abbf1a`
 - **相关文章/资产：** `D181`, `D211`, `D220`, `D270`
-- **来源与证据：** `AI-HANDOFF.md`, `CHANGELOG.md`, `RESULTS/CORRECTIONS.md`, `analysis/corpus-relation/article_cluster_candidates.json`, `analysis/corpus-relation/cluster_source_briefs/C000.md`, `analysis/corpus-relation/corpus_relation_graph.json`, `data/foundation/adjudications/079-method-audit.jsonl`, `data/foundation/adjudications/083-repaired-adjudications.jsonl`, `data/foundation/adjudications/083-updated-original-adjudications.jsonl`, `data/foundation/adjudications/084-max-decisions.jsonl`, `data/foundation/adjudications/084-max-self-review.jsonl`, `data/foundation/adjudications/084-run-state.json`, `… and 55 more; inspect the canonical machine record`
+- **来源与证据：** `AI-HANDOFF.md`, `CHANGELOG.md`, `RESULTS/CORRECTIONS.md`, `analysis/corpus-relation/article_cluster_candidates.json`, `analysis/corpus-relation/cluster_source_briefs/C000.md`, `analysis/corpus-relation/corpus_relation_graph.json`, `data/foundation/adjudications/079-method-audit.jsonl`, `data/foundation/adjudications/083-repaired-adjudications.jsonl`, `data/foundation/adjudications/083-updated-original-adjudications.jsonl`, `data/foundation/adjudications/084-max-decisions.jsonl`, `data/foundation/adjudications/084-max-self-review.jsonl`, `data/foundation/adjudications/084-run-state.json`, `… and 65 more; inspect the canonical machine record`
 - **演化历史：** First known commit: 00c2a8c769984776de922f49c3c66c677d6fa3b4；Last adjudicated: 2026-07-29；Reviewer state: TASK98_HUMAN_ADJUDICATION_RECONFIRMED
 - **最近变化：** Task 98/99 adjudication state: TASK98_HUMAN_ADJUDICATION_RECONFIRMED
 - **下一步：** Define parameter ranges, boundary behavior, calibration semantics and counterexample conditions.；Supply an exact expression or executable specification, typed inputs and output, domain, codomain and operation semantics.；define every source symbol and its type；proof-obligation:D260；state the scope and stopping conditions；supply a domain, target type, units where applicable, and a well-defined evaluation rule；Define the operational mapping from variables to external objects before making a reality claim.；Provide a falsifiable protocol, baseline, data provenance and independent replication appropriate to the claimed domain.
@@ -237,7 +237,7 @@
 - **依赖：** 无已登记直接依赖
 - **被引用/反向依赖：** `D517`, `NFC-12c4da38b88fcf6a`, `NFC-175a9b35e802626f`, `NFC-1952548277feb215`, `NFC-1e03173a8490bbc6`, `NFC-224f3d8274219840`, `NFC-2b29097fbd3f8df5`, `NFC-2c4dc19f65ffcd1f`, `NFC-31a61c27d1508642`, `NFC-5dd948407cf99dc4`, `NFC-71e297ca6132aac6`, `NFC-7a5db94c95da626b`, `NFC-a0d5c52721c90ae5`, `NFC-a28cf179711d33b6`, `NFC-aa6304f4195d3998`, `NFC-b9d289eb0238f00d`, `NFC-bcf481bf323bc0bd`, `NFC-c5f84bed8ecf6bfc`, `NFC-d196cf8167ba2621`, `NFC-d5fe664754bb0aa1`, `NFC-db570a0984372582`, `NFC-e50a9c97e00239a8`, `NFC-fb1f20b6098e9787`
 - **相关文章/资产：** `D517`
-- **来源与证据：** `AI-HANDOFF.md`, `CHANGELOG.md`, `FOUNDATION.md`, `RESULTS/CORRECTIONS.md`, `analysis/corpus-relation/article_cluster_candidates.json`, `analysis/corpus-relation/cluster_source_briefs/C000.md`, `analysis/corpus-relation/corpus_relation_graph.json`, `data/external-research/120-function-paradigm-atlas/120-internal-function-asset-inventory.jsonl`, `data/external-research/121-fulltext-resolver/121-extracts.jsonl`, `data/external-research/121-fulltext-resolver/121q3/assets/asset-inventory-35.json`, `data/external-research/121-fulltext-resolver/121q3/assets/asset-mapping-013-024.json`, `data/external-research/121-fulltext-resolver/121q6c/asset-bridge-audit-35.json`, `… and 71 more; inspect the canonical machine record`
+- **来源与证据：** `AI-HANDOFF.md`, `CHANGELOG.md`, `FOUNDATION.md`, `RESULTS/CORRECTIONS.md`, `analysis/corpus-relation/article_cluster_candidates.json`, `analysis/corpus-relation/cluster_source_briefs/C000.md`, `analysis/corpus-relation/corpus_relation_graph.json`, `data/external-research/120-function-paradigm-atlas/120-internal-function-asset-inventory.jsonl`, `data/external-research/121-fulltext-resolver/121-extracts.jsonl`, `data/external-research/121-fulltext-resolver/121q3/assets/asset-inventory-35.json`, `data/external-research/121-fulltext-resolver/121q3/assets/asset-mapping-013-024.json`, `data/external-research/121-fulltext-resolver/121q6c/asset-bridge-audit-35.json`, `… and 81 more; inspect the canonical machine record`
 - **演化历史：** First known commit: 00c2a8c769984776de922f49c3c66c677d6fa3b4；Last adjudicated: 2026-07-29；Reviewer state: TASK98_HUMAN_ADJUDICATION_RECONFIRMED
 - **最近变化：** Task 98/99 adjudication state: TASK98_HUMAN_ADJUDICATION_RECONFIRMED
 - **下一步：** Declare quantifiers, carrier and existence/uniqueness status without forcing a multivalued relation into a function.；Supply an exact expression or executable specification, typed inputs and output, domain, codomain and operation semantics.；proof-obligation:T2；Define the operational mapping from variables to external objects before making a reality claim.；Provide a falsifiable protocol, baseline, data provenance and independent replication appropriate to the claimed domain.
@@ -303,6 +303,26 @@
 - **下一步：** State typed definitions, assumptions and quantifiers; provide a checkable proof or delimit the statement as conjectural.；Search for countermodels inside and outside the declared model class.
 - **主题：** `MATHEMATICS`, `PHYSICS`, `ARCHITECTURE_GOVERNANCE`
 - **可搜索名称：** `NFC-0b7defaef4efab24`, `历史笔记把 D260 与大一统不可能命题相连；formal main 中 D260 实际为 `p/(1-p)` 偏差敏感度评分。物理断言和评分函数分别处理。`, `- 历史笔记把 D260 与大一统不可能命题相连；formal main 中 D260 实际为 `p/(1-p)` 偏差敏感度评分。物理断言和评分函数分别处理。`
+
+<a id="asset-nfc-0f9ab187be8acae3"></a>
+## Knowledge remains a Domain Pack; OpenClaw, Hermes and Codex remain replaceable executors; the local action layer remains
+
+- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-0f9ab187be8acae3` · [llms.txt](../../llms.txt)
+- **为什么产生：** Expose a materially public IMPOSSIBILITY_OR_UNIVERSAL_CLAIM and its correction or evidence boundary.
+- **当前状态：** `QUARANTINED_AMBIGUOUS`
+- **当前结果：** Knowledge remains a Domain Pack; OpenClaw, Hermes and Codex remain replaceable executors; the local action layer remains `REFERENCE_EXECUTOR / CONFORMANCE_EXECUTOR / FALLBACK_MINIMAL`.
+- **双成熟度：** 数学 `M0`；外部证据 `E0`
+- **假设与表述上限：** Unresolved historical or current claim candidate; it cannot appear as current knowledge.
+- **未建立：** Do not present registry presence, internal tests, AI agreement or formal appearance as proof, external validation, novelty, peer review or replication.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `llms.txt`
+- **演化历史：** Lineage: NO_NAMED_LINEAGE；Lineage status: CURRENT_SCOPED_RECORD；Reviewer state: EXPLICITLY_QUARANTINED
+- **最近变化：** Task 100 disposition: QUARANTINED_AMBIGUOUS
+- **下一步：** State typed definitions, assumptions and quantifiers; provide a checkable proof or delimit the statement as conjectural.；Search for countermodels inside and outside the declared model class.
+- **主题：** `ARCHITECTURE_GOVERNANCE`
+- **可搜索名称：** `NFC-0f9ab187be8acae3`, `Knowledge remains a Domain Pack; OpenClaw, Hermes and Codex remain replaceable executors; the local action layer remains`, `Knowledge remains a Domain Pack; OpenClaw, Hermes and Codex remain replaceable executors; the local action layer remains `REFERENCE_EXECUTOR / CONFORMANCE_EXECUTOR / FALLBACK_MINIMAL`.`
 
 <a id="asset-nfc-10dc7fb421e66908"></a>
 ## 对同次重算的 non-function claims 建立类别、来源、证据谱系、十三道门禁、依赖、M/E、处置与公开表述上限；当前可复算数量见 current-facts projection（`15,899`）。
@@ -444,6 +464,26 @@
 - **主题：** `ARCHITECTURE_GOVERNANCE`
 - **可搜索名称：** `NFC-2843222a849fe77e`, `任务 102 对新增源语料重新运行任务 100 生成器并排除生成投影，当前登记 **17,333** 个 canonical claim。主要类别包括：`, `任务 102 对新增源语料重新运行任务 100 生成器并排除生成投影，当前登记 **17,333** 个 canonical claim。主要类别包括：`
 
+<a id="asset-nfc-28eaec186367612e"></a>
+## Current Snapshot 投影。历史/环境 residual 仍按 receipt 保留，旧任务记录不会被重写为当前事实。
+
+- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-28eaec186367612e` · [docs/project-current-state.md](../../docs/project-current-state.md)
+- **为什么产生：** Expose a materially public CROSS_DOMAIN_CORRESPONDENCE and its correction or evidence boundary.
+- **当前状态：** `RETAINED_AS_STRUCTURAL_METAPHOR`
+- **当前结果：** Current Snapshot 投影。历史/环境 residual 仍按 receipt 保留，旧任务记录不会被重写为当前事实。
+- **双成熟度：** 数学 `M0`；外部证据 `E0`
+- **假设与表述上限：** Analogy or structural metaphor only; no homomorphism, isomorphism or causal identity is established.
+- **未建立：** Do not present registry presence, internal tests, AI agreement or formal appearance as proof, external validation, novelty, peer review or replication.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `docs/project-current-state.md`
+- **演化历史：** Lineage: NO_NAMED_LINEAGE；Lineage status: CURRENT_SCOPED_RECORD；Reviewer state: SOURCE_TEXT_RULE_ADJUDICATED
+- **最近变化：** Task 100 disposition: RETAINED_AS_STRUCTURAL_METAPHOR
+- **下一步：** No open obligation was recorded.
+- **主题：** `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `NFC-28eaec186367612e`, `Current Snapshot 投影。历史/环境 residual 仍按 receipt 保留，旧任务记录不会被重写为当前事实。`, `Current Snapshot 投影。历史/环境 residual 仍按 receipt 保留，旧任务记录不会被重写为当前事实。`
+
 <a id="asset-nfc-3d9ffb2206406fcc"></a>
 ## 为全部恢复的结果/文章来源生成统一卡片和 1 分钟、5 分钟、完整阅读，并为全部函数/断言 registry 建立可回链来源、状态、依赖、反向依赖和历史的分片搜索索引。
 
@@ -463,6 +503,26 @@
 - **下一步：** State typed definitions, assumptions and quantifiers; provide a checkable proof or delimit the statement as conjectural.；Search for countermodels inside and outside the declared model class.
 - **主题：** `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`
 - **可搜索名称：** `NFC-3d9ffb2206406fcc`, `为全部恢复的结果/文章来源生成统一卡片和 1 分钟、5 分钟、完整阅读，并为全部函数/断言 registry 建立可回链来源、状态、依赖、反向依赖和历史的分片搜索索引。`, `- 为全部恢复的结果/文章来源生成统一卡片和 1 分钟、5 分钟、完整阅读，并为全部函数/断言 registry 建立可回链来源、状态、依赖、反向依赖和历史的分片搜索索引。`
+
+<a id="asset-nfc-40fe1d8d95323e67"></a>
+## 当前迭代方法版本由 generated Current Snapshot 统一投影。看到首页阶段成果时，逐项读取显式布尔量和来源 HEAD；`PUBLISHED_SNAPSHOT` 不等于 Accepted、Current 或 Activa
+
+- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-40fe1d8d95323e67` · [AI-HANDOFF.md](../../AI-HANDOFF.md)
+- **为什么产生：** Expose a materially public CROSS_DOMAIN_CORRESPONDENCE and its correction or evidence boundary.
+- **当前状态：** `RETAINED_AS_STRUCTURAL_METAPHOR`
+- **当前结果：** 当前迭代方法版本由 generated Current Snapshot 统一投影。看到首页阶段成果时，逐项读取显式布尔量和来源 HEAD；`PUBLISHED_SNAPSHOT` 不等于 Accepted、Current 或 Activated，首页可见不等于能力可用。Agent 只能生成 stage snapshot request，不能自行声称已进入 Main。
+- **双成熟度：** 数学 `M0`；外部证据 `E0`
+- **假设与表述上限：** Analogy or structural metaphor only; no homomorphism, isomorphism or causal identity is established.
+- **未建立：** Do not present registry presence, internal tests, AI agreement or formal appearance as proof, external validation, novelty, peer review or replication.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `AI-HANDOFF.md`
+- **演化历史：** Lineage: NO_NAMED_LINEAGE；Lineage status: CURRENT_SCOPED_RECORD；Reviewer state: SOURCE_TEXT_RULE_ADJUDICATED
+- **最近变化：** Task 100 disposition: RETAINED_AS_STRUCTURAL_METAPHOR
+- **下一步：** No open obligation was recorded.
+- **主题：** `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `NFC-40fe1d8d95323e67`, `当前迭代方法版本由 generated Current Snapshot 统一投影。看到首页阶段成果时，逐项读取显式布尔量和来源 HEAD；`PUBLISHED_SNAPSHOT` 不等于 Accepted、Current 或 Activa`, `当前迭代方法版本由 generated Current Snapshot 统一投影。看到首页阶段成果时，逐项读取显式布尔量和来源 HEAD；`PUBLISHED_SNAPSHOT` 不等于 Accepted、Current 或 Activated，首页可见不等于能力可用。Agent 只能生成 stage snapshot request，不能自行声称已进入 Main。`
 
 <a id="asset-nfc-49b0b185a29b134e"></a>
 ## 对任务 102 排除生成投影回灌后重算的 function identity cards 建立 identity card、M/E 双轴、义务、依赖、处置与 quarantine；当前可复算数量见 current-facts project
@@ -504,6 +564,26 @@
 - **主题：** `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `NFC-4a20f20c22587a46`, ``NO_REPRODUCTION_POSSIBLE_WITH_CURRENT_TARGET`。三个案例在 task-111 队列投影中继续可`, ``NO_REPRODUCTION_POSSIBLE_WITH_CURRENT_TARGET`。三个案例在 task-111 队列投影中继续可`
 
+<a id="asset-nfc-4e59b068b13c91fe"></a>
+## 身份、当前任务、方法、地图、状态和 lineage 由下方 generated Current Snapshot 统一投影。
+
+- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-4e59b068b13c91fe` · [AI-START-HERE.md](../../AI-START-HERE.md)
+- **为什么产生：** Expose a materially public CROSS_DOMAIN_CORRESPONDENCE and its correction or evidence boundary.
+- **当前状态：** `RETAINED_AS_STRUCTURAL_METAPHOR`
+- **当前结果：** 身份、当前任务、方法、地图、状态和 lineage 由下方 generated Current Snapshot 统一投影。
+- **双成熟度：** 数学 `M0`；外部证据 `E0`
+- **假设与表述上限：** Analogy or structural metaphor only; no homomorphism, isomorphism or causal identity is established.
+- **未建立：** Do not present registry presence, internal tests, AI agreement or formal appearance as proof, external validation, novelty, peer review or replication.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `AI-START-HERE.md`
+- **演化历史：** Lineage: NO_NAMED_LINEAGE；Lineage status: CURRENT_SCOPED_RECORD；Reviewer state: SOURCE_TEXT_RULE_ADJUDICATED
+- **最近变化：** Task 100 disposition: RETAINED_AS_STRUCTURAL_METAPHOR
+- **下一步：** No open obligation was recorded.
+- **主题：** `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `NFC-4e59b068b13c91fe`, `身份、当前任务、方法、地图、状态和 lineage 由下方 generated Current Snapshot 统一投影。`, `身份、当前任务、方法、地图、状态和 lineage 由下方 generated Current Snapshot 统一投影。`
+
 <a id="asset-nfc-517a9b6de3674e2a"></a>
 ## Q30T 已将之元写作法成果的五类职责收口为当前接口：人类总索引、机器 registry、正式作品、案例来源链和点火分析。交接时不得把 README 最近三项投影当作完整权威，不得公开受限原始材料，也不得从一项接受作品推出方法普遍有效。
 
@@ -524,26 +604,6 @@
 - **主题：** `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`
 - **可搜索名称：** `NFC-517a9b6de3674e2a`, `Q30T 已将之元写作法成果的五类职责收口为当前接口：人类总索引、机器 registry、正式作品、案例来源链和点火分析。交接时不得把 README 最近三项投影当作完整权威，不得公开受限原始材料，也不得从一项接受作品推出方法普遍有效。`, `121Q30T 已将之元写作法成果的五类职责收口为当前接口：人类总索引、机器 registry、正式作品、案例来源链和点火分析。交接时不得把 README 最近三项投影当作完整权威，不得公开受限原始材料，也不得从一项接受作品推出方法普遍有效。`
 
-<a id="asset-nfc-52242899c472490c"></a>
-## 方法 `1.3.0` 与系统图 `0.7.0`、`0.6.0`、`0.5.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0`、`0.2.0`、`0.3.0`、`0.4.0` 为更早 Historical。当前方法
-
-- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-52242899c472490c` · [AI-HANDOFF.md](../../AI-HANDOFF.md)
-- **为什么产生：** Expose a materially public IMPOSSIBILITY_OR_UNIVERSAL_CLAIM and its correction or evidence boundary.
-- **当前状态：** `ACCEPTED_AS_DEFINITION`
-- **当前结果：** 方法 `1.3.0` 与系统图 `0.7.0`、`0.6.0`、`0.5.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0`、`0.2.0`、`0.3.0`、`0.4.0` 为更早 Historical。当前方法要求从构件 registry、类型化 topology 与 `data/operations/synchronization-surfaces.json` 计算全项目传播闭包。README、`HUMAN-READING.md`、`RESULTS/`、项目现状、人类 AI 指南、AI 冷启动、Agent 交接、机器入口和版本历史都是必须评估的项目表面。实现完成不能替代仓库同步完成；本地验证也不能声称任何未登记的实时外部状态已验证。
-- **双成熟度：** 数学 `M0`；外部证据 `E0`
-- **假设与表述上限：** May be stated only as a repository definition, policy, status record or explicitly scoped convention; it is not external truth.
-- **未建立：** Do not present registry presence, internal tests, AI agreement or formal appearance as proof, external validation, novelty, peer review or replication.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `AI-HANDOFF.md`
-- **演化历史：** Lineage: NO_NAMED_LINEAGE；Lineage status: CURRENT_SCOPED_RECORD；Reviewer state: SOURCE_TEXT_RULE_ADJUDICATED
-- **最近变化：** Task 100 disposition: ACCEPTED_AS_DEFINITION
-- **下一步：** State typed definitions, assumptions and quantifiers; provide a checkable proof or delimit the statement as conjectural.；Search for countermodels inside and outside the declared model class.
-- **主题：** `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`
-- **可搜索名称：** `NFC-52242899c472490c`, `方法 `1.3.0` 与系统图 `0.7.0`、`0.6.0`、`0.5.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0`、`0.2.0`、`0.3.0`、`0.4.0` 为更早 Historical。当前方法`, `方法 `1.3.0` 与系统图 `0.7.0`、`0.6.0`、`0.5.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0`、`0.2.0`、`0.3.0`、`0.4.0` 为更早 Historical。当前方法要求从构件 registry、类型化 topology 与 `data/operations/synchronization-surfaces.json` 计算全项目传播闭包。README、`HUMAN-READING.md`、`RESULTS/`、项目现状、人类 AI 指南、AI 冷启动、Agent 交接、机器入口和版本历史都是必须评估的项目表面。实现完成不能替代仓库同步完成；本地验证也不能声称任何未登记的实时外部状态已验证。`
-
 <a id="asset-nfc-5cdd355026e2307a"></a>
 ## Task 122 current External Agent Federation R1 projection
 
@@ -563,26 +623,6 @@
 - **下一步：** No open obligation was recorded.
 - **主题：** `COGNITION`
 - **可搜索名称：** `NFC-5cdd355026e2307a`, `Task 122 current External Agent Federation R1 projection`, `## Task 122 current External Agent Federation R1 projection`
-
-<a id="asset-nfc-6122e6f96efe210e"></a>
-## Current: iteration method 1.4.0 (Continuous Stage Snapshot Publication). Read data/operations/stage-snapshots.json and d
-
-- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-6122e6f96efe210e` · [llms.txt](../../llms.txt)
-- **为什么产生：** Expose a materially public IMPOSSIBILITY_OR_UNIVERSAL_CLAIM and its correction or evidence boundary.
-- **当前状态：** `QUARANTINED_AMBIGUOUS`
-- **当前结果：** Current: iteration method 1.4.0 (Continuous Stage Snapshot Publication). Read data/operations/stage-snapshots.json and docs/operations/stage-snapshot-publication.md. Snapshot or homepage visibility never implies Accepted, Current, Activated, capability availability, or candidate payload merge.
-- **双成熟度：** 数学 `M0`；外部证据 `E0`
-- **假设与表述上限：** Unresolved historical or current claim candidate; it cannot appear as current knowledge.
-- **未建立：** Do not present registry presence, internal tests, AI agreement or formal appearance as proof, external validation, novelty, peer review or replication.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `llms.txt`
-- **演化历史：** Lineage: NO_NAMED_LINEAGE；Lineage status: CURRENT_SCOPED_RECORD；Reviewer state: EXPLICITLY_QUARANTINED
-- **最近变化：** Task 100 disposition: QUARANTINED_AMBIGUOUS
-- **下一步：** State typed definitions, assumptions and quantifiers; provide a checkable proof or delimit the statement as conjectural.；Search for countermodels inside and outside the declared model class.
-- **主题：** `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `NFC-6122e6f96efe210e`, `Current: iteration method 1.4.0 (Continuous Stage Snapshot Publication). Read data/operations/stage-snapshots.json and d`, `Current: iteration method 1.4.0 (Continuous Stage Snapshot Publication). Read data/operations/stage-snapshots.json and docs/operations/stage-snapshot-publication.md. Snapshot or homepage visibility never implies Accepted, Current, Activated, capability availability, or candidate payload merge.`
 
 <a id="asset-nfc-61546854af53780b"></a>
 ## 点火没有证明“大一统普遍不可能”。模型失败、哥德尔类比、跨域相似或旧编号不能充当普遍 no-go theorem。
@@ -643,26 +683,6 @@
 - **下一步：** No open obligation was recorded.
 - **主题：** `COGNITION`
 - **可搜索名称：** `NFC-62e99b964dba467f`, `传播契约将 `agent_federation/` 单独投影到 `agent_platform.federation`，并禁止`, `传播契约将 `agent_federation/` 单独投影到 `agent_platform.federation`，并禁止`
-
-<a id="asset-nfc-6477a95f8bbb8721"></a>
-## OpenClaw, Hermes and Codex are replaceable executors; the local action layer is `REFERENCE_EXECUTOR / CONFORMANCE_EXECUT
-
-- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-6477a95f8bbb8721` · [llms.txt](../../llms.txt)
-- **为什么产生：** Expose a materially public IMPOSSIBILITY_OR_UNIVERSAL_CLAIM and its correction or evidence boundary.
-- **当前状态：** `QUARANTINED_AMBIGUOUS`
-- **当前结果：** OpenClaw, Hermes and Codex are replaceable executors; the local action layer is `REFERENCE_EXECUTOR / CONFORMANCE_EXECUTOR / FALLBACK_MINIMAL`.
-- **双成熟度：** 数学 `M0`；外部证据 `E0`
-- **假设与表述上限：** Unresolved historical or current claim candidate; it cannot appear as current knowledge.
-- **未建立：** Do not present registry presence, internal tests, AI agreement or formal appearance as proof, external validation, novelty, peer review or replication.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `llms.txt`
-- **演化历史：** Lineage: NO_NAMED_LINEAGE；Lineage status: CURRENT_SCOPED_RECORD；Reviewer state: EXPLICITLY_QUARANTINED
-- **最近变化：** Task 100 disposition: QUARANTINED_AMBIGUOUS
-- **下一步：** State typed definitions, assumptions and quantifiers; provide a checkable proof or delimit the statement as conjectural.；Search for countermodels inside and outside the declared model class.
-- **主题：** `ARCHITECTURE_GOVERNANCE`
-- **可搜索名称：** `NFC-6477a95f8bbb8721`, `OpenClaw, Hermes and Codex are replaceable executors; the local action layer is `REFERENCE_EXECUTOR / CONFORMANCE_EXECUT`, `OpenClaw, Hermes and Codex are replaceable executors; the local action layer is `REFERENCE_EXECUTOR / CONFORMANCE_EXECUTOR / FALLBACK_MINIMAL`.`
 
 <a id="asset-nfc-6ca935ca1a4f2a8e"></a>
 ## 撤回、降级或隔离的结论，即使换标题、换编号、改成“结构性定理”或藏入摘要，也继续受原 supersession lineage 与 claim ceiling 约束。CI 检查大一统不可能性、单模型失败推出普遍不可能、类比冒充同构、量词膨胀
@@ -764,6 +784,26 @@
 - **主题：** `ARCHITECTURE_GOVERNANCE`
 - **可搜索名称：** `NFC-79e157390b0bf89a`, `Current facts: data/architecture/current-facts.json and docs/architecture/current-facts.md are deterministic projections`, `Current facts: data/architecture/current-facts.json and docs/architecture/current-facts.md are deterministic projections from canonical registries and manifests; they are navigation/current-facts evidence, not a second truth layer.`
 
+<a id="asset-nfc-79f739fc37a3efbd"></a>
+## 分开；版本、计数和 live ceiling 以 generated Current Snapshot 与 Current Facts 投影为准。
+
+- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-79f739fc37a3efbd` · [AI-HANDOFF.md](../../AI-HANDOFF.md)
+- **为什么产生：** Expose a materially public CROSS_DOMAIN_CORRESPONDENCE and its correction or evidence boundary.
+- **当前状态：** `RETAINED_AS_STRUCTURAL_METAPHOR`
+- **当前结果：** 分开；版本、计数和 live ceiling 以 generated Current Snapshot 与 Current Facts 投影为准。
+- **双成熟度：** 数学 `M0`；外部证据 `E0`
+- **假设与表述上限：** Analogy or structural metaphor only; no homomorphism, isomorphism or causal identity is established.
+- **未建立：** Do not present registry presence, internal tests, AI agreement or formal appearance as proof, external validation, novelty, peer review or replication.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `AI-HANDOFF.md`
+- **演化历史：** Lineage: NO_NAMED_LINEAGE；Lineage status: CURRENT_SCOPED_RECORD；Reviewer state: SOURCE_TEXT_RULE_ADJUDICATED
+- **最近变化：** Task 100 disposition: RETAINED_AS_STRUCTURAL_METAPHOR
+- **下一步：** No open obligation was recorded.
+- **主题：** `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `NFC-79f739fc37a3efbd`, `分开；版本、计数和 live ceiling 以 generated Current Snapshot 与 Current Facts 投影为准。`, `分开；版本、计数和 live ceiling 以 generated Current Snapshot 与 Current Facts 投影为准。`
+
 <a id="asset-nfc-7ba5ae6b5efe40a7"></a>
 ## 点火现有乘法门控模型不能完成数学和物理上充分的四种相互作用统一。四力统一问题本身保持开放。项目没有证明“大一统普遍不可能”，也没有给出物理统一点。
 
@@ -783,6 +823,26 @@
 - **下一步：** State typed definitions, assumptions and quantifiers; provide a checkable proof or delimit the statement as conjectural.；Search for countermodels inside and outside the declared model class.
 - **主题：** `MATHEMATICS`, `PHYSICS`, `ARCHITECTURE_GOVERNANCE`
 - **可搜索名称：** `NFC-7ba5ae6b5efe40a7`, `点火现有乘法门控模型不能完成数学和物理上充分的四种相互作用统一。四力统一问题本身保持开放。项目没有证明“大一统普遍不可能”，也没有给出物理统一点。`, `点火现有乘法门控模型不能完成数学和物理上充分的四种相互作用统一。四力统一问题本身保持开放。项目没有证明“大一统普遍不可能”，也没有给出物理统一点。`
+
+<a id="asset-nfc-7c3ee8deab1faa31"></a>
+## claim_ceiling: Deterministic repository-local Current projection only; no Owner authority, external truth, production re
+
+- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-7c3ee8deab1faa31` · [AI-HANDOFF.md](../../AI-HANDOFF.md)
+- **为什么产生：** Expose a materially public CROSS_DOMAIN_CORRESPONDENCE and its correction or evidence boundary.
+- **当前状态：** `ACCEPTED_AS_DEFINITION`
+- **当前结果：** - claim_ceiling: Deterministic repository-local Current projection only; no Owner authority, external truth, production readiness or epistemic upgrade.
+- **双成熟度：** 数学 `M0`；外部证据 `E0`
+- **假设与表述上限：** May be stated only as a repository definition, policy, status record or explicitly scoped convention; it is not external truth.
+- **未建立：** Do not present registry presence, internal tests, AI agreement or formal appearance as proof, external validation, novelty, peer review or replication.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `AI-HANDOFF.md`, `AI-START-HERE.md`, `ARCHITECTURE.md`, `STATE-CHANGELOG.md`, `docs/project-current-state.md`
+- **演化历史：** Lineage: NO_NAMED_LINEAGE；Lineage status: CURRENT_SCOPED_RECORD；Reviewer state: SOURCE_TEXT_RULE_ADJUDICATED
+- **最近变化：** Task 100 disposition: ACCEPTED_AS_DEFINITION
+- **下一步：** No open obligation was recorded.
+- **主题：** `ARCHITECTURE_GOVERNANCE`
+- **可搜索名称：** `NFC-7c3ee8deab1faa31`, `claim_ceiling: Deterministic repository-local Current projection only; no Owner authority, external truth, production re`, `- claim_ceiling: Deterministic repository-local Current projection only; no Owner authority, external truth, production readiness or epistemic upgrade.`
 
 <a id="asset-nfc-7cc4e23e0d003f8f"></a>
 ## 任务 114 已将 L6 `之元写作法` `0.5.0` 收口为当前能力；`0.4.0`、`0.3.0` 保留为历史已合并版本。交接时必须区分外部输入与点火增量输出，后者保存 canonical 路径／ID、生成任务、版本、claim ce
@@ -943,63 +1003,3 @@
 - **下一步：** State typed definitions, assumptions and quantifiers; provide a checkable proof or delimit the statement as conjectural.；Search for countermodels inside and outside the declared model class.
 - **主题：** `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`
 - **可搜索名称：** `NFC-9379ce5377b8455f`, `Formalization, computability, internal consistency, AI numbering and passing tests do not establish external truth. The `, `- Formalization, computability, internal consistency, AI numbering and passing tests do not establish external truth. The current gate model does not unify the four interactions, and the physics unification problem remains open; do not restore the withdrawn universal-impossibility claim under a new label.`
-
-<a id="asset-nfc-996c4e8631d40356"></a>
-## D220 完全统一不可能定理
-
-- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-996c4e8631d40356` · [reports/math-foundation/pilot-formal-audit-20260712.md](../../reports/math-foundation/pilot-formal-audit-20260712.md)
-- **为什么产生：** Expose a materially public IMPOSSIBILITY_OR_UNIVERSAL_CLAIM and its correction or evidence boundary.
-- **当前状态：** `HISTORICAL_ONLY`
-- **当前结果：** ### D220 完全统一不可能定理
-- **双成熟度：** 数学 `M0`；外部证据 `E1`
-- **假设与表述上限：** Historical source wording only; it is not a current repository endorsement.
-- **未建立：** Do not present registry presence, internal tests, AI agreement or formal appearance as proof, external validation, novelty, peer review or replication.
-- **依赖：** `D220`
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** `D220`
-- **来源与证据：** `reports/math-foundation/pilot-formal-audit-20260712.md`
-- **演化历史：** Lineage: PHYSICS_UNIFICATION_NOGO；Lineage status: HISTORICAL_PRESERVED；Reviewer state: SOURCE_TEXT_RULE_ADJUDICATED
-- **最近变化：** Task 100 disposition: HISTORICAL_ONLY
-- **下一步：** State typed definitions, assumptions and quantifiers; provide a checkable proof or delimit the statement as conjectural.；Search for countermodels inside and outside the declared model class.
-- **主题：** `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `NFC-996c4e8631d40356`, `D220 完全统一不可能定理`, `### D220 完全统一不可能定理`
-
-<a id="asset-nfc-a1a28b3a56bcb64b"></a>
-## 函数资产中 `4,804` 项仍 quarantine/pending；非函数断言中 `4,615` 项仍 quarantine/pending；数字来自 current-facts projection，不能解释为内容验证完成。
-
-- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-a1a28b3a56bcb64b` · [docs/project-current-state.md](../../docs/project-current-state.md)
-- **为什么产生：** Expose a materially public CROSS_DOMAIN_CORRESPONDENCE and its correction or evidence boundary.
-- **当前状态：** `RETAINED_AS_STRUCTURAL_METAPHOR`
-- **当前结果：** - 函数资产中 `4,804` 项仍 quarantine/pending；非函数断言中 `4,615` 项仍 quarantine/pending；数字来自 current-facts projection，不能解释为内容验证完成。
-- **双成熟度：** 数学 `M0`；外部证据 `E0`
-- **假设与表述上限：** Analogy or structural metaphor only; no homomorphism, isomorphism or causal identity is established.
-- **未建立：** Do not present registry presence, internal tests, AI agreement or formal appearance as proof, external validation, novelty, peer review or replication.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `docs/project-current-state.md`
-- **演化历史：** Lineage: NO_NAMED_LINEAGE；Lineage status: CURRENT_SCOPED_RECORD；Reviewer state: SOURCE_TEXT_RULE_ADJUDICATED
-- **最近变化：** Task 100 disposition: RETAINED_AS_STRUCTURAL_METAPHOR
-- **下一步：** No open obligation was recorded.
-- **主题：** `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `NFC-a1a28b3a56bcb64b`, `函数资产中 `4,804` 项仍 quarantine/pending；非函数断言中 `4,615` 项仍 quarantine/pending；数字来自 current-facts projection，不能解释为内容验证完成。`, `- 函数资产中 `4,804` 项仍 quarantine/pending；非函数断言中 `4,615` 项仍 quarantine/pending；数字来自 current-facts projection，不能解释为内容验证完成。`
-
-<a id="asset-nfc-a5870d6c2e430817"></a>
-## 机器对应物位于 `data/governance/human-results/` 与 `data/governance/self-correction/`。CI 同时检查两层；缺任一层即失败。
-
-- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-a5870d6c2e430817` · [RESULTS/README.md](../../RESULTS/README.md)
-- **为什么产生：** Expose a materially public CROSS_DOMAIN_CORRESPONDENCE and its correction or evidence boundary.
-- **当前状态：** `RETAINED_AS_STRUCTURAL_METAPHOR`
-- **当前结果：** 机器对应物位于 `data/governance/human-results/` 与 `data/governance/self-correction/`。CI 同时检查两层；缺任一层即失败。
-- **双成熟度：** 数学 `M0`；外部证据 `E0`
-- **假设与表述上限：** Analogy or structural metaphor only; no homomorphism, isomorphism or causal identity is established.
-- **未建立：** Do not present registry presence, internal tests, AI agreement or formal appearance as proof, external validation, novelty, peer review or replication.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `RESULTS/README.md`
-- **演化历史：** Lineage: NO_NAMED_LINEAGE；Lineage status: CURRENT_SCOPED_RECORD；Reviewer state: SOURCE_TEXT_RULE_ADJUDICATED
-- **最近变化：** Task 100 disposition: RETAINED_AS_STRUCTURAL_METAPHOR
-- **下一步：** No open obligation was recorded.
-- **主题：** `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `NFC-a5870d6c2e430817`, `机器对应物位于 `data/governance/human-results/` 与 `data/governance/self-correction/`。CI 同时检查两层；缺任一层即失败。`, `机器对应物位于 `data/governance/human-results/` 与 `data/governance/self-correction/`。CI 同时检查两层；缺任一层即失败。`

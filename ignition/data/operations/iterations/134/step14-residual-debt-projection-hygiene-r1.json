@@ -1,0 +1,85 @@
+{
+  "schema_version": "ignition-134-step14-residual-debt-projection-hygiene-r1",
+  "task_id": "IGNITION-20260822-134",
+  "step": "14",
+  "status": "PASS_WITH_CLASSIFIED_FULL_DISCOVERY_FAILURES",
+  "terminal_state": {
+    "current_task_id": "IGNITION-20260822-134",
+    "current_formal_task_ordinal": 134,
+    "latest_architecture_changing_task": "IGNITION-20260821-129",
+    "latest_architecture_task_ordinal": 129,
+    "current_iteration_boundary": 134,
+    "current_iteration_boundary_semantics": "DEPRECATED_COMPATIBILITY_ALIAS_OF_CURRENT_FORMAL_TASK_ORDINAL",
+    "execution_status": "COMPLETED_WITH_CLASSIFIED_RESIDUALS",
+    "terminal": true,
+    "content_phase": "RELEASE_READY",
+    "current_task_terminal": true,
+    "publication_authority": "REMOTE_REF_OBSERVATION",
+    "embedded_publication_assertion": "NONE"
+  },
+  "identity_gates": {
+    "execution_contract": "PASS",
+    "canonical_current_advancement": "PASS_IDEMPOTENT",
+    "task_identity_model": "PASS",
+    "current_task_lineage": "PASS",
+    "current_release_lifecycle": "PASS_RELEASE_READY",
+    "release_candidate_task_identity": "PASS",
+    "ordinal_binding": "PASS",
+    "historical_boundary_compatibility": "PASS"
+  },
+  "projection_gates": {
+    "current_facts": "PASS",
+    "current_snapshot": "PASS",
+    "current_surface_semantic_gate": "PASS",
+    "current_surface_determinism": "PASS_TWO_EQUAL_PASSES",
+    "current_state_sync": "PASS",
+    "current_path_manifest": {
+      "tracked": 3023,
+      "manifest": 3023,
+      "missing": 0,
+      "stale": 0,
+      "unresolved": 0,
+      "duplicate": 0,
+      "category_changed": 0,
+      "anti_backflow": 0
+    },
+    "human_surface_source_hash_drift": 0
+  },
+  "residual_non_growth": {
+    "ledger_check": "RESIDUAL_LEDGER_OK entries=6 inherited_unchanged=3 resolved=3",
+    "new_residual_objects": 0,
+    "new_failure_dimensions": 0,
+    "unclassified_growth": 0,
+    "source_command_migration_without_declaration": 0,
+    "resolved_current_with_live_objects": 0,
+    "historical_task104_106_preserved": true,
+    "environmental_sympy_classification_preserved": true,
+    "prior_timeout_observation_resolved": true,
+    "terminal_full_discovery_residual_separate": true
+  },
+  "human_surface_semantic_audit": {
+    "audit_path": "ignition/data/operations/iterations/134/step14-human-surface-semantic-audit.json",
+    "audited": 11,
+    "source_changed_semantically_valid": 11,
+    "regeneration_required": 0,
+    "superseded": 0,
+    "hash_only": 0,
+    "actual_conflict": 0,
+    "approved_current_fingerprint_refresh": 11,
+    "current_source_hash_drift": 0,
+    "human_prose_or_claim_ceiling_rewritten": false
+  },
+  "full_unittest_discovery": {
+    "artifact": "ignition/data/operations/iterations/134/step14-full-unittest-discovery.json",
+    "command": "PYTHONPATH=ignition python3 -m unittest discover -s ignition/tests -p 'test*.py'",
+    "status": "TERMINAL_FAILURES_RECORDED",
+    "tests": 1010,
+    "failures": 12,
+    "errors": 3,
+    "skips": 0,
+    "natural_terminal_state": true,
+    "arbitrary_timeout_used": false
+  },
+  "claim_ceiling": "Step14 proves repository-local terminal Current projections, path/Human Surface closure, residual delta evidence and the exact long-window full-discovery result only; it does not establish remote publication, external truth, production readiness, Owner acceptance or epistemic acceptance.",
+  "next_step": "15"
+}

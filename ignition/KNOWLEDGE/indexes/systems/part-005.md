@@ -4,6 +4,71 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [层级：L5 - Φ元统一律元协议跨系统验证 - 元协议1智能契约案例](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-dc02c4ff328b7ef9 / 层级：L5 - Φ元统一律元协议跨系统验证 - 元协议1智能契约案例
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [层级：L5 - Φ元统一律元协议跨系统验证 - 元协议2决策权与信息权的对称性案例](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-16669385561e5fda / 层级：L5 - Φ元统一律元协议跨系统验证 - 元协议2决策权与信息权的对称性案例
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [层级：L5 - Φ元统一律元协议跨系统验证 - 元协议3局部信息→局部调整→全局涌现案例](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-403927b5994cf08f / 层级：L5 - Φ元统一律元协议跨系统验证 - 元协议3局部信息→局部调整→全局涌现案例
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [层级：L5 - Φ元统一律元协议跨系统验证 - 元协议4纳什均衡案例](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-2609c9b23d0cebbc / 层级：L5 - Φ元统一律元协议跨系统验证 - 元协议4纳什均衡案例
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [层级：L5 - Φ元统一律元协议跨系统验证 - 元协议5涌现案例](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-11b27a4471cab106 / 层级：L5 - Φ元统一律元协议跨系统验证 - 元协议5涌现案例
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [层级：L5 - Φ元统一律元协议跨系统验证 - 元协议6自组织案例](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-f230525611c640e5 / 层级：L5 - Φ元统一律元协议跨系统验证 - 元协议6自组织案例
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [工业革命起源的具体因果判定：**pending**（需要史料考证和解释共同体共识）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-2a5d6b04eb79b762 / 工业革命起源的具体因果判定：**pending**（需要史料考证和解释共同体共识）
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [工程验证（代码实现、系统部署）](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-0c629f12375cd278 / 工程验证（代码实现、系统部署）
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [已有覆盖（不新增）：M2 → D598（系统性钝化）+ D597（量化指标替代真实价值），本材料作家庭/女性轴补强证据](../../../outputs/collisions/20260711-disobedience-subjectivity/README.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-3b112fa7758aac26 / 已有覆盖（不新增）：M2 → D598（系统性钝化）+ D597（量化指标替代真实价值），本材料作家庭/女性轴补强证据
+  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/README.md`
+  - 依赖：D597, D598；被引用：—
+- [已知失败模式：将综述摘要当原始实验、将预印本当同行评议、跨域误用方法](../../../data/external-research/089-external-source-atlas.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-c705393d48518616 / 已知失败模式：将综述摘要当原始实验、将预印本当同行评议、跨域误用方法
+  - 来源：`data/external-research/089-external-source-atlas.md`
+  - 依赖：—；被引用：—
+- [已识别因果保留数: 0](../../../reports/foundation-architecture/084-max-adjudication-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-8f999d0f6db5e756 / 已识别因果保留数: 0
+  - 来源：`reports/foundation-architecture/084-max-adjudication-report.md`
+  - 依赖：—；被引用：—
+- [市场失灵的具体因果判定：**pending**（需要计量检验和反事实推断）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-65b4501a12fd49cd / 市场失灵的具体因果判定：**pending**（需要计量检验和反事实推断）
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [市场机制](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-b4dd2b0bf1479269 / 市场机制
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
 - [市场机制（价格信号、分布式决策）](../../../docs/phi_meta_law.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-9968442cc22fcd01 / 市场机制（价格信号、分布式决策）
@@ -338,6 +403,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-e10971f7d363aea5 / 把表面相似的结构误判为底层机制相同。
   - 来源：`data/failure_typology.csv`
+  - 依赖：—；被引用：—
+- [投影；连线不表示现实因果。`PASS` Run 不能推断 Goal completion，系统 proposal 不能成为](../../../docs/architecture/interactive-system-map.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-d7097c783bbf69a0 / 投影；连线不表示现实因果。`PASS` Run 不能推断 Goal completion，系统 proposal 不能成为
+  - 来源：`docs/architecture/interactive-system-map.md`
   - 依赖：—；被引用：—
 - [报告记录开始约 16:18、完成约 16:25，约 7 分钟生成 353 条"双遍对抗审查"。这与 `process_084_batch.py` 的脚本批量生成机制一致，不能作为独立模型推理的证据。](../../../reports/foundation-architecture/085-084-truth-status-correction.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
@@ -834,9 +904,9 @@
   - 可搜索名称：NFC-8160454521535f71 / 新条目**逻辑信息完整**（定义/机制/边界/来源/pending 齐），但**结构表达与旧条目不统一**：
   - 来源：`outputs/audit/two-tables-entry-format-audit-20260709.md`
   - 依赖：—；被引用：—
-- [方法 `1.3.0` 与系统图 `0.7.0`、`0.6.0`、`0.5.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0`、`0.2.0`、`0.3.0`、`0.4.0` 为更早 Historical。当前方法](../../ASSET-CARDS.md#asset-nfc-52242899c472490c)
+- [方法 `1.3.0` 与系统图 `0.10.0`、`0.7.0`、`0.6.0`、`0.5.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0`、`0.2.0`、`0.3.0`、`0.4.0` 为更早 Histor](../../ASSET-CARDS.md#asset-nfc-de320ba9d14281ee)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-52242899c472490c / 方法 `1.3.0` 与系统图 `0.7.0`、`0.6.0`、`0.5.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0`、`0.2.0`、`0.3.0`、`0.4.0` 为更早 Historical。当前方法 / 方法 `1.3.0` 与系统图 `0.7.0`、`0.6.0`、`0.5.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0`、`0.2.0`、`0.3.0`、`0.4.0` 为更早 Historical。当前方法要求从构件 registry、类型化 topology 与 `data/operations/synchronization-surfaces.json` 计算全项目传播闭包。README、`HUMAN-READING.md`、`RESULTS/`、项目现状、人类 AI 指南、AI 冷启动、Agent 交接、机器入口和版本历史都是必须评估的项目表面。实现完成不能替代仓库同步完成；本地验证也不能声称任何未登记的实时外部状态已验证。
+  - 可搜索名称：NFC-de320ba9d14281ee / 方法 `1.3.0` 与系统图 `0.10.0`、`0.7.0`、`0.6.0`、`0.5.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0`、`0.2.0`、`0.3.0`、`0.4.0` 为更早 Histor / 方法 `1.3.0` 与系统图 `0.10.0`、`0.7.0`、`0.6.0`、`0.5.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0`、`0.2.0`、`0.3.0`、`0.4.0` 为更早 Historical。当前方法要求从构件 registry、类型化 topology 与 `data/operations/synchronization-surfaces.json` 计算全项目传播闭包。README、`HUMAN-READING.md`、`RESULTS/`、项目现状、人类 AI 指南、AI 冷启动、Agent 交接、机器入口和版本历史都是必须评估的项目表面。实现完成不能替代仓库同步完成；本地验证也不能声称任何未登记的实时外部状态已验证。
   - 来源：`AI-HANDOFF.md`
   - 依赖：—；被引用：—
 - [无限性问题：点火框架处理有限系统内的演化规律\\n2.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
@@ -1469,9 +1539,9 @@
   - 可搜索名称：NFC-d186d31663cc9741 / 版本事实：当前迭代方法为 `1.4.0 Continuous Stage Snapshot Publication`，当前系统图为 `0.6.0`；系统图 `0.5.0`、`0.4.0`、`0.3.0` 与更早版本均为 Historical
   - 来源：`docs/ai-assistant-usage-reference.md`
   - 依赖：—；被引用：—
-- [状态：`0.11.0 Current registry-derived navigation projection`；`0.10.0`、`0.9.0`、`0.8.0`、`0.7.0`、`0.6.0`、`0.5.0`、`0.4.0` 与更早版](../../../docs/architecture/interactive-system-map.md)
+- [状态：`0.12.0 Current registry-derived navigation projection`；`0.11.0`、`0.10.0`、`0.9.0`、`0.8.0`、`0.7.0`、`0.6.0`、`0.5.0`、`0.](../../../docs/architecture/interactive-system-map.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-9136b48744c6aec4 / 状态：`0.11.0 Current registry-derived navigation projection`；`0.10.0`、`0.9.0`、`0.8.0`、`0.7.0`、`0.6.0`、`0.5.0`、`0.4.0` 与更早版
+  - 可搜索名称：NFC-00786bb3ef368eba / 状态：`0.12.0 Current registry-derived navigation projection`；`0.11.0`、`0.10.0`、`0.9.0`、`0.8.0`、`0.7.0`、`0.6.0`、`0.5.0`、`0.
   - 来源：`docs/architecture/interactive-system-map.md`
   - 依赖：—；被引用：—
 - [状态：`CURRENT_BOUNDED_R0_BASE_WITH_R2_PROJECTION_AND_OPEN_OBLIGATIONS`。这仍不构成通用智能、长期自主性、现实因果、生产安全或 `EPISTEMICALLY_ACCEPTED`](../../../docs/architecture/agentization-boundary-r0.md)
@@ -2024,9 +2094,9 @@
   - 可搜索名称：NFC-87e9bce1f01427a9 / 该案例适合做系统性风险和均衡失效的跨域投影。
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [该链由当前迭代操作法 1.4.0 继承并保留声明关系下的变更传播闭包。`substantive_causal_candidate`、`repository_dependency` 与 `synchronization_obligation`](../../../ARCHITECTURE.md)
+- [该链由当前迭代操作法继承并保留声明关系下的变更传播闭包。`substantive_causal_candidate`、`repository_dependency` 与 `synchronization_obligation` 权限分离；只](../../../ARCHITECTURE.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-162e953a8a7955e4 / 该链由当前迭代操作法 1.4.0 继承并保留声明关系下的变更传播闭包。`substantive_causal_candidate`、`repository_dependency` 与 `synchronization_obligation`
+  - 可搜索名称：NFC-36b84f9cd332934b / 该链由当前迭代操作法继承并保留声明关系下的变更传播闭包。`substantive_causal_candidate`、`repository_dependency` 与 `synchronization_obligation` 权限分离；只
   - 来源：`ARCHITECTURE.md`
   - 依赖：—；被引用：—
 - [误导后续机制生成。](../../../outputs/getbrain/failure-typology-draft-20260706.md)
@@ -2433,74 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-88ee8861e01d840e / 验证系统清单
   - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证系统（9个）：**](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-463cc6ad3d7d9236 / 验证系统（9个）：**
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证结论：** J⁺=1, J⁻=0 → 决策权与信息权的对称性在复杂系统中成立](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-630d205b0b7cfe43 / 验证结论：** J⁺=1, J⁻=0 → 决策权与信息权的对称性在复杂系统中成立
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证结论：** J⁺=1, J⁻=0 → 决策权与信息权的对称性在市场机制中成立](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-04df2853ad4909b1 / 验证结论：** J⁺=1, J⁻=0 → 决策权与信息权的对称性在市场机制中成立
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证结论：** J⁺=1, J⁻=0 → 局部信息→局部调整→全局涌现在复杂系统中成立](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-133328618ef063c6 / 验证结论：** J⁺=1, J⁻=0 → 局部信息→局部调整→全局涌现在复杂系统中成立
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证结论：** J⁺=1, J⁻=0 → 局部信息→局部调整→全局涌现在市场机制中成立](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-b4384aca8a7411c8 / 验证结论：** J⁺=1, J⁻=0 → 局部信息→局部调整→全局涌现在市场机制中成立
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证结论：** J⁺=1, J⁻=0 → 智能契约在复杂系统中成立](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-a9b4541100eb1ccc / 验证结论：** J⁺=1, J⁻=0 → 智能契约在复杂系统中成立
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证结论：** J⁺=1, J⁻=0 → 智能契约在市场机制中成立](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-6ca746feaae3daf5 / 验证结论：** J⁺=1, J⁻=0 → 智能契约在市场机制中成立
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证结论：** J⁺=1, J⁻=0 → 涌现在复杂系统中成立](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-f8232746fce59b1c / 验证结论：** J⁺=1, J⁻=0 → 涌现在复杂系统中成立
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证结论：** J⁺=1, J⁻=0 → 涌现在市场机制中成立](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-4d4e2b14236ba1cd / 验证结论：** J⁺=1, J⁻=0 → 涌现在市场机制中成立
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证结论：** J⁺=1, J⁻=0 → 纳什均衡在复杂系统中成立](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-7f16c90b4790a41b / 验证结论：** J⁺=1, J⁻=0 → 纳什均衡在复杂系统中成立
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证结论：** J⁺=1, J⁻=0 → 纳什均衡在市场机制中成立](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-94c946101e30c77b / 验证结论：** J⁺=1, J⁻=0 → 纳什均衡在市场机制中成立
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证结论：** J⁺=1, J⁻=0 → 自组织在复杂系统中成立](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-30ace86ceed93370 / 验证结论：** J⁺=1, J⁻=0 → 自组织在复杂系统中成立
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证结论：** J⁺=1, J⁻=0 → 自组织在市场机制中成立](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-3759752b3ca3119f / 验证结论：** J⁺=1, J⁻=0 → 自组织在市场机制中成立
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证结论：**召回层有效，置信度判定需机制级二次层；结构抽取不足是瓶颈**](../../../outputs/audit/agent-collision-phase-closeout-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-cd4cb8fb78a2a558 / 验证结论：**召回层有效，置信度判定需机制级二次层；结构抽取不足是瓶颈**
-  - 来源：`outputs/audit/agent-collision-phase-closeout-20260708.md`
   - 依赖：—；被引用：—

@@ -4,6 +4,26 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：M43 / data/external-research/088-external-source-atlas-medium.jsonl / M43 / M01
+  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
+  - 依赖：—；被引用：—
+- [data/foundation/core-systems/protocol-roles.jsonl](../../../data/foundation/core-systems/protocol-roles.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：P01 / data/foundation/core-systems/protocol-roles.jsonl / P01 / P02
+  - 来源：`data/foundation/core-systems/protocol-roles.jsonl`
+  - 依赖：—；被引用：—
+- [data/foundation/core-systems/protocol-roles.jsonl](../../../data/foundation/core-systems/protocol-roles.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：P02 / data/foundation/core-systems/protocol-roles.jsonl / P02 / P01
+  - 来源：`data/foundation/core-systems/protocol-roles.jsonl`
+  - 依赖：—；被引用：—
+- [data/foundation/core-systems/protocol-roles.jsonl](../../../data/foundation/core-systems/protocol-roles.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：P03 / data/foundation/core-systems/protocol-roles.jsonl / P03 / P01
+  - 来源：`data/foundation/core-systems/protocol-roles.jsonl`
+  - 依赖：—；被引用：—
 - [data/foundation/core-systems/protocol-roles.jsonl](../../../data/foundation/core-systems/protocol-roles.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：P04 / data/foundation/core-systems/protocol-roles.jsonl / P04 / P01
@@ -338,6 +358,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-3c36216e0c16361b / Even a passing local fixture run would establish only bounded offline scoring behavior. It would not establish external
   - 来源：`docs/architecture/esi-literature-boundary-r0.md`
+  - 依赖：—；被引用：—
+- [Every entry records its origin task, classification, status, baseline/current fingerprint, count, object/path set, failu](../../../reports/operations/ignition-134-step01-residual-ledger-r1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-65055d24de306322 / Every entry records its origin task, classification, status, baseline/current fingerprint, count, object/path set, failu
+  - 来源：`reports/operations/ignition-134-step01-residual-ledger-r1.md`
   - 依赖：—；被引用：—
 - [Evidence and governance have separate literatures; this pass found no direct independent study showing that evidence tra](../../../reports/external-research/pointfire-getnote-external-verification-r1-20260813.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
@@ -924,9 +949,9 @@
   - 可搜索名称：NFC-f5221d99ca4acd3e / It is not a FUNCTION or PARTIAL_FUNCTION because the displayed multiplicative score does not declare a set-theoretic dom
   - 来源：`reports/foundation-architecture/D598-final-adjudication-20260713.md`
   - 依赖：—；被引用：—
-- [Iteration method 1.3.0 and system maps 0.6.0, 0.5.0 are Historical; method 1.2.0 and maps 0.1.0, 0.2.0, 0.3.0, 0.4.0 are](../../ASSET-CARDS.md#asset-nfc-da4a5d8cd9aac968)
+- [Iteration method 1.3.0 and system maps 0.10.0, 0.6.0, 0.5.0 are Historical; method 1.2.0 and maps 0.1.0, 0.2.0, 0.3.0, 0](../../ASSET-CARDS.md#asset-nfc-de2dafc4a06528aa)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-da4a5d8cd9aac968 / Iteration method 1.3.0 and system maps 0.6.0, 0.5.0 are Historical; method 1.2.0 and maps 0.1.0, 0.2.0, 0.3.0, 0.4.0 are / Iteration method 1.3.0 and system maps 0.6.0, 0.5.0 are Historical; method 1.2.0 and maps 0.1.0, 0.2.0, 0.3.0, 0.4.0 are earlier Historical, not Current. Treat implementation completion, repository synchronization, external synchronization and project completion as distinct states; local validation never proves undeclared live external truth.
+  - 可搜索名称：NFC-de2dafc4a06528aa / Iteration method 1.3.0 and system maps 0.10.0, 0.6.0, 0.5.0 are Historical; method 1.2.0 and maps 0.1.0, 0.2.0, 0.3.0, 0 / Iteration method 1.3.0 and system maps 0.10.0, 0.6.0, 0.5.0 are Historical; method 1.2.0 and maps 0.1.0, 0.2.0, 0.3.0, 0.4.0 are earlier Historical, not Current. Treat implementation completion, repository synchronization, external synchronization and project completion as distinct states; local validation never proves undeclared live external truth.
   - 来源：`llms.txt`
   - 依赖：—；被引用：—
 - [Its critique identifies comparability and systems-measurement requirements for validation, while providing no semantic/b](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
@@ -1553,6 +1578,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-cae4a32e93c3eb0f / New evidence pyramid
   - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
+  - 依赖：—；被引用：—
+- [next_read: read \[`current-system-identity.json`\]\(./data/architecture/current-system-identity.json\), \[`current-facts.md`\]](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-6e34a47c04919243 / next_read: read \[`current-system-identity.json`\]\(./data/architecture/current-system-identity.json\), \[`current-facts.md`\]
+  - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
 - [NF-X1 与 NF-X2 的本质区别：NF-X1 是 D597 同构下游的"社会分层后果"（与 D597 同基底、同机制、不同表现层），故归 D597 扩展；NF-X2 是主体对指标激励的"二阶博弈响应"（引入 D597 没有的独立因果原](../../../outputs/audit/cross-domain-candidate-function-review-20260708.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -2473,34 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-dcd54c36c4ba8e99 / Perspectives on Mechanism Design in Economic Theory
   - 来源：`data/external-research/088-external-source-atlas-v1.jsonl`
-  - 依赖：—；被引用：—
-- [Pessimistic Causal Reinforcement Learning with Mediators for Confounded Offline Data](../../../data/external-research/105-intervention-control/105-intervention-control-source-pack.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-f6b2c5969428a3ba / Pessimistic Causal Reinforcement Learning with Mediators for Confounded Offline Data
-  - 来源：`data/external-research/105-intervention-control/105-intervention-control-source-pack.jsonl`
-  - 依赖：—；被引用：—
-- [Positive labels are bound to object, criterion, version, evidence, and boundary in `data/architecture/calibration/121q12](../../../reports/architecture/121Q12-effectual-mechanism-dual-loop.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-d7458b82b53ca72c / Positive labels are bound to object, criterion, version, evidence, and boundary in `data/architecture/calibration/121q12
-  - 来源：`reports/architecture/121Q12-effectual-mechanism-dual-loop.md`
-  - 依赖：—；被引用：—
-- [PR #53 added Multiscale Causal Fabric objects for events, states, relations, propagation, light cones, feedback, entropy](../../../reports/architecture/121Q22-probability-system-gap-audit.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-02be763bef98bbca / PR #53 added Multiscale Causal Fabric objects for events, states, relations, propagation, light cones, feedback, entropy
-  - 来源：`reports/architecture/121Q22-probability-system-gap-audit.md`
-  - 依赖：—；被引用：—
-- [PR #55 已将 121Q23 Adaptive Relational Network 合并进 `main`。涉及关系网络、重构、嵌入证据摘要或 NetworkDiff 时，必须读取：](../../../AI-HANDOFF.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-b3108ecd9e33a8c8 / PR #55 已将 121Q23 Adaptive Relational Network 合并进 `main`。涉及关系网络、重构、嵌入证据摘要或 NetworkDiff 时，必须读取：
-  - 来源：`AI-HANDOFF.md`
-  - 依赖：—；被引用：—
-- [PR #60 的 accepted HEAD `b01429144f78305ead32455873e79a11661f04e1` 经 review `4718884255` 接受，并以 merge commit `ed30d3c30966](../../../reports/operations/121Q31T-interactive-system-map-and-writing-pool-merge-current-closeout-audit.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-d56ad5aa416e7c59 / PR #60 的 accepted HEAD `b01429144f78305ead32455873e79a11661f04e1` 经 review `4718884255` 接受，并以 merge commit `ed30d3c30966
-  - 来源：`reports/operations/121Q31T-interactive-system-map-and-writing-pool-merge-current-closeout-audit.md`
-  - 依赖：—；被引用：—
-- [PR mergeability and CI success should remain workflow signals, not acceptance or truth.](../../../reports/atlas/121Q14-dynamic-atlas.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-a216b0033ee4fede / PR mergeability and CI success should remain workflow signals, not acceptance or truth.
-  - 来源：`reports/atlas/121Q14-dynamic-atlas.md`
   - 依赖：—；被引用：—

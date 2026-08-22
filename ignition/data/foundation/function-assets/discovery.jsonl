@@ -2814,6 +2814,9 @@
 {"first_line":47,"last_line":47,"mention_count":1,"path":"data/operations/iterations/134/step00-residual-archaeology.json","role":"REFERENCE","stable_id":"D127"}
 {"first_line":14,"last_line":14,"mention_count":1,"path":"data/operations/iterations/134/step06-human-surface-semantic-audit.json","role":"REFERENCE","stable_id":"D127"}
 {"first_line":9,"last_line":9,"mention_count":1,"path":"data/operations/iterations/134/step07-human-surface-fingerprint-refresh.json","role":"REFERENCE","stable_id":"D127"}
+{"first_line":53,"last_line":53,"mention_count":1,"path":"data/operations/iterations/134/step11-current-projection-closure.json","role":"REFERENCE","stable_id":"D127"}
+{"first_line":15,"last_line":15,"mention_count":1,"path":"data/operations/iterations/134/step13-human-surface-semantic-audit.json","role":"REFERENCE","stable_id":"D127"}
+{"first_line":9,"last_line":9,"mention_count":1,"path":"data/operations/iterations/134/step14-human-surface-semantic-audit.json","role":"REFERENCE","stable_id":"D127"}
 {"first_line":288,"last_line":288,"mention_count":1,"path":"data/operations/residual-ledger-r1.json","role":"REFERENCE","stable_id":"D127"}
 {"first_line":17,"last_line":62,"mention_count":2,"path":"docs/editorial/MANIFEST.md","role":"REFERENCE","stable_id":"D127"}
 {"first_line":67,"last_line":67,"mention_count":1,"path":"docs/editorial/articles/001-withdrawn-gravity-how-strong-claims-do-not-rebound.md","role":"REFERENCE","stable_id":"D127"}
@@ -2828,6 +2831,7 @@
 {"first_line":11,"last_line":11,"mention_count":1,"path":"reports/foundation-architecture/098-remote-truth-and-gap.md","role":"REFERENCE","stable_id":"D127"}
 {"first_line":45,"last_line":45,"mention_count":1,"path":"reports/math-foundation/full-object-inventory-20260712.md","role":"REFERENCE","stable_id":"D127"}
 {"first_line":23,"last_line":23,"mention_count":1,"path":"reports/operations/ignition-134-step00-residual-archaeology.md","role":"REFERENCE","stable_id":"D127"}
+{"first_line":7,"last_line":7,"mention_count":1,"path":"reports/operations/ignition-134-step14-human-surface-semantic-audit.md","role":"REFERENCE","stable_id":"D127"}
 {"first_line":276,"last_line":276,"mention_count":1,"path":"views/legacy-cases.jsonl","role":"REFERENCE","stable_id":"D127"}
 {"first_line":189,"last_line":189,"mention_count":1,"path":"views/legacy-functions.jsonl","role":"REFERENCE","stable_id":"D127"}
 {"first_line":57,"last_line":57,"mention_count":1,"path":"统一函数总表/0161-D123-缓存容量倒U型函数.md","role":"REFERENCE","stable_id":"D127"}
@@ -5036,6 +5040,9 @@
 {"first_line":48,"last_line":48,"mention_count":1,"path":"data/operations/iterations/134/step00-residual-archaeology.json","role":"REFERENCE","stable_id":"D182"}
 {"first_line":15,"last_line":15,"mention_count":1,"path":"data/operations/iterations/134/step06-human-surface-semantic-audit.json","role":"REFERENCE","stable_id":"D182"}
 {"first_line":9,"last_line":9,"mention_count":1,"path":"data/operations/iterations/134/step07-human-surface-fingerprint-refresh.json","role":"REFERENCE","stable_id":"D182"}
+{"first_line":53,"last_line":53,"mention_count":1,"path":"data/operations/iterations/134/step11-current-projection-closure.json","role":"REFERENCE","stable_id":"D182"}
+{"first_line":16,"last_line":16,"mention_count":1,"path":"data/operations/iterations/134/step13-human-surface-semantic-audit.json","role":"REFERENCE","stable_id":"D182"}
+{"first_line":10,"last_line":10,"mention_count":1,"path":"data/operations/iterations/134/step14-human-surface-semantic-audit.json","role":"REFERENCE","stable_id":"D182"}
 {"first_line":289,"last_line":289,"mention_count":1,"path":"data/operations/residual-ledger-r1.json","role":"REFERENCE","stable_id":"D182"}
 {"first_line":17,"last_line":62,"mention_count":2,"path":"docs/editorial/MANIFEST.md","role":"REFERENCE","stable_id":"D182"}
 {"first_line":67,"last_line":67,"mention_count":1,"path":"docs/editorial/articles/001-withdrawn-gravity-how-strong-claims-do-not-rebound.md","role":"REFERENCE","stable_id":"D182"}
@@ -5051,6 +5058,7 @@
 {"first_line":9,"last_line":12,"mention_count":2,"path":"reports/foundation-architecture/098-dependency-impact.md","role":"REFERENCE","stable_id":"D182"}
 {"first_line":71,"last_line":71,"mention_count":1,"path":"reports/math-foundation/full-object-inventory-20260712.md","role":"REFERENCE","stable_id":"D182"}
 {"first_line":23,"last_line":23,"mention_count":1,"path":"reports/operations/ignition-134-step00-residual-archaeology.md","role":"REFERENCE","stable_id":"D182"}
+{"first_line":8,"last_line":8,"mention_count":1,"path":"reports/operations/ignition-134-step14-human-surface-semantic-audit.md","role":"REFERENCE","stable_id":"D182"}
 {"first_line":244,"last_line":244,"mention_count":1,"path":"views/legacy-functions.jsonl","role":"REFERENCE","stable_id":"D182"}
 {"first_line":4,"last_line":61,"mention_count":18,"path":"统一函数总表/0218-D182-经典确定性函数.md","role":"DEFINITION","stable_id":"D182"}
 {"first_line":19,"last_line":67,"mention_count":5,"path":"统一函数总表/0221-D185-相对论门槛函数.md","role":"REFERENCE","stable_id":"D182"}
@@ -5412,6 +5420,9 @@
 {"first_line":49,"last_line":49,"mention_count":1,"path":"data/operations/iterations/134/step00-residual-archaeology.json","role":"REFERENCE","stable_id":"D190"}
 {"first_line":16,"last_line":16,"mention_count":1,"path":"data/operations/iterations/134/step06-human-surface-semantic-audit.json","role":"REFERENCE","stable_id":"D190"}
 {"first_line":9,"last_line":9,"mention_count":1,"path":"data/operations/iterations/134/step07-human-surface-fingerprint-refresh.json","role":"REFERENCE","stable_id":"D190"}
+{"first_line":53,"last_line":53,"mention_count":1,"path":"data/operations/iterations/134/step11-current-projection-closure.json","role":"REFERENCE","stable_id":"D190"}
+{"first_line":17,"last_line":17,"mention_count":1,"path":"data/operations/iterations/134/step13-human-surface-semantic-audit.json","role":"REFERENCE","stable_id":"D190"}
+{"first_line":11,"last_line":11,"mention_count":1,"path":"data/operations/iterations/134/step14-human-surface-semantic-audit.json","role":"REFERENCE","stable_id":"D190"}
 {"first_line":290,"last_line":290,"mention_count":1,"path":"data/operations/residual-ledger-r1.json","role":"REFERENCE","stable_id":"D190"}
 {"first_line":17,"last_line":62,"mention_count":2,"path":"docs/editorial/MANIFEST.md","role":"REFERENCE","stable_id":"D190"}
 {"first_line":67,"last_line":67,"mention_count":1,"path":"docs/editorial/articles/001-withdrawn-gravity-how-strong-claims-do-not-rebound.md","role":"REFERENCE","stable_id":"D190"}
@@ -5427,6 +5438,7 @@
 {"first_line":79,"last_line":79,"mention_count":1,"path":"reports/math-foundation/full-object-inventory-20260712.md","role":"REFERENCE","stable_id":"D190"}
 {"first_line":182,"last_line":194,"mention_count":2,"path":"reports/math-foundation/pilot-formal-audit-20260712.md","role":"REFERENCE","stable_id":"D190"}
 {"first_line":23,"last_line":23,"mention_count":1,"path":"reports/operations/ignition-134-step00-residual-archaeology.md","role":"REFERENCE","stable_id":"D190"}
+{"first_line":9,"last_line":9,"mention_count":1,"path":"reports/operations/ignition-134-step14-human-surface-semantic-audit.md","role":"REFERENCE","stable_id":"D190"}
 {"first_line":252,"last_line":252,"mention_count":1,"path":"views/legacy-functions.jsonl","role":"REFERENCE","stable_id":"D190"}
 {"first_line":4,"last_line":45,"mention_count":17,"path":"统一函数总表/0226-D190-万有理论门槛函数.md","role":"DEFINITION","stable_id":"D190"}
 {"first_line":240,"last_line":240,"mention_count":1,"path":"统一函数总表/INDEX.md","role":"REFERENCE","stable_id":"D190"}
@@ -8073,6 +8085,9 @@
 {"first_line":50,"last_line":50,"mention_count":1,"path":"data/operations/iterations/134/step00-residual-archaeology.json","role":"REFERENCE","stable_id":"D260"}
 {"first_line":17,"last_line":17,"mention_count":1,"path":"data/operations/iterations/134/step06-human-surface-semantic-audit.json","role":"REFERENCE","stable_id":"D260"}
 {"first_line":9,"last_line":9,"mention_count":1,"path":"data/operations/iterations/134/step07-human-surface-fingerprint-refresh.json","role":"REFERENCE","stable_id":"D260"}
+{"first_line":53,"last_line":53,"mention_count":1,"path":"data/operations/iterations/134/step11-current-projection-closure.json","role":"REFERENCE","stable_id":"D260"}
+{"first_line":18,"last_line":18,"mention_count":1,"path":"data/operations/iterations/134/step13-human-surface-semantic-audit.json","role":"REFERENCE","stable_id":"D260"}
+{"first_line":12,"last_line":12,"mention_count":1,"path":"data/operations/iterations/134/step14-human-surface-semantic-audit.json","role":"REFERENCE","stable_id":"D260"}
 {"first_line":291,"last_line":291,"mention_count":1,"path":"data/operations/residual-ledger-r1.json","role":"REFERENCE","stable_id":"D260"}
 {"first_line":17,"last_line":62,"mention_count":2,"path":"docs/editorial/MANIFEST.md","role":"REFERENCE","stable_id":"D260"}
 {"first_line":67,"last_line":69,"mention_count":2,"path":"docs/editorial/articles/001-withdrawn-gravity-how-strong-claims-do-not-rebound.md","role":"REFERENCE","stable_id":"D260"}
@@ -8088,6 +8103,7 @@
 {"first_line":18,"last_line":18,"mention_count":1,"path":"reports/foundation-architecture/098-dependency-impact.md","role":"REFERENCE","stable_id":"D260"}
 {"first_line":11,"last_line":11,"mention_count":1,"path":"reports/foundation-architecture/098-remote-truth-and-gap.md","role":"REFERENCE","stable_id":"D260"}
 {"first_line":23,"last_line":23,"mention_count":1,"path":"reports/operations/ignition-134-step00-residual-archaeology.md","role":"REFERENCE","stable_id":"D260"}
+{"first_line":10,"last_line":10,"mention_count":1,"path":"reports/operations/ignition-134-step14-human-surface-semantic-audit.md","role":"REFERENCE","stable_id":"D260"}
 {"first_line":322,"last_line":322,"mention_count":1,"path":"views/legacy-functions.jsonl","role":"REFERENCE","stable_id":"D260"}
 {"first_line":4,"last_line":74,"mention_count":22,"path":"统一函数总表/0296-D260-偏差敏感度阈值函数.md","role":"DEFINITION","stable_id":"D260"}
 {"first_line":19,"last_line":57,"mention_count":3,"path":"统一函数总表/0338-D302-容斥渐近发散函数.md","role":"REFERENCE","stable_id":"D260"}
@@ -23314,6 +23330,7 @@
 {"first_line":16,"last_line":16,"line":16,"mention_count":1,"path":"function-os-candidate/v0.2/tests/test_n1_through_n4.py","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-B6D17BEB4833066A","text":"def test_parse_valid(self):"}
 {"first_line":12,"last_line":12,"line":12,"mention_count":1,"path":"统一案例总表/0666-C-671-公理化体系×三层函数结构验证.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-B6D60BBB433DF994","text":"### [#671｜公理化体系×三层函数结构验证](docs/zh/cases/items/C-0671.md)"}
 {"first_line":576,"last_line":576,"line":576,"mention_count":1,"path":"function-os-candidate/v0.2/benchmark/run.py","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-B6D7476A2B9FFA22","text":"def load_corpus():"}
+{"first_line":1,"last_line":1,"line":1,"mention_count":1,"path":"reports/operations/ignition-134-step13-residual-debt-projection-hygiene.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-B6DE8536D7564D7F","text":"# IGNITION-20260822-134 Step 13 — Current identity migration and hygiene closure"}
 {"first_line":1490,"last_line":1490,"line":1490,"mention_count":1,"path":"analysis/corpus-relation/article_cluster_candidates.json","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-B6EAB69ADA37992F","text":"\"title\": \"Current: iteration method 1.4.0 (Continuous Stage Snapshot Publication). Read data/operations/stage-snapshots.json and d\","}
 {"first_line":617,"last_line":617,"line":617,"mention_count":1,"path":"docs/phi_meta_law.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-B6FEBD9550221C76","text":"ΘY1_iso(A,B) := Θ_A(x) = Θ_B(φ(x)) ∧ Y1_A(x) = Y1_B(φ(x))"}
 {"first_line":35,"last_line":35,"line":35,"mention_count":1,"path":"统一案例总表/0315-C-315-异地恋断裂 — μ翻转导致dcritical从2000km缩到50km,不是距离变了是临界距离变了.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-B6FEE71378BD056D","text":"- 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0315})=1]."}
@@ -26790,6 +26807,9 @@
 {"first_line":51,"last_line":51,"mention_count":1,"path":"data/operations/iterations/134/step00-residual-archaeology.json","role":"REFERENCE","stable_id":"T2"}
 {"first_line":18,"last_line":18,"mention_count":1,"path":"data/operations/iterations/134/step06-human-surface-semantic-audit.json","role":"REFERENCE","stable_id":"T2"}
 {"first_line":9,"last_line":9,"mention_count":1,"path":"data/operations/iterations/134/step07-human-surface-fingerprint-refresh.json","role":"REFERENCE","stable_id":"T2"}
+{"first_line":53,"last_line":53,"mention_count":1,"path":"data/operations/iterations/134/step11-current-projection-closure.json","role":"REFERENCE","stable_id":"T2"}
+{"first_line":19,"last_line":19,"mention_count":1,"path":"data/operations/iterations/134/step13-human-surface-semantic-audit.json","role":"REFERENCE","stable_id":"T2"}
+{"first_line":13,"last_line":13,"mention_count":1,"path":"data/operations/iterations/134/step14-human-surface-semantic-audit.json","role":"REFERENCE","stable_id":"T2"}
 {"first_line":297,"last_line":297,"mention_count":1,"path":"data/operations/residual-ledger-r1.json","role":"REFERENCE","stable_id":"T2"}
 {"first_line":17,"last_line":22,"mention_count":2,"path":"docs/editorial/MANIFEST.md","role":"REFERENCE","stable_id":"T2"}
 {"first_line":37,"last_line":67,"mention_count":2,"path":"docs/editorial/articles/001-withdrawn-gravity-how-strong-claims-do-not-rebound.md","role":"REFERENCE","stable_id":"T2"}
@@ -26812,6 +26832,7 @@
 {"first_line":3,"last_line":9,"mention_count":2,"path":"reports/foundation-architecture/semantic-adjudication-verification-20260713.md","role":"REFERENCE","stable_id":"T2"}
 {"first_line":556,"last_line":568,"mention_count":2,"path":"reports/math-foundation/pilot-formal-audit-20260712.md","role":"REFERENCE","stable_id":"T2"}
 {"first_line":23,"last_line":23,"mention_count":1,"path":"reports/operations/ignition-134-step00-residual-archaeology.md","role":"REFERENCE","stable_id":"T2"}
+{"first_line":11,"last_line":11,"mention_count":1,"path":"reports/operations/ignition-134-step14-human-surface-semantic-audit.md","role":"REFERENCE","stable_id":"T2"}
 {"first_line":16,"last_line":16,"mention_count":1,"path":"templates/protocol-entry-template.md","role":"REFERENCE","stable_id":"T2"}
 {"first_line":17,"last_line":17,"mention_count":1,"path":"views/legacy-functions.jsonl","role":"REFERENCE","stable_id":"T2"}
 {"first_line":4,"last_line":45,"mention_count":17,"path":"统一函数总表/0012-T2-乘法归零律.md","role":"DEFINITION","stable_id":"T2"}
@@ -28211,6 +28232,9 @@
 {"first_line":52,"last_line":52,"mention_count":1,"path":"data/operations/iterations/134/step00-residual-archaeology.json","role":"REFERENCE","stable_id":"Y1"}
 {"first_line":19,"last_line":19,"mention_count":1,"path":"data/operations/iterations/134/step06-human-surface-semantic-audit.json","role":"REFERENCE","stable_id":"Y1"}
 {"first_line":9,"last_line":9,"mention_count":1,"path":"data/operations/iterations/134/step07-human-surface-fingerprint-refresh.json","role":"REFERENCE","stable_id":"Y1"}
+{"first_line":53,"last_line":53,"mention_count":1,"path":"data/operations/iterations/134/step11-current-projection-closure.json","role":"REFERENCE","stable_id":"Y1"}
+{"first_line":20,"last_line":20,"mention_count":1,"path":"data/operations/iterations/134/step13-human-surface-semantic-audit.json","role":"REFERENCE","stable_id":"Y1"}
+{"first_line":14,"last_line":14,"mention_count":1,"path":"data/operations/iterations/134/step14-human-surface-semantic-audit.json","role":"REFERENCE","stable_id":"Y1"}
 {"first_line":298,"last_line":298,"mention_count":1,"path":"data/operations/residual-ledger-r1.json","role":"REFERENCE","stable_id":"Y1"}
 {"first_line":615,"last_line":622,"mention_count":3,"path":"docs/phi_meta_law.md","role":"REFERENCE","stable_id":"Y1"}
 {"first_line":29,"last_line":29,"mention_count":1,"path":"outputs/audit/book-validation-case-table-formalization-audit-20260709.md","role":"REFERENCE","stable_id":"Y1"}
@@ -28224,6 +28248,7 @@
 {"first_line":3,"last_line":9,"mention_count":2,"path":"reports/foundation-architecture/semantic-adjudication-verification-20260713.md","role":"REFERENCE","stable_id":"Y1"}
 {"first_line":3,"last_line":3,"mention_count":1,"path":"reports/math-foundation/pilot-formal-audit-20260712.md","role":"REFERENCE","stable_id":"Y1"}
 {"first_line":23,"last_line":23,"mention_count":1,"path":"reports/operations/ignition-134-step00-residual-archaeology.md","role":"REFERENCE","stable_id":"Y1"}
+{"first_line":12,"last_line":12,"mention_count":1,"path":"reports/operations/ignition-134-step14-human-surface-semantic-audit.md","role":"REFERENCE","stable_id":"Y1"}
 {"first_line":6,"last_line":6,"mention_count":1,"path":"views/legacy-functions.jsonl","role":"REFERENCE","stable_id":"Y1"}
 {"first_line":610,"last_line":617,"mention_count":3,"path":"统一函数总表/0001-Ψ₀元函数完整数学定义.md","role":"DEFINITION","stable_id":"Y1"}
 {"first_line":77,"last_line":77,"mention_count":1,"path":"统一函数总表/0347-D311-僵尸态函数.md","role":"REFERENCE","stable_id":"Y1"}

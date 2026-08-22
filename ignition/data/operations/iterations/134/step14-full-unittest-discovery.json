@@ -1,0 +1,96 @@
+{
+  "schema_version": "ignition-134-step14-full-unittest-discovery-r1",
+  "task_id": "IGNITION-20260822-134",
+  "step": "14",
+  "status": "TERMINAL_FAILURES_RECORDED",
+  "command": "PYTHONPATH=ignition python3 -m unittest discover -s ignition/tests -p 'test*.py'",
+  "working_directory": "formal-repository-root",
+  "runtime_seconds": 2825.826,
+  "long_window": {
+    "natural_terminal_state": true,
+    "process_killed": false,
+    "arbitrary_timeout_used": false,
+    "minimum_window_seconds": 14400,
+    "actual_run_completed_before_window": true
+  },
+  "result": {
+    "exit_code": 1,
+    "tests_run": 1010,
+    "failures": 12,
+    "errors": 3,
+    "skipped": 0,
+    "summary": "FAILED (failures=12, errors=3)"
+  },
+  "observed_execution_chain": [
+    "tools/foundation/validate_claim_governance.py",
+    "tools/foundation/validate_foundation.py",
+    "tools/foundation/validate_function_asset_closure.py",
+    "tools/foundation/validate_nonfunction_claim_closure.py",
+    "adjudicate_nonfunction_claims.py --check",
+    "current projection and knowledge-experience checks",
+    "git rename/diff checks"
+  ],
+  "failure_classification": [
+    {
+      "class": "CURRENT_PROJECTION_DRIFT",
+      "release_action": "REPAIR_AND_RECHECK_TARGETED",
+      "evidence": [
+        "fire-seed source-hash census drift",
+        "knowledge-experience stale source/output drift",
+        "recorded Current Surface determinism drift after projection changes",
+        "Agent Platform blast-radius report drift",
+        "production execution authority nested foundation validator drift"
+      ],
+      "classification_reason": "The long run exposed deterministic generated-output drift; named generators and validators were run afterward, and no skip, ignore or validator relaxation was used."
+    },
+    {
+      "class": "ARCHITECTURE_EXPECTATION_STALE",
+      "release_action": "PRESERVE_EXPLICIT_TEST_RESIDUAL",
+      "evidence": ["overall architecture test expected 81 nodes while the current registry-derived graph has 82 visible nodes"],
+      "classification_reason": "The current Human Surface contract and graph validator agree on 82; the test expectation was not weakened or edited."
+    },
+    {
+      "class": "ENVIRONMENTAL_SYMPY_DEFAULT_INTERPRETER",
+      "release_action": "PRESERVE_EXPLICIT_RESIDUAL",
+      "evidence": ["T16_SYMPY_COUNTEREXAMPLE: SYMPY_UNAVAILABLE:ModuleNotFoundError"],
+      "classification_reason": "The default interpreter lacks SymPy; Step09 independently replayed the declared isolated dependency environment without mutating global configuration."
+    },
+    {
+      "class": "SEALED_HISTORICAL_PROPAGATION_104_106",
+      "release_action": "PRESERVE_EXPLICIT_RESIDUAL",
+      "evidence": ["18 reconciliation diagnostics across Task104–106 dimensions"],
+      "classification_reason": "The mismatch is in historical records and remains separately sealed; it is not absorbed into a Current Task134 residual."
+    },
+    {
+      "class": "HISTORICAL_STATE_CHANGELOG_CONTRACT",
+      "release_action": "AUDIT_ONLY",
+      "evidence": ["legacy historical changelog entries still lack fields required by the current validator"],
+      "classification_reason": "Append-only historical records were not rewritten and the validator was not weakened."
+    },
+    {
+      "class": "COMMAND_CWD_ASSUMPTION",
+      "release_action": "REPORT_RUNNER_BOUNDARY",
+      "evidence": ["one propagation fixture import and two changelog fixture tests resolve paths relative to ignition rather than the exact repository-root command cwd"],
+      "classification_reason": "The command completed naturally from the formal repository root; the fixture boundary is reported as an error, not converted to PASS."
+    }
+  ],
+  "post_observation_repairs": [
+    "function and nonfunction generated projections rebuilt and deep-validated",
+    "function asset deep adjudication regenerated and closure rechecked 46/46",
+    "knowledge-experience audit closed",
+    "fire-seed census closed",
+    "blast-radius report regenerated and validated",
+    "Human Surface 11-item semantic audit and source fingerprint refresh completed",
+    "Current path manifest regenerated after all Step14 artifacts and rechecked 3023/3023 with zero missing/stale/unresolved/duplicate/category-drift/anti-backflow",
+    "Task127 durability projection hygiene and targeted production-authority validator replay passed after path-manifest repair",
+    "Current path manifest, semantic gate and two-pass determinism rechecked"
+  ],
+  "delta_gate": {
+    "status": "TERMINAL_FAILURES_EXPLICITLY_CLASSIFIED",
+    "new_residual_objects_admitted_by_classification": 0,
+    "new_failure_dimensions_admitted_by_classification": 0,
+    "residual_expansion_used_to_make_green": false,
+    "skip_or_ignore_added": false
+  },
+  "claim_ceiling": "Exact repository-local full-discovery terminal evidence and failure classification only; no whole-project correctness, external truth, production readiness, Owner acceptance or epistemic acceptance is inferred."
+}

@@ -445,22 +445,50 @@
       ],
       "baseline_source_command": "PYTHONPATH=ignition python3 -m unittest discover -s ignition/tests -p 'test*.py'",
       "classification": "FULL_DISCOVERY_EXECUTION_STATE",
-      "current_count": 1,
-      "current_failure_dimensions": [
-        "FULL_DISCOVERY_TIMEOUT"
-      ],
-      "current_fingerprint": "149e9f7b985385b72d2eba3860abb2fe0985c38852bcbf098a714c4a8579c803",
-      "current_objects": [
-        "FULL_DISCOVERY:TIMEOUT_CLASSIFIED_AT_30_SECONDS"
-      ],
+      "current_count": 0,
+      "current_failure_dimensions": [],
+      "current_fingerprint": "04d9f07e4f115bda1851e07bd02455df651a8e26a38a03dcd119ab83a731f587",
+      "current_objects": [],
       "current_source_command": "PYTHONPATH=ignition python3 -m unittest discover -s ignition/tests -p 'test*.py'",
       "origin_task": "IGNITION-20260822-133",
       "provenance_paths": [
         "ignition/agent-results/IGNITION-20260822-133-result.md",
-        "ignition/data/operations/iterations/134/step10-full-unittest-discovery.json"
+        "ignition/data/operations/iterations/134/step10-full-unittest-discovery.json",
+        "ignition/data/operations/iterations/134/step14-full-unittest-discovery.json"
+      ],
+      "release_impact": "NON_BLOCKING_RESOLVED",
+      "residual_id": "FULL_UNITTEST_DISCOVERY_TERMINAL_STATE",
+      "status": "RESOLVED_CURRENT",
+      "validator": "python3 -m unittest discover"
+    },
+    {
+      "allowed_persistence_rule": "The exact long-window terminal result is a separately classified current observation; any changed result fingerprint or failure dimension is a new regression and must not be absorbed into the historical timeout observation.",
+      "baseline_count": 1,
+      "baseline_failure_dimensions": [
+        "FULL_DISCOVERY_FAILURES_OR_ERRORS"
+      ],
+      "baseline_fingerprint": "b6f273fd4b8f421ff0c8992256ce0623fe76220628be9b7c58ae9637a430fe52",
+      "baseline_objects": [
+        "FULL_DISCOVERY:TERMINAL_FAILURES:tests=1010:failures=18:errors=3:skips=0"
+      ],
+      "baseline_source_command": "PYTHONPATH=ignition python3 -m unittest discover -s ignition/tests -p 'test*.py'",
+      "classification": "FULL_DISCOVERY_TERMINAL_RESULT",
+      "current_count": 1,
+      "current_failure_dimensions": [
+        "FULL_DISCOVERY_FAILURES_OR_ERRORS"
+      ],
+      "current_fingerprint": "b6f273fd4b8f421ff0c8992256ce0623fe76220628be9b7c58ae9637a430fe52",
+      "current_objects": [
+        "FULL_DISCOVERY:TERMINAL_FAILURES:tests=1010:failures=18:errors=3:skips=0"
+      ],
+      "current_source_command": "PYTHONPATH=ignition python3 -m unittest discover -s ignition/tests -p 'test*.py'",
+      "origin_task": "IGNITION-20260822-134",
+      "provenance_paths": [
+        "ignition/agent-results/IGNITION-20260822-134-result.md",
+        "ignition/data/operations/iterations/134/step14-full-unittest-discovery.json"
       ],
       "release_impact": "NON_BLOCKING_IF_UNCHANGED",
-      "residual_id": "FULL_UNITTEST_DISCOVERY_TERMINAL_STATE",
+      "residual_id": "FULL_UNITTEST_DISCOVERY_TERMINAL_FAILURES",
       "status": "OPEN_INHERITED",
       "validator": "python3 -m unittest discover"
     }

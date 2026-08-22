@@ -4,6 +4,71 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [\| NC-001 \| 职称硬门槛裹挟青年教师 \| 李清淼参评「市名师培养对象」硬门槛为市赛二等奖以上；学校评副高普遍排队到45岁后；青年教师以「多锻炼」为由无法拒绝参赛。 \| NF-001 \| source.md §职称绑定的无奈裹挟 \|](../../../outputs/collisions/20260708-teacher-competition/new-cases.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-e849d46be724ab5b / \| NC-001 \| 职称硬门槛裹挟青年教师 \| 李清淼参评「市名师培养对象」硬门槛为市赛二等奖以上；学校评副高普遍排队到45岁后；青年教师以「多锻炼」为由无法拒绝参赛。 \| NF-001 \| source.md §职称绑定的无奈裹挟 \|
+  - 来源：`outputs/collisions/20260708-teacher-competition/new-cases.md`
+  - 依赖：—；被引用：—
+- [\| NC-002 \| 表演化假课与指标消解温度 \| 案例表仅泛相关（量化/学生） \| 呈现 NF-002/NF-003 的具象机制 \| 可入案例表 \| 无同构案例 \| 个案 \| pending \| 建议入案例表 \| **建议入表** \|](../../../outputs/audit/teacher-competition-backfill-review-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-e601d627d98376b6 / \| NC-002 \| 表演化假课与指标消解温度 \| 案例表仅泛相关（量化/学生） \| 呈现 NF-002/NF-003 的具象机制 \| 可入案例表 \| 无同构案例 \| 个案 \| pending \| 建议入案例表 \| **建议入表** \|
+  - 来源：`outputs/audit/teacher-competition-backfill-review-20260708.md`
+  - 依赖：—；被引用：—
+- [\| NC-003 \| 系统性钝化与教室避风港 \| 教师群体长期高压出现「系统性钝化」；卢叶状态最差时对学生失耐心；后教室成为避风港，学生关风扇的微小联结使其放下名次执念。 \| NF-004 / NF-005 \| source.md §系统性](../../../outputs/collisions/20260708-teacher-competition/new-cases.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-2fca57141dde8b2e / \| NC-003 \| 系统性钝化与教室避风港 \| 教师群体长期高压出现「系统性钝化」；卢叶状态最差时对学生失耐心；后教室成为避风港，学生关风扇的微小联结使其放下名次执念。 \| NF-004 / NF-005 \| source.md §系统性
+  - 来源：`outputs/collisions/20260708-teacher-competition/new-cases.md`
+  - 依赖：—；被引用：—
+- [\| NC-003 \| 系统性钝化与教室避风港 \| 案例表无直接命中 \| 同时承载 NF-004/NF-005 两机制，价值密度高 \| 可入案例表，对应 NF-004/NF-005 \| 无同构案例 \| 个案，含具体师生联结 \| pending](../../../outputs/audit/teacher-competition-backfill-review-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-ea6923b4fc1778fa / \| NC-003 \| 系统性钝化与教室避风港 \| 案例表无直接命中 \| 同时承载 NF-004/NF-005 两机制，价值密度高 \| 可入案例表，对应 NF-004/NF-005 \| 无同构案例 \| 个案，含具体师生联结 \| pending
+  - 来源：`outputs/audit/teacher-competition-backfill-review-20260708.md`
+  - 依赖：—；被引用：—
+- [\| NC-003 系统性钝化与教室避风港 \| 案例 \| 入表 \| C-0807 \| 已验证（teacher-competition-index-visibility-check） \| small-batch-backfill-audit \|](../../../outputs/audit/teacher-competition-batch-closeout-audit-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-0e665def25224f18 / \| NC-003 系统性钝化与教室避风港 \| 案例 \| 入表 \| C-0807 \| 已验证（teacher-competition-index-visibility-check） \| small-batch-backfill-audit \|
+  - 来源：`outputs/audit/teacher-competition-batch-closeout-audit-20260708.md`
+  - 依赖：—；被引用：—
+- [\| NF-002 \| 量化指标替代真实价值 \| 无同名条目；「量化」命中 D244 但非「替代价值」 \| 新机制：可量化信号成唯一显式→不可量化价值被排挤，含「选择性替代」关系 \| 可挂指标化相关族（D244/D173 附近） \| 与 D2](../../../outputs/audit/teacher-competition-backfill-review-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-f6446db58d5a818e / \| NF-002 \| 量化指标替代真实价值 \| 无同名条目；「量化」命中 D244 但非「替代价值」 \| 新机制：可量化信号成唯一显式→不可量化价值被排挤，含「选择性替代」关系 \| 可挂指标化相关族（D244/D173 附近） \| 与 D2
+  - 来源：`outputs/audit/teacher-competition-backfill-review-20260708.md`
+  - 依赖：D173, D244；被引用：—
+- [\| NF-003 \| 表演化生产 \| 无同名；D173 显态粘性可部分对应 \| 新反馈环：主观互斥评审→讨好所有评委→表演态排除临场生成 \| 与 D173 查重：建议合并或派生，不独立重复 \| 与 D173 **弱同构**（均涉固化表演），](../../../outputs/audit/teacher-competition-backfill-review-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-941e7b6612afde0b / \| NF-003 \| 表演化生产 \| 无同名；D173 显态粘性可部分对应 \| 新反馈环：主观互斥评审→讨好所有评委→表演态排除临场生成 \| 与 D173 查重：建议合并或派生，不独立重复 \| 与 D173 **弱同构**（均涉固化表演），
+  - 来源：`outputs/audit/teacher-competition-backfill-review-20260708.md`
+  - 依赖：D173；被引用：—
+- [\| NF-004 \| 系统性钝化 \| 无同名；D364/D423 不可逆判据可部分映射 \| 新稳态：长期高压→愧疚压底→情绪溢出工作对象，群体级不可逆 \| 可挂不可逆族但需查重边界 \| 与 D364/D423 **弱同构**（身心不可逆），](../../../outputs/audit/teacher-competition-backfill-review-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-cab0413db998204a / \| NF-004 \| 系统性钝化 \| 无同名；D364/D423 不可逆判据可部分映射 \| 新稳态：长期高压→愧疚压底→情绪溢出工作对象，群体级不可逆 \| 可挂不可逆族但需查重边界 \| 与 D364/D423 **弱同构**（身心不可逆），
+  - 来源：`outputs/audit/teacher-competition-backfill-review-20260708.md`
+  - 依赖：D364, D423；被引用：—
+- [\| NF-005 \| 避风港 \| 无同名条目 \| 新结构：外层形式主义→个体在内部某空间找到不被指标侵蚀的场域，具体他人联结消解异化 \| 可挂 EXIT 族互补维度 \| 与退出权**不同构**：退出权是离开，避风港是「内部保留空间」 \| 机](../../../outputs/audit/teacher-competition-backfill-review-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-b993d02eae599f73 / \| NF-005 \| 避风港 \| 无同名条目 \| 新结构：外层形式主义→个体在内部某空间找到不被指标侵蚀的场域，具体他人联结消解异化 \| 可挂 EXIT 族互补维度 \| 与退出权**不同构**：退出权是离开，避风港是「内部保留空间」 \| 机
+  - 来源：`outputs/audit/teacher-competition-backfill-review-20260708.md`
+  - 依赖：—；被引用：—
+- [\| P0 \| 心灵、自我与社会 \| Mind, Self, and Society \| George Herbert Mead \| 社会心理学 / 符号互动论 \| 1934 \| Univ. of Chicago Press 常见版 \| 有中](../../../outputs/research/role-identity-subjectivity-reading-list-20260712.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-f8d444c8066c2a05 / \| P0 \| 心灵、自我与社会 \| Mind, Self, and Society \| George Herbert Mead \| 社会心理学 / 符号互动论 \| 1934 \| Univ. of Chicago Press 常见版 \| 有中
+  - 来源：`outputs/research/role-identity-subjectivity-reading-list-20260712.md`
+  - 依赖：D601, P0；被引用：—
+- [\| P0 \| 日常生活中的自我呈现 \| The Presentation of Self in Everyday Life \| Erving Goffman \| 社会学 / 符号互动论 \| 1959 \| Anchor Books ed.;](../../../outputs/research/role-identity-subjectivity-reading-list-20260712.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-6e9c3a1fdd3ffc4a / \| P0 \| 日常生活中的自我呈现 \| The Presentation of Self in Everyday Life \| Erving Goffman \| 社会学 / 符号互动论 \| 1959 \| Anchor Books ed.;
+  - 来源：`outputs/research/role-identity-subjectivity-reading-list-20260712.md`
+  - 依赖：D601, P0；被引用：—
+- [\| P1 \| 身份理论 \| Identity Theory \| Peter J. Burke, Jan E. Stets \| 社会心理学 / 组织身份 \| 2009 \| Oxford University Press \| 中文系统译本较少](../../../outputs/research/role-identity-subjectivity-reading-list-20260712.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-33075346abc55d25 / \| P1 \| 身份理论 \| Identity Theory \| Peter J. Burke, Jan E. Stets \| 社会心理学 / 组织身份 \| 2009 \| Oxford University Press \| 中文系统译本较少
+  - 来源：`outputs/research/role-identity-subjectivity-reading-list-20260712.md`
+  - 依赖：D602, P1；被引用：—
+- [\| P2 \| Social Identity \| Social Identity \| Richard Jenkins \| 社会身份研究 \| 1996 \| 中文系统译本较少 \| 补个体 / 群体 / 分类之间的桥梁 \|](../../../outputs/research/role-identity-subjectivity-reading-list-20260712.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-7d8864db84d1cf93 / \| P2 \| Social Identity \| Social Identity \| Richard Jenkins \| 社会身份研究 \| 1996 \| 中文系统译本较少 \| 补个体 / 群体 / 分类之间的桥梁 \|
+  - 来源：`outputs/research/role-identity-subjectivity-reading-list-20260712.md`
+  - 依赖：P2；被引用：—
 - [\| P5 \| 53 \| Causal claims \|](../../../reports/foundation-architecture/083-max-queue-readiness.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-cfbd25b2e1eda78b / \| P5 \| 53 \| Causal claims \|
@@ -2438,69 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-559d128eeaa11c91 / 层级：L5 - Φ元统一律元协议跨系统验证 - G_δ哥德尔不完备性判定案例
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [层级：L5 - Φ元统一律元协议跨系统验证 - 元协议1智能契约案例](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-dc02c4ff328b7ef9 / 层级：L5 - Φ元统一律元协议跨系统验证 - 元协议1智能契约案例
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [层级：L5 - Φ元统一律元协议跨系统验证 - 元协议2决策权与信息权的对称性案例](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-16669385561e5fda / 层级：L5 - Φ元统一律元协议跨系统验证 - 元协议2决策权与信息权的对称性案例
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [层级：L5 - Φ元统一律元协议跨系统验证 - 元协议3局部信息→局部调整→全局涌现案例](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-403927b5994cf08f / 层级：L5 - Φ元统一律元协议跨系统验证 - 元协议3局部信息→局部调整→全局涌现案例
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [层级：L5 - Φ元统一律元协议跨系统验证 - 元协议4纳什均衡案例](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-2609c9b23d0cebbc / 层级：L5 - Φ元统一律元协议跨系统验证 - 元协议4纳什均衡案例
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [层级：L5 - Φ元统一律元协议跨系统验证 - 元协议5涌现案例](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-11b27a4471cab106 / 层级：L5 - Φ元统一律元协议跨系统验证 - 元协议5涌现案例
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [层级：L5 - Φ元统一律元协议跨系统验证 - 元协议6自组织案例](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-f230525611c640e5 / 层级：L5 - Φ元统一律元协议跨系统验证 - 元协议6自组织案例
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [工业革命起源的具体因果判定：**pending**（需要史料考证和解释共同体共识）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-2a5d6b04eb79b762 / 工业革命起源的具体因果判定：**pending**（需要史料考证和解释共同体共识）
-  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [工程验证（代码实现、系统部署）](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-0c629f12375cd278 / 工程验证（代码实现、系统部署）
-  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [已有覆盖（不新增）：M2 → D598（系统性钝化）+ D597（量化指标替代真实价值），本材料作家庭/女性轴补强证据](../../../outputs/collisions/20260711-disobedience-subjectivity/README.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-3b112fa7758aac26 / 已有覆盖（不新增）：M2 → D598（系统性钝化）+ D597（量化指标替代真实价值），本材料作家庭/女性轴补强证据
-  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/README.md`
-  - 依赖：D597, D598；被引用：—
-- [已知失败模式：将综述摘要当原始实验、将预印本当同行评议、跨域误用方法](../../../data/external-research/089-external-source-atlas.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-c705393d48518616 / 已知失败模式：将综述摘要当原始实验、将预印本当同行评议、跨域误用方法
-  - 来源：`data/external-research/089-external-source-atlas.md`
-  - 依赖：—；被引用：—
-- [已识别因果保留数: 0](../../../reports/foundation-architecture/084-max-adjudication-report.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-8f999d0f6db5e756 / 已识别因果保留数: 0
-  - 来源：`reports/foundation-architecture/084-max-adjudication-report.md`
-  - 依赖：—；被引用：—
-- [市场失灵的具体因果判定：**pending**（需要计量检验和反事实推断）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-65b4501a12fd49cd / 市场失灵的具体因果判定：**pending**（需要计量检验和反事实推断）
-  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [市场机制](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-b4dd2b0bf1479269 / 市场机制
-  - 来源：`docs/phi_meta_law.md`
   - 依赖：—；被引用：—

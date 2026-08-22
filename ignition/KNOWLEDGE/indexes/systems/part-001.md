@@ -1089,14 +1089,19 @@
   - 可搜索名称：NFC-fe5a12c3505fb1b8 / `CausalState`：`JIN-MCF-S01` 基层亲邻高重叠；`S02` 辽东北治理/动员脆弱；`S03` 金可用集中兵力；`S04` 辽指挥与信息失序；`S05` 金的招募/资源/合法性增强。
   - 来源：`reports/publication/jin-rise-point-fire-analysis.md`
   - 依赖：—；被引用：—
-- [`current-facts.json` 为准；当前地图为 `0.11.0`，上一版 `0.10.0` 仅作 Historical。](../../../docs/architecture/interactive-system-map.md)
+- [`current-facts.json` 为准；当前地图为 `0.12.0`，上一版 `0.11.0`、更早版 `0.10.0` 仅作 Historical。](../../../docs/architecture/interactive-system-map.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-19d1002004c118ec / `current-facts.json` 为准；当前地图为 `0.11.0`，上一版 `0.10.0` 仅作 Historical。
+  - 可搜索名称：NFC-24bf97ee07efda5b / `current-facts.json` 为准；当前地图为 `0.12.0`，上一版 `0.11.0`、更早版 `0.10.0` 仅作 Historical。
   - 来源：`docs/architecture/interactive-system-map.md`
   - 依赖：—；被引用：—
-- [`data/architecture/current-system-identity.json`、`data/architecture/current-facts.json`：](../../../AI-HANDOFF.md)
+- [`data/architecture/current-system-identity.json`、`data/architecture/current-facts.json`](../../../AI-START-HERE.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-b9d014e3e8f859c8 / `data/architecture/current-system-identity.json`、`data/architecture/current-facts.json`：
+  - 可搜索名称：NFC-b9d014e3e8f859c8 / `data/architecture/current-system-identity.json`、`data/architecture/current-facts.json`
+  - 来源：`AI-START-HERE.md`
+  - 依赖：—；被引用：—
+- [`data/architecture/current-system-identity.json`、`data/architecture/current-facts.json` 与](../../../AI-HANDOFF.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-1eadcc47c77d0a5d / `data/architecture/current-system-identity.json`、`data/architecture/current-facts.json` 与
   - 来源：`AI-HANDOFF.md`
   - 依赖：—；被引用：—
 - [`diff.py` compares nodes, relations, attributes, hyper-relations, temporal activations, integration responses, embedding](../../../docs/architecture/adaptive-relational-network.md)
@@ -1128,6 +1133,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-47b201ff5377fb11 / `experimentally_identified_causal`
   - 来源：`docs/architecture/multiscale-causal-fabric.md`
+  - 依赖：—；被引用：—
+- [`ignition/tools/foundation/validate_repository_path_classification.py` explicitly defines `classification-manifest.jsonl](../../../reports/operations/ignition-134-step00-residual-archaeology.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-7483adc69161e35b / `ignition/tools/foundation/validate_repository_path_classification.py` explicitly defines `classification-manifest.jsonl
+  - 来源：`reports/operations/ignition-134-step00-residual-archaeology.md`
   - 依赖：—；被引用：—
 - [`incremental_execution --generates / repository_dependency--> iteration` — declared repository materialization relation](../../../reports/operations/121Q32I-change-propagation-impact.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
@@ -1619,6 +1629,11 @@
   - 可搜索名称：NFC-100ab14bed8236fd / Audit factual fidelity, evidence links, causal language, counterevidence,
   - 来源：`docs/publication/zhiyuan-writing-cognitive-migration-editorial-revision.md`
   - 依赖：—；被引用：—
+- [authority_changes: \[`current-system-identity.json`\]\(./data/architecture/current-system-identity.json\), \[`steering curren](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-3b8155cb9840c6e0 / authority_changes: \[`current-system-identity.json`\]\(./data/architecture/current-system-identity.json\), \[`steering curren
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [authority_changes: \[current-system-identity\]\(./data/architecture/current-system-identity.json\), \[current-facts\]\(./data/a](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-cf556738b5c44b4e / authority_changes: \[current-system-identity\]\(./data/architecture/current-system-identity.json\), \[current-facts\]\(./data/a
@@ -2023,6 +2038,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-81fac032e479c57f / centrality/similarity/community/adjacency as truth;
   - 来源：`reports/architecture/121Q23-adaptive-relational-network-validation.md`
+  - 依赖：—；被引用：—
+- [change is classified `ARCHITECTURE_CHANGED` because Steering / Intent / Goal / Obligation R1 is](../../../reports/operations/ignition-129-step20-current-sync.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-8be3f7860b3dc077 / change is classified `ARCHITECTURE_CHANGED` because Steering / Intent / Goal / Obligation R1 is
+  - 来源：`reports/operations/ignition-129-step20-current-sync.md`
   - 依赖：—；被引用：—
 - [changed causal verb, certainty, or scope. If a claim changes, stop and route](../../../docs/publication/zhiyuan-writing-cognitive-migration-editorial-revision.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
@@ -2483,24 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：M42 / data/external-research/088-external-source-atlas-medium.jsonl / M42 / M01
   - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
-  - 依赖：—；被引用：—
-- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：M43 / data/external-research/088-external-source-atlas-medium.jsonl / M43 / M01
-  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
-  - 依赖：—；被引用：—
-- [data/foundation/core-systems/protocol-roles.jsonl](../../../data/foundation/core-systems/protocol-roles.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：P01 / data/foundation/core-systems/protocol-roles.jsonl / P01 / P02
-  - 来源：`data/foundation/core-systems/protocol-roles.jsonl`
-  - 依赖：—；被引用：—
-- [data/foundation/core-systems/protocol-roles.jsonl](../../../data/foundation/core-systems/protocol-roles.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：P02 / data/foundation/core-systems/protocol-roles.jsonl / P02 / P01
-  - 来源：`data/foundation/core-systems/protocol-roles.jsonl`
-  - 依赖：—；被引用：—
-- [data/foundation/core-systems/protocol-roles.jsonl](../../../data/foundation/core-systems/protocol-roles.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：P03 / data/foundation/core-systems/protocol-roles.jsonl / P03 / P01
-  - 来源：`data/foundation/core-systems/protocol-roles.jsonl`
   - 依赖：—；被引用：—

@@ -6,11 +6,11 @@
 - Map/method: map `0.12.0` Current（historical `0.11.0`）；layout `2.0.0`；semantic trunk `semantic-trunk-r1` with `6` bounded route stages；method `1.4.0` `Current`。
 - Packs: `4` packs；`10` declared capability routes。
 - Federation: `3` adapter inventory entries；live ceiling `NOT_RUN_LIVE_EXTERNAL_INVOCATION`；local boundary `REFERENCE_EXECUTOR / CONFORMANCE_EXECUTOR / FALLBACK_MINIMAL`。
-- Foundation: function identity cards `5623`；function quarantine/pending `4824`；non-function claims `16468`；non-function quarantine/pending `4717`。
-- Knowledge Experience: cards `403`；changes `315`；layered readings `332`；search records `22183`；aliases `851`。
+- Foundation: function identity cards `5624`；function quarantine/pending `4825`；non-function claims `16533`；non-function quarantine/pending `4722`。
+- Knowledge Experience: cards `413`；changes `315`；layered readings `332`；search records `22489`；aliases `875`。
 - Fire Seeds: `64` seeds/clusters；`393` source-census records。
 - Human Surface: `48` materiality entries（function `24` + non-function `24`）；`20` registered sync surfaces；`14` machine/human pairs。
-- Task lineage: current `IGNITION-20260822-134` `IN_PROGRESS`；125 file `HISTORICAL_UNEXECUTED`, requirements `REBASED_INTO_127`, canonical `HISTORICAL_UNEXECUTED_REBASED_INTO_127`；127 `COMPLETED_WITH_CLASSIFIED_RESIDUALS`。
+- Task lineage: current `IGNITION-20260822-134` `COMPLETED_WITH_CLASSIFIED_RESIDUALS`；125 file `HISTORICAL_UNEXECUTED`, requirements `REBASED_INTO_127`, canonical `HISTORICAL_UNEXECUTED_REBASED_INTO_127`；127 `COMPLETED_WITH_CLASSIFIED_RESIDUALS`。
 - Steering: `REPOSITORY_LOCAL_CURRENT`；`15` bounded modules；`4` integration surfaces；pilot `OFFLINE_SYNTHETIC_ONLY`；completion boundary `run_pass_is_not_goal_completion; independent completion contract and validator evidence remain required`。
 - Current environmental residuals: Full unittest discovery was deferred to Step 12 after the baseline probe produced no output for several minutes; the 121 targeted core gate completed separately.；T16_SYMPY_COUNTEREXAMPLE is explicitly classified as an environmental SymPy-unavailable residual from Task 121; this inventory does not change claim or proof status.。
 

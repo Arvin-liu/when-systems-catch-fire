@@ -37,6 +37,8 @@ STEERING_PATH = ROOT / "data/operations/steering/current-state-r1.json"
 SEMANTICS_PATH = ROOT / "data/operations/iteration-boundary-semantics-r1.json"
 LIFECYCLE_PATH = ROOT / "data/operations/current-release-lifecycle-r1.json"
 MATERIALITY_PATH = ROOT / "data/governance/human-surface/materiality-manifest.json"
+KNOWLEDGE_MANIFEST_PATH = ROOT / "data/governance/knowledge-experience/manifest.json"
+FIRE_SEEDS_PATH = ROOT / "data/publication/fire-seeds/seed-census.json"
 
 
 def load_json(path: Path) -> Any:
@@ -66,9 +68,46 @@ def materiality_fingerprint(document: dict[str, Any]) -> str:
     return hashlib.sha256(payload).hexdigest()
 
 
+def knowledge_manifest_fingerprint(document: dict[str, Any]) -> str:
+    """Fingerprint Knowledge inputs/counts without generated-output feedback.
+
+    ``generated_outputs`` contains hashes of the human Knowledge projection.
+    Those projections include source fingerprints for Current Human Surfaces;
+    feeding their output digests into Current Facts would create a reciprocal
+    Current Facts -> Snapshot -> Human Surface -> Knowledge -> Current Facts
+    cycle.  Counts, policy, machine/human pairing and canonical source inputs
+    remain authoritative here; generated-output hashes have their own
+    Knowledge determinism gate.
+    """
+    normalized = json.loads(json.dumps(document, ensure_ascii=False))
+    normalized.pop("generated_outputs", None)
+    payload = json.dumps(normalized, ensure_ascii=False, sort_keys=True, separators=(",", ":")).encode("utf-8")
+    return hashlib.sha256(payload).hexdigest()
+
+
+def fire_seed_fingerprint(document: dict[str, Any]) -> str:
+    """Fingerprint Fire Seeds without source-hash feedback from Human Surfaces.
+
+    The Fire Seeds validator owns the 393 per-source hashes.  Current Facts
+    consumes the stable seed/disposition projection and its counts, but must
+    not feed those source hashes back into the Current Snapshot: a legitimate
+    Current Surface refresh would otherwise create the same reciprocal cycle
+    through Knowledge and Fire Seeds.
+    """
+    normalized = json.loads(json.dumps(document, ensure_ascii=False))
+    for row in normalized.get("source_census", []):
+        row.pop("source_sha256", None)
+    payload = json.dumps(normalized, ensure_ascii=False, sort_keys=True, separators=(",", ":")).encode("utf-8")
+    return hashlib.sha256(payload).hexdigest()
+
+
 def source_fingerprint(path: Path) -> str:
     if path.resolve() == MATERIALITY_PATH.resolve():
         return materiality_fingerprint(load_json(path))
+    if path.resolve() == KNOWLEDGE_MANIFEST_PATH.resolve():
+        return knowledge_manifest_fingerprint(load_json(path))
+    if path.resolve() == FIRE_SEEDS_PATH.resolve():
+        return fire_seed_fingerprint(load_json(path))
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 

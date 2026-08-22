@@ -33,8 +33,8 @@ FACTS_PATH = ROOT / "data/architecture/current-facts.json"
 SEMANTICS_PATH = ROOT / "data/operations/iteration-boundary-semantics-r1.json"
 FORMAL_RESULT_PATH = ROOT / "agent-results/IGNITION-20260822-134-result.md"
 MACHINE_RECEIPT_PATH = ROOT / "agent-results/IGNITION-20260822-134-machine-receipt.json"
-REPORT_PATH = ROOT / "data/operations/iterations/134/step13-ordinal-binding-gate-r1.json"
-SCHEMA_PATH = ROOT / "schemas/operations/ordinal-binding-gate-134-r1.schema.json"
+REPORT_PATH = ROOT / "data/operations/iterations/134/step14-ordinal-binding-gate-r1.json"
+SCHEMA_PATH = ROOT / "schemas/operations/ordinal-binding-gate-134-step14-r1.schema.json"
 
 EXPECTED_TASK_ID = "IGNITION-20260822-134"
 EXPECTED_ARCHITECTURE_TASK = "IGNITION-20260821-129"
@@ -419,9 +419,9 @@ def report(*, require_terminal_evidence: bool = False) -> dict[str, Any]:
     pending = pending_roles(records)
     status = "FAIL" if errors else ("PASS" if not pending else "PASS_WITH_PENDING_TERMINAL_EVIDENCE")
     return {
-        "schema_version": "ignition-134-step13-ordinal-binding-gate-r1",
+        "schema_version": "ignition-134-step14-ordinal-binding-gate-r1",
         "task_id": EXPECTED_TASK_ID,
-        "step": "13",
+        "step": "14",
         "result": status,
         "binding_chain": records,
         "pending_terminal_roles": pending,

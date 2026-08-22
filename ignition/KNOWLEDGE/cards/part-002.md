@@ -4,6 +4,86 @@
 
 [返回资产卡总索引](../ASSET-CARDS.md)
 
+<a id="asset-nfc-996c4e8631d40356"></a>
+## D220 完全统一不可能定理
+
+- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-996c4e8631d40356` · [reports/math-foundation/pilot-formal-audit-20260712.md](../../reports/math-foundation/pilot-formal-audit-20260712.md)
+- **为什么产生：** Expose a materially public IMPOSSIBILITY_OR_UNIVERSAL_CLAIM and its correction or evidence boundary.
+- **当前状态：** `HISTORICAL_ONLY`
+- **当前结果：** ### D220 完全统一不可能定理
+- **双成熟度：** 数学 `M0`；外部证据 `E1`
+- **假设与表述上限：** Historical source wording only; it is not a current repository endorsement.
+- **未建立：** Do not present registry presence, internal tests, AI agreement or formal appearance as proof, external validation, novelty, peer review or replication.
+- **依赖：** `D220`
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** `D220`
+- **来源与证据：** `reports/math-foundation/pilot-formal-audit-20260712.md`
+- **演化历史：** Lineage: PHYSICS_UNIFICATION_NOGO；Lineage status: HISTORICAL_PRESERVED；Reviewer state: SOURCE_TEXT_RULE_ADJUDICATED
+- **最近变化：** Task 100 disposition: HISTORICAL_ONLY
+- **下一步：** State typed definitions, assumptions and quantifiers; provide a checkable proof or delimit the statement as conjectural.；Search for countermodels inside and outside the declared model class.
+- **主题：** `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `NFC-996c4e8631d40356`, `D220 完全统一不可能定理`, `### D220 完全统一不可能定理`
+
+<a id="asset-nfc-a1a28b3a56bcb64b"></a>
+## 函数资产中 `4,804` 项仍 quarantine/pending；非函数断言中 `4,615` 项仍 quarantine/pending；数字来自 current-facts projection，不能解释为内容验证完成。
+
+- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-a1a28b3a56bcb64b` · [docs/project-current-state.md](../../docs/project-current-state.md)
+- **为什么产生：** Expose a materially public CROSS_DOMAIN_CORRESPONDENCE and its correction or evidence boundary.
+- **当前状态：** `RETAINED_AS_STRUCTURAL_METAPHOR`
+- **当前结果：** - 函数资产中 `4,804` 项仍 quarantine/pending；非函数断言中 `4,615` 项仍 quarantine/pending；数字来自 current-facts projection，不能解释为内容验证完成。
+- **双成熟度：** 数学 `M0`；外部证据 `E0`
+- **假设与表述上限：** Analogy or structural metaphor only; no homomorphism, isomorphism or causal identity is established.
+- **未建立：** Do not present registry presence, internal tests, AI agreement or formal appearance as proof, external validation, novelty, peer review or replication.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `docs/project-current-state.md`
+- **演化历史：** Lineage: NO_NAMED_LINEAGE；Lineage status: CURRENT_SCOPED_RECORD；Reviewer state: SOURCE_TEXT_RULE_ADJUDICATED
+- **最近变化：** Task 100 disposition: RETAINED_AS_STRUCTURAL_METAPHOR
+- **下一步：** No open obligation was recorded.
+- **主题：** `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `NFC-a1a28b3a56bcb64b`, `函数资产中 `4,804` 项仍 quarantine/pending；非函数断言中 `4,615` 项仍 quarantine/pending；数字来自 current-facts projection，不能解释为内容验证完成。`, `- 函数资产中 `4,804` 项仍 quarantine/pending；非函数断言中 `4,615` 项仍 quarantine/pending；数字来自 current-facts projection，不能解释为内容验证完成。`
+
+<a id="asset-nfc-a50fdd39601af897"></a>
+## 身份 epoch、当前任务、方法、地图、状态和 lineage 由 generated Current Snapshot 统一投影。
+
+- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-a50fdd39601af897` · [AI-HANDOFF.md](../../AI-HANDOFF.md)
+- **为什么产生：** Expose a materially public CROSS_DOMAIN_CORRESPONDENCE and its correction or evidence boundary.
+- **当前状态：** `RETAINED_AS_STRUCTURAL_METAPHOR`
+- **当前结果：** 身份 epoch、当前任务、方法、地图、状态和 lineage 由 generated Current Snapshot 统一投影。
+- **双成熟度：** 数学 `M0`；外部证据 `E0`
+- **假设与表述上限：** Analogy or structural metaphor only; no homomorphism, isomorphism or causal identity is established.
+- **未建立：** Do not present registry presence, internal tests, AI agreement or formal appearance as proof, external validation, novelty, peer review or replication.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `AI-HANDOFF.md`
+- **演化历史：** Lineage: NO_NAMED_LINEAGE；Lineage status: CURRENT_SCOPED_RECORD；Reviewer state: SOURCE_TEXT_RULE_ADJUDICATED
+- **最近变化：** Task 100 disposition: RETAINED_AS_STRUCTURAL_METAPHOR
+- **下一步：** No open obligation was recorded.
+- **主题：** `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `NFC-a50fdd39601af897`, `身份 epoch、当前任务、方法、地图、状态和 lineage 由 generated Current Snapshot 统一投影。`, `身份 epoch、当前任务、方法、地图、状态和 lineage 由 generated Current Snapshot 统一投影。`
+
+<a id="asset-nfc-a5870d6c2e430817"></a>
+## 机器对应物位于 `data/governance/human-results/` 与 `data/governance/self-correction/`。CI 同时检查两层；缺任一层即失败。
+
+- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-a5870d6c2e430817` · [RESULTS/README.md](../../RESULTS/README.md)
+- **为什么产生：** Expose a materially public CROSS_DOMAIN_CORRESPONDENCE and its correction or evidence boundary.
+- **当前状态：** `RETAINED_AS_STRUCTURAL_METAPHOR`
+- **当前结果：** 机器对应物位于 `data/governance/human-results/` 与 `data/governance/self-correction/`。CI 同时检查两层；缺任一层即失败。
+- **双成熟度：** 数学 `M0`；外部证据 `E0`
+- **假设与表述上限：** Analogy or structural metaphor only; no homomorphism, isomorphism or causal identity is established.
+- **未建立：** Do not present registry presence, internal tests, AI agreement or formal appearance as proof, external validation, novelty, peer review or replication.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `RESULTS/README.md`
+- **演化历史：** Lineage: NO_NAMED_LINEAGE；Lineage status: CURRENT_SCOPED_RECORD；Reviewer state: SOURCE_TEXT_RULE_ADJUDICATED
+- **最近变化：** Task 100 disposition: RETAINED_AS_STRUCTURAL_METAPHOR
+- **下一步：** No open obligation was recorded.
+- **主题：** `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `NFC-a5870d6c2e430817`, `机器对应物位于 `data/governance/human-results/` 与 `data/governance/self-correction/`。CI 同时检查两层；缺任一层即失败。`, `机器对应物位于 `data/governance/human-results/` 与 `data/governance/self-correction/`。CI 同时检查两层；缺任一层即失败。`
+
 <a id="asset-nfc-a6b80fca608c8c8f"></a>
 ## This iteration does not deep-review all 2,033 discovered assets, prove the census exhaustive outside tracked textual Git
 
@@ -24,25 +104,25 @@
 - **主题：** `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `NFC-a6b80fca608c8c8f`, `This iteration does not deep-review all 2,033 discovered assets, prove the census exhaustive outside tracked textual Git`, `This iteration does not deep-review all 2,033 discovered assets, prove the census exhaustive outside tracked textual Git sources, validate a physical theory, solve the physics clouds, unify the forces, or prove unification possible or impossible.`
 
-<a id="asset-nfc-b184be56513fdaec"></a>
-## 外部真值”的边界。当前身份 contract 与确定性事实投影见
+<a id="asset-nfc-a97aee2717fb336a"></a>
+## Current iteration method version is emitted by the generated Current Snapshot. Read data/operations/stage-snapshots.json
 
-- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-b184be56513fdaec` · [AI-START-HERE.md](../../AI-START-HERE.md)
-- **为什么产生：** Expose a materially public CROSS_DOMAIN_CORRESPONDENCE and its correction or evidence boundary.
-- **当前状态：** `RETAINED_AS_STRUCTURAL_METAPHOR`
-- **当前结果：** 外部真值”的边界。当前身份 contract 与确定性事实投影见
+- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-a97aee2717fb336a` · [llms.txt](../../llms.txt)
+- **为什么产生：** Expose a materially public IMPOSSIBILITY_OR_UNIVERSAL_CLAIM and its correction or evidence boundary.
+- **当前状态：** `QUARANTINED_AMBIGUOUS`
+- **当前结果：** Current iteration method version is emitted by the generated Current Snapshot. Read data/operations/stage-snapshots.json and docs/operations/stage-snapshot-publication.md. Snapshot or homepage visibility never implies Accepted, Current, Activated, capability availability, or candidate payload merge.
 - **双成熟度：** 数学 `M0`；外部证据 `E0`
-- **假设与表述上限：** Analogy or structural metaphor only; no homomorphism, isomorphism or causal identity is established.
+- **假设与表述上限：** Unresolved historical or current claim candidate; it cannot appear as current knowledge.
 - **未建立：** Do not present registry presence, internal tests, AI agreement or formal appearance as proof, external validation, novelty, peer review or replication.
 - **依赖：** 无已登记直接依赖
 - **被引用/反向依赖：** 无已登记反向依赖
 - **相关文章/资产：** 无已登记关联
-- **来源与证据：** `AI-START-HERE.md`
-- **演化历史：** Lineage: NO_NAMED_LINEAGE；Lineage status: CURRENT_SCOPED_RECORD；Reviewer state: SOURCE_TEXT_RULE_ADJUDICATED
-- **最近变化：** Task 100 disposition: RETAINED_AS_STRUCTURAL_METAPHOR
-- **下一步：** No open obligation was recorded.
-- **主题：** `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `NFC-b184be56513fdaec`, `外部真值”的边界。当前身份 contract 与确定性事实投影见`, `外部真值”的边界。当前身份 contract 与确定性事实投影见`
+- **来源与证据：** `llms.txt`
+- **演化历史：** Lineage: NO_NAMED_LINEAGE；Lineage status: CURRENT_SCOPED_RECORD；Reviewer state: EXPLICITLY_QUARANTINED
+- **最近变化：** Task 100 disposition: QUARANTINED_AMBIGUOUS
+- **下一步：** State typed definitions, assumptions and quantifiers; provide a checkable proof or delimit the statement as conjectural.；Search for countermodels inside and outside the declared model class.
+- **主题：** `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `NFC-a97aee2717fb336a`, `Current iteration method version is emitted by the generated Current Snapshot. Read data/operations/stage-snapshots.json`, `Current iteration method version is emitted by the generated Current Snapshot. Read data/operations/stage-snapshots.json and docs/operations/stage-snapshot-publication.md. Snapshot or homepage visibility never implies Accepted, Current, Activated, capability availability, or candidate payload merge.`
 
 <a id="asset-nfc-b3044ed3734222fb"></a>
 ## “物理学已经证明大一统不可能”现已正式撤回。它不能仅改名为“结构性边界推论”“框架判定”或“元层机制”后保留同一结论。
@@ -63,6 +143,26 @@
 - **下一步：** State typed definitions, assumptions and quantifiers; provide a checkable proof or delimit the statement as conjectural.；Search for countermodels inside and outside the declared model class.
 - **主题：** `PHYSICS`, `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`
 - **可搜索名称：** `NFC-b3044ed3734222fb`, `“物理学已经证明大一统不可能”现已正式撤回。它不能仅改名为“结构性边界推论”“框架判定”或“元层机制”后保留同一结论。`, `“物理学已经证明大一统不可能”现已正式撤回。它不能仅改名为“结构性边界推论”“框架判定”或“元层机制”后保留同一结论。`
+
+<a id="asset-nfc-b478ca63674e2e09"></a>
+## 当前地图、身份、任务和状态的易变值由下方 Current Snapshot 统一投影；本段只解释稳定的
+
+- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-b478ca63674e2e09` · [docs/project-current-state.md](../../docs/project-current-state.md)
+- **为什么产生：** Expose a materially public CROSS_DOMAIN_CORRESPONDENCE and its correction or evidence boundary.
+- **当前状态：** `RETAINED_AS_STRUCTURAL_METAPHOR`
+- **当前结果：** 当前地图、身份、任务和状态的易变值由下方 Current Snapshot 统一投影；本段只解释稳定的
+- **双成熟度：** 数学 `M0`；外部证据 `E0`
+- **假设与表述上限：** Analogy or structural metaphor only; no homomorphism, isomorphism or causal identity is established.
+- **未建立：** Do not present registry presence, internal tests, AI agreement or formal appearance as proof, external validation, novelty, peer review or replication.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `docs/project-current-state.md`
+- **演化历史：** Lineage: NO_NAMED_LINEAGE；Lineage status: CURRENT_SCOPED_RECORD；Reviewer state: SOURCE_TEXT_RULE_ADJUDICATED
+- **最近变化：** Task 100 disposition: RETAINED_AS_STRUCTURAL_METAPHOR
+- **下一步：** No open obligation was recorded.
+- **主题：** `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `NFC-b478ca63674e2e09`, `当前地图、身份、任务和状态的易变值由下方 Current Snapshot 统一投影；本段只解释稳定的`, `当前地图、身份、任务和状态的易变值由下方 Current Snapshot 统一投影；本段只解释稳定的`
 
 <a id="asset-nfc-b8317ad5cc6c3230"></a>
 ## 使用 0.5.0 时，先标记 `external_input` 与 `ignition_increment`，保存版本、生成路径、claim ceiling、不可映射残余和原始来源回链；涉及语言转换时还须保存 source form、候选意
@@ -184,26 +284,6 @@
 - **主题：** `SYSTEMS`, `WRITING_PUBLICATION`
 - **可搜索名称：** `NFC-c55e34db613b6c41`, `K13_ASSERTION_NON_ESCALATION: project scale, engineering maturity, writing/summaries/results books/system maps, repeated`, `K13_ASSERTION_NON_ESCALATION: project scale, engineering maturity, writing/summaries/results books/system maps, repeated citation, cross-domain correspondence, model elegance and Agent consensus cannot auto-upgrade assertion status; M/E remains orthogonal.`
 
-<a id="asset-nfc-d0de95187781fcb1"></a>
-## JSON 投影为准。
-
-- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-d0de95187781fcb1` · [docs/project-current-state.md](../../docs/project-current-state.md)
-- **为什么产生：** Expose a materially public CROSS_DOMAIN_CORRESPONDENCE and its correction or evidence boundary.
-- **当前状态：** `RETAINED_AS_STRUCTURAL_METAPHOR`
-- **当前结果：** JSON 投影为准。
-- **双成熟度：** 数学 `M0`；外部证据 `E0`
-- **假设与表述上限：** Analogy or structural metaphor only; no homomorphism, isomorphism or causal identity is established.
-- **未建立：** Do not present registry presence, internal tests, AI agreement or formal appearance as proof, external validation, novelty, peer review or replication.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `docs/project-current-state.md`
-- **演化历史：** Lineage: NO_NAMED_LINEAGE；Lineage status: CURRENT_SCOPED_RECORD；Reviewer state: SOURCE_TEXT_RULE_ADJUDICATED
-- **最近变化：** Task 100 disposition: RETAINED_AS_STRUCTURAL_METAPHOR
-- **下一步：** No open obligation was recorded.
-- **主题：** `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `NFC-d0de95187781fcb1`, `JSON 投影为准。`, `JSON 投影为准。`
-
 <a id="asset-nfc-d12a007686070f3d"></a>
 ## Claim ceiling: this task may establish repository governance, inventory and corrections to the current Ignition model. I
 
@@ -264,6 +344,26 @@
 - **主题：** `PHYSICS`, `ARCHITECTURE_GOVERNANCE`
 - **可搜索名称：** `NFC-d30b79cb6b607ade`, `撤回“已经证明物理大一统不可能”，禁止通过“结构性定理”“框架判定”或内部定义回弹。`, `- 撤回“已经证明物理大一统不可能”，禁止通过“结构性定理”“框架判定”或内部定义回弹。`
 
+<a id="asset-nfc-d584235380a9199d"></a>
+## Q32I 的方法 `1.3.0` 与系统图 `0.3.0` 已独立接受、由 PR #62 普通合并并完成生产收口；其后迭代方法版本与 Current 标签由 generated Current Snapshot 统一投影。
+
+- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-d584235380a9199d` · [AI-START-HERE.md](../../AI-START-HERE.md)
+- **为什么产生：** Expose a materially public CROSS_DOMAIN_CORRESPONDENCE and its correction or evidence boundary.
+- **当前状态：** `RETAINED_AS_STRUCTURAL_METAPHOR`
+- **当前结果：** - Q32I 的方法 `1.3.0` 与系统图 `0.3.0` 已独立接受、由 PR #62 普通合并并完成生产收口；其后迭代方法版本与 Current 标签由 generated Current Snapshot 统一投影。
+- **双成熟度：** 数学 `M0`；外部证据 `E0`
+- **假设与表述上限：** Analogy or structural metaphor only; no homomorphism, isomorphism or causal identity is established.
+- **未建立：** Do not present registry presence, internal tests, AI agreement or formal appearance as proof, external validation, novelty, peer review or replication.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `AI-START-HERE.md`
+- **演化历史：** Lineage: NO_NAMED_LINEAGE；Lineage status: CURRENT_SCOPED_RECORD；Reviewer state: SOURCE_TEXT_RULE_ADJUDICATED
+- **最近变化：** Task 100 disposition: RETAINED_AS_STRUCTURAL_METAPHOR
+- **下一步：** No open obligation was recorded.
+- **主题：** `SYSTEMS`, `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `NFC-d584235380a9199d`, `Q32I 的方法 `1.3.0` 与系统图 `0.3.0` 已独立接受、由 PR #62 普通合并并完成生产收口；其后迭代方法版本与 Current 标签由 generated Current Snapshot 统一投影。`, `- Q32I 的方法 `1.3.0` 与系统图 `0.3.0` 已独立接受、由 PR #62 普通合并并完成生产收口；其后迭代方法版本与 Current 标签由 generated Current Snapshot 统一投影。`
+
 <a id="asset-nfc-d64522bd6b0c9ee7"></a>
 ## The retired function and case tables are preserved only through the migration manifest, Git history and canonical regist
 
@@ -284,13 +384,33 @@
 - **主题：** `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`
 - **可搜索名称：** `NFC-d64522bd6b0c9ee7`, `The retired function and case tables are preserved only through the migration manifest, Git history and canonical regist`, `The retired function and case tables are preserved only through the migration manifest, Git history and canonical registries. Never use an archived header as current count authority; use the function-assets and nonfunction-assets human entries for reading.`
 
-<a id="asset-nfc-da4a5d8cd9aac968"></a>
-## Iteration method 1.3.0 and system maps 0.6.0, 0.5.0 are Historical; method 1.2.0 and maps 0.1.0, 0.2.0, 0.3.0, 0.4.0 are
+<a id="asset-nfc-dd395b512a59af63"></a>
+## 其后迭代方法版本与 Current 标签由 generated Current Snapshot 统一投影（连续阶段快照发布，见 docs/operations/stage-snapshot-publication.md）。
 
-- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-da4a5d8cd9aac968` · [llms.txt](../../llms.txt)
+- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-dd395b512a59af63` · [AI-HANDOFF.md](../../AI-HANDOFF.md)
+- **为什么产生：** Expose a materially public CROSS_DOMAIN_CORRESPONDENCE and its correction or evidence boundary.
+- **当前状态：** `RETAINED_AS_STRUCTURAL_METAPHOR`
+- **当前结果：** 其后迭代方法版本与 Current 标签由 generated Current Snapshot 统一投影（连续阶段快照发布，见 docs/operations/stage-snapshot-publication.md）。
+- **双成熟度：** 数学 `M0`；外部证据 `E0`
+- **假设与表述上限：** Analogy or structural metaphor only; no homomorphism, isomorphism or causal identity is established.
+- **未建立：** Do not present registry presence, internal tests, AI agreement or formal appearance as proof, external validation, novelty, peer review or replication.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `AI-HANDOFF.md`
+- **演化历史：** Lineage: NO_NAMED_LINEAGE；Lineage status: CURRENT_SCOPED_RECORD；Reviewer state: SOURCE_TEXT_RULE_ADJUDICATED
+- **最近变化：** Task 100 disposition: RETAINED_AS_STRUCTURAL_METAPHOR
+- **下一步：** No open obligation was recorded.
+- **主题：** `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `NFC-dd395b512a59af63`, `其后迭代方法版本与 Current 标签由 generated Current Snapshot 统一投影（连续阶段快照发布，见 docs/operations/stage-snapshot-publication.md）。`, `其后迭代方法版本与 Current 标签由 generated Current Snapshot 统一投影（连续阶段快照发布，见 docs/operations/stage-snapshot-publication.md）。`
+
+<a id="asset-nfc-de2dafc4a06528aa"></a>
+## Iteration method 1.3.0 and system maps 0.10.0, 0.6.0, 0.5.0 are Historical; method 1.2.0 and maps 0.1.0, 0.2.0, 0.3.0, 0
+
+- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-de2dafc4a06528aa` · [llms.txt](../../llms.txt)
 - **为什么产生：** Expose a materially public IMPOSSIBILITY_OR_UNIVERSAL_CLAIM and its correction or evidence boundary.
 - **当前状态：** `ACCEPTED_AS_DEFINITION`
-- **当前结果：** Iteration method 1.3.0 and system maps 0.6.0, 0.5.0 are Historical; method 1.2.0 and maps 0.1.0, 0.2.0, 0.3.0, 0.4.0 are earlier Historical, not Current. Treat implementation completion, repository synchronization, external synchronization and project completion as distinct states; local validation never proves undeclared live external truth.
+- **当前结果：** Iteration method 1.3.0 and system maps 0.10.0, 0.6.0, 0.5.0 are Historical; method 1.2.0 and maps 0.1.0, 0.2.0, 0.3.0, 0.4.0 are earlier Historical, not Current. Treat implementation completion, repository synchronization, external synchronization and project completion as distinct states; local validation never proves undeclared live external truth.
 - **双成熟度：** 数学 `M0`；外部证据 `E0`
 - **假设与表述上限：** May be stated only as a repository definition, policy, status record or explicitly scoped convention; it is not external truth.
 - **未建立：** Do not present registry presence, internal tests, AI agreement or formal appearance as proof, external validation, novelty, peer review or replication.
@@ -302,27 +422,47 @@
 - **最近变化：** Task 100 disposition: ACCEPTED_AS_DEFINITION
 - **下一步：** State typed definitions, assumptions and quantifiers; provide a checkable proof or delimit the statement as conjectural.；Search for countermodels inside and outside the declared model class.
 - **主题：** `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `NFC-da4a5d8cd9aac968`, `Iteration method 1.3.0 and system maps 0.6.0, 0.5.0 are Historical; method 1.2.0 and maps 0.1.0, 0.2.0, 0.3.0, 0.4.0 are`, `Iteration method 1.3.0 and system maps 0.6.0, 0.5.0 are Historical; method 1.2.0 and maps 0.1.0, 0.2.0, 0.3.0, 0.4.0 are earlier Historical, not Current. Treat implementation completion, repository synchronization, external synchronization and project completion as distinct states; local validation never proves undeclared live external truth.`
+- **可搜索名称：** `NFC-de2dafc4a06528aa`, `Iteration method 1.3.0 and system maps 0.10.0, 0.6.0, 0.5.0 are Historical; method 1.2.0 and maps 0.1.0, 0.2.0, 0.3.0, 0`, `Iteration method 1.3.0 and system maps 0.10.0, 0.6.0, 0.5.0 are Historical; method 1.2.0 and maps 0.1.0, 0.2.0, 0.3.0, 0.4.0 are earlier Historical, not Current. Treat implementation completion, repository synchronization, external synchronization and project completion as distinct states; local validation never proves undeclared live external truth.`
 
-<a id="asset-nfc-dd9790dfe6b0d075"></a>
-## `EPISTEMICALLY_ACCEPTED=0` 保持不变。当前身份 contract/facts 见
+<a id="asset-nfc-de320ba9d14281ee"></a>
+## 方法 `1.3.0` 与系统图 `0.10.0`、`0.7.0`、`0.6.0`、`0.5.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0`、`0.2.0`、`0.3.0`、`0.4.0` 为更早 Histor
 
-- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-dd9790dfe6b0d075` · [AI-HANDOFF.md](../../AI-HANDOFF.md)
+- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-de320ba9d14281ee` · [AI-HANDOFF.md](../../AI-HANDOFF.md)
 - **为什么产生：** Expose a materially public IMPOSSIBILITY_OR_UNIVERSAL_CLAIM and its correction or evidence boundary.
-- **当前状态：** `QUARANTINED_AMBIGUOUS`
-- **当前结果：** `EPISTEMICALLY_ACCEPTED=0` 保持不变。当前身份 contract/facts 见
+- **当前状态：** `ACCEPTED_AS_DEFINITION`
+- **当前结果：** 方法 `1.3.0` 与系统图 `0.10.0`、`0.7.0`、`0.6.0`、`0.5.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0`、`0.2.0`、`0.3.0`、`0.4.0` 为更早 Historical。当前方法要求从构件 registry、类型化 topology 与 `data/operations/synchronization-surfaces.json` 计算全项目传播闭包。README、`HUMAN-READING.md`、`RESULTS/`、项目现状、人类 AI 指南、AI 冷启动、Agent 交接、机器入口和版本历史都是必须评估的项目表面。实现完成不能替代仓库同步完成；本地验证也不能声称任何未登记的实时外部状态已验证。
 - **双成熟度：** 数学 `M0`；外部证据 `E0`
-- **假设与表述上限：** Unresolved historical or current claim candidate; it cannot appear as current knowledge.
+- **假设与表述上限：** May be stated only as a repository definition, policy, status record or explicitly scoped convention; it is not external truth.
 - **未建立：** Do not present registry presence, internal tests, AI agreement or formal appearance as proof, external validation, novelty, peer review or replication.
 - **依赖：** 无已登记直接依赖
 - **被引用/反向依赖：** 无已登记反向依赖
 - **相关文章/资产：** 无已登记关联
 - **来源与证据：** `AI-HANDOFF.md`
-- **演化历史：** Lineage: NO_NAMED_LINEAGE；Lineage status: CURRENT_SCOPED_RECORD；Reviewer state: EXPLICITLY_QUARANTINED
-- **最近变化：** Task 100 disposition: QUARANTINED_AMBIGUOUS
+- **演化历史：** Lineage: NO_NAMED_LINEAGE；Lineage status: CURRENT_SCOPED_RECORD；Reviewer state: SOURCE_TEXT_RULE_ADJUDICATED
+- **最近变化：** Task 100 disposition: ACCEPTED_AS_DEFINITION
 - **下一步：** State typed definitions, assumptions and quantifiers; provide a checkable proof or delimit the statement as conjectural.；Search for countermodels inside and outside the declared model class.
-- **主题：** `ARCHITECTURE_GOVERNANCE`
-- **可搜索名称：** `NFC-dd9790dfe6b0d075`, ``EPISTEMICALLY_ACCEPTED=0` 保持不变。当前身份 contract/facts 见`, ``EPISTEMICALLY_ACCEPTED=0` 保持不变。当前身份 contract/facts 见`
+- **主题：** `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`
+- **可搜索名称：** `NFC-de320ba9d14281ee`, `方法 `1.3.0` 与系统图 `0.10.0`、`0.7.0`、`0.6.0`、`0.5.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0`、`0.2.0`、`0.3.0`、`0.4.0` 为更早 Histor`, `方法 `1.3.0` 与系统图 `0.10.0`、`0.7.0`、`0.6.0`、`0.5.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0`、`0.2.0`、`0.3.0`、`0.4.0` 为更早 Historical。当前方法要求从构件 registry、类型化 topology 与 `data/operations/synchronization-surfaces.json` 计算全项目传播闭包。README、`HUMAN-READING.md`、`RESULTS/`、项目现状、人类 AI 指南、AI 冷启动、Agent 交接、机器入口和版本历史都是必须评估的项目表面。实现完成不能替代仓库同步完成；本地验证也不能声称任何未登记的实时外部状态已验证。`
+
+<a id="asset-nfc-e01c28ab6e18083d"></a>
+## CURRENT_SNAPSHOT claim_ceiling="Deterministic repository-local Current projection only; no Owner authority, external tru
+
+- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-e01c28ab6e18083d` · [llms.txt](../../llms.txt)
+- **为什么产生：** Expose a materially public CROSS_DOMAIN_CORRESPONDENCE and its correction or evidence boundary.
+- **当前状态：** `ACCEPTED_AS_DEFINITION`
+- **当前结果：** CURRENT_SNAPSHOT claim_ceiling="Deterministic repository-local Current projection only; no Owner authority, external truth, production readiness or epistemic upgrade."
+- **双成熟度：** 数学 `M0`；外部证据 `E0`
+- **假设与表述上限：** May be stated only as a repository definition, policy, status record or explicitly scoped convention; it is not external truth.
+- **未建立：** Do not present registry presence, internal tests, AI agreement or formal appearance as proof, external validation, novelty, peer review or replication.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `llms.txt`
+- **演化历史：** Lineage: NO_NAMED_LINEAGE；Lineage status: CURRENT_SCOPED_RECORD；Reviewer state: SOURCE_TEXT_RULE_ADJUDICATED
+- **最近变化：** Task 100 disposition: ACCEPTED_AS_DEFINITION
+- **下一步：** No open obligation was recorded.
+- **主题：** `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `NFC-e01c28ab6e18083d`, `CURRENT_SNAPSHOT claim_ceiling="Deterministic repository-local Current projection only; no Owner authority, external tru`, `CURRENT_SNAPSHOT claim_ceiling="Deterministic repository-local Current projection only; no Owner authority, external truth, production readiness or epistemic upgrade."`
 
 <a id="asset-nfc-ea55d13b7ba7aeff"></a>
 ## [任务 106 合并后真相传播与当前真相调和](../../ITERATION.md)（规范化 ledger / 9 维 impact 引擎 / current-truth 投影 / fail-closed 验证器）。
@@ -343,6 +483,66 @@
 - **下一步：** No open obligation was recorded.
 - **主题：** `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `NFC-ea55d13b7ba7aeff`, `[任务 106 合并后真相传播与当前真相调和](../../ITERATION.md)（规范化 ledger / 9 维 impact 引擎 / current-truth 投影 / fail-closed 验证器）。`, `- [任务 106 合并后真相传播与当前真相调和](../../ITERATION.md)（规范化 ledger / 9 维 impact 引擎 / current-truth 投影 / fail-closed 验证器）。`
+
+<a id="asset-nfc-ebfd48dc0e2de71c"></a>
+## 当前工程状态与 epistemic ceiling 由 generated Current Snapshot 投影；它们描述仓库接口，
+
+- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-ebfd48dc0e2de71c` · [docs/project-current-state.md](../../docs/project-current-state.md)
+- **为什么产生：** Expose a materially public CROSS_DOMAIN_CORRESPONDENCE and its correction or evidence boundary.
+- **当前状态：** `RETAINED_AS_STRUCTURAL_METAPHOR`
+- **当前结果：** 当前工程状态与 epistemic ceiling 由 generated Current Snapshot 投影；它们描述仓库接口，
+- **双成熟度：** 数学 `M0`；外部证据 `E0`
+- **假设与表述上限：** Analogy or structural metaphor only; no homomorphism, isomorphism or causal identity is established.
+- **未建立：** Do not present registry presence, internal tests, AI agreement or formal appearance as proof, external validation, novelty, peer review or replication.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `docs/project-current-state.md`
+- **演化历史：** Lineage: NO_NAMED_LINEAGE；Lineage status: CURRENT_SCOPED_RECORD；Reviewer state: SOURCE_TEXT_RULE_ADJUDICATED
+- **最近变化：** Task 100 disposition: RETAINED_AS_STRUCTURAL_METAPHOR
+- **下一步：** No open obligation was recorded.
+- **主题：** `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `NFC-ebfd48dc0e2de71c`, `当前工程状态与 epistemic ceiling 由 generated Current Snapshot 投影；它们描述仓库接口，`, `当前工程状态与 epistemic ceiling 由 generated Current Snapshot 投影；它们描述仓库接口，`
+
+<a id="asset-nfc-ecf6b1c991ca0e1c"></a>
+## 及其 JSON 投影为准，不在本段复制第二份值。
+
+- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-ecf6b1c991ca0e1c` · [docs/project-current-state.md](../../docs/project-current-state.md)
+- **为什么产生：** Expose a materially public CROSS_DOMAIN_CORRESPONDENCE and its correction or evidence boundary.
+- **当前状态：** `RETAINED_AS_STRUCTURAL_METAPHOR`
+- **当前结果：** 及其 JSON 投影为准，不在本段复制第二份值。
+- **双成熟度：** 数学 `M0`；外部证据 `E0`
+- **假设与表述上限：** Analogy or structural metaphor only; no homomorphism, isomorphism or causal identity is established.
+- **未建立：** Do not present registry presence, internal tests, AI agreement or formal appearance as proof, external validation, novelty, peer review or replication.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `docs/project-current-state.md`
+- **演化历史：** Lineage: NO_NAMED_LINEAGE；Lineage status: CURRENT_SCOPED_RECORD；Reviewer state: SOURCE_TEXT_RULE_ADJUDICATED
+- **最近变化：** Task 100 disposition: RETAINED_AS_STRUCTURAL_METAPHOR
+- **下一步：** No open obligation was recorded.
+- **主题：** `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `NFC-ecf6b1c991ca0e1c`, `及其 JSON 投影为准，不在本段复制第二份值。`, `及其 JSON 投影为准，不在本段复制第二份值。`
+
+<a id="asset-nfc-ef9727c199e45632"></a>
+## 仓库状态上限、外部真值边界和“仓库回执不等于外部真值”的区分。当前身份 contract 与确定性事实投影见
+
+- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-ef9727c199e45632` · [AI-START-HERE.md](../../AI-START-HERE.md)
+- **为什么产生：** Expose a materially public CROSS_DOMAIN_CORRESPONDENCE and its correction or evidence boundary.
+- **当前状态：** `ACCEPTED_AS_DEFINITION`
+- **当前结果：** 仓库状态上限、外部真值边界和“仓库回执不等于外部真值”的区分。当前身份 contract 与确定性事实投影见
+- **双成熟度：** 数学 `M0`；外部证据 `E0`
+- **假设与表述上限：** May be stated only as a repository definition, policy, status record or explicitly scoped convention; it is not external truth.
+- **未建立：** Do not present registry presence, internal tests, AI agreement or formal appearance as proof, external validation, novelty, peer review or replication.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `AI-START-HERE.md`
+- **演化历史：** Lineage: NO_NAMED_LINEAGE；Lineage status: CURRENT_SCOPED_RECORD；Reviewer state: SOURCE_TEXT_RULE_ADJUDICATED
+- **最近变化：** Task 100 disposition: ACCEPTED_AS_DEFINITION
+- **下一步：** No open obligation was recorded.
+- **主题：** `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `NFC-ef9727c199e45632`, `仓库状态上限、外部真值边界和“仓库回执不等于外部真值”的区分。当前身份 contract 与确定性事实投影见`, `仓库状态上限、外部真值边界和“仓库回执不等于外部真值”的区分。当前身份 contract 与确定性事实投影见`
 
 <a id="asset-nfc-efd2508248c8410a"></a>
 ## 控制平面把事件、权限收窄、共享资源、并发 ready-set、健康租约、队列、外部回执和操作记忆分别持久化；Driver Console 只投影下一步与开放义务，不成为第二真相源。
@@ -803,203 +1003,3 @@
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `MATHEMATICS`, `SYSTEMS`, `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `NF-002 量化指标替代真实价值回填审计`, `nf-002-quantified-metric-backfill-audit-20260708`
-
-<a id="asset-hr-0ef2189bb50603b7"></a>
-## 121Q22 Probabilistic System Dynamics Validation
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-0EF2189BB50603B7` · [reports/architecture/121Q22-probabilistic-system-dynamics-validation.md](../../reports/architecture/121Q22-probabilistic-system-dynamics-validation.md)
-- **为什么产生：** 此来源记录了什么：121Q22 Probabilistic System Dynamics Validation？
-- **当前状态：** `CANDIDATE_OR_PENDING_SOURCE`
-- **当前结果：** Status: 121Q22READYASPROBABILISTICSYSTEMDYNAMICSCANDIDATE
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `reports/architecture/121Q22-probabilistic-system-dynamics-validation.md`, `121Q22-PROBABILISTIC-SYSTEM-DYNAMICS-VALIDATION`
-- **演化历史：** 2026-07-16: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `121Q22 Probabilistic System Dynamics Validation`, `121Q22-probabilistic-system-dynamics-validation`
-
-<a id="asset-hr-0ef7472961a343e5"></a>
-## Mechanism Adjudication Plane
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-0EF7472961A343E5` · [docs/architecture/mechanism-adjudication-plane.md](../../docs/architecture/mechanism-adjudication-plane.md)
-- **为什么产生：** 此来源记录了什么：Mechanism Adjudication Plane？
-- **当前状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
-- **当前结果：** Status: 121Q12OPERATIONOVERLAY
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `docs/architecture/mechanism-adjudication-plane.md`, `REPOSITORY_HISTORY_SOURCE`
-- **演化历史：** 2026-07-15: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `Mechanism Adjudication Plane`, `mechanism-adjudication-plane`
-
-<a id="asset-hr-0fe03d4a4ca70a91"></a>
-## 赛课机制第一批回填索引可见性验证
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-0FE03D4A4CA70A91` · [outputs/audit/teacher-competition-index-visibility-check-20260708.md](../../outputs/audit/teacher-competition-index-visibility-check-20260708.md)
-- **为什么产生：** 此来源记录了什么：赛课机制第一批回填索引可见性验证？
-- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **当前结果：** D595 条目文件 + INDEX 均命中，机制表达式可被检索 ✓
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** `D595`, `D596`, `D244`
-- **来源与证据：** `outputs/audit/teacher-competition-index-visibility-check-20260708.md`, `REPOSITORY_HISTORY_SOURCE`
-- **演化历史：** 2026-07-08: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `SYSTEMS`, `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `赛课机制第一批回填索引可见性验证`, `teacher-competition-index-visibility-check-20260708`
-
-<a id="asset-hr-104843eaeaebb434"></a>
-## 新增案例候选 · P1 接入烟雾测试
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-104843EAEAEBB434` · [outputs/collisions/20260708-smoke-test/new-cases.md](../../outputs/collisions/20260708-smoke-test/new-cases.md)
-- **为什么产生：** 此来源记录了什么：新增案例候选 · P1 接入烟雾测试？
-- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **当前结果：** 原文件保存该项结果的完整问题、过程与边界。
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `outputs/collisions/20260708-smoke-test/new-cases.md`, `202`
-- **演化历史：** 2026-07-08: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `新增案例候选 · P1 接入烟雾测试`, `new-cases`
-
-<a id="asset-hr-1255e91e43370b8e"></a>
-## 085: Backlog Prioritization
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-1255E91E43370B8E` · [reports/foundation-architecture/085-backlog-prioritization.md](../../reports/foundation-architecture/085-backlog-prioritization.md)
-- **为什么产生：** 此来源记录了什么：085: Backlog Prioritization？
-- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **当前结果：** 文件: data/foundation/work-queues/085-proof-priority-queue.jsonl
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `reports/foundation-architecture/085-backlog-prioritization.md`, `085-BACKLOG-PRIORITIZATION`
-- **演化历史：** 2026-07-13: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`
-- **可搜索名称：** `085: Backlog Prioritization`, `085-backlog-prioritization`
-
-<a id="asset-hr-12a0a75721794540"></a>
-## P1 机器可读数据完整性审计
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-12A0A75721794540` · [outputs/audit/p1-machine-readable-data-audit-20260707.md](../../outputs/audit/p1-machine-readable-data-audit-20260707.md)
-- **为什么产生：** 此来源记录了什么：P1 机器可读数据完整性审计？
-- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **当前结果：** 本报告审计 P1 机器可读化阶段的全部产物，包括：
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `outputs/audit/p1-machine-readable-data-audit-20260707.md`, `REPOSITORY_HISTORY_SOURCE`
-- **演化历史：** 2026-07-07: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `P1 机器可读数据完整性审计`, `p1-machine-readable-data-audit-20260707`
-
-<a id="asset-hr-1437a5c9924f3c9e"></a>
-## IGNITION-121Q6C 执行结果
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-1437A5C9924F3C9E` · [agent-results/IGNITION-121Q6C-result.md](../../agent-results/IGNITION-121Q6C-result.md)
-- **为什么产生：** 此来源记录了什么：IGNITION-121Q6C 执行结果？
-- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **当前结果：** 执行者：QClaw（Hy3） 状态：121Q6C 完成（Step 000–007）
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `agent-results/IGNITION-121Q6C-result.md`, `121Q6C-RESULT`
-- **演化历史：** 2026-07-15: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `COGNITION`
-- **可搜索名称：** `IGNITION-121Q6C 执行结果`, `IGNITION-121Q6C-result`
-
-<a id="asset-hr-191c775bce185353"></a>
-## T16 counterexample-equivalence audit
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-191C775BCE185353` · [reports/foundation-architecture/T16-counterexample-equivalence-audit-20260713.md](../../reports/foundation-architecture/T16-counterexample-equivalence-audit-20260713.md)
-- **为什么产生：** 此来源记录了什么：T16 counterexample-equivalence audit？
-- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **当前结果：** The title and recovered annotation assert that two oppositely monotone functions necessarily produce an inverted-U product. The conservative controlled proposition is therefore universal over positive differentiable functions on a common real interval.
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** `T16`
-- **来源与证据：** `reports/foundation-architecture/T16-counterexample-equivalence-audit-20260713.md`, `REPOSITORY_HISTORY_SOURCE`
-- **演化历史：** 2026-07-13: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `T16 counterexample-equivalence audit`, `T16-counterexample-equivalence-audit-20260713`
-
-<a id="asset-hr-1bf6463b42d7824f"></a>
-## 生命周期审计 · 任务 108（双相迭代终态化与自闭合当前真相 R1）
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-1BF6463B42D7824F` · [reports/operations/lifecycle-audit-108.md](../../reports/operations/lifecycle-audit-108.md)
-- **为什么产生：** 此来源记录了什么：生命周期审计 · 任务 108（双相迭代终态化与自闭合当前真相 R1）？
-- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **当前结果：** data/operations/merged-iteration-ledger.jsonl 在 main 上呈现：
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `reports/operations/lifecycle-audit-108.md`, `REPOSITORY_HISTORY_SOURCE`
-- **演化历史：** 2026-08-01: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `生命周期审计 · 任务 108（双相迭代终态化与自闭合当前真相 R1）`, `lifecycle-audit-108`
-
-<a id="asset-hr-1c328f9ffe6aee1f"></a>
-## V4 规范性审核 - 可持续性协议 (Sustainability Protocol)
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-1C328F9FFE6AEE1F` · [docs/governance/meta-protocol-reviews/protocols/V4.md](../../docs/governance/meta-protocol-reviews/protocols/V4.md)
-- **为什么产生：** 此来源记录了什么：V4 规范性审核 - 可持续性协议 (Sustainability Protocol)？
-- **当前状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
-- **当前结果：** 价值：在多时间尺度上维持再生能力、承载能力、多样性与代际公平，是共同体长期繁荣的硬边界。条件：仅当它指向再生与公平，而非维持有害现状时才有价值。伤害：当它被用作保护有害系统、压制必要改革或牺牲主体尊严的借口时，会伤害共同体。不可缺少的约束：再生优先于存量维持、不得保护有害系统、代际公平、多样性、不得无限压倒个体。
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `docs/governance/meta-protocol-reviews/protocols/V4.md`, `REPOSITORY_HISTORY_SOURCE`
-- **演化历史：** 2026-07-11: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`
-- **可搜索名称：** `V4 规范性审核 - 可持续性协议 (Sustainability Protocol)`, `V4`
