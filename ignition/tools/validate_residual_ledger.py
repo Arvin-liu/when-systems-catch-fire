@@ -72,15 +72,26 @@ def compare_entry(entry: dict[str, Any], *, expected_task_id: str = EXPECTED_TAS
     if entry.get("current_fingerprint") != expected_current:
         errors.append(f"{residual_id}:CURRENT_FINGERPRINT_FORGED")
 
-    if entry.get("baseline_source_command") != entry.get("current_source_command") and "migration" not in entry:
-        errors.append(f"{residual_id}:SOURCE_COMMAND_CHANGED_WITHOUT_MIGRATION")
+    baseline_command = entry.get("baseline_source_command")
+    current_command = entry.get("current_source_command")
+    if baseline_command != current_command:
+        migration = entry.get("migration")
+        if not migration:
+            errors.append(f"{residual_id}:SOURCE_COMMAND_CHANGED_WITHOUT_MIGRATION")
+        else:
+            if migration.get("from_source_command") != baseline_command or migration.get("to_source_command") != current_command:
+                errors.append(f"{residual_id}:MIGRATION_SOURCE_COMMAND_MISMATCH")
+            if migration.get("task_id") != expected_task_id:
+                errors.append(f"{residual_id}:MIGRATION_TASK_ID_MISMATCH")
 
     added_objects = sorted(current_objects - baseline_objects)
     removed_objects = sorted(baseline_objects - current_objects)
     added_dimensions = sorted(current_dimensions - baseline_dimensions)
     removed_dimensions = sorted(baseline_dimensions - current_dimensions)
-    changed = bool(added_objects or added_dimensions or (isinstance(current_count, int) and isinstance(baseline_count, int) and current_count > baseline_count))
-    if changed:
+    grew = bool(added_objects or added_dimensions or (isinstance(current_count, int) and isinstance(baseline_count, int) and current_count > baseline_count))
+    shrank = bool(removed_objects or removed_dimensions or (isinstance(current_count, int) and isinstance(baseline_count, int) and current_count < baseline_count))
+    changed = grew or shrank
+    if grew:
         errors.append(f"{residual_id}:RESIDUAL_GROWTH_UNCLASSIFIED")
 
     baseline_is_empty = not baseline_objects and not baseline_dimensions and baseline_count == 0
@@ -93,7 +104,9 @@ def compare_entry(entry: dict[str, Any], *, expected_task_id: str = EXPECTED_TAS
             errors.append(f"{residual_id}:NEW_REGRESSION_RELEASE_BLOCKING")
     if current_is_empty and status != "RESOLVED_CURRENT":
         errors.append(f"{residual_id}:RESOLUTION_STATUS_INVALID")
-    if not current_is_empty and not changed and status == "RESOLVED_CURRENT":
+    if not current_is_empty and shrank and status not in {"PARTIALLY_RESOLVED"}:
+        errors.append(f"{residual_id}:RESIDUAL_SHRINK_STATUS_UNCLASSIFIED")
+    if not current_is_empty and status == "RESOLVED_CURRENT":
         errors.append(f"{residual_id}:RESOLVED_STATUS_WITH_LIVE_OBJECTS")
 
     return {
