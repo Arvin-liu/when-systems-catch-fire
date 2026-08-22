@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Audit Task123-132 historical compatibility without rewriting history."""
+"""Audit Task123-133 historical compatibility without rewriting history."""
 
 from __future__ import annotations
 
@@ -24,8 +24,8 @@ except ImportError:  # direct script / tools-on-PYTHONPATH execution
 HERE = Path(__file__).resolve()
 ROOT = HERE.parents[1]
 REPO_ROOT = ROOT.parent
-BASELINE_SHA = "5ed99d148dfb49e6c2ff729a345d2499d4b76021"
-REPORT_PATH = ROOT / "data/operations/iterations/133/step08-historical-compatibility-r1.json"
+BASELINE_SHA = "517510aed545ff440c3464536ba2964c94e5f560"
+REPORT_PATH = ROOT / "data/operations/iterations/134/step13-historical-compatibility-r1.json"
 HISTORICAL_RECEIPTS = {
     123: ROOT / "data/operations/iterations/123/current-state-sync-receipt.json",
     124: ROOT / "data/operations/iterations/124/current-state-sync-receipt.json",
@@ -34,6 +34,7 @@ HISTORICAL_RECEIPTS = {
     128: ROOT / "data/operations/iterations/128/current-state-sync-receipt.json",
     129: ROOT / "data/operations/iterations/129/current-state-sync-receipt.json",
     130: ROOT / "data/operations/iterations/130/current-state-sync-receipt.json",
+    133: ROOT / "data/operations/iterations/133/current-state-sync-receipt.json",
 }
 
 CONSUMER_AUDIT = [
@@ -46,7 +47,7 @@ CONSUMER_AUDIT = [
     {"path": "ignition/data/operations/current-volatile-fact-registry-r1.json", "classification": "CURRENT_REGISTRY", "rule": "formal/architecture ordinals derive through task_identity_ordinal extractor"},
     {"path": "ignition/tools/current_surface_compiler.py", "classification": "CURRENT_CONSUMER", "rule": "human/AI/machine blocks render generated named ordinal values"},
     {"path": "ignition/tools/validate_iteration_ordinal_binding.py", "classification": "CURRENT_RELEASE_GATE", "rule": "all formal roles share one derived formal ordinal; architecture ordinal remains independent"},
-    {"path": "ignition/data/operations/iterations/{123,124,126,127,128,129,130}/current-state-sync-receipt.json", "classification": "HISTORICAL_RECORD", "rule": "captured values preserved and never loaded as Current source"}
+    {"path": "ignition/data/operations/iterations/{123,124,126,127,128,129,130,133}/current-state-sync-receipt.json", "classification": "HISTORICAL_RECORD", "rule": "captured values preserved and never loaded as Current source"}
 ]
 
 
@@ -77,7 +78,7 @@ def _current_projection_audit() -> tuple[list[str], dict[str, Any]]:
     lifecycle = load_json(ROOT / "data/operations/current-release-lifecycle-r1.json")
     facts = load_json(ROOT / "data/architecture/current-facts.json")
     snapshot = load_json(ROOT / "data/operations/current-snapshot-r1.json")
-    receipt = load_json(ROOT / "data/operations/iterations/133/current-state-sync-receipt.json")
+    receipt = load_json(ROOT / "data/operations/iterations/134/current-state-sync-receipt.json")
     identity_projection = {
         "current_formal_task_id": identity.get("current_formal_task_id"),
         "current_formal_task_ordinal": identity.get("current_formal_task_ordinal"),
@@ -147,7 +148,7 @@ def _historical_audit() -> tuple[list[str], list[dict[str, Any]]]:
         if not isinstance(record.get("current_iteration_boundary"), int):
             row_errors.append("historical captured boundary is not an integer")
         for field in ("current_formal_task_ordinal", "latest_architecture_task_ordinal", "current_iteration_boundary_semantics"):
-            if record.get(field) is not None:
+            if expected_path_ordinal < 133 and record.get(field) is not None:
                 row_errors.append(f"historical artifact was rewritten with Current semantic field: {field}")
         if not unchanged_from_baseline(path):
             row_errors.append("historical artifact differs from formal baseline")
@@ -159,7 +160,7 @@ def _historical_audit() -> tuple[list[str], list[dict[str, Any]]]:
             "task_ordinal_from_id": parsed["ordinal"],
             "captured_current_iteration_boundary": record.get("current_iteration_boundary"),
             "historical": True,
-            "current_semantic_fields_present": False,
+            "current_semantic_fields_present": any(record.get(field) is not None for field in ("current_formal_task_ordinal", "latest_architecture_task_ordinal", "current_iteration_boundary_semantics")),
             "unchanged_from_baseline": unchanged_from_baseline(path),
             "sha256": sha256(path),
             "validation": "PASS" if not row_errors else "FAIL",
@@ -172,15 +173,15 @@ def build_report() -> dict[str, Any]:
     historical_errors, historical = _historical_audit()
     errors = current_errors + historical_errors
     return {
-        "schema_version": "ignition-133-step08-historical-compatibility-r1",
-        "task_id": "IGNITION-20260822-133",
-        "step": "08",
+        "schema_version": "ignition-134-step13-historical-compatibility-r1",
+        "task_id": "IGNITION-20260822-134",
+        "step": "13",
         "status": "PASS" if not errors else "FAIL",
         "compatibility_contract": {
             "deprecated_field": "current_iteration_boundary",
             "alias_of": "current_formal_task_ordinal",
             "current_source": "ignition/data/operations/iteration-boundary-semantics-r1.json",
-            "historical_policy": "Task123-132 captured values remain historical records and are not rewritten or reinterpreted as Current source.",
+            "historical_policy": "Task123-133 captured values remain historical records and are not rewritten or reinterpreted as Current source.",
             "new_consumers": "Must use current_formal_task_ordinal or latest_architecture_task_ordinal by name.",
         },
         "current_projection": current,

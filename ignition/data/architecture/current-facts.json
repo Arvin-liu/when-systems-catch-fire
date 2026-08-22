@@ -1,9 +1,9 @@
 {
   "claim_ceiling": "Deterministic repository-derived current facts and navigation support only; no external truth, Owner acceptance, production safety or epistemic upgrade.",
   "contract_id": "CURRENT_STATE_SYNC_INVARIANT",
-  "current_formal_task_id": "IGNITION-20260822-133",
-  "current_formal_task_ordinal": 133,
-  "current_iteration_boundary": 133,
+  "current_formal_task_id": "IGNITION-20260822-134",
+  "current_formal_task_ordinal": 134,
+  "current_iteration_boundary": 134,
   "current_iteration_boundary_semantics": "DEPRECATED_COMPATIBILITY_ALIAS_OF_CURRENT_FORMAL_TASK_ORDINAL",
   "facts": {
     "architecture": {
@@ -69,9 +69,9 @@
       }
     },
     "iteration": {
-      "current_formal_task_id": "IGNITION-20260822-133",
-      "current_formal_task_ordinal": 133,
-      "current_iteration_boundary": 133,
+      "current_formal_task_id": "IGNITION-20260822-134",
+      "current_formal_task_ordinal": 134,
+      "current_iteration_boundary": 134,
       "current_iteration_boundary_semantics": "DEPRECATED_COMPATIBILITY_ALIAS_OF_CURRENT_FORMAL_TASK_ORDINAL",
       "current_map_version": "0.12.0",
       "latest_architecture_changing_task_id": "IGNITION-20260821-129",
@@ -109,8 +109,8 @@
       "pilot_status": "OFFLINE_SYNTHETIC_ONLY"
     },
     "task_lineage": {
-      "current_task_id": "IGNITION-20260822-133",
-      "current_task_status": "COMPLETED_WITH_CLASSIFIED_RESIDUALS",
+      "current_task_id": "IGNITION-20260822-134",
+      "current_task_status": "IN_PROGRESS",
       "task125_canonical_status": "HISTORICAL_UNEXECUTED_REBASED_INTO_127",
       "task125_file_status": "HISTORICAL_UNEXECUTED",
       "task125_requirement_lineage_status": "REBASED_INTO_127",
@@ -132,7 +132,7 @@
     },
     {
       "path": "ignition/data/architecture/current-system-identity.json",
-      "sha256": "2c597d51786dc3e9d8199abeaea27a7a56dcac1ba7cd0d654de59b814d3cdd68"
+      "sha256": "3ca2876f201d95e2882c9d087a817ac0f571f722894cbc79e1377f4364cf6a8f"
     },
     {
       "path": "ignition/data/architecture/interactive-system-map-layout.json",
@@ -164,15 +164,15 @@
     },
     {
       "path": "ignition/data/operations/current-release-lifecycle-r1.json",
-      "sha256": "78896207ab42bfdfdc23aa4f65d0faaf3b7a6889f4f829496499f21b38015b7d"
+      "sha256": "66845760c36ffeca51f48b4d913e1b10de568652c528f1a1f8f3dce0eeac0391"
     },
     {
       "path": "ignition/data/operations/current-task-lineage-status.json",
-      "sha256": "bd4c9fb1aa40842a032158abc9d941a109191e892db4de29d088b4d5873c1be0"
+      "sha256": "1553e0be4c331843e93f7461d2a24e05c17b1adef48e0b7c458826d234840dd1"
     },
     {
       "path": "ignition/data/operations/iteration-boundary-semantics-r1.json",
-      "sha256": "c5abbc9112a23f533d3dfaa15e9dd590869768a1733313f420178e55d9d66669"
+      "sha256": "8bf71b2fed0bd3702d1d15a2cf54e0f6079c4234ef5f06112b231e0939e2d4bf"
     },
     {
       "path": "ignition/data/operations/project-components.json",

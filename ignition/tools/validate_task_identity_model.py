@@ -55,8 +55,8 @@ def validate(document: dict[str, Any] | None = None) -> list[str]:
         errors.append("latest_architecture_changing_task must be sourced from canonical task lineage")
     if bindings["latest_architecture_changing_task"]["json_pointer"] != "/task_identity/latest_architecture_changing_task":
         errors.append("latest_architecture_changing_task JSON pointer is not canonical")
-    if bindings["release_candidate_task"]["source_path"] != "ignition/data/operations/iterations/133/execution-contract-r1.json":
-        errors.append("release_candidate_task must be sourced from the Task133 execution contract")
+    if bindings["release_candidate_task"]["source_path"] != "ignition/data/operations/iterations/134/execution-contract-r1.json":
+        errors.append("release_candidate_task must be sourced from the Task134 execution contract")
     if not bindings["publication_witness_task"]["source_path"].startswith("Arvin-liu/1111:"):
         errors.append("publication_witness_task must remain in the control repository")
     if model["historical_lineage_source"]["preserve_history"] is not True:

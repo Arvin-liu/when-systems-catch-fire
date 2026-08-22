@@ -13,11 +13,11 @@ from typing import Any
 from jsonschema import Draft202012Validator
 
 try:
-    from tools import validate_execution_contract_133 as validate_execution_contract
+    from tools import validate_execution_contract_134 as validate_execution_contract
     from tools import iteration_boundary
     from tools import validate_iteration_ordinal_binding as ordinal_binding
 except ImportError:  # direct script / tools-on-PYTHONPATH execution
-    import validate_execution_contract_133 as validate_execution_contract
+    import validate_execution_contract_134 as validate_execution_contract
     import iteration_boundary
     import validate_iteration_ordinal_binding as ordinal_binding
 
@@ -29,8 +29,8 @@ LIFECYCLE_PATH = ROOT / "data/operations/current-release-lifecycle-r1.json"
 SCHEMA_PATH = ROOT / "schemas/operations/current-release-lifecycle-r1.schema.json"
 LINEAGE_PATH = ROOT / "data/operations/current-task-lineage-status.json"
 IDENTITY_PATH = ROOT / "data/architecture/current-system-identity.json"
-AUDIT_PATH = ROOT / "data/operations/iterations/133/step04-release-lifecycle-audit.json"
-EXECUTION_CONTRACT_PATH = ROOT / "data/operations/iterations/133/execution-contract-r1.json"
+AUDIT_PATH = ROOT / "data/operations/iterations/134/step13-release-lifecycle-audit.json"
+EXECUTION_CONTRACT_PATH = ROOT / "data/operations/iterations/134/execution-contract-r1.json"
 FACTS_PATH = ROOT / "data/architecture/current-facts.json"
 
 PHASES = ["RUNNING", "TERMINAL_CANDIDATE", "RELEASE_READY"]

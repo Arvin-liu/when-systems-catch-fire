@@ -2,10 +2,10 @@
   "schema_version": "current-task-lineage-status-r1",
   "contract_id": "CURRENT_TASK_LINEAGE_STATUS",
   "current_task": {
-    "task_id": "IGNITION-20260822-133",
-    "scope": "Iteration Boundary Semantics R1",
-    "execution_status": "COMPLETED_WITH_CLASSIFIED_RESIDUALS",
-    "terminal": true,
+    "task_id": "IGNITION-20260822-134",
+    "scope": "Residual Debt & Projection Hygiene R1",
+    "execution_status": "IN_PROGRESS",
+    "terminal": false,
     "identity_impact": "PRESENTATION_ONLY"
   },
   "current_state": {
@@ -85,12 +85,12 @@
   "claim_ceiling": "Canonical repository-local task lineage and status semantics only; this record does not grant authority, prove external truth, establish production readiness, or set epistemic acceptance.",
   "task_identity": {
     "schema_version": "task-identity-state-r1",
-    "current_formal_task": "IGNITION-20260822-133",
+    "current_formal_task": "IGNITION-20260822-134",
     "latest_architecture_changing_task": "IGNITION-20260821-129",
-    "release_candidate_task": "IGNITION-20260822-133",
-    "publication_witness_task": "IGNITION-20260822-133",
-    "previous_canonical_current_task": "IGNITION-20260822-132",
-    "previous_formal_task": "IGNITION-20260822-132",
+    "release_candidate_task": "IGNITION-20260822-134",
+    "publication_witness_task": "IGNITION-20260822-134",
+    "previous_canonical_current_task": "IGNITION-20260822-133",
+    "previous_formal_task": "IGNITION-20260822-133",
     "historical_lineage": [
       {
         "predecessor_task_id": "IGNITION-20260821-129",
@@ -120,16 +120,28 @@
         "predecessor_task_id": "IGNITION-20260822-132",
         "successor_task_id": "IGNITION-20260822-133",
         "relation": "FORMAL_TASK_SUCCESSOR",
+        "status": "COMPLETED_HISTORICAL"
+      },
+      {
+        "predecessor_task_id": "IGNITION-20260822-133",
+        "successor_task_id": "IGNITION-20260822-134",
+        "relation": "CANONICAL_SOURCE_ADVANCEMENT",
+        "status": "CURRENT_ADVANCEMENT"
+      },
+      {
+        "predecessor_task_id": "IGNITION-20260822-133",
+        "successor_task_id": "IGNITION-20260822-134",
+        "relation": "FORMAL_TASK_SUCCESSOR",
         "status": "CURRENT_ADVANCEMENT"
       }
     ],
     "advancement": {
-      "from_task_id": "IGNITION-20260822-132",
-      "to_task_id": "IGNITION-20260822-133",
-      "transition_reason": "Task133 makes formal-task ordinal semantics a release hard gate after the Task132 stale-boundary finding.",
-      "prior_source_sha256": "9d1e5826c05c8c95c22a3316b9c5b4986027221807a82a7fbf17757bfca2f993",
-      "execution_contract_path": "ignition/data/operations/iterations/133/execution-contract-r1.json",
-      "idempotency_key": "IGNITION-20260822-133"
+      "from_task_id": "IGNITION-20260822-133",
+      "to_task_id": "IGNITION-20260822-134",
+      "transition_reason": "Task134 migrates canonical Current from terminal Task133 to Residual Debt & Projection Hygiene R1 while preserving Task133 as historical provenance and binding residual non-growth, Current path and Human Surface gates.",
+      "prior_source_sha256": "bd4c9fb1aa40842a032158abc9d941a109191e892db4de29d088b4d5873c1be0",
+      "execution_contract_path": "ignition/data/operations/iterations/134/execution-contract-r1.json",
+      "idempotency_key": "IGNITION-20260822-134"
     },
     "claim_ceiling": "Canonical repository-local task advancement only; this record does not grant authority, prove external truth, establish production readiness or set epistemic acceptance."
   }

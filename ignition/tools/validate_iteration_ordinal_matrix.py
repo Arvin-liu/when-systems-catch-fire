@@ -27,6 +27,7 @@ ROOT = HERE.parents[1]
 REPO_ROOT = ROOT.parent
 FIXTURE_PATH = ROOT / "data/operations/iterations/133/fixtures/iteration-ordinal-adversarial-matrix-r1.json"
 REPORT_PATH = ROOT / "data/operations/iterations/133/step07-adversarial-matrix-r1.json"
+HISTORICAL_CONTRACT_PATH = ROOT / "data/operations/iterations/133/execution-contract-r1.json"
 
 
 def load_json(path: Path) -> Any:
@@ -34,12 +35,19 @@ def load_json(path: Path) -> Any:
 
 
 def _base() -> dict[str, Any]:
+    def historicalize(document: dict[str, Any]) -> dict[str, Any]:
+        text = json.dumps(document, ensure_ascii=False)
+        text = text.replace("IGNITION-20260822-134", "IGNITION-20260822-133")
+        text = text.replace('"current_formal_task_ordinal": 134', '"current_formal_task_ordinal": 133')
+        text = text.replace('"current_iteration_boundary": 134', '"current_iteration_boundary": 133')
+        return json.loads(text)
+
     return {
-        "contract": load_json(gate.CONTRACT_PATH),
-        "lineage": load_json(gate.LINEAGE_PATH),
-        "lifecycle": load_json(gate.LIFECYCLE_PATH),
-        "snapshot": load_json(gate.SNAPSHOT_PATH),
-        "facts": load_json(gate.FACTS_PATH),
+        "contract": load_json(HISTORICAL_CONTRACT_PATH),
+        "lineage": historicalize(load_json(gate.LINEAGE_PATH)),
+        "lifecycle": historicalize(load_json(gate.LIFECYCLE_PATH)),
+        "snapshot": historicalize(load_json(gate.SNAPSHOT_PATH)),
+        "facts": historicalize(load_json(gate.FACTS_PATH)),
     }
 
 
@@ -125,7 +133,7 @@ def evaluate(mutation: str) -> list[str]:
         return gate.validate_binding_chain([
             {"role_id": "current_formal_task", "task_id": "IGNITION-20260822-133"},
             {"role_id": "current_formal_task", "task_id": "IGNITION-20260822-132"},
-        ])
+        ], expected_task_id="IGNITION-20260822-133", expected_architecture_task="IGNITION-20260821-129")
     else:
         return [f"unknown mutation: {mutation}"]
 

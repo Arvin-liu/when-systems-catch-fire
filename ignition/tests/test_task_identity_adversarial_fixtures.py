@@ -62,8 +62,8 @@ class TaskIdentityAdversarialFixtureTests(unittest.TestCase):
     @staticmethod
     def witness_kwargs(sha: str) -> dict[str, object]:
         return {
-            "task_id": "IGNITION-20260822-132",
-            "formal_result_task_id": "IGNITION-20260822-132",
+            "task_id": "IGNITION-20260822-134",
+            "formal_result_task_id": "IGNITION-20260822-134",
             "subject_repository": "Arvin-liu/when-systems-catch-fire",
             "candidate_sha": sha,
             "fresh_clone_head_sha": sha,
@@ -79,7 +79,7 @@ class TaskIdentityAdversarialFixtureTests(unittest.TestCase):
                 "current_state_sync": "PASS",
                 "clean_worktree": "PASS",
             },
-            "receipt_ref": "agent-results/IGNITION-20260822-132-publication-witness.json",
+            "receipt_ref": "agent-results/IGNITION-20260822-134-publication-witness.json",
             "observed_at": "2026-08-22T00:00:00+00:00",
         }
 
@@ -146,7 +146,7 @@ class TaskIdentityAdversarialFixtureTests(unittest.TestCase):
                     self.assertEqual(result["result"], expected_status, result["errors"])
                     self.assertTrue(any("fresh fetch of origin main failed" in error for error in result["errors"]))
                 elif case["case_id"] == "publication-witness-missing":
-                    witness_path = gate.REPO_ROOT / "ignition/agent-results/IGNITION-20260822-132-publication-witness.json"
+                    witness_path = gate.REPO_ROOT / "ignition/agent-results/IGNITION-20260822-134-publication-witness.json"
                     self.assertFalse(witness_path.exists())
                 elif case["case_id"] == "owner-epistemic-authority-promotion":
                     promoted = copy.deepcopy(self.lineage)

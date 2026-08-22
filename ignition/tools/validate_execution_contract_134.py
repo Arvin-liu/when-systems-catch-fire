@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate the current Task134 execution contract."""
+"""Validate the live Task134 execution contract."""
 
 from __future__ import annotations
 
@@ -11,10 +11,14 @@ from typing import Any
 
 from jsonschema import Draft202012Validator
 
+try:
+    from tools import task_identity
+except ImportError:
+    import task_identity
+
 
 HERE = Path(__file__).resolve()
 ROOT = HERE.parents[1]
-REPO_ROOT = ROOT.parent
 CONTRACT_PATH = ROOT / "data/operations/iterations/134/execution-contract-r1.json"
 SCHEMA_PATH = ROOT / "schemas/operations/execution-contract-134-r1.schema.json"
 
@@ -28,8 +32,12 @@ def validate(document: dict[str, Any] | None = None) -> list[str]:
     errors = [error.json_path + ": " + error.message for error in Draft202012Validator(load_json(SCHEMA_PATH)).iter_errors(contract)]
     if errors:
         return errors
-    if contract["formal_baseline"]["sha"] != "517510aed545ff440c3464536ba2964c94e5f560":
-        errors.append("formal baseline must remain the verified Task133 main SHA")
+    expectations = contract["identity_expectations"]
+    for field in ("current_formal_task", "latest_architecture_changing_task", "previous_canonical_current_task", "previous_formal_task", "release_candidate_task", "publication_witness_task"):
+        try:
+            task_identity.parse_task_id(expectations[field])
+        except task_identity.TaskIdentityError as exc:
+            errors.append(f"{field} is not parseable: {exc}")
     if contract["identity_impact"] != "PRESENTATION_ONLY":
         errors.append("Task134 identity impact must remain PRESENTATION_ONLY")
     if "Owner authority" not in contract["claim_ceiling"] or "epistemic" not in contract["claim_ceiling"]:
@@ -45,11 +53,11 @@ def main() -> int:
         parser.error("--check is required")
     errors = validate()
     if errors:
-        print("EXECUTION_CONTRACT_INVALID", file=sys.stderr)
+        print("EXECUTION_CONTRACT_134_INVALID", file=sys.stderr)
         for error in errors:
             print(f"- {error}", file=sys.stderr)
         return 1
-    print("EXECUTION_CONTRACT_OK task_id=IGNITION-20260822-134")
+    print("EXECUTION_CONTRACT_134_OK task_id=IGNITION-20260822-134")
     return 0
 
 

@@ -41,15 +41,15 @@ class PublicationWitnessTests(unittest.TestCase):
 
     def kwargs(self, sha: str) -> dict[str, object]:
         return {
-            "task_id": "IGNITION-20260822-133",
-            "formal_result_task_id": "IGNITION-20260822-133",
+            "task_id": "IGNITION-20260822-134",
+            "formal_result_task_id": "IGNITION-20260822-134",
             "subject_repository": "Arvin-liu/when-systems-catch-fire",
             "candidate_sha": sha,
             "fresh_clone_head_sha": sha,
             "fresh_clone_branch": "main",
             "fresh_clone_clean": True,
             "semantic_gates": self.gates(),
-            "receipt_ref": "agent-results/IGNITION-20260822-133-publication-witness.json",
+            "receipt_ref": "agent-results/IGNITION-20260822-134-publication-witness.json",
             "observed_at": "2026-08-21T15:00:00+00:00",
         }
 

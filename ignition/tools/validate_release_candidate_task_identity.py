@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Fail-closed release-candidate task identity and ordinal gate for IGNITION-133."""
+"""Fail-closed release-candidate task identity and ordinal gate for IGNITION-134."""
 
 from __future__ import annotations
 
@@ -13,13 +13,13 @@ from typing import Any
 try:
     from tools import build_current_snapshot
     from tools import current_surface_compiler
-    from tools import validate_execution_contract_133 as validate_execution_contract
+    from tools import validate_execution_contract_134 as validate_execution_contract
     from tools import validate_iteration_ordinal_binding as ordinal_binding
     from tools import task_identity
 except ImportError:  # direct script / tools-on-PYTHONPATH execution
     import build_current_snapshot
     import current_surface_compiler
-    import validate_execution_contract_133 as validate_execution_contract
+    import validate_execution_contract_134 as validate_execution_contract
     import validate_iteration_ordinal_binding as ordinal_binding
     import task_identity
 
@@ -27,14 +27,14 @@ except ImportError:  # direct script / tools-on-PYTHONPATH execution
 HERE = Path(__file__).resolve()
 ROOT = HERE.parents[1]
 REPO_ROOT = ROOT.parent
-CONTRACT_PATH = ROOT / "data/operations/iterations/133/execution-contract-r1.json"
+CONTRACT_PATH = ROOT / "data/operations/iterations/134/execution-contract-r1.json"
 LINEAGE_PATH = ROOT / "data/operations/current-task-lineage-status.json"
 LIFECYCLE_PATH = ROOT / "data/operations/current-release-lifecycle-r1.json"
 SNAPSHOT_PATH = ROOT / "data/operations/current-snapshot-r1.json"
-PROGRESS_PATH = ROOT / "data/operations/iterations/133/progress.jsonl"
-RESULT_PATH = ROOT / "agent-results/IGNITION-20260822-133-result.md"
-MACHINE_RECEIPT_PATH = ROOT / "agent-results/IGNITION-20260822-133-machine-receipt.json"
-EXPECTED_TASK_ID = "IGNITION-20260822-133"
+PROGRESS_PATH = ROOT / "data/operations/iterations/134/progress.jsonl"
+RESULT_PATH = ROOT / "agent-results/IGNITION-20260822-134-result.md"
+MACHINE_RECEIPT_PATH = ROOT / "agent-results/IGNITION-20260822-134-machine-receipt.json"
+EXPECTED_TASK_ID = "IGNITION-20260822-134"
 EXPECTED_ARCHITECTURE_TASK = "IGNITION-20260821-129"
 
 
@@ -56,7 +56,7 @@ def load_result_task(path: Path) -> str | None:
     for line in path.read_text(encoding="utf-8").splitlines():
         if line.startswith("Task ID:"):
             return line.split(":", 1)[1].strip().strip("`")
-        if "IGNITION-20260822-133" in line and "#" not in line:
+        if "IGNITION-20260822-134" in line and "#" not in line:
             return EXPECTED_TASK_ID
     return None
 
@@ -121,7 +121,7 @@ def validate_documents(
         last = progress[-1]
         if last.get("task_id") != EXPECTED_TASK_ID:
             errors.append("PROGRESS_TASK_ID_MISMATCH")
-        if last.get("current_iteration_id") != 133:
+        if last.get("current_iteration_id") != 134:
             errors.append("PROGRESS_CURRENT_ITERATION_ID_MISMATCH")
 
     if require_result:

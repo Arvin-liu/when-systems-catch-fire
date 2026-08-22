@@ -380,7 +380,7 @@ def validate_receipt(contract: dict[str, Any], receipt: dict[str, Any]) -> list[
     # Historical receipts intentionally retain the value captured by their own
     # task. They are validated for shape and surface bookkeeping, but their
     # old boundary/epoch is never compared with the Current source and is not
-    # reinterpreted through the Task133 alias contract.
+    # reinterpreted through the current Task134 alias contract.
     if impact == "ARCHITECTURE_CHANGED":
         if not receipt.get("identity_contract_changed"):
             errors.append("ARCHITECTURE_CHANGED receipt must set identity_contract_changed=true")

@@ -1,14 +1,14 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://example.invalid/ignition/operations/execution-contract-r1.schema.json",
-  "title": "Ignition formal execution contract",
+  "$id": "https://example.invalid/ignition/operations/execution-contract-134-r1.schema.json",
+  "title": "Ignition Task134 formal execution contract",
   "type": "object",
   "additionalProperties": false,
   "required": ["schema_version", "contract_id", "task_id", "control_source", "formal_baseline", "identity_impact", "expected_task_branch", "expected_receipt_branch", "required_release_ref", "no_owner_intermediate", "identity_expectations", "claim_ceiling"],
   "properties": {
     "schema_version": {"const": "execution-contract-r1"},
     "contract_id": {"const": "IGNITION_EXECUTION_CONTRACT_R1"},
-    "task_id": {"type": "string", "const": "IGNITION-20260822-134"},
+    "task_id": {"const": "IGNITION-20260822-134"},
     "control_source": {"$ref": "#/$defs/controlSource"},
     "formal_baseline": {"$ref": "#/$defs/formalBaseline"},
     "identity_impact": {"const": "PRESENTATION_ONLY"},
@@ -20,8 +20,6 @@
     "claim_ceiling": {"type": "string", "minLength": 1, "pattern": "\\S"}
   },
   "$defs": {
-    "sha": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
-    "nonblank": {"type": "string", "minLength": 1, "pattern": "\\S"},
     "controlSource": {
       "type": "object",
       "additionalProperties": false,
@@ -29,7 +27,7 @@
       "properties": {
         "repository": {"const": "Arvin-liu/1111"},
         "ref": {"const": "origin/relay/current"},
-        "commit": {"$ref": "#/$defs/sha"},
+        "commit": {"const": "3fc8a329eb4f581d1940688046bdc16f4594417d"},
         "command_path": {"const": "agent-commands/IGNITION-20260822-134-residual-debt-projection-hygiene-r1.md"}
       }
     },
@@ -40,7 +38,7 @@
       "properties": {
         "repository": {"const": "Arvin-liu/when-systems-catch-fire"},
         "ref": {"const": "refs/heads/main"},
-        "sha": {"$ref": "#/$defs/sha"}
+        "sha": {"const": "517510aed545ff440c3464536ba2964c94e5f560"}
       }
     },
     "identityExpectations": {

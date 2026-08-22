@@ -49,7 +49,12 @@ class PostPublicationCurrentTests(unittest.TestCase):
         fake_git = self._fake_git(head=candidate, remote=candidate)
         with patch.object(checker, "git", side_effect=fake_git):
             result = checker.run_checks(post_publication=True, expected_sha=candidate)
-        self.assertEqual(result["result"], "PASS", result["errors"])
+        lifecycle = checker.load_json(checker.LIFECYCLE_PATH)
+        terminal_current = lifecycle["content_phase"] == "RELEASE_READY" and lifecycle["current_task_terminal"] is True
+        self.assertEqual(result["result"], "PASS" if terminal_current else "FAIL", result["errors"])
+        if not terminal_current:
+            self.assertTrue(any("requires content_phase RELEASE_READY" in error for error in result["errors"]))
+            self.assertTrue(any("requires terminal Current task" in error for error in result["errors"]))
         self.assertEqual(result["observed_ref"], "refs/heads/main")
         self.assertEqual(result["head_sha"], result["observed_remote_sha"])
 
