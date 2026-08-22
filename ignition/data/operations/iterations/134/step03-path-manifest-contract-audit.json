@@ -1,0 +1,21 @@
+{
+  "schema_version": "ignition-134-step03-path-manifest-contract-audit-r1",
+  "task_id": "IGNITION-20260822-134",
+  "step": "03",
+  "status": "PASS",
+  "decision": "方案 A：保持 classification-manifest.jsonl 为 Current generated snapshot",
+  "current_source": "ignition/data/foundation/repository-path-classification/classification-manifest.jsonl",
+  "source_kind": "CURRENT_GENERATED_SNAPSHOT_OF_LIVE_ENGINE_OUTPUT",
+  "validator": "ignition/tools/foundation/validate_repository_path_classification.py",
+  "historical_preservation": "Git history and task receipts preserve historical manifest observations; no historical file is rewritten.",
+  "required_current_semantics": [
+    "tracked_set_equal_manifest_set",
+    "unresolved_zero",
+    "stale_zero",
+    "duplicate_zero",
+    "category_drift_zero",
+    "anti_backflow_zero"
+  ],
+  "baseline_finding": "The old Current source is semantically a generated snapshot, so the 238 missing paths are a current accounting failure rather than an immutable historical residual.",
+  "claim_ceiling": "Repository-local Current path-manifest contract evidence only; no external truth, production readiness, Owner acceptance or epistemic acceptance is inferred."
+}

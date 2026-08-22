@@ -39,6 +39,7 @@ REPO_ROOT = ROOT.parent
 MANIFEST_DIR = ROOT / "data/foundation/repository-path-classification"
 MANIFEST = MANIFEST_DIR / "classification-manifest.jsonl"
 SCHEMA = ROOT / "data/foundation/schemas/repository-path-classification.schema.json"
+CURRENT_CONTRACT = ROOT / "data/operations/current-path-manifest-contract-r1.json"
 
 # Authoritative claim / function discovery inputs.
 # Restricted allowlist: the ONLY paths that may feed Foundation assertion or
@@ -183,6 +184,24 @@ def load_schema() -> dict | None:
     return json.loads(SCHEMA.read_text(encoding="utf-8"))
 
 
+def validate_current_contract() -> list[str]:
+    """Validate that the committed manifest has exactly one Current meaning."""
+    if not CURRENT_CONTRACT.is_file():
+        return ["current path-manifest contract is missing"]
+    try:
+        contract = json.loads(CURRENT_CONTRACT.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError) as exc:
+        return [f"current path-manifest contract cannot be read: {exc}"]
+    expected = {
+        "schema_version": "current-path-manifest-contract-r1",
+        "contract_id": "CURRENT_PATH_MANIFEST_IS_CURRENT_INVARIANT",
+        "manifest_path": str(MANIFEST.relative_to(REPO_ROOT)),
+        "source_kind": "CURRENT_GENERATED_SNAPSHOT_OF_LIVE_ENGINE_OUTPUT",
+        "validator_path": "ignition/tools/foundation/validate_repository_path_classification.py",
+    }
+    return [f"current path-manifest contract field {key!r} is invalid" for key, value in expected.items() if contract.get(key) != value]
+
+
 def _schema_valid_row(row: dict, schema: dict | None) -> tuple[bool, str]:
     """Lightweight stdlib schema/semantic validation (no jsonschema dependency)."""
     if not isinstance(row, dict):
@@ -219,6 +238,8 @@ def check(live: dict[str, tuple[str, str]] | None = None,
       * a manifest row fails schema/semantic validation.
     """
     checks: list[tuple[str, bool, str]] = []
+    contract_errors = validate_current_contract()
+    checks.append(("contract:single-current-source", not contract_errors, "; ".join(contract_errors)))
     if live is None:
         live = live_classification()
     if manifest is None:
