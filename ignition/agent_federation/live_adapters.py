@@ -286,4 +286,72 @@ class LiveHermesAdapter:
         )
 
 
-__all__ = ["LiveAdapterError", "LiveAdapterObservation", "LiveCodexAdapter", "LiveHermesAdapter"]
+class LiveOpenClawAdapter:
+    """Safety probe for OpenClaw; refuses the current gateway-owned surface."""
+
+    executor_id = "external.openclaw"
+    family = "OpenClaw"
+
+    def __init__(
+        self,
+        workspace: str | Path,
+        *,
+        executable: str = "/Users/zhiyuan/.local/bin/openclaw",
+        transport: LiveProcessTransport | Any | None = None,
+        adapter_id: str = "openclaw-live-r2",
+    ) -> None:
+        root = Path(workspace)
+        if not root.is_absolute() or not root.is_dir():
+            raise LiveAdapterError("OpenClaw safety probe requires an existing absolute disposable workspace")
+        self.workspace = root
+        self.executable = executable
+        self.transport = transport or LiveProcessTransport(executable_allowlist=(executable,))
+        self.adapter_id = adapter_id
+        self._probe_cache: tuple[LiveProcessResult, LiveProcessResult] | None = None
+
+    def _run(self, argv: Sequence[str], timeout_seconds: float = 5) -> LiveProcessResult:
+        try:
+            return self.transport.run(argv, cwd=self.workspace, timeout_seconds=timeout_seconds)
+        except (OSError, LiveTransportError) as exc:
+            raise LiveAdapterError(f"OpenClaw public process probe failed: {type(exc).__name__}") from exc
+
+    def _probe(self) -> tuple[LiveProcessResult, LiveProcessResult]:
+        if self._probe_cache is None:
+            self._probe_cache = (self._run((self.executable, "--version")), self._run((self.executable, "agent", "--help")))
+        return self._probe_cache
+
+    def observe_lease(self, *, lease_id: str, observed_at: str, expires_at: str, ttl_seconds: float) -> LiveCapabilityLease:
+        version_result, help_result = self._probe()
+        version = _summary(version_result.stdout or version_result.stderr)
+        help_text = (help_result.stdout or "") + ("\n" + help_result.stderr if help_result.stderr else "")
+        blockers = [
+            "MISSING_PUBLIC_DISPOSABLE_WORKSPACE_BINDING",
+            "GATEWAY_OR_LOCAL_AGENT_SESSION_SURFACE_NOT_CHANNEL_OFF_PROVABLE",
+            "NO_EXPLICIT_READ_ONLY_PERMISSION_CEILING",
+            "MESSAGE_AND_CHANNEL_OPTIONS_PRESENT_IN_PUBLIC_AGENT_SURFACE",
+        ]
+        if version_result.returncode != 0:
+            blockers.append("VERSION_PROBE_FAILED")
+        if help_result.returncode != 0:
+            blockers.append("HELP_PROBE_FAILED")
+        return LiveCapabilityLease.build(
+            lease_id=lease_id, executor_id=self.executor_id, executor_version=version,
+            observed_at=observed_at, expires_at=expires_at, ttl_seconds=ttl_seconds,
+            binary_digest=hashlib.sha256(version.encode("utf-8")).hexdigest(), interface_digest=interface_digest(help_text),
+            observed_capabilities=(), forbidden_capabilities=("repo.read", "repo.write", "repo.test", "terminal.run", "browser.read", "browser.act", "web.read", "messaging.send", "subagents", "scheduler"),
+            unknown_capabilities=("workspace.binding", "channel.disable", "read_only_permission", "daemon.persistence"),
+            workspace_semantics="GATEWAY_OWNED_OR_CONFIGURED_WORKSPACE_NOT_DISPOSABLE",
+            approval_sandbox_semantics="NOT_PROVEN_FROM_AGENT_HELP",
+            structured_output_semantics="JSON_RESULT_ADVERTISED_BUT_BINDING_UNSAFE",
+            timeout_supported=True, cancel_supported=False, resume_supported=False,
+            live_eligibility="SKIPPED_UNSAFE_WORKSPACE_OR_CHANNEL_BOUNDARY", eligibility_blockers=tuple(blockers), source="openclaw-agent-help-safety-probe-r2",
+        )
+
+    def build_argv(self, envelope: LiveDispatchEnvelope) -> tuple[str, ...]:
+        raise LiveAdapterError("OpenClaw live dispatch is refused until disposable workspace and channel-off boundary are publicly provable")
+
+    def dispatch(self, envelope: LiveDispatchEnvelope) -> LiveAdapterObservation:
+        raise LiveAdapterError("OpenClaw live dispatch is intentionally not attempted under the current safety lease")
+
+
+__all__ = ["LiveAdapterError", "LiveAdapterObservation", "LiveCodexAdapter", "LiveHermesAdapter", "LiveOpenClawAdapter"]
