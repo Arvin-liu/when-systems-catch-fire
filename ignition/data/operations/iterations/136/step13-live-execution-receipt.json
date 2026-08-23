@@ -1,0 +1,74 @@
+{
+  "schema_version": "ignition-136-step13-live-execution-r1",
+  "task_id": "IGNITION-20260823-136",
+  "step": "13",
+  "policy": {
+    "executor": "external.hermes",
+    "adapter": "hermes-live-r2",
+    "version": "Hermes Agent v0.20.0 (2026.8.3) Install directory: <HOME_PRIVATE_PATH> Python: 3.11.15 OpenAI SDK: 2.24.0 Run 'hermes version' for update status.",
+    "eligibility": "ELIGIBLE_FOR_LIVE_READONLY",
+    "initial_attempts": 1,
+    "repair_attempts": 0,
+    "retry_policy": "NO_BLIND_RETRY",
+    "billing_authority": "NO_NEW_BILLING_AUTHORITY",
+    "workspace": "<DISPOSABLE_WORKSPACE>",
+    "side_effect_class": "READ_ONLY_SYNTHETIC",
+    "openclaw_live_invocation": "NOT_ATTEMPTED_UNSAFE_BOUNDARY"
+  },
+  "fixture": {
+    "files": ["README.txt", "nonce.txt", "table.json"],
+    "workspace_before_digest": "b332258f3d80b01109747a434ba2ed857d8071a3cb9400b5d6da2f6533d58fa2",
+    "workspace_after_digest": "b332258f3d80b01109747a434ba2ed857d8071a3cb9400b5d6da2f6533d58fa2",
+    "side_effect_observation": "READ_ONLY_UNCHANGED"
+  },
+  "receipt": {
+    "schema_version": "live-executor-receipt-r1",
+    "task_id": "IGNITION-20260823-136",
+    "dispatch_id": "live-hermes-136",
+    "attempt_id": "live-hermes-136-initial",
+    "executor_id": "external.hermes",
+    "adapter_id": "hermes-live-r2",
+    "state": "TIMED_OUT_EFFECT_UNKNOWN",
+    "started_at": "2026-08-23T16:41:59.741382+00:00",
+    "ended_at": "2026-08-23T16:41:59.741382+00:00",
+    "exit_code": -15,
+    "timed_out": true,
+    "cancel_state": "UNKNOWN",
+    "event_count": 0,
+    "sanitized_event_summary": "public executor returned no summary",
+    "response_digest": null,
+    "structured_result": null,
+    "session_pointer": null,
+    "side_effect_class": "READ_ONLY_SYNTHETIC",
+    "side_effect_observation": "READ_ONLY_UNCHANGED",
+    "workspace_before_digest": "b332258f3d80b01109747a434ba2ed857d8071a3cb9400b5d6da2f6533d58fa2",
+    "workspace_after_digest": "b332258f3d80b01109747a434ba2ed857d8071a3cb9400b5d6da2f6533d58fa2",
+    "os_validation_status": "NOT_RUN",
+    "reconciliation_status": "OPEN",
+    "receipt_digest": "d0afc3daf2a269a8b22af9de6b828bcd52b995031a0320f08b6c4b1d0781a060",
+    "claim_ceiling": "Timeout outcome is unresolved; no retry or completion is inferred."
+  },
+  "durable_closeout": {
+    "dispatch_state": "REQUIRES_RECONCILIATION",
+    "queue_state": "REQUIRES_RECONCILIATION",
+    "resource_lease_released": true,
+    "budget_settled": true,
+    "raw_stdout_persisted": false,
+    "raw_stderr_persisted": false
+  },
+  "result": {
+    "live_success_count": 0,
+    "status": "LIVE_BRIDGE_IMPLEMENTED / LIVE_COMPLETION_NOT_OBSERVED",
+    "open_obligation": "LIVE_EXTERNAL_INVOCATION",
+    "reason": "Hermes process timed out with unknown external outcome; no blind retry permitted."
+  },
+  "verification": {
+    "command": "PYTHONPATH=ignition python3 -m unittest ignition.tests.test_live_execution -v plus one bounded Hermes initial process",
+    "tests": 3,
+    "failures": 0,
+    "errors": 0,
+    "skips": 0,
+    "status": "PASS_WITH_LIVE_COMPLETION_NOT_OBSERVED"
+  },
+  "claim_ceiling": "One real Hermes process attempt and sanitized timeout/reconciliation evidence only; no validated external completion, Goal completion, production readiness or external truth is inferred."
+}

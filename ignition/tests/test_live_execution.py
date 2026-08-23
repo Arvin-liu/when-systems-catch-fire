@@ -25,6 +25,16 @@ class FakeCodexTransport:
         return LiveProcessResult(command, str(cwd), 0, json.dumps(event) + "\n", "", 20, False, False, True)
 
 
+class FakeTimeoutTransport(FakeCodexTransport):
+    def __init__(self):
+        super().__init__({})
+
+    def run(self, argv, *, cwd, timeout_seconds, input_text=None, env_overrides=None):
+        if argv[-1] not in {"--version", "--help"} and argv[-2:] != ("exec", "--help"):
+            return LiveProcessResult(tuple(argv), str(cwd), -15, "", "", 100, True, False, True)
+        return super().run(argv, cwd=cwd, timeout_seconds=timeout_seconds, input_text=input_text, env_overrides=env_overrides)
+
+
 class LiveExecutionTests(unittest.TestCase):
     def test_fake_transport_closes_state_receipt_validator_and_durable_dispatch(self):
         with tempfile.TemporaryDirectory() as directory:
@@ -57,6 +67,21 @@ class LiveExecutionTests(unittest.TestCase):
                 self.assertEqual(result.receipt.state, "VALIDATION_FAILED")
                 self.assertEqual(result.durable_record["state"], "FAILED_VALIDATION")
                 self.assertEqual(len(result.state_history), 6)
+
+    def test_timeout_is_reconciliation_and_releases_os_resources_without_retry(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            with DisposableLiveFixture.create(root, nonce="0123456789abcdef01234567") as fixture:
+                fixture.make_read_only()
+                adapter = LiveCodexAdapter(fixture.root, transport=FakeTimeoutTransport(), authentication_observed=True)
+                bridge = coordinator(root / "state")
+                validator = LivePilotValidator(fixture, task_id="IGNITION-20260823-136", dispatch_id="d-orch", attempt_id="a-orch", executor_id="external.codex")
+                result = execute_bounded_attempt(adapter=adapter, envelope=envelope(), coordinator=bridge, fixture=fixture, validator=validator, observed_at="2026-08-24T00:00:00+08:00")
+                self.assertFalse(result.success)
+                self.assertEqual(result.receipt.state, "TIMED_OUT_EFFECT_UNKNOWN")
+                self.assertEqual(result.durable_record_state if hasattr(result, "durable_record_state") else result.to_dict()["durable_record_state"], "REQUIRES_RECONCILIATION")
+                self.assertEqual(bridge.queue.audit()["state_counts"]["REQUIRES_RECONCILIATION"], 1)
+                self.assertEqual(len(bridge.resources.active(now=100.0)), 0)
 
 
 if __name__ == "__main__":

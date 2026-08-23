@@ -38,6 +38,9 @@ class LiveAttemptResult:
         return self.receipt.state == "COMPLETED_VALIDATED" and self.validation is not None and self.validation.status == "PASS"
 
     def to_dict(self) -> dict[str, Any]:
+        durable_state = self.durable_record.get("state")
+        if durable_state is None and isinstance(self.durable_record.get("record"), Mapping):
+            durable_state = self.durable_record["record"].get("state")
         return {
             "schema": LIVE_EXECUTION_SCHEMA,
             "executor_id": self.receipt.executor_id,
@@ -47,7 +50,7 @@ class LiveAttemptResult:
             "receipt": self.receipt.to_dict(),
             "validation": self.validation.to_dict() if self.validation else None,
             "state_history": [dict(item) for item in self.state_history],
-            "durable_record_state": self.durable_record.get("state"),
+            "durable_record_state": durable_state,
             "claim_ceiling": self.claim_ceiling,
         }
 
@@ -122,7 +125,7 @@ def execute_bounded_attempt(
         reconciliation = "OPEN"
     else:
         try:
-            if not observation.parsed:
+            if not observation.parsed or observation.process.returncode != 0:
                 machine.record_executor_return(parsed=False, returncode=observation.process.returncode)
                 final_state = machine.state
                 structured = None
