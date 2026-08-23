@@ -1,0 +1,147 @@
+{
+  "schema_version": "ignition-135-step12-fresh-clone-full-regression-r1",
+  "task_id": "IGNITION-20260822-135",
+  "step": "12",
+  "status": "PASS",
+  "candidate_head_sha": "0eb2e5654b80701a139a4c03e8c90acb9b7ab578",
+  "fresh_clone": {
+    "source_remote_branch": "refs/heads/codex/ignition-135-full-regression-closure-test-environment-r1-20260822",
+    "source_remote_sha": "0eb2e5654b80701a139a4c03e8c90acb9b7ab578",
+    "clone_mode": "fresh remote clone with no copied .venv, cache, generated temporary state or untracked files",
+    "head_sha": "0eb2e5654b80701a139a4c03e8c90acb9b7ab578",
+    "clean_before": true,
+    "clean_after": true,
+    "tracked_path_count": 3066
+  },
+  "projection_preflight": {
+    "status": "PASS",
+    "require_clean": true,
+    "failed_checks": [],
+    "projection_checks_pass": true,
+    "release_admission": true,
+    "side_effect_detected": false,
+    "clean_tree_gate_pass": true,
+    "worktree_before": {
+      "clean": true,
+      "status_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "tracked_content_sha256": "78f36984b766c3d076c280bb96afa4f6e4b34ad80781c731fad8f57650846639",
+      "tracked_path_count": 3066
+    },
+    "worktree_after": {
+      "clean": true,
+      "status_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "tracked_content_sha256": "78f36984b766c3d076c280bb96afa4f6e4b34ad80781c731fad8f57650846639",
+      "tracked_path_count": 3066
+    },
+    "path_manifest": {
+      "tracked": 3066,
+      "manifest": 3066,
+      "sha256": "3fd2fe95163ed7272cc7ee6a9c885dd95b017f6747e98ff24fb69f91899ba9d4",
+      "missing": 0,
+      "stale": 0,
+      "unresolved": 0,
+      "duplicate": 0,
+      "category_drift": 0,
+      "anti_backflow": 0
+    },
+    "current_gates": {
+      "current_facts": "PASS",
+      "current_snapshot": "PASS",
+      "surface_compiler": "PASS",
+      "current_surface_semantics": "PASS",
+      "current_projection_determinism": "PASS",
+      "human_surface_contract": "PASS entries=48 machine_components=94 visible_graph_nodes=82 typed_graph_edges=87",
+      "repository_path_manifest": "PASS",
+      "durability_projection_hygiene": "PASS historical_residuals=9 sympy_residuals=1"
+    }
+  },
+  "discovery_inventory": {
+    "fresh_clone_loader_runs": 1,
+    "test_file_count": 172,
+    "test_case_count": 1082,
+    "loader_errors": 0,
+    "test_id_sha256": "28fbc92c4a3c93b1add49e46286b97569e170c9c1cad24278d4a14f60407b3a8",
+    "relative_test_file_list_sha256": "2dd40796f2e17dbf27cc0b2f6156d5e13b05a0f1742e14edc9c1c6e5ab387ae1",
+    "first_ids": [
+      "foundation.test_claim_governance.ClaimGovernanceTests.test_census_is_deterministic",
+      "foundation.test_claim_governance.ClaimGovernanceTests.test_d183_term_count_counterexample",
+      "foundation.test_claim_governance.ClaimGovernanceTests.test_d260_math_and_interpretation_split"
+    ],
+    "last_ids": [
+      "test_transition_grammar.TransitionGrammarTests.test_missing_provenance_fails",
+      "test_transition_grammar.TransitionGrammarTests.test_registry_is_source_bound",
+      "test_transition_grammar.TransitionGrammarTests.test_soft_current_rule_cannot_become_canonical"
+    ],
+    "matches_step11_canonical_test_id_inventory": true,
+    "step11_reference": {
+      "test_file_count": 172,
+      "test_case_count": 1082,
+      "test_id_sha256": "28fbc92c4a3c93b1add49e46286b97569e170c9c1cad24278d4a14f60407b3a",
+      "loader_errors": 0
+    },
+    "import_side_effect_scope": "external temporary canonical migration directory only; no repository path mutation"
+  },
+  "full_suite": {
+    "command": "python3 ignition/tools/run_full_regression.py --provision-isolated --output-dir <external-temporary-capture>",
+    "working_directory": "ignition",
+    "runtime_seconds": 2763.183,
+    "elapsed_seconds": 2764.47,
+    "exit_code": 0,
+    "process_returncode": 0,
+    "tests_run": 1082,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "summary": "OK",
+    "status": "PASS",
+    "natural_window": {
+      "minimum_supported_seconds": 14400,
+      "process_completed_naturally": true,
+      "watchdog_used": false
+    }
+  },
+  "environment_contract": {
+    "isolated": true,
+    "dependency_preflight": "PASS",
+    "python_version": "3.14.6",
+    "bootstrap_python": "Python 3.14.6",
+    "execution_python": "temporary isolated foundation venv outside repository",
+    "requirements": {
+      "sympy": "1.14.0",
+      "z3-solver": "4.16.0.0",
+      "jsonschema": "4.26.0"
+    },
+    "path_prepend_contract": "execution interpreter directory precedes inherited PATH for portable python3 child validators"
+  },
+  "side_effect_observation": {
+    "clean_before": true,
+    "clean_after": true,
+    "tracked_mutations": [],
+    "generated_output_drift": [],
+    "before_status": [],
+    "after_status": []
+  },
+  "residual_non_growth": {
+    "residual_ledger_path": "ignition/data/operations/residual-ledger-r1.json",
+    "residual_ledger_sha256": "3dc7291912b53e6042c1ca7d65afc842616e7b2a6a80b558defd8e7520bb1783",
+    "historical_residuals": 9,
+    "sympy_environment_residuals": 1,
+    "ledger_incremented_by_suite": false,
+    "residual_expanded": false
+  },
+  "capture": {
+    "location": "external temporary directory; not part of the formal repository",
+    "stdout_bytes": 5371,
+    "stdout_sha256": "53fea7e0750502a0852b343edf94f94b0d462298bef7eead54b7f18e519cb33e",
+    "stderr_bytes": 1530,
+    "stderr_sha256": "ebdee1e642d7b5d72def51ac84ebdce07ab1f735fe313e8d43335fa6ac3bbb55"
+  },
+  "prohibited_green_laundering": {
+    "skip_added": false,
+    "xfail_added": false,
+    "expected_failure_added": false,
+    "ignore_added": false,
+    "residual_expanded": false
+  },
+  "claim_ceiling": "Exact fresh-clone natural full-suite evidence for the exact remote candidate SHA; no whole-project correctness, external truth, production readiness, Owner acceptance or epistemic acceptance is inferred."
+}

@@ -23,7 +23,7 @@
 - current_state_status: `CURRENT_WITH_OPEN_OBLIGATIONS`；EPISTEMICALLY_ACCEPTED=0；epistemic_acceptance: `0`；live_external_ceiling: `NOT_RUN_LIVE_EXTERNAL_INVOCATION`。
 - architecture_counts: `registry=94; visible_nodes=82; visible_edges=87`；active_overlays: `Durability / Lifecycle, Steering / Intent / Goal / Obligation, Structural Governance Surface`。
 - task_lineage: current `IGNITION-20260822-134` `COMPLETED_WITH_CLASSIFIED_RESIDUALS`；predecessor `HISTORICAL_UNEXECUTED_REBASED_INTO_127` / `REBASED_INTO_127`；successor `COMPLETED_WITH_CLASSIFIED_RESIDUALS`。
-- source: ignition/data/operations/current-snapshot-r1.json；source_digest: `c865bd4840b8ec8d232cc78163af82f4cc3930e7adf4360701d0bc5628f10527`。
+- source: ignition/data/operations/current-snapshot-r1.json；source_digest: `0a3b9f700a3d2beda3b73d54a78b395175ad32b0daa266168b984b5a77a07f9e`。
 - claim_ceiling: Deterministic repository-local Current projection only; no Owner authority, external truth, production readiness or epistemic upgrade.
 <!-- CURRENT-SNAPSHOT:END -->
 
