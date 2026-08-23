@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [title: "结构保守性元定理"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-62BA45D37EE701D7 / title: "结构保守性元定理" / IMPLICIT-62BA45D37EE701D7 / IMPLICIT-89A55C09674138A5
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "结构保守性元定理"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-89A55C09674138A5 / title: "结构保守性元定理" / IMPLICIT-89A55C09674138A5 / IMPLICIT-62BA45D37EE701D7
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "结构保守性元定理"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-9AEF5D8ED577C770 / title: "结构保守性元定理" / IMPLICIT-9AEF5D8ED577C770 / IMPLICIT-62BA45D37EE701D7
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
 - [title: "统一内部驱动力"](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-4B56AD3BEA973157 / title: "统一内部驱动力" / IMPLICIT-4B56AD3BEA973157

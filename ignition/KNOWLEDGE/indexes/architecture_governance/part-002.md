@@ -2199,6 +2199,11 @@
   - 可搜索名称：NFC-b2d9d3e930fd331f / current_path_manifest: `classification-manifest.jsonl` remains the Current generated snapshot; the terminal candidate ha
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
+- [current_path_manifest: the final manifest-last receipt records the live tree with missing, stale, unresolved, duplicate,](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-d3dfa545450e61b0 / current_path_manifest: the final manifest-last receipt records the live tree with missing, stale, unresolved, duplicate,
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [CURRENT_SNAPSHOT claim_ceiling="Deterministic repository-local Current projection only; no Owner authority, external tru](../../ASSET-CARDS.md#asset-nfc-e01c28ab6e18083d)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-e01c28ab6e18083d / CURRENT_SNAPSHOT claim_ceiling="Deterministic repository-local Current projection only; no Owner authority, external tru / CURRENT_SNAPSHOT claim_ceiling="Deterministic repository-local Current projection only; no Owner authority, external truth, production readiness or epistemic upgrade."
@@ -2498,9 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-FD48AA6645CC6CB3 / def __init__\( / IMPLICIT-FD48AA6645CC6CB3 / IMPLICIT-344A578C292A2FAD
   - 来源：`agent_federation/router.py`
-  - 依赖：—；被引用：—
-- [def __init__\(self\) -> None:](../../../agent_federation/convergence.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-00B5623C48EFD409 / def __init__\(self\) -> None: / IMPLICIT-00B5623C48EFD409 / IMPLICIT-CB0DAC763D690CB3
-  - 来源：`agent_federation/convergence.py`
   - 依赖：—；被引用：—

@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [If upstream objects D_{T9} exist, compose F_{T9}=N\(⊕_{g∈D_{T9}} g\); otherwise treat F_{T9} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-4c496b1e3100c076 / If upstream objects D_{T9} exist, compose F_{T9}=N\(⊕_{g∈D_{T9}} g\); otherwise treat F_{T9} as an axiom seed.
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：T9；被引用：—
 - [IGNITION-20260816-122 Federation R1 Progress](../../ASSET-CARDS.md#asset-hr-6e03f66c845de70f)
   - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
   - 可搜索名称：IGNITION-20260816-122 Federation R1 Progress / ignition-122-federation-progress
@@ -1219,6 +1224,11 @@
   - 可搜索名称：NFC-83ccf8d160c52936 / main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; formal `main` remains `d60ec8687fb1cc6b972e831a8f0dcd348ba0e83e`. This is a
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
+- [main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; formal `main` remains at the verified `421a41462e26f8323c7b811e61d47f26232d](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-cc8c63c33ebe19f4 / main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; formal `main` remains at the verified `421a41462e26f8323c7b811e61d47f26232d
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; formal `main` remains at the verified `517510aed545ff440c3464536ba2964c94e5](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-86ba91e8a2af0dda / main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; formal `main` remains at the verified `517510aed545ff440c3464536ba2964c94e5
@@ -1442,6 +1452,11 @@
 - [next_read: read `data/operations/iterations/133/step10-deterministic-current-surface-r1.json`, `data/operations/current-](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
   - 可搜索名称：NFC-b4230279e5063286 / next_read: read `data/operations/iterations/133/step10-deterministic-current-surface-r1.json`, `data/operations/current-
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [next_read: read the Task135 formal result, machine receipt, final Step16 preflight receipt and manifest-last path eviden](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-0b6443806a1b657d / next_read: read the Task135 formal result, machine receipt, final Step16 preflight receipt and manifest-last path eviden
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
 - [NF-001 绩效绑定裹挟**（函数，清晰机制链，挂 EXIT 族）](../../../outputs/audit/teacher-competition-backfill-review-20260708.md)
@@ -2488,19 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-d3573051fd95b15c / psi0_path = os.path.join\(BASE_DIR, "已迁移的历史函数来源/0001-Ψ₀元函数完整数学定义.md"\)
   - 来源：`data/external-research/120-function-paradigm-atlas/120-validator.py`
-  - 依赖：—；被引用：—
-- [psychological facts, or causal effects.](../../../reports/external-research/pointfire-getnote-external-verification-r1-20260813.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-9f000409d590a215 / psychological facts, or causal effects.
-  - 来源：`reports/external-research/pointfire-getnote-external-verification-r1-20260813.md`
-  - 依赖：—；被引用：—
-- [Publication and code provenance are available, but no artifact registry lifecycle or version-state machine is specified.](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-f7268ad6a0f5a094 / Publication and code provenance are available, but no artifact registry lifecycle or version-state machine is specified.
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
-  - 依赖：—；被引用：—
-- [Publication remains separate: lifecycle readiness is not publication, the authority remains `REMOTE_REF_OBSERVATION`, th](../../../reports/operations/ignition-132-step09-canonical-current-migration.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-b779ec532f25b524 / Publication remains separate: lifecycle readiness is not publication, the authority remains `REMOTE_REF_OBSERVATION`, th
-  - 来源：`reports/operations/ignition-132-step09-canonical-current-migration.md`
   - 依赖：—；被引用：—

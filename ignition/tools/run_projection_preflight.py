@@ -123,7 +123,9 @@ def run_checks(contract: dict[str, Any], selected: set[str] | None = None) -> di
             {
                 "id": row["id"],
                 "category": row["category"],
-                "argv": argv,
+                # Preserve the interpreter identity without persisting the
+                # machine-local absolute executable path in a formal receipt.
+                "argv": [Path(sys.executable).name, *row["argv"]],
                 "returncode": process.returncode,
                 "status": "PASS" if process.returncode == 0 else "FAIL",
                 "duration_seconds": round(elapsed, 3),

@@ -4,6 +4,31 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Within the source-defined scope, CAI做中间层能大幅提升跨认知gap沟通效率 is adjudicated as METRIC: CAI做中间层能大幅提升跨认知gap沟通效率。. This is a mod](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D155 / Within the source-defined scope, CAI做中间层能大幅提升跨认知gap沟通效率 is adjudicated as METRIC: CAI做中间层能大幅提升跨认知gap沟通效率。. This is a mod
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, D158案例可靠性分类函数 is adjudicated as RELATION: M1对562案例的定量影响：D158a-f的49案例中约30-40%需用Φ_2或Φ_exa](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D291 / Within the source-defined scope, D158案例可靠性分类函数 is adjudicated as RELATION: M1对562案例的定量影响：D158a-f的49案例中约30-40%需用Φ_2或Φ_exa
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：D158；被引用：—
+- [Within the source-defined scope, D158预测失效阈值函数 is adjudicated as METRIC: M1的ΔΦ导致D158预测误差\|e^{ΔΦ}-1\|：ΔΦ=1→误差172%→预测失效。pᵢ<0.](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D276 / Within the source-defined scope, D158预测失效阈值函数 is adjudicated as METRIC: M1的ΔΦ导致D158预测误差\|e^{ΔΦ}-1\|：ΔΦ=1→误差172%→预测失效。pᵢ<0.
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：D158；被引用：—
+- [Within the source-defined scope, D541｜道德自居-认知偏差函数 is adjudicated as MECHANISM_MODEL: 道德自居-认知偏差函数. This is a model-intern](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D541 / Within the source-defined scope, D541｜道德自居-认知偏差函数 is adjudicated as MECHANISM_MODEL: 道德自居-认知偏差函数. This is a model-intern
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：D541；被引用：—
+- [Within the source-defined scope, D542｜植物蛋白质网络函数 is adjudicated as MECHANISM_MODEL: 植物蛋白质网络函数. This is a model-internal c](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D542 / Within the source-defined scope, D542｜植物蛋白质网络函数 is adjudicated as MECHANISM_MODEL: 植物蛋白质网络函数. This is a model-internal c
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：D542；被引用：—
 - [Within the source-defined scope, D543｜群体智能函数 is adjudicated as MECHANISM_MODEL: 群体智能函数. This is a model-internal control](../../../data/foundation/adjudications/core-kernel.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
   - 可搜索名称：CLAIM-D543 / Within the source-defined scope, D543｜群体智能函数 is adjudicated as MECHANISM_MODEL: 群体智能函数. This is a model-internal control
@@ -2477,30 +2502,5 @@
 - [Within the source-defined scope, 配分函数-门控和函数 is adjudicated as RELATION: 配分函数-门控和函数，配分函数Z=Σe^{-βE}描述门控面Λ的全局统计性质。. This is](../../../data/foundation/adjudications/core-kernel.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
   - 可搜索名称：CLAIM-D203 / Within the source-defined scope, 配分函数-门控和函数 is adjudicated as RELATION: 配分函数-门控和函数，配分函数Z=Σe^{-βE}描述门控面Λ的全局统计性质。. This is
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 重整化群-门槛标度函数 is adjudicated as METRIC: 重整化群-门槛标度函数，重整化群流=门控面Λ的标度变换。. This is a model-int](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D200 / Within the source-defined scope, 重整化群-门槛标度函数 is adjudicated as METRIC: 重整化群-门槛标度函数，重整化群流=门控面Λ的标度变换。. This is a model-int
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 量子力学门槛聚集函数 is adjudicated as METRIC: 量子力学门槛聚集函数，量子力学是多门槛系统，门槛Λ_i（能级）高度聚集。门槛聚集度ḡ高→阶段2宽→临](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：CLAIM-D186 / Within the source-defined scope, 量子力学门槛聚集函数 is adjudicated as METRIC: 量子力学门槛聚集函数，量子力学是多门槛系统，门槛Λ_i（能级）高度聚集。门槛聚集度ḡ高→阶段2宽→临
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 量子引力-新门控面预测 is adjudicated as RELATION: M5的量子引力无极小点可能通过增加低p门控面（新基本力）来修复。p*∝√n→增加n提高p*→如](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D272 / Within the source-defined scope, 量子引力-新门控面预测 is adjudicated as RELATION: M5的量子引力无极小点可能通过增加低p门控面（新基本力）来修复。p*∝√n→增加n提高p*→如
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 量子引力Φ框架函数 is adjudicated as FORMAL_PROPOSITION: T34说Φ_QG在M_Planck附近无稳定极小点。D225说B型是极小点存在](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：CLAIM-T34 / Within the source-defined scope, 量子引力Φ框架函数 is adjudicated as FORMAL_PROPOSITION: T34说Φ_QG在M_Planck附近无稳定极小点。D225说B型是极小点存在
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：D225, T34；被引用：—
-- [Within the source-defined scope, 量子隧穿-门槛突破函数 is adjudicated as METRIC: 量子隧穿-门槛突破函数，量子隧穿=门控面突破的概率过程。. This is a model-int](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D196 / Within the source-defined scope, 量子隧穿-门槛突破函数 is adjudicated as METRIC: 量子隧穿-门槛突破函数，量子隧穿=门控面突破的概率过程。. This is a model-int
   - 来源：`data/foundation/adjudications/core-kernel.jsonl`
   - 依赖：—；被引用：—

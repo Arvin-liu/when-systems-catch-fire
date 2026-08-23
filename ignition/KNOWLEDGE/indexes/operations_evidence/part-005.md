@@ -6,6 +6,11 @@
 
 - [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M37.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M37.json)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：P4310319945 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M37.json / P4310319945 / A5009474972
+  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M37.json`
+  - 依赖：—；被引用：—
+- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M37.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M37.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：T12267 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M37.json / T12267 / A5009474972
   - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M37.json`
   - 依赖：—；被引用：—
@@ -192,6 +197,11 @@
 - [delta: terminalizes Task134 after residual non-growth, Current generated path-manifest closure, eleven-item Human Surfac](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-2b271ed98e21f997 / delta: terminalizes Task134 after residual non-growth, Current generated path-manifest closure, eleven-item Human Surfac
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [delta: terminalizes Task135 after exact Task134 failure inventory closure, canonical isolated-environment full-suite PAS](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-eaa020c2f5bd4417 / delta: terminalizes Task135 after exact Task134 failure inventory closure, canonical isolated-environment full-suite PAS
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
 - [Derived and external surfaces remain distinct from repository sources. Current human result projections are repository f](../../../ITERATION.md)
@@ -462,6 +472,11 @@
 - [epistemic_state: `CURRENT_WITH_OPEN_OBLIGATIONS` and `EPISTEMICALLY_ACCEPTED=0` remain unchanged. Structured validation,](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-b6327351e49da1bc / epistemic_state: `CURRENT_WITH_OPEN_OBLIGATIONS` and `EPISTEMICALLY_ACCEPTED=0` remain unchanged. Structured validation,
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [epistemic_state: `CURRENT_WITH_OPEN_OBLIGATIONS` and `EPISTEMICALLY_ACCEPTED=0` remain unchanged. Terminal closure, dete](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a67139558926711d / epistemic_state: `CURRENT_WITH_OPEN_OBLIGATIONS` and `EPISTEMICALLY_ACCEPTED=0` remain unchanged. Terminal closure, dete
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
 - [epistemic_state: `CURRENT_WITH_OPEN_OBLIGATIONS` and `EPISTEMICALLY_ACCEPTED=0` remain unchanged. Terminal closure, dete](../../../STATE-CHANGELOG.md)
@@ -2487,20 +2502,5 @@
 - [title: "组织衰败的拓扑不可逆 — 组织能力乘法结构，关键岗位空缺→门控→Fisher距离∞→无法从外部恢复，必须重建"](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-22A18AD8C610634D / title: "组织衰败的拓扑不可逆 — 组织能力乘法结构，关键岗位空缺→门控→Fisher距离∞→无法从外部恢复，必须重建" / IMPLICIT-22A18AD8C610634D
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "结构保守性元定理"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-62BA45D37EE701D7 / title: "结构保守性元定理" / IMPLICIT-62BA45D37EE701D7 / IMPLICIT-89A55C09674138A5
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "结构保守性元定理"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-89A55C09674138A5 / title: "结构保守性元定理" / IMPLICIT-89A55C09674138A5 / IMPLICIT-62BA45D37EE701D7
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "结构保守性元定理"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-9AEF5D8ED577C770 / title: "结构保守性元定理" / IMPLICIT-9AEF5D8ED577C770 / IMPLICIT-62BA45D37EE701D7
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—

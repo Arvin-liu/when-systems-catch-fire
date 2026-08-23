@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [psychological facts, or causal effects.](../../../reports/external-research/pointfire-getnote-external-verification-r1-20260813.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-9f000409d590a215 / psychological facts, or causal effects.
+  - 来源：`reports/external-research/pointfire-getnote-external-verification-r1-20260813.md`
+  - 依赖：—；被引用：—
+- [Publication and code provenance are available, but no artifact registry lifecycle or version-state machine is specified.](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-f7268ad6a0f5a094 / Publication and code provenance are available, but no artifact registry lifecycle or version-state machine is specified.
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [Publication remains separate: lifecycle readiness is not publication, the authority remains `REMOTE_REF_OBSERVATION`, th](../../../reports/operations/ignition-132-step09-canonical-current-migration.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-b779ec532f25b524 / Publication remains separate: lifecycle readiness is not publication, the authority remains `REMOTE_REF_OBSERVATION`, th
+  - 来源：`reports/operations/ignition-132-step09-canonical-current-migration.md`
+  - 依赖：—；被引用：—
 - [Purpose: avoid overstating evidence.](../../../inputs/020/formal-protocol-promotion-standard.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-ebbc0fcacc6aff97 / Purpose: avoid overstating evidence.
@@ -304,9 +319,9 @@
   - 可搜索名称：NFC-8e86064bb3e8e211 / release_lifecycle: content-owned `RELEASE_READY`, current task terminal, publication authority `REMOTE_REF_OBSERVATION`,
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
-- [release_lifecycle: task `IGNITION-20260822-135`；content phase `RUNNING`；publication authority `REMOTE_REF_OBSERVATION`；e](../../../AI-HANDOFF.md)
+- [release_lifecycle: task `IGNITION-20260822-135`；content phase `RELEASE_READY`；publication authority `REMOTE_REF_OBSERVAT](../../../AI-HANDOFF.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-0d485ba061b8ad5e / release_lifecycle: task `IGNITION-20260822-135`；content phase `RUNNING`；publication authority `REMOTE_REF_OBSERVATION`；e
+  - 可搜索名称：NFC-ca5d4bf926c60417 / release_lifecycle: task `IGNITION-20260822-135`；content phase `RELEASE_READY`；publication authority `REMOTE_REF_OBSERVAT
   - 来源：`AI-HANDOFF.md`
   - 依赖：—；被引用：—
 - [remote `refs/heads/main`, and passed the existing lifecycle validator.](../../../reports/operations/ignition-131-step00-publication-paradox-audit.md)
@@ -1309,6 +1324,11 @@
   - 可搜索名称：NFC-517c1107f0277504 / The formal PLoT hypothesis identifies reusable concepts with stochastic functions in a universal PPL, combining probabil
   - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
   - 依赖：—；被引用：—
+- [The formal result and machine receipt are candidate-local closure evidence. They do not self-assert the final commit SHA](../../../agent-results/IGNITION-20260822-135-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-78f1d9495fc89ccd / The formal result and machine receipt are candidate-local closure evidence. They do not self-assert the final commit SHA
+  - 来源：`agent-results/IGNITION-20260822-135-result.md`
+  - 依赖：—；被引用：—
 - [The Foundation distinguished formal types and nine statuses, but it had no authoritative ten-class function-identity ove](../../../reports/foundation-architecture/098-claim-governance-implementation.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-704394da53e2a852 / The Foundation distinguished formal types and nine statuses, but it had no authoritative ten-class function-identity ove
@@ -1533,6 +1553,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-f744a116c41fc158 / The Task132 new residual is limited to projection-manifest accounting for its 28 newly added formal paths at this measur
   - 来源：`reports/operations/ignition-132-step11-residual-audit.md`
+  - 依赖：—；被引用：—
+- [The Task135 changed/new formal artifact added-content scan records zero credential/secret literals and zero absolute loc](../../../agent-results/IGNITION-20260822-135-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-9f806b7852b06281 / The Task135 changed/new formal artifact added-content scan records zero credential/secret literals and zero absolute loc
+  - 来源：`agent-results/IGNITION-20260822-135-result.md`
   - 依赖：—；被引用：—
 - [The theorem controls representation or approximation capacity, not optimization error, finite-sample generalization, net](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -2477,30 +2502,5 @@
 - [title: "共享源双重杀伤函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-6971D85C2FA86373 / title: "共享源双重杀伤函数" / IMPLICIT-6971D85C2FA86373
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "共存稳态条件函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-4729BD903977F8ED / title: "共存稳态条件函数" / IMPLICIT-4729BD903977F8ED
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "共存震荡函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-BA7FC27B169298BA / title: "共存震荡函数" / IMPLICIT-BA7FC27B169298BA
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "共存震荡分支函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-81522EF5CE065884 / title: "共存震荡分支函数" / IMPLICIT-81522EF5CE065884
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "共存震荡阻尼函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-5EFA4AAD499A4AB6 / title: "共存震荡阻尼函数" / IMPLICIT-5EFA4AAD499A4AB6
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "共振频率-消耗效率函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-B2DA13E578619DFC / title: "共振频率-消耗效率函数" / IMPLICIT-B2DA13E578619DFC
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—

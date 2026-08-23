@@ -4,6 +4,31 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [已迁移的历史函数来源/0573-D558-智能边界函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-d39705fb80be787a / 已迁移的历史函数来源/0573-D558-智能边界函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D558；被引用：—
+- [已迁移的历史函数来源/0574-D559-记忆锚定函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-2ad8d319fa471f9d / 已迁移的历史函数来源/0574-D559-记忆锚定函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D559；被引用：—
+- [已迁移的历史函数来源/0575-D560-记忆分布式编码函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-01760118dbcb5892 / 已迁移的历史函数来源/0575-D560-记忆分布式编码函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D560；被引用：—
+- [已迁移的历史函数来源/0576-D561-记忆-智能边界函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-a59feab035d29bee / 已迁移的历史函数来源/0576-D561-记忆-智能边界函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D561；被引用：—
+- [已迁移的历史函数来源/0577-D562-记忆哥德尔函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-2a46dfdc0133532b / 已迁移的历史函数来源/0577-D562-记忆哥德尔函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D562；被引用：—
 - [已迁移的历史函数来源/0578-D563-跨系统移植成功函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-8fb5ca95d6d65173 / 已迁移的历史函数来源/0578-D563-跨系统移植成功函数.md
@@ -2479,28 +2504,3 @@
   - 可搜索名称：D298 / 鲁棒系统设计原则函数 / D298
   - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
   - 依赖：D271, D289, D290, D360；被引用：NFC-44966c30ff3330d5, NFC-56747046629bb334, NFC-dadb56b1bf44aace, NFC-e98d250da85e2956
-- [黄金分割0.618在生活中的广泛应用（构图、资产配置、决策时机）验证了跨域统一定理——当多个门控面共存时，最优解总是在一个特定位置（极小点μ*）。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-ea6f5f2deb7f9ea2 / 黄金分割0.618在生活中的广泛应用（构图、资产配置、决策时机）验证了跨域统一定理——当多个门控面共存时，最优解总是在一个特定位置（极小点μ*）。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [黎曼猜想 → **pending**（需要外部数学证明）](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-798ef7b6b193f55d / 黎曼猜想 → **pending**（需要外部数学证明）
-  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
-  - 依赖：—；被引用：—
-- [黎曼猜想本身：**pending**（需要外部数学证明）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-24d23a45f05c6f67 / 黎曼猜想本身：**pending**（需要外部数学证明）
-  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [黎曼猜想（需要外部数学证明）](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-e2f854e5b8c191c2 / 黎曼猜想（需要外部数学证明）
-  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
-  - 依赖：—；被引用：—
-- [黎曼猜想：外部数学证明（被数学界同行审查通过）](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-940fcdbd49946839 / 黎曼猜想：外部数学证明（被数学界同行审查通过）
-  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
-  - 依赖：—；被引用：—

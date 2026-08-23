@@ -2,14 +2,14 @@
 <!-- CURRENT-SNAPSHOT:BEGIN profile=ai schema=current-snapshot-r1 -->
 - Current Snapshot（generated; read this block before interpreting prose）。
 - current_identity_epoch: `os-control-plane-r4-steering-intent-r1`；system_role: `Ignition OS / orchestration-governance layer`。
-- current_formal_task: `IGNITION-20260822-135` (ordinal `135`)；status: `IN_PROGRESS`；terminal: `false`；latest_architecture_changing_task: `IGNITION-20260821-129` (ordinal `129`)；current_iteration_boundary: `135` is a deprecated compatibility alias of `current_formal_task_ordinal`；publication_witness_task: `IGNITION-20260822-135`。
-- release_lifecycle: task `IGNITION-20260822-135`；content phase `RUNNING`；publication authority `REMOTE_REF_OBSERVATION`；embedded publication assertion `NONE`；required ref `refs/heads/main`；post-publication verification must observe that remote ref。
+- current_formal_task: `IGNITION-20260822-135` (ordinal `135`)；status: `COMPLETED_WITH_CLASSIFIED_RESIDUALS`；terminal: `true`；latest_architecture_changing_task: `IGNITION-20260821-129` (ordinal `129`)；current_iteration_boundary: `135` is a deprecated compatibility alias of `current_formal_task_ordinal`；publication_witness_task: `IGNITION-20260822-135`。
+- release_lifecycle: task `IGNITION-20260822-135`；content phase `RELEASE_READY`；publication authority `REMOTE_REF_OBSERVATION`；embedded publication assertion `NONE`；required ref `refs/heads/main`；post-publication verification must observe that remote ref。
 - publication_instruction: run ref-derived verification against `refs/heads/main`; do not infer publication from embedded Current content。
 - current_method: `1.4.0` Current；current_map: `0.12.0` Current；historical_map: `0.11.0` Historical。
 - current_state_status: `CURRENT_WITH_OPEN_OBLIGATIONS`；EPISTEMICALLY_ACCEPTED=0；epistemic_acceptance: `0`；live_external_ceiling: `NOT_RUN_LIVE_EXTERNAL_INVOCATION`。
 - architecture_counts: `registry=94; visible_nodes=82; visible_edges=87`；active_overlays: `Durability / Lifecycle, Steering / Intent / Goal / Obligation, Structural Governance Surface`。
-- task_lineage: current `IGNITION-20260822-135` `IN_PROGRESS`；predecessor `HISTORICAL_UNEXECUTED_REBASED_INTO_127` / `REBASED_INTO_127`；successor `COMPLETED_WITH_CLASSIFIED_RESIDUALS`。
-- source: ignition/data/operations/current-snapshot-r1.json；source_digest: `205517d93667b774db7644cfdf1034f8b2b111dfbbb5e0b7a8a75fc31b588c38`。
+- task_lineage: current `IGNITION-20260822-135` `COMPLETED_WITH_CLASSIFIED_RESIDUALS`；predecessor `HISTORICAL_UNEXECUTED_REBASED_INTO_127` / `REBASED_INTO_127`；successor `COMPLETED_WITH_CLASSIFIED_RESIDUALS`。
+- source: ignition/data/operations/current-snapshot-r1.json；source_digest: `51ebadbf48e838a3489a84dc367022179129db2610d6ef1b4ba9fe700705c2e5`。
 - claim_ceiling: Deterministic repository-local Current projection only; no Owner authority, external truth, production readiness or epistemic upgrade.
 <!-- CURRENT-SNAPSHOT:END -->
 
@@ -319,3 +319,19 @@
 - obligations: complete Step15 Current projections, Step16 formal result/receipt and manifest-LAST closure, then perform the ordinary fast-forward and separate 1111 publication witness; historical Task104–106 residuals must remain exact and non-growing.
 - stale_knowledge: Task134 and all earlier release records remain immutable provenance; old failure counts, historical residual fingerprints and prior Current values cannot be treated as live Task135 truth or silently widened.
 - next_read: read `data/operations/iterations/135/execution-contract-r1.json`, `data/operations/iterations/135/current-state-sync-receipt.json`, the Step10/Step12 natural full-suite receipts and the Task135 residual-ledger R2 evidence before final candidate closure.
+
+## 2026-08-23 — IGNITION-20260822-135-FULL-REGRESSION-CLOSURE-TEST-ENVIRONMENT-R1 — terminal Current release candidate
+
+- main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; formal `main` remains at the verified `421a41462e26f8323c7b811e61d47f26232d61b5` baseline until the separate Step17 ordinary fast-forward and remote-ref witness. This append-only entry records repository-local `RELEASE_READY`, not formal publication.
+- delta: terminalizes Task135 after exact Task134 failure inventory closure, canonical isolated-environment full-suite PASS evidence on the candidate lineage and fresh clone, exact residual non-growth, deterministic projection preflight, Current identity binding and final formal result/receipt creation.
+- current_formal_task: `IGNITION-20260822-135` is terminal with formal ordinal `135`; `current_iteration_boundary=135` remains only the deprecated compatibility alias, while latest architecture-changing task remains `IGNITION-20260821-129` with ordinal `129`.
+- regression_boundary: candidate and fresh-clone natural full suites each report `1082` tests, `0` failures, `0` errors and `0` skips under isolated Python `3.14.6`, SymPy `1.14.0`, z3-solver `4.16.0.0` and jsonschema `4.26.0`; the exact Task134 `12 failures + 3 errors` inventory remains preserved as historical input evidence.
+- residual_boundary: Residual Ledger R2 remains exact and non-growing with one sealed historical Task104–106 residual, one observation-only SymPy environmental residual, four resolved Current residuals, zero Current failures and zero environment blockers.
+- current_path_manifest: the final manifest-last receipt records the live tree with missing, stale, unresolved, duplicate, category-drift and anti-backflow counts all zero; Human Surface source-provenance drift is zero and its compiler-owned Current blocks are excluded from source prose fingerprints.
+- task_lineage: `IGNITION-125` remains `HISTORICAL_UNEXECUTED` with requirements `REBASED_INTO_127`; `IGNITION-127` remains `COMPLETED_WITH_CLASSIFIED_RESIDUALS`; Task134 remains immutable historical terminal provenance and Task135 is the terminal current successor.
+- architecture_boundary: latest architecture-changing task remains `IGNITION-20260821-129`; Task135 is `PRESENTATION_ONLY`, so the map remains `0.12.0` Current with `0.11.0` Historical and the identity epoch remains unchanged.
+- authority_changes: canonical task-lineage, lifecycle, Current Facts, Current Snapshot, Current path manifest, Human Surface materiality and compiler-owned surfaces are synchronized repository-local projections; Task135 introduces no new authority, map version or identity epoch.
+- epistemic_state: `CURRENT_WITH_OPEN_OBLIGATIONS` and `EPISTEMICALLY_ACCEPTED=0` remain unchanged. Terminal closure, deterministic projections, residual classification, test evidence and release readiness are repository-local evidence only; they do not establish external truth, production readiness, Owner acceptance, live executor completion or epistemic acceptance.
+- obligations: Step17 must verify the unchanged formal-main baseline, perform one ordinary fast-forward, verify `refs/heads/main` and a fresh remote-main clone, replay the post-publication Current gate and write the independent 1111 publication witness. The formal repository must not self-witness the final publication SHA.
+- stale_knowledge: Task134 and all earlier release records remain immutable provenance; prior failure counts and historical residual fingerprints cannot be treated as live Task135 truth or silently widened.
+- next_read: read the Task135 formal result, machine receipt, final Step16 preflight receipt and manifest-last path evidence, then complete ordinary main publication and the independent 1111 witness.

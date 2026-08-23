@@ -4,6 +4,31 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Within the source-defined scope, 重整化群-门槛标度函数 is adjudicated as METRIC: 重整化群-门槛标度函数，重整化群流=门控面Λ的标度变换。. This is a model-int](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D200 / Within the source-defined scope, 重整化群-门槛标度函数 is adjudicated as METRIC: 重整化群-门槛标度函数，重整化群流=门控面Λ的标度变换。. This is a model-int
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 量子力学门槛聚集函数 is adjudicated as METRIC: 量子力学门槛聚集函数，量子力学是多门槛系统，门槛Λ_i（能级）高度聚集。门槛聚集度ḡ高→阶段2宽→临](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：CLAIM-D186 / Within the source-defined scope, 量子力学门槛聚集函数 is adjudicated as METRIC: 量子力学门槛聚集函数，量子力学是多门槛系统，门槛Λ_i（能级）高度聚集。门槛聚集度ḡ高→阶段2宽→临
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 量子引力-新门控面预测 is adjudicated as RELATION: M5的量子引力无极小点可能通过增加低p门控面（新基本力）来修复。p*∝√n→增加n提高p*→如](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D272 / Within the source-defined scope, 量子引力-新门控面预测 is adjudicated as RELATION: M5的量子引力无极小点可能通过增加低p门控面（新基本力）来修复。p*∝√n→增加n提高p*→如
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 量子引力Φ框架函数 is adjudicated as FORMAL_PROPOSITION: T34说Φ_QG在M_Planck附近无稳定极小点。D225说B型是极小点存在](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：CLAIM-T34 / Within the source-defined scope, 量子引力Φ框架函数 is adjudicated as FORMAL_PROPOSITION: T34说Φ_QG在M_Planck附近无稳定极小点。D225说B型是极小点存在
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：D225, T34；被引用：—
+- [Within the source-defined scope, 量子隧穿-门槛突破函数 is adjudicated as METRIC: 量子隧穿-门槛突破函数，量子隧穿=门控面突破的概率过程。. This is a model-int](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D196 / Within the source-defined scope, 量子隧穿-门槛突破函数 is adjudicated as METRIC: 量子隧穿-门槛突破函数，量子隧穿=门控面突破的概率过程。. This is a model-int
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
 - [Within the source-defined scope, 链间耦合函数 is adjudicated as NATURAL_LANGUAGE_CANDIDATE: 链间耦合函数，跨链耦合强度由共享节点数决定。. This is a](../../../data/foundation/adjudications/core-kernel.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：CLAIM-D74 / Within the source-defined scope, 链间耦合函数 is adjudicated as NATURAL_LANGUAGE_CANDIDATE: 链间耦合函数，跨链耦合强度由共享节点数决定。. This is a
@@ -2478,29 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-dccc585aebdf35c2 / \| PROVED_ORIGINAL_CLAIM_WITH_ARTIFACT \| 0 \|
   - 来源：`reports/foundation-architecture/085-084-truth-status-correction.md`
-  - 依赖：—；被引用：—
-- [\| PROVED_ORIGINAL_CLAIM_WITH_ARTIFACT \| 必须有可重放 Lean/Z3/SymPy artifact \|](../../../docs/foundation/architecture-structure-freeze-v1.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-c76ba19ac358c55f / \| PROVED_ORIGINAL_CLAIM_WITH_ARTIFACT \| 必须有可重放 Lean/Z3/SymPy artifact \|
-  - 来源：`docs/foundation/architecture-structure-freeze-v1.md`
-  - 依赖：—；被引用：—
-- [\| R2-GETNOTE-007 \| `SUPPORTED_WITHIN_MEASUREMENT_SCOPE` \| 2 \| measurement boundary \| No general psychological mechanism](../../../reports/external-research/pointfire-getnote-external-verification-r1-20260813.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-c5dae2f66233fa86 / \| R2-GETNOTE-007 \| `SUPPORTED_WITHIN_MEASUREMENT_SCOPE` \| 2 \| measurement boundary \| No general psychological mechanism
-  - 来源：`reports/external-research/pointfire-getnote-external-verification-r1-20260813.md`
-  - 依赖：—；被引用：—
-- [\| R2-GETNOTE-011 \| `PARTIALLY_SUPPORTED` \| 3 \| bounded organizational/legal scope \| Formal routes do not establish acces](../../../reports/external-research/pointfire-getnote-external-verification-r1-20260813.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-8d37ca8b77922c43 / \| R2-GETNOTE-011 \| `PARTIALLY_SUPPORTED` \| 3 \| bounded organizational/legal scope \| Formal routes do not establish acces
-  - 来源：`reports/external-research/pointfire-getnote-external-verification-r1-20260813.md`
-  - 依赖：—；被引用：—
-- [\| RETAIN_FORMAL_PROPOSITION_UNPROVED \| 2 \|](../../../reports/foundation-architecture/084-max-adjudication-report.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-76155716716fe196 / \| RETAIN_FORMAL_PROPOSITION_UNPROVED \| 2 \|
-  - 来源：`reports/foundation-architecture/084-max-adjudication-report.md`
-  - 依赖：—；被引用：—
-- [\| Richard J. Sage, “Messianic Deity and Daoist Sage–Ruler” \| Academia Sinica 文章页及 PDF，相关页 2、4、8–12、17、20–21 \| 用于徽宗评论、神霄运](../../../docs/publication/cases/song-huizong-taoism-1117-source.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-c3a5eb40a00c4635 / \| Richard J. Sage, “Messianic Deity and Daoist Sage–Ruler” \| Academia Sinica 文章页及 PDF，相关页 2、4、8–12、17、20–21 \| 用于徽宗评论、神霄运
-  - 来源：`docs/publication/cases/song-huizong-taoism-1117-source.md`
   - 依赖：—；被引用：—

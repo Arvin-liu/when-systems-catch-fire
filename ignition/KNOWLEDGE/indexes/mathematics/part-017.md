@@ -4,6 +4,31 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [本体论—伦理推导](../../../docs/governance/life-community-value-charter.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-c7112866a5ee08da / 本体论—伦理推导
+  - 来源：`docs/governance/life-community-value-charter.md`
+  - 依赖：—；被引用：—
+- [本体论深挖（来源稀缺，优先补齐）](../../../data/external-research/104-deep-dive-queue-105plus.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-258ad44112f49ca8 / 本体论深挖（来源稀缺，优先补齐）
+  - 来源：`data/external-research/104-deep-dive-queue-105plus.jsonl`
+  - 依赖：—；被引用：—
+- [本函数不声称所有绩效制度都会导致裹挟，只描述当关键待遇被强绑定到任务时，形式退出权被实际削弱的机制。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-4c41044e1acb7edf / 本函数不声称所有绩效制度都会导致裹挟，只描述当关键待遇被强绑定到任务时，形式退出权被实际削弱的机制。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [本函数实例化 T40 到「价值—决策」组织情境，填补函数表对应空白，不修改 canonical、不修改 12 元协议记录、不修改价值宪章。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-b69c2a4eefbaa2da / 本函数实例化 T40 到「价值—决策」组织情境，填补函数表对应空白，不修改 canonical、不修改 12 元协议记录、不修改价值宪章。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：T40；被引用：—
+- [本函数描述的是组织压力下群体形成的**适应性钝化稳态**——社会心理层、群体级结构：长期高压使主体压低愧疚感与抵抗感，并把异常状态日常化，最终在群体中形成低敏感、低反抗、低修复的稳定状态。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-3712aa0528a39c2d / 本函数描述的是组织压力下群体形成的**适应性钝化稳态**——社会心理层、群体级结构：长期高压使主体压低愧疚感与抵抗感，并把异常状态日常化，最终在群体中形成低敏感、低反抗、低修复的稳定状态。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
 - [本函数来自跨域 smoke test 的人工构造小材料/测试材料，已出现三领域同构，但仍需真实外部材料继续验证，不直接推出普遍社会规律。跨行业普遍性 pending。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-2bafcab6e38737e8 / 本函数来自跨域 smoke test 的人工构造小材料/测试材料，已出现三领域同构，但仍需真实外部材料继续验证，不直接推出普遍社会规律。跨行业普遍性 pending。
@@ -2479,28 +2504,3 @@
   - 可搜索名称：NFC-4c2db4402375ea64 / 已迁移的历史函数来源/0075-D26-跨层完整退化函数.md
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：D26；被引用：—
-- [已迁移的历史函数来源/0076-D27-级联速度.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-ba17ff5d6958b87c / 已迁移的历史函数来源/0076-D27-级联速度.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D27；被引用：—
-- [已迁移的历史函数来源/0077-D28-顽固者临界比例.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-c7d898126c9c2795 / 已迁移的历史函数来源/0077-D28-顽固者临界比例.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D28；被引用：—
-- [已迁移的历史函数来源/0078-D29-统一内部驱动力函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-4ef633740370c32d / 已迁移的历史函数来源/0078-D29-统一内部驱动力函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D29；被引用：—
-- [已迁移的历史函数来源/0079-D30-ε_eff闭环动力学函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-1d81083394b60655 / 已迁移的历史函数来源/0079-D30-ε_eff闭环动力学函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D30；被引用：—
-- [已迁移的历史函数来源/0080-D31-衰减率干预函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-9298361a7db7437e / 已迁移的历史函数来源/0080-D31-衰减率干预函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D31；被引用：—

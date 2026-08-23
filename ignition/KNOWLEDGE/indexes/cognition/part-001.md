@@ -929,6 +929,11 @@
   - 可搜索名称：NFC-0f3088d7e974ec45 / class OpenClawAdapterError\(AdapterSDKError\):
   - 来源：`agent_federation/adapters/openclaw.py`
   - 依赖：—；被引用：—
+- [Closure evidence](../../../agent-results/IGNITION-20260822-135-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-7f9abf58078f821e / Closure evidence
+  - 来源：`agent-results/IGNITION-20260822-135-result.md`
+  - 依赖：—；被引用：—
 - [compatibility，不是 intelligence。live external inference、login、daemon、](../../../docs/architecture/external-agent-federation-r1.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-6159dbe4f25924fa / compatibility，不是 intelligence。live external inference、login、daemon、
@@ -1118,6 +1123,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-0290c2fbd3445c44 / delta: 把仓库人类入口迁到 `.github/README.md` 并收敛为五个首页部件；根目录归一为 `.github/`、`.gitignore`、`AGENTS.md`、`LICENSE`、`ignition/` 五个条目；新增
   - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [Deterministic projection preflight is a hard gate before regression evidence. Current Facts, Snapshot, all seven compile](../../../agent-results/IGNITION-20260822-135-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-008ba13844b17af6 / Deterministic projection preflight is a hard gate before regression evidence. Current Facts, Snapshot, all seven compile
+  - 来源：`agent-results/IGNITION-20260822-135-result.md`
   - 依赖：—；被引用：—
 - [discovery/load、Profile 投影、Gateway 输入输出、Pack-aware routing、memory](../../../docs/architecture/agent-platform-r2.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
@@ -1593,6 +1603,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-4e82097c1c3bf5e9 / never uses the dangerous bypass flag and never turns Codex's own completion
   - 来源：`agent_federation/adapters/codex.py`
+  - 依赖：—；被引用：—
+- [No `skip`, `xfail`, `expectedFailure` or `ignore` was added to manufacture green status. Historical residuals remain vis](../../../agent-results/IGNITION-20260822-135-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-f59634078386ce66 / No `skip`, `xfail`, `expectedFailure` or `ignore` was added to manufacture green status. Historical residuals remain vis
+  - 来源：`agent-results/IGNITION-20260822-135-result.md`
   - 依赖：—；被引用：—
 - [Object D293 defines a optimization_problem within the point-fire framework. Core: 中文：M9三阶段对应相变分类：阶段1→2≈二级相变（连续过渡→还有救），阶段](../../../data/foundation/adjudications/084-max-decisions.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
@@ -2089,6 +2104,16 @@
   - 可搜索名称：NFC-560e102308eb0e6d / Repository-local Task134 residual non-growth, deterministic projection, bounded regression and pre-publication release r
   - 来源：`agent-results/IGNITION-20260822-134-machine-receipt.json`
   - 依赖：—；被引用：—
+- [Repository-local Task135 regression closure, deterministic projection, residual non-growth and content release-readiness](../../../agent-results/IGNITION-20260822-135-machine-receipt.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-65fc92bf1b540b87 / Repository-local Task135 regression closure, deterministic projection, residual non-growth and content release-readiness
+  - 来源：`agent-results/IGNITION-20260822-135-machine-receipt.json`
+  - 依赖：—；被引用：—
+- [Residual Ledger R2 is exact and non-growing: one sealed historical Task104–106 residual, one observation-only SymPy envi](../../../agent-results/IGNITION-20260822-135-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-de68685b5d535b36 / Residual Ledger R2 is exact and non-growing: one sealed historical Task104–106 residual, one observation-only SymPy envi
+  - 来源：`agent-results/IGNITION-20260822-135-result.md`
+  - 依赖：—；被引用：—
 - [result = ReceiptIngestResult\(status, digest, receipt.federation_task_id, receipt.terminal_state, tuple\(receipt.validatio](../../../agent_federation/convergence.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-be2ce9d3ffc47751 / result = ReceiptIngestResult\(status, digest, receipt.federation_task_id, receipt.terminal_state, tuple\(receipt.validatio
@@ -2319,6 +2344,11 @@
   - 可搜索名称：NFC-ba35bb5a3e228eae / Step 09 的 bounded smoke receipt 只记录 fresh CLI probe、OpenClaw skip 和
   - 来源：`docs/architecture/agent-platform-r2.md`
   - 依赖：—；被引用：—
+- [Step15 was committed and remote-SHA verified at `a6c909523e4e4f4272561a975f4ca4edcb2a9c1d`; Step16's own exact candidate](../../../agent-results/IGNITION-20260822-135-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-efbc42f822e324e8 / Step15 was committed and remote-SHA verified at `a6c909523e4e4f4272561a975f4ca4edcb2a9c1d`; Step16's own exact candidate
+  - 来源：`agent-results/IGNITION-20260822-135-result.md`
+  - 依赖：—；被引用：—
 - [Steps 00–13 were independently committed, pushed and remote-SHA verified. Step 14 is the terminal-closure candidate; its](../../../agent-results/IGNITION-20260822-134-result.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-7710f21febc7ba56 / Steps 00–13 were independently committed, pushed and remote-SHA verified. Step 14 is the terminal-closure candidate; its
@@ -2374,6 +2404,11 @@
   - 可搜索名称：NFC-4a887e91e5bd57c4 / The exact command `PYTHONPATH=ignition python3 -m unittest discover -s ignition/tests -p 'test*.py'` was run with a genu
   - 来源：`agent-results/IGNITION-20260822-134-result.md`
   - 依赖：—；被引用：—
+- [The exact Task134 inventory records 12 failures and 3 errors with no skips, no ignore/xfail/expectedFailure laundering a](../../../agent-results/IGNITION-20260822-135-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-23b59c1d05d0fc4a / The exact Task134 inventory records 12 failures and 3 errors with no skips, no ignore/xfail/expectedFailure laundering a
+  - 来源：`agent-results/IGNITION-20260822-135-result.md`
+  - 依赖：—；被引用：—
 - [The final Current path manifest is `tracked=3023`, `manifest=3023`, with missing, stale, unresolved, duplicate, category](../../../agent-results/IGNITION-20260822-134-result.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-8cec216b3cdc4987 / The final Current path manifest is `tracked=3023`, `manifest=3023`, with missing, stale, unresolved, duplicate, category
@@ -2408,6 +2443,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-28552119c09a7b23 / This receipt proves repository-local deterministic Steering / Intent / Goal / Commitment modeling, authority and non-inf
   - 来源：`agent-results/IGNITION-20260821-129-result.md`
+  - 依赖：—；被引用：—
+- [This result proves only repository-local regression closure, deterministic projection cleanliness, bounded residual non-](../../../agent-results/IGNITION-20260822-135-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-e35e12e0bb8bea3d / This result proves only repository-local regression closure, deterministic projection cleanliness, bounded residual non-
+  - 来源：`agent-results/IGNITION-20260822-135-result.md`
   - 依赖：—；被引用：—
 - [This result proves repository-local deterministic projection, semantic consistency, lifecycle bookkeeping and release tr](../../../agent-results/IGNITION-20260821-130-result.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -2464,43 +2504,3 @@
   - 可搜索名称：NFC-9c369cf1db765e44 / title: "糖域实验×认知螺旋"
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [title: "认知光锥验证 — 职业锁定：3维锁定（n_lock=3）的工程师v_max降低60%→5年可达状态减少75%→光锥严重收缩。解锁1维后v_max恢复40%→光锥扩大2.5倍 / 认知光锥验证 - 职业锁定: 3维锁定\(n_l](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-4fb29ac8772547e9 / title: "认知光锥验证 — 职业锁定：3维锁定（n_lock=3）的工程师v_max降低60%→5年可达状态减少75%→光锥严重收缩。解锁1维后v_max恢复40%→光锥扩大2.5倍 / 认知光锥验证 - 职业锁定: 3维锁定\(n_l
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [title: "认知叠加验证 — 专家vs通才：专家r_cross≈0.1（2条弱关联轨道），通才r_cross≈0.6（5条强关联轨道）。面对新问题通才5条轨道同时激活，专家1条轨道主导"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-4273da11a606e196 / title: "认知叠加验证 — 专家vs通才：专家r_cross≈0.1（2条弱关联轨道），通才r_cross≈0.6（5条强关联轨道）。面对新问题通才5条轨道同时激活，专家1条轨道主导"
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [title: "认知时间膨胀验证 — 危机决策实验：ε高的决策者（专家）平均决策时间2分钟，ε低的决策者（新手）平均决策时间8分钟。同样事件，新手感知时间膨胀4倍=γ_cog≈4→ε₀/ε≈0.97"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-e87de069c3c000d1 / title: "认知时间膨胀验证 — 危机决策实验：ε高的决策者（专家）平均决策时间2分钟，ε低的决策者（新手）平均决策时间8分钟。同样事件，新手感知时间膨胀4倍=γ_cog≈4→ε₀/ε≈0.97"
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [title: "认知空间曲率验证 — 社会比较：均匀社会（北欧）εᵢ标准差0.08→R_cog≈0→策略趋同；不平等社会（巴西）εᵢ标准差0.45→R_cog显著→策略分化→级联易发"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-786e1a83cd47b2c0 / title: "认知空间曲率验证 — 社会比较：均匀社会（北欧）εᵢ标准差0.08→R_cog≈0→策略趋同；不平等社会（巴西）εᵢ标准差0.45→R_cog显著→策略分化→级联易发"
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [title: "认知等效原理验证 — 组织诊断：观测到ε_eff下降30%，仅从ε_eff无法判断来源。潮汐力分析：经济维度ε_econ下降50%但社交维度ε_social仅下降10%→非均匀衰减→C_exit锁定为主（曲率）"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-89853AEF150F6DBC / title: "认知等效原理验证 — 组织诊断：观测到ε_eff下降30%，仅从ε_eff无法判断来源。潮汐力分析：经济维度ε_econ下降50%但社交维度ε_social仅下降10%→非均匀衰减→C_exit锁定为主（曲率）" / IMPLICIT-89853AEF150F6DBC
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "认知等效原理验证 — 组织诊断：观测到ε_eff下降30%，仅从ε_eff无法判断来源。潮汐力分析：经济维度ε_econ下降50%但社交维度ε_social仅下降10%→非均匀衰减→C_exit锁定为主（曲率）"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-7aa712b7abac888b / title: "认知等效原理验证 — 组织诊断：观测到ε_eff下降30%，仅从ε_eff无法判断来源。潮汐力分析：经济维度ε_econ下降50%但社交维度ε_social仅下降10%→非均匀衰减→C_exit锁定为主（曲率）"
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [title: "认知黑洞验证 — 家暴受害者：4维锁定（经济/社交/心理/地理）→∏\(1-σ\)≈0.001→z_cog≈999→信号红移99.9%→外部几乎无法感知内部状态。解锁心理维度后z降至50→信号可部分逃逸"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-5a420550fc0c408f / title: "认知黑洞验证 — 家暴受害者：4维锁定（经济/社交/心理/地理）→∏\(1-σ\)≈0.001→z_cog≈999→信号红移99.9%→外部几乎无法感知内部状态。解锁心理维度后z降至50→信号可部分逃逸"
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [title: "路径积分验证 — 创业决策：ℏ_eff=0.1时策略集中在最优路径附近（D118预测），ℏ_eff=0.8时策略分散在多条路径（非最优策略也有显著概率）。经验创业者ℏ_eff低（信息充分噪声小），新手ℏ_eff高"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-ba67d301067f78b4 / title: "路径积分验证 — 创业决策：ℏ_eff=0.1时策略集中在最优路径附近（D118预测），ℏ_eff=0.8时策略分散在多条路径（非最优策略也有显著概率）。经验创业者ℏ_eff低（信息充分噪声小），新手ℏ_eff高"
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D118；被引用：—

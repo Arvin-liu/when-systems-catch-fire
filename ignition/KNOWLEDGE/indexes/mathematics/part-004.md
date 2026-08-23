@@ -359,6 +359,11 @@
   - 可搜索名称：NFC-b5b16104a9dffeb1 / Current claim ceiling: MCF is a repository-native representation candidate for navigating multiscale causal hypotheses a
   - 来源：`data/architecture/multiscale-causal-fabric/README.md`
   - 依赖：—；被引用：—
+- [Current path classification is regenerated only after all Task135 formal paths are present; final missing, stale, unreso](../../../agent-results/IGNITION-20260822-135-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-82df86a6c23d4524 / Current path classification is regenerated only after all Task135 formal paths are present; final missing, stale, unreso
+  - 来源：`agent-results/IGNITION-20260822-135-result.md`
+  - 依赖：—；被引用：—
 - [Current version: Ignition is the driver and OS / orchestration-governance layer for a bounded Agent Platform repository](../../../llms.txt)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
   - 可搜索名称：NFC-f65ab18ca10355af / Current version: Ignition is the driver and OS / orchestration-governance layer for a bounded Agent Platform repository
@@ -371,7 +376,7 @@
   - 依赖：—；被引用：—
 - [CURRENT_SNAPSHOT architecture_counts={"current_map_version": "0.12.0", "hidden_components": 12, "historical_map_version"](../../../llms.txt)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-2bc99c41470611c9 / CURRENT_SNAPSHOT architecture_counts={"current_map_version": "0.12.0", "hidden_components": 12, "historical_map_version"
+  - 可搜索名称：NFC-9a2a1b9e64cba7a5 / CURRENT_SNAPSHOT architecture_counts={"current_map_version": "0.12.0", "hidden_components": 12, "historical_map_version"
   - 来源：`llms.txt`
   - 依赖：—；被引用：—
 - [D-meta 元同构函数](../../../docs/phi_meta_law.md)
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-b6d3d2cb388c751f / GPT Owner：可接受项目/出版状态；不能替代 proof、evidence、replication 或外部专家；
   - 来源：`docs/architecture/epistemic-governance-kernel-and-federated-planes.md`
-  - 依赖：—；被引用：—
-- [grand-unification boundary; reopening it would require a new theorem and](../../../reports/foundation-architecture/pointfire-seven-track-foundation-high-impact-frontier-r1-20260813.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-424f0a156d8579c2 / grand-unification boundary; reopening it would require a new theorem and
-  - 来源：`reports/foundation-architecture/pointfire-seven-track-foundation-high-impact-frontier-r1-20260813.md`
   - 依赖：—；被引用：—

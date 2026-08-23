@@ -4,6 +4,26 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [单方面改变制度会降低社会效率](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-7ba11293e737bc67 / 单方面改变制度会降低社会效率
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [单材料 pending / 多材料支持 / 跨域复现 / 证据不足](../../../templates/two-tables/unified-case-entry-template.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-66bb335f7f9c0f30 / 单材料 pending / 多材料支持 / 跨域复现 / 证据不足
+  - 来源：`templates/two-tables/unified-case-entry-template.md`
+  - 依赖：—；被引用：—
+- [单篇推普遍规律**：G_δ 判定 — 单篇文章无法闭合普遍结论，须 pending（evidence_regimes EVID-011/004 限 L3）。✓ 合理](../../../outputs/audit/teacher-competition-backfill-review-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-fb8284f774666ac3 / 单篇推普遍规律**：G_δ 判定 — 单篇文章无法闭合普遍结论，须 pending（evidence_regimes EVID-011/004 限 L3）。✓ 合理
+  - 来源：`outputs/audit/teacher-competition-backfill-review-20260708.md`
+  - 依赖：—；被引用：—
+- [卢叶不理解：明明嘴巴就能讲的事情，非要生成一个智能体，让它去讲。李清淼则听说，有位特级名师，为了一堂千人级别公开课的PK赛，甚至自掏腰包，找游戏公司帮他设计一款课堂使用的游戏，费时半年打磨。](../../../inputs/collisions/20260708-teacher-competition/source.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-c5a8104653c6c28e / 卢叶不理解：明明嘴巴就能讲的事情，非要生成一个智能体，让它去讲。李清淼则听说，有位特级名师，为了一堂千人级别公开课的PK赛，甚至自掏腰包，找游戏公司帮他设计一款课堂使用的游戏，费时半年打磨。
+  - 来源：`inputs/collisions/20260708-teacher-competition/source.md`
+  - 依赖：—；被引用：—
 - [卢叶觉得，这恰恰是课堂的魅力所在。学生卡住之后，老师从哪个方向引导，用什么角度讲解，才最能体现水平。可赛课的评估体系容不下沉默，它容易被视作老师教学有问题。于是呈现在评委面前的，永远是一节节流畅的公开课：没有卡顿，没有冷场，没有学生答不上来](../../../inputs/collisions/20260708-teacher-competition/source.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-5f529d08c02ee75b / 卢叶觉得，这恰恰是课堂的魅力所在。学生卡住之后，老师从哪个方向引导，用什么角度讲解，才最能体现水平。可赛课的评估体系容不下沉默，它容易被视作老师教学有问题。于是呈现在评委面前的，永远是一节节流畅的公开课：没有卡顿，没有冷场，没有学生答不上来
@@ -2482,25 +2502,5 @@
 - [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-b1ac66c112604a9b / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-b75220c6d8adfb85 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-f501b001468a4c15 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-13b9a7c9216fa047 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-a39452ba069ec672 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—

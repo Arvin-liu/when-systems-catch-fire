@@ -4,6 +4,26 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [│ ├── n4_artifact_packager.py](../../../reports/external-research/121Q4-final-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-e9aa703b70c82164 / │ ├── n4_artifact_packager.py
+  - 来源：`reports/external-research/121Q4-final-report.md`
+  - 依赖：—；被引用：—
+- [│ ├── T12 信息门效率统一](../../../outputs/getbrain/v0.2-function-dependency-graph-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-b99b60e46cff318a / │ ├── T12 信息门效率统一
+  - 来源：`outputs/getbrain/v0.2-function-dependency-graph-20260706.md`
+  - 依赖：T12；被引用：—
+- [│ ├── T15 乘法临界漂移统一](../../../outputs/getbrain/v0.2-function-dependency-graph-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-e6247ed9db5dc2af / │ ├── T15 乘法临界漂移统一
+  - 来源：`outputs/getbrain/v0.2-function-dependency-graph-20260706.md`
+  - 依赖：T15；被引用：—
+- [└── C-672 学科案例验证](../../../outputs/getbrain/v0.2-function-dependency-graph-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-bfc4821adaf1ff17 / └── C-672 学科案例验证
+  - 来源：`outputs/getbrain/v0.2-function-dependency-graph-20260706.md`
+  - 依赖：—；被引用：—
 - [└── NF-X3 指标驱动噪声累积 → 暂缓（仅 1/3 领域强出现，跨域证据不足，保持 pending）](../../../outputs/audit/cross-domain-candidate-function-review-20260708.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-38cf4444861ebb7d / └── NF-X3 指标驱动噪声累积 → 暂缓（仅 1/3 领域强出现，跨域证据不足，保持 pending）
@@ -2483,24 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
   - 可搜索名称：NFC-25f6a11e01c6b219 / 单体模型到模型网络相变验证
   - 来源：`data/foundation/evidence/evidence.jsonl`
-  - 依赖：—；被引用：—
-- [单方面改变制度会降低社会效率](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-7ba11293e737bc67 / 单方面改变制度会降低社会效率
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [单材料 pending / 多材料支持 / 跨域复现 / 证据不足](../../../templates/two-tables/unified-case-entry-template.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-66bb335f7f9c0f30 / 单材料 pending / 多材料支持 / 跨域复现 / 证据不足
-  - 来源：`templates/two-tables/unified-case-entry-template.md`
-  - 依赖：—；被引用：—
-- [单篇推普遍规律**：G_δ 判定 — 单篇文章无法闭合普遍结论，须 pending（evidence_regimes EVID-011/004 限 L3）。✓ 合理](../../../outputs/audit/teacher-competition-backfill-review-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-fb8284f774666ac3 / 单篇推普遍规律**：G_δ 判定 — 单篇文章无法闭合普遍结论，须 pending（evidence_regimes EVID-011/004 限 L3）。✓ 合理
-  - 来源：`outputs/audit/teacher-competition-backfill-review-20260708.md`
-  - 依赖：—；被引用：—
-- [卢叶不理解：明明嘴巴就能讲的事情，非要生成一个智能体，让它去讲。李清淼则听说，有位特级名师，为了一堂千人级别公开课的PK赛，甚至自掏腰包，找游戏公司帮他设计一款课堂使用的游戏，费时半年打磨。](../../../inputs/collisions/20260708-teacher-competition/source.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-c5a8104653c6c28e / 卢叶不理解：明明嘴巴就能讲的事情，非要生成一个智能体，让它去讲。李清淼则听说，有位特级名师，为了一堂千人级别公开课的PK赛，甚至自掏腰包，找游戏公司帮他设计一款课堂使用的游戏，费时半年打磨。
-  - 来源：`inputs/collisions/20260708-teacher-competition/source.md`
   - 依赖：—；被引用：—

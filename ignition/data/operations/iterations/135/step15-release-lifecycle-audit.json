@@ -1,9 +1,9 @@
 {
   "claim_ceiling": "Lifecycle validation is repository-local content-readiness evidence only; it is not remote publication, external truth, Owner acceptance or epistemic acceptance.",
-  "content_phase": "RUNNING",
+  "content_phase": "RELEASE_READY",
   "embedded_publication_assertion": "NONE",
   "errors": [],
-  "lifecycle_sha256": "45d6d36fd91c30cb4e81b0560bb6bd8415a9ecb4708464ff6006d01547b3fb75",
+  "lifecycle_sha256": "1f2a0898c7d8b44d21326609b8415f5820105725a796f63f83fe41e09ef91403",
   "publication_authority": "REMOTE_REF_OBSERVATION",
   "result": "PASS",
   "schema_version": "current-release-lifecycle-audit-r1",

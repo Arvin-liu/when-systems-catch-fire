@@ -4,6 +4,26 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [输出审计报告，不生成数据。](../../../docs/machine_readable_data_plan.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-38d8edff5e212dbb / 输出审计报告，不生成数据。
+  - 来源：`docs/machine_readable_data_plan.md`
+  - 依赖：—；被引用：—
+- [输出映射：→ 输出模板「证据制度约束」](../../../docs/p1-data-index-map-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-f8bbe2d26f7976d3 / 输出映射：→ 输出模板「证据制度约束」
+  - 来源：`docs/p1-data-index-map-20260708.md`
+  - 依赖：—；被引用：—
+- [输出样本是否被误当作答案或事实证据；](../../../ARCHITECTURE.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-ff3fc25b51331277 / 输出样本是否被误当作答案或事实证据；
+  - 来源：`ARCHITECTURE.md`
+  - 依赖：—；被引用：—
+- [输出：source_type \(external_paper / experiment / dataset\) + source_reference + verification_record](../../../docs/foundation/architecture-structure-freeze-v1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-4ab64b34c4cc7787 / 输出：source_type \(external_paper / experiment / dataset\) + source_reference + verification_record
+  - 来源：`docs/foundation/architecture-structure-freeze-v1.md`
+  - 依赖：—；被引用：—
 - [边界/反例证据存在](../../../data/protocol-canonical-validation-results.json)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-78e245cfe9b637d9 / 边界/反例证据存在

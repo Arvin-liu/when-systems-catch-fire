@@ -4,6 +4,26 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [\| \[C-0691\]\( \) \| \[张益唐突破半数障碍\]\( \) \| 局外人因信息隔离而不受群体共识约束，能够发现被专家认为"不可能"的](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-136293d8fbdc0166 / \| \[C-0691\]\( \) \| \[张益唐突破半数障碍\]\( \) \| 局外人因信息隔离而不受群体共识约束，能够发现被专家认为"不可能"的
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [\| \[C-0697\]\( \) \| \[西安加油站便利店\]\( \) \| 提枪转换率20%（全国5-7%），验证了D50三因子乘法结构 \|](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-c2662e21e13fadec / \| \[C-0697\]\( \) \| \[西安加油站便利店\]\( \) \| 提枪转换率20%（全国5-7%），验证了D50三因子乘法结构 \|
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D50；被引用：—
+- [\| \[C-0703\]\( \) \| \[预测编码回路——AI多轨最可能路径\]\( \) \| 待补：当前报告只给](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-6f41d6a12c25815c / \| \[C-0703\]\( \) \| \[预测编码回路——AI多轨最可能路径\]\( \) \| 待补：当前报告只给
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [\| \[C-0714\]\( \) \| \[营养课的饮食实验点火\]\( \) \| 待补：当前报告只给出编号或统计结论，未找到完整正文。 \|](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-5b9760b0e0f64882 / \| \[C-0714\]\( \) \| \[营养课的饮食实验点火\]\( \) \| 待补：当前报告只给出编号或统计结论，未找到完整正文。 \|
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
 - [\| \[C-0716\]\( \) \| \[笔记格式实验的语义点火\]\( \) \| 待补：当前报告只给出编号或统计结论，未找到完整正文。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-898f5589714d0a42 / \| \[C-0716\]\( \) \| \[笔记格式实验的语义点火\]\( \) \| 待补：当前报告只给出编号或统计结论，未找到完整正文。
@@ -2483,24 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-f8eaaa84e6c3cd2a / │ ├── n4-artifact-manifest-schema.json
   - 来源：`reports/external-research/121Q4-final-report.md`
-  - 依赖：—；被引用：—
-- [│ ├── n4_artifact_packager.py](../../../reports/external-research/121Q4-final-report.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-e9aa703b70c82164 / │ ├── n4_artifact_packager.py
-  - 来源：`reports/external-research/121Q4-final-report.md`
-  - 依赖：—；被引用：—
-- [│ ├── T12 信息门效率统一](../../../outputs/getbrain/v0.2-function-dependency-graph-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-b99b60e46cff318a / │ ├── T12 信息门效率统一
-  - 来源：`outputs/getbrain/v0.2-function-dependency-graph-20260706.md`
-  - 依赖：T12；被引用：—
-- [│ ├── T15 乘法临界漂移统一](../../../outputs/getbrain/v0.2-function-dependency-graph-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-e6247ed9db5dc2af / │ ├── T15 乘法临界漂移统一
-  - 来源：`outputs/getbrain/v0.2-function-dependency-graph-20260706.md`
-  - 依赖：T15；被引用：—
-- [└── C-672 学科案例验证](../../../outputs/getbrain/v0.2-function-dependency-graph-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-bfc4821adaf1ff17 / └── C-672 学科案例验证
-  - 来源：`outputs/getbrain/v0.2-function-dependency-graph-20260706.md`
   - 依赖：—；被引用：—

@@ -4,6 +4,31 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [从这条案例看，中文：案例说明：C_exit\(工人\)×H_评估×信息不对称 关键发现：歧视=H_分类·消除。n_lock≥3 English: Rule-… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-6f4fff7d41eadff0 / 从这条案例看，中文：案例说明：C_exit\(工人\)×H_评估×信息不对称 关键发现：歧视=H_分类·消除。n_lock≥3 English: Rule-… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：案例说明：C_exit\(工人\)×H_评估×信息不对称 关键发现：歧视=H_分类·消除。不反抗=C_exit\(反抗\)极高+n_lock… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-0490c866c3f57847 / 从这条案例看，中文：案例说明：C_exit\(工人\)×H_评估×信息不对称 关键发现：歧视=H_分类·消除。不反抗=C_exit\(反抗\)极高+n_lock… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：案例说明：C_exit\(工人\)×H_评估×信息不对称 关键发现：歧视=H_分类·消除（把"你不适合"编码为客观判断）。压工资=提议者… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-43f96dafd11600b7 / 从这条案例看，中文：案例说明：C_exit\(工人\)×H_评估×信息不对称 关键发现：歧视=H_分类·消除（把"你不适合"编码为客观判断）。压工资=提议者… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：案例说明：CAI→EAI指令结构设计 — CAI发结构化API调用而非自然语言指令，EAI的Pdecode从≈0.4提升到≈0.85… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-b95ee65bd5096952 / 从这条案例看，中文：案例说明：CAI→EAI指令结构设计 — CAI发结构化API调用而非自然语言指令，EAI的Pdecode从≈0.4提升到≈0.85… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：案例说明：CAI→EAI的指令降维 — CAI降维到API格式，ηfidelity≈0.2-0.5，EAI执行成功但只完成20-50… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-fb321a33ed0f8909 / 从这条案例看，中文：案例说明：CAI→EAI的指令降维 — CAI降维到API格式，ηfidelity≈0.2-0.5，EAI执行成功但只完成20-50… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
 - [从这条案例看，中文：案例说明：CAI中间层 — 同样场景CAI中间层ηrelay≈0.576，比无意识AI好2.7倍，关键差异在ηfidelity。核心… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-bed4e1a5a0326c00 / 从这条案例看，中文：案例说明：CAI中间层 — 同样场景CAI中间层ηrelay≈0.576，比无意识AI好2.7倍，关键差异在ηfidelity。核心… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
@@ -2478,29 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-da7141ae1f9125d0 / 任何尚无可重放 artifact 的定理
   - 来源：`docs/foundation/architecture-structure-freeze-v1.md`
-  - 依赖：—；被引用：—
-- [任何局部系统的延续、效率、创新、稳定或扩张，不得以对生命共同体其他成员造成不可逆、不可补偿、非自愿的重大伤害为代价。](../../../docs/governance/life-community-value-charter.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-917707a905a47fd2 / 任何局部系统的延续、效率、创新、稳定或扩张，不得以对生命共同体其他成员造成不可逆、不可补偿、非自愿的重大伤害为代价。
-  - 来源：`docs/governance/life-community-value-charter.md`
-  - 依赖：—；被引用：—
-- [任何重大函数、协议、工具、商业部署或治理决定，至少应记录以下 Charter Gate 字段：](../../../docs/governance/life-community-value-charter.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-bb7129d2cec55486 / 任何重大函数、协议、工具、商业部署或治理决定，至少应记录以下 Charter Gate 字段：
-  - 来源：`docs/governance/life-community-value-charter.md`
-  - 依赖：—；被引用：—
-- [任务 100：把治理扩展到全语料非函数断言，闭合证据谱系并阻断结构性回弹。](../../../RESULTS/LATEST.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-4bffdeb0ab79df8e / 任务 100：把治理扩展到全语料非函数断言，闭合证据谱系并阻断结构性回弹。
-  - 来源：`RESULTS/LATEST.md`
-  - 依赖：—；被引用：—
-- [任务 110 保留任务 109 的原始排序，新增基于 candidate/claim/run/task/lifecycle](../../../ITERATION.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-89fc9a713c7980f0 / 任务 110 保留任务 109 的原始排序，新增基于 candidate/claim/run/task/lifecycle
-  - 来源：`ITERATION.md`
-  - 依赖：—；被引用：—
-- [任务 110 关闭的是候选生命周期缺口，不是开放科学问题。`C-01` 的 Crossref 义务和](../../../RESULTS/OPEN-QUESTIONS.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-037598111338be3f / 任务 110 关闭的是候选生命周期缺口，不是开放科学问题。`C-01` 的 Crossref 义务和
-  - 来源：`RESULTS/OPEN-QUESTIONS.md`
   - 依赖：—；被引用：—

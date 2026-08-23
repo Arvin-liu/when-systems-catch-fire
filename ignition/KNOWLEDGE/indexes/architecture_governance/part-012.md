@@ -4,6 +4,26 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [本文件为 IGNITION-20260709-049 第三阶段补齐的证据链验证报告，覆盖命令第六/九/十阶段全部门槛。](../../../outputs/collisions/20260711-disobedience-subjectivity/validation-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-5754fd5ab32406c3 / 本文件为 IGNITION-20260709-049 第三阶段补齐的证据链验证报告，覆盖命令第六/九/十阶段全部门槛。
+  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/validation-report.md`
+  - 依赖：—；被引用：—
+- [本文件为蓝图，待阶段4真实文献落地并经你授权后，方可注入 088 正式补丁库。](../../../data/external-research/088-patch-blueprint.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-f22b3e037fe87a45 / 本文件为蓝图，待阶段4真实文献落地并经你授权后，方可注入 088 正式补丁库。
+  - 来源：`data/external-research/088-patch-blueprint.md`
+  - 依赖：—；被引用：—
+- [本文定义点火项目 P1 阶段的机器可读化数据结构。](../../../docs/machine_readable_data_plan.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-a186ee3dd5b69a79 / 本文定义点火项目 P1 阶段的机器可读化数据结构。
+  - 来源：`docs/machine_readable_data_plan.md`
+  - 依赖：P1；被引用：—
+- [本文档定义「P1 机器数据接入碰撞工作流」的管线设计、目录约定、模板与执行步骤。](../../../docs/p1-machine-data-collision-workflow-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-72fbca876dd355df / 本文档定义「P1 机器数据接入碰撞工作流」的管线设计、目录约定、模板与执行步骤。
+  - 来源：`docs/p1-machine-data-collision-workflow-20260708.md`
+  - 依赖：P1；被引用：—
 - [本文记录点火项目 v0.2 阶段的证据制度库。](../../../docs/evidence_regime_library.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-c16e87addbb692ac / 本文记录点火项目 v0.2 阶段的证据制度库。
@@ -2482,25 +2502,5 @@
 - [输入：stable_id + empirical_claim](../../../docs/foundation/architecture-structure-freeze-v1.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-acdbe3351a5b2ae3 / 输入：stable_id + empirical_claim
-  - 来源：`docs/foundation/architecture-structure-freeze-v1.md`
-  - 依赖：—；被引用：—
-- [输出审计报告，不生成数据。](../../../docs/machine_readable_data_plan.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-38d8edff5e212dbb / 输出审计报告，不生成数据。
-  - 来源：`docs/machine_readable_data_plan.md`
-  - 依赖：—；被引用：—
-- [输出映射：→ 输出模板「证据制度约束」](../../../docs/p1-data-index-map-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-f8bbe2d26f7976d3 / 输出映射：→ 输出模板「证据制度约束」
-  - 来源：`docs/p1-data-index-map-20260708.md`
-  - 依赖：—；被引用：—
-- [输出样本是否被误当作答案或事实证据；](../../../ARCHITECTURE.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-ff3fc25b51331277 / 输出样本是否被误当作答案或事实证据；
-  - 来源：`ARCHITECTURE.md`
-  - 依赖：—；被引用：—
-- [输出：source_type \(external_paper / experiment / dataset\) + source_reference + verification_record](../../../docs/foundation/architecture-structure-freeze-v1.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-4ab64b34c4cc7787 / 输出：source_type \(external_paper / experiment / dataset\) + source_reference + verification_record
   - 来源：`docs/foundation/architecture-structure-freeze-v1.md`
   - 依赖：—；被引用：—

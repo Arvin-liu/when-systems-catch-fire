@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [ok\("Evidence cards ≥ 20 \(CP4 minimum\)"\)](../../../data/external-research/121A-night-recovery/121A-validator.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-533d54ae36b777d4 / ok\("Evidence cards ≥ 20 \(CP4 minimum\)"\)
+  - 来源：`data/external-research/121A-night-recovery/121A-validator.py`
+  - 依赖：—；被引用：—
 - [ok\("Status: FETCH_VERIFIED_PENDING_SEMANTIC_REVIEW \(not FULLTEXT_REVIEWED\)"\)](../../../data/external-research/121A-night-recovery/121A-validator.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-e5b1f7e00db040f7 / ok\("Status: FETCH_VERIFIED_PENDING_SEMANTIC_REVIEW \(not FULLTEXT_REVIEWED\)"\)
@@ -1144,6 +1149,11 @@
   - 可搜索名称：NFC-f9eb833f3685fa55 / Registry-based construction and Trainer-based fitting create executable parameter artifacts from config and data.
   - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
   - 依赖：—；被引用：—
+- [regression_boundary: candidate and fresh-clone natural full suites each report `1082` tests, `0` failures, `0` errors an](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-9519b8186b830167 / regression_boundary: candidate and fresh-clone natural full suites each report `1082` tests, `0` failures, `0` errors an
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [regression_boundary: the exact Task134 inventory is closed by targeted evidence; Task104–106 sealed diagnostics remain e](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-f1dde050a5b85a3e / regression_boundary: the exact Task134 inventory is closed by targeted evidence; Task104–106 sealed diagnostics remain e
@@ -1273,6 +1283,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-f12f5ac91917ca1e / Reserve pilots & next evidence priorities
   - 来源：`evidence-program/runs/IGNITION-EVIDENCE-PILOT-R1-CROSSREF-DOI-VERIFICATION/RESULT.md`
+  - 依赖：—；被引用：—
+- [residual_boundary: Residual Ledger R2 remains exact and non-growing with one sealed historical Task104–106 residual, one](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-c386b921dfd77e53 / residual_boundary: Residual Ledger R2 remains exact and non-growing with one sealed historical Task104–106 residual, one
+  - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
 - [residual_boundary: the live residual ledger remains five entries: three inherited unchanged historical/environmental obs](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -1884,6 +1899,11 @@
   - 可搜索名称：NFC-9a8095b2189c59d1 / stale_knowledge: Task134 and all earlier release records remain immutable provenance; old failure counts, historical res
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
+- [stale_knowledge: Task134 and all earlier release records remain immutable provenance; prior failure counts and historica](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-e9f741b6bcd68a47 / stale_knowledge: Task134 and all earlier release records remain immutable provenance; prior failure counts and historica
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [stale_knowledge: terminology/style similarity, offline machine scoring, repository synchronization, publication, map vis](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-018edc9a949d39a4 / stale_knowledge: terminology/style similarity, offline machine scoring, repository synchronization, publication, map vis
@@ -2483,24 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
   - 可搜索名称：CLAIM-D220 / The displayed implication chain does not entail that Omega=1 is impossible unless an additional physical-existence premi
   - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [The dominant current Task134 finding is deterministic projection drift: the function-asset and nonfunction-claim generat](../../../reports/operations/ignition-134-step10-full-unittest-discovery.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-9077b10321378309 / The dominant current Task134 finding is deterministic projection drift: the function-asset and nonfunction-claim generat
-  - 来源：`reports/operations/ignition-134-step10-full-unittest-discovery.md`
-  - 依赖：—；被引用：—
-- [The Driver Console is a human-readable projection of queue, policy, resources,](../../../docs/architecture/os-control-plane-r2.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-d3dd655dad9cbd4c / The Driver Console is a human-readable projection of queue, policy, resources,
-  - 来源：`docs/architecture/os-control-plane-r2.md`
-  - 依赖：—；被引用：—
-- [the evidence ceiling is bounded-domain only — no claim of complete sandboxing,](../../../evidence-program/README.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-748d69720e6cf4b3 / the evidence ceiling is bounded-domain only — no claim of complete sandboxing,
-  - 来源：`evidence-program/README.md`
-  - 依赖：—；被引用：—
-- [the evidence used;](../../../docs/participate.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-621b3780356c1e5f / the evidence used;
-  - 来源：`docs/participate.md`
   - 依赖：—；被引用：—

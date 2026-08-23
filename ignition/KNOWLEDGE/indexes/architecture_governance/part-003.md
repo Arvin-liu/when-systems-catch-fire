@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [def __init__\(self\) -> None:](../../../agent_federation/convergence.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-00B5623C48EFD409 / def __init__\(self\) -> None: / IMPLICIT-00B5623C48EFD409 / IMPLICIT-CB0DAC763D690CB3
+  - 来源：`agent_federation/convergence.py`
+  - 依赖：—；被引用：—
 - [def __init__\(self\) -> None:](../../../agent_federation/conformance.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-CB0DAC763D690CB3 / def __init__\(self\) -> None: / IMPLICIT-CB0DAC763D690CB3 / IMPLICIT-00B5623C48EFD409
@@ -2498,9 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-F853D95F22B1F634 / def resume\(self, bundle: FederatedHandoffBundle\) -> FederatedProgressEvent: / IMPLICIT-F853D95F22B1F634 / IMPLICIT-41106F5EA5FCD408
   - 来源：`agent_federation/pilots.py`
-  - 依赖：—；被引用：—
-- [def resume\(self, bundle: FederatedHandoffBundle\) -> FederatedProgressEvent: ...](../../../agent_federation/contracts.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-51B63E286E521937 / def resume\(self, bundle: FederatedHandoffBundle\) -> FederatedProgressEvent: ... / IMPLICIT-51B63E286E521937 / IMPLICIT-41106F5EA5FCD408
-  - 来源：`agent_federation/contracts.py`
   - 依赖：—；被引用：—

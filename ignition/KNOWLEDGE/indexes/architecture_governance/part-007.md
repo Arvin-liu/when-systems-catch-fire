@@ -4,6 +4,26 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [The dominant current Task134 finding is deterministic projection drift: the function-asset and nonfunction-claim generat](../../../reports/operations/ignition-134-step10-full-unittest-discovery.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-9077b10321378309 / The dominant current Task134 finding is deterministic projection drift: the function-asset and nonfunction-claim generat
+  - 来源：`reports/operations/ignition-134-step10-full-unittest-discovery.md`
+  - 依赖：—；被引用：—
+- [The Driver Console is a human-readable projection of queue, policy, resources,](../../../docs/architecture/os-control-plane-r2.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-d3dd655dad9cbd4c / The Driver Console is a human-readable projection of queue, policy, resources,
+  - 来源：`docs/architecture/os-control-plane-r2.md`
+  - 依赖：—；被引用：—
+- [the evidence ceiling is bounded-domain only — no claim of complete sandboxing,](../../../evidence-program/README.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-748d69720e6cf4b3 / the evidence ceiling is bounded-domain only — no claim of complete sandboxing,
+  - 来源：`evidence-program/README.md`
+  - 依赖：—；被引用：—
+- [the evidence used;](../../../docs/participate.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-621b3780356c1e5f / the evidence used;
+  - 来源：`docs/participate.md`
+  - 依赖：—；被引用：—
 - [The experiment matrix is broad, but inference, uncertainty and safety coverage are weak.](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-8a56dd2593677158 / The experiment matrix is broad, but inference, uncertainty and safety coverage are weak.
@@ -2482,25 +2502,5 @@
 - [\| \[C-0686\]\( \) \| \[Quillen-Lichtenbaum猜想\]\( \)](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-e4414cb67607364d / \| \[C-0686\]\( \) \| \[Quillen-Lichtenbaum猜想\]\( \)
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [\| \[C-0691\]\( \) \| \[张益唐突破半数障碍\]\( \) \| 局外人因信息隔离而不受群体共识约束，能够发现被专家认为"不可能"的](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-136293d8fbdc0166 / \| \[C-0691\]\( \) \| \[张益唐突破半数障碍\]\( \) \| 局外人因信息隔离而不受群体共识约束，能够发现被专家认为"不可能"的
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [\| \[C-0697\]\( \) \| \[西安加油站便利店\]\( \) \| 提枪转换率20%（全国5-7%），验证了D50三因子乘法结构 \|](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-c2662e21e13fadec / \| \[C-0697\]\( \) \| \[西安加油站便利店\]\( \) \| 提枪转换率20%（全国5-7%），验证了D50三因子乘法结构 \|
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D50；被引用：—
-- [\| \[C-0703\]\( \) \| \[预测编码回路——AI多轨最可能路径\]\( \) \| 待补：当前报告只给](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-6f41d6a12c25815c / \| \[C-0703\]\( \) \| \[预测编码回路——AI多轨最可能路径\]\( \) \| 待补：当前报告只给
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [\| \[C-0714\]\( \) \| \[营养课的饮食实验点火\]\( \) \| 待补：当前报告只给出编号或统计结论，未找到完整正文。 \|](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-5b9760b0e0f64882 / \| \[C-0714\]\( \) \| \[营养课的饮食实验点火\]\( \) \| 待补：当前报告只给出编号或统计结论，未找到完整正文。 \|
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—

@@ -4,6 +4,31 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [中文：案例说明：共享层沟通验证 — 物理学家和生物学家在数学框架上沟通η=0.27，物理学家降维到BL沟通η=0.15，共享层优于降维。核心函数：\[D92\]\(docs/zh/functions/items/D92.md\)](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-49cd23b51d274222 / 中文：案例说明：共享层沟通验证 — 物理学家和生物学家在数学框架上沟通η=0.27，物理学家降维到BL沟通η=0.15，共享层优于降维。核心函数：\[D92\]\(docs/zh/functions/items/D92.md\)
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D92；被引用：—
+- [中文：案例说明：凯利公式同构信号流速 — v*=\(s_lock×P\(L₁\)-P\(¬L₁\)\)/s_lock，第一锁不在位时v*<0](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-df360174d1b93fbf / 中文：案例说明：凯利公式同构信号流速 — v*=\(s_lock×P\(L₁\)-P\(¬L₁\)\)/s_lock，第一锁不在位时v*<0
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [中文：案例说明：分层配分函数相变 — ε_eff=0.3时P\(Z₀\)≈0.02（几乎不可能存活），ε_eff=0.6时P\(Z₀\)≈0.95（大概率存活），ε_eff=0.45时P\(Z₀\)≈P\(Z₈\)（相变点）。C_exit越大相变点越高。核](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-3318427e3207cb58 / 中文：案例说明：分层配分函数相变 — ε_eff=0.3时P\(Z₀\)≈0.02（几乎不可能存活），ε_eff=0.6时P\(Z₀\)≈0.95（大概率存活），ε_eff=0.45时P\(Z₀\)≈P\(Z₈\)（相变点）。C_exit越大相变点越高。核
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D116；被引用：—
+- [中文：案例说明：加法系统无退相干 — 同维度加法系统：d_F有上界3.2，Γ_unified上界=3.2/λ=0.8/年，A_Fisher下界=0.12>0。永远不完全退相干，总有可达路径。核心函数：\[D128\]\(docs/zh/funct](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-8c50699ddf8491ba / 中文：案例说明：加法系统无退相干 — 同维度加法系统：d_F有上界3.2，Γ_unified上界=3.2/λ=0.8/年，A_Fisher下界=0.12>0。永远不完全退相干，总有可达路径。核心函数：\[D128\]\(docs/zh/funct
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D128；被引用：—
+- [中文：案例说明：加法退化验证 — 同一系统改为加法G=∑fᵢ，Fisher距离有限，A_Fisher不再单调递减，dS/dt≥0恢复成立。核心函数：\[D117\]\(docs/zh/functions/items/D117.md\)](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-0dfcd273d02f815c / 中文：案例说明：加法退化验证 — 同一系统改为加法G=∑fᵢ，Fisher距离有限，A_Fisher不再单调递减，dS/dt≥0恢复成立。核心函数：\[D117\]\(docs/zh/functions/items/D117.md\)
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D117；被引用：—
 - [中文：案例说明：协作中"说清楚"优于"听懂" — 技术负责人用BH沟通Pdecode≈0.3但ηfidelity=1后续纠错≈0，改用BL沟通Pdecode≈0.8但ηfidelity≈0.4导致3次返工。核心函数：\[D92\]\(docs/z](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-4f4b91b40324a55d / 中文：案例说明：协作中"说清楚"优于"听懂" — 技术负责人用BH沟通Pdecode≈0.3但ηfidelity=1后续纠错≈0，改用BL沟通Pdecode≈0.8但ηfidelity≈0.4导致3次返工。核心函数：\[D92\]\(docs/z
@@ -2477,30 +2502,5 @@
 - [从这条案例看，中文：案例说明：C_exit\(geo\)=κ×ρ^\(-α\)×r^β×τ 关键发现：东西分离+古城墙四门+地下文物→通勤半径r极大→C_exi… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-ed33cb8265014260 / 从这条案例看，中文：案例说明：C_exit\(geo\)=κ×ρ^\(-α\)×r^β×τ 关键发现：东西分离+古城墙四门+地下文物→通勤半径r极大→C_exi… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [从这条案例看，中文：案例说明：C_exit\(工人\)×H_评估×信息不对称 关键发现：歧视=H_分类·消除。n_lock≥3 English: Rule-… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-6f4fff7d41eadff0 / 从这条案例看，中文：案例说明：C_exit\(工人\)×H_评估×信息不对称 关键发现：歧视=H_分类·消除。n_lock≥3 English: Rule-… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [从这条案例看，中文：案例说明：C_exit\(工人\)×H_评估×信息不对称 关键发现：歧视=H_分类·消除。不反抗=C_exit\(反抗\)极高+n_lock… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-0490c866c3f57847 / 从这条案例看，中文：案例说明：C_exit\(工人\)×H_评估×信息不对称 关键发现：歧视=H_分类·消除。不反抗=C_exit\(反抗\)极高+n_lock… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [从这条案例看，中文：案例说明：C_exit\(工人\)×H_评估×信息不对称 关键发现：歧视=H_分类·消除（把"你不适合"编码为客观判断）。压工资=提议者… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-43f96dafd11600b7 / 从这条案例看，中文：案例说明：C_exit\(工人\)×H_评估×信息不对称 关键发现：歧视=H_分类·消除（把"你不适合"编码为客观判断）。压工资=提议者… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [从这条案例看，中文：案例说明：CAI→EAI指令结构设计 — CAI发结构化API调用而非自然语言指令，EAI的Pdecode从≈0.4提升到≈0.85… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-b95ee65bd5096952 / 从这条案例看，中文：案例说明：CAI→EAI指令结构设计 — CAI发结构化API调用而非自然语言指令，EAI的Pdecode从≈0.4提升到≈0.85… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [从这条案例看，中文：案例说明：CAI→EAI的指令降维 — CAI降维到API格式，ηfidelity≈0.2-0.5，EAI执行成功但只完成20-50… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-fb321a33ed0f8909 / 从这条案例看，中文：案例说明：CAI→EAI的指令降维 — CAI降维到API格式，ηfidelity≈0.2-0.5，EAI执行成功但只完成20-50… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—

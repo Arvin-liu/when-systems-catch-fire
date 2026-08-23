@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [grand-unification boundary; reopening it would require a new theorem and](../../../reports/foundation-architecture/pointfire-seven-track-foundation-high-impact-frontier-r1-20260813.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-424f0a156d8579c2 / grand-unification boundary; reopening it would require a new theorem and
+  - 来源：`reports/foundation-architecture/pointfire-seven-track-foundation-high-impact-frontier-r1-20260813.md`
+  - 依赖：—；被引用：—
 - [Guo et al. exact full arXiv v1 paper, all-page visual review and complete LaTeX source audit: deterministic FSM/PFSM tar](../../../data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
   - 可搜索名称：NFC-f5aedc65a88c93ef / Guo et al. exact full arXiv v1 paper, all-page visual review and complete LaTeX source audit: deterministic FSM/PFSM tar
@@ -2499,8 +2504,3 @@
   - 可搜索名称：NFC-dc20bac96f4eef0b / If upstream objects D_{T8} exist, compose F_{T8}=N\(⊕_{g∈D_{T8}} g\); otherwise treat F_{T8} as an axiom seed.
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：T8；被引用：—
-- [If upstream objects D_{T9} exist, compose F_{T9}=N\(⊕_{g∈D_{T9}} g\); otherwise treat F_{T9} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-4c496b1e3100c076 / If upstream objects D_{T9} exist, compose F_{T9}=N\(⊕_{g∈D_{T9}} g\); otherwise treat F_{T9} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：T9；被引用：—

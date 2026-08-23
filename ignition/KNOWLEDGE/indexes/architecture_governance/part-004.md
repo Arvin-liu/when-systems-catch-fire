@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [def resume\(self, bundle: FederatedHandoffBundle\) -> FederatedProgressEvent: ...](../../../agent_federation/contracts.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-51B63E286E521937 / def resume\(self, bundle: FederatedHandoffBundle\) -> FederatedProgressEvent: ... / IMPLICIT-51B63E286E521937 / IMPLICIT-41106F5EA5FCD408
+  - 来源：`agent_federation/contracts.py`
+  - 依赖：—；被引用：—
 - [def retraction_signal\(msg\):](../../../evidence-program/tools/run_crossref_verification.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-959A9A35D0186306 / def retraction_signal\(msg\): / IMPLICIT-959A9A35D0186306
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-03e8af9aeb9570e2 / FINAL-REPORT claims '117 Crossref-verified sources' but Crossref verification only confirms DOI/metadata existence, not
   - 来源：`data/external-research/104-dual-088-conflict-register.jsonl`
-  - 依赖：—；被引用：—
-- [FINAL-REPORT uses 'INJECTED_VERIFIED' language implying content support, but verification was only Crossref metadata mat](../../../data/external-research/104-source-integrity-alerts.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-7b013ab889655228 / FINAL-REPORT uses 'INJECTED_VERIFIED' language implying content support, but verification was only Crossref metadata mat
-  - 来源：`data/external-research/104-source-integrity-alerts.jsonl`
   - 依赖：—；被引用：—

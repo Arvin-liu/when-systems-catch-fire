@@ -4,6 +4,31 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [任何局部系统的延续、效率、创新、稳定或扩张，不得以对生命共同体其他成员造成不可逆、不可补偿、非自愿的重大伤害为代价。](../../../docs/governance/life-community-value-charter.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-917707a905a47fd2 / 任何局部系统的延续、效率、创新、稳定或扩张，不得以对生命共同体其他成员造成不可逆、不可补偿、非自愿的重大伤害为代价。
+  - 来源：`docs/governance/life-community-value-charter.md`
+  - 依赖：—；被引用：—
+- [任何重大函数、协议、工具、商业部署或治理决定，至少应记录以下 Charter Gate 字段：](../../../docs/governance/life-community-value-charter.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-bb7129d2cec55486 / 任何重大函数、协议、工具、商业部署或治理决定，至少应记录以下 Charter Gate 字段：
+  - 来源：`docs/governance/life-community-value-charter.md`
+  - 依赖：—；被引用：—
+- [任务 100：把治理扩展到全语料非函数断言，闭合证据谱系并阻断结构性回弹。](../../../RESULTS/LATEST.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-4bffdeb0ab79df8e / 任务 100：把治理扩展到全语料非函数断言，闭合证据谱系并阻断结构性回弹。
+  - 来源：`RESULTS/LATEST.md`
+  - 依赖：—；被引用：—
+- [任务 110 保留任务 109 的原始排序，新增基于 candidate/claim/run/task/lifecycle](../../../ITERATION.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-89fc9a713c7980f0 / 任务 110 保留任务 109 的原始排序，新增基于 candidate/claim/run/task/lifecycle
+  - 来源：`ITERATION.md`
+  - 依赖：—；被引用：—
+- [任务 110 关闭的是候选生命周期缺口，不是开放科学问题。`C-01` 的 Crossref 义务和](../../../RESULTS/OPEN-QUESTIONS.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-037598111338be3f / 任务 110 关闭的是候选生命周期缺口，不是开放科学问题。`C-01` 的 Crossref 义务和
+  - 来源：`RESULTS/OPEN-QUESTIONS.md`
+  - 依赖：—；被引用：—
 - [任务 111 没有预设“牛顿苹果案例”已经证明系统存在缺陷。三个 `case_failures` 文件的](../../../RESULTS/LATEST.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-13e33c8ff28e8039 / 任务 111 没有预设“牛顿苹果案例”已经证明系统存在缺陷。三个 `case_failures` 文件的
@@ -2479,28 +2504,3 @@
   - 可搜索名称：NFC-935acba68edf83cc / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D365；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-25edea8e07f4d774 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D366；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-eff88408a5d20f94 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D367；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-33c799e174b59bb8 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D368；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-3e36955bdbf206be / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D369；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-2af7794b765f6795 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D370；被引用：—

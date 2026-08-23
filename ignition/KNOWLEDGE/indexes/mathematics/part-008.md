@@ -4,6 +4,31 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [title: "共存稳态条件函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-4729BD903977F8ED / title: "共存稳态条件函数" / IMPLICIT-4729BD903977F8ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "共存震荡函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-BA7FC27B169298BA / title: "共存震荡函数" / IMPLICIT-BA7FC27B169298BA
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "共存震荡分支函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-81522EF5CE065884 / title: "共存震荡分支函数" / IMPLICIT-81522EF5CE065884
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "共存震荡阻尼函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-5EFA4AAD499A4AB6 / title: "共存震荡阻尼函数" / IMPLICIT-5EFA4AAD499A4AB6
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "共振频率-消耗效率函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-B2DA13E578619DFC / title: "共振频率-消耗效率函数" / IMPLICIT-B2DA13E578619DFC
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
 - [title: "共振频率方向竞争函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-B32AFAA60FE66D97 / title: "共振频率方向竞争函数" / IMPLICIT-B32AFAA60FE66D97
@@ -2479,28 +2504,3 @@
   - 可搜索名称：CLAIM-D54 / Within the source-defined scope, C_exit\(geo\)四因子子函数 is adjudicated as NATURAL_LANGUAGE_CANDIDATE: 书籍碰撞函数，书籍碰撞案例验证。. This
   - 来源：`data/foundation/adjudications/core-kernel.jsonl`
   - 依赖：—；被引用：—
-- [Within the source-defined scope, CAI做中间层能大幅提升跨认知gap沟通效率 is adjudicated as METRIC: CAI做中间层能大幅提升跨认知gap沟通效率。. This is a mod](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D155 / Within the source-defined scope, CAI做中间层能大幅提升跨认知gap沟通效率 is adjudicated as METRIC: CAI做中间层能大幅提升跨认知gap沟通效率。. This is a mod
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, D158案例可靠性分类函数 is adjudicated as RELATION: M1对562案例的定量影响：D158a-f的49案例中约30-40%需用Φ_2或Φ_exa](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D291 / Within the source-defined scope, D158案例可靠性分类函数 is adjudicated as RELATION: M1对562案例的定量影响：D158a-f的49案例中约30-40%需用Φ_2或Φ_exa
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：D158；被引用：—
-- [Within the source-defined scope, D158预测失效阈值函数 is adjudicated as METRIC: M1的ΔΦ导致D158预测误差\|e^{ΔΦ}-1\|：ΔΦ=1→误差172%→预测失效。pᵢ<0.](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D276 / Within the source-defined scope, D158预测失效阈值函数 is adjudicated as METRIC: M1的ΔΦ导致D158预测误差\|e^{ΔΦ}-1\|：ΔΦ=1→误差172%→预测失效。pᵢ<0.
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：D158；被引用：—
-- [Within the source-defined scope, D541｜道德自居-认知偏差函数 is adjudicated as MECHANISM_MODEL: 道德自居-认知偏差函数. This is a model-intern](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D541 / Within the source-defined scope, D541｜道德自居-认知偏差函数 is adjudicated as MECHANISM_MODEL: 道德自居-认知偏差函数. This is a model-intern
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：D541；被引用：—
-- [Within the source-defined scope, D542｜植物蛋白质网络函数 is adjudicated as MECHANISM_MODEL: 植物蛋白质网络函数. This is a model-internal c](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D542 / Within the source-defined scope, D542｜植物蛋白质网络函数 is adjudicated as MECHANISM_MODEL: 植物蛋白质网络函数. This is a model-internal c
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：D542；被引用：—

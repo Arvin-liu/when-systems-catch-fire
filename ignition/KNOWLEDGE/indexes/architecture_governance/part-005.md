@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [FINAL-REPORT uses 'INJECTED_VERIFIED' language implying content support, but verification was only Crossref metadata mat](../../../data/external-research/104-source-integrity-alerts.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-7b013ab889655228 / FINAL-REPORT uses 'INJECTED_VERIFIED' language implying content support, but verification was only Crossref metadata mat
+  - 来源：`data/external-research/104-source-integrity-alerts.jsonl`
+  - 依赖：—；被引用：—
 - [FINAL-REPORT 使用 "INJECTED_VERIFIED" 暗示内容支持已验证。实际上所有验证仅为 Crossref 元数据匹配（DOI 存在 + 标题/年份匹配）。104 将此降级为 `METADATA_SUPPORTED_O](../../../reports/external-research/104-dual-088-reconciliation.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-4f5a5d4f3bdb900a / FINAL-REPORT 使用 "INJECTED_VERIFIED" 暗示内容支持已验证。实际上所有验证仅为 Crossref 元数据匹配（DOI 存在 + 标题/年份匹配）。104 将此降级为 `METADATA_SUPPORTED_O
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-63d5624b13fd8779 / Official frameworks and law specify risk management, records, human oversight, accountability, and complaint or redress
   - 来源：`reports/external-research/pointfire-getnote-external-verification-r1-20260813.jsonl`
-  - 依赖：—；被引用：—
-- [ok\("Evidence cards ≥ 20 \(CP4 minimum\)"\)](../../../data/external-research/121A-night-recovery/121A-validator.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-533d54ae36b777d4 / ok\("Evidence cards ≥ 20 \(CP4 minimum\)"\)
-  - 来源：`data/external-research/121A-night-recovery/121A-validator.py`
   - 依赖：—；被引用：—

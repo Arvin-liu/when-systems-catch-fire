@@ -4,6 +4,31 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [\| PROVED_ORIGINAL_CLAIM_WITH_ARTIFACT \| 必须有可重放 Lean/Z3/SymPy artifact \|](../../../docs/foundation/architecture-structure-freeze-v1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-c76ba19ac358c55f / \| PROVED_ORIGINAL_CLAIM_WITH_ARTIFACT \| 必须有可重放 Lean/Z3/SymPy artifact \|
+  - 来源：`docs/foundation/architecture-structure-freeze-v1.md`
+  - 依赖：—；被引用：—
+- [\| R2-GETNOTE-007 \| `SUPPORTED_WITHIN_MEASUREMENT_SCOPE` \| 2 \| measurement boundary \| No general psychological mechanism](../../../reports/external-research/pointfire-getnote-external-verification-r1-20260813.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-c5dae2f66233fa86 / \| R2-GETNOTE-007 \| `SUPPORTED_WITHIN_MEASUREMENT_SCOPE` \| 2 \| measurement boundary \| No general psychological mechanism
+  - 来源：`reports/external-research/pointfire-getnote-external-verification-r1-20260813.md`
+  - 依赖：—；被引用：—
+- [\| R2-GETNOTE-011 \| `PARTIALLY_SUPPORTED` \| 3 \| bounded organizational/legal scope \| Formal routes do not establish acces](../../../reports/external-research/pointfire-getnote-external-verification-r1-20260813.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-8d37ca8b77922c43 / \| R2-GETNOTE-011 \| `PARTIALLY_SUPPORTED` \| 3 \| bounded organizational/legal scope \| Formal routes do not establish acces
+  - 来源：`reports/external-research/pointfire-getnote-external-verification-r1-20260813.md`
+  - 依赖：—；被引用：—
+- [\| RETAIN_FORMAL_PROPOSITION_UNPROVED \| 2 \|](../../../reports/foundation-architecture/084-max-adjudication-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-76155716716fe196 / \| RETAIN_FORMAL_PROPOSITION_UNPROVED \| 2 \|
+  - 来源：`reports/foundation-architecture/084-max-adjudication-report.md`
+  - 依赖：—；被引用：—
+- [\| Richard J. Sage, “Messianic Deity and Daoist Sage–Ruler” \| Academia Sinica 文章页及 PDF，相关页 2、4、8–12、17、20–21 \| 用于徽宗评论、神霄运](../../../docs/publication/cases/song-huizong-taoism-1117-source.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-c3a5eb40a00c4635 / \| Richard J. Sage, “Messianic Deity and Daoist Sage–Ruler” \| Academia Sinica 文章页及 PDF，相关页 2、4、8–12、17、20–21 \| 用于徽宗评论、神霄运
+  - 来源：`docs/publication/cases/song-huizong-taoism-1117-source.md`
+  - 依赖：—；被引用：—
 - [\| SB-021 \| 暂缓 \| 四种基本力统一 \| `outputs/getbrain/storytelling-case-backlog-draft-20260707.md` \| pending \| pending \| pending \|](../../../docs/storytelling_backlog_ids.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-a048ad530b567ee3 / \| SB-021 \| 暂缓 \| 四种基本力统一 \| `outputs/getbrain/storytelling-case-backlog-draft-20260707.md` \| pending \| pending \| pending \|
@@ -2479,28 +2504,3 @@
   - 可搜索名称：NFC-ceab14646f11283d / 中文：案例说明：倒U型统一生成定理
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [中文：案例说明：共享层沟通验证 — 物理学家和生物学家在数学框架上沟通η=0.27，物理学家降维到BL沟通η=0.15，共享层优于降维。核心函数：\[D92\]\(docs/zh/functions/items/D92.md\)](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-49cd23b51d274222 / 中文：案例说明：共享层沟通验证 — 物理学家和生物学家在数学框架上沟通η=0.27，物理学家降维到BL沟通η=0.15，共享层优于降维。核心函数：\[D92\]\(docs/zh/functions/items/D92.md\)
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D92；被引用：—
-- [中文：案例说明：凯利公式同构信号流速 — v*=\(s_lock×P\(L₁\)-P\(¬L₁\)\)/s_lock，第一锁不在位时v*<0](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-df360174d1b93fbf / 中文：案例说明：凯利公式同构信号流速 — v*=\(s_lock×P\(L₁\)-P\(¬L₁\)\)/s_lock，第一锁不在位时v*<0
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [中文：案例说明：分层配分函数相变 — ε_eff=0.3时P\(Z₀\)≈0.02（几乎不可能存活），ε_eff=0.6时P\(Z₀\)≈0.95（大概率存活），ε_eff=0.45时P\(Z₀\)≈P\(Z₈\)（相变点）。C_exit越大相变点越高。核](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-3318427e3207cb58 / 中文：案例说明：分层配分函数相变 — ε_eff=0.3时P\(Z₀\)≈0.02（几乎不可能存活），ε_eff=0.6时P\(Z₀\)≈0.95（大概率存活），ε_eff=0.45时P\(Z₀\)≈P\(Z₈\)（相变点）。C_exit越大相变点越高。核
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D116；被引用：—
-- [中文：案例说明：加法系统无退相干 — 同维度加法系统：d_F有上界3.2，Γ_unified上界=3.2/λ=0.8/年，A_Fisher下界=0.12>0。永远不完全退相干，总有可达路径。核心函数：\[D128\]\(docs/zh/funct](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-8c50699ddf8491ba / 中文：案例说明：加法系统无退相干 — 同维度加法系统：d_F有上界3.2，Γ_unified上界=3.2/λ=0.8/年，A_Fisher下界=0.12>0。永远不完全退相干，总有可达路径。核心函数：\[D128\]\(docs/zh/funct
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D128；被引用：—
-- [中文：案例说明：加法退化验证 — 同一系统改为加法G=∑fᵢ，Fisher距离有限，A_Fisher不再单调递减，dS/dt≥0恢复成立。核心函数：\[D117\]\(docs/zh/functions/items/D117.md\)](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-0dfcd273d02f815c / 中文：案例说明：加法退化验证 — 同一系统改为加法G=∑fᵢ，Fisher距离有限，A_Fisher不再单调递减，dS/dt≥0恢复成立。核心函数：\[D117\]\(docs/zh/functions/items/D117.md\)
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D117；被引用：—
