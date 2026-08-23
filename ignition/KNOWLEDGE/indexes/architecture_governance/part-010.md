@@ -4,6 +4,26 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [卢叶觉得，这恰恰是课堂的魅力所在。学生卡住之后，老师从哪个方向引导，用什么角度讲解，才最能体现水平。可赛课的评估体系容不下沉默，它容易被视作老师教学有问题。于是呈现在评委面前的，永远是一节节流畅的公开课：没有卡顿，没有冷场，没有学生答不上来](../../../inputs/collisions/20260708-teacher-competition/source.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-5f529d08c02ee75b / 卢叶觉得，这恰恰是课堂的魅力所在。学生卡住之后，老师从哪个方向引导，用什么角度讲解，才最能体现水平。可赛课的评估体系容不下沉默，它容易被视作老师教学有问题。于是呈现在评委面前的，永远是一节节流畅的公开课：没有卡顿，没有冷场，没有学生答不上来
+  - 来源：`inputs/collisions/20260708-teacher-competition/source.md`
+  - 依赖：—；被引用：—
+- [即便参与者以为掌握了信息，也无法完全预测安然式财务造假带来的风险。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-6e0788bdc11aa58a / 即便参与者以为掌握了信息，也无法完全预测安然式财务造假带来的风险。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [即便讨厌赛课，但李清淼还是和她的许多同行一样，硬着头皮挤进了这场激烈的角逐。她给自己定的职业目标是成为一位名师，通往这个目标的路上，赛课是一块必要的敲门砖。今年她终于评上了「市名师培养对象」，申报条件写得很清楚：必须持有市基本功大赛或市能力](../../../inputs/collisions/20260708-teacher-competition/source.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-cb5dfe1ea9c6c04a / 即便讨厌赛课，但李清淼还是和她的许多同行一样，硬着头皮挤进了这场激烈的角逐。她给自己定的职业目标是成为一位名师，通往这个目标的路上，赛课是一块必要的敲门砖。今年她终于评上了「市名师培养对象」，申报条件写得很清楚：必须持有市基本功大赛或市能力
+  - 来源：`inputs/collisions/20260708-teacher-competition/source.md`
+  - 依赖：—；被引用：—
+- [历史报告、旧表和旧措辞，仅作为来源与变更证据。](../../../HUMAN-READING.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-2ea6ab485b68de24 / 历史报告、旧表和旧措辞，仅作为来源与变更证据。
+  - 来源：`HUMAN-READING.md`
+  - 依赖：—；被引用：—
 - [历史纠偏日志](../../ASSET-CARDS.md#asset-hr-7b285d9f5fad1e01)
   - 类型/状态：`RESULT_OR_ARTICLE` · `CURRENT_CORRECTION_RECORD`
   - 可搜索名称：历史纠偏日志 / historical-correction-log
@@ -2482,25 +2502,5 @@
 - [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-a39452ba069ec672 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-b0ba4cff6114c713 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-9490813ac5532d0e / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-fcfa895b07d7ec34 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-eb076a1784634b0f / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—

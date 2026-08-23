@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [本函数来自跨域 smoke test 的人工构造小材料/测试材料，已出现三领域同构，但仍需真实外部材料继续验证，不直接推出普遍社会规律。跨行业普遍性 pending。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-2bafcab6e38737e8 / 本函数来自跨域 smoke test 的人工构造小材料/测试材料，已出现三领域同构，但仍需真实外部材料继续验证，不直接推出普遍社会规律。跨行业普遍性 pending。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
 - [本制度现由 Current 方法 `1.4.0` 承载（1.3.0 转为 Historical）。作为正交发布轴，它不改变能力生命周期；R5-A 快照已发布为 `PUBLISHED_SNAPSHOT`，但仍非 Accepted/Curren](../../../docs/operations/stage-snapshot-publication.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-98710f14baf31ace / 本制度现由 Current 方法 `1.4.0` 承载（1.3.0 转为 Historical）。作为正交发布轴，它不改变能力生命周期；R5-A 快照已发布为 `PUBLISHED_SNAPSHOT`，但仍非 Accepted/Curren
@@ -2499,8 +2504,3 @@
   - 可搜索名称：NFC-9298361a7db7437e / 已迁移的历史函数来源/0080-D31-衰减率干预函数.md
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：D31；被引用：—
-- [已迁移的历史函数来源/0081-D32-认知-群体犹豫域统一映射函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-ee14b8af60ae67d0 / 已迁移的历史函数来源/0081-D32-认知-群体犹豫域统一映射函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D32；被引用：—

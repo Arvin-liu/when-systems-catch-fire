@@ -2,14 +2,14 @@
 <!-- CURRENT-SNAPSHOT:BEGIN profile=ai schema=current-snapshot-r1 -->
 - Current Snapshot（generated; read this block before interpreting prose）。
 - current_identity_epoch: `os-control-plane-r4-steering-intent-r1`；system_role: `Ignition OS / orchestration-governance layer`。
-- current_formal_task: `IGNITION-20260822-134` (ordinal `134`)；status: `COMPLETED_WITH_CLASSIFIED_RESIDUALS`；terminal: `true`；latest_architecture_changing_task: `IGNITION-20260821-129` (ordinal `129`)；current_iteration_boundary: `134` is a deprecated compatibility alias of `current_formal_task_ordinal`；publication_witness_task: `IGNITION-20260822-134`。
-- release_lifecycle: task `IGNITION-20260822-134`；content phase `RELEASE_READY`；publication authority `REMOTE_REF_OBSERVATION`；embedded publication assertion `NONE`；required ref `refs/heads/main`；post-publication verification must observe that remote ref。
+- current_formal_task: `IGNITION-20260822-135` (ordinal `135`)；status: `IN_PROGRESS`；terminal: `false`；latest_architecture_changing_task: `IGNITION-20260821-129` (ordinal `129`)；current_iteration_boundary: `135` is a deprecated compatibility alias of `current_formal_task_ordinal`；publication_witness_task: `IGNITION-20260822-135`。
+- release_lifecycle: task `IGNITION-20260822-135`；content phase `RUNNING`；publication authority `REMOTE_REF_OBSERVATION`；embedded publication assertion `NONE`；required ref `refs/heads/main`；post-publication verification must observe that remote ref。
 - publication_instruction: run ref-derived verification against `refs/heads/main`; do not infer publication from embedded Current content。
 - current_method: `1.4.0` Current；current_map: `0.12.0` Current；historical_map: `0.11.0` Historical。
 - current_state_status: `CURRENT_WITH_OPEN_OBLIGATIONS`；EPISTEMICALLY_ACCEPTED=0；epistemic_acceptance: `0`；live_external_ceiling: `NOT_RUN_LIVE_EXTERNAL_INVOCATION`。
 - architecture_counts: `registry=94; visible_nodes=82; visible_edges=87`；active_overlays: `Durability / Lifecycle, Steering / Intent / Goal / Obligation, Structural Governance Surface`。
-- task_lineage: current `IGNITION-20260822-134` `COMPLETED_WITH_CLASSIFIED_RESIDUALS`；predecessor `HISTORICAL_UNEXECUTED_REBASED_INTO_127` / `REBASED_INTO_127`；successor `COMPLETED_WITH_CLASSIFIED_RESIDUALS`。
-- source: ignition/data/operations/current-snapshot-r1.json；source_digest: `ce0e3c46837bf98932a8ee3af8997bc6e75ac62065295cdc5bb891f3fe2ae72b`。
+- task_lineage: current `IGNITION-20260822-135` `IN_PROGRESS`；predecessor `HISTORICAL_UNEXECUTED_REBASED_INTO_127` / `REBASED_INTO_127`；successor `COMPLETED_WITH_CLASSIFIED_RESIDUALS`。
+- source: ignition/data/operations/current-snapshot-r1.json；source_digest: `205517d93667b774db7644cfdf1034f8b2b111dfbbb5e0b7a8a75fc31b588c38`。
 - claim_ceiling: Deterministic repository-local Current projection only; no Owner authority, external truth, production readiness or epistemic upgrade.
 <!-- CURRENT-SNAPSHOT:END -->
 
@@ -305,3 +305,17 @@
 - obligations: Step 15 must verify the unchanged formal-main baseline, perform the ordinary fast-forward, verify `refs/heads/main` and a fresh remote-main clone, rerun the post-publication Current gate and write the independent 1111 witness. Publication remains a separate remote observation; the formal repository must not self-witness it.
 - stale_knowledge: Task133 and all earlier release records remain immutable provenance; old path-manifest counts, the original eleven Human Surface hashes and the prior short-window discovery observation are historical evidence and cannot be treated as Current or silently widened.
 - next_read: read `data/operations/iterations/134/step14-residual-debt-projection-hygiene-r1.json`, `data/operations/iterations/134/step14-deterministic-current-surface-r1.json`, the Task134 result and machine receipt, then complete the Step 15 fresh-clone/main/1111 publication witness.
+
+## 2026-08-23 — IGNITION-20260822-135-FULL-REGRESSION-CLOSURE-TEST-ENVIRONMENT-R1 — canonical Current source transition
+
+- main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; formal `main` baseline for this Task135 branch is `421a41462e26f8323c7b811e61d47f26232d61b5`; this append-only entry records the Task135 canonical Current migration on the task branch, not formal `main` publication.
+- delta: advances canonical Current from terminal Task134 to Full Regression Closure & Test Environment R1 so current defects, sealed historical residuals, intentional negative fixtures, environment requirements and runner-boundary defects have distinct machine-checkable semantics.
+- current_formal_task: `IGNITION-20260822-135` is `IN_PROGRESS` and non-terminal; the previous canonical Current source and previous formal task are both `IGNITION-20260822-134`.
+- regression_boundary: the exact Task134 inventory is closed by targeted evidence; Task104–106 sealed diagnostics remain exact historical debt under Residual Ledger R2, while Current failure count is required to remain zero. Candidate and fresh-clone natural full-suite PASS evidence remains bound to its exact tested descendants and does not rewrite historical records.
+- task_lineage: `IGNITION-125` remains `HISTORICAL_UNEXECUTED` with requirements `REBASED_INTO_127`; `IGNITION-127` remains `COMPLETED_WITH_CLASSIFIED_RESIDUALS`; Task134 remains the historical terminal predecessor and Task135 is the current non-terminal successor.
+- architecture_boundary: latest architecture-changing task remains `IGNITION-20260821-129`; Task135 is `PRESENTATION_ONLY`, so the map remains `0.12.0` Current with `0.11.0` Historical and the identity epoch remains unchanged.
+- authority_changes: canonical task-lineage, lifecycle, Current Facts, Current Snapshot, Current path manifest and compiler-owned surfaces are synchronized repository-local projections; Task135 introduces no new authority, map version or identity epoch.
+- epistemic_state: `CURRENT_WITH_OPEN_OBLIGATIONS` and `EPISTEMICALLY_ACCEPTED=0` remain unchanged; regression closure and environment evidence do not establish external truth, production readiness, Owner acceptance or epistemic acceptance.
+- obligations: complete Step15 Current projections, Step16 formal result/receipt and manifest-LAST closure, then perform the ordinary fast-forward and separate 1111 publication witness; historical Task104–106 residuals must remain exact and non-growing.
+- stale_knowledge: Task134 and all earlier release records remain immutable provenance; old failure counts, historical residual fingerprints and prior Current values cannot be treated as live Task135 truth or silently widened.
+- next_read: read `data/operations/iterations/135/execution-contract-r1.json`, `data/operations/iterations/135/current-state-sync-receipt.json`, the Step10/Step12 natural full-suite receipts and the Task135 residual-ledger R2 evidence before final candidate closure.

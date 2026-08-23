@@ -1124,6 +1124,11 @@
   - 可搜索名称：NFC-100a819c0a6dd5ab / authority_changes: canonical task-lineage source, lifecycle, Current Snapshot, Current Facts and compiler-owned Current
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
+- [authority_changes: canonical task-lineage, lifecycle, Current Facts, Current Snapshot, Current path manifest and compile](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-4f82f0a8294db3d2 / authority_changes: canonical task-lineage, lifecycle, Current Facts, Current Snapshot, Current path manifest and compile
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [authority_changes: canonical task-lineage, lifecycle, Current Facts, Current Snapshot, residual ledger, Current path man](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-d6dece046090fe95 / authority_changes: canonical task-lineage, lifecycle, Current Facts, Current Snapshot, residual ledger, Current path man
@@ -2497,10 +2502,5 @@
 - [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-05.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-05.json)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：D004058 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-05.json / D004058 / A5000648368
-  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-05.json`
-  - 依赖：—；被引用：—
-- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-05.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-05.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：D004463 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-05.json / D004463 / A5000648368
   - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-05.json`
   - 依赖：—；被引用：—

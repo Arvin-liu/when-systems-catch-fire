@@ -18,6 +18,10 @@
 
 它是一条需要同时阅读来源、处置和 claim ceiling 的说法登记。 [打开人话说明](../entries/nfc-01b1099646ff389c.md)
 
+## 外部能力或 epistemic acceptance；当前身份 contract/facts 见
+
+它是一条需要同时阅读来源、处置和 claim ceiling 的说法登记。 [打开人话说明](../entries/nfc-01d7757c148ee0cc.md)
+
 ## \| `formal-objects/` \| 稳定 ID、对象类型、类型/范围/证明义务 \|
 
 它是一条需要同时阅读来源、处置和 claim ceiling 的说法登记。 [打开人话说明](../entries/nfc-026f0f47b5a58ed4.md)

@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [默认核心**：经典一阶逻辑只用于已声明的演绎核心，不扩张到不一致证据聚合。](../../../docs/foundation/logic/README.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-aa0197add5506295 / 默认核心**：经典一阶逻辑只用于已声明的演绎核心，不扩张到不一致证据聚合。
+  - 来源：`docs/foundation/logic/README.md`
+  - 依赖：—；被引用：—
 - [（候选编号 + 名称 + 对应函数）](../../../templates/collision/backfill-plan-template.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-c7565431848c1811 / （候选编号 + 名称 + 对应函数）

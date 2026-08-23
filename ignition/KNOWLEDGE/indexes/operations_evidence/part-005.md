@@ -6,6 +6,11 @@
 
 - [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M37.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M37.json)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：T12267 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M37.json / T12267 / A5009474972
+  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M37.json`
+  - 依赖：—；被引用：—
+- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M37.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M37.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：T12664 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M37.json / T12664 / A5009474972
   - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M37.json`
   - 依赖：—；被引用：—
@@ -2497,10 +2502,5 @@
 - [title: "结构保守性元定理"](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-9AEF5D8ED577C770 / title: "结构保守性元定理" / IMPLICIT-9AEF5D8ED577C770 / IMPLICIT-62BA45D37EE701D7
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "统一内部驱动力"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-4B56AD3BEA973157 / title: "统一内部驱动力" / IMPLICIT-4B56AD3BEA973157
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—

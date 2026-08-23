@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate the current Task134 execution contract."""
+"""Validate the current Task135 execution contract."""
 
 from __future__ import annotations
 
@@ -15,8 +15,8 @@ from jsonschema import Draft202012Validator
 HERE = Path(__file__).resolve()
 ROOT = HERE.parents[1]
 REPO_ROOT = ROOT.parent
-CONTRACT_PATH = ROOT / "data/operations/iterations/134/execution-contract-r1.json"
-SCHEMA_PATH = ROOT / "schemas/operations/execution-contract-134-r1.schema.json"
+CONTRACT_PATH = ROOT / "data/operations/iterations/135/execution-contract-r1.json"
+SCHEMA_PATH = ROOT / "schemas/operations/execution-contract-135-r1.schema.json"
 
 
 def load_json(path: Path) -> Any:
@@ -28,10 +28,10 @@ def validate(document: dict[str, Any] | None = None) -> list[str]:
     errors = [error.json_path + ": " + error.message for error in Draft202012Validator(load_json(SCHEMA_PATH)).iter_errors(contract)]
     if errors:
         return errors
-    if contract["formal_baseline"]["sha"] != "517510aed545ff440c3464536ba2964c94e5f560":
-        errors.append("formal baseline must remain the verified Task133 main SHA")
+    if contract["formal_baseline"]["sha"] != "421a41462e26f8323c7b811e61d47f26232d61b5":
+        errors.append("formal baseline must remain the verified Task134 main SHA")
     if contract["identity_impact"] != "PRESENTATION_ONLY":
-        errors.append("Task134 identity impact must remain PRESENTATION_ONLY")
+        errors.append("Task135 identity impact must remain PRESENTATION_ONLY")
     if "Owner authority" not in contract["claim_ceiling"] or "epistemic" not in contract["claim_ceiling"]:
         errors.append("claim ceiling must preserve the authority and epistemic boundary")
     return errors
@@ -49,7 +49,7 @@ def main() -> int:
         for error in errors:
             print(f"- {error}", file=sys.stderr)
         return 1
-    print("EXECUTION_CONTRACT_OK task_id=IGNITION-20260822-134")
+    print("EXECUTION_CONTRACT_OK task_id=IGNITION-20260822-135")
     return 0
 
 

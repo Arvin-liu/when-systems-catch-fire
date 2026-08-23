@@ -1,0 +1,65 @@
+{
+  "schema_version": "ignition-135-step15-current-advancement-r1",
+  "task_id": "IGNITION-20260822-135",
+  "step": "15",
+  "status": "PASS",
+  "canonical_source": {
+    "path": "ignition/data/operations/current-task-lineage-status.json",
+    "from_task_id": "IGNITION-20260822-134",
+    "to_task_id": "IGNITION-20260822-135",
+    "prior_source_sha256": "053dfe958dc116325425b44b77f02288bc3d68e0a6baf27b3c772f6471e69f25",
+    "execution_contract": "ignition/data/operations/iterations/135/execution-contract-r1.json",
+    "idempotency_key": "IGNITION-20260822-135"
+  },
+  "identity_binding": {
+    "current_formal_task_id": "IGNITION-20260822-135",
+    "current_formal_task_ordinal": 135,
+    "latest_architecture_changing_task_id": "IGNITION-20260821-129",
+    "latest_architecture_task_ordinal": 129,
+    "current_iteration_boundary": 135,
+    "current_iteration_boundary_semantics": "DEPRECATED_COMPATIBILITY_ALIAS_OF_CURRENT_FORMAL_TASK_ORDINAL",
+    "identity_epoch": "os-control-plane-r4-steering-intent-r1",
+    "current_map_version": "0.12.0",
+    "historical_map_version": "0.11.0",
+    "identity_impact": "PRESENTATION_ONLY"
+  },
+  "lifecycle": {
+    "task_id": "IGNITION-20260822-135",
+    "content_phase": "RUNNING",
+    "current_task_terminal": false,
+    "publication_authority": "REMOTE_REF_OBSERVATION",
+    "embedded_publication_assertion": "NONE"
+  },
+  "homepage_contract": {
+    "path": ".github/README.md",
+    "result": "PASS",
+    "component_count": 5,
+    "top_level_components": ["项目与价值", "如何使用", "结果与火种", "整体架构", "致谢"],
+    "validator": "ignition/tools/validate_homepage_components.py"
+  },
+  "state_changelog": {
+    "path": "ignition/STATE-CHANGELOG.md",
+    "append_only_prefix_after_generated_block_exclusion": true,
+    "previous_stable_content_sha256": "5b82363a450b3075909b6c49ad1d73feb2bbd4bb8eebca695fcca4ea59da679e",
+    "current_stable_content_sha256": "295d9807e9e0c4c3a49fe283f82f0896fe1baf96d524027e0d65245eac08fbc7",
+    "task135_section_count": 1
+  },
+  "projection_gates": {
+    "execution_contract": "PASS",
+    "task_lineage": "PASS",
+    "release_lifecycle": "PASS",
+    "iteration_boundary_semantics": "PASS",
+    "historical_compatibility": "PASS",
+    "task_identity_model": "PASS",
+    "current_state_sync": "PASS",
+    "current_surface_semantics": "PASS",
+    "current_volatile_fact_registry": "PASS",
+    "current_projection_determinism": "PASS",
+    "ordinal_binding": "PASS_WITH_PENDING_TERMINAL_EVIDENCE",
+    "path_manifest": "PASS",
+    "state_changelog_append_only": "PASS"
+  },
+  "generated_current_surfaces": ["homepage-identity", "project-current-state", "ai-cold-start", "ai-agents-handoff", "machine-entry", "architecture", "state-changelog"],
+  "sealed_historical_boundary": "Task134 and earlier records remain historical provenance; Task104-106 exact sealed residuals and the environmental observation remain governed by Residual Ledger R2 and are not rewritten by Current advancement.",
+  "claim_ceiling": "Repository-local Task135 Current identity and projection evidence only; no external truth, production readiness, Owner acceptance, publication or epistemic acceptance is inferred."
+}

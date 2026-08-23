@@ -39,11 +39,11 @@ except ImportError:  # direct script / tools-on-PYTHONPATH execution
 
 
 CONTRACT_PATH = ROOT / "data/operations/current-surface-block-contract-r1.json"
-EXECUTION_CONTRACT_PATH = ROOT / "data/operations/iterations/134/execution-contract-r1.json"
+EXECUTION_CONTRACT_PATH = ROOT / "data/operations/iterations/135/execution-contract-r1.json"
 LINEAGE_PATH = ROOT / "data/operations/current-task-lineage-status.json"
 LIFECYCLE_PATH = ROOT / "data/operations/current-release-lifecycle-r1.json"
-FORMAL_RESULT_PATH = ROOT / "agent-results/IGNITION-20260822-134-result.md"
-REPORT_PATH = ROOT / "data/operations/iterations/134/step14-post-publication-task-binding-report.json"
+FORMAL_RESULT_PATH = ROOT / "agent-results/IGNITION-20260822-135-result.md"
+REPORT_PATH = ROOT / "data/operations/iterations/135/step17-post-publication-task-binding-report.json"
 REMOTE_REF = "refs/heads/main"
 REMOTE_TRACKING_REF = "refs/remotes/origin/main"
 HEX_SHA_RE = re.compile(r"^[0-9a-f]{40}$")

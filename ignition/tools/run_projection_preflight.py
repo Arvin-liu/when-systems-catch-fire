@@ -44,7 +44,16 @@ def worktree_snapshot() -> dict[str, Any]:
         path = path_bytes.decode("utf-8")
         digest.update(path_bytes)
         digest.update(b"\0")
-        digest.update(hashlib.sha256((REPO_ROOT / path).read_bytes()).digest())
+        file_path = REPO_ROOT / path
+        if file_path.is_file():
+            digest.update(hashlib.sha256(file_path.read_bytes()).digest())
+        else:
+            # A read-only preflight must also be able to observe an explicit
+            # deletion before the next commit.  The porcelain status digest
+            # below records the deletion; this marker keeps the content
+            # snapshot deterministic without turning the check into an I/O
+            # exception.
+            digest.update(b"MISSING_TRACKED_PATH")
         digest.update(b"\0")
     return {
         "clean": not status,

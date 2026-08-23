@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Advance canonical Current task identity from the Task134 contract.
+"""Advance canonical Current task identity from the Task135 contract.
 
 The operation is deliberately source-local: it changes the canonical lineage
 record and never edits generated surfaces or claims remote publication.
@@ -17,18 +17,18 @@ from pathlib import Path
 from typing import Any
 
 try:
-    from tools import validate_execution_contract_134 as validate_execution_contract
+    from tools import validate_execution_contract_135 as validate_execution_contract
 except ImportError:  # direct script / tools-on-PYTHONPATH execution
-    import validate_execution_contract_134 as validate_execution_contract
+    import validate_execution_contract_135 as validate_execution_contract
 
 
 HERE = Path(__file__).resolve()
 ROOT = HERE.parents[1]
 REPO_ROOT = ROOT.parent
 STATUS_PATH = ROOT / "data/operations/current-task-lineage-status.json"
-CONTRACT_PATH = ROOT / "data/operations/iterations/134/execution-contract-r1.json"
+CONTRACT_PATH = ROOT / "data/operations/iterations/135/execution-contract-r1.json"
 TASK_ID_RE = re.compile(r"^IGNITION-(?:(?P<date>\d{8})-)?(?P<number>\d+)$")
-TARGET_TASK_ID = "IGNITION-20260822-134"
+TARGET_TASK_ID = "IGNITION-20260822-135"
 LATEST_ARCHITECTURE_TASK = "IGNITION-20260821-129"
 CLAIM_CEILING = "Canonical repository-local task advancement only; this record does not grant authority, prove external truth, establish production readiness or set epistemic acceptance."
 
@@ -58,7 +58,7 @@ def _contract_target(contract: dict[str, Any]) -> str:
         raise AdvancementError("execution contract invalid: " + "; ".join(contract_errors))
     target = contract["identity_expectations"]["current_formal_task"]
     if target != TARGET_TASK_ID or contract["task_id"] != TARGET_TASK_ID:
-        raise AdvancementError("unknown task id requires an explicit valid Task134 execution contract")
+        raise AdvancementError("unknown task id requires an explicit valid Task135 execution contract")
     return target
 
 
@@ -94,6 +94,18 @@ def _formal_edges() -> list[dict[str, str]]:
             "relation": "FORMAL_TASK_SUCCESSOR",
             "status": "COMPLETED_HISTORICAL",
         },
+        {
+            "predecessor_task_id": "IGNITION-20260822-133",
+            "successor_task_id": "IGNITION-20260822-134",
+            "relation": "CANONICAL_SOURCE_ADVANCEMENT",
+            "status": "COMPLETED_HISTORICAL",
+        },
+        {
+            "predecessor_task_id": "IGNITION-20260822-133",
+            "successor_task_id": "IGNITION-20260822-134",
+            "relation": "FORMAL_TASK_SUCCESSOR",
+            "status": "COMPLETED_HISTORICAL",
+        },
     ]
 
 
@@ -110,7 +122,7 @@ def advance_document(document: dict[str, Any], contract: dict[str, Any]) -> tupl
         }
         if all(state.get(key) == value for key, value in expected.items()):
             return copy.deepcopy(document), False
-        raise AdvancementError("current task is already Task134 but task identity state is incomplete")
+        raise AdvancementError("current task is already Task135 but task identity state is incomplete")
     if task_order(current) >= task_order(target):
         raise AdvancementError(f"task advancement cannot move backward or stay at {current} -> {target}")
     if current != contract["identity_expectations"]["previous_canonical_current_task"]:
@@ -122,7 +134,7 @@ def advance_document(document: dict[str, Any], contract: dict[str, Any]) -> tupl
     prior_digest = hashlib.sha256(render(document)).hexdigest()
     updated["current_task"] = {
         "task_id": target,
-        "scope": "Residual Debt & Projection Hygiene R1",
+        "scope": "Full Regression Closure & Test Environment R1",
         "execution_status": "IN_PROGRESS",
         "terminal": False,
         "identity_impact": "PRESENTATION_ONLY",
@@ -149,9 +161,9 @@ def advance_document(document: dict[str, Any], contract: dict[str, Any]) -> tupl
         "advancement": {
             "from_task_id": current,
             "to_task_id": target,
-            "transition_reason": "Task134 migrates canonical Current from terminal Task133 to Residual Debt & Projection Hygiene R1 while preserving Task133 as historical provenance and binding residual non-growth, Current path and Human Surface gates.",
+            "transition_reason": "Task135 migrates canonical Current from terminal Task134 to Full Regression Closure & Test Environment R1 while preserving Task134 as historical provenance, separating Current defects from sealed residuals and binding two natural full-suite passes.",
             "prior_source_sha256": prior_digest,
-            "execution_contract_path": "ignition/data/operations/iterations/134/execution-contract-r1.json",
+            "execution_contract_path": "ignition/data/operations/iterations/135/execution-contract-r1.json",
             "idempotency_key": target,
         },
         "claim_ceiling": CLAIM_CEILING,
@@ -167,7 +179,7 @@ def validate_state(document: dict[str, Any]) -> list[str]:
     if state["current_formal_task"] != document["current_task"]["task_id"]:
         errors.append("task identity current_formal_task differs from current_task")
     if state["current_formal_task"] != TARGET_TASK_ID:
-        errors.append("canonical advancement did not reach Task134")
+        errors.append("canonical advancement did not reach Task135")
     if state["latest_architecture_changing_task"] == state["current_formal_task"]:
         errors.append("architecture-changing task must remain distinct from current formal task")
     edge = state["advancement"]

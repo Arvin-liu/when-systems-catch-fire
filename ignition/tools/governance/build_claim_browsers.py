@@ -26,6 +26,11 @@ METHOD = "docs/publication/zhiyuan-writing-method.md"
 METHOD_VERSION = "0.5.0"
 MAX_FUNCTION_ENTRIES = 24
 MAX_NONFUNCTION_ENTRIES = 24
+CURRENT_SNAPSHOT_BLOCK = re.compile(
+    r"<!-- CURRENT-SNAPSHOT:BEGIN profile=(?:human|ai|machine) schema=current-snapshot-r1 -->\n"
+    r".*?<!-- CURRENT-SNAPSHOT:END -->\n?",
+    re.DOTALL,
+)
 
 
 def read_jsonl(path: Path) -> list[dict]:
@@ -100,7 +105,13 @@ def source_fingerprint(paths: list[str], migrated: dict[str, str]) -> tuple[str,
     for path in paths:
         candidate = ROOT / path
         if candidate.is_file():
-            return path, hashlib.sha256(candidate.read_bytes()).hexdigest()
+            # Human provenance follows source prose, not the compiler-owned
+            # Current Snapshot block embedded in the same public surface.
+            # This keeps a machine projection refresh from masquerading as a
+            # source-claim change while preserving the full source path.
+            source_text = candidate.read_text(encoding="utf-8")
+            normalized = CURRENT_SNAPSHOT_BLOCK.sub("", source_text).encode("utf-8")
+            return path, hashlib.sha256(normalized).hexdigest()
         if path in migrated:
             return path, migrated[path]
     return "canonical registry record", "UNAVAILABLE_SOURCE_FILE__USE_MACHINE_RECORD_HASH"

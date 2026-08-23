@@ -88,11 +88,11 @@
     "formal_and_architecture_ordinals_are_independent": true,
     "equality_required": false,
     "valid_example": {
-      "current_formal_task_id": "IGNITION-20260822-134",
-      "current_formal_task_ordinal": 134,
+      "current_formal_task_id": "IGNITION-20260822-135",
+      "current_formal_task_ordinal": 135,
       "latest_architecture_changing_task_id": "IGNITION-20260821-129",
       "latest_architecture_task_ordinal": 129,
-      "current_iteration_boundary": 134
+      "current_iteration_boundary": 135
     },
     "invalid_rule": "A difference between current_formal_task_ordinal and latest_architecture_task_ordinal is not a validation error; forcing equality is invalid."
   },

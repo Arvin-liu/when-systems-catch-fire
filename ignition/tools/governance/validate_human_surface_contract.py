@@ -59,6 +59,11 @@ RETIRED_ROUTE_TOKENS = (
     "ignition-overall-architecture.svg",
     "ignition-system-map.svg",
 )
+CURRENT_SNAPSHOT_BLOCK = re.compile(
+    r"<!-- CURRENT-SNAPSHOT:BEGIN profile=(?:human|ai|machine) schema=current-snapshot-r1 -->\n"
+    r".*?<!-- CURRENT-SNAPSHOT:END -->\n?",
+    re.DOTALL,
+)
 
 
 def canonical(value: object) -> str:
@@ -76,7 +81,13 @@ def read_jsonl(path: Path) -> list[dict]:
 def source_hash(path: str, migration_rows: dict[str, dict]) -> str | None:
     candidate = ROOT / path
     if candidate.is_file():
-        return hashlib.sha256(candidate.read_bytes()).hexdigest()
+        # The compiler-owned Current Snapshot is a derived projection, not
+        # source prose for a Human Surface claim. Exclude it symmetrically
+        # with build_claim_browsers.py so projection refreshes do not create
+        # false source-hash drift.
+        text = candidate.read_text(encoding="utf-8")
+        normalized = CURRENT_SNAPSHOT_BLOCK.sub("", text).encode("utf-8")
+        return hashlib.sha256(normalized).hexdigest()
     if path in migration_rows:
         return migration_rows[path].get("content_sha256")
     return None

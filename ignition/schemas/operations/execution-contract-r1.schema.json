@@ -8,12 +8,12 @@
   "properties": {
     "schema_version": {"const": "execution-contract-r1"},
     "contract_id": {"const": "IGNITION_EXECUTION_CONTRACT_R1"},
-    "task_id": {"type": "string", "const": "IGNITION-20260822-134"},
+    "task_id": {"type": "string", "const": "IGNITION-20260822-135"},
     "control_source": {"$ref": "#/$defs/controlSource"},
     "formal_baseline": {"$ref": "#/$defs/formalBaseline"},
     "identity_impact": {"const": "PRESENTATION_ONLY"},
-    "expected_task_branch": {"const": "codex/ignition-134-residual-debt-projection-hygiene-r1-20260822"},
-    "expected_receipt_branch": {"const": "relay/receipts/ignition-134-residual-debt-projection-hygiene-r1-20260822"},
+    "expected_task_branch": {"const": "codex/ignition-135-full-regression-closure-test-environment-r1-20260822"},
+    "expected_receipt_branch": {"const": "relay/receipts/ignition-135-full-regression-closure-test-environment-r1-20260822"},
     "required_release_ref": {"const": "refs/heads/main"},
     "no_owner_intermediate": {"const": true},
     "identity_expectations": {"$ref": "#/$defs/identityExpectations"},
@@ -30,7 +30,7 @@
         "repository": {"const": "Arvin-liu/1111"},
         "ref": {"const": "origin/relay/current"},
         "commit": {"$ref": "#/$defs/sha"},
-        "command_path": {"const": "agent-commands/IGNITION-20260822-134-residual-debt-projection-hygiene-r1.md"}
+        "command_path": {"const": "agent-commands/IGNITION-20260822-135-full-regression-closure-test-environment-r1.md"}
       }
     },
     "formalBaseline": {
@@ -48,12 +48,12 @@
       "additionalProperties": false,
       "required": ["current_formal_task", "latest_architecture_changing_task", "previous_canonical_current_task", "previous_formal_task", "release_candidate_task", "publication_witness_task"],
       "properties": {
-        "current_formal_task": {"const": "IGNITION-20260822-134"},
+        "current_formal_task": {"const": "IGNITION-20260822-135"},
         "latest_architecture_changing_task": {"const": "IGNITION-20260821-129"},
-        "previous_canonical_current_task": {"const": "IGNITION-20260822-133"},
-        "previous_formal_task": {"const": "IGNITION-20260822-133"},
-        "release_candidate_task": {"const": "IGNITION-20260822-134"},
-        "publication_witness_task": {"const": "IGNITION-20260822-134"}
+        "previous_canonical_current_task": {"const": "IGNITION-20260822-134"},
+        "previous_formal_task": {"const": "IGNITION-20260822-134"},
+        "release_candidate_task": {"const": "IGNITION-20260822-135"},
+        "publication_witness_task": {"const": "IGNITION-20260822-135"}
       }
     }
   }

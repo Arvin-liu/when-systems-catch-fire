@@ -2,10 +2,10 @@
   "schema_version": "current-task-lineage-status-r1",
   "contract_id": "CURRENT_TASK_LINEAGE_STATUS",
   "current_task": {
-    "task_id": "IGNITION-20260822-134",
-    "scope": "Residual Debt & Projection Hygiene R1",
-    "execution_status": "COMPLETED_WITH_CLASSIFIED_RESIDUALS",
-    "terminal": true,
+    "task_id": "IGNITION-20260822-135",
+    "scope": "Full Regression Closure & Test Environment R1",
+    "execution_status": "IN_PROGRESS",
+    "terminal": false,
     "identity_impact": "PRESENTATION_ONLY"
   },
   "current_state": {
@@ -85,12 +85,12 @@
   "claim_ceiling": "Canonical repository-local task lineage and status semantics only; this record does not grant authority, prove external truth, establish production readiness, or set epistemic acceptance.",
   "task_identity": {
     "schema_version": "task-identity-state-r1",
-    "current_formal_task": "IGNITION-20260822-134",
+    "current_formal_task": "IGNITION-20260822-135",
     "latest_architecture_changing_task": "IGNITION-20260821-129",
-    "release_candidate_task": "IGNITION-20260822-134",
-    "publication_witness_task": "IGNITION-20260822-134",
-    "previous_canonical_current_task": "IGNITION-20260822-133",
-    "previous_formal_task": "IGNITION-20260822-133",
+    "release_candidate_task": "IGNITION-20260822-135",
+    "publication_witness_task": "IGNITION-20260822-135",
+    "previous_canonical_current_task": "IGNITION-20260822-134",
+    "previous_formal_task": "IGNITION-20260822-134",
     "historical_lineage": [
       {
         "predecessor_task_id": "IGNITION-20260821-129",
@@ -114,7 +114,7 @@
         "predecessor_task_id": "IGNITION-20260822-132",
         "successor_task_id": "IGNITION-20260822-133",
         "relation": "CANONICAL_SOURCE_ADVANCEMENT",
-        "status": "CURRENT_ADVANCEMENT"
+        "status": "COMPLETED_HISTORICAL"
       },
       {
         "predecessor_task_id": "IGNITION-20260822-132",
@@ -126,22 +126,34 @@
         "predecessor_task_id": "IGNITION-20260822-133",
         "successor_task_id": "IGNITION-20260822-134",
         "relation": "CANONICAL_SOURCE_ADVANCEMENT",
-        "status": "CURRENT_ADVANCEMENT"
+        "status": "COMPLETED_HISTORICAL"
       },
       {
         "predecessor_task_id": "IGNITION-20260822-133",
         "successor_task_id": "IGNITION-20260822-134",
         "relation": "FORMAL_TASK_SUCCESSOR",
+        "status": "COMPLETED_HISTORICAL"
+      },
+      {
+        "predecessor_task_id": "IGNITION-20260822-134",
+        "successor_task_id": "IGNITION-20260822-135",
+        "relation": "CANONICAL_SOURCE_ADVANCEMENT",
+        "status": "CURRENT_ADVANCEMENT"
+      },
+      {
+        "predecessor_task_id": "IGNITION-20260822-134",
+        "successor_task_id": "IGNITION-20260822-135",
+        "relation": "FORMAL_TASK_SUCCESSOR",
         "status": "CURRENT_ADVANCEMENT"
       }
     ],
     "advancement": {
-      "from_task_id": "IGNITION-20260822-133",
-      "to_task_id": "IGNITION-20260822-134",
-      "transition_reason": "Task134 migrates canonical Current from terminal Task133 to Residual Debt & Projection Hygiene R1 while preserving Task133 as historical provenance and binding residual non-growth, Current path and Human Surface gates.",
-      "prior_source_sha256": "bd4c9fb1aa40842a032158abc9d941a109191e892db4de29d088b4d5873c1be0",
-      "execution_contract_path": "ignition/data/operations/iterations/134/execution-contract-r1.json",
-      "idempotency_key": "IGNITION-20260822-134"
+      "from_task_id": "IGNITION-20260822-134",
+      "to_task_id": "IGNITION-20260822-135",
+      "transition_reason": "Task135 migrates canonical Current from terminal Task134 to Full Regression Closure & Test Environment R1 while preserving Task134 as historical provenance, separating Current defects from sealed residuals and binding two natural full-suite passes.",
+      "prior_source_sha256": "053dfe958dc116325425b44b77f02288bc3d68e0a6baf27b3c772f6471e69f25",
+      "execution_contract_path": "ignition/data/operations/iterations/135/execution-contract-r1.json",
+      "idempotency_key": "IGNITION-20260822-135"
     },
     "claim_ceiling": "Canonical repository-local task advancement only; this record does not grant authority, prove external truth, establish production readiness or set epistemic acceptance."
   }

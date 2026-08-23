@@ -371,7 +371,7 @@
   - 依赖：—；被引用：—
 - [CURRENT_SNAPSHOT architecture_counts={"current_map_version": "0.12.0", "hidden_components": 12, "historical_map_version"](../../../llms.txt)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-c2f44de667300395 / CURRENT_SNAPSHOT architecture_counts={"current_map_version": "0.12.0", "hidden_components": 12, "historical_map_version"
+  - 可搜索名称：NFC-2bc99c41470611c9 / CURRENT_SNAPSHOT architecture_counts={"current_map_version": "0.12.0", "hidden_components": 12, "historical_map_version"
   - 来源：`llms.txt`
   - 依赖：—；被引用：—
 - [D-meta 元同构函数](../../../docs/phi_meta_law.md)

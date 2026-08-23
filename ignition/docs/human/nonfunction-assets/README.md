@@ -12,21 +12,21 @@
 
 ## 这轮覆盖了什么
 
-机器记录规模：**16544** 条；独立人话说明：**24** 条。前一个数字是当前登记量，不是本轮发现量；后一个数字是按 materiality policy 选出的可读样本，不代表其余记录无价值。
+机器记录规模：**16550** 条；独立人话说明：**24** 条。前一个数字是当前登记量，不是本轮发现量；后一个数字是按 materiality policy 选出的可读样本，不代表其余记录无价值。
 
 主题层同时保留对象类型、处置和边界的分组；条目层才展开“它在说什么 / 为什么值得看 / 可以怎么用 / 不能推出什么 / 还缺什么”。精确的 ID、M/E、处置和 claim ceiling 放在每条说明的技术记录段落。
 
 ## 主题入口
 
 - [仓库事实与约定](themes/repository-facts-and-conventions.md)：1 条人话说明
-- [尚未闭合的问题](themes/unfinished-questions.md)：6 条人话说明
+- [尚未闭合的问题](themes/unfinished-questions.md)：7 条人话说明
 - [撤回、历史与边界](themes/withdrawals-history-and-boundaries.md)：1 条人话说明
 - [数学与形式化](themes/mathematics-and-formalization.md)：4 条人话说明
 - [机制与因果候选](themes/mechanism-and-causal-candidates.md)：1 条人话说明
 - [治理与规范](themes/governance-and-norms.md)：1 条人话说明
 - [经验与文献](themes/evidence-and-literature.md)：1 条人话说明
 - [解释与研究候选](themes/interpretations-and-research-candidates.md)：4 条人话说明
-- [跨域对应与类比](themes/cross-domain-correspondence.md)：5 条人话说明
+- [跨域对应与类比](themes/cross-domain-correspondence.md)：4 条人话说明
 
 ## 机器权威与新鲜度
 

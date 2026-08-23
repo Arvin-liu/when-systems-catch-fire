@@ -23,7 +23,7 @@ except ImportError:  # direct script / tools-on-PYTHONPATH execution
 HERE = Path(__file__).resolve()
 ROOT = HERE.parents[1]
 REPO_ROOT = ROOT.parent
-REPORT_PATH = ROOT / "data/operations/iterations/134/step14-current-surface-semantic-gate-r1.json"
+REPORT_PATH = ROOT / "data/operations/iterations/135/step15-current-surface-semantic-gate-r1.json"
 
 TASK_TOKEN_RE = re.compile(r"\b(?:IGNITION-[0-9A-Z-]+|Task\s*\d{2,3})\b", re.I)
 VERSION_TOKEN_RE = re.compile(r"\b\d+\.\d+\.\d+\b")
@@ -222,7 +222,7 @@ def validate_repository() -> dict[str, Any]:
         })
     return {
         "schema_version": "current-surface-semantic-gate-r1",
-        "task_id": "IGNITION-20260822-134",
+        "task_id": "IGNITION-20260822-135",
         "result": "VALID" if not issues else "INVALID",
         "issue_count": len(issues),
         "snapshot_source_digest": snapshot["generated_from_source_digest"],

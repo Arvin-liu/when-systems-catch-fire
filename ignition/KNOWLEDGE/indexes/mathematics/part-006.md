@@ -1999,6 +1999,11 @@
   - 可搜索名称：NFC-abd4cac951f2a101 / obligations: \[开放问题\]\(./RESULTS/OPEN-QUESTIONS.md\)、\[纠正与撤回\]\(./RESULTS/CORRECTIONS.md\)、Foundation 的证明/实证义务和 Results Book 的显式
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
+- [obligations: complete Step15 Current projections, Step16 formal result/receipt and manifest-LAST closure, then perform t](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-de9197170148b95f / obligations: complete Step15 Current projections, Step16 formal result/receipt and manifest-LAST closure, then perform t
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [obligations: Task 104–106 historical propagation records remain `REQUIRES_REVIEW`; Phase-E legacy cwd path messages rema](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-3b6625163bbfd150 / obligations: Task 104–106 historical propagation records remain `REQUIRES_REVIEW`; Phase-E legacy cwd path messages rema
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-b779ec532f25b524 / Publication remains separate: lifecycle readiness is not publication, the authority remains `REMOTE_REF_OBSERVATION`, th
   - 来源：`reports/operations/ignition-132-step09-canonical-current-migration.md`
-  - 依赖：—；被引用：—
-- [Purpose: avoid overstating evidence.](../../../inputs/020/formal-protocol-promotion-standard.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-ebbc0fcacc6aff97 / Purpose: avoid overstating evidence.
-  - 来源：`inputs/020/formal-protocol-promotion-standard.md`
   - 依赖：—；被引用：—

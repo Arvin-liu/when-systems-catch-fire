@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [已迁移的历史函数来源/0081-D32-认知-群体犹豫域统一映射函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-ee14b8af60ae67d0 / 已迁移的历史函数来源/0081-D32-认知-群体犹豫域统一映射函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D32；被引用：—
 - [已迁移的历史函数来源/0082-D33-三层退化叠加函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-159a35df0b5e7629 / 已迁移的历史函数来源/0082-D33-三层退化叠加函数.md
@@ -2499,8 +2504,3 @@
   - 可搜索名称：NFC-2a46dfdc0133532b / 已迁移的历史函数来源/0577-D562-记忆哥德尔函数.md
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：D562；被引用：—
-- [已迁移的历史函数来源/0578-D563-跨系统移植成功函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-8fb5ca95d6d65173 / 已迁移的历史函数来源/0578-D563-跨系统移植成功函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D563；被引用：—

@@ -7,7 +7,7 @@ from tools import validate_execution_contract as validator
 
 
 class ExecutionContractTests(unittest.TestCase):
-    def test_task134_contract_is_fixed(self) -> None:
+    def test_task135_contract_is_fixed(self) -> None:
         self.assertEqual(validator.validate(), [])
 
     def test_wrong_baseline_is_rejected(self) -> None:
