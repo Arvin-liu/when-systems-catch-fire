@@ -74,6 +74,7 @@ from .live_orchestration import LiveDispatchCoordinator, LiveDispatchPlan, LiveO
 from .live_privacy import LivePrivacyError, SanitizedLiveResult, sanitize_live_result, sanitize_public_summary
 from .live_pilot import DisposableLiveFixture, LivePilotError, LivePilotExpectation, LivePilotValidator, LiveValidationReport, tree_digest
 from .live_preflight import LivePreflightEntry, LivePreflightReport, run_live_preflight
+from .live_execution import LiveAttemptResult, LiveExecutionError, execute_bounded_attempt
 
 __all__ = [
     "ApprovalPolicy", "ArtifactRef", "BudgetContract", "ExecutorDescriptor", "ExecutorHealth",
@@ -98,4 +99,5 @@ __all__ = [
     "LivePrivacyError", "SanitizedLiveResult", "sanitize_live_result", "sanitize_public_summary",
     "DisposableLiveFixture", "LivePilotError", "LivePilotExpectation", "LivePilotValidator", "LiveValidationReport", "tree_digest",
     "LivePreflightEntry", "LivePreflightReport", "run_live_preflight",
+    "LiveAttemptResult", "LiveExecutionError", "execute_bounded_attempt",
 ]

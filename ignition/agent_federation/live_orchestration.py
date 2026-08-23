@@ -267,6 +267,53 @@ class LiveDispatchCoordinator:
         })
         return record.to_dict()
 
+    def finalize_receipt(
+        self,
+        receipt: DispatchReceipt,
+        *,
+        passed: bool,
+        validation_ref: str,
+        actual_cost: CostVector,
+        reconciliation: bool = False,
+    ) -> Mapping[str, Any]:
+        """Persist a bounded receipt, OS validation and budget settlement."""
+
+        plan = self.prepare()
+        if not isinstance(receipt, DispatchReceipt) or receipt.dispatch_id != plan.dispatch_id:
+            raise LiveOrchestrationError("receipt is not bound to the prepared live dispatch")
+        recorded = self.dispatch_store.record_receipt(receipt, reconciliation=reconciliation)
+        validated = self.dispatch_store.validate_receipt(plan.dispatch_id, validation_ref=validation_ref, passed=passed)
+        self.queue.complete(plan.queue_id, "COMPLETED_VALIDATED" if passed else "FAILED", reason=validation_ref)
+        self.accounting.settle(plan.reservation_id, actual_cost, cancelled=False, occurred_at=float(self.clock()))
+        for lease_id in plan.resource_lease_ids:
+            self.resources.release(lease_id)
+        self._emit("VALIDATION_RECORDED", {
+            "dispatch_id": plan.dispatch_id,
+            "validation_ref": validation_ref,
+            "passed": passed,
+            "receipt_digest": receipt.receipt_digest,
+            "recorded_state": recorded.state,
+            "validated_state": validated.state,
+        })
+        return validated.to_dict()
+
+    def timeout_ambiguous(self, *, reason: str, actual_cost: CostVector) -> Mapping[str, Any]:
+        """Close OS resources while leaving external outcome in reconciliation."""
+
+        plan = self.prepare()
+        record = self.dispatch_store.timeout_ambiguous(plan.dispatch_id, reason=reason)
+        self.queue.complete(plan.queue_id, "REQUIRES_RECONCILIATION", reason=reason)
+        self.accounting.settle(plan.reservation_id, actual_cost, cancelled=False, occurred_at=float(self.clock()))
+        for lease_id in plan.resource_lease_ids:
+            self.resources.release(lease_id)
+        event_id = self._emit("RECONCILIATION_RECORDED", {
+            "dispatch_id": plan.dispatch_id,
+            "state": record.state,
+            "reason": reason,
+            "retry": "NO_BLIND_RETRY",
+        })
+        return {"record": record.to_dict(), "event_id": event_id, "claim_ceiling": "Outcome remains unresolved until independent reconciliation."}
+
     def public_plan(self) -> dict[str, Any]:
         plan = self.prepare()
         return {

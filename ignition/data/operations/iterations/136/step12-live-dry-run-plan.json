@@ -1,0 +1,46 @@
+{
+  "schema_version": "ignition-136-step12-live-dry-run-r1",
+  "task_id": "IGNITION-20260823-136",
+  "step": "12",
+  "mode": "FAKE_TRANSPORT_ONLY; REAL_INFERENCE_NOT_RUN",
+  "plan": {
+    "executor_id": "external.codex",
+    "adapter_id": "codex-live-r2",
+    "version": "codex-cli 0.144.4",
+    "capability_lease_ref": "lease-orch",
+    "capability_lease_observed": ["repo.read"],
+    "workspace": "<DISPOSABLE_WORKSPACE>",
+    "workspace_mode": "DISPOSABLE_READ_ONLY",
+    "permission_ceiling": ["repo.read"],
+    "side_effect_class": "READ_ONLY_SYNTHETIC",
+    "network_class": "INFERENCE_TRANSPORT_ONLY",
+    "argv_shape": ["codex", "exec", "--json", "--ephemeral", "--ignore-user-config", "--ignore-rules", "--sandbox", "read-only", "--cd", "<DISPOSABLE_WORKSPACE>", "<SYNTHETIC_PROMPT>"],
+    "synthetic_input_digest": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "output_contract": {"format": "json", "required_fields": ["nonce", "line_count", "field_value", "checksum_prefix"]},
+    "timeout_seconds": 10,
+    "estimated_invocation_count": 1,
+    "billing_authority": "NO_NEW_BILLING_AUTHORITY",
+    "retry_policy": "NO_BLIND_RETRY",
+    "reconciliation_policy": "REQUIRE_ON_TIMEOUT_OR_UNKNOWN_EFFECT",
+    "executor_canonical_mutation_allowed": false,
+    "goal_completion_inference_allowed": false
+  },
+  "dry_run_result": {
+    "fake_transport_invocations": 1,
+    "state_path": ["CREATED", "ADMITTED", "DISPATCHING", "IN_FLIGHT", "RETURNED_UNVALIDATED", "VALIDATING", "COMPLETED_VALIDATED"],
+    "independent_validator": "PASS",
+    "durable_dispatch": "COMPLETED_VALIDATED",
+    "resource_lease_released": true,
+    "budget_settled": true,
+    "live_inference": "NOT_RUN"
+  },
+  "verification": {
+    "command": "PYTHONPATH=ignition python3 -m unittest ignition.tests.test_live_execution ignition.tests.test_dispatch_reconciliation ignition.tests.test_live_orchestration -v",
+    "tests": 9,
+    "failures": 0,
+    "errors": 0,
+    "skips": 0,
+    "status": "PASS"
+  },
+  "claim_ceiling": "Deterministic fake transport and OS state-machine closure only; no external executor completion is claimed."
+}

@@ -340,6 +340,21 @@ class DurableDispatchStore:
             return self._replace(replace(record, state="RETRY_ELIGIBLE_READ_ONLY", safe_failover=True, terminal_reason=reason, dispatch_digest=None))
         return self._replace(replace(record, state="REQUIRES_RECONCILIATION", safe_failover=False, terminal_reason=reason, dispatch_digest=None))
 
+    def timeout_ambiguous(self, dispatch_id: str, *, reason: str = "bounded process outcome is unknown") -> DispatchRecord:
+        """Stop even a read-only live attempt when process outcome is ambiguous.
+
+        The generic durable dispatch API keeps a conservative read-only retry
+        path for older callers.  Live bridge callers use this explicit method
+        when the live state machine has observed a started process and cannot
+        prove its outcome; this path never marks the record replay-safe.
+        """
+
+        _text(reason, "reason")
+        record = self.get(dispatch_id)
+        if record.state not in {"SENT", "ACKNOWLEDGED", "RUNNING"}:
+            raise DispatchConflict("ambiguous timeout is not applicable to the current dispatch state")
+        return self._replace(replace(record, state="REQUIRES_RECONCILIATION", safe_failover=False, terminal_reason=reason, dispatch_digest=None))
+
     def retry_read_only(self, dispatch_id: str) -> DispatchRecord:
         record = self.get(dispatch_id)
         if record.state != "RETRY_ELIGIBLE_READ_ONLY" or record.effect_class != "READ_ONLY" or not record.safe_failover:
