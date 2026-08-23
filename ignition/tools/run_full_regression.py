@@ -70,8 +70,19 @@ def discover_repository_root(explicit: str | Path | None = None) -> tuple[Path, 
     return repo_root, app_root
 
 
-def canonical_environment(app_root: Path) -> dict[str, str]:
-    """Build the explicit module path for the existing test modules/tools."""
+def canonical_environment(
+    app_root: Path,
+    python_executable: str | Path | None = None,
+) -> dict[str, str]:
+    """Build the explicit module and executable path for the test environment.
+
+    Several existing validator profiles intentionally use the portable
+    ``python3`` argv rather than embedding an interpreter path.  When the
+    runner executes an isolated venv through an absolute path, the child
+    validators must nevertheless resolve that same venv.  Prepending the
+    execution interpreter's directory makes the environment boundary explicit
+    without changing the tracked profiles or mutating the host Python.
+    """
 
     entries = [app_root, app_root / "tests", app_root / "tools/foundation"]
     existing = os.environ.get("PYTHONPATH", "")
@@ -79,6 +90,12 @@ def canonical_environment(app_root: Path) -> dict[str, str]:
         entries.extend(Path(item) for item in existing.split(os.pathsep) if item)
     env = os.environ.copy()
     env["PYTHONPATH"] = os.pathsep.join(str(path) for path in entries)
+    if python_executable is not None:
+        executable_dir = str(Path(python_executable).expanduser().absolute().parent)
+        inherited_path = env.get("PATH", "")
+        env["PATH"] = os.pathsep.join(
+            item for item in (executable_dir, inherited_path) if item
+        )
     return env
 
 
@@ -440,7 +457,7 @@ def run_full_regression(
             result.update({"status": "PREFLIGHT_FAILED", "exit_code": 2})
             return result
 
-        env = canonical_environment(app_root)
+        env = canonical_environment(app_root, execution_python)
         started = time.monotonic()
         completed = run(
             [str(execution_python), *TEST_DISCOVERY_ARGS],
