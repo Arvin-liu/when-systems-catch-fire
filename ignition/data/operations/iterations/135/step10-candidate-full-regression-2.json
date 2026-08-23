@@ -1,0 +1,73 @@
+{
+  "schema_version": "ignition-135-step10-candidate-full-regression-r1",
+  "task_id": "IGNITION-20260822-135",
+  "step": "10",
+  "run_number": 2,
+  "status": "PASS",
+  "candidate_head_sha": "25d8aee5e8186376a43044b0b416242c3548071c",
+  "command": "python3 ignition/tools/run_full_regression.py --provision-isolated --output-dir <external-temporary-capture>",
+  "working_directory": "ignition",
+  "runtime_seconds": 2836.801,
+  "elapsed_seconds": 2837.794,
+  "long_window": {
+    "natural_terminal_state": true,
+    "process_killed": false,
+    "arbitrary_timeout_used": false,
+    "minimum_window_seconds": 14400,
+    "actual_run_completed_before_window": true
+  },
+  "environment_contract": {
+    "isolated": true,
+    "dependency_preflight": "PASS",
+    "python_version": "3.14.6",
+    "execution_python": "temporary isolated foundation venv outside repository",
+    "requirements": {
+      "sympy": "1.14.0",
+      "z3-solver": "4.16.0.0",
+      "jsonschema": "4.26.0"
+    },
+    "path_prepend_contract": "execution interpreter directory precedes inherited PATH for portable python3 child validators"
+  },
+  "result": {
+    "exit_code": 0,
+    "process_returncode": 0,
+    "tests_run": 1082,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "summary": "OK",
+    "status": "PASS"
+  },
+  "side_effect_observation": {
+    "clean_before": true,
+    "clean_after": true,
+    "tracked_mutations": [],
+    "generated_output_drift": [],
+    "before_status": [],
+    "after_status": []
+  },
+  "projection_preflight": {
+    "status": "PASS",
+    "failed_checks": [],
+    "projection_checks_pass": true,
+    "release_admission": true,
+    "side_effect_detected": false,
+    "tracked_path_count": 3065,
+    "manifest_path_count": 3065
+  },
+  "capture": {
+    "location": "external temporary directory; not part of the formal repository",
+    "stdout_bytes": 5371,
+    "stdout_sha256": "dcc2c794c03450654cb3ee59e5402b73545b58f0de60ec38511f0b68e023e507",
+    "stderr_bytes": 1530,
+    "stderr_sha256": "63995b7f746870a8ebee6d944b2fbdbcf7b375db6375b2d0f7c0133e9d3af1df"
+  },
+  "prohibited_green_laundering": {
+    "skip_added": false,
+    "xfail_added": false,
+    "expected_failure_added": false,
+    "ignore_added": false,
+    "residual_expanded": false
+  },
+  "claim_ceiling": "Exact repository-local candidate full-suite #2 terminal evidence on the repaired candidate; no whole-project correctness, external truth, production readiness, Owner acceptance or epistemic acceptance is inferred."
+}

@@ -57,7 +57,7 @@
     "current_state_status": "CURRENT_WITH_OPEN_OBLIGATIONS",
     "epistemically_accepted": 0
   },
-  "generated_from_source_digest": "3b63b05f38f78c4649f784133bf4ffe9927198c82e6babcb2a7cc8a39050eb47",
+  "generated_from_source_digest": "dcc35b778a61c9293de5be70cfcc71100ad0fdf5b256cd81827578e6918665cb",
   "identity": {
     "driver_role": "driver",
     "epoch": "os-control-plane-r4-steering-intent-r1",
