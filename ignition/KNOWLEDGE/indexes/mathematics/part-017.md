@@ -4,6 +4,41 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [未来解除 quarantine 必须提交新证据并只提升相应轴：补数学定义不能自动提升 E，补真实数据不能自动补齐 M。任何处置升级都必须更新依赖消费者、公共 claim lineage 和回弹报告。](../../../docs/foundation/function-asset-registry-migration-r2.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-ecda5bbd3bbe5a6b / 未来解除 quarantine 必须提交新证据并只提升相应轴：补数学定义不能自动提升 E，补真实数据不能自动补齐 M。任何处置升级都必须更新依赖消费者、公共 claim lineage 和回弹报告。
+  - 来源：`docs/foundation/function-asset-registry-migration-r2.md`
+  - 依赖：—；被引用：—
+- [未证明命题数: 353](../../../reports/foundation-architecture/084-max-adjudication-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-4f3874d74e359e81 / 未证明命题数: 353
+  - 来源：`reports/foundation-architecture/084-max-adjudication-report.md`
+  - 依赖：—；被引用：—
+- [未限定适用范围，易把复杂生命系统强行简化成直线模型（歧义/适用边界）。](../../../docs/governance/meta-protocol-reviews/protocols/E1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-aacea0b3a6048aef / 未限定适用范围，易把复杂生命系统强行简化成直线模型（歧义/适用边界）。
+  - 来源：`docs/governance/meta-protocol-reviews/protocols/E1.md`
+  - 依赖：—；被引用：—
+- [本书候选数据：`data/meta-protocols/book-validation-cases-20260709.json`（count=22，均 status=candidate_only，formal_case_id=null）](../../../outputs/audit/book-validation-case-table-formalization-audit-20260709.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-bd1eaced66657cca / 本书候选数据：`data/meta-protocols/book-validation-cases-20260709.json`（count=22，均 status=candidate_only，formal_case_id=null）
+  - 来源：`outputs/audit/book-validation-case-table-formalization-audit-20260709.md`
+  - 依赖：—；被引用：—
+- [本书验证候选案例 · 正式案例表入表 crosswalk](../../../outputs/book-collisions/20260709-22-book-validation/formalization-crosswalk.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-d1276bddf89f9065 / 本书验证候选案例 · 正式案例表入表 crosswalk
+  - 来源：`outputs/book-collisions/20260709-22-book-validation/formalization-crosswalk.md`
+  - 依赖：—；被引用：—
+- [本书验证候选案例 · 正式案例表入表审计 2026-07-09](../../../outputs/audit/book-validation-case-table-formalization-audit-20260709.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-74bc91ffbd074b75 / 本书验证候选案例 · 正式案例表入表审计 2026-07-09
+  - 来源：`outputs/audit/book-validation-case-table-formalization-audit-20260709.md`
+  - 依赖：—；被引用：—
+- [本体/形而上 836；](../../../RESULTS/ADJUDICATION-SUMMARY.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-fde101478719c6ae / 本体/形而上 836；
+  - 来源：`RESULTS/ADJUDICATION-SUMMARY.md`
+  - 依赖：—；被引用：—
 - [本体论—伦理推导](../../../docs/governance/life-community-value-charter.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
   - 可搜索名称：NFC-c7112866a5ee08da / 本体论—伦理推导
@@ -2469,38 +2504,3 @@
   - 可搜索名称：NFC-d8d7351db41a03fd / 已迁移的历史函数来源/0068-D19-情绪注入退出权信号.md
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：D19；被引用：—
-- [已迁移的历史函数来源/0069-D20-法条净效应函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-1ceab0761955f925 / 已迁移的历史函数来源/0069-D20-法条净效应函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D20；被引用：—
-- [已迁移的历史函数来源/0070-D21-宪法硬度.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-00be68001b12bf7e / 已迁移的历史函数来源/0070-D21-宪法硬度.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D21；被引用：—
-- [已迁移的历史函数来源/0071-D22-民事保护,各维度退出权的乘积.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-7c00fccf7340cfaa / 已迁移的历史函数来源/0071-D22-民事保护,各维度退出权的乘积.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D22；被引用：—
-- [已迁移的历史函数来源/0072-D23-法治度.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-8ed29877db65fb93 / 已迁移的历史函数来源/0072-D23-法治度.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D23；被引用：—
-- [已迁移的历史函数来源/0073-D24-犹豫域双向压缩.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-b15e0892af9aa66d / 已迁移的历史函数来源/0073-D24-犹豫域双向压缩.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D24；被引用：—
-- [已迁移的历史函数来源/0074-D25-叙事冲击.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-8f3b3787e4ae6bb8 / 已迁移的历史函数来源/0074-D25-叙事冲击.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D25；被引用：—
-- [已迁移的历史函数来源/0075-D26-跨层完整退化函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-4c2db4402375ea64 / 已迁移的历史函数来源/0075-D26-跨层完整退化函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D26；被引用：—

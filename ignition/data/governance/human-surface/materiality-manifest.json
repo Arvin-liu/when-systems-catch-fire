@@ -1,9 +1,9 @@
 {
   "counts": {
     "function_human": 24,
-    "function_machine": 5624,
+    "function_machine": 5741,
     "nonfunction_human": 24,
-    "nonfunction_machine": 16570
+    "nonfunction_machine": 16642
   },
   "entries": [
     {
@@ -494,7 +494,7 @@
       "asset_kind": "NONFUNCTION_ASSET",
       "human_path": "docs/human/nonfunction-assets/entries/nfc-14866124cc1a2cae.md",
       "machine_id": "NFC-14866124cc1a2cae",
-      "machine_record_sha256": "579c785ea1e9039727c8e0d6a10d441341bea510c64c83129a51d6ac1d8a376c",
+      "machine_record_sha256": "e040adf9b46d6c3bd28ddcab9983190831c93301025c9b9444f143db066c67d8",
       "machine_source": "data/foundation/nonfunction-claims/claim-registry.jsonl",
       "selection_reason": "materiality policy: representative, boundary-sensitive, or disposition-sensitive record",
       "source_path": "docs/project-current-state.md",

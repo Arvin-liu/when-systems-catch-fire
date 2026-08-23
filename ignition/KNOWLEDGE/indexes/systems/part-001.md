@@ -1089,9 +1089,9 @@
   - 可搜索名称：NFC-fe5a12c3505fb1b8 / `CausalState`：`JIN-MCF-S01` 基层亲邻高重叠；`S02` 辽东北治理/动员脆弱；`S03` 金可用集中兵力；`S04` 辽指挥与信息失序；`S05` 金的招募/资源/合法性增强。
   - 来源：`reports/publication/jin-rise-point-fire-analysis.md`
   - 依赖：—；被引用：—
-- [`current-facts.json` 为准；当前地图为 `0.12.0`，上一版 `0.11.0`、更早版 `0.10.0` 仅作 Historical。](../../../docs/architecture/interactive-system-map.md)
+- [`current-facts.json` 为准；当前地图为 `0.13.0`，上一版 `0.12.0`、更早版 `0.11.0` 仅作 Historical。](../../../docs/architecture/interactive-system-map.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-24bf97ee07efda5b / `current-facts.json` 为准；当前地图为 `0.12.0`，上一版 `0.11.0`、更早版 `0.10.0` 仅作 Historical。
+  - 可搜索名称：NFC-70b84a574bbba814 / `current-facts.json` 为准；当前地图为 `0.13.0`，上一版 `0.12.0`、更早版 `0.11.0` 仅作 Historical。
   - 来源：`docs/architecture/interactive-system-map.md`
   - 依赖：—；被引用：—
 - [`data/architecture/current-system-identity.json`、`data/architecture/current-facts.json`](../../../AI-START-HERE.md)

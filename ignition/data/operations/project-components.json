@@ -132,8 +132,13 @@
     {
       "authority_source": "docs/architecture/external-agent-federation-r1.md",
       "component_ids": [
+        "codex_adapter",
         "external_agent_federation",
-        "live_executor_bridge_r1"
+        "future_executors",
+        "hermes_adapter",
+        "live_executor_bridge_r1",
+        "openclaw_adapter",
+        "reference_executor"
       ],
       "path_patterns": [
         "agent_federation/",

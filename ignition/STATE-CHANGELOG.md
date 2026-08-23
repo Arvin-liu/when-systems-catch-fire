@@ -9,7 +9,7 @@
 - current_state_status: `CURRENT_WITH_OPEN_OBLIGATIONS`；EPISTEMICALLY_ACCEPTED=0；epistemic_acceptance: `0`；live_external_ceiling: `LIVE_BRIDGE_IMPLEMENTED / LIVE_COMPLETION_NOT_OBSERVED`。
 - architecture_counts: `registry=95; visible_nodes=83; visible_edges=88`；active_overlays: `Durability / Lifecycle, Steering / Intent / Goal / Obligation, Structural Governance Surface`。
 - task_lineage: current `IGNITION-20260823-136` `IN_PROGRESS`；predecessor `HISTORICAL_UNEXECUTED_REBASED_INTO_127` / `REBASED_INTO_127`；successor `COMPLETED_WITH_CLASSIFIED_RESIDUALS`。
-- source: ignition/data/operations/current-snapshot-r1.json；source_digest: `f5369c8e95b8fd283249c39c22b689d17545cd77a6a647f3d35223ee47554028`。
+- source: ignition/data/operations/current-snapshot-r1.json；source_digest: `b07c6f7503d901aec6e4da31cc094168a3d1843d03bdc63f8007d5771f793fad`。
 - claim_ceiling: Deterministic repository-local Current projection only; no Owner authority, external truth, production readiness or epistemic upgrade.
 <!-- CURRENT-SNAPSHOT:END -->
 
@@ -338,10 +338,14 @@
 
 ## 2026-08-24 — IGNITION-20260823-136-LIVE-EXTERNAL-EXECUTOR-BRIDGE-R1 — current architecture transition
 
-- main_state: CURRENT_WITH_OPEN_OBLIGATIONS; formal main remains at the verified Task135 baseline until the separate Task136 candidate release and remote-ref observation. This append-only entry records the Task136 Current transition on the task branch, not formal main publication.
+- main_state: CURRENT_WITH_OPEN_OBLIGATIONS; formal main remains at the verified Task135 baseline `3acf15ea4c1b1c27eb6e8b9cadbc4f0526bdfddb` until the separate Task136 candidate release and remote-ref observation. This append-only entry records the Task136 Current transition on the task branch, not formal main publication.
 - delta: adds the OS-owned Live External Executor Bridge R1 as the provider-neutral Federation-to-executor dispatch boundary, with capability lease, bounded transport, strict receipt, timeout/cancel, reconciliation and independent validation. The registry, typed topology, layout, materialized map 0.13.0 and generated Current projections are synchronized.
 - current_formal_task: IGNITION-20260823-136 is IN_PROGRESS with formal ordinal 136; latest architecture-changing task is the same Task136 ordinal, and current_iteration_boundary=136 remains only the deprecated compatibility alias.
 - task_lineage: IGNITION-125 remains HISTORICAL_UNEXECUTED with requirements REBASED_INTO_127; IGNITION-127 remains COMPLETED_WITH_CLASSIFIED_RESIDUALS; Task135 remains immutable historical terminal provenance and Task136 is the current non-terminal successor.
+- epistemic_state: EPISTEMICALLY_ACCEPTED=0; this transition records repository-local architecture and bounded live-attempt evidence only, not external truth, production readiness, Owner acceptance or live completion.
+- obligations: Step17 must complete the exact candidate natural full regression, then Step18 must complete a fresh-clone natural full regression before any ordinary main fast-forward and independent 1111 publication witness.
+- stale_knowledge: Task135 remains the verified formal-main baseline; the Hermes timeout, OpenClaw safety skip and all pre-136 executor inventory are historical or observation-scoped evidence and cannot be upgraded into live completion.
+- next_read: read the Task136 execution contract, Step13 live receipt, Step16 current-surface receipts and the eventual Step17/Step18 natural regression receipts before terminalization.
 - live_boundary: the pilot is synthetic, disposable and read-only; no channel/message, browser, remote Git, executor configuration or new billing is enabled. Step11 admitted Codex and Hermes to preflight; OpenClaw was skipped because disposable workspace, explicit read-only ceiling and channel-off operation could not all be proven.
 - live_observation: one bounded Hermes attempt timed out as TIMED_OUT_EFFECT_UNKNOWN; cancellation and reconciliation remain open, the synthetic fixture is unchanged, and no retry or private-session propagation occurred. No validated external completion was observed.
 - live_ceiling: LIVE_BRIDGE_IMPLEMENTED / LIVE_COMPLETION_NOT_OBSERVED; LIVE_EXTERNAL_INVOCATION remains an open obligation. Executor PASS cannot bypass RETURNED_UNVALIDATED or independent OS validation.

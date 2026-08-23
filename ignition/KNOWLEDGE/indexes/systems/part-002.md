@@ -1139,6 +1139,11 @@
   - 可搜索名称：NFC-19373a177b5eda1c / link: "已迁移的历史案例来源/0797-C-0802-技术系统失效与可靠性工程.md"
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
+- [live_boundary: the pilot is synthetic, disposable and read-only; no channel/message, browser, remote Git, executor confi](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-0d06f1e60c99b775 / live_boundary: the pilot is synthetic, disposable and read-only; no channel/message, browser, remote Git, executor confi
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [local diff-reference namespace collision detection across `network_id`, `state_id` and `projection_id`;](../../../reports/architecture/121Q23-adaptive-relational-network-validation.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-52f8f49f2767e810 / local diff-reference namespace collision detection across `network_id`, `state_id` and `projection_id`;
@@ -2408,11 +2413,6 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-794046119666f476 / OpenClaw 的 provider-neutral public CLI adapter；只暴露可观察 envelope、能力、健康和 pointer-only session，不把 Gateway、channel 或 daemon 带
   - 来源：`data/architecture/interactive-system-map.json`
-  - 依赖：—；被引用：—
-- [OpenClaw, Hermes and Codex live invocation remains bounded by safety and may be SKIPPED; current evidence is not a produ](../../../data/architecture/current-system-identity.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-330e0983c2539e5d / OpenClaw, Hermes and Codex live invocation remains bounded by safety and may be SKIPPED; current evidence is not a produ
-  - 来源：`data/architecture/current-system-identity.json`
   - 依赖：—；被引用：—
 - [Operation/continuation chains expose a conceptual execution structure, but no durable trace schema, log, causal receipt](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`

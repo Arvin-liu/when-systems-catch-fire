@@ -75,14 +75,14 @@ class InteractiveSystemMapLayoutTests(unittest.TestCase):
         self.assertEqual(trunk["mode"], "bounded_reading_path")
         self.assertEqual(
             [stage["id"] for stage in trunk["route"]],
-            ["authority", "os_control", "pack_federation_routing", "external_executors", "actions_receipts", "validation_feedback"],
+            ["authority", "os_control", "pack_federation_routing", "live_bridge", "external_executors", "actions_receipts", "validation_feedback"],
         )
         node_ids = {node["id"] for node in self.spec["nodes"]}
         edge_ids = {edge["id"] for edge in self.spec["edges"]}
         for stage in trunk["route"]:
             self.assertTrue(set(stage["node_ids"]).issubset(node_ids))
             self.assertTrue(set(stage["relation_ids"]).issubset(edge_ids))
-        self.assertIn("External replaceable executors", trunk["route"][3]["label"])
+        self.assertIn("External replaceable executors", trunk["route"][4]["label"])
         self.assertEqual(len(self.root.findall(f".//{{{SVG_NS}}}g[@class='semantic-trunk']")), 1)
 
 

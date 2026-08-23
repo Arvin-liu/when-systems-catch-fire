@@ -8,7 +8,10 @@ from agent_federation.live_execution import execute_bounded_attempt
 from agent_federation.live_pilot import DisposableLiveFixture, LivePilotValidator
 from agent_federation.live_transport import LiveProcessResult
 
-from .test_live_orchestration import coordinator, envelope
+try:
+    from .test_live_orchestration import coordinator, envelope
+except ImportError:  # unittest discover -s tests imports this module top-level
+    from test_live_orchestration import coordinator, envelope
 
 
 class FakeCodexTransport:

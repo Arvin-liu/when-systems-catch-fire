@@ -45,8 +45,20 @@ def _base() -> dict[str, Any]:
         # must not leave the historical fixture accidentally half-current.
         text = text.replace(current_task_id, "IGNITION-20260822-133")
         text = text.replace(
+            '"latest_architecture_changing_task": "IGNITION-20260822-133"',
+            '"latest_architecture_changing_task": "IGNITION-20260821-129"',
+        )
+        text = text.replace(
+            '"latest_architecture_changing_task_id": "IGNITION-20260822-133"',
+            '"latest_architecture_changing_task_id": "IGNITION-20260821-129"',
+        )
+        text = text.replace(
             f'"current_formal_task_ordinal": {current_ordinal}',
             '"current_formal_task_ordinal": 133',
+        )
+        text = text.replace(
+            f'"latest_architecture_task_ordinal": {current_ordinal}',
+            '"latest_architecture_task_ordinal": 129',
         )
         text = text.replace(
             f'"current_iteration_boundary": {current_ordinal}',

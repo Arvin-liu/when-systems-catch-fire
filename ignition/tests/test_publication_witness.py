@@ -41,15 +41,15 @@ class PublicationWitnessTests(unittest.TestCase):
 
     def kwargs(self, sha: str) -> dict[str, object]:
         return {
-            "task_id": "IGNITION-20260822-135",
-            "formal_result_task_id": "IGNITION-20260822-135",
+            "task_id": "IGNITION-20260823-136",
+            "formal_result_task_id": "IGNITION-20260823-136",
             "subject_repository": "Arvin-liu/when-systems-catch-fire",
             "candidate_sha": sha,
             "fresh_clone_head_sha": sha,
             "fresh_clone_branch": "main",
             "fresh_clone_clean": True,
             "semantic_gates": self.gates(),
-            "receipt_ref": "agent-results/IGNITION-20260822-135-publication-witness.json",
+            "receipt_ref": "agent-results/IGNITION-20260823-136-publication-witness.json",
             "observed_at": "2026-08-21T15:00:00+00:00",
         }
 
@@ -62,7 +62,7 @@ class PublicationWitnessTests(unittest.TestCase):
         self.assertEqual(document["witness"]["scope"], "OBSERVATION_TIME_ONLY")
         self.assertFalse(document["witness"]["credentials_included"])
         self.assertTrue(document["task_binding"]["exact_match"])
-        self.assertEqual(document["task_binding"]["latest_architecture_changing_task"], "IGNITION-20260821-129")
+        self.assertEqual(document["task_binding"]["latest_architecture_changing_task"], "IGNITION-20260823-136")
 
     def test_witness_rejects_remote_mismatch_before_emission(self) -> None:
         candidate = "a" * 40
