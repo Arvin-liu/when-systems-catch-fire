@@ -1533,6 +1533,8 @@
 {"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "ignition/data/operations/iterations/135/step10-candidate-full-regression-2.json"}
 {"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "ignition/data/operations/iterations/135/step11-full-suite-determinism-side-effect-audit.json"}
 {"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "ignition/data/operations/iterations/135/step12-fresh-clone-full-regression.json"}
+{"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "ignition/data/operations/iterations/135/step13-residual-ledger-r2.json"}
+{"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "ignition/data/operations/iterations/135/step14-release-gate-integration.json"}
 {"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "ignition/data/operations/lifecycle-events.jsonl"}
 {"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "ignition/data/operations/merged-iteration-ledger.jsonl"}
 {"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "ignition/data/operations/project-components.json"}
@@ -2539,6 +2541,7 @@
 {"category": "SCHEMA", "matched_rule": "SCHEMA", "path": "ignition/schemas/operations/release-state-model-r1.schema.json"}
 {"category": "SCHEMA", "matched_rule": "SCHEMA", "path": "ignition/schemas/operations/release-transaction-protocol-r2.schema.json"}
 {"category": "SCHEMA", "matched_rule": "SCHEMA", "path": "ignition/schemas/operations/residual-ledger-r1.schema.json"}
+{"category": "SCHEMA", "matched_rule": "SCHEMA", "path": "ignition/schemas/operations/residual-ledger-r2.schema.json"}
 {"category": "SCHEMA", "matched_rule": "SCHEMA", "path": "ignition/schemas/operations/responsibility-actor-registry.schema.json"}
 {"category": "SCHEMA", "matched_rule": "SCHEMA", "path": "ignition/schemas/operations/stage-snapshot-registry.schema.json"}
 {"category": "SCHEMA", "matched_rule": "SCHEMA", "path": "ignition/schemas/operations/stage-snapshot-request.schema.json"}
@@ -2991,6 +2994,7 @@
 {"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": "ignition/tools/validate_external_attestation.py"}
 {"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": "ignition/tools/validate_federation_ownership.py"}
 {"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": "ignition/tools/validate_federation_routing.py"}
+{"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": "ignition/tools/validate_full_regression_release_gate.py"}
 {"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": "ignition/tools/validate_get_brain_latest_status.py"}
 {"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": "ignition/tools/validate_human_front_door.py"}
 {"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": "ignition/tools/validate_ignition_atlas.py"}
@@ -3024,6 +3028,7 @@
 {"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": "ignition/tools/validate_release_transaction_protocol.py"}
 {"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": "ignition/tools/validate_residual_adversarial_matrix.py"}
 {"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": "ignition/tools/validate_residual_ledger.py"}
+{"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": "ignition/tools/validate_residual_ledger_r2.py"}
 {"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": "ignition/tools/validate_resource_arbitration.py"}
 {"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": "ignition/tools/validate_scheduler.py"}
 {"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": "ignition/tools/validate_soft_context_exposure.py"}

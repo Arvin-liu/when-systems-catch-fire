@@ -1533,6 +1533,8 @@
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_NON_AUTHORITATIVE_RECORD","exclusion_reason":"EXCLUDED_NON_AUTHORITATIVE_RECORD","path":"data/operations/iterations/135/step10-candidate-full-regression-2.json"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_NON_AUTHORITATIVE_RECORD","exclusion_reason":"EXCLUDED_NON_AUTHORITATIVE_RECORD","path":"data/operations/iterations/135/step11-full-suite-determinism-side-effect-audit.json"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_NON_AUTHORITATIVE_RECORD","exclusion_reason":"EXCLUDED_NON_AUTHORITATIVE_RECORD","path":"data/operations/iterations/135/step12-fresh-clone-full-regression.json"}
+{"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_NON_AUTHORITATIVE_RECORD","exclusion_reason":"EXCLUDED_NON_AUTHORITATIVE_RECORD","path":"data/operations/iterations/135/step13-residual-ledger-r2.json"}
+{"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_NON_AUTHORITATIVE_RECORD","exclusion_reason":"EXCLUDED_NON_AUTHORITATIVE_RECORD","path":"data/operations/iterations/135/step14-release-gate-integration.json"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_GENERATED_OR_FUNCTION_ASSET_REGISTRY","exclusion_reason":"EXCLUDED_GENERATED_OR_FUNCTION_ASSET_REGISTRY","path":"data/operations/lifecycle-events.jsonl"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_NON_AUTHORITATIVE_RECORD","exclusion_reason":"EXCLUDED_NON_AUTHORITATIVE_RECORD","path":"data/operations/merged-iteration-ledger.jsonl"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_NON_AUTHORITATIVE_RECORD","exclusion_reason":"EXCLUDED_NON_AUTHORITATIVE_RECORD","path":"data/operations/project-components.json"}
@@ -2539,6 +2541,7 @@
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_PLATFORM_CODE_EXCLUDED","exclusion_reason":"EXCLUDED_PLATFORM_CODE_EXCLUDED","path":"schemas/operations/release-state-model-r1.schema.json"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_PLATFORM_CODE_EXCLUDED","exclusion_reason":"EXCLUDED_PLATFORM_CODE_EXCLUDED","path":"schemas/operations/release-transaction-protocol-r2.schema.json"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_PLATFORM_CODE_EXCLUDED","exclusion_reason":"EXCLUDED_PLATFORM_CODE_EXCLUDED","path":"schemas/operations/residual-ledger-r1.schema.json"}
+{"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_PLATFORM_CODE_EXCLUDED","exclusion_reason":"EXCLUDED_PLATFORM_CODE_EXCLUDED","path":"schemas/operations/residual-ledger-r2.schema.json"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_PLATFORM_CODE_EXCLUDED","exclusion_reason":"EXCLUDED_PLATFORM_CODE_EXCLUDED","path":"schemas/operations/responsibility-actor-registry.schema.json"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_PLATFORM_CODE_EXCLUDED","exclusion_reason":"EXCLUDED_PLATFORM_CODE_EXCLUDED","path":"schemas/operations/stage-snapshot-registry.schema.json"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_PLATFORM_CODE_EXCLUDED","exclusion_reason":"EXCLUDED_PLATFORM_CODE_EXCLUDED","path":"schemas/operations/stage-snapshot-request.schema.json"}
@@ -2991,6 +2994,7 @@
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_PLATFORM_CODE_EXCLUDED","exclusion_reason":"EXCLUDED_PLATFORM_CODE_EXCLUDED","path":"tools/validate_external_attestation.py"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_PLATFORM_CODE_EXCLUDED","exclusion_reason":"EXCLUDED_PLATFORM_CODE_EXCLUDED","path":"tools/validate_federation_ownership.py"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_PLATFORM_CODE_EXCLUDED","exclusion_reason":"EXCLUDED_PLATFORM_CODE_EXCLUDED","path":"tools/validate_federation_routing.py"}
+{"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_PLATFORM_CODE_EXCLUDED","exclusion_reason":"EXCLUDED_PLATFORM_CODE_EXCLUDED","path":"tools/validate_full_regression_release_gate.py"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_PLATFORM_CODE_EXCLUDED","exclusion_reason":"EXCLUDED_PLATFORM_CODE_EXCLUDED","path":"tools/validate_get_brain_latest_status.py"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_PLATFORM_CODE_EXCLUDED","exclusion_reason":"EXCLUDED_PLATFORM_CODE_EXCLUDED","path":"tools/validate_human_front_door.py"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_PLATFORM_CODE_EXCLUDED","exclusion_reason":"EXCLUDED_PLATFORM_CODE_EXCLUDED","path":"tools/validate_ignition_atlas.py"}
@@ -3024,6 +3028,7 @@
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_PLATFORM_CODE_EXCLUDED","exclusion_reason":"EXCLUDED_PLATFORM_CODE_EXCLUDED","path":"tools/validate_release_transaction_protocol.py"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_PLATFORM_CODE_EXCLUDED","exclusion_reason":"EXCLUDED_PLATFORM_CODE_EXCLUDED","path":"tools/validate_residual_adversarial_matrix.py"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_PLATFORM_CODE_EXCLUDED","exclusion_reason":"EXCLUDED_PLATFORM_CODE_EXCLUDED","path":"tools/validate_residual_ledger.py"}
+{"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_PLATFORM_CODE_EXCLUDED","exclusion_reason":"EXCLUDED_PLATFORM_CODE_EXCLUDED","path":"tools/validate_residual_ledger_r2.py"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_PLATFORM_CODE_EXCLUDED","exclusion_reason":"EXCLUDED_PLATFORM_CODE_EXCLUDED","path":"tools/validate_resource_arbitration.py"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_PLATFORM_CODE_EXCLUDED","exclusion_reason":"EXCLUDED_PLATFORM_CODE_EXCLUDED","path":"tools/validate_scheduler.py"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_PLATFORM_CODE_EXCLUDED","exclusion_reason":"EXCLUDED_PLATFORM_CODE_EXCLUDED","path":"tools/validate_soft_context_exposure.py"}

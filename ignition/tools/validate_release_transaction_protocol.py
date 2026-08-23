@@ -29,6 +29,16 @@ EXPECTED_STEPS = [
     "receipt-1111-witness",
     "final-marker",
 ]
+EXPECTED_HARD_GATES = [
+    "deterministic_projection_preflight",
+    "current_path_manifest_exact",
+    "residual_non_growth",
+    "current_semantic_gates",
+    "canonical_full_suite",
+    "exact_candidate_sha_binding",
+    "no_post_suite_tracked_mutation",
+    "task_ordinal_binding",
+]
 
 
 def load_json(path: Path) -> Any:
@@ -63,6 +73,24 @@ def validate(document: dict[str, Any] | None = None) -> list[str]:
         errors.append("final marker step must name 1111_RELAY_UPDATED")
     if protocol["main_mutation_policy"]["mode"] != "ORDINARY_FAST_FORWARD_ONLY":
         errors.append("main mutation policy is not ordinary fast-forward only")
+    hard_gates = protocol.get("pre_publication_hard_gates", {})
+    if hard_gates.get("contract_id") != "FULL_REGRESSION_RELEASE_HARD_GATE_R1":
+        errors.append("pre-publication hard-gate contract id is missing or incorrect")
+    if hard_gates.get("required_gate_ids") != EXPECTED_HARD_GATES:
+        errors.append("pre-publication hard-gate set/order is incomplete")
+    if hard_gates.get("fail_closed") is not True:
+        errors.append("pre-publication hard gates must fail closed")
+    suite = hard_gates.get("canonical_full_suite", {})
+    expected_suite = {
+        "required_runs": 2,
+        "minimum_natural_window_seconds": 14400,
+        "zero_failures_errors_skips": True,
+        "clean_before_after": True,
+        "exact_candidate_sha": True,
+        "no_watchdog": True,
+    }
+    if suite != expected_suite:
+        errors.append("canonical full-suite hard-gate contract is incomplete")
     return errors
 
 

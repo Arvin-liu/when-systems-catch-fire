@@ -1,0 +1,65 @@
+{
+  "schema_version": "ignition-135-step14-release-gate-integration-r1",
+  "task_id": "IGNITION-20260822-135",
+  "step": "14",
+  "status": "PASS",
+  "protocol": {
+    "path": "ignition/data/operations/release-transaction-protocol-r2.json",
+    "contract_id": "RELEASE_TRANSACTION_PROTOCOL_R2",
+    "hard_gate_contract_id": "FULL_REGRESSION_RELEASE_HARD_GATE_R1",
+    "fail_closed": true,
+    "required_gate_ids": [
+      "deterministic_projection_preflight",
+      "current_path_manifest_exact",
+      "residual_non_growth",
+      "current_semantic_gates",
+      "canonical_full_suite",
+      "exact_candidate_sha_binding",
+      "no_post_suite_tracked_mutation",
+      "task_ordinal_binding"
+    ]
+  },
+  "canonical_full_suite_gate": {
+    "candidate_receipt": "ignition/data/operations/iterations/135/step10-candidate-full-regression-2.json",
+    "candidate_tested_head_sha": "25d8aee5e8186376a43044b0b416242c3548071c",
+    "candidate_status": "PASS",
+    "candidate_tests": 1082,
+    "candidate_failures": 0,
+    "candidate_errors": 0,
+    "candidate_skipped": 0,
+    "fresh_clone_receipt": "ignition/data/operations/iterations/135/step12-fresh-clone-full-regression.json",
+    "fresh_clone_tested_head_sha": "0eb2e5654b80701a139a4c03e8c90acb9b7ab578",
+    "fresh_clone_status": "PASS",
+    "fresh_clone_tests": 1082,
+    "fresh_clone_failures": 0,
+    "fresh_clone_errors": 0,
+    "fresh_clone_skipped": 0,
+    "minimum_natural_window_seconds": 14400,
+    "candidate_natural_terminal_state": true,
+    "fresh_clone_natural_terminal_state": true,
+    "candidate_watchdog_used": false,
+    "fresh_clone_watchdog_used": false,
+    "candidate_clean_before_after": true,
+    "fresh_clone_clean_before_after": true,
+    "candidate_generated_output_drift": [],
+    "fresh_clone_generated_output_drift": [],
+    "prohibited_green_laundering": false
+  },
+  "inventory_and_lineage": {
+    "test_case_count": 1082,
+    "test_id_sha256": "28fbc92c4a3c93b1add49e46286b97569e170c9c1cad24278d4a14f60407b3a8",
+    "candidate_suite_sha_is_ancestor_of_fresh_suite_sha": true,
+    "fresh_suite_sha_is_in_current_candidate_lineage": true,
+    "current_lineage_head_at_integration": "e3ce3e6515b6fa3e8c02e967e5a239d7622aa891"
+  },
+  "supporting_gate_evidence": {
+    "projection_preflight": "ignition/data/operations/iterations/135/step12-fresh-clone-full-regression.json:PASS",
+    "path_manifest": "tracked=manifest=3066 at exact fresh candidate; all drift counters=0",
+    "current_semantic_gates": "Current Facts/Snapshot/Compiler, semantic and Human Surface gates PASS in Step12 preflight",
+    "residual_non_growth": "ignition/data/operations/iterations/135/step13-residual-ledger-r2.json:PASS",
+    "task_ordinal_binding": "contract required; final Current advancement and binding are Step15/Step16 evidence"
+  },
+  "validator": "ignition/tools/validate_full_regression_release_gate.py --check",
+  "validator_result": "FULL_REGRESSION_RELEASE_GATE_OK candidate_suite=PASS fresh_clone_suite=PASS tests=1082 failures=0 errors=0 skips=0 residual_current_failures=0",
+  "claim_ceiling": "Repository-local release-gate contract integration and candidate-lineage evidence wiring only; no external truth, production readiness, Owner acceptance or epistemic acceptance is inferred."
+}
