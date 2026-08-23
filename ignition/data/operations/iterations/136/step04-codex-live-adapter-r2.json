@@ -1,0 +1,26 @@
+{
+  "schema_version": "ignition-136-step04-codex-live-adapter-r2",
+  "task_id": "IGNITION-20260823-136",
+  "step": "04",
+  "adapter": {
+    "source": "ignition/agent_federation/live_adapters.py::LiveCodexAdapter",
+    "executor_id": "external.codex",
+    "public_surface": "codex exec",
+    "observed_version": "codex-cli 0.144.4",
+    "observed_help_sha256": "9f86f0115238ddde2514587e5f95b0ab0aa6b89495e5912878d49ad26038aa19",
+    "required_flags": ["--json", "--ephemeral", "--ignore-user-config", "--ignore-rules", "--sandbox read-only", "--cd"],
+    "forbidden_flags": ["--dangerously-bypass-approvals-and-sandbox", "--add-dir", "--sandbox workspace-write"],
+    "session_policy": "hashed opaque pointer only; no thread prompt/history/provider telemetry",
+    "auth_policy": "status observation only; no secret content read",
+    "live_inference": "NOT_RUN_STEP_04"
+  },
+  "verification": {
+    "command": "PYTHONPATH=ignition python3 -m unittest ignition.tests.test_live_codex_adapter ignition.tests.test_live_transport ignition.tests.test_live_bridge_contracts -v",
+    "tests": 16,
+    "failures": 0,
+    "errors": 0,
+    "skips": 0,
+    "status": "PASS"
+  },
+  "claim_ceiling": "Codex public adapter and fixture conformance only; current controller Agent is not evidence of nested external.codex completion."
+}
