@@ -75,6 +75,7 @@ from .live_privacy import LivePrivacyError, SanitizedLiveResult, sanitize_live_r
 from .live_pilot import DisposableLiveFixture, LivePilotError, LivePilotExpectation, LivePilotValidator, LiveValidationReport, tree_digest
 from .live_preflight import LivePreflightEntry, LivePreflightReport, run_live_preflight
 from .live_execution import LiveAttemptResult, LiveExecutionError, execute_bounded_attempt
+from .live_fault_matrix import CASE_SPECS, FaultCaseResult, run_fault_matrix
 
 __all__ = [
     "ApprovalPolicy", "ArtifactRef", "BudgetContract", "ExecutorDescriptor", "ExecutorHealth",
@@ -100,4 +101,5 @@ __all__ = [
     "DisposableLiveFixture", "LivePilotError", "LivePilotExpectation", "LivePilotValidator", "LiveValidationReport", "tree_digest",
     "LivePreflightEntry", "LivePreflightReport", "run_live_preflight",
     "LiveAttemptResult", "LiveExecutionError", "execute_bounded_attempt",
+    "CASE_SPECS", "FaultCaseResult", "run_fault_matrix",
 ]
