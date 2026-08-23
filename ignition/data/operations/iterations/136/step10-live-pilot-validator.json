@@ -1,0 +1,22 @@
+{
+  "schema_version": "ignition-136-step10-live-pilot-validator-r1",
+  "task_id": "IGNITION-20260823-136",
+  "step": "10",
+  "fixture": {
+    "workspace": "DISPOSABLE_FIXTURE_ROOT",
+    "files": ["README.txt", "nonce.txt", "table.json"],
+    "write_policy": "read-only filesystem guard",
+    "result_contract": ["nonce", "line_count", "field_value", "checksum_prefix"],
+    "validator": "ignition/agent_federation/live_pilot.py::LivePilotValidator"
+  },
+  "success_rule": "process returned + parsed result + exact binding + exact fixture values + unchanged tree + no forbidden effect",
+  "verification": {
+    "command": "PYTHONPATH=ignition python3 -m unittest ignition.tests.test_live_pilot -v",
+    "tests": 4,
+    "failures": 0,
+    "errors": 0,
+    "skips": 0,
+    "status": "PASS"
+  },
+  "claim_ceiling": "Deterministic disposable fixture and independent validator evidence only; fixture contents are synthetic and no real project material is used."
+}

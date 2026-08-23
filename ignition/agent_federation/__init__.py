@@ -72,6 +72,7 @@ from .live_adapters import LiveAdapterError, LiveAdapterObservation, LiveCodexAd
 from .live_admission import LiveAdmissionDecision, LiveAdmissionError, LiveCapabilityAdmission
 from .live_orchestration import LiveDispatchCoordinator, LiveDispatchPlan, LiveOrchestrationError, LiveSteeringBinding
 from .live_privacy import LivePrivacyError, SanitizedLiveResult, sanitize_live_result, sanitize_public_summary
+from .live_pilot import DisposableLiveFixture, LivePilotError, LivePilotExpectation, LivePilotValidator, LiveValidationReport, tree_digest
 
 __all__ = [
     "ApprovalPolicy", "ArtifactRef", "BudgetContract", "ExecutorDescriptor", "ExecutorHealth",
@@ -94,4 +95,5 @@ __all__ = [
     "LiveAdmissionDecision", "LiveAdmissionError", "LiveCapabilityAdmission",
     "LiveDispatchCoordinator", "LiveDispatchPlan", "LiveOrchestrationError", "LiveSteeringBinding",
     "LivePrivacyError", "SanitizedLiveResult", "sanitize_live_result", "sanitize_public_summary",
+    "DisposableLiveFixture", "LivePilotError", "LivePilotExpectation", "LivePilotValidator", "LiveValidationReport", "tree_digest",
 ]
