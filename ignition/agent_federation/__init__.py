@@ -66,6 +66,7 @@ from .pilots import (
     validate_federation_pilot_report,
     write_federation_pilot_report,
 )
+from .live_bridge import LiveCapabilityLease, LiveDispatchEnvelope, LiveExecutorReceipt
 
 __all__ = [
     "ApprovalPolicy", "ArtifactRef", "BudgetContract", "ExecutorDescriptor", "ExecutorHealth",
@@ -82,4 +83,5 @@ __all__ = [
     "project_progress", "project_receipt", "project_recovery",
     "FIXTURE_VERSION", "LIVE_NOT_RUN", "PILOT_ID", "ReferenceExecutorAdapter",
     "run_federation_pilots", "validate_federation_pilot_report", "write_federation_pilot_report",
+    "LiveCapabilityLease", "LiveDispatchEnvelope", "LiveExecutorReceipt",
 ]
