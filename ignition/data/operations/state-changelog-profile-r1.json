@@ -1,9 +1,9 @@
 {
   "schema_version": "state-changelog-profile-r1",
   "profile_contract": "CURRENT_STRICT_HISTORICAL_VERSIONED",
-  "entry_count": 26,
-  "active_current_ordinals": [25, 26],
-  "historical_entry_count": 24,
+  "entry_count": 28,
+  "active_current_ordinals": [27, 28],
+  "historical_entry_count": 26,
   "legacy_profile_count": 6,
   "profiles": {
     "current-r1": {
@@ -47,7 +47,9 @@
     {"ordinal": 22, "date": "2026-08-22", "label": "IGNITION-20260822-132-CANONICAL-CURRENT-ADVANCEMENT — task-branch source transition", "profile": "historical-legacy-r0", "section_sha256": "0790332deb846076414df360f1cfe02ced2f80ece524f7cf0a90d297aab52ead"},
     {"ordinal": 23, "date": "2026-08-22", "label": "IGNITION-20260822-132-CANONICAL-CURRENT-MIGRATION — terminal source migration", "profile": "historical-current-r0", "section_sha256": "fb713f4af752ddc10d0f04189c4e1b1fe410c55f618ec61db3a4adc291f73d06"},
     {"ordinal": 24, "date": "2026-08-22", "label": "IGNITION-20260822-133-ITERATION-BOUNDARY-SEMANTICS-R1 — terminal Current release candidate", "profile": "historical-legacy-r0", "section_sha256": "0f976171d193c3ca2ff6e3b4569360166ae02f632c6b2723923e616ab78b78e8"},
-    {"ordinal": 25, "date": "2026-08-22", "label": "IGNITION-20260822-134-RESIDUAL-DEBT-PROJECTION-HYGIENE-R1 — canonical Current source transition", "profile": "current-r1", "section_sha256": "98509f0a22a0b279ead8e1cbf180c7cd0a288d952f8ce9e6266b367b6338871f"},
-    {"ordinal": 26, "date": "2026-08-22", "label": "IGNITION-20260822-134-RESIDUAL-DEBT-PROJECTION-HYGIENE-R1 — terminal Current release candidate", "profile": "current-r1", "section_sha256": "74af40d47372f5c3c3ce3ad1d2623dd9228f90978606286f399c550acc460eba"}
+    {"ordinal": 25, "date": "2026-08-22", "label": "IGNITION-20260822-134-RESIDUAL-DEBT-PROJECTION-HYGIENE-R1 — canonical Current source transition", "profile": "historical-current-r0", "section_sha256": "98509f0a22a0b279ead8e1cbf180c7cd0a288d952f8ce9e6266b367b6338871f"},
+    {"ordinal": 26, "date": "2026-08-22", "label": "IGNITION-20260822-134-RESIDUAL-DEBT-PROJECTION-HYGIENE-R1 — terminal Current release candidate", "profile": "historical-current-r0", "section_sha256": "74bca372b893400c9ed77693b21ec395fee7c961bdbd243b3a878ba1f7599bb7"},
+    {"ordinal": 27, "date": "2026-08-23", "label": "IGNITION-20260822-135-FULL-REGRESSION-CLOSURE-TEST-ENVIRONMENT-R1 — canonical Current source transition", "profile": "current-r1", "section_sha256": "3a636113dce106bf4683e5640be870ff50df77c7bfd7942953b789eee07d236e"},
+    {"ordinal": 28, "date": "2026-08-23", "label": "IGNITION-20260822-135-FULL-REGRESSION-CLOSURE-TEST-ENVIRONMENT-R1 — terminal Current release candidate", "profile": "current-r1", "section_sha256": "675b1c88542dc2c967b8c224308b63640dd88349ffb519a13340c46e999272af"}
   ]
 }

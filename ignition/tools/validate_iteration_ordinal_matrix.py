@@ -35,11 +35,23 @@ def load_json(path: Path) -> Any:
 
 
 def _base() -> dict[str, Any]:
+    current_task_id = load_json(gate.LINEAGE_PATH)["task_identity"]["current_formal_task"]
+    current_ordinal = task_identity.parse_task_id(current_task_id)["ordinal"]
+
     def historicalize(document: dict[str, Any]) -> dict[str, Any]:
         text = json.dumps(document, ensure_ascii=False)
-        text = text.replace("IGNITION-20260822-134", "IGNITION-20260822-133")
-        text = text.replace('"current_formal_task_ordinal": 134', '"current_formal_task_ordinal": 133')
-        text = text.replace('"current_iteration_boundary": 134', '"current_iteration_boundary": 133')
+        # The matrix is a sealed Task133 adversarial fixture.  Its documents
+        # are derived from the live Current documents, so advancing Current
+        # must not leave the historical fixture accidentally half-current.
+        text = text.replace(current_task_id, "IGNITION-20260822-133")
+        text = text.replace(
+            f'"current_formal_task_ordinal": {current_ordinal}',
+            '"current_formal_task_ordinal": 133',
+        )
+        text = text.replace(
+            f'"current_iteration_boundary": {current_ordinal}',
+            '"current_iteration_boundary": 133',
+        )
         return json.loads(text)
 
     return {
@@ -80,7 +92,12 @@ def _compiler_issues(snapshot: dict[str, Any], *, stale: bool = False) -> list[s
     for surface in contract["surfaces"]:
         text = (REPO_ROOT / surface["path"]).read_text(encoding="utf-8")
         if stale and surface["surface_id"] == "homepage-identity":
-            text = text.replace("current_formal_task: `IGNITION-20260822-133`", "current_formal_task: `IGNITION-20260822-132`", 1)
+            current_task_id = snapshot["current_task"]["task_id"]
+            text = text.replace(
+                f"current_formal_task: `{current_task_id}`",
+                "current_formal_task: `IGNITION-20260822-132`",
+                1,
+            )
         expected = current_surface_compiler.compile_surface(text, surface, snapshot=snapshot)
         if text != expected:
             issues.append(f"COMPILER_SURFACE_STALE:{surface['surface_id']}")

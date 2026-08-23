@@ -53,7 +53,7 @@ class StateChangelogTests(unittest.TestCase):
             if case_id == "current_missing_required_field":
                 mutated = _replace_in_entry(
                     source,
-                    25,
+                    27,
                     "- authority_changes:",
                     "- authority_removed:",
                 )
@@ -81,7 +81,7 @@ class StateChangelogTests(unittest.TestCase):
                 passed = not errors
             elif case_id == "current_profile_downgrade":
                 profile = json.loads(PROFILE_PATH.read_text(encoding="utf-8"))
-                profile["entries"][24]["profile"] = "historical-legacy-r0"
+                profile["entries"][26]["profile"] = "historical-legacy-r0"
                 with tempfile.TemporaryDirectory() as tmp:
                     profile_path = Path(tmp) / "state-changelog-profile.json"
                     profile_path.write_text(json.dumps(profile), encoding="utf-8")

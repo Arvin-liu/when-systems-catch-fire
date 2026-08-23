@@ -5,7 +5,7 @@
     {
       "case_id": "current_missing_required_field",
       "target_profile": "current-r1",
-      "operation": "remove_authority_changes_from_entry_25",
+      "operation": "remove_authority_changes_from_entry_27",
       "expected_status": "FAIL"
     },
     {
