@@ -1,0 +1,34 @@
+{
+  "schema_version": "ignition-136-step02-live-state-machine-r1",
+  "task_id": "IGNITION-20260823-136",
+  "step": "02",
+  "state_machine_source": "ignition/agent_federation/live_bridge.py::LiveDispatchStateMachine",
+  "states": {
+    "normal": ["CREATED", "ADMITTED", "DISPATCHING", "IN_FLIGHT", "RETURNED_UNVALIDATED", "VALIDATING", "COMPLETED_VALIDATED"],
+    "policy_or_runtime_rejection": ["REJECTED_POLICY", "REJECTED_CAPABILITY", "REJECTED_COST_AUTHORITY", "EXECUTOR_UNAVAILABLE", "MALFORMED_RESULT", "VALIDATION_FAILED"],
+    "timeout_and_cancel": ["TIMED_OUT_KNOWN_NO_EFFECT", "TIMED_OUT_EFFECT_UNKNOWN", "CANCEL_REQUESTED", "CANCEL_CONFIRMED", "REQUIRES_RECONCILIATION"]
+  },
+  "invariants": [
+    "executor exit 0 or PASS enters RETURNED_UNVALIDATED, never COMPLETED_VALIDATED",
+    "COMPLETED_VALIDATED requires VALIDATING and independent OS validation",
+    "TIMED_OUT_EFFECT_UNKNOWN cannot create a retry lineage",
+    "TIMED_OUT_KNOWN_NO_EFFECT permits only a new attempt id",
+    "cancel confirmation does not imply effect reversal unless no external effect is proven",
+    "unknown, stale, duplicate or unbound receipts are not completion evidence"
+  ],
+  "transition_record": {
+    "source": "LiveTransitionRecord",
+    "fields": ["dispatch_id", "from_state", "to_state", "reason", "observed_at"],
+    "append_only": true,
+    "durability_binding": "OS transition records are the input boundary for the existing Event Ledger / durable-dispatch integration; no executor state is made canonical."
+  },
+  "verification": {
+    "command": "PYTHONPATH=ignition python3 -m unittest ignition.tests.test_live_bridge_contracts ignition.tests.test_dispatch_reconciliation ignition.tests.test_durability_recovery ignition.tests.test_durability_revocation -v",
+    "tests": 18,
+    "failures": 0,
+    "errors": 0,
+    "skips": 0,
+    "status": "PASS"
+  },
+  "claim_ceiling": "Repository-local lifecycle and reconciliation semantics only; no executor success, external effect exactly-once claim, production readiness, Owner acceptance or epistemic acceptance is inferred."
+}

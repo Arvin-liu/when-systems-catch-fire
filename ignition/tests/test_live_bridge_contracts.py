@@ -7,7 +7,9 @@ from agent_federation.live_bridge import (
     LIVE_RECEIPT_SCHEMA,
     LiveCapabilityLease,
     LiveDispatchEnvelope,
+    LiveDispatchStateMachine,
     LiveExecutorReceipt,
+    LiveTransitionError,
 )
 from agent_federation.contracts import FederationContractError
 
@@ -109,6 +111,47 @@ class LiveBridgeContractTests(unittest.TestCase):
         data["receipt_digest"] = "f" * 64
         with self.assertRaises(FederationContractError):
             LiveExecutorReceipt.from_dict(data)
+
+    def test_state_machine_requires_unvalidated_and_validation_hops(self):
+        machine = LiveDispatchStateMachine(envelope(), observed_at="2026-08-23T16:00:00Z")
+        machine.admit(allowed=True, reason="bounded read-only policy", cost_authorized=True)
+        machine.begin_dispatch()
+        machine.mark_in_flight()
+        with self.assertRaises(LiveTransitionError):
+            machine.transition("COMPLETED_VALIDATED", "executor said PASS")
+        machine.record_executor_return(parsed=True, returncode=0)
+        self.assertEqual(machine.state, "RETURNED_UNVALIDATED")
+        machine.start_validation()
+        machine.finish_validation(passed=True, workspace_unchanged=True, no_forbidden_effect=True)
+        self.assertTrue(machine.terminal)
+
+    def test_unknown_timeout_stops_replay_but_known_no_effect_allows_new_lineage(self):
+        unknown = LiveDispatchStateMachine(envelope(), observed_at="now")
+        unknown.admit(allowed=True, reason="policy")
+        unknown.begin_dispatch()
+        unknown.mark_in_flight()
+        unknown.mark_timeout(effect_known_no_effect=False)
+        self.assertEqual(unknown.state, "TIMED_OUT_EFFECT_UNKNOWN")
+        self.assertFalse(unknown.retry_allowed)
+        with self.assertRaises(LiveTransitionError):
+            unknown.new_lineage_attempt("attempt-2")
+
+        known = LiveDispatchStateMachine(envelope(), observed_at="now")
+        known.admit(allowed=True, reason="policy")
+        known.begin_dispatch()
+        known.mark_in_flight()
+        known.mark_timeout(effect_known_no_effect=True)
+        self.assertTrue(known.retry_allowed)
+        self.assertEqual(known.new_lineage_attempt("attempt-2"), "attempt-2")
+
+    def test_executor_completion_receipt_cannot_bypass_validation(self):
+        machine = LiveDispatchStateMachine(envelope(), observed_at="now")
+        machine.admit(allowed=True, reason="policy")
+        machine.begin_dispatch()
+        machine.mark_in_flight()
+        with self.assertRaises(LiveTransitionError):
+            machine.record_executor_return(parsed=True, returncode=0)
+            machine.transition("COMPLETED_VALIDATED", "forged executor completion")
 
 
 if __name__ == "__main__":

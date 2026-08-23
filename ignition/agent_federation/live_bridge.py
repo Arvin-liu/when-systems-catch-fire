@@ -56,6 +56,27 @@ _HIDDEN_MARKERS = frozenset({
     "password", "provider_telemetry", "session_transcript",
 })
 
+LIVE_TRANSITIONS: dict[str, frozenset[str]] = {
+    "CREATED": frozenset({"ADMITTED", "REJECTED_POLICY", "REJECTED_CAPABILITY", "REJECTED_COST_AUTHORITY", "EXECUTOR_UNAVAILABLE"}),
+    "ADMITTED": frozenset({"DISPATCHING", "REJECTED_POLICY", "REJECTED_CAPABILITY", "REJECTED_COST_AUTHORITY", "CANCEL_REQUESTED", "EXECUTOR_UNAVAILABLE"}),
+    "DISPATCHING": frozenset({"IN_FLIGHT", "RETURNED_UNVALIDATED", "TIMED_OUT_KNOWN_NO_EFFECT", "TIMED_OUT_EFFECT_UNKNOWN", "CANCEL_REQUESTED", "MALFORMED_RESULT", "EXECUTOR_UNAVAILABLE"}),
+    "IN_FLIGHT": frozenset({"RETURNED_UNVALIDATED", "TIMED_OUT_KNOWN_NO_EFFECT", "TIMED_OUT_EFFECT_UNKNOWN", "CANCEL_REQUESTED", "MALFORMED_RESULT", "EXECUTOR_UNAVAILABLE"}),
+    "RETURNED_UNVALIDATED": frozenset({"VALIDATING", "REQUIRES_RECONCILIATION", "MALFORMED_RESULT"}),
+    "VALIDATING": frozenset({"COMPLETED_VALIDATED", "VALIDATION_FAILED", "REQUIRES_RECONCILIATION"}),
+    "CANCEL_REQUESTED": frozenset({"CANCEL_CONFIRMED", "IN_FLIGHT", "TIMED_OUT_EFFECT_UNKNOWN", "REQUIRES_RECONCILIATION"}),
+    "REQUIRES_RECONCILIATION": frozenset({"VALIDATING", "CANCEL_CONFIRMED", "VALIDATION_FAILED"}),
+    "COMPLETED_VALIDATED": frozenset(),
+    "REJECTED_POLICY": frozenset(),
+    "REJECTED_CAPABILITY": frozenset(),
+    "REJECTED_COST_AUTHORITY": frozenset(),
+    "TIMED_OUT_KNOWN_NO_EFFECT": frozenset(),
+    "TIMED_OUT_EFFECT_UNKNOWN": frozenset(),
+    "CANCEL_CONFIRMED": frozenset(),
+    "VALIDATION_FAILED": frozenset(),
+    "MALFORMED_RESULT": frozenset(),
+    "EXECUTOR_UNAVAILABLE": frozenset(),
+}
+
 
 def _strict(data: Mapping[str, Any], keys: set[str], name: str) -> None:
     if not isinstance(data, Mapping) or set(data) != keys:
@@ -384,8 +405,130 @@ class LiveExecutorReceipt:
         return cls(**dict(data))
 
 
+@dataclass(frozen=True)
+class LiveTransitionRecord:
+    dispatch_id: str
+    from_state: str
+    to_state: str
+    reason: str
+    observed_at: str
+
+    def __post_init__(self) -> None:
+        _text(self.dispatch_id, "live_transition.dispatch_id")
+        object.__setattr__(self, "from_state", _enum(self.from_state, LIVE_DISPATCH_STATES, "live_transition.from_state"))
+        object.__setattr__(self, "to_state", _enum(self.to_state, LIVE_DISPATCH_STATES, "live_transition.to_state"))
+        _text(self.reason, "live_transition.reason")
+        _text(self.observed_at, "live_transition.observed_at")
+
+    def to_dict(self) -> dict[str, str]:
+        return {"dispatch_id": self.dispatch_id, "from_state": self.from_state, "to_state": self.to_state, "reason": self.reason, "observed_at": self.observed_at}
+
+
+class LiveTransitionError(FederationContractError):
+    """Raised when a live dispatch attempts an unsafe lifecycle transition."""
+
+
+class LiveDispatchStateMachine:
+    """Small OS-owned state machine with explicit reconciliation stops."""
+
+    def __init__(self, envelope: LiveDispatchEnvelope, *, observed_at: str) -> None:
+        if not isinstance(envelope, LiveDispatchEnvelope):
+            raise LiveTransitionError("state machine requires a LiveDispatchEnvelope")
+        self.envelope = envelope
+        self._state = "CREATED"
+        self._history: list[LiveTransitionRecord] = []
+        self._observed_at = _text(observed_at, "state_machine.observed_at")
+
+    @property
+    def state(self) -> str:
+        return self._state
+
+    @property
+    def history(self) -> tuple[LiveTransitionRecord, ...]:
+        return tuple(self._history)
+
+    @property
+    def terminal(self) -> bool:
+        return self._state in LIVE_TERMINAL_STATES and self._state != "REQUIRES_RECONCILIATION"
+
+    @property
+    def retry_allowed(self) -> bool:
+        return self._state == "TIMED_OUT_KNOWN_NO_EFFECT"
+
+    def transition(self, to_state: str, reason: str, *, observed_at: str | None = None) -> LiveTransitionRecord:
+        to_state = _enum(to_state, LIVE_DISPATCH_STATES, "state_machine.to_state")
+        if to_state not in LIVE_TRANSITIONS.get(self._state, frozenset()):
+            raise LiveTransitionError(f"illegal live transition {self._state} -> {to_state}")
+        if to_state == "COMPLETED_VALIDATED" and self._state != "VALIDATING":
+            raise LiveTransitionError("validated completion requires an OS VALIDATING state")
+        record = LiveTransitionRecord(self.envelope.dispatch_id, self._state, to_state, reason, observed_at or self._observed_at)
+        self._history.append(record)
+        self._state = to_state
+        return record
+
+    def admit(self, *, allowed: bool, reason: str, cost_authorized: bool = True) -> LiveTransitionRecord:
+        if not allowed:
+            return self.transition("REJECTED_POLICY", reason)
+        if not cost_authorized:
+            return self.transition("REJECTED_COST_AUTHORITY", reason)
+        return self.transition("ADMITTED", reason)
+
+    def begin_dispatch(self) -> LiveTransitionRecord:
+        return self.transition("DISPATCHING", "OS admission passed; bounded dispatch is starting")
+
+    def mark_in_flight(self) -> LiveTransitionRecord:
+        return self.transition("IN_FLIGHT", "external process started")
+
+    def record_executor_return(self, *, parsed: bool, returncode: int | None) -> LiveTransitionRecord:
+        if not parsed:
+            return self.transition("MALFORMED_RESULT", "public result could not be parsed")
+        if returncode is None:
+            return self.transition("TIMED_OUT_EFFECT_UNKNOWN", "process outcome is unknown")
+        return self.transition("RETURNED_UNVALIDATED", f"executor returned exit_code={returncode}; OS validation is pending")
+
+    def mark_timeout(self, *, effect_known_no_effect: bool) -> LiveTransitionRecord:
+        return self.transition(
+            "TIMED_OUT_KNOWN_NO_EFFECT" if effect_known_no_effect else "TIMED_OUT_EFFECT_UNKNOWN",
+            "bounded timeout observed; no automatic completion or replay",
+        )
+
+    def request_cancel(self) -> LiveTransitionRecord:
+        return self.transition("CANCEL_REQUESTED", "OS cancellation requested; external effect is not inferred undone")
+
+    def confirm_cancel(self, *, effect_known_no_effect: bool) -> LiveTransitionRecord:
+        if effect_known_no_effect:
+            return self.transition("CANCEL_CONFIRMED", "cancel confirmed with known no external effect")
+        return self.transition("REQUIRES_RECONCILIATION", "cancel outcome does not prove external effect absence")
+
+    def start_validation(self) -> LiveTransitionRecord:
+        return self.transition("VALIDATING", "independent OS validator started")
+
+    def finish_validation(self, *, passed: bool, workspace_unchanged: bool, no_forbidden_effect: bool) -> LiveTransitionRecord:
+        if self._state != "VALIDATING":
+            raise LiveTransitionError("validation can finish only from VALIDATING")
+        if passed and workspace_unchanged and no_forbidden_effect:
+            return self.transition("COMPLETED_VALIDATED", "independent OS validation passed")
+        return self.transition("VALIDATION_FAILED", "independent OS validation did not establish bounded completion")
+
+    def reconcile(self, *, no_external_effect: bool) -> LiveTransitionRecord:
+        if self._state != "REQUIRES_RECONCILIATION":
+            raise LiveTransitionError("reconciliation can start only from REQUIRES_RECONCILIATION")
+        if not no_external_effect:
+            return self.transition("VALIDATION_FAILED", "reconciliation did not prove no external effect")
+        return self.transition("VALIDATING", "reconciliation proved no external effect; validation may proceed")
+
+    def new_lineage_attempt(self, attempt_id: str) -> str:
+        if not self.retry_allowed:
+            raise LiveTransitionError("retry is allowed only after a timeout with known no effect")
+        attempt_id = _text(attempt_id, "state_machine.new_attempt_id")
+        if attempt_id == self.envelope.attempt_id:
+            raise LiveTransitionError("retry attempt must have a new lineage id")
+        return attempt_id
+
+
 __all__ = [
     "LIVE_BUDGET_AUTHORITIES", "LIVE_DISPATCH_SCHEMA", "LIVE_DISPATCH_STATES", "LIVE_ELIGIBILITY",
     "LIVE_LEASE_SCHEMA", "LIVE_NETWORK_CLASSES", "LIVE_RECEIPT_SCHEMA", "LIVE_RECONCILIATION_POLICIES",
-    "LIVE_SIDE_EFFECT_CLASSES", "LiveCapabilityLease", "LiveDispatchEnvelope", "LiveExecutorReceipt",
+    "LIVE_SIDE_EFFECT_CLASSES", "LIVE_TRANSITIONS", "LiveCapabilityLease", "LiveDispatchEnvelope",
+    "LiveDispatchStateMachine", "LiveExecutorReceipt", "LiveTransitionError", "LiveTransitionRecord",
 ]
