@@ -1,0 +1,72 @@
+{
+  "schema_version": "ignition-135-step10-candidate-full-regression-r1",
+  "task_id": "IGNITION-20260822-135",
+  "step": "10",
+  "status": "TARGETED_REPAIR_REQUIRED",
+  "candidate_head_sha": "c78e4888d8f68e426c418c7adf0a2caf0a2c2432",
+  "command": "python3 ignition/tools/run_full_regression.py --provision-isolated --output-dir <external-temporary-capture>",
+  "working_directory": "ignition",
+  "runtime_seconds": 2789.831,
+  "long_window": {
+    "natural_terminal_state": true,
+    "process_killed": false,
+    "arbitrary_timeout_used": false,
+    "minimum_window_seconds": 14400,
+    "actual_run_completed_before_window": true
+  },
+  "environment_contract": {
+    "isolated": true,
+    "dependency_preflight": "PASS",
+    "python_version": "3.14.6",
+    "requirements": {
+      "sympy": "1.14.0",
+      "z3-solver": "4.16.0.0",
+      "jsonschema": "4.26.0"
+    },
+    "path_prepend_contract": "execution interpreter directory precedes inherited PATH for portable python3 child validators"
+  },
+  "result": {
+    "exit_code": 1,
+    "tests_run": 1082,
+    "failures": 2,
+    "errors": 0,
+    "skipped": 0,
+    "summary": "FAILED (failures=2)",
+    "failure_tests": [
+      {
+        "test": "test_current_surface_determinism.CurrentSurfaceDeterminismTests.test_recorded_two_pass_hashes_match_current_outputs",
+        "classification": "CURRENT_TEST_BOUND_TO_STALE_HISTORICAL_RECEIPT",
+        "repair": "use the current read-only two-pass Current projection check; do not rewrite Task134 receipt"
+      },
+      {
+        "test": "test_knowledge_corpus_admission.KnowledgeCorpusAdmissionTests.test_current_projection_has_no_platform_only_rows",
+        "classification": "RUNNER_IMPORT_PATH_BOUNDARY",
+        "repair": "repository-qualify the direct validator import and make its application root explicit"
+      }
+    ]
+  },
+  "side_effect_observation": {
+    "clean_before": true,
+    "clean_after": false,
+    "tracked_mutations": [
+      "ignition/data/governance/publication-gate-decisions.jsonl"
+    ],
+    "mutation_cause": "source-rights integration test wrote a timestamped F8 fixture to the default repository ledger",
+    "repair": "run the integration test with an external temporary ledger"
+  },
+  "capture": {
+    "location": "external temporary directory; not part of the formal repository",
+    "stdout_bytes": 5371,
+    "stdout_sha256": "2758cef71c4b440e70fb9fe7a511a5c1c0e153a54e624c152bcde4e403baf08b",
+    "stderr_bytes": 3506,
+    "stderr_sha256": "8aeab785d6b2ee0fbc902c3889d5eae28e611e919744c261d201a91a44fe8831"
+  },
+  "prohibited_green_laundering": {
+    "skip_added": false,
+    "xfail_added": false,
+    "expected_failure_added": false,
+    "ignore_added": false,
+    "residual_expanded": false
+  },
+  "claim_ceiling": "Exact repository-local candidate full-suite #1 terminal evidence and repair classification only; no whole-project correctness, external truth, production readiness, Owner acceptance or epistemic acceptance is inferred."
+}

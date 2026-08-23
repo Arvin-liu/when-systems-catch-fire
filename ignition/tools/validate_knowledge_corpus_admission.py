@@ -4,12 +4,13 @@
 from __future__ import annotations
 
 import json
+import sys
 from pathlib import Path
 
-from foundation.knowledge_corpus_admission import admission_for_path, load_policy
-
-
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT))
+
+from tools.foundation.knowledge_corpus_admission import admission_for_path, load_policy
 
 
 def rows(path: Path) -> list[dict]:

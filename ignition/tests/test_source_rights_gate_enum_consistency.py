@@ -8,6 +8,7 @@ downgrade (5.2.5).
 
 import json
 import sys
+import tempfile
 import unittest
 from pathlib import Path
 
@@ -126,33 +127,34 @@ class SourceRightsGateConsistencyTests(unittest.TestCase):
     def test_verified_source_gate_enforces_real_pinned_digest(self):
         """Integration: a VERIFIED category's pinned real digest is enforced end-to-end
         by the fail-closed gate (correct digest accepted+verified; tampered digest rejected)."""
-        gate = PublicationGate()
-        cat = "open_license_cc_by"
-        pinned = SRC_REG["categories"][cat]["provenance"]["content_digest_sha256"]
-        ok = gate.record_gate_decision({
-            "material_id": "F8-VERIFIED-OK",
-            "source_category": cat,
-            "gate_decision": "PASS_WITH_COMPLIANCE",
-            "classification_level": 2,
-            "source_rights_entry_id": cat,
-            "content_digest_sha256": pinned,
-            "reason": "CC BY 4.0 official text digest matches pinned registry digest",
-            "rule_ref": "source-rights-registry:open_license_cc_by",
-            "schema_version": "governance-gate-v1",
-        })
-        self.assertTrue(ok["success"], f"VERIFIED decision with correct digest must be recorded: {ok}")
+        with tempfile.TemporaryDirectory(prefix="source-rights-gate-test-") as ledger:
+            gate = PublicationGate(decisions_path=str(Path(ledger) / "publication-gate-decisions.jsonl"))
+            cat = "open_license_cc_by"
+            pinned = SRC_REG["categories"][cat]["provenance"]["content_digest_sha256"]
+            ok = gate.record_gate_decision({
+                "material_id": "F8-VERIFIED-OK",
+                "source_category": cat,
+                "gate_decision": "PASS_WITH_COMPLIANCE",
+                "classification_level": 2,
+                "source_rights_entry_id": cat,
+                "content_digest_sha256": pinned,
+                "reason": "CC BY 4.0 official text digest matches pinned registry digest",
+                "rule_ref": "source-rights-registry:open_license_cc_by",
+                "schema_version": "governance-gate-v1",
+            })
+            self.assertTrue(ok["success"], f"VERIFIED decision with correct digest must be recorded: {ok}")
 
-        bad = gate.record_gate_decision({
-            "material_id": "F8-VERIFIED-BAD",
-            "source_category": cat,
-            "gate_decision": "PASS_WITH_COMPLIANCE",
-            "classification_level": 2,
-            "source_rights_entry_id": cat,
-            "content_digest_sha256": "0" * 64,
-            "reason": "tampered digest",
-            "rule_ref": "source-rights-registry:open_license_cc_by",
-            "schema_version": "governance-gate-v1",
-        })
+            bad = gate.record_gate_decision({
+                "material_id": "F8-VERIFIED-BAD",
+                "source_category": cat,
+                "gate_decision": "PASS_WITH_COMPLIANCE",
+                "classification_level": 2,
+                "source_rights_entry_id": cat,
+                "content_digest_sha256": "0" * 64,
+                "reason": "tampered digest",
+                "rule_ref": "source-rights-registry:open_license_cc_by",
+                "schema_version": "governance-gate-v1",
+            })
         self.assertFalse(bad["success"], "VERIFIED decision with tampered digest must be rejected")
         self.assertTrue(any("digest" in e.lower() for e in bad.get("errors", [])),
                         f"error should cite digest mismatch: {bad}")
