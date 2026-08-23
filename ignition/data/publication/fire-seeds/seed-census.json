@@ -41,7 +41,7 @@
       "cards": 413,
       "changes": 315,
       "layered_readings": 332,
-      "search_records": 22598,
+      "search_records": 22715,
       "subject_indexes": 56
     },
     "layered_reading_source_origins": 332,
@@ -2346,7 +2346,7 @@
       "title": "COVERAGE",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "0de72b9684c3b87b01c9178781b155ee6e09fa181ecf1ad0c2a2be9312e77b4f",
+      "source_sha256": "35f7fc3ef34ef301e53c3dc6f3e9ebcf26ee76094db2cbc0ea888da06240ddef",
       "disposition": "EXCLUDED_NONCONTENT",
       "seed_ids": [],
       "review_basis": "INDEX_OR_GENERATED_PROJECTION",
@@ -2372,7 +2372,7 @@
       "title": "MAP",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "437bb08840b30ff39cc7f9828bedeeec94257284982130270ed718ad06c1888f",
+      "source_sha256": "2467ba291b66b64510d39afd940420ada39f2dc0cec9dba971f49443d491f1e7",
       "disposition": "EXCLUDED_NONCONTENT",
       "seed_ids": [],
       "review_basis": "INDEX_OR_GENERATED_PROJECTION",
@@ -2398,7 +2398,7 @@
       "title": "README",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "94fde5a8edc5cd3db5b876cd81649f7e48291406508fa60ae84c3b3b4e91a95e",
+      "source_sha256": "aa3b1497326ee760c01bb9f4f8c0bc45703ce62bc89d912647434fa84bdbe4f2",
       "disposition": "SEED_CREATED",
       "seed_ids": [
         "CF-25",
@@ -2414,7 +2414,7 @@
       "title": "SEARCH",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "530c2c6848506e99e36320ac142bde344e6b4d4a50fcdb74acfa3bda68964043",
+      "source_sha256": "3cd97bffcb6cf5cc06d014acdc59f1353c25881b371879dddba63037244f043c",
       "disposition": "EXCLUDED_NONCONTENT",
       "seed_ids": [],
       "review_basis": "INDEX_OR_GENERATED_PROJECTION",
@@ -2874,7 +2874,7 @@
       "title": "closure-summary",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "b2fe2951d9d2b80c74810e1b7c9b76563b08eae6fa9956e9cadb19e769098ab9",
+      "source_sha256": "3abe4c5719300fad50d37dd046fb447a555b1f42f200cf840790536c88cad357",
       "disposition": "MERGED_INTO_SEED",
       "seed_ids": [
         "FS-06"
@@ -2889,7 +2889,7 @@
       "title": "identity-cards",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "12ffce17983c6a1e302773c2c4b61b35f2cde532992b8abe8190798f9679645f",
+      "source_sha256": "776796d55846c4688a8a49010a51c81b7153c29202bf41e9b2dbf1e18c50a427",
       "disposition": "MERGED_INTO_SEED",
       "seed_ids": [
         "FS-08"

@@ -1354,6 +1354,36 @@
   - 可搜索名称：IMPLICIT-EB2D8345BC44158B / check\(f"{sid} reviewer = GLM-5.2", c.get\("reviewer_model"\) == "qclaw/pool-glm-5.2"\) / IMPLICIT-EB2D8345BC44158B
   - 来源：`data/external-research/121-fulltext-resolver/121c01/121c01-validator.py`
   - 依赖：—；被引用：—
+- [checks\["checksum_prefix_exact"\] = value.get\("checksum_prefix"\) == self.fixture.expectation.checksum_prefix](../../../agent_federation/live_pilot.py)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-3ADD9C84D6D94F54 / checks\["checksum_prefix_exact"\] = value.get\("checksum_prefix"\) == self.fixture.expectation.checksum_prefix / IMPLICIT-3ADD9C84D6D94F54
+  - 来源：`agent_federation/live_pilot.py`
+  - 依赖：—；被引用：—
+- [checks\["field_value_exact"\] = value.get\("field_value"\) == self.fixture.expectation.field_value](../../../agent_federation/live_pilot.py)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-D62F654A7CAEEC12 / checks\["field_value_exact"\] = value.get\("field_value"\) == self.fixture.expectation.field_value / IMPLICIT-D62F654A7CAEEC12
+  - 来源：`agent_federation/live_pilot.py`
+  - 依赖：—；被引用：—
+- [checks\["fixture_files_exact"\] = self.fixture.file_names\(\) == self.fixture.expectation.expected_files](../../../agent_federation/live_pilot.py)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-046F0D14D5F216FD / checks\["fixture_files_exact"\] = self.fixture.file_names\(\) == self.fixture.expectation.expected_files / IMPLICIT-046F0D14D5F216FD
+  - 来源：`agent_federation/live_pilot.py`
+  - 依赖：—；被引用：—
+- [checks\["line_count_exact"\] = value.get\("line_count"\) == self.fixture.expectation.line_count](../../../agent_federation/live_pilot.py)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-A6D66EB8254BD75F / checks\["line_count_exact"\] = value.get\("line_count"\) == self.fixture.expectation.line_count / IMPLICIT-A6D66EB8254BD75F
+  - 来源：`agent_federation/live_pilot.py`
+  - 依赖：—；被引用：—
+- [checks\["nonce_exact"\] = value.get\("nonce"\) == self.fixture.expectation.nonce](../../../agent_federation/live_pilot.py)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-0FB7CE89A3F92797 / checks\["nonce_exact"\] = value.get\("nonce"\) == self.fixture.expectation.nonce / IMPLICIT-0FB7CE89A3F92797
+  - 来源：`agent_federation/live_pilot.py`
+  - 依赖：—；被引用：—
+- [checks\["output_schema_exact"\] = set\(value\) == expected_keys](../../../agent_federation/live_pilot.py)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-64640E93BB82EFFD / checks\["output_schema_exact"\] = set\(value\) == expected_keys / IMPLICIT-64640E93BB82EFFD
+  - 来源：`agent_federation/live_pilot.py`
+  - 依赖：—；被引用：—
 - [CLI projection tool: `tools/driver_console.py` \(`--json` or human-readable\)](../../../reports/operations/ignition-124-progress.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-2100c00455ab20c9 / CLI projection tool: `tools/driver_console.py` \(`--json` or human-readable\)
@@ -2472,35 +2502,5 @@
 - [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-05.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-05.json)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：A5033434512 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-05.json / A5033434512 / A5000648368
-  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-05.json`
-  - 依赖：—；被引用：—
-- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-05.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-05.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：A5037891485 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-05.json / A5037891485 / A5000648368
-  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-05.json`
-  - 依赖：—；被引用：—
-- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-05.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-05.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：A5061597162 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-05.json / A5061597162 / A5000648368
-  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-05.json`
-  - 依赖：—；被引用：—
-- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-05.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-05.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：A5089142551 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-05.json / A5089142551 / A5000648368
-  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-05.json`
-  - 依赖：—；被引用：—
-- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-05.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-05.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：D000465 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-05.json / D000465 / A5000648368
-  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-05.json`
-  - 依赖：—；被引用：—
-- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-05.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-05.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：D001695 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-05.json / D001695 / A5000648368
-  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-05.json`
-  - 依赖：—；被引用：—
-- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-05.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-05.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：D003198 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-05.json / D003198 / A5000648368
   - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-05.json`
   - 依赖：—；被引用：—

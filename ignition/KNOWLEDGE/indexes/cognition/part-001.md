@@ -1219,6 +1219,16 @@
   - 可搜索名称：NFC-b84f3170afdafced / def project_recovery\(decision: FailoverDecision, *, memory_id: str, source_run_id: str\) -> MemoryProjection:
   - 来源：`agent_federation/convergence.py`
   - 依赖：—；被引用：—
+- [def revoke_in_flight\(self, executor_id: str, *, started: bool, effect_class: str\) -> LiveAdmissionDecision:](../../../agent_federation/live_admission.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-6D72D9436953E4F6 / def revoke_in_flight\(self, executor_id: str, *, started: bool, effect_class: str\) -> LiveAdmissionDecision: / IMPLICIT-6D72D9436953E4F6
+  - 来源：`agent_federation/live_admission.py`
+  - 依赖：—；被引用：—
+- [def route\(self, executor_id: str, *, required_capabilities: Iterable\[str\], workspace_mode: str, observed_version: str, now_epoch: float, revocation_store: Any = None\) -> LiveAdmissionDecision:](../../../agent_federation/live_admission.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-1730E0BDE027CE0A / def route\(self, executor_id: str, *, required_capabilities: Iterable\[str\], workspace_mode: str, observed_version: str, now_epoch: float, revocation_store: Any = None\) -> LiveAdmissionDecision: / IMPLICIT-1730E0BDE027CE0A
+  - 来源：`agent_federation/live_admission.py`
+  - 依赖：—；被引用：—
 - [def route\(self, request: RoutingRequest\) -> RoutingDecision:](../../../agent_federation/router.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-E5DF4F35517267BC / def route\(self, request: RoutingRequest\) -> RoutingDecision: / IMPLICIT-E5DF4F35517267BC
@@ -2492,15 +2502,5 @@
 - [self._seen_memory_ids.add\(projection.memory_id\)](../../../agent_federation/convergence.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-89aa653a65f9fa97 / self._seen_memory_ids.add\(projection.memory_id\)
-  - 来源：`agent_federation/convergence.py`
-  - 依赖：—；被引用：—
-- [self.queue.complete\(plan.queue_id, "COMPLETED_VALIDATED" if passed else "FAILED", reason=validation_ref\)](../../../agent_federation/live_orchestration.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-1e39d80cda6a4e5d / self.queue.complete\(plan.queue_id, "COMPLETED_VALIDATED" if passed else "FAILED", reason=validation_ref\)
-  - 来源：`agent_federation/live_orchestration.py`
-  - 依赖：—；被引用：—
-- [self.store.append\(projection.to_memory_entry\(\)\)](../../../agent_federation/convergence.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-654df9b5dc6a50e8 / self.store.append\(projection.to_memory_entry\(\)\)
   - 来源：`agent_federation/convergence.py`
   - 依赖：—；被引用：—
