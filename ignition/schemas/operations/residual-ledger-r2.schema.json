@@ -1,0 +1,122 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ignition/operations/residual-ledger-r2.schema.json",
+  "title": "IGNITION residual ledger R2",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "task_id",
+    "step",
+    "historical_ledger",
+    "residuals",
+    "summary",
+    "checks",
+    "claim_ceiling"
+  ],
+  "properties": {
+    "schema_version": {"const": "residual-ledger-r2"},
+    "task_id": {"const": "IGNITION-20260822-135"},
+    "step": {"const": "13"},
+    "historical_ledger": {
+      "type": "object",
+      "required": ["path", "sha256", "task_id", "entry_count"],
+      "properties": {
+        "path": {"const": "ignition/data/operations/residual-ledger-r1.json"},
+        "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "task_id": {"const": "IGNITION-20260822-134"},
+        "entry_count": {"const": 6}
+      },
+      "additionalProperties": false
+    },
+    "residuals": {
+      "type": "array",
+      "minItems": 6,
+      "items": {
+        "type": "object",
+        "required": [
+          "residual_id",
+          "historical_status",
+          "historical_classification",
+          "semantic_classification",
+          "status",
+          "baseline_count",
+          "historical_current_count",
+          "baseline_fingerprint",
+          "historical_current_fingerprint",
+          "observed_current_count",
+          "observed_current_fingerprint",
+          "current_blocker",
+          "non_growth"
+        ],
+        "properties": {
+          "residual_id": {"type": "string"},
+          "historical_status": {"type": "string"},
+          "historical_classification": {"type": "string"},
+          "semantic_classification": {
+            "enum": [
+              "SEALED_HISTORICAL_RESIDUAL_ASSERTED",
+              "ENVIRONMENT_REQUIREMENT",
+              "CURRENT_FAILURE",
+              "RESOLVED_CURRENT_RESIDUAL",
+              "OBSERVATION_ONLY"
+            ]
+          },
+          "status": {"type": "string"},
+          "baseline_count": {"type": "integer", "minimum": 0},
+          "historical_current_count": {"type": "integer", "minimum": 0},
+          "baseline_fingerprint": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+          "historical_current_fingerprint": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+          "observed_current_count": {"type": "integer", "minimum": 0},
+          "observed_current_fingerprint": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+          "current_blocker": {"type": "boolean"},
+          "environment_requirement": {"type": "string"},
+          "non_growth": {"const": "PASS"}
+        },
+        "additionalProperties": false
+      }
+    },
+    "summary": {
+      "type": "object",
+      "required": [
+        "entry_count",
+        "sealed_historical_count",
+        "environment_observation_count",
+        "resolved_current_count",
+        "current_failure_count",
+        "environment_blocker_count",
+        "residual_non_growth"
+      ],
+      "properties": {
+        "entry_count": {"const": 6},
+        "sealed_historical_count": {"const": 1},
+        "environment_observation_count": {"const": 1},
+        "resolved_current_count": {"const": 4},
+        "current_failure_count": {"const": 0},
+        "environment_blocker_count": {"const": 0},
+        "residual_non_growth": {"const": "PASS"}
+      },
+      "additionalProperties": false
+    },
+    "checks": {
+      "type": "object",
+      "required": [
+        "historical_ledger_unchanged",
+        "sealed_historical_exact_fingerprint",
+        "sympy_environment_observation_non_blocking",
+        "current_failure_count_zero",
+        "no_residual_growth"
+      ],
+      "properties": {
+        "historical_ledger_unchanged": {"const": true},
+        "sealed_historical_exact_fingerprint": {"const": true},
+        "sympy_environment_observation_non_blocking": {"const": true},
+        "current_failure_count_zero": {"const": true},
+        "no_residual_growth": {"const": true},
+        "validator": {"type": "string"}
+      },
+      "additionalProperties": false
+    },
+    "claim_ceiling": {"const": "CURRENT_RESIDUAL_SEMANTICS_AND_NON_GROWTH_ONLY"}
+  },
+  "additionalProperties": false
+}
