@@ -1,0 +1,33 @@
+{
+  "schema_version": "ignition-136-step08-live-os-traffic-integration-r1",
+  "task_id": "IGNITION-20260823-136",
+  "step": "08",
+  "source": "ignition/agent_federation/live_orchestration.py::LiveDispatchCoordinator",
+  "reused_os_primitives": [
+    "agent_runtime.steering.IntentCapsule",
+    "agent_runtime.queue_control.WorkQueue",
+    "agent_runtime.resource_arbitration.ResourceArbiter",
+    "agent_runtime.accounting.AccountingStore",
+    "agent_runtime.dispatch_reconciliation.DurableDispatchStore",
+    "agent_runtime.event_ledger.EventLedger"
+  ],
+  "invariants": {
+    "executor_canonical_mutation_allowed": false,
+    "goal_completion_inference_allowed": false,
+    "priority_source": "OS_STEERING_PRIORITY",
+    "retry_accounting": "AccountingStore attempt kind is PRIMARY/RETRY/FAILOVER/RECONCILIATION; no free retry path",
+    "billing_authority": "NO_NEW_BILLING_AUTHORITY",
+    "queue_and_backpressure": "WorkQueue",
+    "resource_lease": "READ_SHARED executor resource lease",
+    "durable_reconciliation": "DurableDispatchStore plus EventLedger"
+  },
+  "verification": {
+    "command": "PYTHONPATH=ignition python3 -m unittest ignition.tests.test_live_orchestration ignition.tests.test_live_admission -v",
+    "tests": 8,
+    "failures": 0,
+    "errors": 0,
+    "skips": 0,
+    "status": "PASS"
+  },
+  "claim_ceiling": "Repository-local OS traffic-system preparation evidence only; no executor output is completion and no external truth is inferred."
+}

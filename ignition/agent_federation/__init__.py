@@ -70,6 +70,7 @@ from .live_bridge import LiveCapabilityLease, LiveDispatchEnvelope, LiveDispatch
 from .live_transport import LiveProcessResult, LiveProcessTransport, LiveTransportError, interface_digest, parse_bounded_jsonl
 from .live_adapters import LiveAdapterError, LiveAdapterObservation, LiveCodexAdapter, LiveHermesAdapter, LiveOpenClawAdapter
 from .live_admission import LiveAdmissionDecision, LiveAdmissionError, LiveCapabilityAdmission
+from .live_orchestration import LiveDispatchCoordinator, LiveDispatchPlan, LiveOrchestrationError, LiveSteeringBinding
 
 __all__ = [
     "ApprovalPolicy", "ArtifactRef", "BudgetContract", "ExecutorDescriptor", "ExecutorHealth",
@@ -90,4 +91,5 @@ __all__ = [
     "LiveProcessResult", "LiveProcessTransport", "LiveTransportError", "interface_digest", "parse_bounded_jsonl",
     "LiveAdapterError", "LiveAdapterObservation", "LiveCodexAdapter", "LiveHermesAdapter", "LiveOpenClawAdapter",
     "LiveAdmissionDecision", "LiveAdmissionError", "LiveCapabilityAdmission",
+    "LiveDispatchCoordinator", "LiveDispatchPlan", "LiveOrchestrationError", "LiveSteeringBinding",
 ]
