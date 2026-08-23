@@ -67,6 +67,7 @@ from .pilots import (
     write_federation_pilot_report,
 )
 from .live_bridge import LiveCapabilityLease, LiveDispatchEnvelope, LiveDispatchStateMachine, LiveExecutorReceipt, LiveTransitionError
+from .live_transport import LiveProcessResult, LiveProcessTransport, LiveTransportError, interface_digest, parse_bounded_jsonl
 
 __all__ = [
     "ApprovalPolicy", "ArtifactRef", "BudgetContract", "ExecutorDescriptor", "ExecutorHealth",
@@ -84,4 +85,5 @@ __all__ = [
     "FIXTURE_VERSION", "LIVE_NOT_RUN", "PILOT_ID", "ReferenceExecutorAdapter",
     "run_federation_pilots", "validate_federation_pilot_report", "write_federation_pilot_report",
     "LiveCapabilityLease", "LiveDispatchEnvelope", "LiveDispatchStateMachine", "LiveExecutorReceipt", "LiveTransitionError",
+    "LiveProcessResult", "LiveProcessTransport", "LiveTransportError", "interface_digest", "parse_bounded_jsonl",
 ]
